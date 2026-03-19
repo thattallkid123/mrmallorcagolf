@@ -4,14 +4,14 @@ import PostLayout from '../PostLayout'
 
 export const metadata = {
   title: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
-  description: 'Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you're off the course. By a PGA professional based on the island.',
+  description: "Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you're off the course. By a PGA professional based on the island.",
   alternates: { canonical: 'https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca' },
 }
 
 const meta = {
   badge: 'Trip Planning', badgeGold: false, readTime: '7 min read', updated: 'March 2026',
   title: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
-  intro: 'No tourism copy, no padding. Which courses, when to go, how many rounds, getting around, and what to do when you're not on the course.',
+  intro: "No tourism copy, no padding. Which courses, when to go, how many rounds, getting around, and what to do when you're not on the course.",
   related: [
     { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
     { slug: 'best-time-play-golf-mallorca', title: 'Best Time of Year to Play Golf in Mallorca' },
@@ -67,6 +67,8 @@ export default function Post() {
     </PageLayout>
   )
 }
+
+
 
 
 

@@ -3,14 +3,14 @@ import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
 
 export const metadata = {
-  title: 'Club de Golf Alcanada — A PGA Professional's Honest Review (2026)',
-  description: 'Alcanada golf course Mallorca reviewed by a PGA professional. The lighthouse, the greens, the restaurant terrace — and the green fees for 2026.',
+  title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)",
+  description: "Alcanada golf course Mallorca reviewed by a PGA professional. The lighthouse, the greens, the restaurant terrace — and the green fees for 2026.",
   alternates: { canonical: 'https://mrmallorcagolf.com/guides/alcanada-review' },
 }
 
 const meta = {
   badge: 'Course Review', badgeGold: true, readTime: '6 min read', updated: 'March 2026',
-  title: 'Club de Golf Alcanada — A PGA Professional's Honest Review (2026)',
+  title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)",
   intro: 'The course I take people to when I want them to come home with a story. The lighthouse changes everything.',
   related: [
     { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
@@ -73,6 +73,7 @@ export default function Post() {
     </PageLayout>
   )
 }
+
 
 
 

@@ -3,14 +3,14 @@ import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
 
 export const metadata = {
-  title: 'Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)',
-  description: 'Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.',
+  title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)",
+  description: "Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.",
   alternates: { canonical: 'https://mrmallorcagolf.com/guides/son-gual-review' },
 }
 
 const meta = {
   badge: 'Course Review', badgeGold: true, readTime: '6 min read', updated: 'March 2026',
-  title: 'Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)',
+  title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)",
   intro: 'My most-played course on the island. The wind, the greens, the closing stretch — and why Obama and Nadal both keep coming back.',
   related: [
     { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
@@ -72,6 +72,7 @@ export default function Post() {
     </PageLayout>
   )
 }
+
 
 
 
