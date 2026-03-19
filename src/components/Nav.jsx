@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 // Nav links per language
 const LANG_CONFIG = {
-  en: {
+en: {
   links: [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
@@ -16,67 +16,73 @@ const LANG_CONFIG = {
   ],
   cta: { href: '/contact', label: 'Enquire' },
 },
-  de: {
-    links: [
-      { href: '/de/play-with-a-pro', label: 'Mit Profi spielen' },
-      { href: '/de/coaching',        label: 'Coaching' },
-      { href: '/de/golf-courses',    label: 'Plätze' },
-      { href: '/de/about',           label: 'Über Andy' },
-      { href: '/de/guides',          label: 'Ratgeber' },
-    ],
-    cta: { href: '/de/contact', label: 'Anfragen' },
-  },
-  fr: {
-    links: [
-      { href: '/fr/play-with-a-pro', label: 'Jouer avec un Pro' },
-      { href: '/fr/coaching',        label: 'Coaching' },
-      { href: '/fr/golf-courses',    label: 'Parcours' },
-      { href: '/fr/about',           label: 'À propos' },
-      { href: '/fr/guides',          label: 'Guides' },
-    ],
-    cta: { href: '/fr/contact', label: 'Contact' },
-  },
-  es: {
-    links: [
-      { href: '/es/play-with-a-pro', label: 'Jugar con un Pro' },
-      { href: '/es/coaching',        label: 'Coaching' },
-      { href: '/es/golf-courses',    label: 'Campos' },
-      { href: '/es/about',           label: 'Sobre Andy' },
-      { href: '/es/guides',          label: 'Guías' },
-    ],
-    cta: { href: '/es/contact', label: 'Contacto' },
-  },
-  zh: {
-    links: [
-      { href: '/zh/play-with-a-pro', label: '与职业球手同场' },
-      { href: '/zh/coaching',        label: '球场指导' },
-      { href: '/zh/golf-courses',    label: '球场指南' },
-      { href: '/zh/about',           label: '关于Andy' },
-      { href: '/zh/guides',          label: '指南' },
-    ],
-    cta: { href: '/zh/contact', label: '联系我们' },
-  },
-  sv: {
-    links: [
-      { href: '/sv/play-with-a-pro', label: 'Spela med ett Proffs' },
-      { href: '/sv/coaching',        label: 'Coaching' },
-      { href: '/sv/golf-courses',    label: 'Banor' },
-      { href: '/sv/about',           label: 'Om Andy' },
-      { href: '/sv/guides',          label: 'Guider' },
-    ],
-    cta: { href: '/sv/contact', label: 'Kontakt' },
-  },
+de: {
+  links: [
+    { href: '/de', label: 'Start' },
+    { href: '/de/about', label: 'Über Andy' },
+    { href: '/de/play-with-a-pro', label: 'Mit Profi spielen' },
+    { href: '/de/coaching', label: 'Coaching' },
+    { href: '/de/golf-courses', label: 'Plätze' },
+    { href: '/de/guides', label: 'Ratgeber' },
+  ],
+  cta: { href: '/de/contact', label: 'Anfragen' },
+},
+fr: {
+  links: [
+    { href: '/fr', label: 'Accueil' },
+    { href: '/fr/about', label: 'À propos' },
+    { href: '/fr/play-with-a-pro', label: 'Jouer avec un Pro' },
+    { href: '/fr/coaching', label: 'Coaching' },
+    { href: '/fr/golf-courses', label: 'Parcours' },
+    { href: '/fr/guides', label: 'Guides' },
+  ],
+  cta: { href: '/fr/contact', label: 'Contact' },
+},
+es: {
+  links: [
+    { href: '/es', label: 'Inicio' },
+    { href: '/es/about', label: 'Sobre Andy' },
+    { href: '/es/play-with-a-pro', label: 'Jugar con un Pro' },
+    { href: '/es/coaching', label: 'Coaching' },
+    { href: '/es/golf-courses', label: 'Campos' },
+    { href: '/es/guides', label: 'Guías' },
+  ],
+  cta: { href: '/es/contact', label: 'Contacto' },
+},
+zh: {
+  links: [
+    { href: '/zh', label: '首页' },
+    { href: '/zh/about', label: '关于Andy' },
+    { href: '/zh/play-with-a-pro', label: '与职业球手同场' },
+    { href: '/zh/coaching', label: '球场指导' },
+    { href: '/zh/golf-courses', label: '球场指南' },
+    { href: '/zh/guides', label: '指南' },
+  ],
+  cta: { href: '/zh/contact', label: '联系我们' },
+},
+sv: {
+  links: [
+    { href: '/sv', label: 'Hem' },
+    { href: '/sv/about', label: 'Om Andy' },
+    { href: '/sv/play-with-a-pro', label: 'Spela med ett Proffs' },
+    { href: '/sv/coaching', label: 'Coaching' },
+    { href: '/sv/golf-courses', label: 'Banor' },
+    { href: '/sv/guides', label: 'Guider' },
+  ],
+  cta: { href: '/sv/contact', label: 'Kontakt' },
+},
   nl: {
     links: [
+      { href: '/nl', label: 'Home' },
+      { href: '/nl/about', label: 'Over Andy' },
       { href: '/nl/play-with-a-pro', label: 'Spelen met een Pro' },
-      { href: '/nl/coaching',        label: 'Coaching' },
-      { href: '/nl/golf-courses',    label: 'Banen' },
-      { href: '/nl/about',           label: 'Over Andy' },
-      { href: '/nl/guides',          label: 'Gidsen' },
+      { href: '/nl/coaching', label: 'Coaching' },
+      { href: '/nl/golf-courses', label: 'Banen' },
+      { href: '/nl/guides', label: 'Gidsen' },
     ],
     cta: { href: '/nl/contact', label: 'Contact' },
   },
-}
+};
 
 const LANG_SWITCHER = [
   { code: 'EN',  href: '/',    label: 'EN'   },
