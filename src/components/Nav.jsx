@@ -6,15 +6,16 @@ import { usePathname } from 'next/navigation'
 // Nav links per language
 const LANG_CONFIG = {
   en: {
-    links: [
-      { href: '/play-with-a-pro', label: 'Play With a Pro' },
-      { href: '/coaching',        label: 'Coaching' },
-      { href: '/golf-courses',    label: 'Courses' },
-      { href: '/guides',          label: 'Guides' },
-      { href: '/about',           label: 'About' },
-    ],
-    cta: { href: '/contact', label: 'Enquire' },
-  },
+  links: [
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About' },
+    { href: '/play-with-a-pro', label: 'Play with a Pro' },
+    { href: '/coaching', label: 'Coaching' },
+    { href: '/golf-courses', label: 'Golf Courses' },
+    { href: '/guides', label: 'Guides' },
+  ],
+  cta: { href: '/contact', label: 'Enquire' },
+},
   de: {
     links: [
       { href: '/de/play-with-a-pro', label: 'Mit Profi spielen' },
