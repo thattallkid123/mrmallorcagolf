@@ -43,7 +43,7 @@ export default function HomePageSV() {
           </h1>
           <p className="hero__sub">Golfupplevelser och coaching på banan — för golfare som vill få ut mer av sin tid på ön.</p>
           <div className="hero__actions">
-            <Link href="/sv/play-with-a-pro" className="btn btn--gold">Se upplevelserna {">"}</Link>
+            <Link href="/sv/play-with-a-pro" className="btn btn--gold">Se upplevelserna →</Link>
             <Link href="/sv/golf-courses" className="btn btn--outline-white">Utforska banorna</Link>
           </div>
         </div>
@@ -118,12 +118,12 @@ export default function HomePageSV() {
           <p>Jag tillbringade drygt ett decennium med att coacha i Kina, där golflektioner kostade 500 € i timmen och klienterna förväntade sig seriösa, mätbara förbättringar — inte bara uppmuntran. Dessförinnan coachade jag på Pebble Beach, vid The Open Championship, i Évian, och tillbringade en säsong på en världsresa ombord på ett kryssningsfartyg i fyrtio länder.</p>
           <p>Den bakgrunden formar varje runda jag är värd för. Äkta råd genomgående — banstrategi, beslutsfattande, saker de flesta golfare aldrig hör. En dag du fortfarande pratar om på flyget hem.</p>
           <p>Allt är ordnat. Banan. Starttiden. Lunchbordet. Ditt enda jobb är att spela — och spela bättre än förväntat.</p>
-          <Link href="/sv/play-with-a-pro" className="btn btn--dark">Se upplevelserna {">"}</Link>
+          <Link href="/sv/play-with-a-pro" className="btn btn--dark">Se upplevelserna →</Link>
         </div>
         <div className="what__right reveal reveal-delay-1">
           {[
             { icon: 'i', title: 'Allt ordnat', text: 'Bana, starttid, transport, lunch — helt hanterat innan du anländer.' },
-            { icon: '�', title: 'Coaching på banan', text: 'Riktig förbättring i riktiga förhållanden. Ingen lektion. Ingen löpande kommentar. Rätt observation vid rätt tillfälle.' },
+            { icon: '→', title: 'Coaching på banan', text: 'Riktig förbättring i riktiga förhållanden. Ingen lektion. Ingen löpande kommentar. Rätt observation vid rätt tillfälle.' },
             { icon: '◇', title: 'Genuint privat', text: 'Bara du och en PGA Advanced Professional. Inga okända i din grupp. En runda formad helt runt ditt spel.' },
             { icon: '+', title: 'Tillgång till mer', text: 'Banor enbart för medlemmar som de flesta besökare inte kan boka självständigt — Santa Ponsa 2 & 3, och fler.' },
           ].map((f,i) => (
@@ -156,17 +156,17 @@ export default function HomePageSV() {
           <div className="package reveal">
             <p className="package__tier">Mallorca-rundan</p><h3 className="package__name">Spela med ett proffs</h3><p className="package__price">Från 500 € per person</p><div className="package__divider"></div>
             <ul className="package__features">{['Banrekommendation matchad efter ditt spel','Starttid säkrad och fullt hanterad','Briefing och uppvärmning innan rundan','18 hål bredvid Andy','Coaching på banan genomgående','Genomgång efter rundan — ärlig och tydlig'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/sv/contact" className="btn btn--dark">Förfrågan {">"}</Link>
+            <Link href="/sv/contact" className="btn btn--dark">Förfrågan →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
             <p className="package__tier">Signature-dagen</p><h3 className="package__name">Guidad golfdag</h3><p className="package__price">Från 650 € per person</p><div className="package__divider"></div>
             <ul className="package__features">{['Allt i Mallorca-rundan','Son Gual eller Alcanada — två av öns finaste','Lång lunch på banrestaurangen','Utvald överraskning','Avspänt tempo — en hel dag, inte en jäktad runda'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/sv/contact" className="btn btn--gold">Förfrågan {">"}</Link>
+            <Link href="/sv/contact" className="btn btn--gold">Förfrågan →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
             <p className="package__tier">Den Kompletta Upplevelsen</p><h3 className="package__name">Skräddarsydd golfreasa</h3><p className="package__price">På förfrågan</p><div className="package__divider"></div>
             <ul className="package__features">{['Flerbanorsdag eller fullständigt program','Privat transport från Palma','Middag på handplockat restaurang','Spa eller återhämtning hos partneranläggning','Fullständig concierge-koordination','För grupper, företag och skräddarsydda önskemål'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/sv/contact" className="btn btn--dark">Förfrågan {">"}</Link>
+            <Link href="/sv/contact" className="btn btn--dark">Förfrågan →</Link>
           </div>
         </div>
       </section>
@@ -195,11 +195,10 @@ export default function HomePageSV() {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">&ldquo;Golfen är bättre. Insikterna är äkta.&rdquo;</p>
-          <Link href="/sv/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Boka din dag {">"}</Link>
+          <Link href="/sv/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Boka din dag →</Link>
           <Link href="/sv/golf-courses" className="btn btn--outline-white">Utforska banorna</Link>
         </div>
       </section>
     </>
   )
 }
-

@@ -36,7 +36,7 @@ export default function Coaching_SV() {
           <p>Ett kort frågeformulär innan sessionen ger dagen form innan vi börjar. Vad som frustrerar dig, var luckorna är, hur framgång ser ut.</p>
           <p>När vi når det första teet har jag redan en bild av vad jag ska se efter. Feedbacken är situationell och ärlig — inte ett generiskt lektionsplan.</p>
           <p>Sessioner sker på Son Gual, Alcanada, eller en bana matchad efter din nivå och dina mål.</p>
-          <Link href="/sv/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Diskutera en session �</Link>
+          <Link href="/sv/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Diskutera en session →</Link>
         </div>
       </section>
 
@@ -90,15 +90,10 @@ export default function Coaching_SV() {
           <p>Berätta var ditt spel är och vad du vill ha ut av det. Jag bygger sessionen runt det — inte ett generiskt program.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/sv/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Hör av dig �</Link>
+          <Link href="/sv/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Hör av dig →</Link>
           <Link href="/sv/play-with-a-pro" className="btn btn--outline-white">Se Hela Upplevelserna</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
-

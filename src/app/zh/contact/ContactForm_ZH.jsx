@@ -22,7 +22,7 @@ export default function ContactForm_ZH() {
           <div className="contact-detail"><span className="contact-detail__label">所在地</span><span className="contact-detail__value">西班牙马略卡岛</span></div>
         </div>
         <div className="promise-block">
-          <p>&ldquo;请与我联系。告诉我您的日期��需求——我会在24小时内亲自回复。&rdquo;</p>
+          <p>&ldquo;请与我联系。告诉我您的日期和需求——我会在24小时内亲自回复。&rdquo;</p>
           <cite>Andy Griffiths &middot; PGA Advanced Professional</cite>
         </div>
       </div>
@@ -30,14 +30,14 @@ export default function ContactForm_ZH() {
         {submitted ? (
           <div className="form-success visible">
             <div className="form-success__icon">&#10003;</div>
-            <h3>��询已收到。</h3>
+            <h3>咨询已收到。</h3>
             <p>我将在24小时内亲自联系您。WhatsApp是最便捷的沟通方式。</p>
           </div>
         ) : (
           <>
             <div className="form-header">
-              <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.2em',textTransform:'uppercase',color:'var(--taupe)',marginBottom:'.5rem'}}>��询表格</p>
-              <h2>开始规�您的高尔夫日。</h2>
+              <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.2em',textTransform:'uppercase',color:'var(--taupe)',marginBottom:'.5rem'}}>咨询表格</p>
+              <h2>开始规划您的高尔夫日。</h2>
               <p>您提供的细节越多，我就能越好地为您量身定制。</p>
             </div>
             <form onSubmit={handleSubmit}>
@@ -71,8 +71,8 @@ export default function ContactForm_ZH() {
               </div>
               <div className="form-group"><label htmlFor="message">其他需要了解的信息</label><textarea id="message" name="message" className="form-control" placeholder="这一天的目标、球场偏好、特殊需求等。" value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">提交��询 &rarr;</button>
-                <p className="form-note">我会在24小时内亲自回复每一封��询。</p>
+                <button type="submit" className="btn-submit">提交咨询 &rarr;</button>
+                <p className="form-note">我会在24小时内亲自回复每一封咨询。</p>
               </div>
             </form>
           </>
@@ -81,4 +81,3 @@ export default function ContactForm_ZH() {
     </div>
   )
 }
-

@@ -35,7 +35,7 @@ body {
 /* ─── UTILITY ─────────────────────────────────────────────── */
 .eyebrow {
   font-family: 'Jost', sans-serif;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -398,14 +398,14 @@ body {
 }
 
 /* ─── HOMEPAGE HERO ──────────────────────────────────────── */
-.hero { padding-top: 80px !important; padding-top: 80px !important;
+.hero {
   position: relative;
   height: 100vh;
   min-height: 680px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 80px 40px 80px;
+  justify-content: flex-end;
+  padding: 0 40px 80px;
   overflow: hidden;
 }
 .hero__bg {
@@ -795,7 +795,7 @@ select.form-control { cursor: pointer; }
   .story__sidebar { position: static; border-left: none; border-top: 1px solid var(--linen); min-height: auto; }
 }
 @media (max-width: 768px) {
-  .hero { padding-top: 80px !important; padding-top: 80px !important; padding: 0 20px 60px; }
+  .hero { padding: 0 20px 60px; }
   .hero__trust { display: none; }
   .intro { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
   .how { padding: 70px 20px; }

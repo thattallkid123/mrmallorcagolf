@@ -36,7 +36,7 @@ export default function Coaching_ES() {
           <p>Un breve cuestionario antes de la sesión da forma al día antes de empezar. Qué le frustra, dónde están las lagunas, cómo es el éxito para usted.</p>
           <p>Cuando llegamos al primer tee, ya tengo una imagen de qué observar. El feedback es situacional y honesto — no un plan de clase genérico.</p>
           <p>Las sesiones tienen lugar en Son Gual, Alcanada o un campo adaptado a su nivel y objetivos.</p>
-          <Link href="/es/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Hablar de una sesión �</Link>
+          <Link href="/es/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Hablar de una sesión →</Link>
         </div>
       </section>
 
@@ -90,15 +90,10 @@ export default function Coaching_ES() {
           <p>Dígame cómo está su juego y qué quiere de él. Construiré la sesión en torno a eso — no un programa genérico.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/es/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Ponerse en contacto �</Link>
+          <Link href="/es/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Ponerse en contacto →</Link>
           <Link href="/es/play-with-a-pro" className="btn btn--outline-white">Ver Experiencias Completas</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
-

@@ -43,7 +43,7 @@ export default function HomePageDE() {
           </h1>
           <p className="hero__sub">Golferlebnisse und Coaching auf dem Platz — für Golfer, die mehr aus ihrer Zeit auf der Insel herausholen wollen.</p>
           <div className="hero__actions">
-            <Link href="/de/play-with-a-pro" className="btn btn--gold">Die Erlebnisse entdecken {">"}</Link>
+            <Link href="/de/play-with-a-pro" className="btn btn--gold">Die Erlebnisse entdecken →</Link>
             <Link href="/de/golf-courses" className="btn btn--outline-white">Plätze erkunden</Link>
           </div>
         </div>
@@ -118,12 +118,12 @@ export default function HomePageDE() {
           <p>Ich habe über ein Jahrzehnt in China trainiert, wo Golfstunden 500 € pro Stunde kosteten und die Klienten ernsthafte, messbare Verbesserungen erwarteten — keine bloße Ermutigung. Davor habe ich in Pebble Beach, bei The Open Championship und in Évian gecoacht und eine Saison auf einer Weltreise durch vierzig Länder verbracht.</p>
           <p>Dieser Hintergrund prägt jede Runde, die ich begleite. Echte Ratschläge — Platzstrategie, Entscheidungsfindung, die Dinge, die die meisten Golfer nie erfahren. Ein Tag, über den Sie noch im Flugzeug nach Hause reden werden.</p>
           <p>Alles ist arrangiert. Der Platz. Die Abschlagzeit. Der Mittagstisch. Ihre einzige Aufgabe ist es zu spielen — und besser zu spielen als erwartet.</p>
-          <Link href="/de/play-with-a-pro" className="btn btn--dark">Die Erlebnisse entdecken {">"}</Link>
+          <Link href="/de/play-with-a-pro" className="btn btn--dark">Die Erlebnisse entdecken →</Link>
         </div>
         <div className="what__right reveal reveal-delay-1">
           {[
             { icon: 'i', title: 'Alles arrangiert', text: 'Platz, Abschlagzeit, Transfer, Mittagessen — alles erledigt, bevor Sie ankommen.' },
-            { icon: '�', title: 'Coaching auf dem Platz', text: 'Echte Verbesserung unter echten Bedingungen. Keine Lektion. Kein Kommentar. Die richtige Beobachtung im richtigen Moment.' },
+            { icon: '→', title: 'Coaching auf dem Platz', text: 'Echte Verbesserung unter echten Bedingungen. Keine Lektion. Kein Kommentar. Die richtige Beobachtung im richtigen Moment.' },
             { icon: '◇', title: 'Wirklich privat', text: 'Nur Sie und ein PGA Advanced Professional. Keine Fremden in Ihrer Gruppe. Eine Runde, die ganz auf Ihr Spiel zugeschnitten ist.' },
             { icon: '+', title: 'Zugang zu mehr', text: 'Mitgliederplätze, die die meisten Besucher nicht unabhängig buchen können — Santa Ponsa 2 & 3 und weitere.' },
           ].map((f,i) => (
@@ -156,17 +156,17 @@ export default function HomePageDE() {
           <div className="package reveal">
             <p className="package__tier">Die Mallorca-Runde</p><h3 className="package__name">Mit einem Profi spielen</h3><p className="package__price">Ab 500 € pro Person</p><div className="package__divider"></div>
             <ul className="package__features">{['Platzempfehlung passend zu Ihrem Spiel','Abschlagzeit gesichert und vollständig organisiert','Vorrunden-Briefing und Aufwärmen','18 Löcher an der Seite von Andy','Coaching auf dem Platz während der gesamten Runde','Nachbesprechung — ehrlich und klar'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/de/contact" className="btn btn--dark">Anfragen {">"}</Link>
+            <Link href="/de/contact" className="btn btn--dark">Anfragen →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
             <p className="package__tier">Der Signature-Tag</p><h3 className="package__name">Geführter Golftag</h3><p className="package__price">Ab 650 € pro Person</p><div className="package__divider"></div>
             <ul className="package__features">{['Alles aus der Mallorca-Runde','Son Gual oder Alcanada — zwei der schönsten Plätze der Insel','Ausgedehntes Mittagessen im Platzrestaurant','Ausgewähltes Überraschungsgeschenk','Entspanntes Tempo — ein voller Tag, keine gehetzten 18 Löcher','Mindestens zwei Golfer, bis zu vier'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/de/contact" className="btn btn--gold">Anfragen {">"}</Link>
+            <Link href="/de/contact" className="btn btn--gold">Anfragen →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
             <p className="package__tier">Das Gesamterlebnis</p><h3 className="package__name">Maßgeschneiderte Golfreise</h3><p className="package__price">Auf Anfrage</p><div className="package__divider"></div>
             <ul className="package__features">{['Mehrstündiger Tag oder vollständiges Reiseprogramm','Privater Transfer ab Palma','Abendessen in einem handverlesenen Restaurant','Spa- oder Erholungseinheit in einer Partnereinrichtung','Vollständige Concierge-Koordination','Für Gruppen, Unternehmen und individuelle Anfragen'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/de/contact" className="btn btn--dark">Anfragen {">"}</Link>
+            <Link href="/de/contact" className="btn btn--dark">Anfragen →</Link>
           </div>
         </div>
       </section>
@@ -195,11 +195,10 @@ export default function HomePageDE() {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">&ldquo;Das Golf ist besser. Die Einblicke sind echt.&rdquo;</p>
-          <Link href="/de/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Ihren Tag buchen {">"}</Link>
+          <Link href="/de/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Ihren Tag buchen →</Link>
           <Link href="/de/golf-courses" className="btn btn--outline-white">Die Plätze erkunden</Link>
         </div>
       </section>
     </>
   )
 }
-

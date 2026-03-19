@@ -100,7 +100,7 @@ export default function PostLayout({ children, meta }) {
                   fontSize:'9px',letterSpacing:'.14em',textTransform:'uppercase',
                   fontFamily:"'Jost',sans-serif",color:'var(--gold)',textDecoration:'none',
                 }}>
-                  All guides �
+                  All guides →
                 </Link>
               </li>
             </ul>
@@ -110,4 +110,3 @@ export default function PostLayout({ children, meta }) {
     </div>
   )
 }
-

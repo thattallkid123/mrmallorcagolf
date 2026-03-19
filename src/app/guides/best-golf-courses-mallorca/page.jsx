@@ -77,15 +77,10 @@ export default function Post() {
 
         <div className="post-cta">
           <p>Want to play one of these courses with a PGA professional alongside you?</p>
-          <a href="/play-with-a-pro">See the play-with-a-pro experience �</a>
+          <a href="/play-with-a-pro">See the play-with-a-pro experience →</a>
         </div>
 
       </PostLayout>
     </PageLayout>
   )
 }
-
-
-
-
-

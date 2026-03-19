@@ -4,18 +4,18 @@ import Link from 'next/link'
 
 const courses = [
   { cls: 'course-card--1', badge: '★ Coup de cœur', region: 'Palma · 11km du centre', name: 'Son Gual', meta: ['Championship','Par 72','€80–165'], stars: '★★★★★', difficulty: '9/10 Difficulté', excerpt: 'Le design de Thomas Himmel (2007) évolue dans son propre écosystème de vent. La séquence finale — trous 15 à 18 — compte parmi les quatre meilleurs trous du golf européen.' },
-  { cls: 'course-card--2', badge: '★ Coup de cœur', region: 'Alcúdia · Nord de Majorque', name: 'Alcanada', meta: ['Côtier','Par 72','€95–175'], stars: '★★★★★', difficulty: '8/10 Difficulté', excerpt: 'Robert Trent Jones Jr. dans toute sa splendeur. Le 17e — un par 3 au-dessus dune crique avec le phare directement derrière le drapeau — est lun des trous les plus photographiés dEspagne.' },
-  { cls: 'course-card--3', badge: 'Meilleur dEspagne 2025', region: 'Son Vida · Palma', name: 'Son Muntaner', meta: ['DP World Tour','Par 72'], stars: '★★★★★', difficulty: '7/10 Difficulté', excerpt: 'Élu meilleur parcours dEspagne aux World Golf Awards 2025. Vue sur la Baie de Palma. Un olivier millénaire au 15e trou.' },
-  { cls: 'course-card--4', badge: null, region: 'Santa Ponsa · Sud-ouest', name: 'Santa Ponsa 1', meta: ['DP World Tour','Par 72','€77–126'], stars: '★★★★☆', difficulty: '8/10 Difficulté', excerpt: 'A accueilli le Mallorca Golf Open DP World Tour 2021. Lun des parcours les plus longs de lîle.' },
-  { cls: 'course-card--5', badge: null, region: 'Camp de Mar · Sud-ouest', name: 'Golf de Andratx', meta: ['Le plus exigeant','Par 70','€96–140'], stars: '★★★★☆', difficulty: '9/10 Difficulté', excerpt: 'Le 6e est le par 5 le plus long dEspagne avec 609 mètres. Construit dans les collines côtières sans compromis. Prévoyez des balles de rechange et humilité.' },
+  { cls: 'course-card--2', badge: '★ Coup de cœur', region: 'Alcúdia · Nord de Majorque', name: 'Alcanada', meta: ['Côtier','Par 72','€95–175'], stars: '★★★★★', difficulty: '8/10 Difficulté', excerpt: 'Robert Trent Jones Jr. dans toute sa splendeur. Le 17e — un par 3 au-dessus d\'une crique avec le phare directement derrière le drapeau — est l\'un des trous les plus photographiés d\'Espagne.' },
+  { cls: 'course-card--3', badge: 'Meilleur d\'Espagne 2025', region: 'Son Vida · Palma', name: 'Son Muntaner', meta: ['DP World Tour','Par 72'], stars: '★★★★★', difficulty: '7/10 Difficulté', excerpt: 'Élu meilleur parcours d\'Espagne aux World Golf Awards 2025. Vue sur la Baie de Palma. Un olivier millénaire au 15e trou.' },
+  { cls: 'course-card--4', badge: null, region: 'Santa Ponsa · Sud-ouest', name: 'Santa Ponsa 1', meta: ['DP World Tour','Par 72','€77–126'], stars: '★★★★☆', difficulty: '8/10 Difficulté', excerpt: 'A accueilli le Mallorca Golf Open DP World Tour 2021. L\'un des parcours les plus longs de l\'île.' },
+  { cls: 'course-card--5', badge: null, region: 'Camp de Mar · Sud-ouest', name: 'Golf de Andratx', meta: ['Le plus exigeant','Par 70','€96–140'], stars: '★★★★☆', difficulty: '9/10 Difficulté', excerpt: 'Le 6e est le par 5 le plus long d\'Espagne avec 609 mètres. Construit dans les collines côtières sans compromis. Prévoyez des balles de rechange et humilité.' },
 ]
 
 const faqs = [
-  { q: 'Faut-il être un bon golfeur ?', a: 'Pas du tout. Lexpérience sadapte à votre niveau — débutants et joueurs scratch en tirent tous quelque chose. La seule condition : vouloir une expérience golf vraiment différente.' },
+  { q: 'Faut-il être un bon golfeur ?', a: 'Pas du tout. L\'expérience s\'adapte à votre niveau — débutants et joueurs scratch en tirent tous quelque chose. La seule condition : vouloir une expérience golf vraiment différente.' },
   { q: 'Quel parcours utilisez-vous ?', a: 'Cela dépend de vous. Son Gual et Alcanada sont mes parcours principaux pour une vraie journée complète. Pour les débutants, les groupes ou les rondes plus courtes, il y a de meilleures options — et je vous dirai honnêtement laquelle convient.' },
-  { q: 'Comment réserver ?', a: 'Prenez contact. Dites-moi vos dates et ce que vous recherchez — je vous réponds personnellement sous 24 heures. Pas de système de réservation. Pas dattente.' },
-  { q: 'Est-ce adapté à un groupe ?', a: 'Oui. Les expériences conviennent aux solos, aux duos, aux groupes damis et aux journées dentreprise. LExpérience Complète est particulièrement appréciée des groupes professionnels et des dirigeants en visite sur lîle.' },
-  { q: 'Quelle est la meilleure période pour venir ?', a: 'Octobre, novembre, mars et avril. La meilleure combinaison de conditions de parcours, de météo, de rapport qualité-prix et de rythme de jeu. Lîle est jouable toute lannée — en janvier, les fairways ici sont meilleurs que ceux daoût en Angleterre.' },
+  { q: 'Comment réserver ?', a: 'Prenez contact. Dites-moi vos dates et ce que vous recherchez — je vous réponds personnellement sous 24 heures. Pas de système de réservation. Pas d\'attente.' },
+  { q: 'Est-ce adapté à un groupe ?', a: 'Oui. Les expériences conviennent aux solos, aux duos, aux groupes d\'amis et aux journées d\'entreprise. L\'Expérience Complète est particulièrement appréciée des groupes professionnels et des dirigeants en visite sur l\'île.' },
+  { q: 'Quelle est la meilleure période pour venir ?', a: 'Octobre, novembre, mars et avril. La meilleure combinaison de conditions de parcours, de météo, de rapport qualité-prix et de rythme de jeu. L\'île est jouable toute l\'année — en janvier, les fairways ici sont meilleurs que ceux d\'août en Angleterre.' },
 ]
 
 export default function HomePageFR() {
@@ -43,7 +43,7 @@ export default function HomePageFR() {
           </h1>
           <p className="hero__sub">Des expériences et un coaching sur le parcours — pour les golfeurs qui veulent tirer le meilleur de leur séjour sur l&apos;île.</p>
           <div className="hero__actions">
-            <Link href="/fr/play-with-a-pro" className="btn btn--gold">Voir les expériences {">"}</Link>
+            <Link href="/fr/play-with-a-pro" className="btn btn--gold">Voir les expériences →</Link>
             <Link href="/fr/golf-courses" className="btn btn--outline-white">Découvrir les parcours</Link>
           </div>
         </div>
@@ -118,14 +118,14 @@ export default function HomePageFR() {
           <p>J&apos;ai passé plus d&apos;une décennie à coacher en Chine, où les leçons de golf coûtaient 500 € de l&apos;heure et où les clients attendaient des progrès sérieux et mesurables — pas de simples encouragements. Avant cela, j&apos;ai coaché à Pebble Beach, à The Open Championship, à Évian, et j&apos;ai passé une saison sur un tour du monde dans quarante pays.</p>
           <p>Ce parcours façonne chaque ronde que j&apos;accompagne. De vrais conseils tout au long — stratégie de parcours, prise de décision, les choses que la plupart des golfeurs n&apos;entendent jamais. Une journée dont vous parlerez encore dans l&apos;avion du retour.</p>
           <p>Tout est organisé. Le parcours. L&apos;heure de départ. La table du déjeuner. Votre seule tâche : jouer — et jouer mieux que prévu.</p>
-          <Link href="/fr/play-with-a-pro" className="btn btn--dark">Voir les expériences {">"}</Link>
+          <Link href="/fr/play-with-a-pro" className="btn btn--dark">Voir les expériences →</Link>
         </div>
         <div className="what__right reveal reveal-delay-1">
           {[
             { icon: 'i', title: 'Tout est organisé', text: 'Parcours, heure de départ, transport, déjeuner — tout géré avant votre arrivée.' },
-            { icon: '�', title: 'Coaching sur le parcours', text: 'Une vraie progression dans de vraies conditions. Pas une leçon. Pas un commentaire. La bonne observation au bon moment.' },
+            { icon: '→', title: 'Coaching sur le parcours', text: 'Une vraie progression dans de vraies conditions. Pas une leçon. Pas un commentaire. La bonne observation au bon moment.' },
             { icon: '◇', title: 'Vraiment privé', text: 'Juste vous et un PGA Advanced Professional. Aucun inconnu dans votre groupe. Un parcours entièrement adapté à votre jeu.' },
-            { icon: '+', title: 'Accès à plus', text: 'Des parcours membres auxquels la plupart des visiteurs ne peuvent pas accéder seuls — Santa Ponsa 2 & 3, et dautres.' },
+            { icon: '+', title: 'Accès à plus', text: 'Des parcours membres auxquels la plupart des visiteurs ne peuvent pas accéder seuls — Santa Ponsa 2 & 3, et d\'autres.' },
           ].map((f,i) => (
             <div key={i} className="what__feature">
               <div className="what__feature-icon">{f.icon}</div>
@@ -155,18 +155,18 @@ export default function HomePageFR() {
         <div className="packages__grid">
           <div className="package reveal">
             <p className="package__tier">Le Tour de Majorque</p><h3 className="package__name">Jouer avec un pro</h3><p className="package__price">À partir de 500 € par personne</p><div className="package__divider"></div>
-            <ul className="package__features">{['Recommandation de parcours adaptée à votre jeu','Heure de départ réservée et entièrement gérée','Briefing et échauffement avant le départ','18 trous aux côtés dAndy','Coaching sur le parcours tout au long de la ronde','Débriefing après la ronde — honnête et clair'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/fr/contact" className="btn btn--dark">Demander {">"}</Link>
+            <ul className="package__features">{['Recommandation de parcours adaptée à votre jeu','Heure de départ réservée et entièrement gérée','Briefing et échauffement avant le départ','18 trous aux côtés d\'Andy','Coaching sur le parcours tout au long de la ronde','Débriefing après la ronde — honnête et clair'].map((f,i)=><li key={i}>{f}</li>)}</ul>
+            <Link href="/fr/contact" className="btn btn--dark">Demander →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
             <p className="package__tier">La Journée Signature</p><h3 className="package__name">Journée golf encadrée</h3><p className="package__price">À partir de 650 € par personne</p><div className="package__divider"></div>
-            <ul className="package__features">{['Tout du Tour de Majorque','Son Gual ou Alcanada — deux des plus beaux parcours de lîle','Déjeuner prolongé au restaurant du parcours','Cadeau surprise sélectionné avec soin','Rythme posé — une vraie journée, pas une ronde bâclée'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/fr/contact" className="btn btn--gold">Demander {">"}</Link>
+            <ul className="package__features">{['Tout du Tour de Majorque','Son Gual ou Alcanada — deux des plus beaux parcours de l\'île','Déjeuner prolongé au restaurant du parcours','Cadeau surprise sélectionné avec soin','Rythme posé — une vraie journée, pas une ronde bâclée'].map((f,i)=><li key={i}>{f}</li>)}</ul>
+            <Link href="/fr/contact" className="btn btn--gold">Demander →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
             <p className="package__tier">L&apos;Expérience Complète</p><h3 className="package__name">Voyage golf sur mesure</h3><p className="package__price">Sur devis</p><div className="package__divider"></div>
             <ul className="package__features">{['Journée multi-parcours ou programme complet','Transport privé depuis Palma','Dîner dans un restaurant soigneusement sélectionné','Séance spa ou récupération dans un établissement partenaire','Coordination concierge complète','Pour les groupes, entreprises et demandes sur mesure'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/fr/contact" className="btn btn--dark">Demander {">"}</Link>
+            <Link href="/fr/contact" className="btn btn--dark">Demander →</Link>
           </div>
         </div>
       </section>
@@ -195,11 +195,10 @@ export default function HomePageFR() {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">&ldquo;Le golf est meilleur. Les conseils sont vrais.&rdquo;</p>
-          <Link href="/fr/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Réservez votre journée {">"}</Link>
+          <Link href="/fr/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Réservez votre journée →</Link>
           <Link href="/fr/golf-courses" className="btn btn--outline-white">Découvrir les parcours</Link>
         </div>
       </section>
     </>
   )
 }
-

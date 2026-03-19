@@ -26,16 +26,16 @@ export default function Post() {
       <RevealObserver />
       <PostLayout meta={meta}>
 
-        <p>Yes. But let me give you the proper answer â€” because Mallorca is good for golf in ways that aren't obvious from the outside.</p>
+        <p>Yes. But let me give you the proper answer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â because Mallorca is good for golf in ways that aren't obvious from the outside.</p>
 
         <h2>The Courses Are Genuinely World-Class</h2>
-        <p>Son Gual ranks among Europe's top courses. Alcanada is one of the most scenic on the continent. Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards. Andratx is one of the hardest courses in Spain. These are not resort tracks â€” they're serious layouts built by serious architects.</p>
+        <p>Son Gual ranks among Europe's top courses. Alcanada is one of the most scenic on the continent. Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards. Andratx is one of the hardest courses in Spain. These are not resort tracks ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â they're serious layouts built by serious architects.</p>
 
         <h2>The Conditions Are Excellent Year-Round</h2>
         <p>300 days of sunshine. In January, when courses in much of Europe are closed or unplayable, the fairways here are immaculate. I moved from Shanghai and the off-season course conditions were the first thing that surprised me.</p>
 
         <h2>22 Courses on a Relatively Small Island</h2>
-        <p>Coming from Shanghai â€” 27 million people, 12 courses â€” the density of quality golf here is remarkable. A week on the island can include four or five genuinely different, genuinely excellent rounds. Southwest, east coast, north, central Palma â€” each area has its own character.</p>
+        <p>Coming from Shanghai ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 27 million people, 12 courses ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the density of quality golf here is remarkable. A week on the island can include four or five genuinely different, genuinely excellent rounds. Southwest, east coast, north, central Palma ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â each area has its own character.</p>
 
         <div className="post-fact">
           <div className="post-fact__item"><span className="post-fact__val">22</span><span className="post-fact__label">Courses on the island</span></div>
@@ -50,35 +50,26 @@ export default function Post() {
         <p>Playable, but peak pricing and peak temperatures. Not ideal for a dedicated golf trip. Early morning tee times are essential.</p>
 
         <h3>The east coast courses require a drive</h3>
-        <p>Pula, Canyamel, Capdepera â€” some of the most beautiful courses â€” are 55â€“65km from Palma. Factor in travel time and consider basing yourself in the east for a night.</p>
+        <p>Pula, Canyamel, Capdepera ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â some of the most beautiful courses ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â are 55ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“65km from Palma. Factor in travel time and consider basing yourself in the east for a night.</p>
 
         <div className="post-pull">
-          <p>"Mallorca is one of the best golf destinations in Europe. Not the most famous â€” but arguably the best combination of course quality, conditions, and scenery on the continent."</p>
+          <p>"Mallorca is one of the best golf destinations in Europe. Not the most famous ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â but arguably the best combination of course quality, conditions, and scenery on the continent."</p>
         </div>
 
         <h2>And When You're Not on the Course</h2>
-        <p>One thing visitors often underestimate: Mallorca is an exceptional island beyond the golf. The courses are the anchor, but the days between rounds â€” or the afternoon after an early finish â€” are genuinely part of what makes the trip.</p>
-        <p>Old town Palma has a dining scene that punches well above its size. The northwest coast â€” Valldemossa, DeiÃ , SÃ³ller â€” is UNESCO World Heritage and looks like nothing else in the Mediterranean. The northeast coast and the drive to Alcanada takes you through some of the best scenery on the island.</p>
-        <p>The clubhouse restaurants at Son Gual and Alcanada are both worth staying for. The Ma-10 mountain road from Andratx to PollenÃ§a is one of the most dramatic drives in Europe. Build in at least one afternoon where you don't have a tee time.</p>
+        <p>One thing visitors often underestimate: Mallorca is an exceptional island beyond the golf. The courses are the anchor, but the days between rounds ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â or the afternoon after an early finish ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â are genuinely part of what makes the trip.</p>
+        <p>Old town Palma has a dining scene that punches well above its size. The northwest coast ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Valldemossa, DeiÃƒÆ’Ã‚Â , SÃƒÆ’Ã‚Â³ller ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â is UNESCO World Heritage and looks like nothing else in the Mediterranean. The northeast coast and the drive to Alcanada takes you through some of the best scenery on the island.</p>
+        <p>The clubhouse restaurants at Son Gual and Alcanada are both worth staying for. The Ma-10 mountain road from Andratx to PollenÃƒÆ’Ã‚Â§a is one of the most dramatic drives in Europe. Build in at least one afternoon where you don't have a tee time.</p>
 
         <h2>Verdict</h2>
-        <p>Mallorca is one of the best golf destinations in Europe. Not the most famous â€” but arguably the best combination of course quality, conditions, and scenery on the continent. The golfers who know keep coming back.</p>
+        <p>Mallorca is one of the best golf destinations in Europe. Not the most famous ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â but arguably the best combination of course quality, conditions, and scenery on the continent. The golfers who know keep coming back.</p>
 
         <div className="post-cta">
           <p>Want to see what the best of Mallorca golf looks like, with a PGA professional alongside you?</p>
-          <a href="/play-with-a-pro">See the play-with-a-pro experience ï¿½</a>
+          <a href="/play-with-a-pro">See the play-with-a-pro experience ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢</a>
         </div>
 
       </PostLayout>
     </PageLayout>
   )
 }
-
-
-
-
-
-
-
-
-

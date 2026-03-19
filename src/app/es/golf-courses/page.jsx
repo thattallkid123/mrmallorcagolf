@@ -29,7 +29,3 @@ export default function GolfCourses_ES() {
     </PageLayout>
   )
 }
-
-
-
-

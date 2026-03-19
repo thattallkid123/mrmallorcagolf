@@ -35,8 +35,8 @@ export default function Coaching_ZH() {
           <p className="eyebrow" style={{marginBottom:'1.25rem'}}>赛前问卷</p>
           <p>课前的一份简短问卷，让我们在开始之前就已了解这一天的重点。您的困惑所在、差距所在、以及您对成功的定义。</p>
           <p>当我们走到第一个发球台时，我已经知道该关注什么。反馈是情境化且直接的——不是套用在所有人身上的通用教案。</p>
-          <p>课程地点为Son Gual、Alcanada，或根据您的水平��目标匹配的其他球场。</p>
-          <Link href="/zh/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>��询课程安� �</Link>
+          <p>课程地点为Son Gual、Alcanada，或根据您的水平和目标匹配的其他球场。</p>
+          <Link href="/zh/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>咨询课程安排 →</Link>
         </div>
       </section>
 
@@ -47,11 +47,11 @@ export default function Coaching_ZH() {
           <p className="improvements__sub">以及为什么这种改变会留下来——这是练习场训练很少能做到的。</p>
         </div>
         <div className="improvements-grid">
-          <div className="improvement reveal"><span className="improvement__num">01</span><h3>球场管理</h3><p>大多数业余球手失分的主要原因是决策失误，而非挥杆失误。选对球杆、目标��弹道——这才是将90分与80分区分开来的关键。</p></div>
+          <div className="improvement reveal"><span className="improvement__num">01</span><h3>球场管理</h3><p>大多数业余球手失分的主要原因是决策失误，而非挥杆失误。选对球杆、目标和弹道——这才是将90分与80分区分开来的关键。</p></div>
           <div className="improvement reveal reveal-delay-1"><span className="improvement__num">02</span><h3>压力下的击球选择</h3><p>那些在压力下崩溃的决策——明明五号铁赢得了这个洞，却拿出了一号木——在球场上会以一种练习场永远看不到的方式暴露出来。</p></div>
-          <div className="improvement reveal"><span className="improvement__num">03</span><h3>读果岭与坡度</h3><p>在真实果岭上推杆��切杆，与在练习果岭上完全不同。球速、坡度、纹路、当下的压力感——这一切都会改变什么方法有效。</p></div>
+          <div className="improvement reveal"><span className="improvement__num">03</span><h3>读果岭与坡度</h3><p>在真实果岭上推杆和切杆，与在练习果岭上完全不同。球速、坡度、纹路、当下的压力感——这一切都会改变什么方法有效。</p></div>
           <div className="improvement reveal reveal-delay-1"><span className="improvement__num">04</span><h3>在风中打球</h3><p>马略卡岛多风，Son Gual球场尤其拥有独特的风向生态。侧风下的选杆、弹道控制、在球似乎飘离时信任自己的瞄准——这些只有在真正刮风时才能练到。</p></div>
-          <div className="improvement reveal"><span className="improvement__num">05</span><h3>心理与例行程序</h3><p>打了坏球之后你如何��自己说话。你如何走向下一个发球台。你有没有击球前例行程序，以及它在压力下是否还能保持。心理层面在练习场完全看不见。</p></div>
+          <div className="improvement reveal"><span className="improvement__num">05</span><h3>心理与例行程序</h3><p>打了坏球之后你如何和自己说话。你如何走向下一个发球台。你有没有击球前例行程序，以及它在压力下是否还能保持。心理层面在练习场完全看不见。</p></div>
           <div className="improvement reveal reveal-delay-1"><span className="improvement__num">06</span><h3>找到触手可及的突破</h3><p>大多数球手进步最快，靠的不是重建挥杆，而是一两个小小的关键解锁。一位球员一生都在用劈起杆切球。一次谈话，换一根球杆，立竿见影。</p></div>
           <div className="improvement reveal improvement--full"><span className="improvement__num">07</span><h3>真实条件下的稳定性</h3><p>不平的球位、窄道、长草区——球场要求的击球，练习场从不提出。在真实条件下反复打出这些球，配合实时反馈，才是打造一个在关键时刻不掉链子的球技的方式。</p></div>
         </div>
@@ -79,26 +79,21 @@ export default function Coaching_ZH() {
           <div className="who-card reveal"><h3>来访高尔夫球手</h3><p>在岛上逗留期间的专项提升——不仅仅是打一轮球。</p></div>
           <div className="who-card reveal reveal-delay-1"><h3>常驻高尔夫球手</h3><p>与一位打同样球场的职业教练进行常规训练，持续、可量化的进步。</p></div>
           <div className="who-card reveal reveal-delay-2"><h3>练习场与球场的落差</h3><p>您的练习状态从未在球场上重现。这正是我们要解决的。</p></div>
-          <div className="who-card reveal"><h3>更聪明，而非重建</h3><p>您想打得更好，但不想从头到尾推�重来。</p></div>
+          <div className="who-card reveal"><h3>更聪明，而非重建</h3><p>您想打得更好，但不想从头到尾推倒重来。</p></div>
         </div>
       </section>
 
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">准备好打出更好的成绩了吗？</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>联系我，一起安�一次课程。</h2>
-          <p>告诉我您的球技现状��期望目标。我将围绕这些来设计课程——而非套用通用方案。</p>
+          <h2 className="serif-display" style={{color:'#fff'}}>联系我，一起安排一次课程。</h2>
+          <p>告诉我您的球技现状和期望目标。我将围绕这些来设计课程——而非套用通用方案。</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>立即联系 �</Link>
+          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>立即联系 →</Link>
           <Link href="/zh/play-with-a-pro" className="btn btn--outline-white">查看全部体验项目</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
-

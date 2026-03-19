@@ -63,15 +63,10 @@ export default function Post() {
 
         <div className="post-cta">
           <p>Planning a trip? Get in touch — I'll help you choose the right time and the right courses.</p>
-          <a href="/contact">Get in touch �</a>
+          <a href="/contact">Get in touch →</a>
         </div>
 
       </PostLayout>
     </PageLayout>
   )
 }
-
-
-
-
-

@@ -5,7 +5,7 @@ const FOOTER_COPY = {
   de: { tagline: 'Private Golferlebnisse auf Mallorca mit einem PGA Advanced Professional. Coaching auf dem Platz, alles arrangiert.', experiences: 'Erlebnisse', pwap: 'Mit Profi spielen', guide: 'Golfführer', about: 'Über Andy', allCourses: 'Alle Plätze', enquire: 'Anfragen', coaching: 'Coaching' },
   fr: { tagline: 'Expériences golf privées à Majorque avec un PGA Advanced Professional. Coaching sur parcours, tout organisé.', experiences: 'Expériences', pwap: 'Jouer avec un Pro', guide: 'Guide Golf', about: 'À propos', allCourses: 'Tous les parcours', enquire: 'Contact', coaching: 'Coaching' },
   es: { tagline: 'Experiencias de golf privadas en Mallorca con un PGA Advanced Professional. Coaching en campo, todo organizado.', experiences: 'Experiencias', pwap: 'Jugar con un Pro', guide: 'Guía de Golf', about: 'Sobre Andy', allCourses: 'Todos los campos', enquire: 'Contacto', coaching: 'Coaching' },
-  zh: { tagline: '马略卡岛顶级私人高尔夫体验，由PGA高级职业教练全程陪同。球场实地指导，全程安�。', experiences: '体验项目', pwap: '与职业球手同场', guide: '高尔夫指南', about: '关于Andy', allCourses: '全部球场', enquire: '联系我们', coaching: '球场指导' },
+  zh: { tagline: '马略卡岛顶级私人高尔夫体验，由PGA高级职业教练全程陪同。球场实地指导，全程安排。', experiences: '体验项目', pwap: '与职业球手同场', guide: '高尔夫指南', about: '关于Andy', allCourses: '全部球场', enquire: '联系我们', coaching: '球场指导' },
   sv: { tagline: 'Privata golfupplevelser på Mallorca med en PGA Advanced Professional. Coaching på banan, allt ordnat.', experiences: 'Upplevelser', pwap: 'Spela med ett Proffs', guide: 'Golfguide', about: 'Om Andy', allCourses: 'Alla banor', enquire: 'Kontakt', coaching: 'Coaching' },
   nl: { tagline: 'Privégolfervaringen op Mallorca met een PGA Advanced Professional. Coaching op de baan, alles geregeld.', experiences: 'Ervaringen', pwap: 'Spelen met een Pro', guide: 'Golfgids', about: 'Over Andy', allCourses: 'Alle banen', enquire: 'Contact', coaching: 'Coaching' },
 }
@@ -61,15 +61,12 @@ export default function Footer({ lang }) {
         <p>© 2026 Mr Mallorca Golf · Andy Griffiths · PGA Advanced Professional</p>
         <div className="footer__lang">
           <Link href="/">EN</Link>
+          <Link href="/es">ES</Link>
           <Link href="/de">DE</Link>
           <Link href="/fr">FR</Link>
-          <Link href="/es">ES</Link>
           <Link href="/zh">中文</Link>
-          <Link href="/sv">SV</Link>
-          <Link href="/nl">NL</Link>
         </div>
       </div>
     </footer>
   )
 }
-

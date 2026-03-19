@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: '马略卡岛高尔夫指南 — 球场评测、绿费与旅行攻略',
-  description: '马略卡岛高尔夫完整攻略，由岛上驻场PGA职业教练��写。球场评测、绿费、旅行规�及最佳出行时间，2026年最新版。',
+  description: '马略卡岛高尔夫完整攻略，由岛上驻场PGA职业教练撰写。球场评测、绿费、旅行规划及最佳出行时间，2026年最新版。',
   alternates: { canonical: 'https://mrmallorcagolf.com/zh/guides' },
 }
 
@@ -21,7 +21,7 @@ export default function GuidesIndex_ZH() {
             <span style={{color:'var(--gold-light)'}}>指南</span>
           </p>
           <h1>马略卡岛高尔夫。<br />真实攻略。</h1>
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>球场评测、旅行规�、绿费详解及最佳出行时间——由每周在此打球的PGA职业教练��写。</p>
+          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>球场评测、旅行规划、绿费详解及最佳出行时间——由每周在此打球的PGA职业教练撰写。</p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
             <span className="page-hero__tag">8篇指南</span>
             <span className="page-hero__tag">2026年更新</span>
@@ -32,7 +32,7 @@ export default function GuidesIndex_ZH() {
       </header>
 
       <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
-        <p style={{fontSize:'0.875rem',fontWeight:300,color:'var(--taupe)',fontStyle:'italic',marginBottom:'2rem',paddingBottom:'1.5rem',borderBottom:'1px solid var(--linen)'}}>（本系列指南以英文��写——为马略卡岛高尔夫球手提供最全面的参考信息。）</p>
+        <p style={{fontSize:'0.875rem',fontWeight:300,color:'var(--taupe)',fontStyle:'italic',marginBottom:'2rem',paddingBottom:'1.5rem',borderBottom:'1px solid var(--linen)'}}>（本系列指南以英文撰写——为马略卡岛高尔夫球手提供最全面的参考信息。）</p>
         <div style={{display:'flex',flexDirection:'column',gap:'2px'}}>
           <Link key="best-golf-courses-mallorca" href="/guides/best-golf-courses-mallorca" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
             <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
@@ -113,18 +113,14 @@ export default function GuidesIndex_ZH() {
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">准备好了吗？</p>
           <h2 className="serif-display" style={{color:'#fff'}}>在其中一个球场打一轮私人球局，PGA职业教练全程相伴。</h2>
-          <p>告诉我您的日期��需求。我会在24小时内亲自回复。</p>
+          <p>告诉我您的日期和需求。我会在24小时内亲自回复。</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/zh/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>了解体验项目 {">"}</Link>
+          <Link href="/zh/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>了解体验项目 →</Link>
           <Link href="/zh/contact" className="btn btn--outline-white">联系我们</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
 

@@ -73,15 +73,10 @@ export default function Post() {
 
         <div className="post-cta">
           <p>Hiring clubs and want to make a proper day of it at Son Gual or Alcanada? It might be worth combining with a play-with-a-pro experience.</p>
-          <a href="/play-with-a-pro">See what a full day looks like �</a>
+          <a href="/play-with-a-pro">See what a full day looks like →</a>
         </div>
 
       </PostLayout>
     </PageLayout>
   )
 }
-
-
-
-
-

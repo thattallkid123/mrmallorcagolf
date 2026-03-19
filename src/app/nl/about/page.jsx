@@ -70,7 +70,7 @@ export default function About_NL() {
           <div className="sidebar-cta reveal">
             <h3>Speel de mooiste banen van Mallorca met mij aan uw zijde.</h3>
             <p>Privédagen op Son Gual, Alcanada en meer. Alles geregeld. Coaching op de baan.</p>
-            <Link href="/nl/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Bekijk de ervaringen {">"}</Link>
+            <Link href="/nl/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Bekijk de ervaringen →</Link>
           </div>
         </aside>
       </div>
@@ -94,15 +94,10 @@ export default function About_NL() {
           <p>Vertel me uw datums, uw handicap en wat u zoekt. Ik bouw de dag rondom u.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/nl/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Bekijk de ervaringen {">"}</Link>
+          <Link href="/nl/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Bekijk de ervaringen →</Link>
           <Link href="/nl/contact" className="btn btn--outline-white">Neem contact op</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
-

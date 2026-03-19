@@ -116,15 +116,11 @@ export default function GuidesIndex_SV() {
           <p>Berätta om dina datum och vad du söker. Jag återkommer personligen inom 24 timmar.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/sv/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Se upplevelserna {">"}</Link>
+          <Link href="/sv/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Se upplevelserna →</Link>
           <Link href="/sv/contact" className="btn btn--outline-white">Hör av dig</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
 

@@ -8,16 +8,12 @@ export const metadata = {
   alternates: { canonical: 'https://mrmallorcagolf.com/guides' },
 }
 
+// ─────────────────────────────────────────────────────────────────
+// LIVE GUIDES — visible on the index page
+// To publish a new post: cut it from UPCOMING_GUIDES below
+// and paste it into this array. Git push. Done.
+// ─────────────────────────────────────────────────────────────────
 const guides = [
-  {
-    slug: 'best-golf-courses-mallorca',
-    badge: 'Course Guide',
-    badgeGold: true,
-    title: "The Best Golf Courses in Mallorca — A PGA Professional's Honest Guide (2026)",
-    intro: "Mallorca has more outstanding golf than most visitors realise. Twenty-two courses, several of genuine European Tour standard. Here's what I know from playing them.",
-    readTime: '8 min read',
-    keywords: 'Son Gual · Alcanada · Son Muntaner · Golf de Andratx',
-  },
   {
     slug: 'son-gual-review',
     badge: 'Course Review',
@@ -27,61 +23,21 @@ const guides = [
     readTime: '6 min read',
     keywords: 'Championship · Par 72 · €80–165 · Handicap required',
   },
-  {
-    slug: 'alcanada-review',
-    badge: 'Course Review',
-    badgeGold: true,
-    title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)",
-    intro: "The course I take people to when I want them to come home with a story. The lighthouse changes everything.",
-    readTime: '6 min read',
-    keywords: 'Coastal · Par 72 · €115–220 · Rolex Challenge Tour',
-  },
-  {
-    slug: 'golf-trip-planning-mallorca',
-    badge: 'Trip Planning',
-    badgeGold: false,
-    title: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
-    intro: "No tourism copy, no padding. Which courses, when to go, how many rounds, getting around, and what to do when you're not on the course.",
-    readTime: '7 min read',
-    keywords: 'When to visit · Courses · Transport · What to do',
-  },
-  {
-    slug: 'best-time-play-golf-mallorca',
-    badge: 'When to Visit',
-    badgeGold: false,
-    title: 'The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)',
-    intro: "Short answer: October–November and February–April. But the island plays better year-round than most people expect.",
-    readTime: '4 min read',
-    keywords: 'Season guide · Month by month · Green fee timing',
-  },
-  {
-    slug: 'golf-cost-mallorca',
-    badge: 'Green Fees',
-    badgeGold: false,
-    title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
-    intro: "A round can cost €20 or €220 depending on where you play and when. Here's the honest breakdown from someone who plays here most weeks.",
-    readTime: '5 min read',
-    keywords: 'Green fees · Club hire · Buggies · Full day costs',
-  },
-  {
-    slug: 'golf-club-hire-mallorca',
-    badge: 'Practical Guide',
-    badgeGold: false,
-    title: 'Golf Club Hire in Mallorca — Everything You Need to Know (2026)',
-    intro: "Should you bring your own clubs? Which hire companies are worth using? What should you pay? Answered honestly.",
-    readTime: '6 min read',
-    keywords: 'Hire companies · Prices · Course pro shops · Tips',
-  },
-  {
-    slug: 'is-mallorca-good-for-golf',
-    badge: 'Overview',
-    badgeGold: false,
-    title: "Is Mallorca Good for Golf? A PGA Professional's Answer",
-    intro: "Yes. But here's the proper answer — because Mallorca is good for golf in ways that aren't obvious from the outside.",
-    readTime: '6 min read',
-    keywords: 'World-class courses · Year-round · 22 courses · Beyond golf',
-  },
 ]
+
+// ─────────────────────────────────────────────────────────────────
+// UPCOMING GUIDES — pages exist but not listed yet
+// To publish: move the entry above into the guides array
+// ─────────────────────────────────────────────────────────────────
+// const UPCOMING_GUIDES = [
+//   { slug: 'alcanada-review', badge: 'Course Review', badgeGold: true, title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)", intro: "The course I take people to when I want them to come home with a story. The lighthouse changes everything.", readTime: '6 min read', keywords: 'Coastal · Par 72 · €115–220 · Rolex Challenge Tour' },
+//   { slug: 'best-golf-courses-mallorca', badge: 'Course Guide', badgeGold: true, title: "The Best Golf Courses in Mallorca — Honest Guide (2026)", intro: "Mallorca has more outstanding golf than most visitors realise. Twenty-two courses, several of genuine European Tour standard.", readTime: '8 min read', keywords: 'Son Gual · Alcanada · Son Muntaner · Golf de Andratx' },
+//   { slug: 'is-mallorca-good-for-golf', badge: 'Overview', badgeGold: false, title: "Is Mallorca Good for Golf? A PGA Professional's Answer", intro: "Yes. But here's the proper answer — because Mallorca is good for golf in ways that aren't obvious from the outside.", readTime: '6 min read', keywords: 'World-class courses · Year-round · 22 courses · Beyond golf' },
+//   { slug: 'best-time-play-golf-mallorca', badge: 'When to Visit', badgeGold: false, title: 'The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)', intro: "Short answer: October–November and February–April. But the island plays better year-round.", readTime: '4 min read', keywords: 'Season guide · Month by month · Green fee timing' },
+//   { slug: 'golf-cost-mallorca', badge: 'Green Fees', badgeGold: false, title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown', intro: "A round can cost €20 or €220 depending on where you play and when. Honest breakdown.", readTime: '5 min read', keywords: 'Green fees · Club hire · Buggies · Full day costs' },
+//   { slug: 'golf-trip-planning-mallorca', badge: 'Trip Planning', badgeGold: false, title: 'How to Plan the Perfect Golf Trip to Mallorca', intro: "No tourism copy, no padding. Which courses, when to go, how many rounds, getting around.", readTime: '7 min read', keywords: 'When to visit · Courses · Transport · What to do' },
+//   { slug: 'golf-club-hire-mallorca', badge: 'Practical Guide', badgeGold: false, title: 'Golf Club Hire in Mallorca — Everything You Need to Know (2026)', intro: "Should you bring your own clubs? Which hire companies are worth using?", readTime: '6 min read', keywords: 'Hire companies · Prices · Course pro shops · Tips' },
+// ]
 
 export default function GuidesIndex() {
   return (
@@ -100,7 +56,7 @@ export default function GuidesIndex() {
             Course reviews, trip planning, green fees, and when to visit — written by a PGA professional who plays here every week.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
-            <span className="page-hero__tag">8 Guides</span>
+            
             <span className="page-hero__tag">Updated 2026</span>
             <span className="page-hero__tag page-hero__tag--gold">★ First-Hand Reviews</span>
             <span className="page-hero__tag">PGA Professional</span>
@@ -204,7 +160,3 @@ export default function GuidesIndex() {
     </PageLayout>
   )
 }
-
-
-
-

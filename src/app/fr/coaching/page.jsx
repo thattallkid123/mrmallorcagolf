@@ -36,7 +36,7 @@ export default function Coaching_FR() {
           <p>Un court questionnaire avant la session donne forme à la journée avant que nous commencions. Ce qui vous frustre, où sont les lacunes, à quoi ressemble le succès.</p>
           <p>Quand nous arrivons au premier départ, j'ai déjà une image de ce qu'il faut observer. Le retour est situationnel et honnête — pas un plan de cours générique.</p>
           <p>Les sessions ont lieu à Son Gual, Alcanada, ou sur un parcours adapté à votre niveau et vos objectifs.</p>
-          <Link href="/fr/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Discuter d'une session �</Link>
+          <Link href="/fr/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Discuter d'une session →</Link>
         </div>
       </section>
 
@@ -90,15 +90,10 @@ export default function Coaching_FR() {
           <p>Dites-moi où en est votre jeu et ce que vous en voulez. Je construirai la session autour de ça.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/fr/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Prendre contact �</Link>
+          <Link href="/fr/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Prendre contact →</Link>
           <Link href="/fr/play-with-a-pro" className="btn btn--outline-white">Voir les Expériences Complètes</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
-

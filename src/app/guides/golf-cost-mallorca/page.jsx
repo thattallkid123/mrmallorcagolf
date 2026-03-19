@@ -11,7 +11,7 @@ export const metadata = {
 const meta = {
   badge: 'Green Fees', badgeGold: false, readTime: '5 min read', updated: 'March 2026',
   title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
-  intro: 'A round can cost €20 or €220 depending on where you play and when. Heres the honest breakdown for 2026 from someone who plays here most weeks.',
+intro: "A round can cost €20 or €220 depending on where you play and when. Here's the honest breakdown for 2026 from someone who plays here most weeks.",
   related: [
     { slug: 'golf-club-hire-mallorca', title: 'Golf Club Hire in Mallorca — Complete Guide' },
     { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
@@ -68,16 +68,10 @@ export default function Post() {
 
         <div className="post-cta">
           <p>Want a full premium day arranged — course, coaching, lunch, everything included?</p>
-          <a href="/play-with-a-pro">See the play-with-a-pro experience �</a>
+          <a href="/play-with-a-pro">See the play-with-a-pro experience →</a>
         </div>
 
       </PostLayout>
     </PageLayout>
   )
 }
-
-
-
-
-
-

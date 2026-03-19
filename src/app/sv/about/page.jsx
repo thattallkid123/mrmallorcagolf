@@ -70,7 +70,7 @@ export default function About_SV() {
           <div className="sidebar-cta reveal">
             <h3>Spela Mallorcas finaste banor med mig vid din sida.</h3>
             <p>Privata dagar på Son Gual, Alcanada och mer. Allt ordnat. Coaching på banan.</p>
-            <Link href="/sv/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Se upplevelserna {">"}</Link>
+            <Link href="/sv/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Se upplevelserna →</Link>
           </div>
         </aside>
       </div>
@@ -94,15 +94,10 @@ export default function About_SV() {
           <p>Berätta om dina datum, ditt handicap och vad du söker. Jag bygger dagen runt dig.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/sv/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Se upplevelserna {">"}</Link>
+          <Link href="/sv/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Se upplevelserna →</Link>
           <Link href="/sv/contact" className="btn btn--outline-white">Hör av dig</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
-

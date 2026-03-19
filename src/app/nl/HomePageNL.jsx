@@ -14,7 +14,7 @@ const faqs = [
   { q: 'Moet ik een goede golfer zijn?', a: 'Helemaal niet. De ervaring past zich aan uw niveau aan — beginners en scratch-spelers halen er beide wat uit. De enige vereiste is een genuien andere golfervaring willen.' },
   { q: 'Welke baan gebruikt u?', a: 'Dat hangt van u af. Son Gual en Alcanada zijn mijn primaire banen voor een serieuze volledige dag. Voor beginners, groepen of kortere rondes zijn er betere opties — en ik vertel u eerlijk welke past.' },
   { q: 'Hoe reserveer ik?', a: 'Neem contact op. Vertel me uw data en wat u zoekt — ik reageer persoonlijk binnen 24 uur. Geen reserveringssystemen. Geen wachten.' },
-  { q: 'Is dit geschikt voor een groep?', a: 'Ja. De ervaringen werken voor solos, koppels, vriendengroepen en bedrijfsdagen. De Volledige Ervaring is bijzonder populair bij bedrijfsgroepen en leidinggevenden die het eiland bezoeken.' },
+  { q: 'Is dit geschikt voor een groep?', a: 'Ja. De ervaringen werken voor solo\'s, koppels, vriendengroepen en bedrijfsdagen. De Volledige Ervaring is bijzonder populair bij bedrijfsgroepen en leidinggevenden die het eiland bezoeken.' },
   { q: 'Wanneer is de beste tijd om te komen?', a: 'Oktober, november, maart en april. De beste combinatie van baancondities, weer, prijs-kwaliteit en speeltempo. Het eiland is het hele jaar bespeelbaar — in januari zijn de fairways hier beter dan Engelse fairways in augustus.' },
 ]
 
@@ -43,7 +43,7 @@ export default function HomePageNL() {
           </h1>
           <p className="hero__sub">Golfervaringen en coaching op de baan — voor golfers die meer uit hun tijd op het eiland willen halen.</p>
           <div className="hero__actions">
-            <Link href="/nl/play-with-a-pro" className="btn btn--gold">Bekijk de ervaringen {">"}</Link>
+            <Link href="/nl/play-with-a-pro" className="btn btn--gold">Bekijk de ervaringen →</Link>
             <Link href="/nl/golf-courses" className="btn btn--outline-white">Verken de banen</Link>
           </div>
         </div>
@@ -118,12 +118,12 @@ export default function HomePageNL() {
           <p>Ik bracht meer dan een decennium door met coachen in China, waar golflessen zo'n €500 per uur kostten en klanten serieuze, meetbare verbetering verwachtten — geen aanmoediging. Daarvoor coachte ik op Pebble Beach, The Open Championship, Évian, en bracht een seizoen door op een wereldreis door veertig landen.</p>
           <p>Die achtergrond vormt elke ronde die ik begeleid. Echte adviezen gedurende de dag — baanstrategie, besluitvorming, de dingen die de meeste golfers nooit horen. Een dag waar u nog over praat in het vliegtuig naar huis.</p>
           <p>Alles is geregeld. De baan. De starttijd. De lunchtafel. Uw enige taak is spelen — en beter spelen dan verwacht.</p>
-          <Link href="/nl/play-with-a-pro" className="btn btn--dark">Bekijk de ervaringen {">"}</Link>
+          <Link href="/nl/play-with-a-pro" className="btn btn--dark">Bekijk de ervaringen →</Link>
         </div>
         <div className="what__right reveal reveal-delay-1">
           {[
             { icon: 'i', title: 'Alles geregeld', text: 'Baan, starttijd, vervoer, lunch — volledig afgehandeld voordat u aankomt.' },
-            { icon: '�', title: 'Coaching op de baan', text: 'Echte verbetering in echte omstandigheden. Geen les. Geen commentaar. De juiste observatie op het juiste moment.' },
+            { icon: '→', title: 'Coaching op de baan', text: 'Echte verbetering in echte omstandigheden. Geen les. Geen commentaar. De juiste observatie op het juiste moment.' },
             { icon: '◇', title: 'Echt privé', text: 'Alleen u en een PGA Advanced Professional. Geen vreemden in uw groep. Een ronde volledig gevormd rond uw spel.' },
             { icon: '+', title: 'Toegang tot meer', text: 'Ledenbanen die de meeste bezoekers niet zelfstandig kunnen boeken — Santa Ponsa 2 & 3, en meer.' },
           ].map((f,i) => (
@@ -156,17 +156,17 @@ export default function HomePageNL() {
           <div className="package reveal">
             <p className="package__tier">De Mallorca Ronde</p><h3 className="package__name">Spelen met een Pro</h3><p className="package__price">Vanaf €500 per persoon</p><div className="package__divider"></div>
             <ul className="package__features">{['Baanaanbeveling afgestemd op uw spel','Starttijd geboekt en volledig geregeld','Briefing en warming-up','18 holes naast Andy','Coaching op de baan gedurende de ronde','Nabespreking — eerlijk en duidelijk'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/nl/contact" className="btn btn--dark">Aanvragen {">"}</Link>
+            <Link href="/nl/contact" className="btn btn--dark">Aanvragen →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
             <p className="package__tier">De Signature Dag</p><h3 className="package__name">Begeleide Golfdag</h3><p className="package__price">Vanaf €650 per persoon</p><div className="package__divider"></div>
             <ul className="package__features">{['Alles van De Mallorca Ronde','Son Gual of Alcanada','Uitgebreide lunch op de baan','Geselecteerde verrassingsgift','Ontspannen tempo — een volle dag'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/nl/contact" className="btn btn--gold">Aanvragen {">"}</Link>
+            <Link href="/nl/contact" className="btn btn--gold">Aanvragen →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
             <p className="package__tier">De Volledige Ervaring</p><h3 className="package__name">Maatwerk Golfreis</h3><p className="package__price">Op aanvraag</p><div className="package__divider"></div>
             <ul className="package__features">{['Meerbanendag of volledig programma','Privévervoer vanuit Palma','Diner bij handgekozen restaurant','Spa- of herstelsessie','Volledige conciergecordinatie','Voor groepen, bedrijven & maatwerk'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/nl/contact" className="btn btn--dark">Aanvragen {">"}</Link>
+            <Link href="/nl/contact" className="btn btn--dark">Aanvragen →</Link>
           </div>
         </div>
       </section>
@@ -195,11 +195,10 @@ export default function HomePageNL() {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">&ldquo;Het golf is beter. De inzichten zijn echt.&rdquo;</p>
-          <Link href="/nl/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Reserveer uw dag {">"}</Link>
+          <Link href="/nl/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Reserveer uw dag →</Link>
           <Link href="/nl/golf-courses" className="btn btn--outline-white">Verken de banen</Link>
         </div>
       </section>
     </>
   )
 }
-

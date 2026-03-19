@@ -36,7 +36,7 @@ export default function Coaching_NL() {
           <p>Een korte vragenlijst vóór de sessie geeft de dag vorm voordat we beginnen. Wat u frustreert, waar de hiaten zijn, hoe succes eruitziet.</p>
           <p>Wanneer we de eerste tee bereiken, heb ik al een beeld van wat ik moet observeren. De feedback is situationeel en eerlijk — geen generiek lesplan voor iedereen.</p>
           <p>Sessies vinden plaats op Son Gual, Alcanada, of een baan afgestemd op uw niveau en doelen.</p>
-          <Link href="/nl/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Een sessie bespreken �</Link>
+          <Link href="/nl/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Een sessie bespreken →</Link>
         </div>
       </section>
 
@@ -90,15 +90,10 @@ export default function Coaching_NL() {
           <p>Vertel me hoe uw spel ervoor staat en wat u ervan wilt. Ik bouw de sessie daromheen — geen generiek programma.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/nl/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Neem contact op �</Link>
+          <Link href="/nl/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Neem contact op →</Link>
           <Link href="/nl/play-with-a-pro" className="btn btn--outline-white">Bekijk Volledige Ervaringen</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
-

@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: '与职业球手同场 — 马略卡岛私人高尔夫日',
-  description: '在马略卡岛与PGA高级职业教练Andy Griffiths同打一轮私人高尔夫。球场实地指导，全天全程安�。每人起价500欧元。',
+  description: '在马略卡岛与PGA高级职业教练Andy Griffiths同打一轮私人高尔夫。球场实地指导，全天全程安排。每人起价500欧元。',
   alternates: { canonical: 'https://mrmallorcagolf.com/zh/play-with-a-pro' },
 }
 
@@ -44,8 +44,8 @@ export default function PlayWithAPro_ZH() {
           <div className="included">
             <h3>包含内容</h3>
             <ul className="included-list">
-              <li className="included-item"><span className="included-dot"></span><p><strong>球场推荐</strong>根据您的球技、差点��期望量身匹配</p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>开球时间</strong>已预订，全程安�</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>球场推荐</strong>根据您的球技、差点和期望量身匹配</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>开球时间</strong>已预订，全程安排</p></li>
               <li className="included-item"><span className="included-dot"></span><p><strong>赛前简报</strong>了解球场，明确关注点</p></li>
               <li className="included-item"><span className="included-dot"></span><p><strong>与Andy同打18洞</strong>作为您的球伴同场竞技</p></li>
               <li className="included-item"><span className="included-dot"></span><p><strong>球场实地指导</strong>球场管理、选杆、决策</p></li>
@@ -59,8 +59,8 @@ export default function PlayWithAPro_ZH() {
       <section className="pwap-courses">
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>选择哪个球场？</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual��Alcanada是主要球场。但选择始终与您共同决定。</h2>
-          <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>有初学者的团体、较短的半日——总有更合适的球场，我会直接告诉您哪个更适合。部分会员制球场无法自行预订——可为客户安�。</p>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual和Alcanada是主要球场。但选择始终与您共同决定。</h2>
+          <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>有初学者的团体、较短的半日——总有更合适的球场，我会直接告诉您哪个更适合。部分会员制球场无法自行预订——可为客户安排。</p>
         </div>
         <div className="courses-grid">
           <div className="course-choice reveal">
@@ -84,7 +84,7 @@ export default function PlayWithAPro_ZH() {
         <div className="who-grid">
           <div className="who-card reveal"><span className="who-card__icon">01</span><h3>来访高尔夫球手</h3><p>希望马略卡岛之旅真正难忘，而不只是在线预订一个开球时间。</p></div>
           <div className="who-card reveal reveal-delay-1"><span className="who-card__icon">02</span><h3>练习场与球场的落差</h3><p>练习成绩无法在球场重现。问题几乎总是球场管理，而非挥杆。</p></div>
-          <div className="who-card reveal reveal-delay-2"><span className="who-card__icon">03</span><h3>企业高管团体</h3><p>商务团体、来岛高管，以及希望拥有全程安�的高端一天的人士。</p></div>
+          <div className="who-card reveal reveal-delay-2"><span className="who-card__icon">03</span><h3>企业高管团体</h3><p>商务团体、来岛高管，以及希望拥有全程安排的高端一天的人士。</p></div>
           <div className="who-card reveal"><span className="who-card__icon">04</span><h3>初学者</h3><p>希望有专业陪伴、没有压力的休闲球手。这一天从不围绕成绩转。</p></div>
           <div className="who-card reveal reveal-delay-1"><span className="who-card__icon">05</span><h3>常驻球手</h3><p>在岛上居住，寻求与打同样球场的职业教练进行定期训练。</p></div>
           <div className="who-card reveal reveal-delay-2"><span className="who-card__icon">06</span><h3>希望获得更多的人</h3><p>唯一的要求是想要一次真正与众不同的高尔夫体验。</p></div>
@@ -117,13 +117,13 @@ export default function PlayWithAPro_ZH() {
             <div className="tier__rule"></div>
             <ul className="tier__features">
               <li>根据您的球技量身推荐球场</li>
-              <li>开球时间预订及全程安�</li>
+              <li>开球时间预订及全程安排</li>
               <li>赛前简报与热身</li>
               <li>与Andy同打18洞</li>
               <li>全程球场实地指导</li>
               <li>赛后复盘</li>
             </ul>
-            <Link href="/zh/contact" className="tier__btn">立即��询 &rarr;</Link>
+            <Link href="/zh/contact" className="tier__btn">立即咨询 &rarr;</Link>
           </div>
           <div className="tier tier--feature reveal">
             <p className="tier__name-small">招牌全日体验</p>
@@ -137,7 +137,7 @@ export default function PlayWithAPro_ZH() {
               <li>精心挑选的惊喜礼品</li>
               <li>从容节奏——完整的一天</li>
             </ul>
-            <Link href="/zh/contact" className="tier__btn">立即��询 &rarr;</Link>
+            <Link href="/zh/contact" className="tier__btn">立即咨询 &rarr;</Link>
           </div>
           <div className="tier reveal">
             <p className="tier__name-small">至尊定制体验</p>
@@ -145,14 +145,14 @@ export default function PlayWithAPro_ZH() {
             <p className="tier__price">价格面议</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
-              <li>多球场全日游或完整行程规�</li>
+              <li>多球场全日游或完整行程规划</li>
               <li>帕尔马出发私人专车</li>
               <li>精选餐厅晚宴</li>
               <li>合作场馆水疗或恢复疗程</li>
               <li>全程礼宾协调服务</li>
               <li>适合团体、企业及个性化定制需求</li>
             </ul>
-            <Link href="/zh/contact" className="tier__btn">立即��询 &rarr;</Link>
+            <Link href="/zh/contact" className="tier__btn">立即咨询 &rarr;</Link>
           </div>
         </div>
       </section>
@@ -160,7 +160,7 @@ export default function PlayWithAPro_ZH() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">准备好在马略卡岛畅享高尔夫了吗？</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>联系我，让我们安�您的专属一天。</h2>
+          <h2 className="serif-display" style={{color:'#fff'}}>联系我，让我们安排您的专属一天。</h2>
           <p>告诉我您的日期、差点以及期望。我会亲自回复——通常在24小时内。</p>
         </div>
         <div className="cta-final__right reveal">
@@ -171,8 +171,3 @@ export default function PlayWithAPro_ZH() {
     </PageLayout>
   )
 }
-
-
-
-
-

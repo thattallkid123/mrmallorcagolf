@@ -11,11 +11,11 @@ const courses = [
 ]
 
 const faqs = [
-  { q: '我需要是一位优秀的高尔夫球手吗？', a: '完全不需要。体验会根据您的水平调整——初学者��职业选手都能从中受益。唯一的要求，是希望享受一次真正与众不同的高尔夫体验。' },
-  { q: '您通常在哪个球场？', a: '视您的情况而定。Son Gual��Alcanada是我的首选球场，适合认真的全日体验。对于初学者、团体或较短的球局，有更合适的选择——我会直接告诉您哪个更适合您。' },
-  { q: '如何预订？', a: '直接联系我。告诉我您的日期��需求——我会在24小时内亲自回复。没有预订系统，无需等待。' },
-  { q: '适合团体参与吗？', a: '当然。无论是单人、双人、朋友团还是企业团建，均可安�。至尊定制体验尤其受到商务团体��来岛高管的欢迎。' },
-  { q: '一年中哪个时间最适合前来？', a: '十月、十一月、三月��四月是最佳时期，球场状态、天气、性价比与打球节奏的综合体验最佳。马略卡岛全年均可打球——一月份的球道状态，比英格兰八月的球道更为出色。' },
+  { q: '我需要是一位优秀的高尔夫球手吗？', a: '完全不需要。体验会根据您的水平调整——初学者和职业选手都能从中受益。唯一的要求，是希望享受一次真正与众不同的高尔夫体验。' },
+  { q: '您通常在哪个球场？', a: '视您的情况而定。Son Gual和Alcanada是我的首选球场，适合认真的全日体验。对于初学者、团体或较短的球局，有更合适的选择——我会直接告诉您哪个更适合您。' },
+  { q: '如何预订？', a: '直接联系我。告诉我您的日期和需求——我会在24小时内亲自回复。没有预订系统，无需等待。' },
+  { q: '适合团体参与吗？', a: '当然。无论是单人、双人、朋友团还是企业团建，均可安排。至尊定制体验尤其受到商务团体和来岛高管的欢迎。' },
+  { q: '一年中哪个时间最适合前来？', a: '十月、十一月、三月和四月是最佳时期，球场状态、天气、性价比与打球节奏的综合体验最佳。马略卡岛全年均可打球——一月份的球道状态，比英格兰八月的球道更为出色。' },
 ]
 
 export default function HomePageZH() {
@@ -43,7 +43,7 @@ export default function HomePageZH() {
           </h1>
           <p className="hero__sub">球场上的高端体验与专业指导——为那些想在岛上充分享受高尔夫的球员而设。</p>
           <div className="hero__actions">
-            <Link href="/zh/play-with-a-pro" className="btn btn--gold">了解体验项目 {">"}</Link>
+            <Link href="/zh/play-with-a-pro" className="btn btn--gold">了解体验项目 →</Link>
             <Link href="/zh/golf-courses" className="btn btn--outline-white">探索球场</Link>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function HomePageZH() {
         </div>
         <div className="how__steps">
           <div className="how__step reveal"><span className="how__num">01</span><h3>联系我</h3><p>告诉我您的行程日期、差点以及期望。我会在24小时内亲自回复。</p></div>
-          <div className="how__step reveal reveal-delay-1"><span className="how__num">02</span><h3>我为您规�全天</h3><p>球场推荐、开球时间、午餐、交通——一切在您抵达前安�妥当。</p></div>
+          <div className="how__step reveal reveal-delay-1"><span className="how__num">02</span><h3>我为您规划全天</h3><p>球场推荐、开球时间、午餐、交通——一切在您抵达前安排妥当。</p></div>
           <div className="how__step reveal reveal-delay-2"><span className="how__num">03</span><h3>到达，挥杆</h3><p>您唯一需要做的，就是享受这一轮球。并且打出超乎预期的成绩。</p></div>
         </div>
       </section>
@@ -113,19 +113,19 @@ export default function HomePageZH() {
       <section className="what">
         <div className="what__left reveal">
           <p className="eyebrow">体验详情</p>
-          <h2 className="serif-display">马略卡岛上的大多数高尔夫日，不过是一个开球时间��一句道别。</h2>
+          <h2 className="serif-display">马略卡岛上的大多数高尔夫日，不过是一个开球时间和一句道别。</h2>
           <span className="gold-rule"></span>
           <p>我在中国执教逾十年。那时的高尔夫课程每小时收费约500欧元，客户期待的是切实可见的进步——而非单纯的鼓励。在此之前，我曾在圆石滩、英国公开赛、法国依云锦标赛执教，并在一次环球邮轮旅行中途经四十余个国家。</p>
           <p>这段经历影响着我陪伴每一位客户的方式。全程提供真实的专业建议——球场策略、决策思维，以及大多数高尔夫球手从未听过的那些关键点。这将是一段在回程飞机上还会津津乐道的体验。</p>
-          <p>一切均已安�妥当。球场、开球时间、午餐桌位。您唯一要做的，就是上场挥杆——并且打出超出预期的表现。</p>
-          <Link href="/zh/play-with-a-pro" className="btn btn--dark">了解体验项目 {">"}</Link>
+          <p>一切均已安排妥当。球场、开球时间、午餐桌位。您唯一要做的，就是上场挥杆——并且打出超出预期的表现。</p>
+          <Link href="/zh/play-with-a-pro" className="btn btn--dark">了解体验项目 →</Link>
         </div>
         <div className="what__right reveal reveal-delay-1">
           {[
-            { icon: 'i', title: '全程安�妥当', text: '球场、开球时间、接送、午餐——在您到达之前，一切均已处理完毕。' },
-            { icon: '�', title: '球场实地指导', text: '在真实条件下取得真实进步。不是课堂讲解，不是跑动式评论，而是在关键时刻给出恰到好处的提示。' },
+            { icon: 'i', title: '全程安排妥当', text: '球场、开球时间、接送、午餐——在您到达之前，一切均已处理完毕。' },
+            { icon: '→', title: '球场实地指导', text: '在真实条件下取得真实进步。不是课堂讲解，不是跑动式评论，而是在关键时刻给出恰到好处的提示。' },
             { icon: '◇', title: '真正私密', text: '只有您与一位PGA高级职业教练同场。没有陌生人加入您的组别。整轮球完全围绕您的技术特点而设计。' },
-            { icon: '+', title: '独家球场通道', text: '部分仅限会员的球场，普通游客无法自行预订——包括圣蓬萨2号场、3号场及其他球场，均可为客户安�。' },
+            { icon: '+', title: '独家球场通道', text: '部分仅限会员的球场，普通游客无法自行预订——包括圣蓬萨2号场、3号场及其他球场，均可为客户安排。' },
           ].map((f,i) => (
             <div key={i} className="what__feature">
               <div className="what__feature-icon">{f.icon}</div>
@@ -155,18 +155,18 @@ export default function HomePageZH() {
         <div className="packages__grid">
           <div className="package reveal">
             <p className="package__tier">马略卡经典之旅</p><h3 className="package__name">与职业球手同场</h3><p className="package__price">每人起价500欧元</p><div className="package__divider"></div>
-            <ul className="package__features">{['根据您的球技量身推荐球场','开球时间预订及全程安�','赛前简报与热身','与Andy同打18洞','全程球场实地指导','赛后复盘——直接，清晰'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/zh/contact" className="btn btn--dark">立即和询 {">"}</Link>
+            <ul className="package__features">{['根据您的球技量身推荐球场','开球时间预订及全程安排','赛前简报与热身','与Andy同打18洞','全程球场实地指导','赛后复盘——直接，清晰'].map((f,i)=><li key={i}>{f}</li>)}</ul>
+            <Link href="/zh/contact" className="btn btn--dark">立即咨询 →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
             <p className="package__tier">招牌全日体验</p><h3 className="package__name">全程陪同高尔夫日</h3><p className="package__price">每人起价650欧元</p><div className="package__divider"></div>
             <ul className="package__features">{['包含马略卡经典之旅全部内容','Son Gual或Alcanada——岛上两大顶级球场','球场餐厅悠闲午餐','精心挑选的惊喜礼品','从容节奏——完整的一天，而非仓促的一轮'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/zh/contact" className="btn btn--gold">立即和询 {">"}</Link>
+            <Link href="/zh/contact" className="btn btn--gold">立即咨询 →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
             <p className="package__tier">至尊定制体验</p><h3 className="package__name">高尔夫私人定制之旅</h3><p className="package__price">价格面议</p><div className="package__divider"></div>
-            <ul className="package__features">{['多球场全日游或完整行程规�','帕尔马出发私人专车','精选餐厅晚宴','合作场馆水疗或恢复疗程','全程礼宾协调服务','适合团体、企业及个性化定制需求'].map((f,i)=><li key={i}>{f}</li>)}</ul>
-            <Link href="/zh/contact" className="btn btn--dark">立即和询 {">"}</Link>
+            <ul className="package__features">{['多球场全日游或完整行程规划','帕尔马出发私人专车','精选餐厅晚宴','合作场馆水疗或恢复疗程','全程礼宾协调服务','适合团体、企业及个性化定制需求'].map((f,i)=><li key={i}>{f}</li>)}</ul>
+            <Link href="/zh/contact" className="btn btn--dark">立即咨询 →</Link>
           </div>
         </div>
       </section>
@@ -195,11 +195,10 @@ export default function HomePageZH() {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">「球打得更好。建议来自真正的内行。」</p>
-          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>预订您的高尔夫日 {">"}</Link>
+          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>预订您的高尔夫日 →</Link>
           <Link href="/zh/golf-courses" className="btn btn--outline-white">探索球场</Link>
         </div>
       </section>
     </>
   )
 }
-

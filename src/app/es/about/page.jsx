@@ -70,7 +70,7 @@ export default function About_ES() {
           <div className="sidebar-cta reveal">
             <h3>Juegue los mejores campos de Mallorca conmigo a su lado.</h3>
             <p>Días privados en Son Gual, Alcanada y más. Todo organizado. Coaching en campo.</p>
-            <Link href="/es/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Ver las Experiencias �</Link>
+            <Link href="/es/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Ver las Experiencias →</Link>
           </div>
         </aside>
       </div>
@@ -94,15 +94,10 @@ export default function About_ES() {
           <p>Dígame sus fechas, su hándicap y lo que busca. Construiré el día en torno a usted.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/es/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Ver las Experiencias �</Link>
+          <Link href="/es/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Ver las Experiencias →</Link>
           <Link href="/es/contact" className="btn btn--outline-white">Ponerse en contacto</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
-

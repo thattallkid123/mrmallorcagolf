@@ -116,15 +116,11 @@ export default function GuidesIndex_FR() {
           <p>Dites-moi vos dates et ce que vous cherchez. Je reviens personnellement sous 24 heures.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/fr/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Voir les expériences {">"}</Link>
+          <Link href="/fr/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Voir les expériences →</Link>
           <Link href="/fr/contact" className="btn btn--outline-white">Prendre contact</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
-
-
-
 
