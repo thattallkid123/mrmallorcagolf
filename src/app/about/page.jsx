@@ -3,8 +3,8 @@ import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
-  title: 'About Andy Griffiths — PGA Professional, Mallorca',
-  description: "Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. Formerly Pebble Beach, Evian, 11 years coaching in China.",
+  title: 'About Andy Griffiths — PGA Professional & Golf Coach, Mallorca',
+  description: 'Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. 18 years coaching at Pebble Beach, Evian, The Open, and 11 years in China. Private golf experiences on the island\'s finest courses.',
 }
 
 const credentials = [
@@ -13,9 +13,9 @@ const credentials = [
   { title: 'TPI Level 3 Certified', detail: 'Titleist Performance Institute' },
   { title: 'Trackman Master Certified', detail: 'First in China' },
   { title: 'US Kids Golf Top 50', detail: 'Coach Worldwide' },
-  { title: '11 years in Shanghai', detail: 'Fluent Mandarin' },
+  { title: '18 years coaching experience', detail: 'Across Europe, the Americas, Asia, and at sea' },
   { title: 'Chinese national team', detail: 'Elite junior and competition coaching' },
-  { title: 'Hundreds of millions of views', detail: 'Golf coaching content on Douyin' },
+  { title: '300 million+ views', detail: 'Golf coaching content on Douyin (Andy 教练)' },
   { title: 'Published author', detail: 'Putting It Out There — A Life in Full Swing, 2016' },
   { title: 'Based in Mallorca', detail: 'Since March 2025' },
 ]
@@ -23,8 +23,11 @@ const credentials = [
 const venues = [
   { name: 'Pebble Beach', detail: 'California, USA' },
   { name: 'The Open Championship', detail: 'UK' },
-  { name: "Evian Championship", detail: "France · Women's Major" },
+  { name: 'Evian Championship', detail: "France · Women's Major" },
   { name: 'Doral', detail: 'Miami, USA' },
+  { name: 'World Cruise', detail: '40+ countries · Season at sea' },
+  { name: 'TPI Oceanside', detail: 'California, USA' },
+  { name: 'Egypt International Pro-Am', detail: 'Cairo, Egypt' },
   { name: 'Shanghai', detail: 'China · 11 years' },
 ]
 
@@ -35,7 +38,7 @@ export default function About() {
 
       <header className="page-hero">
         <div className="page-hero__inner">
-          <p className="breadcrumb"><Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>About</span></p>
+          <p className="breadcrumb"><Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>The Coach</span></p>
           <h1>The Professional<br />Behind the Experience.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
             <span className="cred-tag cred-tag--gold">PGA Advanced Professional</span>
@@ -52,7 +55,7 @@ export default function About() {
             <p className="chapter__label">Early career</p>
             <h2>Following the best coaches across two continents.</h2>
             <p>I grew up playing golf, got down to a +1 handicap but knew early that coaching was where I wanted to be. After studying Applied Golf Management at the University of Birmingham and qualifying as a PGA Professional, I started building a career following the most experienced coaches all around Europe and North America.</p>
-            <p>The early years took me to some remarkable venues. I coached at Pebble Beach, Doral, Evian during the women&apos;s major, The Open Championship. I spent a season coaching aboard a cruise ship on a world voyage — over forty countries, golf in places most professionals never get near.</p>
+            <p>The early years took me to some remarkable venues. I coached at Pebble Beach, Doral, Evian during the women&apos;s major, The Open Championship. I trained at the Titleist Performance Institute in Oceanside, California. I coached at tournaments in Egypt. I spent a season coaching aboard a cruise ship on a world voyage — over forty countries, golf in places most professionals never get near.</p>
             <div className="pull-quote"><p>&ldquo;Every environment was different. Every golfer was different. That variety, early on, is what shaped everything that came after.&rdquo;</p></div>
           </div>
 
@@ -67,7 +70,7 @@ export default function About() {
 
           <div className="chapter reveal">
             <p className="chapter__label">Mallorca, 2025 –</p>
-            <h2>Twenty-two courses, one island, and a coaching philosophy sharpened by playing again.</h2>
+            <h2>Playing every course on the island, and a coaching philosophy sharpened by playing again.</h2>
             <p>I moved to Mallorca in March 2025 with my wife Yina. Closer to family in the UK, year-round sunshine, a genuinely exceptional golf island that most people don&apos;t give enough credit to.</p>
             <p>I started playing properly again. Working my way through every course on the island. Rediscovering what it feels like to stand on a first tee and actually care about the score. That competitive instinct — dormant through years of full-time coaching — came back fast.</p>
             <div className="pull-quote"><p>&ldquo;The coaching philosophy that&apos;s come out of playing again is simple: the fastest improvements happen on the course, not the range. Real conditions, real decisions, real consequences.&rdquo;</p></div>
@@ -123,7 +126,3 @@ export default function About() {
     </PageLayout>
   )
 }
-
-
-
-

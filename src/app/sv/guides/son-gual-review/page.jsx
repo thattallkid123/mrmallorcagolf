@@ -3,21 +3,21 @@ import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
 
 export const metadata = {
-  title: "Son Gual Golf Mallorca â€” Ã„rlig Recension av en PGA-proffs 2026",
-  description: "Son Gual golfbana pÃ¥ Mallorca recenserad av en PGA-proffs som spelar dÃ¤r regelbundet. Greenavgifter, svÃ¥righetsgrad, vad du kan fÃ¶rvÃ¤nta dig.",
+  title: "Son Gual Golf Mallorca — Ärlig Recension av en PGA-proffs (2026)",
+  description: "Son Gual golfbana på Mallorca recenserad av en PGA-proffs som spelar där regelbundet. Greenavgifter, svårighetsgrad, vad du kan förvänta dig.",
   alternates: { canonical: 'https://mrmallorcagolf.com/sv/guides/son-gual-review' },
 }
 
 const meta = {
-  badge: 'Banrecension', badgeGold: true, readTime: '6 min lÃ¤sning', updated: 'Mars 2026',
-  title: "Son Gual Golf Mallorca â€” Ã„rlig Recension av en PGA-proffs (2026)",
-  intro: "Min mest spelade bana pÃ¥ Ã¶n. Vinden, greenerna, avslutningshÃ¥len â€” och varfÃ¶r Obama och Nadal fortsÃ¤tter att Ã¥tervÃ¤nda.",
+  badge: 'Banrecension', badgeGold: true, readTime: '6 min läsning', updated: 'Mars 2026',
+  title: "Son Gual Golf Mallorca — Ärlig Recension av en PGA-proffs (2026)",
+  intro: "Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen — och varför Obama och Nadal fortsätter att återvända.",
   lang: 'sv',
   related: [
-    { slug: 'alcanada-review', title: 'Alcanada Golf â€” Ã„rlig recension 2026' },
-    { slug: 'best-golf-courses-mallorca', title: 'BÃ¤sta golfbanorna pÃ¥ Mallorca 2026' },
-    { slug: 'golf-cost-mallorca', title: 'Hur mycket kostar golf pÃ¥ Mallorca?' },
-    { slug: 'best-time-play-golf-mallorca', title: 'BÃ¤sta tid att spela golf pÃ¥ Mallorca' },
+    { slug: 'alcanada-review', title: 'Alcanada Golf — Ärlig recension 2026' },
+    { slug: 'best-golf-courses-mallorca', title: 'Bästa golfbanorna på Mallorca 2026' },
+    { slug: 'golf-cost-mallorca', title: 'Hur mycket kostar golf på Mallorca?' },
+    { slug: 'best-time-play-golf-mallorca', title: 'Bästa tid att spela golf på Mallorca' },
   ],
 }
 
@@ -27,48 +27,48 @@ export default function Post() {
       <RevealObserver />
       <PostLayout meta={meta} lang="sv">
 
-        <p style={{fontSize:'0.82rem',color:'var(--taupe)',fontStyle:'italic',borderBottom:'1px solid var(--linen)',paddingBottom:'1rem',marginBottom:'1.5rem'}}>Den hÃ¤r artikeln skrevs pÃ¥ engelska och har Ã¶versatts till svenska.</p>
+        <p style={{fontSize:'0.82rem',color:'var(--taupe)',fontStyle:'italic',borderBottom:'1px solid var(--linen)',paddingBottom:'1rem',marginBottom:'1.5rem'}}>Den här artikeln skrevs på engelska och har översatts till svenska.</p>
 
-        <p>Son Gual Ã¤r min mest spelade bana pÃ¥ Mallorca och den jag konsekvent rekommenderar nÃ¤r klienter frÃ¥gar var de ska spela. Jag vill vara Ã¤rlig om varfÃ¶r â€” och Ã¤rlig om vad som gÃ¶r den svÃ¥r, fÃ¶r den Ã¤r svÃ¥r, och den som bokar med fÃ¶rvÃ¤ntan om en avslappnad dag kommer att bli Ã¶verraskad.</p>
+        <p>Son Gual är min mest spelade bana på Mallorca och den jag konsekvent rekommenderar när klienter frågar var de ska spela. Jag vill vara ärlig om varför — och ärlig om vad som gör den svår, för den är svår, och den som bokar med förväntan om en avslappnad dag kommer att bli överraskad.</p>
 
-        <h2>FÃ¶rsta utslagsplatsen</h2>
-        <p>FÃ¶rsta gÃ¥ngen jag spelade Son Gual stod jag pÃ¥ de svarta utslagens, vinden kom hÃ¥rt frÃ¥n vÃ¤nster och jag spelade bredvid en PGA-proffsvÃ¤n som spelar och scorer bra. Kameran rullade fÃ¶r en vlog, vilket skapar sitt eget tryck. Jag var genuint lite nervÃ¶s.</p>
-        <p>Drivern trÃ¤ffade lÃ¤tt pÃ¥ klÃ¤tten. Den flÃ¶g Ã¤ndÃ¥ lÃ¤ngre Ã¤n vÃ¤ntat och undvek bunkrarna â€” precis. Det finns sÃ¥ mÃ¥nga bunkrar pÃ¥ Son Gual, placerade exakt dÃ¤r lite felslagna slag hamnar. Man rÃ¤knar med vind, hÃ¶jdskillnader, ojÃ¤mnt bollslag â€” och bunkrarna verkar vÃ¤xa ju lÃ¤ngre man betraktar dem.</p>
+        <h2>Första utslagsplatsen</h2>
+        <p>Första gången jag spelade Son Gual stod jag på de svarta utslagen, vinden kom hårt från vänster och jag spelade bredvid en PGA-proffsvän som spelar och scorer bra. Kameran rullade för en vlog, vilket skapar sitt eget tryck. Jag var genuint lite nervös.</p>
+        <p>Drivern träffade lätt på klöten. Den flög ändå längre än väntat och undvek bunkrarna — precis. Det finns så många bunkrar på Son Gual, placerade exakt där lite felslagna slag hamnar. Man räknar med vind, höjdskillnader, ojämnt bollslag — och bunkrarna verkar växa ju längre man betraktar dem.</p>
 
         <h2>Vinden</h2>
-        <p>Son Gual verkar leva i sitt eget ekosystem. Jag lÃ¤mnar mitt hus i sydvÃ¤st pÃ¥ Ã¶n en lugn morgon och anlÃ¤nder till fÃ¶rsta utslagsplatsen fÃ¶r att finna att det blÃ¥ser ordentligt â€” och det hÃ¥ller i sig i fyra timmar. Med vinden Ã¤r det en frÃ¶jd att spela. Mot vinden pÃ¥ ett lÃ¥ngt par fyra som plÃ¶tsligt blir ett lÃ¶jligt lÃ¥ngt par fyra â€” det Ã¤r en annan upplevelse.</p>
+        <p>Son Gual verkar leva i sitt eget ekosystem. Jag lämnar mitt hus i sydväst på ön en lugn morgon och anländer till första utslagsplatsen för att finna att det blåser ordentligt — och det håller i sig i fyra timmar. Med vinden är det en fröjd att spela. Mot vinden på ett långt par fyra som plötsligt blir ett löjligt långt par fyra — det är en annan upplevelse.</p>
 
         <div className="post-pull">
-          <p>"Jag lÃ¤mnade huset en lugn morgon och kom fram till fÃ¶rsta utslagsplatsen fÃ¶r att finna att det blÃ¥ste ordentligt. Det hÃ¶ll i sig i fyra timmar."</p>
+          <p>"Jag lämnade huset en lugn morgon och kom fram till första utslagsplatsen för att finna att det blåste ordentligt. Det höll i sig i fyra timmar."</p>
         </div>
 
         <h2>Greenerna</h2>
-        <p>Snabba, upphÃ¶jda och skoningslÃ¶sa mot dÃ¥lig inkommande spel. I januari var greenerna och omgivningarna sÃ¥ tÃ¤tt klippta att det var anmÃ¤rkningsvÃ¤rt fÃ¶r den tiden pÃ¥ Ã¥ret. UtmÃ¤rkt fÃ¶r att skapa spin, obehagligt nÃ¤r man ser pÃ¥ ett tight chip med liten landningsyta.</p>
-        <p>En av mina spelsÃ¤llskap den dagen â€” en tidigare elev frÃ¥n Kina â€” grep efter puttern i tron att hon stod pÃ¥ greenen. Hon hade ungefÃ¤r 30 yards kvar av omgivningarna att tÃ¤cka. SkÃ¶tseln Ã¤r sÃ¥ minutiÃ¶s.</p>
+        <p>Snabba, upphöjda och skoningslösa mot dåligt inkommande spel. I januari var greenerna och omgivningarna så tätt klippta att det var anmärkningsvärt för den tiden på året. Utmärkt för att skapa spin, obehagligt när man ser på ett tight chip med liten landningsyta.</p>
+        <p>En av mina spelsällskap den dagen — en tidigare elev från Kina — grep efter puttern i tron att hon stod på greenen. Hon hade ungefär 30 yards kvar av omgivningarna att täcka. Skötseln är så minutiös.</p>
 
         <h2>Banan</h2>
-        <p>Thomas Himmels design frÃ¥n 2007 anvÃ¤nder hÃ¶jdskillnaderna intelligent. HÃ¥l 2 har en av Europas stÃ¶rsta bunkrar. Avslutningssekvensen frÃ¥n hÃ¥l 15 anses allmÃ¤nt vara en av de finaste avslutningarna inom europeisk golf â€” och efter att ha spelat den hÃ¥ller jag med. Utsikten Ã¶ver Palmas bukt Ã¤r bÃ¤st mellan hÃ¥len 8â€“12. Restaurangen delar den utsikten och Ã¤r vÃ¤rd ett besÃ¶k efter rundan.</p>
+        <p>Thomas Himmels design från 2007 använder höjdskillnaderna intelligent. Hål 2 har en av Europas största bunkrar. Avslutningssekvensen från hål 15 anses allmänt vara en av de finaste avslutningarna inom europeisk golf — och efter att ha spelat den håller jag med. Utsikten över Palmas bukt är bäst mellan hålen 8–12. Restaurangen delar den utsikten och är värd ett besök efter rundan.</p>
 
-        <h2>KÃ¤nda besÃ¶kare</h2>
-        <p>Rafa Nadal spelar hÃ¤r regelbundet â€” hans uttalade favoritbana pÃ¥ Ã¶n. Barack Obama spelade i november 2024, och generaldirektÃ¶r Andreas Pamer beskrev honom som genuint trevlig och sa att han lovade att Ã¥tervÃ¤nda.</p>
+        <h2>Kända besökare</h2>
+        <p>Rafa Nadal spelar här regelbundet — hans uttalade favoritbana på ön. Barack Obama spelade i november 2024, och generaldirektör Andreas Pamer beskrev honom som genuint trevlig och sa att han lovade att återvända.</p>
 
         <div className="post-fact">
-          <div className="post-fact__item"><span className="post-fact__val">â‚¬80â€“165</span><span className="post-fact__label">Greenavgifter 2026</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">9/10</span><span className="post-fact__label">SvÃ¥righetsgrad</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">Par 72</span><span className="post-fact__label">MÃ¤sterskap-layout</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">€80–165</span><span className="post-fact__label">Greenavgifter 2026</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">9/10</span><span className="post-fact__label">Svårighetsgrad</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">Par 72</span><span className="post-fact__label">Mästerskap-layout</span></div>
           <div className="post-fact__item"><span className="post-fact__val">2007</span><span className="post-fact__label">Designad av Thomas Himmel</span></div>
         </div>
 
         <h2>Greenavgifter 2026</h2>
-        <p>LÃ¥gsÃ¤song (mitten av november till december): â‚¬115. JanuarifÃ¶nstret fÃ¶r underhÃ¥ll: â‚¬80 fÃ¶r 9 hÃ¥l. VÃ¥rens och hÃ¶stens hÃ¶gsÃ¤song (marsâ€“maj, septemberâ€“november): â‚¬165. Sommar (juliâ€“augusti): â‚¬115. FullstÃ¤ndig sÃ¤songsÃ¶versikt pÃ¥ son-gual.com.</p>
-        <p>Klubbuthyrning i pro shoppen: Callaway â‚¬35, Titleist â‚¬45 per runda. Buggy â‚¬45, eltrolley frÃ¥n â‚¬15. Giltigt WHS-handicapintyg krÃ¤vs fÃ¶r bokning.</p>
+        <p>Lågsäsong (mitten av november till december): €115. Januarifönstret för underhåll: €80 för 9 hål. Vårens och höstens högsäsong (mars–maj, september–november): €165. Sommar (juli–augusti): €115. Fullständig säsongsöversikt på son-gual.com.</p>
+        <p>Klubbuthyrning i pro shoppen: Callaway €35, Titleist €45 per runda. Buggy €45, eltrolley från €15. Giltigt WHS-handicapintyg krävs för bokning.</p>
 
-        <h2>OmdÃ¶me</h2>
-        <p>Son Gual Ã¤r min favoritbana pÃ¥ Mallorca. Den skulle hÃ¥lla mot vilken bana jag Ã¤n spelat under mina resor â€” skÃ¶tseln, designintelligensen och miljÃ¶n Ã¤r exceptionella. Det Ã¤r inte en bana att anlÃ¤nda till utan sitt spel i rimlig ordning, men fÃ¶r varje golfare som vill ha en seriÃ¶s runda i en seriÃ¶s miljÃ¶ Ã¤r det hÃ¤r rÃ¤tt plats.</p>
+        <h2>Omdöme</h2>
+        <p>Son Gual är min favoritbana på Mallorca. Den skulle hålla mot vilken bana jag än spelat under mina resor — skötseln, designintelligensen och miljön är exceptionella. Det är inte en bana att anlända till utan sitt spel i rimlig ordning, men för varje golfare som vill ha en seriös runda i en seriös miljö är det här rätt plats.</p>
 
         <div className="post-cta">
-          <p>Jag tar regelbundet klienter till Son Gual. Vill du spela den med nÃ¥gon som kÃ¤nner varje hÃ¥l?</p>
-          <a href="/sv/play-with-a-pro">Se play-with-a-pro-upplevelsen â†’</a>
+          <p>Jag tar regelbundet klienter till Son Gual. Vill du spela den med någon som känner varje hål?</p>
+          <a href="/sv/play-with-a-pro">Se play-with-a-pro-upplevelsen →</a>
         </div>
 
       </PostLayout>

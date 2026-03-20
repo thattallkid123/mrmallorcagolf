@@ -467,11 +467,11 @@ body {
 .course-card:hover { transform: translateY(-4px); }
 .course-card__bg { position: absolute; inset: 0; transition: transform 0.6s ease; }
 .course-card:hover .course-card__bg { transform: scale(1.04); }
-.course-card--1 .course-card__bg { background: linear-gradient(160deg, #2D4A3E 0%, #4A7A5A 50%, #8AA68A 100%); }
-.course-card--2 .course-card__bg { background: linear-gradient(160deg, #1A3A5C 0%, #2A6080 50%, #5A9AB0 100%); }
-.course-card--3 .course-card__bg { background: linear-gradient(160deg, #3D2A1A 0%, #6A4A2A 50%, #9A7A5A 100%); }
-.course-card--4 .course-card__bg { background: linear-gradient(160deg, #2A3A2A 0%, #4A6A4A 50%, #7A9A7A 100%); }
-.course-card--5 .course-card__bg { background: linear-gradient(160deg, #1A1A3A 0%, #2A3A6A 50%, #5A6A9A 100%); }
+.course-card--1 .course-card__bg { background-image: url('/images/son-gual.jpg'); background-size: cover; background-position: center; }
+.course-card--2 .course-card__bg { background-image: url('/images/alcanada.jpg'); background-size: cover; background-position: center 40%; }
+.course-card--3 .course-card__bg { background-image: url('/images/son-muntaner.webp'); background-size: cover; background-position: center; }
+.course-card--4 .course-card__bg { background-image: url('/images/santa-ponsa.webp'); background-size: cover; background-position: center; }
+.course-card--5 .course-card__bg { background-image: url('/images/andratx.webp'); background-size: cover; background-position: center; }
 .course-card__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,18,14,0.88) 0%, rgba(20,18,14,0.2) 55%, transparent 80%); }
 .course-card__badge { position: absolute; top: 20px; left: 20px; background: var(--gold); color: var(--deep); font-size: 8px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; padding: 5px 10px; font-family: 'Jost', sans-serif; }
 .course-card__content { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 26px; }

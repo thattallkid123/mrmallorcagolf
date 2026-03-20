@@ -4,7 +4,7 @@ import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
   title: 'Play With a Pro — Private Golf Days in Mallorca',
-  description: 'A private round of golf in Mallorca, played alongside PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €500 per person.',
+  description: 'A private round of golf in Mallorca, played alongside PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person + green fee.',
 }
 
 const whoCards = [
@@ -36,7 +36,7 @@ export default function PlayWithAPro() {
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Private Golf Days · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>A Private Golf Day<br />in Mallorca.</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Not a lesson. Not a standard round. A private day on one of the island&apos;s finest courses, hosted by a PGA professional who has coached at the highest level across three continents.</p>
-            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>From &euro;500 per person</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>From &euro;350 per person + green fee</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/contact" className="btn btn--gold">Book Your Day &rarr;</Link>
               <a href="#packages" className="btn btn--outline-white">See Packages</a>
@@ -144,27 +144,29 @@ export default function PlayWithAPro() {
           <div className="tier reveal">
             <p className="tier__name-small">The Mallorca Round</p>
             <h3 className="tier__name">Play with a Pro</h3>
-            <p className="tier__price">From &euro;500 per person</p>
+            <p className="tier__price">&euro;350 per person + green fee</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
               {['Course matched to your game & handicap','Tee time secured and fully handled','Pre-round briefing and warm-up','18 holes alongside Andy','On-course coaching throughout','Post-round debrief — honest and clear'].map((f,i)=><li key={i}>{f}</li>)}
             </ul>
+            <p style={{fontSize:'0.78rem',color:'var(--taupe)',margin:'0.75rem 0 1.25rem',lineHeight:1.6}}>Group discounts available for 2+ players.</p>
             <Link href="/contact" className="tier__btn">Enquire &rarr;</Link>
           </div>
           <div className="tier tier--feature reveal">
             <p className="tier__name-small">The Signature Day</p>
             <h3 className="tier__name">Hosted Golf Day</h3>
-            <p className="tier__price">From &euro;650 per person</p>
+            <p className="tier__price">From &euro;450 per person + green fee</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
-              {['Everything in The Mallorca Round','Son Gual or Alcanada — two of the islands finest','Long lunch at the course restaurant','Curated surprise gift','Relaxed, unhurried pace — a full day'].map((f,i)=><li key={i}>{f}</li>)}
+              {["Everything in The Mallorca Round","Son Gual or Alcanada — two of the island's finest","Long lunch at the course restaurant","Curated surprise gift","Relaxed, unhurried pace — a full day"].map((f,i)=><li key={i}>{f}</li>)}
             </ul>
+            <p style={{fontSize:'0.78rem',color:'rgba(255,255,255,0.45)',margin:'0.75rem 0 1.25rem',lineHeight:1.6}}>Group discounts available for 2+ players.</p>
             <Link href="/contact" className="tier__btn">Enquire &rarr;</Link>
           </div>
           <div className="tier reveal">
             <p className="tier__name-small">The Full Experience</p>
             <h3 className="tier__name">Bespoke Golf Journey</h3>
-            <p className="tier__price">On enquiry</p>
+            <p className="tier__price">Custom pricing based on itinerary</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
               {['Multi-course day or full itinerary','Private transport from Palma','Dinner at a handpicked restaurant','Spa or recovery session','Full concierge coordination','For groups, corporates & bespoke requests'].map((f,i)=><li key={i}>{f}</li>)}
@@ -190,7 +192,3 @@ export default function PlayWithAPro() {
     </PageLayout>
   )
 }
-
-
-
-
