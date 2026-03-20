@@ -9,7 +9,7 @@ export const metadata = {
 }
 
 const meta = {
-  badge: 'Course Review', badgeGold: true, readTime: '6 min read', updated: 'March 2026',
+  badge: 'Course Review', badgeGold: true, readTime: '7 min read', updated: 'March 2026',
   title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)",
   intro: 'My most-played course on the island. The wind, the greens, the closing stretch — and why Obama and Nadal both keep coming back.',
   related: [
@@ -20,17 +20,45 @@ const meta = {
   ],
 }
 
+function PostImage({ src, alt, caption }) {
+  return (
+    <figure style={{margin:'2rem 0',padding:0}}>
+      <img src={src} alt={alt} loading="lazy"
+        style={{width:'100%',height:'auto',maxHeight:520,objectFit:'cover',objectPosition:'center',display:'block'}} />
+      {caption && <figcaption style={{fontSize:'0.78rem',color:'var(--taupe)',marginTop:'0.5rem',fontStyle:'italic',lineHeight:1.5}}>{caption}</figcaption>}
+    </figure>
+  )
+}
+
 export default function Post() {
   return (
     <PageLayout>
       <RevealObserver />
       <PostLayout meta={meta}>
 
+        <PostImage
+          src="/images/son-gual-blog/sg-hero.webp"
+          alt="Son Gual Golf Course, Mallorca"
+          caption="Son Gual — Thomas Himmel's 2007 championship design above Palma."
+        />
+
         <p>Son Gual is my most-played course in Mallorca and the one I recommend most consistently when clients ask where to play. I want to be honest about why — and honest about what makes it hard, because it is hard, and anyone booking expecting a relaxed day will be surprised.</p>
+
+        <PostImage
+          src="/images/son-gual-blog/sg-clients-group.jpg"
+          alt="Golfers at Son Gual with Andy Griffiths"
+          caption="A group day at Son Gual — January conditions, immaculate fairways, and not a trace of the British winter."
+        />
 
         <h2>The First Tee</h2>
         <p>The first time I played Son Gual, I was on the black tees, wind coming hard off the left, playing alongside a PGA professional friend who plays and scores well. Camera rolling for a vlog, which adds its own pressure. I was genuinely a little nervous.</p>
         <p>The drive came off the heel slightly. Still flew further than expected and avoided the bunkers — just. There are so many bunkers at Son Gual, positioned exactly where slightly mishit shots go. You're factoring in wind, elevation changes, inconsistent ball-striking, and the bunkers seem to grow larger the longer you stand contemplating them.</p>
+
+        <PostImage
+          src="/images/son-gual-blog/sg-1.jpg"
+          alt="Son Gual fairway and bunkers"
+          caption="The bunkering is aggressive and strategic — positioned exactly where slightly mishit shots go."
+        />
 
         <h2>The Wind</h2>
         <p>Son Gual seems to live in its own ecosystem. I'll leave my house in the southwest of the island on a calm morning and arrive at the first tee to find it blowing properly — and it stays that way for four hours. Playing downwind is a pleasure. Into a headwind on a long par four that suddenly becomes a ridiculously long par four — that's a different experience.</p>
@@ -39,15 +67,51 @@ export default function Post() {
           <p>"I've left my house on a calm morning and arrived at the first tee to find it blowing hard. It stayed that way for four hours."</p>
         </div>
 
+        <PostImage
+          src="/images/son-gual-blog/sg-swing.jpg"
+          alt="Client hitting a tee shot at Son Gual"
+          caption="The open stretches reward an aggressive approach from the tee — when the wind lets you."
+        />
+
         <h2>The Greens</h2>
         <p>Fast, raised, and unforgiving of poor approach play. In January, the greens and fringe were so tightly mown it was remarkable for that time of year. Great for spin production, uncomfortable when looking at a tight chip with a small landing area.</p>
         <p>One of my playing partners that day — a former student from China — reached for her putter believing she was on the green. She had about 30 yards of fringe still to cover. The conditioning is that meticulous.</p>
 
+        <PostImage
+          src="/images/son-gual-blog/sg-2.jpg"
+          alt="Son Gual green and surrounding landscape"
+          caption="The greens are fast and raised — where you miss matters more than how you swing."
+        />
+
         <h2>The Course</h2>
         <p>Thomas Himmel's 2007 design uses elevation intelligently. The 2nd hole features one of Europe's largest bunkers. The closing stretch from the 15th is widely regarded as one of the finest finishing sequences in European golf — and having played it, I'd agree. Views across the Bay of Palma are best between holes 8–12. The restaurant shares that view and is worth staying for after the round.</p>
 
+        <PostImage
+          src="/images/son-gual-blog/sg-3.webp"
+          alt="Son Gual closing stretch"
+          caption="The closing stretch — holes 15 to 18 — is among the finest four holes in European golf."
+        />
+
+        <PostImage
+          src="/images/son-gual-blog/sg-plane.jpg"
+          alt="Plane coming into Palma airport over Son Gual golf course"
+          caption="Planes on final approach into Palma pass directly overhead. A reminder of how close to civilisation — and how far from it — Son Gual feels."
+        />
+
+        <PostImage
+          src="/images/son-gual-blog/sg-4.jpg"
+          alt="Son Gual panoramic view across Palma"
+          caption="Views across the Bay of Palma from the higher holes — best between 8 and 12."
+        />
+
         <h2>Notable Visitors</h2>
         <p>Rafa Nadal plays here regularly — his stated favourite course on the island. Barack Obama played in November 2024, and general manager Andreas Pamer described him as genuinely likeable and said he promised to return.</p>
+
+        <PostImage
+          src="/images/son-gual-blog/sg-5.jpg"
+          alt="Son Gual course detail"
+          caption="Son Gual's conditioning is exceptional year-round — even in January the fairways are immaculate."
+        />
 
         <div className="post-fact">
           <div className="post-fact__item"><span className="post-fact__val">€80–165</span><span className="post-fact__label">Green fee range 2026</span></div>
