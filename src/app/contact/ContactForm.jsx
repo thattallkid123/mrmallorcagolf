@@ -10,14 +10,11 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // In production: POST to /api/contact or use Formspree/Resend
     setSubmitted(true)
   }
 
   return (
     <div className="contact-wrap">
-
-      {/* LEFT */}
       <div className="contact-left">
         <div>
           <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Get in touch</p>
@@ -61,7 +58,6 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* RIGHT — FORM */}
       <div className="contact-right">
         {submitted ? (
           <div className="contact-success">
@@ -126,7 +122,7 @@ export default function ContactForm() {
 
             <div className="form-field">
               <label>Anything else I should know?</label>
-              <textarea name="message" value={form.message} onChange={handleChange} rows={4} placeholder="Courses you have in mind, specific goals, dietary requirements for lunch, anything that helps me build the right day for you..." />
+              <textarea name="message" value={form.message} onChange={handleChange} rows={4} placeholder="Courses you have in mind, specific goals, anything that helps me build the right day for you..." />
             </div>
 
             <button type="submit" className="btn btn--gold" style={{width:'100%',padding:'16px',fontSize:'10px',letterSpacing:'.18em'}}>
@@ -136,7 +132,6 @@ export default function ContactForm() {
           </form>
         )}
       </div>
-
     </div>
   )
 }

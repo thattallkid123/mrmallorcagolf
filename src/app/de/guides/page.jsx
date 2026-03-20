@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'Mallorca Golfführer — Platz-Bewertungen & Tipps',
-  description: 'Ehrliche Golratgeber für Mallorca von einem PGA Professional. Platz-Bewertungen, Greenfees und Reiseplanung — aktualisiert 2026.',
+  description: 'Ehrliche Golfratgeber für Mallorca von einem PGA Professional. Platz-Bewertungen, Greenfees und Reiseplanung — aktualisiert 2026.',
   alternates: { canonical: 'https://mrmallorcagolf.com/de/guides' },
 }
 
@@ -32,6 +32,13 @@ export default function GuidesIndex_DE() {
 
       <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
 
+        {/* COMING SOON — above the live guide */}
+        <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
+          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Weitere Ratgeber folgen in Kürze</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Ich spiele mich derzeit durch jeden Golfplatz auf der Insel. Jede Bewertung folgt nach dem Spielen — ehrliche Einschätzungen, keine Broschüren. Alcanada, Überblick der besten Kurse und Reiseplanungsführer sind alle in Bearbeitung.</p>
+        </div>
+
+        {/* SON GUAL — live */}
         <Link href="/de/guides/son-gual-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
           <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
             <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Platz-Bewertung</span>
@@ -41,11 +48,6 @@ export default function GuidesIndex_DE() {
           <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Mein meistgespielter Platz auf der Insel. Der Wind, die Greens, die Schlusslöcher — und warum Obama und Nadal immer wiederkommen.</p>
           <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Championship · Par 72 · €80–165 · Handicap erforderlich</p>
         </Link>
-
-        <div style={{marginTop:'3rem',padding:'2rem',background:'var(--cream)',border:'1px solid var(--linen)'}}>
-          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.75rem'}}>Weitere Ratgeber folgen in Kürze</p>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.8,margin:0}}>Ich spiele mich derzeit durch jeden Golfplatz auf der Insel. Jede Bewertung folgt nach dem Spielen — ehrliche Einschätzungen, keine Broschüren. Die nächsten Ratgeber erscheinen in den kommenden Wochen.</p>
-        </div>
 
       </section>
 

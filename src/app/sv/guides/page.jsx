@@ -32,6 +32,13 @@ export default function GuidesIndex_SV() {
 
       <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
 
+        {/* COMING SOON — above the live guide */}
+        <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
+          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Fler guider kommer snart</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Jag spelar för närvarande igenom varje golfbana på ön. Varje recension publiceras efter att ha spelat den — ärliga bedömningar, inga broschyrer. Alcanada, bästa banöversikten och reseplaneringsguider är alla under arbete.</p>
+        </div>
+
+        {/* SON GUAL — live */}
         <Link href="/sv/guides/son-gual-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
           <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
             <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Banrecension</span>
@@ -41,11 +48,6 @@ export default function GuidesIndex_SV() {
           <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen — och varför Obama och Nadal fortsätter att återvända.</p>
           <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Mästerskap · Par 72 · €80–165 · Handicapintyg krävs</p>
         </Link>
-
-        <div style={{marginTop:'3rem',padding:'2rem',background:'var(--cream)',border:'1px solid var(--linen)'}}>
-          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.75rem'}}>Fler guider kommer snart</p>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.8,margin:0}}>Jag spelar för närvarande igenom varje golfbana på ön. Varje recension publiceras efter att ha spelat den — ärliga bedömningar, inga broschyrer. Nästa guider publiceras under de kommande veckorna.</p>
-        </div>
 
       </section>
 

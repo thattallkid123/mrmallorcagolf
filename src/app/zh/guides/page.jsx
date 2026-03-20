@@ -32,6 +32,13 @@ export default function GuidesIndex_ZH() {
 
       <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
 
+        {/* COMING SOON — above the live guide */}
+        <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
+          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>更多指南即将上线</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>我正在逐一亲身体验岛上每一个高尔夫球场。每篇评测均在实际打球后发布 — 真实评价，绝非宣传手册。Alcanada评测、最佳球场综述及行程规划指南均在筹备中。</p>
+        </div>
+
+        {/* SON GUAL — live */}
         <Link href="/zh/guides/son-gual-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
           <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
             <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>球场评测</span>
@@ -41,11 +48,6 @@ export default function GuidesIndex_ZH() {
           <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>岛上我打球最多的球场。风的特性、果岭难度、收关几洞 — 以及奥巴马和纳达尔为何一再回访。</p>
           <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>锦标赛级 · 标准杆72 · €80–165 · 需差点证明</p>
         </Link>
-
-        <div style={{marginTop:'3rem',padding:'2rem',background:'var(--cream)',border:'1px solid var(--linen)'}}>
-          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.75rem'}}>更多指南即将上线</p>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.8,margin:0}}>我正在逐一亲身体验岛上每一个高尔夫球场。每篇评测均在实际打球后发布 — 真实评价，绝非宣传手册。更多指南将在未来数周内陆续推出。</p>
-        </div>
 
       </section>
 

@@ -1,8 +1,7 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 
-// Course images sourced from public golf photography
 const courses = [
   {
     cls: 'course-card--1',
@@ -61,13 +60,135 @@ const courses = [
   },
 ]
 
+const WINNER_IMAGES = [
+  "/images/winners/012ce2fdc02bf1fef437a1d98c25be1540117c3805.jpg",
+  "/images/winners/0134a9b7aac8ad0d0656f04a253c43088b7331ce8f.jpg",
+  "/images/winners/013bf5d9686d01b02fce51ef1123c10b7450176d15.jpg",
+  "/images/winners/0144db5d1b7e24d0c6caa972462828fa30285c221b.jpg",
+  "/images/winners/01642ab42974ebfa93f60beb07ab37157b87a3a515.jpg",
+  "/images/winners/0166d35c197839412b807e6f1f9d74f3019ed0cdc7.jpg",
+  "/images/winners/01896bd5845040a4f9957ce34acc61c2e68540c266.jpg",
+  "/images/winners/01995db72802106453cf4aad2953648cec12aacd7e.jpg",
+  "/images/winners/01ae26f53c5692f97b8207b9f36ca1cbbefa4618cc.jpg",
+  "/images/winners/01c93d14fd4089f7fa1a956671b90967a1c09ed13f.jpg",
+  "/images/winners/01f43146e7bbd479cd809b6daabd9b105b0008ca18.jpg",
+  "/images/winners/01fe13d3c84b1236db2811859106a909c2227f8aa5.jpg",
+  "/images/winners/2017_06_11_19_32_56.jpg",
+  "/images/winners/2017_07_24_07_54_26.jpg",
+  "/images/winners/2017_12_07_03_05_56.jpg",
+  "/images/winners/2018_08_10_17_45_12.jpg",
+  "/images/winners/2018_08_11_14_58_16.jpg",
+  "/images/winners/2019_06_14_17_33_00.jpg",
+  "/images/winners/2019_07_13_06_48_15.jpg",
+  "/images/winners/2020_11_25_12_20_00.jpg",
+  "/images/winners/2021_02_18_21_57_59.jpg",
+  "/images/winners/2021_04_18_20_01_18.jpg",
+  "/images/winners/2022_07_17_20_47_02.jpg",
+  "/images/winners/2022_07_18_17_01_28.jpg",
+  "/images/winners/2022_07_31_22_36_45.jpg",
+  "/images/winners/2022_08_18_17_44_28.jpg",
+  "/images/winners/2022_10_03_08_30_13.jpg",
+  "/images/winners/2022_10_07_19_28_31.jpg",
+  "/images/winners/2022_10_24_23_15_14.jpg",
+  "/images/winners/2023_06_13_11_53_03.jpg",
+  "/images/winners/2023_06_18_23_58_15.jpg",
+  "/images/winners/2023_08_29_22_35_30.jpg",
+  "/images/winners/2023_10_23_18_34_53.jpg",
+  "/images/winners/2023_12_03_16_55_19.jpg",
+  "/images/winners/2024_04_07_21_05_51.jpg",
+  "/images/winners/2024_06_28_12_16_55.jpg",
+  "/images/winners/2024_07_30_08_11_08.jpg",
+]
+
 const faqs = [
   { q: 'Do I need to be a good golfer?', a: 'Not at all. The experience adjusts to your game — beginners and scratch players both get something from the day. The only requirement is wanting a genuinely different golfing experience.' },
   { q: 'Which course do you use?', a: "It depends on you. Son Gual and Alcanada are my primary venues for a serious full day. For beginners, groups, or shorter rounds, there are better options — and I'll tell you honestly which one fits." },
-  { q: 'How do I book?', a: 'Get in touch. Tell me your dates and what you\'re looking for — I come back personally within 24 hours. No booking systems. No waiting.' },
+  { q: 'How do I book?', a: "Get in touch. Tell me your dates and what you're looking for — I come back personally within 24 hours. No booking systems. No waiting." },
   { q: 'Is this suitable for a group?', a: 'Yes. The experiences work for solos, pairs, groups of friends, and corporate days. The Full Experience is particularly popular for business groups and executives visiting the island.' },
   { q: 'When is the best time of year to visit?', a: 'October, November, March, and April. Best combination of course conditions, weather, value, and pace of play. The island is playable year-round — in January the fairways here are better than August fairways in England.' },
 ]
+
+// SVG icons for the four feature tiles
+const FEATURE_ICONS = {
+  arranged: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{width:18,height:18}}>
+      <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+      <rect x="9" y="3" width="6" height="4" rx="1"/>
+      <path d="M9 12l2 2 4-4"/>
+    </svg>
+  ),
+  coaching: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{width:18,height:18}}>
+      <circle cx="12" cy="12" r="3"/>
+      <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+    </svg>
+  ),
+  private: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{width:18,height:18}}>
+      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+    </svg>
+  ),
+  access: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{width:18,height:18}}>
+      <circle cx="11" cy="11" r="8"/>
+      <path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/>
+    </svg>
+  ),
+}
+
+function WinnersStrip() {
+  const trackRef = useRef(null)
+  // Duplicate images for seamless loop
+  const allImgs = [...WINNER_IMAGES, ...WINNER_IMAGES]
+
+  useEffect(() => {
+    const track = trackRef.current
+    if (!track) return
+    let pos = 0
+    const speed = 0.5
+    let raf
+    const tick = () => {
+      pos += speed
+      if (pos >= track.scrollWidth / 2) pos = 0
+      track.style.transform = `translateX(-${pos}px)`
+      raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [])
+
+  return (
+    <section style={{background:'var(--deep)',padding:'60px 0',overflow:'hidden'}}>
+      <div style={{maxWidth:1200,margin:'0 auto',padding:'0 clamp(20px,5vw,60px)',marginBottom:'2rem'}}>
+        <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>Competition winners coached</p>
+        <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.6rem,3vw,2.4rem)',marginBottom:'.75rem'}}>300+ competition winners, across three continents.</h2>
+        <p style={{fontSize:'.95rem',fontWeight:300,color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:560}}>From club champions to national team players in China. The coaching philosophy is the same at every level: find what actually moves the needle, and work on that.</p>
+      </div>
+      <div style={{position:'relative',overflow:'hidden'}}>
+        <div
+          ref={trackRef}
+          style={{display:'flex',gap:8,willChange:'transform',width:'max-content'}}
+        >
+          {allImgs.map((src, i) => (
+            <div key={i} style={{flexShrink:0,width:180,height:220,overflow:'hidden',background:'var(--pine)'}}>
+              <img
+                src={src}
+                alt="Competition winner"
+                style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'top center'}}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+        {/* Fade edges */}
+        <div style={{position:'absolute',top:0,left:0,width:80,height:'100%',background:'linear-gradient(to right, var(--deep), transparent)',pointerEvents:'none'}}/>
+        <div style={{position:'absolute',top:0,right:0,width:80,height:'100%',background:'linear-gradient(to left, var(--deep), transparent)',pointerEvents:'none'}}/>
+      </div>
+    </section>
+  )
+}
 
 export default function HomePageInner() {
   const [openFaq, setOpenFaq] = useState(0)
@@ -100,7 +221,7 @@ export default function HomePageInner() {
       {/* HERO */}
       <section className="hero">
         <div className="hero__bg">
-          {/* Replace with: <img src="/images/hero.jpg" alt="Andy Griffiths walking a fairway at Son Gual, Mallorca" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',objectPosition:'center 30%'}} /> */}
+          {/* Replace with: <img src="/images/hero.jpg" alt="" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',objectPosition:'center 30%'}} /> */}
         </div>
         <div className="hero__content">
           <p className="hero__eyebrow">PGA Advanced Professional · Mallorca</p>
@@ -140,7 +261,7 @@ export default function HomePageInner() {
         <div className="intro__right">
           <div className="intro__stat reveal reveal-delay-1">
             <div className="intro__stat-num">18</div>
-            <div className="intro__stat-label">Years coaching experience</div>
+            <div className="intro__stat-label">Years coaching golf</div>
           </div>
           <div className="intro__stat reveal reveal-delay-2">
             <div className="intro__stat-num">15,000+</div>
@@ -153,10 +274,10 @@ export default function HomePageInner() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF — Chinese reach, separate from stats */}
+      {/* DOUYIN STRIP */}
       <section style={{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}>
-        <p style={{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.35)',fontFamily:"'Jost',sans-serif",letterSpacing:'0.12em',fontWeight:300}}>
-          300 million+ views on Douyin · Andy 教练 · Coaching content trusted across China
+        <p style={{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.4)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}>
+          Andy 教练 &nbsp;·&nbsp; 300 million+ golf coaching video views on TikTok &nbsp;·&nbsp; Coaching content trusted worldwide
         </p>
       </section>
 
@@ -211,22 +332,15 @@ export default function HomePageInner() {
         >
           {courses.map((c, i) => (
             <article key={i} className={`course-card ${c.cls}`}>
-              {/* Full-bleed photo with bottom-up gradient overlay */}
-              <div className="course-card__bg" style={{
-                backgroundImage: `url(${c.img})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}></div>
-              <div className="course-card__overlay" style={{
-                background: 'linear-gradient(to top, rgba(10,9,7,0.95) 0%, rgba(10,9,7,0.55) 45%, rgba(10,9,7,0.15) 75%, transparent 100%)',
-              }}></div>
+              <div className="course-card__bg" style={{backgroundImage:`url(${c.img})`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
+              <div className="course-card__overlay" style={{background:'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)'}}></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
               <div className="course-card__content">
                 <p className="course-card__region">{c.region}</p>
                 <h3 className="course-card__name">{c.name}</h3>
                 <div className="course-card__meta">
                   {c.meta.map((m, j) => (
-                    <span key={j}>{j > 0 && <span className="course-card__meta-dot" style={{display:'inline-block',width:2,height:2,borderRadius:'50%',background:'rgba(255,255,255,0.3)',margin:'0 7px',verticalAlign:'middle'}}></span>}{m}</span>
+                    <span key={j}>{j > 0 && <span style={{display:'inline-block',width:2,height:2,borderRadius:'50%',background:'rgba(255,255,255,0.4)',margin:'0 7px',verticalAlign:'middle'}}></span>}{m}</span>
                   ))}
                 </div>
                 <div className="course-card__rating">
@@ -253,10 +367,10 @@ export default function HomePageInner() {
         </div>
         <div className="what__right reveal reveal-delay-1">
           {[
-            { icon: 'i', title: 'Everything arranged', text: 'Course, tee time, transport, lunch — fully handled before you arrive.' },
-            { icon: ' ', title: 'On-course coaching', text: 'Real improvement in real conditions. Not a lesson. Not a commentary. The right observation at the right moment.' },
-            { icon: '◇', title: 'Genuinely private', text: "Just you and a PGA Advanced Professional. No strangers in your group. A round shaped entirely around your game." },
-            { icon: '+', title: 'Access to more', text: "Members-only courses that most visiting golfers can't book independently — Santa Ponsa 2 & 3, plus others." },
+            { icon: FEATURE_ICONS.arranged, title: 'Everything arranged', text: 'Course, tee time, transport, lunch — fully handled before you arrive.' },
+            { icon: FEATURE_ICONS.coaching, title: 'On-course coaching', text: 'Real improvement in real conditions. Not a lesson. Not a commentary. The right observation at the right moment.' },
+            { icon: FEATURE_ICONS.private, title: 'Genuinely private', text: "Just you and a PGA Advanced Professional. No strangers in your group. A round shaped entirely around your game." },
+            { icon: FEATURE_ICONS.access, title: 'Access to more', text: "Members-only courses most visiting golfers can't book independently — Santa Ponsa 2 & 3, plus others." },
           ].map((f, i) => (
             <div key={i} className="what__feature">
               <div className="what__feature-icon">{f.icon}</div>
@@ -268,6 +382,9 @@ export default function HomePageInner() {
           ))}
         </div>
       </section>
+
+      {/* WINNERS STRIP */}
+      <WinnersStrip />
 
       {/* TESTIMONIALS */}
       <section className="testimonials">
@@ -298,31 +415,31 @@ export default function HomePageInner() {
           <div className="package reveal">
             <p className="package__tier">The Mallorca Round</p>
             <h3 className="package__name">Play with a Pro</h3>
-            <p className="package__price">€350 pp + green fee</p>
             <div className="package__divider"></div>
             <ul className="package__features">
               {['Course matched to your game & handicap','Tee time secured and fully handled','Pre-round briefing and warm-up','18 holes alongside Andy','On-course coaching throughout','Post-round debrief — honest and clear'].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
+            <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem'}}>€350 pp + green fee</p>
             <Link href="/contact" className="btn btn--dark">Enquire</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
             <p className="package__tier">The Signature Day</p>
             <h3 className="package__name">Hosted Golf Day</h3>
-            <p className="package__price">From €450 pp + green fee</p>
             <div className="package__divider"></div>
             <ul className="package__features">
               {["Everything in The Mallorca Round","Son Gual or Alcanada — two of the island's finest","Long lunch at the course restaurant","Curated surprise gift","Unhurried pace — a full day, not a rushed round"].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
+            <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem',color:'var(--gold-light)'}}>From €450 pp + green fee</p>
             <Link href="/contact" className="btn btn--gold">Enquire</Link>
           </div>
           <div className="package reveal reveal-delay-2">
             <p className="package__tier">The Full Experience</p>
             <h3 className="package__name">Bespoke Golf Journey</h3>
-            <p className="package__price">Custom itinerary</p>
             <div className="package__divider"></div>
             <ul className="package__features">
               {['Multi-course day or full itinerary','Private transport from Palma','Dinner at a handpicked restaurant','Spa or recovery session','Full concierge — groups & corporates'].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
+            <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem'}}>Custom itinerary</p>
             <Link href="/contact" className="btn btn--dark">Enquire</Link>
           </div>
         </div>

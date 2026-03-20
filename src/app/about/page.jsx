@@ -4,7 +4,7 @@ import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
   title: 'About Andy Griffiths — PGA Professional & Golf Coach, Mallorca',
-  description: 'Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. 18 years coaching at Pebble Beach, Evian, The Open, and 11 years in China. Private golf experiences on the island\'s finest courses.',
+  description: "Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. 18 years coaching at Pebble Beach, Evian, The Open, and 11 years in China. Private golf experiences on the island's finest courses.",
 }
 
 const credentials = [
@@ -13,7 +13,7 @@ const credentials = [
   { title: 'TPI Level 3 Certified', detail: 'Titleist Performance Institute' },
   { title: 'Trackman Master Certified', detail: 'First in China' },
   { title: 'US Kids Golf Top 50', detail: 'Coach Worldwide' },
-  { title: '18 years coaching experience', detail: 'Across Europe, the Americas, Asia, and at sea' },
+  { title: '18 years coaching golf', detail: 'Across Europe, the Americas, Asia, and at sea' },
   { title: 'Chinese national team', detail: 'Elite junior and competition coaching' },
   { title: '300 million+ views', detail: 'Golf coaching content on Douyin (Andy 教练)' },
   { title: 'Published author', detail: 'Putting It Out There — A Life in Full Swing, 2016' },
@@ -122,7 +122,6 @@ export default function About() {
           <Link href="/contact" className="btn btn--outline-white">Get in touch</Link>
         </div>
       </section>
-
     </PageLayout>
   )
 }
