@@ -34,8 +34,8 @@ export default function GuidesIndex_FR() {
 
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
-          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>D'autres guides arrivent bientôt</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Je joue actuellement tous les parcours de l'île, donc il y a encore beaucoup de guides écrits et bientôt disponibles. Des évaluations honnêtes, pas des brochures. Suivez l'espace pour Alcanada, le meilleur aperçu des parcours, la ventilation des green fees et les guides de planification de voyages.</p>
+          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>D'autres guides à venir</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Je joue actuellement sur chaque parcours de l'île, donc de nombreux autres guides arrivent bientôt. Des évaluations honnêtes, pas des brochures. À venir : meilleur aperçu des parcours, détail des green fees et guides de voyage.</p>
         </div>
 
         {/* SON GUAL — live */}
@@ -47,6 +47,27 @@ export default function GuidesIndex_FR() {
           <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Son Gual Golf Majorque — Avis Honnête d'un Professionnel PGA (2026)</h2>
           <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Mon parcours de prédilection sur l'île. Le vent, les greens, les derniers trous — et pourquoi Obama et Nadal continuent d'y revenir.</p>
           <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Championship · Par 72 · €80–165 · Handicap requis</p>
+        </Link>
+
+        {/* ALCANADA-REVIEW — live */}
+        <Link href="/fr/guides/alcanada-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Avis sur le parcours</span>
+            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>7 min</span>
+          </div>
+          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Club de Golf Alcanada — Avis honnête d'un Professionnel PGA (2026)</h2>
+          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Le parcours que j'emmène les gens jouer quand je veux qu'ils rentrent avec une histoire. Le phare change tout.</p>
+          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Côtier · Par 72 · €115–220 · Rolex Challenge Tour Grand Final</p>
+        </Link>
+        {/* SANTA-PONSA-1-REVIEW — live */}
+        <Link href="/fr/guides/santa-ponsa-1-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Avis sur le parcours</span>
+            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>6 min</span>
+          </div>
+          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Golf Santa Ponsa 1, Majorque — Avis honnête d'un Professionnel PGA (2026)</h2>
+          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>L'un des parcours les plus longs d'Europe, une histoire sur le DP World Tour, et un parcours qui redonne vraiment confiance avec le driver.</p>
+          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Championship · Par 72 · €77–126 · Accès public</p>
         </Link>
 
       </section>

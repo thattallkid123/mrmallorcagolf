@@ -34,8 +34,8 @@ export default function GuidesIndex_NL() {
 
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
-          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Meer gidsen komen binnenkort</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Ik speel momenteel door elke golfbaan op het eiland, dus er zijn nog veel meer gidsen geschreven en binnenkort beschikbaar. Eerlijke beoordelingen, geen brochures. Houd deze ruimte in de gaten voor Alcanada, het beste baanoverzicht, greenfee-overzicht en reisplanningsgidsen.</p>
+          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Meer gidsen binnenkort</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Ik speel momenteel door elke golfbaan op het eiland, dus er zijn nog veel meer gidsen onderweg. Eerlijke beoordelingen, geen brochures. Binnenkort: beste baanoverzicht, greenfee-overzicht en reisplanningsgidsen.</p>
         </div>
 
         {/* SON GUAL — live */}
@@ -47,6 +47,27 @@ export default function GuidesIndex_NL() {
           <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Son Gual Golf Mallorca — Eerlijke Recensie van een PGA Professional (2026)</h2>
           <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes — en waarom Obama en Nadal blijven terugkomen.</p>
           <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Kampioenschap · Par 72 · €80–165 · Handicapcertificaat vereist</p>
+        </Link>
+
+        {/* ALCANADA-REVIEW — live */}
+        <Link href="/nl/guides/alcanada-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Baanbeoordeling</span>
+            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>7 min</span>
+          </div>
+          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Club de Golf Alcanada — Eerlijke beoordeling van een PGA Professional (2026)</h2>
+          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>De baan waar ik mensen naartoe breng als ik wil dat ze met een verhaal thuiskomen. De vuurtoren verandert alles.</p>
+          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Kustbaan · Par 72 · €115–220 · Rolex Challenge Tour Grand Final</p>
+        </Link>
+        {/* SANTA-PONSA-1-REVIEW — live */}
+        <Link href="/nl/guides/santa-ponsa-1-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Baanbeoordeling</span>
+            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>6 min</span>
+          </div>
+          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Golf Santa Ponsa 1, Mallorca — Eerlijke beoordeling van een PGA Professional (2026)</h2>
+          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Een van de langste banen in Europa, DP World Tour-geschiedenis en een baan die je vertrouwen met de driver écht teruggeeft.</p>
+          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Championship · Par 72 · €77–126 · Toegankelijk voor bezoekers</p>
         </Link>
 
       </section>

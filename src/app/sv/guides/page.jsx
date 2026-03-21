@@ -35,7 +35,7 @@ export default function GuidesIndex_SV() {
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
           <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Fler guider kommer snart</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Jag spelar mig igenom varje golfbana på ön, så det finns många fler guider skrivna och kommer snart. Ärliga bedömningar, inga broschyrer. Håll utkik efter Alcanada, bästa banöversikten, greenavgiftsguide och reseplaneringsguider.</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Jag spelar mig igenom varje golfbana på ön, så många fler guider är på väg. Ärliga omdömen, inga broschyrer. Snart: översikt över de bästa banorna, greenfee-guide och reseplaneringsguider.</p>
         </div>
 
         {/* SON GUAL — live */}
@@ -47,6 +47,27 @@ export default function GuidesIndex_SV() {
           <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Son Gual Golf Mallorca — Ärlig Recension av en PGA-proffs (2026)</h2>
           <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen — och varför Obama och Nadal fortsätter att återvända.</p>
           <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Mästerskap · Par 72 · €80–165 · Handicapintyg krävs</p>
+        </Link>
+
+        {/* ALCANADA-REVIEW — live */}
+        <Link href="/sv/guides/alcanada-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Banomdöme</span>
+            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>7 min</span>
+          </div>
+          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Club de Golf Alcanada — Ärlig recension av en PGA Professional (2026)</h2>
+          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Banan jag tar folk till när jag vill att de ska åka hem med en historia. Fyren förändrar allt.</p>
+          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Kustbana · Par 72 · €115–220 · Rolex Challenge Tour Grand Final</p>
+        </Link>
+        {/* SANTA-PONSA-1-REVIEW — live */}
+        <Link href="/sv/guides/santa-ponsa-1-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Banomdöme</span>
+            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>6 min</span>
+          </div>
+          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Golf Santa Ponsa 1, Mallorca — Ärlig recension av en PGA Professional (2026)</h2>
+          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>En av Europas längsta banor, DP World Tour-historia och en bana som verkligen återger självförtroendet med drivern.</p>
+          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Championship · Par 72 · €77–126 · Öppen för besökare</p>
         </Link>
 
       </section>
