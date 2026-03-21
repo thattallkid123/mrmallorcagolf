@@ -105,7 +105,7 @@ function CareerStrip() {
       <div style={{position:'relative',overflow:'hidden'}}>
         <div ref={trackRef} style={{display:'flex',gap:2,willChange:'transform',width:'max-content'}}>
           {allVenues.map((v, i) => (
-            <div key={i} style={{flexShrink:0,width:240,padding:'28px 24px',background:'rgba(255,255,255,0.04)',borderLeft:'1px solid rgba(255,255,255,0.06)'}}>
+            <div key={i} style={{flexShrink:0,width:240,padding:'28px 24px',background:'rgba(255,255,255,0.04)',borderLeft:'1px solid rgba(255,255,255,0.06)',textAlign:'center'}}>
               <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,color:'#fff',marginBottom:'0.4rem'}}>{v.name}</p>
               <p style={{fontSize:'9px',letterSpacing:'.14em',textTransform:'uppercase',color:'rgba(255,255,255,.35)',fontFamily:"'Jost',sans-serif"}}>{v.detail}</p>
             </div>
@@ -261,7 +261,7 @@ export default function HomePageInner() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c, i) => (
-            <article key={i} className={`course-card ${c.cls}`}>
+            <Link key={i} href="/golf-courses" style={{textDecoration:'none',display:'block'}}><article className={`course-card ${c.cls}`}>
               <div className="course-card__bg" style={{backgroundImage:`url(${c.img})`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
               <div className="course-card__overlay" style={{background:'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)'}}></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
@@ -278,8 +278,11 @@ export default function HomePageInner() {
                 {/* Excerpt always visible — not hover-only */}
                 <p className="course-card__excerpt course-card__excerpt--visible">{c.excerpt}</p>
               </div>
-            </article>
+            </article></Link>
           ))}
+        </div>
+        <div style={{textAlign:'center',marginTop:'2.5rem'}}>
+          <Link href="/golf-courses" className="btn btn--dark">View all 22 courses →</Link>
         </div>
       </section>
 

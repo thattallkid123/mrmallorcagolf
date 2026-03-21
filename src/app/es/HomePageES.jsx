@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 
 const courses = [
@@ -16,6 +16,18 @@ const faqs = [
   { q: '¿Cómo reservo?', a: 'Póngase en contacto. Dígame sus fechas y lo que busca — le respondo personalmente en 24 horas. Sin sistemas de reserva. Sin esperas.' },
   { q: '¿Es adecuado para un grupo?', a: 'Sí. Las experiencias funcionan para personas solas, parejas, grupos de amigos y jornadas de empresa. La Experiencia Completa es especialmente popular entre grupos corporativos y directivos que visitan la isla.' },
   { q: '¿Cuándo es mejor venir?', a: 'Octubre, noviembre, marzo y abril. La mejor combinación de condiciones de campo, clima, relación calidad-precio y ritmo de juego. La isla es jugable todo el año — en enero, los fairways aquí están en mejor estado que en agosto en Inglaterra.' },
+]
+
+// Career venues for scrolling strip (replaces static grid)
+const CAREER_VENUES = [
+  { name: 'Pebble Beach', detail: 'California, USA' },
+  { name: 'The Open Championship', detail: 'UK' },
+  { name: 'Evian Championship', detail: "France · Women's Major" },
+  { name: 'Doral', detail: 'Miami, USA' },
+  { name: 'World Cruise', detail: '40+ Countries' },
+  { name: 'TPI Oceanside', detail: 'California, USA' },
+  { name: 'Egypt International Pro-Am', detail: 'Cairo, Egypt' },
+  { name: 'Shanghai', detail: 'China · 11 Years' },
 ]
 
 function CareerStrip() {
@@ -112,9 +124,9 @@ export default function HomePageES() {
       </section>
 
       
-      {{/* DOUYIN STRIP */}}
-      <section style={{{{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}}}>
-        <p style={{{{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.4)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}}}>
+      {/* DOUYIN STRIP */}
+      <section style={{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}>
+        <p style={{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.4)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}>
           Andy 教练 &nbsp;·&nbsp; Más de 300 millones de visualizaciones en TikTok &nbsp;·&nbsp; Contenido de coaching de confianza mundial
         </p>
       </section>
@@ -160,7 +172,7 @@ export default function HomePageES() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c,i) => (
-            <article key={i} className={`course-card ${c.cls}`}>
+            <Link key={i} href="/es/golf-courses" style={{textDecoration:'none',display:'block'}}><article className={`course-card ${c.cls}`}>
               <div className="course-card__bg"></div><div className="course-card__overlay"></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
               <div className="course-card__content">
@@ -170,8 +182,11 @@ export default function HomePageES() {
                 <div className="course-card__rating"><span className="course-card__stars">{c.stars}</span><span className="course-card__rating-label"> · {c.difficulty}</span></div>
                 <p className="course-card__excerpt">{c.excerpt}</p>
               </div>
-            </article>
+            </article></Link>
           ))}
+        </div>
+        <div style={{textAlign:'center',marginTop:'2.5rem'}}>
+          <Link href="/es/golf-courses" className="btn btn--dark">Ver los 22 campos →</Link>
         </div>
       </section>
 

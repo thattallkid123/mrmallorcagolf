@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 
 const courses = [
@@ -16,6 +16,18 @@ const faqs = [
   { q: '如何预订？', a: '直接联系我。告诉我您的日期和需求——我会在24小时内亲自回复。没有预订系统，无需等待。' },
   { q: '适合团体参与吗？', a: '当然。无论是单人、双人、朋友团还是企业团建，均可安排。至尊定制体验尤其受到商务团体和来岛高管的欢迎。' },
   { q: '一年中哪个时间最适合前来？', a: '十月、十一月、三月和四月是最佳时期，球场状态、天气、性价比与打球节奏的综合体验最佳。马略卡岛全年均可打球——一月份的球道状态，比英格兰八月的球道更为出色。' },
+]
+
+// Career venues for scrolling strip (replaces static grid)
+const CAREER_VENUES = [
+  { name: 'Pebble Beach', detail: 'California, USA' },
+  { name: 'The Open Championship', detail: 'UK' },
+  { name: 'Evian Championship', detail: "France · Women's Major" },
+  { name: 'Doral', detail: 'Miami, USA' },
+  { name: 'World Cruise', detail: '40+ Countries' },
+  { name: 'TPI Oceanside', detail: 'California, USA' },
+  { name: 'Egypt International Pro-Am', detail: 'Cairo, Egypt' },
+  { name: 'Shanghai', detail: 'China · 11 Years' },
 ]
 
 function CareerStrip() {
@@ -152,7 +164,7 @@ export default function HomePageZH() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c,i) => (
-            <article key={i} className={`course-card ${c.cls}`}>
+            <Link key={i} href="/zh/golf-courses" style={{textDecoration:'none',display:'block'}}><article className={`course-card ${c.cls}`}>
               <div className="course-card__bg"></div><div className="course-card__overlay"></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
               <div className="course-card__content">
@@ -162,8 +174,11 @@ export default function HomePageZH() {
                 <div className="course-card__rating"><span className="course-card__stars">{c.stars}</span><span className="course-card__rating-label"> · {c.difficulty}</span></div>
                 <p className="course-card__excerpt">{c.excerpt}</p>
               </div>
-            </article>
+            </article></Link>
           ))}
+        </div>
+        <div style={{textAlign:'center',marginTop:'2.5rem'}}>
+          <Link href="/zh/golf-courses" className="btn btn--dark">查看全部22个球场 →</Link>
         </div>
       </section>
 

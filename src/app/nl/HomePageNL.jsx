@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 
 const courses = [
@@ -16,6 +16,18 @@ const faqs = [
   { q: 'Hoe reserveer ik?', a: 'Neem contact op. Vertel me uw data en wat u zoekt — ik reageer persoonlijk binnen 24 uur. Geen reserveringssystemen. Geen wachten.' },
   { q: 'Is dit geschikt voor een groep?', a: 'Ja. De ervaringen werken voor solo\'s, koppels, vriendengroepen en bedrijfsdagen. De Volledige Ervaring is bijzonder populair bij bedrijfsgroepen en leidinggevenden die het eiland bezoeken.' },
   { q: 'Wanneer is de beste tijd om te komen?', a: 'Oktober, november, maart en april. De beste combinatie van baancondities, weer, prijs-kwaliteit en speeltempo. Het eiland is het hele jaar bespeelbaar — in januari zijn de fairways hier beter dan Engelse fairways in augustus.' },
+]
+
+// Career venues for scrolling strip (replaces static grid)
+const CAREER_VENUES = [
+  { name: 'Pebble Beach', detail: 'California, USA' },
+  { name: 'The Open Championship', detail: 'UK' },
+  { name: 'Evian Championship', detail: "France · Women's Major" },
+  { name: 'Doral', detail: 'Miami, USA' },
+  { name: 'World Cruise', detail: '40+ Countries' },
+  { name: 'TPI Oceanside', detail: 'California, USA' },
+  { name: 'Egypt International Pro-Am', detail: 'Cairo, Egypt' },
+  { name: 'Shanghai', detail: 'China · 11 Years' },
 ]
 
 function CareerStrip() {
@@ -112,9 +124,9 @@ export default function HomePageNL() {
       </section>
 
       
-      {{/* DOUYIN STRIP */}}
-      <section style={{{{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}}}>
-        <p style={{{{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.4)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}}}>
+      {/* DOUYIN STRIP */}
+      <section style={{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}>
+        <p style={{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.4)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}>
           Andy 教练 &nbsp;·&nbsp; 300 miljoen+ golfcoaching videoweergaven op TikTok &nbsp;·&nbsp; Coaching-inhoud wereldwijd vertrouwd
         </p>
       </section>
@@ -160,7 +172,7 @@ export default function HomePageNL() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c,i) => (
-            <article key={i} className={`course-card ${c.cls}`}>
+            <Link key={i} href="/nl/golf-courses" style={{textDecoration:'none',display:'block'}}><article className={`course-card ${c.cls}`}>
               <div className="course-card__bg"></div><div className="course-card__overlay"></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
               <div className="course-card__content">
@@ -170,8 +182,11 @@ export default function HomePageNL() {
                 <div className="course-card__rating"><span className="course-card__stars">{c.stars}</span><span className="course-card__rating-label"> · {c.difficulty}</span></div>
                 <p className="course-card__excerpt">{c.excerpt}</p>
               </div>
-            </article>
+            </article></Link>
           ))}
+        </div>
+        <div style={{textAlign:'center',marginTop:'2.5rem'}}>
+          <Link href="/nl/golf-courses" className="btn btn--dark">Bekijk alle 22 banen →</Link>
         </div>
       </section>
 

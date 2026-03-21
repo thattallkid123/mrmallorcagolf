@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 
 const courses = [
@@ -16,6 +16,18 @@ const faqs = [
   { q: 'Hur bokar jag?', a: 'Hör av dig. Berätta om dina datum och vad du söker — jag återkommer personligen inom 24 timmar. Inga bokningssystem. Inget väntande.' },
   { q: 'Passar detta för en grupp?', a: 'Ja. Upplevelserna fungerar för solon, par, vängrupper och företagsdagar. Den Kompletta Upplevelsen är särskilt populär bland företagsgrupper och chefer som besöker ön.' },
   { q: 'När är bästa tiden att besöka?', a: 'Oktober, november, mars och april. Bäst kombination av banförhållanden, väder, värde och speltempo. Ön går att spela året runt — i januari är fairways här bättre än engelska fairways i augusti.' },
+]
+
+// Career venues for scrolling strip (replaces static grid)
+const CAREER_VENUES = [
+  { name: 'Pebble Beach', detail: 'California, USA' },
+  { name: 'The Open Championship', detail: 'UK' },
+  { name: 'Evian Championship', detail: "France · Women's Major" },
+  { name: 'Doral', detail: 'Miami, USA' },
+  { name: 'World Cruise', detail: '40+ Countries' },
+  { name: 'TPI Oceanside', detail: 'California, USA' },
+  { name: 'Egypt International Pro-Am', detail: 'Cairo, Egypt' },
+  { name: 'Shanghai', detail: 'China · 11 Years' },
 ]
 
 function CareerStrip() {
@@ -112,9 +124,9 @@ export default function HomePageSV() {
       </section>
 
       
-      {{/* DOUYIN STRIP */}}
-      <section style={{{{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}}}>
-        <p style={{{{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.4)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}}}>
+      {/* DOUYIN STRIP */}
+      <section style={{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}>
+        <p style={{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.4)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}>
           Andy 教练 &nbsp;·&nbsp; 300 miljoner+ golfcoaching videovisningar på TikTok &nbsp;·&nbsp; Coaching-innehåll betrott världen över
         </p>
       </section>
@@ -160,7 +172,7 @@ export default function HomePageSV() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c,i) => (
-            <article key={i} className={`course-card ${c.cls}`}>
+            <Link key={i} href="/sv/golf-courses" style={{textDecoration:'none',display:'block'}}><article className={`course-card ${c.cls}`}>
               <div className="course-card__bg"></div><div className="course-card__overlay"></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
               <div className="course-card__content">
@@ -170,8 +182,11 @@ export default function HomePageSV() {
                 <div className="course-card__rating"><span className="course-card__stars">{c.stars}</span><span className="course-card__rating-label"> · {c.difficulty}</span></div>
                 <p className="course-card__excerpt">{c.excerpt}</p>
               </div>
-            </article>
+            </article></Link>
           ))}
+        </div>
+        <div style={{textAlign:'center',marginTop:'2.5rem'}}>
+          <Link href="/sv/golf-courses" className="btn btn--dark">Se alla 22 banor →</Link>
         </div>
       </section>
 
