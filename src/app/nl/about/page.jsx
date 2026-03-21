@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'Over Andy Griffiths — PGA Professional, Mallorca',
-  description: 'Andy Griffiths is een Britse PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Évian, 11 jaar coaching in China.',
+  description: 'Andy Griffiths is een Britse UK UK PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Évian, 11 jaar coaching in China.',
   alternates: { canonical: 'https://mrmallorcagolf.com/nl/about' },
 }
 
@@ -17,7 +17,7 @@ export default function About_NL() {
           <p className="breadcrumb"><Link href="/nl">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Over Andy</span></p>
           <h1>De Professional<br />achter de Ervaring.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
-            <span className="cred-tag cred-tag--gold">UK PGA Advanced Professional</span>
+            <span className="cred-tag cred-tag--gold">UK UK PGA Advanced Professional</span>
             <span className="cred-tag">Trackman Master</span>
             <span className="cred-tag">TPI Level 3</span>
             <span className="cred-tag">Mallorca</span>
@@ -38,7 +38,7 @@ export default function About_NL() {
             <p className="chapter__label">Shanghai, 2014–2025</p>
             <h2>Elf jaar aan de top van het golf in China.</h2>
             <p>In 2014 verhuisde ik naar Shanghai. Ik had specifieke doelen — het onderwijsprogramma opzetten voor de beste academie in China — en bleef elf succesvolle jaren.</p>
-            <p>China was in die periode een buitengewone omgeving om in te coachen. Lessen liepen rond de €500 per uur. Klanten verwachtten serieuze, meetbare verbetering — niet alleen aanmoediging.</p>
+            <p>China was in die periode een buitengewone omgeving om in te coachen. Lessen liepen rond de €350 + green fee per uur. Klanten verwachtten serieuze, meetbare verbetering — niet alleen aanmoediging.</p>
             <p>Ik werd 's lands eerste Trackman Master, coachte spelers van het Chinese nationale team en bouwde een coachingpresence op Douyin die honderden miljoenen views bereikte. Ik werd ook vloeiend in Mandarijn, wat de diepte van mijn coachingrelaties fundamenteel veranderde.</p>
             <p>Na elf jaar had ik bereikt waarvoor ik was gekomen. Mijn eerste dochter werd geboren in 2023. De aantrekkingskracht van dichter bij huis zijn, en de kans om iets van mezelf op te bouwen, waren niet langer te negeren.</p>
           </div>
@@ -55,7 +55,7 @@ export default function About_NL() {
           <div className="creds reveal">
             <p className="creds__label">Kwalificaties</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional</strong>De hoogste kwalificatie in het Britse golfcoachen</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK UK PGA Advanced Professional (UK)</strong>De hoogste kwalificatie in het Britse golfcoachen</span></li>
               <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management</strong>University of Birmingham</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>TPI Niveau 3 gecertificeerd</strong>Titleist Performance Institute</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Trackman Master gecertificeerd</strong>Eerste in China</span></li>
@@ -63,7 +63,7 @@ export default function About_NL() {
               <li key={5} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>11 jaar in Shanghai</strong>Vloeiend Mandarijn</span></li>
               <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Chinees nationaal team</strong>Elite junior- en wedstrijdcoaching</span></li>
               <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Honderden miljoenen weergaven</strong>Golfcoachingcontent op Douyin</span></li>
-              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Gepubliceerd auteur</strong>Putting It Out There — A Life in Full Swing, 2016</span></li>
+              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Gepubliceerd auteur</strong><a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There</a> — A Life in Full Swing, 2016</span></li>
               <li key={9} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Gevestigd op Mallorca</strong>Sinds maart 2025</span></li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ export default function About_NL() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Klaar om te spelen?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>Een PGA Advanced Professional. Een uitzonderlijk golfeiland. Uw ronde.</h2>
+          <h2 className="serif-display" style={{color:'#fff'}}>Een UK UK PGA Advanced Professional. Een uitzonderlijk golfeiland. Uw ronde.</h2>
           <p>Vertel me uw datums, uw handicap en wat u zoekt. Ik bouw de dag rondom u.</p>
         </div>
         <div className="cta-final__right reveal">

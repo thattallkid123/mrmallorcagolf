@@ -25,7 +25,7 @@ export default function GolfCourses_NL() {
           </div>
         </div>
       </header>
-      <GolfCoursesClient />
+      <GolfCoursesClient lang="nl" />
     </PageLayout>
   )
 }

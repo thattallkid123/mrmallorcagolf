@@ -25,7 +25,7 @@ export default function GolfCourses_SV() {
           </div>
         </div>
       </header>
-      <GolfCoursesClient />
+      <GolfCoursesClient lang="sv" />
     </PageLayout>
   )
 }

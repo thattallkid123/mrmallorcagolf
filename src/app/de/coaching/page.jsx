@@ -3,8 +3,8 @@ import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Golf-Coaching auf dem Platz in Mallorca — PGA Professional',
-  description: 'On-Course Golfcoaching in Mallorca mit PGA Advanced Professional Andy Griffiths. Echte Verbesserung unter echten Bedingungen — für Urlaubs- und Residenzgolfer.',
+  title: 'Golf-Coaching auf dem Platz in Mallorca — UK UK PGA Professional',
+  description: 'On-Course Golfcoaching in Mallorca mit UK UK PGA Advanced Professional Andy Griffiths. Echte Verbesserung unter echten Bedingungen — für Urlaubs- und Residenzgolfer.',
   alternates: { canonical: 'https://mrmallorcagolf.com/de/coaching' },
 }
 
@@ -38,7 +38,7 @@ export default function CoachingDE() {
           <p>Coaching auf dem Platz setzt die Lektion dort an, wo sie wirklich hilft. Auf dem Fairway. Im Rough. Auf einer schrägen Lage mit einem Wind, den Sie nicht erwartet haben. Mit einem Score, der zählt. Dort verändern sich Spiele — und dort arbeiten wir.</p>
           <div className="analogy-box">
             <p>&ldquo;Stellen Sie sich Boxen vor. Sie können wochenlang am Sandsack trainieren und sich bereit fühlen. Dann haben Sie Ihr erstes Sparring und alles ändert sich. Golf ist dasselbe. Der erste Abschlag ist nicht die Driving Range.&rdquo;</p>
-            <cite>— Andy Griffiths, PGA Advanced Professional</cite>
+            <cite>— Andy Griffiths, UK UK PGA Advanced Professional</cite>
           </div>
         </div>
         <div className="reveal">

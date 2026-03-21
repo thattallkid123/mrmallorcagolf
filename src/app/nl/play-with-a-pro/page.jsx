@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'Spelen met een Pro — Privegolfdagen op Mallorca',
-  description: 'Een prive golfronde op Mallorca, gespeeld naast PGA Advanced Professional Andy Griffiths. Coaching op de baan, volle dag geregeld. Vanaf 500 EUR per persoon.',
+  description: 'Een prive golfronde op Mallorca, gespeeld naast UK PGA Advanced Professional Andy Griffiths. Coaching op de baan, volle dag geregeld. Vanaf €350 per persoon.',
   alternates: { canonical: 'https://mrmallorcagolf.com/nl/play-with-a-pro' },
 }
 
@@ -20,8 +20,8 @@ export default function PlayWithAPro_NL() {
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/nl" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Home</Link> &nbsp;/&nbsp; <span>Spelen met een Pro</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Privegolfdagen · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Een Privegolfdag op Mallorca.</h1>
-            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Geen les. Geen standaard ronde. Een privitage dag op een van de mooiste banen van het eiland, begeleid door een PGA professional die op het hoogste niveau op drie continenten heeft gecoacht.</p>
-            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>Vanaf &euro;500 per persoon</p>
+            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Geen les. Geen standaard ronde. Een privitage dag op een van de mooiste banen van het eiland, begeleid door een UK PGA professional die op het hoogste niveau op drie continenten heeft gecoacht.</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>€350 p.p. + green fee</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/nl/contact" className="btn btn--gold">Reserveer uw dag &rarr;</Link>
               <a href="#packages" className="btn btn--outline-white">Bekijk pakketten</a>
@@ -113,7 +113,7 @@ export default function PlayWithAPro_NL() {
           <div className="tier reveal">
             <p className="tier__name-small">De Mallorca Ronde</p>
             <h3 className="tier__name">Spelen met een Pro</h3>
-            <p className="tier__price">Vanaf &euro;500 per persoon</p>
+            <p className="tier__price">€350 p.p. + green fee</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
               <li>Baan afgestemd op uw spel</li>
@@ -128,7 +128,7 @@ export default function PlayWithAPro_NL() {
           <div className="tier tier--feature reveal">
             <p className="tier__name-small">De Signature Dag</p>
             <h3 className="tier__name">Begeleide Golfdag</h3>
-            <p className="tier__price">Vanaf &euro;650 per persoon</p>
+            <p className="tier__price">Vanaf €450 p.p. + green fee</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
               <li>Alles van De Mallorca Ronde</li>

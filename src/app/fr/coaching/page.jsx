@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'Coaching Golf sur Parcours à Majorque — PGA Professionnel',
-  description: 'Coaching golf sur parcours à Majorque avec PGA Advanced Professional Andy Griffiths. Progression réelle dans des conditions réelles — pour golfeurs en visite et résidents.',
+  description: 'Coaching golf sur parcours à Majorque avec UK UK PGA Advanced Professional Andy Griffiths. Progression réelle dans des conditions réelles — pour golfeurs en visite et résidents.',
   alternates: { canonical: 'https://mrmallorcagolf.com/fr/coaching' },
 }
 
@@ -28,7 +28,7 @@ export default function Coaching_FR() {
           <p>Le coaching sur parcours met la leçon là où elle aide vraiment. Sur le fairway. Dans le rough. Sur une pente inattendue avec un vent que vous n'aviez pas prévu. Avec un score qui compte. C'est là que les jeux changent — et c'est là que nous travaillons.</p>
           <div className="analogy-box">
             <p>&ldquo;Pensez à la boxe. Vous pouvez vous entraîner aux poings pendant des semaines et vous sentir prêt. Puis vous avez votre premier sparring et tout change. Le golf, c'est pareil. Le premier départ n'est pas le practice.&rdquo;</p>
-            <cite>— Andy Griffiths, PGA Advanced Professional</cite>
+            <cite>— Andy Griffiths, UK UK PGA Advanced Professional</cite>
           </div>
         </div>
         <div className="reveal">

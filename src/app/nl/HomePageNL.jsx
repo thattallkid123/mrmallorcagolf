@@ -36,7 +36,7 @@ export default function HomePageNL() {
       <section className="hero">
         <div className="hero__bg"></div>
         <div className="hero__content">
-          <p className="hero__eyebrow">PGA Advanced Professional · Mallorca</p>
+          <p className="hero__eyebrow">UK PGA Advanced Professional · Mallorca</p>
           <h1 className="serif-display hero__title">
             Speel de beste<br />golfbanen van Mallorca.<br />
             <em style={{fontStyle:'italic',fontWeight:400,opacity:0.85}}>Met een pro aan uw zijde.</em>
@@ -48,7 +48,7 @@ export default function HomePageNL() {
           </div>
         </div>
         <div className="hero__trust">
-          <p className="hero__trust-line"><em>PGA Advanced Professional</em></p>
+          <p className="hero__trust-line"><em>UK PGA Advanced Professional</em></p>
           <p className="hero__trust-line"><em>Trackman Master gecertificeerd</em></p>
           <p className="hero__trust-line"><em>11 jaar in Shanghai</em></p>
           <p className="hero__trust-line">Pebble Beach · Évian · The Open</p>
@@ -63,7 +63,7 @@ export default function HomePageNL() {
             Veel golfervaringen op Mallorca worden via een platform geboekt.<br />Dit is iets anders.
           </h2>
           <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.6)',lineHeight:1.85}}>
-            Een privédag met een PGA Advanced Professional die op het hoogste niveau op drie continenten heeft gecoacht — van Chinese nationale teamspelers tot golfers op grote wedstrijdlocaties in Europa, Azië en de VS. De expertise achter de dag maakt het verschil. Het golf is beter. De inzichten zijn echt.
+            Een privédag met een UK PGA Advanced Professional die op het hoogste niveau op drie continenten heeft gecoacht — van Chinese nationale teamspelers tot golfers op grote wedstrijdlocaties in Europa, Azië en de VS. De expertise achter de dag maakt het verschil. Het golf is beter. De inzichten zijn echt.
           </p>
         </div>
         <div className="intro__right">
@@ -124,7 +124,7 @@ export default function HomePageNL() {
           {[
             { icon: 'i', title: 'Alles geregeld', text: 'Baan, starttijd, vervoer, lunch — volledig afgehandeld voordat u aankomt.' },
             { icon: '→', title: 'Coaching op de baan', text: 'Echte verbetering in echte omstandigheden. Geen les. Geen commentaar. De juiste observatie op het juiste moment.' },
-            { icon: '◇', title: 'Echt privé', text: 'Alleen u en een PGA Advanced Professional. Geen vreemden in uw groep. Een ronde volledig gevormd rond uw spel.' },
+            { icon: '◇', title: 'Echt privé', text: 'Alleen u en een UK PGA Advanced Professional. Geen vreemden in uw groep. Een ronde volledig gevormd rond uw spel.' },
             { icon: '+', title: 'Toegang tot meer', text: 'Ledenbanen die de meeste bezoekers niet zelfstandig kunnen boeken — Santa Ponsa 2 & 3, en meer.' },
           ].map((f,i) => (
             <div key={i} className="what__feature">

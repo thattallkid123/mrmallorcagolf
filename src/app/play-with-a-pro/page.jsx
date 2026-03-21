@@ -4,7 +4,7 @@ import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
   title: 'Play With a Pro — Private Golf Days in Mallorca',
-  description: 'A private round of golf in Mallorca, played alongside PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person + green fee.',
+  description: 'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person + green fee.',
 }
 
 const testimonials = [

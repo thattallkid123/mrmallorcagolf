@@ -3,13 +3,13 @@ import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Über Andy Griffiths — PGA Professional, Mallorca',
-  description: 'Andy Griffiths ist ein britischer PGA Advanced Professional auf Mallorca. Ehemals Pebble Beach, Évian, 11 Jahre Coaching in China.',
+  title: 'Über Andy Griffiths — UK PGA Professional, Mallorca',
+  description: 'Andy Griffiths ist ein britischer UK PGA Advanced Professional auf Mallorca. Ehemals Pebble Beach, Évian, 11 Jahre Coaching in China.',
   alternates: { canonical: 'https://mrmallorcagolf.com/de/about' },
 }
 
 const credentials = [
-  { title: 'UK PGA Advanced Professional', detail: 'Eine der höchsten Berufsqualifikationen im britischen Golf' },
+  { title: 'UK PGA Advanced Professional (UK)', detail: 'Die höchste Qualifikation im britischen Golfcoaching' },
   { title: 'Applied Golf Management', detail: 'University of Birmingham' },
   { title: 'TPI Level 3 zertifiziert', detail: 'Titleist Performance Institute' },
   { title: 'Trackman Master zertifiziert', detail: 'Erster in China' },
@@ -17,7 +17,7 @@ const credentials = [
   { title: '11 Jahre in Shanghai', detail: 'Fließend Mandarin' },
   { title: 'Chinesische Nationalmannschaft', detail: 'Elite-Junioren- und Wettkampfcoaching' },
   { title: 'Hunderte Millionen Aufrufe', detail: 'Golfcoaching-Inhalte auf Douyin' },
-  { title: 'Veröffentlichter Autor', detail: 'Putting It Out There — A Life in Full Swing, 2016' },
+  { title: 'Veröffentlichter Autor', detail: '<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There</a> — A Life in Full Swing, 2016' },
   { title: 'Auf Mallorca ansässig', detail: 'Seit März 2025' },
 ]
 
@@ -51,7 +51,7 @@ export default function AboutDE() {
           <div className="chapter reveal">
             <p className="chapter__label">Frühe Karriere</p>
             <h2>Den besten Coaches auf zwei Kontinenten folgen.</h2>
-            <p>Ich bin mit Golf aufgewachsen, kam auf ein +1 Handicap, wusste aber früh, dass Coaching mein Weg war. Nach dem Studium des Applied Golf Management an der University of Birmingham und meiner Qualifikation als PGA Professional begann ich, eine Karriere aufzubauen, indem ich den erfahrensten Coaches durch Europa und Nordamerika folgte.</p>
+            <p>Ich bin mit Golf aufgewachsen, kam auf ein +1 Handicap, wusste aber früh, dass Coaching mein Weg war. Nach dem Studium des Applied Golf Management an der University of Birmingham und meiner Qualifikation als UK PGA Professional begann ich, eine Karriere aufzubauen, indem ich den erfahrensten Coaches durch Europa und Nordamerika folgte.</p>
             <p>Die ersten Jahre führten mich an außergewöhnliche Orte. Ich coachte in Pebble Beach, Doral, in Évian während des Damen-Majors und bei The Open Championship. Eine Saison verbrachte ich als Golfcoach auf einem Kreuzfahrtschiff auf einer Weltreise — über vierzig Länder, Golf an Orten, die die meisten Profis nie zu Gesicht bekommen.</p>
             <div className="pull-quote"><p>&ldquo;Jedes Umfeld war anders. Jeder Golfer war anders. Diese Vielfalt in den frühen Jahren hat alles geprägt, was danach kam.&rdquo;</p></div>
           </div>
@@ -60,7 +60,7 @@ export default function AboutDE() {
             <p className="chapter__label">Shanghai, 2014–2025</p>
             <h2>Elf Jahre an der Spitze des Golfs in China.</h2>
             <p>2014 zog ich nach Shanghai. Ich hatte konkrete Ziele — das Lehrprogramm für die beste Akademie Chinas aufzubauen — und blieb für elf erfolgreiche Jahre.</p>
-            <p>China war in dieser Zeit ein außergewöhnliches Umfeld zum Coachen. Lektionen liefen bei etwa 500 € pro Stunde. Klienten erwarteten ernsthafte, messbare Verbesserung — keine bloße Ermutigung. Der geforderte professionelle Standard war so hoch wie an jedem anderen Ort, an dem ich je gearbeitet hatte.</p>
+            <p>China war in dieser Zeit ein außergewöhnliches Umfeld zum Coachen. Lektionen liefen bei etwa €350 + Green Fee pro Stunde. Klienten erwarteten ernsthafte, messbare Verbesserung — keine bloße Ermutigung. Der geforderte professionelle Standard war so hoch wie an jedem anderen Ort, an dem ich je gearbeitet hatte.</p>
             <p>Ich wurde der erste Trackman Master des Landes, coachte Spieler der chinesischen Nationalmannschaft und baute eine Coaching-Präsenz auf Douyin auf, die hunderte Millionen Aufrufe erreichte. Zudem wurde ich fließend in Mandarin, was die Tiefe der Coaching-Beziehungen zu Spielern und Familien grundlegend veränderte.</p>
             <p>Nach elf Jahren hatte ich erreicht, weshalb ich gekommen war. Meine erste Tochter wurde 2023 geboren. Der Wunsch, wieder näher an der Heimat zu sein, und die Chance, etwas Eigenes aufzubauen, ließen sich nicht mehr ignorieren.</p>
           </div>
@@ -71,7 +71,7 @@ export default function AboutDE() {
             <p>Im März 2025 zog ich mit meiner Frau Yina nach Mallorca. Näher an der Familie in Großbritannien, ganzjährig Sonne, eine wirklich außergewöhnliche Golfinsel, der die meisten Menschen nicht genug Anerkennung zollen.</p>
             <p>Ich fing wieder ernsthaft an zu spielen. Arbeitete mich durch jeden Platz der Insel. Entdeckte neu, wie es sich anfühlt, auf dem ersten Abschlag zu stehen und sich wirklich um das Ergebnis zu sorgen. Dieser Wettkampfinstinkt — in Jahren als Vollzeit-Coach schlafend — kehrte schnell zurück.</p>
             <div className="pull-quote"><p>&ldquo;Die Coaching-Philosophie, die aus dem Wiederspielen entstanden ist, ist einfach: Die schnellsten Verbesserungen passieren auf dem Platz, nicht auf der Range. Echte Bedingungen, echte Entscheidungen, echte Konsequenzen.&rdquo;</p></div>
-            <p>Ein PGA Professional, der über ein Jahrzehnt in Asien coachte und jetzt private Golftage auf einer der besten Golfinseln Europas veranstaltet. Wenn das wie der Tag klingt, den Sie suchen — melden Sie sich.</p>
+            <p>Ein UK PGA Professional, der über ein Jahrzehnt in Asien coachte und jetzt private Golftage auf einer der besten Golfinseln Europas veranstaltet. Wenn das wie der Tag klingt, den Sie suchen — melden Sie sich.</p>
           </div>
         </main>
 
@@ -111,7 +111,7 @@ export default function AboutDE() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Bereit zu spielen?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>Ein PGA Advanced Professional. Eine außergewöhnliche Golfinsel. Ihre Runde.</h2>
+          <h2 className="serif-display" style={{color:'#fff'}}>Ein UK PGA Advanced Professional. Eine außergewöhnliche Golfinsel. Ihre Runde.</h2>
           <p>Teilen Sie mir Ihre Daten, Ihr Handicap und Ihre Wünsche mit. Ich baue den Tag um Sie herum.</p>
         </div>
         <div className="cta-final__right reveal">

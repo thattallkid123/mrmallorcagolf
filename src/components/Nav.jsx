@@ -84,13 +84,31 @@ sv: {
   },
 };
 
-const LANG_SWITCHER = [
-  { code: 'EN',  href: '/',    label: 'EN'   },
-  { code: 'ES',  href: '/es',  label: 'ES'   },
-  { code: 'DE',  href: '/de',  label: 'DE'   },
-  { code: 'FR',  href: '/fr',  label: 'FR'   },
-  { code: 'ZH',  href: '/zh',  label: '中文' },
+const LANG_CODES = [
+  { code: 'EN', prefix: '',    label: 'EN'   },
+  { code: 'ES', prefix: '/es', label: 'ES'   },
+  { code: 'DE', prefix: '/de', label: 'DE'   },
+  { code: 'FR', prefix: '/fr', label: 'FR'   },
+  { code: 'ZH', prefix: '/zh', label: '中文' },
 ]
+
+function switchLangPath(pathname, targetPrefix) {
+  if (!pathname) return targetPrefix || '/'
+  const LANG_PREFIXES = ['/de','/fr','/es','/zh','/sv','/nl']
+  // Strip existing lang prefix if present
+  let stripped = pathname
+  for (const p of LANG_PREFIXES) {
+    if (pathname === p || pathname.startsWith(p + '/')) {
+      stripped = pathname.slice(p.length) || '/'
+      break
+    }
+  }
+  // Map page slugs that exist in all languages
+  const SHARED_PATHS = ['/about','/play-with-a-pro','/coaching','/golf-courses','/contact','/guides']
+  const isShared = stripped === '/' || SHARED_PATHS.some(p => stripped === p || stripped.startsWith(p + '/'))
+  if (!isShared) return targetPrefix || '/'
+  return (targetPrefix + stripped) || '/'
+}
 
 function getLangFromPath(pathname) {
   if (!pathname) return 'en'
@@ -136,10 +154,10 @@ export default function Nav({ transparent = false, lang }) {
           </li>
           <li>
             <div className="nav__lang">
-              {LANG_SWITCHER.map(({ code, href, label }, i) => (
+              {LANG_CODES.map(({ code, prefix, label }, i) => (
                 <span key={code}>
-                  <Link href={href} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
-                  {i < LANG_SWITCHER.length - 1 && <span className="nav__lang-sep"> · </span>}
+                  <Link href={switchLangPath(pathname, prefix)} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
+                  {i < LANG_CODES.length - 1 && <span className="nav__lang-sep"> · </span>}
                 </span>
               ))}
             </div>
@@ -165,8 +183,8 @@ export default function Nav({ transparent = false, lang }) {
           {config.cta.label} →
         </Link>
         <div className="mob-lang">
-          {LANG_SWITCHER.map(({ code, href, label }) => (
-            <Link key={code} href={href} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
+          {LANG_CODES.map(({ code, prefix, label }) => (
+            <Link key={code} href={switchLangPath(pathname, prefix)} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               {label}
             </Link>
           ))}

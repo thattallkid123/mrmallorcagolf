@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: '马略卡岛球场实地高尔夫指导 — PGA职业教练',
-  description: 'PGA高级职业教练Andy Griffiths在马略卡岛提供球场实地高尔夫指导。真实条件下的真实进步——面向来岛访问及岛上常驻球手。',
+  description: '英国英国PGA高级职业教练Andy Griffiths在马略卡岛提供球场实地高尔夫指导。真实条件下的真实进步——面向来岛访问及岛上常驻球手。',
   alternates: { canonical: 'https://mrmallorcagolf.com/zh/coaching' },
 }
 
@@ -36,7 +36,7 @@ export default function Coaching_ZH() {
           <p>课前的一份简短问卷，让我们在开始之前就已了解这一天的重点。您的困惑所在、差距所在、以及您对成功的定义。</p>
           <p>当我们走到第一个发球台时，我已经知道该关注什么。反馈是情境化且直接的——不是套用在所有人身上的通用教案。</p>
           <p>课程地点为Son Gual、Alcanada，或根据您的水平和目标匹配的其他球场。</p>
-          <Link href="/zh/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>咨询课程安排 →</Link>
+          <Link href="/zh/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:€350,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>咨询课程安排 →</Link>
         </div>
       </section>
 

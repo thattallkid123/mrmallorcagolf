@@ -25,7 +25,7 @@ export default function GolfCourses_FR() {
           </div>
         </div>
       </header>
-      <GolfCoursesClient />
+      <GolfCoursesClient lang="fr" />
     </PageLayout>
   )
 }

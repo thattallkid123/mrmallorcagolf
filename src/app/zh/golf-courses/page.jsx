@@ -25,7 +25,7 @@ export default function GolfCourses_ZH() {
           </div>
         </div>
       </header>
-      <GolfCoursesClient />
+      <GolfCoursesClient lang="zh" />
     </PageLayout>
   )
 }

@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'Mit einem Profi spielen — Private Golftage auf Mallorca',
-  description: 'Eine private Golfrunde auf Mallorca, gespielt an der Seite von PGA Advanced Professional Andy Griffiths. Coaching auf dem Platz, voller Tag arrangiert. Ab 500 € pro Person.',
+  description: 'Eine private Golfrunde auf Mallorca, gespielt an der Seite von UK PGA Advanced Professional Andy Griffiths. Coaching auf dem Platz, voller Tag arrangiert. Ab €350 € pro Person.',
   alternates: { canonical: 'https://mrmallorcagolf.com/de/play-with-a-pro' },
 }
 
@@ -35,8 +35,8 @@ export default function PlayWithAProDE() {
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/de" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Start</Link> &nbsp;/&nbsp; <span>Mit einem Profi spielen</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Private Golftage · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Ein privater Golftag<br />auf Mallorca.</h1>
-            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Keine Lektion. Keine Standard-Runde. Ein privater Tag auf einem der schönsten Plätze der Insel, begleitet von einem PGA Professional, der auf höchstem Niveau auf drei Kontinenten gecoacht hat.</p>
-            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>Ab &euro;500 pro Person</p>
+            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Keine Lektion. Keine Standard-Runde. Ein privater Tag auf einem der schönsten Plätze der Insel, begleitet von einem UK PGA Professional, der auf höchstem Niveau auf drei Kontinenten gecoacht hat.</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>€350 p.P. + Green Fee</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/de/contact" className="btn btn--gold">Ihren Tag buchen &rarr;</Link>
               <a href="#packages" className="btn btn--outline-white">Pakete ansehen</a>
@@ -139,7 +139,7 @@ export default function PlayWithAProDE() {
           <div className="tier reveal">
             <p className="tier__name-small">Die Mallorca-Runde</p>
             <h3 className="tier__name">Mit einem Profi spielen</h3>
-            <p className="tier__price">Ab &euro;500 pro Person</p>
+            <p className="tier__price">€350 p.P. + Green Fee</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
               {['Platz auf Ihr Spiel & Handicap abgestimmt','Abschlagzeit gesichert und vollständig organisiert','Vorrunden-Briefing und Aufwärmen','18 Löcher an Andys Seite','Coaching auf dem Platz','Nachbesprechung — ehrlich und klar'].map((f,i)=><li key={i}>{f}</li>)}
@@ -149,7 +149,7 @@ export default function PlayWithAProDE() {
           <div className="tier tier--feature reveal">
             <p className="tier__name-small">Der Signature-Tag</p>
             <h3 className="tier__name">Geführter Golftag</h3>
-            <p className="tier__price">Ab &euro;650 pro Person</p>
+            <p className="tier__price">Ab €450 p.P. + Green Fee</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
               {['Alles aus der Mallorca-Runde','Son Gual oder Alcanada','Ausgedehntes Mittagessen im Platzrestaurant','Ausgewähltes Überraschungsgeschenk','Entspanntes Tempo — ein voller Tag'].map((f,i)=><li key={i}>{f}</li>)}

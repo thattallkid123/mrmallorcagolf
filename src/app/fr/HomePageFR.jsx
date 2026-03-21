@@ -36,7 +36,7 @@ export default function HomePageFR() {
       <section className="hero">
         <div className="hero__bg"></div>
         <div className="hero__content">
-          <p className="hero__eyebrow">PGA Advanced Professional · Majorque</p>
+          <p className="hero__eyebrow">UK PGA Advanced Professional · Majorque</p>
           <h1 className="serif-display hero__title">
             Jouez les meilleurs<br />parcours de Majorque.<br />
             <em style={{fontStyle:'italic',fontWeight:400,opacity:0.85}}>Avec un pro à vos côtés.</em>
@@ -48,7 +48,7 @@ export default function HomePageFR() {
           </div>
         </div>
         <div className="hero__trust">
-          <p className="hero__trust-line"><em>PGA Advanced Professional</em></p>
+          <p className="hero__trust-line"><em>UK PGA Advanced Professional</em></p>
           <p className="hero__trust-line"><em>Trackman Master certifié</em></p>
           <p className="hero__trust-line"><em>11 ans à Shanghai</em></p>
           <p className="hero__trust-line">Pebble Beach · Évian · The Open</p>
@@ -63,7 +63,7 @@ export default function HomePageFR() {
             Beaucoup d&apos;expériences golf à Majorque passent par une plateforme.<br />Celle-ci, c&apos;est autre chose.
           </h2>
           <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.6)',lineHeight:1.85}}>
-            Une journée privée animée par un PGA Advanced Professional ayant coaché au plus haut niveau sur trois continents — des joueurs de l&apos;équipe nationale de Chine aux golfeurs dans les grands sites de compétition en Europe, en Asie et aux États-Unis. L&apos;expertise qui sous-tend la journée fait toute la différence. Le golf est meilleur. Les conseils sont vrais.
+            Une journée privée animée par un UK PGA Advanced Professional ayant coaché au plus haut niveau sur trois continents — des joueurs de l&apos;équipe nationale de Chine aux golfeurs dans les grands sites de compétition en Europe, en Asie et aux États-Unis. L&apos;expertise qui sous-tend la journée fait toute la différence. Le golf est meilleur. Les conseils sont vrais.
           </p>
         </div>
         <div className="intro__right">
@@ -124,7 +124,7 @@ export default function HomePageFR() {
           {[
             { icon: 'i', title: 'Tout est organisé', text: 'Parcours, heure de départ, transport, déjeuner — tout géré avant votre arrivée.' },
             { icon: '→', title: 'Coaching sur le parcours', text: 'Une vraie progression dans de vraies conditions. Pas une leçon. Pas un commentaire. La bonne observation au bon moment.' },
-            { icon: '◇', title: 'Vraiment privé', text: 'Juste vous et un PGA Advanced Professional. Aucun inconnu dans votre groupe. Un parcours entièrement adapté à votre jeu.' },
+            { icon: '◇', title: 'Vraiment privé', text: 'Juste vous et un UK PGA Advanced Professional. Aucun inconnu dans votre groupe. Un parcours entièrement adapté à votre jeu.' },
             { icon: '+', title: 'Accès à plus', text: 'Des parcours membres auxquels la plupart des visiteurs ne peuvent pas accéder seuls — Santa Ponsa 2 & 3, et d\'autres.' },
           ].map((f,i) => (
             <div key={i} className="what__feature">

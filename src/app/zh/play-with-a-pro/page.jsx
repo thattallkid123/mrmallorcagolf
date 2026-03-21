@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: '与职业球手同场 — 马略卡岛私人高尔夫日',
-  description: '在马略卡岛与PGA高级职业教练Andy Griffiths同打一轮私人高尔夫。球场实地指导，全天全程安排。每人起价500欧元。',
+  description: '在马略卡岛与英国PGA高级职业教练Andy Griffiths同打一轮私人高尔夫。球场实地指导，全天全程安排。每人€350起。',
   alternates: { canonical: 'https://mrmallorcagolf.com/zh/play-with-a-pro' },
 }
 
@@ -21,7 +21,7 @@ export default function PlayWithAPro_ZH() {
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>私人高尔夫日 · 马略卡岛</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>在马略卡岛的私人高尔夫日。</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>这不是一堂课，也不是普通的一轮球。而是在岛上最顶级的球场之一，与一位曾在三大洲最高级别赛场执教的PGA职业教练共度的私人一天。</p>
-            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>每人起价 &euro;500</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>每人€350 + 果岭费</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/zh/contact" className="btn btn--gold">预订您的高尔夫日 &rarr;</Link>
               <a href="#packages" className="btn btn--outline-white">查看方案</a>
@@ -113,7 +113,7 @@ export default function PlayWithAPro_ZH() {
           <div className="tier reveal">
             <p className="tier__name-small">马略卡经典之旅</p>
             <h3 className="tier__name">与职业球手同场</h3>
-            <p className="tier__price">每人起价 &euro;500</p>
+            <p className="tier__price">每人€350 + 果岭费</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
               <li>根据您的球技量身推荐球场</li>
@@ -128,7 +128,7 @@ export default function PlayWithAPro_ZH() {
           <div className="tier tier--feature reveal">
             <p className="tier__name-small">招牌全日体验</p>
             <h3 className="tier__name">全程陪同高尔夫日</h3>
-            <p className="tier__price">每人起价 &euro;650</p>
+            <p className="tier__price">每人起价€450 + 果岭费</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
               <li>包含马略卡经典之旅全部内容</li>
