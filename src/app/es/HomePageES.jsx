@@ -36,7 +36,7 @@ export default function HomePageES() {
       <section className="hero">
         <div className="hero__bg"></div>
         <div className="hero__content">
-          <p className="hero__eyebrow">UK PGA Advanced Professional · Mallorca</p>
+          <p className="hero__eyebrow">PGA Advanced Professional · Mallorca</p>
           <h1 className="serif-display hero__title">
             Juegue los mejores<br />campos de Mallorca.<br />
             <em style={{fontStyle:'italic',fontWeight:400,opacity:0.85}}>Con un profesional a su lado.</em>
@@ -48,7 +48,7 @@ export default function HomePageES() {
           </div>
         </div>
         <div className="hero__trust">
-          <p className="hero__trust-line"><em>UK PGA Advanced Professional</em></p>
+          <p className="hero__trust-line"><em>PGA Advanced Professional</em></p>
           <p className="hero__trust-line"><em>Trackman Master certificado</em></p>
           <p className="hero__trust-line"><em>11 años en Shanghái</em></p>
           <p className="hero__trust-line">Pebble Beach · Évian · The Open</p>
@@ -63,13 +63,13 @@ export default function HomePageES() {
             Muchas experiencias de golf en Mallorca se reservan a través de una plataforma.<br />Esto es otra cosa.
           </h2>
           <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.6)',lineHeight:1.85}}>
-            Un día privado con un UK PGA Advanced Professional que ha entrenado al más alto nivel en tres continentes — desde jugadores de la selección nacional china hasta golfistas en los grandes escenarios competitivos de Europa, Asia y Estados Unidos. La experiencia que hay detrás del día marca la diferencia. El golf es mejor. Los consejos son genuinos.
+            Un día privado con un PGA Advanced Professional que ha entrenado al más alto nivel en tres continentes — desde jugadores de la selección nacional china hasta golfistas en los grandes escenarios competitivos de Europa, Asia y Estados Unidos. La experiencia que hay detrás del día marca la diferencia. El golf es mejor. Los consejos son genuinos.
           </p>
         </div>
         <div className="intro__right">
-          <div className="intro__stat reveal reveal-delay-1"><div className="intro__stat-num">11</div><div className="intro__stat-label">Años entrenando en China</div></div>
-          <div className="intro__stat reveal reveal-delay-2"><div className="intro__stat-num">40+</div><div className="intro__stat-label">Países en los que he entrenado</div></div>
-          <div className="intro__stat reveal reveal-delay-3"><div className="intro__stat-num">22</div><div className="intro__stat-label">Campos de Mallorca explorados</div></div>
+          <div className="intro__stat reveal reveal-delay-1"><div className="intro__stat-num">18</div><div className="intro__stat-label">Años de coaching de golf</div></div>
+          <div className="intro__stat reveal reveal-delay-2"><div className="intro__stat-num">15.000+</div><div className="intro__stat-label">Lecciones impartidas</div></div>
+          <div className="intro__stat reveal reveal-delay-3"><div className="intro__stat-num">300+</div><div className="intro__stat-label">Campeones de torneo</div></div>
         </div>
       </section>
 
@@ -124,7 +124,7 @@ export default function HomePageES() {
           {[
             { icon: 'i', title: 'Todo organizado', text: 'Campo, hora de salida, transporte, almuerzo — todo gestionado antes de su llegada.' },
             { icon: '→', title: 'Coaching en campo', text: 'Mejora real en condiciones reales. No es una lección. No es un comentario. La observación correcta en el momento correcto.' },
-            { icon: '◇', title: 'Verdaderamente privado', text: 'Solo usted y un UK PGA Advanced Professional. Sin desconocidos en su grupo. Una vuelta diseñada íntegramente para su juego.' },
+            { icon: '◇', title: 'Verdaderamente privado', text: 'Solo usted y un PGA Advanced Professional. Sin desconocidos en su grupo. Una vuelta diseñada íntegramente para su juego.' },
             { icon: '+', title: 'Acceso a más', text: 'Campos solo para socios a los que la mayoría de visitantes no puede acceder por su cuenta — Santa Ponsa 2 y 3, entre otros.' },
           ].map((f,i) => (
             <div key={i} className="what__feature">

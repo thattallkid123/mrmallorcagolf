@@ -36,7 +36,7 @@ export default function HomePageSV() {
       <section className="hero">
         <div className="hero__bg"></div>
         <div className="hero__content">
-          <p className="hero__eyebrow">UK PGA Advanced Professional · Mallorca</p>
+          <p className="hero__eyebrow">PGA Advanced Professional · Mallorca</p>
           <h1 className="serif-display hero__title">
             Spela Mallorcas<br />bästa golfbanor.<br />
             <em style={{fontStyle:'italic',fontWeight:400,opacity:0.85}}>Med en proffs vid din sida.</em>
@@ -48,7 +48,7 @@ export default function HomePageSV() {
           </div>
         </div>
         <div className="hero__trust">
-          <p className="hero__trust-line"><em>UK PGA Advanced Professional</em></p>
+          <p className="hero__trust-line"><em>PGA Advanced Professional</em></p>
           <p className="hero__trust-line"><em>Trackman Master certifierad</em></p>
           <p className="hero__trust-line"><em>11 år i Shanghai</em></p>
           <p className="hero__trust-line">Pebble Beach · Évian · The Open</p>
@@ -63,13 +63,13 @@ export default function HomePageSV() {
             Många golfupplevelser på Mallorca bokas via en plattform.<br />Det här är något annat.
           </h2>
           <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.6)',lineHeight:1.85}}>
-            En privat dag med en UK PGA Advanced Professional som coachat på högsta nivå på tre kontinenter — från det kinesiska landslaget till golfare på stora tävlingsarenor i Europa, Asien och USA. Expertisen bakom dagen gör skillnaden. Golfen är bättre. Insikterna är äkta.
+            En privat dag med en PGA Advanced Professional som coachat på högsta nivå på tre kontinenter — från det kinesiska landslaget till golfare på stora tävlingsarenor i Europa, Asien och USA. Expertisen bakom dagen gör skillnaden. Golfen är bättre. Insikterna är äkta.
           </p>
         </div>
         <div className="intro__right">
-          <div className="intro__stat reveal reveal-delay-1"><div className="intro__stat-num">11</div><div className="intro__stat-label">År coachande i Kina</div></div>
-          <div className="intro__stat reveal reveal-delay-2"><div className="intro__stat-num">40+</div><div className="intro__stat-label">Länder jag coachat i</div></div>
-          <div className="intro__stat reveal reveal-delay-3"><div className="intro__stat-num">22</div><div className="intro__stat-label">Mallorca-banor utforskade</div></div>
+          <div className="intro__stat reveal reveal-delay-1"><div className="intro__stat-num">18</div><div className="intro__stat-label">År golfcoaching</div></div>
+          <div className="intro__stat reveal reveal-delay-2"><div className="intro__stat-num">15.000+</div><div className="intro__stat-label">Lektioner givna</div></div>
+          <div className="intro__stat reveal reveal-delay-3"><div className="intro__stat-num">300+</div><div className="intro__stat-label">Turneringsvinnare coachade</div></div>
         </div>
       </section>
 
@@ -124,7 +124,7 @@ export default function HomePageSV() {
           {[
             { icon: 'i', title: 'Allt ordnat', text: 'Bana, starttid, transport, lunch — helt hanterat innan du anländer.' },
             { icon: '→', title: 'Coaching på banan', text: 'Riktig förbättring i riktiga förhållanden. Ingen lektion. Ingen löpande kommentar. Rätt observation vid rätt tillfälle.' },
-            { icon: '◇', title: 'Genuint privat', text: 'Bara du och en UK PGA Advanced Professional. Inga okända i din grupp. En runda formad helt runt ditt spel.' },
+            { icon: '◇', title: 'Genuint privat', text: 'Bara du och en PGA Advanced Professional. Inga okända i din grupp. En runda formad helt runt ditt spel.' },
             { icon: '+', title: 'Tillgång till mer', text: 'Banor enbart för medlemmar som de flesta besökare inte kan boka självständigt — Santa Ponsa 2 & 3, och fler.' },
           ].map((f,i) => (
             <div key={i} className="what__feature">

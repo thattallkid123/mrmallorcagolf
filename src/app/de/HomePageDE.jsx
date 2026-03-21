@@ -36,7 +36,7 @@ export default function HomePageDE() {
       <section className="hero">
         <div className="hero__bg"></div>
         <div className="hero__content">
-          <p className="hero__eyebrow">UK PGA Advanced Professional · Mallorca</p>
+          <p className="hero__eyebrow">PGA Advanced Professional · Mallorca</p>
           <h1 className="serif-display hero__title">
             Mallorcas beste<br />Golfplätze spielen.<br />
             <em style={{fontStyle:'italic',fontWeight:400,opacity:0.85}}>Mit einem Profi an Ihrer Seite.</em>
@@ -48,7 +48,7 @@ export default function HomePageDE() {
           </div>
         </div>
         <div className="hero__trust">
-          <p className="hero__trust-line"><em>UK PGA Advanced Professional</em></p>
+          <p className="hero__trust-line"><em>PGA Advanced Professional</em></p>
           <p className="hero__trust-line"><em>Trackman Master zertifiziert</em></p>
           <p className="hero__trust-line"><em>11 Jahre in Shanghai</em></p>
           <p className="hero__trust-line">Pebble Beach · Evian · The Open</p>
@@ -63,13 +63,13 @@ export default function HomePageDE() {
             Viele Golferlebnisse auf Mallorca werden über eine Plattform gebucht.<br />Das hier ist etwas anderes.
           </h2>
           <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.6)',lineHeight:1.85}}>
-            Ein privater Tag mit einem UK PGA Advanced Professional, der auf höchstem Niveau auf drei Kontinenten trainiert hat — von Nationalspielern in China bis zu Golfern an großen Turnierorten in Europa, Asien und den USA. Das Fachwissen hinter dem Tag macht den Unterschied. Das Golf ist besser. Die Einblicke sind echt.
+            Ein privater Tag mit einem PGA Advanced Professional, der auf höchstem Niveau auf drei Kontinenten trainiert hat — von Nationalspielern in China bis zu Golfern an großen Turnierorten in Europa, Asien und den USA. Das Fachwissen hinter dem Tag macht den Unterschied. Das Golf ist besser. Die Einblicke sind echt.
           </p>
         </div>
         <div className="intro__right">
-          <div className="intro__stat reveal reveal-delay-1"><div className="intro__stat-num">11</div><div className="intro__stat-label">Jahre Coaching in China</div></div>
-          <div className="intro__stat reveal reveal-delay-2"><div className="intro__stat-num">40+</div><div className="intro__stat-label">Länder, in denen trainiert wurde</div></div>
-          <div className="intro__stat reveal reveal-delay-3"><div className="intro__stat-num">22</div><div className="intro__stat-label">Mallorca-Plätze erkundet</div></div>
+          <div className="intro__stat reveal reveal-delay-1"><div className="intro__stat-num">18</div><div className="intro__stat-label">Jahre Golfcoaching</div></div>
+          <div className="intro__stat reveal reveal-delay-2"><div className="intro__stat-num">15.000+</div><div className="intro__stat-label">erteilte Lektionen</div></div>
+          <div className="intro__stat reveal reveal-delay-3"><div className="intro__stat-num">300+</div><div className="intro__stat-label">Turniersieger betreut</div></div>
         </div>
       </section>
 
@@ -124,7 +124,7 @@ export default function HomePageDE() {
           {[
             { icon: 'i', title: 'Alles arrangiert', text: 'Platz, Abschlagzeit, Transfer, Mittagessen — alles erledigt, bevor Sie ankommen.' },
             { icon: '→', title: 'Coaching auf dem Platz', text: 'Echte Verbesserung unter echten Bedingungen. Keine Lektion. Kein Kommentar. Die richtige Beobachtung im richtigen Moment.' },
-            { icon: '◇', title: 'Wirklich privat', text: 'Nur Sie und ein UK PGA Advanced Professional. Keine Fremden in Ihrer Gruppe. Eine Runde, die ganz auf Ihr Spiel zugeschnitten ist.' },
+            { icon: '◇', title: 'Wirklich privat', text: 'Nur Sie und ein PGA Advanced Professional. Keine Fremden in Ihrer Gruppe. Eine Runde, die ganz auf Ihr Spiel zugeschnitten ist.' },
             { icon: '+', title: 'Zugang zu mehr', text: 'Mitgliederplätze, die die meisten Besucher nicht unabhängig buchen können — Santa Ponsa 2 & 3 und weitere.' },
           ].map((f,i) => (
             <div key={i} className="what__feature">

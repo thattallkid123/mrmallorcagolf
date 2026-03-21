@@ -495,7 +495,7 @@ body {
 .course-card__rating-label { font-size: 9px; color: rgba(255,255,255,0.45); }
 /* Course card images — responsive */
 .course__img-mobile { display:none; overflow:hidden; background:var(--linen); margin:-28px -28px 20px; width:calc(100% + 56px); height:180px; }
-.course__img-desktop { display:flex; flex-shrink:0; width:220px; align-self:stretch; overflow:hidden; background:var(--linen); margin:-28px -28px -28px 0; }
+.course__img-desktop { display:flex; flex-shrink:0; width:45%; min-width:280px; align-self:stretch; overflow:hidden; background:var(--linen); margin:-28px -28px -28px 0; }
 .course-card__excerpt--visible { display: block; }
 
 .what { background: var(--cream); padding: 100px 40px; display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: start; }

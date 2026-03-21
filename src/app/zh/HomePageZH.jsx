@@ -36,7 +36,7 @@ export default function HomePageZH() {
       <section className="hero">
         <div className="hero__bg"></div>
         <div className="hero__content">
-          <p className="hero__eyebrow">英国PGA高级职业教练 · 马略卡岛</p>
+          <p className="hero__eyebrow">PGA高级职业教练 · 马略卡岛</p>
           <h1 className="serif-display hero__title">
             在马略卡岛最好的球场挥杆。<br />
             <em style={{fontStyle:'italic',fontWeight:400,opacity:0.85}}>身边有职业球手陪伴。</em>
@@ -48,7 +48,7 @@ export default function HomePageZH() {
           </div>
         </div>
         <div className="hero__trust">
-          <p className="hero__trust-line"><em>英国PGA高级职业教练</em></p>
+          <p className="hero__trust-line"><em>PGA高级职业教练</em></p>
           <p className="hero__trust-line"><em>Trackman大师认证</em></p>
           <p className="hero__trust-line"><em>在上海执教11年</em></p>
           <p className="hero__trust-line">圆石滩 · 依云 · 英国公开赛</p>
@@ -63,13 +63,13 @@ export default function HomePageZH() {
             马略卡岛上的高尔夫体验，大多通过平台预订。<br />这里提供的，是截然不同的东西。
           </h2>
           <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.6)',lineHeight:1.85}}>
-            与一位曾在三大洲顶级赛事中执教的英国PGA高级职业教练共度私人球场之旅——从中国国家队球员到欧洲、亚洲及美国重大赛事场地的高尔夫爱好者，他积累了丰富的执教经验。这一天背后的专业实力，决定了体验的高度。球打得更好。建议来自真正的内行。
+            与一位曾在三大洲顶级赛事中执教的PGA高级职业教练共度私人球场之旅——从中国国家队球员到欧洲、亚洲及美国重大赛事场地的高尔夫爱好者，他积累了丰富的执教经验。这一天背后的专业实力，决定了体验的高度。球打得更好。建议来自真正的内行。
           </p>
         </div>
         <div className="intro__right">
-          <div className="intro__stat reveal reveal-delay-1"><div className="intro__stat-num">11</div><div className="intro__stat-label">年在中国执教</div></div>
-          <div className="intro__stat reveal reveal-delay-2"><div className="intro__stat-num">40+</div><div className="intro__stat-label">个国家的执教经历</div></div>
-          <div className="intro__stat reveal reveal-delay-3"><div className="intro__stat-num">22</div><div className="intro__stat-label">个马略卡球场已探访</div></div>
+          <div className="intro__stat reveal reveal-delay-1"><div className="intro__stat-num">18</div><div className="intro__stat-label">年高尔夫教学</div></div>
+          <div className="intro__stat reveal reveal-delay-2"><div className="intro__stat-num">15,000+</div><div className="intro__stat-label">课时</div></div>
+          <div className="intro__stat reveal reveal-delay-3"><div className="intro__stat-num">300+</div><div className="intro__stat-label">锦标赛冠军</div></div>
         </div>
       </section>
 
@@ -124,7 +124,7 @@ export default function HomePageZH() {
           {[
             { icon: 'i', title: '全程安排妥当', text: '球场、开球时间、接送、午餐——在您到达之前，一切均已处理完毕。' },
             { icon: '→', title: '球场实地指导', text: '在真实条件下取得真实进步。不是课堂讲解，不是跑动式评论，而是在关键时刻给出恰到好处的提示。' },
-            { icon: '◇', title: '真正私密', text: '只有您与一位英国PGA高级职业教练同场。没有陌生人加入您的组别。整轮球完全围绕您的技术特点而设计。' },
+            { icon: '◇', title: '真正私密', text: '只有您与一位PGA高级职业教练同场。没有陌生人加入您的组别。整轮球完全围绕您的技术特点而设计。' },
             { icon: '+', title: '独家球场通道', text: '部分仅限会员的球场，普通游客无法自行预订——包括圣蓬萨2号场、3号场及其他球场，均可为客户安排。' },
           ].map((f,i) => (
             <div key={i} className="what__feature">

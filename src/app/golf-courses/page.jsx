@@ -26,7 +26,7 @@ export default function GolfCourses() {
         </div>
       </header>
 
-      <GolfCoursesClient />
+      <GolfCoursesClient lang="en" />
 
     </PageLayout>
   )
