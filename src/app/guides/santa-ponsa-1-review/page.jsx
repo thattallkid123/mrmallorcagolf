@@ -39,7 +39,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-hero.jpg"
           alt="Golf Santa Ponsa 1 — water reflection and fairway"
-          caption="Santa Ponsa 1 — the mirror-flat lake on the 10th green. One of the most photographed holes in Mallorca golf."
+          caption="Santa Ponsa 1. The lake on the approach to the 10th is the signature shot on the course."
         />
 
         <p>Santa Ponsa 1 is the only public course in the Santa Ponsa group and the one with genuine European Tour pedigree — it hosted the 2021 DP World Tour Mallorca Golf Open. This is the course that brought top-level professional golf back to the island after a decade away. The winner, Jeff Winther, shot 62 twice in the opening rounds. The course was ready for it.</p>
@@ -51,7 +51,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-1.jpg"
           alt="Santa Ponsa 1 fairway with mountains behind"
-          caption="Wide fairways, Tramuntana backdrop, and a course that rewards commitment off the tee."
+          caption="The fairways are genuinely wide here. The driver stays in the bag at Son Gual — not at Santa Ponsa 1."
         />
 
         <h2>The 10th Hole</h2>
@@ -60,7 +60,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-2.jpg"
           alt="Santa Ponsa 1 course layout and fairways"
-          caption="The course stretches across a broad valley. On calm days it plays shorter than it looks. On windy days, it plays every metre."
+          caption="The layout. On a calm day this course flatters you. Add wind and it earns every metre of its length."
         />
 
         <h2>The DP World Tour Connection</h2>
@@ -69,7 +69,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-3.jpg"
           alt="Santa Ponsa 1 approach to a par 3"
-          caption="The par-3s are demanding — long, with small greens that punish anything slightly offline."
+          caption="The par-3s are the honest part of the card. Long, small greens, nowhere to hide."
         />
 
         <h2>The Mountain Views</h2>
@@ -78,7 +78,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-5.jpg"
           alt="Andy Griffiths at Santa Ponsa 1 early morning"
-          caption="Early morning at Santa Ponsa 1 — before the wind arrives and the course changes character entirely."
+          caption="Early start. By mid-morning the wind usually finds the course."
         />
 
         <div className="post-fact">
@@ -98,7 +98,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-4.jpg"
           alt="Santa Ponsa 1 views across the course"
-          caption="The scale of Santa Ponsa 1 only becomes apparent on the course. One of the longest public courses in Spain."
+          caption="The back nine opens up. The 10th is 590 metres from the tips — one of the longest par-5s in Europe."
         />
 
         <div className="post-cta">

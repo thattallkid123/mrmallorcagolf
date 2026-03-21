@@ -39,7 +39,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-7.jpg"
           alt="Club de Golf Alcanada at golden hour — lighthouse and bay"
-          caption="Alcanada at golden hour — the lighthouse on its island, the Mediterranean stretching toward the Tramuntana mountains."
+          caption="Alcanada at golden hour. The lighthouse sits on its own island just off the coast — visible from 16 of the 18 holes."
         />
 
         <p>Alcanada is the course I take people to when I want them to come home with a story. It might be the most memorable round on the island. The lighthouse changes everything.</p>
@@ -51,7 +51,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-6.jpg"
           alt="Client hitting a tee shot at Alcanada with lighthouse in the background"
-          caption="That's the shot. Lighthouse behind, sea to the left, 200 metres of fairway ahead. Every tee shot here feels significant."
+          caption="The lighthouse behind, the sea to the left, the fairway dropping away ahead. Every tee shot here feels significant."
         />
 
         <h2>The Back Tees</h2>
@@ -64,7 +64,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-2.jpg"
           alt="Alcanada green with sea and mountains visible behind"
-          caption="The greens sit with the open sea behind them. A putt on this green has a view most courses would put on a poster."
+          caption="On the practice green before the round. On a clear morning you can see the Tramuntana mountains across the bay."
         />
 
         <h2>The Greens</h2>
@@ -74,7 +74,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-5.jpg"
           alt="Golfers at Alcanada with the Mediterranean behind"
-          caption="The sea is a constant presence. On most holes it's not just a backdrop — it's part of how you read the wind."
+          caption="You can just make out the lighthouse behind the trees. It follows you around the course."
         />
 
         <h2>The Rolex Challenge Tour Grand Final</h2>
@@ -83,7 +83,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-1.jpg"
           alt="Rolex Grand Final at Alcanada — hole 16"
-          caption="The Rolex Challenge Tour Grand Final at Alcanada. Hole 16, 476 yards, par 4. It plays into the wind from the elevated tee."
+          caption="The Rolex Challenge Tour Grand Final at Alcanada. It returns for its sixth time in October 2026."
         />
 
         <h2>Design Pedigree</h2>
@@ -92,7 +92,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-4.jpg"
           alt="Group of golfers at Alcanada on a summer evening"
-          caption="A summer evening round at Alcanada. The sea stays blue until the very last light."
+          caption="A summer evening round. The light at Alcanada in July is something else."
         />
 
         <div className="post-fact">
@@ -113,7 +113,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-hero.jpg"
           alt="Alcanada clubhouse terrace"
-          caption="The terrace after the round. The same view that was behind you on the 18th green, now enjoyed at a slower pace."
+          caption="The clubhouse terrace. Post-round lunch here is non-negotiable."
         />
 
         <h2>Verdict</h2>

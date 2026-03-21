@@ -39,7 +39,7 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-hero.webp"
           alt="Son Gual Golf Course, Mallorca"
-          caption="Son Gual — Thomas Himmel's 2007 championship design above Palma."
+          caption="Son Gual. 11km from Palma. Feels considerably further once the wind picks up on the first tee."
         />
 
         <p>Son Gual is my most-played course in Mallorca and the one I recommend most consistently when clients ask where to play. I want to be honest about why — and honest about what makes it hard, because it is hard, and anyone booking expecting a relaxed day will be surprised.</p>
@@ -47,7 +47,7 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-clients-group.jpg"
           alt="Golfers at Son Gual with Andy Griffiths"
-          caption="A group day at Son Gual — January conditions, immaculate fairways, and not a trace of the British winter."
+          caption="A group day in January. In England the courses are shut. Here the fairways look like this."
         />
 
         <h2>The First Tee</h2>
@@ -57,7 +57,7 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-1.jpg"
           alt="Son Gual fairway and bunkers"
-          caption="The bunkering is aggressive and strategic — positioned exactly where slightly mishit shots go."
+          caption="There are a lot of bunkers at Son Gual. They are positioned exactly where slightly mishit shots go."
         />
 
         <h2>The Wind</h2>
@@ -70,7 +70,7 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-swing.jpg"
           alt="Client hitting a tee shot at Son Gual"
-          caption="The open stretches reward an aggressive approach from the tee — when the wind lets you."
+          caption="The open stretches on the front nine. The driver comes out here. Whether that was the right call is a different matter."
         />
 
         <h2>The Greens</h2>
@@ -80,7 +80,7 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-2.jpg"
           alt="Son Gual green and surrounding landscape"
-          caption="The greens are fast and raised — where you miss matters more than how you swing."
+          caption="Fast, raised greens. Where you miss matters more than how you swing — that's the Son Gual lesson."
         />
 
         <h2>The Course</h2>
@@ -89,19 +89,19 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-3.webp"
           alt="Son Gual closing stretch"
-          caption="The closing stretch — holes 15 to 18 — is among the finest four holes in European golf."
+          caption="Holes 15 to 18. The closing stretch. Among the finest four holes in European golf — I'd stand by that."
         />
 
         <PostImage
           src="/images/son-gual-blog/sg-plane.jpg"
           alt="Plane coming into Palma airport over Son Gual golf course"
-          caption="Planes on final approach into Palma pass directly overhead. A reminder of how close to civilisation — and how far from it — Son Gual feels."
+          caption="The planes on final approach into Palma pass directly overhead. Son Gual is 11km from the city."
         />
 
         <PostImage
           src="/images/son-gual-blog/sg-4.jpg"
           alt="Son Gual panoramic view across Palma"
-          caption="Views across the Bay of Palma from the higher holes — best between 8 and 12."
+          caption="The Bay of Palma from the higher holes. Best between 8 and 12."
         />
 
         <h2>Notable Visitors</h2>
@@ -110,7 +110,7 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-5.jpg"
           alt="Son Gual course detail"
-          caption="Son Gual's conditioning is exceptional year-round — even in January the fairways are immaculate."
+          caption="January fairways. The fringe is mown so tight that one of my playing partners reached for her putter with 30 yards still to go."
         />
 
         <div className="post-fact">

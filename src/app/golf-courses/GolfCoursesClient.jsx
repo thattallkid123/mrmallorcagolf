@@ -74,6 +74,12 @@ function CourseCard({ c }) {
   const isExternalLink = c.link.startsWith('http')
   return (
     <div className={`course${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`}>
+      {/* Mobile: image on top, full width, fixed height */}
+      {c.img && (
+        <div className="course__img-mobile">
+          <img src={c.img} alt={c.name} style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center'}} loading="lazy" />
+        </div>
+      )}
       <div className="course__inner" style={{display:'flex',gap:20,alignItems:'flex-start'}}>
         <div style={{flex:1,minWidth:0}}>
           {c.badges.length > 0 && (
@@ -96,8 +102,9 @@ function CourseCard({ c }) {
           {c.text2 && <p className="course__text" style={{marginTop:12}}>{c.text2}</p>}
           {c.note && <div className="course__note"><p>{c.note}</p></div>}
         </div>
+        {/* Desktop: image on right, full card height */}
         {c.img && (
-          <div style={{flexShrink:0,width:220,alignSelf:'stretch',overflow:'hidden',background:'var(--linen)',margin:'-28px -28px -28px 0'}}>
+          <div className="course__img-desktop">
             <img src={c.img} alt={c.name} style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center'}} loading="lazy" />
           </div>
         )}
