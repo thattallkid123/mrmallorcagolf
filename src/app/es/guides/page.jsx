@@ -35,7 +35,7 @@ export default function GuidesIndex_ES() {
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
           <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Más guías próximamente</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Actualmente estoy jugando todos los campos de la isla. Cada reseña aparece después de haberlo jugado — evaluaciones honestas, no folletos. Alcanada, el resumen de los mejores campos y las guías de planificación de viajes están en proceso.</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Estoy recorriendo todos los campos de la isla, así que hay muchas más guías escritas y próximamente disponibles. Evaluaciones honestas, no folletos. Esté atento a las guías de Alcanada, resumen de los mejores campos, desglose de green fees y planificación de viajes.</p>
         </div>
 
         {/* SON GUAL — live */}

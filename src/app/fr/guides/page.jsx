@@ -35,7 +35,7 @@ export default function GuidesIndex_FR() {
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
           <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>D'autres guides arrivent bientôt</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Je joue actuellement chaque parcours de l'île. Chaque avis paraît après l'avoir joué — évaluations honnêtes, pas de brochures. Alcanada, le meilleur aperçu des parcours et les guides de planification de voyages sont en cours.</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Je joue actuellement tous les parcours de l'île, donc il y a encore beaucoup de guides écrits et bientôt disponibles. Des évaluations honnêtes, pas des brochures. Suivez l'espace pour Alcanada, le meilleur aperçu des parcours, la ventilation des green fees et les guides de planification de voyages.</p>
         </div>
 
         {/* SON GUAL — live */}

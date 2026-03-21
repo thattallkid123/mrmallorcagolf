@@ -37,7 +37,7 @@ export default function GuidesIndex() {
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
           <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>More guides coming soon</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>I&apos;m working my way through every course on the island. Each guide is published after I&apos;ve played it — honest assessments, not brochures. Alcanada, best courses overview, green fees breakdown, and trip planning guides are all in progress.</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>I&apos;m working my way through every course on the island so there are lots more guides written and coming soon. Honest assessments, not brochures. Watch this space for Alcanada, best courses overview, green fees breakdown, and trip planning guides.</p>
         </div>
 
         {/* SON GUAL — live */}

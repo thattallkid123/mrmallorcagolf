@@ -10,7 +10,7 @@ export const metadata = {
 const testimonials = [
   { text: "Golfing with Andy was a superb experience. He has an unparalleled level of insight, and delivers it in a way that is both subtle and empathetic. I have felt suffocated by well-meaning coaches in the past, but Andy is a cut above. After just 18 holes together, I've discovered a new ceiling to my potential. His philosophy of prioritising the low-hanging fruit has given me clarity. What's more, his simple tips instantly transformed my putting.", author: 'Jo' },
   { text: "The thing I most enjoyed was how comfortable he made me feel on the course. The insight into what calculations go into each shot has helped me improve my decision making immensely. I would recommend the day to groups of friends, groups on holiday looking for an entertaining day out, or even a family looking to get involved in golf together.", author: 'Finlay' },
-  { text: "Andy completely changed how I think about course management. After 18 holes with him at Son Gual I shot my best score there and actually understood why. The whole day — from the briefing to the lunch — was exactly what a great golf day should be.", author: 'Adam' },
+  { text: "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough.", author: 'Adam' },
 ]
 
 export default function PlayWithAPro() {

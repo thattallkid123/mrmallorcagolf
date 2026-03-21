@@ -35,7 +35,7 @@ export default function GuidesIndex_SV() {
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
           <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Fler guider kommer snart</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Jag spelar för närvarande igenom varje golfbana på ön. Varje recension publiceras efter att ha spelat den — ärliga bedömningar, inga broschyrer. Alcanada, bästa banöversikten och reseplaneringsguider är alla under arbete.</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Jag spelar mig igenom varje golfbana på ön, så det finns många fler guider skrivna och kommer snart. Ärliga bedömningar, inga broschyrer. Håll utkik efter Alcanada, bästa banöversikten, greenavgiftsguide och reseplaneringsguider.</p>
         </div>
 
         {/* SON GUAL — live */}

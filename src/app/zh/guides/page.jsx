@@ -35,7 +35,7 @@ export default function GuidesIndex_ZH() {
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
           <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>更多指南即将上线</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>我正在逐一亲身体验岛上每一个高尔夫球场。每篇评测均在实际打球后发布 — 真实评价，绝非宣传手册。Alcanada评测、最佳球场综述及行程规划指南均在筹备中。</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>我正在逐一亲身体验岛上每个高尔夫球场，因此还有大量指南正在撰写中，即将陆续发布。真实评测，绝非宣传手册。敬请关注Alcanada评测、最佳球场综述、果岭费用详解及行程规划指南。</p>
         </div>
 
         {/* SON GUAL — live */}

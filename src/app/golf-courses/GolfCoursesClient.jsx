@@ -80,7 +80,7 @@ const REGION_HEADERS = {
 function CourseCard({ c }) {
   const isExternalLink = c.link.startsWith('http')
   return (
-    <div className={`course${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''} reveal`}>
+    <div className={`course${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`}>
       <div className="course__inner" style={{display:'flex',gap:20,alignItems:'flex-start'}}>
         <div style={{flex:1,minWidth:0}}>
           {c.badges.length > 0 && (
@@ -104,7 +104,7 @@ function CourseCard({ c }) {
           {c.note && <div className="course__note"><p>{c.note}</p></div>}
         </div>
         {c.img && (
-          <div style={{flexShrink:0,width:160,height:120,overflow:'hidden',borderRadius:2,background:'var(--linen)'}}>
+          <div style={{flexShrink:0,width:240,height:180,overflow:'hidden',background:'var(--linen)',margin:'-28px -28px 0 0',alignSelf:'flex-start'}}>
             <img src={c.img} alt={c.name} style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center'}} loading="lazy" />
           </div>
         )}

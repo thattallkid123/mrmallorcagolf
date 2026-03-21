@@ -35,7 +35,7 @@ export default function GuidesIndex_NL() {
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
           <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Meer gidsen komen binnenkort</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Ik speel momenteel elke golfbaan op het eiland. Elke recensie verschijnt na het gespeeld te hebben — eerlijke beoordelingen, geen brochures. Alcanada, het beste banoverzicht en reisplanningsgidsen zijn allemaal in voorbereiding.</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Ik speel momenteel door elke golfbaan op het eiland, dus er zijn nog veel meer gidsen geschreven en binnenkort beschikbaar. Eerlijke beoordelingen, geen brochures. Houd deze ruimte in de gaten voor Alcanada, het beste baanoverzicht, greenfee-overzicht en reisplanningsgidsen.</p>
         </div>
 
         {/* SON GUAL — live */}

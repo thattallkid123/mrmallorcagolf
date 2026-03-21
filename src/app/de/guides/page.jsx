@@ -35,7 +35,7 @@ export default function GuidesIndex_DE() {
         {/* COMING SOON — above the live guide */}
         <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
           <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Weitere Ratgeber folgen in Kürze</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Ich spiele mich derzeit durch jeden Golfplatz auf der Insel. Jede Bewertung folgt nach dem Spielen — ehrliche Einschätzungen, keine Broschüren. Alcanada, Überblick der besten Kurse und Reiseplanungsführer sind alle in Bearbeitung.</p>
+          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Ich spiele mich derzeit durch jeden Golfplatz auf der Insel durch, sodass noch viele weitere Reiseführer geschrieben werden und bald erscheinen. Ehrliche Bewertungen, keine Broschüren. Freuen Sie sich auf Alcanada, einen Überblick über die besten Plätze, Green-Fee-Informationen und Reiseplanungsführer.</p>
         </div>
 
         {/* SON GUAL — live */}

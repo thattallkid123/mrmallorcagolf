@@ -53,7 +53,7 @@ export default function Footer({ lang }) {
           <li><Link href={`${pre}/about`}>{c.about}</Link></li>
           <li><a href="https://www.instagram.com/mrmallorcagolf" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li><a href="https://www.youtube.com/@mrmallorcagolf" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-          <li><a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a></li>
+          <li><a href="mailto:andy@mrmallorcagolf.com">Email</a></li>
         </ul>
       </div>
 

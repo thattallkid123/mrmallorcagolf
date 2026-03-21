@@ -60,7 +60,8 @@ const courses = [
   },
 ]
 
-const WINNER_IMAGES = [
+const ADAM_TESTIMONIAL = "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough.";
+  const WINNER_IMAGES = [
   "/images/winners/012ce2fdc02bf1fef437a1d98c25be1540117c3805.jpg",
   "/images/winners/0134a9b7aac8ad0d0656f04a253c43088b7331ce8f.jpg",
   "/images/winners/013bf5d9686d01b02fce51ef1123c10b7450176d15.jpg",
@@ -98,7 +99,7 @@ const WINNER_IMAGES = [
   "/images/winners/2024_04_07_21_05_51.jpg",
   "/images/winners/2024_06_28_12_16_55.jpg",
   "/images/winners/2024_07_30_08_11_08.jpg",
-]
+];
 
 const faqs = [
   { q: 'Do I need to be a good golfer?', a: 'Not at all. The experience adjusts to your game — beginners and scratch players both get something from the day. The only requirement is wanting a genuinely different golfing experience.' },
@@ -400,6 +401,10 @@ export default function HomePageInner() {
           <div className="testimonial reveal reveal-delay-1">
             <p>&ldquo;The insight into what calculations go into each shot has helped me improve my decision making immensely. The moment that stood out was watching Andy hit a 3-iron 220 metres over a dog leg right with trees and stick it on the green. Amazing talent.&rdquo;</p>
             <span className="testimonial__author">— Finlay</span>
+          </div>
+          <div className="testimonial reveal reveal-delay-2">
+            <p>&ldquo;{ADAM_TESTIMONIAL}&rdquo;</p>
+            <span className="testimonial__author">— Adam</span>
           </div>
         </div>
       </section>
