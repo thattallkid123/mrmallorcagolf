@@ -203,7 +203,6 @@ const REGION_HEADERS = {
 }
 
 function CourseCard({ c }) {
-  const isExternalLink = c.link.startsWith('http')
   return (
     <div className={`course${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`}>
       {/* Mobile: image on top, full width, fixed height */}
@@ -243,10 +242,6 @@ function CourseCard({ c }) {
       </div>
       <div className="course__footer">
         <span className="course__footer-info">{c.footer}</span>
-        {isExternalLink
-          ? <a href={c.link} className="course__link" target="_blank" rel="noopener noreferrer">{c.linkText}</a>
-          : <Link href={c.link} className="course__link">{c.linkText}</Link>
-        }
       </div>
     </div>
   )
