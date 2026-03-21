@@ -372,11 +372,23 @@ body {
 }
 
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
-@media (max-width: 768px) {
+/* ─── NAV RESPONSIVE ─────────────────────────────────────── */
+/* Below 1300px: tighten gaps so nav doesn't squash */
+@media (max-width: 1300px) {
   .nav { padding: 0 24px; }
+  .nav__links { gap: 1.25rem; }
+  .nav__lang { margin-left: 0.75rem; gap: 4px; }
+  .nav__cta { padding: 9px 16px; }
+}
+/* Below 1100px: switch to hamburger */
+@media (max-width: 1100px) {
   .nav__links, .nav__lang { display: none; }
   .nav__hamburger { display: flex; }
   .nav__mobile { padding: 24px 24px 28px; }
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 0 20px; }
 
   .footer {
     grid-template-columns: 1fr;
@@ -467,11 +479,11 @@ body {
 .course-card:hover { transform: translateY(-4px); }
 .course-card__bg { position: absolute; inset: 0; transition: transform 0.6s ease; }
 .course-card:hover .course-card__bg { transform: scale(1.04); }
-.course-card--1 .course-card__bg { background-image: url('/images/son-gual.jpg'); background-size: cover; background-position: center; }
-.course-card--2 .course-card__bg { background-image: url('/images/alcanada.jpg'); background-size: cover; background-position: center 40%; }
-.course-card--3 .course-card__bg { background-image: url('/images/son-muntaner.webp'); background-size: cover; background-position: center; }
-.course-card--4 .course-card__bg { background-image: url('/images/santa-ponsa.webp'); background-size: cover; background-position: center; }
-.course-card--5 .course-card__bg { background-image: url('/images/andratx.webp'); background-size: cover; background-position: center; }
+.course-card--1 .course-card__bg { background: linear-gradient(160deg, #2D4A3E 0%, #4A7A5A 50%, #8AA68A 100%); }
+.course-card--2 .course-card__bg { background: linear-gradient(160deg, #1A3A5C 0%, #2A6080 50%, #5A9AB0 100%); }
+.course-card--3 .course-card__bg { background: linear-gradient(160deg, #3D2A1A 0%, #6A4A2A 50%, #9A7A5A 100%); }
+.course-card--4 .course-card__bg { background: linear-gradient(160deg, #2A3A2A 0%, #4A6A4A 50%, #7A9A7A 100%); }
+.course-card--5 .course-card__bg { background: linear-gradient(160deg, #1A1A3A 0%, #2A3A6A 50%, #5A6A9A 100%); }
 .course-card__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,18,14,0.88) 0%, rgba(20,18,14,0.2) 55%, transparent 80%); }
 .course-card__badge { position: absolute; top: 20px; left: 20px; background: var(--gold); color: var(--deep); font-size: 8px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; padding: 5px 10px; font-family: 'Jost', sans-serif; }
 .course-card__content { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 26px; }
@@ -481,8 +493,8 @@ body {
 .course-card__meta span { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
 .course-card__stars { color: var(--gold-light); font-size: 11px; letter-spacing: 1px; }
 .course-card__rating-label { font-size: 9px; color: rgba(255,255,255,0.45); }
-.course-card__excerpt { font-size: 0.82rem; font-weight: 300; color: rgba(255,255,255,0.62); line-height: 1.65; max-height: 0; overflow: hidden; transition: max-height 0.4s ease, opacity 0.3s ease; opacity: 0; }
-.course-card:hover .course-card__excerpt { max-height: 80px; opacity: 1; }
+.course-card__excerpt { font-size: 0.82rem; font-weight: 300; color: rgba(255,255,255,0.75); line-height: 1.65; }
+.course-card__excerpt--visible { display: block; }
 
 .what { background: var(--cream); padding: 100px 40px; display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: start; }
 .what__left p { font-size: 1rem; line-height: 1.9; color: var(--charcoal); margin-bottom: 1.4rem; font-weight: 300; }
