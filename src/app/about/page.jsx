@@ -5,7 +5,7 @@ import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
 const credentials = [
-  { title: 'PGA Advanced Professional (UK)', detail: 'The highest qualification in UK golf coaching' },
+  { title: 'UK PGA Advanced Professional', detail: 'One of the highest professional qualifications in UK golf' },
   { title: 'Applied Golf Management', detail: 'University of Birmingham' },
   { title: 'TPI Level 3 Certified', detail: 'Titleist Performance Institute' },
   { title: 'Trackman Master Certified', detail: 'First in China' },

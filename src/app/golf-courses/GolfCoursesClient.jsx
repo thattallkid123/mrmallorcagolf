@@ -210,9 +210,9 @@ export default function GolfCoursesClient() {
 
         <aside className="page-sidebar">
           <div className="sidebar-card">
-            <h3>Play one of these courses with a PGA professional alongside you</h3>
-            <p>Private round, everything arranged, on-course coaching throughout. Son Gual and Alcanada are my primary venues.</p>
-            <Link href="/play-with-a-pro" className="sidebar-btn">See the Experiences &rarr;</Link>
+            <h3>Want to play one of these courses with a PGA professional alongside you?</h3>
+            <p>Private round, everything arranged, on-course coaching throughout. Son Gual and Alcanada are the primary venues.</p>
+            <Link href="/contact" className="sidebar-btn">Get in touch &rarr;</Link>
           </div>
           <div className="sidebar-card sidebar-card--cream">
             <h3 style={{fontSize:'1rem'}}>Quick picks</h3>

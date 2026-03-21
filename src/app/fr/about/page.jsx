@@ -17,7 +17,7 @@ export default function About_FR() {
           <p className="breadcrumb"><Link href="/fr">Accueil</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Ã€ propos</span></p>
           <h1>Le Professionnel<br />derriÃ¨re l'ExpÃ©rience.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
-            <span className="cred-tag cred-tag--gold">PGA Advanced Professional</span>
+            <span className="cred-tag cred-tag--gold">UK PGA Advanced Professional</span>
             <span className="cred-tag">Trackman Master</span>
             <span className="cred-tag">TPI Level 3</span>
             <span className="cred-tag">Mallorca</span>
@@ -55,7 +55,7 @@ export default function About_FR() {
           <div className="creds reveal">
             <p className="creds__label">Qualifications</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>PGA Advanced Professional (UK)</strong>La qualification la plus Ã©levÃ©e du golf britannique</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional</strong>La qualification la plus Ã©levÃ©e du golf britannique</span></li>
               <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management</strong>UniversitÃ© de Birmingham</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>CertifiÃ© TPI Niveau 3</strong>Titleist Performance Institute</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>CertifiÃ© Trackman Master</strong>Premier en Chine</span></li>

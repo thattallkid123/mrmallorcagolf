@@ -139,7 +139,7 @@ export default function HomePageInner() {
           {/* <img src="/images/hero.jpg" alt="Andy Griffiths on a Mallorca fairway" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',objectPosition:'center 30%'}} /> */}
         </div>
         <div className="hero__content">
-          <p className="hero__eyebrow">PGA Advanced Professional · Mallorca</p>
+          <p className="hero__eyebrow">UK PGA Advanced Professional · Mallorca</p>
           <h1 className="serif-display hero__title">
             Play Mallorca&apos;s<br />Best Courses.<br />
             <em style={{fontStyle:'italic',fontWeight:400,opacity:0.85}}>With a Pro by Your Side.</em>
@@ -147,7 +147,7 @@ export default function HomePageInner() {
           {/* Sub-headline removed — headline is strong enough alone */}
           <div className="hero__actions">
             <Link href="/contact" className="btn btn--gold">Book Your Day</Link>
-            <a href="#courses" className="btn btn--outline-white" style={{fontSize:'0.85rem',opacity:0.7}}>Explore Courses</a>
+            <a href="#courses" className="btn btn--outline-white">Explore Courses</a>
           </div>
         </div>
         <div className="hero__trust">
@@ -220,10 +220,10 @@ export default function HomePageInner() {
 
       {/* WHY MALLORCA */}
       <section style={{background:'var(--deep)',padding:'clamp(60px,8vw,96px) clamp(20px,5vw,60px)'}}>
-        <div style={{maxWidth:1200,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:'clamp(40px,6vw,80px)',alignItems:'center'}}>
+        <div style={{maxWidth:1200,margin:'0 auto',display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'clamp(40px,6vw,80px)',alignItems:'center'}}>
           <div className="reveal">
             <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>Why Mallorca</p>
-            <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.8rem,3vw,2.6rem)',marginBottom:'1.5rem'}}>Mallorca has European Tour-standard courses. Many visitors play a few and wonder what they missed.</h2>
+            <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>Mallorca has European Tour-standard courses. Many visitors play a few and wonder what they missed.</h2>
             <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>Most of Europe's best golf courses close in winter. Mallorca doesn't. In January, when courses in England are sodden and shuttered, Son Gual's fairways are immaculate and the first tee is empty. October through April is the sweet spot — lower green fees, quieter courses, conditions that would shame a summer round anywhere else.</p>
             <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>Twenty-two courses within an hour's drive. Several have hosted the DP World Tour, the Rolex Challenge Tour Grand Final, and attracted design commissions from Robert Trent Jones Jr. and Jack Nicklaus. This is not an island that happened to have some golf. It's a serious destination that most visitors never explore properly.</p>
           </div>
@@ -309,35 +309,13 @@ export default function HomePageInner() {
         </div>
       </section>
 
-      {/* CAREER STRIP — venue scroll */}
+      {/* CAREER STRIP */}
       <CareerStrip />
 
-      {/* TESTIMONIALS */}
-      <section className="testimonials">
-        <div className="testimonials__header reveal">
-          <p className="eyebrow" style={{color:'rgba(255,255,255,0.35)'}}>What golfers say</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>In their own words.</h2>
-        </div>
-        <div className="testimonials__grid">
-          <div className="testimonial reveal">
-            <p>&ldquo;Golfing with Andy was a superb experience. He has an unparalleled level of insight, and delivers it in a way that is both subtle and empathetic. I have felt suffocated by well-meaning coaches in the past, but Andy is a cut above. After just 18 holes together, I&apos;ve discovered a new ceiling to my potential.&rdquo;</p>
-            <span className="testimonial__author">— Jo</span>
-          </div>
-          <div className="testimonial reveal reveal-delay-1">
-            <p>&ldquo;The insight into what calculations go into each shot has helped me improve my decision making immensely. The moment that stood out was watching Andy hit a 3-iron 220 metres over a dog leg right with trees and stick it on the green. Amazing talent.&rdquo;</p>
-            <span className="testimonial__author">— Finlay</span>
-          </div>
-          <div className="testimonial reveal reveal-delay-2">
-            <p>&ldquo;{ADAM_TESTIMONIAL}&rdquo;</p>
-            <span className="testimonial__author">— Adam</span>
-          </div>
-        </div>
-      </section>
-
-      {/* JO PULL QUOTE — before packages */}
+      {/* JO PULL QUOTE */}
       <section style={{background:'var(--pine)',padding:'clamp(48px,6vw,72px) clamp(20px,5vw,60px)'}}>
-        <div style={{maxWidth:860,margin:'0 auto',textAlign:'center'}}>
-          <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.4rem,3vw,2.2rem)',fontStyle:'italic',fontWeight:400,color:'#fff',lineHeight:1.4,marginBottom:'1.25rem'}}>
+        <div style={{maxWidth:720,margin:'0 auto',textAlign:'center'}}>
+          <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.3rem,2.5vw,1.9rem)',fontStyle:'italic',fontWeight:400,color:'#fff',lineHeight:1.45,marginBottom:'1.25rem'}}>
             &ldquo;After just 18 holes together, I&apos;ve discovered a new ceiling to my potential.&rdquo;
           </p>
           <p style={{fontSize:'9px',letterSpacing:'.18em',textTransform:'uppercase',color:'var(--gold-light)',fontFamily:"'Jost',sans-serif"}}>— Jo, after a day at Son Gual</p>

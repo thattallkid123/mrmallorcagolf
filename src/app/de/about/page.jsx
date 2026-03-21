@@ -9,7 +9,7 @@ export const metadata = {
 }
 
 const credentials = [
-  { title: 'PGA Advanced Professional (UK)', detail: 'Die höchste Qualifikation im britischen Golfcoaching' },
+  { title: 'UK PGA Advanced Professional', detail: 'Eine der höchsten Berufsqualifikationen im britischen Golf' },
   { title: 'Applied Golf Management', detail: 'University of Birmingham' },
   { title: 'TPI Level 3 zertifiziert', detail: 'Titleist Performance Institute' },
   { title: 'Trackman Master zertifiziert', detail: 'Erster in China' },
@@ -38,7 +38,7 @@ export default function AboutDE() {
           <p className="breadcrumb"><Link href="/de">Start</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Über Andy</span></p>
           <h1>Der Profi<br />hinter dem Erlebnis.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
-            <span className="cred-tag cred-tag--gold">PGA Advanced Professional</span>
+            <span className="cred-tag cred-tag--gold">UK PGA Advanced Professional</span>
             <span className="cred-tag">Trackman Master zertifiziert</span>
             <span className="cred-tag">TPI Level 3</span>
             <span className="cred-tag">Auf Mallorca ansässig</span>

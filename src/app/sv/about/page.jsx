@@ -17,7 +17,7 @@ export default function About_SV() {
           <p className="breadcrumb"><Link href="/sv">Start</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Om Andy</span></p>
           <h1>Proffset<br />bakom Upplevelsen.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
-            <span className="cred-tag cred-tag--gold">PGA Advanced Professional</span>
+            <span className="cred-tag cred-tag--gold">UK PGA Advanced Professional</span>
             <span className="cred-tag">Trackman Master</span>
             <span className="cred-tag">TPI Level 3</span>
             <span className="cred-tag">Mallorca</span>
@@ -55,7 +55,7 @@ export default function About_SV() {
           <div className="creds reveal">
             <p className="creds__label">Meriter</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>PGA Advanced Professional (UK)</strong>Den högsta kvalifikationen inom brittisk golfcoaching</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional</strong>Den högsta kvalifikationen inom brittisk golfcoaching</span></li>
               <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management</strong>University of Birmingham</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>TPI Nivå 3 certifierad</strong>Titleist Performance Institute</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Trackman Master certifierad</strong>Först i Kina</span></li>

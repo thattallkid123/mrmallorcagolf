@@ -8,11 +8,23 @@ export const metadata = {
   alternates: { canonical: 'https://mrmallorcagolf.com/guides' },
 }
 
+const guides = [
+  { slug: 'son-gual-review', badge: 'Course Review', badgeGold: true, title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)", intro: "My most-played course on the island. The wind, the greens, the closing stretch — and why Obama and Nadal both keep coming back.", readTime: '7 min read', keywords: 'Championship · Par 72 · €80–165 · Handicap required' },
+  { slug: 'a-day-at-son-gual', badge: 'The Experience', badgeGold: true, title: "A Day at Son Gual — What the Play-With-a-Pro Experience Actually Looks Like", intro: "From the drive up to the last putt to lunch on the terrace. What actually happens on a play-with-a-pro day.", readTime: '4 min read', keywords: 'Play with a Pro · Son Gual · What to expect' },
+  { slug: 'alcanada-review', badge: 'Course Review', badgeGold: true, title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)", intro: "The course I take people to when I want them to come home with a story. The lighthouse changes everything.", readTime: '7 min read', keywords: 'Coastal · Par 72 · €115–220 · Rolex Challenge Tour Grand Final' },
+  { slug: 'santa-ponsa-1-review', badge: 'Course Review', badgeGold: true, title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional's Honest Review (2026)", intro: "One of Europe's longest courses, DP World Tour history, and a course that genuinely helps you rediscover your driver.", readTime: '6 min read', keywords: 'Championship · Par 72 · €77–126 · Public access' },
+  { slug: 'best-golf-courses-mallorca', badge: 'Course Guide', badgeGold: true, title: "The Best Golf Courses in Mallorca — Honest Guide (2026)", intro: "Mallorca has more outstanding golf than most visitors realise. Twenty-two courses, several of genuine European Tour standard.", readTime: '8 min read', keywords: 'Son Gual · Alcanada · Son Muntaner · Golf de Andratx' },
+  { slug: 'is-mallorca-good-for-golf', badge: 'Overview', badgeGold: false, title: "Is Mallorca Good for Golf? A PGA Professional's Answer", intro: "Yes. But here's the proper answer — because Mallorca is good for golf in ways that aren't obvious from the outside.", readTime: '6 min read', keywords: 'World-class courses · Year-round · 22 courses · Beyond golf' },
+  { slug: 'best-time-play-golf-mallorca', badge: 'When to Visit', badgeGold: false, title: 'The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)', intro: "Short answer: October–November and February–April. But the island plays better year-round than most people expect.", readTime: '4 min read', keywords: 'Season guide · Month by month · Green fee timing' },
+  { slug: 'golf-cost-mallorca', badge: 'Green Fees', badgeGold: false, title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown', intro: "A round can cost €20 or €220 depending on where you play and when. Honest breakdown from someone who plays here most weeks.", readTime: '5 min read', keywords: 'Green fees · Club hire · Buggies · Full day costs' },
+  { slug: 'golf-trip-planning-mallorca', badge: 'Trip Planning', badgeGold: false, title: 'How to Plan the Perfect Golf Trip to Mallorca', intro: "No tourism copy, no padding. Which courses, when to go, how many rounds, getting around — from someone who lives here.", readTime: '7 min read', keywords: 'When to visit · Courses · Transport · What to do' },
+  { slug: 'golf-club-hire-mallorca', badge: 'Practical Guide', badgeGold: false, title: 'Golf Club Hire in Mallorca — Everything You Need to Know (2026)', intro: "Should you bring your own clubs or hire? Which companies are worth using and which to avoid.", readTime: '6 min read', keywords: 'Hire companies · Prices · Course pro shops · Tips' },
+]
+
 export default function GuidesIndex() {
   return (
     <PageLayout>
       <RevealObserver />
-
       <header className="page-hero">
         <div className="page-hero__inner">
           <p className="breadcrumb">
@@ -33,46 +45,30 @@ export default function GuidesIndex() {
       </header>
 
       <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
-
-        {/* COMING SOON — above the live guides */}
-        <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
-          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>More guides coming soon</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>I&apos;m working my way through every course on the island so there are lots more guides written and coming soon. Honest assessments, not brochures. Watch this space for best courses overview, green fees breakdown, and trip planning guides.</p>
+        <div style={{display:'flex',flexDirection:'column',gap:'2px'}}>
+          {guides.map((g) => (
+            <Link key={g.slug} href={`/guides/${g.slug}`} className="reveal"
+              style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+              <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+                <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:g.badgeGold?'rgba(184,151,60,.12)':'rgba(45,74,62,.07)',color:g.badgeGold?'var(--gold)':'var(--taupe)',border:`1px solid ${g.badgeGold?'rgba(184,151,60,.25)':'var(--linen)'}`,flexShrink:0,alignSelf:'center'}}>
+                  {g.badge}
+                </span>
+                <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>
+                  {g.readTime}
+                </span>
+              </div>
+              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
+                {g.title}
+              </h2>
+              <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>
+                {g.intro}
+              </p>
+              <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>
+                {g.keywords}
+              </p>
+            </Link>
+          ))}
         </div>
-
-        {/* SON GUAL — live */}
-        <Link href="/guides/son-gual-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Course Review</span>
-            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>7 min read</span>
-          </div>
-          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Son Gual Golf Mallorca — A PGA Professional&apos;s Honest Review (2026)</h2>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>My most-played course on the island. The wind, the greens, the closing stretch — and why Obama and Nadal both keep coming back.</p>
-          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Championship · Par 72 · €80–165 · Handicap required</p>
-        </Link>
-
-        {/* ALCANADA — live */}
-        <Link href="/guides/alcanada-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Course Review</span>
-            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>7 min read</span>
-          </div>
-          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Club de Golf Alcanada — A PGA Professional&apos;s Honest Review (2026)</h2>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>The course I take people to when I want them to come home with a story. The lighthouse changes everything.</p>
-          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Coastal · Par 72 · €115–220 · Rolex Challenge Tour Grand Final</p>
-        </Link>
-
-        {/* SANTA PONSA 1 — live */}
-        <Link href="/guides/santa-ponsa-1-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Course Review</span>
-            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>6 min read</span>
-          </div>
-          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Golf Santa Ponsa 1, Mallorca — A PGA Professional&apos;s Honest Review (2026)</h2>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>One of Europe&apos;s longest courses, DP World Tour history, and a course that genuinely helps you rediscover your driver.</p>
-          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Championship · Par 72 · €77–126 · Public access</p>
-        </Link>
-
       </section>
 
       <section className="cta-final">
@@ -82,7 +78,7 @@ export default function GuidesIndex() {
           <p>Tell me your dates and what you&apos;re looking for. I&apos;ll come back personally within 24 hours.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>See the Experiences →</Link>
+          <Link href="/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>See the Experiences &rarr;</Link>
           <Link href="/contact" className="btn btn--outline-white">Get in Touch</Link>
         </div>
       </section>

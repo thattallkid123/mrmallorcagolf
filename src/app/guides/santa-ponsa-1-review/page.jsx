@@ -39,7 +39,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-hero.jpg"
           alt="Golf Santa Ponsa 1 — water reflection and fairway"
-          caption="Santa Ponsa 1. The lake on the approach to the 10th is the signature shot on the course."
+          caption="The 16th green. The lake comes into play on the approach and focuses the mind considerably."
         />
 
         <p>Santa Ponsa 1 is the only public course in the Santa Ponsa group and the one with genuine European Tour pedigree — it hosted the 2021 DP World Tour Mallorca Golf Open. This is the course that brought top-level professional golf back to the island after a decade away. The winner, Jeff Winther, shot 62 twice in the opening rounds. The course was ready for it.</p>
@@ -51,7 +51,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-1.jpg"
           alt="Santa Ponsa 1 fairway with mountains behind"
-          caption="The fairways are genuinely wide here. The driver stays in the bag at Son Gual — not at Santa Ponsa 1."
+          caption="The fairways are genuinely wide. This is a course that invites the driver."
         />
 
         <h2>The 10th Hole</h2>
@@ -69,7 +69,7 @@ export default function Post() {
         <PostImage
           src="/images/santa-ponsa-blog/sp-3.jpg"
           alt="Santa Ponsa 1 approach to a par 3"
-          caption="The par-3s are the honest part of the card. Long, small greens, nowhere to hide."
+          caption="The Tramuntana mountains behind. Holes 5, 6 and 7 have the best of the mountain views."
         />
 
         <h2>The Mountain Views</h2>

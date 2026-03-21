@@ -51,7 +51,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-6.jpg"
           alt="Client hitting a tee shot at Alcanada with lighthouse in the background"
-          caption="The lighthouse behind, the sea to the left, the fairway dropping away ahead. Every tee shot here feels significant."
+          caption="The lighthouse behind, the sea to the left, the fairway dropping away ahead."
         />
 
         <h2>The Back Tees</h2>
@@ -64,7 +64,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-2.jpg"
           alt="Alcanada green with sea and mountains visible behind"
-          caption="On the practice green before the round. On a clear morning you can see the Tramuntana mountains across the bay."
+          caption="On a clear morning you can see the Tramuntana mountains across the bay."
         />
 
         <h2>The Greens</h2>
@@ -74,7 +74,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-5.jpg"
           alt="Golfers at Alcanada with the Mediterranean behind"
-          caption="You can just make out the lighthouse behind the trees. It follows you around the course."
+          caption="The back tees at Alcanada are elevated well above the fairway. The walk up is worth it every time."
         />
 
         <h2>The Rolex Challenge Tour Grand Final</h2>
@@ -113,7 +113,7 @@ export default function Post() {
         <PostImage
           src="/images/alcanada-blog/alc-hero.jpg"
           alt="Alcanada clubhouse terrace"
-          caption="The clubhouse terrace. Post-round lunch here is non-negotiable."
+          caption="The clubhouse terrace."
         />
 
         <h2>Verdict</h2>

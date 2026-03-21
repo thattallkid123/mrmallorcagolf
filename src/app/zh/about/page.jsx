@@ -17,7 +17,7 @@ export default function About_ZH() {
           <p className="breadcrumb"><Link href="/zh">首页</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>关于Andy</span></p>
           <h1>幕后职业球手。</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
-            <span className="cred-tag cred-tag--gold">PGA Advanced Professional</span>
+            <span className="cred-tag cred-tag--gold">英国PGA高级职业教练</span>
             <span className="cred-tag">Trackman Master</span>
             <span className="cred-tag">TPI Level 3</span>
             <span className="cred-tag">Mallorca</span>
@@ -55,7 +55,7 @@ export default function About_ZH() {
           <div className="creds reveal">
             <p className="creds__label">资质认证</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>PGA高级职业教练（英国）</strong>英国高尔夫教练最高资质</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>英国PGA高级职业教练</strong>英国高尔夫职业资质最高级别之一</span></li>
               <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>高尔夫管理学学士</strong>伯明翰大学</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>TPI三级认证</strong>Titleist表现学院</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Trackman大师认证</strong>中国首位</span></li>
@@ -90,7 +90,7 @@ export default function About_ZH() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">准备好了吗？</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>PGA高级职业教练。卓越的高尔夫之岛。您的球局。</h2>
+          <h2 className="serif-display" style={{color:'#fff'}}>英国PGA高级职业教练。卓越的高尔夫之岛。您的球局。</h2>
           <p>告诉我您的日期、差点和期望。我将围绕您来规划这一天。</p>
         </div>
         <div className="cta-final__right reveal">

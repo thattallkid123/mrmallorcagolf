@@ -70,12 +70,12 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-swing.jpg"
           alt="Client hitting a tee shot at Son Gual"
-          caption="The open stretches on the front nine. The driver comes out here. Whether that was the right call is a different matter."
+          caption="There are plenty of holes where the driver comes out. When the wind is behind you it's as good as it gets. When it's not, you plan differently."
         />
 
         <h2>The Greens</h2>
         <p>Fast, raised, and unforgiving of poor approach play. In January, the greens and fringe were so tightly mown it was remarkable for that time of year. Great for spin production, uncomfortable when looking at a tight chip with a small landing area.</p>
-        <p>One of my playing partners that day — a former student from China — reached for her putter believing she was on the green. She had about 30 yards of fringe still to cover. The conditioning is that meticulous.</p>
+        <p>One of my playing partners that day — a student visiting Mallorca from China — reached for her putter believing she was on the green. She had about 30 yards of fringe still to cover. The conditioning is that meticulous.</p>
 
         <PostImage
           src="/images/son-gual-blog/sg-2.jpg"
@@ -89,19 +89,19 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-3.webp"
           alt="Son Gual closing stretch"
-          caption="Holes 15 to 18. The closing stretch. Among the finest four holes in European golf — I'd stand by that."
+          caption="The 18th. The closing stretch — holes 15 to 18 — is among the finest four holes in European golf. I'd stand by that."
         />
 
         <PostImage
           src="/images/son-gual-blog/sg-plane.jpg"
           alt="Plane coming into Palma airport over Son Gual golf course"
-          caption="The planes on final approach into Palma pass directly overhead. Son Gual is 11km from the city."
+          caption="The Bay of Palma from the higher holes. Holes 8 to 12 have the best of the views."
         />
 
         <PostImage
           src="/images/son-gual-blog/sg-4.jpg"
           alt="Son Gual panoramic view across Palma"
-          caption="The Bay of Palma from the higher holes. Best between 8 and 12."
+          caption="The Tramuntana mountains behind the course. This is what the backdrop looks like from the higher holes."
         />
 
         <h2>Notable Visitors</h2>
@@ -110,7 +110,7 @@ export default function Post() {
         <PostImage
           src="/images/son-gual-blog/sg-5.jpg"
           alt="Son Gual course detail"
-          caption="January fairways. The fringe is mown so tight that one of my playing partners reached for her putter with 30 yards still to go."
+          caption="The 10th tee, right in front of the clubhouse. The par-5 stretches out ahead of you."
         />
 
         <div className="post-fact">

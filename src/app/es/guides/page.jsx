@@ -3,84 +3,82 @@ import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Guía de Golf Mallorca — Reseñas de Campos y Consejos',
-  description: 'Guías honestas sobre el golf en Mallorca por un PGA profesional. Reseñas de campos, green fees y planificación de viaje — actualizado 2026.',
+  title: 'Guía de Golf en Mallorca — Análisis de campos y consejos',
+  description: 'Guías honestas de golf en Mallorca de un Profesional PGA. Análisis de campos, green fees y planificación de viajes — actualizadas para 2026.',
   alternates: { canonical: 'https://mrmallorcagolf.com/es/guides' },
 }
+
+const guides = [
+  { slug: 'son-gual-review', badge: 'Análisis del campo', badgeGold: true, title: 'Son Gual Golf Mallorca — Análisis honesto de un Profesional PGA (2026)', intro: 'Mi campo más jugado en la isla. El viento, los greens, los últimos hoyos — y por qué Obama y Nadal siguen volviendo.', readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap requerido' },
+  { slug: 'alcanada-review', badge: 'Análisis del campo', badgeGold: true, title: 'Club de Golf Alcanada — Análisis honesto de un Profesional PGA (2026)', intro: 'El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia. El faro lo cambia todo.', readTime: '7 min', keywords: 'Costa · Par 72 · €115–220 · Rolex Challenge Tour Grand Final' },
+  { slug: 'santa-ponsa-1-review', badge: 'Análisis del campo', badgeGold: true, title: 'Golf Santa Ponsa 1, Mallorca — Análisis honesto de un Profesional PGA (2026)', intro: 'Uno de los campos más largos de Europa, historia en el DP World Tour y un campo que genuinamente ayuda a recuperar la confianza con el driver.', readTime: '6 min', keywords: 'Championship · Par 72 · €77–126 · Acceso público' },
+  { slug: 'best-golf-courses-mallorca', badge: 'Guía de campos', badgeGold: true, title: 'Los Mejores Campos de Golf en Mallorca — Guía honesta (2026)', intro: 'Mallorca tiene más golf de calidad de lo que la mayoría de los visitantes imagina. Veintidós campos, varios de estándar de Tour europeo.', readTime: '8 min', keywords: 'Son Gual · Alcanada · Son Muntaner · Golf de Andratx' },
+  { slug: 'is-mallorca-good-for-golf', badge: 'Resumen', badgeGold: false, title: '¿Es Mallorca un buen destino para el golf? Respuesta de un Profesional PGA', intro: 'Sí. Pero aquí va la respuesta completa — porque Mallorca es buena para el golf de maneras que no son evidentes desde fuera.', readTime: '6 min', keywords: 'Campos de primer nivel · Todo el año · 22 campos · Más allá del golf' },
+  { slug: 'best-time-play-golf-mallorca', badge: 'Cuándo ir', badgeGold: false, title: 'La Mejor Época para Jugar al Golf en Mallorca — Mes a mes (2026)', intro: 'Respuesta corta: octubre–noviembre y febrero–abril. Pero la isla juega mejor todo el año de lo que mucha gente espera.', readTime: '4 min', keywords: 'Guía de temporada · Mes a mes · Timing de green fees' },
+  { slug: 'golf-cost-mallorca', badge: 'Green fees', badgeGold: false, title: '¿Cuánto Cuesta el Golf en Mallorca? Desglose completo 2026', intro: 'Una ronda puede costar €20 o €220 según dónde juegues y cuándo. Desglose honesto de alguien que juega aquí casi cada semana.', readTime: '5 min', keywords: 'Green fees · Alquiler de palos · Buggies · Costes de un día completo' },
+  { slug: 'golf-trip-planning-mallorca', badge: 'Planificación del viaje', badgeGold: false, title: 'Cómo Planificar el Viaje de Golf Perfecto a Mallorca', intro: 'Sin texto turístico, sin relleno. Qué campos, cuándo ir, cuántas rondas, cómo moverse — de alguien que vive aquí.', readTime: '7 min', keywords: 'Cuándo visitar · Campos · Transporte · Qué hacer' },
+  { slug: 'golf-club-hire-mallorca', badge: 'Guía práctica', badgeGold: false, title: 'Alquiler de Palos de Golf en Mallorca — Todo lo que necesitas saber (2026)', intro: '¿Llevar tus propios palos o alquilarlos? Qué empresas merecen la pena y cuáles evitar.', readTime: '6 min', keywords: 'Empresas de alquiler · Precios · Pro shops · Consejos' },
+]
 
 export default function GuidesIndex_ES() {
   return (
     <PageLayout lang="es">
       <RevealObserver />
-
       <header className="page-hero">
         <div className="page-hero__inner">
           <p className="breadcrumb">
             <a href="/es" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>ES</a>
             {' '}&nbsp;/&nbsp;{' '}
-            <span style={{color:'var(--gold-light)'}}>Guías</span>
+            <span style={{color:'var(--gold-light)'}}>2026</span>
           </p>
-          <h1>Golf en Mallorca.<br />Guías Honestas.</h1>
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>Reseñas de campos, planificación de viajes y green fees — escritas por un PGA profesional que juega aquí cada semana.</p>
+          <h1 dangerouslySetInnerHTML={{__html: 'Golf en Mallorca.<br />Guías honestas.'}} />
+          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+            Análisis de campos, planificación de viajes y green fees — escritas por un Profesional PGA que juega aquí cada semana.
+          </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
             <span className="page-hero__tag">Actualizado 2026</span>
-            <span className="page-hero__tag page-hero__tag--gold">★ Reseñas de primera mano</span>
-            <span className="page-hero__tag">PGA Profesional</span>
+            <span className="page-hero__tag page-hero__tag--gold">★ Análisis de primera mano</span>
+            <span className="page-hero__tag">Profesional PGA</span>
           </div>
         </div>
       </header>
 
       <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
-
-        {/* COMING SOON — above the live guide */}
-        <div style={{marginBottom:'2px',padding:'20px 24px',background:'var(--cream)',border:'1px solid var(--linen)',borderBottom:'none'}}>
-          <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:'0.5rem'}}>Más guías próximamente</p>
-          <p style={{fontSize:'0.9rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0}}>Estoy recorriendo todos los campos de la isla, así que hay muchas más guías en camino. Evaluaciones honestas, no folletos. Próximamente: resumen de los mejores campos, desglose de green fees y planificación de viajes.</p>
+        <div style={{display:'flex',flexDirection:'column',gap:'2px'}}>
+          {guides.map((g) => (
+            <Link key={g.slug} href={`/es/guides/${g.slug}`} className="reveal"
+              style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+              <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+                <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:g.badgeGold?'rgba(184,151,60,.12)':'rgba(45,74,62,.07)',color:g.badgeGold?'var(--gold)':'var(--taupe)',border:`1px solid ${g.badgeGold?'rgba(184,151,60,.25)':'var(--linen)'}`,flexShrink:0,alignSelf:'center'}}>
+                  {g.badge}
+                </span>
+                <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>
+                  {g.readTime}
+                </span>
+              </div>
+              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
+                {g.title}
+              </h2>
+              <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>
+                {g.intro}
+              </p>
+              <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>
+                {g.keywords}
+              </p>
+            </Link>
+          ))}
         </div>
-
-        {/* SON GUAL — live */}
-        <Link href="/es/guides/son-gual-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Reseña del Campo</span>
-            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>6 min</span>
-          </div>
-          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Son Gual Golf Mallorca — Reseña Honesta de un Profesional PGA (2026)</h2>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Mi campo más jugado en la isla. El viento, los greens, los últimos hoyos — y por qué Obama y Nadal siguen volviendo.</p>
-          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Campeonato · Par 72 · €80–165 · Hándicap requerido</p>
-        </Link>
-
-        {/* ALCANADA-REVIEW — live */}
-        <Link href="/es/guides/alcanada-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Análisis del campo</span>
-            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>7 min</span>
-          </div>
-          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Club de Golf Alcanada — Análisis honesto de un Profesional PGA (2026)</h2>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia que contar. El faro lo cambia todo.</p>
-          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Costa · Par 72 · €115–220 · Rolex Challenge Tour Grand Final</p>
-        </Link>
-        {/* SANTA-PONSA-1-REVIEW — live */}
-        <Link href="/es/guides/santa-ponsa-1-review" className="reveal" style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-          <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-            <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>Análisis del campo</span>
-            <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>6 min</span>
-          </div>
-          <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>Golf Santa Ponsa 1, Mallorca — Análisis honesto de un Profesional PGA (2026)</h2>
-          <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>Uno de los campos más largos de Europa, historia en el DP World Tour y un recorrido que genuinamente ayuda a recuperar la confianza con el driver.</p>
-          <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>Championship · Par 72 · €77–126 · Acceso público</p>
-        </Link>
-
       </section>
 
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">¿Listo para jugar?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>Una ronda privada en uno de estos campos con un PGA profesional a su lado.</h2>
-          <p>Dígame sus fechas y lo que busca. Le respondo personalmente en 24 horas.</p>
+          <h2 className="serif-display" style={{color:'#fff'}}>Una ronda privada en uno de estos campos, con un Profesional PGA a tu lado.</h2>
+          <p>Dime tus fechas y lo que buscas. Te respondo personalmente en 24 horas.</p>
         </div>
         <div className="cta-final__right reveal">
           <Link href="/es/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Ver las experiencias →</Link>
-          <Link href="/es/contact" className="btn btn--outline-white">Ponerse en contacto</Link>
+          <Link href="/es/contact" className="btn btn--outline-white">Contactar</Link>
         </div>
       </section>
     </PageLayout>
