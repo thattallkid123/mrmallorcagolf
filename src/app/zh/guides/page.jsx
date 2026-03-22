@@ -12,9 +12,12 @@ const guides = [
   { slug: 'son-gual-review', badge: '球场评测', badgeGold: true, title: 'Son Gual高尔夫球场，马略卡 — PGA职业教练诚实评测（2026）', intro: '我在岛上打得最多的球场。风、果岭、收官几洞 — 以及奥巴马和纳达尔一再回来的原因。', readTime: '7分钟', keywords: '锦标赛级 · 标准杆72 · €80–165 · 需要差点证明' },
   { slug: 'alcanada-review', badge: '球场评测', badgeGold: true, title: '阿尔卡纳达高尔夫球场 — PGA职业教练诚实评测（2026）', intro: '我带客人来打球时，最希望他们能带着故事回家的球场。灯塔改变了一切。', readTime: '7分钟', keywords: '海滨球场 · 标准杆72 · €115–220 · 劳力士挑战巡回赛总决赛' },
   { slug: 'santa-ponsa-1-review', badge: '球场评测', badgeGold: true, title: '圣蓬萨1号高尔夫球场，马略卡 — PGA职业教练诚实评测（2026）', intro: '欧洲最长球场之一，拥有DP世界巡回赛历史，真正能帮助球手重拾一号木信心的球场。', readTime: '6分钟', keywords: '锦标赛级 · 标准杆72 · €77–126 · 对外开放' },
-  ,
-  ,
-  
+  { slug: 'best-golf-courses-mallorca', badge: '指南', title: '马略卡最佳高尔夫球场2026', intro: '完整排名 — 从锦标赛级球场到隐藏的宝藏球场。', readTime: '8分钟', keywords: '适合各水平 · 各种预算 · 2026年更新', comingSoon: true },
+  { slug: 'is-mallorca-good-for-golf', badge: '指南', title: '马略卡适合打高尔夫吗？', intro: '来自每周在此打球者的诚实回答。', readTime: '5分钟', keywords: '适合初学者 · 全年可打 · 地中海', comingSoon: true },
+  { slug: 'best-time-play-golf-mallorca', badge: '指南', title: '马略卡最佳高尔夫时节', intro: '逐月分析 — 天气、果岭费、人流及球场状况。', readTime: '5分钟', keywords: '季节性 · 天气 · 果岭费', comingSoon: true },
+  { slug: 'golf-cost-mallorca', badge: '指南', title: '在马略卡打高尔夫要花多少钱？', intro: '果岭费、租杆、球车 — 全面费用明细。', readTime: '6分钟', keywords: '果岭费 · 预算 · 2026年价格', comingSoon: true },
+  { slug: 'golf-trip-planning-mallorca', badge: '指南', title: '如何规划完美的马略卡高尔夫之旅', intro: '航班、接送、住宿以及应该预订哪些球场。', readTime: '7分钟', keywords: '行程规划 · 酒店 · 接送', comingSoon: true },
+  { slug: 'golf-club-hire-mallorca', badge: '指南', title: '马略卡高尔夫球杆租赁', intro: '在哪里租、预期如何，以及是否值得。', readTime: '4分钟', keywords: '球杆租赁 · 装备 · 租用', comingSoon: true },
 ]
 
 export default function GuidesIndex_ZH() {
@@ -42,27 +45,47 @@ export default function GuidesIndex_ZH() {
 
       <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
         <div style={{display:'flex',flexDirection:'column',gap:'2px'}}>
-          {guides.map((g) => (
-            <Link key={g.slug} href={`/zh/guides/${g.slug}`} className="reveal"
-              style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-              <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-                <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:g.badgeGold?'rgba(184,151,60,.12)':'rgba(45,74,62,.07)',color:g.badgeGold?'var(--gold)':'var(--taupe)',border:`1px solid ${g.badgeGold?'rgba(184,151,60,.25)':'var(--linen)'}`,flexShrink:0,alignSelf:'center'}}>
-                  {g.badge}
-                </span>
-                <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>
-                  {g.readTime}
-                </span>
+          {guides.filter(Boolean).map((g) => (
+            g.comingSoon ? (
+              <div key={g.slug} className="reveal"
+                style={{borderBottom:'1px solid var(--linen)',padding:'32px 0',opacity:0.55,cursor:'default'}}>
+                <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+                  <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(45,74,62,.07)',color:'var(--taupe)',border:'1px solid var(--linen)',flexShrink:0,alignSelf:'center'}}>
+                    {g.badge}
+                  </span>
+                  <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',alignSelf:'center'}}>
+                    Coming Soon
+                  </span>
+                </div>
+                <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
+                  {g.title}
+                </h2>
+                <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0,maxWidth:640}}>
+                  {g.intro}
+                </p>
               </div>
-              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
-                {g.title}
-              </h2>
-              <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>
-                {g.intro}
-              </p>
-              <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>
-                {g.keywords}
-              </p>
-            </Link>
+            ) : (
+              <Link key={g.slug} href={`/zh/guides/${g.slug}`} className="reveal"
+                style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+                <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+                  <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:g.badgeGold?'rgba(184,151,60,.12)':'rgba(45,74,62,.07)',color:g.badgeGold?'var(--gold)':'var(--taupe)',border:`1px solid ${g.badgeGold?'rgba(184,151,60,.25)':'var(--linen)'}`,flexShrink:0,alignSelf:'center'}}>
+                    {g.badge}
+                  </span>
+                  <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>
+                    {g.readTime}
+                  </span>
+                </div>
+                <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
+                  {g.title}
+                </h2>
+                <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>
+                  {g.intro}
+                </p>
+                <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>
+                  {g.keywords}
+                </p>
+              </Link>
+            )
           ))}
         </div>
       </section>

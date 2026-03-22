@@ -12,9 +12,12 @@ const guides = [
   { slug: 'son-gual-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Son Gual Golf Mallorca — Eerlijke beoordeling van een PGA Professional (2026)', intro: 'Mijn meest gespeelde baan op het eiland. De wind, de greens, de slothole — en waarom Obama en Nadal blijven terugkomen.', readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap vereist' },
   { slug: 'alcanada-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Club de Golf Alcanada — Eerlijke beoordeling van een PGA Professional (2026)', intro: 'De baan waar ik mensen naartoe breng als ik wil dat ze met een verhaal thuiskomen. De vuurtoren verandert alles.', readTime: '7 min', keywords: 'Kustbaan · Par 72 · €115–220 · Rolex Challenge Tour Grand Final' },
   { slug: 'santa-ponsa-1-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Golf Santa Ponsa 1, Mallorca — Eerlijke beoordeling van een PGA Professional (2026)', intro: 'Een van de langste banen in Europa, DP World Tour-geschiedenis en een baan die je vertrouwen met de driver écht teruggeeft.', readTime: '6 min', keywords: 'Championship · Par 72 · €77–126 · Toegankelijk voor bezoekers' },
-  ,
-  ,
-  
+  { slug: 'best-golf-courses-mallorca', badge: 'Gids', title: 'Beste golfbanen op Mallorca 2026', intro: 'De volledige ranglijst — van kampioenschapsbanen tot verborgen pareltjes.', readTime: '8 min', keywords: 'Alle niveaus · Alle budgetten · Bijgewerkt 2026', comingSoon: true },
+  { slug: 'is-mallorca-good-for-golf', badge: 'Gids', title: 'Is Mallorca goed voor golf?', intro: 'Eerlijk antwoord van iemand die hier elke week speelt.', readTime: '5 min', keywords: 'Beginnersvriendelijk · Het hele jaar · Middellandse Zee', comingSoon: true },
+  { slug: 'best-time-play-golf-mallorca', badge: 'Gids', title: 'Beste tijd om golf te spelen op Mallorca', intro: 'Maand voor maand — weer, greenfees, drukte en omstandigheden.', readTime: '5 min', keywords: 'Seizoensgebonden · Weer · Greenfees', comingSoon: true },
+  { slug: 'golf-cost-mallorca', badge: 'Gids', title: 'Hoeveel kost golf op Mallorca?', intro: "Green fees, clubhuur, buggy's — de volledige kostenspecificatie.", readTime: '6 min', keywords: 'Greenfees · Budget · Prijzen 2026', comingSoon: true },
+  { slug: 'golf-trip-planning-mallorca', badge: 'Gids', title: 'Hoe plan je de perfecte golfreis naar Mallorca', intro: 'Vluchten, transfers, verblijf en welke banen te boeken.', readTime: '7 min', keywords: 'Reisplanning · Hotels · Transfers', comingSoon: true },
+  { slug: 'golf-club-hire-mallorca', badge: 'Gids', title: 'Golfclub verhuur op Mallorca', intro: 'Waar huren, wat te verwachten en of het de moeite waard is.', readTime: '4 min', keywords: 'Clubhuur · Uitrusting · Verhuur', comingSoon: true },
 ]
 
 export default function GuidesIndex_NL() {
@@ -42,27 +45,47 @@ export default function GuidesIndex_NL() {
 
       <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
         <div style={{display:'flex',flexDirection:'column',gap:'2px'}}>
-          {guides.map((g) => (
-            <Link key={g.slug} href={`/nl/guides/${g.slug}`} className="reveal"
-              style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-              <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-                <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:g.badgeGold?'rgba(184,151,60,.12)':'rgba(45,74,62,.07)',color:g.badgeGold?'var(--gold)':'var(--taupe)',border:`1px solid ${g.badgeGold?'rgba(184,151,60,.25)':'var(--linen)'}`,flexShrink:0,alignSelf:'center'}}>
-                  {g.badge}
-                </span>
-                <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>
-                  {g.readTime}
-                </span>
+          {guides.filter(Boolean).map((g) => (
+            g.comingSoon ? (
+              <div key={g.slug} className="reveal"
+                style={{borderBottom:'1px solid var(--linen)',padding:'32px 0',opacity:0.55,cursor:'default'}}>
+                <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+                  <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(45,74,62,.07)',color:'var(--taupe)',border:'1px solid var(--linen)',flexShrink:0,alignSelf:'center'}}>
+                    {g.badge}
+                  </span>
+                  <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',alignSelf:'center'}}>
+                    Coming Soon
+                  </span>
+                </div>
+                <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
+                  {g.title}
+                </h2>
+                <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:0,maxWidth:640}}>
+                  {g.intro}
+                </p>
               </div>
-              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
-                {g.title}
-              </h2>
-              <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>
-                {g.intro}
-              </p>
-              <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>
-                {g.keywords}
-              </p>
-            </Link>
+            ) : (
+              <Link key={g.slug} href={`/nl/guides/${g.slug}`} className="reveal"
+                style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
+                <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
+                  <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:g.badgeGold?'rgba(184,151,60,.12)':'rgba(45,74,62,.07)',color:g.badgeGold?'var(--gold)':'var(--taupe)',border:`1px solid ${g.badgeGold?'rgba(184,151,60,.25)':'var(--linen)'}`,flexShrink:0,alignSelf:'center'}}>
+                    {g.badge}
+                  </span>
+                  <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>
+                    {g.readTime}
+                  </span>
+                </div>
+                <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
+                  {g.title}
+                </h2>
+                <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>
+                  {g.intro}
+                </p>
+                <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>
+                  {g.keywords}
+                </p>
+              </Link>
+            )
           ))}
         </div>
       </section>

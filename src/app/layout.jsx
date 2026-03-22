@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import Script from 'next/script'
 
 export const metadata = {
   metadataBase: new URL('https://mrmallorcagolf.com'),
@@ -86,6 +87,13 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
       </head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N" strategy="afterInteractive" />
+      <Script id="ga4-init" strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0Z2BRNWB4N');
+      `}</Script>
       <body>{children}</body>
     </html>
   )
