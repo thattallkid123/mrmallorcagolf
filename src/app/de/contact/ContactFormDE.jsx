@@ -6,7 +6,25 @@ export default function ContactFormDE() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, lang: 'DE' }),
+      })
+      if (!res.ok) throw new Error('Failed')
+      setSubmitted(true)
+    } catch {
+      alert('Something went wrong. Please email andy@mrmallorcagolf.com directly.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <div className="contact-wrap">
@@ -107,7 +125,7 @@ export default function ContactFormDE() {
               </div>
               <div className="form-group"><label htmlFor="message">Sonstiges, das ich wissen sollte</label><textarea id="message" name="message" className="form-control" placeholder="Ziele für den Tag, Plätze, von denen Sie gehört haben, gemischte Gruppe, besondere Wünsche — alles hilft mir, den richtigen Tag für Sie zu gestalten." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Anfrage senden &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={loading}>{loading ? 'Wird gesendet…' : 'Anfrage senden &rarr;'}</button>
                 <p className="form-note">Ich antworte persönlich auf jede Anfrage innerhalb von 24 Stunden. Ihre Daten werden ausschließlich zur Organisation Ihres Erlebnisses verwendet.</p>
               </div>
             </form>

@@ -8,10 +8,24 @@ export default function ContactForm() {
 
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
 
-  const handleSubmit = (e) => {
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // In production: POST to /api/contact or use Formspree/Resend
-    setSubmitted(true)
+    setLoading(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, lang: 'EN' }),
+      })
+      if (!res.ok) throw new Error('Failed')
+      setSubmitted(true)
+    } catch {
+      alert('Something went wrong. Please email andy@mrmallorcagolf.com directly.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -145,7 +159,7 @@ export default function ContactForm() {
               </div>
 
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Send Enquiry &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={loading}>{loading ? 'Sending…' : 'Send Enquiry →'}</button>
                 <p className="form-note">I respond personally to every enquiry within 24 hours. Your details are used only to arrange your experience.</p>
               </div>
             </form>

@@ -5,7 +5,25 @@ export default function ContactForm_ZH() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, lang: 'ZH' }),
+      })
+      if (!res.ok) throw new Error('Failed')
+      setSubmitted(true)
+    } catch {
+      alert('Something went wrong. Please email andy@mrmallorcagolf.com directly.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <div className="contact-wrap">

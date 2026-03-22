@@ -5,7 +5,25 @@ export default function ContactForm_NL() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, lang: 'NL' }),
+      })
+      if (!res.ok) throw new Error('Failed')
+      setSubmitted(true)
+    } catch {
+      alert('Something went wrong. Please email andy@mrmallorcagolf.com directly.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <div className="contact-wrap">
@@ -97,7 +115,7 @@ export default function ContactForm_NL() {
               </div>
               <div className="form-group"><label htmlFor="message">Iets anders wat ik moet weten</label><textarea id="message" name="message" className="form-control" placeholder="Doelen voor de dag, banen, gemengde groep, specifieke wensen." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Aanvraag versturen &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={loading}>{loading ? 'Verzenden…' : 'Aanvraag versturen &rarr;'}</button>
                 <p className="form-note">Ik reageer persoonlijk op elke aanvraag binnen 24 uur.</p>
               </div>
             </form>

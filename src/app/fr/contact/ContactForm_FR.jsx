@@ -5,7 +5,25 @@ export default function ContactForm_FR() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, lang: 'FR' }),
+      })
+      if (!res.ok) throw new Error('Failed')
+      setSubmitted(true)
+    } catch {
+      alert('Something went wrong. Please email andy@mrmallorcagolf.com directly.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <div className="contact-wrap">
@@ -97,7 +115,7 @@ export default function ContactForm_FR() {
               </div>
               <div className="form-group"><label htmlFor="message">Autre chose que je devrais savoir</label><textarea id="message" name="message" className="form-control" placeholder="Objectifs pour la journee, parcours, groupe mixte, demandes specifiques." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Envoyer la demande &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={loading}>{loading ? 'Envoi…' : 'Envoyer la demande &rarr;'}</button>
                 <p className="form-note">Je reponds personnellement a chaque demande sous 24 heures.</p>
               </div>
             </form>

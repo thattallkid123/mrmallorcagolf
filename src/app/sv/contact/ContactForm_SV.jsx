@@ -5,7 +5,25 @@ export default function ContactForm_SV() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, lang: 'SV' }),
+      })
+      if (!res.ok) throw new Error('Failed')
+      setSubmitted(true)
+    } catch {
+      alert('Something went wrong. Please email andy@mrmallorcagolf.com directly.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <div className="contact-wrap">
@@ -97,7 +115,7 @@ export default function ContactForm_SV() {
               </div>
               <div className="form-group"><label htmlFor="message">Annat jag bor veta</label><textarea id="message" name="message" className="form-control" placeholder="Mal for dagen, banor, blandad grupp, specifika onskningar." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Skicka förfrågan &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={loading}>{loading ? 'Skickar…' : 'Skicka förfrågan &rarr;'}</button>
                 <p className="form-note">Jag svarar personligen på varje förfrågan inom 24 timmar.</p>
               </div>
             </form>
