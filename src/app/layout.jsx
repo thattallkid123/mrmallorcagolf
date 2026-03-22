@@ -29,6 +29,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.svg',
   },
+  other: {
+    'msvalidate.01': '58ACA840A4A63D49F6487B17A93C02B4',
+  },
 }
 
 const PERSON_SCHEMA = {
