@@ -113,14 +113,15 @@ export default function ContactForm_ZH() {
                   <option>5人以上 — 较大团体/企业</option>
                 </select>
               </div>
-              <div className="form-group">
-                <label>您对哪种体验感兴趣？</label>
-                <div className="radio-group">
-                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">马略卡经典之旅</span><span className="radio-option-price">每人起价500欧元</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">招牌全日体验</span><span className="radio-option-price">每人起价650欧元</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">至尊定制体验</span><span className="radio-option-price">价格面议</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">尚未确定 - 请给我建议</span></label>
-                </div>
+                            <div className="form-group">
+                <label htmlFor="experience">您感兴趣的体验是？</label>
+                <select id="experience" name="experience" className="form-control" value={form.experience} onChange={handleChange}>
+                  <option value="">请选择体验</option>
+                  <option value="mallorca-round">马略卡经典之旅 — 每人€350+果岭费</option>
+                  <option value="signature-day">招牌全日体验 — 每人起价€450+果岭费</option>
+                  <option value="full-experience">至尊定制体验 — 价格面议</option>
+                  <option value="not-sure">尚未确定 — 请给我建议</option>
+                </select>
               </div>
               <div className="form-group"><label htmlFor="message">其他需要了解的信息</label><textarea id="message" name="message" className="form-control" placeholder="这一天的目标、球场偏好、特殊需求等。" value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">

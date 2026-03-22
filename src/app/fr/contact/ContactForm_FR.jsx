@@ -104,14 +104,15 @@ export default function ContactForm_FR() {
                   <option>5+ — grand groupe / entreprise</option>
                 </select>
               </div>
-              <div className="form-group">
-                <label>Quelle experience vous interesse ?</label>
-                <div className="radio-group">
-                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">Le Tour de Majorque</span><span className="radio-option-price">A partir de 500 EUR</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">La Journee Signature</span><span className="radio-option-price">A partir de 650 EUR</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">L'Experience Complete</span><span className="radio-option-price">Sur devis</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Pas encore sur(e) - conseillez-moi</span></label>
-                </div>
+                            <div className="form-group">
+                <label htmlFor="experience">Quelle expérience vous intéresse ?</label>
+                <select id="experience" name="experience" className="form-control" value={form.experience} onChange={handleChange}>
+                  <option value="">Choisir une expérience</option>
+                  <option value="mallorca-round">Le Tour de Majorque — €350 p.p. + green fee</option>
+                  <option value="signature-day">La Journée Signature — À partir de €450 p.p. + green fee</option>
+                  <option value="full-experience">L'Expérience Complète — Sur devis</option>
+                  <option value="not-sure">Pas encore sûr(e) — conseillez-moi</option>
+                </select>
               </div>
               <div className="form-group"><label htmlFor="message">Autre chose que je devrais savoir</label><textarea id="message" name="message" className="form-control" placeholder="Objectifs pour la journee, parcours, groupe mixte, demandes specifiques." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">

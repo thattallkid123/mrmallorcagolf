@@ -2,6 +2,16 @@ import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
 
+
+function PostImage({ src, alt, caption }) {
+  return (
+    <figure style={{margin:'2rem 0',padding:0}}>
+      <img src={src} alt={alt} loading="lazy"
+        style={{width:'100%',height:'auto',maxHeight:520,objectFit:'cover',objectPosition:'center',display:'block'}} />
+      {caption && <figcaption style={{fontSize:'0.78rem',color:'var(--taupe)',marginTop:'0.5rem',fontStyle:'italic',lineHeight:1.5}}>{caption}</figcaption>}
+    </figure>
+  )
+}
 export const metadata = {
   title: "Club de Golf Alcanada — A PGA Professional",
   description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
@@ -25,51 +35,92 @@ export default function Post() {
       <PostLayout meta={meta} lang="sv">
         <p style={{fontSize:'0.82rem',color:'var(--taupe)',fontStyle:'italic',borderBottom:'1px solid var(--linen)',paddingBottom:'1rem',marginBottom:'1.5rem'}}>Denna artikel skrevs på engelska och är översatt till svenska.</p>
 
+        <PostImage
+          src="/images/alcanada-blog/alc-7.jpg"
+          alt="Club de Golf Alcanada i gyllene timmen — fyr och bukt"
+          caption="Alcanada i gyllene timmen. Fyren ligger på sin egen ö strax utanför kusten — synlig från 16 av de 18 hålen."
+        />
 
-        <p>Alcanada is the course I take people to when I want them to come home with a story. It might be the most memorable round on the island. The lighthouse changes everything.</p>
+        <p>Alcanada är banan dit jag tar folk när jag vill att de ska åka hem med en historia. Det är kanske den mest minnesvärda rundan på ön. Fyren förändrar allt.</p>
 
-        <h2>The Setting</h2>
-        <p>Robert Trent Jones Jr. designed Alcanada, and what he did with this stretch of coastline is remarkable. Standing on the back tees with the lighthouse behind you and the Mediterranean in every direction, it's one of those rare golf moments where the surroundings make you forget what you scored.</p>
-        <p>The Alcanada lighthouse sits on a small island just off the coast, visible from 16 of the 18 holes. On a clear morning with the water calm and the light coming across the bay, it's one of the most beautiful settings I've played golf in anywhere in the world.</p>
+        <h2>Miljön</h2>
+        <p>Robert Trent Jones Jr. designade Alcanada, och det han gjorde med den här kustremsan är anmärkningsvärt. När man står på de bakre teerna med fyren i ryggen och Medelhavet i alla riktningar är det ett av de där sällsynta golfögonblicken då omgivningen får en att glömma vad man slagit.</p>
+        <p>Alcanada-fyren ligger på en liten ö strax utanför kusten, synlig från 16 av de 18 hålen. En klar morgon när vattnet är lugnt och ljuset faller in över bukten är det en av de vackraste miljöer jag spelat golf i var som helst i världen.</p>
 
-        <h2>The Back Tees</h2>
-        <p>Standing on the elevated back tees is its own experience. You feel untouchable — so far from everything else that everyone below looks like a tiny dot. The lighthouse behind you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.</p>
+        <PostImage
+          src="/images/alcanada-blog/alc-6.jpg"
+          alt="Gäst slår ett tee shot på Alcanada med fyren i bakgrunden"
+          caption="Fyren bakom, havet till vänster, fairwayen sluttar nedåt framför."
+        />
+
+        <h2>De bakre teerna</h2>
+        <p>Att stå på de upphöjda bakre teerna är en upplevelse i sig. Man känner sig oantastbar — så långt bort från allt annat att alla nedanför ser ut som bittesmå prickar. Fyren bakom dig, bukten som breder ut sig, och du ska strax slå drivern någonstans ut i avgrunden. Det är känslan.</p>
 
         <div className="post-pull">
-          <p>"Standing on the back tees at Alcanada is incredible. You feel untouchable. So far from the rest of the world. Everyone looks like a tiny dot and you're standing there, elevated, ready to hit driver somewhere into the abyss."</p>
+          <p>„Att stå på de bakre teerna på Alcanada är otroligt. Man känner sig oantastbar. Så långt bort från resten av världen. Alla ser ut som bittesmå prickar och man står där, upphöjd, redo att slå drivern någonstans ut i tomma intet."</p>
         </div>
 
-        <h2>The Greens</h2>
-        <p>This is where Alcanada earns its right to host elite events. After navigating a difficult hole, you arrive at greens that are severely undulating, massively fast, and offering very few easy putts. Fifty-eight bunkers across the layout force accurate approaches on almost every hole.</p>
-        <p>The combination of slope, speed, and subtle breaks on the greens is what separates this from a merely scenic layout into something that genuinely tests skilful players.</p>
+        <PostImage
+          src="/images/alcanada-blog/alc-2.jpg"
+          alt="Alcanada green med hav och berg bakom"
+          caption="En klar morgon kan man se Tramuntana-bergen på andra sidan bukten."
+        />
 
-        <h2>The Rolex Challenge Tour Grand Final</h2>
-        <p>Alcanada hosts the Rolex Challenge Tour Grand Final — returning for its sixth time in October 2026. This is not a course dressed up for a tour event. It's a course that has always been worthy of one. Playing the same holes that decide a professional's card for the season is something you notice when you're standing on the tee.</p>
+        <h2>Greenerna</h2>
+        <p>Det är här Alcanada förtjänar rätten att arrangera elittävlingar. Efter att ha navigerat ett svårt hål anländer man till greener som är kraftigt kuperade, otroligt snabba och erbjuder mycket få enkla puttar. Femtioåtta bunkrar över hela layouten tvingar fram noggranna inslag på nästan varje hål.</p>
+        <p>Kombinationen av lutning, hastighet och subtila brott på greenerna är det som skiljer detta från en rent pittoresk layout till något som verkligen testar skickliga spelare.</p>
 
-        <h2>Design Pedigree</h2>
-        <p>Robert Trent Jones Jr.'s father designed Valderrama — the venue of the 1997 Ryder Cup — and Spyglass Hill at Pebble Beach. RTJ Jr. also designed Spring City Golf in Kunming, ranked China's number one course by Golf Digest. The lineage is genuine, and it shows in how Alcanada is routed — nothing feels arbitrary, everything uses the land.</p>
+        <PostImage
+          src="/images/alcanada-blog/alc-5.jpg"
+          alt="Golfare på Alcanada med Medelhavet bakom"
+          caption="De bakre teerna på Alcanada ligger högt över fairwayen. Promenaden upp är värd det varje gång."
+        />
+
+        <h2>Rolex Challenge Tour Grand Final</h2>
+        <p>Alcanada är värd för Rolex Challenge Tour Grand Final — som återkommer för sjätte gången i oktober 2026. Det här är ingen bana uppklädd för ett tourevenemang. Det är en bana som alltid har förtjänat ett. Att spela samma hål som avgör en professionells spelkortsläge för säsongen är något man märker när man står på teen.</p>
+
+        <PostImage
+          src="/images/alcanada-blog/alc-1.jpg"
+          alt="Rolex Grand Final på Alcanada — hål 16"
+          caption="Rolex Challenge Tour Grand Final på Alcanada. Det återkommer för sjätte gången i oktober 2026."
+        />
+
+        <h2>Designarvet</h2>
+        <p>Robert Trent Jones Jr:s far designade Valderrama — platsen för Ryder Cup 1997 — och Spyglass Hill på Pebble Beach. RTJ Jr. designade även Spring City Golf i Kunming, utsedd till Kinas bästa bana av Golf Digest. Arvet är äkta, och det syns i hur Alcanada är dragit — inget känns godtyckligt, allt utnyttjar terrängen.</p>
+
+        <PostImage
+          src="/images/alcanada-blog/alc-4.jpg"
+          alt="Grupp golfare på Alcanada en sommarkväll"
+          caption="En runda på sommarkvällen. Ljuset på Alcanada i juli är något alldeles speciellt."
+        />
 
         <div className="post-fact">
-          <div className="post-fact__item"><span className="post-fact__val">€115–220</span><span className="post-fact__label">Green fee range 2026</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">7/10</span><span className="post-fact__label">Difficulty</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">58</span><span className="post-fact__label">Bunkers</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">55km</span><span className="post-fact__label">From Palma</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">€115–220</span><span className="post-fact__label">Green fee-intervall 2026</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">7/10</span><span className="post-fact__label">Svårighetsgrad</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">58</span><span className="post-fact__label">Bunkrar</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">55km</span><span className="post-fact__label">Från Palma</span></div>
         </div>
 
-        <h2>Practical Information</h2>
-        <p>Green fees 2026: €115 low season (January, December) to €220 peak (March–May, September–October). Full seasonal breakdown at golf-alcanada.com. A daily golf licence (€3 per person) is required for non-Spanish Federation members.</p>
-        <p>Club hire: TaylorMade sets at €38 per 18 holes. Buggy €48, electric trolley €20. The Toptracer range is excellent for a proper warm-up — use it.</p>
-        <p>Location: Port d'Alcúdia, about 50 minutes north of Palma. Allow time and don't rush back.</p>
+        <h2>Praktisk information</h2>
+        <p>Green fees 2026: €115 lågsäsong (januari, december) till €220 högsäsong (mars–maj, september–oktober). Fullständig säsongsuppdelning på golf-alcanada.com. En daglig golflicens (€3 per person) krävs för icke-medlemmar i det spanska golfförbundet.</p>
+        <p>Klubbhyra: TaylorMade-set för €38 per 18 hål. Buggy €48, eltrolley €20. Toptracer-rangen är utmärkt för en ordentlig uppvärmning — använd den.</p>
+        <p>Läge: Port d'Alcúdia, ungefär 50 minuter norr om Palma. Ta dig tid och stressa inte hem.</p>
 
-        <h2>The Restaurant Terrace</h2>
-        <p>One of the best places on the island for a post-round lunch. The restaurant is run by Grupo Babuxa — the group behind the well-regarded Casa Gallega restaurants in Palma — Mediterranean cooking with a sea terrace directly facing the Alcanada lighthouse. Their set lunch runs around €30 per person. Factor it in — this is not a place to rush away from.</p>
+        <h2>Restaurangterrassen</h2>
+        <p>En av de bästa platserna på ön för lunch efter rundan. Restaurangen drivs av Grupo Babuxa — gruppen bakom de välansedda Casa Gallega-restaurangerna i Palma — medelhavskök med en havsterrass som vetter direkt mot Alcanada-fyren. Deras lunchmeny kostar ungefär €30 per person. Räkna in det — det är inte en plats man rusar iväg från.</p>
 
-        <h2>Verdict</h2>
-        <p>Alcanada is the course I'd take someone to if I wanted them to fall in love with golf in Mallorca. The greens will test you. The drive north is worth it. The lunch afterwards is non-negotiable.</p>
+        <PostImage
+          src="/images/alcanada-blog/alc-hero.jpg"
+          alt="Alcanadas klubbhusterrass"
+          caption="Klubbhusterrassen."
+        />
+
+        <h2>Omdöme</h2>
+        <p>Alcanada är banan dit jag skulle ta någon om jag ville att de skulle förälska sig i golf på Mallorca. Greenerna kommer att testa dig. Körningen norrut är värd det. Lunchen efteråt är inte förhandlingsbar.</p>
 
         <div className="post-cta">
-          <p>Alcanada is one of my two anchor courses for play-with-a-pro days. Want to play it properly?</p>
-          <a href="/play-with-a-pro">See the play-with-a-pro experience →</a>
+          <p>Alcanada är en av mina två ankarbaner för play-with-a-pro-dagar. Vill du spela det ordentligt?</p>
+          <a href="/play-with-a-pro">Se play-with-a-pro-upplevelsen →</a>
         </div>
 
 

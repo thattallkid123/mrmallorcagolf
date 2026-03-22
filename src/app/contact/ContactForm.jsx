@@ -136,21 +136,14 @@ export default function ContactForm() {
               </div>
 
               <div className="form-group">
-                <label>Which experience interests you?</label>
-                <div className="radio-group">
-                  {[
-                    ['mallorca-round', 'The Mallorca Round', 'From €500'],
-                    ['signature-day', 'The Signature Day', 'From €650'],
-                    ['full-experience', 'The Full Experience', 'On enquiry'],
-                    ['not-sure', 'Not sure yet — advise me', ''],
-                  ].map(([val, label, price]) => (
-                    <label key={val} className="radio-option">
-                      <input type="radio" name="experience" value={val} checked={form.experience === val} onChange={handleChange} />
-                      <span className="radio-option-label">{label}</span>
-                      {price && <span className="radio-option-price">{price}</span>}
-                    </label>
-                  ))}
-                </div>
+                <label htmlFor="experience">Which experience interests you?</label>
+                <select id="experience" name="experience" className="form-control" value={form.experience} onChange={handleChange}>
+                  <option value="">Select an experience</option>
+                  <option value="mallorca-round">The Mallorca Round — €350 pp + green fee</option>
+                  <option value="signature-day">The Signature Day — From €450 pp + green fee</option>
+                  <option value="full-experience">The Full Experience — On enquiry</option>
+                  <option value="not-sure">Not sure yet — advise me</option>
+                </select>
               </div>
 
               <div className="form-group">
