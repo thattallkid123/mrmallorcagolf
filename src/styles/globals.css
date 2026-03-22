@@ -694,6 +694,19 @@ body {
 .contact-detail__label { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.3); min-width: 72px; }
 .contact-detail__value { font-size: 0.9rem; font-weight: 300; color: rgba(255,255,255,0.7); }
 .contact-detail__value a { color: var(--gold-light); text-decoration: none; }
+/* Contact cards — redesigned info section */
+.contact-cards { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 12px; position: relative; z-index: 1; }
+.contact-card { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 2px; text-decoration: none; color: inherit; transition: background 0.2s, border-color 0.2s; cursor: pointer; }
+.contact-card:hover { background: rgba(255,255,255,0.10); border-color: rgba(255,255,255,0.2); }
+.contact-card--whatsapp:hover { border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.07); }
+.contact-card--wechat:hover { border-color: rgba(9,183,0,0.4); background: rgba(9,183,0,0.07); }
+.contact-card--info { cursor: default; }
+.contact-card--info:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1); }
+.contact-card__icon { font-size: 1.4rem; flex-shrink: 0; width: 32px; text-align: center; display: flex; align-items: center; justify-content: center; }
+.contact-card__label { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 4px; font-family: 'Jost', sans-serif; }
+.contact-card__value { font-size: 1rem; font-weight: 400; color: #fff; line-height: 1.4; font-family: 'Jost', sans-serif; }
+.contact-card--whatsapp .contact-card__icon { color: #25D366; }
+.contact-card--wechat .contact-card__icon { color: #09B700; }
 .contact-detail__whatsapp { display: inline-flex; align-items: center; color: #25D366 !important; transition: opacity 0.2s; }
 .contact-detail__whatsapp:hover { opacity: 0.8; }
 .contact-right { background: var(--cream); padding: 70px 50px; }

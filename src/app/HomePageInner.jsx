@@ -1,5 +1,6 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 const courses = [
@@ -119,6 +120,7 @@ function CareerStrip() {
 }
 
 export default function HomePageInner() {
+  const router = useRouter()
   const [openFaq, setOpenFaq] = useState(0)
   const trackRef = useRef(null)
   const isDragging = useRef(false)
@@ -261,7 +263,7 @@ export default function HomePageInner() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c, i) => (
-            <Link key={i} href="/golf-courses" style={{textDecoration:'none',display:'block'}}><article className={`course-card ${c.cls}`}>
+            <article key={i} className={`course-card ${c.cls}`} onClick={() => router.push('/golf-courses')} style={{cursor:'pointer'}}>
               <div className="course-card__bg" style={{backgroundImage:`url(${c.img})`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
               <div className="course-card__overlay" style={{background:'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)'}}></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
@@ -278,7 +280,7 @@ export default function HomePageInner() {
                 {/* Excerpt always visible — not hover-only */}
                 <p className="course-card__excerpt course-card__excerpt--visible">{c.excerpt}</p>
               </div>
-            </article></Link>
+            </article>
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>

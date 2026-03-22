@@ -1,5 +1,6 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 const courses = [
@@ -70,6 +71,7 @@ function CareerStrip() {
 }
 
 export default function HomePageES() {
+  const router = useRouter()
   const [openFaq, setOpenFaq] = useState(0)
   const trackRef = useRef(null)
   const isDragging = useRef(false)
@@ -172,7 +174,7 @@ export default function HomePageES() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c,i) => (
-            <Link key={i} href="/es/golf-courses" style={{textDecoration:'none',display:'block'}}><article className={`course-card ${c.cls}`}>
+            <article key={i} className={`course-card ${c.cls}`} onClick={() => router.push('/es/golf-courses')} style={{cursor:'pointer'}}>
               <div className="course-card__bg"></div><div className="course-card__overlay"></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
               <div className="course-card__content">
@@ -182,7 +184,7 @@ export default function HomePageES() {
                 <div className="course-card__rating"><span className="course-card__stars">{c.stars}</span><span className="course-card__rating-label"> · {c.difficulty}</span></div>
                 <p className="course-card__excerpt">{c.excerpt}</p>
               </div>
-            </article></Link>
+            </article>
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>

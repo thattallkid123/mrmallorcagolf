@@ -25,7 +25,7 @@ export default function Post() {
     <PageLayout lang="sv">
       <RevealObserver />
       <PostLayout meta={meta} lang="sv">
-        <p style={{fontSize:'0.82rem',color:'var(--taupe)',fontStyle:'italic',borderBottom:'1px solid var(--linen)',paddingBottom:'1rem',marginBottom:'1.5rem'}}>Den här artikeln skrevs på engelska och har översatts till svenska.</p>
+        
 
         <p>Son Gual är min mest spelade bana på Mallorca och den jag konsekvent rekommenderar. Den är svår, och den som bokar med förväntan om en avslappnad dag kommer att bli överraskad.</p>
         

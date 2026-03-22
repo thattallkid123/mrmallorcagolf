@@ -25,7 +25,7 @@ export default function Post() {
     <PageLayout lang="es">
       <RevealObserver />
       <PostLayout meta={meta} lang="es">
-        <p style={{fontSize:'0.82rem',color:'var(--taupe)',fontStyle:'italic',borderBottom:'1px solid var(--linen)',paddingBottom:'1rem',marginBottom:'1.5rem'}}>Este artículo fue escrito en inglés y traducido al español.</p>
+        
 
         <p>Son Gual es mi campo más jugado en Mallorca y el que recomiendo con más consistencia cuando los clientes preguntan dónde jugar.</p>
         

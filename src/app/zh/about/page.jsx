@@ -63,7 +63,7 @@ export default function About_ZH() {
               <li key={5} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>在上海执教11年</strong>普通话流利</span></li>
               <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>中国国家队</strong>精英青少年与竞技教练</span></li>
               <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>数亿次播放量</strong>抖音高尔夫教学内容</span></li>
-              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>已出版作者</strong>《<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There</a>》，2016年</span></li>
+              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>已出版作者</strong>《<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a>》，2016年</span></li>
               <li key={9} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>现居马略卡岛</strong>自2025年3月起</span></li>
             </ul>
           </div>

@@ -63,7 +63,7 @@ export default function About_FR() {
               <li key={5} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>11 ans à Shanghai</strong>Mandarin courant</span></li>
               <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Équipe nationale chinoise</strong>Coaching élite juniors et compétition</span></li>
               <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Des centaines de millions de vues</strong>Contenu coaching golf sur Douyin</span></li>
-              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Auteur publié</strong>Putting It Out There â€” A Life in Full Swing, 2016</span></li>
+              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Auteur publié</strong><a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a></span></li>
               <li key={9} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Basé à Majorque</strong>Depuis mars 2025</span></li>
             </ul>
           </div>

@@ -25,7 +25,7 @@ export default function Post() {
     <PageLayout lang="de">
       <RevealObserver />
       <PostLayout meta={meta} lang="de">
-        <p style={{fontSize:'0.82rem',color:'var(--taupe)',fontStyle:'italic',borderBottom:'1px solid var(--linen)',paddingBottom:'1rem',marginBottom:'1.5rem'}}>Dieser Artikel wurde auf Englisch verfasst und ins Deutsche übersetzt.</p>
+        
 
         <p>Son Gual ist mein meistgespielter Platz auf Mallorca und derjenige, den ich am konsequentesten empfehle. Ich möchte ehrlich darüber sein, warum — und ehrlich darüber, was ihn schwer macht, denn er ist schwer.</p>
         

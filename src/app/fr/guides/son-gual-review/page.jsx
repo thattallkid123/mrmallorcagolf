@@ -25,7 +25,7 @@ export default function Post() {
     <PageLayout lang="fr">
       <RevealObserver />
       <PostLayout meta={meta} lang="fr">
-        <p style={{fontSize:'0.82rem',color:'var(--taupe)',fontStyle:'italic',borderBottom:'1px solid var(--linen)',paddingBottom:'1rem',marginBottom:'1.5rem'}}>Cet article a été rédigé en anglais puis traduit en français.</p>
+        
 
         <p>Son Gual est mon parcours le plus joué à Majorque et celui que je recommande le plus systématiquement.</p>
         

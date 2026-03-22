@@ -63,7 +63,7 @@ export default function About_ES() {
               <li key={5} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>11 años en Shanghái</strong>Mandarín fluido</span></li>
               <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Selección nacional china</strong>Coaching élite junior y competición</span></li>
               <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Cientos de millones de visualizaciones</strong>Contenido de coaching en Douyin</span></li>
-              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Autor publicado</strong><a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There</a> — A Life in Full Swing, 2016</span></li>
+              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Autor publicado</strong><a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a></span></li>
               <li key={9} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Residente en Mallorca</strong>Desde marzo de 2025</span></li>
             </ul>
           </div>

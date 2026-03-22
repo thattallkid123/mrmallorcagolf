@@ -17,7 +17,7 @@ const credentials = [
   { title: '11 Jahre in Shanghai', detail: 'Fließend Mandarin' },
   { title: 'Chinesische Nationalmannschaft', detail: 'Elite-Junioren- und Wettkampfcoaching' },
   { title: 'Hunderte Millionen Aufrufe', detail: 'Golfcoaching-Inhalte auf Douyin' },
-  { title: 'Veröffentlichter Autor', detail: '<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There</a> — A Life in Full Swing, 2016' },
+  { title: 'Veröffentlichter Autor', detail: '<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a>' },
   { title: 'Auf Mallorca ansässig', detail: 'Seit März 2025' },
 ]
 

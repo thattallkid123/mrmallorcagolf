@@ -63,7 +63,7 @@ export default function About_SV() {
               <li key={5} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>11 år i Shanghai</strong>Flytande mandarin</span></li>
               <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Kinesiska landslaget</strong>Elit junior- och tävlingscoaching</span></li>
               <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Hundratals miljoner visningar</strong>Golfcoachinginnehåll på Douyin</span></li>
-              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Publicerad författare</strong><a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There</a> — A Life in Full Swing, 2016</span></li>
+              <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Publicerad författare</strong><a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a></span></li>
               <li key={9} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Bosatt på Mallorca</strong>Sedan mars 2025</span></li>
             </ul>
           </div>
