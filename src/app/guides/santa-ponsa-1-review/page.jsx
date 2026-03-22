@@ -5,7 +5,19 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional's Honest Review (2026)",
   description: "Santa Ponsa 1 golf course Mallorca reviewed by a PGA professional. One of Europe's longest courses, DP World Tour history, and a confidence-builder for anyone who loves hitting driver.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/santa-ponsa-1-review' },
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/guides/santa-ponsa-1-review',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/guides/santa-ponsa-1-review',
+      'de': 'https://mrmallorcagolf.com/de/guides/santa-ponsa-1-review',
+      'es': 'https://mrmallorcagolf.com/es/guides/santa-ponsa-1-review',
+      'fr': 'https://mrmallorcagolf.com/fr/guides/santa-ponsa-1-review',
+      'zh': 'https://mrmallorcagolf.com/zh/guides/santa-ponsa-1-review',
+      'sv': 'https://mrmallorcagolf.com/sv/guides/santa-ponsa-1-review',
+      'nl': 'https://mrmallorcagolf.com/nl/guides/santa-ponsa-1-review',
+      'x-default': 'https://mrmallorcagolf.com/guides/santa-ponsa-1-review',
+    },
+  },
 }
 
 const meta = {

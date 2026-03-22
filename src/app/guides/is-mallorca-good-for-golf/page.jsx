@@ -5,7 +5,19 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: "Is Mallorca Good for Golf? A PGA Professional's Answer",
   description: "Is Mallorca good for golf? A PGA professional based on the island gives an honest answer â€” world-class courses, year-round conditions, and what to do beyond the fairways.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/is-mallorca-good-for-golf' },
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
+      'de': 'https://mrmallorcagolf.com/de/guides/is-mallorca-good-for-golf',
+      'es': 'https://mrmallorcagolf.com/es/guides/is-mallorca-good-for-golf',
+      'fr': 'https://mrmallorcagolf.com/fr/guides/is-mallorca-good-for-golf',
+      'zh': 'https://mrmallorcagolf.com/zh/guides/is-mallorca-good-for-golf',
+      'sv': 'https://mrmallorcagolf.com/sv/guides/is-mallorca-good-for-golf',
+      'nl': 'https://mrmallorcagolf.com/nl/guides/is-mallorca-good-for-golf',
+      'x-default': 'https://mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
+    },
+  },
 }
 
 const meta = {

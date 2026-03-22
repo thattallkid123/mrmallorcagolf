@@ -5,6 +5,19 @@ import RevealObserver from '../../components/RevealObserver'
 export const metadata = {
   title: 'Play With a Pro — Private Golf Days in Mallorca',
   description: 'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person + green fee.',
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/play-with-a-pro',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/play-with-a-pro',
+      'de': 'https://mrmallorcagolf.com/de/play-with-a-pro',
+      'es': 'https://mrmallorcagolf.com/es/play-with-a-pro',
+      'fr': 'https://mrmallorcagolf.com/fr/play-with-a-pro',
+      'zh': 'https://mrmallorcagolf.com/zh/play-with-a-pro',
+      'sv': 'https://mrmallorcagolf.com/sv/play-with-a-pro',
+      'nl': 'https://mrmallorcagolf.com/nl/play-with-a-pro',
+      'x-default': 'https://mrmallorcagolf.com/play-with-a-pro',
+    },
+  },
 }
 
 const testimonials = [

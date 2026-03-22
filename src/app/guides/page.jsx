@@ -5,7 +5,19 @@ import RevealObserver from '../../components/RevealObserver'
 export const metadata = {
   title: 'Mallorca Golf Guide — Course Reviews, Tips & Advice',
   description: 'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit — all updated for 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides' },
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/guides',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/guides',
+      'de': 'https://mrmallorcagolf.com/de/guides',
+      'es': 'https://mrmallorcagolf.com/es/guides',
+      'fr': 'https://mrmallorcagolf.com/fr/guides',
+      'zh': 'https://mrmallorcagolf.com/zh/guides',
+      'sv': 'https://mrmallorcagolf.com/sv/guides',
+      'nl': 'https://mrmallorcagolf.com/nl/guides',
+      'x-default': 'https://mrmallorcagolf.com/guides',
+    },
+  },
 }
 
 const guides = [

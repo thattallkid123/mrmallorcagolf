@@ -5,6 +5,19 @@ import RevealObserver from '../../components/RevealObserver'
 export const metadata = {
   title: 'On-Course Golf Coaching in Mallorca — PGA Professional',
   description: 'On-course golf coaching in Mallorca with PGA Advanced Professional Andy Griffiths. Real improvement in real conditions — for visiting and resident golfers.',
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/coaching',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/coaching',
+      'de': 'https://mrmallorcagolf.com/de/coaching',
+      'es': 'https://mrmallorcagolf.com/es/coaching',
+      'fr': 'https://mrmallorcagolf.com/fr/coaching',
+      'zh': 'https://mrmallorcagolf.com/zh/coaching',
+      'sv': 'https://mrmallorcagolf.com/sv/coaching',
+      'nl': 'https://mrmallorcagolf.com/nl/coaching',
+      'x-default': 'https://mrmallorcagolf.com/coaching',
+    },
+  },
 }
 
 const improvements = [

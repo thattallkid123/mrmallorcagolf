@@ -5,7 +5,19 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: "How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)",
   description: "Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you're off the course. By a PGA professional based on the island.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca' },
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
+      'de': 'https://mrmallorcagolf.com/de/guides/golf-trip-planning-mallorca',
+      'es': 'https://mrmallorcagolf.com/es/guides/golf-trip-planning-mallorca',
+      'fr': 'https://mrmallorcagolf.com/fr/guides/golf-trip-planning-mallorca',
+      'zh': 'https://mrmallorcagolf.com/zh/guides/golf-trip-planning-mallorca',
+      'sv': 'https://mrmallorcagolf.com/sv/guides/golf-trip-planning-mallorca',
+      'nl': 'https://mrmallorcagolf.com/nl/guides/golf-trip-planning-mallorca',
+      'x-default': 'https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
+    },
+  },
 }
 
 const meta = {

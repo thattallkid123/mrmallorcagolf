@@ -5,7 +5,19 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: "The Best Golf Courses in Mallorca â€” A PGA Professional's Honest Guide (2026)",
   description: "The best golf courses in Mallorca ranked and reviewed by a PGA professional based on the island. Son Gual, Alcanada, Son Muntaner, and more â€” honest first-hand takes.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/best-golf-courses-mallorca' },
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/guides/best-golf-courses-mallorca',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/guides/best-golf-courses-mallorca',
+      'de': 'https://mrmallorcagolf.com/de/guides/best-golf-courses-mallorca',
+      'es': 'https://mrmallorcagolf.com/es/guides/best-golf-courses-mallorca',
+      'fr': 'https://mrmallorcagolf.com/fr/guides/best-golf-courses-mallorca',
+      'zh': 'https://mrmallorcagolf.com/zh/guides/best-golf-courses-mallorca',
+      'sv': 'https://mrmallorcagolf.com/sv/guides/best-golf-courses-mallorca',
+      'nl': 'https://mrmallorcagolf.com/nl/guides/best-golf-courses-mallorca',
+      'x-default': 'https://mrmallorcagolf.com/guides/best-golf-courses-mallorca',
+    },
+  },
 }
 
 const meta = {

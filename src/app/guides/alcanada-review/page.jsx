@@ -5,7 +5,19 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)",
   description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/alcanada-review' },
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/guides/alcanada-review',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/guides/alcanada-review',
+      'de': 'https://mrmallorcagolf.com/de/guides/alcanada-review',
+      'es': 'https://mrmallorcagolf.com/es/guides/alcanada-review',
+      'fr': 'https://mrmallorcagolf.com/fr/guides/alcanada-review',
+      'zh': 'https://mrmallorcagolf.com/zh/guides/alcanada-review',
+      'sv': 'https://mrmallorcagolf.com/sv/guides/alcanada-review',
+      'nl': 'https://mrmallorcagolf.com/nl/guides/alcanada-review',
+      'x-default': 'https://mrmallorcagolf.com/guides/alcanada-review',
+    },
+  },
 }
 
 const meta = {

@@ -5,7 +5,19 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: 'Golf Club Hire in Mallorca — Everything You Need to Know (2026)',
   description: 'Golf club hire in Mallorca — which companies to use, what to pay, whether to bring your own clubs, and tips for getting the best deal. Updated for 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/golf-club-hire-mallorca' },
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/guides/golf-club-hire-mallorca',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/guides/golf-club-hire-mallorca',
+      'de': 'https://mrmallorcagolf.com/de/guides/golf-club-hire-mallorca',
+      'es': 'https://mrmallorcagolf.com/es/guides/golf-club-hire-mallorca',
+      'fr': 'https://mrmallorcagolf.com/fr/guides/golf-club-hire-mallorca',
+      'zh': 'https://mrmallorcagolf.com/zh/guides/golf-club-hire-mallorca',
+      'sv': 'https://mrmallorcagolf.com/sv/guides/golf-club-hire-mallorca',
+      'nl': 'https://mrmallorcagolf.com/nl/guides/golf-club-hire-mallorca',
+      'x-default': 'https://mrmallorcagolf.com/guides/golf-club-hire-mallorca',
+    },
+  },
 }
 
 const meta = {

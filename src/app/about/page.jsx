@@ -5,6 +5,19 @@ import RevealObserver from '../../components/RevealObserver'
 export const metadata = {
   title: 'About Andy Griffiths — PGA Professional, Mallorca',
   description: "Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. Formerly Pebble Beach, Evian, 11 years coaching in China.",
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/about',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/about',
+      'de': 'https://mrmallorcagolf.com/de/about',
+      'es': 'https://mrmallorcagolf.com/es/about',
+      'fr': 'https://mrmallorcagolf.com/fr/about',
+      'zh': 'https://mrmallorcagolf.com/zh/about',
+      'sv': 'https://mrmallorcagolf.com/sv/about',
+      'nl': 'https://mrmallorcagolf.com/nl/about',
+      'x-default': 'https://mrmallorcagolf.com/about',
+    },
+  },
 }
 
 const credentials = [

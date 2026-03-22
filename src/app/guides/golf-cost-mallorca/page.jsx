@@ -5,7 +5,19 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
   description: 'Green fees, club hire, buggies, food — what golf actually costs in Mallorca in 2026. Honest breakdown from a PGA professional who plays here every week.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/golf-cost-mallorca' },
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/guides/golf-cost-mallorca',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/guides/golf-cost-mallorca',
+      'de': 'https://mrmallorcagolf.com/de/guides/golf-cost-mallorca',
+      'es': 'https://mrmallorcagolf.com/es/guides/golf-cost-mallorca',
+      'fr': 'https://mrmallorcagolf.com/fr/guides/golf-cost-mallorca',
+      'zh': 'https://mrmallorcagolf.com/zh/guides/golf-cost-mallorca',
+      'sv': 'https://mrmallorcagolf.com/sv/guides/golf-cost-mallorca',
+      'nl': 'https://mrmallorcagolf.com/nl/guides/golf-cost-mallorca',
+      'x-default': 'https://mrmallorcagolf.com/guides/golf-cost-mallorca',
+    },
+  },
 }
 
 const meta = {
