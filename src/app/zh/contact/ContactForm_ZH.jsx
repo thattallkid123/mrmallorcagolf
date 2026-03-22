@@ -29,7 +29,7 @@ export default function ContactForm_ZH() {
               </svg></span>
             <div>
               <p className="contact-card__label">WhatsApp</p>
-              <p className="contact-card__value">+34 624 466 702</p>
+              <p className="contact-card__value"><a href="https://wa.me/34624466702" style={{color:"inherit",textDecoration:"none"}}>Message on WhatsApp →</a></p>
             </div>
           </a>
           <a href="weixin://dl/chat?andygriffiths1" className="contact-card contact-card--wechat" target="_blank" rel="noopener noreferrer">
@@ -38,7 +38,7 @@ export default function ContactForm_ZH() {
               </svg></span>
             <div>
               <p className="contact-card__label">微信</p>
-              <p className="contact-card__value">andygriffiths1</p>
+              <p className="contact-card__value"><span style={{userSelect:"all"}}>andygriffiths1</span></p>
             </div>
           </a>
           <div className="contact-card contact-card--info">

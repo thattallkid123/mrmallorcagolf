@@ -239,17 +239,26 @@ export default function HomePageSV() {
         </div>
         <div className="packages__grid">
           <div className="package reveal">
-            <p className="package__tier">Mallorca-rundan</p><h3 className="package__name">Spela med ett proffs</h3><p className="package__price">Från 500 € per person</p><div className="package__divider"></div>
+            <p className="package__tier">Mallorca-rundan</p>
+            <h3 className="package__name">Spela med ett proffs</h3>
+            <p className="package__price">Från 500 € per person</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Banrekommendation matchad efter ditt spel','Starttid säkrad och fullt hanterad','Briefing och uppvärmning innan rundan','18 hål bredvid Andy','Coaching på banan genomgående','Genomgång efter rundan — ärlig och tydlig'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/sv/contact" className="btn btn--dark">Förfrågan →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
-            <p className="package__tier">Signature-dagen</p><h3 className="package__name">Guidad golfdag</h3><p className="package__price">Från 650 € per person</p><div className="package__divider"></div>
+            <p className="package__tier">Signature-dagen</p>
+            <h3 className="package__name">Guidad golfdag</h3>
+            <p className="package__price">Från 650 € per person</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Allt i Mallorca-rundan','Son Gual eller Alcanada — två av öns finaste','Lång lunch på banrestaurangen','Utvald överraskning','Avspänt tempo — en hel dag, inte en jäktad runda'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/sv/contact" className="btn btn--gold">Förfrågan →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
-            <p className="package__tier">Den Kompletta Upplevelsen</p><h3 className="package__name">Skräddarsydd golfreasa</h3><p className="package__price">På förfrågan</p><div className="package__divider"></div>
+            <p className="package__tier">Den Kompletta Upplevelsen</p>
+            <h3 className="package__name">Skräddarsydd golfreasa</h3>
+            <p className="package__price">På förfrågan</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Flerbanorsdag eller fullständigt program','Privat transport från Palma','Middag på handplockat restaurang','Spa eller återhämtning hos partneranläggning','Fullständig concierge-koordination','För grupper, företag och skräddarsydda önskemål'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/sv/contact" className="btn btn--dark">Förfrågan →</Link>
           </div>

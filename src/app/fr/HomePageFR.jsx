@@ -239,17 +239,26 @@ export default function HomePageFR() {
         </div>
         <div className="packages__grid">
           <div className="package reveal">
-            <p className="package__tier">Le Tour de Majorque</p><h3 className="package__name">Jouer avec un pro</h3><p className="package__price">À partir de 500 € par personne</p><div className="package__divider"></div>
+            <p className="package__tier">Le Tour de Majorque</p>
+            <h3 className="package__name">Jouer avec un pro</h3>
+            <p className="package__price">À partir de 500 € par personne</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Recommandation de parcours adaptée à votre jeu','Heure de départ réservée et entièrement gérée','Briefing et échauffement avant le départ','18 trous aux côtés d\'Andy','Coaching sur le parcours tout au long de la ronde','Débriefing après la ronde — honnête et clair'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/fr/contact" className="btn btn--dark">Demander →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
-            <p className="package__tier">La Journée Signature</p><h3 className="package__name">Journée golf encadrée</h3><p className="package__price">À partir de 650 € par personne</p><div className="package__divider"></div>
+            <p className="package__tier">La Journée Signature</p>
+            <h3 className="package__name">Journée golf encadrée</h3>
+            <p className="package__price">À partir de 650 € par personne</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Tout du Tour de Majorque','Son Gual ou Alcanada — deux des plus beaux parcours de l\'île','Déjeuner prolongé au restaurant du parcours','Cadeau surprise sélectionné avec soin','Rythme posé — une vraie journée, pas une ronde bâclée'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/fr/contact" className="btn btn--gold">Demander →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
-            <p className="package__tier">L&apos;Expérience Complète</p><h3 className="package__name">Voyage golf sur mesure</h3><p className="package__price">Sur devis</p><div className="package__divider"></div>
+            <p className="package__tier">L&apos;Expérience Complète</p>
+            <h3 className="package__name">Voyage golf sur mesure</h3>
+            <p className="package__price">Sur devis</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Journée multi-parcours ou programme complet','Transport privé depuis Palma','Dîner dans un restaurant soigneusement sélectionné','Séance spa ou récupération dans un établissement partenaire','Coordination concierge complète','Pour les groupes, entreprises et demandes sur mesure'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/fr/contact" className="btn btn--dark">Demander →</Link>
           </div>

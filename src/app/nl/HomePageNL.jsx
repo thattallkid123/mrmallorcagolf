@@ -239,17 +239,26 @@ export default function HomePageNL() {
         </div>
         <div className="packages__grid">
           <div className="package reveal">
-            <p className="package__tier">De Mallorca Ronde</p><h3 className="package__name">Spelen met een Pro</h3><p className="package__price">Vanaf €500 per persoon</p><div className="package__divider"></div>
+            <p className="package__tier">De Mallorca Ronde</p>
+            <h3 className="package__name">Spelen met een Pro</h3>
+            <p className="package__price">Vanaf €500 per persoon</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Baanaanbeveling afgestemd op uw spel','Starttijd geboekt en volledig geregeld','Briefing en warming-up','18 holes naast Andy','Coaching op de baan gedurende de ronde','Nabespreking — eerlijk en duidelijk'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/nl/contact" className="btn btn--dark">Aanvragen →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
-            <p className="package__tier">De Signature Dag</p><h3 className="package__name">Begeleide Golfdag</h3><p className="package__price">Vanaf €650 per persoon</p><div className="package__divider"></div>
+            <p className="package__tier">De Signature Dag</p>
+            <h3 className="package__name">Begeleide Golfdag</h3>
+            <p className="package__price">Vanaf €650 per persoon</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Alles van De Mallorca Ronde','Son Gual of Alcanada','Uitgebreide lunch op de baan','Geselecteerde verrassingsgift','Ontspannen tempo — een volle dag'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/nl/contact" className="btn btn--gold">Aanvragen →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
-            <p className="package__tier">De Volledige Ervaring</p><h3 className="package__name">Maatwerk Golfreis</h3><p className="package__price">Op aanvraag</p><div className="package__divider"></div>
+            <p className="package__tier">De Volledige Ervaring</p>
+            <h3 className="package__name">Maatwerk Golfreis</h3>
+            <p className="package__price">Op aanvraag</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Meerbanendag of volledig programma','Privévervoer vanuit Palma','Diner bij handgekozen restaurant','Spa- of herstelsessie','Volledige conciergecordinatie','Voor groepen, bedrijven & maatwerk'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/nl/contact" className="btn btn--dark">Aanvragen →</Link>
           </div>

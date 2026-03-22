@@ -231,17 +231,26 @@ export default function HomePageZH() {
         </div>
         <div className="packages__grid">
           <div className="package reveal">
-            <p className="package__tier">马略卡经典之旅</p><h3 className="package__name">与职业球手同场</h3><p className="package__price">每人起价500欧元</p><div className="package__divider"></div>
+            <p className="package__tier">马略卡经典之旅</p>
+            <h3 className="package__name">与职业球手同场</h3>
+            <p className="package__price">每人起价500欧元</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['根据您的球技量身推荐球场','开球时间预订及全程安排','赛前简报与热身','与Andy同打18洞','全程球场实地指导','赛后复盘——直接，清晰'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/zh/contact" className="btn btn--dark">立即咨询 →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
-            <p className="package__tier">招牌全日体验</p><h3 className="package__name">全程陪同高尔夫日</h3><p className="package__price">每人起价650欧元</p><div className="package__divider"></div>
+            <p className="package__tier">招牌全日体验</p>
+            <h3 className="package__name">全程陪同高尔夫日</h3>
+            <p className="package__price">每人起价650欧元</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['包含马略卡经典之旅全部内容','Son Gual或Alcanada——岛上两大顶级球场','球场餐厅悠闲午餐','精心挑选的惊喜礼品','从容节奏——完整的一天，而非仓促的一轮'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/zh/contact" className="btn btn--gold">立即咨询 →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
-            <p className="package__tier">至尊定制体验</p><h3 className="package__name">高尔夫私人定制之旅</h3><p className="package__price">价格面议</p><div className="package__divider"></div>
+            <p className="package__tier">至尊定制体验</p>
+            <h3 className="package__name">高尔夫私人定制之旅</h3>
+            <p className="package__price">价格面议</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['多球场全日游或完整行程规划','帕尔马出发私人专车','精选餐厅晚宴','合作场馆水疗或恢复疗程','全程礼宾协调服务','适合团体、企业及个性化定制需求'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/zh/contact" className="btn btn--dark">立即咨询 →</Link>
           </div>

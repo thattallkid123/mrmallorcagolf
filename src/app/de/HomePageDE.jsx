@@ -239,17 +239,26 @@ export default function HomePageDE() {
         </div>
         <div className="packages__grid">
           <div className="package reveal">
-            <p className="package__tier">Die Mallorca-Runde</p><h3 className="package__name">Mit einem Profi spielen</h3><p className="package__price">Ab 500 € pro Person</p><div className="package__divider"></div>
+            <p className="package__tier">Die Mallorca-Runde</p>
+            <h3 className="package__name">Mit einem Profi spielen</h3>
+            <p className="package__price">Ab 500 € pro Person</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Platzempfehlung passend zu Ihrem Spiel','Abschlagzeit gesichert und vollständig organisiert','Vorrunden-Briefing und Aufwärmen','18 Löcher an der Seite von Andy','Coaching auf dem Platz während der gesamten Runde','Nachbesprechung — ehrlich und klar'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/de/contact" className="btn btn--dark">Anfragen →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
-            <p className="package__tier">Der Signature-Tag</p><h3 className="package__name">Geführter Golftag</h3><p className="package__price">Ab 650 € pro Person</p><div className="package__divider"></div>
+            <p className="package__tier">Der Signature-Tag</p>
+            <h3 className="package__name">Geführter Golftag</h3>
+            <p className="package__price">Ab 650 € pro Person</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Alles aus der Mallorca-Runde','Son Gual oder Alcanada — zwei der schönsten Plätze der Insel','Ausgedehntes Mittagessen im Platzrestaurant','Ausgewähltes Überraschungsgeschenk','Entspanntes Tempo — ein voller Tag, keine gehetzten 18 Löcher','Mindestens zwei Golfer, bis zu vier'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/de/contact" className="btn btn--gold">Anfragen →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
-            <p className="package__tier">Das Gesamterlebnis</p><h3 className="package__name">Maßgeschneiderte Golfreise</h3><p className="package__price">Auf Anfrage</p><div className="package__divider"></div>
+            <p className="package__tier">Das Gesamterlebnis</p>
+            <h3 className="package__name">Maßgeschneiderte Golfreise</h3>
+            <p className="package__price">Auf Anfrage</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Mehrstündiger Tag oder vollständiges Reiseprogramm','Privater Transfer ab Palma','Abendessen in einem handverlesenen Restaurant','Spa- oder Erholungseinheit in einer Partnereinrichtung','Vollständige Concierge-Koordination','Für Gruppen, Unternehmen und individuelle Anfragen'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/de/contact" className="btn btn--dark">Anfragen →</Link>
           </div>

@@ -239,17 +239,26 @@ export default function HomePageES() {
         </div>
         <div className="packages__grid">
           <div className="package reveal">
-            <p className="package__tier">La Vuelta de Mallorca</p><h3 className="package__name">Jugar con un profesional</h3><p className="package__price">Desde 500 € por persona</p><div className="package__divider"></div>
+            <p className="package__tier">La Vuelta de Mallorca</p>
+            <h3 className="package__name">Jugar con un profesional</h3>
+            <p className="package__price">Desde 500 € por persona</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Recomendación de campo adaptada a su juego','Hora de salida reservada y gestionada','Briefing y calentamiento previos','18 hoyos junto a Andy','Coaching en campo durante toda la vuelta','Análisis posterior — honesto y claro'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/es/contact" className="btn btn--dark">Consultar →</Link>
           </div>
           <div className="package package--featured reveal reveal-delay-1">
-            <p className="package__tier">El Día Signature</p><h3 className="package__name">Día de golf con anfitrión</h3><p className="package__price">Desde 650 € por persona</p><div className="package__divider"></div>
+            <p className="package__tier">El Día Signature</p>
+            <h3 className="package__name">Día de golf con anfitrión</h3>
+            <p className="package__price">Desde 650 € por persona</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Todo de La Vuelta de Mallorca','Son Gual o Alcanada — dos de los mejores campos de la isla','Almuerzo largo en el restaurante del campo','Regalo sorpresa seleccionado','Ritmo pausado — un día completo, no una vuelta apresurada'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/es/contact" className="btn btn--gold">Consultar →</Link>
           </div>
           <div className="package reveal reveal-delay-2">
-            <p className="package__tier">La Experiencia Completa</p><h3 className="package__name">Viaje de golf a medida</h3><p className="package__price">A consultar</p><div className="package__divider"></div>
+            <p className="package__tier">La Experiencia Completa</p>
+            <h3 className="package__name">Viaje de golf a medida</h3>
+            <p className="package__price">A consultar</p>
+            <div className="package__divider"></div>
             <ul className="package__features">{['Día en varios campos o itinerario completo','Transporte privado desde Palma','Cena en un restaurante cuidadosamente elegido','Sesión de spa o recuperación en un establecimiento asociado','Coordinación concierge completa','Para grupos, empresas y solicitudes a medida'].map((f,i)=><li key={i}>{f}</li>)}</ul>
             <Link href="/es/contact" className="btn btn--dark">Consultar →</Link>
           </div>
