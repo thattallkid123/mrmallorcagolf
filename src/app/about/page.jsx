@@ -5,23 +5,10 @@ import RevealObserver from '../../components/RevealObserver'
 export const metadata = {
   title: 'About Andy Griffiths — PGA Professional, Mallorca',
   description: "Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. Formerly Pebble Beach, Evian, 11 years coaching in China.",
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/about',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/about',
-      'de': 'https://mrmallorcagolf.com/de/about',
-      'es': 'https://mrmallorcagolf.com/es/about',
-      'fr': 'https://mrmallorcagolf.com/fr/about',
-      'zh': 'https://mrmallorcagolf.com/zh/about',
-      'sv': 'https://mrmallorcagolf.com/sv/about',
-      'nl': 'https://mrmallorcagolf.com/nl/about',
-      'x-default': 'https://mrmallorcagolf.com/about',
-    },
-  },
 }
 
 const credentials = [
-  { title: 'PGA Advanced Professional (UK)', detail: 'The highest qualification in UK golf coaching' },
+  { title: 'PGA Advanced Professional (UK)', detail: 'One of the senior professional qualifications in UK golf' },
   { title: 'Applied Golf Management', detail: 'University of Birmingham' },
   { title: 'TPI Level 3 Certified', detail: 'Titleist Performance Institute' },
   { title: 'Trackman Master Certified', detail: 'First in China' },
@@ -73,7 +60,7 @@ export default function About() {
             <p className="chapter__label">Shanghai, 2014–2025</p>
             <h2>Eleven years at the top of the game in China.</h2>
             <p>In 2014 I moved to Shanghai. I went with specific goals — to set up the teaching programme for the best academy in China — and stayed for eleven successful years.</p>
-            <p>China in that period was an extraordinary environment in which to coach. Lessons were running at around &euro;500 per hour. Clients expected serious, measurable improvement — not just encouragement. The professional standard required was as high as anywhere I&apos;d worked.</p>
+            <p>China in that period was an extraordinary environment in which to coach. Lessons were running at around &euro;500 per hour. Clients expected real, measurable improvement. That was the standard. The professional standard required was as high as anywhere I&apos;d worked.</p>
             <p>I became the country&apos;s first Trackman Master, coached players from the Chinese national team, and built a coaching presence on Douyin that reached hundreds of millions of views. I also became fluent in Mandarin, which changed the depth of coaching relationship I could build with players and families.</p>
             <p>After eleven years, I&apos;d achieved what I went for. My first daughter was born in 2023. The pull of being closer to home, and the chance to build something of my own, became impossible to ignore.</p>
           </div>
@@ -83,7 +70,7 @@ export default function About() {
             <h2>Twenty-two courses, one island, and a coaching philosophy sharpened by playing again.</h2>
             <p>I moved to Mallorca in March 2025 with my wife Yina. Closer to family in the UK, year-round sunshine, a genuinely exceptional golf island that most people don&apos;t give enough credit to.</p>
             <p>I started playing properly again. Working my way through every course on the island. Rediscovering what it feels like to stand on a first tee and actually care about the score. That competitive instinct — dormant through years of full-time coaching — came back fast.</p>
-            <div className="pull-quote"><p>&ldquo;The coaching philosophy that&apos;s come out of playing again is simple: the fastest improvements happen on the course, not the range. Real conditions, real decisions, real consequences.&rdquo;</p></div>
+            <div className="pull-quote"><p>&ldquo;The coaching philosophy that&apos;s come out of playing again is simple: the fastest improvements happen on the course, not the range. Real conditions, real decisions. The progress that comes from that tends to stick.&rdquo;</p></div>
             <p>A PGA professional who spent over a decade coaching in Asia, now hosting private golf days on one of Europe&apos;s best golf islands. If that sounds like the kind of day you&apos;re looking for — get in touch.</p>
           </div>
         </main>

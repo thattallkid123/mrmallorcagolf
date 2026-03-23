@@ -6,19 +6,7 @@ import Link from 'next/link'
 export const metadata = {
   title: "A Day at Son Gual — What the Play-With-a-Pro Experience Actually Looks Like",
   description: "From the drive up to the last putt to lunch on the terrace — a specific, honest account of what a play-with-a-pro day at Son Gual looks and feels like.",
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/guides/a-day-at-son-gual',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/guides/a-day-at-son-gual',
-      'de': 'https://mrmallorcagolf.com/de/guides/a-day-at-son-gual',
-      'es': 'https://mrmallorcagolf.com/es/guides/a-day-at-son-gual',
-      'fr': 'https://mrmallorcagolf.com/fr/guides/a-day-at-son-gual',
-      'zh': 'https://mrmallorcagolf.com/zh/guides/a-day-at-son-gual',
-      'sv': 'https://mrmallorcagolf.com/sv/guides/a-day-at-son-gual',
-      'nl': 'https://mrmallorcagolf.com/nl/guides/a-day-at-son-gual',
-      'x-default': 'https://mrmallorcagolf.com/guides/a-day-at-son-gual',
-    },
-  },
+  alternates: { canonical: 'https://mrmallorcagolf.com/guides/a-day-at-son-gual' },
 }
 
 const meta = {

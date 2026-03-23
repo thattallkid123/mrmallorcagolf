@@ -3,8 +3,8 @@ import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Golfcoaching på banan i Mallorca — UK UK PGA-proffs',
-  description: 'Golfcoaching på banan i Mallorca med UK UK PGA Advanced Professional Andy Griffiths. Riktig förbättring i riktiga förhållanden — för besökande och bosatta golfare.',
+  title: 'Golfcoaching på banan i Mallorca — UK PGA-proffs',
+  description: 'Golfcoaching på banan i Mallorca med UK PGA Advanced Professional Andy Griffiths. Riktig förbättring i riktiga förhållanden — för besökande och bosatta golfare.',
   alternates: { canonical: 'https://mrmallorcagolf.com/sv/coaching' },
 }
 
@@ -28,7 +28,7 @@ export default function Coaching_SV() {
           <p>Coaching på banan sätter lektionen där den faktiskt hjälper. På fairwayen. I roughen. På en sluttning med ett oväntat vind. Med en poäng som spelär roll. Det är där spel förändras — och det är där vi arbetar.</p>
           <div className="analogy-box">
             <p>&ldquo;Tänk på boxning. Du kan tränå på kuddär i veckor och kännå dig redo. Sedan här du din första sparring och allt förändras. Golf är likadant. Första teet är inte driving rangen.&rdquo;</p>
-            <cite>— Andy Griffiths, UK UK PGA Advanced Professional</cite>
+            <cite>— Andy Griffiths, UK PGA Advanced Professional</cite>
           </div>
         </div>
         <div className="reveal">

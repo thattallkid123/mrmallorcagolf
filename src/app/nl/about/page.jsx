@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'Over Andy Griffiths — PGA Professional, Mallorca',
-  description: 'Andy Griffiths is een Britse UK UK PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Évian, 11 jaar coaching in China.',
+  description: 'Andy Griffiths is een Britse UK PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Évian, 11 jaar coaching in China.',
   alternates: { canonical: 'https://mrmallorcagolf.com/nl/about' },
 }
 
@@ -17,7 +17,7 @@ export default function About_NL() {
           <p className="breadcrumb"><Link href="/nl">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Over Andy</span></p>
           <h1>De Professional<br />achter de Ervaring.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
-            <span className="cred-tag cred-tag--gold">UK UK PGA Advanced Professional</span>
+            <span className="cred-tag cred-tag--gold">UK PGA Advanced Professional</span>
             <span className="cred-tag">Trackman Master</span>
             <span className="cred-tag">TPI Level 3</span>
             <span className="cred-tag">Mallorca</span>
@@ -55,7 +55,7 @@ export default function About_NL() {
           <div className="creds reveal">
             <p className="creds__label">Kwalificaties</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK UK PGA Advanced Professional (UK)</strong>De hoogste kwalificatie in het Britse golfcoachen</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional (UK)</strong>Een van de hogere beroepskwalificaties in het Britse golf</span></li>
               <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management</strong>University of Birmingham</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>TPI Niveau 3 gecertificeerd</strong>Titleist Performance Institute</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Trackman Master gecertificeerd</strong>Eerste in China</span></li>
@@ -90,7 +90,7 @@ export default function About_NL() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Klaar om te spelen?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>Een UK UK PGA Advanced Professional. Een uitzonderlijk golfeiland. Uw ronde.</h2>
+          <h2 className="serif-display" style={{color:'#fff'}}>Een UK PGA Advanced Professional. Een uitzonderlijk golfeiland. Uw ronde.</h2>
           <p>Vertel me uw datums, uw handicap en wat u zoekt. Ik bouw de dag rondom u.</p>
         </div>
         <div className="cta-final__right reveal">

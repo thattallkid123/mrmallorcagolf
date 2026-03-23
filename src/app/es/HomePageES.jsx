@@ -136,12 +136,12 @@ export default function HomePageES() {
       <section className="how">
         <div className="how__header reveal">
           <p className="eyebrow">Cómo funciona</p>
-          <h2 className="serif-display">Tres pasos para una vuelta que no olvidará.</h2>
+          <h2 className="serif-display">Así funciona el día.</h2>
         </div>
         <div className="how__steps">
           <div className="how__step reveal"><span className="how__num">01</span><h3>Póngase en contacto</h3><p>Dígame sus fechas, su hándicap y lo que busca. Le respondo personalmente en 24 horas.</p></div>
           <div className="how__step reveal reveal-delay-1"><span className="how__num">02</span><h3>Organizo su día</h3><p>Recomendación de campo, hora de salida, almuerzo, transporte — todo resuelto antes de que llegue.</p></div>
-          <div className="how__step reveal reveal-delay-2"><span className="how__num">03</span><h3>Llegue y juegue</h3><p>Su único trabajo es disfrutar la vuelta. Y jugar mejor de lo que esperaba.</p></div>
+          <div className="how__step reveal reveal-delay-2"><span className="how__num">03</span><h3>Llegue y juegue</h3><p>Su único trabajo es disfrutar la vuelta.</p></div>
         </div>
       </section>
 
@@ -197,9 +197,9 @@ export default function HomePageES() {
           <p className="eyebrow">La experiencia</p>
           <h2 className="serif-display">La mayoría de los días de golf en Mallorca son una hora de salida y un hasta luego.</h2>
           <span className="gold-rule"></span>
-          <p>Pasé más de una década entrenando en China, donde las clases de golf costaban 500 € la hora y los clientes esperaban una mejora seria y medible — no simples ánimos. Antes de eso, entrené en Pebble Beach, en The Open Championship, en Évian, y pasé una temporada en un crucero alrededor del mundo por cuarenta países.</p>
-          <p>Ese bagaje da forma a cada vuelta que acompaño. Consejos genuinos a lo largo de la jornada — estrategia de campo, toma de decisiones, las cosas que la mayoría de los golfistas nunca escuchan. Un día del que seguirá hablando en el avión de vuelta a casa.</p>
-          <p>Todo está organizado. El campo. La hora de salida. La mesa para el almuerzo. Su única tarea es jugar — y jugar mejor de lo esperado.</p>
+          <p>Pasé más de una década entrenando en China, donde las clases de golf costaban 500 € la hora y los clientes querían mejora real, no solo ánimos. Antes de eso, entrené en Pebble Beach, en The Open Championship, en Évian, y pasé una temporada en un crucero alrededor del mundo por cuarenta países.</p>
+          <p>Ese bagaje da forma a cada vuelta que acompaño. Consejos genuinos a lo largo de la jornada — estrategia de campo, toma de decisiones, las cosas que la mayoría de los golfistas nunca escuchan. El tipo de día que hace que el vuelo de vuelta se pase rápido.</p>
+          <p>Todo está resuelto antes de que llegue — el campo, la hora de salida, la mesa para el almuerzo. Usted solo tiene que aparecer y jugar.</p>
           <Link href="/es/play-with-a-pro" className="btn btn--dark">Ver las experiencias →</Link>
         </div>
         <div className="what__right reveal reveal-delay-1">

@@ -5,25 +5,7 @@ export default function ContactForm_ES() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const [loading, setLoading] = useState(false)
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setLoading(true)
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, lang: 'ES' }),
-      })
-      if (!res.ok) throw new Error('Failed')
-      setSubmitted(true)
-    } catch {
-      alert('Something went wrong. Please email andy@mrmallorcagolf.com directly.')
-    } finally {
-      setLoading(false)
-    }
-  }
+  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
 
   return (
     <div className="contact-wrap">
@@ -104,19 +86,18 @@ export default function ContactForm_ES() {
                   <option>5+ — grupo grande / empresa</option>
                 </select>
               </div>
-                            <div className="form-group">
-                <label htmlFor="experience">¿Qué experiencia le interesa?</label>
-                <select id="experience" name="experience" className="form-control" value={form.experience} onChange={handleChange}>
-                  <option value="">Seleccionar experiencia</option>
-                  <option value="mallorca-round">La Vuelta de Mallorca — €350 p.p. + green fee</option>
-                  <option value="signature-day">El Día Signature — Desde €450 p.p. + green fee</option>
-                  <option value="full-experience">La Experiencia Completa — A consultar</option>
-                  <option value="not-sure">Aún no lo sé — aconséjeme</option>
-                </select>
+              <div className="form-group">
+                <label>Que experiencia le interesa?</label>
+                <div className="radio-group">
+                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">La Vuelta de Mallorca</span><span className="radio-option-price">Desde 500 EUR</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">El Dia Signature</span><span className="radio-option-price">Desde 650 EUR</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">La Experiencia Completa</span><span className="radio-option-price">A consultar</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Aun no se - aconsejerme</span></label>
+                </div>
               </div>
               <div className="form-group"><label htmlFor="message">Cualquier otra cosa que deba saber</label><textarea id="message" name="message" className="form-control" placeholder="Objetivos para el dia, campos, grupo mixto, peticiones especiales." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit" disabled={loading}>{loading ? 'Enviando…' : 'Enviar consulta &rarr;'}</button>
+                <button type="submit" className="btn-submit">Enviar consulta &rarr;</button>
                 <p className="form-note">Respondo personalmente a cada consulta en 24 horas.</p>
               </div>
             </form>

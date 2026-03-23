@@ -55,7 +55,7 @@ export default function About_SV() {
           <div className="creds reveal">
             <p className="creds__label">Meriter</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional (UK)</strong>Den högsta kvalifikationen inom brittisk golfcoaching</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional</strong>Den höga professionella kvalifikationen inom brittisk golfcoaching</span></li>
               <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management</strong>University of Birmingham</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>TPI Nivå 3 certifierad</strong>Titleist Performance Institute</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Trackman Master certifierad</strong>Först i Kina</span></li>

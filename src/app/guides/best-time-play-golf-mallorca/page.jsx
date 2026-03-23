@@ -5,19 +5,7 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: 'The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)',
   description: 'When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island — weather, green fees, course conditions, and crowds.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
-      'de': 'https://mrmallorcagolf.com/de/guides/best-time-play-golf-mallorca',
-      'es': 'https://mrmallorcagolf.com/es/guides/best-time-play-golf-mallorca',
-      'fr': 'https://mrmallorcagolf.com/fr/guides/best-time-play-golf-mallorca',
-      'zh': 'https://mrmallorcagolf.com/zh/guides/best-time-play-golf-mallorca',
-      'sv': 'https://mrmallorcagolf.com/sv/guides/best-time-play-golf-mallorca',
-      'nl': 'https://mrmallorcagolf.com/nl/guides/best-time-play-golf-mallorca',
-      'x-default': 'https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
-    },
-  },
+  alternates: { canonical: 'https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca' },
 }
 
 const meta = {

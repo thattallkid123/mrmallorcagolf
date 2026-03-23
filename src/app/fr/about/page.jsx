@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: "À propos d'Andy Griffiths — PGA Professionnel, Majorque",
-  description: "Andy Griffiths est un UK UK PGA Advanced Professional basé à Majorque. Anciennement Pebble Beach, Évian, 11 ans de coaching en Chine.",
+  description: "Andy Griffiths est un UK PGA Advanced Professional basé à Majorque. Anciennement Pebble Beach, Évian, 11 ans de coaching en Chine.",
   alternates: { canonical: 'https://mrmallorcagolf.com/fr/about' },
 }
 
@@ -17,7 +17,7 @@ export default function About_FR() {
           <p className="breadcrumb"><Link href="/fr">Accueil</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>À propos</span></p>
           <h1>Le Professionnel<br />derrière l'Expérience.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
-            <span className="cred-tag cred-tag--gold">UK UK PGA Advanced Professional</span>
+            <span className="cred-tag cred-tag--gold">UK PGA Advanced Professional</span>
             <span className="cred-tag">Trackman Master</span>
             <span className="cred-tag">TPI Level 3</span>
             <span className="cred-tag">Mallorca</span>
@@ -38,7 +38,7 @@ export default function About_FR() {
             <p className="chapter__label">Shanghai, 2014â€“2025</p>
             <h2>Onze ans au sommet du golf en Chine.</h2>
             <p>En 2014, j'ai déménagé à Shanghai. J'avais des objectifs précis â€” mettre en place le programme d'enseignement de la meilleure académie de Chine â€” et je suis resté onze années fructueuses.</p>
-            <p>La Chine à cette époque était un environnement extraordinaire pour coacher. Les leçons tournaient autour de 500 € de l'heure. Les clients attendaient une amélioration sérieuse et mesurable â€” pas seulement des encouragements.</p>
+            <p>La Chine à cette époque était un environnement extraordinaire pour coacher. Les leçons tournaient autour de 500 € de l'heure. Les clients attendaient une amélioration sérieuse et mesurable â€” c'était l'exigence.</p>
             <p>Je suis devenu le premier Trackman Master du pays, j'ai coaché des joueurs de l'équipe nationale chinoise, et j'ai construit une présence coaching sur Douyin qui a atteint des centaines de millions de vues. Je suis également devenu courant en mandarin.</p>
             <p>Après onze ans, j'avais accompli ce pour quoi j'étais venu. Ma première fille est née en 2023. L'attrait d'être plus proche de ma famille, et la chance de construire quelque chose à moi, sont devenus impossibles à ignorer.</p>
           </div>
@@ -48,14 +48,14 @@ export default function About_FR() {
             <p>J'ai déménagé à Majorque en mars 2025 avec ma femme Yina. Plus près de la famille au Royaume-Uni, du soleil toute l'année, une île de golf vraiment exceptionnelle que la plupart des gens ne valorisent pas assez.</p>
             <p>J'ai recommencé à jouer sérieusement. Parcourant chaque parcours de l'île. Redécouvrant ce que ça fait de se tenir sur un premier départ et de vraiment se soucier du score.</p>
             <div className="pull-quote"><p>&ldquo;La philosophie de coaching qui est née de ce retour au jeu est simple : les améliorations les plus rapides se produisent sur le parcours, pas au practice. Conditions réelles, décisions réelles, conséquences réelles.&rdquo;</p></div>
-            <p>Un UK PGA professionnel qui a passé plus d'une décennie à coacher en Asie, maintenant à la tête de journées golf privées sur l'une des meilleures îles de golf d'Europe. Si ça ressemble à la journée que vous cherchez â€” prenez contact.</p>
+            <p>Un UK PGA professionnel qui a passé plus d'une décennie à coacher en Asie, proposant désormais des journées golf privées sur l'une des meilleures îles de golf d'Europe. Si ça ressemble à la journée que vous cherchez â€” prenez contact.</p>
           </div>
         </main>
         <aside className="story__sidebar">
           <div className="creds reveal">
             <p className="creds__label">Qualifications</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK UK PGA Advanced Professional (UK)</strong>La qualification la plus élevée du golf britannique</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional (UK)</strong>L'une des qualifications professionnelles senior du golf britannique</span></li>
               <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management</strong>Université de Birmingham</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Certifié TPI Niveau 3</strong>Titleist Performance Institute</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Certifié Trackman Master</strong>Premier en Chine</span></li>
@@ -90,7 +90,7 @@ export default function About_FR() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Prêt à jouer ?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>Un UK UK PGA Advanced Professional. Une île de golf exceptionnelle. Votre tour.</h2>
+          <h2 className="serif-display" style={{color:'#fff'}}>Un UK PGA Advanced Professional. Une île de golf exceptionnelle. Votre tour.</h2>
           <p>Dites-moi vos dates, votre handicap et ce que vous cherchez. Je construirai la journée autour de vous.</p>
         </div>
         <div className="cta-final__right reveal">

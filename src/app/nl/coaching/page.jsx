@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'Golf Coaching op de Baan in Mallorca — PGA Professional',
-  description: 'Golfcoaching op de baan in Mallorca met UK UK PGA Advanced Professional Andy Griffiths. Echte verbetering in echte omstandigheden — voor bezoekende en vaste golfers.',
+  description: 'Golfcoaching op de baan in Mallorca met UK PGA Advanced Professional Andy Griffiths. Echte verbetering in echte omstandigheden — voor bezoekende en vaste golfers.',
   alternates: { canonical: 'https://mrmallorcagolf.com/nl/coaching' },
 }
 
@@ -28,7 +28,7 @@ export default function Coaching_NL() {
           <p>Coaching op de baan zet de les waar hij echt helpt. Op de fairway. In de rough. Op een helling met een wind die u niet verwachtte. Met een score die telt. Dáár veranderen spellen — en daar werken wij.</p>
           <div className="analogy-box">
             <p>&ldquo;Denk aan boksen. U kunt wekenlang op de boksbal trainen en klaar voelen. Dan heeft u uw eerste sparring en alles verandert. Golf is hetzelfde. De eerste tee is niet de driving range.&rdquo;</p>
-            <cite>— Andy Griffiths, UK UK PGA Advanced Professional</cite>
+            <cite>— Andy Griffiths, UK PGA Advanced Professional</cite>
           </div>
         </div>
         <div className="reveal">

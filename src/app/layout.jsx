@@ -29,9 +29,6 @@ export const metadata = {
   icons: {
     icon: '/favicon.svg',
   },
-  other: {
-    'msvalidate.01': '58ACA840A4A63D49F6487B17A93C02B4',
-  },
 }
 
 const PERSON_SCHEMA = {
@@ -86,8 +83,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N" />
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0Z2BRNWB4N');` }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
       </head>

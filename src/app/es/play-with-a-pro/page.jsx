@@ -18,9 +18,9 @@ export default function PlayWithAPro_ES() {
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/es" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Inicio</Link> &nbsp;/&nbsp; <span>Jugar con un Profesional</span></p>
-            <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Dias de Golf Privados · Mallorca</p>
-            <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Un Dia de Golf Privado en Mallorca.</h1>
-            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>No es una lección. No es una vuelta estándar. Un dia privado en uno de los mejores campos de la isla, con un UK PGA profesional que ha entrenado al mas alto nivel en tres continentes.</p>
+            <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Días de Golf Privados · Mallorca</p>
+            <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Un Día de Golf Privado en Mallorca.</h1>
+            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>No es una lección. No es una vuelta estándar. Un dia privado en uno de los mejores campos de la isla, con un UK PGA profesional que ha entrenado con dos décadas de experiencia en tres continentes.</p>
             <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>€350 p.p. + tarifa green</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/es/contact" className="btn btn--gold">Reserve su dia &rarr;</Link>
@@ -33,11 +33,11 @@ export default function PlayWithAPro_ES() {
       <section className="pwap-day">
         <div className="pwap-day__left reveal">
           <p className="eyebrow">Que incluye el dia</p>
-          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'1.5rem'}}>Antes de que llegue, ya se lo que debo observar.</h2>
-          <p>Antes de su llegada, rellena un breve cuestionario. Que le frustra, donde esta la brecha. Al llegar al primer tee, ya se lo que debo observar.</p>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'1.5rem'}}>Antes de que llegue, ya sé lo que debo observar.</h2>
+          <p>Antes de su llegada, rellena un breve cuestionario. Qué le frustra, dónde está la brecha. Al llegar al primer tee, ya sé lo que debo observar.</p>
           <p>Durante la vuelta, el coaching se integra de forma natural — no un comentario continuo, sino la observacion correcta en el momento correcto.</p>
           <p>He entrenado en entornos donde se esperaba una mejora seria y medible — jugadores de la selección nacional en China, entusiastas del golf por toda Asia.</p>
-          <div className="pull-quote"><p>&ldquo;Lo que la mayoria de los golfistas descubre es que se van jugando notablemente mejor y con mas confianza — y entendiendo por que, que es la parte que permanece.&rdquo;</p></div>
+          <div className="pull-quote"><p>&ldquo;Lo que la mayoría de los golfistas descubre es que se van jugando notablemente mejor y con mas confianza — y entendiendo por que, que es la parte que permanece.&rdquo;</p></div>
           <p>El analisis en el almuerzo no es un resumen. Es la conversacion que hace que todo el dia tenga sentido.</p>
         </div>
         <div className="pwap-day__right reveal">

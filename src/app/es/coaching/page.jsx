@@ -4,7 +4,7 @@ import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'Coaching de Golf en Campo en Mallorca — PGA Profesional',
-  description: 'Coaching de golf en campo en Mallorca con UK UK PGA Advanced Professional Andy Griffiths. Mejora real en condiciónes reales — para golfistas en visita y residentes.',
+  description: 'Coaching de golf en campo en Mallorca con UK PGA Advanced Professional Andy Griffiths. Mejora real en condiciónes reales — para golfistas en visita y residentes.',
   alternates: { canonical: 'https://mrmallorcagolf.com/es/coaching' },
 }
 
@@ -28,7 +28,7 @@ export default function Coaching_ES() {
           <p>El coaching en campo sitúa la lección donde realmente ayuda. En el fairway. En el rough. En una pendiente inesperada con un viento que no esperaba. Con un marcador que importa. Ahí es donde cambian los juegos — y ahí es donde trabajamos.</p>
           <div className="analogy-box">
             <p>&ldquo;Piense en el boxeo. Puede entrenar al saco durante semanas y sentirse preparado. Luego tiene su primer sparring y todo cambia. El golf es lo mismo. El primer tee no es la zona de práctica.&rdquo;</p>
-            <cite>— Andy Griffiths, UK UK PGA Advanced Professional</cite>
+            <cite>— Andy Griffiths, UK PGA Advanced Professional</cite>
           </div>
         </div>
         <div className="reveal">

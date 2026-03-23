@@ -169,7 +169,7 @@ export default function HomePageInner() {
             Many golf experiences in Mallorca are booked through a platform.<br />This is something else.
           </h2>
           <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.65)',lineHeight:1.85}}>
-            A private day hosted by a PGA Advanced Professional who has coached at the highest level across three continents — from national team players in China to golfers at major championship venues across Europe, Asia, and the United States. The expertise behind the day is what makes the difference. The golf is better. The insight is genuine.
+            A private day hosted by a PGA Advanced Professional with over two decades coaching across three continents — national team players in China, major championship venues in Europe, amateur and elite golfers across Asia and the United States. The expertise behind the day is what makes the difference. The golf is better. The insight is genuine.
           </p>
         </div>
         <div className="intro__right">
@@ -215,7 +215,7 @@ export default function HomePageInner() {
           <div className="how__step reveal reveal-delay-2">
             <span className="how__num">03</span>
             <h3>Show up and play</h3>
-            <p>Your only job is to enjoy the round. And play better than you expected.</p>
+            <p>Your job is to enjoy the round. Most people play better than they expected to.</p>
           </div>
         </div>
       </section>
@@ -294,9 +294,9 @@ export default function HomePageInner() {
           <p className="eyebrow">The experience</p>
           <h2 className="serif-display">Most golf days in Mallorca are a tee time and a wave goodbye.</h2>
           <span className="gold-rule"></span>
-          <p>I spent over a decade coaching in China, where golf lessons ran at €500 an hour and clients expected serious, measurable improvement — not just encouragement. Before that, I coached at Pebble Beach, The Open Championship, Evian, and spent a season on a world cruise across forty countries.</p>
-          <p>That background shapes every round I host. This is a private day on one of Mallorca&apos;s finest courses. Genuine advice throughout — course strategy, decision-making, the things most golfers never get told. A day you&apos;ll still be talking about on the flight home.</p>
-          <p>Everything is arranged. The course. The tee time. The lunch table. The only thing you have to do is play — and play better than you expected.</p>
+          <p>I spent over a decade coaching in China, where golf lessons ran at €500 an hour and clients came wanting real improvement, not just encouragement. Before that, I coached at Pebble Beach, The Open Championship, Evian, and spent a season on a world cruise across forty countries.</p>
+          <p>That background shapes every round I host. This is a private day on one of Mallorca&apos;s finest courses. Genuine advice throughout — course strategy, decision-making, the things that rarely come up in a standard lesson. A day you&apos;ll still be talking about on the flight home.</p>
+          <p>Everything is arranged before you arrive — course, tee time, lunch. Your only job on the day is to play.</p>
           <Link href="/play-with-a-pro" className="btn btn--dark">See the Experiences</Link>
         </div>
         <div className="what__right reveal reveal-delay-1">
@@ -331,8 +331,8 @@ export default function HomePageInner() {
       <section className="packages">
         <div className="packages__header reveal">
           <p className="eyebrow">Experiences &amp; Packages</p>
-          <h2 className="serif-display">One coach. Your course. Your day.</h2>
-          <p>Three levels. All private. All personally guided.</p>
+          <h2 className="serif-display">One coach. One course. Your day.</h2>
+          <p>Three levels of experience. All private, all personally guided by Andy.</p>
         </div>
         <div className="packages__grid">
           <div className="package reveal">

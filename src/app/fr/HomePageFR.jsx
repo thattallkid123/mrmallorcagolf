@@ -136,12 +136,12 @@ export default function HomePageFR() {
       <section className="how">
         <div className="how__header reveal">
           <p className="eyebrow">Comment ça marche</p>
-          <h2 className="serif-display">Trois étapes pour un parcours inoubliable.</h2>
+          <h2 className="serif-display">Voilà comment se déroule la journée.</h2>
         </div>
         <div className="how__steps">
           <div className="how__step reveal"><span className="how__num">01</span><h3>Prenez contact</h3><p>Indiquez-moi vos dates, votre handicap et ce que vous recherchez. Je vous réponds personnellement sous 24 heures.</p></div>
           <div className="how__step reveal reveal-delay-1"><span className="how__num">02</span><h3>Je construis votre journée</h3><p>Recommandation de parcours, heure de départ, déjeuner, transport — tout est réglé avant votre arrivée.</p></div>
-          <div className="how__step reveal reveal-delay-2"><span className="how__num">03</span><h3>Arrivez et jouez</h3><p>Votre seule mission : profiter du parcours. Et jouer mieux que prévu.</p></div>
+          <div className="how__step reveal reveal-delay-2"><span className="how__num">03</span><h3>Arrivez et jouez</h3><p>Votre seule mission : profiter du parcours.</p></div>
         </div>
       </section>
 
@@ -197,7 +197,7 @@ export default function HomePageFR() {
           <p className="eyebrow">L&apos;expérience</p>
           <h2 className="serif-display">La plupart des journées golf à Majorque, c&apos;est une heure de départ et un au revoir.</h2>
           <span className="gold-rule"></span>
-          <p>J&apos;ai passé plus d&apos;une décennie à coacher en Chine, où les leçons de golf coûtaient 500 € de l&apos;heure et où les clients attendaient des progrès sérieux et mesurables — pas de simples encouragements. Avant cela, j&apos;ai coaché à Pebble Beach, à The Open Championship, à Évian, et j&apos;ai passé une saison sur un tour du monde dans quarante pays.</p>
+          <p>J&apos;ai passé plus d&apos;une décennie à coacher en Chine, où les leçons de golf coûtaient 500 € de l&apos;heure et où les clients voulaient de vrais progrès, pas juste des encouragements. Avant cela, j&apos;ai coaché à Pebble Beach, à The Open Championship, à Évian, et j&apos;ai passé une saison sur un tour du monde dans quarante pays.</p>
           <p>Ce parcours façonne chaque ronde que j&apos;accompagne. De vrais conseils tout au long — stratégie de parcours, prise de décision, les choses que la plupart des golfeurs n&apos;entendent jamais. Une journée dont vous parlerez encore dans l&apos;avion du retour.</p>
           <p>Tout est organisé. Le parcours. L&apos;heure de départ. La table du déjeuner. Votre seule tâche : jouer — et jouer mieux que prévu.</p>
           <Link href="/fr/play-with-a-pro" className="btn btn--dark">Voir les expériences →</Link>
@@ -235,7 +235,7 @@ export default function HomePageFR() {
         <div className="packages__header reveal">
           <p className="eyebrow">Expériences &amp; Formules</p>
           <h2 className="serif-display">Des expériences golf privées conçues autour de vous.</h2>
-          <p>Trois formules. Toutes privées. Toutes accompagnées personnellement. La différence, c&apos;est la complétude de la journée.</p>
+          <p>Trois formules. Toutes privées, toutes accompagnées personnellement par Andy. La différence, c&apos;est la complétude de la journée.</p>
         </div>
         <div className="packages__grid">
           <div className="package reveal">

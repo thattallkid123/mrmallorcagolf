@@ -55,7 +55,7 @@ export default function About_ZH() {
           <div className="creds reveal">
             <p className="creds__label">资质认证</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>英国英国PGA高级职业教练（英国）</strong>英国高尔夫教练最高资质</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>英国英国PGA高级职业教练（英国）</strong>英国高尔夫业内的高级职业资质</span></li>
               <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>高尔夫管理学学士</strong>伯明翰大学</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>TPI三级认证</strong>Titleist表现学院</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Trackman大师认证</strong>中国首位</span></li>

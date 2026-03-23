@@ -106,7 +106,7 @@ export default function PlayWithAPro_SV() {
       <section className="pwap-packages" id="packages">
         <div className="reveal">
           <p className="eyebrow">Upplevelser & Paket</p>
-          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.5rem',marginBottom:'1rem'}}>Tre nivåer. Alla privata. Alla personligt guidade.</h2>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.5rem',marginBottom:'1rem'}}>Tre nivåer. Alla privata, alla personligt guidade.</h2>
           <p style={{fontSize:'1rem',color:'var(--taupe)',lineHeight:1.8,maxWidth:560,marginBottom:'3rem'}}>Skillnaden är hur komplett dagen ar. Alla tre inkluderär samma niva av coachingexpertis.</p>
         </div>
         <div className="pricing-grid">

@@ -9,7 +9,7 @@ export const metadata = {
 }
 
 const credentials = [
-  { title: 'UK PGA Advanced Professional (UK)', detail: 'Die höchste Qualifikation im britischen Golfcoaching' },
+  { title: 'UK PGA Advanced Professional (UK)', detail: 'Eine der höheren Berufsqualifikationen im britischen Golf' },
   { title: 'Applied Golf Management', detail: 'University of Birmingham' },
   { title: 'TPI Level 3 zertifiziert', detail: 'Titleist Performance Institute' },
   { title: 'Trackman Master zertifiziert', detail: 'Erster in China' },

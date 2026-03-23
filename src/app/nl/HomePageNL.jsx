@@ -115,7 +115,7 @@ export default function HomePageNL() {
             Veel golfervaringen op Mallorca worden via een platform geboekt.<br />Dit is iets anders.
           </h2>
           <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.6)',lineHeight:1.85}}>
-            Een privédag met een PGA Advanced Professional die op het hoogste niveau op drie continenten heeft gecoacht — van Chinese nationale teamspelers tot golfers op grote wedstrijdlocaties in Europa, Azië en de VS. De expertise achter de dag maakt het verschil. Het golf is beter. De inzichten zijn echt.
+            Een privédag met een PGA Advanced Professional met twee decennia coaching op drie continenten — van Chinese nationale teamspelers tot golfers op grote wedstrijdlocaties in Europa, Azië en de VS. De expertise achter de dag maakt het verschil. Het golf is beter. De inzichten zijn echt.
           </p>
         </div>
         <div className="intro__right">

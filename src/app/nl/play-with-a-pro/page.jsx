@@ -20,7 +20,7 @@ export default function PlayWithAPro_NL() {
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/nl" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Home</Link> &nbsp;/&nbsp; <span>Spelen met een Pro</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Privegolfdagen · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Een Privegolfdag op Mallorca.</h1>
-            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Geen les. Geen standaard ronde. Een privitage dag op een van de mooiste banen van het eiland, begeleid door een UK PGA professional die op het hoogste niveau op drie continenten heeft gecoacht.</p>
+            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Geen les. Geen standaard ronde. Een privitage dag op een van de mooiste banen van het eiland, begeleid door een UK PGA professional die met twee decennia ervaring op drie continenten heeft gecoacht.</p>
             <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>€350 p.p. + green fee</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/nl/contact" className="btn btn--gold">Reserveer uw dag &rarr;</Link>
@@ -106,7 +106,7 @@ export default function PlayWithAPro_NL() {
       <section className="pwap-packages" id="packages">
         <div className="reveal">
           <p className="eyebrow">Ervaringen & Pakketten</p>
-          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.5rem',marginBottom:'1rem'}}>Drie niveaus. Allemaal privé. Allemaal persoonlijk begeleid.</h2>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.5rem',marginBottom:'1rem'}}>Drie niveaus. Allemaal privé, allemaal persoonlijk begeleid.</h2>
           <p style={{fontSize:'1rem',color:'var(--taupe)',lineHeight:1.8,maxWidth:560,marginBottom:'3rem'}}>Het verschil is hoe compleet de dag is. Alle drie bevatten hetzelfde niveau van expertise op de baan.</p>
         </div>
         <div className="pricing-grid">

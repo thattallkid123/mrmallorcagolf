@@ -20,7 +20,7 @@ export default function PlayWithAPro_FR() {
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/fr" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Accueil</Link> &nbsp;/&nbsp; <span>Jouer avec un Pro</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Journées Golf Privées · Majorque</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Une Journée Golf Privée a Majorque.</h1>
-            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Pas une leçon. Pas un tour standard. Une journée privée sur l'un des plus beaux parcours de l'ile, animée par un UK PGA professionnel qui a coache au plus haut niveau sur trois continents.</p>
+            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Pas une leçon. Pas un tour standard. Une journée privée sur l'un des plus beaux parcours de l'île, animée par un UK PGA Advanced Professional avec deux décennies de coaching sur trois continents.</p>
             <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>€350 p.p. + green fee</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/fr/contact" className="btn btn--gold">Reserver votre journée &rarr;</Link>
@@ -33,9 +33,9 @@ export default function PlayWithAPro_FR() {
       <section className="pwap-day">
         <div className="pwap-day__left reveal">
           <p className="eyebrow">Ce que la journée implique</p>
-          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'1.5rem'}}>Avant votre arrivee, je sais déjà quoi observer.</h2>
-          <p>Avant votre arrivee, vous remplissez un court questionnaire. Ce qui vous frustre, ou est l'écart. Quand nous arrivons au premier depart, je sais déjà quoi observer.</p>
-          <p>Pendant le tour, le coaching s'integre naturellement — pas un commentaire continu, mais la bonne observation au bon moment. Des décisions de gestion de parcours que vous n'aviez pas envisagees.</p>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'1.5rem'}}>Avant votre arrivée, je sais déjà quoi observer.</h2>
+          <p>Avant votre arrivée, vous remplissez un court questionnaire. Ce qui vous frustre, ou est l'écart. Quand nous arrivons au premier depart, je sais déjà quoi observer.</p>
+          <p>Pendant le tour, le coaching s'intègre naturellement — pas un commentaire continu, mais la bonne observation au bon moment. Des décisions de gestion de parcours que vous n'aviez pas envisagées.</p>
           <p>J'ai coache dans des environnements ou l'attente etait une amélioration serieuse et mesurable — des joueurs de l'équipe nationale en Chine, des mordus de golf a travers l'Asie.</p>
           <div className="pull-quote"><p>&ldquo;Ce que la plupart des golfeurs constatent : ils repartent en jouant notablement mieux et avec plus de confiance — et en comprenant pourquoi.&rdquo;</p></div>
           <p>Le débriefing autour du dejeuner n'est pas un resume. C'est la conversation qui donne un sens a toute la journée.</p>

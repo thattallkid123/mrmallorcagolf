@@ -5,19 +5,6 @@ import RevealObserver from '../../components/RevealObserver'
 export const metadata = {
   title: 'Play With a Pro — Private Golf Days in Mallorca',
   description: 'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person + green fee.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/play-with-a-pro',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/play-with-a-pro',
-      'de': 'https://mrmallorcagolf.com/de/play-with-a-pro',
-      'es': 'https://mrmallorcagolf.com/es/play-with-a-pro',
-      'fr': 'https://mrmallorcagolf.com/fr/play-with-a-pro',
-      'zh': 'https://mrmallorcagolf.com/zh/play-with-a-pro',
-      'sv': 'https://mrmallorcagolf.com/sv/play-with-a-pro',
-      'nl': 'https://mrmallorcagolf.com/nl/play-with-a-pro',
-      'x-default': 'https://mrmallorcagolf.com/play-with-a-pro',
-    },
-  },
 }
 
 const testimonials = [
@@ -38,7 +25,7 @@ export default function PlayWithAPro() {
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Home</Link> &nbsp;/&nbsp; <span>Play with a Pro</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Private Golf Days · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>A Private Golf Day<br />in Mallorca.</h1>
-            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'2rem'}}>Not a lesson. Not a standard round. A private day on one of the island&apos;s finest courses, hosted by a PGA professional who has coached at the highest level across three continents.</p>
+            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'2rem'}}>Not a lesson. Not a standard round. A private day on one of the island&apos;s finest courses, hosted by a PGA Advanced Professional with two decades of coaching across three continents.</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/contact" className="btn btn--gold">Book Your Day &rarr;</Link>
               <a href="#packages" className="btn btn--outline-white">See Packages</a>
@@ -52,7 +39,7 @@ export default function PlayWithAPro() {
           <p className="eyebrow">What the day involves</p>
           <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'1.5rem'}}>Before you arrive, I already know what to watch for.</h2>
           <p>Before you arrive, you complete a short questionnaire. What frustrates you. Where the gap is between your range game and your score. What a good day looks like to you. By the time we reach the first tee, I already know what to watch for.</p>
-          <p>During the round, the coaching is woven in naturally — not a running commentary, but the right observation at the right moment. Course management decisions you haven&apos;t considered. The specific adjustments that move the needle rather than the ones that just sound technical.</p>
+          <p>During the round, the coaching is woven in naturally — not a running commentary, but the right observation at the right moment. Course management decisions you haven&apos;t considered. The adjustments that actually change something, rather than the ones that just sound right.</p>
           <div className="pull-quote"><p>&ldquo;What most golfers find is that they leave playing noticeably better and feeling more confident than they arrived — and understanding why, which is the part that stays with you.&rdquo;</p></div>
         </div>
         <div className="pwap-day__right reveal">
@@ -116,8 +103,8 @@ export default function PlayWithAPro() {
       <section className="pwap-packages" id="packages">
         <div className="reveal">
           <p className="eyebrow">Experiences &amp; Packages</p>
-          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.5rem',marginBottom:'1rem'}}>Three levels. All private. All personally guided.</h2>
-          <p style={{fontSize:'1rem',color:'var(--taupe)',lineHeight:1.8,maxWidth:560,marginBottom:'3rem'}}>The difference is how complete the day is. All three include the same level of on-course expertise.</p>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.5rem',marginBottom:'1rem'}}>Three levels of experience. All private, all personally guided.</h2>
+          <p style={{fontSize:'1rem',color:'var(--taupe)',lineHeight:1.8,maxWidth:560,marginBottom:'3rem'}}>The difference is how complete the day is. The standard of company is the same across all three.</p>
         </div>
         <div className="pricing-grid">
           <div className="tier reveal">

@@ -5,19 +5,7 @@ import PostLayout from '../PostLayout'
 export const metadata = {
   title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)",
   description: "Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.",
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/guides/son-gual-review',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/guides/son-gual-review',
-      'de': 'https://mrmallorcagolf.com/de/guides/son-gual-review',
-      'es': 'https://mrmallorcagolf.com/es/guides/son-gual-review',
-      'fr': 'https://mrmallorcagolf.com/fr/guides/son-gual-review',
-      'zh': 'https://mrmallorcagolf.com/zh/guides/son-gual-review',
-      'sv': 'https://mrmallorcagolf.com/sv/guides/son-gual-review',
-      'nl': 'https://mrmallorcagolf.com/nl/guides/son-gual-review',
-      'x-default': 'https://mrmallorcagolf.com/guides/son-gual-review',
-    },
-  },
+  alternates: { canonical: 'https://mrmallorcagolf.com/guides/son-gual-review' },
 }
 
 const meta = {

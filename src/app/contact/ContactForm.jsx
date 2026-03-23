@@ -8,24 +8,10 @@ export default function ContactForm() {
 
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
 
-  const [loading, setLoading] = useState(false)
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    setLoading(true)
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, lang: 'EN' }),
-      })
-      if (!res.ok) throw new Error('Failed')
-      setSubmitted(true)
-    } catch {
-      alert('Something went wrong. Please email andy@mrmallorcagolf.com directly.')
-    } finally {
-      setLoading(false)
-    }
+    // In production: POST to /api/contact or use Formspree/Resend
+    setSubmitted(true)
   }
 
   return (
@@ -136,14 +122,21 @@ export default function ContactForm() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="experience">Which experience interests you?</label>
-                <select id="experience" name="experience" className="form-control" value={form.experience} onChange={handleChange}>
-                  <option value="">Select an experience</option>
-                  <option value="mallorca-round">The Mallorca Round — €350 pp + green fee</option>
-                  <option value="signature-day">The Signature Day — From €450 pp + green fee</option>
-                  <option value="full-experience">The Full Experience — On enquiry</option>
-                  <option value="not-sure">Not sure yet — advise me</option>
-                </select>
+                <label>Which experience interests you?</label>
+                <div className="radio-group">
+                  {[
+                    ['mallorca-round', 'The Mallorca Round', 'From €500'],
+                    ['signature-day', 'The Signature Day', 'From €650'],
+                    ['full-experience', 'The Full Experience', 'On enquiry'],
+                    ['not-sure', 'Not sure yet — advise me', ''],
+                  ].map(([val, label, price]) => (
+                    <label key={val} className="radio-option">
+                      <input type="radio" name="experience" value={val} checked={form.experience === val} onChange={handleChange} />
+                      <span className="radio-option-label">{label}</span>
+                      {price && <span className="radio-option-price">{price}</span>}
+                    </label>
+                  ))}
+                </div>
               </div>
 
               <div className="form-group">
@@ -152,7 +145,7 @@ export default function ContactForm() {
               </div>
 
               <div className="form-submit">
-                <button type="submit" className="btn-submit" disabled={loading}>{loading ? 'Sending…' : 'Send Enquiry →'}</button>
+                <button type="submit" className="btn-submit">Send Enquiry &rarr;</button>
                 <p className="form-note">I respond personally to every enquiry within 24 hours. Your details are used only to arrange your experience.</p>
               </div>
             </form>
