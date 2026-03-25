@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
+import CareerStrip from '../../components/CareerStrip'
 
 export const metadata = {
   title: 'About Andy Griffiths — PGA Professional, Mallorca',
@@ -8,25 +9,18 @@ export const metadata = {
 }
 
 const credentials = [
-  { title: 'PGA Advanced Professional (UK)', detail: 'One of the senior professional qualifications in UK golf' },
-  { title: 'Applied Golf Management', detail: 'University of Birmingham' },
+  { title: 'UKPGA Advanced Professional', detail: 'Over 15,000 hours of coaching given' },
+  { title: 'Applied Golf Management Studies', detail: 'University of Birmingham' },
   { title: 'TPI Level 3 Certified', detail: 'Titleist Performance Institute' },
   { title: 'Trackman Master Certified', detail: 'First in China' },
-  { title: 'US Kids Golf Top 50', detail: 'Coach Worldwide' },
+  { title: 'US Kids Golf', detail: 'Top 50 Coach Worldwide' },
   { title: '11 years in Shanghai', detail: 'Fluent Mandarin' },
-  { title: 'Chinese national team', detail: 'Elite junior and competition coaching' },
-  { title: 'Hundreds of millions of views', detail: 'Golf coaching content on Douyin' },
-  { title: 'Published author', detail: 'BOOK_LINK', isBookLink: true },
+  { title: 'Chinese National Team', detail: 'Elite junior and competition coaching' },
+  { title: 'Hundreds of millions of views', detail: 'Golf coaching video content on Douyin' },
+  { title: 'Published Author', detail: 'BOOK_LINK', isBookLink: true },
   { title: 'Based in Mallorca', detail: 'Since March 2025' },
 ]
 
-const venues = [
-  { name: 'Pebble Beach', detail: 'California, USA' },
-  { name: 'The Open Championship', detail: 'UK' },
-  { name: "Evian Championship", detail: "France · Women's Major" },
-  { name: 'Doral', detail: 'Miami, USA' },
-  { name: 'Shanghai', detail: 'China · 11 years' },
-]
 
 export default function About() {
   return (
@@ -85,7 +79,7 @@ export default function About() {
             <img
               src="/images/about-andy-colour.jpg"
               alt="Andy Griffiths PGA professional, Mallorca"
-              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 60%',display:'block'}}
+              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
             />
           </div>
           <div className="creds reveal">
@@ -107,18 +101,7 @@ export default function About() {
         </aside>
       </div>
 
-      <section className="venues reveal">
-        <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>Venues &amp; experience</p>
-        <h2>Where the career was built.</h2>
-        <div className="venues__grid">
-          {venues.map((v, i) => (
-            <div key={i} className="venue">
-              <p className="venue__name">{v.name}</p>
-              <p className="venue__detail">{v.detail}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <CareerStrip />
 
       <section className="cta-final">
         <div className="cta-final__left reveal">

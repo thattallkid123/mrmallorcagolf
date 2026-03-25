@@ -89,8 +89,8 @@ export default function ContactForm_FR() {
               <div className="form-group">
                 <label>Quelle experience vous interesse ?</label>
                 <div className="radio-group">
-                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">Le Tour de Majorque</span><span className="radio-option-price">A partir de 500 EUR</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">La Journee Signature</span><span className="radio-option-price">A partir de 650 EUR</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">Le Tour de Majorque</span><span className="radio-option-price">€350 p.p. + green fee</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">La Journée Signature</span><span className="radio-option-price">À partir de €450 p.p. + green fee</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">L'Experience Complete</span><span className="radio-option-price">Sur devis</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Pas encore sur(e) - conseillez-moi</span></label>
                 </div>

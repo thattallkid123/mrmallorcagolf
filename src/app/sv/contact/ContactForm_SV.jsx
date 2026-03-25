@@ -89,8 +89,8 @@ export default function ContactForm_SV() {
               <div className="form-group">
                 <label>Vilken upplevelse intresserar dig?</label>
                 <div className="radio-group">
-                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">Mallorca-rundan</span><span className="radio-option-price">Från 500 €</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">Signature-dagen</span><span className="radio-option-price">Från 650 €</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">Mallorca-rundan</span><span className="radio-option-price">€350 per person + green fee</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">Signature-dagen</span><span className="radio-option-price">Från €450 per person + green fee</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">Den Kompletta Upplevelsen</span><span className="radio-option-price">På förfrågan</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Inte säker än — ge mig råd</span></label>
                 </div>

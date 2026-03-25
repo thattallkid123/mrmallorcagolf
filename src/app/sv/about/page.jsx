@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import CareerStrip from '../../../components/CareerStrip'
 
 export const metadata = {
   title: 'Om Andy Griffiths — UK PGA-proffs, Mallorca',
@@ -60,20 +61,20 @@ export default function About_SV() {
             <img
               src="/images/about-andy-colour.jpg"
               alt="Andy Griffiths PGA professional, Mallorca"
-              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 20%',display:'block'}}
+              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
             />
           </div>
           <div className="creds reveal">
             <p className="creds__label">Meriter</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional</strong>Den höga professionella kvalifikationen inom brittisk golfcoaching</span></li>
-              <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management</strong>University of Birmingham</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UKPGA Advanced Professional</strong>Över 15 000 coachingtimmar genomförda</span></li>
+              <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management Studies</strong>University of Birmingham</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>TPI Nivå 3 certifierad</strong>Titleist Performance Institute</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Trackman Master certifierad</strong>Först i Kina</span></li>
-              <li key={4} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>US Kids Golf Top 50</strong>Coach världen över</span></li>
+              <li key={4} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>US Kids Golf</strong>Top 50 Coach världen över</span></li>
               <li key={5} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>11 år i Shanghai</strong>Flytande mandarin</span></li>
-              <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Kinesiska landslaget</strong>Elit junior- och tävlingscoaching</span></li>
-              <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Hundratals miljoner visningar</strong>Golfcoachinginnehåll på Douyin</span></li>
+              <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Kinesiska Landslaget</strong>Elit junior- och tävlingscoaching</span></li>
+              <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Hundratals miljoner visningar</strong>Golfcoaching videoinnehåll på Douyin</span></li>
               <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Publicerad författare</strong><a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a></span></li>
               <li key={9} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Bosatt på Mallorca</strong>Sedan mars 2025</span></li>
             </ul>
@@ -86,17 +87,7 @@ export default function About_SV() {
         </aside>
       </div>
 
-      <section className="venues reveal">
-        <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>Arenor & erfarenhet</p>
-        <h2>Där karriären byggdes.</h2>
-        <div className="venues__grid">
-            <div key={0} className="venue"><p className="venue__name">Pebble Beach</p><p className="venue__detail">Kalifornien, USA</p></div>
-            <div key={1} className="venue"><p className="venue__name">The Open Championship</p><p className="venue__detail">Storbritannien</p></div>
-            <div key={2} className="venue"><p className="venue__name">Evian Championship</p><p className="venue__detail">Frankrike · Dam-major</p></div>
-            <div key={3} className="venue"><p className="venue__name">Doral</p><p className="venue__detail">Miami, USA</p></div>
-            <div key={4} className="venue"><p className="venue__name">Shanghai</p><p className="venue__detail">Kinå · 11 år</p></div>
-        </div>
-      </section>
+      <CareerStrip label="Arenor & erfarenhet" heading="Där karriären byggdes." />
 
       <section className="cta-final">
         <div className="cta-final__left reveal">

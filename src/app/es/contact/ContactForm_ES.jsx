@@ -89,8 +89,8 @@ export default function ContactForm_ES() {
               <div className="form-group">
                 <label>Que experiencia le interesa?</label>
                 <div className="radio-group">
-                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">La Vuelta de Mallorca</span><span className="radio-option-price">Desde 500 EUR</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">El Dia Signature</span><span className="radio-option-price">Desde 650 EUR</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">La Vuelta de Mallorca</span><span className="radio-option-price">€350 p.p. + tarifa green</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">El Día Signature</span><span className="radio-option-price">Desde €450 p.p. + tarifa green</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">La Experiencia Completa</span><span className="radio-option-price">A consultar</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Aun no se - aconsejerme</span></label>
                 </div>

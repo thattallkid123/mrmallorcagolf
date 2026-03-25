@@ -121,8 +121,8 @@ export default function ContactForm() {
                 <label>Which experience interests you?</label>
                 <div className="radio-group">
                   {[
-                    ['mallorca-round', 'The Mallorca Round', 'From €500'],
-                    ['signature-day', 'The Signature Day', 'From €650'],
+                    ['mallorca-round', 'The Mallorca Round', '€350 + green fee'],
+                    ['signature-day', 'The Signature Day', 'From €450 + green fee'],
                     ['full-experience', 'The Full Experience', 'On enquiry'],
                     ['not-sure', 'Not sure yet — advise me', ''],
                   ].map(([val, label, price]) => (

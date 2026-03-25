@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import CareerStrip from '../../../components/CareerStrip'
 
 export const metadata = {
   title: "À propos d'Andy Griffiths — PGA Professionnel, Majorque",
@@ -60,20 +61,20 @@ export default function About_FR() {
             <img
               src="/images/about-andy-colour.jpg"
               alt="Andy Griffiths PGA professional, Mallorca"
-              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 20%',display:'block'}}
+              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
             />
           </div>
           <div className="creds reveal">
             <p className="creds__label">Qualifications</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UK PGA Advanced Professional (UK)</strong>L'une des qualifications professionnelles senior du golf britannique</span></li>
-              <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management</strong>Université de Birmingham</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UKPGA Advanced Professional</strong>Plus de 15 000 heures de coaching dispensées</span></li>
+              <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Applied Golf Management Studies</strong>Université de Birmingham</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Certifié TPI Niveau 3</strong>Titleist Performance Institute</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Certifié Trackman Master</strong>Premier en Chine</span></li>
-              <li key={4} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>US Kids Golf Top 50</strong>Coach mondial</span></li>
+              <li key={4} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>US Kids Golf</strong>Top 50 Coach mondial</span></li>
               <li key={5} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>11 ans à Shanghai</strong>Mandarin courant</span></li>
-              <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Équipe nationale chinoise</strong>Coaching élite juniors et compétition</span></li>
-              <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Des centaines de millions de vues</strong>Contenu coaching golf sur Douyin</span></li>
+              <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Équipe Nationale Chinoise</strong>Coaching élite juniors et compétition</span></li>
+              <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Des centaines de millions de vues</strong>Contenu vidéo de coaching golf sur Douyin</span></li>
               <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Auteur publié</strong><a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a></span></li>
               <li key={9} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Basé à Majorque</strong>Depuis mars 2025</span></li>
             </ul>
@@ -86,17 +87,7 @@ export default function About_FR() {
         </aside>
       </div>
 
-      <section className="venues reveal">
-        <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>Lieux & expérience</p>
-        <h2>Où la carrière s'est construite.</h2>
-        <div className="venues__grid">
-            <div key={0} className="venue"><p className="venue__name">Pebble Beach</p><p className="venue__detail">Californie, USA</p></div>
-            <div key={1} className="venue"><p className="venue__name">The Open Championship</p><p className="venue__detail">Royaume-Uni</p></div>
-            <div key={2} className="venue"><p className="venue__name">Evian Championship</p><p className="venue__detail">France Â· Major Dames</p></div>
-            <div key={3} className="venue"><p className="venue__name">Doral</p><p className="venue__detail">Miami, USA</p></div>
-            <div key={4} className="venue"><p className="venue__name">Shanghai</p><p className="venue__detail">Chine Â· 11 ans</p></div>
-        </div>
-      </section>
+      <CareerStrip label="Lieux & expérience" heading="Où la carrière s'est construite." />
 
       <section className="cta-final">
         <div className="cta-final__left reveal">

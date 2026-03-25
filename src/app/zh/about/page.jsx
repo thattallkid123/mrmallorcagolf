@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import CareerStrip from '../../../components/CareerStrip'
 
 export const metadata = {
   title: '关于 Andy Griffiths — PGA职业球手，马略卡岛',
@@ -60,20 +61,20 @@ export default function About_ZH() {
             <img
               src="/images/about-andy-colour.jpg"
               alt="Andy Griffiths PGA professional, Mallorca"
-              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 20%',display:'block'}}
+              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
             />
           </div>
           <div className="creds reveal">
             <p className="creds__label">资质认证</p>
             <ul className="cred-list">
-              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>英国英国PGA高级职业教练（英国）</strong>英国高尔夫业内的高级职业资质</span></li>
-              <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>高尔夫管理学学士</strong>伯明翰大学</span></li>
+              <li key={0} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>UKPGA高级职业教练</strong>逾15,000小时执教经验</span></li>
+              <li key={1} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>高尔夫管理学研究</strong>伯明翰大学</span></li>
               <li key={2} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>TPI三级认证</strong>Titleist表现学院</span></li>
               <li key={3} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>Trackman大师认证</strong>中国首位</span></li>
-              <li key={4} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>美国青少年高尔夫Top 50</strong>全球教练</span></li>
+              <li key={4} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>美国青少年高尔夫</strong>全球Top 50教练</span></li>
               <li key={5} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>在上海执教11年</strong>普通话流利</span></li>
               <li key={6} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>中国国家队</strong>精英青少年与竞技教练</span></li>
-              <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>数亿次播放量</strong>抖音高尔夫教学内容</span></li>
+              <li key={7} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>数亿次播放量</strong>抖音高尔夫教学视频内容</span></li>
               <li key={8} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>已出版作者</strong>《<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:"var(--gold)",textDecoration:"none"}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a>》，2016年</span></li>
               <li key={9} className="cred-item"><span className="cred-check">&#10003;</span><span className="cred-text"><strong>现居马略卡岛</strong>自2025年3月起</span></li>
             </ul>
@@ -86,17 +87,7 @@ export default function About_ZH() {
         </aside>
       </div>
 
-      <section className="venues reveal">
-        <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>执教地点与经历</p>
-        <h2>职业生涯的足迹。</h2>
-        <div className="venues__grid">
-            <div key={0} className="venue"><p className="venue__name">圆石滩</p><p className="venue__detail">加利福尼亚，美国</p></div>
-            <div key={1} className="venue"><p className="venue__name">英国公开赛</p><p className="venue__detail">英国</p></div>
-            <div key={2} className="venue"><p className="venue__name">依云锦标赛</p><p className="venue__detail">法国 · 女子大满贯</p></div>
-            <div key={3} className="venue"><p className="venue__name">多拉尔</p><p className="venue__detail">迈阿密，美国</p></div>
-            <div key={4} className="venue"><p className="venue__name">上海</p><p className="venue__detail">中国 · 11年</p></div>
-        </div>
-      </section>
+      <CareerStrip label="执教地点与经历" heading="职业生涯的足迹。" />
 
       <section className="cta-final">
         <div className="cta-final__left reveal">

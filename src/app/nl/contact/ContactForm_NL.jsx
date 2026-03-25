@@ -89,8 +89,8 @@ export default function ContactForm_NL() {
               <div className="form-group">
                 <label>Welke ervaring interesseert u?</label>
                 <div className="radio-group">
-                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">De Mallorca Ronde</span><span className="radio-option-price">Vanaf 500 EUR</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">De Signature Dag</span><span className="radio-option-price">Vanaf 650 EUR</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">De Mallorca Ronde</span><span className="radio-option-price">€350 p.p. + green fee</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">De Signature Dag</span><span className="radio-option-price">Vanaf €450 p.p. + green fee</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">De Volledige Ervaring</span><span className="radio-option-price">Op aanvraag</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Nog niet zeker - adviseer me</span></label>
                 </div>

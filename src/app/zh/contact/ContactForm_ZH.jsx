@@ -98,8 +98,8 @@ export default function ContactForm_ZH() {
               <div className="form-group">
                 <label>您对哪种体验感兴趣？</label>
                 <div className="radio-group">
-                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">马略卡经典之旅</span><span className="radio-option-price">每人起价500欧元</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">招牌全日体验</span><span className="radio-option-price">每人起价650欧元</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">马略卡经典之旅</span><span className="radio-option-price">每人€350 + 果岭费</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">招牌全日体验</span><span className="radio-option-price">每人起价€450 + 果岭费</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">至尊定制体验</span><span className="radio-option-price">价格面议</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">尚未确定 - 请给我建议</span></label>
                 </div>

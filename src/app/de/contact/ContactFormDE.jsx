@@ -92,8 +92,8 @@ export default function ContactFormDE() {
                 <label>Welches Erlebnis interessiert Sie?</label>
                 <div className="radio-group">
                   {[
-                    ['mallorca-round', 'Die Mallorca-Runde', 'Ab €500'],
-                    ['signature-day', 'Der Signature-Tag', 'Ab €650'],
+                    ['mallorca-round', 'Die Mallorca-Runde', '€350 p.P. + Green Fee'],
+                    ['signature-day', 'Der Signature-Tag', 'Ab €450 p.P. + Green Fee'],
                     ['full-experience', 'Das Gesamterlebnis', 'Auf Anfrage'],
                     ['not-sure', 'Noch unsicher — bitte beraten', ''],
                   ].map(([val, label, price]) => (
