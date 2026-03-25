@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import Script from 'next/script'
 
 export const viewport = {
   width: 'device-width',
@@ -20,11 +21,13 @@ export const metadata = {
     siteName: 'Mr Mallorca Golf',
     title: "Mr Mallorca Golf — Play Mallorca's Best Courses with a PGA Professional",
     description: 'Private golf experiences in Mallorca with a PGA Advanced Professional. Full days on Son Gual, Alcanada, and more.',
+    images: [{ url: 'https://mrmallorcagolf.com/images/hero-main.jpg', width: 1600, height: 660 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Mr Mallorca Golf — Play Mallorca's Best Courses with a PGA Professional",
     description: 'Private golf experiences in Mallorca with a PGA Advanced Professional.',
+    images: ['https://mrmallorcagolf.com/images/hero-main.jpg'],
   },
   robots: {
     index: true,
@@ -88,6 +91,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0Z2BRNWB4N');
+          `}
+        </Script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
       </head>
