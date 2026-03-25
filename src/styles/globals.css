@@ -39,7 +39,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--taupe);
+  color: #5C5046;
 }
 .eyebrow--light { color: rgba(255,255,255,0.55); }
 .eyebrow--gold  { color: var(--gold-light); }
@@ -292,7 +292,7 @@ body {
   max-width: 260px;
 }
 .footer__brand .nav__logo-text { color: var(--white); }
-.footer__col h4 {
+.footer__col h3 {
   font-size: 9px;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -514,7 +514,7 @@ body {
 .what__feature { padding: 24px 0; border-bottom: 1px solid var(--linen); display: flex; gap: 20px; align-items: flex-start; }
 .what__feature:first-child { border-top: 1px solid var(--linen); }
 .what__feature-icon { width: 36px; height: 36px; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; font-style: italic; }
-.what__feature-text h4 { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--deep); margin-bottom: 5px; }
+.what__feature-text h3 { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--deep); margin-bottom: 5px; }
 .what__feature-text p { font-size: 0.87rem; color: var(--taupe); line-height: 1.7; margin: 0; }
 
 .testimonials { background: var(--deep); padding: 100px 40px; }

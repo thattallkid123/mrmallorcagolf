@@ -30,7 +30,7 @@ export default function Footer({ lang }) {
       </div>
 
       <div className="footer__col">
-        <h4>{c.experiences}</h4>
+        <h3>{c.experiences}</h3>
         <ul>
           <li><Link href={`${pre}/play-with-a-pro`}>{c.pwap}</Link></li>
           <li><Link href={`${pre}/coaching`}>{c.coaching}</Link></li>
@@ -39,7 +39,7 @@ export default function Footer({ lang }) {
       </div>
 
       <div className="footer__col">
-        <h4>{c.guide}</h4>
+        <h3>{c.guide}</h3>
         <ul>
           <li><Link href={`${pre}/golf-courses`}>{c.allCourses}</Link></li>
           <li><Link href={`${pre}/golf-courses#son-gual`}>Son Gual</Link></li>
@@ -48,7 +48,7 @@ export default function Footer({ lang }) {
       </div>
 
       <div className="footer__col">
-        <h4>{c.about}</h4>
+        <h3>{c.about}</h3>
         <ul>
           <li><Link href={`${pre}/about`}>{c.about}</Link></li>
           <li><a href="https://www.instagram.com/mrmallorcagolf" target="_blank" rel="noopener noreferrer">Instagram</a></li>

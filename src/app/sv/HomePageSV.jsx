@@ -128,7 +128,7 @@ export default function HomePageSV() {
       
       {/* DOUYIN STRIP */}
       <section style={{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}>
-        <p style={{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.4)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}>
+        <p style={{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.65)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}>
           Andy 教练 &nbsp;·&nbsp; 300 miljoner+ golfcoaching videovisningar på TikTok &nbsp;·&nbsp; Coaching-innehåll betrott världen över
         </p>
       </section>
@@ -211,7 +211,7 @@ export default function HomePageSV() {
           ].map((f,i) => (
             <div key={i} className="what__feature">
               <div className="what__feature-icon">{f.icon}</div>
-              <div className="what__feature-text"><h4>{f.title}</h4><p>{f.text}</p></div>
+              <div className="what__feature-text"><h3>{f.title}</h3><p>{f.text}</p></div>
             </div>
           ))}
         </div>
