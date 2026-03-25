@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import GolfCoursesClient from '../../../app/golf-courses/GolfCoursesClient'
@@ -14,18 +13,12 @@ export default function GolfCourses_ZH() {
   return (
     <PageLayout lang="zh">
       <RevealObserver />
-      <header className="page-hero" style={{position:'relative',overflow:'hidden'}}>
-  <Image
-    src="/images/golf-courses.jpg"
-    alt=""
-    fill
-    priority
-    sizes="100vw"
-    style={{objectFit:'cover', objectPosition:'center 40%'}}
-  />
-  <div style={{position:'absolute',inset:0,background:'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%)'}} />
-
-        <div className="page-hero__inner" style={{position:'relative',zIndex:1}}>
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, center 40%',
+}}>
+        <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/zh">首页</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>马略卡岛高尔夫球场</span></p>
           <h1>马略卡岛高尔夫2026 —<br />内行人指南</h1>
           <div className="page-hero__meta">

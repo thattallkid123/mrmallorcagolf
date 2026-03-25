@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
@@ -23,18 +22,13 @@ export default function Coaching() {
     <PageLayout>
       <RevealObserver />
 
-      <header className="page-hero coaching-hero" style={{position:'relative',overflow:'hidden'}}>
-  <Image
-    src="/images/coaching-hero.jpg"
-    alt=""
-    fill
-    priority
-    sizes="100vw"
-    style={{objectFit:'cover', objectPosition:'60% 80%'}}
-  />
-  <div style={{position:'absolute',inset:0,background:'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%)'}} />
-
-        <div className="page-hero__inner" style={{position:'relative',zIndex:1}}>
+      <header className="page-hero coaching-hero" style={{
+        minHeight: '100vh',
+        backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
+        backgroundSize: 'auto, cover',
+        backgroundPosition: 'center, 60% 80%',
+      }}>
+        <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>On-Course Coaching</span></p>
           <h1>Better Golf.<br />Without Changing Everything.</h1>
           <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>On-course coaching for visiting and resident golfers. Real conditions, real decisions, real improvement — and none of the technical overload that leaves most range sessions unused by the 3rd hole.</p>

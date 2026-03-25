@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import GolfCoursesClient from '../../../app/golf-courses/GolfCoursesClient'
@@ -14,18 +13,12 @@ export default function GolfCourses_ES() {
   return (
     <PageLayout lang="es">
       <RevealObserver />
-      <header className="page-hero" style={{position:'relative',overflow:'hidden'}}>
-  <Image
-    src="/images/golf-courses.jpg"
-    alt=""
-    fill
-    priority
-    sizes="100vw"
-    style={{objectFit:'cover', objectPosition:'center 40%'}}
-  />
-  <div style={{position:'absolute',inset:0,background:'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%)'}} />
-
-        <div className="page-hero__inner" style={{position:'relative',zIndex:1}}>
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, center 40%',
+}}>
+        <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/es">Inicio</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Campos de golf en Mallorca</span></p>
           <h1>Golf en Mallorca 2026 —<br />La Guia del Experto</h1>
           <div className="page-hero__meta">

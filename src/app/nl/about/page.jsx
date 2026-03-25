@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
@@ -14,18 +13,12 @@ export default function About_NL() {
   return (
     <PageLayout lang="nl">
       <RevealObserver />
-      <header className="page-hero" style={{position:'relative',overflow:'hidden'}}>
-  <Image
-    src="/images/about-secondary.jpg"
-    alt=""
-    fill
-    priority
-    sizes="100vw"
-    style={{objectFit:'cover', objectPosition:'center 65%'}}
-  />
-  <div style={{position:'absolute',inset:0,background:'linear-gradient(to right, rgba(26,25,22,0.65) 0%, rgba(26,25,22,0.35) 55%, rgba(26,25,22,0.15) 100%)'}} />
-
-        <div className="page-hero__inner" style={{position:'relative',zIndex:1}}>
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.65) 0%, rgba(26,25,22,0.35) 55%, rgba(26,25,22,0.15) 100%), url(/images/about-secondary.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, center 65%',
+}}>
+        <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/nl">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Over Andy</span></p>
           <h1>De Professional<br />achter de Ervaring.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
@@ -65,15 +58,11 @@ export default function About_NL() {
         </main>
         <aside className="story__sidebar">
           <div className="reveal" style={{lineHeight:0,marginBottom:'24px'}}>
-            <div style={{position:'relative',width:'100%',height:'420px'}}>
-  <Image
-    src="/images/about-andy-colour.jpg"
-    alt="Andy Griffiths — UK PGA Advanced Professional, Mallorca"
-    fill
-    sizes="(max-width:768px) 100vw, 400px"
-    style={{objectFit:'cover', objectPosition:'center top'}}
-  />
-</div>
+            <img
+              src="/images/about-andy-colour.jpg"
+              alt="Andy Griffiths PGA professional, Mallorca"
+              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
+            />
           </div>
           <div className="creds reveal">
             <p className="creds__label">Kwalificaties</p>
