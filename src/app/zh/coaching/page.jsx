@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
@@ -12,12 +13,18 @@ export default function Coaching_ZH() {
   return (
     <PageLayout lang="zh">
       <RevealObserver />
-      <header className="page-hero" style={{
-  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
-  backgroundSize: 'auto, cover',
-  backgroundPosition: 'center, 60% 65%',
-}}>
-        <div className="page-hero__inner">
+      <header className="page-hero" style={{position:'relative',overflow:'hidden'}}>
+  <Image
+    src="/images/coaching-hero.jpg"
+    alt=""
+    fill
+    priority
+    sizes="100vw"
+    style={{objectFit:'cover', objectPosition:'60% 65%'}}
+  />
+  <div style={{position:'absolute',inset:0,background:'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%)'}} />
+
+        <div className="page-hero__inner" style={{position:'relative',zIndex:1}}>
           <p className="breadcrumb"><Link href="/zh">首页</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>球场实地指导</span></p>
           <h1>打出更好的高尔夫。<br />无需彻底改变。</h1>
           <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>面向来岛访问及常驻高尔夫球手的球场实地指导。真实条件，真实决策，真实进步——没有技术过载，也不会让大多数练习课在打到第3洞时就被遗忘。</p>

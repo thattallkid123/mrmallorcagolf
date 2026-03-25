@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
@@ -22,12 +23,18 @@ export default function CoachingDE() {
   return (
     <PageLayout lang="de">
       <RevealObserver />
-      <header className="page-hero" style={{
-  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
-  backgroundSize: 'auto, cover',
-  backgroundPosition: 'center, 60% 65%',
-}}>
-        <div className="page-hero__inner">
+      <header className="page-hero" style={{position:'relative',overflow:'hidden'}}>
+  <Image
+    src="/images/coaching-hero.jpg"
+    alt=""
+    fill
+    priority
+    sizes="100vw"
+    style={{objectFit:'cover', objectPosition:'60% 65%'}}
+  />
+  <div style={{position:'absolute',inset:0,background:'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%)'}} />
+
+        <div className="page-hero__inner" style={{position:'relative',zIndex:1}}>
           <p className="breadcrumb"><Link href="/de">Start</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Coaching auf dem Platz</span></p>
           <h1>Besser Golf spielen.<br />Ohne alles umzukrempeln.</h1>
           <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>Coaching auf dem Platz für Urlaubs- und Residenzgolfer. Echte Bedingungen, echte Entscheidungen, echte Verbesserung — ohne die technische Überfrachtung, die die meisten Rangestunden bis zum 3. Loch vergessen lässt.</p>

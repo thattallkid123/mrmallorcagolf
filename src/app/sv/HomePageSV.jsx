@@ -1,5 +1,6 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
@@ -87,7 +88,17 @@ export default function HomePageSV() {
   return (
     <>
       <section className="hero">
-        <div className="hero__bg" style={{backgroundImage:'linear-gradient(160deg, rgba(26,25,22,0.35) 0%, rgba(26,25,22,0.72) 70%), linear-gradient(to bottom, rgba(26,25,22,0.08) 0%, rgba(26,25,22,0.55) 100%), url(/images/hero-main.jpg)',backgroundSize:'auto, auto, cover',backgroundPosition:'center, center, center 50%'}}></div>
+        <div className="hero__bg" style={{position:'relative',overflow:'hidden'}}>
+  <Image
+    src="/images/hero-main.jpg"
+    alt=""
+    fill
+    priority
+    sizes="100vw"
+    style={{objectFit:'cover', objectPosition:'center 50%'}}
+  />
+  <div style={{position:'absolute',inset:0,background:'linear-gradient(160deg, rgba(26,25,22,0.35) 0%, rgba(26,25,22,0.72) 70%), linear-gradient(to bottom, rgba(26,25,22,0.08) 0%, rgba(26,25,22,0.55) 100%)'}} />
+</div>
         <div className="hero__content">
           <p className="hero__eyebrow">PGA Advanced Professional · Mallorca</p>
           <h1 className="serif-display hero__title">
