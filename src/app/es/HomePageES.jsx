@@ -87,7 +87,7 @@ export default function HomePageES() {
   return (
     <>
       <section className="hero">
-        <div className="hero__bg"></div>
+        <div className="hero__bg" style={{backgroundImage:'linear-gradient(160deg, rgba(26,25,22,0.35) 0%, rgba(26,25,22,0.72) 70%), linear-gradient(to bottom, rgba(26,25,22,0.08) 0%, rgba(26,25,22,0.55) 100%), url(/images/hero-main.jpg)',backgroundSize:'auto, auto, cover',backgroundPosition:'center, center, center 50%'}}></div>
         <div className="hero__content">
           <p className="hero__eyebrow">PGA Advanced Professional · Mallorca</p>
           <h1 className="serif-display hero__title">

@@ -14,7 +14,7 @@ export default function GolfCourses() {
       <RevealObserver />
 
       <header className="page-hero" style={{
-        minHeight: '90vh',
+        minHeight: '100vh',
         backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.jpg)',
         backgroundSize: 'auto, cover',
         backgroundPosition: 'center, center 40%',

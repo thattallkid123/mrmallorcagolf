@@ -26,7 +26,7 @@ export default function Coaching() {
         minHeight: '100vh',
         backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
         backgroundSize: 'auto, cover',
-        backgroundPosition: 'center, 60% 65%',
+        backgroundPosition: 'center, 60% 80%',
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>On-Course Coaching</span></p>
@@ -60,7 +60,7 @@ export default function Coaching() {
         <img
           src="/images/coaching-action.jpg"
           alt="Andy Griffiths coaching golf on a Mallorca course"
-          style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 30%',display:'block'}}
+          style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 60%',display:'block'}}
         />
       </div>
 

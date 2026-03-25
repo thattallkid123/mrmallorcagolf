@@ -30,7 +30,7 @@ export default function GuidesIndex() {
     <PageLayout>
       <RevealObserver />
       <header className="page-hero" style={{
-        minHeight: '90vh',
+        minHeight: '100vh',
         backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.45) 55%, rgba(26,25,22,0.2) 100%), url(/images/guide.jpg)',
         backgroundSize: 'auto, cover',
         backgroundPosition: 'center, center 40%',

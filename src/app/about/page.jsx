@@ -37,7 +37,7 @@ export default function About() {
         minHeight: '100vh',
         backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.65) 0%, rgba(26,25,22,0.35) 55%, rgba(26,25,22,0.15) 100%), url(/images/about-secondary.jpg)',
         backgroundSize: 'auto, cover',
-        backgroundPosition: 'center, center 65%',
+        backgroundPosition: 'center, center 80%',
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>About</span></p>
@@ -85,7 +85,7 @@ export default function About() {
             <img
               src="/images/about-andy-colour.jpg"
               alt="Andy Griffiths PGA professional, Mallorca"
-              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 20%',display:'block'}}
+              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 60%',display:'block'}}
             />
           </div>
           <div className="creds reveal">

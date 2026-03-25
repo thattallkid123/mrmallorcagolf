@@ -23,6 +23,10 @@ const jobs = [
   { file: 'about-andy-colour.jpg', width: 1200, quality: 83 },
   // Course aerial — keep at source width, just compress
   { file: 'golf-courses.jpg',   width: 1920, quality: 85 },
+  // Contact page hero — was 31MB, reduce to web-appropriate size
+  { file: 'contact.jpg',        width: 1920, quality: 82 },
+  // Guides hero
+  { file: 'guide.jpg',          width: 1920, quality: 83 },
 ];
 
 async function run() {
