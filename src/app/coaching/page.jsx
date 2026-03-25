@@ -22,7 +22,7 @@ export default function Coaching() {
     <PageLayout>
       <RevealObserver />
 
-      <header className="page-hero" style={{
+      <header className="page-hero coaching-hero" style={{
         minHeight: '100vh',
         backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
         backgroundSize: 'auto, cover',

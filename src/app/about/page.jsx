@@ -33,11 +33,11 @@ export default function About() {
     <PageLayout>
       <RevealObserver />
 
-      <header className="page-hero" style={{
+      <header className="page-hero about-hero" style={{
         minHeight: '100vh',
-        backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.65) 0%, rgba(26,25,22,0.35) 55%, rgba(26,25,22,0.15) 100%), url(/images/about-secondary.jpg)',
-        backgroundSize: 'auto, cover',
-        backgroundPosition: 'center, center 80%',
+        backgroundImage: 'linear-gradient(to top, rgba(26,25,22,0.88) 0%, rgba(26,25,22,0.4) 35%, transparent 65%), linear-gradient(to right, rgba(26,25,22,0.65) 0%, rgba(26,25,22,0.35) 55%, rgba(26,25,22,0.15) 100%), url(/images/about-secondary.jpg)',
+        backgroundSize: 'auto, auto, cover',
+        backgroundPosition: 'center, center, center 80%',
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>About</span></p>

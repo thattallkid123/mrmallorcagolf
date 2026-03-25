@@ -957,3 +957,11 @@ select.form-control { cursor: pointer; }
   .post-sidebar { padding: 40px 0; position: static; }
   .post-fact { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Mobile-specific hero image positioning */
+@media (max-width: 768px) {
+  /* Coaching: Andy is to one side — shift horizontally to keep him in frame */
+  .coaching-hero { background-position: center, 20% 80% !important; }
+  /* About: keep the same vertical but ensure text at bottom is readable */
+  .about-hero { background-position: center, center, center 70% !important; }
+}
