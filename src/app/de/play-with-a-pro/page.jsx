@@ -29,7 +29,11 @@ export default function PlayWithAProDE() {
       <RevealObserver />
 
       <section className="pwap-hero">
-        <div className="pwap-hero__bg"></div>
+        <div className="pwap-hero__bg" style={{
+  backgroundImage: 'linear-gradient(160deg, rgba(26,25,22,0.10) 0%, rgba(26,25,22,0.55) 70%), linear-gradient(to bottom, rgba(26,25,22,0.05) 0%, rgba(26,25,22,0.42) 100%), url(/images/pwap-hero.jpg)',
+  backgroundSize: 'auto, auto, cover',
+  backgroundPosition: 'center, center, 38% center',
+}}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/de" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Start</Link> &nbsp;/&nbsp; <span>Mit einem Profi spielen</span></p>

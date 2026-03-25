@@ -21,7 +21,11 @@ export default function GuidesIndex_SV() {
   return (
     <PageLayout lang="sv">
       <RevealObserver />
-      <header className="page-hero">
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.45) 55%, rgba(26,25,22,0.2) 100%), url(/images/guide.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, center 40%',
+}}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
             <a href="/sv" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>SV</a>

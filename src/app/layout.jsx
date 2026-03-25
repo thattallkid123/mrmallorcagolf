@@ -1,5 +1,10 @@
 import '../styles/globals.css'
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export const metadata = {
   metadataBase: new URL('https://mrmallorcagolf.com'),
   title: {

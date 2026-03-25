@@ -13,7 +13,11 @@ export default function GolfCourses_SV() {
   return (
     <PageLayout lang="sv">
       <RevealObserver />
-      <header className="page-hero">
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, center 40%',
+}}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/sv">Start</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Golfbanor pa Mallorca</span></p>
           <h1>Golf pa Mallorca 2026 —<br />En Insiders Guide</h1>

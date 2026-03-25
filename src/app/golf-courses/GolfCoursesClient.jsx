@@ -943,9 +943,24 @@ const REGION_HEADERS = {
   north: { title: 'North', subtitle: "Port d'Alcúdia · 55–60km · Alcanada alone justifies the drive", count: '2 courses' },
 }
 
+const slugify = name => name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')
+
+const SHORT_TO_ID = {
+  'Son Gual':'golf-son-gual','Son Muntaner':'son-muntaner','Son Vida':'golf-son-vida',
+  'Son Quint':'golf-son-quint','T Golf Puntiró':'t-golf-palma-puntiro','Son Termes':'golf-son-termes',
+  'Palma Pitch & Putt':'palma-pitch-putt','Santa Ponsa 1':'golf-santa-ponsa-1',
+  'Santa Ponsa 2':'golf-santa-ponsa-2','Santa Ponsa 3':'golf-santa-ponsa-3',
+  'T Golf Calvià':'t-golf-calvia-poniente','Bendinat':'real-golf-de-bendinat',
+  'Golf de Andratx':'golf-de-andratx','Golf Maioris':'golf-maioris',
+  'Son Antem East':'golf-son-antem-east','Son Antem West':'golf-son-antem-west',
+  'Capdepera':'capdepera-golf','Canyamel':'canyamel-golf','Pula':'pula-golf',
+  'Son Servera':'golf-club-son-servera','Alcanada':'club-de-golf-alcanada',
+  'Golf Pollensa':'golf-pollensa',
+}
+
 function CourseCard({ c, lang = 'en' }) {
   return (
-    <div className={`course${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`}>
+    <div id={slugify(c.name)} className={`course${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`} style={{scrollMarginTop:'90px'}}>
       {/* Mobile: image on top, full width, fixed height */}
       {c.img && (
         <div className="course__img-mobile">
@@ -1002,18 +1017,28 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   return (
     <>
       {/* GEOGRAPHY */}
-      <section className="geography reveal">
+      <section className="geography reveal" style={{background:'var(--cream)'}}>
         <div className="geography__left">
-          <p className="eyebrow" style={{color:'rgba(255,255,255,0.3)'}}>{t.geoEyebrow}</p>
-          <h2>{t.geoH2}</h2>
-          <p>{t.geoP1}</p>
-          <p>{t.geoP2}</p>
+          <p className="eyebrow" style={{color:'var(--gold)'}}>{t.geoEyebrow}</p>
+          <h2 style={{color:'var(--deep)'}}>{t.geoH2}</h2>
+          <p style={{color:'var(--charcoal)'}}>{t.geoP1}</p>
+          <p style={{color:'var(--charcoal)'}}>{t.geoP2}</p>
         </div>
         <div className="geography__right">
           {t.geoRegions.map((row, i) => (
             <div key={i} className="geo-row">
-              <span className="geo-region">{row.region}</span>
-              <span className="geo-courses">{row.courses}</span>
+              <span className="geo-region" style={{color:'var(--charcoal)'}}>{row.region}</span>
+              <span className="geo-courses">
+                {row.courses.split(' · ').map((name, j) => {
+                  const id = SHORT_TO_ID[name] || slugify(name)
+                  return (
+                    <span key={j}>
+                      {j > 0 && <span style={{color:'var(--stone)'}}> · </span>}
+                      <a href={`#${id}`} style={{color: j % 2 === 0 ? 'var(--pine)' : 'var(--charcoal)',textDecoration:'none',fontWeight:400}} onMouseOver={e=>e.currentTarget.style.textDecoration='underline'} onMouseOut={e=>e.currentTarget.style.textDecoration='none'}>{name}</a>
+                    </span>
+                  )
+                })}
+              </span>
             </div>
           ))}
         </div>
@@ -1021,15 +1046,8 @@ export default function GolfCoursesClient({ lang = 'en' }) {
 
       {/* INTRO BAR */}
       <div className="intro-bar">
-        <div className="intro-bar__text reveal">
-          <p>{t.intro1}</p>
-          <p>{t.intro2}</p>
-        </div>
-        <div className="intro-bar__expert reveal">
-          <p className="expert-label">{t.yourGuide}</p>
-          <p className="expert-name">Andy Griffiths</p>
-          <p className="expert-credentials">{t.credentials}</p>
-          <Link href="/play-with-a-pro" className="expert-cta">{t.playWithAndy}</Link>
+        <div className="intro-bar__text reveal" style={{maxWidth:'100%'}}>
+          <p>{t.intro1} {t.intro2}</p>
         </div>
       </div>
 
@@ -1084,7 +1102,31 @@ export default function GolfCoursesClient({ lang = 'en' }) {
           <div className="sidebar-card sidebar-card--cream">
             <h3 style={{fontSize:'1rem'}}>{t.quickPicksTitle}</h3>
             <ul className="sidebar-quick">
-              {t.quickPicks.map((p,i) => <li key={i}>{p}</li>)}
+              {t.quickPicks.map((p,i) => {
+                // Split label at colon, link only the course-name part
+                const colonIdx = p.indexOf(': ')
+                const prefix = colonIdx >= 0 ? p.slice(0, colonIdx + 2) : ''
+                const coursesPart = colonIdx >= 0 ? p.slice(colonIdx + 2) : p
+                // Split on " or ", " oder ", " eller ", " ou ", " o ", " of " to support multi-language
+                const separator = coursesPart.match(/ (or|oder|eller|ou|o) /)
+                const parts = separator ? coursesPart.split(separator[0]) : [coursesPart]
+                const sepWord = separator ? separator[0] : null
+                return (
+                  <li key={i}>
+                    {prefix}
+                    {parts.map((part, j) => {
+                      const match = Object.keys(SHORT_TO_ID).find(k => part.trim().includes(k))
+                      const id = match ? SHORT_TO_ID[match] : null
+                      return (
+                        <span key={j}>
+                          {j > 0 && sepWord}
+                          {id ? <a href={`#${id}`} style={{color:'inherit',textDecoration:'none'}} onMouseOver={e=>e.currentTarget.style.color='var(--pine)'} onMouseOut={e=>e.currentTarget.style.color='inherit'}>{part}</a> : part}
+                        </span>
+                      )
+                    })}
+                  </li>
+                )
+              })}
             </ul>
           </div>
         </aside>

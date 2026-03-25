@@ -21,7 +21,7 @@ export default function ContactForm() {
       <div className="contact-left">
         <div>
           <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Get in touch</p>
-          <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>Tell me what you&apos;re looking for.<br />I&apos;ll sort the rest.</h1>
+          <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>Tell me what you&apos;re looking&nbsp;for.<br />I&apos;ll sort the rest.</h1>
           <p className="contact-left__intro">There are no booking systems here. Tell me your dates, your handicap, and what you want from the day. I&apos;ll come back to you personally — usually within a few hours, always within 24.</p>
         </div>
 
@@ -60,10 +60,6 @@ export default function ContactForm() {
           </a>
         </div>
 
-        <div className="promise-block">
-          <p>&ldquo;Get in touch. Tell me your dates and what you&apos;re looking for — I come back personally within 24 hours.&rdquo;</p>
-          <cite>Andy Griffiths &middot; PGA Advanced Professional</cite>
-        </div>
       </div>
 
       {/* RIGHT */}
@@ -130,11 +126,20 @@ export default function ContactForm() {
                     ['full-experience', 'The Full Experience', 'On enquiry'],
                     ['not-sure', 'Not sure yet — advise me', ''],
                   ].map(([val, label, price]) => (
-                    <label key={val} className="radio-option">
-                      <input type="radio" name="experience" value={val} checked={form.experience === val} onChange={handleChange} />
-                      <span className="radio-option-label">{label}</span>
+                    <div
+                      key={val}
+                      onClick={() => setForm(f => ({ ...f, experience: val }))}
+                      className="radio-option"
+                      style={{
+                        cursor: 'pointer',
+                        background: form.experience === val ? 'rgba(45,74,62,0.08)' : 'transparent',
+                        borderColor: form.experience === val ? 'var(--pine)' : 'var(--linen)',
+                        transition: 'background 0.15s, border-color 0.15s',
+                      }}
+                    >
+                      <span className="radio-option-label" style={{color: form.experience === val ? 'var(--pine)' : undefined}}>{label}</span>
                       {price && <span className="radio-option-price">{price}</span>}
-                    </label>
+                    </div>
                   ))}
                 </div>
               </div>

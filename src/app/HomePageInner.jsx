@@ -137,9 +137,11 @@ export default function HomePageInner() {
     <>
       {/* HERO */}
       <section className="hero">
-        <div className="hero__bg">
-          {/* <img src="/images/hero.jpg" alt="Andy Griffiths on a Mallorca fairway" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',objectPosition:'center 30%'}} /> */}
-        </div>
+        <div className="hero__bg" style={{
+          backgroundImage: 'linear-gradient(160deg, rgba(26,25,22,0.35) 0%, rgba(26,25,22,0.72) 70%), linear-gradient(to bottom, rgba(26,25,22,0.08) 0%, rgba(26,25,22,0.55) 100%), url(/images/hero-main.jpg)',
+          backgroundSize: 'auto, auto, cover',
+          backgroundPosition: 'center, center, center 50%',
+        }}></div>
         <div className="hero__content">
           <p className="hero__eyebrow">UK PGA Advanced Professional · Mallorca</p>
           <h1 className="serif-display hero__title">

@@ -12,7 +12,11 @@ export default function About_FR() {
   return (
     <PageLayout lang="fr">
       <RevealObserver />
-      <header className="page-hero">
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.65) 0%, rgba(26,25,22,0.35) 55%, rgba(26,25,22,0.15) 100%), url(/images/about-secondary.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, center 65%',
+}}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/fr">Accueil</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>À propos</span></p>
           <h1>Le Professionnel<br />derrière l'Expérience.</h1>
@@ -52,6 +56,13 @@ export default function About_FR() {
           </div>
         </main>
         <aside className="story__sidebar">
+          <div className="reveal" style={{lineHeight:0,marginBottom:'24px'}}>
+            <img
+              src="/images/about-andy-colour.jpg"
+              alt="Andy Griffiths PGA professional, Mallorca"
+              style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 20%',display:'block'}}
+            />
+          </div>
           <div className="creds reveal">
             <p className="creds__label">Qualifications</p>
             <ul className="cred-list">

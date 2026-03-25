@@ -18,8 +18,12 @@ export default function PlayWithAPro() {
     <PageLayout>
       <RevealObserver />
 
-      <section className="pwap-hero">
-        <div className="pwap-hero__bg"></div>
+      <section className="pwap-hero" style={{minHeight:'92vh'}}>
+        <div className="pwap-hero__bg" style={{
+          backgroundImage: 'linear-gradient(160deg, rgba(26,25,22,0.10) 0%, rgba(26,25,22,0.55) 70%), linear-gradient(to bottom, rgba(26,25,22,0.05) 0%, rgba(26,25,22,0.42) 100%), url(/images/pwap-hero.jpg)',
+          backgroundSize: 'auto, auto, cover',
+          backgroundPosition: 'center, center, 38% center',
+        }}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Home</Link> &nbsp;/&nbsp; <span>Play with a Pro</span></p>
@@ -68,20 +72,8 @@ export default function PlayWithAPro() {
       <section className="pwap-courses">
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>Which course?</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual and Alcanada are the primary venues. But the course is always chosen with you.</h2>
-          <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>A group including beginners, a shorter half-day, a family with juniors — there are courses that work better for all of those, and I&apos;ll tell you which one honestly. Some are members-only and can&apos;t be accessed independently. That access can be arranged for clients who want something off the standard visitor rota.</p>
-        </div>
-        <div className="courses-grid">
-          <div className="course-choice reveal">
-            <p className="region">Palma · 11km · Championship</p>
-            <h3>Son Gual</h3>
-            <p>My most-played course on the island. Thomas Himmel&apos;s 2007 design sits in its own wind ecosystem. The closing stretch — holes 15 to 18 — is among the finest four holes in European golf. Rafa Nadal&apos;s stated favourite course on the island.</p>
-          </div>
-          <div className="course-choice reveal">
-            <p className="region">Alcúdia · 55km · Coastal</p>
-            <h3>Alcanada</h3>
-            <p>Arguably Mallorca&apos;s most scenic course. Robert Trent Jones Jr. design. The lighthouse visible from 16 of 18 holes. Hosts the Rolex Challenge Tour Grand Final. The restaurant terrace after the round is one of the best places on the island.</p>
-          </div>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>The course is always chosen with you.</h2>
+          <p style={{color:'rgba(255,255,255,.65)',lineHeight:1.8,maxWidth:680}}>A group including beginners, a shorter half-day, a family with juniors — there are courses that work better for all of those, and I&apos;ll tell you which one honestly. Some are members-only and can&apos;t be accessed independently. That access can be arranged for clients who want something off the standard visitor rota.</p>
         </div>
       </section>
 

@@ -13,7 +13,12 @@ export default function GolfCourses() {
     <PageLayout>
       <RevealObserver />
 
-      <header className="page-hero">
+      <header className="page-hero" style={{
+        minHeight: '90vh',
+        backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.jpg)',
+        backgroundSize: 'auto, cover',
+        backgroundPosition: 'center, center 40%',
+      }}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Golf Courses in Mallorca</span></p>
           <h1>Golf in Mallorca 2026 —<br />An Insider&apos;s Guide</h1>

@@ -22,7 +22,12 @@ export default function Coaching() {
     <PageLayout>
       <RevealObserver />
 
-      <header className="page-hero">
+      <header className="page-hero" style={{
+        minHeight: '100vh',
+        backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
+        backgroundSize: 'auto, cover',
+        backgroundPosition: 'center, 60% 65%',
+      }}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>On-Course Coaching</span></p>
           <h1>Better Golf.<br />Without Changing Everything.</h1>
@@ -50,6 +55,14 @@ export default function Coaching() {
           <Link href="/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Discuss a Session &rarr;</Link>
         </div>
       </section>
+
+      <div style={{lineHeight:0,overflow:'hidden'}}>
+        <img
+          src="/images/coaching-action.jpg"
+          alt="Andy Griffiths coaching golf on a Mallorca course"
+          style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 30%',display:'block'}}
+        />
+      </div>
 
       {/* WHAT GETS BETTER */}
       <section className="improvements">

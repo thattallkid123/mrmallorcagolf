@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Contact_SV() {
   return (
-    <PageLayout lang="sv">
+    <PageLayout lang="sv" navTransparent={false}>
       <ContactForm_SV />
     </PageLayout>
   )

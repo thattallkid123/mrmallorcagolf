@@ -12,7 +12,11 @@ export default function Coaching_FR() {
   return (
     <PageLayout lang="fr">
       <RevealObserver />
-      <header className="page-hero">
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, 60% 65%',
+}}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/fr">Accueil</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Coaching sur parcours</span></p>
           <h1>Un meilleur golf.<br />Sans tout changer.</h1>

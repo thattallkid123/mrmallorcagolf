@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <PageLayout>
+    <PageLayout navTransparent={false}>
       <ContactForm />
     </PageLayout>
   )

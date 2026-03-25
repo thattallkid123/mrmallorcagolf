@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Contact_ES() {
   return (
-    <PageLayout lang="es">
+    <PageLayout lang="es" navTransparent={false}>
       <ContactForm_ES />
     </PageLayout>
   )

@@ -12,7 +12,11 @@ export default function Coaching_ES() {
   return (
     <PageLayout lang="es">
       <RevealObserver />
-      <header className="page-hero">
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, 60% 65%',
+}}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/es">Inicio</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Coaching en campo</span></p>
           <h1>Mejor golf.<br />Sin cambiarlo todo.</h1>

@@ -12,7 +12,11 @@ export default function Coaching_ZH() {
   return (
     <PageLayout lang="zh">
       <RevealObserver />
-      <header className="page-hero">
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, 60% 65%',
+}}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/zh">首页</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>球场实地指导</span></p>
           <h1>打出更好的高尔夫。<br />无需彻底改变。</h1>

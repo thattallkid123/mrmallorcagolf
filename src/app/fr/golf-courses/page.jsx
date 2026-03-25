@@ -13,7 +13,11 @@ export default function GolfCourses_FR() {
   return (
     <PageLayout lang="fr">
       <RevealObserver />
-      <header className="page-hero">
+      <header className="page-hero" style={{
+  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.jpg)',
+  backgroundSize: 'auto, cover',
+  backgroundPosition: 'center, center 40%',
+}}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/fr">Accueil</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Parcours de golf a Majorque</span></p>
           <h1>Golf a Majorque 2026 â€”<br />Le Guide de l'Initié</h1>
