@@ -20,7 +20,7 @@ export default function GolfCourses_FR() {
 }}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/fr">Accueil</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Parcours de golf a Majorque</span></p>
-          <h1>Golf a Majorque 2026 â€”<br />Le Guide de l'Initié</h1>
+          <h1>Golf a Majorque 2026 —<br />Le Guide de l'Initié</h1>
           <div className="page-hero__meta">
             <span className="page-hero__tag">22 Parcours couverts</span>
             <span className="page-hero__tag">Green Fees 2026</span>

@@ -11,7 +11,7 @@ export default function ContactForm_SV() {
     <div className="contact-wrap">
       <div className="contact-left">
         <div>
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Hor av dig</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Hör av dig</p>
           <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>Berätta vad du söker. Jag ordnar resten.</h1>
           <p className="contact-left__intro">Inga bokningssystem. Berätta om dina datum, ditt handicap och vad du vill ha ut av dagen.</p>
         </div>
@@ -63,12 +63,12 @@ export default function ContactForm_SV() {
           <>
             <div className="form-header">
               <p style={{fontSize:'9px',fontWeight:500,letterSpacing:'.2em',textTransform:'uppercase',color:'var(--taupe)',marginBottom:'.5rem'}}>Förfrågan</p>
-              <h2>Borja planera din dag.</h2>
-              <p>Ju mer detaljer du ger mig, desto battre kan jag anpassa dagen till dig.</p>
+              <h2>Börja planera din dag.</h2>
+              <p>Ju mer detaljer du ger mig, desto bättre kan jag anpassa dagen till dig.</p>
             </div>
             <form onSubmit={handleSubmit}>
               <div className="form-row">
-                <div className="form-group"><label htmlFor="fname">Fornamn</label><input type="text" id="fname" name="fname" className="form-control" placeholder="Erik" required value={form.fname} onChange={handleChange} /></div>
+                <div className="form-group"><label htmlFor="fname">Förnamn</label><input type="text" id="fname" name="fname" className="form-control" placeholder="Erik" required value={form.fname} onChange={handleChange} /></div>
                 <div className="form-group"><label htmlFor="lname">Efternamn</label><input type="text" id="lname" name="lname" className="form-control" placeholder="Svensson" required value={form.lname} onChange={handleChange} /></div>
               </div>
               <div className="form-group"><label htmlFor="email">E-postadress</label><input type="email" id="email" name="email" className="form-control" placeholder="erik@exempel.com" required value={form.email} onChange={handleChange} /></div>
@@ -95,7 +95,7 @@ export default function ContactForm_SV() {
                     <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Inte säker än — ge mig råd</span></label>
                 </div>
               </div>
-              <div className="form-group"><label htmlFor="message">Annat jag bor veta</label><textarea id="message" name="message" className="form-control" placeholder="Mal for dagen, banor, blandad grupp, specifika onskningar." value={form.message} onChange={handleChange} /></div>
+              <div className="form-group"><label htmlFor="message">Annat jag bör veta</label><textarea id="message" name="message" className="form-control" placeholder="Mål för dagen, banor, blandad grupp, specifika önskningar." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
                 <button type="submit" className="btn-submit">Skicka förfrågan &rarr;</button>
                 <p className="form-note">Jag svarar personligen på varje förfrågan inom 24 timmar.</p>

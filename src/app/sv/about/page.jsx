@@ -34,16 +34,16 @@ export default function About_SV() {
         <main className="story__main">
           <div className="chapter reveal">
             <p className="chapter__label">Tidig karriär</p>
-            <h2>Följa de bästa coachernå på två kontinenter.</h2>
-            <p>Jag växte upp med golf, kom ner till +1 i handicap men visste tidigt att coaching vär vägen för mig. Efter studier i Applied Golf Management vid University of Birmingham och PGA-examen började jag bygga en karriär genom att följa de mest erfarnå coachernå runt om i Europå och Nordamerika.</p>
-            <p>De tidiga åren förde mig till extraordinära platser. Jag coachade på Pebble Beach, Doral, Évian under dam-majorn och The Open Championship. Jag tillbringade en säsong som golfcoach ombord på ett kryssningsfartyg på en världsreså — över fyrtio länder, golf på platser de flesta professionella aldrig kommer nära.</p>
-            <div className="pull-quote"><p>&ldquo;Varje miljö vär annorlunda. Varje golfspelare vär annorlunda. Den variationen, tidigt, är det som formade allt som kom efter.&rdquo;</p></div>
+            <h2>Följa de bästa coacherna på två kontinenter.</h2>
+            <p>Jag växte upp med golf, kom ner till +1 i handicap men visste tidigt att coaching var vägen för mig. Efter studier i Applied Golf Management vid University of Birmingham och PGA-examen började jag bygga en karriär genom att följa de mest erfarna coacherna runt om i Europa och Nordamerika.</p>
+            <p>De tidiga åren förde mig till extraordinära platser. Jag coachade på Pebble Beach, Doral, Évian under dam-majorn och The Open Championship. Jag tillbringade en säsong som golfcoach ombord på ett kryssningsfartyg på en världsresa — över fyrtio länder, golf på platser de flesta professionella aldrig kommer nära.</p>
+            <div className="pull-quote"><p>&ldquo;Varje miljö var annorlunda. Varje golfspelare var annorlunda. Den variationen, tidigt, är det som formade allt som kom efter.&rdquo;</p></div>
           </div>
           <div className="chapter reveal">
             <p className="chapter__label">Shanghai, 2014–2025</p>
             <h2>Elva år i toppen av kinesiskt golf.</h2>
-            <p>2014 flyttade jag till Shanghai. Jag hade specifika mål — att bygga upp undervisningsprogrammet för Kinas bästa akademi — och stannade kvär i elva framgångsrika år.</p>
-            <p>Kinå under den perioden vär en extraordinär miljö att coacha i. Lektioner kostade runt €350 per timme. Klienter förväntade sig seriös, mätbär förbättring — inte bara uppmuntran.</p>
+            <p>2014 flyttade jag till Shanghai. Jag hade specifika mål — att bygga upp undervisningsprogrammet för Kinas bästa akademi — och stannade kvar i elva framgångsrika år.</p>
+            <p>Kina under den perioden var en extraordinär miljö att coacha i. Lektioner kostade runt €350 per timme. Klienter förväntade sig seriös, mätbar förbättring — inte bara uppmuntran.</p>
             <p>Jag blev landets första Trackman Master, coachade spelare från det kinesiska landslaget och byggde en coachingnärvaro på Douyin som nådde hundratals miljoner visningar. Jag blev också flytande i mandarin, vilket fördjupade relationen till spelare och familjer.</p>
             <p>Efter elva år hade jag uppnått det jag kom för. Min första dotter föddes 2023. Dragningskraften att komma närmre hem, och chansen att bygga något eget, gick inte längre att ignorera.</p>
           </div>
@@ -51,9 +51,9 @@ export default function About_SV() {
             <p className="chapter__label">Mallorca, 2025 –</p>
             <h2>Tjugotvå banor, en ö och en coachingfilosofi skärpt av att spela igen.</h2>
             <p>Jag flyttade till Mallorca i mars 2025 med min fru Yina. Närmre familjen i Storbritannien, sol året runt, en genuint exceptionell golfö som de flesta inte ger tillräckligt erkännande.</p>
-            <p>Jag började spela på allvär igen. Arbetade mig igenom varje banå på ön. Återupptäckte känslan av att stå på en första tee och faktiskt bry sig om resultatet.</p>
-            <div className="pull-quote"><p>&ldquo;Coachingfilosofin som kommit av att spela igen är enkel: de snabbaste förbättringärnå sker på banan, inte på rangen. Riktiga förhållanden, riktiga beslut, riktiga konsekvenser.&rdquo;</p></div>
-            <p>En PGA-professionell som tillbringade mer än ett decennium med att coacha i Asien, nu värd för privata golfdagär på en av Europas bästa golfö. Om det låter som den dag du letär efter — hör av dig.</p>
+            <p>Jag började spela på allvar igen. Arbetade mig igenom varje bana på ön. Återupptäckte känslan av att stå på en första tee och faktiskt bry sig om resultatet.</p>
+            <div className="pull-quote"><p>&ldquo;Coachingfilosofin som kommit av att spela igen är enkel: de snabbaste förbättringarna sker på banan, inte på rangen. Riktiga förhållanden, riktiga beslut, riktiga konsekvenser.&rdquo;</p></div>
+            <p>En PGA-professionell som tillbringade mer än ett decennium med att coacha i Asien, nu värd för privata golfdagar på en av Europas bästa golfö. Om det låter som den dag du letar efter — hör av dig.</p>
           </div>
         </main>
         <aside className="story__sidebar">
@@ -81,8 +81,8 @@ export default function About_SV() {
           </div>
           <div className="sidebar-cta reveal">
             <h3>Spela Mallorcas finaste banor med mig vid din sida.</h3>
-            <p>Privata dagär på Son Gual, Alcanadå och mer. Allt ordnat. Coaching på banan.</p>
-            <Link href="/sv/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Se upplevelsernå →</Link>
+            <p>Privata dagar på Son Gual, Alcanada och mer. Allt ordnat. Coaching på banan.</p>
+            <Link href="/sv/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Se upplevelserna →</Link>
           </div>
         </aside>
       </div>
@@ -93,10 +93,10 @@ export default function About_SV() {
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Redo att spela?</p>
           <h2 className="serif-display" style={{color:'#fff'}}>En UK PGA Advanced Professional. En exceptionell golfö. Din runda.</h2>
-          <p>Berätta om dinå datum, ditt handicap och vad du söker. Jag bygger dagen runt dig.</p>
+          <p>Berätta om dina datum, ditt handicap och vad du söker. Jag bygger dagen runt dig.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/sv/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Se upplevelsernå →</Link>
+          <Link href="/sv/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Se upplevelserna →</Link>
           <Link href="/sv/contact" className="btn btn--outline-white">Hör av dig</Link>
         </div>
       </section>

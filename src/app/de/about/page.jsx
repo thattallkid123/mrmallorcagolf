@@ -66,7 +66,7 @@ export default function AboutDE() {
           <div className="chapter reveal">
             <p className="chapter__label">Mallorca, 2025 –</p>
             <h2>Zweiundzwanzig Plätze, eine Insel und eine Coaching-Philosophie, geschärft durch das Spielen.</h2>
-            <p>Im März 2025 zog ich mit meiner Frau Yina nach Mallorca. Näher an der Familie in Großbritannien, ganzjährig Sonne, eine wirklich außergewöhnliche Golfinsel, der die meisten Menschen nicht genug Anerkennung zollen.</p>
+            <p>Im März 2025 zog ich mit meiner Frau Yina nach Mallorca. Näher an der Familie in Großbritannien, ganzjährig Sonne, eine wirklich außergewöhnliche Golfinsel, die von den meisten Menschen weit unterschätzt wird.</p>
             <p>Ich fing wieder ernsthaft an zu spielen. Arbeitete mich durch jeden Platz der Insel. Entdeckte neu, wie es sich anfühlt, auf dem ersten Abschlag zu stehen und sich wirklich um das Ergebnis zu sorgen. Dieser Wettkampfinstinkt — in Jahren als Vollzeit-Coach schlafend — kehrte schnell zurück.</p>
             <div className="pull-quote"><p>&ldquo;Die Coaching-Philosophie, die aus dem Wiederspielen entstanden ist, ist einfach: Die schnellsten Verbesserungen passieren auf dem Platz, nicht auf der Range. Echte Bedingungen, echte Entscheidungen, echte Konsequenzen.&rdquo;</p></div>
             <p>Ein UK PGA Professional, der über ein Jahrzehnt in Asien coachte und jetzt private Golftage auf einer der besten Golfinseln Europas veranstaltet. Wenn das wie der Tag klingt, den Sie suchen — melden Sie sich.</p>

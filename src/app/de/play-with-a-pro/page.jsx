@@ -39,7 +39,7 @@ export default function PlayWithAProDE() {
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/de" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Start</Link> &nbsp;/&nbsp; <span>Mit einem Profi spielen</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Private Golftage · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Ein privater Golftag<br />auf Mallorca.</h1>
-            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Keine Lektion. Keine Standard-Runde. Ein privater Tag auf einem der schönsten Plätze der Insel, begleitet von einem UK PGA Professional, mit zwei Jahrzehnten Erfahrung auf drei Kontinenten gecoacht hat.</p>
+            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Keine Lektion. Keine Standard-Runde. Ein privater Tag auf einem der schönsten Plätze der Insel, begleitet von einem UK PGA Professional mit zwei Jahrzehnten Erfahrung auf drei Kontinenten.</p>
             <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>€350 p.P. + Green Fee</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
               <Link href="/de/contact" className="btn btn--gold">Ihren Tag buchen &rarr;</Link>

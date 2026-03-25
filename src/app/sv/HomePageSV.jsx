@@ -256,7 +256,7 @@ export default function HomePageSV() {
           </div>
           <div className="package reveal reveal-delay-2">
             <p className="package__tier">Den Kompletta Upplevelsen</p>
-            <h3 className="package__name">Skräddarsydd golfreasa</h3>
+            <h3 className="package__name">Skräddarsydd golfresa</h3>
             <p className="package__price">På förfrågan</p>
             <div className="package__divider"></div>
             <ul className="package__features">{['Flerbanorsdag eller fullständigt program','Privat transport från Palma','Middag på handplockat restaurang','Spa eller återhämtning hos partneranläggning','Fullständig concierge-koordination','För grupper, företag och skräddarsydda önskemål'].map((f,i)=><li key={i}>{f}</li>)}</ul>

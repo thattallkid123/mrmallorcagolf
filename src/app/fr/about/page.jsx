@@ -36,14 +36,14 @@ export default function About_FR() {
             <p className="chapter__label">Début de carrière</p>
             <h2>Suivre les meilleurs coaches sur deux continents.</h2>
             <p>J'ai grandi en jouant au golf, je suis descendu à un handicap de +1 mais j'ai su tôt que le coaching était ma voie. Après des études en Applied Golf Management à l'Université de Birmingham et ma qualification en tant que PGA Professionnel, j'ai commencé à construire une carrière en suivant les coaches les plus expérimentés à travers l'Europe et l'Amérique du Nord.</p>
-            <p>Ces premières années m'ont emmené dans des lieux remarquables. J'ai coaché à Pebble Beach, Doral, Évian pendant le major féminin, et à The Open Championship. J'ai passé une saison à coacher à bord d'un paquebot de croisière en tour du monde â€” plus de quarante pays, du golf dans des endroits auxquels la plupart des professionnels n'accèdent jamais.</p>
+            <p>Ces premières années m'ont emmené dans des lieux remarquables. J'ai coaché à Pebble Beach, Doral, Évian pendant le major féminin, et à The Open Championship. J'ai passé une saison à coacher à bord d'un paquebot de croisière en tour du monde — plus de quarante pays, du golf dans des endroits auxquels la plupart des professionnels n'accèdent jamais.</p>
             <div className="pull-quote"><p>&ldquo;Chaque environnement était différent. Chaque golfeur était différent. Cette variété, dès le début, est ce qui a façonné tout ce qui a suivi.&rdquo;</p></div>
           </div>
           <div className="chapter reveal">
             <p className="chapter__label">Shanghai, 2014â€“2025</p>
             <h2>Onze ans au sommet du golf en Chine.</h2>
-            <p>En 2014, j'ai déménagé à Shanghai. J'avais des objectifs précis â€” mettre en place le programme d'enseignement de la meilleure académie de Chine â€” et je suis resté onze années fructueuses.</p>
-            <p>La Chine à cette époque était un environnement extraordinaire pour coacher. Les leçons tournaient autour de 500 € de l'heure. Les clients attendaient une amélioration sérieuse et mesurable â€” c'était l'exigence.</p>
+            <p>En 2014, j'ai déménagé à Shanghai. J'avais des objectifs précis — mettre en place le programme d'enseignement de la meilleure académie de Chine — et je suis resté onze années fructueuses.</p>
+            <p>La Chine à cette époque était un environnement extraordinaire pour coacher. Les leçons tournaient autour de 500 € de l'heure. Les clients attendaient une amélioration sérieuse et mesurable — c'était l'exigence.</p>
             <p>Je suis devenu le premier Trackman Master du pays, j'ai coaché des joueurs de l'équipe nationale chinoise, et j'ai construit une présence coaching sur Douyin qui a atteint des centaines de millions de vues. Je suis également devenu courant en mandarin.</p>
             <p>Après onze ans, j'avais accompli ce pour quoi j'étais venu. Ma première fille est née en 2023. L'attrait d'être plus proche de ma famille, et la chance de construire quelque chose à moi, sont devenus impossibles à ignorer.</p>
           </div>
@@ -53,7 +53,7 @@ export default function About_FR() {
             <p>J'ai déménagé à Majorque en mars 2025 avec ma femme Yina. Plus près de la famille au Royaume-Uni, du soleil toute l'année, une île de golf vraiment exceptionnelle que la plupart des gens ne valorisent pas assez.</p>
             <p>J'ai recommencé à jouer sérieusement. Parcourant chaque parcours de l'île. Redécouvrant ce que ça fait de se tenir sur un premier départ et de vraiment se soucier du score.</p>
             <div className="pull-quote"><p>&ldquo;La philosophie de coaching qui est née de ce retour au jeu est simple : les améliorations les plus rapides se produisent sur le parcours, pas au practice. Conditions réelles, décisions réelles, conséquences réelles.&rdquo;</p></div>
-            <p>Un UK PGA professionnel qui a passé plus d'une décennie à coacher en Asie, proposant désormais des journées golf privées sur l'une des meilleures îles de golf d'Europe. Si ça ressemble à la journée que vous cherchez â€” prenez contact.</p>
+            <p>Un UK PGA professionnel qui a passé plus d'une décennie à coacher en Asie, proposant désormais des journées golf privées sur l'une des meilleures îles de golf d'Europe. Si ça ressemble à la journée que vous cherchez — prenez contact.</p>
           </div>
         </main>
         <aside className="story__sidebar">
@@ -82,7 +82,7 @@ export default function About_FR() {
           <div className="sidebar-cta reveal">
             <h3>Jouez les plus beaux parcours de Majorque avec moi à vos côtés.</h3>
             <p>Journées privées à Son Gual, Alcanada et au-delà. Tout organisé. Coaching sur parcours.</p>
-            <Link href="/fr/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Voir les Expériences â†’</Link>
+            <Link href="/fr/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Voir les Expériences →</Link>
           </div>
         </aside>
       </div>
@@ -96,7 +96,7 @@ export default function About_FR() {
           <p>Dites-moi vos dates, votre handicap et ce que vous cherchez. Je construirai la journée autour de vous.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/fr/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Voir les Expériences â†’</Link>
+          <Link href="/fr/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Voir les Expériences →</Link>
           <Link href="/fr/contact" className="btn btn--outline-white">Prendre contact</Link>
         </div>
       </section>

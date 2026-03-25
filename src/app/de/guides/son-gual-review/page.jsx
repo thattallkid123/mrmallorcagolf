@@ -77,7 +77,7 @@ export default function Post() {
           <img src="/images/son-gual-blog/sg-5.jpg" alt="Son Gual closing holes" style={{width:'100%',height:'100%',objectFit:'cover'}} />
         </div>
         <div className="post-cta">
-          <p>Ich bringe regelmäßig Gäste nach Son Gual. Möchten Sie es mit jemandem spielen, der jeden Loch kennt?</p>
+          <p>Ich bringe regelmäßig Gäste nach Son Gual. Möchten Sie es mit jemandem spielen, der jedes Loch kennt?</p>
           <a href="/de/play-with-a-pro">Das Play-with-a-Pro-Erlebnis entdecken →</a>
         </div>
       </PostLayout>

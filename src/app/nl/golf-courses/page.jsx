@@ -5,7 +5,7 @@ import GolfCoursesClient from '../../../app/golf-courses/GolfCoursesClient'
 
 export const metadata = {
   title: 'Mallorca Golfgids 2026 — Alle banen op het eiland',
-  description: 'De complete gids voor golf op Mallorca - alle 22 banen, greenfees, moeilijkheidsgraden en eerlijke aanbevelingen van een PGA professional op het eiland.',
+  description: 'De complete gids voor golf op Mallorca — alle 22 banen, greenfees, moeilijkheidsgraden en eerlijke aanbevelingen van een PGA professional op het eiland.',
   alternates: { canonical: 'https://mrmallorcagolf.com/nl/golf-courses' },
 }
 

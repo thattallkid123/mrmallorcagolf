@@ -48,7 +48,7 @@ export default function ContactForm_NL() {
           </a>
         </div>
         <div className="promise-block">
-          <p>&ldquo;Neem contact op. Vertel me uw data en wat u zoekt - ik reageer persoonlijk binnen 24 uur.&rdquo;</p>
+          <p>&ldquo;Neem contact op. Vertel me uw data en wat u zoekt — ik reageer persoonlijk binnen 24 uur.&rdquo;</p>
           <cite>Andy Griffiths &middot; PGA Advanced Professional</cite>
         </div>
       </div>
@@ -92,7 +92,7 @@ export default function ContactForm_NL() {
                     <label className="radio-option"><input type="radio" name="experience" value="mallorca-round" checked={form.experience === "mallorca-round"} onChange={handleChange} /><span className="radio-option-label">De Mallorca Ronde</span><span className="radio-option-price">€350 p.p. + green fee</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="signature-day" checked={form.experience === "signature-day"} onChange={handleChange} /><span className="radio-option-label">De Signature Dag</span><span className="radio-option-price">Vanaf €450 p.p. + green fee</span></label>
                     <label className="radio-option"><input type="radio" name="experience" value="full-experience" checked={form.experience === "full-experience"} onChange={handleChange} /><span className="radio-option-label">De Volledige Ervaring</span><span className="radio-option-price">Op aanvraag</span></label>
-                    <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Nog niet zeker - adviseer me</span></label>
+                    <label className="radio-option"><input type="radio" name="experience" value="not-sure" checked={form.experience === "not-sure"} onChange={handleChange} /><span className="radio-option-label">Nog niet zeker — adviseer me</span></label>
                 </div>
               </div>
               <div className="form-group"><label htmlFor="message">Iets anders wat ik moet weten</label><textarea id="message" name="message" className="form-control" placeholder="Doelen voor de dag, banen, gemengde groep, specifieke wensen." value={form.message} onChange={handleChange} /></div>
