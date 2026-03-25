@@ -18,6 +18,18 @@
 .DS_Store
 *.pem
 
+# large media — keep videos and raw originals local only
+*.mp4
+*.mov
+*.avi
+*.mkv
+public/images/old.jpg
+public/images/raw/
+public/images/originals/
+
+# Claude Code local config
+.claude/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
