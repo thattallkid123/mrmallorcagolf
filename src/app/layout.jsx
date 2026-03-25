@@ -91,6 +91,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Preload above-fold hero images for LCP */}
+        <link rel="preload" as="image" href="/images/hero-main.jpg" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N"
           strategy="afterInteractive"

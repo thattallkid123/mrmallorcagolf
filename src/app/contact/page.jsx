@@ -8,9 +8,12 @@ export const metadata = {
 
 export default function Contact() {
   return (
+    <>
+    <link rel="preload" as="image" href="/images/contact.jpg" />
     <PageLayout navTransparent={false}>
       <ContactForm />
     </PageLayout>
+    </>
   )
 }
 

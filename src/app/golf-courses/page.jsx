@@ -10,6 +10,8 @@ export const metadata = {
 
 export default function GolfCourses() {
   return (
+    <>
+    <link rel="preload" as="image" href="/images/golf-courses.jpg" />
     <PageLayout>
       <RevealObserver />
 
@@ -34,6 +36,7 @@ export default function GolfCourses() {
       <GolfCoursesClient lang="en" />
 
     </PageLayout>
+    </>
   )
 }
 

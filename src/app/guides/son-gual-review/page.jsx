@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
@@ -23,7 +24,7 @@ const meta = {
 function PostImage({ src, alt, caption }) {
   return (
     <figure style={{margin:'2rem 0',padding:0}}>
-      <img src={src} alt={alt} loading="lazy"
+      <Image src={src} alt={alt} width={1200} height={520} loading="lazy"
         style={{width:'100%',height:'auto',maxHeight:520,objectFit:'cover',objectPosition:'center',display:'block'}} />
       {caption && <figcaption style={{fontSize:'0.78rem',color:'var(--taupe)',marginTop:'0.5rem',fontStyle:'italic',lineHeight:1.5}}>{caption}</figcaption>}
     </figure>

@@ -19,6 +19,8 @@ const improvements = [
 
 export default function Coaching() {
   return (
+    <>
+    <link rel="preload" as="image" href="/images/coaching-hero.jpg" />
     <PageLayout>
       <RevealObserver />
 
@@ -138,6 +140,7 @@ export default function Coaching() {
       </section>
 
     </PageLayout>
+    </>
   )
 }
 

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
@@ -24,6 +25,8 @@ const credentials = [
 
 export default function About() {
   return (
+    <>
+    <link rel="preload" as="image" href="/images/about-secondary.jpg" />
     <PageLayout>
       <RevealObserver />
 
@@ -76,9 +79,11 @@ export default function About() {
 
         <aside className="story__sidebar">
           <div className="reveal" style={{lineHeight:0,marginBottom:'24px'}}>
-            <img
+            <Image
               src="/images/about-andy-colour.jpg"
-              alt="Andy Griffiths PGA professional, Mallorca"
+              alt="Andy Griffiths — UK PGA Advanced Professional, Mallorca"
+              width={600}
+              height={420}
               style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
             />
           </div>
@@ -116,6 +121,7 @@ export default function About() {
       </section>
 
     </PageLayout>
+    </>
   )
 }
 

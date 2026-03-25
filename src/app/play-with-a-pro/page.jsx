@@ -15,6 +15,8 @@ const testimonials = [
 
 export default function PlayWithAPro() {
   return (
+    <>
+    <link rel="preload" as="image" href="/images/pwap-hero.jpg" />
     <PageLayout>
       <RevealObserver />
 
@@ -144,5 +146,6 @@ export default function PlayWithAPro() {
         </div>
       </section>
     </PageLayout>
+    </>
   )
 }
