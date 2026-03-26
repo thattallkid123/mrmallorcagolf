@@ -58,6 +58,11 @@ export default function PlayWithAProDE() {
           <p>Ich habe in Umgebungen gecoacht, in denen ernsthafte, messbare Verbesserung erwartet wurde — Nationalspieler in China, Golf-Enthusiasten durch ganz Asien. Dieselbe Aufmerksamkeit fließt in jede Runde, die ich begleite.</p>
           <div className="pull-quote"><p>&ldquo;Was die meisten Golfer feststellen: Sie gehen spürbar besser spielend und selbstbewusster nach Hause als sie angekommen sind — und verstehen warum, was der Teil ist, der bleibt.&rdquo;</p></div>
           <p>Das Debriefing beim Mittagessen ist keine Zusammenfassung. Es ist das Gespräch, das den ganzen Tag Sinn ergibt.</p>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" style={{display:'block',marginTop:'2rem',padding:'20px 24px',border:'1px solid rgba(184,151,60,.3)',background:'rgba(184,151,60,.05)',textDecoration:'none',color:'var(--deep)'}}>
+            <p style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:8}}>Bereits gebucht?</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,margin:'0 0 4px'}}>Vor-Runden-Fragebogen ausfüllen &rarr;</p>
+            <p style={{fontSize:'0.85rem',color:'var(--taupe)',margin:0}}>Dauert 3 Minuten. Hilft mir, den Tag auf Sie abzustimmen, bevor wir den ersten Abschlag erreichen.</p>
+          </a>
         </div>
         <div className="pwap-day__right reveal">
           <div className="included">
@@ -182,6 +187,7 @@ export default function PlayWithAProDE() {
         <div className="cta-final__right reveal">
           <Link href="/de/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Ihren Tag buchen &rarr;</Link>
           <Link href="/de/golf-courses" className="btn btn--outline-white">Die Plätze erkunden</Link>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" className="btn btn--outline-white">Vor-Runden-Fragebogen &rarr;</a>
         </div>
       </section>
     </PageLayout>

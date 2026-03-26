@@ -47,6 +47,11 @@ export default function PlayWithAPro() {
           <p>Before you arrive, you complete a short questionnaire. What frustrates you. Where the gap is between your range game and your score. What a good day looks like to you. By the time we reach the first tee, I already know what to watch for.</p>
           <p>During the round, the coaching is woven in naturally — not a running commentary, but the right observation at the right moment. Course management decisions you haven&apos;t considered. The adjustments that actually change something, rather than the ones that just sound right.</p>
           <div className="pull-quote"><p>&ldquo;What most golfers find is that they leave playing noticeably better and feeling more confident than they arrived — and understanding why, which is the part that stays with you.&rdquo;</p></div>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" style={{display:'block',marginTop:'2rem',padding:'20px 24px',border:'1px solid rgba(184,151,60,.3)',background:'rgba(184,151,60,.05)',textDecoration:'none',color:'var(--deep)'}}>
+            <p style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:8}}>Already booked?</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,margin:'0 0 4px'}}>Complete your Pre-Round Questionnaire &rarr;</p>
+            <p style={{fontSize:'0.85rem',color:'var(--taupe)',margin:0}}>Takes 3 minutes. Helps me tailor the day to you before we reach the first tee.</p>
+          </a>
         </div>
         <div className="pwap-day__right reveal">
           <div className="included">
@@ -143,6 +148,7 @@ export default function PlayWithAPro() {
         <div className="cta-final__right reveal">
           <Link href="/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Book Your Day &rarr;</Link>
           <Link href="/golf-courses" className="btn btn--outline-white">Explore the Courses</Link>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" className="btn btn--outline-white">Pre-Round Questionnaire &rarr;</a>
         </div>
       </section>
     </PageLayout>

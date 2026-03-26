@@ -43,6 +43,11 @@ export default function PlayWithAPro_ZH() {
           <p>我曾在要求严格、进步可量化的环境中执教——中国国家队球员，以及遍布亚洲的高尔夫狂热者。</p>
           <div className="pull-quote"><p>&ldquo;大多数球手会发现：他们离开时打得明显更好、更自信——并且知道原因，而这正是留下来的部分。&rdquo;</p></div>
           <p>午餐时的复盘不是总结。而是让整个一天都有意义的那场对话。</p>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" style={{display:'block',marginTop:'2rem',padding:'20px 24px',border:'1px solid rgba(184,151,60,.3)',background:'rgba(184,151,60,.05)',textDecoration:'none',color:'var(--deep)'}}>
+            <p style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:8}}>已预订？</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,margin:'0 0 4px'}}>填写您的赛前问卷 &rarr;</p>
+            <p style={{fontSize:'0.85rem',color:'var(--taupe)',margin:0}}>仅需3分钟，帮助我在开球前了解您的需求，为您量身定制当天体验。</p>
+          </a>
         </div>
         <div className="pwap-day__right reveal">
           <div className="included">
@@ -170,6 +175,7 @@ export default function PlayWithAPro_ZH() {
         <div className="cta-final__right reveal">
           <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>预订您的高尔夫日 &rarr;</Link>
           <Link href="/zh/golf-courses" className="btn btn--outline-white">探索球场</Link>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" className="btn btn--outline-white">赛前问卷 &rarr;</a>
         </div>
       </section>
     </PageLayout>

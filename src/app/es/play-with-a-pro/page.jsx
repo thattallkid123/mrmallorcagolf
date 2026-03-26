@@ -43,6 +43,11 @@ export default function PlayWithAPro_ES() {
           <p>He entrenado en entornos donde se esperaba una mejora seria y medible — jugadores de la selección nacional en China, entusiastas del golf por toda Asia.</p>
           <div className="pull-quote"><p>&ldquo;Lo que la mayoría de los golfistas descubre es que se van jugando notablemente mejor y con más confianza — y entendiendo por qué, que es la parte que permanece.&rdquo;</p></div>
           <p>El análisis en el almuerzo no es un resumen. Es la conversacion que hace que todo el dia tenga sentido.</p>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" style={{display:'block',marginTop:'2rem',padding:'20px 24px',border:'1px solid rgba(184,151,60,.3)',background:'rgba(184,151,60,.05)',textDecoration:'none',color:'var(--deep)'}}>
+            <p style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:8}}>¿Ya reservado?</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,margin:'0 0 4px'}}>Completa tu cuestionario pre-ronda &rarr;</p>
+            <p style={{fontSize:'0.85rem',color:'var(--taupe)',margin:0}}>Solo 3 minutos. Me ayuda a personalizar el día para ti antes de llegar al primer tee.</p>
+          </a>
         </div>
         <div className="pwap-day__right reveal">
           <div className="included">
@@ -170,6 +175,7 @@ export default function PlayWithAPro_ES() {
         <div className="cta-final__right reveal">
           <Link href="/es/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Reserve su día &rarr;</Link>
           <Link href="/es/golf-courses" className="btn btn--outline-white">Explorar los campos</Link>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" className="btn btn--outline-white">Cuestionario pre-ronda &rarr;</a>
         </div>
       </section>
     </PageLayout>

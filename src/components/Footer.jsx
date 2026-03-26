@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const FOOTER_COPY = {
   en: { tagline: 'Private golf experiences in Mallorca with a PGA Advanced Professional. On-course coaching, everything arranged.', experiences: 'Experiences', pwap: 'Play with a Pro', guide: 'Golf Guide', about: 'About', allCourses: 'All Courses', enquire: 'Enquire', coaching: 'On-Course Coaching' },
@@ -14,10 +16,27 @@ function getLangFromProp(lang) {
   return lang && FOOTER_COPY[lang] ? lang : 'en'
 }
 
+const LANG_PREFIXES = ['de', 'es', 'fr', 'zh', 'sv', 'nl']
+
+function getBasePath(pathname) {
+  for (const lp of LANG_PREFIXES) {
+    if (pathname === `/${lp}`) return '/'
+    if (pathname.startsWith(`/${lp}/`)) return pathname.slice(lp.length + 1)
+  }
+  return pathname
+}
+
 export default function Footer({ lang }) {
+  const pathname = usePathname()
+  const basePath = getBasePath(pathname)
   const l   = getLangFromProp(lang)
   const c   = FOOTER_COPY[l]
   const pre = l === 'en' ? '' : `/${l}`
+
+  function langHref(code) {
+    const p = code === 'en' ? '' : `/${code}`
+    return basePath === '/' ? (p || '/') : `${p}${basePath}`
+  }
 
   return (
     <footer className="footer">
@@ -60,11 +79,13 @@ export default function Footer({ lang }) {
       <div className="footer__bottom">
         <p>© 2026 Mr Mallorca Golf · Andy Griffiths · PGA Advanced Professional</p>
         <div className="footer__lang">
-          <Link href="/">EN</Link>
-          <Link href="/es">ES</Link>
-          <Link href="/de">DE</Link>
-          <Link href="/fr">FR</Link>
-          <Link href="/zh">中文</Link>
+          <Link href={langHref('en')}>EN</Link>
+          <Link href={langHref('es')}>ES</Link>
+          <Link href={langHref('de')}>DE</Link>
+          <Link href={langHref('fr')}>FR</Link>
+          <Link href={langHref('nl')}>NL</Link>
+          <Link href={langHref('sv')}>SV</Link>
+          <Link href={langHref('zh')}>中文</Link>
         </div>
       </div>
     </footer>

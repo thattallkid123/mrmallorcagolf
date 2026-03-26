@@ -43,6 +43,11 @@ export default function PlayWithAPro_SV() {
           <p>Jag har coachat i miljöer där förväntningen var seriös, mätbar förbättring — landslaget i Kina, golffanatiker över hela Asien.</p>
           <div className="pull-quote"><p>&ldquo;Det de flesta golfare upptacker är att de går därifrån och spelar märkbart bättre och med större självförtroende — och förstår varför.&rdquo;</p></div>
           <p>Genomgången över lunchen är inte en sammanfattning. Det är samtalet som ger hela dagen mening.</p>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" style={{display:'block',marginTop:'2rem',padding:'20px 24px',border:'1px solid rgba(184,151,60,.3)',background:'rgba(184,151,60,.05)',textDecoration:'none',color:'var(--deep)'}}>
+            <p style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:8}}>Redan bokat?</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,margin:'0 0 4px'}}>Fyll i ditt frågeformulär inför rundan &rarr;</p>
+            <p style={{fontSize:'0.85rem',color:'var(--taupe)',margin:0}}>Tar 3 minuter. Hjälper mig anpassa dagen för dig innan vi når första tee.</p>
+          </a>
         </div>
         <div className="pwap-day__right reveal">
           <div className="included">
@@ -170,6 +175,7 @@ export default function PlayWithAPro_SV() {
         <div className="cta-final__right reveal">
           <Link href="/sv/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Boka din dag &rarr;</Link>
           <Link href="/sv/golf-courses" className="btn btn--outline-white">Utforska banorna</Link>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" className="btn btn--outline-white">Frågeformulär inför rundan &rarr;</a>
         </div>
       </section>
     </PageLayout>

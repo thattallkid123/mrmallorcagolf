@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Round Questionnaire — Mr Mallorca Golf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --deep:    #1A1916;
+    --pine:    #2D4A3E;
+    --pine-mid:#3a5c4e;
+    --gold:    #B8973C;
+    --gold-light: #CBA94D;
+    --cream:   #F7F4EF;
+    --linen:   #EDE9E1;
+    --sand:    #D6CFC3;
+    --taupe:   #8A8378;
+    --charcoal:#3D3C39;
+    --white:   #FFFFFF;
+    --serif:   'Cormorant Garamond', Georgia, serif;
+    --sans:    'Jost', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    font-weight: 300;
+    background: var(--cream);
+    color: var(--deep);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: var(--deep);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-logo {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--cream);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header-logo::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 20px;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+  .header-tag {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--pine);
+    padding: 80px 40px 72px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: 'M';
+    font-family: var(--serif);
+    font-size: 26rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.025);
+    position: absolute;
+    right: -60px;
+    top: -80px;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+  .hero-inner {
+    max-width: 680px;
+    position: relative;
+    z-index: 1;
+  }
+  .eyebrow {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .eyebrow::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 500;
+    color: var(--white);
+    line-height: 1.08;
+    margin-bottom: 20px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+  }
+  .hero p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.8;
+    max-width: 520px;
+  }
+
+  /* ── PROGRESS ── */
+  .progress-bar {
+    background: var(--linen);
+    padding: 0 40px;
+    border-bottom: 1px solid var(--sand);
+    position: sticky;
+    top: 64px;
+    z-index: 90;
+  }
+  .progress-inner {
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    gap: 0;
+  }
+  .progress-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .progress-step::after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    background: var(--sand);
+  }
+  .progress-step:last-child::after { display: none; }
+  .step-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--sand);
+    border: 2px solid var(--sand);
+    transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+  }
+  .progress-step.active .step-dot,
+  .progress-step.done .step-dot {
+    background: var(--pine);
+    border-color: var(--pine);
+  }
+  .progress-step.done .step-dot::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+  .step-label {
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--taupe);
+    margin-top: 4px;
+    white-space: nowrap;
+  }
+  .progress-step.active .step-label { color: var(--pine); font-weight: 500; }
+
+  /* ── MAIN CONTENT ── */
+  .main {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    display: none;
+    padding-top: 56px;
+  }
+  .section.active { display: block; }
+
+  .section-header {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--linen);
+  }
+  .section-number {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 500;
+    color: var(--deep);
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+  .section-desc {
+    font-size: 0.92rem;
+    color: var(--taupe);
+    line-height: 1.7;
+  }
+
+  /* ── QUESTIONS ── */
+  .question {
+    margin-bottom: 36px;
+  }
+  .question-label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--deep);
+    margin-bottom: 8px;
+    letter-spacing: 0.01em;
+  }
+  .question-hint {
+    font-size: 0.8rem;
+    color: var(--taupe);
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+
+  /* Text inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    font-family: var(--sans);
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: var(--deep);
+    background: var(--white);
+    border: 1px solid var(--sand);
+    padding: 13px 16px;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: var(--pine);
+  }
+  textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
+
+  /* Select wrapper */
+  .select-wrap { position: relative; }
+  .select-wrap::after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-right: 1.5px solid var(--taupe);
+    border-bottom: 1.5px solid var(--taupe);
+    transform: translateY(-65%) rotate(45deg);
+    pointer-events: none;
+  }
+
+  /* Radio / checkbox groups */
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .options-grid.single-col { grid-template-columns: 1fr; }
+  .option-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 13px 16px;
+    background: var(--white);
+    border: 1px solid var(--sand);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    user-select: none;
+  }
+  .option-item:hover { border-color: var(--pine); }
+  .option-item input { display: none; }
+  .option-item.selected {
+    border-color: var(--pine);
+    background: var(--linen);
+  }
+  .option-marker {
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid var(--sand);
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .radio-type .option-marker { border-radius: 50%; }
+  .option-item.selected .option-marker {
+    border-color: var(--pine);
+    background: var(--pine);
+  }
+  .option-item.selected .option-marker::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--white);
+    border-radius: 50%;
+    display: block;
+  }
+  .checkbox-type .option-item.selected .option-marker::after {
+    content: '';
+    width: 8px;
+    height: 5px;
+    background: none;
+    border-left: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    transform: rotate(-45deg) translate(1px, -1px);
+    border-radius: 0;
+    display: block;
+  }
+  .option-text {
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--deep);
+    line-height: 1.5;
+  }
+
+  /* Scale */
+  .scale-wrap {
+    display: flex;
+    gap: 6px;
+    align-items: stretch;
+  }
+  .scale-item {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .scale-item input { display: none; }
+  .scale-btn {
+    display: block;
+    padding: 12px 4px;
+    background: var(--white);
+    border: 1px solid var(--sand);
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--taupe);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .scale-item:hover .scale-btn { border-color: var(--pine); color: var(--pine); }
+  .scale-item.selected .scale-btn {
+    background: var(--pine);
+    border-color: var(--pine);
+    color: var(--white);
+  }
+  .scale-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 0.72rem;
+    color: var(--taupe);
+    letter-spacing: 0.03em;
+  }
+
+  /* Two-col layout for short questions */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  /* ── NAVIGATION BUTTONS ── */
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--linen);
+  }
+  .btn {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border: 1px solid currentColor;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-primary {
+    background: var(--pine);
+    color: var(--white);
+    border-color: var(--pine);
+  }
+  .btn-primary:hover { background: var(--pine-mid); border-color: var(--pine-mid); }
+  .btn-secondary { color: var(--taupe); }
+  .btn-secondary:hover { color: var(--deep); border-color: var(--deep); }
+  .btn-gold {
+    background: var(--gold);
+    color: var(--white);
+    border-color: var(--gold);
+  }
+  .btn-gold:hover { background: var(--gold-light); border-color: var(--gold-light); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  /* ── THANK YOU ── */
+  .thankyou {
+    display: none;
+    padding: 80px 40px;
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .thankyou.active { display: block; }
+  .thankyou-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--pine);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 28px;
+  }
+  .thankyou-icon svg { color: var(--white); }
+  .thankyou h2 {
+    font-family: var(--serif);
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.15;
+  }
+  .thankyou p {
+    font-size: 0.95rem;
+    color: var(--taupe);
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+
+  /* ── SUMMARY PANEL (shown at submission) ── */
+  .summary-section {
+    display: none;
+    background: var(--linen);
+    border: 1px solid var(--sand);
+    padding: 32px;
+    margin-top: 32px;
+    text-align: left;
+  }
+  .summary-section.visible { display: block; }
+  .summary-title {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+  .summary-item { margin-bottom: 14px; }
+  .summary-q {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--taupe);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 2px;
+  }
+  .summary-a {
+    font-size: 0.92rem;
+    color: var(--deep);
+    line-height: 1.5;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--deep);
+    padding: 40px;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.05em;
+  }
+  .footer a { color: var(--gold); text-decoration: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .header { padding: 0 20px; }
+    .hero { padding: 56px 20px 52px; }
+    .main { padding: 0 20px 60px; }
+    .progress-bar { padding: 0 20px; }
+    .options-grid { grid-template-columns: 1fr; }
+    .two-col { grid-template-columns: 1fr; }
+    .scale-btn { padding: 10px 2px; font-size: 0.8rem; }
+    .thankyou { padding: 60px 20px; }
+    .footer { padding: 32px 20px; }
+    .nav-row { flex-direction: column-reverse; gap: 12px; }
+    .btn { width: 100%; text-align: center; }
+    .hero::after { font-size: 14rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="https://mrmallorcagolf.com" class="header-logo">Mr Mallorca Golf</a>
+  <span class="header-tag">Pre-Round Questionnaire</span>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Before we play</p>
+    <h1>Tell me about <em>your game.</em></h1>
+    <p>Five minutes before the round. The more honest you are, the more useful the day will be. There are no right answers — just the ones that help me help you.</p>
+  </div>
+</section>
+
+<!-- PROGRESS -->
+<div class="progress-bar">
+  <div class="progress-inner">
+    <div class="progress-step active" data-section="0">
+      <div class="step-dot"></div>
+      <span class="step-label">You</span>
+    </div>
+    <div class="progress-step" data-section="1">
+      <div class="step-dot"></div>
+      <span class="step-label">Your Game</span>
+    </div>
+    <div class="progress-step" data-section="2">
+      <div class="step-dot"></div>
+      <span class="step-label">Practice</span>
+    </div>
+    <div class="progress-step" data-section="3">
+      <div class="step-dot"></div>
+      <span class="step-label">Mindset</span>
+    </div>
+    <div class="progress-step" data-section="4">
+      <div class="step-dot"></div>
+      <span class="step-label">Today</span>
+    </div>
+  </div>
+</div>
+
+<!-- FORM CONTENT -->
+<div class="main">
+
+  <!-- SECTION 0: About You -->
+  <div class="section active" id="section-0">
+    <div class="section-header">
+      <p class="section-number">Section 01 of 05</p>
+      <h2 class="section-title">About you</h2>
+      <p class="section-desc">The basics. Helps me match the day to you before we reach the first tee.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="question">
+        <label class="question-label" for="q-name">Your name</label>
+        <input type="text" id="q-name" placeholder="First name is fine">
+      </div>
+      <div class="question">
+        <label class="question-label" for="q-email">Email address</label>
+        <input type="email" id="q-email" placeholder="For your copy of this summary">
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="question">
+        <label class="question-label" for="q-handicap">Current handicap</label>
+        <input type="text" id="q-handicap" placeholder="e.g. 14, or 'beginner'">
+      </div>
+      <div class="question">
+        <label class="question-label" for="q-age">Age range</label>
+        <div class="select-wrap">
+          <select id="q-age">
+            <option value="" disabled selected>Select</option>
+            <option>Under 25</option>
+            <option>25–35</option>
+            <option>35–45</option>
+            <option>45–55</option>
+            <option>55–65</option>
+            <option>65+</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label">How long have you been playing golf?</label>
+      <div class="options-grid radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="years-playing">
+          <span class="option-marker"></span>
+          <span class="option-text">Less than 2 years</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="years-playing">
+          <span class="option-marker"></span>
+          <span class="option-text">2–5 years</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="years-playing">
+          <span class="option-marker"></span>
+          <span class="option-text">5–15 years</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="years-playing">
+          <span class="option-marker"></span>
+          <span class="option-text">15+ years</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label">How often do you play?</label>
+      <div class="options-grid radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="freq-play">
+          <span class="option-marker"></span>
+          <span class="option-text">A few times a year</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="freq-play">
+          <span class="option-marker"></span>
+          <span class="option-text">Once or twice a month</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="freq-play">
+          <span class="option-marker"></span>
+          <span class="option-text">Once a week</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="freq-play">
+          <span class="option-marker"></span>
+          <span class="option-text">Multiple times a week</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <span></span>
+      <button class="btn btn-primary" onclick="nextSection()">Continue →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 1: Your Game -->
+  <div class="section" id="section-1">
+    <div class="section-header">
+      <p class="section-number">Section 02 of 05</p>
+      <h2 class="section-title">Your current game</h2>
+      <p class="section-desc">Where things actually stand — not where you'd like them to be.</p>
+    </div>
+
+    <div class="question">
+      <label class="question-label">How would you describe your game right now?</label>
+      <p class="question-hint">Pick the one that feels most accurate, even if it's not flattering.</p>
+      <div class="options-grid single-col radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="game-state">
+          <span class="option-marker"></span>
+          <span class="option-text">Playing well — close to my best</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="game-state">
+          <span class="option-marker"></span>
+          <span class="option-text">Solid but not quite firing</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="game-state">
+          <span class="option-marker"></span>
+          <span class="option-text">A bit out of form — not sure why</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="game-state">
+          <span class="option-marker"></span>
+          <span class="option-text">Struggling — something's not clicking</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="game-state">
+          <span class="option-marker"></span>
+          <span class="option-text">Just starting out — building from scratch</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label">Where do you lose the most shots?</label>
+      <p class="question-hint">You can select more than one.</p>
+      <div class="options-grid checkbox-type">
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Driving — accuracy off the tee</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Irons — ball striking</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Short game — chipping &amp; pitching</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Putting</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Course management — wrong decisions</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Mental game — inconsistency under pressure</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label" for="q-typical-score">What's a typical score for you on a full round?</label>
+      <p class="question-hint">An honest estimate, not your best or worst.</p>
+      <input type="text" id="q-typical-score" placeholder="e.g. around 90, or +2 to +5 over par">
+    </div>
+
+    <div class="question">
+      <label class="question-label">When did you last play your best golf?</label>
+      <div class="options-grid radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="best-golf-when">
+          <span class="option-marker"></span>
+          <span class="option-text">Recently — within the last month</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="best-golf-when">
+          <span class="option-marker"></span>
+          <span class="option-text">A few months ago</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="best-golf-when">
+          <span class="option-marker"></span>
+          <span class="option-text">A year or more ago</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="best-golf-when">
+          <span class="option-marker"></span>
+          <span class="option-text">I'm still building — haven't found it yet</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label" for="q-best-golf">What was happening when you played your best golf?</label>
+      <p class="question-hint">What conditions, mindset, or approach made it work?</p>
+      <textarea id="q-best-golf" placeholder="e.g. was playing regularly, felt relaxed, had recently had a lesson that clicked..."></textarea>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn btn-secondary" onclick="prevSection()">← Back</button>
+      <button class="btn btn-primary" onclick="nextSection()">Continue →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 2: Practice -->
+  <div class="section" id="section-2">
+    <div class="section-header">
+      <p class="section-number">Section 03 of 05</p>
+      <h2 class="section-title">Practice &amp; preparation</h2>
+      <p class="section-desc">What you do when you're not on the course. Honest answers here change what I focus on.</p>
+    </div>
+
+    <div class="question">
+      <label class="question-label">How often do you practise between rounds?</label>
+      <div class="options-grid radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="practice-freq">
+          <span class="option-marker"></span>
+          <span class="option-text">Rarely or never</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="practice-freq">
+          <span class="option-marker"></span>
+          <span class="option-text">Occasionally — a few times a month</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="practice-freq">
+          <span class="option-marker"></span>
+          <span class="option-text">Regularly — most weeks</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="practice-freq">
+          <span class="option-marker"></span>
+          <span class="option-text">Often — several times a week</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label">Where do you practise most?</label>
+      <p class="question-hint">Select all that apply.</p>
+      <div class="options-grid checkbox-type">
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Driving range</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Putting green</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">Chipping area / short game</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">On the course itself</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'checkbox')">
+          <input type="checkbox">
+          <span class="option-marker"></span>
+          <span class="option-text">At home / indoors</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label">Have you had lessons or coaching before?</label>
+      <div class="options-grid radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="prev-coaching">
+          <span class="option-marker"></span>
+          <span class="option-text">No — today is my first</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="prev-coaching">
+          <span class="option-marker"></span>
+          <span class="option-text">Yes — a few lessons, some time ago</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="prev-coaching">
+          <span class="option-marker"></span>
+          <span class="option-text">Yes — regular lessons over the years</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="prev-coaching">
+          <span class="option-marker"></span>
+          <span class="option-text">Yes — I've had consistent coaching recently</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label" for="q-coaching-takeaway">If you've had coaching before — what's the one thing that's actually stuck?</label>
+      <p class="question-hint">Or what advice did you receive that you've never been able to apply?</p>
+      <textarea id="q-coaching-takeaway" placeholder="Leave blank if not applicable..."></textarea>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn btn-secondary" onclick="prevSection()">← Back</button>
+      <button class="btn btn-primary" onclick="nextSection()">Continue →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 3: Mindset -->
+  <div class="section" id="section-3">
+    <div class="section-header">
+      <p class="section-number">Section 04 of 05</p>
+      <h2 class="section-title">What holds you back</h2>
+      <p class="section-desc">The honest stuff. This is usually where the real work is.</p>
+    </div>
+
+    <div class="question">
+      <label class="question-label">What frustrates you most about your game?</label>
+      <textarea id="q-frustration" placeholder="Be specific — is it a shot type, a situation, the gap between range and course..."></textarea>
+    </div>
+
+    <div class="question">
+      <label class="question-label">How would you describe the difference between your range game and your on-course game?</label>
+      <div class="options-grid single-col radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="range-vs-course">
+          <span class="option-marker"></span>
+          <span class="option-text">Similar — what I do on the range is what I take to the course</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="range-vs-course">
+          <span class="option-marker"></span>
+          <span class="option-text">Some gap — I play a bit worse on the course</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="range-vs-course">
+          <span class="option-marker"></span>
+          <span class="option-text">Big gap — I can stripe it on the range and fall apart on the course</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="range-vs-course">
+          <span class="option-marker"></span>
+          <span class="option-text">I rarely practise so I'm not sure</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label">How do you respond when a round starts badly?</label>
+      <div class="options-grid single-col radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="bad-start">
+          <span class="option-marker"></span>
+          <span class="option-text">I reset quickly — bad holes don't carry over much</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="bad-start">
+          <span class="option-marker"></span>
+          <span class="option-text">It takes a few holes but I get back on track</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="bad-start">
+          <span class="option-marker"></span>
+          <span class="option-text">One bad hole tends to affect the next one or two</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="bad-start">
+          <span class="option-marker"></span>
+          <span class="option-text">A bad opening often writes off the whole round</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label">Rate your confidence in these areas</label>
+      <p class="question-hint">1 = low confidence, 5 = high confidence</p>
+
+      <div style="margin-bottom:20px;">
+        <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Driving off the tee</p>
+        <div class="scale-wrap" id="scale-drive">
+          <label class="scale-item"><input type="radio" name="conf-drive" value="1"><span class="scale-btn" onclick="selectScale(this)">1</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="2"><span class="scale-btn" onclick="selectScale(this)">2</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="3"><span class="scale-btn" onclick="selectScale(this)">3</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="4"><span class="scale-btn" onclick="selectScale(this)">4</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="5"><span class="scale-btn" onclick="selectScale(this)">5</span></label>
+        </div>
+        <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
+      </div>
+
+      <div style="margin-bottom:20px;">
+        <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Iron play</p>
+        <div class="scale-wrap" id="scale-iron">
+          <label class="scale-item"><input type="radio" name="conf-iron" value="1"><span class="scale-btn" onclick="selectScale(this)">1</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="2"><span class="scale-btn" onclick="selectScale(this)">2</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="3"><span class="scale-btn" onclick="selectScale(this)">3</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="4"><span class="scale-btn" onclick="selectScale(this)">4</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="5"><span class="scale-btn" onclick="selectScale(this)">5</span></label>
+        </div>
+        <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
+      </div>
+
+      <div style="margin-bottom:20px;">
+        <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Short game &amp; chipping</p>
+        <div class="scale-wrap" id="scale-short">
+          <label class="scale-item"><input type="radio" name="conf-short" value="1"><span class="scale-btn" onclick="selectScale(this)">1</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="2"><span class="scale-btn" onclick="selectScale(this)">2</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="3"><span class="scale-btn" onclick="selectScale(this)">3</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="4"><span class="scale-btn" onclick="selectScale(this)">4</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="5"><span class="scale-btn" onclick="selectScale(this)">5</span></label>
+        </div>
+        <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
+      </div>
+
+      <div>
+        <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Putting</p>
+        <div class="scale-wrap" id="scale-putt">
+          <label class="scale-item"><input type="radio" name="conf-putt" value="1"><span class="scale-btn" onclick="selectScale(this)">1</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="2"><span class="scale-btn" onclick="selectScale(this)">2</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="3"><span class="scale-btn" onclick="selectScale(this)">3</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="4"><span class="scale-btn" onclick="selectScale(this)">4</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="5"><span class="scale-btn" onclick="selectScale(this)">5</span></label>
+        </div>
+        <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn btn-secondary" onclick="prevSection()">← Back</button>
+      <button class="btn btn-primary" onclick="nextSection()">Continue →</button>
+    </div>
+  </div>
+
+  <!-- SECTION 4: Today -->
+  <div class="section" id="section-4">
+    <div class="section-header">
+      <p class="section-number">Section 05 of 05</p>
+      <h2 class="section-title">Today's round</h2>
+      <p class="section-desc">What you want from this specific day. This shapes everything.</p>
+    </div>
+
+    <div class="question">
+      <label class="question-label">What would make today a good day for you?</label>
+      <p class="question-hint">Not a score — what would you want to take away from the round?</p>
+      <textarea id="q-good-day" placeholder="e.g. understand my course management better, fix one thing that's been bothering me, just enjoy a great course..."></textarea>
+    </div>
+
+    <div class="question">
+      <label class="question-label">Is there one specific thing you'd like to work on today?</label>
+      <textarea id="q-one-thing" placeholder="e.g. my approach shots under 100m, staying patient on the back nine, reading greens better..."></textarea>
+    </div>
+
+    <div class="question">
+      <label class="question-label">How are you feeling about your game right now — this morning?</label>
+      <div class="options-grid radio-type">
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="feeling-today">
+          <span class="option-marker"></span>
+          <span class="option-text">Confident — ready to play</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="feeling-today">
+          <span class="option-marker"></span>
+          <span class="option-text">Cautiously optimistic</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="feeling-today">
+          <span class="option-marker"></span>
+          <span class="option-text">A bit uncertain — not sure what to expect</span>
+        </label>
+        <label class="option-item" onclick="selectOption(this,'radio')">
+          <input type="radio" name="feeling-today">
+          <span class="option-marker"></span>
+          <span class="option-text">Nervous — it's been a while</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="question-label" for="q-anything-else">Anything else I should know before we play?</label>
+      <p class="question-hint">Physical considerations, time constraints, group dynamics, anything at all.</p>
+      <textarea id="q-anything-else" placeholder="Leave blank if nothing comes to mind..."></textarea>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn btn-secondary" onclick="prevSection()">← Back</button>
+      <button class="btn btn-gold" onclick="submitForm()">Submit questionnaire →</button>
+    </div>
+  </div>
+
+  <!-- THANK YOU -->
+  <div class="thankyou" id="thankyou">
+    <div class="thankyou-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <h2>See you on the first tee.</h2>
+    <p>I've got everything I need. The round is ready. I'll see you shortly before your tee time for a brief warm-up and a look at what the course will throw at us today.</p>
+    <p>If anything changes or you want to add something before we play, WhatsApp is the fastest route.</p>
+    <div class="summary-section visible" id="summary-output">
+      <p class="summary-title">Your responses</p>
+      <div id="summary-items"></div>
+    </div>
+  </div>
+
+</div><!-- end .main -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p><a href="https://mrmallorcagolf.com">mrmallorcagolf.com</a> &nbsp;·&nbsp; Andy Griffiths, UK PGA Advanced Professional &nbsp;·&nbsp; Mallorca</p>
+</footer>
+
+<script>
+  let currentSection = 0;
+  const totalSections = 5;
+
+  function updateProgress() {
+    document.querySelectorAll('.progress-step').forEach((step, i) => {
+      step.classList.remove('active', 'done');
+      if (i < currentSection) step.classList.add('done');
+      if (i === currentSection) step.classList.add('active');
+    });
+  }
+
+  function showSection(n) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById('thankyou').classList.remove('active');
+    const target = document.getElementById('section-' + n);
+    if (target) {
+      target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    updateProgress();
+  }
+
+  function nextSection() {
+    if (currentSection < totalSections - 1) {
+      currentSection++;
+      showSection(currentSection);
+    }
+  }
+
+  function prevSection() {
+    if (currentSection > 0) {
+      currentSection--;
+      showSection(currentSection);
+    }
+  }
+
+  function selectOption(el, type) {
+    if (type === 'radio') {
+      const name = el.querySelector('input').name;
+      document.querySelectorAll(`input[name="${name}"]`).forEach(inp => {
+        inp.closest('.option-item').classList.remove('selected');
+      });
+    }
+    el.classList.toggle('selected');
+    const inp = el.querySelector('input');
+    if (type === 'radio') {
+      inp.checked = true;
+      el.classList.add('selected');
+    } else {
+      inp.checked = el.classList.contains('selected');
+    }
+  }
+
+  function selectScale(btn) {
+    const item = btn.closest('.scale-item');
+    const wrap = btn.closest('.scale-wrap');
+    wrap.querySelectorAll('.scale-item').forEach(i => i.classList.remove('selected'));
+    item.classList.add('selected');
+    item.querySelector('input').checked = true;
+  }
+
+  function getVal(id) {
+    const el = document.getElementById(id);
+    return el ? el.value.trim() : '';
+  }
+
+  function getRadio(name) {
+    const el = document.querySelector(`input[name="${name}"]:checked`);
+    return el ? el.closest('.option-item').querySelector('.option-text').textContent.trim() : '—';
+  }
+
+  function getCheckboxes(container) {
+    const items = [];
+    document.querySelectorAll(`.checkbox-type .option-item.selected .option-text`).forEach(el => {
+      items.push(el.textContent.trim());
+    });
+    return items.length ? items.join(', ') : '—';
+  }
+
+  function getScale(name) {
+    const el = document.querySelector(`input[name="${name}"]:checked`);
+    return el ? el.value + ' / 5' : '—';
+  }
+
+  function submitForm() {
+    const summaryData = [
+      { q: 'Name', a: getVal('q-name') || '—' },
+      { q: 'Email', a: getVal('q-email') || '—' },
+      { q: 'Handicap', a: getVal('q-handicap') || '—' },
+      { q: 'Age range', a: document.getElementById('q-age').value || '—' },
+      { q: 'Years playing', a: getRadio('years-playing') },
+      { q: 'Plays how often', a: getRadio('freq-play') },
+      { q: 'Game state right now', a: getRadio('game-state') },
+      { q: 'Where loses most shots', a: getCheckboxes() },
+      { q: 'Typical score', a: getVal('q-typical-score') || '—' },
+      { q: 'Last played best golf', a: getRadio('best-golf-when') },
+      { q: 'What made best golf work', a: getVal('q-best-golf') || '—' },
+      { q: 'Practice frequency', a: getRadio('practice-freq') },
+      { q: 'Where practises', a: '' },
+      { q: 'Previous coaching', a: getRadio('prev-coaching') },
+      { q: 'Coaching takeaway', a: getVal('q-coaching-takeaway') || '—' },
+      { q: 'Biggest frustration', a: getVal('q-frustration') || '—' },
+      { q: 'Range vs course gap', a: getRadio('range-vs-course') },
+      { q: 'Response to bad start', a: getRadio('bad-start') },
+      { q: 'Confidence: Driving', a: getScale('conf-drive') },
+      { q: 'Confidence: Irons', a: getScale('conf-iron') },
+      { q: 'Confidence: Short game', a: getScale('conf-short') },
+      { q: 'Confidence: Putting', a: getScale('conf-putt') },
+      { q: 'What would make today good', a: getVal('q-good-day') || '—' },
+      { q: 'One thing to work on', a: getVal('q-one-thing') || '—' },
+      { q: 'Feeling today', a: getRadio('feeling-today') },
+      { q: 'Anything else', a: getVal('q-anything-else') || '—' },
+    ];
+
+    // Get checked practice locations
+    const practiceLocations = [];
+    document.querySelectorAll('.checkbox-type .option-item.selected .option-text').forEach(el => {
+      practiceLocations.push(el.textContent.trim());
+    });
+    summaryData[12].a = practiceLocations.length ? practiceLocations.join(', ') : '—';
+
+    // Send to server
+    fetch('/api/questionnaire', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ summaryData }),
+    }).catch(() => {}); // fire-and-forget; don't block the thank-you screen
+
+    const container = document.getElementById('summary-items');
+    container.innerHTML = '';
+    summaryData.forEach(item => {
+      if (item.a && item.a !== '—') {
+        const div = document.createElement('div');
+        div.className = 'summary-item';
+        div.innerHTML = `<p class="summary-q">${item.q}</p><p class="summary-a">${item.a}</p>`;
+        container.appendChild(div);
+      }
+    });
+
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById('thankyou').classList.add('active');
+    document.querySelector('.progress-bar').style.display = 'none';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  updateProgress();
+</script>
+
+</body>
+</html>
