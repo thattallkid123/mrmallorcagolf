@@ -41,7 +41,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Arabella Pitch & Putt - Perfect for beginners</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Arabella Pitch & Putt - Perfect for beginners</p>
 
         <h3>Mid-range 18-hole courses</h3>
         <p>Approximately €80–145 depending on season. Son Termes from €80, Bendinat €74–123, Capdepera €65–135, Canyamel €85–145, Son Servera €80–145, Vall d'Or €99–132. These are proper courses in great conditions and not just an after-thought. Always check the course website for current rates as prices shift seasonally.</p>
@@ -57,7 +57,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Son Gual - Premium course, €115–€165</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Son Gual - Premium course, €115–€165</p>
 
         <div className="post-pull">
           <p>"Son Gual at €165 is less than an equivalent course in England would charge. Mid-range courses here offer good value by British standards."</p>
@@ -81,7 +81,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Buggies available at €35–€48 per round</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Buggies available at €35–€48 per round</p>
 
         <h2>Food and Drink</h2>
         <p>One consistent surprise for visitors: the food is genuinely good. Son Gual's restaurant has views across the Bay of Palma that justify a long lunch. Alcanada's terrace views is one of the best places on the island after a round. Great food options at Andratx and Pula. Budget €20–40 per person.</p>

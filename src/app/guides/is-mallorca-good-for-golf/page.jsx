@@ -69,7 +69,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Capdepera - worth the drive on the east coast</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Capdepera - worth the drive on the east coast</p>
 
         <div className="post-pull">
           <p>"Mallorca is one of the best golf destinations in Europe. Not the most famous, but arguably the best combination of course quality, conditions, and scenery on the continent."</p>
@@ -86,7 +86,7 @@ export default function Post() {
             style={{ objectFit: 'contain', backgroundColor: '#f5f5f5' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Alcanada - scenic northeast coast drive</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Alcanada - scenic northeast coast drive</p>
         <div style={{ position: 'relative', width: '100%', height: '350px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-is-mallorca-good/Soller.jpg"
@@ -95,7 +95,7 @@ export default function Post() {
             style={{ objectFit: 'contain', backgroundColor: '#f5f5f5' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Sóller - UNESCO World Heritage setting on northwest coast</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Sóller - UNESCO World Heritage setting on northwest coast</p>
 
         <h2>Verdict</h2>
         <p>Mallorca is one of the best golf destinations in Europe. Not the most famous but arguably the best combination of course quality, conditions, and scenery on the continent. The golfers who know keep coming back.</p>

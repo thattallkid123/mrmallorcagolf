@@ -47,7 +47,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Son Gual - Must-play course for serious golfers</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Son Gual - Must-play course for serious golfers</p>
         <p><strong>DP World Tour experience:</strong> Son Muntaner (Arabella). Five minutes from Palma, Best in Spain 2025.</p>
         <p><strong>Scenic east coast:</strong> Canyamel and Pula. Worth combining with a night in Artà or Capdepera town.</p>
         <p><strong>Hardest test:</strong> Golf de Andratx, southwest.</p>
@@ -94,7 +94,7 @@ export default function Post() {
                 style={{ objectFit: 'cover' }}
               />
             </div>
-            <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '0.5rem' }}>Valldemossa - dramatic northwest coast</p>
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Valldemossa - dramatic northwest coast</p>
           </div>
           <div>
             <div style={{ position: 'relative', width: '100%', height: '200px' }}>
@@ -105,7 +105,7 @@ export default function Post() {
                 style={{ objectFit: 'cover' }}
               />
             </div>
-            <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '0.5rem' }}>Sóller - classic Mediterranean town</p>
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>Sóller - classic Mediterranean town</p>
           </div>
         </div>
 

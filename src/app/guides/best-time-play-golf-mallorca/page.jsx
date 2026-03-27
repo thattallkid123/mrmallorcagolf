@@ -49,7 +49,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>March-April: Spring courses in peak condition, fewer crowds</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>March-April: Spring courses in peak condition, fewer crowds</p>
 
         <h2>May–June</h2>
         <p>Excellent golf weather — 20–26°C, courses in pristine condition, long evenings. Prices rising with the tourist season. You need to book tee times at the top courses well in advance (start looking online as early as you can!). Get the sunrise / sunset tee times and genuinely outstanding if you book ahead.</p>
@@ -72,7 +72,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>October: Peak conditions and world-class golf events</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>October: Peak conditions and world-class golf events</p>
 
         <h2>November–December</h2>
         <p>November is excellent and underrated. Quiet, good value, courses playing well and still a big percentage of blue sky days, even if you might need to wear a jumper too. December variable but often better than you'd expect. Christmas week surprisingly busy with northern Europeans fleeing winter and wanting some sun!</p>
