@@ -39,6 +39,15 @@ export default function Post() {
 
         <h2>Which Courses to Prioritise</h2>
         <p><strong>Serious golfers, limited time:</strong> Son Gual and Alcanada. These are my two if I had one week and two rounds.</p>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
+          <Image
+            src="/images/blog-trip-planning/Son Gual.jpg"
+            alt="Son Gual Golf Course"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Son Gual - Must-play course for serious golfers</p>
         <p><strong>DP World Tour experience:</strong> Son Muntaner (Arabella). Five minutes from Palma, Best in Spain 2025.</p>
         <p><strong>Scenic east coast:</strong> Canyamel and Pula. Worth combining with a night in Artà or Capdepera town.</p>
         <p><strong>Hardest test:</strong> Golf de Andratx, southwest.</p>

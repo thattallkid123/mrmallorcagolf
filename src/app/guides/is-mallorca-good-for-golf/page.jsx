@@ -61,7 +61,7 @@ export default function Post() {
 
         <h3>The east coast courses require a drive</h3>
         <p>Pula, Canyamel, Capdepera — some of the most beautiful courses — are 55–65km from Palma. Factor in travel time and consider basing yourself in the east for a night and tick off a few.</p>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-is-mallorca-good/Capdepera.jpg"
             alt="Capdepera Golf Course"
@@ -69,7 +69,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Capdepera - worth the drive on the east coast</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Capdepera - worth the drive on the east coast</p>
 
         <div className="post-pull">
           <p>"Mallorca is one of the best golf destinations in Europe. Not the most famous, but arguably the best combination of course quality, conditions, and scenery on the continent."</p>
@@ -78,15 +78,24 @@ export default function Post() {
         <h2>And When You're Not on the Course</h2>
         <p>One thing visitors often underestimate: Mallorca is an exceptional island beyond the golf which is why so many celebrities, sports star and more call here home or visit for holidays. The courses are the anchor, but the days between rounds — or the afternoon after an early finish are what makes the trip.</p>
         <p>The clubhouse restaurants at many of the courses are more than an after-thought, but the island boasts many options from Michelin stars, local favourites and private chef dining experiences. Old town Palma has a dining scene that punches well above its size. The northwest coast — Valldemossa, Deià, Sóller — is UNESCO World Heritage and looks like nothing else in the Mediterranean. The northeast coast and the drive to Alcanada takes you through some of the best scenery on the island. The Ma-10 mountain road from Andratx to Pollença is one of the most dramatic drives in Europe. Build in at least one afternoon where you don't have a tee time.</p>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '350px', margin: '1.5rem 0 0.5rem 0' }}>
+          <Image
+            src="/images/blog-is-mallorca-good/Alcanada.jpg"
+            alt="Alcanada and lighthouse"
+            fill
+            style={{ objectFit: 'contain', backgroundColor: '#f5f5f5' }}
+          />
+        </div>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Alcanada - scenic northeast coast drive</p>
+        <div style={{ position: 'relative', width: '100%', height: '350px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-is-mallorca-good/Soller.jpg"
             alt="Soller town"
             fill
-            style={{ objectFit: 'cover' }}
+            style={{ objectFit: 'contain', backgroundColor: '#f5f5f5' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Sóller - UNESCO World Heritage setting</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Sóller - UNESCO World Heritage setting on northwest coast</p>
 
         <h2>Verdict</h2>
         <p>Mallorca is one of the best golf destinations in Europe. Not the most famous but arguably the best combination of course quality, conditions, and scenery on the continent. The golfers who know keep coming back.</p>

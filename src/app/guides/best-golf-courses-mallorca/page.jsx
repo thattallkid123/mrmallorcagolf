@@ -33,7 +33,7 @@ export default function Post() {
         <h2>The Top Courses — By Purpose</h2>
 
         <h3>For a Serious Championship Round: Son Gual</h3>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-best-golf-courses/Son Gual.jpg"
             alt="Son Gual Golf Course"
@@ -41,12 +41,12 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Son Gual - Championship Test Course</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Son Gual - Championship Test Course</p>
         <p>My most-played course on the island and the one I recommend most often for a proper test. Thomas Himmel's design sits in its own wind ecosystem in the hills above Palma — I've left my house, full of confidence, on a calm morning and arrived at the first tee to find it blowing hard and staying that way for the whole round. The greens are fast, raised, and unforgiving. The bunkering is aggressive and makes strategy and ball striking need to be top level and the closing stretch is genuinely outstanding.</p>
         <p>Rafa Nadal's stated favourite course on the island. Barack Obama played here in November 2024. Green fees: from €115 in low season to €165 at peak. Handicap certificate required.</p>
 
         <h3>For the Most Scenic Round: Alcanada</h3>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-best-golf-courses/Alcanada.jpg"
             alt="Alcanada Golf Course"
@@ -54,12 +54,12 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Alcanada - Most Scenic Course</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Alcanada - Most Scenic Course</p>
         <p>Robert Trent Jones Jr. design in the north of the island, with a lighthouse visible from 16 of the 18 holes. Standing on the back tees on number 7, elevated way above the bay, with everyone below looking like tiny dots and the lighthouse and expanse of water taking up the whole horizon — is one of those moments that reminds you why you play golf. The greens are severe, can get extremely fast, and is a real challenge. The drive north from Palma takes about 50 minutes. Worth every minute.</p>
         <p>Green fees: €115 (low season) to €220 (peak spring and autumn).</p>
 
         <h3>For a DP World Tour Experience: Son Muntaner</h3>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-best-golf-courses/Son Muntaner.webp"
             alt="Son Muntaner Golf Course"
@@ -67,11 +67,11 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Son Muntaner - Spain's Best Golf Course 2025</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Son Muntaner - Spain's Best Golf Course 2025</p>
         <p>Named Best Golf Course in Spain at the 2025 World Golf Awards and well deserved. Hosted the Mallorca Golf Open and Ladies European Tour events. Wide fairways, but a lot of hazards and pine trees to guide you, technically demanding greens, fantastic conditioning and a really good test of golf just five minutes from central Palma.</p>
 
         <h3>For the Hardest Test: Golf de Andratx</h3>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-best-golf-courses/Andratx.webp"
             alt="Golf de Andratx"
@@ -79,11 +79,11 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Andratx - Hardest Test on the Island</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Andratx - Hardest Test on the Island</p>
         <p>Widely considered as 1 of the most difficult course on the island. A championship layout in the southwest with breathtaking scenery and hazards on near enough every hole. The 6th is the longest par 5 in the whole of Spain at 609 metres. Recommended for experienced players, and bring extra balls! Green fees approximately €96 to €140 depending on season.</p>
 
         <h3>For the Most Beautiful Setting: Canyamel</h3>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-best-golf-courses/Canyamel.webp"
             alt="Canyamel Golf Course"
@@ -91,11 +91,11 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Canyamel - Most Photographed Course</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Canyamel - Most Photographed Course</p>
         <p>Described by many as the most photographed course on the island. Set in the foothills of the Llevant Natural Park in the east, with sea views throughout. Worth the drive from Palma for the setting, and a genuinely good course beyond the aesthetics.</p>
 
         <h3>Also Worth Playing: Golf Santa Ponsa 1</h3>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-best-golf-courses/Santa Ponsa 1.jpg"
             alt="Santa Ponsa 1 Golf Course"
@@ -103,11 +103,11 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Santa Ponsa 1 - European Tour History</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Santa Ponsa 1 - European Tour History</p>
         <p>The only public course in the Santa Ponsa group, with genuine European Tour history — it hosted the 2021 DP World Tour Mallorca Golf Open and 6 European Tour Events. One of the longest courses on the island, with open fairways that reward an aggressive approach from the tee and good opportunities to hit driver.</p>
 
         <h3>For Beginners or Mixed Groups: Son Quint or Son Antem East</h3>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg"
             alt="Son Quint Golf Course"
@@ -115,7 +115,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Son Quint - Where Tiger Woods and son Charlie played 2022</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Son Quint - Where Tiger Woods and son Charlie played 2022</p>
         <p>Son Quint is the most accessible course in the Arabella group (4 courses in 1 complex) — relatively flat, wide fairways, native planting and low intimidation factor. Set high up, it has great views over Palma. Tiger Woods and his son Charlie played here in July 2022 after the Ryder Cup. Son Antem East in the south is similarly flat and forgiving but with a good amount of water, bunkers and trees to be interesting and with a hotel resort if you want to combine with accommodation.</p>
 
         <div className="post-fact">

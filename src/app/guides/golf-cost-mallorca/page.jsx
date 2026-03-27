@@ -33,7 +33,7 @@ export default function Post() {
 
         <h3>Budget (nine-hole, pitch and putt)</h3>
         <p>€20–50. The Arabella Pitch & Putt in Palma is a proper short course at the lower end. Great for beginners and a low-pressure environment, conveniently close to the bigger siblings in the same complex.</p>
-        <div style={{ position: 'relative', width: '100%', height: '280px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '280px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-golf-cost/Arabella Pitch and Putt.jpg"
             alt="Arabella Pitch and Putt"
@@ -41,7 +41,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Arabella Pitch & Putt - Perfect for beginners</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Arabella Pitch & Putt - Perfect for beginners</p>
 
         <h3>Mid-range 18-hole courses</h3>
         <p>Approximately €80–145 depending on season. Son Termes from €80, Bendinat €74–123, Capdepera €65–135, Canyamel €85–145, Son Servera €80–145, Vall d'Or €99–132. These are proper courses in great conditions and not just an after-thought. Always check the course website for current rates as prices shift seasonally.</p>
@@ -49,7 +49,7 @@ export default function Post() {
         <h3>Premium courses</h3>
         <p>Son Gual ranges from €115 in low season to €165 at peak (March–May and September–November). Alcanada ranges from €115 in low season to €220 at peak. Both are published 2026 rate cards. Son Muntaner — named Best Golf Course in Spain at the 2025 World Golf Awards — sits in a similar bracket. Verify current rates at arabellagolfmallorca.com.</p>
         <p>Many courses have dynamic pricing, so if you are looking to get a tee-time last minute, at a busy course, you'll be paying more for it! Plan early, set your priorities and save a little bit of cash. Additionally, looking on club websites for Black Friday, Christmas and other promotional deals is well worth doing. Many courses partner up to offer discounts on multiple rounds and more. Can frequently save 30-40% if you do this right!</p>
-        <div style={{ position: 'relative', width: '100%', height: '280px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '280px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-golf-cost/Son Gual.jpg"
             alt="Son Gual Golf Course"
@@ -57,7 +57,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Son Gual - Premium course, €115–€165</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Son Gual - Premium course, €115–€165</p>
 
         <div className="post-pull">
           <p>"Son Gual at €165 is less than an equivalent course in England would charge. Mid-range courses here offer good value by British standards."</p>
@@ -73,7 +73,7 @@ export default function Post() {
         <h2>Buggies and Trolleys</h2>
         <p>Golf buggies run €35–48 depending on the course. Son Gual charges €45, Alcanada €48 — the GPS models give you yardages and hole maps. Pull trolleys €6–8. Electric trolleys €14–25.</p>
         <p>At hillier courses like Bendinat, Andratx or Son Vida, a buggy earns its cost. At the flatter courses (Son Antem, Maioris, Santa Ponsa and more), a trolley is fine.</p>
-        <div style={{ position: 'relative', width: '100%', height: '280px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '280px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-golf-cost/T Golf Calvia Buggies.jpg"
             alt="Golf buggies in use"
@@ -81,7 +81,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>Buggies available at €35–€48 per round</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>Buggies available at €35–€48 per round</p>
 
         <h2>Food and Drink</h2>
         <p>One consistent surprise for visitors: the food is genuinely good. Son Gual's restaurant has views across the Bay of Palma that justify a long lunch. Alcanada's terrace views is one of the best places on the island after a round. Great food options at Andratx and Pula. Budget €20–40 per person.</p>

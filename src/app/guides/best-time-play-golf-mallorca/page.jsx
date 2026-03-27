@@ -41,15 +41,15 @@ export default function Post() {
 
         <h2>March–April</h2>
         <p>16–20°C, courses recovering from the (not so harsh!) winter, fewer crowds than summer. Green fees rising but not yet peak. Alcanada starts picking up with the Rolex Challenge Tour preparation. My second-favourite window to explore new courses without the crowds and take some pictures / videos alongside it!</p>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
-            src="/images/blog-best-time-play/Son Gual.jpg"
+            src="/images/blog-best-time-play/T Golf Calvia Sun.jpg"
             alt="Spring golf in Mallorca"
             fill
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>March-April: Spring courses in peak condition, fewer crowds</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>March-April: Spring courses in peak condition, fewer crowds</p>
 
         <h2>May–June</h2>
         <p>Excellent golf weather — 20–26°C, courses in pristine condition, long evenings. Prices rising with the tourist season. You need to book tee times at the top courses well in advance (start looking online as early as you can!). Get the sunrise / sunset tee times and genuinely outstanding if you book ahead.</p>
@@ -64,7 +64,7 @@ export default function Post() {
         <h2>September–October</h2>
         <p>My favourite! Temperatures drop a little to a comfortable 22–26°C, post-summer courses are in excellent condition, green fees beginning to fall and often greens get even faster at this point too. September still busy; October noticeably quieter. Peak conditions, in between — the sweet spot.</p>
         <p>Alcanada hosts the Rolex Challenge Tour Grand Final in October 2026 — worth knowing if you want to watch elite-level golf while you're on the island.</p>
-        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '300px', margin: '1.5rem 0 0.5rem 0' }}>
           <Image
             src="/images/blog-best-time-play/Rolex Challenge Grand Final.jpg"
             alt="Rolex Challenge Tour Grand Final at Alcanada"
@@ -72,7 +72,7 @@ export default function Post() {
             style={{ objectFit: 'cover' }}
           />
         </div>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#666', marginTop: '-0.5rem' }}>October: Peak conditions and world-class golf events</p>
+        <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', marginTop: '0.25rem' }}>October: Peak conditions and world-class golf events</p>
 
         <h2>November–December</h2>
         <p>November is excellent and underrated. Quiet, good value, courses playing well and still a big percentage of blue sky days, even if you might need to wear a jumper too. December variable but often better than you'd expect. Christmas week surprisingly busy with northern Europeans fleeing winter and wanting some sun!</p>
