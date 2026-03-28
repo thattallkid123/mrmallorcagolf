@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
+import PageLayout from '../../../components/PageLayout'
+import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: '马洛卡球场实地高尔夫教练 — PGA职业选手',

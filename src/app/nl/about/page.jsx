@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
-import CareerStrip from '../../components/CareerStrip'
+import PageLayout from '../../../components/PageLayout'
+import RevealObserver from '../../../components/RevealObserver'
+import CareerStrip from '../../../components/CareerStrip'
 
 export const metadata = {
   title: 'Over Andy Griffiths — PGA Professional, Mallorca',

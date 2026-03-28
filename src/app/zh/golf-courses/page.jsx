@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
-import GolfCoursesClient from './GolfCoursesClient'
+import PageLayout from '../../../components/PageLayout'
+import RevealObserver from '../../../components/RevealObserver'
+import GolfCoursesClient from '../../golf-courses/GolfCoursesClient'
 
 export const metadata = {
   title: '马洛卡高尔夫指南2026 — 岛上的每一个球场',

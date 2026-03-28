@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
+import PageLayout from '../../../components/PageLayout'
+import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
   title: 'On-Course Golf Coaching auf Mallorca — PGA Professional',

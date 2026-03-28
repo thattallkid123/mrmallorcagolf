@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
-import GolfCoursesClient from './GolfCoursesClient'
+import PageLayout from '../../../components/PageLayout'
+import RevealObserver from '../../../components/RevealObserver'
+import GolfCoursesClient from '../../golf-courses/GolfCoursesClient'
 
 export const metadata = {
   title: 'Guide Golf Majorque 2026 — Tous les Parcours de l\'Île',

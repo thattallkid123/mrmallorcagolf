@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
-import GolfCoursesClient from './GolfCoursesClient'
+import PageLayout from '../../../components/PageLayout'
+import RevealObserver from '../../../components/RevealObserver'
+import GolfCoursesClient from '../../golf-courses/GolfCoursesClient'
 
 export const metadata = {
   title: 'Mallorca Golfgids 2026 — Alle banen op het eiland',
