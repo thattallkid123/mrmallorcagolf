@@ -68,7 +68,7 @@ export default function PlayWithAPro_FR() {
       <section className="pwap-courses">
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>Quel parcours ?</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual et Alcanada sont les parcours principaux. Mais le choix se fait toujours avec vous.</h2>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Le parcours est toujours choisi avec vous.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>Un groupe avec des débutants, une demi-journée — il y a des parcours qui conviennent mieux, et je vous dirai honnêtement lequel. Certains sont réservés aux membres — cet accès peut être arrangé.</p>
         </div>
         <div className="courses-grid">

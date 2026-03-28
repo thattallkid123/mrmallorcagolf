@@ -90,7 +90,7 @@ export default function PlayWithAProDE() {
       <section className="pwap-courses">
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>Welcher Platz?</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual und Alcanada sind die Hauptplätze. Aber der Platz wird immer gemeinsam mit Ihnen gewählt.</h2>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Der Platz wird immer gemeinsam mit Ihnen gewählt.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>Eine Gruppe mit Anfängern, ein kürzerer Halbtag, eine Familie mit Junioren — es gibt Plätze, die für all das besser geeignet sind, und ich sage Ihnen ehrlich, welcher. Manche sind nur für Mitglieder zugänglich und können nicht unabhängig gebucht werden. Dieser Zugang kann für Klienten arrangiert werden.</p>
         </div>
         <div className="courses-grid">

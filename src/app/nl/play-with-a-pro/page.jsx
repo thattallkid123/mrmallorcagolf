@@ -68,7 +68,7 @@ export default function PlayWithAPro_NL() {
       <section className="pwap-courses">
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>Welke baan?</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual en Alcanada zijn de primaire banen. Maar de keuze wordt altijd met u gemaakt.</h2>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>De baan wordt altijd met u gekozen.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>Een groep met beginners, een kortere halve dag — er zijn banen die beter werken, en ik vertel u eerlijk welke. Sommige zijn alleen voor leden — die toegang kan worden geregeld.</p>
         </div>
         <div className="courses-grid">

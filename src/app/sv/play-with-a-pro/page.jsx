@@ -68,7 +68,7 @@ export default function PlayWithAPro_SV() {
       <section className="pwap-courses">
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>Vilken bana?</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual och Alcanada är de primära banorna. Men valet görs alltid med dig.</h2>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Banan väljs alltid med dig.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>En grupp med nybörjare, en kortare halvdag — det finns banor som passar bättre, och jag berättar ärligt vilken. Några är endast för medlemmar — tillgang kan arrangeras.</p>
         </div>
         <div className="courses-grid">

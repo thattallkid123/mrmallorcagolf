@@ -68,7 +68,7 @@ export default function PlayWithAPro_ZH() {
       <section className="pwap-courses">
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>选择哪个球场？</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual和Alcanada是主要球场。但选择始终与您共同决定。</h2>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>球场始终与您共同选择。</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>有初学者的团体、较短的半日——总有更合适的球场，我会直接告诉您哪个更适合。部分会员制球场无法自行预订——可为客户安排。</p>
         </div>
         <div className="courses-grid">
