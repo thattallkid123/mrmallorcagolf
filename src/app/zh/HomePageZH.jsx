@@ -4,307 +4,369 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 const courses = [
-  { cls: 'course-card--1', badge: '★ 专家推荐', region: '帕尔马 · 距市中心11公里', name: 'Son Gual', meta: ['锦标赛级','标准杆72','€80–165'], stars: '★★★★★', difficulty: '难度9/10', excerpt: '托马斯·希梅尔的2007年设计拥有自己独特的风力生态系统。最后九洞——第15至18洞——属于欧洲高尔夫四大最佳球洞之列。', img: '/images/son-gual.jpg' },
-  { cls: 'course-card--2', badge: '★ 专家推荐', region: '阿尔库迪亚 · 马略卡岛北部', name: 'Alcanada', meta: ['滨海球场','标准杆72','€115–220'], stars: '★★★★★', difficulty: '难度7/10', excerpt: '罗伯特·特伦特·琼斯二世在其最富戏剧性的设计中。灯塔从18个球洞中的16个可见。西班牙最上镜的高尔夫球场之一。', img: '/images/alcanada.jpg' },
-  { cls: 'course-card--3', badge: '西班牙最佳 2025', region: '桑维达 · 帕尔马', name: 'Son Muntaner', meta: ['DP世界巡回赛','标准杆72'], stars: '★★★★★', difficulty: '难度7/10', excerpt: '荣获2025年世界高尔夫大奖评选为西班牙最佳高尔夫球场。俯瞰帕尔马湾。第15洞有一棵千年古橄榄树。', img: '/images/son-muntaner.webp' },
-  { cls: 'course-card--4', badge: null, region: '圣庞萨 · 西南部', name: 'Santa Ponsa 1', meta: ['DP世界巡回赛','标准杆72','€77–126'], stars: '★★★★☆', difficulty: '难度8/10', excerpt: '2021年DP世界巡回赛马略卡高尔夫公开赛的举办地。岛上最长的球场之一——第10洞590米是欧洲最长的标准杆5之一。', img: '/images/santa-ponsa.webp' },
-  { cls: 'course-card--5', badge: null, region: '坎普德马尔 · 西南部', name: 'Golf de Andratx', meta: ['最具挑战性','标准杆72','€96–140'], stars: '★★★★☆', difficulty: '难度9/10', excerpt: '第6洞是西班牙最长的标准杆5，长609米。建造在沿海丘陵上，毫不妥协。带上备用球和谦逊。', img: '/images/andratx.webp' },
+  { cls: 'course-card--1', badge: '★ Expert Pick', region: 'Palma · 11km from city', name: 'Son Gual', meta: ['Championship', 'Par 72', '€80–165'], stars: '★★★★★', difficulty: '9/10 Difficulty', excerpt: "Thomas Himmel's 2007 design sits in its own wind ecosystem. The closing stretch — holes 15–18 — is among the finest four holes in European golf.", img: '/images/son-gual.jpg' },
+  { cls: 'course-card--2', badge: '★ Expert Pick', region: 'Alcúdia · North Mallorca', name: 'Alcanada', meta: ['Coastal', 'Par 72', '€115–220'], stars: '★★★★★', difficulty: '7/10 Difficulty', excerpt: "Robert Trent Jones Jr. at his most scenic. The lighthouse visible from 16 of 18 holes. One of the most photographed courses in Spain.", img: '/images/alcanada.jpg' },
+  { cls: 'course-card--3', badge: 'Best in Spain 2025', region: 'Son Vida · Palma', name: 'Son Muntaner', meta: ['DP World Tour', 'Par 72'], stars: '★★★★★', difficulty: '7/10 Difficulty', excerpt: "Named Best Golf Course in Spain at the 2025 World Golf Awards. Views across the Bay of Palma. A thousand-year-old olive tree on the 15th.", img: '/images/son-muntaner.webp' },
+  { cls: 'course-card--4', badge: null, region: 'Santa Ponsa · Southwest', name: 'Santa Ponsa 1', meta: ['DP World Tour host', 'Par 72', '€77–126'], stars: '★★★★☆', difficulty: '8/10 Difficulty', excerpt: "Hosted the 2021 DP World Tour Mallorca Open. One of Europe's longest courses — the 10th hole alone stretches 590 metres.", img: '/images/santa-ponsa.webp' },
+  { cls: 'course-card--5', badge: null, region: 'Camp de Mar · Southwest', name: 'Golf de Andratx', meta: ['Most challenging', 'Par 72', '€96–140'], stars: '★★★★☆', difficulty: '9/10 Difficulty', excerpt: 'The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', img: '/images/andratx.webp' },
 ]
 
+const WINNER_IMAGES = [
+  "/images/winners/012ce2fdc02bf1fef437a1d98c25be1540117c3805.jpg",
+  "/images/winners/0134a9b7aac8ad0d0656f04a253c43088b7331ce8f.jpg",
+  "/images/winners/013bf5d9686d01b02fce51ef1123c10b7450176d15.jpg",
+  "/images/winners/0144db5d1b7e24d0c6caa972462828fa30285c221b.jpg",
+  "/images/winners/01642ab42974ebfa93f60beb07ab37157b87a3a515.jpg",
+  "/images/winners/0166d35c197839412b807e6f1f9d74f3019ed0cdc7.jpg",
+  "/images/winners/01896bd5845040a4f9957ce34acc61c2e68540c266.jpg",
+  "/images/winners/01995db72802106453cf4aad2953648cec12aacd7e.jpg",
+  "/images/winners/01ae26f53c5692f97b8207b9f36ca1cbbefa4618cc.jpg",
+  "/images/winners/01c93d14fd4089f7fa1a956671b90967a1c09ed13f.jpg",
+  "/images/winners/01f43146e7bbd479cd809b6daabd9b105b0008ca18.jpg",
+  "/images/winners/01fe13d3c84b1236db2811859106a909c2227f8aa5.jpg",
+  "/images/winners/2017_06_11_19_32_56.jpg",
+  "/images/winners/2017_07_24_07_54_26.jpg",
+  "/images/winners/2017_12_07_03_05_56.jpg",
+  "/images/winners/2018_08_10_17_45_12.jpg",
+  "/images/winners/2018_08_11_14_58_16.jpg",
+  "/images/winners/2019_06_14_17_33_00.jpg",
+  "/images/winners/2019_07_13_06_48_15.jpg",
+  "/images/winners/2020_11_25_12_20_00.jpg",
+  "/images/winners/2021_02_18_21_57_59.jpg",
+  "/images/winners/2021_04_18_20_01_18.jpg",
+  "/images/winners/2022_07_17_20_47_02.jpg",
+  "/images/winners/2022_07_18_17_01_28.jpg",
+  "/images/winners/2022_07_31_22_36_45.jpg",
+  "/images/winners/2022_08_18_17_44_28.jpg",
+  "/images/winners/2022_10_03_08_30_13.jpg",
+  "/images/winners/2022_10_07_19_28_31.jpg",
+  "/images/winners/2022_10_24_23_15_14.jpg",
+  "/images/winners/2023_06_13_11_53_03.jpg",
+  "/images/winners/2023_06_18_23_58_15.jpg",
+  "/images/winners/2023_08_29_22_35_30.jpg",
+  "/images/winners/2023_10_23_18_34_53.jpg",
+  "/images/winners/2023_12_03_16_55_19.jpg",
+  "/images/winners/2024_04_07_21_05_51.jpg",
+  "/images/winners/2024_06_28_12_16_55.jpg",
+  "/images/winners/2024_07_30_08_11_08.jpg",
+]
+
+
+const ADAM_TESTIMONIAL = "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough."
+
 const faqs = [
-  { q: '我需要是个很会打高尔夫的人吗？', a: '不需要，完全不需要。该体验会根据您的水平进行调整——初学者和职业选手都能从这一天获益同样多。唯一的先决条件是渴望获得一次真正不同的高尔夫体验。' },
-  { q: '您使用哪个球场？', a: '这取决于您。Son Gual和Alcanada是我进行完整严肃一日赛的主要球场。对于初学者、小组或较短的轮次，有更好的选择——我会诚实地告诉您哪个最合适。' },
-  { q: '我如何预订？', a: '联系我。告诉我您的日期和您要找的东西——我会在24小时内亲自回复。没有预订系统。没有等待时间。' },
-  { q: '它适合团体吗？', a: '是的。这些体验适用于个人、夫妇、朋友团体和企业活动。完整体验在访问岛屿的企业团体和高管中特别受欢迎。' },
-  { q: '最佳来访时间是什么时候？', a: '10月、11月、3月和4月。球场条件、气候、性价比和打球速度的最佳组合。该岛全年都可以打球——1月时这里的fairways状况比英国8月的状况更好。' },
+  { q: '我必须是一个好的高尔夫球手吗？', a: '绝对不是。这个体验会根据你的水平调整——初学者和职业球手都能受益。唯一的要求就是想要一次真正与众不同的高尔夫体验。' },
+  { q: '你们使用哪个球场？', a: '这取决于你。Son Gual和Alcanada是我进行严肃全天活动的首选。对于初学者、团体或较短的回合，有更好的选择——我会诚实地告诉你哪个球场适合。' },
+  { q: '我如何预订？', a: '联系我。告诉我你的日期和你在寻找什么——我会在24小时内亲自回复。没有预订系统。没有等待。' },
+  { q: '这适合团体吗？', a: '适合。这个体验适用于个人、情侣、朋友群体和公司活动。完整体验特别受欢迎，适合访问岛屿的商务团体和高管。' },
+  { q: '什么是访问的最佳季节？', a: '十月、十一月、三月和四月。球场状况、天气、价格和打球速度的最佳组合。该岛全年都可以打球——一月份这里的草坪状况比八月份英格兰的草坪更好。' },
 ]
 
 const FEATURE_ICONS = {
-  coaching: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" /></svg>,
-  expertise: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" /></svg>,
-  access: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>,
-  video: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="23 7 16 12 23 17 23 7" /><rect x="1" y="5" width="15" height="14" rx="2" ry="2" /></svg>,
-  groups: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>,
-  plan: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 9.5c0 .83-.67 1.5-1.5 1.5S11 13.33 11 12.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5z" /></svg>,
+  arranged: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{width:18,height:18}}><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg>),
+  coaching: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{width:18,height:18}}><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>),
+  private: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{width:18,height:18}}><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>),
+  access: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{width:18,height:18}}><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>),
 }
 
+
 export default function HomePageZH() {
-  const [openFAQ, setOpenFAQ] = useState(null)
   const router = useRouter()
-  const [currentCourseIdx, setCurrentCourseIdx] = useState(0)
+  const [openFaq, setOpenFaq] = useState(0)
+  const trackRef = useRef(null)
+  const isDragging = useRef(false)
+  const startX = useRef(0)
+  const scrollLeftStart = useRef(0)
+
+  const scrollTrack = (dir) => trackRef.current?.scrollBy({ left: dir * 370, behavior: 'smooth' })
+  const onMouseDown = (e) => { isDragging.current = true; trackRef.current.style.cursor = 'grabbing'; startX.current = e.pageX - trackRef.current.offsetLeft; scrollLeftStart.current = trackRef.current.scrollLeft }
+  const onMouseLeave = () => { isDragging.current = false; if (trackRef.current) trackRef.current.style.cursor = 'grab' }
+  const onMouseUp = () => { isDragging.current = false; if (trackRef.current) trackRef.current.style.cursor = 'grab' }
+  const onMouseMove = (e) => { if (!isDragging.current) return; e.preventDefault(); const x = e.pageX - trackRef.current.offsetLeft; trackRef.current.scrollLeft = scrollLeftStart.current - (x - startX.current) * 1.4 }
 
   return (
-    <div className="homepage">
-      {/* HERO SECTION */}
-      <section className="hero" style={{ backgroundImage: 'url(/images/hero-bg.jpg)' }}>
-        <div className="hero-content">
-          <p className="hero-eyebrow">马略卡岛高尔夫教练</p>
-          <h1 className="hero-title">您的下一轮可能改变一切</h1>
-          <p className="hero-subtitle">在顶级球场的个人教练。不是为了所有人。</p>
+    <>
+      {/* HERO */}
+      <section className="hero">
+        <div className="hero__bg" style={{
+          backgroundImage: 'linear-gradient(160deg, rgba(26,25,22,0.35) 0%, rgba(26,25,22,0.72) 70%), linear-gradient(to bottom, rgba(26,25,22,0.08) 0%, rgba(26,25,22,0.55) 100%), url(/images/hero-main.jpg)',
+          backgroundSize: 'auto, auto, cover',
+          backgroundPosition: 'center, center, center 50%',
+        }}></div>
+        <div className="hero__content">
+          <p className="hero__eyebrow">PGA职业教练 · 马略卡岛</p>
+          <h1 className="serif-display hero__title">
+            玩遍马略卡岛<br />最佳球场。<br />
+            <em style={{fontStyle:'italic',fontWeight:400,opacity:0.85}}>身边有职业教练。</em>
+          </h1>
+          {/* Sub-headline removed — headline is strong enough alone */}
+          <div className="hero__actions">
+            <Link href="/zh/contact" className="btn btn--gold">预订你的一天</Link>
+            <a href="#courses" className="btn btn--outline-white">探索球场</a>
+          </div>
+        </div>
+        <div className="hero__trust">
+          <p className="hero__trust-line"><em>PGA职业教练</em></p>
+          <p className="hero__trust-line"><em>Trackman Master Certified</em></p>
+          <p className="hero__trust-line"><em>18年高尔夫教练经验</em></p>
+          <p className="hero__trust-line">Pebble Beach · Evian · The Open</p>
+        </div>
+        {/* Scroll indicator removed — not needed on homepage only */}
+      </section>
 
-          <div className="hero-cta">
-            <button onClick={() => router.push('/zh/contact')} className="btn btn-primary">
-              立即预订
+      {/* INTRO */}
+      <section className="intro reveal">
+        <div className="intro__left">
+          <p className="eyebrow" style={{color:'rgba(255,255,255,0.35)',marginBottom:'1rem'}}>什么使其特殊</p>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.6rem)',color:'#fff',marginBottom:'1.5rem'}}>
+            马略卡岛上许多高尔夫体验都通过平台预订。<br />这个不同。
+          </h2>
+          <p style={{fontSize:'1rem',color:'rgba(255,255,255,0.65)',lineHeight:1.85}}>
+            这是一个由拥有超过二十年教练经验的PGA职业教练主持的私人日活动，跨越三个大洲——中国的国家队球员、欧洲的主要赛事场地、亚洲和美国的业余和职业高尔夫球手。这一天背后的知识造就了差异。高尔夫更好。见解是真实的。
+          </p>
+        </div>
+        <div className="intro__right">
+          <div className="intro__stat reveal reveal-delay-1">
+            <div className="intro__stat-num">18</div>
+            <div className="intro__stat-label">年高尔夫教练经验</div>
+          </div>
+          <div className="intro__stat reveal reveal-delay-2">
+            <div className="intro__stat-num">15,000+</div>
+            <div className="intro__stat-label">进行的训练课程</div>
+          </div>
+          <div className="intro__stat reveal reveal-delay-3">
+            <div className="intro__stat-num">300+</div>
+            <div className="intro__stat-label">赛事获胜者培训</div>
+          </div>
+        </div>
+      </section>
+
+      {/* DOUYIN STRIP */}
+      <section style={{background:'var(--deep)',borderTop:'1px solid rgba(255,255,255,0.06)',padding:'1.5rem clamp(20px,5vw,60px)'}}>
+        <p style={{textAlign:'center',fontSize:'0.85rem',color:'rgba(255,255,255,0.65)',fontFamily:"'Jost',sans-serif",fontWeight:300,lineHeight:1.6}}>
+          Andy 教练 &nbsp;·&nbsp; 抖音上超过3亿次高尔夫教练视频浏览 &nbsp;·&nbsp; 全球信任的教练内容
+        </p>
+      </section>
+
+      {/* HOW IT WORKS */}
+      <section className="how">
+        <div className="how__header reveal">
+          <p className="eyebrow">它如何工作</p>
+          <h2 className="serif-display">三步走向你不会忘记的一轮。</h2>
+        </div>
+        <div className="how__steps">
+          <div className="how__step reveal">
+            <span className="how__num">01</span>
+            <h3>联系我</h3>
+            <p>告诉我你的日期、你的差点和你在寻找什么。我会在24小时内亲自回复。</p>
+          </div>
+          <div className="how__step reveal reveal-delay-1">
+            <span className="how__num">02</span>
+            <h3>我为你安排你的一天</h3>
+            <p>球场推荐、开球时间、午餐、交通——在你到达之前一切都已安排。</p>
+          </div>
+          <div className="how__step reveal reveal-delay-2">
+            <span className="how__num">03</span>
+            <h3>来打球</h3>
+            <p>你的工作是享受这个球场。大多数人的表现比预期更好。</p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY MALLORCA */}
+      <section style={{background:'var(--deep)',padding:'clamp(60px,8vw,96px) clamp(20px,5vw,60px)'}}>
+        <div style={{maxWidth:1200,margin:'0 auto',display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:'clamp(40px,6vw,80px)',alignItems:'center'}}>
+          <div className="reveal">
+            <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>为什么选择马略卡岛</p>
+            <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>马略卡岛有欧洲巡回赛标准的球场。许多游客打了几个，想知道他们错过了什么。</h2>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>欧洲最好的高尔夫球场大多在冬天关闭。马略卡岛没有。一月份，当英格兰的球场沼泽化并关闭时，Son Gual的草坪完美无瑕，第一杆处空空如也。十月到四月是最好的时间——较低的果岭费、较安静的球场、令人羞愧的条件相比夏季的其他任何地方。</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>一小时车程内有二十二个球场。其中几个已举办过DP World Tour、Rolex Challenge Tour Grand Final，并吸引了Robert Trent Jones Jr.和Jack Nicklaus的设计委托。这不是一个碰巧有高尔夫的岛屿。这是一个严肃的目的地，大多数游客从未真正探索过。</p>
+          </div>
+          <div className="reveal reveal-delay-1">
+            {[
+              { num: '22', label: '岛上的球场' },
+              { num: '300+', label: '年日照天数' },
+              { num: '1月–12月', label: '全年赛季' },
+              { num: '€80–220', label: '果岭费范围' },
+            ].map((s, i) => (
+              <div key={i} style={{padding:'1.5rem 0',borderBottom:'1px solid rgba(255,255,255,.08)',display:'flex',alignItems:'center',gap:'1.5rem'}}>
+                <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'2.2rem',fontWeight:500,color:'var(--gold)',flexShrink:0,width:120}}>{s.num}</span>
+                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.5)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* COURSES */}
+      <section className="courses" id="courses">
+        <div className="courses__header">
+          <div className="courses__header-left">
+            <p className="eyebrow">精选球场</p>
+            <h2 className="serif-display">马略卡岛最好的球场，已游玩和评级。</h2>
+          </div>
+          <div className="courses__header-right">
+            <button className="courses__arrow" onClick={() => scrollTrack(-1)} aria-label="Scroll left">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M10 3L5 8l5 5"/></svg>
             </button>
-            <button onClick={() => {}} className="btn btn-secondary">
-              了解更多
+            <button className="courses__arrow" onClick={() => scrollTrack(1)} aria-label="Scroll right">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 3l5 5-5 5"/></svg>
             </button>
           </div>
-
-          <div className="hero-trust">
-            <p className="trust-text">★★★★★ 来自40多个国家的高尔夫球手的信任</p>
-          </div>
         </div>
-      </section>
-
-      {/* INTRO SECTION */}
-      <section className="intro">
-        <div className="intro-content">
-          <div className="intro__left">
-            <h2>马略卡岛的高尔夫不仅仅是阳光和草坪</h2>
-            <p className="intro-description">
-              岛上最好的球场需要真正的理解。理解风型、草坪阅读和球场管理——您不仅会打得更好，您会在这里主宰。
-            </p>
-          </div>
-
-          <div className="intro__right">
-            <div className="intro-stats">
-              <div className="stat">
-                <h3>40+</h3>
-                <p>国家代表</p>
-              </div>
-              <div className="stat">
-                <h3>95%</h3>
-                <p>会回来</p>
-              </div>
-              <div className="stat">
-                <h3>500+</h3>
-                <p>在球场上的日子</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* HOW IT WORKS SECTION */}
-      <section className="how-it-works">
-        <h2>它如何运作</h2>
-
-        <div className="steps">
-          <div className="step">
-            <h3>1. 您联系我</h3>
-            <p>告诉我您的目标、您的水平和您首选的日期。真实的对话，不是表格。</p>
-          </div>
-          <div className="step">
-            <h3>2. 我们选择球场</h3>
-            <p>根据天气、您的水平和您的目标，我选择完美的球场。</p>
-          </div>
-          <div className="step">
-            <h3>3. 在球场上教练</h3>
-            <p>充满有针对性课程、视频分析和真实改进的一轮。不仅仅是打球——理解。</p>
-          </div>
-        </div>
-      </section>
-
-      {/* COURSES SECTION */}
-      <section className="courses">
-        <h2>世界级球场</h2>
-        <p className="courses-intro">马略卡岛最好的18洞球场。每一个都有它的特色。</p>
-
-        <div className="courses-grid">
-          {courses.map((course, idx) => (
-            <div key={idx} className={`course-card ${course.cls}`}>
-              {course.badge && <div className="course-badge">{course.badge}</div>}
-              <img src={course.img} alt={course.name} className="course-image" />
-              <div className="course-info">
-                <p className="course-region">{course.region}</p>
-                <h3>{course.name}</h3>
-                <div className="course-meta">
-                  {course.meta.map((m, i) => <span key={i}>{m}</span>)}
+        <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
+          {courses.map((c, i) => (
+            <article key={i} className={`course-card ${c.cls}`} onClick={() => router.push('/zh/golf-courses')} style={{cursor:'pointer'}}>
+              <div className="course-card__bg" style={{backgroundImage:`url(${c.img})`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
+              <div className="course-card__overlay" style={{background:'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)'}}></div>
+              {c.badge && <span className="course-card__badge">{c.badge}</span>}
+              <div className="course-card__content">
+                <p className="course-card__region">{c.region}</p>
+                <h3 className="course-card__name">{c.name}</h3>
+                <div className="course-card__meta">
+                  {c.meta.map((m, j) => (<span key={j}>{j > 0 && <span style={{display:'inline-block',width:2,height:2,borderRadius:'50%',background:'rgba(255,255,255,0.4)',margin:'0 7px',verticalAlign:'middle'}}></span>}{m}</span>))}
                 </div>
-                <p className="course-difficulty">{course.difficulty}</p>
-                <p className="course-excerpt">{course.excerpt}</p>
-                <div className="course-rating">{course.stars}</div>
+                <div className="course-card__rating">
+                  <span className="course-card__stars">{c.stars}</span>
+                  <span className="course-card__rating-label"> · {c.difficulty}</span>
+                </div>
+                {/* Excerpt always visible — not hover-only */}
+                <p className="course-card__excerpt course-card__excerpt--visible">{c.excerpt}</p>
               </div>
+            </article>
+          ))}
+        </div>
+        <div style={{textAlign:'center',marginTop:'2.5rem'}}>
+          <Link href="/zh/golf-courses" className="btn btn--dark">查看全部22个球场 →</Link>
+        </div>
+      </section>
+
+      {/* WHAT THIS IS */}
+      <section className="what">
+        <div className="what__left reveal">
+          <p className="eyebrow">这个体验</p>
+          <h2 className="serif-display">马略卡岛上大多数高尔夫日都是开球时间和挥手告别。</h2>
+          <span className="gold-rule"></span>
+          <p>我在中国训练了超过十年，高尔夫课程每小时500欧元，顾客想要真实的改进，而不仅仅是鼓励。在此之前，我在Pebble Beach、Open Championship、Evian训练，并在一个环游四十个国家的世界邮轮上度过了一个赛季。</p>
+          <p>这个背景塑造了我举办的每一轮。这是在马略卡岛最好的球场之一进行的私人日。整个回合中的真实建议——球场策略、决策制定、标准课程中很少出现的东西。一个你在返回航班上仍在谈论的一天。</p>
+          <p>一切都在你到达之前安排好——球场、开球时间、午餐。你在这一天的唯一工作是打球。</p>
+          <Link href="/zh/play-with-a-pro" className="btn btn--dark">探索体验</Link>
+        </div>
+        <div className="what__right reveal reveal-delay-1">
+          {[
+            { icon: FEATURE_ICONS.arranged, title: '一切已安排', text: '球场、开球时间、交通、午餐——在你到达之前一切都已设置好。' },
+            { icon: FEATURE_ICONS.coaching, title: '球场教练', text: '在真实条件下的真实改进。没有课程。没有评论。在正确的时刻给出的正确观察。' },
+            { icon: FEATURE_ICONS.private, title: '完全私密', text: '只有你和一位PGA职业教练。你的球队里没有陌生人。一轮完全是为你的比赛量身定制的。' },
+            { icon: FEATURE_ICONS.access, title: '获得更多', text: '仅限会员的球场，大多数访问高尔夫球手无法独立预订——Santa Ponsa 2 & 3及更多。' },
+          ].map((f, i) => (
+            <div key={i} className="what__feature">
+              <div className="what__feature-icon">{f.icon}</div>
+              <div className="what__feature-text"><h3>{f.title}</h3><p>{f.text}</p></div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* WHY MALLORCA SECTION */}
-      <section className="why-mallorca">
-        <h2>为什么是马略卡岛</h2>
-        <p className="why-description">
-          在这里，气候、设计和历史结合成了独特的东西。这不仅是西班牙打高尔夫的最佳时间——它是欧洲最好的地方之一。
-        </p>
 
-        <div className="why-stats">
-          <div className="why-stat">
-            <h3>310+</h3>
-            <p>每年晴天</p>
-          </div>
-          <div className="why-stat">
-            <h3>25+</h3>
-            <p>锦标赛级球场</p>
-          </div>
-          <div className="why-stat">
-            <h3>1.5小时</h3>
-            <p>从任何欧洲首都</p>
-          </div>
+      {/* JO PULL QUOTE */}
+      <section style={{background:'var(--pine)',padding:'clamp(48px,6vw,72px) clamp(20px,5vw,60px)'}}>
+        <div style={{maxWidth:720,margin:'0 auto',textAlign:'center'}}>
+          <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.3rem,2.5vw,1.9rem)',fontStyle:'italic',fontWeight:400,color:'#fff',lineHeight:1.45,marginBottom:'1.25rem'}}>
+            &ldquo;在仅仅18洞之后，我发现了我潜力的新界限。&rdquo;
+          </p>
+          <p style={{fontSize:'9px',letterSpacing:'.18em',textTransform:'uppercase',color:'var(--gold-light)',fontFamily:"'Jost',sans-serif"}}>— Jo，在Son Gual的一天之后</p>
         </div>
       </section>
 
-      {/* FEATURED COURSES CAROUSEL SECTION */}
-      <section className="featured-carousel">
-        <h2>精选球场</h2>
-        <div className="carousel-container">
-          {courses.length > 0 && (
-            <div className="carousel-item">
-              <div className="carousel-card">
-                <img src={courses[currentCourseIdx].img} alt={courses[currentCourseIdx].name} />
-                <h3>{courses[currentCourseIdx].name}</h3>
-                <p>{courses[currentCourseIdx].region}</p>
-              </div>
-            </div>
-          )}
-          <div className="carousel-controls">
-            <button onClick={() => setCurrentCourseIdx((prev) => (prev - 1 + courses.length) % courses.length)}>←</button>
-            <button onClick={() => setCurrentCourseIdx((prev) => (prev + 1) % courses.length)}>→</button>
-          </div>
-        </div>
-      </section>
-
-      {/* WHAT YOU GET SECTION */}
-      <section className="what-you-get">
-        <h2>您获得什么</h2>
-
-        <div className="features-grid">
-          <div className="feature">
-            <div className="feature-icon">{FEATURE_ICONS.coaching}</div>
-            <h3>个人教练</h3>
-            <p>没有通用教练。适合您的挥杆、想法和目标的教练。</p>
-          </div>
-          <div className="feature">
-            <div className="feature-icon">{FEATURE_ICONS.expertise}</div>
-            <h3>本地专业知识</h3>
-            <p>在马略卡岛最好的球场上有20年的经验。我对这些球场的每一毫米都很了解。</p>
-          </div>
-          <div className="feature">
-            <div className="feature-icon">{FEATURE_ICONS.access}</div>
-            <h3>进入高级球场</h3>
-            <p>您可能无法进入的锦标赛级球场。没有等候名单。</p>
-          </div>
-          <div className="feature">
-            <div className="feature-icon">{FEATURE_ICONS.video}</div>
-            <h3>视频分析</h3>
-            <p>高频记录和球场上的分析。您看到它，理解它，立即纠正它。</p>
-          </div>
-          <div className="feature">
-            <div className="feature-icon">{FEATURE_ICONS.groups}</div>
-            <h3>小组或一对一</h3>
-            <p>私人或与朋友。告诉我什么有效。</p>
-          </div>
-          <div className="feature">
-            <div className="feature-icon">{FEATURE_ICONS.plan}</div>
-            <h3>可持续计划</h3>
-            <p>一个您可以在家实施的定制培训计划。</p>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIAL SECTION */}
-      <section className="testimonial">
-        <blockquote>
-          "我人生中最好的高尔夫日。不是因为球场——而是因为我在球场上学到的东西。"
-        </blockquote>
-        <p className="testimonial-author">— James M.，差点为4的高尔夫球手</p>
-      </section>
-
-      {/* PACKAGES SECTION */}
+      {/* PACKAGES */}
       <section className="packages">
-        <h2>教练套餐</h2>
-
-        <div className="pricing-grid">
-          <div className="pricing-tier">
-            <h3>简单体验</h3>
-            <p className="tier-description">学习基础的一天</p>
-            <div className="price">€595</div>
-            <ul className="features-list">
-              <li>9洞教练</li>
-              <li>视频分析</li>
-              <li>个性化练习计划</li>
-              <li>高级球场（最高€80草坪费）</li>
+        <div className="packages__header reveal">
+          <p className="eyebrow">体验和包裹</p>
+          <h2 className="serif-display">一位教练。一个球场。你的一天。</h2>
+          <p>三个体验级别。都是私人的，都由Andy亲自主持。</p>
+        </div>
+        <div className="packages__grid">
+          <div className="package reveal">
+            <p className="package__tier">马略卡圆形</p>
+            <h3 className="package__name">与专业人士一起打球</h3>
+            <div className="package__divider"></div>
+            <ul className="package__features">
+              {['适合你的比赛和差点的球场','有保障和完全有序的开球时间','赛前简报和热身','18洞旁边Andy','整个回合中的球场教练','赛后简报——诚实而清晰'].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
-            <button className="btn btn-secondary">选择</button>
+            <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem'}}>€350 pp + 果岭费</p>
+            <p style={{fontSize:'0.75rem',color:'var(--taupe)',marginBottom:'1.25rem',lineHeight:1.5}}>果岭费另计——通常每个球场和季节€80–220 pp。</p>
+            <Link href="/zh/contact" className="btn btn--dark">查询</Link>
           </div>
 
-          <div className="pricing-tier featured">
-            <div className="badge-featured">最受欢迎</div>
-            <h3>完整体验</h3>
-            <p className="tier-description">完整的转变</p>
-            <div className="price">€1,290</div>
-            <ul className="features-list">
-              <li>完整的18洞教练日</li>
-              <li>高频视频分析</li>
-              <li>击球反馈</li>
-              <li>锦标赛级球场（最高€165草坪费）</li>
-              <li>跟进课程（30分钟）</li>
-              <li>6周练习计划</li>
+          <div className="package package--featured reveal reveal-delay-1">
+            <p className="package__tier">签名日</p>
+            <h3 className="package__name">举办的高尔夫日</h3>
+            <div className="package__divider"></div>
+            <ul className="package__features">
+              {['马略卡圆形的所有内容','Son Gual或Alcanada——岛上最好的两个球场','在球场餐厅享用长午餐','精选惊喜礼物','轻松的节奏——整天，而不是匆忙的回合'].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
-            <button className="btn btn-primary">预订</button>
+            <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem',color:'var(--gold-light)'}}>起€450 pp + 果岭费</p>
+            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)',marginBottom:'1.25rem',lineHeight:1.5}}>果岭费另计——通常每个球场和季节€80–220 pp。</p>
+            <Link href="/zh/contact" className="btn btn--gold">查询</Link>
           </div>
-
-          <div className="pricing-tier">
-            <h3>强化训练</h3>
-            <p className="tier-description">对于认真对待自己比赛的高尔夫球手</p>
-            <div className="price">€2,450</div>
-            <ul className="features-list">
-              <li>两天完整教练</li>
-              <li>挥杆分析和视频</li>
-              <li>短局游戏大师班</li>
-              <li>心理游戏培训</li>
-              <li>两个锦标赛级球场</li>
-              <li>周检查（4周）</li>
-              <li>个性化12周计划</li>
+          <div className="package reveal reveal-delay-2">
+            <p className="package__tier">完整体验</p>
+            <h3 className="package__name">定制高尔夫之旅</h3>
+            <div className="package__divider"></div>
+            <ul className="package__features">
+              {[
+                '多球场日或完整的4天旅程',
+                '从帕尔马酒店或别墅出发的私人交通',
+                '在精心挑选的马略卡餐厅用餐',
+                '在合作伙伴地点进行水疗或恢复课程',
+                '沿Tramuntana的日落驾车',
+                '在山上进行热气球飞行',
+                '在马略卡葡萄园进行葡萄酒品鉴',
+                '为团体和公司提供完整的礼宾服务',
+              ].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
-            <button className="btn btn-secondary">选择</button>
+            <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem'}}>定制行程——按需提供</p>
+            <Link href="/zh/contact" className="btn btn--dark">查询</Link>
           </div>
         </div>
       </section>
 
-      {/* FAQ SECTION */}
-      <section className="faq-section">
-        <h2>常见问题</h2>
-        <p className="faq-intro">您需要了解的关于马略卡岛教练的一切。</p>
-
-        <div className="faq-list">
-          {faqs.map((faq, idx) => (
-            <div key={idx} className={`faq-item ${openFAQ === idx ? 'open' : ''}`}>
-              <button
-                className="faq-question"
-                onClick={() => setOpenFAQ(openFAQ === idx ? null : idx)}
-              >
-                {faq.q}
-                <span className="faq-icon">+</span>
-              </button>
-              {openFAQ === idx && (
-                <div className="faq-answer">{faq.a}</div>
-              )}
+      {/* FAQ */}
+      <section className="faq">
+        <div className="faq__left reveal">
+          <p className="eyebrow">问题</p>
+          <h2 className="serif-display">人们在联系前问的东西。</h2>
+          <p>告诉我你的日期、你的差点和你在寻找什么。我会在24小时内亲自回复。</p>
+        </div>
+        <div className="faq__list reveal reveal-delay-1">
+          {faqs.map((f, i) => (
+            <div key={i} className={`faq__item${openFaq === i ? ' open' : ''}`}>
+              <div className="faq__q" onClick={() => setOpenFaq(openFaq === i ? -1 : i)}>
+                {f.q}
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M8 3v10M3 8h10"/></svg>
+              </div>
+              <div className="faq__a">{f.a}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* CTA SECTION */}
+      {/* FINAL CTA */}
       <section className="cta-final">
-        <h2>准备好打得更好了吗？</h2>
-        <p className="cta-text">
-          开始的最好时间就是现在。次好的时间是您预订的那一刻。
-        </p>
-        <a href="https://wa.me/34624466702" className="btn btn-primary">
-          立即预订
-        </a>
+        <div className="cta-final__left reveal">
+          <p className="eyebrow eyebrow--gold">准备好正确地玩马略卡岛了吗？</p>
+          <h2 className="serif-display" style={{color:'#fff'}}>联系我。<br />其余的已解决。</h2>
+          <p>告诉我你的日期、你的差点和你对这一天的期望。我会亲自在24小时内回复建议。</p>
+        </div>
+        <div className="cta-final__right reveal reveal-delay-1">
+          <p className="serif-italic">&ldquo;高尔夫更好。见解是真实的。&rdquo;</p>
+          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px',letterSpacing:'0.18em'}}>预订你的一天</Link>
+          <a href="https://wa.me/34624466702" className="btn btn--outline-white" style={{display:'flex',alignItems:'center',justifyContent:'center',gap:8}}>
+            <svg viewBox="0 0 24 24" fill="currentColor" style={{width:16,height:16}}><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
       </section>
-    </div>
+    </>
   )
 }
