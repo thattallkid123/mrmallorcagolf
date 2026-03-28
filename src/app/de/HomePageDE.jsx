@@ -237,7 +237,7 @@ export default function HomePageDE() {
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>
-          <Link href="/de/golf-courses" className="btn btn--dark">Alle 22 Plätze anschauen →</Link>
+          <Link href="/de/golf-courses#all-courses" className="btn btn--dark">Alle 22 Plätze anschauen →</Link>
         </div>
       </section>
 

@@ -237,7 +237,7 @@ export default function HomePageSV() {
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>
-          <Link href="/sv/golf-courses" className="btn btn--dark">Se alla 22 banor →</Link>
+          <Link href="/sv/golf-courses#all-courses" className="btn btn--dark">Se alla 22 banor →</Link>
         </div>
       </section>
 

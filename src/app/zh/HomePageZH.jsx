@@ -237,7 +237,7 @@ export default function HomePageZH() {
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>
-          <Link href="/zh/golf-courses" className="btn btn--dark">查看全部22个球场 →</Link>
+          <Link href="/zh/golf-courses#all-courses" className="btn btn--dark">查看全部22个球场 →</Link>
         </div>
       </section>
 

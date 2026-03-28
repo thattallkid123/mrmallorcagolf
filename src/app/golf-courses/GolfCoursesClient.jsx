@@ -1052,7 +1052,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
       </div>
 
       {/* FILTER TABS */}
-      <div className="filter-tabs">
+      <div id="all-courses" className="filter-tabs" style={{scrollMarginTop:'80px'}}>
         {REGIONS.map(r => (
           <button
             key={r.key}

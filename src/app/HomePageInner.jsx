@@ -237,7 +237,7 @@ export default function HomePageInner() {
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>
-          <Link href="/golf-courses" className="btn btn--dark">View all 22 courses →</Link>
+          <Link href="/golf-courses#all-courses" className="btn btn--dark">View all 22 courses →</Link>
         </div>
       </section>
 

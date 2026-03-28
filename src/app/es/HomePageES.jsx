@@ -180,7 +180,7 @@ export default function HomePageES() {
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>
-          <Link href="/es/golf-courses" className="btn btn--dark">Ver los 22 campos →</Link>
+          <Link href="/es/golf-courses#all-courses" className="btn btn--dark">Ver los 22 campos →</Link>
         </div>
       </section>
 

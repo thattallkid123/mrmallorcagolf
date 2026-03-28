@@ -232,7 +232,7 @@ export default function HomePageNL() {
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>
-          <Link href="/nl/golf-courses" className="btn btn--dark">Zie alle 22 banen →</Link>
+          <Link href="/nl/golf-courses#all-courses" className="btn btn--dark">Zie alle 22 banen →</Link>
         </div>
       </section>
 
