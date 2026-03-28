@@ -1,103 +1,162 @@
 import Link from 'next/link'
-import PageLayout from '../../../components/PageLayout'
-import RevealObserver from '../../../components/RevealObserver'
+import PageLayout from '../../components/PageLayout'
+import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
-  title: '马略卡岛球场实地高尔夫指导 — PGA职业教练',
-  description: '英国英国PGA高级职业教练Andy Griffiths在马略卡岛提供球场实地高尔夫指导。真实条件下的真实进步——面向来岛访问及岛上常驻球手。',
-  alternates: { canonical: 'https://mrmallorcagolf.com/zh/coaching' },
+  title: '马洛卡球场实地高尔夫教练 — PGA职业选手',
+  description: '由PGA高级职业选手安迪·格里菲思提供的马洛卡球场实地高尔夫教练。真实条件下的真实改善——面向访客和常驻高尔夫球手。',
+  alternates: {
+    canonical: 'https://mrmallorcagolf.com/zh/coaching',
+    languages: {
+      'en': 'https://mrmallorcagolf.com/coaching',
+      'de': 'https://mrmallorcagolf.com/de/coaching',
+      'es': 'https://mrmallorcagolf.com/es/coaching',
+      'fr': 'https://mrmallorcagolf.com/fr/coaching',
+      'nl': 'https://mrmallorcagolf.com/nl/coaching',
+      'sv': 'https://mrmallorcagolf.com/sv/coaching',
+      'zh': 'https://mrmallorcagolf.com/zh/coaching',
+      'x-default': 'https://mrmallorcagolf.com/coaching',
+    }
+  }
 }
 
-export default function Coaching_ZH() {
+const improvements = [
+  { num: '01', title: '球场管理', text: '大多数业余高尔夫球手失分的主要原因是决策失误，而不是挥杆失误。选择正确的球杆、目标和球形——这些将90分与80分区分开来。我们在真实的时间内、真实的球洞上、真实的比分处于风险中的情况下进行工作。' },
+  { num: '02', title: '压力下的击球选择', text: "在压力下崩溃的决策——当5号铁可以赢得这个洞时打出1号木，当安全打法能得分时打出英雄球——在球场上会以一种练习场永远看不到的方式暴露出来。我看到它们，命名它们，我们一起解决它们。" },
+  { num: '03', title: '阅读果岭和坡度', text: '在真实球场果岭上推杆和切杆从根本上不同于练习果岭。速度、坡度、纹路、当下的压力——所有这些都改变了有效的方法。我们在实际条件下练习它。' },
+  { num: '04', title: '在风中打球', text: "马洛卡多风。Son Gual特别在自己的风生态系统中。侧风中的选杆、弹道管理、在球似乎漂移时信任你的瞄准——这是你只有在真正刮风时才能处理的东西。" },
+  { num: '05', title: '心理游戏和例程', text: '打坏球后你如何跟自己说话。你如何走向下一个发球台。你是否有赛前例程，以及在压力下它是否坚持。心理方面在练习场上完全看不见——只有当后果是真实的时才出现。' },
+  { num: '06', title: '找到唾手可得的果实', text: "大多数高尔夫球手进步最快不是通过重建挥杆，而是通过一两个小的解锁。一位客户一生都在用劈杆切球。一次对话，换一根球杆，立即改善。没有技术工作。这种事情只在球场上才会出现。" },
+  { num: '07', title: '真实条件下的一致性', text: "不平的谎言、紧球道、长草——球场要求的击球是练习场从不要求的。经常打这些球，实时反馈，这就是你建立一个在计数时出现的球感的方式。", full: true },
+]
+
+export default function Coaching() {
   return (
-    <PageLayout lang="zh">
+    <>
+    <link rel="preload" as="image" href="/images/coaching-hero.jpg" />
+    <PageLayout>
       <RevealObserver />
-      <header className="page-hero" style={{
-  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
-  backgroundSize: 'auto, cover',
-  backgroundPosition: 'center, 60% 65%',
-}}>
+
+      <header className="page-hero coaching-hero" style={{
+        minHeight: '100vh',
+        backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.4) 55%, rgba(26,25,22,0.15) 100%), url(/images/coaching-hero.jpg)',
+        backgroundSize: 'auto, cover',
+        backgroundPosition: 'center, 60% 80%',
+      }}>
         <div className="page-hero__inner">
-          <p className="breadcrumb"><Link href="/zh">首页</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>球场实地指导</span></p>
-          <h1>打出更好的高尔夫。<br />无需彻底改变。</h1>
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>面向来岛访问及常驻高尔夫球手的球场实地指导。真实条件，真实决策，真实进步——没有技术过载，也不会让大多数练习课在打到第3洞时就被遗忘。</p>
+          <p className="breadcrumb"><Link href="/zh">首页</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>球场实地教练</span></p>
+          <h1>打得更好的高尔夫。<br />无需改变一切。</h1>
+          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>面向访客和常驻高尔夫球手的球场实地教练。真实条件、真实决策、真实改善——没有技术过载，不会在第3洞就被遗忘。</p>
         </div>
       </header>
 
+      {/* WHY THE RANGE ISN'T ENOUGH */}
       <section className="range-section">
         <div className="reveal">
-          <p className="eyebrow">为什么练习场远远不够</p>
-          <h2>您的练习场状态无法在球场上重现，是有原因的。</h2>
-          <p>练习场是平坦的、可控的、没有后果的。您在完美的发球垫上击球，没有风，没有坡度，成绩不计分。然后站上第一个发球台——什么都没法转化。</p>
-          <p>球场实地指导把课程放在真正有效的地方。在球道上，在草深处，在意外的坡度上，面对没有预料到的侧风，在真正计分的情况下。那才是球技改变的地方——那才是我们工作的地方。</p>
+          <p className="eyebrow">为什么练习场还不够</p>
+          <h2>你的练习场成绩没有在球场上转化，是有原因的。</h2>
+          <p>练习场是平坦的、有控制的、无后果的。你在完美的垫子上击球，没有风、没有斜坡、没有计分、没人看着。然后你走上第1发球台，什么都转不了。</p>
+          <p>球场实地教练把课程放在真正有帮助的地方。在球道上。在深草区。在有斜坡的球位上，伴随着你没有预料到的风。有一个真正重要的分数。那就是球局改变的地方——那就是我们工作的地方。</p>
           <div className="analogy-box">
-            <p>&ldquo;想想拳击。你可以在沙袋上训练几个星期，感觉准备好了。然后进行第一次实战对练，一切都变了。高尔夫也一样。第一个发球台不是练习场。&rdquo;</p>
-            <cite>— Andy Griffiths, PGA Advanced Professional</cite>
+            <p>&ldquo;想想拳击。你可以在垫子上训练几个星期，感到准备好了。然后你进行你的第一次对打，一切都改变了。高尔夫是一样的。第1发球台不是练习场。&rdquo;</p>
+            <cite>— 安迪·格里菲思，PGA高级职业选手</cite>
           </div>
         </div>
         <div className="reveal">
-          <p className="eyebrow" style={{marginBottom:'1.25rem'}}>赛前问卷</p>
-          <p>课前的一份简短问卷，让我们在开始之前就已了解这一天的重点。您的困惑所在、差距所在、以及您对成功的定义。</p>
-          <p>当我们走到第一个发球台时，我已经知道该关注什么。反馈是情境化且直接的——不是套用在所有人身上的通用教案。</p>
-          <p>课程地点为Son Gual、Alcanada，或根据您的水平和目标匹配的其他球场。</p>
-          <Link href="/zh/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>咨询课程安排 →</Link>
+          <p className="eyebrow" style={{marginBottom:'1.25rem'}}>问卷调查</p>
+          <p>课程前的简短问卷塑造了这一天的形状。是什么困扰你，差距在哪里，成功看起来是什么样的。</p>
+          <p>当我们走到第一发球台时，我已经知道要寻找什么。反馈是情境性的和诚实的——不是应用于每个人的通用课程计划。</p>
+          <p>课程在Son Gual、Alcanada或匹配你的水平和目标的球场进行。</p>
+          <Link href="/zh/contact" style={{display:'inline-block',marginTop:'1.5rem',fontSize:'10px',fontWeight:500,letterSpacing:'.18em',textTransform:'uppercase',padding:'13px 30px',background:'var(--pine)',color:'#fff',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>讨论课程 &rarr;</Link>
         </div>
       </section>
 
+      <div style={{lineHeight:0,overflow:'hidden'}}>
+        <img
+          src="/images/coaching-action.jpg"
+          alt="安迪·格里菲思在马洛卡球场教练高尔夫"
+          style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 60%',display:'block'}}
+        />
+      </div>
+
+      {/* WHAT GETS BETTER */}
       <section className="improvements">
         <div className="reveal">
-          <p className="eyebrow">真正会改变的东西</p>
-          <h2>与我同打一轮，这些方面会发生变化。</h2>
-          <p className="improvements__sub">以及为什么这种改变会留下来——这是练习场训练很少能做到的。</p>
+          <p className="eyebrow">实际改善的东西</p>
+          <h2>和我一起打一轮时会改变的。</h2>
+          <p className="improvements__sub">以及为什么它以练习场工作很少做到的方式坚持。</p>
         </div>
         <div className="improvements-grid">
-          <div className="improvement reveal"><span className="improvement__num">01</span><h3>球场管理</h3><p>大多数业余球手失分的主要原因是决策失误，而非挥杆失误。选对球杆、目标和弹道——这才是将90分与80分区分开来的关键。</p></div>
-          <div className="improvement reveal reveal-delay-1"><span className="improvement__num">02</span><h3>压力下的击球选择</h3><p>那些在压力下崩溃的决策——明明五号铁赢得了这个洞，却拿出了一号木——在球场上会以一种练习场永远看不到的方式暴露出来。</p></div>
-          <div className="improvement reveal"><span className="improvement__num">03</span><h3>读果岭与坡度</h3><p>在真实果岭上推杆和切杆，与在练习果岭上完全不同。球速、坡度、纹路、当下的压力感——这一切都会改变什么方法有效。</p></div>
-          <div className="improvement reveal reveal-delay-1"><span className="improvement__num">04</span><h3>在风中打球</h3><p>马略卡岛多风，Son Gual球场尤其拥有独特的风向生态。侧风下的选杆、弹道控制、在球似乎飘离时信任自己的瞄准——这些只有在真正刮风时才能练到。</p></div>
-          <div className="improvement reveal"><span className="improvement__num">05</span><h3>心理与例行程序</h3><p>打了坏球之后你如何和自己说话。你如何走向下一个发球台。你有没有击球前例行程序，以及它在压力下是否还能保持。心理层面在练习场完全看不见。</p></div>
-          <div className="improvement reveal reveal-delay-1"><span className="improvement__num">06</span><h3>找到触手可及的突破</h3><p>大多数球手进步最快，靠的不是重建挥杆，而是一两个小小的关键解锁。一位球员一生都在用劈起杆切球。一次谈话，换一根球杆，立竿见影。</p></div>
-          <div className="improvement reveal improvement--full"><span className="improvement__num">07</span><h3>真实条件下的稳定性</h3><p>不平的球位、窄道、长草区——球场要求的击球，练习场从不提出。在真实条件下反复打出这些球，配合实时反馈，才是打造一个在关键时刻不掉链子的球技的方式。</p></div>
+          {improvements.map((imp, i) => (
+            <div key={i} className={`improvement reveal${i % 2 === 1 ? ' reveal-delay-1' : ''}${imp.full ? ' improvement--full' : ''}`}>
+              <span className="improvement__num">{imp.num}</span>
+              <h3>{imp.title}</h3>
+              <p>{imp.text}</p>
+            </div>
+          ))}
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
       <section className="how-section">
         <div className="reveal">
-          <p className="eyebrow">具体如何进行</p>
-          <h2>三个阶段。一次改变您球技的课程。</h2>
-          <p>课程在Son Gual、Alcanada或匹配球场的实地进行。我们一起打球，指导实时进行，反馈因情境而异、直接真实。</p>
+          <p className="eyebrow">它如何工作</p>
+          <h2>三个阶段。一次改变你如何打球的课程。</h2>
+          <p>课程在Son Gual、Alcanada或匹配你的水平和目标的球场的球道上进行。我们一起打球，教练实时发生，反馈是情境性和诚实的——不是应用于每个人的通用课程计划。</p>
         </div>
         <div className="how-steps reveal">
-          <div className="how-step"><span className="how-step__num">01</span><div><h3>问卷填写</h3><p>课前，您填写一份简短表格。您的困惑所在、差距何处、何为成功。到第一个发球台时，我已有了画面。</p></div></div>
-          <div className="how-step"><span className="how-step__num">02</span><div><h3>打球</h3><p>我们一起打球。指导实时发生——在正确的时机给出正确的观察。不是持续跑动式评论，而是真正改变您成绩的那一点。</p></div></div>
-          <div className="how-step"><span className="how-step__num">03</span><div><h3>赛后复盘</h3><p>午餐期间，我们回顾进步之处、需要继续努力的方向，以及可以带走的东西。直接，清晰。</p></div></div>
+          {[
+            { num: '01', title: '问卷调查', text: "课程前，你完成一份简短表格。是什么困扰你，差距在哪里，好的一天看起来是什么样的。到第一发球台时，我已经有了一幅画面。" },
+            { num: '02', title: '这一轮', text: "我们一起打球。教练实时发生——正确时刻的正确观察。不是跑步评论。不是课程。改变你的分数的东西。" },
+            { num: '03', title: '赛后总结', text: "午餐时，我们讨论改善的内容、继续进行的内容以及要带走的内容。诚实而清晰。让整个一天有意义的对话。" },
+          ].map((s, i) => (
+            <div key={i} className="how-step">
+              <span className="how-step__num">{s.num}</span>
+              <div><h3>{s.title}</h3><p>{s.text}</p></div>
+            </div>
+          ))}
         </div>
       </section>
 
+      {/* WHO */}
       <section className="who-section">
         <div className="reveal">
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>适合哪些人</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.5rem'}}>如果以下任何一点让您感同身受，这正是为您设计的。</h2>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>这对谁有效</p>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.5rem'}}>如果任何一个听起来很熟悉，这对你有效。</h2>
         </div>
         <div className="who-grid">
-          <div className="who-card reveal"><h3>来访高尔夫球手</h3><p>在岛上逗留期间的专项提升——不仅仅是打一轮球。</p></div>
-          <div className="who-card reveal reveal-delay-1"><h3>常驻高尔夫球手</h3><p>与一位打同样球场的职业教练进行常规训练，持续、可量化的进步。</p></div>
-          <div className="who-card reveal reveal-delay-2"><h3>练习场与球场的落差</h3><p>您的练习状态从未在球场上重现。这正是我们要解决的。</p></div>
-          <div className="who-card reveal"><h3>更聪明，而非重建</h3><p>您想打得更好，但不想从头到尾推倒重来。</p></div>
+          {[
+            { title: '访客高尔夫球手', text: '在岛上的时间内有重点的改善——不仅仅是打一轮。' },
+            { title: '常驻高尔夫球手', text: '与一位打你玩的同样球场的专业人士进行常规工作。' },
+            { title: '练习场/球场差距', text: '你的练习游戏从不转移。这就是我们修复的地方。' },
+            { title: '更聪明，不是重建', text: '你想打得更好，没有从头开始的完整技术改造。' },
+          ].map((c, i) => (
+            <div key={i} className={`who-card reveal${i % 3 !== 0 ? ` reveal-delay-${i % 3}` : ''}`}>
+              <h3>{c.title}</h3>
+              <p>{c.text}</p>
+            </div>
+          ))}
         </div>
       </section>
 
+      {/* FINAL CTA */}
       <section className="cta-final">
         <div className="cta-final__left reveal">
-          <p className="eyebrow eyebrow--gold">准备好打出更好的成绩了吗？</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>联系我，一起安排一次课程。</h2>
-          <p>告诉我您的球技现状和期望目标。我将围绕这些来设计课程——而非套用通用方案。</p>
+          <p className="eyebrow eyebrow--gold">准备好打得更好了吗？</p>
+          <h2 className="serif-display" style={{color:'#fff'}}>取得联系以讨论课程。</h2>
+          <p>告诉我你的游戏在哪里以及你想从中得到什么。我会围绕这个建立课程——不是一个通用程序。</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>立即联系 →</Link>
-          <Link href="/zh/play-with-a-pro" className="btn btn--outline-white">查看全部体验项目</Link>
+          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>取得联系 &rarr;</Link>
+          <Link href="/zh/play-with-a-pro" className="btn btn--outline-white">查看全部体验</Link>
         </div>
       </section>
+
     </PageLayout>
+    </>
   )
 }
+
+
+
+
