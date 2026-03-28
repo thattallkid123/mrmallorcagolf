@@ -1,0 +1,267 @@
+================================================================================
+MR MALLORCA GOLF - IMAGE QUALITY & IMPROVEMENT GUIDE
+Created: March 27, 2026
+================================================================================
+
+OVERVIEW
+--------
+Current images are functional and load well, but to elevate the brand perception
+for a premium golf coaching site, professional photography investment is needed.
+
+TARGET STANDARDS FOR HIGH-QUALITY GOLF SITE
+--------------------------------------------
+✓ Resolution: 1920x1280px minimum (professional golf photography standard)
+✓ Lighting: Golden hour preferred (warm tones, good shadows)
+✓ Color grading: Consistent warm tone across all course images
+✓ Composition: Elevated angles, feature showcase (hazards, elevation, signatures)
+✓ Sharpness: Professional crisp focus, no pixelation
+✓ Authenticity: Mix of stock + personal/coaching photos
+✓ Consistency: Unified visual style/color palette across all guides
+
+================================================================================
+BLOG-BY-BLOG IMAGE ASSESSMENT
+================================================================================
+
+1. BEST GOLF COURSES MALLORCA (6 images)
+   ──────────────────────────────────────
+
+   Son Gual.jpg
+   Status: ACCEPTABLE - Replace with high-resolution version
+   Notes: Good course image but consider golden hour version
+   Priority: MEDIUM - Core course, should be premium
+
+   Alcanada.jpg
+   Status: ACCEPTABLE - Replace with high-resolution version
+   Notes: Should showcase lighthouse feature more prominently
+   Priority: MEDIUM - Flagship course, deserves best shot
+
+   Son Muntaner.webp
+   Status: ACCEPTABLE - Keep if high-res, otherwise replace
+   Notes: Should show why it won 2025 World Golf Awards
+   Priority: MEDIUM - Award winner deserves premium image
+
+   Andratx.webp
+   Status: NEEDS REPLACEMENT - Current image may not show difficulty
+   Notes: "Hardest test on island" should showcase hazards, elevation
+   Priority: HIGH - Image should match narrative of challenge
+
+   Canyamel.webp
+   Status: ACCEPTABLE - Consider replacement for better scenic shot
+   Notes: Currently listed as "most photographed" - use that angle
+   Priority: MEDIUM - Scenic course needs scenic image
+
+   Santa Ponsa 1.jpg
+   Status: ACCEPTABLE - Consider updated version
+   Notes: Historic European Tour venue deserves professional shot
+   Priority: LOW - Good but not critical
+
+   Tiger & Charlie Son Quint.jpg
+   Status: GOOD - Consider replacing with current/cleaner version
+   Notes: Celebrity angle is good, but image may be dated
+   Priority: LOW - Works well with story
+
+
+2. BEST TIME TO PLAY GOLF IN MALLORCA (2 images)
+   ──────────────────────────────────────────────
+
+   T Golf Calvia Sun.jpg (March-April section)
+   Status: ACCEPTABLE - Seasonal image works
+   Notes: Shows spring conditions appropriately
+   Priority: LOW - Seasonal context makes it work
+
+   Rolex Challenge Grand Final.jpg (October section)
+   Status: GOOD - Professional event photography
+   Notes: Event image is appropriate, consider higher-res version
+   Priority: LOW - Event photos have inherent quality
+
+
+3. GOLF CLUB HIRE MALLORCA (5 images + 4 logos)
+   ──────────────────────────────────────────────
+
+   LOGOS (all acceptable):
+   - Club Rentals Mallorca (black EN).png - GOOD
+   - Rent2Play.webp - GOOD
+   - MyCaddyMaster.jpg - ACCEPTABLE
+   - ClubsToHire.jpg - ACCEPTABLE
+
+   PRODUCT IMAGES:
+   Callaway Rogue ST Max.jpg
+   Status: GOOD - Product image is clear
+   Notes: Equipment photos can be smaller/compressed
+   Priority: LOW - Functional as-is
+
+   Qi4D_v1.webp
+   Status: GOOD - Product image appropriate
+   Notes: Professional equipment photography
+   Priority: LOW - Works well
+
+   Cobra Fly XL.jpg
+   Status: GOOD - Budget option clear
+   Notes: Product photo appropriate
+   Priority: LOW - Functional
+
+   All logos: ACCEPTABLE - Can stay as-is (small format appropriate)
+
+
+4. GOLF COST MALLORCA (3 images)
+   ──────────────────────────────
+
+   Arabella Pitch and Putt.jpg (REPLACED)
+   Status: GOOD - You've updated this
+   Notes: Verify new version is high-res and shows course properly
+   Priority: MEDIUM - Budget option should look accessible
+
+   Son Gual.jpg
+   Status: ACCEPTABLE - Replace with high-resolution version
+   Notes: Premium course pricing needs premium image
+   Priority: MEDIUM - €165 peak price deserves quality visual
+
+   T Golf Calvia Buggies.jpg
+   Status: ACCEPTABLE - Could replace with clearer buggy image
+   Notes: Utility photo, clarity matters
+   Priority: LOW - Secondary content
+
+
+5. GOLF TRIP PLANNING MALLORCA (5 images)
+   ──────────────────────────────────────
+
+   Son Gual.jpg (Which Courses section)
+   Status: ACCEPTABLE - Replace with higher-resolution version
+   Notes: Core trip planning - top courses should be premium images
+   Priority: MEDIUM - Featured prominently
+
+   Mallorca Car Hire.png (Getting Around section)
+   Status: GOOD - Functional logo/image
+   Notes: Can stay as-is
+   Priority: LOW - Service image, not scenic
+
+   Old Town Palma.jpg (What Else to Do section)
+   Status: ACCEPTABLE - Could upgrade to better city shot
+   Notes: Destination marketing - should be attractive/inviting
+   Priority: MEDIUM - Sets experience tone
+
+   Valldemossa.avif (What Else to Do section)
+   Status: ACCEPTABLE - Could be higher-resolution
+   Notes: UNESCO heritage site should showcase beauty
+   Priority: MEDIUM - Key attraction deserves best shot
+
+   Soller.jpeg (What Else to Do section)
+   Status: ACCEPTABLE - Could upgrade to golden hour version
+   Notes: Classic town - warm/inviting image would help
+   Priority: MEDIUM - Destination marketing
+
+
+6. IS MALLORCA GOOD FOR GOLF (3 images)
+   ─────────────────────────────────────
+
+   Son Gual.jpg
+   Status: ACCEPTABLE - Replace with high-resolution version
+   Notes: Opening section - first course image should impress
+   Priority: MEDIUM - Key positioning image
+
+   Capdepera.jpg
+   Status: ACCEPTABLE - Replace with scenic east coast version
+   Notes: East coast should showcase why worth the drive
+   Priority: MEDIUM - Should emphasize scenic value
+
+   Alcanada.jpg (And When You're Not on Course)
+   Status: ACCEPTABLE - Higher resolution preferred
+   Notes: Scenic value important for lifestyle section
+   Priority: LOW - Supporting content
+
+   Soller.jpg (And When You're Not on Course)
+   Status: ACCEPTABLE - Could be golden hour version
+   Notes: UNESCO setting - should look beautiful
+   Priority: MEDIUM - Destination image
+
+================================================================================
+PRIORITY REPLACEMENT ROADMAP
+================================================================================
+
+TIER 1 - CORE COURSE IMAGES (Replace FIRST - these define the brand)
+------
+  • Alcanada (most scenic, flagship)
+  • Son Gual (most-played, your recommendation)
+  • Andratx (hardest test - should show difficulty)
+
+TIER 2 - TRIP PLANNING DESTINATIONS (Replace SECOND - experience marketing)
+------
+  • Valldemossa (UNESCO, northwest coast)
+  • Old Town Palma (cultural experience)
+  • Soller (classic town)
+
+TIER 3 - SUPPORTING COURSE IMAGES (Replace THIRD - supporting narrative)
+------
+  • Son Muntaner (award winner)
+  • Canyamel (most photographed)
+  • Golf cost images (value positioning)
+
+TIER 4 - KEEP/MINOR UPDATES
+------
+  • All logos (perfect as-is)
+  • Equipment photos (functional, appropriate size)
+  • Seasonal weather images (context-appropriate)
+  • Event photography (inherently good quality)
+
+================================================================================
+PHOTOGRAPHY RECOMMENDATIONS FOR YOUR SHOOT
+================================================================================
+
+WHAT TO SHOOT:
+1. Golden hour on courses (early morning or late afternoon)
+   - Warm, soft lighting
+   - Long shadows add dimension
+   - Greens look rich and vibrant
+
+2. Course features:
+   - Elevated tees with dramatic views
+   - Water hazards and bunker complexes
+   - Signature holes
+   - From angles that show why they matter
+
+3. Wide shots showing:
+   - Terrain variation
+   - Surrounding landscape
+   - Sky (blue, not blown out)
+
+4. Detail shots:
+   - Greens and condition
+   - Fairways and texture
+   - Course markers/signage
+
+5. Lifestyle/personality:
+   - You coaching/playing on courses
+   - Before/after coaching moments
+   - Authentic action shots
+   - Client testimonial candids (if applicable)
+
+COLOR GRADE TARGETS:
+- Warm tone: Slightly add warmth to match luxury/premium feel
+- Saturated greens: Course grass should look rich and healthy
+- Clear skies: Aim for 60-70% blue sky in composition
+- Sunlight: Golden hour 3500-4500K color temperature
+- Consistency: All images should have similar color profile
+
+COMPOSITION STANDARDS:
+- Rule of thirds: Key elements at intersections
+- Depth: Foreground, midground, background layers
+- Elevation: Shoot from tees looking down/across
+- Weather: Clear days preferred, dramatic clouds acceptable
+- Time: Avoid harsh midday shadows (10am-2pm)
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Photograph or source replacement images for Tier 1 courses
+2. Update images in /public/images/blog-* folders (same filenames)
+3. Notify when ready for color/composition review
+4. We'll batch-edit for consistency (color grading, cropping, etc.)
+5. Final approval before deploying to production
+
+ESTIMATED IMPACT:
+- Professional photography = 40-60% improvement in perceived brand quality
+- Investment: Time for shoot or budget for photographer
+- Timeline: 1 day shoot + 2-3 days editing/color grading
+
+================================================================================
