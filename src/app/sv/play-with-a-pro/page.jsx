@@ -71,18 +71,6 @@ export default function PlayWithAPro_SV() {
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Banan väljs alltid med dig.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>En grupp med nybörjare, en kortare halvdag — det finns banor som passar bättre, och jag berättar ärligt vilken. Några är endast för medlemmar — tillgang kan arrangeras.</p>
         </div>
-        <div className="courses-grid">
-          <div className="course-choice reveal">
-            <p className="region">Palma · 11km · Championship</p>
-            <h3>Son Gual</h3>
-            <p>Min mest spelade bana på ön. Thomas Himmels design (2007) i sitt eget vindekosystem. Avslutningssektionen — hål 15 till 18 — bland de fyra bästa hålen i europeiskt golf. Rafa Nadals favoritbana.</p>
-          </div>
-          <div className="course-choice reveal">
-            <p className="region">Alcudia · 55km · Kust</p>
-            <h3>Alcanada</h3>
-            <p>Troligen Mallorcas vackraste bana. Robert Trent Jones Jr. Fyren synlig från 16 av 18 hål. Restaurangterrassen är en av de finaste platserna på ön.</p>
-          </div>
-        </div>
       </section>
 
       <section className="pwap-who">

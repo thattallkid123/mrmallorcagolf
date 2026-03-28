@@ -93,18 +93,6 @@ export default function PlayWithAProDE() {
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Der Platz wird immer gemeinsam mit Ihnen gewählt.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>Eine Gruppe mit Anfängern, ein kürzerer Halbtag, eine Familie mit Junioren — es gibt Plätze, die für all das besser geeignet sind, und ich sage Ihnen ehrlich, welcher. Manche sind nur für Mitglieder zugänglich und können nicht unabhängig gebucht werden. Dieser Zugang kann für Klienten arrangiert werden.</p>
         </div>
-        <div className="courses-grid">
-          <div className="course-choice reveal">
-            <p className="region">Palma · 11km · Championship</p>
-            <h3>Son Gual</h3>
-            <p>Mein meistgespielter Platz auf der Insel. Thomas Himmels Design von 2007 hat sein eigenes Windökosystem. Die Schlussserie — Löcher 15 bis 18 — gehört zu den besten vier Löchern im europäischen Golf. Rafa Nadals erklärter Lieblingsplatz der Insel.</p>
-          </div>
-          <div className="course-choice reveal">
-            <p className="region">Alcúdia · 55km · Küste</p>
-            <h3>Alcanada</h3>
-            <p>Wohl Mallorcas malerischster Platz. Design von Robert Trent Jones Jr. Der Leuchtturm von 16 der 18 Löcher sichtbar. Gastgeber des Rolex Challenge Tour Grand Final. Die Restaurantterrasse nach der Runde ist einer der schönsten Orte der Insel.</p>
-          </div>
-        </div>
       </section>
 
       <section className="pwap-who">

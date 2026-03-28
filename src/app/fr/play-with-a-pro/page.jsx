@@ -71,18 +71,6 @@ export default function PlayWithAPro_FR() {
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Le parcours est toujours choisi avec vous.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>Un groupe avec des débutants, une demi-journée — il y a des parcours qui conviennent mieux, et je vous dirai honnêtement lequel. Certains sont réservés aux membres — cet accès peut être arrangé.</p>
         </div>
-        <div className="courses-grid">
-          <div className="course-choice reveal">
-            <p className="region">Palma · 11km · Championship</p>
-            <h3>Son Gual</h3>
-            <p>Mon parcours le plus joué sur l'île. Thomas Himmel (2007) dans son propre écosystème de vent. La séquence finale — trous 15 à 18 — parmi les quatre meilleurs trous du golf européen. Le parcours favori de Rafa Nadal.</p>
-          </div>
-          <div className="course-choice reveal">
-            <p className="region">Alcudia · 55km · Cotier</p>
-            <h3>Alcanada</h3>
-            <p>Probablement le plus pittoresque de Majorque. Robert Trent Jones Jr. Le phare visible depuis 16 des 18 trous. La terrasse du restaurant est l'un des plus beaux endroits de l'île.</p>
-          </div>
-        </div>
       </section>
 
       <section className="pwap-who">

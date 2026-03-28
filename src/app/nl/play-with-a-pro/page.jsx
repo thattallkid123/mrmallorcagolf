@@ -71,18 +71,6 @@ export default function PlayWithAPro_NL() {
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>De baan wordt altijd met u gekozen.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>Een groep met beginners, een kortere halve dag — er zijn banen die beter werken, en ik vertel u eerlijk welke. Sommige zijn alleen voor leden — die toegang kan worden geregeld.</p>
         </div>
-        <div className="courses-grid">
-          <div className="course-choice reveal">
-            <p className="region">Palma · 11km · Championship</p>
-            <h3>Son Gual</h3>
-            <p>Mijn meest gespeelde baan op het eiland. Thomas Himmels ontwerp (2007) in zijn eigen windecosysteem. De slotreeks — holes 15 tot 18 — behoort tot de vier beste holes in het Europese golf. De favoriete baan van Rafa Nadal.</p>
-          </div>
-          <div className="course-choice reveal">
-            <p className="region">Alcudia · 55km · Kust</p>
-            <h3>Alcanada</h3>
-            <p>Waarschijnlijk Mallorca's mooiste baan. Robert Trent Jones Jr. ontwerp. De vuurtoren zichtbaar vanaf 16 van de 18 holes. Het restaurantterras na de ronde is een van de mooiste plekken op het eiland.</p>
-          </div>
-        </div>
       </section>
 
       <section className="pwap-who">

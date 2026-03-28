@@ -68,20 +68,8 @@ export default function PlayWithAPro_ES() {
       <section className="pwap-courses">
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>Qué campo?</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>Son Gual y Alcanada son los campos principales. Pero la elección siempre se hace con usted.</h2>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>El campo siempre se elige con usted.</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>Un grupo con principiantes, una tarde corta — hay campos que funcionan mejor, y le diré honestamente cual. Algunos son solo para socios — ese acceso puede organizarse.</p>
-        </div>
-        <div className="courses-grid">
-          <div className="course-choice reveal">
-            <p className="region">Palma · 11km · Championship</p>
-            <h3>Son Gual</h3>
-            <p>Mi campo mas jugado en la isla. Diseño de Thomas Himmel (2007) con su propio ecosistema de viento. El tramo final — hoyos 15 a 18 — entre los cuatro mejores hoyos del golf europeo. El campo favorito declarado de Rafa Nadal.</p>
-          </div>
-          <div className="course-choice reveal">
-            <p className="region">Alcudia · 55km · Costero</p>
-            <h3>Alcanada</h3>
-            <p>Probablemente el mas escenico de Mallorca. Diseno de Robert Trent Jones Jr. El faro visible desde 16 de los 18 hoyos. La terraza del restaurante es uno de los mejores lugares de la isla.</p>
-          </div>
         </div>
       </section>
 

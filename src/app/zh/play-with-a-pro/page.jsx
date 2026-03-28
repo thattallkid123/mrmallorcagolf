@@ -71,18 +71,6 @@ export default function PlayWithAPro_ZH() {
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>球场始终与您共同选择。</h2>
           <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>有初学者的团体、较短的半日——总有更合适的球场，我会直接告诉您哪个更适合。部分会员制球场无法自行预订——可为客户安排。</p>
         </div>
-        <div className="courses-grid">
-          <div className="course-choice reveal">
-            <p className="region">帕尔马 · 11公里 · 锦标赛级</p>
-            <h3>Son Gual</h3>
-            <p>我在岛上打得最多的球场。Thomas Himmel 2007年设计，拥有独特的风向生态。终局四洞（15-18）堪称欧洲高尔夫最精彩的收官段落。拉法·纳达尔最喜爱的球场。</p>
-          </div>
-          <div className="course-choice reveal">
-            <p className="region">Alcudia · 55公里 · 海岸</p>
-            <h3>Alcanada</h3>
-            <p>可能是马略卡岛最具风景之作。Robert Trent Jones Jr.设计。18个洞中有16个可以看到灯塔。餐厅露台是岛上最美的地方之一。</p>
-          </div>
-        </div>
       </section>
 
       <section className="pwap-who">
