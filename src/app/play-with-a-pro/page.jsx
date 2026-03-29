@@ -1,10 +1,10 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Play With a Pro â€” Private Golf Days in Mallorca',
-  description: 'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From â‚¬350 per person + green fee.',
+  title: 'Play With a Pro — Private Golf Days in Mallorca',
+  description: 'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person + green fee.',
   alternates: {
     canonical: 'https://mrmallorcagolf.com/play-with-a-pro',
     languages: {
@@ -42,7 +42,7 @@ export default function PlayWithAPro() {
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
             <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Home</Link> &nbsp;/&nbsp; <span>Play with a Pro</span></p>
-            <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Private Golf Days Â· Mallorca</p>
+            <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Private Golf Days · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>A Private Golf Day<br />in Mallorca.</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'2rem'}}>Not a lesson. Not a standard round. A private day on one of the island&apos;s finest courses, hosted by a PGA Advanced Professional with two decades of coaching across three continents.</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
@@ -58,8 +58,8 @@ export default function PlayWithAPro() {
           <p className="eyebrow">What the day involves</p>
           <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'1.5rem'}}>Before you arrive, I already know what to watch for.</h2>
           <p>Before you arrive, you complete a short questionnaire. What frustrates you. Where the gap is between your range game and your score. What a good day looks like to you. By the time we reach the first tee, I already know what to watch for.</p>
-          <p>During the round, the coaching is woven in naturally â€” not a running commentary, but the right observation at the right moment. Course management decisions you haven&apos;t considered. The adjustments that actually change something, rather than the ones that just sound right.</p>
-          <div className="pull-quote"><p>&ldquo;What most golfers find is that they leave playing noticeably better and feeling more confident than they arrived â€” and understanding why, which is the part that stays with you.&rdquo;</p></div>
+          <p>During the round, the coaching is woven in naturally — not a running commentary, but the right observation at the right moment. Course management decisions you haven&apos;t considered. The adjustments that actually change something, rather than the ones that just sound right.</p>
+          <div className="pull-quote"><p>&ldquo;What most golfers find is that they leave playing noticeably better and feeling more confident than they arrived — and understanding why, which is the part that stays with you.&rdquo;</p></div>
           <a href="/questionnaire.html" target="_blank" rel="noopener" style={{display:'block',marginTop:'2rem',padding:'20px 24px',border:'1px solid rgba(184,151,60,.3)',background:'rgba(184,151,60,.05)',textDecoration:'none',color:'var(--deep)'}}>
             <p style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:8}}>Already booked?</p>
             <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,margin:'0 0 4px'}}>Complete your Pre-Round Questionnaire &rarr;</p>
@@ -72,9 +72,9 @@ export default function PlayWithAPro() {
             <ul className="included-list">
               {[
                 ['Course selection', 'Matched to your game, handicap, and what you want from the day'],
-                ['Tee time', 'Secured and fully handled â€” you just turn up'],
+                ['Tee time', 'Secured and fully handled — you just turn up'],
                 ['Pre-round briefing', 'What to expect from the course, what to watch for'],
-                ['18 holes alongside Andy', 'Not walking alongside â€” playing, as your partner'],
+                ['18 holes alongside Andy', 'Not walking alongside — playing, as your partner'],
                 ['On-course coaching throughout', 'Course management, shot selection, decision-making'],
                 ['Post-round debrief', 'What improved, what to work on, clear and honest'],
                 ['Lunch', 'At the course restaurant or a handpicked local restaurant (Signature Day)'],
@@ -93,7 +93,7 @@ export default function PlayWithAPro() {
         <div className="courses-intro reveal">
           <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>Which course?</p>
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>The course is always chosen with you.</h2>
-          <p style={{color:'rgba(255,255,255,.65)',lineHeight:1.8,maxWidth:680}}>A group including beginners, a shorter half-day, a family with juniors â€” there are courses that work better for all of those, and I&apos;ll tell you which one honestly. Some are members-only and can&apos;t be accessed independently. That access can be arranged for clients who want something off the standard visitor rota.</p>
+          <p style={{color:'rgba(255,255,255,.65)',lineHeight:1.8,maxWidth:680}}>A group including beginners, a shorter half-day, a family with juniors — there are courses that work better for all of those, and I&apos;ll tell you which one honestly. Some are members-only and can&apos;t be accessed independently. That access can be arranged for clients who want something off the standard visitor rota.</p>
         </div>
       </section>
 
@@ -106,7 +106,7 @@ export default function PlayWithAPro() {
           {testimonials.map((t, i) => (
             <div key={i} className={`testimonial reveal${i > 0 ? ` reveal-delay-${i}` : ''}`}>
               <p>&ldquo;{t.text}&rdquo;</p>
-              <span className="testimonial__author">â€” {t.author}</span>
+              <span className="testimonial__author">— {t.author}</span>
             </div>
           ))}
         </div>
@@ -124,9 +124,9 @@ export default function PlayWithAPro() {
             <h3 className="tier__name">Play with a Pro</h3>
             <div className="tier__rule"></div>
             <ul className="tier__features">
-              {['Course matched to your game & handicap','Tee time secured and fully handled','Pre-round briefing and warm-up','18 holes alongside Andy','On-course coaching throughout','Post-round debrief â€” honest and clear'].map((f,i)=><li key={i}>{f}</li>)}
+              {['Course matched to your game & handicap','Tee time secured and fully handled','Pre-round briefing and warm-up','18 holes alongside Andy','On-course coaching throughout','Post-round debrief — honest and clear'].map((f,i)=><li key={i}>{f}</li>)}
             </ul>
-            <p className="tier__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem'}}>â‚¬350 per person + green fee</p>
+            <p className="tier__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem'}}>€350 per person + green fee</p>
             <Link href="/contact" className="tier__btn">Enquire &rarr;</Link>
           </div>
           <div className="tier tier--feature reveal">
@@ -134,9 +134,9 @@ export default function PlayWithAPro() {
             <h3 className="tier__name">Hosted Golf Day</h3>
             <div className="tier__rule"></div>
             <ul className="tier__features">
-              {["Everything in The Mallorca Round","Son Gual or Alcanada â€” two of the island's finest","Long lunch at the course restaurant","Curated surprise gift","Relaxed, unhurried pace â€” a full day"].map((f,i)=><li key={i}>{f}</li>)}
+              {["Everything in The Mallorca Round","Son Gual or Alcanada — two of the island's finest","Long lunch at the course restaurant","Curated surprise gift","Relaxed, unhurried pace — a full day"].map((f,i)=><li key={i}>{f}</li>)}
             </ul>
-            <p className="tier__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem',color:'var(--gold-light)'}}>From â‚¬450 per person + green fee</p>
+            <p className="tier__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem',color:'var(--gold-light)'}}>From €450 per person + green fee</p>
             <Link href="/contact" className="tier__btn">Enquire &rarr;</Link>
           </div>
           <div className="tier reveal">
@@ -144,7 +144,7 @@ export default function PlayWithAPro() {
             <h3 className="tier__name">Bespoke Golf Journey</h3>
             <div className="tier__rule"></div>
             <ul className="tier__features">
-              {['Multi-course day or full itinerary','Private transport from Palma','Dinner at a handpicked restaurant','Spa or recovery session','Full concierge â€” groups & corporates'].map((f,i)=><li key={i}>{f}</li>)}
+              {['Multi-course day or full itinerary','Private transport from Palma','Dinner at a handpicked restaurant','Spa or recovery session','Full concierge — groups & corporates'].map((f,i)=><li key={i}>{f}</li>)}
             </ul>
             <p className="tier__price" style={{marginTop:'1.25rem',marginBottom:'1.25rem'}}>Custom itinerary</p>
             <Link href="/contact" className="tier__btn">Enquire &rarr;</Link>
@@ -156,7 +156,7 @@ export default function PlayWithAPro() {
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Ready to play Mallorca properly?</p>
           <h2 className="serif-display" style={{color:'#fff'}}>Get in touch and let&apos;s arrange your day.</h2>
-          <p>Tell me your dates, your handicap, and what you want from the day. I&apos;ll come back with a recommendation â€” personally, within 24 hours.</p>
+          <p>Tell me your dates, your handicap, and what you want from the day. I&apos;ll come back with a recommendation — personally, within 24 hours.</p>
         </div>
         <div className="cta-final__right reveal">
           <Link href="/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>Book Your Day &rarr;</Link>

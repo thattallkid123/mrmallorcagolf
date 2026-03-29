@@ -1,8 +1,8 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 
 export const metadata = {
-  title: 'Privacy Policy â€” Mr Mallorca Golf',
+  title: 'Privacy Policy — Mr Mallorca Golf',
   description: 'Privacy policy for Mr Mallorca Golf. How we collect, use, and protect your personal data in accordance with GDPR and Spanish data protection law.',
   alternates: {
     canonical: 'https://mrmallorcagolf.com/privacy-policy',
@@ -110,7 +110,7 @@ export default function PrivacyPolicy() {
           <section className="legal-section">
             <h2>10. Complaints</h2>
             <p>If you believe your data protection rights have not been respected, you have the right to lodge a complaint with the Spanish data protection authority:</p>
-            <p><strong>Agencia EspaÃ±ola de ProtecciÃ³n de Datos (AEPD)</strong><br />
+            <p><strong>Agencia Española de Protección de Datos (AEPD)</strong><br />
             Website: <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a><br />
             Address: C/ Jorge Juan, 6, 28001 Madrid, Spain</p>
           </section>
@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
 
           <div style={{marginTop:'3rem', paddingTop:'2rem', borderTop:'1px solid rgba(255,255,255,0.1)'}}>
             <p style={{color:'rgba(255,255,255,0.4)', fontSize:'0.85rem'}}>
-              Also available in: <Link href="/es/privacy-policy" style={{color:'var(--gold-light)'}}>EspaÃ±ol</Link>
+              Also available in: <Link href="/es/privacy-policy" style={{color:'var(--gold-light)'}}>Español</Link>
             </p>
           </div>
 

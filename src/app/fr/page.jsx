@@ -1,11 +1,11 @@
-﻿import HomePageFR from './HomePageFR'
+import HomePageFR from './HomePageFR'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Mr Mallorca Golf â€” Les meilleurs parcours de Majorque avec un PGA Professionnel',
-  description: 'ExpÃ©riences golf privÃ©es Ã  Majorque avec un PGA Advanced Professional. JournÃ©es complÃ¨tes sur Son Gual, Alcanada et plus â€” coaching sur parcours, tout organisÃ©.',
+  title: 'Mr Mallorca Golf — Les meilleurs parcours de Majorque avec un PGA Professionnel',
+  description: 'Expériences golf privées à Majorque avec un PGA Advanced Professional. Journées complètes sur Son Gual, Alcanada et plus — coaching sur parcours, tout organisé.',
   alternates: { canonical: 'https://mrmallorcagolf.com/fr' },
 }
 

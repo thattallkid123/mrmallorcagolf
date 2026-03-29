@@ -1,11 +1,11 @@
-﻿import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import CareerStrip from '../../components/CareerStrip'
 
 export const metadata = {
-  title: 'About Andy Griffiths â€” PGA Professional, Mallorca',
+  title: 'About Andy Griffiths — PGA Professional, Mallorca',
   description: "Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. Formerly Pebble Beach, Evian, 11 years coaching in China.",
   alternates: {
     canonical: 'https://mrmallorcagolf.com/about',
@@ -67,26 +67,26 @@ export default function About() {
             <p className="chapter__label">Early career</p>
             <h2>Following the best coaches across two continents.</h2>
             <p>I grew up playing golf, got down to a +1 handicap but knew early that coaching was where I wanted to be. After studying Applied Golf Management at the University of Birmingham and qualifying as a PGA Professional, I started building a career following the most experienced coaches all around Europe and North America.</p>
-            <p>The early years took me to some remarkable venues. I coached at Pebble Beach, Doral, Evian during the women&apos;s major, The Open Championship. I spent a season coaching aboard a cruise ship on a world voyage â€” over forty countries, golf in places most professionals never get near.</p>
+            <p>The early years took me to some remarkable venues. I coached at Pebble Beach, Doral, Evian during the women&apos;s major, The Open Championship. I spent a season coaching aboard a cruise ship on a world voyage — over forty countries, golf in places most professionals never get near.</p>
             <div className="pull-quote"><p>&ldquo;Every environment was different. Every golfer was different. That variety, early on, is what shaped everything that came after.&rdquo;</p></div>
           </div>
 
           <div className="chapter reveal">
-            <p className="chapter__label">Shanghai, 2014â€“2025</p>
+            <p className="chapter__label">Shanghai, 2014–2025</p>
             <h2>Eleven years at the top of the game in China.</h2>
-            <p>In 2014 I moved to Shanghai. I went with specific goals â€” to set up the teaching programme for the best academy in China â€” and stayed for eleven successful years.</p>
+            <p>In 2014 I moved to Shanghai. I went with specific goals — to set up the teaching programme for the best academy in China — and stayed for eleven successful years.</p>
             <p>China in that period was an extraordinary environment in which to coach. Lessons were running at around &euro;500 per hour. Clients expected real, measurable improvement. That was the standard. The professional standard required was as high as anywhere I&apos;d worked.</p>
             <p>I became the country&apos;s first Trackman Master, coached players from the Chinese national team, and built a coaching presence on Douyin that reached hundreds of millions of views. I also became fluent in Mandarin, which changed the depth of coaching relationship I could build with players and families.</p>
             <p>After eleven years, I&apos;d achieved what I went for. My first daughter was born in 2023. The pull of being closer to home, and the chance to build something of my own, became impossible to ignore.</p>
           </div>
 
           <div className="chapter reveal">
-            <p className="chapter__label">Mallorca, 2025 â€“</p>
+            <p className="chapter__label">Mallorca, 2025 –</p>
             <h2>Twenty-two courses, one island, and a coaching philosophy sharpened by playing again.</h2>
             <p>I moved to Mallorca in March 2025 with my wife Yina. Closer to family in the UK, year-round sunshine, a genuinely exceptional golf island that most people don&apos;t give enough credit to.</p>
-            <p>I started playing properly again. Working my way through every course on the island. Rediscovering what it feels like to stand on a first tee and actually care about the score. That competitive instinct â€” dormant through years of full-time coaching â€” came back fast.</p>
+            <p>I started playing properly again. Working my way through every course on the island. Rediscovering what it feels like to stand on a first tee and actually care about the score. That competitive instinct — dormant through years of full-time coaching — came back fast.</p>
             <div className="pull-quote"><p>&ldquo;The coaching philosophy that&apos;s come out of playing again is simple: the fastest improvements happen on the course, not the range. Real conditions, real decisions. The progress that comes from that tends to stick.&rdquo;</p></div>
-            <p>A PGA professional who spent over a decade coaching in Asia, now hosting private golf days on one of Europe&apos;s best golf islands. If that sounds like the kind of day you&apos;re looking for â€” get in touch.</p>
+            <p>A PGA professional who spent over a decade coaching in Asia, now hosting private golf days on one of Europe&apos;s best golf islands. If that sounds like the kind of day you&apos;re looking for — get in touch.</p>
           </div>
         </main>
 
@@ -94,7 +94,7 @@ export default function About() {
           <div className="reveal" style={{lineHeight:0,marginBottom:'24px'}}>
             <Image
               src="/images/about-andy-colour.jpg"
-              alt="Andy Griffiths â€” UK PGA Advanced Professional, Mallorca"
+              alt="Andy Griffiths — UK PGA Advanced Professional, Mallorca"
               width={600}
               height={420}
               style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
@@ -106,7 +106,7 @@ export default function About() {
               {credentials.map((c, i) => (
                 <li key={i} className="cred-item">
                   <span className="cred-check">&#10003;</span>
-                  <span className="cred-text"><strong>{c.title}</strong>{c.isBookLink ? (<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:'var(--gold)',textDecoration:'none'}}>Putting It Out There â€” A Life in Full Swing, 2016 (Amazon)</a>) : c.detail}</span>
+                  <span className="cred-text"><strong>{c.title}</strong>{c.isBookLink ? (<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:'var(--gold)',textDecoration:'none'}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a>) : c.detail}</span>
                 </li>
               ))}
             </ul>

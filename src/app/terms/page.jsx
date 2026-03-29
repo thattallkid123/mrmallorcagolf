@@ -1,8 +1,8 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 
 export const metadata = {
-  title: 'Terms & Conditions â€” Mr Mallorca Golf',
+  title: 'Terms & Conditions — Mr Mallorca Golf',
   description: 'Terms and conditions for Mr Mallorca Golf experiences and services in Mallorca, Spain.',
   alternates: {
     canonical: 'https://mrmallorcagolf.com/terms',
@@ -58,7 +58,7 @@ export default function Terms() {
             <p><strong>Cancellation by you:</strong></p>
             <ul>
               <li>More than 14 days before the experience: full refund of any deposit paid</li>
-              <li>7â€“14 days before: 50% of the total booking value is retained</li>
+              <li>7–14 days before: 50% of the total booking value is retained</li>
               <li>Less than 7 days before: the full booking value is retained</li>
             </ul>
             <p>Cancellations must be made in writing by email to <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a>.</p>
@@ -99,7 +99,7 @@ export default function Terms() {
 
           <section className="legal-section">
             <h2>8. Intellectual Property</h2>
-            <p>All content on this website â€” including text, images, videos, and branding â€” is the property of Mr Mallorca Golf and may not be reproduced without written permission.</p>
+            <p>All content on this website — including text, images, videos, and branding — is the property of Mr Mallorca Golf and may not be reproduced without written permission.</p>
           </section>
 
           <section className="legal-section">
@@ -124,7 +124,7 @@ export default function Terms() {
 
           <div style={{marginTop:'3rem', paddingTop:'2rem', borderTop:'1px solid rgba(255,255,255,0.1)'}}>
             <p style={{color:'rgba(255,255,255,0.4)', fontSize:'0.85rem'}}>
-              Also available in: <Link href="/es/terms" style={{color:'var(--gold-light)'}}>EspaÃ±ol</Link>
+              Also available in: <Link href="/es/terms" style={{color:'var(--gold-light)'}}>Español</Link>
             </p>
           </div>
 

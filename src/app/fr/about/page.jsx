@@ -1,12 +1,12 @@
-﻿import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
 
 export const metadata = {
-  title: 'Ã€ propos d\'Andy Griffiths â€” Professionnel PGA AvancÃ©, Majorque',
-  description: "Andy Griffiths est un professionnel PGA avancÃ© du Royaume-Uni basÃ© Ã  Majorque. Ancien coach Ã  Pebble Beach, Evian, 11 ans de coaching en Chine.",
+  title: 'À propos d\'Andy Griffiths — Professionnel PGA Avancé, Majorque',
+  description: "Andy Griffiths est un professionnel PGA avancé du Royaume-Uni basé à Majorque. Ancien coach à Pebble Beach, Evian, 11 ans de coaching en Chine.",
   alternates: {
     canonical: 'https://mrmallorcagolf.com/fr/about',
     languages: {
@@ -23,16 +23,16 @@ export const metadata = {
 }
 
 const credentials = [
-  { title: 'Professionnel PGA AvancÃ©', detail: 'Plus de 15 000 heures de coaching dispensÃ©es' },
-  { title: 'Ã‰tudes en Gestion du Golf', detail: 'UniversitÃ© de Birmingham' },
-  { title: 'CertifiÃ© TPI Niveau 3', detail: 'Institut de Performance Titleist' },
-  { title: 'CertifiÃ© MaÃ®tre Trackman', detail: 'Premier en Chine' },
+  { title: 'Professionnel PGA Avancé', detail: 'Plus de 15 000 heures de coaching dispensées' },
+  { title: 'Études en Gestion du Golf', detail: 'Université de Birmingham' },
+  { title: 'Certifié TPI Niveau 3', detail: 'Institut de Performance Titleist' },
+  { title: 'Certifié Maître Trackman', detail: 'Premier en Chine' },
   { title: 'Golf pour enfants US Kids', detail: 'Top 50 Coach Mondialement' },
-  { title: '11 ans Ã  Shanghai', detail: 'Mandarin courant' },
-  { title: 'Ã‰quipe nationale chinoise', detail: 'Coaching Ã©lite junior et compÃ©tition' },
-  { title: 'Des centaines de millions de vues', detail: 'Contenu vidÃ©o de coaching au golf sur Douyin' },
-  { title: 'Auteur PubliÃ©', detail: 'BOOK_LINK', isBookLink: true },
-  { title: 'BasÃ© Ã  Majorque', detail: 'Depuis mars 2025' },
+  { title: '11 ans à Shanghai', detail: 'Mandarin courant' },
+  { title: 'Équipe nationale chinoise', detail: 'Coaching élite junior et compétition' },
+  { title: 'Des centaines de millions de vues', detail: 'Contenu vidéo de coaching au golf sur Douyin' },
+  { title: 'Auteur Publié', detail: 'BOOK_LINK', isBookLink: true },
+  { title: 'Basé à Majorque', detail: 'Depuis mars 2025' },
 ]
 
 
@@ -50,13 +50,13 @@ export default function About() {
         backgroundPosition: 'center, center, center 80%',
       }}>
         <div className="page-hero__inner">
-          <p className="breadcrumb"><Link href="/">Accueil</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Ã€ propos</span></p>
-          <h1>Le Professionnel<br />DerriÃ¨re l'ExpÃ©rience.</h1>
+          <p className="breadcrumb"><Link href="/">Accueil</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>À propos</span></p>
+          <h1>Le Professionnel<br />Derrière l'Expérience.</h1>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:'1.25rem'}}>
-            <span className="cred-tag cred-tag--gold">Professionnel PGA AvancÃ©</span>
-            <span className="cred-tag">CertifiÃ© MaÃ®tre Trackman</span>
+            <span className="cred-tag cred-tag--gold">Professionnel PGA Avancé</span>
+            <span className="cred-tag">Certifié Maître Trackman</span>
             <span className="cred-tag">TPI Niveau 3</span>
-            <span className="cred-tag">BasÃ© Ã  Majorque</span>
+            <span className="cred-tag">Basé à Majorque</span>
           </div>
         </div>
       </header>
@@ -64,29 +64,29 @@ export default function About() {
       <div className="story">
         <main className="story__main">
           <div className="chapter reveal">
-            <p className="chapter__label">DÃ©buts de carriÃ¨re</p>
+            <p className="chapter__label">Débuts de carrière</p>
             <h2>Suivre les meilleurs coachs sur deux continents.</h2>
-            <p>J'ai grandi en jouant au golf, j'ai atteint un handicap de +1 mais j'ai su tÃ´t que le coaching Ã©tait ma vocation. AprÃ¨s avoir Ã©tudiÃ© la Gestion du Golf appliquÃ©e Ã  l'UniversitÃ© de Birmingham et m'Ãªtre qualifiÃ© en tant que Professionnel PGA, j'ai commencÃ© Ã  construire une carriÃ¨re en suivant les coachs les plus expÃ©rimentÃ©s en Europe et en AmÃ©rique du Nord.</p>
-            <p>Les premiÃ¨res annÃ©es m'ont menÃ© dans des lieux remarquables. J'ai coachÃ© Ã  Pebble Beach, Doral, Evian lors du major fÃ©minin, The Open Championship. J'ai passÃ© une saison coaching Ã  bord d'un navire de croisiÃ¨re lors d'un voyage mondial â€” plus de quarante pays, du golf dans des endroits que peu de professionnels visiteront jamais.</p>
-            <div className="pull-quote"><p>&ldquo;Chaque environnement Ã©tait diffÃ©rent. Chaque golfeur Ã©tait diffÃ©rent. Cette variÃ©tÃ©, au dÃ©but, a faÃ§onnÃ© tout ce qui a suivi.&rdquo;</p></div>
+            <p>J'ai grandi en jouant au golf, j'ai atteint un handicap de +1 mais j'ai su tôt que le coaching était ma vocation. Après avoir étudié la Gestion du Golf appliquée à l'Université de Birmingham et m'être qualifié en tant que Professionnel PGA, j'ai commencé à construire une carrière en suivant les coachs les plus expérimentés en Europe et en Amérique du Nord.</p>
+            <p>Les premières années m'ont mené dans des lieux remarquables. J'ai coaché à Pebble Beach, Doral, Evian lors du major féminin, The Open Championship. J'ai passé une saison coaching à bord d'un navire de croisière lors d'un voyage mondial — plus de quarante pays, du golf dans des endroits que peu de professionnels visiteront jamais.</p>
+            <div className="pull-quote"><p>&ldquo;Chaque environnement était différent. Chaque golfeur était différent. Cette variété, au début, a façonné tout ce qui a suivi.&rdquo;</p></div>
           </div>
 
           <div className="chapter reveal">
-            <p className="chapter__label">Shanghai, 2014â€“2025</p>
+            <p className="chapter__label">Shanghai, 2014–2025</p>
             <h2>Onze ans au sommet du jeu en Chine.</h2>
-            <p>En 2014, je me suis installÃ© Ã  Shanghai. Je m'y suis rendu avec des objectifs prÃ©cis â€” mettre en place le programme d'enseignement de la meilleure acadÃ©mie de Chine â€” et j'y suis restÃ© onze annÃ©es rÃ©ussies.</p>
-            <p>La Chine durant cette pÃ©riode Ã©tait un environnement extraordinaire pour coacher. Les leÃ§ons coÃ»taient environ 500 â‚¬ de l'heure. Les clients attendaient une amÃ©lioration rÃ©elle et mesurable. C'Ã©tait la norme. Le standard professionnel requis Ã©tait aussi Ã©levÃ© que n'importe oÃ¹ ailleurs.</p>
-            <p>Je suis devenu le premier MaÃ®tre Trackman du pays, j'ai coachÃ© des joueurs de l'Ã©quipe nationale chinoise, et j'ai construit une prÃ©sence de coaching sur Douyin qui a atteint des centaines de millions de vues. Je suis aussi devenu courant en mandarin, ce qui a changÃ© la profondeur de la relation de coaching que je pouvais construire avec les joueurs et leurs familles.</p>
-            <p>AprÃ¨s onze ans, j'avais atteint mes objectifs. Ma premiÃ¨re fille est nÃ©e en 2023. L'appel de se rapprocher de la maison et la chance de construire quelque chose Ã  moi est devenu impossible Ã  ignorer.</p>
+            <p>En 2014, je me suis installé à Shanghai. Je m'y suis rendu avec des objectifs précis — mettre en place le programme d'enseignement de la meilleure académie de Chine — et j'y suis resté onze années réussies.</p>
+            <p>La Chine durant cette période était un environnement extraordinaire pour coacher. Les leçons coûtaient environ 500 € de l'heure. Les clients attendaient une amélioration réelle et mesurable. C'était la norme. Le standard professionnel requis était aussi élevé que n'importe où ailleurs.</p>
+            <p>Je suis devenu le premier Maître Trackman du pays, j'ai coaché des joueurs de l'équipe nationale chinoise, et j'ai construit une présence de coaching sur Douyin qui a atteint des centaines de millions de vues. Je suis aussi devenu courant en mandarin, ce qui a changé la profondeur de la relation de coaching que je pouvais construire avec les joueurs et leurs familles.</p>
+            <p>Après onze ans, j'avais atteint mes objectifs. Ma première fille est née en 2023. L'appel de se rapprocher de la maison et la chance de construire quelque chose à moi est devenu impossible à ignorer.</p>
           </div>
 
           <div className="chapter reveal">
-            <p className="chapter__label">Majorque, 2025 â€“</p>
-            <h2>Vingt-deux parcours, une Ã®le, et une philosophie de coaching affÃ»tÃ©e par le jeu Ã  nouveau.</h2>
-            <p>Je me suis installÃ© Ã  Majorque en mars 2025 avec ma femme Yina. Plus proche de ma famille au Royaume-Uni, du soleil toute l'annÃ©e, une Ã®le de golf vÃ©ritablement exceptionnelle que la plupart des gens ne louent pas assez.</p>
-            <p>J'ai recommencÃ© Ã  jouer sÃ©rieusement. En explorant tous les parcours de l'Ã®le. RedÃ©couvrant ce que c'est de se tenir sur un premier tee et vraiment se soucier du score. Cet instinct compÃ©titif â€” dormant pendant des annÃ©es de coaching Ã  temps plein â€” est revenu rapidement.</p>
-            <div className="pull-quote"><p>&ldquo;La philosophie de coaching qui a Ã©mergÃ© du jeu Ã  nouveau est simple : les amÃ©liorations les plus rapides se font sur le parcours, pas au practice. Des conditions rÃ©elles, des dÃ©cisions rÃ©elles. Le progrÃ¨s qui en dÃ©coule tend Ã  durer.&rdquo;</p></div>
-            <p>Un professionnel PGA qui a passÃ© plus d'une dÃ©cennie Ã  coacher en Asie, accueillant maintenant des journÃ©es de golf privÃ©es sur l'une des meilleures Ã®les de golf d'Europe. Si cela ressemble au genre de journÃ©e que vous cherchez â€” prenez contact.</p>
+            <p className="chapter__label">Majorque, 2025 –</p>
+            <h2>Vingt-deux parcours, une île, et une philosophie de coaching affûtée par le jeu à nouveau.</h2>
+            <p>Je me suis installé à Majorque en mars 2025 avec ma femme Yina. Plus proche de ma famille au Royaume-Uni, du soleil toute l'année, une île de golf véritablement exceptionnelle que la plupart des gens ne louent pas assez.</p>
+            <p>J'ai recommencé à jouer sérieusement. En explorant tous les parcours de l'île. Redécouvrant ce que c'est de se tenir sur un premier tee et vraiment se soucier du score. Cet instinct compétitif — dormant pendant des années de coaching à temps plein — est revenu rapidement.</p>
+            <div className="pull-quote"><p>&ldquo;La philosophie de coaching qui a émergé du jeu à nouveau est simple : les améliorations les plus rapides se font sur le parcours, pas au practice. Des conditions réelles, des décisions réelles. Le progrès qui en découle tend à durer.&rdquo;</p></div>
+            <p>Un professionnel PGA qui a passé plus d'une décennie à coacher en Asie, accueillant maintenant des journées de golf privées sur l'une des meilleures îles de golf d'Europe. Si cela ressemble au genre de journée que vous cherchez — prenez contact.</p>
           </div>
         </main>
 
@@ -94,27 +94,27 @@ export default function About() {
           <div className="reveal" style={{lineHeight:0,marginBottom:'24px'}}>
             <Image
               src="/images/about-andy-colour.jpg"
-              alt="Andy Griffiths â€” Professionnel PGA AvancÃ© du Royaume-Uni, Majorque"
+              alt="Andy Griffiths — Professionnel PGA Avancé du Royaume-Uni, Majorque"
               width={600}
               height={420}
               style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
             />
           </div>
           <div className="creds reveal">
-            <p className="creds__label">RÃ©fÃ©rences</p>
+            <p className="creds__label">Références</p>
             <ul className="cred-list">
               {credentials.map((c, i) => (
                 <li key={i} className="cred-item">
                   <span className="cred-check">&#10003;</span>
-                  <span className="cred-text"><strong>{c.title}</strong>{c.isBookLink ? (<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:'var(--gold)',textDecoration:'none'}}>Putting It Out There â€” A Life in Full Swing, 2016 (Amazon)</a>) : c.detail}</span>
+                  <span className="cred-text"><strong>{c.title}</strong>{c.isBookLink ? (<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:'var(--gold)',textDecoration:'none'}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a>) : c.detail}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="sidebar-cta reveal">
-            <h3>Jouez les meilleurs parcours de Majorque Ã  mes cÃ´tÃ©s.</h3>
-            <p>Des journÃ©es privÃ©es Ã  Son Gual, Alcanada et au-delÃ . Tout est arrangÃ©. Coaching sur le parcours tout au long.</p>
-            <Link href="/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Voir les ExpÃ©riences &rarr;</Link>
+            <h3>Jouez les meilleurs parcours de Majorque à mes côtés.</h3>
+            <p>Des journées privées à Son Gual, Alcanada et au-delà. Tout est arrangé. Coaching sur le parcours tout au long.</p>
+            <Link href="/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Voir les Expériences &rarr;</Link>
           </div>
         </aside>
       </div>
@@ -123,12 +123,12 @@ export default function About() {
 
       <section className="cta-final">
         <div className="cta-final__left reveal">
-          <p className="eyebrow eyebrow--gold">PrÃªt Ã  jouer?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>Un Professionnel PGA AvancÃ©. Une Ã®le de golf exceptionnelle. Votre ronde.</h2>
-          <p>Dites-moi vos dates, votre handicap et ce que vous cherchez. Je construirai la journÃ©e autour de vous.</p>
+          <p className="eyebrow eyebrow--gold">Prêt à jouer?</p>
+          <h2 className="serif-display" style={{color:'#fff'}}>Un Professionnel PGA Avancé. Une île de golf exceptionnelle. Votre ronde.</h2>
+          <p>Dites-moi vos dates, votre handicap et ce que vous cherchez. Je construirai la journée autour de vous.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Voir les ExpÃ©riences &rarr;</Link>
+          <Link href="/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Voir les Expériences &rarr;</Link>
           <Link href="/contact" className="btn btn--outline-white">Nous contacter</Link>
         </div>
       </section>

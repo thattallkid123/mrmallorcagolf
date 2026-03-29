@@ -1,26 +1,26 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Mallorca Golfgids â€” Baanbeoordelingen & tips',
-  description: 'Eerlijke golfgidsen voor Mallorca van een PGA Professional. Baanbeoordelingen, greenfees en reisplanning â€” bijgewerkt voor 2026.',
+  title: 'Mallorca Golfgids — Baanbeoordelingen & tips',
+  description: 'Eerlijke golfgidsen voor Mallorca van een PGA Professional. Baanbeoordelingen, greenfees en reisplanning — bijgewerkt voor 2026.',
   alternates: { canonical: 'https://mrmallorcagolf.com/nl/guides' },
 }
 
 const liveGuides = [
-  { slug: 'son-gual-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Son Gual Golf Mallorca â€” Eerlijke beoordeling van een PGA Professional (2026)', intro: 'Mijn meest gespeelde baan op het eiland. De wind, de greens, de slothole â€” en waarom Obama en Nadal blijven terugkomen.', readTime: '7 min', keywords: 'Championship Â· Par 72 Â· â‚¬80â€“165 Â· Handicap vereist' },
-  { slug: 'alcanada-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Club de Golf Alcanada â€” Eerlijke beoordeling van een PGA Professional (2026)', intro: 'De baan waar ik mensen naartoe breng als ik wil dat ze met een verhaal thuiskomen. De vuurtoren verandert alles.', readTime: '7 min', keywords: 'Kustbaan Â· Par 72 Â· â‚¬115â€“220 Â· Rolex Challenge Tour Grand Final' },
-  { slug: 'santa-ponsa-1-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Golf Santa Ponsa 1, Mallorca â€” Eerlijke beoordeling van een PGA Professional (2026)', intro: 'Een van de langste banen in Europa, DP World Tour-geschiedenis en een baan die je vertrouwen met de driver Ã©cht teruggeeft.', readTime: '6 min', keywords: 'Championship Â· Par 72 Â· â‚¬77â€“126 Â· Toegankelijk voor bezoekers' },
+  { slug: 'son-gual-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Son Gual Golf Mallorca — Eerlijke beoordeling van een PGA Professional (2026)', intro: 'Mijn meest gespeelde baan op het eiland. De wind, de greens, de slothole — en waarom Obama en Nadal blijven terugkomen.', readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap vereist' },
+  { slug: 'alcanada-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Club de Golf Alcanada — Eerlijke beoordeling van een PGA Professional (2026)', intro: 'De baan waar ik mensen naartoe breng als ik wil dat ze met een verhaal thuiskomen. De vuurtoren verandert alles.', readTime: '7 min', keywords: 'Kustbaan · Par 72 · €115–220 · Rolex Challenge Tour Grand Final' },
+  { slug: 'santa-ponsa-1-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Golf Santa Ponsa 1, Mallorca — Eerlijke beoordeling van een PGA Professional (2026)', intro: 'Een van de langste banen in Europa, DP World Tour-geschiedenis en een baan die je vertrouwen met de driver écht teruggeeft.', readTime: '6 min', keywords: 'Championship · Par 72 · €77–126 · Toegankelijk voor bezoekers' },
 ]
 
 const comingSoonGuides = [
-  { slug: 'a-day-at-son-gual', badge: 'De Ervaring', badgeGold: false, title: 'Een dag op Son Gual met een PGA Professional', intro: 'Wat er werkelijk gebeurt als je een volledige dag doorbrengt op het mooiste parcours van Mallorca met een coach die het bijna elke week speelt.', readTime: '5 min', keywords: 'Son Gual Â· Spelen met een Pro Â· Dagervaring' },
-  { slug: 'best-golf-courses-mallorca', badge: 'Gids', badgeGold: false, title: 'De beste golfbanen van Mallorca â€” Eerlijke ranking van een PGA Professional', intro: 'TweeÃ«ntwintig banen op het eiland. Zo zou ik ze rangschikken voor een bezoeker met beperkte tijd en hoge verwachtingen.', readTime: '8 min', keywords: 'Alle niveaus Â· Greenfees vergeleken Â· Bijgewerkt 2026' },
-  { slug: 'is-mallorca-good-for-golf', badge: 'Gids', badgeGold: false, title: 'Is Mallorca goed voor golf? Een eerlijk antwoord van iemand die hier woont', intro: 'De ongefiltreerde versie â€” wat het eiland beter doet dan Portugal, waar het tekortschiet en voor wie het geschikt is.', readTime: '5 min', keywords: 'Mallorca vs Portugal Â· Kwaliteit banen Â· Alle niveaus' },
-  { slug: 'best-time-play-golf-mallorca', badge: 'Gids', badgeGold: false, title: 'De beste tijd om golf te spelen op Mallorca â€” Maand voor maand', intro: 'Oktober is de maand die ik zou kiezen. Dit is waarom, en wat elke maand werkelijk biedt qua weer, prijs en drukte.', readTime: '6 min', keywords: 'Weer Â· Greenfees per seizoen Â· Drukte' },
-  { slug: 'golf-cost-mallorca', badge: 'Gids', badgeGold: false, title: 'Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten', intro: 'Het volledige beeld van wat een golfreis hier werkelijk kost â€” greenfees, verhuur, caddies en waar je kunt besparen zonder in te leveren.', readTime: '5 min', keywords: 'â‚¬77â€“220 greenfees Â· Verhuur Â· Caddies Â· Prijzen 2026' },
-  { slug: 'golf-trip-planning-mallorca', badge: 'Gids', badgeGold: false, title: 'Een golfreis naar Mallorca plannen â€” Alles wat je moet weten', intro: 'Vluchten, banen, verblijf bij de golf, hoe je je verplaatst. De praktische gids die ik had willen hebben toen ik hier aankwam.', readTime: '7 min', keywords: 'Reisplanning Â· Verblijf Â· Vervoer' },
+  { slug: 'a-day-at-son-gual', badge: 'De Ervaring', badgeGold: false, title: 'Een dag op Son Gual met een PGA Professional', intro: 'Wat er werkelijk gebeurt als je een volledige dag doorbrengt op het mooiste parcours van Mallorca met een coach die het bijna elke week speelt.', readTime: '5 min', keywords: 'Son Gual · Spelen met een Pro · Dagervaring' },
+  { slug: 'best-golf-courses-mallorca', badge: 'Gids', badgeGold: false, title: 'De beste golfbanen van Mallorca — Eerlijke ranking van een PGA Professional', intro: 'Tweeëntwintig banen op het eiland. Zo zou ik ze rangschikken voor een bezoeker met beperkte tijd en hoge verwachtingen.', readTime: '8 min', keywords: 'Alle niveaus · Greenfees vergeleken · Bijgewerkt 2026' },
+  { slug: 'is-mallorca-good-for-golf', badge: 'Gids', badgeGold: false, title: 'Is Mallorca goed voor golf? Een eerlijk antwoord van iemand die hier woont', intro: 'De ongefiltreerde versie — wat het eiland beter doet dan Portugal, waar het tekortschiet en voor wie het geschikt is.', readTime: '5 min', keywords: 'Mallorca vs Portugal · Kwaliteit banen · Alle niveaus' },
+  { slug: 'best-time-play-golf-mallorca', badge: 'Gids', badgeGold: false, title: 'De beste tijd om golf te spelen op Mallorca — Maand voor maand', intro: 'Oktober is de maand die ik zou kiezen. Dit is waarom, en wat elke maand werkelijk biedt qua weer, prijs en drukte.', readTime: '6 min', keywords: 'Weer · Greenfees per seizoen · Drukte' },
+  { slug: 'golf-cost-mallorca', badge: 'Gids', badgeGold: false, title: 'Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten', intro: 'Het volledige beeld van wat een golfreis hier werkelijk kost — greenfees, verhuur, caddies en waar je kunt besparen zonder in te leveren.', readTime: '5 min', keywords: '€77–220 greenfees · Verhuur · Caddies · Prijzen 2026' },
+  { slug: 'golf-trip-planning-mallorca', badge: 'Gids', badgeGold: false, title: 'Een golfreis naar Mallorca plannen — Alles wat je moet weten', intro: 'Vluchten, banen, verblijf bij de golf, hoe je je verplaatst. De praktische gids die ik had willen hebben toen ik hier aankwam.', readTime: '7 min', keywords: 'Reisplanning · Verblijf · Vervoer' },
 ]
 
 export default function GuidesIndex_NL() {
@@ -41,11 +41,11 @@ export default function GuidesIndex_NL() {
           </p>
           <h1 dangerouslySetInnerHTML={{__html: 'Golf op Mallorca.<br />Eerlijke gidsen.'}} />
           <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
-            Baanbeoordelingen, reisplanning en greenfees â€” geschreven door een PGA Professional die hier elke week speelt.
+            Baanbeoordelingen, reisplanning en greenfees — geschreven door een PGA Professional die hier elke week speelt.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
             <span className="page-hero__tag">Bijgewerkt 2026</span>
-            <span className="page-hero__tag page-hero__tag--gold">â˜… Beoordelingen uit eerste hand</span>
+            <span className="page-hero__tag page-hero__tag--gold">★ Beoordelingen uit eerste hand</span>
             <span className="page-hero__tag">PGA Professional</span>
           </div>
         </div>
@@ -107,11 +107,11 @@ export default function GuidesIndex_NL() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Klaar om te spelen?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>Een privÃ©ronde op een van deze banen, met een PGA Professional naast je.</h2>
+          <h2 className="serif-display" style={{color:'#fff'}}>Een privéronde op een van deze banen, met een PGA Professional naast je.</h2>
           <p>Vertel me je data en wat je zoekt. Ik reageer persoonlijk binnen 24 uur.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/nl/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Bekijk de ervaringen â†’</Link>
+          <Link href="/nl/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Bekijk de ervaringen →</Link>
           <Link href="/nl/contact" className="btn btn--outline-white">Neem contact op</Link>
         </div>
       </section>

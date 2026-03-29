@@ -1,10 +1,10 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
-  title: 'ä¸ŽèŒä¸šçƒæ‰‹åŒåœº â€” é©¬ç•¥å¡å²›ç§äººé«˜å°”å¤«æ—¥',
-  description: 'åœ¨é©¬ç•¥å¡å²›ä¸Žè‹±å›½PGAé«˜çº§èŒä¸šæ•™ç»ƒAndy GriffithsåŒæ‰“ä¸€è½®ç§äººé«˜å°”å¤«ã€‚çƒåœºå®žåœ°æŒ‡å¯¼ï¼Œå…¨å¤©å…¨ç¨‹å®‰æŽ’ã€‚æ¯äººâ‚¬350èµ·ã€‚',
+  title: '与职业球手同场 — 马略卡岛私人高尔夫日',
+  description: '在马略卡岛与英国PGA高级职业教练Andy Griffiths同打一轮私人高尔夫。球场实地指导，全天全程安排。每人€350起。',
   alternates: { canonical: 'https://mrmallorcagolf.com/zh/play-with-a-pro' },
 }
 
@@ -21,14 +21,14 @@ export default function PlayWithAPro_ZH() {
 }}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
-            <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/zh" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>é¦–é¡µ</Link> &nbsp;/&nbsp; <span>ä¸ŽèŒä¸šçƒæ‰‹åŒåœº</span></p>
-            <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>ç§äººé«˜å°”å¤«æ—¥ Â· é©¬ç•¥å¡å²›</p>
-            <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>åœ¨é©¬ç•¥å¡å²›çš„ç§äººé«˜å°”å¤«æ—¥ã€‚</h1>
-            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>è¿™ä¸æ˜¯ä¸€å ‚è¯¾ï¼Œä¹Ÿä¸æ˜¯æ™®é€šçš„ä¸€è½®çƒã€‚è€Œæ˜¯åœ¨å²›ä¸Šæœ€é¡¶çº§çš„çƒåœºä¹‹ä¸€ï¼Œä¸Žä¸€ä½æ›¾åœ¨ä¸‰å¤§æ´²æœ€é«˜çº§åˆ«èµ›åœºæ‰§æ•™çš„PGAèŒä¸šæ•™ç»ƒå…±åº¦çš„ç§äººä¸€å¤©ã€‚</p>
-            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>æ¯äººâ‚¬350 + æžœå²­è´¹</p>
+            <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/zh" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>首页</Link> &nbsp;/&nbsp; <span>与职业球手同场</span></p>
+            <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>私人高尔夫日 · 马略卡岛</p>
+            <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>在马略卡岛的私人高尔夫日。</h1>
+            <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>这不是一堂课，也不是普通的一轮球。而是在岛上最顶级的球场之一，与一位曾在三大洲最高级别赛场执教的PGA职业教练共度的私人一天。</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',color:'var(--gold-light)',marginBottom:'2rem'}}>每人€350 + 果岭费</p>
             <div style={{display:'flex',gap:14,flexWrap:'wrap'}}>
-              <Link href="/zh/contact" className="btn btn--gold">é¢„è®¢æ‚¨çš„é«˜å°”å¤«æ—¥ &rarr;</Link>
-              <a href="#packages" className="btn btn--outline-white">æŸ¥çœ‹æ–¹æ¡ˆ</a>
+              <Link href="/zh/contact" className="btn btn--gold">预订您的高尔夫日 &rarr;</Link>
+              <a href="#packages" className="btn btn--outline-white">查看方案</a>
             </div>
           </div>
         </div>
@@ -36,30 +36,30 @@ export default function PlayWithAPro_ZH() {
 
       <section className="pwap-day">
         <div className="pwap-day__left reveal">
-          <p className="eyebrow">è¿™ä¸€å¤©åŒ…å«ä»€ä¹ˆ</p>
-          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'1.5rem'}}>åœ¨æ‚¨åˆ°è¾¾ä¹‹å‰ï¼Œæˆ‘å·²ç»çŸ¥é“è¯¥å…³æ³¨ä»€ä¹ˆã€‚</h2>
-          <p>åœ¨æ‚¨åˆ°è¾¾ä¹‹å‰ï¼Œæ‚¨éœ€è¦å¡«å†™ä¸€ä»½ç®€çŸ­é—®å·ã€‚æ‚¨çš„å›°æƒ‘æ‰€åœ¨ï¼Œå·®è·ä½•å¤„ã€‚å½“æˆ‘ä»¬èµ°åˆ°ç¬¬ä¸€ä¸ªå‘çƒå°æ—¶ï¼Œæˆ‘å·²ç»çŸ¥é“è¯¥å…³æ³¨ä»€ä¹ˆäº†ã€‚</p>
-          <p>æ‰“çƒè¿‡ç¨‹ä¸­ï¼ŒæŒ‡å¯¼è‡ªç„¶èžå…¥å…¶ä¸­â€”â€”ä¸æ˜¯æŒç»­è·‘åŠ¨å¼çš„è¯„è®ºï¼Œè€Œæ˜¯åœ¨æ­£ç¡®çš„æ—¶æœºç»™å‡ºæ­£ç¡®çš„è§‚å¯Ÿã€‚</p>
-          <p>æˆ‘æ›¾åœ¨è¦æ±‚ä¸¥æ ¼ã€è¿›æ­¥å¯é‡åŒ–çš„çŽ¯å¢ƒä¸­æ‰§æ•™â€”â€”ä¸­å›½å›½å®¶é˜Ÿçƒå‘˜ï¼Œä»¥åŠéå¸ƒäºšæ´²çš„é«˜å°”å¤«ç‹‚çƒ­è€…ã€‚</p>
-          <div className="pull-quote"><p>&ldquo;å¤§å¤šæ•°çƒæ‰‹ä¼šå‘çŽ°ï¼šä»–ä»¬ç¦»å¼€æ—¶æ‰“å¾—æ˜Žæ˜¾æ›´å¥½ã€æ›´è‡ªä¿¡â€”â€”å¹¶ä¸”çŸ¥é“åŽŸå› ï¼Œè€Œè¿™æ­£æ˜¯ç•™ä¸‹æ¥çš„éƒ¨åˆ†ã€‚&rdquo;</p></div>
-          <p>åˆé¤æ—¶çš„å¤ç›˜ä¸æ˜¯æ€»ç»“ã€‚è€Œæ˜¯è®©æ•´ä¸ªä¸€å¤©éƒ½æœ‰æ„ä¹‰çš„é‚£åœºå¯¹è¯ã€‚</p>
+          <p className="eyebrow">这一天包含什么</p>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'1.5rem'}}>在您到达之前，我已经知道该关注什么。</h2>
+          <p>在您到达之前，您需要填写一份简短问卷。您的困惑所在，差距何处。当我们走到第一个发球台时，我已经知道该关注什么了。</p>
+          <p>打球过程中，指导自然融入其中——不是持续跑动式的评论，而是在正确的时机给出正确的观察。</p>
+          <p>我曾在要求严格、进步可量化的环境中执教——中国国家队球员，以及遍布亚洲的高尔夫狂热者。</p>
+          <div className="pull-quote"><p>&ldquo;大多数球手会发现：他们离开时打得明显更好、更自信——并且知道原因，而这正是留下来的部分。&rdquo;</p></div>
+          <p>午餐时的复盘不是总结。而是让整个一天都有意义的那场对话。</p>
           <a href="/questionnaire.html" target="_blank" rel="noopener" style={{display:'block',marginTop:'2rem',padding:'20px 24px',border:'1px solid rgba(184,151,60,.3)',background:'rgba(184,151,60,.05)',textDecoration:'none',color:'var(--deep)'}}>
-            <p style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:8}}>å·²é¢„è®¢ï¼Ÿ</p>
-            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,margin:'0 0 4px'}}>å¡«å†™æ‚¨çš„èµ›å‰é—®å· &rarr;</p>
-            <p style={{fontSize:'0.85rem',color:'var(--taupe)',margin:0}}>ä»…éœ€3åˆ†é’Ÿï¼Œå¸®åŠ©æˆ‘åœ¨å¼€çƒå‰äº†è§£æ‚¨çš„éœ€æ±‚ï¼Œä¸ºæ‚¨é‡èº«å®šåˆ¶å½“å¤©ä½“éªŒã€‚</p>
+            <p style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--gold)',marginBottom:8}}>已预订？</p>
+            <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,margin:'0 0 4px'}}>填写您的赛前问卷 &rarr;</p>
+            <p style={{fontSize:'0.85rem',color:'var(--taupe)',margin:0}}>仅需3分钟，帮助我在开球前了解您的需求，为您量身定制当天体验。</p>
           </a>
         </div>
         <div className="pwap-day__right reveal">
           <div className="included">
-            <h3>åŒ…å«å†…å®¹</h3>
+            <h3>包含内容</h3>
             <ul className="included-list">
-              <li className="included-item"><span className="included-dot"></span><p><strong>çƒåœºæŽ¨è</strong>æ ¹æ®æ‚¨çš„çƒæŠ€ã€å·®ç‚¹å’ŒæœŸæœ›é‡èº«åŒ¹é…</p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>å¼€çƒæ—¶é—´</strong>å·²é¢„è®¢ï¼Œå…¨ç¨‹å®‰æŽ’</p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>èµ›å‰ç®€æŠ¥</strong>äº†è§£çƒåœºï¼Œæ˜Žç¡®å…³æ³¨ç‚¹</p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>ä¸ŽAndyåŒæ‰“18æ´ž</strong>ä½œä¸ºæ‚¨çš„çƒä¼´åŒåœºç«žæŠ€</p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>çƒåœºå®žåœ°æŒ‡å¯¼</strong>çƒåœºç®¡ç†ã€é€‰æ†ã€å†³ç­–</p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>èµ›åŽå¤ç›˜</strong>è¿›æ­¥ä¹‹å¤„ï¼Œå¾…æå‡æ–¹å‘</p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>åˆé¤</strong>åœ¨çƒåœºé¤åŽ…æˆ–ç²¾é€‰é¤åŽ…ï¼ˆæ‹›ç‰Œå…¨æ—¥ä½“éªŒï¼‰</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>球场推荐</strong>根据您的球技、差点和期望量身匹配</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>开球时间</strong>已预订，全程安排</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>赛前简报</strong>了解球场，明确关注点</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>与Andy同打18洞</strong>作为您的球伴同场竞技</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>球场实地指导</strong>球场管理、选杆、决策</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>赛后复盘</strong>进步之处，待提升方向</p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>午餐</strong>在球场餐厅或精选餐厅（招牌全日体验）</p></li>
             </ul>
           </div>
         </div>
@@ -67,103 +67,103 @@ export default function PlayWithAPro_ZH() {
 
       <section className="pwap-courses">
         <div className="courses-intro reveal">
-          <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>é€‰æ‹©å“ªä¸ªçƒåœºï¼Ÿ</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>çƒåœºå§‹ç»ˆä¸Žæ‚¨å…±åŒé€‰æ‹©ã€‚</h2>
-          <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>æœ‰åˆå­¦è€…çš„å›¢ä½“ã€è¾ƒçŸ­çš„åŠæ—¥â€”â€”æ€»æœ‰æ›´åˆé€‚çš„çƒåœºï¼Œæˆ‘ä¼šç›´æŽ¥å‘Šè¯‰æ‚¨å“ªä¸ªæ›´é€‚åˆã€‚éƒ¨åˆ†ä¼šå‘˜åˆ¶çƒåœºæ— æ³•è‡ªè¡Œé¢„è®¢â€”â€”å¯ä¸ºå®¢æˆ·å®‰æŽ’ã€‚</p>
+          <p className="eyebrow" style={{color:'rgba(255,255,255,.45)'}}>选择哪个球场？</p>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem',marginBottom:'1.25rem',fontSize:'clamp(1.8rem,3vw,2.5rem)'}}>球场始终与您共同选择。</h2>
+          <p style={{color:'rgba(255,255,255,.55)',lineHeight:1.8,maxWidth:680}}>有初学者的团体、较短的半日——总有更合适的球场，我会直接告诉您哪个更适合。部分会员制球场无法自行预订——可为客户安排。</p>
         </div>
       </section>
 
       <section className="pwap-who">
         <div className="reveal">
-          <p className="eyebrow">é€‚åˆå“ªäº›äºº</p>
-          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'2.5rem'}}>ä½“éªŒä¼šæ ¹æ®æ‚¨çš„çƒæŠ€é‡èº«è°ƒæ•´ã€‚</h2>
+          <p className="eyebrow">适合哪些人</p>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.75rem',marginBottom:'2.5rem'}}>体验会根据您的球技量身调整。</h2>
         </div>
         <div className="who-grid">
-          <div className="who-card reveal"><span className="who-card__icon">01</span><h3>æ¥è®¿é«˜å°”å¤«çƒæ‰‹</h3><p>å¸Œæœ›é©¬ç•¥å¡å²›ä¹‹æ—…çœŸæ­£éš¾å¿˜ï¼Œè€Œä¸åªæ˜¯åœ¨çº¿é¢„è®¢ä¸€ä¸ªå¼€çƒæ—¶é—´ã€‚</p></div>
-          <div className="who-card reveal reveal-delay-1"><span className="who-card__icon">02</span><h3>ç»ƒä¹ åœºä¸Žçƒåœºçš„è½å·®</h3><p>ç»ƒä¹ æˆç»©æ— æ³•åœ¨çƒåœºé‡çŽ°ã€‚é—®é¢˜å‡ ä¹Žæ€»æ˜¯çƒåœºç®¡ç†ï¼Œè€ŒéžæŒ¥æ†ã€‚</p></div>
-          <div className="who-card reveal reveal-delay-2"><span className="who-card__icon">03</span><h3>ä¼ä¸šé«˜ç®¡å›¢ä½“</h3><p>å•†åŠ¡å›¢ä½“ã€æ¥å²›é«˜ç®¡ï¼Œä»¥åŠå¸Œæœ›æ‹¥æœ‰å…¨ç¨‹å®‰æŽ’çš„é«˜ç«¯ä¸€å¤©çš„äººå£«ã€‚</p></div>
-          <div className="who-card reveal"><span className="who-card__icon">04</span><h3>åˆå­¦è€…</h3><p>å¸Œæœ›æœ‰ä¸“ä¸šé™ªä¼´ã€æ²¡æœ‰åŽ‹åŠ›çš„ä¼‘é—²çƒæ‰‹ã€‚è¿™ä¸€å¤©ä»Žä¸å›´ç»•æˆç»©è½¬ã€‚</p></div>
-          <div className="who-card reveal reveal-delay-1"><span className="who-card__icon">05</span><h3>å¸¸é©»çƒæ‰‹</h3><p>åœ¨å²›ä¸Šå±…ä½ï¼Œå¯»æ±‚ä¸Žæ‰“åŒæ ·çƒåœºçš„èŒä¸šæ•™ç»ƒè¿›è¡Œå®šæœŸè®­ç»ƒã€‚</p></div>
-          <div className="who-card reveal reveal-delay-2"><span className="who-card__icon">06</span><h3>å¸Œæœ›èŽ·å¾—æ›´å¤šçš„äºº</h3><p>å”¯ä¸€çš„è¦æ±‚æ˜¯æƒ³è¦ä¸€æ¬¡çœŸæ­£ä¸Žä¼—ä¸åŒçš„é«˜å°”å¤«ä½“éªŒã€‚</p></div>
+          <div className="who-card reveal"><span className="who-card__icon">01</span><h3>来访高尔夫球手</h3><p>希望马略卡岛之旅真正难忘，而不只是在线预订一个开球时间。</p></div>
+          <div className="who-card reveal reveal-delay-1"><span className="who-card__icon">02</span><h3>练习场与球场的落差</h3><p>练习成绩无法在球场重现。问题几乎总是球场管理，而非挥杆。</p></div>
+          <div className="who-card reveal reveal-delay-2"><span className="who-card__icon">03</span><h3>企业高管团体</h3><p>商务团体、来岛高管，以及希望拥有全程安排的高端一天的人士。</p></div>
+          <div className="who-card reveal"><span className="who-card__icon">04</span><h3>初学者</h3><p>希望有专业陪伴、没有压力的休闲球手。这一天从不围绕成绩转。</p></div>
+          <div className="who-card reveal reveal-delay-1"><span className="who-card__icon">05</span><h3>常驻球手</h3><p>在岛上居住，寻求与打同样球场的职业教练进行定期训练。</p></div>
+          <div className="who-card reveal reveal-delay-2"><span className="who-card__icon">06</span><h3>希望获得更多的人</h3><p>唯一的要求是想要一次真正与众不同的高尔夫体验。</p></div>
         </div>
       </section>
 
       <section className="pwap-testimonials">
         <div className="reveal" style={{textAlign:'center',marginBottom:'3rem'}}>
-          <p className="eyebrow" style={{color:'rgba(255,255,255,.35)'}}>çƒå‘˜çœŸå®žè¯„ä»·</p>
-          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem'}}>ä»–ä»¬çš„äº²èº«æ„Ÿå—ã€‚</h2>
+          <p className="eyebrow" style={{color:'rgba(255,255,255,.35)'}}>球员真实评价</p>
+          <h2 className="serif-display" style={{color:'#fff',marginTop:'.75rem'}}>他们的亲身感受。</h2>
         </div>
         <div className="pwap-testimonials__grid">
-          <div className="testimonial reveal"><p>&ldquo;ä¸ŽAndyæ‰“çƒæ˜¯ä¸€æ¬¡éžå‡¡çš„ä½“éªŒã€‚ä»–æ‹¥æœ‰æ— ä¸Žä¼¦æ¯”çš„æ´žå¯ŸåŠ›ï¼Œä¼ æŽˆæ–¹å¼æ—¢ç»†è…»åˆè´´å¿ƒã€‚ä»…ä»…18æ´žä¹‹åŽï¼Œæˆ‘å‘çŽ°äº†è‡ªå·±æ½œåŠ›çš„æ–°é«˜åº¦ã€‚&rdquo;</p><span className="testimonial__author">â€” Jo</span></div>
-          <div className="testimonial reveal reveal-delay-1"><p>&ldquo;å¯¹æ¯ä¸€æ†èƒŒåŽæ€è€ƒçš„ç†è§£ï¼Œæžå¤§æå‡äº†æˆ‘çš„å†³ç­–èƒ½åŠ›ã€‚æœ€ä»¤æˆ‘å°è±¡æ·±åˆ»çš„çž¬é—´ï¼šçœ‹ç€Andyç”¨ä¸‰å·é“è¶Šè¿‡æœ‰æ ‘æœ¨çš„å³æ›²é“ç‹—è…¿ï¼Œ220ç±³ç²¾å‡†è½åœ¨æžœå²­ä¸Šã€‚&rdquo;</p><span className="testimonial__author">â€” Finlay</span></div>
-          <div className="testimonial reveal reveal-delay-2"><p>&ldquo;Andyå½»åº•æ”¹å˜äº†æˆ‘å¯¹çƒåœºç®¡ç†çš„è®¤çŸ¥ã€‚åœ¨Son Gualä¸Žä»–åŒæ‰“18æ´žåŽï¼Œæˆ‘æ‰“å‡ºäº†é‚£é‡Œæœ€å¥½çš„æˆç»©ï¼Œå¹¶çœŸæ­£ç†è§£äº†åŽŸå› ã€‚&rdquo;</p><span className="testimonial__author">â€” Adam</span></div>
+          <div className="testimonial reveal"><p>&ldquo;与Andy打球是一次非凡的体验。他拥有无与伦比的洞察力，传授方式既细腻又贴心。仅仅18洞之后，我发现了自己潜力的新高度。&rdquo;</p><span className="testimonial__author">— Jo</span></div>
+          <div className="testimonial reveal reveal-delay-1"><p>&ldquo;对每一杆背后思考的理解，极大提升了我的决策能力。最令我印象深刻的瞬间：看着Andy用三号铁越过有树木的右曲道狗腿，220米精准落在果岭上。&rdquo;</p><span className="testimonial__author">— Finlay</span></div>
+          <div className="testimonial reveal reveal-delay-2"><p>&ldquo;Andy彻底改变了我对球场管理的认知。在Son Gual与他同打18洞后，我打出了那里最好的成绩，并真正理解了原因。&rdquo;</p><span className="testimonial__author">— Adam</span></div>
         </div>
       </section>
 
       <section className="pwap-packages" id="packages">
         <div className="reveal">
-          <p className="eyebrow">ä½“éªŒæ–¹æ¡ˆ</p>
-          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.5rem',marginBottom:'1rem'}}>ä¸‰ä¸ªæ–¹æ¡ˆã€‚å…¨éƒ¨ç§äººå®šåˆ¶ï¼Œå…¨ç¨‹äº²è‡ªé™ªåŒã€‚</h2>
-          <p style={{fontSize:'1rem',color:'var(--taupe)',lineHeight:1.8,maxWidth:560,marginBottom:'3rem'}}>åŒºåˆ«åœ¨äºŽè¿™ä¸€å¤©çš„å®Œæ•´ç¨‹åº¦ã€‚ä¸‰ä¸ªæ–¹æ¡ˆå‡æä¾›ç›¸åŒæ°´å‡†çš„çƒåœºä¸“ä¸šæŒ‡å¯¼ã€‚</p>
+          <p className="eyebrow">体验方案</p>
+          <h2 className="serif-display" style={{fontSize:'clamp(1.8rem,3vw,2.5rem)',color:'var(--deep)',marginTop:'.5rem',marginBottom:'1rem'}}>三个方案。全部私人定制，全程亲自陪同。</h2>
+          <p style={{fontSize:'1rem',color:'var(--taupe)',lineHeight:1.8,maxWidth:560,marginBottom:'3rem'}}>区别在于这一天的完整程度。三个方案均提供相同水准的球场专业指导。</p>
         </div>
         <div className="pricing-grid">
           <div className="tier reveal">
-            <p className="tier__name-small">é©¬ç•¥å¡ç»å…¸ä¹‹æ—…</p>
-            <h3 className="tier__name">ä¸ŽèŒä¸šçƒæ‰‹åŒåœº</h3>
-            <p className="tier__price">æ¯äººâ‚¬350 + æžœå²­è´¹</p>
+            <p className="tier__name-small">马略卡经典之旅</p>
+            <h3 className="tier__name">与职业球手同场</h3>
+            <p className="tier__price">每人€350 + 果岭费</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
-              <li>æ ¹æ®æ‚¨çš„çƒæŠ€é‡èº«æŽ¨èçƒåœº</li>
-              <li>å¼€çƒæ—¶é—´é¢„è®¢åŠå…¨ç¨‹å®‰æŽ’</li>
-              <li>èµ›å‰ç®€æŠ¥ä¸Žçƒ­èº«</li>
-              <li>ä¸ŽAndyåŒæ‰“18æ´ž</li>
-              <li>å…¨ç¨‹çƒåœºå®žåœ°æŒ‡å¯¼</li>
-              <li>èµ›åŽå¤ç›˜</li>
+              <li>根据您的球技量身推荐球场</li>
+              <li>开球时间预订及全程安排</li>
+              <li>赛前简报与热身</li>
+              <li>与Andy同打18洞</li>
+              <li>全程球场实地指导</li>
+              <li>赛后复盘</li>
             </ul>
-            <Link href="/zh/contact" className="tier__btn">ç«‹å³å’¨è¯¢ &rarr;</Link>
+            <Link href="/zh/contact" className="tier__btn">立即咨询 &rarr;</Link>
           </div>
           <div className="tier tier--feature reveal">
-            <p className="tier__name-small">æ‹›ç‰Œå…¨æ—¥ä½“éªŒ</p>
-            <h3 className="tier__name">å…¨ç¨‹é™ªåŒé«˜å°”å¤«æ—¥</h3>
-            <p className="tier__price">æ¯äººèµ·ä»·â‚¬450 + æžœå²­è´¹</p>
+            <p className="tier__name-small">招牌全日体验</p>
+            <h3 className="tier__name">全程陪同高尔夫日</h3>
+            <p className="tier__price">每人起价€450 + 果岭费</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
-              <li>åŒ…å«é©¬ç•¥å¡ç»å…¸ä¹‹æ—…å…¨éƒ¨å†…å®¹</li>
-              <li>Son Gualæˆ–Alcanada</li>
-              <li>çƒåœºé¤åŽ…æ‚ é—²åˆé¤</li>
-              <li>ç²¾å¿ƒæŒ‘é€‰çš„æƒŠå–œç¤¼å“</li>
-              <li>ä»Žå®¹èŠ‚å¥â€”â€”å®Œæ•´çš„ä¸€å¤©</li>
+              <li>包含马略卡经典之旅全部内容</li>
+              <li>Son Gual或Alcanada</li>
+              <li>球场餐厅悠闲午餐</li>
+              <li>精心挑选的惊喜礼品</li>
+              <li>从容节奏——完整的一天</li>
             </ul>
-            <Link href="/zh/contact" className="tier__btn">ç«‹å³å’¨è¯¢ &rarr;</Link>
+            <Link href="/zh/contact" className="tier__btn">立即咨询 &rarr;</Link>
           </div>
           <div className="tier reveal">
-            <p className="tier__name-small">è‡³å°Šå®šåˆ¶ä½“éªŒ</p>
-            <h3 className="tier__name">é«˜å°”å¤«ç§äººå®šåˆ¶ä¹‹æ—…</h3>
-            <p className="tier__price">ä»·æ ¼é¢è®®</p>
+            <p className="tier__name-small">至尊定制体验</p>
+            <h3 className="tier__name">高尔夫私人定制之旅</h3>
+            <p className="tier__price">价格面议</p>
             <div className="tier__rule"></div>
             <ul className="tier__features">
-              <li>å¤šçƒåœºå…¨æ—¥æ¸¸æˆ–å®Œæ•´è¡Œç¨‹è§„åˆ’</li>
-              <li>å¸•å°”é©¬å‡ºå‘ç§äººä¸“è½¦</li>
-              <li>ç²¾é€‰é¤åŽ…æ™šå®´</li>
-              <li>åˆä½œåœºé¦†æ°´ç–—æˆ–æ¢å¤ç–—ç¨‹</li>
-              <li>å…¨ç¨‹ç¤¼å®¾åè°ƒæœåŠ¡</li>
-              <li>é€‚åˆå›¢ä½“ã€ä¼ä¸šåŠä¸ªæ€§åŒ–å®šåˆ¶éœ€æ±‚</li>
+              <li>多球场全日游或完整行程规划</li>
+              <li>帕尔马出发私人专车</li>
+              <li>精选餐厅晚宴</li>
+              <li>合作场馆水疗或恢复疗程</li>
+              <li>全程礼宾协调服务</li>
+              <li>适合团体、企业及个性化定制需求</li>
             </ul>
-            <Link href="/zh/contact" className="tier__btn">ç«‹å³å’¨è¯¢ &rarr;</Link>
+            <Link href="/zh/contact" className="tier__btn">立即咨询 &rarr;</Link>
           </div>
         </div>
       </section>
 
       <section className="cta-final">
         <div className="cta-final__left reveal">
-          <p className="eyebrow eyebrow--gold">å‡†å¤‡å¥½åœ¨é©¬ç•¥å¡å²›ç•…äº«é«˜å°”å¤«äº†å—ï¼Ÿ</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>è”ç³»æˆ‘ï¼Œè®©æˆ‘ä»¬å®‰æŽ’æ‚¨çš„ä¸“å±žä¸€å¤©ã€‚</h2>
-          <p>å‘Šè¯‰æˆ‘æ‚¨çš„æ—¥æœŸã€å·®ç‚¹ä»¥åŠæœŸæœ›ã€‚æˆ‘ä¼šäº²è‡ªå›žå¤â€”â€”é€šå¸¸åœ¨24å°æ—¶å†…ã€‚</p>
+          <p className="eyebrow eyebrow--gold">准备好在马略卡岛畅享高尔夫了吗？</p>
+          <h2 className="serif-display" style={{color:'#fff'}}>联系我，让我们安排您的专属一天。</h2>
+          <p>告诉我您的日期、差点以及期望。我会亲自回复——通常在24小时内。</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>é¢„è®¢æ‚¨çš„é«˜å°”å¤«æ—¥ &rarr;</Link>
-          <Link href="/zh/golf-courses" className="btn btn--outline-white">æŽ¢ç´¢çƒåœº</Link>
-          <a href="/questionnaire.html" target="_blank" rel="noopener" className="btn btn--outline-white">èµ›å‰é—®å· &rarr;</a>
+          <Link href="/zh/contact" className="btn btn--gold" style={{fontSize:11,padding:'15px 36px'}}>预订您的高尔夫日 &rarr;</Link>
+          <Link href="/zh/golf-courses" className="btn btn--outline-white">探索球场</Link>
+          <a href="/questionnaire.html" target="_blank" rel="noopener" className="btn btn--outline-white">赛前问卷 &rarr;</a>
         </div>
       </section>
     </PageLayout>

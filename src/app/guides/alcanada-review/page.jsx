@@ -1,10 +1,10 @@
-﻿import Image from 'next/image'
+import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
 
 export const metadata = {
-  title: "Club de Golf Alcanada â€” A PGA Professionalâ€™s Honest Review (2026)",
+  title: "Club de Golf Alcanada — A PGA Professional’s Honest Review (2026)",
   description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
   alternates: {
     canonical: "https://mrmallorcagolf.com/guides/alcanada-review",
@@ -16,15 +16,15 @@ export const metadata = {
   openGraph: {
     type: 'article',
     url: "https://mrmallorcagolf.com/guides/alcanada-review",
-    title: "Club de Golf Alcanada â€” A PGA Professionalâ€™s Honest Review (2026)",
+    title: "Club de Golf Alcanada — A PGA Professional’s Honest Review (2026)",
     description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
     publishedTime: '2026-03-01',
     authors: ['Andy Griffiths'],
-    images: [{ url: "https://mrmallorcagolf.com/images/alcanada-blog/alc-7.jpg", width: 1200, height: 630, alt: "Club de Golf Alcanada â€” A PGA Professionalâ€™s Honest Review (2026)" }],
+    images: [{ url: "https://mrmallorcagolf.com/images/alcanada-blog/alc-7.jpg", width: 1200, height: 630, alt: "Club de Golf Alcanada — A PGA Professional’s Honest Review (2026)" }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Club de Golf Alcanada â€” A PGA Professionalâ€™s Honest Review (2026)",
+    title: "Club de Golf Alcanada — A PGA Professional’s Honest Review (2026)",
     description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
     images: ["https://mrmallorcagolf.com/images/alcanada-blog/alc-7.jpg"],
   },
@@ -32,11 +32,11 @@ export const metadata = {
 
 const meta = {
   badge: 'Course Review', badgeGold: true, readTime: '7 min read', updated: 'March 2026',
-  title: "Club de Golf Alcanada â€” A PGA Professional's Honest Review (2026)",
+  title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)",
   intro: 'The course I take people to when I want them to come home with a story. The lighthouse changes everything.',
   related: [
     { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
-    { slug: 'son-gual-review', title: 'Son Gual Golf â€” Honest Review 2026' },
+    { slug: 'son-gual-review', title: 'Son Gual Golf — Honest Review 2026' },
     { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
     { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
   ],
@@ -60,8 +60,8 @@ export default function Post() {
 
         <PostImage
           src="/images/alcanada-blog/alc-7.jpg"
-          alt="Club de Golf Alcanada at golden hour â€” lighthouse and bay"
-          caption="Alcanada at golden hour. The lighthouse sits on its own island just off the coast â€” visible from 16 of the 18 holes."
+          alt="Club de Golf Alcanada at golden hour — lighthouse and bay"
+          caption="Alcanada at golden hour. The lighthouse sits on its own island just off the coast — visible from 16 of the 18 holes."
         />
 
         <p>Alcanada is the course I take people to when I want them to come home with a story. It might be the most memorable round on the island. The lighthouse changes everything.</p>
@@ -77,7 +77,7 @@ export default function Post() {
         />
 
         <h2>The Back Tees</h2>
-        <p>Standing on the elevated back tees is its own experience. You feel untouchable â€” so far from everything else that everyone below looks like a tiny dot. The lighthouse behind you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.</p>
+        <p>Standing on the elevated back tees is its own experience. You feel untouchable — so far from everything else that everyone below looks like a tiny dot. The lighthouse behind you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.</p>
 
         <div className="post-pull">
           <p>"Standing on the back tees at Alcanada is incredible. You feel untouchable. So far from the rest of the world. Everyone looks like a tiny dot and you're standing there, elevated, ready to hit driver somewhere into the abyss."</p>
@@ -100,16 +100,16 @@ export default function Post() {
         />
 
         <h2>The Rolex Challenge Tour Grand Final</h2>
-        <p>Alcanada hosts the Rolex Challenge Tour Grand Final â€” returning for its sixth time in October 2026. This is not a course dressed up for a tour event. It's a course that has always been worthy of one. Playing the same holes that decide a professional's card for the season is something you notice when you're standing on the tee.</p>
+        <p>Alcanada hosts the Rolex Challenge Tour Grand Final — returning for its sixth time in October 2026. This is not a course dressed up for a tour event. It's a course that has always been worthy of one. Playing the same holes that decide a professional's card for the season is something you notice when you're standing on the tee.</p>
 
         <PostImage
           src="/images/alcanada-blog/alc-1.jpg"
-          alt="Rolex Grand Final at Alcanada â€” hole 16"
+          alt="Rolex Grand Final at Alcanada — hole 16"
           caption="The Rolex Challenge Tour Grand Final at Alcanada. It returns for its sixth time in October 2026."
         />
 
         <h2>Design Pedigree</h2>
-        <p>Robert Trent Jones Jr.'s father designed Valderrama â€” the venue of the 1997 Ryder Cup â€” and Spyglass Hill at Pebble Beach. RTJ Jr. also designed Spring City Golf in Kunming, ranked China's number one course by Golf Digest. The lineage is genuine, and it shows in how Alcanada is routed â€” nothing feels arbitrary, everything uses the land.</p>
+        <p>Robert Trent Jones Jr.'s father designed Valderrama — the venue of the 1997 Ryder Cup — and Spyglass Hill at Pebble Beach. RTJ Jr. also designed Spring City Golf in Kunming, ranked China's number one course by Golf Digest. The lineage is genuine, and it shows in how Alcanada is routed — nothing feels arbitrary, everything uses the land.</p>
 
         <PostImage
           src="/images/alcanada-blog/alc-4.jpg"
@@ -118,19 +118,19 @@ export default function Post() {
         />
 
         <div className="post-fact">
-          <div className="post-fact__item"><span className="post-fact__val">â‚¬115â€“220</span><span className="post-fact__label">Green fee range 2026</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">€115–220</span><span className="post-fact__label">Green fee range 2026</span></div>
           <div className="post-fact__item"><span className="post-fact__val">7/10</span><span className="post-fact__label">Difficulty</span></div>
           <div className="post-fact__item"><span className="post-fact__val">58</span><span className="post-fact__label">Bunkers</span></div>
           <div className="post-fact__item"><span className="post-fact__val">55km</span><span className="post-fact__label">From Palma</span></div>
         </div>
 
         <h2>Practical Information</h2>
-        <p>Green fees 2026: â‚¬115 low season (January, December) to â‚¬220 peak (Marchâ€“May, Septemberâ€“October). Full seasonal breakdown at golf-alcanada.com. A daily golf licence (â‚¬3 per person) is required for non-Spanish Federation members.</p>
-        <p>Club hire: TaylorMade sets at â‚¬38 per 18 holes. Buggy â‚¬48, electric trolley â‚¬20. The Toptracer range is excellent for a proper warm-up â€” use it.</p>
-        <p>Location: Port d'AlcÃºdia, about 50 minutes north of Palma. Allow time and don't rush back.</p>
+        <p>Green fees 2026: €115 low season (January, December) to €220 peak (March–May, September–October). Full seasonal breakdown at golf-alcanada.com. A daily golf licence (€3 per person) is required for non-Spanish Federation members.</p>
+        <p>Club hire: TaylorMade sets at €38 per 18 holes. Buggy €48, electric trolley €20. The Toptracer range is excellent for a proper warm-up — use it.</p>
+        <p>Location: Port d'Alcúdia, about 50 minutes north of Palma. Allow time and don't rush back.</p>
 
         <h2>The Restaurant Terrace</h2>
-        <p>One of the best places on the island for a post-round lunch. The restaurant is run by Grupo Babuxa â€” the group behind the well-regarded Casa Gallega restaurants in Palma â€” Mediterranean cooking with a sea terrace directly facing the Alcanada lighthouse. Their set lunch runs around â‚¬30 per person. Factor it in â€” this is not a place to rush away from.</p>
+        <p>One of the best places on the island for a post-round lunch. The restaurant is run by Grupo Babuxa — the group behind the well-regarded Casa Gallega restaurants in Palma — Mediterranean cooking with a sea terrace directly facing the Alcanada lighthouse. Their set lunch runs around €30 per person. Factor it in — this is not a place to rush away from.</p>
 
         <PostImage
           src="/images/alcanada-blog/alc-hero.jpg"
@@ -143,7 +143,7 @@ export default function Post() {
 
         <div className="post-cta">
           <p>Alcanada is one of my two anchor courses for play-with-a-pro days. Want to play it properly?</p>
-          <a href="/play-with-a-pro">See the play-with-a-pro experience â†’</a>
+          <a href="/play-with-a-pro">See the play-with-a-pro experience →</a>
         </div>
 
       </PostLayout>

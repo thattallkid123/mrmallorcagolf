@@ -1,11 +1,11 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import GolfCoursesClient from '../../golf-courses/GolfCoursesClient'
 
 export const metadata = {
-  title: 'Mallorca Golfgids 2026 â€” Alle banen op het eiland',
-  description: 'De complete gids voor golf op Mallorca â€” alle 22 banen, greenfees, moeilijkheidsgraden en eerlijke aanbevelingen van een PGA professional op het eiland. 2026 editie.',
+  title: 'Mallorca Golfgids 2026 — Alle banen op het eiland',
+  description: 'De complete gids voor golf op Mallorca — alle 22 banen, greenfees, moeilijkheidsgraden en eerlijke aanbevelingen van een PGA professional op het eiland. 2026 editie.',
   alternates: {
     canonical: 'https://mrmallorcagolf.com/nl/golf-courses',
     languages: {
@@ -36,11 +36,11 @@ export default function GolfCourses() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/nl">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Golfbanen op Mallorca</span></p>
-          <h1>Golf op Mallorca 2026 â€”<br />Een Insidergids</h1>
+          <h1>Golf op Mallorca 2026 —<br />Een Insidergids</h1>
           <div className="page-hero__meta">
             <span className="page-hero__tag">22 Banen</span>
             <span className="page-hero__tag">Greenfees 2026</span>
-            <span className="page-hero__tag page-hero__tag--gold">â˜… Expertbeoordelingen uit de eerste hand</span>
+            <span className="page-hero__tag page-hero__tag--gold">★ Expertbeoordelingen uit de eerste hand</span>
             <span className="page-hero__tag">PGA Professional</span>
           </div>
         </div>

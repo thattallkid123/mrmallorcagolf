@@ -1,11 +1,11 @@
-﻿import HomePageZH from './HomePageZH'
+import HomePageZH from './HomePageZH'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Mr Mallorca Golf â€” ä¸ŽPGAèŒä¸šçƒæ‰‹åŒæ¸¸é©¬ç•¥å¡å²›æœ€ä½³çƒåœº',
-  description: 'é©¬ç•¥å¡å²›é¡¶çº§ç§äººé«˜å°”å¤«ä½“éªŒï¼Œç”±PGAé«˜çº§èŒä¸šæ•™ç»ƒå…¨ç¨‹é™ªåŒã€‚Son Gualã€Alcanadaç­‰é¡¶çº§çƒåœºï¼Œä¸“ä¸šæŒ‡å¯¼ï¼Œå…¨ç¨‹å®‰æŽ’ã€‚',
+  title: 'Mr Mallorca Golf — 与PGA职业球手同游马略卡岛最佳球场',
+  description: '马略卡岛顶级私人高尔夫体验，由PGA高级职业教练全程陪同。Son Gual、Alcanada等顶级球场，专业指导，全程安排。',
   alternates: { canonical: 'https://mrmallorcagolf.com/zh' },
 }
 

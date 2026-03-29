@@ -1,20 +1,20 @@
-﻿import PageLayout from '../../../../components/PageLayout'
+import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
 
 export const metadata = {
-  title: "Son Gual Golf Mallorca â€” Eerlijke Recensie van een PGA Professional (2026)",
+  title: "Son Gual Golf Mallorca — Eerlijke Recensie van een PGA Professional (2026)",
   description: "Son Gual golfbaan op Mallorca beoordeeld door een PGA professional die er regelmatig speelt.",
   alternates: { canonical: 'https://mrmallorcagolf.com/nl/guides/son-gual-review' },
 }
 
 const meta = {
   badge: 'Baanrecensie', badgeGold: true, readTime: '6 min lezen', updated: 'Maart 2026',
-  title: "Son Gual Golf Mallorca â€” Eerlijke Recensie van een PGA Professional (2026)",
-  intro: "Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes â€” en waarom Obama en Nadal blijven terugkomen.",
+  title: "Son Gual Golf Mallorca — Eerlijke Recensie van een PGA Professional (2026)",
+  intro: "Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes — en waarom Obama en Nadal blijven terugkomen.",
   lang: 'nl',
   related: [
-    { slug: 'alcanada-review', title: 'Alcanada Golf â€” Eerlijke recensie 2026' },
+    { slug: 'alcanada-review', title: 'Alcanada Golf — Eerlijke recensie 2026' },
     { slug: 'best-golf-courses-mallorca', title: 'Beste Golfbanen op Mallorca 2026' },
   ],
 }
@@ -34,13 +34,13 @@ export default function Post() {
         </div>
         <h2>De Eerste Afslagplaats</h2>
         <p>De eerste keer dat ik Son Gual speelde, stond ik op de zwarte afslagen, de wind blies hard van links. De camera draaide voor een vlog. Ik was oprecht een beetje nerveus.</p>
-        <p>De drive raakte licht de hiel. Toch vloog hij verder dan verwacht en vermeed de bunkers â€” net. Er zijn zoveel bunkers op Son Gual, precies gepositioneerd waar licht misgeslagen slagen terechtkomen.</p>
+        <p>De drive raakte licht de hiel. Toch vloog hij verder dan verwacht en vermeed de bunkers — net. Er zijn zoveel bunkers op Son Gual, precies gepositioneerd waar licht misgeslagen slagen terechtkomen.</p>
         
         <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
           <img src="/images/son-gual-blog/sg-1.jpg" alt="Son Gual fairway" style={{width:'100%',height:'100%',objectFit:'cover'}} />
         </div>
         <h2>De Wind</h2>
-        <p>Son Gual lijkt in zijn eigen ecosysteem te leven. Ik verlaat mijn huis op een kalme ochtend en kom aan bij de eerste afslagplaats om te ontdekken dat het flink waait â€” en dat blijft vier uur zo.</p>
+        <p>Son Gual lijkt in zijn eigen ecosysteem te leven. Ik verlaat mijn huis op een kalme ochtend en kom aan bij de eerste afslagplaats om te ontdekken dat het flink waait — en dat blijft vier uur zo.</p>
         <div className="post-pull"><p>"Ik vertrok op een kalme ochtend en arriveerde bij de eerste afslagplaats om een stevige wind te vinden. Die bleef vier uur lang aanhouden."</p></div>
         <h2>De Greens</h2>
         <p>Snel, verhoogd en meedogenloos bij slecht naderend spel. In januari waren de greens en de franje zo kort gemaaid dat het opmerkelijk was voor die tijd van het jaar.</p>
@@ -56,20 +56,20 @@ export default function Post() {
           <img src="/images/son-gual-blog/sg-3.webp" alt="Son Gual panoramic" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center 40%'}} />
         </div>
         <h2>Bekende Bezoekers</h2>
-        <p>Rafa Nadal speelt hier regelmatig â€” zijn verklaarde favoriete baan op het eiland. Barack Obama speelde in november 2024.</p>
+        <p>Rafa Nadal speelt hier regelmatig — zijn verklaarde favoriete baan op het eiland. Barack Obama speelde in november 2024.</p>
         
         <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
           <img src="/images/son-gual-blog/sg-4.jpg" alt="Son Gual Golf" style={{width:'100%',height:'100%',objectFit:'cover'}} />
         </div>
         <div className="post-fact">
-          <div className="post-fact__item"><span className="post-fact__val">â‚¬80â€“165</span><span className="post-fact__label">Greenfee bereik 2026</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">€80–165</span><span className="post-fact__label">Greenfee bereik 2026</span></div>
           <div className="post-fact__item"><span className="post-fact__val">9/10</span><span className="post-fact__label">Moeilijkheidsgraad</span></div>
           <div className="post-fact__item"><span className="post-fact__val">Par 72</span><span className="post-fact__label">Kampioenschap layout</span></div>
           <div className="post-fact__item"><span className="post-fact__val">2007</span><span className="post-fact__label">Ontworpen door Thomas Himmel</span></div>
         </div>
         <h2>Greenfees 2026</h2>
-        <p>Laagseizoen: â‚¬115. Januari onderhoud: â‚¬80/9 holes. Piek lente/herfst: â‚¬165. Zomer: â‚¬115.</p>
-        <p>Clubverhuur: Callaway â‚¬35, Titleist â‚¬45. Buggy â‚¬45, elektrische trolley vanaf â‚¬15. WHS handicapcertificaat vereist.</p>
+        <p>Laagseizoen: €115. Januari onderhoud: €80/9 holes. Piek lente/herfst: €165. Zomer: €115.</p>
+        <p>Clubverhuur: Callaway €35, Titleist €45. Buggy €45, elektrische trolley vanaf €15. WHS handicapcertificaat vereist.</p>
         <h2>Oordeel</h2>
         <p>Son Gual is mijn favoriete baan op Mallorca. Hij zou standhouden tegen elke baan die ik op mijn reizen gespeeld heb.</p>
         
@@ -78,7 +78,7 @@ export default function Post() {
         </div>
         <div className="post-cta">
           <p>Ik breng regelmatig klanten naar Son Gual. Wilt u het spelen met iemand die elk hole kent?</p>
-          <a href="/nl/play-with-a-pro">Bekijk de play-with-a-pro ervaring â†’</a>
+          <a href="/nl/play-with-a-pro">Bekijk de play-with-a-pro ervaring →</a>
         </div>
       </PostLayout>
     </PageLayout>
