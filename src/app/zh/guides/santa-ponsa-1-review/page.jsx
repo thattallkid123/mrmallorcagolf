@@ -45,7 +45,7 @@ export default function Post() {
           <div className="post-fact__item"><span className="post-fact__val">EUR 77-126</span><span className="post-fact__label">2026年果岭费</span></div>
           <div className="post-fact__item"><span className="post-fact__val">8/10</span><span className="post-fact__label">难度</span></div>
           <div className="post-fact__item"><span className="post-fact__val">Par 72</span><span className="post-fact__label">锦标赛布局</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">Public</span><span className="post-fact__label">对访客开放</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">公众开放</span><span className="post-fact__label">对访客开放</span></div>
         </div>
 
         <h2>2026年果岭费</h2>
