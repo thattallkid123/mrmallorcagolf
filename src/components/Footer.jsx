@@ -3,13 +3,13 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const FOOTER_COPY = {
-  en: { tagline: 'Private golf experiences in Mallorca with a PGA Advanced Professional. On-course coaching, everything arranged.', experiences: 'Experiences', pwap: 'Play with a Pro', guide: 'Golf Guide', about: 'About', allCourses: 'All Courses', enquire: 'Enquire', coaching: 'On-Course Coaching' },
-  de: { tagline: 'Private Golferlebnisse auf Mallorca mit einem PGA Advanced Professional. Coaching auf dem Platz, alles arrangiert.', experiences: 'Erlebnisse', pwap: 'Mit Profi spielen', guide: 'Golfführer', about: 'Über Andy', allCourses: 'Alle Plätze', enquire: 'Anfragen', coaching: 'Coaching' },
-  fr: { tagline: 'Expériences golf privées à Majorque avec un PGA Advanced Professional. Coaching sur parcours, tout organisé.', experiences: 'Expériences', pwap: 'Jouer avec un Pro', guide: 'Guide Golf', about: 'À propos', allCourses: 'Tous les parcours', enquire: 'Contact', coaching: 'Coaching' },
-  es: { tagline: 'Experiencias de golf privadas en Mallorca con un PGA Advanced Professional. Coaching en campo, todo organizado.', experiences: 'Experiencias', pwap: 'Jugar con un Pro', guide: 'Guía de Golf', about: 'Sobre Andy', allCourses: 'Todos los campos', enquire: 'Contacto', coaching: 'Coaching' },
-  zh: { tagline: '马略卡岛顶级私人高尔夫体验，由PGA高级职业教练全程陪同。球场实地指导，全程安排。', experiences: '体验项目', pwap: '与职业球手同场', guide: '高尔夫指南', about: '关于Andy', allCourses: '全部球场', enquire: '联系我们', coaching: '球场指导' },
-  sv: { tagline: 'Privata golfupplevelser på Mallorca med en PGA Advanced Professional. Coaching på banan, allt ordnat.', experiences: 'Upplevelser', pwap: 'Spela med ett Proffs', guide: 'Golfguide', about: 'Om Andy', allCourses: 'Alla banor', enquire: 'Kontakt', coaching: 'Coaching' },
-  nl: { tagline: 'Privégolfervaringen op Mallorca met een PGA Advanced Professional. Coaching op de baan, alles geregeld.', experiences: 'Ervaringen', pwap: 'Spelen met een Pro', guide: 'Golfgids', about: 'Over Andy', allCourses: 'Alle banen', enquire: 'Contact', coaching: 'Coaching' },
+  en: { tagline: 'Private golf experiences in Mallorca with a PGA Advanced Professional. On-course coaching, everything arranged.', experiences: 'Experiences', pwap: 'Play with a Pro', guide: 'Golf Guide', about: 'About', allCourses: 'All Courses', enquire: 'Enquire', coaching: 'On-Course Coaching', privacy: 'Privacy Policy', terms: 'Terms & Conditions' },
+  de: { tagline: 'Private Golferlebnisse auf Mallorca mit einem PGA Advanced Professional. Coaching auf dem Platz, alles arrangiert.', experiences: 'Erlebnisse', pwap: 'Mit Profi spielen', guide: 'Golfführer', about: 'Über Andy', allCourses: 'Alle Plätze', enquire: 'Anfragen', coaching: 'Coaching', privacy: 'Datenschutz', terms: 'AGB' },
+  fr: { tagline: 'Expériences golf privées à Majorque avec un PGA Advanced Professional. Coaching sur parcours, tout organisé.', experiences: 'Expériences', pwap: 'Jouer avec un Pro', guide: 'Guide Golf', about: 'À propos', allCourses: 'Tous les parcours', enquire: 'Contact', coaching: 'Coaching', privacy: 'Confidentialité', terms: 'Conditions' },
+  es: { tagline: 'Experiencias de golf privadas en Mallorca con un PGA Advanced Professional. Coaching en campo, todo organizado.', experiences: 'Experiencias', pwap: 'Jugar con un Pro', guide: 'Guía de Golf', about: 'Sobre Andy', allCourses: 'Todos los campos', enquire: 'Contacto', coaching: 'Coaching', privacy: 'Privacidad', terms: 'Términos' },
+  zh: { tagline: '马略卡岛顶级私人高尔夫体验，由PGA高级职业教练全程陪同。球场实地指导，全程安排。', experiences: '体验项目', pwap: '与职业球手同场', guide: '高尔夫指南', about: '关于Andy', allCourses: '全部球场', enquire: '联系我们', coaching: '球场指导', privacy: '隐私政策', terms: '条款' },
+  sv: { tagline: 'Privata golfupplevelser på Mallorca med en PGA Advanced Professional. Coaching på banan, allt ordnat.', experiences: 'Upplevelser', pwap: 'Spela med ett Proffs', guide: 'Golfguide', about: 'Om Andy', allCourses: 'Alla banor', enquire: 'Kontakt', coaching: 'Coaching', privacy: 'Integritet', terms: 'Villkor' },
+  nl: { tagline: 'Privégolfervaringen op Mallorca met een PGA Advanced Professional. Coaching op de baan, alles geregeld.', experiences: 'Ervaringen', pwap: 'Spelen met een Pro', guide: 'Golfgids', about: 'Over Andy', allCourses: 'Alle banen', enquire: 'Contact', coaching: 'Coaching', privacy: 'Privacybeleid', terms: 'Voorwaarden' },
 }
 
 function getLangFromProp(lang) {
@@ -77,7 +77,7 @@ export default function Footer({ lang }) {
       </div>
 
       <div className="footer__bottom">
-        <p>© 2026 Mr Mallorca Golf · Andy Griffiths · PGA Advanced Professional</p>
+        <p>© 2026 Mr Mallorca Golf · Andy Griffiths · PGA Advanced Professional · <Link href={`${pre}/privacy-policy`} style={{color:'inherit',textDecoration:'underline',textUnderlineOffset:'3px'}}>{c.privacy}</Link> · <Link href={`${pre}/terms`} style={{color:'inherit',textDecoration:'underline',textUnderlineOffset:'3px'}}>{c.terms}</Link></p>
         <div className="footer__lang">
           <Link href={langHref('en')}>EN</Link>
           <Link href={langHref('es')}>ES</Link>
