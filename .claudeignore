@@ -1,0 +1,25 @@
+# Build output
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# Package manager locks (large, rarely useful to read)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Git
+.git/
