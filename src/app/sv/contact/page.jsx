@@ -1,10 +1,10 @@
-import PageLayout from '../../../components/PageLayout'
+﻿import PageLayout from '../../../components/PageLayout'
 import ContactForm_SV from './ContactForm_SV'
 
 export const metadata = {
-  title: 'Kontakt — Mr Mallorca Golf | Andy Griffiths UK PGA-proffs',
+  title: 'Kontakt â€” Mr Mallorca Golf | Andy Griffiths UK PGA-proffs',
   description: 'Arrangera din privata golfdag pa Mallorca. Andy Griffiths svarar personligen inom 24 timmar.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/sv/contact' },
+  alternates: { canonical: 'https://mrmallorcagolf.com/sv/contact' },
 }
 
 export default function Contact_SV() {
@@ -14,3 +14,4 @@ export default function Contact_SV() {
     </PageLayout>
   )
 }
+

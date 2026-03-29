@@ -1,23 +1,23 @@
-import Image from 'next/image'
+﻿import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
 
 export const metadata = {
-  title: 'Over Andy Griffiths — PGA Professional, Mallorca',
-  description: "Andy Griffiths is een Britse UK PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Évian, 11 jaar coaching in China.",
+  title: 'Over Andy Griffiths â€” PGA Professional, Mallorca',
+  description: "Andy Griffiths is een Britse UK PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Ã‰vian, 11 jaar coaching in China.",
   alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/nl/about',
+    canonical: 'https://mrmallorcagolf.com/nl/about',
     languages: {
-      'en': 'https://www.mrmallorcagolf.com/about',
-      'de': 'https://www.mrmallorcagolf.com/de/about',
-      'es': 'https://www.mrmallorcagolf.com/es/about',
-      'fr': 'https://www.mrmallorcagolf.com/fr/about',
-      'nl': 'https://www.mrmallorcagolf.com/nl/about',
-      'sv': 'https://www.mrmallorcagolf.com/sv/about',
-      'zh': 'https://www.mrmallorcagolf.com/zh/about',
-      'x-default': 'https://www.mrmallorcagolf.com/about',
+      'en': 'https://mrmallorcagolf.com/about',
+      'de': 'https://mrmallorcagolf.com/de/about',
+      'es': 'https://mrmallorcagolf.com/es/about',
+      'fr': 'https://mrmallorcagolf.com/fr/about',
+      'nl': 'https://mrmallorcagolf.com/nl/about',
+      'sv': 'https://mrmallorcagolf.com/sv/about',
+      'zh': 'https://mrmallorcagolf.com/zh/about',
+      'x-default': 'https://mrmallorcagolf.com/about',
     }
   }
 }
@@ -64,29 +64,29 @@ export default function About() {
       <div className="story">
         <main className="story__main">
           <div className="chapter reveal">
-            <p className="chapter__label">Vroege carrière</p>
+            <p className="chapter__label">Vroege carriÃ¨re</p>
             <h2>De beste coaches op twee continenten volgen.</h2>
-            <p>Ik groeide op met golf, bereikte een handicap van +1, maar wist vroeg dat coaching mijn weg was. Na mijn studie Applied Golf Management aan de University of Birmingham en mijn kwalificatie als PGA Professional begon ik een carrière op te bouwen door de meest ervaren coaches door heel Europa en Noord-Amerika te volgen.</p>
-            <p>De vroege jaren brachten me naar buitengewone plekken. Ik coachte op Pebble Beach, Doral, Évian tijdens het dames-major en op The Open Championship. Ik bracht een seizoen door als golfcoach aan boord van een cruiseschip op een wereldreis — meer dan veertig landen, golf op plekken die de meeste professionals nooit zien.</p>
-            <div className="pull-quote"><p>&ldquo;Elke omgeving was anders. Elke golfer was anders. Die variëteit, vroeg in mijn carrière, is wat alles daarna heeft gevormd.&rdquo;</p></div>
+            <p>Ik groeide op met golf, bereikte een handicap van +1, maar wist vroeg dat coaching mijn weg was. Na mijn studie Applied Golf Management aan de University of Birmingham en mijn kwalificatie als PGA Professional begon ik een carriÃ¨re op te bouwen door de meest ervaren coaches door heel Europa en Noord-Amerika te volgen.</p>
+            <p>De vroege jaren brachten me naar buitengewone plekken. Ik coachte op Pebble Beach, Doral, Ã‰vian tijdens het dames-major en op The Open Championship. Ik bracht een seizoen door als golfcoach aan boord van een cruiseschip op een wereldreis â€” meer dan veertig landen, golf op plekken die de meeste professionals nooit zien.</p>
+            <div className="pull-quote"><p>&ldquo;Elke omgeving was anders. Elke golfer was anders. Die variÃ«teit, vroeg in mijn carriÃ¨re, is wat alles daarna heeft gevormd.&rdquo;</p></div>
           </div>
 
           <div className="chapter reveal">
-            <p className="chapter__label">Shanghai, 2014–2025</p>
+            <p className="chapter__label">Shanghai, 2014â€“2025</p>
             <h2>Elf jaar aan de top van het golf in China.</h2>
-            <p>In 2014 verhuisde ik naar Shanghai. Ik had specifieke doelen — het onderwijsprogramma opzetten voor de beste academie in China — en bleef elf succesvolle jaren.</p>
-            <p>China was in die periode een buitengewone omgeving om in te coachen. Lessen liepen rond de €500 per uur. Klanten verwachtten serieuze, meetbare verbetering. Dat was de norm. De professionele norm die vereist was, was net zo hoog als elke plek waar ik had gewerkt.</p>
+            <p>In 2014 verhuisde ik naar Shanghai. Ik had specifieke doelen â€” het onderwijsprogramma opzetten voor de beste academie in China â€” en bleef elf succesvolle jaren.</p>
+            <p>China was in die periode een buitengewone omgeving om in te coachen. Lessen liepen rond de â‚¬500 per uur. Klanten verwachtten serieuze, meetbare verbetering. Dat was de norm. De professionele norm die vereist was, was net zo hoog als elke plek waar ik had gewerkt.</p>
             <p>Ik werd 's lands eerste Trackman Master, coachte spelers van het Chinese nationale team en bouwde een coachingpresence op Douyin die honderden miljoenen views bereikte. Ik werd ook vloeiend in Mandarijn, wat de diepte van mijn coachingrelaties fundamenteel veranderde.</p>
             <p>Na elf jaar had ik bereikt waarvoor ik was gekomen. Mijn eerste dochter werd geboren in 2023. De aantrekkingskracht van dichter bij huis zijn, en de kans om iets van mezelf op te bouwen, waren niet langer te negeren.</p>
           </div>
 
           <div className="chapter reveal">
-            <p className="chapter__label">Mallorca, 2025 –</p>
-            <h2>Tweeëntwintig banen, één eiland, en een coachingfilosofie aangescherpt door weer te spelen.</h2>
+            <p className="chapter__label">Mallorca, 2025 â€“</p>
+            <h2>TweeÃ«ntwintig banen, Ã©Ã©n eiland, en een coachingfilosofie aangescherpt door weer te spelen.</h2>
             <p>Ik verhuisde in maart 2025 naar Mallorca met mijn vrouw Yina. Dichter bij de familie in het VK, jaarrond zon, een werkelijk uitzonderlijk golfeiland dat de meeste mensen onvoldoende erkenning geven.</p>
-            <p>Ik begon serieus te spelen. Elke baan op het eiland afwerken. Herontdekken hoe het voelt om op de eerste tee te staan en echt om de score te geven. Dat competitieve instinct — slapend door jaren van fulltime coaching — kwam snel terug.</p>
+            <p>Ik begon serieus te spelen. Elke baan op het eiland afwerken. Herontdekken hoe het voelt om op de eerste tee te staan en echt om de score te geven. Dat competitieve instinct â€” slapend door jaren van fulltime coaching â€” kwam snel terug.</p>
             <div className="pull-quote"><p>&ldquo;De coachingfilosofie die voortkomt uit weer spelen is eenvoudig: de snelste verbeteringen vinden plaats op de baan, niet op de driving range. Echte omstandigheden, echte beslissingen. De vooruitgang die daarvan afkomt, blijft hangen.&rdquo;</p></div>
-            <p>Een PGA-professional die meer dan een decennium in Azië coachte, nu gastgeber van privégolfdagen op een van Europa's beste golfeilanden. Als dat klinkt als de dag die u zoekt — neem contact op.</p>
+            <p>Een PGA-professional die meer dan een decennium in AziÃ« coachte, nu gastgeber van privÃ©golfdagen op een van Europa's beste golfeilanden. Als dat klinkt als de dag die u zoekt â€” neem contact op.</p>
           </div>
         </main>
 
@@ -94,7 +94,7 @@ export default function About() {
           <div className="reveal" style={{lineHeight:0,marginBottom:'24px'}}>
             <Image
               src="/images/about-andy-colour.jpg"
-              alt="Andy Griffiths — UK PGA Advanced Professional, Mallorca"
+              alt="Andy Griffiths â€” UK PGA Advanced Professional, Mallorca"
               width={600}
               height={420}
               style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center top',display:'block'}}
@@ -106,15 +106,15 @@ export default function About() {
               {credentials.map((c, i) => (
                 <li key={i} className="cred-item">
                   <span className="cred-check">&#10003;</span>
-                  <span className="cred-text"><strong>{c.title}</strong>{c.isBookLink ? (<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:'var(--gold)',textDecoration:'none'}}>Putting It Out There — A Life in Full Swing, 2016 (Amazon)</a>) : c.detail}</span>
+                  <span className="cred-text"><strong>{c.title}</strong>{c.isBookLink ? (<a href="https://www.amazon.com/Andy-Griffiths/dp/1523339772" target="_blank" rel="noopener noreferrer" style={{color:'var(--gold)',textDecoration:'none'}}>Putting It Out There â€” A Life in Full Swing, 2016 (Amazon)</a>) : c.detail}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="sidebar-cta reveal">
             <h3>Speel de mooiste banen van Mallorca met mij aan uw zijde.</h3>
-            <p>Privédagen op Son Gual, Alcanada, en meer. Alles geregeld. Coaching op de baan.</p>
-            <Link href="/nl/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Bekijk de ervaringen →</Link>
+            <p>PrivÃ©dagen op Son Gual, Alcanada, en meer. Alles geregeld. Coaching op de baan.</p>
+            <Link href="/nl/play-with-a-pro" style={{display:'block',textAlign:'center',fontSize:'9px',fontWeight:500,letterSpacing:'.16em',textTransform:'uppercase',padding:'13px',background:'var(--gold)',color:'var(--deep)',textDecoration:'none',fontFamily:"'Jost',sans-serif"}}>Bekijk de ervaringen â†’</Link>
           </div>
         </aside>
       </div>
@@ -128,7 +128,7 @@ export default function About() {
           <p>Vertel me uw datums, uw handicap en wat u zoekt. Ik bouw de dag rondom u.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/nl/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Bekijk de ervaringen →</Link>
+          <Link href="/nl/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Bekijk de ervaringen â†’</Link>
           <Link href="/nl/contact" className="btn btn--outline-white">Neem contact op</Link>
         </div>
       </section>
@@ -137,6 +137,7 @@ export default function About() {
     </>
   )
 }
+
 
 
 

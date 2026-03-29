@@ -1,26 +1,26 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Mallorca Golfführer — Platz-Bewertungen & Tipps',
-  description: 'Ehrliche Golfratgeber für Mallorca von einem PGA Professional. Platz-Bewertungen, Greenfees und Reiseplanung — aktualisiert 2026.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/de/guides' },
+  title: 'Mallorca GolffÃ¼hrer â€” Platz-Bewertungen & Tipps',
+  description: 'Ehrliche Golfratgeber fÃ¼r Mallorca von einem PGA Professional. Platz-Bewertungen, Greenfees und Reiseplanung â€” aktualisiert 2026.',
+  alternates: { canonical: 'https://mrmallorcagolf.com/de/guides' },
 }
 
 const liveGuides = [
-  { slug: 'son-gual-review', badge: 'Platz-Bewertung', badgeGold: true, title: 'Son Gual Golf Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)', intro: 'Mein meistgespielter Platz auf der Insel. Der Wind, die Greens, die Schlusslöcher — und warum Obama und Nadal immer wiederkommen.', readTime: '7 Min.', keywords: 'Championship · Par 72 · €80–165 · Handicap erforderlich' },
-  { slug: 'alcanada-review', badge: 'Platz-Bewertung', badgeGold: true, title: 'Club de Golf Alcanada — Ehrliche Bewertung eines PGA-Professionals (2026)', intro: 'Der Platz, zu dem ich Leute bringe, wenn ich möchte, dass sie mit einer Geschichte nach Hause kommen. Der Leuchtturm verändert alles.', readTime: '7 Min.', keywords: 'Küste · Par 72 · €115–220 · Rolex Challenge Tour Grand Final' },
-  { slug: 'santa-ponsa-1-review', badge: 'Platz-Bewertung', badgeGold: true, title: 'Golf Santa Ponsa 1, Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)', intro: 'Einer der längsten Plätze in Europa, DP World Tour-Geschichte und ein Platz, der das Vertrauen mit dem Driver wirklich zurückgibt.', readTime: '6 Min.', keywords: 'Championship · Par 72 · €77–126 · Öffentlicher Zugang' },
+  { slug: 'son-gual-review', badge: 'Platz-Bewertung', badgeGold: true, title: 'Son Gual Golf Mallorca â€” Ehrliche Bewertung eines PGA-Professionals (2026)', intro: 'Mein meistgespielter Platz auf der Insel. Der Wind, die Greens, die SchlusslÃ¶cher â€” und warum Obama und Nadal immer wiederkommen.', readTime: '7 Min.', keywords: 'Championship Â· Par 72 Â· â‚¬80â€“165 Â· Handicap erforderlich' },
+  { slug: 'alcanada-review', badge: 'Platz-Bewertung', badgeGold: true, title: 'Club de Golf Alcanada â€” Ehrliche Bewertung eines PGA-Professionals (2026)', intro: 'Der Platz, zu dem ich Leute bringe, wenn ich mÃ¶chte, dass sie mit einer Geschichte nach Hause kommen. Der Leuchtturm verÃ¤ndert alles.', readTime: '7 Min.', keywords: 'KÃ¼ste Â· Par 72 Â· â‚¬115â€“220 Â· Rolex Challenge Tour Grand Final' },
+  { slug: 'santa-ponsa-1-review', badge: 'Platz-Bewertung', badgeGold: true, title: 'Golf Santa Ponsa 1, Mallorca â€” Ehrliche Bewertung eines PGA-Professionals (2026)', intro: 'Einer der lÃ¤ngsten PlÃ¤tze in Europa, DP World Tour-Geschichte und ein Platz, der das Vertrauen mit dem Driver wirklich zurÃ¼ckgibt.', readTime: '6 Min.', keywords: 'Championship Â· Par 72 Â· â‚¬77â€“126 Â· Ã–ffentlicher Zugang' },
 ]
 
 const comingSoonGuides = [
-  { slug: 'a-day-at-son-gual', badge: 'Das Erlebnis', badgeGold: false, title: 'Ein Tag in Son Gual mit einem PGA Professional', intro: 'Was wirklich passiert, wenn man einen ganzen Tag auf Mallorcas bestem Platz mit einem Coach verbringt, der ihn fast jede Woche spielt.', readTime: '5 Min.', keywords: 'Son Gual · Mit Profi spielen · Ganztageserlebnis' },
-  { slug: 'best-golf-courses-mallorca', badge: 'Ratgeber', badgeGold: false, title: 'Die besten Golfplätze auf Mallorca — Ehrliches Ranking eines PGA-Professionals', intro: 'Zweiundzwanzig Plätze auf der Insel. So würde ich sie für einen Besucher mit begrenzter Zeit und hohen Ansprüchen einordnen.', readTime: '8 Min.', keywords: 'Alle Level · Greenfees im Vergleich · Aktualisiert 2026' },
-  { slug: 'is-mallorca-good-for-golf', badge: 'Ratgeber', badgeGold: false, title: 'Ist Mallorca gut für Golf? Eine ehrliche Antwort von jemandem, der hier lebt', intro: 'Die ehrliche Version — was die Insel besser macht als Portugal, wo sie zurückfällt und für wen sie geeignet ist.', readTime: '5 Min.', keywords: 'Mallorca vs. Portugal · Platzqualität · Für alle Level' },
-  { slug: 'best-time-play-golf-mallorca', badge: 'Ratgeber', badgeGold: false, title: 'Die beste Reisezeit für Golf auf Mallorca — Monat für Monat', intro: 'Oktober wäre meine Wahl. Hier ist warum, und was jeder Monat tatsächlich in Bezug auf Wetter, Preise und Besucheraufkommen bietet.', readTime: '6 Min.', keywords: 'Wetter · Greenfees nach Saison · Besucheraufkommen' },
-  { slug: 'golf-cost-mallorca', badge: 'Ratgeber', badgeGold: false, title: 'Was kostet Golf auf Mallorca? Greenfees, Leihausrüstung und versteckte Kosten', intro: 'Das vollständige Bild, was ein Golftrip hier wirklich kostet — Greenfees, Leihausrüstung, Caddies und wo man sparen kann.', readTime: '5 Min.', keywords: '€77–220 Greenfees · Leihausrüstung · Caddies · Preise 2026' },
-  { slug: 'golf-trip-planning-mallorca', badge: 'Ratgeber', badgeGold: false, title: 'Einen Golftrip nach Mallorca planen — Alles, was Sie wissen müssen', intro: 'Flüge, Plätze, Unterkünfte in Platznähe, Transfers. Der praktische Reiseführer, den ich mir gewünscht hätte, als ich hierher zog.', readTime: '7 Min.', keywords: 'Reiseplanung · Unterkunft · Anreise' },
+  { slug: 'a-day-at-son-gual', badge: 'Das Erlebnis', badgeGold: false, title: 'Ein Tag in Son Gual mit einem PGA Professional', intro: 'Was wirklich passiert, wenn man einen ganzen Tag auf Mallorcas bestem Platz mit einem Coach verbringt, der ihn fast jede Woche spielt.', readTime: '5 Min.', keywords: 'Son Gual Â· Mit Profi spielen Â· Ganztageserlebnis' },
+  { slug: 'best-golf-courses-mallorca', badge: 'Ratgeber', badgeGold: false, title: 'Die besten GolfplÃ¤tze auf Mallorca â€” Ehrliches Ranking eines PGA-Professionals', intro: 'Zweiundzwanzig PlÃ¤tze auf der Insel. So wÃ¼rde ich sie fÃ¼r einen Besucher mit begrenzter Zeit und hohen AnsprÃ¼chen einordnen.', readTime: '8 Min.', keywords: 'Alle Level Â· Greenfees im Vergleich Â· Aktualisiert 2026' },
+  { slug: 'is-mallorca-good-for-golf', badge: 'Ratgeber', badgeGold: false, title: 'Ist Mallorca gut fÃ¼r Golf? Eine ehrliche Antwort von jemandem, der hier lebt', intro: 'Die ehrliche Version â€” was die Insel besser macht als Portugal, wo sie zurÃ¼ckfÃ¤llt und fÃ¼r wen sie geeignet ist.', readTime: '5 Min.', keywords: 'Mallorca vs. Portugal Â· PlatzqualitÃ¤t Â· FÃ¼r alle Level' },
+  { slug: 'best-time-play-golf-mallorca', badge: 'Ratgeber', badgeGold: false, title: 'Die beste Reisezeit fÃ¼r Golf auf Mallorca â€” Monat fÃ¼r Monat', intro: 'Oktober wÃ¤re meine Wahl. Hier ist warum, und was jeder Monat tatsÃ¤chlich in Bezug auf Wetter, Preise und Besucheraufkommen bietet.', readTime: '6 Min.', keywords: 'Wetter Â· Greenfees nach Saison Â· Besucheraufkommen' },
+  { slug: 'golf-cost-mallorca', badge: 'Ratgeber', badgeGold: false, title: 'Was kostet Golf auf Mallorca? Greenfees, LeihausrÃ¼stung und versteckte Kosten', intro: 'Das vollstÃ¤ndige Bild, was ein Golftrip hier wirklich kostet â€” Greenfees, LeihausrÃ¼stung, Caddies und wo man sparen kann.', readTime: '5 Min.', keywords: 'â‚¬77â€“220 Greenfees Â· LeihausrÃ¼stung Â· Caddies Â· Preise 2026' },
+  { slug: 'golf-trip-planning-mallorca', badge: 'Ratgeber', badgeGold: false, title: 'Einen Golftrip nach Mallorca planen â€” Alles, was Sie wissen mÃ¼ssen', intro: 'FlÃ¼ge, PlÃ¤tze, UnterkÃ¼nfte in PlatznÃ¤he, Transfers. Der praktische ReisefÃ¼hrer, den ich mir gewÃ¼nscht hÃ¤tte, als ich hierher zog.', readTime: '7 Min.', keywords: 'Reiseplanung Â· Unterkunft Â· Anreise' },
 ]
 
 export default function GuidesIndex_DE() {
@@ -41,11 +41,11 @@ export default function GuidesIndex_DE() {
           </p>
           <h1 dangerouslySetInnerHTML={{__html: 'Mallorca Golf.<br />Ehrliche Ratgeber.'}} />
           <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
-            Platz-Bewertungen, Reiseplanung und Greenfees — geschrieben von einem PGA Professional, der hier jede Woche spielt.
+            Platz-Bewertungen, Reiseplanung und Greenfees â€” geschrieben von einem PGA Professional, der hier jede Woche spielt.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
             <span className="page-hero__tag">Aktualisiert 2026</span>
-            <span className="page-hero__tag page-hero__tag--gold">★ Bewertungen aus erster Hand</span>
+            <span className="page-hero__tag page-hero__tag--gold">â˜… Bewertungen aus erster Hand</span>
             <span className="page-hero__tag">PGA Professional</span>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function GuidesIndex_DE() {
                   {g.readTime}
                 </span>
                 <span style={{fontSize:'9px',letterSpacing:'.14em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:600,color:'var(--deep)',alignSelf:'center',marginLeft:'auto',background:'var(--gold)',padding:'5px 12px'}}>
-                  Demnächst
+                  DemnÃ¤chst
                 </span>
               </div>
               <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
@@ -107,14 +107,15 @@ export default function GuidesIndex_DE() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Bereit zu spielen?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>Eine private Runde auf einem dieser Plätze — mit einem PGA Professional an Ihrer Seite.</h2>
-          <p>Teilen Sie mir Ihre Daten und Wünsche mit. Ich melde mich persönlich innerhalb von 24 Stunden.</p>
+          <h2 className="serif-display" style={{color:'#fff'}}>Eine private Runde auf einem dieser PlÃ¤tze â€” mit einem PGA Professional an Ihrer Seite.</h2>
+          <p>Teilen Sie mir Ihre Daten und WÃ¼nsche mit. Ich melde mich persÃ¶nlich innerhalb von 24 Stunden.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/de/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Erlebnisse entdecken →</Link>
+          <Link href="/de/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Erlebnisse entdecken â†’</Link>
           <Link href="/de/contact" className="btn btn--outline-white">Kontakt aufnehmen</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
+

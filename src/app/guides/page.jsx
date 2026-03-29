@@ -1,26 +1,26 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Mallorca Golf Guide — Course Reviews, Tips & Advice',
-  description: 'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit — all updated for 2026.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/guides' },
+  title: 'Mallorca Golf Guide â€” Course Reviews, Tips & Advice',
+  description: 'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit â€” all updated for 2026.',
+  alternates: { canonical: 'https://mrmallorcagolf.com/guides' },
 }
 
 const liveGuides = [
-  { slug: 'son-gual-review', badge: 'Course Review', badgeGold: true, title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)", intro: "My most-played course on the island. The wind, the greens, the closing stretch — and why Obama and Nadal both keep coming back.", readTime: '7 min read', keywords: 'Championship · Par 72 · €80–165 · Handicap required' },
-  { slug: 'alcanada-review', badge: 'Course Review', badgeGold: true, title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)", intro: "The course I take people to when I want them to come home with a story. The lighthouse changes everything.", readTime: '7 min read', keywords: 'Coastal · Par 72 · €115–220 · Rolex Challenge Tour Grand Final' },
-  { slug: 'santa-ponsa-1-review', badge: 'Course Review', badgeGold: true, title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional's Honest Review (2026)", intro: "One of Europe's longest courses, DP World Tour history, and a course that genuinely helps you rediscover your driver.", readTime: '6 min read', keywords: 'Championship · Par 72 · €77–126 · Public access' },
+  { slug: 'son-gual-review', badge: 'Course Review', badgeGold: true, title: "Son Gual Golf Mallorca â€” A PGA Professional's Honest Review (2026)", intro: "My most-played course on the island. The wind, the greens, the closing stretch â€” and why Obama and Nadal both keep coming back.", readTime: '7 min read', keywords: 'Championship Â· Par 72 Â· â‚¬80â€“165 Â· Handicap required' },
+  { slug: 'alcanada-review', badge: 'Course Review', badgeGold: true, title: "Club de Golf Alcanada â€” A PGA Professional's Honest Review (2026)", intro: "The course I take people to when I want them to come home with a story. The lighthouse changes everything.", readTime: '7 min read', keywords: 'Coastal Â· Par 72 Â· â‚¬115â€“220 Â· Rolex Challenge Tour Grand Final' },
+  { slug: 'santa-ponsa-1-review', badge: 'Course Review', badgeGold: true, title: "Golf Santa Ponsa 1, Mallorca â€” A PGA Professional's Honest Review (2026)", intro: "One of Europe's longest courses, DP World Tour history, and a course that genuinely helps you rediscover your driver.", readTime: '6 min read', keywords: 'Championship Â· Par 72 Â· â‚¬77â€“126 Â· Public access' },
 ]
 
 const comingSoonGuides = [
-  { slug: 'a-day-at-son-gual', badge: 'The Experience', badgeGold: false, title: 'A Day at Son Gual with a PGA Professional', intro: 'What actually happens when you spend a full day on Mallorca\'s finest course with a coach who plays it most weeks.', readTime: '5 min read', keywords: 'Son Gual · Play with a Pro · Full day experience' },
-  { slug: 'best-golf-courses-mallorca', badge: 'Guide', badgeGold: false, title: 'The Best Golf Courses in Mallorca — A PGA Professional\'s Honest Ranking', intro: 'Twenty-two courses on the island. Here is how I would rank them for a visitor with limited time and high standards.', readTime: '8 min read', keywords: 'All levels · Green fees compared · Updated 2026' },
-  { slug: 'is-mallorca-good-for-golf', badge: 'Guide', badgeGold: false, title: 'Is Mallorca Good for Golf? An Honest Answer from Someone Who Lives Here', intro: 'The honest version — what the island does better than Portugal, where it falls short, and who it suits.', readTime: '5 min read', keywords: 'Mallorca vs Portugal · Course quality · For all levels' },
-  { slug: 'best-time-play-golf-mallorca', badge: 'Guide', badgeGold: false, title: 'The Best Time to Play Golf in Mallorca — Month by Month', intro: 'October is the month I would choose. Here is why, and what each month actually delivers in terms of weather, price, and crowds.', readTime: '6 min read', keywords: 'Weather · Green fees by season · Crowds' },
-  { slug: 'golf-cost-mallorca', badge: 'Guide', badgeGold: false, title: 'How Much Does Golf Cost in Mallorca? Green Fees, Hire, and Hidden Costs', intro: 'The full picture on what a golf trip here actually costs — green fees, hire, caddies, and where you can save without compromising.', readTime: '5 min read', keywords: '€77–220 green fees · Hire · Caddies · 2026 prices' },
-  { slug: 'golf-trip-planning-mallorca', badge: 'Guide', badgeGold: false, title: 'Planning a Golf Trip to Mallorca — Everything You Need to Know', intro: 'Flights, courses, staying near the golf, getting between venues. The practical guide I wish existed when I moved here.', readTime: '7 min read', keywords: 'Trip planning · Where to stay · Getting around' },
+  { slug: 'a-day-at-son-gual', badge: 'The Experience', badgeGold: false, title: 'A Day at Son Gual with a PGA Professional', intro: 'What actually happens when you spend a full day on Mallorca\'s finest course with a coach who plays it most weeks.', readTime: '5 min read', keywords: 'Son Gual Â· Play with a Pro Â· Full day experience' },
+  { slug: 'best-golf-courses-mallorca', badge: 'Guide', badgeGold: false, title: 'The Best Golf Courses in Mallorca â€” A PGA Professional\'s Honest Ranking', intro: 'Twenty-two courses on the island. Here is how I would rank them for a visitor with limited time and high standards.', readTime: '8 min read', keywords: 'All levels Â· Green fees compared Â· Updated 2026' },
+  { slug: 'is-mallorca-good-for-golf', badge: 'Guide', badgeGold: false, title: 'Is Mallorca Good for Golf? An Honest Answer from Someone Who Lives Here', intro: 'The honest version â€” what the island does better than Portugal, where it falls short, and who it suits.', readTime: '5 min read', keywords: 'Mallorca vs Portugal Â· Course quality Â· For all levels' },
+  { slug: 'best-time-play-golf-mallorca', badge: 'Guide', badgeGold: false, title: 'The Best Time to Play Golf in Mallorca â€” Month by Month', intro: 'October is the month I would choose. Here is why, and what each month actually delivers in terms of weather, price, and crowds.', readTime: '6 min read', keywords: 'Weather Â· Green fees by season Â· Crowds' },
+  { slug: 'golf-cost-mallorca', badge: 'Guide', badgeGold: false, title: 'How Much Does Golf Cost in Mallorca? Green Fees, Hire, and Hidden Costs', intro: 'The full picture on what a golf trip here actually costs â€” green fees, hire, caddies, and where you can save without compromising.', readTime: '5 min read', keywords: 'â‚¬77â€“220 green fees Â· Hire Â· Caddies Â· 2026 prices' },
+  { slug: 'golf-trip-planning-mallorca', badge: 'Guide', badgeGold: false, title: 'Planning a Golf Trip to Mallorca â€” Everything You Need to Know', intro: 'Flights, courses, staying near the golf, getting between venues. The practical guide I wish existed when I moved here.', readTime: '7 min read', keywords: 'Trip planning Â· Where to stay Â· Getting around' },
 ]
 
 const guides = [...liveGuides, ...comingSoonGuides]
@@ -43,11 +43,11 @@ export default function GuidesIndex() {
           </p>
           <h1>Mallorca Golf.<br />Honest Guides.</h1>
           <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
-            Course reviews, trip planning, green fees, and when to visit — written by a PGA professional who plays here every week.
+            Course reviews, trip planning, green fees, and when to visit â€” written by a PGA professional who plays here every week.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
             <span className="page-hero__tag">Updated 2026</span>
-            <span className="page-hero__tag page-hero__tag--gold">★ First-Hand Reviews</span>
+            <span className="page-hero__tag page-hero__tag--gold">â˜… First-Hand Reviews</span>
             <span className="page-hero__tag">PGA Professional</span>
           </div>
         </div>
@@ -120,3 +120,4 @@ export default function GuidesIndex() {
     </PageLayout>
   )
 }
+

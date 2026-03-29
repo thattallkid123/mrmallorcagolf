@@ -1,26 +1,26 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 
 export const metadata = {
-  title: 'Mallorca Golfguide — Banomdömen & tips',
-  description: 'Ärliga golfguider för Mallorca av en PGA Professional. Banomdömen, greenfees och reseplanering — uppdaterade för 2026.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/sv/guides' },
+  title: 'Mallorca Golfguide â€” BanomdÃ¶men & tips',
+  description: 'Ã„rliga golfguider fÃ¶r Mallorca av en PGA Professional. BanomdÃ¶men, greenfees och reseplanering â€” uppdaterade fÃ¶r 2026.',
+  alternates: { canonical: 'https://mrmallorcagolf.com/sv/guides' },
 }
 
 const liveGuides = [
-  { slug: 'son-gual-review', badge: 'Banomdöme', badgeGold: true, title: 'Son Gual Golf Mallorca — Ärlig recension av en PGA Professional (2026)', intro: 'Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen — och varför Obama och Nadal alltid kommer tillbaka.', readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap krävs' },
-  { slug: 'alcanada-review', badge: 'Banomdöme', badgeGold: true, title: 'Club de Golf Alcanada — Ärlig recension av en PGA Professional (2026)', intro: 'Banan jag tar folk till när jag vill att de ska åka hem med en historia. Fyren förändrar allt.', readTime: '7 min', keywords: 'Kustbana · Par 72 · €115–220 · Rolex Challenge Tour Grand Final' },
-  { slug: 'santa-ponsa-1-review', badge: 'Banomdöme', badgeGold: true, title: 'Golf Santa Ponsa 1, Mallorca — Ärlig recension av en PGA Professional (2026)', intro: 'En av Europas längsta banor, DP World Tour-historia och en bana som verkligen återger självförtroendet med drivern.', readTime: '6 min', keywords: 'Championship · Par 72 · €77–126 · Öppen för besökare' },
+  { slug: 'son-gual-review', badge: 'BanomdÃ¶me', badgeGold: true, title: 'Son Gual Golf Mallorca â€” Ã„rlig recension av en PGA Professional (2026)', intro: 'Min mest spelade bana pÃ¥ Ã¶n. Vinden, greenerna, avslutningshÃ¥len â€” och varfÃ¶r Obama och Nadal alltid kommer tillbaka.', readTime: '7 min', keywords: 'Championship Â· Par 72 Â· â‚¬80â€“165 Â· Handicap krÃ¤vs' },
+  { slug: 'alcanada-review', badge: 'BanomdÃ¶me', badgeGold: true, title: 'Club de Golf Alcanada â€” Ã„rlig recension av en PGA Professional (2026)', intro: 'Banan jag tar folk till nÃ¤r jag vill att de ska Ã¥ka hem med en historia. Fyren fÃ¶rÃ¤ndrar allt.', readTime: '7 min', keywords: 'Kustbana Â· Par 72 Â· â‚¬115â€“220 Â· Rolex Challenge Tour Grand Final' },
+  { slug: 'santa-ponsa-1-review', badge: 'BanomdÃ¶me', badgeGold: true, title: 'Golf Santa Ponsa 1, Mallorca â€” Ã„rlig recension av en PGA Professional (2026)', intro: 'En av Europas lÃ¤ngsta banor, DP World Tour-historia och en bana som verkligen Ã¥terger sjÃ¤lvfÃ¶rtroendet med drivern.', readTime: '6 min', keywords: 'Championship Â· Par 72 Â· â‚¬77â€“126 Â· Ã–ppen fÃ¶r besÃ¶kare' },
 ]
 
 const comingSoonGuides = [
-  { slug: 'a-day-at-son-gual', badge: 'Upplevelsen', badgeGold: false, title: 'En dag på Son Gual med en PGA-professionell', intro: 'Vad som faktiskt händer när du tillbringar en hel dag på Mallorcas finaste bana med en coach som spelar den nästan varje vecka.', readTime: '5 min', keywords: 'Son Gual · Spela med ett proffs · Heldagsupplevelse' },
-  { slug: 'best-golf-courses-mallorca', badge: 'Guide', badgeGold: false, title: 'De bästa golfbanorna på Mallorca — En PGA-professionells ärliga ranking', intro: 'Tjugotvå banor på ön. Så här skulle jag rangordna dem för en besökare med begränsad tid och höga krav.', readTime: '8 min', keywords: 'Alla nivåer · Greenfees jämfört · Uppdaterad 2026' },
-  { slug: 'is-mallorca-good-for-golf', badge: 'Guide', badgeGold: false, title: 'Är Mallorca bra för golf? Ett ärligt svar från någon som bor här', intro: 'Den ofiltrerade versionen — vad ön gör bättre än Portugal, var den faller kort och vem den passar.', readTime: '5 min', keywords: 'Mallorca vs Portugal · Banornas kvalitet · Alla nivåer' },
-  { slug: 'best-time-play-golf-mallorca', badge: 'Guide', badgeGold: false, title: 'Bästa tiden att spela golf på Mallorca — Månad för månad', intro: 'Oktober är den månad jag skulle välja. Här är varför, och vad varje månad faktiskt levererar när det gäller väder, pris och trängsel.', readTime: '6 min', keywords: 'Väder · Greenfees per säsong · Trängsel' },
-  { slug: 'golf-cost-mallorca', badge: 'Guide', badgeGold: false, title: 'Vad kostar golf på Mallorca? Greenfees, uthyrning och dolda kostnader', intro: 'Den fullständiga bilden av vad en golfresa hit faktiskt kostar — greenfees, uthyrning, caddies och var du kan spara utan att kompromissa.', readTime: '5 min', keywords: '€77–220 greenfees · Uthyrning · Caddies · Priser 2026' },
-  { slug: 'golf-trip-planning-mallorca', badge: 'Guide', badgeGold: false, title: 'Planera en golfresa till Mallorca — Allt du behöver veta', intro: 'Flyg, banor, boende nära golfen, hur du tar dig runt. Den praktiska guiden jag önskade att det funnits när jag flyttade hit.', readTime: '7 min', keywords: 'Reseplanering · Boende · Transport' },
+  { slug: 'a-day-at-son-gual', badge: 'Upplevelsen', badgeGold: false, title: 'En dag pÃ¥ Son Gual med en PGA-professionell', intro: 'Vad som faktiskt hÃ¤nder nÃ¤r du tillbringar en hel dag pÃ¥ Mallorcas finaste bana med en coach som spelar den nÃ¤stan varje vecka.', readTime: '5 min', keywords: 'Son Gual Â· Spela med ett proffs Â· Heldagsupplevelse' },
+  { slug: 'best-golf-courses-mallorca', badge: 'Guide', badgeGold: false, title: 'De bÃ¤sta golfbanorna pÃ¥ Mallorca â€” En PGA-professionells Ã¤rliga ranking', intro: 'TjugotvÃ¥ banor pÃ¥ Ã¶n. SÃ¥ hÃ¤r skulle jag rangordna dem fÃ¶r en besÃ¶kare med begrÃ¤nsad tid och hÃ¶ga krav.', readTime: '8 min', keywords: 'Alla nivÃ¥er Â· Greenfees jÃ¤mfÃ¶rt Â· Uppdaterad 2026' },
+  { slug: 'is-mallorca-good-for-golf', badge: 'Guide', badgeGold: false, title: 'Ã„r Mallorca bra fÃ¶r golf? Ett Ã¤rligt svar frÃ¥n nÃ¥gon som bor hÃ¤r', intro: 'Den ofiltrerade versionen â€” vad Ã¶n gÃ¶r bÃ¤ttre Ã¤n Portugal, var den faller kort och vem den passar.', readTime: '5 min', keywords: 'Mallorca vs Portugal Â· Banornas kvalitet Â· Alla nivÃ¥er' },
+  { slug: 'best-time-play-golf-mallorca', badge: 'Guide', badgeGold: false, title: 'BÃ¤sta tiden att spela golf pÃ¥ Mallorca â€” MÃ¥nad fÃ¶r mÃ¥nad', intro: 'Oktober Ã¤r den mÃ¥nad jag skulle vÃ¤lja. HÃ¤r Ã¤r varfÃ¶r, och vad varje mÃ¥nad faktiskt levererar nÃ¤r det gÃ¤ller vÃ¤der, pris och trÃ¤ngsel.', readTime: '6 min', keywords: 'VÃ¤der Â· Greenfees per sÃ¤song Â· TrÃ¤ngsel' },
+  { slug: 'golf-cost-mallorca', badge: 'Guide', badgeGold: false, title: 'Vad kostar golf pÃ¥ Mallorca? Greenfees, uthyrning och dolda kostnader', intro: 'Den fullstÃ¤ndiga bilden av vad en golfresa hit faktiskt kostar â€” greenfees, uthyrning, caddies och var du kan spara utan att kompromissa.', readTime: '5 min', keywords: 'â‚¬77â€“220 greenfees Â· Uthyrning Â· Caddies Â· Priser 2026' },
+  { slug: 'golf-trip-planning-mallorca', badge: 'Guide', badgeGold: false, title: 'Planera en golfresa till Mallorca â€” Allt du behÃ¶ver veta', intro: 'Flyg, banor, boende nÃ¤ra golfen, hur du tar dig runt. Den praktiska guiden jag Ã¶nskade att det funnits nÃ¤r jag flyttade hit.', readTime: '7 min', keywords: 'Reseplanering Â· Boende Â· Transport' },
 ]
 
 export default function GuidesIndex_SV() {
@@ -39,13 +39,13 @@ export default function GuidesIndex_SV() {
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Guider</span>
           </p>
-          <h1 dangerouslySetInnerHTML={{__html: 'Golf på Mallorca.<br />Ärliga guider.'}} />
+          <h1 dangerouslySetInnerHTML={{__html: 'Golf pÃ¥ Mallorca.<br />Ã„rliga guider.'}} />
           <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
-            Banomdömen, reseplanering och greenfees — skrivna av en PGA Professional som spelar här varje vecka.
+            BanomdÃ¶men, reseplanering och greenfees â€” skrivna av en PGA Professional som spelar hÃ¤r varje vecka.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
             <span className="page-hero__tag">Uppdaterad 2026</span>
-            <span className="page-hero__tag page-hero__tag--gold">★ Förstahandsomdömen</span>
+            <span className="page-hero__tag page-hero__tag--gold">â˜… FÃ¶rstahandsomdÃ¶men</span>
             <span className="page-hero__tag">PGA Professional</span>
           </div>
         </div>
@@ -107,14 +107,15 @@ export default function GuidesIndex_SV() {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">Redo att spela?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>En privat runda på en av dessa banor, med en PGA Professional vid din sida.</h2>
-          <p>Berätta dina datum och vad du söker. Jag svarar personligen inom 24 timmar.</p>
+          <h2 className="serif-display" style={{color:'#fff'}}>En privat runda pÃ¥ en av dessa banor, med en PGA Professional vid din sida.</h2>
+          <p>BerÃ¤tta dina datum och vad du sÃ¶ker. Jag svarar personligen inom 24 timmar.</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/sv/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Se upplevelserna →</Link>
+          <Link href="/sv/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>Se upplevelserna â†’</Link>
           <Link href="/sv/contact" className="btn btn--outline-white">Kontakta oss</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
+

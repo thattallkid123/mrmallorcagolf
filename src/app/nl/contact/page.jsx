@@ -1,10 +1,10 @@
-import PageLayout from '../../../components/PageLayout'
+﻿import PageLayout from '../../../components/PageLayout'
 import ContactForm_NL from './ContactForm_NL'
 
 export const metadata = {
-  title: 'Contact — Mr Mallorca Golf | Andy Griffiths PGA Professional',
+  title: 'Contact â€” Mr Mallorca Golf | Andy Griffiths PGA Professional',
   description: 'Organiseer uw privegolfdag op Mallorca. Andy Griffiths reageert persoonlijk binnen 24 uur.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/nl/contact' },
+  alternates: { canonical: 'https://mrmallorcagolf.com/nl/contact' },
 }
 
 export default function Contact_NL() {
@@ -14,3 +14,4 @@ export default function Contact_NL() {
     </PageLayout>
   )
 }
+
