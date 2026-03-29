@@ -4,9 +4,30 @@ import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
 
 export const metadata = {
-  title: "Is Mallorca Good for Golf? A PGA Professional's Answer",
+  title: "Is Mallorca Good for Golf? A PGA Professional’s Answer",
   description: "Is Mallorca good for golf? A PGA professional based on the island gives an honest answer — world-class courses, year-round conditions, and what to do beyond the fairways.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/is-mallorca-good-for-golf' },
+  alternates: {
+    canonical: "https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf",
+    languages: {
+      'en': "https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf",
+      'x-default': "https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf",
+    }
+  },
+  openGraph: {
+    type: 'article',
+    url: "https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf",
+    title: "Is Mallorca Good for Golf? A PGA Professional’s Answer",
+    description: "Is Mallorca good for golf? A PGA professional based on the island gives an honest answer — world-class courses, year-round conditions, and what to do beyond the fairways.",
+    publishedTime: '2026-03-01',
+    authors: ['Andy Griffiths'],
+    images: [{ url: "https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg", width: 1200, height: 630, alt: "Is Mallorca Good for Golf? A PGA Professional’s Answer" }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Is Mallorca Good for Golf? A PGA Professional’s Answer",
+    description: "Is Mallorca good for golf? A PGA professional based on the island gives an honest answer — world-class courses, year-round conditions, and what to do beyond the fairways.",
+    images: ["https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg"],
+  },
 }
 
 const meta = {

@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: '与职业球手同场 — 马略卡岛私人高尔夫日',
   description: '在马略卡岛与英国PGA高级职业教练Andy Griffiths同打一轮私人高尔夫。球场实地指导，全天全程安排。每人€350起。',
-  alternates: { canonical: 'https://mrmallorcagolf.com/zh/play-with-a-pro' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/zh/play-with-a-pro' },
 }
 
 export default function PlayWithAPro_ZH() {

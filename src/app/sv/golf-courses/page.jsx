@@ -7,16 +7,16 @@ export const metadata = {
   title: 'Mallorca Golfguide 2026 — Alla banor på ön',
   description: 'Den kompletta guiden till golf på Mallorca — alla 22 banor, greenavgifter, svårighetsbetyg och ärliga rekommendationer från en PGA-professional baserad på ön. 2026-utgåvan.',
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/sv/golf-courses',
+    canonical: 'https://www.mrmallorcagolf.com/sv/golf-courses',
     languages: {
-      'en': 'https://mrmallorcagolf.com/golf-courses',
-      'de': 'https://mrmallorcagolf.com/de/golf-courses',
-      'es': 'https://mrmallorcagolf.com/es/golf-courses',
-      'fr': 'https://mrmallorcagolf.com/fr/golf-courses',
-      'nl': 'https://mrmallorcagolf.com/nl/golf-courses',
-      'sv': 'https://mrmallorcagolf.com/sv/golf-courses',
-      'zh': 'https://mrmallorcagolf.com/zh/golf-courses',
-      'x-default': 'https://mrmallorcagolf.com/golf-courses',
+      'en': 'https://www.mrmallorcagolf.com/golf-courses',
+      'de': 'https://www.mrmallorcagolf.com/de/golf-courses',
+      'es': 'https://www.mrmallorcagolf.com/es/golf-courses',
+      'fr': 'https://www.mrmallorcagolf.com/fr/golf-courses',
+      'nl': 'https://www.mrmallorcagolf.com/nl/golf-courses',
+      'sv': 'https://www.mrmallorcagolf.com/sv/golf-courses',
+      'zh': 'https://www.mrmallorcagolf.com/zh/golf-courses',
+      'x-default': 'https://www.mrmallorcagolf.com/golf-courses',
     }
   }
 }

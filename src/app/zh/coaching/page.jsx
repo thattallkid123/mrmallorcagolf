@@ -6,16 +6,16 @@ export const metadata = {
   title: '马洛卡球场实地高尔夫教练 — PGA职业选手',
   description: '由PGA高级职业选手安迪·格里菲思提供的马洛卡球场实地高尔夫教练。真实条件下的真实改善——面向访客和常驻高尔夫球手。',
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/zh/coaching',
+    canonical: 'https://www.mrmallorcagolf.com/zh/coaching',
     languages: {
-      'en': 'https://mrmallorcagolf.com/coaching',
-      'de': 'https://mrmallorcagolf.com/de/coaching',
-      'es': 'https://mrmallorcagolf.com/es/coaching',
-      'fr': 'https://mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://mrmallorcagolf.com/coaching',
+      'en': 'https://www.mrmallorcagolf.com/coaching',
+      'de': 'https://www.mrmallorcagolf.com/de/coaching',
+      'es': 'https://www.mrmallorcagolf.com/es/coaching',
+      'fr': 'https://www.mrmallorcagolf.com/fr/coaching',
+      'nl': 'https://www.mrmallorcagolf.com/nl/coaching',
+      'sv': 'https://www.mrmallorcagolf.com/sv/coaching',
+      'zh': 'https://www.mrmallorcagolf.com/zh/coaching',
+      'x-default': 'https://www.mrmallorcagolf.com/coaching',
     }
   }
 }

@@ -7,7 +7,7 @@ export const viewport = {
 }
 
 export const metadata = {
-  metadataBase: new URL('https://mrmallorcagolf.com'),
+  metadataBase: new URL('https://www.mrmallorcagolf.com'),
   title: {
     template: '%s | Mr Mallorca Golf',
     default: "Mr Mallorca Golf — Play Mallorca's Best Courses with a PGA Professional",
@@ -17,17 +17,17 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://mrmallorcagolf.com',
+    url: 'https://www.mrmallorcagolf.com',
     siteName: 'Mr Mallorca Golf',
     title: "Mr Mallorca Golf — Play Mallorca's Best Courses with a PGA Professional",
     description: 'Private golf experiences in Mallorca with a PGA Advanced Professional. Full days on Son Gual, Alcanada, and more.',
-    images: [{ url: 'https://mrmallorcagolf.com/images/hero-main.jpg', width: 1600, height: 660 }],
+    images: [{ url: 'https://www.mrmallorcagolf.com/images/hero-main.jpg', width: 1600, height: 660 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Mr Mallorca Golf — Play Mallorca's Best Courses with a PGA Professional",
     description: 'Private golf experiences in Mallorca with a PGA Advanced Professional.',
-    images: ['https://mrmallorcagolf.com/images/hero-main.jpg'],
+    images: ['https://www.mrmallorcagolf.com/images/hero-main.jpg'],
   },
   robots: {
     index: true,
@@ -45,7 +45,7 @@ const PERSON_SCHEMA = {
   name: 'Andy Griffiths',
   jobTitle: 'PGA Advanced Professional',
   description: 'UK PGA Advanced Professional, Trackman Master, and golf coach with 18 years experience across three continents. Now offering private play-with-a-pro experiences and on-course coaching in Mallorca, Spain.',
-  url: 'https://mrmallorcagolf.com/about',
+  url: 'https://www.mrmallorcagolf.com/about',
   sameAs: [
     'https://www.instagram.com/mrmallorcagolf',
     'https://www.youtube.com/@mrmallorcagolf',
@@ -63,7 +63,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   '@type': 'SportsActivityLocation',
   name: 'Mr Mallorca Golf',
   description: 'Private play-with-a-pro golf experiences and on-course coaching in Mallorca, Spain, led by PGA Advanced Professional Andy Griffiths.',
-  url: 'https://mrmallorcagolf.com',
+  url: 'https://www.mrmallorcagolf.com',
   telephone: '+34624466702',
   email: 'andy@mrmallorcagolf.com',
   address: {

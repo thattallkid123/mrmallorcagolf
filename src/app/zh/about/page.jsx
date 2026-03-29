@@ -8,16 +8,16 @@ export const metadata = {
   title: '关于安迪·格里菲思 — PGA职业选手，马洛卡',
   description: "安迪·格里菲思是英国PGA高级职业选手，现居马洛卡。曾任职于佩布尔滩、埃维昂，在中国执教11年。",
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/zh/about',
+    canonical: 'https://www.mrmallorcagolf.com/zh/about',
     languages: {
-      'en': 'https://mrmallorcagolf.com/about',
-      'de': 'https://mrmallorcagolf.com/de/about',
-      'es': 'https://mrmallorcagolf.com/es/about',
-      'fr': 'https://mrmallorcagolf.com/fr/about',
-      'nl': 'https://mrmallorcagolf.com/nl/about',
-      'sv': 'https://mrmallorcagolf.com/sv/about',
-      'zh': 'https://mrmallorcagolf.com/zh/about',
-      'x-default': 'https://mrmallorcagolf.com/about',
+      'en': 'https://www.mrmallorcagolf.com/about',
+      'de': 'https://www.mrmallorcagolf.com/de/about',
+      'es': 'https://www.mrmallorcagolf.com/es/about',
+      'fr': 'https://www.mrmallorcagolf.com/fr/about',
+      'nl': 'https://www.mrmallorcagolf.com/nl/about',
+      'sv': 'https://www.mrmallorcagolf.com/sv/about',
+      'zh': 'https://www.mrmallorcagolf.com/zh/about',
+      'x-default': 'https://www.mrmallorcagolf.com/about',
     }
   }
 }

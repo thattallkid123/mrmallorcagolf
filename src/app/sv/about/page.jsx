@@ -8,16 +8,16 @@ export const metadata = {
   title: 'Om Andy Griffiths — PGA-professional, Mallorca',
   description: "Andy Griffiths är en brittisk PGA Advanced Professional baserad på Mallorca. Tidigare Pebble Beach, Evian, 11 år coaching i Kina.",
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/sv/about',
+    canonical: 'https://www.mrmallorcagolf.com/sv/about',
     languages: {
-      'en': 'https://mrmallorcagolf.com/about',
-      'de': 'https://mrmallorcagolf.com/de/about',
-      'es': 'https://mrmallorcagolf.com/es/about',
-      'fr': 'https://mrmallorcagolf.com/fr/about',
-      'nl': 'https://mrmallorcagolf.com/nl/about',
-      'sv': 'https://mrmallorcagolf.com/sv/about',
-      'zh': 'https://mrmallorcagolf.com/zh/about',
-      'x-default': 'https://mrmallorcagolf.com/about',
+      'en': 'https://www.mrmallorcagolf.com/about',
+      'de': 'https://www.mrmallorcagolf.com/de/about',
+      'es': 'https://www.mrmallorcagolf.com/es/about',
+      'fr': 'https://www.mrmallorcagolf.com/fr/about',
+      'nl': 'https://www.mrmallorcagolf.com/nl/about',
+      'sv': 'https://www.mrmallorcagolf.com/sv/about',
+      'zh': 'https://www.mrmallorcagolf.com/zh/about',
+      'x-default': 'https://www.mrmallorcagolf.com/about',
     }
   }
 }

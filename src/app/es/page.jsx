@@ -6,7 +6,7 @@ import RevealObserver from '../../components/RevealObserver'
 export const metadata = {
   title: 'Mr Mallorca Golf — Los mejores campos de Mallorca con un Profesional PGA',
   description: 'Experiencias de golf privadas en Mallorca con un PGA Advanced Professional. Días completos en Son Gual, Alcanada y más — coaching en campo, todo organizado.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/es' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/es' },
 }
 
 export default function HomeES() {

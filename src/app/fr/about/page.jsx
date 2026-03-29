@@ -8,16 +8,16 @@ export const metadata = {
   title: 'À propos d\'Andy Griffiths — Professionnel PGA Avancé, Majorque',
   description: "Andy Griffiths est un professionnel PGA avancé du Royaume-Uni basé à Majorque. Ancien coach à Pebble Beach, Evian, 11 ans de coaching en Chine.",
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/fr/about',
+    canonical: 'https://www.mrmallorcagolf.com/fr/about',
     languages: {
-      'en': 'https://mrmallorcagolf.com/about',
-      'de': 'https://mrmallorcagolf.com/de/about',
-      'es': 'https://mrmallorcagolf.com/es/about',
-      'fr': 'https://mrmallorcagolf.com/fr/about',
-      'nl': 'https://mrmallorcagolf.com/nl/about',
-      'sv': 'https://mrmallorcagolf.com/sv/about',
-      'zh': 'https://mrmallorcagolf.com/zh/about',
-      'x-default': 'https://mrmallorcagolf.com/about',
+      'en': 'https://www.mrmallorcagolf.com/about',
+      'de': 'https://www.mrmallorcagolf.com/de/about',
+      'es': 'https://www.mrmallorcagolf.com/es/about',
+      'fr': 'https://www.mrmallorcagolf.com/fr/about',
+      'nl': 'https://www.mrmallorcagolf.com/nl/about',
+      'sv': 'https://www.mrmallorcagolf.com/sv/about',
+      'zh': 'https://www.mrmallorcagolf.com/zh/about',
+      'x-default': 'https://www.mrmallorcagolf.com/about',
     }
   }
 }

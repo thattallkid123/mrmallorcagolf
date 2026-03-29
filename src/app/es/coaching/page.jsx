@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: 'Coaching de Golf en Campo en Mallorca — PGA Profesional',
   description: 'Coaching de golf en campo en Mallorca con UK PGA Advanced Professional Andy Griffiths. Mejora real en condiciones reales — para golfistas en visita y residentes.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/es/coaching' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/es/coaching' },
 }
 
 export default function Coaching_ES() {

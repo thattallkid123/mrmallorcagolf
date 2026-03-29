@@ -6,7 +6,7 @@ import GolfCoursesClient from '../../../app/golf-courses/GolfCoursesClient'
 export const metadata = {
   title: 'Guia de Golf en Mallorca 2026 — Todos los campos de la isla',
   description: 'La guia completa del golf en Mallorca — 22 campos, green fees, dificultades y recomendaciones honestas de un PGA profesional en la isla.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/es/golf-courses' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/es/golf-courses' },
 }
 
 export default function GolfCourses_ES() {

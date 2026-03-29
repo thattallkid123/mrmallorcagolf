@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: 'Guide Golf Majorque — Avis sur les parcours & conseils',
   description: 'Guides honnêtes sur le golf à Majorque par un Professionnel PGA. Avis sur les parcours, green fees et planification de voyage — mis à jour pour 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/fr/guides' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/fr/guides' },
 }
 
 const liveGuides = [

@@ -5,11 +5,11 @@ export const metadata = {
   title: 'Términos y Condiciones — Mr Mallorca Golf',
   description: 'Términos y condiciones de las experiencias y servicios de Mr Mallorca Golf en Mallorca, España.',
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/es/terms',
+    canonical: 'https://www.mrmallorcagolf.com/es/terms',
     languages: {
-      'en': 'https://mrmallorcagolf.com/terms',
-      'es': 'https://mrmallorcagolf.com/es/terms',
-      'x-default': 'https://mrmallorcagolf.com/terms',
+      'en': 'https://www.mrmallorcagolf.com/terms',
+      'es': 'https://www.mrmallorcagolf.com/es/terms',
+      'x-default': 'https://www.mrmallorcagolf.com/terms',
     }
   }
 }

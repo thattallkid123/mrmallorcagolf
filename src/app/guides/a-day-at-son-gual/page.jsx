@@ -6,7 +6,28 @@ import Link from 'next/link'
 export const metadata = {
   title: "A Day at Son Gual — What the Play-With-a-Pro Experience Actually Looks Like",
   description: "From the drive up to the last putt to lunch on the terrace — a specific, honest account of what a play-with-a-pro day at Son Gual looks and feels like.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/a-day-at-son-gual' },
+  alternates: {
+    canonical: "https://www.mrmallorcagolf.com/guides/a-day-at-son-gual",
+    languages: {
+      'en': "https://www.mrmallorcagolf.com/guides/a-day-at-son-gual",
+      'x-default': "https://www.mrmallorcagolf.com/guides/a-day-at-son-gual",
+    }
+  },
+  openGraph: {
+    type: 'article',
+    url: "https://www.mrmallorcagolf.com/guides/a-day-at-son-gual",
+    title: "A Day at Son Gual — What the Play-With-a-Pro Experience Actually Looks Like",
+    description: "From the drive up to the last putt to lunch on the terrace — a specific, honest account of what a play-with-a-pro day at Son Gual looks and feels like.",
+    publishedTime: '2026-03-01',
+    authors: ['Andy Griffiths'],
+    images: [{ url: "https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp", width: 1200, height: 630, alt: "A Day at Son Gual — What the Play-With-a-Pro Experience Actually Looks Like" }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "A Day at Son Gual — What the Play-With-a-Pro Experience Actually Looks Like",
+    description: "From the drive up to the last putt to lunch on the terrace — a specific, honest account of what a play-with-a-pro day at Son Gual looks and feels like.",
+    images: ["https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp"],
+  },
 }
 
 const meta = {

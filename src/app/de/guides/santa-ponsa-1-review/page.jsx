@@ -5,7 +5,7 @@ import PostLayout from '../../../guides/PostLayout'
 export const metadata = {
   title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional",
   description: "Santa Ponsa 1 golf course Mallorca reviewed by a PGA professional. One of Europe",
-  alternates: { canonical: 'https://mrmallorcagolf.com/de/guides/santa-ponsa-1-review' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/de/guides/santa-ponsa-1-review' },
 }
 
 const meta = {

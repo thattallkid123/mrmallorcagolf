@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: 'Mallorca Golfführer — Platz-Bewertungen & Tipps',
   description: 'Ehrliche Golfratgeber für Mallorca von einem PGA Professional. Platz-Bewertungen, Greenfees und Reiseplanung — aktualisiert 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/de/guides' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/de/guides' },
 }
 
 const liveGuides = [

@@ -5,11 +5,11 @@ export const metadata = {
   title: 'Privacy Policy — Mr Mallorca Golf',
   description: 'Privacy policy for Mr Mallorca Golf. How we collect, use, and protect your personal data in accordance with GDPR and Spanish data protection law.',
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/privacy-policy',
+    canonical: 'https://www.mrmallorcagolf.com/privacy-policy',
     languages: {
-      'en': 'https://mrmallorcagolf.com/privacy-policy',
-      'es': 'https://mrmallorcagolf.com/es/privacy-policy',
-      'x-default': 'https://mrmallorcagolf.com/privacy-policy',
+      'en': 'https://www.mrmallorcagolf.com/privacy-policy',
+      'es': 'https://www.mrmallorcagolf.com/es/privacy-policy',
+      'x-default': 'https://www.mrmallorcagolf.com/privacy-policy',
     }
   }
 }

@@ -5,7 +5,7 @@ import PostLayout from '../../../guides/PostLayout'
 export const metadata = {
   title: "Son Gual Golf Majorque — Avis Honnête d'un Professionnel PGA (2026)",
   description: "Le parcours de golf Son Gual à Majorque, évalué par un PGA professionnel.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/fr/guides/son-gual-review' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/fr/guides/son-gual-review' },
 }
 
 const meta = {

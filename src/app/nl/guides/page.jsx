@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: 'Mallorca Golfgids — Baanbeoordelingen & tips',
   description: 'Eerlijke golfgidsen voor Mallorca van een PGA Professional. Baanbeoordelingen, greenfees en reisplanning — bijgewerkt voor 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/nl/guides' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/nl/guides' },
 }
 
 const liveGuides = [

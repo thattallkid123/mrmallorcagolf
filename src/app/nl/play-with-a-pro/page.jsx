@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: 'Spelen met een Pro — Privegolfdagen op Mallorca',
   description: 'Een prive golfronde op Mallorca, gespeeld naast UK PGA Advanced Professional Andy Griffiths. Coaching op de baan, volle dag geregeld. Vanaf €350 per persoon.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/nl/play-with-a-pro' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/nl/play-with-a-pro' },
 }
 
 export default function PlayWithAPro_NL() {

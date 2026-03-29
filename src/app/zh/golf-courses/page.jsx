@@ -7,16 +7,16 @@ export const metadata = {
   title: '马洛卡高尔夫指南2026 — 岛上的每一个球场',
   description: '完整的马洛卡高尔夫指南——所有22个球场、果岭费、难度等级和PGA职业选手现场的诚实推荐。2026版。',
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/zh/golf-courses',
+    canonical: 'https://www.mrmallorcagolf.com/zh/golf-courses',
     languages: {
-      'en': 'https://mrmallorcagolf.com/golf-courses',
-      'de': 'https://mrmallorcagolf.com/de/golf-courses',
-      'es': 'https://mrmallorcagolf.com/es/golf-courses',
-      'fr': 'https://mrmallorcagolf.com/fr/golf-courses',
-      'nl': 'https://mrmallorcagolf.com/nl/golf-courses',
-      'sv': 'https://mrmallorcagolf.com/sv/golf-courses',
-      'zh': 'https://mrmallorcagolf.com/zh/golf-courses',
-      'x-default': 'https://mrmallorcagolf.com/golf-courses',
+      'en': 'https://www.mrmallorcagolf.com/golf-courses',
+      'de': 'https://www.mrmallorcagolf.com/de/golf-courses',
+      'es': 'https://www.mrmallorcagolf.com/es/golf-courses',
+      'fr': 'https://www.mrmallorcagolf.com/fr/golf-courses',
+      'nl': 'https://www.mrmallorcagolf.com/nl/golf-courses',
+      'sv': 'https://www.mrmallorcagolf.com/sv/golf-courses',
+      'zh': 'https://www.mrmallorcagolf.com/zh/golf-courses',
+      'x-default': 'https://www.mrmallorcagolf.com/golf-courses',
     }
   }
 }

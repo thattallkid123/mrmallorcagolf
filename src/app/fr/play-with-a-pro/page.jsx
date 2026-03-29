@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: 'Jouer avec un Pro — Journées Golf Privées à Majorque',
   description: 'Une partie de golf privée à Majorque aux côtés du UK PGA Advanced Professional Andy Griffiths. Coaching sur parcours, journée complète organisée. À partir de €350 par personne.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/fr/play-with-a-pro' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/fr/play-with-a-pro' },
 }
 
 export default function PlayWithAPro_FR() {

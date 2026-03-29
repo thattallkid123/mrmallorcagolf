@@ -5,7 +5,7 @@ import PostLayout from '../../../guides/PostLayout'
 export const metadata = {
   title: "Son Gual高尔夫球场马略卡岛 — PGA职业球手诚实点评（2026）",
   description: "PGA职业球手对马略卡岛Son Gual高尔夫球场的亲身评测。",
-  alternates: { canonical: 'https://mrmallorcagolf.com/zh/guides/son-gual-review' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/zh/guides/son-gual-review' },
 }
 
 const meta = {

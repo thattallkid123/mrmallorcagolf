@@ -4,7 +4,7 @@ import ContactForm_FR from './ContactForm_FR'
 export const metadata = {
   title: 'Contact — Mr Mallorca Golf | Andy Griffiths PGA Professionnel',
   description: 'Organisez votre journée golf privee a Majorque. Andy Griffiths repond personnellement sous 24 heures.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/fr/contact' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/fr/contact' },
 }
 
 export default function Contact_FR() {

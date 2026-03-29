@@ -5,7 +5,7 @@ import RevealObserver from '../../components/RevealObserver'
 export const metadata = {
   title: 'Mallorca Golf Guide — Course Reviews, Tips & Advice',
   description: 'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit — all updated for 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/guides' },
 }
 
 const liveGuides = [

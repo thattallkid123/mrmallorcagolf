@@ -7,16 +7,16 @@ export const metadata = {
   title: 'Mallorca Golf Guide 2026 — Every Course on the Island',
   description: 'The complete guide to golf in Mallorca — all 22 courses, green fees, difficulty ratings, and honest recommendations from a PGA professional based on the island. 2026 edition.',
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/golf-courses',
+    canonical: 'https://www.mrmallorcagolf.com/golf-courses',
     languages: {
-      'en': 'https://mrmallorcagolf.com/golf-courses',
-      'de': 'https://mrmallorcagolf.com/de/golf-courses',
-      'es': 'https://mrmallorcagolf.com/es/golf-courses',
-      'fr': 'https://mrmallorcagolf.com/fr/golf-courses',
-      'nl': 'https://mrmallorcagolf.com/nl/golf-courses',
-      'sv': 'https://mrmallorcagolf.com/sv/golf-courses',
-      'zh': 'https://mrmallorcagolf.com/zh/golf-courses',
-      'x-default': 'https://mrmallorcagolf.com/golf-courses',
+      'en': 'https://www.mrmallorcagolf.com/golf-courses',
+      'de': 'https://www.mrmallorcagolf.com/de/golf-courses',
+      'es': 'https://www.mrmallorcagolf.com/es/golf-courses',
+      'fr': 'https://www.mrmallorcagolf.com/fr/golf-courses',
+      'nl': 'https://www.mrmallorcagolf.com/nl/golf-courses',
+      'sv': 'https://www.mrmallorcagolf.com/sv/golf-courses',
+      'zh': 'https://www.mrmallorcagolf.com/zh/golf-courses',
+      'x-default': 'https://www.mrmallorcagolf.com/golf-courses',
     }
   }
 }

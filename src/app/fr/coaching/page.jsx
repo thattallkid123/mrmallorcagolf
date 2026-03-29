@@ -6,16 +6,16 @@ export const metadata = {
   title: 'Coaching Golf sur Parcours à Majorque — Professionnel PGA',
   description: 'Coaching golf sur parcours à Majorque avec un Professionnel PGA Avancé Andy Griffiths. Amélioration réelle dans des conditions réelles — pour golfeurs en visite et résidents.',
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/fr/coaching',
+    canonical: 'https://www.mrmallorcagolf.com/fr/coaching',
     languages: {
-      'en': 'https://mrmallorcagolf.com/coaching',
-      'de': 'https://mrmallorcagolf.com/de/coaching',
-      'es': 'https://mrmallorcagolf.com/es/coaching',
-      'fr': 'https://mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://mrmallorcagolf.com/coaching',
+      'en': 'https://www.mrmallorcagolf.com/coaching',
+      'de': 'https://www.mrmallorcagolf.com/de/coaching',
+      'es': 'https://www.mrmallorcagolf.com/es/coaching',
+      'fr': 'https://www.mrmallorcagolf.com/fr/coaching',
+      'nl': 'https://www.mrmallorcagolf.com/nl/coaching',
+      'sv': 'https://www.mrmallorcagolf.com/sv/coaching',
+      'zh': 'https://www.mrmallorcagolf.com/zh/coaching',
+      'x-default': 'https://www.mrmallorcagolf.com/coaching',
     }
   }
 }

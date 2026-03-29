@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: 'Spela med ett Proffs — Privata Golfdagar på Mallorca',
   description: 'En privat golfrunda på Mallorca med UK PGA Advanced Professional Andy Griffiths. Coaching på banan, hel dag arrangerad. Från €350 per person.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/sv/play-with-a-pro' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/sv/play-with-a-pro' },
 }
 
 export default function PlayWithAPro_SV() {

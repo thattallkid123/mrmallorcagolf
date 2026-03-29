@@ -6,16 +6,16 @@ export const metadata = {
   title: 'On-Course Golf Coaching in Mallorca — PGA Professional',
   description: 'On-course golf coaching in Mallorca with PGA Advanced Professional Andy Griffiths. Real improvement in real conditions — for visiting and resident golfers.',
   alternates: {
-    canonical: 'https://mrmallorcagolf.com/coaching',
+    canonical: 'https://www.mrmallorcagolf.com/coaching',
     languages: {
-      'en': 'https://mrmallorcagolf.com/coaching',
-      'de': 'https://mrmallorcagolf.com/de/coaching',
-      'es': 'https://mrmallorcagolf.com/es/coaching',
-      'fr': 'https://mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://mrmallorcagolf.com/coaching',
+      'en': 'https://www.mrmallorcagolf.com/coaching',
+      'de': 'https://www.mrmallorcagolf.com/de/coaching',
+      'es': 'https://www.mrmallorcagolf.com/es/coaching',
+      'fr': 'https://www.mrmallorcagolf.com/fr/coaching',
+      'nl': 'https://www.mrmallorcagolf.com/nl/coaching',
+      'sv': 'https://www.mrmallorcagolf.com/sv/coaching',
+      'zh': 'https://www.mrmallorcagolf.com/zh/coaching',
+      'x-default': 'https://www.mrmallorcagolf.com/coaching',
     }
   }
 }

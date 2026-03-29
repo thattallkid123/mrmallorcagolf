@@ -5,7 +5,7 @@ import PostLayout from '../../../guides/PostLayout'
 export const metadata = {
   title: "Son Gual Golf Mallorca — Ärlig Recension av en PGA-proffs (2026)",
   description: "Son Gual golfbana på Mallorca recenserad av en PGA-proffs.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/sv/guides/son-gual-review' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/sv/guides/son-gual-review' },
 }
 
 const meta = {

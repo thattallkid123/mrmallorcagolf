@@ -5,7 +5,7 @@ import PostLayout from '../../../guides/PostLayout'
 export const metadata = {
   title: "Club de Golf Alcanada — A PGA Professional",
   description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/nl/guides/alcanada-review' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/nl/guides/alcanada-review' },
 }
 
 const meta = {

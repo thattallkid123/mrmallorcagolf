@@ -4,9 +4,30 @@ import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
 
 export const metadata = {
-  title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)",
+  title: "Son Gual Golf Mallorca — A PGA Professional’s Honest Review (2026)",
   description: "Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/son-gual-review' },
+  alternates: {
+    canonical: "https://www.mrmallorcagolf.com/guides/son-gual-review",
+    languages: {
+      'en': "https://www.mrmallorcagolf.com/guides/son-gual-review",
+      'x-default': "https://www.mrmallorcagolf.com/guides/son-gual-review",
+    }
+  },
+  openGraph: {
+    type: 'article',
+    url: "https://www.mrmallorcagolf.com/guides/son-gual-review",
+    title: "Son Gual Golf Mallorca — A PGA Professional’s Honest Review (2026)",
+    description: "Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.",
+    publishedTime: '2026-03-01',
+    authors: ['Andy Griffiths'],
+    images: [{ url: "https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp", width: 1200, height: 630, alt: "Son Gual Golf Mallorca — A PGA Professional’s Honest Review (2026)" }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Son Gual Golf Mallorca — A PGA Professional’s Honest Review (2026)",
+    description: "Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.",
+    images: ["https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp"],
+  },
 }
 
 const meta = {

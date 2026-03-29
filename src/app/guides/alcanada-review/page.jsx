@@ -4,9 +4,30 @@ import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
 
 export const metadata = {
-  title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)",
+  title: "Club de Golf Alcanada — A PGA Professional’s Honest Review (2026)",
   description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides/alcanada-review' },
+  alternates: {
+    canonical: "https://www.mrmallorcagolf.com/guides/alcanada-review",
+    languages: {
+      'en': "https://www.mrmallorcagolf.com/guides/alcanada-review",
+      'x-default': "https://www.mrmallorcagolf.com/guides/alcanada-review",
+    }
+  },
+  openGraph: {
+    type: 'article',
+    url: "https://www.mrmallorcagolf.com/guides/alcanada-review",
+    title: "Club de Golf Alcanada — A PGA Professional’s Honest Review (2026)",
+    description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
+    publishedTime: '2026-03-01',
+    authors: ['Andy Griffiths'],
+    images: [{ url: "https://www.mrmallorcagolf.com/images/alcanada-blog/alc-7.jpg", width: 1200, height: 630, alt: "Club de Golf Alcanada — A PGA Professional’s Honest Review (2026)" }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Club de Golf Alcanada — A PGA Professional’s Honest Review (2026)",
+    description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
+    images: ["https://www.mrmallorcagolf.com/images/alcanada-blog/alc-7.jpg"],
+  },
 }
 
 const meta = {

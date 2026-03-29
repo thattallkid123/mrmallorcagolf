@@ -5,7 +5,7 @@ import RevealObserver from '../../../components/RevealObserver'
 export const metadata = {
   title: '马略卡岛高尔夫指南 — 球场评测与建议',
   description: '由PGA职业教练撰写的马略卡岛高尔夫诚实指南。球场评测、果岭费用及行程规划 — 2026年更新版。',
-  alternates: { canonical: 'https://mrmallorcagolf.com/zh/guides' },
+  alternates: { canonical: 'https://www.mrmallorcagolf.com/zh/guides' },
 }
 
 const liveGuides = [
