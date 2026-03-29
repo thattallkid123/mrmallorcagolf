@@ -327,7 +327,7 @@ export default function HomePageFR() {
       {/* FAQ */}
       <section className="faq">
         <div className="faq__left reveal">
-          <p className="eyebrow">Questions</p>
+          <p className="eyebrow">Questions frequentes</p>
           <h2 className="serif-display">Ce que les gens demandent avant de se mettre en contact.</h2>
           <p>Dites-moi vos dates, votre handicap et ce que vous recherchez. Je vous répondrai personnellement dans les 24 heures.</p>
         </div>
