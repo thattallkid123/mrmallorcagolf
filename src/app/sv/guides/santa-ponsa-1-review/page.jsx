@@ -3,18 +3,21 @@ import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
 
 export const metadata = {
-  title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional",
-  description: "Santa Ponsa 1 golf course Mallorca reviewed by a PGA professional. One of Europe",
+  title: 'Golf Santa Ponsa 1, Mallorca - Ärlig recension av en PGA Professional',
+  description: 'Santa Ponsa 1 på Mallorca, sett genom ögonen på en PGA Professional. Tourhistoria, generösa fairways och förnyat självförtroende med drivern.',
   alternates: { canonical: 'https://mrmallorcagolf.com/sv/guides/santa-ponsa-1-review' },
 }
 
 const meta = {
-  badge: 'Course Review', badgeGold: true, readTime: '6 min read', updated: 'March 2026',
-  title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional",
-  intro: "En av öns längsta banor. European Tour-historia. Och fairwaysarna är tillräckligt breda för drivern.",
+  badge: 'Banrecension',
+  badgeGold: true,
+  readTime: '6 min läsning',
+  updated: 'Mars 2026',
+  title: 'Golf Santa Ponsa 1, Mallorca - Ärlig recension av en PGA Professional',
+  intro: 'En av öns längsta banor. Riktig European Tour-historia. Och fairways som är breda nog för drivern.',
   lang: 'sv',
   related: [
-    { slug: 'son-gual-review', title: 'Son Gual Golf — Honest Review 2026' },
+    { slug: 'son-gual-review', title: 'Son Gual Golf - Ärlig recension 2026' },
   ],
 }
 
@@ -23,46 +26,40 @@ export default function Post() {
     <PageLayout lang="sv">
       <RevealObserver />
       <PostLayout meta={meta} lang="sv">
-        <p style={{fontSize:'0.82rem',color:'var(--taupe)',fontStyle:'italic',borderBottom:'1px solid var(--linen)',paddingBottom:'1rem',marginBottom:'1.5rem'}}>Denna artikel skrevs på engelska och är översatt till svenska.</p>
+        <p>Santa Ponsa 1 är den enda publika banan i Santa Ponsa-gruppen och den med äkta European Tour-meriter. Här spelades Mallorca Golf Open på DP World Tour 2021. Det var banan som tog toppgolf tillbaka till ön efter ett årtionde utan tourgolf. Vinnaren Jeff Winther öppnade med två rundor på 62. Banan var redo för det.</p>
 
+        <h2>Varför den passar mitt spel - och troligen också ditt</h2>
+        <p>Jag kan säga det rakt ut: den här banan har hjälpt mig att hitta tillbaka till självförtroendet med drivern. Efter rundor på Son Gual eller Alcanada, där bra banstrategi ofta betyder att lämna drivern i bagen, är Santa Ponsa 1 något helt annat. Fairways är breda, de första hålen generösa, och banan belönar verkligen ett offensivt spel från tee.</p>
+        <p>Med min längd har jag ofta bara en wedge kvar in på par 4-greener efter en bra drive. För spelare med mer normal längd blir det en ordentlig utmaning när vinden kommer in, men det är den sortens utmaning som bygger självförtroende snarare än bryter ner det.</p>
 
-        <p>Santa Ponsa 1 is the only public course in the Santa Ponsa group and the one with genuine European Tour pedigree — it hosted the 2021 DP World Tour Mallorca Golf Open. This is the course that brought top-level professional golf back to the island after a decade away. The winner, Jeff Winther, shot 62 twice in the opening rounds. The course was ready for it.</p>
+        <h2>Hål 10</h2>
+        <p>Med sina 590 meter är 10:e ett av Europas längsta par 5-hål. Spelat rakt in i vinden känns det ännu längre. Det finns en mycket tillfredsställande version av hålet - driver, hybrid, wedge - och en betydligt mindre trevlig version där ett av de tre slagen går fel. Par 3-hålen är den andra ytterligheten: långa, med små greener. Här handlar det mer om att begränsa skadan än att jaga birdies.</p>
 
-        <h2>Why It Suits My Game — and Probably Yours</h2>
-        <p>I'll be direct about something: this course has helped me rediscover confidence with the driver. After rounds at Son Gual or Alcanada, where course management often means leaving driver in the bag, Santa Ponsa 1 is a different conversation entirely. The fairways are wide, the opening holes are generous, and the course genuinely rewards an aggressive approach from the tee.</p>
-        <p>With my distance, I'm often left with a pitching wedge into par-4 greens after a good drive. For players with more typical distances, the course presents a proper test when the wind comes in — but it's the kind of challenge that builds confidence rather than grinding it down.</p>
+        <h2>Kopplingen till DP World Tour</h2>
+        <p>Att vara värd för Mallorca Golf Open 2021 var viktigt för ön. Det var det första European Tour-evenemanget här på tio år, och Santa Ponsa 1 stod upp för uppgiften. Banskicket under tävlingsveckan, routingen under press och de scorer som var möjliga utan att banan gav upp - allt fungerade. Den här kvaliteten är äkta, och den märks direkt när man spelar banan som besökare.</p>
 
-        <h2>The 10th Hole</h2>
-        <p>At 590 metres, the 10th is one of the longest par-5s in Europe. Playing it into the wind makes it feel even longer. There's a genuinely satisfying version of this hole — hit driver, hit hybrid, hit wedge — and a much less satisfying version where one of those three goes wrong. The par-3s are the other end of the scale: long, with small greens. Damage limitation, not birdie opportunities.</p>
-
-        <h2>The DP World Tour Connection</h2>
-        <p>Hosting the 2021 DP World Tour Mallorca Golf Open was significant for the island. It was the first European Tour event here in ten years, and Santa Ponsa 1 held up under scrutiny. The course condition in tournament week, the routing under pressure, the scoring that was possible without the course being surrendered — it all worked. That pedigree is real, and it shows in how the course presents itself to visitors.</p>
-
-        <h2>The Mountain Views</h2>
-        <p>Holes 5, 6, and 7 on the front nine offer some of the best Tramuntana views on the island. Tall grass, mature trees, wildflowers, and the mountains framing everything behind. It's the kind of backdrop that makes a bad shot slightly more bearable. Slightly.</p>
+        <h2>Utsikten mot Tramuntana</h2>
+        <p>Hål 5, 6 och 7 på första nio erbjuder några av de bästa Tramuntana-vyerna på hela ön. Högt gräs, mogna träd, vildblommor och bergen som kuliss i bakgrunden. Det är den sortens vy som gör ett dåligt slag lite mer uthärdligt. Lite.</p>
 
         <div className="post-fact">
-          <div className="post-fact__item"><span className="post-fact__val">€77–126</span><span className="post-fact__label">Green fee range 2026</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">8/10</span><span className="post-fact__label">Difficulty</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">Par 72</span><span className="post-fact__label">Championship layout</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">Public</span><span className="post-fact__label">Open to all visitors</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">EUR 77-126</span><span className="post-fact__label">Greenfees 2026</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">8/10</span><span className="post-fact__label">Svårighet</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">Par 72</span><span className="post-fact__label">Championship-layout</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">Publik</span><span className="post-fact__label">Öppen för besökare</span></div>
         </div>
 
-        <h2>2026 Green Fees</h2>
-        <p>High season (mid-March to early June, mid-September to early November): €126. Mid-season: €106. Low season: €77. Full details at golf-santaponsa.com. A valid WHS handicap certificate is required.</p>
-        <p>Buggy €43 for 18 holes. Club hire €40. The course is public and openly bookable — no member access required. Book in advance in peak season; the DP World Tour history draws visitors who know what they're coming for.</p>
+        <h2>Greenfees 2026</h2>
+        <p>Högsäsong från mitten av mars till början av juni och från mitten av september till början av november: EUR 126. Mellansäsong: EUR 106. Lågsäsong: EUR 77. Fullständig prislista finns på golf-santaponsa.com. Giltigt WHS-handicapintyg krävs.</p>
+        <p>Buggy: EUR 43 för 18 hål. Klubbhyra: EUR 40. Banan är publik och fritt bokningsbar - inget medlemskap krävs. Boka i god tid under högsäsong; DP World Tour-historien lockar spelare som vet exakt varför de vill spela här.</p>
 
-        <h2>Verdict</h2>
-        <p>If you're driving the ball well and want to feel good about it, play Santa Ponsa 1. If you're between Son Gual and Alcanada for a serious day and want something that contrasts both — more open, more confidence-building, with proper European Tour history attached — this is the course. The par-3s will keep you honest. The rest of the round will give you something back.</p>
+        <h2>Omdöme</h2>
+        <p>Om du slår drivern bra och vill bygga vidare på den känslan ska du spela Santa Ponsa 1. Om du står mellan Son Gual och Alcanada för en större golfdag och vill ha något som kontrasterar mot båda - öppnare, mer självförtroendegivande och med riktig European Tour-historia - då är det här banan. Par 3-hålen håller dig ärlig. Resten av rundan ger dig mycket tillbaka.</p>
 
         <div className="post-cta">
-          <p>Want to play Santa Ponsa 1 as part of a Mallorca golf day? I can arrange it.</p>
-          <a href="/play-with-a-pro">See the play-with-a-pro experience →</a>
+          <p>Vill du spela Santa Ponsa 1 som en del av en golfdag på Mallorca? Jag kan ordna det.</p>
+          <a href="/sv/play-with-a-pro">Se play-with-a-pro-upplevelsen →</a>
         </div>
-
-
       </PostLayout>
     </PageLayout>
   )
 }
-

@@ -3,18 +3,21 @@ import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
 
 export const metadata = {
-  title: "Club de Golf Alcanada — A PGA Professional",
-  description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
+  title: '阿尔卡纳达高尔夫球场 - PGA职业教练诚实评测',
+  description: '从一位经常下场的PGA职业教练视角看Alcanada。灯塔、果岭、餐厅露台，以及2026年果岭费。',
   alternates: { canonical: 'https://mrmallorcagolf.com/zh/guides/alcanada-review' },
 }
 
 const meta = {
-  badge: 'Course Review', badgeGold: true, readTime: '6 min read', updated: 'March 2026',
-  title: "Club de Golf Alcanada — A PGA Professional",
-  intro: "我带人来打球时希望他们能带着故事离开的球场。灯塔改变了一切。",
+  badge: '球场评测',
+  badgeGold: true,
+  readTime: '6分钟',
+  updated: '2026年3月',
+  title: '阿尔卡纳达高尔夫球场 - PGA职业教练诚实评测',
+  intro: '这是我想让客人带着故事回家的时候会带他们去的球场。灯塔改变了一切。',
   lang: 'zh',
   related: [
-    { slug: 'son-gual-review', title: 'Son Gual Golf — Honest Review 2026' },
+    { slug: 'son-gual-review', title: 'Son Gual高尔夫 - 2026诚实评测' },
   ],
 }
 
@@ -23,58 +26,52 @@ export default function Post() {
     <PageLayout lang="zh">
       <RevealObserver />
       <PostLayout meta={meta} lang="zh">
-        
+        <p>如果我想让客人在打完球后带着一个真正的故事回家，我会带他们来Alcanada。它也许是整座岛上最令人难忘的一轮球。灯塔改变了一切。</p>
 
+        <h2>球场环境</h2>
+        <p>Robert Trent Jones Jr.设计了Alcanada，而他在这段海岸线上所做的一切都非常出色。当你站在后发球台上，身后是灯塔，四周几乎都是地中海，那是一种少见的高尔夫时刻，周围景色几乎会让你忘记自己的成绩。</p>
+        <p>Alcanada灯塔位于岸边外的一座小岛上，从18洞中有16洞都能看到。清晨天晴、海面平静、阳光斜照海湾的时候，这是我在世界任何地方见过最美的高尔夫场景之一。</p>
 
-        <p>Alcanada is the course I take people to when I want them to come home with a story. It might be the most memorable round on the island. The lighthouse changes everything.</p>
-
-        <h2>The Setting</h2>
-        <p>Robert Trent Jones Jr. designed Alcanada, and what he did with this stretch of coastline is remarkable. Standing on the back tees with the lighthouse behind you and the Mediterranean in every direction, it's one of those rare golf moments where the surroundings make you forget what you scored.</p>
-        <p>The Alcanada lighthouse sits on a small island just off the coast, visible from 16 of the 18 holes. On a clear morning with the water calm and the light coming across the bay, it's one of the most beautiful settings I've played golf in anywhere in the world.</p>
-
-        <h2>The Back Tees</h2>
-        <p>Standing on the elevated back tees is its own experience. You feel untouchable — so far from everything else that everyone below looks like a tiny dot. The lighthouse behind you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.</p>
+        <h2>后发球台</h2>
+        <p>站在高起的后发球台本身就是一种体验。你会感觉自己高高在上，仿佛与其他一切都隔开了，下面的人看起来就像一个小点。灯塔在你身后，海湾在你眼前，而你即将把一号木挥向远方。那种感觉很特别。</p>
 
         <div className="post-pull">
-          <p>"Standing on the back tees at Alcanada is incredible. You feel untouchable. So far from the rest of the world. Everyone looks like a tiny dot and you're standing there, elevated, ready to hit driver somewhere into the abyss."</p>
+          <p>"站在Alcanada的后发球台上真的很震撼。你会感觉自己高高在上，离整个世界都很远。所有人都像小点，而你站在那里，准备把一号木打向一片开阔。"</p>
         </div>
 
-        <h2>The Greens</h2>
-        <p>This is where Alcanada earns its right to host elite events. After navigating a difficult hole, you arrive at greens that are severely undulating, massively fast, and offering very few easy putts. Fifty-eight bunkers across the layout force accurate approaches on almost every hole.</p>
-        <p>The combination of slope, speed, and subtle breaks on the greens is what separates this from a merely scenic layout into something that genuinely tests skilful players.</p>
+        <h2>果岭</h2>
+        <p>这正是Alcanada配得上高级别赛事的地方。打完一个有难度的球洞之后，你会来到起伏很大、速度很快、很少有轻松推杆的果岭。球场总共58个沙坑，几乎在每个洞都要求你的攻果岭球足够精准。</p>
+        <p>坡度、速度和微妙线路的组合，让Alcanada远远不只是一个风景漂亮的海边球场。它对好球手的考验是真实存在的。</p>
 
-        <h2>The Rolex Challenge Tour Grand Final</h2>
-        <p>Alcanada hosts the Rolex Challenge Tour Grand Final — returning for its sixth time in October 2026. This is not a course dressed up for a tour event. It's a course that has always been worthy of one. Playing the same holes that decide a professional's card for the season is something you notice when you're standing on the tee.</p>
+        <h2>劳力士挑战巡回赛总决赛</h2>
+        <p>Alcanada是Rolex Challenge Tour Grand Final的举办地，2026年10月将第六次承办。这不是一座只为办比赛临时包装起来的球场，而是一座本来就配得上顶级赛事的球场。当你站上发球台时，会感觉到这些球洞确实能决定职业球员的赛季命运。</p>
 
-        <h2>Design Pedigree</h2>
-        <p>Robert Trent Jones Jr.'s father designed Valderrama — the venue of the 1997 Ryder Cup — and Spyglass Hill at Pebble Beach. RTJ Jr. also designed Spring City Golf in Kunming, ranked China's number one course by Golf Digest. The lineage is genuine, and it shows in how Alcanada is routed — nothing feels arbitrary, everything uses the land.</p>
+        <h2>设计血统</h2>
+        <p>Robert Trent Jones Jr.的父亲设计了Valderrama，也就是1997年莱德杯的举办地，还有Pebble Beach的Spyglass Hill。RTJ Jr.本人还设计了昆明春城高尔夫，被Golf Digest评为中国第一球场。这种设计血统一眼就能在Alcanada上感受到：没有任何东西是随意的，一切都在利用地形。</p>
 
         <div className="post-fact">
-          <div className="post-fact__item"><span className="post-fact__val">€115–220</span><span className="post-fact__label">Green fee range 2026</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">7/10</span><span className="post-fact__label">Difficulty</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">58</span><span className="post-fact__label">Bunkers</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">55km</span><span className="post-fact__label">From Palma</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">EUR 115-220</span><span className="post-fact__label">2026年果岭费</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">7/10</span><span className="post-fact__label">难度</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">58</span><span className="post-fact__label">沙坑数量</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">55 km</span><span className="post-fact__label">距帕尔马</span></div>
         </div>
 
-        <h2>Practical Information</h2>
-        <p>Green fees 2026: €115 low season (January, December) to €220 peak (March–May, September–October). Full seasonal breakdown at golf-alcanada.com. A daily golf licence (€3 per person) is required for non-Spanish Federation members.</p>
-        <p>Club hire: TaylorMade sets at €38 per 18 holes. Buggy €48, electric trolley €20. The Toptracer range is excellent for a proper warm-up — use it.</p>
-        <p>Location: Port d'Alcúdia, about 50 minutes north of Palma. Allow time and don't rush back.</p>
+        <h2>实用信息</h2>
+        <p>2026年果岭费：淡季为EUR 115，高峰期三月至五月及九月至十月最高为EUR 220。完整价格表见golf-alcanada.com。没有西班牙高协会员资格的球手需额外支付每日EUR 3的高尔夫许可证费用。</p>
+        <p>球杆租赁：TaylorMade套杆18洞EUR 38。球车EUR 48，电动手推车EUR 20。这里的Toptracer练习场非常适合认真热身 - 值得利用。</p>
+        <p>位置：位于Port d'Alcúdia，距帕尔马以北约50分钟车程。建议留出充足时间，不要打完就匆匆离开。</p>
 
-        <h2>The Restaurant Terrace</h2>
-        <p>One of the best places on the island for a post-round lunch. The restaurant is run by Grupo Babuxa — the group behind the well-regarded Casa Gallega restaurants in Palma — Mediterranean cooking with a sea terrace directly facing the Alcanada lighthouse. Their set lunch runs around €30 per person. Factor it in — this is not a place to rush away from.</p>
+        <h2>餐厅露台</h2>
+        <p>这是岛上最适合打完球后吃午餐的地方之一。餐厅由Grupo Babuxa经营，也就是帕尔马知名Casa Gallega餐厅背后的团队。地中海料理、海景露台、正对Alcanada灯塔。午间套餐大约每人EUR 30。把它算进你的一天里 - 这里不是该匆忙离开的地方。</p>
 
-        <h2>Verdict</h2>
-        <p>Alcanada is the course I'd take someone to if I wanted them to fall in love with golf in Mallorca. The greens will test you. The drive north is worth it. The lunch afterwards is non-negotiable.</p>
+        <h2>结论</h2>
+        <p>如果我想让一个人爱上马略卡的高尔夫，我会带他来Alcanada。果岭会认真考验你。往北开这段路完全值得。打完后的午餐更是这一天不可分割的一部分。</p>
 
         <div className="post-cta">
-          <p>Alcanada is one of my two anchor courses for play-with-a-pro days. Want to play it properly?</p>
-          <a href="/play-with-a-pro">See the play-with-a-pro experience →</a>
+          <p>Alcanada是我两条play-with-a-pro核心线路之一。想真正把它打明白吗？</p>
+          <a href="/zh/play-with-a-pro">查看play-with-a-pro体验 →</a>
         </div>
-
-
       </PostLayout>
     </PageLayout>
   )
 }
-
