@@ -12,8 +12,7 @@ const improvements = [
   { num: '03', title: 'Reading greens and slopes', text: 'Putting and chipping on a course green is fundamentally different from a practice green. The speed, the slope, the grain, the pressure of the moment — all of it changes what works. We practise it in the actual conditions.' },
   { num: '04', title: 'Playing in wind', text: "Mallorca is windy. Son Gual especially lives in its own wind ecosystem. Club selection in a crosswind, trajectory management, trusting your aim when the ball seems to be drifting — this is something you can only work on when it's actually blowing." },
   { num: '05', title: 'Mental game and routine', text: 'How you talk to yourself after a bad shot. How you approach the next tee. Whether you have a pre-shot routine and whether it holds under pressure. The mental side is completely invisible on the range — it only shows up when the consequences are real.' },
-  { num: '06', title: 'Finding the low-hanging fruit', text: "Most golfers improve fastest not from rebuilding their swing but from one or two small unlocks. A client had been chipping with a pitching wedge his whole life. One conversation, a club change, immediate improvement. No technical work. That kind of thing only surfaces on the course." },
-  { num: '07', title: 'Consistency in real conditions', text: "Uneven lies, tight fairways, course rough — the course demands shots the range never asks for. Playing them regularly, with feedback in real time, is how you build a game that shows up when it counts.", full: true },
+  { num: '06', title: 'Finding the low-hanging fruit', text: "Most golfers improve fastest not from rebuilding their swing but from one or two small unlocks. A client had been chipping with a pitching wedge his whole life. One conversation, a club change, immediate improvement. No technical work. It also brings out the real-world patterns — uneven lies, tight fairways, course rough — that the range never asks for and that actually decide whether progress holds up on the course." },
 ]
 
 export default function Coaching() {
@@ -62,8 +61,8 @@ export default function Coaching() {
           src="/images/coaching-action.jpg"
           alt="Andy Griffiths coaching golf on a Mallorca course"
           sizes="100vw"
-          containerStyle={{ height: '420px', display: 'block' }}
-          imageStyle={{ objectPosition: 'center 60%' }}
+          containerStyle={{ height: '520px', display: 'block' }}
+          imageStyle={{ objectPosition: 'center 18%' }}
         />
       </div>
 
@@ -144,7 +143,6 @@ export default function Coaching() {
     </>
   )
 }
-
 
 
 
