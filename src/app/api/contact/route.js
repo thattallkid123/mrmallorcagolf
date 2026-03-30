@@ -21,9 +21,9 @@ function renderRow(label, value) {
 }
 
 export async function POST(request) {
-  if (!checkRateLimit(getClientKey(request, 'contact'), 5)) {
+  if (!checkRateLimit(getClientKey(request, 'contact'), 12, 10 * 60 * 1000)) {
     return Response.json(
-      { ok: false, error: 'Too many enquiries from this connection. Please try again shortly.' },
+      { ok: false, error: 'Too many enquiries from this connection. Please wait a few minutes and try again.' },
       { status: 429 },
     )
   }
