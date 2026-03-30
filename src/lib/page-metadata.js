@@ -38,6 +38,44 @@ const HOME_METADATA = {
   },
 }
 
+const GOLF_COURSES_METADATA = {
+  en: {
+    title: 'Mallorca Golf Guide 2026 - Every Course on the Island',
+    description:
+      'The complete guide to golf in Mallorca - all 22 courses, green fees, difficulty ratings, and honest recommendations from a PGA professional based on the island. 2026 edition.',
+  },
+  de: {
+    title: 'Mallorca Golf Guide 2026 - Jeder Kurs auf der Insel',
+    description:
+      'Der vollstaendige Leitfaden fuer Golf auf Mallorca - alle 22 Kurse, Green Fees, Schwierigkeitsratings und ehrliche Empfehlungen von einem auf der Insel ansaessigen PGA Professional. 2026 Ausgabe.',
+  },
+  es: {
+    title: 'Guia de Golf en Mallorca 2026 - Todos los campos de la isla',
+    description:
+      'La guia completa del golf en Mallorca - 22 campos, green fees, dificultades y recomendaciones honestas de un PGA profesional en la isla.',
+  },
+  fr: {
+    title: "Guide Golf Majorque 2026 - Tous les parcours de l'ile",
+    description:
+      "Le guide complet du golf a Majorque - 22 parcours, green fees, evaluations de difficulte et recommandations honnetes d'un professionnel PGA base sur l'ile. Edition 2026.",
+  },
+  nl: {
+    title: 'Mallorca Golfgids 2026 - Alle banen op het eiland',
+    description:
+      'De complete gids voor golf op Mallorca - alle 22 banen, greenfees, moeilijkheidsgraden en eerlijke aanbevelingen van een PGA professional op het eiland. Editie 2026.',
+  },
+  sv: {
+    title: 'Mallorca Golfguide 2026 - Alla banor pa on',
+    description:
+      'Den kompletta guiden till golf pa Mallorca - alla 22 banor, greenavgifter, svarighetsbetyg och arliga rekommendationer fran en PGA-professional baserad pa on. 2026-utgavan.',
+  },
+  zh: {
+    title: 'Mallorca Golf Guide 2026 - All Courses on the Island',
+    description:
+      'A complete guide to golf in Mallorca covering all 22 courses, green fees, difficulty ratings, and honest recommendations from a PGA professional based on the island.',
+  },
+}
+
 export function buildPageMetadata(pathname, locale, overrides = {}) {
   const alternates = getAlternates(pathname)
 
@@ -49,4 +87,12 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
 
 export function buildHomeMetadata(locale = 'en') {
   return buildPageMetadata(locale === 'en' ? '/' : `/${locale}`, locale, HOME_METADATA[locale] || HOME_METADATA.en)
+}
+
+export function buildGolfCoursesMetadata(locale = 'en') {
+  return buildPageMetadata(
+    locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`,
+    locale,
+    GOLF_COURSES_METADATA[locale] || GOLF_COURSES_METADATA.en,
+  )
 }

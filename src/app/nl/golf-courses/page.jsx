@@ -2,24 +2,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import GolfCoursesClient from '../../golf-courses/GolfCoursesClient'
+import { buildGolfCoursesMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mallorca Golfgids 2026 — Alle banen op het eiland',
-  description: 'De complete gids voor golf op Mallorca — alle 22 banen, greenfees, moeilijkheidsgraden en eerlijke aanbevelingen van een PGA professional op het eiland. 2026 editie.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/nl/golf-courses',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/golf-courses',
-      'de': 'https://mrmallorcagolf.com/de/golf-courses',
-      'es': 'https://mrmallorcagolf.com/es/golf-courses',
-      'fr': 'https://mrmallorcagolf.com/fr/golf-courses',
-      'nl': 'https://mrmallorcagolf.com/nl/golf-courses',
-      'sv': 'https://mrmallorcagolf.com/sv/golf-courses',
-      'zh': 'https://mrmallorcagolf.com/zh/golf-courses',
-      'x-default': 'https://mrmallorcagolf.com/golf-courses',
-    }
-  }
-}
+export const metadata = buildGolfCoursesMetadata('nl')
 
 export default function GolfCourses() {
   return (

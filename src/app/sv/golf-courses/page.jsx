@@ -2,24 +2,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import GolfCoursesClient from '../../golf-courses/GolfCoursesClient'
+import { buildGolfCoursesMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mallorca Golfguide 2026 — Alla banor på ön',
-  description: 'Den kompletta guiden till golf på Mallorca — alla 22 banor, greenavgifter, svårighetsbetyg och ärliga rekommendationer från en PGA-professional baserad på ön. 2026-utgåvan.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/sv/golf-courses',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/golf-courses',
-      'de': 'https://mrmallorcagolf.com/de/golf-courses',
-      'es': 'https://mrmallorcagolf.com/es/golf-courses',
-      'fr': 'https://mrmallorcagolf.com/fr/golf-courses',
-      'nl': 'https://mrmallorcagolf.com/nl/golf-courses',
-      'sv': 'https://mrmallorcagolf.com/sv/golf-courses',
-      'zh': 'https://mrmallorcagolf.com/zh/golf-courses',
-      'x-default': 'https://mrmallorcagolf.com/golf-courses',
-    }
-  }
-}
+export const metadata = buildGolfCoursesMetadata('sv')
 
 export default function GolfCourses() {
   return (

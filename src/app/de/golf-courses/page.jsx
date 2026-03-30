@@ -2,24 +2,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import GolfCoursesClient from '../../golf-courses/GolfCoursesClient'
+import { buildGolfCoursesMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mallorca Golf Guide 2026 — Jeder Kurs auf der Insel',
-  description: 'Der vollständige Leitfaden für Golf auf Mallorca — alle 22 Kurse, Green Fees, Schwierigkeitsratings und ehrliche Empfehlungen von einem auf der Insel ansässigen PGA Professional. 2026 Ausgabe.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/de/golf-courses',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/golf-courses',
-      'de': 'https://mrmallorcagolf.com/de/golf-courses',
-      'es': 'https://mrmallorcagolf.com/es/golf-courses',
-      'fr': 'https://mrmallorcagolf.com/fr/golf-courses',
-      'nl': 'https://mrmallorcagolf.com/nl/golf-courses',
-      'sv': 'https://mrmallorcagolf.com/sv/golf-courses',
-      'zh': 'https://mrmallorcagolf.com/zh/golf-courses',
-      'x-default': 'https://mrmallorcagolf.com/golf-courses',
-    }
-  }
-}
+export const metadata = buildGolfCoursesMetadata('de')
 
 export default function GolfCourses() {
   return (

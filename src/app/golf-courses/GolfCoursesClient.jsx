@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import { buildLocalePath } from '../../lib/site'
 
 const TRANSLATIONS = {
   en: {
@@ -1007,6 +1008,8 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   const t = TRANSLATIONS[lang] || TRANSLATIONS.en
   const REGIONS = getRegions(t)
   const [activeFilter, setActiveFilter] = useState('all')
+  const contactHref = buildLocalePath('/contact', lang)
+  const experiencesHref = buildLocalePath('/play-with-a-pro', lang)
 
   const visibleRegions = COURSE_DATA.filter(region => {
     if (activeFilter === 'all') return true
@@ -1097,7 +1100,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
           <div className="sidebar-card">
             <h3>{t.sidebarH3}</h3>
             <p>{t.sidebarP}</p>
-            <Link href="/contact" className="sidebar-btn">{t.sidebarBtn}</Link>
+            <Link href={contactHref} className="sidebar-btn">{t.sidebarBtn}</Link>
           </div>
           <div className="sidebar-card sidebar-card--cream">
             <h3 style={{fontSize:'1rem'}}>{t.quickPicksTitle}</h3>
@@ -1140,8 +1143,8 @@ export default function GolfCoursesClient({ lang = 'en' }) {
           <p>{t.ctaP}</p>
         </div>
         <div className="guide-cta__actions">
-          <Link href="/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 32px'}}>{t.seeExperiences}</Link>
-          <Link href="/contact" className="btn btn--outline-white">{t.getInTouch}</Link>
+          <Link href={experiencesHref} className="btn btn--gold" style={{fontSize:10,padding:'14px 32px'}}>{t.seeExperiences}</Link>
+          <Link href={contactHref} className="btn btn--outline-white">{t.getInTouch}</Link>
         </div>
       </section>
     </>
