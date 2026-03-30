@@ -32,12 +32,12 @@ export default function GuidesIndex_ZH() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/zh" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>ZH</a>
+            <a href="/zh" className="breadcrumb__link">ZH</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>高尔夫指南</span>
           </p>
           <h1 dangerouslySetInnerHTML={{__html: '马略卡岛高尔夫。<br />诚实指南。'}} />
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             球场评测、行程规划与果岭费用 — 由每周在此打球的PGA职业教练撰写。
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>

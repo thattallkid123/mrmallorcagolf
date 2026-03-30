@@ -32,12 +32,12 @@ export default function GuidesIndex_NL() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/nl" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>NL</a>
+            <a href="/nl" className="breadcrumb__link">NL</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Gidsen</span>
           </p>
           <h1 dangerouslySetInnerHTML={{__html: 'Golf op Mallorca.<br />Eerlijke gidsen.'}} />
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             Baanbeoordelingen, reisplanning en greenfees — geschreven door een PGA Professional die hier elke week speelt.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>

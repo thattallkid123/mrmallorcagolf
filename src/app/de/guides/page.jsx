@@ -32,12 +32,12 @@ export default function GuidesIndex_DE() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/de" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>DE</a>
+            <a href="/de" className="breadcrumb__link">DE</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Ratgeber</span>
           </p>
           <h1 dangerouslySetInnerHTML={{__html: 'Mallorca Golf.<br />Ehrliche Ratgeber.'}} />
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             Platz-Bewertungen, Reiseplanung und Greenfees — geschrieben von einem PGA Professional, der hier jede Woche spielt.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>

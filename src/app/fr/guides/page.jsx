@@ -32,12 +32,12 @@ export default function GuidesIndex_FR() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/fr" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>FR</a>
+            <a href="/fr" className="breadcrumb__link">FR</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Guides</span>
           </p>
           <h1 dangerouslySetInnerHTML={{__html: 'Golf à Majorque.<br />Guides honnêtes.'}} />
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             Avis sur les parcours, planification de voyage et green fees — écrits par un Professionnel PGA qui joue ici chaque semaine.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>

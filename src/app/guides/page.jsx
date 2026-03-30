@@ -34,12 +34,12 @@ export default function GuidesIndex() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Home</a>
+            <a href="/" className="breadcrumb__link">Home</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Guides</span>
           </p>
           <h1>Mallorca Golf.<br />Honest Guides.</h1>
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             Course reviews, trip planning, green fees, and when to visit — written by a PGA professional who plays here every week.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
