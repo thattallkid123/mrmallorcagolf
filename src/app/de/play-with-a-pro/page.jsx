@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildPlayWithAProMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mit einem Profi spielen — Private Golftage auf Mallorca',
-  description: 'Eine private Golfrunde auf Mallorca, gespielt an der Seite von UK PGA Advanced Professional Andy Griffiths. Coaching auf dem Platz, voller Tag arrangiert. Ab €350 € pro Person.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/de/play-with-a-pro' },
-}
+export const metadata = buildPlayWithAProMetadata('de')
 
 const whoCards = [
   { num: '01', title: 'Der Urlaubsgolfer', text: 'Ein Handicap-Golfer, der seine Mallorca-Runde wirklich unvergesslich machen will — nicht nur eine online gebuchte Abschlagzeit und ein Abschiedswinken am 18. Loch.' },

@@ -1,24 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildCoachingMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Coaching Golf sur Parcours à Majorque — Professionnel PGA',
-  description: 'Coaching golf sur parcours à Majorque avec un Professionnel PGA Avancé Andy Griffiths. Amélioration réelle dans des conditions réelles — pour golfeurs en visite et résidents.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/fr/coaching',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/coaching',
-      'de': 'https://mrmallorcagolf.com/de/coaching',
-      'es': 'https://mrmallorcagolf.com/es/coaching',
-      'fr': 'https://mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://mrmallorcagolf.com/coaching',
-    }
-  }
-}
+export const metadata = buildCoachingMetadata('fr')
 
 const improvements = [
   { num: '01', title: 'Gestion du parcours', text: 'La plupart des golfeurs amateurs perdent l\'essentiel de leurs coups à cause d\'une mauvaise décision, pas d\'un mauvais swing. Choisir le bon club, la bonne cible, la bonne trajectoire — voilà ce qui sépare un 90 d\'un 80. Nous les travaillons en temps réel, sur de vrais trous, avec un vrai score en jeu.' },

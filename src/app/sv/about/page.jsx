@@ -3,24 +3,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
+import { buildAboutMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Om Andy Griffiths — PGA-professional, Mallorca',
-  description: "Andy Griffiths är en brittisk PGA Advanced Professional baserad på Mallorca. Tidigare Pebble Beach, Evian, 11 år coaching i Kina.",
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/sv/about',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/about',
-      'de': 'https://mrmallorcagolf.com/de/about',
-      'es': 'https://mrmallorcagolf.com/es/about',
-      'fr': 'https://mrmallorcagolf.com/fr/about',
-      'nl': 'https://mrmallorcagolf.com/nl/about',
-      'sv': 'https://mrmallorcagolf.com/sv/about',
-      'zh': 'https://mrmallorcagolf.com/zh/about',
-      'x-default': 'https://mrmallorcagolf.com/about',
-    }
-  }
-}
+export const metadata = buildAboutMetadata('sv')
 
 const credentials = [
   { title: 'UKPGA Advanced Professional', detail: 'Över 15 000 timmar coaching genomförda' },

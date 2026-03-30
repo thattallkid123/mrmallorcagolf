@@ -1,11 +1,8 @@
 import PageLayout from '../../../components/PageLayout'
 import ContactForm_ES from './ContactForm_ES'
+import { buildContactMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Contacto — Mr Mallorca Golf | Andy Griffiths PGA Profesional',
-  description: 'Organice su dia de golf privado en Mallorca. Andy Griffiths responde personalmente en 24 horas.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/es/contact' },
-}
+export const metadata = buildContactMetadata('es')
 
 export default function Contact_ES() {
   return (

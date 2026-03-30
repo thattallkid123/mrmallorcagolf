@@ -3,24 +3,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
+import { buildAboutMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'À propos d\'Andy Griffiths — Professionnel PGA Avancé, Majorque',
-  description: "Andy Griffiths est un professionnel PGA avancé du Royaume-Uni basé à Majorque. Ancien coach à Pebble Beach, Evian, 11 ans de coaching en Chine.",
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/fr/about',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/about',
-      'de': 'https://mrmallorcagolf.com/de/about',
-      'es': 'https://mrmallorcagolf.com/es/about',
-      'fr': 'https://mrmallorcagolf.com/fr/about',
-      'nl': 'https://mrmallorcagolf.com/nl/about',
-      'sv': 'https://mrmallorcagolf.com/sv/about',
-      'zh': 'https://mrmallorcagolf.com/zh/about',
-      'x-default': 'https://mrmallorcagolf.com/about',
-    }
-  }
-}
+export const metadata = buildAboutMetadata('fr')
 
 const credentials = [
   { title: 'Professionnel PGA Avancé', detail: 'Plus de 15 000 heures de coaching dispensées' },

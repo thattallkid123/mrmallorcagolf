@@ -1,24 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
+import { buildPlayWithAProMetadata } from '../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Play With a Pro — Private Golf Days in Mallorca',
-  description: 'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person + green fee.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/play-with-a-pro',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/play-with-a-pro',
-      'de': 'https://mrmallorcagolf.com/de/play-with-a-pro',
-      'es': 'https://mrmallorcagolf.com/es/play-with-a-pro',
-      'fr': 'https://mrmallorcagolf.com/fr/play-with-a-pro',
-      'nl': 'https://mrmallorcagolf.com/nl/play-with-a-pro',
-      'sv': 'https://mrmallorcagolf.com/sv/play-with-a-pro',
-      'zh': 'https://mrmallorcagolf.com/zh/play-with-a-pro',
-      'x-default': 'https://mrmallorcagolf.com/play-with-a-pro',
-    }
-  }
-}
+export const metadata = buildPlayWithAProMetadata('en')
 
 const testimonials = [
   { text: "Golfing with Andy was a superb experience. He has an unparalleled level of insight, and delivers it in a way that is both subtle and empathetic. I have felt suffocated by well-meaning coaches in the past, but Andy is a cut above. After just 18 holes together, I've discovered a new ceiling to my potential. His philosophy of prioritising the low-hanging fruit has given me clarity. What's more, his simple tips instantly transformed my putting.", author: 'Jo' },

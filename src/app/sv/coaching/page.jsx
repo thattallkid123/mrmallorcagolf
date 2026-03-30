@@ -1,24 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildCoachingMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'On-Course Golfcoaching i Mallorca — PGA-professional',
-  description: 'On-course golfcoaching i Mallorca med PGA Advanced Professional Andy Griffiths. Verklig förbättring i verkliga förhållanden — för besökande och bosatta golfare.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/sv/coaching',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/coaching',
-      'de': 'https://mrmallorcagolf.com/de/coaching',
-      'es': 'https://mrmallorcagolf.com/es/coaching',
-      'fr': 'https://mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://mrmallorcagolf.com/coaching',
-    }
-  }
-}
+export const metadata = buildCoachingMetadata('sv')
 
 const improvements = [
   { num: '01', title: 'Banhantering', text: 'De flesta amatörgolfare förlorar majoriteten av sina slag på fel beslut, inte fel swing. Att välja rätt klubba, mål, form — dessa skiljer en 90 från en 80. Vi arbetar med dem i realtid, på riktiga hål, med en verklig poäng på spel.' },

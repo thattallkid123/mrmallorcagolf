@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildPlayWithAProMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Jugar con un Profesional — Días de Golf Privados en Mallorca',
-  description: 'Una vuelta de golf privada en Mallorca junto al UK PGA Advanced Professional Andy Griffiths. Coaching en campo, día completo organizado. Desde €350 por persona.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/es/play-with-a-pro' },
-}
+export const metadata = buildPlayWithAProMetadata('es')
 
 export default function PlayWithAPro_ES() {
   return (

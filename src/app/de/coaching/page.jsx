@@ -1,24 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildCoachingMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'On-Course Golf Coaching auf Mallorca — PGA Professional',
-  description: 'On-Course Golf Coaching auf Mallorca mit PGA Advanced Professional Andy Griffiths. Echte Verbesserung in echten Bedingungen — für besuchende und ansässige Golfer.',
-  alternates: {
-    canonical: 'https://mrmallorcagolf.com/de/coaching',
-    languages: {
-      'en': 'https://mrmallorcagolf.com/coaching',
-      'de': 'https://mrmallorcagolf.com/de/coaching',
-      'es': 'https://mrmallorcagolf.com/es/coaching',
-      'fr': 'https://mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://mrmallorcagolf.com/coaching',
-    }
-  }
-}
+export const metadata = buildCoachingMetadata('de')
 
 const improvements = [
   { num: '01', title: 'Platzmanagement', text: 'Die meisten Amateurgolfer verlieren die Mehrzahl ihrer Schläge durch die falsche Entscheidung, nicht den falschen Schwung. Die richtige Keule wählen, das richtige Ziel, die richtige Flugkurve — das trennt eine 90 von einer 80. Wir arbeiten daran in Echtzeit, auf echten Löchern, mit einem echten Ergebnis auf dem Spiel.' },

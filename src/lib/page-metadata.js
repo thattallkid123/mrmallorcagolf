@@ -76,6 +76,158 @@ const GOLF_COURSES_METADATA = {
   },
 }
 
+const ABOUT_METADATA = {
+  en: {
+    title: 'About Andy Griffiths - PGA Professional, Mallorca',
+    description:
+      'Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. Formerly Pebble Beach, Evian, 11 years coaching in China.',
+  },
+  de: {
+    title: 'Uber Andy Griffiths - PGA Professional, Mallorca',
+    description:
+      'Andy Griffiths ist ein UK PGA Advanced Professional mit Sitz auf Mallorca. Ehemals Pebble Beach, Evian, 11 Jahre Coaching in China.',
+  },
+  es: {
+    title: 'Sobre Andy Griffiths - PGA Profesional, Mallorca',
+    description:
+      'Andy Griffiths es un UK PGA Advanced Professional con base en Mallorca. Anteriormente Pebble Beach, Evian, 11 anos de entrenamiento en China.',
+  },
+  fr: {
+    title: "A propos d'Andy Griffiths - Professionnel PGA Avance, Majorque",
+    description:
+      "Andy Griffiths est un professionnel PGA avance du Royaume-Uni base a Majorque. Ancien coach a Pebble Beach, Evian, 11 ans de coaching en Chine.",
+  },
+  nl: {
+    title: 'Over Andy Griffiths - PGA Professional, Mallorca',
+    description:
+      'Andy Griffiths is een Britse UK PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Evian, 11 jaar coaching in China.',
+  },
+  sv: {
+    title: 'Om Andy Griffiths - PGA-professional, Mallorca',
+    description:
+      'Andy Griffiths ar en brittisk PGA Advanced Professional baserad pa Mallorca. Tidigare Pebble Beach, Evian, 11 ar coaching i Kina.',
+  },
+  zh: {
+    title: 'About Andy Griffiths - PGA Professional, Mallorca',
+    description:
+      'Andy Griffiths is a UK PGA Advanced Professional based in Mallorca, with previous experience at Pebble Beach, Evian, and 11 years coaching in China.',
+  },
+}
+
+const COACHING_METADATA = {
+  en: {
+    title: 'On-Course Golf Coaching in Mallorca - PGA Professional',
+    description:
+      'On-course golf coaching in Mallorca with PGA Advanced Professional Andy Griffiths. Real improvement in real conditions - for visiting and resident golfers.',
+  },
+  de: {
+    title: 'On-Course Golf Coaching auf Mallorca - PGA Professional',
+    description:
+      'On-Course Golf Coaching auf Mallorca mit PGA Advanced Professional Andy Griffiths. Echte Verbesserung in echten Bedingungen - fuer besuchende und ansaessige Golfer.',
+  },
+  es: {
+    title: 'Coaching de Golf en Campo en Mallorca - PGA Profesional',
+    description:
+      'Coaching de golf en campo en Mallorca con UK PGA Advanced Professional Andy Griffiths. Mejora real en condiciones reales - para golfistas en visita y residentes.',
+  },
+  fr: {
+    title: 'Coaching Golf sur Parcours a Majorque - Professionnel PGA',
+    description:
+      'Coaching golf sur parcours a Majorque avec un Professionnel PGA Avance Andy Griffiths. Amelioration reelle dans des conditions reelles - pour golfeurs en visite et residents.',
+  },
+  nl: {
+    title: 'On-Course Golfcoaching in Mallorca - PGA Professional',
+    description:
+      'On-course golfcoaching op Mallorca met PGA Advanced Professional Andy Griffiths. Echte verbetering in echte omstandigheden - voor bezoekers en inwoners.',
+  },
+  sv: {
+    title: 'On-Course Golfcoaching i Mallorca - PGA-professional',
+    description:
+      'On-course golfcoaching i Mallorca med PGA Advanced Professional Andy Griffiths. Verklig forbattring i verkliga forhallanden - for besokande och bosatta golfare.',
+  },
+  zh: {
+    title: 'On-Course Golf Coaching in Mallorca - PGA Professional',
+    description:
+      'On-course golf coaching in Mallorca with PGA Advanced Professional Andy Griffiths. Real improvement in real playing conditions for visiting and resident golfers.',
+  },
+}
+
+const PLAY_WITH_A_PRO_METADATA = {
+  en: {
+    title: 'Play With a Pro - Private Golf Days in Mallorca',
+    description:
+      'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From EUR350 per person plus green fee.',
+  },
+  de: {
+    title: 'Mit einem Profi spielen - Private Golftage auf Mallorca',
+    description:
+      'Eine private Golfrunde auf Mallorca mit UK PGA Advanced Professional Andy Griffiths. Coaching auf dem Platz, voller Tag arrangiert. Ab EUR350 pro Person.',
+  },
+  es: {
+    title: 'Jugar con un Profesional - Dias de Golf Privados en Mallorca',
+    description:
+      'Una vuelta de golf privada en Mallorca junto al UK PGA Advanced Professional Andy Griffiths. Coaching en campo, dia completo organizado. Desde EUR350 por persona.',
+  },
+  fr: {
+    title: 'Jouer avec un Pro - Journees Golf Privees a Majorque',
+    description:
+      'Une partie de golf privee a Majorque aux cotes du UK PGA Advanced Professional Andy Griffiths. Coaching sur parcours, journee complete organisee. A partir de EUR350 par personne.',
+  },
+  nl: {
+    title: 'Spelen met een Pro - Privegolfdagen op Mallorca',
+    description:
+      'Een prive golfronde op Mallorca, gespeeld naast UK PGA Advanced Professional Andy Griffiths. Coaching op de baan, volle dag geregeld. Vanaf EUR350 per persoon.',
+  },
+  sv: {
+    title: 'Spela med ett Proffs - Privata Golfdagar pa Mallorca',
+    description:
+      'En privat golfrunda pa Mallorca med UK PGA Advanced Professional Andy Griffiths. Coaching pa banan, hel dag arrangerad. Fran EUR350 per person.',
+  },
+  zh: {
+    title: 'Private Golf Days in Mallorca - Play With a Pro',
+    description:
+      'A private golf day in Mallorca alongside UK PGA Advanced Professional Andy Griffiths, with on-course coaching and full-day hosting.',
+  },
+}
+
+const CONTACT_METADATA = {
+  en: {
+    title: 'Contact - Mr Mallorca Golf | Andy Griffiths PGA Professional',
+    description:
+      'Get in touch to arrange a private golf day in Mallorca. PGA Advanced Professional Andy Griffiths responds personally within 24 hours.',
+  },
+  de: {
+    title: 'Kontakt - Mr Mallorca Golf | Andy Griffiths UK PGA Professional',
+    description:
+      'Arrangieren Sie Ihren privaten Golftag auf Mallorca. UK PGA Advanced Professional Andy Griffiths antwortet persoenlich innerhalb von 24 Stunden.',
+  },
+  es: {
+    title: 'Contacto - Mr Mallorca Golf | Andy Griffiths PGA Profesional',
+    description:
+      'Organice su dia de golf privado en Mallorca. Andy Griffiths responde personalmente en 24 horas.',
+  },
+  fr: {
+    title: 'Contact - Mr Mallorca Golf | Andy Griffiths PGA Professionnel',
+    description:
+      'Organisez votre journee golf privee a Majorque. Andy Griffiths repond personnellement sous 24 heures.',
+  },
+  nl: {
+    title: 'Contact - Mr Mallorca Golf | Andy Griffiths PGA Professional',
+    description:
+      'Organiseer uw privegolfdag op Mallorca. Andy Griffiths reageert persoonlijk binnen 24 uur.',
+  },
+  sv: {
+    title: 'Kontakt - Mr Mallorca Golf | Andy Griffiths UK PGA-proffs',
+    description:
+      'Arrangera din privata golfdag pa Mallorca. Andy Griffiths svarar personligen inom 24 timmar.',
+  },
+  zh: {
+    title: 'Contact - Mr Mallorca Golf | Andy Griffiths PGA Professional',
+    description:
+      'Arrange a private golf day in Mallorca. Andy Griffiths replies personally within 24 hours.',
+  },
+}
+
 export function buildPageMetadata(pathname, locale, overrides = {}) {
   const alternates = getAlternates(pathname)
 
@@ -94,5 +246,33 @@ export function buildGolfCoursesMetadata(locale = 'en') {
     locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`,
     locale,
     GOLF_COURSES_METADATA[locale] || GOLF_COURSES_METADATA.en,
+  )
+}
+
+export function buildAboutMetadata(locale = 'en') {
+  return buildPageMetadata(locale === 'en' ? '/about' : `/${locale}/about`, locale, ABOUT_METADATA[locale] || ABOUT_METADATA.en)
+}
+
+export function buildCoachingMetadata(locale = 'en') {
+  return buildPageMetadata(
+    locale === 'en' ? '/coaching' : `/${locale}/coaching`,
+    locale,
+    COACHING_METADATA[locale] || COACHING_METADATA.en,
+  )
+}
+
+export function buildPlayWithAProMetadata(locale = 'en') {
+  return buildPageMetadata(
+    locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`,
+    locale,
+    PLAY_WITH_A_PRO_METADATA[locale] || PLAY_WITH_A_PRO_METADATA.en,
+  )
+}
+
+export function buildContactMetadata(locale = 'en') {
+  return buildPageMetadata(
+    locale === 'en' ? '/contact' : `/${locale}/contact`,
+    locale,
+    CONTACT_METADATA[locale] || CONTACT_METADATA.en,
   )
 }

@@ -3,12 +3,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
+import { buildAboutMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Sobre Andy Griffiths — PGA Profesional, Mallorca',
-  description: 'Andy Griffiths es un UK PGA Advanced Professional con base en Mallorca. Anteriormente Pebble Beach, Évian, 11 años de entrenamiento en China.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/es/about' },
-}
+export const metadata = buildAboutMetadata('es')
 
 export default function About_ES() {
   return (
