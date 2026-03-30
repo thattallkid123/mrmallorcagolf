@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'santa-ponsa-1-review',
+  locale: 'de',
   title: 'Golf Santa Ponsa 1, Mallorca - Aus Sicht eines PGA Professionals',
   description: 'Santa Ponsa 1 auf Mallorca, bewertet von einem PGA Professional. Tour-Geschichte, breite Fairways und ein Platz, der Vertrauen vom Tee gibt.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/de/guides/santa-ponsa-1-review' },
-}
+  imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+})
 
 const meta = {
   badge: 'Platzbewertung',

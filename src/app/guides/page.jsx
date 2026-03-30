@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mallorca Golf Guide — Course Reviews, Tips & Advice',
-  description: 'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit — all updated for 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('en')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: 'Course Review', badgeGold: true, title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)", intro: "My most-played course on the island. The wind, the greens, the closing stretch — and why Obama and Nadal both keep coming back.", readTime: '7 min read', keywords: 'Championship · Par 72 · €80–165 · Handicap required' },

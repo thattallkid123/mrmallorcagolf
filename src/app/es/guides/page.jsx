@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Guía de Golf en Mallorca — Análisis de campos y consejos',
-  description: 'Guías honestas de golf en Mallorca de un Profesional PGA. Análisis de campos, green fees y planificación de viajes — actualizadas para 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/es/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('es')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: 'Análisis del campo', badgeGold: true, title: 'Son Gual Golf Mallorca — Análisis honesto de un Profesional PGA (2026)', intro: 'Mi campo más jugado en la isla. El viento, los greens, los últimos hoyos — y por qué Obama y Nadal siguen volviendo.', readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap requerido' },

@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'alcanada-review',
+  locale: 'zh',
   title: '阿尔卡纳达高尔夫球场 - PGA职业教练诚实评测',
   description: '从一位经常下场的PGA职业教练视角看Alcanada。灯塔、果岭、餐厅露台，以及2026年果岭费。',
-  alternates: { canonical: 'https://mrmallorcagolf.com/zh/guides/alcanada-review' },
-}
+  imagePath: '/images/alcanada-blog/alc-7.jpg',
+})
 
 const meta = {
   badge: '球场评测',

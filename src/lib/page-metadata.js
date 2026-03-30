@@ -1,4 +1,4 @@
-import { getAlternates } from './site'
+import { getAlternates, SITE_ORIGIN } from './site'
 
 const HOME_METADATA = {
   en: {
@@ -73,6 +73,44 @@ const GOLF_COURSES_METADATA = {
     title: 'Mallorca Golf Guide 2026 - All Courses on the Island',
     description:
       'A complete guide to golf in Mallorca covering all 22 courses, green fees, difficulty ratings, and honest recommendations from a PGA professional based on the island.',
+  },
+}
+
+const GUIDES_INDEX_METADATA = {
+  en: {
+    title: 'Mallorca Golf Guide - Course Reviews, Tips and Advice',
+    description:
+      'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit - all updated for 2026.',
+  },
+  de: {
+    title: 'Mallorca Golffuhrer - Platz-Bewertungen und Tipps',
+    description:
+      'Ehrliche Golfratgeber fur Mallorca von einem PGA Professional. Platz-Bewertungen, Greenfees und Reiseplanung - aktualisiert fur 2026.',
+  },
+  es: {
+    title: 'Guia de Golf en Mallorca - Analisis de campos y consejos',
+    description:
+      'Guias honestas de golf en Mallorca de un Profesional PGA. Analisis de campos, green fees y planificacion de viajes - actualizadas para 2026.',
+  },
+  fr: {
+    title: 'Guide Golf Majorque - Avis sur les parcours et conseils',
+    description:
+      'Guides honnetes sur le golf a Majorque par un Professionnel PGA. Avis sur les parcours, green fees et planification de voyage - mis a jour pour 2026.',
+  },
+  nl: {
+    title: 'Mallorca Golfgids - Baanbeoordelingen en tips',
+    description:
+      'Eerlijke golfgidsen voor Mallorca van een PGA Professional. Baanbeoordelingen, greenfees en reisplanning - bijgewerkt voor 2026.',
+  },
+  sv: {
+    title: 'Mallorca Golfguide - Banomdomen och tips',
+    description:
+      'Arliga golfguider for Mallorca av en PGA Professional. Banomdomen, greenfees och reseplanering - uppdaterade for 2026.',
+  },
+  zh: {
+    title: 'Mallorca Golf Guide - Course Reviews and Advice',
+    description:
+      'Honest golf guides for Mallorca from a PGA professional, covering course reviews, green fees, and trip planning for 2026.',
   },
 }
 
@@ -247,6 +285,42 @@ export function buildGolfCoursesMetadata(locale = 'en') {
     locale,
     GOLF_COURSES_METADATA[locale] || GOLF_COURSES_METADATA.en,
   )
+}
+
+export function buildGuidesIndexMetadata(locale = 'en') {
+  return buildPageMetadata(locale === 'en' ? '/guides' : `/${locale}/guides`, locale, GUIDES_INDEX_METADATA[locale] || GUIDES_INDEX_METADATA.en)
+}
+
+export function buildGuidePostMetadata({
+  slug,
+  locale = 'en',
+  title,
+  description,
+  imagePath,
+  publishedTime = '2026-03-01',
+}) {
+  const pathname = locale === 'en' ? `/guides/${slug}` : `/${locale}/guides/${slug}`
+  const imageUrl = imagePath.startsWith('http') ? imagePath : `${SITE_ORIGIN}${imagePath}`
+
+  return buildPageMetadata(pathname, locale, {
+    title,
+    description,
+    openGraph: {
+      type: 'article',
+      url: `${SITE_ORIGIN}${pathname}`,
+      title,
+      description,
+      publishedTime,
+      authors: ['Andy Griffiths'],
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
+    },
+  })
 }
 
 export function buildAboutMetadata(locale = 'en') {

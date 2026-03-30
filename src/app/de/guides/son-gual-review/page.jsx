@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'son-gual-review',
+  locale: 'de',
   title: 'Son Gual Golf Mallorca - Ehrliche Bewertung eines PGA-Professionals (2026)',
   description: 'Son Gual auf Mallorca, bewertet von einem PGA-Professional.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/de/guides/son-gual-review' },
-}
+  imagePath: '/images/son-gual-blog/sg-hero.webp',
+})
 
 const meta = {
   badge: 'Platzbewertung',

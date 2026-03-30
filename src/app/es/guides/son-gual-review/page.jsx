@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'son-gual-review',
+  locale: 'es',
   title: "Son Gual Golf Mallorca — Reseña Honesta de un Profesional PGA (2026)",
   description: "El campo de golf Son Gual en Mallorca, evaluado por un PGA profesional.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/es/guides/son-gual-review' },
-}
+  imagePath: '/images/son-gual-blog/sg-hero.webp',
+})
 
 const meta = {
   badge: 'Reseña del Campo', badgeGold: true, readTime: '6 min de lectura', updated: 'Marzo 2026',

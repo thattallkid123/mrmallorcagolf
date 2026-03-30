@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'son-gual-review',
+  locale: 'nl',
   title: "Son Gual Golf Mallorca — Eerlijke Recensie van een PGA Professional (2026)",
   description: "Son Gual golfbaan op Mallorca beoordeeld door een PGA professional die er regelmatig speelt.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/nl/guides/son-gual-review' },
-}
+  imagePath: '/images/son-gual-blog/sg-hero.webp',
+})
 
 const meta = {
   badge: 'Baanrecensie', badgeGold: true, readTime: '6 min lezen', updated: 'Maart 2026',

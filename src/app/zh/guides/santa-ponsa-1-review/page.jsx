@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'santa-ponsa-1-review',
+  locale: 'zh',
   title: '圣蓬萨1号高尔夫球场 - PGA职业教练诚实评测',
   description: '从一位PGA职业教练视角看Santa Ponsa 1。欧巡历史、宽阔球道，以及重新找回一号木信心的球场。',
-  alternates: { canonical: 'https://mrmallorcagolf.com/zh/guides/santa-ponsa-1-review' },
-}
+  imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+})
 
 const meta = {
   badge: '球场评测',

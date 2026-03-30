@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mallorca Golfguide — Banomdömen & tips',
-  description: 'Ärliga golfguider för Mallorca av en PGA Professional. Banomdömen, greenfees och reseplanering — uppdaterade för 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/sv/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('sv')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: 'Banomdöme', badgeGold: true, title: 'Son Gual Golf Mallorca — Ärlig recension av en PGA Professional (2026)', intro: 'Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen — och varför Obama och Nadal alltid kommer tillbaka.', readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap krävs' },

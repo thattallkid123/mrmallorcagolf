@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'alcanada-review',
+  locale: 'fr',
   title: "Club de Golf Alcanada - Avis honnête d'un professionnel PGA",
   description: "Alcanada à Majorque, vu par un professionnel PGA qui y joue régulièrement. Le phare, les greens, la terrasse et les green fees 2026.",
-  alternates: { canonical: 'https://mrmallorcagolf.com/fr/guides/alcanada-review' },
-}
+  imagePath: '/images/alcanada-blog/alc-7.jpg',
+})
 
 const meta = {
   badge: 'Avis parcours',

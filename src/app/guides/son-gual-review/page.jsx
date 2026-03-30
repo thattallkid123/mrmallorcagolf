@@ -2,33 +2,15 @@ import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
+import { buildGuidePostMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'son-gual-review',
+  locale: 'en',
   title: "Son Gual Golf Mallorca — A PGA Professional’s Honest Review (2026)",
   description: "Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.",
-  alternates: {
-    canonical: "https://mrmallorcagolf.com/guides/son-gual-review",
-    languages: {
-      'en': "https://mrmallorcagolf.com/guides/son-gual-review",
-      'x-default': "https://mrmallorcagolf.com/guides/son-gual-review",
-    }
-  },
-  openGraph: {
-    type: 'article',
-    url: "https://mrmallorcagolf.com/guides/son-gual-review",
-    title: "Son Gual Golf Mallorca — A PGA Professional’s Honest Review (2026)",
-    description: "Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.",
-    publishedTime: '2026-03-01',
-    authors: ['Andy Griffiths'],
-    images: [{ url: "https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp", width: 1200, height: 630, alt: "Son Gual Golf Mallorca — A PGA Professional’s Honest Review (2026)" }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: "Son Gual Golf Mallorca — A PGA Professional’s Honest Review (2026)",
-    description: "Son Gual golf course Mallorca reviewed by a PGA professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.",
-    images: ["https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp"],
-  },
-}
+  imagePath: '/images/son-gual-blog/sg-hero.webp',
+})
 
 const meta = {
   badge: 'Course Review', badgeGold: true, readTime: '7 min read', updated: 'March 2026',

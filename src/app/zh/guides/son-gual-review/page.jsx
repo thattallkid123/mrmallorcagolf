@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'son-gual-review',
+  locale: 'zh',
   title: "Son Gual高尔夫球场马略卡岛 — PGA职业球手诚实点评（2026）",
   description: "PGA职业球手对马略卡岛Son Gual高尔夫球场的亲身评测。",
-  alternates: { canonical: 'https://mrmallorcagolf.com/zh/guides/son-gual-review' },
-}
+  imagePath: '/images/son-gual-blog/sg-hero.webp',
+})
 
 const meta = {
   badge: '球场评测', badgeGold: true, readTime: '阅读约6分钟', updated: '2026年3月',

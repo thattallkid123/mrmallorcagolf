@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'son-gual-review',
+  locale: 'fr',
   title: "Son Gual Golf Majorque - Avis honnête d'un professionnel PGA (2026)",
   description: 'Le parcours de golf Son Gual à Majorque, évalué par un professionnel PGA.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/fr/guides/son-gual-review' },
-}
+  imagePath: '/images/son-gual-blog/sg-hero.webp',
+})
 
 const meta = {
   badge: 'Avis parcours',

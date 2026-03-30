@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'alcanada-review',
+  locale: 'es',
   title: 'Club de Golf Alcanada - Análisis honesto de un Profesional PGA',
   description: 'Alcanada en Mallorca, visto por un Profesional PGA que lo juega con frecuencia. El faro, los greens, la terraza y los green fees de 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/es/guides/alcanada-review' },
-}
+  imagePath: '/images/alcanada-blog/alc-7.jpg',
+})
 
 const meta = {
   badge: 'Análisis del campo',

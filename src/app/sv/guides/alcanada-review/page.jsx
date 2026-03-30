@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'alcanada-review',
+  locale: 'sv',
   title: 'Club de Golf Alcanada - Ärlig recension av en PGA Professional',
   description: 'Alcanada på Mallorca, sett genom ögonen på en PGA Professional som spelar där regelbundet. Fyren, greenerna, terrassen och greenfeen 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/sv/guides/alcanada-review' },
-}
+  imagePath: '/images/alcanada-blog/alc-7.jpg',
+})
 
 const meta = {
   badge: 'Banrecension',

@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Guide Golf Majorque — Avis sur les parcours & conseils',
-  description: 'Guides honnêtes sur le golf à Majorque par un Professionnel PGA. Avis sur les parcours, green fees et planification de voyage — mis à jour pour 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/fr/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('fr')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: 'Avis parcours', badgeGold: true, title: "Son Gual Golf Majorque — Avis honnête d'un Professionnel PGA (2026)", intro: "Mon parcours le plus joué sur l'île. Le vent, les greens, la fin de parcours — et pourquoi Obama et Nadal reviennent toujours.", readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap requis' },

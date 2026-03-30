@@ -1,12 +1,15 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'alcanada-review',
+  locale: 'de',
   title: 'Club de Golf Alcanada - Aus Sicht eines PGA Professionals',
   description: 'Alcanada auf Mallorca, bewertet von einem PGA Professional, der den Platz regelmäßig spielt. Leuchtturm, Grüns, Restaurantterrasse und Greenfees 2026.',
-  alternates: { canonical: 'https://mrmallorcagolf.com/de/guides/alcanada-review' },
-}
+  imagePath: '/images/alcanada-blog/alc-7.jpg',
+})
 
 const meta = {
   badge: 'Platzbewertung',

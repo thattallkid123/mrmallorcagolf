@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: '马略卡岛高尔夫指南 — 球场评测与建议',
-  description: '由PGA职业教练撰写的马略卡岛高尔夫诚实指南。球场评测、果岭费用及行程规划 — 2026年更新版。',
-  alternates: { canonical: 'https://mrmallorcagolf.com/zh/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('zh')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: '球场评测', badgeGold: true, title: 'Son Gual高尔夫球场，马略卡 — PGA职业教练诚实评测（2026）', intro: '我在岛上打得最多的球场。风、果岭、收官几洞 — 以及奥巴马和纳达尔一再回来的原因。', readTime: '7分钟', keywords: '锦标赛级 · 标准杆72 · €80–165 · 需要差点证明' },
