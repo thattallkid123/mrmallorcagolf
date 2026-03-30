@@ -7,8 +7,8 @@ const courses = [
   { cls: 'course-card--1', badge: '★ Elección experta', region: 'Palma · 11km del centro', name: 'Son Gual', meta: ['Championship','Par 72','€80–165'], stars: '★★★★★', difficulty: '9/10 Dificultad', excerpt: 'El diseño de Thomas Himmel de 2007 tiene su propio ecosistema de viento. El tramo final — hoyos 15 al 18 — está entre los cuatro mejores hoyos del golf europeo.', img: '/images/son-gual.jpg' },
   { cls: 'course-card--2', badge: '★ Elección experta', region: 'Alcúdia · Norte de Mallorca', name: 'Alcanada', meta: ['Costero','Par 72','€115–220'], stars: '★★★★★', difficulty: '7/10 Dificultad', excerpt: 'Robert Trent Jones Jr. en su versión más escénica. El faro visible desde 16 de 18 hoyos. Uno de los campos más fotografiados de España.', img: '/images/alcanada.jpg' },
   { cls: 'course-card--3', badge: 'Mejor de España 2025', region: 'Son Vida · Palma', name: 'Son Muntaner', meta: ['DP World Tour','Par 72'], stars: '★★★★★', difficulty: '7/10 Dificultad', excerpt: 'Elegido mejor campo de golf de España en los World Golf Awards 2025. Vistas sobre la Bahía de Palma. Un olivo milenario en el hoyo 15.', img: '/images/son-muntaner.webp' },
-  { cls: 'course-card--4', id: 'golf-santa-ponsa-1', badge: null, region: 'Santa Ponsa · Suroeste', name: 'Santa Ponsa 1', meta: ['DP World Tour','Par 72','€77–126'], stars: '★★★★☆', difficulty: '8/10 Dificultad', excerpt: 'Sede del Mallorca Golf Open del DP World Tour 2021. Uno de los campos más largos de la isla — el hoyo 10 con 590 m es uno de los par 5 más largos de Europa.', img: '/images/santa-ponsa.webp' },
-  { cls: 'course-card--5', id: 'golf-de-andratx', badge: null, region: 'Camp de Mar · Suroeste', name: 'Golf de Andratx', meta: ['El más exigente','Par 72','€96–140'], stars: '★★★★☆', difficulty: '9/10 Dificultad', excerpt: 'El hoyo 6 es el par 5 más largo de España con 609 metros. Construido en las colinas costeras sin concesiones. Lleve pelotas de repuesto y sin ego.', img: '/images/andratx.webp' },
+  { cls: 'course-card--4', badge: null, region: 'Santa Ponsa · Suroeste', name: 'Santa Ponsa 1', meta: ['DP World Tour','Par 72','€77–126'], stars: '★★★★☆', difficulty: '8/10 Dificultad', excerpt: 'Sede del Mallorca Golf Open del DP World Tour 2021. Uno de los campos más largos de la isla — el hoyo 10 con 590 m es uno de los par 5 más largos de Europa.', img: '/images/santa-ponsa.webp' },
+  { cls: 'course-card--5', badge: null, region: 'Camp de Mar · Suroeste', name: 'Golf de Andratx', meta: ['El más exigente','Par 72','€96–140'], stars: '★★★★☆', difficulty: '9/10 Dificultad', excerpt: 'El hoyo 6 es el par 5 más largo de España con 609 metros. Construido en las colinas costeras sin concesiones. Lleve pelotas de repuesto y sin ego.', img: '/images/andratx.webp' },
 ]
 
 const faqs = [
@@ -160,7 +160,7 @@ export default function HomePageES() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c, i) => (
-            <article key={i} className={`course-card ${c.cls}`} onClick={() => router.push('/es/golf-courses#' + c.id)} style={{cursor:'pointer'}}>
+            <article key={i} className={`course-card ${c.cls}`} onClick={() => router.push('/es/golf-courses')} style={{cursor:'pointer'}}>
               <div className="course-card__bg" style={{backgroundImage:`url(${c.img})`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
               <div className="course-card__overlay" style={{background:'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)'}}></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
@@ -180,7 +180,7 @@ export default function HomePageES() {
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>
-          <Link href="/es/golf-courses#all-courses" className="btn btn--dark">Ver los 22 campos →</Link>
+          <Link href="/es/golf-courses" className="btn btn--dark">Ver los 22 campos →</Link>
         </div>
       </section>
 
