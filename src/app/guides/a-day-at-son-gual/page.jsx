@@ -13,6 +13,7 @@ export const metadata = {
       'x-default': "https://mrmallorcagolf.com/guides/a-day-at-son-gual",
     }
   },
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'article',
     url: "https://mrmallorcagolf.com/guides/a-day-at-son-gual",

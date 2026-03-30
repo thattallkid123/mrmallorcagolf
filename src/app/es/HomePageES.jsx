@@ -1,6 +1,5 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 const courses = [
@@ -27,7 +26,6 @@ const FEATURE_ICONS = {
 }
 
 export default function HomePageES() {
-  const router = useRouter()
   const [openFaq, setOpenFaq] = useState(0)
   const trackRef = useRef(null)
   const isDragging = useRef(false)
@@ -160,7 +158,7 @@ export default function HomePageES() {
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {courses.map((c, i) => (
-            <article key={i} className={`course-card ${c.cls}`} onClick={() => router.push('/es/golf-courses')} style={{cursor:'pointer'}}>
+            <Link key={i} href="/es/golf-courses" className={`course-card ${c.cls}`}>
               <div className="course-card__bg" style={{backgroundImage:`url(${c.img})`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
               <div className="course-card__overlay" style={{background:'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)'}}></div>
               {c.badge && <span className="course-card__badge">{c.badge}</span>}
@@ -176,7 +174,7 @@ export default function HomePageES() {
                 </div>
                 <p className="course-card__excerpt course-card__excerpt--visible">{c.excerpt}</p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
         <div style={{textAlign:'center',marginTop:'2.5rem'}}>

@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Script from 'next/script'
-import { headers } from 'next/headers'
-import { getAlternates, isDraftGuidePath, SITE_ORIGIN } from '../lib/site'
+import DocumentLanguage from '../components/DocumentLanguage'
+import { SITE_ORIGIN } from '../lib/site'
 
 export const viewport = {
   width: 'device-width',
@@ -90,20 +90,9 @@ const LOCAL_BUSINESS_SCHEMA = {
 }
 
 export default function RootLayout({ children }) {
-  const headerStore = headers()
-  const pathname = headerStore.get('x-pathname') || '/'
-  const locale = headerStore.get('x-locale') || 'en'
-  const alternates = getAlternates(pathname)
-
   return (
-    <html lang={locale}>
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preload" as="image" href="/images/hero-main.jpg" />
-        <link rel="canonical" href={alternates.canonical} />
-        {Object.entries(alternates.languages).map(([hrefLang, href]) => (
-          <link key={hrefLang} rel="alternate" hrefLang={hrefLang} href={href} />
-        ))}
-        {isDraftGuidePath(pathname) && <meta name="robots" content="noindex, nofollow" />}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N"
           strategy="afterInteractive"
@@ -119,7 +108,10 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <DocumentLanguage />
+        {children}
+      </body>
     </html>
   )
 }

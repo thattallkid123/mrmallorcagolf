@@ -1,11 +1,8 @@
 'use client'
-import { useState } from 'react'
+import { useContactFormSubmission } from '../../../lib/contact-form'
 
 export default function ContactForm_NL() {
-  const [submitted, setSubmitted] = useState(false)
-  const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
-  const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const { error, form, handleChange, handleSubmit, submitted, submitting } = useContactFormSubmission('nl')
 
   return (
     <div className="contact-wrap">
@@ -29,7 +26,7 @@ export default function ContactForm_NL() {
               </svg></span>
             <div>
               <p className="contact-card__label">WhatsApp</p>
-              <p className="contact-card__value"><a href="https://wa.me/34624466702" style={{color:"inherit",textDecoration:"none"}}>Message on WhatsApp →</a></p>
+              <p className="contact-card__value">Message on WhatsApp →</p>
             </div>
           </a>
           <div className="contact-card contact-card--info">
@@ -66,7 +63,8 @@ export default function ContactForm_NL() {
               <h2>Begin met het plannen van uw dag.</h2>
               <p>Hoe meer details u me geeft, hoe beter ik de dag op u kan afstemmen.</p>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-busy={submitting}>
+              <input type="text" name="website" className="form-control--hidden-honeypot" tabIndex={-1} autoComplete="off" value={form.website} onChange={handleChange} />
               <div className="form-row">
                 <div className="form-group"><label htmlFor="fname">Voornaam</label><input type="text" id="fname" name="fname" className="form-control" placeholder="Jan" required value={form.fname} onChange={handleChange} /></div>
                 <div className="form-group"><label htmlFor="lname">Achternaam</label><input type="text" id="lname" name="lname" className="form-control" placeholder="de Vries" required value={form.lname} onChange={handleChange} /></div>
@@ -97,7 +95,8 @@ export default function ContactForm_NL() {
               </div>
               <div className="form-group"><label htmlFor="message">Iets anders wat ik moet weten</label><textarea id="message" name="message" className="form-control" placeholder="Doelen voor de dag, banen, gemengde groep, specifieke wensen." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Aanvraag versturen &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={submitting}>Aanvraag versturen &rarr;</button>
+                {error && <p className="form-error" role="alert">{error}</p>}
                 <p className="form-note">Ik reageer persoonlijk op elke aanvraag binnen 24 uur.</p>
               </div>
             </form>

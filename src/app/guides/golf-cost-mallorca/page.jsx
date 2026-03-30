@@ -13,6 +13,7 @@ export const metadata = {
       'x-default': "https://mrmallorcagolf.com/guides/golf-cost-mallorca",
     }
   },
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'article',
     url: "https://mrmallorcagolf.com/guides/golf-cost-mallorca",

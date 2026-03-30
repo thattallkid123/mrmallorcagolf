@@ -13,6 +13,7 @@ export const metadata = {
       'x-default': "https://mrmallorcagolf.com/guides/is-mallorca-good-for-golf",
     }
   },
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'article',
     url: "https://mrmallorcagolf.com/guides/is-mallorca-good-for-golf",
