@@ -644,22 +644,22 @@
     <div class="question">
       <label class="question-label">How long have you been playing golf?</label>
       <div class="options-grid radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="years-playing">
           <span class="option-marker"></span>
           <span class="option-text">Less than 2 years</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="years-playing">
           <span class="option-marker"></span>
           <span class="option-text">2–5 years</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="years-playing">
           <span class="option-marker"></span>
           <span class="option-text">5–15 years</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="years-playing">
           <span class="option-marker"></span>
           <span class="option-text">15+ years</span>
@@ -670,22 +670,22 @@
     <div class="question">
       <label class="question-label">How often do you play?</label>
       <div class="options-grid radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="freq-play">
           <span class="option-marker"></span>
           <span class="option-text">A few times a year</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="freq-play">
           <span class="option-marker"></span>
           <span class="option-text">Once or twice a month</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="freq-play">
           <span class="option-marker"></span>
           <span class="option-text">Once a week</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="freq-play">
           <span class="option-marker"></span>
           <span class="option-text">Multiple times a week</span>
@@ -711,27 +711,27 @@
       <label class="question-label">How would you describe your game right now?</label>
       <p class="question-hint">Pick the one that feels most accurate, even if it's not flattering.</p>
       <div class="options-grid single-col radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
           <span class="option-text">Playing well — close to my best</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
           <span class="option-text">Solid but not quite firing</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
           <span class="option-text">A bit out of form — not sure why</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
           <span class="option-text">Struggling — something's not clicking</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
           <span class="option-text">Just starting out — building from scratch</span>
@@ -742,33 +742,33 @@
     <div class="question">
       <label class="question-label">Where do you lose the most shots?</label>
       <p class="question-hint">You can select more than one.</p>
-      <div class="options-grid checkbox-type">
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+      <div class="options-grid checkbox-type" data-checkbox-group="shot-loss">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Driving — accuracy off the tee</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Irons — ball striking</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Short game — chipping &amp; pitching</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Putting</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Course management — wrong decisions</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Mental game — inconsistency under pressure</span>
@@ -785,22 +785,22 @@
     <div class="question">
       <label class="question-label">When did you last play your best golf?</label>
       <div class="options-grid radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="best-golf-when">
           <span class="option-marker"></span>
           <span class="option-text">Recently — within the last month</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="best-golf-when">
           <span class="option-marker"></span>
           <span class="option-text">A few months ago</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="best-golf-when">
           <span class="option-marker"></span>
           <span class="option-text">A year or more ago</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="best-golf-when">
           <span class="option-marker"></span>
           <span class="option-text">I'm still building — haven't found it yet</span>
@@ -831,22 +831,22 @@
     <div class="question">
       <label class="question-label">How often do you practise between rounds?</label>
       <div class="options-grid radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="practice-freq">
           <span class="option-marker"></span>
           <span class="option-text">Rarely or never</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="practice-freq">
           <span class="option-marker"></span>
           <span class="option-text">Occasionally — a few times a month</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="practice-freq">
           <span class="option-marker"></span>
           <span class="option-text">Regularly — most weeks</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="practice-freq">
           <span class="option-marker"></span>
           <span class="option-text">Often — several times a week</span>
@@ -857,28 +857,28 @@
     <div class="question">
       <label class="question-label">Where do you practise most?</label>
       <p class="question-hint">Select all that apply.</p>
-      <div class="options-grid checkbox-type">
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+      <div class="options-grid checkbox-type" data-checkbox-group="practice-locations">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Driving range</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Putting green</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">Chipping area / short game</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">On the course itself</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'checkbox')">
+        <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
           <span class="option-text">At home / indoors</span>
@@ -889,22 +889,22 @@
     <div class="question">
       <label class="question-label">Have you had lessons or coaching before?</label>
       <div class="options-grid radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="prev-coaching">
           <span class="option-marker"></span>
           <span class="option-text">No — today is my first</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="prev-coaching">
           <span class="option-marker"></span>
           <span class="option-text">Yes — a few lessons, some time ago</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="prev-coaching">
           <span class="option-marker"></span>
           <span class="option-text">Yes — regular lessons over the years</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="prev-coaching">
           <span class="option-marker"></span>
           <span class="option-text">Yes — I've had consistent coaching recently</span>
@@ -940,22 +940,22 @@
     <div class="question">
       <label class="question-label">How would you describe the difference between your range game and your on-course game?</label>
       <div class="options-grid single-col radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="range-vs-course">
           <span class="option-marker"></span>
           <span class="option-text">Similar — what I do on the range is what I take to the course</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="range-vs-course">
           <span class="option-marker"></span>
           <span class="option-text">Some gap — I play a bit worse on the course</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="range-vs-course">
           <span class="option-marker"></span>
           <span class="option-text">Big gap — I can stripe it on the range and fall apart on the course</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="range-vs-course">
           <span class="option-marker"></span>
           <span class="option-text">I rarely practise so I'm not sure</span>
@@ -966,22 +966,22 @@
     <div class="question">
       <label class="question-label">How do you respond when a round starts badly?</label>
       <div class="options-grid single-col radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="bad-start">
           <span class="option-marker"></span>
           <span class="option-text">I reset quickly — bad holes don't carry over much</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="bad-start">
           <span class="option-marker"></span>
           <span class="option-text">It takes a few holes but I get back on track</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="bad-start">
           <span class="option-marker"></span>
           <span class="option-text">One bad hole tends to affect the next one or two</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="bad-start">
           <span class="option-marker"></span>
           <span class="option-text">A bad opening often writes off the whole round</span>
@@ -996,11 +996,11 @@
       <div style="margin-bottom:20px;">
         <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Driving off the tee</p>
         <div class="scale-wrap" id="scale-drive">
-          <label class="scale-item"><input type="radio" name="conf-drive" value="1"><span class="scale-btn" onclick="selectScale(this)">1</span></label>
-          <label class="scale-item"><input type="radio" name="conf-drive" value="2"><span class="scale-btn" onclick="selectScale(this)">2</span></label>
-          <label class="scale-item"><input type="radio" name="conf-drive" value="3"><span class="scale-btn" onclick="selectScale(this)">3</span></label>
-          <label class="scale-item"><input type="radio" name="conf-drive" value="4"><span class="scale-btn" onclick="selectScale(this)">4</span></label>
-          <label class="scale-item"><input type="radio" name="conf-drive" value="5"><span class="scale-btn" onclick="selectScale(this)">5</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="1"><span class="scale-btn" onclick="selectScale(this, event)">1</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="2"><span class="scale-btn" onclick="selectScale(this, event)">2</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="3"><span class="scale-btn" onclick="selectScale(this, event)">3</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="4"><span class="scale-btn" onclick="selectScale(this, event)">4</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="5"><span class="scale-btn" onclick="selectScale(this, event)">5</span></label>
         </div>
         <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
       </div>
@@ -1008,11 +1008,11 @@
       <div style="margin-bottom:20px;">
         <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Iron play</p>
         <div class="scale-wrap" id="scale-iron">
-          <label class="scale-item"><input type="radio" name="conf-iron" value="1"><span class="scale-btn" onclick="selectScale(this)">1</span></label>
-          <label class="scale-item"><input type="radio" name="conf-iron" value="2"><span class="scale-btn" onclick="selectScale(this)">2</span></label>
-          <label class="scale-item"><input type="radio" name="conf-iron" value="3"><span class="scale-btn" onclick="selectScale(this)">3</span></label>
-          <label class="scale-item"><input type="radio" name="conf-iron" value="4"><span class="scale-btn" onclick="selectScale(this)">4</span></label>
-          <label class="scale-item"><input type="radio" name="conf-iron" value="5"><span class="scale-btn" onclick="selectScale(this)">5</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="1"><span class="scale-btn" onclick="selectScale(this, event)">1</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="2"><span class="scale-btn" onclick="selectScale(this, event)">2</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="3"><span class="scale-btn" onclick="selectScale(this, event)">3</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="4"><span class="scale-btn" onclick="selectScale(this, event)">4</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="5"><span class="scale-btn" onclick="selectScale(this, event)">5</span></label>
         </div>
         <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
       </div>
@@ -1020,11 +1020,11 @@
       <div style="margin-bottom:20px;">
         <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Short game &amp; chipping</p>
         <div class="scale-wrap" id="scale-short">
-          <label class="scale-item"><input type="radio" name="conf-short" value="1"><span class="scale-btn" onclick="selectScale(this)">1</span></label>
-          <label class="scale-item"><input type="radio" name="conf-short" value="2"><span class="scale-btn" onclick="selectScale(this)">2</span></label>
-          <label class="scale-item"><input type="radio" name="conf-short" value="3"><span class="scale-btn" onclick="selectScale(this)">3</span></label>
-          <label class="scale-item"><input type="radio" name="conf-short" value="4"><span class="scale-btn" onclick="selectScale(this)">4</span></label>
-          <label class="scale-item"><input type="radio" name="conf-short" value="5"><span class="scale-btn" onclick="selectScale(this)">5</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="1"><span class="scale-btn" onclick="selectScale(this, event)">1</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="2"><span class="scale-btn" onclick="selectScale(this, event)">2</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="3"><span class="scale-btn" onclick="selectScale(this, event)">3</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="4"><span class="scale-btn" onclick="selectScale(this, event)">4</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="5"><span class="scale-btn" onclick="selectScale(this, event)">5</span></label>
         </div>
         <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
       </div>
@@ -1032,11 +1032,11 @@
       <div>
         <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Putting</p>
         <div class="scale-wrap" id="scale-putt">
-          <label class="scale-item"><input type="radio" name="conf-putt" value="1"><span class="scale-btn" onclick="selectScale(this)">1</span></label>
-          <label class="scale-item"><input type="radio" name="conf-putt" value="2"><span class="scale-btn" onclick="selectScale(this)">2</span></label>
-          <label class="scale-item"><input type="radio" name="conf-putt" value="3"><span class="scale-btn" onclick="selectScale(this)">3</span></label>
-          <label class="scale-item"><input type="radio" name="conf-putt" value="4"><span class="scale-btn" onclick="selectScale(this)">4</span></label>
-          <label class="scale-item"><input type="radio" name="conf-putt" value="5"><span class="scale-btn" onclick="selectScale(this)">5</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="1"><span class="scale-btn" onclick="selectScale(this, event)">1</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="2"><span class="scale-btn" onclick="selectScale(this, event)">2</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="3"><span class="scale-btn" onclick="selectScale(this, event)">3</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="4"><span class="scale-btn" onclick="selectScale(this, event)">4</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="5"><span class="scale-btn" onclick="selectScale(this, event)">5</span></label>
         </div>
         <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
       </div>
@@ -1070,22 +1070,22 @@
     <div class="question">
       <label class="question-label">How are you feeling about your game right now — this morning?</label>
       <div class="options-grid radio-type">
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="feeling-today">
           <span class="option-marker"></span>
           <span class="option-text">Confident — ready to play</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="feeling-today">
           <span class="option-marker"></span>
           <span class="option-text">Cautiously optimistic</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="feeling-today">
           <span class="option-marker"></span>
           <span class="option-text">A bit uncertain — not sure what to expect</span>
         </label>
-        <label class="option-item" onclick="selectOption(this,'radio')">
+        <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="feeling-today">
           <span class="option-marker"></span>
           <span class="option-text">Nervous — it's been a while</span>
@@ -1165,24 +1165,37 @@
     }
   }
 
-  function selectOption(el, type) {
-    if (type === 'radio') {
-      const name = el.querySelector('input').name;
-      document.querySelectorAll(`input[name="${name}"]`).forEach(inp => {
-        inp.closest('.option-item').classList.remove('selected');
-      });
+  function selectOption(el, type, event) {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
     }
-    el.classList.toggle('selected');
+
     const inp = el.querySelector('input');
+
     if (type === 'radio') {
+      const name = inp.name;
+      document.querySelectorAll(`input[name="${name}"]`).forEach((otherInput) => {
+        otherInput.checked = false;
+        otherInput.closest('.option-item').classList.remove('selected');
+      });
+
       inp.checked = true;
       el.classList.add('selected');
-    } else {
-      inp.checked = el.classList.contains('selected');
+      return;
     }
+
+    const nextChecked = !inp.checked;
+    inp.checked = nextChecked;
+    el.classList.toggle('selected', nextChecked);
   }
 
-  function selectScale(btn) {
+  function selectScale(btn, event) {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
     const item = btn.closest('.scale-item');
     const wrap = btn.closest('.scale-wrap');
     wrap.querySelectorAll('.scale-item').forEach(i => i.classList.remove('selected'));
@@ -1200,11 +1213,15 @@
     return el ? el.closest('.option-item').querySelector('.option-text').textContent.trim() : '—';
   }
 
-  function getCheckboxes(container) {
+  function getCheckboxes(groupName) {
     const items = [];
-    document.querySelectorAll(`.checkbox-type .option-item.selected .option-text`).forEach(el => {
+    const group = document.querySelector(`.checkbox-type[data-checkbox-group="${groupName}"]`);
+    if (!group) return '—';
+
+    group.querySelectorAll('.option-item.selected .option-text').forEach(el => {
       items.push(el.textContent.trim());
     });
+
     return items.length ? items.join(', ') : '—';
   }
 
@@ -1222,12 +1239,12 @@
       { q: 'Years playing', a: getRadio('years-playing') },
       { q: 'Plays how often', a: getRadio('freq-play') },
       { q: 'Game state right now', a: getRadio('game-state') },
-      { q: 'Where loses most shots', a: getCheckboxes() },
+      { q: 'Where loses most shots', a: getCheckboxes('shot-loss') },
       { q: 'Typical score', a: getVal('q-typical-score') || '—' },
       { q: 'Last played best golf', a: getRadio('best-golf-when') },
       { q: 'What made best golf work', a: getVal('q-best-golf') || '—' },
       { q: 'Practice frequency', a: getRadio('practice-freq') },
-      { q: 'Where practises', a: '' },
+      { q: 'Where practises', a: getCheckboxes('practice-locations') },
       { q: 'Previous coaching', a: getRadio('prev-coaching') },
       { q: 'Coaching takeaway', a: getVal('q-coaching-takeaway') || '—' },
       { q: 'Biggest frustration', a: getVal('q-frustration') || '—' },
@@ -1242,13 +1259,6 @@
       { q: 'Feeling today', a: getRadio('feeling-today') },
       { q: 'Anything else', a: getVal('q-anything-else') || '—' },
     ];
-
-    // Get checked practice locations
-    const practiceLocations = [];
-    document.querySelectorAll('.checkbox-type .option-item.selected .option-text').forEach(el => {
-      practiceLocations.push(el.textContent.trim());
-    });
-    summaryData[12].a = practiceLocations.length ? practiceLocations.join(', ') : '—';
 
     // Send to server
     fetch('/api/questionnaire', {
