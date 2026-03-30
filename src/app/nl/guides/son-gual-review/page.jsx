@@ -1,5 +1,6 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
+import FillImageFrame from '../../../../components/FillImageFrame'
 import PostLayout from '../../../guides/PostLayout'
 import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
@@ -32,16 +33,12 @@ export default function Post() {
 
         <p>Son Gual is mijn meest gespeelde baan op Mallorca en de baan die ik het meest consistent aanraad. Het is moeilijk, en iedereen die een ontspannen dag verwacht zal verrast zijn.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-hero.webp" alt="Son Gual Golf Course" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-hero.webp" alt="Son Gual Golf Course" priority containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <h2>De Eerste Afslagplaats</h2>
         <p>De eerste keer dat ik Son Gual speelde, stond ik op de zwarte afslagen, de wind blies hard van links. De camera draaide voor een vlog. Ik was oprecht een beetje nerveus.</p>
         <p>De drive raakte licht de hiel. Toch vloog hij verder dan verwacht en vermeed de bunkers — net. Er zijn zoveel bunkers op Son Gual, precies gepositioneerd waar licht misgeslagen slagen terechtkomen.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-1.jpg" alt="Son Gual fairway" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-1.jpg" alt="Son Gual fairway" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <h2>De Wind</h2>
         <p>Son Gual lijkt in zijn eigen ecosysteem te leven. Ik verlaat mijn huis op een kalme ochtend en kom aan bij de eerste afslagplaats om te ontdekken dat het flink waait — en dat blijft vier uur zo.</p>
         <div className="post-pull"><p>"Ik vertrok op een kalme ochtend en arriveerde bij de eerste afslagplaats om een stevige wind te vinden. Die bleef vier uur lang aanhouden."</p></div>
@@ -49,21 +46,15 @@ export default function Post() {
         <p>Snel, verhoogd en meedogenloos bij slecht naderend spel. In januari waren de greens en de franje zo kort gemaaid dat het opmerkelijk was voor die tijd van het jaar.</p>
         <p>Een van mijn speelpartners greep naar haar putter in de overtuiging dat ze op de green stond. Ze had nog ongeveer 30 yards franje voor zich. De verzorging is zo nauwkeurig.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-2.jpg" alt="Son Gual greens" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-2.jpg" alt="Son Gual greens" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <h2>De Baan</h2>
         <p>Thomas Himmels ontwerp uit 2007 maakt intelligent gebruik van de hoogteverschillen. Het 2e hole herbergt een van de grootste bunkers van Europa. De slotsequentie vanaf hole 15 wordt algemeen beschouwd als een van de mooiste afsluitingen in het Europese golf.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'21/9'}}>
-          <img src="/images/son-gual-blog/sg-3.webp" alt="Son Gual panoramic" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center 40%'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-3.webp" alt="Son Gual panoramic" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '21/9' }} imageStyle={{ objectPosition: 'center 40%' }} />
         <h2>Bekende Bezoekers</h2>
         <p>Rafa Nadal speelt hier regelmatig — zijn verklaarde favoriete baan op het eiland. Barack Obama speelde in november 2024.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-4.jpg" alt="Son Gual Golf" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-4.jpg" alt="Son Gual Golf" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <div className="post-fact">
           <div className="post-fact__item"><span className="post-fact__val">€80–165</span><span className="post-fact__label">Greenfee bereik 2026</span></div>
           <div className="post-fact__item"><span className="post-fact__val">9/10</span><span className="post-fact__label">Moeilijkheidsgraad</span></div>
@@ -76,9 +67,7 @@ export default function Post() {
         <h2>Oordeel</h2>
         <p>Son Gual is mijn favoriete baan op Mallorca. Hij zou standhouden tegen elke baan die ik op mijn reizen gespeeld heb.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-5.jpg" alt="Son Gual closing holes" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-5.jpg" alt="Son Gual closing holes" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <div className="post-cta">
           <p>Ik breng regelmatig klanten naar Son Gual. Wilt u het spelen met iemand die elk hole kent?</p>
           <a href="/nl/play-with-a-pro">Bekijk de play-with-a-pro ervaring →</a>
