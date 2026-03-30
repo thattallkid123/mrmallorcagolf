@@ -759,6 +759,18 @@ select.form-control { cursor: pointer; }
 .form-success h3 { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 500; color: var(--deep); margin-bottom: 10px; }
 .form-success p { font-size: 0.9rem; color: var(--taupe); line-height: 1.7; }
 
+.consent-banner { position: fixed; left: 20px; right: 20px; bottom: 20px; z-index: 1000; display: grid; gap: 18px; background: rgba(26,25,22,0.96); color: #fff; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 18px 50px rgba(0,0,0,0.28); padding: 20px; max-width: 760px; margin: 0 auto; }
+.consent-banner__eyebrow { font-size: 9px; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
+.consent-banner h2 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 500; color: #fff; margin-bottom: 8px; }
+.consent-banner p { color: rgba(255,255,255,0.78); line-height: 1.6; max-width: 54ch; }
+.consent-banner a { color: var(--gold-light); }
+.consent-banner__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.consent-banner__btn { appearance: none; border: 1px solid rgba(255,255,255,0.16); padding: 12px 18px; font-family: var(--font-sans); font-size: 10px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.consent-banner__btn--secondary { background: transparent; color: rgba(255,255,255,0.88); }
+.consent-banner__btn--secondary:hover { border-color: rgba(255,255,255,0.3); }
+.consent-banner__btn--primary { background: var(--gold); border-color: var(--gold); color: var(--deep); }
+.consent-banner__btn--primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
+
 /* ─── GOLF COURSES PAGE ──────────────────────────────────── */
 .geography { background: var(--deep); padding: 70px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
 .geography__left h2 { font-family: var(--font-serif); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 500; color: #fff; margin-top: 0.75rem; margin-bottom: 1.25rem; }

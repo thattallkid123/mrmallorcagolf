@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import { Cormorant_Garamond, Jost } from 'next/font/google'
-import Script from 'next/script'
+import AnalyticsConsent from '../components/AnalyticsConsent'
 import DocumentLanguage from '../components/DocumentLanguage'
 import { SITE_ORIGIN } from '../lib/site'
 
@@ -109,22 +109,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0Z2BRNWB4N');
-          `}
-        </Script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
+        <AnalyticsConsent />
         <DocumentLanguage />
         {children}
       </body>
