@@ -266,6 +266,33 @@ const CONTACT_METADATA = {
   },
 }
 
+const LEGAL_METADATA = {
+  'privacy-policy': {
+    en: {
+      title: 'Privacy Policy - Mr Mallorca Golf',
+      description:
+        'Privacy policy for Mr Mallorca Golf. How we collect, use, and protect your personal data in accordance with GDPR and Spanish data protection law.',
+    },
+    es: {
+      title: 'Politica de Privacidad - Mr Mallorca Golf',
+      description:
+        'Politica de privacidad de Mr Mallorca Golf. Como recopilamos, usamos y protegemos tus datos personales conforme al RGPD y la LOPDGDD.',
+    },
+  },
+  terms: {
+    en: {
+      title: 'Terms and Conditions - Mr Mallorca Golf',
+      description:
+        'Terms and conditions for Mr Mallorca Golf experiences and services in Mallorca, Spain.',
+    },
+    es: {
+      title: 'Terminos y Condiciones - Mr Mallorca Golf',
+      description:
+        'Terminos y condiciones de las experiencias y servicios de Mr Mallorca Golf en Mallorca, Espana.',
+    },
+  },
+}
+
 export function buildPageMetadata(pathname, locale, overrides = {}) {
   const alternates = getAlternates(pathname)
 
@@ -348,5 +375,16 @@ export function buildContactMetadata(locale = 'en') {
     locale === 'en' ? '/contact' : `/${locale}/contact`,
     locale,
     CONTACT_METADATA[locale] || CONTACT_METADATA.en,
+  )
+}
+
+export function buildLegalMetadata(type, locale = 'en') {
+  const localizedMetadata = LEGAL_METADATA[type]
+  const basePath = `/${type}`
+
+  return buildPageMetadata(
+    locale === 'en' ? basePath : `/${locale}${basePath}`,
+    locale,
+    localizedMetadata?.[locale] || localizedMetadata?.en || {},
   )
 }
