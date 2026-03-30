@@ -33,7 +33,7 @@ export default function PlayWithAProDE() {
 }}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
-            <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/de" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Start</Link> &nbsp;/&nbsp; <span>Mit einem Profi spielen</span></p>
+            <p className="breadcrumb"><Link href="/de" className="breadcrumb__link">Start</Link> &nbsp;/&nbsp; <span>Mit einem Profi spielen</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Private Golftage · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Ein privater Golftag<br />auf Mallorca.</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Keine Lektion. Keine Standard-Runde. Ein privater Tag auf einem der schönsten Plätze der Insel, begleitet von einem UK PGA Professional mit zwei Jahrzehnten Erfahrung auf drei Kontinenten.</p>

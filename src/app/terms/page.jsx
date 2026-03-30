@@ -15,7 +15,7 @@ export default function Terms() {
           </p>
 
           <h1 style={{marginBottom:'0.5rem'}}>Terms &amp; Conditions</h1>
-          <p style={{color:'rgba(255,255,255,0.5)', marginBottom:'3rem', fontSize:'0.9rem'}}>Last updated: March 2025</p>
+          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Last updated: March 2025</p>
 
           <section className="legal-section">
             <h2>1. About These Terms</h2>
@@ -113,7 +113,7 @@ export default function Terms() {
           </section>
 
           <div style={{marginTop:'3rem', paddingTop:'2rem', borderTop:'1px solid rgba(255,255,255,0.1)'}}>
-            <p style={{color:'rgba(255,255,255,0.4)', fontSize:'0.85rem'}}>
+            <p style={{color:'rgba(255,255,255,0.62)', fontSize:'0.85rem'}}>
               Also available in: <Link href="/es/terms" style={{color:'var(--gold-light)'}}>Español</Link>
             </p>
           </div>

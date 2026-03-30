@@ -10,7 +10,7 @@ export default function ContactForm() {
       {/* LEFT */}
       <div className="contact-left">
         <div>
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Get in touch</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:'1.5rem'}}>Get in touch</p>
           <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>Tell me what you&apos;re looking&nbsp;for.<br />I&apos;ll sort the rest.</h1>
           <p className="contact-left__intro">There are no booking systems here. Tell me your dates, your handicap, and what you want from the day. I&apos;ll come back to you personally — usually within a few hours, always within 24.</p>
         </div>

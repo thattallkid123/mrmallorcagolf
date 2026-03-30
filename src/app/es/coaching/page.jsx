@@ -17,7 +17,7 @@ export default function Coaching_ES() {
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/es">Inicio</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Coaching en campo</span></p>
           <h1>Mejor golf.<br />Sin cambiarlo todo.</h1>
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>Coaching en campo para golfistas en visita y residentes. Condiciones reales, decisiones reales, mejora real — sin la sobrecarga técnica que hace que la mayoría de las sesiones de práctica queden olvidadas en el hoyo 3.</p>
+          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.78)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>Coaching en campo para golfistas en visita y residentes. Condiciones reales, decisiones reales, mejora real — sin la sobrecarga técnica que hace que la mayoría de las sesiones de práctica queden olvidadas en el hoyo 3.</p>
         </div>
       </header>
 
@@ -73,7 +73,7 @@ export default function Coaching_ES() {
 
       <section className="who-section">
         <div className="reveal">
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>¿Para quién es esto?</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.58)',marginBottom:'.5rem'}}>¿Para quién es esto?</p>
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.5rem'}}>Si alguna de estas situaciones le resulta familiar, esto es para usted.</h2>
         </div>
         <div className="who-grid">

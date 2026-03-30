@@ -26,7 +26,7 @@ export default function PlayWithAPro() {
         }}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
-            <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Home</Link> &nbsp;/&nbsp; <span>Play with a Pro</span></p>
+            <p className="breadcrumb"><Link href="/" className="breadcrumb__link">Home</Link> &nbsp;/&nbsp; <span>Play with a Pro</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Private Golf Days · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>A Private Golf Day<br />in Mallorca.</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'2rem'}}>Not a lesson. Not a standard round. A private day on one of the island&apos;s finest courses, hosted by a PGA Advanced Professional with two decades of coaching across three continents.</p>

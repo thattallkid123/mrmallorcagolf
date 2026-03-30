@@ -173,8 +173,8 @@ export default function HomePageFR() {
           <div className="reveal">
             <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>Pourquoi Majorque</p>
             <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>Majorque possède des parcours au niveau du European Tour. De nombreux visiteurs en jouent quelques-uns et se demandent ce qu'ils ont manqué.</h2>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>La plupart des meilleurs parcours d'Europe ferment en hiver. Majorque ne ferme pas. En janvier, quand les parcours en Angleterre sont saturés et fermés, les fairways ici sont impeccables et le premier départ est libre. Octobre à avril est la meilleure période — green fees plus bas, parcours plus calmes, conditions qui surpasseraient toute ronde d'été ailleurs.</p>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>Vingt-deux parcours dans un rayon d'une heure de route. Plusieurs ont accueilli le DP World Tour, le Grand Final du Rolex Challenge Tour et attiré les commandes de design de Robert Trent Jones Jr. et Jack Nicklaus. Ce n'est pas une île qui a du golf par hasard. C'est une destination sérieuse que la plupart des visiteurs n'explorent jamais correctement.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85,marginBottom:'1.25rem'}}>La plupart des meilleurs parcours d'Europe ferment en hiver. Majorque ne ferme pas. En janvier, quand les parcours en Angleterre sont saturés et fermés, les fairways ici sont impeccables et le premier départ est libre. Octobre à avril est la meilleure période — green fees plus bas, parcours plus calmes, conditions qui surpasseraient toute ronde d'été ailleurs.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85}}>Vingt-deux parcours dans un rayon d'une heure de route. Plusieurs ont accueilli le DP World Tour, le Grand Final du Rolex Challenge Tour et attiré les commandes de design de Robert Trent Jones Jr. et Jack Nicklaus. Ce n'est pas une île qui a du golf par hasard. C'est une destination sérieuse que la plupart des visiteurs n'explorent jamais correctement.</p>
           </div>
           <div className="reveal reveal-delay-1">
             {[
@@ -185,7 +185,7 @@ export default function HomePageFR() {
             ].map((s, i) => (
               <div key={i} style={{padding:'1.5rem 0',borderBottom:'1px solid rgba(255,255,255,.08)',display:'flex',alignItems:'center',gap:'1.5rem'}}>
                 <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'2.2rem',fontWeight:500,color:'var(--gold)',flexShrink:0,width:120}}>{s.num}</span>
-                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.5)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
+                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.7)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
               </div>
             ))}
           </div>
@@ -297,7 +297,7 @@ export default function HomePageFR() {
               {["Tout de La Ronde Majorque","Son Gual ou Alcanada — deux des plus beaux de l'île","Long déjeuner au restaurant du parcours","Cadeau surprise curé","Rythme tranquille — une journée complète, pas une ronde précipitée"].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
             <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem',color:'var(--gold-light)'}}>À partir de €450 pp + green fee</p>
-            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)',marginBottom:'1.25rem',lineHeight:1.5}}>Les green fees sont supplémentaires — généralement €80–220 pp selon le parcours et la saison.</p>
+            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.62)',marginBottom:'1.25rem',lineHeight:1.5}}>Les green fees sont supplémentaires — généralement €80–220 pp selon le parcours et la saison.</p>
             <Link href="/fr/contact" className="btn btn--gold">Demander</Link>
           </div>
           <div className="package reveal reveal-delay-2">

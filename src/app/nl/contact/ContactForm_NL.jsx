@@ -8,7 +8,7 @@ export default function ContactForm_NL() {
     <div className="contact-wrap">
       <div className="contact-left">
         <div>
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Neem contact op</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:'1.5rem'}}>Neem contact op</p>
           <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>Vertel me wat u zoekt. Ik regel de rest.</h1>
           <p className="contact-left__intro">Geen reserveringssystemen. Vertel me uw data, uw handicap en wat u van de dag wilt.</p>
         </div>

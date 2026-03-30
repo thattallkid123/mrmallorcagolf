@@ -18,7 +18,7 @@ export default function PlayWithAPro_ZH() {
 }}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
-            <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/zh" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>首页</Link> &nbsp;/&nbsp; <span>与职业球手同场</span></p>
+            <p className="breadcrumb"><Link href="/zh" className="breadcrumb__link">首页</Link> &nbsp;/&nbsp; <span>与职业球手同场</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>私人高尔夫日 · 马略卡岛</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>在马略卡岛的私人高尔夫日。</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>这不是一堂课，也不是普通的一轮球。而是在岛上最顶级的球场之一，与一位曾在三大洲最高级别赛场执教的PGA职业教练共度的私人一天。</p>

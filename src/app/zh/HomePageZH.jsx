@@ -177,8 +177,8 @@ export default function HomePageZH() {
           <div className="reveal">
             <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>为什么选择马略卡岛</p>
             <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>马略卡岛有欧洲巡回赛标准的球场。许多游客打了几个，想知道他们错过了什么。</h2>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>欧洲最好的高尔夫球场大多在冬天关闭。马略卡岛没有。一月份，当英格兰的球场沼泽化并关闭时，Son Gual的草坪完美无瑕，第一杆处空空如也。十月到四月是最好的时间——较低的果岭费、较安静的球场、令人羞愧的条件相比夏季的其他任何地方。</p>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>一小时车程内有二十二个球场。其中几个已举办过DP World Tour、Rolex Challenge Tour Grand Final，并吸引了Robert Trent Jones Jr.和Jack Nicklaus的设计委托。这不是一个碰巧有高尔夫的岛屿。这是一个严肃的目的地，大多数游客从未真正探索过。</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85,marginBottom:'1.25rem'}}>欧洲最好的高尔夫球场大多在冬天关闭。马略卡岛没有。一月份，当英格兰的球场沼泽化并关闭时，Son Gual的草坪完美无瑕，第一杆处空空如也。十月到四月是最好的时间——较低的果岭费、较安静的球场、令人羞愧的条件相比夏季的其他任何地方。</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85}}>一小时车程内有二十二个球场。其中几个已举办过DP World Tour、Rolex Challenge Tour Grand Final，并吸引了Robert Trent Jones Jr.和Jack Nicklaus的设计委托。这不是一个碰巧有高尔夫的岛屿。这是一个严肃的目的地，大多数游客从未真正探索过。</p>
           </div>
           <div className="reveal reveal-delay-1">
             {[
@@ -189,7 +189,7 @@ export default function HomePageZH() {
             ].map((s, i) => (
               <div key={i} style={{padding:'1.5rem 0',borderBottom:'1px solid rgba(255,255,255,.08)',display:'flex',alignItems:'center',gap:'1.5rem'}}>
                 <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'2.2rem',fontWeight:500,color:'var(--gold)',flexShrink:0,width:120}}>{s.num}</span>
-                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.5)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
+                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.7)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
               </div>
             ))}
           </div>
@@ -304,7 +304,7 @@ export default function HomePageZH() {
               {['马略卡圆形的所有内容','Son Gual或Alcanada——岛上最好的两个球场','在球场餐厅享用长午餐','精选惊喜礼物','轻松的节奏——整天，而不是匆忙的回合'].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
             <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem',color:'var(--gold-light)'}}>起€450 pp + 果岭费</p>
-            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)',marginBottom:'1.25rem',lineHeight:1.5}}>果岭费另计——通常每个球场和季节€80–220 pp。</p>
+            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.62)',marginBottom:'1.25rem',lineHeight:1.5}}>果岭费另计——通常每个球场和季节€80–220 pp。</p>
             <Link href="/zh/contact" className="btn btn--gold">查询</Link>
           </div>
           <div className="package reveal reveal-delay-2">

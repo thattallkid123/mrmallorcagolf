@@ -177,8 +177,8 @@ export default function HomePageSV() {
           <div className="reveal">
             <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>Varför Mallorca</p>
             <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>Mallorca har banor enligt European Tour Standard. Många besökare spelar ett par och undrar vad de missade.</h2>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>De flesta av Europas bästa golfbanor stänger på vintern. Mallorca gör inte det. I januari, när banor i England är blöta och stängda, är Son Guels fairways fläckfria och första avslaget är tomt. Oktober till april är den bästa tiden — lägre greengebyr, lugnade banor, förhållanden som skulle skämma en sommarrunda någon annanstans.</p>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>Tjugotvå banor inom en timmas körning. Flera har värd DP World Tour, Rolex Challenge Tour Grand Final och lockat designuppdrag från Robert Trent Jones Jr. och Jack Nicklaus. Det här är ingen ö som råkar ha golf. Det är ett seriöst mål som de flesta besökare aldrig verkligen utforskar.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85,marginBottom:'1.25rem'}}>De flesta av Europas bästa golfbanor stänger på vintern. Mallorca gör inte det. I januari, när banor i England är blöta och stängda, är Son Guels fairways fläckfria och första avslaget är tomt. Oktober till april är den bästa tiden — lägre greengebyr, lugnade banor, förhållanden som skulle skämma en sommarrunda någon annanstans.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85}}>Tjugotvå banor inom en timmas körning. Flera har värd DP World Tour, Rolex Challenge Tour Grand Final och lockat designuppdrag från Robert Trent Jones Jr. och Jack Nicklaus. Det här är ingen ö som råkar ha golf. Det är ett seriöst mål som de flesta besökare aldrig verkligen utforskar.</p>
           </div>
           <div className="reveal reveal-delay-1">
             {[
@@ -189,7 +189,7 @@ export default function HomePageSV() {
             ].map((s, i) => (
               <div key={i} style={{padding:'1.5rem 0',borderBottom:'1px solid rgba(255,255,255,.08)',display:'flex',alignItems:'center',gap:'1.5rem'}}>
                 <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'2.2rem',fontWeight:500,color:'var(--gold)',flexShrink:0,width:120}}>{s.num}</span>
-                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.5)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
+                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.7)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
               </div>
             ))}
           </div>
@@ -304,7 +304,7 @@ export default function HomePageSV() {
               {['Allt i Mallorca Rundan','Son Gual eller Alcanada — två av öns bästa banor','Lång lunch på banans restaurang','Särskilt utvald överraskningsgåva','Avslappnadt tempo — en hel dag, ingen skyndsam runda'].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
             <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem',color:'var(--gold-light)'}}>Från €450 pp + Green Fee</p>
-            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)',marginBottom:'1.25rem',lineHeight:1.5}}>Greengebyrer är ytterligare — typiskt €80–220 pp beroende på bana och årstid.</p>
+            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.62)',marginBottom:'1.25rem',lineHeight:1.5}}>Greengebyrer är ytterligare — typiskt €80–220 pp beroende på bana och årstid.</p>
             <Link href="/sv/contact" className="btn btn--gold">Förfrågan</Link>
           </div>
           <div className="package reveal reveal-delay-2">

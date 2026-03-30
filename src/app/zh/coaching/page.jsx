@@ -32,7 +32,7 @@ export default function Coaching() {
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/zh">首页</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>球场实地教练</span></p>
           <h1>打得更好的高尔夫。<br />无需改变一切。</h1>
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>面向访客和常驻高尔夫球手的球场实地教练。真实条件、真实决策、真实改善——没有技术过载，不会在第3洞就被遗忘。</p>
+          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.78)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>面向访客和常驻高尔夫球手的球场实地教练。真实条件、真实决策、真实改善——没有技术过载，不会在第3洞就被遗忘。</p>
         </div>
       </header>
 
@@ -109,7 +109,7 @@ export default function Coaching() {
       {/* WHO */}
       <section className="who-section">
         <div className="reveal">
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>这对谁有效</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.58)',marginBottom:'.5rem'}}>这对谁有效</p>
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.5rem'}}>如果任何一个听起来很熟悉，这对你有效。</h2>
         </div>
         <div className="who-grid">

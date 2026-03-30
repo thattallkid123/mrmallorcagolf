@@ -15,7 +15,7 @@ export default function PrivacyPolicyES() {
           </p>
 
           <h1 style={{marginBottom:'0.5rem'}}>Política de Privacidad</h1>
-          <p style={{color:'rgba(255,255,255,0.5)', marginBottom:'3rem', fontSize:'0.9rem'}}>Última actualización: marzo de 2025</p>
+          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Última actualización: marzo de 2025</p>
 
           <section className="legal-section">
             <h2>1. Responsable del tratamiento</h2>
@@ -111,7 +111,7 @@ export default function PrivacyPolicyES() {
           </section>
 
           <div style={{marginTop:'3rem', paddingTop:'2rem', borderTop:'1px solid rgba(255,255,255,0.1)'}}>
-            <p style={{color:'rgba(255,255,255,0.4)', fontSize:'0.85rem'}}>
+            <p style={{color:'rgba(255,255,255,0.62)', fontSize:'0.85rem'}}>
               También disponible en: <Link href="/privacy-policy" style={{color:'var(--gold-light)'}}>English</Link>
             </p>
           </div>

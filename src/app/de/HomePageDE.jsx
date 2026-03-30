@@ -177,8 +177,8 @@ export default function HomePageDE() {
           <div className="reveal">
             <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>Warum Mallorca</p>
             <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>Mallorca hat Plätze nach European Tour Standard. Viele Besucher spielen ein paar und fragen sich, was sie verpasst haben.</h2>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>Die meisten besten Golfplätze Europas schließen im Winter. Mallorca nicht. Im Januar, wenn Plätze in England sumpfig und geschlossen sind, sind Son Guels Fairways makellos und der erste Abschlag leer. Oktober bis April ist die beste Zeit — niedrigere Green Fees, ruhigere Plätze, Konditionen, die einen Sommerrunde überall sonst beschämen würden.</p>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>Zweiundzwanzig Plätze innerhalb einer Stunde Fahrt. Mehrere haben die DP World Tour ausgetragen, das Rolex Challenge Tour Grand Final und zogen Design-Aufträge von Robert Trent Jones Jr. und Jack Nicklaus an. Das ist keine Insel, die zufällig Golf hat. Das ist ein ernstes Ziel, das die meisten Besucher nie richtig erkunden.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85,marginBottom:'1.25rem'}}>Die meisten besten Golfplätze Europas schließen im Winter. Mallorca nicht. Im Januar, wenn Plätze in England sumpfig und geschlossen sind, sind Son Guels Fairways makellos und der erste Abschlag leer. Oktober bis April ist die beste Zeit — niedrigere Green Fees, ruhigere Plätze, Konditionen, die einen Sommerrunde überall sonst beschämen würden.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85}}>Zweiundzwanzig Plätze innerhalb einer Stunde Fahrt. Mehrere haben die DP World Tour ausgetragen, das Rolex Challenge Tour Grand Final und zogen Design-Aufträge von Robert Trent Jones Jr. und Jack Nicklaus an. Das ist keine Insel, die zufällig Golf hat. Das ist ein ernstes Ziel, das die meisten Besucher nie richtig erkunden.</p>
           </div>
           <div className="reveal reveal-delay-1">
             {[
@@ -189,7 +189,7 @@ export default function HomePageDE() {
             ].map((s, i) => (
               <div key={i} style={{padding:'1.5rem 0',borderBottom:'1px solid rgba(255,255,255,.08)',display:'flex',alignItems:'center',gap:'1.5rem'}}>
                 <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'2.2rem',fontWeight:500,color:'var(--gold)',flexShrink:0,width:120}}>{s.num}</span>
-                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.5)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
+                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.7)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
               </div>
             ))}
           </div>
@@ -303,7 +303,7 @@ export default function HomePageDE() {
               {['Alles in der Mallorca-Runde','Son Gual oder Alcanada — zwei der besten Plätze der Insel','Langes Mittagessen im Platzrestaurant','Kuratiertes Überraschungsgeschenk','Entspanntes Tempo — ein voller Tag, keine gehastete Runde'].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
             <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem',color:'var(--gold-light)'}}>Ab €450 pp + Green Fee</p>
-            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)',marginBottom:'1.25rem',lineHeight:1.5}}>Green Fees sind zusätzlich — typischerweise €80–220 pp je nach Platz und Jahreszeit.</p>
+            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.62)',marginBottom:'1.25rem',lineHeight:1.5}}>Green Fees sind zusätzlich — typischerweise €80–220 pp je nach Platz und Jahreszeit.</p>
             <Link href="/de/contact" className="btn btn--gold">Anfrage</Link>
           </div>
           <div className="package reveal reveal-delay-2">

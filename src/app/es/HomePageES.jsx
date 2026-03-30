@@ -122,8 +122,8 @@ export default function HomePageES() {
           <div className="reveal">
             <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>Por qué Mallorca</p>
             <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>Mallorca tiene campos de nivel European Tour. Muchos visitantes juegan unos pocos y se preguntan qué se perdieron.</h2>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>La mayoría de los campos en Europa cierran en invierno. Mallorca no. En enero, cuando muchos campos en Europa están cerrados, los fairways aquí están impecables y el primer tee está vacío. Octubre a abril es el momento ideal — green fees más bajos, campos menos concurridos, condiciones que superarían cualquier ronda de verano en otro lugar.</p>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>Veintidós campos en menos de una hora de coche. Varios han acogido el DP World Tour, la Gran Final del Rolex Challenge Tour, y atraído diseños de Robert Trent Jones Jr. y Jack Nicklaus. Esto no es una isla que casualmente tenga golf. Es un destino serio que la mayoría de visitantes nunca exploran correctamente.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85,marginBottom:'1.25rem'}}>La mayoría de los campos en Europa cierran en invierno. Mallorca no. En enero, cuando muchos campos en Europa están cerrados, los fairways aquí están impecables y el primer tee está vacío. Octubre a abril es el momento ideal — green fees más bajos, campos menos concurridos, condiciones que superarían cualquier ronda de verano en otro lugar.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85}}>Veintidós campos en menos de una hora de coche. Varios han acogido el DP World Tour, la Gran Final del Rolex Challenge Tour, y atraído diseños de Robert Trent Jones Jr. y Jack Nicklaus. Esto no es una isla que casualmente tenga golf. Es un destino serio que la mayoría de visitantes nunca exploran correctamente.</p>
           </div>
           <div className="reveal reveal-delay-1">
             {[
@@ -134,7 +134,7 @@ export default function HomePageES() {
             ].map((s, i) => (
               <div key={i} style={{padding:'1.5rem 0',borderBottom:'1px solid rgba(255,255,255,.08)',display:'flex',alignItems:'center',gap:'1.5rem'}}>
                 <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'2.2rem',fontWeight:500,color:'var(--gold)',flexShrink:0,width:120}}>{s.num}</span>
-                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.5)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
+                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.7)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
               </div>
             ))}
           </div>
@@ -242,7 +242,7 @@ export default function HomePageES() {
               {['Todo de La Ronda de Mallorca','Son Gual o Alcanada — dos de los mejores de la isla','Almuerzo largo en el restaurante del campo','Regalo sorpresa seleccionado','Ritmo pausado — un día completo, no una ronda apresurada'].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
             <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem',color:'var(--gold-light)'}}>Desde €450 pp + green fee</p>
-            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)',marginBottom:'1.25rem',lineHeight:1.5}}>Los green fees son adicionales — típicamente €80–220 pp según campo y temporada.</p>
+            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.62)',marginBottom:'1.25rem',lineHeight:1.5}}>Los green fees son adicionales — típicamente €80–220 pp según campo y temporada.</p>
             <Link href="/es/contact" className="btn btn--gold">Consultar</Link>
           </div>
           <div className="package reveal reveal-delay-2">

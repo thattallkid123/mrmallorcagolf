@@ -8,7 +8,7 @@ export default function ContactForm_ES() {
     <div className="contact-wrap">
       <div className="contact-left">
         <div>
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Ponerse en contacto</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:'1.5rem'}}>Ponerse en contacto</p>
           <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>Dígame lo que busca. Yo me encargo del resto.</h1>
           <p className="contact-left__intro">Sin sistemas de reserva. Dígame sus fechas, su hándicap y lo que quiere del día. Le responderé personalmente.</p>
         </div>

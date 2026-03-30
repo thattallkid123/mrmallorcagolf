@@ -8,7 +8,7 @@ export default function ContactForm_ZH() {
     <div className="contact-wrap">
       <div className="contact-left">
         <div>
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>立即联系</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:'1.5rem'}}>立即联系</p>
           <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>告诉我您的需求。其余交给我。</h1>
           <p className="contact-left__intro">没有预订系统。告诉我您的日期、差点以及期望。我会亲自回复您。</p>
         </div>

@@ -8,7 +8,7 @@ export default function ContactFormDE() {
     <div className="contact-wrap">
       <div className="contact-left">
         <div>
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Kontakt aufnehmen</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:'1.5rem'}}>Kontakt aufnehmen</p>
           <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>Sagen Sie mir, was Sie suchen.<br />Ich kümmere mich um den Rest.</h1>
           <p className="contact-left__intro">Kein Buchungssystem. Teilen Sie mir Ihre Daten, Ihr Handicap und Ihre Wünsche mit. Ich melde mich persönlich — meist innerhalb weniger Stunden, immer innerhalb von 24.</p>
         </div>

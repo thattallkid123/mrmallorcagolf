@@ -11,7 +11,7 @@ export default function WhatsAppButton({ lang }) {
       {hovered && (
         <div style={{background:'var(--deep)',color:'#fff',padding:'8px 14px',borderRadius:4,fontSize:'0.8rem',fontFamily:"'Jost',sans-serif",fontWeight:300,whiteSpace:'nowrap',boxShadow:'0 4px 20px rgba(0,0,0,0.3)'}}>
           {isZH ? '点击发送WhatsApp消息' : 'Message on WhatsApp'}
-          {isZH && <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.5)',marginTop:2}}>微信: andygriffiths_golf</div>}
+          {isZH && <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.72)',marginTop:2}}>微信: andygriffiths_golf</div>}
         </div>
       )}
       <a

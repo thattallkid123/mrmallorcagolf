@@ -173,8 +173,8 @@ export default function HomePageNL() {
           <div className="reveal">
             <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>Waarom Mallorca</p>
             <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>Mallorca heeft banen op European Tour-standaard. Veel bezoekers spelen er een paar en vragen zich af wat ze gemist hebben.</h2>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>De meeste beste golfbanen van Europa sluiten in de winter. Mallorca niet. In januari, wanneer banen in Engeland drassig en gesloten zijn, zijn Son Guels fairways brandschoon en de eerste tee leeg. Oktober tot april is het zoete moment — lagere greenfees, rustiger banen, omstandigheden die een zomerronde elders zouden schamen.</p>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>Tweeëntwintig banen binnen een uur rijden. Verscheidene hebben de DP World Tour gehost, de Rolex Challenge Tour Grand Final en trokken designopdrachten van Robert Trent Jones Jr. en Jack Nicklaus aan. Dit is geen eiland dat toevallig golf heeft. Dit is een serieuze bestemming die de meeste bezoekers nooit goed verkennen.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85,marginBottom:'1.25rem'}}>De meeste beste golfbanen van Europa sluiten in de winter. Mallorca niet. In januari, wanneer banen in Engeland drassig en gesloten zijn, zijn Son Guels fairways brandschoon en de eerste tee leeg. Oktober tot april is het zoete moment — lagere greenfees, rustiger banen, omstandigheden die een zomerronde elders zouden schamen.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85}}>Tweeëntwintig banen binnen een uur rijden. Verscheidene hebben de DP World Tour gehost, de Rolex Challenge Tour Grand Final en trokken designopdrachten van Robert Trent Jones Jr. en Jack Nicklaus aan. Dit is geen eiland dat toevallig golf heeft. Dit is een serieuze bestemming die de meeste bezoekers nooit goed verkennen.</p>
           </div>
           <div className="reveal reveal-delay-1">
             {[
@@ -185,7 +185,7 @@ export default function HomePageNL() {
             ].map((s, i) => (
               <div key={i} style={{padding:'1.5rem 0',borderBottom:'1px solid rgba(255,255,255,.08)',display:'flex',alignItems:'center',gap:'1.5rem'}}>
                 <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'2.2rem',fontWeight:500,color:'var(--gold)',flexShrink:0,width:120}}>{s.num}</span>
-                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.5)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
+                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.7)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
               </div>
             ))}
           </div>
@@ -297,7 +297,7 @@ export default function HomePageNL() {
               {["Alles in De Mallorca-ronde","Son Gual of Alcanada — twee van eilands beste","Lange lunch in baanrestaurant","Samengesteld verrassing cadeau","Ontspannen tempo — een volle dag, geen haastige ronde"].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
             <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem',color:'var(--gold-light)'}}>Vanaf €450 pp + greenfee</p>
-            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)',marginBottom:'1.25rem',lineHeight:1.5}}>Greenfees zijn aanvullend — meestal €80–220 pp afhankelijk van baan en seizoen.</p>
+            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.62)',marginBottom:'1.25rem',lineHeight:1.5}}>Greenfees zijn aanvullend — meestal €80–220 pp afhankelijk van baan en seizoen.</p>
             <Link href="/nl/contact" className="btn btn--gold">Informeer</Link>
           </div>
           <div className="package reveal reveal-delay-2">

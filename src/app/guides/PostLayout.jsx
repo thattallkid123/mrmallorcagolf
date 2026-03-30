@@ -34,7 +34,7 @@ export default function PostLayout({ children, meta, lang }) {
             <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.35)' }}>Updated {meta.updated}</span>
           </div>
           <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 400, color: '#fff', lineHeight: 1.1, maxWidth: 720 }}>{meta.title}</h1>
-          <p style={{ fontSize: '1.05rem', fontWeight: 300, color: 'rgba(255,255,255,.6)', lineHeight: 1.8, maxWidth: 600, marginTop: '1.25rem' }}>{meta.intro}</p>
+          <p style={{ fontSize: '1.05rem', fontWeight: 300, color: 'rgba(255,255,255,.78)', lineHeight: 1.8, maxWidth: 600, marginTop: '1.25rem' }}>{meta.intro}</p>
         </div>
       </header>
 

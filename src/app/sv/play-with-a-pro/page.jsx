@@ -18,7 +18,7 @@ export default function PlayWithAPro_SV() {
 }}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
-            <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/sv" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Start</Link> &nbsp;/&nbsp; <span>Spela med ett Proffs</span></p>
+            <p className="breadcrumb"><Link href="/sv" className="breadcrumb__link">Start</Link> &nbsp;/&nbsp; <span>Spela med ett Proffs</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Privata Golfdagar · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>En Privat Golfdag på Mallorca.</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Inte en lektion. Inte en vanlig runda. En privat dag på en av ons finaste banor, guidad av en UK PGA-proffs som coachat på högsta nivå på tre kontinenter.</p>

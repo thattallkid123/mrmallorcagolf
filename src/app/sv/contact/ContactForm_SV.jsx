@@ -8,7 +8,7 @@ export default function ContactForm_SV() {
     <div className="contact-wrap">
       <div className="contact-left">
         <div>
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'1.5rem'}}>Hör av dig</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.6)',marginBottom:'1.5rem'}}>Hör av dig</p>
           <h1 className="serif-display" style={{fontSize:'clamp(2rem,4vw,3.2rem)',color:'#fff',lineHeight:1.08,marginBottom:'1.5rem'}}>Berätta vad du söker. Jag ordnar resten.</h1>
           <p className="contact-left__intro">Inga bokningssystem. Berätta om dina datum, ditt handicap och vad du vill ha ut av dagen.</p>
         </div>

@@ -32,7 +32,7 @@ export default function Coaching() {
         <div className="page-hero__inner">
           <p className="breadcrumb"><Link href="/nl">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>On-Course Coaching</span></p>
           <h1>Beter Golf.<br />Zonder Alles Veranderen.</h1>
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>On-course coaching voor bezoekers en ingezetenen. Echte omstandigheden, echte beslissingen, echte verbetering — en geen van de technische overload die de meeste driving range sessies ongebruikt laat bij de 3e hole.</p>
+          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.78)',lineHeight:1.8,maxWidth:560,marginTop:'1rem'}}>On-course coaching voor bezoekers en ingezetenen. Echte omstandigheden, echte beslissingen, echte verbetering — en geen van de technische overload die de meeste driving range sessies ongebruikt laat bij de 3e hole.</p>
         </div>
       </header>
 
@@ -109,7 +109,7 @@ export default function Coaching() {
       {/* WHO */}
       <section className="who-section">
         <div className="reveal">
-          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.5rem'}}>Voor wie dit is</p>
+          <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.58)',marginBottom:'.5rem'}}>Voor wie dit is</p>
           <h2 className="serif-display" style={{color:'#fff',marginTop:'.5rem'}}>Als een van deze herkenbaar klinkt, is dit voor u.</h2>
         </div>
         <div className="who-grid">

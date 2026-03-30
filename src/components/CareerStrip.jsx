@@ -32,7 +32,7 @@ export default function CareerStrip({ label = 'Venues & experience', heading = '
   return (
     <section style={{background:'var(--deep)',padding:'clamp(48px,6vw,72px) 0',overflow:'hidden'}}>
       <div style={{maxWidth:1200,margin:'0 auto',padding:'0 clamp(20px,5vw,60px)',marginBottom:'2.5rem'}}>
-        <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.3)',marginBottom:'.75rem'}}>{label}</p>
+        <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.58)',marginBottom:'.75rem'}}>{label}</p>
         <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.8rem,3vw,2.6rem)'}}>{heading}</h2>
       </div>
       <div style={{position:'relative',overflow:'hidden'}}>

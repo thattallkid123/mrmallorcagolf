@@ -18,7 +18,7 @@ export default function PlayWithAPro_FR() {
 }}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
-            <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/fr" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Accueil</Link> &nbsp;/&nbsp; <span>Jouer avec un Pro</span></p>
+            <p className="breadcrumb"><Link href="/fr" className="breadcrumb__link">Accueil</Link> &nbsp;/&nbsp; <span>Jouer avec un Pro</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Journées Golf Privées · Majorque</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Une Journée Golf Privée à Majorque.</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>Pas une leçon. Pas un tour standard. Une journée privée sur l'un des plus beaux parcours de l'île, animée par un UK PGA Advanced Professional avec deux décennies de coaching sur trois continents.</p>

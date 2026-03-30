@@ -18,7 +18,7 @@ export default function PlayWithAPro_ES() {
 }}></div>
         <div className="pwap-hero__inner">
           <div className="pwap-hero__content">
-            <p className="breadcrumb" style={{color:'rgba(255,255,255,.4)'}}><Link href="/es" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Inicio</Link> &nbsp;/&nbsp; <span>Jugar con un Profesional</span></p>
+            <p className="breadcrumb"><Link href="/es" className="breadcrumb__link">Inicio</Link> &nbsp;/&nbsp; <span>Jugar con un Profesional</span></p>
             <p className="eyebrow eyebrow--gold" style={{marginBottom:'1rem',marginTop:'1rem'}}>Días de Golf Privados · Mallorca</p>
             <h1 className="serif-display" style={{fontSize:'clamp(2.4rem,5vw,4.2rem)',color:'#fff',marginBottom:'1.25rem'}}>Un Día de Golf Privado en Mallorca.</h1>
             <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.65)',lineHeight:1.75,maxWidth:520,marginBottom:'1.5rem'}}>No es una lección. No es una vuelta estándar. Un dia privado en uno de los mejores campos de la isla, con un UK PGA profesional que ha entrenado con dos décadas de experiencia en tres continentes.</p>

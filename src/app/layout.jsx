@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import { Cormorant_Garamond, Jost } from 'next/font/google'
-import AnalyticsConsent from '../components/AnalyticsConsent'
 import DocumentLanguage from '../components/DocumentLanguage'
 import { SITE_ORIGIN } from '../lib/site'
 
@@ -113,7 +112,6 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
-        <AnalyticsConsent />
         <DocumentLanguage />
         {children}
       </body>

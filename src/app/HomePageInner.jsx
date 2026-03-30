@@ -177,8 +177,8 @@ export default function HomePageInner() {
           <div className="reveal">
             <p className="eyebrow" style={{color:'rgba(255,255,255,.35)',marginBottom:'1rem'}}>Why Mallorca</p>
             <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.5rem,4vw,2.6rem)',marginBottom:'1.5rem'}}>Mallorca has European Tour-standard courses. Many visitors play a few and wonder what they missed.</h2>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85,marginBottom:'1.25rem'}}>Most of Europe's best golf courses close in winter. Mallorca doesn't. In January, when courses in England are sodden and shuttered, Son Gual's fairways are immaculate and the first tee is empty. October through April is the sweet spot — lower green fees, quieter courses, conditions that would shame a summer round anywhere else.</p>
-            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.6)',lineHeight:1.85}}>Twenty-two courses within an hour's drive. Several have hosted the DP World Tour, the Rolex Challenge Tour Grand Final, and attracted design commissions from Robert Trent Jones Jr. and Jack Nicklaus. This is not an island that happened to have some golf. It's a serious destination that most visitors never explore properly.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85,marginBottom:'1.25rem'}}>Most of Europe's best golf courses close in winter. Mallorca doesn't. In January, when courses in England are sodden and shuttered, Son Gual's fairways are immaculate and the first tee is empty. October through April is the sweet spot — lower green fees, quieter courses, conditions that would shame a summer round anywhere else.</p>
+            <p style={{fontSize:'1rem',color:'rgba(255,255,255,.76)',lineHeight:1.85}}>Twenty-two courses within an hour's drive. Several have hosted the DP World Tour, the Rolex Challenge Tour Grand Final, and attracted design commissions from Robert Trent Jones Jr. and Jack Nicklaus. This is not an island that happened to have some golf. It's a serious destination that most visitors never explore properly.</p>
           </div>
           <div className="reveal reveal-delay-1">
             {[
@@ -189,7 +189,7 @@ export default function HomePageInner() {
             ].map((s, i) => (
               <div key={i} style={{padding:'1.5rem 0',borderBottom:'1px solid rgba(255,255,255,.08)',display:'flex',alignItems:'center',gap:'1.5rem'}}>
                 <span style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'2.2rem',fontWeight:500,color:'var(--gold)',flexShrink:0,width:120}}>{s.num}</span>
-                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.5)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
+                <span style={{fontSize:'0.9rem',color:'rgba(255,255,255,.7)',fontFamily:"'Jost',sans-serif",fontWeight:300}}>{s.label}</span>
               </div>
             ))}
           </div>
@@ -303,7 +303,7 @@ export default function HomePageInner() {
               {["Everything in The Mallorca Round","Son Gual or Alcanada — two of the island's finest","Long lunch at the course restaurant","Curated surprise gift","Unhurried pace — a full day, not a rushed round"].map((f,i) => <li key={i}>{f}</li>)}
             </ul>
             <p className="package__price" style={{marginTop:'1.25rem',marginBottom:'0.5rem',color:'var(--gold-light)'}}>From €450 pp + green fee</p>
-            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)',marginBottom:'1.25rem',lineHeight:1.5}}>Green fees are additional — typically €80–220 pp depending on course and season.</p>
+            <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.62)',marginBottom:'1.25rem',lineHeight:1.5}}>Green fees are additional — typically €80–220 pp depending on course and season.</p>
             <Link href="/contact" className="btn btn--gold">Enquire</Link>
           </div>
           <div className="package reveal reveal-delay-2">
