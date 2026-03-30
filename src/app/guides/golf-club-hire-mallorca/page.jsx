@@ -7,26 +7,27 @@ export const metadata = {
   title: "Golf Club Hire in Mallorca — Everything You Need to Know (2026)",
   description: "Golf club hire in Mallorca — which companies to use, what to pay, whether to bring your own clubs, and tips for getting the best deal. Updated for 2026.",
   alternates: {
-    canonical: "https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca",
+    canonical: "https://mrmallorcagolf.com/guides/golf-club-hire-mallorca",
     languages: {
-      'en': "https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca",
-      'x-default': "https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca",
+      'en': "https://mrmallorcagolf.com/guides/golf-club-hire-mallorca",
+      'x-default': "https://mrmallorcagolf.com/guides/golf-club-hire-mallorca",
     }
   },
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'article',
-    url: "https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca",
+    url: "https://mrmallorcagolf.com/guides/golf-club-hire-mallorca",
     title: "Golf Club Hire in Mallorca — Everything You Need to Know (2026)",
     description: "Golf club hire in Mallorca — which companies to use, what to pay, whether to bring your own clubs, and tips for getting the best deal. Updated for 2026.",
     publishedTime: '2026-03-01',
     authors: ['Andy Griffiths'],
-    images: [{ url: "https://www.mrmallorcagolf.com/images/hero-main.jpg", width: 1200, height: 630, alt: "Golf Club Hire in Mallorca — Everything You Need to Know (2026)" }],
+    images: [{ url: "https://mrmallorcagolf.com/images/hero-main.jpg", width: 1200, height: 630, alt: "Golf Club Hire in Mallorca — Everything You Need to Know (2026)" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Golf Club Hire in Mallorca — Everything You Need to Know (2026)",
     description: "Golf club hire in Mallorca — which companies to use, what to pay, whether to bring your own clubs, and tips for getting the best deal. Updated for 2026.",
-    images: ["https://www.mrmallorcagolf.com/images/hero-main.jpg"],
+    images: ["https://mrmallorcagolf.com/images/hero-main.jpg"],
   },
 }
 
@@ -157,3 +158,4 @@ export default function Post() {
     </PageLayout>
   )
 }
+

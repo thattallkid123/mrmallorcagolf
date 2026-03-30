@@ -2,75 +2,75 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { NAV_LOCALES, getLanguageSwitchPath } from '../lib/site'
 
-// Nav links per language
 const LANG_CONFIG = {
-en: {
-  links: [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/play-with-a-pro', label: 'Play with a Pro' },
-    { href: '/coaching', label: 'Coaching' },
-    { href: '/golf-courses', label: 'Golf Courses' },
-    { href: '/guides', label: 'Guides' },
-  ],
-  cta: { href: '/contact', label: 'Enquire' },
-},
-de: {
-  links: [
-    { href: '/de', label: 'Start' },
-    { href: '/de/about', label: 'Über Andy' },
-    { href: '/de/play-with-a-pro', label: 'Mit Profi spielen' },
-    { href: '/de/coaching', label: 'Coaching' },
-    { href: '/de/golf-courses', label: 'Plätze' },
-    { href: '/de/guides', label: 'Ratgeber' },
-  ],
-  cta: { href: '/de/contact', label: 'Anfragen' },
-},
-fr: {
-  links: [
-    { href: '/fr', label: 'Accueil' },
-    { href: '/fr/about', label: 'À propos' },
-    { href: '/fr/play-with-a-pro', label: 'Jouer avec un Pro' },
-    { href: '/fr/coaching', label: 'Coaching' },
-    { href: '/fr/golf-courses', label: 'Parcours' },
-    { href: '/fr/guides', label: 'Guides' },
-  ],
-  cta: { href: '/fr/contact', label: 'Contact' },
-},
-es: {
-  links: [
-    { href: '/es', label: 'Inicio' },
-    { href: '/es/about', label: 'Sobre Andy' },
-    { href: '/es/play-with-a-pro', label: 'Jugar con un Pro' },
-    { href: '/es/coaching', label: 'Coaching' },
-    { href: '/es/golf-courses', label: 'Campos' },
-    { href: '/es/guides', label: 'Guías' },
-  ],
-  cta: { href: '/es/contact', label: 'Contacto' },
-},
-zh: {
-  links: [
-    { href: '/zh', label: '首页' },
-    { href: '/zh/about', label: '关于Andy' },
-    { href: '/zh/play-with-a-pro', label: '与职业球手同场' },
-    { href: '/zh/coaching', label: '球场指导' },
-    { href: '/zh/golf-courses', label: '球场指南' },
-    { href: '/zh/guides', label: '指南' },
-  ],
-  cta: { href: '/zh/contact', label: '联系我们' },
-},
-sv: {
-  links: [
-    { href: '/sv', label: 'Hem' },
-    { href: '/sv/about', label: 'Om Andy' },
-    { href: '/sv/play-with-a-pro', label: 'Spela med ett Proffs' },
-    { href: '/sv/coaching', label: 'Coaching' },
-    { href: '/sv/golf-courses', label: 'Banor' },
-    { href: '/sv/guides', label: 'Guider' },
-  ],
-  cta: { href: '/sv/contact', label: 'Kontakt' },
-},
+  en: {
+    links: [
+      { href: '/', label: 'Home' },
+      { href: '/about', label: 'About' },
+      { href: '/play-with-a-pro', label: 'Play with a Pro' },
+      { href: '/coaching', label: 'Coaching' },
+      { href: '/golf-courses', label: 'Golf Courses' },
+      { href: '/guides', label: 'Guides' },
+    ],
+    cta: { href: '/contact', label: 'Enquire' },
+  },
+  de: {
+    links: [
+      { href: '/de', label: 'Start' },
+      { href: '/de/about', label: 'Über Andy' },
+      { href: '/de/play-with-a-pro', label: 'Mit Profi spielen' },
+      { href: '/de/coaching', label: 'Coaching' },
+      { href: '/de/golf-courses', label: 'Plätze' },
+      { href: '/de/guides', label: 'Ratgeber' },
+    ],
+    cta: { href: '/de/contact', label: 'Anfragen' },
+  },
+  fr: {
+    links: [
+      { href: '/fr', label: 'Accueil' },
+      { href: '/fr/about', label: 'À propos' },
+      { href: '/fr/play-with-a-pro', label: 'Jouer avec un Pro' },
+      { href: '/fr/coaching', label: 'Coaching' },
+      { href: '/fr/golf-courses', label: 'Parcours' },
+      { href: '/fr/guides', label: 'Guides' },
+    ],
+    cta: { href: '/fr/contact', label: 'Contact' },
+  },
+  es: {
+    links: [
+      { href: '/es', label: 'Inicio' },
+      { href: '/es/about', label: 'Sobre Andy' },
+      { href: '/es/play-with-a-pro', label: 'Jugar con un Pro' },
+      { href: '/es/coaching', label: 'Coaching' },
+      { href: '/es/golf-courses', label: 'Campos' },
+      { href: '/es/guides', label: 'Guías' },
+    ],
+    cta: { href: '/es/contact', label: 'Contacto' },
+  },
+  zh: {
+    links: [
+      { href: '/zh', label: '首页' },
+      { href: '/zh/about', label: '关于 Andy' },
+      { href: '/zh/play-with-a-pro', label: '与职业球手同场' },
+      { href: '/zh/coaching', label: '球场指导' },
+      { href: '/zh/golf-courses', label: '球场指南' },
+      { href: '/zh/guides', label: '指南' },
+    ],
+    cta: { href: '/zh/contact', label: '联系我们' },
+  },
+  sv: {
+    links: [
+      { href: '/sv', label: 'Hem' },
+      { href: '/sv/about', label: 'Om Andy' },
+      { href: '/sv/play-with-a-pro', label: 'Spela med ett Proffs' },
+      { href: '/sv/coaching', label: 'Coaching' },
+      { href: '/sv/golf-courses', label: 'Banor' },
+      { href: '/sv/guides', label: 'Guider' },
+    ],
+    cta: { href: '/sv/contact', label: 'Kontakt' },
+  },
   nl: {
     links: [
       { href: '/nl', label: 'Home' },
@@ -82,38 +82,18 @@ sv: {
     ],
     cta: { href: '/nl/contact', label: 'Contact' },
   },
-};
-
-const LANG_CODES = [
-  { code: 'EN', prefix: '',    label: 'EN'   },
-  { code: 'ES', prefix: '/es', label: 'ES'   },
-  { code: 'DE', prefix: '/de', label: 'DE'   },
-  { code: 'FR', prefix: '/fr', label: 'FR'   },
-  { code: 'ZH', prefix: '/zh', label: '中文' },
-]
-
-function switchLangPath(pathname, targetPrefix) {
-  if (!pathname) return targetPrefix || '/'
-  const LANG_PREFIXES = ['/de','/fr','/es','/zh','/sv','/nl']
-  // Strip existing lang prefix if present
-  let stripped = pathname
-  for (const p of LANG_PREFIXES) {
-    if (pathname === p || pathname.startsWith(p + '/')) {
-      stripped = pathname.slice(p.length) || '/'
-      break
-    }
-  }
-  // Map page slugs that exist in all languages
-  const SHARED_PATHS = ['/about','/play-with-a-pro','/coaching','/golf-courses','/contact','/guides']
-  const isShared = stripped === '/' || SHARED_PATHS.some(p => stripped === p || stripped.startsWith(p + '/'))
-  if (!isShared) return targetPrefix || '/'
-  return (targetPrefix + stripped) || '/'
 }
+
+const LANG_CODES = NAV_LOCALES.map((locale) => ({
+  code: locale === 'en' ? 'EN' : locale.toUpperCase(),
+  locale,
+  label: locale === 'zh' ? '中文' : locale.toUpperCase(),
+}))
 
 function getLangFromPath(pathname) {
   if (!pathname) return 'en'
   const seg = pathname.split('/')[1]
-  return ['de','fr','es','zh','sv','nl'].includes(seg) ? seg : 'en'
+  return ['de', 'fr', 'es', 'zh', 'sv', 'nl'].includes(seg) ? seg : 'en'
 }
 
 export default function Nav({ transparent = false, lang }) {
@@ -121,8 +101,8 @@ export default function Nav({ transparent = false, lang }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
 
-  const activeLang     = lang || getLangFromPath(pathname)
-  const config         = LANG_CONFIG[activeLang] || LANG_CONFIG.en
+  const activeLang = lang || getLangFromPath(pathname)
+  const config = LANG_CONFIG[activeLang] || LANG_CONFIG.en
   const activeLangCode = activeLang === 'en' ? 'EN' : activeLang.toUpperCase()
 
   useEffect(() => {
@@ -154,9 +134,9 @@ export default function Nav({ transparent = false, lang }) {
           </li>
           <li>
             <div className="nav__lang">
-              {LANG_CODES.map(({ code, prefix, label }, i) => (
+              {LANG_CODES.map(({ code, locale, label }, i) => (
                 <span key={code}>
-                  <Link href={switchLangPath(pathname, prefix)} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
+                  <Link href={getLanguageSwitchPath(pathname, locale)} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
                   {i < LANG_CODES.length - 1 && <span className="nav__lang-sep"> · </span>}
                 </span>
               ))}
@@ -166,7 +146,7 @@ export default function Nav({ transparent = false, lang }) {
 
         <button
           className={`nav__hamburger${menuOpen ? ' open' : ''}`}
-          onClick={() => setMenuOpen(m => !m)}
+          onClick={() => setMenuOpen((m) => !m)}
           aria-label="Toggle menu"
         >
           <span /><span /><span />
@@ -183,8 +163,8 @@ export default function Nav({ transparent = false, lang }) {
           {config.cta.label} →
         </Link>
         <div className="mob-lang">
-          {LANG_CODES.map(({ code, prefix, label }) => (
-            <Link key={code} href={switchLangPath(pathname, prefix)} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
+          {LANG_CODES.map(({ code, locale, label }) => (
+            <Link key={code} href={getLanguageSwitchPath(pathname, locale)} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               {label}
             </Link>
           ))}

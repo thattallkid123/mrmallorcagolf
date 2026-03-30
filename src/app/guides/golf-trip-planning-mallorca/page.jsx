@@ -7,26 +7,27 @@ export const metadata = {
   title: "How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)",
   description: "Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you’re off the course. By a PGA professional based on the island.",
   alternates: {
-    canonical: "https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca",
+    canonical: "https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca",
     languages: {
-      'en': "https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca",
-      'x-default': "https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca",
+      'en': "https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca",
+      'x-default': "https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca",
     }
   },
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'article',
-    url: "https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca",
+    url: "https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca",
     title: "How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)",
     description: "Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you’re off the course. By a PGA professional based on the island.",
     publishedTime: '2026-03-01',
     authors: ['Andy Griffiths'],
-    images: [{ url: "https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg", width: 1200, height: 630, alt: "How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)" }],
+    images: [{ url: "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg", width: 1200, height: 630, alt: "How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)",
     description: "Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you’re off the course. By a PGA professional based on the island.",
-    images: ["https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg"],
+    images: ["https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg"],
   },
 }
 
@@ -139,3 +140,4 @@ export default function Post() {
     </PageLayout>
   )
 }
+

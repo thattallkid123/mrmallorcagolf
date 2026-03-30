@@ -2,24 +2,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import GolfCoursesClient from '../../golf-courses/GolfCoursesClient'
+import { buildGolfCoursesMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: '马洛卡高尔夫指南2026 — 岛上的每一个球场',
-  description: '完整的马洛卡高尔夫指南——所有22个球场、果岭费、难度等级和PGA职业选手现场的诚实推荐。2026版。',
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/zh/golf-courses',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/golf-courses',
-      'de': 'https://www.mrmallorcagolf.com/de/golf-courses',
-      'es': 'https://www.mrmallorcagolf.com/es/golf-courses',
-      'fr': 'https://www.mrmallorcagolf.com/fr/golf-courses',
-      'nl': 'https://www.mrmallorcagolf.com/nl/golf-courses',
-      'sv': 'https://www.mrmallorcagolf.com/sv/golf-courses',
-      'zh': 'https://www.mrmallorcagolf.com/zh/golf-courses',
-      'x-default': 'https://www.mrmallorcagolf.com/golf-courses',
-    }
-  }
-}
+export const metadata = buildGolfCoursesMetadata('zh')
 
 export default function GolfCourses() {
   return (
@@ -52,6 +37,7 @@ export default function GolfCourses() {
     </>
   )
 }
+
 
 
 

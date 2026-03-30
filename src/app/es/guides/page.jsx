@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Guía de Golf en Mallorca — Análisis de campos y consejos',
-  description: 'Guías honestas de golf en Mallorca de un Profesional PGA. Análisis de campos, green fees y planificación de viajes — actualizadas para 2026.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/es/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('es')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: 'Análisis del campo', badgeGold: true, title: 'Son Gual Golf Mallorca — Análisis honesto de un Profesional PGA (2026)', intro: 'Mi campo más jugado en la isla. El viento, los greens, los últimos hoyos — y por qué Obama y Nadal siguen volviendo.', readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap requerido' },
@@ -35,12 +32,12 @@ export default function GuidesIndex_ES() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/es" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>ES</a>
+            <a href="/es" className="breadcrumb__link">ES</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Guías</span>
           </p>
           <h1 dangerouslySetInnerHTML={{__html: 'Golf en Mallorca.<br />Guías honestas.'}} />
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             Análisis de campos, planificación de viajes y green fees — escritas por un Profesional PGA que juega aquí cada semana.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
@@ -118,3 +115,4 @@ export default function GuidesIndex_ES() {
     </PageLayout>
   )
 }
+

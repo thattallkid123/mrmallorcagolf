@@ -1,21 +1,13 @@
 import HomePageDE from './HomePageDE'
-import Nav from '../../components/Nav'
-import Footer from '../../components/Footer'
-import RevealObserver from '../../components/RevealObserver'
+import HomeLayout from '../HomeLayout'
+import { buildHomeMetadata } from '../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mr Mallorca Golf — Mallorcas beste Golfplätze mit einem PGA Professional',
-  description: 'Private Golferlebnisse auf Mallorca mit einem PGA Advanced Professional. Ganztägige Runden auf Son Gual, Alcanada und mehr — Coaching auf dem Platz, alles arrangiert.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/de' },
-}
+export const metadata = buildHomeMetadata('de')
 
 export default function HomeDE() {
   return (
-    <>
-      <Nav transparent={true} lang="de" />
-      <RevealObserver />
-      <main><HomePageDE /></main>
-      <Footer lang="de" />
-    </>
+    <HomeLayout lang="de">
+      <HomePageDE />
+    </HomeLayout>
   )
 }

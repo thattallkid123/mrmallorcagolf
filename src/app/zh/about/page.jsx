@@ -3,24 +3,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
+import { buildAboutMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: '关于安迪·格里菲思 — PGA职业选手，马洛卡',
-  description: "安迪·格里菲思是英国PGA高级职业选手，现居马洛卡。曾任职于佩布尔滩、埃维昂，在中国执教11年。",
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/zh/about',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/about',
-      'de': 'https://www.mrmallorcagolf.com/de/about',
-      'es': 'https://www.mrmallorcagolf.com/es/about',
-      'fr': 'https://www.mrmallorcagolf.com/fr/about',
-      'nl': 'https://www.mrmallorcagolf.com/nl/about',
-      'sv': 'https://www.mrmallorcagolf.com/sv/about',
-      'zh': 'https://www.mrmallorcagolf.com/zh/about',
-      'x-default': 'https://www.mrmallorcagolf.com/about',
-    }
-  }
-}
+export const metadata = buildAboutMetadata('zh')
 
 const credentials = [
   { title: '英国PGA高级职业选手', detail: '已进行超过15,000小时的教练课程' },
@@ -137,6 +122,7 @@ export default function About() {
     </>
   )
 }
+
 
 
 

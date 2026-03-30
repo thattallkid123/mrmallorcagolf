@@ -7,26 +7,27 @@ export const metadata = {
   title: "The Best Golf Courses in Mallorca — A PGA Professional’s Honest Guide (2026)",
   description: "The best golf courses in Mallorca ranked and reviewed by a PGA professional based on the island. Son Gual, Alcanada, Son Muntaner, and more — honest first-hand takes.",
   alternates: {
-    canonical: "https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca",
+    canonical: "https://mrmallorcagolf.com/guides/best-golf-courses-mallorca",
     languages: {
-      'en': "https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca",
-      'x-default': "https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca",
+      'en': "https://mrmallorcagolf.com/guides/best-golf-courses-mallorca",
+      'x-default': "https://mrmallorcagolf.com/guides/best-golf-courses-mallorca",
     }
   },
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'article',
-    url: "https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca",
+    url: "https://mrmallorcagolf.com/guides/best-golf-courses-mallorca",
     title: "The Best Golf Courses in Mallorca — A PGA Professional’s Honest Guide (2026)",
     description: "The best golf courses in Mallorca ranked and reviewed by a PGA professional based on the island. Son Gual, Alcanada, Son Muntaner, and more — honest first-hand takes.",
     publishedTime: '2026-03-01',
     authors: ['Andy Griffiths'],
-    images: [{ url: "https://www.mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.jpg", width: 1200, height: 630, alt: "The Best Golf Courses in Mallorca — A PGA Professional’s Honest Guide (2026)" }],
+    images: [{ url: "https://mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.jpg", width: 1200, height: 630, alt: "The Best Golf Courses in Mallorca — A PGA Professional’s Honest Guide (2026)" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "The Best Golf Courses in Mallorca — A PGA Professional’s Honest Guide (2026)",
     description: "The best golf courses in Mallorca ranked and reviewed by a PGA professional based on the island. Son Gual, Alcanada, Son Muntaner, and more — honest first-hand takes.",
-    images: ["https://www.mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.jpg"],
+    images: ["https://mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.jpg"],
   },
 }
 
@@ -169,3 +170,4 @@ export default function Post() {
     </PageLayout>
   )
 }
+

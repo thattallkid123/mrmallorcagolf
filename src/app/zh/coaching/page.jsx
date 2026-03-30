@@ -1,24 +1,10 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import FillImageFrame from '../../../components/FillImageFrame'
+import { buildCoachingMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: '马洛卡球场实地高尔夫教练 — PGA职业选手',
-  description: '由PGA高级职业选手安迪·格里菲思提供的马洛卡球场实地高尔夫教练。真实条件下的真实改善——面向访客和常驻高尔夫球手。',
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/zh/coaching',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/coaching',
-      'de': 'https://www.mrmallorcagolf.com/de/coaching',
-      'es': 'https://www.mrmallorcagolf.com/es/coaching',
-      'fr': 'https://www.mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://www.mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://www.mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://www.mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://www.mrmallorcagolf.com/coaching',
-    }
-  }
-}
+export const metadata = buildCoachingMetadata('zh')
 
 const improvements = [
   { num: '01', title: '球场管理', text: '大多数业余高尔夫球手失分的主要原因是决策失误，而不是挥杆失误。选择正确的球杆、目标和球形——这些将90分与80分区分开来。我们在真实的时间内、真实的球洞上、真实的比分处于风险中的情况下进行工作。' },
@@ -72,10 +58,12 @@ export default function Coaching() {
       </section>
 
       <div style={{lineHeight:0,overflow:'hidden'}}>
-        <img
+        <FillImageFrame
           src="/images/coaching-action.jpg"
           alt="安迪·格里菲思在马洛卡球场教练高尔夫"
-          style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 60%',display:'block'}}
+          sizes="100vw"
+          containerStyle={{ height: '420px', display: 'block' }}
+          imageStyle={{ objectPosition: 'center 60%' }}
         />
       </div>
 
@@ -156,6 +144,7 @@ export default function Coaching() {
     </>
   )
 }
+
 
 
 

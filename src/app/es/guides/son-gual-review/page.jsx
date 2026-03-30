@@ -1,12 +1,16 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
+import FillImageFrame from '../../../../components/FillImageFrame'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'son-gual-review',
+  locale: 'es',
   title: "Son Gual Golf Mallorca — Reseña Honesta de un Profesional PGA (2026)",
   description: "El campo de golf Son Gual en Mallorca, evaluado por un PGA profesional.",
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/es/guides/son-gual-review' },
-}
+  imagePath: '/images/son-gual-blog/sg-hero.webp',
+})
 
 const meta = {
   badge: 'Reseña del Campo', badgeGold: true, readTime: '6 min de lectura', updated: 'Marzo 2026',
@@ -29,16 +33,12 @@ export default function Post() {
 
         <p>Son Gual es mi campo más jugado en Mallorca y el que recomiendo con más consistencia cuando los clientes preguntan dónde jugar.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-hero.webp" alt="Son Gual Golf Course" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-hero.webp" alt="Son Gual Golf Course" priority containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <h2>El Primer Tee</h2>
         <p>La primera vez que jugué Son Gual, estaba en los tees negros, el viento soplaba fuerte por la izquierda. La cámara rodaba para un vlog. Estaba genuinamente un poco nervioso.</p>
         <p>El drive salió ligeramente del talón. Aun así voló más lejos de lo esperado y evitó los búnkeres — por poco. Hay tantos búnkeres en Son Gual, posicionados exactamente donde van los golpes ligeramente fallados.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-1.jpg" alt="Son Gual fairway" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-1.jpg" alt="Son Gual fairway" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <h2>El Viento</h2>
         <p>Son Gual parece vivir en su propio ecosistema. Salgo de mi casa una mañana tranquila y llego al primer tee para encontrar que sopla fuerte — y se mantiene así durante cuatro horas.</p>
         <div className="post-pull"><p>"Salí de casa una mañana tranquila y llegué al primer tee para encontrar un viento fuerte. Se mantuvo así durante cuatro horas."</p></div>
@@ -46,21 +46,15 @@ export default function Post() {
         <p>Rápidos, elevados e implacables con el mal juego de aproximación. En enero, los greens estaban tan bien cortados que era notable para esa época del año.</p>
         <p>Una de mis compañeras de juego cogió su putter creyendo que estaba en el green. Le quedaban unos 30 yardas de orilla por recorrer. El acondicionamiento es así de meticuloso.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-2.jpg" alt="Son Gual greens" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-2.jpg" alt="Son Gual greens" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <h2>El Campo</h2>
         <p>El diseño de Thomas Himmel de 2007 utiliza la elevación de forma inteligente. El hoyo 2 alberga uno de los búnkeres más grandes de Europa. La secuencia final a partir del hoyo 15 es ampliamente considerada una de las más finas del golf europeo.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'21/9'}}>
-          <img src="/images/son-gual-blog/sg-3.webp" alt="Son Gual panoramic" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center 40%'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-3.webp" alt="Son Gual panoramic" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '21/9' }} imageStyle={{ objectPosition: 'center 40%' }} />
         <h2>Visitantes Notables</h2>
         <p>Rafa Nadal juega aquí regularmente — su campo favorito declarado en la isla. Barack Obama jugó en noviembre de 2024.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-4.jpg" alt="Son Gual Golf" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-4.jpg" alt="Son Gual Golf" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <div className="post-fact">
           <div className="post-fact__item"><span className="post-fact__val">€80–165</span><span className="post-fact__label">Rango green fee 2026</span></div>
           <div className="post-fact__item"><span className="post-fact__val">9/10</span><span className="post-fact__label">Dificultad</span></div>
@@ -73,9 +67,7 @@ export default function Post() {
         <h2>Veredicto</h2>
         <p>Son Gual es mi campo favorito en Mallorca. Resistiría la comparación con cualquier campo que haya jugado en mis viajes.</p>
         
-        <div style={{margin:'2rem 0',borderRadius:2,overflow:'hidden',aspectRatio:'16/9'}}>
-          <img src="/images/son-gual-blog/sg-5.jpg" alt="Son Gual closing holes" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-        </div>
+        <FillImageFrame src="/images/son-gual-blog/sg-5.jpg" alt="Son Gual closing holes" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
         <div className="post-cta">
           <p>Llevo clientes a Son Gual regularmente. ¿Quiere jugarlo con alguien que conoce cada hoyo?</p>
           <a href="/es/play-with-a-pro">Ver la experiencia play-with-a-pro →</a>
@@ -84,3 +76,4 @@ export default function Post() {
     </PageLayout>
   )
 }
+

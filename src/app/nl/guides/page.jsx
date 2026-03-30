@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mallorca Golfgids — Baanbeoordelingen & tips',
-  description: 'Eerlijke golfgidsen voor Mallorca van een PGA Professional. Baanbeoordelingen, greenfees en reisplanning — bijgewerkt voor 2026.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/nl/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('nl')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: 'Baanbeoordeling', badgeGold: true, title: 'Son Gual Golf Mallorca — Eerlijke beoordeling van een PGA Professional (2026)', intro: 'Mijn meest gespeelde baan op het eiland. De wind, de greens, de slothole — en waarom Obama en Nadal blijven terugkomen.', readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap vereist' },
@@ -35,12 +32,12 @@ export default function GuidesIndex_NL() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/nl" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>NL</a>
+            <a href="/nl" className="breadcrumb__link">NL</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Gidsen</span>
           </p>
           <h1 dangerouslySetInnerHTML={{__html: 'Golf op Mallorca.<br />Eerlijke gidsen.'}} />
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             Baanbeoordelingen, reisplanning en greenfees — geschreven door een PGA Professional die hier elke week speelt.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
@@ -118,3 +115,4 @@ export default function GuidesIndex_NL() {
     </PageLayout>
   )
 }
+

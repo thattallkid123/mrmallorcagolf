@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildPlayWithAProMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Spelen met een Pro — Privegolfdagen op Mallorca',
-  description: 'Een prive golfronde op Mallorca, gespeeld naast UK PGA Advanced Professional Andy Griffiths. Coaching op de baan, volle dag geregeld. Vanaf €350 per persoon.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/nl/play-with-a-pro' },
-}
+export const metadata = buildPlayWithAProMetadata('nl')
 
 export default function PlayWithAPro_NL() {
   return (
@@ -169,3 +166,4 @@ export default function PlayWithAPro_NL() {
     </PageLayout>
   )
 }
+

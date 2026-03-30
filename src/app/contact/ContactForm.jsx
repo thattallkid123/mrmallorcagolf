@@ -1,18 +1,8 @@
 'use client'
-import { useState } from 'react'
-import Link from 'next/link'
+import { useContactFormSubmission } from '../../lib/contact-form'
 
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false)
-  const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
-
-  const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // In production: POST to /api/contact or use Formspree/Resend
-    setSubmitted(true)
-  }
+  const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission('en')
 
   return (
     <div className="contact-wrap">
@@ -41,7 +31,7 @@ export default function ContactForm() {
             </span>
             <div>
               <p className="contact-card__label">WhatsApp</p>
-              <p className="contact-card__value"><a href="https://wa.me/34624466702" style={{color:"inherit",textDecoration:"none"}}>Message on WhatsApp →</a></p>
+              <p className="contact-card__value">Message on WhatsApp →</p>
             </div>
           </a>
           <div className="contact-card contact-card--info">
@@ -78,7 +68,8 @@ export default function ContactForm() {
               <p>The more detail you give me, the better I can match the day to you.</p>
             </div>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-busy={submitting}>
+              <input type="text" name="website" className="form-control--hidden-honeypot" tabIndex={-1} autoComplete="off" value={form.website} onChange={handleChange} />
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="fname">First name</label>
@@ -150,7 +141,8 @@ export default function ContactForm() {
               </div>
 
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Send Enquiry &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={submitting}>Send Enquiry &rarr;</button>
+                {error && <p className="form-error" role="alert">{error}</p>}
                 <p className="form-note">I respond personally to every enquiry within 24 hours. Your details are used only to arrange your experience.</p>
               </div>
             </form>
@@ -161,4 +153,3 @@ export default function ContactForm() {
     </div>
   )
 }
-

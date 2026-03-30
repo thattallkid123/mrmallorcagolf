@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: '马略卡岛高尔夫指南 — 球场评测与建议',
-  description: '由PGA职业教练撰写的马略卡岛高尔夫诚实指南。球场评测、果岭费用及行程规划 — 2026年更新版。',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/zh/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('zh')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: '球场评测', badgeGold: true, title: 'Son Gual高尔夫球场，马略卡 — PGA职业教练诚实评测（2026）', intro: '我在岛上打得最多的球场。风、果岭、收官几洞 — 以及奥巴马和纳达尔一再回来的原因。', readTime: '7分钟', keywords: '锦标赛级 · 标准杆72 · €80–165 · 需要差点证明' },
@@ -35,12 +32,12 @@ export default function GuidesIndex_ZH() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/zh" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>ZH</a>
+            <a href="/zh" className="breadcrumb__link">ZH</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>高尔夫指南</span>
           </p>
           <h1 dangerouslySetInnerHTML={{__html: '马略卡岛高尔夫。<br />诚实指南。'}} />
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             球场评测、行程规划与果岭费用 — 由每周在此打球的PGA职业教练撰写。
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
@@ -118,3 +115,4 @@ export default function GuidesIndex_ZH() {
     </PageLayout>
   )
 }
+

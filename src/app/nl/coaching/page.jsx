@@ -1,24 +1,10 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import FillImageFrame from '../../../components/FillImageFrame'
+import { buildCoachingMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'On-Course Golfcoaching in Mallorca — PGA Professional',
-  description: 'On-course golfcoaching op Mallorca met PGA Advanced Professional Andy Griffiths. Echte verbetering in echte omstandigheden — voor bezoekers en inwoners.',
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/nl/coaching',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/coaching',
-      'de': 'https://www.mrmallorcagolf.com/de/coaching',
-      'es': 'https://www.mrmallorcagolf.com/es/coaching',
-      'fr': 'https://www.mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://www.mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://www.mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://www.mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://www.mrmallorcagolf.com/coaching',
-    }
-  }
-}
+export const metadata = buildCoachingMetadata('nl')
 
 const improvements = [
   { num: '01', title: 'Baanbeheer', text: 'De meeste amateurholfeurs verliezen het gros van hun slagen door verkeerde beslissingen, niet door verkeerde swing. De juiste club kiezen, doel, vorm — deze dingen scheiden een 90 van een 80. We werken eraan in real-time, op echte holes, met een echte score op het spel.' },
@@ -72,10 +58,12 @@ export default function Coaching() {
       </section>
 
       <div style={{lineHeight:0,overflow:'hidden'}}>
-        <img
+        <FillImageFrame
           src="/images/coaching-action.jpg"
           alt="Andy Griffiths coaching golf op een Mallorca baan"
-          style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 60%',display:'block'}}
+          sizes="100vw"
+          containerStyle={{ height: '420px', display: 'block' }}
+          imageStyle={{ objectPosition: 'center 60%' }}
         />
       </div>
 
@@ -156,6 +144,7 @@ export default function Coaching() {
     </>
   )
 }
+
 
 
 

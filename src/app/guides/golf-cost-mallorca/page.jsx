@@ -7,26 +7,27 @@ export const metadata = {
   title: "How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown",
   description: "Golf costs in Mallorca 2026 — green fees, club hire, buggies, food. Complete breakdown from a PGA professional who plays here most weeks.",
   alternates: {
-    canonical: "https://www.mrmallorcagolf.com/guides/golf-cost-mallorca",
+    canonical: "https://mrmallorcagolf.com/guides/golf-cost-mallorca",
     languages: {
-      'en': "https://www.mrmallorcagolf.com/guides/golf-cost-mallorca",
-      'x-default': "https://www.mrmallorcagolf.com/guides/golf-cost-mallorca",
+      'en': "https://mrmallorcagolf.com/guides/golf-cost-mallorca",
+      'x-default': "https://mrmallorcagolf.com/guides/golf-cost-mallorca",
     }
   },
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'article',
-    url: "https://www.mrmallorcagolf.com/guides/golf-cost-mallorca",
+    url: "https://mrmallorcagolf.com/guides/golf-cost-mallorca",
     title: "How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown",
     description: "Golf costs in Mallorca 2026 — green fees, club hire, buggies, food. Complete breakdown from a PGA professional who plays here most weeks.",
     publishedTime: '2026-03-01',
     authors: ['Andy Griffiths'],
-    images: [{ url: "https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg", width: 1200, height: 630, alt: "How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown" }],
+    images: [{ url: "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg", width: 1200, height: 630, alt: "How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown",
     description: "Golf costs in Mallorca 2026 — green fees, club hire, buggies, food. Complete breakdown from a PGA professional who plays here most weeks.",
-    images: ["https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg"],
+    images: ["https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg"],
   },
 }
 
@@ -127,3 +128,4 @@ export default function Post() {
     </PageLayout>
   )
 }
+

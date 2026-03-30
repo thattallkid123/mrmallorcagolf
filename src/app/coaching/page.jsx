@@ -1,24 +1,10 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
+import FillImageFrame from '../../components/FillImageFrame'
+import { buildCoachingMetadata } from '../../lib/page-metadata'
 
-export const metadata = {
-  title: 'On-Course Golf Coaching in Mallorca — PGA Professional',
-  description: 'On-course golf coaching in Mallorca with PGA Advanced Professional Andy Griffiths. Real improvement in real conditions — for visiting and resident golfers.',
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/coaching',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/coaching',
-      'de': 'https://www.mrmallorcagolf.com/de/coaching',
-      'es': 'https://www.mrmallorcagolf.com/es/coaching',
-      'fr': 'https://www.mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://www.mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://www.mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://www.mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://www.mrmallorcagolf.com/coaching',
-    }
-  }
-}
+export const metadata = buildCoachingMetadata('en')
 
 const improvements = [
   { num: '01', title: 'Course management', text: 'Most amateur golfers lose the majority of their shots to the wrong decision, not the wrong swing. Choosing the right club, target, shape — these separate a 90 from an 80. We work on them in real time, on real holes, with a real score at stake.' },
@@ -72,10 +58,12 @@ export default function Coaching() {
       </section>
 
       <div style={{lineHeight:0,overflow:'hidden'}}>
-        <img
+        <FillImageFrame
           src="/images/coaching-action.jpg"
           alt="Andy Griffiths coaching golf on a Mallorca course"
-          style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 60%',display:'block'}}
+          sizes="100vw"
+          containerStyle={{ height: '420px', display: 'block' }}
+          imageStyle={{ objectPosition: 'center 60%' }}
         />
       </div>
 
@@ -156,6 +144,7 @@ export default function Coaching() {
     </>
   )
 }
+
 
 
 

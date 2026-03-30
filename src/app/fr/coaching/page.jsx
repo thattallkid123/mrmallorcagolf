@@ -1,24 +1,10 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import FillImageFrame from '../../../components/FillImageFrame'
+import { buildCoachingMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Coaching Golf sur Parcours à Majorque — Professionnel PGA',
-  description: 'Coaching golf sur parcours à Majorque avec un Professionnel PGA Avancé Andy Griffiths. Amélioration réelle dans des conditions réelles — pour golfeurs en visite et résidents.',
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/fr/coaching',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/coaching',
-      'de': 'https://www.mrmallorcagolf.com/de/coaching',
-      'es': 'https://www.mrmallorcagolf.com/es/coaching',
-      'fr': 'https://www.mrmallorcagolf.com/fr/coaching',
-      'nl': 'https://www.mrmallorcagolf.com/nl/coaching',
-      'sv': 'https://www.mrmallorcagolf.com/sv/coaching',
-      'zh': 'https://www.mrmallorcagolf.com/zh/coaching',
-      'x-default': 'https://www.mrmallorcagolf.com/coaching',
-    }
-  }
-}
+export const metadata = buildCoachingMetadata('fr')
 
 const improvements = [
   { num: '01', title: 'Gestion du parcours', text: 'La plupart des golfeurs amateurs perdent l\'essentiel de leurs coups à cause d\'une mauvaise décision, pas d\'un mauvais swing. Choisir le bon club, la bonne cible, la bonne trajectoire — voilà ce qui sépare un 90 d\'un 80. Nous les travaillons en temps réel, sur de vrais trous, avec un vrai score en jeu.' },
@@ -72,10 +58,12 @@ export default function Coaching() {
       </section>
 
       <div style={{lineHeight:0,overflow:'hidden'}}>
-        <img
+        <FillImageFrame
           src="/images/coaching-action.jpg"
           alt="Andy Griffiths coaching golf sur un parcours à Majorque"
-          style={{width:'100%',height:'420px',objectFit:'cover',objectPosition:'center 60%',display:'block'}}
+          sizes="100vw"
+          containerStyle={{ height: '420px', display: 'block' }}
+          imageStyle={{ objectPosition: 'center 60%' }}
         />
       </div>
 
@@ -156,6 +144,7 @@ export default function Coaching() {
     </>
   )
 }
+
 
 
 

@@ -1,12 +1,8 @@
 'use client'
-import { useState } from 'react'
-import Link from 'next/link'
+import { useContactFormSubmission } from '../../../lib/contact-form'
 
 export default function ContactFormDE() {
-  const [submitted, setSubmitted] = useState(false)
-  const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
-  const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const { error, form, handleChange, handleSubmit, submitted, submitting } = useContactFormSubmission('de')
 
   return (
     <div className="contact-wrap">
@@ -30,7 +26,7 @@ export default function ContactFormDE() {
               </svg></span>
             <div>
               <p className="contact-card__label">WhatsApp</p>
-              <p className="contact-card__value"><a href="https://wa.me/34624466702" style={{color:"inherit",textDecoration:"none"}}>Message on WhatsApp →</a></p>
+              <p className="contact-card__value">Message on WhatsApp →</p>
             </div>
           </a>
           <div className="contact-card contact-card--info">
@@ -68,7 +64,8 @@ export default function ContactFormDE() {
               <h2>Planen Sie Ihren Tag.</h2>
               <p>Je mehr Details Sie mir geben, desto besser kann ich den Tag auf Sie abstimmen.</p>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-busy={submitting}>
+              <input type="text" name="website" className="form-control--hidden-honeypot" tabIndex={-1} autoComplete="off" value={form.website} onChange={handleChange} />
               <div className="form-row">
                 <div className="form-group"><label htmlFor="fname">Vorname</label><input type="text" id="fname" name="fname" className="form-control" placeholder="Andreas" required value={form.fname} onChange={handleChange} /></div>
                 <div className="form-group"><label htmlFor="lname">Nachname</label><input type="text" id="lname" name="lname" className="form-control" placeholder="Schmidt" required value={form.lname} onChange={handleChange} /></div>
@@ -107,7 +104,8 @@ export default function ContactFormDE() {
               </div>
               <div className="form-group"><label htmlFor="message">Sonstiges, das ich wissen sollte</label><textarea id="message" name="message" className="form-control" placeholder="Ziele für den Tag, Plätze, von denen Sie gehört haben, gemischte Gruppe, besondere Wünsche — alles hilft mir, den richtigen Tag für Sie zu gestalten." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Anfrage senden &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={submitting}>Anfrage senden &rarr;</button>
+                {error && <p className="form-error" role="alert">{error}</p>}
                 <p className="form-note">Ich antworte persönlich auf jede Anfrage innerhalb von 24 Stunden. Ihre Daten werden ausschließlich zur Organisation Ihres Erlebnisses verwendet.</p>
               </div>
             </form>

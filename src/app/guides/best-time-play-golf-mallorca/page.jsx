@@ -7,26 +7,27 @@ export const metadata = {
   title: "The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)",
   description: "When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island — weather, green fees, course conditions, and crowds.",
   alternates: {
-    canonical: "https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca",
+    canonical: "https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca",
     languages: {
-      'en': "https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca",
-      'x-default': "https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca",
+      'en': "https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca",
+      'x-default': "https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca",
     }
   },
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'article',
-    url: "https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca",
+    url: "https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca",
     title: "The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)",
     description: "When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island — weather, green fees, course conditions, and crowds.",
     publishedTime: '2026-03-01',
     authors: ['Andy Griffiths'],
-    images: [{ url: "https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg", width: 1200, height: 630, alt: "The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)" }],
+    images: [{ url: "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg", width: 1200, height: 630, alt: "The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)" }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "The Best Time of Year to Play Golf in Mallorca — Month by Month (2026)",
     description: "When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island — weather, green fees, course conditions, and crowds.",
-    images: ["https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg"],
+    images: ["https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg"],
   },
 }
 
@@ -110,3 +111,4 @@ export default function Post() {
     </PageLayout>
   )
 }
+

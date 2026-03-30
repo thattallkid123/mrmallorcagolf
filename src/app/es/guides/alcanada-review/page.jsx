@@ -1,20 +1,26 @@
 import PageLayout from '../../../../components/PageLayout'
 import RevealObserver from '../../../../components/RevealObserver'
 import PostLayout from '../../../guides/PostLayout'
+import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
-export const metadata = {
-  title: "Club de Golf Alcanada — A PGA Professional",
-  description: "Alcanada golf course Mallorca reviewed by a PGA professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.",
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/es/guides/alcanada-review' },
-}
+export const metadata = buildGuidePostMetadata({
+  slug: 'alcanada-review',
+  locale: 'es',
+  title: 'Club de Golf Alcanada - Análisis honesto de un Profesional PGA',
+  description: 'Alcanada en Mallorca, visto por un Profesional PGA que lo juega con frecuencia. El faro, los greens, la terraza y los green fees de 2026.',
+  imagePath: '/images/alcanada-blog/alc-7.jpg',
+})
 
 const meta = {
-  badge: 'Course Review', badgeGold: true, readTime: '6 min read', updated: 'March 2026',
-  title: "Club de Golf Alcanada — A PGA Professional",
-  intro: "El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia. El faro lo cambia todo.",
+  badge: 'Análisis del campo',
+  badgeGold: true,
+  readTime: '6 min',
+  updated: 'Marzo 2026',
+  title: 'Club de Golf Alcanada - Análisis honesto de un Profesional PGA',
+  intro: 'El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia real. El faro cambia todo.',
   lang: 'es',
   related: [
-    { slug: 'son-gual-review', title: 'Son Gual Golf — Honest Review 2026' },
+    { slug: 'son-gual-review', title: 'Son Gual Golf - Análisis honesto 2026' },
   ],
 }
 
@@ -23,56 +29,51 @@ export default function Post() {
     <PageLayout lang="es">
       <RevealObserver />
       <PostLayout meta={meta} lang="es">
-        
+        <p>Alcanada es el campo al que llevo a la gente cuando quiero que regresen a casa con una historia que contar. Puede que sea la vuelta más memorable de la isla. El faro lo cambia todo.</p>
 
+        <h2>El entorno</h2>
+        <p>Robert Trent Jones Jr. diseñó Alcanada, y lo que hizo con esta franja de costa es extraordinario. Cuando estás en los tees de atrás, con el faro detrás y el Mediterráneo abierto en casi todas las direcciones, vives uno de esos momentos de golf en los que el paisaje casi hace que te olvides de la tarjeta.</p>
+        <p>El faro de Alcanada está en un pequeño islote justo frente a la costa y se ve desde 16 de los 18 hoyos. En una mañana clara, con el mar en calma y la luz entrando sobre la bahía, es uno de los escenarios de golf más bonitos que he visto en cualquier parte del mundo.</p>
 
-        <p>Alcanada is the course I take people to when I want them to come home with a story. It might be the most memorable round on the island. The lighthouse changes everything.</p>
-
-        <h2>The Setting</h2>
-        <p>Robert Trent Jones Jr. designed Alcanada, and what he did with this stretch of coastline is remarkable. Standing on the back tees with the lighthouse behind you and the Mediterranean in every direction, it's one of those rare golf moments where the surroundings make you forget what you scored.</p>
-        <p>The Alcanada lighthouse sits on a small island just off the coast, visible from 16 of the 18 holes. On a clear morning with the water calm and the light coming across the bay, it's one of the most beautiful settings I've played golf in anywhere in the world.</p>
-
-        <h2>The Back Tees</h2>
-        <p>Standing on the elevated back tees is its own experience. You feel untouchable — so far from everything else that everyone below looks like a tiny dot. The lighthouse behind you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.</p>
+        <h2>Los tees de atrás</h2>
+        <p>Estar en los tees elevados del fondo es una experiencia en sí misma. Te sientes intocable, tan lejos de todo lo demás que la gente abajo parece un punto diminuto. El faro detrás, la bahía delante, y un driver a punto de salir hacia el vacío. Esa es la sensación.</p>
 
         <div className="post-pull">
-          <p>"Standing on the back tees at Alcanada is incredible. You feel untouchable. So far from the rest of the world. Everyone looks like a tiny dot and you're standing there, elevated, ready to hit driver somewhere into the abyss."</p>
+          <p>"Estar en los tees de atrás de Alcanada es increíble. Te sientes intocable. Muy lejos del resto del mundo. Todo el mundo parece un punto pequeño y tú estás ahí arriba, listo para lanzar el driver al vacío."</p>
         </div>
 
-        <h2>The Greens</h2>
-        <p>This is where Alcanada earns its right to host elite events. After navigating a difficult hole, you arrive at greens that are severely undulating, massively fast, and offering very few easy putts. Fifty-eight bunkers across the layout force accurate approaches on almost every hole.</p>
-        <p>The combination of slope, speed, and subtle breaks on the greens is what separates this from a merely scenic layout into something that genuinely tests skilful players.</p>
+        <h2>Los greens</h2>
+        <p>Aquí es donde Alcanada se gana de verdad su derecho a acoger eventos de alto nivel. Tras superar un hoyo exigente, llegas a greens muy ondulados, muy rápidos y llenos de putts incómodos. Los 58 bunkers del recorrido exigen golpes de aproximación muy precisos casi en cada hoyo.</p>
+        <p>La combinación de pendiente, velocidad y pequeñas caídas sutiles convierte a Alcanada en mucho más que un bonito campo costero. Pone a prueba de verdad a los buenos jugadores.</p>
 
-        <h2>The Rolex Challenge Tour Grand Final</h2>
-        <p>Alcanada hosts the Rolex Challenge Tour Grand Final — returning for its sixth time in October 2026. This is not a course dressed up for a tour event. It's a course that has always been worthy of one. Playing the same holes that decide a professional's card for the season is something you notice when you're standing on the tee.</p>
+        <h2>Rolex Challenge Tour Grand Final</h2>
+        <p>Alcanada acoge la final del Rolex Challenge Tour, que volverá por sexta vez en octubre de 2026. No es un campo que se disfraza para un evento. Es un campo que siempre ha tenido nivel para albergarlo. Cuando estás en el tee, notas que esos mismos hoyos deciden carreras y tarjetas profesionales.</p>
 
-        <h2>Design Pedigree</h2>
-        <p>Robert Trent Jones Jr.'s father designed Valderrama — the venue of the 1997 Ryder Cup — and Spyglass Hill at Pebble Beach. RTJ Jr. also designed Spring City Golf in Kunming, ranked China's number one course by Golf Digest. The lineage is genuine, and it shows in how Alcanada is routed — nothing feels arbitrary, everything uses the land.</p>
+        <h2>La firma del diseño</h2>
+        <p>El padre de Robert Trent Jones Jr. diseñó Valderrama - sede de la Ryder Cup de 1997 - y Spyglass Hill en Pebble Beach. RTJ Jr. también diseñó Spring City Golf en Kunming, considerado el número uno de China por Golf Digest. Ese linaje es real y se nota en el routing de Alcanada: nada parece arbitrario, todo aprovecha el terreno.</p>
 
         <div className="post-fact">
-          <div className="post-fact__item"><span className="post-fact__val">€115–220</span><span className="post-fact__label">Green fee range 2026</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">7/10</span><span className="post-fact__label">Difficulty</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">EUR 115-220</span><span className="post-fact__label">Green fees 2026</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">7/10</span><span className="post-fact__label">Dificultad</span></div>
           <div className="post-fact__item"><span className="post-fact__val">58</span><span className="post-fact__label">Bunkers</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">55km</span><span className="post-fact__label">From Palma</span></div>
+          <div className="post-fact__item"><span className="post-fact__val">55 km</span><span className="post-fact__label">Desde Palma</span></div>
         </div>
 
-        <h2>Practical Information</h2>
-        <p>Green fees 2026: €115 low season (January, December) to €220 peak (March–May, September–October). Full seasonal breakdown at golf-alcanada.com. A daily golf licence (€3 per person) is required for non-Spanish Federation members.</p>
-        <p>Club hire: TaylorMade sets at €38 per 18 holes. Buggy €48, electric trolley €20. The Toptracer range is excellent for a proper warm-up — use it.</p>
-        <p>Location: Port d'Alcúdia, about 50 minutes north of Palma. Allow time and don't rush back.</p>
+        <h2>Información práctica</h2>
+        <p>Green fees 2026: EUR 115 en temporada baja y hasta EUR 220 en los periodos fuertes de marzo a mayo y de septiembre a octubre. El desglose completo está en golf-alcanada.com. Los jugadores no federados en España deben pagar una licencia diaria de golf de EUR 3 por persona.</p>
+        <p>Alquiler de palos: juegos TaylorMade por EUR 38 para 18 hoyos. Buggy EUR 48, trolley eléctrico EUR 20. El campo de prácticas con Toptracer es excelente para hacer un buen calentamiento - úsalo.</p>
+        <p>Ubicación: Port d'Alcúdia, a unos 50 minutos al norte de Palma. Merece la pena ir con tiempo y no salir corriendo al acabar.</p>
 
-        <h2>The Restaurant Terrace</h2>
-        <p>One of the best places on the island for a post-round lunch. The restaurant is run by Grupo Babuxa — the group behind the well-regarded Casa Gallega restaurants in Palma — Mediterranean cooking with a sea terrace directly facing the Alcanada lighthouse. Their set lunch runs around €30 per person. Factor it in — this is not a place to rush away from.</p>
+        <h2>La terraza del restaurante</h2>
+        <p>Uno de los mejores lugares de la isla para comer después de jugar. El restaurante lo gestiona Grupo Babuxa, el grupo que está detrás de los bien valorados Casa Gallega de Palma. Cocina mediterránea, terraza frente al mar y el faro de Alcanada justo delante. El menú ronda los EUR 30 por persona. Cuenta con ello: no es un sitio del que quieras irte deprisa.</p>
 
-        <h2>Verdict</h2>
-        <p>Alcanada is the course I'd take someone to if I wanted them to fall in love with golf in Mallorca. The greens will test you. The drive north is worth it. The lunch afterwards is non-negotiable.</p>
+        <h2>Veredicto</h2>
+        <p>Alcanada es el campo que elegiría para hacer que alguien se enamore del golf en Mallorca. Los greens te van a examinar. El viaje al norte merece la pena. Y la comida después de la vuelta no es negociable.</p>
 
         <div className="post-cta">
-          <p>Alcanada is one of my two anchor courses for play-with-a-pro days. Want to play it properly?</p>
-          <a href="/play-with-a-pro">See the play-with-a-pro experience →</a>
+          <p>Alcanada es uno de mis dos campos base para los días play-with-a-pro. ¿Quieres jugarlo de verdad como se merece?</p>
+          <a href="/es/play-with-a-pro">Ver la experiencia play-with-a-pro →</a>
         </div>
-
-
       </PostLayout>
     </PageLayout>
   )

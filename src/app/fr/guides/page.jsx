@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Guide Golf Majorque — Avis sur les parcours & conseils',
-  description: 'Guides honnêtes sur le golf à Majorque par un Professionnel PGA. Avis sur les parcours, green fees et planification de voyage — mis à jour pour 2026.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/fr/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('fr')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: 'Avis parcours', badgeGold: true, title: "Son Gual Golf Majorque — Avis honnête d'un Professionnel PGA (2026)", intro: "Mon parcours le plus joué sur l'île. Le vent, les greens, la fin de parcours — et pourquoi Obama et Nadal reviennent toujours.", readTime: '7 min', keywords: 'Championship · Par 72 · €80–165 · Handicap requis' },
@@ -35,12 +32,12 @@ export default function GuidesIndex_FR() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/fr" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>FR</a>
+            <a href="/fr" className="breadcrumb__link">FR</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Guides</span>
           </p>
           <h1 dangerouslySetInnerHTML={{__html: 'Golf à Majorque.<br />Guides honnêtes.'}} />
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             Avis sur les parcours, planification de voyage et green fees — écrits par un Professionnel PGA qui joue ici chaque semaine.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
@@ -118,3 +115,4 @@ export default function GuidesIndex_FR() {
     </PageLayout>
   )
 }
+

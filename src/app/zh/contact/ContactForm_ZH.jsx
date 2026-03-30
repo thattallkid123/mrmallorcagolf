@@ -1,11 +1,8 @@
 'use client'
-import { useState } from 'react'
+import { useContactFormSubmission } from '../../../lib/contact-form'
 
 export default function ContactForm_ZH() {
-  const [submitted, setSubmitted] = useState(false)
-  const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
-  const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const { error, form, handleChange, handleSubmit, submitted, submitting } = useContactFormSubmission('zh')
 
   return (
     <div className="contact-wrap">
@@ -29,7 +26,7 @@ export default function ContactForm_ZH() {
               </svg></span>
             <div>
               <p className="contact-card__label">WhatsApp</p>
-              <p className="contact-card__value"><a href="https://wa.me/34624466702" style={{color:"inherit",textDecoration:"none"}}>Message on WhatsApp →</a></p>
+              <p className="contact-card__value">Message on WhatsApp →</p>
             </div>
           </a>
           <a href="weixin://dl/chat?andygriffiths1" className="contact-card contact-card--wechat" target="_blank" rel="noopener noreferrer">
@@ -75,7 +72,8 @@ export default function ContactForm_ZH() {
               <h2>开始规划您的高尔夫日。</h2>
               <p>您提供的细节越多，我就能越好地为您量身定制。</p>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-busy={submitting}>
+              <input type="text" name="website" className="form-control--hidden-honeypot" tabIndex={-1} autoComplete="off" value={form.website} onChange={handleChange} />
               <div className="form-row">
                 <div className="form-group"><label htmlFor="fname">名</label><input type="text" id="fname" name="fname" className="form-control" placeholder="伟" required value={form.fname} onChange={handleChange} /></div>
                 <div className="form-group"><label htmlFor="lname">姓</label><input type="text" id="lname" name="lname" className="form-control" placeholder="张" required value={form.lname} onChange={handleChange} /></div>
@@ -106,7 +104,8 @@ export default function ContactForm_ZH() {
               </div>
               <div className="form-group"><label htmlFor="message">其他需要了解的信息</label><textarea id="message" name="message" className="form-control" placeholder="这一天的目标、球场偏好、特殊需求等。" value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">提交咨询 &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={submitting}>提交咨询 &rarr;</button>
+                {error && <p className="form-error" role="alert">{error}</p>}
                 <p className="form-note">我会在24小时内亲自回复每一封咨询。</p>
               </div>
             </form>

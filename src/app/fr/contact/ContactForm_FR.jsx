@@ -1,11 +1,8 @@
 'use client'
-import { useState } from 'react'
+import { useContactFormSubmission } from '../../../lib/contact-form'
 
 export default function ContactForm_FR() {
-  const [submitted, setSubmitted] = useState(false)
-  const [form, setForm] = useState({ fname:'', lname:'', email:'', dates:'', handicap:'', groupsize:'', experience:'', message:'' })
-  const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const { error, form, handleChange, handleSubmit, submitted, submitting } = useContactFormSubmission('fr')
 
   return (
     <div className="contact-wrap">
@@ -29,7 +26,7 @@ export default function ContactForm_FR() {
               </svg></span>
             <div>
               <p className="contact-card__label">WhatsApp</p>
-              <p className="contact-card__value"><a href="https://wa.me/34624466702" style={{color:"inherit",textDecoration:"none"}}>Message on WhatsApp →</a></p>
+              <p className="contact-card__value">Message on WhatsApp →</p>
             </div>
           </a>
           <div className="contact-card contact-card--info">
@@ -66,7 +63,8 @@ export default function ContactForm_FR() {
               <h2>Commencez à planifier votre journée.</h2>
               <p>Plus vous me donnez de détails, mieux je pourrai adapter la journée à vous.</p>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-busy={submitting}>
+              <input type="text" name="website" className="form-control--hidden-honeypot" tabIndex={-1} autoComplete="off" value={form.website} onChange={handleChange} />
               <div className="form-row">
                 <div className="form-group"><label htmlFor="fname">Prénom</label><input type="text" id="fname" name="fname" className="form-control" placeholder="Jean" required value={form.fname} onChange={handleChange} /></div>
                 <div className="form-group"><label htmlFor="lname">Nom</label><input type="text" id="lname" name="lname" className="form-control" placeholder="Dupont" required value={form.lname} onChange={handleChange} /></div>
@@ -97,7 +95,8 @@ export default function ContactForm_FR() {
               </div>
               <div className="form-group"><label htmlFor="message">Autre chose que je devrais savoir</label><textarea id="message" name="message" className="form-control" placeholder="Objectifs pour la journée, parcours, groupe mixte, demandes spécifiques." value={form.message} onChange={handleChange} /></div>
               <div className="form-submit">
-                <button type="submit" className="btn-submit">Envoyer la demande &rarr;</button>
+                <button type="submit" className="btn-submit" disabled={submitting}>Envoyer la demande &rarr;</button>
+                {error && <p className="form-error" role="alert">{error}</p>}
                 <p className="form-note">Je réponds personnellement à chaque demande sous 24 heures.</p>
               </div>
             </form>

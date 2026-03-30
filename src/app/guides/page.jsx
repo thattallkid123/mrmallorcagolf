@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
+import { buildGuidesIndexMetadata } from '../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Mallorca Golf Guide — Course Reviews, Tips & Advice',
-  description: 'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit — all updated for 2026.',
-  alternates: { canonical: 'https://www.mrmallorcagolf.com/guides' },
-}
+export const metadata = buildGuidesIndexMetadata('en')
 
 const liveGuides = [
   { slug: 'son-gual-review', badge: 'Course Review', badgeGold: true, title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)", intro: "My most-played course on the island. The wind, the greens, the closing stretch — and why Obama and Nadal both keep coming back.", readTime: '7 min read', keywords: 'Championship · Par 72 · €80–165 · Handicap required' },
@@ -37,12 +34,12 @@ export default function GuidesIndex() {
       }}>
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/" style={{color:'rgba(255,255,255,.4)',textDecoration:'none'}}>Home</a>
+            <a href="/" className="breadcrumb__link">Home</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{color:'var(--gold-light)'}}>Guides</span>
           </p>
           <h1>Mallorca Golf.<br />Honest Guides.</h1>
-          <p style={{fontSize:'1rem',fontWeight:300,color:'rgba(255,255,255,.6)',lineHeight:1.8,maxWidth:540,marginTop:'1rem'}}>
+          <p className="page-hero__lead"> 
             Course reviews, trip planning, green fees, and when to visit — written by a PGA professional who plays here every week.
           </p>
           <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
@@ -120,3 +117,4 @@ export default function GuidesIndex() {
     </PageLayout>
   )
 }
+

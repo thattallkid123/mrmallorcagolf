@@ -3,24 +3,9 @@ import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
+import { buildAboutMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Over Andy Griffiths — PGA Professional, Mallorca',
-  description: "Andy Griffiths is een Britse UK PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Évian, 11 jaar coaching in China.",
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/nl/about',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/about',
-      'de': 'https://www.mrmallorcagolf.com/de/about',
-      'es': 'https://www.mrmallorcagolf.com/es/about',
-      'fr': 'https://www.mrmallorcagolf.com/fr/about',
-      'nl': 'https://www.mrmallorcagolf.com/nl/about',
-      'sv': 'https://www.mrmallorcagolf.com/sv/about',
-      'zh': 'https://www.mrmallorcagolf.com/zh/about',
-      'x-default': 'https://www.mrmallorcagolf.com/about',
-    }
-  }
-}
+export const metadata = buildAboutMetadata('nl')
 
 const credentials = [
   { title: 'UKPGA Advanced Professional', detail: 'Meer dan 15.000 uur coaching gegeven' },
@@ -137,6 +122,7 @@ export default function About() {
     </>
   )
 }
+
 
 
 

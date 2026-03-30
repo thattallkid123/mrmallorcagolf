@@ -2,33 +2,15 @@ import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import PostLayout from '../PostLayout'
+import { buildGuidePostMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
+export const metadata = buildGuidePostMetadata({
+  slug: 'santa-ponsa-1-review',
+  locale: 'en',
   title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional’s Honest Review (2026)",
   description: "Santa Ponsa 1 golf course Mallorca reviewed by a PGA professional. One of Europe’s longest courses, DP World Tour history, and a confidence-builder for anyone who loves hitting driver.",
-  alternates: {
-    canonical: "https://www.mrmallorcagolf.com/guides/santa-ponsa-1-review",
-    languages: {
-      'en': "https://www.mrmallorcagolf.com/guides/santa-ponsa-1-review",
-      'x-default': "https://www.mrmallorcagolf.com/guides/santa-ponsa-1-review",
-    }
-  },
-  openGraph: {
-    type: 'article',
-    url: "https://www.mrmallorcagolf.com/guides/santa-ponsa-1-review",
-    title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional’s Honest Review (2026)",
-    description: "Santa Ponsa 1 golf course Mallorca reviewed by a PGA professional. One of Europe’s longest courses, DP World Tour history, and a confidence-builder for anyone who loves hitting driver.",
-    publishedTime: '2026-03-01',
-    authors: ['Andy Griffiths'],
-    images: [{ url: "https://www.mrmallorcagolf.com/images/santa-ponsa-blog/sp-hero.jpg", width: 1200, height: 630, alt: "Golf Santa Ponsa 1, Mallorca — A PGA Professional’s Honest Review (2026)" }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional’s Honest Review (2026)",
-    description: "Santa Ponsa 1 golf course Mallorca reviewed by a PGA professional. One of Europe’s longest courses, DP World Tour history, and a confidence-builder for anyone who loves hitting driver.",
-    images: ["https://www.mrmallorcagolf.com/images/santa-ponsa-blog/sp-hero.jpg"],
-  },
-}
+  imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+})
 
 const meta = {
   badge: 'Course Review', badgeGold: true, readTime: '6 min read', updated: 'March 2026',
@@ -132,3 +114,4 @@ export default function Post() {
     </PageLayout>
   )
 }
+

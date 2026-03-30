@@ -1,18 +1,8 @@
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
+import { buildLegalMetadata } from '../../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Términos y Condiciones — Mr Mallorca Golf',
-  description: 'Términos y condiciones de las experiencias y servicios de Mr Mallorca Golf en Mallorca, España.',
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/es/terms',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/terms',
-      'es': 'https://www.mrmallorcagolf.com/es/terms',
-      'x-default': 'https://www.mrmallorcagolf.com/terms',
-    }
-  }
-}
+export const metadata = buildLegalMetadata('terms', 'es')
 
 export default function TermsES() {
   return (
@@ -133,3 +123,4 @@ export default function TermsES() {
     </PageLayout>
   )
 }
+

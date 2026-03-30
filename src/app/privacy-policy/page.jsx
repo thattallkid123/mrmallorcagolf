@@ -1,18 +1,8 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
+import { buildLegalMetadata } from '../../lib/page-metadata'
 
-export const metadata = {
-  title: 'Privacy Policy — Mr Mallorca Golf',
-  description: 'Privacy policy for Mr Mallorca Golf. How we collect, use, and protect your personal data in accordance with GDPR and Spanish data protection law.',
-  alternates: {
-    canonical: 'https://www.mrmallorcagolf.com/privacy-policy',
-    languages: {
-      'en': 'https://www.mrmallorcagolf.com/privacy-policy',
-      'es': 'https://www.mrmallorcagolf.com/es/privacy-policy',
-      'x-default': 'https://www.mrmallorcagolf.com/privacy-policy',
-    }
-  }
-}
+export const metadata = buildLegalMetadata('privacy-policy', 'en')
 
 export default function PrivacyPolicy() {
   return (
@@ -131,3 +121,4 @@ export default function PrivacyPolicy() {
     </PageLayout>
   )
 }
+
