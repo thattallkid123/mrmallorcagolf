@@ -45,7 +45,7 @@ export async function POST(request) {
     const safeEmail = escapeHtml(email)
     const canReply = isValidEmail(email)
 
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>',
       to: 'andy@mrmallorcagolf.com',
       replyTo: canReply ? email : undefined,
@@ -63,6 +63,11 @@ export async function POST(request) {
         </div>
       `,
     })
+
+    if (error) {
+      console.error('Resend questionnaire error:', error)
+      return Response.json({ ok: false, error: 'Failed to send' }, { status: 500 })
+    }
 
     return Response.json({ ok: true })
   } catch (err) {

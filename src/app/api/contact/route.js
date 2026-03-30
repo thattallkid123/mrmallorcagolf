@@ -61,7 +61,7 @@ export async function POST(request) {
     const fullName = `${fname} ${lname}`.trim()
     const safeEmail = escapeHtml(email)
 
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>',
       to: 'andy@mrmallorcagolf.com',
       replyTo: email,
@@ -83,6 +83,11 @@ export async function POST(request) {
         </div>
       `,
     })
+
+    if (error) {
+      console.error('Resend contact error:', error)
+      return Response.json({ ok: false, error: 'Failed to send' }, { status: 500 })
+    }
 
     return Response.json({ ok: true })
   } catch (err) {

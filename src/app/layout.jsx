@@ -1,7 +1,23 @@
 import '../styles/globals.css'
+import { Cormorant_Garamond, Jost } from 'next/font/google'
 import Script from 'next/script'
 import DocumentLanguage from '../components/DocumentLanguage'
 import { SITE_ORIGIN } from '../lib/site'
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-sans',
+  display: 'swap',
+})
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
+})
 
 export const viewport = {
   width: 'device-width',
@@ -108,7 +124,7 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
       </head>
-      <body>
+      <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
         <DocumentLanguage />
         {children}
       </body>
