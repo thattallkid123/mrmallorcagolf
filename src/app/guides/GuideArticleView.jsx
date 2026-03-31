@@ -4,7 +4,13 @@ import RevealObserver from '../../components/RevealObserver'
 import FillImageFrame from '../../components/FillImageFrame'
 import PostLayout from './PostLayout'
 
-function renderBlock(block, index) {
+function joinHref(locale, path) {
+  if (!path || path.startsWith('http')) return path
+  if (locale === 'en') return path
+  return `/${locale}${path === '/' ? '' : path}`
+}
+
+function renderBlock(block, index, locale) {
   if (block.type === 'paragraph') {
     return <p key={`${index}-${block.text.slice(0, 24)}`}>{block.text}</p>
   }
@@ -146,10 +152,11 @@ function renderBlock(block, index) {
   }
 
   if (block.type === 'cta') {
+    const href = joinHref(locale, block.href)
     return (
       <div key={`cta-${index}`} className="post-cta">
         <p>{block.text}</p>
-        {block.internal ? <Link href={block.href}>{block.linkLabel}</Link> : <a href={block.href}>{block.linkLabel}</a>}
+        {block.internal ? <Link href={href}>{block.linkLabel}</Link> : <a href={href}>{block.linkLabel}</a>}
       </div>
     )
   }
@@ -157,11 +164,13 @@ function renderBlock(block, index) {
   return null
 }
 
-export default function GuideArticleView({ meta, blocks }) {
+export default function GuideArticleView({ meta, blocks, locale = 'en' }) {
   return (
-    <PageLayout>
+    <PageLayout lang={locale === 'en' ? undefined : locale}>
       <RevealObserver />
-      <PostLayout meta={meta}>{blocks.map((block, index) => renderBlock(block, index))}</PostLayout>
+      <PostLayout meta={meta} lang={locale}>
+        {blocks.map((block, index) => renderBlock(block, index, locale))}
+      </PostLayout>
     </PageLayout>
   )
 }

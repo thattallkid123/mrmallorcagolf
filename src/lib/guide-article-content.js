@@ -916,6 +916,56 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
 }
 
+const GUIDE_ARTICLE_LOCALES = ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']
+
 export function getGuideArticleContent(slug) {
   return GUIDE_ARTICLE_CONTENT[slug] || null
+}
+
+export function buildGuideArticleMetadata(slug, locale = 'en') {
+  const content = getGuideArticleContent(slug)
+  if (!content) return {}
+
+  const canonical = `https://mrmallorcagolf.com${locale === 'en' ? '' : `/${locale}`}/guides/${slug}`
+  const languages = Object.fromEntries(
+    GUIDE_ARTICLE_LOCALES.map((lang) => [
+      lang,
+      `https://mrmallorcagolf.com${lang === 'en' ? '' : `/${lang}`}/guides/${slug}`,
+    ])
+  )
+
+  return {
+    title: content.metadata.title,
+    description: content.metadata.description,
+    alternates: {
+      canonical,
+      languages: {
+        ...languages,
+        'x-default': languages.en,
+      },
+    },
+    robots: { index: false, follow: false },
+    openGraph: {
+      type: 'article',
+      url: canonical,
+      title: content.metadata.title,
+      description: content.metadata.description,
+      publishedTime: '2026-03-01',
+      authors: ['Andy Griffiths'],
+      images: [
+        {
+          url: content.metadata.image,
+          width: 1200,
+          height: 630,
+          alt: content.metadata.imageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: content.metadata.title,
+      description: content.metadata.description,
+      images: [content.metadata.image],
+    },
+  }
 }
