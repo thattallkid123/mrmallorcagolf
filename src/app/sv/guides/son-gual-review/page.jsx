@@ -1,7 +1,4 @@
-import PageLayout from '../../../../components/PageLayout'
-import RevealObserver from '../../../../components/RevealObserver'
-import FillImageFrame from '../../../../components/FillImageFrame'
-import PostLayout from '../../../guides/PostLayout'
+import GuidePostView from '../../../guides/GuidePostView'
 import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
 
 export const metadata = buildGuidePostMetadata({
@@ -23,57 +20,150 @@ const meta = {
   ],
 }
 
+const blocks = [
+{
+  "type": "paragraph",
+  "text": "Son Gual är min mest spelade bana på Mallorca och den jag konsekvent rekommenderar. Den är svår, och den som bokar med förväntan om en avslappnad dag kommer att bli överraskad."
+},
+{
+  "type": "image",
+  "src": "/images/son-gual-blog/sg-hero.webp",
+  "alt": "Son Gual Golf Course",
+  "priority": true,
+  "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
+},
+{
+  "type": "heading",
+  "text": "Första utslagsplatsen"
+},
+{
+  "type": "paragraph",
+  "text": "Första gången jag spelade Son Gual stod jag på de svarta utslagen, vinden kom hårt från vänster. Kameran rullade för en vlog. Jag var genuint lite nervös."
+},
+{
+  "type": "paragraph",
+  "text": "Drivern träffade lätt på klöten. Den flög ändå längre än väntat och undvek bunkrarna — precis. Det finns så många bunkrar på Son Gual, placerade exakt där lite felslagna slag hamnar."
+},
+{
+  "type": "image",
+  "src": "/images/son-gual-blog/sg-1.jpg",
+  "alt": "Son Gual fairway",
+  "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
+},
+{
+  "type": "heading",
+  "text": "Vinden"
+},
+{
+  "type": "paragraph",
+  "text": "Son Gual verkar leva i sitt eget ekosystem. Jag lämnar mitt hus en lugn morgon och anländer till första utslagsplatsen för att finna att det blåser ordentligt — och det håller i sig i fyra timmar."
+},
+{
+  "type": "pull",
+  "text": "Jag lämnade huset en lugn morgon och kom fram till första utslagsplatsen för att finna att det blåste ordentligt. Det höll i sig i fyra timmar."
+},
+{
+  "type": "heading",
+  "text": "Greenerna"
+},
+{
+  "type": "paragraph",
+  "text": "Snabba, upphöjda och skoningslösa mot dåligt inkommande spel. I januari var greenerna och omgivningarna så tätt klippta att det var anmärkningsvärt för den tiden på året."
+},
+{
+  "type": "paragraph",
+  "text": "En av mina spelsällskap grep efter puttern i tron att hon stod på greenen. Hon hade ungefär 30 yards kvar av omgivningarna att täcka. Skötseln är så minutiös."
+},
+{
+  "type": "image",
+  "src": "/images/son-gual-blog/sg-2.jpg",
+  "alt": "Son Gual greens",
+  "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
+},
+{
+  "type": "heading",
+  "text": "Banan"
+},
+{
+  "type": "paragraph",
+  "text": "Thomas Himmels design från 2007 använder höjdskillnaderna intelligent. Hål 2 har en av Europas största bunkrar. Avslutningssekvensen från hål 15 anses allmänt vara en av de finaste avslutningarna inom europeisk golf."
+},
+{
+  "type": "image",
+  "src": "/images/son-gual-blog/sg-3.webp",
+  "alt": "Son Gual panoramic",
+  "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '21/9'},
+  "imageStyle": {objectPosition: 'center 40%'}
+},
+{
+  "type": "heading",
+  "text": "Kända besökare"
+},
+{
+  "type": "paragraph",
+  "text": "Rafa Nadal spelar här regelbundet — hans uttalade favoritbana på ön. Barack Obama spelade i november 2024."
+},
+{
+  "type": "image",
+  "src": "/images/son-gual-blog/sg-4.jpg",
+  "alt": "Son Gual Golf",
+  "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
+},
+{
+  "type": "facts",
+  "items": [
+    [
+      "€80–165",
+      "Greenavgifter 2026"
+    ],
+    [
+      "9/10",
+      "Svårighetsgrad"
+    ],
+    [
+      "Par 72",
+      "Mästerskap-layout"
+    ],
+    [
+      "2007",
+      "Designad av Thomas Himmel"
+    ]
+  ]
+},
+{
+  "type": "heading",
+  "text": "Greenavgifter 2026"
+},
+{
+  "type": "paragraph",
+  "text": "Lågsäsong: €115. Januarifönstret: €80/9 hål. Högsäsong vår/höst: €165. Sommar: €115."
+},
+{
+  "type": "paragraph",
+  "text": "Klubbuthyrning: Callaway €35, Titleist €45. Buggy €45, eltrolley från €15. WHS-handicapintyg krävs."
+},
+{
+  "type": "heading",
+  "text": "Omdöme"
+},
+{
+  "type": "paragraph",
+  "text": "Son Gual är min favoritbana på Mallorca. Den skulle hålla mot vilken bana jag än spelat under mina resor."
+},
+{
+  "type": "image",
+  "src": "/images/son-gual-blog/sg-5.jpg",
+  "alt": "Son Gual closing holes",
+  "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
+},
+{
+  "type": "cta",
+  "text": "Jag tar regelbundet klienter till Son Gual. Vill du spela den med någon som känner varje hål?",
+  "href": "/sv/play-with-a-pro",
+  "linkLabel": "Se play-with-a-pro-upplevelsen →"
+}
+]
 
 export default function Post() {
-  return (
-    <PageLayout lang="sv">
-      <RevealObserver />
-      <PostLayout meta={meta} lang="sv">
-        
-
-        <p>Son Gual är min mest spelade bana på Mallorca och den jag konsekvent rekommenderar. Den är svår, och den som bokar med förväntan om en avslappnad dag kommer att bli överraskad.</p>
-        
-        <FillImageFrame src="/images/son-gual-blog/sg-hero.webp" alt="Son Gual Golf Course" priority containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
-        <h2>Första utslagsplatsen</h2>
-        <p>Första gången jag spelade Son Gual stod jag på de svarta utslagen, vinden kom hårt från vänster. Kameran rullade för en vlog. Jag var genuint lite nervös.</p>
-        <p>Drivern träffade lätt på klöten. Den flög ändå längre än väntat och undvek bunkrarna — precis. Det finns så många bunkrar på Son Gual, placerade exakt där lite felslagna slag hamnar.</p>
-        
-        <FillImageFrame src="/images/son-gual-blog/sg-1.jpg" alt="Son Gual fairway" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
-        <h2>Vinden</h2>
-        <p>Son Gual verkar leva i sitt eget ekosystem. Jag lämnar mitt hus en lugn morgon och anländer till första utslagsplatsen för att finna att det blåser ordentligt — och det håller i sig i fyra timmar.</p>
-        <div className="post-pull"><p>"Jag lämnade huset en lugn morgon och kom fram till första utslagsplatsen för att finna att det blåste ordentligt. Det höll i sig i fyra timmar."</p></div>
-        <h2>Greenerna</h2>
-        <p>Snabba, upphöjda och skoningslösa mot dåligt inkommande spel. I januari var greenerna och omgivningarna så tätt klippta att det var anmärkningsvärt för den tiden på året.</p>
-        <p>En av mina spelsällskap grep efter puttern i tron att hon stod på greenen. Hon hade ungefär 30 yards kvar av omgivningarna att täcka. Skötseln är så minutiös.</p>
-        
-        <FillImageFrame src="/images/son-gual-blog/sg-2.jpg" alt="Son Gual greens" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
-        <h2>Banan</h2>
-        <p>Thomas Himmels design från 2007 använder höjdskillnaderna intelligent. Hål 2 har en av Europas största bunkrar. Avslutningssekvensen från hål 15 anses allmänt vara en av de finaste avslutningarna inom europeisk golf.</p>
-        
-        <FillImageFrame src="/images/son-gual-blog/sg-3.webp" alt="Son Gual panoramic" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '21/9' }} imageStyle={{ objectPosition: 'center 40%' }} />
-        <h2>Kända besökare</h2>
-        <p>Rafa Nadal spelar här regelbundet — hans uttalade favoritbana på ön. Barack Obama spelade i november 2024.</p>
-        
-        <FillImageFrame src="/images/son-gual-blog/sg-4.jpg" alt="Son Gual Golf" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
-        <div className="post-fact">
-          <div className="post-fact__item"><span className="post-fact__val">€80–165</span><span className="post-fact__label">Greenavgifter 2026</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">9/10</span><span className="post-fact__label">Svårighetsgrad</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">Par 72</span><span className="post-fact__label">Mästerskap-layout</span></div>
-          <div className="post-fact__item"><span className="post-fact__val">2007</span><span className="post-fact__label">Designad av Thomas Himmel</span></div>
-        </div>
-        <h2>Greenavgifter 2026</h2>
-        <p>Lågsäsong: €115. Januarifönstret: €80/9 hål. Högsäsong vår/höst: €165. Sommar: €115.</p>
-        <p>Klubbuthyrning: Callaway €35, Titleist €45. Buggy €45, eltrolley från €15. WHS-handicapintyg krävs.</p>
-        <h2>Omdöme</h2>
-        <p>Son Gual är min favoritbana på Mallorca. Den skulle hålla mot vilken bana jag än spelat under mina resor.</p>
-        
-        <FillImageFrame src="/images/son-gual-blog/sg-5.jpg" alt="Son Gual closing holes" containerStyle={{ margin:'2rem 0', borderRadius:2, aspectRatio: '16/9' }} />
-        <div className="post-cta">
-          <p>Jag tar regelbundet klienter till Son Gual. Vill du spela den med någon som känner varje hål?</p>
-          <a href="/sv/play-with-a-pro">Se play-with-a-pro-upplevelsen →</a>
-        </div>
-      </PostLayout>
-    </PageLayout>
-  )
+  return <GuidePostView locale="sv" meta={meta} blocks={blocks} />
 }
-
