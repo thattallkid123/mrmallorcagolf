@@ -12,6 +12,33 @@ export const GOLF_COURSES_CONTENT = {
         'PGA Professional',
       ],
     },
+    regionHeaders: {
+      palma: {
+        title: 'Palma',
+        subtitle: '5–11 km from the city',
+        count: '8 courses',
+      },
+      southwest: {
+        title: 'Southwest',
+        subtitle: 'Santa Ponsa & Camp de Mar · 20–40 km',
+        count: '6 courses',
+      },
+      south: {
+        title: 'South',
+        subtitle: 'Llucmajor · 15–20 km',
+        count: '3 courses',
+      },
+      east: {
+        title: 'East',
+        subtitle: '50–65 km from Palma · Worth basing yourself here',
+        count: '4 courses',
+      },
+      north: {
+        title: 'North',
+        subtitle: "Port d'Alcúdia · 55–60 km · Alcanada alone justifies the drive",
+        count: '2 courses',
+      },
+    },
     ui: {
       allCourses: 'All Courses',
       expertPicks: '★ Expert Picks Only',
@@ -26,7 +53,7 @@ export const GOLF_COURSES_CONTENT = {
       intro1:
         'Mallorca has more outstanding golf than most visitors realise. Twenty-two courses, several of genuine European Tour standard, in conditions that stay immaculate through winter.',
       intro2:
-        "I'm working my way through every course on the island - playing them, reviewing them honestly. Below is what I know so far.",
+        "I'm working my way through every course on the island — playing them, reviewing them honestly. Below is what I know so far.",
       sidebarH3: 'Want to play one of these courses with a UK PGA professional alongside you?',
       sidebarP: 'Private round, everything arranged. Son Gual and Alcanada are the primary venues.',
       sidebarBtn: 'Get in touch →',
@@ -50,9 +77,9 @@ export const GOLF_COURSES_CONTENT = {
       geoEyebrow: 'Where the courses sit',
       geoH2: 'Mallorca has more outstanding golf than most visitors realise.',
       geoP1:
-        "Twenty-two courses ranging from genuine European Tour venues to quieter, less-visited gems. Green fees from €20 to over €200. I'm a UK PGA Advanced Professional based on the island, working my way through every course - all reviews are well-researched, with my own personal notes for the courses I've played.",
+        "Twenty-two courses ranging from genuine European Tour venues to quieter, less-visited gems. Green fees from €20 to over €200. I'm a UK PGA Advanced Professional based on the island, working my way through every course — all reviews are well-researched, with my own personal notes for the courses I've played.",
       geoP2:
-        'Best time to play: October-November and February-April. The island plays year-round - in January, when courses in much of the rest of Europe are unplayable, the fairways here are immaculate.',
+        'Best time to play: October–November and February–April. The island plays year-round — in January, when courses in much of the rest of Europe are unplayable, the fairways here are immaculate.',
       geoRegions: [
         {
           region: 'Palma',

@@ -1021,6 +1021,7 @@ function CourseCard({ c, lang = 'en' }) {
 export default function GolfCoursesClient({ lang = 'en' }) {
   const sharedContent = getGolfCoursesContent('en')
   const t = lang === 'en' ? sharedContent.ui : (TRANSLATIONS[lang] || TRANSLATIONS.en)
+  const regionHeaders = lang === 'en' ? sharedContent.regionHeaders : REGION_HEADERS
   const REGIONS = getRegions(t)
   const [activeFilter, setActiveFilter] = useState('all')
   const contactHref = buildLocalePath('/contact', lang)
@@ -1086,7 +1087,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
       <div className="page-layout">
         <div className="page-main">
           {visibleRegions.map((regionData, i) => {
-            const header = REGION_HEADERS[regionData.region]
+            const header = regionHeaders[regionData.region]
             const coursesToShow = activeFilter === 'expert'
               ? regionData.courses.filter(c => c.expert)
               : regionData.courses
