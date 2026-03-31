@@ -104,6 +104,90 @@ export const GOLF_COURSES_CONTENT = {
       ],
     },
   },
+  de: {
+    locale: 'de',
+    hero: {
+      breadcrumbHome: 'Startseite',
+      breadcrumbCurrent: 'Golfplaetze auf Mallorca',
+      title: 'Golf auf Mallorca 2026 - Ein Insiderguide',
+      tags: [
+        '22 Plaetze abgedeckt',
+        'Green Fees aktualisiert 2026',
+        'Expertenbewertungen aus erster Hand',
+        'PGA Professional',
+      ],
+    },
+  },
+  es: {
+    locale: 'es',
+    hero: {
+      breadcrumbHome: 'Inicio',
+      breadcrumbCurrent: 'Campos de golf en Mallorca',
+      title: 'Golf en Mallorca 2026 - La Guia del Experto',
+      tags: [
+        '22 campos',
+        'Green Fees 2026',
+        'Resenas de experto de primera mano',
+        'Profesional PGA',
+      ],
+    },
+  },
+  fr: {
+    locale: 'fr',
+    hero: {
+      breadcrumbHome: 'Accueil',
+      breadcrumbCurrent: 'Parcours de Golf a Majorque',
+      title: 'Golf a Majorque 2026 - Un Guide Initie',
+      tags: [
+        '22 Parcours Couverts',
+        'Green Fees Actualises 2026',
+        "Avis d'Expert Direct",
+        'Professionnel PGA',
+      ],
+    },
+  },
+  nl: {
+    locale: 'nl',
+    hero: {
+      breadcrumbHome: 'Home',
+      breadcrumbCurrent: 'Golfbanen op Mallorca',
+      title: 'Golf op Mallorca 2026 - Een Insidergids',
+      tags: [
+        '22 Banen',
+        'Greenfees 2026',
+        'Expertbeoordelingen uit de eerste hand',
+        'PGA Professional',
+      ],
+    },
+  },
+  sv: {
+    locale: 'sv',
+    hero: {
+      breadcrumbHome: 'Hem',
+      breadcrumbCurrent: 'Golfbanor pa Mallorca',
+      title: 'Golf pa Mallorca 2026 - En Insiders Guide',
+      tags: [
+        '22 Banor tackta',
+        'Greenavgifter uppdaterade 2026',
+        'Expertrecensioner fran forsta hand',
+        'PGA Professional',
+      ],
+    },
+  },
+  zh: {
+    locale: 'zh',
+    hero: {
+      breadcrumbHome: 'Shouye',
+      breadcrumbCurrent: 'Mallorca Gaoerfu Qiu Chang',
+      title: 'Mallorca Golf 2026 - Insider Guide',
+      tags: [
+        '22 courses covered',
+        'Green fees updated 2026',
+        'Expert first-hand reviews',
+        'PGA Professional',
+      ],
+    },
+  },
 }
 
 export function getGolfCoursesContent(locale = 'en') {
