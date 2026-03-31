@@ -947,6 +947,7 @@ const REGION_HEADERS = {
 }
 
 const slugify = name => name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')
+const normalizeCourseName = name => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toLowerCase()
 
 const SHORT_TO_ID = {
   'Son Gual':'golf-son-gual','Son Muntaner':'son-muntaner','Son Vida':'golf-son-vida',
@@ -959,6 +960,12 @@ const SHORT_TO_ID = {
   'Capdepera':'capdepera-golf','Canyamel':'canyamel-golf','Pula':'pula-golf',
   'Son Servera':'golf-club-son-servera','Alcanada':'club-de-golf-alcanada',
   'Golf Pollensa':'golf-pollensa',
+}
+
+function getShortCourseId(name) {
+  const normalized = normalizeCourseName(name)
+  const match = Object.entries(SHORT_TO_ID).find(([key]) => normalized.includes(normalizeCourseName(key)))
+  return match ? match[1] : slugify(name)
 }
 
 function CourseCard({ c, lang = 'en' }) {
@@ -1048,8 +1055,8 @@ export default function GolfCoursesClient({ lang = 'en' }) {
             <div key={i} className="geo-row">
               <span className="geo-region" style={{color:'var(--charcoal)'}}>{row.region}</span>
               <span className="geo-courses">
-                {row.courses.split(' · ').map((name, j) => {
-                  const id = SHORT_TO_ID[name] || slugify(name)
+                {row.courses.split(/\s+[^\w\s]+\s+/).map((name, j) => {
+                  const id = getShortCourseId(name)
                   return (
                     <span key={j}>
                       {j > 0 && <span style={{color:'var(--stone)'}}> · </span>}
@@ -1134,8 +1141,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
                   <li key={i}>
                     {prefix}
                     {parts.map((part, j) => {
-                      const match = Object.keys(SHORT_TO_ID).find(k => part.trim().includes(k))
-                      const id = match ? SHORT_TO_ID[match] : null
+                      const id = getShortCourseId(part)
                       return (
                         <span key={j}>
                           {j > 0 && sepWord}
