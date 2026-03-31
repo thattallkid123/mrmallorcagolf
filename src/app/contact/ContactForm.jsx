@@ -2,9 +2,9 @@
 import { useContactFormSubmission } from '../../lib/contact-form'
 import { getContactContent } from '../../lib/contact-content'
 
-export default function ContactForm() {
-  const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission('en')
-  const content = getContactContent('en')
+export default function ContactForm({ locale = 'en' }) {
+  const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission(locale)
+  const content = getContactContent(locale)
 
   return (
     <div className="contact-wrap">
@@ -60,6 +60,21 @@ export default function ContactForm() {
               <p className="contact-card__value">{content.cards.whatsappValue}</p>
             </div>
           </a>
+          {content.cards.wechatLabel ? (
+            <a href="weixin://dl/chat?andygriffiths1" className="contact-card contact-card--wechat" target="_blank" rel="noopener noreferrer">
+              <span className="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: 22, height: 22 }}>
+                  <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.295.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c-.476-.97-.74-2.03-.74-3.15 0-4.07 3.893-7.358 8.693-7.358.306 0 .61.02.907.05C16.93 3.92 13.101 2.188 8.691 2.188zm-1.85 3.896c.559 0 1.013.453 1.013 1.011 0 .559-.454 1.012-1.013 1.012-.56 0-1.013-.453-1.013-1.012 0-.558.453-1.011 1.013-1.011zm4.856 0c.559 0 1.013.453 1.013 1.011 0 .559-.454 1.012-1.013 1.012-.56 0-1.013-.453-1.013-1.012 0-.558.453-1.011 1.013-1.011zm3.932 3.516c-4.18 0-7.573 2.914-7.573 6.51 0 3.595 3.393 6.51 7.573 6.51.82 0 1.612-.12 2.352-.33a.717.717 0 01.588.08l1.564.916a.271.271 0 00.137.044.243.243 0 00.243-.243c0-.059-.023-.118-.039-.176l-.32-1.218a.484.484 0 01.175-.547C22.578 19.61 24 17.943 24 16.11c0-3.596-3.393-6.51-7.571-6.51zm-2.588 3.218c.46 0 .833.372.833.832 0 .46-.373.833-.833.833-.46 0-.832-.373-.832-.833 0-.46.373-.832.832-.832zm5.176 0c.46 0 .833.372.833.832 0 .46-.373.833-.833.833-.46 0-.832-.373-.832-.833 0-.46.372-.832.832-.832z" />
+                </svg>
+              </span>
+              <div>
+                <p className="contact-card__label">{content.cards.wechatLabel}</p>
+                <p className="contact-card__value">
+                  <span style={{ userSelect: 'all' }}>{content.cards.wechatValue}</span>
+                </p>
+              </div>
+            </a>
+          ) : null}
           <div className="contact-card contact-card--info">
             <span className="contact-card__icon">&#9201;</span>
             <div>
