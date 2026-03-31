@@ -1,7 +1,7 @@
 import GuideArticleView from '../../../guides/GuideArticleView'
 import { buildGuideArticleMetadata, getGuideArticleContent } from '../../../../lib/guide-article-content'
 
-const content = getGuideArticleContent('golf-cost-mallorca')
+const content = getGuideArticleContent('golf-cost-mallorca', 'fr')
 
 export const metadata = buildGuideArticleMetadata('golf-cost-mallorca', 'fr')
 

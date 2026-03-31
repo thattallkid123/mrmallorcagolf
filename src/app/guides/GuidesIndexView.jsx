@@ -47,153 +47,36 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
       </header>
 
       <section style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(48px,8vw,96px) clamp(20px,4vw,40px)' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+        <div className="guides-list">
           {content.liveGuides.map((guide) => (
             <Link
               key={guide.slug}
               href={`${prefix}/guides/${guide.slug}`}
-              className="reveal"
-              style={{ display: 'block', textDecoration: 'none', borderBottom: '1px solid var(--linen)', padding: '32px 0' }}
+              className="guide-entry guide-entry--live reveal"
             >
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, flexWrap: 'wrap' }}>
-                <span
-                  style={{
-                    fontSize: '9px',
-                    letterSpacing: '.16em',
-                    textTransform: 'uppercase',
-                    fontFamily: "'Jost',sans-serif",
-                    fontWeight: 500,
-                    padding: '4px 10px',
-                    background: 'rgba(184,151,60,.12)',
-                    color: 'var(--gold)',
-                    border: '1px solid rgba(184,151,60,.25)',
-                    flexShrink: 0,
-                    alignSelf: 'center',
-                  }}
-                >
-                  {guide.badge}
-                </span>
-                <span
-                  style={{
-                    fontSize: '9px',
-                    letterSpacing: '.12em',
-                    textTransform: 'uppercase',
-                    fontFamily: "'Jost',sans-serif",
-                    color: 'var(--stone)',
-                    alignSelf: 'center',
-                  }}
-                >
-                  {guide.readTime}
-                </span>
+              <div className="guide-entry__meta">
+                <span className="guide-entry__badge">{guide.badge}</span>
+                <span className="guide-entry__read-time">{guide.readTime}</span>
               </div>
-              <h2
-                style={{
-                  fontFamily: "'Cormorant Garamond',serif",
-                  fontSize: 'clamp(1.2rem,2vw,1.5rem)',
-                  fontWeight: 500,
-                  color: 'var(--deep)',
-                  lineHeight: 1.25,
-                  margin: '14px 0 10px',
-                }}
-              >
-                {guide.title}
-              </h2>
-              <p style={{ fontSize: '0.95rem', fontWeight: 300, color: 'var(--taupe)', lineHeight: 1.75, margin: '0 0 12px', maxWidth: 640 }}>
-                {guide.intro}
-              </p>
-              <p
-                style={{
-                  fontSize: '9px',
-                  letterSpacing: '.1em',
-                  textTransform: 'uppercase',
-                  fontFamily: "'Jost',sans-serif",
-                  color: 'var(--stone)',
-                }}
-              >
-                {guide.keywords}
-              </p>
+              <h2 className="guide-entry__title">{guide.title}</h2>
+              <p className="guide-entry__intro">{guide.intro}</p>
+              <p className="guide-entry__keywords">{guide.keywords}</p>
             </Link>
           ))}
 
           {content.comingSoonGuides.map((guide) => (
             <div
               key={guide.slug}
-              className="reveal"
-              style={{ display: 'block', borderBottom: '1px solid var(--linen)', padding: '32px 0', pointerEvents: 'none', userSelect: 'none' }}
+              className="guide-entry guide-entry--coming-soon reveal"
             >
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, flexWrap: 'wrap' }}>
-                <span
-                  style={{
-                    fontSize: '9px',
-                    letterSpacing: '.16em',
-                    textTransform: 'uppercase',
-                    fontFamily: "'Jost',sans-serif",
-                    fontWeight: 500,
-                    padding: '4px 10px',
-                    background: 'rgba(45,74,62,.07)',
-                    color: 'var(--taupe)',
-                    border: '1px solid var(--linen)',
-                    flexShrink: 0,
-                    alignSelf: 'center',
-                  }}
-                >
-                  {guide.badge}
-                </span>
-                <span
-                  style={{
-                    fontSize: '9px',
-                    letterSpacing: '.12em',
-                    textTransform: 'uppercase',
-                    fontFamily: "'Jost',sans-serif",
-                    color: 'var(--stone)',
-                    alignSelf: 'center',
-                  }}
-                >
-                  {guide.readTime}
-                </span>
-                <span
-                  style={{
-                    fontSize: '9px',
-                    letterSpacing: '.14em',
-                    textTransform: 'uppercase',
-                    fontFamily: "'Jost',sans-serif",
-                    fontWeight: 600,
-                    color: 'var(--deep)',
-                    alignSelf: 'center',
-                    marginLeft: 'auto',
-                    background: 'var(--gold)',
-                    padding: '5px 12px',
-                  }}
-                >
-                  {content.comingSoonLabel}
-                </span>
+              <div className="guide-entry__meta">
+                <span className="guide-entry__badge guide-entry__badge--muted">{guide.badge}</span>
+                <span className="guide-entry__read-time">{guide.readTime}</span>
+                <span className="guide-entry__status">{content.comingSoonLabel}</span>
               </div>
-              <h2
-                style={{
-                  fontFamily: "'Cormorant Garamond',serif",
-                  fontSize: 'clamp(1.2rem,2vw,1.5rem)',
-                  fontWeight: 500,
-                  color: 'var(--deep)',
-                  lineHeight: 1.25,
-                  margin: '14px 0 10px',
-                }}
-              >
-                {guide.title}
-              </h2>
-              <p style={{ fontSize: '0.95rem', fontWeight: 300, color: 'var(--taupe)', lineHeight: 1.75, margin: '0 0 12px', maxWidth: 640 }}>
-                {guide.intro}
-              </p>
-              <p
-                style={{
-                  fontSize: '9px',
-                  letterSpacing: '.1em',
-                  textTransform: 'uppercase',
-                  fontFamily: "'Jost',sans-serif",
-                  color: 'var(--stone)',
-                }}
-              >
-                {guide.keywords}
-              </p>
+              <h2 className="guide-entry__title">{guide.title}</h2>
+              <p className="guide-entry__intro">{guide.intro}</p>
+              <p className="guide-entry__keywords">{guide.keywords}</p>
             </div>
           ))}
         </div>

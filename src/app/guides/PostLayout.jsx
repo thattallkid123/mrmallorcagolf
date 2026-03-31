@@ -11,9 +11,20 @@ const SIDEBAR_COPY = {
   nl: { experience: 'De Ervaring', h3: 'Speel een van deze banen met een PGA professional aan uw zijde.', p: 'Privé dagen op Son Gual, Alcanada en meer. Alles geregeld. Coaching op de baan.', seeExp: 'Bekijk de ervaringen', contact: 'Neem contact op', moreGuides: 'Meer gidsen', allGuides: 'Alle gidsen', home: 'Home', guidesLabel: 'Gidsen' },
 }
 
+const UPDATED_LABELS = {
+  en: 'Updated',
+  de: 'Aktualisiert',
+  fr: 'Mis a jour',
+  es: 'Actualizado',
+  zh: 'æ›´æ–°',
+  sv: 'Uppdaterad',
+  nl: 'Bijgewerkt',
+}
+
 export default function PostLayout({ children, meta, lang }) {
   const l = lang || meta.lang || 'en'
   const c = SIDEBAR_COPY[l] || SIDEBAR_COPY.en
+  const updatedLabel = UPDATED_LABELS[l] || UPDATED_LABELS.en
   const pre = l === 'en' ? '' : `/${l}`
   const relatedGuides = meta.related.filter((guide) => isLiveGuideSlug(guide.slug))
 
@@ -28,10 +39,10 @@ export default function PostLayout({ children, meta, lang }) {
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{ color: 'var(--gold-light)' }}>{meta.badge}</span>
           </p>
-          <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', margin: '1.25rem 0 1rem' }}>
+          <div className="post-header__meta">
             <span style={{ fontSize: '9px', letterSpacing: '.16em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", fontWeight: 500, padding: '4px 10px', background: meta.badgeGold ? 'rgba(184,151,60,.15)' : 'rgba(255,255,255,.08)', color: meta.badgeGold ? 'var(--gold-light)' : 'rgba(255,255,255,.72)', border: `1px solid ${meta.badgeGold ? 'rgba(184,151,60,.3)' : 'rgba(255,255,255,.14)'}` }}>{meta.badge}</span>
             <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.52)' }}>{meta.readTime}</span>
-            <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.52)' }}>Updated {meta.updated}</span>
+            <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.52)' }}>{updatedLabel} {meta.updated}</span>
           </div>
           <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 400, color: '#fff', lineHeight: 1.1, maxWidth: 720 }}>{meta.title}</h1>
           <p style={{ fontSize: '1.05rem', fontWeight: 300, color: 'rgba(255,255,255,.78)', lineHeight: 1.8, maxWidth: 600, marginTop: '1.25rem' }}>{meta.intro}</p>
@@ -46,8 +57,8 @@ export default function PostLayout({ children, meta, lang }) {
             <p className="post-sidebar__label">{c.experience}</p>
             <h3>{c.h3}</h3>
             <p>{c.p}</p>
-            <a href={`${pre}/play-with-a-pro`} style={{ display: 'block', textAlign: 'center', fontSize: '9px', fontWeight: 500, letterSpacing: '.16em', textTransform: 'uppercase', padding: '13px', background: 'var(--gold)', color: 'var(--deep)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", marginTop: '1.25rem' }}>{c.seeExp} &rarr;</a>
-            <a href={`${pre}/contact`} style={{ display: 'block', textAlign: 'center', fontSize: '9px', fontWeight: 500, letterSpacing: '.16em', textTransform: 'uppercase', padding: '13px', background: 'transparent', color: 'var(--pine)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", marginTop: '8px', border: '1px solid var(--pine)' }}>{c.contact}</a>
+            <a href={`${pre}/play-with-a-pro`} className="btn btn--gold post-sidebar__cta">{c.seeExp} &rarr;</a>
+            <a href={`${pre}/contact`} className="btn btn--dark post-sidebar__cta post-sidebar__cta--secondary">{c.contact}</a>
           </div>
 
           <div className="post-sidebar__block" style={{ marginTop: '2px' }}>

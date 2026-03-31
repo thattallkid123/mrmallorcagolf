@@ -99,9 +99,15 @@ function getLangFromPath(pathname) {
 export default function Nav({ transparent = false, lang }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
 
-  const activeLang = lang || getLangFromPath(pathname)
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const resolvedPathname = pathname || '/'
+  const activeLang = lang || (mounted ? getLangFromPath(resolvedPathname) : 'en')
   const config = LANG_CONFIG[activeLang] || LANG_CONFIG.en
   const activeLangCode = activeLang === 'en' ? 'EN' : activeLang.toUpperCase()
 
@@ -113,7 +119,7 @@ export default function Nav({ transparent = false, lang }) {
   }, [transparent])
 
   const navClass = ['nav', !transparent ? 'solid' : scrolled ? 'scrolled' : ''].filter(Boolean).join(' ')
-  const isActive = (href) => pathname === href
+  const isActive = (href) => resolvedPathname === href
 
   return (
     <>
@@ -136,7 +142,7 @@ export default function Nav({ transparent = false, lang }) {
             <div className="nav__lang">
               {LANG_CODES.map(({ code, locale, label }, i) => (
                 <span key={code}>
-                  <Link href={getLanguageSwitchPath(pathname, locale)} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
+                  <Link href={getLanguageSwitchPath(resolvedPathname, locale)} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
                   {i < LANG_CODES.length - 1 && <span className="nav__lang-sep"> · </span>}
                 </span>
               ))}
@@ -164,7 +170,7 @@ export default function Nav({ transparent = false, lang }) {
         </Link>
         <div className="mob-lang">
           {LANG_CODES.map(({ code, locale, label }) => (
-            <Link key={code} href={getLanguageSwitchPath(pathname, locale)} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
+            <Link key={code} href={getLanguageSwitchPath(resolvedPathname, locale)} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               {label}
             </Link>
           ))}

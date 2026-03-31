@@ -101,7 +101,7 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
 
   const slug = getGuideSlug(basePath)
   if (isLiveGuideSlug(slug)) return true
-  if (isDraftGuideSlug(slug)) return locale === 'en'
+  if (isDraftGuideSlug(slug)) return ALL_LOCALES.includes(locale)
 
   return false
 }

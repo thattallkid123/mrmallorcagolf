@@ -95,10 +95,7 @@ function renderBlock(block, index, locale) {
 
   if (block.type === 'splitImages') {
     return (
-      <div
-        key={`split-${index}`}
-        style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', margin: '2rem 0' }}
-      >
+      <div key={`split-${index}`} className="post-split-media">
         {block.items.map((item) => (
           <div key={item.src}>
             <FillImageFrame
@@ -119,32 +116,11 @@ function renderBlock(block, index, locale) {
 
   if (block.type === 'quoteBox') {
     return (
-      <div
-        key={`quote-${index}`}
-        style={{ background: 'var(--cream)', border: '1px solid var(--linen)', padding: '28px 32px', margin: '2.5rem 0' }}
-      >
-        <p
-          style={{
-            fontFamily: "'Cormorant Garamond',serif",
-            fontSize: '1.1rem',
-            fontStyle: 'italic',
-            color: 'var(--deep)',
-            lineHeight: 1.65,
-            marginBottom: '1rem',
-          }}
-        >
+      <div key={`quote-${index}`} className="post-quote-box">
+        <p className="post-quote-box__text">
           &ldquo;{block.text}&rdquo;
         </p>
-        <p
-          style={{
-            fontSize: '9px',
-            letterSpacing: '.14em',
-            textTransform: 'uppercase',
-            fontFamily: "'Jost',sans-serif",
-            color: 'var(--taupe)',
-            margin: 0,
-          }}
-        >
+        <p className="post-quote-box__attribution">
           {block.attribution}
         </p>
       </div>

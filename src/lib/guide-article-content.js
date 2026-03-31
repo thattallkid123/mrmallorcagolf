@@ -1,3 +1,5 @@
+import { getLocalizedGuideArticleContent } from './guide-article-content-localized'
+
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
     metadata: {
@@ -918,12 +920,16 @@ export const GUIDE_ARTICLE_CONTENT = {
 
 const GUIDE_ARTICLE_LOCALES = ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']
 
-export function getGuideArticleContent(slug) {
+export function getGuideArticleContent(slug, locale = 'en') {
+  if (locale !== 'en') {
+    return getLocalizedGuideArticleContent(slug, locale) || GUIDE_ARTICLE_CONTENT[slug] || null
+  }
+
   return GUIDE_ARTICLE_CONTENT[slug] || null
 }
 
 export function buildGuideArticleMetadata(slug, locale = 'en') {
-  const content = getGuideArticleContent(slug)
+  const content = getGuideArticleContent(slug, locale)
   if (!content) return {}
 
   const canonical = `https://mrmallorcagolf.com${locale === 'en' ? '' : `/${locale}`}/guides/${slug}`
