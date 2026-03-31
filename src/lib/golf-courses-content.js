@@ -15,27 +15,27 @@ export const GOLF_COURSES_CONTENT = {
     regionHeaders: {
       palma: {
         title: 'Palma',
-        subtitle: '5–11 km from the city',
+        subtitle: '5-11 km from the city',
         count: '8 courses',
       },
       southwest: {
         title: 'Southwest',
-        subtitle: 'Santa Ponsa & Camp de Mar · 20–40 km',
+        subtitle: 'Santa Ponsa & Camp de Mar · 20-40 km',
         count: '6 courses',
       },
       south: {
         title: 'South',
-        subtitle: 'Llucmajor · 15–20 km',
+        subtitle: 'Llucmajor · 15-20 km',
         count: '3 courses',
       },
       east: {
         title: 'East',
-        subtitle: '50–65 km from Palma · Worth basing yourself here',
+        subtitle: '50-65 km from Palma · Worth basing yourself here',
         count: '4 courses',
       },
       north: {
         title: 'North',
-        subtitle: "Port d'Alcúdia · 55–60 km · Alcanada alone justifies the drive",
+        subtitle: "Port d'Alcúdia · 55-60 km · Alcanada alone justifies the drive",
         count: '2 courses',
       },
     },
@@ -79,7 +79,7 @@ export const GOLF_COURSES_CONTENT = {
       geoP1:
         "Twenty-two courses ranging from genuine European Tour venues to quieter, less-visited gems. Green fees from €20 to over €200. I'm a UK PGA Advanced Professional based on the island, working my way through every course — all reviews are well-researched, with my own personal notes for the courses I've played.",
       geoP2:
-        'Best time to play: October–November and February–April. The island plays year-round — in January, when courses in much of the rest of Europe are unplayable, the fairways here are immaculate.',
+        'Best time to play: October-November and February-April. The island plays year-round — in January, when courses in much of the rest of Europe are unplayable, the fairways here are immaculate.',
       geoRegions: [
         {
           region: 'Palma',
