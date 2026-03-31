@@ -24,10 +24,21 @@ The draft branch already has shared English content files for:
 - coaching
 - play-with-a-pro
 - guides index
-- the 3 live English guide posts
-- part of golf-courses
+- all English guide/blog posts
+- golf-courses English content and wrapper
 
-The next later phase is moving non-English routes onto the same system.
+The next phase is moving the remaining non-English routes onto the same system.
+
+Already shared across locales:
+
+- guides index pages
+- live guide-review pages for `de`, `es`, and `fr`
+
+Still to finish:
+
+- live guide-review pages for `nl`, `sv`, and `zh`
+- the non-English marketing-page families
+- deeper non-English golf-courses rollout
 
 ## Update flow
 

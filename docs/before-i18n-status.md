@@ -62,15 +62,25 @@ What it contains:
   - coaching
   - play-with-a-pro
   - guides index
-  - the 3 live English guide posts
-- Improved English golf-courses wrapper and centralized English golf-courses UI copy.
+  - all English guide posts, including the ready-to-publish ones
+- Improved English golf-courses wrapper and cleaned English golf-courses source content.
 - A premium design/readability pass on the shared English pages and styles.
+- Shared guides index rendering across all locales.
+- Shared live-guide rendering already in place for:
+  - English
+  - German
+  - Spanish
+  - French
 
 ## What is still not fully finished
 
-- The localized routes still mostly use the older per-language page files.
-- `GolfCoursesClient.jsx` is still the biggest old monolith in the codebase.
-- The current i18n work is strong on the English/shared-content side, but it is not yet the final multilingual rollout.
+- English is now the completed master source for the main site and guide/blog system.
+- The localized routes still partly use the older per-language page files.
+- The biggest remaining multilingual structural gaps are:
+  - `nl`, `sv`, and `zh` live guide-review pages
+  - non-English versions of homepage, about, contact, coaching, play-with-a-pro, and golf-courses on the shared system
+- `GolfCoursesClient.jsx` is much cleaner than before, but it is still the biggest old component in the codebase.
+- The current i18n work is strong and releaseable in slices, but it is not yet the final full multilingual rollout.
 
 ## What has been verified
 
@@ -86,10 +96,12 @@ Build result:
 ## Recommended next order
 
 1. Keep improving `GolfCoursesClient.jsx` and the deeper golf-courses structure.
-2. Compare the draft branch page-by-page with the live site.
-3. Decide which page family to release first.
-4. Roll changes out gradually from the draft branch instead of doing one huge release.
-5. After that, continue moving the non-English routes onto the new shared-content system.
+2. Finish the remaining live guide-review locales (`nl`, `sv`, `zh`) on the shared renderer.
+3. Compare the draft branch page-by-page with the live site.
+4. Do the final premium design and mobile review on the draft branch.
+5. Decide which page family to release first.
+6. Roll changes out gradually from the draft branch instead of doing one huge release.
+7. After that, continue moving the non-English routes onto the new shared-content system.
 
 ## Short summary
 
@@ -102,6 +114,7 @@ Now:
 - SEO is cleaner
 - performance is better
 - the codebase has safer guardrails
-- and there is now a proper draft branch for the i18n-style future version
+- there is now a proper draft branch for the i18n-style future version
+- and English now exists as a proper shared master source rather than scattered duplicated page files
 
-The next big unfinished area is `GolfCoursesClient.jsx`, followed by the later non-English migration.
+The next big unfinished area is the remaining non-English migration, especially the last live-guide locales and the later marketing-page families.
