@@ -22,16 +22,16 @@ export default function PostLayout({ children, meta, lang }) {
       <header className="post-header">
         <div className="post-header__inner">
           <p className="breadcrumb">
-            <a href={pre || '/'} style={{ color: 'rgba(255,255,255,.4)', textDecoration: 'none' }}>{c.home}</a>
+            <a href={pre || '/'} style={{ color: 'rgba(255,255,255,.58)', textDecoration: 'none' }}>{c.home}</a>
             {' '}&nbsp;/&nbsp;{' '}
-            <a href={`${pre}/guides`} style={{ color: 'rgba(255,255,255,.4)', textDecoration: 'none' }}>{c.guidesLabel}</a>
+            <a href={`${pre}/guides`} style={{ color: 'rgba(255,255,255,.58)', textDecoration: 'none' }}>{c.guidesLabel}</a>
             {' '}&nbsp;/&nbsp;{' '}
             <span style={{ color: 'var(--gold-light)' }}>{meta.badge}</span>
           </p>
           <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', margin: '1.25rem 0 1rem' }}>
-            <span style={{ fontSize: '9px', letterSpacing: '.16em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", fontWeight: 500, padding: '4px 10px', background: meta.badgeGold ? 'rgba(184,151,60,.15)' : 'rgba(255,255,255,.08)', color: meta.badgeGold ? 'var(--gold-light)' : 'rgba(255,255,255,.5)', border: `1px solid ${meta.badgeGold ? 'rgba(184,151,60,.3)' : 'rgba(255,255,255,.1)'}` }}>{meta.badge}</span>
-            <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.35)' }}>{meta.readTime}</span>
-            <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.35)' }}>Updated {meta.updated}</span>
+            <span style={{ fontSize: '9px', letterSpacing: '.16em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", fontWeight: 500, padding: '4px 10px', background: meta.badgeGold ? 'rgba(184,151,60,.15)' : 'rgba(255,255,255,.08)', color: meta.badgeGold ? 'var(--gold-light)' : 'rgba(255,255,255,.72)', border: `1px solid ${meta.badgeGold ? 'rgba(184,151,60,.3)' : 'rgba(255,255,255,.14)'}` }}>{meta.badge}</span>
+            <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.52)' }}>{meta.readTime}</span>
+            <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.52)' }}>Updated {meta.updated}</span>
           </div>
           <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 400, color: '#fff', lineHeight: 1.1, maxWidth: 720 }}>{meta.title}</h1>
           <p style={{ fontSize: '1.05rem', fontWeight: 300, color: 'rgba(255,255,255,.78)', lineHeight: 1.8, maxWidth: 600, marginTop: '1.25rem' }}>{meta.intro}</p>

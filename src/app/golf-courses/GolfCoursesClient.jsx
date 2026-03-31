@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { buildLocalePath } from '../../lib/site'
+import { getGolfCoursesContent } from '../../lib/golf-courses-content'
 
 const TRANSLATIONS = {
   en: {
@@ -1018,7 +1019,8 @@ function CourseCard({ c, lang = 'en' }) {
 }
 
 export default function GolfCoursesClient({ lang = 'en' }) {
-  const t = TRANSLATIONS[lang] || TRANSLATIONS.en
+  const sharedContent = getGolfCoursesContent('en')
+  const t = lang === 'en' ? sharedContent.ui : (TRANSLATIONS[lang] || TRANSLATIONS.en)
   const REGIONS = getRegions(t)
   const [activeFilter, setActiveFilter] = useState('all')
   const contactHref = buildLocalePath('/contact', lang)
@@ -1163,4 +1165,3 @@ export default function GolfCoursesClient({ lang = 'en' }) {
     </>
   )
 }
-

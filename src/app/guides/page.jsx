@@ -2,101 +2,196 @@ import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import { buildGuidesIndexMetadata } from '../../lib/page-metadata'
+import { getGuidesContent } from '../../lib/guides-content'
 
 export const metadata = buildGuidesIndexMetadata('en')
 
-const liveGuides = [
-  { slug: 'son-gual-review', badge: 'Course Review', badgeGold: true, title: "Son Gual Golf Mallorca — A PGA Professional's Honest Review (2026)", intro: "My most-played course on the island. The wind, the greens, the closing stretch — and why Obama and Nadal both keep coming back.", readTime: '7 min read', keywords: 'Championship · Par 72 · €80–165 · Handicap required' },
-  { slug: 'alcanada-review', badge: 'Course Review', badgeGold: true, title: "Club de Golf Alcanada — A PGA Professional's Honest Review (2026)", intro: "The course I take people to when I want them to come home with a story. The lighthouse changes everything.", readTime: '7 min read', keywords: 'Coastal · Par 72 · €115–220 · Rolex Challenge Tour Grand Final' },
-  { slug: 'santa-ponsa-1-review', badge: 'Course Review', badgeGold: true, title: "Golf Santa Ponsa 1, Mallorca — A PGA Professional's Honest Review (2026)", intro: "One of Europe's longest courses, DP World Tour history, and a course that genuinely helps you rediscover your driver.", readTime: '6 min read', keywords: 'Championship · Par 72 · €77–126 · Public access' },
-]
-
-const comingSoonGuides = [
-  { slug: 'a-day-at-son-gual', badge: 'The Experience', badgeGold: false, title: 'A Day at Son Gual with a PGA Professional', intro: 'What actually happens when you spend a full day on Mallorca\'s finest course with a coach who plays it most weeks.', readTime: '5 min read', keywords: 'Son Gual · Play with a Pro · Full day experience' },
-  { slug: 'best-golf-courses-mallorca', badge: 'Guide', badgeGold: false, title: 'The Best Golf Courses in Mallorca — A PGA Professional\'s Honest Ranking', intro: 'Twenty-two courses on the island. Here is how I would rank them for a visitor with limited time and high standards.', readTime: '8 min read', keywords: 'All levels · Green fees compared · Updated 2026' },
-  { slug: 'is-mallorca-good-for-golf', badge: 'Guide', badgeGold: false, title: 'Is Mallorca Good for Golf? An Honest Answer from Someone Who Lives Here', intro: 'The honest version — what the island does better than Portugal, where it falls short, and who it suits.', readTime: '5 min read', keywords: 'Mallorca vs Portugal · Course quality · For all levels' },
-  { slug: 'best-time-play-golf-mallorca', badge: 'Guide', badgeGold: false, title: 'The Best Time to Play Golf in Mallorca — Month by Month', intro: 'October is the month I would choose. Here is why, and what each month actually delivers in terms of weather, price, and crowds.', readTime: '6 min read', keywords: 'Weather · Green fees by season · Crowds' },
-  { slug: 'golf-cost-mallorca', badge: 'Guide', badgeGold: false, title: 'How Much Does Golf Cost in Mallorca? Green Fees, Hire, and Hidden Costs', intro: 'The full picture on what a golf trip here actually costs — green fees, hire, caddies, and where you can save without compromising.', readTime: '5 min read', keywords: '€77–220 green fees · Hire · Caddies · 2026 prices' },
-  { slug: 'golf-trip-planning-mallorca', badge: 'Guide', badgeGold: false, title: 'Planning a Golf Trip to Mallorca — Everything You Need to Know', intro: 'Flights, courses, staying near the golf, getting between venues. The practical guide I wish existed when I moved here.', readTime: '7 min read', keywords: 'Trip planning · Where to stay · Getting around' },
-]
-
-const guides = [...liveGuides, ...comingSoonGuides]
-
 export default function GuidesIndex() {
+  const content = getGuidesContent('en')
+
   return (
     <PageLayout>
       <RevealObserver />
-      <header className="page-hero" style={{
-        minHeight: '100vh',
-        backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.45) 55%, rgba(26,25,22,0.2) 100%), url(/images/guide.jpg)',
-        backgroundSize: 'auto, cover',
-        backgroundPosition: 'center, center 40%',
-      }}>
+      <header
+        className="page-hero"
+        style={{
+          minHeight: '100vh',
+          backgroundImage:
+            'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.45) 55%, rgba(26,25,22,0.2) 100%), url(/images/guide.jpg)',
+          backgroundSize: 'auto, cover',
+          backgroundPosition: 'center, center 40%',
+        }}
+      >
         <div className="page-hero__inner">
           <p className="breadcrumb">
-            <a href="/" className="breadcrumb__link">Home</a>
-            {' '}&nbsp;/&nbsp;{' '}
-            <span style={{color:'var(--gold-light)'}}>Guides</span>
+            <a href="/" className="breadcrumb__link">
+              {content.hero.breadcrumbHome}
+            </a>{' '}
+            &nbsp;/&nbsp; <span style={{ color: 'var(--gold-light)' }}>{content.hero.breadcrumbCurrent}</span>
           </p>
-          <h1>Mallorca Golf.<br />Honest Guides.</h1>
-          <p className="page-hero__lead"> 
-            Course reviews, trip planning, green fees, and when to visit — written by a PGA professional who plays here every week.
-          </p>
-          <div className="page-hero__meta" style={{marginTop:'1.5rem'}}>
-            <span className="page-hero__tag">Updated 2026</span>
-            <span className="page-hero__tag page-hero__tag--gold">★ First-Hand Reviews</span>
-            <span className="page-hero__tag">PGA Professional</span>
+          <h1>{content.hero.title.split('. ').map((line, index, arr) => (
+            <span key={index}>
+              {line}
+              {index < arr.length - 1 ? '.' : ''}
+              {index < arr.length - 1 && <br />}
+            </span>
+          ))}</h1>
+          <p className="page-hero__lead">{content.hero.lead}</p>
+          <div className="page-hero__meta" style={{ marginTop: '1.5rem' }}>
+            <span className="page-hero__tag">{content.hero.tags[0]}</span>
+            <span className="page-hero__tag page-hero__tag--gold">{content.hero.tags[1]}</span>
+            <span className="page-hero__tag">{content.hero.tags[2]}</span>
           </div>
         </div>
       </header>
 
-      <section style={{maxWidth:860,margin:'0 auto',padding:'clamp(48px,8vw,96px) clamp(20px,4vw,40px)'}}>
-        <div style={{display:'flex',flexDirection:'column',gap:'2px'}}>
-          {liveGuides.map((g) => (
-            <Link key={g.slug} href={`/guides/${g.slug}`} className="reveal"
-              style={{display:'block',textDecoration:'none',borderBottom:'1px solid var(--linen)',padding:'32px 0'}}>
-              <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-                <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(184,151,60,.12)',color:'var(--gold)',border:'1px solid rgba(184,151,60,.25)',flexShrink:0,alignSelf:'center'}}>
-                  {g.badge}
+      <section style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(48px,8vw,96px) clamp(20px,4vw,40px)' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+          {content.liveGuides.map((guide) => (
+            <Link
+              key={guide.slug}
+              href={`/guides/${guide.slug}`}
+              className="reveal"
+              style={{ display: 'block', textDecoration: 'none', borderBottom: '1px solid var(--linen)', padding: '32px 0' }}
+            >
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, flexWrap: 'wrap' }}>
+                <span
+                  style={{
+                    fontSize: '9px',
+                    letterSpacing: '.16em',
+                    textTransform: 'uppercase',
+                    fontFamily: "'Jost',sans-serif",
+                    fontWeight: 500,
+                    padding: '4px 10px',
+                    background: 'rgba(184,151,60,.12)',
+                    color: 'var(--gold)',
+                    border: '1px solid rgba(184,151,60,.25)',
+                    flexShrink: 0,
+                    alignSelf: 'center',
+                  }}
+                >
+                  {guide.badge}
                 </span>
-                <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>
-                  {g.readTime}
+                <span
+                  style={{
+                    fontSize: '9px',
+                    letterSpacing: '.12em',
+                    textTransform: 'uppercase',
+                    fontFamily: "'Jost',sans-serif",
+                    color: 'var(--stone)',
+                    alignSelf: 'center',
+                  }}
+                >
+                  {guide.readTime}
                 </span>
               </div>
-              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
-                {g.title}
+              <h2
+                style={{
+                  fontFamily: "'Cormorant Garamond',serif",
+                  fontSize: 'clamp(1.2rem,2vw,1.5rem)',
+                  fontWeight: 500,
+                  color: 'var(--deep)',
+                  lineHeight: 1.25,
+                  margin: '14px 0 10px',
+                }}
+              >
+                {guide.title}
               </h2>
-              <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>
-                {g.intro}
+              <p style={{ fontSize: '0.95rem', fontWeight: 300, color: 'var(--taupe)', lineHeight: 1.75, margin: '0 0 12px', maxWidth: 640 }}>
+                {guide.intro}
               </p>
-              <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>
-                {g.keywords}
+              <p
+                style={{
+                  fontSize: '9px',
+                  letterSpacing: '.1em',
+                  textTransform: 'uppercase',
+                  fontFamily: "'Jost',sans-serif",
+                  color: 'var(--stone)',
+                }}
+              >
+                {guide.keywords}
               </p>
             </Link>
           ))}
 
-          {comingSoonGuides.map((g) => (
-            <div key={g.slug} className="reveal"
-              style={{display:'block',borderBottom:'1px solid var(--linen)',padding:'32px 0',pointerEvents:'none',userSelect:'none'}}>
-              <div style={{display:'flex',alignItems:'flex-start',gap:16,flexWrap:'wrap'}}>
-                <span style={{fontSize:'9px',letterSpacing:'.16em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:500,padding:'4px 10px',background:'rgba(45,74,62,.07)',color:'var(--taupe)',border:'1px solid var(--linen)',flexShrink:0,alignSelf:'center'}}>
-                  {g.badge}
+          {content.comingSoonGuides.map((guide) => (
+            <div
+              key={guide.slug}
+              className="reveal"
+              style={{ display: 'block', borderBottom: '1px solid var(--linen)', padding: '32px 0', pointerEvents: 'none', userSelect: 'none' }}
+            >
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, flexWrap: 'wrap' }}>
+                <span
+                  style={{
+                    fontSize: '9px',
+                    letterSpacing: '.16em',
+                    textTransform: 'uppercase',
+                    fontFamily: "'Jost',sans-serif",
+                    fontWeight: 500,
+                    padding: '4px 10px',
+                    background: 'rgba(45,74,62,.07)',
+                    color: 'var(--taupe)',
+                    border: '1px solid var(--linen)',
+                    flexShrink: 0,
+                    alignSelf: 'center',
+                  }}
+                >
+                  {guide.badge}
                 </span>
-                <span style={{fontSize:'9px',letterSpacing:'.12em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)',alignSelf:'center'}}>
-                  {g.readTime}
+                <span
+                  style={{
+                    fontSize: '9px',
+                    letterSpacing: '.12em',
+                    textTransform: 'uppercase',
+                    fontFamily: "'Jost',sans-serif",
+                    color: 'var(--stone)',
+                    alignSelf: 'center',
+                  }}
+                >
+                  {guide.readTime}
                 </span>
-                <span style={{fontSize:'9px',letterSpacing:'.14em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",fontWeight:600,color:'var(--deep)',alignSelf:'center',marginLeft:'auto',background:'var(--gold)',padding:'5px 12px'}}>
-                  Coming Soon
+                <span
+                  style={{
+                    fontSize: '9px',
+                    letterSpacing: '.14em',
+                    textTransform: 'uppercase',
+                    fontFamily: "'Jost',sans-serif",
+                    fontWeight: 600,
+                    color: 'var(--deep)',
+                    alignSelf: 'center',
+                    marginLeft: 'auto',
+                    background: 'var(--gold)',
+                    padding: '5px 12px',
+                  }}
+                >
+                  {content.comingSoonLabel}
                 </span>
               </div>
-              <h2 style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'clamp(1.2rem,2vw,1.5rem)',fontWeight:500,color:'var(--deep)',lineHeight:1.25,margin:'14px 0 10px'}}>
-                {g.title}
+              <h2
+                style={{
+                  fontFamily: "'Cormorant Garamond',serif",
+                  fontSize: 'clamp(1.2rem,2vw,1.5rem)',
+                  fontWeight: 500,
+                  color: 'var(--deep)',
+                  lineHeight: 1.25,
+                  margin: '14px 0 10px',
+                }}
+              >
+                {guide.title}
               </h2>
-              <p style={{fontSize:'0.95rem',fontWeight:300,color:'var(--taupe)',lineHeight:1.75,margin:'0 0 12px',maxWidth:640}}>
-                {g.intro}
+              <p style={{ fontSize: '0.95rem', fontWeight: 300, color: 'var(--taupe)', lineHeight: 1.75, margin: '0 0 12px', maxWidth: 640 }}>
+                {guide.intro}
               </p>
-              <p style={{fontSize:'9px',letterSpacing:'.1em',textTransform:'uppercase',fontFamily:"'Jost',sans-serif",color:'var(--stone)'}}>
-                {g.keywords}
+              <p
+                style={{
+                  fontSize: '9px',
+                  letterSpacing: '.1em',
+                  textTransform: 'uppercase',
+                  fontFamily: "'Jost',sans-serif",
+                  color: 'var(--stone)',
+                }}
+              >
+                {guide.keywords}
               </p>
             </div>
           ))}
@@ -105,16 +200,17 @@ export default function GuidesIndex() {
 
       <section className="cta-final">
         <div className="cta-final__left reveal">
-          <p className="eyebrow eyebrow--gold">Ready to play?</p>
-          <h2 className="serif-display" style={{color:'#fff'}}>A private round on one of these courses, with a PGA professional alongside you.</h2>
-          <p>Tell me your dates and what you&apos;re looking for. I&apos;ll come back personally within 24 hours.</p>
+          <p className="eyebrow eyebrow--gold">{content.finalCta.eyebrow}</p>
+          <h2 className="serif-display" style={{ color: '#fff' }}>{content.finalCta.title}</h2>
+          <p>{content.finalCta.body}</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href="/play-with-a-pro" className="btn btn--gold" style={{fontSize:10,padding:'14px 36px'}}>See the Experiences &rarr;</Link>
-          <Link href="/contact" className="btn btn--outline-white">Get in Touch</Link>
+          <Link href="/play-with-a-pro" className="btn btn--gold" style={{ fontSize: 10, padding: '14px 36px' }}>
+            {content.finalCta.primaryCta}
+          </Link>
+          <Link href="/contact" className="btn btn--outline-white">{content.finalCta.secondaryCta}</Link>
         </div>
       </section>
     </PageLayout>
   )
 }
-
