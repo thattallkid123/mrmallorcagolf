@@ -4,6 +4,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { buildLocalePath } from '../../lib/site'
 import { getGolfCoursesContent } from '../../lib/golf-courses-content'
+import {
+  getShortCourseId,
+  SHORT_TO_ID,
+  slugifyCourseName,
+} from '../../lib/golf-courses-helpers'
 
 const TRANSLATIONS = {
   de: {
@@ -922,31 +927,9 @@ const REGION_HEADERS = {
   north: { title: 'North', subtitle: "Port d'Alcúdia · 55–60km · Alcanada alone justifies the drive", count: '2 courses' },
 }
 
-const slugify = name => name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')
-const normalizeCourseName = name => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toLowerCase()
-
-const SHORT_TO_ID = {
-  'Son Gual':'golf-son-gual','Son Muntaner':'son-muntaner','Son Vida':'golf-son-vida',
-  'Son Quint':'golf-son-quint','T Golf Puntiró':'t-golf-palma-puntiro','Son Termes':'golf-son-termes',
-  'Palma Pitch & Putt':'palma-pitch-putt','Santa Ponsa 1':'golf-santa-ponsa-1',
-  'Santa Ponsa 2':'golf-santa-ponsa-2','Santa Ponsa 3':'golf-santa-ponsa-3',
-  'T Golf Calvià':'t-golf-calvia-poniente','Bendinat':'real-golf-de-bendinat',
-  'Golf de Andratx':'golf-de-andratx','Golf Maioris':'golf-maioris',
-  'Son Antem East':'golf-son-antem-east','Son Antem West':'golf-son-antem-west',
-  'Capdepera':'capdepera-golf','Canyamel':'canyamel-golf','Pula':'pula-golf',
-  'Son Servera':'golf-club-son-servera','Alcanada':'club-de-golf-alcanada',
-  'Golf Pollensa':'golf-pollensa',
-}
-
-function getShortCourseId(name) {
-  const normalized = normalizeCourseName(name)
-  const match = Object.entries(SHORT_TO_ID).find(([key]) => normalized.includes(normalizeCourseName(key)))
-  return match ? match[1] : slugify(name)
-}
-
 function CourseCard({ c, lang = 'en' }) {
   return (
-    <div id={slugify(c.name)} className={`course${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`} style={{scrollMarginTop:'90px'}}>
+    <div id={slugifyCourseName(c.name)} className={`course${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`} style={{scrollMarginTop:'90px'}}>
       {/* Mobile: image on top, full width, fixed height */}
       {c.img && (
         <div className="course__img-mobile" style={{ position: 'relative' }}>
