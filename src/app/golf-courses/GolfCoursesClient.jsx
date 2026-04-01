@@ -45,12 +45,9 @@ function CourseCard({ c, lang = 'en' }) {
           <h3 className="course__name">{c.name}</h3>
           <p className="course__location">{(lang !== 'en' && GOLF_COURSE_TRANSLATIONS[lang]?.[c.name]?.location) || c.location}</p>
           <div className="course__stats">
-            {c.pills.map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{pill}</span>)}
+            {c.pills.slice(0, 4).map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{pill}</span>)}
           </div>
-          <div className="difficulty">
-            <div className="difficulty__track"><div className="difficulty__fill" style={{ width: `${c.difficulty}%` }} /></div>
-            <span className="difficulty__score">{c.diffScore}</span>
-          </div>
+          <p className="course__difficulty-note">{c.diffScore} difficulty</p>
           <p className="course__text">{(lang !== 'en' && GOLF_COURSE_TRANSLATIONS[lang]?.[c.name]?.text) || c.text}</p>
           {(c.text2 || (lang !== 'en' && GOLF_COURSE_TRANSLATIONS[lang]?.[c.name]?.text2)) && <p className="course__text" style={{ marginTop: 12 }}>{(lang !== 'en' && GOLF_COURSE_TRANSLATIONS[lang]?.[c.name]?.text2) || c.text2}</p>}
           {(c.note || (lang !== 'en' && GOLF_COURSE_TRANSLATIONS[lang]?.[c.name]?.note)) && <div className="course__note"><p>{(lang !== 'en' && GOLF_COURSE_TRANSLATIONS[lang]?.[c.name]?.note) || c.note}</p></div>}

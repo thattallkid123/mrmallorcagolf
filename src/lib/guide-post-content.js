@@ -413,12 +413,6 @@ export const GUIDE_POST_CONTENT = {
           text: "If you're driving the ball well and want to feel good about it, play Santa Ponsa 1. If you're between Son Gual and Alcanada for a serious day and want something that contrasts both - more open, more confidence-building, with proper European Tour history attached - this is the course. The par-3s will keep you honest. The rest of the round will give you something back.",
         },
         {
-          type: 'image',
-          src: '/images/santa-ponsa-blog/sp-4.jpg',
-          alt: 'Santa Ponsa 1 views across the course',
-          caption: 'The back nine opens up. The 10th is 590 metres from the tips - one of the longest par-5s in Europe.',
-        },
-        {
           type: 'cta',
           text: 'Want to play Santa Ponsa 1 as part of a Mallorca golf day? I can arrange it.',
           linkLabel: 'See the play-with-a-pro experience →',

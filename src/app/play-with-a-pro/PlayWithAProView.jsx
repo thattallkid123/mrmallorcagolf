@@ -88,43 +88,14 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
-            <a
-              href="/questionnaire.html"
-              target="_blank"
-              rel="noopener"
-              style={{
-                display: 'block',
-                marginTop: '2rem',
-                padding: '20px 24px',
-                border: '1px solid rgba(184,151,60,.3)',
-                background: 'rgba(184,151,60,.05)',
-                textDecoration: 'none',
-                color: 'var(--deep)',
-              }}
-            >
-              <p
-                style={{
-                  fontSize: '9px',
-                  letterSpacing: '.16em',
-                  textTransform: 'uppercase',
-                  fontFamily: "'Jost',sans-serif",
-                  color: 'var(--gold)',
-                  marginBottom: 8,
-                }}
-              >
+            <a href="/questionnaire.html" target="_blank" rel="noopener" className="pwap-questionnaire">
+              <p className="pwap-questionnaire__eyebrow">
                 {content.day.questionnaireEyebrow}
               </p>
-              <p
-                style={{
-                  fontFamily: "'Cormorant Garamond',serif",
-                  fontSize: '1.15rem',
-                  fontWeight: 500,
-                  margin: '0 0 4px',
-                }}
-              >
+              <p className="pwap-questionnaire__title">
                 {content.day.questionnaireTitle}
               </p>
-              <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', margin: 0 }}>{content.day.questionnaireBody}</p>
+              <p className="pwap-questionnaire__body">{content.day.questionnaireBody}</p>
             </a>
           </div>
           <div className="pwap-day__right reveal">
@@ -250,7 +221,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <Link href={content.finalCta.secondaryHref} className="btn btn--outline-white">
               {content.finalCta.secondaryCta}
             </Link>
-            <a href="/questionnaire.html" target="_blank" rel="noopener" className="btn btn--outline-white">
+            <a href="/questionnaire.html" target="_blank" rel="noopener" className="cta-final__aux">
               {content.finalCta.tertiaryCta}
             </a>
           </div>

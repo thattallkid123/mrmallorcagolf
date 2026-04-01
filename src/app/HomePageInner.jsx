@@ -16,6 +16,31 @@ const WINNER_IMAGES = [
   '/images/winners/01c93d14fd4089f7fa1a956671b90967a1c09ed13f.jpg',
   '/images/winners/01f43146e7bbd479cd809b6daabd9b105b0008ca18.jpg',
   '/images/winners/01fe13d3c84b1236db2811859106a909c2227f8aa5.jpg',
+  '/images/winners/2017_06_11_19_32_56.jpg',
+  '/images/winners/2017_07_24_07_54_26.jpg',
+  '/images/winners/2017_12_07_03_05_56.jpg',
+  '/images/winners/2018_08_10_17_45_12.jpg',
+  '/images/winners/2018_08_11_14_58_16.jpg',
+  '/images/winners/2019_06_14_17_33_00.jpg',
+  '/images/winners/2019_07_13_06_48_15.jpg',
+  '/images/winners/2020_11_25_12_20_00.jpg',
+  '/images/winners/2021_02_18_21_57_59.jpg',
+  '/images/winners/2021_04_18_20_01_18.jpg',
+  '/images/winners/2022_07_17_20_47_02.jpg',
+  '/images/winners/2022_07_18_17_01_28.jpg',
+  '/images/winners/2022_07_31_22_36_45.jpg',
+  '/images/winners/2022_08_18_17_44_28.jpg',
+  '/images/winners/2022_10_03_08_30_13.jpg',
+  '/images/winners/2022_10_07_19_28_31.jpg',
+  '/images/winners/2022_10_24_23_15_14.jpg',
+  '/images/winners/2023_06_13_11_53_03.jpg',
+  '/images/winners/2023_06_18_23_58_15.jpg',
+  '/images/winners/2023_08_29_22_35_30.jpg',
+  '/images/winners/2023_10_23_18_34_53.jpg',
+  '/images/winners/2023_12_03_16_55_19.jpg',
+  '/images/winners/2024_04_07_21_05_51.jpg',
+  '/images/winners/2024_06_28_12_16_55.jpg',
+  '/images/winners/2024_07_30_08_11_08.jpg',
 ]
 
 const FEATURE_ICONS = {
@@ -114,13 +139,7 @@ export default function HomePageInner({ locale = 'en' }) {
               {home.hero.secondaryCta}
             </a>
           </div>
-        </div>
-        <div className="hero__trust">
-          {home.hero.trust.map((line, index) => (
-            <p key={line} className="hero__trust-line">
-              {index < 3 ? <em>{line}</em> : line}
-            </p>
-          ))}
+          <p className="hero__trust-inline">{home.hero.trust.join(' · ')}</p>
         </div>
       </section>
 
@@ -146,7 +165,9 @@ export default function HomePageInner({ locale = 'en' }) {
 
       <section style={{ background: 'var(--deep)', borderTop: '1px solid rgba(255,255,255,0.06)', padding: '1.5rem clamp(20px,5vw,60px)' }}>
         <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'rgba(255,255,255,0.74)', fontFamily: "'Jost',sans-serif", fontWeight: 300, lineHeight: 1.6 }}>
-          {home.socialProof}
+          {locale === 'en'
+            ? 'Andy 教练 · 300 million+ golf coaching video views on TikTok · Coaching content trusted worldwide'
+            : home.socialProof}
         </p>
       </section>
 
@@ -322,7 +343,7 @@ export default function HomePageInner({ locale = 'en' }) {
               <p className="package__price" style={{ marginTop: '1.25rem', marginBottom: pkg.note ? '0.5rem' : '1.25rem', color: pkg.featured ? 'var(--gold-light)' : undefined }}>
                 {pkg.price}
               </p>
-              {pkg.note && <p style={{ fontSize: '0.75rem', color: pkg.featured ? 'rgba(255,255,255,0.74)' : 'var(--taupe)', marginBottom: '1.25rem', lineHeight: 1.5 }}>{pkg.note}</p>}
+              {pkg.note && <p className={`package__note${pkg.featured ? ' package__note--featured' : ''}`}>{pkg.note}</p>}
               <Link href={contactHref} className={`btn ${pkg.featured ? 'btn--gold' : 'btn--dark'}`}>
                 {pkg.cta}
               </Link>
