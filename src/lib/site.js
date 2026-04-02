@@ -1,4 +1,4 @@
-export const SITE_ORIGIN = 'https://mrmallorcagolf.com'
+export const SITE_ORIGIN = 'https://www.mrmallorcagolf.com'
 
 export const ALL_LOCALES = ['en', 'es', 'de', 'fr', 'nl', 'sv', 'zh']
 export const NAV_LOCALES = ['en', 'es', 'de', 'fr', 'zh']
