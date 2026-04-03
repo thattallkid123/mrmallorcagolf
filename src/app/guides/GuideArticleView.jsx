@@ -13,13 +13,21 @@ function joinHref(locale, path) {
 function normalizeContainerStyle(style, fallback) {
   const merged = style || fallback
   if (!merged) return merged
-  if (merged.aspectRatio === '21/9' || merged.aspectRatio === '16/9') {
-    return { ...merged, aspectRatio: '3/2' }
+  if (merged.aspectRatio === '21/9' || merged.aspectRatio === '16/9' || merged.aspectRatio === '15/8') {
+    return { ...merged, aspectRatio: '5/4' }
   }
   return merged
 }
 
-function renderBlock(block, index, locale) {
+function getImagePresentation(block, imageOrdinal) {
+  if (block.presentation) return block.presentation
+  if (imageOrdinal === 0 || block.priority || block.fit === 'contain') return 'full'
+  if (block.containerStyle?.aspectRatio === '21/9' || block.containerStyle?.aspectRatio === '16/9') return 'full'
+
+  return imageOrdinal % 2 === 0 ? 'half-left' : 'half-right'
+}
+
+function renderBlock(block, index, locale, imageOrdinal) {
   if (block.type === 'paragraph') {
     return <p key={`${index}-${block.text.slice(0, 24)}`}>{block.text}</p>
   }
@@ -33,13 +41,21 @@ function renderBlock(block, index, locale) {
   }
 
   if (block.type === 'image') {
+    const presentation = getImagePresentation(block, imageOrdinal)
     const defaultStyle =
       block.fit === 'contain'
-        ? { borderRadius: 2, aspectRatio: '3/2', background: '#f5f5f5' }
-        : { borderRadius: 2, aspectRatio: '3/2' }
+        ? { borderRadius: 2, aspectRatio: '5/4', background: '#f5f5f5' }
+        : { borderRadius: 2, aspectRatio: '5/4' }
 
     return (
-      <figure key={`${index}-${block.src}`} className={`post-media${block.caption ? '' : ' post-media--plain'}`}>
+      <figure
+        key={`${index}-${block.src}`}
+        className={`post-media${block.caption ? '' : ' post-media--plain'}${
+          presentation === 'half-left' || presentation === 'half-right'
+            ? ` post-media--half post-media--${presentation}`
+            : ''
+        }`}
+      >
         <FillImageFrame
           src={block.src}
           alt={block.alt}
@@ -48,7 +64,7 @@ function renderBlock(block, index, locale) {
           imageStyle={
             block.fit === 'contain'
               ? { objectFit: 'contain', backgroundColor: '#f5f5f5' }
-              : { objectPosition: 'center 24%', ...block.imageStyle }
+              : { objectPosition: 'center center', ...block.imageStyle }
           }
         />
         {block.caption ? (
@@ -144,11 +160,16 @@ function renderBlock(block, index, locale) {
 }
 
 export default function GuideArticleView({ meta, blocks, locale = 'en' }) {
+  let imageOrdinal = 0
+
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
       <RevealObserver />
       <PostLayout meta={meta} lang={locale}>
-        {blocks.map((block, index) => renderBlock(block, index, locale))}
+        {blocks.map((block, index) => {
+          const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
+          return renderBlock(block, index, locale, currentImageOrdinal)
+        })}
       </PostLayout>
     </PageLayout>
   )

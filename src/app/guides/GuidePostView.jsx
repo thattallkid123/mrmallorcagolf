@@ -6,22 +6,38 @@ import PostLayout from './PostLayout'
 function normalizeContainerStyle(style, fallback) {
   const merged = style || fallback
   if (!merged) return merged
-  if (merged.aspectRatio === '21/9' || merged.aspectRatio === '16/9') {
-    return { ...merged, aspectRatio: '3/2' }
+  if (merged.aspectRatio === '21/9' || merged.aspectRatio === '16/9' || merged.aspectRatio === '15/8') {
+    return { ...merged, aspectRatio: '5/4' }
   }
   return merged
 }
 
-function renderBlock(block, index) {
+function getImagePresentation(block, imageOrdinal) {
+  if (block.presentation) return block.presentation
+  if (imageOrdinal === 0 || block.priority) return 'full'
+  if (block.containerStyle?.aspectRatio === '21/9' || block.containerStyle?.aspectRatio === '16/9') return 'full'
+
+  return imageOrdinal % 2 === 0 ? 'half-left' : 'half-right'
+}
+
+function renderBlock(block, index, imageOrdinal) {
   if (block.type === 'image') {
+    const presentation = getImagePresentation(block, imageOrdinal)
     return (
-      <figure key={`${block.src}-${index}`} className={`post-media${block.caption ? '' : ' post-media--plain'}`}>
+      <figure
+        key={`${block.src}-${index}`}
+        className={`post-media${block.caption ? '' : ' post-media--plain'}${
+          presentation === 'half-left' || presentation === 'half-right'
+            ? ` post-media--half post-media--${presentation}`
+            : ''
+        }`}
+      >
         <FillImageFrame
           src={block.src}
           alt={block.alt}
           priority={block.priority}
-          containerStyle={normalizeContainerStyle(block.containerStyle, { borderRadius: 2, aspectRatio: '3/2' })}
-          imageStyle={{ objectPosition: 'center 24%', ...block.imageStyle }}
+          containerStyle={normalizeContainerStyle(block.containerStyle, { borderRadius: 2, aspectRatio: '5/4' })}
+          imageStyle={{ objectPosition: 'center center', ...block.imageStyle }}
         />
         {block.caption ? <figcaption className="post-media__caption">{block.caption}</figcaption> : null}
       </figure>
@@ -71,12 +87,16 @@ function renderBlock(block, index) {
 
 export default function GuidePostView({ locale = 'en', meta, blocks }) {
   const pageLang = locale === 'en' ? undefined : locale
+  let imageOrdinal = 0
 
   return (
     <PageLayout lang={pageLang}>
       <RevealObserver />
       <PostLayout meta={meta} lang={pageLang}>
-        {blocks.map((block, index) => renderBlock(block, index))}
+        {blocks.map((block, index) => {
+          const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
+          return renderBlock(block, index, currentImageOrdinal)
+        })}
       </PostLayout>
     </PageLayout>
   )
