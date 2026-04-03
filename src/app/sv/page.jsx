@@ -1,4 +1,4 @@
-import HomePageSV from './HomePageSV'
+import HomePageInner from '../HomePageInner'
 import HomeLayout from '../HomeLayout'
 import { buildHomeMetadata } from '../../lib/page-metadata'
 
@@ -7,7 +7,7 @@ export const metadata = buildHomeMetadata('sv')
 export default function HomeSV() {
   return (
     <HomeLayout lang="sv">
-      <HomePageSV />
+      <HomePageInner locale="sv" />
     </HomeLayout>
   )
 }

@@ -1,0 +1,401 @@
+Mr Mallorca Golf
+Copy Decision Sheet
+
+I've made changes here to B which therefore means when I choose B or C, use the text that is here in this doc.
+
+How to use
+- a = keep the current live wording
+- b = keep the current draft wording
+- c = hybrid: mostly draft, but tighten or revert selected lines
+
+Important
+- This is written so you do not need to open the site to choose.
+- "Live" means the wording on origin/main / mrmallorcagolf.com.
+- "Draft" means the wording currently in localhost:3000 on i18n-premium-draft.
+- After you choose the English version, only the changed translated sections need updating.
+
+Recommended shorthand if you want the safest route
+- 1c
+- 2b
+- 3c
+- 4b
+- 5b
+- 6c
+- 7b
+- 8b
+- 9b
+- 10c
+- 11c
+- 12b
+
+----------------------------------------
+1. Homepage Hero / Intro / Social Proof
+File:
+- src/lib/homepage-content.js
+
+1A Live
+Intro title:
+"Many golf experiences in Mallorca are booked through a platform. This is something else."
+
+Intro body:
+"A private day hosted by a PGA Advanced Professional with over two decades coaching across three continents. The expertise behind the day is what makes the difference. The golf is better. The insight is genuine."
+
+Social proof:
+"Andy 教练 · 300 million+ golf coaching video views on TikTok · Coaching content trusted worldwide"
+
+1B Draft
+Intro title:
+"Most golf days in Mallorca start with a booking platform and end with a bill. This is more personal."
+
+Intro body:
+"I host private golf days on the island's best courses, with the coaching given during the round rather than as an add-on afterwards. The golf is better, the decisions are clearer, and the whole day feels properly looked after."
+
+Social proof:
+"Andy 教练 · 300 million+ golf coaching video views on TikTok · Coaching content trusted worldwide"
+
+Recommendation
+- 1c
+
+Reason
+- The draft intro is less AI-ish and less slogan-like.
+- The live version has stronger familiarity, but "This is something else" is exactly the kind of line you said you dislike.
+- Social proof should stay as Andy 教练.
+
+----------------------------------------
+2. Homepage How It Works / Experience / Winners
+File:
+- src/lib/homepage-content.js
+
+2A Live
+How title:
+"Three steps to a round you'll remember."
+
+Experience title:
+"Most golf days in Mallorca are a tee time and a wave goodbye."
+
+Experience paragraph:
+"Genuine advice throughout - course strategy, decision-making, the things that rarely come up in a standard lesson. A day you'll still be talking about on the flight home."
+
+Winners title:
+"Competition winners, ambitious golfers, and plenty in between."
+
+2B Draft
+How title:
+"Three simple steps."
+
+Experience title:
+"Most golf days in Mallorca are a tee time and a wave goodbye."
+
+Experience paragraph:
+"That background shapes every round I host. We play one of Mallorca's best courses together, and the coaching arrives where it matters: on the tee, into the wind, around the greens, and over the shots that usually cost people the score they wanted."
+
+Winners title:
+"Competition winners, ambitious golfers, and plenty in between."
+
+Recommendation
+- 2b
+
+Reason
+- Draft is cleaner and less brochure-like.
+- This section does not feel like it needs a big revert.
+
+----------------------------------------
+3. Homepage Packages / FAQ / Final CTA
+File:
+- src/lib/homepage-content.js
+
+3A Live
+Packages title:
+"One coach. One course. Your day."
+
+Packages intro:
+"Three levels of experience. All private, all personally guided by Andy."
+
+FAQ title:
+"Things people ask before getting in touch."
+
+Final CTA title:
+"Get in touch. I'll sort the rest."
+
+Final CTA quote:
+"The golf is better. The insight is genuine."
+
+3B Draft
+Packages title:
+"Three ways to spend the day."
+
+Packages intro:
+"All three are private, and all three are hosted by me. The difference is how much of the day you want arranged around the golf."
+
+FAQ title:
+"Things people ask before getting in touch."
+
+Final CTA title:
+"Get in touch. I'll sort the rest."
+
+Final CTA quote:
+"You'll play better golf and understand why."
+
+Recommendation
+- 3c
+
+Reason
+- Draft packages copy is better.
+- Final CTA quote in draft is less polished and more natural.
+- Keep the overall draft direction, but this area may still want one last voice pass.
+
+----------------------------------------
+4. Golf-Courses Hero / Intro / Sidebar / CTA
+File:
+- src/lib/golf-courses-content.js
+
+4A Live
+Hero title:
+"Golf in Mallorca 2026 - An Insider's Guide"
+
+Hero tags:
+"22 Courses Covered"
+"Green Fees Updated 2026"
+"Expert First-Hand Reviews"
+"PGA Professional"
+
+Intro:
+"I'm working my way through every course on the island, playing them and reviewing them honestly. Below is what I know so far."
+
+Sidebar:
+"Private day, everything arranged. Son Gual and Alcanada are the two I use most for a serious round."
+
+4B Draft
+Hero title:
+"Golf Courses in Mallorca: My 2026 Guide"
+
+Hero tags:
+"22 Courses Covered"
+"Green Fees Updated 2026"
+"Played and Researched Properly"
+"PGA Professional"
+
+Intro:
+"Mallorca has more good golf than most visitors realise. There are 22 courses on the island, several of them good enough to stand up against far better-known golfing destinations."
+
+"I'm working my way through every course on the island, playing them and reviewing them honestly. Below is what I know so far."
+
+Sidebar:
+"Private day, everything arranged and a course chosen for what would be best for you."
+
+Recommendation
+- 4b
+
+Reason
+- Draft title is more direct.
+- "Played and Researched Properly" is a better tag than "Expert First-Hand Reviews".
+- This page feels stronger in draft than live.
+
+----------------------------------------
+5. Play With a Pro
+File:
+- src/lib/play-with-a-pro-content.js
+
+5A Live
+Hero body:
+"Not a lesson. Not a standard round. A private day on one of the island's finest courses, hosted by a PGA Advanced Professional with two decades of coaching across three continents."
+
+Day paragraph:
+"During the round, the coaching is woven in naturally - not a running commentary, but the right observation at the right moment."
+
+Packages title:
+"Three levels of experience. All private, all personally guided."
+
+Final CTA title:
+"Get in touch and let's arrange your day."
+
+5B Draft
+Hero body:
+"A private day on one of Mallorca's best courses, with me playing alongside you and coaching naturally through the round. It suits good golfers, holiday golfers, and anyone who wants a better day than a standard tee time."
+
+Day paragraph:
+"During the round, the coaching is woven in naturally. Not a running commentary. More the right observation at the point where it can still change the hole, the score, or the decision standing in front of you."
+
+Packages title:
+"Three ways to do it."
+
+Final CTA title:
+"Get in touch and I'll help you choose the right version of the day."
+
+Recommendation
+- 5b
+
+Reason
+- Draft removes the obvious banned "Not X. Not Y." construction.
+- It sounds more like Andy and less like a brochure.
+
+----------------------------------------
+6. About Page
+File:
+- src/lib/about-content.js
+
+6A Live
+Early career title:
+"Following the best coaches across two continents."
+
+Mallorca title:
+"Twenty-two courses, one island, and a coaching philosophy sharpened by playing again."
+
+Mallorca quote:
+"The coaching philosophy that's come out of playing again is simple: the fastest improvements happen on the course, not the range. Real conditions, real decisions. The progress that comes from that tends to stick."
+
+Final CTA title:
+"A PGA Advanced Professional. An exceptional golf island. Your round."
+
+6B Draft
+Early career title:
+"Learning from the world's best coaches in perfect coaching environments." (this is changed and better)
+
+Mallorca title:
+"Twenty-two courses, one island, and a coaching philosophy sharpened by playing properly again."
+
+Mallorca quote:
+"Playing properly again has only confirmed what I already believed: the quickest improvements usually happen on the course, not on the range."
+
+Final CTA title:
+"A PGA Advanced Professional. An exceptional golf island. Your round."
+
+Recommendation
+- 6c
+
+Reason
+- Draft is less over-written.
+- Keep draft direction, but this page still wants one careful final edit.
+
+----------------------------------------
+7. Coaching Page
+File:
+- src/lib/coaching-content.js
+
+7A Live
+Hero title:
+"Better Golf, Without a Full Rebuild."
+
+Range title:
+"There's a reason your range game doesn't show up on the course."
+
+Quote:
+"The first tee is not the driving range."
+
+Final CTA title:
+"Get in touch to discuss a session."
+
+7B Draft
+Hero title:
+"Better Golf, Without a Full Rebuild."
+
+Range title:
+"There's a reason your range game doesn't show up on the course."
+
+Quote:
+"The first tee is not the driving range."
+
+Final CTA title:
+"Get in touch to discuss a session."
+
+Recommendation
+- 7b
+
+Reason
+- This page is already fairly restrained.
+- Draft is mostly a cleaner, centralized version of the live intent.
+
+----------------------------------------
+8. Contact Page
+File:
+- src/lib/contact-content.js
+
+8A Live
+- current live wording
+
+8B Draft
+- lightly tightened wording
+
+Recommendation
+- 8b
+
+Reason
+- Low risk page.
+- No need to cling to live here unless you spot something specific.
+
+----------------------------------------
+9. Guides Index
+File:
+- src/lib/guides-content.js
+
+9A Live
+- original card intros and lead text
+
+9B Draft
+- cleaner lead line
+- Son Gual intro less polished
+- Santa Ponsa intro more natural
+
+Recommendation
+- 9b
+
+Reason
+- Draft reads cleaner and more editorial.
+
+----------------------------------------
+10. Live Guide Reviews
+File:
+- src/lib/guide-post-content.js
+
+10A Live
+- more polished intros and verdicts
+- more "finished" travel/editorial tone
+
+10B Draft
+- Son Gual intro and verdict tightened
+- Alcanada intro and verdict tightened
+- Santa Ponsa intro, driver section, and verdict tightened
+- less "genuinely", fewer polished lines
+
+Recommendation
+- 10c
+
+Reason
+- Keep the draft clean-up, but this is the area most worth a slower line edit.
+
+----------------------------------------
+11. Upcoming Guide Article Bodies
+File:
+- src/lib/guide-article-content.js
+
+11A Live baseline style
+- closer to the original live-site tone and structure
+
+11B Draft
+- several obvious AI-ish or over-polished lines were tightened
+- food / pricing / planning sections are more natural
+- some Shanghai comparisons were kept but softened
+
+Recommendation
+- 11c
+
+Reason
+- This is the area where we should be most selective.
+- Keep the improved draft structure, but final English choices here should be deliberate because they affect translation deltas.
+
+----------------------------------------
+12. Shared Homepage Proof Wording Across Locales
+File:
+- src/lib/homepage-content.js
+
+12A Live
+"Andy Coach ..."
+
+12B Draft
+"Andy 教练 ..."
+
+Recommendation
+- 12b
+
+Reason
+- This is already the better version and matches what you asked for.

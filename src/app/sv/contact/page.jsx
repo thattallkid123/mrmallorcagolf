@@ -1,5 +1,5 @@
 import PageLayout from '../../../components/PageLayout'
-import ContactForm_SV from './ContactForm_SV'
+import ContactForm from '../../contact/ContactForm'
 import { buildContactMetadata } from '../../../lib/page-metadata'
 
 export const metadata = buildContactMetadata('sv')
@@ -7,8 +7,7 @@ export const metadata = buildContactMetadata('sv')
 export default function Contact_SV() {
   return (
     <PageLayout lang="sv" navTransparent={false}>
-      <ContactForm_SV />
+      <ContactForm locale="sv" />
     </PageLayout>
   )
 }
-

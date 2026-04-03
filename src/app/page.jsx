@@ -7,7 +7,7 @@ export const metadata = buildHomeMetadata('en')
 export default function Home() {
   return (
     <HomeLayout>
-      <HomePageInner />
+      <HomePageInner locale="en" />
     </HomeLayout>
   )
 }

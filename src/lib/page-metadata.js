@@ -194,32 +194,32 @@ const PLAY_WITH_A_PRO_METADATA = {
   en: {
     title: 'Play With a Pro - Private Golf Days in Mallorca',
     description:
-      'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From EUR350 per person plus green fee.',
+      'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person plus green fee.',
   },
   de: {
     title: 'Mit einem Profi spielen - Private Golftage auf Mallorca',
     description:
-      'Eine private Golfrunde auf Mallorca mit UK PGA Advanced Professional Andy Griffiths. Coaching auf dem Platz, voller Tag arrangiert. Ab EUR350 pro Person.',
+      'Eine private Golfrunde auf Mallorca mit UK PGA Advanced Professional Andy Griffiths. Coaching auf dem Platz, voller Tag arrangiert. Ab €350 pro Person.',
   },
   es: {
     title: 'Jugar con un Profesional - Dias de Golf Privados en Mallorca',
     description:
-      'Una vuelta de golf privada en Mallorca junto al UK PGA Advanced Professional Andy Griffiths. Coaching en campo, dia completo organizado. Desde EUR350 por persona.',
+      'Una vuelta de golf privada en Mallorca junto al UK PGA Advanced Professional Andy Griffiths. Coaching en campo, dia completo organizado. Desde €350 por persona.',
   },
   fr: {
     title: 'Jouer avec un Pro - Journees Golf Privees a Majorque',
     description:
-      'Une partie de golf privee a Majorque aux cotes du UK PGA Advanced Professional Andy Griffiths. Coaching sur parcours, journee complete organisee. A partir de EUR350 par personne.',
+      'Une partie de golf privee a Majorque aux cotes du UK PGA Advanced Professional Andy Griffiths. Coaching sur parcours, journee complete organisee. A partir de €350 par personne.',
   },
   nl: {
     title: 'Spelen met een Pro - Privegolfdagen op Mallorca',
     description:
-      'Een prive golfronde op Mallorca, gespeeld naast UK PGA Advanced Professional Andy Griffiths. Coaching op de baan, volle dag geregeld. Vanaf EUR350 per persoon.',
+      'Een prive golfronde op Mallorca, gespeeld naast UK PGA Advanced Professional Andy Griffiths. Coaching op de baan, volle dag geregeld. Vanaf €350 per persoon.',
   },
   sv: {
     title: 'Spela med ett Proffs - Privata Golfdagar pa Mallorca',
     description:
-      'En privat golfrunda pa Mallorca med UK PGA Advanced Professional Andy Griffiths. Coaching pa banan, hel dag arrangerad. Fran EUR350 per person.',
+      'En privat golfrunda pa Mallorca med UK PGA Advanced Professional Andy Griffiths. Coaching pa banan, hel dag arrangerad. Fran €350 per person.',
   },
   zh: {
     title: 'Private Golf Days in Mallorca - Play With a Pro',

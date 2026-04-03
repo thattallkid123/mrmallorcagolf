@@ -1,4 +1,4 @@
-export const SITE_ORIGIN = 'https://mrmallorcagolf.com'
+export const SITE_ORIGIN = 'https://www.mrmallorcagolf.com'
 
 export const ALL_LOCALES = ['en', 'es', 'de', 'fr', 'nl', 'sv', 'zh']
 export const NAV_LOCALES = ['en', 'es', 'de', 'fr', 'zh']
@@ -101,7 +101,7 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
 
   const slug = getGuideSlug(basePath)
   if (isLiveGuideSlug(slug)) return true
-  if (isDraftGuideSlug(slug)) return locale === 'en'
+  if (isDraftGuideSlug(slug)) return ALL_LOCALES.includes(locale)
 
   return false
 }

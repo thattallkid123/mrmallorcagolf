@@ -1,33 +1,9 @@
-import Link from 'next/link'
-import PageLayout from '../../../components/PageLayout'
-import RevealObserver from '../../../components/RevealObserver'
-import GolfCoursesClient from '../../../app/golf-courses/GolfCoursesClient'
 import { buildGolfCoursesMetadata } from '../../../lib/page-metadata'
+import { getGolfCoursesContent } from '../../../lib/golf-courses-content'
+import GolfCoursesView from '../../golf-courses/GolfCoursesView'
 
 export const metadata = buildGolfCoursesMetadata('es')
 
-export default function GolfCourses_ES() {
-  return (
-    <PageLayout lang="es">
-      <RevealObserver />
-      <header className="page-hero" style={{
-  backgroundImage: 'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.jpg)',
-  backgroundSize: 'auto, cover',
-  backgroundPosition: 'center, center 40%',
-}}>
-        <div className="page-hero__inner">
-          <p className="breadcrumb"><Link href="/es">Inicio</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Campos de golf en Mallorca</span></p>
-          <h1>Golf en Mallorca 2026 —<br />La Guia del Experto</h1>
-          <div className="page-hero__meta">
-            <span className="page-hero__tag">22 campos</span>
-            <span className="page-hero__tag">Green Fees 2026</span>
-            <span className="page-hero__tag page-hero__tag--gold">★ Resenas de experto de primera mano</span>
-            <span className="page-hero__tag">Profesional PGA</span>
-          </div>
-        </div>
-      </header>
-      <GolfCoursesClient lang="es" />
-    </PageLayout>
-  )
+export default function GolfCourses() {
+  return <GolfCoursesView locale="es" content={getGolfCoursesContent('es')} />
 }
-
