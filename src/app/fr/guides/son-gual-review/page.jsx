@@ -1,8 +1,8 @@
 import { buildGuidePostMetadata } from '../../../../lib/page-metadata'
-import { getLocalizedGuidePostContent } from '../../../../lib/guide-post-content-localized'
+import { getGuidePostContent } from '../../../../lib/guide-post-content'
 import GuidePostView from '../../../guides/GuidePostView'
 
-const content = getLocalizedGuidePostContent('son-gual-review', 'fr')
+const content = getGuidePostContent('son-gual-review', 'fr')
 
 export const metadata = buildGuidePostMetadata({
   slug: 'son-gual-review',
