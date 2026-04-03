@@ -14,7 +14,7 @@ function normalizeContainerStyle(style, fallback) {
   const merged = style || fallback
   if (!merged) return merged
   if (merged.aspectRatio === '21/9' || merged.aspectRatio === '16/9') {
-    return { ...merged, aspectRatio: '15/8' }
+    return { ...merged, aspectRatio: '3/2' }
   }
   return merged
 }
@@ -35,11 +35,11 @@ function renderBlock(block, index, locale) {
   if (block.type === 'image') {
     const defaultStyle =
       block.fit === 'contain'
-        ? { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8', background: '#f5f5f5' }
-        : { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }
+        ? { borderRadius: 2, aspectRatio: '3/2', background: '#f5f5f5' }
+        : { borderRadius: 2, aspectRatio: '3/2' }
 
     return (
-      <div key={`${index}-${block.src}`}>
+      <figure key={`${index}-${block.src}`} className={`post-media${block.caption ? '' : ' post-media--plain'}`}>
         <FillImageFrame
           src={block.src}
           alt={block.alt}
@@ -52,18 +52,11 @@ function renderBlock(block, index, locale) {
           }
         />
         {block.caption ? (
-          <p
-            style={{
-              fontSize: block.captionSize || '0.85rem',
-              fontStyle: 'italic',
-              color: '#666',
-              margin: block.captionMargin || '0.25rem 0 0 0',
-            }}
-          >
+          <figcaption className="post-media__caption" style={{ fontSize: block.captionSize || undefined, margin: block.captionMargin || undefined }}>
             {block.caption}
-          </p>
+          </figcaption>
         ) : null}
-      </div>
+      </figure>
     )
   }
 
@@ -106,7 +99,7 @@ function renderBlock(block, index, locale) {
     return (
       <div key={`split-${index}`} className="post-split-media">
         {block.items.map((item) => (
-          <div key={item.src}>
+          <figure key={item.src} className={`post-media post-media--split${item.caption ? '' : ' post-media--plain'}`}>
             <FillImageFrame
               src={item.src}
               alt={item.alt}
@@ -114,11 +107,11 @@ function renderBlock(block, index, locale) {
               imageStyle={item.imageStyle || { objectPosition: 'center 24%' }}
             />
             {item.caption ? (
-              <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>
+              <figcaption className="post-media__caption">
                 {item.caption}
-              </p>
+              </figcaption>
             ) : null}
-          </div>
+          </figure>
         ))}
       </div>
     )

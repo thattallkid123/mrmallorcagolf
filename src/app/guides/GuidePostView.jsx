@@ -7,7 +7,7 @@ function normalizeContainerStyle(style, fallback) {
   const merged = style || fallback
   if (!merged) return merged
   if (merged.aspectRatio === '21/9' || merged.aspectRatio === '16/9') {
-    return { ...merged, aspectRatio: '15/8' }
+    return { ...merged, aspectRatio: '3/2' }
   }
   return merged
 }
@@ -15,14 +15,16 @@ function normalizeContainerStyle(style, fallback) {
 function renderBlock(block, index) {
   if (block.type === 'image') {
     return (
-      <FillImageFrame
-        key={`${block.src}-${index}`}
-        src={block.src}
-        alt={block.alt}
-        priority={block.priority}
-        containerStyle={normalizeContainerStyle(block.containerStyle, { margin: '2rem 0', borderRadius: 2, aspectRatio: '15/8' })}
-        imageStyle={{ objectPosition: 'center 24%', ...block.imageStyle }}
-      />
+      <figure key={`${block.src}-${index}`} className={`post-media${block.caption ? '' : ' post-media--plain'}`}>
+        <FillImageFrame
+          src={block.src}
+          alt={block.alt}
+          priority={block.priority}
+          containerStyle={normalizeContainerStyle(block.containerStyle, { borderRadius: 2, aspectRatio: '3/2' })}
+          imageStyle={{ objectPosition: 'center 24%', ...block.imageStyle }}
+        />
+        {block.caption ? <figcaption className="post-media__caption">{block.caption}</figcaption> : null}
+      </figure>
     )
   }
 
