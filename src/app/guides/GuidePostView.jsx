@@ -11,8 +11,8 @@ function renderBlock(block, index) {
         src={block.src}
         alt={block.alt}
         priority={block.priority}
-        containerStyle={block.containerStyle || { margin: '2rem 0', borderRadius: 2, aspectRatio: '16/9' }}
-        imageStyle={block.imageStyle}
+        containerStyle={block.containerStyle || { margin: '2rem 0', borderRadius: 2, aspectRatio: '15/8' }}
+        imageStyle={{ objectPosition: 'center 24%', ...block.imageStyle }}
       />
     )
   }

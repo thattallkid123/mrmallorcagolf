@@ -26,8 +26,8 @@ function renderBlock(block, index, locale) {
   if (block.type === 'image') {
     const defaultStyle =
       block.fit === 'contain'
-        ? { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '16/9', background: '#f5f5f5' }
-        : { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '16/9' }
+        ? { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8', background: '#f5f5f5' }
+        : { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }
 
     return (
       <div key={`${index}-${block.src}`}>
@@ -39,7 +39,7 @@ function renderBlock(block, index, locale) {
           imageStyle={
             block.fit === 'contain'
               ? { objectFit: 'contain', backgroundColor: '#f5f5f5' }
-              : block.imageStyle
+              : { objectPosition: 'center 24%', ...block.imageStyle }
           }
         />
         {block.caption ? (
@@ -102,6 +102,7 @@ function renderBlock(block, index, locale) {
               src={item.src}
               alt={item.alt}
               containerStyle={{ position: 'relative', width: '100%', aspectRatio: item.aspectRatio || '4/3' }}
+              imageStyle={item.imageStyle || { objectPosition: 'center 24%' }}
             />
             {item.caption ? (
               <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#666', margin: '0.25rem 0 0 0' }}>

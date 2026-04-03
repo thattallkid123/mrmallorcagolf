@@ -106,7 +106,7 @@ export default function CoachingView({ locale = 'en', content }) {
             alt={content.imageAlt}
             sizes="100vw"
             containerStyle={{ height: '520px', display: 'block' }}
-            imageStyle={{ objectPosition: 'center 8%' }}
+            imageStyle={{ objectPosition: 'center 3%' }}
           />
         </div>
 

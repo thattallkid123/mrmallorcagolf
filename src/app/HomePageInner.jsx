@@ -189,7 +189,7 @@ export default function HomePageInner({ locale = 'en' }) {
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
           {home.courses.items.map((course) => (
             <Link key={course.name} href={localizePath(course.href, locale)} className={`course-card ${course.cls}`}>
-              <div className="course-card__bg" style={{ backgroundImage: `url(${course.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+              <div className="course-card__bg" style={{ backgroundImage: `url(${course.img})`, backgroundSize: 'cover', backgroundPosition: 'center 28%' }}></div>
               <div className="course-card__overlay" style={{ background: 'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)' }}></div>
               {course.badge && <span className="course-card__badge">{course.badge}</span>}
               <div className="course-card__content">

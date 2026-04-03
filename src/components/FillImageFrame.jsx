@@ -24,6 +24,7 @@ export default function FillImageFrame({
         sizes={sizes}
         style={{
           objectFit: 'cover',
+          objectPosition: 'center 24%',
           ...imageStyle,
         }}
       />

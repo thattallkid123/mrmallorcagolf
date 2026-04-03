@@ -78,7 +78,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
                   width: '100%',
                   height: '420px',
                   objectFit: 'cover',
-                  objectPosition: 'center top',
+                  objectPosition: 'center 12%',
                   display: 'block',
                 }}
               />
