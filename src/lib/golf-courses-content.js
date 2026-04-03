@@ -4,11 +4,11 @@ export const GOLF_COURSES_CONTENT = {
     hero: {
       breadcrumbHome: 'Home',
       breadcrumbCurrent: 'Golf Courses in Mallorca',
-      title: "Golf in Mallorca 2026 - An Insider's Guide",
+      title: 'Golf Courses in Mallorca: My 2026 Guide',
       tags: [
         '22 Courses Covered',
         'Green Fees Updated 2026',
-        'Expert First-Hand Reviews',
+        'Played and Researched Properly',
         'PGA Professional',
       ],
     },
@@ -49,13 +49,13 @@ export const GOLF_COURSES_CONTENT = {
       yourGuide: 'Your guide',
       playWithAndy: 'Play with Andy',
       credentials:
-        'UK PGA Advanced Professional · Trackman Master · TPI Level 3 · 11 years coaching in Shanghai · Based in Mallorca since 2025',
+        'UK PGA Advanced Professional · Trackman Master Certified · TPI Level 3 · 11 years in Shanghai · Based in Mallorca since March 2025',
       intro1:
-        'Mallorca has more outstanding golf than most visitors realise. Twenty-two courses, several of genuine European Tour standard, in conditions that stay immaculate through winter.',
+        'Mallorca has more good golf than most visitors realise. There are 22 courses on the island, several of them good enough to stand up against far better-known golfing destinations.',
       intro2:
-        "I'm working my way through every course on the island — playing them, reviewing them honestly. Below is what I know so far.",
+        "I'm working my way through every course on the island, playing them and reviewing them honestly. Below is what I know so far.",
       sidebarH3: 'Want to play one of these courses with a UK PGA professional alongside you?',
-      sidebarP: 'Private round, everything arranged. Son Gual and Alcanada are the primary venues.',
+      sidebarP: 'Private day, everything arranged and a course chosen for what would be best for you.',
       sidebarBtn: 'Get in touch →',
       quickPicksTitle: 'Quick picks',
       quickPicks: [
@@ -68,7 +68,7 @@ export const GOLF_COURSES_CONTENT = {
         'Best East coast: Pula or Canyamel',
       ],
       ctaEyebrow: 'Want to play one of these?',
-      ctaH2: 'Private round, everything arranged, UK PGA professional throughout.',
+      ctaH2: 'Private golf day, with me alongside you from the first tee onwards.',
       ctaP:
         "Tell me which course interests you, your dates, and your handicap. I'll come back with a recommendation within 24 hours.",
       seeExperiences: 'See the Experiences →',
@@ -77,9 +77,9 @@ export const GOLF_COURSES_CONTENT = {
       geoEyebrow: 'Where the courses sit',
       geoH2: 'Mallorca has more outstanding golf than most visitors realise.',
       geoP1:
-        "Twenty-two courses ranging from genuine European Tour venues to quieter, less-visited gems. Green fees from €20 to over €200. I'm a UK PGA Advanced Professional based on the island, working my way through every course — all reviews are well-researched, with my own personal notes for the courses I've played.",
+        "There are 22 courses here, from proper DP World Tour venues to quieter places most visitors never hear about. Green fees run from around €20 to well over €200. I'm a UK PGA Advanced Professional based on the island, and I'm working my way through every course with proper research behind the ones I haven't yet played myself.",
       geoP2:
-        'Best time to play: October-November and February-April. The island plays year-round — in January, when courses in much of the rest of Europe are unplayable, the fairways here are immaculate.',
+        'Best time to play: October-November and February-April. The island works year-round. In January, when plenty of courses elsewhere in Europe are shut or soft, the fairways here are still in excellent shape.',
       geoRegions: [
         {
           region: 'Palma',
@@ -109,11 +109,11 @@ export const GOLF_COURSES_CONTENT = {
     hero: {
       breadcrumbHome: 'Startseite',
       breadcrumbCurrent: 'Golfplaetze auf Mallorca',
-      title: 'Golf auf Mallorca 2026 - Ein Insiderguide',
+      title: 'Golfplaetze auf Mallorca: Mein Guide fuer 2026',
       tags: [
         '22 Plaetze abgedeckt',
         'Green Fees aktualisiert 2026',
-        'Expertenbewertungen aus erster Hand',
+        'Gespielt und ordentlich recherchiert',
         'PGA Professional',
       ],
     },
@@ -123,11 +123,11 @@ export const GOLF_COURSES_CONTENT = {
     hero: {
       breadcrumbHome: 'Inicio',
       breadcrumbCurrent: 'Campos de golf en Mallorca',
-      title: 'Golf en Mallorca 2026 - La Guia del Experto',
+      title: 'Campos de golf en Mallorca: mi guia 2026',
       tags: [
         '22 campos',
         'Green Fees 2026',
-        'Resenas de experto de primera mano',
+        'Jugados e investigados como es debido',
         'Profesional PGA',
       ],
     },
@@ -137,11 +137,11 @@ export const GOLF_COURSES_CONTENT = {
     hero: {
       breadcrumbHome: 'Accueil',
       breadcrumbCurrent: 'Parcours de Golf a Majorque',
-      title: 'Golf a Majorque 2026 - Un Guide Initie',
+      title: 'Parcours de golf a Majorque : mon guide 2026',
       tags: [
         '22 Parcours Couverts',
         'Green Fees Actualises 2026',
-        "Avis d'Expert Direct",
+        'Joues et recherches serieusement',
         'Professionnel PGA',
       ],
     },
@@ -151,11 +151,11 @@ export const GOLF_COURSES_CONTENT = {
     hero: {
       breadcrumbHome: 'Home',
       breadcrumbCurrent: 'Golfbanen op Mallorca',
-      title: 'Golf op Mallorca 2026 - Een Insidergids',
+      title: 'Golfbanen op Mallorca: mijn gids voor 2026',
       tags: [
         '22 Banen',
         'Greenfees 2026',
-        'Expertbeoordelingen uit de eerste hand',
+        'Gespeeld en degelijk onderzocht',
         'PGA Professional',
       ],
     },
@@ -165,11 +165,11 @@ export const GOLF_COURSES_CONTENT = {
     hero: {
       breadcrumbHome: 'Hem',
       breadcrumbCurrent: 'Golfbanor pa Mallorca',
-      title: 'Golf pa Mallorca 2026 - En Insiders Guide',
+      title: 'Golfbanor pa Mallorca: min guide for 2026',
       tags: [
         '22 Banor tackta',
         'Greenavgifter uppdaterade 2026',
-        'Expertrecensioner fran forsta hand',
+        'Spelade och ordentligt genomgangna',
         'PGA Professional',
       ],
     },
@@ -179,11 +179,11 @@ export const GOLF_COURSES_CONTENT = {
     hero: {
       breadcrumbHome: 'Shouye',
       breadcrumbCurrent: 'Mallorca Gaoerfu Qiu Chang',
-      title: 'Mallorca Golf 2026 - Insider Guide',
+      title: 'Mallorca qiuchang: wo de 2026 zhinan',
       tags: [
         '22 courses covered',
         'Green fees updated 2026',
-        'Expert first-hand reviews',
+        'Played and researched properly',
         'PGA Professional',
       ],
     },

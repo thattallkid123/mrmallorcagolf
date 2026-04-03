@@ -7,7 +7,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Golf costs in Mallorca 2026 - green fees, club hire, buggies, food. Complete breakdown from a PGA professional who plays here most weeks.',
       canonical: 'https://mrmallorcagolf.com/guides/golf-cost-mallorca',
-      image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+      image: 'https://mrmallorcagolf.com/images/courses/palma-pitch-putt.jpg',
       imageAlt: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
     },
     meta: {
@@ -36,14 +36,14 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '€20-50. The Arabella Pitch & Putt in Palma is a proper short course at the lower end. Great for beginners and a low-pressure environment, conveniently close to the bigger siblings in the same complex.',
+          '€20-50. Palma Pitch & Putt is a proper short-course option at the lower end. Great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
       },
       {
         type: 'image',
-        src: '/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
-        alt: 'Arabella Pitch and Putt',
+        src: '/images/courses/palma-pitch-putt.jpg',
+        alt: 'Palma Pitch and Putt',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'Arabella Pitch & Putt - Perfect for beginners',
+        caption: 'Palma Pitch & Putt - one of the lower-cost ways to play',
       },
       { type: 'subheading', text: 'Mid-range 18-hole courses' },
       {
@@ -60,7 +60,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Many courses have dynamic pricing, so if you are looking to get a tee time last minute at a busy course, you'll be paying more for it. Plan early, set your priorities and save a little bit of cash. Additionally, looking on club websites for Black Friday, Christmas and other promotional deals is well worth doing. Many courses partner up to offer discounts on multiple rounds and more. You can frequently save 30-40% if you do this right.",
+          "Many courses have dynamic pricing, so if you are looking to get a tee-time last minute, at a busy course, you'll be paying more for it! Plan early, set your priorities and save a little bit of cash. Looking on club websites for Black Friday, Christmas and other promotional deals is well worth doing. Many courses partner up to offer discounts on multiple rounds and more. You can frequently save 30-40% if you do this right.",
       },
       {
         type: 'image',
@@ -89,7 +89,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Specialist hire companies deliver to your hotel, airport, or course. Budget sets from around €25 per day; current-season premium options from €55 for 2 days and then discount kicks in for longer trips and around €140 for 10 days. Weekly rates save 20-30%. Book at least a week in advance for best availability of the right clubs for you, and early booking discounts.',
+          'Specialist hire companies deliver to your hotel, airport, or course. Budget sets from around €25 per day; current-season premium options from €55 for 2 days and then discount kicks in for longer trips and around €140 for 10 days. Weekly rates save 20-30%. Book at least a week in advance for the best availability, the right clubs for you, and early-booking discounts. If club hire matters to your trip, read the full club hire guide as well because the companies, pricing bands, and delivery setups vary more than most people expect.',
       },
       { type: 'heading', text: 'Buggies and Trolleys' },
       {
@@ -100,7 +100,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'At hillier courses like Bendinat, Andratx or Son Vida, a buggy earns its cost. At the flatter courses (Son Antem, Maioris, Santa Ponsa and more), a trolley is fine.',
+          'At hillier courses like Bendinat, Andratx or Son Vida, a buggy earns its cost. At the flatter courses (Son Antem, Maioris, Santa Ponsa and more), a trolley can be fine if you fancy the exercise.',
       },
       {
         type: 'image',
@@ -113,7 +113,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "One consistent surprise for visitors: the food is genuinely good. Son Gual's restaurant has views across the Bay of Palma that justify a long lunch. Alcanada's terrace view is one of the best places on the island after a round. Great food options at Andratx and Pula. Budget €20-40 per person.",
+          "One consistent surprise for visitors: the food is genuinely good. Son Gual's restaurant has views across the Bay of Palma that justify a long lunch. Alcanada's terrace is one of the best places on the island after a round. Great food options at Andratx and Pula too. Budget €20-40 per person.",
       },
       { type: 'heading', text: 'Sample Full-Day Costs' },
       {
@@ -167,7 +167,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "I moved to Mallorca in March 2025 and have been playing golf here every week since. Before that, eleven years in Shanghai, a city where golfers think nothing of spending €200 on a single lesson, where access to a course often means a membership costing more than most people's annual salary. Moving here felt like arriving somewhere that had quietly been one of Europe's best-kept golf secrets.",
+          "I moved to Mallorca in March 2025 and have been playing golf here every week since. Before that, eleven years in Shanghai, a city where golfers often think nothing of spending up to €500 on a single hour long lesson, where access to a course often means a membership costing more than most people's annual salary. Moving here felt like arriving somewhere that had quietly been one of Europe's best-kept golf secrets.",
       },
       {
         type: 'paragraph',
@@ -218,7 +218,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'pull',
         text:
-          "Son Gual and Alcanada are the two courses I'd play if I had one week on the island. The rest fills a second week.",
+          'With a week on the island, the quality runs deeper than most visitors expect.',
       },
       { type: 'heading', text: 'Getting Around' },
       {
@@ -230,8 +230,8 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'image',
         src: '/images/blog-trip-planning/Mallorca Car Hire.png',
         alt: 'Car hire in Mallorca',
-        fit: 'contain',
-        caption: 'Car hire essential for accessing the best courses',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        caption: 'A hire car is the simplest way to reach the best courses',
         captionSize: '0.9rem',
         captionMargin: '-0.5rem 0 0 0',
       },
@@ -239,13 +239,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Bring your own for three rounds or more. Hire for a mixed holiday with one or two rounds planned. See the club hire guide for recommendations on the best companies. There are some great options that deliver to your hotel or course and make life easier than lugging a travel bag through an airport and praying for no snapped shafts.',
+          'Bring your own for three rounds or more. Hire for a mixed holiday with one or two rounds planned. See the club hire guide for recommendations on the best companies, what they charge, and which setups are worth using. There are some great options that deliver to your hotel or course and make life easier than lugging a travel bag through an airport and praying for no snapped shafts.',
       },
       { type: 'heading', text: 'What Else to Do' },
       {
         type: 'paragraph',
         text:
-          'Old town Palma is genuinely beautiful. The northwest coast (Valldemossa, Deià, Sóller) is some of the most dramatic scenery in the Mediterranean. The northeast is quieter and wilder. The food - local seafood, island wine - is excellent.',
+          'Old town Palma is genuinely beautiful. The northwest coast (Valldemossa, Deià, and Sóller) is some of the most dramatic scenery on the island. The northeast is quieter and wilder. The food - local seafood and island wine - is excellent.',
       },
       {
         type: 'image',
@@ -312,7 +312,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Short answer: September-November and February-May. The conditions play better year-round than most people expect, and even in warmer months you can play early while winter is still very playable. The wrong month for one golfer is the right month for another.',
+          'Short answer: September-November and February-May. The conditions play better year-round than most people expect and even in warmer months you can play early and winter is still very playable. The wrong month for one golfer is the right month for another.',
       },
       {
         type: 'facts',
@@ -320,7 +320,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['300+', 'Days of sunshine per year'],
           ['12', 'Months playable'],
           ['Oct', 'Personal favourite month'],
-          ['20-30%', 'Fee reduction low season'],
+          ['20-30%', 'Fee reduction in low season'],
         ],
       },
       { type: 'heading', text: 'January-February' },
@@ -333,7 +333,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '16-20°C, courses recovering from the not-so-harsh winter, fewer crowds than summer. Green fees rising but not yet peak. Alcanada starts picking up with Rolex Challenge Tour preparation. My second-favourite window to explore new courses without the crowds and take some pictures and videos alongside it.',
+          '16-20°C, courses recovering from the not so harsh winter, fewer crowds than summer. Green fees rising but not yet peak. Alcanada starts picking up with the Rolex Challenge Tour preparation. My second-favourite window to explore new courses without the crowds and take some pictures and videos alongside it.',
       },
       {
         type: 'image',
@@ -346,13 +346,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Excellent golf weather - 20-26°C, courses in pristine condition, long evenings. Prices rise with the tourist season. You need to book tee times at the top courses well in advance. Get the sunrise or sunset tee times and it can be genuinely outstanding if you plan ahead.',
+          'Excellent golf weather - 20-26°C, courses in pristine condition, and long evenings. Prices rise with the tourist season. You need to book tee times at the top courses well in advance. Get the sunrise or sunset tee times and it can be genuinely outstanding if you book ahead.',
       },
       { type: 'heading', text: 'July-August' },
       {
         type: 'paragraph',
         text:
-          "Hot (30-38°C), busy, and expensive. Peak green fees. Early morning tee times (7-8am) are essential - playing after 11am in August is not much fun, though manageable in a buggy with good prep. Still playable, but not the window I'd choose for a dedicated golf trip.",
+          "Hot (30-38°C), busy, and expensive. Peak green fees. Early morning tee times (7-8am) are essential - playing after 11am in August is not so fun, but manageable in a buggy and good prep. Still playable, but not the window I'd choose for a dedicated golf trip.",
       },
       {
         type: 'pull',
@@ -363,7 +363,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'My favourite. Temperatures drop to a comfortable 22-26°C, post-summer courses are in excellent condition, green fees begin to fall, and the greens often get even faster. September is still busy; October noticeably quieter. Peak conditions, in between - the sweet spot.',
+          'My favourite! Temperatures drop a little to a comfortable 22-26°C, post-summer courses are in excellent condition, green fees beginning to fall and often the greens get even faster at this point too. September still busy; October noticeably quieter. Peak conditions, in between - the sweet spot.',
       },
       {
         type: 'paragraph',
@@ -381,13 +381,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "November is excellent and underrated. Quiet, good value, courses playing well and still a big percentage of blue-sky days, even if you might need a jumper. December is variable but often better than you'd expect. Christmas week is surprisingly busy with northern Europeans fleeing winter and wanting some sun.",
+          "November is excellent and underrated. Quiet, good value, courses playing well and still a big percentage of blue sky days, even if you might need to wear a jumper too. December is variable but often better than you would expect. Christmas week is surprisingly busy with northern Europeans fleeing winter and wanting some sun.",
       },
       { type: 'heading', text: 'The Verdict' },
       {
         type: 'paragraph',
         text:
-          "October, November, March, and April are the professional's recommendation. Best combination of course conditions, weather, value, and pace of play. If you want to avoid crowds entirely and don't mind cooler mornings, January-February is well worth considering.",
+          "October, November, March, and April are my recommendations. Best combination of course conditions, weather, value, and pace of play. If you want to avoid crowds entirely and don't mind cooler mornings, January-February is well worth considering.",
       },
       {
         type: 'cta',
@@ -403,7 +403,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'The best golf courses in Mallorca ranked and reviewed by a PGA professional based on the island. Son Gual, Alcanada, Son Muntaner, and more - honest first-hand takes.',
       canonical: 'https://mrmallorcagolf.com/guides/best-golf-courses-mallorca',
-      image: 'https://mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.jpg',
+      image: 'https://mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
       imageAlt: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
     },
     meta: {
@@ -413,7 +413,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       updated: 'March 2026',
       title: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
       intro:
-        "Mallorca has more outstanding golf than most visitors realise. Twenty-two courses, several of genuine European Tour standard. Here's what I know from playing them.",
+          "Mallorca has more outstanding golf than most visitors realise. Twenty-two courses, several of them capable of hosting European Tour events. Here's what I know from playing them.",
       related: [
         { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
         { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
@@ -425,7 +425,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Mallorca - or Majorca if you grew up spelling it that way - is a much better golf destination than most people realise. I moved here from Shanghai in March 2025, where I had spent eleven years coaching in a city of 27 million people with not enough golf courses between them. Arriving on an island with 22 courses, many hosting international competitions, in conditions that stay quality even through the winter, felt like discovering a secret.',
+          'Mallorca - or Majorca if you grew up spelling it that way - is a much better golf destination than most people realise. I moved here from Shanghai in March 2025, where I had spent eleven years coaching in a city of 27 million people with not enough golf courses between them. Mostly built to championship standards as there was no point having anything there that was not the best. Arriving on an island with 22 courses, many hosting international competitions, in conditions that stay quality even through the winter, felt like discovering a secret.',
       },
       {
         type: 'paragraph',
@@ -436,7 +436,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'subheading', text: 'For a Serious Championship Round: Son Gual' },
       {
         type: 'image',
-        src: '/images/blog-best-golf-courses/Son Gual.jpg',
+        src: '/images/blog-best-golf-courses/Son Gual.webp',
         alt: 'Son Gual Golf Course',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Son Gual - Championship Test Course',
@@ -444,12 +444,12 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "My most-played course on the island and the one I recommend most often for a proper test. Thomas Himmel's design sits in its own wind ecosystem in the hills above Palma. The greens are fast, raised, and unforgiving. The bunkering is aggressive and the closing stretch is genuinely outstanding.",
+          "My most-played course on the island and the one I recommend most often for a proper test. Thomas Himmel's design sits in its own wind ecosystem in the hills above Palma - I've left my house, full of confidence, on a calm morning and arrived at the first tee to find it blowing hard and staying that way for the whole round. The greens are fast, raised, and unforgiving. The bunkering is aggressive and makes strategy and ball striking need to be top level, and the closing stretch is genuinely outstanding.",
       },
       {
         type: 'paragraph',
         text:
-          "Rafa Nadal's stated favourite course on the island. Barack Obama played here in November 2024. Green fees: from €115 in low season to €165 at peak. Handicap certificate required.",
+          'Rafa Nadal plays here regularly and has said it is his favourite course on the island. Barack Obama played here in November 2024 and enjoyed it so much he promised to return. Many top amateur and professional events are also held at this popular golf course.',
       },
       { type: 'subheading', text: 'For the Most Scenic Round: Alcanada' },
       {
@@ -462,7 +462,12 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Robert Trent Jones Jr. design in the north of the island, with a lighthouse visible from 16 of the 18 holes. Standing on the back tees on number 7 with the whole bay spread below you is one of those moments that reminds you why you play golf. The greens are severe, can get extremely fast, and the drive north from Palma is worth every minute.',
+          "Alcanada is the course I take people to when I want them to go home remembering one round in particular. It might be the most memorable day on the island. The lighthouse and the views on many of the holes help, but the course stands up on its own too.",
+      },
+      {
+        type: 'paragraph',
+        text:
+          "Standing on the elevated back tees is its own experience. You feel untouchable - so far from everything else that everyone below looks like a tiny dot. The lighthouse in front of you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.",
       },
       { type: 'subheading', text: 'For a DP World Tour Experience: Son Muntaner' },
       {
@@ -475,7 +480,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Named Best Golf Course in Spain at the 2025 World Golf Awards and well deserved. Hosted the Mallorca Golf Open and Ladies European Tour events. Wide fairways, plenty of hazards, technically demanding greens, fantastic conditioning, and a really good test of golf just five minutes from central Palma.',
+          'Named Best Golf Course in Spain at the 2025 World Golf Awards and well deserved. Hosted the Mallorca Golf Open and Ladies European Tour events. Wide fairways, but a lot of hazards and pine trees to guide you, technically demanding greens, fantastic conditioning and a really good test of golf just five minutes from central Palma.',
       },
       { type: 'subheading', text: 'For the Hardest Test: Golf de Andratx' },
       {
@@ -488,7 +493,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Widely considered one of the most difficult courses on the island. A championship layout in the southwest with breathtaking scenery and hazards on nearly every hole. The 6th is the longest par 5 in Spain at 609 metres. Bring extra balls.',
+          'Widely considered one of the most difficult courses on the island. A championship layout in the southwest with breathtaking scenery and hazards on near enough every hole. The 6th is the longest par 5 in the whole of Spain at 609 metres. Recommended for experienced players, and bring extra balls!',
       },
       { type: 'subheading', text: 'For the Most Beautiful Setting: Canyamel' },
       {
@@ -501,7 +506,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Set in the foothills of the Llevant Natural Park in the east, with sea views throughout. Worth the drive from Palma for the setting and a genuinely good course beyond the aesthetics.',
+          'Described by many as the most photographed course on the island. Set in the foothills of the Llevant Natural Park in the east, with sea views throughout. Worth the drive from Palma for the setting, and a genuinely good course beyond the aesthetics.',
       },
       { type: 'subheading', text: 'Also Worth Playing: Golf Santa Ponsa 1' },
       {
@@ -514,7 +519,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The only public course in the Santa Ponsa group, with genuine European Tour history. One of the longest courses on the island, with open fairways that reward an aggressive approach from the tee.',
+          'The only public course in the Santa Ponsa group, with genuine European Tour history - it hosted the 2021 European Tour Mallorca Golf Open and six European Tour events. One of the longest courses on the island, with open fairways that reward an aggressive approach from the tee and good opportunities to hit driver.',
       },
       { type: 'subheading', text: 'For Beginners or Mixed Groups: Son Quint or Son Antem East' },
       {
@@ -527,7 +532,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Son Quint is the most accessible course in the Arabella group - relatively flat, wide fairways, native planting, and a low intimidation factor. Son Antem East is similarly flat and forgiving but still interesting enough for better players.',
+          'Son Quint is the most accessible course in the Arabella group (four courses in one complex) - relatively flat, wide fairways, native planting and low intimidation factor. Set high up, it has great views over Palma. Tiger Woods and his son Charlie played here in July 2022 after The Open. Son Antem East in the south is similarly flat and forgiving but with a good amount of water, bunkers and trees to be interesting and with a hotel resort if you want to combine with accommodation.',
       },
       {
         type: 'facts',
@@ -542,18 +547,18 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Son Gual: Obama played in November 2024. Nadal plays regularly. Son Quint: Tiger Woods and Charlie played in July 2022. Pula: Federer and Nadal play together there. Son Vida: Seve Ballesteros won the European Tour event there in 1990. Santa Ponsa: hosted six European Tour events and plenty of great names.',
+          'Son Gual: Obama came and played in 2024. Son Quint (Arabella): Tiger Woods and his son Charlie played in July 2022, the week after The Open at St Andrews. Pula (east): Federer and Nadal play together when on the island and Nadal is there frequently. Son Vida: Seve Ballesteros won the European Tour event there in 1990. Santa Ponsa: hosted six European Tour events and all the big names of the time, including Spanish legends Seve Ballesteros and Jose Maria Olazabal alongside Ian Woosnam, Bernhard Langer and more.',
       },
       { type: 'heading', text: 'The Honest Summary' },
       {
         type: 'paragraph',
         text:
-          "Son Gual and Alcanada are the two courses I'd play if I had one week on the island. Son Muntaner for a DP World Tour experience. Canyamel for the scenery. Andratx for a serious test. Son Quint or Son Antem if you're a beginner or bringing someone new to the game.",
+          "Son Muntaner for a DP World Tour experience. Canyamel for the scenery. Andratx for a serious test. Son Quint or Son Antem if you're a beginner or bringing someone new to the game. As I keep exploring more, I am sure I will find more gems as the island has enough quality to fill a week of serious golf. Most visitors play one or two courses and miss a lot of what is available!",
       },
       {
         type: 'pull',
         text:
-          "The island has been one of Europe's best-kept golf secrets. I arrived from Shanghai and the conditions in January - when courses in England are closed - genuinely surprised me.",
+          "The island has been one of Europe's best-kept golf secrets. I arrived from Shanghai and the conditions in January, when courses in England are closed, genuinely surprised me.",
       },
       {
         type: 'cta',
@@ -590,12 +595,12 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Club hire is one of the most common questions I get from golfers planning a trip. Should I bring my clubs? Can I hire decent ones? Where from, and how much? Does the course have sets available?",
+          "Club hire is one of the most common themes of questions I get from golfers planning a trip. Should I bring my clubs? Can I hire decent ones? Where from, and how much? Does the course have sets available?",
       },
       {
         type: 'paragraph',
         text:
-          'The honest answer: yes, you can hire excellent clubs here. Course hire sets vary from good to questionable. For any course where quality and familiarity matters, a specialist company is worth using.',
+          'The honest answer: yes, you can hire excellent clubs here. Course hire sets vary from questionable to very good. For any course where quality and familiarity matters, a specialist club hire company is worth using.',
       },
       {
         type: 'paragraph',
@@ -606,19 +611,19 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "If you're playing three rounds or more on a dedicated golf trip, bring them. Airline fees are usually worth it for a proper trip, and there is a real advantage to playing with clubs you know.",
+          "If you're playing three rounds or more on a dedicated golf trip, think to bring them. Airline fees (typically £30-60 each way) are usually worth it for a proper trip, and there is a real advantage to playing with clubs you know, unless your clubs were hand-me-downs from two generations ago and then it is time for a new set!",
       },
       {
         type: 'paragraph',
         text:
-          "If you're on a mixed holiday with a few rounds planned, hiring makes more sense. The specialist companies here have great up-to-date equipment, and the cost often works out lower than checking clubs both ways.",
+          "If you're on a mixed holiday with a few rounds planned, hiring makes more sense. The specialist companies here have great and up-to-date equipment, and the cost works out lower than checking clubs both ways, plus reduces a lot of the stress as they are experienced at making your life easy.",
       },
       { type: 'heading', text: 'The Main Hire Companies' },
       { type: 'subheading', text: 'Club Rentals Mallorca' },
       {
         type: 'paragraph',
         text:
-          'Personal delivery and collection to hotels, courses, and villas all over the island. Current season Callaway Rogue ST Max and TaylorMade Qi4D options, plus Kalea for ladies. Premium end of the market, lots of strong Google reviews, and east-coast golfers can even get a free golf shuttle service.',
+          'Personal delivery and collection to hotels, courses, and villas all over the island. Current season models include right and left-handed TaylorMade Qi4D, Callaway Rogue ST Max and TaylorMade Kalea for ladies. Graphite regular-flex sets start from €55 for 2 days and drop heavily for longer hires, while steel regular or stiff sets start from €70 for 2 days. Prices include delivery, collection, and advice on what is best for you. Premium end of the market, and east-coast golfers can even use a free golf shuttle service from hotel to course and back again for groups of up to 8.',
       },
       {
         type: 'image',
@@ -631,7 +636,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Callaway Rogue and TaylorMade Qi4D options, plus some previous-season sets at lower prices. Good all-rounder with airport, hotel, and course delivery possible and a growing list of happy customer reviews.',
+          'Callaway Rogue and TaylorMade Qi4D options as well as some previous-season sets at a lower price. You can add tees, balls and the little extras too, so you are properly set. A 2-day TaylorMade Qi4D rental runs around €62, with airport, hotel, and course delivery possible, and longer trips drop to around €142 for 10 days. A great all-rounder with a growing amount of very happy customers in their Google reviews.',
       },
       {
         type: 'image',
@@ -644,7 +649,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Different brands, plenty of budget options, and shaft flexes better suited to the senior or slower-swinging golfer. Airport pickup and drop-off possible, and some sets can be cheaper if you book early.',
+          'Some different brands are available with plenty of budget options and shaft flexes more suitable for the senior or slower-swinging golfer. Two-day rentals range from €63 for Cobra Fly XL up to €115 for the XXIO 2026 models. For 10 days, the same sets come in around €87 and €209 if you book online and use their online discount. Airport pickup and drop-off are possible, and if you book early some of the sets can be even cheaper.',
       },
       {
         type: 'image',
@@ -657,18 +662,18 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Flexible cancellation and easy online booking. Pricing works particularly well for longer weekly hires, with cheaper models available if you are trying to keep costs down.',
+          'Flexible cancellation and easy online booking. Pricing goes per week, so it can work particularly well for longer hires. The Callaway Quantum Max 2026 model is around €100 for 2 days but only about €120 for 10 days, while cheaper models are available if you are trying to keep costs down.',
       },
       {
         type: 'pull',
         text:
-          "For many courses, the real choice is current-season equipment from a specialist company versus whatever's sitting in the rack at the pro shop. The course clubs vary more than people expect.",
+          "For many courses, you need to weigh up hiring current-season equipment from a specialist company rather than using whatever is in the rack at the pro shop. In many cases the clubs at the course are also current-season stock, but this varies and needs to be confirmed.",
       },
       { type: 'heading', text: 'Course Hire Sets' },
       {
         type: 'paragraph',
         text:
-          "Most courses have hire sets at the pro shop - typically €35-50. Fine for a mid-range course on a casual day. Decent options if you don't want to arrange delivery, but often less choice and less certainty about getting the right setup for you.",
+          "Most courses have hire sets at the pro shop - typically €35-50. Fine for a mid-range course on a casual day. Different courses have different associations but expect Callaway, Titleist, TaylorMade and Vice Golf. Lots of decent options if you do not want to arrange delivery, but often less choice and less certainty about getting the absolute right setup for you, so early planning is a necessity.",
       },
       { type: 'heading', text: 'Money-Saving Tips' },
       {
@@ -676,7 +681,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         items: [
           { label: 'Book 7+ days in advance:', text: '10-20% discount at most companies.' },
           { label: 'Weekly rate:', text: 'saves 20-30% if playing 5+ days.' },
-          { label: 'Course pickup:', text: 'free at most companies if timing works.' },
+          { label: 'Course pickup:', text: 'free at most companies if timing works, so arrange it and save yourself a headache.' },
           { label: 'Group discount:', text: 'ask for parties of 4 or more.' },
         ],
       },
@@ -736,13 +741,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '300 days of sunshine. In January, when courses in much of Europe are closed or unplayable, the fairways here are immaculate. The off-season course conditions were the first thing that surprised me.',
+          '300 days of sunshine. In January, when courses in much of Europe are closed or unplayable, the fairways here are immaculate. I moved from Shanghai, but grew up in the UK, and the off-season course conditions were the first thing that surprised me.',
       },
       { type: 'heading', text: '22 Courses on a Relatively Small Island' },
       {
         type: 'paragraph',
         text:
-          'Coming from Shanghai - 27 million people with just 12 courses - the density of quality golf within a maximum one-hour drive here is remarkable. A week on the island can include four or five genuinely different rounds. Southwest, east coast, north, central Palma - each area has its own character.',
+          'Coming from Shanghai - 27 million people with just 12 courses - the density of quality golf within a maximum one-hour drive here is remarkable. A week on the island can include four or five genuinely different, genuinely excellent rounds. Southwest, east coast, north, central Palma: each area has its own character and not just a samey resort track.',
       },
       {
         type: 'facts',
@@ -758,13 +763,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Playable, but peak pricing and peak temperatures. Not ideal for a dedicated golf trip. Early morning tee times are needed, though the sea breeze often helps.',
+          'Playable, but peak pricing and peak temperatures. Not ideal for a dedicated golf trip. Early morning tee times are needed but with a sea breeze often it is not that bad!',
       },
       { type: 'subheading', text: 'The east coast courses require a drive' },
       {
         type: 'paragraph',
         text:
-          'Pula, Canyamel, Capdepera - some of the most beautiful courses - are 55-65km from Palma. Factor in travel time and consider basing yourself in the east for a night and ticking off a few together.',
+          'Pula, Canyamel, Capdepera - some of the most beautiful courses - are 55-65km from Palma. Factor in travel time and consider basing yourself in the east for a night and tick off a few.',
       },
       {
         type: 'image',
@@ -782,26 +787,26 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "One thing visitors often underestimate: Mallorca is an exceptional island beyond the golf. The courses are the anchor, but the days between rounds - or the afternoon after an early finish - are what make the trip.",
+          "One thing visitors often underestimate: Mallorca is an exceptional island beyond the golf which is why so many celebrities, sports stars and more call home here or visit for holidays. The courses are the anchor, but the days between rounds - or the afternoon after an early finish - are what makes the trip.",
       },
       {
         type: 'paragraph',
         text:
-          "Old town Palma has a dining scene that punches well above its size. The northwest coast - Valldemossa, Deià, Sóller - is UNESCO World Heritage and looks like nothing else in the Mediterranean. The northeast coast and the drive to Alcanada take you through some of the best scenery on the island.",
+          "The clubhouse restaurants at many of the courses are more than an after-thought, but the island boasts many options from Michelin stars, local favourites and private chef dining experiences. Old town Palma has a dining scene that punches well above its size. The northwest coast - Valldemossa, Deià, Sóller - is UNESCO World Heritage and looks like nothing else in the Mediterranean. The northeast coast and the drive to Alcanada takes you through some of the best scenery on the island. The Ma-10 mountain road from Andratx to Pollença is one of the most dramatic drives in Europe. Build in at least one afternoon where you do not have a tee time.",
       },
       {
         type: 'image',
         src: '/images/blog-is-mallorca-good/Alcanada.jpg',
         alt: 'Alcanada and lighthouse',
-        fit: 'contain',
         caption: 'Alcanada - scenic northeast coast drive',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
       },
       {
         type: 'image',
         src: '/images/blog-is-mallorca-good/Soller.jpg',
         alt: 'Soller town',
-        fit: 'contain',
         caption: 'Sóller - UNESCO World Heritage setting on the northwest coast',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
       },
       { type: 'heading', text: 'Verdict' },
       {
@@ -850,7 +855,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "A week before, I send a short questionnaire. What's frustrating you at the moment? Range game or course game? What would make this day a success for you? Most people write three sentences. That's all I need. By the time we reach the first tee I already know what to watch for.",
+          "A week before, I send a short questionnaire. What's frustrating you at the moment? Range game or course game? What would make this day a success for you? Most people write three sentences. That's all I need, but more info really helps me get a good picture and by the time we reach the first tee I already know what to watch for.",
       },
       {
         type: 'paragraph',
@@ -872,7 +877,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The first hole at Son Gual is a par 5. There are bunkers positioned exactly where a slightly off-centre drive goes. The wind on the first tee can be coming from a completely different direction to the wind on the 7th - Son Gual has its own ecosystem and the conditions change from hole to hole. That is the first thing I point out. It is also the thing that surprises everyone who has not played here before.',
+          'The first hole at Son Gual is a par 4. There are bunkers positioned exactly where a slightly off-centre drive goes. The wind on the first tee can be coming from a completely different direction to the wind on the 7th - Son Gual has its own ecosystem and the conditions change from hole to hole. That is the first thing I point out. It is also the thing that surprises everyone who has not played here before.',
       },
       { type: 'heading', text: 'During the Round' },
       {
@@ -888,13 +893,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The closing stretch from the 15th is something I look forward to on every round here. Four holes that are genuinely outstanding golf. By the time we reach the 18th, most people are playing noticeably differently than they were on the first tee. That is the point.',
+          'The closing stretch from the 15th is something I look forward to on every round here. Four holes that make you hit proper shots. By the time we reach the 18th, most people are playing noticeably differently from how they were on the first tee. That is the point.',
       },
       { type: 'heading', text: 'After the Round' },
       {
         type: 'paragraph',
         text:
-          "The post-round debrief is over lunch on the terrace. The restaurant at Son Gual has views across the Bay of Palma that are worth the visit on their own. The food is good - local wine, Mallorcan cooking, unhurried service. We talk through what improved, what to work on, and what the day actually revealed about the game. It's the conversation that makes everything that happened on the course make sense.",
+          "The post-round debrief is over lunch on the terrace. The restaurant at Son Gual has views across the Bay of Palma that are worth the visit on their own. The food is good - local wine (everyone seems to be enjoying it, but as a tee-total, I couldn't tell you!), Mallorcan cooking, unhurried service. We talk through what improved, what to work on, and what the day actually revealed about the game. It's the conversation that makes everything that happened on the course make sense.",
       },
       {
         type: 'paragraph',
@@ -920,12 +925,69 @@ export const GUIDE_ARTICLE_CONTENT = {
 
 const GUIDE_ARTICLE_LOCALES = ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']
 
-export function getGuideArticleContent(slug, locale = 'en') {
-  if (locale !== 'en') {
-    return getLocalizedGuideArticleContent(slug, locale) || GUIDE_ARTICLE_CONTENT[slug] || null
+const LOCALIZED_TEXT_KEYS = new Set([
+  'title',
+  'description',
+  'imageAlt',
+  'badge',
+  'readTime',
+  'updated',
+  'intro',
+  'text',
+  'caption',
+  'alt',
+  'label',
+  'attribution',
+  'linkLabel',
+])
+
+function mergeLocalizedValue(baseValue, localizedValue, key) {
+  if (localizedValue == null) return baseValue
+
+  if (Array.isArray(baseValue) && Array.isArray(localizedValue)) {
+    if (key === 'related') return localizedValue
+    if (baseValue.some(Array.isArray)) return localizedValue
+    if (baseValue.every((item) => item == null || typeof item !== 'object')) return localizedValue
+
+    return baseValue.map((item, index) => mergeLocalizedValue(item, localizedValue[index], key))
   }
 
-  return GUIDE_ARTICLE_CONTENT[slug] || null
+  if (
+    baseValue &&
+    localizedValue &&
+    typeof baseValue === 'object' &&
+    typeof localizedValue === 'object' &&
+    !Array.isArray(baseValue) &&
+    !Array.isArray(localizedValue)
+  ) {
+    const merged = { ...baseValue }
+
+    for (const [childKey, childValue] of Object.entries(localizedValue)) {
+      if (childKey in baseValue) {
+        merged[childKey] = mergeLocalizedValue(baseValue[childKey], childValue, childKey)
+      } else if (LOCALIZED_TEXT_KEYS.has(childKey)) {
+        merged[childKey] = childValue
+      }
+    }
+
+    return merged
+  }
+
+  if (LOCALIZED_TEXT_KEYS.has(key)) return localizedValue
+
+  return baseValue
+}
+
+export function getGuideArticleContent(slug, locale = 'en') {
+  const baseContent = GUIDE_ARTICLE_CONTENT[slug] || null
+  if (!baseContent) return null
+
+  if (locale === 'en') return baseContent
+
+  const localizedContent = getLocalizedGuideArticleContent(slug, locale)
+  if (!localizedContent) return baseContent
+
+  return mergeLocalizedValue(baseContent, localizedContent)
 }
 
 export function buildGuideArticleMetadata(slug, locale = 'en') {

@@ -1,0 +1,91 @@
+Mr Mallorca Golf Translation QA Checklist
+
+Use this after each translated page is drafted.
+
+Pass / fail questions
+
+1. Does the page match the English structure exactly?
+- Same sections
+- Same image order
+- Same captions/pull quotes/fact boxes/CTAs
+
+2. Are all key facts preserved?
+- prices
+- dates
+- distances
+- course names
+- event names
+- player names
+- location names
+
+3. Does the translation sound like it was written by a golfer?
+- not a tourist board
+- not a luxury brochure
+- not a machine
+
+4. Does the tone feel premium but understated?
+- confident
+- specific
+- calm
+- not showy
+
+5. Are all golf terms natural in the target language?
+- club names
+- course terms
+- playing strategy language
+- score-related language
+
+6. Is the formatting natural in the target language?
+- currency
+- hyphenation
+- punctuation
+- date style
+- temperature style
+
+7. Are all place names correct and consistently rendered?
+- Mallorca
+- Palma
+- Son Gual
+- Alcanada
+- Son Muntaner
+- Santa Ponsa
+- Deià
+- Sóller
+- Pollença
+- Valldemossa
+
+8. Are there any obvious signs of bad machine translation?
+- literal wording
+- strange word order
+- English syntax in another language
+- overuse of generic adjectives
+- awkward repeated structures
+
+9. Are there any accidental English leftovers?
+- headings
+- fact boxes
+- captions
+- CTA labels
+- related article titles
+
+10. Would a local golfer be comfortable seeing this page published?
+- if not, rewrite the weak lines before approval
+
+Suggested workflow
+
+1. Finalize the English source page.
+2. Translate with the master prompt.
+3. Review with the language notes + second-pass review prompt.
+4. Compare against this checklist.
+5. Only then paste into the shared localized content file.
+
+Approval standard
+
+If a page reads as:
+- accurate
+- natural
+- golf-aware
+- premium
+- structurally identical to English
+
+then it is ready.

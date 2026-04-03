@@ -27,15 +27,27 @@ const IGNORE_DIRS = new Set([
 
 const IGNORE_FILES = new Set([
   path.join('scripts', 'check-text-corruption.js'),
+  'package-lock.json',
 ])
 
 const suspiciousPatterns = [
-  /Ã./g,
-  /â[€™œ€"¦¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿]/g,
-  /Â(?=\S)/g,
+  /Ãƒ./g,
+  /Ã¢[â‚¬â„¢Å“â‚¬"Â¦Â¡Â¢Â£Â¤Â¥Â¦Â§Â¨Â©ÂªÂ«Â¬Â®Â¯Â°Â±Â²Â³Â´ÂµÂ¶Â·Â¸Â¹ÂºÂ»Â¼Â½Â¾Â¿]/g,
+  /Ã‚(?=\S)/g,
+  /Ã¯Â¿Â½/g,
   /ï¿½/g,
-  /�/g,
+  /\?\?\?\?/g,
+  /[A-Za-zÀ-ÿ]\?[A-Za-zÀ-ÿ]/g,
+  /\?\d/g,
+  /\d\?(?=[A-Za-zÀ-ÿ])/g,
 ]
+
+function stripIgnoredSequences(text) {
+  return text
+    .replace(/\b[a-z]+:\/\/\S+/gi, ' ')
+    .replace(/\bmailto:\S+/gi, ' ')
+    .replace(/\bhttps?:\/\/\S+/gi, ' ')
+}
 
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -57,9 +69,10 @@ function walk(dir, files = []) {
 
 function collectMatches(text) {
   const hits = []
+  const sanitized = stripIgnoredSequences(text)
 
   for (const pattern of suspiciousPatterns) {
-    const matches = text.match(pattern)
+    const matches = sanitized.match(pattern)
     if (matches) hits.push(...matches)
   }
 

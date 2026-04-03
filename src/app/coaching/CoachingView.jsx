@@ -66,10 +66,18 @@ export default function CoachingView({ locale = 'en', content }) {
               <cite>- {content.range.quoteAttribution}</cite>
             </div>
           </div>
-          <div className="reveal">
-            <p className="eyebrow" style={{ marginBottom: '1.25rem' }}>{content.range.questionnaireEyebrow}</p>
+          <div
+            className="reveal"
+            style={{
+              background: 'var(--pine)',
+              color: 'rgba(255,255,255,.9)',
+              padding: '2rem 2rem 2.2rem',
+              border: '1px solid rgba(255,255,255,.08)',
+            }}
+          >
+            <p className="eyebrow" style={{ marginBottom: '1.25rem', color: 'rgba(255,255,255,.62)' }}>{content.range.questionnaireEyebrow}</p>
             {content.range.questionnaireParagraphs.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+              <p key={paragraph} style={{ color: 'rgba(255,255,255,.86)' }}>{paragraph}</p>
             ))}
             <Link
               href={joinHref(locale, '/contact')}
@@ -81,8 +89,8 @@ export default function CoachingView({ locale = 'en', content }) {
                 letterSpacing: '.18em',
                 textTransform: 'uppercase',
                 padding: '13px 30px',
-                background: 'var(--pine)',
-                color: '#fff',
+                background: 'var(--gold)',
+                color: 'var(--deep)',
                 textDecoration: 'none',
                 fontFamily: "'Jost',sans-serif",
               }}
@@ -98,7 +106,7 @@ export default function CoachingView({ locale = 'en', content }) {
             alt={content.imageAlt}
             sizes="100vw"
             containerStyle={{ height: '520px', display: 'block' }}
-            imageStyle={{ objectPosition: 'center 18%' }}
+            imageStyle={{ objectPosition: 'center 8%' }}
           />
         </div>
 

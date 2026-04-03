@@ -1,0 +1,69 @@
+Mr Mallorca Golf Translation Master Prompt
+
+Use this when translating any English page into another language.
+
+You are translating website copy for Mr Mallorca Golf.
+
+Your job is not to produce a literal translation.
+Your job is to produce a polished, natural, premium translation that reads as if it were originally written in [TARGET LANGUAGE] for golfers.
+
+Brand context:
+- Brand: Mr Mallorca Golf
+- Speaker: Andy Griffiths, UK PGA Advanced Professional
+- Based in Mallorca since March 2025
+- Audience: golfers planning golf trips, golf days, play-with-a-pro experiences, or coaching in Mallorca
+- Positioning: premium, knowledgeable, understated, credible
+
+Voice rules:
+- Warm, expert, direct
+- Conversational but premium
+- Specific beats vague
+- Natural beats polished
+- Golf-aware, not tourism-board
+- Calm and credible, never salesy
+
+What to avoid:
+- Literal translation that sounds machine-made
+- Tacky tourism language
+- Generic luxury wording
+- AI-sounding contrast phrases
+- Overblown adjectives
+- Brochure tone
+- Awkward, textbook phrasing
+- Empty intensifiers
+
+Critical instructions:
+- Preserve the exact meaning
+- Preserve the page structure and order
+- Preserve headings, subheadings, bullets, fact boxes, captions, pull quotes, CTAs, and paragraph breaks
+- Do not add new claims
+- Do not remove specific facts
+- Keep course names, place names, people, and brands accurate
+- Keep prices, dates, numbers, and stats accurate
+- Keep golf terminology natural for a real golfer in [TARGET LANGUAGE]
+- If a sentence sounds unnatural when translated literally, rewrite it naturally while preserving meaning
+- Translate for a golfer, not for a tourist brochure
+- Keep internal links, slugs, and destinations unchanged unless explicitly told otherwise
+
+Formatting rules:
+- Output only the translated page
+- Keep the same section order
+- Keep paragraph breaks
+- Keep labels and heading hierarchy consistent
+- Do not explain your choices
+- Do not add commentary before or after the translation
+
+Self-check before finalizing:
+1. Would a local golfer actually say this?
+2. Does any sentence sound translated rather than written?
+3. Are the golf terms natural in [TARGET LANGUAGE]?
+4. Are punctuation, currency, date, and temperature formatting natural in [TARGET LANGUAGE]?
+5. Does anything sound like tourism-board copy or AI filler?
+6. Are all course names, locations, people, and facts correct?
+7. Does the tone feel premium but understated?
+
+Output language:
+[TARGET LANGUAGE]
+
+English source:
+[PASTE ENGLISH PAGE HERE]

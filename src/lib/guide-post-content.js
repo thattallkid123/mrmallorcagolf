@@ -1,3 +1,5 @@
+import { getLocalizedGuidePostContent } from './guide-post-content-localized'
+
 export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
@@ -14,7 +16,7 @@ export const GUIDE_POST_CONTENT = {
         updated: 'March 2026',
         title: "Son Gual Golf Mallorca - A PGA Professional's Honest Review (2026)",
         intro:
-          'My most-played course on the island. The wind, the greens, the closing stretch - and why Obama and Nadal both keep coming back.',
+          'My most-played course on the island. The wind is fickle, the greens are quick, and the closing stretch is as good as anything in Mallorca.',
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
@@ -44,7 +46,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'The first time I played Son Gual, I was on the black tees, wind coming hard off the left, playing alongside a PGA Professional friend who plays and scores well. Camera rolling for a vlog, which adds its own pressure. I was genuinely a little nervous.',
+            'The first time I played Son Gual, I was on the black tees, wind coming hard off the left, playing alongside a PGA Professional friend who plays and scores well. The camera was rolling for a vlog too, which adds its own pressure. I was a little nervous.',
         },
         {
           type: 'paragraph',
@@ -62,10 +64,6 @@ export const GUIDE_POST_CONTENT = {
           type: 'paragraph',
           text:
             "Son Gual seems to live in its own ecosystem. I'll leave my house in the southwest of the island on a calm morning and arrive at the first tee to find it blowing properly - and it stays that way for four hours. Playing downwind is a pleasure. Into a headwind on a long par four that suddenly becomes a ridiculously long par four - that's a different experience.",
-        },
-        {
-          type: 'pull',
-          text: "I've left my house on a calm morning and arrived at the first tee to find it blowing hard. It stayed that way for four hours.",
         },
         {
           type: 'image',
@@ -118,7 +116,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Rafa Nadal plays here regularly - his stated favourite course on the island. Barack Obama played in November 2024, and general manager Andreas Pamer described him as genuinely likeable and said he promised to return.',
+            'Rafa Nadal plays here regularly and has said it is his favourite course on the island. Barack Obama played here in November 2024 and enjoyed it so much he promised to return. Many top amateur and professional events are also held at this popular golf course.',
         },
         {
           type: 'image',
@@ -150,7 +148,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            "Son Gual is my favourite course in Mallorca. It would stand up against any course I've played in my travels - the conditioning, the design intelligence, and the setting are exceptional. It's not a course to arrive at without your game in reasonable order, but for any golfer who wants a serious round in a serious setting, this is it.",
+            "Son Gual is my favourite course in Mallorca. The conditioning is superb, the design asks proper questions, and the setting is strong without needing to shout about it. If your game is in decent order and you want a serious round, start here.",
         },
         {
           type: 'cta',
@@ -175,7 +173,7 @@ export const GUIDE_POST_CONTENT = {
         readTime: '7 min read',
         updated: 'March 2026',
         title: "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)",
-        intro: 'The course I take people to when I want them to come home with a story. The lighthouse changes everything.',
+        intro: 'If I want someone to go home talking about one round, I take them to Alcanada. The lighthouse helps, but the course stands up on its own.',
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
@@ -192,7 +190,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Alcanada is the course I take people to when I want them to come home with a story. It might be the most memorable round on the island. The lighthouse changes everything.',
+          text: 'Alcanada is the course I take people to when I want them to go home remembering one round in particular. It might be the most memorable day on the island. The lighthouse and the views on many of the holes help, but the course stands up on its own too.',
         },
         { type: 'heading', text: 'The Setting' },
         {
@@ -212,7 +210,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'The Back Tees' },
         {
           type: 'paragraph',
-          text: "Standing on the elevated back tees is its own experience. You feel untouchable - so far from everything else that everyone below looks like a tiny dot. The lighthouse behind you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.",
+          text: "Standing on the elevated back tees is its own experience. You feel untouchable - so far from everything else that everyone below looks like a tiny dot. The lighthouse in front of you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.",
         },
         {
           type: 'pull',
@@ -231,7 +229,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'The combination of slope, speed, and subtle breaks on the greens is what separates this from a merely scenic layout into something that genuinely tests skilful players.',
+          text: 'The combination of slope, speed, and subtle breaks on the greens is what turns this from a scenic round into a proper test.',
         },
         {
           type: 'image',
@@ -297,7 +295,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "Alcanada is the course I'd take someone to if I wanted them to fall in love with golf in Mallorca. The greens will test you. The drive north is worth it. The lunch afterwards is non-negotiable.",
+          text: "Alcanada is the course I'd use if I wanted someone to understand why people come back to golf in Mallorca. The greens will test you, the drive north is worth it, and you should leave enough time for lunch afterwards.",
         },
         {
           type: 'cta',
@@ -322,7 +320,7 @@ export const GUIDE_POST_CONTENT = {
         readTime: '6 min read',
         updated: 'March 2026',
         title: "Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026)",
-        intro: "One of Europe's longest courses. DP World Tour history. And a course that genuinely helps you rediscover your driver.",
+        intro: "One of Europe's longest courses, real DP World Tour history, and one of the easiest places on the island to enjoy hitting driver.",
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
@@ -339,12 +337,12 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Santa Ponsa 1 is the only public course in the Santa Ponsa group and the one with genuine European Tour pedigree - it hosted the 2021 DP World Tour Mallorca Golf Open. This is the course that brought top-level professional golf back to the island after a decade away. The winner, Jeff Winther, shot 62 twice in the opening rounds. The course was ready for it.',
+          text: 'Santa Ponsa 1 is the only public course in the Santa Ponsa group and the one that was capable of hosting a European Tour event - it hosted the 2021 European Tour Mallorca Golf Open. This is the course that brought top-level professional golf back to the island after a decade away. The winner, Jeff Winther, shot 62 twice in the opening rounds. Good luck getting anywhere near that!',
         },
         { type: 'heading', text: 'Why It Suits My Game - and Probably Yours' },
         {
           type: 'paragraph',
-          text: "I'll be direct about something: this course has helped me rediscover confidence with the driver. After rounds at Son Gual or Alcanada, where course management often means leaving driver in the bag, Santa Ponsa 1 is a different conversation entirely. The fairways are wide, the opening holes are generous, and the course genuinely rewards an aggressive approach from the tee.",
+          text: "I'll be direct about something: this course has helped me rediscover confidence with the driver. After rounds at Son Gual or Alcanada, where course management often means leaving driver in the bag, Santa Ponsa 1 feels very different. The fairways are wide, the opening holes are generous, and the course rewards an aggressive approach from the tee.",
         },
         {
           type: 'paragraph',
@@ -354,12 +352,12 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/santa-ponsa-blog/sp-1.jpg',
           alt: 'Santa Ponsa 1 fairway with mountains behind',
-          caption: 'The fairways are genuinely wide. This is a course that invites the driver.',
+          caption: 'The fairways are wide. This is a course that invites the driver.',
         },
         { type: 'heading', text: 'The 10th Hole' },
         {
           type: 'paragraph',
-          text: "At 590 metres, the 10th is one of the longest par-5s in Europe. Playing it into the wind makes it feel even longer. There's a genuinely satisfying version of this hole - hit driver, hit hybrid, hit wedge - and a much less satisfying version where one of those three goes wrong. The par-3s are the other end of the scale: long, with small greens. Damage limitation, not birdie opportunities.",
+          text: "At 590 metres, the 10th is one of the longest par-5s in Europe. Into the wind it is properly long. There is a satisfying version of the hole where you go driver, hybrid, wedge, and a much less satisfying one where one of those three goes wrong. The par-3s are also long and often with small greens, they are more about damage limitation than birdie chances.",
         },
         {
           type: 'image',
@@ -367,10 +365,10 @@ export const GUIDE_POST_CONTENT = {
           alt: 'Santa Ponsa 1 course layout and fairways',
           caption: 'The layout. On a calm day this course flatters you. Add wind and it earns every metre of its length.',
         },
-        { type: 'heading', text: 'The DP World Tour Connection' },
+        { type: 'heading', text: 'The European Tour Connection' },
         {
           type: 'paragraph',
-          text: 'Hosting the 2021 DP World Tour Mallorca Golf Open was significant for the island. It was the first European Tour event here in ten years, and Santa Ponsa 1 held up under scrutiny. The course condition in tournament week, the routing under pressure, and the scoring that was possible without the course being surrendered all worked. That pedigree is real, and it shows in how the course presents itself to visitors.',
+          text: 'Hosting the 2021 European Tour Mallorca Open was significant for the island. It was the first European Tour event here in ten years, and Santa Ponsa 1 held up under scrutiny. The course condition in tournament week, and the scoring that was possible without the course being set up in an easy manner, all worked. That quality is real, and it shows in how the course presents itself to visitors.',
         },
         {
           type: 'image',
@@ -410,7 +408,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "If you're driving the ball well and want to feel good about it, play Santa Ponsa 1. If you're between Son Gual and Alcanada for a serious day and want something that contrasts both - more open, more confidence-building, with proper European Tour history attached - this is the course. The par-3s will keep you honest. The rest of the round will give you something back.",
+          text: "If you're driving the ball well and want to enjoy it, play Santa Ponsa 1. If you're choosing between Son Gual and Alcanada for a serious day and want something more open, with proper European Tour history behind it, this is the one. The par-3s will keep you honest. The rest of the round tends to give you something back.",
         },
         {
           type: 'cta',
@@ -423,10 +421,68 @@ export const GUIDE_POST_CONTENT = {
   },
 }
 
+const LOCALIZED_TEXT_KEYS = new Set([
+  'title',
+  'description',
+  'imagePath',
+  'badge',
+  'readTime',
+  'updated',
+  'intro',
+  'text',
+  'caption',
+  'alt',
+  'label',
+  'attribution',
+  'linkLabel',
+])
+
+function mergeLocalizedValue(baseValue, localizedValue, key) {
+  if (localizedValue == null) return baseValue
+
+  if (Array.isArray(baseValue) && Array.isArray(localizedValue)) {
+    if (key === 'related') return localizedValue
+    if (baseValue.some(Array.isArray)) return localizedValue
+    if (baseValue.every((item) => item == null || typeof item !== 'object')) return localizedValue
+
+    return baseValue.map((item, index) => mergeLocalizedValue(item, localizedValue[index], key))
+  }
+
+  if (
+    baseValue &&
+    localizedValue &&
+    typeof baseValue === 'object' &&
+    typeof localizedValue === 'object' &&
+    !Array.isArray(baseValue) &&
+    !Array.isArray(localizedValue)
+  ) {
+    const merged = { ...baseValue }
+
+    for (const [childKey, childValue] of Object.entries(localizedValue)) {
+      if (childKey in baseValue) {
+        merged[childKey] = mergeLocalizedValue(baseValue[childKey], childValue, childKey)
+      } else if (LOCALIZED_TEXT_KEYS.has(childKey)) {
+        merged[childKey] = childValue
+      }
+    }
+
+    return merged
+  }
+
+  if (LOCALIZED_TEXT_KEYS.has(key)) return localizedValue
+
+  return baseValue
+}
+
 export function getGuidePostContent(slug, locale = 'en') {
   const guide = GUIDE_POST_CONTENT[slug]
-  if (!guide) {
-    return null
-  }
-  return guide[locale] || guide.en
+  if (!guide) return null
+
+  const baseContent = guide.en
+  if (locale === 'en') return baseContent
+
+  const localizedContent = getLocalizedGuidePostContent(slug, locale) || guide[locale]
+  if (!localizedContent) return baseContent
+
+  return mergeLocalizedValue(baseContent, localizedContent)
 }
