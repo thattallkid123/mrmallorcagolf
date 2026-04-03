@@ -14,10 +14,7 @@ function normalizeContainerStyle(style, fallback) {
 
 function getImagePresentation(block, imageOrdinal) {
   if (block.presentation) return block.presentation
-  if (imageOrdinal === 0 || block.priority) return 'full'
-  if (block.containerStyle?.aspectRatio === '21/9' || block.containerStyle?.aspectRatio === '16/9') return 'full'
-
-  return imageOrdinal % 2 === 0 ? 'half-left' : 'half-right'
+  return 'full'
 }
 
 function renderBlock(block, index, imageOrdinal) {
