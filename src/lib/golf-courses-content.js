@@ -31,7 +31,7 @@ export const GOLF_COURSES_CONTENT = {
       east: {
         title: 'East',
         subtitle: '50-65 km from Palma · Worth basing yourself here',
-        count: '4 courses',
+        count: '5 courses',
       },
       north: {
         title: 'North',
@@ -95,7 +95,7 @@ export const GOLF_COURSES_CONTENT = {
         },
         {
           region: 'East',
-          courses: 'Capdepera · Canyamel · Pula · Son Servera',
+          courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or",
         },
         {
           region: 'North',

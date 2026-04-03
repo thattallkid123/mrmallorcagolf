@@ -437,10 +437,58 @@ const LOCALIZED_TEXT_KEYS = new Set([
   'linkLabel',
 ])
 
+function alignLocalizedBlocks(baseBlocks, localizedBlocks) {
+  if (!Array.isArray(baseBlocks) || !Array.isArray(localizedBlocks) || localizedBlocks.length === 0) {
+    return baseBlocks
+  }
+
+  let localizedIndex = 0
+
+  return baseBlocks
+    .map((baseBlock) => {
+    let matchedLocalizedBlock = null
+
+    for (let i = localizedIndex; i < localizedBlocks.length; i += 1) {
+      if (localizedBlocks[i]?.type === baseBlock?.type) {
+        matchedLocalizedBlock = localizedBlocks[i]
+        localizedIndex = i + 1
+        break
+      }
+    }
+
+    if (!matchedLocalizedBlock) {
+      if (baseBlock?.type === 'image') {
+        return {
+          ...baseBlock,
+          caption: null,
+        }
+      }
+
+      return null
+    }
+
+    const mergedBlock = mergeLocalizedValue(baseBlock, matchedLocalizedBlock)
+
+    if (baseBlock?.type === 'image') {
+      return {
+        ...mergedBlock,
+        caption: matchedLocalizedBlock.caption ?? null,
+        alt: matchedLocalizedBlock.alt ?? baseBlock.alt,
+        containerStyle: baseBlock.containerStyle,
+        imageStyle: baseBlock.imageStyle,
+      }
+    }
+
+    return mergedBlock
+    })
+    .filter(Boolean)
+}
+
 function mergeLocalizedValue(baseValue, localizedValue, key) {
   if (localizedValue == null) return baseValue
 
   if (Array.isArray(baseValue) && Array.isArray(localizedValue)) {
+    if (key === 'blocks') return alignLocalizedBlocks(baseValue, localizedValue)
     if (key === 'related') return localizedValue
     if (baseValue.some(Array.isArray)) return localizedValue
     if (baseValue.every((item) => item == null || typeof item !== 'object')) return localizedValue
