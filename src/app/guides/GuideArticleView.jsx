@@ -10,6 +10,15 @@ function joinHref(locale, path) {
   return `/${locale}${path === '/' ? '' : path}`
 }
 
+function normalizeContainerStyle(style, fallback) {
+  const merged = style || fallback
+  if (!merged) return merged
+  if (merged.aspectRatio === '21/9' || merged.aspectRatio === '16/9') {
+    return { ...merged, aspectRatio: '15/8' }
+  }
+  return merged
+}
+
 function renderBlock(block, index, locale) {
   if (block.type === 'paragraph') {
     return <p key={`${index}-${block.text.slice(0, 24)}`}>{block.text}</p>
@@ -35,7 +44,7 @@ function renderBlock(block, index, locale) {
           src={block.src}
           alt={block.alt}
           priority={block.priority}
-          containerStyle={block.containerStyle || defaultStyle}
+          containerStyle={normalizeContainerStyle(block.containerStyle, defaultStyle)}
           imageStyle={
             block.fit === 'contain'
               ? { objectFit: 'contain', backgroundColor: '#f5f5f5' }
@@ -101,7 +110,7 @@ function renderBlock(block, index, locale) {
             <FillImageFrame
               src={item.src}
               alt={item.alt}
-              containerStyle={{ position: 'relative', width: '100%', aspectRatio: item.aspectRatio || '4/3' }}
+              containerStyle={normalizeContainerStyle({ position: 'relative', width: '100%', aspectRatio: item.aspectRatio || '4/3' })}
               imageStyle={item.imageStyle || { objectPosition: 'center 24%' }}
             />
             {item.caption ? (

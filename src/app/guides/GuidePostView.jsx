@@ -3,6 +3,15 @@ import RevealObserver from '../../components/RevealObserver'
 import FillImageFrame from '../../components/FillImageFrame'
 import PostLayout from './PostLayout'
 
+function normalizeContainerStyle(style, fallback) {
+  const merged = style || fallback
+  if (!merged) return merged
+  if (merged.aspectRatio === '21/9' || merged.aspectRatio === '16/9') {
+    return { ...merged, aspectRatio: '15/8' }
+  }
+  return merged
+}
+
 function renderBlock(block, index) {
   if (block.type === 'image') {
     return (
@@ -11,7 +20,7 @@ function renderBlock(block, index) {
         src={block.src}
         alt={block.alt}
         priority={block.priority}
-        containerStyle={block.containerStyle || { margin: '2rem 0', borderRadius: 2, aspectRatio: '15/8' }}
+        containerStyle={normalizeContainerStyle(block.containerStyle, { margin: '2rem 0', borderRadius: 2, aspectRatio: '15/8' })}
         imageStyle={{ objectPosition: 'center 24%', ...block.imageStyle }}
       />
     )
