@@ -1,69 +1,7 @@
 'use client'
 import { useRef, useState } from 'react'
 import Link from 'next/link'
-<<<<<<< HEAD
-
-const courses = [
-  { cls: 'course-card--1', badge: '★ Expert Pick', region: 'Palma · 11km from city', name: 'Son Gual', meta: ['Championship', 'Par 72', '€80–165'], stars: '★★★★★', difficulty: '9/10 Difficulty', excerpt: "Thomas Himmel's 2007 design sits in its own wind ecosystem. The closing stretch — holes 15–18 — is among the finest four holes in European golf.", img: '/images/son-gual.jpg', href: '/guides/son-gual-review' },
-  { cls: 'course-card--2', badge: '★ Expert Pick', region: 'Alcúdia · North Mallorca', name: 'Alcanada', meta: ['Coastal', 'Par 72', '€115–220'], stars: '★★★★★', difficulty: '7/10 Difficulty', excerpt: "Robert Trent Jones Jr. at his most scenic. The lighthouse visible from 16 of 18 holes. One of the most photographed courses in Spain.", img: '/images/alcanada.jpg', href: '/guides/alcanada-review' },
-  { cls: 'course-card--3', badge: 'Best in Spain 2025', region: 'Son Vida · Palma', name: 'Son Muntaner', meta: ['DP World Tour', 'Par 72'], stars: '★★★★★', difficulty: '7/10 Difficulty', excerpt: "Named Best Golf Course in Spain at the 2025 World Golf Awards. Views across the Bay of Palma. A thousand-year-old olive tree on the 15th.", img: '/images/son-muntaner.webp', href: '/golf-courses#son-muntaner' },
-  { cls: 'course-card--4', badge: null, region: 'Santa Ponsa · Southwest', name: 'Santa Ponsa 1', meta: ['DP World Tour host', 'Par 72', '€77–126'], stars: '★★★★☆', difficulty: '8/10 Difficulty', excerpt: "Hosted the 2021 DP World Tour Mallorca Open. One of Europe's longest courses — the 10th hole alone stretches 590 metres.", img: '/images/santa-ponsa.webp', href: '/guides/santa-ponsa-1-review' },
-  { cls: 'course-card--5', badge: null, region: 'Camp de Mar · Southwest', name: 'Golf de Andratx', meta: ['Most challenging', 'Par 72', '€96–140'], stars: '★★★★☆', difficulty: '9/10 Difficulty', excerpt: 'The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', img: '/images/andratx.webp', href: '/golf-courses#golf-de-andratx' },
-]
-
-const WINNER_IMAGES = [
-  "/images/winners/012ce2fdc02bf1fef437a1d98c25be1540117c3805.jpg",
-  "/images/winners/0134a9b7aac8ad0d0656f04a253c43088b7331ce8f.jpg",
-  "/images/winners/013bf5d9686d01b02fce51ef1123c10b7450176d15.jpg",
-  "/images/winners/0144db5d1b7e24d0c6caa972462828fa30285c221b.jpg",
-  "/images/winners/01642ab42974ebfa93f60beb07ab37157b87a3a515.jpg",
-  "/images/winners/0166d35c197839412b807e6f1f9d74f3019ed0cdc7.jpg",
-  "/images/winners/01896bd5845040a4f9957ce34acc61c2e68540c266.jpg",
-  "/images/winners/01995db72802106453cf4aad2953648cec12aacd7e.jpg",
-  "/images/winners/01ae26f53c5692f97b8207b9f36ca1cbbefa4618cc.jpg",
-  "/images/winners/01c93d14fd4089f7fa1a956671b90967a1c09ed13f.jpg",
-  "/images/winners/01f43146e7bbd479cd809b6daabd9b105b0008ca18.jpg",
-  "/images/winners/01fe13d3c84b1236db2811859106a909c2227f8aa5.jpg",
-  "/images/winners/2017_06_11_19_32_56.jpg",
-  "/images/winners/2017_07_24_07_54_26.jpg",
-  "/images/winners/2017_12_07_03_05_56.jpg",
-  "/images/winners/2018_08_10_17_45_12.jpg",
-  "/images/winners/2018_08_11_14_58_16.jpg",
-  "/images/winners/2019_06_14_17_33_00.jpg",
-  "/images/winners/2019_07_13_06_48_15.jpg",
-  "/images/winners/2020_11_25_12_20_00.jpg",
-  "/images/winners/2021_02_18_21_57_59.jpg",
-  "/images/winners/2021_04_18_20_01_18.jpg",
-  "/images/winners/2022_07_17_20_47_02.jpg",
-  "/images/winners/2022_07_18_17_01_28.jpg",
-  "/images/winners/2022_07_31_22_36_45.jpg",
-  "/images/winners/2022_08_18_17_44_28.jpg",
-  "/images/winners/2022_10_03_08_30_13.jpg",
-  "/images/winners/2022_10_07_19_28_31.jpg",
-  "/images/winners/2022_10_24_23_15_14.jpg",
-  "/images/winners/2023_06_13_11_53_03.jpg",
-  "/images/winners/2023_06_18_23_58_15.jpg",
-  "/images/winners/2023_08_29_22_35_30.jpg",
-  "/images/winners/2023_10_23_18_34_53.jpg",
-  "/images/winners/2023_12_03_16_55_19.jpg",
-  "/images/winners/2024_04_07_21_05_51.jpg",
-  "/images/winners/2024_06_28_12_16_55.jpg",
-  "/images/winners/2024_07_30_08_11_08.jpg",
-]
-
-
-const ADAM_TESTIMONIAL = "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough."
-
-const faqs = [
-  { q: 'Do I need to be a good golfer?', a: 'Not at all. The experience adjusts to your game — beginners and scratch players both get something from the day. The only requirement is wanting a genuinely different golfing experience.' },
-  { q: 'Which course do you use?', a: "It depends on you. Son Gual and Alcanada are my primary venues for a serious full day. For beginners, groups, or shorter rounds, there are better options — and I'll tell you honestly which one fits." },
-  { q: 'How do I book?', a: "Get in touch. Tell me your dates and what you're looking for — I come back personally within 24 hours. No booking systems. No waiting." },
-  { q: 'Is this suitable for a group?', a: 'Yes. The experiences work for solos, pairs, groups of friends, and corporate days. The Full Experience is particularly popular for business groups and executives visiting the island.' },
-  { q: 'When is the best time of year to visit?', a: 'October, November, March, and April. Best combination of course conditions, weather, value, and pace of play. The island is playable year-round — in January the fairways here are better than August fairways in England.' },
-]
-=======
 import { getHomeContent } from '../lib/homepage-content'
->>>>>>> i18n-premium-draft
 
 const FEATURE_ICONS = {
   arranged: (
@@ -249,19 +187,11 @@ export default function HomePageInner({ locale = 'en' }) {
           </div>
         </div>
         <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
-<<<<<<< HEAD
-          {courses.map((c, i) => (
-            <Link key={i} href={c.href} className={`course-card ${c.cls}`}>
-              <div className="course-card__bg" style={{backgroundImage:`url(${c.img})`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
-              <div className="course-card__overlay" style={{background:'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)'}}></div>
-              {c.badge && <span className="course-card__badge">{c.badge}</span>}
-=======
           {home.courses.items.map((course) => (
             <Link key={course.name} href={localizePath(course.href, locale)} className={`course-card ${course.cls}`}>
               <div className="course-card__bg" style={{ backgroundImage: `url(${course.img})`, backgroundSize: 'cover', backgroundPosition: 'center 28%' }}></div>
               <div className="course-card__overlay" style={{ background: 'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)' }}></div>
               {course.badge && <span className="course-card__badge">{course.badge}</span>}
->>>>>>> i18n-premium-draft
               <div className="course-card__content">
                 <p className="course-card__region">{course.region}</p>
                 <h3 className="course-card__name">{course.name}</h3>
@@ -429,4 +359,3 @@ export default function HomePageInner({ locale = 'en' }) {
     </>
   )
 }
-
