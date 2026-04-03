@@ -19,6 +19,8 @@ export const SHORT_TO_ID = {
   Canyamel: 'canyamel-golf',
   Pula: 'pula-golf',
   'Son Servera': 'golf-club-son-servera',
+  "Vall d'Or": 'vall-d-or-golf',
+  "Vall d'Or Golf": 'vall-d-or-golf',
   Alcanada: 'club-de-golf-alcanada',
   'Golf Pollensa': 'golf-pollensa',
 }
