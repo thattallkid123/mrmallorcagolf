@@ -1,115 +1,111 @@
 const fs = require('fs')
 const path = require('path')
+const { pathToFileURL } = require('url')
 
 const SUPPORTED_LOCALES = ['de', 'es', 'fr', 'nl', 'sv', 'zh']
 
-function read(file) {
-  return fs.readFileSync(path.join(__dirname, '..', file), 'utf8')
+function toFileUrl(relPath) {
+  return pathToFileURL(path.join(__dirname, '..', relPath)).href
 }
 
-function extractTopLevelSlugs(source) {
-  return [...source.matchAll(/^  '([^']+)': \{$/gm)].map((match) => match[1])
-}
-
-function extractLocalesForSlug(source, slug) {
+// Count type:'image' blocks inside a named slug block in source text
+function countImagesInSourceBlock(source, slug) {
   const slugRegex = new RegExp(`^  '${slug.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}': \\{$`, 'm')
   const slugMatch = slugRegex.exec(source)
-
-  if (!slugMatch) return []
-
-  const start = slugMatch.index
-  const nextMatch = /^  '([^']+)': \{$/gm
-  nextMatch.lastIndex = start + 1
-  const following = nextMatch.exec(source)
-  const end = following ? following.index : source.length
-  const block = source.slice(start, end)
-
-  return [...block.matchAll(/^    (de|es|fr|nl|sv|zh): \{$/gm)].map((match) => match[1])
-}
-
-function checkCoverage(englishFile, localizedFile, label) {
-  const englishSource = read(englishFile)
-  const localizedSource = read(localizedFile)
-  const slugs = extractTopLevelSlugs(englishSource)
-  const failures = []
-
-  for (const slug of slugs) {
-    const locales = extractLocalesForSlug(localizedSource, slug)
-    const missing = SUPPORTED_LOCALES.filter((locale) => !locales.includes(locale))
-
-    if (missing.length > 0) {
-      failures.push({ slug, missing })
-    }
-  }
-
-  if (failures.length > 0) {
-    console.warn(`Warning: missing localized coverage found in ${label}:`)
-    failures.forEach(({ slug, missing }) => {
-      console.warn(`- ${slug}: ${missing.join(', ')}`)
-    })
-    return
-  }
-
-  console.log(`${label} locale coverage looks complete.`)
-}
-
-function countImageBlocks(source, slug, locale) {
-  const slugRegex = new RegExp(`^  '${slug.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}': \\{$`, 'm')
-  const slugMatch = slugRegex.exec(source)
-  if (!slugMatch) return null
+  if (!slugMatch) return 0
 
   const start = slugMatch.index
   const nextSlug = /^  '([^']+)': \{$/gm
   nextSlug.lastIndex = start + 1
   const following = nextSlug.exec(source)
   const end = following ? following.index : source.length
-  const slugBlock = source.slice(start, end)
+  const block = source.slice(start, end)
 
-  const localeRegex = new RegExp(`^    ${locale}: \\{$`, 'm')
-  const localeMatch = localeRegex.exec(slugBlock)
-  if (!localeMatch) return null
-
-  const localeStart = localeMatch.index
-  const nextLocale = /^    (de|es|fr|nl|sv|zh|en): \{$/gm
-  nextLocale.lastIndex = localeStart + 1
-  const nextLocaleMatch = nextLocale.exec(slugBlock)
-  const localeEnd = nextLocaleMatch ? nextLocaleMatch.index : slugBlock.length
-  const localeBlock = slugBlock.slice(localeStart, localeEnd)
-
-  return (localeBlock.match(/type:\s*'image'/g) || []).length
+  return (block.match(/type:\s*'image'/g) || []).length
 }
 
-function checkImageParity(englishFile, localizedFile, label) {
-  const englishSource = read(englishFile)
-  const localizedSource = read(localizedFile)
-  const slugs = extractTopLevelSlugs(englishSource)
+async function main() {
+  const [siteModule, articleModule, postModule] = await Promise.all([
+    import(toFileUrl('src/lib/site.js')),
+    import(toFileUrl('src/lib/guide-article-content-localized.js')),
+    import(toFileUrl('src/lib/guide-post-content-localized.js')),
+  ])
 
-  for (const slug of slugs) {
-    const enCount = (englishSource.match(new RegExp(`'${slug}'[\\s\\S]*?type:\\s*'image'`, 'g')) || []).length
+  const articleSlugs = [...siteModule.ARTICLE_SLUGS]
+  const postSlugs = [...siteModule.REVIEW_POST_SLUGS]
 
-    // Count images in the English slug block only
-    const slugRegex = new RegExp(`^  '${slug.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}': \\{$`, 'm')
-    const slugMatch = slugRegex.exec(englishSource)
-    if (!slugMatch) continue
+  // Check article locale coverage via module evaluation (handles REPAIRED merge pattern)
+  const missingArticles = []
+  for (const slug of articleSlugs) {
+    const missing = SUPPORTED_LOCALES.filter(
+      (locale) => !articleModule.getLocalizedGuideArticleContent(slug, locale)
+    )
+    if (missing.length > 0) missingArticles.push({ slug, missing })
+  }
 
-    const start = slugMatch.index
-    const nextSlug = /^  '([^']+)': \{$/gm
-    nextSlug.lastIndex = start + 1
-    const following = nextSlug.exec(englishSource)
-    const end = following ? following.index : englishSource.length
-    const enBlock = englishSource.slice(start, end)
-    const enImageCount = (enBlock.match(/type:\s*'image'/g) || []).length
+  if (missingArticles.length > 0) {
+    missingArticles.forEach(({ slug, missing }) =>
+      console.warn(`Warning: Guide article missing locales — ${slug}: ${missing.join(', ')}`)
+    )
+  } else {
+    console.log('Guide articles locale coverage looks complete.')
+  }
 
+  // Check review post locale coverage
+  const missingPosts = []
+  for (const slug of postSlugs) {
+    const missing = SUPPORTED_LOCALES.filter(
+      (locale) => !postModule.getLocalizedGuidePostContent(slug, locale)
+    )
+    if (missing.length > 0) missingPosts.push({ slug, missing })
+  }
+
+  if (missingPosts.length > 0) {
+    missingPosts.forEach(({ slug, missing }) =>
+      console.warn(`Warning: Guide review post missing locales — ${slug}: ${missing.join(', ')}`)
+    )
+  } else {
+    console.log('Guide review posts locale coverage looks complete.')
+  }
+
+  // Image block count parity — read source files directly to avoid ESM import chain issues
+  // Warning only, not a hard fail
+  const repoRoot = path.join(__dirname, '..')
+  const enSource = fs.readFileSync(path.join(repoRoot, 'src/lib/guide-post-content.js'), 'utf8')
+  const locSource = fs.readFileSync(path.join(repoRoot, 'src/lib/guide-post-content-localized.js'), 'utf8')
+
+  for (const slug of postSlugs) {
+    const enImageCount = countImagesInSourceBlock(enSource, slug)
     if (enImageCount === 0) continue
 
     for (const locale of SUPPORTED_LOCALES) {
-      const localeImageCount = countImageBlocks(localizedSource, slug, locale)
-      if (localeImageCount === null) continue
+      const localized = postModule.getLocalizedGuidePostContent(slug, locale)
+      if (!localized) continue
+      const locImageCount = countImagesInSourceBlock(locSource, `${slug}`)
+      // Count images in the locale sub-block
+      const slugStart = locSource.indexOf(`'${slug}':`)
+      if (slugStart === -1) continue
+      const nextSlugMatch = /^  '([^']+)': \{$/gm
+      nextSlugMatch.lastIndex = slugStart + 1
+      const nextSlug = nextSlugMatch.exec(locSource)
+      const slugEnd = nextSlug ? nextSlug.index : locSource.length
+      const slugBlock = locSource.slice(slugStart, slugEnd)
 
-      const diff = Math.abs(enImageCount - localeImageCount)
-      if (diff > 1) {
+      const localeRegex = new RegExp(`^    ${locale}: \\{$`, 'm')
+      const localeMatch = localeRegex.exec(slugBlock)
+      if (!localeMatch) continue
+
+      const localeStart = localeMatch.index
+      const nextLocaleRegex = /^    (de|es|fr|nl|sv|zh): \{$/gm
+      nextLocaleRegex.lastIndex = localeStart + 1
+      const nextLocale = nextLocaleRegex.exec(slugBlock)
+      const localeEnd = nextLocale ? nextLocale.index : slugBlock.length
+      const localeBlock = slugBlock.slice(localeStart, localeEnd)
+      const localeImageCount = (localeBlock.match(/type:\s*'image'/g) || []).length
+
+      if (Math.abs(enImageCount - localeImageCount) > 1) {
         console.warn(
-          `Warning: ${label} image count differs for ${slug}/${locale}: ` +
+          `Warning: Image count differs for ${slug}/${locale}: ` +
           `English has ${enImageCount}, ${locale} has ${localeImageCount}`
         )
       }
@@ -117,6 +113,7 @@ function checkImageParity(englishFile, localizedFile, label) {
   }
 }
 
-checkCoverage('src/lib/guide-article-content.js', 'src/lib/guide-article-content-localized.js', 'Guide articles')
-checkCoverage('src/lib/guide-post-content.js', 'src/lib/guide-post-content-localized.js', 'Guide review posts')
-checkImageParity('src/lib/guide-post-content.js', 'src/lib/guide-post-content-localized.js', 'Guide review posts')
+main().catch((error) => {
+  console.error(error)
+  process.exit(1)
+})
