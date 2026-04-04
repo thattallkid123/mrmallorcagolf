@@ -37,8 +37,6 @@ export const GUIDES_CONTENT = {
         readTime: '6 min read',
         keywords: 'Championship · Par 72 · €77-126 · Public access',
       },
-    ],
-    comingSoonGuides: [
       {
         slug: 'a-day-at-son-gual',
         badge: 'The Experience',
@@ -94,6 +92,7 @@ export const GUIDES_CONTENT = {
         keywords: 'Trip planning · Where to stay · Getting around',
       },
     ],
+    comingSoonGuides: [],
     comingSoonLabel: 'Coming Soon',
     finalCta: {
       eyebrow: 'Ready to play?',
@@ -141,8 +140,6 @@ export const GUIDES_CONTENT = {
         readTime: '6 min',
         keywords: 'Championship · Par 72 · €77-126 · Acceso público',
       },
-    ],
-    comingSoonGuides: [
       {
         slug: 'a-day-at-son-gual',
         badge: 'La experiencia',
@@ -198,6 +195,7 @@ export const GUIDES_CONTENT = {
         keywords: 'Planificación · Dónde alojarse · Cómo moverse',
       },
     ],
+    comingSoonGuides: [],
     comingSoonLabel: 'Próximamente',
     finalCta: {
       eyebrow: '¿Listo para jugar?',
@@ -245,8 +243,6 @@ export const GUIDES_CONTENT = {
         readTime: '6 Min.',
         keywords: 'Championship · Par 72 · €77-126 · Öffentlicher Zugang',
       },
-    ],
-    comingSoonGuides: [
       {
         slug: 'a-day-at-son-gual',
         badge: 'Das Erlebnis',
@@ -302,6 +298,7 @@ export const GUIDES_CONTENT = {
         keywords: 'Reiseplanung · Unterkunft · Anreise',
       },
     ],
+    comingSoonGuides: [],
     comingSoonLabel: 'Demnächst',
     finalCta: {
       eyebrow: 'Bereit zu spielen?',
@@ -349,8 +346,6 @@ export const GUIDES_CONTENT = {
         readTime: '6 min',
         keywords: 'Championship · Par 72 · €77-126 · Accès public',
       },
-    ],
-    comingSoonGuides: [
       {
         slug: 'a-day-at-son-gual',
         badge: "L'expérience",
@@ -406,6 +401,7 @@ export const GUIDES_CONTENT = {
         keywords: 'Planification · Hébergement · Se déplacer',
       },
     ],
+    comingSoonGuides: [],
     comingSoonLabel: 'Bientôt',
     finalCta: {
       eyebrow: 'Prêt à jouer ?',
@@ -453,8 +449,6 @@ export const GUIDES_CONTENT = {
         readTime: '6 min',
         keywords: 'Championship · Par 72 · €77-126 · Toegankelijk voor bezoekers',
       },
-    ],
-    comingSoonGuides: [
       {
         slug: 'a-day-at-son-gual',
         badge: 'De ervaring',
@@ -510,6 +504,7 @@ export const GUIDES_CONTENT = {
         keywords: 'Reisplanning · Verblijf · Vervoer',
       },
     ],
+    comingSoonGuides: [],
     comingSoonLabel: 'Binnenkort',
     finalCta: {
       eyebrow: 'Klaar om te spelen?',
@@ -557,8 +552,6 @@ export const GUIDES_CONTENT = {
         readTime: '6 min',
         keywords: 'Championship · Par 72 · €77-126 · Öppen för besökare',
       },
-    ],
-    comingSoonGuides: [
       {
         slug: 'a-day-at-son-gual',
         badge: 'Upplevelsen',
@@ -614,6 +607,7 @@ export const GUIDES_CONTENT = {
         keywords: 'Reseplanering · Boende · Transport',
       },
     ],
+    comingSoonGuides: [],
     comingSoonLabel: 'Kommer snart',
     finalCta: {
       eyebrow: 'Redo att spela?',
@@ -661,8 +655,6 @@ export const GUIDES_CONTENT = {
         readTime: '6分钟',
         keywords: '锦标赛级 · 标准杆72 · €77-126 · 对外开放',
       },
-    ],
-    comingSoonGuides: [
       {
         slug: 'a-day-at-son-gual',
         badge: '亲历体验',
@@ -718,6 +710,7 @@ export const GUIDES_CONTENT = {
         keywords: '行程规划 · 住宿 · 交通',
       },
     ],
+    comingSoonGuides: [],
     comingSoonLabel: '即将推出',
     finalCta: {
       eyebrow: '准备好下场了吗？',
