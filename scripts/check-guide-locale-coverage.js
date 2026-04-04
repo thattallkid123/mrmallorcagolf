@@ -68,11 +68,10 @@ async function main() {
     console.log('Guide review posts locale coverage looks complete.')
   }
 
-  // Image block count parity — read source files directly to avoid ESM import chain issues
+  // Image block count parity — use runtime evaluation so POST_IMAGE_PATCHES are reflected
   // Warning only, not a hard fail
   const repoRoot = path.join(__dirname, '..')
   const enSource = fs.readFileSync(path.join(repoRoot, 'src/lib/guide-post-content.js'), 'utf8')
-  const locSource = fs.readFileSync(path.join(repoRoot, 'src/lib/guide-post-content-localized.js'), 'utf8')
 
   for (const slug of postSlugs) {
     const enImageCount = countImagesInSourceBlock(enSource, slug)
@@ -81,27 +80,7 @@ async function main() {
     for (const locale of SUPPORTED_LOCALES) {
       const localized = postModule.getLocalizedGuidePostContent(slug, locale)
       if (!localized) continue
-      const locImageCount = countImagesInSourceBlock(locSource, `${slug}`)
-      // Count images in the locale sub-block
-      const slugStart = locSource.indexOf(`'${slug}':`)
-      if (slugStart === -1) continue
-      const nextSlugMatch = /^  '([^']+)': \{$/gm
-      nextSlugMatch.lastIndex = slugStart + 1
-      const nextSlug = nextSlugMatch.exec(locSource)
-      const slugEnd = nextSlug ? nextSlug.index : locSource.length
-      const slugBlock = locSource.slice(slugStart, slugEnd)
-
-      const localeRegex = new RegExp(`^    ${locale}: \\{$`, 'm')
-      const localeMatch = localeRegex.exec(slugBlock)
-      if (!localeMatch) continue
-
-      const localeStart = localeMatch.index
-      const nextLocaleRegex = /^    (de|es|fr|nl|sv|zh): \{$/gm
-      nextLocaleRegex.lastIndex = localeStart + 1
-      const nextLocale = nextLocaleRegex.exec(slugBlock)
-      const localeEnd = nextLocale ? nextLocale.index : slugBlock.length
-      const localeBlock = slugBlock.slice(localeStart, localeEnd)
-      const localeImageCount = (localeBlock.match(/type:\s*'image'/g) || []).length
+      const localeImageCount = (localized.blocks || []).filter((b) => b.type === 'image').length
 
       if (Math.abs(enImageCount - localeImageCount) > 1) {
         console.warn(
