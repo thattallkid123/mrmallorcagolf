@@ -2258,6 +2258,273 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   },
 }
 
+// ---------------------------------------------------------------------------
+// IMAGE BLOCK PATCHES
+// Adds missing image blocks to localized review posts to match English layout.
+// Insert positions reference the CURRENT localized block indices (before patching).
+// Patches are applied highest-index-first so earlier indices remain stable.
+// ---------------------------------------------------------------------------
+
+const POST_IMAGE_PATCHES = {
+  'son-gual-review': {
+    insertions: [
+      // sg-clients-group.jpg — after sg-hero (index 1), before first heading
+      {
+        insertAfterIndex: 1,
+        src: '/images/son-gual-blog/sg-clients-group.jpg',
+        alt: 'Golfers at Son Gual with Andy Griffiths',
+        captions: {
+          de: 'Ein Gruppenausflug im Januar. In England sind die Plätze geschlossen. Hier sehen die Fairways so aus.',
+          es: 'Un día en grupo en enero. En Inglaterra los campos están cerrados. Aquí los fairways tienen este aspecto.',
+          fr: 'Une journée en groupe en janvier. En Angleterre, les parcours sont fermés. Ici, les fairways ressemblent à ça.',
+          nl: 'Een groepsdag in januari. In Engeland zijn de banen gesloten. Hier zien de fairways er zo uit.',
+          sv: 'En gruppdag i januari. I England är banorna stängda. Här ser fairways ut så här.',
+          zh: '一月份的团体日。在英国，球场都关门了。这里的球道就是这样。',
+        },
+      },
+      // sg-swing.jpg — after Wind paragraph (index 7), before pull quote
+      {
+        insertAfterIndex: 7,
+        src: '/images/son-gual-blog/sg-swing.jpg',
+        alt: 'Client hitting a tee shot at Son Gual',
+        captions: {
+          de: 'Es gibt genug Löcher, bei denen der Driver rauskommt. Mit Rückenwind ist es so gut wie es geht. Gegen den Wind plant man anders.',
+          es: 'Hay bastantes hoyos donde sale el driver. Con el viento a favor es lo mejor que puede sentirse. Sin él, se planifica de otra manera.',
+          fr: "Il y a suffisamment de trous où le driver sort. Avec le vent dans le dos, c'est aussi bien que ça peut être. Sans lui, on planifie autrement.",
+          nl: 'Er zijn genoeg holes waar de driver tevoorschijn komt. Met de wind mee is het zo goed als het wordt. Ertegen plan je anders.',
+          sv: 'Det finns tillräckligt med hål där drivern kommer fram. Med vinden i ryggen är det så bra det kan bli. Utan den planerar man annorlunda.',
+          zh: '很多洞都需要一号木。顺风时是最好的感觉。逆风时，就要换一种思路。',
+        },
+      },
+      // sg-plane.jpg — after sg-3.webp (index 15), before Notable Visitors heading
+      {
+        insertAfterIndex: 15,
+        src: '/images/son-gual-blog/sg-plane.jpg',
+        alt: 'Plane coming into Palma airport over Son Gual golf course',
+        captions: {
+          de: 'Die Bucht von Palma von den höher gelegenen Löchern. Löcher 8 bis 12 bieten die besten Ausblicke.',
+          es: 'La Bahía de Palma desde los hoyos más elevados. Los hoyos 8 a 12 tienen las mejores vistas.',
+          fr: 'La baie de Palma depuis les trous en hauteur. Les trous 8 à 12 offrent les meilleures vues.',
+          nl: 'De Baai van Palma vanaf de hogere holes. Holes 8 tot 12 hebben de beste uitzichten.',
+          sv: 'Palmas bukt från de högre hålen. Hål 8 till 12 har de bästa vyerna.',
+          zh: '从高处球洞俯瞰帕尔马湾。第8到第12洞的视野最佳。',
+        },
+      },
+    ],
+  },
+
+  'alcanada-review': {
+    insertions: [
+      // alc-7.jpg — hero image, insert before first paragraph (index -1 = prepend)
+      {
+        insertAfterIndex: -1,
+        src: '/images/alcanada-blog/alc-7.jpg',
+        alt: 'Club de Golf Alcanada at golden hour with lighthouse and bay',
+        captions: {
+          de: 'Alcanada zur goldenen Stunde. Der Leuchtturm steht auf einer kleinen Insel direkt vor der Küste und ist von 16 der 18 Löcher sichtbar.',
+          es: 'Alcanada a la hora dorada. El faro se encuentra en su propia isla frente a la costa y es visible desde 16 de los 18 hoyos.',
+          fr: "Alcanada à l'heure dorée. Le phare se trouve sur sa propre île au large de la côte et est visible depuis 16 des 18 trous.",
+          nl: 'Alcanada in het gouden uur. De vuurtoren staat op zijn eigen eilandje vlak voor de kust en is zichtbaar van 16 van de 18 holes.',
+          sv: 'Alcanada i det gyllene ljuset. Fyren ligger på sin egen ö strax utanför kusten och är synlig från 16 av 18 hål.',
+          zh: '黄金时刻的Alcanada球场。灯塔矗立在海岸附近的小岛上，从18个洞中的16个都能看到。',
+        },
+      },
+      // alc-6.jpg — after second Setting paragraph (index 3), before Back Tees heading
+      {
+        insertAfterIndex: 3,
+        src: '/images/alcanada-blog/alc-6.jpg',
+        alt: 'Client hitting a tee shot at Alcanada with lighthouse in the background',
+        captions: {
+          de: 'Der Leuchtturm hinter uns, das Meer links, das Fairway fällt nach vorn ab.',
+          es: 'El faro detrás, el mar a la izquierda, el fairway descendiendo hacia adelante.',
+          fr: 'Le phare derrière, la mer à gauche, le fairway qui descend devant.',
+          nl: 'De vuurtoren achter ons, de zee links, de fairway die naar voren daalt.',
+          sv: 'Fyren bakom oss, havet till vänster, fairway som sluttar nedåt framför.',
+          zh: '身后是灯塔，左侧是大海，球道向前延伸而去。',
+        },
+      },
+      // alc-2.jpg — after pull quote (index 6), before Greens heading
+      {
+        insertAfterIndex: 6,
+        src: '/images/alcanada-blog/alc-2.jpg',
+        alt: 'Alcanada green with sea and mountains visible behind',
+        captions: {
+          de: 'An einem klaren Morgen sieht man die Tramuntana über die Bucht.',
+          es: 'En una mañana despejada se pueden ver las montañas de la Tramuntana al otro lado de la bahía.',
+          fr: 'Par temps clair, on aperçoit les montagnes de la Tramuntana de l\'autre côté de la baie.',
+          nl: 'Op een heldere ochtend kun je de Tramuntana-bergen aan de andere kant van de baai zien.',
+          sv: 'En klar morgon kan man se Tramuntana-bergen tvärs över viken.',
+          zh: '晴朗的早晨可以看到海湾对面的特拉蒙塔纳山脉。',
+        },
+      },
+      // alc-5.jpg — after second Greens paragraph (index 9), before Rolex heading
+      {
+        insertAfterIndex: 9,
+        src: '/images/alcanada-blog/alc-5.jpg',
+        alt: 'Golfers at Alcanada with the Mediterranean behind',
+        captions: {
+          de: 'Die hinteren Abschläge von Alcanada liegen weit über dem Fairway. Der Weg hinauf lohnt sich jedes Mal.',
+          es: 'Los tees de salida traseros de Alcanada están muy elevados sobre el fairway. La subida merece la pena siempre.',
+          fr: 'Les départs arrière d\'Alcanada sont bien au-dessus du fairway. La montée en vaut la peine à chaque fois.',
+          nl: 'De achterste afslagplaatsen van Alcanada liggen ver boven de fairway. De klim is elke keer de moeite waard.',
+          sv: 'De bakre utslagen på Alcanada är högt över fairway. Klättringen upp är värd det varje gång.',
+          zh: 'Alcanada的后排发球台高于球道很多。每次爬上去都是值得的。',
+        },
+      },
+      // alc-1.jpg — after Rolex paragraph (index 11), before Design heading
+      {
+        insertAfterIndex: 11,
+        src: '/images/alcanada-blog/alc-1.jpg',
+        alt: 'Rolex Grand Final at Alcanada hole 16',
+        captions: {
+          de: 'Das Rolex Challenge Tour Grand Final auf Alcanada. Im Oktober 2026 findet es zum sechsten Mal statt.',
+          es: 'El Rolex Challenge Tour Grand Final en Alcanada. Regresa por sexta vez en octubre de 2026.',
+          fr: 'Le Rolex Challenge Tour Grand Final à Alcanada. Il revient pour la sixième fois en octobre 2026.',
+          nl: 'De Rolex Challenge Tour Grand Final op Alcanada. Het keert voor de zesde keer terug in oktober 2026.',
+          sv: 'Rolex Challenge Tour Grand Final på Alcanada. Det återvänder för sjätte gången i oktober 2026.',
+          zh: '劳力士挑战赛巡回赛总决赛在Alcanada举行。2026年10月将迎来第六届。',
+        },
+      },
+      // alc-4.jpg — after Design paragraph (index 13), before facts
+      {
+        insertAfterIndex: 13,
+        src: '/images/alcanada-blog/alc-4.jpg',
+        alt: 'Group of golfers at Alcanada on a summer evening',
+        captions: {
+          de: 'Eine Abendrunde im Sommer. Das Licht auf Alcanada im Juli ist etwas Besonderes.',
+          es: 'Una ronda de tarde en verano. La luz en Alcanada en julio es algo especial.',
+          fr: "Une partie en soirée d'été. La lumière à Alcanada en juillet est quelque chose d'unique.",
+          nl: 'Een zomeravondronde. Het licht op Alcanada in juli is bijzonder.',
+          sv: 'En sommarkväll runda. Ljuset på Alcanada i juli är något speciellt.',
+          zh: '夏日傍晚的一轮。七月份Alcanada的光线格外美。',
+        },
+      },
+      // alc-hero.jpg — after Restaurant paragraph (index 20), before Verdict heading
+      {
+        insertAfterIndex: 20,
+        src: '/images/alcanada-blog/alc-hero.jpg',
+        alt: 'Alcanada clubhouse terrace',
+        captions: {
+          de: 'Die Terrasse des Clubhauses.',
+          es: 'La terraza del club.',
+          fr: 'La terrasse du club.',
+          nl: 'Het clubhusterras.',
+          sv: 'Klubbhusterrassen.',
+          zh: '会所露台。',
+        },
+      },
+    ],
+  },
+
+  'santa-ponsa-1-review': {
+    insertions: [
+      // sp-hero.jpg — hero image, prepend before first paragraph
+      {
+        insertAfterIndex: -1,
+        src: '/images/santa-ponsa-blog/sp-hero.jpg',
+        alt: 'Golf Santa Ponsa 1 with water reflection and fairway',
+        captions: {
+          de: 'Das 16. Grün. Der See kommt bei der Annäherung ins Spiel und sorgt für ordentliche Konzentration.',
+          es: 'El green del hoyo 16. El lago entra en juego en la aproximación y concentra la mente considerablemente.',
+          fr: "Le green du trou 16. Le lac entre en jeu à l'approche et concentre considérablement l'esprit.",
+          nl: 'De green van hole 16. Het meer komt in het spel op de nadering en scherpt de aandacht aanzienlijk.',
+          sv: 'Green på hål 16. Sjön kommer in i spelet på tillslaget och skärper fokus avsevärt.',
+          zh: '第16洞果岭。进攻果岭时湖泊是障碍，大大考验注意力。',
+        },
+      },
+      // sp-1.jpg — after second "Why suits" paragraph (index 3), before 10th heading
+      {
+        insertAfterIndex: 3,
+        src: '/images/santa-ponsa-blog/sp-1.jpg',
+        alt: 'Santa Ponsa 1 fairway with mountains behind',
+        captions: {
+          de: 'Die Fairways sind breit. Das ist ein Platz, der den Driver einlädt.',
+          es: 'Los fairways son anchos. Este es un campo que invita al driver.',
+          fr: 'Les fairways sont larges. C\'est un parcours qui invite le driver.',
+          nl: 'De fairways zijn breed. Dit is een baan die de driver uitnodigt.',
+          sv: 'Fairways är breda. Det här är en bana som bjuder in drivern.',
+          zh: '球道宽阔。这是一个适合使用一号木的球场。',
+        },
+      },
+      // sp-2.jpg — after 10th hole paragraph (index 5), before European Tour heading
+      {
+        insertAfterIndex: 5,
+        src: '/images/santa-ponsa-blog/sp-2.jpg',
+        alt: 'Santa Ponsa 1 course layout and fairways',
+        captions: {
+          de: 'Das Layout. An einem ruhigen Tag schmeichelt dieser Platz. Mit Wind verdient er jeden seiner Meter.',
+          es: 'El trazado. En un día tranquilo, este campo te halaga. Añade viento y se gana cada metro de su longitud.',
+          fr: 'Le tracé. Par temps calme, ce parcours vous flatte. Ajoutez du vent et il mérite chaque mètre de sa longueur.',
+          nl: 'De lay-out. Op een rustige dag vleit deze baan je. Voeg wind toe en hij verdient elke meter van zijn lengte.',
+          sv: 'Banlayouten. En lugn dag smickrar den här banan dig. Lägg till vind och den förtjänar varje meter av sin längd.',
+          zh: '球场布局。平静的天气里这个球场会让你发挥得很好。加上风，它就值得每一码的长度。',
+        },
+      },
+      // sp-3.jpg — after European Tour paragraph (index 7), before Mountain Views heading
+      {
+        insertAfterIndex: 7,
+        src: '/images/santa-ponsa-blog/sp-3.jpg',
+        alt: 'Santa Ponsa 1 approach to a par 3',
+        captions: {
+          de: 'Das Tramuntana-Gebirge dahinter. Die Löcher 5, 6 und 7 bieten die besten Bergblicke.',
+          es: 'Las montañas de la Tramuntana al fondo. Los hoyos 5, 6 y 7 tienen las mejores vistas a la montaña.',
+          fr: 'Les montagnes de la Tramuntana en arrière-plan. Les trous 5, 6 et 7 offrent les meilleures vues sur les montagnes.',
+          nl: 'De Tramuntana-bergen op de achtergrond. Holes 5, 6 en 7 hebben de beste bergzichten.',
+          sv: 'Tramuntana-bergen bakom. Hål 5, 6 och 7 har de bästa bergsuyerna.',
+          zh: '身后是特拉蒙塔纳山脉。第5、6、7洞有最好的山景。',
+        },
+      },
+      // sp-5.jpg — after Mountain Views paragraph (index 9), before facts
+      {
+        insertAfterIndex: 9,
+        src: '/images/santa-ponsa-blog/sp-5.jpg',
+        alt: 'Andy Griffiths at Santa Ponsa 1 early morning',
+        captions: {
+          de: 'Früher Start. Bis zum späten Vormittag findet der Wind normalerweise seinen Weg auf den Platz.',
+          es: 'Comienzo temprano. A media mañana el viento suele encontrar el campo.',
+          fr: 'Départ matinal. En milieu de matinée, le vent trouve généralement son chemin sur le parcours.',
+          nl: 'Vroeg begin. Tegen de late ochtend vindt de wind meestal zijn weg naar de baan.',
+          sv: 'Tidig start. I mitten av förmiddagen hittar vinden vanligtvis sin väg till banan.',
+          zh: '早起出发。到上午中段，风通常就会找上球场。',
+        },
+      },
+    ],
+  },
+}
+
+function applyPostImagePatches(slug, locale, blocks) {
+  const patch = POST_IMAGE_PATCHES[slug]
+  if (!patch) return blocks
+
+  const result = [...blocks]
+
+  // Sort highest index first so earlier indices stay stable during splice
+  const sorted = [...patch.insertions].sort((a, b) => b.insertAfterIndex - a.insertAfterIndex)
+
+  for (const insertion of sorted) {
+    const block = {
+      type: 'image',
+      src: insertion.src,
+      alt: insertion.alt,
+      ...(insertion.captions[locale] ? { caption: insertion.captions[locale] } : {}),
+    }
+
+    if (insertion.insertAfterIndex === -1) {
+      result.unshift(block)
+    } else {
+      result.splice(insertion.insertAfterIndex + 1, 0, block)
+    }
+  }
+
+  return result
+}
+
 export function getLocalizedGuidePostContent(slug, locale) {
-  return LOCALIZED_GUIDE_POST_CONTENT[slug]?.[locale] || null
+  const content = LOCALIZED_GUIDE_POST_CONTENT[slug]?.[locale]
+  if (!content) return null
+
+  return {
+    ...content,
+    blocks: applyPostImagePatches(slug, locale, content.blocks),
+  }
 }
