@@ -79,6 +79,10 @@ function renderBlock(block, index, imageOrdinal) {
     )
   }
 
+  if (process.env.NODE_ENV === 'development') {
+    console.warn(`[GuidePostView] Unknown block type "${block.type}" at index ${index}`)
+  }
+
   return null
 }
 

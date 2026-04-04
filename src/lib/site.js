@@ -17,13 +17,13 @@ const SHARED_BASE_PATHS = new Set([
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es'])
 
-const LIVE_GUIDE_SLUGS = new Set([
+export const REVIEW_POST_SLUGS = new Set([
   'son-gual-review',
   'alcanada-review',
   'santa-ponsa-1-review',
 ])
 
-const DRAFT_GUIDE_SLUGS = new Set([
+export const ARTICLE_SLUGS = new Set([
   'a-day-at-son-gual',
   'best-golf-courses-mallorca',
   'best-time-play-golf-mallorca',
@@ -79,16 +79,28 @@ export function getGuideSlug(pathname = '/') {
 }
 
 export function isLiveGuideSlug(slug) {
-  return LIVE_GUIDE_SLUGS.has(slug)
+  return REVIEW_POST_SLUGS.has(slug)
 }
 
 export function isDraftGuideSlug(slug) {
-  return DRAFT_GUIDE_SLUGS.has(slug)
+  return ARTICLE_SLUGS.has(slug)
+}
+
+export function isReviewPostSlug(slug) {
+  return REVIEW_POST_SLUGS.has(slug)
+}
+
+export function isArticleSlug(slug) {
+  return ARTICLE_SLUGS.has(slug)
+}
+
+export function isPublishedGuideSlug(slug) {
+  return isReviewPostSlug(slug) || isArticleSlug(slug)
 }
 
 export function isDraftGuidePath(pathname = '/') {
   const slug = getGuideSlug(pathname)
-  return Boolean(slug && isDraftGuideSlug(slug))
+  return Boolean(slug && isArticleSlug(slug))
 }
 
 export function hasLocaleRoute(pathname = '/', locale = 'en') {
@@ -100,8 +112,8 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
   if (!basePath.startsWith('/guides/')) return false
 
   const slug = getGuideSlug(basePath)
-  if (isLiveGuideSlug(slug)) return true
-  if (isDraftGuideSlug(slug)) return ALL_LOCALES.includes(locale)
+  if (isReviewPostSlug(slug)) return true
+  if (isArticleSlug(slug)) return ALL_LOCALES.includes(locale)
 
   return false
 }
@@ -173,7 +185,13 @@ export function getSitemapPaths() {
     }
   }
 
-  for (const slug of LIVE_GUIDE_SLUGS) {
+  for (const slug of REVIEW_POST_SLUGS) {
+    for (const locale of ALL_LOCALES) {
+      paths.push(buildLocalePath(`/guides/${slug}`, locale))
+    }
+  }
+
+  for (const slug of ARTICLE_SLUGS) {
     for (const locale of ALL_LOCALES) {
       paths.push(buildLocalePath(`/guides/${slug}`, locale))
     }

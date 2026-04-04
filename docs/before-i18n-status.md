@@ -1,5 +1,16 @@
 # Mr Mallorca Golf: Plain-English Project Status
 
+Historical note:
+
+This file describes the project before the multilingual rebuild was fully completed.
+Keep it as historical reference, not as the current operating guide.
+
+For current guidance, use:
+
+- [site-rebuild-guide.md](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/docs/site-rebuild-guide.md)
+- [site-handover-guide.md](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/docs/site-handover-guide.md)
+- [site-quickstart.md](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/docs/site-quickstart.md)
+
 ## What we fixed before i18n
 
 - The sitemap was cleaned up so it only lists real live pages.

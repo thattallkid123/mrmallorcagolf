@@ -1,22 +1,21 @@
 # Translation Workflow
 
-## Simple idea
+## Core Model
 
-- One shared page structure.
-- One English source.
-- One translation data file per language.
-- Fewer duplicated React pages.
+- one shared page structure
+- one English source
+- one localized content layer
+- one shared renderer system
 
-This is the direction of the draft branch.
+The goal is simple:
 
-## Source of truth
+- English defines structure
+- localized pages mirror English structure
+- only the text changes by locale unless there is a deliberate design reason not to
 
-- English is the source copy.
-- Non-English locales should be updated from structured content files, not by duplicating whole page components.
+## Current State
 
-## Current state
-
-The draft branch already has shared English content files for:
+The multilingual architecture is now in place for:
 
 - homepage
 - about
@@ -24,54 +23,102 @@ The draft branch already has shared English content files for:
 - coaching
 - play-with-a-pro
 - guides index
-- all English guide/blog posts
-- golf-courses English content and wrapper
+- upcoming guide articles
+- live review posts
+- golf-courses
 
-The next phase is moving the remaining non-English routes onto the same system.
+English is now the source of truth across the shared content system.
 
-Already shared across locales:
+## Source Files
 
-- guides index pages
-- live guide-review pages for `de`, `es`, and `fr`
+### English source files
 
-Still to finish:
+- `src/lib/homepage-content.js`
+- `src/lib/about-content.js`
+- `src/lib/coaching-content.js`
+- `src/lib/contact-content.js`
+- `src/lib/play-with-a-pro-content.js`
+- `src/lib/guides-content.js`
+- `src/lib/guide-article-content.js`
+- `src/lib/guide-post-content.js`
+- `src/lib/golf-courses-content.js`
+- `src/lib/golf-courses-data.js`
 
-- live guide-review pages for `nl`, `sv`, and `zh`
-- the non-English marketing-page families
-- deeper non-English golf-courses rollout
+### Localized source files
 
-## Update flow
+- `src/lib/guide-article-content-localized.js`
+- `src/lib/guide-post-content-localized.js`
+- locale sections inside the main shared page files above
+- `src/lib/golf-courses-translations.js`
 
-1. Update the English source content.
-2. Draft translations only for the changed keys or changed sections.
-3. Review each locale for meaning, tone, and golf terminology.
-4. Run `npm run check:text`.
-5. Run `npm run check:locale`.
-6. Run `npm run build`.
-7. Commit and push to the draft branch as a checkpoint.
-8. Release slowly, page family by page family.
+## Translation Standard
 
-## Translation standards
+Translations should be:
 
-- Meaning matters more than literal sentence shape.
-- Natural local phrasing is better than stiff direct translation.
-- Course names should not be translated.
-- Credentials such as `UK PGA Advanced Professional` should stay consistent.
-- Golf terms should be used consistently by language.
-- Avoid leaving English labels, CTAs, or body paragraphs inside non-English routes.
+- native sounding
+- golf-appropriate
+- calm and premium
+- structurally aligned to English
 
-## Quality checks
+Translations should not be:
 
-- Use `check:text` to catch broken characters.
-- Use `check:locale` to catch obvious locale mistakes.
-- Compare the draft page against the live/original page before release.
-- For important pages, do a final human review before publishing.
+- literal
+- brochure-like
+- tacky
+- structurally different from English
 
-## Best release pattern
+## Recommended Translation Process
 
-- Keep using a draft branch.
-- Push small checkpoints often.
-- Review the branch preview.
-- Merge or release only one slice at a time.
+1. Finalize the English page first.
+2. Translate only the changed sections or changed page.
+3. Use the premium translation prompt.
+4. Run the second-pass translation review prompt.
+5. Insert the final localized copy into the shared source files.
+6. Run:
+   - `npm run check:i18n-release`
+   - `npm run build`
+7. Review the hosted preview on desktop and mobile.
 
-This lowers risk and makes it much easier to spot what changed if something looks wrong.
+## Prompt Files
+
+- [translation-master-prompt.txt](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/docs/translation-master-prompt.txt)
+- [translation-language-notes.txt](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/docs/translation-language-notes.txt)
+- [translation-qa-checklist.txt](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/docs/translation-qa-checklist.txt)
+
+## Translation Order
+
+Best working order:
+
+1. Spanish
+2. German
+3. French
+4. Dutch
+5. Swedish
+6. Chinese
+
+## Quality Rules
+
+- Course names remain unchanged.
+- Prices, dates, and stats must remain accurate.
+- CTA tone should match the body tone.
+- Fact boxes, image order, block order, and captions should stay aligned to English.
+- Hidden English fallback is a bug.
+- Mojibake is a bug.
+
+## Release Checks
+
+Run all of these before pushing:
+
+- `npm run check:text`
+- `npm run check:locale`
+- `npm run check:shared-locale`
+- `npm run check:i18n-release`
+- `npm run build`
+
+## Best Practical Advice
+
+If usage is limited:
+
+- use Claude or another model to draft and refine translation
+- use Codex to place it into the repo correctly
+- use Codex to run the checks and catch layout, route, and locale drift issues

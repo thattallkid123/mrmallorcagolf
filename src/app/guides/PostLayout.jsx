@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getGuidePath, isLiveGuideSlug } from '../../lib/site'
+import { getGuidePath, isPublishedGuideSlug } from '../../lib/site'
 
 const SIDEBAR_COPY = {
   en: { experience: 'The Experience', h3: 'Play one of these courses with a PGA professional alongside you.', p: 'Private days on Son Gual, Alcanada, and beyond. Everything arranged. On-course coaching throughout.', seeExp: 'See the Experiences', contact: 'Get in Touch', moreGuides: 'More Guides', allGuides: 'All guides', home: 'Home', guidesLabel: 'Guides' },
@@ -26,7 +26,7 @@ export default function PostLayout({ children, meta, lang }) {
   const c = SIDEBAR_COPY[l] || SIDEBAR_COPY.en
   const updatedLabel = UPDATED_LABELS[l] || UPDATED_LABELS.en
   const pre = l === 'en' ? '' : `/${l}`
-  const relatedGuides = meta.related.filter((guide) => isLiveGuideSlug(guide.slug))
+  const relatedGuides = meta.related.filter((guide) => isPublishedGuideSlug(guide.slug))
 
   return (
     <div className="post-wrap">

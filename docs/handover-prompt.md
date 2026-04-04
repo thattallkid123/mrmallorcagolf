@@ -1,87 +1,91 @@
 # Handover Prompt
 
-Use this with Claude Opus or another review model to get a clean audit before continuing implementation.
+Use this with Claude Opus or another review model when you want a fresh audit of the site without losing the shared-system context.
 
 ## Repo
 
-- `C:\\Users\\andyg\\Downloads\\mrmallorcagolf-nextjs\\mrmallorcagolf`
+- `C:\\Users\\andyg\\Desktop\\cursor\\mrmallorcagolf-real`
 
-## Branch
+## Branches
+
+- `main`
+  - the current real multilingual site
+
+- `legacy-live-pre-i18n`
+  - the old site before the multilingual rebuild
+
+- `live-i18n-premium`
+  - named branch holding the new multilingual premium version
 
 - `i18n-premium-draft`
+  - staging branch for future changes
 
 ## Context
 
-This project started with major SEO, sitemap, canonical, hreflang, multilingual content, encoding, and form-flow issues.
-Those technical fixes have already been completed.
+This site went through a major multilingual rebuild.
 
-The current branch is a safe draft branch and is not live.
+Key principles now are:
 
-English is now the shared master source for the main site and guide/blog system.
+- English is the shared source of truth
+- localized pages should mirror English structure
+- shared content files should be edited instead of duplicated locale page files
+- mojibake and hidden English fallback are bugs
+- shared release checks should be run before publishing
 
-## What is already done
+## What Is Already Done
 
-- SEO cleanup:
-  - sitemap
-  - robots
-  - canonicals
-  - host unification to non-`www`
-  - draft-guide noindex handling
-- Form and questionnaire fixes:
-  - enquiry form works
-  - questionnaire works
-  - both tested live previously
-- Performance and technical cleanup:
-  - static rendering restored
-  - fonts moved to `next/font`
-  - image compression and some `next/image` adoption
-  - analytics banner removed again
-- Shared English content architecture:
-  - homepage
-  - about
-  - contact
-  - coaching
-  - play-with-a-pro
-  - guides index
-  - all English guide/blog posts
-  - golf-courses English wrapper/content cleanup
-- Shared guides rollout:
-  - guides index shared across all locales
-  - live guide-review shared renderer in place for:
-    - `en`
-    - `de`
-    - `es`
-    - `fr`
+- shared architecture for the major page families
+- shared renderer system for guide articles and live review posts
+- branch cleanup so old and new site versions are clearly named
+- premium design pass on typography, spacing, and guide/review media treatment
+- multilingual cleanup across the shared content layers
+- stricter release checks for text corruption, locale parity, and hidden fallback
 
-## What is still unfinished
+## Current Shared Source Files
 
-- Remaining shared live guide-review rollout for:
-  - `nl`
-  - `sv`
-  - `zh`
-- Non-English shared rollout for:
-  - homepage
-  - about
-  - contact
-  - coaching
-  - play-with-a-pro
-  - golf-courses
-- Final premium design / mobile / readability / CTA polish review on the draft branch
+- `src/lib/homepage-content.js`
+- `src/lib/about-content.js`
+- `src/lib/coaching-content.js`
+- `src/lib/contact-content.js`
+- `src/lib/play-with-a-pro-content.js`
+- `src/lib/guides-content.js`
+- `src/lib/guide-article-content.js`
+- `src/lib/guide-article-content-localized.js`
+- `src/lib/guide-post-content.js`
+- `src/lib/guide-post-content-localized.js`
+- `src/lib/golf-courses-data.js`
+- `src/lib/golf-courses-content.js`
+- `src/lib/golf-courses-translations.js`
 
-## What I want from you
+## Current Shared Renderers
 
-1. Audit the current draft branch architecture and tell me if the shared-content direction is correct.
-2. Identify the most important remaining release blockers.
-3. Identify any hidden risks before rolling non-English pages onto the shared system.
-4. Review the code/design structure for anything obviously likely to regress during rollout.
-5. Produce a concise next-step plan that I can give back to Codex.
+- `src/app/guides/GuideArticleView.jsx`
+- `src/app/guides/GuidePostView.jsx`
+- `src/app/guides/PostLayout.jsx`
+- `src/components/FillImageFrame.jsx`
+- `src/styles/globals.css`
+
+## Checks To Respect
+
+- `npm run check:text`
+- `npm run check:locale`
+- `npm run check:shared-locale`
+- `npm run check:i18n-release`
+- `npm run build`
+
+## What I Want From You
+
+1. Audit the current branch with the assumption that English is the structural source of truth.
+2. Identify any remaining risks in shared content, localized content, or guide/review layout parity.
+3. Flag anything that could weaken the premium editorial feel of the blogs or main marketing pages.
+4. Give me a concise next-step plan that does not reintroduce duplicated locale architecture.
 
 ## Priority
 
 Optimize for:
 
-- safest rollout path
+- safest future workflow
 - fewer duplicated page files
-- preserving SEO and routes
 - preserving premium design feel
-- making English the source of truth for future translation work
+- keeping English as the source of truth
+- making future blog uploads and translation passes easy to repeat

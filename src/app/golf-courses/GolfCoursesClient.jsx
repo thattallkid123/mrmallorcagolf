@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { buildLocalePath } from '../../lib/site'
@@ -35,7 +35,7 @@ function CourseCard({ c, lang = 'en' }) {
           {c.badges.length > 0 && (
             <div className="course__badges">
               {c.badges.map((badge, i) => {
-                const isExpertBadge = badge.startsWith('★') || badge.startsWith('â˜…')
+                const isExpertBadge = badge.startsWith('★')
                 return (
                   <span key={i} className={`badge ${isExpertBadge ? 'badge--expert' : badge.includes('Members') ? 'badge--members' : 'badge--award'}`}>{badge}</span>
                 )
@@ -80,6 +80,29 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   const contactHref = buildLocalePath('/contact', lang)
   const experiencesHref = buildLocalePath('/play-with-a-pro', lang)
 
+  useEffect(() => {
+    const scrollToHash = () => {
+      if (typeof window === 'undefined') return
+      const hash = window.location.hash?.replace(/^#/, '')
+      if (!hash) return
+
+      const target = document.getElementById(hash)
+      if (!target) return
+
+      requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      })
+    }
+
+    const timeoutId = window.setTimeout(scrollToHash, 120)
+    window.addEventListener('hashchange', scrollToHash)
+
+    return () => {
+      window.clearTimeout(timeoutId)
+      window.removeEventListener('hashchange', scrollToHash)
+    }
+  }, [])
+
   const visibleRegions = GOLF_COURSE_DATA.filter((region) => {
     if (activeFilter === 'all') return true
     if (activeFilter === 'expert') return region.courses.some((course) => course.expert)
@@ -104,7 +127,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
                   const id = getShortCourseId(name)
                   return (
                     <span key={j}>
-                      {j > 0 && <span style={{ color: 'var(--stone)' }}> · </span>}
+                      {j > 0 && <span style={{ color: 'var(--stone)' }}> Â· </span>}
                       <a href={`#${id}`} style={{ color: j % 2 === 0 ? 'var(--pine)' : 'var(--charcoal)', textDecoration: 'none', fontWeight: 400 }} onMouseOver={(e) => { e.currentTarget.style.textDecoration = 'underline' }} onMouseOut={(e) => { e.currentTarget.style.textDecoration = 'none' }}>{name}</a>
                     </span>
                   )

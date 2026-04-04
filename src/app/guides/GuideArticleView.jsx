@@ -153,6 +153,10 @@ function renderBlock(block, index, locale, imageOrdinal) {
     )
   }
 
+  if (process.env.NODE_ENV === 'development') {
+    console.warn(`[GuideArticleView] Unknown block type "${block.type}" at index ${index}`)
+  }
+
   return null
 }
 

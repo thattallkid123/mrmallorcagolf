@@ -25,6 +25,14 @@ export const SHORT_TO_ID = {
   'Golf Pollensa': 'golf-pollensa',
 }
 
+export const COURSE_DESTINATIONS = {
+  'Son Gual': { type: 'review', slug: 'son-gual-review' },
+  Alcanada: { type: 'review', slug: 'alcanada-review' },
+  'Santa Ponsa 1': { type: 'review', slug: 'santa-ponsa-1-review' },
+  'Son Muntaner': { type: 'guide', id: 'son-muntaner' },
+  'Golf de Andratx': { type: 'guide', id: 'golf-de-andratx' },
+}
+
 export function slugifyCourseName(name) {
   return name
     .toLowerCase()
@@ -50,4 +58,22 @@ export function getShortCourseId(name) {
   )
 
   return match ? match[1] : slugifyCourseName(name)
+}
+
+export function getCourseDestination(name, locale = 'en') {
+  const destination = COURSE_DESTINATIONS[name]
+
+  if (!destination) return null
+
+  if (destination.type === 'review') {
+    const path = `/guides/${destination.slug}`
+    return locale === 'en' ? path : `/${locale}${path}`
+  }
+
+  if (destination.type === 'guide') {
+    const path = `/golf-courses#${destination.id}`
+    return locale === 'en' ? path : `/${locale}${path}`
+  }
+
+  return null
 }
