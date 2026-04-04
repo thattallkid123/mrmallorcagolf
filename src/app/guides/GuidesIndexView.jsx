@@ -47,8 +47,11 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
       </header>
 
       <section style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(48px,8vw,96px) clamp(20px,4vw,40px)' }}>
+        {content.reviewsHeading && (
+          <h2 style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '2rem' }}>{content.reviewsHeading}</h2>
+        )}
         <div className="guides-list">
-          {content.liveGuides.map((guide) => (
+          {content.liveGuides.filter((g) => g.slug.endsWith('-review')).map((guide) => (
             <Link
               key={guide.slug}
               href={`${prefix}/guides/${guide.slug}`}
@@ -63,21 +66,26 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
               <p className="guide-entry__keywords">{guide.keywords}</p>
             </Link>
           ))}
+        </div>
 
-          {content.comingSoonGuides.map((guide) => (
-            <div
+        {content.articlesHeading && (
+          <h2 style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold)', margin: 'clamp(40px,6vw,72px) 0 2rem' }}>{content.articlesHeading}</h2>
+        )}
+        <div className="guides-list">
+          {content.liveGuides.filter((g) => !g.slug.endsWith('-review')).map((guide) => (
+            <Link
               key={guide.slug}
-              className="guide-entry guide-entry--coming-soon reveal"
+              href={`${prefix}/guides/${guide.slug}`}
+              className="guide-entry guide-entry--live reveal"
             >
               <div className="guide-entry__meta">
-                <span className="guide-entry__badge guide-entry__badge--muted">{guide.badge}</span>
+                <span className="guide-entry__badge">{guide.badge}</span>
                 <span className="guide-entry__read-time">{guide.readTime}</span>
-                <span className="guide-entry__status">{content.comingSoonLabel}</span>
               </div>
               <h2 className="guide-entry__title">{guide.title}</h2>
               <p className="guide-entry__intro">{guide.intro}</p>
               <p className="guide-entry__keywords">{guide.keywords}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
