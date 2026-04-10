@@ -301,9 +301,11 @@ export default function HomePageInner({ locale = 'en' }) {
                   <li key={feature}>{feature}</li>
                 ))}
               </ul>
-              <p className="package__price" style={{ marginTop: '1.25rem', marginBottom: pkg.note ? '0.5rem' : '1.25rem', color: pkg.featured ? 'var(--gold-light)' : undefined }}>
-                {pkg.price}
-              </p>
+              {pkg.price && (
+                <p className="package__price" style={{ marginTop: '1.25rem', marginBottom: pkg.note ? '0.5rem' : '1.25rem', color: pkg.featured ? 'var(--gold-light)' : undefined }}>
+                  {pkg.price}
+                </p>
+              )}
               {pkg.note && <p className={`package__note${pkg.featured ? ' package__note--featured' : ''}`}>{pkg.note}</p>}
               <Link href={contactHref} className={`btn ${pkg.featured ? 'btn--gold' : 'btn--dark'}`}>
                 {pkg.cta}

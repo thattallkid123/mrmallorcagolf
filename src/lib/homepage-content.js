@@ -1728,6 +1728,401 @@ for (const [locale, override] of Object.entries(HOME_HUMANIZED_OVERRIDES)) {
   HOME_CONTENT[locale] = deepMerge(HOME_CONTENT[locale], override)
 }
 
+const HOME_NO_PRICE_OVERRIDES = {
+  en: {
+    intro: {
+      stats: [
+        { value: '22', label: 'Courses on the island' },
+        { value: 'Private', label: 'Solo and small-group days' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      intro: 'Both are private, arranged by me, and played on one of the island\'s finest courses. Pricing is shared when we speak, not hidden behind a booking engine.',
+      items: [
+        {
+          note: 'Pricing shared personally once I know your dates, group size, and the right course for the day.',
+          price: null,
+        },
+        {
+          note: 'A fixed day rate for Andy, with the exact course plan and green fees confirmed when we speak.',
+          price: null,
+        },
+      ],
+      multiDay: {
+        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond — with private transfers, handpicked dining, and access to courses most visitors cannot book. Pricing is shared once I know your dates and what kind of trip you want.',
+      },
+    },
+  },
+  de: {
+    intro: {
+      stats: [
+        { value: '22', label: 'Plätze auf der Insel' },
+        { value: 'Privat', label: 'Solo- und Kleingruppentage' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      intro: 'Beide Varianten sind privat, werden von mir persönlich begleitet und auf einem der besten Plätze der Insel gespielt. Über den Preis sprechen wir direkt, sobald ich Ihre Daten und die passende Runde kenne.',
+      items: [
+        {
+          note: 'Den Preis teile ich Ihnen persönlich mit, sobald ich Ihre Reisedaten, Gruppengröße und den passenden Platz kenne.',
+          price: null,
+        },
+        {
+          note: 'Für Gruppen gilt ein fester Tagessatz für Andy; Platzwahl und Greenfees bestätigen wir gemeinsam im Gespräch.',
+          price: null,
+        },
+      ],
+      multiDay: {
+        body: 'Zwei oder drei aufeinanderfolgende Tage über Son Gual, Alcanada und weitere Plätze hinweg — mit privaten Transfers, sorgfältig ausgewählter Gastronomie und Zugang zu Plätzen, die die meisten Besucher nicht buchen können. Den Preis bespreche ich mit Ihnen, sobald ich Ihre Daten und den gewünschten Rahmen kenne.',
+      },
+    },
+  },
+  es: {
+    intro: {
+      stats: [
+        { value: '22', label: 'campos en la isla' },
+        { value: 'Privado', label: 'días para uno o grupos pequeños' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      intro: 'Ambas opciones son privadas, las organizo personalmente y se juegan en algunos de los mejores campos de la isla. El precio se comparte cuando hablamos, no dentro de un sistema de reserva frío.',
+      items: [
+        {
+          note: 'Le comparto el precio personalmente cuando conozca sus fechas, el tamaño del grupo y el campo adecuado para el día.',
+          price: null,
+        },
+        {
+          note: 'Para grupos hay una tarifa fija del día de Andy; el plan exacto y los green fees se confirman al hablar.',
+          price: null,
+        },
+      ],
+      multiDay: {
+        body: 'Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, restaurantes elegidos con criterio y acceso a campos que la mayoría de los visitantes no puede reservar. El precio se comparte cuando conozca sus fechas y el tipo de viaje que quiere hacer.',
+      },
+    },
+  },
+  fr: {
+    intro: {
+      stats: [
+        { value: '22', label: 'parcours sur l’île' },
+        { value: 'Privé', label: 'journées solo et petits groupes' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      intro: 'Les deux formats sont privés, organisés personnellement par moi, et joués sur l’un des plus beaux parcours de l’île. Le tarif est partagé lors de notre échange, pas affiché comme sur une simple plateforme de réservation.',
+      items: [
+        {
+          note: 'Je vous communique le tarif personnellement une fois vos dates, la taille du groupe et le bon parcours définis.',
+          price: null,
+        },
+        {
+          note: 'Pour les groupes, il y a un tarif fixe pour la journée d’Andy ; le déroulé précis et les green fees sont confirmés ensemble.',
+          price: null,
+        },
+      ],
+      multiDay: {
+        body: 'Deux ou trois jours consécutifs entre Son Gual, Alcanada et au-delà, avec transferts privés, belles tables soigneusement choisies et accès à des parcours que la plupart des visiteurs ne peuvent pas réserver. Le tarif est communiqué une fois vos dates et le type de séjour définis.',
+      },
+    },
+  },
+  nl: {
+    intro: {
+      stats: [
+        { value: '22', label: 'banen op het eiland' },
+        { value: 'Privé', label: 'dagen voor solo en kleine groepen' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      intro: 'Beide opties zijn privé, worden persoonlijk door mij begeleid en gespeeld op een van de beste banen van het eiland. De prijs deel ik wanneer we spreken, niet als een koud boekingsblok op de homepage.',
+      items: [
+        {
+          note: 'Ik deel de prijs persoonlijk zodra ik uw data, groepsgrootte en de juiste baan voor die dag ken.',
+          price: null,
+        },
+        {
+          note: 'Voor groepen geldt een vaste dagprijs voor Andy; het precieze plan en de greenfees bevestigen we samen.',
+          price: null,
+        },
+      ],
+      multiDay: {
+        body: 'Twee of drie opeenvolgende dagen langs Son Gual, Alcanada en meer, met privétransfers, zorgvuldig gekozen restaurants en toegang tot banen die de meeste bezoekers niet kunnen boeken. De prijs bespreek ik zodra ik uw data en het soort reis ken dat u wilt.',
+      },
+    },
+  },
+  sv: {
+    intro: {
+      stats: [
+        { value: '22', label: 'banor på ön' },
+        { value: 'Privat', label: 'dagar för solo och små grupper' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      intro: 'Båda alternativen är privata, leds personligen av mig och spelas på någon av öns bästa banor. Priset delar jag när vi pratar, inte som en stel prisruta på startsidan.',
+      items: [
+        {
+          note: 'Jag delar priset personligen när jag vet dina datum, gruppstorlek och vilken bana som passar bäst för dagen.',
+          price: null,
+        },
+        {
+          note: 'För grupper gäller ett fast dagspris för Andy; exakt upplägg och green fees bekräftas när vi pratar.',
+          price: null,
+        },
+      ],
+      multiDay: {
+        body: 'Två eller tre dagar i följd över Son Gual, Alcanada och vidare, med privata transfers, noggrant utvalda restauranger och tillgång till banor som de flesta besökare inte kan boka. Priset delar jag när jag känner till dina datum och vilken typ av resa du vill ha.',
+      },
+    },
+  },
+  zh: {
+    intro: {
+      stats: [
+        { value: '22', label: '岛上球场数量' },
+        { value: '私人', label: '单人或小团体安排' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      intro: '两种方案都是私人定制，由我亲自陪同，也都会安排在岛上最值得打的球场之一。价格会在沟通后明确告知，而不是在首页像普通预订页一样直接摆出来。',
+      items: [
+        {
+          note: '当我了解您的日期、人数以及最适合的球场之后，会亲自把价格发给您。',
+          price: null,
+        },
+        {
+          note: '小组方案按 Andy 的固定日费安排，具体球场与果岭费会在沟通后确认。',
+          price: null,
+        },
+      ],
+      multiDay: {
+        body: '连续两到三天，安排 Son Gual、Alcanada 以及更多球场，包含私人接送、精心挑选的餐饮，以及多数访客订不到的球场机会。价格会在了解您的日期和想要的行程之后再与您确认。',
+      },
+    },
+  },
+}
+
+for (const [locale, override] of Object.entries(HOME_NO_PRICE_OVERRIDES)) {
+  HOME_CONTENT[locale] = deepMerge(HOME_CONTENT[locale], override)
+}
+
+const HOME_PACKAGE_ITEMS = {
+  en: [
+    {
+      tier: 'Solo',
+      name: 'A Day With Andy',
+      features: [
+        'Course matched to your game and handicap',
+        'Tee time secured and fully handled',
+        'Pre-round game plan and warm-up',
+        '18 holes playing alongside Andy',
+        'On-course insight — where it can still change the hole',
+        'Long lunch at the course restaurant',
+        'Green fee included',
+      ],
+      note: 'I share the price personally once I know your dates, group size, and which course suits the day best.',
+      cta: 'Enquire',
+    },
+    {
+      tier: 'Group of 2 to 4',
+      name: 'A Day With Andy',
+      featured: true,
+      features: [
+        'Private day built for pairs and small groups',
+        'Up to 4 players — one fixed day rate for Andy',
+        'Works well for pairs, small groups, corporate',
+        'Green fees additional — confirmed when we speak',
+      ],
+      note: 'For groups, Andy\'s day rate stays fixed; final course choice and green fees are confirmed when we speak.',
+      cta: 'Enquire',
+    },
+  ],
+  de: [
+    {
+      tier: 'Solo',
+      name: 'Ein Tag mit Andy',
+      features: [
+        'Platz passend zu Ihrem Spiel und Handicap',
+        'Startzeit gesichert und komplett organisiert',
+        'Spielplan und Warm-up vor der Runde',
+        '18 Löcher an Andys Seite',
+        'On-course-Einsichten genau dann, wenn sie noch etwas verändern können',
+        'Langes Mittagessen im Clubrestaurant',
+        'Greenfee inklusive',
+      ],
+      note: 'Den Preis teile ich Ihnen persönlich mit, sobald ich Ihre Reisedaten, Gruppengröße und den passenden Platz kenne.',
+      cta: 'Anfragen',
+    },
+    {
+      tier: 'Gruppe von 2 bis 4',
+      name: 'Ein Tag mit Andy',
+      featured: true,
+      features: [
+        'Privater Tag für Paare und kleine Gruppen',
+        'Bis zu 4 Spieler - ein fester Tagessatz für Andy',
+        'Ideal für Freunde, kleine Gruppen und Firmenrunden',
+        'Greenfees zusätzlich - wir bestätigen sie im Gespräch',
+      ],
+      note: 'Für Gruppen gilt ein fester Tagessatz für Andy; Platzwahl und Greenfees bestätigen wir gemeinsam im Gespräch.',
+      cta: 'Anfragen',
+    },
+  ],
+  es: [
+    {
+      tier: 'Solo',
+      name: 'Un día con Andy',
+      features: [
+        'Campo elegido según su juego y su hándicap',
+        'Hora de salida asegurada y completamente gestionada',
+        'Plan de juego y calentamiento antes de la vuelta',
+        '18 hoyos junto a Andy',
+        'Observaciones en el campo cuando todavía pueden cambiar el hoyo',
+        'Almuerzo largo en el restaurante del club',
+        'Green fee incluido',
+      ],
+      note: 'Le comparto el precio personalmente cuando conozca sus fechas, el tamaño del grupo y el campo adecuado para el día.',
+      cta: 'Consultar',
+    },
+    {
+      tier: 'Grupo de 2 a 4',
+      name: 'Un día con Andy',
+      featured: true,
+      features: [
+        'Día privado para parejas y pequeños grupos',
+        'Hasta 4 jugadores - una tarifa fija por el día de Andy',
+        'Ideal para amigos, grupos pequeños y empresa',
+        'Green fees adicionales - se confirman al hablar',
+      ],
+      note: 'Para grupos hay una tarifa fija del día de Andy; el plan exacto y los green fees se confirman al hablar.',
+      cta: 'Consultar',
+    },
+  ],
+  fr: [
+    {
+      tier: 'Solo',
+      name: 'Une journée avec Andy',
+      features: [
+        'Parcours choisi selon votre jeu et votre index',
+        'Heure de départ sécurisée et entièrement gérée',
+        'Plan de jeu et échauffement avant la partie',
+        '18 trous aux côtés d’Andy',
+        'Observations sur le parcours au moment où elles peuvent encore changer quelque chose',
+        'Long déjeuner au restaurant du club',
+        'Green fee inclus',
+      ],
+      note: 'Je vous communique le tarif personnellement une fois vos dates, la taille du groupe et le bon parcours définis.',
+      cta: 'Demander',
+    },
+    {
+      tier: 'Groupe de 2 à 4',
+      name: 'Une journée avec Andy',
+      featured: true,
+      features: [
+        'Journée privée pour couples et petits groupes',
+        'Jusqu’à 4 joueurs - un tarif fixe pour la journée d’Andy',
+        'Parfait pour amis, petits groupes et entreprise',
+        'Green fees en plus - confirmés ensemble',
+      ],
+      note: 'Pour les groupes, il y a un tarif fixe pour la journée d’Andy ; le déroulé précis et les green fees sont confirmés ensemble.',
+      cta: 'Demander',
+    },
+  ],
+  nl: [
+    {
+      tier: 'Solo',
+      name: 'Een dag met Andy',
+      features: [
+        'Baan gekozen op basis van uw spel en handicap',
+        'Starttijd vastgelegd en volledig geregeld',
+        'Spelplan en warming-up voor de ronde',
+        '18 holes naast Andy',
+        'Inzichten op de baan wanneer ze nog echt iets kunnen veranderen',
+        'Uitgebreide lunch in het clubrestaurant',
+        'Greenfee inbegrepen',
+      ],
+      note: 'Ik deel de prijs persoonlijk zodra ik uw data, groepsgrootte en de juiste baan voor die dag ken.',
+      cta: 'Aanvragen',
+    },
+    {
+      tier: 'Groep van 2 tot 4',
+      name: 'Een dag met Andy',
+      featured: true,
+      features: [
+        'Privédag voor tweetallen en kleine groepen',
+        'Tot 4 spelers - één vaste dagprijs voor Andy',
+        'Werkt goed voor vrienden, kleine groepen en bedrijven',
+        'Greenfees extra - bevestigd wanneer we spreken',
+      ],
+      note: 'Voor groepen geldt een vaste dagprijs voor Andy; het precieze plan en de greenfees bevestigen we samen.',
+      cta: 'Aanvragen',
+    },
+  ],
+  sv: [
+    {
+      tier: 'Solo',
+      name: 'En dag med Andy',
+      features: [
+        'Bana vald efter ditt spel och handicap',
+        'Starttid säkrad och helt ordnad',
+        'Spelplan och uppvärmning före rundan',
+        '18 hål vid Andys sida',
+        'Insikter på banan när de fortfarande kan förändra hålet',
+        'Lång lunch i klubbrestaurangen',
+        'Green fee ingår',
+      ],
+      note: 'Jag delar priset personligen när jag vet dina datum, gruppstorlek och vilken bana som passar bäst för dagen.',
+      cta: 'Förfrågan',
+    },
+    {
+      tier: 'Grupp på 2 till 4',
+      name: 'En dag med Andy',
+      featured: true,
+      features: [
+        'Privat dag för par och små grupper',
+        'Upp till 4 spelare - ett fast dagspris för Andy',
+        'Passar vänner, små grupper och företag',
+        'Green fees tillkommer - bekräftas när vi pratar',
+      ],
+      note: 'För grupper gäller ett fast dagspris för Andy; exakt upplägg och green fees bekräftas när vi pratar.',
+      cta: 'Förfrågan',
+    },
+  ],
+  zh: [
+    {
+      tier: '单人',
+      name: '与 Andy 共度一天',
+      features: [
+        '按照您的球技与差点匹配球场',
+        '开球时间已预订并安排妥当',
+        '赛前计划与热身',
+        '与 Andy 同打 18 洞',
+        '在真正还来得及改变结果的时候给出场上观察',
+        '在球场餐厅享用悠长午餐',
+        '果岭费已包含',
+      ],
+      note: '当我了解您的日期、人数以及最适合的球场之后，会亲自把价格发给您。',
+      cta: '立即咨询',
+    },
+    {
+      tier: '2 到 4 人',
+      name: '与 Andy 共度一天',
+      featured: true,
+      features: [
+        '适合双人和小团体的私人高尔夫日',
+        '最多 4 位球手 - Andy 收取固定日费',
+        '适合朋友同行、小团体和商务接待',
+        '果岭费另计 - 沟通后确认',
+      ],
+      note: '小组方案按 Andy 的固定日费安排，具体球场与果岭费会在沟通后确认。',
+      cta: '立即咨询',
+    },
+  ],
+}
+
 const HOME_FEATURED_BADGE_MAP = {
   de: { 'Expert Pick': 'Expertenwahl', 'Best in Spain 2025': 'Bester Platz Spaniens 2025' },
   es: { 'Expert Pick': 'Selección personal', 'Best in Spain 2025': 'Mejor campo de España 2025' },
@@ -1829,10 +2224,27 @@ function localizeHomeFeaturedItems(items = [], locale = 'en') {
 
 export function getHomeContent(locale = 'en') {
   const content = HOME_CONTENT[locale] || HOME_CONTENT.en
-  if (locale === 'en') return content
+  const localizedPackageItems = HOME_PACKAGE_ITEMS[locale] || HOME_PACKAGE_ITEMS.en
+  const packages = content.packages
+    ? {
+        ...content.packages,
+        items: localizedPackageItems.map((item) => ({
+          ...item,
+          price: null,
+        })),
+      }
+    : content.packages
+
+  if (locale === 'en') {
+    return {
+      ...content,
+      packages,
+    }
+  }
 
   return {
     ...content,
+    packages,
     courses: content.courses
       ? {
           ...content.courses,
