@@ -139,7 +139,7 @@ export const HOME_CONTENT = {
       features: [
         {
           title: 'Everything arranged',
-          text: 'Course, tee time, transport, and lunch handled before you arrive.',
+          text: 'Course, tee time, and lunch handled before you arrive. Transport can be added if useful.',
         },
         {
           title: 'On-course coaching',
@@ -316,7 +316,7 @@ const HOME_OVERRIDES = {
       ],
       button: 'Erlebnisse ansehen',
       features: [
-        { title: 'Alles organisiert', text: 'Platz, Abschlagszeit, Transport und Mittagessen stehen vor Ihrer Ankunft fest.' },
+        { title: 'Alles organisiert', text: 'Platz, Abschlagszeit und Mittagessen stehen vor Ihrer Ankunft fest. Transport kann bei Bedarf ergänzt werden.' },
         { title: 'On-Course-Coaching', text: 'Hilfreiche Beobachtungen mitten in der Runde, wenn sie noch etwas verändern können.' },
         { title: 'Komplett privat', text: 'Nur Sie und ein PGA Advanced Professional. Keine Fremden in Ihrer Gruppe.' },
         { title: 'Mehr Zugang', text: 'Mitgliederplätze, die die meisten Besucher nicht selbst buchen können.' },
@@ -771,7 +771,7 @@ const HOME_OVERRIDES = {
       paragraphs: ['Ik heb meer dan tien jaar in China gecoacht, waar klanten echte verbetering verwachtten in plaats van vage aanmoedigingen.', 'Die achtergrond bepaalt elke ronde die ik begeleid. We spelen samen op een van de beste banen van Mallorca en de coaching komt precies op de momenten waarop die echt iets verandert.', 'Alles is geregeld vóór uw aankomst: baan, starttijd en lunch. Uw enige taak is spelen.'],
       button: 'Bekijk de ervaringen',
       features: [
-        { title: 'Alles geregeld', text: 'Baan, tee time, vervoer en lunch staan vast vóór uw aankomst.' },
+        { title: 'Alles geregeld', text: 'Baan, tee time en lunch staan vast vóór uw aankomst. Vervoer kan worden toegevoegd als dat handig is.' },
         { title: 'Coaching op de baan', text: 'Nuttige observaties midden in de ronde, zolang ze nog iets kunnen veranderen.' },
         { title: 'Volledig privé', text: 'Alleen u en een PGA Advanced Professional. Geen onbekenden in uw flight.' },
         { title: 'Toegang tot meer', text: 'Ledenbanen die de meeste bezoekers niet zelfstandig kunnen boeken.' },
@@ -866,7 +866,7 @@ const HOME_OVERRIDES = {
       paragraphs: ['Jag coachade i Kina i över ett decennium, där kunder förväntade sig verklig förbättring och inte tomma uppmuntringsord.', 'Den bakgrunden följer med i varje rond jag är värd för. Vi spelar tillsammans på en av Mallorcas bästa banor och coachingen kommer där den faktiskt gör skillnad.', 'Allt är ordnat innan du kommer: bana, starttid och lunch. Din enda uppgift den dagen är att spela.'],
       button: 'Se upplevelserna',
       features: [
-        { title: 'Allt ordnat', text: 'Bana, starttid, transport och lunch är klara innan du anländer.' },
+        { title: 'Allt ordnat', text: 'Bana, starttid och lunch är klara innan du anländer. Transport kan läggas till vid behov.' },
         { title: 'Coaching på banan', text: 'Användbara observationer mitt i rundan, medan de fortfarande kan förändra något.' },
         { title: 'Helt privat', text: 'Bara du och en PGA Advanced Professional. Inga främlingar i gruppen.' },
         { title: 'Tillgång till mer', text: 'Medlemsbanor som de flesta besökare inte kan boka själva.' },
