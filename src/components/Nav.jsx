@@ -9,8 +9,7 @@ const LANG_CONFIG = {
     links: [
       { href: '/', label: 'Home' },
       { href: '/about', label: 'About' },
-      { href: '/play-with-a-pro', label: 'Play with a Pro' },
-      { href: '/coaching', label: 'Coaching' },
+      { href: '/play-with-a-pro', label: 'The Day' },
       { href: '/golf-courses', label: 'Golf Courses' },
       { href: '/guides', label: 'Guides' },
     ],
@@ -20,8 +19,7 @@ const LANG_CONFIG = {
     links: [
       { href: '/de', label: 'Start' },
       { href: '/de/about', label: 'Über Andy' },
-      { href: '/de/play-with-a-pro', label: 'Mit Profi spielen' },
-      { href: '/de/coaching', label: 'Coaching' },
+      { href: '/de/play-with-a-pro', label: 'Der Tag' },
       { href: '/de/golf-courses', label: 'Plätze' },
       { href: '/de/guides', label: 'Ratgeber' },
     ],
@@ -31,8 +29,7 @@ const LANG_CONFIG = {
     links: [
       { href: '/fr', label: 'Accueil' },
       { href: '/fr/about', label: 'À propos' },
-      { href: '/fr/play-with-a-pro', label: 'Jouer avec un Pro' },
-      { href: '/fr/coaching', label: 'Coaching' },
+      { href: '/fr/play-with-a-pro', label: 'La Journée' },
       { href: '/fr/golf-courses', label: 'Parcours' },
       { href: '/fr/guides', label: 'Guides' },
     ],
@@ -42,8 +39,7 @@ const LANG_CONFIG = {
     links: [
       { href: '/es', label: 'Inicio' },
       { href: '/es/about', label: 'Sobre Andy' },
-      { href: '/es/play-with-a-pro', label: 'Jugar con un Pro' },
-      { href: '/es/coaching', label: 'Coaching' },
+      { href: '/es/play-with-a-pro', label: 'La Jornada' },
       { href: '/es/golf-courses', label: 'Campos' },
       { href: '/es/guides', label: 'Guías' },
     ],
@@ -53,8 +49,7 @@ const LANG_CONFIG = {
     links: [
       { href: '/zh', label: '首页' },
       { href: '/zh/about', label: '关于 Andy' },
-      { href: '/zh/play-with-a-pro', label: '与职业球手同场' },
-      { href: '/zh/coaching', label: '球场指导' },
+      { href: '/zh/play-with-a-pro', label: '预约球局' },
       { href: '/zh/golf-courses', label: '球场指南' },
       { href: '/zh/guides', label: '指南' },
     ],
@@ -64,8 +59,7 @@ const LANG_CONFIG = {
     links: [
       { href: '/sv', label: 'Hem' },
       { href: '/sv/about', label: 'Om Andy' },
-      { href: '/sv/play-with-a-pro', label: 'Spela med ett Proffs' },
-      { href: '/sv/coaching', label: 'Coaching' },
+      { href: '/sv/play-with-a-pro', label: 'Dagen' },
       { href: '/sv/golf-courses', label: 'Banor' },
       { href: '/sv/guides', label: 'Guider' },
     ],
@@ -75,8 +69,7 @@ const LANG_CONFIG = {
     links: [
       { href: '/nl', label: 'Home' },
       { href: '/nl/about', label: 'Over Andy' },
-      { href: '/nl/play-with-a-pro', label: 'Spelen met een Pro' },
-      { href: '/nl/coaching', label: 'Coaching' },
+      { href: '/nl/play-with-a-pro', label: 'De Dag' },
       { href: '/nl/golf-courses', label: 'Banen' },
       { href: '/nl/guides', label: 'Gidsen' },
     ],
@@ -136,7 +129,7 @@ export default function Nav({ transparent = false, lang }) {
             </li>
           ))}
           <li>
-            <Link href={config.cta.href} className="nav__cta">{config.cta.label}</Link>
+            <Link href={config.cta.href} className="nav__cta"><span>{config.cta.label}</span></Link>
           </li>
           <li>
             <div className="nav__lang">

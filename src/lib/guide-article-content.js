@@ -1,4 +1,5 @@
-import { getLocalizedGuideArticleContent } from './guide-article-content-localized'
+import { SITE_ORIGIN } from './site'
+import { getLocalizedGuideArticleContent } from './guide-article-content-localized.js'
 
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
@@ -6,7 +7,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
       description:
         'Golf costs in Mallorca 2026 - green fees, club hire, buggies, food. Complete breakdown from a PGA professional who plays here most weeks.',
-      canonical: 'https://mrmallorcagolf.com/guides/golf-cost-mallorca',
+      canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://mrmallorcagolf.com/images/courses/palma-pitch-putt.jpg',
       imageAlt: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
     },
@@ -144,7 +145,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       title: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
       description:
         'Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you are off the course. By a PGA professional based on the island.',
-      canonical: 'https://mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
+      canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
       image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg',
       imageAlt: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
     },
@@ -289,7 +290,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       title: 'The Best Time of Year to Play Golf in Mallorca - Month by Month (2026)',
       description:
         'When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island - weather, green fees, course conditions, and crowds.',
-      canonical: 'https://mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
+      canonical: 'https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
       image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg',
       imageAlt: 'The Best Time of Year to Play Golf in Mallorca - Month by Month (2026)',
     },
@@ -402,7 +403,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       title: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
       description:
         'The best golf courses in Mallorca ranked and reviewed by a PGA professional based on the island. Son Gual, Alcanada, Son Muntaner, and more - honest first-hand takes.',
-      canonical: 'https://mrmallorcagolf.com/guides/best-golf-courses-mallorca',
+      canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
       image: 'https://mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
       imageAlt: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
     },
@@ -573,7 +574,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       title: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
       description:
         'Golf club hire in Mallorca - which companies to use, what to pay, whether to bring your own clubs, and tips for getting the best deal. Updated for 2026.',
-      canonical: 'https://mrmallorcagolf.com/guides/golf-club-hire-mallorca',
+      canonical: 'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
       image: 'https://mrmallorcagolf.com/images/hero-main.jpg',
       imageAlt: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
     },
@@ -698,7 +699,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       title: "Is Mallorca Good for Golf? A PGA Professional's Answer",
       description:
         'Is Mallorca good for golf? A PGA professional based on the island gives an honest answer - world-class courses, year-round conditions, and what to do beyond the fairways.',
-      canonical: 'https://mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
+      canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
       image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg',
       imageAlt: "Is Mallorca Good for Golf? A PGA Professional's Answer",
     },
@@ -827,7 +828,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       title: 'A Day at Son Gual - What the Play-With-a-Pro Experience Actually Looks Like',
       description:
         'From the drive up to the last putt to lunch on the terrace - a specific, honest account of what a play-with-a-pro day at Son Gual looks and feels like.',
-      canonical: 'https://mrmallorcagolf.com/guides/a-day-at-son-gual',
+      canonical: 'https://www.mrmallorcagolf.com/guides/a-day-at-son-gual',
       image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
       imageAlt: 'A Day at Son Gual - What the Play-With-a-Pro Experience Actually Looks Like',
     },
@@ -864,6 +865,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       { type: 'heading', text: 'The Drive Up' },
       {
+        type: 'image',
+        src: '/images/son-gual-blog/sg-hero.webp',
+        alt: 'Son Gual in the early morning light',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        caption: 'Son Gual early in the day. The sort of arrival that makes the round feel special before you have even hit a shot.',
+      },
+      {
         type: 'paragraph',
         text:
           'Son Gual is 11km from Palma. The drive takes about 20 minutes. Coming from the southwest of the island, you leave the residential roads and the landscape opens out - the kind of change that tells you you are going somewhere worth going. The course sits on elevated ground above the city. You feel it before you see it.',
@@ -881,6 +889,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       { type: 'heading', text: 'During the Round' },
       {
+        type: 'image',
+        src: '/images/son-gual-blog/sg-clients-group.jpg',
+        alt: 'Group day at Son Gual with Andy Griffiths',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        caption: 'A group day at Son Gual. This is the point of it: proper golf, the right conversation, and a day that feels well put together from start to finish.',
+      },
+      {
         type: 'paragraph',
         text:
           "The coaching is woven in, not delivered as commentary. There's a difference between a running analysis and the one observation at the right moment that actually changes something. I've coached enough rounds to know which one improves scores and which one just fills the air.",
@@ -896,6 +911,13 @@ export const GUIDE_ARTICLE_CONTENT = {
           'The closing stretch from the 15th is something I look forward to on every round here. Four holes that make you hit proper shots. By the time we reach the 18th, most people are playing noticeably differently from how they were on the first tee. That is the point.',
       },
       { type: 'heading', text: 'After the Round' },
+      {
+        type: 'image',
+        src: '/images/son-gual-blog/sg-plane.jpg',
+        alt: 'View across Son Gual towards the Bay of Palma',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        caption: 'Views across the Bay of Palma from the higher holes. Son Gual gives you a few of these moments during the day, and they stay with people.',
+      },
       {
         type: 'paragraph',
         text:
@@ -978,29 +1000,121 @@ function mergeLocalizedValue(baseValue, localizedValue, key) {
   return baseValue
 }
 
+function withGuideArticleSlug(content, slug) {
+  return {
+    ...content,
+    meta: {
+      ...content.meta,
+      slug,
+    },
+  }
+}
+
+function injectBlockAfterFirstSubheading(content, subheadingText, blockToInsert) {
+  if (!content?.blocks) return content
+
+  const blocks = []
+  let inserted = false
+
+  for (const block of content.blocks) {
+    blocks.push(block)
+
+    if (!inserted && block.type === 'subheading' && block.text === subheadingText) {
+      blocks.push(blockToInsert)
+      inserted = true
+    }
+  }
+
+  return inserted ? { ...content, blocks } : content
+}
+
+function addClubRentalsPartnerLink(content) {
+  return injectBlockAfterFirstSubheading(content, 'Club Rentals Mallorca', {
+    type: 'image',
+    src: '/images/blog-golf-club-hire/Logo-Mallorca-Club-Rentals-black EN.png',
+    alt: 'Club Rentals Mallorca logo',
+    href: 'https://www.clubrentalsmallorca.com/',
+    external: true,
+    fit: 'contain',
+    containerStyle: { margin: '1.25rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '16/5', background: '#f5f1e8' },
+    caption: 'Club Rentals Mallorca',
+  })
+}
+
+const CLUB_HIRE_COMPANY_LINKS = {
+  'Club Rentals Mallorca': 'https://www.clubrentalsmallorca.com/',
+  'Rent2Play Golf': 'https://rent2play.golf',
+  MyCaddyMaster: 'https://www.mycaddymaster.com',
+  ClubsToHire: 'https://www.clubstohire.com',
+}
+
+function linkClubHireCompanies(content) {
+  if (!content?.blocks) return content
+
+  let activeCompanyHref = null
+
+  const blocks = content.blocks.map((block) => {
+    if (block.type === 'subheading' && CLUB_HIRE_COMPANY_LINKS[block.text]) {
+      activeCompanyHref = CLUB_HIRE_COMPANY_LINKS[block.text]
+      return {
+        ...block,
+        href: activeCompanyHref,
+        external: true,
+      }
+    }
+
+    if (block.type === 'heading') {
+      activeCompanyHref = null
+      return block
+    }
+
+    if (block.type === 'image' && activeCompanyHref && !block.href) {
+      return {
+        ...block,
+        href: activeCompanyHref,
+        external: true,
+      }
+    }
+
+    return block
+  })
+
+  return { ...content, blocks }
+}
+
 export function getGuideArticleContent(slug, locale = 'en') {
   const baseContent = GUIDE_ARTICLE_CONTENT[slug] || null
   if (!baseContent) return null
 
-  if (locale === 'en') return baseContent
+  if (locale === 'en') {
+    const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(addClubRentalsPartnerLink(baseContent)) : baseContent
+    return withGuideArticleSlug(enriched, slug)
+  }
 
   const localizedContent = getLocalizedGuideArticleContent(slug, locale)
-  if (!localizedContent) return baseContent
+  if (!localizedContent) {
+    const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(addClubRentalsPartnerLink(baseContent)) : baseContent
+    return withGuideArticleSlug(enriched, slug)
+  }
 
-  return mergeLocalizedValue(baseContent, localizedContent)
+  const merged = mergeLocalizedValue(baseContent, localizedContent)
+  const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(addClubRentalsPartnerLink(merged)) : merged
+
+  return withGuideArticleSlug(enriched, slug)
 }
 
 export function buildGuideArticleMetadata(slug, locale = 'en') {
   const content = getGuideArticleContent(slug, locale)
   if (!content) return {}
 
-  const canonical = `https://mrmallorcagolf.com${locale === 'en' ? '' : `/${locale}`}/guides/${slug}`
+  const canonical = `${SITE_ORIGIN}${locale === 'en' ? '' : `/${locale}`}/guides/${slug}`
   const languages = Object.fromEntries(
     GUIDE_ARTICLE_LOCALES.map((lang) => [
       lang,
-      `https://mrmallorcagolf.com${lang === 'en' ? '' : `/${lang}`}/guides/${slug}`,
+      `${SITE_ORIGIN}${lang === 'en' ? '' : `/${lang}`}/guides/${slug}`,
     ])
   )
+  const imageUrl = content.metadata.image?.replace('https://mrmallorcagolf.com', SITE_ORIGIN)
 
   return {
     title: content.metadata.title,
@@ -1012,7 +1126,7 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
         'x-default': languages.en,
       },
     },
-    robots: { index: false, follow: false },
+    robots: { index: true, follow: true },
     openGraph: {
       type: 'article',
       url: canonical,
@@ -1022,7 +1136,7 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
       authors: ['Andy Griffiths'],
       images: [
         {
-          url: content.metadata.image,
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: content.metadata.imageAlt,
@@ -1033,7 +1147,7 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
       card: 'summary_large_image',
       title: content.metadata.title,
       description: content.metadata.description,
-      images: [content.metadata.image],
+      images: [imageUrl],
     },
   }
 }

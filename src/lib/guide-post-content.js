@@ -1,4 +1,4 @@
-import { getLocalizedGuidePostContent } from './guide-post-content-localized'
+import { getLocalizedGuidePostContent } from './guide-post-content-localized.js'
 
 export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
@@ -527,10 +527,20 @@ export function getGuidePostContent(slug, locale = 'en') {
   if (!guide) return null
 
   const baseContent = guide.en
-  if (locale === 'en') return baseContent
+  if (locale === 'en') return withGuidePostSlug(baseContent, slug)
 
   const localizedContent = getLocalizedGuidePostContent(slug, locale) || guide[locale]
-  if (!localizedContent) return baseContent
+  if (!localizedContent) return withGuidePostSlug(baseContent, slug)
 
-  return mergeLocalizedValue(baseContent, localizedContent)
+  return withGuidePostSlug(mergeLocalizedValue(baseContent, localizedContent), slug)
+}
+
+function withGuidePostSlug(content, slug) {
+  return {
+    ...content,
+    meta: {
+      ...content.meta,
+      slug,
+    },
+  }
 }

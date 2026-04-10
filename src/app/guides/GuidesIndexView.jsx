@@ -18,7 +18,7 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         style={{
           minHeight: '100vh',
           backgroundImage:
-            'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.45) 55%, rgba(26,25,22,0.2) 100%), url(/images/guide.jpg)',
+            'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.45) 55%, rgba(26,25,22,0.2) 100%), url(/images/guide.webp)',
           backgroundSize: 'auto, cover',
           backgroundPosition: 'center, center 40%',
         }}
@@ -46,9 +46,9 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         </div>
       </header>
 
-      <section style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(48px,8vw,96px) clamp(20px,4vw,40px)' }}>
+      <section className="guides-index-shell">
         {content.reviewsHeading && (
-          <h2 style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '2rem' }}>{content.reviewsHeading}</h2>
+          <h2 className="guides-index-shell__heading">{content.reviewsHeading}</h2>
         )}
         <div className="guides-list">
           {content.liveGuides.filter((g) => g.slug.endsWith('-review')).map((guide) => (
@@ -69,7 +69,7 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         </div>
 
         {content.articlesHeading && (
-          <h2 style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold)', margin: 'clamp(40px,6vw,72px) 0 2rem' }}>{content.articlesHeading}</h2>
+          <h2 className="guides-index-shell__heading guides-index-shell__heading--spaced">{content.articlesHeading}</h2>
         )}
         <div className="guides-list">
           {content.liveGuides.filter((g) => !g.slug.endsWith('-review')).map((guide) => (
@@ -93,11 +93,11 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">{content.finalCta.eyebrow}</p>
-          <h2 className="serif-display" style={{ color: '#fff' }}>{content.finalCta.title}</h2>
+          <h2 className="serif-display cta-final__title">{content.finalCta.title}</h2>
           <p>{content.finalCta.body}</p>
         </div>
         <div className="cta-final__right reveal">
-          <Link href={`${prefix}/play-with-a-pro`} className="btn btn--gold" style={{ fontSize: 10, padding: '14px 36px' }}>
+          <Link href={`${prefix}/play-with-a-pro`} className="btn btn--gold cta-final__primary">
             {content.finalCta.primaryCta}
           </Link>
           <Link href={`${prefix}/contact`} className="btn btn--outline-white">{content.finalCta.secondaryCta}</Link>

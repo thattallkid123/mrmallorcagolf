@@ -38,13 +38,13 @@ export const metadata = {
     siteName: 'Mr Mallorca Golf',
     title: "Mr Mallorca Golf - Play Mallorca's Best Courses with a PGA Professional",
     description: 'Private golf experiences in Mallorca with a PGA Advanced Professional. Full days on Son Gual, Alcanada, and more.',
-    images: [{ url: `${SITE_ORIGIN}/images/hero-main.jpg`, width: 1600, height: 660 }],
+    images: [{ url: `${SITE_ORIGIN}/images/hero-main.webp`, width: 1600, height: 660 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Mr Mallorca Golf - Play Mallorca's Best Courses with a PGA Professional",
     description: 'Private golf experiences in Mallorca with a PGA Advanced Professional.',
-    images: [`${SITE_ORIGIN}/images/hero-main.jpg`],
+    images: [`${SITE_ORIGIN}/images/hero-main.webp`],
   },
   robots: {
     index: true,
@@ -81,8 +81,8 @@ const LOCAL_BUSINESS_SCHEMA = {
   name: 'Mr Mallorca Golf',
   description: 'Private play-with-a-pro golf experiences and on-course coaching in Mallorca, Spain, led by PGA Advanced Professional Andy Griffiths.',
   url: SITE_ORIGIN,
-  telephone: '+34624466702',
   email: 'andy@mrmallorcagolf.com',
+  contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', url: 'https://wa.me/34624466702', availableLanguage: ['English', 'Mandarin Chinese'] },
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Mallorca',
@@ -97,9 +97,9 @@ const LOCAL_BUSINESS_SCHEMA = {
     '@type': 'OfferCatalog',
     name: 'Golf Experiences',
     itemListElement: [
-      { '@type': 'Offer', name: 'The Mallorca Round', description: 'Private round with PGA professional, on-course coaching throughout', price: '350', priceCurrency: 'EUR' },
-      { '@type': 'Offer', name: 'The Signature Day', description: 'Full hosted golf day at Son Gual or Alcanada with lunch and gift', price: '450', priceCurrency: 'EUR' },
-      { '@type': 'Offer', name: 'The Full Experience', description: 'Bespoke multi-element golf day - transport, dining, spa, full concierge', priceCurrency: 'EUR' },
+      { '@type': 'Offer', name: 'Solo — A Day With Andy', description: 'Private full day at Son Gual or Alcanada with PGA Professional. Green fee, lunch, everything included.', price: '595', priceCurrency: 'EUR' },
+      { '@type': 'Offer', name: 'Group of 2 to 4 — A Day With Andy', description: 'Full private golf day for groups of 2–4. One fixed day rate for Andy, with green fees confirmed separately.', price: '1195', priceCurrency: 'EUR' },
+      { '@type': 'Offer', name: 'Multi-Day Experience', description: 'Multiple courses, private transfers, Michelin dining. Bespoke itinerary on enquiry.', priceCurrency: 'EUR' },
     ],
   },
 }

@@ -83,7 +83,7 @@ const GUIDES_INDEX_METADATA = {
       'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit - all updated for 2026.',
   },
   de: {
-    title: 'Mallorca Golffuhrer - Platz-Bewertungen und Tipps',
+    title: 'Mallorca Golff\u00fchrer - Platz-Bewertungen und Tipps',
     description:
       'Ehrliche Golfratgeber fur Mallorca von einem PGA Professional. Platz-Bewertungen, Greenfees und Reiseplanung - aktualisiert fur 2026.',
   },
@@ -194,37 +194,37 @@ const PLAY_WITH_A_PRO_METADATA = {
   en: {
     title: 'Play With a Pro - Private Golf Days in Mallorca',
     description:
-      'A private round of golf in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. On-course coaching, full day arranged. From €350 per person plus green fee.',
+      'A private golf day in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. Solo from €595 all inclusive. Groups of 2 to 4 from €1,195, with green fees confirmed separately.',
   },
   de: {
     title: 'Mit einem Profi spielen - Private Golftage auf Mallorca',
     description:
-      'Eine private Golfrunde auf Mallorca mit UK PGA Advanced Professional Andy Griffiths. Coaching auf dem Platz, voller Tag arrangiert. Ab €350 pro Person.',
+      'Ein privater Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab €595 all inclusive. Gruppen von 2 bis 4 ab €1.195, Greenfees werden separat bestaetigt.',
   },
   es: {
     title: 'Jugar con un Profesional - Dias de Golf Privados en Mallorca',
     description:
-      'Una vuelta de golf privada en Mallorca junto al UK PGA Advanced Professional Andy Griffiths. Coaching en campo, dia completo organizado. Desde €350 por persona.',
+      'Un dia privado de golf en Mallorca junto a Andy Griffiths. Solo desde €595 todo incluido. Grupos de 2 a 4 desde €1.195, con green fees confirmados por separado.',
   },
   fr: {
     title: 'Jouer avec un Pro - Journees Golf Privees a Majorque',
     description:
-      'Une partie de golf privee a Majorque aux cotes du UK PGA Advanced Professional Andy Griffiths. Coaching sur parcours, journee complete organisee. A partir de €350 par personne.',
+      'Une journee de golf privee a Majorque aux cotes d Andy Griffiths. Solo a partir de €595 tout compris. Groupes de 2 a 4 a partir de €1 195, green fees confirmes separement.',
   },
   nl: {
     title: 'Spelen met een Pro - Privegolfdagen op Mallorca',
     description:
-      'Een prive golfronde op Mallorca, gespeeld naast UK PGA Advanced Professional Andy Griffiths. Coaching op de baan, volle dag geregeld. Vanaf €350 per persoon.',
+      'Een prive-golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf €595 all-in. Groepen van 2 tot 4 vanaf €1.195, met greenfees apart bevestigd.',
   },
   sv: {
     title: 'Spela med ett Proffs - Privata Golfdagar pa Mallorca',
     description:
-      'En privat golfrunda pa Mallorca med UK PGA Advanced Professional Andy Griffiths. Coaching pa banan, hel dag arrangerad. Fran €350 per person.',
+      'En privat golfdag pa Mallorca tillsammans med Andy Griffiths. Solo fran €595 all inclusive. Grupper pa 2 till 4 fran €1.195, med green fees som bekraftas separat.',
   },
   zh: {
     title: 'Private Golf Days in Mallorca - Play With a Pro',
     description:
-      'A private golf day in Mallorca alongside UK PGA Advanced Professional Andy Griffiths, with on-course coaching and full-day hosting.',
+      'A private golf day in Mallorca alongside Andy Griffiths. Solo €595 all inclusive. Groups of 2 to 4 from €1,195, with green fees confirmed separately.',
   },
 }
 
@@ -385,6 +385,12 @@ export function buildLegalMetadata(type, locale = 'en') {
   return buildPageMetadata(
     locale === 'en' ? basePath : `/${locale}${basePath}`,
     locale,
-    localizedMetadata?.[locale] || localizedMetadata?.en || {},
+    {
+      ...(localizedMetadata?.[locale] || localizedMetadata?.en || {}),
+      robots: {
+        index: false,
+        follow: true,
+      },
+    },
   )
 }

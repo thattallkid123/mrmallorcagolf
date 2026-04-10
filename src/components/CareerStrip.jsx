@@ -30,22 +30,22 @@ export default function CareerStrip({ label = 'Venues & experience', heading = '
     return () => cancelAnimationFrame(raf)
   }, [])
   return (
-    <section style={{background:'var(--deep)',padding:'clamp(48px,6vw,72px) 0',overflow:'hidden'}}>
-      <div style={{maxWidth:1200,margin:'0 auto',padding:'0 clamp(20px,5vw,60px)',marginBottom:'2.5rem'}}>
-        <p style={{fontSize:'9px',letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(255,255,255,.58)',marginBottom:'.75rem'}}>{label}</p>
-        <h2 className="serif-display" style={{color:'#fff',fontSize:'clamp(1.8rem,3vw,2.6rem)'}}>{heading}</h2>
+    <section className="career-strip">
+      <div className="career-strip__header">
+        <p className="career-strip__label">{label}</p>
+        <h2 className="serif-display career-strip__title">{heading}</h2>
       </div>
-      <div style={{position:'relative',overflow:'hidden'}}>
-        <div ref={trackRef} style={{display:'flex',gap:2,willChange:'transform',width:'max-content'}}>
+      <div className="career-strip__viewport">
+        <div ref={trackRef} className="career-strip__track">
           {allVenues.map((v, i) => (
-            <div key={i} style={{flexShrink:0,width:240,padding:'28px 24px',background:'rgba(255,255,255,0.04)',borderLeft:'1px solid rgba(255,255,255,0.06)',textAlign:'center'}}>
-              <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:'1.15rem',fontWeight:500,color:'#fff',marginBottom:'0.4rem'}}>{v.name}</p>
-              <p style={{fontSize:'9px',letterSpacing:'.14em',textTransform:'uppercase',color:'rgba(255,255,255,.35)',fontFamily:"'Jost',sans-serif"}}>{v.detail}</p>
+            <div key={i} className="career-strip__card">
+              <p className="career-strip__card-name">{v.name}</p>
+              <p className="career-strip__card-detail">{v.detail}</p>
             </div>
           ))}
         </div>
-        <div style={{position:'absolute',top:0,left:0,width:120,height:'100%',background:'linear-gradient(to right,var(--deep),transparent)',pointerEvents:'none'}}/>
-        <div style={{position:'absolute',top:0,right:0,width:120,height:'100%',background:'linear-gradient(to left,var(--deep),transparent)',pointerEvents:'none'}}/>
+        <div className="career-strip__fade career-strip__fade--left" />
+        <div className="career-strip__fade career-strip__fade--right" />
       </div>
     </section>
   )

@@ -9,16 +9,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
       <PageLayout lang={locale}>
         <RevealObserver />
 
-        <section className="pwap-hero" style={{ minHeight: '92vh' }}>
-          <div
-            className="pwap-hero__bg"
-            style={{
-              backgroundImage:
-                'linear-gradient(160deg, rgba(26,25,22,0.10) 0%, rgba(26,25,22,0.55) 70%), linear-gradient(to bottom, rgba(26,25,22,0.05) 0%, rgba(26,25,22,0.42) 100%), url(/images/pwap-hero.jpg)',
-              backgroundSize: 'auto, auto, cover',
-              backgroundPosition: 'center, center, 38% center',
-            }}
-          ></div>
+        <section className="pwap-hero pwap-hero--tall">
+          <div className="pwap-hero__bg"></div>
           <div className="pwap-hero__inner">
             <div className="pwap-hero__content">
               <p className="breadcrumb">
@@ -27,40 +19,19 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 </Link>{' '}
                 &nbsp;/&nbsp; <span>{content.hero.breadcrumbCurrent}</span>
               </p>
-              <p className="eyebrow eyebrow--gold" style={{ marginBottom: '1rem', marginTop: '1rem' }}>
+              <p className="eyebrow eyebrow--gold pwap-hero__eyebrow">
                 {content.hero.eyebrow}
               </p>
-              <h1
-                className="serif-display"
-                style={{ fontSize: 'clamp(2.4rem,5vw,4.2rem)', color: '#fff', marginBottom: '1.25rem' }}
-              >
+              <h1 className="serif-display pwap-hero__title">
                 {content.hero.title}
               </h1>
-              <p
-                style={{
-                  fontSize: '1rem',
-                  fontWeight: 300,
-                  color: 'rgba(255,255,255,.76)',
-                  lineHeight: 1.75,
-                  maxWidth: 520,
-                  marginBottom: '1.5rem',
-                }}
-              >
+              <p className="pwap-hero__body">
                 {content.hero.body}
               </p>
               {content.hero.price ? (
-                <p
-                  style={{
-                    fontFamily: "'Cormorant Garamond',serif",
-                    fontSize: '1.15rem',
-                    color: 'var(--gold-light)',
-                    marginBottom: '2rem',
-                  }}
-                >
-                  {content.hero.price}
-                </p>
+                <p className="pwap-hero__price">{content.hero.price}</p>
               ) : null}
-              <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+              <div className="pwap-hero__actions">
                 <Link href={content.hero.primaryHref} className="btn btn--gold">
                   {content.hero.primaryCta}
                 </Link>
@@ -75,10 +46,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-day">
           <div className="pwap-day__left reveal">
             <p className="eyebrow">{content.day.eyebrow}</p>
-            <h2
-              className="serif-display"
-              style={{ fontSize: 'clamp(1.8rem,3vw,2.5rem)', color: 'var(--deep)', marginTop: '.75rem', marginBottom: '1.5rem' }}
-            >
+            <h2 className="serif-display pwap-section-title">
               {content.day.title}
             </h2>
             {content.day.paragraphs.map((paragraph) => (
@@ -118,16 +86,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
 
         <section className="pwap-courses">
           <div className="courses-intro reveal">
-            <p className="eyebrow" style={{ color: 'rgba(255,255,255,.45)' }}>
+            <p className="eyebrow pwap-courses__eyebrow">
               {content.courses.eyebrow}
             </p>
-            <h2
-              className="serif-display"
-              style={{ color: '#fff', marginTop: '.75rem', marginBottom: '1.25rem', fontSize: 'clamp(1.8rem,3vw,2.5rem)' }}
-            >
+            <h2 className="serif-display pwap-courses__title">
               {content.courses.title}
             </h2>
-            <p style={{ color: 'rgba(255,255,255,.55)', lineHeight: 1.8, maxWidth: 680 }}>{content.courses.body}</p>
+            <p className="pwap-courses__body">{content.courses.body}</p>
           </div>
         </section>
 
@@ -135,10 +100,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           <section className="pwap-who">
             <div className="reveal">
               <p className="eyebrow">{content.who.eyebrow}</p>
-              <h2
-                className="serif-display"
-                style={{ fontSize: 'clamp(1.8rem,3vw,2.5rem)', color: 'var(--deep)', marginTop: '.75rem', marginBottom: '2.5rem' }}
-              >
+              <h2 className="serif-display pwap-section-title pwap-section-title--spacious">
                 {content.who.title}
               </h2>
             </div>
@@ -155,11 +117,11 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         ) : null}
 
         <section className="pwap-testimonials">
-          <div className="reveal" style={{ textAlign: 'center', marginBottom: '3rem' }}>
-            <p className="eyebrow" style={{ color: 'rgba(255,255,255,.35)' }}>
+          <div className="reveal pwap-testimonials__header">
+            <p className="eyebrow pwap-testimonials__eyebrow">
               {content.testimonials.eyebrow}
             </p>
-            <h2 className="serif-display" style={{ color: '#fff', marginTop: '.75rem' }}>
+            <h2 className="serif-display pwap-testimonials__title">
               {content.testimonials.title}
             </h2>
           </div>
@@ -176,22 +138,20 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-packages" id="packages">
           <div className="reveal">
             <p className="eyebrow">{content.packages.eyebrow}</p>
-            <h2
-              className="serif-display"
-              style={{ fontSize: 'clamp(1.8rem,3vw,2.5rem)', color: 'var(--deep)', marginTop: '.5rem', marginBottom: '1rem' }}
-            >
+            <h2 className="serif-display pwap-section-title pwap-section-title--tight">
               {content.packages.title}
             </h2>
-            <p style={{ fontSize: '1rem', color: 'var(--taupe)', lineHeight: 1.8, maxWidth: 560, marginBottom: '3rem' }}>
+            <p className="pwap-packages__intro">
               {content.packages.body}
             </p>
           </div>
           <div className="pricing-grid">
             {content.packages.tiers.map((tier) => (
-              <div key={tier.name} className={`tier${tier.featured ? ' tier--feature' : ''} reveal`}>
+              <div key={tier.eyebrow} className={`tier${tier.featured ? ' tier--feature' : ''} reveal`}>
                 <p className="tier__name-small">{tier.eyebrow}</p>
                 <h3 className="tier__name">{tier.name}</h3>
                 <p className="tier__price">{tier.price}</p>
+                {tier.note && <p className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`}>{tier.note}</p>}
                 <div className="tier__rule"></div>
                 <ul className="tier__features">
                   {tier.features.map((feature) => (
@@ -204,18 +164,29 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               </div>
             ))}
           </div>
+          {content.packages.multiDay && (
+            <div className="reveal pwap-multiday">
+              <p className="eyebrow pwap-multiday__eyebrow">{content.packages.multiDay.eyebrow}</p>
+              <h3 className="serif-display pwap-multiday__title">{content.packages.multiDay.title}</h3>
+              <p className="pwap-multiday__body">{content.packages.multiDay.body}</p>
+              {content.packages.multiDay.detail && (
+                <p className="pwap-multiday__detail">{content.packages.multiDay.detail}</p>
+              )}
+              <Link href={content.packages.multiDay.href} className="btn btn--gold">{content.packages.multiDay.button}</Link>
+            </div>
+          )}
         </section>
 
         <section className="cta-final">
           <div className="cta-final__left reveal">
             <p className="eyebrow eyebrow--gold">{content.finalCta.eyebrow}</p>
-            <h2 className="serif-display" style={{ color: '#fff' }}>
+            <h2 className="serif-display cta-final__title">
               {content.finalCta.title}
             </h2>
             <p>{content.finalCta.body}</p>
           </div>
           <div className="cta-final__right reveal">
-            <Link href={content.finalCta.primaryHref} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px' }}>
+            <Link href={content.finalCta.primaryHref} className="btn btn--gold cta-final__primary-lg">
               {content.finalCta.primaryCta}
             </Link>
             <Link href={content.finalCta.secondaryHref} className="btn btn--outline-white">

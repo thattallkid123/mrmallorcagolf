@@ -10,12 +10,14 @@ export default function PrivacyPolicy() {
       <div className="legal-page">
         <div className="legal-page__inner">
 
-          <p className="breadcrumb" style={{marginBottom:'2rem'}}>
-            <Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Privacy Policy</span>
-          </p>
+          <div className="legal-page__hero">
+            <p className="breadcrumb" style={{marginBottom:'2rem'}}>
+              <Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Privacy Policy</span>
+            </p>
 
-          <h1 style={{marginBottom:'0.5rem'}}>Privacy Policy</h1>
-          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Last updated: March 2025</p>
+            <h1 style={{marginBottom:'0.5rem'}}>Privacy Policy</h1>
+            <p className="legal-page__updated">Last updated: March 2025</p>
+          </div>
 
           <section className="legal-section">
             <h2>1. Who We Are</h2>
@@ -110,8 +112,8 @@ export default function PrivacyPolicy() {
             <p>We may update this privacy policy from time to time. The date at the top of this page reflects the most recent revision. We encourage you to review this page periodically.</p>
           </section>
 
-          <div style={{marginTop:'3rem', paddingTop:'2rem', borderTop:'1px solid rgba(255,255,255,0.1)'}}>
-            <p style={{color:'rgba(255,255,255,0.62)', fontSize:'0.85rem'}}>
+          <div className="legal-page__language-note">
+            <p>
               Also available in: <Link href="/es/privacy-policy" style={{color:'var(--gold-light)'}}>Español</Link>
             </p>
           </div>
@@ -121,4 +123,3 @@ export default function PrivacyPolicy() {
     </PageLayout>
   )
 }
-

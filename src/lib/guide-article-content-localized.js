@@ -132,7 +132,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {
           type: 'cta',
           text: 'Möchten Sie einen vollen Premiumtag arrangieren lassen - Platz, Coaching, Mittagessen und alles drumherum?',
-          linkLabel: 'Play-with-a-Pro ansehen →',
+          linkLabel: 'Golf-Tag mit Pro ansehen →',
           href: '/play-with-a-pro',
         },
       ],
@@ -1742,7 +1742,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           { src: '/images/blog-trip-planning/Valldemossa.avif', alt: 'Valldemossa', caption: 'Valldemossa - ein starker Ausflug für einen golffreien Nachmittag', aspectRatio: '4/3' },
           { src: '/images/blog-trip-planning/Soller.jpeg', alt: 'Deià', caption: 'Deià - Nordwestküste statt noch eine weitere Bucket-List-Runde', aspectRatio: '4/3' },
         ] },
-        { type: 'cta', text: 'Wollen Sie die Reise sauber arrangiert haben - mit Plätzen, Tee Times, Restaurants, Transport und einem PGA-Professional an Ihrer Seite?', linkLabel: 'Play-with-a-Pro ansehen →', href: '/play-with-a-pro' },
+        { type: 'cta', text: 'Wollen Sie die Reise sauber arrangiert haben - mit Plätzen, Tee Times, Restaurants, Transport und einem PGA-Professional an Ihrer Seite?', linkLabel: 'Golf-Tag mit Pro ansehen →', href: '/play-with-a-pro' },
       ],
     },
     es: {
@@ -1943,7 +1943,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Die ehrliche Zusammenfassung' },
         { type: 'paragraph', text: 'Wenn ich fuer eine einzige Woche auf Mallorca nur zwei Plaetze empfehlen duerfte, waeren es Son Gual und Alcanada. Son Muntaner fuer Turnierstandard nahe Palma. Andratx fuer die haerteste Pruefung. Canyamel fuer Landschaft. Santa Ponsa 1 fuer Weite, Driver und Tour-Historie. Fuer Einsteiger oder gemischte Gruppen wuerde ich deutlich eher Son Quint oder Son Antem East nennen.' },
         { type: 'pull', text: 'Die Insel ist eines der bestgehueteten Golfgeheimnisse Europas. Als ich aus Shanghai kam und die Bedingungen hier im Januar sah, waehrend weite Teile Nordeuropas geschlossen waren, war das fuer mich sofort klar.' },
-        { type: 'cta', text: 'Wollen Sie einen dieser Plätze mit einem PGA-Professional an Ihrer Seite spielen?', linkLabel: 'Play-with-a-Pro ansehen →', href: '/play-with-a-pro' },
+        { type: 'cta', text: 'Wollen Sie einen dieser Plätze mit einem PGA-Professional an Ihrer Seite spielen?', linkLabel: 'Golf-Tag mit Pro ansehen →', href: '/play-with-a-pro' },
       ],
     },
     es: {
@@ -2052,7 +2052,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           { label: 'Sinnvoll bleiben:', text: 'Wenn Sie nur zwei lockere Runden spielen, brauchen Sie kein teuerstes Tour-Setup.' },
           { label: 'Lieferung mitdenken:', text: 'Hotel- oder Platzlieferung spart Zeit und oft auch Aerger.' },
         ] },
-        { type: 'cta', text: 'Sie wollen Schläger leihen und den Tag gleich richtig machen - Son Gual, Alcanada oder etwas Ähnliches?', linkLabel: 'Play-with-a-Pro ansehen →', href: '/play-with-a-pro' },
+        { type: 'cta', text: 'Sie wollen Schläger leihen und den Tag gleich richtig machen - Son Gual, Alcanada oder etwas Ähnliches?', linkLabel: 'Golf-Tag mit Pro ansehen →', href: '/play-with-a-pro' },
       ],
     },
     es: {
@@ -2155,7 +2155,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-is-mallorca-good/Soller.jpg', alt: 'Soller town', caption: 'Sóller - wenn Sie einen golffreien Tag richtig nutzen wollen' },
         { type: 'heading', text: 'Fazit' },
         { type: 'paragraph', text: 'Mallorca ist eines der besten Golfziele Europas. Nicht das berühmteste, aber wahrscheinlich die beste Kombination aus Platzqualität, Klima und Umgebung auf dem Kontinent. Die Spieler, die es einmal verstanden haben, kommen sehr oft wieder.' },
-        { type: 'cta', text: 'Wollen Sie sehen, wie das Beste von Mallorcas Golf wirklich aussieht - mit einem PGA-Professional an Ihrer Seite?', linkLabel: 'Play-with-a-Pro ansehen →', href: '/play-with-a-pro' },
+        { type: 'cta', text: 'Wollen Sie sehen, wie das Beste von Mallorcas Golf wirklich aussieht - mit einem PGA-Professional an Ihrer Seite?', linkLabel: 'Golf-Tag mit Pro ansehen →', href: '/play-with-a-pro' },
       ],
     },
     es: {
@@ -6773,8 +6773,179 @@ for (const [slug, locales] of Object.entries(REPAIRED_ARTICLE_LOCALES)) {
   }
 }
 
-export function getLocalizedGuideArticleContent(slug, locale) {
-  return LOCALIZED_GUIDE_ARTICLE_CONTENT[slug]?.[locale] || null
+const A_DAY_AT_SON_GUAL_MEDIA = {
+  de: {
+    intro: 'Wie sich dieser Tag wirklich anfühlt - von der Anfahrt bis zum letzten Putt und dem Mittagessen auf der Terrasse.',
+    ctaText: 'Wenn sich das nach genau der Art Golftag anhört, die Sie suchen, schreiben Sie mir. Geben Sie mir Ihre Daten durch, ich kümmere mich um den Rest.',
+    ctaLabel: 'Ihren Tag anfragen →',
+    anchors: {
+      drive: 'Die Anfahrt',
+      round: 'Während der Runde',
+      after: 'Nach der Runde',
+    },
+    captions: {
+      hero: 'Son Gual am frühen Morgen. Schon die Anfahrt gibt dem Tag den richtigen Ton, noch bevor der erste Schlag gespielt ist.',
+      clients: 'Ein Gruppentag in Son Gual. Genau hier wird aus gutem Golf ein Tag, über den man später noch spricht.',
+      views: 'Blicke über die Bucht von Palma. Solche Momente lassen den Tag größer wirken als nur eine Runde Golf.',
+    },
+  },
+  es: {
+    intro: 'Cómo se siente de verdad este día, desde la llegada hasta el último putt y la comida en la terraza.',
+    ctaText: 'Si esto suena al tipo de día de golf que está buscando, escríbame. Dígame sus fechas y yo me encargo del resto.',
+    ctaLabel: 'Consultar su día →',
+    anchors: {
+      drive: 'La llegada',
+      round: 'Durante la vuelta',
+      after: 'Despues de la vuelta',
+    },
+    captions: {
+      hero: 'Son Gual a primera hora. La llegada ya marca el tono del día antes incluso de pegar el primer golpe.',
+      clients: 'Un día de grupo en Son Gual. Aquí es donde una buena ronda se convierte en un día del que la gente habla después.',
+      views: 'Vistas hacia la bahía de Palma. Son de esos momentos que hacen que el día se sienta más grande que una simple vuelta.',
+    },
+  },
+  fr: {
+    intro: 'Comment cette journée se vit vraiment, depuis l’arrivée jusqu’au dernier putt puis au déjeuner en terrasse.',
+    ctaText: 'Si cela ressemble au type de journée de golf que vous recherchez, écrivez-moi. Donnez-moi vos dates et je m’occupe du reste.',
+    ctaLabel: 'Parler de votre journée →',
+    anchors: {
+      drive: 'Le trajet',
+      round: 'Pendant la partie',
+      after: 'Apres la partie',
+    },
+    captions: {
+      hero: 'Son Gual tôt le matin. L’arrivée donne déjà le ton, avant même le premier coup.',
+      clients: 'Une journée en groupe à Son Gual. C’est là qu’une bonne partie devient une journée dont on reparle plus tard.',
+      views: 'Des vues sur la baie de Palma. Ce sont ces moments-là qui donnent à la journée une dimension plus grande qu’un simple parcours.',
+    },
+  },
+  nl: {
+    intro: 'Hoe deze dag echt aanvoelt, van de rit ernaartoe tot de laatste putt en de lunch op het terras.',
+    ctaText: 'Als dit klinkt als precies het soort golfdag dat u zoekt, stuur me dan een bericht. Geef uw data door en ik regel de rest.',
+    ctaLabel: 'Informeer naar uw dag →',
+    anchors: {
+      drive: 'De rit ernaartoe',
+      round: 'Tijdens de ronde',
+      after: 'Na de ronde',
+    },
+    captions: {
+      hero: 'Son Gual vroeg op de dag. De aankomst zet de toon nog voordat de eerste bal geslagen is.',
+      clients: 'Een groepsdag op Son Gual. Hier verandert een goede ronde in een dag waar later nog over wordt gesproken.',
+      views: 'Uitzichten over de baai van Palma. Dat soort momenten maakt de dag groter dan zomaar een rondje golf.',
+    },
+  },
+  sv: {
+    intro: 'Hur dagen faktiskt känns, från ankomsten till sista putten och lunchen på terrassen.',
+    ctaText: 'Om det här låter som den typ av golfdag du letar efter, hör av dig. Skicka dina datum så ordnar jag resten.',
+    ctaLabel: 'Fråga om din dag →',
+    anchors: {
+      drive: 'Resan dit',
+      round: 'Under rundan',
+      after: 'Efter rundan',
+    },
+    captions: {
+      hero: 'Son Gual tidigt på morgonen. Redan ankomsten sätter tonen innan första slaget är slagen.',
+      clients: 'En gruppdag på Son Gual. Det är här en bra rond blir till en dag som folk fortfarande pratar om efteråt.',
+      views: 'Utsikt över Palmabukten. Sådana ögonblick får dagen att kännas större än bara en golfrond.',
+    },
+  },
+  zh: {
+    intro: '这一天真正的感觉是什么样，从到达球场、打完最后一推，到露台上的午餐。',
+    ctaText: '如果这听起来正是你想要的那种高尔夫一天，就给我发消息。把日期告诉我，其余的我来安排。',
+    ctaLabel: '咨询你的这一天 →',
+    anchors: {
+      drive: '前往球场的路上',
+      round: '打球过程中',
+      after: '打完之后',
+    },
+    captions: {
+      hero: '清晨的 Son Gual。还没开球，这段到达过程就已经把整天的气氛定下来了。',
+      clients: '在 Son Gual 的小团体日。也正是在这里，一场好球会变成之后还会被反复提起的一天。',
+      views: '高处望向帕尔马湾的视角。这样的瞬间，会让这一天变得不只是打一轮球而已。',
+    },
+  },
 }
 
+function injectBlocksAfterHeading(blocks, headingText, additions) {
+  const output = []
+  for (const block of blocks) {
+    output.push(block)
+    if (block.type === 'heading' && block.text === headingText) {
+      output.push(...additions)
+    }
+  }
+  return output
+}
 
+function patchADayAtSonGualContent(locale, content) {
+  if (!content || !content.blocks) {
+    return content
+  }
+
+  const media = A_DAY_AT_SON_GUAL_MEDIA[locale]
+  if (!media) {
+    return content
+  }
+
+  let blocks = [...content.blocks]
+
+  blocks = injectBlocksAfterHeading(blocks, media.anchors.drive, [
+    {
+      type: 'image',
+      src: '/images/son-gual-blog/sg-hero.webp',
+      alt: 'Son Gual in the early morning light',
+      containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+      caption: media.captions.hero,
+    },
+  ])
+
+  blocks = injectBlocksAfterHeading(blocks, media.anchors.round, [
+    {
+      type: 'image',
+      src: '/images/son-gual-blog/sg-clients-group.jpg',
+      alt: 'Group day at Son Gual with Andy Griffiths',
+      containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+      caption: media.captions.clients,
+    },
+  ])
+
+  blocks = injectBlocksAfterHeading(blocks, media.anchors.after, [
+    {
+      type: 'image',
+      src: '/images/son-gual-blog/sg-plane.jpg',
+      alt: 'View across Son Gual towards the Bay of Palma',
+      containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+      caption: media.captions.views,
+    },
+  ])
+
+  const patchedBlocks = blocks.map((block) => {
+    if (block.type === 'cta') {
+      return {
+        ...block,
+        text: media.ctaText,
+        linkLabel: media.ctaLabel,
+      }
+    }
+    return block
+  })
+
+  return {
+    ...content,
+    meta: {
+      ...content.meta,
+      intro: media.intro,
+    },
+    blocks: patchedBlocks,
+  }
+}
+
+export function getLocalizedGuideArticleContent(slug, locale) {
+  const content = LOCALIZED_GUIDE_ARTICLE_CONTENT[slug]?.[locale] || null
+
+  if (slug === 'a-day-at-son-gual') {
+    return patchADayAtSonGualContent(locale, content)
+  }
+
+  return content
+}

@@ -66,41 +66,18 @@ export default function CoachingView({ locale = 'en', content }) {
               <cite>- {content.range.quoteAttribution}</cite>
             </div>
           </div>
-          <div
-            className="reveal"
-            style={{
-              background: 'var(--pine)',
-              color: 'rgba(255,255,255,.9)',
-              padding: '2rem 2rem 2.2rem',
-              border: '1px solid rgba(255,255,255,.08)',
-            }}
-          >
-            <p className="eyebrow" style={{ marginBottom: '1.25rem', color: 'rgba(255,255,255,.62)' }}>{content.range.questionnaireEyebrow}</p>
+          <div className="coaching-panel reveal">
+            <p className="eyebrow coaching-panel__eyebrow">{content.range.questionnaireEyebrow}</p>
             {content.range.questionnaireParagraphs.map((paragraph) => (
-              <p key={paragraph} style={{ color: 'rgba(255,255,255,.86)' }}>{paragraph}</p>
+              <p key={paragraph} className="coaching-panel__text">{paragraph}</p>
             ))}
-            <Link
-              href={joinHref(locale, '/contact')}
-              style={{
-                display: 'inline-block',
-                marginTop: '1.5rem',
-                fontSize: '10px',
-                fontWeight: 500,
-                letterSpacing: '.18em',
-                textTransform: 'uppercase',
-                padding: '13px 30px',
-                background: 'var(--gold)',
-                color: 'var(--deep)',
-                textDecoration: 'none',
-                fontFamily: "'Jost',sans-serif",
-              }}
-            >
+            <Link href={joinHref(locale, '/contact')} className="coaching-panel__cta">
               {content.range.questionnaireCta}
             </Link>
           </div>
         </section>
 
-        <div style={{ lineHeight: 0, overflow: 'hidden' }}>
+        <div className="full-bleed-image">
           <FillImageFrame
             src="/images/coaching-action.jpg"
             alt={content.imageAlt}
@@ -148,10 +125,10 @@ export default function CoachingView({ locale = 'en', content }) {
 
         <section className="who-section">
           <div className="reveal">
-            <p style={{ fontSize: '9px', letterSpacing: '.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,.7)', marginBottom: '.5rem' }}>
+            <p className="who-section__eyebrow">
               {content.who.eyebrow}
             </p>
-            <h2 className="serif-display" style={{ color: '#fff', marginTop: '.5rem' }}>{content.who.title}</h2>
+            <h2 className="serif-display who-section__title">{content.who.title}</h2>
           </div>
           <div className="who-grid">
             {content.who.cards.map((card, index) => (

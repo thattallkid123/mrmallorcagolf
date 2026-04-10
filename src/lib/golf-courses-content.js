@@ -15,27 +15,27 @@ export const GOLF_COURSES_CONTENT = {
     regionHeaders: {
       palma: {
         title: 'Palma',
-        subtitle: '5-11 km from the city',
+        subtitle: '5–11 km from the city',
         count: '8 courses',
       },
       southwest: {
         title: 'Southwest',
-        subtitle: 'Santa Ponsa & Camp de Mar · 20-40 km',
+        subtitle: 'Santa Ponsa & Camp de Mar · 20–40 km',
         count: '6 courses',
       },
       south: {
         title: 'South',
-        subtitle: 'Llucmajor · 15-20 km',
+        subtitle: 'Llucmajor · 15–20 km',
         count: '3 courses',
       },
       east: {
         title: 'East',
-        subtitle: '50-65 km from Palma · Worth basing yourself here',
+        subtitle: '50–65 km from Palma · Worth basing yourself here',
         count: '5 courses',
       },
       north: {
         title: 'North',
-        subtitle: "Port d'Alcúdia · 55-60 km · Alcanada alone justifies the drive",
+        subtitle: "Port d'Alcúdia · 55–60 km · Alcanada alone justifies the drive",
         count: '2 courses',
       },
     },
@@ -108,14 +108,21 @@ export const GOLF_COURSES_CONTENT = {
     locale: 'de',
     hero: {
       breadcrumbHome: 'Startseite',
-      breadcrumbCurrent: 'Golfplaetze auf Mallorca',
-      title: 'Golfplaetze auf Mallorca: Mein Guide fuer 2026',
+      breadcrumbCurrent: 'Golfplätze auf Mallorca',
+      title: 'Golfplätze auf Mallorca: mein Guide 2026',
       tags: [
-        '22 Plaetze abgedeckt',
-        'Green Fees aktualisiert 2026',
-        'Gespielt und ordentlich recherchiert',
+        '22 Plätze im Blick',
+        'Greenfees aktualisiert 2026',
+        'Selbst gespielt oder sauber recherchiert',
         'PGA Professional',
       ],
+    },
+    regionHeaders: {
+      palma: { title: 'Palma', subtitle: '5–11 km von der Stadt', count: '8 Plätze' },
+      southwest: { title: 'Südwesten', subtitle: 'Santa Ponsa & Camp de Mar · 20–40 km', count: '6 Plätze' },
+      south: { title: 'Süden', subtitle: 'Llucmajor · 15–20 km', count: '3 Plätze' },
+      east: { title: 'Osten', subtitle: '50–65 km von Palma · ideal als Basis', count: '5 Plätze' },
+      north: { title: 'Norden', subtitle: "Port d'Alcúdia · 55–60 km · Allein Alcanada lohnt die Fahrt", count: '2 Plätze' },
     },
   },
   es: {
@@ -123,27 +130,41 @@ export const GOLF_COURSES_CONTENT = {
     hero: {
       breadcrumbHome: 'Inicio',
       breadcrumbCurrent: 'Campos de golf en Mallorca',
-      title: 'Campos de golf en Mallorca: mi guia 2026',
+      title: 'Campos de golf en Mallorca: mi guía 2026',
       tags: [
-        '22 campos',
-        'Green Fees 2026',
-        'Jugados e investigados como es debido',
+        '22 campos revisados',
+        'Green fees actualizados 2026',
+        'Jugados o investigados a fondo',
         'Profesional PGA',
       ],
+    },
+    regionHeaders: {
+      palma: { title: 'Palma', subtitle: '5–11 km del centro', count: '8 campos' },
+      southwest: { title: 'Suroeste', subtitle: 'Santa Ponsa y Camp de Mar · 20–40 km', count: '6 campos' },
+      south: { title: 'Sur', subtitle: 'Llucmajor · 15–20 km', count: '3 campos' },
+      east: { title: 'Este', subtitle: '50–65 km desde Palma · buena zona para alojarse', count: '5 campos' },
+      north: { title: 'Norte', subtitle: "Port d'Alcúdia · 55–60 km · Solo Alcanada ya justifica el trayecto", count: '2 campos' },
     },
   },
   fr: {
     locale: 'fr',
     hero: {
       breadcrumbHome: 'Accueil',
-      breadcrumbCurrent: 'Parcours de Golf a Majorque',
-      title: 'Parcours de golf a Majorque : mon guide 2026',
+      breadcrumbCurrent: 'Parcours de golf à Majorque',
+      title: 'Parcours de golf à Majorque : mon guide 2026',
       tags: [
-        '22 Parcours Couverts',
-        'Green Fees Actualises 2026',
-        'Joues et recherches serieusement',
+        '22 parcours couverts',
+        'Green fees mis à jour 2026',
+        'Joués ou étudiés sérieusement',
         'Professionnel PGA',
       ],
+    },
+    regionHeaders: {
+      palma: { title: 'Palma', subtitle: '5–11 km du centre', count: '8 parcours' },
+      southwest: { title: 'Sud-ouest', subtitle: 'Santa Ponsa et Camp de Mar · 20–40 km', count: '6 parcours' },
+      south: { title: 'Sud', subtitle: 'Llucmajor · 15–20 km', count: '3 parcours' },
+      east: { title: 'Est', subtitle: '50–65 km depuis Palma · très bon secteur pour séjourner', count: '5 parcours' },
+      north: { title: 'Nord', subtitle: "Port d'Alcúdia · 55–60 km · Alcanada justifie à lui seul le trajet", count: '2 parcours' },
     },
   },
   nl: {
@@ -153,43 +174,81 @@ export const GOLF_COURSES_CONTENT = {
       breadcrumbCurrent: 'Golfbanen op Mallorca',
       title: 'Golfbanen op Mallorca: mijn gids voor 2026',
       tags: [
-        '22 Banen',
-        'Greenfees 2026',
-        'Gespeeld en degelijk onderzocht',
+        '22 banen in kaart gebracht',
+        'Greenfees bijgewerkt voor 2026',
+        'Gespeeld of degelijk onderzocht',
         'PGA Professional',
       ],
+    },
+    regionHeaders: {
+      palma: { title: 'Palma', subtitle: '5–11 km van de stad', count: '8 banen' },
+      southwest: { title: 'Zuidwesten', subtitle: 'Santa Ponsa en Camp de Mar · 20–40 km', count: '6 banen' },
+      south: { title: 'Zuiden', subtitle: 'Llucmajor · 15–20 km', count: '3 banen' },
+      east: { title: 'Oosten', subtitle: '50–65 km vanaf Palma · goede uitvalsbasis', count: '5 banen' },
+      north: { title: 'Noorden', subtitle: "Port d'Alcúdia · 55–60 km · Alleen Alcanada maakt de rit al de moeite waard", count: '2 banen' },
     },
   },
   sv: {
     locale: 'sv',
     hero: {
       breadcrumbHome: 'Hem',
-      breadcrumbCurrent: 'Golfbanor pa Mallorca',
-      title: 'Golfbanor pa Mallorca: min guide for 2026',
+      breadcrumbCurrent: 'Golfbanor på Mallorca',
+      title: 'Golfbanor på Mallorca: min guide för 2026',
       tags: [
-        '22 Banor tackta',
-        'Greenavgifter uppdaterade 2026',
-        'Spelade och ordentligt genomgangna',
+        '22 banor genomgångna',
+        'Greenfee uppdaterade för 2026',
+        'Spelade eller ordentligt researchade',
         'PGA Professional',
       ],
+    },
+    regionHeaders: {
+      palma: { title: 'Palma', subtitle: '5–11 km från stan', count: '8 banor' },
+      southwest: { title: 'Sydväst', subtitle: 'Santa Ponsa och Camp de Mar · 20–40 km', count: '6 banor' },
+      south: { title: 'Söder', subtitle: 'Llucmajor · 15–20 km', count: '3 banor' },
+      east: { title: 'Öst', subtitle: '50–65 km från Palma · bra område att bo i', count: '5 banor' },
+      north: { title: 'Norr', subtitle: "Port d'Alcúdia · 55–60 km · Bara Alcanada gör resan värd det", count: '2 banor' },
     },
   },
   zh: {
     locale: 'zh',
     hero: {
-      breadcrumbHome: 'Shouye',
-      breadcrumbCurrent: 'Mallorca Gaoerfu Qiu Chang',
-      title: 'Mallorca qiuchang: wo de 2026 zhinan',
+      breadcrumbHome: '首页',
+      breadcrumbCurrent: '马略卡高尔夫球场',
+      title: '马略卡球场：我的 2026 指南',
       tags: [
-        '22 courses covered',
-        'Green fees updated 2026',
-        'Played and researched properly',
-        'PGA Professional',
+        '22 座球场已覆盖',
+        '2026 果岭费已更新',
+        '亲自打过或认真研究过',
+        'PGA 职业教练',
       ],
+    },
+    regionHeaders: {
+      palma: { title: '帕尔马', subtitle: '距市区 5–11 公里', count: '8 座球场' },
+      southwest: { title: '西南部', subtitle: '圣蓬萨与坎普德马尔 · 20–40 公里', count: '6 座球场' },
+      south: { title: '南部', subtitle: '柳克马霍尔 · 15–20 公里', count: '3 座球场' },
+      east: { title: '东部', subtitle: '距帕尔马 50–65 公里 · 值得住在这一带', count: '5 座球场' },
+      north: { title: '北部', subtitle: '阿尔库迪亚港 · 55–60 公里 · 只为了 Alcanada 也值得开这一趟', count: '2 座球场' },
     },
   },
 }
 
+function mergeDeep(base, override) {
+  if (Array.isArray(base) || Array.isArray(override)) {
+    return override ?? base
+  }
+
+  if (base && typeof base === 'object' && override && typeof override === 'object') {
+    const output = { ...base }
+    for (const key of Object.keys(override)) {
+      output[key] = mergeDeep(base[key], override[key])
+    }
+    return output
+  }
+
+  return override ?? base
+}
+
 export function getGolfCoursesContent(locale = 'en') {
-  return GOLF_COURSES_CONTENT[locale] || GOLF_COURSES_CONTENT.en
+  if (locale === 'en') return GOLF_COURSES_CONTENT.en
+  return mergeDeep(GOLF_COURSES_CONTENT.en, GOLF_COURSES_CONTENT[locale] || {})
 }

@@ -2,7 +2,23 @@ import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import FillImageFrame from '../../components/FillImageFrame'
+import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 import PostLayout from './PostLayout'
+
+const MONTHS = {
+  January: '01',
+  February: '02',
+  March: '03',
+  April: '04',
+  May: '05',
+  June: '06',
+  July: '07',
+  August: '08',
+  September: '09',
+  October: '10',
+  November: '11',
+  December: '12',
+}
 
 function joinHref(locale, path) {
   if (!path || path.startsWith('http')) return path
@@ -34,7 +50,17 @@ function renderBlock(block, index, locale, imageOrdinal) {
   }
 
   if (block.type === 'subheading') {
-    return <h3 key={`${index}-${block.text}`}>{block.text}</h3>
+    return (
+      <h3 key={`${index}-${block.text}`}>
+        {block.href ? (
+          <a href={block.href} target={block.external ? '_blank' : undefined} rel={block.external ? 'noopener noreferrer' : undefined}>
+            {block.text}
+          </a>
+        ) : (
+          block.text
+        )}
+      </h3>
+    )
   }
 
   if (block.type === 'image') {
@@ -44,15 +70,8 @@ function renderBlock(block, index, locale, imageOrdinal) {
         ? { borderRadius: 2, aspectRatio: '5/4', background: '#f5f5f5' }
         : { borderRadius: 2, aspectRatio: '5/4' }
 
-    return (
-      <figure
-        key={`${index}-${block.src}`}
-        className={`post-media${block.caption ? '' : ' post-media--plain'}${
-          presentation === 'half-left' || presentation === 'half-right'
-            ? ` post-media--half post-media--${presentation}`
-            : ''
-        }`}
-      >
+    const figureContent = (
+      <>
         <FillImageFrame
           src={block.src}
           alt={block.alt}
@@ -69,6 +88,25 @@ function renderBlock(block, index, locale, imageOrdinal) {
             {block.caption}
           </figcaption>
         ) : null}
+      </>
+    )
+
+    return (
+      <figure
+        key={`${index}-${block.src}`}
+        className={`post-media${block.caption ? '' : ' post-media--plain'}${
+          presentation === 'half-left' || presentation === 'half-right'
+            ? ` post-media--half post-media--${presentation}`
+            : ''
+        }`}
+      >
+        {block.href ? (
+          <a href={block.href} target={block.external ? '_blank' : undefined} rel={block.external ? 'noopener noreferrer' : undefined}>
+            {figureContent}
+          </a>
+        ) : (
+          figureContent
+        )}
       </figure>
     )
   }
@@ -160,11 +198,61 @@ function renderBlock(block, index, locale, imageOrdinal) {
   return null
 }
 
+function absoluteUrl(path) {
+  if (!path) return undefined
+  return new URL(path, SITE_ORIGIN).toString()
+}
+
+function schemaDate(updated = '') {
+  const [month, year] = updated.split(' ')
+  return year && MONTHS[month] ? `${year}-${MONTHS[month]}-01` : '2026-03-01'
+}
+
+function buildBlogPostingSchema(meta, blocks, locale) {
+  const slug = meta.slug
+  const pagePath = slug ? buildLocalePath(`/guides/${slug}`, locale) : buildLocalePath('/guides', locale)
+  const firstImage = blocks.find((block) => block.type === 'image')?.src
+  const dateModified = schemaDate(meta.updated)
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: meta.title,
+    description: meta.intro,
+    image: absoluteUrl(firstImage),
+    datePublished: dateModified,
+    dateModified,
+    inLanguage: locale,
+    mainEntityOfPage: `${SITE_ORIGIN}${pagePath}`,
+    author: {
+      '@type': 'Person',
+      name: 'Andy Griffiths',
+      jobTitle: 'UK PGA Advanced Professional',
+      url: SITE_ORIGIN,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Mr Mallorca Golf',
+      url: SITE_ORIGIN,
+    },
+  }
+}
+
+function JsonLd({ data }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  )
+}
+
 export default function GuideArticleView({ meta, blocks, locale = 'en' }) {
   let imageOrdinal = 0
 
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
+      <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
       <RevealObserver />
       <PostLayout meta={meta} lang={locale}>
         {blocks.map((block, index) => {

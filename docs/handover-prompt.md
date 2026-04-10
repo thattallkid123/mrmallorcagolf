@@ -4,7 +4,7 @@ Use this with Claude Opus or another review model when you want a fresh audit of
 
 ## Repo
 
-- `C:\\Users\\andyg\\Desktop\\cursor\\mrmallorcagolf-real`
+- `C:\\Users\\andyg\\Desktop\\cursor\\mrmallorca-audit`
 
 ## Branches
 
@@ -31,6 +31,7 @@ Key principles now are:
 - shared content files should be edited instead of duplicated locale page files
 - mojibake and hidden English fallback are bugs
 - shared release checks should be run before publishing
+- visible English on non-English pages is a release blocker
 
 ## What Is Already Done
 
@@ -70,7 +71,10 @@ Key principles now are:
 - `npm run check:text`
 - `npm run check:locale`
 - `npm run check:shared-locale`
+- `npm run check:locale-leaks`
+- `npm run check:guide-locale-leaks`
 - `npm run check:i18n-release`
+- `npm run check:ready`
 - `npm run build`
 
 ## What I Want From You

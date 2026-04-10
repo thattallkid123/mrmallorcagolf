@@ -5,8 +5,8 @@ export const HOME_CONTENT = {
       eyebrow: 'UK PGA Advanced Professional · Mallorca',
       titleLines: ["Play Mallorca's", 'Best Courses.'],
       emphasis: 'With a Pro by Your Side.',
-      primaryCta: 'Book Your Day',
-      secondaryCta: 'Explore Courses',
+      primaryCta: 'Tell Me Your Dates',
+      secondaryCta: 'What the day looks like',
       trust: [
         'PGA Advanced Professional',
         'Trackman Master Certified',
@@ -19,9 +19,9 @@ export const HOME_CONTENT = {
       title: 'Most golf days in Mallorca start with a booking platform and end with a bill. This is more personal.',
       body: 'I host private golf days on the island\'s best courses, with the coaching given during the round rather than as an add-on afterwards. The golf is better, the decisions are clearer, and the whole day feels properly looked after.',
       stats: [
-        { value: '18', label: 'Years coaching golf' },
-        { value: '15,000+', label: 'Lessons delivered' },
-        { value: '300+', label: 'Competition winners coached' },
+        { value: '22', label: 'Courses on the island' },
+        { value: '€595', label: 'Solo — all inclusive' },
+        { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     socialProof: 'Andy 教练 · 300 million+ golf coaching video views on TikTok · Coaching content trusted worldwide',
@@ -168,57 +168,47 @@ export const HOME_CONTENT = {
       attribution: 'Adam',
     },
     packages: {
-      eyebrow: 'Experiences & Packages',
-      title: 'Three ways to spend the day.',
-      intro: 'All three are private, and all three are hosted by me. The difference is how much of the day you want arranged around the golf.',
+      eyebrow: 'The Experience',
+      title: 'Two ways to spend the day.',
+      intro: 'Both are private, arranged by me, and played on one of the island\'s finest courses. Solo is all inclusive. Groups of 2 to 4 pay one fixed day rate, with green fees confirmed separately.',
       items: [
         {
-          tier: 'The Mallorca Round',
-          name: 'Play with a Pro',
+          tier: 'Solo',
+          name: 'A Day With Andy',
           features: [
             'Course matched to your game and handicap',
             'Tee time secured and fully handled',
-            'Pre-round briefing and warm-up',
-            '18 holes alongside Andy',
-            'On-course coaching throughout',
-            'Post-round debrief - honest and clear',
+            'Pre-round game plan and warm-up',
+            '18 holes playing alongside Andy',
+            'On-course insight — where it can still change the hole',
+            'Long lunch at the course restaurant',
+            'Green fee included',
           ],
-          price: '€350 pp + green fee',
-          note: 'Green fees are additional - typically €80-220 pp depending on course and season.',
+          price: '€595',
+          note: 'Everything included. No additions on the day.',
           cta: 'Enquire',
         },
         {
-          tier: 'The Signature Day',
-          name: 'Hosted Golf Day',
+          tier: 'Group of 2 to 4',
+          name: 'A Day With Andy',
           featured: true,
           features: [
-            'Everything in The Mallorca Round',
-            "Son Gual or Alcanada - two of the island's finest",
-            'Long lunch at the course restaurant',
-            'Curated surprise gift',
-            'Unhurried pace - a full day, not a rushed round',
+            'Private day built for pairs and small groups',
+            'Up to 4 players — one fixed day rate for Andy',
+            'Works well for pairs, small groups, corporate',
+            'Green fees additional — confirmed when we speak',
           ],
-          price: 'From €450 pp + green fee',
-          note: 'Green fees are additional - typically €80-220 pp depending on course and season.',
-          cta: 'Enquire',
-        },
-        {
-          tier: 'The Full Experience',
-          name: 'Bespoke Golf Journey',
-          features: [
-            'Multi-course day or full 4-day itinerary',
-            'Private transport from Palma hotels or villas',
-            'Dinner at a handpicked Mallorca restaurant',
-            'Spa or recovery session at a partner venue',
-            'Sunset coastal drive along the Tramuntana',
-            'Hot air balloon over the mountains',
-            'Wine tasting at a Mallorcan vineyard',
-            'Full concierge for groups and corporates',
-          ],
-          price: 'Custom itinerary - on enquiry',
+          price: '€1,195',
+          note: 'Andy\'s fixed day rate for groups of 2 to 4. Green fees are additional and confirmed when we speak.',
           cta: 'Enquire',
         },
       ],
+      multiDay: {
+        eyebrow: 'Looking for something bigger',
+        title: 'A multi-day experience, arranged around you.',
+        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond — with private transfers, handpicked dining, and access to courses most visitors cannot book. From €2,000. Get in touch with your dates.',
+        cta: 'Enquire about a multi-day trip',
+      },
     },
     faq: {
       eyebrow: 'Questions',
@@ -239,7 +229,7 @@ export const HOME_CONTENT = {
         },
         {
           q: 'Is this suitable for a group?',
-          a: 'Yes. The experiences work for solos, pairs, groups of friends, and corporate days. The Full Experience is particularly popular for business groups and executives visiting the island.',
+          a: 'Yes. The experiences work for solos, pairs, groups of friends, and corporate days. The multi-day option is especially well suited to business groups and executives visiting the island.',
         },
         {
           q: 'When is the best time of year to visit?',
@@ -1053,6 +1043,801 @@ for (const [locale, override] of Object.entries(HOME_OVERRIDES)) {
   })
 }
 
+const HOME_AUDIT_OVERRIDES = {
+  de: {
+    intro: {
+      stats: [
+        { value: '22', label: 'Plätze auf der Insel' },
+        { value: '€595', label: 'Solo — alles inklusive' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      title: 'Zwei Wege, den Tag zu verbringen.',
+      intro: 'Beide Varianten sind privat und werden von mir persönlich begleitet. Solo ist alles inklusive. Gruppen von 2 bis 4 zahlen einen festen Tagessatz, Greenfees werden separat bestätigt.',
+      items: [
+        {
+          tier: 'Solo',
+          name: 'A Day With Andy',
+          features: [
+            'Platz passend zu Ihrem Spiel und Handicap',
+            'Startzeit gesichert und komplett organisiert',
+            'Spielplan und Warm-up vor der Runde',
+            '18 Löcher an Andys Seite',
+            'On-course-Einsichten genau dann, wenn sie noch etwas verändern können',
+            'Langes Mittagessen im Clubrestaurant',
+            'Greenfee inklusive',
+          ],
+          price: '€595',
+          note: 'Alles inklusive. Keine Überraschungen am Tag selbst.',
+          cta: 'Anfragen',
+        },
+        {
+          tier: 'Gruppe von 2 bis 4',
+          name: 'A Day With Andy',
+          featured: true,
+          features: [
+            'Privater Tag für Paare und kleine Gruppen',
+            'Bis zu 4 Spieler — ein fester Tagessatz für Andy',
+            'Ideal für Freunde, kleine Gruppen und Firmenrunden',
+            'Greenfees zusätzlich — wir bestätigen sie im Gespräch',
+          ],
+          price: '€1.195',
+          note: 'Fester Tagessatz für Andy bei Gruppen von 2 bis 4. Greenfees kommen zusätzlich dazu und werden im Gespräch bestätigt.',
+          cta: 'Anfragen',
+        },
+      ],
+    },
+  },
+  es: {
+    intro: {
+      stats: [
+        { value: '22', label: 'campos en la isla' },
+        { value: '€595', label: 'Solo — todo incluido' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      title: 'Dos maneras de vivir el día.',
+      intro: 'Ambas son privadas y las organizo personalmente. Solo es todo incluido. Los grupos de 2 a 4 pagan una tarifa fija por el día, con los green fees confirmados por separado.',
+      items: [
+        {
+          tier: 'Solo',
+          name: 'A Day With Andy',
+          features: [
+            'Campo elegido según su juego y su hándicap',
+            'Hora de salida asegurada y completamente gestionada',
+            'Plan de juego y calentamiento antes de la vuelta',
+            '18 hoyos junto a Andy',
+            'Observaciones en el campo cuando todavía pueden cambiar el hoyo',
+            'Almuerzo largo en el restaurante del club',
+            'Green fee incluido',
+          ],
+          price: '€595',
+          note: 'Todo incluido. Sin extras el día de la experiencia.',
+          cta: 'Consultar',
+        },
+        {
+          tier: 'Grupo de 2 a 4',
+          name: 'A Day With Andy',
+          featured: true,
+          features: [
+            'Día privado para parejas y pequeños grupos',
+            'Hasta 4 jugadores — una tarifa fija por el día de Andy',
+            'Ideal para amigos, grupos pequeños y empresa',
+            'Green fees adicionales — se confirman al hablar',
+          ],
+          price: '€1.195',
+          note: 'Tarifa fija del día de Andy para grupos de 2 a 4. Los green fees son adicionales y se confirman cuando hablamos.',
+          cta: 'Consultar',
+        },
+      ],
+    },
+  },
+  fr: {
+    intro: {
+      stats: [
+        { value: '22', label: "parcours sur l'île" },
+        { value: '€595', label: 'Solo — tout compris' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      title: 'Deux façons de vivre la journée.',
+      intro: 'Les deux formats sont privés et organisés personnellement par moi. En solo, tout est compris. Les groupes de 2 à 4 paient un tarif fixe pour la journée, avec les green fees confirmés séparément.',
+      items: [
+        {
+          tier: 'Solo',
+          name: 'A Day With Andy',
+          features: [
+            'Parcours choisi selon votre jeu et votre index',
+            'Heure de départ sécurisée et entièrement gérée',
+            'Plan de jeu et échauffement avant la partie',
+            '18 trous aux côtés d’Andy',
+            'Observations sur le parcours au moment où elles peuvent encore changer quelque chose',
+            'Long déjeuner au restaurant du club',
+            'Green fee inclus',
+          ],
+          price: '€595',
+          note: 'Tout compris. Rien à ajouter le jour même.',
+          cta: 'Demander',
+        },
+        {
+          tier: 'Groupe de 2 à 4',
+          name: 'A Day With Andy',
+          featured: true,
+          features: [
+            'Journée privée pour couples et petits groupes',
+            'Jusqu’à 4 joueurs — un tarif fixe pour la journée d’Andy',
+            'Parfait pour amis, petits groupes et entreprise',
+            'Green fees en plus — confirmés ensemble',
+          ],
+          price: '€1 195',
+          note: 'Tarif fixe pour la journée d’Andy pour les groupes de 2 à 4. Les green fees s’ajoutent et sont confirmés ensemble.',
+          cta: 'Demander',
+        },
+      ],
+    },
+  },
+  nl: {
+    intro: {
+      stats: [
+        { value: '22', label: 'banen op het eiland' },
+        { value: '€595', label: 'Solo — inclusief greenfee en lunch' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      title: 'Twee manieren om de dag te beleven.',
+      intro: 'Beide zijn privé en worden persoonlijk door mij begeleid. Solo is inclusief greenfee en lunch. Groepen van 2 tot 4 betalen één vaste dagprijs, met greenfees die apart worden bevestigd.',
+      items: [
+        {
+          tier: 'Solo',
+          name: 'A Day With Andy',
+          features: [
+            'Baan gekozen op basis van uw spel en handicap',
+            'Starttijd vastgelegd en volledig geregeld',
+            'Spelplan en warming-up voor de ronde',
+            '18 holes naast Andy',
+            'Inzichten op de baan wanneer ze nog echt iets kunnen veranderen',
+            'Uitgebreide lunch in het clubrestaurant',
+            'Greenfee inbegrepen',
+          ],
+          price: '€595',
+          note: 'Alles inbegrepen. Geen extra’s op de dag zelf.',
+          cta: 'Aanvragen',
+        },
+        {
+          tier: 'Groep van 2 tot 4',
+          name: 'A Day With Andy',
+          featured: true,
+          features: [
+            'Privédag voor tweetallen en kleine groepen',
+            'Tot 4 spelers — één vaste dagprijs voor Andy',
+            'Werkt goed voor vrienden, kleine groepen en bedrijven',
+            'Greenfees extra — bevestigd wanneer we spreken',
+          ],
+          price: '€1.195',
+          note: 'Vaste dagprijs voor Andy voor groepen van 2 tot 4. Greenfees komen erbij en worden bevestigd wanneer we spreken.',
+          cta: 'Aanvragen',
+        },
+      ],
+    },
+  },
+  sv: {
+    intro: {
+      stats: [
+        { value: '22', label: 'banor på ön' },
+        { value: '€595', label: 'Solo — greenfee och lunch ingår' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      title: 'Två sätt att lägga upp dagen.',
+      intro: 'Båda alternativen är privata och leds personligen av mig. Solo inkluderar greenfee och lunch. Grupper på 2 till 4 betalar ett fast dagspris, med green fees som bekräftas separat.',
+      items: [
+        {
+          tier: 'Solo',
+          name: 'A Day With Andy',
+          features: [
+            'Bana vald efter ditt spel och handicap',
+            'Starttid säkrad och helt ordnad',
+            'Spelplan och uppvärmning före rundan',
+            '18 hål vid Andys sida',
+            'Insikter på banan när de fortfarande kan förändra hålet',
+            'Lång lunch i klubbrestaurangen',
+            'Green fee ingår',
+          ],
+          price: '€595',
+          note: 'Allt ingår. Inga tillägg på själva dagen.',
+          cta: 'Förfrågan',
+        },
+        {
+          tier: 'Grupp på 2 till 4',
+          name: 'A Day With Andy',
+          featured: true,
+          features: [
+            'Privat dag för par och små grupper',
+            'Upp till 4 spelare — ett fast dagspris för Andy',
+            'Passar vänner, små grupper och företag',
+            'Green fees tillkommer — bekräftas när vi pratar',
+          ],
+          price: '€1.195',
+          note: 'Fast dagspris för Andy för grupper på 2 till 4. Green fees tillkommer och bekräftas när vi pratar.',
+          cta: 'Förfrågan',
+        },
+      ],
+    },
+  },
+  zh: {
+    intro: {
+      stats: [
+        { value: '22', label: '岛上球场数量' },
+        { value: '€595', label: '单人 — 全包' },
+        { value: 'PGA', label: 'Advanced Professional' },
+      ],
+    },
+    packages: {
+      title: '两种安排这一天的方式。',
+      intro: '两种方案都是私人的，也都由我亲自陪同。单人方案为全包。2 到 4 人的小组按 Andy 的固定日费计价，果岭费另行确认。',
+      items: [
+        {
+          tier: '单人',
+          name: 'A Day With Andy',
+          features: [
+            '按照您的球技与差点匹配球场',
+            '开球时间已预订并安排妥当',
+            '赛前计划与热身',
+            '与 Andy 同打 18 洞',
+            '在真正还来得及改变结果的时候给出场上观察',
+            '在球场餐厅享用悠长午餐',
+            '果岭费已包含',
+          ],
+          price: '€595',
+          note: '全部包含。当天不会再有额外项目。',
+          cta: '立即咨询',
+        },
+        {
+          tier: '2 到 4 人',
+          name: 'A Day With Andy',
+          featured: true,
+          features: [
+            '适合双人和小团体的私人高尔夫日',
+            '最多 4 位球手 — Andy 收取固定日费',
+            '适合朋友同行、小团体和商务接待',
+            '果岭费另计 — 沟通后确认',
+          ],
+          price: '€1,195',
+          note: '2 到 4 人的小组按 Andy 的固定日费计价。果岭费另计，并在沟通后确认。',
+          cta: '立即咨询',
+        },
+      ],
+    },
+  },
+}
+
+const HOME_RELOCALIZED_OVERRIDES = {
+  de: {
+    packages: {
+      items: [
+        {
+          tier: 'Solo',
+          name: 'Ein Tag mit Andy',
+          features: [
+            'Platz passend zu Ihrem Spiel und Handicap',
+            'Startzeit gesichert und komplett organisiert',
+            'Spielplan und Warm-up vor der Runde',
+            '18 Löcher an Andys Seite',
+            'On-course-Einsichten genau dann, wenn sie noch etwas verändern können',
+            'Langes Mittagessen im Clubrestaurant',
+            'Greenfee inklusive',
+          ],
+          price: '€595',
+          note: 'Alles inklusive. Keine Überraschungen am Tag selbst.',
+          cta: 'Anfragen',
+        },
+        {
+          tier: 'Gruppe von 2 bis 4',
+          name: 'Ein Tag mit Andy',
+          featured: true,
+          features: [
+            'Privater Tag für Paare und kleine Gruppen',
+            'Bis zu 4 Spieler - ein fester Tagessatz für Andy',
+            'Ideal für Freunde, kleine Gruppen und Firmenrunden',
+            'Greenfees zusätzlich - wir bestätigen sie im Gespräch',
+          ],
+          price: '€1.195',
+          note: 'Fester Tagessatz für Andy bei Gruppen von 2 bis 4. Greenfees kommen zusätzlich dazu und werden im Gespräch bestätigt.',
+          cta: 'Anfragen',
+        },
+      ],
+      multiDay: {
+        eyebrow: 'Suchen Sie nach etwas Größerem?',
+        title: 'Ein mehrtägiges Erlebnis, um Sie herum arrangiert.',
+        body: 'Zwei oder drei aufeinanderfolgende Tage über Son Gual, Alcanada und weitere Plätze hinweg - mit privaten Transfers, sorgfältig ausgewählter Gastronomie und Zugang zu Plätzen, die die meisten Besucher nicht buchen können.',
+        detail: 'Ab €2.000. Schreiben Sie mir mit Ihren Reisedaten, und ich schicke Ihnen einen passenden Vorschlag.',
+        button: 'Mehrtägige Reise anfragen →',
+        href: '/de/contact',
+      },
+    },
+  },
+  es: {
+    packages: {
+      items: [
+        {
+          tier: 'Solo',
+          name: 'Un día con Andy',
+          features: [
+            'Campo elegido según su juego y su hándicap',
+            'Hora de salida asegurada y completamente gestionada',
+            'Plan de juego y calentamiento antes de la vuelta',
+            '18 hoyos junto a Andy',
+            'Observaciones en el campo cuando todavía pueden cambiar el hoyo',
+            'Almuerzo largo en el restaurante del club',
+            'Green fee incluido',
+          ],
+          price: '€595',
+          note: 'Todo incluido. Sin extras el día de la experiencia.',
+          cta: 'Consultar',
+        },
+        {
+          tier: 'Grupo de 2 a 4',
+          name: 'Un día con Andy',
+          featured: true,
+          features: [
+            'Día privado para parejas y pequeños grupos',
+            'Hasta 4 jugadores - una tarifa fija por el día de Andy',
+            'Ideal para amigos, grupos pequeños y empresa',
+            'Green fees adicionales - se confirman al hablar',
+          ],
+          price: '€1.195',
+          note: 'Tarifa fija del día de Andy para grupos de 2 a 4. Los green fees son adicionales y se confirman cuando hablamos.',
+          cta: 'Consultar',
+        },
+      ],
+      multiDay: {
+        eyebrow: '¿Busca algo más grande?',
+        title: 'Una experiencia de varios días, organizada alrededor de usted.',
+        body: 'Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.',
+        detail: 'Desde €2.000. Escríbame con sus fechas y le propondré una opción a su medida.',
+        button: 'Consultar un viaje de varios días →',
+        href: '/es/contact',
+      },
+    },
+  },
+  fr: {
+    packages: {
+      items: [
+        {
+          tier: 'Solo',
+          name: 'Une journée avec Andy',
+          features: [
+            'Parcours choisi selon votre jeu et votre index',
+            'Heure de départ sécurisée et entièrement gérée',
+            'Plan de jeu et échauffement avant la partie',
+            '18 trous aux côtés d’Andy',
+            'Observations sur le parcours au moment où elles peuvent encore changer quelque chose',
+            'Long déjeuner au restaurant du club',
+            'Green fee inclus',
+          ],
+          price: '€595',
+          note: 'Tout compris. Rien à ajouter le jour même.',
+          cta: 'Demander',
+        },
+        {
+          tier: 'Groupe de 2 à 4',
+          name: 'Une journée avec Andy',
+          featured: true,
+          features: [
+            'Journée privée pour couples et petits groupes',
+            'Jusqu’à 4 joueurs - un tarif fixe pour la journée d’Andy',
+            'Parfait pour amis, petits groupes et entreprise',
+            'Green fees en plus - confirmés ensemble',
+          ],
+          price: '€1 195',
+          note: 'Tarif fixe pour la journée d’Andy pour les groupes de 2 à 4. Les green fees s’ajoutent et sont confirmés ensemble.',
+          cta: 'Demander',
+        },
+      ],
+      multiDay: {
+        eyebrow: 'Vous cherchez quelque chose de plus ambitieux ?',
+        title: 'Une expérience sur plusieurs jours, organisée autour de vous.',
+        body: 'Deux ou trois jours consécutifs entre Son Gual, Alcanada et au-delà, avec transferts privés, bonnes tables soigneusement choisies et accès à des parcours que la plupart des visiteurs ne peuvent pas réserver.',
+        detail: 'À partir de 2 000 €. Envoyez-moi vos dates et je vous proposerai une version adaptée.',
+        button: 'Demander un séjour sur plusieurs jours →',
+        href: '/fr/contact',
+      },
+    },
+  },
+  nl: {
+    packages: {
+      items: [
+        {
+          tier: 'Solo',
+          name: 'Een dag met Andy',
+          features: [
+            'Baan gekozen op basis van uw spel en handicap',
+            'Starttijd vastgelegd en volledig geregeld',
+            'Spelplan en warming-up voor de ronde',
+            '18 holes naast Andy',
+            'Inzichten op de baan wanneer ze nog echt iets kunnen veranderen',
+            'Uitgebreide lunch in het clubrestaurant',
+            'Greenfee inbegrepen',
+          ],
+          price: '€595',
+          note: 'Alles inbegrepen. Geen extra’s op de dag zelf.',
+          cta: 'Aanvragen',
+        },
+        {
+          tier: 'Groep van 2 tot 4',
+          name: 'Een dag met Andy',
+          featured: true,
+          features: [
+            'Privédag voor tweetallen en kleine groepen',
+            'Tot 4 spelers - één vaste dagprijs voor Andy',
+            'Werkt goed voor vrienden, kleine groepen en bedrijven',
+            'Greenfees extra - bevestigd wanneer we spreken',
+          ],
+          price: '€1.195',
+          note: 'Vaste dagprijs voor Andy voor groepen van 2 tot 4. Greenfees komen erbij en worden bevestigd wanneer we spreken.',
+          cta: 'Aanvragen',
+        },
+      ],
+      multiDay: {
+        eyebrow: 'Zoekt u iets groters?',
+        title: 'Een meerdaagse ervaring, volledig om u heen opgebouwd.',
+        body: 'Twee of drie opeenvolgende dagen langs Son Gual, Alcanada en meer, met privétransfers, zorgvuldig gekozen restaurants en toegang tot banen die de meeste bezoekers niet kunnen boeken.',
+        detail: 'Vanaf €2.000. Stuur me uw data en ik werk een passend voorstel uit.',
+        button: 'Meerdaagse trip aanvragen →',
+        href: '/nl/contact',
+      },
+    },
+  },
+  sv: {
+    packages: {
+      items: [
+        {
+          tier: 'Solo',
+          name: 'En dag med Andy',
+          features: [
+            'Bana vald efter ditt spel och handicap',
+            'Starttid säkrad och helt ordnad',
+            'Spelplan och uppvärmning före rundan',
+            '18 hål vid Andys sida',
+            'Insikter på banan när de fortfarande kan förändra hålet',
+            'Lång lunch i klubbrestaurangen',
+            'Green fee ingår',
+          ],
+          price: '€595',
+          note: 'Allt ingår. Inga tillägg på själva dagen.',
+          cta: 'Förfrågan',
+        },
+        {
+          tier: 'Grupp på 2 till 4',
+          name: 'En dag med Andy',
+          featured: true,
+          features: [
+            'Privat dag för par och små grupper',
+            'Upp till 4 spelare - ett fast dagspris för Andy',
+            'Passar vänner, små grupper och företag',
+            'Green fees tillkommer - bekräftas när vi pratar',
+          ],
+          price: '€1.195',
+          note: 'Fast dagspris för Andy för grupper på 2 till 4. Green fees tillkommer och bekräftas när vi pratar.',
+          cta: 'Förfrågan',
+        },
+      ],
+      multiDay: {
+        eyebrow: 'Letar du efter något större?',
+        title: 'En flerdagarsupplevelse, planerad runt dig.',
+        body: 'Två eller tre dagar i följd över Son Gual, Alcanada och vidare, med privata transfers, noggrant utvalda restauranger och tillgång till banor som de flesta besökare inte kan boka.',
+        detail: 'Från €2.000. Skicka dina datum så sätter jag ihop ett förslag som passar.',
+        button: 'Fråga om en flerdagarsresa →',
+        href: '/sv/contact',
+      },
+    },
+  },
+  zh: {
+    packages: {
+      items: [
+        {
+          tier: '单人',
+          name: '与 Andy 共度一天',
+          features: [
+            '按照您的球技与差点匹配球场',
+            '开球时间已预订并安排妥当',
+            '赛前计划与热身',
+            '与 Andy 同打 18 洞',
+            '在真正还来得及改变结果的时候给出场上观察',
+            '在球场餐厅享用悠长午餐',
+            '果岭费已包含',
+          ],
+          price: '€595',
+          note: '全部包含。当天不会再有额外项目。',
+          cta: '立即咨询',
+        },
+        {
+          tier: '2 到 4 人',
+          name: '与 Andy 共度一天',
+          featured: true,
+          features: [
+            '适合双人和小团体的私人高尔夫日',
+            '最多 4 位球手 - Andy 收取固定日费',
+            '适合朋友同行、小团体和商务接待',
+            '果岭费另计 - 沟通后确认',
+          ],
+          price: '€1,195',
+          note: '2 到 4 人的小组按 Andy 的固定日费计价。果岭费另计，并在沟通后确认。',
+          cta: '立即咨询',
+        },
+      ],
+      multiDay: {
+        eyebrow: '想要更完整的行程？',
+        title: '一款围绕您定制的多日体验。',
+        body: '连续两到三天，安排 Son Gual、Alcanada 及更多球场，包含私人接送、精心挑选的餐饮，以及多数访客订不到的球场机会。',
+        detail: '€2,000 起。把您的日期发给我，我会为您准备合适的方案。',
+        button: '咨询多日行程 →',
+        href: '/zh/contact',
+      },
+    },
+  },
+}
+
+for (const [locale, override] of Object.entries(HOME_AUDIT_OVERRIDES)) {
+  HOME_CONTENT[locale] = deepMerge(HOME_CONTENT[locale], override)
+}
+
+for (const [locale, override] of Object.entries(HOME_RELOCALIZED_OVERRIDES)) {
+  HOME_CONTENT[locale] = deepMerge(HOME_CONTENT[locale], override)
+}
+
+const HOME_HUMANIZED_OVERRIDES = {
+  de: {
+    hero: {
+      eyebrow: 'PGA Advanced Professional auf Mallorca',
+      trust: [
+        'PGA Advanced Professional',
+        'Trackman Master zertifiziert',
+        '18 Jahre Golfcoaching',
+        'Pebble Beach · Evian · The Open',
+      ],
+    },
+    packages: {
+      intro: 'Beide Varianten sind privat, und ich begleite beide persönlich. Solo ist inklusive Greenfee und Lunch. Für Gruppen von 2 bis 4 gilt ein fester Tagessatz, die Greenfees bestätigen wir gemeinsam.',
+      multiDay: {
+        cta: 'Mehrtägige Reise anfragen',
+      },
+    },
+  },
+  es: {
+    hero: {
+      eyebrow: 'PGA Advanced Professional en Mallorca',
+      trust: [
+        'PGA Advanced Professional',
+        'Certificado Trackman Master',
+        '18 años dedicados al coaching de golf',
+        'Pebble Beach · Évian · The Open',
+      ],
+    },
+    packages: {
+      intro: 'Las dos opciones son privadas y las acompaño personalmente. El formato individual lo incluye todo. Los grupos de 2 a 4 tienen una tarifa fija por el día, y los green fees se confirman aparte.',
+      multiDay: {
+        cta: 'Consultar un viaje de varios días',
+      },
+    },
+  },
+  fr: {
+    hero: {
+      eyebrow: 'Professionnel PGA confirmé à Majorque',
+      trust: [
+        'Professionnel PGA confirmé',
+        'Certifié Trackman Master',
+        '18 ans de coaching de golf',
+        'Pebble Beach · Évian · The Open',
+      ],
+    },
+    winners: {
+      eyebrow: 'Preuves sur le terrain',
+      title: 'Des vainqueurs en compétition, des joueurs ambitieux, et tout ce qu’il y a entre les deux.',
+      intro: 'J’ai accompagné des juniors de haut niveau, des joueurs de club et beaucoup de personnes qui voulaient simplement arrêter de gâcher des coups. Le fil conducteur est presque toujours le même : des décisions plus claires, de meilleurs schémas, et un progrès qui tient encore quand la carte compte.',
+      testimonial: 'Je joue au golf depuis l’âge de cinq ans. Je pensais avoir les bases et avoir surtout besoin de répétitions, pas d’un coach. Puis on m’a offert une séance avec Andy, et j’ai décidé d’essayer. J’ai bien fait. Nous avons travaillé les détails fins du swing, la qualité du contact, le transfert d’appui et la mécanique. Même de petits ajustements ont produit des résultats réguliers, et je suis convaincu qu’ils peuvent me faire gagner 5 à 10 coups avec une seule séance. Andy a été irréprochable du début à la fin. Je ne le remercierai jamais assez.',
+      attribution: 'Adam',
+    },
+    packages: {
+      intro: 'Les deux formats sont privés, et je les accompagne moi-même. En solo, tout est compris. Pour les groupes de 2 à 4, il y a un tarif fixe pour la journée, et les green fees sont confirmés séparément.',
+      multiDay: {
+        cta: 'Demander un séjour sur plusieurs jours',
+      },
+    },
+  },
+  nl: {
+    hero: {
+      eyebrow: 'PGA Advanced Professional op Mallorca',
+      trust: [
+        'PGA Advanced Professional',
+        'Trackman Master gecertificeerd',
+        '18 jaar golfcoaching',
+        'Pebble Beach · Evian · The Open',
+      ],
+    },
+    winners: {
+      eyebrow: 'Bewijs op de baan',
+      title: 'Wedstrijdwinnaars, ambitieuze golfers en alles ertussenin.',
+      intro: 'Ik heb elitejeugd, clubgolfers en genoeg spelers begeleid die simpelweg wilden stoppen met onnodig slagen weg te geven. De rode draad is bijna altijd dezelfde: helderdere beslissingen, betere patronen en vooruitgang die ook standhoudt wanneer de kaart telt.',
+      testimonial: 'Ik speel golf sinds mijn vijfde. Ik dacht dat de basis er wel was en dat ik vooral meer herhalingen nodig had, niet per se een coach. Toen kreeg ik een les met Andy cadeau en besloot ik het toch te proberen. Gelukkig maar. We gingen door de fijnere details van mijn swing, beter balcontact, gewichtsverplaatsing en mechaniek. Zelfs kleine aanpassingen gaven meteen constantere resultaten, en ik ben ervan overtuigd dat ze me met één sessie al vijf tot tien slagen kunnen schelen. Andy was van begin tot eind een absolute professional. Ik kan hem niet genoeg bedanken.',
+      attribution: 'Adam',
+    },
+    packages: {
+      intro: 'Beide opties zijn privé en ik begeleid ze persoonlijk. Solo is volledig inbegrepen. Voor groepen van 2 tot 4 geldt één vaste dagprijs, met greenfees die we apart bevestigen.',
+      multiDay: {
+        cta: 'Meerdaagse trip aanvragen',
+      },
+    },
+  },
+  sv: {
+    hero: {
+      eyebrow: 'PGA Advanced Professional på Mallorca',
+      trust: [
+        'PGA Advanced Professional',
+        'Trackman Master-certifierad',
+        '18 år av golfcoaching',
+        'Pebble Beach · Evian · The Open',
+      ],
+    },
+    winners: {
+      eyebrow: 'Bevis i verkligheten',
+      title: 'Tävlingsvinnare, ambitiösa golfare och många däremellan.',
+      intro: 'Jag har coachat elitjuniorer, klubbgolfare och många som bara ville sluta kasta bort slag. Den gemensamma nämnaren brukar vara densamma: tydligare beslut, bättre mönster och en utveckling som fortfarande syns när scorekortet faktiskt räknas.',
+      testimonial: 'Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna och mest behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att ge det en chans. Det är jag glad för. Vi jobbade igenom de finare detaljerna i svingen, bättre bollträff, viktförflyttning och mekanik. Även små justeringar gav stabila resultat direkt, och jag är övertygad om att de kan spara fem till tio slag för mig efter bara en session. Andy var oerhört professionell hela vägen. Jag kan inte tacka honom nog.',
+      attribution: 'Adam',
+    },
+    packages: {
+      intro: 'Båda alternativen är privata och leds personligen av mig. Solo inkluderar greenfee och lunch. För grupper på 2 till 4 gäller ett fast dagspris, och green fees bekräftar vi separat.',
+      multiDay: {
+        cta: 'Fråga om en flerdagarsresa',
+      },
+    },
+  },
+  zh: {
+    hero: {
+      eyebrow: '英国 PGA 高级职业教练 · 马略卡',
+      trust: [
+        '英国 PGA 高级职业教练',
+        'Trackman Master 认证',
+        '18 年高尔夫执教经验',
+        'Pebble Beach · Évian · The Open',
+      ],
+    },
+    winners: {
+      eyebrow: '真正的成绩',
+      title: '有比赛冠军，也有认真想进步的球手，和介于两者之间的很多人。',
+      intro: '我带过精英青少年、俱乐部球手，也带过很多只是想少丢几杆的人。共同点通常都一样：决策更清楚，击球模式更稳定，而且这种进步到了真正记分的时候依然能体现出来。',
+      testimonial: '我从五岁开始打高尔夫。我一直以为自己的基本功已经有了，只需要多打一点，而不是找教练。后来有人送了我一节 Andy 的课，我决定试试看。结果证明这决定很值。我们把挥杆里的细节、扎实击球、重心转移和动作机制都重新梳理了一遍。哪怕只是很小的调整，也带来了持续稳定的效果，我很有信心，仅凭这一节课就能让我少打 5 到 10 杆。Andy 从头到尾都非常专业，我真的非常感谢他。',
+      attribution: 'Adam',
+    },
+    packages: {
+      intro: '这两种安排都是私人的，也都由我亲自带着走。单人方案全部包含在内。2 到 4 人的小组按固定日费计价，果岭费另外确认。',
+      multiDay: {
+        cta: '咨询多日行程',
+      },
+    },
+  },
+}
+
+for (const [locale, override] of Object.entries(HOME_HUMANIZED_OVERRIDES)) {
+  HOME_CONTENT[locale] = deepMerge(HOME_CONTENT[locale], override)
+}
+
+const HOME_FEATURED_BADGE_MAP = {
+  de: { 'Expert Pick': 'Expertenwahl', 'Best in Spain 2025': 'Bester Platz Spaniens 2025' },
+  es: { 'Expert Pick': 'Selección personal', 'Best in Spain 2025': 'Mejor campo de España 2025' },
+  fr: { 'Expert Pick': 'Choix d’expert', 'Best in Spain 2025': 'Meilleur d’Espagne 2025' },
+  nl: { 'Expert Pick': 'Expertkeuze', 'Best in Spain 2025': 'Beste van Spanje 2025' },
+  sv: { 'Expert Pick': 'Expertval', 'Best in Spain 2025': 'Bäst i Spanien 2025' },
+  zh: { 'Expert Pick': '专家推荐', 'Best in Spain 2025': '2025 西班牙最佳' },
+}
+
+const HOME_FEATURED_REPLACEMENTS = {
+  de: [
+    ['Palma · 11 km from city', 'Palma · 11 km von der Stadt'],
+    ['Alcudia · North Mallorca', 'Alcúdia · Nordmallorca'],
+    ['Son Vida · Palma', 'Son Vida · Palma'],
+    ['Santa Ponsa · Southwest', 'Santa Ponsa · Südwesten'],
+    ['Camp de Mar · Southwest', 'Camp de Mar · Südwesten'],
+    ['Championship', 'Championship'],
+    ['Difficulty', 'Schwierigkeit'],
+    ['Thomas Himmel\'s 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.', 'Thomas Himmels Design von 2007 lebt in seinem eigenen Windsystem. Der Schlussabschnitt von Loch 15 bis 18 gehört zu den stärksten Passagen im europäischen Golf.'],
+    ['Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.', 'Robert Trent Jones Jr. von seiner schönsten Seite. Der Leuchtturm bleibt fast die ganze Runde im Blick, und das Setting gehört zu den schönsten in Spanien.'],
+    ['Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.', 'Bei den World Golf Awards 2025 als bester Golfplatz Spaniens ausgezeichnet, mit Blick über die Bucht von Palma und einem tausendjährigen Olivenbaum an Loch 15.'],
+    ['Host of the 2021 DP World Tour Mallorca Open. Long, generous from the tee, and one of the easiest places on the island to swing freely with driver.', 'Austragungsort der DP World Tour Mallorca Open 2021. Lang, großzügig vom Tee und einer der Plätze auf der Insel, auf denen man den Driver frei schwingen kann.'],
+    ['The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', 'Loch 6 ist mit 609 Metern das längste Par 5 Spaniens. Kompromisslos in die Küstenhügel gebaut. Nehmen Sie ein paar Bälle mehr mit und lassen Sie das Ego im Bag.'],
+  ],
+  fr: [
+    ['Palma · 11 km from city', 'Palma · 11 km du centre'],
+    ['Alcudia · North Mallorca', 'Alcúdia · nord de Majorque'],
+    ['Son Vida · Palma', 'Son Vida · Palma'],
+    ['Santa Ponsa · Southwest', 'Santa Ponsa · sud-ouest'],
+    ['Camp de Mar · Southwest', 'Camp de Mar · sud-ouest'],
+    ['Championship', 'Championship'],
+    ['Difficulty', 'de difficulté'],
+    ['Thomas Himmel\'s 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.', 'Le dessin de Thomas Himmel, signé en 2007, vit dans son propre système de vent. Le final du 15 au 18 compte parmi les meilleures séquences du golf européen.'],
+    ['Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.', 'Robert Trent Jones Jr. dans sa version la plus spectaculaire. Le phare reste visible pendant une grande partie du parcours, dans l’un des cadres les plus beaux d’Espagne.'],
+    ['Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.', 'Élu meilleur parcours d’Espagne aux World Golf Awards 2025, avec vue sur la baie de Palma et un olivier millénaire au 15.'],
+    ['Host of the 2021 DP World Tour Mallorca Open. Long, generous from the tee, and one of the easiest places on the island to swing freely with driver.', 'Hôte du Mallorca Open du DP World Tour en 2021. Long, généreux au départ, et l’un des endroits les plus simples de l’île pour laisser partir le driver.'],
+    ['The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', 'Le 6 est le plus long par 5 d’Espagne avec 609 mètres. Tracé dans les collines côtières sans concession. Prévoyez quelques balles de plus et laissez l’ego de côté.'],
+  ],
+  nl: [
+    ['Palma · 11 km from city', 'Palma · 11 km van de stad'],
+    ['Alcudia · North Mallorca', 'Alcúdia · noordelijk Mallorca'],
+    ['Son Vida · Palma', 'Son Vida · Palma'],
+    ['Santa Ponsa · Southwest', 'Santa Ponsa · zuidwesten'],
+    ['Camp de Mar · Southwest', 'Camp de Mar · zuidwesten'],
+    ['Championship', 'Championship'],
+    ['Difficulty', 'moeilijkheid'],
+    ['Thomas Himmel\'s 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.', 'Het ontwerp van Thomas Himmel uit 2007 leeft in zijn eigen windpatroon. De slotreeks van hole 15 tot en met 18 hoort bij het beste wat Europees golf te bieden heeft.'],
+    ['Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.', 'Robert Trent Jones Jr. op zijn meest schilderachtig. De vuurtoren blijft bijna de hele ronde in beeld en het decor hoort bij het mooiste van Spanje.'],
+    ['Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.', 'Uitgeroepen tot beste golfbaan van Spanje bij de World Golf Awards 2025, met uitzicht over de baai van Palma en een duizend jaar oude olijfboom bij hole 15.'],
+    ['Host of the 2021 DP World Tour Mallorca Open. Long, generous from the tee, and one of the easiest places on the island to swing freely with driver.', 'Gastheer van de DP World Tour Mallorca Open in 2021. Lang, royaal vanaf de tee en een van de makkelijkste banen op het eiland om vrijuit de driver te slaan.'],
+    ['The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', 'Hole 6 is met 609 meter de langste par 5 van Spanje. Zonder compromissen in de kustheuvels gelegd. Neem extra ballen mee en laat het ego thuis.'],
+  ],
+  sv: [
+    ['Palma · 11 km from city', 'Palma · 11 km från stan'],
+    ['Alcudia · North Mallorca', 'Alcúdia · norra Mallorca'],
+    ['Son Vida · Palma', 'Son Vida · Palma'],
+    ['Santa Ponsa · Southwest', 'Santa Ponsa · sydväst'],
+    ['Camp de Mar · Southwest', 'Camp de Mar · sydväst'],
+    ['Championship', 'Championship'],
+    ['Difficulty', 'svårighet'],
+    ['Thomas Himmel\'s 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.', 'Thomas Himmels bana från 2007 lever i sitt eget vindsystem. Slutsträckan från hål 15 till 18 hör till det bästa i europeisk golf.'],
+    ['Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.', 'Robert Trent Jones Jr. när han är som mest naturskön. Fyren syns under större delen av rundan och miljön hör till det vackraste i Spanien.'],
+    ['Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.', 'Utsedd till Spaniens bästa golfbana vid World Golf Awards 2025, med utsikt över Palmabukten och ett tusenårigt olivträd vid hål 15.'],
+    ['Host of the 2021 DP World Tour Mallorca Open. Long, generous from the tee, and one of the easiest places on the island to swing freely with driver.', 'Värd för DP World Tour Mallorca Open 2021. Lång, generös från tee och en av de lättaste platserna på ön att slå driver med fri känsla.'],
+    ['The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', 'Hål 6 är Spaniens längsta par 5 på 609 meter. Inritad i kustkullarna utan kompromisser. Ta med extra bollar och lämna egot hemma.'],
+  ],
+  zh: [
+    ['Palma · 11 km from city', '帕尔马 · 距市区 11 公里'],
+    ['Alcudia · North Mallorca', '阿尔库迪亚 · 马略卡北部'],
+    ['Son Vida · Palma', '松维达 · 帕尔马'],
+    ['Santa Ponsa · Southwest', '圣蓬萨 · 西南部'],
+    ['Camp de Mar · Southwest', '坎普德马尔 · 西南部'],
+    ['Championship', '锦标赛级'],
+    ['Difficulty', '难度'],
+    ['Thomas Himmel\'s 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.', 'Thomas Himmel 于 2007 年设计的这座球场有自己独特的风向体系。第 15 到 18 洞的收官段，是欧洲高尔夫里最精彩的一段之一。'],
+    ['Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.', '这是 Robert Trent Jones Jr. 最具风景感的一笔。大半轮都能看见灯塔，整体景观也是西班牙最漂亮的之一。'],
+    ['Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.', '在 2025 年世界高尔夫大奖中被评为西班牙最佳球场，能俯瞰帕尔马湾，第 15 洞旁还有一棵千年橄榄树。'],
+    ['Host of the 2021 DP World Tour Mallorca Open. Long, generous from the tee, and one of the easiest places on the island to swing freely with driver.', '曾举办 2021 年 DP World Tour Mallorca Open。球场长度充足，开球区也相对宽容，是岛上最适合放开挥 driver 的地方之一。'],
+    ['The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', '第 6 洞是西班牙最长的五杆洞，长达 609 米。球场毫不妥协地嵌入海岸丘陵之中。多带几颗球，也别带太多自尊。'],
+  ],
+}
+
+function localizeHomeFeaturedItems(items = [], locale = 'en') {
+  if (locale === 'en') return items
+  const badgeMap = HOME_FEATURED_BADGE_MAP[locale] || {}
+  const replacements = HOME_FEATURED_REPLACEMENTS[locale] || []
+
+  const translateText = (value) => replacements.reduce((text, [from, to]) => text.replaceAll(from, to), value)
+
+  return items.map((item) => ({
+    ...item,
+    badge: item.badge ? (badgeMap[item.badge] || translateText(item.badge)) : item.badge,
+    region: translateText(item.region),
+    meta: item.meta.map((entry) => translateText(entry)),
+    difficulty: translateText(item.difficulty),
+    excerpt: translateText(item.excerpt),
+  }))
+}
+
 export function getHomeContent(locale = 'en') {
-  return HOME_CONTENT[locale] || HOME_CONTENT.en
+  const content = HOME_CONTENT[locale] || HOME_CONTENT.en
+  if (locale === 'en') return content
+
+  return {
+    ...content,
+    courses: content.courses
+      ? {
+          ...content.courses,
+          items: localizeHomeFeaturedItems(content.courses.items || [], locale),
+        }
+      : content.courses,
+  }
 }

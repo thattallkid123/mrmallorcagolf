@@ -55,8 +55,8 @@ export const ABOUT_CONTENT = {
     ],
     sidebarCta: {
       title: "Play Mallorca's finest courses with me alongside you.",
-      body: 'Private days on Son Gual, Alcanada, and beyond. Everything arranged before you arrive, with on-course coaching throughout.',
-      button: 'See the Experiences →',
+      body: 'Private days on Son Gual, Alcanada, and beyond. Solo days are all inclusive. Group days are arranged around one fixed day rate, with green fees confirmed separately.',
+      button: 'See how the day works →',
       href: '/play-with-a-pro',
     },
     finalCta: {
@@ -327,6 +327,53 @@ export const ABOUT_CONTENT = {
   },
 }
 
+const ABOUT_RELOCALIZED_STRIPS = {
+  de: {
+    careerStripProps: {
+      label: 'Plätze & Erfahrung',
+      heading: 'Dort, wo die Karriere aufgebaut wurde.',
+    },
+  },
+  fr: {
+    careerStripProps: {
+      label: 'Lieux & expérience',
+      heading: 'Là où la carrière s’est construite.',
+    },
+  },
+  nl: {
+    careerStripProps: {
+      label: 'Locaties & ervaring',
+      heading: 'Waar de loopbaan werd opgebouwd.',
+    },
+  },
+  sv: {
+    careerStripProps: {
+      label: 'Platser & erfarenhet',
+      heading: 'Där karriären byggdes.',
+    },
+  },
+  zh: {
+    careerStripProps: {
+      label: '场地与经历',
+      heading: '职业生涯由此建立。',
+    },
+  },
+}
+
 export function getAboutContent(locale = 'en') {
-  return ABOUT_CONTENT[locale] || ABOUT_CONTENT.en
+  const content = ABOUT_CONTENT[locale] || ABOUT_CONTENT.en
+  const relocalized = ABOUT_RELOCALIZED_STRIPS[locale]
+
+  if (!relocalized) {
+    return content
+  }
+
+  return {
+    ...content,
+    ...relocalized,
+    careerStripProps: {
+      ...(content.careerStripProps || {}),
+      ...(relocalized.careerStripProps || {}),
+    },
+  }
 }

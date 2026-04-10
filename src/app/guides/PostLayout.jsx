@@ -40,12 +40,12 @@ export default function PostLayout({ children, meta, lang }) {
             <span style={{ color: 'var(--gold-light)' }}>{meta.badge}</span>
           </p>
           <div className="post-header__meta">
-            <span style={{ fontSize: '9px', letterSpacing: '.16em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", fontWeight: 500, padding: '4px 10px', background: meta.badgeGold ? 'rgba(184,151,60,.15)' : 'rgba(255,255,255,.08)', color: meta.badgeGold ? 'var(--gold-light)' : 'rgba(255,255,255,.72)', border: `1px solid ${meta.badgeGold ? 'rgba(184,151,60,.3)' : 'rgba(255,255,255,.14)'}` }}>{meta.badge}</span>
-            <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.52)' }}>{meta.readTime}</span>
-            <span style={{ fontSize: '9px', letterSpacing: '.12em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'rgba(255,255,255,.52)' }}>{updatedLabel} {meta.updated}</span>
+            <span className={`post-header__badge${meta.badgeGold ? ' post-header__badge--gold' : ''}`}>{meta.badge}</span>
+            <span className="post-header__meta-item">{meta.readTime}</span>
+            <span className="post-header__meta-item">{updatedLabel} {meta.updated}</span>
           </div>
-          <h1 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.8rem,4vw,3rem)', fontWeight: 400, color: '#fff', lineHeight: 1.1, maxWidth: 720 }}>{meta.title}</h1>
-          <p style={{ fontSize: '1.05rem', fontWeight: 300, color: 'rgba(255,255,255,.78)', lineHeight: 1.8, maxWidth: 600, marginTop: '1.25rem' }}>{meta.intro}</p>
+          <h1 className="post-header__title">{meta.title}</h1>
+          <p className="post-header__intro">{meta.intro}</p>
         </div>
       </header>
 
@@ -66,11 +66,11 @@ export default function PostLayout({ children, meta, lang }) {
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               {relatedGuides.map((guide) => (
                 <li key={guide.slug} style={{ borderBottom: '1px solid var(--linen)', padding: '10px 0' }}>
-                  <a href={getGuidePath(guide.slug, l)} style={{ fontSize: '0.85rem', fontWeight: 300, color: 'var(--charcoal)', textDecoration: 'none', lineHeight: 1.5, display: 'block' }}>{guide.title}</a>
+                  <a href={getGuidePath(guide.slug, l)} className="post-sidebar__list-link">{guide.title}</a>
                 </li>
               ))}
               <li style={{ paddingTop: 12 }}>
-                <a href={`${pre}/guides`} style={{ fontSize: '9px', letterSpacing: '.14em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif", color: 'var(--gold)', textDecoration: 'none' }}>{c.allGuides} &rarr;</a>
+                <a href={`${pre}/guides`} className="post-sidebar__all-link">{c.allGuides} &rarr;</a>
               </li>
             </ul>
           </div>

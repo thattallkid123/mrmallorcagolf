@@ -7,14 +7,13 @@ export const metadata = buildContactMetadata('en')
 export default function Contact() {
   return (
     <>
-    <link rel="preload" as="image" href="/images/contact.jpg" />
+    <link rel="preload" as="image" href="/images/contact.webp" />
     <PageLayout navTransparent={false}>
       <ContactForm />
     </PageLayout>
     </>
   )
 }
-
 
 
 

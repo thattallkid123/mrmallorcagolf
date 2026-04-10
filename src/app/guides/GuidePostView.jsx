@@ -1,7 +1,41 @@
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import FillImageFrame from '../../components/FillImageFrame'
+import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 import PostLayout from './PostLayout'
+
+const COURSE_REVIEW_DETAILS = {
+  'son-gual-review': {
+    name: 'Golf Son Gual',
+    ratingValue: 5,
+    addressLocality: 'Palma',
+  },
+  'alcanada-review': {
+    name: 'Club de Golf Alcanada',
+    ratingValue: 5,
+    addressLocality: 'Alcudia',
+  },
+  'santa-ponsa-1-review': {
+    name: 'Golf Santa Ponsa I',
+    ratingValue: 4,
+    addressLocality: 'Santa Ponsa',
+  },
+}
+
+const MONTHS = {
+  January: '01',
+  February: '02',
+  March: '03',
+  April: '04',
+  May: '05',
+  June: '06',
+  July: '07',
+  August: '08',
+  September: '09',
+  October: '10',
+  November: '11',
+  December: '12',
+}
 
 function normalizeContainerStyle(style, fallback) {
   const merged = style || fallback
@@ -86,12 +120,109 @@ function renderBlock(block, index, imageOrdinal) {
   return null
 }
 
+function absoluteUrl(path) {
+  if (!path) return undefined
+  return new URL(path, SITE_ORIGIN).toString()
+}
+
+function schemaDate(updated = '') {
+  const [month, year] = updated.split(' ')
+  return year && MONTHS[month] ? `${year}-${MONTHS[month]}-01` : '2026-03-01'
+}
+
+function buildBlogPostingSchema(meta, blocks, locale) {
+  const slug = meta.slug
+  const pagePath = slug ? buildLocalePath(`/guides/${slug}`, locale) : buildLocalePath('/guides', locale)
+  const firstImage = blocks.find((block) => block.type === 'image')?.src
+  const dateModified = schemaDate(meta.updated)
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: meta.title,
+    description: meta.intro,
+    image: absoluteUrl(firstImage),
+    datePublished: dateModified,
+    dateModified,
+    inLanguage: locale,
+    mainEntityOfPage: `${SITE_ORIGIN}${pagePath}`,
+    author: {
+      '@type': 'Person',
+      name: 'Andy Griffiths',
+      jobTitle: 'UK PGA Advanced Professional',
+      url: SITE_ORIGIN,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Mr Mallorca Golf',
+      url: SITE_ORIGIN,
+    },
+  }
+}
+
+function buildReviewSchema(meta, blocks, locale) {
+  const course = COURSE_REVIEW_DETAILS[meta.slug] || { name: meta.title, ratingValue: 4, addressLocality: 'Mallorca' }
+  const pagePath = meta.slug ? buildLocalePath(`/guides/${meta.slug}`, locale) : buildLocalePath('/guides', locale)
+  const firstImage = blocks.find((block) => block.type === 'image')?.src
+  const dateModified = schemaDate(meta.updated)
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    name: meta.title,
+    reviewBody: meta.intro,
+    datePublished: dateModified,
+    dateModified,
+    inLanguage: locale,
+    url: `${SITE_ORIGIN}${pagePath}`,
+    image: absoluteUrl(firstImage),
+    author: {
+      '@type': 'Person',
+      name: 'Andy Griffiths',
+      jobTitle: 'UK PGA Advanced Professional',
+      url: SITE_ORIGIN,
+    },
+    itemReviewed: {
+      '@type': 'GolfCourse',
+      name: course.name,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: course.addressLocality,
+        addressRegion: 'Mallorca',
+        addressCountry: 'ES',
+      },
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: course.ratingValue,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Mr Mallorca Golf',
+      url: SITE_ORIGIN,
+    },
+  }
+}
+
+function JsonLd({ data }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  )
+}
+
 export default function GuidePostView({ locale = 'en', meta, blocks }) {
   const pageLang = locale === 'en' ? undefined : locale
   let imageOrdinal = 0
 
   return (
     <PageLayout lang={pageLang}>
+      <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
+      <JsonLd data={buildReviewSchema(meta, blocks, locale)} />
       <RevealObserver />
       <PostLayout meta={meta} lang={pageLang}>
         {blocks.map((block, index) => {

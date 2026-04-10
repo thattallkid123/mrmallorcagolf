@@ -134,7 +134,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           type: 'cta',
           text:
             'Ich nehme regelmäßig Gäste mit nach Son Gual. Möchten Sie den Platz mit jemandem spielen, der jedes Loch kennt?',
-          linkLabel: 'Zum Play-with-a-Pro-Erlebnis →',
+          linkLabel: 'Zum Golf-Tag mit Pro →',
           href: '/de/play-with-a-pro',
         },
       ],
@@ -1009,8 +1009,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Alcanada ist einer meiner beiden Ankerplätze für Play-with-a-Pro-Tage. Möchten Sie den Platz richtig erleben?',
-          linkLabel: 'Zum Play-with-a-Pro-Erlebnis →',
+          text: 'Alcanada ist einer meiner beiden Ankerplätze für meine Golf-Tage mit Pro. Möchten Sie den Platz richtig erleben?',
+          linkLabel: 'Zum Golf-Tag mit Pro →',
           href: '/de/play-with-a-pro',
         },
       ],
@@ -1742,7 +1742,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'cta',
           text: 'Möchten Sie Santa Ponsa 1 als Teil eines Golftags auf Mallorca spielen? Ich kann das für Sie organisieren.',
-          linkLabel: 'Zum Play-with-a-Pro-Erlebnis →',
+          linkLabel: 'Zum Golf-Tag mit Pro →',
           href: '/de/play-with-a-pro',
         },
       ],

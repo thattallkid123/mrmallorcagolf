@@ -10,9 +10,9 @@ import {
 } from '../../../lib/request-safety'
 
 const EXPERIENCE_LABELS = {
-  'mallorca-round': 'The Mallorca Round',
-  'signature-day': 'The Signature Day',
-  'full-experience': 'The Full Experience',
+  'mallorca-round': 'A Day With Andy - Solo',
+  'signature-day': 'A Day With Andy - Group of 2 to 4',
+  'full-experience': 'Multi-day trip',
   'not-sure': 'Not sure yet - advise me',
 }
 

@@ -11,7 +11,7 @@ function joinHref(locale, path) {
 export default function GolfCoursesView({ locale = 'en', content }) {
   return (
     <>
-      <link rel="preload" as="image" href="/images/golf-courses.jpg" />
+      <link rel="preload" as="image" href="/images/golf-courses.webp" />
       <PageLayout lang={locale === 'en' ? undefined : locale}>
         <RevealObserver />
 
@@ -20,7 +20,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
           style={{
             minHeight: '100vh',
             backgroundImage:
-              'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.jpg)',
+              'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.webp)',
             backgroundSize: 'auto, cover',
             backgroundPosition: 'center, center 40%',
           }}

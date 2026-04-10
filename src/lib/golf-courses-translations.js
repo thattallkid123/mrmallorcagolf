@@ -145,6 +145,82 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
   },
 }
 
+Object.assign(GOLF_COURSE_UI_TRANSLATIONS.de, {
+  allCourses: 'Alle Plätze',
+  expertPicks: '★ Nur Expertentipps',
+  yourGuide: 'Ihr Guide',
+  playWithAndy: 'Mit Andy spielen',
+  sidebarBtn: 'Kontakt aufnehmen →',
+  seeExperiences: 'Golf-Tage ansehen →',
+  getInTouch: 'Kontakt aufnehmen',
+  courseNote: '',
+})
+
+Object.assign(GOLF_COURSE_UI_TRANSLATIONS.es, {
+  allCourses: 'Todos los campos',
+  expertPicks: '★ Solo selecciones personales',
+  yourGuide: 'Tu guía',
+  playWithAndy: 'Jugar con Andy',
+  sidebarBtn: 'Contactar →',
+  seeExperiences: 'Ver las experiencias →',
+  getInTouch: 'Contactar',
+  courseNote: '',
+})
+
+Object.assign(GOLF_COURSE_UI_TRANSLATIONS.fr, {
+  allCourses: 'Tous les parcours',
+  expertPicks: '★ Sélections d’expert uniquement',
+  yourGuide: 'Votre guide',
+  playWithAndy: 'Jouer avec Andy',
+  sidebarBtn: 'Prendre contact →',
+  seeExperiences: 'Voir les expériences →',
+  getInTouch: 'Prendre contact',
+  courseNote: '',
+})
+
+Object.assign(GOLF_COURSE_UI_TRANSLATIONS.zh, {
+  allCourses: '全部球场',
+  expertPicks: '★ 只看专家推荐',
+  yourGuide: '你的向导',
+  playWithAndy: '和 Andy 一起下场',
+  sidebarH3: '想和一位英国 PGA 职业教练一起打这些球场吗？',
+  sidebarP: '私人安排、全程打理，并为你选最适合的一座球场。',
+  sidebarBtn: '联系我们 →',
+  quickPicksTitle: '快速推荐',
+  ctaEyebrow: '想打其中一座吗？',
+  ctaH2: '从第一洞开始，我都会陪你一起打完整个私人高尔夫日。',
+  ctaP: '告诉我你感兴趣的球场、日期和差点。我会在 24 小时内给你回建议。',
+  seeExperiences: '查看高尔夫体验 →',
+  getInTouch: '联系我们',
+  courseNote: '',
+  geoEyebrow: '这些球场都分布在哪里',
+  geoH2: '马略卡真正出色的高尔夫，比大多数人想象得还要多。',
+  geoP1: '这里一共有 22 座球场，从真正办过 DP World Tour 的球场，到很多游客根本没听过的安静好场子都有。果岭费大约从 20 欧到 200 多欧不等。我是一位常驻岛上的英国 PGA 高级职业教练，也在持续把全岛球场一一打过、认真研究。',
+  geoP2: '最佳打球时间通常是 10 到 11 月，以及 2 到 4 月。其实全年都能打。1 月份欧洲很多地方的球场不是关就是很软，这里的球道依然常常保持得很好。',
+  geoRegions: [
+    {
+      region: '帕尔马',
+      courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt',
+    },
+    {
+      region: '西南部',
+      courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx',
+    },
+    {
+      region: '南部',
+      courses: 'Golf Maioris · Son Antem East · Son Antem West',
+    },
+    {
+      region: '东部',
+      courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or",
+    },
+    {
+      region: '北部',
+      courses: 'Alcanada · Golf Pollensa',
+    },
+  ],
+})
+
 
 export function getGolfCourseRegions(t) {
   return [

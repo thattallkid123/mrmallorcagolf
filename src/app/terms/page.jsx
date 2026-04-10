@@ -10,12 +10,14 @@ export default function Terms() {
       <div className="legal-page">
         <div className="legal-page__inner">
 
-          <p className="breadcrumb" style={{marginBottom:'2rem'}}>
-            <Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Terms &amp; Conditions</span>
-          </p>
+          <div className="legal-page__hero">
+            <p className="breadcrumb" style={{marginBottom:'2rem'}}>
+              <Link href="/">Home</Link> &nbsp;/&nbsp; <span style={{color:'var(--gold-light)'}}>Terms &amp; Conditions</span>
+            </p>
 
-          <h1 style={{marginBottom:'0.5rem'}}>Terms &amp; Conditions</h1>
-          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Last updated: March 2025</p>
+            <h1 style={{marginBottom:'0.5rem'}}>Terms &amp; Conditions</h1>
+            <p className="legal-page__updated">Last updated: March 2025</p>
+          </div>
 
           <section className="legal-section">
             <h2>1. About These Terms</h2>
@@ -112,8 +114,8 @@ export default function Terms() {
             <p>For any questions about these terms, please contact us at <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a>.</p>
           </section>
 
-          <div style={{marginTop:'3rem', paddingTop:'2rem', borderTop:'1px solid rgba(255,255,255,0.1)'}}>
-            <p style={{color:'rgba(255,255,255,0.62)', fontSize:'0.85rem'}}>
+          <div className="legal-page__language-note">
+            <p>
               Also available in: <Link href="/es/terms" style={{color:'var(--gold-light)'}}>Español</Link>
             </p>
           </div>
@@ -123,4 +125,3 @@ export default function Terms() {
     </PageLayout>
   )
 }
-

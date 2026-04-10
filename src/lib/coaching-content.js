@@ -64,7 +64,7 @@
       title: 'Get in touch to discuss a session.',
       body: "Tell me where your game is now and what you want from it. I'll build the session around that.",
       primaryCta: 'Get in Touch →',
-      secondaryCta: 'See Full Experiences',
+      secondaryCta: 'See the golf days',
     },
   },
   de: {

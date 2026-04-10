@@ -9,8 +9,11 @@
     "lint": "next lint",
     "check:text": "node scripts/check-text-corruption.js",
     "check:locale": "node scripts/check-locale-content.js",
+    "check:locale-leaks": "node scripts/check-locale-english-leaks.js",
     "check:shared-locale": "node scripts/check-shared-locale-fallbacks.js",
-    "check:i18n-release": "node scripts/locale-release-check.js"
+    "check:guide-locale-leaks": "node scripts/check-guide-locale-english-leaks.js",
+    "check:i18n-release": "node scripts/locale-release-check.js",
+    "check:ready": "npm run check:i18n-release && npm run build"
   },
   "dependencies": {
     "next": "^14.2.35",

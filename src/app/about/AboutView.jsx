@@ -11,7 +11,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
 
   return (
     <>
-      <link rel="preload" as="image" href="/images/about-secondary.jpg" />
+      <link rel="preload" as="image" href="/images/about-secondary.webp" />
       <PageLayout lang={locale}>
         <RevealObserver />
 
@@ -20,7 +20,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
           style={{
             minHeight: '100vh',
             backgroundImage:
-              'linear-gradient(to top, rgba(26,25,22,0.88) 0%, rgba(26,25,22,0.4) 35%, transparent 65%), linear-gradient(to right, rgba(26,25,22,0.65) 0%, rgba(26,25,22,0.35) 55%, rgba(26,25,22,0.15) 100%), url(/images/about-secondary.jpg)',
+              'linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%), url(/images/about-secondary.webp)',
             backgroundSize: 'auto, auto, cover',
             backgroundPosition: 'center, center, center 80%',
           }}
@@ -68,7 +68,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
           </main>
 
           <aside className="story__sidebar">
-            <div className="reveal" style={{ lineHeight: 0, marginBottom: '24px' }}>
+            <div className="story__portrait reveal">
               <Image
                 src="/images/about-andy-colour.jpg"
                 alt={content.imageAlt}
@@ -84,6 +84,9 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
               />
             </div>
             <div className="creds reveal">
+              <p className="story__summary">
+                Andy Griffiths is a PGA Advanced Professional who spent eleven years at the top of coaching in China — becoming the country's first Trackman Master, coaching national team players, and building a following of hundreds of millions of views on Douyin. Before that: Pebble Beach, The Open Championship, Evian. He moved to Mallorca in 2025 to build something of his own. He plays the island's best courses most weeks and has opinions about all of them.
+              </p>
               <p className="creds__label">{content.credentialsLabel}</p>
               <ul className="cred-list">
                 {content.credentials.map((credential) => (
@@ -111,22 +114,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             <div className="sidebar-cta reveal">
               <h3>{content.sidebarCta.title}</h3>
               <p>{content.sidebarCta.body}</p>
-              <Link
-                href={content.sidebarCta.href}
-                style={{
-                  display: 'block',
-                  textAlign: 'center',
-                  fontSize: '9px',
-                  fontWeight: 500,
-                  letterSpacing: '.16em',
-                  textTransform: 'uppercase',
-                  padding: '13px',
-                  background: 'var(--gold)',
-                  color: 'var(--deep)',
-                  textDecoration: 'none',
-                  fontFamily: "'Jost',sans-serif",
-                }}
-              >
+              <Link href={content.sidebarCta.href} className="sidebar-cta__btn">
                 {content.sidebarCta.button}
               </Link>
             </div>

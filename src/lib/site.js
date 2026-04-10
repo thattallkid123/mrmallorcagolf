@@ -197,10 +197,5 @@ export function getSitemapPaths() {
     }
   }
 
-  for (const locale of LEGAL_LOCALES) {
-    paths.push(buildLocalePath('/privacy-policy', locale))
-    paths.push(buildLocalePath('/terms', locale))
-  }
-
   return [...new Set(paths)]
 }

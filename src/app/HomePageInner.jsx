@@ -78,7 +78,7 @@ export default function HomePageInner({ locale = 'en' }) {
           className="hero__bg"
           style={{
             backgroundImage:
-              'linear-gradient(160deg, rgba(26,25,22,0.35) 0%, rgba(26,25,22,0.72) 70%), linear-gradient(to bottom, rgba(26,25,22,0.08) 0%, rgba(26,25,22,0.55) 100%), url(/images/hero-main.jpg)',
+              'linear-gradient(105deg, rgba(12,11,9,0.82) 0%, rgba(12,11,9,0.62) 34%, rgba(12,11,9,0.22) 63%, rgba(12,11,9,0.08) 100%), linear-gradient(to bottom, rgba(12,11,9,0.12) 0%, rgba(12,11,9,0.46) 100%), url(/images/hero-main.webp)',
             backgroundSize: 'auto, auto, cover',
             backgroundPosition: 'center, center, center 50%',
           }}
@@ -96,9 +96,9 @@ export default function HomePageInner({ locale = 'en' }) {
             <Link href={contactHref} className="btn btn--gold">
               {home.hero.primaryCta}
             </Link>
-            <a href="#courses" className="btn btn--outline-white">
+            <Link href={locale === 'en' ? '/a-day' : `/${locale}/play-with-a-pro`} className="btn btn--outline-white">
               {home.hero.secondaryCta}
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -270,7 +270,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <figure className="winners-board">
           <img
-            src="/images/winners-collage.jpg"
+            src="/images/winners-collage.webp"
             alt="A collage of competition winners coached by Andy over the years"
             className="winners-board__img"
             loading="lazy"
@@ -292,7 +292,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="packages__grid">
           {home.packages.items.map((pkg, index) => (
-            <div key={pkg.name} className={`package${pkg.featured ? ' package--featured' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
+            <div key={pkg.tier} className={`package${pkg.featured ? ' package--featured' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
               <p className="package__tier">{pkg.tier}</p>
               <h3 className="package__name">{pkg.name}</h3>
               <div className="package__divider"></div>
@@ -311,6 +311,14 @@ export default function HomePageInner({ locale = 'en' }) {
             </div>
           ))}
         </div>
+        {home.packages.multiDay && (
+          <div className="reveal" style={{ maxWidth: 760, margin: '3rem auto 0', padding: '2.5rem', background: 'var(--pine)', borderRadius: 2, textAlign: 'center' }}>
+            <p className="eyebrow" style={{ color: 'rgba(255,255,255,0.45)', marginBottom: '0.75rem' }}>{home.packages.multiDay.eyebrow}</p>
+            <h3 className="serif-display" style={{ color: '#fff', fontSize: 'clamp(1.3rem,2.2vw,1.8rem)', marginBottom: '1rem' }}>{home.packages.multiDay.title}</h3>
+            <p style={{ color: 'rgba(255,255,255,0.72)', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.75rem', maxWidth: 560, margin: '0 auto 1.75rem' }}>{home.packages.multiDay.body}</p>
+            <Link href={contactHref} className="btn btn--gold">{home.packages.multiDay.cta}</Link>
+          </div>
+        )}
       </section>
 
       <section className="faq">
