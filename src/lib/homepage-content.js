@@ -19,7 +19,7 @@ export const HOME_CONTENT = {
       title: 'Most golf days in Mallorca start with a booking platform and end with a bill. This is more personal.',
       body: 'I host private golf days on the island\'s best courses, with the coaching given during the round rather than as an add-on afterwards. The golf is better, the decisions are clearer, and the whole day feels properly looked after.',
       stats: [
-        { value: '22', label: 'Courses on the island' },
+        { value: '21+3', label: '18-hole + 9-hole layouts' },
         { value: '€595', label: 'Solo — all inclusive' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -54,10 +54,10 @@ export const HOME_CONTENT = {
         'Twenty-two courses sit within easy reach, several with DP World Tour pedigree and serious design history. Mallorca is a proper golf destination, and most visitors only scratch the surface.',
       ],
       stats: [
-        { value: '22', label: 'courses on the island' },
+        { value: '21+3', label: '18-hole + 9-hole layouts' },
         { value: '300+', label: 'days of sunshine per year' },
         { value: 'Jan-Dec', label: 'year-round season' },
-        { value: '21', label: '18-hole courses on the island' },
+        { value: '405', label: 'holes across the island' },
       ],
     },
     courses: {
@@ -299,10 +299,10 @@ const HOME_OVERRIDES = {
         '22 Plätze liegen in Reichweite, mehrere mit echter Tour-Geschichte und ernsthafter Architektur. Mallorca ist ein richtiges Golfziel, und die meisten Besucher kratzen nur an der Oberfläche.',
       ],
       stats: [
-        { value: '22', label: 'Plätze auf der Insel' },
+        { value: '21+3', label: '18-Loch- und 9-Loch-Anlagen' },
         { value: '300+', label: 'Sonnentage pro Jahr' },
         { value: 'Jan-Dez', label: 'ganzjährige Saison' },
-        { value: '21', label: '18-Loch-Plätze auf der Insel' },
+        { value: '405', label: 'Löcher auf der Insel' },
       ],
     },
     courses: { eyebrow: 'Ausgewählte Plätze', title: 'Mallorcas beste Plätze, gespielt und ehrlich bewertet.', viewAll: 'Alle 22 Plätze ansehen →' },
@@ -446,10 +446,10 @@ const HOME_OVERRIDES = {
         'Hay 22 campos a poca distancia, varios con historia de Tour y una arquitectura seria. Mallorca es un destino de golf de verdad, y la mayoría de los visitantes apenas rascan la superficie.',
       ],
       stats: [
-        { value: '22', label: 'campos en la isla' },
+        { value: '21+3', label: 'recorridos de 18 y 9 hoyos' },
         { value: '300+', label: 'días de sol al año' },
         { value: 'Ene-Dic', label: 'temporada todo el año' },
-        { value: '21', label: 'campos de 18 hoyos en la isla' },
+        { value: '405', label: 'hoyos en la isla' },
       ],
     },
     courses: {
@@ -668,7 +668,7 @@ const HOME_OVERRIDES = {
     },
     socialProof: 'Andy 教练 · Plus de 300 millions de vues pour ses vidéos de coaching golf sur TikTok · Un contenu de coaching suivi dans le monde entier',
     how: { eyebrow: 'Comment cela fonctionne', title: 'Trois étapes simples.', steps: [{ number: '01', title: 'Écrivez-moi', text: 'Donnez-moi vos dates, votre handicap et ce que vous cherchez. Je réponds personnellement sous 24 heures.' }, { number: '02', title: 'Je construis votre journée', text: 'Parcours, heure de départ, déjeuner et transport sont réglés avant votre arrivée.' }, { number: '03', title: 'Arrivez et jouez', text: 'Votre seul travail est de profiter du tour. La plupart jouent mieux qu’ils ne l’imaginaient.' }] },
-    whyMallorca: { eyebrow: 'Pourquoi Majorque', title: 'Majorque a des parcours de niveau Tour. Beaucoup de visiteurs n’en voient qu’une petite partie.', paragraphs: ['Beaucoup des meilleurs parcours d’Europe ferment l’hiver. Majorque, non. D’octobre à avril, vous profitez de green fees plus doux, de parcours plus calmes et de conditions qui feraient envie à bien des destinations estivales.', 'Vingt-deux parcours sont accessibles en peu de temps, plusieurs avec une vraie histoire de Tour et une architecture sérieuse. Majorque est une vraie destination de golf, et la plupart des visiteurs n’en voient qu’une petite partie.'], stats: [{ value: '22', label: 'parcours sur l’île' }, { value: '300+', label: 'jours de soleil par an' }, { value: 'Jan-Dec', label: 'saison toute l’année' }, { value: '21', label: 'parcours 18 trous sur l’île' }] },
+    whyMallorca: { eyebrow: 'Pourquoi Majorque', title: 'Majorque a des parcours de niveau Tour. Beaucoup de visiteurs n’en voient qu’une petite partie.', paragraphs: ['Beaucoup des meilleurs parcours d’Europe ferment l’hiver. Majorque, non. D’octobre à avril, vous profitez de green fees plus doux, de parcours plus calmes et de conditions qui feraient envie à bien des destinations estivales.', 'Vingt-deux parcours sont accessibles en peu de temps, plusieurs avec une vraie histoire de Tour et une architecture sérieuse. Majorque est une vraie destination de golf, et la plupart des visiteurs n’en voient qu’une petite partie.'], stats: [{ value: '21+3', label: 'parcours 18 trous + 9 trous' }, { value: '300+', label: 'jours de soleil par an' }, { value: 'Jan-Dec', label: 'saison toute l’année' }, { value: '405', label: 'trous sur l’île' }] },
     courses: { eyebrow: 'Parcours en vedette', title: 'Les meilleurs parcours de Majorque, joués et évalués honnêtement.', viewAll: 'Voir les 22 parcours →' },
     experience: {
       eyebrow: 'L’expérience',
@@ -763,7 +763,7 @@ const HOME_OVERRIDES = {
     },
     socialProof: 'Andy 教练 · Meer dan 300 miljoen views van zijn golfcoachingvideo’s op TikTok · Coachingcontent met wereldwijd vertrouwen',
     how: { eyebrow: 'Hoe het werkt', title: 'Drie eenvoudige stappen.', steps: [{ number: '01', title: 'Neem contact op', text: 'Vertel me uw data, handicap en wat u zoekt. Ik reageer persoonlijk binnen 24 uur.' }, { number: '02', title: 'Ik bouw uw dag', text: 'Baanadvies, tee time, lunch en vervoer worden geregeld vóór uw aankomst.' }, { number: '03', title: 'Kom en speel', text: 'Uw taak is simpel: genieten van de ronde. De meeste mensen spelen beter dan verwacht.' }] },
-    whyMallorca: { eyebrow: 'Waarom Mallorca', title: 'Mallorca heeft banen op Tour-niveau. Veel bezoekers ontdekken maar een klein deel.', paragraphs: ['Veel van Europa’s beste banen sluiten in de winter. Mallorca niet. Van oktober tot april krijgt u lagere greenfees, rustigere banen en omstandigheden die elders midden in de zomer al goed zouden zijn.', 'Er liggen 22 banen binnen bereik, verschillende met echte Tourgeschiedenis en serieuze architectuur. Mallorca is een echte golfbestemming, en de meeste bezoekers zien daar maar een klein deel van.'], stats: [{ value: '22', label: 'banen op het eiland' }, { value: '300+', label: 'dagen zon per jaar' }, { value: 'Jan-Dec', label: 'seizoen het hele jaar' }, { value: '21', label: '18-holesbanen op het eiland' }] },
+    whyMallorca: { eyebrow: 'Waarom Mallorca', title: 'Mallorca heeft banen op Tour-niveau. Veel bezoekers ontdekken maar een klein deel.', paragraphs: ['Veel van Europa’s beste banen sluiten in de winter. Mallorca niet. Van oktober tot april krijgt u lagere greenfees, rustigere banen en omstandigheden die elders midden in de zomer al goed zouden zijn.', 'Er liggen 22 banen binnen bereik, verschillende met echte Tourgeschiedenis en serieuze architectuur. Mallorca is een echte golfbestemming, en de meeste bezoekers zien daar maar een klein deel van.'], stats: [{ value: '21+3', label: '18- en 9-holesbanen' }, { value: '300+', label: 'dagen zon per jaar' }, { value: 'Jan-Dec', label: 'seizoen het hele jaar' }, { value: '405', label: 'holes op het eiland' }] },
     courses: { eyebrow: 'Uitgelichte banen', title: 'De beste van Mallorca, gespeeld en eerlijk beoordeeld.', viewAll: 'Bekijk alle 22 banen →' },
     experience: {
       eyebrow: 'De ervaring',
@@ -858,7 +858,7 @@ const HOME_OVERRIDES = {
     },
     socialProof: 'Andy 教练 · Över 300 miljoner visningar av hans golfcoachingvideor på TikTok · Coachinginnehåll med globalt förtroende',
     how: { eyebrow: 'Så fungerar det', title: 'Tre enkla steg.', steps: [{ number: '01', title: 'Hör av dig', text: 'Berätta dina datum, ditt handicap och vad du letar efter. Jag svarar personligen inom 24 timmar.' }, { number: '02', title: 'Jag bygger dagen', text: 'Bana, starttid, lunch och transport ordnas innan du kommer.' }, { number: '03', title: 'Kom och spela', text: 'Din uppgift är att njuta av ronden. De flesta spelar bättre än de trodde.' }] },
-    whyMallorca: { eyebrow: 'Varför Mallorca', title: 'Mallorca har banor på tournivå. Många besökare ser bara en liten del av dem.', paragraphs: ['Många av Europas bästa banor stänger under vintern. Mallorca gör det inte. Från oktober till april får du lägre greenfees, lugnare banor och förhållanden som många andra platser bara kan drömma om.', 'Det finns 22 banor inom räckhåll, flera med riktig Tour-historia och seriös design. Mallorca är en riktig golfdestination, och de flesta besökare ser bara en liten del av vad som finns här.'], stats: [{ value: '22', label: 'banor på ön' }, { value: '300+', label: 'soldagar per år' }, { value: 'Jan-Dec', label: 'säsong året runt' }, { value: '21', label: '18-hålsbanor på ön' }] },
+    whyMallorca: { eyebrow: 'Varför Mallorca', title: 'Mallorca har banor på tournivå. Många besökare ser bara en liten del av dem.', paragraphs: ['Många av Europas bästa banor stänger under vintern. Mallorca gör det inte. Från oktober till april får du lägre greenfees, lugnare banor och förhållanden som många andra platser bara kan drömma om.', 'Det finns 22 banor inom räckhåll, flera med riktig Tour-historia och seriös design. Mallorca är en riktig golfdestination, och de flesta besökare ser bara en liten del av vad som finns här.'], stats: [{ value: '21+3', label: '18- och 9-hålsbanor' }, { value: '300+', label: 'soldagar per år' }, { value: 'Jan-Dec', label: 'säsong året runt' }, { value: '405', label: 'hål på ön' }] },
     courses: { eyebrow: 'Utvalda banor', title: 'Mallorcas bästa banor, spelade och ärligt recenserade.', viewAll: 'Se alla 22 banor →' },
     experience: {
       eyebrow: 'Upplevelsen',
@@ -953,7 +953,7 @@ const HOME_OVERRIDES = {
     },
     socialProof: 'Andy 教练 · TikTok 高尔夫教学视频累计播放超过 3 亿次 · 教学内容受到全球球友关注',
     how: { eyebrow: '流程很简单', title: '三个步骤。', steps: [{ number: '01', title: '联系我', text: '告诉我你的日期、差点和你想要什么样的一天。我会在 24 小时内亲自回复。' }, { number: '02', title: '我来安排这一天', text: '球场建议、开球时间、午餐和交通都会在你到场前安排好。' }, { number: '03', title: '到场开打', text: '你唯一要做的，就是享受这一轮。大多数人都会比自己预想中打得更好。' }] },
-    whyMallorca: { eyebrow: '为什么是马略卡', title: '马略卡有真正达到巡回赛水准的球场。很多来这里的人，其实只看到了很小的一部分。', paragraphs: ['欧洲很多顶级球场一到冬天就关门，马略卡不会。每年 10 月到次年 4 月，是这里的甜蜜期：果岭费更低，球场更安静，球况却依然出色。', '全岛共有 22 座球场，距离都不算远，其中不少有巡回赛历史，也有很成熟的设计。马略卡是真正的高尔夫目的地，只是大多数访客还没有真正认识它。'], stats: [{ value: '22', label: '岛上球场数量' }, { value: '300+', label: '年均晴天' }, { value: 'Jan-Dec', label: '全年可打' }, { value: '21', label: '岛上 18 洞球场' }] },
+    whyMallorca: { eyebrow: '为什么是马略卡', title: '马略卡有真正达到巡回赛水准的球场。很多来这里的人，其实只看到了很小的一部分。', paragraphs: ['欧洲很多顶级球场一到冬天就关门，马略卡不会。每年 10 月到次年 4 月，是这里的甜蜜期：果岭费更低，球场更安静，球况却依然出色。', '全岛共有 22 座球场，距离都不算远，其中不少有巡回赛历史，也有很成熟的设计。马略卡是真正的高尔夫目的地，只是大多数访客还没有真正认识它。'], stats: [{ value: '21+3', label: '18 洞与 9 洞球场' }, { value: '300+', label: '年均晴天' }, { value: 'Jan-Dec', label: '全年可打' }, { value: '405', label: '岛上总洞数' }] },
     courses: { eyebrow: '精选球场', title: '马略卡最值得打的球场，我都亲自打过，也认真评过。', viewAll: '查看全部 22 座球场 →' },
     experience: {
       eyebrow: '这一天会是什么样',
@@ -1092,7 +1092,7 @@ const HOME_AUDIT_OVERRIDES = {
   es: {
     intro: {
       stats: [
-        { value: '22', label: 'campos en la isla' },
+        { value: '21+3', label: 'recorridos de 18 y 9 hoyos' },
         { value: '€595', label: 'Solo — todo incluido' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -1182,7 +1182,7 @@ const HOME_AUDIT_OVERRIDES = {
   nl: {
     intro: {
       stats: [
-        { value: '22', label: 'banen op het eiland' },
+        { value: '21+3', label: '18- en 9-holesbanen' },
         { value: '€595', label: 'Solo — inclusief greenfee en lunch' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -1227,7 +1227,7 @@ const HOME_AUDIT_OVERRIDES = {
   sv: {
     intro: {
       stats: [
-        { value: '22', label: 'banor på ön' },
+        { value: '21+3', label: '18- och 9-hålsbanor' },
         { value: '€595', label: 'Solo — greenfee och lunch ingår' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -1272,7 +1272,7 @@ const HOME_AUDIT_OVERRIDES = {
   zh: {
     intro: {
       stats: [
-        { value: '22', label: '岛上球场数量' },
+        { value: '21+3', label: '18 洞与 9 洞球场' },
         { value: '€595', label: '单人 — 全包' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -1782,7 +1782,7 @@ const HOME_NO_PRICE_OVERRIDES = {
   es: {
     intro: {
       stats: [
-        { value: '22', label: 'campos en la isla' },
+        { value: '21+3', label: 'recorridos de 18 y 9 hoyos' },
         { value: 'Privado', label: 'días para uno o grupos pequeños' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -1807,7 +1807,7 @@ const HOME_NO_PRICE_OVERRIDES = {
   fr: {
     intro: {
       stats: [
-        { value: '22', label: 'parcours sur l’île' },
+        { value: '21+3', label: 'parcours 18 trous + 9 trous' },
         { value: 'Privé', label: 'journées solo et petits groupes' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -1832,7 +1832,7 @@ const HOME_NO_PRICE_OVERRIDES = {
   nl: {
     intro: {
       stats: [
-        { value: '22', label: 'banen op het eiland' },
+        { value: '21+3', label: '18- en 9-holesbanen' },
         { value: 'Privé', label: 'dagen voor solo en kleine groepen' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -1857,7 +1857,7 @@ const HOME_NO_PRICE_OVERRIDES = {
   sv: {
     intro: {
       stats: [
-        { value: '22', label: 'banor på ön' },
+        { value: '21+3', label: '18- och 9-hålsbanor' },
         { value: 'Privat', label: 'dagar för solo och små grupper' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
@@ -1882,7 +1882,7 @@ const HOME_NO_PRICE_OVERRIDES = {
   zh: {
     intro: {
       stats: [
-        { value: '22', label: '岛上球场数量' },
+        { value: '21+3', label: '18 洞与 9 洞球场' },
         { value: '私人', label: '单人或小团体安排' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
