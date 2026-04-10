@@ -35,7 +35,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 holes alongside Andy', 'Not walking alongside - playing, as your partner'],
         ['On-course coaching throughout', 'Course management, shot selection, and decision-making'],
         ['Post-round debrief', 'What improved, what to work on, clear and honest'],
-        ['Lunch', 'At the course restaurant or a handpicked local restaurant on the Signature Day'],
+        ['Lunch', 'At the course restaurant, or at a handpicked local spot if the day suits it'],
       ],
     },
     courses: {
@@ -49,7 +49,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       title: 'The day changes depending on who is standing on the first tee.',
       cards: [
         { num: '01', title: 'Serious golfers who want a day they\'ll remember', text: 'Handicap players — solo, in pairs, or with a small group — who want Mallorca\'s best courses played properly. Not just a tee time and a wave goodbye, but a day with someone who knows the course, reads the wind, and can change how you think about a hole in the time it takes to walk to the next tee.' },
-        { num: '02', title: 'Groups who want everything arranged', text: 'Families, corporate groups, and executives visiting the island who want a premium, fully arranged day where every detail is handled. No booking platform. No strangers in your group. One fixed day rate and someone who has done it before.' },
+        { num: '02', title: 'Groups who want everything arranged', text: 'Families, corporate groups, and executives visiting the island who want a premium, fully arranged day where every detail is handled. One fixed day rate, a calmer rhythm, and someone who has done it before.' },
       ],
     },
     testimonials: {
@@ -168,7 +168,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 Löcher an Andys Seite', 'Nicht nur mitlaufen - wirklich gemeinsam spielen'],
         ['Coaching auf dem Platz', 'Platzmanagement, Schlägerwahl und Entscheidungsfindung'],
         ['Nachbesprechung', 'Was besser wurde, woran Sie weiterarbeiten sollten - klar und ehrlich'],
-        ['Mittagessen', 'Im Clubrestaurant oder an einem handverlesenen Ort beim Signature Day'],
+        ['Mittagessen', 'Im Clubrestaurant oder - wenn es zum Tag passt - an einem handverlesenen Ort in der Nähe'],
       ],
     },
     courses: {
@@ -253,7 +253,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 hoyos junto a Andy', 'No solo caminar al lado - jugar de verdad como su compañero'],
         ['Coaching en el campo', 'Gestión del campo, elección de palos y toma de decisiones'],
         ['Debrief después de la vuelta', 'Qué mejoró, en qué seguir trabajando, claro y honesto'],
-        ['Almuerzo', 'En el restaurante del club o en un lugar seleccionado para el Signature Day'],
+        ['Almuerzo', 'En el restaurante del club o, si encaja mejor con el día, en un sitio local elegido con criterio'],
       ],
     },
     courses: {
@@ -338,7 +338,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 trous aux côtés d’Andy', 'Pas seulement marcher à côté - vraiment jouer ensemble'],
         ['Coaching sur le parcours', 'Gestion du parcours, choix des clubs et prise de décision'],
         ['Débrief après la ronde', 'Ce qui a progressé, ce qu’il faut travailler ensuite - clair et honnête'],
-        ['Déjeuner', 'Au restaurant du club ou dans une adresse choisie pour le Signature Day'],
+        ['Déjeuner', 'Au restaurant du club ou, si cela convient mieux à la journée, dans une adresse locale choisie avec soin'],
       ],
     },
     courses: {
@@ -423,7 +423,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 holes naast Andy', 'Niet alleen meelopen - echt samen spelen'],
         ['Coaching tijdens de ronde', 'Baanmanagement, shotselectie en besluitvorming'],
         ['Nabespreking', 'Wat beter werd, waar u aan moet werken - helder en eerlijk'],
-        ['Lunch', 'In het clubrestaurant of in een zorgvuldig gekozen zaak op de Signature Day'],
+        ['Lunch', 'In het clubrestaurant of, als het beter bij de dag past, op een zorgvuldig gekozen lokale plek'],
       ],
     },
     courses: {
@@ -508,7 +508,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 hål vid Andys sida', 'Inte bara gå bredvid - faktiskt spela tillsammans'],
         ['Coaching på banan', 'Banförvaltning, klubbval och beslutsfattande'],
         ['Genomgång efter rundan', 'Vad som blev bättre, vad du ska jobba vidare med - tydligt och ärligt'],
-        ['Lunch', 'På klubbrestaurangen eller på en handplockad plats under Signature Day'],
+        ['Lunch', 'På klubbrestaurangen eller, om det passar dagen bättre, på ett handplockat lokalt ställe'],
       ],
     },
     courses: {
@@ -593,7 +593,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['与 Andy 同打 18 洞', '不只是陪着走，而是真正一起下场'],
         ['球场实战指导', '球场管理、选杆与临场决策'],
         ['赛后复盘', '哪些地方变好了，接下来该练什么 - 清楚而直接'],
-        ['午餐', '在球场餐厅，或 Signature Day 安排的精选餐厅'],
+        ['午餐', '在球场餐厅，或者如果当天更合适，也可以安排在精心挑选的本地餐厅'],
       ],
     },
     courses: {

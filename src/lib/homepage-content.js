@@ -147,7 +147,7 @@ export const HOME_CONTENT = {
         },
         {
           title: 'Completely private',
-          text: 'Just you and a PGA Advanced Professional. No strangers in your group.',
+          text: 'Hosted personally by Andy, with the day built around you rather than dropped into a generic visitor tee sheet.',
         },
         {
           title: 'Access to more',
@@ -1738,7 +1738,7 @@ const HOME_NO_PRICE_OVERRIDES = {
       ],
     },
     packages: {
-      intro: 'Both are private, arranged by me, and played on one of the island\'s finest courses. Pricing is shared when we speak, not hidden behind a booking engine.',
+      intro: 'Both are private, arranged by me, and played on one of the island\'s finest courses. The homepage stays light; the full experience and pricing sit on the next page.',
       items: [
         {
           note: 'Pricing shared personally once I know your dates, group size, and the right course for the day.',
@@ -1925,7 +1925,7 @@ const HOME_PACKAGE_ITEMS = {
         'Green fee included',
       ],
       note: 'I share the price personally once I know your dates, group size, and which course suits the day best.',
-      cta: 'Enquire',
+      cta: 'See details',
     },
     {
       tier: 'Group of 2 to 4',
@@ -1938,7 +1938,7 @@ const HOME_PACKAGE_ITEMS = {
         'Green fees additional — confirmed when we speak',
       ],
       note: 'For groups, Andy\'s day rate stays fixed; final course choice and green fees are confirmed when we speak.',
-      cta: 'Enquire',
+      cta: 'See details',
     },
   ],
   de: [
@@ -1955,7 +1955,7 @@ const HOME_PACKAGE_ITEMS = {
         'Greenfee inklusive',
       ],
       note: 'Den Preis teile ich Ihnen persönlich mit, sobald ich Ihre Reisedaten, Gruppengröße und den passenden Platz kenne.',
-      cta: 'Anfragen',
+      cta: 'Details ansehen',
     },
     {
       tier: 'Gruppe von 2 bis 4',
@@ -1968,7 +1968,7 @@ const HOME_PACKAGE_ITEMS = {
         'Greenfees zusätzlich - wir bestätigen sie im Gespräch',
       ],
       note: 'Für Gruppen gilt ein fester Tagessatz für Andy; Platzwahl und Greenfees bestätigen wir gemeinsam im Gespräch.',
-      cta: 'Anfragen',
+      cta: 'Details ansehen',
     },
   ],
   es: [
@@ -1985,7 +1985,7 @@ const HOME_PACKAGE_ITEMS = {
         'Green fee incluido',
       ],
       note: 'Le comparto el precio personalmente cuando conozca sus fechas, el tamaño del grupo y el campo adecuado para el día.',
-      cta: 'Consultar',
+      cta: 'Ver detalles',
     },
     {
       tier: 'Grupo de 2 a 4',
@@ -1998,7 +1998,7 @@ const HOME_PACKAGE_ITEMS = {
         'Green fees adicionales - se confirman al hablar',
       ],
       note: 'Para grupos hay una tarifa fija del día de Andy; el plan exacto y los green fees se confirman al hablar.',
-      cta: 'Consultar',
+      cta: 'Ver detalles',
     },
   ],
   fr: [
@@ -2015,7 +2015,7 @@ const HOME_PACKAGE_ITEMS = {
         'Green fee inclus',
       ],
       note: 'Je vous communique le tarif personnellement une fois vos dates, la taille du groupe et le bon parcours définis.',
-      cta: 'Demander',
+      cta: 'Voir le détail',
     },
     {
       tier: 'Groupe de 2 à 4',
@@ -2028,7 +2028,7 @@ const HOME_PACKAGE_ITEMS = {
         'Green fees en plus - confirmés ensemble',
       ],
       note: 'Pour les groupes, il y a un tarif fixe pour la journée d’Andy ; le déroulé précis et les green fees sont confirmés ensemble.',
-      cta: 'Demander',
+      cta: 'Voir le détail',
     },
   ],
   nl: [
@@ -2045,7 +2045,7 @@ const HOME_PACKAGE_ITEMS = {
         'Greenfee inbegrepen',
       ],
       note: 'Ik deel de prijs persoonlijk zodra ik uw data, groepsgrootte en de juiste baan voor die dag ken.',
-      cta: 'Aanvragen',
+      cta: 'Bekijk details',
     },
     {
       tier: 'Groep van 2 tot 4',
@@ -2058,7 +2058,7 @@ const HOME_PACKAGE_ITEMS = {
         'Greenfees extra - bevestigd wanneer we spreken',
       ],
       note: 'Voor groepen geldt een vaste dagprijs voor Andy; het precieze plan en de greenfees bevestigen we samen.',
-      cta: 'Aanvragen',
+      cta: 'Bekijk details',
     },
   ],
   sv: [
@@ -2075,7 +2075,7 @@ const HOME_PACKAGE_ITEMS = {
         'Green fee ingår',
       ],
       note: 'Jag delar priset personligen när jag vet dina datum, gruppstorlek och vilken bana som passar bäst för dagen.',
-      cta: 'Förfrågan',
+      cta: 'Se detaljer',
     },
     {
       tier: 'Grupp på 2 till 4',
@@ -2088,7 +2088,7 @@ const HOME_PACKAGE_ITEMS = {
         'Green fees tillkommer - bekräftas när vi pratar',
       ],
       note: 'För grupper gäller ett fast dagspris för Andy; exakt upplägg och green fees bekräftas när vi pratar.',
-      cta: 'Förfrågan',
+      cta: 'Se detaljer',
     },
   ],
   zh: [
@@ -2105,7 +2105,7 @@ const HOME_PACKAGE_ITEMS = {
         '果岭费已包含',
       ],
       note: '当我了解您的日期、人数以及最适合的球场之后，会亲自把价格发给您。',
-      cta: '立即咨询',
+      cta: '查看详情',
     },
     {
       tier: '2 到 4 人',
@@ -2118,7 +2118,7 @@ const HOME_PACKAGE_ITEMS = {
         '果岭费另计 - 沟通后确认',
       ],
       note: '小组方案按 Andy 的固定日费安排，具体球场与果岭费会在沟通后确认。',
-      cta: '立即咨询',
+      cta: '查看详情',
     },
   ],
 }

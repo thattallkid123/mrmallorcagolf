@@ -307,7 +307,7 @@ export default function HomePageInner({ locale = 'en' }) {
                 </p>
               )}
               {pkg.note && <p className={`package__note${pkg.featured ? ' package__note--featured' : ''}`}>{pkg.note}</p>}
-              <Link href={contactHref} className={`btn ${pkg.featured ? 'btn--gold' : 'btn--dark'}`}>
+              <Link href={playWithAProHref} className={`btn ${pkg.featured ? 'btn--gold' : 'btn--dark'}`}>
                 {pkg.cta}
               </Link>
             </div>
