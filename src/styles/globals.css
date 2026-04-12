@@ -130,7 +130,7 @@ body {
 }
 
 .nav__logo { display: flex; align-items: center; text-decoration: none; }
-.nav__logo-img { height: 42px; width: 42px; object-fit: contain; display: block; }
+.nav__logo-img { height: 38px; width: 38px; object-fit: contain; display: block; }
 
 .nav__links { display: flex; align-items: center; gap: 2rem; list-style: none; }
 .nav__links > li { display: flex; align-items: center; }

@@ -119,7 +119,7 @@ export default function Nav({ transparent = false, lang }) {
       <nav className={navClass} id="nav">
         <Link href={activeLang === 'en' ? '/' : `/${activeLang}`} className="nav__logo">
           <img
-            src={(!transparent || scrolled) ? '/logo-green.png' : '/logo-white.png'}
+            src={(!transparent || scrolled) ? '/logo-dark-green.png' : '/logo-white.png'}
             alt="Mr Mallorca Golf"
             className="nav__logo-img"
           />
