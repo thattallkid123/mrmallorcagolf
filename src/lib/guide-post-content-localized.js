@@ -332,28 +332,28 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'paragraph', text: "距巴尔马市中心仅五分钟。仅凭这一点，它就已跻身岛上最值得一去的球场中的另一个层次。Son Gual需要二十分钟，Alcanada五十分钟。如果你住在市区，想要打一场认真的球而不必为往返花上半天时间，Son Muntaner就是答案。" },
         { type: 'paragraph', text: "从抵达到开球，整个服务流程顺畅自然。工作人员体贴而不失分寸。练习场用球、训练设施以及整体运营水准，都与这个球场的声誉相符。" },
         { type: 'image', src: '/images/son-muntaner-blog/sm-6.jpg', alt: '马略卡Son Muntaner高尔夫球场俯视第17洞球道，背景为巴尔马湾', caption: '俯瞰第17洞球道。距巴尔马市中心仅五分钟车程，却宛如身处另一个世界。' },
-        { type: 'heading', text: '步行挑战——以及球车为何包含在内' },
-        { type: 'paragraph', text: "徒步打完这个球场是真正的体能考验。通往开球台的路有多处长坡。球车费用已含在果岭费中——这是俱乐部的正确决策。大多数球手都会需要它，若单独收费在这个水准的球场会显得不妥。在中国打球多年靠球童辅助，我习惯步行，但我理解为何大多数来访者选择乘坐球车。" },
+        { type: 'heading', text: '步行挑战:以及球车为何包含在内' },
+        { type: 'paragraph', text: "徒步打完这个球场是真正的体能考验。通往开球台的路有多处长坡。球车费用已含在果岭费中:这是俱乐部的正确决策。大多数球手都会需要它，若单独收费在这个水准的球场会显得不妥。在中国打球多年靠球童辅助，我习惯步行，但我理解为何大多数来访者选择乘坐球车。" },
         { type: 'image', src: '/images/son-muntaner-blog/sm-4.jpg', alt: '马略卡Son Muntaner高尔夫球场穿越纳布尔格萨山脉的高处球道视角', caption: '从一段长坡顶部回望。穿越纳布尔格萨山脉的球道设计，让这个球场与巴尔马附近所有球场都截然不同。' },
         { type: 'heading', text: '球场如何逐渐呈现' },
-        { type: 'paragraph', text: "开局阶段发挥不稳。选择了保守的开球位置，依然无法在早期完全读懂球道布局。这不是批评——这正是设计的用意所在。Son Muntaner不会在开球台就把一切展示给你看。球场是在攻果岭时慢慢呈现自身的。" },
+        { type: 'paragraph', text: "开局阶段发挥不稳。选择了保守的开球位置，依然无法在早期完全读懂球道布局。这不是批评:这正是设计的用意所在。Son Muntaner不会在开球台就把一切展示给你看。球场是在攻果岭时慢慢呈现自身的。" },
         { type: 'paragraph', text: "从错误角度攻果岭时很难停住球。球场有狭窄的通道和需要精准落点的微妙目标区，要求的是精确的位置选择，而不仅仅是把球打到旗杆附近。落球区主导着整个球场的节奏。开球和保守击球往往需要坚定地打向不到达时并不明显的窄小区域。一旦理解这一点，设计便显得合理了。优质击球会得到清晰的奖励。" },
         { type: 'image', src: '/images/son-muntaner-blog/sm-7.jpg', alt: '马略卡Son Muntaner高尔夫球洞，紧凑的标准杆3洞，左侧石墙，右侧沙坑', caption: '第7洞。短打标准杆3，但陡峭的落差使距离控制远比码数所示的更难。大多数人都打不到位。' },
         { type: 'heading', text: '标准杆3洞' },
-        { type: 'paragraph', text: "球场全程都善用了高度差。保护性主要来自球洞的形态和角度，而非单纯依赖距离——当然从后方开球台打的较长洞超过180码，需要认真选择球杆。第13洞是当天难得的清晰时刻。" },
+        { type: 'paragraph', text: "球场全程都善用了高度差。保护性主要来自球洞的形态和角度，而非单纯依赖距离:当然从后方开球台打的较长洞超过180码，需要认真选择球杆。第13洞是当天难得的清晰时刻。" },
         { type: 'image', src: '/images/son-muntaner-blog/sm-1.jpg', alt: 'Andy Griffiths在马略卡Son Muntaner第13洞标准杆3洞开球', caption: '第13洞。标准杆3。今天一个轻松的小鸟！' },
         { type: 'heading', text: '前九洞对比后九洞' },
         { type: 'paragraph', text: "前九洞，尤其是开局六洞，打法紧凑。水障和明确的落球区让游戏保持诚实。没有容纳粗心开球的空间。" },
-        { type: 'paragraph', text: "后九洞略显开阔。使用开球木的自由度更高，但果岭区依然小而难以预料。从远处判断距离是Son Muntaner一贯的挑战——果岭看起来比实际更大，攻果岭的距离看上去也比实际更短。" },
+        { type: 'paragraph', text: "后九洞略显开阔。使用开球木的自由度更高，但果岭区依然小而难以预料。从远处判断距离是Son Muntaner一贯的挑战:果岭看起来比实际更大，攻果岭的距离看上去也比实际更短。" },
         { type: 'image', src: '/images/son-muntaner-blog/sm-3.jpg', alt: '马略卡Son Muntaner高尔夫球场水障上的鸭子', caption: '这不在击球前例行准备的考虑范围之内。后九洞的意外"同伴"。' },
         { type: 'heading', text: '果岭' },
-        { type: 'paragraph', text: "果岭滚球纯正，速度稳健，明显有随夏季到来进一步加快的潜力。这种品质奖励了良好的推杆，尤其是长距离推杆。西班牙最佳的称号在这里开始显现其意义——果岭品质始终如一，在忙碌的周六满员运营全程中，速度和表面质量始终保持稳定。" },
+        { type: 'paragraph', text: "果岭滚球纯正，速度稳健，明显有随夏季到来进一步加快的潜力。这种品质奖励了良好的推杆，尤其是长距离推杆。西班牙最佳的称号在这里开始显现其意义:果岭品质始终如一，在忙碌的周六满员运营全程中，速度和表面质量始终保持稳定。" },
         { type: 'image', src: '/images/son-muntaner-blog/sm-5.jpg', alt: '马略卡Son Muntaner第9洞果岭，背景为会所', caption: '第9洞果岭，会所在后。走到一半时已然清晰：这个球场奖励耐心胜于力量。' },
         { type: 'heading', text: '沙坑' },
         { type: 'paragraph', text: "一个真实的负面反馈：沙坑沙质不够统一。有些落球点较硬，有些较软，给以相同方式规划的击球带来了执行上的困难。对于这一水准的球场来说属于小问题，但若果岭边沙坑击球是你比赛的重要组成部分，值得留意。" },
         { type: 'heading', text: '橄榄树' },
         { type: 'paragraph', text: "第15洞。站在球道中央的那棵古老橄榄树已在此屹立约一千年。巴利阿里群岛政府将其列为自然遗址。球场的设计围绕它展开。" },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: '马略卡Son Muntaner高尔夫球场第15洞古老橄榄树，背景为纳布尔格萨山脉', caption: '第15洞。那棵橄榄树在这里已矗立约一千年。巴利阿里群岛政府将其列为自然遗址。有人决定在它周围建造一个球洞——我很庆幸他们做出了这个决定。' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: '马略卡Son Muntaner高尔夫球场第15洞古老橄榄树，背景为纳布尔格萨山脉', caption: '第15洞。那棵橄榄树在这里已矗立约一千年。巴利阿里群岛政府将其列为自然遗址。有人决定在它周围建造一个球洞:我很庆幸他们做出了这个决定。' },
         { type: 'heading', text: '餐厅' },
         { type: 'paragraph', text: "餐厅并非附加项目。食物的水准与球场相称。打完球后值得留下用餐，而不是直接驱车返回巴尔马。" },
         { type: 'facts', items: [['€127–254', '2026年果岭费区间'], ['7/10', '难度'], ['标准杆72', '锦标赛级布局'], ['含在内', '果岭费含球车']] },
@@ -787,16 +787,16 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     nl: {
       metadata: {slug: 'son-gual-review',
   locale: 'nl',
-  title: "Son Gual Golf Mallorca — eerlijke recensie van een PGA-professional (2026)",
+  title: "Son Gual Golf Mallorca - eerlijke recensie van een PGA-professional (2026)",
   description: "Son Gual golfbaan op Mallorca, beoordeeld door een PGA-professional die er regelmatig speelt.",
   imagePath: '/images/son-gual-blog/sg-hero.webp',
 },
       meta: {badge: 'Baanrecensie', badgeGold: true, readTime: '6 min lezen', updated: 'Maart 2026',
-  title: "Son Gual Golf Mallorca — eerlijke recensie van een PGA-professional (2026)",
-  intro: "Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes — en waarom Obama en Nadal blijven terugkomen.",
+  title: "Son Gual Golf Mallorca - eerlijke recensie van een PGA-professional (2026)",
+  intro: "Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes: en waarom Obama en Nadal blijven terugkomen.",
   lang: 'nl',
   related: [
-    { slug: 'alcanada-review', title: 'Alcanada Golf — Eerlijke recensie 2026' },
+    { slug: 'alcanada-review', title: 'Alcanada Golf - Eerlijke recensie 2026' },
     { slug: 'best-golf-courses-mallorca', title: 'Beste Golfbanen op Mallorca 2026' },
   ],
 },
@@ -822,7 +822,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "De drive raakte licht de hiel. Toch vloog hij verder dan verwacht en vermeed de bunkers — net. Er zijn zoveel bunkers op Son Gual, precies gepositioneerd waar licht misgeslagen slagen terechtkomen."
+  "text": "De drive raakte licht de hiel. Toch vloog hij verder dan verwacht en vermeed de bunkers: net. Er zijn zoveel bunkers op Son Gual, precies gepositioneerd waar licht misgeslagen slagen terechtkomen."
 },
 {
   "type": "image",
@@ -836,7 +836,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Son Gual lijkt in zijn eigen ecosysteem te leven. Ik verlaat mijn huis op een kalme ochtend en kom aan bij de eerste afslagplaats om te ontdekken dat het flink waait — en dat blijft vier uur zo."
+  "text": "Son Gual lijkt in zijn eigen ecosysteem te leven. Ik verlaat mijn huis op een kalme ochtend en kom aan bij de eerste afslagplaats om te ontdekken dat het flink waait: en dat blijft vier uur zo."
 },
 {
   "type": "pull",
@@ -881,7 +881,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Rafa Nadal speelt hier regelmatig — zijn verklaarde favoriete baan op het eiland. Barack Obama speelde in november 2024."
+  "text": "Rafa Nadal speelt hier regelmatig: zijn verklaarde favoriete baan op het eiland. Barack Obama speelde in november 2024."
 },
 {
   "type": "image",
@@ -948,17 +948,17 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
   slug: 'son-gual-review',
   locale: 'sv',
-  title: "Son Gual Golf Mallorca — ärlig recension från ett PGA-proffs (2026)",
+  title: "Son Gual Golf Mallorca - ärlig recension från ett PGA-proffs (2026)",
   description: "Son Gual golfbana på Mallorca recenserad av ett PGA-proffs.",
   imagePath: '/images/son-gual-blog/sg-hero.webp',
 },
       meta: {
   badge: 'Banrecension', badgeGold: true, readTime: '6 min läsning', updated: 'Mars 2026',
-  title: "Son Gual Golf Mallorca — ärlig recension från ett PGA-proffs (2026)",
-  intro: "Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen — och varför Obama och Nadal fortsätter att återvända.",
+  title: "Son Gual Golf Mallorca - ärlig recension från ett PGA-proffs (2026)",
+  intro: "Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen: och varför Obama och Nadal fortsätter att återvända.",
   lang: 'sv',
   related: [
-    { slug: 'alcanada-review', title: 'Alcanada Golf — Ärlig recension 2026' },
+    { slug: 'alcanada-review', title: 'Alcanada Golf - Ärlig recension 2026' },
     { slug: 'best-golf-courses-mallorca', title: 'Bästa golfbanorna på Mallorca 2026' },
   ],
 },
@@ -984,7 +984,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Drivern träffade lätt på klöten. Den flög ändå längre än väntat och undvek bunkrarna — precis. Det finns så många bunkrar på Son Gual, placerade exakt där lite felslagna slag hamnar."
+  "text": "Drivern träffade lätt på klöten. Den flög ändå längre än väntat och undvek bunkrarna: precis. Det finns så många bunkrar på Son Gual, placerade exakt där lite felslagna slag hamnar."
 },
 {
   "type": "image",
@@ -998,7 +998,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Son Gual verkar leva i sitt eget ekosystem. Jag lämnar mitt hus en lugn morgon och anländer till första utslagsplatsen för att finna att det blåser ordentligt — och det håller i sig i fyra timmar."
+  "text": "Son Gual verkar leva i sitt eget ekosystem. Jag lämnar mitt hus en lugn morgon och anländer till första utslagsplatsen för att finna att det blåser ordentligt: och det håller i sig i fyra timmar."
 },
 {
   "type": "pull",
@@ -1043,7 +1043,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Rafa Nadal spelar här regelbundet — hans uttalade favoritbana på ön. Barack Obama spelade i november 2024."
+  "text": "Rafa Nadal spelar här regelbundet: hans uttalade favoritbana på ön. Barack Obama spelade i november 2024."
 },
 {
   "type": "image",
@@ -1110,17 +1110,17 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
   slug: 'son-gual-review',
   locale: 'zh',
-  title: "Son Gual高尔夫球场马略卡岛 — PGA职业球手诚实点评（2026）",
+  title: "Son Gual高尔夫球场马略卡岛 - PGA职业球手诚实点评（2026）",
   description: "PGA职业球手对马略卡岛Son Gual高尔夫球场的亲身评测。",
   imagePath: '/images/son-gual-blog/sg-hero.webp',
 },
       meta: {
   badge: '球场评测', badgeGold: true, readTime: '阅读约6分钟', updated: '2026年3月',
-  title: "Son Gual高尔夫球场马略卡岛 — PGA职业球手诚实点评（2026）",
-  intro: "岛上我打球最多的球场。风的特性、果岭难度、收关几洞 — 以及奥巴马和纳达尔为何一再回访。",
+  title: "Son Gual高尔夫球场马略卡岛 - PGA职业球手诚实点评（2026）",
+  intro: "岛上我打球最多的球场。风的特性、果岭难度、收关几洞: 以及奥巴马和纳达尔为何一再回访。",
   lang: 'zh',
   related: [
-    { slug: 'alcanada-review', title: 'Alcanada高尔夫球场 — 诚实点评 2026' },
+    { slug: 'alcanada-review', title: 'Alcanada高尔夫球场 - 诚实点评 2026' },
     { slug: 'best-golf-courses-mallorca', title: '马略卡岛最佳高尔夫球场 2026' },
   ],
 },
@@ -1160,7 +1160,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Son Gual仿佛有自己独立的气候圈。我从家出发时风平浪静，到达第一发球台时，才发现风已经刮得很猛——而且这一刮就是四个小时。"
+  "text": "Son Gual仿佛有自己独立的气候圈。我从家出发时风平浪静，到达第一发球台时，才发现风已经刮得很猛:而且这一刮就是四个小时。"
 },
 {
   "type": "pull",
@@ -1205,7 +1205,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "拉法·纳达尔经常在此打球——据他本人说，这是他在岛上最喜欢的球场。巴拉克·奥巴马于2024年11月到访。"
+  "text": "拉法·纳达尔经常在此打球:据他本人说，这是他在岛上最喜欢的球场。巴拉克·奥巴马于2024年11月到访。"
 },
 {
   "type": "image",
@@ -2636,7 +2636,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 const POST_IMAGE_PATCHES = {
   'son-gual-review': {
     insertions: [
-      // sg-clients-group.jpg — after sg-hero (index 1), before first heading
+      // sg-clients-group.jpg: after sg-hero (index 1), before first heading
       {
         insertAfterIndex: 1,
         src: '/images/son-gual-blog/sg-clients-group.jpg',
@@ -2650,7 +2650,7 @@ const POST_IMAGE_PATCHES = {
           zh: '一月份的团体日。在英国，球场都关门了。这里的球道就是这样。',
         },
       },
-      // sg-swing.jpg — after Wind paragraph (index 7), before pull quote
+      // sg-swing.jpg: after Wind paragraph (index 7), before pull quote
       {
         insertAfterIndex: 7,
         src: '/images/son-gual-blog/sg-swing.jpg',
@@ -2664,7 +2664,7 @@ const POST_IMAGE_PATCHES = {
           zh: '很多洞都需要一号木。顺风时是最好的感觉。逆风时，就要换一种思路。',
         },
       },
-      // sg-plane.jpg — after sg-3.webp (index 15), before Notable Visitors heading
+      // sg-plane.jpg: after sg-3.webp (index 15), before Notable Visitors heading
       {
         insertAfterIndex: 15,
         src: '/images/son-gual-blog/sg-plane.jpg',
@@ -2683,7 +2683,7 @@ const POST_IMAGE_PATCHES = {
 
   'alcanada-review': {
     insertions: [
-      // alc-7.jpg — hero image, insert before first paragraph (index -1 = prepend)
+      // alc-7.jpg: hero image, insert before first paragraph (index -1 = prepend)
       {
         insertAfterIndex: -1,
         src: '/images/alcanada-blog/alc-7.jpg',
@@ -2697,7 +2697,7 @@ const POST_IMAGE_PATCHES = {
           zh: '黄金时刻的Alcanada球场。灯塔矗立在海岸附近的小岛上，从18个洞中的16个都能看到。',
         },
       },
-      // alc-6.jpg — after second Setting paragraph (index 3), before Back Tees heading
+      // alc-6.jpg: after second Setting paragraph (index 3), before Back Tees heading
       {
         insertAfterIndex: 3,
         src: '/images/alcanada-blog/alc-6.jpg',
@@ -2711,7 +2711,7 @@ const POST_IMAGE_PATCHES = {
           zh: '身后是灯塔，左侧是大海，球道向前延伸而去。',
         },
       },
-      // alc-2.jpg — after pull quote (index 6), before Greens heading
+      // alc-2.jpg: after pull quote (index 6), before Greens heading
       {
         insertAfterIndex: 6,
         src: '/images/alcanada-blog/alc-2.jpg',
@@ -2725,7 +2725,7 @@ const POST_IMAGE_PATCHES = {
           zh: '晴朗的早晨可以看到海湾对面的特拉蒙塔纳山脉。',
         },
       },
-      // alc-5.jpg — after second Greens paragraph (index 9), before Rolex heading
+      // alc-5.jpg: after second Greens paragraph (index 9), before Rolex heading
       {
         insertAfterIndex: 9,
         src: '/images/alcanada-blog/alc-5.jpg',
@@ -2739,7 +2739,7 @@ const POST_IMAGE_PATCHES = {
           zh: 'Alcanada的后排发球台高于球道很多。每次爬上去都是值得的。',
         },
       },
-      // alc-1.jpg — after Rolex paragraph (index 11), before Design heading
+      // alc-1.jpg: after Rolex paragraph (index 11), before Design heading
       {
         insertAfterIndex: 11,
         src: '/images/alcanada-blog/alc-1.jpg',
@@ -2753,7 +2753,7 @@ const POST_IMAGE_PATCHES = {
           zh: '劳力士挑战赛巡回赛总决赛在Alcanada举行。2026年10月将迎来第六届。',
         },
       },
-      // alc-4.jpg — after Design paragraph (index 13), before facts
+      // alc-4.jpg: after Design paragraph (index 13), before facts
       {
         insertAfterIndex: 13,
         src: '/images/alcanada-blog/alc-4.jpg',
@@ -2767,7 +2767,7 @@ const POST_IMAGE_PATCHES = {
           zh: '夏日傍晚的一轮。七月份Alcanada的光线格外美。',
         },
       },
-      // alc-hero.jpg — after Restaurant paragraph (index 20), before Verdict heading
+      // alc-hero.jpg: after Restaurant paragraph (index 20), before Verdict heading
       {
         insertAfterIndex: 20,
         src: '/images/alcanada-blog/alc-hero.jpg',
@@ -2786,7 +2786,7 @@ const POST_IMAGE_PATCHES = {
 
   'santa-ponsa-1-review': {
     insertions: [
-      // sp-hero.jpg — hero image, prepend before first paragraph
+      // sp-hero.jpg: hero image, prepend before first paragraph
       {
         insertAfterIndex: -1,
         src: '/images/santa-ponsa-blog/sp-hero.jpg',
@@ -2800,7 +2800,7 @@ const POST_IMAGE_PATCHES = {
           zh: '第16洞果岭。进攻果岭时湖泊是障碍，大大考验注意力。',
         },
       },
-      // sp-1.jpg — after second "Why suits" paragraph (index 3), before 10th heading
+      // sp-1.jpg: after second "Why suits" paragraph (index 3), before 10th heading
       {
         insertAfterIndex: 3,
         src: '/images/santa-ponsa-blog/sp-1.jpg',
@@ -2814,7 +2814,7 @@ const POST_IMAGE_PATCHES = {
           zh: '球道宽阔。这是一个适合使用一号木的球场。',
         },
       },
-      // sp-2.jpg — after 10th hole paragraph (index 5), before European Tour heading
+      // sp-2.jpg: after 10th hole paragraph (index 5), before European Tour heading
       {
         insertAfterIndex: 5,
         src: '/images/santa-ponsa-blog/sp-2.jpg',
@@ -2828,7 +2828,7 @@ const POST_IMAGE_PATCHES = {
           zh: '球场布局。平静的天气里这个球场会让你发挥得很好。加上风，它就值得每一码的长度。',
         },
       },
-      // sp-3.jpg — after European Tour paragraph (index 7), before Mountain Views heading
+      // sp-3.jpg: after European Tour paragraph (index 7), before Mountain Views heading
       {
         insertAfterIndex: 7,
         src: '/images/santa-ponsa-blog/sp-3.jpg',
@@ -2842,7 +2842,7 @@ const POST_IMAGE_PATCHES = {
           zh: '身后是特拉蒙塔纳山脉。第5、6、7洞有最好的山景。',
         },
       },
-      // sp-5.jpg — after Mountain Views paragraph (index 9), before facts
+      // sp-5.jpg: after Mountain Views paragraph (index 9), before facts
       {
         insertAfterIndex: 9,
         src: '/images/santa-ponsa-blog/sp-5.jpg',

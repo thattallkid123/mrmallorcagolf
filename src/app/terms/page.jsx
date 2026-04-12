@@ -91,7 +91,7 @@ export default function Terms() {
 
           <section className="legal-section">
             <h2>8. Intellectual Property</h2>
-            <p>All content on this website — including text, images, videos, and branding — is the property of Mr Mallorca Golf and may not be reproduced without written permission.</p>
+            <p>All content on this website (including text, images, videos, and branding) is the property of Mr Mallorca Golf and may not be reproduced without written permission.</p>
           </section>
 
           <section className="legal-section">

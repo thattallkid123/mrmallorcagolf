@@ -147,7 +147,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-gual-review',
         badge: 'Análisis del campo',
-        title: 'Son Gual Golf Mallorca — análisis honesto de un Profesional PGA (2026)',
+        title: 'Son Gual Golf Mallorca - análisis honesto de un Profesional PGA (2026)',
         intro:
           'Mi campo más jugado en la isla. El viento, los greens, el tramo final y por qué Obama y Nadal siguen volviendo.',
         readTime: '7 min',
@@ -156,7 +156,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'alcanada-review',
         badge: 'Análisis del campo',
-        title: 'Club de Golf Alcanada — análisis honesto de un Profesional PGA (2026)',
+        title: 'Club de Golf Alcanada - análisis honesto de un Profesional PGA (2026)',
         intro:
           'El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia. El faro lo cambia todo.',
         readTime: '7 min',
@@ -165,7 +165,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'santa-ponsa-1-review',
         badge: 'Análisis del campo',
-        title: 'Golf Santa Ponsa 1, Mallorca — análisis honesto de un Profesional PGA (2026)',
+        title: 'Golf Santa Ponsa 1, Mallorca - análisis honesto de un Profesional PGA (2026)',
         intro:
           'Uno de los campos más largos de Europa, historia real en el European Tour y uno de los lugares más fáciles de la isla para disfrutar pegando driver.',
         readTime: '6 min',
@@ -183,7 +183,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guía',
-        title: 'Los mejores campos de golf de Mallorca — ranking honesto de un Profesional PGA',
+        title: 'Los mejores campos de golf de Mallorca - ranking honesto de un Profesional PGA',
         intro:
           'Veintidós campos en la isla. Así los clasificaría para un visitante con tiempo limitado y expectativas altas.',
         readTime: '8 min',
@@ -201,7 +201,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-time-play-golf-mallorca',
         badge: 'Guía',
-        title: 'La mejor época para jugar al golf en Mallorca — mes a mes',
+        title: 'La mejor época para jugar al golf en Mallorca - mes a mes',
         intro:
           'Octubre es el mes que yo elegiría. Aquí explico por qué y qué ofrece cada mes en clima, precio y afluencia.',
         readTime: '6 min',
@@ -219,7 +219,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'golf-trip-planning-mallorca',
         badge: 'Guía',
-        title: 'Cómo planificar un viaje de golf a Mallorca — todo lo que necesita saber',
+        title: 'Cómo planificar un viaje de golf a Mallorca - todo lo que necesita saber',
         intro:
           'Vuelos, campos, dónde alojarse cerca del golf y cómo moverse. La guía práctica que me habría gustado tener cuando llegué.',
         readTime: '7 min',
@@ -270,7 +270,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-gual-review',
         badge: 'Platz-Bewertung',
-        title: 'Son Gual Golf Mallorca — ehrliche Bewertung eines PGA-Professionals (2026)',
+        title: 'Son Gual Golf Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)',
         intro:
           'Mein meistgespielter Platz auf der Insel. Der Wind, die Greens, die Schlusslöcher und warum Obama und Nadal immer wiederkommen.',
         readTime: '7 Min.',
@@ -279,7 +279,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'alcanada-review',
         badge: 'Platz-Bewertung',
-        title: 'Club de Golf Alcanada — ehrliche Bewertung eines PGA-Professionals (2026)',
+        title: 'Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals (2026)',
         intro:
           'Der Platz, zu dem ich Leute bringe, wenn ich möchte, dass sie mit einer Geschichte nach Hause kommen. Der Leuchtturm verändert alles.',
         readTime: '7 Min.',
@@ -288,7 +288,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'santa-ponsa-1-review',
         badge: 'Platz-Bewertung',
-        title: 'Golf Santa Ponsa 1, Mallorca — ehrliche Bewertung eines PGA-Professionals (2026)',
+        title: 'Golf Santa Ponsa 1, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)',
         intro:
           'Einer der längsten Plätze Europas, echte European-Tour-Geschichte und ein Platz, der das Vertrauen mit dem Driver wirklich zurückgibt.',
         readTime: '6 Min.',
@@ -306,7 +306,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Ratgeber',
-        title: 'Die besten Golfplätze auf Mallorca — ehrliches Ranking eines PGA-Professionals',
+        title: 'Die besten Golfplätze auf Mallorca - ehrliches Ranking eines PGA-Professionals',
         intro:
           'Zweiundzwanzig Plätze auf der Insel. So würde ich sie für einen Besucher mit begrenzter Zeit und hohen Ansprüchen einordnen.',
         readTime: '8 Min.',
@@ -317,14 +317,14 @@ export const GUIDES_CONTENT = {
         badge: 'Ratgeber',
         title: 'Ist Mallorca gut für Golf? Eine ehrliche Antwort von jemandem, der hier lebt',
         intro:
-          'Die ehrliche Version — was die Insel besser macht als Portugal, wo sie zurückfällt und für wen sie geeignet ist.',
+          'Die ehrliche Version: was die Insel besser macht als Portugal, wo sie zurückfällt und für wen sie geeignet ist.',
         readTime: '5 Min.',
         keywords: 'Mallorca vs. Portugal · Platzqualität · Für alle Level',
       },
       {
         slug: 'best-time-play-golf-mallorca',
         badge: 'Ratgeber',
-        title: 'Die beste Reisezeit für Golf auf Mallorca — Monat für Monat',
+        title: 'Die beste Reisezeit für Golf auf Mallorca - Monat für Monat',
         intro:
           'Oktober wäre meine Wahl. Hier ist warum, und was jeder Monat tatsächlich in Bezug auf Wetter, Preise und Besucheraufkommen bietet.',
         readTime: '6 Min.',
@@ -335,14 +335,14 @@ export const GUIDES_CONTENT = {
         badge: 'Ratgeber',
         title: 'Was kostet Golf auf Mallorca? Greenfees, Leihausrüstung und versteckte Kosten',
         intro:
-          'Das vollständige Bild, was ein Golftrip hier wirklich kostet — Greenfees, Leihausrüstung, Caddies und wo man sparen kann.',
+          'Das vollständige Bild, was ein Golftrip hier wirklich kostet: Greenfees, Leihausrüstung, Caddies und wo man sparen kann.',
         readTime: '5 Min.',
         keywords: '€77-220 Greenfees · Leihausrüstung · Caddies · Preise 2026',
       },
       {
         slug: 'golf-trip-planning-mallorca',
         badge: 'Ratgeber',
-        title: 'Einen Golftrip nach Mallorca planen — alles, was Sie wissen müssen',
+        title: 'Einen Golftrip nach Mallorca planen - alles, was Sie wissen müssen',
         intro:
           'Flüge, Plätze, Unterkünfte in Platznähe, Transfers. Der praktische Reiseführer, den ich mir gewünscht hätte, als ich hierher zog.',
         readTime: '7 Min.',
@@ -393,7 +393,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-gual-review',
         badge: 'Avis parcours',
-        title: "Son Gual Golf Majorque — avis honnête d'un Professionnel PGA (2026)",
+        title: "Son Gual Golf Majorque - avis honnête d'un Professionnel PGA (2026)",
         intro:
           "Mon parcours le plus joué sur l'île. Le vent, les greens, la fin de parcours et pourquoi Obama et Nadal reviennent toujours.",
         readTime: '7 min',
@@ -402,7 +402,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'alcanada-review',
         badge: 'Avis parcours',
-        title: "Club de Golf Alcanada — avis honnête d'un Professionnel PGA (2026)",
+        title: "Club de Golf Alcanada - avis honnête d'un Professionnel PGA (2026)",
         intro:
           "Le parcours où j'emmène les gens quand je veux qu'ils rentrent avec une histoire. Le phare change tout.",
         readTime: '7 min',
@@ -411,7 +411,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'santa-ponsa-1-review',
         badge: 'Avis parcours',
-        title: "Golf Santa Ponsa 1, Majorque — avis honnête d'un Professionnel PGA (2026)",
+        title: "Golf Santa Ponsa 1, Majorque - avis honnête d'un Professionnel PGA (2026)",
         intro:
           "L'un des parcours les plus longs d'Europe, une vraie histoire sur l'European Tour et un parcours qui redonne vraiment confiance avec le driver.",
         readTime: '6 min',
@@ -429,7 +429,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guide',
-        title: 'Les meilleurs parcours de golf de Majorque — classement honnête par un Professionnel PGA',
+        title: 'Les meilleurs parcours de golf de Majorque - classement honnête par un Professionnel PGA',
         intro:
           "Vingt-deux parcours sur l'île. Voici comment je les classerais pour un visiteur avec peu de temps et des exigences élevées.",
         readTime: '8 min',
@@ -440,14 +440,14 @@ export const GUIDES_CONTENT = {
         badge: 'Guide',
         title: "Majorque est-elle bonne pour le golf ? Une réponse honnête par quelqu'un qui y vit",
         intro:
-          "La version sans filtre — ce que l'île fait mieux que le Portugal, ses lacunes, et à qui elle convient vraiment.",
+          "La version sans filtre: ce que l'île fait mieux que le Portugal, ses lacunes, et à qui elle convient vraiment.",
         readTime: '5 min',
         keywords: 'Majorque vs Portugal · Qualité des parcours · Tous niveaux',
       },
       {
         slug: 'best-time-play-golf-mallorca',
         badge: 'Guide',
-        title: 'La meilleure période pour jouer au golf à Majorque — mois par mois',
+        title: 'La meilleure période pour jouer au golf à Majorque - mois par mois',
         intro:
           'Octobre est le mois que je choisirais. Voici pourquoi, et ce que chaque mois offre réellement en termes de météo, de prix et de fréquentation.',
         readTime: '6 min',
@@ -458,14 +458,14 @@ export const GUIDES_CONTENT = {
         badge: 'Guide',
         title: 'Combien coûte le golf à Majorque ? Green fees, location et coûts cachés',
         intro:
-          "Le tableau complet de ce que coûte réellement un séjour golf ici — green fees, location, caddies et où économiser sans compromis.",
+          "Le tableau complet de ce que coûte réellement un séjour golf ici: green fees, location, caddies et où économiser sans compromis.",
         readTime: '5 min',
         keywords: '€77-220 green fees · Location · Caddies · Tarifs 2026',
       },
       {
         slug: 'golf-trip-planning-mallorca',
         badge: 'Guide',
-        title: 'Planifier un voyage golf à Majorque — tout ce que vous devez savoir',
+        title: 'Planifier un voyage golf à Majorque - tout ce que vous devez savoir',
         intro:
           "Vols, parcours, hébergement près du golf, comment se déplacer. Le guide pratique que j'aurais aimé avoir en arrivant ici.",
         readTime: '7 min',
@@ -516,7 +516,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-gual-review',
         badge: 'Baanbeoordeling',
-        title: 'Son Gual Golf Mallorca — eerlijke beoordeling van een PGA Professional (2026)',
+        title: 'Son Gual Golf Mallorca - eerlijke beoordeling van een PGA Professional (2026)',
         intro:
           'Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes en waarom Obama en Nadal blijven terugkomen.',
         readTime: '7 min',
@@ -525,7 +525,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'alcanada-review',
         badge: 'Baanbeoordeling',
-        title: 'Club de Golf Alcanada — eerlijke beoordeling van een PGA Professional (2026)',
+        title: 'Club de Golf Alcanada - eerlijke beoordeling van een PGA Professional (2026)',
         intro:
           'De baan waar ik mensen naartoe breng als ik wil dat ze met een verhaal thuiskomen. De vuurtoren verandert alles.',
         readTime: '7 min',
@@ -534,7 +534,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'santa-ponsa-1-review',
         badge: 'Baanbeoordeling',
-        title: 'Golf Santa Ponsa 1, Mallorca — eerlijke beoordeling van een PGA Professional (2026)',
+        title: 'Golf Santa Ponsa 1, Mallorca - eerlijke beoordeling van een PGA Professional (2026)',
         intro:
           'Een van de langste banen in Europa, echte European-Tour-geschiedenis en een baan die je vertrouwen met de driver echt teruggeeft.',
         readTime: '6 min',
@@ -552,7 +552,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Gids',
-        title: 'De beste golfbanen van Mallorca — eerlijke ranking van een PGA Professional',
+        title: 'De beste golfbanen van Mallorca - eerlijke ranking van een PGA Professional',
         intro:
           'Tweeëntwintig banen op het eiland. Zo zou ik ze rangschikken voor een bezoeker met beperkte tijd en hoge verwachtingen.',
         readTime: '8 min',
@@ -563,14 +563,14 @@ export const GUIDES_CONTENT = {
         badge: 'Gids',
         title: 'Is Mallorca goed voor golf? Een eerlijk antwoord van iemand die hier woont',
         intro:
-          'De ongefilterde versie — wat het eiland beter doet dan Portugal, waar het tekortschiet en voor wie het geschikt is.',
+          'De ongefilterde versie: wat het eiland beter doet dan Portugal, waar het tekortschiet en voor wie het geschikt is.',
         readTime: '5 min',
         keywords: 'Mallorca vs Portugal · Kwaliteit van banen · Alle niveaus',
       },
       {
         slug: 'best-time-play-golf-mallorca',
         badge: 'Gids',
-        title: 'De beste tijd om golf te spelen op Mallorca — maand voor maand',
+        title: 'De beste tijd om golf te spelen op Mallorca - maand voor maand',
         intro:
           'Oktober is de maand die ik zou kiezen. Dit is waarom, en wat elke maand werkelijk biedt qua weer, prijs en drukte.',
         readTime: '6 min',
@@ -581,14 +581,14 @@ export const GUIDES_CONTENT = {
         badge: 'Gids',
         title: 'Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten',
         intro:
-          'Het volledige beeld van wat een golfreis hier werkelijk kost — greenfees, verhuur, caddies en waar je kunt besparen zonder in te leveren.',
+          'Het volledige beeld van wat een golfreis hier werkelijk kost: greenfees, verhuur, caddies en waar je kunt besparen zonder in te leveren.',
         readTime: '5 min',
         keywords: '€77-220 greenfees · Verhuur · Caddies · Prijzen 2026',
       },
       {
         slug: 'golf-trip-planning-mallorca',
         badge: 'Gids',
-        title: 'Een golfreis naar Mallorca plannen — alles wat je moet weten',
+        title: 'Een golfreis naar Mallorca plannen - alles wat je moet weten',
         intro:
           'Vluchten, banen, verblijf bij de golf, hoe je je verplaatst. De praktische gids die ik had willen hebben toen ik hier aankwam.',
         readTime: '7 min',
@@ -639,7 +639,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-gual-review',
         badge: 'Banomdöme',
-        title: 'Son Gual Golf Mallorca — ärlig recension av en PGA Professional (2026)',
+        title: 'Son Gual Golf Mallorca - ärlig recension av en PGA Professional (2026)',
         intro:
           'Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen och varför Obama och Nadal alltid kommer tillbaka.',
         readTime: '7 min',
@@ -648,7 +648,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'alcanada-review',
         badge: 'Banomdöme',
-        title: 'Club de Golf Alcanada — ärlig recension av en PGA Professional (2026)',
+        title: 'Club de Golf Alcanada - ärlig recension av en PGA Professional (2026)',
         intro:
           'Banan jag tar folk till när jag vill att de ska åka hem med en historia. Fyren förändrar allt.',
         readTime: '7 min',
@@ -657,7 +657,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'santa-ponsa-1-review',
         badge: 'Banomdöme',
-        title: 'Golf Santa Ponsa 1, Mallorca — ärlig recension av en PGA Professional (2026)',
+        title: 'Golf Santa Ponsa 1, Mallorca - ärlig recension av en PGA Professional (2026)',
         intro:
           'En av Europas längsta banor, riktig European-Tour-historia och en bana som verkligen återger självförtroendet med drivern.',
         readTime: '6 min',
@@ -675,7 +675,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guide',
-        title: 'De bästa golfbanorna på Mallorca — en PGA-professionells ärliga ranking',
+        title: 'De bästa golfbanorna på Mallorca - en PGA-professionells ärliga ranking',
         intro:
           'Tjugotvå banor på ön. Så här skulle jag rangordna dem för en besökare med begränsad tid och höga krav.',
         readTime: '8 min',
@@ -686,14 +686,14 @@ export const GUIDES_CONTENT = {
         badge: 'Guide',
         title: 'Är Mallorca bra för golf? Ett ärligt svar från någon som bor här',
         intro:
-          'Den ofiltrerade versionen — vad ön gör bättre än Portugal, var den faller kort och vem den passar.',
+          'Den ofiltrerade versionen: vad ön gör bättre än Portugal, var den faller kort och vem den passar.',
         readTime: '5 min',
         keywords: 'Mallorca vs Portugal · Banornas kvalitet · Alla nivåer',
       },
       {
         slug: 'best-time-play-golf-mallorca',
         badge: 'Guide',
-        title: 'Bästa tiden att spela golf på Mallorca — månad för månad',
+        title: 'Bästa tiden att spela golf på Mallorca - månad för månad',
         intro:
           'Oktober är den månad jag skulle välja. Här är varför, och vad varje månad faktiskt levererar när det gäller väder, pris och trängsel.',
         readTime: '6 min',
@@ -704,14 +704,14 @@ export const GUIDES_CONTENT = {
         badge: 'Guide',
         title: 'Vad kostar golf på Mallorca? Greenfees, uthyrning och dolda kostnader',
         intro:
-          'Den fullständiga bilden av vad en golfresa hit faktiskt kostar — greenfees, uthyrning, caddies och var du kan spara utan att kompromissa.',
+          'Den fullständiga bilden av vad en golfresa hit faktiskt kostar: greenfees, uthyrning, caddies och var du kan spara utan att kompromissa.',
         readTime: '5 min',
         keywords: '€77-220 greenfees · Uthyrning · Caddies · Priser 2026',
       },
       {
         slug: 'golf-trip-planning-mallorca',
         badge: 'Guide',
-        title: 'Planera en golfresa till Mallorca — allt du behöver veta',
+        title: 'Planera en golfresa till Mallorca - allt du behöver veta',
         intro:
           'Flyg, banor, boende nära golfen, hur du tar dig runt. Den praktiska guiden jag önskade att det funnits när jag flyttade hit.',
         readTime: '7 min',
@@ -762,7 +762,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-gual-review',
         badge: '球场评测',
-        title: 'Son Gual 高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）',
+        title: 'Son Gual 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）',
         intro:
           '我在岛上打得最多的球场。风、果岭、收官几洞，以及奥巴马和纳达尔一再回来的原因。',
         readTime: '7分钟',
@@ -771,7 +771,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'alcanada-review',
         badge: '球场评测',
-        title: '阿尔卡纳达高尔夫球场 — PGA 职业教练诚实评测（2026）',
+        title: '阿尔卡纳达高尔夫球场 - PGA 职业教练诚实评测（2026）',
         intro:
           '我带客人来打球时，最希望他们能带着故事回家的球场。灯塔改变了一切。',
         readTime: '7分钟',
@@ -780,7 +780,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'santa-ponsa-1-review',
         badge: '球场评测',
-        title: '圣蓬萨1号高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）',
+        title: '圣蓬萨1号高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）',
         intro:
           '欧洲最长的球场之一，拥有真正的 European Tour 历史，也是真正能帮球手找回一号木信心的球场。',
         readTime: '6分钟',
@@ -798,7 +798,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-golf-courses-mallorca',
         badge: '指南',
-        title: '马略卡岛最佳高尔夫球场——PGA 职业球手诚实排名',
+        title: '马略卡岛最佳高尔夫球场 - PGA 职业球手诚实排名',
         intro:
           '岛上二十二个球场，我将如何为时间有限、标准不低的游客一一排序。',
         readTime: '8分钟',
@@ -809,14 +809,14 @@ export const GUIDES_CONTENT = {
         badge: '指南',
         title: '马略卡岛适合打高尔夫吗？一位住在这里的人给出的诚实答案',
         intro:
-          '不加滤镜的真实版本——这座岛在哪些方面胜过葡萄牙，哪些方面有所不足，以及它适合哪类球手。',
+          '不加滤镜的真实版本:这座岛在哪些方面胜过葡萄牙，哪些方面有所不足，以及它适合哪类球手。',
         readTime: '5分钟',
         keywords: '马略卡 vs 葡萄牙 · 球场品质 · 适合各水平',
       },
       {
         slug: 'best-time-play-golf-mallorca',
         badge: '指南',
-        title: '马略卡岛打高尔夫的最佳时间——按月详解',
+        title: '马略卡岛打高尔夫的最佳时间 - 按月详解',
         intro:
           '如果只能选一个月，我会选十月。原因在此，以及每个月在天气、价格和人流方面的真实表现。',
         readTime: '6分钟',
@@ -827,14 +827,14 @@ export const GUIDES_CONTENT = {
         badge: '指南',
         title: '马略卡岛打高尔夫要多少钱？果岭费、租杆费及隐性费用全解析',
         intro:
-          '一次马略卡高尔夫之旅的真实花销——果岭费、租杆、球童，以及在哪里可以省钱而不降低体验。',
+          '一次马略卡高尔夫之旅的真实花销:果岭费、租杆、球童，以及在哪里可以省钱而不降低体验。',
         readTime: '5分钟',
         keywords: '€77-220果岭费 · 租杆 · 球童 · 2026年价格',
       },
       {
         slug: 'golf-trip-planning-mallorca',
         badge: '指南',
-        title: '规划马略卡高尔夫之旅——你需要了解的一切',
+        title: '规划马略卡高尔夫之旅 - 你需要了解的一切',
         intro:
           '机票、球场、住宿选择、如何在景点之间穿梭。这是我搬来这里时希望早已存在的实用指南。',
         readTime: '7分钟',

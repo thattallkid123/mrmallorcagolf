@@ -19,8 +19,8 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'Die Platzbeschreibungen sind auf Englisch.',
     geoEyebrow: 'Wo die Plätze liegen',
     geoH2: "Mallorca hat mehr herausragendes Golf, als die meisten Besucher vermuten.",
-    geoP1: "Zweiundzwanzig Plätze — von echten European Tour Austragungsorten bis hin zu ruhigeren, weniger bekannten Schätzen. Green Fees von 20 € bis über 200 €. Ich bin ein UK PGA Advanced Professional auf der Insel und arbeite mich durch jeden Platz.",
-    geoP2: "Beste Spielzeit: Oktober–November und Februar–April. Die Insel ist ganzjährig bespielbar — im Januar, wenn Plätze in Europa geschlossen sind, sind die Fairways hier makellos.",
+    geoP1: "Zweiundzwanzig Plätze: von echten European Tour Austragungsorten bis hin zu ruhigeren, weniger bekannten Schätzen. Green Fees von 20 € bis über 200 €. Ich bin ein UK PGA Advanced Professional auf der Insel und arbeite mich durch jeden Platz.",
+    geoP2: "Beste Spielzeit: Oktober–November und Februar–April. Die Insel ist ganzjährig bespielbar: im Januar, wenn Plätze in Europa geschlossen sind, sind die Fairways hier makellos.",
     geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Südwesten', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Süden', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Osten", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Norden', courses: 'Alcanada · Golf Pollensa'}],
   },
   es: {
@@ -43,8 +43,8 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'Las descripciones de los campos están en inglés.',
     geoEyebrow: 'Dónde están los campos',
     geoH2: "Mallorca tiene más golf de calidad de lo que la mayoría de visitantes imagina.",
-    geoP1: "Veintidós campos — desde auténticos recintos del European Tour hasta joyas más tranquilas y menos conocidas. Green fees desde 20 € hasta más de 200 €. Soy un UK PGA Advanced Professional en la isla, recorriendo cada campo.",
-    geoP2: "Mejor época: octubre–noviembre y febrero–abril. La isla es jugable todo el año — en enero, cuando los campos en gran parte de Europa son injugables, los fairways aquí están impecables.",
+    geoP1: "Veintidós campos: desde auténticos recintos del European Tour hasta joyas más tranquilas y menos conocidas. Green fees desde 20 € hasta más de 200 €. Soy un UK PGA Advanced Professional en la isla, recorriendo cada campo.",
+    geoP2: "Mejor época: octubre–noviembre y febrero–abril. La isla es jugable todo el año: en enero, cuando los campos en gran parte de Europa son injugables, los fairways aquí están impecables.",
     geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Suroeste', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Sur', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Este", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Norte', courses: 'Alcanada · Golf Pollensa'}],
   },
   fr: {
@@ -67,8 +67,8 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'Les descriptions des parcours sont en anglais.',
     geoEyebrow: 'Où se trouvent les parcours',
     geoH2: "Majorque possède plus de golf de qualité que la plupart des visiteurs ne l'imaginent.",
-    geoP1: "Vingt-deux parcours — des vrais sites du Tour Européen aux joyaux plus tranquilles et moins connus. Green fees de 20 € à plus de 200 €. Je suis un UK PGA Advanced Professional basé sur l'île, parcourant chaque terrain.",
-    geoP2: "Meilleure période : octobre–novembre et février–avril. L'île est jouable toute l'année — en janvier, quand les parcours en Europe sont impraticables, les fairways ici sont impeccables.",
+    geoP1: "Vingt-deux parcours: des vrais sites du Tour Européen aux joyaux plus tranquilles et moins connus. Green fees de 20 € à plus de 200 €. Je suis un UK PGA Advanced Professional basé sur l'île, parcourant chaque terrain.",
+    geoP2: "Meilleure période : octobre–novembre et février–avril. L'île est jouable toute l'année: en janvier, quand les parcours en Europe sont impraticables, les fairways ici sont impeccables.",
     geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Sud-ouest', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Sud', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Est", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Nord', courses: 'Alcanada · Golf Pollensa'}],
   },
   zh: {
@@ -91,8 +91,8 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: '球场描述内容为英文。',
     geoEyebrow: '球场地理分布',
     geoH2: "马略卡岛拥有比大多数游客想象的更出色的高尔夫资源。",
-    geoP1: "共22个球场——从真正的欧巡赛场地到安静少人知晓的宝藏球场。果岭费从20欧元到200欧元以上不等。我是驻岛的英国PGA高级职业教练，正在逐一打遍岛上所有球场。",
-    geoP2: "最佳打球季节：10月至11月和2月至4月。全年均可打球——1月份，当欧洲大部分球场无法开放时，这里的球道依然完美无瑕。",
+    geoP1: "共22个球场:从真正的欧巡赛场地到安静少人知晓的宝藏球场。果岭费从20欧元到200欧元以上不等。我是驻岛的英国PGA高级职业教练，正在逐一打遍岛上所有球场。",
+    geoP2: "最佳打球季节：10月至11月和2月至4月。全年均可打球:1月份，当欧洲大部分球场无法开放时，这里的球道依然完美无瑕。",
     geoRegions: [{region: '帕尔马', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: '西南部', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: '南部', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "东部", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: '北部', courses: 'Alcanada · Golf Pollensa'}],
   },
   nl: {
@@ -115,8 +115,8 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'De baanbeschrijvingen zijn in het Engels.',
     geoEyebrow: 'Waar de banen liggen',
     geoH2: "Mallorca heeft meer uitstekende golf dan de meeste bezoekers verwachten.",
-    geoP1: "Tweeëntwintig banen — van echte European Tour-locaties tot rustiger, minder bekende parels. Green fees van €20 tot meer dan €200. Ik ben een UK PGA Advanced Professional op het eiland en werk me door elke baan.",
-    geoP2: "Beste speeltijd: oktober–november en februari–april. Het eiland is het hele jaar speelbaar — in januari, wanneer banen in Europa gesloten zijn, zijn de fairways hier vlekkeloos.",
+    geoP1: "Tweeëntwintig banen: van echte European Tour-locaties tot rustiger, minder bekende parels. Green fees van €20 tot meer dan €200. Ik ben een UK PGA Advanced Professional op het eiland en werk me door elke baan.",
+    geoP2: "Beste speeltijd: oktober–november en februari–april. Het eiland is het hele jaar speelbaar: in januari, wanneer banen in Europa gesloten zijn, zijn de fairways hier vlekkeloos.",
     geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Zuidwest', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Zuid', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Oost", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Noord', courses: 'Alcanada · Golf Pollensa'}],
   },
   sv: {
@@ -139,8 +139,8 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'Banebeskrivningarna är på engelska.',
     geoEyebrow: 'Var banorna ligger',
     geoH2: "Mallorca har mer utmärkt golf än de flesta besökare inser.",
-    geoP1: "Tjugotvå banor — från riktiga European Tour-arenor till lugnare, mindre kända pärlor. Green fees från €20 till över €200. Jag är en UK PGA Advanced Professional på ön och spelar mig igenom varje bana.",
-    geoP2: "Bästa speltid: oktober–november och februari–april. Ön är spelbar året runt — i januari, när banor i Europa är obrukbara, är fairwaysarna här immakulate.",
+    geoP1: "Tjugotvå banor: från riktiga European Tour-arenor till lugnare, mindre kända pärlor. Green fees från €20 till över €200. Jag är en UK PGA Advanced Professional på ön och spelar mig igenom varje bana.",
+    geoP2: "Bästa speltid: oktober–november och februari–april. Ön är spelbar året runt: i januari, när banor i Europa är obrukbara, är fairwaysarna här immakulate.",
     geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Sydväst', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Söder', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Öst", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Norr', courses: 'Alcanada · Golf Pollensa'}],
   },
 }
@@ -241,7 +241,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
   de: {
     'Golf Son Gual': {
       location: 'Palma · 11 km vom Stadtzentrum',
-      text: 'Thomas Himmels Design von 2007 hat sein eigenes Wind-Ökosystem — die erhöhte Lage und der Baumbestand sorgen dafür, dass sich der Wind an jedem Loch anders verhält. Die Greens sind schnell und erhöht; wichtiger als der Schwung ist, wo der Ball nicht landet. Der Abschluss von Loch 15 bis 18 gehört zu den besten vier Löchern im europäischen Golf. Rafa Nadal hat erklärt, dies sei sein Lieblingsplatz auf der Insel.',
+      text: 'Thomas Himmels Design von 2007 hat sein eigenes Wind-Ökosystem: die erhöhte Lage und der Baumbestand sorgen dafür, dass sich der Wind an jedem Loch anders verhält. Die Greens sind schnell und erhöht; wichtiger als der Schwung ist, wo der Ball nicht landet. Der Abschluss von Loch 15 bis 18 gehört zu den besten vier Löchern im europäischen Golf. Rafa Nadal hat erklärt, dies sei sein Lieblingsplatz auf der Insel.',
       note: '„Der Wind auf 16 ist eine andere Herausforderung als der Wind auf 7. Das macht den Platz so wiederholbar."',
       footer: 'Rafas Favorit · Pflichtrunde',
     },
@@ -252,17 +252,17 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Son Muntaner': {
       location: 'Son Vida · Palma',
-      text: 'Ausgezeichnet als Bester Golfplatz Spaniens bei den World Golf Awards 2025. Der ursprüngliche Platz des Castillo Hotel Son Vida, neu gestaltet von Severiano Ballesteros. Ausblicke über die Bucht von Palma von den höheren Löchern. Ein tausend Jahre alter Olivenbaum steht an Loch 15 — im Spiel, nicht nur zur Dekoration. Gastgeber des Mallorca Golf Open auf der DP World Tour.',
+      text: 'Ausgezeichnet als Bester Golfplatz Spaniens bei den World Golf Awards 2025. Der ursprüngliche Platz des Castillo Hotel Son Vida, neu gestaltet von Severiano Ballesteros. Ausblicke über die Bucht von Palma von den höheren Löchern. Ein tausend Jahre alter Olivenbaum steht an Loch 15: im Spiel, nicht nur zur Dekoration. Gastgeber des Mallorca Golf Open auf der DP World Tour.',
       footer: 'Bester in Spanien 2025 · DP World Tour',
     },
     'Golf Son Quint': {
       location: 'Arabella · Son Vida, Palma',
-      text: 'Der zugänglichste der Arabella-Plätze. Lange, offene Fairways und vier verschiedene Abschlagpositionen machen ihn wirklich für jedes Niveau geeignet. Von Loch 8, dem höchsten Punkt des Platzes, schlägt man direkt in Richtung Palma-Kathedrale ab. Tiger Woods spielte hier im Juli 2022 mit seinem Sohn Charlie. Die Steinmauern sind im Spiel — nicht nur Dekoration.',
+      text: 'Der zugänglichste der Arabella-Plätze. Lange, offene Fairways und vier verschiedene Abschlagpositionen machen ihn wirklich für jedes Niveau geeignet. Von Loch 8, dem höchsten Punkt des Platzes, schlägt man direkt in Richtung Palma-Kathedrale ab. Tiger Woods spielte hier im Juli 2022 mit seinem Sohn Charlie. Die Steinmauern sind im Spiel: nicht nur Dekoration.',
       footer: 'Ideal für Anfänger · Tiger Woods spielte hier',
     },
     'T Golf Palma Puntiró': {
       location: 'Palma · 10 km vom Stadtzentrum',
-      text: 'Der einzige von Jack Nicklaus entworfene Platz auf Mallorca, eröffnet 2006 und 2022 vollständig renoviert. Nicklaus entwarf ihn, um dem vorhandenen Gelände zu folgen — keine künstlich geglätteten Fairways. Einheimische Kiefern, wilde Oliven und Johannisbrotbäume bilden das Rough durchgehend, ohne sichtbare Gebäude von einem der Löcher.',
+      text: 'Der einzige von Jack Nicklaus entworfene Platz auf Mallorca, eröffnet 2006 und 2022 vollständig renoviert. Nicklaus entwarf ihn, um dem vorhandenen Gelände zu folgen: keine künstlich geglätteten Fairways. Einheimische Kiefern, wilde Oliven und Johannisbrotbäume bilden das Rough durchgehend, ohne sichtbare Gebäude von einem der Löcher.',
       footer: 'Einziges Nicklaus-Design auf der Insel',
     },
     'Palma Pitch & Putt': {
@@ -272,43 +272,43 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Son Termes': {
       location: 'Bunyola · 10 km von Palma',
-      text: 'Wahrscheinlich der Platz auf der Insel, der sich am stärksten in seine Umgebung einfügt — er liegt in einem Tal der Tramuntana, wobei die Berge an jedem Loch den Hintergrund bilden. Kurz mit Par 70 und 5.285 m, aber das Gelände kompensiert mit ständigen Höhenunterschieden und engen Fairways — Buggy empfohlen. Das Restaurant überblickt das 18. Grün und die Bucht von Palma.',
+      text: 'Wahrscheinlich der Platz auf der Insel, der sich am stärksten in seine Umgebung einfügt: er liegt in einem Tal der Tramuntana, wobei die Berge an jedem Loch den Hintergrund bilden. Kurz mit Par 70 und 5.285 m, aber das Gelände kompensiert mit ständigen Höhenunterschieden und engen Fairways. Buggy empfohlen. Das Restaurant überblickt das 18. Grün und die Bucht von Palma.',
       footer: 'Tramuntana-Tal · 10 Min. von Palma',
     },
     'Golf Santa Ponsa 1': {
       location: 'Santa Ponsa · 20 km von Palma',
-      text: 'Der einzige öffentliche Platz der Santa-Ponsa-Gruppe mit echtem European-Tour-Prestige — er war Gastgeber des DP World Tour Mallorca Golf Open 2021. Einer der längsten Plätze der Insel; Loch 10 mit 590 m ist eines der längsten Par-5-Löcher Europas. Mehrere teilweise blinde Abschläge und Wasserhindernisse. Löcher 5, 6 und 7 bieten einige der schönsten Tramuntana-Bergblicke der Insel.',
+      text: 'Der einzige öffentliche Platz der Santa-Ponsa-Gruppe mit echtem European-Tour-Prestige: er war Gastgeber des DP World Tour Mallorca Golf Open 2021. Einer der längsten Plätze der Insel; Loch 10 mit 590 m ist eines der längsten Par-5-Löcher Europas. Mehrere teilweise blinde Abschläge und Wasserhindernisse. Löcher 5, 6 und 7 bieten einige der schönsten Tramuntana-Bergblicke der Insel.',
       footer: 'Öffentlicher Zugang · DP World Tour Austragungsort',
     },
     'Golf Santa Ponsa 2': {
       location: 'Santa Ponsa · 20 km von Palma',
-      text: 'Nur für Mitglieder und meist ruhig. Viele Abschläge machen den Driver zur schlechten Wahl — ein Hybrid zur Positionskontrolle ist oft die klügere Entscheidung. Die Baumreihen sind dicht und ein Ball an der falschen Stelle bedeutet meist Rückkehr per Chip. Das 18. Loch: ein Par 3 mit einem Grün in Form der Insel Mallorca selbst — ein Detail, das man kennen sollte.',
+      text: 'Nur für Mitglieder und meist ruhig. Viele Abschläge machen den Driver zur schlechten Wahl: ein Hybrid zur Positionskontrolle ist oft die klügere Entscheidung. Die Baumreihen sind dicht und ein Ball an der falschen Stelle bedeutet meist Rückkehr per Chip. Das 18. Loch: ein Par 3 mit einem Grün in Form der Insel Mallorca selbst: ein Detail, das man kennen sollte.',
       note: '„Das 18. Grün ist wie Mallorca selbst geformt. Ein Detail, das man kennen sollte, bevor man dort ankommt."',
       footer: 'Zugang für Kunden arrangierbar',
     },
     'Golf Santa Ponsa 3': {
       location: 'Santa Ponsa · 20 km von Palma',
-      text: 'Neun Löcher durch eine Wohnsiedlung. Die meisten Löcher sind kurz — ideal für Anfänger oder für jeden, der das Kurzspiel üben möchte, ohne eine volle Runde zu spielen. Das zweite Loch ist mein Favorit: trotz der kurzen Distanz ist ein präziser Abschlag erforderlich.',
+      text: 'Neun Löcher durch eine Wohnsiedlung. Die meisten Löcher sind kurz: ideal für Anfänger oder für jeden, der das Kurzspiel üben möchte, ohne eine volle Runde zu spielen. Das zweite Loch ist mein Favorit: trotz der kurzen Distanz ist ein präziser Abschlag erforderlich.',
       footer: 'Gut für das Kurzspiel · Zugang arrangierbar',
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat · 7 km von Palma',
-      text: 'Sieben Kilometer von Palma in einem bewaldeten Tal — wirklich ruhig für einen Platz so nah an der Stadt. Blick auf die Bucht von Palma, die Insel Cabrera und das alte Schloss Bendinat. Hinweis: Das Hauptclubhaus wird derzeit renoviert, Wiedereröffnung geplant für Mai/Juni 2026. Begrenzte Besucherstartkarten pro Tag — im Voraus buchen.',
+      text: 'Sieben Kilometer von Palma in einem bewaldeten Tal: wirklich ruhig für einen Platz so nah an der Stadt. Blick auf die Bucht von Palma, die Insel Cabrera und das alte Schloss Bendinat. Hinweis: Das Hauptclubhaus wird derzeit renoviert, Wiedereröffnung geplant für Mai/Juni 2026. Begrenzte Besucherstartkarten pro Tag: im Voraus buchen.',
       footer: 'Clubhaus-Renovierung bis Mai/Juni 2026',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià · 12 km von Palma',
-      text: 'Ursprünglich von John Harris 1978 entworfen und nach einer Investition von 10 Millionen Euro vollständig neu gebaut — neuer Platz, neues Clubhaus, ein völlig anderes Angebot. Fünfzehn Seen, offene Fairways, große wellige Greens. Das Meer auf einer Seite und die Tramuntana auf der anderen. Gastgeber der Mallorca Open.',
+      text: 'Ursprünglich von John Harris 1978 entworfen und nach einer Investition von 10 Millionen Euro vollständig neu gebaut: neuer Platz, neues Clubhaus, ein völlig anderes Angebot. Fünfzehn Seen, offene Fairways, große wellige Greens. Das Meer auf einer Seite und die Tramuntana auf der anderen. Gastgeber der Mallorca Open.',
       footer: 'Gastgeber der Mallorca Open',
     },
     'Golf de Andratx': {
       location: 'Camp de Mar · 40 km von Palma',
-      text: 'Das 6. Loch ist das längste Par 5 Spaniens mit 609 m. In die Hügel über Camp de Mar ohne Kompromisse gebaut. Extra Bälle mitbringen und kein Ego — das Rough ist echt und die Fairways eng. Nicht für Anfänger ohne Handicap-Ausweis geeignet. Erlebnis, Aussichten und Schwierigkeit machen es zu einer der denkwürdigsten Runden der Insel.',
+      text: 'Das 6. Loch ist das längste Par 5 Spaniens mit 609 m. In die Hügel über Camp de Mar ohne Kompromisse gebaut. Extra Bälle mitbringen und kein Ego: das Rough ist echt und die Fairways eng. Nicht für Anfänger ohne Handicap-Ausweis geeignet. Erlebnis, Aussichten und Schwierigkeit machen es zu einer der denkwürdigsten Runden der Insel.',
       footer: 'Schwierigster Platz der Insel',
     },
     'Golf Maioris': {
       location: 'Llucmajor · 20 km von Palma',
-      text: 'Ein interessanter Platz, da Vorder- und Rückneun sich wie zwei verschiedene Designphilosophien anfühlen — die erste Neun schottisch und wellig, die zweite amerikanischer und flacher. Fünfzehn Minuten vom Flughafen und weniger überfüllt als die Plätze näher an Palma. Hat eine der wenigen öffentlichen Grasabschlaganlagen der Insel.',
+      text: 'Ein interessanter Platz, da Vorder- und Rückneun sich wie zwei verschiedene Designphilosophien anfühlen: die erste Neun schottisch und wellig, die zweite amerikanischer und flacher. Fünfzehn Minuten vom Flughafen und weniger überfüllt als die Plätze näher an Palma. Hat eine der wenigen öffentlichen Grasabschlaganlagen der Insel.',
       footer: '15 Min. vom Flughafen · Öffentliche Grasabschlaganlage',
     },
     'Golf Son Antem East': {
@@ -323,12 +323,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Capdepera Golf': {
       location: 'Artà · 65 km von Palma',
-      text: 'Dan Maples entwarf dies, um der vorhandenen Landschaft zu folgen. Die erste Hälfte führt durch ein weites Tal — offen, relativ sanft. Die zweite Neun erklimmt die Levant-Hügel und wird zu einem viel technischeren Test. Loch 15, oben in den Bergen mit Blick über das ganze Tal zur Küste, wurde von Mallorca Magazin als bestes Loch der Insel ausgewählt.',
+      text: 'Dan Maples entwarf dies, um der vorhandenen Landschaft zu folgen. Die erste Hälfte führt durch ein weites Tal: offen, relativ sanft. Die zweite Neun erklimmt die Levant-Hügel und wird zu einem viel technischeren Test. Loch 15, oben in den Bergen mit Blick über das ganze Tal zur Küste, wurde von Mallorca Magazin als bestes Loch der Insel ausgewählt.',
       footer: 'Am besten kombiniert mit Canyamel',
     },
     'Canyamel Golf': {
       location: 'Capdepera · 65 km von Palma',
-      text: 'Jedes der ersten neun Löcher hat seinen eigenen Charakter. Loch 4 hat an klaren Tagen Blick auf Menorca. Loch 9 hat ein traditionelles Steinhaus in der Mitte des Fairways — ein Hindernis, das nur auf Mallorca existiert. Loch 18 endet mit einer dreifachen Wellenbewegung auf dem Grün, die von der Clubhaustarrasse aus sichtbar ist.',
+      text: 'Jedes der ersten neun Löcher hat seinen eigenen Charakter. Loch 4 hat an klaren Tagen Blick auf Menorca. Loch 9 hat ein traditionelles Steinhaus in der Mitte des Fairways: ein Hindernis, das nur auf Mallorca existiert. Loch 18 endet mit einer dreifachen Wellenbewegung auf dem Grün, die von der Clubhaustarrasse aus sichtbar ist.',
       footer: 'Blick auf Menorca an klaren Tagen',
     },
     'Pula Golf': {
@@ -343,21 +343,21 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Club de Golf Alcanada': {
       location: 'Port d\'Alcúdia · 55 km von Palma',
-      text: 'Mein zweiter Ankerplatz und wohl der malerischste Mallorcas. Design von Robert Trent Jones Jr. Der Leuchtturm von Alcanada, von 16 der 18 Löcher sichtbar, ist eines der meistfotografierten Golffahr in Europa. 58 Bunker sind strategisch über das Layout verteilt — sie erfordern auf jedem Anspiel Aufmerksamkeit.',
-      text2: 'Der Platz ist Gastgeber des Rolex Challenge Tour Grand Final, der im Oktober 2026 zum sechsten Mal zurückkehrt. Die Greens sind stark gewellt und extrem schnell. Die Restaurant-Terrasse nach der Runde ist einer der schönsten Orte der Insel. 50 Minuten von Palma einplanen — es lohnt sich.',
+      text: 'Mein zweiter Ankerplatz und wohl der malerischste Mallorcas. Design von Robert Trent Jones Jr. Der Leuchtturm von Alcanada, von 16 der 18 Löcher sichtbar, ist eines der meistfotografierten Golffahr in Europa. 58 Bunker sind strategisch über das Layout verteilt: sie erfordern auf jedem Anspiel Aufmerksamkeit.',
+      text2: 'Der Platz ist Gastgeber des Rolex Challenge Tour Grand Final, der im Oktober 2026 zum sechsten Mal zurückkehrt. Die Greens sind stark gewellt und extrem schnell. Die Restaurant-Terrasse nach der Runde ist einer der schönsten Orte der Insel. 50 Minuten von Palma einplanen: es lohnt sich.',
       note: '„Eine der schönsten Runden, die man irgendwo in Europa spielen kann. Der Leuchtturm auf 17 ist unvergesslich."',
       footer: 'Rolex Challenge Tour Grand Final Okt. 2026 · 50 Min. von Palma',
     },
     'Golf Pollensa': {
       location: 'Pollença · 60 km von Palma',
-      text: 'Neun Löcher am Eingang zur Stadt Pollença, in die Hügel integriert mit Blick auf die Tramuntana und die Buchten von Pollença und Alcúdia. Von José Gancedo 1986 entworfen. Eine Runde dauert etwa 90 Minuten — ein einfaches Aufwärmen oder eine gute Option an einem Tag, an dem man Golf ohne vollen Einsatz möchte.',
+      text: 'Neun Löcher am Eingang zur Stadt Pollença, in die Hügel integriert mit Blick auf die Tramuntana und die Buchten von Pollença und Alcúdia. Von José Gancedo 1986 entworfen. Eine Runde dauert etwa 90 Minuten: ein einfaches Aufwärmen oder eine gute Option an einem Tag, an dem man Golf ohne vollen Einsatz möchte.',
       footer: 'Schnelle Runde · 90 Minuten',
     },
   },
   es: {
     'Golf Son Gual': {
       location: 'Palma · 11 km del centro',
-      text: 'El diseño de Thomas Himmel de 2007 tiene su propio ecosistema de viento — su posición elevada y la cobertura arbórea hacen que el viento se comporte de manera diferente en cada hoyo. Los greens son rápidos y elevados; donde fallas importa más que cómo golpeas. El tramo final — hoyos 15 a 18 — está entre los cuatro mejores hoyos consecutivos del golf europeo. Rafa Nadal ha dicho que es su campo favorito en la isla.',
+      text: 'El diseño de Thomas Himmel de 2007 tiene su propio ecosistema de viento: su posición elevada y la cobertura arbórea hacen que el viento se comporte de manera diferente en cada hoyo. Los greens son rápidos y elevados; donde fallas importa más que cómo golpeas. El tramo final (hoyos 15 a 18) está entre los cuatro mejores hoyos consecutivos del golf europeo. Rafa Nadal ha dicho que es su campo favorito en la isla.',
       note: '"El viento en el 16 es un desafío diferente al del 7. Eso es lo que hace que el campo sea tan rejugable."',
       footer: 'Favorito de Rafa · Campo obligatorio',
     },
@@ -368,12 +368,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Son Muntaner': {
       location: 'Son Vida · Palma',
-      text: 'Elegido Mejor Campo de Golf de España en los World Golf Awards 2025. El campo original del Castillo Hotel Son Vida, rediseñado por Severiano Ballesteros. Vistas sobre la Bahía de Palma desde los hoyos más altos. Un olivo milenario está en el hoyo 15 — en juego, no solo de decoración. Acoge el Mallorca Golf Open en el DP World Tour.',
+      text: 'Elegido Mejor Campo de Golf de España en los World Golf Awards 2025. El campo original del Castillo Hotel Son Vida, rediseñado por Severiano Ballesteros. Vistas sobre la Bahía de Palma desde los hoyos más altos. Un olivo milenario está en el hoyo 15: en juego, no solo de decoración. Acoge el Mallorca Golf Open en el DP World Tour.',
       footer: 'El mejor de España 2025 · DP World Tour',
     },
     'Golf Son Quint': {
       location: 'Arabella · Son Vida, Palma',
-      text: 'El más accesible de los campos de Arabella. Calles largas y abiertas y cuatro posiciones de salida diferentes lo hacen genuinamente apto para cualquier nivel. Desde el hoyo 8, el punto más alto del campo, se golpea directamente hacia la Catedral de Palma. Tiger Woods jugó aquí con su hijo Charlie en julio de 2022. Los muros de piedra están en juego — no solo de decoración.',
+      text: 'El más accesible de los campos de Arabella. Calles largas y abiertas y cuatro posiciones de salida diferentes lo hacen genuinamente apto para cualquier nivel. Desde el hoyo 8, el punto más alto del campo, se golpea directamente hacia la Catedral de Palma. Tiger Woods jugó aquí con su hijo Charlie en julio de 2022. Los muros de piedra están en juego: no solo de decoración.',
       footer: 'Ideal para principiantes · Tiger Woods jugó aquí',
     },
     'T Golf Palma Puntiró': {
@@ -388,43 +388,43 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Son Termes': {
       location: 'Bunyola · 10 km de Palma',
-      text: 'Probablemente el campo de la isla que más integrado está con su entorno — se asienta en un valle de la Tramuntana con las montañas formando un telón de fondo en cada hoyo. Corto con par 70 y 5.285 m, pero el terreno compensa con constantes cambios de elevación y calles estrechas — se recomienda buggy. El restaurante domina el green 18 y la Bahía de Palma.',
+      text: 'Probablemente el campo de la isla que más integrado está con su entorno: se asienta en un valle de la Tramuntana con las montañas formando un telón de fondo en cada hoyo. Corto con par 70 y 5.285 m, pero el terreno compensa con constantes cambios de elevación y calles estrechas: se recomienda buggy. El restaurante domina el green 18 y la Bahía de Palma.',
       footer: 'Valle de la Tramuntana · 10 min de Palma',
     },
     'Golf Santa Ponsa 1': {
       location: 'Santa Ponsa · 20 km de Palma',
-      text: 'El único campo público del grupo Santa Ponsa con auténtico pedigrí del European Tour — fue sede del Mallorca Golf Open del DP World Tour 2021. Uno de los campos más largos de la isla; el hoyo 10 con 590 m es uno de los par 5 más largos de Europa. Varios golpes de salida parcialmente ciegos y obstáculos de agua. Los hoyos 5, 6 y 7 ofrecen algunas de las mejores vistas de la Serra de Tramuntana.',
+      text: 'El único campo público del grupo Santa Ponsa con auténtico pedigrí del European Tour: fue sede del Mallorca Golf Open del DP World Tour 2021. Uno de los campos más largos de la isla; el hoyo 10 con 590 m es uno de los par 5 más largos de Europa. Varios golpes de salida parcialmente ciegos y obstáculos de agua. Los hoyos 5, 6 y 7 ofrecen algunas de las mejores vistas de la Serra de Tramuntana.',
       footer: 'Acceso público · Sede del DP World Tour',
     },
     'Golf Santa Ponsa 2': {
       location: 'Santa Ponsa · 20 km de Palma',
-      text: 'Solo para socios y generalmente tranquilo. Muchos golpes de salida hacen que el driver sea una mala elección — un hybrid para controlar la posición suele ser la decisión más inteligente. El alineamiento de árboles es denso y una bola en el lugar equivocado suele significar volver con un chip. El hoyo 18: un par 3 con un green con la forma de la isla de Mallorca — un detalle que conviene saber antes de llegar.',
+      text: 'Solo para socios y generalmente tranquilo. Muchos golpes de salida hacen que el driver sea una mala elección: un hybrid para controlar la posición suele ser la decisión más inteligente. El alineamiento de árboles es denso y una bola en el lugar equivocado suele significar volver con un chip. El hoyo 18: un par 3 con un green con la forma de la isla de Mallorca: un detalle que conviene saber antes de llegar.',
       note: '"El green del 18 tiene la forma de Mallorca. Un detalle que conviene saber antes de llegar."',
       footer: 'Acceso organizable para clientes',
     },
     'Golf Santa Ponsa 3': {
       location: 'Santa Ponsa · 20 km de Palma',
-      text: 'Nueve hoyos por una comunidad residencial. La mayoría de los hoyos son cortos — ideal para principiantes o para quien quiera trabajar el juego corto sin comprometerse a una ronda completa. El segundo hoyo es mi favorito: requiere un golpe de salida preciso a pesar de la corta distancia.',
+      text: 'Nueve hoyos por una comunidad residencial. La mayoría de los hoyos son cortos: ideal para principiantes o para quien quiera trabajar el juego corto sin comprometerse a una ronda completa. El segundo hoyo es mi favorito: requiere un golpe de salida preciso a pesar de la corta distancia.',
       footer: 'Bueno para el juego corto · Acceso organizable',
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat · 7 km de Palma',
-      text: 'Siete kilómetros de Palma en un valle arbolado — genuinamente tranquilo para un campo tan cercano a la ciudad. Vistas sobre la Bahía de Palma, la isla de Cabrera y el antiguo Castillo de Bendinat. Nota: el clubhouse principal está en obras, con reapertura prevista para mayo/junio 2026. Tarjetas de visitante limitadas por día — reservar con antelación.',
+      text: 'Siete kilómetros de Palma en un valle arbolado: genuinamente tranquilo para un campo tan cercano a la ciudad. Vistas sobre la Bahía de Palma, la isla de Cabrera y el antiguo Castillo de Bendinat. Nota: el clubhouse principal está en obras, con reapertura prevista para mayo/junio 2026. Tarjetas de visitante limitadas por día: reservar con antelación.',
       footer: 'Renovación del clubhouse hasta mayo/junio 2026',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià · 12 km de Palma',
-      text: 'Diseñado originalmente por John Harris en 1978 y completamente reconstruido tras una inversión de 10 millones de euros — nuevo campo, nuevo clubhouse, una propuesta completamente diferente. Quince lagos, calles abiertas que invitan al driver, grandes greens ondulados. El mar a un lado y la Tramuntana al otro. Ha sido sede del Mallorca Open.',
+      text: 'Diseñado originalmente por John Harris en 1978 y completamente reconstruido tras una inversión de 10 millones de euros: nuevo campo, nuevo clubhouse, una propuesta completamente diferente. Quince lagos, calles abiertas que invitan al driver, grandes greens ondulados. El mar a un lado y la Tramuntana al otro. Ha sido sede del Mallorca Open.',
       footer: 'Sede del Mallorca Open',
     },
     'Golf de Andratx': {
       location: 'Camp de Mar · 40 km de Palma',
-      text: 'El hoyo 6 es el par 5 más largo de España con 609 metros. Construido en las colinas sobre Camp de Mar sin compromisos. Traer pelotas extra y humildad — el rough es real y las calles estrechas. No apto para principiantes sin handicap. La experiencia, las vistas y la dificultad lo convierten en una de las rondas más memorables de la isla.',
+      text: 'El hoyo 6 es el par 5 más largo de España con 609 metros. Construido en las colinas sobre Camp de Mar sin compromisos. Traer pelotas extra y humildad: el rough es real y las calles estrechas. No apto para principiantes sin handicap. La experiencia, las vistas y la dificultad lo convierten en una de las rondas más memorables de la isla.',
       footer: 'El campo más difícil de la isla',
     },
     'Golf Maioris': {
       location: 'Llucmajor · 20 km de Palma',
-      text: 'Un campo interesante porque los nueve primeros y los nueve últimos hoyos parecen dos filosofías de diseño únicas — los primeros nueve escoceses y ondulados, los segundos más americanos y planos. A quince minutos del aeropuerto y menos concurrido que los campos más cercanos a Palma. Tiene uno de los pocos campos de prácticas de hierba pública de la isla.',
+      text: 'Un campo interesante porque los nueve primeros y los nueve últimos hoyos parecen dos filosofías de diseño únicas: los primeros nueve escoceses y ondulados, los segundos más americanos y planos. A quince minutos del aeropuerto y menos concurrido que los campos más cercanos a Palma. Tiene uno de los pocos campos de prácticas de hierba pública de la isla.',
       footer: '15 min del aeropuerto · Campo de prácticas de hierba',
     },
     'Golf Son Antem East': {
@@ -439,12 +439,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Capdepera Golf': {
       location: 'Artà · 65 km de Palma',
-      text: 'Dan Maples lo diseñó para seguir el paisaje existente. La primera mitad discurre por un amplio valle — abierto, relativamente suave. Los nueve traseros ascienden a las colinas del Llevant y se convierten en un test mucho más técnico. El hoyo 15, en lo alto de las montañas con vistas sobre todo el valle hasta la costa, fue elegido como el mejor hoyo de la isla por Mallorca Magazin.',
+      text: 'Dan Maples lo diseñó para seguir el paisaje existente. La primera mitad discurre por un amplio valle: abierto, relativamente suave. Los nueve traseros ascienden a las colinas del Llevant y se convierten en un test mucho más técnico. El hoyo 15, en lo alto de las montañas con vistas sobre todo el valle hasta la costa, fue elegido como el mejor hoyo de la isla por Mallorca Magazin.',
       footer: 'Ideal combinado con Canyamel',
     },
     'Canyamel Golf': {
       location: 'Capdepera · 65 km de Palma',
-      text: 'Cada uno de los primeros nueve hoyos tiene su propio carácter. El hoyo 4 tiene vistas a Menorca en días despejados. El hoyo 9 tiene una caseta de piedra tradicional en medio de la calle — un obstáculo único en Mallorca. El hoyo 18 termina con una ondulación triple en el green visible desde la terraza del clubhouse.',
+      text: 'Cada uno de los primeros nueve hoyos tiene su propio carácter. El hoyo 4 tiene vistas a Menorca en días despejados. El hoyo 9 tiene una caseta de piedra tradicional en medio de la calle: un obstáculo único en Mallorca. El hoyo 18 termina con una ondulación triple en el green visible desde la terraza del clubhouse.',
       footer: 'Vistas a Menorca en días despejados',
     },
     'Pula Golf': {
@@ -459,21 +459,21 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Club de Golf Alcanada': {
       location: 'Port d\'Alcúdia · 55 km de Palma',
-      text: 'Mi segundo campo ancla y probablemente el más pintoresco de Mallorca. Diseño de Robert Trent Jones Jr. El faro de Alcanada, visible desde 16 de los 18 hoyos, es uno de los hitos de golf más fotografiados de Europa. Cincuenta y ocho búnkeres están distribuidos estratégicamente por el trazado — exigen atención en cada aproximación.',
-      text2: 'El campo acoge el Rolex Challenge Tour Grand Final, que regresa por sexta vez en octubre de 2026. Los greens son muy ondulados y extremadamente rápidos. La terraza del restaurante tras la ronda es uno de los mejores lugares de la isla. Calcular 50 minutos desde Palma — merece cada minuto.',
+      text: 'Mi segundo campo ancla y probablemente el más pintoresco de Mallorca. Diseño de Robert Trent Jones Jr. El faro de Alcanada, visible desde 16 de los 18 hoyos, es uno de los hitos de golf más fotografiados de Europa. Cincuenta y ocho búnkeres están distribuidos estratégicamente por el trazado: exigen atención en cada aproximación.',
+      text2: 'El campo acoge el Rolex Challenge Tour Grand Final, que regresa por sexta vez en octubre de 2026. Los greens son muy ondulados y extremadamente rápidos. La terraza del restaurante tras la ronda es uno de los mejores lugares de la isla. Calcular 50 minutos desde Palma: merece cada minuto.',
       note: '"Una de las rondas más hermosas que se pueden jugar en cualquier lugar de Europa. El faro en el 17 es inolvidable."',
       footer: 'Rolex Challenge Tour Grand Final Oct. 2026 · 50 min de Palma',
     },
     'Golf Pollensa': {
       location: 'Pollença · 60 km de Palma',
-      text: 'Nueve hoyos a la entrada de la ciudad de Pollença, integrados en la ladera con vistas a la Tramuntana y a las bahías de Pollença y Alcúdia. Diseñado por José Gancedo en 1986. Una ronda dura unos 90 minutos — un calentamiento fácil o una buena opción para un día en que se quiere golf sin compromiso total.',
+      text: 'Nueve hoyos a la entrada de la ciudad de Pollença, integrados en la ladera con vistas a la Tramuntana y a las bahías de Pollença y Alcúdia. Diseñado por José Gancedo en 1986. Una ronda dura unos 90 minutos: un calentamiento fácil o una buena opción para un día en que se quiere golf sin compromiso total.',
       footer: 'Ronda rápida · 90 minutos',
     },
   },
   fr: {
     'Golf Son Gual': {
       location: 'Palma · 11 km du centre-ville',
-      text: 'Le design de Thomas Himmel en 2007 possède son propre écosystème de vent — sa position élevée et le couvert arboré font que le vent se comporte différemment sur chaque trou. Les greens sont rapides et surélevés ; où vous ratez compte plus que comment vous frappez. Le final — trous 15 à 18 — figure parmi les quatre meilleurs trous consécutifs du golf européen. Rafa Nadal a dit que c\'est son parcours préféré sur l\'île.',
+      text: 'Le design de Thomas Himmel en 2007 possède son propre écosystème de vent: sa position élevée et le couvert arboré font que le vent se comporte différemment sur chaque trou. Les greens sont rapides et surélevés ; où vous ratez compte plus que comment vous frappez. Le final (trous 15 à 18) figure parmi les quatre meilleurs trous consécutifs du golf européen. Rafa Nadal a dit que c\'est son parcours préféré sur l\'île.',
       note: '"Le vent sur le 16 est un défi différent du vent sur le 7. C\'est ce qui rend le parcours si rejouable."',
       footer: 'Favori de Rafa · Incontournable',
     },
@@ -484,12 +484,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Son Muntaner': {
       location: 'Son Vida · Palma',
-      text: 'Élu Meilleur Parcours de Golf d\'Espagne aux World Golf Awards 2025. Le parcours original du domaine du Castillo Hotel Son Vida, redessiné par Severiano Ballesteros. Vues sur la Baie de Palma depuis les trous les plus élevés. Un olivier millénaire se trouve sur le 15 — en jeu, pas seulement décoratif. Accueille le Mallorca Golf Open sur le DP World Tour.',
+      text: 'Élu Meilleur Parcours de Golf d\'Espagne aux World Golf Awards 2025. Le parcours original du domaine du Castillo Hotel Son Vida, redessiné par Severiano Ballesteros. Vues sur la Baie de Palma depuis les trous les plus élevés. Un olivier millénaire se trouve sur le 15: en jeu, pas seulement décoratif. Accueille le Mallorca Golf Open sur le DP World Tour.',
       footer: 'Meilleur en Espagne 2025 · DP World Tour',
     },
     'Golf Son Quint': {
       location: 'Arabella · Son Vida, Palma',
-      text: 'Le plus accessible des parcours Arabella. De longs fairways ouverts et quatre positions de départ différentes le rendent vraiment adapté à tous les niveaux. Du trou 8, le point le plus haut du parcours, on frappe directement vers la Cathédrale de Palma. Tiger Woods y a joué avec son fils Charlie en juillet 2022. Les murs en pierre sont en jeu — pas seulement décoratifs.',
+      text: 'Le plus accessible des parcours Arabella. De longs fairways ouverts et quatre positions de départ différentes le rendent vraiment adapté à tous les niveaux. Du trou 8, le point le plus haut du parcours, on frappe directement vers la Cathédrale de Palma. Tiger Woods y a joué avec son fils Charlie en juillet 2022. Les murs en pierre sont en jeu: pas seulement décoratifs.',
       footer: 'Idéal pour débutants · Tiger Woods a joué ici',
     },
     'T Golf Palma Puntiró': {
@@ -504,43 +504,43 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Son Termes': {
       location: 'Bunyola · 10 km de Palma',
-      text: 'Probablement le parcours de l\'île qui s\'intègre le mieux à son environnement — il se trouve dans une vallée de la Tramuntana avec les montagnes formant un décor sur chaque trou. Court avec par 70 et 5 285 m, mais le terrain compense avec des changements de dénivelé constants et des fairways étroits — buggy recommandé. Le restaurant surplombe le 18e green et la Baie de Palma.',
+      text: 'Probablement le parcours de l\'île qui s\'intègre le mieux à son environnement: il se trouve dans une vallée de la Tramuntana avec les montagnes formant un décor sur chaque trou. Court avec par 70 et 5 285 m, mais le terrain compense avec des changements de dénivelé constants et des fairways étroits: buggy recommandé. Le restaurant surplombe le 18e green et la Baie de Palma.',
       footer: 'Vallée de la Tramuntana · 10 min de Palma',
     },
     'Golf Santa Ponsa 1': {
       location: 'Santa Ponsa · 20 km de Palma',
-      text: 'Le seul parcours public du groupe Santa Ponsa avec un vrai pedigree du European Tour — il a accueilli le Mallorca Golf Open du DP World Tour 2021. L\'un des parcours les plus longs de l\'île ; le trou 10 avec 590 m est l\'un des plus longs par 5 d\'Europe. Plusieurs départs partiellement aveugles et obstacles d\'eau. Les trous 5, 6 et 7 offrent certaines des meilleures vues sur la Serra de Tramuntana.',
+      text: 'Le seul parcours public du groupe Santa Ponsa avec un vrai pedigree du European Tour: il a accueilli le Mallorca Golf Open du DP World Tour 2021. L\'un des parcours les plus longs de l\'île ; le trou 10 avec 590 m est l\'un des plus longs par 5 d\'Europe. Plusieurs départs partiellement aveugles et obstacles d\'eau. Les trous 5, 6 et 7 offrent certaines des meilleures vues sur la Serra de Tramuntana.',
       footer: 'Accès public · Terrain du DP World Tour',
     },
     'Golf Santa Ponsa 2': {
       location: 'Santa Ponsa · 20 km de Palma',
-      text: 'Réservé aux membres et généralement calme. Beaucoup de départs rendent le driver un mauvais choix — un hybrid pour contrôler la position est souvent la décision la plus judicieuse. L\'alignement d\'arbres est dense et une balle au mauvais endroit signifie généralement revenir avec un chip. Le 18 : un par 3 avec un green en forme de l\'île de Majorque elle-même — un détail à connaître avant d\'arriver.',
+      text: 'Réservé aux membres et généralement calme. Beaucoup de départs rendent le driver un mauvais choix: un hybrid pour contrôler la position est souvent la décision la plus judicieuse. L\'alignement d\'arbres est dense et une balle au mauvais endroit signifie généralement revenir avec un chip. Le 18 : un par 3 avec un green en forme de l\'île de Majorque elle-même: un détail à connaître avant d\'arriver.',
       note: '"Le green du 18 a la forme de Majorque elle-même. Un de ces détails à connaître avant d\'arriver."',
       footer: 'Accès organisable pour les clients',
     },
     'Golf Santa Ponsa 3': {
       location: 'Santa Ponsa · 20 km de Palma',
-      text: 'Neuf trous à travers une communauté résidentielle. La plupart des trous sont courts — bien adapté aux débutants ou à quiconque veut travailler le jeu court sans s\'engager dans un parcours complet. Le deuxième trou est mon préféré : malgré la courte distance, un départ précis est nécessaire.',
+      text: 'Neuf trous à travers une communauté résidentielle. La plupart des trous sont courts: bien adapté aux débutants ou à quiconque veut travailler le jeu court sans s\'engager dans un parcours complet. Le deuxième trou est mon préféré : malgré la courte distance, un départ précis est nécessaire.',
       footer: 'Bon pour le jeu court · Accès organisable',
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat · 7 km de Palma',
-      text: 'Sept kilomètres de Palma dans une vallée boisée — vraiment paisible pour un parcours si proche de la ville. Vues sur la Baie de Palma, l\'île de Cabrera et le vieux Château de Bendinat. Note : le clubhouse principal est en travaux, avec une réouverture prévue en mai/juin 2026. Green fees visiteurs limités par jour — réserver à l\'avance.',
+      text: 'Sept kilomètres de Palma dans une vallée boisée: vraiment paisible pour un parcours si proche de la ville. Vues sur la Baie de Palma, l\'île de Cabrera et le vieux Château de Bendinat. Note : le clubhouse principal est en travaux, avec une réouverture prévue en mai/juin 2026. Green fees visiteurs limités par jour: réserver à l\'avance.',
       footer: 'Rénovation du clubhouse jusqu\'en mai/juin 2026',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià · 12 km de Palma',
-      text: 'Conçu à l\'origine par John Harris en 1978 et entièrement reconstruit suite à un investissement de 10 millions d\'euros — nouveau parcours, nouveau clubhouse, proposition entièrement différente. Quinze lacs, fairways ouverts encourageant le driver, grands greens ondulés. La mer d\'un côté et la Tramuntana de l\'autre. A accueilli le Mallorca Open.',
+      text: 'Conçu à l\'origine par John Harris en 1978 et entièrement reconstruit suite à un investissement de 10 millions d\'euros: nouveau parcours, nouveau clubhouse, proposition entièrement différente. Quinze lacs, fairways ouverts encourageant le driver, grands greens ondulés. La mer d\'un côté et la Tramuntana de l\'autre. A accueilli le Mallorca Open.',
       footer: 'Hôte du Mallorca Open',
     },
     'Golf de Andratx': {
       location: 'Camp de Mar · 40 km de Palma',
-      text: 'Le trou 6 est le plus long par 5 d\'Espagne avec 609 mètres. Construit dans les collines au-dessus de Camp de Mar sans compromis. Apporter des balles supplémentaires et pas d\'ego — le rough est réel et les fairways étroits. Pas adapté aux débutants sans handicap. L\'expérience, les vues et la difficulté en font l\'un des parcours les plus mémorables de l\'île.',
+      text: 'Le trou 6 est le plus long par 5 d\'Espagne avec 609 mètres. Construit dans les collines au-dessus de Camp de Mar sans compromis. Apporter des balles supplémentaires et pas d\'ego: le rough est réel et les fairways étroits. Pas adapté aux débutants sans handicap. L\'expérience, les vues et la difficulté en font l\'un des parcours les plus mémorables de l\'île.',
       footer: 'Le parcours le plus difficile de l\'île',
     },
     'Golf Maioris': {
       location: 'Llucmajor · 20 km de Palma',
-      text: 'Un parcours intéressant car le neuf avant et le neuf arrière semblent avoir deux philosophies de design uniques — le premier neuf écossais et vallonné, le second plus américain et plat. Quinze minutes de l\'aéroport et moins fréquenté que les parcours plus proches de Palma. Possède l\'un des rares practice sur herbe publics de l\'île.',
+      text: 'Un parcours intéressant car le neuf avant et le neuf arrière semblent avoir deux philosophies de design uniques: le premier neuf écossais et vallonné, le second plus américain et plat. Quinze minutes de l\'aéroport et moins fréquenté que les parcours plus proches de Palma. Possède l\'un des rares practice sur herbe publics de l\'île.',
       footer: '15 min de l\'aéroport · Practice sur herbe public',
     },
     'Golf Son Antem East': {
@@ -555,12 +555,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Capdepera Golf': {
       location: 'Artà · 65 km de Palma',
-      text: 'Dan Maples l\'a conçu pour suivre le paysage existant. La première moitié parcourt une large vallée — ouverte, relativement douce. Le neuf retour grimpe dans les collines du Llevant et devient un test beaucoup plus technique. Le trou 15, en haut des montagnes avec des vues sur toute la vallée jusqu\'à la côte, a été choisi comme le meilleur trou de l\'île par Mallorca Magazin.',
+      text: 'Dan Maples l\'a conçu pour suivre le paysage existant. La première moitié parcourt une large vallée: ouverte, relativement douce. Le neuf retour grimpe dans les collines du Llevant et devient un test beaucoup plus technique. Le trou 15, en haut des montagnes avec des vues sur toute la vallée jusqu\'à la côte, a été choisi comme le meilleur trou de l\'île par Mallorca Magazin.',
       footer: 'À combiner idéalement avec Canyamel',
     },
     'Canyamel Golf': {
       location: 'Capdepera · 65 km de Palma',
-      text: 'Chacun des neuf premiers trous a son propre caractère. Le trou 4 offre des vues sur Minorque par temps clair. Le trou 9 a une cabane en pierre traditionnelle au milieu du fairway — un obstacle unique à Majorque. Le trou 18 se termine par une ondulation triple sur le green visible depuis la terrasse du clubhouse.',
+      text: 'Chacun des neuf premiers trous a son propre caractère. Le trou 4 offre des vues sur Minorque par temps clair. Le trou 9 a une cabane en pierre traditionnelle au milieu du fairway: un obstacle unique à Majorque. Le trou 18 se termine par une ondulation triple sur le green visible depuis la terrasse du clubhouse.',
       footer: 'Vues sur Minorque par temps clair',
     },
     'Pula Golf': {
@@ -575,21 +575,21 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Club de Golf Alcanada': {
       location: 'Port d\'Alcúdia · 55 km de Palma',
-      text: 'Mon deuxième parcours phare et sans doute le plus pittoresque de Majorque. Design de Robert Trent Jones Jr. Le phare d\'Alcanada, visible depuis 16 des 18 trous, est l\'un des monuments de golf les plus photographiés d\'Europe. Cinquante-huit bunkers sont disposés stratégiquement sur le tracé — ils exigent de l\'attention sur chaque approche.',
-      text2: 'Le parcours accueille le Rolex Challenge Tour Grand Final, qui revient pour sa sixième édition en octobre 2026. Les greens sont très ondulés et extrêmement rapides. La terrasse du restaurant après la partie est l\'un des plus beaux endroits de l\'île. Prévoir 50 minutes depuis Palma — ça vaut chaque minute.',
+      text: 'Mon deuxième parcours phare et sans doute le plus pittoresque de Majorque. Design de Robert Trent Jones Jr. Le phare d\'Alcanada, visible depuis 16 des 18 trous, est l\'un des monuments de golf les plus photographiés d\'Europe. Cinquante-huit bunkers sont disposés stratégiquement sur le tracé: ils exigent de l\'attention sur chaque approche.',
+      text2: 'Le parcours accueille le Rolex Challenge Tour Grand Final, qui revient pour sa sixième édition en octobre 2026. Les greens sont très ondulés et extrêmement rapides. La terrasse du restaurant après la partie est l\'un des plus beaux endroits de l\'île. Prévoir 50 minutes depuis Palma: ça vaut chaque minute.',
       note: '"L\'un des plus beaux parcours que l\'on puisse jouer n\'importe où en Europe. Le phare sur le 17 est inoubliable."',
       footer: 'Rolex Challenge Tour Grand Final Oct. 2026 · 50 min de Palma',
     },
     'Golf Pollensa': {
       location: 'Pollença · 60 km de Palma',
-      text: 'Neuf trous à l\'entrée de la ville de Pollença, intégrés dans la colline avec des vues sur la Tramuntana et les baies de Pollença et d\'Alcúdia. Conçu par José Gancedo en 1986. Une partie dure environ 90 minutes — un échauffement facile ou une bonne option pour un jour où l\'on veut du golf sans engagement total.',
+      text: 'Neuf trous à l\'entrée de la ville de Pollença, intégrés dans la colline avec des vues sur la Tramuntana et les baies de Pollença et d\'Alcúdia. Conçu par José Gancedo en 1986. Une partie dure environ 90 minutes: un échauffement facile ou une bonne option pour un jour où l\'on veut du golf sans engagement total.',
       footer: 'Partie rapide · 90 minutes',
     },
   },
   zh: {
     'Golf Son Gual': {
       location: '帕尔马 · 距市中心11公里',
-      text: '托马斯·希梅尔2007年的设计拥有其独特的风势生态系统——其海拔位置和树木覆盖使风在每个球洞的表现都不同。果岭快速且抬高；失误的落点比挥杆方式更为关键。第15至18洞的收官段是欧洲高尔夫最精彩的四个连续球洞之一。拉法·纳达尔称这是他在岛上最喜欢的球场。',
+      text: '托马斯·希梅尔2007年的设计拥有其独特的风势生态系统:其海拔位置和树木覆盖使风在每个球洞的表现都不同。果岭快速且抬高；失误的落点比挥杆方式更为关键。第15至18洞的收官段是欧洲高尔夫最精彩的四个连续球洞之一。拉法·纳达尔称这是他在岛上最喜欢的球场。',
       note: '"第16洞的风与第7洞的风是不同的挑战。这正是这个球场令人回味无穷的原因。"',
       footer: '拉法最爱 · 必打球场',
     },
@@ -600,12 +600,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Son Muntaner': {
       location: 'Son Vida · 帕尔马',
-      text: '荣获2025年世界高尔夫奖「西班牙最佳高尔夫球场」称号。卡斯蒂略酒店Son Vida庄园的原始球场，由塞维亚诺·巴列斯特罗斯重新设计。从较高球洞可俯瞰帕尔马湾。第15洞旁有一棵千年橄榄树——在场内，不只是装饰。主办DP世界巡回赛马略卡高尔夫公开赛。',
+      text: '荣获2025年世界高尔夫奖「西班牙最佳高尔夫球场」称号。卡斯蒂略酒店Son Vida庄园的原始球场，由塞维亚诺·巴列斯特罗斯重新设计。从较高球洞可俯瞰帕尔马湾。第15洞旁有一棵千年橄榄树:在场内，不只是装饰。主办DP世界巡回赛马略卡高尔夫公开赛。',
       footer: '2025年西班牙最佳 · DP世界巡回赛',
     },
     'Golf Son Quint': {
       location: '阿拉贝拉 · 帕尔马Son Vida',
-      text: '阿拉贝拉系列中最易上手的球场。宽阔的球道和四个不同的发球台使其真正适合各个水平的球手。从球场最高点第8洞出发，可以直接面向帕尔马大教堂挥杆。老虎伍兹于2022年7月与儿子查理在此打球。石墙是场内障碍——不只是装饰。',
+      text: '阿拉贝拉系列中最易上手的球场。宽阔的球道和四个不同的发球台使其真正适合各个水平的球手。从球场最高点第8洞出发，可以直接面向帕尔马大教堂挥杆。老虎伍兹于2022年7月与儿子查理在此打球。石墙是场内障碍:不只是装饰。',
       footer: '适合初学者 · 老虎伍兹曾在此打球',
     },
     'T Golf Palma Puntiró': {
@@ -620,43 +620,43 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Son Termes': {
       location: '布尼奥拉 · 距帕尔马10公里',
-      text: '可能是岛上与周围环境融合最自然的球场——坐落在特拉蒙塔纳山脉的山谷中，群山在每个球洞都构成背景。标准杆70，全长5285米，地形以持续的高度变化和狭窄球道补足了短距离的不足——建议乘坐球车。餐厅俯瞰第18洞果岭和帕尔马湾。',
+      text: '可能是岛上与周围环境融合最自然的球场:坐落在特拉蒙塔纳山脉的山谷中，群山在每个球洞都构成背景。标准杆70，全长5285米，地形以持续的高度变化和狭窄球道补足了短距离的不足:建议乘坐球车。餐厅俯瞰第18洞果岭和帕尔马湾。',
       footer: '特拉蒙塔纳山谷 · 距帕尔马10分钟',
     },
     'Golf Santa Ponsa 1': {
       location: '桑塔蓬萨 · 距帕尔马20公里',
-      text: '桑塔蓬萨球场群中唯一的公共球场，拥有真实的欧巡赛背景——曾举办2021年DP世界巡回赛马略卡高尔夫公开赛。岛上最长的球场之一，第10洞590米是欧洲最长的5杆洞之一。多个部分盲洞开球和水障碍。第5、6、7洞提供岛上一些最佳的特拉蒙塔纳山脉景观。',
+      text: '桑塔蓬萨球场群中唯一的公共球场，拥有真实的欧巡赛背景:曾举办2021年DP世界巡回赛马略卡高尔夫公开赛。岛上最长的球场之一，第10洞590米是欧洲最长的5杆洞之一。多个部分盲洞开球和水障碍。第5、6、7洞提供岛上一些最佳的特拉蒙塔纳山脉景观。',
       footer: '公众球场 · DP世界巡回赛举办地',
     },
     'Golf Santa Ponsa 2': {
       location: '桑塔蓬萨 · 距帕尔马20公里',
-      text: '仅限会员且通常安静。许多开球使司机杆成为错误选择——用球道木控制落位往往是更明智的决定。树木排列密集，球落错地方通常意味着只能削球出来。第18洞：一个3杆洞，果岭形状酷似马略卡岛本身——上场前值得了解的细节。',
+      text: '仅限会员且通常安静。许多开球使司机杆成为错误选择:用球道木控制落位往往是更明智的决定。树木排列密集，球落错地方通常意味着只能削球出来。第18洞：一个3杆洞，果岭形状酷似马略卡岛本身:上场前值得了解的细节。',
       note: '"第18洞的果岭形状就像马略卡岛本身。上场前值得了解的细节之一。"',
       footer: '可为客户安排入场',
     },
     'Golf Santa Ponsa 3': {
       location: '桑塔蓬萨 · 距帕尔马20公里',
-      text: '九个球洞穿越住宅社区。大多数球洞较短——适合初学者或希望练习短杆而不进行完整一轮的球手。第2洞是我的最爱：距离虽短，但需要精准的开球，这正是这类球场应有的迷惑性测试。',
+      text: '九个球洞穿越住宅社区。大多数球洞较短:适合初学者或希望练习短杆而不进行完整一轮的球手。第2洞是我的最爱：距离虽短，但需要精准的开球，这正是这类球场应有的迷惑性测试。',
       footer: '适合短杆练习 · 可安排入场',
     },
     'Real Golf de Bendinat': {
       location: '本迪纳特 · 距帕尔马7公里',
-      text: '距帕尔马7公里，坐落在林木茂密的山谷中——对于如此靠近城市的球场而言，环境格外宁静。可俯瞰帕尔马湾、卡布雷拉岛和古老的本迪纳特城堡。注意：主会所目前正在翻修，预计于2026年5月/6月重新开放。每日游客开球资格有限——提前预订。',
+      text: '距帕尔马7公里，坐落在林木茂密的山谷中:对于如此靠近城市的球场而言，环境格外宁静。可俯瞰帕尔马湾、卡布雷拉岛和古老的本迪纳特城堡。注意：主会所目前正在翻修，预计于2026年5月/6月重新开放。每日游客开球资格有限:提前预订。',
       footer: '会所翻修至2026年5月/6月',
     },
     'T Golf Calvià (Poniente)': {
       location: '卡尔维亚 · 距帕尔马12公里',
-      text: '最初由约翰·哈里斯于1978年设计，经过1000万欧元的翻新后全面重建——新球场、新会所，完全不同的格局。十五个湖泊，开阔球道鼓励使用司机杆，大型起伏果岭。一侧是大海，另一侧是特拉蒙塔纳山脉。曾举办马略卡公开赛。',
+      text: '最初由约翰·哈里斯于1978年设计，经过1000万欧元的翻新后全面重建:新球场、新会所，完全不同的格局。十五个湖泊，开阔球道鼓励使用司机杆，大型起伏果岭。一侧是大海，另一侧是特拉蒙塔纳山脉。曾举办马略卡公开赛。',
       footer: '马略卡公开赛举办地',
     },
     'Golf de Andratx': {
       location: '坎普德马尔 · 距帕尔马40公里',
-      text: '第6洞以609米成为西班牙最长的5杆洞。毫不妥协地建在坎普德马尔上方的山丘中。准备备用球，放下自尊——长草区是真实的，球道狭窄。不适合没有差点证书的初学者。这里的体验、景色和难度使其成为岛上最难忘的一轮之一。',
+      text: '第6洞以609米成为西班牙最长的5杆洞。毫不妥协地建在坎普德马尔上方的山丘中。准备备用球，放下自尊:长草区是真实的，球道狭窄。不适合没有差点证书的初学者。这里的体验、景色和难度使其成为岛上最难忘的一轮之一。',
       footer: '岛上最具挑战性的球场',
     },
     'Golf Maioris': {
       location: '卢克马约尔 · 距帕尔马20公里',
-      text: '有趣的是，前九洞和后九洞感觉像是两种不同的设计理念——前九洞具有苏格兰风格的起伏，后九洞更接近美式的平坦风格。距机场仅15分钟，比靠近帕尔马的球场人少——是当天头场或末场的低调好选择。拥有岛上少有的公共草地练习场之一。',
+      text: '有趣的是，前九洞和后九洞感觉像是两种不同的设计理念:前九洞具有苏格兰风格的起伏，后九洞更接近美式的平坦风格。距机场仅15分钟，比靠近帕尔马的球场人少:是当天头场或末场的低调好选择。拥有岛上少有的公共草地练习场之一。',
       footer: '距机场15分钟 · 公共草地练习场',
     },
     'Golf Son Antem East': {
@@ -671,12 +671,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Capdepera Golf': {
       location: '阿尔塔 · 距帕尔马65公里',
-      text: '丹·梅普尔斯在设计时尽量遵循现有地形。前半段穿越宽阔的山谷——开阔，相对平缓。后九洞攀上莱万特山丘，成为技术性更强的考验。第15洞位于山顶，可俯瞰整个山谷直至海岸，被《马略卡杂志》评选为岛上最佳球洞。',
+      text: '丹·梅普尔斯在设计时尽量遵循现有地形。前半段穿越宽阔的山谷:开阔，相对平缓。后九洞攀上莱万特山丘，成为技术性更强的考验。第15洞位于山顶，可俯瞰整个山谷直至海岸，被《马略卡杂志》评选为岛上最佳球洞。',
       footer: '建议与卡尼亚梅尔组合打',
     },
     'Canyamel Golf': {
       location: '卡普德佩拉 · 距帕尔马65公里',
-      text: '前九洞每个球洞都有其独特性格。第4洞在晴天可远眺梅诺卡岛。第9洞球道中间有一座传统石屋——马略卡独有的障碍。第18洞以从会所露台可见的三重波浪果岭起伏作为收尾。',
+      text: '前九洞每个球洞都有其独特性格。第4洞在晴天可远眺梅诺卡岛。第9洞球道中间有一座传统石屋:马略卡独有的障碍。第18洞以从会所露台可见的三重波浪果岭起伏作为收尾。',
       footer: '晴天可远眺梅诺卡岛',
     },
     'Pula Golf': {
@@ -691,21 +691,21 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Club de Golf Alcanada': {
       location: '阿尔库迪亚港 · 距帕尔马55公里',
-      text: '我的第二个主要球场，也可能是马略卡岛最美丽的。小罗伯特·特伦特·琼斯的设计。阿尔卡纳达灯塔从18个球洞中的16个可见，是欧洲最受拍摄的高尔夫标志之一。五十八个沙坑在球场中战略性分布——每次近打都需要注意。',
-      text2: '球场将于2026年10月迎来第六届劳力士挑战巡回赛总决赛。果岭起伏强烈，速度极快。赛后的餐厅露台是岛上最美的地方之一。从帕尔马出发预留50分钟——每分钟都值得。',
+      text: '我的第二个主要球场，也可能是马略卡岛最美丽的。小罗伯特·特伦特·琼斯的设计。阿尔卡纳达灯塔从18个球洞中的16个可见，是欧洲最受拍摄的高尔夫标志之一。五十八个沙坑在球场中战略性分布:每次近打都需要注意。',
+      text2: '球场将于2026年10月迎来第六届劳力士挑战巡回赛总决赛。果岭起伏强烈，速度极快。赛后的餐厅露台是岛上最美的地方之一。从帕尔马出发预留50分钟:每分钟都值得。',
       note: '"这是您能在欧洲任何地方打到的最美丽的球场之一。第17洞的灯塔令人难忘。"',
       footer: '2026年10月劳力士挑战巡回赛总决赛 · 距帕尔马50分钟',
     },
     'Golf Pollensa': {
       location: '波连萨 · 距帕尔马60公里',
-      text: '九个球洞位于波连萨镇入口，融入山坡，可俯瞰特拉蒙塔纳山脉以及波连萨湾和阿尔库迪亚湾。由何塞·甘塞多于1986年设计。一轮约需90分钟——轻松热身或适合不想投入完整一轮的高尔夫日。',
+      text: '九个球洞位于波连萨镇入口，融入山坡，可俯瞰特拉蒙塔纳山脉以及波连萨湾和阿尔库迪亚湾。由何塞·甘塞多于1986年设计。一轮约需90分钟:轻松热身或适合不想投入完整一轮的高尔夫日。',
       footer: '快速一轮 · 90分钟',
     },
   },
   nl: {
     'Golf Son Gual': {
       location: 'Palma · 11 km van het stadscentrum',
-      text: 'Thomas Himmels ontwerp uit 2007 heeft zijn eigen wind-ecosysteem — de verhoogde ligging en boomkap zorgen ervoor dat de wind op elke hole anders kan gedragen. De greens zijn snel en verhoogd; waar je mist telt meer dan hoe je slaat. Het slot — holes 15 tot 18 — behoort tot de vier beste opeenvolgende holes in het Europese golf. Rafa Nadal heeft gezegd dat dit zijn favoriete baan op het eiland is.',
+      text: 'Thomas Himmels ontwerp uit 2007 heeft zijn eigen wind-ecosysteem: de verhoogde ligging en boomkap zorgen ervoor dat de wind op elke hole anders kan gedragen. De greens zijn snel en verhoogd; waar je mist telt meer dan hoe je slaat. Het slot (holes 15 tot 18) behoort tot de vier beste opeenvolgende holes in het Europese golf. Rafa Nadal heeft gezegd dat dit zijn favoriete baan op het eiland is.',
       note: '"De wind op 16 is een andere uitdaging dan de wind op 7. Dat maakt de baan zo herspelbaar."',
       footer: 'Rafa\'s favoriet · Must-play',
     },
@@ -716,12 +716,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Son Muntaner': {
       location: 'Son Vida · Palma',
-      text: 'Uitgeroepen tot Beste Golfbaan van Spanje op de World Golf Awards 2025. De originele baan van het Castillo Hotel Son Vida-landgoed, herontworpen door Severiano Ballesteros. Uitzichten over de Baai van Palma vanaf de hogere holes. Een duizend jaar oude olijfboom staat op hole 15 — in spel, niet alleen decoratief. Gastheer van de Mallorca Golf Open op de DP World Tour.',
+      text: 'Uitgeroepen tot Beste Golfbaan van Spanje op de World Golf Awards 2025. De originele baan van het Castillo Hotel Son Vida-landgoed, herontworpen door Severiano Ballesteros. Uitzichten over de Baai van Palma vanaf de hogere holes. Een duizend jaar oude olijfboom staat op hole 15: in spel, niet alleen decoratief. Gastheer van de Mallorca Golf Open op de DP World Tour.',
       footer: 'Beste van Spanje 2025 · DP World Tour',
     },
     'Golf Son Quint': {
       location: 'Arabella · Son Vida, Palma',
-      text: 'De meest toegankelijke van de Arabella-banen. Lange, open fairways en vier verschillende teeposities maken het echt geschikt voor elk niveau. Vanaf hole 8, het hoogste punt van de baan, sla je direct in de richting van de Kathedraal van Palma. Tiger Woods speelde hier in juli 2022 met zijn zoon Charlie. De stenen muren zijn in spel — niet alleen decoratief.',
+      text: 'De meest toegankelijke van de Arabella-banen. Lange, open fairways en vier verschillende teeposities maken het echt geschikt voor elk niveau. Vanaf hole 8, het hoogste punt van de baan, sla je direct in de richting van de Kathedraal van Palma. Tiger Woods speelde hier in juli 2022 met zijn zoon Charlie. De stenen muren zijn in spel: niet alleen decoratief.',
       footer: 'Ideaal voor beginners · Tiger Woods speelde hier',
     },
     'T Golf Palma Puntiró': {
@@ -736,43 +736,43 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Son Termes': {
       location: 'Bunyola · 10 km van Palma',
-      text: 'Waarschijnlijk de baan op het eiland die het meest geïntegreerd is met zijn omgeving — het ligt in een dal van de Tramuntana met de bergen als achtergrond op elke hole. Kort met par 70 en 5.285 m, maar het terrein compenseert met constante hoogteverschillen en smalle fairways — buggy aanbevolen. Het restaurant kijkt uit op de 18e green en de Baai van Palma.',
+      text: 'Waarschijnlijk de baan op het eiland die het meest geïntegreerd is met zijn omgeving: het ligt in een dal van de Tramuntana met de bergen als achtergrond op elke hole. Kort met par 70 en 5.285 m, maar het terrein compenseert met constante hoogteverschillen en smalle fairways: buggy aanbevolen. Het restaurant kijkt uit op de 18e green en de Baai van Palma.',
       footer: 'Tramuntanadal · 10 min van Palma',
     },
     'Golf Santa Ponsa 1': {
       location: 'Santa Ponsa · 20 km van Palma',
-      text: 'De enige publieke baan van de Santa Ponsa-groep met echte European Tour-pedigree — het was gastheer van de DP World Tour Mallorca Golf Open 2021. Een van de langste banen op het eiland; hole 10 met 590 m is een van de langste par 5\'s in Europa. Meerdere gedeeltelijk blinde teeshots en waterhindernissen. Holes 5, 6 en 7 bieden enkele van de beste uitzichten op de Serra de Tramuntana.',
+      text: 'De enige publieke baan van de Santa Ponsa-groep met echte European Tour-pedigree: het was gastheer van de DP World Tour Mallorca Golf Open 2021. Een van de langste banen op het eiland; hole 10 met 590 m is een van de langste par 5\'s in Europa. Meerdere gedeeltelijk blinde teeshots en waterhindernissen. Holes 5, 6 en 7 bieden enkele van de beste uitzichten op de Serra de Tramuntana.',
       footer: 'Openbaar toegankelijk · DP World Tour-terrein',
     },
     'Golf Santa Ponsa 2': {
       location: 'Santa Ponsa · 20 km van Palma',
-      text: 'Alleen voor leden en meestal rustig. Veel teeshots maken de driver een slechte keuze — een hybrid om de positie te controleren is vaak de slimmere beslissing. De bomenrijen zijn dicht en een bal op de verkeerde plek betekent meestal terug chippen. Hole 18: een par 3 met een green in de vorm van het eiland Mallorca zelf — een detail dat het waard is te weten voor je begint.',
+      text: 'Alleen voor leden en meestal rustig. Veel teeshots maken de driver een slechte keuze: een hybrid om de positie te controleren is vaak de slimmere beslissing. De bomenrijen zijn dicht en een bal op de verkeerde plek betekent meestal terug chippen. Hole 18: een par 3 met een green in de vorm van het eiland Mallorca zelf: een detail dat het waard is te weten voor je begint.',
       note: '"De green van hole 18 heeft de vorm van Mallorca zelf. Eén van die details die je wilt weten voor je er bent."',
       footer: 'Toegang organiseerbaar voor cliënten',
     },
     'Golf Santa Ponsa 3': {
       location: 'Santa Ponsa · 20 km van Palma',
-      text: 'Negen holes door een residentiële gemeenschap. De meeste holes zijn kort — goed geschikt voor beginners of voor iemand die het kortspel wil oefenen zonder een volledige ronde te spelen. Hole 2 is mijn favoriet: ondanks de korte afstand is een nauwkeurig teeshot vereist.',
+      text: 'Negen holes door een residentiële gemeenschap. De meeste holes zijn kort: goed geschikt voor beginners of voor iemand die het kortspel wil oefenen zonder een volledige ronde te spelen. Hole 2 is mijn favoriet: ondanks de korte afstand is een nauwkeurig teeshot vereist.',
       footer: 'Goed voor kortspel · Toegang organiseerbaar',
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat · 7 km van Palma',
-      text: 'Zeven kilometer van Palma in een bebost dal — echt rustig voor een baan zo dicht bij de stad. Uitzichten over de Baai van Palma, het eiland Cabrera en het oude Kasteel van Bendinat. Opmerking: het hoofdclubhouse is momenteel in renovatie, met volledige heropening gepland voor mei/juni 2026. Beperkte bezoekers-greenfees per dag — van tevoren boeken.',
+      text: 'Zeven kilometer van Palma in een bebost dal: echt rustig voor een baan zo dicht bij de stad. Uitzichten over de Baai van Palma, het eiland Cabrera en het oude Kasteel van Bendinat. Opmerking: het hoofdclubhouse is momenteel in renovatie, met volledige heropening gepland voor mei/juni 2026. Beperkte bezoekers-greenfees per dag: van tevoren boeken.',
       footer: 'Clubhouse-renovatie tot mei/juni 2026',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià · 12 km van Palma',
-      text: 'Oorspronkelijk ontworpen door John Harris in 1978 en volledig herbouwd na een investering van 10 miljoen euro — nieuwe baan, nieuw clubhouse, een heel ander aanbod. Vijftien meren, open fairways die de driver aanmoedigen, grote golvende greens. De zee aan één kant en de Tramuntana aan de andere. Heeft de Mallorca Open georganiseerd.',
+      text: 'Oorspronkelijk ontworpen door John Harris in 1978 en volledig herbouwd na een investering van 10 miljoen euro: nieuwe baan, nieuw clubhouse, een heel ander aanbod. Vijftien meren, open fairways die de driver aanmoedigen, grote golvende greens. De zee aan één kant en de Tramuntana aan de andere. Heeft de Mallorca Open georganiseerd.',
       footer: 'Gastheer Mallorca Open',
     },
     'Golf de Andratx': {
       location: 'Camp de Mar · 40 km van Palma',
-      text: 'Hole 6 is de langste par 5 van Spanje met 609 meter. Zonder compromissen gebouwd in de heuvels boven Camp de Mar. Extra ballen meenemen en geen ego — de rough is echt en de fairways smal. Niet geschikt voor beginners zonder handicapcertificaat. De ervaring, uitzichten en moeilijkheid maken het tot een van de meest memorabele ronden op het eiland.',
+      text: 'Hole 6 is de langste par 5 van Spanje met 609 meter. Zonder compromissen gebouwd in de heuvels boven Camp de Mar. Extra ballen meenemen en geen ego: de rough is echt en de fairways smal. Niet geschikt voor beginners zonder handicapcertificaat. De ervaring, uitzichten en moeilijkheid maken het tot een van de meest memorabele ronden op het eiland.',
       footer: 'Moeilijkste baan van het eiland',
     },
     'Golf Maioris': {
       location: 'Llucmajor · 20 km van Palma',
-      text: 'Een interessante baan omdat de voor- en achterkant aanvoelen als twee unieke ontwerpfilosofieën — de eerste negen Schots en heuvelachtig, de tweede meer Amerikaans en vlakker. Vijftien minuten van het vliegveld en minder druk dan de banen dichter bij Palma. Heeft een van de weinige openbare grasdrivingranges op het eiland.',
+      text: 'Een interessante baan omdat de voor- en achterkant aanvoelen als twee unieke ontwerpfilosofieën: de eerste negen Schots en heuvelachtig, de tweede meer Amerikaans en vlakker. Vijftien minuten van het vliegveld en minder druk dan de banen dichter bij Palma. Heeft een van de weinige openbare grasdrivingranges op het eiland.',
       footer: '15 min van luchthaven · Openbare grasdrivingrange',
     },
     'Golf Son Antem East': {
@@ -787,12 +787,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Capdepera Golf': {
       location: 'Artà · 65 km van Palma',
-      text: 'Dan Maples ontwierp dit om het bestaande landschap te volgen. De eerste helft loopt door een breed dal — open, relatief zacht. De achterkant klimt de Llevant-heuvels in en wordt een veel technischer uitdaging. Hole 15, hoog in de bergen met uitzicht over het hele dal tot aan de kust, werd door Mallorca Magazin gekozen als de beste hole van het eiland.',
+      text: 'Dan Maples ontwierp dit om het bestaande landschap te volgen. De eerste helft loopt door een breed dal: open, relatief zacht. De achterkant klimt de Llevant-heuvels in en wordt een veel technischer uitdaging. Hole 15, hoog in de bergen met uitzicht over het hele dal tot aan de kust, werd door Mallorca Magazin gekozen als de beste hole van het eiland.',
       footer: 'Bij voorkeur te combineren met Canyamel',
     },
     'Canyamel Golf': {
       location: 'Capdepera · 65 km van Palma',
-      text: 'Elk van de eerste negen holes heeft zijn eigen karakter. Hole 4 heeft op een heldere dag uitzicht op Menorca. Hole 9 heeft een traditioneel stenen hutje in het midden van de fairway — een hindernis die uniek is voor Mallorca. Hole 18 eindigt met een drievoudige golfbeweging op de green zichtbaar vanuit de clubhuisterrasse.',
+      text: 'Elk van de eerste negen holes heeft zijn eigen karakter. Hole 4 heeft op een heldere dag uitzicht op Menorca. Hole 9 heeft een traditioneel stenen hutje in het midden van de fairway: een hindernis die uniek is voor Mallorca. Hole 18 eindigt met een drievoudige golfbeweging op de green zichtbaar vanuit de clubhuisterrasse.',
       footer: 'Zicht op Menorca op heldere dagen',
     },
     'Pula Golf': {
@@ -807,21 +807,21 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Club de Golf Alcanada': {
       location: 'Port d\'Alcúdia · 55 km van Palma',
-      text: 'Mijn tweede ankerbaan en waarschijnlijk het meest schilderachtige van Mallorca. Ontwerp van Robert Trent Jones Jr. De vuurtoren van Alcanada, zichtbaar vanaf 16 van de 18 holes, is een van de meest gefotografeerde golffaçades in Europa. Achtenvijftig bunkers zijn strategisch over het parcours verdeeld — ze vereisen aandacht bij elke benadering.',
-      text2: 'De baan is gastheer van de Rolex Challenge Tour Grand Final, die in oktober 2026 voor de zesde keer terugkeert. De greens zijn sterk golvend en extreem snel. Het restaurantterras na de ronde is een van de mooiste plekken op het eiland. Reken 50 minuten vanaf Palma — elke minuut is het waard.',
+      text: 'Mijn tweede ankerbaan en waarschijnlijk het meest schilderachtige van Mallorca. Ontwerp van Robert Trent Jones Jr. De vuurtoren van Alcanada, zichtbaar vanaf 16 van de 18 holes, is een van de meest gefotografeerde golffaçades in Europa. Achtenvijftig bunkers zijn strategisch over het parcours verdeeld: ze vereisen aandacht bij elke benadering.',
+      text2: 'De baan is gastheer van de Rolex Challenge Tour Grand Final, die in oktober 2026 voor de zesde keer terugkeert. De greens zijn sterk golvend en extreem snel. Het restaurantterras na de ronde is een van de mooiste plekken op het eiland. Reken 50 minuten vanaf Palma: elke minuut is het waard.',
       note: '"Een van de mooiste ronden die je ergens in Europa kunt spelen. De vuurtoren op 17 is onvergetelijk."',
       footer: 'Rolex Challenge Tour Grand Final okt. 2026 · 50 min van Palma',
     },
     'Golf Pollensa': {
       location: 'Pollença · 60 km van Palma',
-      text: 'Negen holes aan de ingang van de stad Pollença, geïntegreerd in de heuvel met uitzicht op de Tramuntana en de baaien van Pollença en Alcúdia. Ontworpen door José Gancedo in 1986. Een ronde duurt ongeveer 90 minuten — een gemakkelijke warming-up of een goede optie voor een dag waarop je golf wilt zonder volledige inzet.',
+      text: 'Negen holes aan de ingang van de stad Pollença, geïntegreerd in de heuvel met uitzicht op de Tramuntana en de baaien van Pollença en Alcúdia. Ontworpen door José Gancedo in 1986. Een ronde duurt ongeveer 90 minuten: een gemakkelijke warming-up of een goede optie voor een dag waarop je golf wilt zonder volledige inzet.',
       footer: 'Snelle ronde · 90 minuten',
     },
   },
   sv: {
     'Golf Son Gual': {
       location: 'Palma · 11 km från centrum',
-      text: 'Thomas Himmels design från 2007 har sitt eget vindekosystem — dess upphöjda läge och trädtäckning gör att vinden kan bete sig annorlunda på varje hål. Greenerna är snabba och upphöjda; var du missar spelar större roll än hur du svingar. Avslutningssträckan — hålen 15 till 18 — är bland de fyra finaste konsekutiva hålen i europeisk golf. Rafa Nadal har sagt att detta är hans favoritbana på ön.',
+      text: 'Thomas Himmels design från 2007 har sitt eget vindekosystem: dess upphöjda läge och trädtäckning gör att vinden kan bete sig annorlunda på varje hål. Greenerna är snabba och upphöjda; var du missar spelar större roll än hur du svingar. Avslutningssträckan (hålen 15 till 18) är bland de fyra finaste konsekutiva hålen i europeisk golf. Rafa Nadal har sagt att detta är hans favoritbana på ön.',
       note: '"Vinden på 16 är en annan utmaning än vinden på 7. Det är det som gör banan så återspelbar."',
       footer: 'Rafas favorit · Måste spelas',
     },
@@ -832,12 +832,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Son Muntaner': {
       location: 'Son Vida · Palma',
-      text: 'Utnämnd till Bästa Golfbana i Spanien på World Golf Awards 2025. Den ursprungliga banan på Castillo Hotel Son Vidas herrgård, omdesignad av Severiano Ballesteros. Utsikt över Palmas bukt från de högre hålen. Ett tusen år gammalt olivträd står vid hål 15 — i spel, inte bara som dekoration. Värd för Mallorca Golf Open på DP World Tour.',
+      text: 'Utnämnd till Bästa Golfbana i Spanien på World Golf Awards 2025. Den ursprungliga banan på Castillo Hotel Son Vidas herrgård, omdesignad av Severiano Ballesteros. Utsikt över Palmas bukt från de högre hålen. Ett tusen år gammalt olivträd står vid hål 15: i spel, inte bara som dekoration. Värd för Mallorca Golf Open på DP World Tour.',
       footer: 'Bäst i Spanien 2025 · DP World Tour',
     },
     'Golf Son Quint': {
       location: 'Arabella · Son Vida, Palma',
-      text: 'Den mest tillgängliga av Arabella-banorna. Långa, öppna fairways och fyra olika tee-positioner gör den genuint lämplig för alla nivåer. Från hål 8, banans högsta punkt, slår man direkt mot Palmas katedral. Tiger Woods spelade här med sin son Charlie i juli 2022. Stenmurarna är i spel — inte bara dekoration.',
+      text: 'Den mest tillgängliga av Arabella-banorna. Långa, öppna fairways och fyra olika tee-positioner gör den genuint lämplig för alla nivåer. Från hål 8, banans högsta punkt, slår man direkt mot Palmas katedral. Tiger Woods spelade här med sin son Charlie i juli 2022. Stenmurarna är i spel: inte bara dekoration.',
       footer: 'Idealisk för nybörjare · Tiger Woods spelade här',
     },
     'T Golf Palma Puntiró': {
@@ -852,43 +852,43 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Son Termes': {
       location: 'Bunyola · 10 km från Palma',
-      text: 'Förmodligen den bana på ön som känns mest integrerad med sin omgivning — den ligger i en dal i Tramuntana med bergen som bakgrund på varje hål. Kort med par 70 och 5 285 m, men terrängen kompenserar med ständiga höjdvariationer och smala fairways — buggy rekommenderas. Restaurangen blickar ut över det 18:e greenet och Palmas bukt.',
+      text: 'Förmodligen den bana på ön som känns mest integrerad med sin omgivning: den ligger i en dal i Tramuntana med bergen som bakgrund på varje hål. Kort med par 70 och 5 285 m, men terrängen kompenserar med ständiga höjdvariationer och smala fairways: buggy rekommenderas. Restaurangen blickar ut över det 18:e greenet och Palmas bukt.',
       footer: 'Tramuntanadal · 10 min från Palma',
     },
     'Golf Santa Ponsa 1': {
       location: 'Santa Ponsa · 20 km från Palma',
-      text: 'Den enda publika banan i Santa Ponsa-gruppen med äkta European Tour-meriter — den var värd för DP World Tour Mallorca Golf Open 2021. En av öns längsta banor; hål 10 med 590 m är ett av Europas längsta par 5. Flera delvis blinda teeshots och vattenhinder. Hålen 5, 6 och 7 erbjuder några av öns bästa utsikter över Serra de Tramuntana.',
+      text: 'Den enda publika banan i Santa Ponsa-gruppen med äkta European Tour-meriter: den var värd för DP World Tour Mallorca Golf Open 2021. En av öns längsta banor; hål 10 med 590 m är ett av Europas längsta par 5. Flera delvis blinda teeshots och vattenhinder. Hålen 5, 6 och 7 erbjuder några av öns bästa utsikter över Serra de Tramuntana.',
       footer: 'Offentlig tillgång · DP World Tour-värd',
     },
     'Golf Santa Ponsa 2': {
       location: 'Santa Ponsa · 20 km från Palma',
-      text: 'Endast för medlemmar och vanligtvis lugn. Många teeshots gör drivern till ett dåligt val — en hybrid för positionskontroll är ofta det klokare beslutet. Trädraden är tät och en boll på fel ställe innebär vanligtvis att chippa tillbaka. Hål 18: ett par 3 med ett green format som ön Mallorca själv — en detalj värd att känna till innan du kommer dit.',
+      text: 'Endast för medlemmar och vanligtvis lugn. Många teeshots gör drivern till ett dåligt val: en hybrid för positionskontroll är ofta det klokare beslutet. Trädraden är tät och en boll på fel ställe innebär vanligtvis att chippa tillbaka. Hål 18: ett par 3 med ett green format som ön Mallorca själv: en detalj värd att känna till innan du kommer dit.',
       note: '"Det 18:e greenet är format som Mallorca. En av de detaljer man vill veta om innan man kommer dit."',
       footer: 'Tillgång kan arrangeras för klienter',
     },
     'Golf Santa Ponsa 3': {
       location: 'Santa Ponsa · 20 km från Palma',
-      text: 'Nio hål genom ett bostadsområde. De flesta hålen är korta — väl lämpade för nybörjare eller den som vill öva det korta spelet utan att förbinda sig till en full runda. Det andra hålet är mitt favorit: trots det korta avståndet krävs ett precist teeshot.',
+      text: 'Nio hål genom ett bostadsområde. De flesta hålen är korta: väl lämpade för nybörjare eller den som vill öva det korta spelet utan att förbinda sig till en full runda. Det andra hålet är mitt favorit: trots det korta avståndet krävs ett precist teeshot.',
       footer: 'Bra för kortspel · Tillgång kan arrangeras',
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat · 7 km från Palma',
-      text: 'Sju kilometer från Palma i en skogsdal — genuint fridfull för en bana så nära staden. Utsikt över Palmas bukt, ön Cabrera och det gamla Bendinat-slottet. Obs: huvudklubhuset renoveras just nu, med full återöppning planerad till maj/juni 2026. Begränsade besökargreenfeeavgifter per dag — boka i förväg.',
+      text: 'Sju kilometer från Palma i en skogsdal: genuint fridfull för en bana så nära staden. Utsikt över Palmas bukt, ön Cabrera och det gamla Bendinat-slottet. Obs: huvudklubhuset renoveras just nu, med full återöppning planerad till maj/juni 2026. Begränsade besökargreenfeeavgifter per dag: boka i förväg.',
       footer: 'Klubbhusrenovering till maj/juni 2026',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià · 12 km från Palma',
-      text: 'Ursprungligen designad av John Harris 1978 och helt återuppbyggd efter en investering på 10 miljoner euro — ny bana, nytt klubbhus, ett helt annat erbjudande. Femton sjöar, öppna fairways som uppmuntrar till driver, stora kuperade greener. Havet på ena sidan och Tramuntana på den andra. Har arrangerat Mallorca Open.',
+      text: 'Ursprungligen designad av John Harris 1978 och helt återuppbyggd efter en investering på 10 miljoner euro: ny bana, nytt klubbhus, ett helt annat erbjudande. Femton sjöar, öppna fairways som uppmuntrar till driver, stora kuperade greener. Havet på ena sidan och Tramuntana på den andra. Har arrangerat Mallorca Open.',
       footer: 'Värd för Mallorca Open',
     },
     'Golf de Andratx': {
       location: 'Camp de Mar · 40 km från Palma',
-      text: 'Hål 6 är Spaniens längsta par 5 med 609 meter. Byggd i kullarna ovanför Camp de Mar utan kompromisser. Ta med extra bollar och lägg egot hemma — roughen är äkta och fairwaysarna smala. Inte lämplig för nybörjare utan handicapcertifikat. Upplevelsen, utsikterna och svårigheten gör det till en av öns mest minnesvärda rundor.',
+      text: 'Hål 6 är Spaniens längsta par 5 med 609 meter. Byggd i kullarna ovanför Camp de Mar utan kompromisser. Ta med extra bollar och lägg egot hemma: roughen är äkta och fairwaysarna smala. Inte lämplig för nybörjare utan handicapcertifikat. Upplevelsen, utsikterna och svårigheten gör det till en av öns mest minnesvärda rundor.',
       footer: 'Svåraste banan på ön',
     },
     'Golf Maioris': {
       location: 'Llucmajor · 20 km från Palma',
-      text: 'En intressant bana i att den niorna fram och niorna bak känns som två unika designfilosofier — de första nio skotska och kuperade, de andra mer amerikanska och platta. Femton minuter från flygplatsen och mindre fullsatt än banorna närmre Palma. Har en av öns få offentliga gräsdrivingranges.',
+      text: 'En intressant bana i att den niorna fram och niorna bak känns som två unika designfilosofier: de första nio skotska och kuperade, de andra mer amerikanska och platta. Femton minuter från flygplatsen och mindre fullsatt än banorna närmre Palma. Har en av öns få offentliga gräsdrivingranges.',
       footer: '15 min från flygplatsen · Offentlig gräsdrivingrange',
     },
     'Golf Son Antem East': {
@@ -903,12 +903,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Capdepera Golf': {
       location: 'Artà · 65 km från Palma',
-      text: 'Dan Maples designade detta för att följa det befintliga landskapet. Den första halvan löper genom en bred dal — öppen, relativt mild. De bakre nio klättrar upp i Llevant-kullarna och blir ett mycket mer tekniskt test. Hål 15, högt upp i bergen med utsikt över hela dalen till kusten, valdes av Mallorca Magazin som öns bästa hål.',
+      text: 'Dan Maples designade detta för att följa det befintliga landskapet. Den första halvan löper genom en bred dal: öppen, relativt mild. De bakre nio klättrar upp i Llevant-kullarna och blir ett mycket mer tekniskt test. Hål 15, högt upp i bergen med utsikt över hela dalen till kusten, valdes av Mallorca Magazin som öns bästa hål.',
       footer: 'Kombineras bäst med Canyamel',
     },
     'Canyamel Golf': {
       location: 'Capdepera · 65 km från Palma',
-      text: 'Var och en av de första nio hålen har sin egen karaktär. Hål 4 har utsikt mot Menorca på klara dagar. Hål 9 har en traditionell stenstuga mitt i fairwayen — ett hinder unikt för Mallorca. Hål 18 avslutas med en trevågig undulation på greenet synlig från klubbhusterrassen.',
+      text: 'Var och en av de första nio hålen har sin egen karaktär. Hål 4 har utsikt mot Menorca på klara dagar. Hål 9 har en traditionell stenstuga mitt i fairwayen: ett hinder unikt för Mallorca. Hål 18 avslutas med en trevågig undulation på greenet synlig från klubbhusterrassen.',
       footer: 'Utsikt mot Menorca på klara dagar',
     },
     'Pula Golf': {
@@ -923,14 +923,14 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Club de Golf Alcanada': {
       location: 'Port d\'Alcúdia · 55 km från Palma',
-      text: 'Min andra ankarbana och troligen Mallorcas vackraste. Design av Robert Trent Jones Jr. Alcanada-fyren, synlig från 16 av de 18 hålen, är ett av Europas mest fotograferade golflandmärken. Femtioåtta bunkrar är strategiskt placerade över layouten — de kräver uppmärksamhet vid varje approach.',
-      text2: 'Banan är värd för Rolex Challenge Tour Grand Final, som återvänder för sjätte gången i oktober 2026. Greenerna är kraftigt kuperade och extremt snabba. Restaurangterrassen efter rundan är en av öns vackraste platser. Räkna med 50 minuter från Palma — varje minut är värd det.',
+      text: 'Min andra ankarbana och troligen Mallorcas vackraste. Design av Robert Trent Jones Jr. Alcanada-fyren, synlig från 16 av de 18 hålen, är ett av Europas mest fotograferade golflandmärken. Femtioåtta bunkrar är strategiskt placerade över layouten: de kräver uppmärksamhet vid varje approach.',
+      text2: 'Banan är värd för Rolex Challenge Tour Grand Final, som återvänder för sjätte gången i oktober 2026. Greenerna är kraftigt kuperade och extremt snabba. Restaurangterrassen efter rundan är en av öns vackraste platser. Räkna med 50 minuter från Palma: varje minut är värd det.',
       note: '"En av de vackraste rundorna du kan spela någonstans i Europa. Fyren på 17 är oförglömlig."',
       footer: 'Rolex Challenge Tour Grand Final okt. 2026 · 50 min från Palma',
     },
     'Golf Pollensa': {
       location: 'Pollença · 60 km från Palma',
-      text: 'Nio hål vid ingången till Pollença stad, integrerade i sluttningen med utsikt över Tramuntana och Pollença- och Alcúdiabukterna. Designad av José Gancedo 1986. En runda tar ca 90 minuter — en enkel uppvärmning eller ett bra alternativ för en dag när man vill spela golf utan fullt engagemang.',
+      text: 'Nio hål vid ingången till Pollença stad, integrerade i sluttningen med utsikt över Tramuntana och Pollença- och Alcúdiabukterna. Designad av José Gancedo 1986. En runda tar ca 90 minuter: en enkel uppvärmning eller ett bra alternativ för en dag när man vill spela golf utan fullt engagemang.',
       footer: 'Snabb runda · 90 minuter',
     },
   },

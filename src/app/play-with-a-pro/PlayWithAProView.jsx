@@ -129,7 +129,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             {content.testimonials.items.map((item, index) => (
               <div key={item.author} className={`testimonial reveal${index > 0 ? ` reveal-delay-${index}` : ''}`}>
                 <p>&ldquo;{item.text}&rdquo;</p>
-                <span className="testimonial__author">— {item.author}</span>
+                <span className="testimonial__author">- {item.author}</span>
               </div>
             ))}
           </div>
