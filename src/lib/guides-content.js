@@ -16,7 +16,7 @@ export const GUIDES_CONTENT = {
         badgeGold: true,
         title: "Golf Son Muntaner, Mallorca — A PGA Professional's Honest Review (2026)",
         intro:
-          "Best Golf Course in Spain at the 2025 World Golf Awards. Five minutes from Palma. I played it on a full tee sheet on a Saturday morning — here's what I found.",
+          "Best Golf Course in Spain at the 2025 World Golf Awards. Five minutes from Palma. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
         readTime: '6 min read',
         keywords: 'Championship · Par 72 · €127-254 · Buggy included',
       },
