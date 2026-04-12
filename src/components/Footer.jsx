@@ -113,8 +113,7 @@ export default function Footer({ lang }) {
     <footer className="footer">
       <div className="footer__brand">
         <Link href={prefix || '/'} className="nav__logo footer__logo">
-          <div className="nav__logo-bar" />
-          <span className="nav__logo-text">Mr Mallorca Golf</span>
+          <img src="/logo-white.png" alt="Mr Mallorca Golf" className="nav__logo-img" />
         </Link>
         <p>{copy.tagline}</p>
       </div>
