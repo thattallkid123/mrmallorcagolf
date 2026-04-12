@@ -11,6 +11,16 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'son-muntaner-review',
+        badge: 'Course Review',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — A PGA Professional's Honest Review (2026)",
+        intro:
+          "Best Golf Course in Spain at the 2025 World Golf Awards. Five minutes from Palma. I played it on a full tee sheet on a Saturday morning — here's what I found.",
+        readTime: '6 min read',
+        keywords: 'Championship · Par 72 · €127-254 · Buggy included',
+      },
+      {
         slug: 'son-gual-review',
         badge: 'Course Review',
         title: "Son Gual Golf Mallorca - A PGA Professional's Honest Review (2026)",
@@ -125,6 +135,16 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'son-muntaner-review',
+        badge: 'Análisis del campo',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — análisis honesto de un Profesional PGA (2026)",
+        intro:
+          'Mejor campo de España en los World Golf Awards 2025. A cinco minutos de Palma. Lo jugué con el tee sheet completo un sábado por la mañana — esto es lo que encontré.',
+        readTime: '6 min',
+        keywords: 'Championship · Par 72 · €127-254 · Buggy incluido',
+      },
+      {
         slug: 'son-gual-review',
         badge: 'Análisis del campo',
         title: 'Son Gual Golf Mallorca — análisis honesto de un Profesional PGA (2026)',
@@ -237,6 +257,16 @@ export const GUIDES_CONTENT = {
       tags: ['Aktualisiert 2026', 'Bewertungen aus erster Hand', 'PGA Professional'],
     },
     liveGuides: [
+      {
+        slug: 'son-muntaner-review',
+        badge: 'Platz-Bewertung',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)",
+        intro:
+          'Bester Golfplatz Spaniens bei den World Golf Awards 2025. Fünf Minuten von Palma. Ich spielte ihn mit vollem Abschlagskalender an einem Samstagmorgen — das sind meine Eindrücke.',
+        readTime: '6 Min.',
+        keywords: 'Championship · Par 72 · €127-254 · Buggy inklusive',
+      },
       {
         slug: 'son-gual-review',
         badge: 'Platz-Bewertung',
@@ -351,6 +381,16 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'son-muntaner-review',
+        badge: 'Avis parcours',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Majorque — avis honnête d'un Professionnel PGA (2026)",
+        intro:
+          "Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. À cinq minutes de Palma. Je l'ai joué avec un départ complet un samedi matin — voici ce que j'y ai trouvé.",
+        readTime: '6 min',
+        keywords: 'Championship · Par 72 · €127-254 · Buggy inclus',
+      },
+      {
         slug: 'son-gual-review',
         badge: 'Avis parcours',
         title: "Son Gual Golf Majorque — avis honnête d'un Professionnel PGA (2026)",
@@ -463,6 +503,16 @@ export const GUIDES_CONTENT = {
       tags: ['Bijgewerkt 2026', 'Beoordelingen uit eerste hand', 'PGA Professional'],
     },
     liveGuides: [
+      {
+        slug: 'son-muntaner-review',
+        badge: 'Baanbeoordeling',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — eerlijke beoordeling van een PGA Professional (2026)",
+        intro:
+          'Beste golfbaan van Spanje bij de World Golf Awards 2025. Vijf minuten van Palma. Ik speelde het met een vol tee sheet op een zaterdagochtend — dit zijn mijn bevindingen.',
+        readTime: '6 min',
+        keywords: 'Championship · Par 72 · €127-254 · Buggy inbegrepen',
+      },
       {
         slug: 'son-gual-review',
         badge: 'Baanbeoordeling',
@@ -577,6 +627,16 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'son-muntaner-review',
+        badge: 'Banomdöme',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — ärlig recension av en PGA Professional (2026)",
+        intro:
+          'Bästa golfbana i Spanien vid World Golf Awards 2025. Fem minuter från Palma. Jag spelade den med fullbokat tee sheet en lördagsmorgon — här är vad jag hittade.',
+        readTime: '6 min',
+        keywords: 'Championship · Par 72 · €127-254 · Buggy ingår',
+      },
+      {
         slug: 'son-gual-review',
         badge: 'Banomdöme',
         title: 'Son Gual Golf Mallorca — ärlig recension av en PGA Professional (2026)',
@@ -689,6 +749,16 @@ export const GUIDES_CONTENT = {
       tags: ['2026 更新', '亲身评测', 'PGA Professional'],
     },
     liveGuides: [
+      {
+        slug: 'son-muntaner-review',
+        badge: '球场评测',
+        badgeGold: true,
+        title: 'Son Muntaner 高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）',
+        intro:
+          '2025年世界高尔夫奖西班牙最佳球场。距巴尔马市中心五分钟。我在满员开球表的周六早晨打了一轮——以下是我的真实体验。',
+        readTime: '6分钟',
+        keywords: '锦标赛级 · 标准杆72 · €127-254 · 含球车',
+      },
       {
         slug: 'son-gual-review',
         badge: '球场评测',
