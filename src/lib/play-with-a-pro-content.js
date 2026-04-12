@@ -200,11 +200,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: 'Erlebnisse & Pakete',
       title: 'Drei Wege, den Tag zu gestalten.',
       body: 'Alle drei Optionen sind privat und alle drei beinhalten dieselbe Qualität an Begleitung auf dem Platz. Der Unterschied liegt darin, wie viel Sie rund um das Golfspiel organisiert haben möchten.',
-      tiers: [
-        { eyebrow: 'Die Mallorca-Runde', name: 'Mit einem Pro spielen', price: '€350 p.P. + Greenfee', features: ['Platz passend zu Spielstärke und Handicap', 'Startzeit gesichert und komplett organisiert', 'Briefing und Aufwärmen vor der Runde', '18 Löcher an Andys Seite', 'Coaching auf dem Platz', 'Nachbesprechung - ehrlich und klar'], button: 'Anfragen →', href: '/de/contact', featured: false },
-        { eyebrow: 'Der Signature Day', name: 'Begleiteter Golftag', price: 'Ab €450 p.P. + Greenfee', features: ['Alles aus der Mallorca-Runde', 'Son Gual oder Alcanada - zwei der besten Plätze der Insel', 'Ausgedehntes Mittagessen im Clubrestaurant', 'Ausgewähltes Überraschungsgeschenk', 'Entspannter, großzügiger Rhythmus - ein voller Tag'], button: 'Anfragen →', href: '/de/contact', featured: true },
-        { eyebrow: 'Das volle Erlebnis', name: 'Maßgeschneiderte Golfreise', price: 'Individuell', features: ['Tag über mehrere Plätze oder kompletter Reiseplan', 'Privater Transfer ab Palma', 'Abendessen in einem handverlesenen Restaurant', 'Spa- oder Recovery-Einheit', 'Vollständige Concierge-Koordination', 'Für Gruppen, Unternehmen und individuelle Anfragen'], button: 'Anfragen →', href: '/de/contact', featured: false },
-      ],
+      tiers: [],
     },
     finalCta: {
       eyebrow: 'Bereit, Mallorca richtig zu spielen?',
@@ -284,11 +280,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: 'Experiencias y paquetes',
       title: 'Tres formas de hacerlo.',
       body: 'Las tres opciones son privadas y las tres incluyen el mismo nivel de compañía y criterio en el campo. La diferencia está en cuánto quiere construir el día alrededor del golf.',
-      tiers: [
-        { eyebrow: 'La vuelta Mallorca', name: 'Jugar con un Pro', price: '€350 p.p. + green fee', features: ['Campo elegido según su juego y su hándicap', 'Hora de salida asegurada y completamente gestionada', 'Briefing y calentamiento antes de la vuelta', '18 hoyos junto a Andy', 'Coaching durante toda la vuelta', 'Debrief posterior - claro y honesto'], button: 'Consultar →', href: '/es/contact', featured: false },
-        { eyebrow: 'El Signature Day', name: 'Día de golf acompañado', price: 'Desde €450 p.p. + green fee', features: ['Todo lo incluido en La vuelta Mallorca', 'Son Gual o Alcanada - dos de los mejores campos de la isla', 'Almuerzo largo en el restaurante del club', 'Regalo sorpresa seleccionado con criterio', 'Ritmo relajado, sin prisas - un día completo'], button: 'Consultar →', href: '/es/contact', featured: true },
-        { eyebrow: 'La experiencia completa', name: 'Viaje de golf a medida', price: 'Itinerario personalizado', features: ['Día multi-campo o itinerario completo', 'Transporte privado desde Palma', 'Cena en un restaurante seleccionado', 'Sesión de spa o recuperación', 'Coordinación concierge de principio a fin', 'Para grupos, empresa y peticiones a medida'], button: 'Consultar →', href: '/es/contact', featured: false },
-      ],
+      tiers: [],
     },
     finalCta: {
       eyebrow: '¿Listo para jugar Mallorca como se debe?',
@@ -368,11 +360,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: 'Expériences et formules',
       title: 'Trois façons de vivre la journée.',
       body: 'Les trois options sont privées et les trois incluent le même niveau d’accompagnement sur le parcours. Ce qui change, c’est le degré d’organisation que vous voulez autour du golf.',
-      tiers: [
-        { eyebrow: 'La ronde majorquine', name: 'Jouer avec un pro', price: '350 € par personne + green fee', features: ['Parcours choisi selon votre jeu et votre index', 'Heure de départ sécurisée et entièrement gérée', 'Briefing et échauffement avant la partie', '18 trous aux côtés d’Andy', 'Coaching pendant la ronde', 'Débrief après la partie - clair et honnête'], button: 'Demander →', href: '/fr/contact', featured: false },
-        { eyebrow: 'La Signature Day', name: 'Journée de golf accompagnée', price: 'À partir de 450 € par personne + green fee', features: ['Tout ce qui est inclus dans La ronde majorquine', 'Son Gual ou Alcanada - deux des plus beaux parcours de l’île', 'Long déjeuner au restaurant du club', 'Cadeau surprise sélectionné', 'Rythme détendu et sans précipitation - une vraie journée complète'], button: 'Demander →', href: '/fr/contact', featured: true },
-        { eyebrow: 'L’expérience complète', name: 'Séjour golf sur mesure', price: 'Sur mesure', features: ['Journée multi-parcours ou itinéraire complet', 'Transfert privé depuis Palma', 'Dîner dans un restaurant sélectionné', 'Séance de spa ou de récupération', 'Coordination concierge complète', 'Pour groupes, entreprises et demandes sur mesure'], button: 'Demander →', href: '/fr/contact', featured: false },
-      ],
+      tiers: [],
     },
     finalCta: {
       eyebrow: 'Prêt à jouer Majorque comme il faut ?',
@@ -452,11 +440,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: 'Ervaringen en pakketten',
       title: 'Drie manieren om de dag op te bouwen.',
       body: 'Alle drie de opties zijn privé en alle drie geven ze u hetzelfde niveau van begeleiding op de baan. Het verschil zit in hoeveel u rond het golf wilt laten organiseren.',
-      tiers: [
-        { eyebrow: 'De Mallorca-ronde', name: 'Spelen met een pro', price: '€350 p.p. + greenfee', features: ['Baan gekozen op basis van uw spel en handicap', 'Starttijd vastgelegd en volledig geregeld', 'Briefing en warming-up voor de ronde', '18 holes naast Andy', 'Coaching tijdens de ronde', 'Nabespreking achteraf - helder en eerlijk'], button: 'Aanvragen →', href: '/nl/contact', featured: false },
-        { eyebrow: 'De Signature Day', name: 'Begeleide golfdag', price: 'Vanaf €450 p.p. + greenfee', features: ['Alles uit De Mallorca-ronde', 'Son Gual of Alcanada - twee van de beste banen van het eiland', 'Uitgebreide lunch in het clubrestaurant', 'Zorgvuldig gekozen verrassingsgeschenk', 'Ontspannen tempo zonder haast - een volledige dag'], button: 'Aanvragen →', href: '/nl/contact', featured: true },
-        { eyebrow: 'De complete ervaring', name: 'Golfreis op maat', price: 'Op maat', features: ['Dag over meerdere banen of volledig reisplan', 'Privévervoer vanuit Palma', 'Diner in een zorgvuldig gekozen restaurant', 'Spa- of recoverysessie', 'Volledige concierge-coördinatie', 'Voor groepen, bedrijven en maatwerkverzoeken'], button: 'Aanvragen →', href: '/nl/contact', featured: false },
-      ],
+      tiers: [],
     },
     finalCta: {
       eyebrow: 'Klaar om Mallorca goed te spelen?',
@@ -536,11 +520,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: 'Upplevelser och paket',
       title: 'Tre sätt att lägga upp dagen.',
       body: 'Alla tre alternativen är privata och alla tre ger samma nivå av sällskap och expertis på banan. Skillnaden ligger i hur mycket du vill bygga dagen runt själva golfen.',
-      tiers: [
-        { eyebrow: 'Mallorca-rundan', name: 'Spela med ett proffs', price: '€350 per person + greenfee', features: ['Bana vald efter ditt spel och handicap', 'Starttid säkrad och helt ordnad', 'Briefing och uppvärmning före rundan', '18 hål vid Andys sida', 'Coaching under rundan', 'Genomgång efteråt - tydlig och ärlig'], button: 'Förfrågan →', href: '/sv/contact', featured: false },
-        { eyebrow: 'Signature Day', name: 'Värdledd golfdag', price: 'Från €450 per person + greenfee', features: ['Allt i Mallorca-rundan', 'Son Gual eller Alcanada - två av öns bästa banor', 'Lång lunch i klubbrestaurangen', 'Noggrant utvald överraskningsgåva', 'Lugnt tempo utan stress - en hel dag'], button: 'Förfrågan →', href: '/sv/contact', featured: true },
-        { eyebrow: 'Den kompletta upplevelsen', name: 'Skräddarsydd golfresa', price: 'Skräddarsytt', features: ['Dag över flera banor eller komplett resplan', 'Privat transport från Palma', 'Middag på handplockad restaurang', 'Spa- eller återhämtningspass', 'Full concierge-koordinering', 'För grupper, företag och skräddarsydda förfrågningar'], button: 'Förfrågan →', href: '/sv/contact', featured: false },
-      ],
+      tiers: [],
     },
     finalCta: {
       eyebrow: 'Redo att spela Mallorca på rätt sätt?',
@@ -620,11 +600,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: '体验方案',
       title: '三种安排这一天的方式。',
       body: '三种方案都是私人的，也都包含同样水准的球场陪打与判断。真正的区别，在于您想让这一天围绕高尔夫安排到什么程度。',
-      tiers: [
-        { eyebrow: '马略卡经典一轮', name: '与职业球手同场', price: '€350/人 + 果岭费', features: ['按照您的球技和差点匹配球场', '开球时间已预订并安排妥当', '赛前简报与热身', '与 Andy 同打 18 洞', '整轮球场实战指导', '赛后复盘 - 直接而清楚'], button: '立即咨询 →', href: '/zh/contact', featured: false },
-        { eyebrow: '招牌一日体验', name: '全程陪同高尔夫日', price: '€450/人起 + 果岭费', features: ['包含经典一轮的全部内容', 'Son Gual 或 Alcanada - 岛上最好的两座球场之一', '在球场餐厅享用悠长午餐', '精心挑选的惊喜礼物', '从容、不赶时间 - 真正完整的一天'], button: '立即咨询 →', href: '/zh/contact', featured: true },
-        { eyebrow: '完整定制体验', name: '私人高尔夫行程', price: '定制报价', features: ['多球场一天或完整行程安排', '从帕尔马出发的私人接送', '精选餐厅晚餐', '水疗或恢复安排', '全程 concierge 式协调服务', '适合团体、企业与个性化需求'], button: '立即咨询 →', href: '/zh/contact', featured: false },
-      ],
+      tiers: [],
     },
     finalCta: {
       eyebrow: '准备好用正确的方式打马略卡了吗？',
