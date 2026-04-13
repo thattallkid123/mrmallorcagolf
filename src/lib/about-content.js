@@ -30,7 +30,7 @@ export const ABOUT_CONTENT = {
       },
       {
         label: 'Mallorca, 2025-',
-        title: 'Twenty-two courses, one island, and a coaching philosophy sharpened by playing properly again.',
+        title: 'Twenty-four courses, one island, and a coaching philosophy sharpened by playing properly again.',
         paragraphs: [
           "I moved to Mallorca in March 2025 with my wife Yina. Closer to family in the UK, year-round sunshine, and a golf island that still doesn't get enough credit.",
           'I started playing properly again. Working my way through every course on the island. Rediscovering what it feels like to stand on a first tee and actually care about the score. That competitive instinct, dormant through years of full-time coaching, came back fast.',

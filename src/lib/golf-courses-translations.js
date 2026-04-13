@@ -19,9 +19,9 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'Die Platzbeschreibungen sind auf Englisch.',
     geoEyebrow: 'Wo die Plätze liegen',
     geoH2: "Mallorca hat mehr herausragendes Golf, als die meisten Besucher vermuten.",
-    geoP1: "Zweiundzwanzig Plätze: von echten European Tour Austragungsorten bis hin zu ruhigeren, weniger bekannten Schätzen. Green Fees von 20 € bis über 200 €. Ich bin ein UK PGA Advanced Professional auf der Insel und arbeite mich durch jeden Platz.",
+    geoP1: "Vierundzwanzig Plätze: von echten European Tour Austragungsorten bis hin zu ruhigeren, weniger bekannten Schätzen. Green Fees von 20 € bis über 200 €. Ich bin ein UK PGA Advanced Professional auf der Insel und arbeite mich durch jeden Platz.",
     geoP2: "Beste Spielzeit: Oktober–November und Februar–April. Die Insel ist ganzjährig bespielbar: im Januar, wenn Plätze in Europa geschlossen sind, sind die Fairways hier makellos.",
-    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Südwesten', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Süden', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Osten", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Norden', courses: 'Alcanada · Golf Pollensa'}],
+    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Südwesten', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Süden', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Osten", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or · Reserva Rotana"}, {region: 'Norden', courses: 'Alcanada · Golf Pollensa'}],
   },
   es: {
     allCourses: 'Todos los campos', expertPicks: '★ Solo selecciones de experto',
@@ -43,9 +43,9 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'Las descripciones de los campos están en inglés.',
     geoEyebrow: 'Dónde están los campos',
     geoH2: "Mallorca tiene más golf de calidad de lo que la mayoría de visitantes imagina.",
-    geoP1: "Veintidós campos: desde auténticos recintos del European Tour hasta joyas más tranquilas y menos conocidas. Green fees desde 20 € hasta más de 200 €. Soy un UK PGA Advanced Professional en la isla, recorriendo cada campo.",
+    geoP1: "Veinticuatro campos: desde auténticos recintos del European Tour hasta joyas más tranquilas y menos conocidas. Green fees desde 20 € hasta más de 200 €. Soy un UK PGA Advanced Professional en la isla, recorriendo cada campo.",
     geoP2: "Mejor época: octubre–noviembre y febrero–abril. La isla es jugable todo el año: en enero, cuando los campos en gran parte de Europa son injugables, los fairways aquí están impecables.",
-    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Suroeste', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Sur', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Este", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Norte', courses: 'Alcanada · Golf Pollensa'}],
+    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Suroeste', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Sur', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Este", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or · Reserva Rotana"}, {region: 'Norte', courses: 'Alcanada · Golf Pollensa'}],
   },
   fr: {
     allCourses: 'Tous les parcours', expertPicks: "★ Sélections d'expert uniquement",
@@ -67,9 +67,9 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'Les descriptions des parcours sont en anglais.',
     geoEyebrow: 'Où se trouvent les parcours',
     geoH2: "Majorque possède plus de golf de qualité que la plupart des visiteurs ne l'imaginent.",
-    geoP1: "Vingt-deux parcours: des vrais sites du Tour Européen aux joyaux plus tranquilles et moins connus. Green fees de 20 € à plus de 200 €. Je suis un UK PGA Advanced Professional basé sur l'île, parcourant chaque terrain.",
+    geoP1: "Vingt-quatre parcours: des vrais sites du Tour Européen aux joyaux plus tranquilles et moins connus. Green fees de 20 € à plus de 200 €. Je suis un UK PGA Advanced Professional basé sur l'île, parcourant chaque terrain.",
     geoP2: "Meilleure période : octobre–novembre et février–avril. L'île est jouable toute l'année: en janvier, quand les parcours en Europe sont impraticables, les fairways ici sont impeccables.",
-    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Sud-ouest', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Sud', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Est", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Nord', courses: 'Alcanada · Golf Pollensa'}],
+    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Sud-ouest', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Sud', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Est", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or · Reserva Rotana"}, {region: 'Nord', courses: 'Alcanada · Golf Pollensa'}],
   },
   zh: {
     allCourses: '全部球场', expertPicks: '★ 仅专家推荐',
@@ -91,9 +91,9 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: '球场描述内容为英文。',
     geoEyebrow: '球场地理分布',
     geoH2: "马略卡岛拥有比大多数游客想象的更出色的高尔夫资源。",
-    geoP1: "共22个球场:从真正的欧巡赛场地到安静少人知晓的宝藏球场。果岭费从20欧元到200欧元以上不等。我是驻岛的英国PGA高级职业教练，正在逐一打遍岛上所有球场。",
+    geoP1: "共24个球场:从真正的欧巡赛场地到安静少人知晓的宝藏球场。果岭费从20欧元到200欧元以上不等。我是驻岛的英国PGA高级职业教练，正在逐一打遍岛上所有球场。",
     geoP2: "最佳打球季节：10月至11月和2月至4月。全年均可打球:1月份，当欧洲大部分球场无法开放时，这里的球道依然完美无瑕。",
-    geoRegions: [{region: '帕尔马', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: '西南部', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: '南部', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "东部", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: '北部', courses: 'Alcanada · Golf Pollensa'}],
+    geoRegions: [{region: '帕尔马', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: '西南部', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: '南部', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "东部", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or · Reserva Rotana"}, {region: '北部', courses: 'Alcanada · Golf Pollensa'}],
   },
   nl: {
     allCourses: 'Alle banen', expertPicks: '★ Alleen expertselecties',
@@ -115,9 +115,9 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'De baanbeschrijvingen zijn in het Engels.',
     geoEyebrow: 'Waar de banen liggen',
     geoH2: "Mallorca heeft meer uitstekende golf dan de meeste bezoekers verwachten.",
-    geoP1: "Tweeëntwintig banen: van echte European Tour-locaties tot rustiger, minder bekende parels. Green fees van €20 tot meer dan €200. Ik ben een UK PGA Advanced Professional op het eiland en werk me door elke baan.",
+    geoP1: "Vierentwintig banen: van echte European Tour-locaties tot rustiger, minder bekende parels. Green fees van €20 tot meer dan €200. Ik ben een UK PGA Advanced Professional op het eiland en werk me door elke baan.",
     geoP2: "Beste speeltijd: oktober–november en februari–april. Het eiland is het hele jaar speelbaar: in januari, wanneer banen in Europa gesloten zijn, zijn de fairways hier vlekkeloos.",
-    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Zuidwest', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Zuid', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Oost", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Noord', courses: 'Alcanada · Golf Pollensa'}],
+    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Zuidwest', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Zuid', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Oost", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or · Reserva Rotana"}, {region: 'Noord', courses: 'Alcanada · Golf Pollensa'}],
   },
   sv: {
     allCourses: 'Alla banor', expertPicks: '★ Endast experttips',
@@ -139,9 +139,9 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
     courseNote: 'Banebeskrivningarna är på engelska.',
     geoEyebrow: 'Var banorna ligger',
     geoH2: "Mallorca har mer utmärkt golf än de flesta besökare inser.",
-    geoP1: "Tjugotvå banor: från riktiga European Tour-arenor till lugnare, mindre kända pärlor. Green fees från €20 till över €200. Jag är en UK PGA Advanced Professional på ön och spelar mig igenom varje bana.",
+    geoP1: "Tjugofyra banor: från riktiga European Tour-arenor till lugnare, mindre kända pärlor. Green fees från €20 till över €200. Jag är en UK PGA Advanced Professional på ön och spelar mig igenom varje bana.",
     geoP2: "Bästa speltid: oktober–november och februari–april. Ön är spelbar året runt: i januari, när banor i Europa är obrukbara, är fairwaysarna här immakulate.",
-    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Sydväst', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Söder', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Öst", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or"}, {region: 'Norr', courses: 'Alcanada · Golf Pollensa'}],
+    geoRegions: [{region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Puntiró · Son Termes · Palma Pitch & Putt'}, {region: 'Sydväst', courses: 'Santa Ponsa 1 · Santa Ponsa 2 · Santa Ponsa 3 · T Golf Calvià · Bendinat · Golf de Andratx'}, {region: 'Söder', courses: 'Golf Maioris · Son Antem East · Son Antem West'}, {region: "Öst", courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or · Reserva Rotana"}, {region: 'Norr', courses: 'Alcanada · Golf Pollensa'}],
   },
 }
 
@@ -195,7 +195,7 @@ Object.assign(GOLF_COURSE_UI_TRANSLATIONS.zh, {
   courseNote: '',
   geoEyebrow: '这些球场都分布在哪里',
   geoH2: '马略卡真正出色的高尔夫，比大多数人想象得还要多。',
-  geoP1: '这里一共有 22 座球场，从真正办过 DP World Tour 的球场，到很多游客根本没听过的安静好场子都有。果岭费大约从 20 欧到 200 多欧不等。我是一位常驻岛上的英国 PGA 高级职业教练，也在持续把全岛球场一一打过、认真研究。',
+  geoP1: '这里一共有 24 座球场，从真正办过 DP World Tour 的球场，到很多游客根本没听过的安静好场子都有。果岭费大约从 20 欧到 200 多欧不等。我是一位常驻岛上的英国 PGA 高级职业教练，也在持续把全岛球场一一打过、认真研究。',
   geoP2: '最佳打球时间通常是 10 到 11 月，以及 2 到 4 月。其实全年都能打。1 月份欧洲很多地方的球场不是关就是很软，这里的球道依然常常保持得很好。',
   geoRegions: [
     {

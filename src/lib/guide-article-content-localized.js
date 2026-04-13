@@ -947,7 +947,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: 'Pour les debutants ou les groupes mixtes : Son Quint ou Son Antem East' },
         { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - plus ouvert, plus simple et plus tolerant' },
         { type: 'paragraph', text: 'Si l\'objectif n\'est pas une epreuve pure mais une bonne journee pour plusieurs niveaux, ces parcours fonctionnent mieux. Son Quint est plus ouvert et plus tolerant. Son Antem East convient aussi tres bien aux groupes qui ne veulent pas une partie maximaliste.' },
-        { type: 'facts', items: [['22', 'Parcours sur l\'ile'], ['20-220 EUR', 'Plage de green fees'], ['300', 'Jours de soleil par an'], ['12 mois', 'Jouable toute l\'annee']] },
+        { type: 'facts', items: [['24', 'Parcours sur l\'ile'], ['20-220 EUR', 'Plage de green fees'], ['300', 'Jours de soleil par an'], ['12 mois', 'Jouable toute l\'annee']] },
         { type: 'heading', text: 'Connexions connues a retenir' },
         { type: 'paragraph', text: 'Son Gual : Obama y a joue en novembre 2024 et Nadal y joue regulierement. Son Quint : Tiger Woods et Charlie y ont joue en juillet 2022. Ce n\'est pas tout, mais cela dit quelque chose du niveau et de la visibilite de ces parcours.' },
         { type: 'heading', text: 'Resume honnete' },
@@ -1001,7 +1001,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: 'Voor beginners of gemengde groepen: Son Quint of Son Antem East' },
         { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - opener, vriendelijker en duidelijk vergevingsgezinder' },
         { type: 'paragraph', text: 'Als het niet om een pure test gaat maar om een goede dag voor verschillende niveaus, passen deze banen beter. Son Quint is opener en vriendelijker. Son Antem East werkt ook goed voor groepen die geen maximalistische ronde willen.' },
-        { type: 'facts', items: [['22', 'Banen op het eiland'], ['20-220 EUR', 'Range van greenfees'], ['300', 'Zonnedagen per jaar'], ['12 mnd', 'Het hele jaar speelbaar']] },
+        { type: 'facts', items: [['24', 'Banen op het eiland'], ['20-220 EUR', 'Range van greenfees'], ['300', 'Zonnedagen per jaar'], ['12 mnd', 'Het hele jaar speelbaar']] },
         { type: 'heading', text: 'Bekende connecties die het vermelden waard zijn' },
         { type: 'paragraph', text: 'Son Gual: Obama speelde er in november 2024 en Nadal komt er regelmatig. Son Quint: Tiger Woods en Charlie speelden er in juli 2022. Dat is niet alles, maar het zegt wel iets over de zichtbaarheid en het niveau van deze banen.' },
         { type: 'heading', text: 'Eerlijke samenvatting' },
@@ -1055,7 +1055,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: 'For nyborjare eller blandade grupper: Son Quint eller Son Antem East' },
         { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - oppnare, vanligare och mycket mer forlatande' },
         { type: 'paragraph', text: 'Om man inte vill ha ett rent test utan en bra dag for olika nivaer passar de har banorna battre. Son Quint ar oppnare och snallare. Son Antem East fungerar ocksa bra for grupper som inte vill att allt ska vara maximalt.' },
-        { type: 'facts', items: [['22', 'Banor pa on'], ['20-220 EUR', 'Greenfee-spann'], ['300', 'Soldagar per ar'], ['12 man', 'Spelbart aret runt']] },
+        { type: 'facts', items: [['24', 'Banor pa on'], ['20-220 EUR', 'Greenfee-spann'], ['300', 'Soldagar per ar'], ['12 man', 'Spelbart aret runt']] },
         { type: 'heading', text: 'Kanda kopplingar vart att kanna till' },
         { type: 'paragraph', text: 'Son Gual: Obama spelade dar i november 2024 och Nadal spelar dar regelbundet. Son Quint: Tiger Woods och Charlie spelade dar i juli 2022. Det ar inte allt, men det sager nagot om synligheten och kvaliteten hos de banorna.' },
         { type: 'heading', text: 'Arlig sammanfattning' },
@@ -1109,7 +1109,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: '如果你是初学者或同行水平混合：Son Quint 或 Son Antem East' },
         { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint，更开阔、更友好，也更宽容' },
         { type: 'paragraph', text: '如果你的目标不是打一场硬仗，而是让不同水平的人都能有一个好体验，那这类球场会更合适。Son Quint更开阔，也更宽容。Son Antem East对不想把一轮球搞得太重的人也很友好。' },
-        { type: 'facts', items: [['22', '岛上球场总数'], ['€20-220', '果岭费范围'], ['300', '每年晴天数'], ['12个月', '全年可打']] },
+        { type: 'facts', items: [['24', '岛上球场总数'], ['€20-220', '果岭费范围'], ['300', '每年晴天数'], ['12个月', '全年可打']] },
         { type: 'heading', text: '几个值得知道的名人信息' },
         { type: 'paragraph', text: 'Son Gual：Obama在2024年11月打过，Nadal也常来。Son Quint：Tiger Woods和Charlie在2022年7月来过。它们不是决定性的因素，但能侧面说明这些球场的能见度和等级。' },
         { type: 'heading', text: '诚实总结' },
@@ -1358,9 +1358,9 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - un niveau europeen, pas seulement local' },
         { type: 'heading', text: 'Les conditions sont fortes presque toute l\'annee' },
         { type: 'paragraph', text: '300 jours de soleil par an. En janvier, quand une grande partie de l\'Europe a des parcours fermes ou tres limites, les fairways ici peuvent etre en excellent etat. C\'est l\'une des premieres choses qui m\'a frappe en arrivant depuis Shanghai.' },
-        { type: 'heading', text: '22 parcours sur une ile relativement compacte' },
-        { type: 'paragraph', text: 'Je viens de Shanghai : 27 millions d\'habitants pour 12 parcours. Ici, il y a 22 parcours sur une ile ou une heure de voiture ouvre deja beaucoup d\'options. Pour le visiteur, cette densite est un vrai avantage.' },
-        { type: 'facts', items: [['22', 'Parcours sur l\'ile'], ['3', 'Sites European Tour'], ['300', 'Jours de soleil par an'], ['100 km', 'Ile d\'un bout a l\'autre']] },
+        { type: 'heading', text: '24 parcours sur une ile relativement compacte' },
+        { type: 'paragraph', text: 'Je viens de Shanghai : 27 millions d\'habitants pour 12 parcours. Ici, il y a 24 parcours sur une ile ou une heure de voiture ouvre deja beaucoup d\'options. Pour le visiteur, cette densite est un vrai avantage.' },
+        { type: 'facts', items: [['24', 'Parcours sur l\'ile'], ['3', 'Sites European Tour'], ['300', 'Jours de soleil par an'], ['100 km', 'Ile d\'un bout a l\'autre']] },
         { type: 'heading', text: 'Les reserves honnetes' },
         { type: 'subheading', text: 'Juillet et aout sont chauds et frequentes' },
         { type: 'paragraph', text: 'On peut jouer, mais c\'est plus cher et plus chaud. Ce ne serait pas mon premier choix pour un voyage 100 % golf. Les departs tot ne sont pas un luxe, ils sont necessaires.' },
@@ -1406,9 +1406,9 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - Europees niveau, niet alleen lokaal sterk' },
         { type: 'heading', text: 'De omstandigheden zijn bijna het hele jaar sterk' },
         { type: 'paragraph', text: '300 zonnedagen per jaar. In januari, wanneer in grote delen van Europa banen gesloten of beperkt bespeelbaar zijn, kunnen de fairways hier er opvallend goed bij liggen. Dat was een van de eerste dingen die mij opviel toen ik uit Shanghai kwam.' },
-        { type: 'heading', text: '22 banen op een relatief compacte eilandkaart' },
-        { type: 'paragraph', text: 'Ik kom uit Shanghai: 27 miljoen mensen en 12 banen. Hier zijn het er 22, op een eiland waar een uur rijden al veel opties opent. Voor bezoekers is die dichtheid een echte troef.' },
-        { type: 'facts', items: [['22', 'Banen op het eiland'], ['3', 'European Tour-locaties'], ['300', 'Zonnedagen per jaar'], ['100 km', 'Eiland van punt tot punt']] },
+        { type: 'heading', text: '24 banen op een relatief compacte eilandkaart' },
+        { type: 'paragraph', text: 'Ik kom uit Shanghai: 27 miljoen mensen en 12 banen. Hier zijn het er 24, op een eiland waar een uur rijden al veel opties opent. Voor bezoekers is die dichtheid een echte troef.' },
+        { type: 'facts', items: [['24', 'Banen op het eiland'], ['3', 'European Tour-locaties'], ['300', 'Zonnedagen per jaar'], ['100 km', 'Eiland van punt tot punt']] },
         { type: 'heading', text: 'De eerlijke kanttekeningen' },
         { type: 'subheading', text: 'Juli en augustus zijn heet en druk' },
         { type: 'paragraph', text: 'Er is te spelen, maar het is warmer en duurder. Voor een pure golfreis zou ik deze maanden niet als eerste aanbevelen. Vroege tee times zijn dan geen luxe, maar noodzakelijk.' },
@@ -1454,9 +1454,9 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - europeisk standard, inte bara stark lokalt' },
         { type: 'heading', text: 'Forhallandena ar starka nastan hela aret' },
         { type: 'paragraph', text: '300 soldagar per ar. I januari, nar stora delar av Europa har stangda eller mycket begransade banor, kan fairways har vara i riktigt fint skick. Det var en av de forsta sakerna jag reagerade pa nar jag kom hit fran Shanghai.' },
-        { type: 'heading', text: '22 banor pa en relativt kompakt o' },
-        { type: 'paragraph', text: 'Jag kommer fran Shanghai: 27 miljoner manniskor och 12 banor. Har finns 22 banor pa en o dar en timmes bilresa redan oppnar manga val. For besokare ar den tatheten en riktig fordel.' },
-        { type: 'facts', items: [['22', 'Banor pa on'], ['3', 'European Tour-arenor'], ['300', 'Soldagar per ar'], ['100 km', 'On fran ände till ände']] },
+        { type: 'heading', text: '24 banor pa en relativt kompakt o' },
+        { type: 'paragraph', text: 'Jag kommer fran Shanghai: 27 miljoner manniskor och 12 banor. Har finns 24 banor pa en o dar en timmes bilresa redan oppnar manga val. For besokare ar den tatheten en riktig fordel.' },
+        { type: 'facts', items: [['24', 'Banor pa on'], ['3', 'European Tour-arenor'], ['300', 'Soldagar per ar'], ['100 km', 'On fran ände till ände']] },
         { type: 'heading', text: 'De arliga invandningarna' },
         { type: 'subheading', text: 'Juli och augusti ar varma och fulla' },
         { type: 'paragraph', text: 'Det gar att spela, men det ar varmare och dyrare. For en ren golfresa skulle jag inte satt dessa manader forst. Tidiga tee times ar da inte lyx utan nodvandiga.' },
@@ -1504,7 +1504,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '一年大约300个晴天。1月时，当欧洲很多地方的球场不是关就是很难打，这里的球道却可能已经非常漂亮。这是我从上海搬来以后，最早明确感受到的优势之一。' },
         { type: 'heading', text: '22座球场，集中在一座并不大的岛上' },
         { type: 'paragraph', text: '我来自上海：2700万人口，只有12座球场。这里是22座球场，而且岛并不大，开车一小时已经可以覆盖很多选择。对游客来说，这种密度非常有价值。' },
-        { type: 'facts', items: [['22', '岛上球场数量'], ['3', 'European Tour承办场地'], ['300', '每年晴天数'], ['100公里', '岛的一端到另一端']] },
+        { type: 'facts', items: [['24', '岛上球场数量'], ['3', 'European Tour承办场地'], ['300', '每年晴天数'], ['100公里', '岛的一端到另一端']] },
         { type: 'heading', text: '也要把缺点说清楚' },
         { type: 'subheading', text: '7月和8月很热，也更拥挤' },
         { type: 'paragraph', text: '不是不能打，但会更贵、更热。对于一趟纯高尔夫行程，这不是我优先推荐的窗口。早场开球不是讲究，而是必要。' },
@@ -1905,7 +1905,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         readTime: '8 Min. Lesezeit',
         updated: 'März 2026',
         title: 'Die besten Golfplätze auf Mallorca - ehrlich eingeordnet',
-        intro: '22 Plätze auf der Insel. So würde ich sie für Besucher mit wenig Zeit und hohen Ansprüchen priorisieren.',
+        intro: '24 Plätze auf der Insel. So würde ich sie für Besucher mit wenig Zeit und hohen Ansprüchen priorisieren.',
         related: [
           { slug: 'golf-trip-planning-mallorca', title: 'Golfreise nach Mallorca planen' },
           { slug: 'best-time-play-golf-mallorca', title: 'Die beste Zeit für Golf auf Mallorca' },
@@ -1937,7 +1937,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: 'Fuer Anfaenger oder gemischte Gruppen: Son Quint oder Son Antem East' },
         { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - breiter, freundlicher und deutlich verzeihender' },
         { type: 'paragraph', text: 'Wer nicht eine reine Pruefung sucht, sondern einen guten Tag fuer verschiedene Spielstaerken, ist hier besser aufgehoben. Son Quint ist offener und verzeihender. Son Antem East ist ebenfalls angenehm fuer Gruppen, die nicht jede Runde maximal schwer haben wollen.' },
-        { type: 'facts', items: [['22', 'Plaetze auf der Insel'], ['20-220 EUR', 'Greenfee-Spanne'], ['300', 'Sonnentage pro Jahr'], ['12 Mon.', 'Ganzjaehrig spielbar']] },
+        { type: 'facts', items: [['24', 'Plaetze auf der Insel'], ['20-220 EUR', 'Greenfee-Spanne'], ['300', 'Sonnentage pro Jahr'], ['12 Mon.', 'Ganzjaehrig spielbar']] },
         { type: 'heading', text: 'Prominente Verbindungen, die man kennen sollte' },
         { type: 'paragraph', text: 'Son Gual: Obama spielte dort im November 2024, Nadal regelmaessig. Son Quint: Tiger Woods und Charlie spielten dort im Juli 2022. Solche Details sind nicht alles - aber sie sagen etwas ueber die Qualitaet und Sichtbarkeit der Plaetze aus.' },
         { type: 'heading', text: 'Die ehrliche Zusammenfassung' },
@@ -1991,7 +1991,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: 'Para principiantes o grupos mixtos: Son Quint o Son Antem East' },
         { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - mas abierto, amable y bastante mas tolerante' },
         { type: 'paragraph', text: 'Si no se busca una prueba pura sino un buen dia para niveles distintos, estos encajan mucho mejor. Son Quint es mas abierto y permisivo. Son Antem East tambien funciona bien para grupos que no quieren una ronda maximalista.' },
-        { type: 'facts', items: [['22', 'Campos en la isla'], ['20-220 EUR', 'Rango de greenfees'], ['300', 'Dias de sol al ano'], ['12 meses', 'Jugable todo el ano']] },
+        { type: 'facts', items: [['24', 'Campos en la isla'], ['20-220 EUR', 'Rango de greenfees'], ['300', 'Dias de sol al ano'], ['12 meses', 'Jugable todo el ano']] },
         { type: 'heading', text: 'Conexiones conocidas que merece saber' },
         { type: 'paragraph', text: 'Son Gual: Obama jugo alli en noviembre de 2024 y Nadal juega con regularidad. Son Quint: Tiger Woods y Charlie jugaron alli en julio de 2022. No es lo mas importante, pero dice algo del perfil y de la calidad visible de esos campos.' },
         { type: 'heading', text: 'Resumen honesto' },
@@ -2138,9 +2138,9 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - einer der stärksten Plätze Europas, nicht nur Spaniens' },
         { type: 'heading', text: 'Die Bedingungen sind fast das ganze Jahr stark' },
         { type: 'paragraph', text: '300 Sonnentage pro Jahr. Im Januar, wenn in weiten Teilen Europas Plätze geschlossen oder kaum spielbar sind, können die Fairways hier in sehr gutem Zustand sein. Genau das hat mich beim Umzug aus Shanghai sofort beeindruckt.' },
-        { type: 'heading', text: '22 Plätze auf relativ kleinem Raum' },
-        { type: 'paragraph', text: 'Ich komme aus Shanghai - 27 Millionen Menschen und nur 12 Plätze. Hier liegen 22 Plätze auf einer Insel, auf der man in etwa einer Stunde fast alles erreichen kann. Diese Dichte an Golfqualität ist für Besucher enorm praktisch.' },
-        { type: 'facts', items: [['22', 'Plätze auf der Insel'], ['3', 'European-Tour-Austragungsorte'], ['300', 'Sonnentage pro Jahr'], ['100 km', 'Insel von Ende zu Ende']] },
+        { type: 'heading', text: '24 Plätze auf relativ kleinem Raum' },
+        { type: 'paragraph', text: 'Ich komme aus Shanghai - 27 Millionen Menschen und nur 12 Plätze. Hier liegen 24 Plätze auf einer Insel, auf der man in etwa einer Stunde fast alles erreichen kann. Diese Dichte an Golfqualität ist für Besucher enorm praktisch.' },
+        { type: 'facts', items: [['24', 'Plätze auf der Insel'], ['3', 'European-Tour-Austragungsorte'], ['300', 'Sonnentage pro Jahr'], ['100 km', 'Insel von Ende zu Ende']] },
         { type: 'heading', text: 'Die ehrlichen Einschränkungen' },
         { type: 'subheading', text: 'Juli und August sind heiß und voll' },
         { type: 'paragraph', text: 'Spielbar, aber teuer und warm. Nicht ideal für eine reine Golfreise. Frühe Tee Times sind in diesen Monaten Pflicht, nicht Luxus.' },
@@ -2186,9 +2186,9 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - un campo de nivel europeo, no solo mallorquín' },
         { type: 'heading', text: 'Las condiciones son fuertes casi todo el año' },
         { type: 'paragraph', text: '300 días de sol al año. En enero, cuando gran parte de Europa tiene campos cerrados o muy limitados, aquí los fairways pueden estar en gran estado. Eso fue una de las primeras cosas que me llamó la atención al llegar desde Shanghai.' },
-        { type: 'heading', text: '22 campos en una isla relativamente compacta' },
-        { type: 'paragraph', text: 'Vengo de Shanghai: 27 millones de personas y 12 campos. Aquí hay 22 campos en una isla donde, en una hora de coche, alcanza para muchísimo. Para el visitante, esa densidad es una ventaja real.' },
-        { type: 'facts', items: [['22', 'Campos en la isla'], ['3', 'Sedes de European Tour'], ['300', 'Días de sol al año'], ['100 km', 'La isla de punta a punta']] },
+        { type: 'heading', text: '24 campos en una isla relativamente compacta' },
+        { type: 'paragraph', text: 'Vengo de Shanghai: 27 millones de personas y 12 campos. Aquí hay 24 campos en una isla donde, en una hora de coche, alcanza para muchísimo. Para el visitante, esa densidad es una ventaja real.' },
+        { type: 'facts', items: [['24', 'Campos en la isla'], ['3', 'Sedes de European Tour'], ['300', 'Días de sol al año'], ['100 km', 'La isla de punta a punta']] },
         { type: 'heading', text: 'Las advertencias honestas' },
         { type: 'subheading', text: 'Julio y agosto son calurosos y concurridos' },
         { type: 'paragraph', text: 'Se puede jugar, pero es más caro y hace calor. No es mi primera recomendación para un viaje centrado solo en golf. Las salidas tempranas son obligatorias, no opcionales.' },
@@ -4718,7 +4718,7 @@ const REPAIRED_ARTICLE_LOCALES = {
           "type": "facts",
           "items": [
             [
-              "22",
+              "24",
               "Parcours sur l'ile"
             ],
             [
@@ -4942,7 +4942,7 @@ const REPAIRED_ARTICLE_LOCALES = {
           "type": "facts",
           "items": [
             [
-              "22",
+              "24",
               "Banen op het eiland"
             ],
             [
@@ -5166,7 +5166,7 @@ const REPAIRED_ARTICLE_LOCALES = {
           "type": "facts",
           "items": [
             [
-              "22",
+              "24",
               "Banor pa on"
             ],
             [
@@ -5390,7 +5390,7 @@ const REPAIRED_ARTICLE_LOCALES = {
           "type": "facts",
           "items": [
             [
-              "22",
+              "24",
               "岛上球场总数"
             ],
             [
@@ -6189,17 +6189,17 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "heading",
-          "text": "22 parcours sur une ile relativement compacte"
+          "text": "24 parcours sur une ile relativement compacte"
         },
         {
           "type": "paragraph",
-          "text": "Je viens de Shanghai : 27 millions d'habitants pour 12 parcours. Ici, il y a 22 parcours sur une ile ou une heure de voiture ouvre deja beaucoup d'options. Pour le visiteur, cette densite est un vrai avantage."
+          "text": "Je viens de Shanghai : 27 millions d'habitants pour 12 parcours. Ici, il y a 24 parcours sur une ile ou une heure de voiture ouvre deja beaucoup d'options. Pour le visiteur, cette densite est un vrai avantage."
         },
         {
           "type": "facts",
           "items": [
             [
-              "22",
+              "24",
               "Parcours sur l'ile"
             ],
             [
@@ -6348,17 +6348,17 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "heading",
-          "text": "22 banen op een relatief compacte eilandkaart"
+          "text": "24 banen op een relatief compacte eilandkaart"
         },
         {
           "type": "paragraph",
-          "text": "Ik kom uit Shanghai: 27 miljoen mensen en 12 banen. Hier zijn het er 22, op een eiland waar een uur rijden al veel opties opent. Voor bezoekers is die dichtheid een echte troef."
+          "text": "Ik kom uit Shanghai: 27 miljoen mensen en 12 banen. Hier zijn het er 24, op een eiland waar een uur rijden al veel opties opent. Voor bezoekers is die dichtheid een echte troef."
         },
         {
           "type": "facts",
           "items": [
             [
-              "22",
+              "24",
               "Banen op het eiland"
             ],
             [
@@ -6507,17 +6507,17 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "heading",
-          "text": "22 banor pa en relativt kompakt o"
+          "text": "24 banor pa en relativt kompakt o"
         },
         {
           "type": "paragraph",
-          "text": "Jag kommer fran Shanghai: 27 miljoner manniskor och 12 banor. Har finns 22 banor pa en o dar en timmes bilresa redan oppnar manga val. For besokare ar den tatheten en riktig fordel."
+          "text": "Jag kommer fran Shanghai: 27 miljoner manniskor och 12 banor. Har finns 24 banor pa en o dar en timmes bilresa redan oppnar manga val. For besokare ar den tatheten en riktig fordel."
         },
         {
           "type": "facts",
           "items": [
             [
-              "22",
+              "24",
               "Banor pa on"
             ],
             [
@@ -6676,7 +6676,7 @@ const REPAIRED_ARTICLE_LOCALES = {
           "type": "facts",
           "items": [
             [
-              "22",
+              "24",
               "岛上球场数量"
             ],
             [

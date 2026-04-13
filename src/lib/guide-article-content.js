@@ -414,7 +414,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       updated: 'March 2026',
       title: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
       intro:
-          "Mallorca has more outstanding golf than most visitors realise. Twenty-two courses, several of them capable of hosting European Tour events. Here's what I know from playing them.",
+          "Mallorca has more outstanding golf than most visitors realise. Twenty-four courses, several of them capable of hosting European Tour events. Here's what I know from playing them.",
       related: [
         { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
         { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
@@ -426,7 +426,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Mallorca - or Majorca if you grew up spelling it that way - is a much better golf destination than most people realise. I moved here from Shanghai in March 2025, where I had spent eleven years coaching in a city of 27 million people with not enough golf courses between them. Mostly built to championship standards as there was no point having anything there that was not the best. Arriving on an island with 22 courses, many hosting international competitions, in conditions that stay quality even through the winter, felt like discovering a secret.',
+          'Mallorca - or Majorca if you grew up spelling it that way - is a much better golf destination than most people realise. I moved here from Shanghai in March 2025, where I had spent eleven years coaching in a city of 27 million people with not enough golf courses between them. Mostly built to championship standards as there was no point having anything there that was not the best. Arriving on an island with 24 courses, many hosting international competitions, in conditions that stay quality even through the winter, felt like discovering a secret.',
       },
       {
         type: 'paragraph',
@@ -538,7 +538,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'facts',
         items: [
-          ['22', 'Courses on the island'],
+          ['24', 'Courses on the island'],
           ['€20-220', 'Green fee range'],
           ['300', 'Days of sunshine'],
           ['12 mo', 'Playable year-round'],
@@ -744,7 +744,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         text:
           '300 days of sunshine. In January, when courses in much of Europe are closed or unplayable, the fairways here are immaculate. I moved from Shanghai, but grew up in the UK, and the off-season course conditions were the first thing that surprised me.',
       },
-      { type: 'heading', text: '22 Courses on a Relatively Small Island' },
+      { type: 'heading', text: '24 Courses on a Relatively Small Island' },
       {
         type: 'paragraph',
         text:
@@ -753,7 +753,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'facts',
         items: [
-          ['22', 'Courses on the island'],
+          ['24', 'Courses on the island'],
           ['3', 'European Tour venues'],
           ['300', 'Days of sunshine'],
           ['100km', 'Island end to end'],

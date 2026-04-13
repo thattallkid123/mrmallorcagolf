@@ -61,7 +61,7 @@ export const GUIDES_CONTENT = {
         badge: 'Guide',
         title: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Ranking",
         intro:
-          'Twenty-two courses on the island. Here is how I would rank them for a visitor with limited time and high standards.',
+          'Twenty-four courses on the island. Here is how I would rank them for a visitor with limited time and high standards.',
         readTime: '8 min read',
         keywords: 'All levels · Green fees compared · Updated 2026',
       },
