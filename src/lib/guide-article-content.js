@@ -18,7 +18,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       updated: 'March 2026',
       title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
       intro:
-        'A round can cost €20 or €220 depending on where you play and when. Here is the honest breakdown for 2026 from someone who plays here most weeks.',
+        'Public 18-hole golf in Mallorca runs from about €55 at the value end up to around €252 at Son Muntaner in peak season. Here is the honest 2026 breakdown from someone who plays here most weeks.',
       related: [
         { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
         { slug: 'golf-club-hire-mallorca', title: 'Golf Club Hire in Mallorca' },
@@ -37,7 +37,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '€20-50. Palma Pitch & Putt is a proper short-course option at the lower end. Great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
+          '€15-25 at Palma Pitch & Putt, or around €55-65 if you want the cheapest full-size options such as Golf Pollensa in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
       },
       {
         type: 'image',
@@ -50,18 +50,18 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Approximately €80-145 depending on season. Son Termes from €80, Bendinat €74-123, Capdepera €65-135, Canyamel €85-145, Son Servera €80-145, Vall d'Or €99-132. These are proper courses in great conditions and not just an after-thought. Always check the course website for current rates as prices shift seasonally.",
+          "Roughly €74-145 depending on course, month, and tee time. Bendinat, Son Termes, Capdepera, Canyamel, Son Servera, Vall d'Or, Maioris, Santa Ponsa 1, Pula, and the Son Antem courses all live in this middle bracket at some point in the year. These are proper courses in good condition, not afterthought golf.",
       },
       { type: 'subheading', text: 'Premium courses' },
       {
         type: 'paragraph',
         text:
-          'Son Gual ranges from €115 in low season to €165 at peak (March-May and September-November). Alcanada ranges from €115 in low season to €220 at peak. Both are published 2026 rate cards. Son Muntaner - named Best Golf Course in Spain at the 2025 World Golf Awards - sits in a similar bracket. Verify current rates at arabellagolfmallorca.com.',
+          'Son Gual sits around €109-165. Alcanada runs roughly €115-220. Son Muntaner reaches around €252 at peak and drops to around €130 in the value window, with twilight often around €127. T Golf Calvia can push to around €210, and Son Vida to around €191. The top end in Mallorca is higher than many older guides suggest.',
       },
       {
         type: 'paragraph',
         text:
-          "Many courses have dynamic pricing, so if you are looking to get a tee-time last minute, at a busy course, you'll be paying more for it! Plan early, set your priorities and save a little bit of cash. Looking on club websites for Black Friday, Christmas and other promotional deals is well worth doing. Many courses partner up to offer discounts on multiple rounds and more. You can frequently save 30-40% if you do this right.",
+          "Around half the island now uses dynamic pricing, including the Arabella courses, both T Golf venues, Pula, Capdepera, and Son Antem East and West. The practical rule is simple: the earlier you book, the better your chance of locking in the lower end of the range. Black Friday, winter, and multi-round partner offers can still save real money if you time them well.",
       },
       {
         type: 'image',
@@ -79,7 +79,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'January-February and November. Green fees at most courses drop 20-30% compared to peak, and the courses are in excellent condition. Peak is March-May and September-November - busiest, most expensive, and the best conditions of the year.',
+          'June-August and December-February are usually the value windows. Peak pricing is normally mid-March to early June and mid-September to mid-November. That matters because a lot of older Mallorca golf advice still wrongly treats October to April as the cheap season.',
       },
       { type: 'heading', text: 'Club Hire' },
       {
@@ -178,12 +178,12 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'October-November and February-April are the best months. Courses in peak condition, comfortable temperatures (18-24°C), lower green fees than summer, fewer groups on the course. October is my personal favourite.',
+          'If you want the best conditions, aim for the spring and autumn peak windows. If you want better value, look more closely at June-August and December-February. October is still one of my favourite months to play, but it is no longer the cheap option.',
       },
       {
         type: 'paragraph',
         text:
-          'May and June are excellent, but prices rise. July-August: hot (35°C+), expensive, busiest. Early tee times essential. December-January: cheaper, variable weather but often outstanding. A clear January day here is extraordinary.',
+          'Late spring is excellent but expensive. Summer is hot, but it is also when many courses soften pricing materially, especially if you play early or go twilight. Winter is quieter, cooler, and often one of the best-value times to be here.',
       },
       { type: 'heading', text: 'How Many Rounds?' },
       {
@@ -301,7 +301,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       updated: 'March 2026',
       title: 'The Best Time of Year to Play Golf in Mallorca - Month by Month (2026)',
       intro:
-        'Short answer: October-November and February-April. But the island plays better year-round than most people expect.',
+        'Short answer: for pure conditions, late spring and autumn. For value, summer mornings, twilight, and winter. The island plays better year-round than most people expect.',
       related: [
         { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
         { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
@@ -321,7 +321,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['300+', 'Days of sunshine per year'],
           ['12', 'Months playable'],
           ['Oct', 'Personal favourite month'],
-          ['20-30%', 'Fee reduction in low season'],
+          ['30-50%', 'Typical drop from peak to value windows'],
         ],
       },
       { type: 'heading', text: 'January-February' },
@@ -334,7 +334,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '16-20°C, courses recovering from the not so harsh winter, fewer crowds than summer. Green fees rising but not yet peak. Alcanada starts picking up with the Rolex Challenge Tour preparation. My second-favourite window to explore new courses without the crowds and take some pictures and videos alongside it.',
+          '16-20°C, courses in very good shape, and still more manageable than late spring. Prices are already climbing here, and by mid-March many clubs are effectively in peak-season mode. Great golf, but not the bargain window many people assume.',
       },
       {
         type: 'image',
@@ -347,13 +347,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Excellent golf weather - 20-26°C, courses in pristine condition, and long evenings. Prices rise with the tourist season. You need to book tee times at the top courses well in advance. Get the sunrise or sunset tee times and it can be genuinely outstanding if you book ahead.',
+          'Excellent golf weather and some of the best conditioning of the year. This is firmly premium-season pricing. If you want these months, book early and expect to pay the top rates, especially at the better-known courses.',
       },
       { type: 'heading', text: 'July-August' },
       {
         type: 'paragraph',
         text:
-          "Hot (30-38°C), busy, and expensive. Peak green fees. Early morning tee times (7-8am) are essential - playing after 11am in August is not so fun, but manageable in a buggy and good prep. Still playable, but not the window I'd choose for a dedicated golf trip.",
+          "Hot (30-38°C), and early tee times are essential. But this is where the old Mallorca pricing logic breaks down: many courses actually reduce rates in summer, often by 30-50% compared with peak spring and autumn. If budget matters more than perfect temperatures, summer can make real sense.",
       },
       {
         type: 'pull',
@@ -364,7 +364,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'My favourite! Temperatures drop a little to a comfortable 22-26°C, post-summer courses are in excellent condition, green fees beginning to fall and often the greens get even faster at this point too. September still busy; October noticeably quieter. Peak conditions, in between - the sweet spot.',
+          'Still my favourite stretch for pure golf. Temperatures are comfortable, the courses are in excellent condition, and October especially feels brilliant on the island. But this is also one of the most expensive windows, so talk about it as peak-season golf, not as a bargain period.',
       },
       {
         type: 'paragraph',
@@ -382,13 +382,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "November is excellent and underrated. Quiet, good value, courses playing well and still a big percentage of blue sky days, even if you might need to wear a jumper too. December is variable but often better than you would expect. Christmas week is surprisingly busy with northern Europeans fleeing winter and wanting some sun.",
+          "November is excellent, but the first half still sits in that expensive autumn window at a lot of clubs. December is where the better value returns. It is cooler and more changeable, but often far better than visitors expect and usually much easier on the wallet.",
       },
       { type: 'heading', text: 'The Verdict' },
       {
         type: 'paragraph',
         text:
-          "October, November, March, and April are my recommendations. Best combination of course conditions, weather, value, and pace of play. If you want to avoid crowds entirely and don't mind cooler mornings, January-February is well worth considering.",
+          "For the best conditions, I still point people toward late spring and autumn. For better value, I would now look much harder at June-August and December-February. If you want quiet golf and lower rates, winter and summer twilight are both more interesting than older Mallorca advice suggests.",
       },
       {
         type: 'cta',
@@ -426,7 +426,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Mallorca - or Majorca if you grew up spelling it that way - is a much better golf destination than most people realise. I moved here from Shanghai in March 2025, where I had spent eleven years coaching in a city of 27 million people with not enough golf courses between them. Mostly built to championship standards as there was no point having anything there that was not the best. Arriving on an island with 24 courses, many hosting international competitions, in conditions that stay quality even through the winter, felt like discovering a secret.',
+          'Mallorca - or Majorca if you grew up spelling it that way - is a much better golf destination than most people realise. I moved here from Shanghai in March 2025, where I had spent eleven years coaching in a city of 27 million people with not enough golf courses between them. Mostly built to championship standards as there was no point having anything there that was not the best. Arriving on an island with 24 courses, 21 of them open to green-fee visitors, in conditions that stay quality even through the winter, felt like discovering a secret.',
       },
       {
         type: 'paragraph',
@@ -539,9 +539,9 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'facts',
         items: [
           ['24', 'Courses on the island'],
-          ['€20-220', 'Green fee range'],
+          ['€55-252', '18-hole green fee range'],
           ['300', 'Days of sunshine'],
-          ['12 mo', 'Playable year-round'],
+          ['12 mo', 'Golf played year-round'],
         ],
       },
       { type: 'heading', text: 'Celebrity Connections Worth Knowing' },

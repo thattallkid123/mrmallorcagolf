@@ -179,22 +179,23 @@ export function getSitemapPaths() {
   const paths = []
   const sharedPages = Array.from(SHARED_BASE_PATHS)
 
+  // Include shared pages in all locales (they exist in all languages)
   for (const locale of ALL_LOCALES) {
     for (const path of sharedPages) {
       paths.push(buildLocalePath(path, locale))
     }
   }
 
+  // Review posts: include ALL locales (published in all languages)
   for (const slug of REVIEW_POST_SLUGS) {
     for (const locale of ALL_LOCALES) {
       paths.push(buildLocalePath(`/guides/${slug}`, locale))
     }
   }
 
+  // Article/guide posts: English ONLY (non-English versions point to English canonical)
   for (const slug of ARTICLE_SLUGS) {
-    for (const locale of ALL_LOCALES) {
-      paths.push(buildLocalePath(`/guides/${slug}`, locale))
-    }
+    paths.push(`/guides/${slug}`)
   }
 
   return [...new Set(paths)]

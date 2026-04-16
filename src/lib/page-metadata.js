@@ -42,7 +42,7 @@ const GOLF_COURSES_METADATA = {
   en: {
     title: 'Mallorca Golf Guide 2026 - Every Course on the Island',
     description:
-      'The complete guide to golf in Mallorca - all 24 courses, green fees, difficulty ratings, and honest recommendations from a PGA professional based on the island. 2026 edition.',
+      'The complete guide to golf in Mallorca - all 24 courses, including 21 open to green-fee visitors, plus honest recommendations from a PGA professional based on the island. 2026 edition.',
   },
   de: {
     title: 'Mallorca Golf Guide 2026 - Jeder Kurs auf der Insel',
@@ -72,7 +72,7 @@ const GOLF_COURSES_METADATA = {
   zh: {
     title: 'Mallorca Golf Guide 2026 - All Courses on the Island',
     description:
-      'A complete guide to golf in Mallorca covering all 24 courses, green fees, difficulty ratings, and honest recommendations from a PGA professional based on the island.',
+      'A complete guide to golf in Mallorca covering all 24 courses, including 21 open to green-fee visitors, plus honest recommendations from a PGA professional based on the island.',
   },
 }
 
@@ -327,9 +327,10 @@ export function buildGuidePostMetadata({
   publishedTime = '2026-03-01',
 }) {
   const pathname = locale === 'en' ? `/guides/${slug}` : `/${locale}/guides/${slug}`
+  const canonicalPath = `/guides/${slug}`
   const imageUrl = imagePath.startsWith('http') ? imagePath : `${SITE_ORIGIN}${imagePath}`
 
-  return buildPageMetadata(pathname, locale, {
+  const metadata = {
     title,
     description,
     openGraph: {
@@ -347,7 +348,19 @@ export function buildGuidePostMetadata({
       description,
       images: [imageUrl],
     },
-  })
+  }
+
+  const builtMetadata = buildPageMetadata(pathname, locale, metadata)
+
+  // For non-English locales, override canonical to point to English version
+  if (locale !== 'en') {
+    builtMetadata.alternates = {
+      ...builtMetadata.alternates,
+      canonical: `${SITE_ORIGIN}${canonicalPath}`,
+    }
+  }
+
+  return builtMetadata
 }
 
 export function buildAboutMetadata(locale = 'en') {

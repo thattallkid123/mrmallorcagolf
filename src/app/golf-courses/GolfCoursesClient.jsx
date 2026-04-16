@@ -15,6 +15,149 @@ import {
   slugifyCourseName,
 } from '../../lib/golf-courses-helpers'
 
+const COURSE_META = {
+  'Golf Son Gual': { peakPrice: 165, lowPrice: 109, dynamic: false, distanceKm: 11 },
+  'Golf Son Vida': { peakPrice: 191, lowPrice: 79, twilightPrice: 93, dynamic: true, distanceKm: 7 },
+  'Son Muntaner': { peakPrice: 252, lowPrice: 130, twilightPrice: 127, dynamic: true, distanceKm: 7 },
+  'Golf Son Quint': { peakPrice: 140, lowPrice: 69, twilightPrice: 74, dynamic: true, distanceKm: 8 },
+  'T Golf Palma (Puntirò)': { peakPrice: 138, twilightPrice: 100, dynamic: true, distanceKm: 10 },
+  'Palma Pitch & Putt': { peakPrice: 25, lowPrice: 15, dynamic: false, distanceKm: 4 },
+  'Golf Son Termes': { peakPrice: 110, lowPrice: 90, twilightPrice: 85, dynamic: false, distanceKm: 10 },
+  'Golf Santa Ponsa 1': { peakPrice: 126, lowPrice: 77, twilightPrice: 88, dynamic: false, distanceKm: 20 },
+  'Golf Santa Ponsa 2': { peakPrice: null, dynamic: false, distanceKm: 20 },
+  'Golf Santa Ponsa 3': { peakPrice: null, dynamic: false, distanceKm: 20 },
+  'Real Golf de Bendinat': { peakPrice: 123, lowPrice: 74, twilightPrice: 85, dynamic: false, distanceKm: 7 },
+  'T Golf Calvià (Poniente)': { peakPrice: 210, twilightPrice: 169, dynamic: true, distanceKm: 12 },
+  'Golf de Andratx': { peakPrice: 140, lowPrice: 96, dynamic: false, distanceKm: 40 },
+  'Golf Maioris': { peakPrice: 110, lowPrice: 81, twilightPrice: 81, dynamic: false, distanceKm: 20 },
+  'Golf Son Antem East': { peakPrice: 140, lowPrice: 105, twilightPrice: 90, dynamic: true, distanceKm: 15 },
+  'Golf Son Antem West': { peakPrice: 135, lowPrice: 109, twilightPrice: 91, dynamic: true, distanceKm: 15 },
+  'Capdepera Golf': { peakPrice: 135, lowPrice: 85, dynamic: true, distanceKm: 65 },
+  'Canyamel Golf': { peakPrice: 145, lowPrice: 85, twilightPrice: 65, dynamic: false, distanceKm: 65 },
+  'Pula Golf': { peakPrice: 145, lowPrice: 79, dynamic: true, distanceKm: 55 },
+  'Golf Club Son Servera': { peakPrice: 145, lowPrice: 80, twilightPrice: 105, dynamic: false, distanceKm: 55 },
+  "Vall d'Or Golf": { peakPrice: 130, lowPrice: 98, twilightPrice: 85, dynamic: false, distanceKm: 60 },
+  'Reserva Rotana': { peakPrice: null, dynamic: false, distanceKm: 50 },
+  'Club de Golf Alcanada': { peakPrice: 220, lowPrice: 115, twilightPrice: 129, dynamic: false, distanceKm: 55 },
+  'Golf Pollença': { peakPrice: 65, lowPrice: 55, dynamic: false, distanceKm: 60 },
+}
+
+const SORT_UI = {
+  en: {
+    controlsIntro: 'Filter by region. Each card shows peak green fee, par, rating, and key things to know before you play.',
+    dynamicKey: '* Dynamic-pricing course. Peak price is shown for sorting; live tee-time prices can move up or down.',
+    sortLabel: 'Sort:',
+    topRated: 'Top Rated',
+    az: 'A-Z',
+    priceHighLow: 'Price High-Low',
+    priceLowHigh: 'Price Low-High',
+    nearest: 'Nearest',
+  },
+  de: {
+    controlsIntro: 'Nach Region filtern. Jede Karte zeigt Spitzen-Greenfee, Par, Bewertung und die wichtigsten Hinweise vor der Runde.',
+    dynamicKey: '* Platz mit dynamischer Preisgestaltung. Fuer die Sortierung wird der Spitzenpreis gezeigt; Live-Preise koennen sich aendern.',
+    sortLabel: 'Sortierung:',
+    topRated: 'Top bewertet',
+    az: 'A-Z',
+    priceHighLow: 'Preis Hoch-Tief',
+    priceLowHigh: 'Preis Tief-Hoch',
+    nearest: 'Am naechsten',
+  },
+  es: {
+    controlsIntro: 'Filtra por zona. Cada ficha muestra green fee pico, par, valoracion y lo mas importante antes de jugar.',
+    dynamicKey: '* Campo con tarifa dinamica. Para ordenar mostramos el precio maximo; los tee times en vivo pueden subir o bajar.',
+    sortLabel: 'Ordenar:',
+    topRated: 'Mejor valorados',
+    az: 'A-Z',
+    priceHighLow: 'Precio Alto-Bajo',
+    priceLowHigh: 'Precio Bajo-Alto',
+    nearest: 'Mas cercanos',
+  },
+  fr: {
+    controlsIntro: 'Filtrez par zone. Chaque fiche affiche le green fee maximum, le par, la note et les points utiles avant de jouer.',
+    dynamicKey: '* Parcours a tarification dynamique. Le prix maximum est utilise pour le tri; les prix en direct peuvent monter ou baisser.',
+    sortLabel: 'Tri :',
+    topRated: 'Mieux notes',
+    az: 'A-Z',
+    priceHighLow: 'Prix Haut-Bas',
+    priceLowHigh: 'Prix Bas-Haut',
+    nearest: 'Les plus proches',
+  },
+  nl: {
+    controlsIntro: 'Filter op regio. Elke kaart toont de piek-greenfee, par, waardering en de belangrijkste punten voor je speelt.',
+    dynamicKey: '* Baan met dynamische prijzen. Voor sorteren tonen we de piekprijs; live tee-times kunnen omhoog of omlaag gaan.',
+    sortLabel: 'Sorteren:',
+    topRated: 'Best beoordeeld',
+    az: 'A-Z',
+    priceHighLow: 'Prijs Hoog-Laag',
+    priceLowHigh: 'Prijs Laag-Hoog',
+    nearest: 'Dichtstbij',
+  },
+  sv: {
+    controlsIntro: 'Filtrera efter region. Varje kort visar hogsta greenfee, par, betyg och det viktigaste att veta innan du spelar.',
+    dynamicKey: '* Bana med dynamisk prissattning. Hogsta pris visas for sortering; live-priser kan ga upp eller ner.',
+    sortLabel: 'Sortera:',
+    topRated: 'Hogst betyg',
+    az: 'A-Z',
+    priceHighLow: 'Pris Hog-Lag',
+    priceLowHigh: 'Pris Lag-Hog',
+    nearest: 'Narmast',
+  },
+  zh: {
+    controlsIntro: 'An qu yu guo lv. Mei zhang ka pian xian shi zui gao guo ling fei, par, ping fen he kai da qian yao zhi dao de yao dian.',
+    dynamicKey: '* Dong tai ding jia qiu chang. Pai xu yong zui gao jia; shi shi kai qiu jia ge ke neng shang xia fu dong.',
+    sortLabel: 'Pai xu:',
+    topRated: 'Zui gao ping fen',
+    az: 'A-Z',
+    priceHighLow: 'Jia ge Gao-Dao-Di',
+    priceLowHigh: 'Jia ge Di-Dao-Gao',
+    nearest: 'Zui Jin',
+  },
+}
+
+function getCourseMeta(name) {
+  return COURSE_META[name] || {}
+}
+
+function getCourseDistance(course) {
+  const metaDistance = getCourseMeta(course.name).distanceKm
+  if (typeof metaDistance === 'number') return metaDistance
+
+  const match = course.location.match(/(\d+)\s*km/i)
+  return match ? Number(match[1]) : Number.POSITIVE_INFINITY
+}
+
+function buildPricePill(course) {
+  const meta = getCourseMeta(course.name)
+  if (meta.peakPrice == null) return course.pills[0]
+
+  const dynamicPrefix = meta.dynamic ? '* ' : ''
+  if (meta.lowPrice != null) return `${dynamicPrefix}Peak EUR ${meta.peakPrice} / Low EUR ${meta.lowPrice}`
+  if (meta.twilightPrice != null) return `${dynamicPrefix}Peak EUR ${meta.peakPrice} / Twilight EUR ${meta.twilightPrice}`
+  return `${dynamicPrefix}Peak EUR ${meta.peakPrice}`
+}
+
+function getDisplayPills(course) {
+  return [buildPricePill(course), ...course.pills.slice(1)]
+}
+
+function sortCourses(courses, sortKey) {
+  const sorted = [...courses]
+  sorted.sort((a, b) => {
+    const aMeta = getCourseMeta(a.name)
+    const bMeta = getCourseMeta(b.name)
+
+    if (sortKey === 'az') return a.name.localeCompare(b.name)
+    if (sortKey === 'price-desc') return (bMeta.peakPrice ?? -1) - (aMeta.peakPrice ?? -1)
+    if (sortKey === 'price-asc') return (aMeta.peakPrice ?? Number.POSITIVE_INFINITY) - (bMeta.peakPrice ?? Number.POSITIVE_INFINITY)
+    if (sortKey === 'nearest') return getCourseDistance(a) - getCourseDistance(b)
+
+    if (b.difficulty !== a.difficulty) return b.difficulty - a.difficulty
+    return a.name.localeCompare(b.name)
+  })
+  return sorted
+}
+
 const COURSE_BADGE_TRANSLATIONS = {
   de: {
     '★ Expert Pick': '★ Expertenwahl',
@@ -433,6 +576,8 @@ function translateCourseText(value, lang) {
 function CourseCard({ c, lang = 'en' }) {
   const translated = lang !== 'en' ? GOLF_COURSE_TRANSLATIONS[lang]?.[c.name] || {} : {}
   const badgeMap = COURSE_BADGE_TRANSLATIONS[lang] || {}
+  const meta = getCourseMeta(c.name)
+  const displayPills = getDisplayPills(c)
 
   return (
     <div id={slugifyCourseName(c.name)} className={`course course--anchored${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`}>
@@ -460,10 +605,13 @@ function CourseCard({ c, lang = 'en' }) {
               })}
             </div>
           )}
-          <h3 className="course__name">{c.name}</h3>
+          <h3 className="course__name">
+            {c.name}
+            {meta.dynamic ? <span className="course__dynamic-mark" aria-hidden="true"> *</span> : null}
+          </h3>
           <p className="course__location">{translated.location || translateCourseText(c.location, lang)}</p>
           <div className="course__stats">
-            {(translated.pills || c.pills).slice(0, 4).map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{translateCourseText(pill, lang)}</span>)}
+            {(translated.pills || displayPills).slice(0, 4).map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{translateCourseText(pill, lang)}</span>)}
           </div>
           <p className="course__difficulty-note">{translateCourseText(`${c.diffScore} difficulty`, lang)}</p>
           <p className="course__text">{translated.text || c.text}</p>
@@ -492,9 +640,11 @@ function CourseCard({ c, lang = 'en' }) {
 export default function GolfCoursesClient({ lang = 'en' }) {
   const localizedContent = getGolfCoursesContent(lang)
   const t = lang === 'en' ? localizedContent.ui : (GOLF_COURSE_UI_TRANSLATIONS[lang] || localizedContent.ui)
+  const sortUi = SORT_UI[lang] || SORT_UI.en
   const regionHeaders = localizedContent.regionHeaders
   const regions = getGolfCourseRegions(t)
   const [activeFilter, setActiveFilter] = useState('all')
+  const [activeSort, setActiveSort] = useState('rating')
   const contactHref = buildLocalePath('/contact', lang)
   const experiencesHref = buildLocalePath('/play-with-a-pro', lang)
 
@@ -541,7 +691,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
             <div key={i} className="geo-row">
               <span className="geo-region">{row.region}</span>
               <span className="geo-courses">
-                {row.courses.split(/\s+[^\w\s]+\s+/).map((name, j) => {
+                {row.courses.split(' · ').map((name, j) => {
                   const id = getShortCourseId(name)
                   return (
                     <span key={j}>
@@ -574,6 +724,22 @@ export default function GolfCoursesClient({ lang = 'en' }) {
         ))}
       </div>
 
+      <div className="intro-bar intro-bar--controls">
+        <div className="intro-bar__text intro-bar__text--full reveal">
+          <p>{sortUi.controlsIntro}</p>
+          <p>{sortUi.dynamicKey}</p>
+        </div>
+      </div>
+
+      <div className="filter-tabs filter-tabs--anchored">
+        <span className="sort-pill sort-pill--label">{sortUi.sortLabel}</span>
+        <button className={`filter-tab${activeSort === 'rating' ? ' active' : ''}`} onClick={() => setActiveSort('rating')}>{sortUi.topRated}</button>
+        <button className={`filter-tab${activeSort === 'az' ? ' active' : ''}`} onClick={() => setActiveSort('az')}>{sortUi.az}</button>
+        <button className={`filter-tab${activeSort === 'price-desc' ? ' active' : ''}`} onClick={() => setActiveSort('price-desc')}>{sortUi.priceHighLow}</button>
+        <button className={`filter-tab${activeSort === 'price-asc' ? ' active' : ''}`} onClick={() => setActiveSort('price-asc')}>{sortUi.priceLowHigh}</button>
+        <button className={`filter-tab${activeSort === 'nearest' ? ' active' : ''}`} onClick={() => setActiveSort('nearest')}>{sortUi.nearest}</button>
+      </div>
+
       <div className="page-layout">
         <div className="page-main">
           {visibleRegions.map((regionData, i) => {
@@ -581,6 +747,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
             const coursesToShow = activeFilter === 'expert'
               ? regionData.courses.filter((course) => course.expert)
               : regionData.courses
+            const sortedCourses = sortCourses(coursesToShow, activeSort)
             return (
               <div key={regionData.region + activeFilter}>
                 {i > 0 && <div className="divider" />}
@@ -594,7 +761,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
                     <p className="region-note">{t.courseNote}</p>
                   )}
                   <div className="courses-grid-list">
-                    {coursesToShow.map((course, j) => <CourseCard key={j} c={course} lang={lang} />)}
+                    {sortedCourses.map((course, j) => <CourseCard key={j} c={course} lang={lang} />)}
                   </div>
                 </section>
               </div>

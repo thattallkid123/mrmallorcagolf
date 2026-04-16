@@ -1,92 +1,119 @@
-# Mr Mallorca Golf — Claude Code Context
+# Mr Mallorca Golf - Claude Code Context
+
+## Always-read MMG docs
+Use these as the active MMG source of truth before relying on skills or older prompts:
+
+- `C:\Users\andyg\Documents\Mr Mallorca Golf\Active\MMG_PROJECT_BRIEF_SHORT.md`
+- `C:\Users\andyg\Documents\Mr Mallorca Golf\Active\MMG_MASTER.md`
+- `C:\Users\andyg\Documents\Mr Mallorca Golf\Active\MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`
+
+If any skill, prompt, or older file conflicts with those docs, the Active MMG docs win.
+For Mallorca course pricing, seasonality, and access facts inside the repo, also check `docs/mallorca-market-reference-2026-04.md`.
 
 ## Project overview
-Private golf day experiences site for Andy Griffiths (PGA Advanced Professional), based in Mallorca, Spain. Launched March 2025. Deployed on Vercel at `mrmallorcagolf.com`.
+Private golf day experiences site for Andy Griffiths, PGA Advanced Professional, based in Mallorca, Spain. Deployed on Vercel at `mrmallorcagolf.com`.
 
 ## Tech stack
-- **Next.js 14** (App Router, JSX not TSX — no TypeScript)
-- **React 18**
-- **Resend** for contact form email delivery
-- **Google Analytics** (only third-party script)
+- Next.js 14 App Router
+- React 18
+- JSX only, no TypeScript
+- Resend for contact form email delivery
+- Google Analytics as the only third-party script
 - No database, no auth, no CMS
-- Deployed via **Vercel** (auto-deploys from `main` branch on GitHub)
+- Deployed via Vercel from `main`
 
 ## Routing structure
-```
+```text
 src/app/
-  page.jsx                  → / (English homepage, uses HomePageInner.jsx)
-  HomePageInner.jsx         → shared homepage component
-  [page]/page.jsx           → English pages (2 levels deep)
-  [lang]/[page]/page.jsx    → Language pages (3 levels deep)
-
-Languages: en (default), de, es, fr, nl, sv, zh
-Language pages live at: /de/, /es/, /fr/, /nl/, /sv/, /zh/
+  page.jsx
+  HomePageInner.jsx
+  [page]/page.jsx
+  [lang]/[page]/page.jsx
 ```
+
+Languages: `en` default, plus `de`, `es`, `fr`, `nl`, `sv`, `zh`
 
 ## Critical import path rule
-**This is the most common source of build failures.**
+This is the most common source of build failures.
 
-- English pages (`src/app/[page]/page.jsx`) → `../../components/ComponentName`
-- Language pages (`src/app/[lang]/[page]/page.jsx`) → `../../../components/ComponentName`
-- GolfCoursesClient from a language page → `../../golf-courses/GolfCoursesClient`
+- English pages: `../../components/ComponentName`
+- Language pages: `../../../components/ComponentName`
+- `GolfCoursesClient` from a language page: `../../golf-courses/GolfCoursesClient`
 
-Never use `./GolfCoursesClient` or `../../components/GolfCoursesClient` — both will fail.
+Never use `./GolfCoursesClient` or `../../components/GolfCoursesClient`.
 
 ## Key components
-- `src/components/PageLayout.jsx` — wraps every page with nav + footer
-- `src/components/Footer.jsx` — footer with language switcher and legal links
-- `src/components/RevealObserver.jsx` — scroll-reveal animations
-- `src/components/CareerStrip.jsx` — career timeline strip (about page only)
-- `src/app/golf-courses/GolfCoursesClient.jsx` — shared client component for all golf-courses pages
+- `src/components/PageLayout.jsx`
+- `src/components/Footer.jsx`
+- `src/components/RevealObserver.jsx`
+- `src/components/CareerStrip.jsx`
+- `src/app/golf-courses/GolfCoursesClient.jsx`
 
 ## Styles
 Single global stylesheet: `src/styles/globals.css`
-CSS variables (defined in `:root`): `--deep`, `--pine`, `--gold`, `--gold-light`, `--taupe`
-No CSS modules, no Tailwind.
 
-## Pages
-| Route | File |
-|---|---|
-| / | src/app/page.jsx + HomePageInner.jsx |
-| /about | src/app/about/page.jsx |
-| /coaching | src/app/coaching/page.jsx |
-| /play-with-a-pro | src/app/play-with-a-pro/page.jsx |
-| /golf-courses | src/app/golf-courses/page.jsx |
-| /contact | src/app/contact/page.jsx |
-| /privacy-policy | src/app/privacy-policy/page.jsx |
-| /terms | src/app/terms/page.jsx |
-| /guides/[slug] | src/app/guides/[slug]/page.jsx |
+CSS variables in `:root`:
+- `--deep`
+- `--pine`
+- `--gold`
+- `--gold-light`
+- `--taupe`
 
-All language variants follow the same pattern under `/de/`, `/es/`, `/fr/`, `/nl/`, `/sv/`, `/zh/`.
+No CSS modules. No Tailwind.
 
-## Homepage courses array
-Each language's HomePage file has a `courses` array with `id` fields used for deep-link navigation:
+## Core pages
+- `/`
+- `/about`
+- `/coaching`
+- `/play-with-a-pro`
+- `/golf-courses`
+- `/contact`
+- `/privacy-policy`
+- `/terms`
+- `/guides/[slug]`
+
+All language variants follow the same structure under `/de/`, `/es/`, `/fr/`, `/nl/`, `/sv/`, `/zh/`.
+
+## Homepage course ids
+The homepage course cards deep-link into `/golf-courses` using these ids:
+
 ```js
-{ cls: 'course-card--1', id: 'golf-son-gual', ... }
-{ cls: 'course-card--2', id: 'club-de-golf-alcanada', ... }
-{ cls: 'course-card--3', id: 'son-muntaner', ... }
-{ cls: 'course-card--4', id: 'golf-santa-ponsa-1', ... }
-{ cls: 'course-card--5', id: 'golf-de-andratx', ... }
+{ cls: 'course-card--1', id: 'golf-son-gual' }
+{ cls: 'course-card--2', id: 'club-de-golf-alcanada' }
+{ cls: 'course-card--3', id: 'son-muntaner' }
+{ cls: 'course-card--4', id: 'golf-santa-ponsa-1' }
+{ cls: 'course-card--5', id: 'golf-de-andratx' }
 ```
-onClick navigates to `/golf-courses#[id]`. "View all 22 courses" links to `/golf-courses#all-courses`.
 
 ## Content rules
-- English is always the master — all other languages should match its structure exactly
-- Do not add content to language pages that isn't in the English version
-- Andy's voice: direct, credential-led, no fluff. No emojis. No exclamation marks.
-- Contact email: andy@mrmallorcagolf.com
+- English is always the master
+- Do not add content to language pages that is not present in English
+- Contact email is `andy@mrmallorcagolf.com`
+
+## Writing guardrails
+- No em dashes
+- No generic AI openings
+- No travel-brochure filler
+- No fake authority language
+- No inflated luxury wording
+- No "not X, but Y" framing
+- No "here's the truth" hooks
+- No empty three-part fragment lines
+- Prefer specific observations over polished filler
+- Use first person only for courses Andy has genuinely played
+- If writing sounds generic or inflated, rewrite it
 
 ## Business context
-- Owner: Andy Griffiths (UK PGA Advanced Professional)
-- Operating in Spain as autónomo (registration pending as of March 2025)
-- Privacy/legal pages comply with GDPR + Spanish LOPDGDD
-- Payments: offline bank transfer only — no payment gateway on site
-- Analytics: Google Analytics only (IP anonymisation enabled)
+- Owner: Andy Griffiths, UK PGA Advanced Professional
+- Based in Mallorca since March 2025
+- Privacy and legal pages align with GDPR and Spanish LOPDGDD
+- Payments are offline bank transfer only
+- No payment gateway on site
 
-## What NOT to do
-- Don't add TypeScript — project is intentionally JSX only
-- Don't add CSS modules or Tailwind — everything goes in globals.css
-- Don't create new components unless clearly reusable across 3+ pages
-- Don't add 'use client' to pages that don't need interactivity — most pages are server components
-- Don't modify the English master pages when only fixing a language page
-- Don't use relative imports that skip levels (e.g. `../../../golf-courses/` from an English page)
+## What not to do
+- Do not add TypeScript
+- Do not add CSS modules or Tailwind
+- Do not create new components unless clearly reusable
+- Do not add `use client` unless the page needs interactivity
+- Do not modify English master pages when only fixing a language page
+- Do not trust old pricing or legacy prompts over the Active MMG docs
