@@ -1,6 +1,5 @@
-'use client'
-import { useRef, useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
 import { getCourseDestination } from '../lib/golf-courses-helpers'
 
@@ -38,51 +37,38 @@ function localizePath(path, locale) {
   return locale === 'en' ? path : `/${locale}${path}`
 }
 
+function getOptimizedCourseImage(src) {
+  const homepageCardImages = {
+    '/images/son-gual.jpg': '/images/son-gual-card.webp',
+    '/images/alcanada.jpg': '/images/alcanada-card.webp',
+    '/images/son-muntaner.webp': '/images/son-muntaner-card.webp',
+    '/images/santa-ponsa.webp': '/images/santa-ponsa-card.webp',
+    '/images/andratx.webp': '/images/andratx-card.webp',
+  }
+
+  return homepageCardImages[src] || src
+}
+
 export default function HomePageInner({ locale = 'en' }) {
   const home = getHomeContent(locale)
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
-  const [openFaq, setOpenFaq] = useState(0)
-  const trackRef = useRef(null)
-  const isDragging = useRef(false)
-  const startX = useRef(0)
-  const scrollLeftStart = useRef(0)
-
-  const scrollTrack = (dir) => trackRef.current?.scrollBy({ left: dir * 370, behavior: 'smooth' })
-  const onMouseDown = (e) => {
-    isDragging.current = true
-    trackRef.current.style.cursor = 'grabbing'
-    startX.current = e.pageX - trackRef.current.offsetLeft
-    scrollLeftStart.current = trackRef.current.scrollLeft
-  }
-  const onMouseLeave = () => {
-    isDragging.current = false
-    if (trackRef.current) trackRef.current.style.cursor = 'grab'
-  }
-  const onMouseUp = () => {
-    isDragging.current = false
-    if (trackRef.current) trackRef.current.style.cursor = 'grab'
-  }
-  const onMouseMove = (e) => {
-    if (!isDragging.current) return
-    e.preventDefault()
-    const x = e.pageX - trackRef.current.offsetLeft
-    trackRef.current.scrollLeft = scrollLeftStart.current - (x - startX.current) * 1.4
-  }
 
   return (
     <>
       <section className="hero">
-        <div
-          className="hero__bg"
-          style={{
-            backgroundImage:
-              'linear-gradient(105deg, rgba(12,11,9,0.82) 0%, rgba(12,11,9,0.62) 34%, rgba(12,11,9,0.22) 63%, rgba(12,11,9,0.08) 100%), linear-gradient(to bottom, rgba(12,11,9,0.12) 0%, rgba(12,11,9,0.46) 100%), url(/images/hero-main.webp)',
-            backgroundSize: 'auto, auto, cover',
-            backgroundPosition: 'center, center, center 50%',
-          }}
-        ></div>
+        <div className="hero__media" aria-hidden="true">
+          <Image
+            src="/images/hero-main.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
+          />
+        </div>
+        <div className="hero__bg"></div>
         <div className="hero__content">
           <p className="hero__eyebrow">{home.hero.eyebrow}</p>
           <h1 className="serif-display hero__title">
@@ -174,27 +160,24 @@ export default function HomePageInner({ locale = 'en' }) {
             <p className="eyebrow">{home.courses.eyebrow}</p>
             <h2 className="serif-display">{home.courses.title}</h2>
           </div>
-          <div className="courses__header-right">
-            <button className="courses__arrow" onClick={() => scrollTrack(-1)} aria-label="Scroll left">
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M10 3L5 8l5 5" />
-              </svg>
-            </button>
-            <button className="courses__arrow" onClick={() => scrollTrack(1)} aria-label="Scroll right">
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 3l5 5-5 5" />
-              </svg>
-            </button>
-          </div>
+          <p className="courses__hint">Swipe or scroll to browse</p>
         </div>
-        <div className="courses__track" ref={trackRef} onMouseDown={onMouseDown} onMouseLeave={onMouseLeave} onMouseUp={onMouseUp} onMouseMove={onMouseMove}>
+        <div className="courses__track">
           {home.courses.items.map((course) => (
             <Link
               key={course.name}
               href={getCourseDestination(course.name, locale) || localizePath(course.href, locale)}
               className={`course-card ${course.cls}`}
             >
-              <div className="course-card__bg" style={{ backgroundImage: `url(${course.img})`, backgroundSize: 'cover', backgroundPosition: 'center 28%' }}></div>
+              <div className="course-card__bg">
+                <Image
+                  src={getOptimizedCourseImage(course.img)}
+                  alt={course.name}
+                  fill
+                  sizes="(max-width: 768px) 292px, 348px"
+                  style={{ objectFit: 'cover', objectPosition: 'center 28%' }}
+                />
+              </div>
               <div className="course-card__overlay" style={{ background: 'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)' }}></div>
               {course.badge && <span className="course-card__badge">{course.badge}</span>}
               <div className="course-card__content">
@@ -269,11 +252,13 @@ export default function HomePageInner({ locale = 'en' }) {
           </p>
         </div>
         <figure className="winners-board">
-          <img
+          <Image
             src="/images/winners-collage.webp"
             alt="A collage of competition winners coached by Andy over the years"
             className="winners-board__img"
-            loading="lazy"
+            width={1120}
+            height={784}
+            sizes="(max-width: 1120px) 100vw, 1120px"
           />
         </figure>
         <div className="testimonials__grid" style={{ marginTop: 2 }}>
@@ -331,15 +316,17 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="faq__list reveal reveal-delay-1">
           {home.faq.items.map((faq, index) => (
-            <div key={faq.q} className={`faq__item${openFaq === index ? ' open' : ''}`}>
-              <div className="faq__q" onClick={() => setOpenFaq(openFaq === index ? -1 : index)}>
+            <details key={faq.q} className="faq__item" open={index === 0}>
+              <summary className="faq__q">
                 {faq.q}
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
                   <path d="M8 3v10M3 8h10" />
                 </svg>
+              </summary>
+              <div className="faq__a">
+                <p>{faq.a}</p>
               </div>
-              <div className="faq__a">{faq.a}</div>
-            </div>
+            </details>
           ))}
         </div>
       </section>

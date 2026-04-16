@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { NAV_LOCALES, getLanguageSwitchPath, getLegalPath } from '../lib/site'
 
@@ -113,7 +114,7 @@ export default function Footer({ lang }) {
     <footer className="footer">
       <div className="footer__brand">
         <Link href={prefix || '/'} className="nav__logo footer__logo">
-          <img src="/logo-white.png" alt="Mr Mallorca Golf" className="nav__logo-img" />
+          <Image src="/logo-white-96.webp" alt="Mr Mallorca Golf" className="nav__logo-img" width={38} height={38} sizes="38px" />
         </Link>
         <p>{copy.tagline}</p>
       </div>
