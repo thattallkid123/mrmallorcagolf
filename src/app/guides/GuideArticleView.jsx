@@ -4,6 +4,7 @@ import RevealObserver from '../../components/RevealObserver'
 import FillImageFrame from '../../components/FillImageFrame'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 import PostLayout from './PostLayout'
+import FAQ from '../../components/FAQ'
 
 const MONTHS = {
   January: '01',
@@ -261,6 +262,7 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
             return renderBlock(block, index, locale, currentImageOrdinal)
           })}
         </PostLayout>
+        <FAQ />
         {children}
       </>
     </PageLayout>

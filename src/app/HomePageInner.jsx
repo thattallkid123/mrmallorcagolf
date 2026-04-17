@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
 import { getCourseDestination } from '../lib/golf-courses-helpers'
+import FAQ from '../components/FAQ'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -330,6 +331,8 @@ export default function HomePageInner({ locale = 'en' }) {
           ))}
         </div>
       </section>
+
+      <FAQ />
 
       <section className="cta-final">
         <div className="cta-final__left reveal">

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import GolfCoursesClient from './GolfCoursesClient'
+import FAQ from '../../components/FAQ'
 
 function joinHref(locale, path) {
   if (locale === 'en') return path
@@ -52,6 +53,8 @@ export default function GolfCoursesView({ locale = 'en', content }) {
         </header>
 
         <GolfCoursesClient lang={locale} />
+
+        <FAQ />
       </PageLayout>
     </>
   )
