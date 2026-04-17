@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
-import FAQ from '../../components/FAQ'
 
 export default function PlayWithAProView({ content, locale = 'en' }) {
   return (
@@ -177,8 +176,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             </div>
           )}
         </section>
-
-        <FAQ />
 
         <section className="cta-final">
           <div className="cta-final__left reveal">
