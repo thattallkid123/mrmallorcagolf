@@ -8,12 +8,14 @@
     "start": "next start",
     "lint": "next lint",
     "check:text": "node scripts/check-text-corruption.js",
+    "check:offers": "node --no-warnings scripts/check-offers-consistency.js",
+    "check:content": "npm run check:text && npm run check:offers && npm run check:locale && npm run check:shared-locale",
     "check:locale": "node scripts/check-locale-content.js",
     "check:locale-leaks": "node scripts/check-locale-english-leaks.js",
     "check:shared-locale": "node scripts/check-shared-locale-fallbacks.js",
     "check:guide-locale-leaks": "node scripts/check-guide-locale-english-leaks.js",
     "check:i18n-release": "node scripts/locale-release-check.js",
-    "check:ready": "npm run check:i18n-release && npm run build"
+    "check:ready": "npm run check:content && npm run check:i18n-release && npm run build"
   },
   "dependencies": {
     "next": "^14.2.35",

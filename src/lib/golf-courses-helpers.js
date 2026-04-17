@@ -1,15 +1,19 @@
+import { GOLF_COURSE_DATA } from './golf-courses-data.js'
+
 export const SHORT_TO_ID = {
   'Son Gual': 'golf-son-gual',
   'Son Muntaner': 'son-muntaner',
   'Son Vida': 'golf-son-vida',
   'Son Quint': 'golf-son-quint',
-  'T Golf Puntiró': 't-golf-palma-puntiro',
+  'T Golf Palma (Puntiro)': 't-golf-palma-puntiro',
+  'T Golf Puntiro': 't-golf-palma-puntiro',
   'Son Termes': 'golf-son-termes',
   'Palma Pitch & Putt': 'palma-pitch-putt',
   'Santa Ponsa 1': 'golf-santa-ponsa-1',
   'Santa Ponsa 2': 'golf-santa-ponsa-2',
   'Santa Ponsa 3': 'golf-santa-ponsa-3',
-  'T Golf Calvià': 't-golf-calvia-poniente',
+  'T Golf Calvia': 't-golf-calvia-poniente',
+  'T Golf Calvia (Poniente)': 't-golf-calvia-poniente',
   Bendinat: 'real-golf-de-bendinat',
   'Golf de Andratx': 'golf-de-andratx',
   'Golf Maioris': 'golf-maioris',
@@ -22,7 +26,8 @@ export const SHORT_TO_ID = {
   "Vall d'Or": 'vall-d-or-golf',
   "Vall d'Or Golf": 'vall-d-or-golf',
   Alcanada: 'club-de-golf-alcanada',
-  'Golf Pollensa': 'golf-pollensa',
+  'Golf Pollensa': 'golf-pollenca',
+  'Golf Pollenca': 'golf-pollenca',
 }
 
 export const COURSE_DESTINATIONS = {
@@ -76,4 +81,47 @@ export function getCourseDestination(name, locale = 'en') {
   }
 
   return null
+}
+
+export function findCourseByName(name) {
+  const normalized = normalizeCourseName(name)
+
+  for (const region of GOLF_COURSE_DATA) {
+    const match = region.courses.find((course) => {
+      const courseName = normalizeCourseName(course.name)
+      return (
+        courseName === normalized ||
+        courseName.includes(normalized) ||
+        normalized.includes(courseName)
+      )
+    })
+
+    if (match) return match
+  }
+
+  return null
+}
+
+export function getCourseDistanceKm(course) {
+  const match = course?.location?.match(/(\d+)\s*km/i)
+  return match ? Number(match[1]) : Number.POSITIVE_INFINITY
+}
+
+export function getCoursePriceMeta(course) {
+  const pricePill = course?.pills?.[0] || ''
+  const dynamic = pricePill.trim().startsWith('*')
+  const matches = [...pricePill.matchAll(/€\s?(\d+)/g)].map((match) => Number(match[1]))
+  const [peakPrice, lowPrice] = matches
+
+  return {
+    dynamic,
+    peakPrice: Number.isFinite(peakPrice) ? peakPrice : null,
+    lowPrice: Number.isFinite(lowPrice) ? lowPrice : null,
+    distanceKm: getCourseDistanceKm(course),
+  }
+}
+
+export function getCourseMetaByName(name) {
+  const course = findCourseByName(name)
+  return course ? getCoursePriceMeta(course) : { dynamic: false, peakPrice: null, lowPrice: null, distanceKm: Number.POSITIVE_INFINITY }
 }

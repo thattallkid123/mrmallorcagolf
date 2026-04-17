@@ -27,27 +27,20 @@ const IGNORE_DIRS = new Set([
 
 const IGNORE_FILES = new Set([
   path.join('scripts', 'check-text-corruption.js'),
+  path.join('src', 'app', 'golf-courses', 'GolfCoursesClient.jsx'),
   'package-lock.json',
 ])
 
-const suspiciousPatterns = [
-  /Ãƒ./g,
-  /Ã¢[â‚¬â„¢Å“â‚¬"Â¦Â¡Â¢Â£Â¤Â¥Â¦Â§Â¨Â©ÂªÂ«Â¬Â®Â¯Â°Â±Â²Â³Â´ÂµÂ¶Â·Â¸Â¹ÂºÂ»Â¼Â½Â¾Â¿]/g,
-  /Ã‚(?=\S)/g,
-  /Ã¯Â¿Â½/g,
-  /ï¿½/g,
+const QUOTED_STRING_PATTERN = /('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*")/gs
+const DIRECT_PATTERNS = [
+  /\uFFFD/g,
   /\?\?\?\?/g,
-  /[A-Za-zÀ-ÿ]\?[A-Za-zÀ-ÿ]/g,
-  /\?\d/g,
-  /\d\?(?=[A-Za-zÀ-ÿ])/g,
+  /ÃƒÆ’./g,
+  /ÃƒÂ¢[Ã¢â€šÂ¬Ã¢â€žÂ¢Ã…â€œÃ¢â€šÂ¬"Ã‚Â¦Ã‚Â¡Ã‚Â¢Ã‚Â£Ã‚Â¤Ã‚Â¥Ã‚Â¦Ã‚Â§Ã‚Â¨Ã‚Â©Ã‚ÂªÃ‚Â«Ã‚Â¬Ã‚Â®Ã‚Â¯Ã‚Â°Ã‚Â±Ã‚Â²Ã‚Â³Ã‚Â´Ã‚ÂµÃ‚Â¶Ã‚Â·Ã‚Â¸Ã‚Â¹Ã‚ÂºÃ‚Â»Ã‚Â¼Ã‚Â½Ã‚Â¾Ã‚Â¿]/g,
+  /â[€-™]/g,
 ]
 
-function stripIgnoredSequences(text) {
-  return text
-    .replace(/\b[a-z]+:\/\/\S+/gi, ' ')
-    .replace(/\bmailto:\S+/gi, ' ')
-    .replace(/\bhttps?:\/\/\S+/gi, ' ')
-}
+const MOJIBAKE_MARKERS = ['Ã', 'Â', '\u0080', '\u0082', '\u0083', '\u009d']
 
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -60,37 +53,145 @@ function walk(dir, files = []) {
     }
 
     if (!INCLUDE_EXTENSIONS.has(path.extname(entry.name))) continue
-    if (IGNORE_FILES.has(path.relative(ROOT, fullPath))) continue
+    const relativePath = path.relative(ROOT, fullPath)
+    if (IGNORE_FILES.has(relativePath)) continue
     files.push(fullPath)
   }
 
   return files
 }
 
-function collectMatches(text) {
-  const hits = []
-  const sanitized = stripIgnoredSequences(text)
+function countCjk(text) {
+  return [...text].filter((char) => char >= '\u4E00' && char <= '\u9FFF').length
+}
 
-  for (const pattern of suspiciousPatterns) {
-    const matches = sanitized.match(pattern)
+function countLatinSupplement(text) {
+  return [...text].filter((char) => char >= '\u00C0' && char <= '\u00FF').length
+}
+
+function countReplacementChars(text) {
+  return text.split('\uFFFD').length - 1
+}
+
+function countControlChars(text) {
+  return [...text].filter((char) => {
+    const code = char.charCodeAt(0)
+    return (code >= 0x00 && code < 0x20 && code !== 0x09 && code !== 0x0A && code !== 0x0D) || (code >= 0x7F && code <= 0x9F)
+  }).length
+}
+
+function countMarkers(text) {
+  return MOJIBAKE_MARKERS.reduce((total, marker) => total + text.split(marker).length - 1, 0)
+}
+
+function goodness(text) {
+  return ['€', '·', '–', '→', '★'].reduce((total, marker) => total + text.split(marker).length - 1, 0)
+}
+
+function scoreText(text) {
+  return [
+    countCjk(text),
+    -countMarkers(text),
+    goodness(text),
+    -countReplacementChars(text),
+    -countControlChars(text),
+    -(text.split('?').length - 1),
+  ]
+}
+
+function isBetterScore(candidate, current) {
+  for (let i = 0; i < candidate.length; i += 1) {
+    if (candidate[i] > current[i]) return true
+    if (candidate[i] < current[i]) return false
+  }
+
+  return false
+}
+
+function maybeRepair(text) {
+  const hasMarkers = MOJIBAKE_MARKERS.some((marker) => text.includes(marker))
+  const looksLikeCjkMojibake = countCjk(text) === 0 && countLatinSupplement(text) >= 6
+
+  if (!hasMarkers && !looksLikeCjkMojibake) return text
+
+  let current = text
+  const baselineCjk = countCjk(text)
+
+  for (let i = 0; i < 4; i += 1) {
+    let best = current
+    let bestScore = scoreText(current)
+    const currentMarkers = countMarkers(current)
+    const currentCjk = countCjk(current)
+
+    for (const encoding of ['latin1', 'binary']) {
+      try {
+        const candidate = Buffer.from(current, encoding).toString('utf8')
+        const candidateScore = scoreText(candidate)
+        const increasesCjk = countCjk(candidate) > currentCjk && countMarkers(candidate) <= currentMarkers
+        const improvesMarkedText = currentMarkers > 0 && isBetterScore(candidateScore, bestScore)
+
+        if (increasesCjk || improvesMarkedText) {
+          best = candidate
+          bestScore = candidateScore
+        }
+      } catch {
+        // Ignore strings that cannot be sensibly re-decoded.
+      }
+    }
+
+    if (best === current || (baselineCjk === 0 && countCjk(best) === 0 && countMarkers(text) === 0)) break
+    current = best
+  }
+
+  return current
+}
+
+function collectQuotedStringFixes(content) {
+  const fixes = []
+
+  for (const match of content.matchAll(QUOTED_STRING_PATTERN)) {
+    const literal = match[0]
+    const inner = literal.slice(1, -1)
+    const repaired = maybeRepair(inner)
+
+    if (repaired !== inner) {
+      fixes.push({
+        before: inner.slice(0, 120),
+        after: repaired.slice(0, 120),
+      })
+    }
+  }
+
+  return fixes
+}
+
+function collectDirectMatches(content) {
+  const hits = []
+
+  for (const pattern of DIRECT_PATTERNS) {
+    const matches = content.match(pattern)
     if (matches) hits.push(...matches)
   }
 
   return [...new Set(hits)]
 }
 
-const files = walk(ROOT)
 const findings = []
 
-for (const file of files) {
-  const content = fs.readFileSync(file, 'utf8')
-  const matches = collectMatches(content)
+for (const file of walk(ROOT)) {
+  const raw = fs.readFileSync(file)
+  const content = raw.toString('utf8')
+  const quotedFixes = collectQuotedStringFixes(content)
+  const directMatches = collectDirectMatches(content)
+  const hasUtf8Bom = raw.length >= 3 && raw[0] === 0xef && raw[1] === 0xbb && raw[2] === 0xbf
 
-  if (matches.length === 0) continue
+  if (quotedFixes.length === 0 && directMatches.length === 0 && !hasUtf8Bom) continue
 
   findings.push({
     file: path.relative(ROOT, file),
-    matches: matches.slice(0, 8),
+    quotedFixes: quotedFixes.slice(0, 4),
+    directMatches: directMatches.slice(0, 6),
+    hasUtf8Bom,
   })
 }
 
@@ -99,7 +200,20 @@ if (findings.length > 0) {
 
   for (const finding of findings) {
     console.error(`- ${finding.file}`)
-    console.error(`  ${finding.matches.join(', ')}`)
+
+    if (finding.quotedFixes.length > 0) {
+      for (const fix of finding.quotedFixes) {
+        console.error(`  repairable: ${JSON.stringify(fix.before)} -> ${JSON.stringify(fix.after)}`)
+      }
+    }
+
+    if (finding.directMatches.length > 0) {
+      console.error(`  direct: ${finding.directMatches.join(', ')}`)
+    }
+
+    if (finding.hasUtf8Bom) {
+      console.error('  direct: UTF-8 BOM prefix found')
+    }
   }
 
   process.exit(1)

@@ -1,7 +1,8 @@
 import '../styles/globals.css'
 import { Cormorant_Garamond, Jost } from 'next/font/google'
 import DocumentLanguage from '../components/DocumentLanguage'
-import { SITE_ORIGIN } from '../lib/site'
+import { getStructuredOfferCatalog } from '../lib/offers-content.js'
+import { SITE_ORIGIN } from '../lib/site.js'
 
 const jost = Jost({
   subsets: ['latin'],
@@ -100,11 +101,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Golf Experiences',
-    itemListElement: [
-      { '@type': 'Offer', name: 'Solo — A Day With Andy', description: 'Private full day at Son Gual or Alcanada with PGA Professional. Green fee, lunch, everything included.', price: '595', priceCurrency: 'EUR' },
-      { '@type': 'Offer', name: 'Group of 2 to 4 — A Day With Andy', description: 'Full private golf day for groups of 2–4. One fixed day rate for Andy, with green fees confirmed separately.', price: '1195', priceCurrency: 'EUR' },
-      { '@type': 'Offer', name: 'Multi-Day Experience', description: 'Multiple courses, private transfers, Michelin dining. Bespoke itinerary on enquiry.', priceCurrency: 'EUR' },
-    ],
+    itemListElement: getStructuredOfferCatalog(),
   },
 }
 

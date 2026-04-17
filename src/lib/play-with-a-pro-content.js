@@ -1,3 +1,5 @@
+import { getOfferById, getPlayHeroBody, getPlayMultiDayDetail, OFFER_IDS } from './offers-content.js'
+
 export const PLAY_WITH_A_PRO_CONTENT = {
   en: {
     locale: 'en',
@@ -1337,10 +1339,51 @@ for (const [locale, override] of Object.entries(PLAY_WITH_A_PRO_RELOCALIZED_OVER
 
 export function getPlayWithAProContent(locale = 'en') {
   const content = PLAY_WITH_A_PRO_CONTENT[locale] || PLAY_WITH_A_PRO_CONTENT.en
-  if (!content?.who?.cards) return content
+  const soloOffer = getOfferById(OFFER_IDS.solo, locale)
+  const groupOffer = getOfferById(OFFER_IDS.group, locale)
+  const packages = content?.packages
+    ? {
+        ...content.packages,
+        tiers: (content.packages.tiers || []).map((tier) => ({
+          ...tier,
+          price:
+            tier.eyebrow === soloOffer.shortLabel
+              ? soloOffer.priceDisplay
+              : tier.eyebrow === groupOffer.shortLabel
+                ? groupOffer.priceDisplay
+              : tier.price,
+        })),
+        multiDay: content.packages.multiDay
+          ? {
+              ...content.packages.multiDay,
+              detail: getPlayMultiDayDetail(locale),
+            }
+          : content.packages.multiDay,
+      }
+    : content?.packages
+
+  if (!content?.who?.cards) {
+    return {
+      ...content,
+      hero: content?.hero
+        ? {
+            ...content.hero,
+            body: getPlayHeroBody(locale),
+          }
+        : content?.hero,
+      packages,
+    }
+  }
 
   return {
     ...content,
+    hero: content.hero
+      ? {
+          ...content.hero,
+          body: getPlayHeroBody(locale),
+        }
+      : content.hero,
+    packages,
     who: {
       ...content.who,
       cards: normalizeWhoCards(content.who.cards),

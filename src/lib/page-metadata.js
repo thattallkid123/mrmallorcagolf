@@ -1,4 +1,5 @@
-import { getAlternates, SITE_ORIGIN } from './site'
+import { getAlternates, SITE_ORIGIN } from './site.js'
+import { getPlayWithAProMetadataDescription } from './offers-content.js'
 
 const HOME_METADATA = {
   en: {
@@ -193,38 +194,31 @@ const COACHING_METADATA = {
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
     title: 'Play With a Pro - Private Golf Days in Mallorca',
-    description:
-      'A private golf day in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. Solo from €595 all inclusive. Groups of 2 to 4 from €1,195, with green fees confirmed separately.',
+    description: getPlayWithAProMetadataDescription('en'),
   },
   de: {
     title: 'Mit einem Profi spielen - Private Golftage auf Mallorca',
-    description:
-      'Ein privater Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab €595 all inclusive. Gruppen von 2 bis 4 ab €1.195, Greenfees werden separat bestaetigt.',
+    description: getPlayWithAProMetadataDescription('de'),
   },
   es: {
     title: 'Jugar con un Profesional - Dias de Golf Privados en Mallorca',
-    description:
-      'Un dia privado de golf en Mallorca junto a Andy Griffiths. Solo desde €595 todo incluido. Grupos de 2 a 4 desde €1.195, con green fees confirmados por separado.',
+    description: getPlayWithAProMetadataDescription('es'),
   },
   fr: {
     title: 'Jouer avec un Pro - Journees Golf Privees a Majorque',
-    description:
-      'Une journee de golf privee a Majorque aux cotes d Andy Griffiths. Solo a partir de €595 tout compris. Groupes de 2 a 4 a partir de €1 195, green fees confirmes separement.',
+    description: getPlayWithAProMetadataDescription('fr'),
   },
   nl: {
     title: 'Spelen met een Pro - Privegolfdagen op Mallorca',
-    description:
-      'Een prive-golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf €595 all-in. Groepen van 2 tot 4 vanaf €1.195, met greenfees apart bevestigd.',
+    description: getPlayWithAProMetadataDescription('nl'),
   },
   sv: {
     title: 'Spela med ett Proffs - Privata Golfdagar pa Mallorca',
-    description:
-      'En privat golfdag pa Mallorca tillsammans med Andy Griffiths. Solo fran €595 all inclusive. Grupper pa 2 till 4 fran €1.195, med green fees som bekraftas separat.',
+    description: getPlayWithAProMetadataDescription('sv'),
   },
   zh: {
     title: 'Private Golf Days in Mallorca - Play With a Pro',
-    description:
-      'A private golf day in Mallorca alongside Andy Griffiths. Solo €595 all inclusive. Groups of 2 to 4 from €1,195, with green fees confirmed separately.',
+    description: getPlayWithAProMetadataDescription('zh'),
   },
 }
 

@@ -7,124 +7,99 @@ import { getGolfCoursesContent } from '../../lib/golf-courses-content'
 import { GOLF_COURSE_DATA } from '../../lib/golf-courses-data'
 import {
   GOLF_COURSE_TRANSLATIONS,
-  GOLF_COURSE_UI_TRANSLATIONS,
+  getGolfCourseUiTranslations,
   getGolfCourseRegions,
 } from '../../lib/golf-courses-translations'
 import {
+  getCourseDistanceKm,
+  getCoursePriceMeta,
   getShortCourseId,
   slugifyCourseName,
 } from '../../lib/golf-courses-helpers'
 
-const COURSE_META = {
-  'Golf Son Gual': { peakPrice: 165, lowPrice: 109, dynamic: false, distanceKm: 11 },
-  'Golf Son Vida': { peakPrice: 191, lowPrice: 79, twilightPrice: 93, dynamic: true, distanceKm: 7 },
-  'Son Muntaner': { peakPrice: 252, lowPrice: 130, twilightPrice: 127, dynamic: true, distanceKm: 7 },
-  'Golf Son Quint': { peakPrice: 140, lowPrice: 69, twilightPrice: 74, dynamic: true, distanceKm: 8 },
-  'T Golf Palma (Puntirò)': { peakPrice: 138, twilightPrice: 100, dynamic: true, distanceKm: 10 },
-  'Palma Pitch & Putt': { peakPrice: 25, lowPrice: 15, dynamic: false, distanceKm: 4 },
-  'Golf Son Termes': { peakPrice: 110, lowPrice: 90, twilightPrice: 85, dynamic: false, distanceKm: 10 },
-  'Golf Santa Ponsa 1': { peakPrice: 126, lowPrice: 77, twilightPrice: 88, dynamic: false, distanceKm: 20 },
-  'Golf Santa Ponsa 2': { peakPrice: null, dynamic: false, distanceKm: 20 },
-  'Golf Santa Ponsa 3': { peakPrice: null, dynamic: false, distanceKm: 20 },
-  'Real Golf de Bendinat': { peakPrice: 123, lowPrice: 74, twilightPrice: 85, dynamic: false, distanceKm: 7 },
-  'T Golf Calvià (Poniente)': { peakPrice: 210, twilightPrice: 169, dynamic: true, distanceKm: 12 },
-  'Golf de Andratx': { peakPrice: 140, lowPrice: 96, dynamic: false, distanceKm: 40 },
-  'Golf Maioris': { peakPrice: 110, lowPrice: 81, twilightPrice: 81, dynamic: false, distanceKm: 20 },
-  'Golf Son Antem East': { peakPrice: 140, lowPrice: 105, twilightPrice: 90, dynamic: true, distanceKm: 15 },
-  'Golf Son Antem West': { peakPrice: 135, lowPrice: 109, twilightPrice: 91, dynamic: true, distanceKm: 15 },
-  'Capdepera Golf': { peakPrice: 135, lowPrice: 85, dynamic: true, distanceKm: 65 },
-  'Canyamel Golf': { peakPrice: 145, lowPrice: 85, twilightPrice: 65, dynamic: false, distanceKm: 65 },
-  'Pula Golf': { peakPrice: 145, lowPrice: 79, dynamic: true, distanceKm: 55 },
-  'Golf Club Son Servera': { peakPrice: 145, lowPrice: 80, twilightPrice: 105, dynamic: false, distanceKm: 55 },
-  "Vall d'Or Golf": { peakPrice: 130, lowPrice: 98, twilightPrice: 85, dynamic: false, distanceKm: 60 },
-  'Reserva Rotana': { peakPrice: null, dynamic: false, distanceKm: 50 },
-  'Club de Golf Alcanada': { peakPrice: 220, lowPrice: 115, twilightPrice: 129, dynamic: false, distanceKm: 55 },
-  'Golf Pollença': { peakPrice: 65, lowPrice: 55, dynamic: false, distanceKm: 60 },
-}
-
 const SORT_UI = {
   en: {
-    controlsIntro: 'Filter by region. Each card shows peak green fee, par, rating, and key things to know before you play.',
-    dynamicKey: '* Dynamic-pricing course. Peak price is shown for sorting; live tee-time prices can move up or down.',
+    controlsIntro: 'Filter by region. Each card shows peak and low green fee, par, rating, and key things to know before you play.',
+    dynamicKey: '* Dynamic-pricing course. We sort by peak price; low price can be seasonal, late-day, or demand-dependent.',
     sortLabel: 'Sort:',
     topRated: 'Top Rated',
     az: 'A-Z',
-    priceHighLow: 'Price High-Low',
-    priceLowHigh: 'Price Low-High',
+    price: 'Price',
     nearest: 'Nearest',
   },
   de: {
-    controlsIntro: 'Nach Region filtern. Jede Karte zeigt Spitzen-Greenfee, Par, Bewertung und die wichtigsten Hinweise vor der Runde.',
-    dynamicKey: '* Platz mit dynamischer Preisgestaltung. Fuer die Sortierung wird der Spitzenpreis gezeigt; Live-Preise koennen sich aendern.',
+    controlsIntro: 'Nach Region filtern. Jede Karte zeigt Spitzen- und Niedrigpreis, Par, Bewertung und die wichtigsten Hinweise vor der Runde.',
+    dynamicKey: '* Platz mit dynamischer Preisgestaltung. Wir sortieren nach Spitzenpreis; der Niedrigpreis kann saisonal, spaet am Tag oder nach Nachfrage variieren.',
     sortLabel: 'Sortierung:',
     topRated: 'Top bewertet',
     az: 'A-Z',
-    priceHighLow: 'Preis Hoch-Tief',
-    priceLowHigh: 'Preis Tief-Hoch',
+    price: 'Preis',
     nearest: 'Am naechsten',
   },
   es: {
-    controlsIntro: 'Filtra por zona. Cada ficha muestra green fee pico, par, valoracion y lo mas importante antes de jugar.',
-    dynamicKey: '* Campo con tarifa dinamica. Para ordenar mostramos el precio maximo; los tee times en vivo pueden subir o bajar.',
+    controlsIntro: 'Filtra por zona. Cada ficha muestra green fee pico y bajo, par, valoracion y lo mas importante antes de jugar.',
+    dynamicKey: '* Campo con tarifa dinamica. Ordenamos por precio maximo; el precio bajo puede depender de la temporada, la hora del dia o la demanda.',
     sortLabel: 'Ordenar:',
     topRated: 'Mejor valorados',
     az: 'A-Z',
-    priceHighLow: 'Precio Alto-Bajo',
-    priceLowHigh: 'Precio Bajo-Alto',
+    price: 'Precio',
     nearest: 'Mas cercanos',
   },
   fr: {
-    controlsIntro: 'Filtrez par zone. Chaque fiche affiche le green fee maximum, le par, la note et les points utiles avant de jouer.',
-    dynamicKey: '* Parcours a tarification dynamique. Le prix maximum est utilise pour le tri; les prix en direct peuvent monter ou baisser.',
+    controlsIntro: 'Filtrez par zone. Chaque fiche affiche le green fee maximum et bas, le par, la note et les points utiles avant de jouer.',
+    dynamicKey: '* Parcours a tarification dynamique. Le tri utilise le prix maximum; le prix bas peut varier selon la saison, l horaire ou la demande.',
     sortLabel: 'Tri :',
     topRated: 'Mieux notes',
     az: 'A-Z',
-    priceHighLow: 'Prix Haut-Bas',
-    priceLowHigh: 'Prix Bas-Haut',
+    price: 'Prix',
     nearest: 'Les plus proches',
   },
   nl: {
-    controlsIntro: 'Filter op regio. Elke kaart toont de piek-greenfee, par, waardering en de belangrijkste punten voor je speelt.',
-    dynamicKey: '* Baan met dynamische prijzen. Voor sorteren tonen we de piekprijs; live tee-times kunnen omhoog of omlaag gaan.',
+    controlsIntro: 'Filter op regio. Elke kaart toont de piek- en lage greenfee, par, waardering en de belangrijkste punten voor je speelt.',
+    dynamicKey: '* Baan met dynamische prijzen. We sorteren op piekprijs; de lage prijs kan seizoens-, laat-op-de-dag- of vraagafhankelijk zijn.',
     sortLabel: 'Sorteren:',
     topRated: 'Best beoordeeld',
     az: 'A-Z',
-    priceHighLow: 'Prijs Hoog-Laag',
-    priceLowHigh: 'Prijs Laag-Hoog',
+    price: 'Prijs',
     nearest: 'Dichtstbij',
   },
   sv: {
-    controlsIntro: 'Filtrera efter region. Varje kort visar hogsta greenfee, par, betyg och det viktigaste att veta innan du spelar.',
-    dynamicKey: '* Bana med dynamisk prissattning. Hogsta pris visas for sortering; live-priser kan ga upp eller ner.',
+    controlsIntro: 'Filtrera efter region. Varje kort visar hogsta och lagsta greenfee, par, betyg och det viktigaste att veta innan du spelar.',
+    dynamicKey: '* Bana med dynamisk prissattning. Vi sorterar efter hogsta pris; lagsta pris kan bero pa sasong, sen starttid eller efterfragan.',
     sortLabel: 'Sortera:',
     topRated: 'Hogst betyg',
     az: 'A-Z',
-    priceHighLow: 'Pris Hog-Lag',
-    priceLowHigh: 'Pris Lag-Hog',
+    price: 'Pris',
     nearest: 'Narmast',
   },
   zh: {
-    controlsIntro: 'An qu yu guo lv. Mei zhang ka pian xian shi zui gao guo ling fei, par, ping fen he kai da qian yao zhi dao de yao dian.',
-    dynamicKey: '* Dong tai ding jia qiu chang. Pai xu yong zui gao jia; shi shi kai qiu jia ge ke neng shang xia fu dong.',
+    controlsIntro: 'An qu yu guo lv. Mei zhang ka pian xian shi zui gao he zui di guo ling fei, par, ping fen he kai da qian yao zhi dao de yao dian.',
+    dynamicKey: '* Dong tai ding jia qiu chang. Pai xu yi zui gao jia ge wei zhun; jiao di jia ge ke neng shou ji jie, wan xie shi duan huo xu qiu ying xiang.',
     sortLabel: 'Pai xu:',
     topRated: 'Zui gao ping fen',
     az: 'A-Z',
-    priceHighLow: 'Jia ge Gao-Dao-Di',
-    priceLowHigh: 'Jia ge Di-Dao-Gao',
-    nearest: 'Zui Jin',
+    price: 'Jia ge',
+    nearest: 'Zui jin',
   },
 }
 
+const DISPLAY_TEXT_REPLACEMENTS = []
+
+function cleanDisplayText(value) {
+  if (!value) return value
+  return DISPLAY_TEXT_REPLACEMENTS.reduce((text, [from, to]) => text.replaceAll(from, to), value)
+}
+
 function getCourseMeta(name) {
-  return COURSE_META[name] || {}
+  const course = GOLF_COURSE_DATA
+    .flatMap((region) => region.courses)
+    .find((entry) => cleanDisplayText(entry.name) === cleanDisplayText(name))
+
+  return course ? getCoursePriceMeta(course) : {}
 }
 
 function getCourseDistance(course) {
-  const metaDistance = getCourseMeta(course.name).distanceKm
-  if (typeof metaDistance === 'number') return metaDistance
-
-  const match = course.location.match(/(\d+)\s*km/i)
-  return match ? Number(match[1]) : Number.POSITIVE_INFINITY
+  return getCourseDistanceKm(course)
 }
 
 function buildPricePill(course) {
@@ -132,27 +107,51 @@ function buildPricePill(course) {
   if (meta.peakPrice == null) return course.pills[0]
 
   const dynamicPrefix = meta.dynamic ? '* ' : ''
-  if (meta.lowPrice != null) return `${dynamicPrefix}Peak EUR ${meta.peakPrice} / Low EUR ${meta.lowPrice}`
-  if (meta.twilightPrice != null) return `${dynamicPrefix}Peak EUR ${meta.peakPrice} / Twilight EUR ${meta.twilightPrice}`
-  return `${dynamicPrefix}Peak EUR ${meta.peakPrice}`
+  const lowPrice = typeof meta.lowPrice === 'number' ? meta.lowPrice : null
+  if (lowPrice != null) return `${dynamicPrefix}Peak \u20ac${meta.peakPrice} / Low \u20ac${lowPrice}`
+  return `${dynamicPrefix}Peak \u20ac${meta.peakPrice}`
 }
 
 function getDisplayPills(course) {
   return [buildPricePill(course), ...course.pills.slice(1)]
 }
 
-function sortCourses(courses, sortKey) {
+const DEFAULT_SORT_DIRECTIONS = {
+  rating: 'desc',
+  az: 'asc',
+  price: 'desc',
+  nearest: 'asc',
+}
+
+function sortCourses(courses, sortKey, direction = DEFAULT_SORT_DIRECTIONS[sortKey] || 'desc') {
   const sorted = [...courses]
   sorted.sort((a, b) => {
     const aMeta = getCourseMeta(a.name)
     const bMeta = getCourseMeta(b.name)
+    const descending = direction === 'desc'
 
-    if (sortKey === 'az') return a.name.localeCompare(b.name)
-    if (sortKey === 'price-desc') return (bMeta.peakPrice ?? -1) - (aMeta.peakPrice ?? -1)
-    if (sortKey === 'price-asc') return (aMeta.peakPrice ?? Number.POSITIVE_INFINITY) - (bMeta.peakPrice ?? Number.POSITIVE_INFINITY)
-    if (sortKey === 'nearest') return getCourseDistance(a) - getCourseDistance(b)
+    if (sortKey === 'az') return descending ? b.name.localeCompare(a.name) : a.name.localeCompare(b.name)
 
-    if (b.difficulty !== a.difficulty) return b.difficulty - a.difficulty
+    if (sortKey === 'price') {
+      const aPrice = aMeta.peakPrice
+      const bPrice = bMeta.peakPrice
+      const aMissing = typeof aPrice !== 'number'
+      const bMissing = typeof bPrice !== 'number'
+
+      if (aMissing && bMissing) return a.name.localeCompare(b.name)
+      if (aMissing) return 1
+      if (bMissing) return -1
+      return descending ? bPrice - aPrice : aPrice - bPrice
+    }
+
+    if (sortKey === 'nearest') {
+      const distanceDelta = getCourseDistance(a) - getCourseDistance(b)
+      return descending ? -distanceDelta : distanceDelta
+    }
+
+    if (b.difficulty !== a.difficulty) {
+      return descending ? b.difficulty - a.difficulty : a.difficulty - b.difficulty
+    }
     return a.name.localeCompare(b.name)
   })
   return sorted
@@ -160,246 +159,150 @@ function sortCourses(courses, sortKey) {
 
 const COURSE_BADGE_TRANSLATIONS = {
   de: {
-    '★ Expert Pick': '★ Expertenwahl',
-    'Most Recommended': 'Am häufigsten empfohlen',
+    '\u2605 Expert Pick': '\u2605 Expertenwahl',
+    'Most Recommended': 'Am haeufigsten empfohlen',
     'Best in Spain 2025': 'Bester Platz Spaniens 2025',
     'European Tour Host': 'European-Tour-Austragungsort',
     'Members + Arranged Access': 'Mitglieder + Zugang auf Anfrage',
   },
   es: {
-    '★ Expert Pick': '★ Selección personal',
-    'Most Recommended': 'De los más recomendados',
-    'Best in Spain 2025': 'Mejor campo de España 2025',
+    '\u2605 Expert Pick': '\u2605 Seleccion personal',
+    'Most Recommended': 'De los mas recomendados',
+    'Best in Spain 2025': 'Mejor campo de Espana 2025',
     'European Tour Host': 'Sede del European Tour',
     'Members + Arranged Access': 'Socios + acceso organizado',
   },
   fr: {
-    '★ Expert Pick': '★ Choix d’expert',
-    'Most Recommended': 'Le plus recommandé',
-    'Best in Spain 2025': 'Meilleur d’Espagne 2025',
-    'European Tour Host': 'Hôte de l’European Tour',
-    'Members + Arranged Access': 'Membres + accès organisé',
+    '\u2605 Expert Pick': '\u2605 Choix d expert',
+    'Most Recommended': 'Le plus recommande',
+    'Best in Spain 2025': 'Meilleur d Espagne 2025',
+    'European Tour Host': 'Hote de l European Tour',
+    'Members + Arranged Access': 'Membres + acces organise',
   },
   nl: {
-    '★ Expert Pick': '★ Expertkeuze',
+    '\u2605 Expert Pick': '\u2605 Expertkeuze',
     'Most Recommended': 'Meest aanbevolen',
     'Best in Spain 2025': 'Beste van Spanje 2025',
     'European Tour Host': 'European Tour-host',
     'Members + Arranged Access': 'Leden + toegang op afspraak',
   },
   sv: {
-    '★ Expert Pick': '★ Expertval',
+    '\u2605 Expert Pick': '\u2605 Expertval',
     'Most Recommended': 'Mest rekommenderad',
-    'Best in Spain 2025': 'Bäst i Spanien 2025',
-    'European Tour Host': 'Värd för European Tour',
-    'Members + Arranged Access': 'Medlemmar + ordnad tillgång',
+    'Best in Spain 2025': 'Bast i Spanien 2025',
+    'European Tour Host': 'Vard for European Tour',
+    'Members + Arranged Access': 'Medlemmar + ordnad tillgang',
   },
   zh: {
-    '★ Expert Pick': '★ 专家推荐',
-    'Most Recommended': '最值得推荐',
-    'Best in Spain 2025': '2025 西班牙最佳',
-    'European Tour Host': 'European Tour 赛事球场',
-    'Members + Arranged Access': '会员制 + 可协助安排',
+    '\u2605 Expert Pick': '\u2605 Zhuan jia tui jian',
+    'Most Recommended': 'Zui zhi de tui jian',
+    'Best in Spain 2025': '2025 Xi ban ya zui jia',
+    'European Tour Host': 'European Tour sai shi qiu chang',
+    'Members + Arranged Access': 'Hui yuan zhi + ke xie zhu an pai',
   },
 }
 
 const COURSE_TEXT_REPLACEMENTS = {
   de: {
-    'From €95': 'Ab €95',
     'km from city centre': 'km vom Stadtzentrum',
     'km from Palma': 'km von Palma',
-    'Par 72 · Est. 1964': 'Par 72 · Seit 1964',
-    'Par 72 · Est. 1967': 'Par 72 · Seit 1967',
-    'Par 72 · Longest on island': 'Par 72 · Längster Platz der Insel',
-    'Public access': 'Öffentlich zugänglich',
-    'Members only': 'Nur für Mitglieder',
+    'Public access': 'Oeffentlich zugaenglich',
+    'Members only': 'Nur fuer Mitglieder',
     'Access via arrangement': 'Zugang auf Anfrage',
-    'Opened 1991': 'Eröffnet 1991',
-    'Opened 2006': 'Eröffnet 2006',
-    '9 holes': '9 Löcher',
-    '9 holes · 90 minutes': '9 Löcher · 90 Minuten',
-    '9 holes · All par 3': '9 Löcher · nur Par 3',
+    'Opened 1991': 'Eroeffnet 1991',
+    'Opened 2006': 'Eroeffnet 2006',
+    '9 holes': '9 Loecher',
     '45 minutes': '45 Minuten',
-    'Shorter course': 'Kürzerer Platz',
+    'Shorter course': 'Kuerzerer Platz',
     'Dynamic pricing': 'Dynamische Preise',
     'Handicap required': 'Handicap erforderlich',
-    'Buggies available': 'Buggys verfügbar',
-    'All levels welcome': 'Für alle Spielstärken geeignet',
+    'Buggies available': 'Buggys verfuegbar',
+    'All levels welcome': 'Fuer alle Spielstaerken geeignet',
     'Tournament course': 'Turnierplatz',
-    'DP World Tour': 'DP World Tour',
-    'Best in Spain 2025': 'Bester in Spanien 2025',
+    'Best in Spain 2025': 'Bester Platz Spaniens 2025',
     'Jack Nicklaus Design': 'Jack-Nicklaus-Design',
     'Dan Maples design': 'Design von Dan Maples',
-    'José Gancedo, 1988': 'José Gancedo, 1988',
-    'Martin Hawtree, 1986': 'Martin Hawtree, 1986',
-    'Par 72 · Opened 2007': 'Par 72 · Eröffnet 2007',
-    'Par 72 · Tournament course': 'Par 72 · Turnierplatz',
-    'Par 72 · Olazábal redesign': 'Par 72 · Olazábal-Redesign',
-    'Par 72 · Robert Trent Jones Jr.': 'Par 72 · Robert Trent Jones Jr.',
-    'Public grass driving range': 'Öffentliche Rasen-Range',
-    'Championship greens': 'Championship-Grüns',
+    'Public grass driving range': 'Oeffentliche Rasen-Range',
+    'Championship greens': 'Championship-Gruens',
     'Tramuntana views': 'Blick auf die Tramuntana',
-    'East coast views': 'Ausblicke an der Ostküste',
-    'East coast views · Strong back nine': 'Ostküstenblicke · starkes Back Nine',
-    'Coastal Hills': 'Küstenhügel',
-    'Coastal parkland': 'Küsten-Parkland',
+    'East coast views': 'Ausblicke an der Ostkueste',
+    'Coastal Hills': 'Kuestenhuegel',
+    'Coastal parkland': 'Kuesten-Parkland',
     'Tramuntana valley': 'Tal der Tramuntana',
     'Marriott Resort': 'Marriott Resort',
-    'Oldest course on the island · Seve won here': 'Ältester Platz der Insel · Seve gewann hier',
-    'Perfect for beginners & juniors': 'Ideal für Anfänger und Junioren',
-    'Only Nicklaus design on the island': 'Einziger Nicklaus-Platz der Insel',
-    'One of the oldest courses on the island': 'Einer der ältesten Plätze der Insel',
-    'Best for beginners · Tiger Woods played here': 'Ideal für Anfänger · Tiger Woods spielte hier',
-    'Public access · European Tour venue': 'Öffentlich zugänglich · European-Tour-Austragungsort',
     'Most challenging course on the island': 'Anspruchsvollster Platz der Insel',
-    'Good for approach practice · Access arrangeable': 'Gut fürs kurze Spiel · Zugang arrangierbar',
-    'Access arrangeable for clients': 'Zugang für Kunden arrangierbar',
-    'Best paired with Canyamel': 'Am besten mit Canyamel kombinieren',
-    'Views to Menorca on clear days': 'Blick bis Menorca an klaren Tagen',
-    'Olazábal design · European Tour host': 'Olazábal-Design · European-Tour-Austragungsort',
-    'Good for beginners · Marriott resort': 'Gut für Anfänger · Marriott-Resort',
-    'More challenging than East · Tournament venue': 'Anspruchsvoller als East · Turnierort',
-    'Good warm-up round · 90 minutes': 'Gute Aufwärmrunde · 90 Minuten',
-    'Clubhouse renovation until May/June 2026': 'Clubhaus-Renovierung bis Mai/Juni 2026',
     'Mallorca Open host': 'Gastgeber der Mallorca Open',
-    'Seve won here in 1990': 'Seve gewann hier 1990',
     'difficulty': 'Schwierigkeit',
   },
   es: {
-    'From €95': 'Desde €95',
     'km from city centre': 'km del centro',
     'km from Palma': 'km de Palma',
-    'Par 72 · Est. 1964': 'Par 72 · Desde 1964',
-    'Par 72 · Est. 1967': 'Par 72 · Desde 1967',
-    'Par 72 · Longest on island': 'Par 72 · El más largo de la isla',
-    'Public access': 'Acceso público',
+    'Public access': 'Acceso publico',
     'Members only': 'Solo socios',
-    'Access via arrangement': 'Acceso con gestión previa',
+    'Access via arrangement': 'Acceso con gestion previa',
     'Opened 1991': 'Abierto en 1991',
     'Opened 2006': 'Abierto en 2006',
     '9 holes': '9 hoyos',
-    '9 holes · 90 minutes': '9 hoyos · 90 minutos',
-    '9 holes · All par 3': '9 hoyos · todos par 3',
     '45 minutes': '45 minutos',
     'Shorter course': 'Recorrido corto',
-    'Dynamic pricing': 'Tarifa dinámica',
+    'Dynamic pricing': 'Tarifa dinamica',
     'Handicap required': 'Handicap obligatorio',
     'Buggies available': 'Buggies disponibles',
     'All levels welcome': 'Apto para todos los niveles',
     'Tournament course': 'Campo de torneo',
-    'DP World Tour': 'DP World Tour',
-    'Best in Spain 2025': 'Mejor campo de España 2025',
-    'Jack Nicklaus Design': 'Diseño de Jack Nicklaus',
-    'Dan Maples design': 'Diseño de Dan Maples',
-    'José Gancedo, 1988': 'José Gancedo, 1988',
-    'Martin Hawtree, 1986': 'Martin Hawtree, 1986',
-    'Par 72 · Opened 2007': 'Par 72 · Abierto en 2007',
-    'Par 72 · Tournament course': 'Par 72 · Campo de torneo',
-    'Par 72 · Olazábal redesign': 'Par 72 · Rediseño de Olazábal',
-    'Par 72 · Robert Trent Jones Jr.': 'Par 72 · Robert Trent Jones Jr.',
-    'Public grass driving range': 'Campo de prácticas de hierba',
+    'Best in Spain 2025': 'Mejor campo de Espana 2025',
+    'Jack Nicklaus Design': 'Diseno de Jack Nicklaus',
+    'Dan Maples design': 'Diseno de Dan Maples',
+    'Public grass driving range': 'Campo de practicas de hierba',
     'Championship greens': 'Greens de campeonato',
     'Tramuntana views': 'Vistas a la Tramuntana',
     'East coast views': 'Vistas a la costa este',
-    'East coast views · Strong back nine': 'Vistas a la costa este · gran segunda vuelta',
     'Coastal Hills': 'Colinas costeras',
     'Coastal parkland': 'Parkland costero',
     'Tramuntana valley': 'Valle de la Tramuntana',
-    'Oldest course on the island · Seve won here': 'El campo más antiguo de la isla · aquí ganó Seve',
-    'Perfect for beginners & juniors': 'Perfecto para principiantes y juniors',
-    'Only Nicklaus design on the island': 'Único diseño Nicklaus de la isla',
-    'One of the oldest courses on the island': 'Uno de los campos más antiguos de la isla',
-    'Best for beginners · Tiger Woods played here': 'Ideal para principiantes · Tiger Woods jugó aquí',
-    'Public access · European Tour venue': 'Acceso público · sede del European Tour',
-    'Most challenging course on the island': 'El campo más exigente de la isla',
-    'Good for approach practice · Access arrangeable': 'Bueno para practicar hierros · acceso gestionable',
-    'Access arrangeable for clients': 'Acceso gestionable para clientes',
-    'Best paired with Canyamel': 'Lo mejor es combinarlo con Canyamel',
-    'Views to Menorca on clear days': 'Vistas a Menorca en días despejados',
-    'Olazábal design · European Tour host': 'Diseño de Olazábal · sede del European Tour',
-    'Good for beginners · Marriott resort': 'Bueno para principiantes · resort Marriott',
-    'More challenging than East · Tournament venue': 'Más exigente que East · sede de torneos',
-    'Good warm-up round · 90 minutes': 'Buena vuelta de calentamiento · 90 minutos',
-    'Clubhouse renovation until May/June 2026': 'Casa club en obras hasta mayo/junio de 2026',
+    'Most challenging course on the island': 'El campo mas exigente de la isla',
     'Mallorca Open host': 'Sede del Mallorca Open',
-    'Seve won here in 1990': 'Seve ganó aquí en 1990',
     'difficulty': 'dificultad',
   },
   fr: {
-    'From €95': 'À partir de 95 €',
     'km from city centre': 'km du centre',
     'km from Palma': 'km de Palma',
-    'Par 72 · Est. 1964': 'Par 72 · depuis 1964',
-    'Par 72 · Est. 1967': 'Par 72 · depuis 1967',
-    'Par 72 · Longest on island': 'Par 72 · Le plus long de l’île',
-    'Public access': 'Accès public',
-    'Members only': 'Réservé aux membres',
-    'Access via arrangement': 'Accès organisé sur demande',
+    'Public access': 'Acces public',
+    'Members only': 'Reserve aux membres',
+    'Access via arrangement': 'Acces organise sur demande',
     'Opened 1991': 'Ouvert en 1991',
     'Opened 2006': 'Ouvert en 2006',
     '9 holes': '9 trous',
-    '9 holes · 90 minutes': '9 trous · 90 minutes',
-    '9 holes · All par 3': '9 trous · uniquement des par 3',
     '45 minutes': '45 minutes',
     'Shorter course': 'Parcours plus court',
     'Dynamic pricing': 'Tarification dynamique',
     'Handicap required': 'Handicap requis',
     'Buggies available': 'Buggies disponibles',
-    'All levels welcome': 'Ouvert à tous les niveaux',
+    'All levels welcome': 'Ouvert a tous les niveaux',
     'Tournament course': 'Parcours de tournoi',
-    'DP World Tour': 'DP World Tour',
-    'Best in Spain 2025': 'Meilleur d’Espagne 2025',
+    'Best in Spain 2025': 'Meilleur d Espagne 2025',
     'Jack Nicklaus Design': 'Design de Jack Nicklaus',
     'Dan Maples design': 'Design de Dan Maples',
-    'José Gancedo, 1988': 'José Gancedo, 1988',
-    'Martin Hawtree, 1986': 'Martin Hawtree, 1986',
-    'Par 72 · Opened 2007': 'Par 72 · ouvert en 2007',
-    'Par 72 · Tournament course': 'Par 72 · parcours de tournoi',
-    'Par 72 · Olazábal redesign': 'Par 72 · refonte signée Olazábal',
-    'Par 72 · Robert Trent Jones Jr.': 'Par 72 · Robert Trent Jones Jr.',
     'Public grass driving range': 'Practice sur herbe public',
     'Championship greens': 'Greens de championnat',
     'Tramuntana views': 'Vues sur la Tramuntana',
-    'East coast views': 'Vues côte est',
-    'East coast views · Strong back nine': 'Vues côte est · retour très solide',
-    'Coastal Hills': 'Collines côtières',
-    'Coastal parkland': 'Parkland côtier',
-    'Tramuntana valley': 'Vallée de la Tramuntana',
-    'Oldest course on the island · Seve won here': 'Le plus ancien parcours de l’île · Seve a gagné ici',
-    'Perfect for beginners & juniors': 'Parfait pour débutants et juniors',
-    'Only Nicklaus design on the island': 'Seul dessin de Nicklaus sur l’île',
-    'One of the oldest courses on the island': 'L’un des plus anciens parcours de l’île',
-    'Best for beginners · Tiger Woods played here': 'Idéal pour débutants · Tiger Woods a joué ici',
-    'Public access · European Tour venue': 'Accès public · site de l’European Tour',
-    'Most challenging course on the island': 'Le parcours le plus exigeant de l’île',
-    'Good for approach practice · Access arrangeable': 'Bien pour travailler les approches · accès organisable',
-    'Access arrangeable for clients': 'Accès organisable pour les clients',
-    'Best paired with Canyamel': 'À combiner idéalement avec Canyamel',
-    'Views to Menorca on clear days': 'Vue jusqu’à Minorque par temps clair',
-    'Olazábal design · European Tour host': 'Design d’Olazábal · hôte de l’European Tour',
-    'Good for beginners · Marriott resort': 'Bien pour débutants · resort Marriott',
-    'More challenging than East · Tournament venue': 'Plus exigeant qu’East · site de tournoi',
-    'Good warm-up round · 90 minutes': 'Bonne mise en jambes · 90 minutes',
-    'Clubhouse renovation until May/June 2026': 'Club-house en rénovation jusqu’à mai/juin 2026',
-    'Mallorca Open host': 'Hôte du Mallorca Open',
-    'Seve won here in 1990': 'Seve y a gagné en 1990',
-    'difficulty': 'de difficulté',
+    'East coast views': 'Vues cote est',
+    'Coastal Hills': 'Collines cotieres',
+    'Coastal parkland': 'Parkland cotier',
+    'Tramuntana valley': 'Vallee de la Tramuntana',
+    'Most challenging course on the island': 'Le parcours le plus exigeant de l ile',
+    'Mallorca Open host': 'Hote du Mallorca Open',
+    'difficulty': 'difficulte',
   },
   nl: {
-    'From €95': 'Vanaf €95',
     'km from city centre': 'km van het stadscentrum',
     'km from Palma': 'km van Palma',
-    'Par 72 · Est. 1964': 'Par 72 · sinds 1964',
-    'Par 72 · Est. 1967': 'Par 72 · sinds 1967',
-    'Par 72 · Longest on island': 'Par 72 · Langste van het eiland',
     'Public access': 'Publiek toegankelijk',
     'Members only': 'Alleen voor leden',
     'Access via arrangement': 'Toegang op afspraak',
     'Opened 1991': 'Geopend in 1991',
     'Opened 2006': 'Geopend in 2006',
     '9 holes': '9 holes',
-    '9 holes · 90 minutes': '9 holes · 90 minuten',
-    '9 holes · All par 3': '9 holes · alleen par 3',
     '45 minutes': '45 minuten',
     'Shorter course': 'Kortere baan',
     'Dynamic pricing': 'Dynamische prijzen',
@@ -407,170 +310,106 @@ const COURSE_TEXT_REPLACEMENTS = {
     'Buggies available': 'Buggies beschikbaar',
     'All levels welcome': 'Geschikt voor alle niveaus',
     'Tournament course': 'Toernooibaan',
-    'DP World Tour': 'DP World Tour',
     'Best in Spain 2025': 'Beste van Spanje 2025',
     'Jack Nicklaus Design': 'Jack Nicklaus-ontwerp',
     'Dan Maples design': 'Ontwerp van Dan Maples',
-    'José Gancedo, 1988': 'José Gancedo, 1988',
-    'Martin Hawtree, 1986': 'Martin Hawtree, 1986',
-    'Par 72 · Opened 2007': 'Par 72 · geopend in 2007',
-    'Par 72 · Tournament course': 'Par 72 · toernooibaan',
-    'Par 72 · Olazábal redesign': 'Par 72 · herontwerp door Olazábal',
-    'Par 72 · Robert Trent Jones Jr.': 'Par 72 · Robert Trent Jones Jr.',
     'Public grass driving range': 'Publieke grasrange',
     'Championship greens': 'Championship-greens',
     'Tramuntana views': 'Uitzicht op de Tramuntana',
     'East coast views': 'Uitzicht op de oostkust',
-    'East coast views · Strong back nine': 'Uitzicht op de oostkust · sterk slot',
     'Coastal Hills': 'Kustheuvels',
     'Coastal parkland': 'Kustparkland',
     'Tramuntana valley': 'Vallei van de Tramuntana',
-    'Oldest course on the island · Seve won here': 'Oudste baan van het eiland · hier won Seve',
-    'Perfect for beginners & juniors': 'Perfect voor beginners en junioren',
-    'Only Nicklaus design on the island': 'Enige Nicklaus-ontwerp op het eiland',
-    'One of the oldest courses on the island': 'Een van de oudste banen van het eiland',
-    'Best for beginners · Tiger Woods played here': 'Beste voor beginners · Tiger Woods speelde hier',
-    'Public access · European Tour venue': 'Publiek toegankelijk · European Tour-locatie',
     'Most challenging course on the island': 'Moeilijkste baan van het eiland',
-    'Good for approach practice · Access arrangeable': 'Goed voor approach-oefening · toegang regelbaar',
-    'Access arrangeable for clients': 'Toegang regelbaar voor klanten',
-    'Best paired with Canyamel': 'Best te combineren met Canyamel',
-    'Views to Menorca on clear days': 'Uitzicht tot Menorca op heldere dagen',
-    'Olazábal design · European Tour host': 'Ontwerp van Olazábal · European Tour-host',
-    'Good for beginners · Marriott resort': 'Goed voor beginners · Marriott-resort',
-    'More challenging than East · Tournament venue': 'Zwaarder dan East · toernooilocatie',
-    'Good warm-up round · 90 minutes': 'Goede opwarmronde · 90 minuten',
-    'Clubhouse renovation until May/June 2026': 'Clubhuisrenovatie tot mei/juni 2026',
     'Mallorca Open host': 'Gastheer van de Mallorca Open',
-    'Seve won here in 1990': 'Seve won hier in 1990',
     'difficulty': 'moeilijkheid',
   },
   sv: {
-    'From €95': 'Från €95',
-    'km from city centre': 'km från stadskärnan',
-    'km from Palma': 'km från Palma',
-    'Par 72 · Est. 1964': 'Par 72 · sedan 1964',
-    'Par 72 · Est. 1967': 'Par 72 · sedan 1967',
-    'Par 72 · Longest on island': 'Par 72 · Längst på ön',
-    'Public access': 'Offentlig tillgång',
+    'km from city centre': 'km fran stadskarnan',
+    'km from Palma': 'km fran Palma',
+    'Public access': 'Offentlig tillgang',
     'Members only': 'Endast medlemmar',
-    'Access via arrangement': 'Tillgång efter överenskommelse',
-    'Opened 1991': 'Öppnad 1991',
-    'Opened 2006': 'Öppnad 2006',
-    '9 holes': '9 hål',
-    '9 holes · 90 minutes': '9 hål · 90 minuter',
-    '9 holes · All par 3': '9 hål · alla par 3',
+    'Access via arrangement': 'Tillgang efter overenskommelse',
+    'Opened 1991': 'Oppnad 1991',
+    'Opened 2006': 'Oppnad 2006',
+    '9 holes': '9 hal',
     '45 minutes': '45 minuter',
     'Shorter course': 'Kortare bana',
-    'Dynamic pricing': 'Dynamisk prissättning',
-    'Handicap required': 'Handicap krävs',
+    'Dynamic pricing': 'Dynamisk prissattning',
+    'Handicap required': 'Handicap kravs',
     'Buggies available': 'Buggies finns',
-    'All levels welcome': 'Passar alla nivåer',
-    'Tournament course': 'Tävlingsbana',
-    'DP World Tour': 'DP World Tour',
-    'Best in Spain 2025': 'Bäst i Spanien 2025',
+    'All levels welcome': 'Passar alla nivaer',
+    'Tournament course': 'Tavlingsbana',
+    'Best in Spain 2025': 'Bast i Spanien 2025',
     'Jack Nicklaus Design': 'Design av Jack Nicklaus',
     'Dan Maples design': 'Design av Dan Maples',
-    'José Gancedo, 1988': 'José Gancedo, 1988',
-    'Martin Hawtree, 1986': 'Martin Hawtree, 1986',
-    'Par 72 · Opened 2007': 'Par 72 · öppnad 2007',
-    'Par 72 · Tournament course': 'Par 72 · tävlingsbana',
-    'Par 72 · Olazábal redesign': 'Par 72 · ombyggd av Olazábal',
-    'Par 72 · Robert Trent Jones Jr.': 'Par 72 · Robert Trent Jones Jr.',
-    'Public grass driving range': 'Offentlig gräsrange',
+    'Public grass driving range': 'Offentlig grasrange',
     'Championship greens': 'Championship-greener',
     'Tramuntana views': 'Utsikt mot Tramuntana',
-    'East coast views': 'Utsikt över östkusten',
-    'East coast views · Strong back nine': 'Östkustutsikt · stark avslutning',
+    'East coast views': 'Utsikt over ostkusten',
     'Coastal Hills': 'Kustkullar',
-    'Coastal parkland': 'Kustnära parkbana',
+    'Coastal parkland': 'Kustnara parkbana',
     'Tramuntana valley': 'Tramuntanadalen',
-    'Oldest course on the island · Seve won here': 'Öns äldsta bana · Seve vann här',
-    'Perfect for beginners & juniors': 'Perfekt för nybörjare och juniorer',
-    'Only Nicklaus design on the island': 'Enda Nicklaus-banan på ön',
-    'One of the oldest courses on the island': 'En av de äldsta banorna på ön',
-    'Best for beginners · Tiger Woods played here': 'Bäst för nybörjare · Tiger Woods spelade här',
-    'Public access · European Tour venue': 'Offentlig tillgång · European Tour-anläggning',
-    'Most challenging course on the island': 'Den mest utmanande banan på ön',
-    'Good for approach practice · Access arrangeable': 'Bra för inspelsövning · tillgång kan ordnas',
-    'Access arrangeable for clients': 'Tillgång kan ordnas för kunder',
-    'Best paired with Canyamel': 'Bäst i kombination med Canyamel',
-    'Views to Menorca on clear days': 'Utsikt mot Menorca på klara dagar',
-    'Olazábal design · European Tour host': 'Design av Olazábal · värd för European Tour',
-    'Good for beginners · Marriott resort': 'Bra för nybörjare · Marriott-resort',
-    'More challenging than East · Tournament venue': 'Tuffare än East · tävlingsarena',
-    'Good warm-up round · 90 minutes': 'Bra uppvärmningsrunda · 90 minuter',
-    'Clubhouse renovation until May/June 2026': 'Klubbhuset renoveras till maj/juni 2026',
-    'Mallorca Open host': 'Värd för Mallorca Open',
-    'Seve won here in 1990': 'Seve vann här 1990',
-    'difficulty': 'svårighet',
+    'Most challenging course on the island': 'Den mest utmanande banan pa on',
+    'Mallorca Open host': 'Vard for Mallorca Open',
+    'difficulty': 'svarighet',
   },
   zh: {
-    'From €95': '€95 起',
-    'km from city centre': ' 公里，距市中心',
-    'km from Palma': ' 公里，距帕尔马',
-    'Par 72 · Est. 1964': '72 杆 · 1964 年开场',
-    'Par 72 · Est. 1967': '72 杆 · 1967 年开场',
-    'Par 72 · Longest on island': '72 杆 · 岛上最长',
-    'Public access': '公众可打',
-    'Members only': '仅限会员',
-    'Access via arrangement': '可协助安排',
-    'Opened 1991': '1991 年开放',
-    'Opened 2006': '2006 年开放',
-    '9 holes': '9 洞',
-    '9 holes · 90 minutes': '9 洞 · 约 90 分钟',
-    '9 holes · All par 3': '9 洞 · 全部为三杆洞',
-    '45 minutes': '45 分钟',
-    'Shorter course': '较短球场',
-    'Dynamic pricing': '浮动定价',
-    'Handicap required': '需提供差点',
-    'Buggies available': '可租球车',
-    'All levels welcome': '各水平都适合',
-    'Tournament course': '赛事球场',
-    'DP World Tour': 'DP World Tour',
-    'Best in Spain 2025': '2025 西班牙最佳',
-    'Jack Nicklaus Design': 'Jack Nicklaus 设计',
-    'Dan Maples design': 'Dan Maples 设计',
-    'José Gancedo, 1988': 'José Gancedo，1988',
-    'Martin Hawtree, 1986': 'Martin Hawtree，1986',
-    'Par 72 · Opened 2007': '72 杆 · 2007 年开场',
-    'Par 72 · Tournament course': '72 杆 · 赛事球场',
-    'Par 72 · Olazábal redesign': '72 杆 · Olazábal 重设',
-    'Par 72 · Robert Trent Jones Jr.': '72 杆 · Robert Trent Jones Jr. 设计',
-    'Public grass driving range': '公众草地练习场',
-    'Championship greens': '锦标赛级果岭',
-    'Tramuntana views': '特拉蒙塔纳山景',
-    'East coast views': '东海岸景观',
-    'East coast views · Strong back nine': '东海岸景观 · 后九洞很强',
-    'Coastal Hills': '海岸丘陵',
-    'Coastal parkland': '海岸林园风格',
-    'Tramuntana valley': '特拉蒙塔纳山谷',
-    'Oldest course on the island · Seve won here': '岛上最老的球场之一 · Seve 曾在此夺冠',
-    'Perfect for beginners & juniors': '很适合初学者和青少年',
-    'Only Nicklaus design on the island': '岛上唯一的 Nicklaus 设计',
-    'One of the oldest courses on the island': '岛上最古老的球场之一',
-    'Best for beginners · Tiger Woods played here': '最适合初学者 · Tiger Woods 曾在此打球',
-    'Public access · European Tour venue': '公众可打 · European Tour 赛事场地',
-    'Most challenging course on the island': '岛上最有挑战性的球场',
-    'Good for approach practice · Access arrangeable': '适合练习攻果岭 · 可协助安排',
-    'Access arrangeable for clients': '可为客户协助安排',
-    'Best paired with Canyamel': '最适合和 Canyamel 一起安排',
-    'Views to Menorca on clear days': '天气晴朗时可看到梅诺卡岛',
-    'Olazábal design · European Tour host': 'Olazábal 设计 · European Tour 赛事球场',
-    'Good for beginners · Marriott resort': '适合初学者 · 万豪度假村',
-    'More challenging than East · Tournament venue': '比 East 更难 · 赛事球场',
-    'Good warm-up round · 90 minutes': '很适合作为热身轮 · 约 90 分钟',
-    'Clubhouse renovation until May/June 2026': '会所装修将持续到 2026 年 5/6 月',
-    'Mallorca Open host': 'Mallorca Open 举办球场',
-    'Seve won here in 1990': 'Seve 曾在 1990 年于此夺冠',
-    'difficulty': '难度',
+    'km from city centre': 'gong li, ju shi zhong xin',
+    'km from Palma': 'gong li, ju Pa er ma',
+    'Public access': 'gong zhong ke da',
+    'Members only': 'jin xian hui yuan',
+    'Access via arrangement': 'ke xie zhu an pai',
+    'Opened 1991': '1991 nian kai fang',
+    'Opened 2006': '2006 nian kai fang',
+    '9 holes': '9 dong',
+    '45 minutes': '45 fen zhong',
+    'Shorter course': 'jiao duan qiu chang',
+    'Dynamic pricing': 'dong tai ding jia',
+    'Handicap required': 'xu yao cha dian',
+    'Buggies available': 'ke zu qiu che',
+    'All levels welcome': 'ge shui ping dou shi he',
+    'Tournament course': 'sai shi qiu chang',
+    'Best in Spain 2025': '2025 Xi ban ya zui jia',
+    'Jack Nicklaus Design': 'Jack Nicklaus she ji',
+    'Dan Maples design': 'Dan Maples she ji',
+    'Public grass driving range': 'gong zhong cao di lian xi chang',
+    'Championship greens': 'jin biao sai ji guo ling',
+    'Tramuntana views': 'Te la meng ta na shan jing',
+    'East coast views': 'dong hai an jing guan',
+    'Coastal Hills': 'hai an qiu ling',
+    'Coastal parkland': 'hai an lin yuan feng ge',
+    'Tramuntana valley': 'Te la meng ta na shan gu',
+    'Most challenging course on the island': 'dao shang zui you tiao zhan xing de qiu chang',
+    'Mallorca Open host': 'Mallorca Open ju ban qiu chang',
+    'difficulty': 'nan du',
   },
 }
 
+const PRICE_LABEL_TRANSLATIONS = {
+  de: { peak: 'Spitzenpreis', low: 'Niedrigpreis' },
+  es: { peak: 'Pico', low: 'Bajo' },
+  fr: { peak: 'Pic', low: 'Bas' },
+  nl: { peak: 'Piek', low: 'Laag' },
+  sv: { peak: 'Hogsta', low: 'Lagsta' },
+  zh: { peak: 'Feng zhi', low: 'Di jia' },
+}
+
 function translateCourseText(value, lang) {
-  if (lang === 'en' || !value) return value
+
+  if (!value) return value
+  const cleanedValue = cleanDisplayText(value)
+  if (lang === 'en') return cleanedValue
+  const priceLabels = PRICE_LABEL_TRANSLATIONS[lang]
+  if (priceLabels && (cleanedValue.includes('Peak €') || cleanedValue.includes('Low €'))) {
+    return cleanedValue
+      .replaceAll('Peak €', `${priceLabels.peak} €`)
+      .replaceAll('Low €', `${priceLabels.low} €`)
+  }
   const replacements = COURSE_TEXT_REPLACEMENTS[lang] || {}
-  return Object.entries(replacements).reduce((text, [from, to]) => text.replaceAll(from, to), value)
+  return cleanDisplayText(
+    Object.entries(replacements).reduce((text, [from, to]) => text.replaceAll(from, to), cleanedValue)
+  )
 }
 
 function CourseCard({ c, lang = 'en' }) {
@@ -578,6 +417,12 @@ function CourseCard({ c, lang = 'en' }) {
   const badgeMap = COURSE_BADGE_TRANSLATIONS[lang] || {}
   const meta = getCourseMeta(c.name)
   const displayPills = getDisplayPills(c)
+  const courseName = cleanDisplayText(c.name)
+  const locationText = cleanDisplayText(translated.location || translateCourseText(c.location, lang))
+  const bodyText = cleanDisplayText(translated.text || c.text)
+  const bodyText2 = cleanDisplayText(translated.text2 || c.text2)
+  const noteText = cleanDisplayText(translated.note || c.note)
+  const footerText = cleanDisplayText(translated.footer || c.footer)
 
   return (
     <div id={slugifyCourseName(c.name)} className={`course course--anchored${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`}>
@@ -585,7 +430,7 @@ function CourseCard({ c, lang = 'en' }) {
         <div className="course__img-mobile course__img-frame">
           <Image
             src={c.img}
-            alt={c.name}
+            alt={courseName}
             fill
             sizes="(max-width: 768px) 100vw, 45vw"
             className="course__image"
@@ -597,7 +442,7 @@ function CourseCard({ c, lang = 'en' }) {
           {c.badges.length > 0 && (
             <div className="course__badges">
               {c.badges.map((badge, i) => {
-                const isExpertBadge = badge.startsWith('★') || badge.startsWith('â˜…')
+                const isExpertBadge = badge.startsWith('\u2605')
                 const translatedBadge = badgeMap[badge] || translateCourseText(badge, lang)
                 return (
                   <span key={i} className={`badge ${isExpertBadge ? 'badge--expert' : badge.includes('Members') ? 'badge--members' : 'badge--award'}`}>{translatedBadge}</span>
@@ -606,23 +451,23 @@ function CourseCard({ c, lang = 'en' }) {
             </div>
           )}
           <h3 className="course__name">
-            {c.name}
+            {courseName}
             {meta.dynamic ? <span className="course__dynamic-mark" aria-hidden="true"> *</span> : null}
           </h3>
-          <p className="course__location">{translated.location || translateCourseText(c.location, lang)}</p>
+          <p className="course__location">{locationText}</p>
           <div className="course__stats">
             {(translated.pills || displayPills).slice(0, 4).map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{translateCourseText(pill, lang)}</span>)}
           </div>
           <p className="course__difficulty-note">{translateCourseText(`${c.diffScore} difficulty`, lang)}</p>
-          <p className="course__text">{translated.text || c.text}</p>
-          {(c.text2 || translated.text2) && <p className="course__text course__text--spaced">{translated.text2 || c.text2}</p>}
-          {(c.note || translated.note) && <div className="course__note"><p>{translated.note || c.note}</p></div>}
+          <p className="course__text">{bodyText}</p>
+          {(c.text2 || translated.text2) && <p className="course__text course__text--spaced">{bodyText2}</p>}
+          {(c.note || translated.note) && <div className="course__note"><p>{noteText}</p></div>}
         </div>
         {c.img && (
           <div className="course__img-desktop course__img-frame">
             <Image
               src={c.img}
-              alt={c.name}
+              alt={courseName}
               fill
               sizes="(max-width: 768px) 100vw, 45vw"
               className="course__image"
@@ -631,20 +476,36 @@ function CourseCard({ c, lang = 'en' }) {
         )}
       </div>
       <div className="course__footer">
-        <span className="course__footer-info">{translated.footer || c.footer}</span>
+        <span className="course__footer-info">{footerText}</span>
       </div>
     </div>
   )
 }
 
+function getSortLabel(sortKey, sortUi) {
+  if (sortKey === 'rating') return sortUi.topRated
+  if (sortKey === 'az') return sortUi.az
+  if (sortKey === 'price') return sortUi.price
+  if (sortKey === 'nearest') return sortUi.nearest
+  return sortUi.topRated
+}
+
+function getSortTriangleDirection(sortKey, direction) {
+  if (sortKey === 'price' || sortKey === 'rating') return direction === 'desc' ? 'down' : 'up'
+  return direction === 'asc' ? 'down' : 'up'
+}
+
 export default function GolfCoursesClient({ lang = 'en' }) {
   const localizedContent = getGolfCoursesContent(lang)
-  const t = lang === 'en' ? localizedContent.ui : (GOLF_COURSE_UI_TRANSLATIONS[lang] || localizedContent.ui)
+  const t = lang === 'en'
+    ? { ...localizedContent.ui, ...getGolfCourseUiTranslations('en') }
+    : { ...localizedContent.ui, ...getGolfCourseUiTranslations(lang) }
   const sortUi = SORT_UI[lang] || SORT_UI.en
   const regionHeaders = localizedContent.regionHeaders
   const regions = getGolfCourseRegions(t)
   const [activeFilter, setActiveFilter] = useState('all')
   const [activeSort, setActiveSort] = useState('rating')
+  const [sortDirections, setSortDirections] = useState(DEFAULT_SORT_DIRECTIONS)
   const contactHref = buildLocalePath('/contact', lang)
   const experiencesHref = buildLocalePath('/play-with-a-pro', lang)
 
@@ -677,6 +538,36 @@ export default function GolfCoursesClient({ lang = 'en' }) {
     return region.region === activeFilter
   })
 
+  const allCourses = GOLF_COURSE_DATA.flatMap((region) => region.courses)
+  const activeSortDirection = sortDirections[activeSort]
+  const globallySortedCourses = sortCourses(
+    activeFilter === 'expert' ? allCourses.filter((course) => course.expert) : allCourses,
+    activeSort,
+    activeSortDirection
+  )
+
+  const handleSortChange = (sortKey) => {
+    const nextDirection = activeSort === sortKey
+      ? (sortDirections[sortKey] === 'desc' ? 'asc' : 'desc')
+      : DEFAULT_SORT_DIRECTIONS[sortKey]
+
+    setSortDirections((current) => ({
+      ...current,
+      [sortKey]: nextDirection,
+    }))
+    setActiveSort(sortKey)
+  }
+
+  const geographyRows = t.geoRegions.map((row, index) => ({
+    region: cleanDisplayText(row.region),
+    courses: [...(GOLF_COURSE_DATA[index]?.courses || [])]
+      .sort((a, b) => cleanDisplayText(a.name).localeCompare(cleanDisplayText(b.name)))
+      .map((course) => ({
+        id: getShortCourseId(course.name),
+        label: cleanDisplayText(course.name),
+      })),
+  }))
+
   return (
     <>
       <section className="geography reveal">
@@ -687,16 +578,15 @@ export default function GolfCoursesClient({ lang = 'en' }) {
           <p className="geography__copy">{t.geoP2}</p>
         </div>
         <div className="geography__right">
-          {t.geoRegions.map((row, i) => (
+          {geographyRows.map((row, i) => (
             <div key={i} className="geo-row">
               <span className="geo-region">{row.region}</span>
               <span className="geo-courses">
-                {row.courses.split(' · ').map((name, j) => {
-                  const id = getShortCourseId(name)
+                {row.courses.map((course, j) => {
                   return (
                     <span key={j}>
-                      {j > 0 && <span className="geo-separator"> / </span>}
-                      <a href={`#${id}`} className={`geo-course-link${j % 2 === 0 ? ' geo-course-link--pine' : ''}`}>{name}</a>
+                      {j > 0 && <span className="geo-separator"> · </span>}
+                      <a href={`#${course.id}`} className={`geo-course-link${j % 2 === 0 ? ' geo-course-link--pine' : ''}`}>{course.label}</a>
                     </span>
                   )
                 })}
@@ -712,42 +602,71 @@ export default function GolfCoursesClient({ lang = 'en' }) {
         </div>
       </div>
 
-      <div id="all-courses" className="filter-tabs filter-tabs--anchored">
-        {regions.map((region) => (
-          <button
-            key={region.key}
-            className={`filter-tab${activeFilter === region.key ? ' active' : ''}`}
-            onClick={() => setActiveFilter(region.key)}
-          >
-            {region.label}
-          </button>
-        ))}
-      </div>
-
-      <div className="intro-bar intro-bar--controls">
-        <div className="intro-bar__text intro-bar__text--full reveal">
+      <section className="course-controls-shell">
+        <div id="all-courses" className="filter-tabs filter-tabs--anchored filter-tabs--primary">
+          {regions.map((region) => (
+            <button
+              key={region.key}
+              className={`filter-tab${activeFilter === region.key ? ' active' : ''}`}
+              onClick={() => setActiveFilter(region.key)}
+            >
+              {region.label}
+            </button>
+          ))}
+        </div>
+        <div className="course-controls-copy reveal">
           <p>{sortUi.controlsIntro}</p>
           <p>{sortUi.dynamicKey}</p>
         </div>
-      </div>
 
-      <div className="filter-tabs filter-tabs--anchored">
-        <span className="sort-pill sort-pill--label">{sortUi.sortLabel}</span>
-        <button className={`filter-tab${activeSort === 'rating' ? ' active' : ''}`} onClick={() => setActiveSort('rating')}>{sortUi.topRated}</button>
-        <button className={`filter-tab${activeSort === 'az' ? ' active' : ''}`} onClick={() => setActiveSort('az')}>{sortUi.az}</button>
-        <button className={`filter-tab${activeSort === 'price-desc' ? ' active' : ''}`} onClick={() => setActiveSort('price-desc')}>{sortUi.priceHighLow}</button>
-        <button className={`filter-tab${activeSort === 'price-asc' ? ' active' : ''}`} onClick={() => setActiveSort('price-asc')}>{sortUi.priceLowHigh}</button>
-        <button className={`filter-tab${activeSort === 'nearest' ? ' active' : ''}`} onClick={() => setActiveSort('nearest')}>{sortUi.nearest}</button>
-      </div>
+        <div className="filter-tabs filter-tabs--anchored filter-tabs--secondary">
+          <span className="sort-pill sort-pill--label">{sortUi.sortLabel}</span>
+          {['rating', 'az', 'price', 'nearest'].map((sortKey) => {
+            const isActive = activeSort === sortKey
+            return (
+              <button
+                key={sortKey}
+                className={`filter-tab filter-tab--sort${isActive ? ' active' : ''}`}
+                onClick={() => handleSortChange(sortKey)}
+              >
+                <span>{getSortLabel(sortKey, sortUi)}</span>
+                {isActive ? (
+                  <span
+                    className={`filter-tab__triangle filter-tab__triangle--${getSortTriangleDirection(sortKey, sortDirections[sortKey])}`}
+                    aria-hidden="true"
+                  />
+                ) : null}
+              </button>
+            )
+          })}
+        </div>
+      </section>
 
       <div className="page-layout">
         <div className="page-main">
-          {visibleRegions.map((regionData, i) => {
+          {activeFilter === 'all' ? (
+            <section className="region-section">
+              <div className="region-header">
+                <h2 className="region-title">{t.allCourses}</h2>
+                <span className="region-count">{globallySortedCourses.length}</span>
+              </div>
+              {t.courseNote && (
+                <p className="region-note">{t.courseNote}</p>
+              )}
+              <div className="courses-grid-list">
+                {globallySortedCourses.map((course, index) => <CourseCard key={`${course.name}-${index}`} c={course} lang={lang} />)}
+              </div>
+            </section>
+          ) : visibleRegions.map((regionData, i) => {
             const header = regionHeaders[regionData.region]
             const coursesToShow = activeFilter === 'expert'
               ? regionData.courses.filter((course) => course.expert)
               : regionData.courses
-            const sortedCourses = sortCourses(coursesToShow, activeSort)
+            const sortedCourses = sortCourses(
+              coursesToShow,
+              activeSort === 'rating' ? 'az' : activeSort,
+              activeSort === 'rating' ? 'asc' : activeSortDirection
+            )
             return (
               <div key={regionData.region + activeFilter}>
                 {i > 0 && <div className="divider" />}
@@ -819,3 +738,6 @@ export default function GolfCoursesClient({ lang = 'en' }) {
     </>
   )
 }
+
+
+

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { getGuidePath, isPublishedGuideSlug } from '../../lib/site'
+import { getGuidesExperienceCopy } from '../../lib/experience-copy.js'
 
 const SIDEBAR_COPY = {
   en: { experience: 'The Experience', h3: 'Play one of these courses with a PGA professional alongside you.', p: 'Private days on Son Gual, Alcanada, and beyond. Everything arranged. On-course coaching throughout.', seeExp: 'See the Experiences', contact: 'Get in Touch', moreGuides: 'More Guides', allGuides: 'All guides', home: 'Home', guidesLabel: 'Guides' },
@@ -23,7 +24,10 @@ const UPDATED_LABELS = {
 
 export default function PostLayout({ children, meta, lang }) {
   const l = lang || meta.lang || 'en'
-  const c = SIDEBAR_COPY[l] || SIDEBAR_COPY.en
+  const c = {
+    ...(SIDEBAR_COPY[l] || SIDEBAR_COPY.en),
+    ...getGuidesExperienceCopy(l),
+  }
   const updatedLabel = UPDATED_LABELS[l] || UPDATED_LABELS.en
   const pre = l === 'en' ? '' : `/${l}`
   const relatedGuides = meta.related.filter((guide) => isPublishedGuideSlug(guide.slug))
@@ -54,11 +58,11 @@ export default function PostLayout({ children, meta, lang }) {
 
         <aside className="post-sidebar">
           <div className="post-sidebar__block">
-            <p className="post-sidebar__label">{c.experience}</p>
-            <h3>{c.h3}</h3>
-            <p>{c.p}</p>
-            <a href={`${pre}/play-with-a-pro`} className="btn btn--gold post-sidebar__cta">{c.seeExp} &rarr;</a>
-            <a href={`${pre}/contact`} className="btn btn--dark post-sidebar__cta post-sidebar__cta--secondary">{c.contact}</a>
+            <p className="post-sidebar__label">{c.guidesLabel}</p>
+            <h3>{c.guidesTitle}</h3>
+            <p>{c.guidesBody}</p>
+            <a href={`${pre}/play-with-a-pro`} className="btn btn--gold post-sidebar__cta">{c.guidesPrimaryCta} &rarr;</a>
+            <a href={`${pre}/contact`} className="btn btn--dark post-sidebar__cta post-sidebar__cta--secondary">{c.guidesSecondaryCta}</a>
           </div>
 
           <div className="post-sidebar__block" style={{ marginTop: '2px' }}>

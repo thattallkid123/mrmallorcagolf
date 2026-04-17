@@ -1,4 +1,6 @@
-﻿export const CONTACT_CONTENT = {
+import { getContactExperienceOptions } from './offers-content.js'
+
+export const CONTACT_CONTENT = {
   en: {
     locale: 'en',
     hero: {
@@ -426,5 +428,13 @@
 }
 
 export function getContactContent(locale = 'en') {
-  return CONTACT_CONTENT[locale] || CONTACT_CONTENT.en
+  const content = CONTACT_CONTENT[locale] || CONTACT_CONTENT.en
+
+  return {
+    ...content,
+    form: {
+      ...content.form,
+      experiences: getContactExperienceOptions(locale),
+    },
+  }
 }

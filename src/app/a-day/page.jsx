@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
+import { getOfferById, OFFER_IDS } from '../../lib/offers-content.js'
 
 export const metadata = {
   title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
@@ -8,6 +9,9 @@ export const metadata = {
 }
 
 export default function ADayPage() {
+  const soloOffer = getOfferById(OFFER_IDS.solo)
+  const groupOffer = getOfferById(OFFER_IDS.group)
+
   return (
     <PageLayout>
       {/* HERO */}
@@ -185,8 +189,8 @@ export default function ADayPage() {
             { label: 'Location', value: 'Palma, 11 km south' },
             { label: 'Design', value: 'Thomas Himmel, 2007' },
             { label: 'Par', value: '72 · Championship' },
-            { label: 'Green fee', value: 'Typically €80–165 per person' },
-            { label: 'Day rate', value: '€595 solo all inclusive · €1,195 group + green fees' },
+            { label: 'Green fee', value: 'Typically €109–165 per person' },
+            { label: 'Day rate', value: `${soloOffer.priceDisplay} solo all inclusive · ${groupOffer.priceDisplay} group + green fees` },
           ].map(({ label, value }) => (
             <div key={label}>
               <p className="a-day-facts__label">
