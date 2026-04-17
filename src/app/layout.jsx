@@ -88,6 +88,14 @@ const LOCAL_BUSINESS_SCHEMA = {
   description: 'Private play-with-a-pro golf experiences and on-course coaching in Mallorca, Spain, led by PGA Advanced Professional Andy Griffiths.',
   url: SITE_ORIGIN,
   email: 'andy@mrmallorcagolf.com',
+  telephone: '+34624466702',
+  image: `${SITE_ORIGIN}/logo-dark-green.png`,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${SITE_ORIGIN}/logo-dark-green.png`,
+    width: 306,
+    height: 306,
+  },
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', url: 'https://wa.me/34624466702', availableLanguage: ['English', 'Mandarin Chinese'] },
   address: {
     '@type': 'PostalAddress',
