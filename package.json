@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prepare": "node scripts/setup-git-hooks.js",
     "lint": "next lint",
     "check:text": "node scripts/check-text-corruption.js",
     "check:offers": "node --no-warnings scripts/check-offers-consistency.js",

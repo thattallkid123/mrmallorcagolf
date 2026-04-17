@@ -51,11 +51,23 @@ If a future edit needs the same fact or marketing sentence in more than one plac
 - `npm run check:ready`
   - runs the full pre-release content/build verification
 
+- `.githooks/pre-commit`
+  - runs `npm run check:content` before a local commit is created
+
+- `.github/workflows/verify-content.yml`
+  - runs content checks, locale release checks, and a production build on pushes and pull requests
+
 ## Safe Editing Workflow
 
 1. Update shared data first.
 2. Run `npm run check:content`.
 3. Run `npm run build` before push/deploy.
+
+## Automatic Setup
+
+- `npm install` and `npm ci` now run `npm run prepare`
+- `prepare` configures `git config core.hooksPath .githooks` for this repo
+- if hooks ever stop running locally, rerun `npm run prepare`
 
 ## Anti-Pattern To Avoid
 
