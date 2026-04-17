@@ -141,17 +141,17 @@ export const GOLF_COURSES_CONTENT = {
   zh: {
     locale: 'zh',
     hero: {
-      breadcrumbHome: 'Shouye',
-      breadcrumbCurrent: 'Mallorca gaoerfu qiuchang',
-      title: 'Mallorca gaoerfu qiuchang: wo de 2026 zhinan',
-      tags: ['24 zuo qiuchang', '2026 jiage yi gengxin', 'qinzi xiachang huo diaoyan', 'PGA jiaolian'],
+      breadcrumbHome: '首页',
+      breadcrumbCurrent: '马略卡高尔夫球场',
+      title: '马略卡高尔夫球场：我的 2026 指南',
+      tags: ['涵盖 24 座球场', '2026 价格已更新', '亲自下场或认真调研', 'PGA 职业教练'],
     },
     regionHeaders: {
-      palma: { title: 'Palma', subtitle: 'chengshi zhoubian qiuchang', count: '8 zuo qiuchang' },
-      southwest: { title: 'Xinan', subtitle: 'Santa Ponsa yu Camp de Mar', count: '6 zuo qiuchang' },
-      south: { title: 'Nanbu', subtitle: 'Llucmajor quyu', count: '3 zuo qiuchang' },
-      east: { title: 'Dongbu', subtitle: 'shihe zhusu de quyu', count: '6 zuo qiuchang' },
-      north: { title: 'Beibu', subtitle: 'Alcanada zhidede zhuanmen qu yi tang', count: '2 zuo qiuchang' },
+      palma: { title: '帕尔马', subtitle: '城市周边球场', count: '8 座球场' },
+      southwest: { title: '西南部', subtitle: 'Santa Ponsa 与 Camp de Mar', count: '6 座球场' },
+      south: { title: '南部', subtitle: 'Llucmajor 区域', count: '3 座球场' },
+      east: { title: '东部', subtitle: '适合住下来的区域', count: '6 座球场' },
+      north: { title: '北部', subtitle: 'Alcanada 本身就值得专程一去', count: '2 座球场' },
     },
   },
 }
