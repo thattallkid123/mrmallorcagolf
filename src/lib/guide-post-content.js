@@ -127,7 +127,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€80-165', 'Green fee range 2026'],
+            ['Peak €165 / Low €110', '2026 price guide'],
             ['9/10', 'Difficulty'],
             ['Par 72', 'Championship layout'],
             ['2007', 'Designed by Thomas Himmel'],
@@ -137,7 +137,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Low season (mid-November to December): €115. January maintenance window: €80 for 9 holes only. Peak spring and autumn (March-May, September-November): €165. Summer (July-August): €115. Full seasonal breakdown at son-gual.com.',
+            'Public 18-hole pricing typically runs from €110 to €165. January maintenance windows can dip lower, but that should not be used as the honest comparison rate. Peak spring and autumn sit at €165, with most standard summer/public pricing well above the old maintenance figure. Full seasonal breakdown at son-gual.com.',
         },
         {
           type: 'paragraph',
@@ -262,7 +262,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€115-220', 'Green fee range 2026'],
+            ['Peak €220 / Low €115', '2026 price guide'],
             ['7/10', 'Difficulty'],
             ['58', 'Bunkers'],
             ['55 km', 'From Palma'],
@@ -359,9 +359,9 @@ export const GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Ancient olive tree on hole 15 at Son Muntaner golf course Mallorca with Na Burguesa mountains behind', caption: "Hole 15. That olive tree has been standing for roughly a thousand years. The Balearic government declared it a natural monument. Someone decided to build a golf hole around it, and I'm glad they did." },
         { type: 'heading', text: 'The Restaurant' },
         { type: 'paragraph', text: "Not an afterthought. The food matches the standard of the course. Worth staying for after the round rather than heading straight back to Palma." },
-        { type: 'facts', items: [['€127–254', 'Green fee range 2026'], ['7/10', 'Difficulty'], ['Par 72', 'Championship layout'], ['Included', 'Buggy in green fee']] },
+        { type: 'facts', items: [['Peak €250 / Low €125', '2026 price guide'], ['7/10', 'Difficulty'], ['Par 72', 'Championship layout'], ['Included', 'Buggy in green fee']] },
         { type: 'heading', text: '2026 Green Fees' },
-        { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €254 for 18 holes. Twilight golf from €127. The gap between peak and twilight is significant enough to be worth looking at if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap certificate required." },
+        { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €250 for 18 holes, with the lowest widely seen later-day rate around €125. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap certificate required." },
         { type: 'paragraph', text: "Son Muntaner is part of the Arabella Golf Mallorca group alongside Son Vida and Son Quint. All three courses are accessible from the same resort complex." },
         { type: 'heading', text: 'Verdict' },
         { type: 'paragraph', text: "The Best Golf Course in Spain title is not marketing. Son Muntaner delivers a course that tests positioning, discipline, and clarity of decision-making from the first hole to the last. It rewards control over power and creates scoring opportunities through precision. Five minutes from Palma makes the logistics straightforward. The greens alone justify the trip." },
@@ -454,7 +454,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€77-126', 'Green fee range 2026'],
+            ['Peak €125 / Low €75', '2026 price guide'],
             ['8/10', 'Difficulty'],
             ['Par 72', 'Championship layout'],
             ['Public', 'Open to all visitors'],
@@ -463,7 +463,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: '2026 Green Fees' },
         {
           type: 'paragraph',
-          text: 'High season (mid-March to early June, mid-September to early November): €126. Mid-season: €106. Low season: €77. Full details at golf-santaponsa.com. A valid WHS handicap certificate is required.',
+          text: 'Peak price is €125 and the low-season entry point is €75. Full details at golf-santaponsa.com. A valid WHS handicap certificate is required.',
         },
         {
           type: 'paragraph',

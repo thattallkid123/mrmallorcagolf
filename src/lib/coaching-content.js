@@ -1,4 +1,4 @@
-﻿export const COACHING_CONTENT = {
+export const COACHING_CONTENT = {
   en: {
     locale: 'en',
     imageAlt: 'Andy Griffiths coaching golf on a Mallorca course',

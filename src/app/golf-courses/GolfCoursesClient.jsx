@@ -204,8 +204,6 @@ const COURSE_BADGE_TRANSLATIONS = {
 
 const COURSE_TEXT_REPLACEMENTS = {
   de: {
-    'km from city centre': 'km vom Stadtzentrum',
-    'km from Palma': 'km von Palma',
     'Public access': 'Oeffentlich zugaenglich',
     'Members only': 'Nur fuer Mitglieder',
     'Access via arrangement': 'Zugang auf Anfrage',
@@ -235,8 +233,6 @@ const COURSE_TEXT_REPLACEMENTS = {
     'difficulty': 'Schwierigkeit',
   },
   es: {
-    'km from city centre': 'km del centro',
-    'km from Palma': 'km de Palma',
     'Public access': 'Acceso publico',
     'Members only': 'Solo socios',
     'Access via arrangement': 'Acceso con gestion previa',
@@ -265,8 +261,6 @@ const COURSE_TEXT_REPLACEMENTS = {
     'difficulty': 'dificultad',
   },
   fr: {
-    'km from city centre': 'km du centre',
-    'km from Palma': 'km de Palma',
     'Public access': 'Acces public',
     'Members only': 'Reserve aux membres',
     'Access via arrangement': 'Acces organise sur demande',
@@ -295,8 +289,6 @@ const COURSE_TEXT_REPLACEMENTS = {
     'difficulty': 'difficulte',
   },
   nl: {
-    'km from city centre': 'km van het stadscentrum',
-    'km from Palma': 'km van Palma',
     'Public access': 'Publiek toegankelijk',
     'Members only': 'Alleen voor leden',
     'Access via arrangement': 'Toegang op afspraak',
@@ -325,8 +317,6 @@ const COURSE_TEXT_REPLACEMENTS = {
     'difficulty': 'moeilijkheid',
   },
   sv: {
-    'km from city centre': 'km fran stadskarnan',
-    'km from Palma': 'km fran Palma',
     'Public access': 'Offentlig tillgang',
     'Members only': 'Endast medlemmar',
     'Access via arrangement': 'Tillgang efter overenskommelse',
@@ -355,8 +345,6 @@ const COURSE_TEXT_REPLACEMENTS = {
     'difficulty': 'svarighet',
   },
   zh: {
-    'km from city centre': 'gong li, ju shi zhong xin',
-    'km from Palma': 'gong li, ju Pa er ma',
     'Public access': 'gong zhong ke da',
     'Members only': 'jin xian hui yuan',
     'Access via arrangement': 'ke xie zhu an pai',

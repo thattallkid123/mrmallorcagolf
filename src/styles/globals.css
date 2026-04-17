@@ -990,10 +990,13 @@ select.form-control { cursor: pointer; }
 .geo-course-link:hover { text-decoration: underline; text-decoration-color: rgba(45,74,62,0.45); text-underline-offset: 3px; }
 .geo-course-link--pine { color: var(--pine); }
 
-.intro-bar { background: linear-gradient(135deg, #234035 0%, #2d4a3e 52%, #355849 100%); padding: 64px 40px; display: grid; grid-template-columns: 1fr 240px; gap: 60px; align-items: start; border-bottom: 1px solid rgba(255,255,255,0.08); position: relative; overflow: hidden; }
+.intro-bar { background: linear-gradient(135deg, #234035 0%, #2d4a3e 52%, #355849 100%); padding: 64px 40px 28px; display: grid; grid-template-columns: 1fr 240px; gap: 60px; align-items: start; border-bottom: none; position: relative; overflow: hidden; }
 .intro-bar::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at top left, rgba(212,176,104,0.16), transparent 26%); pointer-events: none; }
 .intro-bar__text p { font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.82); line-height: 1.9; margin-bottom: 1rem; }
 .intro-bar__text--full { max-width: 100%; }
+.course-controls-shell { background: linear-gradient(135deg, #234035 0%, #2d4a3e 52%, #355849 100%); border-bottom: 1px solid rgba(255,255,255,0.08); }
+.course-controls-copy { padding: 18px 40px 28px; }
+.course-controls-copy p { font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.82); line-height: 1.9; margin-bottom: 1rem; max-width: 920px; }
 .expert-label { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.72); margin-bottom: 4px; }
 .expert-name { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 500; color: #fff; margin-bottom: 8px; }
 .expert-credentials { font-size: 0.82rem; font-weight: 300; color: rgba(255,255,255,0.76); line-height: 1.75; margin-bottom: 16px; }
@@ -1002,10 +1005,20 @@ select.form-control { cursor: pointer; }
 
 .filter-tabs { background: var(--white); border-bottom: 1px solid var(--linen); padding: 0 40px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; position: sticky; top: var(--nav-h); z-index: 50; }
 .filter-tabs--anchored { scroll-margin-top: 80px; }
+.filter-tabs--primary,
+.filter-tabs--secondary { position: static; top: auto; }
+.filter-tabs--primary { background: transparent; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.filter-tabs--primary .filter-tab { color: rgba(255,255,255,0.68); }
+.filter-tabs--primary .filter-tab:hover { color: #fff; }
+.filter-tabs--primary .filter-tab.active { color: #fff; border-bottom-color: var(--gold); }
 .filter-tabs::-webkit-scrollbar { display: none; }
 .filter-tab { font-size: 10px; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: var(--taupe); background: none; border: none; padding: 16px 20px; cursor: pointer; transition: color 0.2s; white-space: nowrap; border-bottom: 2px solid transparent; }
 .filter-tab:hover { color: var(--deep); }
 .filter-tab.active { color: var(--pine); border-bottom-color: var(--pine); }
+.filter-tab--sort { display: inline-flex; align-items: center; gap: 8px; }
+.filter-tab__triangle { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; flex-shrink: 0; }
+.filter-tab__triangle--down { border-top: 7px solid currentColor; }
+.filter-tab__triangle--up { border-bottom: 7px solid currentColor; }
 .filter-tabs__count {
   margin-left: auto;
   align-self: center;
@@ -1444,6 +1457,7 @@ select.form-control { cursor: pointer; }
   .form-row { grid-template-columns: 1fr; }
   .geography { grid-template-columns: 1fr; gap: 40px; padding: 50px 20px; }
   .intro-bar { grid-template-columns: 1fr; gap: 32px; padding: 40px 20px; }
+  .course-controls-copy { padding: 24px 20px 12px; }
   .filter-tabs { padding: 0 20px; }
   .filter-tab { padding: 18px 18px; }
   .filter-tabs__count { margin-left: 0; padding: 14px 0 14px 20px; }

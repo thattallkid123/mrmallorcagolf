@@ -1,4 +1,4 @@
-﻿# Mallorca Market Reference
+# Mallorca Market Reference
 
 Updated: April 16, 2026
 

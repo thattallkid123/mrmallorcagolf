@@ -13,6 +13,18 @@ For Mallorca course pricing, seasonality, and access facts inside the repo, also
 ## Project overview
 Private golf day experiences site for Andy Griffiths, PGA Advanced Professional, based in Mallorca, Spain. Deployed on Vercel at `mrmallorcagolf.com`.
 
+## Delivery standard
+- The marginal cost of completeness is near zero with AI. Do the whole thing.
+- Do it right. Do it with tests. Do it with documentation.
+- Do it so well that Andy is genuinely impressed, not politely satisfied.
+- Never table work for later when the permanent fix is within reach.
+- Never leave a dangling thread when tying it off takes five more minutes.
+- Never present a workaround when the real fix exists.
+- The standard is not "good enough". It is "holy shit, that's done."
+- Search before building. Test before shipping.
+- When Andy asks for something, the answer should usually be the finished product, not a plan.
+- Time, fatigue, and complexity are not excuses for shipping something half-finished.
+
 ## Tech stack
 - Next.js 14 App Router
 - React 18
@@ -89,6 +101,10 @@ The homepage course cards deep-link into `/golf-courses` using these ids:
 - English is always the master
 - Do not add content to language pages that is not present in English
 - Contact email is `andy@mrmallorcagolf.com`
+- Mojibake, broken accents, and hidden English fallback are release-blocking bugs
+- Keep all content files in UTF-8 and prefer fixing corrupted source text over adding render-time cleanup
+- Before any deploy or Vercel publish, run `npm run check:text`, `npm run check:i18n-release`, and `npm run build`
+- If a localized page or guide is touched, also verify there are no stray English strings left in the non-English output
 
 ## Writing guardrails
 - No em dashes
@@ -117,3 +133,5 @@ The homepage course cards deep-link into `/golf-courses` using these ids:
 - Do not add `use client` unless the page needs interactivity
 - Do not modify English master pages when only fixing a language page
 - Do not trust old pricing or legacy prompts over the Active MMG docs
+- Do not paste text from Word, Excel, PDFs, or websites straight into source files without checking accents, punctuation, and encoding
+- Do not ship if you see `Â`, `Ã`, replacement diamonds, or obvious English fallback in a foreign-language page

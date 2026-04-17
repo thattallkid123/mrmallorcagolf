@@ -247,19 +247,22 @@ function JsonLd({ data }) {
   )
 }
 
-export default function GuideArticleView({ meta, blocks, locale = 'en' }) {
+export default function GuideArticleView({ meta, blocks, locale = 'en', children = null }) {
   let imageOrdinal = 0
 
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
       <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
       <RevealObserver />
-      <PostLayout meta={meta} lang={locale}>
-        {blocks.map((block, index) => {
-          const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
-          return renderBlock(block, index, locale, currentImageOrdinal)
-        })}
-      </PostLayout>
+      <>
+        <PostLayout meta={meta} lang={locale}>
+          {blocks.map((block, index) => {
+            const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
+            return renderBlock(block, index, locale, currentImageOrdinal)
+          })}
+        </PostLayout>
+        {children}
+      </>
     </PageLayout>
   )
 }

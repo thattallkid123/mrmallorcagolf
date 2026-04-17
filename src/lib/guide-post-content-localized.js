@@ -51,9 +51,9 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Uralter Olivenbaum am 15. Loch von Son Muntaner Mallorca mit den Na-Burguesa-Bergen im Hintergrund', caption: 'Loch 15. Dieser Olivenbaum steht seit ungefähr tausend Jahren hier. Die Balearen-Regierung hat ihn zum Naturdenkmal erklärt. Jemand beschloss, ein Golfloch darum herum zu bauen – zu Recht.' },
         { type: 'heading', text: 'Das Restaurant' },
         { type: 'paragraph', text: "Kein Anhängsel. Das Essen entspricht dem Standard des Platzes. Lohnt einen Aufenthalt nach der Runde, statt direkt nach Palma zurückzufahren." },
-        { type: 'facts', items: [['€127–254', 'Greenfee-Spanne 2026'], ['7/10', 'Schwierigkeit'], ['Par 72', 'Championship-Layout'], ['Inklusive', 'Buggy im Greenfee']] },
+        { type: 'facts', items: [['€125–250', 'Greenfee-Spanne 2026'], ['7/10', 'Schwierigkeit'], ['Par 72', 'Championship-Layout'], ['Inklusive', 'Buggy im Greenfee']] },
         { type: 'heading', text: 'Greenfees 2026' },
-        { type: 'paragraph', text: "Dynamische Preisgestaltung über das Buchungssystem von Arabella Golf Mallorca. Aktueller Spitzenpreis: 254 € für 18 Löcher. Twilight-Golf ab 127 €. Der Unterschied zwischen Spitzen- und Twilight-Preis ist groß genug, um ihn bei zeitlicher Flexibilität zu bedenken. Aktuelle Preise auf arabellagolfmallorca.com. Handicap-Ausweis erforderlich." },
+        { type: 'paragraph', text: "Dynamische Preisgestaltung über das Buchungssystem von Arabella Golf Mallorca. Der aktuelle Spitzenpreis liegt bei 250 € für 18 Löcher, und die niedrigsten verfügbaren Zeiten liegen bei etwa 125 €. Der Niedrigpreis ist in der Regel saison- oder spätere-Startzeit-bedingt, nicht dauerhaft verfügbar. Aktuelle Preise auf arabellagolfmallorca.com. Handicap-Ausweis erforderlich." },
         { type: 'paragraph', text: "Son Muntaner gehört zur Arabella Golf Mallorca Gruppe, zusammen mit Son Vida und Son Quint. Alle drei Plätze sind vom selben Resort-Komplex aus zugänglich." },
         { type: 'heading', text: 'Fazit' },
         { type: 'paragraph', text: "Der Titel Bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und Klarheit in der Entscheidungsfindung vom ersten bis zum letzten Loch fordert. Er belohnt Kontrolle mehr als Kraft und schafft Scoring-Chancen durch Präzision. Fünf Minuten von Palma machen die Anreise unkompliziert. Allein die Greens rechtfertigen den Besuch." },
@@ -112,9 +112,9 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Antiguo olivo en el hoyo 15 del campo de golf Son Muntaner Mallorca con las montañas de Na Burguesa detrás', caption: 'Hoyo 15. Ese olivo lleva ahí aproximadamente mil años. El Govern Balear lo declaró monumento natural. Alguien decidió construir un hoyo de golf a su alrededor, y me alegra que lo hiciera.' },
         { type: 'heading', text: 'El restaurante' },
         { type: 'paragraph', text: "No es un añadido. La comida está a la altura del campo. Vale la pena quedarse después de la ronda en lugar de volver directamente a Palma." },
-        { type: 'facts', items: [['€127–254', 'Green fee 2026'], ['7/10', 'Dificultad'], ['Par 72', 'Diseño championship'], ['Incluido', 'Buggy en el green fee']] },
+        { type: 'facts', items: [['€125–250', 'Green fee 2026'], ['7/10', 'Dificultad'], ['Par 72', 'Diseño championship'], ['Incluido', 'Buggy en el green fee']] },
         { type: 'heading', text: 'Green fees 2026' },
-        { type: 'paragraph', text: "Precios dinámicos a través del sistema de reservas de Arabella Golf Mallorca. Tarifa máxima actual: 254 € para 18 hoyos. Golf crepuscular desde 127 €. La diferencia entre la tarifa máxima y la crepuscular es suficientemente significativa como para tenerla en cuenta si tienes flexibilidad de horario. Consulta las tarifas actuales en arabellagolfmallorca.com. Se requiere certificado de hándicap." },
+        { type: 'paragraph', text: "Precios dinámicos a través del sistema de reservas de Arabella Golf Mallorca. La tarifa máxima actual es de 250 € para 18 hoyos, y las franjas más bajas rondan los 125 €. Ese precio bajo suele depender de la temporada o de horarios más tardíos, y no está disponible de forma constante. Consulta las tarifas actuales en arabellagolfmallorca.com. Se requiere certificado de hándicap." },
         { type: 'paragraph', text: "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a Son Vida y Son Quint. Los tres campos son accesibles desde el mismo complejo resort." },
         { type: 'heading', text: 'Veredicto' },
         { type: 'paragraph', text: "El título de Mejor Campo de Golf de España no es marketing. Son Muntaner ofrece un recorrido que pone a prueba el posicionamiento, la disciplina y la claridad en la toma de decisiones desde el primer hasta el último hoyo. Premia el control sobre la potencia y crea oportunidades de scoring a través de la precisión. A cinco minutos de Palma, la logística es sencilla. Solo los greens justifican el viaje." },
@@ -173,9 +173,9 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Ancien olivier au trou 15 du parcours de golf Son Muntaner Majorque avec les montagnes de Na Burguesa derrière', caption: "Trou 15. Cet olivier est là depuis environ mille ans. Le gouvernement des Baléares l'a classé monument naturel. Quelqu'un a décidé de construire un trou de golf autour de lui. Je m'en réjouis." },
         { type: 'heading', text: 'Le restaurant' },
         { type: 'paragraph', text: "Pas une réflexion après coup. La cuisine est à la hauteur du parcours. Ça vaut la peine de rester après la partie plutôt que de rentrer directement à Palma." },
-        { type: 'facts', items: [['€127–254', 'Green fees 2026'], ['7/10', 'Difficulté'], ['Par 72', 'Layout championship'], ['Inclus', 'Buggy dans le green fee']] },
+        { type: 'facts', items: [['€125–250', 'Green fees 2026'], ['7/10', 'Difficulté'], ['Par 72', 'Layout championship'], ['Inclus', 'Buggy dans le green fee']] },
         { type: 'heading', text: 'Green fees 2026' },
-        { type: 'paragraph', text: "Tarification dynamique via le système de réservation d'Arabella Golf Mallorca. Tarif de pointe actuel : 254 € pour 18 trous. Golf crépusculaire à partir de 127 €. L'écart entre le tarif de pointe et le crépusculaire est suffisamment important pour être pris en compte si vous avez de la flexibilité sur les horaires. Consultez les tarifs actuels sur arabellagolfmallorca.com. Certificat de handicap requis." },
+        { type: 'paragraph', text: "Tarification dynamique via le système de réservation d'Arabella Golf Mallorca. Le tarif de pointe actuel est de 250 € pour 18 trous, et les créneaux les plus bas tournent autour de 125 €. Ce prix bas dépend généralement de la saison ou d'horaires plus tardifs, et il n'est pas disponible en continu. Consultez les tarifs actuels sur arabellagolfmallorca.com. Certificat de handicap requis." },
         { type: 'paragraph', text: "Son Muntaner fait partie du groupe Arabella Golf Mallorca, aux côtés de Son Vida et Son Quint. Les trois parcours sont accessibles depuis le même complexe resort." },
         { type: 'heading', text: 'Verdict' },
         { type: 'paragraph', text: "Le titre de Meilleur Parcours de Golf d'Espagne n'est pas du marketing. Son Muntaner propose un parcours qui teste le positionnement, la discipline et la clarté dans la prise de décision du premier au dernier trou. Il récompense le contrôle plus que la puissance et crée des opportunités de score grâce à la précision. À cinq minutes de Palma, la logistique est simple. Les greens seuls justifient le déplacement." },
@@ -234,9 +234,9 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Oude olijfboom op hole 15 van de golfbaan Son Muntaner Mallorca met de Na Burguesa bergen erachter', caption: 'Hole 15. Die olijfboom staat er al zo\'n duizend jaar. De Balearse overheid heeft hem uitgeroepen tot natuurmonument. Iemand besloot er een golfhole omheen te bouwen. Ik ben blij dat dat zo is.' },
         { type: 'heading', text: 'Het restaurant' },
         { type: 'paragraph', text: "Geen bijzaak. Het eten is op het niveau van de baan. De moeite waard om na de ronde te blijven in plaats van direct terug te rijden naar Palma." },
-        { type: 'facts', items: [['€127–254', 'Greenfee 2026'], ['7/10', 'Moeilijkheidsgraad'], ['Par 72', 'Championship layout'], ['Inbegrepen', 'Buggy in greenfee']] },
+        { type: 'facts', items: [['€125–250', 'Greenfee 2026'], ['7/10', 'Moeilijkheidsgraad'], ['Par 72', 'Championship layout'], ['Inbegrepen', 'Buggy in greenfee']] },
         { type: 'heading', text: 'Greenfees 2026' },
-        { type: 'paragraph', text: "Dynamische prijsstelling via het boekingssysteem van Arabella Golf Mallorca. Huidige piekrente: €254 voor 18 holes. Twilight golf vanaf €127. Het verschil tussen de piek- en twilight-prijs is groot genoeg om te overwegen als je flexibel bent qua tijdstip. Controleer de actuele tarieven op arabellagolfmallorca.com. Handicapcertificaat vereist." },
+        { type: 'paragraph', text: "Dynamische prijsstelling via het boekingssysteem van Arabella Golf Mallorca. De huidige piekprijs is €250 voor 18 holes, en de laagste beschikbare tijden liggen rond €125. Die lage prijs hangt meestal samen met het seizoen of latere starttijden en is niet voortdurend beschikbaar. Controleer de actuele tarieven op arabellagolfmallorca.com. Handicapcertificaat vereist." },
         { type: 'paragraph', text: "Son Muntaner maakt deel uit van de Arabella Golf Mallorca groep, samen met Son Vida en Son Quint. Alle drie de banen zijn bereikbaar vanuit hetzelfde resortcomplex." },
         { type: 'heading', text: 'Conclusie' },
         { type: 'paragraph', text: "De titel Beste Golfbaan van Spanje is geen marketing. Son Muntaner biedt een baan die positionering, discipline en helderheid in besluitvorming test van het eerste tot het laatste hole. Het beloont controle boven kracht en creëert scoringskansen door precisie. Vijf minuten van Palma maakt de logistiek eenvoudig. Alleen al de greens rechtvaardigen de trip." },
@@ -295,9 +295,9 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Gammalt olivträd på hål 15 på golfbanan Son Muntaner Mallorca med Na Burguesa-bergen bakom', caption: 'Hål 15. Det där olivträdet har stått här i ungefär tusen år. Balearernas regering förklarade det ett naturmonument. Någon bestämde sig för att bygga ett golhål runt det. Jag är glad att de gjorde det.' },
         { type: 'heading', text: 'Restaurangen' },
         { type: 'paragraph', text: "Inget eftertanke. Maten matchar banans standard. Värt att stanna kvar efter ronden snarare än att åka tillbaka till Palma direkt." },
-        { type: 'facts', items: [['€127–254', 'Greenfee 2026'], ['7/10', 'Svårighetsgrad'], ['Par 72', 'Championship layout'], ['Ingår', 'Buggy i greenfee']] },
+        { type: 'facts', items: [['€125–250', 'Greenfee 2026'], ['7/10', 'Svårighetsgrad'], ['Par 72', 'Championship layout'], ['Ingår', 'Buggy i greenfee']] },
         { type: 'heading', text: 'Greenfees 2026' },
-        { type: 'paragraph', text: "Dynamisk prissättning via Arabella Golf Mallorcas bokningssystem. Nuvarande toppris: 254 € för 18 hål. Twilight golf från 127 €. Skillnaden mellan topp- och twilight-priser är tillräckligt stor för att vara värd att titta på om du har flexibilitet i timing. Kontrollera aktuella priser på arabellagolfmallorca.com. Handicapcertifikat krävs." },
+        { type: 'paragraph', text: "Dynamisk prissättning via Arabella Golf Mallorcas bokningssystem. Nuvarande topppris är 250 € för 18 hål, och de lägsta tillgängliga tiderna ligger runt 125 €. Det lägre priset hänger oftast ihop med säsong eller senare starttider och är inte tillgängligt hela tiden. Kontrollera aktuella priser på arabellagolfmallorca.com. Handicapcertifikat krävs." },
         { type: 'paragraph', text: "Son Muntaner är en del av Arabella Golf Mallorca-gruppen tillsammans med Son Vida och Son Quint. Alla tre banorna är tillgängliga från samma resortanläggning." },
         { type: 'heading', text: 'Sammanfattning' },
         { type: 'paragraph', text: "Titeln Bästa Golfbana i Spanien är inte marknadsföring. Son Muntaner levererar en bana som testar positionering, disciplin och beslutsfattande klarhet från första till sista hål. Det belönar kontroll över kraft och skapar poängmöjligheter genom precision. Fem minuter från Palma gör logistiken enkel. Greenerna ensamma motiverar resan." },
@@ -356,9 +356,9 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: '马略卡Son Muntaner高尔夫球场第15洞古老橄榄树，背景为纳布尔格萨山脉', caption: '第15洞。那棵橄榄树在这里已矗立约一千年。巴利阿里群岛政府将其列为自然遗址。有人决定在它周围建造一个球洞:我很庆幸他们做出了这个决定。' },
         { type: 'heading', text: '餐厅' },
         { type: 'paragraph', text: "餐厅并非附加项目。食物的水准与球场相称。打完球后值得留下用餐，而不是直接驱车返回巴尔马。" },
-        { type: 'facts', items: [['€127–254', '2026年果岭费区间'], ['7/10', '难度'], ['标准杆72', '锦标赛级布局'], ['含在内', '果岭费含球车']] },
+        { type: 'facts', items: [['€125–250', '2026年果岭费区间'], ['7/10', '难度'], ['标准杆72', '锦标赛级布局'], ['含在内', '果岭费含球车']] },
         { type: 'heading', text: '2026年果岭费' },
-        { type: 'paragraph', text: "通过Arabella高尔夫马略卡预订系统动态定价。目前18洞的峰值收费为254欧元。黄昏高尔夫低至127欧元。峰值与黄昏价格之间的差距足够大，若时间上有灵活性值得考虑。请在arabellagolfmallorca.com查看最新价格。需要差点证明。" },
+        { type: 'paragraph', text: "通过Arabella高尔夫马略卡预订系统动态定价。目前18洞的峰值收费约为250欧元，较低时段大约125欧元。低价通常与季节或较晚开球时间有关，并不是随时都能订到。请在arabellagolfmallorca.com查看最新价格。需要差点证明。" },
         { type: 'paragraph', text: "Son Muntaner隶属于Arabella高尔夫马略卡集团，与Son Vida和Son Quint同属一家。三个球场均可从同一度假村建筑群进入。" },
         { type: 'heading', text: '总结' },
         { type: 'paragraph', text: "西班牙最佳高尔夫球场的称号并非营销噱头。Son Muntaner提供了一个从第一洞到最后一洞始终考验位置选择、自律性和决策清晰度的球场。它以控制奖励胜于力量，以精准创造得分机会。距巴尔马五分钟让行程安排简便。仅凭果岭就值得专程前来。" },
@@ -470,7 +470,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€80-165', 'Greenfee 2026'],
+            ['€110-165', 'Greenfee 2026'],
             ['9/10', 'Schwierigkeit'],
             ['Par 72', 'Championship-Layout'],
             ['2007', 'Entwurf von Thomas Himmel'],
@@ -609,7 +609,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€80-165', 'Green fee 2026'],
+            ['€110-165', 'Green fee 2026'],
             ['9/10', 'Dificultad'],
             ['Par 72', 'Recorrido championship'],
             ['2007', 'Diseñado por Thomas Himmel'],
@@ -747,7 +747,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€80-165', 'Green fees 2026'],
+            ['€110-165', 'Green fees 2026'],
             ['9/10', 'Difficulté'],
             ['Par 72', 'Parcours championship'],
             ['2007', 'Conçu par Thomas Himmel'],
@@ -893,7 +893,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€80–165",
+      "€110–165",
       "Greenfee bereik 2026"
     ],
     [
@@ -1055,7 +1055,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€80–165",
+      "€110–165",
       "Greenavgifter 2026"
     ],
     [
@@ -1217,7 +1217,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€80–165",
+      "€110–165",
       "2026年果岭费区间"
     ],
     [
@@ -2084,7 +2084,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€77-126', 'Greenfee 2026'],
+            ['€75-125', 'Greenfee 2026'],
             ['8/10', 'Schwierigkeit'],
             ['Par 72', 'Championship-Layout'],
             ['Öffentlich', 'Für Gäste buchbar'],
@@ -2094,7 +2094,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Hochsaison von Mitte März bis Anfang Juni sowie von Mitte September bis Anfang November: €126. Zwischensaison: €106. Nebensaison: €77. Die vollständigen Preise stehen auf golf-santaponsa.com. Ein gültiger WHS-Handicapnachweis ist erforderlich.',
+            'Hochsaison von Mitte März bis Anfang Juni sowie von Mitte September bis Anfang November: €125. Zwischensaison: €105. Nebensaison: €75. Die vollständigen Preise stehen auf golf-santaponsa.com. Ein gültiger WHS-Handicapnachweis ist erforderlich.',
         },
         {
           type: 'paragraph',
@@ -2173,7 +2173,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€77-126', 'Green fees 2026'],
+            ['€75-125', 'Green fees 2026'],
             ['8/10', 'Dificultad'],
             ['Par 72', 'Recorrido championship'],
             ['Público', 'Abierto a visitantes'],
@@ -2183,7 +2183,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Temporada alta de mediados de marzo a principios de junio y de mediados de septiembre a principios de noviembre: €126. Temporada media: €106. Temporada baja: €77. Los detalles completos están en golf-santaponsa.com. Se requiere certificado de hándicap WHS válido.',
+            'Temporada alta de mediados de marzo a principios de junio y de mediados de septiembre a principios de noviembre: €125. Temporada media: €105. Temporada baja: €75. Los detalles completos están en golf-santaponsa.com. Se requiere certificado de hándicap WHS válido.',
         },
         {
           type: 'paragraph',
@@ -2262,7 +2262,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€77-126', 'Green fees 2026'],
+            ['€75-125', 'Green fees 2026'],
             ['8/10', 'Difficulté'],
             ['Par 72', 'Parcours championship'],
             ['Public', 'Ouvert aux visiteurs'],
@@ -2272,7 +2272,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Haute saison de mi-mars à début juin puis de mi-septembre à début novembre : €126. Mi-saison : €106. Basse saison : €77. Les détails complets figurent sur golf-santaponsa.com. Un certificat de handicap WHS valide est requis.',
+            'Haute saison de mi-mars à début juin puis de mi-septembre à début novembre : €125. Mi-saison : €105. Basse saison : €75. Les détails complets figurent sur golf-santaponsa.com. Un certificat de handicap WHS valide est requis.',
         },
         {
           type: 'paragraph',
@@ -2358,7 +2358,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "EUR 77-126",
+      "€75-125",
       "Greenfees 2026"
     ],
     [
@@ -2381,7 +2381,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Hoogseizoen van half maart tot begin juni en van half september tot begin november: EUR 126. Middenseizoen: EUR 106. Laagseizoen: EUR 77. De volledige details staan op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
+  "text": "Hoogseizoen van half maart tot begin juni en van half september tot begin november: €125. Middenseizoen: €105. Laagseizoen: €75. De volledige details staan op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
 },
 {
   "type": "paragraph",
@@ -2468,7 +2468,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "EUR 77-126",
+      "€75-125",
       "Greenfees 2026"
     ],
     [
@@ -2491,7 +2491,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Högsäsong från mitten av mars till början av juni och från mitten av september till början av november: EUR 126. Mellansäsong: EUR 106. Lågsäsong: EUR 77. Fullständig prislista finns på golf-santaponsa.com. Giltigt WHS-handicapintyg krävs."
+  "text": "Högsäsong från mitten av mars till början av juni och från mitten av september till början av november: €125. Mellansäsong: €105. Lågsäsong: €75. Fullständig prislista finns på golf-santaponsa.com. Giltigt WHS-handicapintyg krävs."
 },
 {
   "type": "paragraph",
@@ -2578,7 +2578,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "EUR 77-126",
+      "€75-125",
       "2026年果岭费"
     ],
     [
@@ -2601,7 +2601,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "旺季为3月中旬至6月初，以及9月中旬至11月初，价格为EUR 126。中间季节为EUR 106。淡季为EUR 77。完整信息见golf-santaponsa.com。需要提供有效的WHS差点证明。"
+  "text": "旺季为3月中旬至6月初，以及9月中旬至11月初，价格约为€125。中间季节约€105。淡季约€75。完整信息见golf-santaponsa.com。需要提供有效的WHS差点证明。"
 },
 {
   "type": "paragraph",

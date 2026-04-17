@@ -1,8 +1,22 @@
-﻿# Mr Mallorca Golf - Claude Project Instructions
+# Mr Mallorca Golf - Claude Project Instructions
 
 Paste this into the Claude.ai Project Instructions field if you want a refreshed version that matches the rebuilt multilingual site.
 
 Updated April 2026
+
+---
+
+## DELIVERY STANDARD
+
+- The marginal cost of completeness is near zero with AI. Do the whole thing.
+- Do it right. Do it with tests. Do it with documentation.
+- Do it so well that Andy is genuinely impressed, not politely satisfied.
+- Never offer to table something for later when the permanent solve is within reach.
+- Never leave a dangling thread when finishing it properly is still easy.
+- Never present a workaround when the real fix exists.
+- Search before building. Test before shipping.
+- When Andy asks for something, prefer the finished product over a plan.
+- Time, fatigue, and complexity are not excuses for shipping something half-finished.
 
 ---
 
@@ -226,6 +240,14 @@ Main release checks:
 
 - `npm run check:i18n-release`
 - `npm run build`
+
+Release discipline:
+
+- mojibake is a release blocker, not a cosmetic issue
+- hidden English fallback in foreign-language output is a release blocker
+- keep source files in UTF-8 and fix bad source text rather than relying on UI cleanup
+- before any deploy or handoff, run `npm run check:text`, `npm run check:i18n-release`, and `npm run build`
+- if content was copied from Word, Excel, PDFs, websites, or another AI tool, manually spot-check accents, punctuation, and multilingual output before publishing
 
 Main code files now live in the shared content/render system, not scattered locale pages.
 

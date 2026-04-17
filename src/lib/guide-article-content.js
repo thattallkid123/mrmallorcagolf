@@ -18,7 +18,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       updated: 'March 2026',
       title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
       intro:
-        'Public 18-hole golf in Mallorca runs from about €55 at the value end up to around €252 at Son Muntaner in peak season. Here is the honest 2026 breakdown from someone who plays here most weeks.',
+        'Public 18-hole golf in Mallorca runs from about €55 at the value end up to around €250 at Son Muntaner in peak season. Here is the honest 2026 breakdown from someone who plays here most weeks.',
       related: [
         { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
         { slug: 'golf-club-hire-mallorca', title: 'Golf Club Hire in Mallorca' },
@@ -37,7 +37,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '€15-25 at Palma Pitch & Putt, or around €55-65 if you want the cheapest full-size options such as Golf Pollensa in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
+          '€15-25 at Palma Pitch & Putt, or around €55-65 if you want the cheapest full-size options such as Golf Pollença in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
       },
       {
         type: 'image',
@@ -50,13 +50,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Roughly €74-145 depending on course, month, and tee time. Bendinat, Son Termes, Capdepera, Canyamel, Son Servera, Vall d'Or, Maioris, Santa Ponsa 1, Pula, and the Son Antem courses all live in this middle bracket at some point in the year. These are proper courses in good condition, not afterthought golf.",
+          "Roughly €75-145 depending on course, month, and tee time. Bendinat, Son Termes, Capdepera, Canyamel, Son Servera, Vall d'Or, Maioris, Santa Ponsa 1, Pula, and the Son Antem courses all live in this middle bracket at some point in the year. These are proper courses in good condition, not afterthought golf.",
       },
       { type: 'subheading', text: 'Premium courses' },
       {
         type: 'paragraph',
         text:
-          'Son Gual sits around €109-165. Alcanada runs roughly €115-220. Son Muntaner reaches around €252 at peak and drops to around €130 in the value window, with twilight often around €127. T Golf Calvia can push to around €210, and Son Vida to around €191. The top end in Mallorca is higher than many older guides suggest.',
+          'Son Gual sits around €110-165. Alcanada runs roughly €115-220. Son Muntaner reaches around €250 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €210, and Son Vida to around €190. The top end in Mallorca is higher than many older guides suggest.',
       },
       {
         type: 'paragraph',
@@ -205,7 +205,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'DP World Tour experience: Son Muntaner (Arabella). Five minutes from Palma, Best in Spain 2025.',
+        text: 'DP World Tour experience: Son Muntaner (Arabella). Best in Spain 2025.',
       },
       {
         type: 'paragraph',
@@ -225,7 +225,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "A hire car is the most practical option. Most of the best courses are 20-60 minutes from Palma and public transport doesn't serve them. Roads are good; traffic is manageable outside peak summer.",
+          "A hire car is the most practical option. Public transport doesn't serve many of the best courses well. Roads are good; traffic is manageable outside peak summer.",
       },
       {
         type: 'image',
@@ -481,7 +481,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Named Best Golf Course in Spain at the 2025 World Golf Awards and well deserved. Hosted the Mallorca Golf Open and Ladies European Tour events. Wide fairways, but a lot of hazards and pine trees to guide you, technically demanding greens, fantastic conditioning and a really good test of golf just five minutes from central Palma.',
+          'Named Best Golf Course in Spain at the 2025 World Golf Awards and well deserved. Hosted the Mallorca Golf Open and Ladies European Tour events. Wide fairways, but a lot of hazards and pine trees to guide you, technically demanding greens, fantastic conditioning and a really good test of golf.',
       },
       { type: 'subheading', text: 'For the Hardest Test: Golf de Andratx' },
       {
@@ -507,7 +507,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Described by many as the most photographed course on the island. Set in the foothills of the Llevant Natural Park in the east, with sea views throughout. Worth the drive from Palma for the setting, and a genuinely good course beyond the aesthetics.',
+          'Described by many as the most photographed course on the island. Set in the foothills of the Llevant Natural Park in the east, with sea views throughout. A genuinely good course beyond the aesthetics.',
       },
       { type: 'subheading', text: 'Also Worth Playing: Golf Santa Ponsa 1' },
       {
@@ -539,7 +539,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'facts',
         items: [
           ['24', 'Courses on the island'],
-          ['€55-252', '18-hole green fee range'],
+          ['€55-250', '18-hole green fee range'],
           ['300', 'Days of sunshine'],
           ['12 mo', 'Golf played year-round'],
         ],
@@ -766,11 +766,11 @@ export const GUIDE_ARTICLE_CONTENT = {
         text:
           'Playable, but peak pricing and peak temperatures. Not ideal for a dedicated golf trip. Early morning tee times are needed but with a sea breeze often it is not that bad!',
       },
-      { type: 'subheading', text: 'The east coast courses require a drive' },
+      { type: 'subheading', text: 'The east coast courses are best grouped together' },
       {
         type: 'paragraph',
         text:
-          'Pula, Canyamel, Capdepera - some of the most beautiful courses - are 55-65km from Palma. Factor in travel time and consider basing yourself in the east for a night and tick off a few.',
+          'Pula, Canyamel, and Capdepera are some of the most beautiful courses on the island. They make sense as a cluster, and it is worth considering a night on the east side to play a few together.',
       },
       {
         type: 'image',
@@ -874,7 +874,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Son Gual is 11km from Palma. The drive takes about 20 minutes. Coming from the southwest of the island, you leave the residential roads and the landscape opens out - the kind of change that tells you you are going somewhere worth going. The course sits on elevated ground above the city. You feel it before you see it.',
+          'Approaching Son Gual, the residential roads fall away and the landscape opens out - the kind of change that tells you you are going somewhere worth going. The course sits on elevated ground above the city. You feel it before you see it.',
       },
       { type: 'heading', text: 'The First Tee' },
       {
