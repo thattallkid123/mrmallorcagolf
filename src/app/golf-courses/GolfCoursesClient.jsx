@@ -11,11 +11,11 @@ import {
   getGolfCourseRegions,
 } from '../../lib/golf-courses-translations'
 import {
-  getCourseDistanceKm,
   getCoursePriceMeta,
   getShortCourseId,
   slugifyCourseName,
 } from '../../lib/golf-courses-helpers'
+import BeehiivEmbed from '../../components/BeehiivEmbed'
 
 const SORT_UI = {
   en: {
@@ -25,7 +25,9 @@ const SORT_UI = {
     topRated: 'Top Rated',
     az: 'A-Z',
     price: 'Price',
-    nearest: 'Nearest',
+    nearest: 'Nearest to me',
+    furthest: 'Furthest from me',
+    locating: 'Locating…',
   },
   de: {
     controlsIntro: 'Nach Region filtern. Jede Karte zeigt Spitzen- und Niedrigpreis, Par, Bewertung und die wichtigsten Hinweise vor der Runde.',
@@ -85,9 +87,50 @@ const SORT_UI = {
 
 const DISPLAY_TEXT_REPLACEMENTS = []
 
+const COURSE_GEO_META = {
+  'club-de-golf-alcanada': { rating: 5, lat: 39.8633, lng: 3.1211 },
+  'golf-son-gual': { rating: 5, lat: 39.561, lng: 2.736 },
+  'golf-son-vida': { rating: 4.5, lat: 39.6155, lng: 2.611 },
+  'pula-golf': { rating: 4.5, lat: 39.6328, lng: 3.3489 },
+  'son-muntaner': { rating: 4.5, lat: 39.6021, lng: 2.6489 },
+  't-golf-palma-puntiro': { rating: 4.5, lat: 39.6287, lng: 2.7614 },
+  'canyamel-golf': { rating: 4, lat: 39.733, lng: 3.4011 },
+  'golf-de-andratx': { rating: 4, lat: 39.5671, lng: 2.3838 },
+  'golf-maioris': { rating: 4, lat: 39.5003, lng: 2.9017 },
+  'golf-son-antem-west': { rating: 4, lat: 39.5651, lng: 2.8875 },
+  'golf-son-quint': { rating: 4, lat: 39.5513, lng: 2.7055 },
+  'golf-son-termes': { rating: 4, lat: 39.6024, lng: 2.8706 },
+  'capdepera-golf': { rating: 3.5, lat: 39.7002, lng: 3.4328 },
+  'golf-pollenca': { rating: 3.5, lat: 39.8871, lng: 3.0178 },
+  'golf-santa-ponsa-1': { rating: 3.5, lat: 39.5138, lng: 2.4729 },
+  'golf-santa-ponsa-2': { rating: 3.5, lat: 39.5097, lng: 2.4844 },
+  'real-golf-de-bendinat': { rating: 3.5, lat: 39.5285, lng: 2.5703 },
+  'reserva-rotana': { rating: 3.5, lat: 39.6517, lng: 3.2028 },
+  't-golf-calvia-poniente': { rating: 3.5, lat: 39.5503, lng: 2.4864 },
+  'golf-club-son-servera': { rating: 3, lat: 39.6151, lng: 3.3528 },
+  'golf-santa-ponsa-3': { rating: 3, lat: 39.505, lng: 2.4944 },
+  'golf-son-antem-east': { rating: 3, lat: 39.5642, lng: 2.8853 },
+  'palma-pitch-putt': { rating: 3, lat: 39.5688, lng: 2.6428 },
+  'vall-d-or-golf': { rating: 3, lat: 39.5563, lng: 3.2175 },
+}
+
 function cleanDisplayText(value) {
   if (!value) return value
   return DISPLAY_TEXT_REPLACEMENTS.reduce((text, [from, to]) => text.replaceAll(from, to), value)
+}
+
+function normalizeCourseKey(name) {
+  return cleanDisplayText(name || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/gi, '-')
+    .replace(/(^-|-$)/g, '')
+    .toLowerCase()
+}
+
+function getCourseGeoMeta(name) {
+  return COURSE_GEO_META[normalizeCourseKey(name)] || {}
 }
 
 function getCourseMeta(name) {
@@ -95,11 +138,39 @@ function getCourseMeta(name) {
     .flatMap((region) => region.courses)
     .find((entry) => cleanDisplayText(entry.name) === cleanDisplayText(name))
 
-  return course ? getCoursePriceMeta(course) : {}
+  if (!course) return {}
+  return { ...getCoursePriceMeta(course), ...getCourseGeoMeta(course.name) }
 }
 
-function getCourseDistance(course) {
-  return getCourseDistanceKm(course)
+function haversineKm(lat1, lng1, lat2, lng2) {
+  const R = 6371
+  const dLat = (lat2 - lat1) * Math.PI / 180
+  const dLng = (lng2 - lng1) * Math.PI / 180
+  const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLng / 2) * Math.sin(dLng / 2)
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+}
+
+function getCourseDistance(course, userLocation) {
+  if (!userLocation) return Number.POSITIVE_INFINITY
+  const meta = getCourseGeoMeta(course.name)
+  if (!Number.isFinite(meta.lat) || !Number.isFinite(meta.lng)) return Number.POSITIVE_INFINITY
+  return haversineKm(userLocation.lat, userLocation.lng, meta.lat, meta.lng)
+}
+
+function renderRatingStars(rating) {
+  const safeRating = Number.isFinite(rating) ? rating : 0
+  const stars = []
+
+  for (let index = 1; index <= 5; index += 1) {
+    let symbol = '\u2606'
+    if (safeRating >= index) symbol = '\u2605'
+    else if (safeRating >= index - 0.5) symbol = '\u2726'
+    stars.push(<span key={index}>{symbol}</span>)
+  }
+
+  return stars
 }
 
 function buildPricePill(course) {
@@ -123,7 +194,7 @@ const DEFAULT_SORT_DIRECTIONS = {
   nearest: 'asc',
 }
 
-function sortCourses(courses, sortKey, direction = DEFAULT_SORT_DIRECTIONS[sortKey] || 'desc') {
+function sortCourses(courses, sortKey, direction = DEFAULT_SORT_DIRECTIONS[sortKey] || 'desc', userLocation = null) {
   const sorted = [...courses]
   sorted.sort((a, b) => {
     const aMeta = getCourseMeta(a.name)
@@ -145,12 +216,14 @@ function sortCourses(courses, sortKey, direction = DEFAULT_SORT_DIRECTIONS[sortK
     }
 
     if (sortKey === 'nearest') {
-      const distanceDelta = getCourseDistance(a) - getCourseDistance(b)
+      const distanceDelta = getCourseDistance(a, userLocation) - getCourseDistance(b, userLocation)
       return descending ? -distanceDelta : distanceDelta
     }
 
-    if (b.difficulty !== a.difficulty) {
-      return descending ? b.difficulty - a.difficulty : a.difficulty - b.difficulty
+    const aRating = Number.isFinite(aMeta.rating) ? aMeta.rating : 0
+    const bRating = Number.isFinite(bMeta.rating) ? bMeta.rating : 0
+    if (bRating !== aRating) {
+      return descending ? bRating - aRating : aRating - bRating
     }
     return a.name.localeCompare(b.name)
   })
@@ -411,6 +484,7 @@ function CourseCard({ c, lang = 'en' }) {
   const bodyText2 = cleanDisplayText(translated.text2 || c.text2)
   const noteText = cleanDisplayText(translated.note || c.note)
   const footerText = cleanDisplayText(translated.footer || c.footer)
+  const ratingValue = Number.isFinite(meta.rating) ? meta.rating : 0
 
   return (
     <div id={slugifyCourseName(c.name)} className={`course course--anchored${c.expert ? ' course--expert' : ''}${c.full ? ' course--full' : ''}`}>
@@ -443,6 +517,10 @@ function CourseCard({ c, lang = 'en' }) {
             {meta.dynamic ? <span className="course__dynamic-mark" aria-hidden="true"> *</span> : null}
           </h3>
           <p className="course__location">{locationText}</p>
+          <div className="course__rating-row" aria-label={`Rated ${ratingValue} out of 5`}>
+            <span className="course__review-stars">{renderRatingStars(ratingValue)}</span>
+            <span className="course__review-rating">{ratingValue.toFixed(1)} / 5</span>
+          </div>
           <div className="course__stats">
             {(translated.pills || displayPills).slice(0, 4).map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{translateCourseText(pill, lang)}</span>)}
           </div>
@@ -470,11 +548,14 @@ function CourseCard({ c, lang = 'en' }) {
   )
 }
 
-function getSortLabel(sortKey, sortUi) {
+function getSortLabel(sortKey, sortUi, direction, isLocating = false) {
   if (sortKey === 'rating') return sortUi.topRated
   if (sortKey === 'az') return sortUi.az
   if (sortKey === 'price') return sortUi.price
-  if (sortKey === 'nearest') return sortUi.nearest
+  if (sortKey === 'nearest') {
+    if (isLocating) return sortUi.locating || sortUi.nearest
+    return direction === 'desc' ? (sortUi.furthest || sortUi.nearest) : sortUi.nearest
+  }
   return sortUi.topRated
 }
 
@@ -494,6 +575,8 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   const [activeFilter, setActiveFilter] = useState('all')
   const [activeSort, setActiveSort] = useState('rating')
   const [sortDirections, setSortDirections] = useState(DEFAULT_SORT_DIRECTIONS)
+  const [userLocation, setUserLocation] = useState(null)
+  const [isLocating, setIsLocating] = useState(false)
   const contactHref = buildLocalePath('/contact', lang)
   const experiencesHref = buildLocalePath('/play-with-a-pro', lang)
 
@@ -531,16 +614,77 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   const globallySortedCourses = sortCourses(
     activeFilter === 'expert' ? allCourses.filter((course) => course.expert) : allCourses,
     activeSort,
-    activeSortDirection
+    activeSortDirection,
+    userLocation
   )
 
   const handleSortChange = (sortKey) => {
+    if (sortKey === 'nearest') {
+      if (activeSort === 'nearest' && userLocation) {
+        setSortDirections((current) => ({
+          ...current,
+          nearest: current.nearest === 'desc' ? 'asc' : 'desc',
+        }))
+        return
+      }
+
+      if (userLocation) {
+        setSortDirections((current) => ({ ...current, nearest: 'asc' }))
+        setActiveSort('nearest')
+        return
+      }
+
+      if (typeof window === 'undefined' || !navigator.geolocation) {
+        window.alert('Geolocation is not supported in this browser.')
+        return
+      }
+
+      if (window.location.protocol === 'file:') {
+        window.alert('Nearest sorting needs the page opened from a website or local server, not directly from a file.')
+        return
+      }
+
+      if (!window.isSecureContext && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        window.alert('Nearest sorting needs HTTPS or localhost so the browser can request your location.')
+        return
+      }
+
+      setIsLocating(true)
+      navigator.geolocation.getCurrentPosition((pos) => {
+        setUserLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude })
+        setSortDirections((current) => ({ ...current, nearest: 'asc' }))
+        setActiveSort('nearest')
+        setIsLocating(false)
+      }, (err) => {
+        setIsLocating(false)
+        if (err?.code === err.PERMISSION_DENIED) {
+          window.alert('Location access was blocked. Please allow location access to use Nearest to me.')
+          return
+        }
+        if (err?.code === err.POSITION_UNAVAILABLE) {
+          window.alert('Your location could not be determined.')
+          return
+        }
+        if (err?.code === err.TIMEOUT) {
+          window.alert('Location request timed out. Please try again.')
+          return
+        }
+        window.alert('Could not get your location.')
+      }, {
+        enableHighAccuracy: true,
+        timeout: 12000,
+        maximumAge: 300000,
+      })
+      return
+    }
+
     const nextDirection = activeSort === sortKey
       ? (sortDirections[sortKey] === 'desc' ? 'asc' : 'desc')
       : DEFAULT_SORT_DIRECTIONS[sortKey]
 
     setSortDirections((current) => ({
       ...current,
+      nearest: 'asc',
       [sortKey]: nextDirection,
     }))
     setActiveSort(sortKey)
@@ -584,12 +728,6 @@ export default function GolfCoursesClient({ lang = 'en' }) {
         </div>
       </section>
 
-      <div className="intro-bar">
-        <div className="intro-bar__text intro-bar__text--full reveal">
-          <p>{t.intro1} {t.intro2}</p>
-        </div>
-      </div>
-
       <section className="course-controls-shell">
         <div id="all-courses" className="filter-tabs filter-tabs--anchored filter-tabs--primary">
           {regions.map((region) => (
@@ -617,7 +755,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
                 className={`filter-tab filter-tab--sort${isActive ? ' active' : ''}`}
                 onClick={() => handleSortChange(sortKey)}
               >
-                <span>{getSortLabel(sortKey, sortUi)}</span>
+                <span>{getSortLabel(sortKey, sortUi, sortDirections[sortKey], isLocating && sortKey === 'nearest')}</span>
                 {isActive ? (
                   <span
                     className={`filter-tab__triangle filter-tab__triangle--${getSortTriangleDirection(sortKey, sortDirections[sortKey])}`}
@@ -652,8 +790,9 @@ export default function GolfCoursesClient({ lang = 'en' }) {
               : regionData.courses
             const sortedCourses = sortCourses(
               coursesToShow,
-              activeSort === 'rating' ? 'az' : activeSort,
-              activeSort === 'rating' ? 'asc' : activeSortDirection
+              activeSort,
+              activeSortDirection,
+              userLocation
             )
             return (
               <div key={regionData.region + activeFilter}>
@@ -708,6 +847,11 @@ export default function GolfCoursesClient({ lang = 'en' }) {
                 )
               })}
             </ul>
+          </div>
+          <div className="sidebar-card">
+            <h3 className="sidebar-card__title-sm">Stay updated</h3>
+            <p style={{ fontSize: '0.85rem', marginBottom: '1.25rem', lineHeight: 1.6 }}>Weekly Mallorca golf insights and trip planning tips.</p>
+            <BeehiivEmbed />
           </div>
         </aside>
       </div>
