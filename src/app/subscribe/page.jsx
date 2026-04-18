@@ -1,6 +1,6 @@
 import HomeNav from '../../components/HomeNav'
 import HomeFooter from '../../components/HomeFooter'
-import BeehiivEmbed from '../../components/BeehiivEmbed'
+import CustomEmailSignup from '../../components/CustomEmailSignup'
 import { buildSubscribeMetadata } from '../../lib/page-metadata'
 
 export const metadata = buildSubscribeMetadata('en')
@@ -42,7 +42,7 @@ export default function Subscribe() {
               <p style={{ fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.85 }}>UK PGA Advanced Professional. Based in Mallorca since March 2025. I've played every course on the island and I write about what I learn. For golfers who care about playing well.</p>
             </div>
 
-            <BeehiivEmbed />
+            <CustomEmailSignup />
           </div>
         </section>
 
