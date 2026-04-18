@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { Cormorant_Garamond, Jost } from 'next/font/google'
+import Script from 'next/script'
 import DocumentLanguage from '../components/DocumentLanguage'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { SITE_ORIGIN } from '../lib/site.js'
@@ -87,6 +88,14 @@ const LOCAL_BUSINESS_SCHEMA = {
   description: 'Private play-with-a-pro golf experiences and on-course coaching in Mallorca, Spain, led by PGA Advanced Professional Andy Griffiths.',
   url: SITE_ORIGIN,
   email: 'andy@mrmallorcagolf.com',
+  telephone: '+34624466702',
+  image: `${SITE_ORIGIN}/logo-dark-green.png`,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${SITE_ORIGIN}/logo-dark-green.png`,
+    width: 306,
+    height: 306,
+  },
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', url: 'https://wa.me/34624466702', availableLanguage: ['English', 'Mandarin Chinese'] },
   address: {
     '@type': 'PostalAddress',
@@ -105,12 +114,75 @@ const LOCAL_BUSINESS_SCHEMA = {
   },
 }
 
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: "What's included in a day with Andy?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Everything. Green fee, tee time, lunch at the course restaurant, and 18 holes of on-course coaching woven throughout your round. You play alongside Andy—not taking lessons on the range. Strategy, pressure situations, real-course decisions. Post-round debrief too.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need a specific handicap to play with Andy?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "No handicap requirement. You need to be keen to improve and willing to engage with real decisions on the course. Andy's coached players from 2-handicap golfers to complete beginners visiting Mallorca. The philosophy is the same: honest feedback, smart course management, play the hole in front of you—not the one in your head.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why choose this over booking a tee time myself?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You get insight into what calculations go into each shot—not just being told to swing better. Real-course strategy: reading greens, managing risk, pressure. A PGA Advanced Professional with 20+ years\' experience playing alongside you. Course selection matched to your game. You discover your own ceiling.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I book multiple days or customise the trip?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Yes. The Full Experience is completely bespoke: multiple courses over 3–7 days, private transport from Palma, dinners at handpicked restaurants, concierge support. Build your golf trip around how you actually want to play and live. Get in touch and we'll plan it together.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What courses will we play?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'It depends on your game and what you want to experience. Andy has played all 22 courses on the island and builds rounds on Son Gual, Alcanada, and Santa Ponsa courses most often. He matches course to your handicap and goals—not every golfer should play the same track. See the full course guide or get in touch to discuss.',
+      },
+    },
+  ],
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0Z2BRNWB4N');
+          `}
+        </Script>
+
+        {/* Schema Markup */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
         <DocumentLanguage />
