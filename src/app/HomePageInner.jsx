@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
 import { getCourseDestination } from '../lib/golf-courses-helpers'
+import BeehiivEmbed from '../components/BeehiivEmbed'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -327,6 +328,17 @@ export default function HomePageInner({ locale = 'en' }) {
               </div>
             </details>
           ))}
+        </div>
+      </section>
+
+      <section style={{ background: 'var(--cream)', padding: 'clamp(60px,8vw,100px) clamp(20px,5vw,60px)' }}>
+        <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
+          <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '1rem' }}>WEEKLY INSIGHTS</p>
+          <h2 className="serif-display" style={{ fontSize: 'clamp(1.5rem,3vw,2.2rem)', color: 'var(--deep)', marginBottom: '1rem' }}>Golf insights delivered.</h2>
+          <p style={{ fontSize: '0.95rem', color: 'var(--taupe)', lineHeight: 1.8, marginBottom: '2.5rem' }}>
+            Course notes, trip planning tips, and coaching insights — one email per week, no spam.
+          </p>
+          <BeehiivEmbed />
         </div>
       </section>
 

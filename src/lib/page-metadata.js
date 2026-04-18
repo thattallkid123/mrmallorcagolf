@@ -260,6 +260,44 @@ const CONTACT_METADATA = {
   },
 }
 
+const SUBSCRIBE_METADATA = {
+  en: {
+    title: 'Golf Insights from Mallorca - Weekly Newsletter | Mr Mallorca Golf',
+    description:
+      'Join the mailing list for weekly Mallorca golf insights, course reviews, and trip planning tips from a PGA professional on the island.',
+  },
+  de: {
+    title: 'Golf-Einblicke aus Mallorca - Wöchentlicher Newsletter | Mr Mallorca Golf',
+    description:
+      'Abonnieren Sie unseren Newsletter für wöchentliche Golf-Einblicke aus Mallorca, Platz-Bewertungen und Reiseplanung von einem PGA-Profi.',
+  },
+  es: {
+    title: 'Perspectivas de Golf en Mallorca - Boletín Semanal | Mr Mallorca Golf',
+    description:
+      'Únase a nuestra lista de correo para obtener perspectivas semanales de golf en Mallorca, reseñas de campos y consejos de viaje de un profesional PGA.',
+  },
+  fr: {
+    title: 'Perspectives Golf à Majorque - Lettre d\'information Hebdomadaire | Mr Mallorca Golf',
+    description:
+      'Rejoignez notre liste de diffusion pour des perspectives hebdomadaires sur le golf à Majorque, des avis sur les parcours et des conseils de voyage d\'un professionnel PGA.',
+  },
+  nl: {
+    title: 'Golfinzichten van Mallorca - Wekelijkse Nieuwsbrief | Mr Mallorca Golf',
+    description:
+      'Abonneer je op onze mailinglist voor wekelijkse golfinzichten van Mallorca, beoordelingen van banen en reisadviezen van een PGA-professional.',
+  },
+  sv: {
+    title: 'Golfinblickar från Mallorca - Veckovis Nyhetsbrev | Mr Mallorca Golf',
+    description:
+      'Prenumerera på vår maillista för veckovisa golfinblickar från Mallorca, banavgifter och reseplaneringsadiv från en PGA-professional.',
+  },
+  zh: {
+    title: 'Mallorca Golf Insights - Weekly Newsletter | Mr Mallorca Golf',
+    description:
+      'Join the mailing list for weekly Mallorca golf insights, course reviews, and trip planning tips from a PGA professional on the island.',
+  },
+}
+
 const LEGAL_METADATA = {
   'privacy-policy': {
     en: {
@@ -382,6 +420,14 @@ export function buildContactMetadata(locale = 'en') {
     locale === 'en' ? '/contact' : `/${locale}/contact`,
     locale,
     CONTACT_METADATA[locale] || CONTACT_METADATA.en,
+  )
+}
+
+export function buildSubscribeMetadata(locale = 'en') {
+  return buildPageMetadata(
+    locale === 'en' ? '/subscribe' : `/${locale}/subscribe`,
+    locale,
+    SUBSCRIBE_METADATA[locale] || SUBSCRIBE_METADATA.en,
   )
 }
 

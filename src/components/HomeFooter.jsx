@@ -11,6 +11,7 @@ const FOOTER_COPY = {
     about: 'About',
     allCourses: 'All Courses',
     enquire: 'Enquire',
+    subscribe: 'Newsletter',
     privacy: 'Privacy Policy',
     terms: 'Terms & Conditions',
   },
@@ -23,6 +24,7 @@ const FOOTER_COPY = {
     about: 'Uber Andy',
     allCourses: 'Alle Platze',
     enquire: 'Anfragen',
+    subscribe: 'Newsletter',
     privacy: 'Datenschutz',
     terms: 'AGB',
   },
@@ -35,6 +37,7 @@ const FOOTER_COPY = {
     about: 'Sobre Andy',
     allCourses: 'Todos los campos',
     enquire: 'Contacto',
+    subscribe: 'Boletin de noticias',
     privacy: 'Privacidad',
     terms: 'Terminos',
   },
@@ -47,6 +50,7 @@ const FOOTER_COPY = {
     about: 'A propos',
     allCourses: 'Tous les parcours',
     enquire: 'Contact',
+    subscribe: 'Infobrief',
     privacy: 'Confidentialite',
     terms: 'Conditions',
   },
@@ -59,6 +63,7 @@ const FOOTER_COPY = {
     about: 'Over Andy',
     allCourses: 'Alle banen',
     enquire: 'Contact',
+    subscribe: 'Nieuwsbrief',
     privacy: 'Privacybeleid',
     terms: 'Voorwaarden',
   },
@@ -71,6 +76,7 @@ const FOOTER_COPY = {
     about: 'Om Andy',
     allCourses: 'Alla banor',
     enquire: 'Kontakt',
+    subscribe: 'Nyhetsbrev',
     privacy: 'Integritet',
     terms: 'Villkor',
   },
@@ -83,6 +89,7 @@ const FOOTER_COPY = {
     about: 'About Andy',
     allCourses: 'All Courses',
     enquire: 'Contact',
+    subscribe: 'Newsletter',
     privacy: 'Privacy',
     terms: 'Terms',
   },
@@ -147,6 +154,13 @@ export default function HomeFooter({ lang = 'en', basePath = '/' }) {
           <li><a href={`${prefix}/about`}>{copy.about}</a></li>
           <li><a href="https://www.instagram.com/mrmallorcagolf" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li><a href="mailto:andy@mrmallorcagolf.com">Email</a></li>
+        </ul>
+      </div>
+
+      <div className="footer__col">
+        <h3>{copy.subscribe}</h3>
+        <ul>
+          <li><a href={`${prefix}/subscribe`}>{copy.subscribe}</a></li>
         </ul>
       </div>
 
