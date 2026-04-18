@@ -41,7 +41,7 @@ export default function CustomEmailSignup() {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '0.5rem', width: '100%', maxWidth: 500 }}>
+    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: 300 }}>
       <input
         type="email"
         placeholder="your@email.com"
@@ -50,14 +50,15 @@ export default function CustomEmailSignup() {
         required
         disabled={status === 'loading'}
         style={{
-          flex: 1,
           padding: '12px 16px',
           border: 'none',
           borderRadius: '2px',
-          fontSize: '0.95rem',
+          fontSize: '0.9rem',
           fontFamily: "'Jost', sans-serif",
           backgroundColor: '#fff',
           color: 'var(--deep)',
+          width: '100%',
+          boxSizing: 'border-box',
         }}
         aria-label="Email address"
       />
@@ -70,14 +71,15 @@ export default function CustomEmailSignup() {
           color: '#fff',
           border: 'none',
           borderRadius: '2px',
-          fontSize: '0.85rem',
+          fontSize: '0.8rem',
           fontWeight: 600,
-          letterSpacing: '0.08em',
+          letterSpacing: '0.1em',
           textTransform: 'uppercase',
           fontFamily: "'Jost', sans-serif",
           cursor: status === 'loading' ? 'not-allowed' : 'pointer',
           opacity: status === 'loading' ? 0.6 : 1,
           transition: 'opacity 0.2s',
+          width: '100%',
         }}
         aria-label="Subscribe"
       >

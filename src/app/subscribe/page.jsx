@@ -12,37 +12,43 @@ export default function Subscribe() {
       <HomeNav lang="en" solid basePath="/subscribe" />
       <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <section style={{ background: 'var(--cream)', padding: 'clamp(60px,8vw,80px) clamp(20px,5vw,60px)', flex: 1, display: 'flex', alignItems: 'center' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto', width: '100%' }}>
-            <div style={{ marginBottom: '3rem' }}>
-              <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '0.75rem' }}>WEEKLY COURSE NOTES</p>
-              <h1 className="serif-display" style={{ fontSize: 'clamp(1.8rem,3.5vw,2.8rem)', color: 'var(--deep)', marginBottom: '1.5rem', lineHeight: 1.1 }}>Golf insights from Mallorca.</h1>
-              <p style={{ fontSize: '1rem', color: 'var(--charcoal)', lineHeight: 1.85 }}>Every two weeks, notes on what I'm learning as I play the island. Course observations. Condition notes. Planning logic. Honest takes on timing and tactics.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(40px,8vw,60px)', maxWidth: 1200, margin: '0 auto', width: '100%', alignItems: 'start' }}>
+            {/* Left column: text content */}
+            <div>
+              <div style={{ marginBottom: '2.5rem' }}>
+                <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '0.75rem' }}>NEWSLETTER</p>
+                <h1 className="serif-display" style={{ fontSize: 'clamp(1.8rem,3.5vw,2.8rem)', color: 'var(--deep)', marginBottom: '1.5rem', lineHeight: 1.1 }}>Golf insights from Mallorca.</h1>
+                <p style={{ fontSize: '1rem', color: 'var(--charcoal)', lineHeight: 1.85 }}>Every two weeks, notes on what I'm learning as I play the island. Course observations. Condition notes. Planning logic. Honest takes on timing and tactics.</p>
+              </div>
+
+              <div style={{ marginBottom: '2.5rem' }}>
+                <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '1.25rem' }}>What you get:</p>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                  {[
+                    'How each course plays — greens, routing, decision points',
+                    'What works when — condition notes, seasonal changes, timing logic',
+                    'Planning advice — which courses pair well, when to visit, what to expect',
+                    'Coaching notes — on-course lessons applied to real conditions',
+                    'No spam. One email every two weeks. Always useful.',
+                  ].map((item, index) => (
+                    <li key={index} style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.7 }}>
+                      <span style={{ color: 'var(--gold)', fontWeight: 600, flexShrink: 0, marginTop: '2px' }}>✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '1.25rem' }}>About me:</p>
+                <p style={{ fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.85 }}>UK PGA Advanced Professional. Based in Mallorca since March 2025. I've played every course on the island and I write about what I learn. For golfers who care about playing well.</p>
+              </div>
             </div>
 
-            <div style={{ marginBottom: '3rem' }}>
-              <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '1.25rem' }}>What you get:</p>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                {[
-                  'How each course plays — greens, routing, decision points',
-                  'What works when — condition notes, seasonal changes, timing logic',
-                  'Planning advice — which courses pair well, when to visit, what to expect',
-                  'Coaching notes — on-course lessons applied to real conditions',
-                  'No spam. One email every two weeks. Always useful.',
-                ].map((item, index) => (
-                  <li key={index} style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.7 }}>
-                    <span style={{ color: 'var(--gold)', fontWeight: 600, flexShrink: 0, marginTop: '2px' }}>✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+            {/* Right column: signup form */}
+            <div style={{ display: 'flex', alignItems: 'flex-start', paddingTop: '1rem' }}>
+              <CustomEmailSignup />
             </div>
-
-            <div style={{ marginBottom: '2.5rem' }}>
-              <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '1.25rem' }}>About me:</p>
-              <p style={{ fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.85 }}>UK PGA Advanced Professional. Based in Mallorca since March 2025. I've played every course on the island and I write about what I learn. For golfers who care about playing well.</p>
-            </div>
-
-            <CustomEmailSignup />
           </div>
         </section>
 
