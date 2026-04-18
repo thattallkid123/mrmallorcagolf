@@ -15,7 +15,6 @@ import {
   getShortCourseId,
   slugifyCourseName,
 } from '../../lib/golf-courses-helpers'
-import BeehiivEmbed from '../../components/BeehiivEmbed'
 
 const SORT_UI = {
   en: {
@@ -847,11 +846,6 @@ export default function GolfCoursesClient({ lang = 'en' }) {
                 )
               })}
             </ul>
-          </div>
-          <div className="sidebar-card">
-            <h3 className="sidebar-card__title-sm">Stay updated</h3>
-            <p style={{ fontSize: '0.85rem', marginBottom: '1.25rem', lineHeight: 1.6 }}>Weekly Mallorca golf insights and trip planning tips.</p>
-            <BeehiivEmbed />
           </div>
         </aside>
       </div>
