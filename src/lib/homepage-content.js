@@ -54,7 +54,7 @@ export const HOME_CONTENT = {
       title: 'Mallorca has European Tour-standard courses. Many visitors play a few and never discover the rest.',
       paragraphs: [
         "Mallorca stays playable year-round, but the pricing pattern catches visitors out. Peak rates usually run from mid-March to early June and again from mid-September to mid-November. If value matters, June to August and December to February are usually cheaper.",
-        'There are 24 courses on the island and 21 are open to green-fee visitors. Santa Ponsa 2 and 3 are shareholder-only, and Reserva Rotana is restricted and currently closed for refurbishment until June 2026.',
+        'There are 24 courses on the island and 21 are open to green-fee visitors. Santa Ponsa 2 and 3 are shareholder-only, and Reserva Rotana is restricted and currently closed for refurbishment until July 14th 2026, after which it is due to reopen for hotel guests.',
       ],
       stats: [
         { value: 'Jan-Dec', label: 'year-round season' },
