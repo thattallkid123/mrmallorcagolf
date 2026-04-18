@@ -3,8 +3,10 @@ import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import CareerStrip from '../../components/CareerStrip'
+import { getHomeContent } from '../../lib/homepage-content'
 
 export default function AboutView({ content, locale = 'en', careerStripProps = {} }) {
+  const home = getHomeContent(locale)
   const titleLines = Array.isArray(content.hero.title)
     ? content.hero.title
     : String(content.hero.title).split('\n')
@@ -120,6 +122,35 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             </div>
           </aside>
         </div>
+
+        {/* Proof of work — winners collage + testimonial */}
+        <section className="testimonials">
+          <div className="testimonials__header reveal">
+            <p className="eyebrow eyebrow--gold">{home.winners.eyebrow}</p>
+            <h2 className="serif-display" style={{ color: '#fff', marginBottom: '1.1rem' }}>
+              {home.winners.title}
+            </h2>
+            <p style={{ maxWidth: 720, margin: '0 auto', color: 'rgba(255,255,255,0.76)', fontSize: '0.95rem', lineHeight: 1.85 }}>
+              {home.winners.intro}
+            </p>
+          </div>
+          <figure className="winners-board">
+            <Image
+              src="/images/winners-collage.webp"
+              alt="A collage of competition winners coached by Andy over the years"
+              className="winners-board__img"
+              width={1120}
+              height={784}
+              sizes="(max-width: 1120px) 100vw, 1120px"
+            />
+          </figure>
+          <div className="testimonials__grid" style={{ marginTop: 2 }}>
+            <div className="testimonial reveal" style={{ flex: '1 1 auto', maxWidth: 1100, margin: '0 auto' }}>
+              <p>{home.winners.testimonial}</p>
+              <span className="testimonial__author">- {home.winners.attribution}</span>
+            </div>
+          </div>
+        </section>
 
         <CareerStrip {...(content.careerStripProps || careerStripProps)} />
 

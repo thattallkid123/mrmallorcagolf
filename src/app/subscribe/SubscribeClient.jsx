@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect } from "react"
-import Link from "next/link"
+import PageLayout from "../../components/PageLayout"
 
 export default function SubscribeClient() {
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function SubscribeClient() {
   }, [])
 
   return (
-    <>
+    <PageLayout lang="en" navTransparent={false}>
       <style>{`
         .sub-grid {
           max-width: 1100px;
@@ -39,23 +39,6 @@ export default function SubscribeClient() {
           box-shadow: none;
           border-radius: 0 !important;
         }
-        .sub-nav {
-          display: flex;
-          gap: 2rem;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        .sub-nav a {
-          font-family: "Jost", sans-serif;
-          font-weight: 400;
-          font-size: 10px;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: var(--taupe);
-          text-decoration: none;
-          transition: color 0.2s;
-        }
-        .sub-nav a:hover { color: var(--pine); }
         @media (max-width: 900px) {
           .sub-grid { grid-template-columns: 1fr; gap: 48px; }
         }
@@ -64,10 +47,10 @@ export default function SubscribeClient() {
         }
       `}</style>
 
-      {/* PAGE HEADER - compact, no hero image */}
+      {/* PAGE HEADER */}
       <section style={{ background: "var(--deep)", padding: "clamp(80px,10vw,120px) clamp(24px,6vw,80px) clamp(48px,6vw,72px)", textAlign: "center" }}>
         <div style={{ maxWidth: "640px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", margin: "0 0 0.75rem 0" }}>The Newsletter</p>
+          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", margin: "0 0 0.75rem 0" }}>Newsletter</p>
           <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 auto 1.5rem", display: "block" }} />
           <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem,4.5vw,3.2rem)", fontWeight: 500, color: "#fff", lineHeight: 1.08, margin: "0 0 1.25rem 0" }}>Golf insights from Mallorca</h1>
           <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem,1.5vw,1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, margin: 0 }}>Every two weeks I write up what I find playing the island. What each course actually asks of you, when to go, which ones pair well together, and the kind of detail that changes how you plan a round.</p>
@@ -106,7 +89,7 @@ export default function SubscribeClient() {
           {/* Right: form */}
           <div>
             <div className="sub-formbox">
-              <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>Join the list</p>
+              <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>Subscribe</p>
               <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 0 1.5rem 0", display: "block" }} />
               <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem,2.4vw,2rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.1, margin: "0 0 0.85rem 0" }}>Stay close to the island</h2>
               <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.9rem", color: "var(--charcoal)", lineHeight: 1.8, margin: "0 0 1.5rem 0" }}>Free. Every two weeks. I will tell you what I find.</p>
@@ -137,19 +120,16 @@ export default function SubscribeClient() {
         </div>
       </section>
 
-      {/* SITE NAV LINKS */}
-      <section style={{ background: "var(--cream)", padding: "clamp(48px,7vw,80px) clamp(24px,6vw,80px)", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
-        <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: 0 }}>Explore the site</p>
-        <nav className="sub-nav" aria-label="Site pages">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/play-with-a-pro">Play with a Pro</Link>
-          <Link href="/coaching">Coaching</Link>
-          <Link href="/golf-courses">Golf Courses</Link>
-          <Link href="/guides">Guides</Link>
-          <Link href="/contact">Enquire</Link>
-        </nav>
+      {/* COURSE GUIDE CTA */}
+      <section style={{ background: "var(--cream)", padding: "clamp(64px,9vw,110px) clamp(24px,6vw,80px)", textAlign: "center" }}>
+        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>New here?</p>
+          <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 auto 1.5rem", display: "block" }} />
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.25rem 0" }}>Start with the course guide</h2>
+          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "1rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 2.5rem 0" }}>Full notes on all 24 courses on the island. What each one teaches, which to play first, how to pair them together.</p>
+          <a href="/golf-courses" style={{ display: "inline-block", padding: "14px 40px", background: "var(--pine)", color: "#fff", fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none" }}>View all 24 courses</a>
+        </div>
       </section>
-    </>
+    </PageLayout>
   )
 }

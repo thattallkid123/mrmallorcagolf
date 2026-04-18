@@ -329,9 +329,9 @@ body {
   background:
     radial-gradient(circle at top left, rgba(212,176,104,0.1), transparent 24%),
     linear-gradient(180deg, #161410 0%, #1d1a16 58%, #120f0d 100%);
-  padding: 72px 40px 0;
+  padding: 56px 40px 0;
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 0.8fr;
   gap: 48px;
   position: relative;
   overflow: hidden;
@@ -384,7 +384,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 .footer__bottom p {
   font-size: 10px;
