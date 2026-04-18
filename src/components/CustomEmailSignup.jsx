@@ -12,18 +12,18 @@ export default function CustomEmailSignup() {
     setStatus('loading');
 
     try {
-      // Send to Beehiiv API endpoint
-      const response = await fetch('https://subscribe.beehiiv.com/api/subscribe', {
+      // Send to Beehiiv via server-side proxy to avoid CORS
+      const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           email: email,
-          publication_id: 'e2f8f5dc-5fbd-4a3a-a5bb-26fc117cf9e4',
-          referring_site: 'mrmallorcagolf.com',
         }),
       });
+
+      const data = await response.json();
 
       if (response.ok) {
         setStatus('success');
@@ -32,7 +32,7 @@ export default function CustomEmailSignup() {
         setTimeout(() => setStatus('idle'), 5000);
       } else {
         setStatus('error');
-        setMessage('Something went wrong. Try again or contact andy@mrmallorcagolf.com');
+        setMessage(data.error || 'Something went wrong. Try again or contact andy@mrmallorcagolf.com');
       }
     } catch (err) {
       setStatus('error');
@@ -41,7 +41,7 @@ export default function CustomEmailSignup() {
   };
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '100%', maxWidth: '320px' }}>
       <form onSubmit={handleSubmit} style={{
         display: 'flex',
         flexDirection: 'column',

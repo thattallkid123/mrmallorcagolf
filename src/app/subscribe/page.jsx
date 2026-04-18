@@ -52,12 +52,12 @@ export default function Subscribe() {
               Golf insights from Mallorca.
             </h1>
 
-            {/* Intro copy — generous measure */}
+            {/* Intro copy — wider measure */}
             <p style={{
               fontSize: '1rem',
               color: 'var(--charcoal)',
               lineHeight: 1.85,
-              maxWidth: 620,
+              maxWidth: 900,
               marginBottom: '4rem',
               fontFamily: "'Jost', sans-serif",
             }}>
@@ -85,10 +85,10 @@ export default function Subscribe() {
                 }}>What you get:</p>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {[
-                    'How each course plays — greens, routing, decision points',
-                    'What works when — condition notes, seasonal changes, timing logic',
-                    'Planning advice — which courses pair well, when to visit, what to expect',
-                    'Coaching notes — on-course lessons applied to real conditions',
+                    'How each course plays. Greens, routing, decision points.',
+                    'What works when. Condition notes, seasonal changes, timing logic.',
+                    'Planning advice. Which courses pair well, when to visit, what to expect.',
+                    'Coaching notes. On-course lessons applied to real conditions.',
                     'No spam. One email every two weeks. Always useful.',
                   ].map((item, index) => (
                     <li key={index} style={{
@@ -112,30 +112,9 @@ export default function Subscribe() {
                 </ul>
               </div>
 
-              {/* Right: Email Signup + About */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+              {/* Right: Email Signup */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '200px' }}>
                 <CustomEmailSignup />
-
-                <div>
-                  <p style={{
-                    fontSize: '9px',
-                    fontWeight: 500,
-                    letterSpacing: '0.22em',
-                    textTransform: 'uppercase',
-                    color: 'var(--taupe)',
-                    fontFamily: "'Jost', sans-serif",
-                    marginBottom: '1rem',
-                    margin: 0,
-                  }}>About me:</p>
-                  <p style={{
-                    fontSize: '0.95rem',
-                    color: 'var(--charcoal)',
-                    lineHeight: 1.85,
-                    fontFamily: "'Jost', sans-serif",
-                  }}>
-                    UK PGA Advanced Professional. Based in Mallorca since March 2025. I've played every course on the island and I write about what I learn. For golfers who care about playing well.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
