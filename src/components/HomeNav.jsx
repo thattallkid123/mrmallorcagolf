@@ -19,9 +19,9 @@ const LANG_CONFIG = {
     homeHref: '/de',
     links: [
       { href: '/de', label: 'Start' },
-      { href: '/de/about', label: 'Uber Andy' },
+      { href: '/de/about', label: '\u00dcber Andy' },
       { href: '/de/play-with-a-pro', label: 'Der Tag' },
-      { href: '/de/golf-courses', label: 'Platze' },
+      { href: '/de/golf-courses', label: 'Pl\u00e4tze' },
       { href: '/de/guides', label: 'Ratgeber' },
     ],
     cta: { href: '/de/contact', label: 'Anfragen' },
@@ -31,7 +31,7 @@ const LANG_CONFIG = {
     links: [
       { href: '/fr', label: 'Accueil' },
       { href: '/fr/about', label: 'A propos' },
-      { href: '/fr/play-with-a-pro', label: 'La Journee' },
+      { href: '/fr/play-with-a-pro', label: 'La Journ\u00e9e' },
       { href: '/fr/golf-courses', label: 'Parcours' },
       { href: '/fr/guides', label: 'Guides' },
     ],
@@ -44,7 +44,7 @@ const LANG_CONFIG = {
       { href: '/es/about', label: 'Sobre Andy' },
       { href: '/es/play-with-a-pro', label: 'La Jornada' },
       { href: '/es/golf-courses', label: 'Campos' },
-      { href: '/es/guides', label: 'Guias' },
+      { href: '/es/guides', label: 'Gu\u00edas' },
     ],
     cta: { href: '/es/contact', label: 'Contacto' },
   },
@@ -131,7 +131,7 @@ export default function HomeNav({ lang = 'en', basePath = '/' }) {
             {NAV_LOCALES.map((locale, index) => (
               <span key={locale}>
                 <a href={getLocalePath(basePath, locale)} className={lang === locale ? 'active' : ''}>
-                  {locale === 'zh' ? 'ZH' : locale.toUpperCase()}
+                  {locale === 'zh' ? '\u4e2d\u6587' : locale.toUpperCase()}
                 </a>
                 {index < NAV_LOCALES.length - 1 && <span className="nav__lang-sep"> / </span>}
               </span>
@@ -154,7 +154,7 @@ export default function HomeNav({ lang = 'en', basePath = '/' }) {
           <div className="mob-lang">
             {NAV_LOCALES.map((locale) => (
               <a key={locale} href={getLocalePath(basePath, locale)} className={lang === locale ? 'active' : ''}>
-                {locale === 'zh' ? 'ZH' : locale.toUpperCase()}
+                {locale === 'zh' ? '\u4e2d\u6587' : locale.toUpperCase()}
               </a>
             ))}
           </div>
