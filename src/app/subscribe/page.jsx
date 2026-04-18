@@ -10,19 +10,79 @@ export default function Subscribe() {
     <>
       <link rel="preload" as="image" href="/images/hero-main.webp" />
       <HomeNav lang="en" solid basePath="/subscribe" />
-      <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-        <section style={{ background: 'var(--cream)', padding: 'clamp(60px,8vw,80px) clamp(20px,5vw,60px)', flex: 1, display: 'flex', alignItems: 'center' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(40px,8vw,60px)', maxWidth: 1200, margin: '0 auto', width: '100%', alignItems: 'start' }}>
-            {/* Left column: text content */}
-            <div>
-              <div style={{ marginBottom: '2.5rem' }}>
-                <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '0.75rem' }}>NEWSLETTER</p>
-                <h1 className="serif-display" style={{ fontSize: 'clamp(1.8rem,3.5vw,2.8rem)', color: 'var(--deep)', marginBottom: '1.5rem', lineHeight: 1.1 }}>Golf insights from Mallorca.</h1>
-                <p style={{ fontSize: '1rem', color: 'var(--charcoal)', lineHeight: 1.85 }}>Every two weeks, notes on what I'm learning as I play the island. Course observations. Condition notes. Planning logic. Honest takes on timing and tactics.</p>
-              </div>
+      <main style={{ display: 'flex', flexDirection: 'column' }}>
 
-              <div style={{ marginBottom: '2.5rem' }}>
-                <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '1.25rem' }}>What you get:</p>
+        {/* Hero section — generous spacing, editorial feel */}
+        <section style={{
+          background: 'var(--cream)',
+          padding: 'clamp(80px, 12vw, 140px) clamp(20px, 5vw, 60px)',
+          display: 'flex',
+          alignItems: 'center',
+          minHeight: '60vh',
+        }}>
+          <div style={{ maxWidth: 1000, margin: '0 auto', width: '100%' }}>
+            {/* Eyebrow + Gold Rule */}
+            <div style={{ marginBottom: '2rem' }}>
+              <p style={{
+                fontSize: '9px',
+                fontWeight: 500,
+                letterSpacing: '0.22em',
+                textTransform: 'uppercase',
+                color: 'var(--taupe)',
+                fontFamily: "'Jost', sans-serif",
+                margin: '0 0 1rem 0',
+              }}>Newsletter</p>
+              <div style={{
+                width: '36px',
+                height: '1px',
+                background: 'var(--gold)',
+                marginBottom: '2rem',
+              }} />
+            </div>
+
+            {/* Headline */}
+            <h1 style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: 'clamp(2.2rem, 5vw, 3.8rem)',
+              fontWeight: 500,
+              color: 'var(--deep)',
+              lineHeight: 1.08,
+              marginBottom: '2rem',
+            }}>
+              Golf insights from Mallorca.
+            </h1>
+
+            {/* Intro copy — generous measure */}
+            <p style={{
+              fontSize: '1rem',
+              color: 'var(--charcoal)',
+              lineHeight: 1.85,
+              maxWidth: 620,
+              marginBottom: '4rem',
+              fontFamily: "'Jost', sans-serif",
+            }}>
+              Every two weeks, notes on what I'm learning as I play the island. Course observations. Condition notes. Planning logic. Honest takes on timing and tactics.
+            </p>
+
+            {/* Two column at desktop, single at mobile */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: 'clamp(40px, 8vw, 60px)',
+              alignItems: 'start',
+            }}>
+              {/* Left: What You Get */}
+              <div>
+                <p style={{
+                  fontSize: '9px',
+                  fontWeight: 500,
+                  letterSpacing: '0.22em',
+                  textTransform: 'uppercase',
+                  color: 'var(--taupe)',
+                  fontFamily: "'Jost', sans-serif",
+                  marginBottom: '1.5rem',
+                  margin: 0,
+                }}>What you get:</p>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {[
                     'How each course plays — greens, routing, decision points',
@@ -31,44 +91,143 @@ export default function Subscribe() {
                     'Coaching notes — on-course lessons applied to real conditions',
                     'No spam. One email every two weeks. Always useful.',
                   ].map((item, index) => (
-                    <li key={index} style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.7 }}>
-                      <span style={{ color: 'var(--gold)', fontWeight: 600, flexShrink: 0, marginTop: '2px' }}>✓</span>
+                    <li key={index} style={{
+                      display: 'flex',
+                      gap: '1rem',
+                      marginBottom: '1.25rem',
+                      fontSize: '0.95rem',
+                      color: 'var(--charcoal)',
+                      lineHeight: 1.7,
+                      fontFamily: "'Jost', sans-serif",
+                    }}>
+                      <span style={{
+                        color: 'var(--gold)',
+                        fontWeight: 600,
+                        flexShrink: 0,
+                        marginTop: '2px',
+                      }}>✓</span>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div>
-                <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '1.25rem' }}>About me:</p>
-                <p style={{ fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.85 }}>UK PGA Advanced Professional. Based in Mallorca since March 2025. I've played every course on the island and I write about what I learn. For golfers who care about playing well.</p>
+              {/* Right: Email Signup + About */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+                <CustomEmailSignup />
+
+                <div>
+                  <p style={{
+                    fontSize: '9px',
+                    fontWeight: 500,
+                    letterSpacing: '0.22em',
+                    textTransform: 'uppercase',
+                    color: 'var(--taupe)',
+                    fontFamily: "'Jost', sans-serif",
+                    marginBottom: '1rem',
+                    margin: 0,
+                  }}>About me:</p>
+                  <p style={{
+                    fontSize: '0.95rem',
+                    color: 'var(--charcoal)',
+                    lineHeight: 1.85,
+                    fontFamily: "'Jost', sans-serif",
+                  }}>
+                    UK PGA Advanced Professional. Based in Mallorca since March 2025. I've played every course on the island and I write about what I learn. For golfers who care about playing well.
+                  </p>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* Right column: signup form */}
-            <div style={{ display: 'flex', alignItems: 'flex-start', paddingTop: '1rem' }}>
-              <CustomEmailSignup />
+        {/* Testimonial section — Jo quote */}
+        <section style={{
+          background: 'var(--deep)',
+          padding: 'clamp(60px, 10vw, 100px) clamp(20px, 5vw, 60px)',
+          display: 'flex',
+          alignItems: 'center',
+        }}>
+          <div style={{ maxWidth: 800, margin: '0 auto', width: '100%' }}>
+            <div style={{
+              borderLeft: '2px solid var(--gold)',
+              paddingLeft: '2rem',
+            }}>
+              <p style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                fontSize: 'clamp(1.3rem, 2.5vw, 1.8rem)',
+                fontStyle: 'italic',
+                fontWeight: 400,
+                color: '#fff',
+                lineHeight: 1.5,
+                marginBottom: '1.5rem',
+                margin: '0 0 1.5rem 0',
+              }}>
+                &ldquo;Golfing with Andy was a superb experience. He has an unparalleled level of insight, and delivers it in a way that is both subtle and empathetic.&rdquo;
+              </p>
+              <p style={{
+                fontSize: '9px',
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: 'var(--gold-light)',
+                fontFamily: "'Jost', sans-serif",
+                margin: 0,
+              }}>Jo, Play-With-a-Pro client</p>
             </div>
           </div>
         </section>
 
-        <section style={{ background: 'var(--pine)', padding: 'clamp(50px,6vw,70px) clamp(20px,5vw,60px)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
-            <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.1rem,2vw,1.5rem)', fontStyle: 'italic', fontWeight: 400, color: '#fff', lineHeight: 1.5, marginBottom: '1.5rem', margin: '0 0 1.5rem 0' }}>
-              &ldquo;Golfing with Andy was a superb experience. He has an unparalleled level of insight, and delivers it in a way that is both subtle and empathetic.&rdquo;
-            </p>
-            <p style={{ fontSize: '9px', letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--gold-light)', fontFamily: "'Jost',sans-serif", margin: 0 }}>Jo, Play-With-a-Pro client</p>
-          </div>
-        </section>
-
-        <section style={{ background: 'var(--cream)', padding: 'clamp(50px,6vw,70px) clamp(20px,5vw,60px)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '1rem' }}>NEW HERE?</p>
-            <h2 className="serif-display" style={{ fontSize: 'clamp(1.5rem,2.5vw,1.9rem)', color: 'var(--deep)', marginBottom: '1.25rem' }}>Start with the course guide.</h2>
-            <p style={{ fontSize: '0.95rem', color: 'var(--charcoal)', lineHeight: 1.85, marginBottom: '2rem' }}>
+        {/* CTA section — course guide */}
+        <section style={{
+          background: 'var(--cream)',
+          padding: 'clamp(60px, 10vw, 100px) clamp(20px, 5vw, 60px)',
+          display: 'flex',
+          alignItems: 'center',
+        }}>
+          <div style={{ maxWidth: 800, margin: '0 auto', width: '100%' }}>
+            <p style={{
+              fontSize: '9px',
+              fontWeight: 500,
+              letterSpacing: '0.22em',
+              textTransform: 'uppercase',
+              color: 'var(--taupe)',
+              fontFamily: "'Jost', sans-serif",
+              marginBottom: '1rem',
+              margin: '0 0 1rem 0',
+            }}>New here?</p>
+            <h2 style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: 'clamp(2rem, 3.5vw, 3rem)',
+              fontWeight: 500,
+              color: 'var(--deep)',
+              lineHeight: 1.08,
+              marginBottom: '1.5rem',
+            }}>Start with the course guide.</h2>
+            <p style={{
+              fontSize: '0.95rem',
+              color: 'var(--charcoal)',
+              lineHeight: 1.85,
+              marginBottom: '2rem',
+              maxWidth: 620,
+              fontFamily: "'Jost', sans-serif",
+            }}>
               Full guide to all 24 courses on Mallorca. What each one teaches. Which to play first. How to pair them together. Written for golfers with taste and a handicap.
             </p>
-            <a href="/golf-courses" style={{ display: 'inline-block', padding: '14px 32px', background: 'var(--pine)', color: '#fff', textDecoration: 'none', fontSize: '10px', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: "'Jost',sans-serif" }}>
+            <a href="/golf-courses" style={{
+              display: 'inline-block',
+              padding: '12px 32px',
+              background: 'var(--pine)',
+              color: '#fff',
+              textDecoration: 'none',
+              fontSize: '10px',
+              fontWeight: 500,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              fontFamily: "'Jost', sans-serif",
+              border: 'none',
+              borderRadius: '0',
+              cursor: 'pointer',
+            }}>
               View all 24 courses →
             </a>
           </div>
