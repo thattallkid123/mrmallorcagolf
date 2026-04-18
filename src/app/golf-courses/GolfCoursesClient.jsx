@@ -159,17 +159,18 @@ function getCourseDistance(course, userLocation) {
 }
 
 function renderRatingStars(rating) {
-  const safeRating = Number.isFinite(rating) ? rating : 0
-  const stars = []
-
-  for (let index = 1; index <= 5; index += 1) {
-    let symbol = '\u2606'
-    if (safeRating >= index) symbol = '\u2605'
-    else if (safeRating >= index - 0.5) symbol = '\u2726'
-    stars.push(<span key={index}>{symbol}</span>)
-  }
-
-  return stars
+  const safeRating = Number.isFinite(rating) ? Math.max(0, Math.min(5, rating)) : 0
+  return (
+    <span className="course__review-stars-visual" aria-hidden="true">
+      <span className="course__review-stars-base">★★★★★</span>
+      <span
+        className="course__review-stars-fill"
+        style={{ width: `${(safeRating / 5) * 100}%` }}
+      >
+        ★★★★★
+      </span>
+    </span>
+  )
 }
 
 function buildPricePill(course) {
@@ -518,7 +519,6 @@ function CourseCard({ c, lang = 'en' }) {
           <p className="course__location">{locationText}</p>
           <div className="course__rating-row" aria-label={`Rated ${ratingValue} out of 5`}>
             <span className="course__review-stars">{renderRatingStars(ratingValue)}</span>
-            <span className="course__review-rating">{ratingValue.toFixed(1)} / 5</span>
           </div>
           <div className="course__stats">
             {(translated.pills || displayPills).slice(0, 4).map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{translateCourseText(pill, lang)}</span>)}
@@ -744,26 +744,28 @@ export default function GolfCoursesClient({ lang = 'en' }) {
           <p>{sortUi.dynamicKey}</p>
         </div>
 
-        <div className="filter-tabs filter-tabs--anchored filter-tabs--secondary">
-          <span className="sort-pill sort-pill--label">{sortUi.sortLabel}</span>
-          {['rating', 'az', 'price', 'nearest'].map((sortKey) => {
-            const isActive = activeSort === sortKey
-            return (
-              <button
-                key={sortKey}
-                className={`filter-tab filter-tab--sort${isActive ? ' active' : ''}`}
-                onClick={() => handleSortChange(sortKey)}
-              >
-                <span>{getSortLabel(sortKey, sortUi, sortDirections[sortKey], isLocating && sortKey === 'nearest')}</span>
-                {isActive ? (
-                  <span
-                    className={`filter-tab__triangle filter-tab__triangle--${getSortTriangleDirection(sortKey, sortDirections[sortKey])}`}
-                    aria-hidden="true"
-                  />
-                ) : null}
-              </button>
-            )
-          })}
+        <div className="sort-controls reveal">
+          <span className="sort-controls__label">{sortUi.sortLabel}</span>
+          <div className="sort-controls__grid">
+            {['rating', 'az', 'price', 'nearest'].map((sortKey) => {
+              const isActive = activeSort === sortKey
+              return (
+                <button
+                  key={sortKey}
+                  className={`filter-tab filter-tab--sort${isActive ? ' active' : ''}`}
+                  onClick={() => handleSortChange(sortKey)}
+                >
+                  <span>{getSortLabel(sortKey, sortUi, sortDirections[sortKey], isLocating && sortKey === 'nearest')}</span>
+                  {isActive ? (
+                    <span
+                      className={`filter-tab__triangle filter-tab__triangle--${getSortTriangleDirection(sortKey, sortDirections[sortKey])}`}
+                      aria-hidden="true"
+                    />
+                  ) : null}
+                </button>
+              )
+            })}
+          </div>
         </div>
       </section>
 

@@ -71,7 +71,6 @@ const PERSON_SCHEMA = {
   url: `${SITE_ORIGIN}/about`,
   sameAs: [
     'https://www.instagram.com/mrmallorcagolf',
-    'https://www.youtube.com/@mrmallorcagolf',
   ],
   knowsAbout: ['Golf coaching', 'On-course coaching', 'Mallorca golf courses', 'Course management', 'Golf trip planning'],
   hasCredential: [

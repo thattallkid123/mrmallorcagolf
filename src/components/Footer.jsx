@@ -142,7 +142,6 @@ export default function Footer({ lang }) {
         <ul>
           <li><Link href={`${prefix}/about`}>{copy.about}</Link></li>
           <li><a href="https://www.instagram.com/mrmallorcagolf" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="https://www.youtube.com/@mrmallorcagolf" target="_blank" rel="noopener noreferrer">YouTube</a></li>
           <li><a href="mailto:andy@mrmallorcagolf.com">Email</a></li>
         </ul>
       </div>

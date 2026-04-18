@@ -1,17 +1,12 @@
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
-import RevealObserver from '../components/RevealObserver'
+import HomeNav from '../components/HomeNav'
+import HomeFooter from '../components/HomeFooter'
 
 export default function HomeLayout({ lang = 'en', children }) {
-  const navProps = lang === 'en' ? { transparent: true } : { transparent: true, lang }
-  const footerProps = lang === 'en' ? {} : { lang }
-
   return (
     <>
-      <Nav {...navProps} />
-      <RevealObserver />
+      <HomeNav lang={lang} />
       <main>{children}</main>
-      <Footer {...footerProps} />
+      <HomeFooter lang={lang} />
     </>
   )
 }
