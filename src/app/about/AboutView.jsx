@@ -87,7 +87,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             </div>
             <div className="creds reveal">
               <p className="story__summary">
-                Andy Griffiths is a PGA Advanced Professional who spent eleven years at the top of coaching in China — becoming the country's first Trackman Master, coaching national team players, and building a following of hundreds of millions of views on Douyin. Before that: Pebble Beach, The Open Championship, Evian. He moved to Mallorca in 2025 to build something of his own. He plays the island's best courses most weeks and has opinions about all of them.
+                Andy Griffiths is a PGA Advanced Professional who spent eleven years at the top of coaching in China, becoming the country's first Trackman Master, coaching national team players, and building a following of hundreds of millions of views on Douyin. Before that: Pebble Beach, The Open Championship, Evian. He moved to Mallorca in 2025 to build something of his own. He plays the island's best courses most weeks and has opinions about all of them.
               </p>
               <p className="creds__label">{content.credentialsLabel}</p>
               <ul className="cred-list">
@@ -123,7 +123,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
           </aside>
         </div>
 
-        {/* Proof of work — winners collage + testimonial */}
+        {/* Proof of work: winners collage + testimonial */}
         <section className="testimonials">
           <div className="testimonials__header reveal">
             <p className="eyebrow eyebrow--gold">{home.winners.eyebrow}</p>

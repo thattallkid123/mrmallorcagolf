@@ -309,7 +309,7 @@ export default function HomePageInner({ locale = 'en' }) {
           <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '1rem' }}>WEEKLY INSIGHTS</p>
           <h2 className="serif-display" style={{ fontSize: 'clamp(1.5rem,3vw,2.2rem)', color: 'var(--deep)', marginBottom: '1rem' }}>Golf insights delivered.</h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--taupe)', lineHeight: 1.8, marginBottom: '2.5rem' }}>
-            Course notes, trip planning tips, and coaching insights — one email per week, no spam.
+            Course notes, trip planning tips and coaching observations. One email every two weeks, no spam.
           </p>
           <BeehiivEmbed />
         </div>
