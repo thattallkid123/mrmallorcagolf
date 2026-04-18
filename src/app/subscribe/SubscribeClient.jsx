@@ -66,12 +66,12 @@ export default function SubscribeClient() {
             <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>What you get</p>
             <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 0 1.5rem 0", display: "block" }} />
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.7rem,2.8vw,2.4rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.1rem 0" }}>One email. No noise.</h2>
-            <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>I am working my way through every course on the island. Each issue is a note from the round: what I noticed, what works, what I would do differently. The kind of detail that changes how you plan a golf trip.</p>
+            <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>I am working my way through every course on the island. Each newsletter is a note from the round: what I noticed, what works, what I would do differently. The kind of detail that changes how you plan a golf trip.</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               {[
-                ["Course notes", "How each track plays in real conditions. Greens, routing, where the risk actually sits."],
+                ["Course notes", "How each course plays in real conditions. Greens, strategy, conditions, best times of day."],
                 ["Timing and seasons", "When to go, what changes through the year, which months to avoid and why."],
-                ["Planning logic", "Which courses pair well together. How to build a week that makes sense."],
+                ["Planning logic", "Which courses pair well together. How to build a week that makes sense with your golf and more."],
                 ["Coaching observations", "Things I notice on the course that you can apply to your own game."],
                 ["No spam", "One email every two weeks. Unsubscribe whenever you like."],
               ].map(([title, detail]) => (

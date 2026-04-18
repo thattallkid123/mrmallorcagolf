@@ -12,7 +12,7 @@ const FOOTER_COPY = {
     allCourses: 'All Courses',
     enquire: 'Enquire',
     subscribe: 'Newsletter',
-    newsletterLink: 'Get the notes',
+    newsletterLink: 'Subscribe for insights',
     privacy: 'Privacy Policy',
     terms: 'Terms & Conditions',
   },
@@ -26,7 +26,7 @@ const FOOTER_COPY = {
     allCourses: 'Alle Platze',
     enquire: 'Anfragen',
     subscribe: 'Newsletter',
-    newsletterLink: 'Zu den Notizen',
+    newsletterLink: 'Einschreiben',
     privacy: 'Datenschutz',
     terms: 'AGB',
   },
@@ -39,8 +39,8 @@ const FOOTER_COPY = {
     about: 'Sobre Andy',
     allCourses: 'Todos los campos',
     enquire: 'Contacto',
-    subscribe: 'Boletin de noticias',
-    newsletterLink: 'Leer las notas',
+    subscribe: 'Newsletter',
+    newsletterLink: 'Suscribirse',
     privacy: 'Privacidad',
     terms: 'Terminos',
   },
@@ -53,8 +53,8 @@ const FOOTER_COPY = {
     about: 'A propos',
     allCourses: 'Tous les parcours',
     enquire: 'Contact',
-    subscribe: 'Infobrief',
-    newsletterLink: 'Lire les notes',
+    subscribe: 'Newsletter',
+    newsletterLink: "S'abonner",
     privacy: 'Confidentialite',
     terms: 'Conditions',
   },
@@ -68,7 +68,7 @@ const FOOTER_COPY = {
     allCourses: 'Alle banen',
     enquire: 'Contact',
     subscribe: 'Nieuwsbrief',
-    newsletterLink: 'Lees de notities',
+    newsletterLink: 'Inschrijven',
     privacy: 'Privacybeleid',
     terms: 'Voorwaarden',
   },
@@ -82,23 +82,23 @@ const FOOTER_COPY = {
     allCourses: 'Alla banor',
     enquire: 'Kontakt',
     subscribe: 'Nyhetsbrev',
-    newsletterLink: 'Las anteckningarna',
+    newsletterLink: 'Prenumerera',
     privacy: 'Integritet',
     terms: 'Villkor',
   },
   zh: {
-    tagline: 'Private golf days in Mallorca with Andy Griffiths. Local knowledge, calm hosting, everything arranged.',
-    experiences: 'Experiences',
-    pwap: 'Play with a Pro',
-    day: 'A Day at Son Gual',
-    guide: 'Golf Guide',
-    about: 'About Andy',
-    allCourses: 'All Courses',
-    enquire: 'Contact',
-    subscribe: 'Newsletter',
-    newsletterLink: '查看笔记',
-    privacy: 'Privacy',
-    terms: 'Terms',
+    tagline: '\u4e0e Andy Griffiths \u5728\u9a6c\u7565\u5361\u4f53\u9a8c\u79c1\u4eba\u9ad8\u5c14\u592b\u65e5\u7a0b\u3002\u719f\u6089\u672c\u5730\uff0c\u5b89\u6392\u5468\u5230\uff0c\u5168\u7a0b\u8f7b\u677e\u4ece\u5bb9\u3002',
+    experiences: '\u4f53\u9a8c',
+    pwap: '\u4e0e\u804c\u4e1a\u7403\u624b\u540c\u573a',
+    day: 'Son Gual \u7684\u4e00\u5929',
+    guide: '\u9ad8\u5c14\u592b\u6307\u5357',
+    about: '\u5173\u4e8e Andy',
+    allCourses: '\u5168\u90e8\u7403\u573a',
+    enquire: '\u8054\u7cfb',
+    subscribe: '\u901a\u8baf',
+    newsletterLink: '\u8ba2\u9605',
+    privacy: '\u9690\u79c1\u653f\u7b56',
+    terms: '\u6761\u6b3e',
   },
 }
 
@@ -173,11 +173,11 @@ export default function HomeFooter({ lang = 'en', basePath = '/' }) {
 
       <div className="footer__bottom">
         <p>
-          (c) 2026 Mr Mallorca Golf / Andy Griffiths / PGA Advanced Professional /{' '}
+          {'\u00a9'} 2026 Mr Mallorca Golf {'\u00b7'} Andy Griffiths {'\u00b7'} PGA Advanced Professional {'\u00b7'}{' '}
           <a href={getLegalPath('privacy-policy', locale)} className="footer__legal-link">
             {copy.privacy}
           </a>{' '}
-          /{' '}
+          {'\u00b7'}{' '}
           <a href={getLegalPath('terms', locale)} className="footer__legal-link">
             {copy.terms}
           </a>
@@ -185,7 +185,7 @@ export default function HomeFooter({ lang = 'en', basePath = '/' }) {
         <div className="footer__lang">
           {NAV_LOCALES.map((code) => (
             <a key={code} href={getLocalePath(basePath, code)}>
-              {code === 'zh' ? 'ZH' : code.toUpperCase()}
+              {code === 'zh' ? '\u4e2d\u6587' : code.toUpperCase()}
             </a>
           ))}
         </div>

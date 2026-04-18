@@ -1,3 +1,5 @@
+'use client'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { NAV_LOCALES } from '../lib/site'
 
@@ -82,22 +84,28 @@ const LANG_CONFIG = {
 }
 
 function getLocalePath(basePath, locale) {
-  if (locale === 'en') {
-    return basePath
-  }
-
+  if (locale === 'en') return basePath
   return basePath === '/' ? `/${locale}` : `/${locale}${basePath}`
 }
 
-export default function HomeNav({ lang = 'en', solid = false, basePath = '/' }) {
+export default function HomeNav({ lang = 'en', basePath = '/' }) {
+  const [scrolled, setScrolled] = useState(false)
   const config = LANG_CONFIG[lang] || LANG_CONFIG.en
-  const navClassName = solid ? 'nav solid' : 'nav'
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  const navClass = scrolled ? 'nav scrolled' : 'nav'
+  const logoSrc = scrolled ? '/logo-dark-green-96.webp' : '/logo-white-96.webp'
 
   return (
-    <nav className={navClassName} id="nav">
+    <nav className={navClass} id="nav">
       <a href={config.homeHref} className="nav__logo">
         <Image
-          src={solid ? '/logo-dark-green-96.webp' : '/logo-white-96.webp'}
+          src={logoSrc}
           alt="Mr Mallorca Golf"
           className="nav__logo-img"
           width={38}
@@ -140,13 +148,9 @@ export default function HomeNav({ lang = 'en', solid = false, basePath = '/' }) 
         </summary>
         <div className="nav__mobile">
           {config.links.map(({ href, label }) => (
-            <a key={href} href={href}>
-              {label}
-            </a>
+            <a key={href} href={href}>{label}</a>
           ))}
-          <a href={config.cta.href} className="mob-cta">
-            {config.cta.label}
-          </a>
+          <a href={config.cta.href} className="mob-cta">{config.cta.label}</a>
           <div className="mob-lang">
             {NAV_LOCALES.map((locale) => (
               <a key={locale} href={getLocalePath(basePath, locale)} className={lang === locale ? 'active' : ''}>
