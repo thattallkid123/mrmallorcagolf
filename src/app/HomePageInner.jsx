@@ -306,10 +306,10 @@ export default function HomePageInner({ locale = 'en' }) {
 
       <section style={{ background: 'var(--cream)', padding: 'clamp(60px,8vw,100px) clamp(20px,5vw,60px)' }}>
         <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
-          <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '1rem' }}>WEEKLY INSIGHTS</p>
+          <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '1rem' }}>THE NEWSLETTER</p>
           <h2 className="serif-display" style={{ fontSize: 'clamp(1.5rem,3vw,2.2rem)', color: 'var(--deep)', marginBottom: '1rem' }}>Golf insights delivered.</h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--taupe)', lineHeight: 1.8, marginBottom: '2.5rem' }}>
-            Course notes, trip planning tips and coaching observations. One email every two weeks, no spam.
+            Every two weeks I write up what I find playing the island. Course conditions, which courses pair well together, when to come, where to stay, and a few things worth doing when you put the clubs down.
           </p>
           <BeehiivEmbed />
         </div>

@@ -3,9 +3,8 @@
 ## Always-read MMG docs
 Use these as the active MMG source of truth before relying on skills or older prompts:
 
-- `C:\Users\andyg\Documents\Mr Mallorca Golf\Active\MMG_PROJECT_BRIEF_SHORT.md`
-- `C:\Users\andyg\Documents\Mr Mallorca Golf\Active\MMG_MASTER.md`
-- `C:\Users\andyg\Documents\Mr Mallorca Golf\Active\MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`
+- `Active/MMG_MASTER.md`
+- `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`
 
 If any skill, prompt, or older file conflicts with those docs, the Active MMG docs win.
 For Mallorca course pricing, seasonality, and access facts inside the repo, also check `docs/mallorca-market-reference-2026-04.md`.
@@ -134,4 +133,4 @@ The homepage course cards deep-link into `/golf-courses` using these ids:
 - Do not modify English master pages when only fixing a language page
 - Do not trust old pricing or legacy prompts over the Active MMG docs
 - Do not paste text from Word, Excel, PDFs, or websites straight into source files without checking accents, punctuation, and encoding
-- Do not ship if you see `Â`, `Ã`, replacement diamonds, or obvious English fallback in a foreign-language page
+- Do not ship if you see `A`, `A`, replacement diamonds, or obvious English fallback in a foreign-language page

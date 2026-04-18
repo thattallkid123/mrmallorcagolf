@@ -12,6 +12,7 @@ const FOOTER_COPY = {
     allCourses: 'All Courses',
     enquire: 'Enquire',
     subscribe: 'Newsletter',
+    newsletterLink: 'Get the notes',
     privacy: 'Privacy Policy',
     terms: 'Terms & Conditions',
   },
@@ -25,6 +26,7 @@ const FOOTER_COPY = {
     allCourses: 'Alle Platze',
     enquire: 'Anfragen',
     subscribe: 'Newsletter',
+    newsletterLink: 'Zu den Notizen',
     privacy: 'Datenschutz',
     terms: 'AGB',
   },
@@ -38,6 +40,7 @@ const FOOTER_COPY = {
     allCourses: 'Todos los campos',
     enquire: 'Contacto',
     subscribe: 'Boletin de noticias',
+    newsletterLink: 'Leer las notas',
     privacy: 'Privacidad',
     terms: 'Terminos',
   },
@@ -51,6 +54,7 @@ const FOOTER_COPY = {
     allCourses: 'Tous les parcours',
     enquire: 'Contact',
     subscribe: 'Infobrief',
+    newsletterLink: 'Lire les notes',
     privacy: 'Confidentialite',
     terms: 'Conditions',
   },
@@ -64,6 +68,7 @@ const FOOTER_COPY = {
     allCourses: 'Alle banen',
     enquire: 'Contact',
     subscribe: 'Nieuwsbrief',
+    newsletterLink: 'Lees de notities',
     privacy: 'Privacybeleid',
     terms: 'Voorwaarden',
   },
@@ -77,6 +82,7 @@ const FOOTER_COPY = {
     allCourses: 'Alla banor',
     enquire: 'Kontakt',
     subscribe: 'Nyhetsbrev',
+    newsletterLink: 'Las anteckningarna',
     privacy: 'Integritet',
     terms: 'Villkor',
   },
@@ -90,6 +96,7 @@ const FOOTER_COPY = {
     allCourses: 'All Courses',
     enquire: 'Contact',
     subscribe: 'Newsletter',
+    newsletterLink: '查看笔记',
     privacy: 'Privacy',
     terms: 'Terms',
   },
@@ -160,7 +167,7 @@ export default function HomeFooter({ lang = 'en', basePath = '/' }) {
       <div className="footer__col">
         <h3>{copy.subscribe}</h3>
         <ul>
-          <li><a href={`${prefix}/subscribe`}>{copy.subscribe}</a></li>
+          <li><a href={`${prefix}/subscribe`}>{copy.newsletterLink}</a></li>
         </ul>
       </div>
 
