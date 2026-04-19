@@ -271,12 +271,12 @@ export default function HomePageInner({ locale = 'en' }) {
             </div>
           ))}
         </div>
-        {home.packages.multiDay && (
+        {home.packages.premium && (
           <div className="reveal" style={{ maxWidth: 760, margin: '3rem auto 0', padding: '2.5rem', background: 'var(--pine)', borderRadius: 2, textAlign: 'center' }}>
-            <p className="eyebrow" style={{ color: 'rgba(255,255,255,0.45)', marginBottom: '0.75rem' }}>{home.packages.multiDay.eyebrow}</p>
-            <h3 className="serif-display" style={{ color: '#fff', fontSize: 'clamp(1.3rem,2.2vw,1.8rem)', marginBottom: '1rem' }}>{home.packages.multiDay.title}</h3>
-            <p style={{ color: 'rgba(255,255,255,0.72)', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.75rem', maxWidth: 560, margin: '0 auto 1.75rem' }}>{home.packages.multiDay.body}</p>
-            <a href={contactHref} className="btn btn--gold">{home.packages.multiDay.cta}</a>
+            <p className="eyebrow" style={{ color: 'rgba(255,255,255,0.45)', marginBottom: '0.75rem' }}>{home.packages.premium.eyebrow}</p>
+            <h3 className="serif-display" style={{ color: '#fff', fontSize: 'clamp(1.3rem,2.2vw,1.8rem)', marginBottom: '1rem' }}>{home.packages.premium.title}</h3>
+            <p style={{ color: 'rgba(255,255,255,0.72)', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.75rem', maxWidth: 560, margin: '0 auto 1.75rem' }}>{home.packages.premium.body}</p>
+            <a href={contactHref} className="btn btn--gold">{home.packages.premium.cta}</a>
           </div>
         )}
       </section>

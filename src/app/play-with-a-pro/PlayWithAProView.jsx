@@ -164,15 +164,15 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               </div>
             ))}
           </div>
-          {content.packages.multiDay && (
+          {content.packages.premium && (
             <div className="reveal pwap-multiday">
-              <p className="eyebrow pwap-multiday__eyebrow">{content.packages.multiDay.eyebrow}</p>
-              <h3 className="serif-display pwap-multiday__title">{content.packages.multiDay.title}</h3>
-              <p className="pwap-multiday__body">{content.packages.multiDay.body}</p>
-              {content.packages.multiDay.detail && (
-                <p className="pwap-multiday__detail">{content.packages.multiDay.detail}</p>
+              <p className="eyebrow pwap-multiday__eyebrow">{content.packages.premium.eyebrow}</p>
+              <h3 className="serif-display pwap-multiday__title">{content.packages.premium.title}</h3>
+              <p className="pwap-multiday__body">{content.packages.premium.body}</p>
+              {content.packages.premium.detail && (
+                <p className="pwap-multiday__detail">{content.packages.premium.detail}</p>
               )}
-              <Link href={content.packages.multiDay.href} className="btn btn--gold">{content.packages.multiDay.button}</Link>
+              <Link href={content.packages.premium.href} className="btn btn--gold">{content.packages.premium.button}</Link>
             </div>
           )}
         </section>

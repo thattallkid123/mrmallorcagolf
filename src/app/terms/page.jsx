@@ -73,7 +73,7 @@ export default function Terms() {
           <section className="legal-section">
             <h2>6. Golf Course Rules and Green Fees</h2>
             <p>All participants must comply with the rules and dress code of each golf course visited. We reserve the right to end an experience without refund where a participant is asked to leave a course due to conduct.</p>
-            <p>Green fees and any course charges are included in the price quoted unless stated otherwise. Incidental charges (food, drink, equipment hire beyond what is agreed) are the responsibility of the participant.</p>
+            <p>Green fees and course charges are additional unless explicitly stated otherwise in your booking confirmation. Club hire, buggy, and any personal food and drink are the responsibility of the participant.</p>
           </section>
 
           <section className="legal-section">
