@@ -1,6 +1,11 @@
-import { getGolfCoursesPromoCopy } from './experience-copy.js'
-
 export const GOLF_COURSE_UI_TRANSLATIONS = {
+  en: {
+    sidebarH3: 'Want to play one of these courses with a UK PGA professional alongside you?',
+    sidebarP: 'Private day, everything arranged, and the course chosen around what would be best for you.',
+    ctaEyebrow: 'Want to play one of these?',
+    ctaH2: 'Private golf day, with me alongside you from the first tee onwards.',
+    ctaP: "Tell me which course interests you, your dates, and your handicap. I'll come back with a recommendation within 24 hours.",
+  },
   de: {
     allCourses: 'Alle Plätze', expertPicks: '★ Nur Expertentipps',
     southwest: 'Südwesten', south: 'Süden', east: 'Osten', north: 'Norden',
@@ -148,14 +153,7 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
 }
 
 export function getGolfCourseUiTranslations(locale = 'en') {
-  const base = locale === 'en'
-    ? {}
-    : (GOLF_COURSE_UI_TRANSLATIONS[locale] || GOLF_COURSE_UI_TRANSLATIONS.en || {})
-
-  return {
-    ...base,
-    ...getGolfCoursesPromoCopy(locale),
-  }
+  return GOLF_COURSE_UI_TRANSLATIONS[locale] || GOLF_COURSE_UI_TRANSLATIONS.en || {}
 }
 
 Object.assign(GOLF_COURSE_UI_TRANSLATIONS.de, {

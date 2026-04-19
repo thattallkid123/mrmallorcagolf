@@ -1,7 +1,15 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
-import FillImageFrame from '../../components/FillImageFrame'
+
+function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', priority = false, containerStyle, imageStyle }) {
+  return (
+    <div style={{ position: 'relative', overflow: 'hidden', ...containerStyle }}>
+      <Image src={src} alt={alt} fill priority={priority} sizes={sizes} style={{ objectFit: 'cover', objectPosition: 'center 24%', ...imageStyle }} />
+    </div>
+  )
+}
 
 function joinHref(locale, path) {
   if (locale === 'en') return path
