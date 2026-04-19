@@ -9,7 +9,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       breadcrumbCurrent: 'Play with a Pro',
       eyebrow: 'Private Golf Days · Mallorca',
       title: 'A Private Golf Day in Mallorca.',
-      body: 'One course. A full day alongside a PGA Advanced Professional who has arranged everything. Solo from €595 all inclusive. Groups of 2 to 4 from €1,195, plus green fees.',
+      body: 'One course. A full day alongside a PGA Advanced Professional who has arranged everything. Solo from €495. Groups of 2 to 4 from €950. Green fees additional, confirmed when we speak.',
       price: null,
       primaryCta: 'Tell Me Your Dates →',
       primaryHref: '/contact',
@@ -37,7 +37,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 holes alongside Andy', 'Not walking alongside - playing, as your partner'],
         ['On-course coaching throughout', 'Course management, shot selection, and decision-making'],
         ['Post-round debrief', 'What improved, what to work on, clear and honest'],
-        ['Lunch', 'At the course restaurant, or at a handpicked local spot if the day suits it'],
       ],
     },
     courses: {
@@ -74,53 +73,53 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     },
     packages: {
       eyebrow: 'Experiences & Packages',
-      title: 'Two ways to spend the day.',
-      body: 'Both are private, hosted by me, and played on one of the island\'s finest courses. Solo is all inclusive. Groups of 2 to 4 are charged as a fixed day rate, with green fees confirmed separately.',
+      title: 'Three ways to spend the day.',
+      body: 'All are private and hosted by me. Solo and group days are my coaching fee plus confirmed green fees. The Full Andy Day includes everything.',
       tiers: [
         {
           eyebrow: 'Solo',
           name: 'A Day With Andy',
-          price: '€595',
-          note: 'Everything included. Green fee, lunch, the whole day.',
+          price: '€495',
+          note: "Andy's fee for the day. Green fee additional, confirmed when we speak.",
           features: [
             'Course matched to your game and handicap',
             'Tee time secured and fully handled',
             'Pre-round game plan and warm-up',
             '18 holes playing alongside Andy',
             'On-course insight — where it can still change the hole',
-            'Long lunch at the course restaurant',
-            'Green fee included',
+            'Tee time shared by default. Private slots available on enquiry.',
+            'Club hire and buggy arranged by Andy if needed, paid at the course',
           ],
           button: 'Enquire →',
           href: '/contact',
           featured: false,
         },
         {
-          eyebrow: 'Group of 2 to 4',
+          eyebrow: 'Group',
           name: 'A Day With Andy',
-          price: '€1,195',
-          note: 'Andy\'s fixed day rate for groups of 2 to 4. Green fees are additional and confirmed when we speak.',
+          price: '€950',
+          note: 'Andy\'s fixed day rate for groups of 2 to 4. Green fees confirmed separately.',
           features: [
             'Course matched to your group and handicaps',
             'Tee time secured and fully handled',
             'Pre-round game plan and warm-up',
             '18 holes playing alongside Andy',
             'On-course insight — where it can still change the hole',
-            'Long lunch at the course restaurant',
+            'Lunch — each person pays their own at the course',
+            'Tee time for 4 players is usually exclusive naturally. Private booking available on enquiry.',
             'Up to 4 players — one fixed day rate for Andy',
-            'Green fees additional — confirmed when we speak',
           ],
           button: 'Enquire →',
           href: '/contact',
           featured: true,
         },
       ],
-      multiDay: {
-        eyebrow: 'Looking for something bigger',
-        title: 'A multi-day experience, arranged around you.',
-        body: 'For clients who want more than a single round. Two or three consecutive days across different courses — Son Gual one day, Alcanada the next — with private transfers between venues, access to courses most visitors cannot book independently, and a handpicked dinner reservation if you want it. This is the format that makes the most sense for serious golfers visiting for a week, or for corporate groups who want a proper trip rather than a single day out.',
-        detail: 'I handle everything: course bookings, tee times, transfers, restaurant, and any extras. You arrive, play, eat, and leave knowing it was worth it. Multi-day experiences from €2,000. Get in touch with your dates and I\'ll come back with a proposal.',
-        button: 'Enquire about a multi-day trip →',
+      premium: {
+        eyebrow: 'The Full Andy Day',
+        title: 'One day, one course, everything arranged.',
+        body: 'No logistics, no decisions, nothing to organise on arrival. Depending on what you want from the day, this can include a caddy, a videographer, Michelin lunch, private transfers, spa access, a premium rental set. Andy coordinates everything in advance and confirms the full itinerary with you before you arrive.',
+        detail: 'This is the right format for a meaningful gift, a milestone birthday, a corporate day done properly, or simply a round you want to remember. From €3,000. Enquire with your dates and what matters most. Andy will come back with a proposal.',
+        button: 'Enquire about The Full Andy Day →',
         href: '/contact',
       },
     },
@@ -169,7 +168,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 Löcher an Andys Seite', 'Nicht nur mitlaufen - wirklich gemeinsam spielen'],
         ['Coaching auf dem Platz', 'Platzmanagement, Schlägerwahl und Entscheidungsfindung'],
         ['Nachbesprechung', 'Was besser wurde, woran Sie weiterarbeiten sollten - klar und ehrlich'],
-        ['Mittagessen', 'Im Clubrestaurant oder - wenn es zum Tag passt - an einem handverlesenen Ort in der Nähe'],
       ],
     },
     courses: {
@@ -249,7 +247,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 hoyos junto a Andy', 'No solo caminar al lado - jugar de verdad como su compañero'],
         ['Coaching en el campo', 'Gestión del campo, elección de palos y toma de decisiones'],
         ['Debrief después de la vuelta', 'Qué mejoró, en qué seguir trabajando, claro y honesto'],
-        ['Almuerzo', 'En el restaurante del club o, si encaja mejor con el día, en un sitio local elegido con criterio'],
       ],
     },
     courses: {
@@ -303,7 +300,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       breadcrumbCurrent: 'Jouer avec un pro',
       eyebrow: 'Journées de golf privées · Majorque',
       title: 'Une journée de golf privée à Majorque.',
-      body: 'Une journée privée sur l’un des meilleurs parcours de Majorque, avec moi à vos côtés pendant le tour et un coaching intégré naturellement tout au long de la partie. Cela convient aux bons joueurs, aux golfeurs en vacances et à tous ceux qui veulent mieux qu’un simple tee time.',
+      body: 'Une journée privée sur l'un des meilleurs parcours de Majorque, avec moi à vos côtés pendant le tour et un coaching intégré naturellement tout au long de la partie. Cela convient aux bons joueurs, aux golfeurs en vacances et à tous ceux qui veulent mieux qu'un simple tee time.',
       primaryCta: 'Réserver votre journée →',
       primaryHref: '/fr/contact',
       secondaryCta: 'Voir les formules',
@@ -312,56 +309,55 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: 'Ce que la journée comprend',
       title: 'Avant votre arrivée, je sais déjà ce que je dois observer.',
       paragraphs: [
-        'Avant votre arrivée, vous remplissez un court questionnaire. Il me dit ce qui vous frustre, où se situe l’écart entre votre jeu au practice et vos scores, et ce qu’une bonne journée représenterait vraiment pour vous. Quand nous arrivons au premier départ, je sais déjà ce que je dois observer.',
-        'Pendant la ronde, le coaching s’intègre naturellement. Pas comme un commentaire permanent. Plutôt comme la bonne observation au moment où elle peut encore changer le trou, le score ou la décision que vous avez devant vous.',
+        'Avant votre arrivée, vous remplissez un court questionnaire. Il me dit ce qui vous frustre, où se situe l'écart entre votre jeu au practice et vos scores, et ce qu'une bonne journée représenterait vraiment pour vous. Quand nous arrivons au premier départ, je sais déjà ce que je dois observer.',
+        'Pendant la ronde, le coaching s'intègre naturellement. Pas comme un commentaire permanent. Plutôt comme la bonne observation au moment où elle peut encore changer le trou, le score ou la décision que vous avez devant vous.',
       ],
-      quote: 'La plupart des golfeurs repartent en jouant mieux, avec plus de clarté et en comprenant pourquoi. C’est généralement cette dernière partie qui reste.',
+      quote: 'La plupart des golfeurs repartent en jouant mieux, avec plus de clarté et en comprenant pourquoi. C'est généralement cette dernière partie qui reste.',
       questionnaireEyebrow: 'Déjà réservé ?',
       questionnaireTitle: 'Remplissez votre questionnaire pré-parcours →',
-      questionnaireBody: 'Cela prend 3 minutes. Il m’aide à adapter la journée avant même que nous arrivions au premier départ.',
+      questionnaireBody: 'Cela prend 3 minutes. Il m'aide à adapter la journée avant même que nous arrivions au premier départ.',
     },
     included: {
       title: 'Ce qui est inclus',
       items: [
         ['Choix du parcours', 'Adapté à votre jeu, votre handicap et à ce que vous attendez de la journée'],
-        ['Heure de départ', 'Réservée et entièrement gérée - vous n’avez plus qu’à arriver'],
-        ['Briefing avant la ronde', 'Ce qu’il faut attendre du parcours et ce qu’il faudra regarder'],
-        ['18 trous aux côtés d’Andy', 'Pas seulement marcher à côté - vraiment jouer ensemble'],
+        ['Heure de départ', 'Réservée et entièrement gérée - vous n'avez plus qu'à arriver'],
+        ['Briefing avant la ronde', 'Ce qu'il faut attendre du parcours et ce qu'il faudra regarder'],
+        ['18 trous aux côtés d'Andy', 'Pas seulement marcher à côté - vraiment jouer ensemble'],
         ['Coaching sur le parcours', 'Gestion du parcours, choix des clubs et prise de décision'],
-        ['Débrief après la ronde', 'Ce qui a progressé, ce qu’il faut travailler ensuite - clair et honnête'],
-        ['Déjeuner', 'Au restaurant du club ou, si cela convient mieux à la journée, dans une adresse locale choisie avec soin'],
+        ['Débrief après la ronde', 'Ce qui a progressé, ce qu'il faut travailler ensuite - clair et honnête'],
       ],
     },
     courses: {
       eyebrow: 'Quel parcours ?',
       title: 'Le parcours est toujours choisi avec vous.',
-      body: 'Un groupe avec des débutants, une demi-journée plus courte ou une famille avec des juniors : selon le cas, certains parcours fonctionnent mieux que d’autres, et je vous dirai honnêtement lequel a le plus de sens. Certains sont réservés aux membres et ne peuvent pas être réservés de manière indépendante. Si vous voulez y jouer, je peux organiser cet accès.',
+      body: 'Un groupe avec des débutants, une demi-journée plus courte ou une famille avec des juniors : selon le cas, certains parcours fonctionnent mieux que d'autres, et je vous dirai honnêtement lequel a le plus de sens. Certains sont réservés aux membres et ne peuvent pas être réservés de manière indépendante. Si vous voulez y jouer, je peux organiser cet accès.',
     },
     who: {
       eyebrow: 'Pour qui est-ce ?',
       title: 'La journée change selon la personne qui se trouve au premier départ.',
       cards: [
-        { num: '01', title: 'Le golfeur en vacances', text: 'Un joueur indexé qui veut que sa ronde à Majorque ait une vraie saveur particulière, pas qu’elle ressemble à un simple départ réservé en ligne avec une poignée de main au 18.' },
-        { num: '02', title: 'L’écart practice / parcours', text: 'Des golfeurs dont le jeu d’entraînement ne se retrouve jamais complètement sur le parcours. Le problème vient souvent davantage de la stratégie et des décisions que du swing lui-même.' },
-        { num: '03', title: 'Le groupe dirigeant', text: 'Des groupes d’entreprise, des dirigeants de passage sur l’île et toute personne qui veut une journée premium, entièrement organisée, avec un vrai regard de golf.' },
-        { num: '04', title: 'Le débutant', text: 'Des golfeurs occasionnels qui veulent une présence experte sans intimidation. La journée n’est pas construite autour de la carte de score, mais autour de la confiance et du plaisir.' },
-        { num: '05', title: 'Le golfeur résident', text: 'Basé sur l’île et à la recherche d’un travail régulier avec un professionnel qui joue réellement les mêmes parcours. Une progression sérieuse et mesurable dans le temps.' },
-        { num: '06', title: 'Tous ceux qui veulent plus', text: 'La seule vraie condition est de vouloir mieux qu’une journée de golf standard pour visiteurs. Tout le reste peut être adapté autour de vous.' },
+        { num: '01', title: 'Le golfeur en vacances', text: 'Un joueur indexé qui veut que sa ronde à Majorque ait une vraie saveur particulière, pas qu'elle ressemble à un simple départ réservé en ligne avec une poignée de main au 18.' },
+        { num: '02', title: 'L'écart practice / parcours', text: 'Des golfeurs dont le jeu d'entraînement ne se retrouve jamais complètement sur le parcours. Le problème vient souvent davantage de la stratégie et des décisions que du swing lui-même.' },
+        { num: '03', title: 'Le groupe dirigeant', text: 'Des groupes d'entreprise, des dirigeants de passage sur l'île et toute personne qui veut une journée premium, entièrement organisée, avec un vrai regard de golf.' },
+        { num: '04', title: 'Le débutant', text: 'Des golfeurs occasionnels qui veulent une présence experte sans intimidation. La journée n'est pas construite autour de la carte de score, mais autour de la confiance et du plaisir.' },
+        { num: '05', title: 'Le golfeur résident', text: 'Basé sur l'île et à la recherche d'un travail régulier avec un professionnel qui joue réellement les mêmes parcours. Une progression sérieuse et mesurable dans le temps.' },
+        { num: '06', title: 'Tous ceux qui veulent plus', text: 'La seule vraie condition est de vouloir mieux qu'une journée de golf standard pour visiteurs. Tout le reste peut être adapté autour de vous.' },
       ],
     },
     testimonials: {
       eyebrow: 'Ce que disent les golfeurs',
       title: 'Dans leurs propres mots.',
       items: [
-        { text: 'Jouer avec Andy a été une expérience remarquable. Il a une qualité d’observation rare et il transmet ses remarques d’une façon à la fois subtile et très juste. En seulement 18 trous, j’ai senti que mon potentiel était plus haut que je ne le pensais. Même au putting, quelques conseils simples ont immédiatement changé quelque chose.', author: 'Jo' },
-        { text: 'Ce que j’ai le plus apprécié, c’est le confort qu’il m’a donné sur le parcours. Comprendre les calculs derrière chaque coup a énormément amélioré ma prise de décision. Je recommanderais cette journée à des groupes d’amis, à des golfeurs en vacances et même à des familles qui veulent découvrir le golf ensemble.', author: 'Finlay' },
-        { text: 'Andy a complètement changé ma manière de penser la gestion du parcours. J’avais joué pendant des années sans vraiment comprendre les décisions derrière chaque coup. Après 18 trous avec lui à Son Gual, j’y ai signé mon meilleur score et j’ai enfin compris pourquoi. Du briefing jusqu’au déjeuner, la journée entière correspondait exactement à ce qu’un grand jour de golf devrait être.', author: 'Adam' },
+        { text: 'Jouer avec Andy a été une expérience remarquable. Il a une qualité d'observation rare et il transmet ses remarques d'une façon à la fois subtile et très juste. En seulement 18 trous, j'ai senti que mon potentiel était plus haut que je ne le pensais. Même au putting, quelques conseils simples ont immédiatement changé quelque chose.', author: 'Jo' },
+        { text: 'Ce que j'ai le plus apprécié, c'est le confort qu'il m'a donné sur le parcours. Comprendre les calculs derrière chaque coup a énormément amélioré ma prise de décision. Je recommanderais cette journée à des groupes d'amis, à des golfeurs en vacances et même à des familles qui veulent découvrir le golf ensemble.', author: 'Finlay' },
+        { text: 'Andy a complètement changé ma manière de penser la gestion du parcours. J'avais joué pendant des années sans vraiment comprendre les décisions derrière chaque coup. Après 18 trous avec lui à Son Gual, j'y ai signé mon meilleur score et j'ai enfin compris pourquoi. Du briefing jusqu'au déjeuner, la journée entière correspondait exactement à ce qu'un grand jour de golf devrait être.', author: 'Adam' },
       ],
     },
     packages: {
       eyebrow: 'Expériences et formules',
       title: 'Trois façons de vivre la journée.',
-      body: 'Les trois options sont privées et les trois incluent le même niveau d’accompagnement sur le parcours. Ce qui change, c’est le degré d’organisation que vous voulez autour du golf.',
+      body: 'Les trois options sont privées et les trois incluent le même niveau d'accompagnement sur le parcours. Ce qui change, c'est le degré d'organisation que vous voulez autour du golf.',
       tiers: [],
     },
     finalCta: {
@@ -409,7 +405,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 holes naast Andy', 'Niet alleen meelopen - echt samen spelen'],
         ['Coaching tijdens de ronde', 'Baanmanagement, shotselectie en besluitvorming'],
         ['Nabespreking', 'Wat beter werd, waar u aan moet werken - helder en eerlijk'],
-        ['Lunch', 'In het clubrestaurant of, als het beter bij de dag past, op een zorgvuldig gekozen lokale plek'],
       ],
     },
     courses: {
@@ -489,7 +484,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['18 hål vid Andys sida', 'Inte bara gå bredvid - faktiskt spela tillsammans'],
         ['Coaching på banan', 'Banförvaltning, klubbval och beslutsfattande'],
         ['Genomgång efter rundan', 'Vad som blev bättre, vad du ska jobba vidare med - tydligt och ärligt'],
-        ['Lunch', 'På klubbrestaurangen eller, om det passar dagen bättre, på ett handplockat lokalt ställe'],
       ],
     },
     courses: {
@@ -569,7 +563,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         ['与 Andy 同打 18 洞', '不只是陪着走，而是真正一起下场'],
         ['球场实战指导', '球场管理、选杆与临场决策'],
         ['赛后复盘', '哪些地方变好了，接下来该练什么 - 清楚而直接'],
-        ['午餐', '在球场餐厅，或者如果当天更合适，也可以安排在精心挑选的本地餐厅'],
       ],
     },
     courses: {
@@ -642,7 +635,7 @@ function mergeDeep(base, override) {
 const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   de: {
     hero: {
-      body: 'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €595 inklusive Greenfee und Lunch. Gruppen von 2 bis 4 ab €1.195, zuzüglich Greenfees.',
+      body: 'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo from €495. Groups of 2 to 4 from €950. Green fees additional, confirmed when we speak.',
       price: null,
     },
     packages: {
@@ -652,7 +645,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: 'Solo',
           name: 'A Day With Andy',
-          price: '€595',
+          price: null,
           note: 'Alles inklusive. Greenfee, Mittagessen, der ganze Tag.',
           features: [
             'Platz passend zu Ihrem Spiel und Handicap',
@@ -670,7 +663,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: 'Gruppe von 2 bis 4',
           name: 'A Day With Andy',
-          price: '€1.195',
+          price: null,
           note: 'Fester Tagessatz für Andy bei Gruppen von 2 bis 4. Greenfees kommen zusätzlich dazu und werden im Gespräch bestätigt.',
           features: [
             'Platz passend zu Ihrer Gruppe und den Handicaps',
@@ -691,18 +684,18 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   es: {
     hero: {
-      body: 'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €595 todo incluido. Grupos de 2 a 4 desde €1.195, más green fees.',
+      body: 'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo from €495. Groups of 2 to 4 from €950. Green fees additional, confirmed when we speak.',
       price: null,
     },
     packages: {
       title: 'Dos maneras de vivir el día.',
-      body: 'Ambas son privadas, me tienen a mí como anfitrión y se juegan en uno de los mejores campos de la isla. Solo es todo incluido. Los grupos de 2 a 4 pagan una tarifa fija por el día, con los green fees confirmados por separado.',
+      body: 'Ambas son privadas, me tienen a mí como anfitrión y se juegan en uno de los mejores campos de la isla. Solo. Green fees adicionales. Los grupos de 2 a 4 pagan una tarifa fija por el día, con los green fees confirmados por separado.',
       tiers: [
         {
           eyebrow: 'Solo',
           name: 'A Day With Andy',
-          price: '€595',
-          note: 'Todo incluido. Green fee, almuerzo y el día completo.',
+          price: null,
+          note: 'Green fees adicionales, confirmados cuando hablemos.',
           features: [
             'Campo elegido según su juego y su hándicap',
             'Hora de salida asegurada y completamente gestionada',
@@ -719,7 +712,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: 'Grupo de 2 a 4',
           name: 'A Day With Andy',
-          price: '€1.195',
+          price: null,
           note: 'Tarifa fija del día de Andy para grupos de 2 a 4. Los green fees son adicionales y se confirman cuando hablamos.',
           features: [
             'Campo elegido según el nivel y los hándicaps del grupo',
@@ -740,23 +733,23 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   fr: {
     hero: {
-      body: 'Un parcours. Une journée complète aux côtés d’un PGA Advanced Professional qui a tout organisé. En solo à partir de 595 € tout compris. Groupes de 2 à 4 à partir de 1 195 €, green fees en plus.',
+      body: 'Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. Solo à partir de 495 €. Groupes à partir de 950 €. Green fees en plus.',
       price: null,
     },
     packages: {
       title: 'Deux façons de vivre la journée.',
-      body: 'Les deux formats sont privés, organisés avec moi et joués sur l’un des plus beaux parcours de l’île. En solo, tout est compris. Les groupes de 2 à 4 paient un tarif fixe pour la journée, avec les green fees confirmés séparément.',
+      body: 'Les deux formats sont privés, organisés avec moi et joués sur l'un des plus beaux parcours de l'île. En solo, tout est compris. Les groupes de 2 à 4 paient un tarif fixe pour la journée, avec les green fees confirmés séparément.',
       tiers: [
         {
           eyebrow: 'Solo',
           name: 'A Day With Andy',
-          price: '€595',
-          note: 'Tout compris. Green fee, déjeuner et journée complète.',
+          price: null,
+          note: 'Green fees additionnels, confirmés lors de notre conversation.',
           features: [
             'Parcours choisi selon votre jeu et votre index',
             'Heure de départ sécurisée et entièrement gérée',
             'Plan de jeu et échauffement avant la partie',
-            '18 trous aux côtés d’Andy',
+            '18 trous aux côtés d'Andy',
             'Observations sur le parcours quand elles peuvent encore changer quelque chose',
             'Long déjeuner au restaurant du club',
             'Green fee inclus',
@@ -768,16 +761,16 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: 'Groupe de 2 à 4',
           name: 'A Day With Andy',
-          price: '€1 195',
-          note: 'Tarif fixe pour la journée d’Andy pour les groupes de 2 à 4. Les green fees s’ajoutent et sont confirmés ensemble.',
+          price: null,
+          note: 'Tarif fixe pour la journée d'Andy pour les groupes de 2 à 4. Les green fees s'ajoutent et sont confirmés ensemble.',
           features: [
             'Parcours choisi selon le niveau et les index du groupe',
             'Heure de départ sécurisée et entièrement gérée',
             'Plan de jeu et échauffement avant la partie',
-            '18 trous aux côtés d’Andy',
+            '18 trous aux côtés d'Andy',
             'Observations sur le parcours quand elles peuvent encore changer quelque chose',
             'Long déjeuner au restaurant du club',
-            'Jusqu’à 4 joueurs — un tarif fixe pour la journée d’Andy',
+            'Jusqu'à 4 joueurs — un tarif fixe pour la journée d'Andy',
             'Green fees en plus — confirmés ensemble',
           ],
           button: 'Demander →',
@@ -789,7 +782,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   nl: {
     hero: {
-      body: 'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €595, inclusief greenfee en lunch. Groepen van 2 tot 4 vanaf €1.195, plus greenfees.',
+      body: 'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo from €495. Groups of 2 to 4 from €950. Green fees additional, confirmed when we speak.',
       price: null,
     },
     packages: {
@@ -799,8 +792,8 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: 'Solo',
           name: 'A Day With Andy',
-          price: '€595',
-          note: 'Alles inbegrepen. Greenfee, lunch en de volledige dag.',
+          price: null,
+          note: 'Greenfees bijkomend, bevestigd wanneer we spreken.',
           features: [
             'Baan gekozen op basis van uw spel en handicap',
             'Starttijd vastgelegd en volledig geregeld',
@@ -817,7 +810,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: 'Groep van 2 tot 4',
           name: 'A Day With Andy',
-          price: '€1.195',
+          price: null,
           note: 'Vaste dagprijs voor Andy voor groepen van 2 tot 4. Greenfees komen erbij en worden bevestigd wanneer we spreken.',
           features: [
             'Baan gekozen op basis van het niveau en de handicaps van de groep',
@@ -838,7 +831,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   sv: {
     hero: {
-      body: 'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €595, inklusive greenfee och lunch. Grupper på 2 till 4 från €1.195, plus green fees.',
+      body: 'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo from €495. Groups of 2 to 4 from €950. Green fees additional, confirmed when we speak.',
       price: null,
     },
     packages: {
@@ -848,8 +841,8 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: 'Solo',
           name: 'A Day With Andy',
-          price: '€595',
-          note: 'Allt ingår. Green fee, lunch och hela dagen.',
+          price: null,
+          note: 'Green fees tillkommer, bekräftas när vi pratar.',
           features: [
             'Bana vald efter ditt spel och handicap',
             'Starttid säkrad och helt ordnad',
@@ -866,7 +859,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: 'Grupp på 2 till 4',
           name: 'A Day With Andy',
-          price: '€1.195',
+          price: null,
           note: 'Fast dagspris för Andy för grupper på 2 till 4. Green fees tillkommer och bekräftas när vi pratar.',
           features: [
             'Bana vald efter gruppens nivå och handicap',
@@ -887,7 +880,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   zh: {
     hero: {
-      body: '一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €595 全包。2 到 4 人的小组从 €1,195 起，果岭费另计。',
+      body: '一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €495 起。小组方案 €950 起。果岭费另计。',
       price: null,
     },
     packages: {
@@ -897,7 +890,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: '单人',
           name: 'A Day With Andy',
-          price: '€595',
+          price: null,
           note: '全部包含。果岭费、午餐以及完整的一天。',
           features: [
             '按照您的球技与差点匹配球场',
@@ -915,7 +908,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         {
           eyebrow: '2 到 4 人',
           name: 'A Day With Andy',
-          price: '€1,195',
+          price: null,
           note: '2 到 4 人的小组按 Andy 的固定日费计价。果岭费另计，并在沟通后确认。',
           features: [
             '按照小组水平与差点匹配球场',
@@ -957,7 +950,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Solo',
           name: 'Ein Tag mit Andy',
-          price: '€595',
+          price: null,
           note: 'Alles inklusive. Greenfee, Mittagessen, der ganze Tag.',
           features: [
             'Platz passend zu Ihrem Spiel und Handicap',
@@ -975,7 +968,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Gruppe von 2 bis 4',
           name: 'Ein Tag mit Andy',
-          price: '€1.195',
+          price: null,
           note: 'Fester Tagessatz für Andy bei Gruppen von 2 bis 4. Greenfees kommen zusätzlich dazu und werden im Gespräch bestätigt.',
           features: [
             'Platz passend zu Ihrer Gruppe und den Handicaps',
@@ -1022,8 +1015,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Solo',
           name: 'Un día con Andy',
-          price: '€595',
-          note: 'Todo incluido. Green fee, almuerzo y el día completo.',
+          price: null,
+          note: 'Green fees adicionales, confirmados cuando hablemos.',
           features: [
             'Campo elegido según su juego y su hándicap',
             'Hora de salida asegurada y completamente gestionada',
@@ -1040,7 +1033,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Grupo de 2 a 4',
           name: 'Un día con Andy',
-          price: '€1.195',
+          price: null,
           note: 'Tarifa fija del día de Andy para grupos de 2 a 4. Los green fees son adicionales y se confirman cuando hablamos.',
           features: [
             'Campo elegido según el nivel y los hándicaps del grupo',
@@ -1074,11 +1067,11 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
       cards: [
         {
           title: 'Des golfeurs exigeants qui veulent une journée mémorable',
-          body: 'Il ne s’agit pas seulement de jouer 18 trous. Il s’agit de jouer avec un professionnel qui connaît le parcours, lit les bonnes décisions et donne au jour tout son rythme.',
+          body: 'Il ne s'agit pas seulement de jouer 18 trous. Il s'agit de jouer avec un professionnel qui connaît le parcours, lit les bonnes décisions et donne au jour tout son rythme.',
         },
         {
           title: 'Des groupes qui veulent que tout soit pris en charge',
-          body: 'Couples, amis et petits groupes d’entreprise qui veulent jouer Majorque comme il faut, sans gérer eux-mêmes tee times, transferts ou déjeuner.',
+          body: 'Couples, amis et petits groupes d'entreprise qui veulent jouer Majorque comme il faut, sans gérer eux-mêmes tee times, transferts ou déjeuner.',
         },
       ],
     },
@@ -1087,13 +1080,13 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Solo',
           name: 'Une journée avec Andy',
-          price: '€595',
-          note: 'Tout compris. Green fee, déjeuner et journée complète.',
+          price: null,
+          note: 'Green fees additionnels, confirmés lors de notre conversation.',
           features: [
             'Parcours choisi selon votre jeu et votre index',
             'Heure de départ sécurisée et entièrement gérée',
             'Plan de jeu et échauffement avant la partie',
-            '18 trous aux côtés d’Andy',
+            '18 trous aux côtés d'Andy',
             'Observations sur le parcours quand elles peuvent encore changer quelque chose',
             'Long déjeuner au restaurant du club',
             'Green fee inclus',
@@ -1105,16 +1098,16 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Groupe de 2 à 4',
           name: 'Une journée avec Andy',
-          price: '€1 195',
-          note: 'Tarif fixe pour la journée d’Andy pour les groupes de 2 à 4. Les green fees s’ajoutent et sont confirmés ensemble.',
+          price: null,
+          note: 'Tarif fixe pour la journée d'Andy pour les groupes de 2 à 4. Les green fees s'ajoutent et sont confirmés ensemble.',
           features: [
             'Parcours choisi selon le niveau et les index du groupe',
             'Heure de départ sécurisée et entièrement gérée',
             'Plan de jeu et échauffement avant la partie',
-            '18 trous aux côtés d’Andy',
+            '18 trous aux côtés d'Andy',
             'Observations sur le parcours quand elles peuvent encore changer quelque chose',
             'Long déjeuner au restaurant du club',
-            'Jusqu’à 4 joueurs - un tarif fixe pour la journée d’Andy',
+            'Jusqu'à 4 joueurs - un tarif fixe pour la journée d'Andy',
             'Green fees en plus - confirmés ensemble',
           ],
           button: 'Demander →',
@@ -1152,8 +1145,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Solo',
           name: 'Een dag met Andy',
-          price: '€595',
-          note: 'Alles inbegrepen. Greenfee, lunch en de volledige dag.',
+          price: null,
+          note: 'Greenfees bijkomend, bevestigd wanneer we spreken.',
           features: [
             'Baan gekozen op basis van uw spel en handicap',
             'Starttijd vastgelegd en volledig geregeld',
@@ -1170,7 +1163,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Groep van 2 tot 4',
           name: 'Een dag met Andy',
-          price: '€1.195',
+          price: null,
           note: 'Vaste dagprijs voor Andy voor groepen van 2 tot 4. Greenfees komen erbij en worden bevestigd wanneer we spreken.',
           features: [
             'Baan gekozen op basis van het niveau en de handicaps van de groep',
@@ -1217,8 +1210,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Solo',
           name: 'En dag med Andy',
-          price: '€595',
-          note: 'Allt ingår. Green fee, lunch och hela dagen.',
+          price: null,
+          note: 'Green fees tillkommer, bekräftas när vi pratar.',
           features: [
             'Bana vald efter ditt spel och handicap',
             'Starttid säkrad och helt ordnad',
@@ -1235,7 +1228,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: 'Grupp på 2 till 4',
           name: 'En dag med Andy',
-          price: '€1.195',
+          price: null,
           note: 'Fast dagspris för Andy för grupper på 2 till 4. Green fees tillkommer och bekräftas när vi pratar.',
           features: [
             'Bana vald efter gruppens nivå och handicap',
@@ -1282,7 +1275,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: '单人',
           name: '与 Andy 共度一天',
-          price: '€595',
+          price: null,
           note: '全部包含。果岭费、午餐以及完整的一天。',
           features: [
             '按照您的球技与差点匹配球场',
@@ -1300,7 +1293,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
         {
           eyebrow: '2 到 4 人',
           name: '与 Andy 共度一天',
-          price: '€1,195',
+          price: null,
           note: '2 到 4 人的小组按 Andy 的固定日费计价。果岭费另计，并在沟通后确认。',
           features: [
             '按照小组水平与差点匹配球场',

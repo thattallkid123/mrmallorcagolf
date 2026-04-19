@@ -170,85 +170,6 @@ export const HOME_CONTENT = {
         "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough.",
       attribution: 'Adam',
     },
-    packages: {
-      eyebrow: 'The Experience',
-      title: 'Two ways to spend the day.',
-      intro: 'Both are private, arranged by me, and played on one of the island\'s finest courses. Solo is all inclusive. Groups of 2 to 4 pay one fixed day rate, with green fees confirmed separately.',
-      items: [
-        {
-          tier: 'Solo',
-          name: 'A Day With Andy',
-          features: [
-            'Course matched to your game and handicap',
-            'Tee time secured and fully handled',
-            'Pre-round game plan and warm-up',
-            '18 holes playing alongside Andy',
-            'On-course insight — where it can still change the hole',
-            'Long lunch at the course restaurant',
-            'Green fee included',
-          ],
-          price: '€595',
-          note: 'Everything included. No additions on the day.',
-          cta: 'Enquire',
-        },
-        {
-          tier: 'Group of 2 to 4',
-          name: 'A Day With Andy',
-          featured: true,
-          features: [
-            'Private day built for pairs and small groups',
-            'Up to 4 players — one fixed day rate for Andy',
-            'Works well for pairs, small groups, corporate',
-            'Green fees additional — confirmed when we speak',
-          ],
-          price: '€1,195',
-          note: 'Andy\'s fixed day rate for groups of 2 to 4. Green fees are additional and confirmed when we speak.',
-          cta: 'Enquire',
-        },
-      ],
-      multiDay: {
-        eyebrow: 'Looking for something bigger',
-        title: 'A multi-day experience, arranged around you.',
-        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond — with private transfers, handpicked dining, and access to courses most visitors cannot book. From €2,000. Get in touch with your dates.',
-        cta: 'Enquire about a multi-day trip',
-      },
-    },
-    faq: {
-      eyebrow: 'Questions',
-      title: 'Things people ask before getting in touch.',
-      intro: "Tell me your dates, your handicap, and what you're looking for. I come back personally, usually sooner, always within 24 hours.",
-      items: [
-        {
-          q: 'Do I need to be a good golfer?',
-          a: 'Not at all. The experience adjusts to your game: beginners and scratch players both get something from the day. The only requirement is wanting a golf day that feels more personal than a standard tee time.',
-        },
-        {
-          q: 'Which course do you use?',
-          a: "It depends on you. Son Gual and Alcanada are my primary venues for a serious full day. For beginners, groups, or shorter rounds, there are better options, and I'll tell you honestly which one fits.",
-        },
-        {
-          q: 'How do I book?',
-          a: "Get in touch. Tell me your dates and what you're looking for, and I come back personally within 24 hours. No booking systems. No waiting.",
-        },
-        {
-          q: 'Is this suitable for a group?',
-          a: 'Yes. The experiences work for solos, pairs, groups of friends, and corporate days. The multi-day option is especially well suited to business groups and executives visiting the island.',
-        },
-        {
-          q: 'When is the best time of year to visit?',
-          a: 'For the best conditions, look at late spring and autumn peak windows. For better value, June to August and December to February are usually cheaper. The island is playable year-round, but spring and autumn are no longer the budget season.',
-        },
-      ],
-    },
-    finalCta: {
-      eyebrow: 'Ready to play Mallorca properly?',
-      title: "Get in touch. I'll sort the rest.",
-      body: "Tell me your dates, your handicap, and what you want from the day. I'll come back with a recommendation personally within 24 hours.",
-      quote: "You'll play better golf, and you'll know why.",
-      primaryCta: 'Book Your Day',
-      secondaryCta: 'WhatsApp',
-    },
-  },
 }
 
 function deepMerge(base, override) {
@@ -769,270 +690,72 @@ const HOME_AUDIT_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: 'Plätze auf der Insel' },
-        { value: '€595', label: 'Solo — alles inklusive' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
       title: 'Zwei Wege, den Tag zu verbringen.',
-      intro: 'Beide Varianten sind privat und werden von mir persönlich begleitet. Solo ist alles inklusive. Gruppen von 2 bis 4 zahlen einen festen Tagessatz, Greenfees werden separat bestätigt.',
-      items: [
-        {
-          tier: 'Solo',
-          name: 'A Day With Andy',
-          features: [
-            'Platz passend zu Ihrem Spiel und Handicap',
-            'Startzeit gesichert und komplett organisiert',
-            'Spielplan und Warm-up vor der Runde',
-            '18 Löcher an Andys Seite',
-            'On-course-Einsichten genau dann, wenn sie noch etwas verändern können',
-            'Langes Mittagessen im Clubrestaurant',
-            'Greenfee inklusive',
-          ],
-          price: '€595',
-          note: 'Alles inklusive. Keine Überraschungen am Tag selbst.',
-          cta: 'Anfragen',
-        },
-        {
-          tier: 'Gruppe von 2 bis 4',
-          name: 'A Day With Andy',
-          featured: true,
-          features: [
-            'Privater Tag für Paare und kleine Gruppen',
-            'Bis zu 4 Spieler — ein fester Tagessatz für Andy',
-            'Ideal für Freunde, kleine Gruppen und Firmenrunden',
-            'Greenfees zusätzlich — wir bestätigen sie im Gespräch',
-          ],
-          price: '€1.195',
-          note: 'Fester Tagessatz für Andy bei Gruppen von 2 bis 4. Greenfees kommen zusätzlich dazu und werden im Gespräch bestätigt.',
-          cta: 'Anfragen',
-        },
-      ],
+      intro: 'Solo ab €495. Gruppen von 2 bis 4 ab €950. Greenfees zusätzlich, werden im Gespräch bestätigt.',
     },
   },
   es: {
     intro: {
       stats: [
         { value: '24', label: 'campos en la isla' },
-        { value: '€595', label: 'Solo — todo incluido' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
       title: 'Dos maneras de vivir el día.',
-      intro: 'Ambas son privadas y las organizo personalmente. Solo es todo incluido. Los grupos de 2 a 4 pagan una tarifa fija por el día, con los green fees confirmados por separado.',
-      items: [
-        {
-          tier: 'Solo',
-          name: 'A Day With Andy',
-          features: [
-            'Campo elegido según su juego y su hándicap',
-            'Hora de salida asegurada y completamente gestionada',
-            'Plan de juego y calentamiento antes de la vuelta',
-            '18 hoyos junto a Andy',
-            'Observaciones en el campo cuando todavía pueden cambiar el hoyo',
-            'Almuerzo largo en el restaurante del club',
-            'Green fee incluido',
-          ],
-          price: '€595',
-          note: 'Todo incluido. Sin extras el día de la experiencia.',
-          cta: 'Consultar',
-        },
-        {
-          tier: 'Grupo de 2 a 4',
-          name: 'A Day With Andy',
-          featured: true,
-          features: [
-            'Día privado para parejas y pequeños grupos',
-            'Hasta 4 jugadores — una tarifa fija por el día de Andy',
-            'Ideal para amigos, grupos pequeños y empresa',
-            'Green fees adicionales — se confirman al hablar',
-          ],
-          price: '€1.195',
-          note: 'Tarifa fija del día de Andy para grupos de 2 a 4. Los green fees son adicionales y se confirman cuando hablamos.',
-          cta: 'Consultar',
-        },
-      ],
+      intro: 'Solo desde €495. Grupos desde €950. Green fees adicionales, confirmados cuando hablemos.',
     },
   },
   fr: {
     intro: {
       stats: [
         { value: '24', label: "parcours sur l'île" },
-        { value: '€595', label: 'Solo — tout compris' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
       title: 'Deux façons de vivre la journée.',
-      intro: 'Les deux formats sont privés et organisés personnellement par moi. En solo, tout est compris. Les groupes de 2 à 4 paient un tarif fixe pour la journée, avec les green fees confirmés séparément.',
-      items: [
-        {
-          tier: 'Solo',
-          name: 'A Day With Andy',
-          features: [
-            'Parcours choisi selon votre jeu et votre index',
-            'Heure de départ sécurisée et entièrement gérée',
-            'Plan de jeu et échauffement avant la partie',
-            '18 trous aux côtés d’Andy',
-            'Observations sur le parcours au moment où elles peuvent encore changer quelque chose',
-            'Long déjeuner au restaurant du club',
-            'Green fee inclus',
-          ],
-          price: '€595',
-          note: 'Tout compris. Rien à ajouter le jour même.',
-          cta: 'Demander',
-        },
-        {
-          tier: 'Groupe de 2 à 4',
-          name: 'A Day With Andy',
-          featured: true,
-          features: [
-            'Journée privée pour couples et petits groupes',
-            'Jusqu’à 4 joueurs — un tarif fixe pour la journée d’Andy',
-            'Parfait pour amis, petits groupes et entreprise',
-            'Green fees en plus — confirmés ensemble',
-          ],
-          price: '€1 195',
-          note: 'Tarif fixe pour la journée d’Andy pour les groupes de 2 à 4. Les green fees s’ajoutent et sont confirmés ensemble.',
-          cta: 'Demander',
-        },
-      ],
+      intro: 'Solo à partir de 495 €. Groupes à partir de 950 €. Green fees supplémentaires, confirmés lors de notre conversation.',
     },
   },
   nl: {
     intro: {
       stats: [
         { value: '24', label: 'banen op het eiland' },
-        { value: '€595', label: 'Solo — inclusief greenfee en lunch' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
       title: 'Twee manieren om de dag te beleven.',
-      intro: 'Beide zijn privé en worden persoonlijk door mij begeleid. Solo is inclusief greenfee en lunch. Groepen van 2 tot 4 betalen één vaste dagprijs, met greenfees die apart worden bevestigd.',
-      items: [
-        {
-          tier: 'Solo',
-          name: 'A Day With Andy',
-          features: [
-            'Baan gekozen op basis van uw spel en handicap',
-            'Starttijd vastgelegd en volledig geregeld',
-            'Spelplan en warming-up voor de ronde',
-            '18 holes naast Andy',
-            'Inzichten op de baan wanneer ze nog echt iets kunnen veranderen',
-            'Uitgebreide lunch in het clubrestaurant',
-            'Greenfee inbegrepen',
-          ],
-          price: '€595',
-          note: 'Alles inbegrepen. Geen extra’s op de dag zelf.',
-          cta: 'Aanvragen',
-        },
-        {
-          tier: 'Groep van 2 tot 4',
-          name: 'A Day With Andy',
-          featured: true,
-          features: [
-            'Privédag voor tweetallen en kleine groepen',
-            'Tot 4 spelers — één vaste dagprijs voor Andy',
-            'Werkt goed voor vrienden, kleine groepen en bedrijven',
-            'Greenfees extra — bevestigd wanneer we spreken',
-          ],
-          price: '€1.195',
-          note: 'Vaste dagprijs voor Andy voor groepen van 2 tot 4. Greenfees komen erbij en worden bevestigd wanneer we spreken.',
-          cta: 'Aanvragen',
-        },
-      ],
+      intro: 'Solo vanaf €495. Groepen van 2 tot 4 vanaf €950. Greenfees bijkomend, bevestigd wanneer we spreken.',
     },
   },
   sv: {
     intro: {
       stats: [
         { value: '24', label: 'banor på ön' },
-        { value: '€595', label: 'Solo — greenfee och lunch ingår' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
       title: 'Två sätt att lägga upp dagen.',
-      intro: 'Båda alternativen är privata och leds personligen av mig. Solo inkluderar greenfee och lunch. Grupper på 2 till 4 betalar ett fast dagspris, med green fees som bekräftas separat.',
-      items: [
-        {
-          tier: 'Solo',
-          name: 'A Day With Andy',
-          features: [
-            'Bana vald efter ditt spel och handicap',
-            'Starttid säkrad och helt ordnad',
-            'Spelplan och uppvärmning före rundan',
-            '18 hål vid Andys sida',
-            'Insikter på banan när de fortfarande kan förändra hålet',
-            'Lång lunch i klubbrestaurangen',
-            'Green fee ingår',
-          ],
-          price: '€595',
-          note: 'Allt ingår. Inga tillägg på själva dagen.',
-          cta: 'Förfrågan',
-        },
-        {
-          tier: 'Grupp på 2 till 4',
-          name: 'A Day With Andy',
-          featured: true,
-          features: [
-            'Privat dag för par och små grupper',
-            'Upp till 4 spelare — ett fast dagspris för Andy',
-            'Passar vänner, små grupper och företag',
-            'Green fees tillkommer — bekräftas när vi pratar',
-          ],
-          price: '€1.195',
-          note: 'Fast dagspris för Andy för grupper på 2 till 4. Green fees tillkommer och bekräftas när vi pratar.',
-          cta: 'Förfrågan',
-        },
-      ],
+      intro: 'Solo från €495. Grupper på 2 till 4 från €950. Green fees tillkommer, bekräftas när vi pratar.',
     },
   },
   zh: {
     intro: {
       stats: [
         { value: '24', label: '岛上球场数量' },
-        { value: '€595', label: '单人 — 全包' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
       title: '两种安排这一天的方式。',
-      intro: '两种方案都是私人的，也都由我亲自陪同。单人方案为全包。2 到 4 人的小组按 Andy 的固定日费计价，果岭费另行确认。',
-      items: [
-        {
-          tier: '单人',
-          name: 'A Day With Andy',
-          features: [
-            '按照您的球技与差点匹配球场',
-            '开球时间已预订并安排妥当',
-            '赛前计划与热身',
-            '与 Andy 同打 18 洞',
-            '在真正还来得及改变结果的时候给出场上观察',
-            '在球场餐厅享用悠长午餐',
-            '果岭费已包含',
-          ],
-          price: '€595',
-          note: '全部包含。当天不会再有额外项目。',
-          cta: '立即咨询',
-        },
-        {
-          tier: '2 到 4 人',
-          name: 'A Day With Andy',
-          featured: true,
-          features: [
-            '适合双人和小团体的私人高尔夫日',
-            '最多 4 位球手 — Andy 收取固定日费',
-            '适合朋友同行、小团体和商务接待',
-            '果岭费另计 — 沟通后确认',
-          ],
-          price: '€1,195',
-          note: '2 到 4 人的小组按 Andy 的固定日费计价。果岭费另计，并在沟通后确认。',
-          cta: '立即咨询',
-        },
-      ],
+      intro: '单人方案 €495 起。2 到 4 人的小组 €950 起。果岭费另计，沟通后确认。',
     },
   },
 }
@@ -1040,38 +763,7 @@ const HOME_AUDIT_OVERRIDES = {
 const HOME_RELOCALIZED_OVERRIDES = {
   de: {
     packages: {
-      items: [
-        {
-          tier: 'Solo',
-          name: 'Ein Tag mit Andy',
-          features: [
-            'Platz passend zu Ihrem Spiel und Handicap',
-            'Startzeit gesichert und komplett organisiert',
-            'Spielplan und Warm-up vor der Runde',
-            '18 Löcher an Andys Seite',
-            'On-course-Einsichten genau dann, wenn sie noch etwas verändern können',
-            'Langes Mittagessen im Clubrestaurant',
-            'Greenfee inklusive',
-          ],
-          price: '€595',
-          note: 'Alles inklusive. Keine Überraschungen am Tag selbst.',
-          cta: 'Anfragen',
-        },
-        {
-          tier: 'Gruppe von 2 bis 4',
-          name: 'Ein Tag mit Andy',
-          featured: true,
-          features: [
-            'Privater Tag für Paare und kleine Gruppen',
-            'Bis zu 4 Spieler - ein fester Tagessatz für Andy',
-            'Ideal für Freunde, kleine Gruppen und Firmenrunden',
-            'Greenfees zusätzlich - wir bestätigen sie im Gespräch',
-          ],
-          price: '€1.195',
-          note: 'Fester Tagessatz für Andy bei Gruppen von 2 bis 4. Greenfees kommen zusätzlich dazu und werden im Gespräch bestätigt.',
-          cta: 'Anfragen',
-        },
-      ],
+      
       multiDay: {
         eyebrow: 'Suchen Sie nach etwas Größerem?',
         title: 'Ein mehrtägiges Erlebnis, um Sie herum arrangiert.',
@@ -1084,38 +776,7 @@ const HOME_RELOCALIZED_OVERRIDES = {
   },
   es: {
     packages: {
-      items: [
-        {
-          tier: 'Solo',
-          name: 'Un día con Andy',
-          features: [
-            'Campo elegido según su juego y su hándicap',
-            'Hora de salida asegurada y completamente gestionada',
-            'Plan de juego y calentamiento antes de la vuelta',
-            '18 hoyos junto a Andy',
-            'Observaciones en el campo cuando todavía pueden cambiar el hoyo',
-            'Almuerzo largo en el restaurante del club',
-            'Green fee incluido',
-          ],
-          price: '€595',
-          note: 'Todo incluido. Sin extras el día de la experiencia.',
-          cta: 'Consultar',
-        },
-        {
-          tier: 'Grupo de 2 a 4',
-          name: 'Un día con Andy',
-          featured: true,
-          features: [
-            'Día privado para parejas y pequeños grupos',
-            'Hasta 4 jugadores - una tarifa fija por el día de Andy',
-            'Ideal para amigos, grupos pequeños y empresa',
-            'Green fees adicionales - se confirman al hablar',
-          ],
-          price: '€1.195',
-          note: 'Tarifa fija del día de Andy para grupos de 2 a 4. Los green fees son adicionales y se confirman cuando hablamos.',
-          cta: 'Consultar',
-        },
-      ],
+      
       multiDay: {
         eyebrow: '¿Busca algo más grande?',
         title: 'Una experiencia de varios días, organizada alrededor de usted.',
@@ -1128,38 +789,7 @@ const HOME_RELOCALIZED_OVERRIDES = {
   },
   fr: {
     packages: {
-      items: [
-        {
-          tier: 'Solo',
-          name: 'Une journée avec Andy',
-          features: [
-            'Parcours choisi selon votre jeu et votre index',
-            'Heure de départ sécurisée et entièrement gérée',
-            'Plan de jeu et échauffement avant la partie',
-            '18 trous aux côtés d’Andy',
-            'Observations sur le parcours au moment où elles peuvent encore changer quelque chose',
-            'Long déjeuner au restaurant du club',
-            'Green fee inclus',
-          ],
-          price: '€595',
-          note: 'Tout compris. Rien à ajouter le jour même.',
-          cta: 'Demander',
-        },
-        {
-          tier: 'Groupe de 2 à 4',
-          name: 'Une journée avec Andy',
-          featured: true,
-          features: [
-            'Journée privée pour couples et petits groupes',
-            'Jusqu’à 4 joueurs - un tarif fixe pour la journée d’Andy',
-            'Parfait pour amis, petits groupes et entreprise',
-            'Green fees en plus - confirmés ensemble',
-          ],
-          price: '€1 195',
-          note: 'Tarif fixe pour la journée d’Andy pour les groupes de 2 à 4. Les green fees s’ajoutent et sont confirmés ensemble.',
-          cta: 'Demander',
-        },
-      ],
+      
       multiDay: {
         eyebrow: 'Vous cherchez quelque chose de plus ambitieux ?',
         title: 'Une expérience sur plusieurs jours, organisée autour de vous.',
@@ -1172,38 +802,7 @@ const HOME_RELOCALIZED_OVERRIDES = {
   },
   nl: {
     packages: {
-      items: [
-        {
-          tier: 'Solo',
-          name: 'Een dag met Andy',
-          features: [
-            'Baan gekozen op basis van uw spel en handicap',
-            'Starttijd vastgelegd en volledig geregeld',
-            'Spelplan en warming-up voor de ronde',
-            '18 holes naast Andy',
-            'Inzichten op de baan wanneer ze nog echt iets kunnen veranderen',
-            'Uitgebreide lunch in het clubrestaurant',
-            'Greenfee inbegrepen',
-          ],
-          price: '€595',
-          note: 'Alles inbegrepen. Geen extra’s op de dag zelf.',
-          cta: 'Aanvragen',
-        },
-        {
-          tier: 'Groep van 2 tot 4',
-          name: 'Een dag met Andy',
-          featured: true,
-          features: [
-            'Privédag voor tweetallen en kleine groepen',
-            'Tot 4 spelers - één vaste dagprijs voor Andy',
-            'Werkt goed voor vrienden, kleine groepen en bedrijven',
-            'Greenfees extra - bevestigd wanneer we spreken',
-          ],
-          price: '€1.195',
-          note: 'Vaste dagprijs voor Andy voor groepen van 2 tot 4. Greenfees komen erbij en worden bevestigd wanneer we spreken.',
-          cta: 'Aanvragen',
-        },
-      ],
+      
       multiDay: {
         eyebrow: 'Zoekt u iets groters?',
         title: 'Een meerdaagse ervaring, volledig om u heen opgebouwd.',
@@ -1216,38 +815,7 @@ const HOME_RELOCALIZED_OVERRIDES = {
   },
   sv: {
     packages: {
-      items: [
-        {
-          tier: 'Solo',
-          name: 'En dag med Andy',
-          features: [
-            'Bana vald efter ditt spel och handicap',
-            'Starttid säkrad och helt ordnad',
-            'Spelplan och uppvärmning före rundan',
-            '18 hål vid Andys sida',
-            'Insikter på banan när de fortfarande kan förändra hålet',
-            'Lång lunch i klubbrestaurangen',
-            'Green fee ingår',
-          ],
-          price: '€595',
-          note: 'Allt ingår. Inga tillägg på själva dagen.',
-          cta: 'Förfrågan',
-        },
-        {
-          tier: 'Grupp på 2 till 4',
-          name: 'En dag med Andy',
-          featured: true,
-          features: [
-            'Privat dag för par och små grupper',
-            'Upp till 4 spelare - ett fast dagspris för Andy',
-            'Passar vänner, små grupper och företag',
-            'Green fees tillkommer - bekräftas när vi pratar',
-          ],
-          price: '€1.195',
-          note: 'Fast dagspris för Andy för grupper på 2 till 4. Green fees tillkommer och bekräftas när vi pratar.',
-          cta: 'Förfrågan',
-        },
-      ],
+      
       multiDay: {
         eyebrow: 'Letar du efter något större?',
         title: 'En flerdagarsupplevelse, planerad runt dig.',
@@ -1260,38 +828,7 @@ const HOME_RELOCALIZED_OVERRIDES = {
   },
   zh: {
     packages: {
-      items: [
-        {
-          tier: '单人',
-          name: '与 Andy 共度一天',
-          features: [
-            '按照您的球技与差点匹配球场',
-            '开球时间已预订并安排妥当',
-            '赛前计划与热身',
-            '与 Andy 同打 18 洞',
-            '在真正还来得及改变结果的时候给出场上观察',
-            '在球场餐厅享用悠长午餐',
-            '果岭费已包含',
-          ],
-          price: '€595',
-          note: '全部包含。当天不会再有额外项目。',
-          cta: '立即咨询',
-        },
-        {
-          tier: '2 到 4 人',
-          name: '与 Andy 共度一天',
-          featured: true,
-          features: [
-            '适合双人和小团体的私人高尔夫日',
-            '最多 4 位球手 - Andy 收取固定日费',
-            '适合朋友同行、小团体和商务接待',
-            '果岭费另计 - 沟通后确认',
-          ],
-          price: '€1,195',
-          note: '2 到 4 人的小组按 Andy 的固定日费计价。果岭费另计，并在沟通后确认。',
-          cta: '立即咨询',
-        },
-      ],
+      
       multiDay: {
         eyebrow: '想要更完整的行程？',
         title: '一款围绕您定制的多日体验。',

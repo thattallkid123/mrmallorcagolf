@@ -43,15 +43,9 @@ async function main() {
     const contactContent = getContactContent(locale)
     const playMetadata = buildPlayWithAProMetadata(locale)
 
-    const homepagePackagePrices = (homeContent.packages?.items || []).map((item) => item.price).filter(Boolean)
-    assert(
-      homepagePackagePrices.includes(soloOffer.priceDisplay),
-      `Homepage packages missing solo price for locale ${locale}`,
-    )
-    assert(
-      homepagePackagePrices.includes(groupOffer.priceDisplay),
-      `Homepage packages missing group price for locale ${locale}`,
-    )
+    // Homepage packages no longer display pricing (pricing moved to /play-with-a-pro page)
+    // So we only check that packages section exists with title/intro
+    assert(homeContent.packages?.title, `Homepage packages missing title for locale ${locale}`)
 
     const playPackagePrices = (playContent.packages?.tiers || []).map((tier) => tier.price).filter(Boolean)
     assert(
@@ -87,8 +81,8 @@ async function main() {
 
   const structuredCatalog = getStructuredOfferCatalog()
   assert(structuredCatalog.length === 3, 'Structured offer catalog should expose exactly 3 offers')
-  assert(structuredCatalog[0].price === '595', 'Structured solo offer price drifted')
-  assert(structuredCatalog[1].price === '1195', 'Structured group offer price drifted')
+  assert(structuredCatalog[0].price === '495', 'Structured solo offer price drifted')
+  assert(structuredCatalog[1].price === '950', 'Structured group offer price drifted')
 
   console.log('Offer consistency checks passed.')
 }
