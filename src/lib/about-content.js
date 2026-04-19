@@ -1,5 +1,3 @@
-import { getAboutSidebarCta } from './experience-copy.js'
-
 export const ABOUT_CONTENT = {
   en: {
     locale: 'en',
@@ -365,12 +363,10 @@ const ABOUT_RELOCALIZED_STRIPS = {
 export function getAboutContent(locale = 'en') {
   const content = ABOUT_CONTENT[locale] || ABOUT_CONTENT.en
   const relocalized = ABOUT_RELOCALIZED_STRIPS[locale]
-  const sidebarCta = getAboutSidebarCta(locale)
 
   return {
     ...content,
     ...(relocalized || {}),
-    sidebarCta,
     careerStripProps: {
       ...(content.careerStripProps || {}),
       ...((relocalized && relocalized.careerStripProps) || {}),

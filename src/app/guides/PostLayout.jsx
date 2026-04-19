@@ -15,9 +15,9 @@ const SIDEBAR_COPY = {
 const UPDATED_LABELS = {
   en: 'Updated',
   de: 'Aktualisiert',
-  fr: 'Mis a jour',
+  fr: 'Mis à jour',
   es: 'Actualizado',
-  zh: 'æ›´æ–°',
+  zh: '更新',
   sv: 'Uppdaterad',
   nl: 'Bijgewerkt',
 }

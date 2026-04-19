@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { NAV_LOCALES, getLanguageSwitchPath } from '../lib/site'
+import { NAV_LOCALES, getLocaleFromPath, getLanguageSwitchPath } from '../lib/site'
 
 const LANG_CONFIG = {
   en: {
@@ -56,26 +56,6 @@ const LANG_CONFIG = {
     ],
     cta: { href: '/zh/contact', label: '联系我们' },
   },
-  sv: {
-    links: [
-      { href: '/sv', label: 'Hem' },
-      { href: '/sv/about', label: 'Om Andy' },
-      { href: '/sv/play-with-a-pro', label: 'Dagen' },
-      { href: '/sv/golf-courses', label: 'Banor' },
-      { href: '/sv/guides', label: 'Guider' },
-    ],
-    cta: { href: '/sv/contact', label: 'Kontakt' },
-  },
-  nl: {
-    links: [
-      { href: '/nl', label: 'Home' },
-      { href: '/nl/about', label: 'Over Andy' },
-      { href: '/nl/play-with-a-pro', label: 'De Dag' },
-      { href: '/nl/golf-courses', label: 'Banen' },
-      { href: '/nl/guides', label: 'Gidsen' },
-    ],
-    cta: { href: '/nl/contact', label: 'Contact' },
-  },
 }
 
 const LANG_CODES = NAV_LOCALES.map((locale) => ({
@@ -83,12 +63,6 @@ const LANG_CODES = NAV_LOCALES.map((locale) => ({
   locale,
   label: locale === 'zh' ? '中文' : locale.toUpperCase(),
 }))
-
-function getLangFromPath(pathname) {
-  if (!pathname) return 'en'
-  const seg = pathname.split('/')[1]
-  return ['de', 'fr', 'es', 'zh', 'sv', 'nl'].includes(seg) ? seg : 'en'
-}
 
 export default function Nav({ transparent = false, lang }) {
   const [scrolled, setScrolled] = useState(false)
@@ -101,7 +75,7 @@ export default function Nav({ transparent = false, lang }) {
   }, [])
 
   const resolvedPathname = pathname || '/'
-  const activeLang = lang || (mounted ? getLangFromPath(resolvedPathname) : 'en')
+  const activeLang = lang || (mounted ? getLocaleFromPath(resolvedPathname) : 'en')
   const config = LANG_CONFIG[activeLang] || LANG_CONFIG.en
   const activeLangCode = activeLang === 'en' ? 'EN' : activeLang.toUpperCase()
 

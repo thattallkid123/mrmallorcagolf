@@ -158,7 +158,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
 
       <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--linen)' }}>
         <h3 style={{ fontSize: '1rem', fontFamily: "'Cormorant Garamond',serif", color: 'var(--deep)', marginBottom: '0.5rem' }}>Or get in touch via email</h3>
-        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', lineHeight: 1.6 }}>Weekly course notes and Mallorca golf insights — straight to your inbox.</p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', lineHeight: 1.6 }}>Course notes and Mallorca golf insights every two weeks — straight to your inbox.</p>
         <BeehiivEmbed />
       </div>
     </>

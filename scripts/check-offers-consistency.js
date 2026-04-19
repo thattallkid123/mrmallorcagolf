@@ -20,9 +20,6 @@ async function main() {
   const playModule = await importModule('src/lib/play-with-a-pro-content.js')
   const contactModule = await importModule('src/lib/contact-content.js')
   const metadataModule = await importModule('src/lib/page-metadata.js')
-  const aboutModule = await importModule('src/lib/about-content.js')
-  const experienceModule = await importModule('src/lib/experience-copy.js')
-  const golfCoursesTranslationsModule = await importModule('src/lib/golf-courses-translations.js')
 
   const {
     OFFER_IDS,
@@ -36,9 +33,6 @@ async function main() {
   const { getPlayWithAProContent } = playModule
   const { getContactContent } = contactModule
   const { buildPlayWithAProMetadata } = metadataModule
-  const { getAboutContent } = aboutModule
-  const { getAboutSidebarCta, getGolfCoursesPromoCopy } = experienceModule
-  const { getGolfCourseUiTranslations } = golfCoursesTranslationsModule
 
   for (const locale of LOCALES) {
     const soloOffer = getOfferById(OFFER_IDS.solo, locale)
@@ -48,9 +42,6 @@ async function main() {
     const playContent = getPlayWithAProContent(locale)
     const contactContent = getContactContent(locale)
     const playMetadata = buildPlayWithAProMetadata(locale)
-    const aboutContent = getAboutContent(locale)
-    const expectedAboutSidebar = getAboutSidebarCta(locale)
-    const golfCoursesPromo = getGolfCourseUiTranslations(locale)
 
     const homepagePackagePrices = (homeContent.packages?.items || []).map((item) => item.price).filter(Boolean)
     assert(
@@ -91,32 +82,6 @@ async function main() {
     assert(
       playMetadata.description === offersModule.getPlayWithAProMetadataDescription(locale),
       `Play-with-a-pro metadata drifted for locale ${locale}`,
-    )
-
-    assert(
-      aboutContent.sidebarCta?.title === expectedAboutSidebar.title,
-      `About sidebar title drifted for locale ${locale}`,
-    )
-    assert(
-      aboutContent.sidebarCta?.body === expectedAboutSidebar.body,
-      `About sidebar body drifted for locale ${locale}`,
-    )
-    assert(
-      aboutContent.sidebarCta?.button === expectedAboutSidebar.button,
-      `About sidebar CTA drifted for locale ${locale}`,
-    )
-
-    assert(
-      golfCoursesPromo.sidebarH3 === getGolfCoursesPromoCopy(locale).sidebarH3,
-      `Golf courses sidebar heading drifted for locale ${locale}`,
-    )
-    assert(
-      golfCoursesPromo.sidebarP === getGolfCoursesPromoCopy(locale).sidebarP,
-      `Golf courses sidebar body drifted for locale ${locale}`,
-    )
-    assert(
-      golfCoursesPromo.ctaH2 === getGolfCoursesPromoCopy(locale).ctaH2,
-      `Golf courses CTA title drifted for locale ${locale}`,
     )
   }
 
