@@ -13,7 +13,7 @@ import { getExperienceLabel, OFFER_IDS } from '../../../lib/offers-content.js'
 const EXPERIENCE_LABELS = {
   [OFFER_IDS.solo]: getExperienceLabel(OFFER_IDS.solo),
   [OFFER_IDS.group]: getExperienceLabel(OFFER_IDS.group),
-  [OFFER_IDS.multiDay]: getExperienceLabel(OFFER_IDS.multiDay),
+  [OFFER_IDS.premium]: getExperienceLabel(OFFER_IDS.premium),
   [OFFER_IDS.undecided]: getExperienceLabel(OFFER_IDS.undecided),
 }
 

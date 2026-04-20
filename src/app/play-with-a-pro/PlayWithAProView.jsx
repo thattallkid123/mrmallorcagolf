@@ -3,6 +3,8 @@ import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
 export default function PlayWithAProView({ content, locale = 'en' }) {
+  const multiDayPackage = content.packages?.multiDay || content.packages?.premium
+
   return (
     <>
       <link rel="preload" as="image" href="/images/pwap-hero.jpg" />
@@ -164,15 +166,15 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               </div>
             ))}
           </div>
-          {content.packages.premium && (
+          {multiDayPackage && (
             <div className="reveal pwap-multiday">
-              <p className="eyebrow pwap-multiday__eyebrow">{content.packages.premium.eyebrow}</p>
-              <h3 className="serif-display pwap-multiday__title">{content.packages.premium.title}</h3>
-              <p className="pwap-multiday__body">{content.packages.premium.body}</p>
-              {content.packages.premium.detail && (
-                <p className="pwap-multiday__detail">{content.packages.premium.detail}</p>
+              <p className="eyebrow pwap-multiday__eyebrow">{multiDayPackage.eyebrow}</p>
+              <h3 className="serif-display pwap-multiday__title">{multiDayPackage.title}</h3>
+              <p className="pwap-multiday__body">{multiDayPackage.body}</p>
+              {multiDayPackage.detail && (
+                <p className="pwap-multiday__detail">{multiDayPackage.detail}</p>
               )}
-              <Link href={content.packages.premium.href} className="btn btn--gold">{content.packages.premium.button}</Link>
+              <Link href={multiDayPackage.href} className="btn btn--gold">{multiDayPackage.button}</Link>
             </div>
           )}
         </section>

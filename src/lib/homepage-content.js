@@ -170,6 +170,85 @@ export const HOME_CONTENT = {
         "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough.",
       attribution: 'Adam',
     },
+    packages: {
+      eyebrow: 'The Experience',
+      title: 'Two ways to spend the day.',
+      intro: "Both are private, arranged by me, and played on one of the island's finest courses. Solo is all inclusive. Groups of 2 to 4 pay one fixed day rate, with green fees confirmed separately.",
+      items: [
+        {
+          tier: 'Solo',
+          name: 'A Day With Andy',
+          features: [
+            'Course matched to your game and handicap',
+            'Tee time secured and fully handled',
+            'Pre-round game plan and warm-up',
+            '18 holes playing alongside Andy',
+            'On-course insight - where it can still change the hole',
+            'Long lunch at the course restaurant',
+            'Green fee included',
+          ],
+          price: 'EUR595',
+          note: 'Everything included. No additions on the day.',
+          cta: 'Enquire',
+        },
+        {
+          tier: 'Group of 2 to 4',
+          name: 'A Day With Andy',
+          featured: true,
+          features: [
+            'Private day built for pairs and small groups',
+            'Up to 4 players - one fixed day rate for Andy',
+            'Works well for pairs, small groups, corporate',
+            'Green fees additional - confirmed when we speak',
+          ],
+          price: 'EUR1,195',
+          note: "Andy's fixed day rate for groups of 2 to 4. Green fees are additional and confirmed when we speak.",
+          cta: 'Enquire',
+        },
+      ],
+      multiDay: {
+        eyebrow: 'Looking for something bigger',
+        title: 'A multi-day experience, arranged around you.',
+        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond - with private transfers, handpicked dining, and access to courses most visitors cannot book. From EUR2,000. Get in touch with your dates.',
+        cta: 'Enquire about a multi-day trip',
+      },
+    },
+    faq: {
+      eyebrow: 'Questions',
+      title: 'Things people ask before getting in touch.',
+      intro: "Tell me your dates, your handicap, and what you're looking for. I come back personally, usually sooner, always within 24 hours.",
+      items: [
+        {
+          q: 'Do I need to be a good golfer?',
+          a: 'Not at all. The experience adjusts to your game: beginners and scratch players both get something from the day. The only requirement is wanting a golf day that feels more personal than a standard tee time.',
+        },
+        {
+          q: 'Which course do you use?',
+          a: "It depends on you. Son Gual and Alcanada are my primary venues for a serious full day. For beginners, groups, or shorter rounds, there are better options, and I'll tell you honestly which one fits.",
+        },
+        {
+          q: 'How do I book?',
+          a: "Get in touch. Tell me your dates and what you're looking for, and I come back personally within 24 hours. No booking systems. No waiting.",
+        },
+        {
+          q: 'Is this suitable for a group?',
+          a: 'Yes. The experiences work for solos, pairs, groups of friends, and corporate days. The multi-day option is especially well suited to business groups and executives visiting the island.',
+        },
+        {
+          q: 'When is the best time of year to visit?',
+          a: 'For the best conditions, look at late spring and autumn peak windows. For better value, June to August and December to February are usually cheaper. The island is playable year-round, but spring and autumn are no longer the budget season.',
+        },
+      ],
+    },
+    finalCta: {
+      eyebrow: 'Ready to play Mallorca properly?',
+      title: "Get in touch. I'll sort the rest.",
+      body: "Tell me your dates, your handicap, and what you want from the day. I'll come back with a recommendation personally within 24 hours.",
+      quote: "You'll play better golf, and you'll know why.",
+      primaryCta: 'Book Your Day',
+      secondaryCta: 'WhatsApp',
+    },
+  },
 }
 
 function deepMerge(base, override) {
