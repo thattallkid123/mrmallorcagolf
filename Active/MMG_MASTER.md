@@ -111,29 +111,44 @@ Three tiers. All languages must show all three. Do not reduce to two tiers.
 
 ### Solo - A Day With Andy
 - Price: €495
-- Green fees: additional, confirmed when we speak
-- Lunch: NOT included (separate)
-- Note: "Andy's day rate. Green fees confirmed separately when we speak."
+- Note (exact): "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange."
+- Features (exact 6 bullets):
+  1. Course matched to your game and handicap
+  2. Tee time secured and fully handled
+  3. Pre-round briefing and warm-up
+  4. 18 holes with Andy
+  5. On-course coaching during the round
+  6. Post-round debrief
 
 ### Group - A Day With Andy
-- Price: €950 (Andy's fixed day rate for 2 or 3 golfers)
-- Green fees: additional, confirmed when we speak
-- Lunch: NOT included (separate)
-- Note: "Andy's fixed day rate for 2 or 3 golfers. Green fees confirmed separately when we speak."
+- Price: €950
+- Note (exact): "Andy's fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange."
+- Features (exact 6 bullets):
+  1. Up to 3 players, one fixed day rate for Andy
+  2. Course matched to your group
+  3. Tee time secured and fully handled
+  4. Pre-round briefing and warm-up
+  5. 18 holes with Andy
+  6. On-course coaching during the round
 
 ### The Signature Experience
-- Price: from €3,000
-- Green fees: INCLUDED
-- Lunch: INCLUDED (long lunch at course restaurant)
-- Private transfers: INCLUDED
-- Add-ons available: caddy, videographer, premium club hire, spa access, concierge
-- Note: "Everything included: green fees, lunch, transfers, and extras. Andy confirms the full itinerary with you in advance."
+- Price: from €3,000 (written as €3,000+)
+- Note (exact): "All inclusive. Andy confirms the full itinerary with you in advance."
+- Features (exact 7 bullets):
+  1. Course, tee time, and coaching
+  2. Michelin-starred lunch or private chef booking
+  3. A second coaching session after the round possible
+  4. Caddy and premium club hire options
+  5. Videographer to capture highlights and produce a memento video
+  6. Spa, massage, and time to decompress properly post-golf
+  7. Private transfers throughout the day
 
 ### What is NEVER included in Solo/Group
 - Green fees (always separate, always confirmed when we speak)
 - Lunch (always separate)
 - "Long lunch" is NOT a feature of Solo or Group — do not add it
-- Rental clubs, caddy, transfers (available as add-ons only, or included in Signature)
+- Transfers (Signature only)
+- Do not frame buggy/rental clubs as included — they are optional add-ons
 
 ### Multi-day
 - From €3,000. Two or three consecutive days, private transfers, handpicked dining, spa, access to restricted courses.
@@ -142,6 +157,7 @@ Important:
 - Do not revert to old pricing (€350pp, €595, €1,195, or any "all-included" Solo framing)
 - Do not list lunch as a feature of Solo or Group tiers
 - All foreign-language pages must match the English master exactly on inclusions
+- The Signature lunch is Michelin-starred or private chef — not "long lunch at club restaurant"
 
 ## Pricing Rules
 Keep these three layers separate:
