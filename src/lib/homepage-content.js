@@ -171,7 +171,54 @@ export const HOME_CONTENT = {
       attribution: 'Adam',
     },
     packages: {
+      eyebrow: 'Experiences & Packages',
       title: 'Choose Your Day',
+      body: 'All are private and hosted by me. Course, tee time, and coaching are included. Green fees and lunch are separate.',
+      items: [
+        {
+          eyebrow: 'A Day With Andy',
+          name: 'Solo',
+          features: [
+            'Course matched to your game',
+            'Tee time secured',
+            'Pre-round briefing and warm-up',
+            '18 holes with on-course coaching',
+            'Post-round debrief',
+          ],
+          note: 'Pricing available on The Day page',
+          cta: 'Enquire',
+        },
+        {
+          eyebrow: 'A Day With Andy',
+          name: 'Group',
+          features: [
+            'Up to 3 players - one fixed day rate for Andy',
+            'Course matched to your group',
+            'Tee time secured',
+            'Pre-round briefing and warm-up',
+            '18 holes with on-course coaching',
+            'Post-round debrief',
+          ],
+          note: 'Pricing available on The Day page',
+          cta: 'Enquire',
+          featured: true,
+        },
+        {
+          eyebrow: 'The Signature Experience',
+          name: 'Full Day',
+          features: [
+            'Everything arranged in advance',
+            'Course, tee time, and coaching',
+            'Caddy, videographer, or premium rentals if you want them',
+            'Michelin lunch and private transfers available',
+            'Spa access and concierge support',
+            'No decisions or logistics on the day',
+            'Andy coordinates everything and confirms itinerary with you in advance',
+          ],
+          note: 'Pricing available on The Day page',
+          cta: 'Enquire',
+        },
+      ],
       multiDay: {
         eyebrow: 'Looking for something bigger?',
         title: 'A multi-day experience, arranged around you.',
@@ -301,9 +348,54 @@ const HOME_OVERRIDES = {
     },
     packages: {
       eyebrow: 'Erlebnisse und Pakete',
-      title: 'Drei Arten, den Tag zu verbringen.',
-      intro: 'Alle drei sind privat, und alle drei begleite ich persönlich. Der Unterschied liegt darin, wie viel des Tages Sie rund um das Golf arrangiert haben möchten.',
-      items: [],
+      title: 'Wähle deinen Tag',
+      body: 'Alle drei sind privat und von mir persönlich geleitet. Platz, Abschlagszeit und Coaching sind enthalten. Greenfees und Mittagessen separat.',
+      items: [
+        {
+          eyebrow: 'Ein Tag mit Andy',
+          name: 'Solo',
+          features: [
+            'Platz auf Ihr Spiel abgestimmt',
+            'Abschlagszeit gesichert',
+            'Vorbriefing und Warm-up vor der Runde',
+            '18 Löcher mit On-Course-Coaching',
+            'Debriefing nach der Runde',
+          ],
+          note: 'Preise auf der Seite "Der Tag" verfügbar',
+          cta: 'Anfragen',
+        },
+        {
+          eyebrow: 'Ein Tag mit Andy',
+          name: 'Gruppe',
+          features: [
+            'Bis zu 3 Spieler - ein fester Tagessatz für Andy',
+            'Platz auf Ihre Gruppe abgestimmt',
+            'Abschlagszeit gesichert',
+            'Vorbriefing und Warm-up vor der Runde',
+            '18 Löcher mit On-Course-Coaching',
+            'Debriefing nach der Runde',
+          ],
+          note: 'Preise auf der Seite "Der Tag" verfügbar',
+          cta: 'Anfragen',
+          featured: true,
+        },
+        {
+          eyebrow: 'Das Signature Experience',
+          name: 'Vollständiger Tag',
+          features: [
+            'Alles im Voraus arrangiert',
+            'Platz, Abschlagszeit und Coaching',
+            'Add-ons enthalten: Caddie, Golfwagen, Schläger, Premium-Mietgeräte',
+            'Michelin-Lunch und private Transfers enthalten',
+            'Spa-Zugang und Concierge-Support',
+            'Videograf verfügbar, falls gewünscht',
+            'Keine Entscheidungen oder Logistik am Tag',
+            'Andy koordiniert alles und bestätigt das Programm im Voraus mit Ihnen',
+          ],
+          note: 'Preise auf der Seite "Der Tag" verfügbar',
+          cta: 'Anfragen',
+        },
+      ],
     },
     faq: {
       eyebrow: 'Fragen',
@@ -489,9 +581,8 @@ const HOME_OVERRIDES = {
     },
     packages: {
       eyebrow: 'Experiencias y paquetes',
-      title: 'Tres maneras de pasar el día.',
-      intro: 'Las tres opciones son privadas y las tres las llevo yo personalmente. La diferencia está en cuánto del día quiere organizar alrededor del golf.',
-      items: [],
+      title: 'Elige tu día',
+      body: 'Las tres opciones son privadas y las tres las llevo yo personalmente. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte.',
     },
     faq: {
       eyebrow: 'Preguntas',
@@ -559,9 +650,8 @@ const HOME_OVERRIDES = {
     },
     packages: {
       eyebrow: 'Expériences et forfaits',
-      title: 'Trois façons de vivre la journée.',
-      intro: 'Les trois options sont privées, et les trois sont menées par moi. La différence tient à ce que vous voulez organiser autour du golf.',
-      items: [],
+      title: 'Choisissez votre jour',
+      body: 'Les trois options sont privées, et les trois sont menées par moi. Parcours, heure de départ et coaching inclus. Droits verts et déjeuner en sus.',
     },
     faq: {
       eyebrow: 'Questions fréquentes',
@@ -607,9 +697,8 @@ const HOME_OVERRIDES = {
     },
     packages: {
       eyebrow: 'Ervaringen en pakketten',
-      title: 'Drie manieren om de dag door te brengen.',
-      intro: 'Alle drie zijn privé en alle drie worden persoonlijk door mij begeleid. Het verschil zit in hoeveel u rond het golf wilt laten regelen.',
-      items: [],
+      title: 'Kies je dag',
+      body: 'Alle drie zijn privé en alle drie worden persoonlijk door mij begeleid. Baan, startijd en coaching inbegrepen. Greenfees en lunch apart.',
     },
     faq: {
       eyebrow: 'Vragen',
@@ -655,9 +744,8 @@ const HOME_OVERRIDES = {
     },
     packages: {
       eyebrow: 'Upplevelser och paket',
-      title: 'Tre sätt att göra dagen.',
-      intro: 'Alla tre är privata och alla tre leds personligen av mig. Skillnaden ligger i hur mycket av dagen du vill bygga runt golfen.',
-      items: [],
+      title: 'Välj din dag',
+      body: 'Alla tre är privata och alla tre leds personligen av mig. Bana, startid och coaching ingår. Green fees och lunch separera.',
     },
     faq: {
       eyebrow: 'Frågor',
@@ -703,9 +791,8 @@ const HOME_OVERRIDES = {
     },
     packages: {
       eyebrow: '体验与套餐',
-      title: '三种方式度过这一天。',
-      intro: '三种方案都是私人的，也都由我亲自带。区别只在于，你希望围绕高尔夫把这一天安排到什么程度。',
-      items: [],
+      title: '选择你的那一天',
+      body: '三种方案都是私人的，也都由我亲自带。球场、发球时间和教练费用已包含。果岭费和午餐另计。',
     },
     faq: {
       eyebrow: '常见问题',

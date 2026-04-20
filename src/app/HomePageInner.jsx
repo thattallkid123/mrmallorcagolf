@@ -247,26 +247,24 @@ export default function HomePageInner({ locale = 'en' }) {
         <div className="packages__header reveal">
           <p className="eyebrow">{home.packages.eyebrow}</p>
           <h2 className="serif-display">{home.packages.title}</h2>
-          <p>{home.packages.intro}</p>
+          <p>{home.packages.body}</p>
         </div>
-        <div className="packages__grid">
+        <div className="packages__grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'clamp(20px, 3vw, 40px)', maxWidth: '1200px', margin: '0 auto' }}>
           {home.packages.items.map((pkg, index) => (
-            <div key={pkg.tier} className={`package${pkg.featured ? ' package--featured' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
-              <p className="package__tier">{pkg.tier}</p>
-              <h3 className="package__name">{pkg.name}</h3>
-              <div className="package__divider"></div>
-              <ul className="package__features">
+            <div key={pkg.name} className={`package${pkg.featured ? ' package--featured' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`} style={{ display: 'flex', flexDirection: 'column' }}>
+              <p className="eyebrow" style={{ marginBottom: '0.25rem', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--taupe)' }}>{pkg.eyebrow}</p>
+              <h3 className="package__name" style={{ fontSize: 'clamp(1.25rem, 2vw, 1.75rem)', marginBottom: '1rem', color: 'var(--deep)' }}>{pkg.name}</h3>
+              <div className="package__divider" style={{ width: '30px', height: '1px', background: 'var(--gold)', marginBottom: '1rem' }}></div>
+              <ul className="package__features" style={{ flex: 1, listStyle: 'none', padding: 0, margin: '0 0 1.5rem 0', fontSize: '0.9rem', lineHeight: 1.7, color: 'var(--deep)' }}>
                 {pkg.features.map((feature) => (
-                  <li key={feature}>{feature}</li>
+                  <li key={feature} style={{ marginBottom: '0.75rem', paddingLeft: '1.25rem', position: 'relative' }}>
+                    <span style={{ position: 'absolute', left: 0, color: 'var(--gold)', fontWeight: 'bold' }}>✓</span>
+                    {feature}
+                  </li>
                 ))}
               </ul>
-              {pkg.price && (
-                <p className="package__price" style={{ marginTop: '1.25rem', marginBottom: pkg.note ? '0.5rem' : '1.25rem', color: pkg.featured ? 'var(--gold-light)' : undefined }}>
-                  {pkg.price}
-                </p>
-              )}
-              {pkg.note && <p className={`package__note${pkg.featured ? ' package__note--featured' : ''}`}>{pkg.note}</p>}
-              <a href={playWithAProHref} className={`btn ${pkg.featured ? 'btn--gold' : 'btn--dark'}`}>
+              {pkg.note && <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', fontStyle: 'italic' }}>{pkg.note}</p>}
+              <a href={playWithAProHref} className={`btn ${pkg.featured ? 'btn--gold' : 'btn--dark'}`} style={{ marginTop: 'auto' }}>
                 {pkg.cta}
               </a>
             </div>

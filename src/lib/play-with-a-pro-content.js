@@ -117,9 +117,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           features: [
             'Everything arranged in advance',
             'Course, tee time, and coaching',
-            'Caddy, videographer, or premium rentals if you want them',
-            'Michelin lunch and private transfers available',
+            'Add-ons included: caddy, buggy hire, club hire, premium rentals',
+            'Michelin lunch and private transfers included',
             'Spa access and concierge support',
+            'Videographer available if wanted',
             'No decisions or logistics on the day',
             'Andy coordinates everything and confirms itinerary with you in advance',
           ],
