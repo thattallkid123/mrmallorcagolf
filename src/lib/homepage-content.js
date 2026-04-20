@@ -171,45 +171,11 @@ export const HOME_CONTENT = {
       attribution: 'Adam',
     },
     packages: {
-      eyebrow: 'The Experience',
-      title: 'Two ways to spend the day.',
-      intro: "Both are private, arranged by me, and played on one of the island's finest courses. Solo is all inclusive. Groups of 2 to 4 pay one fixed day rate, with green fees confirmed separately.",
-      items: [
-        {
-          tier: 'Solo',
-          name: 'A Day With Andy',
-          features: [
-            'Course matched to your game and handicap',
-            'Tee time secured and fully handled',
-            'Pre-round game plan and warm-up',
-            '18 holes playing alongside Andy',
-            'On-course insight - where it can still change the hole',
-            'Long lunch at the course restaurant',
-            'Green fee included',
-          ],
-          price: 'EUR595',
-          note: 'Everything included. No additions on the day.',
-          cta: 'Enquire',
-        },
-        {
-          tier: 'Group of 2 to 4',
-          name: 'A Day With Andy',
-          featured: true,
-          features: [
-            'Private day built for pairs and small groups',
-            'Up to 4 players - one fixed day rate for Andy',
-            'Works well for pairs, small groups, corporate',
-            'Green fees additional - confirmed when we speak',
-          ],
-          price: 'EUR1,195',
-          note: "Andy's fixed day rate for groups of 2 to 4. Green fees are additional and confirmed when we speak.",
-          cta: 'Enquire',
-        },
-      ],
+      title: 'Choose Your Day',
       multiDay: {
-        eyebrow: 'Looking for something bigger',
+        eyebrow: 'Looking for something bigger?',
         title: 'A multi-day experience, arranged around you.',
-        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond - with private transfers, handpicked dining, and access to courses most visitors cannot book. From EUR2,000. Get in touch with your dates.',
+        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond - with private transfers, handpicked dining, and access to courses most visitors cannot book. From EUR3,000+. Get in touch with your dates.',
         cta: 'Enquire about a multi-day trip',
       },
     },
@@ -772,10 +738,6 @@ const HOME_AUDIT_OVERRIDES = {
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
-    packages: {
-      title: 'Zwei Wege, den Tag zu verbringen.',
-      intro: 'Solo ab €495. Gruppen von 2 bis 4 ab €950. Greenfees zusätzlich, werden im Gespräch bestätigt.',
-    },
   },
   es: {
     intro: {
@@ -783,10 +745,6 @@ const HOME_AUDIT_OVERRIDES = {
         { value: '24', label: 'campos en la isla' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
-    },
-    packages: {
-      title: 'Dos maneras de vivir el día.',
-      intro: 'Solo desde €495. Grupos desde €950. Green fees adicionales, confirmados cuando hablemos.',
     },
   },
   fr: {
@@ -796,10 +754,6 @@ const HOME_AUDIT_OVERRIDES = {
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
-    packages: {
-      title: 'Deux façons de vivre la journée.',
-      intro: 'Solo à partir de 495 €. Groupes à partir de 950 €. Green fees supplémentaires, confirmés lors de notre conversation.',
-    },
   },
   nl: {
     intro: {
@@ -807,10 +761,6 @@ const HOME_AUDIT_OVERRIDES = {
         { value: '24', label: 'banen op het eiland' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
-    },
-    packages: {
-      title: 'Twee manieren om de dag te beleven.',
-      intro: 'Solo vanaf €495. Groepen van 2 tot 4 vanaf €950. Greenfees bijkomend, bevestigd wanneer we spreken.',
     },
   },
   sv: {
@@ -820,10 +770,6 @@ const HOME_AUDIT_OVERRIDES = {
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
-    packages: {
-      title: 'Två sätt att lägga upp dagen.',
-      intro: 'Solo från €495. Grupper på 2 till 4 från €950. Green fees tillkommer, bekräftas när vi pratar.',
-    },
   },
   zh: {
     intro: {
@@ -831,10 +777,6 @@ const HOME_AUDIT_OVERRIDES = {
         { value: '24', label: '岛上球场数量' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
-    },
-    packages: {
-      title: '两种安排这一天的方式。',
-      intro: '单人方案 €495 起。2 到 4 人的小组 €950 起。果岭费另计，沟通后确认。',
     },
   },
 }

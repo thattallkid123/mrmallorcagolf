@@ -15,13 +15,13 @@ const OFFER_CONTENT = {
     playMultiDayDetail:
       "The Full Andy Day. One day, one course, everything arranged. From €3,000. No logistics, no decisions, nothing to organise on arrival. Depending on what you want from the day, this can include a caddy, a videographer, Michelin lunch, private transfers, spa access, a premium rental set. Andy coordinates everything in advance and confirms the full itinerary with you before you arrive.",
     homeMultiDayBody:
-      'The Full Andy Day — one course, everything arranged. No logistics, no decisions, nothing to organise on arrival. From €3,000.',
+      'The Full Andy Day -one course, everything arranged. No logistics, no decisions, nothing to organise on arrival. From €3,000.',
     contactUnknown: 'Not sure yet - advise me',
     offers: {
       [OFFER_IDS.solo]: {
         shortLabel: 'Solo',
         displayName: 'A Day With Andy',
-        fullLabel: 'A Day With Andy — Solo',
+        fullLabel: 'A Day With Andy -Solo',
         priceDisplay: '€495',
         priceNumeric: '495',
         contactPrice: '€495',
@@ -30,7 +30,7 @@ const OFFER_CONTENT = {
       [OFFER_IDS.group]: {
         shortLabel: 'Group',
         displayName: 'A Day With Andy',
-        fullLabel: 'A Day With Andy — Group',
+        fullLabel: 'A Day With Andy -Group',
         priceDisplay: '€950',
         priceNumeric: '950',
         contactPrice: '€950',
@@ -53,7 +53,7 @@ const OFFER_CONTENT = {
     playMultiDayDetail:
       'Der volle Andy Tag. Ein Tag, ein Platz, alles ist arrangiert. Ab €3.000. Keine Logistik, keine Entscheidungen, nichts zum Organisieren bei der Ankunft. Je nachdem, was Sie vom Tag erwarten, kann dies einen Caddie, einen Videografen, Michelin-Lunch, private Transfers, Spa-Zugang, ein Premium-Leih-Set beinhalten. Andy koordiniert alles im Voraus und bestätigt das vollständige Programm mit Ihnen vor Ihrer Ankunft.',
     homeMultiDayBody:
-      'Der volle Andy Tag — ein Platz, alles ist arrangiert. Keine Logistik, keine Entscheidungen, nichts zum Organisieren. Ab €3.000.',
+      'Der volle Andy Tag -ein Platz, alles ist arrangiert. Keine Logistik, keine Entscheidungen, nichts zum Organisieren. Ab €3.000.',
     contactUnknown: 'Noch unsicher - beraten Sie mich',
     offers: {
       [OFFER_IDS.solo]: {
@@ -85,7 +85,7 @@ const OFFER_CONTENT = {
     playMultiDayDetail:
       'El Día Andy Completo. Un día, un campo, todo está organizado. Desde €3.000. Sin logística, sin decisiones, nada que organizar a tu llegada. Dependiendo de lo que quieras del día, esto puede incluir un caddie, un videógrafo, almuerzo Michelin, traslados privados, acceso a spa, equipo de alquiler premium. Andy coordina todo por adelantado y confirma el itinerario completo contigo antes de tu llegada.',
     homeMultiDayBody:
-      'El Día Andy Completo — un campo, todo está organizado. Sin logística, sin decisiones, nada que organizar. Desde €3.000.',
+      'El Día Andy Completo -un campo, todo está organizado. Sin logística, sin decisiones, nada que organizar. Desde €3.000.',
     contactUnknown: 'Aún no lo sé - aconséjeme',
     offers: {
       [OFFER_IDS.solo]: {
@@ -117,7 +117,7 @@ const OFFER_CONTENT = {
     playMultiDayDetail:
       'La Journee Andy Complete. Un jour, un parcours, tout est organise. A partir de 3 000 EUR. Pas de logistique, pas de decisions, rien a organiser a votre arrivee. Selon ce que vous souhaitez de cette journee, cela peut inclure un caddie, un videographe, un dejeuner Michelin, des transferts prives, acces au spa, un equipement de location premium. Andy coordonne tout a l\'avance et confirme l\'itineraire complet avec vous avant votre arrivee.',
     homeMultiDayBody:
-      'La Journee Andy Complete — un parcours, tout est organise. Pas de logistique, pas de decisions, rien a organiser. A partir de 3 000 EUR.',
+      'La Journee Andy Complete -un parcours, tout est organise. Pas de logistique, pas de decisions, rien a organiser. A partir de 3 000 EUR.',
     contactUnknown: 'Je ne suis pas encore certain(e) - conseillez-moi',
     offers: {
       [OFFER_IDS.solo]: {
@@ -149,7 +149,7 @@ const OFFER_CONTENT = {
     playMultiDayDetail:
       'De Volledige Andy Dag. Eén dag, één baan, alles is geregeld. Vanaf €3.000. Geen logistiek, geen beslissingen, niets om te organiseren bij aankomst. Afhankelijk van wat je van de dag wilt, kan dit een caddie, videograaf, Michelin-lunch, privévervoer, spavergoeging, premium verhuurapparatuur omvatten. Andy coördineert alles vooraf en bevestigt het volledige programma met je vóór je aankomst.',
     homeMultiDayBody:
-      'De Volledige Andy Dag — eén baan, alles is geregeld. Geen logistiek, geen beslissingen, niets om te organiseren. Vanaf €3.000.',
+      'De Volledige Andy Dag -eén baan, alles is geregeld. Geen logistiek, geen beslissingen, niets om te organiseren. Vanaf €3.000.',
     contactUnknown: 'Nog niet zeker - adviseer me',
     offers: {
       [OFFER_IDS.solo]: {
@@ -181,7 +181,7 @@ const OFFER_CONTENT = {
     playMultiDayDetail:
       'Den Fullständiga Andy-dagen. En dag, en bana, allt är ordnat. Från €3.000. Ingen logistik, inga beslut, inget att organisera vid ankomst. Beroende på vad du vill från dagen kan detta innefatta en caddie, en videograf, Michelin-lunch, privata transfers, spa-tillgång, premiumklubbor för uthyrning. Andy koordinerar allt på förhand och bekräftar det fullständiga programmet med dig innan du anländer.',
     homeMultiDayBody:
-      'Den Fullständiga Andy-dagen — en bana, allt är ordnat. Ingen logistik, inga beslut, inget att organisera. Från €3.000.',
+      'Den Fullständiga Andy-dagen -en bana, allt är ordnat. Ingen logistik, inga beslut, inget att organisera. Från €3.000.',
     contactUnknown: 'Inte säker ännu - ge mig råd',
     offers: {
       [OFFER_IDS.solo]: {
@@ -213,7 +213,7 @@ const OFFER_CONTENT = {
     playMultiDayDetail:
       '完整的 Andy 日：一个球场，所有安排妥当。€3,000 起。没有物流，没有决定，到达时无需组织任何事务。根据您对这一天的期望，可以包括球童、摄影师、米其林级午餐、私人接送、水疗礼遇、高级球具租赁。Andy 提前协调一切，并在您到达前与您确认完整的行程安排。',
     homeMultiDayBody:
-      '完整的 Andy 日 — 一个球场，所有安排妥当。没有物流，没有决定，无需组织。€3,000 起。',
+      '完整的 Andy 日 -一个球场，所有安排妥当。没有物流，没有决定，无需组织。€3,000 起。',
     contactUnknown: '暂时不确定 - 请给我建议',
     offers: {
       [OFFER_IDS.solo]: {
