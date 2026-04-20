@@ -107,19 +107,41 @@ Private-only material belongs in:
 - private workbook files
 
 ## Current Public Service Pricing
-Current public pricing should follow the live site.
+Three tiers. All languages must show all three. Do not reduce to two tiers.
 
-Based on the current live `/play-with-a-pro` page, use this wording unless Andy explicitly changes it:
-- `Solo - A Day With Andy - 595 EUR`
-- `Everything included. Green fee, lunch, the whole day.`
-- `Group of 2 to 4 - A Day With Andy - 1,195 EUR`
-- `Andy's fixed day rate for groups of 2 to 4. Green fees are additional and confirmed when we speak.`
+### Solo - A Day With Andy
+- Price: €495
+- Green fees: additional, confirmed when we speak
+- Lunch: NOT included (separate)
+- Note: "Andy's day rate. Green fees confirmed separately when we speak."
+
+### Group - A Day With Andy
+- Price: €950 (Andy's fixed day rate for 2 or 3 golfers)
+- Green fees: additional, confirmed when we speak
+- Lunch: NOT included (separate)
+- Note: "Andy's fixed day rate for 2 or 3 golfers. Green fees confirmed separately when we speak."
+
+### The Signature Experience
+- Price: from €3,000
+- Green fees: INCLUDED
+- Lunch: INCLUDED (long lunch at course restaurant)
+- Private transfers: INCLUDED
+- Add-ons available: caddy, videographer, premium club hire, spa access, concierge
+- Note: "Everything included: green fees, lunch, transfers, and extras. Andy confirms the full itinerary with you in advance."
+
+### What is NEVER included in Solo/Group
+- Green fees (always separate, always confirmed when we speak)
+- Lunch (always separate)
+- "Long lunch" is NOT a feature of Solo or Group — do not add it
+- Rental clubs, caddy, transfers (available as add-ons only, or included in Signature)
+
+### Multi-day
+- From €3,000. Two or three consecutive days, private transfers, handpicked dining, spa, access to restricted courses.
 
 Important:
-- this replaces the older 350 pp + green fee / From 450 pp + green fee model found in legacy docs and skills
-- do not reuse the old package pricing unless Andy explicitly brings it back
-- do not replace service pricing with course-price data from research docs
-- do not replace service pricing with courtesy / internal access notes
+- Do not revert to old pricing (€350pp, €595, €1,195, or any "all-included" Solo framing)
+- Do not list lunch as a feature of Solo or Group tiers
+- All foreign-language pages must match the English master exactly on inclusions
 
 ## Pricing Rules
 Keep these three layers separate:
