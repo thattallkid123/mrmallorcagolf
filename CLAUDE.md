@@ -9,6 +9,11 @@ Use these as the active MMG source of truth before relying on skills or older pr
 If any skill, prompt, or older file conflicts with those docs, the Active MMG docs win.
 For Mallorca course pricing, seasonality, and access facts inside the repo, also check `docs/mallorca-market-reference-2026-04.md`.
 
+## Local project path
+`C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`
+
+This overrides any other path referenced in skills or older prompts. Use this for all git and npm commands.
+
 ## Project overview
 Private golf day experiences site for Andy Griffiths, PGA Advanced Professional, based in Mallorca, Spain. Deployed on Vercel at `mrmallorcagolf.com`.
 

@@ -249,22 +249,19 @@ export default function HomePageInner({ locale = 'en' }) {
           <h2 className="serif-display">{home.packages.title}</h2>
           <p>{home.packages.body}</p>
         </div>
-        <div className="packages__grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'clamp(20px, 3vw, 40px)', maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="packages__grid" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           {home.packages.items.map((pkg, index) => (
-            <div key={pkg.name} className={`package${pkg.featured ? ' package--featured' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`} style={{ display: 'flex', flexDirection: 'column' }}>
-              <p className="eyebrow" style={{ marginBottom: '0.25rem', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--taupe)' }}>{pkg.eyebrow}</p>
-              <h3 className="package__name" style={{ fontSize: 'clamp(1.25rem, 2vw, 1.75rem)', marginBottom: '1rem', color: 'var(--deep)' }}>{pkg.name}</h3>
-              <div className="package__divider" style={{ width: '30px', height: '1px', background: 'var(--gold)', marginBottom: '1rem' }}></div>
-              <ul className="package__features" style={{ flex: 1, listStyle: 'none', padding: 0, margin: '0 0 1.5rem 0', fontSize: '0.9rem', lineHeight: 1.7, color: 'var(--deep)' }}>
+            <div key={pkg.tier} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
+              <p className="tier__name-small">{pkg.eyebrow}</p>
+              <h3 className="tier__name">{pkg.name}</h3>
+              <div className="tier__rule"></div>
+              <ul className="tier__features">
                 {pkg.features.map((feature) => (
-                  <li key={feature} style={{ marginBottom: '0.75rem', paddingLeft: '1.25rem', position: 'relative' }}>
-                    <span style={{ position: 'absolute', left: 0, color: 'var(--gold)', fontWeight: 'bold' }}>✓</span>
-                    {feature}
-                  </li>
+                  <li key={feature}>{feature}</li>
                 ))}
               </ul>
-              {pkg.note && <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', fontStyle: 'italic' }}>{pkg.note}</p>}
-              <a href={playWithAProHref} className={`btn ${pkg.featured ? 'btn--gold' : 'btn--dark'}`} style={{ marginTop: 'auto' }}>
+              {pkg.note && <p className={`tier__note${pkg.featured ? ' tier__note--feature' : ''}`}>{pkg.note}</p>}
+              <a href={playWithAProHref} className="tier__btn">
                 {pkg.cta}
               </a>
             </div>

@@ -1,0 +1,14 @@
+Mr Mallorca Golf repo rules:
+
+- Delivery standard:
+  Do the whole thing. Do it right. Do it with tests. Do it with documentation.
+  Aim for work that genuinely impresses Andy, not work that is merely passable.
+  Do not leave dangling threads, temporary workarounds, or obvious follow-up fixes when the permanent solve is within reach.
+  Search before building. Test before shipping. Prefer the finished product over a plan to maybe finish it later.
+- English is the source of truth. Non-English pages must mirror English structure and should not contain stray English fallback.
+- Mojibake is a release-blocking bug. Treat `Â`, `Ã`, broken accents, replacement diamonds, and corrupted punctuation as ship-stoppers.
+- Keep source content UTF-8. Fix corrupted source text instead of relying on render-time cleanup.
+- Before any deploy, run `npm run check:text`, `npm run check:i18n-release`, and `npm run build`.
+- If you edit localized content, verify rendered non-English pages do not contain unexpected English copy.
+- Use peak public green fee as the ranking anchor for Mallorca course pricing unless the task is explicitly about twilight, maintenance, or off-season pricing.
+- Do not reintroduce legacy Mallorca price ranges or stale package structures.
