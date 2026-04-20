@@ -14,7 +14,6 @@ const SOURCE_FILES = [
   'src/lib/golf-courses-content.js',
   'src/lib/golf-courses-translations.js',
   'src/app/HomePageInner.jsx',
-  'src/components/FillImageFrame.jsx',
 ]
 
 const IMAGE_REGEXES = [
