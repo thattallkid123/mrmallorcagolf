@@ -80,7 +80,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           eyebrow: 'A Day With Andy',
           name: 'Solo',
           price: '€495',
-          note: "Andy's day rate. Green fee and optional add-ons confirmed when we speak.",
+          note: "Andy's day rate. Green fees confirmed separately when we speak.",
           features: [
             'Course matched to your game',
             'Tee time secured',
@@ -97,7 +97,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           eyebrow: 'A Day With Andy',
           name: 'Group',
           price: '€950',
-          note: "Andy's fixed day rate for groups of 2 or 3. Green fees confirmed separately.",
+          note: "Andy's fixed day rate for 2 or 3 golfers. Green fees confirmed separately when we speak.",
           features: [
             'Up to 3 players, one fixed day rate for Andy',
             'Course matched to your group',
@@ -114,13 +114,13 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           eyebrow: 'The Signature Experience',
           name: 'Full Day',
           price: '€3,000+',
-          note: 'Everything arranged in advance. Andy coordinates the full itinerary and confirms it with you before you arrive.',
+          note: 'Green fees and lunch are separate. Rental clubs, caddy, and other extras are available as add-ons.',
           features: [
             'Course, tee time, and coaching',
-            'Caddy, videographer, or premium club hire if you want them',
+            'Andy coordinates everything and confirms the itinerary with you',
+            'Caddy, videographer, or premium club hire available as add-ons',
             'Michelin lunch and private transfers available',
             'Spa access and concierge support available',
-            'Andy coordinates everything and confirms the itinerary with you',
           ],
           button: 'Enquire →',
           href: '/contact',
@@ -130,7 +130,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       multiDay: {
         eyebrow: 'Looking for something bigger?',
         title: 'A multi-day golf journey.',
-        body: 'Two or three consecutive days across Mallorca\'s finest courses, Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, spa access, and access to members-only courses most visitors cannot book. From €3,000. Get in touch with your dates.',
+        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, spa access, additional activities. From €3,000. Get in touch with your dates.',
         button: 'Enquire about a multi-day experience →',
         href: '/contact',
       },

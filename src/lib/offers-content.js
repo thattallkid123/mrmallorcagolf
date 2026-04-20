@@ -12,10 +12,9 @@ const OFFER_CONTENT = {
       'A private golf day in Mallorca, played alongside UK PGA Advanced Professional Andy Griffiths. Solo from €495. Groups from €950. Green fees additional.',
     playHeroBody:
       'One course. A full day alongside a PGA Advanced Professional who has arranged everything. Solo from €495. Groups from €950. Green fees additional, confirmed when we speak.',
-    playMultiDayDetail:
-      "The Full Andy Day. One day, one course, everything arranged. From €3,000. No logistics, no decisions, nothing to organise on arrival. Depending on what you want from the day, this can include a caddy, a videographer, Michelin lunch, private transfers, spa access, a premium rental set. Andy coordinates everything in advance and confirms the full itinerary with you before you arrive.",
+    playMultiDayDetail: null,
     homeMultiDayBody:
-      'The Full Andy Day -one course, everything arranged. No logistics, no decisions, nothing to organise on arrival. From €3,000.',
+      'Two or three consecutive days across Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, spa access, additional activities. From €3,000. Get in touch with your dates.',
     contactUnknown: 'Not sure yet - advise me',
     offers: {
       [OFFER_IDS.solo]: {

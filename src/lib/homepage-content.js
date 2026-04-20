@@ -186,7 +186,7 @@ export const HOME_CONTENT = {
             'On-course coaching during the round',
             'Post-round debrief',
           ],
-          note: 'Green fee and optional extras confirmed when we speak.',
+          note: "Andy's day rate. Green fees confirmed separately when we speak.",
           cta: 'See pricing',
         },
         {
@@ -200,7 +200,7 @@ export const HOME_CONTENT = {
             '18 holes with Andy',
             'On-course coaching during the round',
           ],
-          note: 'Green fees confirmed separately when we speak.',
+          note: "Andy's fixed day rate for 2 or 3 golfers. Green fees confirmed separately when we speak.",
           cta: 'See pricing',
           featured: true,
         },
@@ -208,21 +208,21 @@ export const HOME_CONTENT = {
           eyebrow: 'The Signature Experience',
           name: 'Full Day',
           features: [
-            'Everything arranged in advance',
             'Course, tee time, and coaching',
-            'Caddy, videographer, or premium rentals if you want them',
+            'Andy coordinates everything and confirms the itinerary with you',
+            'Caddy, videographer, or premium club hire available as add-ons',
             'Michelin lunch and private transfers available',
-            'Andy coordinates everything and confirms itinerary with you',
+            'Spa access and concierge support available',
           ],
-          note: 'Pricing on enquiry.',
-          cta: 'See pricing',
+          note: 'Green fees and lunch are separate. Rental clubs, caddy, and other extras are available add-ons.',
+          cta: 'Enquire',
         },
       ],
       multiDay: {
         eyebrow: 'Looking for something bigger?',
-        title: 'A multi-day experience, arranged around you.',
-        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, and access to courses most visitors cannot book. From €3,000. Get in touch with your dates.',
-        cta: 'Enquire about a multi-day trip',
+        title: 'A multi-day golf journey.',
+        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, spa access, additional activities. From €3,000. Get in touch with your dates.',
+        cta: 'Enquire about a multi-day experience',
       },
     },
     faq: {
@@ -1279,7 +1279,8 @@ const HOME_PACKAGE_ITEMS = {
   en: [
     {
       tier: 'Solo',
-      name: 'A Day With Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Solo',
       features: [
         'Course matched to your game',
         'Tee time secured',
@@ -1288,12 +1289,13 @@ const HOME_PACKAGE_ITEMS = {
         'On-course coaching during the round',
         'Post-round debrief',
       ],
-      note: 'Green fee and optional extras confirmed when we speak.',
+      note: "Andy's day rate. Green fees confirmed separately when we speak.",
       cta: 'See pricing',
     },
     {
       tier: 'Group',
-      name: 'A Day With Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Group',
       featured: true,
       features: [
         'Up to 3 players, one fixed day rate for Andy',
@@ -1303,27 +1305,29 @@ const HOME_PACKAGE_ITEMS = {
         '18 holes with Andy',
         'On-course coaching during the round',
       ],
-      note: 'Green fees confirmed separately when we speak.',
+      note: "Andy's fixed day rate for 2 or 3 golfers. Green fees confirmed separately when we speak.",
       cta: 'See pricing',
     },
     {
       tier: 'The Signature Experience',
+      eyebrow: 'The Signature Experience',
       name: 'Full Day',
       features: [
-        'Everything arranged in advance',
         'Course, tee time, and coaching',
-        'Caddy, videographer, or premium rentals if you want them',
+        'Andy coordinates everything and confirms the itinerary with you',
+        'Caddy, videographer, or premium club hire available as add-ons',
         'Michelin lunch and private transfers available',
-        'Andy coordinates everything and confirms itinerary with you',
+        'Spa access and concierge support available',
       ],
-      note: 'Pricing on enquiry.',
-      cta: 'See pricing',
+      note: 'Green fees and lunch are separate. Rental clubs, caddy, and other extras are available add-ons.',
+      cta: 'Enquire',
     },
   ],
   de: [
     {
       tier: 'Solo',
-      name: 'Ein Tag mit Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Solo',
       features: [
         'Platz passend zu Ihrem Spiel',
         'Startzeit gesichert',
@@ -1337,7 +1341,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'Gruppe',
-      name: 'Ein Tag mit Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Gruppe',
       featured: true,
       features: [
         'Bis zu 3 Spieler, ein fester Tagessatz für Andy',
@@ -1352,7 +1357,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'Das Signature-Erlebnis',
-      name: 'Ganzer Tag',
+      eyebrow: 'The Signature Experience',
+      name: 'Full Day',
       features: [
         'Alles im Voraus organisiert',
         'Platz, Startzeit und Coaching',
@@ -1367,7 +1373,8 @@ const HOME_PACKAGE_ITEMS = {
   es: [
     {
       tier: 'Solo',
-      name: 'Un día con Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Solo',
       features: [
         'Campo elegido según su juego',
         'Hora de salida asegurada',
@@ -1381,7 +1388,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'Grupo',
-      name: 'Un día con Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Grupo',
       featured: true,
       features: [
         'Hasta 3 jugadores, tarifa fija por el día de Andy',
@@ -1396,7 +1404,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'La Experiencia Signature',
-      name: 'Día Completo',
+      eyebrow: 'The Signature Experience',
+      name: 'Full Day',
       features: [
         'Todo organizado de antemano',
         'Campo, hora de salida y coaching',
@@ -1411,7 +1420,8 @@ const HOME_PACKAGE_ITEMS = {
   fr: [
     {
       tier: 'Solo',
-      name: 'Une journée avec Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Solo',
       features: [
         'Parcours choisi selon votre jeu',
         'Heure de départ sécurisée',
@@ -1425,7 +1435,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'Groupe',
-      name: 'Une journée avec Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Groupe',
       featured: true,
       features: [
         'Jusqu\'à 3 joueurs, tarif fixe pour la journée d\'Andy',
@@ -1440,7 +1451,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'The Signature Experience',
-      name: 'Journée complète',
+      eyebrow: 'The Signature Experience',
+      name: 'Full Day',
       features: [
         'Tout organisé en amont',
         'Parcours, départ et coaching',
@@ -1455,7 +1467,8 @@ const HOME_PACKAGE_ITEMS = {
   nl: [
     {
       tier: 'Solo',
-      name: 'Een dag met Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Solo',
       features: [
         'Baan gekozen op basis van uw spel',
         'Starttijd vastgelegd',
@@ -1469,7 +1482,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'Groep',
-      name: 'Een dag met Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Groep',
       featured: true,
       features: [
         'Tot 3 spelers, vaste dagprijs voor Andy',
@@ -1484,7 +1498,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'The Signature Experience',
-      name: 'Volledige dag',
+      eyebrow: 'The Signature Experience',
+      name: 'Full Day',
       features: [
         'Alles vooraf geregeld',
         'Baan, starttijd en coaching',
@@ -1499,7 +1514,8 @@ const HOME_PACKAGE_ITEMS = {
   sv: [
     {
       tier: 'Solo',
-      name: 'En dag med Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Solo',
       features: [
         'Bana vald efter ditt spel',
         'Starttid säkrad',
@@ -1513,7 +1529,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'Grupp',
-      name: 'En dag med Andy',
+      eyebrow: 'A Day With Andy',
+      name: 'Grupp',
       featured: true,
       features: [
         'Upp till 3 spelare, ett fast dagspris för Andy',
@@ -1528,7 +1545,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'The Signature Experience',
-      name: 'Heldag',
+      eyebrow: 'The Signature Experience',
+      name: 'Full Day',
       features: [
         'Allt ordnat i förväg',
         'Bana, starttid och coaching',
@@ -1543,7 +1561,8 @@ const HOME_PACKAGE_ITEMS = {
   zh: [
     {
       tier: '单人',
-      name: '与 Andy 共度一天',
+      eyebrow: 'A Day With Andy',
+      name: 'Solo',
       features: [
         '根据您的球技匹配球场',
         '开球时间已预订',
@@ -1557,7 +1576,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: '小组',
-      name: '与 Andy 共度一天',
+      eyebrow: 'A Day With Andy',
+      name: 'Group',
       featured: true,
       features: [
         '最多 3 位球手，Andy 收取固定日费',
@@ -1572,7 +1592,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: 'Signature 体验',
-      name: '全天尊享',
+      eyebrow: 'The Signature Experience',
+      name: 'Full Day',
       features: [
         '所有安排提前落实',
         '球场、开球时间与指导',
