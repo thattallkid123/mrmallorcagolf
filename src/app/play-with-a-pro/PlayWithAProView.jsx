@@ -121,13 +121,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         ) : null}
 
         <section className="pwap-testimonials">
-          <div style={{ position: 'relative', height: 'clamp(320px, 50vw, 580px)', overflow: 'hidden', marginBottom: '0' }}>
+          <div style={{ position: 'relative', height: 'clamp(340px, 55vw, 620px)', overflow: 'hidden', marginBottom: '0' }}>
             <Image
-              src="/images/client-son-gual.webp"
+              src="/images/client-son-gual-banner.webp"
               alt="Andy with a client at Son Gual"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center 15%' }}
             />
           </div>
           <div className="reveal pwap-testimonials__header">
@@ -158,13 +158,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               {content.packages.body}
             </p>
           </div>
-          <div style={{ position: 'relative', height: 'clamp(240px, 32vw, 420px)', overflow: 'hidden', marginBottom: '3rem', borderRadius: 2 }}>
+          <div style={{ position: 'relative', height: 'clamp(380px, 55vw, 640px)', overflow: 'hidden', marginBottom: '3rem', borderRadius: 2 }}>
             <Image
-              src="/images/client-son-gual2.webp"
+              src="/images/client-son-gual2-banner.webp"
               alt="A group day at Son Gual"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center 75%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
             />
           </div>
           <div className="pricing-grid">

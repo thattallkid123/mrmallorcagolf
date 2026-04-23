@@ -226,7 +226,7 @@ export default function HomePageInner({ locale = 'en' }) {
                 alt="Andy with a client at Alcanada golf course"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
+                style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
               />
             </div>
           )}
