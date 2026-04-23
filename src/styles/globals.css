@@ -843,7 +843,7 @@ body {
 .who-card p { font-size: 0.88rem; color: var(--taupe); line-height: 1.75; }
 
 .pwap-testimonials { background: linear-gradient(180deg, #161512 0%, #1b1916 100%); padding: 92px 40px; }
-.pwap-testimonials__inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 480px 1fr; gap: 80px; align-items: center; }
+.pwap-testimonials__inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 480px) 1fr; gap: 64px; align-items: center; }
 .pwap-testimonials__photo img { width: 100%; height: auto; display: block; box-shadow: 0 12px 48px rgba(0,0,0,0.5); border-radius: 2px; }
 .pwap-testimonials__content { }
 .pwap-testimonials__header { text-align: left; margin-bottom: 2.5rem; }
@@ -852,7 +852,7 @@ body {
 .pwap-testimonials__grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
 
 .pwap-packages { background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,247,242,0.94)); padding: 104px 40px; }
-.pwap-packages__header { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: end; max-width: 1100px; margin: 0 auto 56px; }
+.pwap-packages__header { display: grid; grid-template-columns: 1fr 380px; gap: 64px; align-items: start; max-width: 1100px; margin: 0 auto 56px; }
 .pwap-packages__header-text { }
 .pwap-packages__intro { font-size: 1rem; color: var(--taupe); line-height: 1.8; margin-top: 1rem; margin-bottom: 0; }
 .pwap-packages__photo { border-radius: 2px; overflow: hidden; }
@@ -1505,6 +1505,8 @@ select.form-control { cursor: pointer; }
 
 @media (max-width: 1100px) {
   .winners-board { max-width: 100%; }
+  .pwap-testimonials__inner { grid-template-columns: 1fr 1fr; gap: 48px; }
+  .pwap-packages__header { grid-template-columns: 1fr 320px; gap: 48px; }
 }
 
 @media (max-width: 920px) {
