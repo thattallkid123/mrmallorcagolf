@@ -18,7 +18,7 @@ import {
 
 const SORT_UI = {
   en: {
-    controlsIntro: 'Filter by region. Each card shows peak and low green fee, par, rating, and key things to know before you play.',
+    controlsIntro: "Filter by region. Each card shows peak and low green fee, par, Andy's personal rating, and key things to know before you play.",
     dynamicKey: '* Dynamic-pricing course. We sort by peak price; low price can be seasonal, late-day, or demand-dependent.',
     sortLabel: 'Sort:',
     topRated: 'Top Rated',
@@ -29,7 +29,7 @@ const SORT_UI = {
     locating: 'Locating…',
   },
   de: {
-    controlsIntro: 'Nach Region filtern. Jede Karte zeigt Spitzen- und Niedrigpreis, Par, Bewertung und die wichtigsten Hinweise vor der Runde.',
+    controlsIntro: 'Nach Region filtern. Jede Karte zeigt Spitzen- und Niedrigpreis, Par, Andys persoenliche Bewertung und die wichtigsten Hinweise vor der Runde.',
     dynamicKey: '* Platz mit dynamischer Preisgestaltung. Wir sortieren nach Spitzenpreis; der Niedrigpreis kann saisonal, spaet am Tag oder nach Nachfrage variieren.',
     sortLabel: 'Sortierung:',
     topRated: 'Top bewertet',
@@ -38,7 +38,7 @@ const SORT_UI = {
     nearest: 'Am naechsten',
   },
   es: {
-    controlsIntro: 'Filtra por zona. Cada ficha muestra green fee pico y bajo, par, valoracion y lo mas importante antes de jugar.',
+    controlsIntro: 'Filtra por zona. Cada ficha muestra green fee pico y bajo, par, la valoracion personal de Andy y lo mas importante antes de jugar.',
     dynamicKey: '* Campo con tarifa dinamica. Ordenamos por precio maximo; el precio bajo puede depender de la temporada, la hora del dia o la demanda.',
     sortLabel: 'Ordenar:',
     topRated: 'Mejor valorados',
@@ -47,7 +47,7 @@ const SORT_UI = {
     nearest: 'Mas cercanos',
   },
   fr: {
-    controlsIntro: 'Filtrez par zone. Chaque fiche affiche le green fee maximum et bas, le par, la note et les points utiles avant de jouer.',
+    controlsIntro: "Filtrez par zone. Chaque fiche affiche le green fee maximum et bas, le par, la note personnelle d'Andy et les points utiles avant de jouer.",
     dynamicKey: '* Parcours a tarification dynamique. Le tri utilise le prix maximum; le prix bas peut varier selon la saison, l horaire ou la demande.',
     sortLabel: 'Tri :',
     topRated: 'Mieux notes',
@@ -56,7 +56,7 @@ const SORT_UI = {
     nearest: 'Les plus proches',
   },
   nl: {
-    controlsIntro: 'Filter op regio. Elke kaart toont de piek- en lage greenfee, par, waardering en de belangrijkste punten voor je speelt.',
+    controlsIntro: "Filter op regio. Elke kaart toont de piek- en lage greenfee, par, Andy's persoonlijke beoordeling en de belangrijkste punten voor je speelt.",
     dynamicKey: '* Baan met dynamische prijzen. We sorteren op piekprijs; de lage prijs kan seizoens-, laat-op-de-dag- of vraagafhankelijk zijn.',
     sortLabel: 'Sorteren:',
     topRated: 'Best beoordeeld',
@@ -65,7 +65,7 @@ const SORT_UI = {
     nearest: 'Dichtstbij',
   },
   sv: {
-    controlsIntro: 'Filtrera efter region. Varje kort visar hogsta och lagsta greenfee, par, betyg och det viktigaste att veta innan du spelar.',
+    controlsIntro: "Filtrera efter region. Varje kort visar hogsta och lagsta greenfee, par, Andy's personliga betyg och det viktigaste att veta innan du spelar.",
     dynamicKey: '* Bana med dynamisk prissattning. Vi sorterar efter hogsta pris; lagsta pris kan bero pa sasong, sen starttid eller efterfragan.',
     sortLabel: 'Sortera:',
     topRated: 'Hogst betyg',
@@ -74,13 +74,13 @@ const SORT_UI = {
     nearest: 'Narmast',
   },
   zh: {
-    controlsIntro: 'An qu yu guo lv. Mei zhang ka pian xian shi zui gao he zui di guo ling fei, par, ping fen he kai da qian yao zhi dao de yao dian.',
-    dynamicKey: '* Dong tai ding jia qiu chang. Pai xu yi zui gao jia ge wei zhun; jiao di jia ge ke neng shou ji jie, wan xie shi duan huo xu qiu ying xiang.',
-    sortLabel: 'Pai xu:',
-    topRated: 'Zui gao ping fen',
+    controlsIntro: '按地区筛选。每张卡片显示高峰和低价果岭费、标准杆、Andy 的个人评分，以及开打前需要了解的要点。',
+    dynamicKey: '* 动态定价球场。排序以高峰价格为准；低价可能因季节、晚场或需求而变化。',
+    sortLabel: '排序：',
+    topRated: '评分最高',
     az: 'A-Z',
-    price: 'Jia ge',
-    nearest: 'Zui jin',
+    price: '价格',
+    nearest: '距我最近',
   },
 }
 
