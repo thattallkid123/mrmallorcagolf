@@ -123,13 +123,15 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-testimonials">
           <div className="pwap-testimonials__inner">
             <div className="pwap-testimonials__photo reveal">
-              <Image
-                src="/images/client-son-gual-banner.webp"
-                alt="Andy with a client at Son Gual"
-                width={935}
-                height={680}
-                style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }}
-              />
+              <div className="pwap-testimonials__photo-frame">
+                <Image
+                  src="/images/client-son-gual-banner.webp"
+                  alt="Andy with a client at Son Gual"
+                  width={935}
+                  height={700}
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                />
+              </div>
             </div>
             <div className="pwap-testimonials__content">
               <div className="reveal pwap-testimonials__header">
@@ -153,25 +155,23 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         </section>
 
         <section className="pwap-packages" id="packages">
-          <div className="pwap-packages__header">
-            <div className="pwap-packages__header-text reveal">
-              <p className="eyebrow">{content.packages.eyebrow}</p>
-              <h2 className="serif-display pwap-section-title pwap-section-title--tight">
-                {content.packages.title}
-              </h2>
-              <p className="pwap-packages__intro">
-                {content.packages.body}
-              </p>
-            </div>
-            <div className="pwap-packages__photo reveal">
-              <Image
-                src="/images/client-son-gual2-banner.webp"
-                alt="A group day at Son Gual"
-                width={787}
-                height={700}
-                style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }}
-              />
-            </div>
+          <div className="pwap-packages__header reveal">
+            <p className="eyebrow">{content.packages.eyebrow}</p>
+            <h2 className="serif-display pwap-section-title pwap-section-title--tight">
+              {content.packages.title}
+            </h2>
+            <p className="pwap-packages__intro">
+              {content.packages.body}
+            </p>
+          </div>
+          <div className="pwap-packages__photo reveal">
+            <Image
+              src="/images/client-son-gual2-banner.webp"
+              alt="A group day at Son Gual"
+              width={787}
+              height={700}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }}
+            />
           </div>
           <div className="pricing-grid">
             {content.packages.tiers.map((tier) => (
