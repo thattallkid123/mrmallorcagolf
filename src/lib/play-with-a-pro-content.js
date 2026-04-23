@@ -98,7 +98,11 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           eyebrow: 'A Day With Andy',
           name: 'Group',
           price: '€950',
-          note: "Andy's fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+          noteLines: [
+            "Andy's fixed day rate for 2 or 3 golfers.",
+            "Golf course green fee and lunch are separate.",
+            "Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+          ],
           features: [
             'Up to 3 players, one fixed day rate for Andy',
             'Course matched to your group',
@@ -116,7 +120,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           name: 'Full Day',
           price: '€3,000+',
           note: 'All inclusive. Andy confirms the full itinerary with you in advance.',
-          narrative: 'Private transfer to the course. Pre-round briefing over coffee. Eighteen holes together, with a caddy carrying and coaching running throughout. Michelin-starred lunch — or a private chef if you prefer — then an afternoon at the spa. A videographer captures the day and delivers a short film you can actually watch back. By the time you leave, everything will have been handled and nothing will feel rushed.',
           features: [
             'Course, tee time, and coaching',
             'Michelin-starred lunch or private chef booking',

@@ -53,14 +53,12 @@ export const HOME_CONTENT = {
       eyebrow: 'Why Mallorca',
       title: 'European Tour-standard courses, year-round conditions, and 24 layouts most visitors never fully explore.',
       paragraphs: [
-        'Mallorca is playable every month of the year. The courses range from championship-standard Son Gual and Alcanada to scenic coastal layouts and quieter inland tracks.',
-        'Knowing which course suits your game, which tee times are worth securing, and when the conditions are right is most of the difference between a good day and a great one.',
+        'Mallorca is playable every month of the year. The courses range from championship-standard to scenic coastal layouts and quieter inland tracks.',
+        'Knowing which course suits your game, which tee times are worth it, and when the conditions are right is much of the difference between a good day and a great one.',
       ],
       stats: [
         { value: 'Jan-Dec', label: 'year-round season' },
         { value: '24', label: 'courses on the island' },
-        { value: 'DP World', label: 'Tour-standard layouts' },
-        { value: 'PGA', label: 'Advanced Professional on course' },
       ],
     },
     courses: {

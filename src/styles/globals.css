@@ -836,6 +836,7 @@ body {
 
 .pwap-who { background: linear-gradient(180deg, #f0ebe2 0%, #f7f3eb 100%); padding: 92px 40px; }
 .who-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 0; }
+.who-grid .who-card:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: 49.8%; }
 .who-card { background: rgba(255,255,255,0.88); padding: 32px 28px; border: 1px solid rgba(26,25,22,0.06); box-shadow: var(--shadow-soft); }
 .who-card__icon { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 400; color: var(--gold); display: block; margin-bottom: 12px; }
 .who-card h3 { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 500; color: var(--deep); margin-bottom: 10px; }

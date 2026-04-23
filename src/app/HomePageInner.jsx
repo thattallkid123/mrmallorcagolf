@@ -243,11 +243,11 @@ export default function HomePageInner({ locale = 'en' }) {
           ) : (
             <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3' }}>
               <Image
-                src="/images/client-alcanada.webp"
-                alt="Andy Griffiths walking the green at Alcanada"
+                src="/images/client-coaching.webp"
+                alt="Andy coaching a client on the golf course"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+                style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
               />
             </div>
           )}

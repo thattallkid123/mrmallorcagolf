@@ -62,13 +62,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
           </div>
           <div className="pwap-day__right reveal">
-            <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '3/4', marginBottom: '2rem' }}>
+            <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '2rem' }}>
               <Image
                 src="/images/client-coaching.webp"
                 alt="Andy coaching a client on the course"
                 fill
                 sizes="(max-width: 768px) 100vw, 45vw"
-                style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+                style={{ objectFit: 'cover', objectPosition: 'center 15%' }}
               />
             </div>
             <div className="included">
@@ -123,11 +123,11 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-testimonials">
           <div style={{ position: 'relative', height: 'clamp(280px, 40vw, 480px)', overflow: 'hidden', marginBottom: '0' }}>
             <Image
-              src="/images/client-swing-bw.webp"
-              alt="Golf swing in motion"
+              src="/images/client-alcanada.webp"
+              alt="Andy Griffiths on the course at Alcanada"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
             />
           </div>
           <div className="reveal pwap-testimonials__header">
@@ -164,10 +164,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 <p className="tier__name-small">{tier.eyebrow}</p>
                 <h3 className="tier__name">{tier.name}</h3>
                 <p className="tier__price">{tier.price}</p>
-                {tier.note && <p className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`}>{tier.note}</p>}
-                {tier.narrative && (
-                  <p style={{ fontSize: '0.88rem', lineHeight: 1.75, color: 'var(--taupe)', margin: '1rem 0', fontStyle: 'italic' }}>{tier.narrative}</p>
-                )}
+                {tier.noteLines ? (
+                  <div className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`} style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                    {tier.noteLines.map((line) => <span key={line}>{line}</span>)}
+                  </div>
+                ) : tier.note ? (
+                  <p className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`}>{tier.note}</p>
+                ) : null}
                 <div className="tier__rule"></div>
                 <ul className="tier__features">
                   {tier.features.map((feature) => (
