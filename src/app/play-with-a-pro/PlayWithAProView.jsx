@@ -121,30 +121,34 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         ) : null}
 
         <section className="pwap-testimonials">
-          <div style={{ position: 'relative', height: 'clamp(280px, 40vw, 480px)', overflow: 'hidden', marginBottom: '0' }}>
-            <Image
-              src="/images/client-son-gual-banner.webp"
-              alt="Andy with a client at Son Gual"
-              fill
-              sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center top' }}
-            />
-          </div>
-          <div className="reveal pwap-testimonials__header">
-            <p className="eyebrow pwap-testimonials__eyebrow">
-              {content.testimonials.eyebrow}
-            </p>
-            <h2 className="serif-display pwap-testimonials__title">
-              {content.testimonials.title}
-            </h2>
-          </div>
-          <div className="pwap-testimonials__grid">
-            {content.testimonials.items.map((item, index) => (
-              <div key={item.author} className={`testimonial reveal${index > 0 ? ` reveal-delay-${index}` : ''}`}>
-                <p>&ldquo;{item.text}&rdquo;</p>
-                <span className="testimonial__author">- {item.author}</span>
+          <div className="pwap-testimonials__inner">
+            <div className="pwap-testimonials__photo reveal">
+              <Image
+                src="/images/client-son-gual-banner.webp"
+                alt="Andy with a client at Son Gual"
+                width={935}
+                height={680}
+                style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }}
+              />
+            </div>
+            <div className="pwap-testimonials__content">
+              <div className="reveal pwap-testimonials__header">
+                <p className="eyebrow pwap-testimonials__eyebrow">
+                  {content.testimonials.eyebrow}
+                </p>
+                <h2 className="serif-display pwap-testimonials__title">
+                  {content.testimonials.title}
+                </h2>
               </div>
-            ))}
+              <div className="pwap-testimonials__grid">
+                {content.testimonials.items.map((item, index) => (
+                  <div key={item.author} className={`testimonial reveal${index > 0 ? ` reveal-delay-${index}` : ''}`}>
+                    <p>&ldquo;{item.text}&rdquo;</p>
+                    <span className="testimonial__author">- {item.author}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -158,13 +162,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               {content.packages.body}
             </p>
           </div>
-          <div style={{ position: 'relative', height: 'clamp(300px, 40vw, 500px)', overflow: 'hidden', marginBottom: '3rem', borderRadius: 2 }}>
+          <div className="pwap-packages__photo reveal">
             <Image
               src="/images/client-son-gual2-banner.webp"
               alt="A group day at Son Gual"
-              fill
-              sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center top' }}
+              width={787}
+              height={700}
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }}
             />
           </div>
           <div className="pricing-grid">
