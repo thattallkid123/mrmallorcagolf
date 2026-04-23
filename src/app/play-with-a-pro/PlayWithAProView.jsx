@@ -8,7 +8,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
 
   return (
     <>
-      <link rel="preload" as="image" href="/images/pwap-hero.jpg" />
+      <link rel="preload" as="image" href="/images/pwap-hero-client.webp" />
       <PageLayout lang={locale}>
         <RevealObserver />
 
@@ -123,11 +123,11 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-testimonials">
           <div style={{ position: 'relative', height: 'clamp(280px, 40vw, 480px)', overflow: 'hidden', marginBottom: '0' }}>
             <Image
-              src="/images/client-alcanada.webp"
-              alt="Andy Griffiths on the course at Alcanada"
+              src="/images/client-son-gual.webp"
+              alt="Andy with a client at Son Gual"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
             />
           </div>
           <div className="reveal pwap-testimonials__header">
@@ -157,6 +157,15 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <p className="pwap-packages__intro">
               {content.packages.body}
             </p>
+          </div>
+          <div style={{ position: 'relative', height: 'clamp(240px, 32vw, 420px)', overflow: 'hidden', marginBottom: '3rem', borderRadius: 2 }}>
+            <Image
+              src="/images/client-son-gual2.webp"
+              alt="A group day at Son Gual"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover', objectPosition: 'center 25%' }}
+            />
           </div>
           <div className="pricing-grid">
             {content.packages.tiers.map((tier) => (

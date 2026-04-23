@@ -102,7 +102,9 @@ export default function HomePageInner({ locale = 'en' }) {
           <h2 className="serif-display" style={{ fontSize: 'clamp(1.8rem,3vw,2.6rem)', color: '#fff', marginBottom: '1.5rem' }}>
             {home.intro.title}
           </h2>
-          <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.74)', lineHeight: 1.85 }}>{home.intro.body}</p>
+          {home.intro.paragraphs.map((p, i) => (
+            <p key={i} style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.74)', lineHeight: 1.85, marginBottom: i < home.intro.paragraphs.length - 1 ? '1.25rem' : 0 }}>{p}</p>
+          ))}
         </div>
         <div className="intro__right">
           {home.intro.stats.map((stat, index) => (
@@ -133,29 +135,6 @@ export default function HomePageInner({ locale = 'en' }) {
               <p>{step.text}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section style={{ background: 'var(--deep)', padding: 'clamp(60px,8vw,96px) clamp(20px,5vw,60px)' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 'clamp(40px,6vw,80px)', alignItems: 'center' }}>
-          <div className="reveal">
-            <p className="eyebrow" style={{ color: 'rgba(255,255,255,.35)', marginBottom: '1rem' }}>
-              {home.whyMallorca.eyebrow}
-            </p>
-            <h2 className="serif-display" style={{ color: '#fff', fontSize: 'clamp(1.5rem,4vw,2.6rem)', marginBottom: '1.5rem' }}>
-              {home.whyMallorca.title}
-            </h2>
-            <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,.76)', lineHeight: 1.85, marginBottom: '1.25rem' }}>{home.whyMallorca.paragraphs[0]}</p>
-            <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,.76)', lineHeight: 1.85 }}>{home.whyMallorca.paragraphs[1]}</p>
-          </div>
-          <div className="reveal reveal-delay-1">
-            {home.whyMallorca.stats.map((stat) => (
-              <div key={stat.label} style={{ padding: '1.5rem 0', borderBottom: '1px solid rgba(255,255,255,.08)', display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: '2.2rem', fontWeight: 500, color: 'var(--gold)', flexShrink: 0, width: 120 }}>{stat.value}</span>
-                <span style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,.78)', fontFamily: "'Jost',sans-serif", fontWeight: 300 }}>{stat.label}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -243,8 +222,8 @@ export default function HomePageInner({ locale = 'en' }) {
           ) : (
             <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3' }}>
               <Image
-                src="/images/client-coaching.webp"
-                alt="Andy coaching a client on the golf course"
+                src="/images/client-alcanada.webp"
+                alt="Andy with a client at Alcanada golf course"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
