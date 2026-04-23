@@ -131,23 +131,21 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }}
               />
             </div>
-            <div className="pwap-testimonials__content">
-              <div className="reveal pwap-testimonials__header">
-                <p className="eyebrow pwap-testimonials__eyebrow">
-                  {content.testimonials.eyebrow}
-                </p>
-                <h2 className="serif-display pwap-testimonials__title">
-                  {content.testimonials.title}
-                </h2>
-              </div>
-              <div className="pwap-testimonials__grid">
-                {content.testimonials.items.map((item, index) => (
-                  <div key={item.author} className={`testimonial reveal${index > 0 ? ` reveal-delay-${index}` : ''}`}>
-                    <p>&ldquo;{item.text}&rdquo;</p>
-                    <span className="testimonial__author">- {item.author}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="reveal pwap-testimonials__header">
+              <p className="eyebrow pwap-testimonials__eyebrow">
+                {content.testimonials.eyebrow}
+              </p>
+              <h2 className="serif-display pwap-testimonials__title">
+                {content.testimonials.title}
+              </h2>
+            </div>
+            <div className="pwap-testimonials__grid">
+              {content.testimonials.items.map((item, index) => (
+                <div key={item.author} className={`testimonial reveal${index > 0 ? ` reveal-delay-${index}` : ''}`}>
+                  <p>&ldquo;{item.text}&rdquo;</p>
+                  <span className="testimonial__author">- {item.author}</span>
+                </div>
+              ))}
             </div>
           </div>
         </section>
