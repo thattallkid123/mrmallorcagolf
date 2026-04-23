@@ -68,7 +68,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 alt="Andy coaching a client on the course"
                 fill
                 sizes="(max-width: 768px) 100vw, 45vw"
-                style={{ objectFit: 'cover', objectPosition: 'center 15%' }}
+                style={{ objectFit: 'cover', objectPosition: 'center center' }}
               />
             </div>
             <div className="included">
@@ -121,13 +121,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         ) : null}
 
         <section className="pwap-testimonials">
-          <div style={{ position: 'relative', height: 'clamp(340px, 55vw, 620px)', overflow: 'hidden', marginBottom: '0' }}>
+          <div style={{ position: 'relative', height: 'clamp(280px, 40vw, 480px)', overflow: 'hidden', marginBottom: '0' }}>
             <Image
               src="/images/client-son-gual-banner.webp"
               alt="Andy with a client at Son Gual"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center 15%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center top' }}
             />
           </div>
           <div className="reveal pwap-testimonials__header">
@@ -158,13 +158,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               {content.packages.body}
             </p>
           </div>
-          <div style={{ position: 'relative', height: 'clamp(380px, 55vw, 640px)', overflow: 'hidden', marginBottom: '3rem', borderRadius: 2 }}>
+          <div style={{ position: 'relative', height: 'clamp(300px, 40vw, 500px)', overflow: 'hidden', marginBottom: '3rem', borderRadius: 2 }}>
             <Image
               src="/images/client-son-gual2-banner.webp"
               alt="A group day at Son Gual"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center top' }}
             />
           </div>
           <div className="pricing-grid">
