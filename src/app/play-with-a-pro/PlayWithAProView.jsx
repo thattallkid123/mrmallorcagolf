@@ -121,13 +121,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         ) : null}
 
         <section className="pwap-testimonials">
-          <div style={{ position: 'relative', height: 'clamp(280px, 40vw, 480px)', overflow: 'hidden', marginBottom: '0' }}>
+          <div style={{ position: 'relative', height: 'clamp(320px, 50vw, 580px)', overflow: 'hidden', marginBottom: '0' }}>
             <Image
               src="/images/client-son-gual.webp"
               alt="Andy with a client at Son Gual"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
             />
           </div>
           <div className="reveal pwap-testimonials__header">
@@ -164,7 +164,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               alt="A group day at Son Gual"
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover', objectPosition: 'center 25%' }}
+              style={{ objectFit: 'cover', objectPosition: 'center 75%' }}
             />
           </div>
           <div className="pricing-grid">
