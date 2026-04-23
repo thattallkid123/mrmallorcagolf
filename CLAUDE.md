@@ -1,13 +1,27 @@
 # Mr Mallorca Golf - Claude Code Context
 
-## Always-read MMG docs
-Use these as the active MMG source of truth before relying on skills or older prompts:
+## MMG source of truth
+All brand, content, and pricing files live in:
+`C:\Users\andyg\Documents\Mr Mallorca Golf` (Google Drive synced)
 
-- `Active/MMG_MASTER.md`
-- `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`
+Key files to upload when working on content or copy:
+- `Active/MMG_MASTER.md` — brand, tone, credentials, service pricing
+- `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md` — writing guardrails
+- `Reference/MMG_COURSE_MARKET_REFERENCE_2026.md` — course green fees and market info
 
-If any skill, prompt, or older file conflicts with those docs, the Active MMG docs win.
-For Mallorca course pricing, seasonality, and access facts inside the repo, also check `docs/mallorca-market-reference-2026-04.md`.
+Do not use brand/content files from inside this repo — they are stale copies.
+If any file in this repo conflicts with the Documents folder, the Documents folder wins.
+
+## docs/ folder (synced reference files)
+`docs/` contains copies of operational files from `Documents/Active/`.
+These are readable during coding sessions without needing the Documents folder connected.
+Source of truth is always Documents. To sync after an update, ask Claude to "sync docs".
+Current files: `docs/MMG_BEEHIIV_SETUP.md`, `docs/MMG_CONTACTS_PUBLIC.xlsx`
+
+## Contacts & courtesy split
+Two files exist — keep them separate:
+- `Documents/Active/MMG_CONTACTS_PUBLIC.xlsx` — green fees, websites, public info only. Safe for content work and Claude.ai project upload.
+- `Documents/Private/Workbooks/MMG_CONTACTS_PRIVATE.xlsx` — contact names, emails, courtesy terms. NEVER reference in public content. Share rows in chat only when needed for outreach/booking tasks.
 
 ## Local project path
 `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`

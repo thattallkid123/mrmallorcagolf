@@ -26,6 +26,12 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         <p>{content.form.intro}</p>
       </div>
 
+      <div style={{ background: 'var(--cream)', borderRadius: 2, padding: '1.25rem 1.5rem', marginBottom: '2rem', borderLeft: '3px solid var(--gold)' }}>
+        <p style={{ fontSize: '0.85rem', color: 'var(--deep)', lineHeight: 1.7, margin: 0 }}>
+          <strong>Buying this as a gift?</strong> Let me know in the message below and I&apos;ll prepare a certificate and keep the day details private until you&apos;re ready to share them.
+        </p>
+      </div>
+
       <form onSubmit={handleSubmit} aria-busy={submitting}>
         <input
           type="text"
@@ -153,6 +159,13 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           </button>
           {error && <p className="form-error" role="alert">{error}</p>}
           <p className="form-note">{content.form.note}</p>
+        </div>
+
+        <div style={{ marginTop: '1.5rem', padding: '1.25rem 1.5rem', background: 'var(--cream)', borderRadius: 2 }}>
+          <p style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.04em', textTransform: 'uppercase' }}>What happens next</p>
+          <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', lineHeight: 1.7, margin: 0 }}>
+            I read every enquiry personally. You&apos;ll hear from me within 24 hours with a course recommendation and next steps — usually sooner. If you prefer to talk directly, WhatsApp is the fastest route.
+          </p>
         </div>
       </form>
 

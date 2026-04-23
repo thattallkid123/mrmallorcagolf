@@ -76,8 +76,12 @@ export default function HomePageInner({ locale = 'en' }) {
             {home.hero.titleLines[0]}
             <br />
             {home.hero.titleLines[1]}
-            <br />
-            <em style={{ fontStyle: 'italic', fontWeight: 400, opacity: 0.85 }}>{home.hero.emphasis}</em>
+            {home.hero.emphasis ? (
+              <>
+                <br />
+                <em style={{ fontStyle: 'italic', fontWeight: 400, opacity: 0.85 }}>{home.hero.emphasis}</em>
+              </>
+            ) : null}
           </h1>
           <div className="hero__actions">
             <a href={contactHref} className="btn btn--gold">
@@ -216,32 +220,39 @@ export default function HomePageInner({ locale = 'en' }) {
           {home.experience.paragraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-          <a href={playWithAProHref} className="btn btn--dark">
-            {home.experience.button}
-          </a>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+            <a href={playWithAProHref} className="btn btn--dark">
+              {home.experience.button}
+            </a>
+            <a href={contactHref} className="btn btn--gold">
+              Tell Me Your Dates
+            </a>
+          </div>
         </div>
         <div className="what__right reveal reveal-delay-1">
-          {home.experience.features.map((feature, index) => (
-            <div key={feature.title} className="what__feature">
-              <div className="what__feature-icon">{[FEATURE_ICONS.arranged, FEATURE_ICONS.coaching, FEATURE_ICONS.private, FEATURE_ICONS.access][index]}</div>
-              <div className="what__feature-text">
-                <h3>{feature.title}</h3>
-                <p>{feature.text}</p>
+          {home.experience.features && home.experience.features.length > 0 ? (
+            home.experience.features.map((feature, index) => (
+              <div key={feature.title} className="what__feature">
+                <div className="what__feature-icon">{[FEATURE_ICONS.arranged, FEATURE_ICONS.coaching, FEATURE_ICONS.private, FEATURE_ICONS.access][index]}</div>
+                <div className="what__feature-text">
+                  <h3>{feature.title}</h3>
+                  <p>{feature.text}</p>
+                </div>
               </div>
+            ))
+          ) : (
+            <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3' }}>
+              <Image
+                src="/images/client-alcanada.webp"
+                alt="Andy Griffiths walking the green at Alcanada"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+              />
             </div>
-          ))}
+          )}
         </div>
       </section>
-
-      <section style={{ background: 'var(--pine)', padding: 'clamp(48px,6vw,72px) clamp(20px,5vw,60px)' }}>
-        <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.3rem,2.5vw,1.9rem)', fontStyle: 'italic', fontWeight: 400, color: '#fff', lineHeight: 1.45, marginBottom: '1.25rem' }}>
-            &ldquo;{home.quote.text}&rdquo;
-          </p>
-          <p style={{ fontSize: '9px', letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--gold-light)', fontFamily: "'Jost',sans-serif" }}>- {home.quote.attribution}</p>
-        </div>
-      </section>
-
 
       <section className="packages">
         <div className="packages__header reveal">
@@ -251,9 +262,10 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="packages__grid" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           {home.packages.items.map((pkg, index) => (
-            <div key={pkg.tier} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
+            <div key={pkg.name} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
               <p className="tier__name-small">{pkg.eyebrow}</p>
               <h3 className="tier__name">{pkg.name}</h3>
+              {pkg.price && <p className="tier__price">{pkg.price}</p>}
               <div className="tier__rule"></div>
               <ul className="tier__features">
                 {pkg.features.map((feature) => (
@@ -261,7 +273,7 @@ export default function HomePageInner({ locale = 'en' }) {
                 ))}
               </ul>
               {pkg.note && <p className={`tier__note${pkg.featured ? ' tier__note--feature' : ''}`}>{pkg.note}</p>}
-              <a href={playWithAProHref} className="tier__btn">
+              <a href={pkg.href || contactHref} className="tier__btn">
                 {pkg.cta}
               </a>
             </div>
@@ -275,6 +287,16 @@ export default function HomePageInner({ locale = 'en' }) {
             <a href={contactHref} className="btn btn--gold">{multiDayPackage.cta}</a>
           </div>
         )}
+      </section>
+
+      {/* Jo's quote — social proof after packages, before final CTA */}
+      <section style={{ background: 'var(--pine)', padding: 'clamp(48px,6vw,72px) clamp(20px,5vw,60px)' }}>
+        <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.3rem,2.5vw,1.9rem)', fontStyle: 'italic', fontWeight: 400, color: '#fff', lineHeight: 1.45, marginBottom: '1.25rem' }}>
+            &ldquo;{home.quote.text}&rdquo;
+          </p>
+          <p style={{ fontSize: '9px', letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--gold-light)', fontFamily: "'Jost',sans-serif" }}>- {home.quote.attribution}</p>
+        </div>
       </section>
 
       <section className="faq">
@@ -305,7 +327,7 @@ export default function HomePageInner({ locale = 'en' }) {
           <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '1rem' }}>THE NEWSLETTER</p>
           <h2 className="serif-display" style={{ fontSize: 'clamp(1.5rem,3vw,2.2rem)', color: 'var(--deep)', marginBottom: '1rem' }}>Golf insights delivered.</h2>
           <p style={{ fontSize: '0.95rem', color: 'var(--taupe)', lineHeight: 1.8, marginBottom: '2.5rem' }}>
-            Every two weeks I write up what I find playing the island. Course conditions, which courses pair well together, when to come, where to stay, and a few things worth doing when you put the clubs down.
+            Course conditions updated as I play them. Which tee times are worth fighting for, where the greens are running fast, and what&apos;s worth knowing before you fly. Sent every two weeks, unsubscribe whenever.
           </p>
           <BeehiivEmbed />
         </div>

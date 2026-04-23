@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
@@ -58,17 +59,18 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
-            <a href="/questionnaire.html" target="_blank" rel="noopener" className="pwap-questionnaire">
-              <p className="pwap-questionnaire__eyebrow">
-                {content.day.questionnaireEyebrow}
-              </p>
-              <p className="pwap-questionnaire__title">
-                {content.day.questionnaireTitle}
-              </p>
-              <p className="pwap-questionnaire__body">{content.day.questionnaireBody}</p>
-            </a>
+            {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
           </div>
           <div className="pwap-day__right reveal">
+            <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '3/4', marginBottom: '2rem' }}>
+              <Image
+                src="/images/client-coaching.webp"
+                alt="Andy coaching a client on the course"
+                fill
+                sizes="(max-width: 768px) 100vw, 45vw"
+                style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+              />
+            </div>
             <div className="included">
               <h3>{content.included.title}</h3>
               <ul className="included-list">
@@ -119,6 +121,15 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         ) : null}
 
         <section className="pwap-testimonials">
+          <div style={{ position: 'relative', height: 'clamp(280px, 40vw, 480px)', overflow: 'hidden', marginBottom: '0' }}>
+            <Image
+              src="/images/client-swing-bw.webp"
+              alt="Golf swing in motion"
+              fill
+              sizes="100vw"
+              style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+            />
+          </div>
           <div className="reveal pwap-testimonials__header">
             <p className="eyebrow pwap-testimonials__eyebrow">
               {content.testimonials.eyebrow}
@@ -154,6 +165,9 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 <h3 className="tier__name">{tier.name}</h3>
                 <p className="tier__price">{tier.price}</p>
                 {tier.note && <p className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`}>{tier.note}</p>}
+                {tier.narrative && (
+                  <p style={{ fontSize: '0.88rem', lineHeight: 1.75, color: 'var(--taupe)', margin: '1rem 0', fontStyle: 'italic' }}>{tier.narrative}</p>
+                )}
                 <div className="tier__rule"></div>
                 <ul className="tier__features">
                   {tier.features.map((feature) => (
@@ -194,9 +208,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <Link href={content.finalCta.secondaryHref} className="btn btn--outline-white">
               {content.finalCta.secondaryCta}
             </Link>
-            <a href="/questionnaire.html" target="_blank" rel="noopener" className="cta-final__aux">
-              {content.finalCta.tertiaryCta}
-            </a>
+            {/* Questionnaire link moved to booking confirmation only */}
           </div>
         </section>
       </PageLayout>
