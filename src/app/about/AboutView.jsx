@@ -75,12 +75,11 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
                 src="/images/about-andy-colour.jpg"
                 alt={content.imageAlt}
                 width={600}
-                height={420}
+                height={900}
                 style={{
                   width: '100%',
-                  height: '420px',
+                  height: 'auto',
                   objectFit: 'cover',
-                  objectPosition: 'center 12%',
                   display: 'block',
                 }}
               />
@@ -163,7 +162,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             <p>{content.finalCta.body}</p>
           </div>
           <div className="cta-final__right reveal">
-            <Link href={content.finalCta.primaryHref} className="btn btn--gold" style={{ fontSize: 10, padding: '14px 36px' }}>
+            <Link href={content.finalCta.primaryHref} className="btn btn--gold">
               {content.finalCta.primaryCta}
             </Link>
             <Link href={content.finalCta.secondaryHref} className="btn btn--outline-white">
