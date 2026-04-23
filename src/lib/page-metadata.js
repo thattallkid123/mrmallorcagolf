@@ -3,39 +3,39 @@ import { getPlayWithAProMetadataDescription } from './offers-content.js'
 
 const HOME_METADATA = {
   en: {
-    title: "Mr Mallorca Golf - Play Mallorca's Best Courses with a PGA Professional",
+    title: 'Golf Days in Mallorca | Mr Mallorca Golf',
     description:
-      'Private golf experiences in Mallorca with a PGA Advanced Professional. Full days on Son Gual, Alcanada, and more - on-course coaching, everything arranged.',
+      'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play Son Gual, Alcanada and more, with every detail arranged.',
   },
   de: {
-    title: 'Mr Mallorca Golf - Mallorcas beste Golfplaetze mit einem PGA Professional',
+    title: 'Golf in Mallorca mit PGA Pro | Mr Mallorca Golf',
     description:
-      'Private Golferlebnisse auf Mallorca mit einem PGA Advanced Professional. Ganztagige Runden auf Son Gual, Alcanada und mehr - Coaching auf dem Platz, alles arrangiert.',
+      'Private Golftage auf Mallorca mit PGA Advanced Professional Andy Griffiths. Spielen Sie Son Gual, Alcanada und mehr - alles ist arrangiert.',
   },
   es: {
-    title: 'Mr Mallorca Golf - Juegue los mejores campos de Mallorca con un PGA Professional',
+    title: 'Golf en Mallorca con PGA Pro | Mr Mallorca Golf',
     description:
-      'Experiencias privadas de golf en Mallorca con un PGA Advanced Professional. Dias completos en Son Gual, Alcanada y mas - coaching en el campo, todo organizado.',
+      'Dias privados de golf en Mallorca con Andy Griffiths, PGA Advanced Professional. Juegue Son Gual, Alcanada y mas, con todo organizado.',
   },
   fr: {
-    title: 'Mr Mallorca Golf - Les meilleurs parcours de Majorque avec un PGA Professional',
+    title: 'Golf a Majorque avec PGA Pro | Mr Mallorca Golf',
     description:
-      'Experiences golf privees a Majorque avec un PGA Advanced Professional. Journees completes a Son Gual, Alcanada et plus - coaching sur parcours, tout organise.',
+      'Journees golf privees a Majorque avec Andy Griffiths, PGA Advanced Professional. Jouez Son Gual, Alcanada et plus, avec tous les details organises.',
   },
   nl: {
-    title: 'Mr Mallorca Golf - Speel de beste banen van Mallorca met een PGA Professional',
+    title: 'Golf op Mallorca met PGA Pro | Mr Mallorca Golf',
     description:
-      'Prive golfervaringen op Mallorca met een PGA Advanced Professional. Volledige dagen op Son Gual, Alcanada en meer - coaching op de baan, alles geregeld.',
+      'Prive golfdagen op Mallorca met Andy Griffiths, PGA Advanced Professional. Speel Son Gual, Alcanada en meer, met alles geregeld.',
   },
   sv: {
-    title: 'Mr Mallorca Golf - Spela Mallorcas besta banor med en PGA Professional',
+    title: 'Golf pa Mallorca med PGA-proffs | Mr Mallorca Golf',
     description:
-      'Privata golfupplevelser pa Mallorca med en PGA Advanced Professional. Heldagar pa Son Gual, Alcanada och mer - coaching pa banan, allt ordnat.',
+      'Privata golfdagar pa Mallorca med Andy Griffiths, PGA Advanced Professional. Spela Son Gual, Alcanada och mer, med allt ordnat.',
   },
   zh: {
-    title: 'Mr Mallorca Golf - Yu PGA Professional tong chang ti yan Mallorca zui hao qiu chang',
+    title: 'Mallorca Golf with a PGA Pro | Mr Mallorca Golf',
     description:
-      'Zai Mallorca yu PGA Advanced Professional yi qi tiyan siren gaoerfu xingcheng. Son Gual, Alcanada deng quanri anpai - changshang zhidao, yiqie anpai tuo dang.',
+      'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play top courses with every detail arranged.',
   },
 }
 
@@ -359,7 +359,6 @@ export function buildGuidePostMetadata({
   publishedTime = '2026-03-01',
 }) {
   const pathname = locale === 'en' ? `/guides/${slug}` : `/${locale}/guides/${slug}`
-  const canonicalPath = `/guides/${slug}`
   const imageUrl = imagePath.startsWith('http') ? imagePath : `${SITE_ORIGIN}${imagePath}`
 
   const metadata = {
@@ -382,17 +381,7 @@ export function buildGuidePostMetadata({
     },
   }
 
-  const builtMetadata = buildPageMetadata(pathname, locale, metadata)
-
-  // For non-English locales, override canonical to point to English version
-  if (locale !== 'en') {
-    builtMetadata.alternates = {
-      ...builtMetadata.alternates,
-      canonical: `${SITE_ORIGIN}${canonicalPath}`,
-    }
-  }
-
-  return builtMetadata
+  return buildPageMetadata(pathname, locale, metadata)
 }
 
 export function buildAboutMetadata(locale = 'en') {

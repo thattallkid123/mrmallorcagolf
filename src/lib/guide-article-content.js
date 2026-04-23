@@ -1,4 +1,4 @@
-import { SITE_ORIGIN } from './site'
+import { SITE_ORIGIN, buildLocalePath, getHreflangCode } from './site'
 import { getLocalizedGuideArticleContent } from './guide-article-content-localized.js'
 
 export const GUIDE_ARTICLE_CONTENT = {
@@ -1107,11 +1107,11 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
   const content = getGuideArticleContent(slug, locale)
   if (!content) return {}
 
-  const canonical = `${SITE_ORIGIN}${locale === 'en' ? '' : `/${locale}`}/guides/${slug}`
+  const canonical = `${SITE_ORIGIN}${buildLocalePath(`/guides/${slug}`, locale)}`
   const languages = Object.fromEntries(
     GUIDE_ARTICLE_LOCALES.map((lang) => [
-      lang,
-      `${SITE_ORIGIN}${lang === 'en' ? '' : `/${lang}`}/guides/${slug}`,
+      getHreflangCode(lang),
+      `${SITE_ORIGIN}${buildLocalePath(`/guides/${slug}`, lang)}`,
     ])
   )
   const imageUrl = content.metadata.image?.replace('https://mrmallorcagolf.com', SITE_ORIGIN)

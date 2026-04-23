@@ -62,7 +62,7 @@ export default function HomePageInner({ locale = 'en' }) {
         <div className="hero__media" aria-hidden="true">
           <Image
             src="/images/hero-main.webp"
-            alt=""
+            alt="Golf day in Mallorca with PGA Advanced Professional Andy Griffiths"
             fill
             priority
             sizes="100vw"

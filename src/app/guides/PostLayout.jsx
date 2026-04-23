@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { getGuidePath, isPublishedGuideSlug } from '../../lib/site'
 
 const SIDEBAR_COPY = {
@@ -21,9 +20,20 @@ const UPDATED_LABELS = {
   nl: 'Bijgewerkt',
 }
 
+const COURSES_CTA = {
+  en: 'Browse all courses',
+  de: 'Alle Plätze ansehen',
+  fr: 'Voir tous les parcours',
+  es: 'Ver todos los campos',
+  zh: '查看全部球场',
+  sv: 'Se alla banor',
+  nl: 'Bekijk alle banen',
+}
+
 export default function PostLayout({ children, meta, lang }) {
   const l = lang || meta.lang || 'en'
   const c = SIDEBAR_COPY[l] || SIDEBAR_COPY.en
+  const coursesCta = COURSES_CTA[l] || COURSES_CTA.en
   const updatedLabel = UPDATED_LABELS[l] || UPDATED_LABELS.en
   const pre = l === 'en' ? '' : `/${l}`
   const relatedGuides = meta.related.filter((guide) => isPublishedGuideSlug(guide.slug))
@@ -58,6 +68,7 @@ export default function PostLayout({ children, meta, lang }) {
             <h3>{c.guidesTitle}</h3>
             <p>{c.guidesBody}</p>
             <a href={`${pre}/play-with-a-pro`} className="btn btn--gold post-sidebar__cta">{c.guidesPrimaryCta} &rarr;</a>
+            <a href={`${pre}/golf-courses`} className="btn btn--outline-white post-sidebar__cta">{coursesCta} &rarr;</a>
             <a href={`${pre}/contact`} className="btn btn--dark post-sidebar__cta post-sidebar__cta--secondary">{c.guidesSecondaryCta} &rarr;</a>
           </div>
 

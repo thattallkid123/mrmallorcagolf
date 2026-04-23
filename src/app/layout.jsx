@@ -29,23 +29,23 @@ export const metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
     template: '%s | Mr Mallorca Golf',
-    default: "Mr Mallorca Golf - Play Mallorca's Best Courses with a PGA Professional",
+    default: 'Golf Days in Mallorca | Mr Mallorca Golf',
   },
-  description: 'Private golf experiences in Mallorca with a PGA Advanced Professional. Full days on Son Gual, Alcanada, and more - on-course coaching, everything arranged.',
+  description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play Son Gual, Alcanada and more, with every detail arranged.',
   keywords: ['golf Mallorca', 'Mallorca golf courses', 'play golf Mallorca', 'PGA professional Mallorca', 'Son Gual golf', 'Alcanada golf', 'Majorca golf', 'golf holiday Mallorca', 'on-course coaching Mallorca', 'golf concierge Mallorca'],
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: SITE_ORIGIN,
     siteName: 'Mr Mallorca Golf',
-    title: "Mr Mallorca Golf - Play Mallorca's Best Courses with a PGA Professional",
-    description: 'Private golf experiences in Mallorca with a PGA Advanced Professional. Full days on Son Gual, Alcanada, and more.',
+    title: 'Golf Days in Mallorca | Mr Mallorca Golf',
+    description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play Son Gual, Alcanada and more, with every detail arranged.',
     images: [{ url: `${SITE_ORIGIN}/images/hero-main.webp`, width: 1600, height: 660 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Mr Mallorca Golf - Play Mallorca's Best Courses with a PGA Professional",
-    description: 'Private golf experiences in Mallorca with a PGA Advanced Professional.',
+    title: 'Golf Days in Mallorca | Mr Mallorca Golf',
+    description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths.',
     images: [`${SITE_ORIGIN}/images/hero-main.webp`],
   },
   robots: {
@@ -71,6 +71,7 @@ const PERSON_SCHEMA = {
   url: `${SITE_ORIGIN}/about`,
   sameAs: [
     'https://www.instagram.com/mrmallorcagolf',
+    'https://www.linkedin.com/in/andygriffithsgolf',
   ],
   knowsAbout: ['Golf coaching', 'On-course coaching', 'Mallorca golf courses', 'Course management', 'Golf trip planning'],
   hasCredential: [
@@ -89,6 +90,10 @@ const LOCAL_BUSINESS_SCHEMA = {
   email: 'andy@mrmallorcagolf.com',
   telephone: '+34624466702',
   image: `${SITE_ORIGIN}/logo-dark-green.png`,
+  sameAs: [
+    'https://www.instagram.com/mrmallorcagolf',
+    'https://www.linkedin.com/in/andygriffithsgolf',
+  ],
   logo: {
     '@type': 'ImageObject',
     url: `${SITE_ORIGIN}/logo-dark-green.png`,
@@ -181,7 +186,6 @@ export default function RootLayout({ children }) {
         {/* Schema Markup */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
         <DocumentLanguage />

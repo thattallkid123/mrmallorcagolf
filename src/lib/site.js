@@ -3,12 +3,14 @@ export const SITE_ORIGIN = 'https://www.mrmallorcagolf.com'
 export const ALL_LOCALES = ['en', 'es', 'de', 'fr', 'nl', 'sv', 'zh']
 export const NAV_LOCALES = ['en', 'es', 'de', 'fr', 'zh']
 export const LOCALE_PREFIXES = ALL_LOCALES.filter((locale) => locale !== 'en')
+const HREFLANG_CODES = {
+  zh: 'zh-Hans',
+}
 
 const SHARED_BASE_PATHS = new Set([
   '/',
   '/about',
   '/play-with-a-pro',
-  '/coaching',
   '/golf-courses',
   '/contact',
   '/guides',
@@ -66,6 +68,14 @@ export function buildLocalePath(basePath = '/', locale = 'en') {
   }
 
   return normalizedBasePath === '/' ? `/${locale}` : `/${locale}${normalizedBasePath}`
+}
+
+export function getHreflangCode(locale = 'en') {
+  return HREFLANG_CODES[locale] || locale
+}
+
+export function getDocumentLanguage(locale = 'en') {
+  return getHreflangCode(locale)
 }
 
 export function isGuidePath(basePath = '/') {
@@ -160,7 +170,7 @@ export function getAlternates(pathname = '/') {
 
   for (const candidate of ALL_LOCALES) {
     if (hasLocaleRoute(basePath, candidate)) {
-      languages[candidate] = `${SITE_ORIGIN}${buildLocalePath(basePath, candidate)}`
+      languages[getHreflangCode(candidate)] = `${SITE_ORIGIN}${buildLocalePath(basePath, candidate)}`
     }
   }
 
@@ -193,9 +203,11 @@ export function getSitemapPaths() {
     }
   }
 
-  // Article/guide posts: English ONLY (non-English versions point to English canonical)
+  // Article/guide posts: include ALL locales (published in all languages)
   for (const slug of ARTICLE_SLUGS) {
-    paths.push(`/guides/${slug}`)
+    for (const locale of ALL_LOCALES) {
+      paths.push(buildLocalePath(`/guides/${slug}`, locale))
+    }
   }
 
   return [...new Set(paths)]

@@ -1,2 +1,2 @@
-import { redirect } from 'next/navigation'
-export default function CoachingRedirect() { redirect('/nl/play-with-a-pro') }
+import { permanentRedirect } from 'next/navigation'
+export default function CoachingRedirect() { permanentRedirect('/nl/play-with-a-pro') }

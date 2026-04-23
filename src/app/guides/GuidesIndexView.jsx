@@ -2,6 +2,16 @@ import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
+const HERO_ACTIONS = {
+  en: { courses: 'View All Courses', experience: 'See the Experience' },
+  de: { courses: 'Alle Plaetze', experience: 'Erlebnis ansehen' },
+  es: { courses: 'Ver todos los campos', experience: 'Ver la experiencia' },
+  fr: { courses: 'Voir tous les parcours', experience: "Voir l'experience" },
+  nl: { courses: 'Bekijk alle banen', experience: 'Bekijk de ervaring' },
+  sv: { courses: 'Se alla banor', experience: 'Se upplevelsen' },
+  zh: { courses: '查看全部球场', experience: '查看体验' },
+}
+
 function getLocalePrefix(locale) {
   return locale === 'en' ? '' : `/${locale}`
 }
@@ -9,6 +19,7 @@ function getLocalePrefix(locale) {
 export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const prefix = getLocalePrefix(locale)
   const pageLayoutLang = pageLang || locale
+  const heroActions = HERO_ACTIONS[locale] || HERO_ACTIONS.en
 
   return (
     <PageLayout lang={pageLayoutLang}>
@@ -42,6 +53,14 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
             <span className="page-hero__tag">{content.hero.tags[0]}</span>
             <span className="page-hero__tag page-hero__tag--gold">{content.hero.tags[1]}</span>
             <span className="page-hero__tag">{content.hero.tags[2]}</span>
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.75rem' }}>
+            <Link href={`${prefix}/golf-courses`} className="btn btn--dark">
+              {heroActions.courses}
+            </Link>
+            <Link href={`${prefix}/play-with-a-pro`} className="btn btn--gold">
+              {heroActions.experience}
+            </Link>
           </div>
         </div>
       </header>
