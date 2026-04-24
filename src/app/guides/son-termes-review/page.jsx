@@ -68,8 +68,8 @@ export default function Post() {
 
         <PostImage
           src="/images/son-termes-blog/st-6.jpg"
-          alt="Son Termes golf course Mallorca fairway bunker and Na Burguesa mountains"
-          caption="Fairway bunker and the Na Burguesa mountains. The course opens up on the back nine but the bunkers stay relevant throughout."
+          alt="Son Termes golf course Mallorca Na Burguesa mountains"
+          caption="The course opens up on the back nine and view of the Na Burguesa mountains."
         />
 
         <h2>Some Holes Worth Mentioning</h2>
