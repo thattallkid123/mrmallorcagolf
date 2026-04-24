@@ -40,13 +40,13 @@ export const metadata = {
     siteName: 'Mr Mallorca Golf',
     title: 'Golf Days in Mallorca | Mr Mallorca Golf',
     description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play Son Gual, Alcanada and more, with every detail arranged.',
-    images: [{ url: `${SITE_ORIGIN}/images/hero-main.webp`, width: 1600, height: 660 }],
+    images: [{ url: `${SITE_ORIGIN}/images/hero-main.jpg`, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Golf Days in Mallorca | Mr Mallorca Golf',
     description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths.',
-    images: [`${SITE_ORIGIN}/images/hero-main.webp`],
+    images: [`${SITE_ORIGIN}/images/hero-main.jpg`],
   },
   robots: {
     index: true,
