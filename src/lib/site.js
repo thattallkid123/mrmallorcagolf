@@ -23,11 +23,10 @@ export const REVIEW_POST_SLUGS = new Set([
   'son-gual-review',
   'alcanada-review',
   'santa-ponsa-1-review',
-])
-
-export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
   'son-termes-review',
 ])
+
+export const EN_ONLY_REVIEW_POST_SLUGS = new Set([])
 
 export const ARTICLE_SLUGS = new Set([
   'a-day-at-son-gual',

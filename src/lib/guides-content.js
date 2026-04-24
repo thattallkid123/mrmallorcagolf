@@ -181,6 +181,15 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Acceso público',
       },
       {
+        slug: 'son-termes-review',
+        badge: 'Reseña de campo',
+        title: 'Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)',
+        intro:
+          'Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.',
+        readTime: '5 min de lectura',
+        keywords: 'Montaña · Par 72 · EUR 110 aprox. · 20 min desde Palma',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'La experiencia',
         title: 'Un día en Son Gual con un Profesional PGA',
@@ -302,6 +311,15 @@ export const GUIDES_CONTENT = {
           'Einer der längsten Plätze Europas, echte European-Tour-Geschichte und ein Platz, der das Vertrauen mit dem Driver wirklich zurückgibt.',
         readTime: '6 Min.',
         keywords: 'Championship · Par 72 · €75-125 · Öffentlicher Zugang',
+      },
+      {
+        slug: 'son-termes-review',
+        badge: 'Platz-Bewertung',
+        title: 'Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)',
+        intro:
+          'Bergblicke über Palma, engere Abschlagslinien als man erwartet und eines der eigenständigsten Layouts der Insel in dieser Preisklasse.',
+        readTime: '5 Min. Lesezeit',
+        keywords: 'Bergplatz · Par 72 · ca. EUR 110 · 20 Min. von Palma',
       },
       {
         slug: 'a-day-at-son-gual',
@@ -427,6 +445,15 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Accès public',
       },
       {
+        slug: 'son-termes-review',
+        badge: 'Test de parcours',
+        title: 'Son Termes Golf, Majorque : avis honnête d’un professionnel PGA (2026)',
+        intro:
+          'Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu’elles n’en ont l’air et l’un des tracés les plus singuliers de l’île à ce niveau de prix.',
+        readTime: '5 min de lecture',
+        keywords: 'Montagne · Par 72 · env. EUR 110 · 20 min de Palma',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: "L'expérience",
         title: 'Une journée à Son Gual avec un Professionnel PGA',
@@ -548,6 +575,15 @@ export const GUIDES_CONTENT = {
           'Een van de langste banen in Europa, echte European-Tour-geschiedenis en een baan die je vertrouwen met de driver echt teruggeeft.',
         readTime: '6 min',
         keywords: 'Championship · Par 72 · €75-125 · Toegankelijk voor bezoekers',
+      },
+      {
+        slug: 'son-termes-review',
+        badge: 'Baanreview',
+        title: 'Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)',
+        intro:
+          'Bergzichten boven Palma, strakkere drivinglijnen dan je verwacht en een van de meest karaktervolle layouts op het eiland in deze prijsklasse.',
+        readTime: '5 min leestijd',
+        keywords: 'Bergbaan · Par 72 · circa EUR 110 · 20 min van Palma',
       },
       {
         slug: 'a-day-at-son-gual',
@@ -673,6 +709,15 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Öppen för besökare',
       },
       {
+        slug: 'son-termes-review',
+        badge: 'Banrecension',
+        title: 'Son Termes Golf, Mallorca: en ärlig recension av en PGA-proffs (2026)',
+        intro:
+          'Bergsvyer ovanför Palma, tajtare utslagslinjer än man tror och en av öns mest personliga banlayouter i den här prisklassen.',
+        readTime: '5 min läsning',
+        keywords: 'Bergsbana · Par 72 · cirka EUR 110 · 20 min från Palma',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'Upplevelsen',
         title: 'En dag på Son Gual med en PGA-professionell',
@@ -794,6 +839,15 @@ export const GUIDES_CONTENT = {
           '欧洲最长的球场之一，拥有真正的 European Tour 历史，也是真正能帮球手找回一号木信心的球场。',
         readTime: '6分钟',
         keywords: '锦标赛级 · 标准杆72 · €75-125 · 对外开放',
+      },
+      {
+        slug: 'son-termes-review',
+        badge: '球场评测',
+        title: '马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）',
+        intro:
+          '帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。',
+        readTime: '5分钟',
+        keywords: '山地球场 · 标准杆72 · 约 EUR 110 · 距帕尔马20分钟',
       },
       {
         slug: 'a-day-at-son-gual',
