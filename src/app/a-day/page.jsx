@@ -1,11 +1,79 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import { getOfferById, OFFER_IDS } from '../../lib/offers-content.js'
+import { SITE_ORIGIN } from '../../lib/site.js'
 
 export const metadata = {
   title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
   description:
     "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks. From the drive up to the last green.",
+  alternates: {
+    canonical: `${SITE_ORIGIN}/a-day`,
+  },
+  openGraph: {
+    type: 'article',
+    url: `${SITE_ORIGIN}/a-day`,
+    title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
+    description:
+      "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks. From the drive up to the last green.",
+    images: [{ url: `${SITE_ORIGIN}/images/hero-main.webp`, width: 1600, height: 660 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
+    description:
+      "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks.",
+    images: [`${SITE_ORIGIN}/images/hero-main.webp`],
+  },
+}
+
+function JsonLd({ data }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+}
+
+function buildArticleSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'A Day at Son Gual with Andy',
+    description: "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks.",
+    author: {
+      '@type': 'Person',
+      name: 'Andy Griffiths',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Mr Mallorca Golf',
+      url: SITE_ORIGIN,
+    },
+    mainEntityOfPage: `${SITE_ORIGIN}/a-day`,
+    image: `${SITE_ORIGIN}/images/hero-main.webp`,
+    about: [
+      { '@type': 'Thing', name: 'Son Gual Golf Club' },
+      { '@type': 'Thing', name: 'Private golf days in Mallorca' },
+    ],
+  }
+}
+
+function buildBreadcrumbSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_ORIGIN,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'A Day at Son Gual',
+        item: `${SITE_ORIGIN}/a-day`,
+      },
+    ],
+  }
 }
 
 export default function ADayPage() {
@@ -14,6 +82,8 @@ export default function ADayPage() {
 
   return (
     <PageLayout>
+      <JsonLd data={buildArticleSchema()} />
+      <JsonLd data={buildBreadcrumbSchema()} />
       {/* HERO */}
       <section className="hero a-day-hero">
         <div className="hero__content">
@@ -27,6 +97,14 @@ export default function ADayPage() {
             What actually happens from the drive up to the last green — and what most people take
             home that they didn't expect.
           </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.5rem' }}>
+            <Link href="/play-with-a-pro" className="btn btn--gold">
+              See pricing
+            </Link>
+            <Link href="/guides/son-gual-review" className="btn btn--outline-white">
+              Read the Son Gual review
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -201,6 +279,11 @@ export default function ADayPage() {
               </p>
             </div>
           ))}
+        </div>
+        <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+          <Link href="/golf-courses" className="btn btn--dark">
+            Browse all Mallorca courses
+          </Link>
         </div>
       </div>
 
