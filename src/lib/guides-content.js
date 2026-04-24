@@ -48,6 +48,15 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Public access',
       },
       {
+        slug: 'son-termes-review',
+        badge: 'Course Review',
+        title: "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
+        intro:
+          'Mountain views above Palma, tighter driving lines than people expect, and one of the most distinctive layouts at this price point on the island.',
+        readTime: '5 min read',
+        keywords: 'Mountain course - Par 70 - EUR 85-110 - 20 min from Palma',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'The Experience',
         title: 'A Day at Son Gual with a PGA Professional',

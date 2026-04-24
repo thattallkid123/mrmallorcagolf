@@ -1,4 +1,5 @@
 import { GOLF_COURSE_DATA } from './golf-courses-data.js'
+import { getGuidePath } from './site.js'
 
 export const SHORT_TO_ID = {
   'Son Gual': 'golf-son-gual',
@@ -34,6 +35,7 @@ export const COURSE_DESTINATIONS = {
   'Son Gual': { type: 'review', slug: 'son-gual-review' },
   Alcanada: { type: 'review', slug: 'alcanada-review' },
   'Santa Ponsa 1': { type: 'review', slug: 'santa-ponsa-1-review' },
+  'Son Termes': { type: 'review', slug: 'son-termes-review' },
   'Son Muntaner': { type: 'guide', id: 'son-muntaner' },
   'Golf de Andratx': { type: 'guide', id: 'golf-de-andratx' },
 }
@@ -71,8 +73,7 @@ export function getCourseDestination(name, locale = 'en') {
   if (!destination) return null
 
   if (destination.type === 'review') {
-    const path = `/guides/${destination.slug}`
-    return locale === 'en' ? path : `/${locale}${path}`
+    return getGuidePath(destination.slug, locale)
   }
 
   if (destination.type === 'guide') {

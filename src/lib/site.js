@@ -25,6 +25,10 @@ export const REVIEW_POST_SLUGS = new Set([
   'santa-ponsa-1-review',
 ])
 
+export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
+  'son-termes-review',
+])
+
 export const ARTICLE_SLUGS = new Set([
   'a-day-at-son-gual',
   'best-golf-courses-mallorca',
@@ -97,7 +101,7 @@ export function isDraftGuideSlug(slug) {
 }
 
 export function isReviewPostSlug(slug) {
-  return REVIEW_POST_SLUGS.has(slug)
+  return REVIEW_POST_SLUGS.has(slug) || EN_ONLY_REVIEW_POST_SLUGS.has(slug)
 }
 
 export function isArticleSlug(slug) {
@@ -122,7 +126,8 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
   if (!basePath.startsWith('/guides/')) return false
 
   const slug = getGuideSlug(basePath)
-  if (isReviewPostSlug(slug)) return true
+  if (REVIEW_POST_SLUGS.has(slug)) return true
+  if (EN_ONLY_REVIEW_POST_SLUGS.has(slug)) return locale === 'en'
   if (isArticleSlug(slug)) return ALL_LOCALES.includes(locale)
 
   return false
@@ -201,6 +206,11 @@ export function getSitemapPaths() {
     for (const locale of ALL_LOCALES) {
       paths.push(buildLocalePath(`/guides/${slug}`, locale))
     }
+  }
+
+  // English-only review posts
+  for (const slug of EN_ONLY_REVIEW_POST_SLUGS) {
+    paths.push(buildLocalePath(`/guides/${slug}`, 'en'))
   }
 
   // Article/guide posts: include ALL locales (published in all languages)
