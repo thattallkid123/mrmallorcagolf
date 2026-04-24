@@ -2,14 +2,126 @@ import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
+import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
+
+const PAGE_LINKS = {
+  en: {
+    courses: 'See all Mallorca courses',
+    sonGual: 'Read the Son Gual review',
+    alcanada: 'Read the Alcanada review',
+  },
+  de: {
+    courses: 'Alle Golfplaetze ansehen',
+    sonGual: 'Son Gual Bewertung lesen',
+    alcanada: 'Alcanada Bewertung lesen',
+  },
+  es: {
+    courses: 'Ver todos los campos',
+    sonGual: 'Leer analisis de Son Gual',
+    alcanada: 'Leer analisis de Alcanada',
+  },
+  fr: {
+    courses: 'Voir tous les parcours',
+    sonGual: 'Lire lavis Son Gual',
+    alcanada: 'Lire lavis Alcanada',
+  },
+  nl: {
+    courses: 'Bekijk alle banen',
+    sonGual: 'Lees de Son Gual review',
+    alcanada: 'Lees de Alcanada review',
+  },
+  sv: {
+    courses: 'Se alla banor',
+    sonGual: 'Las Son Gual-omdomet',
+    alcanada: 'Las Alcanada-omdomet',
+  },
+  zh: {
+    courses: '查看全部球场',
+    sonGual: '阅读 Son Gual 评测',
+    alcanada: '阅读 Alcanada 评测',
+  },
+}
+
+function JsonLd({ data }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+}
+
+function buildPlayWithAProSchema(locale, content) {
+  const pagePath = buildLocalePath('/play-with-a-pro', locale)
+  const contactPath = buildLocalePath('/contact', locale)
+  const golfCoursesPath = buildLocalePath('/golf-courses', locale)
+  const serviceName = locale === 'en' ? 'Private Golf Days in Mallorca' : content.hero.title
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: serviceName,
+    description: content.hero.body,
+    url: `${SITE_ORIGIN}${pagePath}`,
+    provider: {
+      '@type': 'Organization',
+      name: 'Mr Mallorca Golf',
+      url: SITE_ORIGIN,
+    },
+    areaServed: {
+      '@type': 'Place',
+      name: 'Mallorca, Spain',
+    },
+    serviceType: 'Private golf day',
+    offers: {
+      '@type': 'AggregateOffer',
+      lowPrice: 495,
+      highPrice: 3000,
+      priceCurrency: 'EUR',
+      url: `${SITE_ORIGIN}${contactPath}`,
+    },
+    isRelatedTo: [
+      { '@type': 'WebPage', url: `${SITE_ORIGIN}${golfCoursesPath}` },
+      { '@type': 'WebPage', url: `${SITE_ORIGIN}${buildLocalePath('/guides/son-gual-review', locale)}` },
+      { '@type': 'WebPage', url: `${SITE_ORIGIN}${buildLocalePath('/guides/alcanada-review', locale)}` },
+    ],
+  }
+}
+
+function buildBreadcrumbSchema(locale) {
+  const homePath = buildLocalePath('/', locale)
+  const playPath = buildLocalePath('/play-with-a-pro', locale)
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${SITE_ORIGIN}${homePath}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Play with a Pro',
+        item: `${SITE_ORIGIN}${playPath}`,
+      },
+    ],
+  }
+}
 
 export default function PlayWithAProView({ content, locale = 'en' }) {
   const multiDayPackage = content.packages?.multiDay || content.packages?.premium
+  const links = PAGE_LINKS[locale] || PAGE_LINKS.en
+  const reviewLinks = {
+    courses: buildLocalePath('/golf-courses', locale),
+    sonGual: buildLocalePath('/guides/son-gual-review', locale),
+    alcanada: buildLocalePath('/guides/alcanada-review', locale),
+  }
 
   return (
     <>
       <link rel="preload" as="image" href="/images/pwap-hero-client.webp" />
       <PageLayout lang={locale}>
+        <JsonLd data={buildPlayWithAProSchema(locale, content)} />
+        <JsonLd data={buildBreadcrumbSchema(locale)} />
         <RevealObserver />
 
         <section className="pwap-hero pwap-hero--tall">
@@ -97,6 +209,11 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               {content.courses.title}
             </h2>
             <p className="pwap-courses__body">{content.courses.body}</p>
+            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+              <Link href={reviewLinks.courses} className="btn btn--dark">{links.courses}</Link>
+              <Link href={reviewLinks.sonGual} className="btn btn--outline-white">{links.sonGual}</Link>
+              <Link href={reviewLinks.alcanada} className="btn btn--outline-white">{links.alcanada}</Link>
+            </div>
           </div>
         </section>
 

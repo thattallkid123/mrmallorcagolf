@@ -2,6 +2,73 @@ import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import GolfCoursesClient from './GolfCoursesClient'
+import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
+
+function JsonLd({ data }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+}
+
+function buildGolfCoursesSchema(locale, content) {
+  const pagePath = buildLocalePath('/golf-courses', locale)
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: content.hero.title,
+    description: content.ui?.intro1 || content.hero.title,
+    url: `${SITE_ORIGIN}${pagePath}`,
+    about: {
+      '@type': 'Thing',
+      name: 'Golf courses in Mallorca',
+    },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      numberOfItems: 24,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Son Gual',
+          url: `${SITE_ORIGIN}${buildLocalePath('/guides/son-gual-review', locale)}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Alcanada',
+          url: `${SITE_ORIGIN}${buildLocalePath('/guides/alcanada-review', locale)}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Son Muntaner',
+          url: `${SITE_ORIGIN}${pagePath}#son-muntaner`,
+        },
+      ],
+    },
+  }
+}
+
+function buildBreadcrumbSchema(locale) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${SITE_ORIGIN}${buildLocalePath('/', locale)}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Golf Courses',
+        item: `${SITE_ORIGIN}${buildLocalePath('/golf-courses', locale)}`,
+      },
+    ],
+  }
+}
 
 function joinHref(locale, path) {
   if (locale === 'en') return path
@@ -13,6 +80,8 @@ export default function GolfCoursesView({ locale = 'en', content }) {
     <>
       <link rel="preload" as="image" href="/images/golf-courses.webp" />
       <PageLayout lang={locale === 'en' ? undefined : locale}>
+        <JsonLd data={buildGolfCoursesSchema(locale, content)} />
+        <JsonLd data={buildBreadcrumbSchema(locale)} />
         <RevealObserver />
 
         <header

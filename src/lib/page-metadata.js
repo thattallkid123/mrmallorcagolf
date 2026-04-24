@@ -327,10 +327,30 @@ const LEGAL_METADATA = {
 
 export function buildPageMetadata(pathname, locale, overrides = {}) {
   const alternates = getAlternates(pathname)
+  const title = typeof overrides.title === 'string' ? overrides.title : undefined
+  const description = typeof overrides.description === 'string' ? overrides.description : undefined
+  const pageUrl = `${SITE_ORIGIN}${pathname}`
+  const openGraph = overrides.openGraph || (title || description
+    ? {
+        type: 'website',
+        url: pageUrl,
+        ...(title ? { title } : {}),
+        ...(description ? { description } : {}),
+      }
+    : undefined)
+  const twitter = overrides.twitter || (title || description
+    ? {
+        card: 'summary_large_image',
+        ...(title ? { title } : {}),
+        ...(description ? { description } : {}),
+      }
+    : undefined)
 
   return {
     ...overrides,
     alternates,
+    ...(openGraph ? { openGraph } : {}),
+    ...(twitter ? { twitter } : {}),
   }
 }
 

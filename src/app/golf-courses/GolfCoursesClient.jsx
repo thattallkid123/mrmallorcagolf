@@ -84,6 +84,51 @@ const SORT_UI = {
   },
 }
 
+const SIDEBAR_LINKS = {
+  en: {
+    title: 'Plan your Mallorca golf trip',
+    guides: 'Read all guides',
+    ranking: 'Best golf courses ranking',
+    planning: 'Trip planning guide',
+  },
+  de: {
+    title: 'Mallorca-Golfreise planen',
+    guides: 'Alle Ratgeber lesen',
+    ranking: 'Ranking der besten Plaetze',
+    planning: 'Reiseplanungs-Ratgeber',
+  },
+  es: {
+    title: 'Planifique su viaje de golf',
+    guides: 'Leer todas las guias',
+    ranking: 'Ranking de mejores campos',
+    planning: 'Guia para planificar el viaje',
+  },
+  fr: {
+    title: 'Planifier votre sejour golf',
+    guides: 'Lire tous les guides',
+    ranking: 'Classement des meilleurs parcours',
+    planning: 'Guide de planification',
+  },
+  nl: {
+    title: 'Plan uw golfreis naar Mallorca',
+    guides: 'Lees alle gidsen',
+    ranking: 'Ranking beste banen',
+    planning: 'Reisplanningsgids',
+  },
+  sv: {
+    title: 'Planera din golfresa till Mallorca',
+    guides: 'Las alla guider',
+    ranking: 'Ranking over basta banor',
+    planning: 'Guide for reseplanering',
+  },
+  zh: {
+    title: '规划您的马略卡高尔夫之旅',
+    guides: '阅读全部指南',
+    ranking: '最佳球场排名',
+    planning: '行程规划指南',
+  },
+}
+
 const DISPLAY_TEXT_REPLACEMENTS = []
 
 const COURSE_GEO_META = {
@@ -578,6 +623,10 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   const [isLocating, setIsLocating] = useState(false)
   const contactHref = buildLocalePath('/contact', lang)
   const experiencesHref = buildLocalePath('/play-with-a-pro', lang)
+  const guidesHref = buildLocalePath('/guides', lang)
+  const bestCoursesGuideHref = buildLocalePath('/guides/best-golf-courses-mallorca', lang)
+  const tripPlanningGuideHref = buildLocalePath('/guides/golf-trip-planning-mallorca', lang)
+  const sidebarLinks = SIDEBAR_LINKS[lang] || SIDEBAR_LINKS.en
 
   useEffect(() => {
     const scrollToHash = () => {
@@ -821,6 +870,14 @@ export default function GolfCoursesClient({ lang = 'en' }) {
             <h3>{t.sidebarH3}</h3>
             <p>{t.sidebarP}</p>
             <Link href={contactHref} className="sidebar-btn">{t.sidebarBtn}</Link>
+          </div>
+          <div className="sidebar-card">
+            <h3>{sidebarLinks.title}</h3>
+            <ul className="sidebar-quick">
+              <li><Link href={guidesHref} className="sidebar-quick__link">{sidebarLinks.guides}</Link></li>
+              <li><Link href={bestCoursesGuideHref} className="sidebar-quick__link">{sidebarLinks.ranking}</Link></li>
+              <li><Link href={tripPlanningGuideHref} className="sidebar-quick__link">{sidebarLinks.planning}</Link></li>
+            </ul>
           </div>
           <div className="sidebar-card sidebar-card--cream">
             <h3 className="sidebar-card__title-sm">{t.quickPicksTitle}</h3>

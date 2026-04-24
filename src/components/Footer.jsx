@@ -145,6 +145,7 @@ export default function Footer({ lang }) {
       <div className="footer__col">
         <h3>{copy.guide}</h3>
         <ul>
+          <li><Link href={`${prefix}/guides`}>{copy.guide}</Link></li>
           <li><Link href={`${prefix}/golf-courses`}>{copy.allCourses}</Link></li>
           <li><Link href={`${prefix}/golf-courses#son-gual`}>Son Gual</Link></li>
           <li><Link href={`${prefix}/golf-courses#alcanada`}>Alcanada</Link></li>
