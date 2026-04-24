@@ -7,7 +7,6 @@ export const metadata = buildContactMetadata('zh')
 export default function Contact_ZH() {
   return (
     <PageLayout lang="zh" navTransparent={false}>
-      <link rel="preload" as="image" href="/images/contact.webp" />
       <ContactForm locale="zh" />
     </PageLayout>
   )

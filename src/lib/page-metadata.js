@@ -117,9 +117,9 @@ const GUIDES_INDEX_METADATA = {
 
 const ABOUT_METADATA = {
   en: {
-    title: 'About Andy Griffiths - PGA Professional, Mallorca',
+    title: 'About Andy Griffiths | PGA Advanced Professional in Mallorca',
     description:
-      'Andy Griffiths is a UK PGA Advanced Professional based in Mallorca. Formerly Pebble Beach, Evian, 11 years coaching in China.',
+      'Meet Andy Griffiths, the PGA Advanced Professional behind Mr Mallorca Golf, with experience from Pebble Beach, Evian, and eleven years coaching in China.',
   },
   de: {
     title: 'Uber Andy Griffiths - PGA Professional, Mallorca',
@@ -193,7 +193,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Play With a Pro - Private Golf Days in Mallorca',
+    title: 'Private Golf Days in Mallorca | Play with a Pro',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {
@@ -224,9 +224,9 @@ const PLAY_WITH_A_PRO_METADATA = {
 
 const CONTACT_METADATA = {
   en: {
-    title: 'Contact - Mr Mallorca Golf | Andy Griffiths PGA Professional',
+    title: 'Enquire About a Private Golf Day in Mallorca | Mr Mallorca Golf',
     description:
-      'Get in touch to arrange a private golf day in Mallorca. PGA Advanced Professional Andy Griffiths responds personally within 24 hours.',
+      'Enquire about a private golf day in Mallorca with Andy Griffiths. Every enquiry is answered personally, usually within a few hours and always within 24.',
   },
   de: {
     title: 'Kontakt - Mr Mallorca Golf | Andy Griffiths UK PGA Professional',
