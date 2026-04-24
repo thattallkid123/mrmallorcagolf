@@ -67,6 +67,28 @@ function getImagePresentation(block, imageOrdinal) {
 function renderBlock(block, index, imageOrdinal) {
   if (block.type === 'image') {
     const presentation = getImagePresentation(block, imageOrdinal)
+
+    // 'natural' presentation: image displays at its own aspect ratio, no cropping
+    if (presentation === 'natural') {
+      return (
+        <figure
+          key={`${block.src}-${index}`}
+          className={`post-media${block.caption ? '' : ' post-media--plain'}`}
+        >
+          <Image
+            src={block.src}
+            alt={block.alt}
+            width={block.naturalWidth || 1200}
+            height={block.naturalHeight || 900}
+            priority={block.priority}
+            sizes="(max-width: 768px) 100vw, 720px"
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+          />
+          {block.caption ? <figcaption className="post-media__caption">{block.caption}</figcaption> : null}
+        </figure>
+      )
+    }
+
     return (
       <figure
         key={`${block.src}-${index}`}
