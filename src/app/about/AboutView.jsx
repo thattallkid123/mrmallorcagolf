@@ -4,17 +4,107 @@ import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import CareerStrip from '../../components/CareerStrip'
 import { getHomeContent } from '../../lib/homepage-content'
+import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
+
+const ABOUT_PAGE_LINKS = {
+  en: {
+    play: 'See the private golf day',
+    courses: 'Explore Mallorca golf courses',
+  },
+  de: {
+    play: 'Privaten Golftag ansehen',
+    courses: 'Golfplaetze auf Mallorca ansehen',
+  },
+  es: {
+    play: 'Ver el dia privado de golf',
+    courses: 'Ver campos de golf en Mallorca',
+  },
+  fr: {
+    play: 'Voir la journee golf privee',
+    courses: 'Voir les parcours de Majorque',
+  },
+  nl: {
+    play: 'Bekijk de privegolfdag',
+    courses: 'Bekijk golfbanen op Mallorca',
+  },
+  sv: {
+    play: 'Se den privata golfdagen',
+    courses: 'Se golfbanor pa Mallorca',
+  },
+  zh: {
+    play: 'See the private golf day',
+    courses: 'Explore Mallorca golf courses',
+  },
+}
+
+function JsonLd({ data }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+}
+
+function buildAboutPageSchema(locale, content) {
+  const aboutPath = buildLocalePath('/about', locale)
+  const playPath = buildLocalePath('/play-with-a-pro', locale)
+  const coursesPath = buildLocalePath('/golf-courses', locale)
+  const description = content.chapters?.[0]?.paragraphs?.[0] || content.sidebarCta?.body || 'About Andy Griffiths at Mr Mallorca Golf.'
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: Array.isArray(content.hero.title) ? content.hero.title.join(' ') : String(content.hero.title).replace(/\n/g, ' '),
+    description,
+    url: `${SITE_ORIGIN}${aboutPath}`,
+    mainEntity: {
+      '@type': 'Person',
+      name: 'Andy Griffiths',
+      url: `${SITE_ORIGIN}${aboutPath}`,
+      jobTitle: 'PGA Advanced Professional',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Mr Mallorca Golf',
+        url: SITE_ORIGIN,
+      },
+    },
+    relatedLink: [
+      `${SITE_ORIGIN}${playPath}`,
+      `${SITE_ORIGIN}${coursesPath}`,
+    ],
+  }
+}
+
+function buildBreadcrumbSchema(locale) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${SITE_ORIGIN}${buildLocalePath('/', locale)}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'About',
+        item: `${SITE_ORIGIN}${buildLocalePath('/about', locale)}`,
+      },
+    ],
+  }
+}
 
 export default function AboutView({ content, locale = 'en', careerStripProps = {} }) {
   const home = getHomeContent(locale)
   const titleLines = Array.isArray(content.hero.title)
     ? content.hero.title
     : String(content.hero.title).split('\n')
+  const pageLinks = ABOUT_PAGE_LINKS[locale] || ABOUT_PAGE_LINKS.en
 
   return (
     <>
       <link rel="preload" as="image" href="/images/about-secondary.webp" />
       <PageLayout lang={locale}>
+        <JsonLd data={buildAboutPageSchema(locale, content)} />
+        <JsonLd data={buildBreadcrumbSchema(locale)} />
         <RevealObserver />
 
         <header
@@ -118,6 +208,14 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
               <Link href={content.sidebarCta.href} className="sidebar-cta__btn">
                 {content.sidebarCta.button}
               </Link>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1rem' }}>
+                <Link href={buildLocalePath('/play-with-a-pro', locale)} style={{ color: 'var(--gold)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                  {pageLinks.play}
+                </Link>
+                <Link href={buildLocalePath('/golf-courses', locale)} style={{ color: 'var(--gold)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                  {pageLinks.courses}
+                </Link>
+              </div>
             </div>
           </aside>
         </div>
