@@ -1693,6 +1693,8 @@ select.form-control { cursor: pointer; }
 .post-sidebar__label { font-size: 10px !important; letter-spacing: .16em !important; text-transform: uppercase; font-family: var(--font-sans); color: var(--stone) !important; margin: 0 0 0.5rem !important; }
 .post-sidebar__cta { display: block; width: 100%; text-align: center; margin-top: 1.25rem; }
 .post-sidebar__cta--secondary { margin-top: 8px; background: transparent; }
+.post-sidebar__block .btn--outline-white { color: var(--deep); border-color: rgba(26,25,22,0.25); background: transparent; }
+.post-sidebar__block .btn--outline-white:hover { background: rgba(26,25,22,0.06); border-color: rgba(26,25,22,0.5); }
 .post-sidebar__list-link { font-size: 0.85rem; font-weight: 300; color: var(--charcoal); text-decoration: none; line-height: 1.5; display: block; }
 .post-sidebar__all-link { font-size: 9px; letter-spacing: .14em; text-transform: uppercase; font-family: var(--font-sans); color: var(--gold); text-decoration: none; }
 

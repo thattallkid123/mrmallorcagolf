@@ -487,9 +487,9 @@ export const GUIDE_POST_CONTENT = {
   'son-termes-review': {
     en: {
       metadata: {
-        title: "Son Termes Golf, Mallorca — A PGA Professional's Honest Review (2026)",
+        title: "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
         description:
-          'Son Termes golf course Mallorca reviewed by a PGA professional. Mountain views, honest course notes, green fees, and who it suits — from someone who played it this week.',
+          'Son Termes golf course Mallorca reviewed by a PGA professional. Mountain views, honest course notes, green fees, and who it suits, from someone who played it this week.',
         imagePath: '/images/son-termes-blog/st-2.jpg',
       },
       meta: {
@@ -497,13 +497,13 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '5 min read',
         updated: 'April 2026',
-        title: "Son Termes Golf, Mallorca — A PGA Professional's Honest Review (2026)",
+        title: "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
         intro:
-          'Twenty minutes from Palma, up in the Na Burguesa mountains. More character than most courses at this price level — and better views than anywhere else close to the city.',
+          'Twenty minutes from Palma, up in the Na Burguesa mountains. More character than most courses at this price level, and better views than anywhere else close to the city.',
         related: [
-          { slug: 'son-gual-review', title: 'Son Gual Golf — Honest Review 2026' },
-          { slug: 'alcanada-review', title: 'Alcanada Golf — Honest Review 2026' },
-          { slug: 'son-muntaner-review', title: 'Son Muntaner — Best Golf Course in Spain 2025' },
+          { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
+          { slug: 'alcanada-review', title: 'Alcanada Golf: Honest Review 2026' },
+          { slug: 'son-muntaner-review', title: 'Son Muntaner: Best Golf Course in Spain 2025' },
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
         ],
       },
