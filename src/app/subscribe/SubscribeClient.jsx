@@ -101,6 +101,7 @@ export default function SubscribeClient() {
                   scrolling="no"
                   className="beehiiv-embed sub-iframe"
                   title="Subscribe to the Mr Mallorca Golf newsletter"
+                  loading="lazy"
                 />
               </div>
               <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "10px", letterSpacing: "0.06em", color: "var(--taupe)", margin: 0, textAlign: "center" }}>Free. Unsubscribe any time.</p>
