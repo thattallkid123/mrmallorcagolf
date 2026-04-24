@@ -28,6 +28,11 @@ const COURSE_REVIEW_DETAILS = {
     ratingValue: 4,
     addressLocality: 'Santa Ponsa',
   },
+  'son-termes-review': {
+    name: 'Son Termes Golf',
+    ratingValue: 4,
+    addressLocality: 'Palma',
+  },
 }
 
 const MONTHS = {

@@ -483,6 +483,157 @@ export const GUIDE_POST_CONTENT = {
       ],
     },
   },
+
+  'son-termes-review': {
+    en: {
+      metadata: {
+        title: "Son Termes Golf, Mallorca — A PGA Professional's Honest Review (2026)",
+        description:
+          'Son Termes golf course Mallorca reviewed by a PGA professional. Mountain views, honest course notes, green fees, and who it suits — from someone who played it this week.',
+        imagePath: '/images/son-termes-blog/st-2.jpg',
+      },
+      meta: {
+        badge: 'Course Review',
+        badgeGold: true,
+        readTime: '5 min read',
+        updated: 'April 2026',
+        title: "Son Termes Golf, Mallorca — A PGA Professional's Honest Review (2026)",
+        intro:
+          'Twenty minutes from Palma, up in the Na Burguesa mountains. More character than most courses at this price level — and better views than anywhere else close to the city.',
+        related: [
+          { slug: 'son-gual-review', title: 'Son Gual Golf — Honest Review 2026' },
+          { slug: 'alcanada-review', title: 'Alcanada Golf — Honest Review 2026' },
+          { slug: 'son-muntaner-review', title: 'Son Muntaner — Best Golf Course in Spain 2025' },
+          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/son-termes-blog/st-2.jpg',
+          alt: 'Goat on Son Termes golf course Mallorca with Palma in background',
+          caption: 'The ball is mine. The goat was not invited. Back nine, Son Termes.',
+          priority: true,
+          containerStyle: { aspectRatio: '5/4' },
+          imageStyle: { objectPosition: 'center center' },
+        },
+        {
+          type: 'paragraph',
+          text: 'I played Son Termes on a Friday morning with a friend on a 20 handicap. By the back nine he was running low on balls. The rough is tight, several tee shots give you very little room, and the course collects misses in a way that is not obvious from the card. That is a reasonable summary of what Son Termes is.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Son Termes sits in the Na Burguesa mountains above Palma. Twenty minutes from the city centre and a different world. On a clear day from the higher tees you can see Castell de Bellver and the cathedral on the Palma skyline, with the Mediterranean behind them. Coming from Shanghai, where a course this accessible and this scenic would have a five-year waiting list for membership, that still registers.',
+        },
+        { type: 'heading', text: 'The Walk' },
+        {
+          type: 'paragraph',
+          text: 'I always try to walk. On the front nine at Son Termes that is straightforward. On the back nine it becomes a genuine conversation with yourself. Several climbs are steep enough to push the heart rate, and by the time you reach the upper holes two things have happened: the views have improved considerably, and the wind has picked up enough to make distance control on the par 3s harder than the yardages suggest. Most players take a buggy. On a warm day, that is the right call.',
+        },
+        {
+          type: 'image',
+          src: '/images/son-termes-blog/st-1.jpg',
+          alt: 'Tee shot at Son Termes golf course Mallorca with mountains behind',
+          caption: 'Tee shot at Son Termes, Na Burguesa mountains behind.',
+          containerStyle: { aspectRatio: '5/4' },
+          imageStyle: { objectPosition: 'center center' },
+        },
+        { type: 'heading', text: 'How the Course Plays' },
+        {
+          type: 'paragraph',
+          text: 'Son Termes is not a long course. Several par 4s are driveable or close to it, leaving short irons or wedges for the approach. For a low handicapper looking for a length test, that is worth knowing going in.',
+        },
+        {
+          type: 'paragraph',
+          text: 'What it lacks in length it makes up for in character. Blind tee shots, sharp doglegs, artificial water placed to catch the shot most golfers instinctively want to play. Several holes require you to commit to a target you cannot fully see. That keeps the round interesting from start to finish, and it means a second visit will almost always produce a better score.',
+        },
+        {
+          type: 'image',
+          src: '/images/son-termes-blog/st-6.jpg',
+          alt: 'Son Termes golf course Mallorca Na Burguesa mountains',
+          caption: 'The course opens up on the back nine and view of the Na Burguesa mountains.',
+          containerStyle: { aspectRatio: '5/4' },
+          imageStyle: { objectPosition: 'center center' },
+        },
+        { type: 'heading', text: 'Some Holes Worth Mentioning' },
+        {
+          type: 'paragraph',
+          text: 'Hole 6 was personally satisfying. Driver almost to the green on the par 5, wedge in, eagle chance narrowly missed. The par 5s here are reachable and the course gives you genuine birdie opportunities with short irons in hand.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 12 is the short par 3 over wooded ground with the best views on the course. The flag is harder to find than you would expect from the tee, and the surrounding trees frame the hole in a way that makes it one of the more memorable short holes close to Palma.',
+        },
+        {
+          type: 'image',
+          src: '/images/son-termes-blog/st-5.jpg',
+          alt: 'Son Termes golf par 3 12th hole green Mallorca with trees behind',
+          caption: 'The 12th. The flag was harder to find than this makes it look.',
+          containerStyle: { aspectRatio: '5/4' },
+          imageStyle: { objectPosition: 'center center' },
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 13 plays differently to how it looks on the card. Sharp dogleg, 9 iron from the tee to keep it in play, then close to 175 metres for the approach with limited visibility to the flag. I was in the middle of the fairway and still had a largely blind shot in. Good hole. The course has a few like this, where you commit to a number and find out afterwards whether you were right.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 18 finishes down a dogleg left, dropping back towards the clubhouse. It is a good closing hole. Sitting on the terrace afterwards watching others navigate those climbs is a satisfying way to end the round.',
+        },
+        { type: 'heading', text: 'The Goats' },
+        {
+          type: 'paragraph',
+          text: 'There were goats on several holes throughout the round. They treated the course as their own, which in fairness it probably was before anyone built a golf club on it. The whole herd came to watch us putt out on 17. One was observing proceedings from a bunker with no interest whatsoever in the concept of raking. A genuinely hazardous animal that we feel should be on the scorecard.',
+        },
+        { type: 'heading', text: 'The Greens' },
+        {
+          type: 'paragraph',
+          text: 'Honest answer: they are not at the level of Son Gual or Alcanada. The surfaces were good and the pace was solid, but if you have played the top courses on the island recently you will notice the difference. For the price and what the rest of the round delivers, that is a fair trade.',
+        },
+        {
+          type: 'image',
+          src: '/images/son-termes-blog/st-4.jpg',
+          alt: 'Son Termes golf course Mallorca panoramic view over Na Burguesa mountains and Palma plain',
+          caption: 'The view from the upper holes. Castell de Bellver and the cathedral were visible on the skyline on a clear morning.',
+          containerStyle: { aspectRatio: '5/4' },
+          imageStyle: { objectPosition: 'center center' },
+        },
+        {
+          type: 'facts',
+          items: [
+            ['~€110', 'In-season green fee'],
+            ['6/10', 'Difficulty'],
+            ['Par 72', 'Mountain layout'],
+            ['20 min', 'From central Palma'],
+          ],
+        },
+        { type: 'heading', text: '2026 Green Fees' },
+        {
+          type: 'paragraph',
+          text: 'Full in-season pricing is around €110. Check current rates directly with Son Termes before booking as pricing varies seasonally. There is a multi-round deal worth knowing about. More details on that coming soon. The course is approximately 20 minutes from central Palma, up in the Na Burguesa mountains.',
+        },
+        {
+          type: 'image',
+          src: '/images/son-termes-blog/st-3.jpg',
+          alt: 'Son Termes golf course Mallorca aerial view over the layout with mountains',
+          caption: 'The course from above. The routing through the mountains is what makes Son Termes different from anything else at this price point on the island.',
+          containerStyle: { aspectRatio: '5/4' },
+          imageStyle: { objectPosition: 'center center' },
+        },
+        { type: 'heading', text: 'Verdict' },
+        {
+          type: 'paragraph',
+          text: 'Son Termes delivers more character than most courses at this price level. The views from the back nine are the best available anywhere this close to Palma. The layout keeps you thinking throughout, and a second visit would unlock a better score. For a visiting golfer who wants something different from the premium courses, or a resident looking for a course with genuine personality at a sensible price, it earns its place on the list.',
+        },
+        {
+          type: 'cta',
+          text: 'Thinking of playing Son Termes or want a recommendation for which course suits your game?',
+          linkLabel: 'Get in touch →',
+          href: '/contact',
+        },
+      ],
+    },
+  },
 }
 
 const LOCALIZED_TEXT_KEYS = new Set([
