@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import { getOfferById, OFFER_IDS } from '../../lib/offers-content.js'
+import { DEFAULT_SOCIAL_IMAGE } from '../../lib/page-metadata.js'
 import { SITE_ORIGIN } from '../../lib/site.js'
 
 export const metadata = {
@@ -16,14 +17,14 @@ export const metadata = {
     title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
     description:
       "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks. From the drive up to the last green.",
-    images: [{ url: `${SITE_ORIGIN}/images/hero-main.webp`, width: 1600, height: 660 }],
+    images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
     description:
       "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks.",
-    images: [`${SITE_ORIGIN}/images/hero-main.webp`],
+    images: [DEFAULT_SOCIAL_IMAGE.url],
   },
 }
 
@@ -47,7 +48,7 @@ function buildArticleSchema() {
       url: SITE_ORIGIN,
     },
     mainEntityOfPage: `${SITE_ORIGIN}/a-day`,
-    image: `${SITE_ORIGIN}/images/hero-main.webp`,
+    image: DEFAULT_SOCIAL_IMAGE.url,
     about: [
       { '@type': 'Thing', name: 'Son Gual Golf Club' },
       { '@type': 'Thing', name: 'Private golf days in Mallorca' },

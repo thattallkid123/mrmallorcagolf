@@ -575,7 +575,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Golf club hire in Mallorca - which companies to use, what to pay, whether to bring your own clubs, and tips for getting the best deal. Updated for 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
-      image: 'https://mrmallorcagolf.com/images/hero-main.jpg',
+      image: `${SITE_ORIGIN}/images/social-preview.jpg`,
       imageAlt: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
     },
     meta: {

@@ -2,7 +2,7 @@ import { getAlternates, SITE_ORIGIN } from './site.js'
 import { getPlayWithAProMetadataDescription } from './offers-content.js'
 
 export const DEFAULT_SOCIAL_IMAGE = {
-  url: `${SITE_ORIGIN}/images/hero-main.jpg`,
+  url: `${SITE_ORIGIN}/images/social-preview.jpg`,
   width: 1200,
   height: 630,
   alt: 'Private golf day in Mallorca with Mr Mallorca Golf',
