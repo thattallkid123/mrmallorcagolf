@@ -4,6 +4,7 @@ import Script from 'next/script'
 import DocumentLanguage from '../components/DocumentLanguage'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { SITE_ORIGIN } from '../lib/site.js'
+import { DEFAULT_SOCIAL_IMAGE } from '../lib/page-metadata.js'
 
 const jost = Jost({
   subsets: ['latin'],
@@ -40,13 +41,13 @@ export const metadata = {
     siteName: 'Mr Mallorca Golf',
     title: 'Golf Days in Mallorca | Mr Mallorca Golf',
     description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play Son Gual, Alcanada and more, with every detail arranged.',
-    images: [{ url: `${SITE_ORIGIN}/images/hero-main.jpg`, width: 1200, height: 630 }],
+    images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Golf Days in Mallorca | Mr Mallorca Golf',
     description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths.',
-    images: [`${SITE_ORIGIN}/images/hero-main.jpg`],
+    images: [DEFAULT_SOCIAL_IMAGE.url],
   },
   robots: {
     index: true,
@@ -69,6 +70,7 @@ const PERSON_SCHEMA = {
   jobTitle: 'PGA Advanced Professional',
   description: 'UK PGA Advanced Professional, Trackman Master, and golf coach with 18 years experience across three continents. Now offering private play-with-a-pro experiences and on-course coaching in Mallorca, Spain.',
   url: `${SITE_ORIGIN}/about`,
+  image: DEFAULT_SOCIAL_IMAGE.url,
   sameAs: [
     'https://www.instagram.com/mrmallorcagolf',
     'https://www.linkedin.com/in/andygriffithsgolf',
@@ -89,16 +91,16 @@ const LOCAL_BUSINESS_SCHEMA = {
   url: SITE_ORIGIN,
   email: 'andy@mrmallorcagolf.com',
   telephone: '+34624466702',
-  image: `${SITE_ORIGIN}/logo-dark-green.png`,
+  image: DEFAULT_SOCIAL_IMAGE.url,
   sameAs: [
     'https://www.instagram.com/mrmallorcagolf',
     'https://www.linkedin.com/in/andygriffithsgolf',
   ],
   logo: {
     '@type': 'ImageObject',
-    url: `${SITE_ORIGIN}/logo-dark-green.png`,
-    width: 306,
-    height: 306,
+    url: `${SITE_ORIGIN}/MMG_Logo_Green.png`,
+    width: 1200,
+    height: 1200,
   },
   contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', url: 'https://wa.me/34624466702', availableLanguage: ['English', 'Mandarin Chinese'] },
   address: {
@@ -127,7 +129,7 @@ const FAQ_SCHEMA = {
       name: "What's included in a day with Andy?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Everything. Green fee, tee time, lunch at the course restaurant, and 18 holes of on-course coaching woven throughout your round. You play alongside Andy—not taking lessons on the range. Strategy, pressure situations, real-course decisions. Post-round debrief too.',
+        text: 'Everything. Green fee, tee time, lunch at the course restaurant, and 18 holes of on-course coaching woven throughout your round. You play alongside Andy - not taking lessons on the range. Strategy, pressure situations, real-course decisions. Post-round debrief too.',
       },
     },
     {
@@ -135,7 +137,7 @@ const FAQ_SCHEMA = {
       name: 'Do I need a specific handicap to play with Andy?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "No handicap requirement. You need to be keen to improve and willing to engage with real decisions on the course. Andy's coached players from 2-handicap golfers to complete beginners visiting Mallorca. The philosophy is the same: honest feedback, smart course management, play the hole in front of you—not the one in your head.",
+        text: "No handicap requirement. You need to be keen to improve and willing to engage with real decisions on the course. Andy's coached players from 2-handicap golfers to complete beginners visiting Mallorca. The philosophy is the same: honest feedback, smart course management, play the hole in front of you - not the one in your head.",
       },
     },
     {
@@ -151,7 +153,7 @@ const FAQ_SCHEMA = {
       name: 'Can I book multiple days or customise the trip?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Yes. The Full Experience is completely bespoke: multiple courses over 3–7 days, private transport from Palma, dinners at handpicked restaurants, concierge support. Build your golf trip around how you actually want to play and live. Get in touch and we'll plan it together.",
+        text: "Yes. The Full Experience is completely bespoke: multiple courses over 3-7 days, private transport from Palma, dinners at handpicked restaurants, concierge support. Build your golf trip around how you actually want to play and live. Get in touch and we'll plan it together.",
       },
     },
     {
@@ -159,7 +161,7 @@ const FAQ_SCHEMA = {
       name: 'What courses will we play?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'It depends on your game and what you want to experience. Andy has played all 22 courses on the island and builds rounds on Son Gual, Alcanada, and Santa Ponsa courses most often. He matches course to your handicap and goals—not every golfer should play the same track. See the full course guide or get in touch to discuss.',
+        text: 'It depends on your game and what you want to experience. Andy has played all 22 courses on the island and builds rounds on Son Gual, Alcanada, and Santa Ponsa courses most often. He matches course to your handicap and goals - not every golfer should play the same track. See the full course guide or get in touch to discuss.',
       },
     },
   ],
@@ -172,9 +174,9 @@ export default function RootLayout({ children }) {
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

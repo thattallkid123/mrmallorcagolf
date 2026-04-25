@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { NAV_LOCALES, getLanguageSwitchPath, getLegalPath } from '../lib/site'
 
@@ -91,18 +90,18 @@ const FOOTER_COPY = {
     terms: 'Villkor',
   },
   zh: {
-    tagline: '\u4e0e Andy Griffiths \u5728\u9a6c\u7565\u5361\u4f53\u9a8c\u79c1\u4eba\u9ad8\u5c14\u592b\u65e5\u7a0b\u3002\u719f\u6089\u672c\u5730\uff0c\u5b89\u6392\u5468\u5230\uff0c\u5168\u7a0b\u8f7b\u677e\u4ece\u5bb9\u3002',
-    experiences: '\u4f53\u9a8c',
-    pwap: '\u4e0e\u804c\u4e1a\u7403\u624b\u540c\u573a',
-    day: 'Son Gual \u7684\u4e00\u5929',
-    guide: '\u9ad8\u5c14\u592b\u6307\u5357',
-    about: '\u5173\u4e8e Andy',
-    allCourses: '\u5168\u90e8\u7403\u573a',
-    enquire: '\u8054\u7cfb',
-    newsletter: '\u901a\u8baf',
-    newsletterLink: '\u8ba2\u9605',
-    privacy: '\u9690\u79c1\u653f\u7b56',
-    terms: '\u6761\u6b3e',
+    tagline: '与 Andy Griffiths 在马略卡体验私人高尔夫日程。熟悉本地，安排周到，全程轻松从容。',
+    experiences: '体验',
+    pwap: '与职业球手同场',
+    day: 'Son Gual 的一天',
+    guide: '高尔夫指南',
+    about: '关于 Andy',
+    allCourses: '全部球场',
+    enquire: '联系',
+    newsletter: '通讯',
+    newsletterLink: '订阅',
+    privacy: '隐私政策',
+    terms: '条款',
   },
 }
 
@@ -128,7 +127,16 @@ export default function Footer({ lang }) {
     <footer className="footer">
       <div className="footer__brand">
         <Link href={prefix || '/'} className="nav__logo footer__logo">
-          <Image src="/logo-white-96.webp" alt="Mr Mallorca Golf" className="nav__logo-img" width={38} height={38} sizes="38px" />
+          <img
+            src="/logo-white-96.webp"
+            alt="Mr Mallorca Golf"
+            className="nav__logo-img"
+            width="38"
+            height="38"
+            loading="lazy"
+            decoding="async"
+          />
+          <span className="sr-only">Mr Mallorca Golf home</span>
         </Link>
         <p>{copy.tagline}</p>
       </div>
@@ -182,7 +190,7 @@ export default function Footer({ lang }) {
         <div className="footer__lang">
           {NAV_LOCALES.map((code) => (
             <Link key={code} href={getLanguageSwitchPath(pathname, code)}>
-              {code === 'zh' ? '\u4e2d\u6587' : code.toUpperCase()}
+              {code === 'zh' ? '中文' : code.toUpperCase()}
             </Link>
           ))}
         </div>

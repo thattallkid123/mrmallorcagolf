@@ -1,6 +1,13 @@
 import { getAlternates, SITE_ORIGIN } from './site.js'
 import { getPlayWithAProMetadataDescription } from './offers-content.js'
 
+export const DEFAULT_SOCIAL_IMAGE = {
+  url: `${SITE_ORIGIN}/images/hero-main.jpg`,
+  width: 1200,
+  height: 630,
+  alt: 'Private golf day in Mallorca with Mr Mallorca Golf',
+}
+
 const HOME_METADATA = {
   en: {
     title: 'Golf Days in Mallorca | Mr Mallorca Golf',
@@ -41,9 +48,9 @@ const HOME_METADATA = {
 
 const GOLF_COURSES_METADATA = {
   en: {
-    title: 'Mallorca Golf Guide 2026 - Every Course on the Island',
+    title: 'Mallorca Golf Courses Guide 2026',
     description:
-      'The complete guide to golf in Mallorca - all 24 courses, including 21 open to green-fee visitors, plus honest recommendations from a PGA professional based on the island. 2026 edition.',
+      'Compare every Mallorca golf course, green-fee access, regions, difficulty, and honest PGA recommendations for planning your 2026 golf trip.',
   },
   de: {
     title: 'Mallorca Golf Guide 2026 - Jeder Kurs auf der Insel',
@@ -193,7 +200,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Private Golf Days in Mallorca | Play with a Pro',
+    title: 'Private Golf Days in Mallorca',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {
@@ -334,6 +341,9 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
     ? {
         type: 'website',
         url: pageUrl,
+        siteName: 'Mr Mallorca Golf',
+        locale: locale === 'en' ? 'en_GB' : locale,
+        images: [DEFAULT_SOCIAL_IMAGE],
         ...(title ? { title } : {}),
         ...(description ? { description } : {}),
       }
@@ -341,6 +351,7 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
   const twitter = overrides.twitter || (title || description
     ? {
         card: 'summary_large_image',
+        images: [DEFAULT_SOCIAL_IMAGE.url],
         ...(title ? { title } : {}),
         ...(description ? { description } : {}),
       }

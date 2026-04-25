@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { NAV_LOCALES, getLocaleFromPath, getLanguageSwitchPath } from '../lib/site'
 
@@ -88,19 +87,21 @@ export default function Nav({ transparent = false, lang }) {
 
   const navClass = ['nav', !transparent ? 'solid' : scrolled ? 'scrolled' : ''].filter(Boolean).join(' ')
   const isActive = (href) => resolvedPathname === href
+  const logoSrc = (!transparent || scrolled) ? '/logo-dark-green-96.webp' : '/logo-white-96.webp'
 
   return (
     <>
       <nav className={navClass} id="nav">
         <Link href={activeLang === 'en' ? '/' : `/${activeLang}`} className="nav__logo">
-          <Image
-            src={(!transparent || scrolled) ? '/logo-dark-green-96.webp' : '/logo-white-96.webp'}
+          <img
+            src={logoSrc}
             alt="Mr Mallorca Golf"
             className="nav__logo-img"
-            width={38}
-            height={38}
-            sizes="38px"
+            width="38"
+            height="38"
+            decoding="async"
           />
+          <span className="sr-only">Mr Mallorca Golf home</span>
         </Link>
 
         <ul className="nav__links">
