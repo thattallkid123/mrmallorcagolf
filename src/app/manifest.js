@@ -1,10 +1,10 @@
 export default function manifest() {
   return {
-    name: 'Mr Mallorca Golf Tracker',
-    short_name: 'MMG Tracker',
+    name: 'Mr Mallorca Golf',
+    short_name: 'Mr Mallorca Golf',
     description:
-      'Mallorca-first golf tracker for rounds, hole overviews, GPS shots, stats, and handicap history.',
-    start_url: '/shot-tracker',
+      'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths.',
+    start_url: '/',
     display: 'standalone',
     background_color: '#f7f4ef',
     theme_color: '#2d4a3e',
