@@ -751,7 +751,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   fr: {
     hero: {
-      body: "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. Solo à partir de 495 €. Groupes à partir de 950 €. Green fees en plus.",
+      body: "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. Solo à partir de 594 €. Groupes à partir de 950 €. Green fees en plus.",
       price: null,
     },
     packages: {
