@@ -141,6 +141,7 @@ export const HOME_CONTENT = {
         'Course, tee time, and lunch reservation are arranged before you arrive. Buggy, transport, and club hire can be added. Your only job on the day is to play.',
       ],
       button: 'See pricing and full details',
+      dateCta: 'Tell Me Your Dates',
       features: [],
     },
     quote: {
@@ -325,6 +326,7 @@ const HOME_OVERRIDES = {
         'Alles ist geregelt, bevor Sie ankommen: Platz, Abschlagszeit und Mittagessen. Ihre einzige Aufgabe ist es, zu spielen.',
       ],
       button: 'Erlebnisse ansehen',
+      dateCta: 'Meine Daten mitteilen',
       features: [
         { title: 'Alles organisiert', text: 'Platz, Abschlagszeit und Mittagessen stehen vor Ihrer Ankunft fest. Transport kann bei Bedarf ergänzt werden.' },
         { title: 'On-Course-Coaching', text: 'Hilfreiche Beobachtungen mitten in der Runde, wenn sie noch etwas verändern können.' },
@@ -544,6 +546,7 @@ const HOME_OVERRIDES = {
         'Todo está resuelto antes de llegar: campo, hora de salida y almuerzo. Su único trabajo ese día es jugar.',
       ],
       button: 'Ver experiencias',
+      dateCta: 'Dígame sus fechas',
       features: [
         {
           title: 'Todo organizado',
@@ -641,6 +644,7 @@ const HOME_OVERRIDES = {
       title: 'La plupart des journées de golf à Majorque se limitent à une heure de départ et un signe de la main.',
       paragraphs: ['J’ai passé plus de dix ans à coacher en Chine, dans un contexte où l’on attendait une vraie amélioration, pas des encouragements creux.', 'Cette expérience façonne chaque partie que j’accompagne. Nous jouons ensemble sur l’un des meilleurs parcours de Majorque, et le coaching arrive là où il fait gagner des coups.', 'Tout est réglé avant votre arrivée : parcours, heure de départ et déjeuner. Votre seul travail ce jour-là est de jouer.'],
       button: 'Voir les expériences',
+      dateCta: 'Dites-moi vos dates',
       features: [
         { title: 'Tout est organisé', text: 'Parcours, heure de départ, transport et déjeuner sont réglés avant votre arrivée.' },
         { title: 'Coaching sur le parcours', text: 'Des observations utiles au bon moment, tant qu’elles peuvent encore changer quelque chose.' },
@@ -691,6 +695,7 @@ const HOME_OVERRIDES = {
       title: 'De meeste golfdagen op Mallorca zijn een tee time en een handdruk op de 18e.',
       paragraphs: ['Ik heb meer dan tien jaar in China gecoacht, waar klanten echte verbetering verwachtten in plaats van vage aanmoedigingen.', 'Die achtergrond bepaalt elke ronde die ik begeleid. We spelen samen op een van de beste banen van Mallorca en de coaching komt precies op de momenten waarop die echt iets verandert.', 'Alles is geregeld vóór uw aankomst: baan, starttijd en lunch. Uw enige taak is spelen.'],
       button: 'Bekijk de ervaringen',
+      dateCta: 'Vertel me uw data',
       features: [
         { title: 'Alles geregeld', text: 'Baan, tee time en lunch staan vast vóór uw aankomst. Vervoer kan worden toegevoegd als dat handig is.' },
         { title: 'Coaching op de baan', text: 'Nuttige observaties midden in de ronde, zolang ze nog iets kunnen veranderen.' },
@@ -741,6 +746,7 @@ const HOME_OVERRIDES = {
       title: 'De flesta golfdagar på Mallorca är bara en starttid och ett handslag på 18:e.',
       paragraphs: ['Jag coachade i Kina i över ett decennium, där kunder förväntade sig verklig förbättring och inte tomma uppmuntringsord.', 'Den bakgrunden följer med i varje rond jag är värd för. Vi spelar tillsammans på en av Mallorcas bästa banor och coachingen kommer där den faktiskt gör skillnad.', 'Allt är ordnat innan du kommer: bana, starttid och lunch. Din enda uppgift den dagen är att spela.'],
       button: 'Se upplevelserna',
+      dateCta: 'Berätta dina datum',
       features: [
         { title: 'Allt ordnat', text: 'Bana, starttid och lunch är klara innan du anländer. Transport kan läggas till vid behov.' },
         { title: 'Coaching på banan', text: 'Användbara observationer mitt i rundan, medan de fortfarande kan förändra något.' },
@@ -791,6 +797,7 @@ const HOME_OVERRIDES = {
       title: '马略卡大多数高尔夫体验，不过就是一个开球时间和一句再见。',
       paragraphs: ['我在中国执教了十多年，客户要的是实实在在的进步，不是空泛的鼓励。', '这段经历决定了我现在带每一轮球的方式。我们会一起打马略卡最好的球场，而指导会出现在真正影响成绩的地方。', '在你到场之前，一切都已经安排好：球场、开球时间和午餐。你那天唯一的任务，就是好好打球。'],
       button: '查看体验',
+      dateCta: '告诉我您的日期',
       features: [
         { title: '一切都已安排好', text: '球场、开球时间、交通和午餐都会在你到场前安排妥当。' },
         { title: '下场指导', text: '真正有用的观察会出现在一轮当中，而且是在还来得及改变结果的时候。' },

@@ -204,7 +204,7 @@ export default function HomePageInner({ locale = 'en' }) {
               {home.experience.button}
             </a>
             <a href={contactHref} className="btn btn--gold">
-              Tell Me Your Dates
+              {home.experience.dateCta}
             </a>
           </div>
         </div>

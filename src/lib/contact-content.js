@@ -62,6 +62,19 @@ export const CONTACT_CONTENT = {
       submit: 'Send Enquiry →',
       note: 'I respond personally to every enquiry within 24 hours. Your details are used only to arrange your day.',
     },
+    gift: {
+      heading: 'Buying this as a gift?',
+      body: "Let me know in the message above and I'll prepare a certificate and keep the day details private until you're ready to share them.",
+    },
+    whatNext: {
+      heading: 'What happens next',
+      body: 'I read every enquiry personally. You\'ll hear from me within 24 hours with a course recommendation and next steps — usually sooner. If you prefer to talk directly, WhatsApp is the fastest route.',
+    },
+    stayInTouch: {
+      heading: 'Stay in touch',
+      body: 'Course notes and Mallorca golf insights every two weeks — straight to your inbox.',
+    },
+    dateCta: 'Tell Me Your Dates',
   },
   de: {
     locale: 'de',
@@ -122,6 +135,19 @@ export const CONTACT_CONTENT = {
       submit: 'Anfrage senden →',
       note: 'Ich beantworte jede Anfrage persönlich innerhalb von 24 Stunden. Ihre Angaben nutze ich nur, um Ihren Tag zu planen.',
     },
+    gift: {
+      heading: 'Schenken Sie diesen Tag?',
+      body: 'Teilen Sie mir das bitte in der Nachricht oben mit. Ich bereite dann ein Zertifikat vor und halte die Details zur Erfahrung zurück, bis Sie bereit sind, sie zu teilen.',
+    },
+    whatNext: {
+      heading: 'Was passiert als Nächstes?',
+      body: 'Ich lese jede Anfrage persönlich. Sie hören von mir innerhalb von 24 Stunden mit einer Kursempfehlung und den nächsten Schritten — normalerweise früher. Wenn Sie lieber direkt sprechen möchten, ist WhatsApp am schnellsten.',
+    },
+    stayInTouch: {
+      heading: 'In Kontakt bleiben',
+      body: 'Platz-Updates und Mallorca-Golf-Einblicke alle zwei Wochen — direkt in Ihr Postfach.',
+    },
+    dateCta: 'Meine Daten mitteilen',
   },
   es: {
     locale: 'es',
@@ -182,6 +208,19 @@ export const CONTACT_CONTENT = {
       submit: 'Enviar consulta →',
       note: 'Respondo personalmente a cada consulta en 24 horas. Sus datos se usan solo para organizar su jornada.',
     },
+    gift: {
+      heading: '¿Es un regalo?',
+      body: 'Indíquemelo en el mensaje de arriba y prepararé un certificado, manteniendo los detalles del día en privado hasta que esté listo para compartirlos.',
+    },
+    whatNext: {
+      heading: 'Qué ocurre a continuación',
+      body: 'Leo cada consulta personalmente. Le responderé en 24 horas con una recomendación de campo y los próximos pasos — normalmente antes. Si prefiere hablar directamente, WhatsApp es la vía más rápida.',
+    },
+    stayInTouch: {
+      heading: 'Mantenerse en contacto',
+      body: 'Notas sobre campos y consejos de golf en Mallorca cada dos semanas — directamente en su bandeja de entrada.',
+    },
+    dateCta: 'Dígame sus fechas',
   },
   fr: {
     locale: 'fr',
@@ -242,6 +281,19 @@ export const CONTACT_CONTENT = {
       submit: 'Envoyer la demande →',
       note: 'Je réponds personnellement à chaque demande sous 24 heures. Vos coordonnées servent uniquement à organiser votre journée.',
     },
+    gift: {
+      heading: 'Vous offrez cette journée ?',
+      body: "Mentionnez-le dans le message ci-dessus et je préparerai un certificat, en gardant les détails confidentiels jusqu'à ce que vous soyez prêt à les partager.",
+    },
+    whatNext: {
+      heading: 'Que se passe-t-il ensuite ?',
+      body: 'Je lis chaque demande personnellement. Vous aurez de mes nouvelles sous 24 heures avec une recommandation de parcours et les prochaines étapes — souvent plus tôt. Si vous préférez parler directement, WhatsApp est le plus rapide.',
+    },
+    stayInTouch: {
+      heading: 'Rester en contact',
+      body: 'Notes de parcours et conseils golf à Majorque toutes les deux semaines — directement dans votre boîte mail.',
+    },
+    dateCta: 'Dites-moi vos dates',
   },
   nl: {
     locale: 'nl',
@@ -302,6 +354,19 @@ export const CONTACT_CONTENT = {
       submit: 'Aanvraag versturen →',
       note: 'Ik reageer persoonlijk op elke aanvraag binnen 24 uur. Uw gegevens worden alleen gebruikt om uw dag te organiseren.',
     },
+    gift: {
+      heading: 'Is dit een cadeau?',
+      body: 'Vermeld het in het bericht hierboven en ik maak een certificaat klaar, waarbij ik de details van de dag privé houd totdat u klaar bent om ze te delen.',
+    },
+    whatNext: {
+      heading: 'Wat gebeurt er daarna?',
+      body: 'Ik lees elke aanvraag persoonlijk. U hoort binnen 24 uur van mij met een baanaanbeveling en de volgende stappen — meestal eerder. Als u liever direct spreekt, is WhatsApp de snelste route.',
+    },
+    stayInTouch: {
+      heading: 'Blijf op de hoogte',
+      body: 'Baannotities en Mallorca golf-inzichten elke twee weken — rechtstreeks in uw inbox.',
+    },
+    dateCta: 'Vertel me uw data',
   },
   sv: {
     locale: 'sv',
@@ -362,6 +427,19 @@ export const CONTACT_CONTENT = {
       submit: 'Skicka förfrågan →',
       note: 'Jag svarar personligen på varje förfrågan inom 24 timmar. Dina uppgifter används bara för att planera din dag.',
     },
+    gift: {
+      heading: 'Köper du detta som en present?',
+      body: 'Berätta det i meddelandet ovan så förbereder jag ett presentkort och håller dagsinformationen privat tills du är redo att dela den.',
+    },
+    whatNext: {
+      heading: 'Vad händer härnäst?',
+      body: 'Jag läser varje förfrågan personligen. Du hör av mig inom 24 timmar med en banrekommendation och nästa steg — oftast snabbare. Om du föredrar att prata direkt är WhatsApp snabbast.',
+    },
+    stayInTouch: {
+      heading: 'Håll kontakten',
+      body: 'Bannoteringar och golfinblickar från Mallorca varannan vecka — direkt till din inkorg.',
+    },
+    dateCta: 'Berätta dina datum',
   },
   zh: {
     locale: 'zh',
@@ -416,14 +494,27 @@ export const CONTACT_CONTENT = {
         { value: '5+ - larger group / corporate', label: '5 人以上 - 团队 / 公司' },
       ],
       experiences: [
-        ['mallorca-round', 'A Day With Andy - Solo', '€495'],
-        ['signature-day', 'A Day With Andy - Group', '€950'],
+        ['mallorca-round', '与 Andy 共度一天 - 单人', '€495'],
+        ['signature-day', '与 Andy 共度一天 - 小组', '€950'],
         ['full-experience', '多日行程', '按需报价'],
         ['not-sure', '暂时不确定 - 请给我建议', ''],
       ],
       submit: '发送咨询 →',
       note: '我会在 24 小时内亲自回复每一条咨询。您的信息只会用于安排您的这一天。',
     },
+    gift: {
+      heading: '这是一份礼物？',
+      body: '请在上方留言告知我，我会准备一张礼品证书，并在您准备好分享之前保密行程细节。',
+    },
+    whatNext: {
+      heading: '接下来会发生什么',
+      body: '我会亲自阅读每一条咨询。24 小时内您将收到我的回复，包括球场推荐和后续步骤——通常更快。如果您希望直接沟通，WhatsApp 是最快的方式。',
+    },
+    stayInTouch: {
+      heading: '保持联系',
+      body: '每两周发送一次马略卡球场动态和高尔夫资讯——直接发送到您的收件箱。',
+    },
+    dateCta: '告诉我您的日期',
   },
 }
 

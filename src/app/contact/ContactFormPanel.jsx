@@ -149,7 +149,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
 
         <div style={{ background: 'var(--cream)', borderRadius: 2, padding: '1.25rem 1.5rem', marginBottom: '1.5rem', borderLeft: '3px solid var(--gold)' }}>
           <p style={{ fontSize: '0.85rem', color: 'var(--deep)', lineHeight: 1.7, margin: 0 }}>
-            <strong>Buying this as a gift?</strong> Let me know in the message above and I&apos;ll prepare a certificate and keep the day details private until you&apos;re ready to share them.
+            <strong>{content.gift.heading}</strong> {content.gift.body}
           </p>
         </div>
 
@@ -162,16 +162,16 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
 
         <div style={{ marginTop: '1.5rem', padding: '1.25rem 1.5rem', background: 'var(--cream)', borderRadius: 2 }}>
-          <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>What happens next</p>
+          <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>{content.whatNext.heading}</p>
           <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', lineHeight: 1.7, margin: 0, fontFamily: "'Jost',sans-serif" }}>
-            I read every enquiry personally. You&apos;ll hear from me within 24 hours with a course recommendation and next steps — usually sooner. If you prefer to talk directly, WhatsApp is the fastest route.
+            {content.whatNext.body}
           </p>
         </div>
       </form>
 
       <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--linen)' }}>
-        <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>Stay in touch</p>
-        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', lineHeight: 1.7, fontFamily: "'Jost',sans-serif" }}>Course notes and Mallorca golf insights every two weeks — straight to your inbox.</p>
+        <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>{content.stayInTouch.heading}</p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', lineHeight: 1.7, fontFamily: "'Jost',sans-serif" }}>{content.stayInTouch.body}</p>
         <BeehiivEmbed />
       </div>
     </>
