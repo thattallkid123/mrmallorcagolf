@@ -40,9 +40,9 @@ const HOME_METADATA = {
       'Privata golfdagar pa Mallorca med Andy Griffiths, PGA Advanced Professional. Spela Son Gual, Alcanada och mer, med allt ordnat.',
   },
   zh: {
-    title: 'Mallorca Golf with a PGA Pro | Mr Mallorca Golf',
+    title: '马略卡高尔夫球日 | Mr Mallorca Golf',
     description:
-      'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play top courses with every detail arranged.',
+      '与英国 PGA 高级职业教练 Andy Griffiths 共度马略卡私人高尔夫球日。畅打 Son Gual、Alcanada 等顶级球场，一切细节均已安排妥当。',
   },
 }
 
@@ -78,9 +78,9 @@ const GOLF_COURSES_METADATA = {
       'Den kompletta guiden till golf pa Mallorca - alla 24 banor, greenavgifter, svarighetsbetyg och arliga rekommendationer fran en PGA-professional baserad pa on. 2026-utgavan.',
   },
   zh: {
-    title: 'Mallorca Golf Guide 2026 - All Courses on the Island',
+    title: '马略卡高尔夫球场指南 2026 - 岛上全部球场',
     description:
-      'A complete guide to golf in Mallorca covering all 24 courses, including 21 open to green-fee visitors, plus honest recommendations from a PGA professional based on the island.',
+      '马略卡高尔夫完整指南，涵盖全部 24 座球场，包含绿费信息、难度评级及岛上 PGA 职业教练的真实推荐。2026 年最新版。',
   },
 }
 
@@ -116,9 +116,9 @@ const GUIDES_INDEX_METADATA = {
       'Arliga golfguider for Mallorca av en PGA Professional. Banomdomen, greenfees och reseplanering - uppdaterade for 2026.',
   },
   zh: {
-    title: 'Mallorca Golf Guide - Course Reviews and Advice',
+    title: '马略卡高尔夫指南 - 球场评测与实用建议',
     description:
-      'Honest golf guides for Mallorca from a PGA professional, covering course reviews, green fees, and trip planning for 2026.',
+      '由驻岛 PGA 职业教练撰写的马略卡高尔夫真实指南，包含球场评测、绿费参考及 2026 年行程规划建议。',
   },
 }
 
@@ -154,9 +154,9 @@ const ABOUT_METADATA = {
       'Andy Griffiths ar en brittisk PGA Advanced Professional baserad pa Mallorca. Tidigare Pebble Beach, Evian, 11 ar coaching i Kina.',
   },
   zh: {
-    title: 'About Andy Griffiths - PGA Professional, Mallorca',
+    title: '关于 Andy Griffiths - PGA 职业教练，马略卡',
     description:
-      'Andy Griffiths is a UK PGA Advanced Professional based in Mallorca, with previous experience at Pebble Beach, Evian, and 11 years coaching in China.',
+      'Andy Griffiths 是英国 PGA 高级职业教练，现驻马略卡。曾执教于 Pebble Beach、Evian，并在中国从事高尔夫教学逾十一年。',
   },
 }
 
@@ -192,9 +192,9 @@ const COACHING_METADATA = {
       'On-course golfcoaching i Mallorca med PGA Advanced Professional Andy Griffiths. Verklig forbattring i verkliga forhallanden - for besokande och bosatta golfare.',
   },
   zh: {
-    title: 'On-Course Golf Coaching in Mallorca - PGA Professional',
+    title: '马略卡球场实地高尔夫教学 - PGA 职业教练',
     description:
-      'On-course golf coaching in Mallorca with PGA Advanced Professional Andy Griffiths. Real improvement in real playing conditions for visiting and resident golfers.',
+      '与英国 PGA 高级职业教练 Andy Griffiths 在马略卡进行球场实地教学。在真实球场条件下获得真实进步，适合来访及在岛球手。',
   },
 }
 
@@ -224,7 +224,7 @@ const PLAY_WITH_A_PRO_METADATA = {
     description: getPlayWithAProMetadataDescription('sv'),
   },
   zh: {
-    title: 'Private Golf Days in Mallorca - Play With a Pro',
+    title: '马略卡私人高尔夫球日 - 与职业教练同场竞技',
     description: getPlayWithAProMetadataDescription('zh'),
   },
 }
@@ -261,9 +261,9 @@ const CONTACT_METADATA = {
       'Arrangera din privata golfdag pa Mallorca. Andy Griffiths svarar personligen inom 24 timmar.',
   },
   zh: {
-    title: 'Contact - Mr Mallorca Golf | Andy Griffiths PGA Professional',
+    title: '联系我们 - Mr Mallorca Golf | Andy Griffiths PGA 职业教练',
     description:
-      'Arrange a private golf day in Mallorca. Andy Griffiths replies personally within 24 hours.',
+      '预约马略卡私人高尔夫球日。Andy Griffiths 亲自回复每一条咨询，24 小时内必达。',
   },
 }
 
@@ -299,9 +299,9 @@ const SUBSCRIBE_METADATA = {
       'Prenumerera på vår maillista för veckovisa golfinblickar från Mallorca, banavgifter och reseplaneringsadiv från en PGA-professional.',
   },
   zh: {
-    title: 'Mallorca Golf Insights - Weekly Newsletter | Mr Mallorca Golf',
+    title: '马略卡高尔夫资讯 - 定期简报 | Mr Mallorca Golf',
     description:
-      'Join the mailing list for weekly Mallorca golf insights, course reviews, and trip planning tips from a PGA professional on the island.',
+      '订阅邮件列表，每两周收到来自驻岛 PGA 职业教练的马略卡高尔夫资讯、球场评测与行程规划建议。',
   },
 }
 
