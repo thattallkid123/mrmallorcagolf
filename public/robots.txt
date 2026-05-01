@@ -4,4 +4,4 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /*.pdf$
 
-Sitemap: https://mrmallorcagolf.com/sitemap.xml
+Sitemap: https://www.mrmallorcagolf.com/sitemap.xml

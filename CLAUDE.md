@@ -144,6 +144,30 @@ The homepage course cards deep-link into `/golf-courses` using these ids:
 - Payments are offline bank transfer only
 - No payment gateway on site
 
+## Zoho Mail tool
+A Python script for sending emails from andy@mrmallorcagolf.com via the Zoho API.
+
+Files live in `zoho_mail/`:
+- `zoho_auth.py` — run once to authorise (only needed if token expires or on a new machine)
+- `zoho_mail.py` — the main send tool
+- `zoho_config.json` — stores the refresh token (do not commit to git)
+
+Common commands (run from `zoho_mail/`):
+```
+python zoho_mail.py accounts                                      # check account connection
+python zoho_mail.py send-all                                      # send all emails in the EMAILS list
+python zoho_mail.py send --to "x@y.com" --subject "S" --body "B" # send a single email
+```
+
+To send a new batch: edit the `EMAILS` list at the top of `zoho_mail.py`, then run `send-all`.
+
+Notes:
+- Zoho EU API sends immediately, no drafts endpoint available
+- Auth uses OAuth2 refresh token stored in `zoho_config.json`
+- If token expires, re-run `zoho_auth.py` to get a new one
+- API base: `https://mail.zoho.eu/api`
+- Account ID: `8339683000000002002` (andy@mrmallorcagolf.com)
+
 ## What not to do
 - Do not add TypeScript
 - Do not add CSS modules or Tailwind
