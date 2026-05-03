@@ -58,7 +58,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Fazit' },
         { type: 'paragraph', text: "Der Titel Bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und Klarheit in der Entscheidungsfindung vom ersten bis zum letzten Loch fordert. Er belohnt Kontrolle mehr als Kraft und schafft Scoring-Chancen durch Präzision. Fünf Minuten von Palma machen die Anreise unkompliziert. Allein die Greens rechtfertigen den Besuch." },
         { type: 'paragraph', text: "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte." },
-        { type: 'cta', text: 'Möchten Sie Son Muntaner mit einem PGA-Professional an Ihrer Seite spielen?', linkLabel: 'Das Play-with-a-Pro-Erlebnis entdecken →', href: '/de/play-with-a-pro' },
+        { type: 'cta', text: 'Möchten Sie Son Muntaner mit einem PGA-Professional an Ihrer Seite spielen?', linkLabel: 'Das PGA-Begleiterlebnis entdecken →', href: '/de/play-with-a-pro' },
       ],
     },
     es: {
