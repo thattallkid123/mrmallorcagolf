@@ -36,8 +36,8 @@ export const COURSE_DESTINATIONS = {
   Alcanada: { type: 'review', slug: 'alcanada-review' },
   'Santa Ponsa 1': { type: 'review', slug: 'santa-ponsa-1-review' },
   'Son Termes': { type: 'review', slug: 'son-termes-review' },
-  'Son Muntaner': { type: 'guide', id: 'son-muntaner' },
-  'Golf de Andratx': { type: 'guide', id: 'golf-de-andratx' },
+  'Son Muntaner': { type: 'review', slug: 'son-muntaner-review' },
+  'Golf de Andratx': { type: 'review', slug: 'golf-andratx-review' },
 }
 
 export function slugifyCourseName(name) {

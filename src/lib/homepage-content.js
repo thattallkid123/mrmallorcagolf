@@ -104,7 +104,7 @@ export const HOME_CONTENT = {
           difficulty: '7/10 Difficulty',
           excerpt: 'Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.',
           img: '/images/son-muntaner.webp',
-          href: '/golf-courses#son-muntaner',
+          href: '/guides/son-muntaner-review',
         },
         {
           cls: 'course-card--4',
@@ -128,7 +128,7 @@ export const HOME_CONTENT = {
           difficulty: '9/10 Difficulty',
           excerpt: 'The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.',
           img: '/images/andratx.webp',
-          href: '/golf-courses#golf-de-andratx',
+          href: '/guides/golf-andratx-review',
         },
       ],
     },
@@ -507,7 +507,7 @@ const HOME_OVERRIDES = {
           excerpt:
             'Elegido mejor campo de golf de España en los World Golf Awards 2025, con vistas a la bahía de Palma y un olivo milenario en el hoyo 15.',
           img: '/images/son-muntaner.webp',
-          href: '/golf-courses#son-muntaner',
+          href: '/guides/son-muntaner-review',
         },
         {
           cls: 'course-card--4',
@@ -533,7 +533,7 @@ const HOME_OVERRIDES = {
           excerpt:
             'El hoyo 6 es el par 5 más largo de España, con 609 metros. Construido en colinas costeras sin concesiones. Lleve bolas de sobra y deje el ego fuera.',
           img: '/images/andratx.webp',
-          href: '/golf-courses#golf-de-andratx',
+          href: '/guides/golf-andratx-review',
         },
       ],
     },
