@@ -24,7 +24,7 @@ const OFFER_CONTENT = {
         priceDisplay: '€495',
         priceNumeric: '495',
         contactPrice: '€495',
-        structuredDescription: "Private full day with PGA Professional Andy Griffiths. Andy's fee for the day. Green fee additional, confirmed when we speak.",
+        structuredDescription: "Private full day with PGA Advanced Professional Andy Griffiths. Andy's fee for the day. Green fee additional, confirmed when we speak.",
       },
       [OFFER_IDS.group]: {
         shortLabel: 'Group',
@@ -33,7 +33,7 @@ const OFFER_CONTENT = {
         priceDisplay: '€950',
         priceNumeric: '950',
         contactPrice: '€950',
-        structuredDescription: 'Full day for groups of up to 3 with PGA Professional. One fixed day rate for Andy. Green fees confirmed separately.',
+        structuredDescription: 'Full day for groups of up to 3 with PGA Advanced Professional Andy Griffiths. One fixed day rate. Green fees confirmed separately.',
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'The Full Andy Day',

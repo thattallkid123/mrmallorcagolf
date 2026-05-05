@@ -28,6 +28,23 @@ Two files exist — keep them separate:
 
 This overrides any other path referenced in skills or older prompts. Use this for all git and npm commands.
 
+## Deploying to production
+
+Vercel deploys automatically when changes are pushed to `main`. Always provide Andy the full block below to copy and run in his terminal — include the project path as the first line so he can paste the whole thing.
+
+Template (Claude fills in the commit message each time):
+
+```
+cd C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
+git add -A
+git commit -m "<message>"
+git push
+```
+
+- Build and deploy run automatically on Vercel after push
+- Live at mrmallorcagolf.com within ~2 minutes
+- Before giving Andy this block, always run `npm run build` in the sandbox to confirm no build errors
+
 ## Project overview
 Private golf day experiences site for Andy Griffiths, PGA Advanced Professional, based in Mallorca, Spain. Deployed on Vercel at `mrmallorcagolf.com`.
 
@@ -125,16 +142,23 @@ The homepage course cards deep-link into `/golf-courses` using these ids:
 - If a localized page or guide is touched, also verify there are no stray English strings left in the non-English output
 
 ## Writing guardrails
-- No em dashes
+ALL writing tasks must follow `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`. Upload this file at the start of any content session. Rules below are the summary — the file is the full authority.
+
+- No em dashes (non-negotiable)
 - No generic AI openings
 - No travel-brochure filler
 - No fake authority language
 - No inflated luxury wording
 - No "not X, but Y" framing
-- No "here's the truth" hooks
+- No "here's the truth" or "what people don't realise" hooks
 - No empty three-part fragment lines
+- No: stunning, breathtaking, nestled, seamless, elevate, unforgettable, hidden gem, curated, bespoke, vibrant, bustling, exceptional
+- No AI patterns: "The best part?", "More than just", "Whether you're...", "From X to Y", "In the heart of..."
 - Prefer specific observations over polished filler
 - Use first person only for courses Andy has genuinely played
+- Practical decisions matter more than adjectives
+- One sharp real observation beats three fancy sentences
+- Run self-check before finishing: remove em dashes, cut filler, replace vague with specific, remove AI phrases
 - If writing sounds generic or inflated, rewrite it
 
 ## Business context
@@ -167,6 +191,15 @@ Notes:
 - If token expires, re-run `zoho_auth.py` to get a new one
 - API base: `https://mail.zoho.eu/api`
 - Account ID: `8339683000000002002` (andy@mrmallorcagolf.com)
+
+## Changelog
+At the end of every session, append to `CHANGELOG.md` in the project root.
+- One line per meaningful thing done
+- Group under a `## YYYY-MM-DD` heading for the date the work actually happened
+- If backdating, insert the heading in the correct chronological position (most recent first)
+- Format: `- [tag] description`
+- Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [admin] tools/files/email | [seo] search | [business] pricing/ops
+- For coding sessions, also read `BUGS.md` before making any changes
 
 ## What not to do
 - Do not add TypeScript

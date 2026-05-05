@@ -44,7 +44,7 @@ export const HOME_CONTENT = {
         {
           number: '02',
           title: 'I build your day',
-          text: 'Course recommendation, tee time, and lunch are arranged before you arrive. Transport can be added if useful.',
+          text: 'Course recommendation, tee time, and a lunch reservation are sorted before you arrive. Green fee and lunch are your own costs, confirmed when we speak. Transport can be added if useful.',
         },
         {
           number: '03',
@@ -138,7 +138,7 @@ export const HOME_CONTENT = {
       paragraphs: [
         'I spent over a decade coaching in China, where clients expected genuine improvement, not empty encouragement. Before that I coached at Pebble Beach, The Open Championship, and Evian.',
         "That background shapes every round I host. We play one of Mallorca's best courses together, and the coaching arrives where it matters: on the tee, into the wind, around the greens, and over the shots that usually cost people the score they wanted.",
-        'Course, tee time, and lunch reservation are arranged before you arrive. Buggy, transport, and club hire can be added. Your only job on the day is to play.',
+        'Course, tee time, and a lunch reservation are sorted before you arrive. Green fee and lunch are your own costs, confirmed when we speak. Buggy, transport, and club hire can be added. Your only job on the day is to play.',
       ],
       button: 'See pricing and full details',
       dateCta: 'Tell Me Your Dates',
@@ -159,7 +159,7 @@ export const HOME_CONTENT = {
     packages: {
       eyebrow: 'Experiences & Packages',
       title: 'Choose Your Day',
-      body: 'All are private and hosted by me. Course, tee time, and coaching are included. Green fees are separate, confirmed when we speak.',
+      body: 'All are private and hosted by me. For solo and group days, green fee and lunch are your own costs, confirmed when we speak. The Signature Experience is all inclusive.',
       items: [
         {
           eyebrow: 'A Day With Andy',
@@ -206,7 +206,7 @@ export const HOME_CONTENT = {
             'Private transfers throughout the day',
             'Caddy and premium club hire options',
           ],
-          note: 'All inclusive. Andy confirms the full itinerary with you in advance.',
+          note: 'Bespoke. Andy coordinates the full itinerary with you in advance — tell us what you want from the day.',
           cta: 'Enquire →',
           href: '/contact',
         },

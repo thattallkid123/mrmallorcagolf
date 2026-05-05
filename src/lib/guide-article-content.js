@@ -134,7 +134,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'cta',
-        text: 'Want a full premium day arranged - course, coaching, lunch, everything included?',
+        text: 'Want a full day arranged - course, tee time, coaching, and everything handled before you arrive?',
         linkLabel: 'See the play-with-a-pro experience →',
         href: '/play-with-a-pro',
       },

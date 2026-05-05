@@ -33,6 +33,11 @@ const COURSE_REVIEW_DETAILS = {
     ratingValue: 4,
     addressLocality: 'Palma',
   },
+  'golf-andratx-review': {
+    name: 'Golf de Andratx',
+    ratingValue: 4,
+    addressLocality: 'Andratx',
+  },
 }
 
 const MONTHS = {

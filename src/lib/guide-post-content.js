@@ -484,6 +484,175 @@ export const GUIDE_POST_CONTENT = {
     },
   },
 
+  'golf-andratx-review': {
+    en: {
+      metadata: {
+        title: "Golf de Andratx Review - A PGA Professional's Honest Take (2026)",
+        description:
+          'Golf de Andratx reviewed by a PGA Professional who played it in May 2026. Mountain setting, the longest par 5 in Spain, tactical holes throughout, and what to expect from one of Mallorca\'s more challenging courses.',
+        imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+      },
+      meta: {
+        badge: 'Course Review',
+        badgeGold: true,
+        readTime: '6 min read',
+        updated: 'May 2026',
+        title: "Golf de Andratx Review - A PGA Professional's Honest Take (2026)",
+        intro:
+          'One of the more demanding courses on the island. The views from the top of the mountain are worth the trip alone. The golf asks you to think on almost every tee.',
+        related: [
+          { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
+          { slug: 'alcanada-review', title: 'Alcanada Golf: Honest Review 2026' },
+          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+          alt: 'View from hole 8 at Golf de Andratx looking down over the southwest of Mallorca',
+          caption: 'Hole 8, A Love of Mallorca. From one of the highest points on the course. The southwest corner of the island laid out below.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+          priority: true,
+        },
+        {
+          type: 'paragraph',
+          text: 'We teed off just after 8am as one of the first groups out. A small bit of a quirky start: maintenance had the opening two holes out of play, so we began on the 3rd. The practice facilities are on the other side of the road from the clubhouse, which makes the warm-up a slightly unusual experience, but there is a good short game area and a driving range on a steep slope that does the job of loosening you up before a round.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Buggies are mandatory before 2pm and the course was busy from early on. The pace of play was fine, but the morning had a slightly rushed feel at times. Golf Andratx has the reputation of one of the busier and more in-demand courses in the southwest, and that showed. It was a good morning out, and a few things could have been smoother around the edges.',
+        },
+        {
+          type: 'heading',
+          text: 'How the Course Plays',
+        },
+        {
+          type: 'paragraph',
+          text: 'Golf Andratx deserves its reputation as one of the more difficult courses on the island. The scorecard does not always reveal that at first glance. Several shorter par 4s look straightforward until you see where the hazards are placed. Creeks and water cut across fairways rather than running alongside them, so distance control off the tee matters more than length. Being slightly off on your yardage often means being in the water or in trouble.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Elevation change is constant. Tee shots where the ball disappears from view, approaches where you are committing to a number without being able to see the flag. The par 3s in particular play very differently to what is written on the card because of the drops involved. A GPS or course planner is useful here in a way it is not on most other Mallorca courses.',
+        },
+        {
+          type: 'image',
+          src: '/images/golf-andratx-blog/andratx-hole-4.jpg',
+          alt: 'Hole 4, Pine Valley, Golf de Andratx, water surrounding the green',
+          caption: 'Hole 4, Pine Valley. The water does not just border this hole, it surrounds it. The green slopes in a way that makes the right number on your approach the priority.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'paragraph',
+          text: 'The wind adds another layer. The course sits up in the mountains above Andratx and Camp del Mar, and when it picks up, distance judgement on the par 3s becomes the main challenge. We played in good conditions early on but felt gusts on the higher holes later in the round.',
+        },
+        {
+          type: 'heading',
+          text: 'Some Holes Worth Playing Twice',
+        },
+        {
+          type: 'paragraph',
+          text: 'The course has official names on the tee boxes for several holes, which gives you a sense of the character each one is trying to deliver.',
+        },
+        {
+          type: 'image',
+          src: '/images/golf-andratx-blog/andratx-hole-6.jpg',
+          alt: 'Hole 6, Green Monster, the longest par 5 in Spain at Golf de Andratx',
+          caption: 'Hole 6, Green Monster. The longest par 5 in Spain. Maintained by greenkeeping robots, which you notice when you see how consistent the surface is at that scale. We had the wind and it still took everything.',
+          presentation: 'natural',
+          naturalWidth: 893,
+          naturalHeight: 1406,
+        },
+        {
+          type: 'image',
+          src: '/images/golf-andratx-blog/andratx-hole-7.jpg',
+          alt: 'Tee shot on hole 7 at Golf de Andratx with stone walls in front of the green',
+          caption: 'Hole 7. The stone walls block your view of the green from the tee. You are picking a line and committing to it without seeing where you are going.',
+          presentation: 'natural',
+          naturalWidth: 1284,
+          naturalHeight: 1643,
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 12 has a sharp dogleg right and views down over Camp del Mar for the whole hole. One of the more memorable on the course. Hole 15, Hello Mrs Robinson, plays around 20 yards shorter from a highly elevated tee, which sounds helpful until you realise the green is well protected and getting the right number in that situation is harder than it looks.',
+        },
+        {
+          type: 'image',
+          src: '/images/golf-andratx-blog/andratx-hole-15.jpg',
+          alt: 'Elevated tee shot on hole 15, Hello Mrs Robinson, at Golf de Andratx',
+          caption: 'Hole 15, Hello Mrs Robinson. The drop from the tee plays around 20 yards shorter. Distance control is the whole challenge here.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 18 finishes with water making the par 5 hard to attack in two. Bunkers protect well beyond that. A strong closing hole that sums up the course: distance is available, but accuracy is the real test.',
+        },
+        {
+          type: 'image',
+          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.jpg',
+          alt: 'Hole 2 at Golf de Andratx with Camp del Mar visible in the background',
+          caption: 'Hole 2. Despite spending most of the round high in the mountains, this was the first time the sea came into view. Camp del Mar sits in the background. A good note to finish on.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'heading',
+          text: 'Greens and Condition',
+        },
+        {
+          type: 'paragraph',
+          text: 'The greens were well maintained and at a good pace. Plenty of slope on several of the shorter holes, which will become a bigger challenge as the greens quicken up through summer. The bunkers were in excellent condition throughout. Consistent sand, well raked. The greenkeeping team were working on multiple areas during our round, and the bunkers showed where their focus has been.',
+        },
+        {
+          type: 'paragraph',
+          text: 'The buggies are modern and well equipped. Worth mentioning: somewhere around hole 16 I noticed the buggy screen seemed to be showing where our ball had come to rest on the green. I am not certain that is exactly what it was doing, but after that point it appeared to track ball position with some accuracy. A small detail, but a useful one.',
+        },
+        {
+          type: 'facts',
+          items: [
+            ['~€125', 'Green fee (May 2026)'],
+            ['7.5/10', 'Andy\'s rating'],
+            ['Par 71', 'Mountain layout'],
+            ['SW Mallorca', 'Above Andratx town'],
+          ],
+        },
+        {
+          type: 'heading',
+          text: 'Practical Information',
+        },
+        {
+          type: 'paragraph',
+          text: 'Green fee in May 2026 was around €125 per person. Buggies are mandatory before 2pm and are charged separately. Golf insurance of €3 is required at check-in. Yellow tees are the right choice for most visiting golfers. The course is in the southwest of the island, around 20 minutes from Palma depending on where you are staying. Andratx town itself is just a few minutes away.',
+        },
+        {
+          type: 'paragraph',
+          text: 'The course plays harder than the yardage suggests, particularly on a windy day. A second visit would produce a better score. The layout rewards local knowledge and course management far more than it rewards length.',
+        },
+        {
+          type: 'heading',
+          text: 'Verdict',
+        },
+        {
+          type: 'paragraph',
+          text: 'Golf Andratx is a 7.5 out of 10. The setting in the mountains above Camp del Mar is the best view from a golf course I have seen in the southwest of the island. The layout asks proper questions throughout, the long par 5 is genuinely the longest in Spain and plays every metre of it, and several holes will stay in the memory. The course has areas that could be tidied up in presentation, and the mandatory buggy policy and busy atmosphere make the morning feel more managed than relaxed. Worth playing, and worth going back to with a course planner in hand.',
+        },
+        {
+          type: 'cta',
+          text: 'Want to play Golf Andratx with a PGA professional who can help you plot a way around?',
+          linkLabel: 'See the play-with-a-pro experience →',
+          href: '/play-with-a-pro',
+        },
+      ],
+    },
+  },
   'son-termes-review': {
     en: {
       metadata: {

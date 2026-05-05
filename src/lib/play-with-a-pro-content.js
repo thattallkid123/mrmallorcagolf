@@ -75,7 +75,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Experiences & Packages',
       title: 'Choose Your Day.',
-      body: 'All are private and hosted by me. Course, tee time, and coaching are included. Green fees and lunch are separate.',
+      body: 'All are private and hosted by me. For solo and group days, green fee and lunch are your own costs, confirmed when we speak. The Signature Experience is all inclusive.',
       tiers: [
         {
           eyebrow: 'A Day With Andy',
@@ -119,14 +119,14 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           eyebrow: 'The Signature Experience',
           name: 'Full Day',
           price: '€3,000+',
-          note: 'All inclusive. Andy confirms the full itinerary with you in advance.',
+          note: 'Bespoke. Andy coordinates the full itinerary with you in advance — tell us what you want from the day.',
           features: [
             'Course, tee time, and coaching',
             'Michelin-starred lunch or private chef booking',
-            'Videographer to capture highlights and produce a memento film',
-            'Spa, massage, and time to decompress properly post-golf',
-            'Private transfers throughout the day',
-            'Caddy and premium club hire included',
+            'Videographer and highlight film',
+            'Spa and post-golf recovery time',
+            'Private transfers throughout',
+            'Caddy and premium club hire options',
           ],
           button: 'Enquire →',
           href: '/contact',

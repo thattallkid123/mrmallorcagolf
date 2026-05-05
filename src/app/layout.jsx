@@ -129,7 +129,7 @@ const FAQ_SCHEMA = {
       name: "What's included in a day with Andy?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Everything. Green fee, tee time, lunch at the course restaurant, and 18 holes of on-course coaching woven throughout your round. You play alongside Andy - not taking lessons on the range. Strategy, pressure situations, real-course decisions. Post-round debrief too.',
+        text: "Andy's day rate covers his time and coaching for the full round. Green fee, buggy, and lunch are your own costs, confirmed separately before the day. Tee time and lunch reservation are arranged by Andy. You play alongside him for 18 holes - strategy, pressure situations, real-course decisions throughout. Post-round debrief included.",
       },
     },
     {
@@ -145,7 +145,7 @@ const FAQ_SCHEMA = {
       name: 'Why choose this over booking a tee time myself?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You get insight into what calculations go into each shot—not just being told to swing better. Real-course strategy: reading greens, managing risk, pressure. A PGA Advanced Professional with 20+ years\' experience playing alongside you. Course selection matched to your game. You discover your own ceiling.',
+        text: 'You get insight into what calculations go into each shot—not just being told to swing better. Real-course strategy: reading greens, managing risk, pressure. A PGA Advanced Professional with 18 years\' experience playing alongside you. Course selection matched to your game. You discover your own ceiling.',
       },
     },
     {
@@ -153,7 +153,7 @@ const FAQ_SCHEMA = {
       name: 'Can I book multiple days or customise the trip?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Yes. The Full Experience is completely bespoke: multiple courses over 3-7 days, private transport from Palma, dinners at handpicked restaurants, concierge support. Build your golf trip around how you actually want to play and live. Get in touch and we'll plan it together.",
+        text: "Yes. Multi-day trips cover two or three consecutive days across Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, and spa access. Build your golf trip around how you actually want to play. Get in touch with your dates and we'll plan it together.",
       },
     },
     {
@@ -161,7 +161,7 @@ const FAQ_SCHEMA = {
       name: 'What courses will we play?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'It depends on your game and what you want to experience. Andy has played all 22 courses on the island and builds rounds on Son Gual, Alcanada, and Santa Ponsa courses most often. He matches course to your handicap and goals - not every golfer should play the same track. See the full course guide or get in touch to discuss.',
+        text: 'It depends on your game and what you want to experience. Andy has played all 24 courses on the island and builds rounds on Son Gual, Alcanada, and Santa Ponsa most often. He matches course to your handicap and goals - not every golfer should play the same track. See the full course guide or get in touch to discuss.',
       },
     },
   ],

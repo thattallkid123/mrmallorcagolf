@@ -1,3 +1,6 @@
+# GitHub token (never commit)
+.github-token
+
 # Zoho Mail credentials (never commit these)
 zoho_mail/zoho_config.json
 zoho_mail/zoho_auth.py

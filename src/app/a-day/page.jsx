@@ -269,7 +269,7 @@ export default function ADayPage() {
             { label: 'Design', value: 'Thomas Himmel, 2007' },
             { label: 'Par', value: '72 · Championship' },
             { label: 'Green fee', value: 'Typically €109–165 per person' },
-            { label: 'Day rate', value: `${soloOffer.priceDisplay} solo all inclusive · ${groupOffer.priceDisplay} group + green fees` },
+            { label: 'Day rate', value: `${soloOffer.priceDisplay} solo · ${groupOffer.priceDisplay} group (green fee additional)` },
           ].map(({ label, value }) => (
             <div key={label}>
               <p className="a-day-facts__label">
