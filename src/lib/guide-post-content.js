@@ -520,11 +520,11 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'We teed off just after 8am as one of the first groups out. A small bit of a quirky start: maintenance had the opening two holes out of play, so we began on the 3rd. The practice facilities are on the other side of the road from the clubhouse, which makes the warm-up a slightly unusual experience, but there is a good short game area and a driving range on a steep slope that does the job of loosening you up before a round.',
+          text: 'We teed off just after 8am as one of the first groups out. A small bit of a quirky start: maintenance had the opening two holes out of play, so we began on the 3rd. The practice facilities are on the other side of the road from the clubhouse, which makes the warm-up slightly unusual, but there is a really good area to hit any short game shot you can imagine in great condition and a driving range on a steep slope that does the job of loosening you up before a round.',
         },
         {
           type: 'paragraph',
-          text: 'Buggies are mandatory before 2pm and the course was busy from early on. The pace of play was fine, but the morning had a slightly rushed feel at times. Golf Andratx has the reputation of one of the busier and more in-demand courses in the southwest, and that showed. It was a good morning out, and a few things could have been smoother around the edges.',
+          text: 'Buggies are mandatory before 2pm and the course was busy from early on. The pace of play was fine, but the morning had a slightly rushed feel at times. As we get into season, this is common everywhere, especially at one of the best and more in-demand courses in the southwest, and that showed. It was a good morning out even if a few things could have been a little smoother.',
         },
         {
           type: 'heading',
@@ -560,13 +560,8 @@ export const GUIDE_POST_CONTENT = {
           text: 'The course has official names on the tee boxes for several holes, which gives you a sense of the character each one is trying to deliver.',
         },
         {
-          type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-6.jpg',
-          alt: 'Hole 6, Green Monster, the longest par 5 in Spain at Golf de Andratx',
-          caption: 'Hole 6, Green Monster. The longest par 5 in Spain. Maintained by greenkeeping robots, which you notice when you see how consistent the surface is at that scale. We had the wind and it still took everything.',
-          presentation: 'natural',
-          naturalWidth: 893,
-          naturalHeight: 1406,
+          type: 'paragraph',
+          text: 'Hole 6, the Green Monster, is the longest par 5 in Spain. The fairway is maintained by greenkeeping robots, which you notice when you see how consistent the surface is at that scale. We had the wind with us and it still took everything.',
         },
         {
           type: 'image',
