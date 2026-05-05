@@ -557,10 +557,6 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Several holes have official names on the tee boxes.',
-        },
-        {
-          type: 'paragraph',
           text: 'Hole 6, the Green Monster, is the longest par 5 in Spain. When we played, the fairway was being maintained by greenkeeping robots, cutting the grass and you could really see how consistent the surface is at that scale. We had the wind behind us on this hole and it still took everything.',
         },
         {

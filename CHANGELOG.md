@@ -11,6 +11,8 @@ Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [a
 - [site] Copied and renamed 6 course photos to public/images/golf-andratx-blog/
 - [site] Added golf-andratx-review entry to COURSE_REVIEW_DETAILS in GuidePostView.jsx
 - [admin] Updated CLAUDE.md writing guardrails to reference MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md as mandatory
+- [site] Added golf-andratx-review translations (de, es, fr, nl, sv, zh) to guide-post-content-localized.js
+- [site] Created 6 language page files for golf-andratx-review (de/es/fr/nl/sv/zh)
 
 ## 2026-05-02
 
