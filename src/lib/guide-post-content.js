@@ -499,7 +499,7 @@ export const GUIDE_POST_CONTENT = {
         updated: 'May 2026',
         title: "Golf de Andratx Review - A PGA Professional's Honest Take (2026)",
         intro:
-          'One of the more demanding courses on the island. The views from the top of the mountain are worth the trip alone. The golf asks you to think on almost every tee.',
+          'We started on the 3rd, the robots were cutting the Green Monster, and by hole 8 we were looking down over the whole southwest of Mallorca. A 7.5 out of 10 and worth the drive.',
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf: Honest Review 2026' },
@@ -512,7 +512,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
           alt: 'View from hole 8 at Golf de Andratx looking down over the southwest of Mallorca',
-          caption: 'Hole 8, A Love of Mallorca. From one of the highest points on the course. The southwest corner of the island laid out below.',
+          caption: 'Hole 8, A Love of Mallorca. From one of the highest points on the course, looking down over the whole southwest of Mallorca.',
           presentation: 'natural',
           naturalWidth: 1200,
           naturalHeight: 1600,
@@ -532,11 +532,11 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Golf Andratx deserves its reputation as one of the more difficult courses on the island. The scorecard does not always reveal that at first glance. Several shorter par 4s look straightforward until you see where the hazards are placed. Creeks and water cut across fairways rather than running alongside them, so distance control off the tee matters more than length. Being slightly off on your yardage often means being in the water or in trouble.',
+          text: 'Golf Andratx deserves its reputation as one of the more difficult courses on the island. Several shorter par 4s look straightforward until you see where the hazards are placed. Creeks and water cut across fairways rather than running alongside them, so distance control off the tee matters more than length. Being slightly off on your yardage often means being in the water or in trouble.',
         },
         {
           type: 'paragraph',
-          text: 'Elevation change is constant. Tee shots where the ball disappears from view, approaches where you are committing to a number without being able to see the flag. The par 3s in particular play very differently to what is written on the card because of the drops involved. A GPS or course planner is useful here in a way it is not on most other Mallorca courses.',
+          text: 'Elevation change is constant. Tee shots where the ball disappears from view, approaches where you are committing to a number without being able to see the flag. The par 3s in particular play very differently to what is written on the card because of the drops involved. A GPS or course planner is genuinely worth having here.',
         },
         {
           type: 'image',
@@ -557,7 +557,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'The course has official names on the tee boxes for several holes, which gives you a sense of the character each one is trying to deliver.',
+          text: 'Several holes have official names on the tee boxes.',
         },
         {
           type: 'paragraph',
@@ -587,7 +587,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Hole 18 finishes with water making the par 5 hard to attack in two. Bunkers protect well beyond that. A strong closing hole that sums up the course: distance is available, but accuracy is the real test.',
+          text: 'Hole 18 finishes with water making the par 5 hard to attack in two, and bunkers protecting well from there. A strong closing hole.',
         },
         {
           type: 'image',
@@ -637,7 +637,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Golf Andratx is a 7.5 out of 10. The setting in the mountains above Camp del Mar is the best view from a golf course I have seen in the southwest of the island. The layout asks proper questions throughout, the long par 5 is genuinely the longest in Spain and plays every metre of it, and several holes will stay in the memory. The course has areas that could be tidied up in presentation, and the mandatory buggy policy and busy atmosphere make the morning feel more managed than relaxed. Worth playing, and worth going back to with a course planner in hand.',
+          text: 'Golf Andratx is a 7.5 out of 10. The views from the higher holes are the best I have seen in the southwest of the island. The layout is a proper test, the Green Monster is the longest par 5 in Spain and plays every metre of it, and hole 12 over Camp del Mar is one of the best holes I have played in Mallorca. The mandatory buggies before 2pm and a busy morning made it feel more managed than relaxed, but that is the reality of a course in this kind of demand. Worth playing, and worth going back to with a course planner in hand.',
         },
         {
           type: 'cta',
