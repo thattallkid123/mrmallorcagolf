@@ -561,7 +561,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Hole 6, the Green Monster, is the longest par 5 in Spain. The fairway is maintained by greenkeeping robots, which you notice when you see how consistent the surface is at that scale. We had the wind with us and it still took everything.',
+          text: 'Hole 6, the Green Monster, is the longest par 5 in Spain. When we played, the fairway was being maintained by greenkeeping robots, cutting the grass and you could really see how consistent the surface is at that scale. We had the wind behind us on this hole and it still took everything.',
         },
         {
           type: 'image',
@@ -615,7 +615,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['~€125', 'Green fee (May 2026)'],
             ['7.5/10', 'Andy\'s rating'],
-            ['Par 71', 'Mountain layout'],
+            ['Par 72', 'Mountain layout'],
             ['SW Mallorca', 'Above Andratx town'],
           ],
         },
