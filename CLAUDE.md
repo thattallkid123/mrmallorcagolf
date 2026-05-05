@@ -132,6 +132,20 @@ The homepage course cards deep-link into `/golf-courses` using these ids:
 { cls: 'course-card--5', id: 'golf-de-andratx' }
 ```
 
+## Adding a New Course Review — Full Checklist
+
+Every new course review requires ALL of these steps. Do not push until all are done.
+
+1. **Photos** — copy to `public/images/[slug]-blog/`, get naturalWidth/naturalHeight for each
+2. **guide-post-content.js** — add `'[slug]': { en: { metadata, meta, blocks } }` entry
+3. **GuidePostView.jsx** — add to `COURSE_REVIEW_DETAILS`: `'[slug]': { name, ratingValue, addressLocality }`
+4. **English page** — create `src/app/guides/[slug]/page.jsx` (6-line boilerplate, see any existing review)
+5. **Translations** — add `'[slug]'` to `LOCALIZED_GUIDE_POST_CONTENT` in `src/lib/guide-post-content-localized.js` with all 6 languages (de, es, fr, nl, sv, zh). Each language needs metadata + meta + all blocks in positional order. Hole names stay English. Facts values unchanged (labels only translated). CTA href stays `/play-with-a-pro`.
+6. **Language pages** — create `src/app/[lang]/guides/[slug]/page.jsx` for de, es, fr, nl, sv, zh (same boilerplate, change locale string)
+7. **Build check** — `npm run build` must pass before push
+8. **Push** — `git add -A && git commit -m "..." && git push`
+9. **Index** — do NOT add to `src/lib/guides-content.js` until Andy has approved the content at the live URL
+
 ## Content rules
 - English is always the master
 - Do not add content to language pages that is not present in English
