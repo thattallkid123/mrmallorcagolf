@@ -122,7 +122,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-gual-blog/sg-5.jpg',
           alt: 'Son Gual course detail',
-          caption: 'The 10th tee, right in front of the clubhouse. The par-5 stretches out ahead of you.',
+          caption: 'The 10th tee, right in front of the clubhouse. The par-4 stretches out ahead of you.',
         },
         {
           type: 'facts',
