@@ -1,3 +1,11 @@
 {
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "mrmallorcagolf.com" }],
+      "destination": "https://www.mrmallorcagolf.com/$1",
+      "permanent": true
+    }
+  ]
 }

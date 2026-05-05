@@ -3,13 +3,13 @@ import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
 const HERO_ACTIONS = {
-  en: { courses: 'View All Courses', experience: 'See the Experience' },
-  de: { courses: 'Alle Plaetze', experience: 'Erlebnis ansehen' },
-  es: { courses: 'Ver todos los campos', experience: 'Ver la experiencia' },
-  fr: { courses: 'Voir tous les parcours', experience: "Voir l'experience" },
-  nl: { courses: 'Bekijk alle banen', experience: 'Bekijk de ervaring' },
-  sv: { courses: 'Se alla banor', experience: 'Se upplevelsen' },
-  zh: { courses: '查看全部球场', experience: '查看体验' },
+  en: { courses: 'View All Courses', experience: 'See the Experience', reviews: 'Course Reviews ↓', articles: 'Guides & Articles ↓' },
+  de: { courses: 'Alle Plaetze', experience: 'Erlebnis ansehen', reviews: 'Platzbewertungen ↓', articles: 'Ratgeber & Artikel ↓' },
+  es: { courses: 'Ver todos los campos', experience: 'Ver la experiencia', reviews: 'Análisis de campos ↓', articles: 'Guías y artículos ↓' },
+  fr: { courses: 'Voir tous les parcours', experience: "Voir l'experience", reviews: 'Avis parcours ↓', articles: 'Guides & articles ↓' },
+  nl: { courses: 'Bekijk alle banen', experience: 'Bekijk de ervaring', reviews: 'Baanbeoordelingen ↓', articles: 'Gidsen & artikelen ↓' },
+  sv: { courses: 'Se alla banor', experience: 'Se upplevelsen', reviews: 'Banrecensioner ↓', articles: 'Guider & artiklar ↓' },
+  zh: { courses: '查看全部球场', experience: '查看体验', reviews: '球场评测 ↓', articles: '指南与文章 ↓' },
 }
 
 function getLocalePrefix(locale) {
@@ -61,13 +61,19 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
             <Link href={`${prefix}/play-with-a-pro`} className="btn btn--gold">
               {heroActions.experience}
             </Link>
+            <a href="#course-reviews" className="btn btn--outline-white">
+              {heroActions.reviews}
+            </a>
+            <a href="#guides-articles" className="btn btn--outline-white">
+              {heroActions.articles}
+            </a>
           </div>
         </div>
       </header>
 
       <section className="guides-index-shell">
         {content.reviewsHeading && (
-          <h2 className="guides-index-shell__heading">{content.reviewsHeading}</h2>
+          <h2 id="course-reviews" className="guides-index-shell__heading">{content.reviewsHeading}</h2>
         )}
         <div className="guides-list">
           {content.liveGuides.filter((g) => g.slug.endsWith('-review')).map((guide) => (
@@ -88,7 +94,7 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         </div>
 
         {content.articlesHeading && (
-          <h2 className="guides-index-shell__heading guides-index-shell__heading--spaced">{content.articlesHeading}</h2>
+          <h2 id="guides-articles" className="guides-index-shell__heading guides-index-shell__heading--spaced">{content.articlesHeading}</h2>
         )}
         <div className="guides-list">
           {content.liveGuides.filter((g) => !g.slug.endsWith('-review')).map((guide) => (

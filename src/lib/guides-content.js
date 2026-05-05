@@ -57,6 +57,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Mountain course - Par 70 - EUR 85-110 - 20 min from Palma',
       },
       {
+        slug: 'golf-andratx-review',
+        badge: 'Course Review',
+        badgeGold: true,
+        title: "Golf de Andratx Review - A PGA Professional's Honest Take (2026)",
+        intro:
+          'The longest par 5 in Spain, mountain views over the southwest, and a layout that rewards course management far more than length. A 7.5 out of 10.',
+        readTime: '6 min read',
+        keywords: 'Mountain course · Par 72 · ~€125 · Southwest Mallorca',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'The Experience',
         title: 'A Day at Son Gual with a PGA Professional',
@@ -188,6 +198,16 @@ export const GUIDES_CONTENT = {
           'Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.',
         readTime: '5 min de lectura',
         keywords: 'Montaña · Par 72 · EUR 110 aprox. · 20 min desde Palma',
+      },
+      {
+        slug: 'golf-andratx-review',
+        badge: 'Análisis del campo',
+        badgeGold: true,
+        title: 'Golf de Andratx - análisis honesto de un Profesional PGA (2026)',
+        intro:
+          'El par 5 más largo de España, vistas de montaña sobre el suroeste y un recorrido que premia la gestión del juego mucho más que la distancia. Un 7,5 sobre 10.',
+        readTime: '6 min',
+        keywords: 'Campo de montaña · Par 72 · ~€125 · Suroeste de Mallorca',
       },
       {
         slug: 'a-day-at-son-gual',
@@ -322,6 +342,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Bergplatz · Par 72 · ca. EUR 110 · 20 Min. von Palma',
       },
       {
+        slug: 'golf-andratx-review',
+        badge: 'Platz-Bewertung',
+        badgeGold: true,
+        title: 'Golf de Andratx Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)',
+        intro:
+          'Das längste Par 5 Spaniens, Bergblicke über den Südwesten und ein Layout, das Spielmanagement weit mehr belohnt als Weite. Eine 7,5 von 10.',
+        readTime: '6 Min.',
+        keywords: 'Bergplatz · Par 72 · ~€125 · Südwesten Mallorcas',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'Das Erlebnis',
         title: 'Ein Tag in Son Gual mit einem PGA Professional',
@@ -447,11 +477,21 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-termes-review',
         badge: 'Test de parcours',
-        title: 'Son Termes Golf, Majorque : avis honnête d’un professionnel PGA (2026)',
+        title: "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
         intro:
-          'Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu’elles n’en ont l’air et l’un des tracés les plus singuliers de l’île à ce niveau de prix.',
+          "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
         readTime: '5 min de lecture',
         keywords: 'Montagne · Par 72 · env. EUR 110 · 20 min de Palma',
+      },
+      {
+        slug: 'golf-andratx-review',
+        badge: 'Avis parcours',
+        badgeGold: true,
+        title: 'Golf de Andratx - avis honnête d\'un Professionnel PGA (2026)',
+        intro:
+          'Le par 5 le plus long d\'Espagne, des vues de montagne sur le sud-ouest et un tracé qui récompense la gestion du jeu bien plus que la distance. Un 7,5 sur 10.',
+        readTime: '6 min',
+        keywords: 'Parcours de montagne · Par 72 · ~€125 · Sud-ouest de Majorque',
       },
       {
         slug: 'a-day-at-son-gual',
@@ -586,6 +626,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Bergbaan · Par 72 · circa EUR 110 · 20 min van Palma',
       },
       {
+        slug: 'golf-andratx-review',
+        badge: 'Baanbeoordeling',
+        badgeGold: true,
+        title: 'Golf de Andratx - eerlijke beoordeling van een PGA Professional (2026)',
+        intro:
+          'De langste par 5 van Spanje, bergzichten over het zuidwesten en een layout die baanmanagement veel meer beloont dan lengte. Een 7,5 op 10.',
+        readTime: '6 min',
+        keywords: 'Bergbaan · Par 72 · ~€125 · Zuidwest-Mallorca',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'De ervaring',
         title: 'Een dag op Son Gual met een PGA Professional',
@@ -718,6 +768,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Bergsbana · Par 72 · cirka EUR 110 · 20 min från Palma',
       },
       {
+        slug: 'golf-andratx-review',
+        badge: 'Banomdöme',
+        badgeGold: true,
+        title: 'Golf de Andratx - ärlig recension av en PGA Professional (2026)',
+        intro:
+          'Spaniens längsta par 5, bergsvyer över sydväst och en layout som belönar bankhantering mycket mer än längd. En 7,5 av 10.',
+        readTime: '6 min',
+        keywords: 'Bergsbana · Par 72 · ~€125 · Sydvästra Mallorca',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'Upplevelsen',
         title: 'En dag på Son Gual med en PGA-professionell',
@@ -848,6 +908,16 @@ export const GUIDES_CONTENT = {
           '帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。',
         readTime: '5分钟',
         keywords: '山地球场 · 标准杆72 · 约 EUR 110 · 距帕尔马20分钟',
+      },
+      {
+        slug: 'golf-andratx-review',
+        badge: '球场评测',
+        badgeGold: true,
+        title: 'Golf de Andratx 高尔夫球场 - PGA 职业教练诚实评测（2026）',
+        intro:
+          '西班牙最长的标准杆5洞，俯瞰西南部的山景，以及一个更考验球场管理能力而非距离的球场。评分7.5/10。',
+        readTime: '6分钟',
+        keywords: '山地球场 · 标准杆72 · 约€125 · 马略卡西南部',
       },
       {
         slug: 'a-day-at-son-gual',

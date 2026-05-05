@@ -1474,7 +1474,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Ubicación: Port d’Alcúdia, a unos 50 minutos al norte de Palma. Merece la pena ir con tiempo y no salir corriendo al acabar.',
+            "Ubicación: Port d'Alcúdia, a unos 50 minutos al norte de Palma. Merece la pena ir con tiempo y no salir corriendo al acabar.",
         },
         { type: 'heading', text: 'La terraza del restaurante' },
         {
@@ -1587,7 +1587,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Lieu : Port d’Alcúdia, environ 50 minutes au nord de Palma. Prévoyez du temps et ne repartez pas trop vite après la partie.',
+            "Lieu : Port d'Alcúdia, environ 50 minutes au nord de Palma. Prévoyez du temps et ne repartez pas trop vite après la partie.",
         },
         { type: 'heading', text: 'La terrasse du restaurant' },
         {
@@ -2206,7 +2206,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     fr: {
       metadata: {
-        title: "Golf Santa Ponsa 1, Majorque - Avis honnête d’un professionnel PGA",
+        title: "Golf Santa Ponsa 1, Majorque - Avis honnête d'un professionnel PGA",
         description:
           'Santa Ponsa 1 à Majorque, vu par un professionnel PGA. Histoire du Tour, fairways généreux et confiance retrouvée au driver.',
         imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
@@ -2216,7 +2216,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '6 min de lecture',
         updated: 'Mars 2026',
-        title: "Golf Santa Ponsa 1, Majorque - Avis honnête d’un professionnel PGA",
+        title: "Golf Santa Ponsa 1, Majorque - Avis honnête d'un professionnel PGA",
         intro:
           "L'un des parcours les plus longs de l'île. Une vraie histoire de Tour européen. Et des fairways assez larges pour sortir le driver.",
         related: [{ slug: 'son-gual-review', title: 'Son Gual Golf - Avis honnête 2026' }],
@@ -2936,9 +2936,9 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     fr: {
       metadata: {
-        title: 'Son Termes Golf, Majorque : avis honnête d’un professionnel PGA (2026)',
+        title: "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
         description:
-          'Avis sur le golf de Son Termes à Majorque par un professionnel PGA. Vues de montagne, notes de parcours honnêtes, green-fee et profil de joueur, par quelqu’un qui l’a joué cette semaine.',
+          "Avis sur le golf de Son Termes à Majorque par un professionnel PGA. Vues de montagne, notes de parcours honnêtes, green-fee et profil de joueur, par quelqu'un qui l'a joué cette semaine.",
         imagePath: '/images/son-termes-blog/st-2.jpg',
       },
       meta: {
@@ -2946,13 +2946,13 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '5 min de lecture',
         updated: 'avril 2026',
-        title: 'Son Termes Golf, Majorque : avis honnête d’un professionnel PGA (2026)',
+        title: "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
         intro:
           'À vingt minutes de Palma, dans les montagnes de Na Burguesa. Plus de caractère que la plupart des parcours à ce niveau de prix, et de meilleures vues que partout ailleurs aussi près de la ville.',
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf : avis honnête 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf : avis honnête 2026' },
-          { slug: 'son-muntaner-review', title: 'Son Muntaner : meilleur parcours de golf d’Espagne 2025' },
+          { slug: 'son-muntaner-review', title: "Son Muntaner : meilleur parcours de golf d'Espagne 2025" },
           { slug: 'best-golf-courses-mallorca', title: 'Les meilleurs parcours de golf de Majorque 2026' },
         ],
       },
@@ -2961,7 +2961,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-termes-blog/st-2.jpg',
           alt: 'Chèvre sur le parcours de golf de Son Termes à Majorque avec Palma en arrière-plan',
-          caption: 'La balle est à moi. La chèvre n’était pas invitée. Retour, Son Termes.',
+          caption: "La balle est à moi. La chèvre n'était pas invitée. Retour, Son Termes.",
           priority: true,
           presentation: 'natural',
           naturalWidth: 3022,
@@ -2969,16 +2969,16 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'J’ai joué Son Termes un vendredi matin avec un ami classé 20 de handicap. Au retour, il commençait à manquer de balles. Le rough attrape vite, plusieurs mises en jeu laissent très peu de marge et le parcours sanctionne les erreurs d’une façon qui ne saute pas aux yeux sur la carte. C’est un résumé assez juste de ce qu’est Son Termes.',
+          text: "J'ai joué Son Termes un vendredi matin avec un ami classé 20 de handicap. Au retour, il commençait à manquer de balles. Le rough attrape vite, plusieurs mises en jeu laissent très peu de marge et le parcours sanctionne les erreurs d'une façon qui ne saute pas aux yeux sur la carte. C'est un résumé assez juste de ce qu'est Son Termes.",
         },
         {
           type: 'paragraph',
-          text: 'Son Termes se trouve dans les montagnes de Na Burguesa au-dessus de Palma. À vingt minutes du centre-ville, et pourtant dans un autre monde. Par temps clair, depuis les départs les plus hauts, on aperçoit le Castell de Bellver et la cathédrale sur l’horizon de Palma, avec la Méditerranée derrière. En venant de Shanghai, où un parcours aussi accessible et aussi spectaculaire aurait une liste d’attente de cinq ans pour devenir membre, cela reste marquant.',
+          text: "Son Termes se trouve dans les montagnes de Na Burguesa au-dessus de Palma. À vingt minutes du centre-ville, et pourtant dans un autre monde. Par temps clair, depuis les départs les plus hauts, on aperçoit le Castell de Bellver et la cathédrale sur l'horizon de Palma, avec la Méditerranée derrière. En venant de Shanghai, où un parcours aussi accessible et aussi spectaculaire aurait une liste d'attente de cinq ans pour devenir membre, cela reste marquant.",
         },
         { type: 'heading', text: 'Le parcours à pied' },
         {
           type: 'paragraph',
-          text: 'J’essaie toujours de marcher. Sur l’aller à Son Termes, cela se fait sans problème. Sur le retour, cela devient une vraie discussion avec soi-même. Certaines montées sont assez raides pour faire grimper le cardio et, au moment d’arriver sur les trous du haut, deux choses se sont produites : la vue s’est nettement améliorée et le vent s’est levé au point de rendre le contrôle des distances sur les par 3 plus délicat que ne le laissent penser les métrages. La plupart des joueurs prennent une voiturette. Par temps chaud, c’est le bon choix.',
+          text: "J'essaie toujours de marcher. Sur l'aller à Son Termes, cela se fait sans problème. Sur le retour, cela devient une vraie discussion avec soi-même. Certaines montées sont assez raides pour faire grimper le cardio et, au moment d'arriver sur les trous du haut, deux choses se sont produites : la vue s'est nettement améliorée et le vent s'est levé au point de rendre le contrôle des distances sur les par 3 plus délicat que ne le laissent penser les métrages. La plupart des joueurs prennent une voiturette. Par temps chaud, c'est le bon choix.",
         },
         {
           type: 'image',
@@ -2992,17 +2992,17 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Comment le parcours se joue' },
         {
           type: 'paragraph',
-          text: 'Son Termes n’est pas un parcours long. Plusieurs par 4 sont drivables, ou presque, ce qui laisse des fers courts ou des wedges pour l’attaque de green. Pour un joueur à faible index en quête d’un vrai test de longueur, il vaut mieux le savoir avant de partir.',
+          text: "Son Termes n'est pas un parcours long. Plusieurs par 4 sont drivables, ou presque, ce qui laisse des fers courts ou des wedges pour l'attaque de green. Pour un joueur à faible index en quête d'un vrai test de longueur, il vaut mieux le savoir avant de partir.",
         },
         {
           type: 'paragraph',
-          text: 'Ce qu’il n’a pas en longueur, il le compense par son caractère. Départs à l’aveugle, doglegs marqués, pièces d’eau artificielles placées pour cueillir précisément le coup que la plupart des golfeurs ont instinctivement envie de jouer. Sur plusieurs trous, il faut s’engager sur une ligne que l’on ne voit pas complètement. Cela rend la partie intéressante du début à la fin, et explique aussi pourquoi une deuxième visite donne presque toujours une meilleure carte.',
+          text: "Ce qu'il n'a pas en longueur, il le compense par son caractère. Départs à l'aveugle, doglegs marqués, pièces d'eau artificielles placées pour cueillir précisément le coup que la plupart des golfeurs ont instinctivement envie de jouer. Sur plusieurs trous, il faut s'engager sur une ligne que l'on ne voit pas complètement. Cela rend la partie intéressante du début à la fin, et explique aussi pourquoi une deuxième visite donne presque toujours une meilleure carte.",
         },
         {
           type: 'image',
           src: '/images/son-termes-blog/st-6.jpg',
           alt: 'Parcours de golf Son Termes à Majorque dans les montagnes de Na Burguesa',
-          caption: 'Le parcours s’ouvre au retour avec la vue sur les montagnes de Na Burguesa.',
+          caption: "Le parcours s'ouvre au retour avec la vue sur les montagnes de Na Burguesa.",
           presentation: 'natural',
           naturalWidth: 5120,
           naturalHeight: 1198,
@@ -3010,11 +3010,11 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Quelques trous à signaler' },
         {
           type: 'paragraph',
-          text: 'Le trou n°6 a été particulièrement satisfaisant pour moi. Drive quasiment jusqu’au green sur ce par 5, wedge pour le coup suivant, puis une vraie chance d’eagle manquée de peu. Les par 5 sont prenables ici et le parcours offre de vraies occasions de birdie avec un fer court en main.',
+          text: "Le trou n°6 a été particulièrement satisfaisant pour moi. Drive quasiment jusqu'au green sur ce par 5, wedge pour le coup suivant, puis une vraie chance d'eagle manquée de peu. Les par 5 sont prenables ici et le parcours offre de vraies occasions de birdie avec un fer court en main.",
         },
         {
           type: 'paragraph',
-          text: 'Le trou n°12 est le court par 3 au-dessus d’une zone boisée, avec les plus belles vues du parcours. Le drapeau est plus difficile à repérer qu’on ne l’imagine depuis le départ, et les arbres encadrent le trou d’une manière qui en fait l’un des par 3 les plus mémorables près de Palma.',
+          text: "Le trou n°12 est le court par 3 au-dessus d'une zone boisée, avec les plus belles vues du parcours. Le drapeau est plus difficile à repérer qu'on ne l'imagine depuis le départ, et les arbres encadrent le trou d'une manière qui en fait l'un des par 3 les plus mémorables près de Palma.",
         },
         {
           type: 'image',
@@ -3027,27 +3027,27 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Le trou n°13 se joue différemment de ce que la carte laisse croire. Gros dogleg, fer 9 au départ pour la garder en jeu, puis près de 175 mètres pour l’attaque de green avec une visibilité limitée sur le drapeau. J’étais plein fairway et j’avais quand même un coup d’approche en grande partie à l’aveugle. Bon trou. Le parcours en propose plusieurs comme celui-ci, où l’on s’engage sur un chiffre et où l’on découvre après coup si l’on avait vu juste.',
+          text: "Le trou n°13 se joue différemment de ce que la carte laisse croire. Gros dogleg, fer 9 au départ pour la garder en jeu, puis près de 175 mètres pour l'attaque de green avec une visibilité limitée sur le drapeau. J'étais plein fairway et j'avais quand même un coup d'approche en grande partie à l'aveugle. Bon trou. Le parcours en propose plusieurs comme celui-ci, où l'on s'engage sur un chiffre et où l'on découvre après coup si l'on avait vu juste.",
         },
         {
           type: 'paragraph',
-          text: 'Le 18 se termine en descente sur un dogleg gauche qui ramène vers le club-house. C’est une bonne conclusion. S’installer ensuite en terrasse et regarder les autres négocier ces montées est une manière très agréable de finir la partie.',
+          text: "Le 18 se termine en descente sur un dogleg gauche qui ramène vers le club-house. C'est une bonne conclusion. S'installer ensuite en terrasse et regarder les autres négocier ces montées est une manière très agréable de finir la partie.",
         },
         { type: 'heading', text: 'Les chèvres' },
         {
           type: 'paragraph',
-          text: 'Il y avait des chèvres sur plusieurs trous tout au long de la partie. Elles se comportaient comme si le parcours leur appartenait, ce qui, à bien y réfléchir, était probablement le cas avant qu’on n’y construise un golf. Tout le troupeau est venu nous regarder finir le 17. L’une d’elles observait la scène depuis un bunker sans le moindre intérêt pour l’idée de le ratisser. Un animal réellement dangereux qui, selon nous, mérite sa place sur la carte de score.',
+          text: "Il y avait des chèvres sur plusieurs trous tout au long de la partie. Elles se comportaient comme si le parcours leur appartenait, ce qui, à bien y réfléchir, était probablement le cas avant qu'on n'y construise un golf. Tout le troupeau est venu nous regarder finir le 17. L'une d'elles observait la scène depuis un bunker sans le moindre intérêt pour l'idée de le ratisser. Un animal réellement dangereux qui, selon nous, mérite sa place sur la carte de score.",
         },
         { type: 'heading', text: 'Les greens' },
         {
           type: 'paragraph',
-          text: 'Réponse honnête : ils ne sont pas au niveau de Son Gual ou d’Alcanada. Les surfaces étaient bonnes et la vitesse correcte, mais si vous avez joué récemment les meilleurs parcours de l’île, vous verrez la différence. Vu le prix et tout ce que le reste de la partie apporte, le compromis reste logique.',
+          text: "Réponse honnête : ils ne sont pas au niveau de Son Gual ou d'Alcanada. Les surfaces étaient bonnes et la vitesse correcte, mais si vous avez joué récemment les meilleurs parcours de l'île, vous verrez la différence. Vu le prix et tout ce que le reste de la partie apporte, le compromis reste logique.",
         },
         {
           type: 'image',
           src: '/images/son-termes-blog/st-4.jpg',
           alt: 'Vue panoramique de Son Termes Golf à Majorque sur les montagnes de Na Burguesa et la plaine de Palma',
-          caption: 'La vue depuis les trous du haut. Par matin clair, on distinguait le Castell de Bellver et la cathédrale sur l’horizon.',
+          caption: "La vue depuis les trous du haut. Par matin clair, on distinguait le Castell de Bellver et la cathédrale sur l'horizon.",
           presentation: 'natural',
           naturalWidth: 4032,
           naturalHeight: 3024,
@@ -3064,13 +3064,13 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Green-fees 2026' },
         {
           type: 'paragraph',
-          text: 'Le tarif plein en haute saison tourne autour de 110 €. Mieux vaut vérifier les tarifs en cours directement auprès de Son Termes avant de réserver, car ils varient selon la saison. Il existe aussi une offre multi-tours qui mérite d’être connue. Plus de détails à venir à ce sujet. Le parcours se trouve à environ 20 minutes du centre de Palma, dans les montagnes de Na Burguesa.',
+          text: "Le tarif plein en haute saison tourne autour de 110 €. Mieux vaut vérifier les tarifs en cours directement auprès de Son Termes avant de réserver, car ils varient selon la saison. Il existe aussi une offre multi-tours qui mérite d'être connue. Plus de détails à venir à ce sujet. Le parcours se trouve à environ 20 minutes du centre de Palma, dans les montagnes de Na Burguesa.",
         },
         {
           type: 'image',
           src: '/images/son-termes-blog/st-3.jpg',
           alt: 'Vue aérienne du golf Son Termes à Majorque sur le tracé avec les montagnes',
-          caption: 'Le parcours vu du ciel. Son tracé dans les montagnes est ce qui distingue Son Termes de tout le reste sur l’île à ce niveau de prix.',
+          caption: "Le parcours vu du ciel. Son tracé dans les montagnes est ce qui distingue Son Termes de tout le reste sur l'île à ce niveau de prix.",
           presentation: 'natural',
           naturalWidth: 5120,
           naturalHeight: 1198,
@@ -3078,7 +3078,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: 'Son Termes offre plus de caractère que la plupart des parcours à ce niveau de prix. Les vues du retour sont les plus belles que l’on puisse avoir aussi près de Palma. Le tracé oblige à réfléchir du début à la fin, et une deuxième partie permettrait sans doute de signer une meilleure carte. Pour un golfeur de passage qui cherche autre chose que les parcours premium, ou pour un résident qui veut un parcours avec une vraie personnalité à un tarif raisonnable, il mérite sa place dans la sélection.',
+          text: "Son Termes offre plus de caractère que la plupart des parcours à ce niveau de prix. Les vues du retour sont les plus belles que l'on puisse avoir aussi près de Palma. Le tracé oblige à réfléchir du début à la fin, et une deuxième partie permettrait sans doute de signer une meilleure carte. Pour un golfeur de passage qui cherche autre chose que les parcours premium, ou pour un résident qui veut un parcours avec une vraie personnalité à un tarif raisonnable, il mérite sa place dans la sélection.",
         },
         {
           type: 'cta',
@@ -3132,7 +3132,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Lopen of buggy?' },
         {
           type: 'paragraph',
-          text: 'Ik probeer altijd te lopen. Op de front nine van Son Termes is dat eenvoudig. Op de back nine wordt het een serieus gesprek met jezelf. Meerdere klimmetjes zijn steil genoeg om de hartslag op te jagen, en tegen de tijd dat je de bovenste holes bereikt, zijn er twee dingen gebeurd: het uitzicht is flink beter geworden en de wind is genoeg aangetrokken om afstandscontrole op de par 3’s lastiger te maken dan de yardages doen vermoeden. De meeste spelers nemen een buggy. Op een warme dag is dat gewoon de juiste keuze.',
+          text: "Ik probeer altijd te lopen. Op de front nine van Son Termes is dat eenvoudig. Op de back nine wordt het een serieus gesprek met jezelf. Meerdere klimmetjes zijn steil genoeg om de hartslag op te jagen, en tegen de tijd dat je de bovenste holes bereikt, zijn er twee dingen gebeurd: het uitzicht is flink beter geworden en de wind is genoeg aangetrokken om afstandscontrole op de par 3's lastiger te maken dan de yardages doen vermoeden. De meeste spelers nemen een buggy. Op een warme dag is dat gewoon de juiste keuze.",
         },
         {
           type: 'image',
@@ -3146,7 +3146,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Hoe de baan speelt' },
         {
           type: 'paragraph',
-          text: 'Son Termes is geen lange baan. Meerdere par 4’s zijn drivable of komen daar dichtbij, waardoor je vaak een kort ijzer of wedge overhoudt naar de green. Voor lage handicappers die vooral op zoek zijn naar een lengteproef is dat goed om vooraf te weten.',
+          text: "Son Termes is geen lange baan. Meerdere par 4's zijn drivable of komen daar dichtbij, waardoor je vaak een kort ijzer of wedge overhoudt naar de green. Voor lage handicappers die vooral op zoek zijn naar een lengteproef is dat goed om vooraf te weten.",
         },
         {
           type: 'paragraph',
@@ -3164,11 +3164,11 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Een paar holes die opvallen' },
         {
           type: 'paragraph',
-          text: 'Hole 6 gaf persoonlijk veel voldoening. Driver bijna tot aan de green op de par 5, wedge erin, eaglekans net gemist. De par 5’s zijn hier haalbaar en de baan geeft je echte birdiekansen met een kort ijzer in de hand.',
+          text: "Hole 6 gaf persoonlijk veel voldoening. Driver bijna tot aan de green op de par 5, wedge erin, eaglekans net gemist. De par 5's zijn hier haalbaar en de baan geeft je echte birdiekansen met een kort ijzer in de hand.",
         },
         {
           type: 'paragraph',
-          text: 'Hole 12 is de korte par 3 over bebost terrein met het beste uitzicht van de baan. De vlag is vanaf de tee moeilijker te vinden dan je zou verwachten, en de bomen omlijsten de hole op zo’n manier dat het een van de meest memorabele korte holes in de buurt van Palma is.',
+          text: "Hole 12 is de korte par 3 over bebost terrein met het beste uitzicht van de baan. De vlag is vanaf de tee moeilijker te vinden dan je zou verwachten, en de bomen omlijsten de hole op zo'n manier dat het een van de meest memorabele korte holes in de buurt van Palma is.",
         },
         {
           type: 'image',
@@ -3498,7 +3498,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: '山羊' },
         {
           type: 'paragraph',
-          text: '这轮球里，好几个洞都能看到山羊。它们把球场当成自己家，说句公道话，在有人把这里建成高尔夫俱乐部之前，这地方大概本来就是它们的。我们在 17 号洞推完最后一推时，整群山羊都过来围观。还有一只站在沙坑里看热闹，对“耙平沙坑”这件事毫无兴趣。绝对算得上危险动物，我们觉得应该把它写进记分卡。',
+          text: '这轮球里，好几个洞都能看到山羊。它们把球场当成自己家，说句公道话，在有人把这里建成高尔夫俱乐部之前，这地方大概本来就是它们的。我们在 17 号洞推完最后一推时，整群山羊都过来围观。还有一只站在沙坑里看热闹，对"耙平沙坑"这件事毫无兴趣。绝对算得上危险动物，我们觉得应该把它写进记分卡。',
         },
         { type: 'heading', text: '果岭' },
         {

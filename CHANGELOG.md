@@ -13,6 +13,9 @@ Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [a
 - [admin] Updated CLAUDE.md writing guardrails to reference MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md as mandatory
 - [site] Added golf-andratx-review translations (de, es, fr, nl, sv, zh) to guide-post-content-localized.js
 - [site] Created 6 language page files for golf-andratx-review (de/es/fr/nl/sv/zh)
+- [site] Added golf-andratx-review to guides index (all 7 languages: en/de/es/fr/nl/sv/zh)
+- [site] Added Course Reviews + Guides & Articles jump buttons to /guides hero (all 7 languages)
+- [site] Added anchor IDs to reviews and articles sections in GuidesIndexView.jsx
 
 ## 2026-05-02
 
