@@ -6,7 +6,21 @@ Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [a
 
 ---
 
+## 2026-05-06
+
+### Mr Mallorca Golf
+- [site] Fixed non-www to www redirect in vercel.json — resolved "Alternate page with proper canonical tag" GSC issue affecting 17 pages
+- [research] Compiled Reddit research doc (REDDIT_RESEARCH_MAY_2026.md) covering pain points, Pinehurst experience insights, gift-buyer angle, course intel from r/golf and r/Mallorca
+- [research] Added glossary with direct links to top Reddit threads and four-tier action plan (SEO pages, weekly watch, original posts, gift buyer page)
+
+### Tech / AI Workflow
+- [admin] Built Strokes Gained Analysis app for mmg-tools — navy icon, APPS.md, README update
+
+---
+
 ## 2026-05-05
+
+### Mr Mallorca Golf
 - [content] Added Golf de Andratx course review (golf-andratx-review), hidden from index pending approval
 - [site] Copied and renamed 6 course photos to public/images/golf-andratx-blog/
 - [site] Added golf-andratx-review entry to COURSE_REVIEW_DETAILS in GuidePostView.jsx
@@ -16,6 +30,7 @@ Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [a
 - [site] Added golf-andratx-review to guides index (all 7 languages: en/de/es/fr/nl/sv/zh)
 - [site] Added Course Reviews + Guides & Articles jump buttons to /guides hero (all 7 languages)
 - [site] Added anchor IDs to reviews and articles sections in GuidesIndexView.jsx
+- [site] Fixed curly apostrophe syntax errors in NL Son Termes translation (guide-post-content-localized.js line 3135+)
 
 ## 2026-05-02
 
@@ -52,7 +67,8 @@ Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [a
 ## 2026-04-30
 
 ### Mr Mallorca Golf
-- [site] Fixed internal proposal PDF page formatting; added "Clear all" button to itinerary app to reset all client fields
+- [site] Fixed internal proposal PDF page formatting; updated note template with 5% management fee wording and client offer text; added "Clear all" button to reset all client fields and rounds
+- [admin] Built Chinese golf market one-page PDF (MMG_Chinese_Onesheet.pdf) with base64-embedded images via Chrome headless
 - [admin] Built MMG Day Cost Guide HTML tool v1–v7 with course photos, toggles, map, and EN/DE/ES language switching
 - [admin] Added 24 Mallorca courses with green fees, buggy, club hire, licence, and range-ball data; removed courtesy access from client-facing tool
 - [admin] Rewrote result card descriptions — deal type, valid dates, tee time restriction on separate structured lines
@@ -67,6 +83,8 @@ Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [a
 
 ### Mr Mallorca Golf
 - [site] Polished Mallorca Deal 2026 itinerary app — logo flush top-left, tighter header, name-first title, gold rule, buggy/clubs detail display
+- [admin] Updated MMG_COURSE_MARKET_REFERENCE_2026.md with confirmed buggy prices (Alcanada €48, Pula/Capdepera/Canyamel €45, Vall d'Or €50) and club hire; added "When Prices Change" section listing all four update locations (MD, xlsx, calculator, internal, guide tools)
+- [admin] Created animated GIF logo options (shimmer/pulse/fade) for Gmail and Gravatar profile use
 - [admin] Built MMG Financial Reference spreadsheet v3 with Booking Log, Andy Profit, Day Cost Calculator, Annual Income Planner, Course Contacts, Courtesy & Rounds Log, and TO Notes tabs
 - [admin] Added Iris and Julian bookings to booking log; added courtesy agreements for 23 courses
 - [admin] Built per-course accurate pricing, TO rate margin calculator, annual income planner, pre-booking checklist, and course contacts tabs
@@ -174,6 +192,12 @@ Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [a
 ## 2026-04-21
 
 ### Mr Mallorca Golf
+- [business] Received TO rate replies: Son Servera (Pro free with 9+ players, 50% off mid/high, contract received and saved); Capdepera (no TO packages, invited to visit 11–17 May); T Golf (7 amateurs + Pro free, €110 industry rate otherwise)
+- [admin] Updated MMG_CONTACTS_PRIVATE.xlsx, MMG_CONTACTS_COURSES_AND_COURTESY.xlsx, TO_Outreach_Drafts.md, and zoho_mail.py with corrected Santa Ponsa, Son Termes, and T Golf email addresses
+- [admin] Archived redundant pricing docs (MMG_MARKET_PRICING_DOUBLE_CHECK, MMG_MARKET_PRICING_NOTES) to Archive\2026-04-10; synced full course reference into docs/ and Reference\ folder
+- [admin] Reorganized Documents\Mr Mallorca Golf\Active — renamed 5 files to clearer names, produced MMG_WHICH_FILES_TO_USE.md cheatsheet with file map, brand colours, and Cowork skill references; sent old-named files to Recycle Bin
+- [admin] Added ES course descriptions (all 24 cards, matching existing DE) to guide.mrmallorcagolf.com
+- [admin] Fixed CLAUDE.md to include changelog append instruction for all future sessions with correct date attribution
 - [business] Researched Golf Pass Mallorca (€89), Mallorca Golfcard 2026 (€164), and à la Card (€109) — confirmed terms, pricing, and Andy's direct relationships as differentiation
 - [admin] Built v1 Day Cost Guide calculator: season detection, tee time logic, Golf Pass/Golfcard/punch card calculation, breakeven analysis for 21 courses
 - [admin] Added punch card data for Son Servera, Son Termes, Vall d'Or, Capdepera, Pula; scraped live pages for 2026 pricing
@@ -220,9 +244,12 @@ Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [a
 - [content] Wrote all eight guide posts in Andy's voice from Doc 11 content
 - [seo] Set metadata for all eight posts, each targeting a specific keyword from Doc 09
 - [site] Added newsletter subscribe page, footer link, and homepage section; integrated Beehiiv embed
+- [site] Redesigned /subscribe page — wider layout, removed About Me section, fixed Beehiiv API CORS issue with server route, removed em dashes, centered CTA
 - [seo] Added telephone + logo to JSON-LD schema and created robots.txt with sitemap
-- [admin] Set up Beehiiv — configured newsletter.mrmallorcagolf.com and Cloudflare DNS records
+- [admin] Set up Beehiiv — configured newsletter.mrmallorcagolf.com and Cloudflare DNS records; set up mail.mrmallorcagolf.com for email sending; authorized Cloudflare DNS records for both
+- [admin] Created 12 Beehiiv content tags (course-review, trip-planning, best-courses, seasons, coaching, green-fees, play-with-a-pro, plus 5 course tags)
 - [social] Advised on Instagram/TikTok/YouTube/Reddit strategy and provided 3 IG bio options for launch
+- [site] Fixed Desktop archive folder — moved old session output and stale code files from Documents\Claude\Projects\Mr Mallorca Golf and cursor archive to Review folder
 
 ### Mr Mallorca Golf — Discount, Licensing, and Business Research
 - [research] Compiled full island-wide Mallorca golf discount guide covering cards, bonos, broker deals, and memberships

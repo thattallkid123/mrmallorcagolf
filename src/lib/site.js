@@ -25,6 +25,7 @@ export const REVIEW_POST_SLUGS = new Set([
   'santa-ponsa-1-review',
   'son-termes-review',
   'son-muntaner-review',
+  'golf-andratx-review',
 ])
 
 export const EN_ONLY_REVIEW_POST_SLUGS = new Set([])
