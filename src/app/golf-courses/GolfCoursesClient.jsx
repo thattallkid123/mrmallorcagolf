@@ -27,6 +27,7 @@ const SORT_UI = {
     nearest: 'Nearest to me',
     furthest: 'Furthest from me',
     locating: 'Locating…',
+    coursesWord: 'courses',
   },
   de: {
     controlsIntro: 'Nach Region filtern. Jede Karte zeigt Spitzen- und Niedrigpreis, Par, Andys persoenliche Bewertung und die wichtigsten Hinweise vor der Runde.',
@@ -36,6 +37,7 @@ const SORT_UI = {
     az: 'A-Z',
     price: 'Preis',
     nearest: 'Am naechsten',
+    coursesWord: 'Plätze',
   },
   es: {
     controlsIntro: 'Filtra por zona. Cada ficha muestra green fee pico y bajo, par, la valoracion personal de Andy y lo mas importante antes de jugar.',
@@ -45,6 +47,7 @@ const SORT_UI = {
     az: 'A-Z',
     price: 'Precio',
     nearest: 'Mas cercanos',
+    coursesWord: 'campos',
   },
   fr: {
     controlsIntro: "Filtrez par zone. Chaque fiche affiche le green fee maximum et bas, le par, la note personnelle d'Andy et les points utiles avant de jouer.",
@@ -54,6 +57,7 @@ const SORT_UI = {
     az: 'A-Z',
     price: 'Prix',
     nearest: 'Les plus proches',
+    coursesWord: 'parcours',
   },
   nl: {
     controlsIntro: "Filter op regio. Elke kaart toont de piek- en lage greenfee, par, Andy's persoonlijke beoordeling en de belangrijkste punten voor je speelt.",
@@ -63,6 +67,7 @@ const SORT_UI = {
     az: 'A-Z',
     price: 'Prijs',
     nearest: 'Dichtstbij',
+    coursesWord: 'banen',
   },
   sv: {
     controlsIntro: "Filtrera efter region. Varje kort visar hogsta och lagsta greenfee, par, Andy's personliga betyg och det viktigaste att veta innan du spelar.",
@@ -72,6 +77,7 @@ const SORT_UI = {
     az: 'A-Z',
     price: 'Pris',
     nearest: 'Narmast',
+    coursesWord: 'banor',
   },
   zh: {
     controlsIntro: '按地区筛选。每张卡片显示高峰和低价果岭费、标准杆、Andy 的个人评分，以及开打前需要了解的要点。',
@@ -81,6 +87,7 @@ const SORT_UI = {
     az: 'A-Z',
     price: '价格',
     nearest: '距我最近',
+    coursesWord: '个球场',
   },
 }
 
@@ -653,14 +660,13 @@ export default function GolfCoursesClient({ lang = 'en' }) {
 
   const visibleRegions = GOLF_COURSE_DATA.filter((region) => {
     if (activeFilter === 'all') return true
-    if (activeFilter === 'expert') return region.courses.some((course) => course.expert)
     return region.region === activeFilter
   })
 
   const allCourses = GOLF_COURSE_DATA.flatMap((region) => region.courses)
   const activeSortDirection = sortDirections[activeSort]
   const globallySortedCourses = sortCourses(
-    activeFilter === 'expert' ? allCourses.filter((course) => course.expert) : allCourses,
+    allCourses,
     activeSort,
     activeSortDirection,
     userLocation
@@ -787,7 +793,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
             <section className="region-section">
               <div className="region-header">
                 <h2 className="region-title">{t.allCourses}</h2>
-                <span className="region-count">{globallySortedCourses.length}</span>
+                <span className="region-count">{globallySortedCourses.length} {sortUi.coursesWord || 'courses'}</span>
               </div>
               {t.courseNote && (
                 <p className="region-note">{t.courseNote}</p>
@@ -798,9 +804,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
             </section>
           ) : visibleRegions.map((regionData, i) => {
             const header = regionHeaders[regionData.region]
-            const coursesToShow = activeFilter === 'expert'
-              ? regionData.courses.filter((course) => course.expert)
-              : regionData.courses
+            const coursesToShow = regionData.courses
             const sortedCourses = sortCourses(
               coursesToShow,
               activeSort,

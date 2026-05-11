@@ -241,7 +241,6 @@ export function getGolfCourseRegions(t) {
     { key: 'south', label: t.south },
     { key: 'east', label: t.east },
     { key: 'north', label: t.north },
-    { key: 'expert', label: t.expertPicks },
   ]
 }
 
