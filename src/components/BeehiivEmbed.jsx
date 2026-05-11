@@ -13,7 +13,7 @@ export default function BeehiivEmbed() {
   }, [])
 
   return (
-    <div style={{ width: '100%', maxWidth: 480 }}>
+    <div style={{ width: '100%', maxWidth: 520, overflow: 'hidden', height: 58 }}>
       <iframe
         src="https://subscribe-forms.beehiiv.com/e2f8f5dc-5fbd-4a3a-a5bb-26fc117cf9e4"
         className="beehiiv-embed"
@@ -22,7 +22,7 @@ export default function BeehiivEmbed() {
         loading="lazy"
         frameBorder="0"
         scrolling="no"
-        style={{ display: 'block', width: '100%', height: 100, border: 'none', borderRadius: 0, background: 'transparent', boxShadow: 'none' }}
+        style={{ display: 'block', width: '100%', height: 110, marginTop: -46, border: 'none', borderRadius: 0, background: 'transparent', boxShadow: 'none' }}
       />
     </div>
   )

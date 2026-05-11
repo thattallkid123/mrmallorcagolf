@@ -161,7 +161,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           <p className="form-note">{content.form.note}</p>
         </div>
 
-        <div style={{ marginTop: '1.5rem', padding: '1.25rem 1.5rem', background: 'var(--cream)', borderRadius: 2 }}>
+        <div style={{ marginTop: '1.5rem' }}>
           <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>{content.whatNext.heading}</p>
           <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', lineHeight: 1.7, margin: 0, fontFamily: "'Jost',sans-serif" }}>
             {content.whatNext.body}
@@ -171,7 +171,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
 
       <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--linen)' }}>
         <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>{content.stayInTouch.heading}</p>
-        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', lineHeight: 1.7, fontFamily: "'Jost',sans-serif" }}>{content.stayInTouch.body}</p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1rem', lineHeight: 1.7, fontFamily: "'Jost',sans-serif" }}>{content.stayInTouch.body}</p>
         <BeehiivEmbed />
       </div>
     </>
