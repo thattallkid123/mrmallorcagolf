@@ -68,7 +68,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: 'What happens next',
-      body: 'I read every enquiry personally. You\'ll hear from me within 24 hours with a course recommendation and next steps — usually sooner. If you prefer to talk directly, WhatsApp is the fastest route.',
+      body: 'I read every enquiry personally. You\'ll hear from me within 24 hours with a course recommendation and next steps - usually sooner. If you prefer to talk directly, WhatsApp is the fastest route.',
     },
     stayInTouch: {
       heading: 'Stay in touch',
@@ -141,7 +141,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: 'Was passiert als Nächstes?',
-      body: 'Ich lese jede Anfrage persönlich. Sie hören von mir innerhalb von 24 Stunden mit einer Kursempfehlung und den nächsten Schritten — normalerweise früher. Wenn Sie lieber direkt sprechen möchten, ist WhatsApp am schnellsten.',
+      body: 'Ich lese jede Anfrage persönlich. Sie hören von mir innerhalb von 24 Stunden mit einer Kursempfehlung und den nächsten Schritten - normalerweise früher. Wenn Sie lieber direkt sprechen möchten, ist WhatsApp am schnellsten.',
     },
     stayInTouch: {
       heading: 'In Kontakt bleiben',
@@ -214,7 +214,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: 'Qué ocurre a continuación',
-      body: 'Leo cada consulta personalmente. Le responderé en 24 horas con una recomendación de campo y los próximos pasos — normalmente antes. Si prefiere hablar directamente, WhatsApp es la vía más rápida.',
+      body: 'Leo cada consulta personalmente. Le responderé en 24 horas con una recomendación de campo y los próximos pasos - normalmente antes. Si prefiere hablar directamente, WhatsApp es la vía más rápida.',
     },
     stayInTouch: {
       heading: 'Mantenerse en contacto',
@@ -287,7 +287,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: 'Que se passe-t-il ensuite ?',
-      body: 'Je lis chaque demande personnellement. Vous aurez de mes nouvelles sous 24 heures avec une recommandation de parcours et les prochaines étapes — souvent plus tôt. Si vous préférez parler directement, WhatsApp est le plus rapide.',
+      body: 'Je lis chaque demande personnellement. Vous aurez de mes nouvelles sous 24 heures avec une recommandation de parcours et les prochaines étapes - souvent plus tôt. Si vous préférez parler directement, WhatsApp est le plus rapide.',
     },
     stayInTouch: {
       heading: 'Rester en contact',
@@ -360,7 +360,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: 'Wat gebeurt er daarna?',
-      body: 'Ik lees elke aanvraag persoonlijk. U hoort binnen 24 uur van mij met een baanaanbeveling en de volgende stappen — meestal eerder. Als u liever direct spreekt, is WhatsApp de snelste route.',
+      body: 'Ik lees elke aanvraag persoonlijk. U hoort binnen 24 uur van mij met een baanaanbeveling en de volgende stappen - meestal eerder. Als u liever direct spreekt, is WhatsApp de snelste route.',
     },
     stayInTouch: {
       heading: 'Blijf op de hoogte',
@@ -433,7 +433,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: 'Vad händer härnäst?',
-      body: 'Jag läser varje förfrågan personligen. Du hör av mig inom 24 timmar med en banrekommendation och nästa steg — oftast snabbare. Om du föredrar att prata direkt är WhatsApp snabbast.',
+      body: 'Jag läser varje förfrågan personligen. Du hör av mig inom 24 timmar med en banrekommendation och nästa steg - oftast snabbare. Om du föredrar att prata direkt är WhatsApp snabbast.',
     },
     stayInTouch: {
       heading: 'Håll kontakten',
@@ -508,7 +508,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: '接下来会发生什么',
-      body: '我会亲自阅读每一条咨询。24 小时内您将收到我的回复，包括球场推荐和后续步骤——通常更快。如果您希望直接沟通，WhatsApp 是最快的方式。',
+      body: '我会亲自阅读每一条咨询。24 小时内您将收到我的回复，包括球场推荐和后续步骤 - 通常更快。如果您希望直接沟通，WhatsApp 是最快的方式。',
     },
     stayInTouch: {
       heading: '保持联系',
