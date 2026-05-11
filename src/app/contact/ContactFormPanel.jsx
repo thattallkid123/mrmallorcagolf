@@ -172,9 +172,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
       <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--linen)' }}>
         <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>{content.stayInTouch.heading}</p>
         <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', lineHeight: 1.7, fontFamily: "'Jost',sans-serif" }}>{content.stayInTouch.body}</p>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <BeehiivEmbed />
-        </div>
+        <BeehiivEmbed />
       </div>
     </>
   )

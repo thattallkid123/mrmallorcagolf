@@ -1,38 +1,6 @@
-import Link from 'next/link'
 import { getContactContent } from '../../lib/contact-content'
 import ContactFormPanel from './ContactFormPanel'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
-
-const CONTACT_PAGE_LINKS = {
-  en: {
-    play: 'See the private golf day',
-    courses: 'Browse Mallorca golf courses',
-  },
-  de: {
-    play: 'Privaten Golftag ansehen',
-    courses: 'Golfplaetze auf Mallorca ansehen',
-  },
-  es: {
-    play: 'Ver el dia privado de golf',
-    courses: 'Ver campos de golf en Mallorca',
-  },
-  fr: {
-    play: 'Voir la journee golf privee',
-    courses: 'Voir les parcours de Majorque',
-  },
-  nl: {
-    play: 'Bekijk de privegolfdag',
-    courses: 'Bekijk golfbanen op Mallorca',
-  },
-  sv: {
-    play: 'Se den privata golfdagen',
-    courses: 'Se golfbanor pa Mallorca',
-  },
-  zh: {
-    play: 'See the private golf day',
-    courses: 'Browse Mallorca golf courses',
-  },
-}
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
@@ -85,7 +53,6 @@ function buildBreadcrumbSchema(locale) {
 
 export default function ContactForm({ locale = 'en' }) {
   const content = getContactContent(locale)
-  const pageLinks = CONTACT_PAGE_LINKS[locale] || CONTACT_PAGE_LINKS.en
 
   return (
     <>
@@ -164,14 +131,6 @@ export default function ContactForm({ locale = 'en' }) {
             </a>
           </div>
 
-          <div style={{ marginTop: '1.5rem', display: 'flex', gap: '0.85rem', flexWrap: 'wrap' }}>
-            <Link href={buildLocalePath('/play-with-a-pro', locale)} style={{ color: 'var(--gold)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-              {pageLinks.play}
-            </Link>
-            <Link href={buildLocalePath('/golf-courses', locale)} style={{ color: 'var(--gold)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-              {pageLinks.courses}
-            </Link>
-          </div>
         </div>
 
         <div className="contact-right">

@@ -13,7 +13,7 @@ export default function BeehiivEmbed() {
   }, [])
 
   return (
-    <div style={{ width: '100%', maxWidth: 480, margin: '0 auto', display: 'flex', justifyContent: 'center' }}>
+    <div style={{ width: '100%', maxWidth: 480 }}>
       <iframe
         src="https://subscribe-forms.beehiiv.com/e2f8f5dc-5fbd-4a3a-a5bb-26fc117cf9e4"
         className="beehiiv-embed"
