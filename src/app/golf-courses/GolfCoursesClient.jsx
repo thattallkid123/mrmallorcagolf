@@ -759,18 +759,15 @@ export default function GolfCoursesClient({ lang = 'en' }) {
         </div>
         <div className="geography__right">
           {geographyRows.map((row, i) => (
-            <div key={i} className="geo-row">
-              <span className="geo-region">{row.region}</span>
-              <span className="geo-courses">
-                {row.courses.map((course, j) => {
-                  return (
-                    <span key={j}>
-                      {j > 0 && <span className="geo-separator"> · </span>}
-                      <a href={`#${course.id}`} className={`geo-course-link${j % 2 === 0 ? ' geo-course-link--pine' : ''}`}>{course.label}</a>
-                    </span>
-                  )
-                })}
-              </span>
+            <div key={i} className="geo-region-group">
+              <h3 className="geo-region-name">{row.region}</h3>
+              <div className="geo-course-pills">
+                {row.courses.map((course, j) => (
+                  <a key={j} href={`#${course.id}`} className="geo-course-pill">
+                    {course.label}
+                  </a>
+                ))}
+              </div>
             </div>
           ))}
         </div>

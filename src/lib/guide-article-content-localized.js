@@ -1303,7 +1303,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '诚实答案是：能租到不错的杆，但不是所有选择都一样好。球场自带的租杆，从“还可以”到“将就用”都有。如果你打算认真打一两场，最好别只看最省事的选项。' },
         { type: 'paragraph', text: '先说清楚：我自己不提供租杆服务。这篇内容只是信息指南。不过如果你问我，我可以很直接地告诉你哪种方式更适合你。' },
         { type: 'heading', text: '自己的杆要不要带？' },
-        { type: 'paragraph', text: '如果你这次是明确的高尔夫之旅，而且会打三轮或以上，我建议带自己的杆。航空托运费用通常是值得的，因为手感、距离感和信心都不一样。' },
+        { type: 'paragraph', text: '如果你这次是明确的高尔夫之旅，而且会打三轮或以上，我建议带自己的杆。航空托运费用（通常€30–60单程）通常是值得的，因为手感、距离感和信心都不一样。' },
         { type: 'paragraph', text: '如果是混合型假期，只安排一两轮，租杆通常更合理。好的专业租杆公司可以送到酒店或球场，省掉你带travel bag穿机场的全部麻烦。' },
         { type: 'heading', text: '主要租杆公司' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
@@ -2028,7 +2028,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Die ehrliche Antwort: Ja, man kann hier gute Schläger leihen. Aber nicht alle Optionen sind gleich gut. Die Sets direkt am Platz reichen von ordentlich bis fragwürdig. Wer einen ernsthaften Golftag plant, sollte genauer hinschauen.' },
         { type: 'paragraph', text: 'Wichtig: Ich biete selbst keine Leihschläger als Service an. Diese Seite ist rein informativ. Wenn Sie wollen, kann ich Sie aber ehrlich in die richtige Richtung weisen.' },
         { type: 'heading', text: 'Eigene Schläger mitbringen oder nicht?' },
-        { type: 'paragraph', text: 'Wenn Sie auf einer klaren Golfreise drei oder mehr Runden spielen, bringen Sie Ihre eigenen Schläger mit. Die Airline-Kosten lohnen sich meistens - für das bessere Gefühl, die bekannten Distanzen und die Sicherheit, keine Kompromisse zu machen.' },
+        { type: 'paragraph', text: 'Wenn Sie auf einer klaren Golfreise drei oder mehr Runden spielen, bringen Sie Ihre eigenen Schläger mit. Die Airline-Kosten (typisch €30–60 pro Strecke) lohnen sich meistens - für das bessere Gefühl, die bekannten Distanzen und die Sicherheit, keine Kompromisse zu machen.' },
         { type: 'paragraph', text: 'Wenn es ein gemischter Urlaub mit ein oder zwei Runden ist, macht Leihe oft mehr Sinn. Gute Spezialanbieter liefern direkt ins Hotel oder an den Platz und ersparen Ihnen das ganze Travel-Bag-Theater am Flughafen.' },
         { type: 'heading', text: 'Die wichtigsten Leihanbieter' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
@@ -2081,7 +2081,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'La respuesta honesta es que si, aqui se pueden alquilar palos muy decentes. Pero no todas las opciones son iguales. Los sets del propio campo van de aceptables a bastante dudosos. Si va a hacer un dia serio de golf, conviene mirar algo mejor.' },
         { type: 'paragraph', text: 'Importante: yo no ofrezco alquiler de palos como servicio. Esta guia es solo informativa. Si quiere, si puedo orientarle de forma honesta sobre que opcion encaja mejor.' },
         { type: 'heading', text: 'Traer los propios o no?' },
-        { type: 'paragraph', text: 'Si va a jugar tres vueltas o mas en un viaje claramente de golf, traiga los suyos. Normalmente compensa por sensaciones, distancias conocidas y por no hacer concesiones innecesarias.' },
+        { type: 'paragraph', text: 'Si va a jugar tres vueltas o mas en un viaje claramente de golf, traiga los suyos. Los gastos de aerolinea (normalmente €30–60 por tramo) casi siempre compensan por las sensaciones, distancias conocidas y por no hacer concesiones innecesarias.' },
         { type: 'paragraph', text: 'Si es una estancia mixta con una o dos vueltas, alquilar suele tener mas sentido. Los buenos especialistas entregan directamente en el hotel o en el campo y le ahorran el circo del travel bag por el aeropuerto.' },
         { type: 'heading', text: 'Las empresas principales' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
@@ -5489,7 +5489,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "Si vous jouez trois parties ou plus sur un vrai voyage golf, prenez les votres. En general, le cout aerien se justifie pour les sensations, les distances connues et l'absence de compromis."
+          "text": "Si vous jouez trois parties ou plus sur un vrai voyage golf, prenez les votres. En general, les frais aeriens (typiquement €30–60 par trajet) se justifient pour les sensations, les distances connues et l'absence de compromis."
         },
         {
           "type": "paragraph",
@@ -5661,7 +5661,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "Speelt u drie rondes of meer op een echte golfreis, neem dan uw eigen clubs mee. De airlinekosten zijn het meestal waard voor gevoel, bekende afstanden en het vermijden van concessies."
+          "text": "Speelt u drie rondes of meer op een echte golfreis, neem dan uw eigen clubs mee. De airlinekosten (typisch €30–60 per traject) zijn het meestal waard voor gevoel, bekende afstanden en het vermijden van concessies."
         },
         {
           "type": "paragraph",
@@ -5833,7 +5833,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "Spelar du tre rundor eller fler pa en ren golfresa, ta med dina egna. Flygkostnaden brukar vara vard det for kanslan, avstanden och for att slippa kompromissa."
+          "text": "Spelar du tre rundor eller fler pa en ren golfresa, ta med dina egna. Flygkostnaden (typiskt €30–60 per sträcka) brukar vara vard det for kanslan, avstanden och for att slippa kompromissa."
         },
         {
           "type": "paragraph",

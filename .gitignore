@@ -5,6 +5,11 @@
 zoho_mail/zoho_config.json
 zoho_mail/zoho_auth.py
 
+# GA4 credentials (never commit)
+ga4_analytics/ga4_credentials.json
+ga4_analytics/ga4_oauth_client.json
+ga4_analytics/ga4_token.json
+
 # dependencies
 /node_modules
 /.pnp

@@ -1,38 +1,43 @@
 # Mr Mallorca Golf - Claude Code Context
 
-## MMG source of truth
-All brand, content, and pricing files live in:
-`C:\Users\andyg\Documents\Mr Mallorca Golf` (Google Drive synced)
+## Quick reference — tools Andy runs regularly
 
-Key files to upload when working on content or copy:
+| Task | Command |
+|------|---------|
+| GA4 analytics report | `python ga4_analytics/ga4_report.py` |
+| GA4 report (7 days) | `python ga4_analytics/ga4_report.py --days 7` |
+| Send emails via Zoho | `python zoho_mail/zoho_mail.py send-all` |
+| Check Zoho connection | `python zoho_mail/zoho_mail.py accounts` |
+| Build site locally | `npm run dev` |
+| Check before deploy | `npm run build` |
+| Deploy to production | git add -A → commit → push to main (Vercel auto-deploys) |
+| Update analytics dashboard | Run GA4 report, paste output to Claude, Claude refreshes artifact |
+
+GA4 credentials: `ga4_analytics/ga4_credentials.json` (gitignored)
+GA4 OAuth token: `ga4_analytics/ga4_token.json` (gitignored, auto-refreshes)
+GCP project: `precise-ascent-495813-r0` (MMG Analytics)
+
+## Source of truth
+All brand, content, and pricing files: `C:\Users\andyg\Documents\Mr Mallorca Golf` (Google Drive synced).
+Files inside this repo are stale copies — Documents folder always wins.
+
+Key files to upload for content or copy work:
 - `Active/MMG_MASTER.md` — brand, tone, credentials, service pricing
-- `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md` — writing guardrails
+- `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md` — writing guardrails (full authority)
 - `Reference/MMG_COURSE_MARKET_REFERENCE_2026.md` — course green fees and market info
 
-Do not use brand/content files from inside this repo — they are stale copies.
-If any file in this repo conflicts with the Documents folder, the Documents folder wins.
-
-## docs/ folder (synced reference files)
-`docs/` contains copies of operational files from `Documents/Active/`.
-These are readable during coding sessions without needing the Documents folder connected.
-Source of truth is always Documents. To sync after an update, ask Claude to "sync docs".
-Current files: `docs/MMG_BEEHIIV_SETUP.md`, `docs/MMG_CONTACTS_PUBLIC.xlsx`
-
-## Contacts & courtesy split
-Two files exist — keep them separate:
-- `Documents/Active/MMG_CONTACTS_PUBLIC.xlsx` — green fees, websites, public info only. Safe for content work and Claude.ai project upload.
-- `Documents/Private/Workbooks/MMG_CONTACTS_PRIVATE.xlsx` — contact names, emails, courtesy terms. NEVER reference in public content. Share rows in chat only when needed for outreach/booking tasks.
+## Contacts & privacy split
+- `Documents/Active/MMG_CONTACTS_PUBLIC.xlsx` — green fees, websites, public info only
+- `Documents/Private/Workbooks/MMG_CONTACTS_PRIVATE.xlsx` — contact names, emails, courtesy terms. NEVER reference in public content. Share rows in chat only when needed for outreach tasks.
 
 ## Local project path
 `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`
 
-This overrides any other path referenced in skills or older prompts. Use this for all git and npm commands.
+Use this for all git and npm commands. Overrides any other path in skills or older docs.
 
 ## Deploying to production
 
-Vercel deploys automatically when changes are pushed to `main`. Always provide Andy the full block below to copy and run in his terminal — include the project path as the first line so he can paste the whole thing.
-
-Template (Claude fills in the commit message each time):
+Vercel deploys automatically on push to `main`. Run `npm run build` in the sandbox first to confirm no errors. Then give Andy this block to paste into his terminal:
 
 ```
 cd C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
@@ -41,89 +46,25 @@ git commit -m "<message>"
 git push
 ```
 
-- Build and deploy run automatically on Vercel after push
-- Live at mrmallorcagolf.com within ~2 minutes
-- Before giving Andy this block, always run `npm run build` in the sandbox to confirm no build errors
-
-## Project overview
-Private golf day experiences site for Andy Griffiths, PGA Advanced Professional, based in Mallorca, Spain. Deployed on Vercel at `mrmallorcagolf.com`.
-
-## Delivery standard
-- The marginal cost of completeness is near zero with AI. Do the whole thing.
-- Do it right. Do it with tests. Do it with documentation.
-- Do it so well that Andy is genuinely impressed, not politely satisfied.
-- Never table work for later when the permanent fix is within reach.
-- Never leave a dangling thread when tying it off takes five more minutes.
-- Never present a workaround when the real fix exists.
-- The standard is not "good enough". It is "holy shit, that's done."
-- Search before building. Test before shipping.
-- When Andy asks for something, the answer should usually be the finished product, not a plan.
-- Time, fatigue, and complexity are not excuses for shipping something half-finished.
+Live at mrmallorcagolf.com within ~2 minutes.
 
 ## Tech stack
-- Next.js 14 App Router
-- React 18
-- JSX only, no TypeScript
-- Resend for contact form email delivery
-- Google Analytics as the only third-party script
+- Next.js 14 App Router, React 18, JSX only (no TypeScript)
+- Resend for contact form, Google Analytics only third-party script
 - No database, no auth, no CMS
 - Deployed via Vercel from `main`
 
-## Routing structure
-```text
-src/app/
-  page.jsx
-  HomePageInner.jsx
-  [page]/page.jsx
-  [lang]/[page]/page.jsx
-```
-
-Languages: `en` default, plus `de`, `es`, `fr`, `nl`, `sv`, `zh`
+Languages: `en` default + `de`, `es`, `fr`, `nl`, `sv`, `zh`
 
 ## Critical import path rule
-This is the most common source of build failures.
-
+Most common source of build failures:
 - English pages: `../../components/ComponentName`
 - Language pages: `../../../components/ComponentName`
 - `GolfCoursesClient` from a language page: `../../golf-courses/GolfCoursesClient`
 
 Never use `./GolfCoursesClient` or `../../components/GolfCoursesClient`.
 
-## Key components
-- `src/components/PageLayout.jsx`
-- `src/components/Footer.jsx`
-- `src/components/RevealObserver.jsx`
-- `src/components/CareerStrip.jsx`
-- `src/app/golf-courses/GolfCoursesClient.jsx`
-
-## Styles
-Single global stylesheet: `src/styles/globals.css`
-
-CSS variables in `:root`:
-- `--deep`
-- `--pine`
-- `--gold`
-- `--gold-light`
-- `--taupe`
-
-No CSS modules. No Tailwind.
-
-## Core pages
-- `/`
-- `/about`
-- `/coaching`
-- `/play-with-a-pro`
-- `/golf-courses`
-- `/contact`
-- `/privacy-policy`
-- `/terms`
-- `/guides/[slug]`
-
-All language variants follow the same structure under `/de/`, `/es/`, `/fr/`, `/nl/`, `/sv/`, `/zh/`.
-
 ## Homepage course ids
-The homepage course cards deep-link into `/golf-courses` using these ids:
-
 ```js
 { cls: 'course-card--1', id: 'golf-son-gual' }
 { cls: 'course-card--2', id: 'club-de-golf-alcanada' }
@@ -132,95 +73,75 @@ The homepage course cards deep-link into `/golf-courses` using these ids:
 { cls: 'course-card--5', id: 'golf-de-andratx' }
 ```
 
-## Adding a New Course Review — Full Checklist
+## Adding a New Course Review
+Full procedure with boilerplate code is in the `nextjs-mrmallorcagolf` skill — use that. Summary of steps:
 
-Every new course review requires ALL of these steps. Do not push until all are done.
-
-1. **Photos** — copy to `public/images/[slug]-blog/`, get naturalWidth/naturalHeight for each
-2. **guide-post-content.js** — add `'[slug]': { en: { metadata, meta, blocks } }` entry
-3. **GuidePostView.jsx** — add to `COURSE_REVIEW_DETAILS`: `'[slug]': { name, ratingValue, addressLocality }`
-4. **English page** — create `src/app/guides/[slug]/page.jsx` (6-line boilerplate, see any existing review)
-5. **Translations** — add `'[slug]'` to `LOCALIZED_GUIDE_POST_CONTENT` in `src/lib/guide-post-content-localized.js` with all 6 languages (de, es, fr, nl, sv, zh). Each language needs metadata + meta + all blocks in positional order. Hole names stay English. Facts values unchanged (labels only translated). CTA href stays `/play-with-a-pro`.
-6. **Language pages** — create `src/app/[lang]/guides/[slug]/page.jsx` for de, es, fr, nl, sv, zh (same boilerplate, change locale string)
-7. **Build check** — `npm run build` must pass before push
-8. **Push** — `git add -A && git commit -m "..." && git push`
-9. **Index** — do NOT add to `src/lib/guides-content.js` until Andy has approved the content at the live URL
+1. Copy photos to `public/images/[slug]-blog/`, get naturalWidth/naturalHeight for each
+2. Add entry to `guide-post-content.js` and `COURSE_REVIEW_DETAILS` in `GuidePostView.jsx`
+3. Create English `src/app/guides/[slug]/page.jsx`
+4. Add all 6 language translations to `guide-post-content-localized.js`
+5. Create 6 language `page.jsx` files
+6. Run `npm run check:i18n-release` and `npm run build` — must pass
+7. Push. Do NOT add to `guides-content.js` until Andy approves at the live URL.
 
 ## Content rules
-- English is always the master
-- Do not add content to language pages that is not present in English
-- Contact email is `andy@mrmallorcagolf.com`
+- English is always the master. Do not add content to language pages not present in English.
+- Contact email: `andy@mrmallorcagolf.com`
 - Mojibake, broken accents, and hidden English fallback are release-blocking bugs
-- Keep all content files in UTF-8 and prefer fixing corrupted source text over adding render-time cleanup
-- Before any deploy or Vercel publish, run `npm run check:text`, `npm run check:i18n-release`, and `npm run build`
-- If a localized page or guide is touched, also verify there are no stray English strings left in the non-English output
+- Keep all content files in UTF-8. Fix corrupted source text — do not add render-time cleanup.
+- Before any deploy: run `npm run check:text`, `npm run check:i18n-release`, `npm run build`
+- If a localized page or guide is touched, verify no stray English strings in non-English output
+- Do not paste text from Word, Excel, PDFs, or websites without checking accents, punctuation, and encoding
+- Phone numbers should be links, not visible public page copy
+- Club hire is blog/affiliate content only — not a service Andy provides
+- Trackman is a credential, not a Mallorca service unit
+- Never invent image captions. Use `[CAPTION]` if unknown.
+- Testimonials stay word for word unless Andy explicitly asks to change them
+- Santa Ponsa 2 must never appear as a shoot location in copy or alt text
 
 ## Writing guardrails
-ALL writing tasks must follow `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`. Upload this file at the start of any content session. Rules below are the summary — the file is the full authority.
 
-- No em dashes (non-negotiable)
-- No generic AI openings
-- No travel-brochure filler
-- No fake authority language
-- No inflated luxury wording
-- No "not X, but Y" framing
-- No "here's the truth" or "what people don't realise" hooks
-- No empty three-part fragment lines
-- No: stunning, breathtaking, nestled, seamless, elevate, unforgettable, hidden gem, curated, bespoke, vibrant, bustling, exceptional
-- No AI patterns: "The best part?", "More than just", "Whether you're...", "From X to Y", "In the heart of..."
-- Prefer specific observations over polished filler
-- Use first person only for courses Andy has genuinely played
-- Practical decisions matter more than adjectives
-- One sharp real observation beats three fancy sentences
-- Run self-check before finishing: remove em dashes, cut filler, replace vague with specific, remove AI phrases
-- If writing sounds generic or inflated, rewrite it
+**Brand voice guidelines (generated from published content — read this for any writing task):**
+`C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real\MMG_BRAND_VOICE_GUIDELINES.md`
+
+This file contains the full voice persona, sentence-level patterns from Andy's actual posts, channel-by-channel tone rules (blog, formal email, client email, Instagram MMG, Instagram personal), hard bans, verdict phrase patterns, and self-check. Read it before any draft.
+
+Full guardrails also in `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md` (Google Drive) — upload if available. The blog-writing skill also enforces these with examples and a self-check step.
+
+Hard bans: em dashes, "stunning/breathtaking/nestled/seamless/elevate/unforgettable/hidden gem/curated/bespoke/vibrant/bustling/exceptional", "The best part?", "More than just", "Whether you're...", "From X to Y", "In the heart of...", generic AI openings, travel-brochure filler, fake authority language, "not X but Y" framing.
+
+Use first person only for courses Andy has personally played.
 
 ## Business context
 - Owner: Andy Griffiths, UK PGA Advanced Professional
 - Based in Mallorca since March 2025
-- Privacy and legal pages align with GDPR and Spanish LOPDGDD
-- Payments are offline bank transfer only
-- No payment gateway on site
+- Payments are offline bank transfer only. No payment gateway on site.
+- Privacy and legal pages align with GDPR and Spanish LOPDGDD.
 
 ## Zoho Mail tool
-A Python script for sending emails from andy@mrmallorcagolf.com via the Zoho API.
+Python script for sending emails from andy@mrmallorcagolf.com via the Zoho API. Files in `zoho_mail/`:
+- `zoho_auth.py` — run once to authorise (or if token expires)
+- `zoho_mail.py` — main send tool
+- `zoho_config.json` — stores refresh token (do not commit to git)
 
-Files live in `zoho_mail/`:
-- `zoho_auth.py` — run once to authorise (only needed if token expires or on a new machine)
-- `zoho_mail.py` — the main send tool
-- `zoho_config.json` — stores the refresh token (do not commit to git)
-
-Common commands (run from `zoho_mail/`):
 ```
-python zoho_mail.py accounts                                      # check account connection
-python zoho_mail.py send-all                                      # send all emails in the EMAILS list
-python zoho_mail.py send --to "x@y.com" --subject "S" --body "B" # send a single email
+python zoho_mail.py accounts                                       # check connection
+python zoho_mail.py send-all                                       # send all emails in EMAILS list
+python zoho_mail.py send --to "x@y.com" --subject "S" --body "B"  # single email
 ```
 
-To send a new batch: edit the `EMAILS` list at the top of `zoho_mail.py`, then run `send-all`.
-
-Notes:
-- Zoho EU API sends immediately, no drafts endpoint available
-- Auth uses OAuth2 refresh token stored in `zoho_config.json`
-- If token expires, re-run `zoho_auth.py` to get a new one
-- API base: `https://mail.zoho.eu/api`
-- Account ID: `8339683000000002002` (andy@mrmallorcagolf.com)
+API base: `https://mail.zoho.eu/api` | Account ID: `8339683000000002002` | Auth: OAuth2 refresh token in `zoho_config.json`
 
 ## Changelog
-At the end of every session, append to `CHANGELOG.md` in the project root.
-- One line per meaningful thing done
-- Group under a `## YYYY-MM-DD` heading for the date the work actually happened
-- If backdating, insert the heading in the correct chronological position (most recent first)
+Append to `CHANGELOG.md` at the end of every session.
+- One line per meaningful thing done, grouped under `## YYYY-MM-DD` (most recent first)
 - Format: `- [tag] description`
-- Tags: [site] code/deploy | [content] writing/copy | [social] posts/strategy | [admin] tools/files/email | [seo] search | [business] pricing/ops
-- For coding sessions, also read `BUGS.md` before making any changes
+- Tags: `[site]` code/deploy | `[content]` writing/copy | `[social]` posts/strategy | `[admin]` tools/files/email | `[seo]` search | `[business]` pricing/ops
+- For coding sessions: read `BUGS.md` before making any changes
 
 ## What not to do
-- Do not add TypeScript
-- Do not add CSS modules or Tailwind
+- No TypeScript, CSS modules, or Tailwind
 - Do not create new components unless clearly reusable
 - Do not add `use client` unless the page needs interactivity
 - Do not modify English master pages when only fixing a language page
 - Do not trust old pricing or legacy prompts over the Active MMG docs
-- Do not paste text from Word, Excel, PDFs, or websites straight into source files without checking accents, punctuation, and encoding
-- Do not ship if you see `A`, `A`, replacement diamonds, or obvious English fallback in a foreign-language page

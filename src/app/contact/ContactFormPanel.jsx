@@ -79,31 +79,31 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           />
         </div>
 
-        <div className="form-row">
-          <div className="form-group">
-            <label htmlFor="dates">{content.form.labels.dates}</label>
-            <input
-              type="text"
-              id="dates"
-              name="dates"
-              className="form-control"
-              placeholder={content.form.placeholders.dates}
-              value={form.dates}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="handicap">{content.form.labels.handicap}</label>
-            <input
-              type="text"
-              id="handicap"
-              name="handicap"
-              className="form-control"
-              placeholder={content.form.placeholders.handicap}
-              value={form.handicap}
-              onChange={handleChange}
-            />
-          </div>
+        <div className="form-group">
+          <label htmlFor="dates">{content.form.labels.dates}</label>
+          <textarea
+            id="dates"
+            name="dates"
+            className="form-control"
+            placeholder={content.form.placeholders.dates}
+            value={form.dates}
+            onChange={handleChange}
+            style={{ minHeight: '100px' }}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="handicap">{content.form.labels.handicap} <span style={{ fontSize: '0.85em', color: 'var(--taupe)' }}>(optional)</span></label>
+          <input
+            type="text"
+            id="handicap"
+            name="handicap"
+            className="form-control"
+            placeholder={content.form.placeholders.handicap}
+            value={form.handicap}
+            onChange={handleChange}
+            style={{ height: '42px' }}
+          />
         </div>
 
         <div className="form-group">
@@ -171,8 +171,10 @@ export default function ContactFormPanel({ locale = 'en', content }) {
 
       <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--linen)' }}>
         <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>{content.stayInTouch.heading}</p>
-        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', lineHeight: 1.7, fontFamily: "'Jost',sans-serif" }}>{content.stayInTouch.body}</p>
-        <BeehiivEmbed />
+        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1.5rem', lineHeight: 1.7, fontFamily: "'Jost',sans-serif' }}>{content.stayInTouch.body}</p>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <BeehiivEmbed />
+        </div>
       </div>
     </>
   )

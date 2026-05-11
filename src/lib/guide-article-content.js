@@ -612,7 +612,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "If you're playing three rounds or more on a dedicated golf trip, think to bring them. Airline fees (typically £30-60 each way) are usually worth it for a proper trip, and there is a real advantage to playing with clubs you know, unless your clubs were hand-me-downs from two generations ago and then it is time for a new set!",
+          "If you're playing three rounds or more on a dedicated golf trip, think to bring them. Airline fees (typically €30-60 each way) are usually worth it for a proper trip, and there is a real advantage to playing with clubs you know, unless your clubs were hand-me-downs from two generations ago and then it is time for a new set!",
       },
       {
         type: 'paragraph',
