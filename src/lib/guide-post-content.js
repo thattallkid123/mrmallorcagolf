@@ -4,9 +4,9 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: "Son Gual Golf Mallorca - A PGA Professional's Honest Review (2026)",
+        title: "Son Gual Golf Mallorca Review (2026) - Green Fees, Course Conditions & Honest Take",
         description:
-          'Son Gual golf course Mallorca reviewed by a PGA Professional who plays it regularly. Green fees, difficulty, what to expect, and why Obama and Nadal both keep coming back.',
+          "Son Gual: €80–165 green fees, par 72, handicap required. I play it most weeks. Here's what it actually plays like, where it challenges you, and whether it's worth the price.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
       },
       meta: {
@@ -14,7 +14,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '7 min read',
         updated: 'March 2026',
-        title: "Son Gual Golf Mallorca - A PGA Professional's Honest Review (2026)",
+        title: "Son Gual Golf Mallorca Review (2026) - Green Fees, Course Conditions & Honest Take",
         intro:
           'My most-played course on the island. The wind is fickle, the greens are quick, and the closing stretch is as good as anything in Mallorca.',
         related: [
@@ -309,9 +309,9 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Golf Son Muntaner, Mallorca - A PGA Professional's Honest Review (2026)",
+        title: "Son Muntaner Golf Mallorca Review (2026) - Best in Spain, But Is It Worth It?",
         description:
-          "Son Muntaner golf course Mallorca reviewed by a PGA professional. Best Golf Course in Spain 2025. Green fees, course conditions, what it actually plays like, and who it suits.",
+          "Best Golf Course in Spain 2025 (World Golf Awards). €125–250 green fees, buggy included, 5 mins from Palma. I played it on a busy Saturday — here's what I found.",
         imagePath: '/images/son-muntaner-blog/sm-8.jpg',
       },
       meta: {
@@ -319,7 +319,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '6 min read',
         updated: 'April 2026',
-        title: "Golf Son Muntaner, Mallorca - A PGA Professional's Honest Review (2026)",
+        title: "Son Muntaner Golf Mallorca Review (2026) - Best in Spain, But Is It Worth It?",
         intro: "Best Golf Course in Spain at the 2025 World Golf Awards. Five minutes from Palma. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
@@ -487,9 +487,9 @@ export const GUIDE_POST_CONTENT = {
   'golf-andratx-review': {
     en: {
       metadata: {
-        title: "Golf de Andratx Review - A PGA Professional's Honest Take (2026)",
+        title: "Golf de Andratx Review (2026) - Green Fees, Difficulty & Honest Rating",
         description:
-          'Golf de Andratx reviewed by a PGA Professional who played it in May 2026. Mountain setting, the longest par 5 in Spain, tactical holes throughout, and what to expect from one of Mallorca\'s more challenging courses.',
+          "Golf de Andratx: ~€125, par 72, the longest par 5 in Spain. Mountain setting in the southwest. I played it in May 2026 — tactical layout that rewards patience far more than length.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
       },
       meta: {

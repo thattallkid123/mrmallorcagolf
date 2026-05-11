@@ -738,41 +738,8 @@ export default function GolfCoursesClient({ lang = 'en' }) {
     setActiveSort(sortKey)
   }
 
-  const geographyRows = t.geoRegions.map((row, index) => ({
-    region: cleanDisplayText(row.region),
-    courses: [...(GOLF_COURSE_DATA[index]?.courses || [])]
-      .sort((a, b) => cleanDisplayText(a.name).localeCompare(cleanDisplayText(b.name)))
-      .map((course) => ({
-        id: getShortCourseId(course.name),
-        label: cleanDisplayText(course.name),
-      })),
-  }))
-
   return (
     <>
-      <section className="geography reveal">
-        <div className="geography__left">
-          <p className="eyebrow geography__eyebrow">{t.geoEyebrow}</p>
-          <h2 className="geography__title">{t.geoH2}</h2>
-          <p className="geography__copy">{t.geoP1}</p>
-          <p className="geography__copy">{t.geoP2}</p>
-        </div>
-        <div className="geography__right">
-          {geographyRows.map((row, i) => (
-            <div key={i} className="geo-region-group">
-              <h3 className="geo-region-name">{row.region}</h3>
-              <div className="geo-course-pills">
-                {row.courses.map((course, j) => (
-                  <a key={j} href={`#${course.id}`} className="geo-course-pill">
-                    {course.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section className="course-controls-shell">
         <div id="all-courses" className="filter-tabs filter-tabs--anchored filter-tabs--primary">
           {regions.map((region) => (
@@ -785,8 +752,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
             </button>
           ))}
         </div>
-        <div className="course-controls-copy reveal">
-          <p>{sortUi.controlsIntro}</p>
+        <div className="course-controls-copy">
           <p>{sortUi.dynamicKey}</p>
         </div>
 

@@ -722,7 +722,7 @@ function blankAtAGlance(pres, gradData) {
   txt(s, "[LAYOUT TYPE]", cX + 0.1, cY + cH / 2 + 1.02, 2.8, 0.2, {
     fontFace: F.sans, fontSize: 8, color: C.taupe, charSpacing: 1.8, align: "center",
   });
-  txt(s, "????", cX + cW / 2 + 0.1, cY + cH / 2 + 0.3, 2.8, 0.62, {
+  txt(s, "[YEAR]", cX + cW / 2 + 0.1, cY + cH / 2 + 0.3, 2.8, 0.62, {
     fontFace: F.serif, fontSize: 48, color: C.pine, align: "center",
   });
   txt(s, "YEAR OPENED", cX + cW / 2 + 0.1, cY + cH / 2 + 1.02, 2.8, 0.2, {

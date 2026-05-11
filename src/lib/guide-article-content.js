@@ -4,12 +4,12 @@ import { getLocalizedGuideArticleContent } from './guide-article-content-localiz
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
     metadata: {
-      title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
+      title: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
       description:
-        'Golf costs in Mallorca 2026 - green fees, club hire, buggies, food. Complete breakdown from a PGA professional who plays here most weeks.',
+        'Exact green fees for every Mallorca golf course in 2026 — from €55 at budget courses to €250 at Son Gual and Son Muntaner. Plus club hire, buggies, and where to save.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://mrmallorcagolf.com/images/courses/palma-pitch-putt.jpg',
-      imageAlt: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
+      imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
     },
     meta: {
       badge: 'Green Fees',
@@ -400,9 +400,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'best-golf-courses-mallorca': {
     metadata: {
-      title: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
+      title: "Best Golf Courses in Mallorca 2026 - Ranked & Reviewed by a PGA Professional",
       description:
-        'The best golf courses in Mallorca ranked and reviewed by a PGA professional based on the island. Son Gual, Alcanada, Son Muntaner, and more - honest first-hand takes.',
+        'All 24 Mallorca golf courses ranked honestly by a PGA pro who lives on the island. Son Gual, Alcanada, Son Muntaner, Andratx — green fees, difficulty, and who each course suits.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
       image: 'https://mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
       imageAlt: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
@@ -571,9 +571,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'golf-club-hire-mallorca': {
     metadata: {
-      title: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
+      title: 'Golf Club Hire in Mallorca 2026 - Prices, Best Companies & Honest Advice',
       description:
-        'Golf club hire in Mallorca - which companies to use, what to pay, whether to bring your own clubs, and tips for getting the best deal. Updated for 2026.',
+        'Golf club hire in Mallorca costs €25–€65/day. I cover the best companies, what quality to expect, whether to bring your own, and where to get the best deal in 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
       image: `${SITE_ORIGIN}/images/social-preview.jpg`,
       imageAlt: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',

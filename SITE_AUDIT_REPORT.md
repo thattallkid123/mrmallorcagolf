@@ -76,7 +76,7 @@
 - Title + description are good
 - But: page layout likely shows guides as text links only (not visually)
 - Data shows Son Gual guide got 2500 views (social proof!) — but not displayed
-- No "See Experiences" link (good — avoid breaking flow), but also no visual cards
+- Do not want he "See Experiences" link (avoid breaking flow), but also no visual cards is a bad thing
 
 **Recommendation:**
 - Redesign page as visual grid: course cards with images (like homepage)

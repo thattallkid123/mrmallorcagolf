@@ -1023,7 +1023,7 @@ select.form-control { cursor: pointer; }
 .form-success p { font-size: 0.9rem; color: var(--taupe); line-height: 1.7; }
 
 /* ─── GOLF COURSES PAGE ──────────────────────────────────── */
-.geography { background: linear-gradient(180deg, rgba(248,244,236,0.98), rgba(242,235,225,0.96)); padding: 82px 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 60px; text-align: center; }
+.geography { background: linear-gradient(180deg, rgba(248,244,236,0.98), rgba(242,235,225,0.96)); padding: 82px 40px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 60px; text-align: left; }
 .geography__eyebrow { color: var(--gold); }
 .geography__title { color: var(--deep); }
 .geography__copy { color: var(--charcoal); }
@@ -1033,7 +1033,7 @@ select.form-control { cursor: pointer; }
 .geo-region-group { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
 .geo-region-group:last-child { margin-bottom: 0; }
 .geo-region-name { font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); background: var(--pine); padding: 8px 12px; display: inline-block; margin: 0 0 12px 0; border-radius: 3px; }
-.geo-course-pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.geo-course-pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; }
 .geo-course-pill { display: inline-flex; align-items: center; justify-content: center; padding: 8px 16px; background: transparent; color: var(--pine); text-decoration: none; font-size: 0.8rem; font-weight: 400; border-radius: 16px; border: 1.5px solid var(--pine); transition: background 0.3s var(--ease-luxury), color 0.3s var(--ease-luxury), transform 0.3s var(--ease-luxury); }
 .geo-course-pill:hover { background: var(--pine); color: var(--white); transform: translateY(-2px); }
 
@@ -1041,9 +1041,9 @@ select.form-control { cursor: pointer; }
 .intro-bar::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at top left, rgba(212,176,104,0.16), transparent 26%); pointer-events: none; }
 .intro-bar__text p { font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.82); line-height: 1.9; margin-bottom: 1rem; }
 .intro-bar__text--full { max-width: 100%; }
-.course-controls-shell { background: linear-gradient(135deg, #234035 0%, #2d4a3e 52%, #355849 100%); border-bottom: 1px solid rgba(255,255,255,0.08); }
-.course-controls-copy { padding: 18px 40px 28px; }
-.course-controls-copy p { font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.82); line-height: 1.9; margin-bottom: 1rem; max-width: 920px; }
+.course-controls-shell { background: var(--white); border-bottom: 1px solid var(--linen); }
+.course-controls-copy { padding: 0 40px 16px; }
+.course-controls-copy p { font-size: 0.85rem; font-weight: 300; color: var(--stone); line-height: 1.7; margin-bottom: 0; max-width: 920px; }
 .expert-label { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.72); margin-bottom: 4px; }
 .expert-name { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 500; color: #fff; margin-bottom: 8px; }
 .expert-credentials { font-size: 0.82rem; font-weight: 300; color: rgba(255,255,255,0.76); line-height: 1.75; margin-bottom: 16px; }
@@ -1053,10 +1053,10 @@ select.form-control { cursor: pointer; }
 .filter-tabs { background: var(--white); border-bottom: 1px solid var(--linen); padding: 0 40px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; position: sticky; top: var(--nav-h); z-index: 50; }
 .filter-tabs--anchored { scroll-margin-top: 80px; }
 .filter-tabs--primary { position: static; top: auto; }
-.filter-tabs--primary { background: transparent; border-bottom: 1px solid rgba(255,255,255,0.08); }
-.filter-tabs--primary .filter-tab { color: rgba(255,255,255,0.68); }
-.filter-tabs--primary .filter-tab:hover { color: #fff; }
-.filter-tabs--primary .filter-tab.active { color: #fff; border-bottom-color: var(--gold); }
+.filter-tabs--primary { background: var(--white); border-bottom: 1px solid var(--linen); }
+.filter-tabs--primary .filter-tab { color: var(--taupe); }
+.filter-tabs--primary .filter-tab:hover { color: var(--deep); }
+.filter-tabs--primary .filter-tab.active { color: var(--pine); border-bottom-color: var(--pine); }
 .filter-tabs::-webkit-scrollbar { display: none; }
 .filter-tab { font-size: 10px; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: var(--taupe); background: none; border: none; padding: 16px 20px; cursor: pointer; transition: color 0.2s; white-space: nowrap; border-bottom: 2px solid transparent; }
 .filter-tab:hover { color: var(--deep); }
@@ -1072,7 +1072,7 @@ select.form-control { cursor: pointer; }
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.76);
+  color: var(--stone);
   font-family: var(--font-sans);
 }
 .sort-controls__grid {
@@ -1088,18 +1088,18 @@ select.form-control { cursor: pointer; }
   min-height: 42px;
   padding: 10px 14px;
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.86);
-  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--taupe);
+  border: 1px solid var(--linen);
   background: transparent;
   border-bottom-width: 1px;
   text-align: center;
 }
 .sort-controls .filter-tab:hover {
-  color: #fff;
-  border-color: rgba(255,255,255,0.3);
+  color: var(--deep);
+  border-color: var(--sand);
 }
 .sort-controls .filter-tab.active {
-  color: var(--cream);
+  color: var(--white);
   background: var(--pine);
   border-color: var(--pine);
 }

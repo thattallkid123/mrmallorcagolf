@@ -48,9 +48,9 @@ const HOME_METADATA = {
 
 const GOLF_COURSES_METADATA = {
   en: {
-    title: 'Mallorca Golf Courses Guide 2026',
+    title: 'Mallorca Golf Courses 2026 - All 24 Courses, Green Fees & Honest Reviews',
     description:
-      'Compare every Mallorca golf course, green-fee access, regions, difficulty, and honest PGA recommendations for planning your 2026 golf trip.',
+      'Every golf course in Mallorca compared: green fees (€55–€250), par, difficulty, regions, and first-hand PGA recommendations. Updated 2026.',
   },
   de: {
     title: 'Mallorca Golf Guide 2026 - Jeder Kurs auf der Insel',
