@@ -47,6 +47,55 @@ function getLocalePrefix(locale) {
   return locale === 'en' ? '' : `/${locale}`
 }
 
+function GuideCarousel({ id, heading, guides, prefix, priorityFirst = false, dark = false }) {
+  return (
+    <section className={`guides-carousel-section${dark ? ' guides-carousel-section--dark' : ''}`} id={id}>
+      {heading && (
+        <div className="guides-carousel-section__header">
+          <p className={`eyebrow${dark ? ' eyebrow--light' : ''}`}>{heading}</p>
+          <p className="guides-carousel-section__hint" style={dark ? { color: 'rgba(255,255,255,0.4)' } : {}}>← scroll →</p>
+        </div>
+      )}
+      <div className="guides-carousel__track">
+        {guides.map((guide, i) => {
+          const img = guide.img
+            ? { src: guide.img, position: guide.imgPosition || 'center 40%' }
+            : GUIDE_IMAGES[guide.slug]
+          return (
+            <Link
+              key={guide.slug}
+              href={`${prefix}/guides/${guide.slug}`}
+              className="guide-photo-card reveal"
+            >
+              {/* clip-shell contains the image zoom so it never bleeds outside the card */}
+              <div className="guide-photo-card__clip">
+                {img && (
+                  <div className="guide-photo-card__bg">
+                    <Image
+                      src={img.src}
+                      alt={guide.title}
+                      fill
+                      sizes="348px"
+                      style={{ objectFit: 'cover', objectPosition: img.position }}
+                      priority={priorityFirst && i === 0}
+                    />
+                  </div>
+                )}
+                <div className="guide-photo-card__overlay" />
+              </div>
+              <span className="guide-photo-card__badge">{guide.badge}</span>
+              <div className="guide-photo-card__content">
+                <h2 className="guide-photo-card__title">{shortTitle(guide.title)}</h2>
+                <p className="guide-photo-card__keywords">{guide.keywords}</p>
+              </div>
+            </Link>
+          )
+        })}
+      </div>
+    </section>
+  )
+}
+
 export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const prefix = getLocalePrefix(locale)
   const pageLayoutLang = pageLang || locale
@@ -100,92 +149,23 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
       </header>
 
       {/* ── Course Reviews Carousel ───────────────────────────────────── */}
-      <section className="guides-carousel-section" id="course-reviews">
-        {content.reviewsHeading && (
-          <div className="guides-carousel-section__header">
-            <p className="eyebrow">{content.reviewsHeading}</p>
-            <p className="guides-carousel-section__hint">← scroll →</p>
-          </div>
-        )}
-        <div className="guides-carousel__track">
-          {reviewGuides.map((guide, i) => {
-            const img = guide.img
-              ? { src: guide.img, position: guide.imgPosition || 'center 40%' }
-              : GUIDE_IMAGES[guide.slug]
-            return (
-              <Link
-                key={guide.slug}
-                href={`${prefix}/guides/${guide.slug}`}
-                className="guide-photo-card reveal"
-              >
-                {img && (
-                  <div className="guide-photo-card__bg">
-                    <Image
-                      src={img.src}
-                      alt={guide.title}
-                      fill
-                      sizes="348px"
-                      style={{ objectFit: 'cover', objectPosition: img.position }}
-                      priority={i === 0}
-                    />
-                  </div>
-                )}
-                <div className="guide-photo-card__overlay" />
-                <span className={`guide-photo-card__badge${guide.badgeGold ? '' : ' guide-photo-card__badge--plain'}`}>{guide.badge}</span>
-                <div className="guide-photo-card__content">
-                  <h2 className="guide-photo-card__title">{shortTitle(guide.title)}</h2>
-                  <p className="guide-photo-card__keywords">{guide.keywords}</p>
-                </div>
-              </Link>
-            )
-          })}
-        </div>
-      </section>
+      <GuideCarousel
+        id="course-reviews"
+        heading={content.reviewsHeading}
+        guides={reviewGuides}
+        prefix={prefix}
+        priorityFirst
+      />
 
-      {/* ── Guides & Articles Grid ────────────────────────────────────── */}
+      {/* ── Guides & Articles Carousel ───────────────────────────────── */}
       {articleGuides.length > 0 && (
-        <section className="guides-articles-section" id="guides-articles">
-          {content.articlesHeading && (
-            <div className="guides-articles-section__header">
-              <p className="eyebrow">{content.articlesHeading}</p>
-            </div>
-          )}
-          <div className="guides-articles-grid">
-            {articleGuides.map((guide) => {
-              const img = guide.img
-              ? { src: guide.img, position: guide.imgPosition || 'center 40%' }
-              : GUIDE_IMAGES[guide.slug]
-              return (
-                <Link
-                  key={guide.slug}
-                  href={`${prefix}/guides/${guide.slug}`}
-                  className="guide-article-card reveal"
-                >
-                  {img && (
-                    <div className="guide-article-card__img">
-                      <Image
-                        src={img.src}
-                        alt={guide.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        style={{ objectFit: 'cover', objectPosition: img.position }}
-                      />
-                    </div>
-                  )}
-                  <div className="guide-article-card__body">
-                    <div className="guide-article-card__meta">
-                      <span className="guide-entry__badge">{guide.badge}</span>
-                      <span className="guide-entry__read-time">{guide.readTime}</span>
-                    </div>
-                    <h2 className="guide-article-card__title">{guide.title}</h2>
-                    <p className="guide-article-card__intro">{guide.intro}</p>
-                    <p className="guide-article-card__keywords">{guide.keywords}</p>
-                  </div>
-                </Link>
-              )
-            })}
-          </div>
-        </section>
+        <GuideCarousel
+          id="guides-articles"
+          heading={content.articlesHeading}
+          guides={articleGuides}
+          prefix={prefix}
+          dark
+        />
       )}
 
       <section className="cta-final">
