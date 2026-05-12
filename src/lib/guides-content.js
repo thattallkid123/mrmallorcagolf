@@ -14,6 +14,8 @@ export const GUIDES_CONTENT = {
         slug: 'son-muntaner-review',
         badge: 'Course Review',
         badgeGold: true,
+        img: '/images/son-muntaner-card.webp',
+        imgPosition: 'center 30%',
         title: "Golf Son Muntaner, Mallorca — A PGA Professional's Honest Review (2026)",
         intro:
           "Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
@@ -23,6 +25,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-gual-review',
         badge: 'Course Review',
+        img: '/images/son-gual-card.webp',
+        imgPosition: 'center 40%',
         title: "Son Gual Golf Mallorca - A PGA Professional's Honest Review (2026)",
         intro:
           'My most-played course on the island. The wind, the greens, the closing stretch, and why Obama and Nadal both keep coming back.',
@@ -32,6 +36,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'alcanada-review',
         badge: 'Course Review',
+        img: '/images/alcanada-card.webp',
+        imgPosition: 'center 50%',
         title: "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)",
         intro:
           'The course I take people to when I want them to come home with a story. The lighthouse changes everything.',
@@ -41,6 +47,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'santa-ponsa-1-review',
         badge: 'Course Review',
+        img: '/images/santa-ponsa-card.webp',
+        imgPosition: 'center 40%',
         title: "Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026)",
         intro:
           "One of Europe's longest courses, real DP World Tour history, and one of the easiest places on the island to enjoy hitting driver.",
@@ -50,6 +58,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'son-termes-review',
         badge: 'Course Review',
+        img: '/images/courses/son-termes.webp',
+        imgPosition: 'center 40%',
         title: "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
         intro:
           'Mountain views above Palma, tighter driving lines than people expect, and one of the most distinctive layouts at this price point on the island.',
@@ -60,6 +70,8 @@ export const GUIDES_CONTENT = {
         slug: 'golf-andratx-review',
         badge: 'Course Review',
         badgeGold: true,
+        img: '/images/andratx-card.webp',
+        imgPosition: 'center 40%',
         title: "Golf de Andratx Review - A PGA Professional's Honest Take (2026)",
         intro:
           'The longest par 5 in Spain, mountain views over the southwest, and a layout that rewards course management far more than length. A 7.5 out of 10.',
@@ -69,6 +81,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'a-day-at-son-gual',
         badge: 'The Experience',
+        img: '/images/son-gual-blog/sg-hero.webp',
+        imgPosition: 'center 35%',
         title: 'A Day at Son Gual with a PGA Professional',
         intro:
           "What actually happens when you spend a full day on Mallorca's finest course with a coach who plays it most weeks.",
@@ -78,6 +92,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guide',
+        img: '/images/blog-best-golf-courses/Son Gual.webp',
+        imgPosition: 'center 50%',
         title: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Ranking",
         intro:
           'Twenty-four courses on the island. Here is how I would rank them for a visitor with limited time and high standards.',
@@ -87,6 +103,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'is-mallorca-good-for-golf',
         badge: 'Guide',
+        img: '/images/blog-is-mallorca-good/Son Gual.jpg',
+        imgPosition: 'center 40%',
         title: 'Is Mallorca Good for Golf? An Honest Answer from Someone Who Lives Here',
         intro:
           'The honest version - what the island does better than Portugal, where it falls short, and who it suits.',
@@ -96,6 +114,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-time-play-golf-mallorca',
         badge: 'Guide',
+        img: '/images/blog-best-time-play/Son Severa Sunny Golf.jpg',
+        imgPosition: 'center 50%',
         title: 'The Best Time to Play Golf in Mallorca - Month by Month',
         intro:
           'October is the month I would choose. Here is why, and what each month actually delivers in terms of weather, price, and crowds.',
@@ -105,6 +125,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'golf-cost-mallorca',
         badge: 'Guide',
+        img: '/images/blog-golf-cost/Alcanada.webp',
+        imgPosition: 'center 40%',
         title: 'How Much Does Golf Cost in Mallorca? Green Fees, Hire, and Hidden Costs',
         intro:
           'The full picture on what a golf trip here actually costs - green fees, hire, caddies, and where you can save without compromising.',
@@ -114,6 +136,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'golf-trip-planning-mallorca',
         badge: 'Guide',
+        img: '/images/blog-trip-planning/Son Gual.jpg',
+        imgPosition: 'center 50%',
         title: 'Planning a Golf Trip to Mallorca - Everything You Need to Know',
         intro:
           'Flights, courses, staying near the golf, getting between venues. The practical guide I wish existed when I moved here.',
@@ -123,6 +147,8 @@ export const GUIDES_CONTENT = {
       {
         slug: 'golf-club-hire-mallorca',
         badge: 'Practical Guide',
+        img: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        imgPosition: 'center 50%',
         title: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
         intro:
           'Should you bring your own clubs? Which hire companies are worth using? What should you pay? Answered honestly.',

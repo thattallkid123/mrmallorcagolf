@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 
@@ -12,6 +13,23 @@ const HERO_ACTIONS = {
   zh: { experience: '查看体验', reviews: '球场评测 ↓', articles: '指南与文章 ↓' },
 }
 
+// Image map keyed by slug — no need to touch content files
+const GUIDE_IMAGES = {
+  'son-muntaner-review':        { src: '/images/son-muntaner-card.webp',                          position: 'center 30%' },
+  'son-gual-review':            { src: '/images/son-gual-card.webp',                              position: 'center 40%' },
+  'alcanada-review':            { src: '/images/alcanada-card.webp',                              position: 'center 50%' },
+  'santa-ponsa-1-review':       { src: '/images/santa-ponsa-card.webp',                           position: 'center 40%' },
+  'son-termes-review':          { src: '/images/courses/son-termes.webp',                         position: 'center 40%' },
+  'golf-andratx-review':        { src: '/images/andratx-card.webp',                               position: 'center 40%' },
+  'a-day-at-son-gual':          { src: '/images/son-gual-blog/sg-hero.webp',                      position: 'center 35%' },
+  'best-golf-courses-mallorca': { src: '/images/blog-best-golf-courses/Son Gual.webp',            position: 'center 50%' },
+  'is-mallorca-good-for-golf':  { src: '/images/blog-is-mallorca-good/Son Gual.jpg',              position: 'center 40%' },
+  'best-time-play-golf-mallorca': { src: '/images/blog-best-time-play/Son Severa Sunny Golf.jpg', position: 'center 50%' },
+  'golf-cost-mallorca':         { src: '/images/blog-golf-cost/Alcanada.webp',                    position: 'center 40%' },
+  'golf-trip-planning-mallorca':{ src: '/images/blog-trip-planning/Son Gual.jpg',                 position: 'center 50%' },
+  'golf-club-hire-mallorca':    { src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',   position: 'center 50%' },
+}
+
 function getLocalePrefix(locale) {
   return locale === 'en' ? '' : `/${locale}`
 }
@@ -20,6 +38,9 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const prefix = getLocalePrefix(locale)
   const pageLayoutLang = pageLang || locale
   const heroActions = HERO_ACTIONS[locale] || HERO_ACTIONS.en
+
+  const reviewGuides = content.liveGuides.filter((g) => g.slug.endsWith('-review') || g.slug === 'a-day-at-son-gual')
+  const articleGuides = content.liveGuides.filter((g) => !g.slug.endsWith('-review') && g.slug !== 'a-day-at-son-gual')
 
   return (
     <PageLayout lang={pageLayoutLang}>
@@ -68,49 +89,100 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         </div>
       </header>
 
-      <section className="guides-index-shell">
+      {/* ── Course Reviews Carousel ───────────────────────────────────── */}
+      <section className="guides-carousel-section" id="course-reviews">
         {content.reviewsHeading && (
-          <h2 id="course-reviews" className="guides-index-shell__heading">{content.reviewsHeading}</h2>
+          <div className="guides-carousel-section__header">
+            <p className="eyebrow">{content.reviewsHeading}</p>
+            <p className="guides-carousel-section__hint">← scroll →</p>
+          </div>
         )}
-        <div className="guides-list">
-          {content.liveGuides.filter((g) => g.slug.endsWith('-review')).map((guide) => (
-            <Link
-              key={guide.slug}
-              href={`${prefix}/guides/${guide.slug}`}
-              className="guide-entry guide-entry--live reveal"
-            >
-              <div className="guide-entry__meta">
-                <span className="guide-entry__badge">{guide.badge}</span>
-                <span className="guide-entry__read-time">{guide.readTime}</span>
-              </div>
-              <h2 className="guide-entry__title">{guide.title}</h2>
-              <p className="guide-entry__intro">{guide.intro}</p>
-              <p className="guide-entry__keywords">{guide.keywords}</p>
-            </Link>
-          ))}
-        </div>
-
-        {content.articlesHeading && (
-          <h2 id="guides-articles" className="guides-index-shell__heading guides-index-shell__heading--spaced">{content.articlesHeading}</h2>
-        )}
-        <div className="guides-list">
-          {content.liveGuides.filter((g) => !g.slug.endsWith('-review')).map((guide) => (
-            <Link
-              key={guide.slug}
-              href={`${prefix}/guides/${guide.slug}`}
-              className="guide-entry guide-entry--live reveal"
-            >
-              <div className="guide-entry__meta">
-                <span className="guide-entry__badge">{guide.badge}</span>
-                <span className="guide-entry__read-time">{guide.readTime}</span>
-              </div>
-              <h2 className="guide-entry__title">{guide.title}</h2>
-              <p className="guide-entry__intro">{guide.intro}</p>
-              <p className="guide-entry__keywords">{guide.keywords}</p>
-            </Link>
-          ))}
+        <div className="guides-carousel__track">
+          {reviewGuides.map((guide, i) => {
+            const img = guide.img
+              ? { src: guide.img, position: guide.imgPosition || 'center 40%' }
+              : GUIDE_IMAGES[guide.slug]
+            return (
+              <Link
+                key={guide.slug}
+                href={`${prefix}/guides/${guide.slug}`}
+                className="guide-photo-card reveal"
+              >
+                {img && (
+                  <div className="guide-photo-card__bg">
+                    <Image
+                      src={img.src}
+                      alt={guide.title}
+                      fill
+                      sizes="348px"
+                      style={{ objectFit: 'cover', objectPosition: img.position }}
+                      priority={i === 0}
+                    />
+                  </div>
+                )}
+                <div className="guide-photo-card__overlay" />
+                {guide.badgeGold && (
+                  <span className="guide-photo-card__badge">{guide.badge}</span>
+                )}
+                <div className="guide-photo-card__content">
+                  {!guide.badgeGold && (
+                    <span className="guide-photo-card__badge guide-photo-card__badge--plain">{guide.badge}</span>
+                  )}
+                  <h2 className="guide-photo-card__title">{guide.title}</h2>
+                  <p className="guide-photo-card__intro">{guide.intro}</p>
+                  <p className="guide-photo-card__keywords">{guide.keywords}</p>
+                </div>
+              </Link>
+            )
+          })}
         </div>
       </section>
+
+      {/* ── Guides & Articles Grid ────────────────────────────────────── */}
+      {articleGuides.length > 0 && (
+        <section className="guides-articles-section" id="guides-articles">
+          {content.articlesHeading && (
+            <div className="guides-articles-section__header">
+              <p className="eyebrow">{content.articlesHeading}</p>
+            </div>
+          )}
+          <div className="guides-articles-grid">
+            {articleGuides.map((guide) => {
+              const img = guide.img
+              ? { src: guide.img, position: guide.imgPosition || 'center 40%' }
+              : GUIDE_IMAGES[guide.slug]
+              return (
+                <Link
+                  key={guide.slug}
+                  href={`${prefix}/guides/${guide.slug}`}
+                  className="guide-article-card reveal"
+                >
+                  {img && (
+                    <div className="guide-article-card__img">
+                      <Image
+                        src={img.src}
+                        alt={guide.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        style={{ objectFit: 'cover', objectPosition: img.position }}
+                      />
+                    </div>
+                  )}
+                  <div className="guide-article-card__body">
+                    <div className="guide-article-card__meta">
+                      <span className="guide-entry__badge">{guide.badge}</span>
+                      <span className="guide-entry__read-time">{guide.readTime}</span>
+                    </div>
+                    <h2 className="guide-article-card__title">{guide.title}</h2>
+                    <p className="guide-article-card__intro">{guide.intro}</p>
+                    <p className="guide-article-card__keywords">{guide.keywords}</p>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </section>
+      )}
 
       <section className="cta-final">
         <div className="cta-final__left reveal">

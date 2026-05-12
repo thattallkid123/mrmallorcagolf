@@ -84,6 +84,18 @@ Full procedure with boilerplate code is in the `nextjs-mrmallorcagolf` skill —
 6. Run `npm run check:i18n-release` and `npm run build` — must pass
 7. Push. Do NOT add to `guides-content.js` until Andy approves at the live URL.
 
+## Guides Index — Image Cards (guides-content.js)
+The guides index (`/guides`) shows course reviews as a horizontal scroll photo carousel and articles as an image card grid. Every guide entry in the **English** `liveGuides` array in `guides-content.js` must include:
+
+```js
+img: '/images/[slug]-blog/[hero].webp',  // card image path
+imgPosition: 'center 40%',               // CSS object-position for cropping
+```
+
+For course reviews: prefer the `-card.webp` file from `public/images/` (e.g. `/images/son-gual-card.webp`).
+For articles: use the best editorial photo from the guide's blog image folder.
+Non-English locale entries do NOT need `img`/`imgPosition` — the view falls back to the static `GUIDE_IMAGES` map in `GuidesIndexView.jsx`. When adding a new guide, also add it to that map.
+
 ## Content rules
 - English is always the master. Do not add content to language pages not present in English.
 - Contact email: `andy@mrmallorcagolf.com`
