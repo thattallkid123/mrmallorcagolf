@@ -13,6 +13,19 @@ const HERO_ACTIONS = {
   zh: { experience: '查看体验', reviews: '球场评测 ↓', articles: '指南与文章 ↓' },
 }
 
+// Shorten long guide titles for the card — strip year and verbose prefix
+function shortTitle(title) {
+  return title
+    .replace(/ - A PGA Professional's Honest (Review|Take|Ranking)$/, '')
+    .replace(/ — A PGA Professional's Honest (Review|Take)$/, '')
+    .replace(/: A PGA Professional's Honest (Review|Take)$/, '')
+    .replace(/ - A PGA Professional's Honest Answer from Someone Who Lives Here$/, '')
+    .replace(/: An Honest Answer from Someone Who Lives Here$/, '')
+    .replace(/ Review$/, '')       // strip trailing " Review" (e.g. Andratx)
+    .replace(/\s*\(?\d{4}\)?$/, '') // remove trailing year
+    .trim()
+}
+
 // Image map keyed by slug — no need to touch content files
 const GUIDE_IMAGES = {
   'son-muntaner-review':        { src: '/images/son-muntaner-card.webp',                          position: 'center 30%' },
@@ -121,14 +134,9 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
                   </div>
                 )}
                 <div className="guide-photo-card__overlay" />
-                {guide.badgeGold && (
-                  <span className="guide-photo-card__badge">{guide.badge}</span>
-                )}
+                <span className={`guide-photo-card__badge${guide.badgeGold ? '' : ' guide-photo-card__badge--plain'}`}>{guide.badge}</span>
                 <div className="guide-photo-card__content">
-                  {!guide.badgeGold && (
-                    <span className="guide-photo-card__badge guide-photo-card__badge--plain">{guide.badge}</span>
-                  )}
-                  <h2 className="guide-photo-card__title">{guide.title}</h2>
+                  <h2 className="guide-photo-card__title">{shortTitle(guide.title)}</h2>
                   <p className="guide-photo-card__intro">{guide.intro}</p>
                   <p className="guide-photo-card__keywords">{guide.keywords}</p>
                 </div>
