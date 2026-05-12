@@ -89,9 +89,6 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
             <span className="page-hero__tag">{content.hero.tags[2]}</span>
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.75rem' }}>
-            <Link href={`${prefix}/play-with-a-pro`} className="btn btn--gold">
-              {heroActions.experience}
-            </Link>
             <a href="#course-reviews" className="btn btn--outline-white">
               {heroActions.reviews}
             </a>
