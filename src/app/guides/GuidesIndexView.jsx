@@ -137,7 +137,6 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
                 <span className={`guide-photo-card__badge${guide.badgeGold ? '' : ' guide-photo-card__badge--plain'}`}>{guide.badge}</span>
                 <div className="guide-photo-card__content">
                   <h2 className="guide-photo-card__title">{shortTitle(guide.title)}</h2>
-                  <p className="guide-photo-card__intro">{guide.intro}</p>
                   <p className="guide-photo-card__keywords">{guide.keywords}</p>
                 </div>
               </Link>
