@@ -99,7 +99,8 @@ Summary of steps:
 4. Create English `src/app/guides/[slug]/page.jsx`.
 5. Run `npm run check:text`, `npm run check:i18n-release`, `npm run build` — all must pass.
 6. Push. Do NOT add translations or `guides-content.js` entry until Andy approves at the live URL.
-7. Append one line to `CHANGELOG.md`.
+7. After approval: add `guides-content.js` entry (English), then all 6 language translations per Step 7 in `COURSE_BLOG_PIPELINE.md`. All locale carousel orders must match English exactly.
+8. Append one line to `CHANGELOG.md`.
 
 ## Guides Index — Image Cards (guides-content.js)
 The guides index (`/guides`) shows course reviews as a horizontal scroll photo carousel and articles as an image card grid. Every guide entry in the **English** `liveGuides` array in `guides-content.js` must include:

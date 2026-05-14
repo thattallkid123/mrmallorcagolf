@@ -192,25 +192,6 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
-        slug: 'son-muntaner-review',
-        badge: 'Análisis del campo',
-        badgeGold: true,
-        title: "Golf Son Muntaner, Mallorca — análisis honesto de un Profesional PGA (2026)",
-        intro:
-          'Mejor campo de España en los World Golf Awards 2025. A cinco minutos de Palma. Lo jugué con el tee sheet completo un sábado por la mañana — esto es lo que encontré.',
-        readTime: '6 min',
-        keywords: 'Championship · Par 72 · €125-250 · Buggy incluido',
-      },
-      {
-        slug: 'son-gual-review',
-        badge: 'Análisis del campo',
-        title: 'Son Gual Golf Mallorca - análisis honesto de un Profesional PGA (2026)',
-        intro:
-          'Mi campo más jugado en la isla. El viento, los greens, el tramo final y por qué Obama y Nadal siguen volviendo.',
-        readTime: '7 min',
-        keywords: 'Championship · Par 72 · €80-165 · Hándicap requerido',
-      },
-      {
         slug: 'alcanada-review',
         badge: 'Análisis del campo',
         title: 'Club de Golf Alcanada - análisis honesto de un Profesional PGA (2026)',
@@ -218,8 +199,15 @@ export const GUIDES_CONTENT = {
           'El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia. El faro lo cambia todo.',
         readTime: '7 min',
         keywords: 'Costa · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
-      },
-      {
+      },      {
+        slug: 'son-gual-review',
+        badge: 'Análisis del campo',
+        title: 'Son Gual Golf Mallorca - análisis honesto de un Profesional PGA (2026)',
+        intro:
+          'Mi campo más jugado en la isla. El viento, los greens, el tramo final y por qué Obama y Nadal siguen volviendo.',
+        readTime: '7 min',
+        keywords: 'Championship · Par 72 · €80-165 · Hándicap requerido',
+      },      {
         slug: 't-golf-calvia-review',
         badge: 'Análisis de Campo',
         badgeGold: true,
@@ -228,6 +216,15 @@ export const GUIDES_CONTENT = {
           'Quince lagos, molinos de viento por todo el campo y algunos de los greens más puros que he jugado en Mallorca. Uno de los campos mejor cuidados de la isla. Un 9 sobre 10.',
         readTime: '6 min',
         keywords: 'Par 72 · Hasta 210 € · Suroeste de Mallorca',
+      },      {
+        slug: 'son-muntaner-review',
+        badge: 'Análisis del campo',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — análisis honesto de un Profesional PGA (2026)",
+        intro:
+          'Mejor campo de España en los World Golf Awards 2025. A cinco minutos de Palma. Lo jugué con el tee sheet completo un sábado por la mañana — esto es lo que encontré.',
+        readTime: '6 min',
+        keywords: 'Championship · Par 72 · €125-250 · Buggy incluido',
       },
       {
         slug: 'santa-ponsa-1-review',
@@ -239,15 +236,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Acceso público',
       },
       {
-        slug: 'son-termes-review',
-        badge: 'Reseña de campo',
-        title: 'Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)',
-        intro:
-          'Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.',
-        readTime: '5 min de lectura',
-        keywords: 'Montaña · Par 72 · EUR 110 aprox. · 20 min desde Palma',
-      },
-      {
         slug: 'golf-andratx-review',
         badge: 'Análisis del campo',
         badgeGold: true,
@@ -256,6 +244,14 @@ export const GUIDES_CONTENT = {
           'El par 5 más largo de España, vistas de montaña sobre el suroeste y un recorrido que premia la gestión del juego mucho más que la distancia. Un 7,5 sobre 10.',
         readTime: '6 min',
         keywords: 'Campo de montaña · Par 72 · ~€125 · Suroeste de Mallorca',
+      },      {
+        slug: 'son-termes-review',
+        badge: 'Reseña de campo',
+        title: 'Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)',
+        intro:
+          'Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.',
+        readTime: '5 min de lectura',
+        keywords: 'Montaña · Par 72 · EUR 110 aprox. · 20 min desde Palma',
       },
 
       {
@@ -345,25 +341,6 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
-        slug: 'son-muntaner-review',
-        badge: 'Platz-Bewertung',
-        badgeGold: true,
-        title: "Golf Son Muntaner, Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)",
-        intro:
-          'Bester Golfplatz Spaniens bei den World Golf Awards 2025. Fünf Minuten von Palma. Ich spielte ihn mit vollem Abschlagskalender an einem Samstagmorgen — das sind meine Eindrücke.',
-        readTime: '6 Min.',
-        keywords: 'Championship · Par 72 · €125-250 · Buggy inklusive',
-      },
-      {
-        slug: 'son-gual-review',
-        badge: 'Platz-Bewertung',
-        title: 'Son Gual Golf Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)',
-        intro:
-          'Mein meistgespielter Platz auf der Insel. Der Wind, die Greens, die Schlusslöcher und warum Obama und Nadal immer wiederkommen.',
-        readTime: '7 Min.',
-        keywords: 'Championship · Par 72 · €80-165 · Handicap erforderlich',
-      },
-      {
         slug: 'alcanada-review',
         badge: 'Platz-Bewertung',
         title: 'Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals (2026)',
@@ -371,8 +348,15 @@ export const GUIDES_CONTENT = {
           'Der Platz, zu dem ich Leute bringe, wenn ich möchte, dass sie mit einer Geschichte nach Hause kommen. Der Leuchtturm verändert alles.',
         readTime: '7 Min.',
         keywords: 'Küste · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
-      },
-      {
+      },      {
+        slug: 'son-gual-review',
+        badge: 'Platz-Bewertung',
+        title: 'Son Gual Golf Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)',
+        intro:
+          'Mein meistgespielter Platz auf der Insel. Der Wind, die Greens, die Schlusslöcher und warum Obama und Nadal immer wiederkommen.',
+        readTime: '7 Min.',
+        keywords: 'Championship · Par 72 · €80-165 · Handicap erforderlich',
+      },      {
         slug: 't-golf-calvia-review',
         badge: 'Platz-Bewertung',
         badgeGold: true,
@@ -381,6 +365,15 @@ export const GUIDES_CONTENT = {
           'Fünfzehn Seen, Windmühlen auf dem gesamten Platz und einige der reinsten Grüns, die ich in Mallorca gespielt habe. Einer der bestgepflegten Plätze der Insel. 9 von 10.',
         readTime: '6 Min.',
         keywords: 'Par 72 · Bis 210 € · Südwesten Mallorcas',
+      },      {
+        slug: 'son-muntaner-review',
+        badge: 'Platz-Bewertung',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)",
+        intro:
+          'Bester Golfplatz Spaniens bei den World Golf Awards 2025. Fünf Minuten von Palma. Ich spielte ihn mit vollem Abschlagskalender an einem Samstagmorgen — das sind meine Eindrücke.',
+        readTime: '6 Min.',
+        keywords: 'Championship · Par 72 · €125-250 · Buggy inklusive',
       },
       {
         slug: 'santa-ponsa-1-review',
@@ -392,15 +385,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Öffentlicher Zugang',
       },
       {
-        slug: 'son-termes-review',
-        badge: 'Platz-Bewertung',
-        title: 'Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)',
-        intro:
-          'Bergblicke über Palma, engere Abschlagslinien als man erwartet und eines der eigenständigsten Layouts der Insel in dieser Preisklasse.',
-        readTime: '5 Min. Lesezeit',
-        keywords: 'Bergplatz · Par 72 · ca. EUR 110 · 20 Min. von Palma',
-      },
-      {
         slug: 'golf-andratx-review',
         badge: 'Platz-Bewertung',
         badgeGold: true,
@@ -409,6 +393,14 @@ export const GUIDES_CONTENT = {
           'Das längste Par 5 Spaniens, Bergblicke über den Südwesten und ein Layout, das Spielmanagement weit mehr belohnt als Weite. Eine 7,5 von 10.',
         readTime: '6 Min.',
         keywords: 'Bergplatz · Par 72 · ~€125 · Südwesten Mallorcas',
+      },      {
+        slug: 'son-termes-review',
+        badge: 'Platz-Bewertung',
+        title: 'Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)',
+        intro:
+          'Bergblicke über Palma, engere Abschlagslinien als man erwartet und eines der eigenständigsten Layouts der Insel in dieser Preisklasse.',
+        readTime: '5 Min. Lesezeit',
+        keywords: 'Bergplatz · Par 72 · ca. EUR 110 · 20 Min. von Palma',
       },
 
       {
@@ -498,25 +490,6 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
-        slug: 'son-muntaner-review',
-        badge: 'Avis parcours',
-        badgeGold: true,
-        title: "Golf Son Muntaner, Majorque — avis honnête d'un Professionnel PGA (2026)",
-        intro:
-          "Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. À cinq minutes de Palma. Je l'ai joué avec un départ complet un samedi matin — voici ce que j'y ai trouvé.",
-        readTime: '6 min',
-        keywords: 'Championship · Par 72 · €125-250 · Buggy inclus',
-      },
-      {
-        slug: 'son-gual-review',
-        badge: 'Avis parcours',
-        title: "Son Gual Golf Majorque - avis honnête d'un Professionnel PGA (2026)",
-        intro:
-          "Mon parcours le plus joué sur l'île. Le vent, les greens, la fin de parcours et pourquoi Obama et Nadal reviennent toujours.",
-        readTime: '7 min',
-        keywords: 'Championship · Par 72 · €80-165 · Handicap requis',
-      },
-      {
         slug: 'alcanada-review',
         badge: 'Avis parcours',
         title: "Club de Golf Alcanada - avis honnête d'un Professionnel PGA (2026)",
@@ -524,8 +497,15 @@ export const GUIDES_CONTENT = {
           "Le parcours où j'emmène les gens quand je veux qu'ils rentrent avec une histoire. Le phare change tout.",
         readTime: '7 min',
         keywords: 'Côtier · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
-      },
-      {
+      },      {
+        slug: 'son-gual-review',
+        badge: 'Avis parcours',
+        title: "Son Gual Golf Majorque - avis honnête d'un Professionnel PGA (2026)",
+        intro:
+          "Mon parcours le plus joué sur l'île. Le vent, les greens, la fin de parcours et pourquoi Obama et Nadal reviennent toujours.",
+        readTime: '7 min',
+        keywords: 'Championship · Par 72 · €80-165 · Handicap requis',
+      },      {
         slug: 't-golf-calvia-review',
         badge: 'Avis Parcours',
         badgeGold: true,
@@ -534,6 +514,15 @@ export const GUIDES_CONTENT = {
           "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. L'un des parcours les mieux entretenus de l'île. Un 9 sur 10.",
         readTime: '6 min',
         keywords: 'Par 72 · Jusqu\'à 210 € · Sud-ouest de Majorque',
+      },      {
+        slug: 'son-muntaner-review',
+        badge: 'Avis parcours',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Majorque — avis honnête d'un Professionnel PGA (2026)",
+        intro:
+          "Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. À cinq minutes de Palma. Je l'ai joué avec un départ complet un samedi matin — voici ce que j'y ai trouvé.",
+        readTime: '6 min',
+        keywords: 'Championship · Par 72 · €125-250 · Buggy inclus',
       },
       {
         slug: 'santa-ponsa-1-review',
@@ -545,15 +534,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Accès public',
       },
       {
-        slug: 'son-termes-review',
-        badge: 'Test de parcours',
-        title: "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
-        intro:
-          "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
-        readTime: '5 min de lecture',
-        keywords: 'Montagne · Par 72 · env. EUR 110 · 20 min de Palma',
-      },
-      {
         slug: 'golf-andratx-review',
         badge: 'Avis parcours',
         badgeGold: true,
@@ -562,6 +542,14 @@ export const GUIDES_CONTENT = {
           'Le par 5 le plus long d\'Espagne, des vues de montagne sur le sud-ouest et un tracé qui récompense la gestion du jeu bien plus que la distance. Un 7,5 sur 10.',
         readTime: '6 min',
         keywords: 'Parcours de montagne · Par 72 · ~€125 · Sud-ouest de Majorque',
+      },      {
+        slug: 'son-termes-review',
+        badge: 'Test de parcours',
+        title: "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
+        intro:
+          "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
+        readTime: '5 min de lecture',
+        keywords: 'Montagne · Par 72 · env. EUR 110 · 20 min de Palma',
       },
 
       {
@@ -651,25 +639,6 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
-        slug: 'son-muntaner-review',
-        badge: 'Baanbeoordeling',
-        badgeGold: true,
-        title: "Golf Son Muntaner, Mallorca — eerlijke beoordeling van een PGA Professional (2026)",
-        intro:
-          'Beste golfbaan van Spanje bij de World Golf Awards 2025. Vijf minuten van Palma. Ik speelde het met een vol tee sheet op een zaterdagochtend — dit zijn mijn bevindingen.',
-        readTime: '6 min',
-        keywords: 'Championship · Par 72 · €125-250 · Buggy inbegrepen',
-      },
-      {
-        slug: 'son-gual-review',
-        badge: 'Baanbeoordeling',
-        title: 'Son Gual Golf Mallorca - eerlijke beoordeling van een PGA Professional (2026)',
-        intro:
-          'Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes en waarom Obama en Nadal blijven terugkomen.',
-        readTime: '7 min',
-        keywords: 'Championship · Par 72 · €80-165 · Handicap vereist',
-      },
-      {
         slug: 'alcanada-review',
         badge: 'Baanbeoordeling',
         title: 'Club de Golf Alcanada - eerlijke beoordeling van een PGA Professional (2026)',
@@ -677,8 +646,15 @@ export const GUIDES_CONTENT = {
           'De baan waar ik mensen naartoe breng als ik wil dat ze met een verhaal thuiskomen. De vuurtoren verandert alles.',
         readTime: '7 min',
         keywords: 'Kustbaan · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
-      },
-      {
+      },      {
+        slug: 'son-gual-review',
+        badge: 'Baanbeoordeling',
+        title: 'Son Gual Golf Mallorca - eerlijke beoordeling van een PGA Professional (2026)',
+        intro:
+          'Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes en waarom Obama en Nadal blijven terugkomen.',
+        readTime: '7 min',
+        keywords: 'Championship · Par 72 · €80-165 · Handicap vereist',
+      },      {
         slug: 't-golf-calvia-review',
         badge: 'Baanreview',
         badgeGold: true,
@@ -687,6 +663,15 @@ export const GUIDES_CONTENT = {
           'Vijftien meren, windmolens door de hele baan en enkele van de zuiverste greens die ik op Mallorca heb gespeeld. Een van de best onderhouden banen op het eiland. Een 9 uit 10.',
         readTime: '6 min',
         keywords: 'Par 72 · Tot €210 · Zuidwest Mallorca',
+      },      {
+        slug: 'son-muntaner-review',
+        badge: 'Baanbeoordeling',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — eerlijke beoordeling van een PGA Professional (2026)",
+        intro:
+          'Beste golfbaan van Spanje bij de World Golf Awards 2025. Vijf minuten van Palma. Ik speelde het met een vol tee sheet op een zaterdagochtend — dit zijn mijn bevindingen.',
+        readTime: '6 min',
+        keywords: 'Championship · Par 72 · €125-250 · Buggy inbegrepen',
       },
       {
         slug: 'santa-ponsa-1-review',
@@ -698,15 +683,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Toegankelijk voor bezoekers',
       },
       {
-        slug: 'son-termes-review',
-        badge: 'Baanreview',
-        title: 'Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)',
-        intro:
-          'Bergzichten boven Palma, strakkere drivinglijnen dan je verwacht en een van de meest karaktervolle layouts op het eiland in deze prijsklasse.',
-        readTime: '5 min leestijd',
-        keywords: 'Bergbaan · Par 72 · circa EUR 110 · 20 min van Palma',
-      },
-      {
         slug: 'golf-andratx-review',
         badge: 'Baanbeoordeling',
         badgeGold: true,
@@ -715,6 +691,14 @@ export const GUIDES_CONTENT = {
           'De langste par 5 van Spanje, bergzichten over het zuidwesten en een layout die baanmanagement veel meer beloont dan lengte. Een 7,5 op 10.',
         readTime: '6 min',
         keywords: 'Bergbaan · Par 72 · ~€125 · Zuidwest-Mallorca',
+      },      {
+        slug: 'son-termes-review',
+        badge: 'Baanreview',
+        title: 'Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)',
+        intro:
+          'Bergzichten boven Palma, strakkere drivinglijnen dan je verwacht en een van de meest karaktervolle layouts op het eiland in deze prijsklasse.',
+        readTime: '5 min leestijd',
+        keywords: 'Bergbaan · Par 72 · circa EUR 110 · 20 min van Palma',
       },
 
       {
@@ -804,25 +788,6 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
-        slug: 'son-muntaner-review',
-        badge: 'Banomdöme',
-        badgeGold: true,
-        title: "Golf Son Muntaner, Mallorca — ärlig recension av en PGA Professional (2026)",
-        intro:
-          'Bästa golfbana i Spanien vid World Golf Awards 2025. Fem minuter från Palma. Jag spelade den med fullbokat tee sheet en lördagsmorgon — här är vad jag hittade.',
-        readTime: '6 min',
-        keywords: 'Championship · Par 72 · €125-250 · Buggy ingår',
-      },
-      {
-        slug: 'son-gual-review',
-        badge: 'Banomdöme',
-        title: 'Son Gual Golf Mallorca - ärlig recension av en PGA Professional (2026)',
-        intro:
-          'Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen och varför Obama och Nadal alltid kommer tillbaka.',
-        readTime: '7 min',
-        keywords: 'Championship · Par 72 · €80-165 · Handicap krävs',
-      },
-      {
         slug: 'alcanada-review',
         badge: 'Banomdöme',
         title: 'Club de Golf Alcanada - ärlig recension av en PGA Professional (2026)',
@@ -830,8 +795,15 @@ export const GUIDES_CONTENT = {
           'Banan jag tar folk till när jag vill att de ska åka hem med en historia. Fyren förändrar allt.',
         readTime: '7 min',
         keywords: 'Kustbana · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
-      },
-      {
+      },      {
+        slug: 'son-gual-review',
+        badge: 'Banomdöme',
+        title: 'Son Gual Golf Mallorca - ärlig recension av en PGA Professional (2026)',
+        intro:
+          'Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen och varför Obama och Nadal alltid kommer tillbaka.',
+        readTime: '7 min',
+        keywords: 'Championship · Par 72 · €80-165 · Handicap krävs',
+      },      {
         slug: 't-golf-calvia-review',
         badge: 'Banrecension',
         badgeGold: true,
@@ -840,6 +812,15 @@ export const GUIDES_CONTENT = {
           'Femton sjöar, väderkvarnar på hela banan och några av de renaste greenerna jag spelat på Mallorca. En av de bäst skötta banorna på ön. En 9 av 10.',
         readTime: '6 min',
         keywords: 'Par 72 · Upp till 210 € · Sydvästra Mallorca',
+      },      {
+        slug: 'son-muntaner-review',
+        badge: 'Banomdöme',
+        badgeGold: true,
+        title: "Golf Son Muntaner, Mallorca — ärlig recension av en PGA Professional (2026)",
+        intro:
+          'Bästa golfbana i Spanien vid World Golf Awards 2025. Fem minuter från Palma. Jag spelade den med fullbokat tee sheet en lördagsmorgon — här är vad jag hittade.',
+        readTime: '6 min',
+        keywords: 'Championship · Par 72 · €125-250 · Buggy ingår',
       },
       {
         slug: 'santa-ponsa-1-review',
@@ -851,15 +832,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Championship · Par 72 · €75-125 · Öppen för besökare',
       },
       {
-        slug: 'son-termes-review',
-        badge: 'Banrecension',
-        title: 'Son Termes Golf, Mallorca: en ärlig recension av en PGA-proffs (2026)',
-        intro:
-          'Bergsvyer ovanför Palma, tajtare utslagslinjer än man tror och en av öns mest personliga banlayouter i den här prisklassen.',
-        readTime: '5 min läsning',
-        keywords: 'Bergsbana · Par 72 · cirka EUR 110 · 20 min från Palma',
-      },
-      {
         slug: 'golf-andratx-review',
         badge: 'Banomdöme',
         badgeGold: true,
@@ -868,6 +840,14 @@ export const GUIDES_CONTENT = {
           'Spaniens längsta par 5, bergsvyer över sydväst och en layout som belönar bankhantering mycket mer än längd. En 7,5 av 10.',
         readTime: '6 min',
         keywords: 'Bergsbana · Par 72 · ~€125 · Sydvästra Mallorca',
+      },      {
+        slug: 'son-termes-review',
+        badge: 'Banrecension',
+        title: 'Son Termes Golf, Mallorca: en ärlig recension av en PGA-proffs (2026)',
+        intro:
+          'Bergsvyer ovanför Palma, tajtare utslagslinjer än man tror och en av öns mest personliga banlayouter i den här prisklassen.',
+        readTime: '5 min läsning',
+        keywords: 'Bergsbana · Par 72 · cirka EUR 110 · 20 min från Palma',
       },
 
       {
@@ -957,25 +937,6 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
-        slug: 'son-muntaner-review',
-        badge: '球场评测',
-        badgeGold: true,
-        title: 'Son Muntaner 高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）',
-        intro:
-          '2025年世界高尔夫奖西班牙最佳球场。距巴尔马市中心五分钟。我在满员开球表的周六早晨打了一轮——以下是我的真实体验。',
-        readTime: '6分钟',
-        keywords: '锦标赛级 · 标准杆72 · €125-250 · 含球车',
-      },
-      {
-        slug: 'son-gual-review',
-        badge: '球场评测',
-        title: 'Son Gual 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）',
-        intro:
-          '我在岛上打得最多的球场。风、果岭、收官几洞，以及奥巴马和纳达尔一再回来的原因。',
-        readTime: '7分钟',
-        keywords: '锦标赛级 · 标准杆72 · €80-165 · 需要差点证明',
-      },
-      {
         slug: 'alcanada-review',
         badge: '球场评测',
         title: '阿尔卡纳达高尔夫球场 - PGA 职业教练诚实评测（2026）',
@@ -983,8 +944,15 @@ export const GUIDES_CONTENT = {
           '我带客人来打球时，最希望他们能带着故事回家的球场。灯塔改变了一切。',
         readTime: '7分钟',
         keywords: '海滨球场 · 标准杆72 · €115-220 · 劳力士挑战巡回赛总决赛',
-      },
-      {
+      },      {
+        slug: 'son-gual-review',
+        badge: '球场评测',
+        title: 'Son Gual 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）',
+        intro:
+          '我在岛上打得最多的球场。风、果岭、收官几洞，以及奥巴马和纳达尔一再回来的原因。',
+        readTime: '7分钟',
+        keywords: '锦标赛级 · 标准杆72 · €80-165 · 需要差点证明',
+      },      {
         slug: 't-golf-calvia-review',
         badge: '球场评测',
         badgeGold: true,
@@ -993,6 +961,15 @@ export const GUIDES_CONTENT = {
           '十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。岛上维护最佳的球场之一。综合评分9/10。',
         readTime: '6分钟',
         keywords: '标准杆72 · 最高210欧元 · 马略卡岛西南部',
+      },      {
+        slug: 'son-muntaner-review',
+        badge: '球场评测',
+        badgeGold: true,
+        title: 'Son Muntaner 高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）',
+        intro:
+          '2025年世界高尔夫奖西班牙最佳球场。距巴尔马市中心五分钟。我在满员开球表的周六早晨打了一轮——以下是我的真实体验。',
+        readTime: '6分钟',
+        keywords: '锦标赛级 · 标准杆72 · €125-250 · 含球车',
       },
       {
         slug: 'santa-ponsa-1-review',
@@ -1004,15 +981,6 @@ export const GUIDES_CONTENT = {
         keywords: '锦标赛级 · 标准杆72 · €75-125 · 对外开放',
       },
       {
-        slug: 'son-termes-review',
-        badge: '球场评测',
-        title: '马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）',
-        intro:
-          '帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。',
-        readTime: '5分钟',
-        keywords: '山地球场 · 标准杆72 · 约 EUR 110 · 距帕尔马20分钟',
-      },
-      {
         slug: 'golf-andratx-review',
         badge: '球场评测',
         badgeGold: true,
@@ -1021,6 +989,14 @@ export const GUIDES_CONTENT = {
           '西班牙最长的标准杆5洞，俯瞰西南部的山景，以及一个更考验球场管理能力而非距离的球场。评分7.5/10。',
         readTime: '6分钟',
         keywords: '山地球场 · 标准杆72 · 约€125 · 马略卡西南部',
+      },      {
+        slug: 'son-termes-review',
+        badge: '球场评测',
+        title: '马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）',
+        intro:
+          '帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。',
+        readTime: '5分钟',
+        keywords: '山地球场 · 标准杆72 · 约 EUR 110 · 距帕尔马20分钟',
       },
 
       {

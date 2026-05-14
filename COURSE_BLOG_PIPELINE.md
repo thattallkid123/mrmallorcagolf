@@ -125,10 +125,11 @@ Live within ~2 minutes at `mrmallorcagolf.com/guides/[slug]-review`.
 
 ## Step 6 — After Andy approves
 
-1. Add to `guides-content.js` English `liveGuides` array (correct position in carousel order)
-2. Add translations (de/es/fr/nl/sv/zh) — English is always master
-3. Run all checks again, push
-4. Append one line to `CHANGELOG.md`
+1. Add to `guides-content.js` English `liveGuides` array (correct position in carousel order — see below)
+2. Add English entry to `guides-content.js` with `img` and `imgPosition` fields
+3. Add all 6 language translations (see Step 7 below)
+4. Run all checks again, push
+5. Append one line to `CHANGELOG.md`
 
 ---
 
@@ -137,6 +138,87 @@ Live within ~2 minutes at `mrmallorcagolf.com/guides/[slug]-review`.
 Alcanada → Son Gual → T Golf Calvià → Son Muntaner → Santa Ponsa 1 → Andratx → Son Termes
 
 New reviews go at the end unless Andy specifies otherwise.
+
+All non-English locales must match this order exactly. Run the order-verification check after any change.
+
+---
+
+## Step 7 — Translations
+
+**Rule: English is always the master. Never add content to language pages not present in English.**
+
+### What needs translating for each new review
+
+Four things, all via Python text replacement on the relevant file (never Edit tool):
+
+1. `guide-post-content-localized.js` — the full post content (all blocks) for de/es/fr/nl/sv/zh
+2. `guides-content.js` — the card entry (badge, title, intro, keywords) for each locale's `liveGuides`
+3. `src/app/[locale]/guides/[slug]-review/page.jsx` — one JSX file per locale (boilerplate, no translation needed)
+4. Order in each locale's `liveGuides` must match English
+
+### How to do translations efficiently (low token cost, high accuracy)
+
+**Write all 6 translations in one Python script, run once.** Do not do them one locale at a time in chat — that wastes tokens and risks inconsistency.
+
+Structure the script as a single Python file that:
+- Opens the target file in text mode (`open(path, 'r', encoding='utf-8')`)
+- Finds the correct insertion point using `content.find('specific unique marker')` — never `rfind` on a generic string like `'\n}'`
+- Contains all 6 locale blocks as a single string literal
+- Writes back in one pass
+
+**Critical encoding rule:** Never use bytes mode (`rb`/`wb`) when the content contains non-ASCII characters (accents, Chinese). Always use `open(path, 'r', encoding='utf-8')` and `open(path, 'w', encoding='utf-8')`. Bytes mode causes `SyntaxError` on Chinese characters in string literals.
+
+### Translation quality rules
+
+- **Golf terminology**: translate naturally for each market — German golfers say "Fairway", "Bunker", "Green" (no translation needed); French say "fairway", "bunker", "green"; Spanish say "calle", "búnker", "green"
+- **Tone**: match Andy's voice — short declarative sentences, specific numbers, dry and direct. No travel-brochure warmth in any language.
+- **Banned words apply in every language**: no equivalents of stunning/breathtaking/nestled etc.
+- **Prices**: always `€` symbol, never spell out "euros" in any language
+- **Course name**: always `T Golf Calvià` — never translate place names
+- **Accents**: Calvià (not Calvia), Mallorca (not Majorca/Mallorque etc.)
+- **CTA links**: keep `linkLabel` short and action-oriented per language
+- **Facts block**: translate the label string, keep the value (e.g. `['Bis 210 €', 'Peak-Greenfee']`)
+
+### Locale-specific notes
+
+| Locale | Key differences |
+|--------|----------------|
+| de | "Green" not "Grün"; "Fairway" unchanged; formal "Sie" not used — Andy's blog voice is informal |
+| es | "calle" for fairway, "búnker" for bunker; "green" unchanged; tú form |
+| fr | "fairway"/"bunker"/"green" all unchanged; vouvoiement not needed in blog context |
+| nl | "fairway"/"bunker"/"green" unchanged; informal "je/jij" |
+| sv | "fairway"/"bunker"/"green" unchanged; informal "du" |
+| zh | Simplified Chinese only; golf terms: 球道 (fairway), 沙坑 (bunker), 果岭 (green), 标准杆 (par), 发球台 (tee); keep course names in English |
+
+### Verification after translations
+
+```python
+# Quick check — run in sandbox after script
+import re
+path = 'src/lib/guides-content.js'
+with open(path, 'r', encoding='utf-8') as f:
+    content = f.read()
+locale_positions = [(m.start(), m.group(1)) for m in re.finditer(r"locale: '(\w+)'", content)]
+for i, (start, locale) in enumerate(locale_positions):
+    end = locale_positions[i+1][0] if i+1 < len(locale_positions) else len(content)
+    section = content[start:end]
+    live_start = section.find('liveGuides:')
+    archived_start = section.find('archivedGuides:')
+    live_section = section[live_start:archived_start if archived_start != -1 else live_start+8000]
+    slugs = re.findall(r"slug: '([^']+)'", live_section)
+    print(f"{locale}: {slugs[:8]}")
+# All locales must show identical slug order
+```
+
+Also check `guide-post-content-localized.js` has the new slug:
+```python
+with open('src/lib/guide-post-content-localized.js', 'r', encoding='utf-8') as f:
+    content = f.read()
+for locale in ['de', 'es', 'fr', 'nl', 'sv', 'zh']:
+    idx = content.find("'[slug]-review'")
+    block = content[idx:idx+50000]
+    print(f"{locale}: {'OK' if f'{locale}:' in block[:40000] else 'MISSING'}")
+```
 
 ---
 
