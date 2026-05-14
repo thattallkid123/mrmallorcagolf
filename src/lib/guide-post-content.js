@@ -966,26 +966,94 @@ const LOCALIZED_TEXT_KEYS = new Set([
   'text',
   'caption',
   'alt',
+  'label',
+  'attribution',
   'linkLabel',
-  'href',
 ])
 
-function mergeLocalizedValue(base, localized) {
-  if (typeof base !== 'object' || base === null) return localized ?? base
-  if (Array.isArray(base)) {
-    return base.map((item, i) =>
-      localized && localized[i] !== undefined
-        ? mergeLocalizedValue(item, localized[i])
-        : item
-    )
+function alignLocalizedBlocks(baseBlocks, localizedBlocks) {
+  if (!Array.isArray(baseBlocks) || !Array.isArray(localizedBlocks) || localizedBlocks.length === 0) {
+    return baseBlocks
   }
-  const merged = { ...base }
-  for (const key of Object.keys(base)) {
-    if (localized && localized[key] !== undefined) {
-      merged[key] = mergeLocalizedValue(base[key], localized[key])
+
+  let localizedIndex = 0
+
+  return baseBlocks
+    .map((baseBlock) => {
+    let matchedLocalizedBlock = null
+
+    for (let i = localizedIndex; i < localizedBlocks.length; i += 1) {
+      if (localizedBlocks[i]?.type === baseBlock?.type) {
+        matchedLocalizedBlock = localizedBlocks[i]
+        localizedIndex = i + 1
+        break
+      }
     }
+
+    if (!matchedLocalizedBlock) {
+      if (baseBlock?.type === 'image') {
+        return {
+          ...baseBlock,
+          caption: null,
+        }
+      }
+
+      return null
+    }
+
+    const mergedBlock = mergeLocalizedValue(baseBlock, matchedLocalizedBlock)
+
+    if (baseBlock?.type === 'image') {
+      return {
+        ...mergedBlock,
+        caption: matchedLocalizedBlock.caption ?? null,
+        alt: matchedLocalizedBlock.alt ?? baseBlock.alt,
+        containerStyle: baseBlock.containerStyle,
+        imageStyle: baseBlock.imageStyle,
+      }
+    }
+
+    return mergedBlock
+    })
+    .filter(Boolean)
+}
+
+function mergeLocalizedValue(baseValue, localizedValue, key) {
+  if (localizedValue == null) return baseValue
+
+  if (Array.isArray(baseValue) && Array.isArray(localizedValue)) {
+    if (key === 'blocks') return alignLocalizedBlocks(baseValue, localizedValue)
+    if (key === 'related') return localizedValue
+    if (baseValue.some(Array.isArray)) return localizedValue
+    if (baseValue.every((item) => item == null || typeof item !== 'object')) return localizedValue
+
+    return baseValue.map((item, index) => mergeLocalizedValue(item, localizedValue[index], key))
   }
-  return merged
+
+  if (
+    baseValue &&
+    localizedValue &&
+    typeof baseValue === 'object' &&
+    typeof localizedValue === 'object' &&
+    !Array.isArray(baseValue) &&
+    !Array.isArray(localizedValue)
+  ) {
+    const merged = { ...baseValue }
+
+    for (const [childKey, childValue] of Object.entries(localizedValue)) {
+      if (childKey in baseValue) {
+        merged[childKey] = mergeLocalizedValue(baseValue[childKey], childValue, childKey)
+      } else if (LOCALIZED_TEXT_KEYS.has(childKey)) {
+        merged[childKey] = childValue
+      }
+    }
+
+    return merged
+  }
+
+  if (LOCALIZED_TEXT_KEYS.has(key)) return localizedValue
+
+  return baseValue
 }
 
 export function getGuidePostContent(slug, locale = 'en') {
