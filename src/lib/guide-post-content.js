@@ -800,128 +800,157 @@ export const GUIDE_POST_CONTENT = {
       ],
     },
   },
-}
-
-const LOCALIZED_TEXT_KEYS = new Set([
-  'title',
-  'description',
-  'imagePath',
-  'badge',
-  'readTime',
-  'updated',
-  'intro',
-  'text',
-  'caption',
-  'alt',
-  'label',
-  'attribution',
-  'linkLabel',
-])
-
-function alignLocalizedBlocks(baseBlocks, localizedBlocks) {
-  if (!Array.isArray(baseBlocks) || !Array.isArray(localizedBlocks) || localizedBlocks.length === 0) {
-    return baseBlocks
-  }
-
-  let localizedIndex = 0
-
-  return baseBlocks
-    .map((baseBlock) => {
-    let matchedLocalizedBlock = null
-
-    for (let i = localizedIndex; i < localizedBlocks.length; i += 1) {
-      if (localizedBlocks[i]?.type === baseBlock?.type) {
-        matchedLocalizedBlock = localizedBlocks[i]
-        localizedIndex = i + 1
-        break
-      }
-    }
-
-    if (!matchedLocalizedBlock) {
-      if (baseBlock?.type === 'image') {
-        return {
-          ...baseBlock,
-          caption: null,
-        }
-      }
-
-      return null
-    }
-
-    const mergedBlock = mergeLocalizedValue(baseBlock, matchedLocalizedBlock)
-
-    if (baseBlock?.type === 'image') {
-      return {
-        ...mergedBlock,
-        caption: matchedLocalizedBlock.caption ?? null,
-        alt: matchedLocalizedBlock.alt ?? baseBlock.alt,
-        containerStyle: baseBlock.containerStyle,
-        imageStyle: baseBlock.imageStyle,
-      }
-    }
-
-    return mergedBlock
-    })
-    .filter(Boolean)
-}
-
-function mergeLocalizedValue(baseValue, localizedValue, key) {
-  if (localizedValue == null) return baseValue
-
-  if (Array.isArray(baseValue) && Array.isArray(localizedValue)) {
-    if (key === 'blocks') return alignLocalizedBlocks(baseValue, localizedValue)
-    if (key === 'related') return localizedValue
-    if (baseValue.some(Array.isArray)) return localizedValue
-    if (baseValue.every((item) => item == null || typeof item !== 'object')) return localizedValue
-
-    return baseValue.map((item, index) => mergeLocalizedValue(item, localizedValue[index], key))
-  }
-
-  if (
-    baseValue &&
-    localizedValue &&
-    typeof baseValue === 'object' &&
-    typeof localizedValue === 'object' &&
-    !Array.isArray(baseValue) &&
-    !Array.isArray(localizedValue)
-  ) {
-    const merged = { ...baseValue }
-
-    for (const [childKey, childValue] of Object.entries(localizedValue)) {
-      if (childKey in baseValue) {
-        merged[childKey] = mergeLocalizedValue(baseValue[childKey], childValue, childKey)
-      } else if (LOCALIZED_TEXT_KEYS.has(childKey)) {
-        merged[childKey] = childValue
-      }
-    }
-
-    return merged
-  }
-
-  if (LOCALIZED_TEXT_KEYS.has(key)) return localizedValue
-
-  return baseValue
-}
-
-export function getGuidePostContent(slug, locale = 'en') {
-  const guide = GUIDE_POST_CONTENT[slug]
-  if (!guide) return null
-
-  const baseContent = guide.en
-  if (locale === 'en') return withGuidePostSlug(baseContent, slug)
-
-  const localizedContent = getLocalizedGuidePostContent(slug, locale) || guide[locale]
-  if (!localizedContent) return withGuidePostSlug(baseContent, slug)
-
-  return withGuidePostSlug(mergeLocalizedValue(baseContent, localizedContent), slug)
-}
-
-function withGuidePostSlug(content, slug) {
-  return {
-    ...content,
-    meta: {
-      ...content.meta,
-      slug,
+  't-golf-calvia-review': {
+    en: {
+      metadata: {
+        title: 'T Golf Calvia Review (2026) - Green Fees, Course Conditions & Honest Rating',
+        description:
+          'T Golf Calvia: up to 210 euros peak, twilight from 150 euros. 15 lakes, 6,500m from the back tees, one of the best-conditioned courses in Mallorca. I played it in May 2026.',
+        imagePath: '/images/t-golf-calvia-blog/t-golf-calvia-1.webp',
+      },
+      meta: {
+        badge: 'Course Review',
+        badgeGold: true,
+        readTime: '6 min read',
+        updated: 'May 2026',
+        title: "T Golf Calvia Review - A PGA Professional's Honest Take (2026)",
+        intro:
+          'Fifteen lakes, windmills throughout, and some of the purest greens I have played in Majorca. A 9 out of 10 and one of the best-conditioned courses on the island.',
+        related: [
+          { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
+          { slug: 'son-muntaner-review', title: 'Son Muntaner Golf: Honest Review 2026' },
+          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/t-golf-calvia-blog/t-golf-calvia-1.webp',
+          alt: 'Windmill at T Golf Calvia against a clear blue sky',
+          caption: 'The windmills are a distinctive feature of T Golf Calvia. Not many courses have them.',
+          priority: true,
+        },
+        {
+          type: 'paragraph',
+          text: 'I teed off at 15:20 on a Tuesday afternoon and the course was quiet enough that I could hear the wind moving through the pine trees between shots. From most of the fairways you cannot see a road or a building, just pine trees, water and mountains. For a course in the southwest corner of Mallorca, that surprised me.',
+        },
+        {
+          type: 'paragraph',
+          text: 'The conditioning is as good as anything I have played on the island. Very tightly mown fairway and fringe areas, bunkers raked to perfection and with a simple but not common rake that means the ball will come to rest up against the rake much less often. It is a small but really appreciated detail.',
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-calvia-blog/t-golf-calvia-7.webp',
+          alt: 'Bunker at T Golf Calvia showing the distinctive rake design',
+          caption: 'The rake design means the ball rarely comes to rest against the face. A small detail that makes a real difference.',
+        },
+        {
+          type: 'paragraph',
+          text: 'The greens are large and, on the day I played, pure. No excuses for missing putts. Several holes also ask you to trust your distance completely because you cannot see the bottom of the flag from the approach. Players who rely on pin position to judge distance rather than working from yardage will be caught out.',
+        },
+        {
+          type: 'paragraph',
+          text: 'The course runs to just under 6,500 metres from the back tees where I played, with 15 lakes and carries from the tee on a number of holes. Windmills are dotted throughout, which is unusual and gives the course its own character. The Mediterranean pine trees and the Tramuntana mountains are consistent from the front nine to the back.',
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-calvia-blog/t-golf-calvia-4.webp',
+          alt: 'Fairway at T Golf Calvia with windmill and Tramuntana mountains in the background',
+          caption: 'The windmills and Tramuntana backdrop are a consistent feature throughout the round.',
+        },
+        {
+          type: 'heading',
+          text: 'Holes Worth Knowing',
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 7 is a dogleg through the trees. Short on the card but the approach distance is harder to read than it looks and players tend to underclub.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 8 is a downhill par 4 with a tight landing area off the tee. The approach is a manageable wedge if you find the fairway, but miss it and a front pin gets complicated quickly. The slope makes it difficult to stop the ball.',
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-calvia-blog/t-golf-calvia-3.webp',
+          alt: 'Hole 8 at T Golf Calvia with palm trees and Tramuntana mountains behind the green',
+          caption: 'Hole 8. A good backdrop, but the approach asks more of you than it looks.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 10 is the clearest decision on the course. Dogleg right with a windmill on the left and water on the right. You can cut off distance over the water depending on how much you want to take on. It is the kind of hole that plays differently depending on where you are in the round.',
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-calvia-blog/t-golf-calvia-5.webp',
+          alt: 'Fairway and bunkers at T Golf Calvia with the Tramuntana mountains in the background',
+          caption: 'The Tramuntana mountains sit in the background on most holes on the back nine.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 16 is a par 4 with an uphill tee shot framed by rocks and trees. One of the more visually distinct holes on the course and it plays harder than the card suggests.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Hole 18 is a tight par 5 that opens up as you move down the fairway. I hit driver, 6 iron, and just missed a 15-foot eagle putt. Finished with birdie. It is a proper finishing hole. It asks you to commit off what looks like a narrow tee shot, then gives you a real birdie or eagle chance if you do.',
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-calvia-blog/t-golf-calvia-6.webp',
+          alt: 'Two golfers on the course at T Golf Calvia with the fairway and mountains behind',
+          caption: 'Playing T Golf Calvia with a guest. The course suits players who want a proper test in good condition.',
+        },
+        {
+          type: 'heading',
+          text: 'Practical Information',
+        },
+        {
+          type: 'facts',
+          items: [
+            ['Up to €210', 'Peak green fee'],
+            ['From €150', 'Twilight rate'],
+            ['9/10', "Andy's rating"],
+            ['6,500m', 'Back tees (Par 72)'],
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: 'T Golf Calvia runs midweek and multiple-visit offers regularly. Worth checking before you book: t-golf.club/calvia/offers.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Service was good throughout. Tees and water provided, friendly caddy master staff. The clubhouse and outdoor seating areas are well done and a good place to spend time before or after the round. The driving range is grass, which is not guaranteed at every Mallorca club.',
+        },
+        {
+          type: 'paragraph',
+          text: 'One thing to note: signage around restricted buggy areas could be clearer. A couple of times I ended up somewhere that was not obviously marked as off limits and had to reverse back out. Not a problem once you know the course.',
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-calvia-blog/t-golf-calvia-2.webp',
+          alt: 'Pine trees framing the fairway at T Golf Calvia with water and mountains visible beyond',
+          caption: 'From most of the fairways you can see nothing but pine trees, water and mountains.',
+        },
+        {
+          type: 'heading',
+          text: 'Verdict',
+        },
+        {
+          type: 'paragraph',
+          text: '9/10. T Golf Calvia is one of the best-conditioned courses I have played in Majorca. The greens are excellent, the fairways are in great shape, and the layout tests you properly, particularly around distance judgement and water, without being unfair.',
+        },
+        {
+          type: 'paragraph',
+          text: 'It suits players who want a serious round in good condition. I would not put a high-handicapper here as their first course on a holiday trip, but for anyone on a dedicated golf visit it belongs on the itinerary. The twilight rate and the midweek offers make it good value at the right time.',
+        },
+        {
+          type: 'cta',
+          text: 'Want to play T Golf Calvia with a PGA professional who knows every hole?',
+          linkLabel: 'See the play-with-a-pro experience →',
+          href: '/play-with-a-pro',
+        },
+      ],
     },
-  }
+  },
 }

@@ -1,3 +1,7 @@
+## 2026-05-14
+
+- [content] T Golf Calvià review: page created, 7 photos processed, content added — hidden from guides index pending approval
+
 ## 2026-05-11
 
 - [site] Quick-win UX fixes: centred Beehiiv newsletter on homepage and contact page

@@ -38,6 +38,11 @@ const COURSE_REVIEW_DETAILS = {
     ratingValue: 4,
     addressLocality: 'Andratx',
   },
+  't-golf-calvia-review': {
+    name: 'T Golf Calvià',
+    ratingValue: 5,
+    addressLocality: 'Calvià',
+  },
 }
 
 const MONTHS = {
