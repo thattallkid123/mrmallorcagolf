@@ -10,9 +10,9 @@ export const DEFAULT_SOCIAL_IMAGE = {
 
 const HOME_METADATA = {
   en: {
-    title: 'Golf Days in Mallorca | Mr Mallorca Golf',
+    title: 'Mallorca Golf Trips & Private Golf Days | Mr Mallorca Golf',
     description:
-      'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play Son Gual, Alcanada and more, with every detail arranged.',
+      'Plan your Mallorca golf trip with PGA Advanced Professional Andy Griffiths. Course recommendations, itineraries, and private golf days from €495. Son Gual, Alcanada and more.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro | Mr Mallorca Golf',
@@ -200,7 +200,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Private Golf Days in Mallorca',
+    title: 'Private Golf Experiences in Mallorca | PGA Pro Andy Griffiths',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {

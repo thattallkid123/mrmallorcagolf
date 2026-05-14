@@ -248,6 +248,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Campo de montaña · Par 72 · ~€125 · Suroeste de Mallorca',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Análisis de Campo',
+        badgeGold: true,
+        title: 'T Golf Calvià Análisis - La Opinión Honesta de un Profesional PGA (2026)',
+        intro:
+          'Quince lagos, molinos de viento por todo el campo y algunos de los greens más puros que he jugado en Mallorca. Uno de los campos mejor cuidados de la isla. Un 9 sobre 10.',
+        readTime: '6 min',
+        keywords: 'Par 72 · Hasta 210 € · Suroeste de Mallorca',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'La experiencia',
         title: 'Un día en Son Gual con un Profesional PGA',
@@ -388,6 +398,16 @@ export const GUIDES_CONTENT = {
           'Das längste Par 5 Spaniens, Bergblicke über den Südwesten und ein Layout, das Spielmanagement weit mehr belohnt als Weite. Eine 7,5 von 10.',
         readTime: '6 Min.',
         keywords: 'Bergplatz · Par 72 · ~€125 · Südwesten Mallorcas',
+      },
+      {
+        slug: 't-golf-calvia-review',
+        badge: 'Platz-Bewertung',
+        badgeGold: true,
+        title: 'T Golf Calvià Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)',
+        intro:
+          'Fünfzehn Seen, Windmühlen auf dem gesamten Platz und einige der reinsten Grüns, die ich in Mallorca gespielt habe. Einer der bestgepflegten Plätze der Insel. 9 von 10.',
+        readTime: '6 Min.',
+        keywords: 'Par 72 · Bis 210 € · Südwesten Mallorcas',
       },
       {
         slug: 'a-day-at-son-gual',
@@ -532,6 +552,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Parcours de montagne · Par 72 · ~€125 · Sud-ouest de Majorque',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Avis Parcours',
+        badgeGold: true,
+        title: "T Golf Calvià Avis - L'Avis Honnête d'un Professionnel PGA (2026)",
+        intro:
+          "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. L'un des parcours les mieux entretenus de l'île. Un 9 sur 10.",
+        readTime: '6 min',
+        keywords: 'Par 72 · Jusqu\'à 210 € · Sud-ouest de Majorque',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: "L'expérience",
         title: 'Une journée à Son Gual avec un Professionnel PGA',
@@ -672,6 +702,16 @@ export const GUIDES_CONTENT = {
           'De langste par 5 van Spanje, bergzichten over het zuidwesten en een layout die baanmanagement veel meer beloont dan lengte. Een 7,5 op 10.',
         readTime: '6 min',
         keywords: 'Bergbaan · Par 72 · ~€125 · Zuidwest-Mallorca',
+      },
+      {
+        slug: 't-golf-calvia-review',
+        badge: 'Baanreview',
+        badgeGold: true,
+        title: 'T Golf Calvià Review - De Eerlijke Mening van een PGA Professional (2026)',
+        intro:
+          'Vijftien meren, windmolens door de hele baan en enkele van de zuiverste greens die ik op Mallorca heb gespeeld. Een van de best onderhouden banen op het eiland. Een 9 uit 10.',
+        readTime: '6 min',
+        keywords: 'Par 72 · Tot €210 · Zuidwest Mallorca',
       },
       {
         slug: 'a-day-at-son-gual',
@@ -816,6 +856,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Bergsbana · Par 72 · ~€125 · Sydvästra Mallorca',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Banrecension',
+        badgeGold: true,
+        title: 'T Golf Calvià Recension - En PGA-Professionals Ärliga Omdöme (2026)',
+        intro:
+          'Femton sjöar, väderkvarnar på hela banan och några av de renaste greenerna jag spelat på Mallorca. En av de bäst skötta banorna på ön. En 9 av 10.',
+        readTime: '6 min',
+        keywords: 'Par 72 · Upp till 210 € · Sydvästra Mallorca',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'Upplevelsen',
         title: 'En dag på Son Gual med en PGA-professionell',
@@ -956,6 +1006,16 @@ export const GUIDES_CONTENT = {
           '西班牙最长的标准杆5洞，俯瞰西南部的山景，以及一个更考验球场管理能力而非距离的球场。评分7.5/10。',
         readTime: '6分钟',
         keywords: '山地球场 · 标准杆72 · 约€125 · 马略卡西南部',
+      },
+      {
+        slug: 't-golf-calvia-review',
+        badge: '球场评测',
+        badgeGold: true,
+        title: 'T Golf Calvià 评测 — PGA职业球员的真实评价（2026）',
+        intro:
+          '十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。岛上维护最佳的球场之一。综合评分9/10。',
+        readTime: '6分钟',
+        keywords: '标准杆72 · 最高210欧元 · 马略卡岛西南部',
       },
       {
         slug: 'a-day-at-son-gual',

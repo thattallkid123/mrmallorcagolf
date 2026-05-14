@@ -4,9 +4,9 @@ import { getLocalizedGuideArticleContent } from './guide-article-content-localiz
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
     metadata: {
-      title: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
+      title: 'How Much Does Golf Cost in Mallorca? (2026 Green Fee Guide)',
       description:
-        'Exact green fees for every Mallorca golf course in 2026 — from €55 at budget courses to €250 at Son Gual and Son Muntaner. Plus club hire, buggies, and where to save.',
+        'Green fees in Mallorca range from €55 to €250 depending on the course and season. Exact prices for all 24 courses in 2026, plus club hire, buggies, and where to save.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
@@ -30,7 +30,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Golf in Mallorca ranges from genuinely affordable to seriously expensive - the gap between them is bigger than most visitors expect. Here's an honest breakdown for 2026, from someone who plays here most weeks. Incredible value compared to the prices of golf in Shanghai where I spent 11 years, but costs can creep up if you don't plan well.",
+          "Golf in Mallorca ranges from genuinely affordable to seriously expensive - the gap between them is bigger than most visitors expect. Here's an honest breakdown for 2026, from someone who plays here most weeks. For a full rundown of every course on the island, see the <a href='/golf-courses'>Mallorca golf courses guide</a>. Incredible value compared to the prices of golf in Shanghai where I spent 11 years, but costs can creep up if you don't plan well.",
       },
       { type: 'heading', text: 'Green Fees' },
       { type: 'subheading', text: 'Budget (nine-hole, pitch and putt)' },
@@ -431,7 +431,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "I'm a PGA Advanced Professional and I'm working my way through every course on the island - playing them, reviewing them honestly, working out what makes each one worth the trip and taking my guests along too to learn. Below is what I know so far.",
+          "I'm a PGA Advanced Professional and I'm working my way through every course on the island - playing them, reviewing them honestly, working out what makes each one worth the trip and taking my guests along too to learn. You can also browse all 24 courses with green fees and filters on the <a href='/golf-courses'>Mallorca golf courses page</a>. Below is what I know so far.",
       },
       { type: 'heading', text: 'The Top Courses - By Purpose' },
       { type: 'subheading', text: 'For a Serious Championship Round: Son Gual' },
@@ -696,9 +696,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'is-mallorca-good-for-golf': {
     metadata: {
-      title: "Is Mallorca Good for Golf? A PGA Professional's Answer",
+      title: "Is Mallorca Good for Golf? Yes — Here's What to Know (2026)",
       description:
-        'Is Mallorca good for golf? A PGA professional based on the island gives an honest answer - world-class courses, year-round conditions, and what to do beyond the fairways.',
+        '24 courses, year-round sunshine, green fees from €55. A PGA professional based in Mallorca since 2025 gives an honest answer on courses, conditions, and what to expect.',
       canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
       image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
       imageAlt: "Is Mallorca Good for Golf? A PGA Professional's Answer",
@@ -748,7 +748,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Coming from Shanghai - 27 million people with just 12 courses - the density of quality golf within a maximum one-hour drive here is remarkable. A week on the island can include four or five genuinely different, genuinely excellent rounds. Southwest, east coast, north, central Palma: each area has its own character and not just a samey resort track.',
+          'Coming from Shanghai - 27 million people with just 12 courses - the density of quality golf within a maximum one-hour drive here is remarkable. A week on the island can include four or five genuinely different, genuinely excellent rounds. Southwest, east coast, north, central Palma: each area has its own character and not just a samey resort track. The full list of every course with green fees and honest ratings is on the <a href="/golf-courses">Mallorca golf courses page</a>.',
       },
       {
         type: 'facts',
@@ -1151,3 +1151,4 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
     },
   }
 }
+                 

@@ -1,3 +1,19 @@
+## 2026-05-15
+
+- [seo] Meta title rewrites for CTR: golf-cost guide, is-mallorca-good, play-with-a-pro, son-muntaner, homepage
+- [seo] Internal linking: /golf-courses links added in Son Gual/Alcanada/Son Muntaner verdicts; cross-links between the three reviews; links from golf-cost, is-mallorca, best-golf-courses articles
+- [admin] CLAUDE.md: fixed stale file reference, added MMG_WORK_STATUS.md auto-read, corrected GA4 workflow
+- [admin] Analytics dashboard rebuilt with GA4 + Search Console combined (4 tabs: overview, queries, pages, actions)
+- [admin] Fortnightly analytics reminder scheduled: Fri 29 May, then ongoing fortnightly
+
+## 2026-05-15
+
+- [site] T Golf Calvià: added de/es/fr/nl/sv/zh translations to guide-post-content-localized.js
+- [site] T Golf Calvià: added to non-English liveGuides in guides-content.js (all 6 locales, after Andratx)
+- [site] T Golf Calvià: created language page JSX files for all 6 locales
+- [site] T Golf Calvià: optimised metadata (title, description, imagePath → .jpg) for all locales
+- [admin] Updated CLAUDE.md and COURSE_BLOG_PIPELINE.md with photo processing rules and large-file edit ban
+
 ## 2026-05-14
 
 - [site] Image optimization: converted all JPG/JPEG references to WebP (498 code replacements across 6 lib files), created 213 WebP files, original JPGs preserved for backup

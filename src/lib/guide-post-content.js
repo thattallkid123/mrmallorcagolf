@@ -34,7 +34,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Son Gual is my most-played course in Mallorca and the one I recommend most consistently when clients ask where to play. I want to be honest about why - and honest about what makes it hard, because it is hard, and anyone booking expecting a relaxed day will be surprised.',
+            'Son Gual is my most-played course in Mallorca and the one I recommend most consistently when clients ask where to play. I want to be honest about why - and honest about what makes it hard, because it is hard, and anyone booking expecting a relaxed day will be surprised. If you are also considering <a href="/guides/alcanada-review">Alcanada</a> or <a href="/guides/son-muntaner-review">Son Muntaner</a>, read those reviews too before deciding.',
         },
         {
           type: 'image',
@@ -148,7 +148,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            "Son Gual is my favourite course in Mallorca. The conditioning is superb, the design asks proper questions, and the setting is strong without needing to shout about it. If your game is in decent order and you want a serious round, start here.",
+            "Son Gual is my favourite course in Mallorca. The conditioning is superb, the design asks proper questions, and the setting is strong without needing to shout about it. If your game is in decent order and you want a serious round, start here. See how it compares on the <a href='/golf-courses'>full Mallorca golf courses page</a>.",
         },
         {
           type: 'cta',
@@ -190,7 +190,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Alcanada is the course I take people to when I want them to go home remembering one round in particular. It might be the most memorable day on the island. The lighthouse and the views on many of the holes help, but the course stands up on its own too.',
+          text: 'Alcanada is the course I take people to when I want them to go home remembering one round in particular. It might be the most memorable day on the island. The lighthouse and the views on many of the holes help, but the course stands up on its own too. If you are weighing it against <a href="/guides/son-gual-review">Son Gual</a> or <a href="/guides/son-muntaner-review">Son Muntaner</a>, both are worth reading first.',
         },
         { type: 'heading', text: 'The Setting' },
         {
@@ -295,7 +295,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "Alcanada is the course I'd use if I wanted someone to understand why people come back to golf in Mallorca. The greens will test you, the drive north is worth it, and you should leave enough time for lunch afterwards.",
+          text: "Alcanada is the course I'd use if I wanted someone to understand why people come back to golf in Mallorca. The greens will test you, the drive north is worth it, and you should leave enough time for lunch afterwards. Browse all 24 courses and green fees on the <a href='/golf-courses'>Mallorca golf courses page</a>.",
         },
         {
           type: 'cta',
@@ -309,9 +309,9 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Mallorca Review (2026) - Best in Spain, But Is It Worth It?",
+        title: "Son Muntaner Golf Club Review (2026) — Best Course in Spain?",
         description:
-          "Best Golf Course in Spain 2025 (World Golf Awards). €125–250 green fees, buggy included, 5 mins from Palma. I played it on a busy Saturday — here's what I found.",
+          "Son Muntaner holds the Best Golf Course in Spain title (World Golf Awards 2025). Green fees €125–250, buggy included, 5 mins from Palma. I played it on a busy Saturday.",
         imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
@@ -364,7 +364,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €250 for 18 holes, with the lowest widely seen later-day rate around €125. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap certificate required." },
         { type: 'paragraph', text: "Son Muntaner is part of the Arabella Golf Mallorca group alongside Son Vida and Son Quint. All three courses are accessible from the same resort complex." },
         { type: 'heading', text: 'Verdict' },
-        { type: 'paragraph', text: "The Best Golf Course in Spain title is not marketing. Son Muntaner delivers a course that tests positioning, discipline, and clarity of decision-making from the first hole to the last. It rewards control over power and creates scoring opportunities through precision. Five minutes from Palma makes the logistics straightforward. The greens alone justify the trip." },
+        { type: 'paragraph', text: "The Best Golf Course in Spain title is not marketing. Son Muntaner delivers a course that tests positioning, discipline, and clarity of decision-making from the first hole to the last. It rewards control over power and creates scoring opportunities through precision. Five minutes from Palma makes the logistics straightforward. The greens alone justify the trip. Compare all courses on the <a href='/golf-courses'>Mallorca golf courses page</a>." },
         { type: 'paragraph', text: "A return visit with more fairways found would unlock a deeper read of the layout. That's the mark of a course worth coming back to." },
         { type: 'cta', text: 'Want to play Son Muntaner with a PGA professional alongside you?', linkLabel: 'See the play-with-a-pro experience →', href: '/play-with-a-pro' },
       ],
@@ -610,7 +610,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'facts',
           items: [
             ['~€125', 'Green fee (May 2026)'],
-            ['7.5/10', 'Andy\'s rating'],
+            ['7.5/10', "Andy's rating"],
             ['Par 72', 'Mountain layout'],
             ['SW Mallorca', 'Above Andratx town'],
           ],
