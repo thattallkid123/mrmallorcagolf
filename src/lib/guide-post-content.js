@@ -830,6 +830,9 @@ export const GUIDE_POST_CONTENT = {
           alt: 'Windmill at T Golf Calvià against a clear blue sky',
           caption: 'The windmills are a distinctive feature of T Golf Calvià.',
           priority: true,
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
         },
         {
           type: 'paragraph',
@@ -844,7 +847,9 @@ export const GUIDE_POST_CONTENT = {
           src: '/images/t-golf-calvia-blog/t-golf-calvia-7.webp',
           alt: 'Bunker at T Golf Calvià showing the distinctive rake design',
           caption: 'The rake design means the ball rarely comes to rest against the face. A small detail that makes a real difference.',
-          imageStyle: { objectPosition: 'center 70%' },
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
         },
         {
           type: 'paragraph',
@@ -859,6 +864,9 @@ export const GUIDE_POST_CONTENT = {
           src: '/images/t-golf-calvia-blog/t-golf-calvia-4.webp',
           alt: 'Fairway at T Golf Calvià with windmill and Tramuntana mountains in the background',
           caption: 'The windmills and Tramuntana backdrop are a consistent feature throughout the round.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
         },
         {
           type: 'heading',
@@ -877,6 +885,9 @@ export const GUIDE_POST_CONTENT = {
           src: '/images/t-golf-calvia-blog/t-golf-calvia-3.webp',
           alt: 'Hole 8 at T Golf Calvià with palm trees and Tramuntana mountains behind the green',
           caption: 'Hole 8. A good backdrop, but the approach asks more of you than it looks.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
         },
         {
           type: 'paragraph',
@@ -887,6 +898,9 @@ export const GUIDE_POST_CONTENT = {
           src: '/images/t-golf-calvia-blog/t-golf-calvia-5.webp',
           alt: 'Fairway and bunkers at T Golf Calvià with the Tramuntana mountains in the background',
           caption: 'The Tramuntana mountains sit in the background on most holes on the back nine.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
         },
         {
           type: 'paragraph',
@@ -901,7 +915,9 @@ export const GUIDE_POST_CONTENT = {
           src: '/images/t-golf-calvia-blog/t-golf-calvia-6.webp',
           alt: 'Two golfers on the course at T Golf Calvià with the fairway and mountains behind',
           caption: 'Playing T Golf Calvià with a guest. The course suits players who want a proper test in good condition.',
-          imageStyle: { objectPosition: 'center 80%' },
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
         },
         {
           type: 'heading',
@@ -933,6 +949,9 @@ export const GUIDE_POST_CONTENT = {
           src: '/images/t-golf-calvia-blog/t-golf-calvia-2.webp',
           alt: 'Pine trees framing the fairway at T Golf Calvià with water and mountains visible beyond',
           caption: 'From most of the fairways you can see nothing but pine trees, water and mountains.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
         },
         {
           type: 'heading',
