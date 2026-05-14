@@ -79,6 +79,18 @@ export const GUIDES_CONTENT = {
         keywords: 'Mountain course · Par 72 · ~€125 · Southwest Mallorca',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Course Review',
+        badgeGold: true,
+        img: '/images/t-golf-calvia-card.webp',
+        imgPosition: 'center 40%',
+        title: "T Golf Calvià Review - A PGA Professional's Honest Take (2026)",
+        intro:
+          'Fifteen lakes, windmills throughout, and some of the purest greens on the island. One of the best-conditioned courses in Mallorca. A 9 out of 10.',
+        readTime: '6 min read',
+        keywords: 'Par 72 · Up to €210 · Southwest Mallorca · 15 lakes',
+      },
+      {
         slug: 'a-day-at-son-gual',
         badge: 'The Experience',
         img: '/images/son-gual-blog/sg-hero.webp',

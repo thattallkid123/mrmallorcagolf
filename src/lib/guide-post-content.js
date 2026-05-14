@@ -954,3 +954,59 @@ export const GUIDE_POST_CONTENT = {
     },
   },
 }
+
+const LOCALIZED_TEXT_KEYS = new Set([
+  'title',
+  'description',
+  'imagePath',
+  'badge',
+  'readTime',
+  'updated',
+  'intro',
+  'text',
+  'caption',
+  'alt',
+  'linkLabel',
+  'href',
+])
+
+function mergeLocalizedValue(base, localized) {
+  if (typeof base !== 'object' || base === null) return localized ?? base
+  if (Array.isArray(base)) {
+    return base.map((item, i) =>
+      localized && localized[i] !== undefined
+        ? mergeLocalizedValue(item, localized[i])
+        : item
+    )
+  }
+  const merged = { ...base }
+  for (const key of Object.keys(base)) {
+    if (localized && localized[key] !== undefined) {
+      merged[key] = mergeLocalizedValue(base[key], localized[key])
+    }
+  }
+  return merged
+}
+
+export function getGuidePostContent(slug, locale = 'en') {
+  const guide = GUIDE_POST_CONTENT[slug]
+  if (!guide) return null
+
+  const baseContent = guide.en
+  if (locale === 'en') return withGuidePostSlug(baseContent, slug)
+
+  const localizedContent = getLocalizedGuidePostContent(slug, locale) || guide[locale]
+  if (!localizedContent) return withGuidePostSlug(baseContent, slug)
+
+  return withGuidePostSlug(mergeLocalizedValue(baseContent, localizedContent), slug)
+}
+
+function withGuidePostSlug(content, slug) {
+  return {
+    ...content,
+    meta: {
+      ...content.meta,
+      slug,
+    },
+  }
+}
