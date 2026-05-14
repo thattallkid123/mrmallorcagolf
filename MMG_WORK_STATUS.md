@@ -51,7 +51,6 @@ Last updated: 2026-05-11
 
 ### Lower priority — site
 - [ ] **PWAP carousel** — photos of past guests
-- [ ] **Add "Popular" badges to guide cards** — Son Gual, Alcanada
 - [ ] **Footer/design consistency audit**
 
 ---
@@ -60,7 +59,7 @@ Last updated: 2026-05-11
 
 - [ ] Homepage metadata rewrite (highest impact — deferred)
 - [ ] Contact page metadata rewrite (deferred)
-- [ ] Monitor "golf cost mallorca" CTR — 256 impressions, 1 click, position 6 — title needs work
+- [✅] Monitor "golf cost mallorca" CTR — 256 impressions, 1 click, position 6 — title needs work (I think this is done)
 - [ ] FAQ schema markup on main pages
 - [ ] Golf club rental: 2–3 more blog posts targeting search gaps
 - [ ] Competitor keyword audit
@@ -77,17 +76,17 @@ These don't need code — just Andy's time:
 - [ ] Research prebooking model with courses (cancellation windows etc.)
 - [ ] Research Scottish golf tour operators as model reference
 - [ ] Club shipping partner research (Ship Sticks etc.)
-- [ ] Financial projections spreadsheet
+- [✅] Financial projections spreadsheet
 
 ---
 
 ## OPEN QUESTIONS ❓
 
-1. **Monclair site** — you mentioned it as About page layout inspiration. What's the URL?
-2. **6 credentials** — PGA, Pebble Beach, Trackman confirmed. What are the other three?
-3. **Newsletter value prop** — what should subscribers actually get?
-4. **Handicap field** — keep as optional, or remove entirely from contact form?
-5. **Homepage / contact page title** — when you're ready to think about these, flag it
+- [ ] **Monclair site** — you mentioned it as About page layout inspiration. What's the URL? (https://www.montclairchef.com/)
+- [ ] **6 credentials** — PGA Logo. Pebble Beach, Trackman confirmed. What are the other three?
+- [ ] **Newsletter value prop** — what should subscribers actually get?
+- [✅] **Handicap field** — keep as optional, or remove entirely from contact form?
+- [ ] **Homepage / contact page title** — when you're ready to think about these, flag it
 
 ---
 

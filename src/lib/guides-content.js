@@ -220,6 +220,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Costa · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Análisis de Campo',
+        badgeGold: true,
+        title: 'T Golf Calvià Análisis - La Opinión Honesta de un Profesional PGA (2026)',
+        intro:
+          'Quince lagos, molinos de viento por todo el campo y algunos de los greens más puros que he jugado en Mallorca. Uno de los campos mejor cuidados de la isla. Un 9 sobre 10.',
+        readTime: '6 min',
+        keywords: 'Par 72 · Hasta 210 € · Suroeste de Mallorca',
+      },
+      {
         slug: 'santa-ponsa-1-review',
         badge: 'Análisis del campo',
         title: 'Golf Santa Ponsa 1, Mallorca - análisis honesto de un Profesional PGA (2026)',
@@ -247,16 +257,7 @@ export const GUIDES_CONTENT = {
         readTime: '6 min',
         keywords: 'Campo de montaña · Par 72 · ~€125 · Suroeste de Mallorca',
       },
-      {
-        slug: 't-golf-calvia-review',
-        badge: 'Análisis de Campo',
-        badgeGold: true,
-        title: 'T Golf Calvià Análisis - La Opinión Honesta de un Profesional PGA (2026)',
-        intro:
-          'Quince lagos, molinos de viento por todo el campo y algunos de los greens más puros que he jugado en Mallorca. Uno de los campos mejor cuidados de la isla. Un 9 sobre 10.',
-        readTime: '6 min',
-        keywords: 'Par 72 · Hasta 210 € · Suroeste de Mallorca',
-      },
+
       {
         slug: 'a-day-at-son-gual',
         badge: 'La experiencia',
@@ -372,6 +373,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Küste · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Platz-Bewertung',
+        badgeGold: true,
+        title: 'T Golf Calvià Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)',
+        intro:
+          'Fünfzehn Seen, Windmühlen auf dem gesamten Platz und einige der reinsten Grüns, die ich in Mallorca gespielt habe. Einer der bestgepflegten Plätze der Insel. 9 von 10.',
+        readTime: '6 Min.',
+        keywords: 'Par 72 · Bis 210 € · Südwesten Mallorcas',
+      },
+      {
         slug: 'santa-ponsa-1-review',
         badge: 'Platz-Bewertung',
         title: 'Golf Santa Ponsa 1, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)',
@@ -399,16 +410,7 @@ export const GUIDES_CONTENT = {
         readTime: '6 Min.',
         keywords: 'Bergplatz · Par 72 · ~€125 · Südwesten Mallorcas',
       },
-      {
-        slug: 't-golf-calvia-review',
-        badge: 'Platz-Bewertung',
-        badgeGold: true,
-        title: 'T Golf Calvià Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)',
-        intro:
-          'Fünfzehn Seen, Windmühlen auf dem gesamten Platz und einige der reinsten Grüns, die ich in Mallorca gespielt habe. Einer der bestgepflegten Plätze der Insel. 9 von 10.',
-        readTime: '6 Min.',
-        keywords: 'Par 72 · Bis 210 € · Südwesten Mallorcas',
-      },
+
       {
         slug: 'a-day-at-son-gual',
         badge: 'Das Erlebnis',
@@ -524,6 +526,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Côtier · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Avis Parcours',
+        badgeGold: true,
+        title: "T Golf Calvià Avis - L'Avis Honnête d'un Professionnel PGA (2026)",
+        intro:
+          "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. L'un des parcours les mieux entretenus de l'île. Un 9 sur 10.",
+        readTime: '6 min',
+        keywords: 'Par 72 · Jusqu\'à 210 € · Sud-ouest de Majorque',
+      },
+      {
         slug: 'santa-ponsa-1-review',
         badge: 'Avis parcours',
         title: "Golf Santa Ponsa 1, Majorque - avis honnête d'un Professionnel PGA (2026)",
@@ -551,16 +563,7 @@ export const GUIDES_CONTENT = {
         readTime: '6 min',
         keywords: 'Parcours de montagne · Par 72 · ~€125 · Sud-ouest de Majorque',
       },
-      {
-        slug: 't-golf-calvia-review',
-        badge: 'Avis Parcours',
-        badgeGold: true,
-        title: "T Golf Calvià Avis - L'Avis Honnête d'un Professionnel PGA (2026)",
-        intro:
-          "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. L'un des parcours les mieux entretenus de l'île. Un 9 sur 10.",
-        readTime: '6 min',
-        keywords: 'Par 72 · Jusqu\'à 210 € · Sud-ouest de Majorque',
-      },
+
       {
         slug: 'a-day-at-son-gual',
         badge: "L'expérience",
@@ -676,6 +679,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Kustbaan · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Baanreview',
+        badgeGold: true,
+        title: 'T Golf Calvià Review - De Eerlijke Mening van een PGA Professional (2026)',
+        intro:
+          'Vijftien meren, windmolens door de hele baan en enkele van de zuiverste greens die ik op Mallorca heb gespeeld. Een van de best onderhouden banen op het eiland. Een 9 uit 10.',
+        readTime: '6 min',
+        keywords: 'Par 72 · Tot €210 · Zuidwest Mallorca',
+      },
+      {
         slug: 'santa-ponsa-1-review',
         badge: 'Baanbeoordeling',
         title: 'Golf Santa Ponsa 1, Mallorca - eerlijke beoordeling van een PGA Professional (2026)',
@@ -703,16 +716,7 @@ export const GUIDES_CONTENT = {
         readTime: '6 min',
         keywords: 'Bergbaan · Par 72 · ~€125 · Zuidwest-Mallorca',
       },
-      {
-        slug: 't-golf-calvia-review',
-        badge: 'Baanreview',
-        badgeGold: true,
-        title: 'T Golf Calvià Review - De Eerlijke Mening van een PGA Professional (2026)',
-        intro:
-          'Vijftien meren, windmolens door de hele baan en enkele van de zuiverste greens die ik op Mallorca heb gespeeld. Een van de best onderhouden banen op het eiland. Een 9 uit 10.',
-        readTime: '6 min',
-        keywords: 'Par 72 · Tot €210 · Zuidwest Mallorca',
-      },
+
       {
         slug: 'a-day-at-son-gual',
         badge: 'De ervaring',
@@ -828,6 +832,16 @@ export const GUIDES_CONTENT = {
         keywords: 'Kustbana · Par 72 · €115-220 · Rolex Challenge Tour Grand Final',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: 'Banrecension',
+        badgeGold: true,
+        title: 'T Golf Calvià Recension - En PGA-Professionals Ärliga Omdöme (2026)',
+        intro:
+          'Femton sjöar, väderkvarnar på hela banan och några av de renaste greenerna jag spelat på Mallorca. En av de bäst skötta banorna på ön. En 9 av 10.',
+        readTime: '6 min',
+        keywords: 'Par 72 · Upp till 210 € · Sydvästra Mallorca',
+      },
+      {
         slug: 'santa-ponsa-1-review',
         badge: 'Banomdöme',
         title: 'Golf Santa Ponsa 1, Mallorca - ärlig recension av en PGA Professional (2026)',
@@ -855,16 +869,7 @@ export const GUIDES_CONTENT = {
         readTime: '6 min',
         keywords: 'Bergsbana · Par 72 · ~€125 · Sydvästra Mallorca',
       },
-      {
-        slug: 't-golf-calvia-review',
-        badge: 'Banrecension',
-        badgeGold: true,
-        title: 'T Golf Calvià Recension - En PGA-Professionals Ärliga Omdöme (2026)',
-        intro:
-          'Femton sjöar, väderkvarnar på hela banan och några av de renaste greenerna jag spelat på Mallorca. En av de bäst skötta banorna på ön. En 9 av 10.',
-        readTime: '6 min',
-        keywords: 'Par 72 · Upp till 210 € · Sydvästra Mallorca',
-      },
+
       {
         slug: 'a-day-at-son-gual',
         badge: 'Upplevelsen',
@@ -980,6 +985,16 @@ export const GUIDES_CONTENT = {
         keywords: '海滨球场 · 标准杆72 · €115-220 · 劳力士挑战巡回赛总决赛',
       },
       {
+        slug: 't-golf-calvia-review',
+        badge: '球场评测',
+        badgeGold: true,
+        title: 'T Golf Calvià 评测 — PGA职业球员的真实评价（2026）',
+        intro:
+          '十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。岛上维护最佳的球场之一。综合评分9/10。',
+        readTime: '6分钟',
+        keywords: '标准杆72 · 最高210欧元 · 马略卡岛西南部',
+      },
+      {
         slug: 'santa-ponsa-1-review',
         badge: '球场评测',
         title: '圣蓬萨1号高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）',
@@ -1007,16 +1022,7 @@ export const GUIDES_CONTENT = {
         readTime: '6分钟',
         keywords: '山地球场 · 标准杆72 · 约€125 · 马略卡西南部',
       },
-      {
-        slug: 't-golf-calvia-review',
-        badge: '球场评测',
-        badgeGold: true,
-        title: 'T Golf Calvià 评测 — PGA职业球员的真实评价（2026）',
-        intro:
-          '十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。岛上维护最佳的球场之一。综合评分9/10。',
-        readTime: '6分钟',
-        keywords: '标准杆72 · 最高210欧元 · 马略卡岛西南部',
-      },
+
       {
         slug: 'a-day-at-son-gual',
         badge: '亲历体验',
