@@ -9,11 +9,12 @@ const LANG_CONFIG = {
     links: [
       { href: '/', label: 'Home' },
       { href: '/about', label: 'About' },
-      { href: '/play-with-a-pro', label: 'The Day' },
+      { href: 'https://internal.mrmallorcagolf.com', label: 'Itinerary' },
+      { href: '/play-with-a-pro', label: 'Add-On' },
       { href: '/golf-courses', label: 'Golf Courses' },
       { href: '/guides', label: 'Guides' },
     ],
-    cta: { href: '/contact', label: 'Enquire' },
+    cta: { href: 'https://internal.mrmallorcagolf.com', label: 'Plan Trip' },
   },
   de: {
     links: [

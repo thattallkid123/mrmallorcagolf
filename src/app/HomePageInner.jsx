@@ -32,6 +32,8 @@ const FEATURE_ICONS = {
   ),
 }
 
+const ITINERARY_BUILDER_URL = 'https://internal.mrmallorcagolf.com'
+
 function localizePath(path, locale) {
   if (!path || path.startsWith('http') || path.startsWith('#')) return path
   return locale === 'en' ? path : `/${locale}${path}`
@@ -54,6 +56,7 @@ export default function HomePageInner({ locale = 'en' }) {
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
+  const itineraryHref = home.hero.primaryHref || ITINERARY_BUILDER_URL
   const multiDayPackage = home.packages?.multiDay || home.packages?.premium
 
   return (
@@ -84,10 +87,10 @@ export default function HomePageInner({ locale = 'en' }) {
             ) : null}
           </h1>
           <div className="hero__actions">
-            <a href={contactHref} className="btn btn--gold">
+            <a href={itineraryHref} className="btn btn--gold">
               {home.hero.primaryCta}
             </a>
-            <a href={locale === 'en' ? '/a-day' : `/${locale}/play-with-a-pro`} className="btn btn--outline-white">
+            <a href={golfCoursesHref} className="btn btn--outline-white">
               {home.hero.secondaryCta}
             </a>
           </div>
@@ -121,6 +124,29 @@ export default function HomePageInner({ locale = 'en' }) {
           {home.socialProof}
         </p>
       </section>
+
+      {home.journey ? (
+        <section className="journey">
+          <div className="journey__header reveal">
+            <p className="eyebrow">{home.journey.eyebrow}</p>
+            <h2 className="serif-display">{home.journey.title}</h2>
+          </div>
+          <div className="journey__grid">
+            {home.journey.items.map((item, index) => (
+              <a
+                key={item.title}
+                href={localizePath(item.href, locale)}
+                className={`journey-card reveal${index ? ` reveal-delay-${index}` : ''}`}
+              >
+                <span className="journey-card__num">0{index + 1}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+                <span className="journey-card__cta">{item.cta}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="how">
         <div className="how__header reveal">
@@ -203,7 +229,7 @@ export default function HomePageInner({ locale = 'en' }) {
             <a href={playWithAProHref} className="btn btn--dark">
               {home.experience.button}
             </a>
-            <a href={contactHref} className="btn btn--gold">
+            <a href={ITINERARY_BUILDER_URL} className="btn btn--gold">
               {home.experience.dateCta}
             </a>
           </div>
@@ -232,6 +258,37 @@ export default function HomePageInner({ locale = 'en' }) {
           )}
         </div>
       </section>
+
+      {home.credentials ? (
+        <section className="home-credentials">
+          <div className="home-credentials__intro reveal">
+            <p className="eyebrow">{home.credentials.eyebrow}</p>
+            <h2 className="serif-display">{home.credentials.title}</h2>
+            <p>{home.credentials.intro}</p>
+          </div>
+          <div className="home-credentials__grid">
+            {home.credentials.items.map((credential, index) => (
+              <div key={credential.title} className={`home-credential reveal${index ? ` reveal-delay-${Math.min(index, 3)}` : ''}`}>
+                {credential.image ? (
+                  <div className="home-credential__image">
+                    <Image
+                      src={credential.image}
+                      alt={credential.title}
+                      fill
+                      sizes="(max-width: 768px) 50vw, 180px"
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                ) : (
+                  <span className="home-credential__mark">{String(index + 1).padStart(2, '0')}</span>
+                )}
+                <h3>{credential.title}</h3>
+                <p>{credential.detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="packages">
         <div className="packages__header reveal">
@@ -263,7 +320,7 @@ export default function HomePageInner({ locale = 'en' }) {
             <p className="eyebrow" style={{ color: 'rgba(255,255,255,0.45)', marginBottom: '0.75rem' }}>{multiDayPackage.eyebrow}</p>
             <h3 className="serif-display" style={{ color: '#fff', fontSize: 'clamp(1.3rem,2.2vw,1.8rem)', marginBottom: '1rem' }}>{multiDayPackage.title}</h3>
             <p style={{ color: 'rgba(255,255,255,0.72)', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.75rem', maxWidth: 560, margin: '0 auto 1.75rem' }}>{multiDayPackage.body}</p>
-            <a href={contactHref} className="btn btn--gold">{multiDayPackage.cta}</a>
+            <a href={multiDayPackage.href || contactHref} className="btn btn--gold">{multiDayPackage.cta}</a>
           </div>
         )}
       </section>
@@ -328,7 +385,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">&ldquo;{home.finalCta.quote}&rdquo;</p>
-          <a href={contactHref} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px', letterSpacing: '0.18em' }}>
+          <a href={ITINERARY_BUILDER_URL} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px', letterSpacing: '0.18em' }}>
             {home.finalCta.primaryCta}
           </a>
           <a href="https://wa.me/34624466702" className="btn btn--outline-white" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>

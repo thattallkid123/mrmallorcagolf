@@ -10,9 +10,9 @@ export const DEFAULT_SOCIAL_IMAGE = {
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf Trips & Private Golf Days | Mr Mallorca Golf',
+    title: 'Mallorca Golf Trip Planning & Itineraries | Mr Mallorca Golf',
     description:
-      'Plan your Mallorca golf trip with PGA Advanced Professional Andy Griffiths. Course recommendations, itineraries, and private golf days from €495. Son Gual, Alcanada and more.',
+      'Build a better Mallorca golf trip with PGA Advanced Professional Andy Griffiths. Course planning, itineraries, local recommendations, and Play With A Pro add-ons.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro | Mr Mallorca Golf',
@@ -200,7 +200,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Private Golf Experiences in Mallorca | PGA Pro Andy Griffiths',
+    title: 'Play With A Pro in Mallorca | Premium Golf Trip Add-On',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {
@@ -231,9 +231,9 @@ const PLAY_WITH_A_PRO_METADATA = {
 
 const CONTACT_METADATA = {
   en: {
-    title: 'Enquire About a Private Golf Day in Mallorca | Mr Mallorca Golf',
+    title: 'Plan Your Mallorca Golf Trip | Contact Mr Mallorca Golf',
     description:
-      'Enquire about a private golf day in Mallorca with Andy Griffiths. Every enquiry is answered personally, usually within a few hours and always within 24.',
+      'Send your Mallorca golf trip dates, group details, and course ideas to Andy Griffiths for itinerary help, booking direction, or a Play With A Pro add-on.',
   },
   de: {
     title: 'Kontakt - Mr Mallorca Golf | Andy Griffiths UK PGA Professional',

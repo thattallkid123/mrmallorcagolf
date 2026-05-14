@@ -50,7 +50,7 @@ function buildPlayWithAProSchema(locale, content) {
   const pagePath = buildLocalePath('/play-with-a-pro', locale)
   const contactPath = buildLocalePath('/contact', locale)
   const golfCoursesPath = buildLocalePath('/golf-courses', locale)
-  const serviceName = locale === 'en' ? 'Private Golf Days in Mallorca' : content.hero.title
+  const serviceName = locale === 'en' ? 'Play With A Pro Mallorca Golf Add-On' : content.hero.title
 
   return {
     '@context': 'https://schema.org',
@@ -67,7 +67,7 @@ function buildPlayWithAProSchema(locale, content) {
       '@type': 'Place',
       name: 'Mallorca, Spain',
     },
-    serviceType: 'Private golf day',
+    serviceType: 'Private golf trip add-on',
     offers: {
       '@type': 'AggregateOffer',
       lowPrice: 495,
