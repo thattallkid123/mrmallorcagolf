@@ -900,6 +900,7 @@ export const GUIDE_POST_CONTENT = {
           src: '/images/t-golf-calvia-blog/t-golf-calvia-6.webp',
           alt: 'Two golfers on the course at T Golf Calvià with the fairway and mountains behind',
           caption: 'Playing T Golf Calvià with a guest. The course suits players who want a proper test in good condition.',
+          imageStyle: { objectPosition: 'center 80%' },
         },
         {
           type: 'heading',
