@@ -844,6 +844,7 @@ export const GUIDE_POST_CONTENT = {
           src: '/images/t-golf-calvia-blog/t-golf-calvia-7.webp',
           alt: 'Bunker at T Golf Calvià showing the distinctive rake design',
           caption: 'The rake design means the ball rarely comes to rest against the face. A small detail that makes a real difference.',
+          imageStyle: { objectPosition: 'center 70%' },
         },
         {
           type: 'paragraph',
