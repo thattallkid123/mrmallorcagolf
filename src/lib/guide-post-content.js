@@ -803,10 +803,10 @@ export const GUIDE_POST_CONTENT = {
   't-golf-calvia-review': {
     en: {
       metadata: {
-        title: 'T Golf Calvià Review (2026) - Green Fees, Course Conditions & Honest Rating',
+        title: 'T Golf Calvià Review (2026) - Green Fees, Conditions & Honest Rating',
         description:
-          'T Golf Calvià: up to €210 peak, twilight from €150. 15 lakes, 6,500m from the back tees, one of the best-conditioned courses in Mallorca. I played it in May 2026.',
-        imagePath: '/images/t-golf-calvia-social.webp',
+          'T Golf Calvià reviewed by a PGA Professional who played it in May 2026. Up to €210 peak, twilight from €150. 15 lakes, 6,500m from the back tees, 9/10 conditioning.',
+        imagePath: '/images/t-golf-calvia-social.jpg',
       },
       meta: {
         badge: 'Course Review',

@@ -11,7 +11,7 @@
 | Build site locally | `npm run dev` |
 | Check before deploy | `npm run build` |
 | Deploy to production | git add -A → commit → push to main (Vercel auto-deploys) |
-| Update analytics dashboard | Run GA4 report, paste output to Claude, Claude refreshes artifact |
+| Update analytics dashboard | `python ga4_analytics/ga4_report.py` (Claude runs this directly, no paste needed) |
 
 GA4 credentials: `ga4_analytics/ga4_credentials.json` (gitignored)
 GA4 OAuth token: `ga4_analytics/ga4_token.json` (gitignored, auto-refreshes)
@@ -21,14 +21,18 @@ GCP project: `precise-ascent-495813-r0` (MMG Analytics)
 All brand, content, and pricing files: `C:\Users\andyg\Documents\Mr Mallorca Golf` (Google Drive synced).
 Files inside this repo are stale copies — Documents folder always wins.
 
-Key files to upload for content or copy work:
+Key files to upload for content or copy work (if Google Drive folder not mounted):
 - `Active/MMG_MASTER.md` — brand, tone, credentials, service pricing
-- `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md` — writing guardrails (full authority)
 - `Reference/MMG_COURSE_MARKET_REFERENCE_2026.md` — course green fees and market info
+
+Writing guardrails are in the repo at `MMG_BRAND_VOICE_GUIDELINES.md` — do NOT use the old `MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`, it is superseded.
 
 ## Contacts & privacy split
 - `Documents/Active/MMG_CONTACTS_PUBLIC.xlsx` — green fees, websites, public info only
 - `Documents/Private/Workbooks/MMG_CONTACTS_PRIVATE.xlsx` — contact names, emails, courtesy terms. NEVER reference in public content. Share rows in chat only when needed for outreach tasks.
+
+## Work status & priorities
+Read `MMG_WORK_STATUS.md` at session start to understand what's in progress and what's next.
 
 ## Local project path
 `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`
