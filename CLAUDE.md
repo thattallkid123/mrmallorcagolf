@@ -75,7 +75,15 @@ Never use `./GolfCoursesClient` or `../../components/GolfCoursesClient`.
 
 ## Adding a New Course Review
 
-**One-pass pipeline:** `COURSE_BLOG_PIPELINE.md` in the repo root. Read it first when Andy hands over a transcript + photos. It covers image rotation, sizing, social/card image creation, voice-guide self-check, build checks, deploy block.
+**MANDATORY:** Read `COURSE_BLOG_PIPELINE.md` in full before doing anything. Then read `MMG_BRAND_VOICE_GUIDELINES.md`. Only then start work. These two files govern everything — photos, writing, site wiring, deploy order.
+
+Key rules that must never be skipped:
+- Always `ImageOps.exif_transpose()` every photo from the original source file before saving
+- Never crop blog post images — save the full rotated image at max 1600px
+- For the card image, use `public/images/courses/[slug].webp` if it exists (aerial shot), otherwise ask Andy
+- Never use the Edit tool on `guide-post-content.js` or `guides-content.js` — use Python byte replacement only
+- Ask all gap questions in ONE message before writing anything
+- Run brand voice self-check before showing Andy any draft
 
 Full technical reference (code boilerplate, block types, translation rules) is in the `nextjs-mrmallorcagolf` skill.
 

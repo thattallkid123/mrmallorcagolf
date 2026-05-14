@@ -1,134 +1,150 @@
-# Course Blog Pipeline — Andy → Claude → Live in One Pass
+# Course Blog Pipeline
 
-The lesson from T Golf Calvià (May 2026): rotating photos and writing copy turned into multiple painful sessions. This document defines a one-pass process so every future course review is fast.
+**Read this file completely before doing anything. Then read `MMG_BRAND_VOICE_GUIDELINES.md`. Then start.**
 
 ---
 
 ## What Andy hands over
 
-Two things, in chat:
+1. Voice memo transcript (paste raw — no cleanup needed)
+2. Photos — drag into chat, or give file paths with a one-line description each
 
-1. **Transcript of a voice memo from the round.** Whisper, ChatGPT voice, anything. Paste it raw. Doesn't need cleanup.
-2. **Photo filenames + a one-line description of each.** Photos can sit anywhere on the PC. Andy numbers them and says what each shows. Example:
-
-   ```
-   C:\Users\andyg\Downloads\IMG_1234.HEIC  - windmill close up
-   C:\Users\andyg\Downloads\IMG_1235.HEIC  - hole 10, water on right, windmill left
-   C:\Users\andyg\Downloads\IMG_1236.HEIC  - bunker with the rake
-   ```
-
-Optional: a green fee, a rating out of 10. If Andy doesn't volunteer it, Claude asks.
+That is all that is needed to begin.
 
 ---
 
-## What Claude does (in order)
+## Step 1 — Ask gap questions (one batch, before anything else)
 
-### 1. Move photos into the repo and clean them
+After reading the transcript, ask Andy ONE message containing only what is genuinely missing:
 
-```python
-# Move from Downloads → public/images/[slug]-blog/
-# Convert HEIC/JPG → WebP, fix EXIF orientation properly (DO NOT strip without rotating),
-# resize to max 1600px longest edge, quality 82
-# Rename to [slug]-1.webp, [slug]-2.webp, ... in the order Andy listed them
-```
+- Green fee (peak / twilight / midweek if different)
+- Rating out of 10
+- Tees played (back/white/yellow + approximate yardage)
+- Walked or buggy
+- The honest negative (required — one per post, specific not vague)
+- Anything about who he played with, if relevant to the story
 
-Then **delete the originals from Downloads** (Andy specifically asked for this).
+Never ask more than once. Never drip-feed. If the transcript answers something, do not re-ask it.
 
-**EXIF orientation rule:** if a photo has EXIF orient ≠ 1, you must apply the rotation to the pixels AND strip the tag. Don't just strip it — that's what broke T Golf. Use `ImageOps.exif_transpose(im)` from Pillow before any further processing.
+---
 
-**File size target:** every photo under 600 KB after optimisation. Total blog folder under 4 MB. T Golf went from 9.96 MB to 2.16 MB with this rule.
+## Step 2 — Process photos
 
-### 2. Create the social-preview image
+**Rules — no exceptions:**
 
-```python
-# 1200×630 JPG, cropped from the strongest landscape composition
-# Saved to public/images/[slug]-social.jpg
-# This is the og:image / Twitter card. Direct .jpg path (WhatsApp won't follow redirects).
-```
+- Use `ImageOps.exif_transpose(img)` from Pillow on EVERY photo before anything else. This applies pixel rotation from the EXIF tag. Never skip this step.
+- Always read from the **original source file** (Drive JPG or uploaded file). Never re-process an already-processed WebP — double rotation breaks everything.
+- **No cropping of blog post images.** Save the full rotated image. Andy's composition is intentional. The site displays images full-width; nothing is cut off.
+- Resize to max 1600px on the longest edge, Lanczos, WebP quality 82.
+- Target: each file under 600 KB. Total blog folder under 4 MB.
+- Rename in order: `[slug]-1.webp`, `[slug]-2.webp`, etc.
+- Save to `public/images/[slug]-blog/`
 
-### 3. Create the card image for the guides index
+**Card image (guides carousel):**
+- Check `public/images/courses/[slug].webp` first. If it exists and is an aerial/wide course shot, use it — crop to 900×386 from centre, resize, save as `public/images/[slug]-card.webp`. This will always look better than a phone photo.
+- If no courses/ image exists, ask Andy to pick from the blog photos, or source from the course's press pack.
+- Never use a close-up or people shot as the card.
 
-```python
-# 900×386 WebP, cropped from same or different photo
-# Saved to public/images/[slug]-card.webp
-# This appears on /guides as the carousel card
-```
+**Social preview:**
+- 1200×630 JPG from the strongest landscape composition
+- Save as `public/images/[slug]-social.jpg` (JPG not WebP — WhatsApp requires it)
 
-### 4. Ask gap questions (one batch, before writing)
+**Verify before moving on:**
+- Open each saved WebP and confirm it is the right way up and shows the full image
+- Confirm card and social are landscape and look good at thumbnail size
 
-After reading the transcript, ask Andy in ONE message:
-- Anything missing on price (peak / twilight / midweek / package)
-- Rating out of 10 if not stated
-- The honest negative (the voice guide requires one per post)
-- Anything notable about the people he played with (if relevant)
-- Anything Shanghai/England contrast he wants in the opening
+---
 
-Never drip-feed questions.
+## Step 3 — Write the post
 
-### 5. Draft the post
+Read `MMG_BRAND_VOICE_GUIDELINES.md` before writing the first word. The self-check at the end of that doc is mandatory.
 
-Run the brand voice guide (`MMG_BRAND_VOICE_GUIDELINES.md`) through every paragraph before showing Andy. The self-check in section 6 of that doc is mandatory, not optional. Specifically:
-- No em dashes
-- No banned words
+Structure every review the same way:
+1. Opening hook — a specific moment from the round (not "I visited X course")
+2. First impression / setting
+3. The course itself — layout, key holes, what makes it distinctive
+4. Conditioning (greens, bunkers, fairways)
+5. Practical info block (green fee, par, yardage, facilities)
+6. The honest negative — specific, not softened
+7. Verdict — rating out of 10, one sentence on who it suits
+8. Play with a Pro CTA
+
+Hard rules (search for every one before finishing):
+- No em dashes (—). Use a comma, full stop, or rewrite the sentence.
+- No banned words: stunning, breathtaking, nestled, seamless, elevate, unforgettable, hidden gem, curated, bespoke, vibrant, bustling, exceptional
+- No banned phrases: "The best part?", "More than just", "Whether you're", "From X to Y", "In the heart of", "It's not X it's Y"
 - "Mallorca" not "Majorca"
 - "€" not "euros"
-- Place names with accents (Calvià, etc.)
-- One honest negative
-- Specific moment as hook
-- Verdict block + play-with-a-pro CTA
+- Place names with correct accents: Calvià, Andratx, etc.
+- First person only for courses Andy has personally played
 
-### 6. Wire it into the site
+Andy's voice patterns (from published posts):
+- Short declarative sentences. Subject, verb, done.
+- Specific numbers and details over adjectives
+- One honest negative stated plainly, not hedged
+- Dry understatement rather than enthusiasm
+- No AI-style openings, no travel-brochure warmth
 
-Following the checklist in the `nextjs-mrmallorcagolf` skill:
-- Add entry to `src/lib/guide-post-content.js` (English only initially)
-- Add to `COURSE_REVIEW_DETAILS` in `src/app/guides/GuidePostView.jsx`
-- Create `src/app/guides/[slug]-review/page.jsx`
-- **Do NOT add to `guides-content.js` or `GUIDE_IMAGES` in GuidesIndexView.jsx until Andy approves at the live URL.**
+---
 
-Translations (de/es/fr/nl/sv/zh) only after Andy approves the English version.
+## Step 4 — Wire into the site
 
-### 7. Run checks and prep the deploy block
+Technical reference is in the `nextjs-mrmallorcagolf` skill. Summary:
 
-```bash
+**Critical: never use the Edit tool on `guide-post-content.js` or `guides-content.js`.** These files are large (40KB+) and the Edit tool truncates them silently. Always use Python byte-level replacement.
+
+Steps:
+1. Add entry to `src/lib/guide-post-content.js` (English only)
+2. Add to `COURSE_REVIEW_DETAILS` in `GuidePostView.jsx`
+3. Add to `GUIDE_IMAGES` in `GuidesIndexView.jsx`
+4. Create `src/app/guides/[slug]-review/page.jsx`
+5. Do NOT add to `guides-content.js` until Andy approves at the live URL
+
+---
+
+## Step 5 — Checks and deploy
+
+```
 npm run check:text
 npm run check:i18n-release
 npm run build
 ```
 
-If all green, hand Andy this block:
+All must pass. Then give Andy:
 
 ```
-cd "C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real"
-git add .
+cd C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
+git add -A
 git commit -m "Add [Course Name] review (English, hidden from index)"
 git push
 ```
 
-### 8. Append to CHANGELOG.md
-
-One line, `[content]` tag, name of the course.
+Live within ~2 minutes at `mrmallorcagolf.com/guides/[slug]-review`.
 
 ---
 
-## What "done" looks like
+## Step 6 — After Andy approves
 
-- Live URL `mrmallorcagolf.com/guides/[slug]-review` renders correctly
-- All photos right-way up, sharp, under 600 KB each
-- Card image (900×386) visible if added to index
-- Social preview (1200×630) shows correctly when URL pasted into WhatsApp
-- Voice guide self-check passes
-- Vercel deploy is green
+1. Add to `guides-content.js` English `liveGuides` array (correct position in carousel order)
+2. Add translations (de/es/fr/nl/sv/zh) — English is always master
+3. Run all checks again, push
+4. Append one line to `CHANGELOG.md`
 
 ---
 
-## Anti-patterns from the T Golf Calvià session — do not repeat
+## Carousel order (guides page)
 
-1. **Don't run a blind EXIF-transpose script on a whole folder.** Verify each photo's intended orientation against the captioned content first. Cameras lie. Use thumbnails to confirm.
-2. **Don't commit a 0-byte file.** Always verify file size after any image operation.
-3. **Don't accept "euros" or "Majorca" anywhere.** Search and replace before pushing.
-4. **Don't use a sideways photo as the og:image.** The card and social preview must be intentionally cropped landscape.
-5. **Don't ask Andy questions one at a time.** Batch them.
+Alcanada → Son Gual → T Golf Calvià → Son Muntaner → Santa Ponsa 1 → Andratx → Son Termes
+
+New reviews go at the end unless Andy specifies otherwise.
 
 ---
 
-*If you're Claude and you're about to start a course blog: read this file end to end before doing anything. Then read `MMG_BRAND_VOICE_GUIDELINES.md`. Then start.*
+## What done looks like
+
+- Live URL renders correctly, all photos right-way up, full image visible (no cropping)
+- Card (900×386) looks good at thumbnail size — aerial/wide shot, not a phone close-up
+- Social preview (1200×630) shows correctly when pasted into WhatsApp
+- Brand voice self-check passed
+- Build green, Vercel deployed
+- CHANGELOG updated
