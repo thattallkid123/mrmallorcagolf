@@ -1,0 +1,145 @@
+BULK FIND-AND-REPLACE FOR IMAGE OPTIMIZATION
+=============================================
+
+After running python optimize_images.py, use these find-and-replace operations
+in your editor to update all image references from JPG to WebP.
+
+FILE: src/lib/guide-post-content.js
+===================================
+
+FIND:  '/images/son-gual-blog/sg-1.jpg'
+REPLACE: '/images/son-gual-blog/sg-1.webp'
+
+FIND:  '/images/son-gual-blog/sg-2.jpg'
+REPLACE: '/images/son-gual-blog/sg-2.webp'
+
+FIND:  '/images/son-gual-blog/sg-3.jpg'
+REPLACE: '/images/son-gual-blog/sg-3.webp'
+
+FIND:  '/images/son-gual-blog/sg-clients-group.jpg'
+REPLACE: '/images/son-gual-blog/sg-clients-group.webp'
+
+FIND:  '/images/alcanada-blog/alc-2.jpg'
+REPLACE: '/images/alcanada-blog/alc-2.webp'
+
+FIND:  '/images/alcanada-blog/alc-3.jpg'
+REPLACE: '/images/alcanada-blog/alc-3.webp'
+
+FIND:  '/images/alcanada-blog/alc-5.jpg'
+REPLACE: '/images/alcanada-blog/alc-5.webp'
+
+FIND:  '/images/alcanada-blog/alc-8.jpg'
+REPLACE: '/images/alcanada-blog/alc-8.webp'
+
+FIND:  '/images/santa-ponsa-blog/sp-5.jpg'
+REPLACE: '/images/santa-ponsa-blog/sp-5.webp'
+
+FIND:  '/images/son-termes-blog/st-2.jpg'
+REPLACE: '/images/son-termes-blog/st-2.webp'
+
+FIND:  '/images/son-termes-blog/st-3.jpg'
+REPLACE: '/images/son-termes-blog/st-3.webp'
+
+FIND:  '/images/son-termes-blog/st-4.jpg'
+REPLACE: '/images/son-termes-blog/st-4.webp'
+
+FIND:  '/images/son-termes-blog/st-5.jpg'
+REPLACE: '/images/son-termes-blog/st-5.webp'
+
+FIND:  '/images/son-termes-blog/st-6.jpg'
+REPLACE: '/images/son-termes-blog/st-6.webp'
+
+FIND:  '/images/blog-best-golf-courses/'
+REPLACE: '/images/blog-best-golf-courses/' (check for Tiger.jpg, Santa.jpg)
+
+FIND:  '/images/blog-golf-cost/Son'
+REPLACE: '/images/blog-golf-cost/Son' (convert .jpg references)
+
+FIND:  '/images/blog-trip-planning/Soller.jpeg'
+REPLACE: '/images/blog-trip-planning/Soller.webp'
+
+FIND:  '/images/blog-trip-planning/Son'
+REPLACE: '/images/blog-trip-planning/Son' (convert .jpg references)
+
+FIND:  '/images/contact.jpg'
+REPLACE: '/images/contact.webp'
+
+
+FILE: src/app/guides/GuidesIndexView.jsx
+========================================
+
+FIND:  GUIDE_IMAGES section with any .jpg references
+Look for paths like: '/images/son-gual-blog/sg-1.jpg'
+REPLACE with equivalent .webp paths
+
+
+FILE: src/app/HomePageInner.jsx
+==============================
+
+Check for any hardcoded image references
+Look for: .jpg, .jpeg, .png
+Convert to .webp equivalents
+
+
+FILE: Any component files with direct image imports
+===================================================
+
+Search all files for:
+- MMG_Logo_Grey.png → MMG_Logo_Grey.webp
+- MMG_Logo_Green.png → MMG_Logo_Green.webp
+
+
+GLOBAL SEARCH IN ALL FILES
+==========================
+
+In your IDE, use Find in All Files:
+
+FIND:  \.jpg
+WHERE: src/lib/ src/app/
+REPLACE: .webp
+
+FIND:  \.jpeg
+WHERE: src/lib/ src/app/
+REPLACE: .webp
+
+(Note: Be careful with .png — only change in /blog/ folders,
+ not logos or other UI elements)
+
+
+COURSE CARDS - public/images/courses/
+====================================
+
+Check src/app/golf-courses/GolfCoursesClient.jsx for:
+- son-servera.jpg → son-servera.webp
+- son-muntaner.jpg → son-muntaner.webp
+- golf-andratx.webp (already optimized)
+- son-vida.webp (already optimized)
+
+Also check guides-content.js for course image references.
+
+
+WINNERS / SOCIAL IMAGES - public/images/winners/
+================================================
+
+If used anywhere in code:
+- 01f43146e7bbd479cd809b6daabd9b105b0008ca18.jpg → .webp
+- 2023_12_03_16_55_19.jpg → .webp
+- [etc for all .jpg files]
+
+
+VERIFICATION AFTER REPLACEMENT
+==============================
+
+1. npm run check:text
+2. npm run build (will error if references broken)
+3. npm run dev
+4. Browse to each page and check images load
+
+
+ROLLBACK IF NEEDED
+==================
+
+If images don't display after changes:
+1. Revert the .jsx/.js changes: git checkout src/
+2. Keep the .webp files as backup
+3. Re-run the search-and-replace more carefully

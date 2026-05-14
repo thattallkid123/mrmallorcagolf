@@ -69,3 +69,15 @@ When a new bug is fixed, add it here so it never comes back.
 ## Layout regressions from copy-paste across language pages
 **Pattern:** Syncing content from English to language pages without preserving component structure causes layout breaks.
 **Rule:** Always diff the component structure, not just the text content, when syncing language pages.
+
+## Sideways photos from a blind EXIF transpose
+**Pattern (T Golf Calvià, May 2026):** A bulk EXIF-transpose script ran across `public/images/t-golf-calvia-blog/`. It stripped EXIF orientation tags but did not rotate the pixels to match. Result: all 7 photos rendered 90° off, and one (`t-golf-calvia-2.webp`) was written as 0 bytes, which caused two Vercel deploys to fail. Also produced a sideways card and og:image.
+**Rule:**
+- Always use `PIL.ImageOps.exif_transpose(im)` which rotates AND clears the tag in one step. Never strip the tag without rotating.
+- Verify every image with `file *.webp` AND a visual thumbnail before committing.
+- Refuse to commit any 0-byte image. Add a pre-deploy check if recurring.
+- Card and og:image are intentionally cropped landscape (900×386 and 1200×630). Never use a portrait photo as the og:image.
+
+## Course blog written in multiple painful passes
+**Pattern:** T Golf Calvià blog took several sessions across photo rotation, copy revisions, metadata fixes, deploy errors. Process was not documented.
+**Fix (May 2026):** `COURSE_BLOG_PIPELINE.md` in repo root. One-pass workflow: Andy hands over transcript + numbered photo links, Claude does everything else in order. Pipeline references `MMG_BRAND_VOICE_GUIDELINES.md` as the only voice guide.

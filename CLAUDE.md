@@ -74,15 +74,20 @@ Never use `./GolfCoursesClient` or `../../components/GolfCoursesClient`.
 ```
 
 ## Adding a New Course Review
-Full procedure with boilerplate code is in the `nextjs-mrmallorcagolf` skill — use that. Summary of steps:
 
-1. Copy photos to `public/images/[slug]-blog/`, get naturalWidth/naturalHeight for each
-2. Add entry to `guide-post-content.js` and `COURSE_REVIEW_DETAILS` in `GuidePostView.jsx`
-3. Create English `src/app/guides/[slug]/page.jsx`
-4. Add all 6 language translations to `guide-post-content-localized.js`
-5. Create 6 language `page.jsx` files
-6. Run `npm run check:i18n-release` and `npm run build` — must pass
-7. Push. Do NOT add to `guides-content.js` until Andy approves at the live URL.
+**One-pass pipeline:** `COURSE_BLOG_PIPELINE.md` in the repo root. Read it first when Andy hands over a transcript + photos. It covers image rotation, sizing, social/card image creation, voice-guide self-check, build checks, deploy block.
+
+Full technical reference (code boilerplate, block types, translation rules) is in the `nextjs-mrmallorcagolf` skill.
+
+Summary of steps:
+
+1. Copy photos to `public/images/[slug]-blog/`. Apply `ImageOps.exif_transpose`, resize to max 1600px, WebP quality 82.
+2. Create `[slug]-card.webp` (900×386) and `[slug]-social.jpg` (1200×630) from the strongest landscape composition.
+3. Add entry to `guide-post-content.js` and `COURSE_REVIEW_DETAILS` in `GuidePostView.jsx`. Use `[slug]-social.jpg` as `imagePath`.
+4. Create English `src/app/guides/[slug]/page.jsx`.
+5. Run `npm run check:text`, `npm run check:i18n-release`, `npm run build` — all must pass.
+6. Push. Do NOT add translations or `guides-content.js` entry until Andy approves at the live URL.
+7. Append one line to `CHANGELOG.md`.
 
 ## Guides Index — Image Cards (guides-content.js)
 The guides index (`/guides`) shows course reviews as a horizontal scroll photo carousel and articles as an image card grid. Every guide entry in the **English** `liveGuides` array in `guides-content.js` must include:
@@ -113,14 +118,21 @@ Non-English locale entries do NOT need `img`/`imgPosition` — the view falls ba
 
 ## Writing guardrails
 
-**Brand voice guidelines (generated from published content — read this for any writing task):**
-`C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real\MMG_BRAND_VOICE_GUIDELINES.md`
+**Single source of truth:** `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real\MMG_BRAND_VOICE_GUIDELINES.md`
 
-This file contains the full voice persona, sentence-level patterns from Andy's actual posts, channel-by-channel tone rules (blog, formal email, client email, Instagram MMG, Instagram personal), hard bans, verdict phrase patterns, and self-check. Read it before any draft.
+This is the only writing guide Claude should consult. It contains voice persona, sentence-level patterns from Andy's published posts, channel rules (blog, formal email, client email, Instagram MMG, Instagram personal), hard bans, verdict patterns, and a mandatory self-check. Mirror copy lives in Drive at `Active/MMG_BRAND_VOICE_GUIDELINES.md` for iOS / fresh chats.
 
-Full guardrails also in `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md` (Google Drive) — upload if available. The blog-writing skill also enforces these with examples and a self-check step.
+**Read it before any draft. The self-check is mandatory, not optional.**
 
-Hard bans: em dashes, "stunning/breathtaking/nestled/seamless/elevate/unforgettable/hidden gem/curated/bespoke/vibrant/bustling/exceptional", "The best part?", "More than just", "Whether you're...", "From X to Y", "In the heart of...", generic AI openings, travel-brochure filler, fake authority language, "not X but Y" framing.
+Quick reference for hard bans:
+- Em dashes (search every one before pushing)
+- "Majorca" → always "Mallorca"
+- "euros" → always €
+- stunning, breathtaking, nestled, seamless, elevate, unforgettable, hidden gem, curated, bespoke, vibrant, bustling, exceptional
+- "The best part?", "More than just", "Whether you're...", "From X to Y", "In the heart of...", "It's not X, it's Y"
+- Generic AI openings, travel-brochure filler, fake authority language
+
+The old `Active/MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md` in Drive is superseded by `MMG_BRAND_VOICE_GUIDELINES.md`.
 
 Use first person only for courses Andy has personally played.
 

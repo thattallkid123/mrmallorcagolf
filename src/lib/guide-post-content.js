@@ -803,19 +803,19 @@ export const GUIDE_POST_CONTENT = {
   't-golf-calvia-review': {
     en: {
       metadata: {
-        title: 'T Golf Calvia Review (2026) - Green Fees, Course Conditions & Honest Rating',
+        title: 'T Golf Calvià Review (2026) - Green Fees, Course Conditions & Honest Rating',
         description:
-          'T Golf Calvia: up to 210 euros peak, twilight from 150 euros. 15 lakes, 6,500m from the back tees, one of the best-conditioned courses in Mallorca. I played it in May 2026.',
-        imagePath: '/images/t-golf-calvia-blog/t-golf-calvia-1.webp',
+          'T Golf Calvià: up to €210 peak, twilight from €150. 15 lakes, 6,500m from the back tees, one of the best-conditioned courses in Mallorca. I played it in May 2026.',
+        imagePath: '/images/t-golf-calvia-social.jpg',
       },
       meta: {
         badge: 'Course Review',
         badgeGold: true,
         readTime: '6 min read',
         updated: 'May 2026',
-        title: "T Golf Calvia Review - A PGA Professional's Honest Take (2026)",
+        title: "T Golf Calvià Review - A PGA Professional's Honest Take (2026)",
         intro:
-          'Fifteen lakes, windmills throughout, and some of the purest greens I have played in Majorca. A 9 out of 10 and one of the best-conditioned courses on the island.',
+          'Fifteen lakes, windmills throughout, and some of the purest greens I have played in Mallorca. A 9 out of 10 and one of the best-conditioned courses on the island.',
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
           { slug: 'son-muntaner-review', title: 'Son Muntaner Golf: Honest Review 2026' },
@@ -827,8 +827,8 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-1.webp',
-          alt: 'Windmill at T Golf Calvia against a clear blue sky',
-          caption: 'The windmills are a distinctive feature of T Golf Calvia. Not many courses have them.',
+          alt: 'Windmill at T Golf Calvià against a clear blue sky',
+          caption: 'The windmills are a distinctive feature of T Golf Calvià. Not many courses have them.',
           priority: true,
         },
         {
@@ -837,12 +837,12 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'The conditioning is as good as anything I have played on the island. Very tightly mown fairway and fringe areas, bunkers raked to perfection and with a simple but not common rake that means the ball will come to rest up against the rake much less often. It is a small but really appreciated detail.',
+          text: 'The conditioning is as good as anything I have played on the island. Very tightly mown fairways and fringes, bunkers raked to perfection, and a simple but uncommon rake design that means the ball rarely comes to rest against the rake. It is a small detail, but a really appreciated one.',
         },
         {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-7.webp',
-          alt: 'Bunker at T Golf Calvia showing the distinctive rake design',
+          alt: 'Bunker at T Golf Calvià showing the distinctive rake design',
           caption: 'The rake design means the ball rarely comes to rest against the face. A small detail that makes a real difference.',
         },
         {
@@ -856,7 +856,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-4.webp',
-          alt: 'Fairway at T Golf Calvia with windmill and Tramuntana mountains in the background',
+          alt: 'Fairway at T Golf Calvià with windmill and Tramuntana mountains in the background',
           caption: 'The windmills and Tramuntana backdrop are a consistent feature throughout the round.',
         },
         {
@@ -874,7 +874,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-3.webp',
-          alt: 'Hole 8 at T Golf Calvia with palm trees and Tramuntana mountains behind the green',
+          alt: 'Hole 8 at T Golf Calvià with palm trees and Tramuntana mountains behind the green',
           caption: 'Hole 8. A good backdrop, but the approach asks more of you than it looks.',
         },
         {
@@ -884,7 +884,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-5.webp',
-          alt: 'Fairway and bunkers at T Golf Calvia with the Tramuntana mountains in the background',
+          alt: 'Fairway and bunkers at T Golf Calvià with the Tramuntana mountains in the background',
           caption: 'The Tramuntana mountains sit in the background on most holes on the back nine.',
         },
         {
@@ -898,8 +898,8 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-6.webp',
-          alt: 'Two golfers on the course at T Golf Calvia with the fairway and mountains behind',
-          caption: 'Playing T Golf Calvia with a guest. The course suits players who want a proper test in good condition.',
+          alt: 'Two golfers on the course at T Golf Calvià with the fairway and mountains behind',
+          caption: 'Playing T Golf Calvià with a guest. The course suits players who want a proper test in good condition.',
         },
         {
           type: 'heading',
@@ -916,7 +916,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'T Golf Calvia runs midweek and multiple-visit offers regularly. Worth checking before you book: t-golf.club/calvia/offers.',
+          text: 'T Golf Calvià runs midweek and multiple-visit offers regularly. Worth checking before you book: t-golf.club/calvia/offers.',
         },
         {
           type: 'paragraph',
@@ -929,7 +929,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-2.webp',
-          alt: 'Pine trees framing the fairway at T Golf Calvia with water and mountains visible beyond',
+          alt: 'Pine trees framing the fairway at T Golf Calvià with water and mountains visible beyond',
           caption: 'From most of the fairways you can see nothing but pine trees, water and mountains.',
         },
         {
@@ -938,7 +938,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: '9/10. T Golf Calvia is one of the best-conditioned courses I have played in Majorca. The greens are excellent, the fairways are in great shape, and the layout tests you properly, particularly around distance judgement and water, without being unfair.',
+          text: '9/10. T Golf Calvià is one of the best-conditioned courses I have played in Mallorca. The greens are excellent, the fairways are in great shape, and the layout tests you properly, particularly around distance judgement and water, without being unfair.',
         },
         {
           type: 'paragraph',
@@ -946,7 +946,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Want to play T Golf Calvia with a PGA professional who knows every hole?',
+          text: 'Want to play T Golf Calvià with a PGA professional who knows every hole?',
           linkLabel: 'See the play-with-a-pro experience →',
           href: '/play-with-a-pro',
         },
