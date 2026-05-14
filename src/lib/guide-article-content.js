@@ -8,7 +8,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Exact green fees for every Mallorca golf course in 2026 — from €55 at budget courses to €250 at Son Gual and Son Muntaner. Plus club hire, buggies, and where to save.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
-      image: 'https://mrmallorcagolf.com/images/courses/palma-pitch-putt.jpg',
+      image: 'https://mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
     },
     meta: {
@@ -41,7 +41,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/courses/palma-pitch-putt.jpg',
+        src: '/images/courses/palma-pitch-putt.webp',
         alt: 'Palma Pitch and Putt',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Palma Pitch & Putt - one of the lower-cost ways to play',
@@ -65,7 +65,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-golf-cost/Son Gual.jpg',
+        src: '/images/blog-golf-cost/Son Gual.webp',
         alt: 'Son Gual Golf Course',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Son Gual - Premium course, €115-€165',
@@ -105,7 +105,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-golf-cost/T Golf Calvia Buggies.jpg',
+        src: '/images/blog-golf-cost/T Golf Calvia Buggies.webp',
         alt: 'Golf buggies in use',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Buggies available at €35-€48 per round',
@@ -146,7 +146,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you are off the course. By a PGA professional based on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
-      image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg',
+      image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
       imageAlt: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
     },
     meta: {
@@ -198,7 +198,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-trip-planning/Son Gual.jpg',
+        src: '/images/blog-trip-planning/Son Gual.webp',
         alt: 'Son Gual Golf Course',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Son Gual - Must-play course for serious golfers',
@@ -250,7 +250,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-trip-planning/Old Town Palma.jpg',
+        src: '/images/blog-trip-planning/Old Town Palma.webp',
         alt: 'Old Town Palma',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Old Town Palma - worth a day away from the course',
@@ -271,7 +271,7 @@ export const GUIDE_ARTICLE_CONTENT = {
             caption: 'Valldemossa - dramatic northwest coast',
           },
           {
-            src: '/images/blog-trip-planning/Soller.jpeg',
+            src: '/images/blog-trip-planning/Soller.webp',
             alt: 'Soller',
             caption: 'Sóller - classic Mediterranean town',
           },
@@ -291,7 +291,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island - weather, green fees, course conditions, and crowds.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
-      image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg',
+      image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
       imageAlt: 'The Best Time of Year to Play Golf in Mallorca - Month by Month (2026)',
     },
     meta: {
@@ -338,7 +338,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-best-time-play/T Golf Calvia Sun.jpg',
+        src: '/images/blog-best-time-play/T Golf Calvia Sun.webp',
         alt: 'Spring golf in Mallorca',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'March-April: spring courses in peak condition, fewer crowds',
@@ -373,7 +373,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-best-time-play/Rolex Challenge Grand Final.jpg',
+        src: '/images/blog-best-time-play/Rolex Challenge Grand Final.webp',
         alt: 'Rolex Challenge Tour Grand Final at Alcanada',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'October: peak conditions and world-class golf events',
@@ -455,7 +455,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'subheading', text: 'For the Most Scenic Round: Alcanada' },
       {
         type: 'image',
-        src: '/images/blog-best-golf-courses/Alcanada.jpg',
+        src: '/images/blog-best-golf-courses/Alcanada.webp',
         alt: 'Alcanada Golf Course',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Alcanada - Most Scenic Course',
@@ -512,7 +512,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'subheading', text: 'Also Worth Playing: Golf Santa Ponsa 1' },
       {
         type: 'image',
-        src: '/images/blog-best-golf-courses/Santa Ponsa 1.jpg',
+        src: '/images/blog-best-golf-courses/Santa Ponsa 1.webp',
         alt: 'Santa Ponsa 1 Golf Course',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Santa Ponsa 1 - European Tour History',
@@ -525,7 +525,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'subheading', text: 'For Beginners or Mixed Groups: Son Quint or Son Antem East' },
       {
         type: 'image',
-        src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg',
+        src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp',
         alt: 'Son Quint Golf Course',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Son Quint - where Tiger Woods and Charlie played in 2022',
@@ -575,7 +575,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Golf club hire in Mallorca costs €25–€65/day. I cover the best companies, what quality to expect, whether to bring your own, and where to get the best deal in 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
-      image: `${SITE_ORIGIN}/images/social-preview.jpg`,
+      image: `${SITE_ORIGIN}/images/social-preview.webp`,
       imageAlt: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
     },
     meta: {
@@ -628,7 +628,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         alt: 'Callaway Rogue ST Max clubs',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Callaway Rogue ST Max - current season equipment',
@@ -654,7 +654,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-golf-club-hire/Cobra Fly XL.jpg',
+        src: '/images/blog-golf-club-hire/Cobra Fly XL.webp',
         alt: 'Cobra Fly XL clubs',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Cobra Fly XL - budget-friendly option',
@@ -700,7 +700,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Is Mallorca good for golf? A PGA professional based on the island gives an honest answer - world-class courses, year-round conditions, and what to do beyond the fairways.',
       canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
-      image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg',
+      image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
       imageAlt: "Is Mallorca Good for Golf? A PGA Professional's Answer",
     },
     meta: {
@@ -731,7 +731,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-is-mallorca-good/Son Gual.jpg',
+        src: '/images/blog-is-mallorca-good/Son Gual.webp',
         alt: 'Son Gual Golf Course',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: "Son Gual - one of Europe's top courses",
@@ -774,7 +774,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-is-mallorca-good/Capdepera.jpg',
+        src: '/images/blog-is-mallorca-good/Capdepera.webp',
         alt: 'Capdepera Golf Course',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Capdepera - worth the drive on the east coast',
@@ -797,14 +797,14 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-is-mallorca-good/Alcanada.jpg',
+        src: '/images/blog-is-mallorca-good/Alcanada.webp',
         alt: 'Alcanada and lighthouse',
         caption: 'Alcanada - scenic northeast coast drive',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
       },
       {
         type: 'image',
-        src: '/images/blog-is-mallorca-good/Soller.jpg',
+        src: '/images/blog-is-mallorca-good/Soller.webp',
         alt: 'Soller town',
         caption: 'Sóller - UNESCO World Heritage setting on the northwest coast',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
@@ -890,7 +890,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'heading', text: 'During the Round' },
       {
         type: 'image',
-        src: '/images/son-gual-blog/sg-clients-group.jpg',
+        src: '/images/son-gual-blog/sg-clients-group.webp',
         alt: 'Group day at Son Gual with Andy Griffiths',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'A group day at Son Gual. This is the point of it: proper golf, the right conversation, and a day that feels well put together from start to finish.',
@@ -913,7 +913,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'heading', text: 'After the Round' },
       {
         type: 'image',
-        src: '/images/son-gual-blog/sg-plane.jpg',
+        src: '/images/son-gual-blog/sg-plane.webp',
         alt: 'View across Son Gual towards the Bay of Palma',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Views across the Bay of Palma from the higher holes. Son Gual gives you a few of these moments during the day, and they stay with people.',

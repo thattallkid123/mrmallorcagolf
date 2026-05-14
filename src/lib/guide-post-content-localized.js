@@ -4,7 +4,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf Son Muntaner, Mallorca - Ehrliche Bewertung eines PGA-Professionals (2026)",
         description: "Son Muntaner Golfplatz Mallorca – bewertet von einem PGA-Professional. Bester Golfplatz Spaniens 2025. Greenfees, Platzbedingungen und für wen er geeignet ist.",
-        imagePath: '/images/son-muntaner-blog/sm-8.jpg',
+        imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
         badge: 'Platz-Bewertung',
@@ -21,34 +21,34 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         ],
       },
       blocks: [
-        { type: 'image', src: '/images/son-muntaner-blog/sm-8.jpg', alt: 'Andy Griffiths auf dem Golfplatz Son Muntaner, Mallorca', caption: 'Bester Golfplatz Spaniens 2025. Trotz zahlreicher Fairway-Verfehler ein Lächeln im Gesicht.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-8.webp', alt: 'Andy Griffiths auf dem Golfplatz Son Muntaner, Mallorca', caption: 'Bester Golfplatz Spaniens 2025. Trotz zahlreicher Fairway-Verfehler ein Lächeln im Gesicht.' },
         { type: 'paragraph', text: "Son Muntaner wurde bei den World Golf Awards 2025 zum besten Golfplatz Spaniens gekürt. Ich spielte ihn vergangenen Samstag mit einem vollen Abschlagskalender und gemischten Handicaps in der Gruppe. Das sind meine Eindrücke." },
         { type: 'heading', text: 'Anreise' },
         { type: 'paragraph', text: "Fünf Minuten vom Zentrum Palmas. Das allein hebt ihn in eine andere Kategorie als die meisten empfehlenswerten Plätze der Insel. Son Gual braucht zwanzig Minuten, Alcanada fünfzig. Wer in der Stadt wohnt und eine ernsthafte Runde spielen möchte, ohne dafür einen halben Tag einzuplanen, findet in Son Muntaner die Antwort." },
         { type: 'paragraph', text: "Der Service vom Empfang bis zum Abschlag war reibungslos. Das Team ist aufmerksam, ohne aufdringlich zu sein. Bälle für die Range, Übungsanlage und der gesamte Betrieb entsprechen dem Niveau, das der Ruf des Platzes erwarten lässt." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-6.jpg', alt: 'Son Muntaner Golfplatz Mallorca – Blick das 17. Loch hinunter mit der Bucht von Palma im Hintergrund', caption: 'Blick das 17. Loch hinunter. Fünf Minuten vom Zentrum Palmas entfernt – und es fühlt sich wie eine andere Welt an.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: 'Son Muntaner Golfplatz Mallorca – Blick das 17. Loch hinunter mit der Bucht von Palma im Hintergrund', caption: 'Blick das 17. Loch hinunter. Fünf Minuten vom Zentrum Palmas entfernt – und es fühlt sich wie eine andere Welt an.' },
         { type: 'heading', text: 'Zu Fuß oder per Buggy und warum der Buggy inklusive ist' },
         { type: 'paragraph', text: "Der Platz ist zu Fuß eine echte körperliche Herausforderung. Mehrere lange Anstiege zu den Abschlagsbereichen. Der Buggy ist im Greenfee inbegriffen – die richtige Entscheidung des Clubs. Die meisten Spieler werden ihn wollen, und ihn als Aufpreis zu berechnen, wäre auf diesem Niveau unangemessen. Nach Jahren mit Caddies in China gehe ich lieber zu Fuß, verstehe aber, warum die meisten Besucher hier den Buggy nehmen." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-4.jpg', alt: 'Son Muntaner Golfplatz Mallorca – Ausblick auf die Fairways durch die Na-Burguesa-Berge', caption: 'Rückblick nach einem der längeren Anstiege. Die Streckenführung durch die Na-Burguesa-Berge macht diesen Platz zu etwas völlig anderem als alles, was sonst in der Nähe von Palma zu finden ist.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-4.webp', alt: 'Son Muntaner Golfplatz Mallorca – Ausblick auf die Fairways durch die Na-Burguesa-Berge', caption: 'Rückblick nach einem der längeren Anstiege. Die Streckenführung durch die Na-Burguesa-Berge macht diesen Platz zu etwas völlig anderem als alles, was sonst in der Nähe von Palma zu finden ist.' },
         { type: 'heading', text: 'Wie der Platz sich erschließt' },
         { type: 'paragraph', text: "Mein Start war unbeständig. Ich wählte konservative Abschlagspositionen und konnte das Layout dennoch nicht vollständig einschätzen. Das ist kein Kritikpunkt – das macht das Design so. Son Muntaner zeigt nicht alles vom Abschlag aus. Der Platz erschließt sich beim Zuspiel." },
         { type: 'paragraph', text: "Greens aus dem falschen Winkel zu halten, ist schwierig. Es gibt enge Passagen und subtile Zielbereiche, die präzise Positionierung erfordern – nicht nur einen Ball irgendwo in Fahnenähe zu schlagen. Landeflächen bestimmen den Platz. Abschläge und Layups erfordern oft das Commitment zu engen Zonen, die sich erst beim Erreichen erschließen. Wer das versteht, erkennt die Fairness im Design. Starke Schläge werden klar belohnt." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-7.jpg', alt: 'Son Muntaner Golfloch Mallorca – enges Par 3 mit Steinmauer und Bunker', caption: 'Das 7. Loch. Kurzes Par 3, aber der steile Abfall erschwert die Distanzkontrolle mehr, als die Meterzahl vermuten lässt. Die meisten kommen zu kurz.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-7.webp', alt: 'Son Muntaner Golfloch Mallorca – enges Par 3 mit Steinmauer und Bunker', caption: 'Das 7. Loch. Kurzes Par 3, aber der steile Abfall erschwert die Distanzkontrolle mehr, als die Meterzahl vermuten lässt. Die meisten kommen zu kurz.' },
         { type: 'heading', text: 'Die Par-3-Löcher' },
         { type: 'paragraph', text: "Elevation wird auf der gesamten Runde gut eingesetzt. Der Schutz entsteht durch Form und Winkel des Lochs, nicht nur durch Länge – wobei die längeren Löcher von den hinteren Abschlägen über 180 Meter haben und eine ordentliche Schlägerwahl erfordern. Das 13. war an diesem Tag ein seltener Moment der Klarheit." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-1.jpg', alt: 'Andy Griffiths beim Abschlag am 13. Par-3-Loch auf Son Muntaner Mallorca', caption: 'Das 13. Loch. Par 3. Heute ein einfacher Birdie!' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-1.webp', alt: 'Andy Griffiths beim Abschlag am 13. Par-3-Loch auf Son Muntaner Mallorca', caption: 'Das 13. Loch. Par 3. Heute ein einfacher Birdie!' },
         { type: 'heading', text: 'Vordere Neun vs. Hintere Neun' },
         { type: 'paragraph', text: "Die vorderen Neun, besonders die ersten sechs Löcher, spielen eng. Wasser und definierte Landeflächen halten das Spiel ehrlich. Für lockeres Abschlagen ist kein Platz." },
         { type: 'paragraph', text: "Die hinteren Neun öffnen sich leicht. Mehr Freiheit mit dem Driver, aber die Greens bleiben klein und täuschend schwierig. Die Tiefenwahrnehmung aus der Distanz ist eine konstante Herausforderung auf Son Muntaner – die Greens wirken größer als sie sind, und die Abstände zu den Fahnen kürzer als sie spielen." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-3.jpg', alt: 'Enten am Wasserhindernis auf dem Golfplatz Son Muntaner Mallorca', caption: 'Nicht geplanter Teil der Vorrunde. Gesellschaft auf der Rückneun.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-3.webp', alt: 'Enten am Wasserhindernis auf dem Golfplatz Son Muntaner Mallorca', caption: 'Nicht geplanter Teil der Vorrunde. Gesellschaft auf der Rückneun.' },
         { type: 'heading', text: 'Die Greens' },
         { type: 'paragraph', text: "Rein rollend in einem soliden Tempo, mit klarem Potenzial, zum Sommer hin schneller zu werden. Diese Qualität belohnte gutes Putten, besonders aus größerer Entfernung. Hier beginnt der Titel Bester in Spanien Sinn zu ergeben – die Greens sind konstant exzellent und blieben den ganzen vollbesetzten Samstag über in Tempo und Oberflächenqualität stabil." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-5.jpg', alt: 'Son Muntaner 9. Green Mallorca mit Clubhaus im Hintergrund', caption: 'Das 9. Green, Clubhaus dahinter. Halbzeit – und schon klar: Dieser Platz belohnt Geduld mehr als Kraft.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-5.webp', alt: 'Son Muntaner 9. Green Mallorca mit Clubhaus im Hintergrund', caption: 'Das 9. Green, Clubhaus dahinter. Halbzeit – und schon klar: Dieser Platz belohnt Geduld mehr als Kraft.' },
         { type: 'heading', text: 'Bunker' },
         { type: 'paragraph', text: "Ein ehrlicher Kritikpunkt: Der Sand in den Bunkern war uneinheitlich. Manche Lagen fester, andere weicher, was die Ausführung von Schlägen erschwert, die man auf die gleiche Art geplant hat. Gering für einen Platz dieses Standards, aber wissenswert für alle, die auf Bunkernahe Spielfähigkeit setzen." },
         { type: 'heading', text: 'Der Olivenbaum' },
         { type: 'paragraph', text: "Loch 15. Der alte Olivenbaum, der mitten im Fairway steht, ist seit rund tausend Jahren an diesem Ort. Die Balearen-Regierung hat ihn zum Naturdenkmal erklärt. Der Platz wurde um ihn herum entworfen." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Uralter Olivenbaum am 15. Loch von Son Muntaner Mallorca mit den Na-Burguesa-Bergen im Hintergrund', caption: 'Loch 15. Dieser Olivenbaum steht seit ungefähr tausend Jahren hier. Die Balearen-Regierung hat ihn zum Naturdenkmal erklärt. Jemand beschloss, ein Golfloch darum herum zu bauen – zu Recht.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: 'Uralter Olivenbaum am 15. Loch von Son Muntaner Mallorca mit den Na-Burguesa-Bergen im Hintergrund', caption: 'Loch 15. Dieser Olivenbaum steht seit ungefähr tausend Jahren hier. Die Balearen-Regierung hat ihn zum Naturdenkmal erklärt. Jemand beschloss, ein Golfloch darum herum zu bauen – zu Recht.' },
         { type: 'heading', text: 'Das Restaurant' },
         { type: 'paragraph', text: "Kein Anhängsel. Das Essen entspricht dem Standard des Platzes. Lohnt einen Aufenthalt nach der Runde, statt direkt nach Palma zurückzufahren." },
         { type: 'facts', items: [['€125–250', 'Greenfee-Spanne 2026'], ['7/10', 'Schwierigkeit'], ['Par 72', 'Championship-Layout'], ['Inklusive', 'Buggy im Greenfee']] },
@@ -65,7 +65,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf Son Muntaner, Mallorca - análisis honesto de un Profesional PGA (2026)",
         description: "Son Muntaner, el campo de golf de Mallorca analizado por un Profesional PGA. Mejor campo de España 2025. Green fees, condiciones del campo y para quién es recomendable.",
-        imagePath: '/images/son-muntaner-blog/sm-8.jpg',
+        imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
         badge: 'Análisis del campo',
@@ -82,34 +82,34 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         ],
       },
       blocks: [
-        { type: 'image', src: '/images/son-muntaner-blog/sm-8.jpg', alt: 'Andy Griffiths en el campo de golf Son Muntaner, Mallorca', caption: 'Mejor campo de España 2025. Conseguí sonreír pese a los numerosos fairways perdidos.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-8.webp', alt: 'Andy Griffiths en el campo de golf Son Muntaner, Mallorca', caption: 'Mejor campo de España 2025. Conseguí sonreír pese a los numerosos fairways perdidos.' },
         { type: 'paragraph', text: "Son Muntaner fue elegido Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué el sábado pasado con el tee sheet completo y hándicaps variados en el grupo. Esto es lo que encontré." },
         { type: 'heading', text: 'Cómo llegar' },
         { type: 'paragraph', text: "A cinco minutos del centro de Palma. Eso solo ya lo sitúa en una categoría diferente a la mayoría de los campos que merecen la pena en la isla. Son Gual está a veinte minutos, Alcanada a cincuenta. Si tienes la base en la ciudad y quieres una ronda seria sin organizar media jornada en torno al trayecto, Son Muntaner es la respuesta." },
         { type: 'paragraph', text: "El servicio desde la llegada hasta la ronda fue impecable. El equipo es atento sin resultar intrusivo. Las pelotas para el campo de prácticas, las instalaciones de entrenamiento y el funcionamiento general están al nivel que cabe esperar con la reputación del campo." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-6.jpg', alt: 'Campo de golf Son Muntaner Mallorca mirando por el fairway del hoyo 17 con la Bahía de Palma al fondo', caption: 'Mirando hacia el hoyo 17. A cinco minutos del centro de Palma y parece otro mundo.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: 'Campo de golf Son Muntaner Mallorca mirando por el fairway del hoyo 17 con la Bahía de Palma al fondo', caption: 'Mirando hacia el hoyo 17. A cinco minutos del centro de Palma y parece otro mundo.' },
         { type: 'heading', text: 'El recorrido a pie y por qué el buggy está incluido' },
         { type: 'paragraph', text: "El recorrido a pie es un verdadero reto físico. Varias subidas largas hasta los tees de salida. El buggy está incluido en el green fee, lo cual es la decisión correcta del club. La mayoría de los jugadores lo querrán, y cobrarlo aparte resultaría inadecuado en este nivel. Después de años en China con caddies, prefiero caminar, pero entiendo por qué la mayoría de los visitantes aquí optan por el buggy." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-4.jpg', alt: 'Campo de golf Son Muntaner Mallorca vista elevada del fairway a través de las montañas de Na Burguesa', caption: 'Mirando atrás desde uno de los tramos más exigentes. El trazado a través de las montañas de Na Burguesa es lo que hace que este campo se sienta diferente a todo lo que hay cerca de Palma.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-4.webp', alt: 'Campo de golf Son Muntaner Mallorca vista elevada del fairway a través de las montañas de Na Burguesa', caption: 'Mirando atrás desde uno de los tramos más exigentes. El trazado a través de las montañas de Na Burguesa es lo que hace que este campo se sienta diferente a todo lo que hay cerca de Palma.' },
         { type: 'heading', text: 'Cómo se descubre el campo' },
         { type: 'paragraph', text: "Mi tramo inicial fue errático. Elegí salidas conservadoras y aun así no logré leer bien el trazado desde el principio. No es una crítica. Es lo que hace el diseño. Son Muntaner no te lo muestra todo desde el tee. El campo se descubre durante el juego de aproximación." },
         { type: 'paragraph', text: "Es difícil sostener los greens desde el ángulo equivocado. Hay tramos estrechos y objetivos sutiles que exigen una posición precisa, no solo acercar la bola a la bandera. Las zonas de aterrizaje definen el campo. Los golpes de salida y los layups requieren compromiso con zonas estrechas que no resultan evidentes hasta llegar a ellas. Una vez que lo entiendes, el diseño empieza a parecer justo. Los golpes fuertes se recompensan claramente." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-7.jpg', alt: 'Hoyo de golf Son Muntaner Mallorca par 3 estrecho con muro de piedra y búnker', caption: 'El hoyo 7. Par 3 corto, pero el pronunciado desnivel dificulta el control de la distancia más de lo que sugiere el metraje. La mayoría se queda corto.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-7.webp', alt: 'Hoyo de golf Son Muntaner Mallorca par 3 estrecho con muro de piedra y búnker', caption: 'El hoyo 7. Par 3 corto, pero el pronunciado desnivel dificulta el control de la distancia más de lo que sugiere el metraje. La mayoría se queda corto.' },
         { type: 'heading', text: 'Los hoyos de par 3' },
         { type: 'paragraph', text: "Aprovechan bien la elevación en todo el recorrido. La protección proviene de la forma y el ángulo del hoyo más que solo de la longitud, aunque los más largos desde los tees de atrás superan los 180 metros y exigen una buena selección de palo. El 13 fue un momento de claridad poco frecuente en la jornada." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-1.jpg', alt: 'Andy Griffiths en el tee del par 3 número 13 de Son Muntaner Mallorca', caption: 'El hoyo 13. Par 3. ¡Un birdie fácil hoy!' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-1.webp', alt: 'Andy Griffiths en el tee del par 3 número 13 de Son Muntaner Mallorca', caption: 'El hoyo 13. Par 3. ¡Un birdie fácil hoy!' },
         { type: 'heading', text: 'Los primeros nueve frente a los segundos nueve' },
         { type: 'paragraph', text: "Los primeros nueve, especialmente los seis primeros hoyos, se juegan de forma muy ajustada. El agua y las zonas de aterrizaje definidas mantienen la honestidad del juego. No hay margen para salidas imprecisas." },
         { type: 'paragraph', text: "El back nine se abre ligeramente. Más libertad con el driver, aunque los complejos de greens siguen siendo pequeños y engañosamente difíciles. La percepción de profundidad desde la distancia es un desafío constante aquí. Los greens parecen más grandes de lo que son, y las distancias de aproximación más cortas de lo que juegan." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-3.jpg', alt: 'Patos en el obstáculo de agua del campo de golf Son Muntaner Mallorca', caption: 'Algo que no está en el plan previo al golpe. Compañía en la segunda vuelta.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-3.webp', alt: 'Patos en el obstáculo de agua del campo de golf Son Muntaner Mallorca', caption: 'Algo que no está en el plan previo al golpe. Compañía en la segunda vuelta.' },
         { type: 'heading', text: 'Los greens' },
         { type: 'paragraph', text: "Rodando puro a un ritmo sólido, con potencial claro para acelerarse con la llegada del verano. Esa calidad recompensó el buen putting, especialmente desde lejos. Aquí es donde el título de Mejor de España empieza a tener sentido. Los greens son consistentemente excelentes y mantuvieron el ritmo y la calidad de la superficie durante toda la jornada de sábado con el tee sheet completo." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-5.jpg', alt: 'Green del hoyo 9 de Son Muntaner Mallorca con el club house detrás', caption: 'El green del 9, con el club house detrás. A mitad del recorrido ya queda claro: este campo premia la paciencia por encima de la potencia.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-5.webp', alt: 'Green del hoyo 9 de Son Muntaner Mallorca con el club house detrás', caption: 'El green del 9, con el club house detrás. A mitad del recorrido ya queda claro: este campo premia la paciencia por encima de la potencia.' },
         { type: 'heading', text: 'Búnkeres' },
         { type: 'paragraph', text: "Un punto negativo honesto: la arena de los búnkeres era inconsistente. Algunos lies más firmes, otros más blandos, lo que complica la ejecución de golpes planificados de la misma manera. Menor para un campo de este nivel, pero vale la pena saberlo si el juego cerca de los greens desde arena forma parte de tu juego." },
         { type: 'heading', text: 'El olivo' },
         { type: 'paragraph', text: "Hoyo 15. El antiguo olivo que se alza en mitad del fairway lleva ahí aproximadamente mil años. El Govern Balear lo declaró monumento natural. El campo fue diseñado a su alrededor." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Antiguo olivo en el hoyo 15 del campo de golf Son Muntaner Mallorca con las montañas de Na Burguesa detrás', caption: 'Hoyo 15. Ese olivo lleva ahí aproximadamente mil años. El Govern Balear lo declaró monumento natural. Alguien decidió construir un hoyo de golf a su alrededor, y me alegra que lo hiciera.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: 'Antiguo olivo en el hoyo 15 del campo de golf Son Muntaner Mallorca con las montañas de Na Burguesa detrás', caption: 'Hoyo 15. Ese olivo lleva ahí aproximadamente mil años. El Govern Balear lo declaró monumento natural. Alguien decidió construir un hoyo de golf a su alrededor, y me alegra que lo hiciera.' },
         { type: 'heading', text: 'El restaurante' },
         { type: 'paragraph', text: "No es un añadido. La comida está a la altura del campo. Vale la pena quedarse después de la ronda en lugar de volver directamente a Palma." },
         { type: 'facts', items: [['€125–250', 'Green fee 2026'], ['7/10', 'Dificultad'], ['Par 72', 'Diseño championship'], ['Incluido', 'Buggy en el green fee']] },
@@ -126,7 +126,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf Son Muntaner, Majorque - avis honnête d'un Professionnel PGA (2026)",
         description: "Son Muntaner, le parcours de golf de Majorque analysé par un Professionnel PGA. Meilleur parcours d'Espagne 2025. Green fees, conditions du parcours et à qui il convient.",
-        imagePath: '/images/son-muntaner-blog/sm-8.jpg',
+        imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
         badge: 'Avis parcours',
@@ -143,34 +143,34 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         ],
       },
       blocks: [
-        { type: 'image', src: '/images/son-muntaner-blog/sm-8.jpg', alt: 'Andy Griffiths au golf Son Muntaner, Majorque', caption: "Meilleur parcours de golf d'Espagne 2025. J'ai réussi à sourire malgré les nombreux fairways manqués." },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-8.webp', alt: 'Andy Griffiths au golf Son Muntaner, Majorque', caption: "Meilleur parcours de golf d'Espagne 2025. J'ai réussi à sourire malgré les nombreux fairways manqués." },
         { type: 'paragraph', text: "Son Muntaner a été nommé Meilleur Parcours de Golf d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin la semaine dernière, avec un départ complet et des handicaps variés dans le groupe. Voici ce que j'y ai trouvé." },
         { type: 'heading', text: 'Comment s\'y rendre' },
         { type: 'paragraph', text: "À cinq minutes du centre de Palma. Cela seul le place dans une catégorie différente de la plupart des parcours de l'île qui méritent le détour. Son Gual est à vingt minutes, Alcanada à cinquante. Si vous êtes basé en ville et souhaitez faire un bon parcours sans organiser une demi-journée autour du trajet, Son Muntaner est la réponse." },
         { type: 'paragraph', text: "Le service, de l'arrivée à la partie, était irréprochable. L'équipe est attentive sans être intrusive. Les balles pour le practice, les installations d'entraînement et l'organisation générale sont au niveau que la réputation du parcours laissait présager." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-6.jpg', alt: 'Parcours de golf Son Muntaner Majorque vue sur le 17ème trou avec la Baie de Palma en arrière-plan', caption: "Vue sur le 17ème trou. À cinq minutes du centre de Palma et on se croirait dans un autre monde." },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: 'Parcours de golf Son Muntaner Majorque vue sur le 17ème trou avec la Baie de Palma en arrière-plan', caption: "Vue sur le 17ème trou. À cinq minutes du centre de Palma et on se croirait dans un autre monde." },
         { type: 'heading', text: 'La marche et pourquoi le buggy est inclus' },
         { type: 'paragraph', text: "Le parcours à pied est un vrai défi physique. Plusieurs longues montées jusqu'aux départs. Le buggy est inclus dans le green fee, ce qui est le bon choix du club. La plupart des joueurs en auront besoin, et le proposer en supplément semblerait déplacé à ce niveau. Après des années en Chine avec des caddies, je préfère marcher, mais je comprends pourquoi la plupart des visiteurs prennent le buggy ici." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-4.jpg', alt: 'Parcours de golf Son Muntaner Majorque vue élevée du fairway à travers les montagnes de Na Burguesa', caption: "Vue arrière depuis une des longues montées. Le tracé à travers les montagnes de Na Burguesa est ce qui distingue ce parcours de tout ce qu'on trouve près de Palma." },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-4.webp', alt: 'Parcours de golf Son Muntaner Majorque vue élevée du fairway à travers les montagnes de Na Burguesa', caption: "Vue arrière depuis une des longues montées. Le tracé à travers les montagnes de Na Burguesa est ce qui distingue ce parcours de tout ce qu'on trouve près de Palma." },
         { type: 'heading', text: 'Comment le parcours se révèle' },
         { type: 'paragraph', text: "Mon départ de parcours était erratique. J'ai fait des choix de départs conservateurs et je n'arrivais toujours pas à bien lire le tracé en début de partie. Ce n'est pas une critique. C'est ce que le design produit. Son Muntaner ne vous montre pas tout depuis le départ. Le parcours se révèle dans le jeu d'approche." },
         { type: 'paragraph', text: "Tenir les greens depuis le mauvais angle est difficile. Il y a des sections étroites et des cibles subtiles qui exigent un positionnement précis plutôt que d'envoyer simplement la balle près du drapeau. Les zones d'atterrissage définissent le parcours. Les coups de départ et les layups nécessitent souvent un engagement vers des zones serrées qui ne sont pas évidentes avant d'y arriver. Une fois cela compris, le design paraît juste. Les bons coups sont clairement récompensés." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-7.jpg', alt: 'Trou de golf Son Muntaner Majorque par 3 étroit avec mur en pierre et bunker', caption: "Le 7ème. Court par 3, mais la forte dénivellation rend le contrôle de la distance plus difficile que le yardage ne le suggère. La plupart des joueurs arrivent trop courts." },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-7.webp', alt: 'Trou de golf Son Muntaner Majorque par 3 étroit avec mur en pierre et bunker', caption: "Le 7ème. Court par 3, mais la forte dénivellation rend le contrôle de la distance plus difficile que le yardage ne le suggère. La plupart des joueurs arrivent trop courts." },
         { type: 'heading', text: 'Les par 3' },
         { type: 'paragraph', text: "L'élévation est bien utilisée tout au long du parcours. La protection vient de la forme et de l'angle du trou plutôt que de la seule longueur, bien que les plus longs depuis les départs arrière dépassent les 180 mètres et exigent un bon choix de club. Le 13ème a été un rare moment de clarté ce jour-là." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-1.jpg', alt: 'Andy Griffiths au départ du par 3 numéro 13 à Son Muntaner Majorque', caption: 'Le 13ème. Par 3. Un birdie facile aujourd\'hui !' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-1.webp', alt: 'Andy Griffiths au départ du par 3 numéro 13 à Son Muntaner Majorque', caption: 'Le 13ème. Par 3. Un birdie facile aujourd\'hui !' },
         { type: 'heading', text: 'Aller contre retour' },
         { type: 'paragraph', text: "Le neuf aller, en particulier les six premiers trous, se joue serré. Les obstacles d'eau et les zones d'atterrissage définies maintiennent une certaine honnêteté. Il n'y a pas de place pour un jeu de départ approximatif." },
         { type: 'paragraph', text: "Le neuf retour s'ouvre légèrement. Plus de liberté avec le driver, bien que les complexes de greens restent petits et trompeusement difficiles. La perception de la profondeur à distance est un défi constant ici. Les greens paraissent plus grands qu'ils ne sont, et les distances d'approche plus courtes qu'elles ne jouent." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-3.jpg', alt: 'Canards sur l\'obstacle d\'eau du parcours de golf Son Muntaner Majorque', caption: 'Pas prévu dans la routine d\'avant-coup. Compagnie sur le retour.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-3.webp', alt: 'Canards sur l\'obstacle d\'eau du parcours de golf Son Muntaner Majorque', caption: 'Pas prévu dans la routine d\'avant-coup. Compagnie sur le retour.' },
         { type: 'heading', text: 'Les greens' },
         { type: 'paragraph', text: "Roulant pur à un rythme soutenu, avec un potentiel clair d'accélération à l'approche de l'été. Cette qualité a récompensé le bon putting, notamment à longue distance. C'est là que le titre de Meilleur d'Espagne commence à prendre tout son sens. Les greens sont constamment excellents, et ils ont tenu le rythme et la qualité de surface tout au long d'un samedi chargé sans perdre en qualité." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-5.jpg', alt: 'Green du 9ème trou de Son Muntaner Majorque avec le club-house derrière', caption: "Le green du 9, avec le club-house derrière. À mi-parcours, déjà clair : ce parcours récompense la patience plus que la puissance." },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-5.webp', alt: 'Green du 9ème trou de Son Muntaner Majorque avec le club-house derrière', caption: "Le green du 9, avec le club-house derrière. À mi-parcours, déjà clair : ce parcours récompense la patience plus que la puissance." },
         { type: 'heading', text: 'Les bunkers' },
         { type: 'paragraph', text: "Un point négatif honnête : le sable des bunkers était inégal. Certaines lies plus fermes, d'autres plus mous, ce qui complique l'exécution de coups planifiés de la même façon. Mineur pour un parcours de ce niveau, mais utile à savoir si le jeu dans les bunkers bordant les greens fait partie de votre jeu." },
         { type: 'heading', text: "L'olivier" },
         { type: 'paragraph', text: "Trou 15. L'ancien olivier qui se dresse au milieu du fairway est là depuis environ mille ans. Le gouvernement des Baléares l'a classé monument naturel. Le parcours a été conçu autour de lui." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Ancien olivier au trou 15 du parcours de golf Son Muntaner Majorque avec les montagnes de Na Burguesa derrière', caption: "Trou 15. Cet olivier est là depuis environ mille ans. Le gouvernement des Baléares l'a classé monument naturel. Quelqu'un a décidé de construire un trou de golf autour de lui. Je m'en réjouis." },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: 'Ancien olivier au trou 15 du parcours de golf Son Muntaner Majorque avec les montagnes de Na Burguesa derrière', caption: "Trou 15. Cet olivier est là depuis environ mille ans. Le gouvernement des Baléares l'a classé monument naturel. Quelqu'un a décidé de construire un trou de golf autour de lui. Je m'en réjouis." },
         { type: 'heading', text: 'Le restaurant' },
         { type: 'paragraph', text: "Pas une réflexion après coup. La cuisine est à la hauteur du parcours. Ça vaut la peine de rester après la partie plutôt que de rentrer directement à Palma." },
         { type: 'facts', items: [['€125–250', 'Green fees 2026'], ['7/10', 'Difficulté'], ['Par 72', 'Layout championship'], ['Inclus', 'Buggy dans le green fee']] },
@@ -187,7 +187,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf Son Muntaner, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
         description: "Son Muntaner golfbaan Mallorca beoordeeld door een PGA Professional. Beste golfbaan van Spanje 2025. Greenfees, baanomstandigheden en voor wie het geschikt is.",
-        imagePath: '/images/son-muntaner-blog/sm-8.jpg',
+        imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
         badge: 'Baanbeoordeling',
@@ -204,34 +204,34 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         ],
       },
       blocks: [
-        { type: 'image', src: '/images/son-muntaner-blog/sm-8.jpg', alt: 'Andy Griffiths op de golfbaan Son Muntaner, Mallorca', caption: 'Beste golfbaan van Spanje 2025. Het lukte me te glimlachen ondanks alle gemiste fairways.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-8.webp', alt: 'Andy Griffiths op de golfbaan Son Muntaner, Mallorca', caption: 'Beste golfbaan van Spanje 2025. Het lukte me te glimlachen ondanks alle gemiste fairways.' },
         { type: 'paragraph', text: "Son Muntaner werd uitgeroepen tot Beste Golfbaan van Spanje bij de World Golf Awards 2025. Ik speelde hem vorige week op een zaterdagochtend, met een vol tee sheet en gemengde handicaps in de groep. Dit zijn mijn bevindingen." },
         { type: 'heading', text: 'Hoe je er komt' },
         { type: 'paragraph', text: "Vijf minuten van het centrum van Palma. Dat alleen al plaatst hem in een andere categorie dan de meeste banen op het eiland die de moeite waard zijn. Son Gual kost twintig minuten, Alcanada vijftig. Als je in de stad verblijft en een serieuze ronde wilt spelen zonder een halve dag rond de rit te plannen, is Son Muntaner het antwoord." },
         { type: 'paragraph', text: "De service van aankomst tot de ronde was soepel. Het team is attent zonder opdringerig te zijn. Oefenballen, oefenfaciliteiten en de algehele organisatie zitten op het niveau dat de reputatie van de baan doet verwachten." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-6.jpg', alt: 'Golfbaan Son Muntaner Mallorca kijkend over het 17e hole met de Baai van Palma op de achtergrond', caption: 'Kijkend over hole 17. Vijf minuten van het centrum van Palma en het voelt als een andere wereld.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: 'Golfbaan Son Muntaner Mallorca kijkend over het 17e hole met de Baai van Palma op de achtergrond', caption: 'Kijkend over hole 17. Vijf minuten van het centrum van Palma en het voelt als een andere wereld.' },
         { type: 'heading', text: 'Het lopen en waarom de buggy is inbegrepen' },
         { type: 'paragraph', text: "De baan is een echte fysieke uitdaging te voet. Meerdere lange klimmen naar de afslagplaatsen. De buggy is inbegrepen in de greenfee, wat de juiste keuze van de club is. De meeste spelers zullen hem willen, en hem apart in rekening brengen zou op dit niveau niet kloppen. Na jaren in China met caddies loop ik liever, maar ik begrijp waarom de meeste bezoekers hier voor de buggy kiezen." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-4.jpg', alt: 'Golfbaan Son Muntaner Mallorca verhoogd uitzicht over het fairway door de Na Burguesa bergen', caption: 'Terugkijkend na een van de langere klimmen. De routing door de Na Burguesa bergen is wat deze baan anders maakt dan alles wat dicht bij Palma te vinden is.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-4.webp', alt: 'Golfbaan Son Muntaner Mallorca verhoogd uitzicht over het fairway door de Na Burguesa bergen', caption: 'Terugkijkend na een van de langere klimmen. De routing door de Na Burguesa bergen is wat deze baan anders maakt dan alles wat dicht bij Palma te vinden is.' },
         { type: 'heading', text: 'Hoe de baan zich onthult' },
         { type: 'paragraph', text: "Mijn openingsserie was grillig. Ik maakte conservatieve keuzes op de tee en kon het baanontwerp toch niet goed doorzien in het begin. Dat is geen kritiek. Het is wat het ontwerp doet. Son Muntaner laat je niet alles zien vanaf de tee. De baan onthult zichzelf via het benaderingsspel." },
         { type: 'paragraph', text: "Greens vasthouden vanuit de verkeerde hoek is moeilijk. Er zijn smalle gedeelten en subtiele doelen die nauwkeurige positionering vereisen in plaats van de bal ergens in de buurt van de vlag te krijgen. Landingszones bepalen de baan. Afslagen en layups vereisen vaak toewijding aan strakke zones die pas duidelijk worden als je er bent. Als je dat begrijpt, begint het ontwerp eerlijk te voelen. Sterke slagen worden duidelijk beloond." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-7.jpg', alt: 'Golfhole Son Muntaner Mallorca smal par 3 met stenen muur en bunker', caption: 'Hole 7. Korte par 3, maar het steile hoogteverschil maakt afstandscontrole moeilijker dan de yardage doet vermoeden. De meeste spelers komen te kort.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-7.webp', alt: 'Golfhole Son Muntaner Mallorca smal par 3 met stenen muur en bunker', caption: 'Hole 7. Korte par 3, maar het steile hoogteverschil maakt afstandscontrole moeilijker dan de yardage doet vermoeden. De meeste spelers komen te kort.' },
         { type: 'heading', text: "De par 3's" },
         { type: 'paragraph', text: "De hoogte wordt goed benut door het hele parcours heen. Bescherming komt van de vorm en hoek van het hole in plaats van alleen de lengte, hoewel de langere holes vanaf de achterste tees meer dan 180 meter zijn en een goede clubkeuze vereisen. Hole 13 was een zeldzaam moment van helderheid die dag." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-1.jpg', alt: 'Andy Griffiths slaat af op het par 3 hole 13 op Son Muntaner Mallorca', caption: 'Hole 13. Par 3. Een makkelijke birdie vandaag!' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-1.webp', alt: 'Andy Griffiths slaat af op het par 3 hole 13 op Son Muntaner Mallorca', caption: 'Hole 13. Par 3. Een makkelijke birdie vandaag!' },
         { type: 'heading', text: 'Eerste negen versus tweede negen' },
         { type: 'paragraph', text: "De eerste negen, met name de openende zes holes, speelt nauw. Water en duidelijke landingszones houden het spel eerlijk. Er is geen ruimte voor losjes slagen vanaf de tee." },
         { type: 'paragraph', text: "De tweede negen opent iets. Meer vrijheid met de driver, maar de greencomplexen blijven klein en bedrieglijk moeilijk. Diepteperceptie op afstand is een constante uitdaging hier. Greens lijken groter dan ze zijn, en benaderingsafstanden zien er korter uit dan ze spelen." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-3.jpg', alt: 'Eenden op de waterhindernis van de golfbaan Son Muntaner Mallorca', caption: 'Niet iets wat je meeneemt in je pre-shot routine. Gezelschap op de tweede helft.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-3.webp', alt: 'Eenden op de waterhindernis van de golfbaan Son Muntaner Mallorca', caption: 'Niet iets wat je meeneemt in je pre-shot routine. Gezelschap op de tweede helft.' },
         { type: 'heading', text: 'De greens' },
         { type: 'paragraph', text: "Vlak rollend op een solide tempo, met duidelijk potentieel om sneller te worden naarmate de zomer nadert. Die kwaliteit beloonde goed putten, vooral op afstand. Dit is waar de titel Beste van Spanje zinvol begint te worden. De greens zijn consistent uitstekend en hielden het tempo en de oppervlaktekwaliteit de hele drukke zaterdag door." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-5.jpg', alt: 'Son Muntaner 9e green Mallorca met clubhuis erachter', caption: 'De 9e green, clubhuis erachter. Halverwege al duidelijk: deze baan beloont geduld boven kracht.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-5.webp', alt: 'Son Muntaner 9e green Mallorca met clubhuis erachter', caption: 'De 9e green, clubhuis erachter. Halverwege al duidelijk: deze baan beloont geduld boven kracht.' },
         { type: 'heading', text: 'Bunkers' },
         { type: 'paragraph', text: "Een eerlijk negatief punt: het bunkerszand was inconsistent. Sommige liggen strakker, andere zachter, wat de uitvoering bemoeilijkt van slagen die je op dezelfde manier had gepland. Gering voor een baan van dit niveau, maar de moeite waard om te weten als bunkersspel rondom de greens onderdeel van je spel is." },
         { type: 'heading', text: 'De olijfboom' },
         { type: 'paragraph', text: "Hole 15. De oude olijfboom die midden in het fairway staat heeft er al ongeveer duizend jaar gestaan. De Balearse overheid heeft hem uitgeroepen tot natuurmonument. De baan is eromheen ontworpen." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Oude olijfboom op hole 15 van de golfbaan Son Muntaner Mallorca met de Na Burguesa bergen erachter', caption: 'Hole 15. Die olijfboom staat er al zo\'n duizend jaar. De Balearse overheid heeft hem uitgeroepen tot natuurmonument. Iemand besloot er een golfhole omheen te bouwen. Ik ben blij dat dat zo is.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: 'Oude olijfboom op hole 15 van de golfbaan Son Muntaner Mallorca met de Na Burguesa bergen erachter', caption: 'Hole 15. Die olijfboom staat er al zo\'n duizend jaar. De Balearse overheid heeft hem uitgeroepen tot natuurmonument. Iemand besloot er een golfhole omheen te bouwen. Ik ben blij dat dat zo is.' },
         { type: 'heading', text: 'Het restaurant' },
         { type: 'paragraph', text: "Geen bijzaak. Het eten is op het niveau van de baan. De moeite waard om na de ronde te blijven in plaats van direct terug te rijden naar Palma." },
         { type: 'facts', items: [['€125–250', 'Greenfee 2026'], ['7/10', 'Moeilijkheidsgraad'], ['Par 72', 'Championship layout'], ['Inbegrepen', 'Buggy in greenfee']] },
@@ -248,7 +248,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf Son Muntaner, Mallorca - ärlig recension av en PGA Professional (2026)",
         description: "Son Muntaner golfbana Mallorca recenserad av en PGA Professional. Bästa golfbana i Spanien 2025. Greenfees, banevillkor och vem det passar.",
-        imagePath: '/images/son-muntaner-blog/sm-8.jpg',
+        imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
         badge: 'Banomdöme',
@@ -265,34 +265,34 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         ],
       },
       blocks: [
-        { type: 'image', src: '/images/son-muntaner-blog/sm-8.jpg', alt: 'Andy Griffiths på golfbanan Son Muntaner, Mallorca', caption: 'Bästa golfbana i Spanien 2025. Lyckades le trots alla missade fairways.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-8.webp', alt: 'Andy Griffiths på golfbanan Son Muntaner, Mallorca', caption: 'Bästa golfbana i Spanien 2025. Lyckades le trots alla missade fairways.' },
         { type: 'paragraph', text: "Son Muntaner utsågs till Bästa Golfbana i Spanien vid World Golf Awards 2025. Jag spelade den en lördagsmorgon förra veckan, med fullbokat starttider och blandade handicap i gruppen. Här är vad jag hittade." },
         { type: 'heading', text: 'Hur man tar sig dit' },
         { type: 'paragraph', text: "Fem minuter från centrala Palma. Det ensamt placerar den i en annan kategori än de flesta banor på ön värda att nämna. Son Gual tar tjugo minuter, Alcanada femtio. Om du är baserad i staden och vill ha en seriös runda utan att planera en halvdag kring körningen, är Son Muntaner svaret." },
         { type: 'paragraph', text: "Servicen från ankomst till runda var smidig. Teamet är uppmärksamt utan att vara påträngande. Räckviddsbollar, träningsanläggningar och den övergripande driften ligger alla på den nivå som banans rykte leder dig att förvänta dig." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-6.jpg', alt: 'Golfbanan Son Muntaner Mallorca med utsikt ned längs hål 17 med Palma-bukten i bakgrunden', caption: 'Vy ned över hål 17. Fem minuter från centrala Palma och det känns som en annan värld.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: 'Golfbanan Son Muntaner Mallorca med utsikt ned längs hål 17 med Palma-bukten i bakgrunden', caption: 'Vy ned över hål 17. Fem minuter från centrala Palma och det känns som en annan värld.' },
         { type: 'heading', text: 'Gången och varför buggyn ingår' },
         { type: 'paragraph', text: "Banan är ett genuint fysiskt test till fots. Flera långa klättringar upp till utslag. Buggy ingår i greenfeen, vilket är rätt beslut av klubben. De flesta spelare vill ha den, och att ta ut en extra avgift för den skulle kännas fel på den här nivån. Efter år i Kina med caddies föredrar jag att gå, men jag förstår varför de flesta besökare tar buggyn här." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-4.jpg', alt: 'Golfbanan Son Muntaner Mallorca förhöjd utsikt över fairway genom Na Burguesa-bergen', caption: 'Tillbaka från en av de längre klättringarna. Layouten genom Na Burguesa-bergen är det som gör den här banan annorlunda än allt annat nära Palma.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-4.webp', alt: 'Golfbanan Son Muntaner Mallorca förhöjd utsikt över fairway genom Na Burguesa-bergen', caption: 'Tillbaka från en av de längre klättringarna. Layouten genom Na Burguesa-bergen är det som gör den här banan annorlunda än allt annat nära Palma.' },
         { type: 'heading', text: 'Hur banan avslöjar sig' },
         { type: 'paragraph', text: "Mitt öppningstag var oregelbundet. Jag gjorde konservativa utvalsmärken och kunde ändå inte få en fullständig läsning av layouten tidigt. Det är inte kritik. Det är vad designen gör. Son Muntaner visar dig inte allt från utslaget. Banan avslöjar sig genom inflygningsspelet." },
         { type: 'paragraph', text: "Att hålla greener från fel vinkel är svårt. Det finns smala sektioner och subtila mål som kräver exakt positionering snarare än att bara få bollen någonstans nära flaggan. Landningszoner definierar banan. Utslag och layups kräver ofta engagemang för tajta zoner som inte är uppenbara förrän du når dem. När du förstår det börjar designen kännas rättvis. Starka slag får tydlig belöning." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-7.jpg', alt: 'Golfhål Son Muntaner Mallorca smalt par 3 med stenmur och bunker', caption: 'Hål 7. Kort par 3, men det kraftiga höjdfallet gör avståndskontroll svårare än yardagen antyder. De flesta slår för kort.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-7.webp', alt: 'Golfhål Son Muntaner Mallorca smalt par 3 med stenmur och bunker', caption: 'Hål 7. Kort par 3, men det kraftiga höjdfallet gör avståndskontroll svårare än yardagen antyder. De flesta slår för kort.' },
         { type: 'heading', text: 'Par 3-hålen' },
         { type: 'paragraph', text: "De använder höjdskillnader väl genomgående. Skyddet kommer från hålens form och vinkel snarare än bara längd, även om de längre från bakre utslag är över 180 meter och kräver ordentlig klubbval. Hål 13 var ett sällsynt ögonblick av klarhet den dagen." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-1.jpg', alt: 'Andy Griffiths slår av på par 3 hål 13 på Son Muntaner Mallorca', caption: 'Hål 13. Par 3. En enkel birdie idag!' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-1.webp', alt: 'Andy Griffiths slår av på par 3 hål 13 på Son Muntaner Mallorca', caption: 'Hål 13. Par 3. En enkel birdie idag!' },
         { type: 'heading', text: 'Niohålet ut mot hem' },
         { type: 'paragraph', text: "Niohålet ut, särskilt de öppnande sex hålen, spelas tajt. Vatten och definierade landningszoner håller det ärligt. Det finns inget utrymme för löst körande." },
         { type: 'paragraph', text: "Niohålet hem öppnar sig något. Mer frihet med driverslagen, men greenkomplexen förblir små och vilseledande svåra. Djupperception på avstånd är en konsekvent utmaning här. Greener ser större ut än de är, och inflygningsavstånd ser kortare ut än de spelar." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-3.jpg', alt: 'Änder på vattenhinder på golfbanan Son Muntaner Mallorca', caption: 'Inget man räknar med i sin förspelsrutin. Sällskap på andra halvan.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-3.webp', alt: 'Änder på vattenhinder på golfbanan Son Muntaner Mallorca', caption: 'Inget man räknar med i sin förspelsrutin. Sällskap på andra halvan.' },
         { type: 'heading', text: 'Greenerna' },
         { type: 'paragraph', text: "Rullande rent i ett solidt tempo, med tydlig potential att bli snabbare in i sommaren. Den kvaliteten belönade bra puttning, särskilt på avstånd. Det är här titeln Bästa i Spanien börjar ge mening. Greenerna är konsekvent utmärkta och höll takten och ytkvaliteten hela den travla lördagen." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-5.jpg', alt: 'Son Muntaner 9e green Mallorca med klubbhuset bakom', caption: 'Green 9, klubbhuset bakom. Halvvägs och redan klart: den här banan belönar tålamod framför kraft.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-5.webp', alt: 'Son Muntaner 9e green Mallorca med klubbhuset bakom', caption: 'Green 9, klubbhuset bakom. Halvvägs och redan klart: den här banan belönar tålamod framför kraft.' },
         { type: 'heading', text: 'Bunkrar' },
         { type: 'paragraph', text: "En ärlig negativ punkt: bunkersanden var ojämn. Vissa ligganden fastare, andra mjukare, vilket komplicerar utförandet av slag du planerat på samma sätt. Liten på en bana av den här standarden, men värt att veta om greensidesand är en del av ditt spel." },
         { type: 'heading', text: 'Olivträdet' },
         { type: 'paragraph', text: "Hål 15. Det gamla olivträdet som står mitt i fairwayen har stått där i ungefär tusen år. Balearernas regering förklarade det ett naturmonument. Banan designades runt det." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Gammalt olivträd på hål 15 på golfbanan Son Muntaner Mallorca med Na Burguesa-bergen bakom', caption: 'Hål 15. Det där olivträdet har stått här i ungefär tusen år. Balearernas regering förklarade det ett naturmonument. Någon bestämde sig för att bygga ett golhål runt det. Jag är glad att de gjorde det.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: 'Gammalt olivträd på hål 15 på golfbanan Son Muntaner Mallorca med Na Burguesa-bergen bakom', caption: 'Hål 15. Det där olivträdet har stått här i ungefär tusen år. Balearernas regering förklarade det ett naturmonument. Någon bestämde sig för att bygga ett golhål runt det. Jag är glad att de gjorde det.' },
         { type: 'heading', text: 'Restaurangen' },
         { type: 'paragraph', text: "Inget eftertanke. Maten matchar banans standard. Värt att stanna kvar efter ronden snarare än att åka tillbaka till Palma direkt." },
         { type: 'facts', items: [['€125–250', 'Greenfee 2026'], ['7/10', 'Svårighetsgrad'], ['Par 72', 'Championship layout'], ['Ingår', 'Buggy i greenfee']] },
@@ -309,7 +309,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Muntaner 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
         description: "Son Muntaner马略卡高尔夫球场由PGA职业教练评测。2025年西班牙最佳高尔夫球场。果岭费、球场状况及适合人群全解析。",
-        imagePath: '/images/son-muntaner-blog/sm-8.jpg',
+        imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
         badge: '球场评测',
@@ -326,34 +326,34 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         ],
       },
       blocks: [
-        { type: 'image', src: '/images/son-muntaner-blog/sm-8.jpg', alt: 'Andy Griffiths在马略卡Son Muntaner高尔夫球场', caption: '2025年西班牙最佳高尔夫球场。尽管丢了不少球道，还是设法露出了笑容。' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-8.webp', alt: 'Andy Griffiths在马略卡Son Muntaner高尔夫球场', caption: '2025年西班牙最佳高尔夫球场。尽管丢了不少球道，还是设法露出了笑容。' },
         { type: 'paragraph', text: "Son Muntaner在2025年世界高尔夫奖中荣获西班牙最佳高尔夫球场称号。上周六早晨，我在满员开球表和各类差点组合的情况下打了一轮。以下是我的真实体验。" },
         { type: 'heading', text: '前往方式' },
         { type: 'paragraph', text: "距巴尔马市中心仅五分钟。仅凭这一点，它就已跻身岛上最值得一去的球场中的另一个层次。Son Gual需要二十分钟，Alcanada五十分钟。如果你住在市区，想要打一场认真的球而不必为往返花上半天时间，Son Muntaner就是答案。" },
         { type: 'paragraph', text: "从抵达到开球，整个服务流程顺畅自然。工作人员体贴而不失分寸。练习场用球、训练设施以及整体运营水准，都与这个球场的声誉相符。" },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-6.jpg', alt: '马略卡Son Muntaner高尔夫球场俯视第17洞球道，背景为巴尔马湾', caption: '俯瞰第17洞球道。距巴尔马市中心仅五分钟车程，却宛如身处另一个世界。' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: '马略卡Son Muntaner高尔夫球场俯视第17洞球道，背景为巴尔马湾', caption: '俯瞰第17洞球道。距巴尔马市中心仅五分钟车程，却宛如身处另一个世界。' },
         { type: 'heading', text: '步行挑战:以及球车为何包含在内' },
         { type: 'paragraph', text: "徒步打完这个球场是真正的体能考验。通往开球台的路有多处长坡。球车费用已含在果岭费中:这是俱乐部的正确决策。大多数球手都会需要它，若单独收费在这个水准的球场会显得不妥。在中国打球多年靠球童辅助，我习惯步行，但我理解为何大多数来访者选择乘坐球车。" },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-4.jpg', alt: '马略卡Son Muntaner高尔夫球场穿越纳布尔格萨山脉的高处球道视角', caption: '从一段长坡顶部回望。穿越纳布尔格萨山脉的球道设计，让这个球场与巴尔马附近所有球场都截然不同。' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-4.webp', alt: '马略卡Son Muntaner高尔夫球场穿越纳布尔格萨山脉的高处球道视角', caption: '从一段长坡顶部回望。穿越纳布尔格萨山脉的球道设计，让这个球场与巴尔马附近所有球场都截然不同。' },
         { type: 'heading', text: '球场如何逐渐呈现' },
         { type: 'paragraph', text: "开局阶段发挥不稳。选择了保守的开球位置，依然无法在早期完全读懂球道布局。这不是批评:这正是设计的用意所在。Son Muntaner不会在开球台就把一切展示给你看。球场是在攻果岭时慢慢呈现自身的。" },
         { type: 'paragraph', text: "从错误角度攻果岭时很难停住球。球场有狭窄的通道和需要精准落点的微妙目标区，要求的是精确的位置选择，而不仅仅是把球打到旗杆附近。落球区主导着整个球场的节奏。开球和保守击球往往需要坚定地打向不到达时并不明显的窄小区域。一旦理解这一点，设计便显得合理了。优质击球会得到清晰的奖励。" },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-7.jpg', alt: '马略卡Son Muntaner高尔夫球洞，紧凑的标准杆3洞，左侧石墙，右侧沙坑', caption: '第7洞。短打标准杆3，但陡峭的落差使距离控制远比码数所示的更难。大多数人都打不到位。' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-7.webp', alt: '马略卡Son Muntaner高尔夫球洞，紧凑的标准杆3洞，左侧石墙，右侧沙坑', caption: '第7洞。短打标准杆3，但陡峭的落差使距离控制远比码数所示的更难。大多数人都打不到位。' },
         { type: 'heading', text: '标准杆3洞' },
         { type: 'paragraph', text: "球场全程都善用了高度差。保护性主要来自球洞的形态和角度，而非单纯依赖距离:当然从后方开球台打的较长洞超过180码，需要认真选择球杆。第13洞是当天难得的清晰时刻。" },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-1.jpg', alt: 'Andy Griffiths在马略卡Son Muntaner第13洞标准杆3洞开球', caption: '第13洞。标准杆3。今天一个轻松的小鸟！' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-1.webp', alt: 'Andy Griffiths在马略卡Son Muntaner第13洞标准杆3洞开球', caption: '第13洞。标准杆3。今天一个轻松的小鸟！' },
         { type: 'heading', text: '前九洞对比后九洞' },
         { type: 'paragraph', text: "前九洞，尤其是开局六洞，打法紧凑。水障和明确的落球区让游戏保持诚实。没有容纳粗心开球的空间。" },
         { type: 'paragraph', text: "后九洞略显开阔。使用开球木的自由度更高，但果岭区依然小而难以预料。从远处判断距离是Son Muntaner一贯的挑战:果岭看起来比实际更大，攻果岭的距离看上去也比实际更短。" },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-3.jpg', alt: '马略卡Son Muntaner高尔夫球场水障上的鸭子', caption: '这不在击球前例行准备的考虑范围之内。后九洞的意外"同伴"。' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-3.webp', alt: '马略卡Son Muntaner高尔夫球场水障上的鸭子', caption: '这不在击球前例行准备的考虑范围之内。后九洞的意外"同伴"。' },
         { type: 'heading', text: '果岭' },
         { type: 'paragraph', text: "果岭滚球纯正，速度稳健，明显有随夏季到来进一步加快的潜力。这种品质奖励了良好的推杆，尤其是长距离推杆。西班牙最佳的称号在这里开始显现其意义:果岭品质始终如一，在忙碌的周六满员运营全程中，速度和表面质量始终保持稳定。" },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-5.jpg', alt: '马略卡Son Muntaner第9洞果岭，背景为会所', caption: '第9洞果岭，会所在后。走到一半时已然清晰：这个球场奖励耐心胜于力量。' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-5.webp', alt: '马略卡Son Muntaner第9洞果岭，背景为会所', caption: '第9洞果岭，会所在后。走到一半时已然清晰：这个球场奖励耐心胜于力量。' },
         { type: 'heading', text: '沙坑' },
         { type: 'paragraph', text: "一个真实的负面反馈：沙坑沙质不够统一。有些落球点较硬，有些较软，给以相同方式规划的击球带来了执行上的困难。对于这一水准的球场来说属于小问题，但若果岭边沙坑击球是你比赛的重要组成部分，值得留意。" },
         { type: 'heading', text: '橄榄树' },
         { type: 'paragraph', text: "第15洞。站在球道中央的那棵古老橄榄树已在此屹立约一千年。巴利阿里群岛政府将其列为自然遗址。球场的设计围绕它展开。" },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: '马略卡Son Muntaner高尔夫球场第15洞古老橄榄树，背景为纳布尔格萨山脉', caption: '第15洞。那棵橄榄树在这里已矗立约一千年。巴利阿里群岛政府将其列为自然遗址。有人决定在它周围建造一个球洞:我很庆幸他们做出了这个决定。' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: '马略卡Son Muntaner高尔夫球场第15洞古老橄榄树，背景为纳布尔格萨山脉', caption: '第15洞。那棵橄榄树在这里已矗立约一千年。巴利阿里群岛政府将其列为自然遗址。有人决定在它周围建造一个球洞:我很庆幸他们做出了这个决定。' },
         { type: 'heading', text: '餐厅' },
         { type: 'paragraph', text: "餐厅并非附加项目。食物的水准与球场相称。打完球后值得留下用餐，而不是直接驱车返回巴尔马。" },
         { type: 'facts', items: [['€125–250', '2026年果岭费区间'], ['7/10', '难度'], ['标准杆72', '锦标赛级布局'], ['含在内', '果岭费含球车']] },
@@ -413,7 +413,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-1.jpg',
+          src: '/images/son-gual-blog/sg-1.webp',
           alt: 'Son Gual fairway',
         },
         { type: 'heading', text: 'Der Wind' },
@@ -440,7 +440,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-2.jpg',
+          src: '/images/son-gual-blog/sg-2.webp',
           alt: 'Son Gual greens',
         },
         { type: 'heading', text: 'Der Platz' },
@@ -464,7 +464,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-4.jpg',
+          src: '/images/son-gual-blog/sg-4.webp',
           alt: 'Son Gual Golf',
         },
         {
@@ -495,7 +495,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-5.jpg',
+          src: '/images/son-gual-blog/sg-5.webp',
           alt: 'Son Gual closing holes',
         },
         {
@@ -552,7 +552,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-1.jpg',
+          src: '/images/son-gual-blog/sg-1.webp',
           alt: 'Son Gual fairway',
         },
         { type: 'heading', text: 'El viento' },
@@ -579,7 +579,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-2.jpg',
+          src: '/images/son-gual-blog/sg-2.webp',
           alt: 'Son Gual greens',
         },
         { type: 'heading', text: 'El campo' },
@@ -603,7 +603,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-4.jpg',
+          src: '/images/son-gual-blog/sg-4.webp',
           alt: 'Son Gual Golf',
         },
         {
@@ -634,7 +634,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-5.jpg',
+          src: '/images/son-gual-blog/sg-5.webp',
           alt: 'Son Gual closing holes',
         },
         {
@@ -690,7 +690,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-1.jpg',
+          src: '/images/son-gual-blog/sg-1.webp',
           alt: 'Son Gual fairway',
         },
         { type: 'heading', text: 'Le vent' },
@@ -717,7 +717,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-2.jpg',
+          src: '/images/son-gual-blog/sg-2.webp',
           alt: 'Son Gual greens',
         },
         { type: 'heading', text: 'Le parcours' },
@@ -741,7 +741,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-4.jpg',
+          src: '/images/son-gual-blog/sg-4.webp',
           alt: 'Son Gual Golf',
         },
         {
@@ -772,7 +772,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-5.jpg',
+          src: '/images/son-gual-blog/sg-5.webp',
           alt: 'Son Gual closing holes',
         },
         {
@@ -826,7 +826,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-1.jpg",
+  "src": "/images/son-gual-blog/sg-1.webp",
   "alt": "Son Gual fairway",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -856,7 +856,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-2.jpg",
+  "src": "/images/son-gual-blog/sg-2.webp",
   "alt": "Son Gual greens",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -885,7 +885,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-4.jpg",
+  "src": "/images/son-gual-blog/sg-4.webp",
   "alt": "Son Gual Golf",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -932,7 +932,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-5.jpg",
+  "src": "/images/son-gual-blog/sg-5.webp",
   "alt": "Son Gual closing holes",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -988,7 +988,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-1.jpg",
+  "src": "/images/son-gual-blog/sg-1.webp",
   "alt": "Son Gual fairway",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -1018,7 +1018,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-2.jpg",
+  "src": "/images/son-gual-blog/sg-2.webp",
   "alt": "Son Gual greens",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -1047,7 +1047,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-4.jpg",
+  "src": "/images/son-gual-blog/sg-4.webp",
   "alt": "Son Gual Golf",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -1094,7 +1094,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-5.jpg",
+  "src": "/images/son-gual-blog/sg-5.webp",
   "alt": "Son Gual closing holes",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -1150,7 +1150,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-1.jpg",
+  "src": "/images/son-gual-blog/sg-1.webp",
   "alt": "Son Gual fairway",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -1180,7 +1180,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-2.jpg",
+  "src": "/images/son-gual-blog/sg-2.webp",
   "alt": "Son Gual greens",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -1209,7 +1209,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-4.jpg",
+  "src": "/images/son-gual-blog/sg-4.webp",
   "alt": "Son Gual Golf",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -1256,7 +1256,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "image",
-  "src": "/images/son-gual-blog/sg-5.jpg",
+  "src": "/images/son-gual-blog/sg-5.webp",
   "alt": "Son Gual closing holes",
   "containerStyle": {margin:'2rem 0', borderRadius:2, aspectRatio: '16/9'}
 },
@@ -1275,7 +1275,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: 'Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals',
         description:
           'Alcanada auf Mallorca, ehrlich bewertet von einem PGA-Professional, der den Platz regelmäßig spielt. Leuchtturm, Grüns, Restaurantterrasse und Greenfees 2026.',
-        imagePath: '/images/alcanada-blog/alc-7.jpg',
+        imagePath: '/images/alcanada-blog/alc-7.webp',
       },
       meta: {
         badge: 'Platzbewertung',
@@ -1388,7 +1388,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: 'Club de Golf Alcanada - Análisis honesto de un Profesional PGA',
         description:
           'Alcanada en Mallorca, visto por un Profesional PGA que lo juega con frecuencia. El faro, los greens, la terraza y los green fees de 2026.',
-        imagePath: '/images/alcanada-blog/alc-7.jpg',
+        imagePath: '/images/alcanada-blog/alc-7.webp',
       },
       meta: {
         badge: 'Análisis del campo',
@@ -1501,7 +1501,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: "Club de Golf Alcanada - Avis honnête d'un professionnel PGA",
         description:
           'Alcanada à Majorque, vu par un professionnel PGA qui y joue régulièrement. Le phare, les greens, la terrasse et les green fees 2026.',
-        imagePath: '/images/alcanada-blog/alc-7.jpg',
+        imagePath: '/images/alcanada-blog/alc-7.webp',
       },
       meta: {
         badge: 'Avis parcours',
@@ -1616,7 +1616,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   locale: 'nl',
   title: 'Club de Golf Alcanada - eerlijke review van een PGA-professional',
   description: 'Alcanada op Mallorca, bekeken door een PGA-professional die er regelmatig speelt. De vuurtoren, de greens, het terras en de greenfees voor 2026.',
-  imagePath: '/images/alcanada-blog/alc-7.jpg',
+  imagePath: '/images/alcanada-blog/alc-7.webp',
 },
       meta: {
   badge: 'Baanreview',
@@ -1754,7 +1754,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   locale: 'sv',
   title: 'Club de Golf Alcanada - ärlig recension från ett PGA-proffs',
   description: 'Alcanada på Mallorca, sett genom ögonen på ett PGA-proffs som spelar där regelbundet. Fyren, greenerna, terrassen och greenfeen 2026.',
-  imagePath: '/images/alcanada-blog/alc-7.jpg',
+  imagePath: '/images/alcanada-blog/alc-7.webp',
 },
       meta: {
   badge: 'Banrecension',
@@ -1892,7 +1892,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   locale: 'zh',
   title: '阿尔卡纳达高尔夫球场 - PGA职业教练诚实评测',
   description: '从一位经常下场的PGA职业教练视角看Alcanada。灯塔、果岭、餐厅露台，以及2026年果岭费。',
-  imagePath: '/images/alcanada-blog/alc-7.jpg',
+  imagePath: '/images/alcanada-blog/alc-7.webp',
 },
       meta: {
   badge: '球场评测',
@@ -2031,7 +2031,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: 'Golf Santa Ponsa 1, Mallorca - ehrliche Bewertung eines PGA-Professionals',
         description:
           'Santa Ponsa 1 auf Mallorca, ehrlich bewertet von einem PGA-Professional. Tour-Geschichte, breite Fairways und ein Platz, der Vertrauen vom Tee gibt.',
-        imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+        imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
       },
       meta: {
         badge: 'Platzbewertung',
@@ -2120,7 +2120,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: 'Golf Santa Ponsa 1, Mallorca - Análisis honesto de un Profesional PGA',
         description:
           'Santa Ponsa 1 en Mallorca, visto por un Profesional PGA. Historia de Tour, fairways amplios y confianza renovada con el driver.',
-        imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+        imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
       },
       meta: {
         badge: 'Análisis del campo',
@@ -2209,7 +2209,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: "Golf Santa Ponsa 1, Majorque - Avis honnête d'un professionnel PGA",
         description:
           'Santa Ponsa 1 à Majorque, vu par un professionnel PGA. Histoire du Tour, fairways généreux et confiance retrouvée au driver.',
-        imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+        imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
       },
       meta: {
         badge: 'Avis parcours',
@@ -2299,7 +2299,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   locale: 'nl',
   title: 'Golf Santa Ponsa 1, Mallorca - eerlijke review van een PGA-professional',
   description: 'Santa Ponsa 1 op Mallorca, bekeken door een PGA-professional. Tourgeschiedenis, brede fairways en hernieuwd vertrouwen met de driver.',
-  imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+  imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
 },
       meta: {
   badge: 'Baanreview',
@@ -2409,7 +2409,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   locale: 'sv',
   title: 'Golf Santa Ponsa 1, Mallorca - ärlig recension från ett PGA-proffs',
   description: 'Santa Ponsa 1 på Mallorca, sett genom ögonen på ett PGA-proffs. Tourhistoria, generösa fairways och förnyat självförtroende med drivern.',
-  imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+  imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
 },
       meta: {
   badge: 'Banrecension',
@@ -2519,7 +2519,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   locale: 'zh',
   title: '圣蓬萨1号高尔夫球场 - PGA职业教练诚实评测',
   description: '从一位PGA职业教练视角看Santa Ponsa 1。欧巡历史、宽阔球道，以及重新找回一号木信心的球场。',
-  imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+  imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
 },
       meta: {
   badge: '球场评测',
@@ -2631,7 +2631,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: 'Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)',
         description:
           'Son Termes Golf auf Mallorca, bewertet von einem PGA-Professional. Bergpanorama, ehrliche Platznotizen, Greenfees und für wen der Platz geeignet ist – von jemandem, der ihn diese Woche gespielt hat.',
-        imagePath: '/images/son-termes-blog/st-2.jpg',
+        imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
         badge: 'Platz-Bewertung',
@@ -2651,7 +2651,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-2.jpg',
+          src: '/images/son-termes-blog/st-2.webp',
           alt: 'Ziege auf dem Golfplatz Son Termes auf Mallorca, mit Palma im Hintergrund',
           caption: 'Der Ball gehört mir. Die Ziege war nicht eingeladen. Back Nine, Son Termes.',
           priority: true,
@@ -2674,7 +2674,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-1.jpg',
+          src: '/images/son-termes-blog/st-1.webp',
           alt: 'Abschlag auf dem Golfplatz Son Termes auf Mallorca mit Bergen im Hintergrund',
           caption: 'Abschlag in Son Termes, dahinter die Na-Burguesa-Berge.',
           presentation: 'natural',
@@ -2692,7 +2692,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-6.jpg',
+          src: '/images/son-termes-blog/st-6.webp',
           alt: 'Golfplatz Son Termes auf Mallorca in den Na-Burguesa-Bergen',
           caption: 'Auf den Back Nine öffnet sich der Platz, mit Blick auf die Na-Burguesa-Berge.',
           presentation: 'natural',
@@ -2710,7 +2710,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-5.jpg',
+          src: '/images/son-termes-blog/st-5.webp',
           alt: 'Par-3-Grün der 12. Bahn in Son Termes auf Mallorca mit Bäumen im Hintergrund',
           caption: 'Die 12. Die Fahne war schwerer zu finden, als es hier aussieht.',
           presentation: 'natural',
@@ -2737,7 +2737,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-4.jpg',
+          src: '/images/son-termes-blog/st-4.webp',
           alt: 'Panoramablick auf den Golfplatz Son Termes auf Mallorca über die Na-Burguesa-Berge und die Ebene von Palma',
           caption: 'Der Blick von den oberen Löchern. An einem klaren Morgen waren Castell de Bellver und die Kathedrale am Horizont zu sehen.',
           presentation: 'natural',
@@ -2760,7 +2760,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-3.jpg',
+          src: '/images/son-termes-blog/st-3.webp',
           alt: 'Luftaufnahme des Golfplatzes Son Termes auf Mallorca mit Bergen rund um das Layout',
           caption: 'Der Platz aus der Vogelperspektive. Das Routing durch die Berge macht Son Termes auf dieser Preisstufe auf der Insel besonders.',
           presentation: 'natural',
@@ -2785,7 +2785,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: 'Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)',
         description:
           'Reseña de Son Termes Golf en Mallorca por un profesional de la PGA. Vistas de montaña, notas honestas del recorrido, green fee y para quién encaja, escrita por alguien que lo jugó esta misma semana.',
-        imagePath: '/images/son-termes-blog/st-2.jpg',
+        imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
         badge: 'Reseña de campo',
@@ -2805,7 +2805,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-2.jpg',
+          src: '/images/son-termes-blog/st-2.webp',
           alt: 'Cabra en el campo de golf Son Termes, Mallorca, con Palma al fondo',
           caption: 'La bola es mía. La cabra no estaba invitada. Nueve de vuelta, Son Termes.',
           priority: true,
@@ -2828,7 +2828,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-1.jpg',
+          src: '/images/son-termes-blog/st-1.webp',
           alt: 'Salida en Son Termes Golf, Mallorca, con montañas al fondo',
           caption: 'Salida en Son Termes, con la sierra de Na Burguesa detrás.',
           presentation: 'natural',
@@ -2846,7 +2846,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-6.jpg',
+          src: '/images/son-termes-blog/st-6.webp',
           alt: 'Son Termes Golf, Mallorca, en la sierra de Na Burguesa',
           caption: 'El campo se abre en los nueve de vuelta y aparece la vista de la sierra de Na Burguesa.',
           presentation: 'natural',
@@ -2864,7 +2864,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-5.jpg',
+          src: '/images/son-termes-blog/st-5.webp',
           alt: 'Green del hoyo 12, par 3 de Son Termes Golf, Mallorca, con árboles detrás',
           caption: 'El 12. La bandera costaba más verla de lo que aquí parece.',
           presentation: 'natural',
@@ -2891,7 +2891,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-4.jpg',
+          src: '/images/son-termes-blog/st-4.webp',
           alt: 'Vista panorámica de Son Termes Golf, Mallorca, sobre la sierra de Na Burguesa y la llanura de Palma',
           caption: 'La vista desde los hoyos altos. En una mañana despejada se veían en el horizonte el Castell de Bellver y la catedral.',
           presentation: 'natural',
@@ -2914,7 +2914,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-3.jpg',
+          src: '/images/son-termes-blog/st-3.webp',
           alt: 'Vista aérea de Son Termes Golf, Mallorca, sobre el recorrido con montañas',
           caption: 'El campo desde arriba. El trazado entre las montañas es lo que hace que Son Termes sea distinto de cualquier otra opción en la isla en este rango de precio.',
           presentation: 'natural',
@@ -2939,7 +2939,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
         description:
           "Avis sur le golf de Son Termes à Majorque par un professionnel PGA. Vues de montagne, notes de parcours honnêtes, green-fee et profil de joueur, par quelqu'un qui l'a joué cette semaine.",
-        imagePath: '/images/son-termes-blog/st-2.jpg',
+        imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
         badge: 'Test de parcours',
@@ -2959,7 +2959,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-2.jpg',
+          src: '/images/son-termes-blog/st-2.webp',
           alt: 'Chèvre sur le parcours de golf de Son Termes à Majorque avec Palma en arrière-plan',
           caption: "La balle est à moi. La chèvre n'était pas invitée. Retour, Son Termes.",
           priority: true,
@@ -2982,7 +2982,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-1.jpg',
+          src: '/images/son-termes-blog/st-1.webp',
           alt: 'Mise en jeu à Son Termes Golf, Majorque, avec les montagnes en arrière-plan',
           caption: 'Mise en jeu à Son Termes, avec les montagnes de Na Burguesa derrière.',
           presentation: 'natural',
@@ -3000,7 +3000,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-6.jpg',
+          src: '/images/son-termes-blog/st-6.webp',
           alt: 'Parcours de golf Son Termes à Majorque dans les montagnes de Na Burguesa',
           caption: "Le parcours s'ouvre au retour avec la vue sur les montagnes de Na Burguesa.",
           presentation: 'natural',
@@ -3018,7 +3018,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-5.jpg',
+          src: '/images/son-termes-blog/st-5.webp',
           alt: 'Green du trou n°12, par 3 de Son Termes Golf à Majorque, avec des arbres derrière',
           caption: 'Le 12. Le drapeau était plus difficile à repérer que cette photo ne le laisse penser.',
           presentation: 'natural',
@@ -3045,7 +3045,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-4.jpg',
+          src: '/images/son-termes-blog/st-4.webp',
           alt: 'Vue panoramique de Son Termes Golf à Majorque sur les montagnes de Na Burguesa et la plaine de Palma',
           caption: "La vue depuis les trous du haut. Par matin clair, on distinguait le Castell de Bellver et la cathédrale sur l'horizon.",
           presentation: 'natural',
@@ -3068,7 +3068,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-3.jpg',
+          src: '/images/son-termes-blog/st-3.webp',
           alt: 'Vue aérienne du golf Son Termes à Majorque sur le tracé avec les montagnes',
           caption: "Le parcours vu du ciel. Son tracé dans les montagnes est ce qui distingue Son Termes de tout le reste sur l'île à ce niveau de prix.",
           presentation: 'natural',
@@ -3093,7 +3093,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: 'Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)',
         description:
           'Son Termes Golf op Mallorca, beoordeeld door een PGA-professional. Bergzichten, eerlijke baannotities, greenfees en voor wie de baan geschikt is, van iemand die er deze week heeft gespeeld.',
-        imagePath: '/images/son-termes-blog/st-2.jpg',
+        imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
         badge: 'Baanreview',
@@ -3113,7 +3113,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-2.jpg',
+          src: '/images/son-termes-blog/st-2.webp',
           alt: 'Geit op golfbaan Son Termes op Mallorca met Palma op de achtergrond',
           caption: 'De bal is van mij. De geit was niet uitgenodigd. Back nine, Son Termes.',
           priority: true,
@@ -3136,7 +3136,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-1.jpg',
+          src: '/images/son-termes-blog/st-1.webp',
           alt: 'Afslag op golfbaan Son Termes op Mallorca met bergen op de achtergrond',
           caption: 'Afslag op Son Termes, met het Na Burguesa-gebergte erachter.',
           presentation: 'natural',
@@ -3154,7 +3154,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-6.jpg',
+          src: '/images/son-termes-blog/st-6.webp',
           alt: 'Golfbaan Son Termes op Mallorca in het Na Burguesa-gebergte',
           caption: 'Op de back nine opent de baan zich, met uitzicht op het Na Burguesa-gebergte.',
           presentation: 'natural',
@@ -3172,7 +3172,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-5.jpg',
+          src: '/images/son-termes-blog/st-5.webp',
           alt: 'Par-3-green van hole 12 op Son Termes op Mallorca met bomen erachter',
           caption: 'De 12e. De vlag was moeilijker te vinden dan dit beeld doet vermoeden.',
           presentation: 'natural',
@@ -3199,7 +3199,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-4.jpg',
+          src: '/images/son-termes-blog/st-4.webp',
           alt: 'Panoramisch uitzicht op golfbaan Son Termes op Mallorca over het Na Burguesa-gebergte en de vlakte van Palma',
           caption: 'Het uitzicht vanaf de bovenste holes. Op een heldere ochtend waren Castell de Bellver en de kathedraal zichtbaar aan de horizon.',
           presentation: 'natural',
@@ -3222,7 +3222,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-3.jpg',
+          src: '/images/son-termes-blog/st-3.webp',
           alt: 'Luchtfoto van golfbaan Son Termes op Mallorca met het banenverloop in de bergen',
           caption: 'De baan van bovenaf. De routing door de bergen maakt Son Termes anders dan alles in deze prijsklasse op het eiland.',
           presentation: 'natural',
@@ -3247,7 +3247,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: 'Son Termes Golf, Mallorca: en ärlig recension av ett PGA-proffs (2026)',
         description:
           'Recension av Son Termes Golf på Mallorca av ett PGA-proffs. Bergsvyer, ärliga bananteckningar, greenfee och vem banan passar, från någon som spelade den den här veckan.',
-        imagePath: '/images/son-termes-blog/st-2.jpg',
+        imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
         badge: 'Banrecension',
@@ -3267,7 +3267,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-2.jpg',
+          src: '/images/son-termes-blog/st-2.webp',
           alt: 'Get på Son Termes golfbana på Mallorca med Palma i bakgrunden',
           caption: 'Bollen är min. Geten var inte inbjuden. Back nine på Son Termes.',
           priority: true,
@@ -3290,7 +3290,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-1.jpg',
+          src: '/images/son-termes-blog/st-1.webp',
           alt: 'Utslag på Son Termes golfbana på Mallorca med berg i bakgrunden',
           caption: 'Utslag på Son Termes, med Na Burguesa-bergen bakom.',
           presentation: 'natural',
@@ -3308,7 +3308,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-6.jpg',
+          src: '/images/son-termes-blog/st-6.webp',
           alt: 'Son Termes golfbana på Mallorca i Na Burguesa-bergen',
           caption: 'Banan öppnar upp sig på back nine med utsikt över Na Burguesa-bergen.',
           presentation: 'natural',
@@ -3326,7 +3326,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-5.jpg',
+          src: '/images/son-termes-blog/st-5.webp',
           alt: 'Greenen på Son Termes par 3-hål 12 på Mallorca med träd bakom',
           caption: 'Tolvan. Flaggan var svårare att hitta än bilden får det att se ut.',
           presentation: 'natural',
@@ -3353,7 +3353,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-4.jpg',
+          src: '/images/son-termes-blog/st-4.webp',
           alt: 'Panoramavy över Son Termes golfbana på Mallorca, Na Burguesa-bergen och slätten vid Palma',
           caption: 'Utsikten från de övre hålen. Castell de Bellver och katedralen syntes i silhuetten en klar morgon.',
           presentation: 'natural',
@@ -3376,7 +3376,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-3.jpg',
+          src: '/images/son-termes-blog/st-3.webp',
           alt: 'Flygvy över Son Termes golfbana på Mallorca med bansträckningen genom bergen',
           caption: 'Banan ovanifrån. Dragningen genom bergen är det som gör Son Termes annorlunda än allt annat i samma prisklass på ön.',
           presentation: 'natural',
@@ -3401,7 +3401,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         title: '马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）',
         description:
           '由 PGA 职业球员评测马略卡 Son Termes 高尔夫球场。山景、真实球场点评、果岭费，以及这座球场适合哪些球手，来自本周刚下场的亲身体验。',
-        imagePath: '/images/son-termes-blog/st-2.jpg',
+        imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
         badge: '球场评测',
@@ -3421,7 +3421,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-2.jpg',
+          src: '/images/son-termes-blog/st-2.webp',
           alt: '马略卡 Son Termes 高尔夫球场上的山羊，背景是帕尔马',
           caption: '球是我的。山羊可不是我请来的。Son Termes 后九洞。',
           priority: true,
@@ -3444,7 +3444,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-1.jpg',
+          src: '/images/son-termes-blog/st-1.webp',
           alt: '马略卡 Son Termes 高尔夫球场发球，背景是群山',
           caption: 'Son Termes 的开球，身后是 Na Burguesa 山脉。',
           presentation: 'natural',
@@ -3462,7 +3462,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-6.jpg',
+          src: '/images/son-termes-blog/st-6.webp',
           alt: '马略卡 Son Termes 高尔夫球场与 Na Burguesa 山景',
           caption: '后九的视野更开阔，可以看到 Na Burguesa 山景。',
           presentation: 'natural',
@@ -3480,7 +3480,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-5.jpg',
+          src: '/images/son-termes-blog/st-5.webp',
           alt: '马略卡 Son Termes 第12洞三杆洞果岭，后方是树木',
           caption: '第 12 洞。旗杆比这张照片看起来更难找。',
           presentation: 'natural',
@@ -3507,7 +3507,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-4.jpg',
+          src: '/images/son-termes-blog/st-4.webp',
           alt: '马略卡 Son Termes 高尔夫球场全景，可见 Na Burguesa 山脉与帕尔马平原',
           caption: '从高处几个球洞望出去的景色。晴朗的早晨，可以在天际线上看到贝尔韦尔城堡和大教堂。',
           presentation: 'natural',
@@ -3530,7 +3530,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-3.jpg',
+          src: '/images/son-termes-blog/st-3.webp',
           alt: '马略卡 Son Termes 高尔夫球场航拍，可见球道穿行于群山之间',
           caption: '从空中看球场。穿山而行的球道布局，正是 Son Termes 与岛上同价位其他球场拉开差异的地方。',
           presentation: 'natural',
@@ -3556,7 +3556,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
         description: "Golf de Andratx bewertet von einem PGA-Professional, der den Platz im Mai 2026 gespielt hat. Bergkulisse, das längste Par 5 Spaniens, taktische Löcher durchgehend und was man von einem der anspruchsvolleren Plätze Mallorcas erwarten kann.",
-        imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+        imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
         badge: 'Platz-Bewertung',
@@ -3575,7 +3575,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-8.webp',
           alt: 'Blick von Loch 8 auf dem Golf de Andratx über den gesamten Südwesten von Mallorca',
           caption: 'Loch 8, A Love of Mallorca. Von einem der höchsten Punkte des Platzes, mit Blick über den gesamten Südwesten von Mallorca.',
         },
@@ -3601,7 +3601,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-4.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-4.webp',
           alt: 'Loch 4, Pine Valley, Golf de Andratx, Wasser umgibt das Green',
           caption: 'Loch 4, Pine Valley. Das Wasser grenzt nicht nur an dieses Loch, es umgibt es. Das Green fällt so ab, dass die richtige Schlagweite beim Anspiel die entscheidende Aufgabe ist.',
         },
@@ -3619,7 +3619,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-7.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-7.webp',
           alt: 'Abschlag an Loch 7 auf dem Golf de Andratx mit Steinmauern vor dem Green',
           caption: 'Loch 7. Die Steinmauern verdecken vom Abschlag aus den Blick auf das Green. Man wählt eine Linie und zieht durch, ohne zu sehen, wo man landet.',
         },
@@ -3629,7 +3629,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-15.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-15.webp',
           alt: 'Erhöhter Abschlag an Loch 15, Hello Mrs Robinson, auf dem Golf de Andratx',
           caption: 'Loch 15, Hello Mrs Robinson. Der Abfall vom Abschlag spielt rund 20 Meter kürzer. Distanzkontrolle ist hier die einzige Herausforderung.',
         },
@@ -3639,7 +3639,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.webp',
           alt: 'Loch 2 auf dem Golf de Andratx mit Camp del Mar sichtbar im Hintergrund',
           caption: 'Loch 2. Obwohl man den größten Teil der Runde hoch oben in den Bergen verbringt, war dies das erste Mal, dass das Meer ins Blickfeld kam. Camp del Mar liegt im Hintergrund. Ein schöner Abschluss.',
         },
@@ -3696,7 +3696,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx - análisis honesto de un Profesional PGA (2026)",
         description: "Golf de Andratx analizado por un Profesional PGA que lo jugó en mayo de 2026. Entorno de montaña, el par 5 más largo de España, hoyos tácticos y qué esperar de uno de los campos más exigentes de Mallorca.",
-        imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+        imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
         badge: 'Análisis del campo',
@@ -3715,7 +3715,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-8.webp',
           alt: 'Vista desde el hoyo 8 de Golf de Andratx mirando hacia el suroeste de Mallorca',
           caption: 'Hoyo 8, A Love of Mallorca. Desde uno de los puntos más altos del campo, con vistas sobre todo el suroeste de Mallorca.',
         },
@@ -3741,7 +3741,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-4.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-4.webp',
           alt: 'Hoyo 4, Pine Valley, Golf de Andratx, agua rodeando el green',
           caption: 'Hoyo 4, Pine Valley. El agua no solo bordea este hoyo, lo rodea. El green cae de una manera que hace que el número correcto en la aproximación sea la prioridad.',
         },
@@ -3759,7 +3759,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-7.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-7.webp',
           alt: 'Salida en el hoyo 7 de Golf de Andratx con muros de piedra frente al green',
           caption: 'Hoyo 7. Los muros de piedra bloquean la vista del green desde el tee. Se elige una línea y se ejecuta sin ver adónde se va.',
         },
@@ -3769,7 +3769,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-15.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-15.webp',
           alt: 'Salida elevada en el hoyo 15, Hello Mrs Robinson, en Golf de Andratx',
           caption: 'Hoyo 15, Hello Mrs Robinson. La caída desde el tee hace que juegue unos 20 metros más corto. El control de la distancia es todo el desafío aquí.',
         },
@@ -3779,7 +3779,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.webp',
           alt: 'Hoyo 2 de Golf de Andratx con Camp del Mar visible al fondo',
           caption: 'Hoyo 2. Pese a pasar la mayor parte de la ronda en lo alto de las montañas, fue la primera vez que el mar apareció en la vista. Camp del Mar al fondo. Una buena forma de terminar.',
         },
@@ -3836,7 +3836,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx - l'avis honnête d'un Professionnel PGA (2026)",
         description: "Golf de Andratx analysé par un Professionnel PGA qui l'a joué en mai 2026. Cadre montagneux, le par 5 le plus long d'Espagne, des trous tactiques tout au long du parcours et ce qu'il faut attendre de l'un des parcours les plus exigeants de Majorque.",
-        imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+        imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
         badge: 'Avis parcours',
@@ -3855,7 +3855,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-8.webp',
           alt: 'Vue depuis le trou 8 du Golf de Andratx sur tout le sud-ouest de Majorque',
           caption: "Trou 8, A Love of Mallorca. Depuis l'un des points les plus élevés du parcours, avec vue sur tout le sud-ouest de Majorque.",
         },
@@ -3881,7 +3881,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-4.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-4.webp',
           alt: 'Trou 4, Pine Valley, Golf de Andratx, eau entourant le green',
           caption: "Trou 4, Pine Valley. L'eau ne borde pas ce trou, elle l'entoure. Le green est incliné de façon à faire du bon chiffre à l'approche la priorité absolue.",
         },
@@ -3899,7 +3899,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-7.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-7.webp',
           alt: 'Coup de départ au trou 7 du Golf de Andratx avec des murs en pierre devant le green',
           caption: "Trou 7. Les murs en pierre bloquent la vue du green depuis le départ. On choisit une ligne et on s'engage sans voir où l'on va.",
         },
@@ -3909,7 +3909,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-15.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-15.webp',
           alt: 'Départ surélevé au trou 15, Hello Mrs Robinson, au Golf de Andratx',
           caption: "Trou 15, Hello Mrs Robinson. La chute depuis le départ fait jouer le trou environ 20 mètres plus court. Le contrôle des distances est tout l'enjeu ici.",
         },
@@ -3919,7 +3919,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.webp',
           alt: 'Trou 2 au Golf de Andratx avec Camp del Mar visible en arrière-plan',
           caption: "Trou 2. Malgré une grande partie de la partie passée en altitude dans les montagnes, c'était la première fois que la mer entrait dans le champ de vision. Camp del Mar en arrière-plan. Une belle note pour terminer.",
         },
@@ -3976,7 +3976,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx Review - De eerlijke kijk van een PGA Professional (2026)",
         description: "Golf de Andratx beoordeeld door een PGA Professional die er in mei 2026 speelde. Bergomgeving, de langste par 5 van Spanje, tactische holes door het hele parcours en wat je kunt verwachten van een van de uitdagendere banen op Mallorca.",
-        imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+        imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
         badge: 'Baan Review',
@@ -3995,7 +3995,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-8.webp',
           alt: 'Uitzicht vanaf hole 8 bij Golf de Andratx over het zuidwesten van Mallorca',
           caption: 'Hole 8, A Love of Mallorca. Vanaf een van de hoogste punten van de baan, met uitzicht over heel het zuidwesten van Mallorca.',
         },
@@ -4021,7 +4021,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-4.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-4.webp',
           alt: 'Hole 4, Pine Valley, Golf de Andratx, water rondom het green',
           caption: "Hole 4, Pine Valley. Het water grenst niet alleen aan dit hole, het omringt het. Het green helt zo dat het juiste metrage bij de benadering de hoofdzaak is.",
         },
@@ -4039,7 +4039,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-7.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-7.webp',
           alt: 'Afslag op hole 7 bij Golf de Andratx met stenen muren voor het green',
           caption: "Hole 7. De stenen muren blokkeren het zicht op het green vanaf de afslagplaats. Je kiest een lijn en slaat blind, zonder te zien waar je naartoe gaat.",
         },
@@ -4049,7 +4049,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-15.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-15.webp',
           alt: 'Verhoogde afslag op hole 15, Hello Mrs Robinson, bij Golf de Andratx',
           caption: "Hole 15, Hello Mrs Robinson. De daling vanaf de tee maakt dat het hole zo'n 20 meter korter speelt. Afstandscontrole is hier de enige uitdaging.",
         },
@@ -4059,7 +4059,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.webp',
           alt: 'Hole 2 bij Golf de Andratx met Camp del Mar zichtbaar op de achtergrond',
           caption: "Hole 2. Ondanks dat we het grootste deel van de ronde hoog in de bergen hadden doorgebracht, was dit de eerste keer dat de zee in beeld kwam. Camp del Mar op de achtergrond. Een mooie noot om op te eindigen.",
         },
@@ -4116,7 +4116,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx Recension - En PGA-professionals ärliga syn (2026)",
         description: "Golf de Andratx recenserad av en PGA-professional som spelade banan i maj 2026. Bergslandskap, längsta par 5 i Spanien, taktiska hål genomgående och vad man kan förvänta sig av en av Mallorcas mer utmanande banor.",
-        imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+        imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
         badge: 'Banrecension',
@@ -4135,7 +4135,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-8.webp',
           alt: 'Utsikt från hål 8 på Golf de Andratx ut över sydvästra Mallorca',
           caption: 'Hål 8, A Love of Mallorca. Från en av banans högsta punkter, med utsikt över hela sydvästra Mallorca.',
         },
@@ -4161,7 +4161,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-4.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-4.webp',
           alt: 'Hål 4, Pine Valley, Golf de Andratx, vatten som omger greenen',
           caption: 'Hål 4, Pine Valley. Vattnet kantar inte bara det här hålet, det omsluter det. Greenen lutar på ett sätt som gör att rätt distans vid inslaget är det som gäller.',
         },
@@ -4179,7 +4179,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-7.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-7.webp',
           alt: 'Avslag på hål 7 vid Golf de Andratx med stenväggar framför greenen',
           caption: 'Hål 7. Stenväggarns blockerar sikten mot greenen från avslagsplatsen. Man väljer en linje och genomför slaget utan att se vart man är på väg.',
         },
@@ -4189,7 +4189,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-15.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-15.webp',
           alt: 'Förhöjt avslag på hål 15, Hello Mrs Robinson, vid Golf de Andratx',
           caption: 'Hål 15, Hello Mrs Robinson. Fallet från avslagsplatsen gör att hålet spelar ungefär 20 yards kortare. Distanskontrollen är hela utmaningen här.',
         },
@@ -4199,7 +4199,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.webp',
           alt: 'Hål 2 på Golf de Andratx med Camp del Mar synlig i bakgrunden',
           caption: 'Hål 2. Trots att vi tillbringat större delen av rundan högt uppe i bergen var det här första gången havet kom i sikte. Camp del Mar i bakgrunden. En bra not att avsluta på.',
         },
@@ -4256,7 +4256,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx 球场评测 - PGA 职业教练的真实体验（2026）",
         description: "Golf de Andratx 由一位 2026 年 5 月亲自上场的 PGA 职业教练评测。山地环境、西班牙最长的五杆洞、全程战术性洞位，以及对马略卡（Mallorca）最具挑战性球场之一的真实评价。",
-        imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+        imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
         badge: '球场评测',
@@ -4275,7 +4275,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-8.webp',
           alt: '从 Golf de Andratx 第 8 洞俯瞰马略卡西南全景',
           caption: '第 8 洞，A Love of Mallorca。站在球场最高点之一，俯瞰马略卡西南部的全貌。',
         },
@@ -4301,7 +4301,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-4.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-4.webp',
           alt: 'Golf de Andratx 第 4 洞 Pine Valley，水障碍环绕果岭',
           caption: '第 4 洞，Pine Valley。水不只是在这个洞的边上，而是将其完全包围。果岭坡度设计使得进攻时选对距离成为第一优先级。',
         },
@@ -4319,7 +4319,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-7.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-7.webp',
           alt: 'Golf de Andratx 第 7 洞开球区，石墙挡住果岭视线',
           caption: '第 7 洞。石墙从开球台完全遮住了果岭。你选好线路，出手，看不到球落在哪里。',
         },
@@ -4329,7 +4329,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-15.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-15.webp',
           alt: 'Golf de Andratx 第 15 洞 Hello Mrs Robinson 高台开球区',
           caption: '第 15 洞，Hello Mrs Robinson。从开球台的落差让实际距离约短 20 码。距离控制是这个洞的全部挑战。',
         },
@@ -4339,7 +4339,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.webp',
           alt: 'Golf de Andratx 第 2 洞，背景可见 Camp del Mar',
           caption: '第 2 洞。尽管大部分球洞都在高山之中，这是整轮比赛第一次看到海。Camp del Mar 在远处。一个很好的收尾画面。',
         },
@@ -4405,10 +4405,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 const POST_IMAGE_PATCHES = {
   'son-gual-review': {
     insertions: [
-      // sg-clients-group.jpg: after sg-hero (index 1), before first heading
+      // sg-clients-group.webp: after sg-hero (index 1), before first heading
       {
         insertAfterIndex: 1,
-        src: '/images/son-gual-blog/sg-clients-group.jpg',
+        src: '/images/son-gual-blog/sg-clients-group.webp',
         alt: 'Golfers at Son Gual with Andy Griffiths',
         captions: {
           de: 'Ein Gruppenausflug im Januar. In England sind die Plätze geschlossen. Hier sehen die Fairways so aus.',
@@ -4419,10 +4419,10 @@ const POST_IMAGE_PATCHES = {
           zh: '一月份的团体日。在英国，球场都关门了。这里的球道就是这样。',
         },
       },
-      // sg-swing.jpg: after Wind paragraph (index 7), before pull quote
+      // sg-swing.webp: after Wind paragraph (index 7), before pull quote
       {
         insertAfterIndex: 7,
-        src: '/images/son-gual-blog/sg-swing.jpg',
+        src: '/images/son-gual-blog/sg-swing.webp',
         alt: 'Client hitting a tee shot at Son Gual',
         captions: {
           de: 'Es gibt genug Löcher, bei denen der Driver rauskommt. Mit Rückenwind ist es so gut wie es geht. Gegen den Wind plant man anders.',
@@ -4433,10 +4433,10 @@ const POST_IMAGE_PATCHES = {
           zh: '很多洞都需要一号木。顺风时是最好的感觉。逆风时，就要换一种思路。',
         },
       },
-      // sg-plane.jpg: after sg-3.webp (index 15), before Notable Visitors heading
+      // sg-plane.webp: after sg-3.webp (index 15), before Notable Visitors heading
       {
         insertAfterIndex: 15,
-        src: '/images/son-gual-blog/sg-plane.jpg',
+        src: '/images/son-gual-blog/sg-plane.webp',
         alt: 'Plane coming into Palma airport over Son Gual golf course',
         captions: {
           de: 'Die Bucht von Palma von den höher gelegenen Löchern. Löcher 8 bis 12 bieten die besten Ausblicke.',
@@ -4452,10 +4452,10 @@ const POST_IMAGE_PATCHES = {
 
   'alcanada-review': {
     insertions: [
-      // alc-7.jpg: hero image, insert before first paragraph (index -1 = prepend)
+      // alc-7.webp: hero image, insert before first paragraph (index -1 = prepend)
       {
         insertAfterIndex: -1,
-        src: '/images/alcanada-blog/alc-7.jpg',
+        src: '/images/alcanada-blog/alc-7.webp',
         alt: 'Club de Golf Alcanada at golden hour with lighthouse and bay',
         captions: {
           de: 'Alcanada zur goldenen Stunde. Der Leuchtturm steht auf einer kleinen Insel direkt vor der Küste und ist von 16 der 18 Löcher sichtbar.',
@@ -4466,10 +4466,10 @@ const POST_IMAGE_PATCHES = {
           zh: '黄金时刻的Alcanada球场。灯塔矗立在海岸附近的小岛上，从18个洞中的16个都能看到。',
         },
       },
-      // alc-6.jpg: after second Setting paragraph (index 3), before Back Tees heading
+      // alc-6.webp: after second Setting paragraph (index 3), before Back Tees heading
       {
         insertAfterIndex: 3,
-        src: '/images/alcanada-blog/alc-6.jpg',
+        src: '/images/alcanada-blog/alc-6.webp',
         alt: 'Client hitting a tee shot at Alcanada with lighthouse in the background',
         captions: {
           de: 'Der Leuchtturm hinter uns, das Meer links, das Fairway fällt nach vorn ab.',
@@ -4480,10 +4480,10 @@ const POST_IMAGE_PATCHES = {
           zh: '身后是灯塔，左侧是大海，球道向前延伸而去。',
         },
       },
-      // alc-2.jpg: after pull quote (index 6), before Greens heading
+      // alc-2.webp: after pull quote (index 6), before Greens heading
       {
         insertAfterIndex: 6,
-        src: '/images/alcanada-blog/alc-2.jpg',
+        src: '/images/alcanada-blog/alc-2.webp',
         alt: 'Alcanada green with sea and mountains visible behind',
         captions: {
           de: 'An einem klaren Morgen sieht man die Tramuntana über die Bucht.',
@@ -4494,10 +4494,10 @@ const POST_IMAGE_PATCHES = {
           zh: '晴朗的早晨可以看到海湾对面的特拉蒙塔纳山脉。',
         },
       },
-      // alc-5.jpg: after second Greens paragraph (index 9), before Rolex heading
+      // alc-5.webp: after second Greens paragraph (index 9), before Rolex heading
       {
         insertAfterIndex: 9,
-        src: '/images/alcanada-blog/alc-5.jpg',
+        src: '/images/alcanada-blog/alc-5.webp',
         alt: 'Golfers at Alcanada with the Mediterranean behind',
         captions: {
           de: 'Die hinteren Abschläge von Alcanada liegen weit über dem Fairway. Der Weg hinauf lohnt sich jedes Mal.',
@@ -4508,10 +4508,10 @@ const POST_IMAGE_PATCHES = {
           zh: 'Alcanada的后排发球台高于球道很多。每次爬上去都是值得的。',
         },
       },
-      // alc-1.jpg: after Rolex paragraph (index 11), before Design heading
+      // alc-1.webp: after Rolex paragraph (index 11), before Design heading
       {
         insertAfterIndex: 11,
-        src: '/images/alcanada-blog/alc-1.jpg',
+        src: '/images/alcanada-blog/alc-1.webp',
         alt: 'Rolex Grand Final at Alcanada hole 16',
         captions: {
           de: 'Das Rolex Challenge Tour Grand Final auf Alcanada. Im Oktober 2026 findet es zum sechsten Mal statt.',
@@ -4522,10 +4522,10 @@ const POST_IMAGE_PATCHES = {
           zh: '劳力士挑战赛巡回赛总决赛在Alcanada举行。2026年10月将迎来第六届。',
         },
       },
-      // alc-4.jpg: after Design paragraph (index 13), before facts
+      // alc-4.webp: after Design paragraph (index 13), before facts
       {
         insertAfterIndex: 13,
-        src: '/images/alcanada-blog/alc-4.jpg',
+        src: '/images/alcanada-blog/alc-4.webp',
         alt: 'Group of golfers at Alcanada on a summer evening',
         captions: {
           de: 'Eine Abendrunde im Sommer. Das Licht auf Alcanada im Juli ist etwas Besonderes.',
@@ -4536,10 +4536,10 @@ const POST_IMAGE_PATCHES = {
           zh: '夏日傍晚的一轮。七月份Alcanada的光线格外美。',
         },
       },
-      // alc-hero.jpg: after Restaurant paragraph (index 20), before Verdict heading
+      // alc-hero.webp: after Restaurant paragraph (index 20), before Verdict heading
       {
         insertAfterIndex: 20,
-        src: '/images/alcanada-blog/alc-hero.jpg',
+        src: '/images/alcanada-blog/alc-hero.webp',
         alt: 'Alcanada clubhouse terrace',
         captions: {
           de: 'Die Terrasse des Clubhauses.',
@@ -4555,10 +4555,10 @@ const POST_IMAGE_PATCHES = {
 
   'santa-ponsa-1-review': {
     insertions: [
-      // sp-hero.jpg: hero image, prepend before first paragraph
+      // sp-hero.webp: hero image, prepend before first paragraph
       {
         insertAfterIndex: -1,
-        src: '/images/santa-ponsa-blog/sp-hero.jpg',
+        src: '/images/santa-ponsa-blog/sp-hero.webp',
         alt: 'Golf Santa Ponsa 1 with water reflection and fairway',
         captions: {
           de: 'Das 16. Grün. Der See kommt bei der Annäherung ins Spiel und sorgt für ordentliche Konzentration.',
@@ -4569,10 +4569,10 @@ const POST_IMAGE_PATCHES = {
           zh: '第16洞果岭。进攻果岭时湖泊是障碍，大大考验注意力。',
         },
       },
-      // sp-1.jpg: after second "Why suits" paragraph (index 3), before 10th heading
+      // sp-1.webp: after second "Why suits" paragraph (index 3), before 10th heading
       {
         insertAfterIndex: 3,
-        src: '/images/santa-ponsa-blog/sp-1.jpg',
+        src: '/images/santa-ponsa-blog/sp-1.webp',
         alt: 'Santa Ponsa 1 fairway with mountains behind',
         captions: {
           de: 'Die Fairways sind breit. Das ist ein Platz, der den Driver einlädt.',
@@ -4583,10 +4583,10 @@ const POST_IMAGE_PATCHES = {
           zh: '球道宽阔。这是一个适合使用一号木的球场。',
         },
       },
-      // sp-2.jpg: after 10th hole paragraph (index 5), before European Tour heading
+      // sp-2.webp: after 10th hole paragraph (index 5), before European Tour heading
       {
         insertAfterIndex: 5,
-        src: '/images/santa-ponsa-blog/sp-2.jpg',
+        src: '/images/santa-ponsa-blog/sp-2.webp',
         alt: 'Santa Ponsa 1 course layout and fairways',
         captions: {
           de: 'Das Layout. An einem ruhigen Tag schmeichelt dieser Platz. Mit Wind verdient er jeden seiner Meter.',
@@ -4597,10 +4597,10 @@ const POST_IMAGE_PATCHES = {
           zh: '球场布局。平静的天气里这个球场会让你发挥得很好。加上风，它就值得每一码的长度。',
         },
       },
-      // sp-3.jpg: after European Tour paragraph (index 7), before Mountain Views heading
+      // sp-3.webp: after European Tour paragraph (index 7), before Mountain Views heading
       {
         insertAfterIndex: 7,
-        src: '/images/santa-ponsa-blog/sp-3.jpg',
+        src: '/images/santa-ponsa-blog/sp-3.webp',
         alt: 'Santa Ponsa 1 approach to a par 3',
         captions: {
           de: 'Das Tramuntana-Gebirge dahinter. Die Löcher 5, 6 und 7 bieten die besten Bergblicke.',
@@ -4611,10 +4611,10 @@ const POST_IMAGE_PATCHES = {
           zh: '身后是特拉蒙塔纳山脉。第5、6、7洞有最好的山景。',
         },
       },
-      // sp-5.jpg: after Mountain Views paragraph (index 9), before facts
+      // sp-5.webp: after Mountain Views paragraph (index 9), before facts
       {
         insertAfterIndex: 9,
-        src: '/images/santa-ponsa-blog/sp-5.jpg',
+        src: '/images/santa-ponsa-blog/sp-5.webp',
         alt: 'Andy Griffiths at Santa Ponsa 1 early morning',
         captions: {
           de: 'Früher Start. Bis zum späten Vormittag findet der Wind normalerweise seinen Weg auf den Platz.',

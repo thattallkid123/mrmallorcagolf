@@ -79,7 +79,7 @@ export const HOME_CONTENT = {
           stars: '★★★★★',
           difficulty: '9/10 Difficulty',
           excerpt: "Thomas Himmel's 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.",
-          img: '/images/son-gual.jpg',
+          img: '/images/son-gual.webp',
           href: '/guides/son-gual-review',
         },
         {
@@ -91,7 +91,7 @@ export const HOME_CONTENT = {
           stars: '★★★★★',
           difficulty: '7/10 Difficulty',
           excerpt: 'Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.',
-          img: '/images/alcanada.jpg',
+          img: '/images/alcanada.webp',
           href: '/guides/alcanada-review',
         },
         {
@@ -480,7 +480,7 @@ const HOME_OVERRIDES = {
           difficulty: 'Dificultad 9/10',
           excerpt:
             'El diseño de Thomas Himmel, de 2007, vive en su propio ecosistema de viento. El tramo final, del 15 al 18, está entre los mejores de Europa.',
-          img: '/images/son-gual.jpg',
+          img: '/images/son-gual.webp',
           href: '/guides/son-gual-review',
         },
         {
@@ -493,7 +493,7 @@ const HOME_OVERRIDES = {
           difficulty: 'Dificultad 7/10',
           excerpt:
             'Robert Trent Jones Jr. en su versión más escénica. El faro acompaña casi toda la vuelta y el entorno es de los más bonitos de España.',
-          img: '/images/alcanada.jpg',
+          img: '/images/alcanada.webp',
           href: '/guides/alcanada-review',
         },
         {
@@ -1644,7 +1644,7 @@ const HOME_FEATURED_COURSE_CONFIG = [
     stars: '★★★★★',
     difficulty: '9/10 Difficulty',
     excerpt: "Thomas Himmel's 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.",
-    img: '/images/son-gual.jpg',
+    img: '/images/son-gual.webp',
   },
   {
     courseName: 'Club de Golf Alcanada',
@@ -1656,7 +1656,7 @@ const HOME_FEATURED_COURSE_CONFIG = [
     stars: '★★★★★',
     difficulty: '7/10 Difficulty',
     excerpt: 'Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.',
-    img: '/images/alcanada.jpg',
+    img: '/images/alcanada.webp',
   },
   {
     courseName: 'Son Muntaner',

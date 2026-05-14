@@ -115,7 +115,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'is-mallorca-good-for-golf',
         badge: 'Guide',
-        img: '/images/blog-is-mallorca-good/Son Gual.jpg',
+        img: '/images/blog-is-mallorca-good/Son Gual.webp',
         imgPosition: 'center 40%',
         title: 'Is Mallorca Good for Golf? An Honest Answer from Someone Who Lives Here',
         intro:
@@ -126,7 +126,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'best-time-play-golf-mallorca',
         badge: 'Guide',
-        img: '/images/blog-best-time-play/Son Severa Sunny Golf.jpg',
+        img: '/images/blog-best-time-play/Son Severa Sunny Golf.webp',
         imgPosition: 'center 50%',
         title: 'The Best Time to Play Golf in Mallorca - Month by Month',
         intro:
@@ -148,7 +148,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'golf-trip-planning-mallorca',
         badge: 'Guide',
-        img: '/images/blog-trip-planning/Son Gual.jpg',
+        img: '/images/blog-trip-planning/Son Gual.webp',
         imgPosition: 'center 50%',
         title: 'Planning a Golf Trip to Mallorca - Everything You Need to Know',
         intro:
@@ -159,7 +159,7 @@ export const GUIDES_CONTENT = {
       {
         slug: 'golf-club-hire-mallorca',
         badge: 'Practical Guide',
-        img: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        img: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imgPosition: 'center 50%',
         title: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
         intro:

@@ -5,7 +5,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: 'Was kostet Golf auf Mallorca? Der komplette Preisüberblick 2026',
         description:
           'Was kostet Golf auf Mallorca 2026? Greenfees, Leihschläger, Buggies und Essen - der ehrliche Preisüberblick von einem PGA-Professional vor Ort.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: 'Was kostet Golf auf Mallorca? Der komplette Preisüberblick 2026',
       },
       meta: {
@@ -38,7 +38,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+          src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp',
           alt: 'Arabella Pitch and Putt',
           containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
           caption: 'Arabella Pitch & Putt - ideal für Anfänger',
@@ -62,7 +62,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/blog-golf-cost/Son Gual.jpg',
+          src: '/images/blog-golf-cost/Son Gual.webp',
           alt: 'Son Gual Golf Course',
           containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
           caption: 'Son Gual - Premiumplatz, 115-165 €',
@@ -102,7 +102,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/blog-golf-cost/T Golf Calvia Buggies.jpg',
+          src: '/images/blog-golf-cost/T Golf Calvia Buggies.webp',
           alt: 'Golf buggies in use',
           containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
           caption: 'Buggies kosten pro Runde meist 35-48 €',
@@ -142,7 +142,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: '¿Cuánto cuesta jugar al golf en Mallorca? Desglose completo 2026',
         description:
           '¿Cuánto cuesta jugar al golf en Mallorca en 2026? Greenfees, alquiler de palos, buggies y comida, explicado con claridad por un profesional PGA en la isla.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: '¿Cuánto cuesta jugar al golf en Mallorca? Desglose completo 2026',
       },
       meta: {
@@ -175,7 +175,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+          src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp',
           alt: 'Arabella Pitch and Putt',
           containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
           caption: 'Arabella Pitch & Putt - perfecto para empezar',
@@ -199,7 +199,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/blog-golf-cost/Son Gual.jpg',
+          src: '/images/blog-golf-cost/Son Gual.webp',
           alt: 'Son Gual Golf Course',
           containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
           caption: 'Son Gual - campo premium, 115-165 €',
@@ -239,7 +239,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/blog-golf-cost/T Golf Calvia Buggies.jpg',
+          src: '/images/blog-golf-cost/T Golf Calvia Buggies.webp',
           alt: 'Golf buggies in use',
           containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
           caption: 'Los buggies suelen costar 35-48 € por vuelta',
@@ -279,7 +279,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: 'Combien coûte le golf à Majorque ? Le vrai détail 2026',
         description:
           'Combien coûte le golf à Majorque en 2026 ? Green fees, location de clubs, voiturette et déjeuner, expliqués clairement par un professionnel PGA sur place.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: 'Combien coûte le golf à Majorque ? Le vrai détail 2026',
       },
       meta: {
@@ -302,13 +302,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Green fees' },
         { type: 'subheading', text: 'Budget (9 trous, pitch and putt)' },
         { type: 'paragraph', text: 'Environ €15-25. L\'Arabella Pitch & Putt à Palma est un vrai petit parcours dans le bas de l\'échelle tarifaire. Très bien pour les débutants, avec une ambiance détendue et sans pression, juste à côté des grands parcours Arabella.' },
-        { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.jpg', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - parfait pour débuter' },
+        { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - parfait pour débuter' },
         { type: 'subheading', text: 'Parcours 18 trous de milieu de gamme' },
         { type: 'paragraph', text: 'Environ €80-145 selon la saison. Son Termes à partir de €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145, Vall d\'Or €85-130. Ce sont de vrais parcours, en bon état, pas des options secondaires. Vérifiez toujours le site du club, car les tarifs évoluent selon la saison.' },
         { type: 'subheading', text: 'Parcours premium' },
         { type: 'paragraph', text: 'Son Gual varie d’environ €110 en basse saison à €165 aux pics de mars à mai et de septembre à novembre. Alcanada va d’environ €115 en basse saison à €220 au plus haut. Son Muntaner monte jusqu’à environ €250 et descend autour de €125 aux créneaux les moins chers. Ce sont les cartes tarifaires publiées pour 2026. Pour les parcours Arabella, mieux vaut vérifier le tarif du moment sur arabellagolfmallorca.com.' },
         { type: 'paragraph', text: 'Beaucoup de parcours pratiquent une tarification dynamique. Si vous cherchez un départ de dernière minute sur un parcours demandé, vous paierez plus cher. Réservez tôt, fixez vos priorités et vous économiserez un peu. Il vaut aussi la peine de surveiller les offres Black Friday, Noël et les packs multi-parcours. En faisant les choses correctement, on économise souvent 30-40 %.' },
-        { type: 'image', src: '/images/blog-golf-cost/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - parcours premium, €115-165' },
+        { type: 'image', src: '/images/blog-golf-cost/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - parcours premium, €115-165' },
         { type: 'pull', text: 'Son Gual a €165 reste moins cher qu\'un parcours equivalent en Angleterre. Les parcours de milieu de gamme ici offrent une vraie valeur selon les standards britanniques.' },
         { type: 'subheading', text: 'Les meilleurs mois côté rapport qualité-prix' },
         { type: 'paragraph', text: 'Janvier, fevrier et novembre restent de bons mois, mais la vraie baisse par rapport aux pics est souvent plus proche de 30-50 %. Les grandes periodes cheres et fortes sont surtout de mi-mars a debut juin puis de mi-septembre a mi-novembre.' },
@@ -318,7 +318,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Voiturettes et chariots' },
         { type: 'paragraph', text: 'Les voiturettes coûtent entre 35 et €48 selon le parcours. Son Gual facture €45, Alcanada €48 ; les modèles GPS donnent les distances et le plan du trou. Chariot manuel : €6-8. Chariot électrique : €14-25.' },
         { type: 'paragraph', text: 'Sur des parcours vallonnés comme Bendinat, Andratx ou Son Vida, la voiturette se justifie. Sur les parcours plus plats comme Son Antem, Maioris ou Santa Ponsa, un chariot suffit largement.' },
-        { type: 'image', src: '/images/blog-golf-cost/T Golf Calvia Buggies.jpg', alt: 'Golf buggies in use', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Les voiturettes coûtent en général €35-48 par partie' },
+        { type: 'image', src: '/images/blog-golf-cost/T Golf Calvia Buggies.webp', alt: 'Golf buggies in use', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Les voiturettes coûtent en général €35-48 par partie' },
         { type: 'heading', text: 'Restauration' },
         { type: 'paragraph', text: 'Une surprise régulière pour les visiteurs : on mange réellement bien. Le restaurant de Son Gual offre une vue sur la baie de Palma qui justifie un long déjeuner. La terrasse d\'Alcanada est l\'un des meilleurs endroits de l\'île après la partie. Très bonnes tables aussi à Andratx et Pula. Comptez €20-40 par personne.' },
         { type: 'heading', text: 'Exemples de budget sur une journée complète' },
@@ -338,7 +338,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: 'Wat kost golf op Mallorca? Het complete overzicht voor 2026',
         description:
           'Wat kost golf op Mallorca in 2026? Greenfees, clubhuur, buggys en lunch - het eerlijke kostenoverzicht van een PGA-professional op het eiland.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: 'Wat kost golf op Mallorca? Het complete overzicht voor 2026',
       },
       meta: {
@@ -361,13 +361,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Greenfees' },
         { type: 'subheading', text: 'Budget (negen holes, pitch and putt)' },
         { type: 'paragraph', text: 'Ongeveer €15-25. De Arabella Pitch & Putt in Palma is een echte korte baan aan de onderkant van de prijsschaal. Prima voor beginners, ontspannen van sfeer en handig dicht bij de grotere Arabella-banen.' },
-        { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.jpg', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - ideaal voor beginners' },
+        { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - ideaal voor beginners' },
         { type: 'subheading', text: '18-holesbanen in het middensegment' },
         { type: 'paragraph', text: 'Ongeveer €80-145 afhankelijk van het seizoen. Son Termes vanaf €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145 en Vall d\'Or €85-130. Dit zijn serieuze golfbanen in goede staat, geen bijzaak. Controleer altijd de website van de baan, want prijzen veranderen per seizoen.' },
         { type: 'subheading', text: 'Premiumbanen' },
         { type: 'paragraph', text: 'Son Gual loopt van ongeveer €110 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €250 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com.' },
         { type: 'paragraph', text: 'Veel banen werken met dynamische prijzen. Wie op het laatste moment een starttijd op een populaire baan wil, betaalt meestal meer. Plan vroeg, bepaal uw prioriteiten en bespaar geld. Het loont ook om te letten op Black Friday, kerstacties en combinatiedeals. Als u dat slim doet, bespaart u vaak 30-40 procent.' },
-        { type: 'image', src: '/images/blog-golf-cost/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - premiumbaan, €115-165' },
+        { type: 'image', src: '/images/blog-golf-cost/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - premiumbaan, €115-165' },
         { type: 'pull', text: 'Son Gual voor €165 is nog altijd minder dan een vergelijkbare baan in Engeland zou vragen. Het middensegment op Mallorca biedt naar Britse maatstaven sterke waarde.' },
         { type: 'subheading', text: 'Beste maanden voor prijs-kwaliteit' },
         { type: 'paragraph', text: 'Januari, februari en november. Op de meeste banen dalen de greenfees dan 20-30 procent ten opzichte van de piekprijzen, terwijl de banen nog steeds in uitstekende staat zijn. De drukste en duurste periodes zijn maart-mei en september-november, en juist dan zijn de omstandigheden ook op hun best.' },
@@ -377,7 +377,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Buggys en trolleys' },
         { type: 'paragraph', text: 'Golfbuggys kosten €35-48 afhankelijk van de baan. Son Gual vraagt €45, Alcanada €48. De GPS-modellen geven afstanden en holekaarten. Trektrolley: €6-8. Elektrische trolley: €14-25.' },
         { type: 'paragraph', text: 'Op heuvelachtige banen zoals Bendinat, Andratx of Son Vida verdient een buggy zichzelf terug. Op vlakkere banen zoals Son Antem, Maioris of Santa Ponsa is een trolley meestal genoeg.' },
-        { type: 'image', src: '/images/blog-golf-cost/T Golf Calvia Buggies.jpg', alt: 'Golf buggies in use', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Buggys kosten meestal €35-48 per ronde' },
+        { type: 'image', src: '/images/blog-golf-cost/T Golf Calvia Buggies.webp', alt: 'Golf buggies in use', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Buggys kosten meestal €35-48 per ronde' },
         { type: 'heading', text: 'Eten en drinken' },
         { type: 'paragraph', text: 'Een terugkerende verrassing voor bezoekers: het eten is echt goed. Het restaurant van Son Gual kijkt uit over de baai van Palma en rechtvaardigt een lange lunch. Het terras van Alcanada is een van de beste plekken van het eiland na de ronde. Ook Andratx en Pula hebben sterke restaurants. Reken op €20-40 per persoon.' },
         { type: 'heading', text: 'Voorbeeldkosten voor een volledige dag' },
@@ -397,7 +397,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: 'Vad kostar golf på Mallorca? Den fullständiga översikten 2026',
         description:
           'Vad kostar golf på Mallorca 2026? Greenfee, klubbhyror, buggy och lunch - en rak kostnadsbild från ett PGA-proffs på ön.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: 'Vad kostar golf på Mallorca? Den fullständiga översikten 2026',
       },
       meta: {
@@ -420,13 +420,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Greenfee' },
         { type: 'subheading', text: 'Budget (nio hal, pitch and putt)' },
         { type: 'paragraph', text: 'Ungefär €15-25. Arabella Pitch & Putt i Palma är en riktig kortbana i den lägre prisnivån. Bra för nybörjare, med låg press och dessutom praktiskt nära de större Arabella-banorna i samma område.' },
-        { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.jpg', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - perfekt för nybörjare' },
+        { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - perfekt för nybörjare' },
         { type: 'subheading', text: '18-halsbanor i mellansegmentet' },
         { type: 'paragraph', text: 'Cirka €80-145 beroende på säsong. Son Termes från €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145 och Vall d\'Or €85-130. Det här är riktiga golfbanor i bra skick, inte bara reservval. Kontrollera alltid banans webbplats eftersom priserna ändras med säsongen.' },
         { type: 'subheading', text: 'Premiumbanor' },
         { type: 'paragraph', text: 'Son Gual ligger mellan ungefär €110 i lågsäsong och €165 i toppperioderna mars till maj samt september till november. Alcanada går från ungefär €115 i lågsäsong till €220 när det är som dyrast. Son Muntaner går upp till ungefär €250 och ned till cirka €125 på de billigaste tiderna. Det här är publicerade 2026-priser. Kontrollera aktuella Arabella-priser på arabellagolfmallorca.com.' },
         { type: 'paragraph', text: 'Många banor har dynamisk prissättning. Försöker man få en sen tee time på en populär bana betalar man oftast mer. Planera tidigt, välj vad som är viktigt och spara pengar. Det är också värt att hålla koll på Black Friday, julkampanjer och paketerbjudanden. Gör man det rätt går det ofta att spara 30-40 procent.' },
-        { type: 'image', src: '/images/blog-golf-cost/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - premiumbana, €115-165' },
+        { type: 'image', src: '/images/blog-golf-cost/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - premiumbana, €115-165' },
         { type: 'pull', text: 'Son Gual för €165 är billigare än vad en likvärdig bana i England ofta skulle ta. Mellanklassen här ger bra värde med brittiska mått mätt.' },
         { type: 'subheading', text: 'Manader med bast varde' },
         { type: 'paragraph', text: 'Januari, februari och november. Greenfeen på de flesta banor ligger då 20-30 procent under toppnivåerna, och banorna är fortfarande i mycket gott skick. De stora perioderna är mars till maj och september till november - flest spelare, högst priser och bäst förhållanden.' },
@@ -436,7 +436,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Buggy och trolley' },
         { type: 'paragraph', text: 'Golfbuggy kostar €35-48 beroende på bana. Son Gual tar €45, Alcanada €48. GPS-modellerna ger avstånd och hålkartor. Dragvagn: €6-8. Elektrisk trolley: €14-25.' },
         { type: 'paragraph', text: 'På kuperade banor som Bendinat, Andratx eller Son Vida är buggy värd pengarna. På plattare banor som Son Antem, Maioris eller Santa Ponsa räcker en trolley gott.' },
-        { type: 'image', src: '/images/blog-golf-cost/T Golf Calvia Buggies.jpg', alt: 'Golf buggies in use', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Buggy kostar vanligtvis €35-48 per rond' },
+        { type: 'image', src: '/images/blog-golf-cost/T Golf Calvia Buggies.webp', alt: 'Golf buggies in use', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Buggy kostar vanligtvis €35-48 per rond' },
         { type: 'heading', text: 'Mat och dryck' },
         { type: 'paragraph', text: 'En återkommande överraskning för besökare är att maten faktiskt är riktigt bra. Restaurangen på Son Gual har utsikt över Palmabukten som motiverar en lång lunch. Terrassen på Alcanada är en av de bästa platserna på ön efter rundan. Även Andratx och Pula har starka alternativ. Räkna med €20-40 per person.' },
         { type: 'heading', text: 'Exempel på kostnad för en heldag' },
@@ -456,7 +456,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: '马略卡打高尔夫要花多少钱？2026完整费用解析',
         description:
           '2026年马略卡高尔夫真实费用解析：果岭费、租杆、球车、午餐，以及哪些地方值得花钱，哪些地方可以省。',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: '马略卡打高尔夫要花多少钱？2026完整费用解析',
       },
       meta: {
@@ -479,13 +479,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: '果岭费' },
         { type: 'subheading', text: '预算级选择：9洞短杆场 / Pitch & Putt' },
         { type: 'paragraph', text: '约€15-25（约¥120-200）。Palma的Arabella Pitch & Putt是真正意义上的短杆场，价格位于最低区间。对初学者很友好，压力小，而且离Arabella那几座大场很近。' },
-        { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.jpg', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt，适合刚开始打球的人' },
+        { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt，适合刚开始打球的人' },
         { type: 'subheading', text: '中档18洞球场' },
         { type: 'paragraph', text: '大约€80-145（约¥620-1,130），具体取决于季节。Son Termes从€85起，Bendinat €75-125，Capdepera €85-135，Canyamel €65-145，Son Servera €80-145，Vall d\'Or €85-130。这些都是真正值得打的球场，不是随便凑数的选择。价格会按季节变化，最好直接看球场官网。' },
         { type: 'subheading', text: '高端球场' },
         { type: 'paragraph', text: 'Son Gual淡季约€110（约¥860），高峰期€165（约¥1,290）；高峰期通常是3-5月以及9-11月。Alcanada淡季约€115，高峰期€220（约¥1,720）。Son Muntaner最高约€250，最低价位约€125。这些都是公开的2026年价格。Arabella旗下价格建议直接去arabellagolfmallorca.com确认。' },
         { type: 'paragraph', text: '很多球场采用动态定价。如果你在热门时段临时订热门球场，价格通常会更高。提前规划、先想清楚自己最看重什么，能省下一笔。Black Friday、圣诞节和多轮套餐有时很值得看，做得对的话，经常可以省下30%-40%。' },
-        { type: 'image', src: '/images/blog-golf-cost/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual，高端球场，€115-165' },
+        { type: 'image', src: '/images/blog-golf-cost/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual，高端球场，€115-165' },
         { type: 'pull', text: 'Son Gual高峰期€165，放到英国同级别球场并不算贵。马略卡中档球场的性价比，其实相当强。' },
         { type: 'subheading', text: '最划算的月份' },
         { type: 'paragraph', text: '1月、2月和11月通常最划算。多数球场的果岭费会比高峰期低20%-30%，而球场状态依旧很好。最旺的时间是3-5月和9-11月：价格最高、人也最多，但球场条件也最好。' },
@@ -495,7 +495,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: '球车与手推车' },
         { type: 'paragraph', text: '球车一般€35-48（约¥270-375）。Son Gual是€45，Alcanada是€48。带GPS的车型会给你距离和球洞地图。普通手推车€6-8，电动手推车€14-25。' },
         { type: 'paragraph', text: '像Bendinat、Andratx、Son Vida这种起伏比较大的球场，坐球车是值得的。像Son Antem、Maioris、Santa Ponsa这些相对平一点的球场，手推车就够了。' },
-        { type: 'image', src: '/images/blog-golf-cost/T Golf Calvia Buggies.jpg', alt: 'Golf buggies in use', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: '一轮球的球车费用通常在€35-48之间' },
+        { type: 'image', src: '/images/blog-golf-cost/T Golf Calvia Buggies.webp', alt: 'Golf buggies in use', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: '一轮球的球车费用通常在€35-48之间' },
         { type: 'heading', text: '餐饮' },
         { type: 'paragraph', text: '很多游客会低估一点：马略卡球场餐厅普遍做得不错。Son Gual餐厅可以看到Palma海湾，值得慢慢吃一顿午饭。Alcanada的露台也是岛上非常好的赛后用餐地点。Andratx和Pula的餐也都不错。预算大概€20-40/人（约¥160-310）。' },
         { type: 'heading', text: '整天打球的大致预算' },
@@ -514,7 +514,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Planifier un voyage de golf à Majorque',
         description: 'Quand venir, quels parcours prioriser, combien de parties jouer, comment se deplacer et quoi faire hors du golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Planifier un voyage de golf à Majorque',
       },
       meta: {
@@ -541,7 +541,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Une partie par jour convient à la plupart des golfeurs. Les parcours demandent de l\'énergie et la chaleur estivale est réelle. Sur les mois plus frais, 36 trous dans la journée sont possibles, mais la plupart des visiteurs venus uniquement pour le golf jouent quatre à cinq parties sur un séjour de cinq à sept jours.' },
         { type: 'heading', text: 'Quels parcours prioriser' },
         { type: 'paragraph', text: 'Pour un golfeur sérieux avec peu de temps : Son Gual et Alcanada. Si je n\'avais qu\'une semaine et seulement deux parties, ce seraient mes deux choix.' },
-        { type: 'image', src: '/images/blog-trip-planning/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - incontournable pour un golfeur exigeant' },
+        { type: 'image', src: '/images/blog-trip-planning/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - incontournable pour un golfeur exigeant' },
         { type: 'paragraph', text: 'Pour une sensation DP World Tour : Son Muntaner du groupe Arabella. A cinq minutes de Palma et elu meilleur parcours d\'Espagne en 2025.' },
         { type: 'paragraph', text: 'Pour la cote est et un cadre fort : Canyamel et Pula. Ideal en le combinant avec une nuit a Arta ou a Capdepera.' },
         { type: 'paragraph', text: 'Le test le plus dur : Golf de Andratx, dans le sud-ouest.' },
@@ -554,11 +554,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Si vous jouez trois parties ou plus sur un vrai séjour golf, prenez vos propres clubs. Pour des vacances mixtes avec une ou deux parties, la location est souvent plus logique. Dans le guide dédié à la location, je donne les entreprises qui livrent correctement et vous évitent de traîner un travel bag dans tout l\'aéroport.' },
         { type: 'heading', text: 'Que faire en dehors du golf' },
         { type: 'paragraph', text: 'La vieille ville de Palma vaut vraiment le temps. La côte nord-ouest avec Valldemossa, Deià et Sóller offre certains des paysages les plus frappants de Méditerranée. Le nord-est est plus calme et plus sauvage. Et entre la cuisine, les poissons locaux et les vins de l\'île, on mange très bien.' },
-        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.jpg', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'La vieille ville de Palma mérite une journée hors du parcours', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
+        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.webp', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'La vieille ville de Palma mérite une journée hors du parcours', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
         { type: 'paragraph', text: 'Un voyage golf sans au moins un long déjeuner dans un endroit inattendu ne fait que la moitié du travail. Laissez-vous un après-midi sans tee time et allez voir l\'île. Le golf est la raison de venir ; le reste est ce qui donne envie de revenir.' },
         { type: 'splitImages', items: [
           { src: '/images/blog-trip-planning/Valldemossa.avif', alt: 'Valldemossa', caption: 'Valldemossa - bonne option pour un après-midi sans golf', aspectRatio: '4/3' },
-          { src: '/images/blog-trip-planning/Soller.jpeg', alt: 'Deia', caption: 'Deia - parfois meilleur choix qu\'une partie de plus', aspectRatio: '4/3' },
+          { src: '/images/blog-trip-planning/Soller.webp', alt: 'Deia', caption: 'Deia - parfois meilleur choix qu\'une partie de plus', aspectRatio: '4/3' },
         ] },
         { type: 'cta', text: 'Vous voulez que le voyage soit monte proprement - parcours, departs, restaurants, transport et accompagnement PGA ?', linkLabel: 'Voir l\'experience play-with-a-pro →', href: '/play-with-a-pro' },
       ],
@@ -567,7 +567,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Een golfreis naar Mallorca plannen',
         description: 'Wanneer komen, welke banen prioriteit geven, hoeveel rondes spelen, hoe u zich verplaatst en wat u buiten golf doet.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Een golfreis naar Mallorca plannen',
       },
       meta: {
@@ -594,7 +594,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Een ronde per dag is voor de meeste golfers ideaal. De banen vragen wat van u en de zomerhitte is echt. In koelere maanden zijn 36 holes op een dag mogelijk, maar de meeste golfreizigers spelen vier tot vijf rondes tijdens een trip van vijf tot zeven dagen.' },
         { type: 'heading', text: 'Welke banen prioriteit hebben' },
         { type: 'paragraph', text: 'Voor serieuze golfers met weinig tijd: Son Gual en Alcanada. Als ik maar een week en twee rondes had, waren dat mijn twee keuzes.' },
-        { type: 'image', src: '/images/blog-trip-planning/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - verplichte baan voor de serieuze golfer' },
+        { type: 'image', src: '/images/blog-trip-planning/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - verplichte baan voor de serieuze golfer' },
         { type: 'paragraph', text: 'Voor een DP World Tour-gevoel: Son Muntaner van Arabella. Vijf minuten van Palma en in 2025 uitgeroepen tot beste golfbaan van Spanje.' },
         { type: 'paragraph', text: 'Voor de mooie oostkust: Canyamel en Pula. Ideaal te combineren met een nacht in Arta of Capdepera.' },
         { type: 'paragraph', text: 'De zwaarste test: Golf de Andratx in het zuidwesten.' },
@@ -607,11 +607,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Speelt u drie rondes of meer op een echte golfreis, neem dan uw eigen clubs mee. Voor een gemengde vakantie met een of twee rondes is huren vaak logischer. In de clubhuurgids noem ik de bedrijven die betrouwbaar leveren en u het gesjouw met een travel bag op de luchthaven besparen.' },
         { type: 'heading', text: 'Wat u verder moet doen' },
         { type: 'paragraph', text: 'De oude stad van Palma is echt de moeite waard. De noordwestkust met Valldemossa, Deia en Soller heeft sommige van de mooiste landschappen van de Middellandse Zee. Het noordoosten is rustiger en ruiger. En qua eten, lokale vis en eilandwijnen zit Mallorca sterk in elkaar.' },
-        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.jpg', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palma verdient een dag buiten de golfbaan', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
+        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.webp', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palma verdient een dag buiten de golfbaan', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
         { type: 'paragraph', text: 'Een golfreis zonder minstens een lange lunch op een onverwachte plek doet maar de helft goed. Laat een middag open zonder tee time en verken het eiland. Golf is de reden om te komen; de rest is de reden waarom mensen terug willen.' },
         { type: 'splitImages', items: [
           { src: '/images/blog-trip-planning/Valldemossa.avif', alt: 'Valldemossa', caption: 'Valldemossa - goede keuze voor een golfvrije middag', aspectRatio: '4/3' },
-          { src: '/images/blog-trip-planning/Soller.jpeg', alt: 'Deia', caption: 'Deia - soms beter dan nog een extra ronde', aspectRatio: '4/3' },
+          { src: '/images/blog-trip-planning/Soller.webp', alt: 'Deia', caption: 'Deia - soms beter dan nog een extra ronde', aspectRatio: '4/3' },
         ] },
         { type: 'cta', text: 'Wilt u dat de reis goed wordt geregeld - banen, tee times, restaurants, vervoer en professionele begeleiding?', linkLabel: 'Bekijk de play-with-a-pro ervaring →', href: '/play-with-a-pro' },
       ],
@@ -620,7 +620,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Planera en golfresa till Mallorca',
         description: 'När man ska åka, vilka banor man ska prioritera, hur många rundor som är rimliga och hur man rör sig runt på ön.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Planera en golfresa till Mallorca',
       },
       meta: {
@@ -647,7 +647,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'En rond per dag passar de flesta. Banorna kräver energi och sommarhettan är verklig. Under svalare månader kan man spela 36 hål på en dag, men de flesta rena golfresenärer spelar fyra till fem rundor under en resa på fem till sju dagar.' },
         { type: 'heading', text: 'Vilka banor man ska prioritera' },
         { type: 'paragraph', text: 'För seriöst golfspel med begränsad tid: Son Gual och Alcanada. Om jag bara hade en vecka och två rundor skulle det vara de två.' },
-        { type: 'image', src: '/images/blog-trip-planning/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - måste för den seriösa golfaren' },
+        { type: 'image', src: '/images/blog-trip-planning/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - måste för den seriösa golfaren' },
         { type: 'paragraph', text: 'För DP World Tour-känsla: Son Muntaner från Arabella. Fem minuter från Palma och utsedd till Spaniens bästa golfbana 2025.' },
         { type: 'paragraph', text: 'För ostkustens natur: Canyamel och Pula. Kombinera gärna med en natt i Artà eller Capdepera.' },
         { type: 'paragraph', text: 'Den tuffaste testen: Golf de Andratx i sydväst.' },
@@ -660,11 +660,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Spelar du tre rundor eller fler på en ren golfresa, ta med dina egna klubbor. För en blandad semester med en eller två rundor är hyrning ofta smartare. I min guide om klubbhyra pekar jag ut företag som levererar bra och sparar dig släpandet av en travel bag genom flygplatsen.' },
         { type: 'heading', text: 'Vad man ska göra utöver golfen' },
         { type: 'paragraph', text: 'Gamla stan i Palma är faktiskt riktigt bra. Nordvästkusten med Valldemossa, Deià och Sóller har några av Medelhavets starkaste landskap. Nordost är lugnare och vildare. Och maten, fisken och ö-vinerna håller genomgående hög nivå.' },
-        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.jpg', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palma är värd en dag utan golf', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
+        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.webp', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palma är värd en dag utan golf', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
         { type: 'paragraph', text: 'En golfresa utan minst en lång lunch på en plats man inte hade planerat in gör bara halva jobbet. Lämna en eftermiddag utan tee time och se lite av ön. Golfen är anledningen att komma hit. Resten är anledningen att vilja komma tillbaka.' },
         { type: 'splitImages', items: [
           { src: '/images/blog-trip-planning/Valldemossa.avif', alt: 'Valldemossa', caption: 'Valldemossa - perfekt för en eftermiddag utan golf', aspectRatio: '4/3' },
-          { src: '/images/blog-trip-planning/Soller.jpeg', alt: 'Deià', caption: 'Deià - ibland ett bättre val än ännu en rond', aspectRatio: '4/3' },
+          { src: '/images/blog-trip-planning/Soller.webp', alt: 'Deià', caption: 'Deià - ibland ett bättre val än ännu en rond', aspectRatio: '4/3' },
         ] },
         { type: 'cta', text: 'Vill du att resan ska sitta ihop ordentligt - banor, tee times, restauranger, transport och professionell guidning?', linkLabel: 'Se play-with-a-pro-upplevelsen →', href: '/play-with-a-pro' },
       ],
@@ -673,7 +673,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '如何规划马略卡高尔夫之旅',
         description: '什么时候来、先打哪些球场、打几轮最合理、怎么出行，以及不打球的时候该做什么。',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: '如何规划马略卡高尔夫之旅',
       },
       meta: {
@@ -700,7 +700,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '多数人一天打一轮最舒服。这里不少球场有强度，夏天的热也是真实存在的。天气凉的时候，一天36洞当然可以，但大多数纯高尔夫游客在5到7天的行程里会打4到5轮。' },
         { type: 'heading', text: '优先打哪些球场' },
         { type: 'paragraph', text: '如果你球打得认真、时间又有限，优先Son Gual和Alcanada。如果我在岛上只有一周、只打两轮，我就选这两个。' },
-        { type: 'image', src: '/images/blog-trip-planning/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual，认真打球的人基本都会排进去' },
+        { type: 'image', src: '/images/blog-trip-planning/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual，认真打球的人基本都会排进去' },
         { type: 'paragraph', text: '如果想要DP World Tour那种比赛级体验，去Son Muntaner。离Palma只有几分钟车程，而且拿过2025年西班牙最佳球场。' },
         { type: 'paragraph', text: '如果想打风景更强的东海岸球场，选Canyamel和Pula，最好顺便在Arta或Capdepera住一晚。' },
         { type: 'paragraph', text: '如果你想找最硬的考试，去Golf de Andratx。' },
@@ -713,11 +713,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '如果是专门来打球，而且会打三轮以上，我建议带自己的杆。如果是混合型假期，只安排一两轮，租杆通常更省事。我在租杆指南里写了几家值得用的公司，能直接送到酒店或球场，比拖着球包过机场轻松得多。' },
         { type: 'heading', text: '不打球的时候做什么' },
         { type: 'paragraph', text: 'Palma老城值得认真花时间。西北海岸的Valldemossa、Deia、Soller属于地中海很有代表性的风景带。东北部更安静，也更野一点。再加上当地海鲜、岛上葡萄酒和整体餐饮水平，马略卡并不是只有球场。' },
-        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.jpg', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palma老城值得安排出一个完整半天甚至一天', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
+        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.webp', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palma老城值得安排出一个完整半天甚至一天', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
         { type: 'paragraph', text: '一趟高尔夫旅行，如果没有至少一顿慢慢吃的午餐、没有留出一段不赶球场的时间，其实只做对了一半。高尔夫是你来这里的原因，但岛上其他部分会决定你想不想再回来。' },
         { type: 'splitImages', items: [
           { src: '/images/blog-trip-planning/Valldemossa.avif', alt: 'Valldemossa', caption: 'Valldemossa，很适合安排在不打球的下午', aspectRatio: '4/3' },
-          { src: '/images/blog-trip-planning/Soller.jpeg', alt: 'Deia', caption: 'Deia，有时候比再多打一轮更值得', aspectRatio: '4/3' },
+          { src: '/images/blog-trip-planning/Soller.webp', alt: 'Deia', caption: 'Deia，有时候比再多打一轮更值得', aspectRatio: '4/3' },
         ] },
         { type: 'cta', text: '如果您想把球场、开球时间、餐厅、交通和全程安排一起做好，也可以直接加微信咨询：andygriffiths1。', linkLabel: '查看与职业球手同场体验 →', href: '/play-with-a-pro' },
       ],
@@ -726,7 +726,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'La meilleure période pour jouer au golf à Majorque',
         description: 'Mois par mois : météo, tarifs, état des parcours et quand Majorque offre sa meilleure version pour le golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'La meilleure période pour jouer au golf à Majorque',
       },
       meta: {
@@ -750,7 +750,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Plus calme, moins cher et souvent meilleur que prévu. Environ 12-16 degrés. Les parcours sont très solides, et les fairways de janvier ici peuvent être meilleurs que ceux de nombreuses régions d\'Europe du Nord en pleine saison. Très bon moment pour le rapport qualité-prix.' },
         { type: 'heading', text: 'Mars-avril' },
         { type: 'paragraph', text: '16-20 degrés, parcours en grande forme après un hiver doux, moins de groupes qu\'en été. Les green fees montent, mais pas encore au sommet. Pour beaucoup de visiteurs, c\'est la réponse la plus sûre.' },
-        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.jpg', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Mars-avril : très bonnes conditions et un peu plus d\'espace' },
+        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.webp', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Mars-avril : très bonnes conditions et un peu plus d\'espace' },
         { type: 'heading', text: 'Mai-juin' },
         { type: 'paragraph', text: 'Très bonne météo pour le golf, longues soirées et parcours en excellent état. Les tarifs montent avec la saison touristique. Si vous voulez du beau temps sans la lourdeur de l\'été, cela fonctionne très bien.' },
         { type: 'heading', text: 'Juillet-août' },
@@ -759,7 +759,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Septembre-octobre' },
         { type: 'paragraph', text: 'Ma fenêtre préférée. Les températures redescendent, les parcours se remettent de l\'été et les conditions deviennent excellentes. Les prix restent élevés, mais si vous me demandez quand je viendrais moi-même jouer, c\'est cette période.' },
         { type: 'paragraph', text: 'Alcanada accueille en octobre 2026 la Rolex Challenge Tour Grand Final. C\'est utile à savoir si vous voulez voir du très bon golf ou comprendre pourquoi cette partie de l\'année est si forte.' },
-        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.jpg', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Octobre : conditions haut de gamme et calendrier fort' },
+        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.webp', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Octobre : conditions haut de gamme et calendrier fort' },
         { type: 'heading', text: 'Novembre-décembre' },
         { type: 'paragraph', text: 'Novembre est sous-estimé. Plus calme, meilleur rapport qualité-prix et encore beaucoup de journées bleues. Décembre devient un peu plus variable, mais reste une très bonne option pour les joueurs flexibles.' },
         { type: 'heading', text: 'Verdict' },
@@ -771,7 +771,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'De beste tijd om golf te spelen op Mallorca',
         description: 'Maand voor maand: weer, prijzen, baancondities en wanneer Mallorca op zijn best is voor golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'De beste tijd om golf te spelen op Mallorca',
       },
       meta: {
@@ -795,7 +795,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Rustiger, goedkoper en vaak verrassend goed. Ongeveer 12-16 graden. De banen liggen er sterk bij, en fairways in januari zien er hier vaak beter uit dan in veel delen van Noord-Europa midden in het seizoen. Sterk waardemoment.' },
         { type: 'heading', text: 'Maart-april' },
         { type: 'paragraph', text: '16-20 graden, banen in goede vorm na een zachte winter, minder groepen dan in de zomer. Greenfees lopen op, maar zitten nog niet op hun piek. Voor veel bezoekers is dit het veilige antwoord.' },
-        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.jpg', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Maart-april: sterke omstandigheden en nog wat ruimte' },
+        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.webp', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Maart-april: sterke omstandigheden en nog wat ruimte' },
         { type: 'heading', text: 'Mei-juni' },
         { type: 'paragraph', text: 'Zeer goed golfweer, lange avonden en banen in uitstekende conditie. De prijzen stijgen met het toeristenseizoen mee. Als u goed weer wilt zonder de volle zomerhitte, werkt dit uitstekend.' },
         { type: 'heading', text: 'Juli-augustus' },
@@ -804,7 +804,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'September-oktober' },
         { type: 'paragraph', text: 'Mijn favoriete venster. De temperatuur zakt, de banen herstellen van de zomer en de omstandigheden worden uitstekend. De prijzen blijven hoog, maar als u mij vraagt wanneer ik zelf zou komen spelen, dan is dit het.' },
         { type: 'paragraph', text: 'Alcanada ontvangt in oktober 2026 de Rolex Challenge Tour Grand Final. Handig om te weten als u topgolf wilt zien of gewoon wilt begrijpen waarom dit deel van het jaar zo sterk is.' },
-        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.jpg', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Oktober: topcondities en een sterke golfmaand' },
+        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.webp', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Oktober: topcondities en een sterke golfmaand' },
         { type: 'heading', text: 'November-december' },
         { type: 'paragraph', text: 'November wordt onderschat. Rustiger, betere waarde en nog steeds veel blauwe dagen. December wordt iets wisselvalliger, maar voor flexibele golfers kan het nog steeds heel goed werken.' },
         { type: 'heading', text: 'Oordeel' },
@@ -816,7 +816,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Bästa tiden att spela golf på Mallorca',
         description: 'Månad för månad: väder, priser, banförhållanden och när Mallorca är som bäst för golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'Bästa tiden att spela golf på Mallorca',
       },
       meta: {
@@ -840,7 +840,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Lugnare, billigare och ofta överraskande bra. Runt 12-16 grader. Banorna är i fint skick, och fairways i januari ser här ofta bättre ut än i många delar av norra Europa mitt i säsong. Stark period för värde.' },
         { type: 'heading', text: 'Mars-april' },
         { type: 'paragraph', text: '16-20 grader, banor i bra form efter en mild vinter, mindre trängsel än på sommaren. Greenfeen stiger men är inte på toppnivå. För många besökare är det här det säkra svaret.' },
-        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.jpg', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Mars-april: starka förhållanden och lite mer plats' },
+        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.webp', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Mars-april: starka förhållanden och lite mer plats' },
         { type: 'heading', text: 'Maj-juni' },
         { type: 'paragraph', text: 'Mycket bra golfväder, långa kvällar och banor i toppskick. Priserna stiger med turistsäsongen. Vill du ha bra väder utan den tyngsta sommarhettan fungerar det mycket bra.' },
         { type: 'heading', text: 'Juli-augusti' },
@@ -849,7 +849,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'September-oktober' },
         { type: 'paragraph', text: 'Min favoritperiod. Temperaturen sjunker, banorna återhämtar sig efter sommaren och förhållandena blir riktigt starka. Priserna är fortfarande höga, men om du frågar när jag själv skulle komma hit för att spela, är det nu.' },
         { type: 'paragraph', text: 'Alcanada står värd för Rolex Challenge Tour Grand Final i oktober 2026. Bra att veta om du vill se toppgolf eller bara förstå varför just den delen av året är så stark.' },
-        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.jpg', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Oktober: toppförhållanden och stark golfmånad' },
+        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.webp', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Oktober: toppförhållanden och stark golfmånad' },
         { type: 'heading', text: 'November-december' },
         { type: 'paragraph', text: 'November är underskattad. Lugnare, bättre värde och fortfarande många blå dagar. December blir lite mer varierande, men för flexibla spelare kan det fortfarande vara mycket bra.' },
         { type: 'heading', text: 'Omdöme' },
@@ -861,7 +861,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '马略卡打高尔夫的最佳时间',
         description: '按月份看天气、价格、球场状态，以及什么时候来马略卡打球最舒服、最值得。',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: '马略卡打高尔夫的最佳时间',
       },
       meta: {
@@ -885,7 +885,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '更安静、更便宜，而且经常比预期更好。大约12-16摄氏度。球场整体状态通常很不错，这里1月的球道，有时看起来比北欧很多地区旺季时还整齐。如果你想控制预算，这是很好的窗口。' },
         { type: 'heading', text: '3月-4月' },
         { type: 'paragraph', text: '16-20摄氏度，经过温和冬季后球场状态很强，场上也没有夏天那么挤。果岭费会开始往上走，但还没到顶。这对很多游客来说，是最稳妥的答案。' },
-        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.jpg', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: '3月-4月：球场状态强，场上也还留有空间' },
+        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.webp', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: '3月-4月：球场状态强，场上也还留有空间' },
         { type: 'heading', text: '5月-6月' },
         { type: 'paragraph', text: '很好的高尔夫天气，白天长，球场状态也很漂亮。价格会随着旅游季上升。如果你想要好天气，但不想碰上盛夏最硬的热，这段时间很好。' },
         { type: 'heading', text: '7月-8月' },
@@ -894,7 +894,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: '9月-10月' },
         { type: 'paragraph', text: '这是我最喜欢的窗口。气温回落到舒服的区间，球场从夏天恢复过来，整体条件非常强。价格还是高，但如果你问我自己会选什么时候来打，我会选这个时间段。' },
         { type: 'paragraph', text: 'Alcanada会在2026年10月举办Rolex Challenge Tour Grand Final。如果你想看高水平比赛，或者想理解为什么这一段时间这么值得来，知道这件事会有帮助。' },
-        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.jpg', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: '10月：顶级球场状态，也是很强的比赛月份' },
+        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.webp', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: '10月：顶级球场状态，也是很强的比赛月份' },
         { type: 'heading', text: '11月-12月' },
         { type: 'paragraph', text: '11月被低估了。更安静，性价比更好，而且依然有大量蓝天。12月会稍微更不稳定一些，但如果你的行程有弹性，仍然可以很好。' },
         { type: 'heading', text: '结论' },
@@ -930,7 +930,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'C\'est le parcours que je joue le plus a Majorque et celui que je recommande le plus regulierement lorsque quelqu\'un veut une vraie epreuve. Le dessin de Thomas Himmel exploite tres intelligemment le vent, les deniveles et les positions. Si votre jeu tient la route et que vous voulez un parcours serieux, c\'est la premiere reponse.' },
         { type: 'paragraph', text: 'Rafa Nadal le cite comme son prefere sur l\'ile. Barack Obama y a joue en novembre 2024. Les green fees tournent globalement entre 115 et €165 selon la saison.' },
         { type: 'subheading', text: 'Pour la partie la plus scenique : Alcanada' },
-        { type: 'image', src: '/images/alcanada-blog/alc-7.jpg', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - phare, mer et vrai parcours de tournoi' },
+        { type: 'image', src: '/images/alcanada-blog/alc-7.webp', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - phare, mer et vrai parcours de tournoi' },
         { type: 'paragraph', text: 'Robert Trent Jones Jr. dans le nord de l\'ile, avec le phare comme repere visuel constant. Depuis les tees arriere et par beau temps, c\'est l\'un des cadres de golf les plus memorables d\'Europe. Et ce n\'est pas seulement beau : les greens et les placements demandent du vrai jeu.' },
         { type: 'subheading', text: 'Pour une sensation DP World Tour : Son Muntaner' },
         { type: 'image', src: '/images/blog-best-golf-courses/Son Muntaner.webp', alt: 'Son Muntaner', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Muntaner - standard tournoi a quelques minutes de Palma' },
@@ -942,10 +942,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-best-golf-courses/Canyamel.webp', alt: 'Canyamel Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Canyamel - cote est, parc naturel et vraie presence visuelle' },
         { type: 'paragraph', text: 'Aux portes du parc naturel de Llevant, avec vue mer et beaucoup de personnalite. Le trajet depuis Palma vaut la peine si vous jugez une journee de golf a autre chose qu\'au score.' },
         { type: 'subheading', text: 'A jouer aussi clairement : Golf Santa Ponsa 1' },
-        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.jpg', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - histoire du Tour et beaucoup de driver' },
+        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.webp', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - histoire du Tour et beaucoup de driver' },
         { type: 'paragraph', text: 'Seul parcours public du groupe Santa Ponsa, avec une vraie histoire European Tour. De larges fairways, de la longueur, et pour beaucoup de joueurs un parcours qui redonne de la confiance avec le driver. Un style tres different de Son Gual ou Alcanada, mais tout a fait pertinent.' },
         { type: 'subheading', text: 'Pour les debutants ou les groupes mixtes : Son Quint ou Son Antem East' },
-        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - plus ouvert, plus simple et plus tolerant' },
+        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - plus ouvert, plus simple et plus tolerant' },
         { type: 'paragraph', text: 'Si l\'objectif n\'est pas une epreuve pure mais une bonne journee pour plusieurs niveaux, ces parcours fonctionnent mieux. Son Quint est plus ouvert et plus tolerant. Son Antem East convient aussi tres bien aux groupes qui ne veulent pas une partie maximaliste.' },
         { type: 'facts', items: [['24', 'Parcours sur l\'ile'], ['€55-250', 'Fourchette 18 trous'], ['300', 'Jours de soleil par an'], ['12 mois', 'Golf toute l\'annee']] },
         { type: 'heading', text: 'Connexions connues a retenir' },
@@ -984,7 +984,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Dit is de baan die ik het meest speel op Mallorca en degene die ik het vaakst aanbeveel wanneer iemand een echte test wil. Het ontwerp van Thomas Himmel gebruikt wind, hoogteverschillen en positionering bijzonder slim. Als uw spel redelijk op orde is en u een serieuze baan zoekt, begint het gesprek hier.' },
         { type: 'paragraph', text: 'Rafa Nadal noemt dit zijn favoriete baan van het eiland. Barack Obama speelde hier in november 2024. Greenfees liggen grofweg tussen €115 en €165.' },
         { type: 'subheading', text: 'Voor de meest scenic ronde: Alcanada' },
-        { type: 'image', src: '/images/alcanada-blog/alc-7.jpg', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - vuurtoren, zee en een echte toernooibaan' },
+        { type: 'image', src: '/images/alcanada-blog/alc-7.webp', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - vuurtoren, zee en een echte toernooibaan' },
         { type: 'paragraph', text: 'Robert Trent Jones Jr. in het noorden van het eiland, met de vuurtoren als vast referentiepunt. Vanaf de back tees en op een heldere ochtend is dit een van de meest memorabele golfsettings van Europa. En het is niet alleen mooi: de greens en plaatsing vragen echt spel.' },
         { type: 'subheading', text: 'Voor DP World Tour-gevoel: Son Muntaner' },
         { type: 'image', src: '/images/blog-best-golf-courses/Son Muntaner.webp', alt: 'Son Muntaner', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Muntaner - toernooistandard vlak bij Palma' },
@@ -996,10 +996,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-best-golf-courses/Canyamel.webp', alt: 'Canyamel Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Canyamel - oostkust, natuurpark en veel karakter' },
         { type: 'paragraph', text: 'Aan de rand van het natuurpark Llevant, met zeezicht en veel visuele kracht. De rit vanaf Palma is de moeite waard als u een golfdag niet alleen op score beoordeelt.' },
         { type: 'subheading', text: 'Ook duidelijk speelwaardig: Golf Santa Ponsa 1' },
-        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.jpg', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - Tourgeschiedenis en veel driver' },
+        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.webp', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - Tourgeschiedenis en veel driver' },
         { type: 'paragraph', text: 'De enige openbare baan in de Santa Ponsa-groep, met echte European Tour-historie. Brede fairways, lengte, en voor veel spelers een baan waarop het vertrouwen met de driver terugkomt. Heel anders dan Son Gual of Alcanada, maar zeker relevant.' },
         { type: 'subheading', text: 'Voor beginners of gemengde groepen: Son Quint of Son Antem East' },
-        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - opener, vriendelijker en duidelijk vergevingsgezinder' },
+        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - opener, vriendelijker en duidelijk vergevingsgezinder' },
         { type: 'paragraph', text: 'Als het niet om een pure test gaat maar om een goede dag voor verschillende niveaus, passen deze banen beter. Son Quint is opener en vriendelijker. Son Antem East werkt ook goed voor groepen die geen maximalistische ronde willen.' },
         { type: 'facts', items: [['24', 'Banen op het eiland'], ['€55-250', '18-holes range'], ['300', 'Zonnedagen per jaar'], ['12 mnd', 'Golf het hele jaar']] },
         { type: 'heading', text: 'Bekende connecties die het vermelden waard zijn' },
@@ -1038,7 +1038,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Det är den bana jag spelar mest på Mallorca och den jag oftast rekommenderar när någon vill ha ett riktigt test. Thomas Himmels design använder vind, höjdskillnader och positionering på ett mycket smart sätt. Om ditt spel är i hyggligt skick och du vill ha en bana som måste respekteras är det här första svaret.' },
         { type: 'paragraph', text: 'Rafa Nadal har kallat den sin favorit pa on. Barack Obama spelade har i november 2024. Greenfeen ligger ungefarligen mellan €115 och €165 beroende pa sasong.' },
         { type: 'subheading', text: 'For den mest scenic ronden: Alcanada' },
-        { type: 'image', src: '/images/alcanada-blog/alc-7.jpg', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - fyr, hav och en riktig tournament-bana' },
+        { type: 'image', src: '/images/alcanada-blog/alc-7.webp', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - fyr, hav och en riktig tournament-bana' },
         { type: 'paragraph', text: 'Robert Trent Jones Jr. i norra delen av on, med fyren som konstant riktpunkt. Fran back tees och under en klar morgon ar detta en av Europas mest minnesvarda golfmiljoer. Och den ar inte bara vacker: greenerna och placeringen kraver riktigt spel.' },
         { type: 'subheading', text: 'For DP World Tour-kansla: Son Muntaner' },
         { type: 'image', src: '/images/blog-best-golf-courses/Son Muntaner.webp', alt: 'Son Muntaner', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Muntaner - tournament-standard nara Palma' },
@@ -1050,10 +1050,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-best-golf-courses/Canyamel.webp', alt: 'Canyamel Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Canyamel - ostkust, naturpark och tydlig identitet' },
         { type: 'paragraph', text: 'Vid kanten av Llevant naturpark, med havsutsikt och mycket narvaro. Bilturen fran Palma ar vard det om man varderar en golfdag pa mer an bara scoren.' },
         { type: 'subheading', text: 'Ocksa tydligt vard att spela: Golf Santa Ponsa 1' },
-        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.jpg', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - Tourhistoria och mycket driver' },
+        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.webp', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - Tourhistoria och mycket driver' },
         { type: 'paragraph', text: 'Den enda offentliga banan i Santa Ponsa-gruppen, med riktig European Tour-historia. Breda fairways, langd och for manga spelare en bana som ger tillbaka sjalvfortroendet med driver. Helt annan karaktar an Son Gual och Alcanada, men klart relevant.' },
         { type: 'subheading', text: 'For nyborjare eller blandade grupper: Son Quint eller Son Antem East' },
-        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - oppnare, vanligare och mycket mer forlatande' },
+        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - oppnare, vanligare och mycket mer forlatande' },
         { type: 'paragraph', text: 'Om man inte vill ha ett rent test utan en bra dag for olika nivaer passar de har banorna battre. Son Quint ar oppnare och snallare. Son Antem East fungerar ocksa bra for grupper som inte vill att allt ska vara maximalt.' },
         { type: 'facts', items: [['24', 'Banor pa on'], ['€55-250', '18-håls spann'], ['300', 'Soldagar per ar'], ['12 man', 'Golf aret runt']] },
         { type: 'heading', text: 'Kanda kopplingar vart att kanna till' },
@@ -1092,7 +1092,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '这是我在马略卡打得最多的球场，也是客户问我“如果只能选一场认真打，选哪里”时，我最常给出的答案。Thomas Himmel的设计把风、地形起伏和落点位置利用得非常聪明。如果你的球技还算在线，又想打一场真正要动脑子的球，这里是第一选择。' },
         { type: 'paragraph', text: 'Rafa Nadal说这是他在岛上最喜欢的球场。Barack Obama也在2024年11月来这里打过。果岭费通常在€115到€165之间。' },
         { type: 'subheading', text: '如果你想打一轮风景最强的球：Alcanada' },
-        { type: 'image', src: '/images/alcanada-blog/alc-7.jpg', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada，灯塔、海景和真正的比赛级球场放在一起' },
+        { type: 'image', src: '/images/alcanada-blog/alc-7.webp', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada，灯塔、海景和真正的比赛级球场放在一起' },
         { type: 'paragraph', text: 'Robert Trent Jones Jr.在岛北的作品，灯塔几乎像固定背景一样一直陪着你。从后发球台往外看，在天色清透的早晨，这就是欧洲最难忘的高尔夫景观之一。而且它不是只有风景，果岭和落点要求都很认真。' },
         { type: 'subheading', text: '如果你想要DP World Tour那种感觉：Son Muntaner' },
         { type: 'image', src: '/images/blog-best-golf-courses/Son Muntaner.webp', alt: 'Son Muntaner', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Muntaner，离Palma很近，但标准是比赛级的' },
@@ -1104,10 +1104,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-best-golf-courses/Canyamel.webp', alt: 'Canyamel Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Canyamel，东海岸、自然公园边缘，很有气质' },
         { type: 'paragraph', text: '球场坐落在Llevant自然公园边上，有海景，也有很强的环境存在感。如果你评价一轮球不只看记分卡，这段从Palma开过去的路是值得的。' },
         { type: 'subheading', text: '同样明确值得打：Golf Santa Ponsa 1' },
-        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.jpg', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1，有Tour历史，也让你敢拿driver' },
+        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.webp', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1，有Tour历史，也让你敢拿driver' },
         { type: 'paragraph', text: '这是Santa Ponsa球场群里唯一公开开放的场，而且有真正的European Tour背景。球道宽、球场长，对很多球手来说，这是会把driver自信重新打出来的地方。它和Son Gual、Alcanada的气质完全不同，但非常值得排进名单。' },
         { type: 'subheading', text: '如果你是初学者或同行水平混合：Son Quint 或 Son Antem East' },
-        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint，更开阔、更友好，也更宽容' },
+        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint，更开阔、更友好，也更宽容' },
         { type: 'paragraph', text: '如果你的目标不是打一场硬仗，而是让不同水平的人都能有一个好体验，那这类球场会更合适。Son Quint更开阔，也更宽容。Son Antem East对不想把一轮球搞得太重的人也很友好。' },
         { type: 'facts', items: [['24', '岛上共有24座球场'], ['€55-250', '18洞果岭费范围'], ['300', '年均晴天数'], ['12个月', '一年四季都能打']] },
         { type: 'heading', text: '几个值得知道的名人信息' },
@@ -1122,7 +1122,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Location de clubs a Majorque : ce qui vaut vraiment le coup',
         description: 'Location de clubs a Majorque expliquee honnetement : apporter ses propres clubs ou louer, quels prestataires sont fiables et ou il vaut la peine de depenser.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Location de clubs a Majorque',
       },
       meta: {
@@ -1149,13 +1149,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Les principaux prestataires' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
         { type: 'paragraph', text: 'Livraison et reprise personnelles dans les hotels, villas et parcours sur toute l\'ile. Sets Callaway Rogue ST Max recents et une option tres propre pour le visiteur qui veut zero friction.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - du materiel recent, pas un reste de stock' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - du materiel recent, pas un reste de stock' },
         { type: 'subheading', text: 'Rent2Play Golf' },
         { type: 'paragraph', text: 'Des options Callaway Rogue et TaylorMade Qi10, avec aussi quelques sets plus economiques des saisons precedentes. Bon compromis pour qui veut une vraie qualite sans payer n\'importe quoi.' },
         { type: 'image', src: '/images/blog-golf-club-hire/Qi4D_v1.webp', alt: 'TaylorMade Qi10', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'TaylorMade Qi10 - option premium pour voyager sans son propre sac' },
         { type: 'subheading', text: 'MyCaddyMaster' },
         { type: 'paragraph', text: 'Plus de marques, plus de sets budget et souvent des options de flex mieux adaptees aux swings plus lents ou aux joueurs seniors. Utile quand le prix ou le shaft juste importe davantage que le dernier modele sorti.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.jpg', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - plus abordable et largement suffisant pour beaucoup de joueurs loisirs' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.webp', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - plus abordable et largement suffisant pour beaucoup de joueurs loisirs' },
         { type: 'subheading', text: 'ClubsToHire' },
         { type: 'paragraph', text: 'Annulation flexible, reservation simple et souvent tres logique si vous louez une semaine complete ou davantage. Plus la duree s\'allonge, plus le tarif devient interessant.' },
         { type: 'pull', text: 'Le vrai choix n\'est generalement pas ses clubs contre n\'importe quel set de location. C\'est plutot du materiel recent chez un specialiste contre ce qui traine au pro shop.' },
@@ -1175,7 +1175,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Clubhuur op Mallorca: wat echt de moeite waard is',
         description: 'Clubhuur op Mallorca eerlijk uitgelegd: eigen clubs meenemen of huren, welke aanbieders betrouwbaar zijn en waar u beter wel of niet geld aan uitgeeft.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Clubhuur op Mallorca',
       },
       meta: {
@@ -1202,13 +1202,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'De belangrijkste verhuurders' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
         { type: 'paragraph', text: 'Persoonlijke levering en ophalen bij hotels, villa\'s en banen over het hele eiland. Recente Callaway Rogue ST Max-sets en een nette optie voor bezoekers die geen gedoe willen.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - recent materiaal, geen restpartij' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - recent materiaal, geen restpartij' },
         { type: 'subheading', text: 'Rent2Play Golf' },
         { type: 'paragraph', text: 'Callaway Rogue- en TaylorMade Qi10-opties, plus wat goedkopere sets uit eerdere seizoenen. Sterke middenweg voor wie serieuze kwaliteit wil zonder onnodig veel te betalen.' },
         { type: 'image', src: '/images/blog-golf-club-hire/Qi4D_v1.webp', alt: 'TaylorMade Qi10', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'TaylorMade Qi10 - premiumkeuze als u zonder eigen tas reist' },
         { type: 'subheading', text: 'MyCaddyMaster' },
         { type: 'paragraph', text: 'Meer merken, meer budgetsets en vaak flexopties die beter passen bij langzamere swings of senior golfers. Logisch wanneer prijs of de juiste shaft belangrijker is dan het allernieuwste model.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.jpg', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - betaalbaarder en voor veel recreatieve golfers meer dan genoeg' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.webp', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - betaalbaarder en voor veel recreatieve golfers meer dan genoeg' },
         { type: 'subheading', text: 'ClubsToHire' },
         { type: 'paragraph', text: 'Flexibele annulering, eenvoudige boeking en vaak vooral interessant wanneer u een volle week of langer huurt. Hoe langer de huur, hoe logischer het vaak wordt.' },
         { type: 'pull', text: 'De echte keuze is meestal niet eigen clubs versus zomaar een huurset. Het is eerder recent materiaal van een specialist versus wat er toevallig in de pro shop staat.' },
@@ -1228,7 +1228,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Klubbhyra pa Mallorca: vad som faktiskt ar vart det',
         description: 'Klubbhyra pa Mallorca forklarad utan fluff: ta med egna klubbor eller hyra, vilka foretag som fungerar och var pengarna gor mest nytta.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Klubbhyra pa Mallorca',
       },
       meta: {
@@ -1255,13 +1255,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'De viktigaste uthyrarna' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
         { type: 'paragraph', text: 'Personlig leverans och upphämtning vid hotell, villor och banor över hela ön. Nyare Callaway Rogue ST Max-set och ett stabilt val för besökaren som vill ha minimalt strul.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - nytt material, inte gammalt restlager' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - nytt material, inte gammalt restlager' },
         { type: 'subheading', text: 'Rent2Play Golf' },
         { type: 'paragraph', text: 'Callaway Rogue- och TaylorMade Qi10-alternativ, plus lite billigare set fran tidigare sasonger. Ett bra mellanalternativ for den som vill ha riktig kvalitet utan att overbetala.' },
         { type: 'image', src: '/images/blog-golf-club-hire/Qi4D_v1.webp', alt: 'TaylorMade Qi10', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'TaylorMade Qi10 - premiumval for resenarer utan eget bag' },
         { type: 'subheading', text: 'MyCaddyMaster' },
         { type: 'paragraph', text: 'Fler marken, fler budgetset och ofta flexalternativ som passar battre for langsammare svinghastigheter eller seniorspelare. Logiskt nar pris eller ratt skaft ar viktigare an det senaste modellaret.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.jpg', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - billigare och fullt tillrackligt for manga fritidsgolfare' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.webp', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - billigare och fullt tillrackligt for manga fritidsgolfare' },
         { type: 'subheading', text: 'ClubsToHire' },
         { type: 'paragraph', text: 'Flexibla avbokningsvillkor, enkel onlinebokning och ofta mest logiskt om du hyr en hel vecka eller langre. Ju langre uthyrningen ar, desto battre blir ofta kalkylen.' },
         { type: 'pull', text: 'Det riktiga valet ar oftast inte egna klubbor eller vilken hyra som helst. Det ar snarare nytt material fran en specialist eller det som rakar sta i pro shopen.' },
@@ -1281,7 +1281,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '马略卡租杆指南：哪些选择真正值得',
         description: '马略卡租杆怎么选？是带自己的杆，还是当地租？哪些公司靠谱，哪些钱值得花，这里讲清楚。',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: '马略卡租杆指南',
       },
       meta: {
@@ -1308,13 +1308,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: '主要租杆公司' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
         { type: 'paragraph', text: '能送到酒店、别墅和球场，覆盖全岛。主打较新的Callaway Rogue ST Max套杆，是那种想省心、不想踩坑的人会选的公司。' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max，是真正的新套杆，不是库存尾货' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max，是真正的新套杆，不是库存尾货' },
         { type: 'subheading', text: 'Rent2Play Golf' },
         { type: 'paragraph', text: '有Callaway Rogue和TaylorMade Qi10，也有一些上一季的更便宜版本。适合想要靠谱质量，但不一定非要最贵最新的人。' },
         { type: 'image', src: '/images/blog-golf-club-hire/Qi4D_v1.webp', alt: 'TaylorMade Qi10', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'TaylorMade Qi10，适合不带自己球包但又不想降配置的人' },
         { type: 'subheading', text: 'MyCaddyMaster' },
         { type: 'paragraph', text: '品牌更多，预算型套杆更多，而且经常能找到更适合挥速慢一点或者年长球手的杆身配置。如果你更看重价格，或者更在乎杆身适配，这家公司有意义。' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.jpg', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL，更省钱，对很多休闲球手也完全够用' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.webp', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL，更省钱，对很多休闲球手也完全够用' },
         { type: 'subheading', text: 'ClubsToHire' },
         { type: 'paragraph', text: '取消政策更灵活，网上预订也简单。如果你打算租一整周甚至更久，这家公司通常更值得看。租得越久，整体算下来通常越划算。' },
         { type: 'pull', text: '真正的选择通常不是“带自己的杆还是随便租一套”。更像是“找专业公司租一套状态好的，还是用球场会所里碰运气”。' },
@@ -1334,7 +1334,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Majorque est-elle bonne pour le golf ? La réponse honnête',
         description: 'Une réponse honnête sur Majorque comme destination golf : qualité des parcours, climat, trajets et pour quels joueurs l\'île fonctionne le mieux.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: 'Majorque est-elle bonne pour le golf ?',
       },
       meta: {
@@ -1355,7 +1355,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Oui. Mais je prefere donner la bonne reponse plutot que la plus simple. Majorque est bonne pour le golf d\'une maniere qui ne saute pas toujours aux yeux depuis l\'exterieur, et c\'est exactement pour cela que beaucoup la sous-estiment.' },
         { type: 'heading', text: 'Les parcours sont reellement de haut niveau' },
         { type: 'paragraph', text: 'Son Gual fait, pour moi, partie des meilleurs parcours d\'Europe. Alcanada est l\'un des plus beaux cadres du continent. Son Muntaner a ete elu meilleur parcours d\'Espagne en 2025. Ce n\'est pas un petit premier rang, et il y a encore de la profondeur derriere.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - un niveau europeen, pas seulement local' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.webp', alt: 'Son Gual Golf Course', caption: 'Son Gual - un niveau europeen, pas seulement local' },
         { type: 'heading', text: 'Les conditions sont fortes presque toute l\'annee' },
         { type: 'paragraph', text: '300 jours de soleil par an. En janvier, quand une grande partie de l\'Europe a des parcours fermes ou tres limites, les fairways ici peuvent etre en excellent etat. C\'est l\'une des premieres choses qui m\'a frappe en arrivant depuis Shanghai.' },
         { type: 'heading', text: '24 parcours sur une ile relativement compacte' },
@@ -1366,13 +1366,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'On peut jouer, mais c\'est plus cher et plus chaud. Ce ne serait pas mon premier choix pour un voyage 100 % golf. Les departs tot ne sont pas un luxe, ils sont necessaires.' },
         { type: 'subheading', text: 'La cote est demande du temps de route' },
         { type: 'paragraph', text: 'Pula, Canyamel et Capdepera comptent parmi les plus beaux parcours de l\'ile, mais ils se trouvent a 55-65 km de Palma. C\'est tres faisable, a condition de bien l\'integrer dans la journee.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.jpg', alt: 'Capdepera Golf', caption: 'Capdepera - tres beau, mais pas juste a cote de Palma' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.webp', alt: 'Capdepera Golf', caption: 'Capdepera - tres beau, mais pas juste a cote de Palma' },
         { type: 'pull', text: 'Majorque est l\'une des meilleures destinations golf d\'Europe. Pas la plus bruyante ni la plus celebre, mais probablement l\'une des plus completes.' },
         { type: 'heading', text: 'Et en dehors du golf ?' },
         { type: 'paragraph', text: 'Un point que les visiteurs sous-evaluent souvent : Majorque est aussi une tres bonne ile en dehors du golf. Les parcours sont l\'ancre, mais le reste fait monter la qualite du voyage.' },
         { type: 'paragraph', text: 'La vieille ville de Palma a un niveau gastronomique superieur a ce que sa taille laisse penser. La cote nord-ouest avec Valldemossa, Deia et Soller est reellement remarquable. Le nord-est est plus calme et plus sauvage. Tout cela fait partie de l\'argument Majorque, ce n\'est pas juste un bonus.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.jpg', alt: 'Alcanada and lighthouse', caption: 'Alcanada - ici le golf et le paysage avancent ensemble' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.jpg', alt: 'Soller town', caption: 'Soller - une bonne facon d\'utiliser une journee sans golf' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.webp', alt: 'Alcanada and lighthouse', caption: 'Alcanada - ici le golf et le paysage avancent ensemble' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.webp', alt: 'Soller town', caption: 'Soller - une bonne facon d\'utiliser une journee sans golf' },
         { type: 'heading', text: 'Verdict' },
         { type: 'paragraph', text: 'Majorque est l\'une des meilleures destinations golf d\'Europe. Pas la plus connue, mais l\'une des plus solides. Les joueurs qui comprennent ce qu\'offre l\'ile reviennent generalement, et ils ont raison.' },
         { type: 'cta', text: 'Vous voulez voir ce que le meilleur golf de Majorque donne vraiment, avec un professionnel PGA a vos cotes ?', linkLabel: 'Voir l\'experience play-with-a-pro →', href: '/play-with-a-pro' },
@@ -1382,7 +1382,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Is Mallorca goed voor golf? Het eerlijke antwoord',
         description: 'Een eerlijk antwoord op de vraag of Mallorca een sterke golfbestemming is: baankwaliteit, klimaat, reistijd en voor wie het eiland het meest logisch is.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: 'Is Mallorca goed voor golf?',
       },
       meta: {
@@ -1403,7 +1403,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Ja. Maar ik geef liever het juiste antwoord dan het makkelijke antwoord. Mallorca is goed voor golf op een manier die van buitenaf niet altijd direct zichtbaar is, en juist daardoor wordt het eiland vaak onderschat.' },
         { type: 'heading', text: 'De banen zijn echt van hoog niveau' },
         { type: 'paragraph', text: 'Son Gual hoort voor mij bij de beste banen van Europa. Alcanada is een van de mooiste golfsettings van het continent. Son Muntaner werd in 2025 uitgeroepen tot beste golfbaan van Spanje. Dat is geen zwakke voorhoede, en daarachter zit nog voldoende diepte.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - Europees niveau, niet alleen lokaal sterk' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.webp', alt: 'Son Gual Golf Course', caption: 'Son Gual - Europees niveau, niet alleen lokaal sterk' },
         { type: 'heading', text: 'De omstandigheden zijn bijna het hele jaar sterk' },
         { type: 'paragraph', text: '300 zonnedagen per jaar. In januari, wanneer in grote delen van Europa banen gesloten of beperkt bespeelbaar zijn, kunnen de fairways hier er opvallend goed bij liggen. Dat was een van de eerste dingen die mij opviel toen ik uit Shanghai kwam.' },
         { type: 'heading', text: '24 banen op een relatief compacte eilandkaart' },
@@ -1414,13 +1414,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Er is te spelen, maar het is warmer en duurder. Voor een pure golfreis zou ik deze maanden niet als eerste aanbevelen. Vroege tee times zijn dan geen luxe, maar noodzakelijk.' },
         { type: 'subheading', text: 'De oostkust vraagt reistijd' },
         { type: 'paragraph', text: 'Pula, Canyamel en Capdepera horen bij de mooiste banen van het eiland, maar liggen 55-65 km van Palma. Prima te doen, zolang u die reistijd eerlijk in de dag meeneemt.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.jpg', alt: 'Capdepera Golf', caption: 'Capdepera - prachtig, maar niet naast Palma' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.webp', alt: 'Capdepera Golf', caption: 'Capdepera - prachtig, maar niet naast Palma' },
         { type: 'pull', text: 'Mallorca is een van de beste golfbestemmingen van Europa. Niet de luidste of bekendste, maar wel een van de meest complete combinaties van banen, omstandigheden en landschap.' },
         { type: 'heading', text: 'En buiten de golfbaan?' },
         { type: 'paragraph', text: 'Iets wat bezoekers vaak onderschatten: Mallorca is ook buiten golf een sterke bestemming. De banen zijn het anker, maar de rest tilt de reis omhoog.' },
         { type: 'paragraph', text: 'De oude stad van Palma heeft gastronomisch meer niveau dan de schaal doet vermoeden. De noordwestkust met Valldemossa, Deia en Soller is echt bijzonder. Het noordoosten is rustiger en ruiger. Dat alles hoort bij het argument voor Mallorca, niet alleen als mooie bijzaak.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.jpg', alt: 'Alcanada and lighthouse', caption: 'Alcanada - hier versterken golf en landschap elkaar' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.jpg', alt: 'Soller town', caption: 'Soller - een goed gebruik van een dag zonder golf' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.webp', alt: 'Alcanada and lighthouse', caption: 'Alcanada - hier versterken golf en landschap elkaar' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.webp', alt: 'Soller town', caption: 'Soller - een goed gebruik van een dag zonder golf' },
         { type: 'heading', text: 'Oordeel' },
         { type: 'paragraph', text: 'Mallorca is een van de beste golfbestemmingen van Europa. Niet de beroemdste, maar wel een van de meest complete. Golfers die eenmaal begrijpen wat het eiland biedt, komen meestal terug, en daar is goede reden voor.' },
         { type: 'cta', text: 'Wilt u zien hoe het beste van Mallorca-golf er werkelijk uitziet, met een PGA professional naast u?', linkLabel: 'Bekijk de play-with-a-pro ervaring →', href: '/play-with-a-pro' },
@@ -1430,7 +1430,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Ar Mallorca bra for golf? Det arliga svaret',
         description: 'Ett arligt svar pa om Mallorca ar en stark golfdestination: banstandard, klimat, restider och for vilka spelare on fungerar bast.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: 'Ar Mallorca bra for golf?',
       },
       meta: {
@@ -1451,7 +1451,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Ja. Men jag ger hellre det riktiga svaret an det enkla. Mallorca ar bra for golf pa ett satt som inte alltid syns direkt utifran, och det ar just darfor manga underskattar on.' },
         { type: 'heading', text: 'Banorna håller verkligen hög klass' },
         { type: 'paragraph', text: 'Son Gual hör, för mig, till Europas bästa banor. Alcanada är en av kontinentens mest natursköna golfmiljöer. Son Muntaner utsågs till Spaniens bästa golfbana 2025. Det är ingen svag toppnivå, och bakom den finns fortfarande bra bredd.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - europeisk standard, inte bara stark lokalt' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.webp', alt: 'Son Gual Golf Course', caption: 'Son Gual - europeisk standard, inte bara stark lokalt' },
         { type: 'heading', text: 'Forhallandena ar starka nastan hela aret' },
         { type: 'paragraph', text: '300 soldagar per ar. I januari, nar stora delar av Europa har stangda eller mycket begransade banor, kan fairways har vara i riktigt fint skick. Det var en av de forsta sakerna jag reagerade pa nar jag kom hit fran Shanghai.' },
         { type: 'heading', text: '24 banor pa en relativt kompakt o' },
@@ -1462,13 +1462,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Det gar att spela, men det ar varmare och dyrare. For en ren golfresa skulle jag inte satt dessa manader forst. Tidiga tee times ar da inte lyx utan nodvandiga.' },
         { type: 'subheading', text: 'Ostkusten kraver restid' },
         { type: 'paragraph', text: 'Pula, Canyamel och Capdepera ar bland ons vackraste banor, men de ligger 55-65 km fran Palma. Helt gorbart, sa lange man raknar in den restiden ordentligt i dagen.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.jpg', alt: 'Capdepera Golf', caption: 'Capdepera - vacker, men inte precis bredvid Palma' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.webp', alt: 'Capdepera Golf', caption: 'Capdepera - vacker, men inte precis bredvid Palma' },
         { type: 'pull', text: 'Mallorca är en av Europas bästa golfdestinationer. Inte den mest högljudda eller mest kända, men en av de mest kompletta kombinationerna av banor, förhållanden och landskap.' },
         { type: 'heading', text: 'Och utanfor golfen?' },
         { type: 'paragraph', text: 'Nagot som besokare ofta underskattar ar att Mallorca ocksa ar mycket starkt utanfor golfen. Banorna ar ankaret, men resten lyfter hela resan.' },
         { type: 'paragraph', text: 'Gamla stan i Palma har mer gastronomisk nivå än storleken antyder. Nordvästkusten med Valldemossa, Deià och Sóller är verkligen speciell. Nordost är lugnare och vildare. Allt det där är en del av argumentet för Mallorca, inte bara ett fint tillägg.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.jpg', alt: 'Alcanada and lighthouse', caption: 'Alcanada - har arbetar golfen och landskapet tillsammans' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.jpg', alt: 'Sóller town', caption: 'Sóller - ett bra sätt att använda en dag utan golf' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.webp', alt: 'Alcanada and lighthouse', caption: 'Alcanada - har arbetar golfen och landskapet tillsammans' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.webp', alt: 'Sóller town', caption: 'Sóller - ett bra sätt att använda en dag utan golf' },
         { type: 'heading', text: 'Omdome' },
         { type: 'paragraph', text: 'Mallorca ar en av Europas basta golfdestinationer. Inte den mest beromda, men en av de mest kompletta. De spelare som val forstar vad on erbjuder kommer ofta tillbaka, och det finns goda skal till det.' },
         { type: 'cta', text: 'Vill du se hur det basta av Mallorcas golf faktiskt ser ut, med ett PGA-proffs vid din sida?', linkLabel: 'Se play-with-a-pro upplevelsen →', href: '/play-with-a-pro' },
@@ -1478,7 +1478,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '马略卡适合打高尔夫吗？诚实答案',
         description: '从球场质量、天气、路程和整体体验来看，马略卡到底是不是一个真正值得来的高尔夫目的地？',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: '马略卡适合打高尔夫吗？',
       },
       meta: {
@@ -1499,7 +1499,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '是的。但我更愿意给出真正的答案，而不是最简单的答案。马略卡适合打高尔夫的地方，很多从外面看并不那么显眼，也正因为这样，它常常被低估。' },
         { type: 'heading', text: '球场质量是真的高' },
         { type: 'paragraph', text: '在我看来，Son Gual属于欧洲最强的一类球场。Alcanada是整个欧洲最漂亮的海景高尔夫体验之一。Son Muntaner在2025年被评为西班牙最佳球场。这不是一条薄弱的顶级线，而且后面还有相当深的层次。' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual，不只是岛上强，在欧洲范围内也站得住' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.webp', alt: 'Son Gual Golf Course', caption: 'Son Gual，不只是岛上强，在欧洲范围内也站得住' },
         { type: 'heading', text: '全年大部分时间都能打，而且状态常常很好' },
         { type: 'paragraph', text: '一年大约300个晴天。1月时，当欧洲很多地方的球场不是关就是很难打，这里的球道却可能已经非常漂亮。这是我从上海搬来以后，最早明确感受到的优势之一。' },
         { type: 'heading', text: '22座球场，集中在一座并不大的岛上' },
@@ -1510,13 +1510,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '不是不能打，但会更贵、更热。对于一趟纯高尔夫行程，这不是我优先推荐的窗口。早场开球不是讲究，而是必要。' },
         { type: 'subheading', text: '东海岸那些漂亮球场，确实需要开车' },
         { type: 'paragraph', text: 'Pula、Canyamel、Capdepera都属于岛上很美的球场，但离Palma大概55到65公里。不是问题，只是要诚实地把这段路程算进一天的计划。' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.jpg', alt: 'Capdepera Golf', caption: 'Capdepera很美，但它并不在Palma边上' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.webp', alt: 'Capdepera Golf', caption: 'Capdepera很美，但它并不在Palma边上' },
         { type: 'pull', text: '马略卡是欧洲最好的高尔夫目的地之一。它不是最吵闹、最有名的那个，但很可能是球场、天气和环境三者结合得最完整的那个。' },
         { type: 'heading', text: '那不打球的时候呢？' },
         { type: 'paragraph', text: '很多游客低估了一点：马略卡在高尔夫之外，本身也是非常强的旅行目的地。球场是锚点，但剩下的部分会让整个行程更完整。' },
         { type: 'paragraph', text: 'Palma老城的餐饮水准，往往比它的城市体量更强。西北海岸的Valldemossa、Deia、Soller都很值得看。东北部更安静，也更野一点。这些不是附加分，而是马略卡作为高尔夫目的地的组成部分。' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.jpg', alt: 'Alcanada and lighthouse', caption: 'Alcanada，在这里高尔夫和风景是一起工作的' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.jpg', alt: 'Soller town', caption: 'Soller，很适合放在不打球的一天里' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.webp', alt: 'Alcanada and lighthouse', caption: 'Alcanada，在这里高尔夫和风景是一起工作的' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.webp', alt: 'Soller town', caption: 'Soller，很适合放在不打球的一天里' },
         { type: 'heading', text: '结论' },
         { type: 'paragraph', text: '马略卡是欧洲最好的高尔夫目的地之一。它不是最出名的那个，但一定是最完整的一类。真正懂它的人，通常都会回来，而且是有原因的。' },
         { type: 'cta', text: '如果您想真正看看马略卡最好的高尔夫是什么样子，也欢迎直接加微信：andygriffiths1。', linkLabel: '查看与职业球手同场体验 →', href: '/play-with-a-pro' },
@@ -1696,7 +1696,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Golfreise nach Mallorca planen: der praktische Guide',
         description: 'Mallorca-Golfreise planen? Hier ist die ehrliche Anleitung zu Reisezeit, Plätzen, Transport, Ausrüstung und allem abseits des Platzes.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Golfreise nach Mallorca planen',
       },
       meta: {
@@ -1723,7 +1723,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Eine Runde pro Tag ist für die meisten Golfer angenehm. Die Plätze fordern, und die Sommerhitze ist real. In den kühleren Monaten sind 36 Löcher an einem Tag möglich, wenn man das wirklich will, aber die meisten reinen Golfreisenden spielen auf einer 5-7-Tage-Reise vier bis fünf Runden.' },
         { type: 'heading', text: 'Welche Plätze Priorität haben sollten' },
         { type: 'paragraph', text: 'Für ambitionierte Golfer mit wenig Zeit: Son Gual und Alcanada. Wenn ich nur eine Woche und nur zwei Runden hätte, wären das meine beiden.' },
-        { type: 'image', src: '/images/blog-trip-planning/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - Pflichtplatz für ambitionierte Golfer' },
+        { type: 'image', src: '/images/blog-trip-planning/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - Pflichtplatz für ambitionierte Golfer' },
         { type: 'paragraph', text: 'Für ein DP-World-Tour-Gefühl: Son Muntaner von Arabella. Fünf Minuten von Palma entfernt und 2025 als bester Golfplatz Spaniens ausgezeichnet.' },
         { type: 'paragraph', text: 'Für die landschaftlich starke Ostküste: Canyamel und Pula. Am besten mit einer Nacht in Artà oder Capdepera kombinieren.' },
         { type: 'paragraph', text: 'Die härteste Prüfung: Golf de Andratx im Südwesten.' },
@@ -1736,11 +1736,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Bei drei oder mehr Runden auf einer klaren Golfreise: eigene Schläger mitbringen. Bei einem gemischten Urlaub mit ein oder zwei Runden ist Leihe meist sinnvoller. Im Club-Hire-Guide nenne ich die Anbieter, die sauber liefern und Ihnen den Reisestress mit dem Travel Bag abnehmen.' },
         { type: 'heading', text: 'Was man sonst noch tun sollte' },
         { type: 'paragraph', text: 'Palmas Altstadt ist wirklich schön. Die Nordwestküste mit Valldemossa, Deià und Sóller gehört zu den eindrucksvollsten Landschaften im Mittelmeerraum. Dazu kommen sehr gutes Essen, lokaler Fisch und starke Inselweine. Der Nordosten ist ruhiger und wilder.' },
-        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.jpg', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palmas Altstadt lohnt einen Tag abseits des Platzes', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
+        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.webp', alt: 'Old Town Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palmas Altstadt lohnt einen Tag abseits des Platzes', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
         { type: 'paragraph', text: 'Eine Golfreise ohne mindestens ein langes Mittagessen an einem Ort, den man nicht eingeplant hatte, macht nur die halbe Arbeit. Lassen Sie einen Nachmittag ohne Tee Time frei und erkunden Sie die Insel. Das Golf bringt Sie her. Der Rest sorgt dafür, dass Sie wiederkommen wollen.' },
         { type: 'splitImages', items: [
           { src: '/images/blog-trip-planning/Valldemossa.avif', alt: 'Valldemossa', caption: 'Valldemossa - ein starker Ausflug für einen golffreien Nachmittag', aspectRatio: '4/3' },
-          { src: '/images/blog-trip-planning/Soller.jpeg', alt: 'Deià', caption: 'Deià - Nordwestküste statt noch eine weitere Bucket-List-Runde', aspectRatio: '4/3' },
+          { src: '/images/blog-trip-planning/Soller.webp', alt: 'Deià', caption: 'Deià - Nordwestküste statt noch eine weitere Bucket-List-Runde', aspectRatio: '4/3' },
         ] },
         { type: 'cta', text: 'Wollen Sie die Reise sauber arrangiert haben - mit Plätzen, Tee Times, Restaurants, Transport und einem PGA-Professional an Ihrer Seite?', linkLabel: 'Golf-Tag mit Pro ansehen →', href: '/play-with-a-pro' },
       ],
@@ -1749,7 +1749,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Cómo planificar un viaje de golf a Mallorca',
         description: 'Viaje de golf a Mallorca: cuándo venir, qué campos priorizar, cuántos días jugar, cómo moverse y qué hacer fuera del golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Cómo planificar un viaje de golf a Mallorca',
       },
       meta: {
@@ -1776,7 +1776,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Una vuelta al día es lo normal para la mayoría. Los campos exigen y el calor del verano es real. En meses más frescos se pueden hacer 36 hoyos, pero la mayoría de los visitantes que vienen solo a jugar hacen cuatro o cinco vueltas en un viaje de cinco a siete días.' },
         { type: 'heading', text: 'Qué campos priorizar' },
         { type: 'paragraph', text: 'Para un golfista serio con poco tiempo: Son Gual y Alcanada. Si yo tuviera una semana y solo dos vueltas, serían esos dos.' },
-        { type: 'image', src: '/images/blog-trip-planning/Son Gual.jpg', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - campo imprescindible para el jugador serio' },
+        { type: 'image', src: '/images/blog-trip-planning/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - campo imprescindible para el jugador serio' },
         { type: 'paragraph', text: 'Para una sensación de DP World Tour: Son Muntaner, del grupo Arabella. A cinco minutos de Palma y Mejor Campo de España 2025.' },
         { type: 'paragraph', text: 'Para la costa este y una vuelta bonita de verdad: Canyamel y Pula. Merece la pena combinarlo con una noche en Artà o Capdepera.' },
         { type: 'paragraph', text: 'La prueba más dura: Golf de Andratx, en el suroeste.' },
@@ -1789,11 +1789,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Si va a jugar tres o más vueltas en un viaje claramente de golf, traiga sus propios palos. Si es un viaje mixto con una o dos vueltas, alquilar suele tener más sentido. En la guía de alquiler explico qué empresas trabajan bien y le ahorran pasear una bolsa de viaje por el aeropuerto.' },
         { type: 'heading', text: 'Qué hacer además del golf' },
         { type: 'paragraph', text: 'El casco antiguo de Palma merece la pena de verdad. La costa noroeste, con Valldemossa, Deià y Sóller, ofrece algunos de los paisajes más bonitos del Mediterráneo. El noreste es más tranquilo y más salvaje. Y la comida, el pescado local y el vino de la isla están a muy buen nivel.' },
-        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.jpg', alt: 'Casco antiguo de Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palma merece un día fuera del campo', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
+        { type: 'image', src: '/images/blog-trip-planning/Old Town Palma.webp', alt: 'Casco antiguo de Palma', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Palma merece un día fuera del campo', captionSize: '0.9rem', captionMargin: '-0.5rem 0 0 0' },
         { type: 'paragraph', text: 'Un viaje de golf sin al menos una comida larga en un sitio inesperado solo hace la mitad del trabajo. Reserve una tarde sin salida y conozca un poco la isla. El golf es el motivo para venir; lo demás es lo que hace que quiera volver.' },
         { type: 'splitImages', items: [
           { src: '/images/blog-trip-planning/Valldemossa.avif', alt: 'Valldemossa', caption: 'Valldemossa - buena escapada para una tarde sin golf', aspectRatio: '4/3' },
-          { src: '/images/blog-trip-planning/Soller.jpeg', alt: 'Deià', caption: 'Deià: mejor esto que encadenar otra vuelta sin respirar', aspectRatio: '4/3' },
+          { src: '/images/blog-trip-planning/Soller.webp', alt: 'Deià', caption: 'Deià: mejor esto que encadenar otra vuelta sin respirar', aspectRatio: '4/3' },
         ] },
         { type: 'cta', text: '¿Quiere que el viaje quede bien organizado, con campos, salidas, restaurantes, transporte y acompañamiento profesional?', linkLabel: 'Ver la experiencia play-with-a-pro →', href: '/play-with-a-pro' },
       ],
@@ -1804,7 +1804,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Die beste Zeit für Golf auf Mallorca',
         description: 'Monat für Monat: Wetter, Preise, Platzbedingungen und wann Mallorca als Golfziel wirklich am meisten Sinn ergibt.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'Die beste Zeit für Golf auf Mallorca',
       },
       meta: {
@@ -1828,7 +1828,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Ruhiger, günstiger und oft überraschend gut. Etwa 12 bis 16 Grad. Die Plätze sind in starkem Zustand - die Fairways hier im Januar sehen oft besser aus als in vielen nordeuropäischen Regionen mitten in der Saison. Ein sehr gutes Preis-Leistungs-Fenster.' },
         { type: 'heading', text: 'März-April' },
         { type: 'paragraph', text: '16-20 Grad, Plätze in sehr guter Form nach dem milden Winter, weniger Gedränge als im Sommer. Die Greenfees steigen, sind aber noch nicht auf dem Sommerniveau. Für viele Besucher ist das die sichere Antwort.' },
-        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.jpg', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'März-April: starke Bedingungen und noch etwas Luft auf dem Platz' },
+        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.webp', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'März-April: starke Bedingungen und noch etwas Luft auf dem Platz' },
         { type: 'heading', text: 'Mai-Juni' },
         { type: 'paragraph', text: 'Sehr gutes Golfwetter bei etwa 20-26 Grad, lange Abende, Plätze in hervorragendem Zustand. Die Preise ziehen mit der Touristensaison an. Wenn Sie gutes Wetter wollen, aber nicht die Hitze des Hochsommers, funktioniert das gut.' },
         { type: 'heading', text: 'Juli-August' },
@@ -1837,7 +1837,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'September-Oktober' },
         { type: 'paragraph', text: 'Meine Lieblingsphase. Die Temperaturen sinken auf angenehme 22-26 Grad, die Plätze erholen sich vom Sommer, und die Bedingungen sind sehr stark. Die Preise bleiben hoch, aber spielerisch ist das die Phase, die ich am ehesten wählen würde.' },
         { type: 'paragraph', text: 'Alcanada richtet im Oktober 2026 das Rolex Challenge Tour Grand Final aus. Für Zuschauer oder Spieler mit Anspruch ist das eine nützliche Information.' },
-        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.jpg', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Oktober: Weltklasse-Bedingungen und Turniermonat' },
+        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.webp', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Oktober: Weltklasse-Bedingungen und Turniermonat' },
         { type: 'heading', text: 'November-Dezember' },
         { type: 'paragraph', text: 'November ist stark unterschätzt. Ruhiger, gutes Preis-Leistungs-Verhältnis und immer noch viele blaue Tage. Dezember wird variabler, kann aber für Golfer mit Flexibilität sehr gut funktionieren.' },
         { type: 'heading', text: 'Fazit' },
@@ -1849,7 +1849,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'La mejor época para jugar al golf en Mallorca',
         description: 'Mes a mes: clima, precios, estado de los campos y cuándo Mallorca ofrece su mejor versión para el golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'La mejor época para jugar al golf en Mallorca',
       },
       meta: {
@@ -1873,7 +1873,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Más tranquilo, más barato y muchas veces sorprendentemente bueno. Unos 12-16 grados. Los campos suelen estar en gran estado, y los fairways de enero aquí pueden verse mejor que muchos fairways del norte de Europa en plena temporada. Es una franja muy buena si busca valor.' },
         { type: 'heading', text: 'Marzo-abril' },
         { type: 'paragraph', text: '16-20 grados, campos fuertes tras el invierno suave y menos grupos que en verano. Los green fees empiezan a subir, pero todavía no están en pico. Para muchos visitantes, esta es la respuesta más segura.' },
-        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.jpg', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Marzo-abril: condiciones muy buenas y algo mas de espacio' },
+        { type: 'image', src: '/images/blog-best-time-play/T Golf Calvia Sun.webp', alt: 'Spring golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Marzo-abril: condiciones muy buenas y algo mas de espacio' },
         { type: 'heading', text: 'Mayo-junio' },
         { type: 'paragraph', text: 'Muy buen clima para golf, unos 20-26 grados, tardes largas y campos en gran condición. Los precios suben con la temporada turística. Si quiere buen tiempo sin el calor duro del verano, funciona muy bien.' },
         { type: 'heading', text: 'Julio-agosto' },
@@ -1882,7 +1882,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Septiembre-octubre' },
         { type: 'paragraph', text: 'Mi período favorito. Las temperaturas bajan a una zona muy cómoda, los campos se recuperan del verano y las condiciones son excelentes. Los precios siguen altos, pero si me pregunta cuándo vendría yo a jugar bien, esta es la ventana.' },
         { type: 'paragraph', text: 'Alcanada acoge en octubre de 2026 la Rolex Challenge Tour Grand Final. Si quiere ver golf de alto nivel o entender por qué esa parte de la temporada es especial, conviene saberlo.' },
-        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.jpg', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Octubre: condiciones top y calendario potente' },
+        { type: 'image', src: '/images/blog-best-time-play/Rolex Challenge Grand Final.webp', alt: 'October golf in Mallorca', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Octubre: condiciones top y calendario potente' },
         { type: 'heading', text: 'Noviembre-diciembre' },
         { type: 'paragraph', text: 'Noviembre está infravalorado. Más calma, buena relación calidad-precio y todavía muchas jornadas azules. Diciembre es algo más variable, pero para el jugador flexible puede seguir siendo una gran opción.' },
         { type: 'heading', text: 'Veredicto' },
@@ -1920,7 +1920,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Mein meistgespielter Platz auf Mallorca und der, den ich am konsequentesten empfehle, wenn jemand eine richtige Pruefung will. Das Design von Thomas Himmel nutzt Wind, Hoehenunterschiede und Positionierung sehr intelligent. Wenn Ihr Spiel halbwegs in Ordnung ist und Sie einen Platz wollen, der ernst genommen werden will, ist das hier die erste Adresse.' },
         { type: 'paragraph', text: 'Rafa Nadal nennt ihn seinen Lieblingsplatz der Insel. Barack Obama spielte hier im November 2024. Greenfees liegen je nach Saison bei etwa €115-165.' },
         { type: 'subheading', text: 'Fuer die landschaftlich staerkste Runde: Alcanada' },
-        { type: 'image', src: '/images/alcanada-blog/alc-7.jpg', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - Leuchtturm, Meer und ein echter Turnierplatz' },
+        { type: 'image', src: '/images/alcanada-blog/alc-7.webp', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - Leuchtturm, Meer und ein echter Turnierplatz' },
         { type: 'paragraph', text: 'Robert Trent Jones Jr. im Norden der Insel, mit dem Leuchtturm auf seiner kleinen Insel als permanentem Fixpunkt. Von den hinteren Abschlaegen und an klaren Morgen ist das eine der eindrucksvollsten Golfkulissen Europas. Dazu kommt ein Platz, der mehr ist als nur schoen - die Gruens und die Platzierung verlangen gutes Spiel.' },
         { type: 'subheading', text: 'Fuer ein DP-World-Tour-Gefuehl: Son Muntaner' },
         { type: 'image', src: '/images/blog-best-golf-courses/Son Muntaner.webp', alt: 'Son Muntaner', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Muntaner - Turnierstandard direkt bei Palma' },
@@ -1932,10 +1932,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-best-golf-courses/Canyamel.webp', alt: 'Canyamel Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Canyamel - Ostkueste, Naturpark und starke visuelle Wirkung' },
         { type: 'paragraph', text: 'Am Rand des Llevant-Naturparks mit Meerblick, viel Landschaft und einem Platz, der mehr Charakter hat, als viele ausserhalb Mallorcas wissen. Die Fahrt von Palma lohnt sich, wenn man den Tag nicht nur nach Score beurteilt.' },
         { type: 'subheading', text: 'Ebenfalls klar spielenswert: Golf Santa Ponsa 1' },
-        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.jpg', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - European-Tour-Geschichte und viel Driver' },
+        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.webp', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - European-Tour-Geschichte und viel Driver' },
         { type: 'paragraph', text: 'Der einzige oeffentliche Platz in der Santa-Ponsa-Gruppe, mit echter European-Tour-Historie. Breite Fairways, lange Loecher, und fuer viele Spieler ein Platz, auf dem sie wieder selbstbewusst zum Driver greifen. Ganz anderer Charakter als Son Gual oder Alcanada, aber eindeutig relevant.' },
         { type: 'subheading', text: 'Fuer Anfaenger oder gemischte Gruppen: Son Quint oder Son Antem East' },
-        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - breiter, freundlicher und deutlich verzeihender' },
+        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - breiter, freundlicher und deutlich verzeihender' },
         { type: 'paragraph', text: 'Wer nicht eine reine Pruefung sucht, sondern einen guten Tag fuer verschiedene Spielstaerken, ist hier besser aufgehoben. Son Quint ist offener und verzeihender. Son Antem East ist ebenfalls angenehm fuer Gruppen, die nicht jede Runde maximal schwer haben wollen.' },
         { type: 'facts', items: [['24', 'Plaetze auf der Insel'], ['€55-250', '18-Loch-Spanne'], ['300', 'Sonnentage pro Jahr'], ['12 Mon.', 'Ganzjaehrig Golf']] },
         { type: 'heading', text: 'Prominente Verbindungen, die man kennen sollte' },
@@ -1974,7 +1974,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Es el campo que más juego en Mallorca y el que recomiendo con más constancia cuando alguien quiere una prueba de verdad. El diseño de Thomas Himmel usa viento, desnivel y colocación con mucha inteligencia. Si su juego está razonablemente en orden y quiere un campo serio, esta es la primera referencia.' },
         { type: 'paragraph', text: 'Rafa Nadal ha dicho que es su favorito de la isla. Barack Obama jugó aquí en noviembre de 2024. Los green fees se mueven aproximadamente entre 115 y 165 euros.' },
         { type: 'subheading', text: 'Para la vuelta mas escenica: Alcanada' },
-        { type: 'image', src: '/images/alcanada-blog/alc-7.jpg', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - faro, mar y un campo de torneo de verdad' },
+        { type: 'image', src: '/images/alcanada-blog/alc-7.webp', alt: 'Alcanada lighthouse view', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Alcanada - faro, mar y un campo de torneo de verdad' },
         { type: 'paragraph', text: 'Robert Trent Jones Jr. en el norte de la isla, con el faro como referencia visual constante. Desde los tees de atras y en una manana clara, es uno de los escenarios de golf mas memorables de Europa. Y no es solo bonito: los greens y la colocacion exigen jugar bien.' },
         { type: 'subheading', text: 'Para sensacion de DP World Tour: Son Muntaner' },
         { type: 'image', src: '/images/blog-best-golf-courses/Son Muntaner.webp', alt: 'Son Muntaner', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Muntaner - estandar de torneo a pocos minutos de Palma' },
@@ -1986,10 +1986,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'image', src: '/images/blog-best-golf-courses/Canyamel.webp', alt: 'Canyamel Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Canyamel - costa este, parque natural y mucho caracter' },
         { type: 'paragraph', text: 'En las estribaciones del parque natural de Llevant, con vistas al mar y mucha presencia visual. Merece el viaje desde Palma si valora algo mas que el numero en la tarjeta.' },
         { type: 'subheading', text: 'Tambien merece jugarse: Golf Santa Ponsa 1' },
-        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.jpg', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - historia de European Tour y mucho driver' },
+        { type: 'image', src: '/images/santa-ponsa-blog/sp-hero.webp', alt: 'Santa Ponsa 1', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Santa Ponsa 1 - historia de European Tour y mucho driver' },
         { type: 'paragraph', text: 'Es el unico publico del grupo Santa Ponsa, con autentica historia de tour. Calles anchas, hoyos largos y para muchos jugadores un campo que devuelve confianza con el driver. Muy distinto de Son Gual o Alcanada, pero claramente importante.' },
         { type: 'subheading', text: 'Para principiantes o grupos mixtos: Son Quint o Son Antem East' },
-        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - mas abierto, amable y bastante mas tolerante' },
+        { type: 'image', src: '/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp', alt: 'Son Quint Golf', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Quint - mas abierto, amable y bastante mas tolerante' },
         { type: 'paragraph', text: 'Si no se busca una prueba pura sino un buen dia para niveles distintos, estos encajan mucho mejor. Son Quint es mas abierto y permisivo. Son Antem East tambien funciona bien para grupos que no quieren una ronda maximalista.' },
         { type: 'facts', items: [['24', 'Campos en la isla'], ['€55-250', 'Rango 18 hoyos'], ['300', 'Dias de sol al ano'], ['12 meses', 'Golf todo el ano']] },
         { type: 'heading', text: 'Conexiones conocidas que merece saber' },
@@ -2006,7 +2006,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Leihschläger auf Mallorca: was sich wirklich lohnt',
         description: 'Leihschläger auf Mallorca ehrlich erklärt: eigene Schläger mitbringen oder leihen, welche Anbieter taugen und wo sich Geld sparen lässt.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Leihschläger auf Mallorca',
       },
       meta: {
@@ -2033,13 +2033,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Die wichtigsten Leihanbieter' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
         { type: 'paragraph', text: 'Persönliche Lieferung und Abholung an Hotels, Villen und Plätzen auf der ganzen Insel. Aktuelle Callaway-Rogue-ST-Max-Sets und insgesamt eine saubere, seriöse Option für Besucher, die keinen Aufwand wollen.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - aktuelle Ausstattung statt Restbestand' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - aktuelle Ausstattung statt Restbestand' },
         { type: 'subheading', text: 'Rent2Play Golf' },
         { type: 'paragraph', text: 'Callaway-Rogue- und TaylorMade-Qi10-Optionen, dazu einige günstigere Sets aus der Vorsaison. Eine gute Allround-Option mit Flughafenlieferung und sinnvoll für Spieler, die solide Qualität ohne Theater wollen.' },
         { type: 'image', src: '/images/blog-golf-club-hire/Qi4D_v1.webp', alt: 'TaylorMade Qi10', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'TaylorMade Qi10 - Premiumoption für Reisende ohne eigenes Bag' },
         { type: 'subheading', text: 'MyCaddyMaster' },
         { type: 'paragraph', text: 'Mehr Marken, mehr Budgetsets und oft auch Flex-Optionen, die für langsamere Schwunggeschwindigkeiten oder Senioren besser passen. Funktioniert gut, wenn Preis oder bestimmte Schäfte wichtiger sind als das neueste Modelljahr.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.jpg', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - budgetfreundlicher und für viele Freizeitspieler völlig ausreichend' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.webp', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - budgetfreundlicher und für viele Freizeitspieler völlig ausreichend' },
         { type: 'subheading', text: 'ClubsToHire' },
         { type: 'paragraph', text: 'Flexible Stornierung, unkomplizierte Online-Buchung und oft attraktiv, wenn Sie für eine ganze Woche oder länger leihen. Besonders sinnvoll, wenn die Reise nicht nur aus zwei Runden besteht.' },
         { type: 'pull', text: 'Die eigentliche Entscheidung ist meist nicht eigene Schläger versus irgendein Leihset. Sie lautet eher: aktuelles Material vom Spezialanbieter oder das, was zufällig im Pro Shop steht.' },
@@ -2059,7 +2059,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Alquiler de palos en Mallorca: lo que de verdad merece la pena',
         description: 'Alquiler de palos en Mallorca explicado con honestidad: traer los propios palos o alquilar, qué empresas funcionan y dónde merece la pena gastar.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Alquiler de palos en Mallorca',
       },
       meta: {
@@ -2086,13 +2086,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'heading', text: 'Las empresas principales' },
         { type: 'subheading', text: 'Club Rentals Mallorca' },
         { type: 'paragraph', text: 'Entrega y recogida personal en hoteles, villas y campos por toda la isla. Sets actuales de Callaway Rogue ST Max y una opcion seria para el visitante que quiere cero friccion.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - material actual, no restos de almacen' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp', alt: 'Callaway Rogue ST Max', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Callaway Rogue ST Max - material actual, no restos de almacen' },
         { type: 'subheading', text: 'Rent2Play Golf' },
         { type: 'paragraph', text: 'Opciones Callaway Rogue y TaylorMade Qi10, ademas de algunos sets mas economicos de temporadas anteriores. Buena opcion intermedia para quien quiere calidad seria sin pagar de mas.' },
         { type: 'image', src: '/images/blog-golf-club-hire/Qi4D_v1.webp', alt: 'TaylorMade Qi10', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'TaylorMade Qi10 - opcion premium para viajar sin su propia bolsa' },
         { type: 'subheading', text: 'MyCaddyMaster' },
         { type: 'paragraph', text: 'Mas marcas, mas sets economicos y a menudo opciones de flex que encajan mejor con swings mas lentos o con jugadores senior. Tiene sentido cuando importa mas el precio o el shaft adecuado que el ultimo modelo.' },
-        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.jpg', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - mas economico y perfectamente valido para muchos jugadores de ocio' },
+        { type: 'image', src: '/images/blog-golf-club-hire/Cobra Fly XL.webp', alt: 'Cobra Fly XL', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Cobra Fly XL - mas economico y perfectamente valido para muchos jugadores de ocio' },
         { type: 'subheading', text: 'ClubsToHire' },
         { type: 'paragraph', text: 'Cancelacion flexible, reserva online sencilla y especialmente util si viene una semana entera o mas. Cuanto mas largo es el alquiler, mas sentido suele tener.' },
         { type: 'pull', text: 'La decision real casi nunca es propios palos o cualquier alquiler. Suele ser mas bien material actual de un especialista o lo que casualmente haya en el pro shop.' },
@@ -2114,7 +2114,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Ist Mallorca gut für Golf? Die ehrliche Antwort',
         description: 'Ist Mallorca wirklich ein gutes Golfziel? Die ehrliche Antwort zu Platzqualität, Klima, Reisewegen und dafür, für wen die Insel am meisten Sinn ergibt.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: 'Ist Mallorca gut für Golf?',
       },
       meta: {
@@ -2135,7 +2135,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Ja. Aber ich gebe Ihnen lieber die richtige Antwort als die einfache. Mallorca ist auf eine Weise gut für Golf, die von außen nicht sofort sichtbar ist. Genau deshalb wird die Insel oft unterschätzt.' },
         { type: 'heading', text: 'Die Plätze sind wirklich Weltklasse' },
         { type: 'paragraph', text: 'Son Gual gehört für mich zu den besten Plätzen Europas. Alcanada ist einer der landschaftlich stärksten Plätze des Kontinents. Son Muntaner wurde 2025 als bester Golfplatz Spaniens ausgezeichnet. Das ist keine schwache erste Reihe - und darunter liegt noch ein breites Feld weiterer sehr spielenswerter Plätze.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - einer der stärksten Plätze Europas, nicht nur Spaniens' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.webp', alt: 'Son Gual Golf Course', caption: 'Son Gual - einer der stärksten Plätze Europas, nicht nur Spaniens' },
         { type: 'heading', text: 'Die Bedingungen sind fast das ganze Jahr stark' },
         { type: 'paragraph', text: '300 Sonnentage pro Jahr. Im Januar, wenn in weiten Teilen Europas Plätze geschlossen oder kaum spielbar sind, können die Fairways hier in sehr gutem Zustand sein. Genau das hat mich beim Umzug aus Shanghai sofort beeindruckt.' },
         { type: 'heading', text: '24 Plätze auf relativ kleinem Raum' },
@@ -2146,13 +2146,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Spielbar, aber teuer und warm. Nicht ideal für eine reine Golfreise. Frühe Tee Times sind in diesen Monaten Pflicht, nicht Luxus.' },
         { type: 'subheading', text: 'Die Ostküste braucht Fahrzeit' },
         { type: 'paragraph', text: 'Pula, Canyamel und Capdepera gehören zu den schönsten Plätzen der Insel, liegen aber 55 bis 65 Kilometer von Palma entfernt. Das ist machbar, sollte aber in die Tagesplanung hinein.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.jpg', alt: 'Capdepera Golf', caption: 'Capdepera - sehr schön, aber kein Platz direkt neben Palma' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.webp', alt: 'Capdepera Golf', caption: 'Capdepera - sehr schön, aber kein Platz direkt neben Palma' },
         { type: 'pull', text: 'Mallorca ist eines der besten Golfziele Europas. Nicht das lauteste, nicht das bekannteste - aber vielleicht die stärkste Kombination aus Platzqualität, Bedingungen und Landschaft.' },
         { type: 'heading', text: 'Und außerhalb des Golfplatzes?' },
         { type: 'paragraph', text: 'Ein Punkt, den Besucher oft unterschätzen: Mallorca ist auch ohne Golf eine starke Insel. Die Plätze sind der Anker, aber der Rest macht die Reise runder und hochwertiger.' },
         { type: 'paragraph', text: 'Palmas Altstadt hat gastronomisch deutlich mehr Niveau, als ihre Größe vermuten lässt. Die Nordwestküste mit Valldemossa, Deià und Sóller ist landschaftlich außergewöhnlich. Im Nordosten wird es ruhiger und ursprünglicher. Das ist ein Teil des Arguments für Mallorca, nicht nur eine nette Zugabe.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.jpg', alt: 'Alcanada and lighthouse', caption: 'Alcanada - Golf und Landschaft greifen hier perfekt ineinander' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.jpg', alt: 'Soller town', caption: 'Sóller - wenn Sie einen golffreien Tag richtig nutzen wollen' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.webp', alt: 'Alcanada and lighthouse', caption: 'Alcanada - Golf und Landschaft greifen hier perfekt ineinander' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.webp', alt: 'Soller town', caption: 'Sóller - wenn Sie einen golffreien Tag richtig nutzen wollen' },
         { type: 'heading', text: 'Fazit' },
         { type: 'paragraph', text: 'Mallorca ist eines der besten Golfziele Europas. Nicht das berühmteste, aber wahrscheinlich die beste Kombination aus Platzqualität, Klima und Umgebung auf dem Kontinent. Die Spieler, die es einmal verstanden haben, kommen sehr oft wieder.' },
         { type: 'cta', text: 'Wollen Sie sehen, wie das Beste von Mallorcas Golf wirklich aussieht - mit einem PGA-Professional an Ihrer Seite?', linkLabel: 'Golf-Tag mit Pro ansehen →', href: '/play-with-a-pro' },
@@ -2162,7 +2162,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '¿Es Mallorca buena para el golf? La respuesta honesta',
         description: 'Una respuesta honesta sobre si Mallorca merece la pena como destino de golf: calidad de campos, clima, desplazamientos y para quien encaja mejor.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg',
+        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: '¿Es Mallorca buena para el golf?',
       },
       meta: {
@@ -2183,7 +2183,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Sí. Pero prefiero dar la respuesta correcta antes que la más fácil. Mallorca es buena para el golf de formas que no son tan obvias desde fuera, y precisamente por eso mucha gente la subestima.' },
         { type: 'heading', text: 'Los campos son realmente de nivel alto' },
         { type: 'paragraph', text: 'Son Gual está, para mí, entre los mejores campos de Europa. Alcanada es uno de los recorridos más escénicos del continente. Son Muntaner fue nombrado mejor campo de España en 2025. No es una primera fila débil, y por debajo todavía queda bastante profundidad.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.jpg', alt: 'Son Gual Golf Course', caption: 'Son Gual - un campo de nivel europeo, no solo mallorquín' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Son Gual.webp', alt: 'Son Gual Golf Course', caption: 'Son Gual - un campo de nivel europeo, no solo mallorquín' },
         { type: 'heading', text: 'Las condiciones son fuertes casi todo el año' },
         { type: 'paragraph', text: '300 días de sol al año. En enero, cuando gran parte de Europa tiene campos cerrados o muy limitados, aquí los fairways pueden estar en gran estado. Eso fue una de las primeras cosas que me llamó la atención al llegar desde Shanghai.' },
         { type: 'heading', text: '24 campos en una isla relativamente compacta' },
@@ -2194,13 +2194,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Se puede jugar, pero es más caro y hace calor. No es mi primera recomendación para un viaje centrado solo en golf. Las salidas tempranas son obligatorias, no opcionales.' },
         { type: 'subheading', text: 'La costa este exige coche y tiempo' },
         { type: 'paragraph', text: 'Pula, Canyamel y Capdepera son algunos de los campos más bonitos de la isla, pero están a 55-65 km de Palma. Se puede hacer sin problema, pero hay que contarlo bien dentro del día.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.jpg', alt: 'Capdepera Golf', caption: 'Capdepera - precioso, pero no al lado de Palma' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Capdepera.webp', alt: 'Capdepera Golf', caption: 'Capdepera - precioso, pero no al lado de Palma' },
         { type: 'pull', text: 'Mallorca es uno de los mejores destinos de golf de Europa. No el más ruidoso ni el más famoso, pero posiblemente la mejor combinación de campos, condiciones y paisaje.' },
         { type: 'heading', text: '¿Y fuera del golf?' },
         { type: 'paragraph', text: 'Hay algo que muchos visitantes no valoran lo suficiente: Mallorca también funciona muy bien más allá del golf. Los campos son el ancla, pero el resto hace que el viaje suba de nivel.' },
         { type: 'paragraph', text: 'El casco antiguo de Palma tiene más nivel gastronómico del que su tamaño sugiere. La costa noroeste, con Valldemossa, Deià y Sóller, es realmente especial. El noreste es más tranquilo y más salvaje. Todo eso forma parte del argumento a favor de Mallorca, no es solo un extra bonito.' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.jpg', alt: 'Alcanada and lighthouse', caption: 'Alcanada - aquí golf y paisaje trabajan juntos' },
-        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.jpg', alt: 'Soller town', caption: 'Sóller - un buen uso de un día sin golf' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Alcanada.webp', alt: 'Alcanada and lighthouse', caption: 'Alcanada - aquí golf y paisaje trabajan juntos' },
+        { type: 'image', src: '/images/blog-is-mallorca-good/Soller.webp', alt: 'Soller town', caption: 'Sóller - un buen uso de un día sin golf' },
         { type: 'heading', text: 'Veredicto' },
         { type: 'paragraph', text: 'Mallorca es uno de los mejores destinos de golf de Europa. No el más famoso, pero sí uno de los más completos. Los jugadores que entienden lo que ofrece la isla suelen volver, y vuelven con razón.' },
         { type: 'cta', text: '¿Quiere ver cómo es el mejor golf de Mallorca de verdad, con un profesional PGA a su lado?', linkLabel: 'Ver la experiencia play-with-a-pro →', href: '/play-with-a-pro' },
@@ -2469,7 +2469,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Combien coûte le golf à Majorque ? Le vrai détail 2026",
         "description": "Combien coûte le golf à Majorque en 2026 ? Green fees, location de clubs, voiturette et déjeuner, expliqués clairement par un professionnel PGA sur place.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
         "imageAlt": "Combien coûte le golf à Majorque ? Le vrai détail 2026"
       },
       "meta": {
@@ -2517,7 +2517,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/Arabella Pitch and Putt.jpg",
+          "src": "/images/blog-golf-cost/Arabella Pitch and Putt.webp",
           "alt": "Arabella Pitch and Putt",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -2548,7 +2548,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/Son Gual.jpg",
+          "src": "/images/blog-golf-cost/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -2595,7 +2595,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/T Golf Calvia Buggies.jpg",
+          "src": "/images/blog-golf-cost/T Golf Calvia Buggies.webp",
           "alt": "Golf buggies in use",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -2657,7 +2657,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Wat kost golf op Mallorca? Het complete overzicht voor 2026",
         "description": "Wat kost golf op Mallorca in 2026? Greenfees, clubhuur, buggys en lunch - het eerlijke kostenoverzicht van een PGA-professional op het eiland.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
         "imageAlt": "Wat kost golf op Mallorca? Het complete overzicht voor 2026"
       },
       "meta": {
@@ -2705,7 +2705,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/Arabella Pitch and Putt.jpg",
+          "src": "/images/blog-golf-cost/Arabella Pitch and Putt.webp",
           "alt": "Arabella Pitch and Putt",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -2736,7 +2736,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/Son Gual.jpg",
+          "src": "/images/blog-golf-cost/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -2783,7 +2783,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/T Golf Calvia Buggies.jpg",
+          "src": "/images/blog-golf-cost/T Golf Calvia Buggies.webp",
           "alt": "Golf buggies in use",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -2845,7 +2845,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026",
         "description": "Vad kostar golf på Mallorca 2026? Greenfee, klubbhyror, buggy och lunch - en rak kostnadsbild från ett PGA-proffs på ön.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
         "imageAlt": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026"
       },
       "meta": {
@@ -2893,7 +2893,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/Arabella Pitch and Putt.jpg",
+          "src": "/images/blog-golf-cost/Arabella Pitch and Putt.webp",
           "alt": "Arabella Pitch and Putt",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -2924,7 +2924,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/Son Gual.jpg",
+          "src": "/images/blog-golf-cost/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -2971,7 +2971,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/T Golf Calvia Buggies.jpg",
+          "src": "/images/blog-golf-cost/T Golf Calvia Buggies.webp",
           "alt": "Golf buggies in use",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3033,7 +3033,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡打高尔夫要花多少钱？2026完整费用解析",
         "description": "2026年马略卡高尔夫真实费用解析：果岭费、租杆、球车、午餐，以及哪些地方值得花钱，哪些地方可以省。",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
         "imageAlt": "马略卡打高尔夫要花多少钱？2026完整费用解析"
       },
       "meta": {
@@ -3081,7 +3081,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/Arabella Pitch and Putt.jpg",
+          "src": "/images/blog-golf-cost/Arabella Pitch and Putt.webp",
           "alt": "Arabella Pitch and Putt",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3112,7 +3112,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/Son Gual.jpg",
+          "src": "/images/blog-golf-cost/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3159,7 +3159,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-cost/T Golf Calvia Buggies.jpg",
+          "src": "/images/blog-golf-cost/T Golf Calvia Buggies.webp",
           "alt": "Golf buggies in use",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3223,7 +3223,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Planifier un voyage de golf à Majorque",
         "description": "Quand venir, quels parcours prioriser, combien de parties jouer, comment se deplacer et quoi faire hors du golf.",
-        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
         "imageAlt": "Planifier un voyage de golf à Majorque"
       },
       "meta": {
@@ -3291,7 +3291,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-trip-planning/Son Gual.jpg",
+          "src": "/images/blog-trip-planning/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3354,7 +3354,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-trip-planning/Old Town Palma.jpg",
+          "src": "/images/blog-trip-planning/Old Town Palma.webp",
           "alt": "Old Town Palma",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3379,7 +3379,7 @@ const REPAIRED_ARTICLE_LOCALES = {
               "aspectRatio": "4/3"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.jpeg",
+              "src": "/images/blog-trip-planning/Soller.webp",
               "alt": "Deia",
               "caption": "Deia - parfois meilleur choix qu'une partie de plus",
               "aspectRatio": "4/3"
@@ -3398,7 +3398,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Een golfreis naar Mallorca plannen",
         "description": "Wanneer komen, welke banen prioriteit geven, hoeveel rondes spelen, hoe u zich verplaatst en wat u buiten golf doet.",
-        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
         "imageAlt": "Een golfreis naar Mallorca plannen"
       },
       "meta": {
@@ -3466,7 +3466,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-trip-planning/Son Gual.jpg",
+          "src": "/images/blog-trip-planning/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3529,7 +3529,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-trip-planning/Old Town Palma.jpg",
+          "src": "/images/blog-trip-planning/Old Town Palma.webp",
           "alt": "Old Town Palma",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3554,7 +3554,7 @@ const REPAIRED_ARTICLE_LOCALES = {
               "aspectRatio": "4/3"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.jpeg",
+              "src": "/images/blog-trip-planning/Soller.webp",
               "alt": "Deia",
               "caption": "Deia - soms beter dan nog een extra ronde",
               "aspectRatio": "4/3"
@@ -3573,7 +3573,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Planera en golfresa till Mallorca",
         "description": "När man ska åka, vilka banor man ska prioritera, hur många rundor som är rimliga och hur man rör sig runt på ön.",
-        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
         "imageAlt": "Planera en golfresa till Mallorca"
       },
       "meta": {
@@ -3641,7 +3641,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-trip-planning/Son Gual.jpg",
+          "src": "/images/blog-trip-planning/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3704,7 +3704,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-trip-planning/Old Town Palma.jpg",
+          "src": "/images/blog-trip-planning/Old Town Palma.webp",
           "alt": "Old Town Palma",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3729,7 +3729,7 @@ const REPAIRED_ARTICLE_LOCALES = {
               "aspectRatio": "4/3"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.jpeg",
+              "src": "/images/blog-trip-planning/Soller.webp",
               "alt": "Deià",
               "caption": "Deià - ibland ett bättre val än ännu en rond",
               "aspectRatio": "4/3"
@@ -3748,7 +3748,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "如何规划马略卡高尔夫之旅",
         "description": "什么时候来、先打哪些球场、打几轮最合理、怎么出行，以及不打球的时候该做什么。",
-        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
         "imageAlt": "如何规划马略卡高尔夫之旅"
       },
       "meta": {
@@ -3816,7 +3816,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-trip-planning/Son Gual.jpg",
+          "src": "/images/blog-trip-planning/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3879,7 +3879,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-trip-planning/Old Town Palma.jpg",
+          "src": "/images/blog-trip-planning/Old Town Palma.webp",
           "alt": "Old Town Palma",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -3904,7 +3904,7 @@ const REPAIRED_ARTICLE_LOCALES = {
               "aspectRatio": "4/3"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.jpeg",
+              "src": "/images/blog-trip-planning/Soller.webp",
               "alt": "Deia",
               "caption": "Deia，有时候比再多打一轮更值得",
               "aspectRatio": "4/3"
@@ -3925,7 +3925,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "La meilleure période pour jouer au golf à Majorque",
         "description": "Mois par mois : météo, tarifs, état des parcours et quand Majorque offre sa meilleure version pour le golf.",
-        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
         "imageAlt": "La meilleure période pour jouer au golf à Majorque"
       },
       "meta": {
@@ -3998,7 +3998,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-time-play/T Golf Calvia Sun.jpg",
+          "src": "/images/blog-best-time-play/T Golf Calvia Sun.webp",
           "alt": "Spring golf in Mallorca",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4041,7 +4041,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-time-play/Rolex Challenge Grand Final.jpg",
+          "src": "/images/blog-best-time-play/Rolex Challenge Grand Final.webp",
           "alt": "October golf in Mallorca",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4079,7 +4079,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "De beste tijd om golf te spelen op Mallorca",
         "description": "Maand voor maand: weer, prijzen, baancondities en wanneer Mallorca op zijn best is voor golf.",
-        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
         "imageAlt": "De beste tijd om golf te spelen op Mallorca"
       },
       "meta": {
@@ -4152,7 +4152,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-time-play/T Golf Calvia Sun.jpg",
+          "src": "/images/blog-best-time-play/T Golf Calvia Sun.webp",
           "alt": "Spring golf in Mallorca",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4195,7 +4195,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-time-play/Rolex Challenge Grand Final.jpg",
+          "src": "/images/blog-best-time-play/Rolex Challenge Grand Final.webp",
           "alt": "October golf in Mallorca",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4233,7 +4233,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Bästa tiden att spela golf på Mallorca",
         "description": "Månad för månad: väder, priser, banförhållanden och när Mallorca är som bäst för golf.",
-        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
         "imageAlt": "Bästa tiden att spela golf på Mallorca"
       },
       "meta": {
@@ -4306,7 +4306,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-time-play/T Golf Calvia Sun.jpg",
+          "src": "/images/blog-best-time-play/T Golf Calvia Sun.webp",
           "alt": "Spring golf in Mallorca",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4349,7 +4349,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-time-play/Rolex Challenge Grand Final.jpg",
+          "src": "/images/blog-best-time-play/Rolex Challenge Grand Final.webp",
           "alt": "October golf in Mallorca",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4387,7 +4387,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡打高尔夫的最佳时间",
         "description": "按月份看天气、价格、球场状态，以及什么时候来马略卡打球最舒服、最值得。",
-        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
         "imageAlt": "马略卡打高尔夫的最佳时间"
       },
       "meta": {
@@ -4460,7 +4460,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-time-play/T Golf Calvia Sun.jpg",
+          "src": "/images/blog-best-time-play/T Golf Calvia Sun.webp",
           "alt": "Spring golf in Mallorca",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4503,7 +4503,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-time-play/Rolex Challenge Grand Final.jpg",
+          "src": "/images/blog-best-time-play/Rolex Challenge Grand Final.webp",
           "alt": "October golf in Mallorca",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4606,7 +4606,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/alcanada-blog/alc-7.jpg",
+          "src": "/images/alcanada-blog/alc-7.webp",
           "alt": "Alcanada lighthouse view",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4682,7 +4682,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/santa-ponsa-blog/sp-hero.jpg",
+          "src": "/images/santa-ponsa-blog/sp-hero.webp",
           "alt": "Santa Ponsa 1",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4701,7 +4701,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg",
+          "src": "/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp",
           "alt": "Son Quint Golf",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4830,7 +4830,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/alcanada-blog/alc-7.jpg",
+          "src": "/images/alcanada-blog/alc-7.webp",
           "alt": "Alcanada lighthouse view",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4906,7 +4906,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/santa-ponsa-blog/sp-hero.jpg",
+          "src": "/images/santa-ponsa-blog/sp-hero.webp",
           "alt": "Santa Ponsa 1",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -4925,7 +4925,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg",
+          "src": "/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp",
           "alt": "Son Quint Golf",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5054,7 +5054,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/alcanada-blog/alc-7.jpg",
+          "src": "/images/alcanada-blog/alc-7.webp",
           "alt": "Alcanada lighthouse view",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5130,7 +5130,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/santa-ponsa-blog/sp-hero.jpg",
+          "src": "/images/santa-ponsa-blog/sp-hero.webp",
           "alt": "Santa Ponsa 1",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5149,7 +5149,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg",
+          "src": "/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp",
           "alt": "Son Quint Golf",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5278,7 +5278,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/alcanada-blog/alc-7.jpg",
+          "src": "/images/alcanada-blog/alc-7.webp",
           "alt": "Alcanada lighthouse view",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5354,7 +5354,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/santa-ponsa-blog/sp-hero.jpg",
+          "src": "/images/santa-ponsa-blog/sp-hero.webp",
           "alt": "Santa Ponsa 1",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5373,7 +5373,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-best-golf-courses/Tiger and Charlie Son Quint.jpg",
+          "src": "/images/blog-best-golf-courses/Tiger and Charlie Son Quint.webp",
           "alt": "Son Quint Golf",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5441,7 +5441,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Location de clubs a Majorque : ce qui vaut vraiment le coup",
         "description": "Location de clubs a Majorque expliquee honnetement : apporter ses propres clubs ou louer, quels prestataires sont fiables et ou il vaut la peine de depenser.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
         "imageAlt": "Location de clubs a Majorque"
       },
       "meta": {
@@ -5509,7 +5509,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg",
+          "src": "/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
           "alt": "Callaway Rogue ST Max",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5547,7 +5547,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-club-hire/Cobra Fly XL.jpg",
+          "src": "/images/blog-golf-club-hire/Cobra Fly XL.webp",
           "alt": "Cobra Fly XL",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5613,7 +5613,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Clubhuur op Mallorca: wat echt de moeite waard is",
         "description": "Clubhuur op Mallorca eerlijk uitgelegd: eigen clubs meenemen of huren, welke aanbieders betrouwbaar zijn en waar u beter wel of niet geld aan uitgeeft.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
         "imageAlt": "Clubhuur op Mallorca"
       },
       "meta": {
@@ -5681,7 +5681,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg",
+          "src": "/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
           "alt": "Callaway Rogue ST Max",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5719,7 +5719,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-club-hire/Cobra Fly XL.jpg",
+          "src": "/images/blog-golf-club-hire/Cobra Fly XL.webp",
           "alt": "Cobra Fly XL",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5785,7 +5785,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Klubbhyra pa Mallorca: vad som faktiskt ar vart det",
         "description": "Klubbhyra pa Mallorca forklarad utan fluff: ta med egna klubbor eller hyra, vilka foretag som fungerar och var pengarna gor mest nytta.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
         "imageAlt": "Klubbhyra pa Mallorca"
       },
       "meta": {
@@ -5853,7 +5853,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg",
+          "src": "/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
           "alt": "Callaway Rogue ST Max",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5891,7 +5891,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-club-hire/Cobra Fly XL.jpg",
+          "src": "/images/blog-golf-club-hire/Cobra Fly XL.webp",
           "alt": "Cobra Fly XL",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -5957,7 +5957,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡租杆指南：哪些选择真正值得",
         "description": "马略卡租杆怎么选？是带自己的杆，还是当地租？哪些公司靠谱，哪些钱值得花，这里讲清楚。",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
         "imageAlt": "马略卡租杆指南"
       },
       "meta": {
@@ -6025,7 +6025,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg",
+          "src": "/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
           "alt": "Callaway Rogue ST Max",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -6063,7 +6063,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-golf-club-hire/Cobra Fly XL.jpg",
+          "src": "/images/blog-golf-club-hire/Cobra Fly XL.webp",
           "alt": "Cobra Fly XL",
           "containerStyle": {
             "margin": "1.5rem 0 0.5rem 0",
@@ -6131,7 +6131,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Majorque est-elle bonne pour le golf ? La réponse honnête",
         "description": "Une réponse honnête sur Majorque comme destination golf : qualité des parcours, climat, trajets et pour quels joueurs l'île fonctionne le mieux.",
-        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
         "imageAlt": "Majorque est-elle bonne pour le golf ?"
       },
       "meta": {
@@ -6175,7 +6175,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Son Gual.jpg",
+          "src": "/images/blog-is-mallorca-good/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "caption": "Son Gual - un niveau europeen, pas seulement local"
         },
@@ -6238,7 +6238,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Capdepera.jpg",
+          "src": "/images/blog-is-mallorca-good/Capdepera.webp",
           "alt": "Capdepera Golf",
           "caption": "Capdepera - tres beau, mais pas juste a cote de Palma"
         },
@@ -6260,13 +6260,13 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Alcanada.jpg",
+          "src": "/images/blog-is-mallorca-good/Alcanada.webp",
           "alt": "Alcanada and lighthouse",
           "caption": "Alcanada - ici le golf et le paysage avancent ensemble"
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Soller.jpg",
+          "src": "/images/blog-is-mallorca-good/Soller.webp",
           "alt": "Soller town",
           "caption": "Soller - une bonne facon d'utiliser une journee sans golf"
         },
@@ -6290,7 +6290,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Is Mallorca goed voor golf? Het eerlijke antwoord",
         "description": "Een eerlijk antwoord op de vraag of Mallorca een sterke golfbestemming is: baankwaliteit, klimaat, reistijd en voor wie het eiland het meest logisch is.",
-        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
         "imageAlt": "Is Mallorca goed voor golf?"
       },
       "meta": {
@@ -6334,7 +6334,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Son Gual.jpg",
+          "src": "/images/blog-is-mallorca-good/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "caption": "Son Gual - Europees niveau, niet alleen lokaal sterk"
         },
@@ -6397,7 +6397,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Capdepera.jpg",
+          "src": "/images/blog-is-mallorca-good/Capdepera.webp",
           "alt": "Capdepera Golf",
           "caption": "Capdepera - prachtig, maar niet naast Palma"
         },
@@ -6419,13 +6419,13 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Alcanada.jpg",
+          "src": "/images/blog-is-mallorca-good/Alcanada.webp",
           "alt": "Alcanada and lighthouse",
           "caption": "Alcanada - hier versterken golf en landschap elkaar"
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Soller.jpg",
+          "src": "/images/blog-is-mallorca-good/Soller.webp",
           "alt": "Soller town",
           "caption": "Soller - een goed gebruik van een dag zonder golf"
         },
@@ -6449,7 +6449,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Ar Mallorca bra for golf? Det arliga svaret",
         "description": "Ett arligt svar pa om Mallorca ar en stark golfdestination: banstandard, klimat, restider och for vilka spelare on fungerar bast.",
-        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
         "imageAlt": "Ar Mallorca bra for golf?"
       },
       "meta": {
@@ -6493,7 +6493,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Son Gual.jpg",
+          "src": "/images/blog-is-mallorca-good/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "caption": "Son Gual - europeisk standard, inte bara stark lokalt"
         },
@@ -6556,7 +6556,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Capdepera.jpg",
+          "src": "/images/blog-is-mallorca-good/Capdepera.webp",
           "alt": "Capdepera Golf",
           "caption": "Capdepera - vacker, men inte precis bredvid Palma"
         },
@@ -6578,13 +6578,13 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Alcanada.jpg",
+          "src": "/images/blog-is-mallorca-good/Alcanada.webp",
           "alt": "Alcanada and lighthouse",
           "caption": "Alcanada - har arbetar golfen och landskapet tillsammans"
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Soller.jpg",
+          "src": "/images/blog-is-mallorca-good/Soller.webp",
           "alt": "Sóller town",
           "caption": "Sóller - ett bra sätt att använda en dag utan golf"
         },
@@ -6608,7 +6608,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡适合打高尔夫吗？诚实答案",
         "description": "从球场质量、天气、路程和整体体验来看，马略卡到底是不是一个真正值得来的高尔夫目的地？",
-        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.jpg",
+        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
         "imageAlt": "马略卡适合打高尔夫吗？"
       },
       "meta": {
@@ -6652,7 +6652,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Son Gual.jpg",
+          "src": "/images/blog-is-mallorca-good/Son Gual.webp",
           "alt": "Son Gual Golf Course",
           "caption": "Son Gual，不只是岛上强，在欧洲范围内也站得住"
         },
@@ -6715,7 +6715,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Capdepera.jpg",
+          "src": "/images/blog-is-mallorca-good/Capdepera.webp",
           "alt": "Capdepera Golf",
           "caption": "Capdepera很美，但它并不在Palma边上"
         },
@@ -6737,13 +6737,13 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Alcanada.jpg",
+          "src": "/images/blog-is-mallorca-good/Alcanada.webp",
           "alt": "Alcanada and lighthouse",
           "caption": "Alcanada，在这里高尔夫和风景是一起工作的"
         },
         {
           "type": "image",
-          "src": "/images/blog-is-mallorca-good/Soller.jpg",
+          "src": "/images/blog-is-mallorca-good/Soller.webp",
           "alt": "Soller town",
           "caption": "Soller，很适合放在不打球的一天里"
         },
@@ -6902,7 +6902,7 @@ function patchADayAtSonGualContent(locale, content) {
   blocks = injectBlocksAfterHeading(blocks, media.anchors.round, [
     {
       type: 'image',
-      src: '/images/son-gual-blog/sg-clients-group.jpg',
+      src: '/images/son-gual-blog/sg-clients-group.webp',
       alt: 'Group day at Son Gual with Andy Griffiths',
       containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
       caption: media.captions.clients,
@@ -6912,7 +6912,7 @@ function patchADayAtSonGualContent(locale, content) {
   blocks = injectBlocksAfterHeading(blocks, media.anchors.after, [
     {
       type: 'image',
-      src: '/images/son-gual-blog/sg-plane.jpg',
+      src: '/images/son-gual-blog/sg-plane.webp',
       alt: 'View across Son Gual towards the Bay of Palma',
       containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
       caption: media.captions.views,

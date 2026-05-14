@@ -38,7 +38,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-clients-group.jpg',
+          src: '/images/son-gual-blog/sg-clients-group.webp',
           alt: 'Golfers at Son Gual with Andy Griffiths',
           caption: 'A group day in January. In England the courses are shut. Here the fairways look like this.',
         },
@@ -55,7 +55,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-1.jpg',
+          src: '/images/son-gual-blog/sg-1.webp',
           alt: 'Son Gual fairway and bunkers',
           caption: 'There are a lot of bunkers at Son Gual. They are positioned exactly where slightly mishit shots go.',
         },
@@ -67,7 +67,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-swing.jpg',
+          src: '/images/son-gual-blog/sg-swing.webp',
           alt: 'Client hitting a tee shot at Son Gual',
           caption: "There are plenty of holes where the driver comes out. When the wind is behind you it's as good as it gets. When it's not, you plan differently.",
         },
@@ -84,7 +84,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-2.jpg',
+          src: '/images/son-gual-blog/sg-2.webp',
           alt: 'Son Gual green and surrounding landscape',
           caption: "Fast, raised greens. Where you miss matters more than how you swing - that's the Son Gual lesson.",
         },
@@ -102,13 +102,13 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-plane.jpg',
+          src: '/images/son-gual-blog/sg-plane.webp',
           alt: 'Plane coming into Palma airport over Son Gual golf course',
           caption: 'The Bay of Palma from the higher holes. Holes 8 to 12 have the best of the views.',
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-4.jpg',
+          src: '/images/son-gual-blog/sg-4.webp',
           alt: 'Son Gual panoramic view across Palma',
           caption: 'The Tramuntana mountains behind the course. This is what the backdrop looks like from the higher holes.',
         },
@@ -120,7 +120,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-gual-blog/sg-5.jpg',
+          src: '/images/son-gual-blog/sg-5.webp',
           alt: 'Son Gual course detail',
           caption: 'The 10th tee, right in front of the clubhouse. The par-4 stretches out ahead of you.',
         },
@@ -165,7 +165,7 @@ export const GUIDE_POST_CONTENT = {
         title: "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)",
         description:
           'Alcanada golf course Mallorca reviewed by a PGA Professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.',
-        imagePath: '/images/alcanada-blog/alc-7.jpg',
+        imagePath: '/images/alcanada-blog/alc-7.webp',
       },
       meta: {
         badge: 'Course Review',
@@ -184,7 +184,7 @@ export const GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/alcanada-blog/alc-7.jpg',
+          src: '/images/alcanada-blog/alc-7.webp',
           alt: 'Club de Golf Alcanada at golden hour with lighthouse and bay',
           caption: 'Alcanada at golden hour. The lighthouse sits on its own island just off the coast and is visible from 16 of the 18 holes.',
         },
@@ -203,7 +203,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/alcanada-blog/alc-6.jpg',
+          src: '/images/alcanada-blog/alc-6.webp',
           alt: 'Client hitting a tee shot at Alcanada with lighthouse in the background',
           caption: 'The lighthouse behind, the sea to the left, the fairway dropping away ahead.',
         },
@@ -218,7 +218,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/alcanada-blog/alc-2.jpg',
+          src: '/images/alcanada-blog/alc-2.webp',
           alt: 'Alcanada green with sea and mountains visible behind',
           caption: 'On a clear morning you can see the Tramuntana mountains across the bay.',
         },
@@ -233,7 +233,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/alcanada-blog/alc-5.jpg',
+          src: '/images/alcanada-blog/alc-5.webp',
           alt: 'Golfers at Alcanada with the Mediterranean behind',
           caption: 'The back tees at Alcanada are elevated well above the fairway. The walk up is worth it every time.',
         },
@@ -244,7 +244,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/alcanada-blog/alc-1.jpg',
+          src: '/images/alcanada-blog/alc-1.webp',
           alt: 'Rolex Grand Final at Alcanada hole 16',
           caption: 'The Rolex Challenge Tour Grand Final at Alcanada. It returns for its sixth time in October 2026.',
         },
@@ -255,7 +255,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/alcanada-blog/alc-4.jpg',
+          src: '/images/alcanada-blog/alc-4.webp',
           alt: 'Group of golfers at Alcanada on a summer evening',
           caption: 'A summer evening round. The light at Alcanada in July is something else.',
         },
@@ -288,7 +288,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/alcanada-blog/alc-hero.jpg',
+          src: '/images/alcanada-blog/alc-hero.webp',
           alt: 'Alcanada clubhouse terrace',
           caption: 'The clubhouse terrace.',
         },
@@ -312,7 +312,7 @@ export const GUIDE_POST_CONTENT = {
         title: "Son Muntaner Golf Mallorca Review (2026) - Best in Spain, But Is It Worth It?",
         description:
           "Best Golf Course in Spain 2025 (World Golf Awards). €125–250 green fees, buggy included, 5 mins from Palma. I played it on a busy Saturday — here's what I found.",
-        imagePath: '/images/son-muntaner-blog/sm-8.jpg',
+        imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
         badge: 'Course Review',
@@ -329,34 +329,34 @@ export const GUIDE_POST_CONTENT = {
         ],
       },
       blocks: [
-        { type: 'image', src: '/images/son-muntaner-blog/sm-8.jpg', alt: 'Andy Griffiths at Golf Son Muntaner, Mallorca', caption: 'Best Golf Course in Spain, 2025. Managed to smile despite all the missed fairways.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-8.webp', alt: 'Andy Griffiths at Golf Son Muntaner, Mallorca', caption: 'Best Golf Course in Spain, 2025. Managed to smile despite all the missed fairways.' },
         { type: 'paragraph', text: "Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a Saturday morning last week, with a full tee sheet and mixed handicaps in the group. Here's what I found." },
         { type: 'heading', text: 'Getting There' },
         { type: 'paragraph', text: "Five minutes from central Palma. That alone puts it in a different category from most courses on the island worth talking about. Son Gual takes twenty minutes, Alcanada fifty. If you're based in the city and want a serious round without building a half-day around the drive, Son Muntaner is the answer." },
         { type: 'paragraph', text: "The service from arrival through to the round was smooth. The team are attentive without being intrusive. Range balls, practice facilities, and the overall operation all sit at the level the course's reputation would lead you to expect." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-6.jpg', alt: 'Son Muntaner golf course Mallorca looking down the 17th fairway with Bay of Palma in background', caption: 'Looking down the 17th. Five minutes from central Palma and it feels like a different world.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: 'Son Muntaner golf course Mallorca looking down the 17th fairway with Bay of Palma in background', caption: 'Looking down the 17th. Five minutes from central Palma and it feels like a different world.' },
         { type: 'heading', text: 'The Walk and Why the Buggy Is Included' },
         { type: 'paragraph', text: "The course is a genuine physical test on foot. Several long climbs up to tees. The buggy is included in the green fee, which is the right call by the club. Most players will want it, and making it a separate charge would feel wrong at this level. After years in China relying on caddies, I prefer to walk, but I understand why most visitors take the buggy here." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-4.jpg', alt: 'Son Muntaner golf course Mallorca elevated fairway view through the Na Burguesa mountains', caption: 'Looking back from one of the longer climbs. The routing through the Na Burguesa mountains is what makes this course feel different from anything else close to Palma.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-4.webp', alt: 'Son Muntaner golf course Mallorca elevated fairway view through the Na Burguesa mountains', caption: 'Looking back from one of the longer climbs. The routing through the Na Burguesa mountains is what makes this course feel different from anything else close to Palma.' },
         { type: 'heading', text: 'How the Course Reveals Itself' },
         { type: 'paragraph', text: "My opening stretch was erratic. I made conservative tee choices and still couldn't get a full read on the layout early on. That's not a criticism. It's what the design does. Son Muntaner doesn't show you everything from the tee. The course reveals itself through approach play." },
         { type: 'paragraph', text: "Holding greens from the wrong angle is difficult. There are narrow sections and subtle targets that demand precise positioning rather than just getting the ball somewhere near the flag. Landing areas define the course. Tee shots and layups often require commitment to tight zones that aren't obvious until you reach them. Once you understand that, the design starts to feel fair. Strong shots get clear reward." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-7.jpg', alt: 'Son Muntaner golf hole Mallorca tight par 3 with stone wall and bunker', caption: 'The 7th. Short par 3, but the severe drop makes distance control harder than the yardage suggests. Most people come up short.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-7.webp', alt: 'Son Muntaner golf hole Mallorca tight par 3 with stone wall and bunker', caption: 'The 7th. Short par 3, but the severe drop makes distance control harder than the yardage suggests. Most people come up short.' },
         { type: 'heading', text: 'The Par 3s' },
         { type: 'paragraph', text: "They use elevation well throughout. Protection comes from the shape and angle of the hole rather than just length, though the longer ones from the back tees are over 200 yards and demand proper club selection. The 13th was a rare moment of clarity on the day." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-1.jpg', alt: 'Andy Griffiths hitting tee shot on 13th par 3 at Son Muntaner Mallorca', caption: 'The 13th. Par 3. An easy birdie today!' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-1.webp', alt: 'Andy Griffiths hitting tee shot on 13th par 3 at Son Muntaner Mallorca', caption: 'The 13th. Par 3. An easy birdie today!' },
         { type: 'heading', text: 'Front Nine vs Back Nine' },
         { type: 'paragraph', text: "The front nine, particularly the opening six holes, plays tightly. Water and defined landing areas keep things honest. There's no room for loose driving." },
         { type: 'paragraph', text: "The back nine opens up slightly. More freedom with the driver, though the green complexes stay small and deceptively difficult. Depth perception from distance is a consistent challenge here. Greens look larger than they are, and approach distances look shorter than they play." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-3.jpg', alt: 'Ducks on water hazard at Son Muntaner golf course Mallorca', caption: 'Not something you factor into your pre-shot routine. Back nine company.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-3.webp', alt: 'Ducks on water hazard at Son Muntaner golf course Mallorca', caption: 'Not something you factor into your pre-shot routine. Back nine company.' },
         { type: 'heading', text: 'The Greens' },
         { type: 'paragraph', text: "Rolling pure at a solid pace, with clear potential to get quicker into summer. That quality rewarded good putting, especially from range. This is where the Best in Spain title starts to make sense. The greens are consistently excellent, and they held up across a full tee sheet on a busy Saturday without losing pace or surface quality." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-5.jpg', alt: 'Son Muntaner 9th green Mallorca with clubhouse behind', caption: 'The 9th green, clubhouse behind. Halfway through and already clear this course rewards patience over power.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-5.webp', alt: 'Son Muntaner 9th green Mallorca with clubhouse behind', caption: 'The 9th green, clubhouse behind. Halfway through and already clear this course rewards patience over power.' },
         { type: 'heading', text: 'Bunkers' },
         { type: 'paragraph', text: "One honest negative: bunker sand was inconsistent. Some lies firmer, others softer, which complicates execution on shots you've planned the same way. Minor on a course of this standard, but worth knowing if greenside sand play is part of your game." },
         { type: 'heading', text: 'The Olive Tree' },
         { type: 'paragraph', text: "Hole 15. The ancient olive tree standing in the middle of the fairway has been there for roughly a thousand years. The Balearic government declared it a natural monument. The course was designed around it." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-2.jpg', alt: 'Ancient olive tree on hole 15 at Son Muntaner golf course Mallorca with Na Burguesa mountains behind', caption: "Hole 15. That olive tree has been standing for roughly a thousand years. The Balearic government declared it a natural monument. Someone decided to build a golf hole around it, and I'm glad they did." },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: 'Ancient olive tree on hole 15 at Son Muntaner golf course Mallorca with Na Burguesa mountains behind', caption: "Hole 15. That olive tree has been standing for roughly a thousand years. The Balearic government declared it a natural monument. Someone decided to build a golf hole around it, and I'm glad they did." },
         { type: 'heading', text: 'The Restaurant' },
         { type: 'paragraph', text: "Not an afterthought. The food matches the standard of the course. Worth staying for after the round rather than heading straight back to Palma." },
         { type: 'facts', items: [['Peak €250 / Low €125', '2026 price guide'], ['7/10', 'Difficulty'], ['Par 72', 'Championship layout'], ['Included', 'Buggy in green fee']] },
@@ -376,7 +376,7 @@ export const GUIDE_POST_CONTENT = {
         title: "Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026)",
         description:
           "Santa Ponsa 1 golf course Mallorca reviewed by a PGA Professional. One of Europe's longest courses, DP World Tour history, and a confidence-builder for anyone who loves hitting driver.",
-        imagePath: '/images/santa-ponsa-blog/sp-hero.jpg',
+        imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
       },
       meta: {
         badge: 'Course Review',
@@ -395,7 +395,7 @@ export const GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/santa-ponsa-blog/sp-hero.jpg',
+          src: '/images/santa-ponsa-blog/sp-hero.webp',
           alt: 'Golf Santa Ponsa 1 with water reflection and fairway',
           caption: 'The 16th green. The lake comes into play on the approach and focuses the mind considerably.',
         },
@@ -414,7 +414,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/santa-ponsa-blog/sp-1.jpg',
+          src: '/images/santa-ponsa-blog/sp-1.webp',
           alt: 'Santa Ponsa 1 fairway with mountains behind',
           caption: 'The fairways are wide. This is a course that invites the driver.',
         },
@@ -425,7 +425,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/santa-ponsa-blog/sp-2.jpg',
+          src: '/images/santa-ponsa-blog/sp-2.webp',
           alt: 'Santa Ponsa 1 course layout and fairways',
           caption: 'The layout. On a calm day this course flatters you. Add wind and it earns every metre of its length.',
         },
@@ -436,7 +436,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/santa-ponsa-blog/sp-3.jpg',
+          src: '/images/santa-ponsa-blog/sp-3.webp',
           alt: 'Santa Ponsa 1 approach to a par 3',
           caption: 'The Tramuntana mountains behind. Holes 5, 6 and 7 have the best of the mountain views.',
         },
@@ -447,7 +447,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/santa-ponsa-blog/sp-5.jpg',
+          src: '/images/santa-ponsa-blog/sp-5.webp',
           alt: 'Andy Griffiths at Santa Ponsa 1 early morning',
           caption: 'Early start. By mid-morning the wind usually finds the course.',
         },
@@ -490,7 +490,7 @@ export const GUIDE_POST_CONTENT = {
         title: "Golf de Andratx Review (2026) - Green Fees, Difficulty & Honest Rating",
         description:
           "Golf de Andratx: ~€125, par 72, the longest par 5 in Spain. Mountain setting in the southwest. I played it in May 2026 — tactical layout that rewards patience far more than length.",
-        imagePath: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+        imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
         badge: 'Course Review',
@@ -510,7 +510,7 @@ export const GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-8.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-8.webp',
           alt: 'View from hole 8 at Golf de Andratx looking down over the southwest of Mallorca',
           caption: 'Hole 8, A Love of Mallorca. From one of the highest points on the course, looking down over the whole southwest of Mallorca.',
           presentation: 'natural',
@@ -540,7 +540,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-4.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-4.webp',
           alt: 'Hole 4, Pine Valley, Golf de Andratx, water surrounding the green',
           caption: 'Hole 4, Pine Valley. The water does not just border this hole, it surrounds it. The green slopes in a way that makes the right number on your approach the priority.',
           presentation: 'natural',
@@ -561,7 +561,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-7.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-7.webp',
           alt: 'Tee shot on hole 7 at Golf de Andratx with stone walls in front of the green',
           caption: 'Hole 7. The stone walls block your view of the green from the tee. You are picking a line and committing to it without seeing where you are going.',
           presentation: 'natural',
@@ -574,7 +574,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-15.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-15.webp',
           alt: 'Elevated tee shot on hole 15, Hello Mrs Robinson, at Golf de Andratx',
           caption: 'Hole 15, Hello Mrs Robinson. The drop from the tee plays around 20 yards shorter. Distance control is the whole challenge here.',
           presentation: 'natural',
@@ -587,7 +587,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.jpg',
+          src: '/images/golf-andratx-blog/andratx-hole-2-camp-del-mar.webp',
           alt: 'Hole 2 at Golf de Andratx with Camp del Mar visible in the background',
           caption: 'Hole 2. Despite spending most of the round high in the mountains, this was the first time the sea came into view. Camp del Mar sits in the background. A good note to finish on.',
           presentation: 'natural',
@@ -650,7 +650,7 @@ export const GUIDE_POST_CONTENT = {
         title: "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
         description:
           'Son Termes golf course Mallorca reviewed by a PGA professional. Mountain views, honest course notes, green fees, and who it suits, from someone who played it this week.',
-        imagePath: '/images/son-termes-blog/st-2.jpg',
+        imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
         badge: 'Course Review',
@@ -670,7 +670,7 @@ export const GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-2.jpg',
+          src: '/images/son-termes-blog/st-2.webp',
           alt: 'Goat on Son Termes golf course Mallorca with Palma in background',
           caption: 'The ball is mine. The goat was not invited. Back nine, Son Termes.',
           priority: true,
@@ -693,7 +693,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-1.jpg',
+          src: '/images/son-termes-blog/st-1.webp',
           alt: 'Tee shot at Son Termes golf course Mallorca with mountains behind',
           caption: 'Tee shot at Son Termes, Na Burguesa mountains behind.',
           presentation: 'natural',
@@ -711,7 +711,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-6.jpg',
+          src: '/images/son-termes-blog/st-6.webp',
           alt: 'Son Termes golf course Mallorca Na Burguesa mountains',
           caption: 'The course opens up on the back nine and view of the Na Burguesa mountains.',
           presentation: 'natural',
@@ -729,7 +729,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-5.jpg',
+          src: '/images/son-termes-blog/st-5.webp',
           alt: 'Son Termes golf par 3 12th hole green Mallorca with trees behind',
           caption: 'The 12th. The flag was harder to find than this makes it look.',
           presentation: 'natural',
@@ -756,7 +756,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-4.jpg',
+          src: '/images/son-termes-blog/st-4.webp',
           alt: 'Son Termes golf course Mallorca panoramic view over Na Burguesa mountains and Palma plain',
           caption: 'The view from the upper holes. Castell de Bellver and the cathedral were visible on the skyline on a clear morning.',
           presentation: 'natural',
@@ -779,7 +779,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'image',
-          src: '/images/son-termes-blog/st-3.jpg',
+          src: '/images/son-termes-blog/st-3.webp',
           alt: 'Son Termes golf course Mallorca aerial view over the layout with mountains',
           caption: 'The course from above. The routing through the mountains is what makes Son Termes different from anything else at this price point on the island.',
           presentation: 'natural',
@@ -806,7 +806,7 @@ export const GUIDE_POST_CONTENT = {
         title: 'T Golf Calvià Review (2026) - Green Fees, Course Conditions & Honest Rating',
         description:
           'T Golf Calvià: up to €210 peak, twilight from €150. 15 lakes, 6,500m from the back tees, one of the best-conditioned courses in Mallorca. I played it in May 2026.',
-        imagePath: '/images/t-golf-calvia-social.jpg',
+        imagePath: '/images/t-golf-calvia-social.webp',
       },
       meta: {
         badge: 'Course Review',
@@ -828,7 +828,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-1.webp',
           alt: 'Windmill at T Golf Calvià against a clear blue sky',
-          caption: 'The windmills are a distinctive feature of T Golf Calvià. Not many courses have them.',
+          caption: 'The windmills are a distinctive feature of T Golf Calvià.',
           priority: true,
         },
         {
@@ -893,7 +893,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Hole 18 is a tight par 5 that opens up as you move down the fairway. I hit driver, 6 iron, and just missed a 15-foot eagle putt. Finished with birdie. It is a proper finishing hole. It asks you to commit off what looks like a narrow tee shot, then gives you a real birdie or eagle chance if you do.',
+          text: 'Hole 18 is a tight par 5 that opens up as you move down the fairway. It is a proper finishing hole. It asks you to commit off what looks like a narrow tee shot, and gives you a chance at a reward if you do.',
         },
         {
           type: 'image',

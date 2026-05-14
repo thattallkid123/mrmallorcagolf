@@ -1,5 +1,6 @@
 ## 2026-05-14
 
+- [site] Image optimization: converted all JPG/JPEG references to WebP (498 code replacements across 6 lib files), created 213 WebP files, original JPGs preserved for backup
 - [content] T Golf Calvià review: fixed sideways photos (rotated all 7 properly + restored 0-byte photo 2 from git), optimised file sizes 78% (9.96MB → 2.16MB), new 900x386 card image from photo 3, new 1200x630 social preview JPG, content audited against voice guide (Majorca → Mallorca, euros → €, Calvià accents)
 - [admin] Consolidated MMG_BRAND_VOICE_GUIDELINES.md as single source of truth, removed reference to legacy MMG_AI_MISTAKES file
 - [admin] Created COURSE_BLOG_PIPELINE.md — one-pass workflow for future course blogs (transcript + numbered photo links → live post)
