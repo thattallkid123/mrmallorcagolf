@@ -6,8 +6,8 @@ export const HOME_CONTENT = {
     locale: 'en',
     hero: {
       eyebrow: 'Mallorca golf trips, built by a PGA pro',
-      titleLines: ["I'll help you build", 'the right Mallorca golf trip'],
-      emphasis: '',
+      titleLines: ["I'll help you build", 'the right Mallorca'],
+      emphasis: 'golf trip',
       primaryCta: 'Build Your Itinerary',
       secondaryCta: 'See the courses',
       trust: [
