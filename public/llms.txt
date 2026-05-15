@@ -5,7 +5,7 @@
 ## Core Pages
 
 - [Homepage](https://www.mrmallorcagolf.com/): Main overview of the itinerary-led planning path.
-- [Itinerary Builder](https://internal.mrmallorcagolf.com/): Primary planning tool for trip shape, course mix, dates, and add-ons.
+- [Itinerary Planner](https://www.mrmallorcagolf.com/itinerary): Public planning tool for trip shape, course mix, dates, and add-ons.
 - [Play with a Pro](https://www.mrmallorcagolf.com/play-with-a-pro): Premium private golf day add-on inside a Mallorca trip.
 - [Golf Courses](https://www.mrmallorcagolf.com/golf-courses): Course guide covering the island's golf courses.
 - [Guides](https://www.mrmallorcagolf.com/guides): Destination, planning, and course advice articles.
@@ -13,7 +13,7 @@
 
 ## Offer
 
-- Itinerary Builder: Main planning path for visiting golfers.
+- Itinerary Planner: Main planning path for visiting golfers.
 - Play With A Pro: Optional private 18-hole day with Andy, built around your handicap, goals, and the right course.
 - Hosted Golf Journey: Bespoke multi-day golf trips with itinerary support on request.
 

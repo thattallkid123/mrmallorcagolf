@@ -32,7 +32,7 @@ const FEATURE_ICONS = {
   ),
 }
 
-const ITINERARY_BUILDER_URL = 'https://internal.mrmallorcagolf.com'
+const ITINERARY_PLANNER_PATH = '/itinerary'
 
 function localizePath(path, locale) {
   if (!path || path.startsWith('http') || path.startsWith('#')) return path
@@ -56,7 +56,7 @@ export default function HomePageInner({ locale = 'en' }) {
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
-  const itineraryHref = home.hero.primaryHref || ITINERARY_BUILDER_URL
+  const itineraryHref = home.hero.primaryHref || ITINERARY_PLANNER_PATH
   const multiDayPackage = home.packages?.multiDay || home.packages?.premium
 
   return (
@@ -229,7 +229,7 @@ export default function HomePageInner({ locale = 'en' }) {
             <a href={playWithAProHref} className="btn btn--dark">
               {home.experience.button}
             </a>
-            <a href={ITINERARY_BUILDER_URL} className="btn btn--gold">
+            <a href={ITINERARY_PLANNER_PATH} className="btn btn--gold">
               {home.experience.dateCta}
             </a>
           </div>
@@ -385,7 +385,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">&ldquo;{home.finalCta.quote}&rdquo;</p>
-          <a href={ITINERARY_BUILDER_URL} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px', letterSpacing: '0.18em' }}>
+          <a href={ITINERARY_PLANNER_PATH} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px', letterSpacing: '0.18em' }}>
             {home.finalCta.primaryCta}
           </a>
           <a href="https://wa.me/34624466702" className="btn btn--outline-white" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>

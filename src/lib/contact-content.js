@@ -7,7 +7,7 @@ export const CONTACT_CONTENT = {
       eyebrow: 'Get in touch',
       title: "Tell me the trip you're building. I'll help make it work.",
       intro:
-        "If you already have dates, courses, or a rough itinerary, send it over. If you are still early, start with the itinerary builder first. Either way, I reply personally and help you turn the idea into a Mallorca golf plan that makes sense.",
+        "If you already have dates, courses, or a rough itinerary, send it over. If you are still early, start with the itinerary planner first. Either way, I reply personally and help you turn the idea into a Mallorca golf plan that makes sense.",
     },
     cards: {
       emailLabel: 'Email',

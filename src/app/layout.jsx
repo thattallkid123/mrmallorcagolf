@@ -153,7 +153,7 @@ const FAQ_SCHEMA = {
       name: 'Can I book multiple days or customise the trip?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Start with the itinerary builder, then Andy can help refine the course mix, travel rhythm, transfers, dining, club hire, and any hosted golf day that improves the trip.',
+        text: 'Yes. Start with the itinerary planner, then Andy can help refine the course mix, travel rhythm, transfers, dining, club hire, and any hosted golf day that improves the trip.',
       },
     },
     {

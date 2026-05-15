@@ -16,6 +16,7 @@ const SHARED_BASE_PATHS = new Set([
   '/guides',
 ])
 
+const EN_ONLY_BASE_PATHS = new Set(['/itinerary'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es'])
 
@@ -121,6 +122,7 @@ export function isDraftGuidePath(pathname = '/') {
 export function hasLocaleRoute(pathname = '/', locale = 'en') {
   const basePath = stripLocaleFromPath(pathname)
 
+  if (EN_ONLY_BASE_PATHS.has(basePath)) return locale === 'en'
   if (SHARED_BASE_PATHS.has(basePath)) return true
   if (LEGAL_BASE_PATHS.has(basePath)) return LEGAL_LOCALES.has(locale)
 
@@ -194,12 +196,17 @@ export function getAlternates(pathname = '/') {
 export function getSitemapPaths() {
   const paths = []
   const sharedPages = Array.from(SHARED_BASE_PATHS)
+  const englishOnlyPages = Array.from(EN_ONLY_BASE_PATHS)
 
   // Include shared pages in all locales (they exist in all languages)
   for (const locale of ALL_LOCALES) {
     for (const path of sharedPages) {
       paths.push(buildLocalePath(path, locale))
     }
+  }
+
+  for (const path of englishOnlyPages) {
+    paths.push(buildLocalePath(path, 'en'))
   }
 
   // Review posts: include ALL locales (published in all languages)

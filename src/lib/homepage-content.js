@@ -9,6 +9,7 @@ export const HOME_CONTENT = {
       titleLines: ["I'll help you build", 'the right Mallorca'],
       emphasis: 'golf trip',
       primaryCta: 'Build Your Itinerary',
+      primaryHref: '/itinerary',
       secondaryCta: 'See the courses',
       trust: [
         'PGA Advanced Professional',
@@ -40,7 +41,7 @@ export const HOME_CONTENT = {
           title: 'I am planning a golf trip',
           text: 'Use the itinerary tool first. I can help you choose the right region, course mix, travel window, and add-ons before anything gets booked.',
           cta: 'Build an itinerary',
-          href: 'https://internal.mrmallorcagolf.com',
+          href: '/itinerary',
         },
         {
           title: 'I am comparing courses',
@@ -205,8 +206,8 @@ export const HOME_CONTENT = {
       items: [
         {
           eyebrow: 'Planning first',
-          name: 'Itinerary Builder',
-          price: 'Start here',
+          name: 'Itinerary Planner',
+          price: 'Free first draft',
           features: [
             'Choose dates, group size, budget, and priorities',
             'See which course mix makes sense',
@@ -215,9 +216,9 @@ export const HOME_CONTENT = {
             'Decide what is worth adding',
             'Send me the outline if you want help refining it',
           ],
-          note: 'This is the planning-first route: trip shape first, bookings and add-ons second.',
+          note: 'Start with the shape of the trip, then decide what is worth booking or adding.',
           cta: 'Build itinerary ->',
-          href: 'https://internal.mrmallorcagolf.com',
+          href: '/itinerary',
         },
         {
           eyebrow: 'Premium add-on',
@@ -258,7 +259,7 @@ export const HOME_CONTENT = {
         title: 'Start with the itinerary tool.',
         body: 'The cleanest next step is to build a first draft: dates, group, course appetite, budget, and travel style. From there I can help you decide whether you need bookings, a hosted day, transport, or just better course choices.',
         cta: 'Build your itinerary',
-        href: 'https://internal.mrmallorcagolf.com',
+        href: '/itinerary',
       },
     },
     faq: {
@@ -276,7 +277,7 @@ export const HOME_CONTENT = {
         },
         {
           q: 'How do I book?',
-          a: 'Start with the itinerary builder if you are still planning. If you already know your dates and want me involved, send an enquiry and I will come back personally within 24 hours.',
+          a: 'Start with the itinerary planner if you are still planning. If you already know your dates and want me involved, send an enquiry and I will come back personally within 24 hours.',
         },
         {
           q: 'Is this suitable for a group?',

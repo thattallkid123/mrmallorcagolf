@@ -145,7 +145,7 @@ export default function Footer({ lang }) {
       <div className="footer__col">
         <h3>{copy.experiences}</h3>
         <ul>
-          {copy.itinerary ? <li><a href="https://internal.mrmallorcagolf.com">{copy.itinerary}</a></li> : null}
+          {copy.itinerary ? <li><Link href="/itinerary">{copy.itinerary}</Link></li> : null}
           <li><Link href={`${prefix}/play-with-a-pro`}>{copy.pwap}</Link></li>
           <li><Link href={getADayPath(locale)}>{copy.day}</Link></li>
           <li><Link href={`${prefix}/contact`}>{copy.enquire}</Link></li>

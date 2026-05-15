@@ -9,7 +9,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       breadcrumbCurrent: 'Play with a Pro',
       eyebrow: 'Premium add-on · Mallorca',
       title: 'Add a private day with me to your Mallorca trip.',
-      body: 'This is not the whole business model. It is the premium add-on when you want me on the course with you: one carefully chosen course, 18 holes together, local course management, and coaching woven into the round. Solo from €495. Groups from €950.',
+      body: 'This is the premium add-on when you want me on the course with you: one carefully chosen course, 18 holes together, local course management, and coaching woven into the round. Solo from €495. Groups from €950.',
       price: null,
       primaryCta: 'Add this to my trip →',
       primaryHref: '/contact',
@@ -75,7 +75,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Add-on options',
       title: 'Choose how much of the trip I am involved in.',
-      body: 'These sit inside the wider itinerary. If you are still working out the trip shape, start with the itinerary builder first, then add one of these if it makes the whole visit better.',
+      body: 'These sit inside the wider itinerary. If you are still working out the trip shape, start with the itinerary planner first, then add one of these if it makes the whole visit better.',
       tiers: [
         {
           eyebrow: 'A Day With Andy',
@@ -138,7 +138,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         title: 'Build the itinerary first.',
         body: 'If you are not sure which courses, region, budget, or rhythm makes sense, start with the itinerary tool. From there we can decide whether a private day with me belongs in the plan.',
         button: 'Build your itinerary →',
-        href: 'https://internal.mrmallorcagolf.com',
+        href: '/itinerary',
       },
     },
     finalCta: {

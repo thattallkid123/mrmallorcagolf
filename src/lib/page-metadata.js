@@ -267,6 +267,14 @@ const CONTACT_METADATA = {
   },
 }
 
+const ITINERARY_METADATA = {
+  en: {
+    title: 'Mallorca Golf Itinerary Planner | Mr Mallorca Golf',
+    description:
+      'Build a first-draft Mallorca golf itinerary with Andy Griffiths: dates, group size, course mix, region, budget, and Play With A Pro add-ons.',
+  },
+}
+
 const SUBSCRIBE_METADATA = {
   en: {
     title: 'Golf Insights from Mallorca - Weekly Newsletter | Mr Mallorca Golf',
@@ -441,6 +449,10 @@ export function buildContactMetadata(locale = 'en') {
     locale,
     CONTACT_METADATA[locale] || CONTACT_METADATA.en,
   )
+}
+
+export function buildItineraryMetadata() {
+  return buildPageMetadata('/itinerary', 'en', ITINERARY_METADATA.en)
 }
 
 export function buildSubscribeMetadata(locale = 'en') {
