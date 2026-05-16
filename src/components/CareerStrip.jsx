@@ -68,7 +68,8 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
                       src={v.img}
                       alt={v.name}
                       fill
-                      sizes="260px"
+                      sizes="(max-width: 700px) 72vw, 320px"
+                      unoptimized
                       style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
                     />
                     <div className="career-strip__card-scrim" />

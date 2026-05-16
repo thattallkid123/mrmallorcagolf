@@ -236,8 +236,9 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
               src="/images/winners-collage.webp"
               alt="A collage of competition winners coached by Andy over the years"
               className="winners-board__img"
-              width={1120}
-              height={784}
+              width={1600}
+              height={631}
+              quality={90}
               sizes="(max-width: 1120px) 100vw, 1120px"
             />
           </figure>

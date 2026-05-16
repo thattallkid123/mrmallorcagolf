@@ -113,6 +113,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               alt=""
               fill
               priority
+              quality={88}
               sizes="100vw"
               className="pwap-hero__image"
             />
@@ -171,7 +172,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 src="/images/client-coaching.webp"
                 alt="Andy coaching a client on the course"
                 fill
-                sizes="(max-width: 768px) 100vw, 45vw"
+                quality={88}
+                sizes="(max-width: 768px) 100vw, 560px"
                 style={{ objectFit: 'cover', objectPosition: 'center center' }}
               />
             </div>
@@ -236,6 +238,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                   alt="Andy with a client at Son Gual"
                   width={935}
                   height={700}
+                  quality={88}
+                  sizes="(max-width: 768px) 100vw, 560px"
                   style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
               </div>
@@ -277,12 +281,14 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               alt="A group day at Son Gual"
               width={787}
               height={700}
+              quality={88}
+              sizes="(max-width: 768px) 100vw, 760px"
               style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }}
             />
           </div>
           <div className="pricing-grid">
-            {content.packages.tiers.map((tier) => (
-              <div key={tier.eyebrow} className={`tier${tier.featured ? ' tier--feature' : ''} reveal`}>
+            {content.packages.tiers.map((tier, index) => (
+              <div key={`${tier.eyebrow}-${tier.name}-${index}`} className={`tier${tier.featured ? ' tier--feature' : ''} reveal`}>
                 <p className="tier__name-small">{tier.eyebrow}</p>
                 <h3 className="tier__name">{tier.name}</h3>
                 <p className="tier__price">{tier.price}</p>

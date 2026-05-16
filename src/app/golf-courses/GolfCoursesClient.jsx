@@ -546,7 +546,8 @@ function CourseCard({ c, lang = 'en' }) {
             src={c.img}
             alt={courseName}
             fill
-            sizes="(max-width: 768px) 100vw, 45vw"
+            quality={88}
+            sizes="(max-width: 768px) 100vw, 620px"
             className="course__image"
           />
         </div>
@@ -586,7 +587,8 @@ function CourseCard({ c, lang = 'en' }) {
               src={c.img}
               alt={courseName}
               fill
-              sizes="(max-width: 768px) 100vw, 45vw"
+              quality={88}
+              sizes="(max-width: 768px) 100vw, 620px"
               className="course__image"
             />
           </div>
@@ -889,6 +891,5 @@ export default function GolfCoursesClient({ lang = 'en' }) {
     </>
   )
 }
-
 
 

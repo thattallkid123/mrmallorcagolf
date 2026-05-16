@@ -367,6 +367,7 @@ export default function ItineraryPlanner() {
           alt=""
           fill
           priority
+          quality={88}
           sizes="100vw"
           style={{ objectFit: 'cover', objectPosition: 'center 38%' }}
         />
@@ -433,7 +434,8 @@ export default function ItineraryPlanner() {
                 src={snapshot.base.image}
                 alt={snapshot.base.label}
                 fill
-                sizes="(max-width: 900px) 100vw, 520px"
+                quality={88}
+                sizes="(max-width: 900px) 100vw, 580px"
                 style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
               />
             </div>
@@ -493,7 +495,8 @@ export default function ItineraryPlanner() {
                             alt={course}
                             fill
                             loading="eager"
-                            sizes="(max-width: 640px) 100vw, 180px"
+                            quality={88}
+                            sizes="(max-width: 640px) 92vw, 220px"
                             style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
                           />
                         ) : null}

@@ -73,6 +73,7 @@ export default function HomePageInner({ locale = 'en' }) {
             alt="Golf day in Mallorca with PGA Advanced Professional Andy Griffiths"
             fill
             priority
+            quality={88}
             sizes="100vw"
             style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
           />
@@ -164,7 +165,8 @@ export default function HomePageInner({ locale = 'en' }) {
                         src={img}
                         alt={item.title}
                         fill
-                        sizes="(max-width: 768px) 100vw, 380px"
+                        quality={88}
+                        sizes="(max-width: 768px) 100vw, 420px"
                         style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
                       />
                       <div className="journey-card__overlay" />
@@ -203,7 +205,8 @@ export default function HomePageInner({ locale = 'en' }) {
                   src={getOptimizedCourseImage(course.img)}
                   alt={course.name}
                   fill
-                  sizes="(max-width: 768px) 292px, 348px"
+                  quality={88}
+                  sizes="(max-width: 768px) 78vw, 380px"
                   style={{ objectFit: 'cover', objectPosition: 'center 28%' }}
                 />
               </div>
@@ -270,7 +273,8 @@ export default function HomePageInner({ locale = 'en' }) {
                 src="/images/client-alcanada.webp"
                 alt="Andy with a client at Alcanada golf course"
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={88}
+                sizes="(max-width: 768px) 100vw, 560px"
                 style={{ objectFit: 'cover', objectPosition: 'center 45%' }}
               />
             </div>
@@ -286,7 +290,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="packages__grid packages__grid--paid" style={{ maxWidth: '900px', margin: '0 auto' }}>
           {home.packages.items.map((pkg, index) => (
-            <div key={pkg.name} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
+            <div key={`${pkg.eyebrow}-${pkg.name}-${index}`} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
               <p className="tier__name-small">{pkg.eyebrow}</p>
               <h3 className="tier__name">{pkg.name}</h3>
               {pkg.price && <p className="tier__price">{pkg.price}</p>}

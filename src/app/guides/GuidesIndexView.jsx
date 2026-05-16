@@ -76,7 +76,8 @@ function GuideCarousel({ id, heading, guides, prefix, priorityFirst = false, dar
                       src={img.src}
                       alt={guide.title}
                       fill
-                      sizes="348px"
+                      quality={88}
+                      sizes="(max-width: 760px) 92vw, 380px"
                       style={{ objectFit: 'cover', objectPosition: img.position }}
                       priority={priorityFirst && i === 0}
                     />
