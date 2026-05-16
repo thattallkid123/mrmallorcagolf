@@ -35,10 +35,10 @@ const FEATURE_ICONS = {
 const ITINERARY_PLANNER_PATH = '/itinerary'
 
 const CREDENTIAL_LOGOS = [
-  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 120, height: 120 },
-  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 96, height: 120 },
-  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 120, height: 120 },
-  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 148, height: 120 },
+  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 480, height: 480 },
+  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 384, height: 480 },
+  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 480, height: 480 },
+  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 592, height: 480 },
 ]
 
 function localizePath(path, locale) {

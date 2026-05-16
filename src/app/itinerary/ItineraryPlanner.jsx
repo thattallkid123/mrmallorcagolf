@@ -308,16 +308,16 @@ function getSeasonAdvice(form) {
 function getAddOns(form) {
   const addOns = []
   if (form.priorities.includes('pwap') || form.priorities.includes('coaching') || form.golf === 'serious') {
-    addOns.push('A day with me on course: proper course management, coaching woven into the round, and local knowledge that changes how you approach each hole. This is the most personal thing I offer.')
+    addOns.push('Play With A Pro: a private round with Andy for course management, local decisions, and coaching on the course.')
   }
   if (form.priorities.includes('clubHire')) {
-    addOns.push('I can arrange club hire as part of the booking where it makes sense, or put you in touch with the right rental option before tee times become tight.')
+    addOns.push('Club hire: Andy can arrange it with the course booking where possible, or point you to the right rental option.')
   }
   if (form.priorities.includes('restaurants')) {
-    addOns.push('I would plan one proper lunch rather than trying to make every golf day feel like a big event.')
+    addOns.push('One proper lunch or Palma evening, planned around the best golf day rather than forced into every day.')
   }
   if (!addOns.length) {
-    addOns.push('Keep extras light at first: course choice, base, and tee-time rhythm matter more than adding things for the sake of it. Once the outline is right, the right extras become obvious.')
+    addOns.push('Keep extras light until the base, courses, and tee-time rhythm are right.')
   }
   return addOns
 }
@@ -459,15 +459,23 @@ export default function ItineraryPlanner() {
           </div>
 
           <div className="itinerary-output__header">
-            <p className="eyebrow">First draft</p>
-            <h2 className="serif-display">What I would start with</h2>
+            <p className="eyebrow">Andy&apos;s read</p>
+            <h2 className="serif-display">The useful version</h2>
           </div>
 
-          <div className="itinerary-result">
-            <h3>Base</h3>
-            <div className="itinerary-result__body">
+          <div className="itinerary-quick-read">
+            <article>
+              <span>Stay</span>
               <p>{getBaseAdvice(form)}</p>
-            </div>
+            </article>
+            <article>
+              <span>Rhythm</span>
+              <p>{getRhythm(form)}</p>
+            </article>
+            <article>
+              <span>Best extra</span>
+              <p>{addOns[0]}</p>
+            </article>
           </div>
 
           <div className="itinerary-result">
@@ -504,8 +512,6 @@ export default function ItineraryPlanner() {
           <div className="itinerary-result">
             <h3>Trip rhythm</h3>
             <div className="itinerary-result__body">
-              <p>{getRhythm(form)}</p>
-              <p>{getSeasonAdvice(form)}</p>
               <div className="itinerary-day-plan">
                 {tripDays.map((day) => (
                   <div className="itinerary-day" key={`${day.label}-${day.title}`}>
@@ -521,20 +527,10 @@ export default function ItineraryPlanner() {
           <div className="itinerary-result itinerary-result--watchouts">
             <h3>Before booking</h3>
             <div className="itinerary-result__body">
+              <p className="itinerary-season-note">{getSeasonAdvice(form)}</p>
               <ul className="itinerary-watchouts">
                 {watchouts.map((watchout) => (
                   <li key={watchout}>{watchout}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="itinerary-result">
-            <h3>Add-ons</h3>
-            <div className="itinerary-result__body">
-              <ul className="itinerary-addons">
-                {addOns.map((addOn) => (
-                  <li key={addOn}>{addOn}</li>
                 ))}
               </ul>
             </div>

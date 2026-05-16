@@ -268,6 +268,37 @@
   text-align: right;
 }
 
+.itinerary-quick-read {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 18px 0 8px;
+}
+
+.itinerary-quick-read article {
+  min-width: 0;
+  border: 1px solid rgba(26,25,22,0.09);
+  background: #fffdf8;
+  padding: 16px;
+}
+
+.itinerary-quick-read span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.itinerary-quick-read p {
+  color: #50483f;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
 .itinerary-result {
   display: grid;
   grid-template-columns: 128px 1fr;
@@ -298,6 +329,10 @@
 
 .itinerary-result__body p + p {
   margin-top: 10px;
+}
+
+.itinerary-season-note {
+  margin-bottom: 12px;
 }
 
 .itinerary-course-list,
@@ -503,6 +538,7 @@
   }
 
   .itinerary-snapshot,
+  .itinerary-quick-read,
   .itinerary-course-card,
   .itinerary-day-plan {
     grid-template-columns: 1fr;
@@ -1230,7 +1266,7 @@ body {
 .cred-logo-bar__logos { display: flex; align-items: stretch; justify-content: center; max-width: 1040px; margin: 0 auto; }
 .cred-logo-bar__item { flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-height: 166px; padding: 0.9rem 1rem; border-right: 1px solid rgba(26,25,22,0.06); text-align: center; }
 .cred-logo-bar__item:last-child { border-right: none; }
-.cred-logo-bar__img { width: auto; height: 126px; max-width: min(230px, 96%); object-fit: contain; filter: saturate(0.98) contrast(1.04); opacity: 0.98; transition: opacity .2s ease, filter .2s ease, transform .2s ease; }
+.cred-logo-bar__img { width: min(238px, 96%); height: auto; max-height: 144px; object-fit: contain; filter: saturate(0.98) contrast(1.04); opacity: 0.98; transition: opacity .2s ease, filter .2s ease, transform .2s ease; }
 .cred-logo-bar__item:hover .cred-logo-bar__img { opacity: 1; filter: saturate(1.04) contrast(1.06); transform: translateY(-1px); }
 .cred-logo-bar__title { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 500; color: var(--deep); line-height: 1.3; margin: 0; }
 .cred-logo-bar__sub { font-family: 'Jost', sans-serif; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); margin: 0; }
@@ -2122,7 +2158,7 @@ select.form-control { cursor: pointer; }
   .cred-logo-bar__item { flex: 1 1 45%; min-height: 162px; border-right: none; border-bottom: 1px solid rgba(26,25,22,0.09); padding: 0.75rem; }
   .cred-logo-bar__item:nth-child(odd) { border-right: 1px solid rgba(26,25,22,0.09); }
   .cred-logo-bar__item:nth-last-child(-n+2) { border-bottom: none; }
-  .cred-logo-bar__img { height: 124px; max-width: 94%; }
+  .cred-logo-bar__img { width: min(180px, 94%); height: auto; max-height: 136px; }
   .cred-logo-bar__title { font-size: 0.95rem; }
   .testimonials { padding: 70px 20px; }
   .testimonials__grid { display: block; overflow: visible; }
