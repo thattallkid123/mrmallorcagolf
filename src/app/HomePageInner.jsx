@@ -34,10 +34,10 @@ const FEATURE_ICONS = {
 const ITINERARY_PLANNER_PATH = '/itinerary'
 
 const CREDENTIAL_LOGOS = [
-  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 960, height: 901 },
-  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 561, height: 720 },
-  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 635, height: 720 },
-  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 720, height: 584 },
+  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1440, height: 1352 },
+  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 760, height: 975 },
+  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 760, height: 862 },
+  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 900, height: 730 },
 ]
 
 function localizePath(path, locale) {
@@ -126,6 +126,8 @@ export default function HomePageInner({ locale = 'en' }) {
                 width={logo.width}
                 height={logo.height}
                 className="cred-logo-bar__img"
+                loading="eager"
+                sizes="(max-width: 700px) 45vw, 238px"
               />
             </div>
           ))}
