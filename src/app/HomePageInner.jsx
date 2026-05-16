@@ -298,37 +298,6 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
       </section>
 
-      {home.credentials ? (
-        <section className="home-credentials">
-          <div className="home-credentials__intro reveal">
-            <p className="eyebrow">{home.credentials.eyebrow}</p>
-            <h2 className="serif-display">{home.credentials.title}</h2>
-            <p>{home.credentials.intro}</p>
-          </div>
-          <div className="home-credentials__grid">
-            {home.credentials.items.map((credential, index) => (
-              <div key={credential.title} className={`home-credential reveal${index ? ` reveal-delay-${Math.min(index, 3)}` : ''}`}>
-                {credential.image ? (
-                  <div className="home-credential__image">
-                    <Image
-                      src={credential.image}
-                      alt={credential.title}
-                      fill
-                      sizes="(max-width: 768px) 50vw, 180px"
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
-                ) : (
-                  <span className="home-credential__mark">{String(index + 1).padStart(2, '0')}</span>
-                )}
-                <h3>{credential.title}</h3>
-                <p>{credential.detail}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      ) : null}
-
       <section className="packages">
         <div className="packages__header reveal">
           <p className="eyebrow">{home.packages.eyebrow}</p>

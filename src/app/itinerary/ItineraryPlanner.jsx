@@ -209,7 +209,7 @@ function getTripDays(form, courses) {
   const days = courses.slice(0, rounds).map((course, index) => ({
     label: `Day ${index + 1}`,
     title: course,
-    detail: COURSE_DETAILS[course]?.note || 'A useful round for the shape of this trip.',
+    detail: getDayRhythmDetail(form, course, index),
   }))
 
   if (form.priorities.includes('pwap') || form.priorities.includes('coaching')) {
@@ -229,6 +229,22 @@ function getTripDays(form, courses) {
   }
 
   return days.slice(0, 5)
+}
+
+function getDayRhythmDetail(form, course, index) {
+  if (index === 0) {
+    if (course === 'Son Gual') return 'Start with the premium test while everyone is fresh, then let the rest of the trip breathe.'
+    if (course === 'Alcanada') return 'Put the scenic anchor early so the north has a clear reason to be in the plan.'
+    return 'Begin with a round that settles the group in without making day one feel like hard work.'
+  }
+
+  if (index === 1) {
+    if (form.priorities.includes('lowTravel')) return 'Keep the second golf day logistically simple so the trip does not become a transfer exercise.'
+    return 'Use the middle round to balance the trip: enough quality, less pressure, better rhythm.'
+  }
+
+  if (form.golf === 'serious') return 'Finish with a course that still feels worth the tee time after two strong golf days.'
+  return 'End with a polished round that leaves room for lunch, travel, or a slower final evening.'
 }
 
 function getWatchouts(form, courses) {
