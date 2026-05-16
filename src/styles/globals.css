@@ -2557,6 +2557,10 @@ select.form-control { cursor: pointer; }
   }
 }
 
+@media (max-width: 700px) {
+  .career-strip__fade { width: 34px; }
+}
+
 /* Mobile-specific hero image positioning */
 @media (max-width: 768px) {
   /* Coaching: Andy is to one side — shift horizontally to keep him in frame */
