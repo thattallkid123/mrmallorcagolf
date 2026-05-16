@@ -1,7 +1,6 @@
 'use client'
 
 import { useContactFormSubmission } from '../../lib/contact-form'
-import BeehiivEmbed from '../../components/BeehiivEmbed'
 
 export default function ContactFormPanel({ locale = 'en', content }) {
   const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission(locale)
@@ -168,12 +167,6 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           </p>
         </div>
       </form>
-
-      <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--linen)' }}>
-        <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>{content.stayInTouch.heading}</p>
-        <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', marginBottom: '1rem', lineHeight: 1.7, fontFamily: "'Jost',sans-serif" }}>{content.stayInTouch.body}</p>
-        <BeehiivEmbed />
-      </div>
     </>
   )
 }

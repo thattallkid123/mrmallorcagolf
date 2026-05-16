@@ -70,3 +70,5 @@ next-env.d.ts
 *-desktop.png
 *-mobile.png
 HANDOVER-*.md
+
+.env*.local

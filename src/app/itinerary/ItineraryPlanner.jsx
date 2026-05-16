@@ -38,9 +38,9 @@ const OPTIONS = {
     { value: 'winter', label: 'Winter (Dec-Feb)' },
   ],
   budget: [
-    { value: 'value', label: 'Good value matters' },
-    { value: 'balanced', label: 'Balanced - spend where it counts' },
-    { value: 'premium', label: 'Premium - best available' },
+    { value: 'value', label: 'Good value' },
+    { value: 'balanced', label: 'Balanced' },
+    { value: 'premium', label: 'Premium' },
   ],
 }
 

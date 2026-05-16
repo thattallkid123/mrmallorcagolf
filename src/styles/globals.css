@@ -78,9 +78,9 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(300px, 0.9fr) minmax(360px, 1.1fr);
+  grid-template-columns: minmax(340px, 0.95fr) minmax(420px, 1.05fr);
   gap: 18px;
-  width: min(1180px, 100%);
+  width: min(1280px, 100%);
   margin: 0 auto;
   align-items: start;
   min-width: 0;
@@ -144,7 +144,8 @@
   color: var(--deep);
   font: inherit;
   font-size: 0.95rem;
-  padding: 0 12px;
+  padding: 0 34px 0 12px;
+  text-overflow: ellipsis;
 }
 
 .itinerary-priorities {
@@ -239,7 +240,7 @@
   display: block;
   color: var(--pine);
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-size: clamp(1.08rem, 1.75vw, 1.35rem);
   line-height: 1.1;
 }
 
