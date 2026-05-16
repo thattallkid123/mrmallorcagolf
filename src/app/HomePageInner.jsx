@@ -119,33 +119,25 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
       </section>
 
-      {/* Credential logo bar */}
+      {/* Credential strip — text only, clean and readable */}
       <section className="cred-logo-bar">
         <p className="cred-logo-bar__label">Qualifications &amp; certifications</p>
         <div className="cred-logo-bar__logos">
           <div className="cred-logo-bar__item">
-            <div className="cred-logo-bar__img-wrap">
-              <Image src="/images/logo-pga.png" alt="PGA Advanced Professional" width={96} height={96} style={{ objectFit: 'contain', width: 'auto', height: '100%' }} />
-            </div>
-            <p className="cred-logo-bar__name">PGA Advanced<br />Professional</p>
+            <p className="cred-logo-bar__title">PGA Advanced<br />Professional</p>
+            <p className="cred-logo-bar__sub">UK PGA · Highest grade</p>
           </div>
           <div className="cred-logo-bar__item">
-            <div className="cred-logo-bar__img-wrap">
-              <Image src="/images/logo-trackman.png" alt="Trackman Master" width={96} height={96} style={{ objectFit: 'contain', width: 'auto', height: '100%' }} />
-            </div>
-            <p className="cred-logo-bar__name">Trackman<br />Master</p>
+            <p className="cred-logo-bar__title">Trackman<br />Master</p>
+            <p className="cred-logo-bar__sub">First in China</p>
           </div>
           <div className="cred-logo-bar__item">
-            <div className="cred-logo-bar__img-wrap">
-              <Image src="/images/logo-tpi.png" alt="TPI Level 3" width={96} height={96} style={{ objectFit: 'contain', width: 'auto', height: '100%' }} />
-            </div>
-            <p className="cred-logo-bar__name">TPI Level 3<br />Certified</p>
+            <p className="cred-logo-bar__title">TPI Level 3<br />Certified</p>
+            <p className="cred-logo-bar__sub">Titleist Performance Institute</p>
           </div>
           <div className="cred-logo-bar__item">
-            <div className="cred-logo-bar__img-wrap">
-              <Image src="/images/logo-uskids.png" alt="US Kids Top 50 Coach" width={96} height={96} style={{ objectFit: 'contain', width: 'auto', height: '100%' }} />
-            </div>
-            <p className="cred-logo-bar__name">US Kids Golf<br />Top 50 Coach</p>
+            <p className="cred-logo-bar__title">US Kids Golf<br />Top 50 Coach</p>
+            <p className="cred-logo-bar__sub">Global ranking · 2023</p>
           </div>
         </div>
       </section>
