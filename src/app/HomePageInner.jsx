@@ -34,6 +34,13 @@ const FEATURE_ICONS = {
 
 const ITINERARY_PLANNER_PATH = '/itinerary'
 
+const CREDENTIAL_LOGOS = [
+  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 120, height: 120 },
+  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 96, height: 120 },
+  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 120, height: 120 },
+  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 148, height: 120 },
+]
+
 function localizePath(path, locale) {
   if (!path || path.startsWith('http') || path.startsWith('#')) return path
   return locale === 'en' ? path : `/${locale}${path}`
@@ -118,27 +125,20 @@ export default function HomePageInner({ locale = 'en' }) {
           ))}
         </div>
       </section>
-
-      {/* Credential strip — text only, clean and readable */}
+      {/* Credential strip */}
       <section className="cred-logo-bar">
-        <p className="cred-logo-bar__label">Qualifications &amp; certifications</p>
         <div className="cred-logo-bar__logos">
-          <div className="cred-logo-bar__item">
-            <p className="cred-logo-bar__title">PGA Advanced<br />Professional</p>
-            <p className="cred-logo-bar__sub">UK PGA · Highest grade</p>
-          </div>
-          <div className="cred-logo-bar__item">
-            <p className="cred-logo-bar__title">Trackman<br />Master</p>
-            <p className="cred-logo-bar__sub">First in China</p>
-          </div>
-          <div className="cred-logo-bar__item">
-            <p className="cred-logo-bar__title">TPI Level 3<br />Certified</p>
-            <p className="cred-logo-bar__sub">Titleist Performance Institute</p>
-          </div>
-          <div className="cred-logo-bar__item">
-            <p className="cred-logo-bar__title">US Kids Golf<br />Top 50 Coach</p>
-            <p className="cred-logo-bar__sub">Global ranking · 2023</p>
-          </div>
+          {CREDENTIAL_LOGOS.map((logo) => (
+            <div className="cred-logo-bar__item" key={logo.name}>
+              <Image
+                src={logo.src}
+                alt={logo.name}
+                width={logo.width}
+                height={logo.height}
+                className="cred-logo-bar__img"
+              />
+            </div>
+          ))}
         </div>
       </section>
 
@@ -364,7 +364,7 @@ export default function HomePageInner({ locale = 'en' }) {
         )}
       </section>
 
-      {/* Jo's quote — social proof after packages, before final CTA */}
+      {/* Jo's quote - social proof after packages, before final CTA */}
       <section style={{ background: 'var(--pine)', padding: 'clamp(48px,6vw,72px) clamp(20px,5vw,60px)' }}>
         <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
           <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.3rem,2.5vw,1.9rem)', fontStyle: 'italic', fontWeight: 400, color: '#fff', lineHeight: 1.45, marginBottom: '1.25rem' }}>

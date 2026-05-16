@@ -244,7 +244,7 @@ export const HOME_CONTENT = {
           features: [
             'Two or three days built around your group',
             'Premium course mix and tee-time rhythm',
-            'Transfers, lunch, spa, club hire, and extras coordinated',
+            'Transfers, lunch, spa time, and club hire coordinated where needed',
             'One hosted Play With A Pro day if useful',
             'Restaurant and recovery time planned properly',
             'A trip that feels calm when you arrive',
