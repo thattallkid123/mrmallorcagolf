@@ -381,11 +381,6 @@ export default function ItineraryPlanner() {
           which base, what rhythm, and whether a day with me on course belongs in the plan.
           It&apos;s a first draft, not a commitment. Send it over and I&apos;ll tell you what I&apos;d change.
         </p>
-        <div className="itinerary-proof" aria-label="Why this planner helps">
-          <span>24 island courses</span>
-          <span>PGA Advanced Professional</span>
-          <span>Trip logic before you book</span>
-        </div>
       </div>
 
       <div className="itinerary-tool">

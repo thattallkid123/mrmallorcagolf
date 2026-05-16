@@ -1225,10 +1225,10 @@ body {
 .what__feature-text p { font-size: 0.87rem; color: var(--taupe); line-height: 1.7; margin: 0; }
 
 /* Credential strip — text only, clean and always readable */
-.cred-logo-bar { background: #fff; border-top: 1px solid rgba(26,25,22,0.08); border-bottom: 1px solid rgba(26,25,22,0.08); padding: 0 clamp(20px,5vw,60px); }
+.cred-logo-bar { background: linear-gradient(180deg, #fbfaf6 0%, var(--cream) 100%); border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(26,25,22,0.06); padding: 0 clamp(20px,5vw,60px); }
 .cred-logo-bar__label { text-align: center; font-family: 'Jost',sans-serif; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--taupe); padding: 1.8rem 0 1.35rem; margin: 0; }
 .cred-logo-bar__logos { display: flex; align-items: stretch; justify-content: center; max-width: 1040px; margin: 0 auto; }
-.cred-logo-bar__item { flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-height: 138px; padding: 1.35rem 1.25rem 1.55rem; border-right: 1px solid rgba(26,25,22,0.08); text-align: center; }
+.cred-logo-bar__item { flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-height: 138px; padding: 1.35rem 1.25rem 1.55rem; border-right: 1px solid rgba(26,25,22,0.06); text-align: center; }
 .cred-logo-bar__item:last-child { border-right: none; }
 .cred-logo-bar__img { width: auto; height: 86px; max-width: min(184px, 88%); object-fit: contain; filter: saturate(0.96) contrast(1.03); opacity: 0.98; transition: opacity .2s ease, filter .2s ease, transform .2s ease; }
 .cred-logo-bar__item:hover .cred-logo-bar__img { opacity: 1; filter: saturate(1.04) contrast(1.06); transform: translateY(-1px); }
