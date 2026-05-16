@@ -7,33 +7,21 @@ import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 const PAGE_LINKS = {
   en: {
     courses: 'See all Mallorca courses',
-    sonGual: 'Read the Son Gual review',
-    alcanada: 'Read the Alcanada review',
   },
   de: {
     courses: 'Alle Golfplaetze ansehen',
-    sonGual: 'Son Gual Bewertung lesen',
-    alcanada: 'Alcanada Bewertung lesen',
   },
   es: {
     courses: 'Ver todos los campos',
-    sonGual: 'Leer analisis de Son Gual',
-    alcanada: 'Leer analisis de Alcanada',
   },
   fr: {
     courses: 'Voir tous les parcours',
-    sonGual: 'Lire lavis Son Gual',
-    alcanada: 'Lire lavis Alcanada',
   },
   nl: {
     courses: 'Bekijk alle banen',
-    sonGual: 'Lees de Son Gual review',
-    alcanada: 'Lees de Alcanada review',
   },
   sv: {
     courses: 'Se alla banor',
-    sonGual: 'Las Son Gual-omdomet',
-    alcanada: 'Las Alcanada-omdomet',
   },
   zh: {
     courses: '查看全部球场',
@@ -50,7 +38,7 @@ function buildPlayWithAProSchema(locale, content) {
   const pagePath = buildLocalePath('/play-with-a-pro', locale)
   const contactPath = buildLocalePath('/contact', locale)
   const golfCoursesPath = buildLocalePath('/golf-courses', locale)
-  const serviceName = locale === 'en' ? 'Play With A Pro Mallorca Golf Add-On' : content.hero.title
+  const serviceName = locale === 'en' ? 'Play With A Pro Mallorca Private Golf Day' : content.hero.title
 
   return {
     '@context': 'https://schema.org',
@@ -77,8 +65,6 @@ function buildPlayWithAProSchema(locale, content) {
     },
     isRelatedTo: [
       { '@type': 'WebPage', url: `${SITE_ORIGIN}${golfCoursesPath}` },
-      { '@type': 'WebPage', url: `${SITE_ORIGIN}${buildLocalePath('/guides/son-gual-review', locale)}` },
-      { '@type': 'WebPage', url: `${SITE_ORIGIN}${buildLocalePath('/guides/alcanada-review', locale)}` },
     ],
   }
 }
@@ -112,8 +98,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const links = PAGE_LINKS[locale] || PAGE_LINKS.en
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
-    sonGual: buildLocalePath('/guides/son-gual-review', locale),
-    alcanada: buildLocalePath('/guides/alcanada-review', locale),
   }
 
   return (
@@ -211,8 +195,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <p className="pwap-courses__body">{content.courses.body}</p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
               <Link href={reviewLinks.courses} className="btn btn--dark">{links.courses}</Link>
-              <Link href={reviewLinks.sonGual} className="btn btn--outline-white">{links.sonGual}</Link>
-              <Link href={reviewLinks.alcanada} className="btn btn--outline-white">{links.alcanada}</Link>
             </div>
           </div>
         </section>

@@ -52,7 +52,7 @@ export const HOME_CONTENT = {
         {
           title: 'I want Andy on the course',
           text: 'Add a private day with me to your trip: one course, 18 holes, local course management, and coaching woven into the round.',
-          cta: 'See the add-on',
+          cta: 'Play With A Pro',
           href: '/play-with-a-pro',
         },
       ],
@@ -221,7 +221,7 @@ export const HOME_CONTENT = {
           href: '/itinerary',
         },
         {
-          eyebrow: 'Premium add-on',
+          eyebrow: 'Play With A Pro',
           name: 'Play With A Pro',
           price: 'From EUR495',
           features: [
@@ -233,7 +233,7 @@ export const HOME_CONTENT = {
             'Works for solo golfers, pairs, and small groups',
           ],
           note: "My day rate. Green fee, lunch, buggy, transport, and club hire are confirmed separately before you book.",
-          cta: 'See the add-on ->',
+          cta: 'Play With A Pro ->',
           href: '/play-with-a-pro',
           featured: true,
         },

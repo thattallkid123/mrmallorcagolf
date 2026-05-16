@@ -214,8 +214,8 @@ function getTripDays(form, courses) {
 
   if (form.priorities.includes('pwap') || form.priorities.includes('coaching')) {
     days.splice(Math.min(1, days.length), 0, {
-      label: 'Hosted add-on',
-      title: 'A day with Andy',
+      label: 'Play With A Pro',
+      title: 'A private day with Andy',
       detail: 'Course management, local decisions, and coaching folded into the round.',
     })
   }

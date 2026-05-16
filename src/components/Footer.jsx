@@ -9,7 +9,7 @@ const FOOTER_COPY = {
     tagline: 'Mallorca golf trip planning with Andy Griffiths. Local course judgment, itinerary logic, and premium add-ons when they help.',
     experiences: 'Plan',
     itinerary: 'Build Itinerary',
-    pwap: 'Play With A Pro add-on',
+    pwap: 'Play With A Pro',
     day: 'A Day at Son Gual',
     guide: 'Golf Guide',
     about: 'About',
@@ -157,8 +157,6 @@ export default function Footer({ lang }) {
         <ul>
           <li><Link href={`${prefix}/guides`}>{copy.guide}</Link></li>
           <li><Link href={`${prefix}/golf-courses`}>{copy.allCourses}</Link></li>
-          <li><Link href={`${prefix}/golf-courses#son-gual`}>Son Gual</Link></li>
-          <li><Link href={`${prefix}/golf-courses#alcanada`}>Alcanada</Link></li>
         </ul>
       </div>
 

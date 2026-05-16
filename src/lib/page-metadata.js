@@ -200,7 +200,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Play With A Pro in Mallorca | Premium Golf Trip Add-On',
+    title: 'Play With A Pro in Mallorca | Private Golf Day',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {

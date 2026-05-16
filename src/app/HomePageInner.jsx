@@ -116,14 +116,6 @@ export default function HomePageInner({ locale = 'en' }) {
             <p key={i} style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.74)', lineHeight: 1.85, marginBottom: i < home.intro.paragraphs.length - 1 ? '1.25rem' : 0 }}>{p}</p>
           ))}
         </div>
-        <div className="intro__right">
-          {home.intro.stats.map((stat, index) => (
-            <div key={stat.label} className={`intro__stat reveal reveal-delay-${index + 1}`}>
-              <div className="intro__stat-num">{stat.value}</div>
-              <div className="intro__stat-label">{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </section>
       {/* Credential strip */}
       <section className="cred-logo-bar">
