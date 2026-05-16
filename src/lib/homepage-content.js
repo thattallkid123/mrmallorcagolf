@@ -202,7 +202,7 @@ export const HOME_CONTENT = {
     packages: {
       eyebrow: 'Trip options',
       title: 'Choose the level of help.',
-      body: 'Once the shape of the trip is clear, these are the two premium ways I can be directly involved.',
+      body: 'Once the shape of the trip is clear, these are the three premium ways I can be directly involved: a Play With A Pro day, a fully hosted journey, or a lighter plan-and-book route.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -230,8 +230,8 @@ export const HOME_CONTENT = {
             'One hosted Play With A Pro day if useful',
           ],
           note: 'Bespoke. I coordinate the itinerary with you in advance and confirm the full plan before you arrive.',
-          cta: 'Enquire ->',
-          href: '/contact',
+          cta: 'Plan trip ->',
+          href: '/itinerary',
         },
       ],
       multiDay: {
@@ -1361,7 +1361,8 @@ const HOME_PACKAGE_ITEMS = {
         'Spa access and concierge support available',
       ],
       note: 'Green fees and lunch are separate. Rental clubs, caddy, and other extras are available add-ons.',
-      cta: 'Enquire',
+      cta: 'Plan trip',
+      href: '/itinerary',
     },
   ],
   de: [

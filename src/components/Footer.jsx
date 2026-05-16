@@ -8,13 +8,14 @@ const FOOTER_COPY = {
   en: {
     tagline: 'Mallorca golf trip planning with Andy Griffiths. Local course judgment, itinerary logic, and premium add-ons when they help.',
     experiences: 'Plan',
-    itinerary: 'Build Itinerary',
+    itinerary: 'Plan Trip',
     pwap: 'Play With A Pro',
     day: 'A Day at Son Gual',
-    guide: 'Golf Guide',
+    guide: 'Golf Guides',
+    guideArticles: 'Planning Articles',
     about: 'About',
     allCourses: 'All Courses',
-    enquire: 'Enquire',
+    enquire: null,
     newsletter: 'Newsletter',
     newsletterLink: 'Subscribe for insights',
     privacy: 'Privacy Policy',
@@ -148,14 +149,14 @@ export default function Footer({ lang }) {
           {copy.itinerary ? <li><Link href="/itinerary">{copy.itinerary}</Link></li> : null}
           <li><Link href={`${prefix}/play-with-a-pro`}>{copy.pwap}</Link></li>
           <li><Link href={getADayPath(locale)}>{copy.day}</Link></li>
-          <li><Link href={`${prefix}/contact`}>{copy.enquire}</Link></li>
+          {copy.enquire ? <li><Link href={`${prefix}/contact`}>{copy.enquire}</Link></li> : null}
         </ul>
       </div>
 
       <div className="footer__col">
         <h3>{copy.guide}</h3>
         <ul>
-          <li><Link href={`${prefix}/guides`}>{copy.guide}</Link></li>
+          <li><Link href={`${prefix}/guides`}>{copy.guideArticles || copy.guide}</Link></li>
           <li><Link href={`${prefix}/golf-courses`}>{copy.allCourses}</Link></li>
         </ul>
       </div>
