@@ -943,21 +943,17 @@ body {
 .what__feature-text h3 { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--deep); margin-bottom: 5px; }
 .what__feature-text p { font-size: 0.87rem; color: var(--taupe); line-height: 1.7; margin: 0; }
 
-/* Credential logo bar — white bg, uniform bordered cells, brand-appropriate per logo */
-.cred-logo-bar { background: #fff; border-top: 1px solid rgba(26,25,22,0.09); border-bottom: 1px solid rgba(26,25,22,0.09); }
-.cred-logo-bar__label { text-align: center; font-family: 'Jost',sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--taupe); padding: 1.5rem 0 0; margin: 0; }
-.cred-logo-bar__logos { display: flex; align-items: stretch; justify-content: center; flex-wrap: nowrap; border-top: 1px solid rgba(26,25,22,0.09); margin-top: 1rem; }
-.cred-logo-bar__item { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; padding: 1.75rem 2rem; border-right: 1px solid rgba(26,25,22,0.09); }
+/* Credential logo bar */
+.cred-logo-bar { background: #fff; border-top: 1px solid rgba(26,25,22,0.09); border-bottom: 1px solid rgba(26,25,22,0.09); padding: 2.5rem clamp(20px,5vw,60px); }
+.cred-logo-bar__label { text-align: center; font-family: 'Jost',sans-serif; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--taupe); margin: 0 0 2rem; }
+.cred-logo-bar__logos { display: flex; align-items: flex-start; justify-content: center; gap: 0; border: 1px solid rgba(26,25,22,0.09); max-width: 900px; margin: 0 auto; }
+.cred-logo-bar__item { flex: 1 1 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 1rem; padding: 2rem 1.5rem; border-right: 1px solid rgba(26,25,22,0.09); text-align: center; }
 .cred-logo-bar__item:last-child { border-right: none; }
-.cred-logo-bar__item img { max-height: 52px; width: auto; max-width: 130px; object-fit: contain; display: block; }
-/* PGA — dark bg so white logo is legible */
-.cred-logo-bar__item--pga { background: #002147; }
-/* Trackman — brand orange */
-.cred-logo-bar__item--trackman { background: #fff; }
-/* TPI — neutral */
-.cred-logo-bar__item--tpi { background: #fff; }
-/* US Kids — neutral */
-.cred-logo-bar__item--uskids { background: #fff; }
+.cred-logo-bar__img-wrap { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+/* All logos: greyscale + uniform dark — premium "as seen in" treatment */
+.cred-logo-bar__img-wrap img { display: block; max-width: 72px; max-height: 72px; filter: brightness(0) opacity(0.65); transition: filter 0.2s ease; }
+.cred-logo-bar__item:hover .cred-logo-bar__img-wrap img { filter: brightness(0) opacity(0.9); }
+.cred-logo-bar__name { font-family: 'Jost', sans-serif; font-size: 9.5px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--deep); line-height: 1.55; margin: 0; opacity: 0.55; }
 .cred-logo-bar__note { display: none; }
 
 /* Credentials section — light background, clean cells, full-colour logos */
@@ -968,10 +964,10 @@ body {
 .home-credentials__grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid rgba(26,25,22,0.09); }
 .home-credential { padding: 36px 32px; background: #fff; border-right: 1px solid rgba(26,25,22,0.09); border-bottom: 1px solid rgba(26,25,22,0.09); }
 .home-credential:nth-child(3n) { border-right: none; }
-.home-credential__image { position: relative; width: 130px; height: 72px; margin-bottom: 20px; }
-.home-credential__mark { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; margin-bottom: 20px; border: 1px solid rgba(26,25,22,0.15); color: var(--taupe); font-family: var(--font-serif); font-size: 1.1rem; }
-.home-credential h3 { color: var(--deep); font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-bottom: 8px; }
-.home-credential p { color: var(--taupe); font-size: 0.88rem; line-height: 1.72; }
+.home-credential__image { display: none; }
+.home-credential__mark { display: inline-block; font-family: var(--font-serif); font-size: 0.85rem; font-style: italic; color: var(--gold); letter-spacing: 0.04em; margin-bottom: 16px; }
+.home-credential h3 { color: var(--deep); font-family: var(--font-serif); font-size: 1.1rem; font-weight: 500; line-height: 1.25; margin-bottom: 10px; }
+.home-credential p { color: var(--taupe); font-size: 0.875rem; line-height: 1.78; }
 
 .testimonials { background: var(--deep); padding: 84px 24px; }
 .testimonials__header { text-align: center; margin-bottom: 56px; }
@@ -1837,6 +1833,11 @@ select.form-control { cursor: pointer; }
   .what { grid-template-columns: 1fr; gap: 40px; padding: 70px 20px; }
   .home-credentials { padding: 64px 20px; }
   .home-credentials__grid { grid-template-columns: 1fr; }
+  .cred-logo-bar { padding: 2rem 20px; }
+  .cred-logo-bar__logos { flex-wrap: wrap; }
+  .cred-logo-bar__item { flex: 1 1 45%; border-right: none; border-bottom: 1px solid rgba(26,25,22,0.09); padding: 1.5rem 1rem; }
+  .cred-logo-bar__item:nth-child(odd) { border-right: 1px solid rgba(26,25,22,0.09); }
+  .cred-logo-bar__item:nth-last-child(-n+2) { border-bottom: none; }
   .testimonials { padding: 70px 20px; }
   .testimonials__grid { display: block; overflow: visible; }
   .testimonials__grid .testimonial { max-width: none; width: 100%; }

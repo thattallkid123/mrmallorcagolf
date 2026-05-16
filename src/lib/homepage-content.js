@@ -179,12 +179,12 @@ export const HOME_CONTENT = {
       title: 'The person behind the recommendations.',
       intro: 'I am a UK PGA Advanced Professional based in Mallorca. Before building Mr Mallorca Golf I coached and worked across some very different golf environments: elite coaching in China, Pebble Beach, Doral, Evian, The Open, and a season at sea with Costa Cruises.',
       items: [
-        { title: 'Trackman Master', detail: 'First Trackman Master in China', image: '/images/credential-trackman-master.png' },
-        { title: 'PGA Advanced Professional', detail: 'UK PGA qualification and more than 15,000 hours coaching', image: '/images/credential-pga-advanced.webp' },
-        { title: 'TPI Level 3', detail: 'Titleist Performance Institute certification for how the body affects the swing' },
-        { title: 'US Kids Top 50 Coach', detail: 'Recognised for junior development and family coaching environments' },
-        { title: 'China and Mandarin', detail: '11 years in Shanghai, national team players, fluent Mandarin, hundreds of millions of coaching views' },
-        { title: 'World-class venues', detail: 'Pebble Beach, Doral, Evian, The Open Championship, Costa Cruises, and now Mallorca' },
+        { title: 'PGA Advanced Professional', detail: 'UK PGA qualification — the highest standard in British golf coaching — with more than 15,000 hours on the range and course.' },
+        { title: 'Trackman Master', detail: 'The first Trackman Master in China. Data-driven coaching built on the technology that Tour coaches use.' },
+        { title: 'TPI Level 3', detail: 'Titleist Performance Institute certification — understanding how the body moves and how it limits or unlocks the swing.' },
+        { title: 'US Kids Top 50 Coach', detail: 'Recognised for junior development and long-term player development environments.' },
+        { title: '11 years in Shanghai', detail: 'National team players, hundreds of millions of coaching views on Douyin, and real elite coaching environments.' },
+        { title: 'World-class venues', detail: 'Pebble Beach, Doral, Evian, The Open Championship, Costa Cruises, and now the courses of Mallorca.' },
       ],
     },
     quote: {
