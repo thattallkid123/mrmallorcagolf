@@ -119,10 +119,23 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
       </section>
 
-      <section style={{ background: 'var(--deep)', borderTop: '1px solid rgba(255,255,255,0.06)', padding: '1.5rem clamp(20px,5vw,60px)' }}>
-        <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'rgba(255,255,255,0.74)', fontFamily: "'Jost',sans-serif", fontWeight: 300, lineHeight: 1.6 }}>
-          {home.socialProof}
-        </p>
+      {/* Credential logo bar */}
+      <section className="cred-logo-bar">
+        <p className="cred-logo-bar__label">Qualifications &amp; certifications</p>
+        <div className="cred-logo-bar__logos">
+          <div className="cred-logo-bar__item" title="UK PGA Advanced Professional">
+            <Image src="/images/logo-pga.png" alt="PGA Advanced Professional" width={120} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
+          </div>
+          <div className="cred-logo-bar__item" title="Trackman Master Certified">
+            <Image src="/images/logo-trackman.png" alt="Trackman Master Certified" width={160} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
+          </div>
+          <div className="cred-logo-bar__item" title="TPI Level 3 Certified">
+            <Image src="/images/logo-tpi.png" alt="TPI Level 3 Certified" width={120} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
+          </div>
+          <div className="cred-logo-bar__item" title="US Kids Golf Top 50 Coach">
+            <Image src="/images/logo-uskids.png" alt="US Kids Golf Top 50 Coach" width={120} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
+          </div>
+        </div>
       </section>
 
       {home.journey ? (
@@ -132,18 +145,40 @@ export default function HomePageInner({ locale = 'en' }) {
             <h2 className="serif-display">{home.journey.title}</h2>
           </div>
           <div className="journey__grid">
-            {home.journey.items.map((item, index) => (
-              <a
-                key={item.title}
-                href={localizePath(item.href, locale)}
-                className={`journey-card reveal${index ? ` reveal-delay-${index}` : ''}`}
-              >
-                <span className="journey-card__num">0{index + 1}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                <span className="journey-card__cta">{item.cta}</span>
-              </a>
-            ))}
+            {home.journey.items.map((item, index) => {
+              const JOURNEY_IMAGES = [
+                '/images/son-gual-card.webp',
+                '/images/alcanada-card.webp',
+                '/images/client-alcanada.webp',
+              ]
+              const img = JOURNEY_IMAGES[index]
+              return (
+                <a
+                  key={item.title}
+                  href={localizePath(item.href, locale)}
+                  className={`journey-card journey-card--photo reveal${index ? ` reveal-delay-${index}` : ''}`}
+                >
+                  {img && (
+                    <div className="journey-card__photo">
+                      <Image
+                        src={img}
+                        alt={item.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 380px"
+                        style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+                      />
+                      <div className="journey-card__overlay" />
+                    </div>
+                  )}
+                  <div className="journey-card__body">
+                    <span className="journey-card__num">0{index + 1}</span>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <span className="journey-card__cta">{item.cta}</span>
+                  </div>
+                </a>
+              )
+            })}
           </div>
         </section>
       ) : null}

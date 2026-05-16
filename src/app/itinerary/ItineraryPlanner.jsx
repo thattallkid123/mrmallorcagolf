@@ -8,44 +8,58 @@ const OPTIONS = {
     { value: '4', label: '4 nights' },
     { value: '5', label: '5 nights' },
     { value: '7', label: '7 nights' },
+    { value: 'other', label: 'Something else', freeText: true },
   ],
   group: [
-    { value: 'solo', label: 'Solo / pair' },
+    { value: 'solo', label: 'Solo or pair' },
     { value: 'friends', label: 'Friends trip' },
-    { value: 'family', label: 'Family / mixed' },
+    { value: 'family', label: 'Family or mixed group' },
     { value: 'corporate', label: 'Corporate' },
+    { value: 'other', label: 'Something else', freeText: true },
   ],
   golf: [
-    { value: 'relaxed', label: '2-3 relaxed rounds' },
-    { value: 'balanced', label: '3-4 strong rounds' },
-    { value: 'serious', label: 'Play the best available' },
+    { value: 'relaxed', label: 'A couple of relaxed rounds' },
+    { value: 'balanced', label: 'Three or four good rounds' },
+    { value: 'serious', label: 'Play the best courses available' },
+    { value: 'other', label: 'Tell me more', freeText: true },
   ],
   base: [
     { value: 'palma', label: 'Palma / Son Vida' },
     { value: 'southwest', label: 'Southwest' },
     { value: 'north', label: 'North / Alcudia' },
     { value: 'unsure', label: 'Not sure yet' },
+    { value: 'other', label: 'Somewhere else', freeText: true },
   ],
   season: [
-    { value: 'spring', label: 'Mar-May' },
-    { value: 'summer', label: 'Jun-Aug' },
-    { value: 'autumn', label: 'Sep-Nov' },
-    { value: 'winter', label: 'Dec-Feb' },
+    { value: 'spring', label: 'Spring (Mar-May)' },
+    { value: 'summer', label: 'Summer (Jun-Aug)' },
+    { value: 'autumn', label: 'Autumn (Sep-Nov)' },
+    { value: 'winter', label: 'Winter (Dec-Feb)' },
   ],
   budget: [
-    { value: 'value', label: 'Value-aware' },
-    { value: 'balanced', label: 'Balanced' },
-    { value: 'premium', label: 'Premium' },
+    { value: 'value', label: 'Good value matters' },
+    { value: 'balanced', label: 'Balanced — spend where it counts' },
+    { value: 'premium', label: 'Premium — best available' },
   ],
 }
 
+const FIELD_LABELS = {
+  nights: 'Trip length',
+  group: 'Who is travelling',
+  golf: 'How much golf',
+  base: 'Where to base',
+  season: 'When',
+  budget: 'Budget style',
+}
+
 const PRIORITIES = [
-  { value: 'championship', label: 'Championship courses' },
-  { value: 'scenery', label: 'Sea views / scenery' },
-  { value: 'lowTravel', label: 'Lower travel time' },
-  { value: 'restaurants', label: 'Good lunch / restaurants' },
-  { value: 'pwap', label: 'Play With A Pro add-on' },
-  { value: 'clubHire', label: 'Club hire / transfers' },
+  { value: 'championship', label: 'The best courses on the island' },
+  { value: 'scenery', label: 'Sea views and scenery' },
+  { value: 'lowTravel', label: 'Minimal driving between rounds' },
+  { value: 'restaurants', label: 'Good lunch and dining' },
+  { value: 'pwap', label: 'A day with Andy on course' },
+  { value: 'coaching', label: 'On-course coaching' },
+  { value: 'clubHire', label: 'Club hire and transfers' },
 ]
 
 function getCourseMix(form) {
@@ -94,8 +108,8 @@ function getSeasonAdvice(form) {
 
 function getAddOns(form) {
   const addOns = []
-  if (form.priorities.includes('pwap') || form.golf === 'serious') {
-    addOns.push('I would consider one Play With A Pro day on the course where local judgment will change the score most.')
+  if (form.priorities.includes('pwap') || form.priorities.includes('coaching') || form.golf === 'serious') {
+    addOns.push('A day with me on course — proper course management, coaching woven into the round, and local knowledge that changes how you approach each hole. This is the most personal thing I offer.')
   }
   if (form.priorities.includes('clubHire')) {
     addOns.push('I would sort club hire and transfers before tee times become tight, especially for a group.')
@@ -104,7 +118,7 @@ function getAddOns(form) {
     addOns.push('I would plan one proper lunch rather than trying to make every golf day feel like a big event.')
   }
   if (!addOns.length) {
-    addOns.push('I would keep extras light at first: course choice, base, and tee-time rhythm matter more than adding things for the sake of it.')
+    addOns.push('Keep extras light at first: course choice, base, and tee-time rhythm matter more than adding things for the sake of it. Once the outline is right, the right extras become obvious.')
   }
   return addOns
 }
@@ -124,6 +138,7 @@ export default function ItineraryPlanner() {
     season: 'autumn',
     budget: 'balanced',
     priorities: ['championship', 'lowTravel'],
+    freeText: {},
   })
 
   const courses = useMemo(() => getCourseMix(form), [form])
@@ -131,6 +146,7 @@ export default function ItineraryPlanner() {
   const whatsappHref = `https://wa.me/34624466702?text=${buildMessage(form, courses)}`
 
   const update = (key, value) => setForm((current) => ({ ...current, [key]: value }))
+  const updateFreeText = (key, value) => setForm((current) => ({ ...current, freeText: { ...current.freeText, [key]: value } }))
   const togglePriority = (value) => {
     setForm((current) => ({
       ...current,
@@ -146,9 +162,9 @@ export default function ItineraryPlanner() {
         <p className="eyebrow">Mallorca golf itinerary planner</p>
         <h1 className="serif-display">Build a first draft of your trip.</h1>
         <p>
-          This is the public version of how I start planning: dates, group, course appetite, base, budget,
-          and the extras that might genuinely improve the trip. It will not replace a proper sanity-check,
-          but it gives us a much better place to begin.
+          Answer a few quick questions and I&apos;ll show you where I&apos;d start: which courses,
+          which base, what rhythm, and whether a day with me on course belongs in the plan.
+          It&apos;s a first draft — not a commitment. Send it over and I&apos;ll tell you what I&apos;d change.
         </p>
       </div>
 
@@ -157,7 +173,7 @@ export default function ItineraryPlanner() {
           <div className="itinerary-control-grid">
             {Object.entries(OPTIONS).map(([key, options]) => (
               <label className="itinerary-field" key={key}>
-                <span>{key === 'nights' ? 'Trip length' : key}</span>
+                <span>{FIELD_LABELS[key] || key}</span>
                 <select value={form[key]} onChange={(event) => update(key, event.target.value)}>
                   {options.map((option) => (
                     <option key={option.value} value={option.value}>
@@ -165,12 +181,21 @@ export default function ItineraryPlanner() {
                     </option>
                   ))}
                 </select>
+                {form[key] === 'other' && options.find((o) => o.value === 'other')?.freeText && (
+                  <input
+                    type="text"
+                    className="itinerary-freetext"
+                    placeholder="Tell me more..."
+                    value={form.freeText[key] || ''}
+                    onChange={(event) => updateFreeText(key, event.target.value)}
+                  />
+                )}
               </label>
             ))}
           </div>
 
           <div className="itinerary-priorities">
-            <p className="itinerary-label">Priorities</p>
+            <p className="itinerary-label">What matters most to you?</p>
             <div className="itinerary-chip-grid">
               {PRIORITIES.map((priority) => (
                 <button

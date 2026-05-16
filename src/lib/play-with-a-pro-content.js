@@ -7,23 +7,23 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/',
       breadcrumbHome: 'Home',
       breadcrumbCurrent: 'Play with a Pro',
-      eyebrow: 'Premium add-on · Mallorca',
-      title: 'Add a private day with me to your Mallorca trip.',
-      body: 'This is the premium add-on when you want me on the course with you: one carefully chosen course, 18 holes together, local course management, and coaching woven into the round. Solo from €495. Groups from €950.',
+      eyebrow: 'A Private Day on Course · Mallorca',
+      title: 'One course. 18 holes. Me alongside you the whole way.',
+      body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €495. Groups from €950.',
       price: null,
       primaryCta: 'Add this to my trip →',
       primaryHref: '/contact',
       secondaryCta: 'See the options',
     },
     day: {
-      eyebrow: 'Where this fits',
+      eyebrow: 'What the day is',
       title: 'The trip comes first. This day makes it more personal.',
       paragraphs: [
-        'If you are already planning a Mallorca golf trip, this is the day I would add when you want something more personal than another tee time. I help choose the right course, then I play the round with you rather than handing you off at reception.',
-        'Before the day, I want to understand your game and the kind of trip you are building. During the round, the coaching is woven in naturally. Not a running commentary. More the right observation at the point where it can still change the hole, the score, or the decision standing in front of you.',
+        'You arrive at the course. I handle everything before that: the right course for your game, the tee time, the briefing. Then we play. The coaching is woven into the round at the moments where it can still change something — the hole, the score, the decision you are standing in front of.',
+        'Before we play, I want to understand how your game works and what you are building in Mallorca. I am a PGA Advanced Professional with 15,000+ coaching hours and a Trackman Master certification. That background informs the day, but it stays in the background. The experience is the round.',
       ],
       quote:
-        'A Play With A Pro day works best when it improves the trip, not when it becomes the whole trip.',
+        'The fastest improvements usually happen on the course, not the range. Real conditions, real decisions — that kind of progress tends to stick.',
       questionnaireEyebrow: 'Already booked?',
       questionnaireTitle: 'Complete your Pre-Round Questionnaire →',
       questionnaireBody: 'Takes 3 minutes. Helps me tailor the day to you before we reach the first tee.',
@@ -73,9 +73,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       ],
     },
     packages: {
-      eyebrow: 'Add-on options',
-      title: 'Choose how much of the trip I am involved in.',
-      body: 'These sit inside the wider itinerary. If you are still working out the trip shape, start with the itinerary planner first, then add one of these if it makes the whole visit better.',
+      eyebrow: 'The day, three ways',
+      title: 'Solo, with a group, or the full hosted journey.',
+      body: 'All three include the same quality of day. The difference is how many of you there are, and how much of the surrounding trip you want me to take off your hands.',
       tiers: [
         {
           eyebrow: 'A Day With Andy',
