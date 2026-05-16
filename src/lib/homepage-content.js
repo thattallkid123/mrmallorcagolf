@@ -201,8 +201,8 @@ export const HOME_CONTENT = {
     },
     packages: {
       eyebrow: 'Trip options',
-      title: 'Build the trip, then choose the level of help.',
-      body: 'The itinerary is the main thing. A private day with me is one powerful add-on, but not every trip needs the same shape.',
+      title: 'Choose the level of help.',
+      body: 'Once the shape of the trip is clear, these are the two premium ways I can be directly involved.',
       items: [
         {
           eyebrow: 'Planning first',

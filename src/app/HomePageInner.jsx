@@ -65,6 +65,7 @@ export default function HomePageInner({ locale = 'en' }) {
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
   const itineraryHref = home.hero.primaryHref || ITINERARY_PLANNER_PATH
   const multiDayPackage = home.packages?.multiDay || home.packages?.premium
+  const paidPackages = home.packages.items.filter((pkg) => pkg.href !== ITINERARY_PLANNER_PATH)
 
   return (
     <>
@@ -179,22 +180,6 @@ export default function HomePageInner({ locale = 'en' }) {
         </section>
       ) : null}
 
-      <section className="how">
-        <div className="how__header reveal">
-          <p className="eyebrow">{home.how.eyebrow}</p>
-          <h2 className="serif-display">{home.how.title}</h2>
-        </div>
-        <div className="how__steps">
-          {home.how.steps.map((step, index) => (
-            <div key={step.number} className={`how__step reveal${index ? ` reveal-delay-${index}` : ''}`}>
-              <span className="how__num">{step.number}</span>
-              <h3>{step.title}</h3>
-              <p>{step.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section className="courses" id="courses">
         <div className="courses__header">
           <div className="courses__header-left">
@@ -296,8 +281,8 @@ export default function HomePageInner({ locale = 'en' }) {
           <h2 className="serif-display">{home.packages.title}</h2>
           <p>{home.packages.body}</p>
         </div>
-        <div className="packages__grid" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          {home.packages.items.map((pkg, index) => (
+        <div className="packages__grid packages__grid--paid" style={{ maxWidth: '900px', margin: '0 auto' }}>
+          {paidPackages.map((pkg, index) => (
             <div key={pkg.name} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
               <p className="tier__name-small">{pkg.eyebrow}</p>
               <h3 className="tier__name">{pkg.name}</h3>
