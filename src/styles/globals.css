@@ -943,25 +943,35 @@ body {
 .what__feature-text h3 { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--deep); margin-bottom: 5px; }
 .what__feature-text p { font-size: 0.87rem; color: var(--taupe); line-height: 1.7; margin: 0; }
 
-/* Credential logo bar */
-.cred-logo-bar { background: var(--deep); border-top: 1px solid rgba(255,255,255,0.06); padding: 2.5rem clamp(20px,5vw,60px); }
-.cred-logo-bar__label { text-align: center; font-family: 'Jost',sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin: 0 0 1.5rem; }
-.cred-logo-bar__logos { display: flex; align-items: center; justify-content: center; gap: clamp(16px,3vw,48px); flex-wrap: wrap; }
-.cred-logo-bar__item { color: rgba(255,255,255,0.55); transition: color 0.2s ease; height: 48px; display: flex; align-items: center; }
-.cred-logo-bar__item:hover { color: rgba(255,255,255,0.85); }
-.cred-logo-bar__item svg { height: 48px; width: auto; display: block; }
-.cred-logo-bar__note { display: none; } /* developer todo note — hidden in production */
+/* Credential logo bar — white bg, uniform bordered cells, brand-appropriate per logo */
+.cred-logo-bar { background: #fff; border-top: 1px solid rgba(26,25,22,0.09); border-bottom: 1px solid rgba(26,25,22,0.09); }
+.cred-logo-bar__label { text-align: center; font-family: 'Jost',sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--taupe); padding: 1.5rem 0 0; margin: 0; }
+.cred-logo-bar__logos { display: flex; align-items: stretch; justify-content: center; flex-wrap: nowrap; border-top: 1px solid rgba(26,25,22,0.09); margin-top: 1rem; }
+.cred-logo-bar__item { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; padding: 1.75rem 2rem; border-right: 1px solid rgba(26,25,22,0.09); }
+.cred-logo-bar__item:last-child { border-right: none; }
+.cred-logo-bar__item img { max-height: 52px; width: auto; max-width: 130px; object-fit: contain; display: block; }
+/* PGA — dark bg so white logo is legible */
+.cred-logo-bar__item--pga { background: #002147; }
+/* Trackman — brand orange */
+.cred-logo-bar__item--trackman { background: #fff; }
+/* TPI — neutral */
+.cred-logo-bar__item--tpi { background: #fff; }
+/* US Kids — neutral */
+.cred-logo-bar__item--uskids { background: #fff; }
+.cred-logo-bar__note { display: none; }
 
-.home-credentials { background: linear-gradient(180deg, #171613 0%, #201d19 100%); padding: 96px 40px; }
+/* Credentials section — light background, clean cells, full-colour logos */
+.home-credentials { background: var(--cream); padding: 96px 40px; }
 .home-credentials__intro { max-width: 760px; margin: 0 auto 46px; text-align: center; }
-.home-credentials__intro h2 { font-size: clamp(2rem,3.4vw,2.8rem); color: #fff; margin: 0.75rem 0 1.1rem; }
-.home-credentials__intro p { color: rgba(255,255,255,0.68); line-height: 1.82; font-size: 1rem; }
-.home-credentials__grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.home-credential { min-height: 230px; padding: 28px 26px; background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.07)); border: 1px solid rgba(255,255,255,0.09); box-shadow: 0 18px 48px rgba(0,0,0,0.18); }
-.home-credential__image { position: relative; width: 112px; height: 74px; margin-bottom: 22px; filter: drop-shadow(0 14px 26px rgba(0,0,0,0.28)); }
-.home-credential__mark { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; margin-bottom: 22px; border: 1px solid rgba(212,176,104,0.5); color: var(--gold-light); font-family: var(--font-serif); font-size: 1.1rem; }
-.home-credential h3 { color: #fff; font-family: var(--font-serif); font-size: 1.25rem; font-weight: 500; line-height: 1.18; margin-bottom: 10px; }
-.home-credential p { color: rgba(255,255,255,0.66); font-size: 0.88rem; line-height: 1.72; }
+.home-credentials__intro h2 { font-size: clamp(2rem,3.4vw,2.8rem); color: var(--deep); margin: 0.75rem 0 1.1rem; }
+.home-credentials__intro p { color: var(--taupe); line-height: 1.82; font-size: 1rem; }
+.home-credentials__grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid rgba(26,25,22,0.09); }
+.home-credential { padding: 36px 32px; background: #fff; border-right: 1px solid rgba(26,25,22,0.09); border-bottom: 1px solid rgba(26,25,22,0.09); }
+.home-credential:nth-child(3n) { border-right: none; }
+.home-credential__image { position: relative; width: 130px; height: 72px; margin-bottom: 20px; }
+.home-credential__mark { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; margin-bottom: 20px; border: 1px solid rgba(26,25,22,0.15); color: var(--taupe); font-family: var(--font-serif); font-size: 1.1rem; }
+.home-credential h3 { color: var(--deep); font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-bottom: 8px; }
+.home-credential p { color: var(--taupe); font-size: 0.88rem; line-height: 1.72; }
 
 .testimonials { background: var(--deep); padding: 84px 24px; }
 .testimonials__header { text-align: center; margin-bottom: 56px; }

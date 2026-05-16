@@ -123,16 +123,16 @@ export default function HomePageInner({ locale = 'en' }) {
       <section className="cred-logo-bar">
         <p className="cred-logo-bar__label">Qualifications &amp; certifications</p>
         <div className="cred-logo-bar__logos">
-          <div className="cred-logo-bar__item" title="UK PGA Advanced Professional">
-            <Image src="/images/logo-pga.png" alt="PGA Advanced Professional" width={120} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
+          <div className="cred-logo-bar__item cred-logo-bar__item--pga" title="UK PGA Advanced Professional">
+            <Image src="/images/logo-pga-white.png" alt="PGA Advanced Professional" width={120} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
           </div>
-          <div className="cred-logo-bar__item" title="Trackman Master Certified">
+          <div className="cred-logo-bar__item cred-logo-bar__item--trackman" title="Trackman Master Certified">
             <Image src="/images/logo-trackman.png" alt="Trackman Master Certified" width={160} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
           </div>
-          <div className="cred-logo-bar__item" title="TPI Level 3 Certified">
+          <div className="cred-logo-bar__item cred-logo-bar__item--tpi" title="TPI Level 3 Certified">
             <Image src="/images/logo-tpi.png" alt="TPI Level 3 Certified" width={120} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
           </div>
-          <div className="cred-logo-bar__item" title="US Kids Golf Top 50 Coach">
+          <div className="cred-logo-bar__item cred-logo-bar__item--uskids" title="US Kids Golf Top 50 Coach">
             <Image src="/images/logo-uskids.png" alt="US Kids Golf Top 50 Coach" width={120} height={60} style={{ objectFit: 'contain', height: 52, width: 'auto' }} />
           </div>
         </div>
