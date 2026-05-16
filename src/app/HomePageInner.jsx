@@ -99,6 +99,9 @@ export default function HomePageInner({ locale = 'en' }) {
               {home.hero.secondaryCta}
             </a>
           </div>
+          <a href={playWithAProHref} className="hero__pwap-link">
+            Want Andy on the course? See Play With A Pro
+          </a>
         </div>
       </section>
 

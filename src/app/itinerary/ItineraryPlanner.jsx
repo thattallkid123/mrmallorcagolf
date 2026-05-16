@@ -492,6 +492,7 @@ export default function ItineraryPlanner() {
                             src={detail.image}
                             alt={course}
                             fill
+                            loading="eager"
                             sizes="(max-width: 640px) 100vw, 180px"
                             style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
                           />
@@ -543,7 +544,7 @@ export default function ItineraryPlanner() {
             </p>
             <div className="itinerary-actions">
               <a href={whatsappHref} className="btn btn--gold" target="_blank" rel="noopener noreferrer">Send draft</a>
-              <a href="/contact" className="btn btn--dark">Use enquiry form</a>
+              <a href="/contact" className="btn btn--dark">Plan by email</a>
             </div>
           </div>
         </div>
