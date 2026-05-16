@@ -16,22 +16,39 @@ const CAREER_VENUES = [
 ]
 
 export default function CareerStrip({ label = "Where I've been", heading = 'Built across some very different golf environments.' }) {
+  const viewportRef = useRef(null)
   const trackRef = useRef(null)
   const allVenues = [...CAREER_VENUES, ...CAREER_VENUES]
 
   useEffect(() => {
+    const viewport = viewportRef.current
     const track = trackRef.current
-    if (!track) return
-    let pos = 0
+    if (!viewport || !track) return
+    let pausedUntil = 0
     let raf
+
+    const pauseBriefly = () => {
+      pausedUntil = performance.now() + 1800
+    }
+
     const tick = () => {
-      pos += 0.45
-      if (pos >= track.scrollWidth / 2) pos = 0
-      track.style.transform = `translateX(-${pos}px)`
+      if (performance.now() > pausedUntil) {
+        viewport.scrollLeft += 0.72
+        if (viewport.scrollLeft >= track.scrollWidth / 2) viewport.scrollLeft = 0
+      }
       raf = requestAnimationFrame(tick)
     }
+
+    viewport.addEventListener('pointerdown', pauseBriefly)
+    viewport.addEventListener('wheel', pauseBriefly, { passive: true })
+    viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
     raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
+    return () => {
+      cancelAnimationFrame(raf)
+      viewport.removeEventListener('pointerdown', pauseBriefly)
+      viewport.removeEventListener('wheel', pauseBriefly)
+      viewport.removeEventListener('touchstart', pauseBriefly)
+    }
   }, [])
 
   return (
@@ -40,7 +57,7 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
         <p className="career-strip__label">{label}</p>
         <h2 className="serif-display career-strip__title">{heading}</h2>
       </div>
-      <div className="career-strip__viewport">
+      <div ref={viewportRef} className="career-strip__viewport" aria-label="Career venues carousel">
         <div ref={trackRef} className="career-strip__track">
           {allVenues.map((v, i) => (
             <div key={i} className="career-strip__card">

@@ -34,9 +34,9 @@ const FEATURE_ICONS = {
 const ITINERARY_PLANNER_PATH = '/itinerary'
 
 const CREDENTIAL_LOGOS = [
-  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1440, height: 1352 },
   { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 760, height: 975 },
   { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 760, height: 862 },
+  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1254, height: 1254 },
   { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 900, height: 730 },
 ]
 
