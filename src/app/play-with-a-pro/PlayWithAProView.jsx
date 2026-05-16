@@ -55,7 +55,7 @@ function buildPlayWithAProSchema(locale, content) {
       '@type': 'Place',
       name: 'Mallorca, Spain',
     },
-    serviceType: 'Private golf trip add-on',
+    serviceType: 'Private golf day',
     offers: {
       '@type': 'AggregateOffer',
       lowPrice: 495,
@@ -94,7 +94,6 @@ function buildBreadcrumbSchema(locale) {
 }
 
 export default function PlayWithAProView({ content, locale = 'en' }) {
-  const multiDayPackage = content.packages?.multiDay || content.packages?.premium
   const links = PAGE_LINKS[locale] || PAGE_LINKS.en
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
@@ -102,14 +101,23 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
 
   return (
     <>
-      <link rel="preload" as="image" href="/images/pwap-hero-client.webp" />
       <PageLayout lang={locale}>
         <JsonLd data={buildPlayWithAProSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale)} />
         <RevealObserver />
 
         <section className="pwap-hero pwap-hero--tall">
-          <div className="pwap-hero__bg"></div>
+          <div className="pwap-hero__bg" aria-hidden="true">
+            <Image
+              src="/images/pwap-hero-client.webp"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="pwap-hero__image"
+            />
+            <div className="pwap-hero__overlay" />
+          </div>
           <div className="pwap-hero__inner">
             <div className="pwap-hero__content">
               <p className="breadcrumb">
@@ -297,17 +305,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               </div>
             ))}
           </div>
-          {multiDayPackage && (
-            <div className="reveal pwap-multiday">
-              <p className="eyebrow pwap-multiday__eyebrow">{multiDayPackage.eyebrow}</p>
-              <h3 className="serif-display pwap-multiday__title">{multiDayPackage.title}</h3>
-              <p className="pwap-multiday__body">{multiDayPackage.body}</p>
-              {multiDayPackage.detail && (
-                <p className="pwap-multiday__detail">{multiDayPackage.detail}</p>
-              )}
-              <Link href={multiDayPackage.href} className="btn btn--gold">{multiDayPackage.button}</Link>
-            </div>
-          )}
         </section>
 
         <section className="cta-final">

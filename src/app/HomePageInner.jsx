@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
 import { getCourseDestination } from '../lib/golf-courses-helpers'
-import BeehiivEmbed from '../components/BeehiivEmbed'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -35,10 +34,10 @@ const FEATURE_ICONS = {
 const ITINERARY_PLANNER_PATH = '/itinerary'
 
 const CREDENTIAL_LOGOS = [
-  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 480, height: 480 },
-  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 384, height: 480 },
-  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 480, height: 480 },
-  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 592, height: 480 },
+  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 960, height: 901 },
+  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 561, height: 720 },
+  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 635, height: 720 },
+  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 720, height: 584 },
 ]
 
 function localizePath(path, locale) {
@@ -64,8 +63,6 @@ export default function HomePageInner({ locale = 'en' }) {
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
   const itineraryHref = home.hero.primaryHref || ITINERARY_PLANNER_PATH
-  const multiDayPackage = home.packages?.multiDay || home.packages?.premium
-  const paidPackages = home.packages.items.filter((pkg) => pkg.href !== ITINERARY_PLANNER_PATH)
 
   return (
     <>
@@ -282,7 +279,7 @@ export default function HomePageInner({ locale = 'en' }) {
           <p>{home.packages.body}</p>
         </div>
         <div className="packages__grid packages__grid--paid" style={{ maxWidth: '900px', margin: '0 auto' }}>
-          {paidPackages.map((pkg, index) => (
+          {home.packages.items.map((pkg, index) => (
             <div key={pkg.name} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
               <p className="tier__name-small">{pkg.eyebrow}</p>
               <h3 className="tier__name">{pkg.name}</h3>
@@ -300,14 +297,6 @@ export default function HomePageInner({ locale = 'en' }) {
             </div>
           ))}
         </div>
-        {multiDayPackage && (
-          <div className="reveal" style={{ maxWidth: 760, margin: '3rem auto 0', padding: '2.5rem', background: 'var(--pine)', borderRadius: 2, textAlign: 'center' }}>
-            <p className="eyebrow" style={{ color: 'rgba(255,255,255,0.45)', marginBottom: '0.75rem' }}>{multiDayPackage.eyebrow}</p>
-            <h3 className="serif-display" style={{ color: '#fff', fontSize: 'clamp(1.3rem,2.2vw,1.8rem)', marginBottom: '1rem' }}>{multiDayPackage.title}</h3>
-            <p style={{ color: 'rgba(255,255,255,0.72)', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.75rem', maxWidth: 560, margin: '0 auto 1.75rem' }}>{multiDayPackage.body}</p>
-            <a href={multiDayPackage.href || contactHref} className="btn btn--gold">{multiDayPackage.cta}</a>
-          </div>
-        )}
       </section>
 
       {/* Jo's quote - social proof after packages, before final CTA */}
@@ -340,17 +329,6 @@ export default function HomePageInner({ locale = 'en' }) {
               </div>
             </details>
           ))}
-        </div>
-      </section>
-
-      <section style={{ background: 'var(--cream)', padding: 'clamp(60px,8vw,100px) clamp(20px,5vw,60px)' }}>
-        <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
-          <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '1rem' }}>THE NEWSLETTER</p>
-          <h2 className="serif-display" style={{ fontSize: 'clamp(1.5rem,3vw,2.2rem)', color: 'var(--deep)', marginBottom: '1rem' }}>Golf insights delivered.</h2>
-          <p style={{ fontSize: '0.95rem', color: 'var(--taupe)', lineHeight: 1.8, marginBottom: '2.5rem' }}>
-            Course conditions updated as I play them. Which tee times are worth fighting for, where the greens are running fast, and what&apos;s worth knowing before you fly. Sent every two weeks, unsubscribe whenever.
-          </p>
-          <BeehiivEmbed />
         </div>
       </section>
 
