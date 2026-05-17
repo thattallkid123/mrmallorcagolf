@@ -41,6 +41,8 @@ stunning, breathtaking, nestled, seamless, elevate, unforgettable, hidden gem, c
 - "More than just..." / "Whether you're..." / "From X to Y..." / "In the heart of..." / "If you're looking for..." / "There is something for everyone"
 - Travel-brochure sentence fragments posing as atmosphere
 - Generic AI openings: "Nestled in...", "Mallorca is known for...", "If you're planning a golf trip to Mallorca..."
+- "Ask questions" / "asks proper questions" / "asks questions of your game" — do not use. Say specifically what the hole or course does: "the tee shot forces you to commit to a line", "the approach is blind over the ridge", "the green slopes hard away from you".
+- "Require a proper decision" / "demands decision-making" — same rule. Be specific about what the decision is.
 
 ### Banned transitions
 Moreover, Furthermore, Additionally, Notably, Indeed, Thus, Subsequently, Consequently. Use plain English: "Also", "And", "So".

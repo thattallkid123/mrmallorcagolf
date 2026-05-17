@@ -6,7 +6,7 @@ import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', priority = false, containerStyle, imageStyle }) {
   return (
     <div style={{ position: 'relative', overflow: 'hidden', ...containerStyle }}>
-      <Image src={src} alt={alt} fill priority={priority} sizes={sizes} style={{ objectFit: 'cover', objectPosition: 'center 24%', ...imageStyle }} />
+      <Image src={src} alt={alt} fill priority={priority} quality={88} sizes={sizes} style={{ objectFit: 'cover', objectPosition: 'center 24%', ...imageStyle }} />
     </div>
   )
 }
@@ -37,6 +37,11 @@ const COURSE_REVIEW_DETAILS = {
     name: 'Golf de Andratx',
     ratingValue: 4,
     addressLocality: 'Andratx',
+  },
+  'son-antem-west-review': {
+    name: 'Son Antem West',
+    ratingValue: 4,
+    addressLocality: 'Llucmajor',
   },
   't-golf-calvia-review': {
     name: 'T Golf Calvià',
