@@ -1151,4 +1151,3 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
     },
   }
 }
-                 

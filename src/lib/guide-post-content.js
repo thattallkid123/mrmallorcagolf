@@ -1280,4 +1280,7 @@ function withGuidePostSlug(content, slug) {
     ...content,
     meta: {
       ...content.meta,
- 
+      slug,
+    },
+  }
+}
