@@ -18,6 +18,13 @@ const OPTIONS = {
     { value: 'corporate', label: 'Corporate' },
     { value: 'other', label: 'Something else', freeText: true },
   ],
+  level: [
+    { value: 'mixed', label: 'Mixed handicaps' },
+    { value: 'newer', label: 'Newer / higher handicap' },
+    { value: 'club', label: 'Regular club golfers' },
+    { value: 'strong', label: 'Low handicap / strong players' },
+    { value: 'other', label: 'Tell me more', freeText: true },
+  ],
   golf: [
     { value: 'relaxed', label: 'A couple of relaxed rounds' },
     { value: 'balanced', label: 'Three or four good rounds' },
@@ -47,6 +54,7 @@ const OPTIONS = {
 const FIELD_LABELS = {
   nights: 'Trip length',
   group: 'Who is travelling',
+  level: 'Playing level',
   golf: 'How much golf',
   base: 'Where to base',
   season: 'When',
@@ -150,19 +158,29 @@ const BASE_DETAILS = {
 }
 
 function getCourseMix(form) {
+  const needsForgivingRoute = form.level === 'newer' || form.level === 'mixed' || form.group === 'family'
+  const strongGolfers = form.level === 'strong'
+
   if (form.base === 'north') {
+    if (needsForgivingRoute) return ['Alcanada', 'Pula or Son Servera', 'Capdepera or Canyamel']
     return ['Alcanada', 'Pula or Son Servera', 'Capdepera or Canyamel']
   }
 
   if (form.base === 'southwest') {
+    if (needsForgivingRoute && !strongGolfers) return ['T Golf Calvia', 'Santa Ponsa 1', 'T Golf Palma']
     return ['T Golf Calvia', 'Santa Ponsa 1', 'Golf de Andratx']
   }
 
-  if (form.golf === 'serious' || form.budget === 'premium') {
+  if (needsForgivingRoute) {
+    if (form.budget === 'premium') return ['Son Muntaner', 'T Golf Calvia', 'Son Quint']
+    return ['Son Quint', 'T Golf Palma', 'Son Antem East or West']
+  }
+
+  if (form.golf === 'serious' || form.budget === 'premium' || strongGolfers) {
     return ['Son Gual', 'Son Muntaner', 'Alcanada']
   }
 
-  if (form.golf === 'relaxed' || form.group === 'family') {
+  if (form.golf === 'relaxed') {
     return ['Son Quint', 'T Golf Palma', 'Son Antem East or West']
   }
 
@@ -262,6 +280,14 @@ function getWatchouts(form, courses) {
     watchouts.push('The best-course version and the value version of the trip are different. I would decide where the premium green fee is actually worth it.')
   }
 
+  if ((form.level === 'newer' || form.level === 'mixed') && form.golf === 'serious') {
+    watchouts.push('If the group has mixed handicaps, I would include one forgiving round even if the trip is built around premium courses.')
+  }
+
+  if (form.level === 'strong' && form.golf === 'relaxed') {
+    watchouts.push('For stronger players, a relaxed trip still needs one course with enough interest or the golf can feel too soft.')
+  }
+
   if (form.group === 'family' || form.group === 'corporate') {
     watchouts.push('Mixed groups need one forgiving day. Three hard courses in a row usually looks better online than it feels on the island.')
   }
@@ -291,8 +317,13 @@ function getBaseAdvice(form) {
 
 function getRhythm(form) {
   const rounds = form.golf === 'relaxed' ? 'two or three rounds' : form.golf === 'serious' ? 'four strong rounds if the dates allow' : 'three good rounds with one lighter day'
+  const level = form.level === 'newer' || form.level === 'mixed'
+    ? 'I would avoid stacking difficult courses back to back.'
+    : form.level === 'strong'
+      ? 'I would make sure at least one round has real strategic interest.'
+      : ''
   const rest = Number(form.nights) >= 5 ? 'I would protect one non-golf afternoon so the trip does not become a run of early starts.' : 'I would avoid overloading a short trip with too much driving.'
-  return `For ${getOptionLabel('nights', form.nights, form.freeText)}, I would build around ${rounds}. ${rest}`
+  return `For ${getOptionLabel('nights', form.nights, form.freeText)}, I would build around ${rounds}. ${level ? `${level} ` : ''}${rest}`
 }
 
 function getSeasonAdvice(form) {
@@ -313,6 +344,9 @@ function getAddOns(form) {
   if (form.priorities.includes('clubHire')) {
     addOns.push('Club hire: Andy can arrange it with the course booking where possible, or point you to the right rental option.')
   }
+  if (form.level === 'newer' || form.level === 'mixed') {
+    addOns.push('Course fit: keep at least one forgiving round in the plan so everyone enjoys the trip, not just the strongest golfer.')
+  }
   if (form.priorities.includes('restaurants')) {
     addOns.push('One proper lunch or Palma evening, planned around the best golf day rather than forced into every day.')
   }
@@ -325,7 +359,7 @@ function getAddOns(form) {
 function buildMessage(form, courses) {
   const snapshot = getTripSnapshot(form)
   return encodeURIComponent(
-    `Hi Andy, I built a first draft itinerary on the site.\n\nTrip length: ${getOptionLabel('nights', form.nights, form.freeText)}\nGroup: ${getOptionLabel('group', form.group, form.freeText)}\nGolf appetite: ${getOptionLabel('golf', form.golf, form.freeText)}\nBase idea: ${getOptionLabel('base', form.base, form.freeText)}\nSeason: ${getOptionLabel('season', form.season, form.freeText)}\nBudget: ${snapshot.budget}\nDraft rounds: ${snapshot.rounds}\nCourses: ${courses.join(', ')}\nPriorities: ${getPriorityLabels(form).join(', ')}\n\nCan you sanity-check the plan and tell me what you would change before I book anything?`,
+    `Hi Andy, I built a first draft itinerary on the site.\n\nTrip length: ${getOptionLabel('nights', form.nights, form.freeText)}\nGroup: ${getOptionLabel('group', form.group, form.freeText)}\nPlaying level: ${getOptionLabel('level', form.level, form.freeText)}\nGolf appetite: ${getOptionLabel('golf', form.golf, form.freeText)}\nBase idea: ${getOptionLabel('base', form.base, form.freeText)}\nSeason: ${getOptionLabel('season', form.season, form.freeText)}\nBudget: ${snapshot.budget}\nDraft rounds: ${snapshot.rounds}\nCourses: ${courses.join(', ')}\nPriorities: ${getPriorityLabels(form).join(', ')}\n\nCan you sanity-check the plan and tell me what you would change before I book anything?`,
   )
 }
 
@@ -333,6 +367,7 @@ export default function ItineraryPlanner() {
   const [form, setForm] = useState({
     nights: '4',
     group: 'friends',
+    level: 'mixed',
     golf: 'balanced',
     base: 'unsure',
     season: 'autumn',
