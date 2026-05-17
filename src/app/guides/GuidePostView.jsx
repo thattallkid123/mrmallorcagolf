@@ -38,6 +38,11 @@ const COURSE_REVIEW_DETAILS = {
     ratingValue: 4,
     addressLocality: 'Andratx',
   },
+  'son-antem-west-review': {
+    name: 'Son Antem West',
+    ratingValue: 4,
+    addressLocality: 'Llucmajor',
+  },
   't-golf-calvia-review': {
     name: 'T Golf Calvià',
     ratingValue: 5,
