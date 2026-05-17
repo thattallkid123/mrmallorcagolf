@@ -977,7 +977,7 @@ export const GUIDE_POST_CONTENT = {
   'son-antem-west-review': {
     en: {
       metadata: {
-        title: 'Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)',
+        title: "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)",
         description:
           'Son Antem West: green fees from €90, par 72, 6,300m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
@@ -987,7 +987,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '6 min read',
         updated: 'May 2026',
-        title: 'Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)',
+        title: "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)",
         intro: 'A resort course 15-20 minutes from Palma. Good conditioning, open countryside, and a layout that suits a wide range of players.',
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
@@ -1280,7 +1280,4 @@ function withGuidePostSlug(content, slug) {
     ...content,
     meta: {
       ...content.meta,
-      slug,
-    },
-  }
-}
+ 
