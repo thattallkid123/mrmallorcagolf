@@ -1052,7 +1052,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-antem-west-review-blog/son-antem-west-5.webp',
           alt: 'Andy Griffiths watching a client hit an iron shot on a tree-lined hole at Son Antem West',
-          caption: 'A mid-iron on one of the back nine holes. The course was in good condition throughout.',
+          caption: 'A driver on one of the back nine holes. The course was in good condition throughout.',
           presentation: 'natural',
           naturalWidth: 1200,
           naturalHeight: 1600,
