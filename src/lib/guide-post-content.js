@@ -977,9 +977,9 @@ export const GUIDE_POST_CONTENT = {
   'son-antem-west-review': {
     en: {
       metadata: {
-        title: 'Son Antem West Golf Mallorca Review (2026) - Green Fees, Course Conditions & Honest Take',
+        title: 'Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)',
         description:
-          'Son Antem West: €105 green fee, par 72, 6,300m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
+          'Son Antem West: green fees from €90, par 72, 6,300m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
       },
       meta: {
@@ -987,7 +987,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '6 min read',
         updated: 'May 2026',
-        title: 'Son Antem West Golf Mallorca Review (2026) - Green Fees, Course Conditions & Honest Take',
+        title: 'Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)',
         intro: 'A resort course 15-20 minutes from Palma. Good conditioning, open countryside, and a layout that suits a wide range of players.',
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
@@ -1034,7 +1034,7 @@ export const GUIDE_POST_CONTENT = {
           caption: 'Wildlife is a regular presence on the back nine. Rabbits, herons, and various birds, particularly around the water holes.',
           presentation: 'natural',
           naturalWidth: 885,
-          naturalHeight: 1600,
+          naturalHeight: 1200,
         },
         {
           type: 'heading',
@@ -1052,7 +1052,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-antem-west-review-blog/son-antem-west-5.webp',
           alt: 'Andy Griffiths watching a client hit an iron shot on a tree-lined hole at Son Antem West',
-          caption: 'The tree-lined holes are the most interesting on the course. The tee shot is tighter and the shape of the approach matters more.',
+          caption: 'A mid-iron on one of the back nine holes. The course was in good condition throughout.',
           presentation: 'natural',
           naturalWidth: 1200,
           naturalHeight: 1600,
@@ -1118,12 +1118,12 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'A large part of Son Antem West is strategically flat. The open holes give you a wide landing area, a straightforward approach, and a small green to aim at. You can play those holes on autopilot. Compared to Son Gual, Alcanada, or Andratx, the course covers less ground mentally. At €105, it competes with those courses on price while offering less in terms of how much the layout stays with you.',
+          text: 'A large part of Son Antem West is strategically flat. The open holes give you a wide landing area, a straightforward approach, and a small green to aim at. You can play those holes on autopilot. Compared to Son Gual, Alcanada, or Andratx, the course covers less ground mentally. At green fees in the same range, it competes with those courses on price while offering less in terms of how much the layout stays with you.',
         },
         {
           type: 'facts',
           items: [
-            ['€105 peak', 'Green fee'],
+            ['€90-135', 'Green fee'],
             ['7/10', 'My rating'],
             ['Par 72', '~6,890 yards'],
             ['Llucmajor', '15-20 min from Palma'],
@@ -1135,7 +1135,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Green fee: €105 at peak. The resort is well set up before and after the round. There is a small shop near check-in for coffee, water, and snacks, which is genuinely useful if you are on an early tee time. Buggy hire is available. Walking is straightforward throughout.',
+          text: 'Green fee: €105 on the day we played. The resort is well set up before and after the round. There is a small shop near check-in for coffee, water, and snacks, which is genuinely useful if you are on an early tee time. Buggy hire is available. Walking is straightforward throughout.',
         },
         {
           type: 'paragraph',
@@ -1280,7 +1280,4 @@ function withGuidePostSlug(content, slug) {
     ...content,
     meta: {
       ...content.meta,
-      slug,
-    },
-  }
-}
+ 
