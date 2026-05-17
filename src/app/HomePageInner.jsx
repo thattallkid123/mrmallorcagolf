@@ -288,7 +288,7 @@ export default function HomePageInner({ locale = 'en' }) {
           <h2 className="serif-display">{home.packages.title}</h2>
           <p>{home.packages.body}</p>
         </div>
-        <div className="packages__grid packages__grid--paid" style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div className="packages__grid packages__grid--paid" style={{ maxWidth: '1180px', margin: '0 auto' }}>
           {home.packages.items.map((pkg, index) => (
             <div key={`${pkg.eyebrow}-${pkg.name}-${index}`} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
               <p className="tier__name-small">{pkg.eyebrow}</p>
