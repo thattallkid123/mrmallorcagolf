@@ -4929,6 +4929,324 @@ const POST_IMAGE_PATCHES = {
   },
 }
 
+const SON_GUAL_RELATED = {
+  de: [
+    { slug: 'alcanada-review', title: 'Alcanada Golf: ehrliche Bewertung 2026' },
+    { slug: 'golf-cost-mallorca', title: 'Was kostet Golf auf Mallorca?' },
+    { slug: 'best-time-play-golf-mallorca', title: 'Die beste Zeit fuer Golf auf Mallorca' },
+    { slug: 'best-golf-courses-mallorca', title: 'Die besten Golfplaetze auf Mallorca 2026' },
+  ],
+  es: [
+    { slug: 'alcanada-review', title: 'Alcanada Golf: analisis honesto 2026' },
+    { slug: 'golf-cost-mallorca', title: 'Cuanto cuesta jugar al golf en Mallorca?' },
+    { slug: 'best-time-play-golf-mallorca', title: 'La mejor epoca para jugar al golf en Mallorca' },
+    { slug: 'best-golf-courses-mallorca', title: 'Los mejores campos de golf de Mallorca 2026' },
+  ],
+  fr: [
+    { slug: 'alcanada-review', title: 'Alcanada Golf : avis honnete 2026' },
+    { slug: 'golf-cost-mallorca', title: 'Combien coute le golf a Majorque ?' },
+    { slug: 'best-time-play-golf-mallorca', title: 'La meilleure periode pour jouer au golf a Majorque' },
+    { slug: 'best-golf-courses-mallorca', title: 'Les meilleurs parcours de golf a Majorque 2026' },
+  ],
+  nl: [
+    { slug: 'alcanada-review', title: 'Alcanada Golf: eerlijke review 2026' },
+    { slug: 'golf-cost-mallorca', title: 'Wat kost golf op Mallorca?' },
+    { slug: 'best-time-play-golf-mallorca', title: 'De beste tijd om golf te spelen op Mallorca' },
+    { slug: 'best-golf-courses-mallorca', title: 'De beste golfbanen van Mallorca 2026' },
+  ],
+  sv: [
+    { slug: 'alcanada-review', title: 'Alcanada Golf: arlig recension 2026' },
+    { slug: 'golf-cost-mallorca', title: 'Vad kostar golf pa Mallorca?' },
+    { slug: 'best-time-play-golf-mallorca', title: 'Basta tiden att spela golf pa Mallorca' },
+    { slug: 'best-golf-courses-mallorca', title: 'De basta golfbanorna pa Mallorca 2026' },
+  ],
+  zh: [
+    { slug: 'alcanada-review', title: 'Alcanada Golf: 真实评测 2026' },
+    { slug: 'golf-cost-mallorca', title: '在马略卡打高尔夫要多少钱？' },
+    { slug: 'best-time-play-golf-mallorca', title: '马略卡打高尔夫的最佳时间' },
+    { slug: 'best-golf-courses-mallorca', title: '马略卡最佳高尔夫球场 2026' },
+  ],
+}
+
+const REVIEW_RELATED = {
+  'alcanada-review': {
+    de: [
+      { slug: 'best-golf-courses-mallorca', title: 'Die besten Golfplaetze auf Mallorca 2026' },
+      { slug: 'son-gual-review', title: 'Son Gual Golf: ehrliche Bewertung 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Golfreise nach Mallorca planen' },
+      { slug: 'golf-cost-mallorca', title: 'Was kostet Golf auf Mallorca?' },
+    ],
+    es: [
+      { slug: 'best-golf-courses-mallorca', title: 'Los mejores campos de golf de Mallorca 2026' },
+      { slug: 'son-gual-review', title: 'Son Gual Golf: analisis honesto 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Como planificar un viaje de golf a Mallorca' },
+      { slug: 'golf-cost-mallorca', title: 'Cuanto cuesta jugar al golf en Mallorca?' },
+    ],
+    fr: [
+      { slug: 'best-golf-courses-mallorca', title: 'Les meilleurs parcours de golf a Majorque 2026' },
+      { slug: 'son-gual-review', title: 'Son Gual Golf : avis honnete 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Planifier un voyage de golf a Majorque' },
+      { slug: 'golf-cost-mallorca', title: 'Combien coute le golf a Majorque ?' },
+    ],
+    nl: [
+      { slug: 'best-golf-courses-mallorca', title: 'De beste golfbanen van Mallorca 2026' },
+      { slug: 'son-gual-review', title: 'Son Gual Golf: eerlijke review 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Een golfreis naar Mallorca plannen' },
+      { slug: 'golf-cost-mallorca', title: 'Wat kost golf op Mallorca?' },
+    ],
+    sv: [
+      { slug: 'best-golf-courses-mallorca', title: 'De basta golfbanorna pa Mallorca 2026' },
+      { slug: 'son-gual-review', title: 'Son Gual Golf: arlig recension 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Planera en golfresa till Mallorca' },
+      { slug: 'golf-cost-mallorca', title: 'Vad kostar golf pa Mallorca?' },
+    ],
+    zh: [
+      { slug: 'best-golf-courses-mallorca', title: '马略卡最佳高尔夫球场 2026' },
+      { slug: 'son-gual-review', title: 'Son Gual Golf: 真实评测 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: '如何规划马略卡高尔夫之旅' },
+      { slug: 'golf-cost-mallorca', title: '在马略卡打高尔夫要多少钱？' },
+    ],
+  },
+  'santa-ponsa-1-review': {
+    de: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: ehrliche Bewertung 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: ehrliche Bewertung 2026' },
+      { slug: 'best-golf-courses-mallorca', title: 'Die besten Golfplaetze auf Mallorca 2026' },
+      { slug: 'golf-cost-mallorca', title: 'Was kostet Golf auf Mallorca?' },
+    ],
+    es: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: analisis honesto 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: analisis honesto 2026' },
+      { slug: 'best-golf-courses-mallorca', title: 'Los mejores campos de golf de Mallorca 2026' },
+      { slug: 'golf-cost-mallorca', title: 'Cuanto cuesta jugar al golf en Mallorca?' },
+    ],
+    fr: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf : avis honnete 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf : avis honnete 2026' },
+      { slug: 'best-golf-courses-mallorca', title: 'Les meilleurs parcours de golf a Majorque 2026' },
+      { slug: 'golf-cost-mallorca', title: 'Combien coute le golf a Majorque ?' },
+    ],
+    nl: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: eerlijke review 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: eerlijke review 2026' },
+      { slug: 'best-golf-courses-mallorca', title: 'De beste golfbanen van Mallorca 2026' },
+      { slug: 'golf-cost-mallorca', title: 'Wat kost golf op Mallorca?' },
+    ],
+    sv: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: arlig recension 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: arlig recension 2026' },
+      { slug: 'best-golf-courses-mallorca', title: 'De basta golfbanorna pa Mallorca 2026' },
+      { slug: 'golf-cost-mallorca', title: 'Vad kostar golf pa Mallorca?' },
+    ],
+    zh: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: 真实评测 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: 真实评测 2026' },
+      { slug: 'best-golf-courses-mallorca', title: '马略卡最佳高尔夫球场 2026' },
+      { slug: 'golf-cost-mallorca', title: '在马略卡打高尔夫要多少钱？' },
+    ],
+  },
+}
+
+const SON_GUAL_BLOCK_OVERRIDES = {
+  de: {
+    intro: 'Son Gual ist mein meistgespielter Platz auf Mallorca und der Platz, den ich am haeufigsten empfehle, wenn Kunden fragen, wo sie spielen sollen. Ich will ehrlich sagen, warum, und genauso ehrlich sagen, was ihn schwer macht. Wer einen entspannten Ferientag erwartet, wird hier ueberrascht. Wenn Sie auch Alcanada oder Son Muntaner in Betracht ziehen, lesen Sie diese Bewertungen ebenfalls vor der Entscheidung.',
+    firstTee1: 'Das erste Mal, als ich Son Gual spielte, stand ich auf den schwarzen Abschlaegen. Der Wind kam hart von links, ich spielte mit einem befreundeten PGA Professional, der richtig gut scort. Die Kamera lief fuer einen Vlog mit. Das setzt einen zusaetzlich unter Druck. Ich war ein wenig nervoes.',
+    firstTee2: 'Der Drive kam leicht an der Ferse. Er flog trotzdem weiter als erwartet und blieb knapp vor den Bunkern. Auf Son Gual gibt es viele Bunker, genau dort platziert, wo leicht getroffene Fehlschlaege landen. Wind, Hoehenunterschiede und wechselnde Ballstrikes spielen mit. Je laenger man darueber nachdenkt, desto groesser wirken die Bunker.',
+    wind: 'Son Gual scheint in seinem eigenen kleinen Oekosystem zu leben. Ich verlasse mein Haus im Suedwesten der Insel an einem ruhigen Morgen und stehe am ersten Abschlag ploetzlich in richtigem Wind. Und der bleibt vier Stunden. Mit Rueckenwind ist es ein Vergnuegen. Gegenwind auf einem langen Par 4, das dadurch sehr lang wird, ist etwas anderes.',
+    greens1: 'Schnell, erhoeht und gnadenlos bei schwachen Annaeherungen. Im Januar waren Greens und Vorgruen so kurz gemaeht, dass es fuer diese Jahreszeit bemerkenswert war. Gut fuer Spin, unbequem bei einem engen Chip mit kleiner Landezone.',
+    greens2: 'Einer meiner Mitspieler an diesem Tag, ein Schueler aus Shanghai, schlug einen kleinen Draw ins 4. Green. Der Ball landete nur wenige Meter von der Fahne entfernt und rollte trotzdem ueber die Rueckseite. Das passiert hier oft. Ein ordentlicher Schlag ist nicht automatisch ein guter Score.',
+    course1: 'Thomas Himmels Design von 2007 nutzt die Hoehenunterschiede intelligent. Das 2. Loch hat einen der groessten Bunker Europas. Die Schlussloecher von 15 bis 18 gehoeren zu den besten Finishes, die ich auf Mallorca gespielt habe.',
+    visitors: 'Rafa Nadal spielt hier regelmaessig und hat gesagt, dass es sein Lieblingsplatz auf Mallorca ist. Barack Obama spielte hier im November 2024. Normalerweise interessieren mich solche Namen nicht besonders, aber sie zeigen, welche Stellung Son Gual auf der Insel hat.',
+    fees1: 'Die oeffentlichen 18-Loch-Preise liegen normalerweise zwischen 110 € und 165 €. Das Wartungsfenster im Januar lag bei 80 € fuer 9 Loecher. Fruehjahr und Herbst sind am teuersten. Sommer und Winter sind besser fuer den Preis.',
+    fees2: 'Leihschlaeger im Proshop: Callaway 35 €, Titleist 45 € pro Runde. Buggy 45 €, Elektrotrolley ab 15 €. Ein gueltiger WHS-Handicapnachweis ist erforderlich.',
+    verdict: 'Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich wuerde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen.',
+    cta: 'Ich nehme regelmaessig Gaeste mit nach Son Gual. Moechten Sie den Platz mit jemandem spielen, der jedes Loch kennt?',
+    linkLabel: 'Golftag mit Pro ansehen',
+  },
+  es: {
+    intro: 'Son Gual es el campo que mas juego en Mallorca y el que recomiendo con mas frecuencia cuando los clientes me preguntan donde jugar. Quiero ser honesto sobre por que, y tambien sobre lo que lo hace dificil. Si reserva esperando un dia relajado, le puede sorprender. Si tambien valora Alcanada o Son Muntaner, lea esas resenas antes de decidir.',
+    firstTee1: 'La primera vez que jugue Son Gual estaba en los tees negros, con viento fuerte desde la izquierda, junto a un amigo Profesional PGA que juega y puntua muy bien. Tambien habia una camara grabando para un vlog. Eso anade presion. Estaba algo nervioso.',
+    firstTee2: 'El drive salio un poco de talon. Aun asi volo mas de lo esperado y evito los bunkers, por poco. En Son Gual hay muchos bunkers, colocados justo donde acaban los golpes un poco mal pegados. Tienes que tener en cuenta viento, desniveles, contacto irregular y esos bunkers parecen crecer cuanto mas los miras.',
+    wind: 'Son Gual parece vivir en su propio ecosistema. Salgo de casa en el suroeste de la isla con calma y llego al primer tee con viento de verdad. Y se queda cuatro horas. A favor es una gozada. En contra, en un par 4 largo que de repente se vuelve larguisimo, es otra experiencia.',
+    greens1: 'Rapidos, elevados e implacables con las malas aproximaciones. En enero, los greens y antegreens estaban tan rapados que llamaban la atencion para esa epoca del ano. Bueno para generar spin, incomodo cuando tienes un chip tenso con poca zona de aterrizaje.',
+    greens2: 'Uno de mis companeros ese dia, un alumno de Shanghai, pego un pequeno draw al green del 4. La bola cayo a pocos metros de la bandera y aun asi rodo por detras. Eso pasa mucho aqui. Un golpe decente no siempre significa un buen resultado.',
+    course1: 'El diseno de Thomas Himmel de 2007 usa muy bien los desniveles. El hoyo 2 tiene uno de los bunkers mas grandes de Europa. El tramo final del 15 al 18 es de los mejores cierres que he jugado en Mallorca.',
+    visitors: 'Rafa Nadal juega aqui con frecuencia y ha dicho que es su campo favorito en Mallorca. Barack Obama jugo aqui en noviembre de 2024. Normalmente esos nombres no me importan demasiado, pero dicen algo sobre la posicion de Son Gual en la isla.',
+    fees1: 'El precio publico de 18 hoyos suele moverse entre 110 € y 165 €. La ventana de mantenimiento de enero fue de 80 € por 9 hoyos. Primavera y otono son los meses mas caros. Verano e invierno tienen mejor valor.',
+    fees2: 'Alquiler de palos en la tienda: Callaway 35 €, Titleist 45 € por vuelta. Buggy 45 €, trolley electrico desde 15 €. Se requiere handicap WHS valido.',
+    verdict: 'Son Gual es mi campo favorito en Mallorca. El mantenimiento es fuerte, el diseno esta bien pensado y el campo obliga a tomar buenas decisiones desde el primer tee. No lo venderia como una ronda facil de vacaciones. Si quiere buenas condiciones, greens serios y un campo que le examine de verdad, deberia jugarlo.',
+    cta: 'Llevo clientes a Son Gual con regularidad. Quiere jugarlo con alguien que conoce cada hoyo?',
+    linkLabel: 'Ver el dia de golf con Pro',
+  },
+  fr: {
+    intro: "Son Gual est le parcours que je joue le plus a Majorque et celui que je recommande le plus souvent quand les clients me demandent ou jouer. Je veux expliquer pourquoi, mais aussi dire clairement ce qui le rend difficile. Si vous reservez en pensant passer une journee tranquille, vous pouvez etre surpris. Si vous hesitez aussi avec Alcanada ou Son Muntaner, lisez ces avis avant de choisir.",
+    firstTee1: "La premiere fois que j'ai joue Son Gual, j'etais sur les departs noirs. Le vent venait fort de la gauche, je jouais avec un ami professionnel PGA qui score tres bien, et la camera tournait pour un vlog. Cela ajoute sa propre pression. J'etais un peu nerveux.",
+    firstTee2: "Le drive est parti legerement du talon. Il a quand meme vole plus loin que prevu et a evite les bunkers, de peu. A Son Gual, les bunkers sont nombreux, places exactement la ou les coups legerement manques finissent. Vous devez gerer le vent, les deniveles, les contacts irreguliers, et plus vous les regardez, plus les bunkers semblent grands.",
+    wind: "Son Gual semble avoir son propre ecosysteme. Je pars de chez moi dans le sud-ouest de l'ile par un matin calme et j'arrive au premier tee avec un vrai vent. Et il reste quatre heures. Vent dans le dos, c'est un plaisir. Face au vent, sur un long par 4 qui devient soudain tres long, c'est autre chose.",
+    greens1: "Rapides, sureleves et sans pardon pour les mauvaises attaques. En janvier, les greens et les avant-greens etaient tondus tres court, remarquable pour la saison. Bon pour produire du spin, moins confortable quand il faut jouer un chip serre avec une petite zone de reception.",
+    greens2: "Un de mes partenaires ce jour-la, un eleve venu de Shanghai, a joue un petit draw vers le green du 4. La balle est tombee a quelques metres du drapeau et a quand meme roule derriere. Cela arrive souvent ici. Un coup correct ne donne pas toujours un bon score.",
+    course1: "Le dessin de Thomas Himmel en 2007 utilise intelligemment les deniveles. Le trou 2 possede l'un des plus grands bunkers d'Europe. La sequence finale du 15 au 18 fait partie des meilleurs finishs que j'ai joues a Majorque.",
+    visitors: "Rafa Nadal joue ici regulierement et a dit que c'etait son parcours prefere a Majorque. Barack Obama y a joue en novembre 2024. D'habitude, ces noms ne changent pas grand-chose pour moi, mais ils disent quelque chose sur la place de Son Gual sur l'ile.",
+    fees1: "Le tarif public 18 trous se situe generalement entre 110 € et 165 €. La fenetre d'entretien de janvier etait a 80 € pour 9 trous. Le printemps et l'automne sont les periodes les plus cheres. L'ete et l'hiver offrent plus de valeur.",
+    fees2: "Location de clubs au proshop : Callaway 35 €, Titleist 45 € par partie. Buggy 45 €, chariot electrique a partir de 15 €. Un justificatif WHS valide est demande.",
+    verdict: "Son Gual est mon parcours prefere a Majorque. L'entretien est fort, le dessin est intelligent, et le parcours oblige a prendre de bonnes decisions des le premier tee. Je ne le presenterais pas comme une partie de vacances facile. Si vous voulez de bonnes conditions, des greens serieux et un parcours qui vous teste vraiment, jouez-le.",
+    cta: "J'emmene regulierement des clients a Son Gual. Voulez-vous le jouer avec quelqu'un qui connait chaque trou ?",
+    linkLabel: 'Voir le jour de golf avec Pro',
+  },
+  nl: {
+    intro: 'Son Gual is de baan die ik het meest speel op Mallorca en de baan die ik het vaakst aanbeveel wanneer klanten vragen waar ze moeten spelen. Ik wil eerlijk zijn over waarom, en ook over wat hem lastig maakt. Wie een ontspannen vakantieronde verwacht, wordt verrast. Overweegt u ook Alcanada of Son Muntaner, lees die reviews dan ook eerst.',
+    firstTee1: 'De eerste keer dat ik Son Gual speelde, stond ik op de zwarte tees. De wind kwam hard van links, ik speelde met een PGA Professional vriend die goed scoort, en de camera liep voor een vlog. Dat geeft extra druk. Ik was wat nerveus.',
+    firstTee2: 'De drive kwam iets uit de hiel. Toch vloog hij verder dan verwacht en miste de bunkers, net. Er zijn veel bunkers op Son Gual, precies waar licht misgeraakte slagen eindigen. Je houdt rekening met wind, hoogteverschil, wisselend balcontact, en de bunkers lijken groter naarmate je er langer naar kijkt.',
+    wind: 'Son Gual lijkt in zijn eigen ecosysteem te leven. Ik vertrek op een rustige ochtend uit het zuidwesten van het eiland en kom op de eerste tee aan met echte wind. En die blijft vier uur. Met wind mee is het heerlijk. Tegenwind op een lange par 4 die ineens heel lang wordt, is iets anders.',
+    greens1: 'Snel, verhoogd en hard voor slechte approaches. In januari waren de greens en fringes zo kort gemaaid dat het opviel voor die tijd van het jaar. Goed voor spin, ongemakkelijk bij een strakke chip met weinig landingsruimte.',
+    greens2: 'Een van mijn speelpartners die dag, een student uit Shanghai, sloeg een kleine draw naar de 4e green. De bal landde maar een paar meter van de vlag en rolde toch over de achterkant. Dat gebeurt hier vaak. Een redelijke slag betekent niet automatisch een goede score.',
+    course1: 'Thomas Himmels ontwerp uit 2007 gebruikt de hoogteverschillen slim. De 2e hole heeft een van de grootste bunkers van Europa. De slotreeks van 15 tot en met 18 is een van de beste finishes die ik op Mallorca heb gespeeld.',
+    visitors: 'Rafa Nadal speelt hier regelmatig en heeft gezegd dat het zijn favoriete baan op Mallorca is. Barack Obama speelde hier in november 2024. Zulke namen doen mij normaal weinig, maar ze zeggen wel iets over de positie van Son Gual op het eiland.',
+    fees1: 'Publieke 18-holes tarieven liggen meestal tussen €110 en €165. Het onderhoudsvenster in januari was €80 voor 9 holes. Voorjaar en herfst zijn het duurst. Zomer en winter geven betere waarde.',
+    fees2: 'Clubhuur in de proshop: Callaway €35, Titleist €45 per ronde. Buggy €45, elektrische trolley vanaf €15. Een geldig WHS-handicapbewijs is vereist.',
+    verdict: 'Son Gual is mijn favoriete baan op Mallorca. De conditie is sterk, het ontwerp is slim, en de baan vraagt vanaf de eerste tee om goede beslissingen. Ik zou hem niet verkopen als een makkelijke vakantieronde. Wie goede omstandigheden, serieuze greens en een baan wil die echt test, moet hem spelen.',
+    cta: 'Ik neem regelmatig klanten mee naar Son Gual. Wilt u hem spelen met iemand die elke hole kent?',
+    linkLabel: 'Bekijk de golfdag met Pro',
+  },
+  sv: {
+    intro: 'Son Gual ar den bana jag spelar mest pa Mallorca och den jag oftast rekommenderar nar kunder fragar var de ska spela. Jag vill vara arlig med varfor, och lika arlig med vad som gor den svar. Den som bokar och forvantar sig en lugn semesterrunda kan bli overaskad. Om du ocksa funderar pa Alcanada eller Son Muntaner, las de recensionerna innan du bestammer dig.',
+    firstTee1: 'Forsta gangen jag spelade Son Gual stod jag pa svart tee. Vinden kom hart fran vanster, jag spelade med en PGA Professional-van som spelar och scorar bra, och kameran rullade for en vlogg. Det lagger till sin egen press. Jag var lite nervos.',
+    firstTee2: 'Driven kom lite ur halen. Den flog anda langre an vantat och undvek bunkrarna, precis. Det finns manga bunkrar pa Son Gual, placerade dar latt missade slag hamnar. Du raknar med vind, hojdskillnader och ojamt bolltraff, och bunkrarna verkar vaxa ju langre du tittar pa dem.',
+    wind: 'Son Gual verkar leva i sitt eget ekosystem. Jag lamnar huset i sydvast en lugn morgon och kommer till forsta tee dar det blaser ordentligt. Och det fortsatter i fyra timmar. Medvind ar en njutning. Motvind pa en lang par 4 som plotsligt blir valdigt lang ar nagot annat.',
+    greens1: 'Snabba, upphojda och harda mot daliga inspel. I januari var greener och foregreens sa kortklippta att det stack ut for arstiden. Bra for spinn, obekvamt nar man star med en tajt chip och liten landningsyta.',
+    greens2: 'En av mina spelpartners den dagen, en elev fran Shanghai, slog en liten draw in mot green pa hal 4. Bollen landade bara nagra meter fran flaggan och rullade anda over bakkanten. Det hander ofta har. Ett okej slag betyder inte automatiskt ett bra resultat.',
+    course1: 'Thomas Himmels design fran 2007 anvander hojdskillnaderna smart. Hal 2 har en av Europas storsta bunkrar. Avslutningen fran 15 till 18 ar en av de basta jag har spelat pa Mallorca.',
+    visitors: 'Rafa Nadal spelar har regelbundet och har sagt att det ar hans favoritbana pa Mallorca. Barack Obama spelade har i november 2024. Sadana namn ar normalt inte avgorande for mig, men de sager nagot om Son Guals position pa on.',
+    fees1: 'Publikt pris for 18 hal ligger normalt mellan 110 € och 165 €. Januarifonstret for underhall var 80 € for 9 hal. Var och host ar dyrast. Sommar och vinter ger battre varde.',
+    fees2: 'Klubbhyra i proshoppen: Callaway 35 €, Titleist 45 € per rond. Buggy 45 €, elvagn fran 15 €. Giltigt WHS-handicapbevis kravs.',
+    verdict: 'Son Gual ar min favoritbana pa Mallorca. Skicket ar starkt, designen ar smart, och banan kraver bra beslut fran forsta tee. Jag skulle inte salja den som en enkel semesterrunda. Vill du ha bra forhallanden, seriösa greener och en bana som verkligen testar dig, ska du spela den.',
+    cta: 'Jag tar regelbundet klienter till Son Gual. Vill du spela den med nagon som kan varje hal?',
+    linkLabel: 'Se golfdagen med Pro',
+  },
+  zh: {
+    intro: 'Son Gual 是我在马略卡打得最多的球场，也是客户问我该去哪里打时，我最常推荐的球场。我想诚实说明原因，也诚实说明它为什么难。如果你以为这是轻松的度假球，可能会被它提醒一下。如果你也在考虑 Alcanada 或 Son Muntaner，建议先读完那些评测再决定。',
+    firstTee1: '我第一次打 Son Gual 时，站在黑色发球台。风从左侧很重地吹过来，同组是一位打得很好、也很会得分的 PGA 职业朋友。相机也在拍 vlog。这会给人额外压力。我有点紧张。',
+    firstTee2: '开球稍微打到杆面跟部。球还是飞得比预期远，刚好避开沙坑。Son Gual 的沙坑很多，而且正好放在轻微失误会去的位置。你要同时考虑风、起伏、击球稳定性。站得越久，沙坑看起来越大。',
+    wind: 'Son Gual 像是有自己的小气候。我从岛西南家里出发时早上很平静，到了第一洞发球台却已经有明显的风，而且一吹就是四个小时。顺风时很好打。逆风打一个长四杆洞，突然变成非常长的四杆洞，那就是另一回事。',
+    greens1: '果岭速度快、位置高，对差的攻果岭很不客气。一月份时，果岭和果岭边缘剪得很短，这在那个季节很少见。制造倒旋很好，但面对落点很小的切球时并不舒服。',
+    greens2: '那天同组的一位上海学生，在第 4 洞打了一个小 draw 攻果岭。球落在旗杆几米外，还是滚过了后沿。这里经常这样。一个还不错的球，不一定等于一个好成绩。',
+    course1: 'Thomas Himmel 2007 年的设计很好地利用了地形起伏。第 2 洞有欧洲最大的沙坑之一。15 到 18 洞的收官段，是我在马略卡打过最好的收官段之一。',
+    visitors: 'Rafa Nadal 经常在这里打球，并说过这是他在马略卡最喜欢的球场。Barack Obama 在 2024 年 11 月也来这里打过。通常这些名字对我并不重要，但它们说明了 Son Gual 在岛上的位置。',
+    fees1: '公开 18 洞价格通常在 110 € 到 165 € 之间。一月份养护窗口期，9 洞价格是 80 €。春秋最贵。夏季和冬季性价比更好。',
+    fees2: '会所租杆：Callaway 每轮 35 €，Titleist 每轮 45 €。球车 45 €，电动手推车 15 € 起。需要有效 WHS 差点证明。',
+    verdict: 'Son Gual 是我在马略卡最喜欢的球场。养护很好，设计聪明，从第一洞开始就要求你做清楚的决定。我不会把它说成轻松的度假球。如果你想要好球况、严肃的果岭，以及一座真正考验你的球场，它值得打。',
+    cta: '我经常带客户去 Son Gual。你想和熟悉每个洞的人一起打吗？',
+    linkLabel: '查看与职业教练同场体验',
+  },
+}
+
+function buildSonGualBlocks(locale) {
+  const copy = SON_GUAL_BLOCK_OVERRIDES[locale]
+  if (!copy) return null
+  const captions = {
+    hero: {
+      de: 'Son Gual. 11 km von Palma entfernt. Sobald am ersten Abschlag Wind aufkommt, fuehlt es sich deutlich weiter an.',
+      es: 'Son Gual. A 11 km de Palma. Se siente bastante mas lejos cuando entra el viento en el primer tee.',
+      fr: 'Son Gual. A 11 km de Palma. Il parait beaucoup plus loin quand le vent se leve au depart du 1.',
+      nl: 'Son Gual. 11 km van Palma. Het voelt duidelijk verder zodra de wind op de eerste tee opsteekt.',
+      sv: 'Son Gual. 11 km fran Palma. Det kanns betydligt langre bort nar vinden tar tag pa forsta tee.',
+      zh: 'Son Gual。距离帕尔马 11 公里。第一洞一旦起风，会感觉远得多。',
+    },
+    bunkers: {
+      de: 'Son Gual hat viele Bunker. Sie liegen genau dort, wo leicht misslungene Schlaege landen.',
+      es: 'Son Gual tiene muchos bunkers. Estan justo donde acaban los golpes ligeramente fallados.',
+      fr: 'Son Gual compte beaucoup de bunkers. Ils sont places exactement la ou finissent les coups un peu rates.',
+      nl: 'Son Gual heeft veel bunkers. Ze liggen precies waar licht gemiste slagen terechtkomen.',
+      sv: 'Son Gual har manga bunkrar. De ligger precis dar sma missar brukar hamna.',
+      zh: 'Son Gual 有很多沙坑。它们正好在轻微失误会去的位置。',
+    },
+    fourthGreen: {
+      de: 'Das 4. Gruen. Der Ball rollt nach der Landung weiter.',
+      es: 'El green del 4. La bola sigue moviendose despues de aterrizar.',
+      fr: 'Le green du 4. La balle continue de rouler apres avoir atterri.',
+      nl: 'De 4e green. De bal blijft bewegen nadat hij landt.',
+      sv: 'Fjarde greenen. Bollen fortsatter rulla efter landningen.',
+      zh: '第 4 洞果岭。球落地后会继续向后跑。',
+    },
+    closing: {
+      de: 'Die Schlussloecher. Hier verlangt der Platz Konzentration bis zum Ende.',
+      es: 'El tramo final. Aqui el campo exige concentracion hasta el final.',
+      fr: 'Le final. Ici, le parcours demande de rester concentre jusqu au bout.',
+      nl: 'De slotfase. Hier vraagt de baan om focus tot het einde.',
+      sv: 'Avslutningen. Har kraver banan fokus hela vagen in.',
+      zh: '收官段。这里需要一直保持专注。',
+    },
+    panorama: {
+      de: 'Der Blick zurueck Richtung Palma vom hoeheren Teil des Platzes.',
+      es: 'La vista de vuelta hacia Palma desde la parte alta del campo.',
+      fr: 'Le regard vers Palma depuis la partie haute du parcours.',
+      nl: 'Terugkijken richting Palma vanaf het hogere deel van de baan.',
+      sv: 'Utsikten tillbaka mot Palma fran den hogre delen av banan.',
+      zh: '从高处看帕尔马方向。',
+    },
+    tenthTee: {
+      de: 'Der 10. Abschlag, direkt vor dem Clubhaus. Das Par 4 liegt komplett vor Ihnen.',
+      es: 'El tee del 10, justo delante de la casa club. El par 4 se abre delante de usted.',
+      fr: 'Le depart du 10, juste devant le clubhouse. Le par 4 s ouvre devant vous.',
+      nl: 'De 10e tee, direct voor het clubhuis. De par 4 strekt zich voor u uit.',
+      sv: 'Tee pa hal 10, precis framfor klubbhuset. Par 4:an ligger framfor dig.',
+      zh: '第 10 洞发球台，就在会所前方。这个四杆洞从这里向前展开。',
+    },
+  }
+  const factLabels = {
+    de: ['Greenfee 2026', 'Schwierigkeit', 'Meisterschaftsplatz', 'Design von Thomas Himmel'],
+    es: ['green fee 2026', 'dificultad', 'recorrido de campeonato', 'diseno de Thomas Himmel'],
+    fr: ['green fee 2026', 'difficulte', 'parcours de championnat', 'dessin de Thomas Himmel'],
+    nl: ['greenfee 2026', 'moeilijkheid', 'championship layout', 'ontwerp van Thomas Himmel'],
+    sv: ['greenfee 2026', 'svarighetsgrad', 'mastarskapslayout', 'design av Thomas Himmel'],
+    zh: ['2026 果岭费', '难度', '锦标赛布局', 'Thomas Himmel 设计'],
+  }
+
+  return [
+    { type: 'image', src: '/images/son-gual-blog/sg-hero.webp', alt: 'Son Gual Golf Course, Mallorca', caption: captions.hero[locale] },
+    { type: 'paragraph', text: copy.intro },
+    { type: 'image', src: '/images/son-gual-blog/sg-clients-group.webp', alt: 'Golfers at Son Gual with Andy Griffiths', caption: POST_IMAGE_PATCHES['son-gual-review'].insertions[0].captions[locale] },
+    { type: 'heading', text: locale === 'de' ? 'Der erste Abschlag' : locale === 'es' ? 'El primer tee' : locale === 'fr' ? 'Le premier tee' : locale === 'nl' ? 'De eerste tee' : locale === 'sv' ? 'Forsta tee' : '第一洞发球台' },
+    { type: 'paragraph', text: copy.firstTee1 },
+    { type: 'paragraph', text: copy.firstTee2 },
+    { type: 'image', src: '/images/son-gual-blog/sg-1.webp', alt: 'Son Gual fairway and bunkers', caption: captions.bunkers[locale] },
+    { type: 'heading', text: locale === 'de' ? 'Der Wind' : locale === 'es' ? 'El viento' : locale === 'fr' ? 'Le vent' : locale === 'nl' ? 'De wind' : locale === 'sv' ? 'Vinden' : '风' },
+    { type: 'paragraph', text: copy.wind },
+    { type: 'image', src: '/images/son-gual-blog/sg-swing.webp', alt: 'Client hitting a tee shot at Son Gual', caption: POST_IMAGE_PATCHES['son-gual-review'].insertions[1].captions[locale] },
+    { type: 'heading', text: locale === 'de' ? 'Die Greens' : locale === 'es' ? 'Los greens' : locale === 'fr' ? 'Les greens' : locale === 'nl' ? 'De greens' : locale === 'sv' ? 'Greenerna' : '果岭' },
+    { type: 'paragraph', text: copy.greens1 },
+    { type: 'paragraph', text: copy.greens2 },
+    { type: 'image', src: '/images/son-gual-blog/sg-2.webp', alt: 'Son Gual green and surrounding landscape', caption: captions.fourthGreen[locale] },
+    { type: 'heading', text: locale === 'de' ? 'Der Platz' : locale === 'es' ? 'El campo' : locale === 'fr' ? 'Le parcours' : locale === 'nl' ? 'De baan' : locale === 'sv' ? 'Banan' : '球场' },
+    { type: 'paragraph', text: copy.course1 },
+    { type: 'image', src: '/images/son-gual-blog/sg-5.webp', alt: 'Son Gual closing stretch', caption: captions.closing[locale] },
+    { type: 'image', src: '/images/son-gual-blog/sg-plane.webp', alt: 'Plane coming into Palma airport over Son Gual golf course', caption: POST_IMAGE_PATCHES['son-gual-review'].insertions[2].captions[locale] },
+    { type: 'image', src: '/images/son-gual-blog/sg-3.webp', alt: 'Son Gual panoramic view across Palma', caption: captions.panorama[locale] },
+    { type: 'heading', text: locale === 'de' ? 'Bekannte Besucher' : locale === 'es' ? 'Visitantes conocidos' : locale === 'fr' ? 'Visiteurs connus' : locale === 'nl' ? 'Bekende bezoekers' : locale === 'sv' ? 'Kanda besokare' : '知名访客' },
+    { type: 'paragraph', text: copy.visitors },
+    { type: 'image', src: '/images/son-gual-blog/sg-4.webp', alt: 'Son Gual course detail', caption: captions.tenthTee[locale] },
+    { type: 'facts', items: [['110-165 EUR', factLabels[locale][0]], ['9/10', factLabels[locale][1]], ['Par 72', factLabels[locale][2]], ['2007', factLabels[locale][3]]] },
+    { type: 'heading', text: locale === 'de' ? 'Greenfees 2026' : locale === 'es' ? 'Green fees 2026' : locale === 'fr' ? 'Green fees 2026' : locale === 'nl' ? 'Greenfees 2026' : locale === 'sv' ? 'Greenfee 2026' : '2026 果岭费' },
+    { type: 'paragraph', text: copy.fees1 },
+    { type: 'paragraph', text: copy.fees2 },
+    { type: 'heading', text: locale === 'de' ? 'Fazit' : locale === 'es' ? 'Veredicto' : locale === 'fr' ? 'Verdict' : locale === 'nl' ? 'Oordeel' : locale === 'sv' ? 'Omdome' : '结论' },
+    { type: 'paragraph', text: copy.verdict },
+    { type: 'cta', text: copy.cta, linkLabel: copy.linkLabel, href: locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro` },
+  ]
+}
+
+function applySonGualContentPatch(locale, content) {
+  if (!content) return content
+  return {
+    ...content,
+    meta: {
+      ...content.meta,
+      related: SON_GUAL_RELATED[locale] || content.meta.related,
+    },
+    blocks: buildSonGualBlocks(locale) || content.blocks,
+  }
+}
+
 function applyPostImagePatches(slug, locale, blocks) {
   const patch = POST_IMAGE_PATCHES[slug]
   if (!patch) return blocks
@@ -4957,13 +5275,27 @@ function applyPostImagePatches(slug, locale, blocks) {
 }
 
 export function getLocalizedGuidePostContent(slug, locale) {
-  const content = slug === 'son-antem-west-review'
+  let content = slug === 'son-antem-west-review'
     ? SON_ANTEM_WEST_LOCALIZED[locale]
     : LOCALIZED_GUIDE_POST_CONTENT[slug]?.[locale]
   if (!content) return null
 
+  if (slug === 'son-gual-review') {
+    content = applySonGualContentPatch(locale, content)
+  }
+
+  if (REVIEW_RELATED[slug]?.[locale]) {
+    content = {
+      ...content,
+      meta: {
+        ...content.meta,
+        related: REVIEW_RELATED[slug][locale],
+      },
+    }
+  }
+
   return {
     ...content,
-    blocks: applyPostImagePatches(slug, locale, content.blocks),
+    blocks: slug === 'son-gual-review' ? content.blocks : applyPostImagePatches(slug, locale, content.blocks),
   }
 }

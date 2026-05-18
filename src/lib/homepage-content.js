@@ -1861,8 +1861,9 @@ export function getHomeContent(locale = 'en') {
   const packages = content.packages
     ? {
         ...content.packages,
-        items: localizedPackageItems.map((item) => ({
+        items: localizedPackageItems.map((item, index) => ({
           ...item,
+          href: item.href || content.packages.items?.[index]?.href || (locale === 'en' ? '/contact' : `/${locale}/contact`),
           price:
             item.tier === soloOffer.shortLabel
               ? soloOffer.priceDisplay
@@ -1894,6 +1895,12 @@ export function getHomeContent(locale = 'en') {
 
   return {
     ...content,
+    experience: content.experience
+      ? {
+          ...content.experience,
+          features: HOME_CONTENT.en.experience?.features?.length ? content.experience.features : [],
+        }
+      : content.experience,
     packages,
     courses: content.courses
       ? {

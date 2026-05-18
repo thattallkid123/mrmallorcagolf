@@ -1,4 +1,4 @@
-import { SITE_ORIGIN, buildLocalePath, getHreflangCode } from './site'
+import { SITE_ORIGIN, buildLocalePath, getHreflangCode } from './site.js'
 import { getLocalizedGuideArticleContent } from './guide-article-content-localized.js'
 
 export const GUIDE_ARTICLE_CONTENT = {

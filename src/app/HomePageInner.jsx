@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
 import { getCourseDestination } from '../lib/golf-courses-helpers'
+import HorizontalWheelScroll from '../components/HorizontalWheelScroll'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -108,15 +109,25 @@ export default function HomePageInner({ locale = 'en' }) {
 
       <section className="intro reveal">
         <div className="intro__left">
-          <p className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)', marginBottom: '1rem' }}>
+          <p className="eyebrow">
             {home.intro.eyebrow}
           </p>
-          <h2 className="serif-display" style={{ fontSize: 'clamp(1.8rem,3vw,2.6rem)', color: '#fff', marginBottom: '1.5rem' }}>
+          <h2 className="serif-display">
             {home.intro.title}
           </h2>
           {home.intro.paragraphs.map((p, i) => (
-            <p key={i} style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.74)', lineHeight: 1.85, marginBottom: i < home.intro.paragraphs.length - 1 ? '1.25rem' : 0 }}>{p}</p>
+            <p key={i}>{p}</p>
           ))}
+        </div>
+        <div className="intro__media" aria-label="Andy Griffiths">
+          <Image
+            src="/images/about-andy-colour.webp"
+            alt="Andy Griffiths, PGA Advanced Professional in Mallorca"
+            fill
+            quality={90}
+            sizes="(max-width: 900px) 100vw, 420px"
+            style={{ objectFit: 'cover', objectPosition: 'center 24%' }}
+          />
         </div>
       </section>
       {/* Credential strip */}
@@ -131,7 +142,7 @@ export default function HomePageInner({ locale = 'en' }) {
                 height={logo.height}
                 className="cred-logo-bar__img"
                 loading="eager"
-                unoptimized
+                quality={90}
                 sizes="(max-width: 700px) 45vw, 238px"
               />
             </div>
@@ -193,7 +204,7 @@ export default function HomePageInner({ locale = 'en' }) {
           </div>
           <p className="courses__hint">Swipe or scroll to browse</p>
         </div>
-        <div className="courses__track">
+        <HorizontalWheelScroll className="courses__track" aria-label="Featured course carousel">
           {home.courses.items.map((course) => (
             <a
               key={course.name}
@@ -231,7 +242,7 @@ export default function HomePageInner({ locale = 'en' }) {
               </div>
             </a>
           ))}
-        </div>
+        </HorizontalWheelScroll>
         <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
           <a href={golfCoursesHref} className="btn btn--dark">
             {home.courses.viewAll}
