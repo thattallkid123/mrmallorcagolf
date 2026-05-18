@@ -3,6 +3,7 @@ import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
+import InlineRichText from './InlineRichText'
 
 function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', priority = false, containerStyle, imageStyle }) {
   return (
@@ -50,7 +51,7 @@ function getImagePresentation(block, imageOrdinal) {
 
 function renderBlock(block, index, locale, imageOrdinal) {
   if (block.type === 'paragraph') {
-    return <p key={`${index}-${block.text.slice(0, 24)}`}>{block.text}</p>
+    return <p key={`${index}-${block.text.slice(0, 24)}`}><InlineRichText text={block.text} locale={locale} /></p>
   }
 
   if (block.type === 'heading') {
@@ -147,7 +148,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
           <li key={item.label || item.text}>
             {item.label ? <strong>{item.label}</strong> : null}
             {item.label ? ' ' : null}
-            {item.text}
+            <InlineRichText text={item.text} locale={locale} />
           </li>
         ))}
       </ul>
@@ -193,7 +194,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
     const href = joinHref(locale, block.href)
     return (
       <div key={`cta-${index}`} className="post-cta">
-        <p>{block.text}</p>
+        <p><InlineRichText text={block.text} locale={locale} /></p>
         {block.internal ? <Link href={href}>{block.linkLabel}</Link> : <a href={href}>{block.linkLabel}</a>}
       </div>
     )

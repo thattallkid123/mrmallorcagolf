@@ -1,3 +1,7 @@
+## 2026-05-18
+
+- [site] Fixed guide/review inline links rendering as literal HTML across guide pages and locales.
+
 ## 2026-05-15
 
 - [seo] Meta title rewrites for CTR: golf-cost guide, is-mallorca-good, play-with-a-pro, son-muntaner, homepage
