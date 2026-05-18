@@ -18,6 +18,8 @@ ga4_analytics/ga4_token.json
 
 # testing
 /coverage
+/test-results
+/playwright-report
 
 # next.js
 /.next/

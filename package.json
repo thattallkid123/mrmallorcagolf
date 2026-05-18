@@ -19,6 +19,7 @@
     "check:shared-locale": "node scripts/check-shared-locale-fallbacks.js",
     "check:guide-locale-leaks": "node scripts/check-guide-locale-english-leaks.js",
     "check:i18n-release": "node scripts/locale-release-check.js",
+    "check:visual": "playwright test",
     "check:ready": "npm run check:content && npm run check:i18n-release && npm run build",
     "predeploy": "npm run check:text && npm run check:i18n-release && npm run build"
   },

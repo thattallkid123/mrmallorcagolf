@@ -25,7 +25,7 @@ export const GOLF_COURSES_CONTENT = {
       playWithAndy: 'Play with Andy',
       credentials: 'UK PGA Advanced Professional · Trackman Master Certified · TPI Level 3 · 11 years in Shanghai · Based in Mallorca since March 2025',
       intro1: 'Mallorca has more good golf than most visitors realise. There are 24 courses on the island and 21 are open to green-fee visitors, which is more depth than most people expect from one island.',
-      intro2: "I'm working my way through every course on the island, playing them and reviewing them honestly. Below is what I know so far.",
+      intro2: "I'm working my way through every course on the island, playing them and reviewing them honestly. Son Antem West is now in that played-and-reviewed list. Below is what I know so far.",
       sidebarH3: 'Want to play one of these courses with a UK PGA professional alongside you?',
       sidebarP: 'Private day, everything arranged and a course chosen for what would be best for you.',
       sidebarBtn: 'Get in touch →',
@@ -47,7 +47,7 @@ export const GOLF_COURSES_CONTENT = {
       courseNote: '',
       geoEyebrow: 'Where the courses sit',
       geoH2: 'Mallorca has more outstanding golf than most visitors realise.',
-      geoP1: "There are 24 courses here, from proper DP World Tour venues to quieter places most visitors never hear about. For full 18-hole rounds, green fees now run from around €55 in the value season up to around €250 at the top end. I'm a UK PGA Advanced Professional based on the island, and I'm working my way through every course with proper research behind the ones I haven't yet played myself.",
+      geoP1: "There are 24 courses here, from proper DP World Tour venues to quieter places most visitors never hear about. For full 18-hole rounds, green fees now run from around €55 in the value season up to around €250 at the top end. I'm a UK PGA Advanced Professional based on the island, and Son Antem West is now one of the courses I have played and reviewed myself.",
       geoP2: 'Best time to play: for the very best conditions, target late spring and autumn; for better value, look at summer mornings, later-day rates, and winter. The island works year-round.',
       geoRegions: [
         { region: 'Palma', courses: 'Son Gual · Son Muntaner · Son Vida · Son Quint · T Golf Palma (Puntiró) · Son Termes · Palma Pitch & Putt' },

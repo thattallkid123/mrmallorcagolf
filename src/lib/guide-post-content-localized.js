@@ -1,3 +1,5 @@
+import { SON_ANTEM_WEST_LOCALIZED } from './son-antem-west-localized.js'
+
 export const LOCALIZED_GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     de: {
@@ -4955,7 +4957,9 @@ function applyPostImagePatches(slug, locale, blocks) {
 }
 
 export function getLocalizedGuidePostContent(slug, locale) {
-  const content = LOCALIZED_GUIDE_POST_CONTENT[slug]?.[locale]
+  const content = slug === 'son-antem-west-review'
+    ? SON_ANTEM_WEST_LOCALIZED[locale]
+    : LOCALIZED_GUIDE_POST_CONTENT[slug]?.[locale]
   if (!content) return null
 
   return {

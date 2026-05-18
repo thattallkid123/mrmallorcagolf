@@ -289,6 +289,7 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Bester Platz Spaniens 2025',
     'European Tour Host': 'European-Tour-Austragungsort',
     'Members + Arranged Access': 'Mitglieder + Zugang auf Anfrage',
+    'Played by Andy': 'Von Andy gespielt',
   },
   es: {
     '\u2605 Expert Pick': '\u2605 Seleccion personal',
@@ -296,6 +297,7 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Mejor campo de Espana 2025',
     'European Tour Host': 'Sede del European Tour',
     'Members + Arranged Access': 'Socios + acceso organizado',
+    'Played by Andy': 'Jugado por Andy',
   },
   fr: {
     '\u2605 Expert Pick': '\u2605 Choix d expert',
@@ -303,6 +305,7 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Meilleur d Espagne 2025',
     'European Tour Host': 'Hote de l European Tour',
     'Members + Arranged Access': 'Membres + acces organise',
+    'Played by Andy': 'Joue par Andy',
   },
   nl: {
     '\u2605 Expert Pick': '\u2605 Expertkeuze',
@@ -310,6 +313,7 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Beste van Spanje 2025',
     'European Tour Host': 'European Tour-host',
     'Members + Arranged Access': 'Leden + toegang op afspraak',
+    'Played by Andy': 'Gespeeld door Andy',
   },
   sv: {
     '\u2605 Expert Pick': '\u2605 Expertval',
@@ -317,6 +321,7 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Bast i Spanien 2025',
     'European Tour Host': 'Vard for European Tour',
     'Members + Arranged Access': 'Medlemmar + ordnad tillgang',
+    'Played by Andy': 'Spelad av Andy',
   },
   zh: {
     '\u2605 Expert Pick': '\u2605 Zhuan jia tui jian',
@@ -324,6 +329,7 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': '2025 Xi ban ya zui jia',
     'European Tour Host': 'European Tour sai shi qiu chang',
     'Members + Arranged Access': 'Hui yuan zhi + ke xie zhu an pai',
+    'Played by Andy': 'Andy yi da guo',
   },
 }
 

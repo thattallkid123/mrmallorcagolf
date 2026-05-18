@@ -34,6 +34,7 @@ const GUIDE_IMAGES = {
   'santa-ponsa-1-review':       { src: '/images/santa-ponsa-card.webp',                           position: 'center 40%' },
   'son-termes-review':          { src: '/images/courses/son-termes.webp',                         position: 'center 40%' },
   'golf-andratx-review':        { src: '/images/andratx-card.webp',                               position: 'center 40%' },
+  'son-antem-west-review':      { src: '/images/courses/son-antem-west.webp',                     position: 'center 45%' },
   't-golf-calvia-review':       { src: '/images/t-golf-calvia-card.webp',                          position: 'center 40%' },
   'a-day-at-son-gual':          { src: '/images/son-gual-blog/sg-hero.webp',                      position: 'center 35%' },
   'best-golf-courses-mallorca': { src: '/images/blog-best-golf-courses/Son Gual.webp',            position: 'center 50%' },

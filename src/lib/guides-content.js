@@ -1076,6 +1076,112 @@ export const GUIDES_CONTENT = {
   },
 }
 
+const SON_ANTEM_WEST_GUIDE_CARDS = {
+  en: {
+    slug: 'son-antem-west-review',
+    badge: 'Course Review',
+    badgeGold: true,
+    img: '/images/courses/son-antem-west.webp',
+    imgPosition: 'center 45%',
+    title: "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)",
+    intro:
+      'A resort course 15-20 minutes from Palma. Good conditioning, open countryside, and a layout that suits a wide range of players.',
+    readTime: '6 min read',
+    keywords: 'Resort course - Par 72 - EUR 90-135 - 15-20 min from Palma',
+  },
+  es: {
+    slug: 'son-antem-west-review',
+    badge: 'Analisis del campo',
+    badgeGold: true,
+    img: '/images/courses/son-antem-west.webp',
+    imgPosition: 'center 45%',
+    title: 'Son Antem West Golf Club, Mallorca - analisis honesto de un Profesional PGA (2026)',
+    intro:
+      'Un campo de resort a 15-20 minutos de Palma. Buen mantenimiento, campo abierto y un recorrido que sirve para muchos tipos de jugador.',
+    readTime: '6 min',
+    keywords: 'Resort - Par 72 - EUR 90-135 - 15-20 min desde Palma',
+  },
+  de: {
+    slug: 'son-antem-west-review',
+    badge: 'Platz-Bewertung',
+    badgeGold: true,
+    img: '/images/courses/son-antem-west.webp',
+    imgPosition: 'center 45%',
+    title: 'Son Antem West Golf Club, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)',
+    intro:
+      'Ein Resortplatz 15-20 Minuten von Palma entfernt. Gute Pflege, offene Landschaft und ein Layout, das vielen Spielstaerken entgegenkommt.',
+    readTime: '6 Min.',
+    keywords: 'Resortplatz - Par 72 - EUR 90-135 - 15-20 Min. von Palma',
+  },
+  fr: {
+    slug: 'son-antem-west-review',
+    badge: 'Avis parcours',
+    badgeGold: true,
+    img: '/images/courses/son-antem-west.webp',
+    imgPosition: 'center 45%',
+    title: "Son Antem West Golf Club, Majorque - avis honnete d'un professionnel PGA (2026)",
+    intro:
+      'Un parcours de resort a 15-20 minutes de Palma. Bon entretien, campagne ouverte et un trace qui convient a beaucoup de joueurs.',
+    readTime: '6 min',
+    keywords: 'Resort - Par 72 - EUR 90-135 - 15-20 min de Palma',
+  },
+  nl: {
+    slug: 'son-antem-west-review',
+    badge: 'Baanbeoordeling',
+    badgeGold: true,
+    img: '/images/courses/son-antem-west.webp',
+    imgPosition: 'center 45%',
+    title: 'Son Antem West Golf Club, Mallorca - eerlijke review van een PGA Professional (2026)',
+    intro:
+      'Een resortbaan op 15-20 minuten van Palma. Goede conditie, open landschap en een lay-out die voor veel spelers werkt.',
+    readTime: '6 min',
+    keywords: 'Resortbaan - Par 72 - EUR 90-135 - 15-20 min van Palma',
+  },
+  sv: {
+    slug: 'son-antem-west-review',
+    badge: 'Banrecension',
+    badgeGold: true,
+    img: '/images/courses/son-antem-west.webp',
+    imgPosition: 'center 45%',
+    title: 'Son Antem West Golf Club, Mallorca - arlig recension av en PGA Professional (2026)',
+    intro:
+      'En resortbana 15-20 minuter fran Palma. Bra skick, oppet landskap och en layout som passar manga olika spelare.',
+    readTime: '6 min',
+    keywords: 'Resortbana - Par 72 - EUR 90-135 - 15-20 min fran Palma',
+  },
+  zh: {
+    slug: 'son-antem-west-review',
+    badge: '球场评测',
+    badgeGold: true,
+    img: '/images/courses/son-antem-west.webp',
+    imgPosition: 'center 45%',
+    title: 'Son Antem West 高尔夫俱乐部，马略卡 - PGA 职业教练真实评测（2026）',
+    intro:
+      '距离帕尔马15-20分钟的度假村球场。养护好，环境开阔，球场设计适合很多类型的球手。',
+    readTime: '6分钟',
+    keywords: '度假村球场 - 标准杆72 - EUR 90-135 - 距帕尔马15-20分钟',
+  },
+}
+
+function insertGuideAfter(guides, card, previousSlug) {
+  if (!card || guides.some((guide) => guide.slug === card.slug)) return guides
+
+  const previousIndex = guides.findIndex((guide) => guide.slug === previousSlug)
+  if (previousIndex < 0) return [...guides, card]
+
+  return [
+    ...guides.slice(0, previousIndex + 1),
+    card,
+    ...guides.slice(previousIndex + 1),
+  ]
+}
+
 export function getGuidesContent(locale = 'en') {
-  return GUIDES_CONTENT[locale] || GUIDES_CONTENT.en
+  const content = GUIDES_CONTENT[locale] || GUIDES_CONTENT.en
+  const card = SON_ANTEM_WEST_GUIDE_CARDS[locale] || SON_ANTEM_WEST_GUIDE_CARDS.en
+
+  return {
+    ...content,
+    liveGuides: insertGuideAfter(content.liveGuides, card, 'golf-andratx-review'),
+  }
 }
