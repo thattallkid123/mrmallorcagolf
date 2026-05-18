@@ -1,46 +1,81 @@
 'use client'
+import Image from 'next/image'
 import { useRef, useEffect } from 'react'
 
 const CAREER_VENUES = [
-  { name: 'Pebble Beach', detail: 'California, USA' },
-  { name: 'The Open Championship', detail: 'UK' },
-  { name: 'Evian Championship', detail: "France · Women's Major" },
-  { name: 'Doral', detail: 'Miami, USA' },
-  { name: 'World Cruise', detail: '40+ Countries' },
-  { name: 'TPI Oceanside', detail: 'California, USA' },
-  { name: 'Egypt International Pro-Am', detail: 'Cairo, Egypt' },
-  { name: 'Shanghai', detail: 'China · 11 Years' },
+  { name: 'Pebble Beach', detail: 'California, USA', img: '/images/career/pebble-beach.webp' },
+  { name: 'The Open Championship', detail: 'United Kingdom', img: '/images/career/the-open.webp' },
+  { name: 'Evian Championship', detail: "France - Women's Major", img: '/images/career/evian.webp' },
+  { name: 'Doral', detail: 'Miami, USA', img: '/images/career/doral.webp' },
+  { name: 'World Cruise', detail: '40+ Countries', img: '/images/career/cruise.webp' },
+  { name: 'TPI Oceanside', detail: 'California, USA', img: '/images/career/tpi.webp' },
+  { name: 'Shanghai', detail: 'China - 11 Years', img: '/images/career/shanghai.webp' },
+  { name: 'Egypt International', detail: 'Cairo, Egypt', img: '/images/career/egypt.webp' },
 ]
 
-export default function CareerStrip({ label = 'Venues & experience', heading = 'Where the career was built.' }) {
+export default function CareerStrip({ label = "Where I've been", heading = 'Built across some very different golf environments.' }) {
+  const viewportRef = useRef(null)
   const trackRef = useRef(null)
   const allVenues = [...CAREER_VENUES, ...CAREER_VENUES]
+
   useEffect(() => {
+    const viewport = viewportRef.current
     const track = trackRef.current
-    if (!track) return
-    let pos = 0
+    if (!viewport || !track) return
+
+    let pausedUntil = 0
     let raf
+
+    const pauseBriefly = () => {
+      pausedUntil = performance.now() + 1800
+    }
+
     const tick = () => {
-      pos += 0.4
-      if (pos >= track.scrollWidth / 2) pos = 0
-      track.style.transform = `translateX(-${pos}px)`
+      if (performance.now() > pausedUntil) {
+        viewport.scrollLeft += 0.72
+        if (viewport.scrollLeft >= track.scrollWidth / 2) viewport.scrollLeft = 0
+      }
       raf = requestAnimationFrame(tick)
     }
+
+    viewport.addEventListener('pointerdown', pauseBriefly)
+    viewport.addEventListener('wheel', pauseBriefly, { passive: true })
+    viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
     raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
+
+    return () => {
+      cancelAnimationFrame(raf)
+      viewport.removeEventListener('pointerdown', pauseBriefly)
+      viewport.removeEventListener('wheel', pauseBriefly)
+      viewport.removeEventListener('touchstart', pauseBriefly)
+    }
   }, [])
+
   return (
     <section className="career-strip">
       <div className="career-strip__header">
         <p className="career-strip__label">{label}</p>
         <h2 className="serif-display career-strip__title">{heading}</h2>
       </div>
-      <div className="career-strip__viewport">
+      <div ref={viewportRef} className="career-strip__viewport" aria-label="Career venues carousel">
         <div ref={trackRef} className="career-strip__track">
           {allVenues.map((v, i) => (
             <div key={i} className="career-strip__card">
-              <p className="career-strip__card-name">{v.name}</p>
-              <p className="career-strip__card-detail">{v.detail}</p>
+              <div className="career-strip__card-img">
+                <Image
+                  src={v.img}
+                  alt={v.name}
+                  fill
+                  sizes="(max-width: 700px) 72vw, 320px"
+                  unoptimized
+                  style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+                />
+                <div className="career-strip__card-scrim" />
+              </div>
+              <div className="career-strip__card-text">
+                <p className="career-strip__card-name">{v.name}</p>
+                <p className="career-strip__card-detail">{v.detail}</p>
+              </div>
             </div>
           ))}
         </div>

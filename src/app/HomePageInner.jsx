@@ -32,6 +32,13 @@ const FEATURE_ICONS = {
   ),
 }
 
+const CREDENTIAL_LOGOS = [
+  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
+  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
+  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
+  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
+]
+
 function localizePath(path, locale) {
   if (!path || path.startsWith('http') || path.startsWith('#')) return path
   return locale === 'en' ? path : `/${locale}${path}`
@@ -65,6 +72,7 @@ export default function HomePageInner({ locale = 'en' }) {
             alt="Golf day in Mallorca with PGA Advanced Professional Andy Griffiths"
             fill
             priority
+            quality={88}
             sizes="100vw"
             style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
           />
@@ -116,10 +124,23 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
       </section>
 
-      <section style={{ background: 'var(--deep)', borderTop: '1px solid rgba(255,255,255,0.06)', padding: '1.5rem clamp(20px,5vw,60px)' }}>
-        <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'rgba(255,255,255,0.74)', fontFamily: "'Jost',sans-serif", fontWeight: 300, lineHeight: 1.6 }}>
-          {home.socialProof}
-        </p>
+      <section className="cred-logo-bar" aria-label={home.socialProof}>
+        <div className="cred-logo-bar__logos">
+          {CREDENTIAL_LOGOS.map((logo) => (
+            <div className="cred-logo-bar__item" key={logo.name}>
+              <Image
+                src={logo.src}
+                alt={logo.name}
+                width={logo.width}
+                height={logo.height}
+                className="cred-logo-bar__img"
+                loading="eager"
+                unoptimized
+                sizes="(max-width: 700px) 45vw, 238px"
+              />
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="how">

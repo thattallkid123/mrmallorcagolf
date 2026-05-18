@@ -16,6 +16,7 @@
     "check:shared-locale": "node scripts/check-shared-locale-fallbacks.js",
     "check:guide-locale-leaks": "node scripts/check-guide-locale-english-leaks.js",
     "check:i18n-release": "node scripts/locale-release-check.js",
+    "check:visual": "playwright test",
     "check:ready": "npm run check:content && npm run check:i18n-release && npm run build"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "resend": "^6.9.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
