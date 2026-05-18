@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
+  images: {
+    qualities: [75, 88, 90],
+  },
   async headers() {
     const contentSecurityPolicy = [
       "default-src 'self'",

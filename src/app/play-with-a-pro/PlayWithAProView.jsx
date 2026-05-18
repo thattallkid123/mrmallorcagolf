@@ -320,7 +320,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p className="eyebrow pwap-multiday__eyebrow">{multiDayPackage.eyebrow}</p>
               <h3 className="serif-display pwap-multiday__title">{multiDayPackage.title}</h3>
               <p className="pwap-multiday__body">{multiDayPackage.body}</p>
-              {multiDayPackage.detail && (
+              {locale === 'en' && multiDayPackage.detail && (
                 <p className="pwap-multiday__detail">{multiDayPackage.detail}</p>
               )}
               <Link href={multiDayPackage.href} className="btn btn--gold">{multiDayPackage.button}</Link>

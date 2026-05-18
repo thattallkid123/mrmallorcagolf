@@ -135,7 +135,7 @@ export default function HomePageInner({ locale = 'en' }) {
                 height={logo.height}
                 className="cred-logo-bar__img"
                 loading="eager"
-                unoptimized
+                quality={90}
                 sizes="(max-width: 700px) 45vw, 238px"
               />
             </div>

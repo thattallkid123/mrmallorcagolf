@@ -6943,6 +6943,55 @@ function patchADayAtSonGualContent(locale, content) {
 export function getLocalizedGuideArticleContent(slug, locale) {
   const content = LOCALIZED_GUIDE_ARTICLE_CONTENT[slug]?.[locale] || null
 
+  const bestCoursesRelated = {
+    de: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: ehrliche Bewertung 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: ehrliche Bewertung 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Golfreise nach Mallorca planen' },
+      { slug: 'best-time-play-golf-mallorca', title: 'Die beste Zeit fuer Golf auf Mallorca' },
+    ],
+    es: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: analisis honesto 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: analisis honesto 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Como planificar un viaje de golf a Mallorca' },
+      { slug: 'best-time-play-golf-mallorca', title: 'La mejor epoca para jugar al golf en Mallorca' },
+    ],
+    fr: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf : avis honnete 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf : avis honnete 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Planifier un voyage de golf a Majorque' },
+      { slug: 'best-time-play-golf-mallorca', title: 'La meilleure periode pour jouer au golf a Majorque' },
+    ],
+    nl: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: eerlijke review 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: eerlijke review 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Een golfreis naar Mallorca plannen' },
+      { slug: 'best-time-play-golf-mallorca', title: 'De beste tijd om golf te spelen op Mallorca' },
+    ],
+    sv: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: arlig recension 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: arlig recension 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: 'Planera en golfresa till Mallorca' },
+      { slug: 'best-time-play-golf-mallorca', title: 'Basta tiden att spela golf pa Mallorca' },
+    ],
+    zh: [
+      { slug: 'son-gual-review', title: 'Son Gual Golf: 真实评测 2026' },
+      { slug: 'alcanada-review', title: 'Alcanada Golf: 真实评测 2026' },
+      { slug: 'golf-trip-planning-mallorca', title: '如何规划马略卡高尔夫之旅' },
+      { slug: 'best-time-play-golf-mallorca', title: '马略卡打高尔夫的最佳时间' },
+    ],
+  }
+
+  if (slug === 'best-golf-courses-mallorca' && content && bestCoursesRelated[locale]) {
+    return {
+      ...content,
+      meta: {
+        ...content.meta,
+        related: bestCoursesRelated[locale],
+      },
+    }
+  }
+
   if (slug === 'a-day-at-son-gual') {
     return patchADayAtSonGualContent(locale, content)
   }

@@ -636,6 +636,70 @@ function normalizeWhoCards(cards = []) {
   }))
 }
 
+const GIFT_WHO_CARDS = {
+  de: {
+    title: 'Ein Geschenk, das wirklich genutzt wird',
+    text: 'Der Tag passt gut fuer runde Geburtstage, Ruhestand und Firmen-Dankeschoen. Wenn Sie fuer jemand anderen buchen, halte ich die Details diskret, bis alles bereit ist.',
+  },
+  es: {
+    title: 'Un regalo que se va a usar de verdad',
+    text: 'Funciona bien para cumpleanos importantes, jubilaciones y premios de empresa. Si lo compra para otra persona, mantengo los detalles en privado hasta que usted quiera.',
+  },
+  fr: {
+    title: 'Un cadeau qui sera vraiment utilise',
+    text: 'La journee fonctionne bien pour un anniversaire important, un depart a la retraite ou une recompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les details prives jusqu au bon moment.',
+  },
+  nl: {
+    title: 'Een cadeau dat echt gebruikt wordt',
+    text: 'Deze dagen werken goed voor mijlpaalverjaardagen, pensioen en zakelijke beloningen. Als u voor iemand anders boekt, houd ik de details prive tot u klaar bent.',
+  },
+  sv: {
+    title: 'En present som faktiskt blir anvand',
+    text: 'Dagarna passar bra for stora fodelsedagar, pension och foretagsbeloningar. Om du koper till nagon annan haller jag detaljerna privata tills du ar redo.',
+  },
+  zh: {
+    title: '一份真正会被使用的礼物',
+    text: '适合重要生日、退休礼物和企业奖励。如果是送给别人，我会在您准备好之前保密当天细节。',
+  },
+}
+
+function normalizeWhoCardsForLocale(cards = [], locale = 'en') {
+  const normalized = normalizeWhoCards(cards).slice(0, PLAY_WITH_A_PRO_CONTENT.en.who.cards.length)
+
+  while (normalized.length < PLAY_WITH_A_PRO_CONTENT.en.who.cards.length) {
+    const fallback = GIFT_WHO_CARDS[locale] || PLAY_WITH_A_PRO_CONTENT.en.who.cards[normalized.length]
+    normalized.push({
+      num: String(normalized.length + 1).padStart(2, '0'),
+      title: fallback.title,
+      text: fallback.text,
+    })
+  }
+
+  return normalized
+}
+
+function normalizeTierForLocale(tier, index) {
+  const englishTier = PLAY_WITH_A_PRO_CONTENT.en.packages.tiers[index]
+  if (!englishTier) return tier
+
+  const normalized = {
+    ...tier,
+    features: Array.isArray(tier.features)
+      ? tier.features.slice(0, englishTier.features.length)
+      : tier.features,
+  }
+
+  if (englishTier.noteLines) {
+    normalized.noteLines = tier.noteLines || String(tier.note || '').split(/[.ã€‚]\s*/).filter(Boolean)
+    while (normalized.noteLines.length < englishTier.noteLines.length && normalized.noteLines.length > 0) {
+      normalized.noteLines.push(normalized.noteLines[normalized.noteLines.length - 1])
+    }
+    delete normalized.note
+  }
+
+  return normalized
+}
+
 function mergeDeep(base, override) {
   if (Array.isArray(base) || Array.isArray(override)) {
     return override === undefined ? base : override
@@ -1460,15 +1524,18 @@ export function getPlayWithAProContent(locale = 'en') {
   const packages = content?.packages
     ? {
         ...content.packages,
-        tiers: (content.packages.tiers || []).map((tier) => ({
-          ...tier,
-          price:
-            tier.eyebrow === soloOffer.shortLabel
-              ? soloOffer.priceDisplay
-              : tier.eyebrow === groupOffer.shortLabel
-                ? groupOffer.priceDisplay
-              : tier.price,
-        })),
+        tiers: (content.packages.tiers || []).map((tier, index) => {
+          const normalizedTier = normalizeTierForLocale(tier, index)
+          return {
+            ...normalizedTier,
+            price:
+              normalizedTier.eyebrow === soloOffer.shortLabel
+                ? soloOffer.priceDisplay
+                : normalizedTier.eyebrow === groupOffer.shortLabel
+                  ? groupOffer.priceDisplay
+                : normalizedTier.price,
+          }
+        }),
         multiDay: content.packages.multiDay
           ? {
               ...content.packages.multiDay,
@@ -1502,7 +1569,7 @@ export function getPlayWithAProContent(locale = 'en') {
     packages,
     who: {
       ...content.who,
-      cards: normalizeWhoCards(content.who.cards),
+      cards: normalizeWhoCardsForLocale(content.who.cards, locale),
     },
   }
 }

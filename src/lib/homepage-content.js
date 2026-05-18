@@ -1869,6 +1869,12 @@ export function getHomeContent(locale = 'en') {
 
   return {
     ...content,
+    experience: content.experience
+      ? {
+          ...content.experience,
+          features: HOME_CONTENT.en.experience?.features?.length ? content.experience.features : [],
+        }
+      : content.experience,
     packages,
     courses: content.courses
       ? {
