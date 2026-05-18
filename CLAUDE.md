@@ -10,6 +10,7 @@
 | Check Zoho connection | `python zoho_mail/zoho_mail.py accounts` |
 | Build site locally | `npm run dev` |
 | Check before deploy | `npm run build` |
+| Visual smoke checks | `npm run check:visual` |
 | Deploy to production | git add -A → commit → push to main (Vercel auto-deploys) |
 | Update analytics dashboard | `python ga4_analytics/ga4_report.py` (Claude runs this directly, no paste needed) |
 
@@ -33,6 +34,16 @@ Writing guardrails are in the repo at `MMG_BRAND_VOICE_GUIDELINES.md` — do NOT
 
 ## Work status & priorities
 Read `MMG_WORK_STATUS.md` at session start to understand what's in progress and what's next.
+
+## Branch and content workflow
+Read `BRANCHES.md` before deciding where to make or copy changes.
+Read `CONTENT_WORKFLOW.md` before content work.
+
+Important branch rule:
+- `main` is the live coaching/current site.
+- `itinerary-preview` is the future trip-led / itinerary-led version.
+- Shared factual content, course reviews, translations, course data, docs, tooling, and bug fixes should usually be kept on both branches.
+- Strategy-specific homepage, itinerary planner, Plan Trip, service-positioning, and copy experiments can diverge.
 
 ## Local project path
 `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`

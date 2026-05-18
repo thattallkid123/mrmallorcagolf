@@ -2,6 +2,8 @@
 
 **Read this file completely before doing anything. Then read `MMG_BRAND_VOICE_GUIDELINES.md`. Then start.**
 
+For branch decisions and shared content rules, also read `BRANCHES.md` and `CONTENT_WORKFLOW.md`.
+
 ---
 
 ## What Andy hands over
