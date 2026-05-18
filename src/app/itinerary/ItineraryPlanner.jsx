@@ -61,6 +61,18 @@ const FIELD_LABELS = {
   budget: 'Budget style',
 }
 
+const PLACEHOLDER_LABELS = {
+  nights: 'Select trip length',
+  group: 'Select group type',
+  level: 'Select playing level',
+  golf: 'Select golf appetite',
+  base: 'Select base idea',
+  season: 'Select season',
+  budget: 'Select budget style',
+}
+
+const REQUIRED_FIELDS = ['nights', 'group', 'level', 'golf', 'base', 'season', 'budget']
+
 const PRIORITIES = [
   { value: 'championship', label: 'The best courses on the island' },
   { value: 'scenery', label: 'Sea views and scenery' },
@@ -90,7 +102,7 @@ const COURSE_DETAILS = {
   'T Golf Calvia': {
     image: '/images/t-golf-calvia-card.webp',
     region: 'Southwest',
-    note: 'A strong holiday round with resort rhythm.',
+    note: 'A strong holiday round with easy resort logistics.',
   },
   'Santa Ponsa 1': {
     image: '/images/santa-ponsa-card.webp',
@@ -205,6 +217,12 @@ function getRoundCount(form) {
   return 3
 }
 
+function getPackageName(form) {
+  if (form.budget === 'premium' || form.golf === 'serious') return 'Premium Package'
+  if (form.budget === 'value' || form.golf === 'relaxed') return 'Essential Package'
+  return 'Balanced Package'
+}
+
 function getTripSnapshot(form) {
   const rounds = getRoundCount(form)
   const base = BASE_DETAILS[form.base] || BASE_DETAILS.unsure
@@ -212,7 +230,7 @@ function getTripSnapshot(form) {
     ? 'Low-transfer route'
     : form.golf === 'serious'
       ? 'Premium-course route'
-      : 'Balanced holiday rhythm'
+      : 'Balanced itinerary'
 
   return {
     rounds,
@@ -258,7 +276,7 @@ function getDayRhythmDetail(form, course, index) {
 
   if (index === 1) {
     if (form.priorities.includes('lowTravel')) return 'Keep the second golf day logistically simple so the trip does not become a transfer exercise.'
-    return 'Use the middle round to balance the trip: enough quality, less pressure, better rhythm.'
+    return 'Use the middle round to balance the trip: enough quality, less pressure, and a simpler day.'
   }
 
   if (form.golf === 'serious') return 'Finish with a course that still feels worth the tee time after two strong golf days.'
@@ -301,7 +319,7 @@ function getWatchouts(form, courses) {
   }
 
   if (!watchouts.length) {
-    watchouts.push('Before booking, I would check the course order, tee-time rhythm, and travel time together. That is where most expensive mistakes happen.')
+    watchouts.push('Before booking, I would check the course order, tee times, and travel time together. That is where most expensive mistakes happen.')
   }
 
   return watchouts.slice(0, 3)
@@ -351,7 +369,7 @@ function getAddOns(form) {
     addOns.push('One proper lunch or Palma evening, planned around the best golf day rather than forced into every day.')
   }
   if (!addOns.length) {
-    addOns.push('Keep extras light until the base, courses, and tee-time rhythm are right.')
+    addOns.push('Keep extras light until the base, courses, and tee times are right.')
   }
   return addOns
 }
@@ -365,23 +383,24 @@ function buildMessage(form, courses) {
 
 export default function ItineraryPlanner() {
   const [form, setForm] = useState({
-    nights: '4',
-    group: 'friends',
-    level: 'mixed',
-    golf: 'balanced',
-    base: 'unsure',
-    season: 'autumn',
-    budget: 'balanced',
-    priorities: ['championship', 'lowTravel'],
+    nights: '',
+    group: '',
+    level: '',
+    golf: '',
+    base: '',
+    season: '',
+    budget: '',
+    priorities: [],
     freeText: {},
   })
 
+  const isReady = REQUIRED_FIELDS.every((key) => form[key])
   const courses = useMemo(() => getCourseMix(form), [form])
   const addOns = useMemo(() => getAddOns(form), [form])
   const snapshot = useMemo(() => getTripSnapshot(form), [form])
   const tripDays = useMemo(() => getTripDays(form, courses), [form, courses])
   const watchouts = useMemo(() => getWatchouts(form, courses), [form, courses])
-  const whatsappHref = `https://wa.me/34624466702?text=${buildMessage(form, courses)}`
+  const whatsappHref = isReady ? `https://wa.me/34624466702?text=${buildMessage(form, courses)}` : ''
 
   const update = (key, value) => setForm((current) => ({ ...current, [key]: value }))
   const updateFreeText = (key, value) => setForm((current) => ({ ...current, freeText: { ...current.freeText, [key]: value } }))
@@ -398,7 +417,7 @@ export default function ItineraryPlanner() {
     <section className="itinerary-page">
       <div className="itinerary-hero-media" aria-hidden="true">
         <Image
-          src={snapshot.base.image}
+          src={isReady ? snapshot.base.image : BASE_DETAILS.unsure.image}
           alt=""
           fill
           priority
@@ -414,18 +433,21 @@ export default function ItineraryPlanner() {
         <h1 className="serif-display">Build a first draft of your Mallorca golf trip.</h1>
         <p>
           Answer a few quick questions and I&apos;ll show you where I&apos;d start: which courses,
-          which base, what rhythm, and whether a day with me on course belongs in the plan.
+          which base, which itinerary, and whether a day with me on course belongs in the plan.
           It&apos;s a first draft, not a commitment. Send it over and I&apos;ll tell you what I&apos;d change.
         </p>
       </div>
 
-      <div className="itinerary-tool">
+      <div className={`itinerary-tool${isReady ? ' itinerary-tool--ready' : ' itinerary-tool--empty'}`}>
         <div className="itinerary-controls" aria-label="Trip inputs">
           <div className="itinerary-control-grid">
             {Object.entries(OPTIONS).map(([key, options]) => (
               <label className="itinerary-field" key={key}>
                 <span>{FIELD_LABELS[key] || key}</span>
                 <select value={form[key]} onChange={(event) => update(key, event.target.value)}>
+                  <option value="" disabled>
+                    {PLACEHOLDER_LABELS[key] || 'Select an option'}
+                  </option>
                   {options.map((option) => (
                     <option key={option.value} value={option.value}>
                       {option.label}
@@ -462,6 +484,7 @@ export default function ItineraryPlanner() {
           </div>
         </div>
 
+        {isReady ? (
         <div className="itinerary-output" aria-live="polite">
           <div className="itinerary-snapshot">
             <div className="itinerary-snapshot__image">
@@ -475,29 +498,29 @@ export default function ItineraryPlanner() {
               />
             </div>
             <div className="itinerary-snapshot__content">
-              <p className="eyebrow">Your trip shape</p>
-              <h2 className="serif-display">{snapshot.base.label}</h2>
+              <p className="eyebrow">Recommended package</p>
+              <h2 className="serif-display">{getPackageName(form)}</h2>
+              <p>{snapshot.base.transfer}</p>
               <div className="itinerary-metrics" aria-label="Trip summary">
                 <div>
                   <span>{snapshot.rounds}</span>
-                  <p>draft rounds</p>
+                  <p>rounds</p>
                 </div>
                 <div>
                   <span>{snapshot.pace}</span>
-                  <p>route style</p>
+                  <p>route</p>
                 </div>
                 <div>
                   <span>{snapshot.budget}</span>
-                  <p>budget style</p>
+                  <p>budget</p>
                 </div>
               </div>
-              <p>{snapshot.base.transfer}</p>
             </div>
           </div>
 
           <div className="itinerary-output__header">
             <p className="eyebrow">Andy&apos;s read</p>
-            <h2 className="serif-display">The useful version</h2>
+            <h2 className="serif-display">Itinerary</h2>
           </div>
 
           <div className="itinerary-quick-read">
@@ -506,7 +529,7 @@ export default function ItineraryPlanner() {
               <p>{getBaseAdvice(form)}</p>
             </article>
             <article>
-              <span>Rhythm</span>
+              <span>Itinerary</span>
               <p>{getRhythm(form)}</p>
             </article>
             <article>
@@ -549,7 +572,7 @@ export default function ItineraryPlanner() {
           </div>
 
           <div className="itinerary-result">
-            <h3>Trip rhythm</h3>
+            <h3>Itinerary</h3>
             <div className="itinerary-result__body">
               <div className="itinerary-day-plan">
                 {tripDays.map((day) => (
@@ -586,6 +609,7 @@ export default function ItineraryPlanner() {
             </div>
           </div>
         </div>
+        ) : null}
       </div>
     </section>
   )

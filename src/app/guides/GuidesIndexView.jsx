@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
+import HorizontalWheelScroll from '../../components/HorizontalWheelScroll'
 
 const HERO_ACTIONS = {
   en: { experience: 'See the Experience', reviews: 'Course Reviews ↓', articles: 'Guides & Articles ↓' },
@@ -58,7 +59,7 @@ function GuideCarousel({ id, heading, guides, prefix, priorityFirst = false, dar
           <p className="guides-carousel-section__hint" style={dark ? { color: 'rgba(255,255,255,0.4)' } : {}}>← scroll →</p>
         </div>
       )}
-      <div className="guides-carousel__track">
+      <HorizontalWheelScroll className="guides-carousel__track" aria-label={`${heading || 'Guides'} carousel`}>
         {guides.map((guide, i) => {
           const img = guide.img
             ? { src: guide.img, position: guide.imgPosition || 'center 40%' }
@@ -94,7 +95,7 @@ function GuideCarousel({ id, heading, guides, prefix, priorityFirst = false, dar
             </Link>
           )
         })}
-      </div>
+      </HorizontalWheelScroll>
     </section>
   )
 }

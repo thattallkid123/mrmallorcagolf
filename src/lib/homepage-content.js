@@ -225,7 +225,7 @@ export const HOME_CONTENT = {
           price: 'From EUR3,000',
           features: [
             'Two or three days built around your group',
-            'Premium courses, tee times, and trip rhythm',
+            'Premium courses, tee times, and itinerary',
             'Transfers, lunch, spa time, and club hire coordinated where needed',
             'One hosted Play With A Pro day if useful',
           ],
