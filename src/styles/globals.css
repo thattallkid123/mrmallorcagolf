@@ -1682,6 +1682,8 @@ select.form-control { cursor: pointer; }
   color: var(--pine); margin: 2.2rem 0 0.8rem;
 }
 .post-article p { font-size: 1.02rem; font-weight: 300; color: var(--charcoal); line-height: 1.9; margin-bottom: 1.3rem; max-width: 66ch; }
+.post-article a { color: var(--gold); text-decoration-color: rgba(190, 154, 74, 0.45); text-decoration-thickness: 1px; text-underline-offset: 4px; transition: color .2s ease, text-decoration-color .2s ease; }
+.post-article a:hover { color: var(--deep); text-decoration-color: currentColor; }
 .post-article ul, .post-article ol { padding-left: 1.4rem; margin-bottom: 1.35rem; max-width: 66ch; }
 .post-article li { font-size: 1.02rem; font-weight: 300; color: var(--charcoal); line-height: 1.85; margin-bottom: 0.55rem; }
 .post-article strong { font-weight: 500; color: var(--deep); }
