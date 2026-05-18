@@ -2,6 +2,7 @@ import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
+import InlineRichText from './InlineRichText'
 
 function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', priority = false, containerStyle, imageStyle }) {
   return (
@@ -79,7 +80,7 @@ function getImagePresentation(block, imageOrdinal) {
   return 'full'
 }
 
-function renderBlock(block, index, imageOrdinal) {
+function renderBlock(block, index, locale, imageOrdinal) {
   if (block.type === 'image') {
     const presentation = getImagePresentation(block, imageOrdinal)
 
@@ -130,7 +131,7 @@ function renderBlock(block, index, imageOrdinal) {
   }
 
   if (block.type === 'paragraph') {
-    return <p key={`${block.text.slice(0, 20)}-${index}`}>{block.text}</p>
+    return <p key={`${block.text.slice(0, 20)}-${index}`}><InlineRichText text={block.text} locale={locale} /></p>
   }
 
   if (block.type === 'pull') {
@@ -157,7 +158,7 @@ function renderBlock(block, index, imageOrdinal) {
   if (block.type === 'cta') {
     return (
       <div key={`cta-${index}`} className="post-cta">
-        <p>{block.text}</p>
+        <p><InlineRichText text={block.text} locale={locale} /></p>
         <a href={block.href}>{block.linkLabel}</a>
       </div>
     )
@@ -277,7 +278,7 @@ export default function GuidePostView({ locale = 'en', meta, blocks }) {
       <PostLayout meta={meta} lang={pageLang}>
         {blocks.map((block, index) => {
           const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
-          return renderBlock(block, index, currentImageOrdinal)
+          return renderBlock(block, index, locale, currentImageOrdinal)
         })}
       </PostLayout>
     </PageLayout>
