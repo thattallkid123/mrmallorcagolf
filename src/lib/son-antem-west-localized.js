@@ -95,7 +95,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'paragraph', text: 'Sehr gut fuer die Menge an Spielbetrieb. Die Fairways waren solide, die Greens rollten konstant, und die Praesentation hielt die Runde ueber gut. Es gab kaum Wind, also waren die Bedingungen so einfach wie sie hier werden. Von den hinteren Abschlaegen fuehlte sich der Platz bei ruhiger Luft nicht besonders lang an.' },
       { type: 'heading', text: 'Zu Fuss spielbar' },
       { type: 'paragraph', text: 'Absolut. Die Wegefuehrung ist unkompliziert und das Gelaende flach. Zwischen ein paar Loechern war der Fussweg nicht ganz eindeutig, aber nichts Ernstes. Wer lieber laeuft als einen Buggy zu nehmen, kann diesen Platz problemlos gehen.' },
-      { type: 'image', alt: 'Andy Griffiths mit Kunden bei einem Play-with-a-Pro-Tag auf Son Antem West, Mallorca', caption: 'Ein Play-with-a-Pro-Tag auf Son Antem West. Das Layout verzeiht genug, damit Gaeste frei spielen koennen.' },
+      { type: 'image', alt: 'Andy Griffiths mit Kunden bei einer begleiteten Golfrunde auf Son Antem West, Mallorca', caption: 'Ein begleiteter Golftag auf Son Antem West. Das Layout verzeiht genug, damit Gaeste frei spielen koennen.' },
       { type: 'heading', text: 'Der ehrliche Teil' },
       { type: 'paragraph', text: 'Ein grosser Teil von Son Antem West ist strategisch flach. Die offenen Loecher geben breite Landezonen, einen unkomplizierten Approach und ein kleines Green als Ziel. Man kann diese Loecher fast im Autopilot spielen. Im Vergleich zu Son Gual, Alcanada oder Andratx fordert der Platz mental weniger. Bei Greenfees in einer aehnlichen Spanne konkurriert er preislich mit diesen Plaetzen, bleibt vom Layout her aber weniger haengen.' },
       { type: 'facts', items: [['90-135 €', 'Greenfee'], ['7/10', 'Meine Bewertung'], ['Par 72', '~6.890 Yards'], ['Llucmajor', '15-20 Min. von Palma']] },
@@ -104,7 +104,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'paragraph', text: 'Lage: Llucmajor, etwa 15 bis 20 Minuten suedlich von Palma. Leicht zu erreichen und gut mit einem Tag oder zwei in der Stadt zu verbinden.' },
       { type: 'heading', text: 'Fazit' },
       { type: 'paragraph', text: '7/10. Son Antem West ist ein gut gefuehrter Resortplatz mit guter Pflege, verlaesslichem Service und einem Layout, das vielen Spielern passt. Die 16 ist das beste Loch, die baumgesaeumten Abschnitte sind am interessantesten, und Tiere plus offene Landschaft machen die Umgebung besser als der Platz allein. Er passt zu Urlaubsgolfern, gemischten Gruppen und allen, die eine angenehme, zugaengliche Runde nahe Palma suchen. Er ist nicht die richtige Wahl, wenn man einen Platz sucht, der von Anfang bis Ende prueft. Auf der <a href="/golf-courses">vollstaendigen Mallorca-Golfplatzseite</a> sieht man, wie er im Vergleich einzuordnen ist.' },
-      { type: 'cta', text: 'Ich bringe Kunden an Play-with-a-Pro-Tagen nach Son Antem West. Moechten Sie ihn mit jemandem an Ihrer Seite spielen?', linkLabel: 'Play-with-a-Pro-Erlebnis ansehen' },
+      { type: 'cta', text: 'Ich bringe Kunden an begleiteten Golftagen nach Son Antem West. Moechten Sie ihn mit jemandem an Ihrer Seite spielen?', linkLabel: 'Golftag mit Pro ansehen' },
     ],
   },
   fr: {
