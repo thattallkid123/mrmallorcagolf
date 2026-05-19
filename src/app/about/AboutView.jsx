@@ -7,37 +7,6 @@ import WinnersProofStrip from '../../components/WinnersProofStrip'
 import { getHomeContent } from '../../lib/homepage-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 
-const ABOUT_PAGE_LINKS = {
-  en: {
-    play: 'See the private golf day',
-    courses: 'Explore Mallorca golf courses',
-  },
-  de: {
-    play: 'Privaten Golftag ansehen',
-    courses: 'Golfplaetze auf Mallorca ansehen',
-  },
-  es: {
-    play: 'Ver el dia privado de golf',
-    courses: 'Ver campos de golf en Mallorca',
-  },
-  fr: {
-    play: 'Voir la journee golf privee',
-    courses: 'Voir les parcours de Majorque',
-  },
-  nl: {
-    play: 'Bekijk de privegolfdag',
-    courses: 'Bekijk golfbanen op Mallorca',
-  },
-  sv: {
-    play: 'Se den privata golfdagen',
-    courses: 'Se golfbanor pa Mallorca',
-  },
-  zh: {
-    play: 'See the private golf day',
-    courses: 'Explore Mallorca golf courses',
-  },
-}
-
 const WINNER_PROOF_IMAGES = [
   { src: '/images/winners/01f43146e7bbd479cd809b6daabd9b105b0008ca18.jpg', alt: 'Junior tournament winners with trophies after coaching with Andy', position: 'center 42%' },
   { src: '/images/winners/01896bd5845040a4f9957ce34acc61c2e68540c266.jpg', alt: 'Golf academy team holding tournament banners', position: 'center 40%' },
@@ -109,7 +78,6 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
   const titleLines = Array.isArray(content.hero.title)
     ? content.hero.title
     : String(content.hero.title).split('\n')
-  const pageLinks = ABOUT_PAGE_LINKS[locale] || ABOUT_PAGE_LINKS.en
 
   return (
     <>
@@ -214,23 +182,10 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
                 ))}
               </ul>
             </div>
-            <div className="sidebar-cta reveal">
-              <h3>{content.sidebarCta.title}</h3>
-              <p>{content.sidebarCta.body}</p>
-              <Link href={content.sidebarCta.href} className="sidebar-cta__btn">
-                {content.sidebarCta.button}
-              </Link>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1rem' }}>
-                <Link href={buildLocalePath('/play-with-a-pro', locale)} style={{ color: 'var(--gold)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                  {pageLinks.play}
-                </Link>
-                <Link href={buildLocalePath('/golf-courses', locale)} style={{ color: 'var(--gold)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                  {pageLinks.courses}
-                </Link>
-              </div>
-            </div>
           </aside>
         </div>
+
+        <CareerStrip {...(content.careerStripProps || careerStripProps)} />
 
         {/* Proof of work: winners collage + testimonial */}
         <section className="testimonials">
@@ -251,8 +206,6 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             </div>
           </div>
         </section>
-
-        <CareerStrip {...(content.careerStripProps || careerStripProps)} />
 
         <section className="cta-final">
           <div className="cta-final__left reveal">

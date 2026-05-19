@@ -5,38 +5,39 @@ import { useMemo, useState } from 'react'
 
 const OPTIONS = {
   nights: [
-    { value: '3', label: '3 nights' },
-    { value: '4', label: '4 nights' },
-    { value: '5', label: '5 nights' },
-    { value: '7', label: '7 nights' },
-    { value: 'other', label: 'Something else', freeText: true },
+    { value: 'day', label: 'Day trip / 1 round' },
+    { value: 'short', label: '1-2 nights' },
+    { value: 'medium', label: '3-4 nights' },
+    { value: 'long', label: '5-6 nights' },
+    { value: 'week', label: '7+ nights' },
+    { value: 'other', label: 'Custom length', freeText: true },
   ],
   group: [
     { value: 'solo', label: 'Solo or pair' },
     { value: 'friends', label: 'Friends trip' },
     { value: 'family', label: 'Family or mixed group' },
     { value: 'corporate', label: 'Corporate' },
-    { value: 'other', label: 'Something else', freeText: true },
+    { value: 'other', label: 'Something different', freeText: true },
   ],
   level: [
     { value: 'mixed', label: 'Mixed handicaps' },
     { value: 'newer', label: 'Newer / higher handicap' },
     { value: 'club', label: 'Regular club golfers' },
     { value: 'strong', label: 'Low handicap / strong players' },
-    { value: 'other', label: 'Tell me more', freeText: true },
+    { value: 'other', label: 'More detail', freeText: true },
   ],
   golf: [
     { value: 'relaxed', label: 'A couple of relaxed rounds' },
     { value: 'balanced', label: 'Three or four good rounds' },
     { value: 'serious', label: 'Play the best courses available' },
-    { value: 'other', label: 'Tell me more', freeText: true },
+    { value: 'other', label: 'More detail', freeText: true },
   ],
   base: [
     { value: 'palma', label: 'Palma / Son Vida' },
     { value: 'southwest', label: 'Southwest' },
     { value: 'north', label: 'North / Alcudia' },
     { value: 'unsure', label: 'Not sure yet' },
-    { value: 'other', label: 'Somewhere else', freeText: true },
+    { value: 'other', label: 'Another base', freeText: true },
   ],
   season: [
     { value: 'spring', label: 'Spring (Mar-May)' },
@@ -210,10 +211,16 @@ function getPriorityLabels(form) {
 }
 
 function getRoundCount(form) {
-  const nights = Number(form.nights)
-  if (form.golf === 'relaxed') return nights >= 5 ? 3 : 2
-  if (form.golf === 'serious') return nights >= 5 ? 4 : 3
-  if (Number.isFinite(nights) && nights >= 7) return 4
+  const tripRounds = {
+    day: 1,
+    short: 2,
+    medium: 3,
+    long: form.golf === 'relaxed' ? 3 : 4,
+    week: form.golf === 'relaxed' ? 3 : 4,
+  }
+  if (tripRounds[form.nights]) return tripRounds[form.nights]
+  if (form.golf === 'relaxed') return 2
+  if (form.golf === 'serious') return 4
   return 3
 }
 
@@ -256,7 +263,7 @@ function getTripDays(form, courses) {
     })
   }
 
-  if (Number(form.nights) >= 5 || form.priorities.includes('restaurants')) {
+  if (['long', 'week'].includes(form.nights) || form.priorities.includes('restaurants')) {
     days.push({
       label: 'Breathing space',
       title: form.priorities.includes('restaurants') ? 'Long lunch or Palma evening' : 'Rest afternoon',
@@ -340,7 +347,7 @@ function getRhythm(form) {
     : form.level === 'strong'
       ? 'I would make sure at least one round has real strategic interest.'
       : ''
-  const rest = Number(form.nights) >= 5 ? 'I would protect one non-golf afternoon so the trip does not become a run of early starts.' : 'I would avoid overloading a short trip with too much driving.'
+  const rest = ['long', 'week'].includes(form.nights) ? 'I would protect one non-golf afternoon so the trip does not become a run of early starts.' : 'I would avoid overloading a short trip with too much driving.'
   return `For ${getOptionLabel('nights', form.nights, form.freeText)}, I would build around ${rounds}. ${level ? `${level} ` : ''}${rest}`
 }
 
@@ -381,7 +388,8 @@ function buildMessage(form, courses) {
   )
 }
 
-export default function ItineraryPlanner() {
+export default function ItineraryPlanner(props) {
+  const embedded = Boolean(props?.embedded)
   const [form, setForm] = useState({
     nights: '',
     group: '',
@@ -413,30 +421,33 @@ export default function ItineraryPlanner() {
   }
 
   return (
-    <section className="itinerary-page">
-      <div className="itinerary-hero-media" aria-hidden="true">
-        <Image
-          src={isReady ? snapshot.base.image : BASE_DETAILS.unsure.image}
-          alt=""
-          fill
-          priority
-          quality={88}
-          sizes="100vw"
-          style={{ objectFit: 'cover', objectPosition: 'center 38%' }}
-        />
-        <div className="itinerary-hero-media__scrim" />
-      </div>
+    <section className={`itinerary-page${embedded ? ' itinerary-page--embedded' : ''}`}>
+      {!embedded ? (
+        <>
+          <div className="itinerary-hero-media" aria-hidden="true">
+            <Image
+              src={isReady ? snapshot.base.image : BASE_DETAILS.unsure.image}
+              alt=""
+              fill
+              priority
+              quality={88}
+              sizes="100vw"
+              style={{ objectFit: 'cover', objectPosition: 'center 38%' }}
+            />
+            <div className="itinerary-hero-media__scrim" />
+          </div>
 
-      <div className="itinerary-page__intro">
-        <p className="eyebrow">Mallorca golf course finder</p>
-        <h1 className="serif-display">Find courses to start from.</h1>
-        <p>
-          Answer a few quick questions and the tool will suggest a small course shortlist.
-          It is a self-serve starting point, not the trip plan. Base, routing, tee times,
-          rentals, dining, and the day-by-day shape sit inside the professional planning
-          service.
-        </p>
-      </div>
+          <div className="itinerary-page__intro">
+            <p className="eyebrow">Mallorca golf course finder</p>
+            <h1 className="serif-display">Find courses to start from.</h1>
+            <p>
+              Two options sit here. The free tool gives you a basic course shortlist. The paid
+              planning service is where I build the trip properly: base, route, tee times,
+              rentals, dining, and the day-by-day shape.
+            </p>
+          </div>
+        </>
+      ) : null}
 
       <div className={`itinerary-tool${isReady ? ' itinerary-tool--ready' : ' itinerary-tool--empty'}`}>
         <div className="itinerary-controls" aria-label="Trip inputs">
@@ -458,7 +469,7 @@ export default function ItineraryPlanner() {
                   <input
                     type="text"
                     className="itinerary-freetext"
-                    placeholder="Tell me more..."
+                    placeholder="Add detail..."
                     value={form.freeText[key] || ''}
                     onChange={(event) => updateFreeText(key, event.target.value)}
                   />

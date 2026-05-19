@@ -53,12 +53,6 @@ export const ABOUT_CONTENT = {
       { title: 'Published Author', detail: 'Putting It Out There - A Life in Full Swing, 2016 (Amazon)', isBookLink: true },
       { title: 'Based in Mallorca', detail: 'Since March 2025' },
     ],
-    sidebarCta: {
-      title: "Build the right Mallorca golf trip first.",
-      body: 'Course choice, region, travel time, budget, and add-ons all matter. If a Play With A Pro day belongs in the plan, I will tell you where it fits.',
-      button: 'Build an itinerary →',
-      href: '/itinerary',
-    },
     finalCta: {
       eyebrow: 'Ready to plan?',
       title: 'A PGA Advanced Professional. An exceptional golf island. A better itinerary.',

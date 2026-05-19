@@ -184,8 +184,8 @@ export const HOME_CONTENT = {
       features: [
         { title: 'Course selection', text: 'I match the course mix to your group, not to a generic top-10 list.' },
         { title: 'Trip logic', text: 'Base, travel time, tee-time rhythm, rest days, lunch, transfers, and budget all matter.' },
-        { title: 'Optional hosted day', text: 'If it improves the trip, I can join you for 18 holes and coach inside the round.' },
-        { title: 'Local updates', text: 'Conditions, pricing, access, and value change. I keep the plan grounded in what is happening now.' },
+        { title: 'Hosted course day', text: 'When you want the day to be more than a tee time, I can join you for 18 holes and coach the decisions as they happen.' },
+        { title: 'Local judgement', text: 'Course fit, access, value, driving time, and seasonal conditions change. I keep the plan grounded in what works on the island.' },
       ],
     },
     credentials: {
@@ -1345,7 +1345,7 @@ const HOME_PACKAGE_ITEMS = {
         'Post-round debrief',
       ],
       note: "Andy's day rate. Green fees confirmed separately when we speak.",
-      cta: 'See pricing',
+      cta: 'Enquire',
       href: '/contact',
     },
     {
@@ -1362,7 +1362,7 @@ const HOME_PACKAGE_ITEMS = {
         'On-course coaching during the round',
       ],
       note: "Andy's fixed day rate for 2 or 3 golfers. Green fees confirmed separately when we speak.",
-      cta: 'See pricing',
+      cta: 'Enquire',
       href: '/contact',
     },
     {
@@ -1377,8 +1377,8 @@ const HOME_PACKAGE_ITEMS = {
         'Spa access and concierge support available',
       ],
       note: 'Green fees and lunch are separate. Rental clubs, caddy, and other extras are available add-ons.',
-      cta: 'Plan Your Trip',
-      href: '/plan-your-trip',
+      cta: 'Enquire',
+      href: '/contact',
     },
   ],
   de: [

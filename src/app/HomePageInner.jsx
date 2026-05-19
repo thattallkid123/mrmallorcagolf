@@ -64,6 +64,10 @@ export default function HomePageInner({ locale = 'en' }) {
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
   const itineraryHref = home.hero.primaryHref || ITINERARY_PLANNER_PATH
+  const sharedPackageCta = home.packages.items.length > 1
+    && home.packages.items.every((item) => item.cta === home.packages.items[0].cta && (item.href || contactHref) === (home.packages.items[0].href || contactHref))
+      ? home.packages.items[0]
+      : null
 
   return (
     <>
@@ -323,12 +327,21 @@ export default function HomePageInner({ locale = 'en' }) {
                 ))}
               </ul>
               {pkg.note && <p className={`tier__note${pkg.featured ? ' tier__note--feature' : ''}`}>{pkg.note}</p>}
-              <a href={pkg.href || contactHref} className="tier__btn">
-                {pkg.cta}
-              </a>
+              {!sharedPackageCta ? (
+                <a href={pkg.href || contactHref} className="tier__btn">
+                  {pkg.cta}
+                </a>
+              ) : null}
             </div>
           ))}
         </div>
+        {sharedPackageCta ? (
+          <div className="packages__shared-cta reveal">
+            <a href={sharedPackageCta.href || contactHref} className="tier__btn">
+              {sharedPackageCta.cta}
+            </a>
+          </div>
+        ) : null}
       </section>
 
       {/* Jo's quote - social proof after packages, before final CTA */}

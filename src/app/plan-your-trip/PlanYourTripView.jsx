@@ -18,12 +18,24 @@ export default function PlanYourTripView() {
             gets built: base, route, number of rounds, tee times, buggies, rentals, and the
             details around the golf.
           </p>
+          <div className="pyt-option-strip" aria-label="Plan Your Trip options">
+            <a href="#free-course-finder" className="pyt-option-card">
+              <span>Basic</span>
+              <strong>Free course finder</strong>
+              <em>On-site tool. A shortlist only.</em>
+            </a>
+            <a href="#professional-planning" className="pyt-option-card pyt-option-card--gold">
+              <span>Professional</span>
+              <strong>Paid trip planning</strong>
+              <em>The real service: route, bookings, base, and add-ons.</em>
+            </a>
+          </div>
         </div>
       </section>
 
       {/* ── BASIC: FREE TOOL ── */}
-      <section className="pyt-section pyt-section--light">
-        <div className="pyt-section__inner">
+      <section className="pyt-section pyt-section--light" id="free-course-finder">
+        <div className="pyt-section__inner pyt-section__inner--wide">
           <div className="pyt-tier-header">
             <span className="pyt-tier-badge">Basic</span>
             <h2 className="pyt-tier-title">Use the free course finder</h2>
@@ -34,12 +46,12 @@ export default function PlanYourTripView() {
               trip properly.
             </p>
           </div>
-          <ItineraryPlanner />
+          <ItineraryPlanner embedded />
         </div>
       </section>
 
       {/* ── PROFESSIONAL: PAID ── */}
-      <section className="pyt-section pyt-section--dark">
+      <section className="pyt-section pyt-section--dark" id="professional-planning">
         <div className="pyt-section__inner">
           <div className="pyt-tier-header">
             <span className="pyt-tier-badge pyt-tier-badge--gold">Professional</span>

@@ -69,7 +69,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: 'What happens next',
-      body: 'I read every enquiry personally. You will hear from me within 24 hours with course logic, itinerary next steps, or a recommendation on whether a Play With A Pro day belongs in the plan.',
+      body: 'I read every enquiry myself. I will come back within 24 hours with the clearest next step: the course logic, planning route, or the best way to add a Play With A Pro day.',
     },
     stayInTouch: {
       heading: 'Stay in touch',

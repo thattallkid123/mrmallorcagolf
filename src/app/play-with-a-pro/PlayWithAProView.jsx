@@ -109,7 +109,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-hero pwap-hero--tall">
           <div className="pwap-hero__bg" aria-hidden="true">
             <Image
-              src="/images/pwap-hero-client.webp"
+              src="/images/pwap-hero-mandarin.webp"
               alt=""
               fill
               priority
