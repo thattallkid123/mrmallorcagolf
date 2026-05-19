@@ -9,17 +9,19 @@ const LANG_CONFIG = {
     links: [
       { href: '/', label: 'Home' },
       { href: '/about', label: 'About' },
+      { href: '/plan-your-trip', label: 'Plan Your Trip' },
       { href: '/play-with-a-pro', label: 'Play With A Pro' },
       { href: '/golf-courses', label: 'Golf Courses' },
       { href: '/guides', label: 'Guides' },
     ],
-    cta: { href: '/itinerary', label: 'Plan Trip' },
+    cta: { href: '/contact', label: 'Enquire' },
   },
   de: {
     links: [
       { href: '/de', label: 'Start' },
       { href: '/de/about', label: 'Über Andy' },
-      { href: '/de/play-with-a-pro', label: 'Der Tag' },
+      { href: '/de/plan-your-trip', label: 'Reise planen' },
+      { href: '/de/play-with-a-pro', label: 'Mit Andy spielen' },
       { href: '/de/golf-courses', label: 'Plätze' },
       { href: '/de/guides', label: 'Ratgeber' },
     ],
@@ -29,7 +31,8 @@ const LANG_CONFIG = {
     links: [
       { href: '/fr', label: 'Accueil' },
       { href: '/fr/about', label: 'À propos' },
-      { href: '/fr/play-with-a-pro', label: 'La Journée' },
+      { href: '/fr/plan-your-trip', label: 'Planifier' },
+      { href: '/fr/play-with-a-pro', label: 'Jouer avec Andy' },
       { href: '/fr/golf-courses', label: 'Parcours' },
       { href: '/fr/guides', label: 'Guides' },
     ],
@@ -39,7 +42,8 @@ const LANG_CONFIG = {
     links: [
       { href: '/es', label: 'Inicio' },
       { href: '/es/about', label: 'Sobre Andy' },
-      { href: '/es/play-with-a-pro', label: 'La Jornada' },
+      { href: '/es/plan-your-trip', label: 'Planifica tu viaje' },
+      { href: '/es/play-with-a-pro', label: 'Jugar con Andy' },
       { href: '/es/golf-courses', label: 'Campos' },
       { href: '/es/guides', label: 'Guías' },
     ],
@@ -49,7 +53,8 @@ const LANG_CONFIG = {
     links: [
       { href: '/zh', label: '首页' },
       { href: '/zh/about', label: '关于 Andy' },
-      { href: '/zh/play-with-a-pro', label: '预约球局' },
+      { href: '/zh/plan-your-trip', label: '规划行程' },
+      { href: '/zh/play-with-a-pro', label: '与Andy同场' },
       { href: '/zh/golf-courses', label: '球场指南' },
       { href: '/zh/guides', label: '指南' },
     ],

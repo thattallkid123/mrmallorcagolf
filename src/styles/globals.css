@@ -1,3 +1,233 @@
+/* ── Plan Your Trip page ─────────────────────────────────── */
+
+.pyt-hero {
+  background: var(--deep);
+  padding: calc(var(--nav-h) + 64px) clamp(20px, 5vw, 60px) 72px;
+}
+
+.pyt-hero__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.pyt-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.pyt-eyebrow--light {
+  color: var(--gold-light);
+}
+
+.pyt-hero__title {
+  font-family: var(--font-head);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 720px;
+}
+
+.pyt-hero__body {
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(247,244,239,0.75);
+  max-width: 640px;
+}
+
+.pyt-section {
+  padding: 72px clamp(20px, 5vw, 60px);
+}
+
+.pyt-section--light {
+  background: var(--cream);
+}
+
+.pyt-section--dark {
+  background: var(--linen);
+}
+
+.pyt-section--pine {
+  background: var(--pine);
+}
+
+.pyt-section__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.pyt-tier-header {
+  margin-bottom: 40px;
+  max-width: 680px;
+}
+
+.pyt-tier-badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  background: var(--sand);
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-bottom: 16px;
+}
+
+.pyt-tier-badge--gold {
+  color: var(--deep);
+  background: var(--gold-pale);
+}
+
+.pyt-tier-title {
+  font-family: var(--font-head);
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 400;
+  color: var(--deep);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.pyt-tier-body {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--charcoal);
+}
+
+.pyt-includes {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px 32px;
+  margin-bottom: 40px;
+}
+
+.pyt-includes li {
+  font-size: 15px;
+  color: var(--charcoal);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.pyt-includes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.pyt-pro-cta {
+  background: var(--cream);
+  border-radius: 8px;
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  border: 1px solid var(--sand);
+}
+
+.pyt-pro-cta__note {
+  font-size: 15px;
+  color: var(--charcoal);
+  line-height: 1.6;
+  flex: 1;
+  min-width: 220px;
+}
+
+.pyt-pro-cta__btn {
+  display: inline-block;
+  background: var(--pine);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.pyt-pro-cta__btn:hover {
+  background: var(--pine-mid);
+}
+
+/* PWAP add-on strip */
+.pyt-addon {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.pyt-addon__text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.pyt-addon__title {
+  font-family: var(--font-head);
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.pyt-addon__body {
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(247,244,239,0.8);
+  margin-bottom: 14px;
+}
+
+.pyt-addon__price {
+  font-size: 14px;
+  color: var(--gold-light);
+  letter-spacing: 0.02em;
+}
+
+.pyt-addon__action {
+  flex-shrink: 0;
+}
+
+.pyt-addon__btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 13px 32px;
+  border: 1px solid rgba(247,244,239,0.4);
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.pyt-addon__btn:hover {
+  border-color: var(--cream);
+  background: rgba(247,244,239,0.08);
+}
+
+/* ── Itinerary planner ───────────────────────────────────── */
 /* Itinerary planner */
 .itinerary-page {
   position: relative;
@@ -1235,6 +1465,12 @@ body {
 .intro .serif-display { font-size: clamp(1.85rem,3vw,2.7rem); color: var(--deep); margin-bottom: 1.35rem; }
 .intro__left p:not(.eyebrow) { font-size: 1rem; color: var(--charcoal); line-height: 1.85; margin-bottom: 1.15rem; }
 .intro__left p:last-child { margin-bottom: 0; }
+.intro__services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 28px; }
+.intro-service { display: flex; flex-direction: column; gap: 8px; min-height: 164px; padding: 22px; border: 1px solid rgba(26,25,22,0.1); background: var(--cream); color: var(--charcoal); text-decoration: none; transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease; }
+.intro-service:hover { border-color: rgba(184,151,60,0.44); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(26,25,22,0.08); }
+.intro-service strong { font-family: var(--font-serif); font-size: 1.18rem; font-weight: 500; color: var(--deep); }
+.intro-service span { font-size: 0.92rem; line-height: 1.55; color: var(--taupe); }
+.intro-service em { margin-top: auto; font-style: normal; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--pine); }
 .intro__media { position: relative; min-height: 520px; align-self: stretch; overflow: hidden; background: var(--linen); box-shadow: var(--shadow-soft); }
 .intro__media::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(26,25,22,0.08); pointer-events: none; }
 .intro__stat { border-left: 1px solid rgba(184,151,60,0.28); padding-left: 22px; }
@@ -2184,6 +2420,7 @@ select.form-control { cursor: pointer; }
   .hero__actions .btn { width: 100%; padding-left: 18px; padding-right: 18px; }
   .hero__pwap-link { width: 100%; justify-content: center; text-align: center; font-size: 9px; letter-spacing: 0.13em; margin-top: 14px; }
   .intro { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
+  .intro__services { grid-template-columns: 1fr; }
   .intro__media { min-height: 420px; }
   .journey { padding: 64px 20px; }
   .journey__grid { grid-template-columns: 1fr; }

@@ -377,7 +377,7 @@ function getAddOns(form) {
 function buildMessage(form, courses) {
   const snapshot = getTripSnapshot(form)
   return encodeURIComponent(
-    `Hi Andy, I built a first draft itinerary on the site.\n\nTrip length: ${getOptionLabel('nights', form.nights, form.freeText)}\nGroup: ${getOptionLabel('group', form.group, form.freeText)}\nPlaying level: ${getOptionLabel('level', form.level, form.freeText)}\nGolf appetite: ${getOptionLabel('golf', form.golf, form.freeText)}\nBase idea: ${getOptionLabel('base', form.base, form.freeText)}\nSeason: ${getOptionLabel('season', form.season, form.freeText)}\nBudget: ${snapshot.budget}\nDraft rounds: ${snapshot.rounds}\nCourses: ${courses.join(', ')}\nPriorities: ${getPriorityLabels(form).join(', ')}\n\nCan you sanity-check the plan and tell me what you would change before I book anything?`,
+    `Hi Andy, I used the course finder on the site.\n\nTrip length: ${getOptionLabel('nights', form.nights, form.freeText)}\nGroup: ${getOptionLabel('group', form.group, form.freeText)}\nPlaying level: ${getOptionLabel('level', form.level, form.freeText)}\nGolf appetite: ${getOptionLabel('golf', form.golf, form.freeText)}\nBase idea: ${getOptionLabel('base', form.base, form.freeText)}\nSeason: ${getOptionLabel('season', form.season, form.freeText)}\nBudget: ${snapshot.budget}\nPossible rounds: ${snapshot.rounds}\nCourses I am considering: ${courses.join(', ')}\nPriorities: ${getPriorityLabels(form).join(', ')}\n\nCan you help me turn this into a proper plan and quote?`,
   )
 }
 
@@ -398,7 +398,6 @@ export default function ItineraryPlanner() {
   const courses = useMemo(() => getCourseMix(form), [form])
   const addOns = useMemo(() => getAddOns(form), [form])
   const snapshot = useMemo(() => getTripSnapshot(form), [form])
-  const tripDays = useMemo(() => getTripDays(form, courses), [form, courses])
   const watchouts = useMemo(() => getWatchouts(form, courses), [form, courses])
   const whatsappHref = isReady ? `https://wa.me/34624466702?text=${buildMessage(form, courses)}` : ''
 
@@ -429,12 +428,13 @@ export default function ItineraryPlanner() {
       </div>
 
       <div className="itinerary-page__intro">
-        <p className="eyebrow">Mallorca golf itinerary planner</p>
-        <h1 className="serif-display">Build a first draft of your Mallorca golf trip.</h1>
+        <p className="eyebrow">Mallorca golf course finder</p>
+        <h1 className="serif-display">Find courses to start from.</h1>
         <p>
-          Answer a few quick questions and I&apos;ll show you where I&apos;d start: which courses,
-          which base, which itinerary, and whether a day with me on course belongs in the plan.
-          It&apos;s a first draft, not a commitment. Send it over and I&apos;ll tell you what I&apos;d change.
+          Answer a few quick questions and the tool will suggest a small course shortlist.
+          It is a self-serve starting point, not the trip plan. Base, routing, tee times,
+          rentals, dining, and the day-by-day shape sit inside the professional planning
+          service.
         </p>
       </div>
 
@@ -498,17 +498,20 @@ export default function ItineraryPlanner() {
               />
             </div>
             <div className="itinerary-snapshot__content">
-              <p className="eyebrow">Recommended package</p>
-              <h2 className="serif-display">{getPackageName(form)}</h2>
-              <p>{snapshot.base.transfer}</p>
+              <p className="eyebrow">Starting point</p>
+              <h2 className="serif-display">Courses to consider</h2>
+              <p>
+                Use this as a shortlist only. I will confirm the right course order, base,
+                tee times, and route if you want the full trip planned.
+              </p>
               <div className="itinerary-metrics" aria-label="Trip summary">
                 <div>
                   <span>{snapshot.rounds}</span>
-                  <p>rounds</p>
+                  <p>possible rounds</p>
                 </div>
                 <div>
                   <span>{snapshot.pace}</span>
-                  <p>route</p>
+                  <p>style</p>
                 </div>
                 <div>
                   <span>{snapshot.budget}</span>
@@ -519,21 +522,21 @@ export default function ItineraryPlanner() {
           </div>
 
           <div className="itinerary-output__header">
-            <p className="eyebrow">Andy&apos;s read</p>
-            <h2 className="serif-display">Itinerary</h2>
+            <p className="eyebrow">Basic tool</p>
+            <h2 className="serif-display">Course shortlist</h2>
           </div>
 
           <div className="itinerary-quick-read">
             <article>
-              <span>Stay</span>
-              <p>{getBaseAdvice(form)}</p>
+              <span>What this gives you</span>
+              <p>A few courses worth considering for your group, level, season, and budget.</p>
             </article>
             <article>
-              <span>Itinerary</span>
-              <p>{getRhythm(form)}</p>
+              <span>What it does not give you</span>
+              <p>No base advice, routing, tee-time plan, or day-by-day itinerary.</p>
             </article>
             <article>
-              <span>Best extra</span>
+              <span>Possible add-on</span>
               <p>{addOns[0]}</p>
             </article>
           </div>
@@ -571,23 +574,8 @@ export default function ItineraryPlanner() {
             </div>
           </div>
 
-          <div className="itinerary-result">
-            <h3>Itinerary</h3>
-            <div className="itinerary-result__body">
-              <div className="itinerary-day-plan">
-                {tripDays.map((day) => (
-                  <div className="itinerary-day" key={`${day.label}-${day.title}`}>
-                    <span>{day.label}</span>
-                    <h4>{day.title}</h4>
-                    <p>{day.detail}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
           <div className="itinerary-result itinerary-result--watchouts">
-            <h3>Before booking</h3>
+            <h3>For the paid planning service</h3>
             <div className="itinerary-result__body">
               <p className="itinerary-season-note">{getSeasonAdvice(form)}</p>
               <ul className="itinerary-watchouts">
@@ -600,12 +588,12 @@ export default function ItineraryPlanner() {
 
           <div className="itinerary-next">
             <p>
-              If this feels close, send me the draft. I will tell you what I would change before you spend
-              money on green fees, hotels, transfers, or a hosted day.
+              If these courses look close, send them over. I can then build the proper plan:
+              where to stay, how to route the trip, how many rounds to play, and what needs booking.
             </p>
             <div className="itinerary-actions">
-              <a href={whatsappHref} className="btn btn--gold" target="_blank" rel="noopener noreferrer">Send draft</a>
-              <a href="/contact" className="btn btn--dark">Plan by email</a>
+              <a href={whatsappHref} className="btn btn--gold" target="_blank" rel="noopener noreferrer">Send course list</a>
+              <a href="/contact" className="btn btn--dark">Get in touch</a>
             </div>
           </div>
         </div>

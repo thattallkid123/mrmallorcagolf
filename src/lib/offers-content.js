@@ -9,12 +9,12 @@ const OFFER_CONTENT = {
   en: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Add a private Play With A Pro day to your Mallorca golf trip with UK PGA Advanced Professional Andy Griffiths. Solo from €495. Groups from €950. Green fees additional.',
+      'Book Play With A Pro as a standalone private golf day or add it to a planned Mallorca golf trip. Solo from €495. Groups from €950. Green fees additional.',
     playHeroBody:
-      'One premium add-on inside a wider Mallorca golf itinerary. Play 18 holes alongside a PGA Advanced Professional. Solo from €495. Groups from €950. Green fees additional, confirmed when we speak.',
+      'Book it as a standalone private round, or add it to a planned Mallorca golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €495. Groups from €950. Green fees additional, confirmed when we speak.',
     playMultiDayDetail: null,
     homeMultiDayBody:
-      'Build the itinerary first, then add bookings, private transfers, handpicked dining, spa access, or a hosted Play With A Pro day where it genuinely improves the trip.',
+      'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
     contactUnknown: 'Not sure yet - advise me',
     offers: {
       [OFFER_IDS.solo]: {

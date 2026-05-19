@@ -8,8 +8,8 @@ export const HOME_CONTENT = {
       eyebrow: 'Mallorca golf trips, built by a PGA pro',
       titleLines: ["I'll help you build", 'the right Mallorca'],
       emphasis: 'golf trip',
-      primaryCta: 'Build Your Itinerary',
-      primaryHref: '/itinerary',
+      primaryCta: 'Plan Your Trip',
+      primaryHref: '/plan-your-trip',
       secondaryCta: 'See the courses',
       trust: [
         'PGA Advanced Professional',
@@ -20,10 +20,24 @@ export const HOME_CONTENT = {
     },
     intro: {
       eyebrow: 'What I do',
-      title: 'Most Mallorca golf trips start with a list of courses. I start with the trip you actually want.',
+      title: 'Two services: plan the trip properly, or play one private day with me on course.',
       paragraphs: [
-        'I help visiting golfers plan proper Mallorca golf itineraries: which courses to play, where to base yourself, when to travel, what to book early, and which extras are actually worth adding.',
-        'If you want me on the course, the Play With A Pro day can sit inside the trip. But the main point is simpler: I know the island, I know the courses, and I can help you avoid the expensive guesswork.',
+        'Plan Your Trip is the planning service. I recommend the right courses for your game and group, where to base yourself, how many rounds to play, the route that makes sense, and the bookings around the golf.',
+        'Play With A Pro is the private on-course day. It can be booked on its own, or added to a planned trip when having me alongside you for 18 holes makes the trip better.',
+      ],
+      services: [
+        {
+          title: 'Plan Your Trip',
+          text: 'Courses, base, routing, tee times, buggies, rental clubs, and dining suggestions.',
+          cta: 'See planning',
+          href: '/plan-your-trip',
+        },
+        {
+          title: 'Play With A Pro',
+          text: 'One private course day with Andy. Standalone, or added to a wider trip.',
+          cta: 'See Play With A Pro',
+          href: '/play-with-a-pro',
+        },
       ],
       stats: [
         { value: 'Jan-Dec', label: 'year-round season' },
@@ -39,9 +53,9 @@ export const HOME_CONTENT = {
       items: [
         {
           title: 'I am planning a golf trip',
-          text: 'Use the itinerary tool first. I can help you choose the right region, course mix, travel window, and add-ons before anything gets booked.',
-          cta: 'Build an itinerary',
-          href: '/itinerary',
+          text: 'Start with the basic course finder, then ask me to plan the trip properly: courses, base, routing, number of rounds, bookings, and useful add-ons.',
+          cta: 'Plan Your Trip',
+          href: '/plan-your-trip',
         },
         {
           title: 'I am comparing courses',
@@ -63,18 +77,18 @@ export const HOME_CONTENT = {
       steps: [
         {
           number: '01',
-          title: 'Build the outline',
-          text: 'Start with dates, group size, handicaps, budget, and how much golf you actually want to play. The itinerary tool gives us a proper starting point.',
+          title: 'Start with the basics',
+          text: 'Use the free tool if you want a first course shortlist. It helps you see what might suit your group before any proper planning starts.',
         },
         {
           number: '02',
-          title: 'I refine the plan',
-          text: 'I help you avoid the obvious traps: wrong base, wrong course order, overpaying for average tee times, or building a trip that looks good on paper and feels tiring on the ground.',
+          title: 'I build the plan',
+          text: 'In the paid planning service, I work through the real trip decisions: base, course order, number of rounds, tee times, buggies, rental clubs, and dining.',
         },
         {
           number: '03',
           title: 'Add what improves it',
-          text: 'That might be a Play With A Pro day, club hire, transfers, lunch, spa time, or a quieter course most visitors miss. Not everything needs adding. The right things do.',
+          text: 'That might be a Play With A Pro day, better club rental, a cleaner tee-time route, or a restaurant that fits the golf day. Not everything needs adding. The right things do.',
         },
       ],
     },
@@ -162,11 +176,11 @@ export const HOME_CONTENT = {
       title: 'I am not writing from a desk. I am on these courses.',
       paragraphs: [
         'I moved to Mallorca to build this properly. I play the courses, track the conditions, talk to the people running them, and keep notes on what actually matters to visiting golfers.',
-        'A good itinerary is not just "Son Gual plus Alcanada". It is where you stay, how far you want to drive, which day deserves the premium green fee, which course suits your group, and where a rest day is smarter than another early tee time.',
+        'A good plan is not just "Son Gual plus Alcanada". It is where you stay, how far you want to drive, which day deserves the premium green fee, which course suits your group, and where a rest day is smarter than another early tee time.',
         'My coaching background helps, but this site is not only a coaching site. It is here to make Mallorca golf easier to plan, better to play, and more personal once you arrive.',
       ],
       button: 'See the Play With A Pro add-on',
-      dateCta: 'Build Your Itinerary',
+      dateCta: 'Plan Your Trip',
       features: [
         { title: 'Course selection', text: 'I match the course mix to your group, not to a generic top-10 list.' },
         { title: 'Trip logic', text: 'Base, travel time, tee-time rhythm, rest days, lunch, transfers, and budget all matter.' },
@@ -202,12 +216,12 @@ export const HOME_CONTENT = {
     packages: {
       eyebrow: 'Trip options',
       title: 'Choose the level of help.',
-      body: 'Once the shape of the trip is clear, these are the three premium ways I can be directly involved: a Play With A Pro day, a fully hosted journey, or a lighter plan-and-book route.',
+      body: 'There are two main services: professional trip planning, and Play With A Pro. The private course day can be booked on its own or added to the planning service.',
       items: [
         {
           eyebrow: 'Play With A Pro',
           name: 'Play With A Pro',
-          price: 'From EUR495',
+          price: 'From €495',
           features: [
             'One private day inside your trip',
             'Course matched to your game and goals',
@@ -222,7 +236,7 @@ export const HOME_CONTENT = {
         {
           eyebrow: 'Bespoke trip',
           name: 'Hosted Golf Journey',
-          price: 'From EUR3,000',
+          price: 'On enquiry',
           features: [
             'Two or three days built around your group',
             'Premium courses, tee times, and itinerary',
@@ -231,15 +245,15 @@ export const HOME_CONTENT = {
           ],
           note: 'Bespoke. I coordinate the itinerary with you in advance and confirm the full plan before you arrive.',
           cta: 'Plan trip ->',
-          href: '/itinerary',
+          href: '/plan-your-trip',
         },
       ],
       multiDay: {
         eyebrow: 'Not sure where to start?',
-        title: 'Start with the itinerary tool.',
-        body: 'The cleanest next step is to build a first draft: dates, group, course appetite, budget, and travel style. From there I can help you decide whether you need bookings, a hosted day, transport, or just better course choices.',
-        cta: 'Build your itinerary',
-        href: '/itinerary',
+        title: 'Start with Plan Your Trip.',
+        body: 'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
+        cta: 'Plan Your Trip',
+        href: '/plan-your-trip',
       },
     },
     faq: {
@@ -271,10 +285,10 @@ export const HOME_CONTENT = {
     },
     finalCta: {
       eyebrow: 'Ready to plan it properly?',
-      title: "Build the outline. I'll help make it better.",
-      body: 'Start with your dates, group size, handicap range, budget, and the kind of trip you want. I will help you turn that into a Mallorca golf plan that actually works on the ground.',
+      title: "Tell me the trip you want. I'll help build it properly.",
+      body: 'Start with your dates, group size, handicap range, budget, and the kind of golf you want. I will help you turn that into a Mallorca golf plan that works on the ground.',
       quote: 'The right course on the right day beats a famous name in the wrong slot.',
-      primaryCta: 'Build Your Itinerary',
+      primaryCta: 'Plan Your Trip',
       secondaryCta: 'WhatsApp',
     },
   },
@@ -1332,6 +1346,7 @@ const HOME_PACKAGE_ITEMS = {
       ],
       note: "Andy's day rate. Green fees confirmed separately when we speak.",
       cta: 'See pricing',
+      href: '/contact',
     },
     {
       tier: 'Group',
@@ -1348,6 +1363,7 @@ const HOME_PACKAGE_ITEMS = {
       ],
       note: "Andy's fixed day rate for 2 or 3 golfers. Green fees confirmed separately when we speak.",
       cta: 'See pricing',
+      href: '/contact',
     },
     {
       tier: 'The Signature Experience',
@@ -1361,8 +1377,8 @@ const HOME_PACKAGE_ITEMS = {
         'Spa access and concierge support available',
       ],
       note: 'Green fees and lunch are separate. Rental clubs, caddy, and other extras are available add-ons.',
-      cta: 'Plan trip',
-      href: '/itinerary',
+      cta: 'Plan Your Trip',
+      href: '/plan-your-trip',
     },
   ],
   de: [

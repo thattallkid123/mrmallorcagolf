@@ -7,8 +7,8 @@ import { NAV_LOCALES, getLanguageSwitchPath, getLegalPath } from '../lib/site'
 const FOOTER_COPY = {
   en: {
     tagline: 'Mallorca golf trip planning with Andy Griffiths. Local course judgment, itinerary logic, and premium add-ons when they help.',
-    experiences: 'Plan',
-    itinerary: 'Plan Trip',
+    experiences: 'Services',
+    itinerary: 'Plan Your Trip',
     pwap: 'Play With A Pro',
     day: 'A Day at Son Gual',
     guide: 'Golf Guides',
@@ -146,7 +146,7 @@ export default function Footer({ lang }) {
       <div className="footer__col">
         <h3>{copy.experiences}</h3>
         <ul>
-          {copy.itinerary ? <li><Link href="/itinerary">{copy.itinerary}</Link></li> : null}
+          {copy.itinerary ? <li><Link href={locale === 'en' ? '/plan-your-trip' : `${prefix}/plan-your-trip`}>{copy.itinerary}</Link></li> : null}
           <li><Link href={`${prefix}/play-with-a-pro`}>{copy.pwap}</Link></li>
           <li><Link href={getADayPath(locale)}>{copy.day}</Link></li>
           {copy.enquire ? <li><Link href={`${prefix}/contact`}>{copy.enquire}</Link></li> : null}

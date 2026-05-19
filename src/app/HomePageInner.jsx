@@ -118,15 +118,26 @@ export default function HomePageInner({ locale = 'en' }) {
           {home.intro.paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
+          {home.intro.services ? (
+            <div className="intro__services">
+              {home.intro.services.map((service) => (
+                <a key={service.title} href={localizePath(service.href, locale)} className="intro-service">
+                  <strong>{service.title}</strong>
+                  <span>{service.text}</span>
+                  <em>{service.cta}</em>
+                </a>
+              ))}
+            </div>
+          ) : null}
         </div>
         <div className="intro__media" aria-label="Andy Griffiths">
           <Image
-            src="/images/andy-mandarin-professional.webp"
-            alt="Andy Griffiths coaching a golfer at Mandarin Oriental Mallorca"
+            src="/images/home-plan-play-mandarin.webp"
+            alt="Andy Griffiths watching a golfer putt at Mandarin Oriental Mallorca"
             fill
             quality={90}
             sizes="(max-width: 900px) 100vw, 420px"
-            style={{ objectFit: 'cover', objectPosition: '86% 42%' }}
+            style={{ objectFit: 'cover', objectPosition: '50% 46%' }}
           />
         </div>
       </section>
