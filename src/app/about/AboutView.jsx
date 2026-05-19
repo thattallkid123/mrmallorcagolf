@@ -3,6 +3,13 @@ import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import CareerStrip from '../../components/CareerStrip'
+
+const CREDENTIAL_LOGOS = [
+  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
+  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
+  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
+  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
+]
 import WinnersProofStrip from '../../components/WinnersProofStrip'
 import { getHomeContent } from '../../lib/homepage-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
@@ -184,6 +191,24 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             </div>
           </aside>
         </div>
+
+        <section className="cred-logo-bar">
+          <div className="cred-logo-bar__logos">
+            {CREDENTIAL_LOGOS.map((logo) => (
+              <div className="cred-logo-bar__item" key={logo.name}>
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  className="cred-logo-bar__img"
+                  quality={90}
+                  sizes="(max-width: 700px) 45vw, 238px"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
 
         <CareerStrip {...(content.careerStripProps || careerStripProps)} />
 
