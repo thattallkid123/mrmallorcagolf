@@ -117,7 +117,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           eyebrow: 'The Signature Experience',
           name: 'Hosted Golf Journey',
           price: '€3,000+',
-          note: 'Bespoke and deliberately OTT. I coordinate the full day around you in advance.',
+          note: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons can be planned around you before the day.',
           features: [
             'Course, tee time, and hosted golf day',
             'Lunch, private chef, or restaurant booking',

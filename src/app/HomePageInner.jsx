@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
-import { getCourseDestination } from '../lib/golf-courses-helpers'
-import HorizontalWheelScroll from '../components/HorizontalWheelScroll'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -46,17 +44,7 @@ function localizePath(path, locale) {
   return locale === 'en' ? path : `/${locale}${path}`
 }
 
-function getOptimizedCourseImage(src) {
-  const homepageCardImages = {
-    '/images/son-gual.jpg': '/images/son-gual-card.webp',
-    '/images/alcanada.jpg': '/images/alcanada-card.webp',
-    '/images/son-muntaner.webp': '/images/son-muntaner-card.webp',
-    '/images/santa-ponsa.webp': '/images/santa-ponsa-card.webp',
-    '/images/andratx.webp': '/images/andratx-card.webp',
-  }
 
-  return homepageCardImages[src] || src
-}
 
 export default function HomePageInner({ locale = 'en' }) {
   const home = getHomeContent(locale)
@@ -211,59 +199,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </section>
       ) : null}
 
-      <section className="courses" id="courses">
-        <div className="courses__header">
-          <div className="courses__header-left">
-            <p className="eyebrow">{home.courses.eyebrow}</p>
-            <h2 className="serif-display">{home.courses.title}</h2>
-          </div>
-          <p className="courses__hint">Swipe or scroll to browse</p>
-        </div>
-        <HorizontalWheelScroll className="courses__track" aria-label="Featured course carousel">
-          {home.courses.items.map((course) => (
-            <a
-              key={course.name}
-              href={getCourseDestination(course.name, locale) || localizePath(course.href, locale)}
-              className={`course-card ${course.cls}`}
-            >
-              <div className="course-card__bg">
-                <Image
-                  src={getOptimizedCourseImage(course.img)}
-                  alt={course.name}
-                  fill
-                  quality={88}
-                  sizes="(max-width: 768px) 78vw, 380px"
-                  style={{ objectFit: 'cover', objectPosition: 'center 28%' }}
-                />
-              </div>
-              <div className="course-card__overlay" style={{ background: 'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)' }}></div>
-              {course.badge && <span className="course-card__badge">{course.badge}</span>}
-              <div className="course-card__content">
-                <p className="course-card__region">{course.region}</p>
-                <h3 className="course-card__name">{course.name}</h3>
-                <div className="course-card__meta">
-                  {course.meta.map((meta, index) => (
-                    <span key={`${course.name}-${meta}`}>
-                      {index > 0 && <span style={{ display: 'inline-block', width: 2, height: 2, borderRadius: '50%', background: 'rgba(255,255,255,0.4)', margin: '0 7px', verticalAlign: 'middle' }}></span>}
-                      {meta}
-                    </span>
-                  ))}
-                </div>
-                <div className="course-card__rating">
-                  <span className="course-card__stars">{course.stars}</span>
-                  <span className="course-card__rating-label"> / {course.difficulty}</span>
-                </div>
-                <p className="course-card__excerpt course-card__excerpt--visible">{course.excerpt}</p>
-              </div>
-            </a>
-          ))}
-        </HorizontalWheelScroll>
-        <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-          <a href={golfCoursesHref} className="btn btn--dark">
-            {home.courses.viewAll}
-          </a>
-        </div>
-      </section>
+
 
       <section className="what">
         <div className="what__left reveal">

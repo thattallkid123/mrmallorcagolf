@@ -20,7 +20,7 @@ export const HOME_CONTENT = {
     },
     intro: {
       eyebrow: 'What I do',
-      title: 'Two services: plan the trip properly, or play one private day with me on course.',
+      title: 'Two services: plan the trip completely, or plan a private day with me on the course.',
       paragraphs: [
         'Plan Your Trip is the planning service. I recommend the right courses for your game and group, where to base yourself, how many rounds to play, the route that makes sense, and the bookings around the golf.',
         'Play With A Pro is the private on-course day. It can be booked on its own, or added to a planned trip when having me alongside you for 18 holes makes the trip better.',
@@ -34,7 +34,7 @@ export const HOME_CONTENT = {
         },
         {
           title: 'Play With A Pro',
-          text: 'One private course day with Andy. Standalone, or added to a wider trip.',
+          text: 'A private course day with Andy. Standalone, or added to a wider trip.',
           cta: 'See Play With A Pro',
           href: '/play-with-a-pro',
         },
