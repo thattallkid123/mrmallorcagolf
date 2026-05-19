@@ -12,7 +12,6 @@ import {
 } from '../../lib/golf-courses-translations'
 import {
   getCoursePriceMeta,
-  getShortCourseId,
   slugifyCourseName,
 } from '../../lib/golf-courses-helpers'
 
@@ -783,35 +782,6 @@ export default function GolfCoursesClient({ lang = 'en' }) {
           })}
         </div>
 
-        <aside className="page-sidebar">
-          <div className="sidebar-card sidebar-card--cream">
-            <h3 className="sidebar-card__title-sm">{t.quickPicksTitle}</h3>
-            <ul className="sidebar-quick">
-              {t.quickPicks.map((pick, i) => {
-                const colonIdx = pick.indexOf(': ')
-                const prefix = colonIdx >= 0 ? pick.slice(0, colonIdx + 2) : ''
-                const coursesPart = colonIdx >= 0 ? pick.slice(colonIdx + 2) : pick
-                const separator = coursesPart.match(/ (or|oder|eller|ou|o) /)
-                const parts = separator ? coursesPart.split(separator[0]) : [coursesPart]
-                const sepWord = separator ? separator[0] : null
-                return (
-                  <li key={i}>
-                    {prefix}
-                    {parts.map((part, j) => {
-                      const id = getShortCourseId(part)
-                      return (
-                        <span key={j}>
-                          {j > 0 && sepWord}
-                          {id ? <a href={`#${id}`} className="sidebar-quick__link">{part}</a> : part}
-                        </span>
-                      )
-                    })}
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-        </aside>
       </div>
 
       <section className="guide-cta">
