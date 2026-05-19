@@ -8,7 +8,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       breadcrumbHome: 'Home',
       breadcrumbCurrent: 'Play with a Pro',
       eyebrow: 'A Private Day on Course · Mallorca',
-      title: 'One course. 18 holes. Me alongside you the whole way.',
+      title: 'One course. 18 holes.\nMe alongside you the whole way.',
       body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. Book it as a standalone private round, or add it to a planned Mallorca golf trip. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €495. Groups from €950.',
       price: null,
       primaryCta: 'Enquire →',
@@ -73,9 +73,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       ],
     },
     packages: {
-      eyebrow: 'The day, three ways',
-      title: 'Solo, with a group, or the full hosted journey.',
-      body: 'All three include the same quality of day. The difference is how many of you there are, and how much of the surrounding trip you want me to take off your hands.',
+      eyebrow: 'Pricing',
+      title: 'Solo, group, or the full hosted journey.',
+      body: 'Solo and group are the core Play With A Pro private course day rates. The hosted journey is the more complete, high-touch version when you want the golf day wrapped in transfers, food, premium extras, and proper trip handling.',
       tiers: [
         {
           eyebrow: 'A Day With Andy',
@@ -117,7 +117,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           eyebrow: 'The Signature Experience',
           name: 'Hosted Golf Journey',
           price: '€3,000+',
-          note: 'Bespoke. I coordinate the full itinerary with you in advance — tell me what you want from the trip.',
+          note: 'Bespoke and deliberately OTT. I coordinate the full day around you in advance.',
           features: [
             'Course, tee time, and hosted golf day',
             'Lunch, private chef, or restaurant booking',
@@ -129,6 +129,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           featured: false,
         },
       ],
+      sharedCta: {
+        label: 'Enquire →',
+        href: '/contact',
+      },
       multiDay: {
         eyebrow: 'Still planning the full trip?',
         title: 'Planning the wider trip?',

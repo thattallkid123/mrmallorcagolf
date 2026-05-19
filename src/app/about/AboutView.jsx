@@ -81,7 +81,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
 
   return (
     <>
-      <link rel="preload" as="image" href="/images/about-secondary.webp" />
+      <link rel="preload" as="image" href="/images/hero-main.webp" />
       <PageLayout lang={locale}>
         <JsonLd data={buildAboutPageSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale)} />
@@ -92,7 +92,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
           style={{
             minHeight: '100vh',
             backgroundImage:
-              'linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%), url(/images/about-secondary.webp)',
+              'linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%), url(/images/hero-main.webp)',
             backgroundSize: 'auto, auto, cover',
             backgroundPosition: 'center, center, center 80%',
           }}
@@ -187,7 +187,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
 
         <CareerStrip {...(content.careerStripProps || careerStripProps)} />
 
-        {/* Proof of work: winners collage + testimonial */}
+        {/* Proof of work: winners collage */}
         <section className="testimonials">
           <div className="testimonials__header reveal">
             <p className="eyebrow eyebrow--gold">{home.winners.eyebrow}</p>
@@ -199,12 +199,6 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             </p>
           </div>
           <WinnersProofStrip images={WINNER_PROOF_IMAGES} />
-          <div className="testimonials__grid" style={{ marginTop: 2 }}>
-            <div className="testimonial reveal" style={{ flex: '1 1 auto', maxWidth: 1100, margin: '0 auto' }}>
-              <p>{home.winners.testimonial}</p>
-              <span className="testimonial__author">- {home.winners.attribution}</span>
-            </div>
-          </div>
         </section>
 
         <section className="cta-final">

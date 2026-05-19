@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import ItineraryPlanner from '../itinerary/ItineraryPlanner'
 
 export default function PlanYourTripView() {
@@ -9,6 +10,17 @@ export default function PlanYourTripView() {
 
       {/* ── HERO ── */}
       <section className="pyt-hero">
+        <div className="pyt-hero__media" aria-hidden="true">
+          <Image
+            src="/images/plan-your-trip-hero.webp"
+            alt=""
+            fill
+            priority
+            quality={88}
+            sizes="100vw"
+            className="pyt-hero__image"
+          />
+        </div>
         <div className="pyt-hero__inner">
           <p className="pyt-eyebrow">Plan Your Mallorca Golf Trip</p>
           <h1 className="pyt-hero__title">Start with the courses. Let me build the trip properly.</h1>

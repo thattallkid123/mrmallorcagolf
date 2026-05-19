@@ -74,7 +74,7 @@ export default function HomePageInner({ locale = 'en' }) {
       <section className="hero">
         <div className="hero__media" aria-hidden="true">
           <Image
-            src="/images/hero-main.webp"
+            src="/images/home-hero-mandarin.webp"
             alt="Golf day in Mallorca with PGA Advanced Professional Andy Griffiths"
             fill
             priority

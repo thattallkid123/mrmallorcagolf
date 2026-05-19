@@ -131,7 +131,12 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 {content.hero.eyebrow}
               </p>
               <h1 className="serif-display pwap-hero__title">
-                {content.hero.title}
+                {String(content.hero.title).split('\n').map((line, index, lines) => (
+                  <span key={line}>
+                    {line}
+                    {index < lines.length - 1 ? <br /> : null}
+                  </span>
+                ))}
               </h1>
               <p className="pwap-hero__body">
                 {content.hero.body}
@@ -164,6 +169,12 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
+            <div className="pwap-course-note">
+              <p className="eyebrow">{content.courses.eyebrow}</p>
+              <h3>{content.courses.title}</h3>
+              <p>{content.courses.body}</p>
+              <Link href={reviewLinks.courses} className="pwap-course-note__link">{links.courses}</Link>
+            </div>
             {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
           </div>
           <div className="pwap-day__right reveal">
@@ -194,21 +205,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           </div>
         </section>
 
-        <section className="pwap-courses">
-          <div className="courses-intro reveal">
-            <p className="eyebrow pwap-courses__eyebrow">
-              {content.courses.eyebrow}
-            </p>
-            <h2 className="serif-display pwap-courses__title">
-              {content.courses.title}
-            </h2>
-            <p className="pwap-courses__body">{content.courses.body}</p>
-            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
-              <Link href={reviewLinks.courses} className="btn btn--dark">{links.courses}</Link>
-            </div>
-          </div>
-        </section>
-
         {content.who ? (
           <section className="pwap-who">
             <div className="reveal">
@@ -229,42 +225,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           </section>
         ) : null}
 
-        <section className="pwap-testimonials">
-          <div className="pwap-testimonials__inner">
-            <div className="pwap-testimonials__photo reveal">
-              <div className="pwap-testimonials__photo-frame">
-                <Image
-                  src="/images/client-son-gual-banner.webp"
-                  alt="Andy with a client at Son Gual"
-                  width={935}
-                  height={700}
-                  quality={88}
-                  sizes="(max-width: 768px) 100vw, 560px"
-                  style={{ width: '100%', height: 'auto', display: 'block' }}
-                />
-              </div>
-            </div>
-            <div className="pwap-testimonials__content">
-              <div className="reveal pwap-testimonials__header">
-                <p className="eyebrow pwap-testimonials__eyebrow">
-                  {content.testimonials.eyebrow}
-                </p>
-                <h2 className="serif-display pwap-testimonials__title">
-                  {content.testimonials.title}
-                </h2>
-              </div>
-              <div className="pwap-testimonials__grid">
-                {content.testimonials.items.map((item, index) => (
-                  <div key={item.author} className={`testimonial reveal${index > 0 ? ` reveal-delay-${index}` : ''}`}>
-                    <p>&ldquo;{item.text}&rdquo;</p>
-                    <span className="testimonial__author">- {item.author}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="pwap-packages" id="packages">
           <div className="pwap-packages__header reveal">
             <p className="eyebrow">{content.packages.eyebrow}</p>
@@ -274,17 +234,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <p className="pwap-packages__intro">
               {content.packages.body}
             </p>
-          </div>
-          <div className="pwap-packages__photo reveal">
-            <Image
-              src="/images/client-son-gual2-banner.webp"
-              alt="A group day at Son Gual"
-              width={787}
-              height={700}
-              quality={88}
-              sizes="(max-width: 768px) 100vw, 760px"
-              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }}
-            />
           </div>
           <div className="pricing-grid">
             {content.packages.tiers.map((tier, index) => (
@@ -305,11 +254,43 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                     <li key={feature}>{feature}</li>
                   ))}
                 </ul>
-                <Link href={tier.href} className="tier__btn">
-                  {tier.button}
-                </Link>
+                {!content.packages.sharedCta ? (
+                  <Link href={tier.href} className="tier__btn">
+                    {tier.button}
+                  </Link>
+                ) : null}
               </div>
             ))}
+          </div>
+          {content.packages.sharedCta ? (
+            <div className="packages__shared-cta">
+              <Link href={content.packages.sharedCta.href} className="tier__btn">
+                {content.packages.sharedCta.label}
+              </Link>
+            </div>
+          ) : null}
+        </section>
+
+        <section className="pwap-testimonials">
+          <div className="pwap-testimonials__inner">
+            <div className="pwap-testimonials__content">
+              <div className="reveal pwap-testimonials__header">
+                <p className="eyebrow pwap-testimonials__eyebrow">
+                  {content.testimonials.eyebrow}
+                </p>
+                <h2 className="serif-display pwap-testimonials__title">
+                  {content.testimonials.title}
+                </h2>
+              </div>
+              <div className="pwap-testimonials__grid">
+                {content.testimonials.items.map((item, index) => (
+                  <div key={item.author} className={`testimonial reveal${index > 0 ? ` reveal-delay-${index}` : ''}`}>
+                    <p>&ldquo;{item.text}&rdquo;</p>
+                    <span className="testimonial__author">- {item.author}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 

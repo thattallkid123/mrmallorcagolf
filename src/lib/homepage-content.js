@@ -74,6 +74,7 @@ export const HOME_CONTENT = {
     how: {
       eyebrow: 'How I help',
       title: 'Plan the trip first. Add the extras where they make sense.',
+      body: 'Planning support, a private Play With A Pro day, or both.',
       steps: [
         {
           number: '01',
