@@ -185,11 +185,7 @@ export default function HomePageInner({ locale = 'en' }) {
           {home.experience.paragraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
-            <a href={ITINERARY_PLANNER_PATH} className="btn btn--gold">
-              {home.experience.dateCta}
-            </a>
-          </div>
+
         </div>
         <div className="what__right reveal reveal-delay-1">
           {home.experience.features && home.experience.features.length > 0 ? (
