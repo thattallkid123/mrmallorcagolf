@@ -127,6 +127,23 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
           </div>
         </header>
 
+        <section className="cred-logo-bar">
+          <div className="cred-logo-bar__logos">
+            {CREDENTIAL_LOGOS.map((logo) => (
+              <div className="cred-logo-bar__item" key={logo.name}>
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  className="cred-logo-bar__img"
+                  quality={90}
+                  sizes="(max-width: 700px) 45vw, 238px"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
         <div className="story">
           <main className="story__main">
             {content.chapters.map((chapter) => (
@@ -191,24 +208,6 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             </div>
           </aside>
         </div>
-
-        <section className="cred-logo-bar">
-          <div className="cred-logo-bar__logos">
-            {CREDENTIAL_LOGOS.map((logo) => (
-              <div className="cred-logo-bar__item" key={logo.name}>
-                <Image
-                  src={logo.src}
-                  alt={logo.name}
-                  width={logo.width}
-                  height={logo.height}
-                  className="cred-logo-bar__img"
-                  quality={90}
-                  sizes="(max-width: 700px) 45vw, 238px"
-                />
-              </div>
-            ))}
-          </div>
-        </section>
 
         <CareerStrip {...(content.careerStripProps || careerStripProps)} />
 
