@@ -110,7 +110,8 @@ export default function PlanYourTripView() {
               standalone booking or as part of a planned trip. One course, chosen for your
               game, with local course management and coaching woven into the round.
             </p>
-            <p className="pyt-addon__price">Solo from <strong>€495</strong> &nbsp;&middot;&nbsp; Groups from <strong>€950</strong> &nbsp;&middot;&nbsp; Green fees additional</p>
+            <p className="pyt-addon__price">Solo from <strong>€495</strong> &nbsp;&middot;&nbsp; Groups from <strong>€950</strong></p>
+            <p className="pyt-addon__price pyt-addon__price--sub">Green fees additional</p>
           </div>
           <div className="pyt-addon__action">
             <Link href="/play-with-a-pro" className="pyt-addon__btn">

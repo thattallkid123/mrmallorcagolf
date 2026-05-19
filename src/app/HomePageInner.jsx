@@ -32,12 +32,6 @@ const FEATURE_ICONS = {
 
 const ITINERARY_PLANNER_PATH = '/itinerary'
 
-const CREDENTIAL_LOGOS = [
-  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
-  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
-  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
-  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
-]
 
 function localizePath(path, locale) {
   if (!path || path.startsWith('http') || path.startsWith('#')) return path
@@ -133,25 +127,7 @@ export default function HomePageInner({ locale = 'en' }) {
           />
         </div>
       </section>
-      {/* Credential strip */}
-      <section className="cred-logo-bar">
-        <div className="cred-logo-bar__logos">
-          {CREDENTIAL_LOGOS.map((logo) => (
-            <div className="cred-logo-bar__item" key={logo.name}>
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className="cred-logo-bar__img"
-                loading="eager"
-                quality={90}
-                sizes="(max-width: 700px) 45vw, 238px"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+
 
       {home.journey ? (
         <section className="journey">
@@ -210,9 +186,6 @@ export default function HomePageInner({ locale = 'en' }) {
             <p key={index}>{paragraph}</p>
           ))}
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
-            <a href={playWithAProHref} className="btn btn--dark">
-              {home.experience.button}
-            </a>
             <a href={ITINERARY_PLANNER_PATH} className="btn btn--gold">
               {home.experience.dateCta}
             </a>

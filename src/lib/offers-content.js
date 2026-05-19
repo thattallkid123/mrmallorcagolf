@@ -39,7 +39,7 @@ const OFFER_CONTENT = {
         fullLabel: 'The Full Andy Day',
         contactPrice: 'From €3,000',
         structuredName: 'The Full Andy Day',
-        structuredDescription: 'Everything included. Private tee time, caddy, videographer, Michelin dining, private transfers, spa access, premium equipment. Bespoke itinerary on enquiry.',
+        structuredDescription: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From €3,000 on enquiry.',
       },
     },
   },
