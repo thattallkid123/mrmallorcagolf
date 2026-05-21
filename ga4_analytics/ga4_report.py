@@ -147,7 +147,7 @@ def report_traffic_sources(client, start_date, end_date):
 
 
 def report_search_terms(client, start_date, end_date):
-    print_section("ORGANIC SEARCH TERMS (from GA4 — limited; use Search Console for full data)")
+    print_section("ORGANIC SEARCH TERMS (from GA4 - limited; use Search Console for full data)")
     response = run_report(
         client,
         dimensions=["sessionGoogleAdsKeyword", "firstUserSourceMedium"],
@@ -229,7 +229,7 @@ def main():
 
     start_date, end_date = date_range(args.days)
 
-    print(f"\nMr Mallorca Golf — GA4 Report")
+    print(f"\nMr Mallorca Golf - GA4 Report")
     print(f"Period: {start_date} to {end_date} ({args.days} days)")
 
     try:
