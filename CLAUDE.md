@@ -26,6 +26,22 @@ Key files to upload for content or copy work (if Google Drive folder not mounted
 - `Active/MMG_MASTER.md` — brand, tone, credentials, service pricing
 - `Reference/MMG_COURSE_MARKET_REFERENCE_2026.md` — course green fees and market info
 
+## Course scorecard data (par / SI / distances)
+
+**Source of truth:** `Reference/Scorecards/Scorecard PDFs/` — official club PDFs for all 24 courses.  
+**Human-readable master:** `Reference/SCORECARD_MASTER.md` — read this before touching any par/SI data.
+
+There is **no auto-sync** for par/SI. When scorecard data changes, all of the following must be updated manually:
+1. PDF in `Scorecards/Scorecard PDFs/`
+2. `Reference/SCORECARD_MASTER.md`
+3. `mmg-tools/scoring-companion/index.html` — `courses` array
+4. `mmg-tools/strokes-gained/index.html` — par data
+5. `Reference/MMG_COURSE_MARKET_REFERENCE_2026.md` — hole tables
+6. `src/lib/golf-courses-data.js` — par value in `pills` text only
+
+The pricing sync chain (xlsx → JSON → mmg-tools) covers **green fees only** — it does not touch par/SI.  
+`src/lib/mallorca-tracker-courses.js` uses placeholder data for a prototype — do not update from scorecard data.
+
 Writing guardrails are in the repo at `MMG_BRAND_VOICE_GUIDELINES.md` — do NOT use the old `MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`, it is superseded.
 
 ## Contacts & privacy split

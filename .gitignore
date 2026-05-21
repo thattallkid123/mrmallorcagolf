@@ -9,6 +9,11 @@ zoho_mail/zoho_auth.py
 ga4_analytics/ga4_credentials.json
 ga4_analytics/ga4_oauth_client.json
 ga4_analytics/ga4_token.json
+ga4_analytics/reports/
+ga4_analytics/__pycache__/
+search_console/search_console_token.json
+search_console/reports/
+search_console/__pycache__/
 
 # dependencies
 /node_modules
