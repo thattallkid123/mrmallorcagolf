@@ -141,7 +141,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
             'Restaurant and dining suggestions included',
             'One person to contact for the whole trip',
           ],
-          button: 'Plan My Trip →',
+          button: 'Enquire →',
           href: '/contact',
           featured: true,
         },

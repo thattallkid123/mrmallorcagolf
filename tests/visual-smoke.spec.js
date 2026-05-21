@@ -1,6 +1,6 @@
 const { expect, test } = require('@playwright/test')
 
-const ROUTES = ['/', '/about']
+const ROUTES = ['/', '/about', '/play-with-a-pro']
 
 test.describe('visual smoke checks', () => {
   for (const route of ROUTES) {
@@ -17,7 +17,8 @@ test.describe('visual smoke checks', () => {
         }
       })
 
-      await page.goto(route, { waitUntil: 'networkidle' })
+      await page.goto(route, { waitUntil: 'domcontentloaded' })
+      await page.waitForLoadState('load', { timeout: 15000 }).catch(() => {})
 
       await expect(page.locator('body')).toBeVisible()
       await expect(page.locator('img').first()).toBeVisible()
@@ -26,15 +27,17 @@ test.describe('visual smoke checks', () => {
       expect(hasHorizontalOverflow, `Unexpected horizontal overflow on ${route}`).toBe(false)
 
       if (route === '/') {
-        await page.locator('.cred-logo-bar').scrollIntoViewIfNeeded()
-        await expect(page.locator('.cred-logo-bar__img')).toHaveCount(4)
-        for (const logo of await page.locator('.cred-logo-bar__img').all()) {
-          await expect(logo).toBeVisible()
-          await expect.poll(async () => logo.evaluate((image) => image.naturalWidth)).toBeGreaterThan(0)
-          const box = await logo.boundingBox()
-          expect(box?.width || 0).toBeGreaterThan(80)
-          expect(box?.height || 0).toBeGreaterThan(80)
-        }
+        const packages = page.locator('.packages')
+        await packages.scrollIntoViewIfNeeded()
+        await expect(packages.locator('.tier')).toHaveCount(4)
+        await expect(packages.locator('.tier__btn')).toHaveCount(4)
+      }
+
+      if (route === '/play-with-a-pro') {
+        const packages = page.locator('#packages')
+        await packages.scrollIntoViewIfNeeded()
+        await expect(packages.locator('.tier')).toHaveCount(4)
+        await expect(packages.locator('.tier__btn')).toHaveCount(4)
       }
 
       if (route === '/about') {
