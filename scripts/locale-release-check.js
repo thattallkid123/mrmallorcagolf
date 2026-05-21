@@ -7,6 +7,7 @@ const STEPS = [
   ['node', ['scripts/check-shared-locale-fallbacks.js']],
   ['node', ['scripts/check-guide-locale-coverage.js']],
   ['node', ['scripts/check-guide-locale-english-leaks.js']],
+  ['node', ['scripts/audit-locale-parity.js']],
   ['node', ['scripts/check-image-references.js']],
   ['node', ['scripts/check-course-destinations.js']],
   ['node', ['scripts/check-locale-page-files.js']],

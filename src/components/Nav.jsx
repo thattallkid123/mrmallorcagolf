@@ -19,10 +19,10 @@ const LANG_CONFIG = {
   de: {
     links: [
       { href: '/de', label: 'Start' },
-      { href: '/de/about', label: 'Über Andy' },
+      { href: '/de/about', label: '?ber Andy' },
       { href: '/de/plan-your-trip', label: 'Reise planen' },
       { href: '/de/play-with-a-pro', label: 'Mit Andy spielen' },
-      { href: '/de/golf-courses', label: 'Plätze' },
+      { href: '/de/golf-courses', label: 'Pl?tze' },
       { href: '/de/guides', label: 'Ratgeber' },
     ],
     cta: { href: '/de/contact', label: 'Anfragen' },
@@ -30,7 +30,7 @@ const LANG_CONFIG = {
   fr: {
     links: [
       { href: '/fr', label: 'Accueil' },
-      { href: '/fr/about', label: 'À propos' },
+      { href: '/fr/about', label: '? propos' },
       { href: '/fr/plan-your-trip', label: 'Planifier' },
       { href: '/fr/play-with-a-pro', label: 'Jouer avec Andy' },
       { href: '/fr/golf-courses', label: 'Parcours' },
@@ -45,23 +45,44 @@ const LANG_CONFIG = {
       { href: '/es/plan-your-trip', label: 'Planifica tu viaje' },
       { href: '/es/play-with-a-pro', label: 'Jugar con Andy' },
       { href: '/es/golf-courses', label: 'Campos' },
-      { href: '/es/guides', label: 'Guías' },
+      { href: '/es/guides', label: 'Gu?as' },
     ],
     cta: { href: '/es/contact', label: 'Contacto' },
+  },
+  nl: {
+    links: [
+      { href: '/nl', label: 'Home' },
+      { href: '/nl/about', label: 'Over Andy' },
+      { href: '/nl/plan-your-trip', label: 'Reis plannen' },
+      { href: '/nl/play-with-a-pro', label: 'Spelen met Andy' },
+      { href: '/nl/golf-courses', label: 'Banen' },
+      { href: '/nl/guides', label: 'Gidsen' },
+    ],
+    cta: { href: '/nl/contact', label: 'Contact' },
+  },
+  sv: {
+    links: [
+      { href: '/sv', label: 'Hem' },
+      { href: '/sv/about', label: 'Om Andy' },
+      { href: '/sv/plan-your-trip', label: 'Planera resan' },
+      { href: '/sv/play-with-a-pro', label: 'Spela med Andy' },
+      { href: '/sv/golf-courses', label: 'Banor' },
+      { href: '/sv/guides', label: 'Guider' },
+    ],
+    cta: { href: '/sv/contact', label: 'Kontakt' },
   },
   zh: {
     links: [
       { href: '/zh', label: '首页' },
       { href: '/zh/about', label: '关于 Andy' },
       { href: '/zh/plan-your-trip', label: '规划行程' },
-      { href: '/zh/play-with-a-pro', label: '与Andy同场' },
+      { href: '/zh/play-with-a-pro', label: '与 Andy 同场' },
       { href: '/zh/golf-courses', label: '球场指南' },
       { href: '/zh/guides', label: '指南' },
     ],
-    cta: { href: '/zh/contact', label: '联系我们' },
+    cta: { href: '/zh/contact', label: '联系我' },
   },
 }
-
 const LANG_CODES = NAV_LOCALES.map((locale) => ({
   code: locale === 'en' ? 'EN' : locale.toUpperCase(),
   locale,

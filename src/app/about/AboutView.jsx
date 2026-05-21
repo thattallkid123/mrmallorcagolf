@@ -179,9 +179,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
               />
             </div>
             <div className="creds reveal">
-              <p className="story__summary">
-                I&apos;m a UK PGA Advanced Professional. Eleven years coaching in China — national team players, the country&apos;s first Trackman Master, hundreds of millions of views on Douyin. Before that: Pebble Beach, The Open Championship, Evian. I moved to Mallorca in March 2025 to build something of my own. I play the island&apos;s best courses most weeks and have strong opinions about all of them.
-              </p>
+              <p className="story__summary">{content.summary}</p>
               <p className="creds__label">{content.credentialsLabel}</p>
               <ul className="cred-list">
                 {content.credentials.map((credential) => (

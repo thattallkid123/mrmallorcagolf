@@ -1468,6 +1468,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'Das Signature-Erlebnis',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Alles im Voraus organisiert',
         'Platz, Startzeit und Coaching',
@@ -1515,6 +1516,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'La Experiencia Signature',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Todo organizado de antemano',
         'Campo, hora de salida y coaching',
@@ -1562,6 +1564,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'The Signature Experience',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Tout organisé en amont',
         'Parcours, départ et coaching',
@@ -1609,6 +1612,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'The Signature Experience',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Alles vooraf geregeld',
         'Baan, starttijd en coaching',
@@ -1656,6 +1660,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'The Signature Experience',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Allt ordnat i förväg',
         'Bana, starttid och coaching',
@@ -1703,6 +1708,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'Signature 体验',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         '所有安排提前落实',
         '球场、开球时间与指导',
@@ -1714,6 +1720,206 @@ const HOME_PACKAGE_ITEMS = {
       cta: '查看价格',
     },
   ],
+}
+
+const HOME_UI_COPY = {
+  en: {
+    coursesHint: 'Swipe or scroll to browse',
+    newsletterEyebrow: 'THE NEWSLETTER',
+    newsletterTitle: 'Golf insights delivered.',
+    newsletterBody:
+      'Course conditions updated as I play them. Which tee times are worth fighting for, where the greens are running fast, and what is worth knowing before you fly. Sent every two weeks, unsubscribe whenever.',
+  },
+  de: {
+    coursesHint: 'Wischen oder scrollen, um zu schauen',
+    newsletterEyebrow: 'DER NEWSLETTER',
+    newsletterTitle: 'Golf-Einblicke direkt ins Postfach.',
+    newsletterBody:
+      'Platzbedingungen, sobald ich sie spiele. Welche Startzeiten es wert sind, wofür die Grüns schnell laufen und was Sie vor dem Abflug wissen sollten. Alle zwei Wochen, jederzeit abbestellbar.',
+  },
+  es: {
+    coursesHint: 'Deslice o haga scroll para ver más',
+    newsletterEyebrow: 'BOLETÍN',
+    newsletterTitle: 'Ideas de golf en su bandeja de entrada.',
+    newsletterBody:
+      'Condiciones actualizadas a medida que juego. Qué tee times merecen la pena, dónde ruedan rápidos los greens y qué conviene saber antes de volar. Enviado cada dos semanas, puede darse de baja cuando quiera.',
+  },
+  fr: {
+    coursesHint: 'Faites défiler ou glissez pour parcourir',
+    newsletterEyebrow: 'LA NEWSLETTER',
+    newsletterTitle: 'Des infos golf livrées régulièrement.',
+    newsletterBody:
+      'Des notes de parcours mises à jour au fil de mes parties. Les heures de départ qui valent le coup, les greens qui roulent vite et ce qu’il faut savoir avant de prendre l’avion. Toutes les deux semaines, désinscription à tout moment.',
+  },
+  nl: {
+    coursesHint: 'Veeg of scroll om te bekijken',
+    newsletterEyebrow: 'DE NIEUWSBRIEF',
+    newsletterTitle: 'Golfinzichten in uw inbox.',
+    newsletterBody:
+      'Baancondities zodra ik ze speel. Welke starttijden de moeite waard zijn, waar de greens snel lopen en wat u vóór vertrek wilt weten. Eens per twee weken, op elk moment uit te schakelen.',
+  },
+  sv: {
+    coursesHint: 'Svep eller scrolla för att bläddra',
+    newsletterEyebrow: 'NYHETSBREVET',
+    newsletterTitle: 'Golfinsikter direkt till dig.',
+    newsletterBody:
+      'Banförhållanden uppdaterade när jag spelar dem. Vilka starttider som är värda att jaga, var greenerna rullar snabbt och vad som är bra att veta innan du flyger. Varannan vecka, avregistrera när du vill.',
+  },
+  zh: {
+    coursesHint: '左右滑动或滚动浏览',
+    newsletterEyebrow: '电子简报',
+    newsletterTitle: '高尔夫洞见，定期送达。',
+    newsletterBody:
+      '我会在打球时同步更新球场状况。哪些开球时间值得争取、果岭滚速有多快、出发前哪些信息最重要。每两周发送一次，随时可退订。',
+  },
+}
+
+const HOME_EXTRA_PACKAGE_ITEM = {
+  en: {
+    tier: 'Trip Planning',
+    eyebrow: 'Trip Planning',
+    name: 'Plan Your Trip',
+    price: 'Price on enquiry',
+    featured: true,
+    features: [
+      'No searching apps or websites - tee times handled for you',
+      'Courses picked to match your group, level, and budget',
+      'Routing and number of rounds planned around your schedule',
+      'Buggies, club hire, and transfers all arranged',
+      'Restaurant and dining suggestions included',
+      'One person to contact for the whole trip',
+    ],
+    note: '5% management fee applies to green fees and bookings. Confirmed after your first conversation.',
+    cta: 'Enquire',
+    href: '/contact',
+  },
+  de: {
+    tier: 'Reiseplanung',
+    eyebrow: 'Reiseplanung',
+    name: 'Ihre Reise planen',
+    price: 'Preis auf Anfrage',
+    featured: true,
+    features: [
+      'Keine Apps oder Websites durchsuchen - Abschlagszeiten werden für Sie organisiert',
+      'Plätze passend zu Gruppe, Spielstärke und Budget',
+      'Route und Rundenzahl passend zu Ihrem Zeitplan',
+      'Buggys, Schlägerverleih und Transfers organisiert',
+      'Restaurant- und Essensvorschläge inklusive',
+      'Eine feste Ansprechperson für die gesamte Reise',
+    ],
+    note: '5 % Verwaltungsgebühr auf Greenfees und Buchungen. Wird nach dem ersten Gespräch bestätigt.',
+    cta: 'Anfragen',
+    href: '/de/contact',
+  },
+  es: {
+    tier: 'Planificación del viaje',
+    eyebrow: 'Planificación del viaje',
+    name: 'Planifique su viaje',
+    price: 'Precio a consultar',
+    featured: true,
+    features: [
+      'Sin buscar en apps ni webs - yo me encargo de los tee times',
+      'Campos elegidos según su grupo, nivel y presupuesto',
+      'Ruta y número de vueltas planificados según su calendario',
+      'Buggies, alquiler de palos y traslados organizados',
+      'Sugerencias de restaurantes y comidas incluidas',
+      'Una sola persona para todo el viaje',
+    ],
+    note: 'Se aplica una comisión de gestión del 5 % sobre green fees y reservas. Se confirma tras la primera conversación.',
+    cta: 'Consultar',
+    href: '/es/contact',
+  },
+  fr: {
+    tier: 'Planification du séjour',
+    eyebrow: 'Planification du séjour',
+    name: 'Planifiez votre séjour',
+    price: 'Prix sur demande',
+    featured: true,
+    features: [
+      'Pas d’apps ni de sites à chercher - les heures de départ sont gérées pour vous',
+      'Parcours choisis selon votre groupe, votre niveau et votre budget',
+      'Itinéraire et nombre de tours pensés selon votre planning',
+      'Buggies, location de clubs et transferts organisés',
+      'Suggestions de restaurants et de repas incluses',
+      'Une seule personne à contacter pour tout le voyage',
+    ],
+    note: 'Frais de gestion de 5 % sur les green fees et les réservations. Confirmé après votre premier échange.',
+    cta: 'Demander',
+    href: '/fr/contact',
+  },
+  nl: {
+    tier: 'Reisplanning',
+    eyebrow: 'Reisplanning',
+    name: 'Plan uw reis',
+    price: 'Prijs op aanvraag',
+    featured: true,
+    features: [
+      'Geen apps of websites zoeken - tee times worden voor u geregeld',
+      'Baankeuze afgestemd op uw groep, niveau en budget',
+      'Route en aantal rondes gepland rond uw schema',
+      'Buggies, clubhuur en transfers geregeld',
+      'Restaurant- en diningtips inbegrepen',
+      'Eén aanspreekpunt voor de hele reis',
+    ],
+    note: 'Er geldt een beheersfee van 5 % op greenfees en boekingen. Bevestigd na het eerste gesprek.',
+    cta: 'Aanvragen',
+    href: '/nl/contact',
+  },
+  sv: {
+    tier: 'Reseplanering',
+    eyebrow: 'Reseplanering',
+    name: 'Planera din resa',
+    price: 'Pris på förfrågan',
+    featured: true,
+    features: [
+      'Inga appar eller webbplatser att leta i - tee times ordnas åt dig',
+      'Banor valda efter grupp, nivå och budget',
+      'Rutt och antal rundor planerade efter ditt schema',
+      'Golfbil, hyrklubbor och transfers ordnade',
+      'Restaurang- och matförslag ingår',
+      'En person att kontakta för hela resan',
+    ],
+    note: '5 % administrationsavgift tillkommer på greenfee och bokningar. Bekräftas efter ert första samtal.',
+    cta: 'Förfrågan',
+    href: '/sv/contact',
+  },
+  zh: {
+    tier: '行程规划',
+    eyebrow: '行程规划',
+    name: '规划您的行程',
+    price: '咨询定价',
+    featured: true,
+    features: [
+      '不用再翻应用或网站 - 开球时间我来安排',
+      '根据您的团队、水平和预算挑选球场',
+      '按您的行程安排路线和打球轮次',
+      '球车、球杆租赁和接送全部协调',
+      '附带餐厅与用餐建议',
+      '整个行程只联系一个人',
+    ],
+    note: '果岭费和预订需收取 5% 管理费。第一次沟通后确认。',
+    cta: '咨询',
+    href: '/zh/contact',
+  },
+}
+
+function normalizeHomePackageItems(locale, items = []) {
+  const englishItems = HOME_PACKAGE_ITEMS.en
+  const localizedItems = []
+
+  for (let index = 0; index < englishItems.length; index += 1) {
+    const englishItem = englishItems[index]
+    const item = items[index] || (index === englishItems.length - 1 ? HOME_EXTRA_PACKAGE_ITEM[locale] : englishItem)
+
+    localizedItems.push({
+      ...item,
+      features: Array.isArray(item.features)
+        ? item.features.slice(0, englishItem.features.length)
+        : item.features,
+    })
+  }
+
+  return localizedItems
 }
 
 const HOME_FEATURED_BADGE_MAP = {
@@ -1928,7 +2134,7 @@ export function getHomeContent(locale = 'en') {
   const packages = content.packages
     ? {
         ...content.packages,
-        items: localizedPackageItems.map((item, index) => ({
+        items: normalizeHomePackageItems(locale, localizedPackageItems).map((item, index) => ({
           ...item,
           href: item.href || content.packages.items?.[index]?.href || (locale === 'en' ? '/contact' : `/${locale}/contact`),
           price:
@@ -1950,6 +2156,7 @@ export function getHomeContent(locale = 'en') {
   if (locale === 'en') {
     return {
       ...content,
+      ui: HOME_UI_COPY.en,
       packages,
       courses: content.courses
         ? {
@@ -1962,6 +2169,7 @@ export function getHomeContent(locale = 'en') {
 
   return {
     ...content,
+    ui: HOME_UI_COPY[locale] || HOME_UI_COPY.en,
     experience: content.experience
       ? {
           ...content.experience,

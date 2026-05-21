@@ -713,6 +713,111 @@ function normalizeTierForLocale(tier, index) {
   return normalized
 }
 
+const PLAY_EXTRA_TIER = {
+  de: {
+    eyebrow: 'Reiseplanung',
+    name: 'Plan Your Trip',
+    price: 'Preis auf Anfrage',
+    note: '5 % Planungsgebühr auf Greenfees und Buchungen. Nach dem ersten Gespräch bestätigt.',
+    features: [
+      'Keine Suche in Apps oder auf Websites - ich organisiere die Startzeiten',
+      'Plätze passend zu Ihrer Gruppe, Ihrem Niveau und Ihrem Budget',
+      'Route und Rundenzahl nach Ihrem Zeitplan geplant',
+      'Buggy, Schläger und Transfers werden arrangiert',
+      'Restaurant- und Essensempfehlungen inklusive',
+      'Eine Person als Ansprechpartner für die gesamte Reise',
+    ],
+    button: 'Anfragen →',
+    href: '/de/contact',
+    featured: true,
+  },
+  es: {
+    eyebrow: 'Planificación de viaje',
+    name: 'Plan Your Trip',
+    price: 'Precio bajo consulta',
+    note: 'Se aplica una comisión de gestión del 5 % sobre green fees y reservas. Confirmado tras la primera conversación.',
+    features: [
+      'Sin buscar en apps o webs - yo gestiono las salidas',
+      'Campos elegidos según su grupo, nivel y presupuesto',
+      'Ruta y número de rondas planificados según su agenda',
+      'Buggies, alquiler de palos y traslados organizados',
+      'Recomendaciones de restaurantes y gastronomía incluidas',
+      'Una sola persona de contacto para todo el viaje',
+    ],
+    button: 'Consultar →',
+    href: '/es/contact',
+    featured: true,
+  },
+  fr: {
+    eyebrow: 'Organisation du voyage',
+    name: 'Plan Your Trip',
+    price: 'Prix sur demande',
+    note: 'Des frais de gestion de 5 % s’appliquent aux green fees et aux réservations. Confirmé après le premier échange.',
+    features: [
+      'Pas de recherche sur les applis ou les sites - je gère les heures de départ',
+      'Parcours choisis selon votre groupe, votre niveau et votre budget',
+      'Itinéraire et nombre de parties planifiés selon votre programme',
+      'Buggys, location de clubs et transferts organisés',
+      'Recommandations de restaurants et de repas incluses',
+      'Un seul interlocuteur pour tout le voyage',
+    ],
+    button: 'Demander →',
+    href: '/fr/contact',
+    featured: true,
+  },
+  nl: {
+    eyebrow: 'Reisplanning',
+    name: 'Plan Your Trip',
+    price: 'Prijs op aanvraag',
+    note: 'Een beheervergoeding van 5% geldt voor greenfees en boekingen. Bevestigd na het eerste gesprek.',
+    features: [
+      'Geen zoeken in apps of op websites - ik regel de starttijden',
+      'Banen gekozen op basis van uw groep, niveau en budget',
+      'Route en aantal rondes gepland rond uw schema',
+      'Buggys, clubhuur en transfers geregeld',
+      'Restaurant- en dinertips inbegrepen',
+      'Eén aanspreekpunt voor de hele reis',
+    ],
+    button: 'Contact opnemen →',
+    href: '/nl/contact',
+    featured: true,
+  },
+  sv: {
+    eyebrow: 'Reseplanering',
+    name: 'Plan Your Trip',
+    price: 'Pris på förfrågan',
+    note: 'En administrationsavgift på 5 % tillkommer på greenfees och bokningar. Bekräftas efter första samtalet.',
+    features: [
+      'Ingen sökning i appar eller på webbplatser - jag ordnar starttiderna',
+      'Banor valda utifrån grupp, nivå och budget',
+      'Rutt och antal rundor planerade efter ert schema',
+      'Buggy, klubbor och transporter ordnade',
+      'Restaurang- och matförslag ingår',
+      'En kontaktperson för hela resan',
+    ],
+    button: 'Kontakta mig →',
+    href: '/sv/contact',
+    featured: true,
+  },
+  zh: {
+    eyebrow: '行程规划',
+    name: 'Plan Your Trip',
+    price: '价格咨询',
+    note: '球场费用和预订需收取 5% 管理费。首次沟通后确认。',
+    features: [
+      '无需在应用或网站上搜索 - 开球时间由我安排',
+      '根据您的团队、水平和预算选择球场',
+      '按您的行程规划路线和轮次',
+      '代办球车、球杆租赁和接送',
+      '包含餐厅与用餐建议',
+      '整个行程只需联系一人',
+    ],
+    button: '咨询 →',
+    href: '/zh/contact',
+    featured: true,
+  },
+}
+
 function mergeDeep(base, override) {
   if (Array.isArray(base) || Array.isArray(override)) {
     return override === undefined ? base : override
@@ -1537,15 +1642,24 @@ export function getPlayWithAProContent(locale = 'en') {
   const packages = content?.packages
     ? {
         ...content.packages,
-        tiers: (content.packages.tiers || []).map((tier, index) => normalizeTierForLocale({
-          ...tier,
-          price:
-            tier.eyebrow === soloOffer.shortLabel
-              ? soloOffer.priceDisplay
-              : tier.eyebrow === groupOffer.shortLabel
-                ? groupOffer.priceDisplay
-                : tier.price,
-        }, index)),
+        tiers: (() => {
+          const englishTiers = PLAY_WITH_A_PRO_CONTENT.en.packages.tiers
+          const baseTiers = [...(content.packages.tiers || [])]
+          if (baseTiers.length < englishTiers.length) {
+            const extraTier = PLAY_EXTRA_TIER[locale] || PLAY_EXTRA_TIER.en
+            if (extraTier) baseTiers.push(extraTier)
+          }
+
+          return baseTiers.map((tier, index) => normalizeTierForLocale({
+            ...tier,
+            price:
+              tier.eyebrow === soloOffer.shortLabel
+                ? soloOffer.priceDisplay
+                : tier.eyebrow === groupOffer.shortLabel
+                  ? groupOffer.priceDisplay
+                  : tier.price,
+          }, index))
+        })(),
         multiDay: content.packages.multiDay
           ? {
               ...content.packages.multiDay,

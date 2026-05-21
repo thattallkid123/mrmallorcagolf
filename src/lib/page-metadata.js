@@ -275,6 +275,44 @@ const ITINERARY_METADATA = {
   },
 }
 
+const PLAN_YOUR_TRIP_METADATA = {
+  en: {
+    title: 'Plan Your Mallorca Golf Trip | Mr Mallorca Golf',
+    description:
+      'Use the free course finder as a starting point, or ask Andy to plan your Mallorca golf trip properly: courses, base, routing, tee times, buggies, rentals, and dining.',
+  },
+  de: {
+    title: 'Mallorca Golfreise planen | Mr Mallorca Golf',
+    description:
+      'Nutzen Sie den kostenlosen Platzfinder als Startpunkt oder lassen Sie Andy Ihre Mallorca Golfreise sauber planen: Plätze, Basis, Route, Startzeiten, Buggys, Leihschläger und Restaurants.',
+  },
+  es: {
+    title: 'Planifique su viaje de golf a Mallorca | Mr Mallorca Golf',
+    description:
+      'Use el buscador gratuito de campos como punto de partida o deje que Andy planifique su viaje de golf a Mallorca: campos, base, ruta, tee times, buggies, alquiler de palos y restaurantes.',
+  },
+  fr: {
+    title: 'Planifiez votre séjour golf à Majorque | Mr Mallorca Golf',
+    description:
+      'Utilisez la sélection gratuite de parcours comme point de départ, ou demandez à Andy de planifier correctement votre séjour golf à Majorque : parcours, base, itinéraire, heures de départ, buggys, location de clubs et repas.',
+  },
+  nl: {
+    title: 'Plan uw golfreis naar Mallorca | Mr Mallorca Golf',
+    description:
+      'Gebruik de gratis banenzoeker als startpunt, of laat Andy uw golfreis naar Mallorca goed plannen: banen, basis, route, starttijden, buggy’s, clubhuur en restaurants.',
+  },
+  sv: {
+    title: 'Planera din golfresa till Mallorca | Mr Mallorca Golf',
+    description:
+      'Använd den fria banfindern som utgångspunkt, eller låt Andy planera din golfresa till Mallorca ordentligt: banor, bas, rutt, starttider, golfbilar, klubbor och mat.',
+  },
+  zh: {
+    title: '规划您的马略卡高尔夫之旅 | Mr Mallorca Golf',
+    description:
+      '可先用免费的球场筛选器做起点，或者直接让 Andy 为您认真规划马略卡高尔夫之旅：球场、住宿基点、路线、开球时间、球车、球杆租赁和餐饮。',
+  },
+}
+
 const SUBSCRIBE_METADATA = {
   en: {
     title: 'Golf Insights from Mallorca - Weekly Newsletter | Mr Mallorca Golf',
@@ -453,6 +491,14 @@ export function buildContactMetadata(locale = 'en') {
 
 export function buildItineraryMetadata() {
   return buildPageMetadata('/itinerary', 'en', ITINERARY_METADATA.en)
+}
+
+export function buildPlanYourTripMetadata(locale = 'en') {
+  return buildPageMetadata(
+    locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`,
+    locale,
+    PLAN_YOUR_TRIP_METADATA[locale] || PLAN_YOUR_TRIP_METADATA.en,
+  )
 }
 
 export function buildSubscribeMetadata(locale = 'en') {
