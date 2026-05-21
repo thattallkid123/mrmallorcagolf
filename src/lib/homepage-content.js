@@ -248,6 +248,23 @@ export const HOME_CONTENT = {
           cta: 'Plan trip ->',
           href: '/plan-your-trip',
         },
+        {
+          eyebrow: 'Trip Planning',
+          name: 'Plan Your Trip',
+          price: 'Price on enquiry',
+          features: [
+            'No searching apps or websites — tee times handled for you',
+            'Courses picked to match your group, level, and budget',
+            'Routing and number of rounds planned around your schedule',
+            'Buggies, club hire, and transfers all arranged',
+            'Restaurant and dining suggestions included',
+            'One person to contact for the whole trip',
+          ],
+          note: '5% management fee applies to green fees and bookings. Confirmed after your first conversation.',
+          cta: 'Plan My Trip →',
+          href: '/contact',
+          featured: true,
+        },
       ],
       multiDay: {
         eyebrow: 'Not sure where to start?',
