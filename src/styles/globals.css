@@ -896,7 +896,7 @@ body {
 .pwap-packages__intro { font-size: 1rem; color: var(--taupe); line-height: 1.8; margin-top: 1rem; max-width: 600px; }
 .pwap-packages__photo { max-width: 680px; margin: 0 auto 52px; border-radius: 2px; overflow: hidden; box-shadow: 0 8px 32px rgba(26,25,22,0.10); }
 .pwap-packages__photo img { width: 100%; height: auto; display: block; border-radius: 2px; }
-.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; max-width: 1200px; margin: 0 auto; }
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 1100px; margin: 0 auto; }
 .tier { background: linear-gradient(180deg, #faf7f1 0%, #f6f1e7 100%); padding: 48px 40px; display: flex; flex-direction: column; transition: background 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury), box-shadow 0.35s var(--ease-luxury); border: 1px solid rgba(26,25,22,0.06); min-height: 100%; box-shadow: var(--shadow-soft); }
 .tier:hover { background: #f4f0e8; border-color: rgba(26,25,22,0.12); transform: translateY(-6px); box-shadow: var(--shadow-deep); }
 .tier--feature { background: var(--pine); border-color: rgba(45,74,62,0.24); }

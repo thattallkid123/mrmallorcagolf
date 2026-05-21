@@ -132,23 +132,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           href: '/contact',
           featured: false,
         },
-        {
-          eyebrow: 'Trip Planning',
-          name: 'Plan Your Trip',
-          price: 'Price on enquiry',
-          note: '5% management fee applies to green fees and bookings. Confirmed after your first conversation.',
-          features: [
-            'Courses matched to your group, level, and schedule',
-            'Tee times booked and confirmed',
-            'Routing and number of rounds advised',
-            'Buggies and club rentals arranged',
-            'Dining suggestions built around the golf',
-            'One point of contact for the whole trip',
-          ],
-          button: 'Plan My Trip →',
-          href: '/contact',
-          featured: false,
-        },
       ],
       multiDay: {
         eyebrow: 'Looking for something bigger?',
