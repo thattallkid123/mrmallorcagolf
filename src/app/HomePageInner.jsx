@@ -46,10 +46,7 @@ export default function HomePageInner({ locale = 'en' }) {
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
   const itineraryHref = home.hero.primaryHref || ITINERARY_PLANNER_PATH
-  const sharedPackageCta = home.packages.items.length > 1
-    && home.packages.items.every((item) => item.cta === home.packages.items[0].cta && (item.href || contactHref) === (home.packages.items[0].href || contactHref))
-      ? home.packages.items[0]
-      : null
+  const sharedPackageCta = null
 
   return (
     <>

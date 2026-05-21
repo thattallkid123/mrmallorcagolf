@@ -241,6 +241,12 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 <p className="tier__name-small">{tier.eyebrow}</p>
                 <h3 className="tier__name">{tier.name}</h3>
                 <p className="tier__price">{tier.price}</p>
+                <div className="tier__rule"></div>
+                <ul className="tier__features">
+                  {tier.features.map((feature) => (
+                    <li key={feature}>{feature}</li>
+                  ))}
+                </ul>
                 {tier.noteLines ? (
                   <div className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`} style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
                     {tier.noteLines.map((line) => <span key={line}>{line}</span>)}
@@ -248,17 +254,9 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 ) : tier.note ? (
                   <p className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`}>{tier.note}</p>
                 ) : null}
-                <div className="tier__rule"></div>
-                <ul className="tier__features">
-                  {tier.features.map((feature) => (
-                    <li key={feature}>{feature}</li>
-                  ))}
-                </ul>
-                {!content.packages.sharedCta ? (
-                  <Link href={tier.href} className="tier__btn">
-                    {tier.button}
-                  </Link>
-                ) : null}
+                <Link href={tier.href} className="tier__btn">
+                  {tier.button}
+                </Link>
               </div>
             ))}
           </div>

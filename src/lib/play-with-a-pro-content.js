@@ -146,10 +146,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           featured: true,
         },
       ],
-      sharedCta: {
-        label: 'Enquire →',
-        href: '/contact',
-      },
       multiDay: {
         eyebrow: 'Still planning the full trip?',
         title: 'Planning the wider trip?',
