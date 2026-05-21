@@ -76,17 +76,19 @@ export default function HomePageInner({ locale = 'en' }) {
               </>
             ) : null}
           </h1>
-          <div className="hero__actions">
-            <a href={itineraryHref} className="btn btn--gold">
-              {home.hero.primaryCta}
-            </a>
-            <a href={golfCoursesHref} className="btn btn--outline-white">
-              {home.hero.secondaryCta}
+          <div className="hero__cta-stack">
+            <div className="hero__actions">
+              <a href={itineraryHref} className="btn btn--gold">
+                {home.hero.primaryCta}
+              </a>
+              <a href={golfCoursesHref} className="btn btn--outline-white">
+                {home.hero.secondaryCta}
+              </a>
+            </div>
+            <a href={playWithAProHref} className="hero__pwap-link">
+              Want Andy on the course? See Play With A Pro
             </a>
           </div>
-          <a href={playWithAProHref} className="hero__pwap-link">
-            Want Andy on the course? See Play With A Pro
-          </a>
         </div>
       </section>
 
