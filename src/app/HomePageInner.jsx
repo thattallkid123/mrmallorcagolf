@@ -86,7 +86,8 @@ export default function HomePageInner({ locale = 'en' }) {
               </a>
             </div>
             <a href={playWithAProHref} className="hero__pwap-link">
-              Want Andy on the course? Book Play With A Pro
+              <span>Want Andy on the course?</span>
+              <span>Book Play With A Pro</span>
             </a>
           </div>
         </div>

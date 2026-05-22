@@ -21,10 +21,11 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 Branch rules:
 
-- `main` is the live coaching/current site.
-- `itinerary-preview` is the future trip-led / itinerary-led version.
-- Shared factual content, course reviews, translations, course data, docs, tooling, and bug fixes usually belong on both branches.
-- Itinerary-specific homepage, planner, Plan Trip, service-positioning, and copy experiments should not be copied to `main` unless Andy explicitly asks.
+- As of 2026-05-22, `main` is the active Mr Mallorca Golf source of truth and already includes the itinerary-focused release.
+- Start every MMG site coding session by checking `git status --short --branch`; if not already there, switch to `main` before editing unless Andy explicitly asks for another branch.
+- `main` is the Vercel live branch / production baseline.
+- Old focus branches such as `itinerary-focused-may-2026`, `itinerary-preview`, and `old-pwap-focused-may-2026` are historical/reference branches, not active work targets.
+- For larger or risky changes, create a short-lived branch from `main` using the `codex/` prefix, then merge or PR it back deliberately.
 
 Before changing branches or stashing, inspect:
 

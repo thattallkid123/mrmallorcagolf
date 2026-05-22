@@ -2,6 +2,7 @@ const OFFER_IDS = {
   solo: 'mallorca-round',
   group: 'signature-day',
   premium: 'full-andy-day',
+  planning: 'trip-planning',
   undecided: 'not-sure',
 }
 
@@ -15,6 +16,7 @@ const OFFER_CONTENT = {
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
+    tripPlanningContactLabel: 'Trip planning - build my Mallorca golf itinerary',
     contactUnknown: 'Not sure yet - advise me',
     offers: {
       [OFFER_IDS.solo]: {
@@ -275,11 +277,13 @@ export function getContactExperienceOptions(locale = 'en') {
       getOfferById(OFFER_IDS.premium, locale).fullLabel,
       getOfferById(OFFER_IDS.premium, locale).contactPrice,
     ],
+    [OFFER_IDS.planning, localeContent.tripPlanningContactLabel || OFFER_CONTENT.en.tripPlanningContactLabel, 'Enquiry'],
     [OFFER_IDS.undecided, localeContent.contactUnknown, ''],
   ]
 }
 
 export function getExperienceLabel(id, locale = 'en') {
+  if (id === OFFER_IDS.planning) return getOfferLocale(locale).tripPlanningContactLabel || OFFER_CONTENT.en.tripPlanningContactLabel
   if (id === OFFER_IDS.undecided) return getOfferLocale(locale).contactUnknown
   return getOfferById(id, locale).fullLabel
 }
