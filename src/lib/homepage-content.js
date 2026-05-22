@@ -252,8 +252,8 @@ export const HOME_CONTENT = {
           featured: true,
         },
         {
-          eyebrow: 'The Signature Experience',
-          name: 'Hosted Golf Journey',
+          eyebrow: 'Signature Day',
+          name: 'Signature Day',
           price: '€3,000+',
           features: [
             'Course, tee time, and hosted golf day',

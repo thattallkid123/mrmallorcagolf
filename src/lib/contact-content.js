@@ -54,7 +54,7 @@ export const CONTACT_CONTENT = {
         { value: '5+ - larger group / corporate', label: '5+ - larger group / corporate' },
       ],
       experiences: [
-        ['itinerary', 'Plan Your Trip - professional planning', 'Enquiry'],
+        ['itinerary', 'Trip planning - professional planning', 'Enquiry'],
         ['mallorca-round', 'Play With A Pro - Solo', '€495'],
         ['signature-day', 'Play With A Pro - Group', '€950'],
         ['planning-plus-pwap', 'Planning + Play With A Pro add-on', 'Enquiry'],

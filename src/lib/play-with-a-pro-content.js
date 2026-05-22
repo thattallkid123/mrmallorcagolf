@@ -74,8 +74,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     },
     packages: {
       eyebrow: 'Pricing',
-      title: 'Solo, group, or the full hosted journey.',
-      body: 'Solo and group are the core Play With A Pro private course day rates. The hosted journey is the more complete, high-touch version when you want the golf day wrapped in transfers, food, premium extras, and proper trip handling.',
+      title: 'Solo, group, or Signature Day.',
+      body: 'Solo and group are the core Play With A Pro private course day rates. Signature Day is the more complete, high-touch version when you want the golf day wrapped in transfers, food, premium extras, and proper trip handling.',
       tiers: [
         {
           eyebrow: 'A Day With Andy',
@@ -114,8 +114,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           featured: true,
         },
         {
-          eyebrow: 'The Signature Experience',
-          name: 'Hosted Golf Journey',
+          eyebrow: 'Signature Day',
+          name: 'Signature Day',
           price: '€3,000+',
           note: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons can be planned around you before the day.',
           features: [

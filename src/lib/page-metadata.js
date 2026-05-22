@@ -10,7 +10,7 @@ export const DEFAULT_SOCIAL_IMAGE = {
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf Trip Planning & Itineraries | Mr Mallorca Golf',
+    title: 'Mallorca Golf Trip Planning | Play With A Pro',
     description:
       'Build a better Mallorca golf trip with PGA Advanced Professional Andy Griffiths. Course planning, itineraries, local recommendations, and Play With A Pro add-ons.',
   },

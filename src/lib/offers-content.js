@@ -20,7 +20,7 @@ const OFFER_CONTENT = {
       [OFFER_IDS.solo]: {
         shortLabel: 'Solo',
         displayName: 'A Day With Andy',
-        fullLabel: 'A Day With Andy -Solo',
+        fullLabel: 'A Day With Andy - Solo',
         priceDisplay: '€495',
         priceNumeric: '495',
         contactPrice: '€495',
@@ -36,9 +36,9 @@ const OFFER_CONTENT = {
         structuredDescription: 'Full day for groups of up to 3 with PGA Advanced Professional Andy Griffiths. One fixed day rate. Green fees confirmed separately.',
       },
       [OFFER_IDS.premium]: {
-        fullLabel: 'The Full Andy Day',
+        fullLabel: 'Signature Day',
         contactPrice: 'From €3,000',
-        structuredName: 'The Full Andy Day',
+        structuredName: 'Signature Day',
         structuredDescription: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From €3,000 on enquiry.',
       },
     },
