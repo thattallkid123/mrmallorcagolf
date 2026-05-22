@@ -1,3 +1,29 @@
+## 2026-05-22
+
+- [site] Localized the embedded Plan Your Trip planner across all 7 locales while keeping the visible header switch at 5 languages.
+- [site] Promoted the itinerary-focused release to `main` and kept the older PWAP-focused version available as a rollback branch.
+- [content] Added release notes and version-handoff files so future changes and rollback steps are easy to recover.
+- [admin] Named the release branches `itinerary-focused-may-2026` and `old-pwap-focused-may-2026` for clearer future reference.
+- [seo] Verified locale metadata, alternates, and shared route coverage still resolve cleanly after the release.
+
+## 2026-05-21
+
+- [site] Added the 4th `Plan Your Trip` card to the homepage packages and updated the PWAP card copy to match the itinerary-first release.
+- [site] Reworked the homepage package grid spacing, note placement, and enquiry button layout so the four-card presentation stays tidy.
+- [site] Centered the homepage pro link and aligned the itinerary package cards so the release reads consistently across views.
+- [site] Added the first version of the itinerary preview and service-page refinements that led into the final release.
+
+## 2026-05-20
+
+- [site] Moved the credential logos to just below the About page hero for a cleaner introduction.
+
+## 2026-05-19
+
+- [content] Refined service-page copy, including the hosted journey note and preview text, as the itinerary direction took shape.
+- [site] Softened hero overlays, lightened the CTA pill, and removed the quick-picks sidebar from the preview build.
+- [site] Removed the Plan Your Trip CTA from the why-trust section and trimmed the PWAP CTAs while the new itinerary direction was being tested.
+- [site] Removed the homepage featured courses carousel and tightened the signature copy / pricing layout during the preview pass.
+
 ## 2026-05-18
 
 - [site] Fixed guide/review inline links rendering as literal HTML across guide pages and locales.
