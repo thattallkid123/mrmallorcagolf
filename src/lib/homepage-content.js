@@ -1399,9 +1399,9 @@ const HOME_PACKAGE_ITEMS = {
       href: '/contact',
     },
     {
-      tier: 'The Signature Experience',
-      eyebrow: 'The Signature Experience',
-      name: 'Hosted Golf Journey',
+      tier: 'Signature Day',
+      eyebrow: 'Signature Day',
+      name: 'Signature Day',
       price: '€3,000+',
       features: [
         'Course, tee time, and hosted golf day',
