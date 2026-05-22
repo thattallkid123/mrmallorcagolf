@@ -11,7 +11,6 @@ export default function WinnersProofStrip({ images }) {
     const viewport = viewportRef.current
     const track = trackRef.current
     if (!viewport || !track) return
-
     let pausedUntil = 0
     let raf
 
@@ -31,7 +30,6 @@ export default function WinnersProofStrip({ images }) {
     viewport.addEventListener('wheel', pauseBriefly, { passive: true })
     viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
     raf = requestAnimationFrame(tick)
-
     return () => {
       cancelAnimationFrame(raf)
       viewport.removeEventListener('pointerdown', pauseBriefly)
@@ -51,7 +49,6 @@ export default function WinnersProofStrip({ images }) {
               fill
               priority={index < 4}
               quality={90}
-              unoptimized
               sizes="(max-width: 700px) 44vw, 260px"
               style={{ objectFit: 'cover', objectPosition: image.position || 'center 35%' }}
             />

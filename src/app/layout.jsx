@@ -30,23 +30,23 @@ export const metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
     template: '%s | Mr Mallorca Golf',
-    default: 'Golf Days in Mallorca | Mr Mallorca Golf',
+    default: 'Mallorca Golf Trip Planning | Mr Mallorca Golf',
   },
-  description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play Son Gual, Alcanada and more, with every detail arranged.',
-  keywords: ['golf Mallorca', 'Mallorca golf courses', 'play golf Mallorca', 'PGA professional Mallorca', 'Son Gual golf', 'Alcanada golf', 'Majorca golf', 'golf holiday Mallorca', 'on-course coaching Mallorca', 'golf concierge Mallorca'],
+  description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Build itineraries, compare courses, and add a private Play With A Pro day where it helps.',
+  keywords: ['golf Mallorca', 'Mallorca golf trip', 'Mallorca golf itinerary', 'Mallorca golf courses', 'play golf Mallorca', 'PGA professional Mallorca', 'Son Gual golf', 'Alcanada golf', 'Majorca golf', 'golf holiday Mallorca', 'golf concierge Mallorca'],
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: SITE_ORIGIN,
     siteName: 'Mr Mallorca Golf',
-    title: 'Golf Days in Mallorca | Mr Mallorca Golf',
-    description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths. Play Son Gual, Alcanada and more, with every detail arranged.',
+    title: 'Mallorca Golf Trip Planning | Mr Mallorca Golf',
+    description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Build itineraries, compare courses, and add a private Play With A Pro day where it helps.',
     images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Golf Days in Mallorca | Mr Mallorca Golf',
-    description: 'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths.',
+    title: 'Mallorca Golf Trip Planning | Mr Mallorca Golf',
+    description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths.',
     images: [DEFAULT_SOCIAL_IMAGE.url],
   },
   robots: {
@@ -68,7 +68,7 @@ const PERSON_SCHEMA = {
   '@type': 'Person',
   name: 'Andy Griffiths',
   jobTitle: 'PGA Advanced Professional',
-  description: 'UK PGA Advanced Professional, Trackman Master, and golf coach with 18 years experience across three continents. Now offering private play-with-a-pro experiences and on-course coaching in Mallorca, Spain.',
+  description: 'UK PGA Advanced Professional, Trackman Master, and Mallorca-based golf trip planner with 18 years coaching experience across three continents.',
   url: `${SITE_ORIGIN}/about`,
   image: DEFAULT_SOCIAL_IMAGE.url,
   sameAs: [
@@ -87,7 +87,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'SportsActivityLocation',
   name: 'Mr Mallorca Golf',
-  description: 'Private play-with-a-pro golf experiences and on-course coaching in Mallorca, Spain, led by PGA Advanced Professional Andy Griffiths.',
+  description: 'Mallorca golf trip planning, course guidance, and premium Play With A Pro add-ons led by PGA Advanced Professional Andy Griffiths.',
   url: SITE_ORIGIN,
   email: 'andy@mrmallorcagolf.com',
   telephone: '+34624466702',
@@ -115,7 +115,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Golf Experiences',
+    name: 'Mallorca Golf Trip Planning',
     itemListElement: getStructuredOfferCatalog(),
   },
 }
@@ -129,7 +129,7 @@ const FAQ_SCHEMA = {
       name: "What's included in a day with Andy?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Andy's day rate covers his time and coaching for the full round. Green fee, buggy, and lunch are your own costs, confirmed separately before the day. Tee time and lunch reservation are arranged by Andy. You play alongside him for 18 holes - strategy, pressure situations, real-course decisions throughout. Post-round debrief included.",
+        text: "A Play With A Pro day is an optional premium add-on inside a wider Mallorca golf trip. Andy's day rate covers his time and coaching for the full round. Green fee, buggy, and lunch are confirmed separately before the day.",
       },
     },
     {
@@ -145,7 +145,7 @@ const FAQ_SCHEMA = {
       name: 'Why choose this over booking a tee time myself?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You get insight into what calculations go into each shot—not just being told to swing better. Real-course strategy: reading greens, managing risk, pressure. A PGA Advanced Professional with 18 years\' experience playing alongside you. Course selection matched to your game. You discover your own ceiling.',
+        text: 'The main value is course and itinerary judgment before you book: which courses suit your group, where to base yourself, when to add a premium tee time, and whether a hosted Play With A Pro day belongs in the trip.',
       },
     },
     {
@@ -153,7 +153,7 @@ const FAQ_SCHEMA = {
       name: 'Can I book multiple days or customise the trip?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Yes. Multi-day trips cover two or three consecutive days across Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, and spa access. Build your golf trip around how you actually want to play. Get in touch with your dates and we'll plan it together.",
+        text: 'Yes. Start with the itinerary planner, then Andy can help refine the course mix, travel rhythm, transfers, dining, club hire, and any hosted golf day that improves the trip.',
       },
     },
     {

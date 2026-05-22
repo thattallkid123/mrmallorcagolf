@@ -3,40 +3,16 @@ import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import CareerStrip from '../../components/CareerStrip'
+
+const CREDENTIAL_LOGOS = [
+  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
+  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
+  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
+  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
+]
 import WinnersProofStrip from '../../components/WinnersProofStrip'
 import { getHomeContent } from '../../lib/homepage-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
-
-const ABOUT_PAGE_LINKS = {
-  en: {
-    play: 'See the private golf day',
-    courses: 'Explore Mallorca golf courses',
-  },
-  de: {
-    play: 'Privaten Golftag ansehen',
-    courses: 'Golfplaetze auf Mallorca ansehen',
-  },
-  es: {
-    play: 'Ver el dia privado de golf',
-    courses: 'Ver campos de golf en Mallorca',
-  },
-  fr: {
-    play: 'Voir la journee golf privee',
-    courses: 'Voir les parcours de Majorque',
-  },
-  nl: {
-    play: 'Bekijk de privegolfdag',
-    courses: 'Bekijk golfbanen op Mallorca',
-  },
-  sv: {
-    play: 'Se den privata golfdagen',
-    courses: 'Se golfbanor pa Mallorca',
-  },
-  zh: {
-    play: 'See the private golf day',
-    courses: 'Explore Mallorca golf courses',
-  },
-}
 
 const WINNER_PROOF_IMAGES = [
   { src: '/images/winners/01f43146e7bbd479cd809b6daabd9b105b0008ca18.jpg', alt: 'Junior tournament winners with trophies after coaching with Andy', position: 'center 42%' },
@@ -109,11 +85,10 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
   const titleLines = Array.isArray(content.hero.title)
     ? content.hero.title
     : String(content.hero.title).split('\n')
-  const pageLinks = ABOUT_PAGE_LINKS[locale] || ABOUT_PAGE_LINKS.en
 
   return (
     <>
-      <link rel="preload" as="image" href="/images/about-secondary.webp" />
+      <link rel="preload" as="image" href="/images/hero-main.webp" />
       <PageLayout lang={locale}>
         <JsonLd data={buildAboutPageSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale)} />
@@ -124,7 +99,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
           style={{
             minHeight: '100vh',
             backgroundImage:
-              'linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%), url(/images/about-secondary.webp)',
+              'linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%), url(/images/hero-main.webp)',
             backgroundSize: 'auto, auto, cover',
             backgroundPosition: 'center, center, center 80%',
           }}
@@ -152,6 +127,23 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
           </div>
         </header>
 
+        <section className="cred-logo-bar">
+          <div className="cred-logo-bar__logos">
+            {CREDENTIAL_LOGOS.map((logo) => (
+              <div className="cred-logo-bar__item" key={logo.name}>
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  className="cred-logo-bar__img"
+                  quality={90}
+                  sizes="(max-width: 700px) 45vw, 238px"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
         <div className="story">
           <main className="story__main">
             {content.chapters.map((chapter) => (
@@ -187,9 +179,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
               />
             </div>
             <div className="creds reveal">
-              <p className="story__summary">
-                Andy Griffiths is a PGA Advanced Professional who spent eleven years at the top of coaching in China, becoming the country's first Trackman Master, coaching national team players, and building a following of hundreds of millions of views on Douyin. Before that: Pebble Beach, The Open Championship, Evian. He moved to Mallorca in March 2025 to build something of his own. He plays the island's best courses most weeks and has opinions about all of them.
-              </p>
+              <p className="story__summary">{content.summary}</p>
               <p className="creds__label">{content.credentialsLabel}</p>
               <ul className="cred-list">
                 {content.credentials.map((credential) => (
@@ -214,25 +204,12 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
                 ))}
               </ul>
             </div>
-            <div className="sidebar-cta reveal">
-              <h3>{content.sidebarCta.title}</h3>
-              <p>{content.sidebarCta.body}</p>
-              <Link href={content.sidebarCta.href} className="sidebar-cta__btn">
-                {content.sidebarCta.button}
-              </Link>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1rem' }}>
-                <Link href={buildLocalePath('/play-with-a-pro', locale)} style={{ color: 'var(--gold)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                  {pageLinks.play}
-                </Link>
-                <Link href={buildLocalePath('/golf-courses', locale)} style={{ color: 'var(--gold)', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                  {pageLinks.courses}
-                </Link>
-              </div>
-            </div>
           </aside>
         </div>
 
-        {/* Proof of work: winners collage + testimonial */}
+        <CareerStrip {...(content.careerStripProps || careerStripProps)} />
+
+        {/* Proof of work: winners collage */}
         <section className="testimonials">
           <div className="testimonials__header reveal">
             <p className="eyebrow eyebrow--gold">{home.winners.eyebrow}</p>
@@ -244,15 +221,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             </p>
           </div>
           <WinnersProofStrip images={WINNER_PROOF_IMAGES} />
-          <div className="testimonials__grid" style={{ marginTop: 2 }}>
-            <div className="testimonial reveal" style={{ flex: '1 1 auto', maxWidth: 1100, margin: '0 auto' }}>
-              <p>{home.winners.testimonial}</p>
-              <span className="testimonial__author">- {home.winners.attribution}</span>
-            </div>
-          </div>
         </section>
-
-        <CareerStrip {...(content.careerStripProps || careerStripProps)} />
 
         <section className="cta-final">
           <div className="cta-final__left reveal">

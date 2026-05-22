@@ -29,10 +29,6 @@ export async function POST(request) {
     )
   }
 
-  if (!process.env.RESEND_API_KEY) {
-    return Response.json({ ok: false, error: 'Email service is not configured.' }, { status: 500 })
-  }
-
   try {
     const payload = await request.json()
 
@@ -55,6 +51,10 @@ export async function POST(request) {
         { ok: false, error: 'Please provide your first name, last name, and a valid email address.' },
         { status: 400 },
       )
+    }
+
+    if (!process.env.RESEND_API_KEY) {
+      return Response.json({ ok: false, error: 'Email service is not configured.' }, { status: 500 })
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY)

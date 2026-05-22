@@ -66,4 +66,16 @@ CODEX-HANDOVER.md
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.vercel
+
+# browser profile & temp artifacts
+.edge-qa-profile-*
+.next-dev-*.log
+.next-start-*.log
+~$*
+
+# screenshots & handover files (use Drive instead)
+*-desktop.png
+*-mobile.png
+HANDOVER-*.md
+
+.env*.local

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MMG Cheat Sheet</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f1eb;
+    color: #1a2a1a;
+    padding: 32px 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #4a7a4a;
+    margin-bottom: 24px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 22px 24px 20px;
+    border-left: 5px solid #ccc;
+  }
+
+  .card.green  { border-color: #3a7a3a; }
+  .card.blue   { border-color: #3a5a9a; }
+  .card.amber  { border-color: #b87a1a; }
+  .card.slate  { border-color: #5a6a7a; }
+
+  .card-label {
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .green  .card-label { color: #3a7a3a; }
+  .blue   .card-label { color: #3a5a9a; }
+  .amber  .card-label { color: #b87a1a; }
+  .slate  .card-label { color: #5a6a7a; }
+
+  .card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1.2;
+  }
+
+  .steps { list-style: none; counter-reset: s; }
+  .steps li {
+    counter-increment: s;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 9px;
+    font-size: .9rem;
+    line-height: 1.4;
+  }
+  .steps li::before {
+    content: counter(s);
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .72rem;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+  .green  .steps li::before { background: #3a7a3a; color: #fff; }
+  .blue   .steps li::before { background: #3a5a9a; color: #fff; }
+  .amber  .steps li::before { background: #b87a1a; color: #fff; }
+  .slate  .steps li::before { background: #5a6a7a; color: #fff; }
+
+  code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: .82rem;
+    background: #f0ede6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .card-note {
+    margin-top: 13px;
+    padding: 9px 12px;
+    background: #f8f6f2;
+    border-radius: 6px;
+    font-size: .8rem;
+    color: #5a5a4a;
+    line-height: 1.45;
+  }
+
+  .shortcut-badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: .78rem;
+    font-weight: 600;
+  }
+  .green .shortcut-badge  { background: #e8f4e8; color: #2a5a2a; }
+  .blue  .shortcut-badge  { background: #e8eef8; color: #2a3a6a; }
+  .amber .shortcut-badge  { background: #fdf3e3; color: #7a4a0a; }
+  .slate .shortcut-badge  { background: #edf0f3; color: #3a4a5a; }
+
+  .footer {
+    margin-top: 22px;
+    font-size: .78rem;
+    color: #8a8a7a;
+    text-align: center;
+  }
+  .footer a { color: #4a7a4a; }
+
+  @media print {
+    body { background: #fff; padding: 16px; }
+    .card { box-shadow: none; border: 1px solid #ddd; border-left: 5px solid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Mr Mallorca Golf — Quick Reference</h1>
+
+<div class="grid">
+
+  <!-- PRICING -->
+  <div class="card green">
+    <div class="card-label">Pricing changed</div>
+    <div class="card-title">Update a green fee,<br>buggy rate, or TO discount</div>
+    <ol class="steps">
+      <li>Open <strong>Google Drive → Reference →<br>MMG_COURSE_PRICING_MASTER.xlsx</strong><br><em>Phone: Sheets app · PC: Excel</em></li>
+      <li>Find the course row. Edit the cell. Save.</li>
+      <li>On PC — double-click the shortcut:<br><code>MMG - Update Pricing and Deploy</code></li>
+    </ol>
+    <div class="card-note">
+      Also exports the intel queue automatically.<br>
+      Arabella courses (yellow rows) = 15% TO discount.
+    </div>
+  </div>
+
+  <!-- INTEL -->
+  <div class="card blue">
+    <div class="card-label">Heard something useful</div>
+    <div class="card-title">Log a perk, deal, news<br>or content idea</div>
+    <ol class="steps">
+      <li>Open <strong>Google Drive → Reference →<br>MMG_COURSE_PRICING_MASTER.xlsx</strong></li>
+      <li>Go to the <strong>Course Intel</strong> tab.<br>Add a row: course · date · type · detail.</li>
+      <li>On PC — double-click the shortcut:<br><code>MMG - Update Pricing and Deploy</code><br><em>(same shortcut — it does both)</em></li>
+    </ol>
+    <div class="card-note">
+      Types: <strong>perk</strong> · <strong>deal</strong> · <strong>news</strong> · <strong>content</strong><br>
+      Queue saved to: Drive → Reference → <code>COURSE_INTEL_QUEUE.md</code>
+    </div>
+  </div>
+
+  <!-- BLOG / DEPLOY -->
+  <div class="card amber">
+    <div class="card-label">New content</div>
+    <div class="card-title">Write a blog post<br>or deploy the website</div>
+    <ol class="steps">
+      <li>Tell Claude your notes → review draft → approve.</li>
+      <li>Open terminal in <code>mrmallorcagolf-real</code>:<br><code>npm run predeploy</code><br>Fix any errors.</li>
+      <li><code>git add -A && git commit -m "…" && git push</code><br>Live in ~2 min at mrmallorcagolf.com</li>
+    </ol>
+    <div class="card-note">
+      Claude reads the brand voice + pipeline guides automatically.<br>
+      For social/Chinese content — just ask Claude.
+    </div>
+  </div>
+
+  <!-- TOOLS / BACKUP -->
+  <div class="card slate">
+    <div class="card-label">Tools &amp; maintenance</div>
+    <div class="card-title">Command menu,<br>backup &amp; monitoring</div>
+    <ol class="steps">
+      <li><strong>All mmg-tools commands:</strong><br>Double-click <code>MMG - Tools Command Menu</code><br>or in terminal: <code>.\mmg.ps1</code></li>
+      <li><strong>Backup Claude config:</strong><br>Double-click <code>Claude - Run Backup</code></li>
+      <li><strong>Weekly monitoring (Fridays):</strong><br>Open <code>MMG-MONITORING-CHECKLIST.md</code><br>in Downloads — ~15 min.</li>
+    </ol>
+    <div class="card-note">
+      mmg.ps1 commands: <code>pricing</code> · <code>intel</code> · <code>icons</code> · <code>status</code> · <code>deploy</code>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Full details → <code>MMG_OPS_GUIDE.md</code> &nbsp;·&nbsp;
+  <a href="https://mrmallorcagolf.com" target="_blank">mrmallorcagolf.com</a> &nbsp;·&nbsp;
+  <a href="https://internal.mrmallorcagolf.com" target="_blank">internal app</a>
+</div>
+
+</body>
+</html>

@@ -61,6 +61,14 @@ Never ask more than once. Never drip-feed. If the transcript answers something, 
 
 Read `MMG_BRAND_VOICE_GUIDELINES.md` before writing the first word. The self-check at the end of that doc is mandatory.
 
+**Title format — mandatory, no exceptions:**
+`[Course Name], Mallorca - A PGA Professional's Honest Review (2026)`
+Examples: "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)", "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)"
+
+**Green fee — never say "peak" unless you know it was peak.** Use the range from `golf-courses-data.js` (e.g. "€90-135") or say "€X on the day we played" if only one price is known.
+
+**Image captions — must describe what is actually in the photo.** Never use a caption that describes something not visible in the image (e.g. don't caption a non-tree-lined hole with text about tree-lined holes).
+
 Structure every review the same way:
 1. Opening hook — a specific moment from the round (not "I visited X course")
 2. First impression / setting

@@ -5,11 +5,12 @@ export const HOME_CONTENT = {
   en: {
     locale: 'en',
     hero: {
-      eyebrow: 'UK PGA Advanced Professional · Mallorca',
-      titleLines: ["Play Mallorca's Best Courses", 'with a Pro by Your Side'],
-      emphasis: '',
-      primaryCta: 'Tell Me Your Dates',
-      secondaryCta: 'What the day looks like',
+      eyebrow: 'Mallorca golf trips, built by a PGA pro',
+      titleLines: ["I'll help you build", 'the right Mallorca'],
+      emphasis: 'golf trip',
+      primaryCta: 'Plan Your Trip',
+      primaryHref: '/plan-your-trip',
+      secondaryCta: 'See the courses',
       trust: [
         'PGA Advanced Professional',
         'Trackman Master Certified',
@@ -18,38 +19,77 @@ export const HOME_CONTENT = {
       ],
     },
     intro: {
-      eyebrow: 'What sets this apart',
-      title: 'Most golf days in Mallorca start with a booking platform and end with a bill. This is more personal.',
+      eyebrow: 'What I do',
+      title: 'Two services: plan the trip completely, or plan a private day with me on the course.',
       paragraphs: [
-        'I host private golf days on the island\'s best courses, with the coaching given during the round rather than as an add-on afterwards. The golf is better, the decisions are clearer, and the whole day feels properly looked after.',
-        'Mallorca is playable every month of the year. Knowing which course suits your game, which tee times are worth it, and when the conditions are right is much of the difference between a good day and a great one.',
+        'Plan Your Trip is the planning service. I recommend the right courses for your game and group, where to base yourself, how many rounds to play, the route that makes sense, and the bookings around the golf.',
+        'Play With A Pro is the private on-course day. It can be booked on its own, or added to a planned trip when having me alongside you for 18 holes makes the trip better.',
+      ],
+      services: [
+        {
+          title: 'Plan Your Trip',
+          text: 'Courses, base, routing, tee times, buggies, rental clubs, and dining suggestions.',
+          cta: 'See planning',
+          href: '/plan-your-trip',
+        },
+        {
+          title: 'Play With A Pro',
+          text: 'A private course day with Andy. Standalone, or added to a wider trip.',
+          cta: 'See Play With A Pro',
+          href: '/play-with-a-pro',
+        },
       ],
       stats: [
         { value: 'Jan-Dec', label: 'year-round season' },
         { value: '24', label: 'courses on the island' },
         getHomepageSoloStat('en'),
-        { value: 'PGA', label: 'Advanced Professional' },
+        { value: '1', label: 'local plan before you book' },
       ],
     },
     socialProof: 'PGA Advanced Professional · Trackman Master · Pebble Beach · The Open Championship · Evian',
+    journey: {
+      eyebrow: 'Choose your route',
+      title: 'Start where you are in the planning process.',
+      items: [
+        {
+          title: 'I am planning a golf trip',
+          text: 'Start with the basic course finder, then ask me to plan the trip properly: courses, base, routing, number of rounds, bookings, and useful add-ons.',
+          cta: 'Plan Your Trip',
+          href: '/plan-your-trip',
+        },
+        {
+          title: 'I am comparing courses',
+          text: 'Read my course guide if you want honest, first-hand notes on green fees, difficulty, conditioning, scenery, and who each course actually suits.',
+          cta: 'Compare all courses',
+          href: '/golf-courses',
+        },
+        {
+          title: 'I want Andy on the course',
+          text: 'Add a private day with me to your trip: one course, 18 holes, local course management, and coaching woven into the round.',
+          cta: 'Play With A Pro',
+          href: '/play-with-a-pro',
+        },
+      ],
+    },
     how: {
-      eyebrow: 'How it works',
-      title: 'Three simple steps.',
+      eyebrow: 'How I help',
+      title: 'Plan the trip first. Add the extras where they make sense.',
+      body: 'Planning support, a private Play With A Pro day, or both.',
       steps: [
         {
           number: '01',
-          title: 'Get in touch',
-          text: "Tell me your dates, your handicap, and what you're looking for. I reply personally within 24 hours.",
+          title: 'Start with the basics',
+          text: 'Use the free tool if you want a first course shortlist. It helps you see what might suit your group before any proper planning starts.',
         },
         {
           number: '02',
-          title: 'I build your day',
-          text: 'Course recommendation, tee time, and a lunch reservation are sorted before you arrive. Green fee and lunch are your own costs, confirmed when we speak. Transport can be added if useful.',
+          title: 'I build the plan',
+          text: 'In the paid planning service, I work through the real trip decisions: base, course order, number of rounds, tee times, buggies, rental clubs, and dining.',
         },
         {
           number: '03',
-          title: 'Show up and play',
-          text: "Your job on the day is to play. Everything else is already handled.",
+          title: 'Add what improves it',
+          text: 'That might be a Play With A Pro day, better club rental, a cleaner tee-time route, or a restaurant that fits the golf day. Not everything needs adding. The right things do.',
         },
       ],
     },
@@ -133,16 +173,34 @@ export const HOME_CONTENT = {
       ],
     },
     experience: {
-      eyebrow: 'The experience',
-      title: 'Most golf days in Mallorca are a tee time and a wave goodbye.',
+      eyebrow: 'Why trust the plan',
+      title: 'I am not writing from a desk. I am on these courses.',
       paragraphs: [
-        'I spent over a decade coaching in China, where clients expected genuine improvement, not empty encouragement. Before that I coached at Pebble Beach, The Open Championship, and Evian.',
-        "That background shapes every round I host. We play one of Mallorca's best courses together, and the coaching arrives where it matters: on the tee, into the wind, around the greens, and over the shots that usually cost people the score they wanted.",
-        'Course, tee time, and a lunch reservation are sorted before you arrive. Green fee and lunch are your own costs, confirmed when we speak. Buggy, transport, and club hire can be added. Your only job on the day is to play.',
+        'I moved to Mallorca to build this properly. I play the courses, track the conditions, talk to the people running them, and keep notes on what actually matters to visiting golfers.',
+        'A good plan is not just "Son Gual plus Alcanada". It is where you stay, how far you want to drive, which day deserves the premium green fee, which course suits your group, and where a rest day is smarter than another early tee time.',
+        'My coaching background helps, but this site is not only a coaching site. It is here to make Mallorca golf easier to plan, better to play, and more personal once you arrive.',
       ],
-      button: 'See pricing and full details',
-      dateCta: 'Tell Me Your Dates',
-      features: [],
+      button: 'See the Play With A Pro add-on',
+      dateCta: 'Plan Your Trip',
+      features: [
+        { title: 'Course selection', text: 'I match the course mix to your group, not to a generic top-10 list.' },
+        { title: 'Trip logic', text: 'Base, travel time, tee-time rhythm, rest days, lunch, transfers, and budget all matter.' },
+        { title: 'Hosted course day', text: 'When you want the day to be more than a tee time, I can join you for 18 holes and coach the decisions as they happen.' },
+        { title: 'Local judgement', text: 'Course fit, access, value, driving time, and seasonal conditions change. I keep the plan grounded in what works on the island.' },
+      ],
+    },
+    credentials: {
+      eyebrow: 'Meet Andy',
+      title: 'The person behind the recommendations.',
+      intro: 'I am a UK PGA Advanced Professional based in Mallorca. Before building Mr Mallorca Golf I coached and worked across some very different golf environments: elite coaching in China, Pebble Beach, Doral, Evian, The Open, and a season at sea with Costa Cruises.',
+      items: [
+        { title: 'PGA Advanced Professional', detail: 'UK PGA qualification — the highest standard in British golf coaching — with more than 15,000 hours on the range and course.' },
+        { title: 'Trackman Master', detail: 'The first Trackman Master in China. Data-driven coaching built on the technology that Tour coaches use.' },
+        { title: 'TPI Level 3', detail: 'Titleist Performance Institute certification — understanding how the body moves and how it limits or unlocks the swing.' },
+        { title: 'US Kids Top 50 Coach', detail: 'Recognised for junior development and long-term player development environments.' },
+        { title: '11 years in Shanghai', detail: 'National team players, hundreds of millions of coaching views on Douyin, and real elite coaching environments.' },
+        { title: 'World-class venues', detail: 'Pebble Beach, Doral, Evian, The Open Championship, Costa Cruises, and now the courses of Mallorca.' },
+      ],
     },
     quote: {
       text: "After just 18 holes together, I've discovered a new ceiling to my potential.",
@@ -157,9 +215,9 @@ export const HOME_CONTENT = {
       attribution: 'Adam',
     },
     packages: {
-      eyebrow: 'Experiences & Packages',
-      title: 'Choose Your Day',
-      body: 'All are private and hosted by me. For solo and group days, green fee and lunch are your own costs, confirmed when we speak. The Signature Experience is all inclusive.',
+      eyebrow: 'Trip options',
+      title: 'Choose the level of help.',
+      body: 'There are two main services: professional trip planning, and Play With A Pro. The private course day can be booked on its own or added to the planning service.',
       items: [
         {
           eyebrow: 'A Day With Andy',
@@ -168,14 +226,14 @@ export const HOME_CONTENT = {
           features: [
             'Course matched to your game and handicap',
             'Tee time secured and fully handled',
-            'Pre-round briefing and warm-up',
             '18 holes with Andy',
             'On-course coaching during the round',
-            'Post-round debrief',
+            'Post-round debrief and next steps',
           ],
-          note: "Andy's day rate. Green fee, lunch reservation, buggy, and club hire confirmed separately.",
+          note: "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
           cta: 'Enquire →',
           href: '/contact',
+          featured: false,
         },
         {
           eyebrow: 'A Day With Andy',
@@ -185,37 +243,52 @@ export const HOME_CONTENT = {
             'Up to 3 players, one fixed day rate for Andy',
             'Course matched to your group',
             'Tee time secured and fully handled',
-            'Pre-round briefing and warm-up',
             '18 holes with Andy',
             'On-course coaching during the round',
           ],
-          note: "Andy's fixed day rate for 2 or 3 golfers. Green fee, lunch reservation, buggy, and club hire confirmed separately.",
+          note: "Andy's fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
           cta: 'Enquire →',
           href: '/contact',
           featured: true,
         },
         {
           eyebrow: 'The Signature Experience',
-          name: 'Full Day',
+          name: 'Hosted Golf Journey',
           price: '€3,000+',
           features: [
-            'Course, tee time, and coaching',
-            'Michelin-starred lunch or private chef booking',
-            'Videographer to capture highlights and produce a memento video',
-            'Spa, massage, and time to decompress properly post-golf',
-            'Private transfers throughout the day',
-            'Caddy and premium club hire options',
+            'Course, tee time, and hosted golf day',
+            'Lunch, private chef, or restaurant booking',
+            'Private transfers and recovery time',
+            'Caddy, videographer, and premium club hire options',
           ],
-          note: 'Bespoke. Andy coordinates the full itinerary with you in advance — tell us what you want from the day.',
+          note: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons can be planned around you before the day.',
           cta: 'Enquire →',
           href: '/contact',
         },
+        {
+          eyebrow: 'Trip Planning',
+          name: 'Plan Your Trip',
+          price: 'Price on enquiry',
+          features: [
+            'No searching apps or websites — tee times handled for you',
+            'Courses picked to match your group, level, and budget',
+            'Routing and number of rounds planned around your schedule',
+            'Buggies, club hire, and transfers all arranged',
+            'Restaurant and dining suggestions included',
+            'One person to contact for the whole trip',
+          ],
+          note: '5% management fee applies to green fees and bookings. Confirmed after your first conversation.',
+          cta: 'Enquire →',
+          href: '/contact',
+          featured: true,
+        },
       ],
       multiDay: {
-        eyebrow: 'Looking for something bigger?',
-        title: 'A multi-day golf journey.',
-        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, spa access, additional activities. From €3,000. Get in touch with your dates.',
-        cta: 'Enquire about a multi-day experience',
+        eyebrow: 'Not sure where to start?',
+        title: 'Start with Plan Your Trip.',
+        body: 'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
+        cta: 'Plan Your Trip',
+        href: '/plan-your-trip',
       },
     },
     faq: {
@@ -233,7 +306,7 @@ export const HOME_CONTENT = {
         },
         {
           q: 'How do I book?',
-          a: "Get in touch. Tell me your dates and what you're looking for, and I come back personally within 24 hours. No booking systems. No waiting.",
+          a: 'Start with the itinerary planner if you are still planning. If you already know your dates and want me involved, send an enquiry and I will come back personally within 24 hours.',
         },
         {
           q: 'Is this suitable for a group?',
@@ -246,11 +319,11 @@ export const HOME_CONTENT = {
       ],
     },
     finalCta: {
-      eyebrow: 'Ready to play Mallorca properly?',
-      title: "Get in touch. I'll sort the rest.",
-      body: "Tell me your dates, your handicap, and what you want from the day. I'll come back with a recommendation personally within 24 hours.",
-      quote: "You'll play better golf, and you'll know why.",
-      primaryCta: 'Book Your Day',
+      eyebrow: 'Ready to plan it properly?',
+      title: "Tell me the trip you want. I'll help build it properly.",
+      body: 'Start with your dates, group size, handicap range, budget, and the kind of golf you want. I will help you turn that into a Mallorca golf plan that works on the ground.',
+      quote: 'The right course on the right day beats a famous name in the wrong slot.',
+      primaryCta: 'Plan Your Trip',
       secondaryCta: 'WhatsApp',
     },
   },
@@ -1299,15 +1372,15 @@ const HOME_PACKAGE_ITEMS = {
       eyebrow: 'A Day With Andy',
       name: 'Solo',
       features: [
-        'Course matched to your game',
-        'Tee time secured',
-        'Pre-round briefing and warm-up',
+        'Course matched to your game and handicap',
+        'Tee time secured and fully handled',
         '18 holes with Andy',
         'On-course coaching during the round',
         'Post-round debrief',
       ],
-      note: "Andy's day rate. Green fees confirmed separately when we speak.",
-      cta: 'See pricing',
+      note: "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+      cta: 'Enquire',
+      href: '/contact',
     },
     {
       tier: 'Group',
@@ -1317,27 +1390,46 @@ const HOME_PACKAGE_ITEMS = {
       features: [
         'Up to 3 players, one fixed day rate for Andy',
         'Course matched to your group',
-        'Tee time secured',
-        'Pre-round briefing and warm-up',
+        'Tee time secured and fully handled',
         '18 holes with Andy',
         'On-course coaching during the round',
       ],
-      note: "Andy's fixed day rate for 2 or 3 golfers. Green fees confirmed separately when we speak.",
-      cta: 'See pricing',
+      note: "Andy's fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+      cta: 'Enquire',
+      href: '/contact',
     },
     {
       tier: 'The Signature Experience',
       eyebrow: 'The Signature Experience',
-      name: 'Full Day',
+      name: 'Hosted Golf Journey',
+      price: '€3,000+',
       features: [
-        'Course, tee time, and coaching',
-        'Andy coordinates everything and confirms the itinerary with you',
-        'Caddy, videographer, or premium club hire available as add-ons',
-        'Michelin lunch and private transfers available',
-        'Spa access and concierge support available',
+        'Course, tee time, and hosted golf day',
+        'Lunch, private chef, or restaurant booking',
+        'Private transfers and recovery time',
+        'Caddy, videographer, and premium club hire options',
       ],
-      note: 'Green fees and lunch are separate. Rental clubs, caddy, and other extras are available add-ons.',
+      note: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons can be planned around you before the day.',
       cta: 'Enquire',
+      href: '/contact',
+    },
+    {
+      tier: 'Trip Planning',
+      eyebrow: 'Trip Planning',
+      name: 'Plan Your Trip',
+      price: 'Price on enquiry',
+      featured: true,
+      features: [
+        'No searching apps or websites - tee times handled for you',
+        'Courses picked to match your group, level, and budget',
+        'Routing and number of rounds planned around your schedule',
+        'Buggies, club hire, and transfers all arranged',
+        'Restaurant and dining suggestions included',
+        'One person to contact for the whole trip',
+      ],
+      note: '5% management fee applies to green fees and bookings. Confirmed after your first conversation.',
+      cta: 'Enquire',
+      href: '/contact',
     },
   ],
   de: [
@@ -1376,6 +1468,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'Das Signature-Erlebnis',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Alles im Voraus organisiert',
         'Platz, Startzeit und Coaching',
@@ -1423,6 +1516,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'La Experiencia Signature',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Todo organizado de antemano',
         'Campo, hora de salida y coaching',
@@ -1470,6 +1564,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'The Signature Experience',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Tout organisé en amont',
         'Parcours, départ et coaching',
@@ -1517,6 +1612,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'The Signature Experience',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Alles vooraf geregeld',
         'Baan, starttijd en coaching',
@@ -1564,6 +1660,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'The Signature Experience',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         'Allt ordnat i förväg',
         'Bana, starttid och coaching',
@@ -1611,6 +1708,7 @@ const HOME_PACKAGE_ITEMS = {
       tier: 'Signature 体验',
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
+      price: '€3,000+',
       features: [
         '所有安排提前落实',
         '球场、开球时间与指导',
@@ -1622,6 +1720,206 @@ const HOME_PACKAGE_ITEMS = {
       cta: '查看价格',
     },
   ],
+}
+
+const HOME_UI_COPY = {
+  en: {
+    coursesHint: 'Swipe or scroll to browse',
+    newsletterEyebrow: 'THE NEWSLETTER',
+    newsletterTitle: 'Golf insights delivered.',
+    newsletterBody:
+      'Course conditions updated as I play them. Which tee times are worth fighting for, where the greens are running fast, and what is worth knowing before you fly. Sent every two weeks, unsubscribe whenever.',
+  },
+  de: {
+    coursesHint: 'Wischen oder scrollen, um zu schauen',
+    newsletterEyebrow: 'DER NEWSLETTER',
+    newsletterTitle: 'Golf-Einblicke direkt ins Postfach.',
+    newsletterBody:
+      'Platzbedingungen, sobald ich sie spiele. Welche Startzeiten es wert sind, wofür die Grüns schnell laufen und was Sie vor dem Abflug wissen sollten. Alle zwei Wochen, jederzeit abbestellbar.',
+  },
+  es: {
+    coursesHint: 'Deslice o haga scroll para ver más',
+    newsletterEyebrow: 'BOLETÍN',
+    newsletterTitle: 'Ideas de golf en su bandeja de entrada.',
+    newsletterBody:
+      'Condiciones actualizadas a medida que juego. Qué tee times merecen la pena, dónde ruedan rápidos los greens y qué conviene saber antes de volar. Enviado cada dos semanas, puede darse de baja cuando quiera.',
+  },
+  fr: {
+    coursesHint: 'Faites défiler ou glissez pour parcourir',
+    newsletterEyebrow: 'LA NEWSLETTER',
+    newsletterTitle: 'Des infos golf livrées régulièrement.',
+    newsletterBody:
+      'Des notes de parcours mises à jour au fil de mes parties. Les heures de départ qui valent le coup, les greens qui roulent vite et ce qu’il faut savoir avant de prendre l’avion. Toutes les deux semaines, désinscription à tout moment.',
+  },
+  nl: {
+    coursesHint: 'Veeg of scroll om te bekijken',
+    newsletterEyebrow: 'DE NIEUWSBRIEF',
+    newsletterTitle: 'Golfinzichten in uw inbox.',
+    newsletterBody:
+      'Baancondities zodra ik ze speel. Welke starttijden de moeite waard zijn, waar de greens snel lopen en wat u vóór vertrek wilt weten. Eens per twee weken, op elk moment uit te schakelen.',
+  },
+  sv: {
+    coursesHint: 'Svep eller scrolla för att bläddra',
+    newsletterEyebrow: 'NYHETSBREVET',
+    newsletterTitle: 'Golfinsikter direkt till dig.',
+    newsletterBody:
+      'Banförhållanden uppdaterade när jag spelar dem. Vilka starttider som är värda att jaga, var greenerna rullar snabbt och vad som är bra att veta innan du flyger. Varannan vecka, avregistrera när du vill.',
+  },
+  zh: {
+    coursesHint: '左右滑动或滚动浏览',
+    newsletterEyebrow: '电子简报',
+    newsletterTitle: '高尔夫洞见，定期送达。',
+    newsletterBody:
+      '我会在打球时同步更新球场状况。哪些开球时间值得争取、果岭滚速有多快、出发前哪些信息最重要。每两周发送一次，随时可退订。',
+  },
+}
+
+const HOME_EXTRA_PACKAGE_ITEM = {
+  en: {
+    tier: 'Trip Planning',
+    eyebrow: 'Trip Planning',
+    name: 'Plan Your Trip',
+    price: 'Price on enquiry',
+    featured: true,
+    features: [
+      'No searching apps or websites - tee times handled for you',
+      'Courses picked to match your group, level, and budget',
+      'Routing and number of rounds planned around your schedule',
+      'Buggies, club hire, and transfers all arranged',
+      'Restaurant and dining suggestions included',
+      'One person to contact for the whole trip',
+    ],
+    note: '5% management fee applies to green fees and bookings. Confirmed after your first conversation.',
+    cta: 'Enquire',
+    href: '/contact',
+  },
+  de: {
+    tier: 'Reiseplanung',
+    eyebrow: 'Reiseplanung',
+    name: 'Ihre Reise planen',
+    price: 'Preis auf Anfrage',
+    featured: true,
+    features: [
+      'Keine Apps oder Websites durchsuchen - Abschlagszeiten werden für Sie organisiert',
+      'Plätze passend zu Gruppe, Spielstärke und Budget',
+      'Route und Rundenzahl passend zu Ihrem Zeitplan',
+      'Buggys, Schlägerverleih und Transfers organisiert',
+      'Restaurant- und Essensvorschläge inklusive',
+      'Eine feste Ansprechperson für die gesamte Reise',
+    ],
+    note: '5 % Verwaltungsgebühr auf Greenfees und Buchungen. Wird nach dem ersten Gespräch bestätigt.',
+    cta: 'Anfragen',
+    href: '/de/contact',
+  },
+  es: {
+    tier: 'Planificación del viaje',
+    eyebrow: 'Planificación del viaje',
+    name: 'Planifique su viaje',
+    price: 'Precio a consultar',
+    featured: true,
+    features: [
+      'Sin buscar en apps ni webs - yo me encargo de los tee times',
+      'Campos elegidos según su grupo, nivel y presupuesto',
+      'Ruta y número de vueltas planificados según su calendario',
+      'Buggies, alquiler de palos y traslados organizados',
+      'Sugerencias de restaurantes y comidas incluidas',
+      'Una sola persona para todo el viaje',
+    ],
+    note: 'Se aplica una comisión de gestión del 5 % sobre green fees y reservas. Se confirma tras la primera conversación.',
+    cta: 'Consultar',
+    href: '/es/contact',
+  },
+  fr: {
+    tier: 'Planification du séjour',
+    eyebrow: 'Planification du séjour',
+    name: 'Planifiez votre séjour',
+    price: 'Prix sur demande',
+    featured: true,
+    features: [
+      'Pas d’apps ni de sites à chercher - les heures de départ sont gérées pour vous',
+      'Parcours choisis selon votre groupe, votre niveau et votre budget',
+      'Itinéraire et nombre de tours pensés selon votre planning',
+      'Buggies, location de clubs et transferts organisés',
+      'Suggestions de restaurants et de repas incluses',
+      'Une seule personne à contacter pour tout le voyage',
+    ],
+    note: 'Frais de gestion de 5 % sur les green fees et les réservations. Confirmé après votre premier échange.',
+    cta: 'Demander',
+    href: '/fr/contact',
+  },
+  nl: {
+    tier: 'Reisplanning',
+    eyebrow: 'Reisplanning',
+    name: 'Plan uw reis',
+    price: 'Prijs op aanvraag',
+    featured: true,
+    features: [
+      'Geen apps of websites zoeken - tee times worden voor u geregeld',
+      'Baankeuze afgestemd op uw groep, niveau en budget',
+      'Route en aantal rondes gepland rond uw schema',
+      'Buggies, clubhuur en transfers geregeld',
+      'Restaurant- en diningtips inbegrepen',
+      'Eén aanspreekpunt voor de hele reis',
+    ],
+    note: 'Er geldt een beheersfee van 5 % op greenfees en boekingen. Bevestigd na het eerste gesprek.',
+    cta: 'Aanvragen',
+    href: '/nl/contact',
+  },
+  sv: {
+    tier: 'Reseplanering',
+    eyebrow: 'Reseplanering',
+    name: 'Planera din resa',
+    price: 'Pris på förfrågan',
+    featured: true,
+    features: [
+      'Inga appar eller webbplatser att leta i - tee times ordnas åt dig',
+      'Banor valda efter grupp, nivå och budget',
+      'Rutt och antal rundor planerade efter ditt schema',
+      'Golfbil, hyrklubbor och transfers ordnade',
+      'Restaurang- och matförslag ingår',
+      'En person att kontakta för hela resan',
+    ],
+    note: '5 % administrationsavgift tillkommer på greenfee och bokningar. Bekräftas efter ert första samtal.',
+    cta: 'Förfrågan',
+    href: '/sv/contact',
+  },
+  zh: {
+    tier: '行程规划',
+    eyebrow: '行程规划',
+    name: '规划您的行程',
+    price: '咨询定价',
+    featured: true,
+    features: [
+      '不用再翻应用或网站 - 开球时间我来安排',
+      '根据您的团队、水平和预算挑选球场',
+      '按您的行程安排路线和打球轮次',
+      '球车、球杆租赁和接送全部协调',
+      '附带餐厅与用餐建议',
+      '整个行程只联系一个人',
+    ],
+    note: '果岭费和预订需收取 5% 管理费。第一次沟通后确认。',
+    cta: '咨询',
+    href: '/zh/contact',
+  },
+}
+
+function normalizeHomePackageItems(locale, items = []) {
+  const englishItems = HOME_PACKAGE_ITEMS.en
+  const localizedItems = []
+
+  for (let index = 0; index < englishItems.length; index += 1) {
+    const englishItem = englishItems[index]
+    const item = items[index] || (index === englishItems.length - 1 ? HOME_EXTRA_PACKAGE_ITEM[locale] : englishItem)
+
+    localizedItems.push({
+      ...item,
+      features: Array.isArray(item.features)
+        ? item.features.slice(0, englishItem.features.length)
+        : item.features,
+    })
+  }
+
+  return localizedItems
 }
 
 const HOME_FEATURED_BADGE_MAP = {
@@ -1836,14 +2134,15 @@ export function getHomeContent(locale = 'en') {
   const packages = content.packages
     ? {
         ...content.packages,
-        items: localizedPackageItems.map((item) => ({
+        items: normalizeHomePackageItems(locale, localizedPackageItems).map((item, index) => ({
           ...item,
+          href: item.href || content.packages.items?.[index]?.href || (locale === 'en' ? '/contact' : `/${locale}/contact`),
           price:
             item.tier === soloOffer.shortLabel
               ? soloOffer.priceDisplay
               : item.tier === groupOffer.shortLabel
                 ? groupOffer.priceDisplay
-                : null,
+                : item.price ?? null,
         })),
         multiDay: content.packages.multiDay
           ? {
@@ -1857,6 +2156,7 @@ export function getHomeContent(locale = 'en') {
   if (locale === 'en') {
     return {
       ...content,
+      ui: HOME_UI_COPY.en,
       packages,
       courses: content.courses
         ? {
@@ -1869,6 +2169,7 @@ export function getHomeContent(locale = 'en') {
 
   return {
     ...content,
+    ui: HOME_UI_COPY[locale] || HOME_UI_COPY.en,
     experience: content.experience
       ? {
           ...content.experience,

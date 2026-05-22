@@ -10,9 +10,9 @@ export const DEFAULT_SOCIAL_IMAGE = {
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf Trips & Private Golf Days | Mr Mallorca Golf',
+    title: 'Mallorca Golf Trip Planning & Itineraries | Mr Mallorca Golf',
     description:
-      'Plan your Mallorca golf trip with PGA Advanced Professional Andy Griffiths. Course recommendations, itineraries, and private golf days from €495. Son Gual, Alcanada and more.',
+      'Build a better Mallorca golf trip with PGA Advanced Professional Andy Griffiths. Course planning, itineraries, local recommendations, and Play With A Pro add-ons.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro | Mr Mallorca Golf',
@@ -200,7 +200,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Private Golf Experiences in Mallorca | PGA Pro Andy Griffiths',
+    title: 'Play With A Pro in Mallorca | Private Golf Day',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {
@@ -231,9 +231,9 @@ const PLAY_WITH_A_PRO_METADATA = {
 
 const CONTACT_METADATA = {
   en: {
-    title: 'Enquire About a Private Golf Day in Mallorca | Mr Mallorca Golf',
+    title: 'Plan Your Mallorca Golf Trip | Contact Mr Mallorca Golf',
     description:
-      'Enquire about a private golf day in Mallorca with Andy Griffiths. Every enquiry is answered personally, usually within a few hours and always within 24.',
+      'Send your Mallorca golf trip dates, group details, and course ideas to Andy Griffiths for itinerary help, booking direction, or a Play With A Pro add-on.',
   },
   de: {
     title: 'Kontakt - Mr Mallorca Golf | Andy Griffiths UK PGA Professional',
@@ -264,6 +264,52 @@ const CONTACT_METADATA = {
     title: '联系我们 - Mr Mallorca Golf | Andy Griffiths PGA 职业教练',
     description:
       '预约马略卡私人高尔夫球日。Andy Griffiths 亲自回复每一条咨询，24 小时内必达。',
+  },
+}
+
+const ITINERARY_METADATA = {
+  en: {
+    title: 'Mallorca Golf Itinerary Planner | Mr Mallorca Golf',
+    description:
+      'Build a first-draft Mallorca golf itinerary with Andy Griffiths: dates, group size, course mix, region, budget, and Play With A Pro add-ons.',
+  },
+}
+
+const PLAN_YOUR_TRIP_METADATA = {
+  en: {
+    title: 'Plan Your Mallorca Golf Trip | Mr Mallorca Golf',
+    description:
+      'Use the free course finder as a starting point, or ask Andy to plan your Mallorca golf trip properly: courses, base, routing, tee times, buggies, rentals, and dining.',
+  },
+  de: {
+    title: 'Mallorca Golfreise planen | Mr Mallorca Golf',
+    description:
+      'Nutzen Sie den kostenlosen Platzfinder als Startpunkt oder lassen Sie Andy Ihre Mallorca Golfreise sauber planen: Plätze, Basis, Route, Startzeiten, Buggys, Leihschläger und Restaurants.',
+  },
+  es: {
+    title: 'Planifique su viaje de golf a Mallorca | Mr Mallorca Golf',
+    description:
+      'Use el buscador gratuito de campos como punto de partida o deje que Andy planifique su viaje de golf a Mallorca: campos, base, ruta, tee times, buggies, alquiler de palos y restaurantes.',
+  },
+  fr: {
+    title: 'Planifiez votre séjour golf à Majorque | Mr Mallorca Golf',
+    description:
+      'Utilisez la sélection gratuite de parcours comme point de départ, ou demandez à Andy de planifier correctement votre séjour golf à Majorque : parcours, base, itinéraire, heures de départ, buggys, location de clubs et repas.',
+  },
+  nl: {
+    title: 'Plan uw golfreis naar Mallorca | Mr Mallorca Golf',
+    description:
+      'Gebruik de gratis banenzoeker als startpunt, of laat Andy uw golfreis naar Mallorca goed plannen: banen, basis, route, starttijden, buggy’s, clubhuur en restaurants.',
+  },
+  sv: {
+    title: 'Planera din golfresa till Mallorca | Mr Mallorca Golf',
+    description:
+      'Använd den fria banfindern som utgångspunkt, eller låt Andy planera din golfresa till Mallorca ordentligt: banor, bas, rutt, starttider, golfbilar, klubbor och mat.',
+  },
+  zh: {
+    title: '规划您的马略卡高尔夫之旅 | Mr Mallorca Golf',
+    description:
+      '可先用免费的球场筛选器做起点，或者直接让 Andy 为您认真规划马略卡高尔夫之旅：球场、住宿基点、路线、开球时间、球车、球杆租赁和餐饮。',
   },
 }
 
@@ -440,6 +486,18 @@ export function buildContactMetadata(locale = 'en') {
     locale === 'en' ? '/contact' : `/${locale}/contact`,
     locale,
     CONTACT_METADATA[locale] || CONTACT_METADATA.en,
+  )
+}
+
+export function buildItineraryMetadata() {
+  return buildPageMetadata('/itinerary', 'en', ITINERARY_METADATA.en)
+}
+
+export function buildPlanYourTripMetadata(locale = 'en') {
+  return buildPageMetadata(
+    locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`,
+    locale,
+    PLAN_YOUR_TRIP_METADATA[locale] || PLAN_YOUR_TRIP_METADATA.en,
   )
 }
 

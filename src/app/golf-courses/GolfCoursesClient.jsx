@@ -12,7 +12,6 @@ import {
 } from '../../lib/golf-courses-translations'
 import {
   getCoursePriceMeta,
-  getShortCourseId,
   slugifyCourseName,
 } from '../../lib/golf-courses-helpers'
 
@@ -88,51 +87,6 @@ const SORT_UI = {
     price: '价格',
     nearest: '距我最近',
     coursesWord: '个球场',
-  },
-}
-
-const SIDEBAR_LINKS = {
-  en: {
-    title: 'Plan your Mallorca golf trip',
-    guides: 'Read all guides',
-    ranking: 'Best golf courses ranking',
-    planning: 'Trip planning guide',
-  },
-  de: {
-    title: 'Mallorca-Golfreise planen',
-    guides: 'Alle Ratgeber lesen',
-    ranking: 'Ranking der besten Plaetze',
-    planning: 'Reiseplanungs-Ratgeber',
-  },
-  es: {
-    title: 'Planifique su viaje de golf',
-    guides: 'Leer todas las guias',
-    ranking: 'Ranking de mejores campos',
-    planning: 'Guia para planificar el viaje',
-  },
-  fr: {
-    title: 'Planifier votre sejour golf',
-    guides: 'Lire tous les guides',
-    ranking: 'Classement des meilleurs parcours',
-    planning: 'Guide de planification',
-  },
-  nl: {
-    title: 'Plan uw golfreis naar Mallorca',
-    guides: 'Lees alle gidsen',
-    ranking: 'Ranking beste banen',
-    planning: 'Reisplanningsgids',
-  },
-  sv: {
-    title: 'Planera din golfresa till Mallorca',
-    guides: 'Las alla guider',
-    ranking: 'Ranking over basta banor',
-    planning: 'Guide for reseplanering',
-  },
-  zh: {
-    title: '规划您的马略卡高尔夫之旅',
-    guides: '阅读全部指南',
-    ranking: '最佳球场排名',
-    planning: '行程规划指南',
   },
 }
 
@@ -289,7 +243,6 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Bester Platz Spaniens 2025',
     'European Tour Host': 'European-Tour-Austragungsort',
     'Members + Arranged Access': 'Mitglieder + Zugang auf Anfrage',
-    'Played by Andy': 'Von Andy gespielt',
   },
   es: {
     '\u2605 Expert Pick': '\u2605 Seleccion personal',
@@ -297,7 +250,6 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Mejor campo de Espana 2025',
     'European Tour Host': 'Sede del European Tour',
     'Members + Arranged Access': 'Socios + acceso organizado',
-    'Played by Andy': 'Jugado por Andy',
   },
   fr: {
     '\u2605 Expert Pick': '\u2605 Choix d expert',
@@ -305,7 +257,6 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Meilleur d Espagne 2025',
     'European Tour Host': 'Hote de l European Tour',
     'Members + Arranged Access': 'Membres + acces organise',
-    'Played by Andy': 'Joue par Andy',
   },
   nl: {
     '\u2605 Expert Pick': '\u2605 Expertkeuze',
@@ -313,7 +264,6 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Beste van Spanje 2025',
     'European Tour Host': 'European Tour-host',
     'Members + Arranged Access': 'Leden + toegang op afspraak',
-    'Played by Andy': 'Gespeeld door Andy',
   },
   sv: {
     '\u2605 Expert Pick': '\u2605 Expertval',
@@ -321,7 +271,6 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': 'Bast i Spanien 2025',
     'European Tour Host': 'Vard for European Tour',
     'Members + Arranged Access': 'Medlemmar + ordnad tillgang',
-    'Played by Andy': 'Spelad av Andy',
   },
   zh: {
     '\u2605 Expert Pick': '\u2605 Zhuan jia tui jian',
@@ -329,7 +278,6 @@ const COURSE_BADGE_TRANSLATIONS = {
     'Best in Spain 2025': '2025 Xi ban ya zui jia',
     'European Tour Host': 'European Tour sai shi qiu chang',
     'Members + Arranged Access': 'Hui yuan zhi + ke xie zhu an pai',
-    'Played by Andy': 'Andy yi da guo',
   },
 }
 
@@ -552,7 +500,8 @@ function CourseCard({ c, lang = 'en' }) {
             src={c.img}
             alt={courseName}
             fill
-            sizes="(max-width: 768px) 100vw, 45vw"
+            quality={88}
+            sizes="(max-width: 768px) 100vw, 620px"
             className="course__image"
           />
         </div>
@@ -572,7 +521,6 @@ function CourseCard({ c, lang = 'en' }) {
           )}
           <h3 className="course__name">
             {courseName}
-            {meta.dynamic ? <span className="course__dynamic-mark" aria-hidden="true"> *</span> : null}
           </h3>
           <p className="course__location">{locationText}</p>
           <div className="course__rating-row" aria-label={`Rated ${ratingValue} out of 5`}>
@@ -592,7 +540,8 @@ function CourseCard({ c, lang = 'en' }) {
               src={c.img}
               alt={courseName}
               fill
-              sizes="(max-width: 768px) 100vw, 45vw"
+              quality={88}
+              sizes="(max-width: 768px) 100vw, 620px"
               className="course__image"
             />
           </div>
@@ -636,10 +585,6 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   const [isLocating, setIsLocating] = useState(false)
   const contactHref = buildLocalePath('/contact', lang)
   const experiencesHref = buildLocalePath('/play-with-a-pro', lang)
-  const guidesHref = buildLocalePath('/guides', lang)
-  const bestCoursesGuideHref = buildLocalePath('/guides/best-golf-courses-mallorca', lang)
-  const tripPlanningGuideHref = buildLocalePath('/guides/golf-trip-planning-mallorca', lang)
-  const sidebarLinks = SIDEBAR_LINKS[lang] || SIDEBAR_LINKS.en
 
   useEffect(() => {
     const scrollToHash = () => {
@@ -837,48 +782,6 @@ export default function GolfCoursesClient({ lang = 'en' }) {
           })}
         </div>
 
-        <aside className="page-sidebar">
-          <div className="sidebar-card">
-            <h3>{t.sidebarH3}</h3>
-            <p>{t.sidebarP}</p>
-            <Link href={contactHref} className="sidebar-btn">{t.sidebarBtn}</Link>
-          </div>
-          <div className="sidebar-card">
-            <h3>{sidebarLinks.title}</h3>
-            <ul className="sidebar-quick">
-              <li><Link href={guidesHref} className="sidebar-quick__link">{sidebarLinks.guides}</Link></li>
-              <li><Link href={bestCoursesGuideHref} className="sidebar-quick__link">{sidebarLinks.ranking}</Link></li>
-              <li><Link href={tripPlanningGuideHref} className="sidebar-quick__link">{sidebarLinks.planning}</Link></li>
-            </ul>
-          </div>
-          <div className="sidebar-card sidebar-card--cream">
-            <h3 className="sidebar-card__title-sm">{t.quickPicksTitle}</h3>
-            <ul className="sidebar-quick">
-              {t.quickPicks.map((pick, i) => {
-                const colonIdx = pick.indexOf(': ')
-                const prefix = colonIdx >= 0 ? pick.slice(0, colonIdx + 2) : ''
-                const coursesPart = colonIdx >= 0 ? pick.slice(colonIdx + 2) : pick
-                const separator = coursesPart.match(/ (or|oder|eller|ou|o) /)
-                const parts = separator ? coursesPart.split(separator[0]) : [coursesPart]
-                const sepWord = separator ? separator[0] : null
-                return (
-                  <li key={i}>
-                    {prefix}
-                    {parts.map((part, j) => {
-                      const id = getShortCourseId(part)
-                      return (
-                        <span key={j}>
-                          {j > 0 && sepWord}
-                          {id ? <a href={`#${id}`} className="sidebar-quick__link">{part}</a> : part}
-                        </span>
-                      )
-                    })}
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-        </aside>
       </div>
 
       <section className="guide-cta">
@@ -895,5 +798,3 @@ export default function GolfCoursesClient({ lang = 'en' }) {
     </>
   )
 }
-
-

@@ -3,7 +3,7 @@ export default function manifest() {
     name: 'Mr Mallorca Golf',
     short_name: 'Mr Mallorca Golf',
     description:
-      'Private golf days in Mallorca with PGA Advanced Professional Andy Griffiths.',
+      'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths.',
     start_url: '/',
     display: 'standalone',
     background_color: '#f7f4ef',

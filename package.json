@@ -2,6 +2,9 @@
   "name": "mrmallorcagolf",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,14 +20,15 @@
     "check:guide-locale-leaks": "node scripts/check-guide-locale-english-leaks.js",
     "check:i18n-release": "node scripts/locale-release-check.js",
     "check:visual": "playwright test",
-    "check:ready": "npm run check:content && npm run check:i18n-release && npm run build"
+    "check:ready": "npm run check:content && npm run check:i18n-release && npm run build",
+    "predeploy": "npm run check:text && npm run check:i18n-release && npm run build"
   },
   "dependencies": {
-    "next": "^14.2.35",
+    "next": "^15.5.18",
     "pptxgenjs": "^4.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "resend": "^6.9.4"
+    "resend": "^6.12.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",
@@ -32,7 +36,10 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "^15.5.18",
     "sharp": "^0.34.5"
+  },
+  "overrides": {
+    "postcss": "8.5.10"
   }
 }

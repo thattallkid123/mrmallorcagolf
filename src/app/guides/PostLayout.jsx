@@ -1,7 +1,7 @@
 import { getGuidePath, isPublishedGuideSlug } from '../../lib/site'
 
 const SIDEBAR_COPY = {
-  en: { experience: 'The Experience', h3: 'Want to play this course with a PGA professional alongside you?', guidesTitle: 'Want to play this course with a PGA professional alongside you?', p: 'Private days from €495. Everything arranged: course, tee time, coaching throughout. Tell me your dates and I\'ll come back personally within 24 hours.', guidesBody: 'Private days from €495. Everything arranged: course, tee time, coaching throughout. Tell me your dates and I\'ll come back personally within 24 hours.', seeExp: 'See pricing & full details', guidesPrimaryCta: 'See pricing & full details', contact: 'Tell Me Your Dates', guidesSecondaryCta: 'Tell Me Your Dates', moreGuides: 'More Guides', allGuides: 'All guides', home: 'Home', guidesLabel: 'Guides' },
+  en: { experience: 'Plan the trip', h3: 'Want this course in a Mallorca golf itinerary that actually makes sense?', guidesTitle: 'Want this course in a Mallorca golf itinerary that actually makes sense?', p: 'Start with the itinerary planner, then add a Play With A Pro day if it improves the trip.', guidesBody: 'Start with the itinerary planner, then add a Play With A Pro day if it improves the trip.', seeExp: 'Play With A Pro', guidesPrimaryCta: 'Play With A Pro', contact: 'Build itinerary', guidesSecondaryCta: 'Build itinerary', moreGuides: 'More Guides', allGuides: 'All guides', home: 'Home', guidesLabel: 'Guides' },
   de: { experience: 'Das Erlebnis', h3: 'Spielen Sie einen dieser Plätze mit einem PGA Professional an Ihrer Seite.', guidesTitle: 'Spielen Sie einen dieser Plätze mit einem PGA Professional an Ihrer Seite.', p: 'Private Tage auf Son Gual, Alcanada und mehr. Alles arrangiert. Coaching auf dem Platz.', guidesBody: 'Private Tage auf Son Gual, Alcanada und mehr. Alles arrangiert. Coaching auf dem Platz.', seeExp: 'Erlebnisse entdecken', guidesPrimaryCta: 'Erlebnisse entdecken', contact: 'Kontakt aufnehmen', guidesSecondaryCta: 'Kontakt aufnehmen', moreGuides: 'Weitere Ratgeber', allGuides: 'Alle Ratgeber', home: 'Startseite', guidesLabel: 'Ratgeber' },
   fr: { experience: "L'Expérience", h3: "Jouez l'un de ces parcours avec un professionnel PGA à vos côtés.", guidesTitle: "Jouez l'un de ces parcours avec un professionnel PGA à vos côtés.", p: 'Journées privées sur Son Gual, Alcanada et ailleurs. Tout organisé. Coaching sur le parcours.', guidesBody: 'Journées privées sur Son Gual, Alcanada et ailleurs. Tout organisé. Coaching sur le parcours.', seeExp: 'Voir les expériences', guidesPrimaryCta: 'Voir les expériences', contact: 'Prendre contact', guidesSecondaryCta: 'Prendre contact', moreGuides: 'Plus de guides', allGuides: 'Tous les guides', home: 'Accueil', guidesLabel: 'Guides' },
   es: { experience: 'La Experiencia', h3: 'Juegue uno de estos campos con un profesional PGA a su lado.', guidesTitle: 'Juegue uno de estos campos con un profesional PGA a su lado.', p: 'Días privados en Son Gual, Alcanada y más. Todo organizado. Coaching en el campo.', guidesBody: 'Días privados en Son Gual, Alcanada y más. Todo organizado. Coaching en el campo.', seeExp: 'Ver las experiencias', guidesPrimaryCta: 'Ver las experiencias', contact: 'Ponerse en contacto', guidesSecondaryCta: 'Ponerse en contacto', moreGuides: 'Más guías', allGuides: 'Todas las guías', home: 'Inicio', guidesLabel: 'Guías' },
@@ -20,20 +20,9 @@ const UPDATED_LABELS = {
   nl: 'Bijgewerkt',
 }
 
-const COURSES_CTA = {
-  en: 'Browse all courses',
-  de: 'Alle Plätze ansehen',
-  fr: 'Voir tous les parcours',
-  es: 'Ver todos los campos',
-  zh: '查看全部球场',
-  sv: 'Se alla banor',
-  nl: 'Bekijk alle banen',
-}
-
 export default function PostLayout({ children, meta, lang }) {
   const l = lang || meta.lang || 'en'
   const c = SIDEBAR_COPY[l] || SIDEBAR_COPY.en
-  const coursesCta = COURSES_CTA[l] || COURSES_CTA.en
   const updatedLabel = UPDATED_LABELS[l] || UPDATED_LABELS.en
   const pre = l === 'en' ? '' : `/${l}`
   const relatedGuides = meta.related.filter((guide) => isPublishedGuideSlug(guide.slug))
@@ -63,15 +52,6 @@ export default function PostLayout({ children, meta, lang }) {
         <article className="post-article">{children}</article>
 
         <aside className="post-sidebar">
-          <div className="post-sidebar__block">
-            <p className="post-sidebar__label">{c.guidesLabel}</p>
-            <h3>{c.guidesTitle}</h3>
-            <p>{c.guidesBody}</p>
-            <a href={`${pre}/play-with-a-pro`} className="btn btn--gold post-sidebar__cta">{c.guidesPrimaryCta} &rarr;</a>
-            <a href={`${pre}/golf-courses`} className="btn btn--outline-white post-sidebar__cta">{coursesCta} &rarr;</a>
-            <a href={`${pre}/contact`} className="btn btn--dark post-sidebar__cta post-sidebar__cta--secondary">{c.guidesSecondaryCta} &rarr;</a>
-          </div>
-
           <div className="post-sidebar__block" style={{ marginTop: '2px' }}>
             <p className="post-sidebar__label">{c.moreGuides}</p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>

@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
-import { getCourseDestination } from '../lib/golf-courses-helpers'
-import BeehiivEmbed from '../components/BeehiivEmbed'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -32,43 +30,30 @@ const FEATURE_ICONS = {
   ),
 }
 
-const CREDENTIAL_LOGOS = [
-  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
-  { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
-  { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
-  { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
-]
+const ITINERARY_PLANNER_PATH = '/itinerary'
+
 
 function localizePath(path, locale) {
   if (!path || path.startsWith('http') || path.startsWith('#')) return path
   return locale === 'en' ? path : `/${locale}${path}`
 }
 
-function getOptimizedCourseImage(src) {
-  const homepageCardImages = {
-    '/images/son-gual.jpg': '/images/son-gual-card.webp',
-    '/images/alcanada.jpg': '/images/alcanada-card.webp',
-    '/images/son-muntaner.webp': '/images/son-muntaner-card.webp',
-    '/images/santa-ponsa.webp': '/images/santa-ponsa-card.webp',
-    '/images/andratx.webp': '/images/andratx-card.webp',
-  }
 
-  return homepageCardImages[src] || src
-}
 
 export default function HomePageInner({ locale = 'en' }) {
   const home = getHomeContent(locale)
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
-  const multiDayPackage = home.packages?.multiDay || home.packages?.premium
+  const itineraryHref = home.hero.primaryHref || ITINERARY_PLANNER_PATH
+  const sharedPackageCta = null
 
   return (
     <>
       <section className="hero">
         <div className="hero__media" aria-hidden="true">
           <Image
-            src="/images/hero-main.webp"
+            src="/images/home-hero-mandarin.webp"
             alt="Golf day in Mallorca with PGA Advanced Professional Andy Griffiths"
             fill
             priority
@@ -91,12 +76,17 @@ export default function HomePageInner({ locale = 'en' }) {
               </>
             ) : null}
           </h1>
-          <div className="hero__actions">
-            <a href={contactHref} className="btn btn--gold">
-              {home.hero.primaryCta}
-            </a>
-            <a href={locale === 'en' ? '/a-day' : `/${locale}/play-with-a-pro`} className="btn btn--outline-white">
-              {home.hero.secondaryCta}
+          <div className="hero__cta-stack">
+            <div className="hero__actions">
+              <a href={itineraryHref} className="btn btn--gold">
+                {home.hero.primaryCta}
+              </a>
+              <a href={golfCoursesHref} className="btn btn--outline-white">
+                {home.hero.secondaryCta}
+              </a>
+            </div>
+            <a href={playWithAProHref} className="hero__pwap-link">
+              Want Andy on the course? See Play With A Pro
             </a>
           </div>
         </div>
@@ -104,113 +94,87 @@ export default function HomePageInner({ locale = 'en' }) {
 
       <section className="intro reveal">
         <div className="intro__left">
-          <p className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)', marginBottom: '1rem' }}>
+          <p className="eyebrow">
             {home.intro.eyebrow}
           </p>
-          <h2 className="serif-display" style={{ fontSize: 'clamp(1.8rem,3vw,2.6rem)', color: '#fff', marginBottom: '1.5rem' }}>
+          <h2 className="serif-display">
             {home.intro.title}
           </h2>
           {home.intro.paragraphs.map((p, i) => (
-            <p key={i} style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.74)', lineHeight: 1.85, marginBottom: i < home.intro.paragraphs.length - 1 ? '1.25rem' : 0 }}>{p}</p>
+            <p key={i}>{p}</p>
           ))}
-        </div>
-        <div className="intro__right">
-          {home.intro.stats.map((stat, index) => (
-            <div key={stat.label} className={`intro__stat reveal reveal-delay-${index + 1}`}>
-              <div className="intro__stat-num">{stat.value}</div>
-              <div className="intro__stat-label">{stat.label}</div>
+          {home.intro.services ? (
+            <div className="intro__services">
+              {home.intro.services.map((service) => (
+                <a key={service.title} href={localizePath(service.href, locale)} className="intro-service">
+                  <strong>{service.title}</strong>
+                  <span>{service.text}</span>
+                  <em>{service.cta}</em>
+                </a>
+              ))}
             </div>
-          ))}
+          ) : null}
+        </div>
+        <div className="intro__media" aria-label="Andy Griffiths">
+          <Image
+            src="/images/home-plan-play-mandarin.webp"
+            alt="Andy Griffiths watching a golfer putt at Mandarin Oriental Mallorca"
+            fill
+            quality={90}
+            sizes="(max-width: 900px) 100vw, 420px"
+            style={{ objectFit: 'cover', objectPosition: '50% 46%' }}
+          />
         </div>
       </section>
 
-      <section className="cred-logo-bar" aria-label={home.socialProof}>
-        <div className="cred-logo-bar__logos">
-          {CREDENTIAL_LOGOS.map((logo) => (
-            <div className="cred-logo-bar__item" key={logo.name}>
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className="cred-logo-bar__img"
-                loading="eager"
-                quality={90}
-                sizes="(max-width: 700px) 45vw, 238px"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
 
-      <section className="how">
-        <div className="how__header reveal">
-          <p className="eyebrow">{home.how.eyebrow}</p>
-          <h2 className="serif-display">{home.how.title}</h2>
-        </div>
-        <div className="how__steps">
-          {home.how.steps.map((step, index) => (
-            <div key={step.number} className={`how__step reveal${index ? ` reveal-delay-${index}` : ''}`}>
-              <span className="how__num">{step.number}</span>
-              <h3>{step.title}</h3>
-              <p>{step.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="courses" id="courses">
-        <div className="courses__header">
-          <div className="courses__header-left">
-            <p className="eyebrow">{home.courses.eyebrow}</p>
-            <h2 className="serif-display">{home.courses.title}</h2>
+      {home.journey ? (
+        <section className="journey">
+          <div className="journey__header reveal">
+            <p className="eyebrow">{home.journey.eyebrow}</p>
+            <h2 className="serif-display">{home.journey.title}</h2>
           </div>
-          <p className="courses__hint">Swipe or scroll to browse</p>
-        </div>
-        <div className="courses__track">
-          {home.courses.items.map((course) => (
-            <a
-              key={course.name}
-              href={getCourseDestination(course.name, locale) || localizePath(course.href, locale)}
-              className={`course-card ${course.cls}`}
-            >
-              <div className="course-card__bg">
-                <Image
-                  src={getOptimizedCourseImage(course.img)}
-                  alt={course.name}
-                  fill
-                  sizes="(max-width: 768px) 292px, 348px"
-                  style={{ objectFit: 'cover', objectPosition: 'center 28%' }}
-                />
-              </div>
-              <div className="course-card__overlay" style={{ background: 'linear-gradient(to top, rgba(10,9,7,0.97) 0%, rgba(10,9,7,0.6) 50%, rgba(10,9,7,0.2) 80%, transparent 100%)' }}></div>
-              {course.badge && <span className="course-card__badge">{course.badge}</span>}
-              <div className="course-card__content">
-                <p className="course-card__region">{course.region}</p>
-                <h3 className="course-card__name">{course.name}</h3>
-                <div className="course-card__meta">
-                  {course.meta.map((meta, index) => (
-                    <span key={`${course.name}-${meta}`}>
-                      {index > 0 && <span style={{ display: 'inline-block', width: 2, height: 2, borderRadius: '50%', background: 'rgba(255,255,255,0.4)', margin: '0 7px', verticalAlign: 'middle' }}></span>}
-                      {meta}
-                    </span>
-                  ))}
-                </div>
-                <div className="course-card__rating">
-                  <span className="course-card__stars">{course.stars}</span>
-                  <span className="course-card__rating-label"> / {course.difficulty}</span>
-                </div>
-                <p className="course-card__excerpt course-card__excerpt--visible">{course.excerpt}</p>
-              </div>
-            </a>
-          ))}
-        </div>
-        <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-          <a href={golfCoursesHref} className="btn btn--dark">
-            {home.courses.viewAll}
-          </a>
-        </div>
-      </section>
+          <div className="journey__grid">
+            {home.journey.items.map((item, index) => {
+              const JOURNEY_IMAGES = [
+                '/images/son-gual-card.webp',
+                '/images/alcanada-card.webp',
+                '/images/client-alcanada.webp',
+              ]
+              const img = JOURNEY_IMAGES[index]
+              return (
+                <a
+                  key={item.title}
+                  href={localizePath(item.href, locale)}
+                  className={`journey-card journey-card--photo reveal${index ? ` reveal-delay-${index}` : ''}`}
+                >
+                  {img && (
+                    <div className="journey-card__photo">
+                      <Image
+                        src={img}
+                        alt={item.title}
+                        fill
+                        quality={88}
+                        sizes="(max-width: 768px) 100vw, 420px"
+                        style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+                      />
+                      <div className="journey-card__overlay" />
+                    </div>
+                  )}
+                  <div className="journey-card__body">
+                    <span className="journey-card__num">0{index + 1}</span>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <span className="journey-card__cta">{item.cta}</span>
+                  </div>
+                </a>
+              )
+            })}
+          </div>
+        </section>
+      ) : null}
+
+
 
       <section className="what">
         <div className="what__left reveal">
@@ -220,14 +184,7 @@ export default function HomePageInner({ locale = 'en' }) {
           {home.experience.paragraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
-            <a href={playWithAProHref} className="btn btn--dark">
-              {home.experience.button}
-            </a>
-            <a href={contactHref} className="btn btn--gold">
-              {home.experience.dateCta}
-            </a>
-          </div>
+
         </div>
         <div className="what__right reveal reveal-delay-1">
           {home.experience.features && home.experience.features.length > 0 ? (
@@ -246,7 +203,8 @@ export default function HomePageInner({ locale = 'en' }) {
                 src="/images/client-alcanada.webp"
                 alt="Andy with a client at Alcanada golf course"
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={88}
+                sizes="(max-width: 768px) 100vw, 560px"
                 style={{ objectFit: 'cover', objectPosition: 'center 45%' }}
               />
             </div>
@@ -260,9 +218,9 @@ export default function HomePageInner({ locale = 'en' }) {
           <h2 className="serif-display">{home.packages.title}</h2>
           <p>{home.packages.body}</p>
         </div>
-        <div className="packages__grid" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="packages__grid packages__grid--paid" style={{ maxWidth: '1180px', margin: '0 auto' }}>
           {home.packages.items.map((pkg, index) => (
-            <div key={pkg.name} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
+            <div key={`${pkg.eyebrow}-${pkg.name}-${index}`} className={`tier${pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
               <p className="tier__name-small">{pkg.eyebrow}</p>
               <h3 className="tier__name">{pkg.name}</h3>
               {pkg.price && <p className="tier__price">{pkg.price}</p>}
@@ -273,23 +231,24 @@ export default function HomePageInner({ locale = 'en' }) {
                 ))}
               </ul>
               {pkg.note && <p className={`tier__note${pkg.featured ? ' tier__note--feature' : ''}`}>{pkg.note}</p>}
-              <a href={pkg.href || contactHref} className="tier__btn">
-                {pkg.cta}
-              </a>
+              {!sharedPackageCta ? (
+                <a href={pkg.href || contactHref} className="tier__btn">
+                  {pkg.cta}
+                </a>
+              ) : null}
             </div>
           ))}
         </div>
-        {multiDayPackage && (
-          <div className="reveal" style={{ maxWidth: 760, margin: '3rem auto 0', padding: '2.5rem', background: 'var(--pine)', borderRadius: 2, textAlign: 'center' }}>
-            <p className="eyebrow" style={{ color: 'rgba(255,255,255,0.45)', marginBottom: '0.75rem' }}>{multiDayPackage.eyebrow}</p>
-            <h3 className="serif-display" style={{ color: '#fff', fontSize: 'clamp(1.3rem,2.2vw,1.8rem)', marginBottom: '1rem' }}>{multiDayPackage.title}</h3>
-            <p style={{ color: 'rgba(255,255,255,0.72)', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.75rem', maxWidth: 560, margin: '0 auto 1.75rem' }}>{multiDayPackage.body}</p>
-            <a href={contactHref} className="btn btn--gold">{multiDayPackage.cta}</a>
+        {sharedPackageCta ? (
+          <div className="packages__shared-cta reveal">
+            <a href={sharedPackageCta.href || contactHref} className="tier__btn">
+              {sharedPackageCta.cta}
+            </a>
           </div>
-        )}
+        ) : null}
       </section>
 
-      {/* Jo's quote — social proof after packages, before final CTA */}
+      {/* Jo's quote - social proof after packages, before final CTA */}
       <section style={{ background: 'var(--pine)', padding: 'clamp(48px,6vw,72px) clamp(20px,5vw,60px)' }}>
         <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
           <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.3rem,2.5vw,1.9rem)', fontStyle: 'italic', fontWeight: 400, color: '#fff', lineHeight: 1.45, marginBottom: '1.25rem' }}>
@@ -322,17 +281,6 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
       </section>
 
-      <section style={{ background: 'var(--cream)', padding: 'clamp(60px,8vw,100px) clamp(20px,5vw,60px)' }}>
-        <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
-          <p className="eyebrow" style={{ color: 'var(--taupe)', marginBottom: '1rem' }}>THE NEWSLETTER</p>
-          <h2 className="serif-display" style={{ fontSize: 'clamp(1.5rem,3vw,2.2rem)', color: 'var(--deep)', marginBottom: '1rem' }}>Golf insights delivered.</h2>
-          <p style={{ fontSize: '0.95rem', color: 'var(--taupe)', lineHeight: 1.8, marginBottom: '2.5rem' }}>
-            Course conditions updated as I play them. Which tee times are worth fighting for, where the greens are running fast, and what&apos;s worth knowing before you fly. Sent every two weeks, unsubscribe whenever.
-          </p>
-          <BeehiivEmbed />
-        </div>
-      </section>
-
       <section className="cta-final">
         <div className="cta-final__left reveal">
           <p className="eyebrow eyebrow--gold">{home.finalCta.eyebrow}</p>
@@ -349,7 +297,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">&ldquo;{home.finalCta.quote}&rdquo;</p>
-          <a href={contactHref} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px', letterSpacing: '0.18em' }}>
+          <a href={ITINERARY_PLANNER_PATH} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px', letterSpacing: '0.18em' }}>
             {home.finalCta.primaryCta}
           </a>
           <a href="https://wa.me/34624466702" className="btn btn--outline-white" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>

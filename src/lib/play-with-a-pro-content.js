@@ -7,23 +7,23 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/',
       breadcrumbHome: 'Home',
       breadcrumbCurrent: 'Play with a Pro',
-      eyebrow: 'Private Golf Days · Mallorca',
-      title: 'A Private Golf Day in Mallorca.',
-      body: 'One course. A full day alongside a PGA Advanced Professional who has arranged everything. Before you arrive, I already know what to watch for — you complete a short questionnaire and I build the day around your game. Solo from €495. Groups from €950.',
+      eyebrow: 'A Private Day on Course · Mallorca',
+      title: 'One course. 18 holes.\nMe alongside you the whole way.',
+      body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. Book it as a standalone private round, or add it to a planned Mallorca golf trip. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €495. Groups from €950.',
       price: null,
-      primaryCta: 'Tell Me Your Dates →',
+      primaryCta: 'Enquire →',
       primaryHref: '/contact',
-      secondaryCta: 'See Packages',
+      secondaryCta: 'See the options',
     },
     day: {
-      eyebrow: 'What the day involves',
-      title: 'Before you arrive, I already know what to watch for.',
+      eyebrow: 'What the day is',
+      title: 'Book it on its own, or add it to the trip.',
       paragraphs: [
-        'Before you arrive, you complete a short questionnaire. It tells me what frustrates you, where the gap is between your range game and your score, and what a good day would actually look like to you. By the time we reach the first tee, I already know what to watch for.',
-        'During the round, the coaching is woven in naturally. Not a running commentary. More the right observation at the point where it can still change the hole, the score, or the decision standing in front of you.',
+        'You can book Play With A Pro as a standalone day, or add it to either version of trip planning. You arrive at the course. I handle everything before that: the right course for your game, the tee time, the briefing. Then we play. The coaching is woven into the round at the moments where it can still change something: the hole, the score, the decision you are standing in front of.',
+        'Before we play, I want to understand how your game works and what you are building in Mallorca. I am a PGA Advanced Professional with 15,000+ coaching hours and a Trackman Master certification. That background informs the day, but it stays in the background. The experience is the round.',
       ],
       quote:
-        'Most golfers leave playing better, feeling clearer, and understanding why. That last part is the bit that tends to stay with them.',
+        'The fastest improvements usually happen on the course, not the range. Real conditions, real decisions — that kind of progress tends to stick.',
       questionnaireEyebrow: 'Already booked?',
       questionnaireTitle: 'Complete your Pre-Round Questionnaire →',
       questionnaireBody: 'Takes 3 minutes. Helps me tailor the day to you before we reach the first tee.',
@@ -73,9 +73,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       ],
     },
     packages: {
-      eyebrow: 'Experiences & Packages',
-      title: 'Choose Your Day.',
-      body: 'All are private and hosted by me. For solo and group days, green fee and lunch are your own costs, confirmed when we speak. The Signature Experience is all inclusive.',
+      eyebrow: 'Pricing',
+      title: 'Solo, group, or the full hosted journey.',
+      body: 'Solo and group are the core Play With A Pro private course day rates. The hosted journey is the more complete, high-touch version when you want the golf day wrapped in transfers, food, premium extras, and proper trip handling.',
       tiers: [
         {
           eyebrow: 'A Day With Andy',
@@ -85,10 +85,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           features: [
             'Course matched to your game and handicap',
             'Tee time secured and fully handled',
-            'Pre-round briefing and warm-up',
             '18 holes with Andy',
             'On-course coaching during the round',
-            'Post-round debrief',
+            'Post-round debrief and next steps',
           ],
           button: 'Enquire →',
           href: '/contact',
@@ -107,7 +106,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
             'Up to 3 players, one fixed day rate for Andy',
             'Course matched to your group',
             'Tee time secured and fully handled',
-            'Pre-round briefing and warm-up',
             '18 holes with Andy',
             'On-course coaching during the round',
           ],
@@ -117,35 +115,50 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         },
         {
           eyebrow: 'The Signature Experience',
-          name: 'Full Day',
+          name: 'Hosted Golf Journey',
           price: '€3,000+',
-          note: 'Bespoke. Andy coordinates the full itinerary with you in advance — tell us what you want from the day.',
+          note: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons can be planned around you before the day.',
           features: [
-            'Course, tee time, and coaching',
-            'Michelin-starred lunch or private chef booking',
-            'Videographer and highlight film',
-            'Spa and post-golf recovery time',
-            'Private transfers throughout',
-            'Caddy and premium club hire options',
+            'Course, tee time, and hosted golf day',
+            'Lunch, private chef, or restaurant booking',
+            'Private transfers and recovery time',
+            'Caddy, videographer, and premium club hire options',
           ],
           button: 'Enquire →',
           href: '/contact',
           featured: false,
         },
+        {
+          eyebrow: 'Trip Planning',
+          name: 'Plan Your Trip',
+          price: 'Price on enquiry',
+          note: '5% management fee applies to green fees and bookings. Confirmed after your first conversation.',
+          features: [
+            'No searching apps or websites — tee times handled for you',
+            'Courses picked to match your group, level, and budget',
+            'Routing and number of rounds planned around your schedule',
+            'Buggies, club hire, and transfers all arranged',
+            'Restaurant and dining suggestions included',
+            'One person to contact for the whole trip',
+          ],
+          button: 'Enquire →',
+          href: '/contact',
+          featured: true,
+        },
       ],
       multiDay: {
-        eyebrow: 'Looking for something bigger?',
-        title: 'A multi-day golf journey.',
-        body: 'Two or three consecutive days across Son Gual, Alcanada, and beyond, with private transfers, handpicked dining, spa access, additional activities. From €3,000. Get in touch with your dates.',
-        button: 'Enquire about a multi-day experience →',
-        href: '/contact',
+        eyebrow: 'Still planning the full trip?',
+        title: 'Planning the wider trip?',
+        body: 'Play With A Pro can stand on its own, or sit inside a planned trip. If you want help choosing courses, base, routing, tee times, rentals, and dining, start with Plan Your Trip.',
+        button: 'Plan Your Trip →',
+        href: '/plan-your-trip',
       },
     },
     finalCta: {
-      eyebrow: 'Ready to play Mallorca properly?',
-      title: "Get in touch and I'll help you choose the right version of the day.",
-      body: "Tell me your dates, your handicap, and what you want from the day. I'll come back with a recommendation personally within 24 hours.",
-      primaryCta: 'Book Your Day →',
+      eyebrow: 'Want this inside your trip?',
+      title: "Tell me your dates and I'll recommend the right format.",
+      body: 'Send dates, group size, handicap range, and any courses you are considering. I will tell you whether Play With A Pro works best as a standalone day or as part of a planned trip.',
+      primaryCta: 'Enquire →',
       primaryHref: '/contact',
       secondaryCta: 'Explore the Courses',
       secondaryHref: '/golf-courses',
@@ -690,7 +703,7 @@ function normalizeTierForLocale(tier, index) {
   }
 
   if (englishTier.noteLines) {
-    normalized.noteLines = tier.noteLines || String(tier.note || '').split(/[.ã€‚]\s*/).filter(Boolean)
+    normalized.noteLines = tier.noteLines || String(tier.note || '').split(/[.。]\s*/).filter(Boolean)
     while (normalized.noteLines.length < englishTier.noteLines.length && normalized.noteLines.length > 0) {
       normalized.noteLines.push(normalized.noteLines[normalized.noteLines.length - 1])
     }
@@ -698,6 +711,111 @@ function normalizeTierForLocale(tier, index) {
   }
 
   return normalized
+}
+
+const PLAY_EXTRA_TIER = {
+  de: {
+    eyebrow: 'Reiseplanung',
+    name: 'Plan Your Trip',
+    price: 'Preis auf Anfrage',
+    note: '5 % Planungsgebühr auf Greenfees und Buchungen. Nach dem ersten Gespräch bestätigt.',
+    features: [
+      'Keine Suche in Apps oder auf Websites - ich organisiere die Startzeiten',
+      'Plätze passend zu Ihrer Gruppe, Ihrem Niveau und Ihrem Budget',
+      'Route und Rundenzahl nach Ihrem Zeitplan geplant',
+      'Buggy, Schläger und Transfers werden arrangiert',
+      'Restaurant- und Essensempfehlungen inklusive',
+      'Eine Person als Ansprechpartner für die gesamte Reise',
+    ],
+    button: 'Anfragen →',
+    href: '/de/contact',
+    featured: true,
+  },
+  es: {
+    eyebrow: 'Planificación de viaje',
+    name: 'Plan Your Trip',
+    price: 'Precio bajo consulta',
+    note: 'Se aplica una comisión de gestión del 5 % sobre green fees y reservas. Confirmado tras la primera conversación.',
+    features: [
+      'Sin buscar en apps o webs - yo gestiono las salidas',
+      'Campos elegidos según su grupo, nivel y presupuesto',
+      'Ruta y número de rondas planificados según su agenda',
+      'Buggies, alquiler de palos y traslados organizados',
+      'Recomendaciones de restaurantes y gastronomía incluidas',
+      'Una sola persona de contacto para todo el viaje',
+    ],
+    button: 'Consultar →',
+    href: '/es/contact',
+    featured: true,
+  },
+  fr: {
+    eyebrow: 'Organisation du voyage',
+    name: 'Plan Your Trip',
+    price: 'Prix sur demande',
+    note: 'Des frais de gestion de 5 % s’appliquent aux green fees et aux réservations. Confirmé après le premier échange.',
+    features: [
+      'Pas de recherche sur les applis ou les sites - je gère les heures de départ',
+      'Parcours choisis selon votre groupe, votre niveau et votre budget',
+      'Itinéraire et nombre de parties planifiés selon votre programme',
+      'Buggys, location de clubs et transferts organisés',
+      'Recommandations de restaurants et de repas incluses',
+      'Un seul interlocuteur pour tout le voyage',
+    ],
+    button: 'Demander →',
+    href: '/fr/contact',
+    featured: true,
+  },
+  nl: {
+    eyebrow: 'Reisplanning',
+    name: 'Plan Your Trip',
+    price: 'Prijs op aanvraag',
+    note: 'Een beheervergoeding van 5% geldt voor greenfees en boekingen. Bevestigd na het eerste gesprek.',
+    features: [
+      'Geen zoeken in apps of op websites - ik regel de starttijden',
+      'Banen gekozen op basis van uw groep, niveau en budget',
+      'Route en aantal rondes gepland rond uw schema',
+      'Buggys, clubhuur en transfers geregeld',
+      'Restaurant- en dinertips inbegrepen',
+      'Eén aanspreekpunt voor de hele reis',
+    ],
+    button: 'Contact opnemen →',
+    href: '/nl/contact',
+    featured: true,
+  },
+  sv: {
+    eyebrow: 'Reseplanering',
+    name: 'Plan Your Trip',
+    price: 'Pris på förfrågan',
+    note: 'En administrationsavgift på 5 % tillkommer på greenfees och bokningar. Bekräftas efter första samtalet.',
+    features: [
+      'Ingen sökning i appar eller på webbplatser - jag ordnar starttiderna',
+      'Banor valda utifrån grupp, nivå och budget',
+      'Rutt och antal rundor planerade efter ert schema',
+      'Buggy, klubbor och transporter ordnade',
+      'Restaurang- och matförslag ingår',
+      'En kontaktperson för hela resan',
+    ],
+    button: 'Kontakta mig →',
+    href: '/sv/contact',
+    featured: true,
+  },
+  zh: {
+    eyebrow: '行程规划',
+    name: 'Plan Your Trip',
+    price: '价格咨询',
+    note: '球场费用和预订需收取 5% 管理费。首次沟通后确认。',
+    features: [
+      '无需在应用或网站上搜索 - 开球时间由我安排',
+      '根据您的团队、水平和预算选择球场',
+      '按您的行程规划路线和轮次',
+      '代办球车、球杆租赁和接送',
+      '包含餐厅与用餐建议',
+      '整个行程只需联系一人',
+    ],
+    button: '咨询 →',
+    href: '/zh/contact',
+    featured: true,
+  },
 }
 
 function mergeDeep(base, override) {
@@ -1524,18 +1642,24 @@ export function getPlayWithAProContent(locale = 'en') {
   const packages = content?.packages
     ? {
         ...content.packages,
-        tiers: (content.packages.tiers || []).map((tier, index) => {
-          const normalizedTier = normalizeTierForLocale(tier, index)
-          return {
-            ...normalizedTier,
-            price:
-              normalizedTier.eyebrow === soloOffer.shortLabel
-                ? soloOffer.priceDisplay
-                : normalizedTier.eyebrow === groupOffer.shortLabel
-                  ? groupOffer.priceDisplay
-                : normalizedTier.price,
+        tiers: (() => {
+          const englishTiers = PLAY_WITH_A_PRO_CONTENT.en.packages.tiers
+          const baseTiers = [...(content.packages.tiers || [])]
+          if (baseTiers.length < englishTiers.length) {
+            const extraTier = PLAY_EXTRA_TIER[locale] || PLAY_EXTRA_TIER.en
+            if (extraTier) baseTiers.push(extraTier)
           }
-        }),
+
+          return baseTiers.map((tier, index) => normalizeTierForLocale({
+            ...tier,
+            price:
+              tier.eyebrow === soloOffer.shortLabel
+                ? soloOffer.priceDisplay
+                : tier.eyebrow === groupOffer.shortLabel
+                  ? groupOffer.priceDisplay
+                  : tier.price,
+          }, index))
+        })(),
         multiDay: content.packages.multiDay
           ? {
               ...content.packages.multiDay,
