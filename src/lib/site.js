@@ -1,7 +1,7 @@
 export const SITE_ORIGIN = 'https://www.mrmallorcagolf.com'
 
 export const ALL_LOCALES = ['en', 'es', 'de', 'fr', 'nl', 'sv', 'zh']
-export const NAV_LOCALES = ['en', 'es', 'de', 'fr', 'nl', 'sv', 'zh']
+export const NAV_LOCALES = ['en', 'es', 'de', 'fr', 'zh']
 export const LOCALE_PREFIXES = ALL_LOCALES.filter((locale) => locale !== 'en')
 const HREFLANG_CODES = {
   zh: 'zh-Hans',
