@@ -2991,15 +2991,16 @@ select.form-control { cursor: pointer; }
 .career-strip__card--open .career-strip__card-img {
   inset: 0;
   background: #11100e;
+  transform: translateZ(0);
 }
 .career-strip__card--open .career-strip__card-img img {
   object-fit: cover !important;
   object-position: center center !important;
+  transform: translateZ(0) scale(1.002);
+  backface-visibility: hidden;
 }
 .career-strip__card--open .career-strip__card-scrim {
-  background:
-    linear-gradient(to top, rgba(10,9,7,0.9) 0%, rgba(10,9,7,0.36) 50%, rgba(10,9,7,0.12) 100%),
-    linear-gradient(to right, rgba(10,9,7,0.22), transparent 28%, transparent 72%, rgba(10,9,7,0.22));
+  background: linear-gradient(to top, rgba(10,9,7,0.82) 0%, rgba(10,9,7,0.28) 54%, rgba(10,9,7,0.08) 100%);
 }
 .career-strip__fade { position: absolute; top: 0; width: 120px; height: 100%; pointer-events: none; }
 .career-strip__fade--left { left: 0; background: linear-gradient(to right, #171613, transparent); }
@@ -3023,7 +3024,7 @@ select.form-control { cursor: pointer; }
 }
 
 @media (max-width: 700px) {
-  .career-strip__fade { width: 34px; }
+  .career-strip__fade { display: none; }
 }
 
 /* Mobile-specific hero image positioning */

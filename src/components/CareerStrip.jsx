@@ -24,6 +24,9 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
     const viewport = viewportRef.current
     const track = trackRef.current
     if (!viewport || !track) return
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches
+    if (prefersReducedMotion || isTouchDevice) return
     let pausedUntil = 0
     let raf
 
@@ -33,7 +36,7 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
 
     const tick = () => {
       if (performance.now() > pausedUntil) {
-        viewport.scrollLeft += 0.72
+        viewport.scrollLeft = Math.round(viewport.scrollLeft + 1)
         if (viewport.scrollLeft >= track.scrollWidth / 2) viewport.scrollLeft = 0
       }
       raf = requestAnimationFrame(tick)
