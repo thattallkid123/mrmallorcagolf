@@ -2,6 +2,36 @@
   "framework": "nextjs",
   "redirects": [
     {
+      "source": "/coaching",
+      "destination": "/play-with-a-pro",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(de|es|fr|nl|sv|zh)/coaching",
+      "destination": "/:locale/play-with-a-pro",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(de|es|fr|nl|sv|zh)/blog",
+      "destination": "/:locale/guides",
+      "permanent": true
+    },
+    {
+      "source": "/courses",
+      "destination": "/golf-courses",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(de|es|fr|nl|sv|zh)/courses",
+      "destination": "/:locale/golf-courses",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "mrmallorcagolf.com" }],
       "destination": "https://www.mrmallorcagolf.com/$1",

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackEvent } from './analytics'
 
 const INITIAL_FORM = {
   fname: '',
@@ -46,9 +47,18 @@ export function useContactFormSubmission(lang = 'en') {
         throw new Error(data.error || 'Unable to send enquiry right now.')
       }
 
+      trackEvent('contact_form_submit', {
+        form_name: 'contact',
+        language: lang,
+        experience: form.experience || 'not_specified',
+      })
       setSubmitted(true)
       setForm(INITIAL_FORM)
     } catch (submitError) {
+      trackEvent('contact_form_error', {
+        form_name: 'contact',
+        language: lang,
+      })
       setError(submitError.message || 'Unable to send enquiry right now.')
     } finally {
       setSubmitting(false)

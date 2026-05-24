@@ -10,9 +10,9 @@ export const DEFAULT_SOCIAL_IMAGE = {
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf Trip Planning | Play With A Pro',
+    title: 'Mallorca Golf Trip Planning & On-Course Coaching',
     description:
-      'Build a better Mallorca golf trip with PGA Advanced Professional Andy Griffiths. Course planning, itineraries, local recommendations, and Play With A Pro add-ons.',
+      'Plan a better Mallorca golf trip with PGA Advanced Professional Andy Griffiths: course advice, itineraries, local recommendations, and on-course Play With A Pro coaching.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro | Mr Mallorca Golf',
@@ -20,9 +20,9 @@ const HOME_METADATA = {
       'Private Golftage auf Mallorca mit PGA Advanced Professional Andy Griffiths. Spielen Sie Son Gual, Alcanada und mehr - alles ist arrangiert.',
   },
   es: {
-    title: 'Golf en Mallorca con PGA Pro | Mr Mallorca Golf',
+    title: 'Golf en Mallorca con PGA Pro | Viajes y clases en campo',
     description:
-      'Dias privados de golf en Mallorca con Andy Griffiths, PGA Advanced Professional. Juegue Son Gual, Alcanada y mas, con todo organizado.',
+      'Planifique un viaje de golf en Mallorca con Andy Griffiths, PGA Advanced Professional: campos, itinerarios, recomendaciones locales y clases en campo Play With A Pro.',
   },
   fr: {
     title: 'Golf a Majorque avec PGA Pro | Mr Mallorca Golf',

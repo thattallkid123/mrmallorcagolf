@@ -4443,7 +4443,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Fazit' },
         { type: 'paragraph', text: '9/10. T Golf Calvià ist einer der bestgepflegten Plätze, die ich in Mallorca gespielt habe. Die Grüns sind ausgezeichnet, die Fairways in sehr gutem Zustand, und das Layout testet einen ernsthaft, besonders bei der Distanzbeurteilung und im Umgang mit Wasser, ohne dabei ungerecht zu sein.' },
         { type: 'paragraph', text: 'Er eignet sich für Spieler, die eine ernsthafte Runde in guten Bedingungen suchen. Einen Hochhandicapper würde ich hier nicht als ersten Platz eines Urlaubsaufenthalts empfehlen, aber für jeden auf einem dedizierten Golftrip gehört er auf die Liste. Die Twilight-Rate und die Wochentagesangebote machen ihn zum richtigen Zeitpunkt zu einem guten Preis-Leistungs-Verhältnis.' },
-        { type: 'cta', text: 'T Golf Calvià mit einem PGA-Professional spielen, der jeden Abschlag kennt?', linkLabel: 'Zur Play-with-a-Pro-Erfahrung →' },
+        { type: 'cta', text: 'T Golf Calvià mit einem PGA-Professional spielen, der jeden Abschlag kennt?', linkLabel: 'Das PGA-Begleiterlebnis entdecken →' },
       ],
     },
     es: {

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
+import { SITE_ORIGIN, buildLocalePath } from '../lib/site'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -33,6 +34,28 @@ const FEATURE_ICONS = {
 const ITINERARY_PLANNER_PATH = '/itinerary'
 
 
+function JsonLd({ data }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+}
+
+function buildHomeFaqSchema(home, locale) {
+  if (!home.faq?.items?.length) return null
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    url: `${SITE_ORIGIN}${buildLocalePath('/', locale)}`,
+    mainEntity: home.faq.items.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  }
+}
+
 function localizePath(path, locale) {
   if (!path || path.startsWith('http') || path.startsWith('#')) return path
   return locale === 'en' ? path : `/${locale}${path}`
@@ -42,6 +65,7 @@ function localizePath(path, locale) {
 
 export default function HomePageInner({ locale = 'en' }) {
   const home = getHomeContent(locale)
+  const faqSchema = buildHomeFaqSchema(home, locale)
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
@@ -50,6 +74,7 @@ export default function HomePageInner({ locale = 'en' }) {
 
   return (
     <>
+      {faqSchema ? <JsonLd data={faqSchema} /> : null}
       <section className="hero">
         <div className="hero__media" aria-hidden="true">
           <Image

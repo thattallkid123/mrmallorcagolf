@@ -70,6 +70,12 @@ def action_for(row):
     ]).lower()
     if row.get("error"):
         return "API error - retry later or check property access"
+    if "page with redirect" in text:
+        return "Redirecting URL - OK if target is the intended canonical page"
+    if "redirect error" in text:
+        return "Redirect error - verify the URL returns one clean 301/308 to the intended target"
+    if "not found" in text or "404" in text:
+        return "404 - redirect if the URL has a useful replacement, otherwise leave excluded"
     if "blocked" in text or "robots" in text:
         return "Check robots/noindex rules"
     if row.get("google_canonical") and row.get("user_canonical") and row["google_canonical"] != row["user_canonical"]:
@@ -121,10 +127,15 @@ def build_report(limit=None, delay=0.25):
     if not problem_rows:
         lines.append("  No obvious indexing issues returned by the API.")
     else:
-        for row in problem_rows[:40]:
+        for row in problem_rows:
             lines.append(f"- {row['url']}")
             lines.append(f"  Status: {row.get('coverage_state') or row.get('verdict') or row.get('error')}")
             lines.append(f"  Action: {row['action']}")
+            if row.get("google_canonical") or row.get("user_canonical"):
+                lines.append(f"  Google canonical: {row.get('google_canonical') or '-'}")
+                lines.append(f"  User canonical:   {row.get('user_canonical') or '-'}")
+            if row.get("last_crawl"):
+                lines.append(f"  Last crawl: {row['last_crawl']}")
 
     return {"ok": True, "output": "\n".join(lines), "rows": rows}
 
@@ -139,7 +150,7 @@ def save_report(result):
 
     fields = [
         "url", "verdict", "coverage_state", "indexing_state", "robots_state",
-        "google_canonical", "user_canonical", "last_crawl", "action", "error",
+        "google_canonical", "user_canonical", "last_crawl", "referring_urls", "sitemap", "action", "error",
     ]
     with archive_csv.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
@@ -151,7 +162,7 @@ def save_report(result):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=25, help="How many sitemap URLs to inspect")
+    parser.add_argument("--limit", type=int, default=None, help="How many sitemap URLs to inspect")
     parser.add_argument("--all", action="store_true", help="Inspect every sitemap URL")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()

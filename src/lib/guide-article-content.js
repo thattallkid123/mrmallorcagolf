@@ -8,7 +8,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Green fees in Mallorca range from €55 to €250 depending on the course and season. Exact prices for all 24 courses in 2026, plus club hire, buggies, and where to save.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
-      image: 'https://mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
+      image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
     },
     meta: {
@@ -146,7 +146,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you are off the course. By a PGA professional based on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
-      image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+      image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
       imageAlt: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
     },
     meta: {
@@ -291,7 +291,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island - weather, green fees, course conditions, and crowds.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
-      image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
+      image: 'https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
       imageAlt: 'The Best Time of Year to Play Golf in Mallorca - Month by Month (2026)',
     },
     meta: {
@@ -404,7 +404,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'All 24 Mallorca golf courses ranked honestly by a PGA pro who lives on the island. Son Gual, Alcanada, Son Muntaner, Andratx — green fees, difficulty, and who each course suits.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
-      image: 'https://mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
+      image: 'https://www.mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
       imageAlt: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
     },
     meta: {
@@ -700,7 +700,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         '24 courses, year-round sunshine, green fees from €55. A PGA professional based in Mallorca since 2025 gives an honest answer on courses, conditions, and what to expect.',
       canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
-      image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
+      image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
       imageAlt: "Is Mallorca Good for Golf? A PGA Professional's Answer",
     },
     meta: {
@@ -829,7 +829,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'From the drive up to the last putt to lunch on the terrace - a specific, honest account of what a play-with-a-pro day at Son Gual looks and feels like.',
       canonical: 'https://www.mrmallorcagolf.com/guides/a-day-at-son-gual',
-      image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+      image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
       imageAlt: 'A Day at Son Gual - What the Play-With-a-Pro Experience Actually Looks Like',
     },
     meta: {
@@ -1114,7 +1114,7 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
       `${SITE_ORIGIN}${buildLocalePath(`/guides/${slug}`, lang)}`,
     ])
   )
-  const imageUrl = content.metadata.image?.replace('https://mrmallorcagolf.com', SITE_ORIGIN)
+  const imageUrl = content.metadata.image?.replace('https://www.mrmallorcagolf.com', SITE_ORIGIN)
 
   return {
     title: content.metadata.title,

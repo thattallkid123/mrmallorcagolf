@@ -23,7 +23,7 @@ async function main() {
 
   const siteModule = await import(pathToFileURL(path.join(repoRoot, 'src', 'lib', 'golf-courses-helpers.js')).href)
   const englishFeaturedBlock = homepageSource.match(
-    /en:\s*\{[\s\S]*?courses:\s*\{[\s\S]*?items:\s*\[([\s\S]*?)\n\s*\],\n\s*\},\n\s*experience:/
+    /en:\s*\{[\s\S]*?courses:\s*\{[\s\S]*?items:\s*\[([\s\S]*?)\r?\n\s*\],\r?\n\s*\},\r?\n\s*experience:/
   )
 
   if (!englishFeaturedBlock) {

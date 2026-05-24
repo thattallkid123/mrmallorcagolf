@@ -5,7 +5,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: 'Was kostet Golf auf Mallorca? Der komplette Preisüberblick 2026',
         description:
           'Was kostet Golf auf Mallorca 2026? Greenfees, Leihschläger, Buggies und Essen - der ehrliche Preisüberblick von einem PGA-Professional vor Ort.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: 'Was kostet Golf auf Mallorca? Der komplette Preisüberblick 2026',
       },
       meta: {
@@ -142,7 +142,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: '¿Cuánto cuesta jugar al golf en Mallorca? Desglose completo 2026',
         description:
           '¿Cuánto cuesta jugar al golf en Mallorca en 2026? Greenfees, alquiler de palos, buggies y comida, explicado con claridad por un profesional PGA en la isla.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: '¿Cuánto cuesta jugar al golf en Mallorca? Desglose completo 2026',
       },
       meta: {
@@ -279,7 +279,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: 'Combien coûte le golf à Majorque ? Le vrai détail 2026',
         description:
           'Combien coûte le golf à Majorque en 2026 ? Green fees, location de clubs, voiturette et déjeuner, expliqués clairement par un professionnel PGA sur place.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: 'Combien coûte le golf à Majorque ? Le vrai détail 2026',
       },
       meta: {
@@ -338,7 +338,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: 'Wat kost golf op Mallorca? Het complete overzicht voor 2026',
         description:
           'Wat kost golf op Mallorca in 2026? Greenfees, clubhuur, buggys en lunch - het eerlijke kostenoverzicht van een PGA-professional op het eiland.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: 'Wat kost golf op Mallorca? Het complete overzicht voor 2026',
       },
       meta: {
@@ -397,7 +397,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: 'Vad kostar golf på Mallorca? Den fullständiga översikten 2026',
         description:
           'Vad kostar golf på Mallorca 2026? Greenfee, klubbhyror, buggy och lunch - en rak kostnadsbild från ett PGA-proffs på ön.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: 'Vad kostar golf på Mallorca? Den fullständiga översikten 2026',
       },
       meta: {
@@ -456,7 +456,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         title: '马略卡打高尔夫要花多少钱？2026完整费用解析',
         description:
           '2026年马略卡高尔夫真实费用解析：果岭费、租杆、球车、午餐，以及哪些地方值得花钱，哪些地方可以省。',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp',
         imageAlt: '马略卡打高尔夫要花多少钱？2026完整费用解析',
       },
       meta: {
@@ -514,7 +514,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Planifier un voyage de golf à Majorque',
         description: 'Quand venir, quels parcours prioriser, combien de parties jouer, comment se deplacer et quoi faire hors du golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Planifier un voyage de golf à Majorque',
       },
       meta: {
@@ -567,7 +567,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Een golfreis naar Mallorca plannen',
         description: 'Wanneer komen, welke banen prioriteit geven, hoeveel rondes spelen, hoe u zich verplaatst en wat u buiten golf doet.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Een golfreis naar Mallorca plannen',
       },
       meta: {
@@ -620,7 +620,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Planera en golfresa till Mallorca',
         description: 'När man ska åka, vilka banor man ska prioritera, hur många rundor som är rimliga och hur man rör sig runt på ön.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Planera en golfresa till Mallorca',
       },
       meta: {
@@ -673,7 +673,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '如何规划马略卡高尔夫之旅',
         description: '什么时候来、先打哪些球场、打几轮最合理、怎么出行，以及不打球的时候该做什么。',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: '如何规划马略卡高尔夫之旅',
       },
       meta: {
@@ -726,7 +726,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'La meilleure période pour jouer au golf à Majorque',
         description: 'Mois par mois : météo, tarifs, état des parcours et quand Majorque offre sa meilleure version pour le golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'La meilleure période pour jouer au golf à Majorque',
       },
       meta: {
@@ -771,7 +771,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'De beste tijd om golf te spelen op Mallorca',
         description: 'Maand voor maand: weer, prijzen, baancondities en wanneer Mallorca op zijn best is voor golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'De beste tijd om golf te spelen op Mallorca',
       },
       meta: {
@@ -816,7 +816,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Bästa tiden att spela golf på Mallorca',
         description: 'Månad för månad: väder, priser, banförhållanden och när Mallorca är som bäst för golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'Bästa tiden att spela golf på Mallorca',
       },
       meta: {
@@ -861,7 +861,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '马略卡打高尔夫的最佳时间',
         description: '按月份看天气、价格、球场状态，以及什么时候来马略卡打球最舒服、最值得。',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: '马略卡打高尔夫的最佳时间',
       },
       meta: {
@@ -906,7 +906,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Les meilleurs parcours de golf à Majorque 2026',
         description: 'Mon classement honnête des meilleurs parcours de golf à Majorque selon le niveau, le type de voyage, le budget et l\'objectif de jeu.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Les meilleurs parcours de golf à Majorque 2026',
       },
       meta: {
@@ -960,7 +960,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'De beste golfbanen van Mallorca 2026',
         description: 'Mijn eerlijke rangschikking van de beste golfbanen van Mallorca per type speler, budget, reisdoel en gewenste ervaring.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'De beste golfbanen van Mallorca 2026',
       },
       meta: {
@@ -1014,7 +1014,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'De bästa golfbanorna på Mallorca 2026',
         description: 'Min ärliga rangordning av Mallorcas bästa golfbanor utifrån speltyp, budget, resmål och vilken typ av upplevelse man vill ha.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'De bästa golfbanorna på Mallorca 2026',
       },
       meta: {
@@ -1068,7 +1068,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '马略卡最佳高尔夫球场 2026',
         description: '从职业教练视角出发，按球手类型、预算、时间和体验目标，诚实排序马略卡最值得打的球场。',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: '马略卡最佳高尔夫球场 2026',
       },
       meta: {
@@ -1122,7 +1122,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Location de clubs a Majorque : ce qui vaut vraiment le coup',
         description: 'Location de clubs a Majorque expliquee honnetement : apporter ses propres clubs ou louer, quels prestataires sont fiables et ou il vaut la peine de depenser.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Location de clubs a Majorque',
       },
       meta: {
@@ -1175,7 +1175,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Clubhuur op Mallorca: wat echt de moeite waard is',
         description: 'Clubhuur op Mallorca eerlijk uitgelegd: eigen clubs meenemen of huren, welke aanbieders betrouwbaar zijn en waar u beter wel of niet geld aan uitgeeft.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Clubhuur op Mallorca',
       },
       meta: {
@@ -1228,7 +1228,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Klubbhyra pa Mallorca: vad som faktiskt ar vart det',
         description: 'Klubbhyra pa Mallorca forklarad utan fluff: ta med egna klubbor eller hyra, vilka foretag som fungerar och var pengarna gor mest nytta.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Klubbhyra pa Mallorca',
       },
       meta: {
@@ -1281,7 +1281,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '马略卡租杆指南：哪些选择真正值得',
         description: '马略卡租杆怎么选？是带自己的杆，还是当地租？哪些公司靠谱，哪些钱值得花，这里讲清楚。',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: '马略卡租杆指南',
       },
       meta: {
@@ -1334,7 +1334,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Majorque est-elle bonne pour le golf ? La réponse honnête',
         description: 'Une réponse honnête sur Majorque comme destination golf : qualité des parcours, climat, trajets et pour quels joueurs l\'île fonctionne le mieux.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: 'Majorque est-elle bonne pour le golf ?',
       },
       meta: {
@@ -1382,7 +1382,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Is Mallorca goed voor golf? Het eerlijke antwoord',
         description: 'Een eerlijk antwoord op de vraag of Mallorca een sterke golfbestemming is: baankwaliteit, klimaat, reistijd en voor wie het eiland het meest logisch is.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: 'Is Mallorca goed voor golf?',
       },
       meta: {
@@ -1430,7 +1430,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Ar Mallorca bra for golf? Det arliga svaret',
         description: 'Ett arligt svar pa om Mallorca ar en stark golfdestination: banstandard, klimat, restider och for vilka spelare on fungerar bast.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: 'Ar Mallorca bra for golf?',
       },
       meta: {
@@ -1478,7 +1478,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '马略卡适合打高尔夫吗？诚实答案',
         description: '从球场质量、天气、路程和整体体验来看，马略卡到底是不是一个真正值得来的高尔夫目的地？',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: '马略卡适合打高尔夫吗？',
       },
       meta: {
@@ -1526,7 +1526,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Une journée à Son Gual : à quoi ressemble vraiment l’expérience',
         description: 'De l’arrivée jusqu’au dernier putt puis au déjeuner sur la terrasse : voici à quoi ressemble vraiment une journée à Son Gual avec un professionnel PGA.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Une journée à Son Gual',
       },
       meta: {
@@ -1568,7 +1568,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Een dag op Son Gual: hoe die ervaring er echt uitziet',
         description: 'Van aankomst tot laatste putt en lunch op het terras: zo voelt een dag op Son Gual met een PGA professional werkelijk aan.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Een dag op Son Gual',
       },
       meta: {
@@ -1610,7 +1610,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'En dag på Son Gual: hur upplevelsen faktiskt ser ut',
         description: 'Från ankomst till sista putt och lunch på terrassen: så känns en dag på Son Gual med ett PGA-proffs på riktigt.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'En dag på Son Gual',
       },
       meta: {
@@ -1652,7 +1652,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '在Son Gual的一天：这类体验到底是什么样',
         description: '从抵达到最后一推，再到露台午餐，一整天在Son Gual与职业教练同行，到底会是什么体验。',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: '在Son Gual的一天',
       },
       meta: {
@@ -1696,7 +1696,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Golfreise nach Mallorca planen: der praktische Guide',
         description: 'Mallorca-Golfreise planen? Hier ist die ehrliche Anleitung zu Reisezeit, Plätzen, Transport, Ausrüstung und allem abseits des Platzes.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Golfreise nach Mallorca planen',
       },
       meta: {
@@ -1749,7 +1749,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Cómo planificar un viaje de golf a Mallorca',
         description: 'Viaje de golf a Mallorca: cuándo venir, qué campos priorizar, cuántos días jugar, cómo moverse y qué hacer fuera del golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
         imageAlt: 'Cómo planificar un viaje de golf a Mallorca',
       },
       meta: {
@@ -1804,7 +1804,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Die beste Zeit für Golf auf Mallorca',
         description: 'Monat für Monat: Wetter, Preise, Platzbedingungen und wann Mallorca als Golfziel wirklich am meisten Sinn ergibt.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'Die beste Zeit für Golf auf Mallorca',
       },
       meta: {
@@ -1849,7 +1849,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'La mejor época para jugar al golf en Mallorca',
         description: 'Mes a mes: clima, precios, estado de los campos y cuándo Mallorca ofrece su mejor versión para el golf.',
-        image: 'https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
         imageAlt: 'La mejor época para jugar al golf en Mallorca',
       },
       meta: {
@@ -1896,7 +1896,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Die besten Golfplätze auf Mallorca 2026',
         description: 'Mein ehrliches Ranking der besten Golfplätze auf Mallorca - je nach Spielertyp, Anspruch, Budget und Reisezeit.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Die besten Golfplaetze auf Mallorca 2026',
       },
       meta: {
@@ -1950,7 +1950,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Los mejores campos de golf de Mallorca 2026',
         description: 'Mi clasificación honesta de los mejores campos de golf de Mallorca según tipo de jugador, nivel, presupuesto y objetivo del viaje.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Los mejores campos de golf de Mallorca 2026',
       },
       meta: {
@@ -2006,7 +2006,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Leihschläger auf Mallorca: was sich wirklich lohnt',
         description: 'Leihschläger auf Mallorca ehrlich erklärt: eigene Schläger mitbringen oder leihen, welche Anbieter taugen und wo sich Geld sparen lässt.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Leihschläger auf Mallorca',
       },
       meta: {
@@ -2059,7 +2059,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Alquiler de palos en Mallorca: lo que de verdad merece la pena',
         description: 'Alquiler de palos en Mallorca explicado con honestidad: traer los propios palos o alquilar, qué empresas funcionan y dónde merece la pena gastar.',
-        image: 'https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
         imageAlt: 'Alquiler de palos en Mallorca',
       },
       meta: {
@@ -2114,7 +2114,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Ist Mallorca gut für Golf? Die ehrliche Antwort',
         description: 'Ist Mallorca wirklich ein gutes Golfziel? Die ehrliche Antwort zu Platzqualität, Klima, Reisewegen und dafür, für wen die Insel am meisten Sinn ergibt.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: 'Ist Mallorca gut für Golf?',
       },
       meta: {
@@ -2162,7 +2162,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '¿Es Mallorca buena para el golf? La respuesta honesta',
         description: 'Una respuesta honesta sobre si Mallorca merece la pena como destino de golf: calidad de campos, clima, desplazamientos y para quien encaja mejor.',
-        image: 'https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
+        image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
         imageAlt: '¿Es Mallorca buena para el golf?',
       },
       meta: {
@@ -2212,7 +2212,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Ein Tag in Son Gual: wie das Erlebnis wirklich aussieht',
         description: 'Vom Weg zum Clubhaus bis zum letzten Putt und dem Mittagessen auf der Terrasse - so fühlt sich ein Tag in Son Gual mit einem PGA-Professional wirklich an.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Ein Tag in Son Gual',
       },
       meta: {
@@ -2254,7 +2254,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Un día en Son Gual: cómo es realmente la experiencia',
         description: 'Desde la llegada hasta el último putt y la comida en la terraza: así se vive de verdad un día en Son Gual con un profesional PGA.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Un día en Son Gual',
       },
       meta: {
@@ -2296,7 +2296,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Une journée à Son Gual : à quoi ressemble vraiment l’expérience',
         description: 'De l’arrivée au club-house jusqu’au dernier putt puis au déjeuner en terrasse : voici à quoi ressemble vraiment une journée à Son Gual avec un professionnel PGA.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Une journée à Son Gual',
       },
       meta: {
@@ -2338,7 +2338,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'Een dag op Son Gual: hoe de ervaring er echt uitziet',
         description: 'Van aankomst bij het clubhuis tot de laatste putt en de lunch op het terras: zo voelt een dag op Son Gual met een PGA professional echt aan.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'Een dag op Son Gual',
       },
       meta: {
@@ -2380,7 +2380,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: 'En dag på Son Gual: hur upplevelsen faktiskt ser ut',
         description: 'Från ankomsten till klubbhuset till sista putten och lunchen på terrassen: så känns en dag på Son Gual med en PGA-professional på riktigt.',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: 'En dag på Son Gual',
       },
       meta: {
@@ -2422,7 +2422,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       metadata: {
         title: '在 Son Gual 的一天：这段体验到底是什么样子',
         description: '从抵达会所，到最后一推，再到露台午餐，这就是与 PGA 职业教练一起在 Son Gual 度过一天的真实感受。',
-        image: 'https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
+        image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
         imageAlt: '在 Son Gual 的一天',
       },
       meta: {
@@ -2469,7 +2469,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Combien coûte le golf à Majorque ? Le vrai détail 2026",
         "description": "Combien coûte le golf à Majorque en 2026 ? Green fees, location de clubs, voiturette et déjeuner, expliqués clairement par un professionnel PGA sur place.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
         "imageAlt": "Combien coûte le golf à Majorque ? Le vrai détail 2026"
       },
       "meta": {
@@ -2657,7 +2657,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Wat kost golf op Mallorca? Het complete overzicht voor 2026",
         "description": "Wat kost golf op Mallorca in 2026? Greenfees, clubhuur, buggys en lunch - het eerlijke kostenoverzicht van een PGA-professional op het eiland.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
         "imageAlt": "Wat kost golf op Mallorca? Het complete overzicht voor 2026"
       },
       "meta": {
@@ -2845,7 +2845,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026",
         "description": "Vad kostar golf på Mallorca 2026? Greenfee, klubbhyror, buggy och lunch - en rak kostnadsbild från ett PGA-proffs på ön.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
         "imageAlt": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026"
       },
       "meta": {
@@ -3033,7 +3033,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡打高尔夫要花多少钱？2026完整费用解析",
         "description": "2026年马略卡高尔夫真实费用解析：果岭费、租杆、球车、午餐，以及哪些地方值得花钱，哪些地方可以省。",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-golf-cost/Arabella Pitch and Putt.webp",
         "imageAlt": "马略卡打高尔夫要花多少钱？2026完整费用解析"
       },
       "meta": {
@@ -3223,7 +3223,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Planifier un voyage de golf à Majorque",
         "description": "Quand venir, quels parcours prioriser, combien de parties jouer, comment se deplacer et quoi faire hors du golf.",
-        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
         "imageAlt": "Planifier un voyage de golf à Majorque"
       },
       "meta": {
@@ -3398,7 +3398,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Een golfreis naar Mallorca plannen",
         "description": "Wanneer komen, welke banen prioriteit geven, hoeveel rondes spelen, hoe u zich verplaatst en wat u buiten golf doet.",
-        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
         "imageAlt": "Een golfreis naar Mallorca plannen"
       },
       "meta": {
@@ -3573,7 +3573,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Planera en golfresa till Mallorca",
         "description": "När man ska åka, vilka banor man ska prioritera, hur många rundor som är rimliga och hur man rör sig runt på ön.",
-        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
         "imageAlt": "Planera en golfresa till Mallorca"
       },
       "meta": {
@@ -3748,7 +3748,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "如何规划马略卡高尔夫之旅",
         "description": "什么时候来、先打哪些球场、打几轮最合理、怎么出行，以及不打球的时候该做什么。",
-        "image": "https://mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp",
         "imageAlt": "如何规划马略卡高尔夫之旅"
       },
       "meta": {
@@ -3925,7 +3925,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "La meilleure période pour jouer au golf à Majorque",
         "description": "Mois par mois : météo, tarifs, état des parcours et quand Majorque offre sa meilleure version pour le golf.",
-        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
         "imageAlt": "La meilleure période pour jouer au golf à Majorque"
       },
       "meta": {
@@ -4079,7 +4079,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "De beste tijd om golf te spelen op Mallorca",
         "description": "Maand voor maand: weer, prijzen, baancondities en wanneer Mallorca op zijn best is voor golf.",
-        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
         "imageAlt": "De beste tijd om golf te spelen op Mallorca"
       },
       "meta": {
@@ -4233,7 +4233,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Bästa tiden att spela golf på Mallorca",
         "description": "Månad för månad: väder, priser, banförhållanden och när Mallorca är som bäst för golf.",
-        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
         "imageAlt": "Bästa tiden att spela golf på Mallorca"
       },
       "meta": {
@@ -4387,7 +4387,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡打高尔夫的最佳时间",
         "description": "按月份看天气、价格、球场状态，以及什么时候来马略卡打球最舒服、最值得。",
-        "image": "https://mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp",
         "imageAlt": "马略卡打高尔夫的最佳时间"
       },
       "meta": {
@@ -4543,7 +4543,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Les meilleurs parcours de golf à Majorque 2026",
         "description": "Mon classement honnête des meilleurs parcours de golf à Majorque selon le niveau, le type de voyage, le budget et l'objectif de jeu.",
-        "image": "https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp",
+        "image": "https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp",
         "imageAlt": "Les meilleurs parcours de golf à Majorque 2026"
       },
       "meta": {
@@ -4767,7 +4767,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "De beste golfbanen van Mallorca 2026",
         "description": "Mijn eerlijke rangschikking van de beste golfbanen van Mallorca per type speler, budget, reisdoel en gewenste ervaring.",
-        "image": "https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp",
+        "image": "https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp",
         "imageAlt": "De beste golfbanen van Mallorca 2026"
       },
       "meta": {
@@ -4991,7 +4991,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "De bästa golfbanorna på Mallorca 2026",
         "description": "Min ärliga rangordning av Mallorcas bästa golfbanor utifrån speltyp, budget, resmål och vilken typ av upplevelse man vill ha.",
-        "image": "https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp",
+        "image": "https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp",
         "imageAlt": "De bästa golfbanorna på Mallorca 2026"
       },
       "meta": {
@@ -5215,7 +5215,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡最佳高尔夫球场 2026",
         "description": "从职业教练视角出发，按球手类型、预算、时间和体验目标，诚实排序马略卡最值得打的球场。",
-        "image": "https://mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp",
+        "image": "https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp",
         "imageAlt": "马略卡最佳高尔夫球场 2026"
       },
       "meta": {
@@ -5441,7 +5441,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Location de clubs a Majorque : ce qui vaut vraiment le coup",
         "description": "Location de clubs a Majorque expliquee honnetement : apporter ses propres clubs ou louer, quels prestataires sont fiables et ou il vaut la peine de depenser.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
         "imageAlt": "Location de clubs a Majorque"
       },
       "meta": {
@@ -5613,7 +5613,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Clubhuur op Mallorca: wat echt de moeite waard is",
         "description": "Clubhuur op Mallorca eerlijk uitgelegd: eigen clubs meenemen of huren, welke aanbieders betrouwbaar zijn en waar u beter wel of niet geld aan uitgeeft.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
         "imageAlt": "Clubhuur op Mallorca"
       },
       "meta": {
@@ -5785,7 +5785,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Klubbhyra pa Mallorca: vad som faktiskt ar vart det",
         "description": "Klubbhyra pa Mallorca forklarad utan fluff: ta med egna klubbor eller hyra, vilka foretag som fungerar och var pengarna gor mest nytta.",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
         "imageAlt": "Klubbhyra pa Mallorca"
       },
       "meta": {
@@ -5957,7 +5957,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡租杆指南：哪些选择真正值得",
         "description": "马略卡租杆怎么选？是带自己的杆，还是当地租？哪些公司靠谱，哪些钱值得花，这里讲清楚。",
-        "image": "https://mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
         "imageAlt": "马略卡租杆指南"
       },
       "meta": {
@@ -6131,7 +6131,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Majorque est-elle bonne pour le golf ? La réponse honnête",
         "description": "Une réponse honnête sur Majorque comme destination golf : qualité des parcours, climat, trajets et pour quels joueurs l'île fonctionne le mieux.",
-        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
         "imageAlt": "Majorque est-elle bonne pour le golf ?"
       },
       "meta": {
@@ -6290,7 +6290,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Is Mallorca goed voor golf? Het eerlijke antwoord",
         "description": "Een eerlijk antwoord op de vraag of Mallorca een sterke golfbestemming is: baankwaliteit, klimaat, reistijd en voor wie het eiland het meest logisch is.",
-        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
         "imageAlt": "Is Mallorca goed voor golf?"
       },
       "meta": {
@@ -6449,7 +6449,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "Ar Mallorca bra for golf? Det arliga svaret",
         "description": "Ett arligt svar pa om Mallorca ar en stark golfdestination: banstandard, klimat, restider och for vilka spelare on fungerar bast.",
-        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
         "imageAlt": "Ar Mallorca bra for golf?"
       },
       "meta": {
@@ -6608,7 +6608,7 @@ const REPAIRED_ARTICLE_LOCALES = {
       "metadata": {
         "title": "马略卡适合打高尔夫吗？诚实答案",
         "description": "从球场质量、天气、路程和整体体验来看，马略卡到底是不是一个真正值得来的高尔夫目的地？",
-        "image": "https://mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
+        "image": "https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp",
         "imageAlt": "马略卡适合打高尔夫吗？"
       },
       "meta": {

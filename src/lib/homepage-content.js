@@ -301,6 +301,10 @@ export const HOME_CONTENT = {
           a: 'Not at all. The experience adjusts to your game: beginners and scratch players both get something from the day. The only requirement is wanting a golf day that feels more personal than a standard tee time.',
         },
         {
+          q: 'Do you offer golf lessons or coaching in Mallorca?',
+          a: 'Yes, but the strongest version is on-course coaching rather than a range lesson. I help with club choice, course management, scoring decisions, and the swing patterns that show up when you are actually playing.',
+        },
+        {
           q: 'Which course do you use?',
           a: "It depends on you. Son Gual and Alcanada are my primary venues for a serious full day. For beginners, groups, or shorter rounds, there are better options, and I'll tell you honestly which one fits.",
         },
@@ -904,6 +908,40 @@ for (const [locale, override] of Object.entries(HOME_OVERRIDES)) {
     locale,
     ...override,
   })
+}
+
+const HOME_COACHING_FAQ = {
+  de: {
+    q: 'Bieten Sie Golfunterricht oder Coaching auf Mallorca an?',
+    a: 'Ja. Am sinnvollsten ist Coaching direkt auf dem Platz statt einer isolierten Range-Stunde: Schlaegerwahl, Strategie, Entscheidungen und die Schwungmuster, die waehrend einer echten Runde auftauchen.',
+  },
+  es: {
+    q: 'Ofrece clases de golf o coaching en Mallorca?',
+    a: 'Si. La version mas util es coaching en el campo, no una clase aislada en el range: seleccion de palo, estrategia, decisiones de juego y los patrones de swing que aparecen durante una vuelta real.',
+  },
+  fr: {
+    q: 'Proposez-vous des cours de golf ou du coaching a Majorque ?',
+    a: 'Oui. La version la plus utile se fait sur le parcours plutot que sur un practice : choix de club, strategie, decisions de jeu et tendances de swing visibles en situation reelle.',
+  },
+  nl: {
+    q: 'Geeft u golflessen of coaching op Mallorca?',
+    a: 'Ja. De sterkste vorm is coaching op de baan in plaats van een losse les op de driving range: clubkeuze, strategie, beslissingen en de swingpatronen die tijdens een echte ronde zichtbaar worden.',
+  },
+  sv: {
+    q: 'Erbjuder du golflektioner eller coaching pa Mallorca?',
+    a: 'Ja. Den mest anvandbara formen ar coaching ute pa banan, inte en separat rangelektion: klubbval, strategi, beslut och de svingmonster som syns nar du spelar en riktig rond.',
+  },
+  zh: {
+    q: '可以在马略卡上高尔夫课或做球场指导吗？',
+    a: '可以。最有效的方式不是单独在练习场上一节课，而是在真实球场上指导：选杆、策略、击球决定，以及一轮球中真正暴露出来的挥杆模式。',
+  },
+}
+
+for (const [locale, faq] of Object.entries(HOME_COACHING_FAQ)) {
+  const items = HOME_CONTENT[locale]?.faq?.items
+  if (Array.isArray(items) && !items.some((item) => item.q === faq.q)) {
+    items.splice(1, 0, faq)
+  }
 }
 
 const HOME_AUDIT_OVERRIDES = {
