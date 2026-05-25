@@ -92,15 +92,10 @@ const LANG_CODES = NAV_LOCALES.map((locale) => ({
 export default function Nav({ transparent = false, lang }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
 
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
   const resolvedPathname = pathname || '/'
-  const activeLang = lang || (mounted ? getLocaleFromPath(resolvedPathname) : 'en')
+  const activeLang = lang || getLocaleFromPath(resolvedPathname)
   const config = LANG_CONFIG[activeLang] || LANG_CONFIG.en
   const activeLangCode = activeLang === 'en' ? 'EN' : activeLang.toUpperCase()
 

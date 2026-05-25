@@ -172,16 +172,27 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
+        <Script id="google-analytics-deferred" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0Z2BRNWB4N');
+            (function () {
+              var init = function () {
+                if (window.__mmgGaLoaded) return;
+                window.__mmgGaLoaded = true;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N';
+                document.head.appendChild(s);
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = function(){window.dataLayer.push(arguments);};
+                window.gtag('js', new Date());
+                window.gtag('config', 'G-0Z2BRNWB4N');
+              };
+              if ('requestIdleCallback' in window) {
+                requestIdleCallback(init, { timeout: 3000 });
+              } else {
+                setTimeout(init, 2000);
+              }
+            })();
           `}
         </Script>
 
