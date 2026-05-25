@@ -118,7 +118,7 @@ export default function Nav({ transparent = false, lang }) {
   return (
     <>
       <nav className={navClass} id="nav">
-        <Link href={activeLang === 'en' ? '/' : `/${activeLang}`} className="nav__logo">
+        <Link href={activeLang === 'en' ? '/' : `/${activeLang}`} prefetch={false} className="nav__logo">
           <img
             src={logoSrc}
             alt="Mr Mallorca Golf"
@@ -133,17 +133,17 @@ export default function Nav({ transparent = false, lang }) {
         <ul className="nav__links">
           {config.links.map(({ href, label }) => (
             <li key={href}>
-              <Link href={href} className={isActive(href) ? 'active' : ''}>{label}</Link>
+              <Link href={href} prefetch={false} className={isActive(href) ? 'active' : ''}>{label}</Link>
             </li>
           ))}
           <li>
-            <Link href={config.cta.href} className="nav__cta"><span>{config.cta.label}</span></Link>
+            <Link href={config.cta.href} prefetch={false} className="nav__cta"><span>{config.cta.label}</span></Link>
           </li>
           <li>
             <div className="nav__lang">
               {LANG_CODES.map(({ code, locale, label }, i) => (
                 <span key={code}>
-                  <Link href={getLanguageSwitchPath(resolvedPathname, locale)} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
+                  <Link href={getLanguageSwitchPath(resolvedPathname, locale)} prefetch={false} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
                   {i < LANG_CODES.length - 1 && <span className="nav__lang-sep"> · </span>}
                 </span>
               ))}
@@ -162,16 +162,16 @@ export default function Nav({ transparent = false, lang }) {
 
       <div className={`nav__mobile${menuOpen ? ' open' : ''}`}>
         {config.links.map(({ href, label }) => (
-          <Link key={href} href={href} className={isActive(href) ? 'active' : ''} onClick={() => setMenuOpen(false)}>
+          <Link key={href} href={href} prefetch={false} className={isActive(href) ? 'active' : ''} onClick={() => setMenuOpen(false)}>
             {label}
           </Link>
         ))}
-        <Link href={config.cta.href} className="mob-cta" onClick={() => setMenuOpen(false)}>
+        <Link href={config.cta.href} prefetch={false} className="mob-cta" onClick={() => setMenuOpen(false)}>
           {config.cta.label} →
         </Link>
         <div className="mob-lang">
           {LANG_CODES.map(({ code, locale, label }) => (
-            <Link key={code} href={getLanguageSwitchPath(resolvedPathname, locale)} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
+            <Link key={code} href={getLanguageSwitchPath(resolvedPathname, locale)} prefetch={false} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               {label}
             </Link>
           ))}

@@ -128,7 +128,7 @@ export default function Footer({ lang }) {
   return (
     <footer className="footer">
       <div className="footer__brand">
-        <Link href={prefix || '/'} className="nav__logo footer__logo">
+        <Link href={prefix || '/'} prefetch={false} className="nav__logo footer__logo">
           <img
             src="/logo-white-96.webp"
             alt="Mr Mallorca Golf"
@@ -146,25 +146,25 @@ export default function Footer({ lang }) {
       <div className="footer__col">
         <h3>{copy.experiences}</h3>
         <ul>
-          {copy.itinerary ? <li><Link href={`${prefix}/plan-your-trip`}>{copy.itinerary}</Link></li> : null}
-          <li><Link href={`${prefix}/play-with-a-pro`}>{copy.pwap}</Link></li>
-          <li><Link href={getADayPath(locale)}>{copy.day}</Link></li>
-          {copy.enquire ? <li><Link href={`${prefix}/contact`}>{copy.enquire}</Link></li> : null}
+          {copy.itinerary ? <li><Link href={`${prefix}/plan-your-trip`} prefetch={false}>{copy.itinerary}</Link></li> : null}
+          <li><Link href={`${prefix}/play-with-a-pro`} prefetch={false}>{copy.pwap}</Link></li>
+          <li><Link href={getADayPath(locale)} prefetch={false}>{copy.day}</Link></li>
+          {copy.enquire ? <li><Link href={`${prefix}/contact`} prefetch={false}>{copy.enquire}</Link></li> : null}
         </ul>
       </div>
 
       <div className="footer__col">
         <h3>{copy.guide}</h3>
         <ul>
-          <li><Link href={`${prefix}/guides`}>{copy.guideArticles || copy.guide}</Link></li>
-          <li><Link href={`${prefix}/golf-courses`}>{copy.allCourses}</Link></li>
+          <li><Link href={`${prefix}/guides`} prefetch={false}>{copy.guideArticles || copy.guide}</Link></li>
+          <li><Link href={`${prefix}/golf-courses`} prefetch={false}>{copy.allCourses}</Link></li>
         </ul>
       </div>
 
       <div className="footer__col">
         <h3>{copy.about}</h3>
         <ul>
-          <li><Link href={`${prefix}/about`}>{copy.about}</Link></li>
+          <li><Link href={`${prefix}/about`} prefetch={false}>{copy.about}</Link></li>
           <li><a href="https://www.instagram.com/mrmallorcagolf" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li><a href="mailto:andy@mrmallorcagolf.com">Email</a></li>
         </ul>
@@ -173,24 +173,24 @@ export default function Footer({ lang }) {
       <div className="footer__col">
         <h3>{copy.newsletter}</h3>
         <ul>
-          <li><Link href={`${prefix}/subscribe`}>{copy.newsletterLink}</Link></li>
+          <li><Link href={`${prefix}/subscribe`} prefetch={false}>{copy.newsletterLink}</Link></li>
         </ul>
       </div>
 
       <div className="footer__bottom">
         <p>
           {'\u00a9'} 2026 Mr Mallorca Golf {'\u00b7'} Andy Griffiths {'\u00b7'} PGA Advanced Professional {'\u00b7'}{' '}
-          <Link href={getLegalPath('privacy-policy', locale)} className="footer__legal-link">
+          <Link href={getLegalPath('privacy-policy', locale)} prefetch={false} className="footer__legal-link">
             {copy.privacy}
           </Link>{' '}
           {'\u00b7'}{' '}
-          <Link href={getLegalPath('terms', locale)} className="footer__legal-link">
+          <Link href={getLegalPath('terms', locale)} prefetch={false} className="footer__legal-link">
             {copy.terms}
           </Link>
         </p>
         <div className="footer__lang">
           {NAV_LOCALES.map((code) => (
-            <Link key={code} href={getLanguageSwitchPath(pathname, code)}>
+            <Link key={code} href={code === 'en' ? '/' : `/${code}`} prefetch={false}>
               {code === 'zh' ? '中文' : code.toUpperCase()}
             </Link>
           ))}
@@ -199,3 +199,6 @@ export default function Footer({ lang }) {
     </footer>
   )
 }
+
+
+

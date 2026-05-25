@@ -1,14 +1,12 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import RevealObserver from '../components/RevealObserver'
-import ScrollToTopOnRouteChange from '../components/ScrollToTopOnRouteChange'
 import WhatsAppButton from '../components/WhatsAppButton'
 
 export default function HomeLayout({ lang = 'en', children }) {
   return (
     <>
       <RevealObserver />
-      <ScrollToTopOnRouteChange />
       <Nav lang={lang} transparent={true} />
       <main>{children}</main>
       <Footer lang={lang} />
