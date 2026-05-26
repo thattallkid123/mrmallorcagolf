@@ -16,6 +16,11 @@ const nextConfig = {
         destination: '/guides/alcanada-review',
         permanent: true,
       },
+      {
+        source: '/golf-courses/alcanada-review',
+        destination: '/guides/alcanada-review',
+        permanent: true,
+      },
     ]
   },
   async headers() {

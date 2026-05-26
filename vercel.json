@@ -42,6 +42,11 @@
       "permanent": true
     },
     {
+      "source": "/golf-courses/alcanada-review",
+      "destination": "/guides/alcanada-review",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "mrmallorcagolf.com" }],
       "destination": "https://www.mrmallorcagolf.com/$1",
