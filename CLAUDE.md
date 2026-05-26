@@ -18,31 +18,50 @@
 
 Before substantial work, read:
 
-<<<<<<< HEAD
 1. `BRANCHES.md`
 2. `CONTENT_WORKFLOW.md`
 3. `COURSE_BLOG_PIPELINE.md` for course reviews
 4. `MMG_BRAND_VOICE_GUIDELINES.md` for any writing
 5. `MMG_WORK_STATUS.md` for current priorities
-=======
+
 ## Course scorecard data (par / SI / distances)
 
-**Source of truth:** `Reference/Scorecards/Scorecard PDFs/` — official club PDFs for all 24 courses.  
-**Human-readable master:** `Reference/SCORECARD_MASTER.md` — read this before touching any par/SI data.
+**Source of truth:** `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\Scorecards\Scorecard PDFs\` — official club PDFs for all 24 courses.  
+**Human-readable master:** `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\SCORECARD_MASTER.md` — read this before touching any par/SI data.  
+**Repo scorecard Excel:** `MMG_Scorecards.xlsx` in repo root — par/SI per hole, PDF-verified.
 
-There is **no auto-sync** for par/SI. When scorecard data changes, all of the following must be updated manually:
-1. PDF in `Scorecards/Scorecard PDFs/`
-2. `Reference/SCORECARD_MASTER.md`
-3. `mmg-tools/scoring-companion/index.html` — `courses` array
-4. `mmg-tools/strokes-gained/index.html` — par data
-5. `Reference/MMG_COURSE_MARKET_REFERENCE_2026.md` — hole tables
-6. `src/lib/golf-courses-data.js` — par value in `pills` text only
+There is **no auto-sync** for par/SI. When scorecard data changes, update manually:
+1. PDF in `Reference/Scorecards/Scorecard PDFs/`
+2. `Reference/SCORECARD_MASTER.md` (in Drive)
+3. `MMG_Scorecards.xlsx` (in repo)
+4. `src/lib/golf-courses-data.js` — par value in `pills` text only
+5. Any blog post content mentioning that course's par
 
-The pricing sync chain (xlsx → JSON → mmg-tools) covers **green fees only** — it does not touch par/SI.  
-`src/lib/mallorca-tracker-courses.js` uses placeholder data for a prototype — do not update from scorecard data.
+## Course pricing data — sync chain
+
+**The system:** Edit Excel → run script → JSON + readable MD regenerate automatically.
+
+| File | Role | Edit? |
+|---|---|---|
+| `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_EDIT-THIS.xlsx` | Source of truth for green fees, buggy, clubs | ✅ Edit this |
+| `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_DO-NOT-EDIT.json` | Generated JSON master | ❌ Script only |
+| `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_READABLE_DO-NOT-EDIT.md` | Human-readable output | ❌ Script only |
+| `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_MARKET_PRICING_RESEARCH_2026.csv` | Raw research reference | Update when new data arrives |
+
+**After editing the Excel, run:**
+```
+python scripts/sync-pricing.py
+```
+
+**What the sync does NOT cover** — must update manually when pricing changes:
+- `src/lib/golf-courses-data.js` — pills text (e.g. `Peak €22 / Low €14`)
+- `src/lib/guide-article-content.js` — EN blog post pricing references
+- `src/lib/guide-article-content-localized.js` — all 6 language versions
+- Any `guide-post-content.js` entries mentioning specific prices
+
+`src/lib/mallorca-tracker-courses.js` uses placeholder data for a prototype — do not update from pricing data.
 
 Writing guardrails are in the repo at `MMG_BRAND_VOICE_GUIDELINES.md` — do NOT use the old `MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`, it is superseded.
->>>>>>> 977f0e4 (feat: add Plan Your Trip card to PWAP pricing grid)
 
 Workspace selection lives one folder up:
 
