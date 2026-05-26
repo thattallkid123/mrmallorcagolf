@@ -4,6 +4,20 @@ const nextConfig = {
   images: {
     qualities: [75, 88, 90],
   },
+  async redirects() {
+    return [
+      {
+        source: '/fr/privacy-policy',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/golf-courses/alcanada',
+        destination: '/guides/alcanada-review',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     const contentSecurityPolicy = [
       "default-src 'self'",
