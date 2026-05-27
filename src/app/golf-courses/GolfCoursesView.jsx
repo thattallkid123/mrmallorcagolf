@@ -1,17 +1,7 @@
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
 import PageLayout from '../../components/PageLayout'
+import GolfCoursesClient from './GolfCoursesClient'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
-
-const GolfCoursesClient = dynamic(() => import('./GolfCoursesClient'), {
-  ssr: false,
-  loading: () => (
-    <section style={{ padding: '64px 20px', maxWidth: 1100, margin: '0 auto' }}>
-      <p className="eyebrow">Loading course explorer</p>
-      <h2 className="serif-display" style={{ marginTop: 8 }}>Preparing filters and full course data...</h2>
-    </section>
-  ),
-})
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
