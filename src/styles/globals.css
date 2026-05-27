@@ -2042,7 +2042,7 @@ body {
 .contact-detail__value a { color: var(--gold-light); text-decoration: none; }
 /* Contact cards — redesigned info section */
 .contact-cards { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 12px; position: relative; z-index: 1; }
-.contact-card { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 22px; text-decoration: none; color: inherit; transition: background 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury); cursor: pointer; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.contact-card { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 22px; text-decoration: none; color: inherit; transition: background 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury); cursor: pointer; }
 .contact-card:hover { background: rgba(255,255,255,0.10); border-color: rgba(255,255,255,0.2); transform: translateY(-2px); }
 .contact-card--whatsapp:hover { border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.07); }
 .contact-card--wechat:hover { border-color: rgba(9,183,0,0.4); background: rgba(9,183,0,0.07); }

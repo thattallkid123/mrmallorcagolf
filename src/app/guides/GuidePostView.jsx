@@ -116,7 +116,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
         <FillImageFrame
           src={block.src}
           alt={block.alt}
-          priority={block.priority}
+          priority={Boolean(block.priority || imageOrdinal === 0)}
           containerStyle={normalizeContainerStyle(block.containerStyle, { borderRadius: 2, aspectRatio: '5/4' })}
           imageStyle={{ objectPosition: 'center center', ...block.imageStyle }}
         />

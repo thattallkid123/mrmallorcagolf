@@ -1,9 +1,18 @@
-'use client'
-
+import dynamic from 'next/dynamic'
 import { getContactContent } from '../../lib/contact-content'
-import ContactFormPanel from './ContactFormPanel'
-import { trackEvent } from '../../lib/analytics'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
+
+const ContactFormPanel = dynamic(() => import('./ContactFormPanel'), {
+  ssr: false,
+  loading: () => (
+    <div className="contact-right">
+      <div className="form-header">
+        <p className="form-header__eyebrow">Loading form</p>
+        <h2>Preparing your enquiry form...</h2>
+      </div>
+    </div>
+  ),
+})
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
@@ -83,7 +92,6 @@ export default function ContactForm({ locale = 'en' }) {
             <a
               href="mailto:andy@mrmallorcagolf.com"
               className="contact-card"
-              onClick={() => trackEvent('contact_channel_click', { channel: 'email', language: locale })}
             >
               <span className="contact-card__icon">&#9993;</span>
               <div>
@@ -96,7 +104,6 @@ export default function ContactForm({ locale = 'en' }) {
               className="contact-card contact-card--whatsapp"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackEvent('contact_channel_click', { channel: 'whatsapp', language: locale })}
             >
               <span className="contact-card__icon">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="contact-card__icon-svg">
@@ -114,7 +121,6 @@ export default function ContactForm({ locale = 'en' }) {
                 className="contact-card contact-card--wechat"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackEvent('contact_channel_click', { channel: 'wechat', language: locale })}
               >
                 <span className="contact-card__icon">
                   <svg viewBox="0 0 24 24" fill="currentColor" className="contact-card__icon-svg">
@@ -141,7 +147,6 @@ export default function ContactForm({ locale = 'en' }) {
               className="contact-card"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackEvent('contact_channel_click', { channel: 'maps', language: locale })}
             >
               <span className="contact-card__icon">&#128205;</span>
               <div>

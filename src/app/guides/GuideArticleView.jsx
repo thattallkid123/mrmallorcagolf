@@ -83,7 +83,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
         <FillImageFrame
           src={block.src}
           alt={block.alt}
-          priority={block.priority}
+          priority={Boolean(block.priority || imageOrdinal === 0)}
           containerStyle={normalizeContainerStyle(block.containerStyle, defaultStyle)}
           imageStyle={
             block.fit === 'contain'
