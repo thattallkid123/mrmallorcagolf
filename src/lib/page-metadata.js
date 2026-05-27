@@ -32,9 +32,9 @@ const HOME_METADATA = {
       'Private Golftage auf Mallorca mit PGA Advanced Professional Andy Griffiths. Spielen Sie Son Gual, Alcanada und mehr - alles ist arrangiert.',
   },
   es: {
-    title: 'Golf en Mallorca con PGA Pro | Viajes y clases en campo',
+    title: 'Clases de Golf en Mallorca | PGA Pro · Mr Mallorca Golf',
     description:
-      'Planifique un viaje de golf en Mallorca con Andy Griffiths, PGA Advanced Professional: campos, itinerarios, recomendaciones locales y clases en campo Play With A Pro.',
+      'Clases de golf en Mallorca con Andy Griffiths, PGA Advanced Professional. Coaching en campo, consejos de recorrido, itinerarios y recomendaciones locales para su visita.',
   },
   fr: {
     title: 'Golf a Majorque avec PGA Pro | Mr Mallorca Golf',

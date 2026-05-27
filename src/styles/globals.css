@@ -2395,6 +2395,8 @@ select.form-control { cursor: pointer; }
 .course__note p { font-family: var(--font-serif); font-style: italic; font-size: 1rem; color: var(--pine); line-height: 1.6; margin: 0; }
 .course__footer { border-top: 1px solid var(--linen); padding: 16px 36px; display: flex; justify-content: space-between; align-items: center; background: linear-gradient(180deg, #faf6ef, #f2ebdf); }
 .course__footer-info { font-size: 10px; letter-spacing: 0.11em; text-transform: uppercase; color: var(--taupe); }
+.course__review-link { font-size: 10px; font-weight: 600; letter-spacing: 0.11em; text-transform: uppercase; color: var(--gold, #b8933a); text-decoration: none; white-space: nowrap; transition: color 0.2s; }
+.course__review-link:hover { color: var(--pine, #2d4a3e); }
 .course__link { font-size: 10px; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--pine); text-decoration: none; transition: color 0.2s; }
 .course__link:hover { color: var(--pine-mid); }
 
@@ -2972,6 +2974,55 @@ select.form-control { cursor: pointer; }
 
 /* Articles carousel dark variant — heading colour override */
 .guides-carousel-section--dark .guides-carousel-section__header .eyebrow { color: rgba(255,255,255,0.55); }
+
+/* Guides page performance overrides */
+.page-hero--guides {
+  min-height: 100vh;
+  background: #1a1916;
+}
+
+.page-hero--guides .page-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.page-hero--guides .page-hero__image--guides {
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.page-hero--guides .page-hero__overlay--guides {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.45) 55%, rgba(26,25,22,0.2) 100%);
+}
+
+.page-hero--guides .page-hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.guide-photo-card {
+  contain: layout paint;
+}
+
+@media (max-width: 760px) {
+  .guides-carousel__track {
+    scroll-snap-type: x proximity;
+  }
+
+  .guide-photo-card {
+    transition: none;
+    box-shadow: 0 12px 28px rgba(18,17,15,0.12);
+  }
+
+  .guide-photo-card__bg {
+    transition: none;
+  }
+}
 
 .career-strip { background: linear-gradient(180deg, #171613 0%, #1d1a17 100%); padding: clamp(48px,6vw,72px) 0; overflow: hidden; }
 .career-strip__header { max-width: 1200px; margin: 0 auto 2.5rem; padding: 0 clamp(20px,5vw,60px); }

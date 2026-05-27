@@ -1,3 +1,40 @@
+## 2026-05-25
+
+### Mr Mallorca Golf
+- [business] Researched UHNWI partnership opportunities in Mallorca: Mandarin Oriental Punta Negra (opens 1 Jun 2026), Mashie Golf (11k UK members), IPM Group yachts, villa/concierge channels; saved strategy doc to Drive Active with Tier 1 outreach targets
+- [admin] Corrected UHNWI strategy doc: Chinese visa-free policy applies to Spain→China not Chinese into Spain; corrected arrival stats and China growth angle
+
+### Personal Systems
+- [admin] Set up Autonomo business file structure: clarified `MMG_Financial_Reference_2026_v3.xlsx` already existed in Drive Active, deleted Downloads duplicate and superseded cashflow file, confirmed Autonomo projection files in Drive To Do
+
+## 2026-05-24
+
+### Mr Mallorca Golf
+- [site] Fixed GitHub itinerary-preview styling: 4-card grid on homepage (auto-fit), note below features, Enquire button spacing/padding tightened across all pricing cards
+- [site] Restructured site pricing and packages on itinerary-preview branch (work in progress, workspace instability)
+- [admin] Cleaned up GitHub branches: identified stale branches (aeo-seo, seo-i18n-foundation, legacy-live-pre-i18n, test/email-identity), deleted email test branch, clarified what each branch is for
+- [admin] Generated public Vercel share link for itinerary-preview (24hr link for stakeholder review)
+- [admin] Created HANDOVER.md for itinerary-preview branch with site direction rationale, voice rules, photo locations, and outstanding task list
+- [admin] Built `MMG_REPO_TIDY_AND_DIRECTION.md` and saved to Drive Active — comprehensive handover doc for switching to lighter models for mechanical cleanup tasks
+
+### Tech / AI Workflow
+- [automation] Installed Playwright in mrmallorcagolf-real repo and created `render-page.mjs` headless renderer for visual QA
+
+## 2026-05-23
+
+### Mr Mallorca Golf
+- [site] Guides page redesigned: course reviews as scroll carousel (light bg) + articles as second dark-row carousel; hover zoom fully contained (no colour bleed)
+- [site] Fixed em dashes in `whatNext` body copy across all 7 locale contact form panels
+- [admin] Organized Reference/scorecards/ folder: 17 PDF scorecards confirmed, 1 image (Son Servera), 3 HTML offcourse pages, 3 data-only entries; wrote INDEX.md with all 24 courses par+SI
+- [admin] Built `MMG_Scorecards.xlsx` from SCORECARD_MASTER.md — 3 tabs (Codex Flat 396 rows, Hole by Hole, Course Summary); verified all 24 courses against source, fixed Vall d'Or SI typo
+- [admin] Renamed Reference folder files with EDIT-THIS / DO-NOT-EDIT signals; updated internal markdown references to match
+- [admin] Created player review folder structure in Drive Private/Coaching/ — archived Jo and Julien May 2025 PDFs, wrote MMG_PLAYER_REVIEW_GUIDE.md as baseline for future post-round feedback docs
+- [admin] Improved MMG Control Panel HTML: added 📋 copy-path button per favourite so paths paste directly into Explorer address bar
+- [business] Son Antem East blog post git issues resolved (stale lock file, branch conflicts); committed fix to main via PowerShell
+
+### Personal Systems
+- [site] Fixed Spanish language speaking app: removed stale `speechUnlocking` variable references causing silent `driveLoop` crash; pushed to GitHub/Netlify
+
 ## 2026-05-22
 
 - [site] Localized the embedded Plan Your Trip planner across all 7 locales while keeping the visible header switch at 5 languages.

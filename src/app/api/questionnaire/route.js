@@ -4,12 +4,27 @@ import {
   checkRateLimit,
   escapeHtml,
   getClientKey,
+  isAllowedOrigin,
+  isJsonRequest,
+  isPayloadTooLarge,
   isValidEmail,
   sanitizeMultilineText,
   sanitizeText,
 } from '../../../lib/request-safety'
 
 export async function POST(request) {
+  if (!isAllowedOrigin(request)) {
+    return Response.json({ ok: false, error: 'Origin not allowed.' }, { status: 403 })
+  }
+
+  if (!isJsonRequest(request)) {
+    return Response.json({ ok: false, error: 'Unsupported content type.' }, { status: 415 })
+  }
+
+  if (isPayloadTooLarge(request, 48 * 1024)) {
+    return Response.json({ ok: false, error: 'Payload too large.' }, { status: 413 })
+  }
+
   if (!checkRateLimit(getClientKey(request, 'questionnaire'), 5)) {
     return Response.json(
       { ok: false, error: 'Too many submissions from this connection. Please try again shortly.' },

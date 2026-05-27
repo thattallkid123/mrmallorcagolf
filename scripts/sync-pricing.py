@@ -33,9 +33,9 @@ from pathlib import Path
 
 # ── Paths ────────────────────────────────────────────────────────────────────
 DRIVE_REF = Path(r"C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference")
-JSON_PATH = DRIVE_REF / "MMG_COURSE_PRICING_MASTER.json"
-EXCEL_PATH = DRIVE_REF / "MMG_COURSE_PRICING_MASTER.xlsx"
-READABLE_PATH = DRIVE_REF / "MMG_COURSE_PRICING_MASTER_READABLE.md"
+JSON_PATH = DRIVE_REF / "MMG_COURSE_PRICING_MASTER_DO-NOT-EDIT.json"
+EXCEL_PATH = DRIVE_REF / "MMG_COURSE_PRICING_MASTER_EDIT-THIS.xlsx"
+READABLE_PATH = DRIVE_REF / "MMG_COURSE_PRICING_MASTER_READABLE_DO-NOT-EDIT.md"
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 def val(v):

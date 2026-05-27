@@ -1,6 +1,9 @@
+const path = require('path')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
+  outputFileTracingRoot: path.join(__dirname),
   images: {
     formats: ['image/avif', 'image/webp'],
     qualities: [75, 88, 90],

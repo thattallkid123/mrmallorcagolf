@@ -549,6 +549,11 @@ function CourseCard({ c, lang = 'en' }) {
       </div>
       <div className="course__footer">
         <span className="course__footer-info">{footerText}</span>
+        {c.reviewSlug && lang === 'en' && (
+          <Link href={`/guides/${c.reviewSlug}`} className="course__review-link">
+            Read my full review &rarr;
+          </Link>
+        )}
       </div>
     </div>
   )

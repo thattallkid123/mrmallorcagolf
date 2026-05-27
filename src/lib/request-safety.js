@@ -1,4 +1,5 @@
 const DEFAULT_WINDOW_MS = 5 * 60 * 1000
+const DEFAULT_ALLOWED_ORIGINS = new Set(['https://www.mrmallorcagolf.com', 'https://mrmallorcagolf.com'])
 
 function getStore() {
   if (!globalThis.__mrmallorcagolfRateLimitStore) {
@@ -12,6 +13,25 @@ export function getClientKey(request, scope = 'default') {
   const forwardedFor = request.headers.get('x-forwarded-for')
   const ip = forwardedFor ? forwardedFor.split(',')[0].trim() : 'unknown'
   return `${scope}:${ip}`
+}
+
+export function isAllowedOrigin(request, extraOrigins = []) {
+  const origin = request.headers.get('origin')
+  if (!origin) return true
+
+  const allowed = new Set([...DEFAULT_ALLOWED_ORIGINS, ...extraOrigins.filter(Boolean)])
+  return allowed.has(origin)
+}
+
+export function isJsonRequest(request) {
+  const contentType = request.headers.get('content-type') || ''
+  return contentType.toLowerCase().includes('application/json')
+}
+
+export function isPayloadTooLarge(request, maxBytes = 64 * 1024) {
+  const contentLength = Number(request.headers.get('content-length') || 0)
+  if (!Number.isFinite(contentLength) || contentLength <= 0) return false
+  return contentLength > maxBytes
 }
 
 export function checkRateLimit(key, limit = 5, windowMs = DEFAULT_WINDOW_MS) {

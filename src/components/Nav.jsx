@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { NAV_LOCALES, getLocaleFromPath, getLanguageSwitchPath } from '../lib/site'
 
@@ -19,10 +20,10 @@ const LANG_CONFIG = {
   de: {
     links: [
       { href: '/de', label: 'Start' },
-      { href: '/de/about', label: '?ber Andy' },
+      { href: '/de/about', label: 'Uber Andy' },
       { href: '/de/plan-your-trip', label: 'Reise planen' },
       { href: '/de/play-with-a-pro', label: 'Mit Andy spielen' },
-      { href: '/de/golf-courses', label: 'Pl?tze' },
+      { href: '/de/golf-courses', label: 'Platze' },
       { href: '/de/guides', label: 'Ratgeber' },
     ],
     cta: { href: '/de/contact', label: 'Anfragen' },
@@ -30,7 +31,7 @@ const LANG_CONFIG = {
   fr: {
     links: [
       { href: '/fr', label: 'Accueil' },
-      { href: '/fr/about', label: '? propos' },
+      { href: '/fr/about', label: 'A propos' },
       { href: '/fr/plan-your-trip', label: 'Planifier' },
       { href: '/fr/play-with-a-pro', label: 'Jouer avec Andy' },
       { href: '/fr/golf-courses', label: 'Parcours' },
@@ -45,7 +46,7 @@ const LANG_CONFIG = {
       { href: '/es/plan-your-trip', label: 'Planifica tu viaje' },
       { href: '/es/play-with-a-pro', label: 'Jugar con Andy' },
       { href: '/es/golf-courses', label: 'Campos' },
-      { href: '/es/guides', label: 'Gu?as' },
+      { href: '/es/guides', label: 'Guias' },
     ],
     cta: { href: '/es/contact', label: 'Contacto' },
   },
@@ -73,20 +74,21 @@ const LANG_CONFIG = {
   },
   zh: {
     links: [
-      { href: '/zh', label: '首页' },
-      { href: '/zh/about', label: '关于 Andy' },
-      { href: '/zh/plan-your-trip', label: '规划行程' },
-      { href: '/zh/play-with-a-pro', label: '与 Andy 同场' },
-      { href: '/zh/golf-courses', label: '球场指南' },
-      { href: '/zh/guides', label: '指南' },
+      { href: '/zh', label: 'Home' },
+      { href: '/zh/about', label: 'About Andy' },
+      { href: '/zh/plan-your-trip', label: 'Plan Trip' },
+      { href: '/zh/play-with-a-pro', label: 'Play With Andy' },
+      { href: '/zh/golf-courses', label: 'Courses' },
+      { href: '/zh/guides', label: 'Guides' },
     ],
-    cta: { href: '/zh/contact', label: '联系我' },
+    cta: { href: '/zh/contact', label: 'Contact' },
   },
 }
+
 const LANG_CODES = NAV_LOCALES.map((locale) => ({
   code: locale === 'en' ? 'EN' : locale.toUpperCase(),
   locale,
-  label: locale === 'zh' ? '中文' : locale.toUpperCase(),
+  label: locale === 'zh' ? 'ZH' : locale.toUpperCase(),
 }))
 
 export default function Nav({ transparent = false, lang }) {
@@ -114,13 +116,14 @@ export default function Nav({ transparent = false, lang }) {
     <>
       <nav className={navClass} id="nav">
         <Link href={activeLang === 'en' ? '/' : `/${activeLang}`} prefetch={false} className="nav__logo">
-          <img
+          <Image
             src={logoSrc}
             alt="Mr Mallorca Golf"
             className="nav__logo-img"
-            width="38"
-            height="38"
-            decoding="async"
+            width={38}
+            height={38}
+            sizes="38px"
+            quality={88}
           />
           <span className="sr-only">Mr Mallorca Golf home</span>
         </Link>
@@ -162,7 +165,7 @@ export default function Nav({ transparent = false, lang }) {
           </Link>
         ))}
         <Link href={config.cta.href} prefetch={false} className="mob-cta" onClick={() => setMenuOpen(false)}>
-          {config.cta.label} →
+          {config.cta.label} {'->'}
         </Link>
         <div className="mob-lang">
           {LANG_CODES.map(({ code, locale, label }) => (

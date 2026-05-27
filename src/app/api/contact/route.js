@@ -4,6 +4,9 @@ import {
   checkRateLimit,
   escapeHtml,
   getClientKey,
+  isAllowedOrigin,
+  isJsonRequest,
+  isPayloadTooLarge,
   isValidEmail,
   sanitizeMultilineText,
   sanitizeText,
@@ -22,6 +25,18 @@ function renderRow(label, value) {
 }
 
 export async function POST(request) {
+  if (!isAllowedOrigin(request)) {
+    return Response.json({ ok: false, error: 'Origin not allowed.' }, { status: 403 })
+  }
+
+  if (!isJsonRequest(request)) {
+    return Response.json({ ok: false, error: 'Unsupported content type.' }, { status: 415 })
+  }
+
+  if (isPayloadTooLarge(request, 48 * 1024)) {
+    return Response.json({ ok: false, error: 'Payload too large.' }, { status: 413 })
+  }
+
   if (!checkRateLimit(getClientKey(request, 'contact'), 12, 10 * 60 * 1000)) {
     return Response.json(
       { ok: false, error: 'Too many enquiries from this connection. Please wait a few minutes and try again.' },

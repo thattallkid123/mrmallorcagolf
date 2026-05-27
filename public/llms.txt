@@ -2,6 +2,9 @@
 
 > Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Course guidance, itinerary logic, and premium Play With A Pro add-ons for visiting golfers.
 
+Last updated: 2026-05-27
+Canonical domain: https://www.mrmallorcagolf.com
+
 ## Core Pages
 
 - [Homepage](https://www.mrmallorcagolf.com/): Main overview of the itinerary-led planning path.
@@ -24,6 +27,32 @@
 - TPI Junior Level 3 Coach.
 - Based in Mallorca and focused on honest course selection, itinerary planning, and real-course performance.
 - Previous experience includes Pebble Beach, Doral, Evian, Costa Cruises, and 11 years coaching in China.
+
+## Entity Facts
+
+- Brand: Mr Mallorca Golf
+- Website: https://www.mrmallorcagolf.com
+- Location: Mallorca, Balearic Islands, Spain
+- Primary services: golf trip planning, course guidance, itinerary design, on-course coaching add-ons
+- Contact: andy@mrmallorcagolf.com | +34 624 466 702
+- Languages: English, Spanish, German, French, Dutch, Swedish, Simplified Chinese
+
+## Locale URLs
+
+- English: https://www.mrmallorcagolf.com/
+- Spanish: https://www.mrmallorcagolf.com/es
+- German: https://www.mrmallorcagolf.com/de
+- French: https://www.mrmallorcagolf.com/fr
+- Dutch: https://www.mrmallorcagolf.com/nl
+- Swedish: https://www.mrmallorcagolf.com/sv
+- Simplified Chinese: https://www.mrmallorcagolf.com/zh
+
+## Structured Data Entities
+
+- WebSite entity id: https://www.mrmallorcagolf.com/#website
+- Organization entity id: https://www.mrmallorcagolf.com/#organization
+- LocalBusiness entity id: https://www.mrmallorcagolf.com/#localbusiness
+- Person entity id: https://www.mrmallorcagolf.com/#person-andy-griffiths
 
 ## Audience
 

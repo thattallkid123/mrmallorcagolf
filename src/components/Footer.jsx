@@ -1,8 +1,6 @@
-'use client'
-
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { NAV_LOCALES, getLanguageSwitchPath, getLegalPath } from '../lib/site'
+import Image from 'next/image'
+import { NAV_LOCALES, getLegalPath } from '../lib/site'
 
 const FOOTER_COPY = {
   en: {
@@ -120,7 +118,6 @@ function getADayPath(locale) {
 }
 
 export default function Footer({ lang }) {
-  const pathname = usePathname()
   const locale = getLangFromProp(lang)
   const copy = FOOTER_COPY[locale]
   const prefix = getPrefix(locale)
@@ -129,14 +126,14 @@ export default function Footer({ lang }) {
     <footer className="footer">
       <div className="footer__brand">
         <Link href={prefix || '/'} prefetch={false} className="nav__logo footer__logo">
-          <img
+          <Image
             src="/logo-white-96.webp"
             alt="Mr Mallorca Golf"
             className="nav__logo-img"
-            width="38"
-            height="38"
-            loading="lazy"
-            decoding="async"
+            width={38}
+            height={38}
+            sizes="38px"
+            quality={88}
           />
           <span className="sr-only">Mr Mallorca Golf home</span>
         </Link>

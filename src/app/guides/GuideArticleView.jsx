@@ -199,6 +199,31 @@ function renderBlock(block, index, locale, imageOrdinal) {
     )
   }
 
+  if (block.type === 'table') {
+    return (
+      <div key={`table-${index}`} style={{ overflowX: 'auto', margin: '1.5rem 0 2rem' }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.88rem', lineHeight: 1.5 }}>
+          <thead>
+            <tr style={{ borderBottom: '2px solid var(--gold, #b8933a)' }}>
+              {block.headers.map((h) => (
+                <th key={h} style={{ textAlign: 'left', padding: '0.45rem 0.75rem', fontWeight: 600, whiteSpace: 'nowrap', color: 'var(--gold, #b8933a)' }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {block.rows.map((row, ri) => (
+              <tr key={ri} style={{ borderBottom: '1px solid rgba(0,0,0,0.08)', background: ri % 2 === 0 ? 'transparent' : 'rgba(0,0,0,0.025)' }}>
+                {row.map((cell, ci) => (
+                  <td key={ci} style={{ padding: '0.4rem 0.75rem', verticalAlign: 'top' }}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
+
   if (process.env.NODE_ENV === 'development') {
     console.warn(`[GuideArticleView] Unknown block type "${block.type}" at index ${index}`)
   }

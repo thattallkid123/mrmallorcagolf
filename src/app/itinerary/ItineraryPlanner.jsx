@@ -1741,7 +1741,6 @@ export default function ItineraryPlanner(props) {
                             src={detail.image}
                             alt={course}
                             fill
-                            loading="eager"
                             quality={88}
                             sizes="(max-width: 640px) 92vw, 220px"
                             style={{ objectFit: 'cover', objectPosition: 'center 35%' }}

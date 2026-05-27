@@ -6,7 +6,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Gual Golf Mallorca Review (2026) - Is It Worth It? Green Fees, Conditions & Verdict",
         description:
-          "Is Son Gual worth the price? Son Gual green fees are typically €110-€165 (par 72, handicap required). Here is my honest PGA verdict, ideal player profile, and booking notes.",
+          "Son Gual reviews are consistently strong — and earned. Green fees €110–€165, par 72, handicap required. My honest PGA verdict: conditions, difficulty, ideal player profile, and whether it is worth it.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
       },
       meta: {
@@ -317,7 +317,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Muntaner Golf Mallorca Review (2026) - Green Fees, Layout & Honest Verdict",
         description:
-          "Son Muntaner review by a PGA pro: green fees €125-€250, buggy included, 5 minutes from Palma. Is Spain's 2025 award winner actually worth booking?",
+          "Son Muntaner golf club reviews back Spain's Best Course 2025 — but is it right for your group? Green fees €125–€250, buggy included, 5 mins from Palma. Honest PGA verdict inside.",
         imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
@@ -1166,6 +1166,93 @@ export const GUIDE_POST_CONTENT = {
           text: 'I take clients to Son Antem West on play-with-a-pro days. Want to play it with someone alongside you?',
           linkLabel: 'See the play-with-a-pro experience',
           href: '/play-with-a-pro',
+        },
+      ],
+    },
+  },
+
+
+  'on-course-coaching-mallorca': {
+    en: {
+      metadata: {
+        title: 'On-Course Golf Coaching in Mallorca - Play Better, Right Now | Mr Mallorca Golf',
+        description:
+          'On-course golf coaching in Mallorca with a PGA Advanced Professional. Real situations, real feedback, real improvement. Not a lesson — a round with a coach who makes you better as you play.',
+        imagePath: '/images/son-gual-blog/sg-swing.webp',
+      },
+      meta: {
+        badge: 'Coaching Guide',
+        badgeGold: true,
+        readTime: '5 min read',
+        updated: 'May 2026',
+        title: 'On-Course Golf Coaching in Mallorca — Play Better, Right Now',
+        intro:
+          'Most lessons happen on a range. On-course coaching happens where the game actually is. Here is what it involves, who it suits, and what you can expect from a day with me.',
+        related: [
+          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+          { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
+          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+          { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/son-gual-blog/sg-swing.webp',
+          alt: 'Andy Griffiths coaching on the golf course in Mallorca',
+          caption: 'On-course coaching at Son Gual. The range tells you one thing. The course tells you something different.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Range lessons fix range problems. On-course coaching fixes golf problems. The difference matters more than most people realise until they have experienced both.',
+        },
+        {
+          type: 'paragraph',
+          text: 'I am a PGA Advanced Professional. I have spent over a decade coaching at every level. The sessions I find most effective, and the ones clients talk about longest afterwards, are the ones that happen on the course itself, in real situations, under conditions that cannot be replicated on a practice ground.',
+        },
+        { type: 'heading', text: 'What On-Course Coaching Actually Involves' },
+        {
+          type: 'paragraph',
+          text: 'We play a round together. That is the structure. But instead of just playing, we work through every decision point as it happens: club selection in crosswinds, where to miss a green, how to read a sloped lie, when to take on a carry over water and when to lay up. Pre-shot routine. Course management. Mental game under pressure.',
+        },
+        {
+          type: 'paragraph',
+          text: 'I also watch your swing in the conditions that actually affect it. Ground firmness, slope, rough, wind. Not a flat practice bay. I see things on a course I would not see on a range, and the feedback is immediately relevant because you are about to hit the next shot.',
+        },
+        { type: 'heading', text: 'Who It Suits' },
+        {
+          type: 'paragraph',
+          text: 'On-course coaching works well for a wide range of players. If you play to a reasonable standard but feel your course management is holding you back, a round with me will address that directly. If you are visiting Mallorca and want to get the most out of playing Son Gual, Alcanada, or any of the other courses here, it is the fastest way to improve your enjoyment and your score.',
+        },
+        {
+          type: 'paragraph',
+          text: 'It is also a very good option for pairs or small groups. Two or three players who want coaching alongside each other, in a relaxed format, on a course they want to play. That is exactly how the Play With A Pro days are structured.',
+        },
+        { type: 'heading', text: 'The Courses We Use' },
+        {
+          type: 'paragraph',
+          text: 'Most Play With A Pro days take place at <a href="/guides/son-gual-review">Son Gual</a> — my most-played course on the island and one of the best tests of course management available here. We also use <a href="/guides/alcanada-review">Alcanada</a> for groups who want the most scenic round, and other courses depending on the group level and what they want to work on.',
+        },
+        { type: 'heading', text: 'What You Get Out of It' },
+        {
+          type: 'paragraph',
+          text: 'Most players leave with three or four specific things to work on. Not a list of twenty swing faults, but the handful of things that are actually costing them shots in real rounds. You will also have a better understanding of how to manage a golf course: where to take risk, where to be conservative, and how to make decisions under pressure.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Beyond the coaching, you are getting a round in Mallorca on one of the island outstanding courses, with someone who knows every hole and can make the day genuinely enjoyable. That combination is what the <a href="/play-with-a-pro">Play With A Pro experience</a> is built around.',
+        },
+        { type: 'heading', text: 'A Note on Range Lessons' },
+        {
+          type: 'paragraph',
+          text: 'I do also offer range and practice-facility sessions for players who want to work on specific technical elements before taking them to the course. The two approaches work well together. But if you have limited time in Mallorca and want the fastest, most practical improvement to your actual game, on-course is the place to start.',
+        },
+        {
+          type: 'cta',
+          text: 'Interested in a Play With A Pro day — on-course coaching on one of Mallorca best courses?',
+          linkLabel: 'See how it works →',
+          href: '/play-with-a-pro',
+          internal: true,
         },
       ],
     },

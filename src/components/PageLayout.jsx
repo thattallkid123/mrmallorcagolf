@@ -7,7 +7,7 @@ export default function PageLayout({
   children,
   lang,
   navTransparent = true,
-  showScrollReset = true,
+  showScrollReset = false,
   showWhatsAppButton = true,
 }) {
   return (
