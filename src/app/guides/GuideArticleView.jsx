@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 import InlineRichText from './InlineRichText'
 
@@ -262,7 +261,6 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
       <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
-      <RevealObserver />
       <>
         <PostLayout meta={meta} lang={locale}>
           {blocks.map((block, index) => {

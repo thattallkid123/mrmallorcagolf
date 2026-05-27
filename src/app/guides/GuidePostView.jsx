@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 import InlineRichText from './InlineRichText'
 
@@ -274,7 +273,6 @@ export default function GuidePostView({ locale = 'en', meta, blocks }) {
     <PageLayout lang={pageLang}>
       <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
       <JsonLd data={buildReviewSchema(meta, blocks, locale)} />
-      <RevealObserver />
       <PostLayout meta={meta} lang={pageLang}>
         {blocks.map((block, index) => {
           const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
