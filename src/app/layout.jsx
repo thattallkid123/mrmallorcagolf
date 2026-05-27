@@ -3,7 +3,7 @@ import { Cormorant_Garamond, Jost } from 'next/font/google'
 import Script from 'next/script'
 import DocumentLanguage from '../components/DocumentLanguage'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
-import { SITE_ORIGIN } from '../lib/site.js'
+import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
 import { DEFAULT_SOCIAL_IMAGE } from '../lib/page-metadata.js'
 
 const jost = Jost({
@@ -33,6 +33,15 @@ export const metadata = {
     default: 'Mallorca Golf Trip Planning | Mr Mallorca Golf',
   },
   description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Build itineraries, compare courses, and add a private Play With A Pro day where it helps.',
+  alternates: {
+    canonical: '/',
+    languages: Object.fromEntries(
+      ALL_LOCALES.map((locale) => [
+        locale === 'zh' ? 'zh-Hans' : locale,
+        buildLocalePath('/', locale),
+      ]),
+    ),
+  },
   keywords: ['golf Mallorca', 'Mallorca golf trip', 'Mallorca golf itinerary', 'Mallorca golf courses', 'play golf Mallorca', 'PGA professional Mallorca', 'Son Gual golf', 'Alcanada golf', 'Majorca golf', 'golf holiday Mallorca', 'golf concierge Mallorca'],
   openGraph: {
     type: 'website',
@@ -66,6 +75,7 @@ export const metadata = {
 const PERSON_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': `${SITE_ORIGIN}/#person-andy-griffiths`,
   name: 'Andy Griffiths',
   jobTitle: 'PGA Advanced Professional',
   description: 'UK PGA Advanced Professional, Trackman Master, and Mallorca-based golf trip planner with 18 years coaching experience across three continents.',
@@ -85,7 +95,9 @@ const PERSON_SCHEMA = {
 
 const LOCAL_BUSINESS_SCHEMA = {
   '@context': 'https://schema.org',
-  '@type': 'SportsActivityLocation',
+  '@type': 'LocalBusiness',
+  '@id': `${SITE_ORIGIN}/#localbusiness`,
+  additionalType: 'https://schema.org/SportsActivityLocation',
   name: 'Mr Mallorca Golf',
   description: 'Mallorca golf trip planning, course guidance, and premium Play With A Pro add-ons led by PGA Advanced Professional Andy Griffiths.',
   url: SITE_ORIGIN,
@@ -113,6 +125,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   priceRange: 'EUR',
   currenciesAccepted: 'EUR',
   areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
+  founder: { '@id': `${SITE_ORIGIN}/#person-andy-griffiths` },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Mallorca Golf Trip Planning',
@@ -120,51 +133,47 @@ const LOCAL_BUSINESS_SCHEMA = {
   },
 }
 
-const FAQ_SCHEMA = {
+const ORGANIZATION_SCHEMA = {
   '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: "What's included in a day with Andy?",
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "A Play With A Pro day is an optional premium add-on inside a wider Mallorca golf trip. Andy's day rate covers his time and coaching for the full round. Green fee, buggy, and lunch are confirmed separately before the day.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do I need a specific handicap to play with Andy?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "No handicap requirement. You need to be keen to improve and willing to engage with real decisions on the course. Andy's coached players from 2-handicap golfers to complete beginners visiting Mallorca. The philosophy is the same: honest feedback, smart course management, play the hole in front of you - not the one in your head.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Why choose this over booking a tee time myself?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The main value is course and itinerary judgment before you book: which courses suit your group, where to base yourself, when to add a premium tee time, and whether a hosted Play With A Pro day belongs in the trip.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can I book multiple days or customise the trip?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Start with the itinerary planner, then Andy can help refine the course mix, travel rhythm, transfers, dining, club hire, and any hosted golf day that improves the trip.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What courses will we play?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'It depends on your game and what you want to experience. Andy has played all 24 courses on the island and builds rounds on Son Gual, Alcanada, and Santa Ponsa most often. He matches course to your handicap and goals - not every golfer should play the same track. See the full course guide or get in touch to discuss.',
-      },
-    },
+  '@type': 'Organization',
+  '@id': `${SITE_ORIGIN}/#organization`,
+  name: 'Mr Mallorca Golf',
+  url: SITE_ORIGIN,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${SITE_ORIGIN}/MMG_Logo_Green.png`,
+    width: 1200,
+    height: 1200,
+  },
+  sameAs: [
+    'https://www.instagram.com/mrmallorcagolf',
+    'https://www.linkedin.com/in/andygriffithsgolf',
   ],
+  founder: { '@id': `${SITE_ORIGIN}/#person-andy-griffiths` },
+}
+
+const WEBSITE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${SITE_ORIGIN}/#website`,
+  name: 'Mr Mallorca Golf',
+  url: SITE_ORIGIN,
+  inLanguage: ['en', 'es', 'de', 'fr', 'nl', 'sv', 'zh-Hans'],
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE_ORIGIN}/guides?search={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+  publisher: {
+    '@type': 'Organization',
+    '@id': `${SITE_ORIGIN}/#organization`,
+    name: 'Mr Mallorca Golf',
+    url: SITE_ORIGIN,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_ORIGIN}/MMG_Logo_Green.png`,
+    },
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -187,11 +196,16 @@ export default function RootLayout({ children }) {
                 window.gtag('js', new Date());
                 window.gtag('config', 'G-0Z2BRNWB4N');
               };
-              if ('requestIdleCallback' in window) {
-                requestIdleCallback(init, { timeout: 3000 });
-              } else {
-                setTimeout(init, 2000);
-              }
+              var once = function () {
+                window.removeEventListener('pointerdown', once);
+                window.removeEventListener('keydown', once);
+                window.removeEventListener('touchstart', once);
+                init();
+              };
+              window.addEventListener('pointerdown', once, { passive: true, once: true });
+              window.addEventListener('keydown', once, { passive: true, once: true });
+              window.addEventListener('touchstart', once, { passive: true, once: true });
+              setTimeout(init, 20000);
             })();
           `}
         </Script>
@@ -199,6 +213,8 @@ export default function RootLayout({ children }) {
         {/* Schema Markup */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
         <DocumentLanguage />

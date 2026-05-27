@@ -1,12 +1,9 @@
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
 import DeferredHydrate from '../../components/DeferredHydrate'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
-
-const GolfCoursesClient = dynamic(() => import('./GolfCoursesClient'), {
-  ssr: false,
-})
+import GolfCoursesClient from './GolfCoursesClient'
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
@@ -83,20 +80,31 @@ export default function GolfCoursesView({ locale = 'en', content }) {
   return (
     <>
       <link rel="preload" as="image" href="/images/golf-courses.webp" />
-      <PageLayout lang={locale === 'en' ? undefined : locale}>
+      <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false}>
         <JsonLd data={buildGolfCoursesSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale)} />
 
-        <header
-          className="page-hero"
-          style={{
-            minHeight: '100vh',
-            backgroundImage:
-              'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%), url(/images/golf-courses.webp)',
-            backgroundSize: 'auto, cover',
-            backgroundPosition: 'center, center 40%',
-          }}
-        >
+        <header className="page-hero" style={{ minHeight: '72vh', overflow: 'hidden', position: 'relative' }}>
+          <div aria-hidden="true" style={{ position: 'absolute', inset: 0 }}>
+            <Image
+              src="/images/golf-courses.webp"
+              alt=""
+              fill
+              priority
+              fetchPriority="high"
+              quality={82}
+              sizes="100vw"
+              style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
+            />
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                background:
+                  'linear-gradient(to right, rgba(26,25,22,0.78) 0%, rgba(26,25,22,0.45) 50%, rgba(26,25,22,0.2) 100%)',
+              }}
+            />
+          </div>
           <div className="page-hero__inner">
             <p className="breadcrumb">
               <Link href={joinHref(locale, '/')}>{content.hero.breadcrumbHome}</Link> &nbsp;/&nbsp;{' '}

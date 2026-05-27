@@ -6,7 +6,7 @@ export const metadata = buildContactMetadata('en')
 
 export default function Contact() {
   return (
-    <PageLayout lang="en" navTransparent={false}>
+    <PageLayout lang="en" navTransparent={false} showWhatsAppButton={false}>
       <ContactForm />
     </PageLayout>
   )

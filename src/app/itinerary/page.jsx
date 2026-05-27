@@ -6,7 +6,7 @@ export const metadata = buildItineraryMetadata()
 
 export default function ItineraryPage() {
   return (
-    <PageLayout lang="en" navTransparent={false}>
+    <PageLayout lang="en" navTransparent={false} showWhatsAppButton={false}>
       <ItineraryPlanner />
     </PageLayout>
   )

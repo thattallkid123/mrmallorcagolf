@@ -1,14 +1,14 @@
 | Route | Mode | Perf | A11y | Best | SEO | LCP(ms) | CLS | TBT(ms) |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| / | mobile | 61 | 100 | 100 | 100 | 3138 | 0 | 2085 |
-| / | desktop | 79 | 100 | 100 | 100 | 1023 | 0 | 345 |
-| /itinerary | mobile | 67 | 98 | 100 | 100 | 3121 | 0 | 1437 |
-| /itinerary | desktop | 96 | 98 | 100 | 100 | 734 | 0 | 136 |
-| /guides | mobile | 54 | 100 | 100 | 100 | 4856 | 0 | 1713 |
-| /guides | desktop | 84 | 100 | 100 | 100 | 1029 | 0.003 | 307 |
-| /guides/son-gual-review | mobile | 63 | 96 | 100 | 100 | 3476 | 0 | 1792 |
-| /guides/son-gual-review | desktop | 96 | 96 | 100 | 100 | 705 | 0 | 147 |
-| /golf-courses | mobile | 62 | 92 | 100 | 100 | 3340 | 0 | 2154 |
-| /golf-courses | desktop | 96 | 92 | 100 | 100 | 812 | 0 | 138 |
-| /contact | mobile | 64 | 95 | 100 | 100 | 4311 | 0 | 839 |
-| /contact | desktop | 91 | 92 | 100 | 100 | 1003 | 0.002 | 140 |
+| / | mobile | 80 | 100 | 100 | 100 | 3098 | 0 | 491 |
+| / | desktop | 98 | 100 | 100 | 100 | 780 | 0 | 27 |
+| /itinerary | mobile | 82 | 98 | 100 | 100 | 3136 | 0 | 432 |
+| /itinerary | desktop | 95 | 98 | 100 | 100 | 877 | 0 | 138 |
+| /guides | mobile | 62 | 100 | 100 | 100 | 4818 | 0 | 828 |
+| /guides | desktop | 99 | 100 | 100 | 100 | 931 | 0 | 49 |
+| /guides/son-gual-review | mobile | 80 | 96 | 100 | 100 | 2684 | 0 | 635 |
+| /guides/son-gual-review | desktop | 98 | 96 | 100 | 100 | 661 | 0 | 112 |
+| /golf-courses | mobile | 68 | 92 | 100 | 100 | 3472 | 0 | 968 |
+| /golf-courses | desktop | 98 | 92 | 100 | 100 | 695 | 0 | 93 |
+| /contact | mobile | 75 | 95 | 100 | 100 | 4346 | 0 | 376 |
+| /contact | desktop | 99 | 92 | 100 | 100 | 866 | 0 | 30 |

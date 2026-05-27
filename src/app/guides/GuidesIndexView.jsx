@@ -1,20 +1,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
-import HorizontalWheelScroll from '../../components/HorizontalWheelScroll'
 
 const HERO_ACTIONS = {
-  en: { experience: 'See the Experience', reviews: 'Course Reviews ↓', articles: 'Guides & Articles ↓' },
-  de: { experience: 'Erlebnis ansehen', reviews: 'Platzbewertungen ↓', articles: 'Ratgeber & Artikel ↓' },
-  es: { experience: 'Ver la experiencia', reviews: 'Análisis de campos ↓', articles: 'Guías y artículos ↓' },
-  fr: { experience: "Voir l'experience", reviews: 'Avis parcours ↓', articles: 'Guides & articles ↓' },
-  nl: { experience: 'Bekijk de ervaring', reviews: 'Baanbeoordelingen ↓', articles: 'Gidsen & artikelen ↓' },
-  sv: { experience: 'Se upplevelsen', reviews: 'Banrecensioner ↓', articles: 'Guider & artiklar ↓' },
-  zh: { experience: '查看体验', reviews: '球场评测 ↓', articles: '指南与文章 ↓' },
+  en: { experience: 'See the Experience', reviews: 'Course Reviews', articles: 'Guides & Articles' },
+  de: { experience: 'Erlebnis ansehen', reviews: 'Platzbewertungen', articles: 'Ratgeber & Artikel' },
+  es: { experience: 'Ver la experiencia', reviews: 'Analisis de campos', articles: 'Guias y articulos' },
+  fr: { experience: "Voir l'experience", reviews: 'Avis parcours', articles: 'Guides & articles' },
+  nl: { experience: 'Bekijk de ervaring', reviews: 'Baanbeoordelingen', articles: 'Gidsen & artikelen' },
+  sv: { experience: 'Se upplevelsen', reviews: 'Banrecensioner', articles: 'Guider & artiklar' },
+  zh: { experience: 'Kan ti yan', reviews: 'Qiu chang ping ce', articles: 'Zhi nan yu wen zhang' },
 }
 
-// Shorten long guide titles for the card — strip year and verbose prefix
 function shortTitle(title) {
   return title
     .replace(/ - A PGA Professional's Honest (Review|Take|Ranking)$/, '')
@@ -22,28 +19,27 @@ function shortTitle(title) {
     .replace(/: A PGA Professional's Honest (Review|Take)$/, '')
     .replace(/ - A PGA Professional's Honest Answer from Someone Who Lives Here$/, '')
     .replace(/: An Honest Answer from Someone Who Lives Here$/, '')
-    .replace(/ Review$/, '')       // strip trailing " Review" (e.g. Andratx)
-    .replace(/\s*\(?\d{4}\)?$/, '') // remove trailing year
+    .replace(/ Review$/, '')
+    .replace(/\s*\(?\d{4}\)?$/, '')
     .trim()
 }
 
-// Image map keyed by slug — no need to touch content files
 const GUIDE_IMAGES = {
-  'son-muntaner-review':        { src: '/images/son-muntaner-card.webp',                          position: 'center 30%' },
-  'son-gual-review':            { src: '/images/son-gual-card.webp',                              position: 'center 40%' },
-  'alcanada-review':            { src: '/images/alcanada-card.webp',                              position: 'center 50%' },
-  'santa-ponsa-1-review':       { src: '/images/santa-ponsa-card.webp',                           position: 'center 40%' },
-  'son-termes-review':          { src: '/images/courses/son-termes.webp',                         position: 'center 40%' },
-  'golf-andratx-review':        { src: '/images/andratx-card.webp',                               position: 'center 40%' },
-  'son-antem-west-review':      { src: '/images/courses/son-antem-west.webp',                     position: 'center 45%' },
-  't-golf-calvia-review':       { src: '/images/t-golf-calvia-card.webp',                          position: 'center 40%' },
-  'a-day-at-son-gual':          { src: '/images/son-gual-blog/sg-hero.webp',                      position: 'center 35%' },
-  'best-golf-courses-mallorca': { src: '/images/blog-best-golf-courses/Son Gual.webp',            position: 'center 50%' },
-  'is-mallorca-good-for-golf':  { src: '/images/blog-is-mallorca-good/Son Gual.jpg',              position: 'center 40%' },
+  'son-muntaner-review': { src: '/images/son-muntaner-card.webp', position: 'center 30%' },
+  'son-gual-review': { src: '/images/son-gual-card.webp', position: 'center 40%' },
+  'alcanada-review': { src: '/images/alcanada-card.webp', position: 'center 50%' },
+  'santa-ponsa-1-review': { src: '/images/santa-ponsa-card.webp', position: 'center 40%' },
+  'son-termes-review': { src: '/images/courses/son-termes.webp', position: 'center 40%' },
+  'golf-andratx-review': { src: '/images/andratx-card.webp', position: 'center 40%' },
+  'son-antem-west-review': { src: '/images/courses/son-antem-west.webp', position: 'center 45%' },
+  't-golf-calvia-review': { src: '/images/t-golf-calvia-card.webp', position: 'center 40%' },
+  'a-day-at-son-gual': { src: '/images/son-gual-blog/sg-hero.webp', position: 'center 35%' },
+  'best-golf-courses-mallorca': { src: '/images/blog-best-golf-courses/Son Gual.webp', position: 'center 50%' },
+  'is-mallorca-good-for-golf': { src: '/images/blog-is-mallorca-good/Son Gual.jpg', position: 'center 40%' },
   'best-time-play-golf-mallorca': { src: '/images/blog-best-time-play/Son Severa Sunny Golf.jpg', position: 'center 50%' },
-  'golf-cost-mallorca':         { src: '/images/blog-golf-cost/Alcanada.webp',                    position: 'center 40%' },
-  'golf-trip-planning-mallorca':{ src: '/images/blog-trip-planning/Son Gual.jpg',                 position: 'center 50%' },
-  'golf-club-hire-mallorca':    { src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg',   position: 'center 50%' },
+  'golf-cost-mallorca': { src: '/images/blog-golf-cost/Alcanada.webp', position: 'center 40%' },
+  'golf-trip-planning-mallorca': { src: '/images/blog-trip-planning/Son Gual.jpg', position: 'center 50%' },
+  'golf-club-hire-mallorca': { src: '/images/blog-golf-club-hire/Callaway Rogue ST Max.jpg', position: 'center 50%' },
 }
 
 function getLocalePrefix(locale) {
@@ -56,10 +52,10 @@ function GuideCarousel({ id, heading, guides, prefix, priorityFirst = false, dar
       {heading && (
         <div className="guides-carousel-section__header">
           <p className={`eyebrow${dark ? ' eyebrow--light' : ''}`}>{heading}</p>
-          <p className="guides-carousel-section__hint" style={dark ? { color: 'rgba(255,255,255,0.4)' } : {}}>← scroll →</p>
+          <p className="guides-carousel-section__hint" style={dark ? { color: 'rgba(255,255,255,0.4)' } : {}}>{'<- scroll ->'}</p>
         </div>
       )}
-      <HorizontalWheelScroll className="guides-carousel__track" aria-label={`${heading || 'Guides'} carousel`}>
+      <div className="guides-carousel__track" aria-label={`${heading || 'Guides'} carousel`}>
         {guides.map((guide, i) => {
           const img = guide.img
             ? { src: guide.img, position: guide.imgPosition || 'center 40%' }
@@ -70,7 +66,6 @@ function GuideCarousel({ id, heading, guides, prefix, priorityFirst = false, dar
               href={`${prefix}/guides/${guide.slug}`}
               className="guide-photo-card reveal"
             >
-              {/* clip-shell contains the image zoom so it never bleeds outside the card */}
               <div className="guide-photo-card__clip">
                 {img && (
                   <div className="guide-photo-card__bg">
@@ -95,7 +90,7 @@ function GuideCarousel({ id, heading, guides, prefix, priorityFirst = false, dar
             </Link>
           )
         })}
-      </HorizontalWheelScroll>
+      </div>
     </section>
   )
 }
@@ -109,18 +104,21 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const articleGuides = content.liveGuides.filter((g) => !g.slug.endsWith('-review') && g.slug !== 'a-day-at-son-gual')
 
   return (
-    <PageLayout lang={pageLayoutLang}>
-      <RevealObserver />
-      <header
-        className="page-hero"
-        style={{
-          minHeight: '100vh',
-          backgroundImage:
-            'linear-gradient(to right, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.45) 55%, rgba(26,25,22,0.2) 100%), url(/images/guide.webp)',
-          backgroundSize: 'auto, cover',
-          backgroundPosition: 'center, center 40%',
-        }}
-      >
+    <PageLayout lang={pageLayoutLang} navTransparent={false} showWhatsAppButton={false}>
+      <header className="page-hero page-hero--guides">
+        <div className="page-hero__media" aria-hidden="true">
+          <Image
+            src="/images/guide.webp"
+            alt=""
+            fill
+            priority
+            fetchPriority="high"
+            quality={82}
+            sizes="100vw"
+            className="page-hero__image page-hero__image--guides"
+          />
+        </div>
+        <div className="page-hero__overlay page-hero__overlay--guides" aria-hidden="true" />
         <div className="page-hero__inner">
           <p className="breadcrumb">
             <a href={prefix || '/'} className="breadcrumb__link">
@@ -152,7 +150,6 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         </div>
       </header>
 
-      {/* ── Course Reviews Carousel ───────────────────────────────────── */}
       <GuideCarousel
         id="course-reviews"
         heading={content.reviewsHeading}
@@ -161,7 +158,6 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         priorityFirst
       />
 
-      {/* ── Guides & Articles Carousel ───────────────────────────────── */}
       {articleGuides.length > 0 && (
         <GuideCarousel
           id="guides-articles"
@@ -173,12 +169,12 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
       )}
 
       <section className="cta-final">
-        <div className="cta-final__left reveal">
+        <div className="cta-final__left">
           <p className="eyebrow eyebrow--gold">{content.finalCta.eyebrow}</p>
           <h2 className="serif-display cta-final__title">{content.finalCta.title}</h2>
           <p>{content.finalCta.body}</p>
         </div>
-        <div className="cta-final__right reveal">
+        <div className="cta-final__right">
           <Link href={`${prefix}/play-with-a-pro`} className="btn btn--gold cta-final__primary">
             {content.finalCta.primaryCta}
           </Link>
@@ -188,3 +184,4 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
     </PageLayout>
   )
 }
+
