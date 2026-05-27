@@ -43,7 +43,7 @@ async function main() {
 
   const checks = []
 
-  const nonWww = await fetch(`${'https://mrmallorcagolf.com'}/`, { method: 'GET' })
+  const nonWww = await fetch(`${'https://mrmallorcagolf.com'}/`, { method: 'GET', redirect: 'manual' })
   checks.push({
     id: 'non_www_redirect',
     ok: [301, 302, 307, 308].includes(nonWww.status) && String(nonWww.headers.get('location') || '').includes('www.mrmallorcagolf.com'),
