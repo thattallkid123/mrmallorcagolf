@@ -1,19 +1,7 @@
-import dynamic from 'next/dynamic'
 import DeferredHydrate from '../../components/DeferredHydrate'
 import { getContactContent } from '../../lib/contact-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
-
-const ContactFormPanel = dynamic(() => import('./ContactFormPanel'), {
-  ssr: false,
-  loading: () => (
-    <div className="contact-right">
-      <div className="form-header">
-        <p className="form-header__eyebrow">Loading form</p>
-        <h2>Preparing your enquiry form...</h2>
-      </div>
-    </div>
-  ),
-})
+import ContactFormPanel from './ContactFormPanel'
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
