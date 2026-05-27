@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import DeferredHydrate from '../../components/DeferredHydrate'
 import { getContactContent } from '../../lib/contact-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 
@@ -158,9 +159,21 @@ export default function ContactForm({ locale = 'en' }) {
 
         </div>
 
-        <div className="contact-right">
-          <ContactFormPanel locale={locale} content={content} />
-        </div>
+        <DeferredHydrate
+          timeoutMs={1800}
+          fallback={(
+            <div className="contact-right">
+              <div className="form-header">
+                <p className="form-header__eyebrow">Loading form</p>
+                <h2>Preparing your enquiry form...</h2>
+              </div>
+            </div>
+          )}
+        >
+          <div className="contact-right">
+            <ContactFormPanel locale={locale} content={content} />
+          </div>
+        </DeferredHydrate>
       </div>
     </>
   )
