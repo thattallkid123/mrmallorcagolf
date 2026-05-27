@@ -128,6 +128,14 @@ export default function HomePageInner({ locale = 'en' }) {
           {home.intro.paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
+          <p>
+            Looking for quick answers first? Start with{' '}
+            <a href={golfCoursesHref}>all Mallorca golf courses</a>, then compare{' '}
+            <a href={locale === 'en' ? '/guides/son-gual-review' : `/${locale}/guides/son-gual-review`}>Son Gual</a>{' '}
+            and{' '}
+            <a href={locale === 'en' ? '/guides/son-muntaner-review' : `/${locale}/guides/son-muntaner-review`}>Son Muntaner</a>{' '}
+            before booking.
+          </p>
           {home.intro.services ? (
             <div className="intro__services">
               {home.intro.services.map((service) => (

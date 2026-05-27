@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
-import RevealObserver from '../../components/RevealObserver'
 import GolfCoursesClient from './GolfCoursesClient'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 
@@ -42,7 +41,7 @@ function buildGolfCoursesSchema(locale, content) {
           '@type': 'ListItem',
           position: 3,
           name: 'Son Muntaner',
-          url: `${SITE_ORIGIN}${pagePath}#son-muntaner`,
+          url: `${SITE_ORIGIN}${buildLocalePath('/guides/son-muntaner-review', locale)}`,
         },
       ],
     },
@@ -82,7 +81,6 @@ export default function GolfCoursesView({ locale = 'en', content }) {
       <PageLayout lang={locale === 'en' ? undefined : locale}>
         <JsonLd data={buildGolfCoursesSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale)} />
-        <RevealObserver />
 
         <header
           className="page-hero"
@@ -117,6 +115,13 @@ export default function GolfCoursesView({ locale = 'en', content }) {
                 </span>
               ))}
             </div>
+            <p className="page-hero__lead" style={{ maxWidth: 780 }}>
+              Start with our reviews of{' '}
+              <Link href={joinHref(locale, '/guides/son-gual-review')}>Son Gual</Link>,{' '}
+              <Link href={joinHref(locale, '/guides/son-muntaner-review')}>Son Muntaner</Link>, and{' '}
+              <Link href={joinHref(locale, '/guides/alcanada-review')}>Alcanada</Link>{' '}
+              if you are deciding where to play first in Mallorca.
+            </p>
           </div>
         </header>
 

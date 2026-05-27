@@ -19,9 +19,15 @@
     "check:shared-locale": "node scripts/check-shared-locale-fallbacks.js",
     "check:guide-locale-leaks": "node scripts/check-guide-locale-english-leaks.js",
     "check:i18n-release": "node scripts/locale-release-check.js",
+    "check:lighthouse": "node scripts/lighthouse-scorecard.mjs",
     "check:visual": "playwright test",
     "check:ready": "npm run check:content && npm run check:i18n-release && npm run build",
-    "predeploy": "npm run check:text && npm run check:i18n-release && npm run build"
+    "predeploy": "npm run check:text && npm run check:i18n-release && npm run build",
+    "ops:daily": "node scripts/site-ops/run-daily-health-check.mjs && node scripts/site-ops/generate-master-priority-report.mjs",
+    "ops:weekly": "node scripts/site-ops/run-weekly-seo-performance.mjs && node scripts/site-ops/generate-master-priority-report.mjs",
+    "ops:monthly": "node scripts/site-ops/run-monthly-technical-audit.mjs && node scripts/site-ops/generate-master-priority-report.mjs",
+    "ops:master": "node scripts/site-ops/generate-master-priority-report.mjs",
+    "ops:install-tasks": "powershell -ExecutionPolicy Bypass -File scripts/site-ops/install-windows-scheduled-tasks.ps1"
   },
   "dependencies": {
     "next": "^15.5.18",

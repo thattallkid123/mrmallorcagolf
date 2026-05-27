@@ -2,10 +2,20 @@
 const nextConfig = {
   output: 'standalone',
   images: {
+    formats: ['image/avif', 'image/webp'],
     qualities: [75, 88, 90],
+    minimumCacheTTL: 31536000,
+    deviceSizes: [360, 414, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 24, 32, 48, 64, 96, 128, 256, 384],
   },
   async redirects() {
     return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'mrmallorcagolf.com' }],
+        destination: 'https://www.mrmallorcagolf.com/:path*',
+        permanent: true,
+      },
       {
         source: '/fr/privacy-policy',
         destination: '/privacy-policy',

@@ -4,9 +4,9 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: "Son Gual Golf Mallorca Review (2026) - Green Fees, Course Conditions & Honest Take",
+        title: "Son Gual Golf Mallorca Review (2026) - Is It Worth It? Green Fees, Conditions & Verdict",
         description:
-          "Son Gual: €80–165 green fees, par 72, handicap required. I play it most weeks. Here's what it actually plays like, where it challenges you, and whether it's worth the price.",
+          "Is Son Gual worth the price? Son Gual green fees are typically €110-€165 (par 72, handicap required). Here is my honest PGA verdict, ideal player profile, and booking notes.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
       },
       meta: {
@@ -14,7 +14,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '7 min read',
         updated: 'March 2026',
-        title: "Son Gual Golf Mallorca Review (2026) - Green Fees, Course Conditions & Honest Take",
+        title: "Son Gual Golf Mallorca Review (2026) - Is It Worth It? Green Fees, Conditions & Verdict",
         intro:
           'My most-played course on the island. The wind is fickle, the greens are quick, and the closing stretch is as good as anything in Mallorca.',
         related: [
@@ -35,6 +35,12 @@ export const GUIDE_POST_CONTENT = {
           type: 'paragraph',
           text:
             'Son Gual is my most-played course in Mallorca and the one I recommend most consistently when clients ask where to play. I want to be honest about why - and honest about what makes it hard, because it is hard, and anyone booking expecting a relaxed day will be surprised. If you are also considering <a href="/guides/alcanada-review">Alcanada</a> or <a href="/guides/son-muntaner-review">Son Muntaner</a>, read those reviews too before deciding.',
+        },
+        { type: 'heading', text: 'Quick Answer: Is Son Gual Worth It?' },
+        {
+          type: 'paragraph',
+          text:
+            "Yes, if you want a serious championship round and don't mind paying premium rates. It is one of Mallorca's best-conditioned courses, but it is not a soft holiday knock. If your group wants easier scoring and less pressure, compare <a href='/guides/son-muntaner-review'>Son Muntaner</a> and <a href='/guides/alcanada-review'>Alcanada</a> first.",
         },
         {
           type: 'image',
@@ -309,9 +315,9 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Club Review (2026) — Best Course in Spain?",
+        title: "Son Muntaner Golf Mallorca Review (2026) - Green Fees, Layout & Honest Verdict",
         description:
-          "Son Muntaner holds the Best Golf Course in Spain title (World Golf Awards 2025). Green fees €125–250, buggy included, 5 mins from Palma. I played it on a busy Saturday.",
+          "Son Muntaner review by a PGA pro: green fees €125-€250, buggy included, 5 minutes from Palma. Is Spain's 2025 award winner actually worth booking?",
         imagePath: '/images/son-muntaner-blog/sm-8.webp',
       },
       meta: {
@@ -331,6 +337,12 @@ export const GUIDE_POST_CONTENT = {
       blocks: [
         { type: 'image', src: '/images/son-muntaner-blog/sm-8.webp', alt: 'Andy Griffiths at Golf Son Muntaner, Mallorca', caption: 'Best Golf Course in Spain, 2025. Managed to smile despite all the missed fairways.' },
         { type: 'paragraph', text: "Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a Saturday morning last week, with a full tee sheet and mixed handicaps in the group. Here's what I found." },
+        { type: 'heading', text: 'Quick Answer: Who Should Book Son Muntaner?' },
+        {
+          type: 'paragraph',
+          text: "Book Son Muntaner if you want premium conditioning close to Palma, with a buggy included and a layout that rewards positional golf over pure power. If your group prefers a bigger visual experience, compare it with <a href='/guides/alcanada-review'>Alcanada</a>; if you want the sternest championship test, compare <a href='/guides/son-gual-review'>Son Gual</a>.",
+        },
+        { type: 'facts', items: [['€125-€250', '2026 green fee range'], ['Included', 'Buggy'], ['5 mins', 'From central Palma'], ['7/10', 'Difficulty']] },
         { type: 'heading', text: 'Getting There' },
         { type: 'paragraph', text: "Five minutes from central Palma. That alone puts it in a different category from most courses on the island worth talking about. Son Gual takes twenty minutes, Alcanada fifty. If you're based in the city and want a serious round without building a half-day around the drive, Son Muntaner is the answer." },
         { type: 'paragraph', text: "The service from arrival through to the round was smooth. The team are attentive without being intrusive. Range balls, practice facilities, and the overall operation all sit at the level the course's reputation would lead you to expect." },

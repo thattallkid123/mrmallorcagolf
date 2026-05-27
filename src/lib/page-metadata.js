@@ -8,11 +8,23 @@ export const DEFAULT_SOCIAL_IMAGE = {
   alt: 'Private golf day in Mallorca with Mr Mallorca Golf',
 }
 
+const OPEN_GRAPH_LOCALES = {
+  en: 'en_GB',
+  es: 'es_ES',
+  de: 'de_DE',
+  fr: 'fr_FR',
+  nl: 'nl_NL',
+  sv: 'sv_SE',
+  zh: 'zh_CN',
+}
+
+const OPEN_GRAPH_ALT_LOCALES = Object.values(OPEN_GRAPH_LOCALES)
+
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf Trip Planning & On-Course Coaching',
+    title: 'Mallorca Golf Lessons, Trip Planning & On-Course Coaching',
     description:
-      'Plan a better Mallorca golf trip with PGA Advanced Professional Andy Griffiths: course advice, itineraries, local recommendations, and on-course Play With A Pro coaching.',
+      'Plan golf lessons and better golf trips in Mallorca with PGA Advanced Professional Andy Griffiths: course advice, itineraries, local recommendations, and on-course Play With A Pro coaching.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro | Mr Mallorca Golf',
@@ -48,9 +60,9 @@ const HOME_METADATA = {
 
 const GOLF_COURSES_METADATA = {
   en: {
-    title: 'Mallorca Golf Courses 2026 - All 24 Courses, Green Fees & Honest Reviews',
+    title: 'Best Golf Courses in Mallorca (2026) - All 24 Courses, Green Fees & Honest Reviews',
     description:
-      'Every golf course in Mallorca compared: green fees (€55–€250), par, difficulty, regions, and first-hand PGA recommendations. Updated 2026.',
+      'Compare every golf course in Mallorca: green fees (€55–€250), par, difficulty, regions, and first-hand PGA recommendations on who each course suits. Updated 2026.',
   },
   de: {
     title: 'Mallorca Golf Guide 2026 - Jeder Kurs auf der Insel',
@@ -58,9 +70,9 @@ const GOLF_COURSES_METADATA = {
       'Der vollstaendige Leitfaden fuer Golf auf Mallorca - alle 24 Kurse, Green Fees, Schwierigkeitsratings und ehrliche Empfehlungen von einem auf der Insel ansaessigen PGA Professional. 2026 Ausgabe.',
   },
   es: {
-    title: 'Guia de Golf en Mallorca 2026 - Todos los campos de la isla',
+    title: 'Mejores campos de golf en Mallorca (2026) - guia completa',
     description:
-      'La guia completa del golf en Mallorca - 24 campos, green fees, dificultades y recomendaciones honestas de un PGA profesional en la isla.',
+      'Compara los 24 campos de golf en Mallorca: green fees, dificultad, zonas y recomendaciones honestas de un PGA profesional para saber que campo te conviene.',
   },
   fr: {
     title: "Guide Golf Majorque 2026 - Tous les parcours de l'ile",
@@ -383,12 +395,15 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
   const title = typeof overrides.title === 'string' ? overrides.title : undefined
   const description = typeof overrides.description === 'string' ? overrides.description : undefined
   const pageUrl = `${SITE_ORIGIN}${pathname}`
+  const openGraphLocale = OPEN_GRAPH_LOCALES[locale] || OPEN_GRAPH_LOCALES.en
+  const openGraphAltLocales = OPEN_GRAPH_ALT_LOCALES.filter((candidate) => candidate !== openGraphLocale)
   const openGraph = overrides.openGraph || (title || description
     ? {
         type: 'website',
         url: pageUrl,
         siteName: 'Mr Mallorca Golf',
-        locale: locale === 'en' ? 'en_GB' : locale,
+        locale: openGraphLocale,
+        alternateLocale: openGraphAltLocales,
         images: [DEFAULT_SOCIAL_IMAGE],
         ...(title ? { title } : {}),
         ...(description ? { description } : {}),
@@ -444,6 +459,10 @@ export function buildGuidePostMetadata({
     openGraph: {
       type: 'article',
       url: `${SITE_ORIGIN}${pathname}`,
+      locale: OPEN_GRAPH_LOCALES[locale] || OPEN_GRAPH_LOCALES.en,
+      alternateLocale: OPEN_GRAPH_ALT_LOCALES.filter(
+        (candidate) => candidate !== (OPEN_GRAPH_LOCALES[locale] || OPEN_GRAPH_LOCALES.en),
+      ),
       title,
       description,
       publishedTime,
