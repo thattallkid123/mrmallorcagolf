@@ -3062,9 +3062,9 @@ select.form-control { cursor: pointer; }
 .cta-final__primary { font-size: 10px; padding: 14px 36px; }
 
 @media (max-width: 1100px) {
-  .post-body { grid-template-columns: 1fr; }
+  .post-body { display: block !important; grid-template-columns: 1fr !important; }
   .post-article { padding: 40px 0 48px; border-right: none; border-bottom: 1px solid var(--linen); }
-  .post-sidebar { padding: 24px 0 40px; position: static; }
+  .post-sidebar { display: none; padding: 0; position: static; }
   .post-sidebar__block { background: transparent; box-shadow: none; padding: 0; }
   .post-fact { grid-template-columns: repeat(2, 1fr); }
   .post-split-media { grid-template-columns: 1fr; gap: 1rem; }

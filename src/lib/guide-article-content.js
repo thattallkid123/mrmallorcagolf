@@ -439,27 +439,27 @@ export const GUIDE_ARTICLE_CONTENT = {
         headers: ['Course', 'Location', 'Par', 'Green Fee', 'Difficulty', 'Best For'],
         rows: [
           ['Son Gual', 'Palma', '72', '€110–€165', '9/10', 'Serious championship round'],
+          ['Club de Golf Alcanada', "Port d'Alcudia", '72', '€115–€220', '7/10', 'Spectacular views, championship quality'],
+          ['Son Muntaner', 'Son Vida - Palma', '72', '€125–€250', '7/10', 'Best-conditioned, close to Palma'],
+          ['T Golf Calvia', 'Calvia', '72', '€170–€210', '7/10', 'Premium all-round experience'],
           ['Golf de Andratx', 'Camp de Mar', '72', '€95–€140', '9/10', 'Hardest test on the island'],
-          ['T Golf Calvià', 'Calvià', '72', '€170–€210', '7/10', 'Premium all-round experience'],
-          ['Son Muntaner', 'Son Vida · Palma', '72', '€125–€250', '7/10', 'Best-conditioned, close to Palma'],
-          ['Golf Son Vida', 'Son Vida · Palma', '70', '€80–€190', '8/10', 'Historic course, Seve won here'],
-          ['T Golf Palma (Puntiró)', 'Palma', '71', '€100–€140', '7/10', 'Only Nicklaus design on island'],
-          ['Club de Golf Alcanada', "Port d'Alcúdia", '72', '€115–€220', '7/10', 'Most scenic, lighthouse views'],
+          ['Golf Son Vida', 'Son Vida - Palma', '70', '€80–€190', '8/10', 'Historic course, Seve won here'],
+          ['T Golf Palma (Puntiro)', 'Palma', '71', '€100–€140', '7/10', 'Only Nicklaus design on island'],
           ['Golf Santa Ponsa 1', 'Santa Ponsa', '72', '€75–€125', '8/10', 'European Tour venue, public access'],
           ['Golf Santa Ponsa 2', 'Santa Ponsa', '72', 'Members / arranged', '7/10', 'Quiet, members-only feel'],
           ['Golf Santa Ponsa 3', 'Santa Ponsa', '30 (9H)', 'Members / arranged', '4/10', 'Beginners, approach practice'],
-          ['Golf Son Quint', 'Son Vida · Palma', '71', '€70–€140', '5/10', 'All levels, Tiger Woods played here'],
+          ['Golf Son Quint', 'Son Vida - Palma', '71', '€70–€140', '5/10', 'All levels, Tiger Woods played here'],
           ['Real Golf de Bendinat', 'Bendinat', '70', '€75–€125', '6/10', 'Wooded valley, bay views'],
           ['Golf Son Termes', 'Bunyola', '70', '€85–€110', '6/10', 'Tramuntana mountain setting'],
-          ['Golf Son Antem West', 'Llucmajor', '72', '€90–€135', '7/10', 'Tournament course, challenging'],
+          ['Golf Son Antem West', 'Llucmajor', '72', '€90–€135', '7/10', 'Resort course, tougher than Son Antem East'],
           ['Golf Son Antem East', 'Llucmajor', '72', '€90–€140', '6/10', 'Wide fairways, resort golf'],
           ['Golf Maioris', 'Llucmajor', '72', '€80–€110', '7/10', 'Underrated, quieter option'],
-          ['Pula Golf', 'Son Servera', '72', '€80–€145', '7/10', 'Olazábal redesign, 8 Tour events'],
+          ['Pula Golf', 'Son Servera', '72', '€80–€145', '7/10', 'Olazabal redesign, 8 Tour events'],
           ['Golf Club Son Servera', 'Son Servera', '72', '€80–€145', '6/10', 'Relaxed parkland, historic'],
           ["Vall d'Or Golf", "S'Horta", '71', '€85–€130', '6/10', 'East coast views, strong back nine'],
-          ['Capdepera Golf', 'Artà', '72', '€85–€135', '7/10', 'Best paired with Canyamel'],
+          ['Capdepera Golf', 'Arta', '72', '€85–€135', '7/10', 'Strong back nine and standout mountain hole'],
           ['Canyamel Golf', 'Capdepera', '73', '€65–€145', '6/10', 'Most photographed, east coast'],
-          ['Golf Pollença', 'Pollença', '35 (9H)', '€55–€65', '4/10', 'Easy warm-up, Tramuntana views'],
+          ['Golf Pollensa', 'Pollensa', '35 (9H)', '€55–€65', '4/10', 'Easy warm-up, Tramuntana views'],
           ['Palma Pitch & Putt', 'Central Palma', '27 (9H)', '€14–€22', '2/10', 'Beginners & juniors'],
           ['Reserva Rotana', 'Manacor', '36 (9H)', 'Hotel guests only', '6/10', 'Stay-and-play, private estate'],
         ],
@@ -494,12 +494,18 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Alcanada is the course I take people to when I want them to go home remembering one round in particular. It might be the most memorable day on the island. The lighthouse and the views on many of the holes help, but the course stands up on its own too.",
+          "Alcanada is the course I choose when someone asks for one unforgettable day. The views are spectacular from start to finish, but this is not just a pretty round. It is a serious Robert Trent Jones Jr. championship layout with fast, contoured greens and strategic bunkering that asks good questions all day.",
       },
       {
         type: 'paragraph',
         text:
           "Standing on the elevated back tees is its own experience. You feel untouchable - so far from everything else that everyone below looks like a tiny dot. The lighthouse in front of you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.",
+      },
+      { type: 'subheading', text: 'For an East-Coast Surprise: Capdepera' },
+      {
+        type: 'paragraph',
+        text:
+          'Capdepera is better than many visitors expect. The front nine is open and playable, then the back nine climbs into the hills and becomes a more tactical test. The par-3 15th is one of the best holes on the island, with elevated mountain views that make the drive worthwhile even before you putt out.',
       },
       { type: 'subheading', text: 'For a DP World Tour Experience: Son Muntaner' },
       {
@@ -585,7 +591,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Son Muntaner for a DP World Tour experience. Canyamel for the scenery. Andratx for a serious test. Son Quint or Son Antem if you're a beginner or bringing someone new to the game. As I keep exploring more, I am sure I will find more gems as the island has enough quality to fill a week of serious golf. Most visitors play one or two courses and miss a lot of what is available!",
+          "If you want the strongest shortlist, start with Son Gual, Alcanada, Son Muntaner, and T Golf Calvia. Add Andratx if you want the hardest test, Capdepera for an underrated east-coast challenge, and Son Antem West if you want a resort setting that still asks for proper golf. Most visitors play one or two courses and miss how deep the quality is here.",
       },
       {
         type: 'pull',
