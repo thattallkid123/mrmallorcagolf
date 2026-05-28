@@ -113,7 +113,7 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
             fill
             priority
             fetchPriority="high"
-            quality={82}
+            unoptimized
             sizes="100vw"
             className="page-hero__image page-hero__image--guides"
           />

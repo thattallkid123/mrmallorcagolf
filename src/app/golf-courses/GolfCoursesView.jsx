@@ -92,7 +92,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
               fill
               priority
               fetchPriority="high"
-              quality={82}
+              unoptimized
               sizes="100vw"
               style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
             />
