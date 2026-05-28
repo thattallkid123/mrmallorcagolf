@@ -2721,7 +2721,7 @@ select.form-control { cursor: pointer; }
 
 .post-header {
   background: linear-gradient(135deg, #171613 0%, #201d19 55%, #1b1a17 100%);
-  padding: clamp(60px,10vw,100px) clamp(20px,4vw,40px) clamp(48px,8vw,80px);
+  padding: calc(var(--nav-h) + clamp(40px,7vw,72px)) clamp(20px,4vw,40px) clamp(48px,8vw,80px);
   position: relative;
 }
 .post-header::before {
