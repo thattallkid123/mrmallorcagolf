@@ -2718,7 +2718,7 @@ select.form-control { cursor: pointer; }
 }
 
 /* ── GUIDES / BLOG POSTS ──────────────────────────────────────── */
-.post-wrap { background: var(--white); }
+.post-wrap { background: var(--white); overflow-x: hidden; }
 
 .post-header {
   background: linear-gradient(135deg, #171613 0%, #201d19 55%, #1b1a17 100%);
