@@ -990,13 +990,14 @@
   --ease-luxury:  cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-sans);
   font-weight: 300;
   color: var(--charcoal);
   background: var(--white);
+  overflow-x: hidden;
   background-image:
     radial-gradient(circle at top, rgba(212,176,104,0.07), transparent 26%),
     linear-gradient(180deg, rgba(247,244,239,0.92) 0%, #ffffff 28%);
@@ -2717,7 +2718,7 @@ select.form-control { cursor: pointer; }
 }
 
 /* ── GUIDES / BLOG POSTS ──────────────────────────────────────── */
-.post-wrap { background: var(--white); }
+.post-wrap { background: var(--white); width: 100%; }
 
 .post-header {
   background: linear-gradient(135deg, #171613 0%, #201d19 55%, #1b1a17 100%);
