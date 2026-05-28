@@ -79,3 +79,10 @@ next-env.d.ts
 HANDOVER-*.md
 
 .env*.local
+
+seo_analytics/google_token.json
+seo_analytics/__pycache__/
+outputs/.lh-temp/
+outputs/lighthouse-live/
+outputs/lighthouse-*.json
+outputs/site-ops/
