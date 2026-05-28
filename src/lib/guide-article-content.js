@@ -424,13 +424,6 @@ export const GUIDE_ARTICLE_CONTENT = {
     },
     blocks: [
       {
-        type: 'image',
-        src: '/images/blog-best-golf-courses/Son Gual.webp',
-        alt: 'Son Gual golf course, Mallorca — one of the best courses on the island',
-        containerStyle: { aspectRatio: '16/9', borderRadius: 2, margin: '0 0 1.5rem' },
-        priority: true,
-      },
-      {
         type: 'paragraph',
         text:
           'Mallorca - or Majorca if you grew up spelling it that way - is a much better golf destination than most people realise. I moved here from Shanghai in March 2025, where I had spent eleven years coaching in a city of 27 million people with not enough golf courses between them. Mostly built to championship standards as there was no point having anything there that was not the best. Arriving on an island with 24 courses, 21 of them open to green-fee visitors, in conditions that stay quality even through the winter, felt like discovering a secret.',
@@ -1189,3 +1182,4 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
     },
   }
 }
+

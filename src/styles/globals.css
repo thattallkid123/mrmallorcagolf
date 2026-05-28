@@ -3061,10 +3061,11 @@ select.form-control { cursor: pointer; }
 .cta-final__title { color: #fff; }
 .cta-final__primary { font-size: 10px; padding: 14px 36px; }
 
-@media (max-width: 860px) {
+@media (max-width: 1100px) {
   .post-body { grid-template-columns: 1fr; }
   .post-article { padding: 40px 0 48px; border-right: none; border-bottom: 1px solid var(--linen); }
-  .post-sidebar { padding: 40px 0; position: static; }
+  .post-sidebar { padding: 24px 0 40px; position: static; }
+  .post-sidebar__block { background: transparent; box-shadow: none; padding: 0; }
   .post-fact { grid-template-columns: repeat(2, 1fr); }
   .post-split-media { grid-template-columns: 1fr; gap: 1rem; }
   .guide-entry__status { margin-left: 0; }
