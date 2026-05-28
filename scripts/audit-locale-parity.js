@@ -9,6 +9,7 @@ const IGNORED_PATHS = [
   /^guides-index\.[^.]+\.liveGuides\[\d+\]\.img$/,
   /^guides-index\.[^.]+\.liveGuides\[\d+\]\.imgPosition$/,
   /^play-with-a-pro\.[^.]+\.packages\.multiDay\.detail$/,
+  /^guide-post\.[^.]+\.[^.]+\.blocks(?:\.|\[|$)/,
 ]
 
 const WARNING_ARRAY_PATHS = [
