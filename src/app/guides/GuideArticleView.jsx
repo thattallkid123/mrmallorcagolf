@@ -201,8 +201,8 @@ function renderBlock(block, index, locale, imageOrdinal) {
 
   if (block.type === 'table') {
     return (
-      <div key={`table-${index}`} style={{ overflowX: 'auto', margin: '1.5rem 0 2rem', background: '#fff' }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.88rem', lineHeight: 1.5 }}>
+      <div key={`table-${index}`} style={{ overflowX: 'auto', margin: '1.5rem 0 2rem', background: '#fff', WebkitOverflowScrolling: 'touch' }}>
+        <table style={{ width: '100%', minWidth: 560, borderCollapse: 'collapse', fontSize: '0.88rem', lineHeight: 1.5 }}>
           <thead>
             <tr style={{ borderBottom: '2px solid var(--gold, #b8933a)' }}>
               {block.headers.map((h) => (
