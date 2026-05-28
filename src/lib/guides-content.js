@@ -157,17 +157,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Trip planning · Where to stay · Getting around',
       },
       {
-        slug: 'on-course-coaching-mallorca',
-        badge: 'Coaching',
-        img: '/images/son-gual-blog/sg-swing.webp',
-        imgPosition: 'center 40%',
-        title: 'On-Course Golf Coaching in Mallorca — Play Better, Right Now',
-        intro:
-          'Range lessons fix range problems. On-course coaching fixes golf problems. Here is what it involves and who it suits.',
-        readTime: '5 min read',
-        keywords: 'On-course coaching · Play With A Pro · PGA Professional',
-      },
-      {
         slug: 'golf-club-hire-mallorca',
         badge: 'Practical Guide',
         img: '/images/blog-golf-club-hire/Callaway Rogue ST Max.webp',
@@ -1196,3 +1185,4 @@ export function getGuidesContent(locale = 'en') {
     liveGuides: insertGuideAfter(content.liveGuides, card, 'golf-andratx-review'),
   }
 }
+
