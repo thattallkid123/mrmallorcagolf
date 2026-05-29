@@ -1615,7 +1615,7 @@ body {
 }
 
 /* ─── HOMEPAGE SECTIONS ──────────────────────────────────── */
-.intro { background: var(--white); padding: 88px 40px; display: grid; grid-template-columns: minmax(0, 680px) minmax(280px, 420px); gap: clamp(36px, 6vw, 78px); justify-content: center; align-items: center; border-bottom: 1px solid rgba(26,25,22,0.06); }
+.intro { background: var(--white); padding: 88px 40px; display: grid; grid-template-columns: minmax(0, 680px) minmax(280px, 420px); gap: clamp(36px, 6vw, 78px); justify-content: center; align-items: center; }
 .intro .eyebrow { color: var(--gold); margin-bottom: 1rem; }
 .intro .serif-display { font-size: clamp(1.85rem,3vw,2.7rem); color: var(--deep); margin-bottom: 1.35rem; }
 .intro__left p:not(.eyebrow) { font-size: 1rem; color: var(--charcoal); line-height: 1.85; margin-bottom: 1.15rem; }
@@ -1713,7 +1713,7 @@ body {
 .what__feature-text p { font-size: 0.87rem; color: var(--taupe); line-height: 1.7; margin: 0; }
 
 /* Credential strip — text only, clean and always readable */
-.cred-logo-bar { background: linear-gradient(180deg, #fbfaf6 0%, var(--cream) 100%); border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(26,25,22,0.06); padding: 0 clamp(20px,5vw,60px); }
+.cred-logo-bar { background: #fff; border-top: 1px solid rgba(26,25,22,0.06); padding: 0 clamp(20px,5vw,60px); }
 .cred-logo-bar__label { text-align: center; font-family: 'Jost',sans-serif; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--taupe); padding: 1.8rem 0 1.35rem; margin: 0; }
 .cred-logo-bar__logos { display: flex; align-items: stretch; justify-content: center; max-width: 1040px; margin: 0 auto; }
 .cred-logo-bar__item { flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-height: 196px; padding: 0.75rem 0.9rem; border-right: 1px solid rgba(26,25,22,0.06); text-align: center; }
@@ -1724,7 +1724,7 @@ body {
 .cred-logo-bar__sub { font-family: 'Jost', sans-serif; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); margin: 0; }
 .cred-logo-bar__note { display: none; }
 /* Compact version for homepage — smaller logos, less vertical height */
-.cred-logo-bar--compact .cred-logo-bar__item { min-height: 110px; padding: 0.6rem 0.9rem; }
+.cred-logo-bar--compact .cred-logo-bar__item { min-height: 0; padding: 2.5rem 0.9rem; }
 .cred-logo-bar--compact .cred-logo-bar__img { width: min(140px, 90%); max-height: 90px; }
 
 /* Credentials section — light background, clean cells, full-colour logos */
