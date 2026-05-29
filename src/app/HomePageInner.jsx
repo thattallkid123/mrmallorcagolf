@@ -129,12 +129,8 @@ export default function HomePageInner({ locale = 'en' }) {
             <p key={i}>{p}</p>
           ))}
           <p>
-            Looking for quick answers first? Start with{' '}
-            <a href={golfCoursesHref}>all Mallorca golf courses</a>, then compare{' '}
-            <a href={locale === 'en' ? '/guides/son-gual-review' : `/${locale}/guides/son-gual-review`}>Son Gual</a>{' '}
-            and{' '}
-            <a href={locale === 'en' ? '/guides/son-muntaner-review' : `/${locale}/guides/son-muntaner-review`}>Son Muntaner</a>{' '}
-            before booking.
+            I play and review every course on the island — Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. If you want to compare courses before booking,{' '}
+            <a href={golfCoursesHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>all 24 are here</a>.
           </p>
           {home.intro.services ? (
             <div className="intro__services">
