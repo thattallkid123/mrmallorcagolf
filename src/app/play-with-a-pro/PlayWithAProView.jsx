@@ -109,8 +109,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-hero pwap-hero--tall">
           <div className="pwap-hero__bg" aria-hidden="true">
             <Image
-              src="/images/pwap-hero-mandarin.webp"
-              alt=""
+              src="/images/andy-coaching-client.jpg"
+              alt="Andy Griffiths coaching a client on the golf course in Mallorca"
               fill
               priority
               quality={88}
@@ -180,8 +180,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           <div className="pwap-day__right reveal">
             <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '2rem' }}>
               <Image
-                src="/images/client-coaching.webp"
-                alt="Andy coaching a client on the course"
+                src="/images/andy-coaching-swing.jpg"
+                alt="Andy Griffiths coaching a golfer in Mallorca"
                 fill
                 quality={88}
                 sizes="(max-width: 768px) 100vw, 560px"
@@ -304,10 +304,14 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <Link href={content.finalCta.primaryHref} className="btn btn--gold cta-final__primary-lg">
               {content.finalCta.primaryCta}
             </Link>
-            <Link href={content.finalCta.secondaryHref} className="btn btn--outline-white">
+            <a href={content.finalCta.secondaryHref} className="btn btn--outline-white" target="_blank" rel="noopener noreferrer">
               {content.finalCta.secondaryCta}
-            </Link>
-            {/* Questionnaire link moved to booking confirmation only */}
+            </a>
+            {content.finalCta.tertiaryHref && (
+              <Link href={content.finalCta.tertiaryHref} className="btn btn--outline-white">
+                {content.finalCta.tertiaryCta}
+              </Link>
+            )}
           </div>
         </section>
       </PageLayout>

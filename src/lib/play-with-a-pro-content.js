@@ -160,9 +160,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       body: 'Send dates, group size, handicap range, and any courses you are considering. I will tell you whether Play With A Pro works best as a standalone day or as part of a planned trip.',
       primaryCta: 'Enquire →',
       primaryHref: '/contact',
-      secondaryCta: 'Explore the Courses',
-      secondaryHref: '/golf-courses',
-      tertiaryCta: 'Pre-Round Questionnaire →',
+      secondaryCta: 'Message on WhatsApp',
+      secondaryHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20golf%20day%20in%20Mallorca.',
+      tertiaryCta: 'Explore the Courses',
+      tertiaryHref: '/golf-courses',
     },
   },
   de: {
