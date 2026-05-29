@@ -11,16 +11,17 @@ export default function WinnersProofStrip({ images }) {
     const viewport = viewportRef.current
     const track = trackRef.current
     if (!viewport || !track) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     let pausedUntil = 0
     let raf
 
     const pauseBriefly = () => {
-      pausedUntil = performance.now() + 1800
+      pausedUntil = performance.now() + 2200
     }
 
     const tick = () => {
       if (performance.now() > pausedUntil) {
-        viewport.scrollLeft += 0.48
+        viewport.scrollLeft += 0.5
         if (viewport.scrollLeft >= track.scrollWidth / 2) viewport.scrollLeft = 0
       }
       raf = requestAnimationFrame(tick)
@@ -29,12 +30,14 @@ export default function WinnersProofStrip({ images }) {
     viewport.addEventListener('pointerdown', pauseBriefly)
     viewport.addEventListener('wheel', pauseBriefly, { passive: true })
     viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
+    viewport.addEventListener('touchend', pauseBriefly, { passive: true })
     raf = requestAnimationFrame(tick)
     return () => {
       cancelAnimationFrame(raf)
       viewport.removeEventListener('pointerdown', pauseBriefly)
       viewport.removeEventListener('wheel', pauseBriefly)
       viewport.removeEventListener('touchstart', pauseBriefly)
+      viewport.removeEventListener('touchend', pauseBriefly)
     }
   }, [])
 
