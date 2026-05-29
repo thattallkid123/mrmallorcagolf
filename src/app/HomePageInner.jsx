@@ -111,7 +111,7 @@ export default function HomePageInner({ locale = 'en' }) {
               </a>
             </div>
             <a href={locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`} className="hero__pwap-link">
-              <span>Need the whole trip planned? Plan Your Trip →</span>
+              <span>Need the whole trip planned? →</span>
             </a>
           </div>
         </div>
