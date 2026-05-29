@@ -109,7 +109,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-hero pwap-hero--tall">
           <div className="pwap-hero__bg" aria-hidden="true">
             <Image
-              src="/images/andy-coaching-client.jpg"
+              src="/images/andy-coaching-client.webp"
               alt="Andy Griffiths coaching a client on the golf course in Mallorca"
               fill
               priority
@@ -180,7 +180,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           <div className="pwap-day__right reveal">
             <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '2rem' }}>
               <Image
-                src="/images/andy-coaching-swing.jpg"
+                src="/images/andy-coaching-swing.webp"
                 alt="Andy Griffiths coaching a golfer in Mallorca"
                 fill
                 quality={88}
@@ -235,6 +235,17 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               {content.packages.body}
             </p>
           </div>
+          <div className="pwap-collage reveal">
+            <div className="pwap-collage__item">
+              <Image src="/images/client-group-alcanada.webp" alt="Group golf day in Mallorca with Andy" width={675} height={900} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div className="pwap-collage__item">
+              <Image src="/images/client-group-valley.webp" alt="Group of four golfers at Son Termes" width={900} height={675} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }} />
+            </div>
+            <div className="pwap-collage__item">
+              <Image src="/images/client-group-pond.webp" alt="Group golf day at Son Gual" width={506} height={900} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+          </div>
           <div className="pricing-grid">
             {content.packages.tiers.map((tier, index) => (
               <div key={`${tier.eyebrow}-${tier.name}-${index}`} className={`tier${tier.signature ? ' tier--signature' : tier.featured ? ' tier--feature' : ''} reveal`}>
@@ -271,6 +282,17 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
 
         <section className="pwap-testimonials">
           <div className="pwap-testimonials__inner">
+            <div className="pwap-testimonials__photo reveal">
+              <div className="pwap-testimonials__photo-frame">
+                <Image
+                  src="/images/client-group-valley.webp"
+                  alt="Group of four golfers with Andy in Mallorca"
+                  width={900}
+                  height={675}
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                />
+              </div>
+            </div>
             <div className="pwap-testimonials__content">
               <div className="reveal pwap-testimonials__header">
                 <p className="eyebrow pwap-testimonials__eyebrow">
