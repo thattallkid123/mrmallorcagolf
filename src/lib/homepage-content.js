@@ -260,10 +260,13 @@ export const HOME_CONTENT = {
             'Lunch, private chef, or restaurant booking',
             'Private transfers and recovery time',
             'Caddy, videographer, and premium club hire options',
+            'Post-round video analysis included',
+            'Priority booking — your dates held first',
           ],
           note: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you.',
           cta: 'Enquire →',
           href: '/contact',
+          signature: true,
         },
         {
           eyebrow: 'Trip Planning',

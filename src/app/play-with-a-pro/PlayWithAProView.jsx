@@ -237,7 +237,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           </div>
           <div className="pricing-grid">
             {content.packages.tiers.map((tier, index) => (
-              <div key={`${tier.eyebrow}-${tier.name}-${index}`} className={`tier${tier.featured ? ' tier--feature' : ''} reveal`}>
+              <div key={`${tier.eyebrow}-${tier.name}-${index}`} className={`tier${tier.signature ? ' tier--signature' : tier.featured ? ' tier--feature' : ''} reveal`}>
                 <p className="tier__name-small">{tier.eyebrow}</p>
                 <h3 className="tier__name">{tier.name}</h3>
                 <p className="tier__price">{tier.price}</p>

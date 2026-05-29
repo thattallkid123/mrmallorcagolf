@@ -11,6 +11,17 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         <div className="form-success__icon">&#10003;</div>
         <h3>{content.success.title}</h3>
         <p>{content.success.body}</p>
+        <p style={{ marginTop: '1.5rem', fontSize: '0.88rem', color: 'var(--taupe)', lineHeight: 1.7 }}>
+          Want a faster reply?{' '}
+          <a
+            href="https://wa.me/34624466702"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'var(--gold)', textDecoration: 'none', fontWeight: 500 }}
+          >
+            Message Andy on WhatsApp →
+          </a>
+        </p>
       </div>
     )
   }

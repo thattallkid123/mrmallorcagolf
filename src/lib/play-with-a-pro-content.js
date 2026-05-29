@@ -123,10 +123,13 @@ export const PLAY_WITH_A_PRO_CONTENT = {
             'Lunch, private chef, or restaurant booking',
             'Private transfers and recovery time',
             'Caddy, videographer, and premium club hire options',
+            'Post-round video analysis included',
+            'Priority booking — your dates held first',
           ],
           button: 'Enquire →',
           href: '/contact',
           featured: false,
+          signature: true,
         },
         {
           eyebrow: 'Trip Planning',
