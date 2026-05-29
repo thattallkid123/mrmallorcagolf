@@ -192,14 +192,14 @@ export const HOME_CONTENT = {
     credentials: {
       eyebrow: 'Meet Andy',
       title: 'The person behind the recommendations.',
-      intro: 'I am a UK PGA Advanced Professional based in Mallorca. Before building Mr Mallorca Golf I coached and worked across some very different golf environments: elite coaching in China, Pebble Beach, Doral, Evian, The Open, and a season at sea with Costa Cruises.',
+      intro: 'I am a UK PGA Advanced Professional based in Mallorca. Before building Mr Mallorca Golf I coached across some very different environments: elite junior programmes in Shanghai, Pebble Beach, Doral, Evian, The Open, and a season at sea with Costa Cruises.',
       items: [
-        { title: 'PGA Advanced Professional', detail: 'UK PGA qualification — the highest standard in British golf coaching — with more than 15,000 hours on the range and course.' },
-        { title: 'Trackman Master', detail: 'The first Trackman Master in China. Data-driven coaching built on the technology that Tour coaches use.' },
-        { title: 'TPI Level 3', detail: 'Titleist Performance Institute certification — understanding how the body moves and how it limits or unlocks the swing.' },
-        { title: 'US Kids Top 50 Coach', detail: 'Recognised for junior development and long-term player development environments.' },
-        { title: '11 years in Shanghai', detail: 'National team players, hundreds of millions of coaching views on Douyin, and real elite coaching environments.' },
-        { title: 'World-class venues', detail: 'Pebble Beach, Doral, Evian, The Open Championship, Costa Cruises, and now the courses of Mallorca.' },
+        { title: 'PGA Advanced Professional', detail: 'The highest standard in British golf coaching. Over 15,000 hours on the range and course — you get the full depth of that, not a surface read of your swing.' },
+        { title: 'Trackman Master', detail: 'The data technology Tour coaches use, applied to your game in plain English. You leave knowing exactly what is happening and why — not just what to try next.' },
+        { title: 'TPI Level 3', detail: 'Your body limits your swing more than your technique does. I know how to separate the two — which means the feedback you get actually sticks.' },
+        { title: 'US Kids Top 50 Coach', detail: 'I have coached players trying to win and players trying to break 90. The standard of attention does not change — only the focus does.' },
+        { title: '11 years in Shanghai', detail: 'National team juniors, hundreds of millions of coaching views on Douyin, and elite environments where the bar is set properly high. That experience shapes how I read a player quickly.' },
+        { title: 'Pebble Beach · Evian · The Open', detail: 'Some of the most demanding golf environments in the world. Mallorca is where it all comes together — a place worth doing properly.' },
       ],
     },
     quote: {
