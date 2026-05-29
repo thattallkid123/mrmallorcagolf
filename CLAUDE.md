@@ -1,5 +1,31 @@
 # Mr Mallorca Golf - Claude Session Context
 
+## 🖥️ New PC Setup — Fill This In First
+
+If you're on a **new machine**, update the paths below before doing anything else.
+Claude will use these instead of the defaults throughout this file.
+
+```
+REPO_ROOT=C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
+GOOGLE_DRIVE=C:\Users\andyg\My Drive
+DOCUMENTS=C:\Users\andyg\Documents
+PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
+```
+
+**Steps when setting up on a new PC:**
+1. Mount the repo folder in Cowork (same as you do now)
+2. Update the four paths above to match where things landed on the new machine
+3. Confirm Google Drive is synced and the `Mr Mallorca Golf\Reference\` folder is available
+4. Run `npm install` in the repo root before any dev work
+5. Apply Windows settings: see `WINDOWS_SETTINGS_MIGRATION.md` in the repo root
+
+**Typical path changes to check:**
+- Username different? (`andyg` → whatever) — update all four paths above
+- Google Drive in a different location? (e.g. `G:\My Drive` or `C:\Users\...\Google Drive`) — update `GOOGLE_DRIVE`
+- Repo cloned to a different folder? — update `REPO_ROOT` and `PROJECTS_FILE`
+
+---
+
 ## Quick Commands
 
 | Task | Command |

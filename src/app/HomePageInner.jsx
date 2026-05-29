@@ -69,7 +69,7 @@ export default function HomePageInner({ locale = 'en' }) {
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
-  const itineraryHref = home.hero.primaryHref || ITINERARY_PLANNER_PATH
+  const itineraryHref = home.hero.primaryHref ? localizePath(home.hero.primaryHref, locale) : playWithAProHref
   const sharedPackageCta = null
 
   return (
@@ -110,8 +110,8 @@ export default function HomePageInner({ locale = 'en' }) {
                 {home.hero.secondaryCta}
               </a>
             </div>
-            <a href={playWithAProHref} className="hero__pwap-link">
-              <span>Add Play With A Pro</span>
+            <a href={locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`} className="hero__pwap-link">
+              <span>Need the whole trip planned? Plan Your Trip →</span>
             </a>
           </div>
         </div>
