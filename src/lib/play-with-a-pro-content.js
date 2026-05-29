@@ -246,6 +246,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       secondaryCta: 'Die Plätze entdecken',
       secondaryHref: '/de/golf-courses',
       tertiaryCta: 'Vor-Runden-Fragebogen →',
+      tertiaryHref: '/de/golf-courses',
     },
   },
   es: {
@@ -325,6 +326,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       secondaryCta: 'Explorar los campos',
       secondaryHref: '/es/golf-courses',
       tertiaryCta: 'Cuestionario pre-ronda →',
+      tertiaryHref: '/es/golf-courses',
     },
   },
   fr: {
@@ -404,6 +406,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       secondaryCta: 'Explorer les parcours',
       secondaryHref: '/fr/golf-courses',
       tertiaryCta: 'Questionnaire pré-parcours →',
+      tertiaryHref: '/fr/golf-courses',
     },
   },
   nl: {
@@ -483,6 +486,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       secondaryCta: 'Ontdek de banen',
       secondaryHref: '/nl/golf-courses',
       tertiaryCta: 'Pre-ronde vragenlijst →',
+      tertiaryHref: '/nl/golf-courses',
     },
   },
   sv: {
@@ -562,6 +566,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       secondaryCta: 'Utforska banorna',
       secondaryHref: '/sv/golf-courses',
       tertiaryCta: 'Frågeformulär inför rundan →',
+      tertiaryHref: '/sv/golf-courses',
     },
   },
   zh: {
@@ -641,6 +646,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       secondaryCta: '查看球场',
       secondaryHref: '/zh/golf-courses',
       tertiaryCta: '赛前问卷 →',
+      tertiaryHref: '/zh/golf-courses',
     },
   },
 }
@@ -1204,6 +1210,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           eyebrow: 'Das Signature-Erlebnis',
           name: 'Voller Tag',
           price: '€3.000+',
+          signature: true,
           note: 'Alles inklusive. Andy bestätigt den vollständigen Tagesplan im Voraus mit Ihnen.',
           features: [
             'Platz, Startzeit und Coaching',
@@ -1284,6 +1291,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           eyebrow: 'La Experiencia Signature',
           name: 'Día completo',
           price: '€3.000+',
+          signature: true,
           note: 'Todo incluido. Andy confirma el itinerario completo con usted de antemano.',
           features: [
             'Campo, hora de salida y coaching',
@@ -1364,6 +1372,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           eyebrow: "L'Expérience Signature",
           name: 'Journée complète',
           price: '€3 000+',
+          signature: true,
           note: "Tout compris. Andy confirme le programme complet avec vous à l'avance.",
           features: [
             'Parcours, heure de départ et coaching',
@@ -1444,6 +1453,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           eyebrow: 'De Signature Experience',
           name: 'Volledige dag',
           price: '€3.000+',
+          signature: true,
           note: 'Alles inbegrepen. Andy bevestigt het volledige programma vooraf met u.',
           features: [
             'Baan, starttijd en coaching',
@@ -1524,6 +1534,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           eyebrow: 'Signature-upplevelsen',
           name: 'Hel dag',
           price: '€3 000+',
+          signature: true,
           note: 'Allt ingår. Andy bekräftar hela programmet med dig i förväg.',
           features: [
             'Bana, starttid och coaching',
@@ -1604,6 +1615,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           eyebrow: '尊享体验',
           name: '全天尊享',
           price: '€3,000+',
+          signature: true,
           note: '全部包含。Andy 提前与您确认完整行程安排。',
           features: [
             '球场、开球时间与全程指导',

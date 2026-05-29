@@ -157,6 +157,29 @@ export default function HomePageInner({ locale = 'en' }) {
       </section>
 
 
+      <section className="cred-logo-bar cred-logo-bar--compact">
+        <div className="cred-logo-bar__logos">
+          {[
+            { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
+            { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
+            { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
+            { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
+          ].map((logo) => (
+            <div className="cred-logo-bar__item" key={logo.name}>
+              <Image
+                src={logo.src}
+                alt={logo.name}
+                width={logo.width}
+                height={logo.height}
+                className="cred-logo-bar__img"
+                quality={90}
+                sizes="(max-width: 700px) 45vw, 180px"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {home.journey ? (
         <section className="journey">
           <div className="journey__header reveal">

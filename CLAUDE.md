@@ -35,7 +35,7 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 | Build check | `npm run build` |
 | Visual smoke checks | `npm run check:visual` |
 | Pre-deploy check | `npm run predeploy` if available, otherwise run the three checks above |
-| Deploy | `git add -A && git commit -m "..." && git push` |
+| Deploy | `git add -A` then `git commit -m "..."` then `git push` — **PowerShell does not support `&&`, always use separate lines** |
 | GA4 report | `python ga4_analytics/ga4_report.py` |
 
 **Local path:** `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`

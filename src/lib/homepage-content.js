@@ -1513,6 +1513,7 @@ const HOME_PACKAGE_ITEMS = {
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
       price: '€3,000+',
+      signature: true,
       features: [
         'Alles im Voraus organisiert',
         'Platz, Startzeit und Coaching',
@@ -1561,6 +1562,7 @@ const HOME_PACKAGE_ITEMS = {
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
       price: '€3,000+',
+      signature: true,
       features: [
         'Todo organizado de antemano',
         'Campo, hora de salida y coaching',
@@ -1609,6 +1611,7 @@ const HOME_PACKAGE_ITEMS = {
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
       price: '€3,000+',
+      signature: true,
       features: [
         'Tout organisé en amont',
         'Parcours, départ et coaching',
@@ -1657,6 +1660,7 @@ const HOME_PACKAGE_ITEMS = {
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
       price: '€3,000+',
+      signature: true,
       features: [
         'Alles vooraf geregeld',
         'Baan, starttijd en coaching',
@@ -1705,6 +1709,7 @@ const HOME_PACKAGE_ITEMS = {
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
       price: '€3,000+',
+      signature: true,
       features: [
         'Allt ordnat i förväg',
         'Bana, starttid och coaching',
@@ -1753,6 +1758,7 @@ const HOME_PACKAGE_ITEMS = {
       eyebrow: 'The Signature Experience',
       name: 'Full Day',
       price: '€3,000+',
+      signature: true,
       features: [
         '所有安排提前落实',
         '球场、开球时间与指导',
