@@ -1646,9 +1646,12 @@ body {
 .journey-card__cta { margin-top: auto; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--pine); font-weight: 500; }
 /* Photo variant */
 .journey-card--photo { position: relative; overflow: hidden; padding: 0; min-height: 360px; }
-.journey-card--photo .journey-card__photo { position: absolute; inset: 0; }
-.journey-card--photo .journey-card__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,6,5,0.98) 0%, rgba(10,9,7,0.82) 42%, rgba(10,9,7,0.42) 78%, rgba(10,9,7,0.22) 100%); }
-.journey-card--photo .journey-card__body { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; min-height: 360px; padding: 34px 30px; text-shadow: 0 2px 18px rgba(0,0,0,0.38); }
+.journey-card--photo .journey-card__photo { position: absolute; inset: 0; overflow: hidden; transition: transform 0.8s var(--ease-luxury); }
+.journey-card--photo:hover .journey-card__photo { transform: scale(1.05); }
+.journey-card--photo .journey-card__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,6,5,0.98) 0%, rgba(10,9,7,0.82) 42%, rgba(10,9,7,0.42) 78%, rgba(10,9,7,0.22) 100%); z-index: 1; }
+.journey-card--photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(212,176,104,0) 0%, rgba(212,176,104,0.2) 50%, rgba(212,176,104,0) 100%); opacity: 0; transition: opacity 0.5s var(--ease-luxury); pointer-events: none; z-index: 2; }
+.journey-card--photo:hover::after { opacity: 1; }
+.journey-card--photo .journey-card__body { position: relative; z-index: 3; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; min-height: 360px; padding: 34px 30px; text-shadow: 0 2px 18px rgba(0,0,0,0.38); }
 .journey-card--photo .journey-card__num { color: var(--gold-light); }
 .journey-card--photo h3 { color: #fff; font-size: clamp(1.5rem, 2vw, 1.85rem); max-width: 13ch; }
 .journey-card--photo p { color: rgba(255,255,255,0.9); font-size: 0.96rem; line-height: 1.68; max-width: 31ch; }
@@ -1693,8 +1696,11 @@ body {
 .course__img-mobile { display:none; overflow:hidden; background:var(--linen); margin:0 0 20px; width:100%; height:180px; border-radius:2px; }
 .course__img-desktop { display:flex; flex-shrink:0; width:45%; min-width:280px; align-self:stretch; overflow:hidden; background:var(--linen); margin:-28px -28px -28px 0; }
 .course__img-frame { position: relative; }
-.course__image { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: grayscale(100%); transition: filter 0.55s var(--ease-luxury); }
-.course__img-frame:hover .course__image { filter: grayscale(0%); }
+.course__image { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.6s var(--ease-luxury); }
+.course__img-frame { overflow: hidden; position: relative; }
+.course__img-frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(212,176,104,0) 0%, rgba(212,176,104,0.15) 50%, rgba(212,176,104,0) 100%); opacity: 0; transition: opacity 0.45s var(--ease-luxury); pointer-events: none; }
+.course__img-frame:hover .course__image { transform: scale(1.04); }
+.course__img-frame:hover::after { opacity: 1; }
 .course-card__excerpt--visible { display: -webkit-box; font-size: 0.84rem; color: rgba(255,255,255,0.82); line-height: 1.55; margin-top: 10px; max-width: 27ch; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
 .what { background: linear-gradient(180deg, #f4efe6 0%, #fbfaf7 100%); padding: 112px 40px; display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: start; }
@@ -2971,8 +2977,10 @@ select.form-control { cursor: pointer; }
 .guide-photo-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-deep); }
 /* clip-shell: contains the image zoom so it never bleeds outside the card */
 .guide-photo-card__clip { position: absolute; inset: 0; overflow: hidden; }
-.guide-photo-card__bg { position: absolute; inset: 0; transition: transform 0.8s var(--ease-luxury), filter 0.55s var(--ease-luxury); filter: grayscale(100%); }
-.guide-photo-card:hover .guide-photo-card__bg { transform: scale(1.04); filter: grayscale(0%); }
+.guide-photo-card__bg { position: absolute; inset: 0; transition: transform 0.8s var(--ease-luxury); }
+.guide-photo-card:hover .guide-photo-card__bg { transform: scale(1.04); }
+.guide-photo-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(212,176,104,0) 0%, rgba(212,176,104,0.18) 50%, rgba(212,176,104,0) 100%); opacity: 0; transition: opacity 0.5s var(--ease-luxury); pointer-events: none; z-index: 2; }
+.guide-photo-card:hover::after { opacity: 1; }
 .guide-photo-card__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,18,14,0.90) 0%, rgba(20,18,14,0.28) 55%, rgba(20,18,14,0.08) 100%); pointer-events: none; }
 .guide-photo-card__badge { position: absolute; top: 22px; left: 22px; background: rgba(20,18,14,0.68); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.18); font-size: 8px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; padding: 5px 10px; font-family: var(--font-sans); z-index: 3; }
 .guide-photo-card__content { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 26px; z-index: 2; }
