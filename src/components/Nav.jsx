@@ -10,8 +10,8 @@ const LANG_CONFIG = {
     links: [
       { href: '/', label: 'Home' },
       { href: '/about', label: 'About' },
-      { href: '/plan-your-trip', label: 'Plan Your Trip' },
       { href: '/play-with-a-pro', label: 'Play With A Pro' },
+      { href: '/plan-your-trip', label: 'Plan Your Trip' },
       { href: '/golf-courses', label: 'Golf Courses' },
       { href: '/guides', label: 'Guides' },
     ],
