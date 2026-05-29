@@ -146,12 +146,12 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="intro__media" aria-label="Andy Griffiths">
           <Image
-            src="/images/about-portrait.webp"
-            alt="Andy Griffiths, PGA Advanced Professional, Mallorca"
+            src="/images/home-plan-play-mandarin.webp"
+            alt="Andy Griffiths watching a golfer putt at Mandarin Oriental Mallorca"
             fill
             quality={90}
             sizes="(max-width: 900px) 100vw, 420px"
-            style={{ objectFit: 'cover', objectPosition: '50% 20%' }}
+            style={{ objectFit: 'cover', objectPosition: '50% 46%' }}
           />
         </div>
       </section>
