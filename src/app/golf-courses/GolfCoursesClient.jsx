@@ -529,7 +529,6 @@ function CourseCard({ c, lang = 'en' }) {
           <div className="course__stats">
             {(translated.pills || displayPills).slice(0, 4).map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{translateCourseText(pill, lang)}</span>)}
           </div>
-          <p className="course__difficulty-note">{translateCourseText(`${c.diffScore} difficulty`, lang)}</p>
           <p className="course__text">{bodyText}</p>
           {(c.text2 || translated.text2) && <p className="course__text course__text--spaced">{bodyText2}</p>}
           {(c.note || translated.note) && <div className="course__note"><p>{noteText}</p></div>}

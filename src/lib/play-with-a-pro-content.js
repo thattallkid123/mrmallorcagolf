@@ -19,8 +19,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: 'What the day looks like',
       title: 'One course. 18 holes. Everything handled before you arrive.',
       paragraphs: [
-        'You arrive at the course. I handle everything before that: the right course for your game, the tee time, and a proper briefing on what to expect. Then we play. The coaching comes in at the moments where it can still change something: the hole, the score, the decision you are standing in front of. Between shots, there is time to talk: course strategy, how to read conditions, stories from years on Tour and at places like Pebble Beach and The Open. The round has a rhythm to it.',
-        'Before we tee off, I want to understand how your game works and what you are hoping to take away from the day. I am a PGA Advanced Professional with 15,000+ coaching hours and a Trackman Master certification. That background shapes the day, but it does not dominate it. This is a round of golf, not a lesson.',
+        'You arrive at the course. I handle everything before that: the right course for your game, the tee time, and a proper briefing on what to expect. Then we play. The coaching comes in at the moments where it can still change something: the hole, the score, the decision you are standing in front of. Between shots, there is time to talk: course strategy, how to read conditions, stories from golf around the world.',
+        'Before we tee off, I want to understand how your game works and what you are hoping to take away from the day. I am a PGA Advanced Professional with 15,000+ coaching hours and a Trackman Master certification. The day draws on that, but it does not become a technical session. A round of golf, played properly.',
       ],
       quote:
         'The fastest improvements usually happen on the course, not the range. Real conditions, real decisions: that kind of progress tends to stick.',

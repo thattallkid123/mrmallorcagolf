@@ -178,15 +178,19 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
           </div>
           <div className="pwap-day__right reveal">
-            <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '2rem' }}>
-              <Image
-                src="/images/client-alcanada.webp"
-                alt="Andy Griffiths with a client at Alcanada golf course, Mallorca"
-                fill
-                quality={88}
-                sizes="(max-width: 768px) 100vw, 560px"
-                style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
-              />
+            <div className="pwap-collage pwap-collage--day">
+              {[
+                { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', pos: 'center 40%' },
+                { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', pos: 'center 30%' },
+                { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual', pos: 'center 25%' },
+                { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', pos: 'center 20%' },
+                { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', pos: 'center 25%' },
+                { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
+              ].map((photo) => (
+                <div key={photo.src} className="pwap-collage__item">
+                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover', objectPosition: photo.pos }} />
+                </div>
+              ))}
             </div>
             <div className="included">
               <h3>{content.included.title}</h3>
@@ -234,20 +238,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <p className="pwap-packages__intro">
               {content.packages.body}
             </p>
-          </div>
-          <div className="pwap-collage reveal">
-            {[
-              { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', pos: 'center 40%' },
-              { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', pos: 'center 30%' },
-              { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual', pos: 'center 25%' },
-              { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', pos: 'center 20%' },
-              { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', pos: 'center 25%' },
-              { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
-            ].map((photo) => (
-              <div key={photo.src} className="pwap-collage__item">
-                <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 50vw, 33vw" style={{ objectFit: 'cover', objectPosition: photo.pos }} />
-              </div>
-            ))}
           </div>
           <div className="pricing-grid">
             {content.packages.tiers.map((tier, index) => (
