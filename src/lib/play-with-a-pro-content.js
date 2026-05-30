@@ -1200,6 +1200,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Anfragen →',
           href: '/de/contact',
           featured: false,
+          signature: false,
         },
         {
           eyebrow: 'Gruppe',
@@ -1217,6 +1218,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Anfragen →',
           href: '/de/contact',
           featured: true,
+          signature: false,
         },
         {
           eyebrow: 'Das Signature-Erlebnis',
@@ -1253,6 +1255,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Anfragen →',
           href: '/de/contact',
           featured: false,
+          signature: false,
         },
       ],
       multiDay: {
@@ -1298,6 +1301,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Consultar →',
           href: '/es/contact',
           featured: false,
+          signature: false,
         },
         {
           eyebrow: 'Grupo',
@@ -1315,6 +1319,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Consultar →',
           href: '/es/contact',
           featured: true,
+          signature: false,
         },
         {
           eyebrow: 'La Experiencia Signature',
@@ -1351,6 +1356,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Consultar →',
           href: '/es/contact',
           featured: false,
+          signature: false,
         },
       ],
       multiDay: {
@@ -1396,6 +1402,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Demander →',
           href: '/fr/contact',
           featured: false,
+          signature: false,
         },
         {
           eyebrow: 'Groupe',
@@ -1413,6 +1420,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Demander →',
           href: '/fr/contact',
           featured: true,
+          signature: false,
         },
         {
           eyebrow: "L'Expérience Signature",
@@ -1449,6 +1457,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Demander →',
           href: '/fr/contact',
           featured: false,
+          signature: false,
         },
       ],
       multiDay: {
@@ -1494,6 +1503,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Aanvragen →',
           href: '/nl/contact',
           featured: false,
+          signature: false,
         },
         {
           eyebrow: 'Groep',
@@ -1511,6 +1521,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Aanvragen →',
           href: '/nl/contact',
           featured: true,
+          signature: false,
         },
         {
           eyebrow: 'De Signature Experience',
@@ -1547,6 +1558,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Aanvragen →',
           href: '/nl/contact',
           featured: false,
+          signature: false,
         },
       ],
       multiDay: {
@@ -1592,6 +1604,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Förfrågan →',
           href: '/sv/contact',
           featured: false,
+          signature: false,
         },
         {
           eyebrow: 'Grupp',
@@ -1609,6 +1622,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Förfrågan →',
           href: '/sv/contact',
           featured: true,
+          signature: false,
         },
         {
           eyebrow: 'Signature-upplevelsen',
@@ -1645,6 +1659,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: 'Förfrågan →',
           href: '/sv/contact',
           featured: false,
+          signature: false,
         },
       ],
       multiDay: {
@@ -1690,6 +1705,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: '立即咨询 →',
           href: '/zh/contact',
           featured: false,
+          signature: false,
         },
         {
           eyebrow: '小组',
@@ -1707,6 +1723,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: '立即咨询 →',
           href: '/zh/contact',
           featured: true,
+          signature: false,
         },
         {
           eyebrow: '尊享体验',
@@ -1743,6 +1760,7 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           button: '立即咨询 →',
           href: '/zh/contact',
           featured: false,
+          signature: false,
         },
       ],
       multiDay: {
