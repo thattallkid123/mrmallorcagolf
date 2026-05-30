@@ -1615,10 +1615,12 @@ body {
 }
 
 /* ─── HOMEPAGE SECTIONS ──────────────────────────────────── */
-.intro { background: var(--white); padding: 88px 40px 0; display: grid; grid-template-columns: minmax(0, 680px) minmax(280px, 420px); gap: clamp(36px, 6vw, 78px); justify-content: center; align-items: center; }
-.intro__creds { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; padding: 56px 0 56px; border-top: 1px solid rgba(26,25,22,0.06); margin-top: 56px; }
-.intro__cred-item { flex: 1 1 0; display: flex; align-items: center; justify-content: center; padding: 0 0.9rem; border-right: 1px solid rgba(26,25,22,0.06); }
+.intro { background: var(--white); padding: 88px 40px 8px; display: grid; grid-template-columns: minmax(0, 680px) minmax(280px, 420px); gap: clamp(36px, 6vw, 78px); justify-content: center; align-items: center; }
+.intro__creds { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; padding: 40px 0 40px; margin-top: 40px; border-top: 1px solid rgba(26,25,22,0.07); }
+.intro__cred-item { flex: 1 1 0; display: flex; align-items: center; justify-content: center; padding: 0 1.5rem; border-right: 1px solid rgba(26,25,22,0.07); }
 .intro__cred-item:last-child { border-right: none; }
+.intro__cred-item .cred-logo-bar__img { width: min(72px, 85%); max-height: 56px; opacity: 0.55; filter: grayscale(100%) contrast(0.7); }
+.intro__cred-item:hover .cred-logo-bar__img { opacity: 1; filter: grayscale(0%) contrast(1); transform: translateY(-1px); }
 .intro .eyebrow { color: var(--gold); margin-bottom: 1rem; }
 .intro .serif-display { font-size: clamp(1.85rem,3vw,2.7rem); color: var(--deep); margin-bottom: 1.35rem; }
 .intro__left p:not(.eyebrow) { font-size: 1rem; color: var(--charcoal); line-height: 1.85; margin-bottom: 1.15rem; }
@@ -1752,10 +1754,11 @@ body {
 .testimonial::before { content: '\201C'; font-family: var(--font-serif); font-size: 5rem; line-height: 0.7; color: rgba(184,151,60,0.12); position: absolute; top: 34px; left: 36px; }
 .testimonial p { font-family: var(--font-serif); font-style: italic; font-size: 1.12rem; color: rgba(255,255,255,0.78); line-height: 1.76; margin-bottom: 1.35rem; position: relative; z-index: 1; max-width: 36ch; }
 .testimonial__author { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); }
-.winners-proof { position: relative; max-width: 1120px; margin: 0 auto 14px; overflow-x: auto; overflow-y: hidden; -ms-overflow-style: none; scrollbar-width: none; overscroll-behavior-x: contain; touch-action: pan-x; cursor: grab; }
-.winners-proof:active { cursor: grabbing; }
-.winners-proof::-webkit-scrollbar { display: none; }
-.winners-proof__track { display: flex; gap: 10px; width: max-content; }
+.winners-proof { position: relative; max-width: 1120px; margin: 0 auto 14px; overflow: hidden; }
+@keyframes winners-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.winners-proof__track { display: flex; gap: 10px; width: max-content; animation: winners-scroll 36s linear infinite; }
+.winners-proof__track.paused { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .winners-proof__track { animation: none; } }
 .winners-proof__card { position: relative; flex: 0 0 262px; height: 188px; margin: 0; overflow: hidden; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); box-shadow: var(--shadow-soft); }
 
 .packages { background: var(--white); padding: 96px 40px; }
@@ -2617,6 +2620,9 @@ select.form-control { cursor: pointer; }
   .intro { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
   .intro__services { grid-template-columns: 1fr; }
   .intro__media { min-height: 420px; }
+  .intro__creds { padding: 28px 0; margin-top: 28px; flex-wrap: nowrap; }
+  .intro__cred-item { flex: 1 1 0; min-width: 0; padding: 0 0.4rem; }
+  .intro__cred-item .cred-logo-bar__img { width: min(52px, 90%); max-height: 42px; }
   .journey { padding: 64px 20px; }
   .journey__grid { grid-template-columns: 1fr; }
   .journey-card { min-height: 0; padding: 28px 24px; }

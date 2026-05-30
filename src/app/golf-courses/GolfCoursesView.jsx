@@ -80,7 +80,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
   return (
     <>
       <link rel="preload" as="image" href="/images/golf-courses.webp" />
-      <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false}>
+      <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false} showScrollReset={true}>
         <JsonLd data={buildGolfCoursesSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale)} />
 

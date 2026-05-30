@@ -52,7 +52,7 @@ export const HOME_CONTENT = {
       title: 'Start where you are in the planning process.',
       items: [
         {
-          title: 'I want Andy on the course',
+          title: 'Play a round with Andy',
           text: 'Book a private day with me: one course, 18 holes, local course management, and coaching woven into the round. Solo or group.',
           cta: 'Play With A Pro',
           href: '/play-with-a-pro',

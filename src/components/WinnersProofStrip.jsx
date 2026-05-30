@@ -1,49 +1,29 @@
 'use client'
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import { useRef, useState } from 'react'
 
 export default function WinnersProofStrip({ images }) {
-  const viewportRef = useRef(null)
   const trackRef = useRef(null)
+  const [paused, setPaused] = useState(false)
+  const pauseTimer = useRef(null)
   const allImages = [...images, ...images]
 
-  useEffect(() => {
-    const viewport = viewportRef.current
-    const track = trackRef.current
-    if (!viewport || !track) return
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-    let pausedUntil = 0
-    let raf
-
-    const pauseBriefly = () => {
-      pausedUntil = performance.now() + 2200
-    }
-
-    const tick = () => {
-      if (performance.now() > pausedUntil) {
-        viewport.scrollLeft += 0.5
-        if (viewport.scrollLeft >= track.scrollWidth / 2) viewport.scrollLeft = 0
-      }
-      raf = requestAnimationFrame(tick)
-    }
-
-    viewport.addEventListener('pointerdown', pauseBriefly)
-    viewport.addEventListener('wheel', pauseBriefly, { passive: true })
-    viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
-    viewport.addEventListener('touchend', pauseBriefly, { passive: true })
-    raf = requestAnimationFrame(tick)
-    return () => {
-      cancelAnimationFrame(raf)
-      viewport.removeEventListener('pointerdown', pauseBriefly)
-      viewport.removeEventListener('wheel', pauseBriefly)
-      viewport.removeEventListener('touchstart', pauseBriefly)
-      viewport.removeEventListener('touchend', pauseBriefly)
-    }
-  }, [])
+  const pauseBriefly = () => {
+    setPaused(true)
+    clearTimeout(pauseTimer.current)
+    pauseTimer.current = setTimeout(() => setPaused(false), 2200)
+  }
 
   return (
-    <div ref={viewportRef} className="winners-proof" aria-label="Competition winners coached by Andy over the years">
-      <div ref={trackRef} className="winners-proof__track">
+    <div
+      className="winners-proof"
+      aria-label="Competition winners coached by Andy over the years"
+      onPointerDown={pauseBriefly}
+      onWheel={pauseBriefly}
+      onTouchStart={pauseBriefly}
+      onTouchEnd={pauseBriefly}
+    >
+      <div ref={trackRef} className={`winners-proof__track${paused ? ' paused' : ''}`}>
         {allImages.map((image, index) => (
           <figure className="winners-proof__card" key={`${image.src}-${index}`}>
             <Image
