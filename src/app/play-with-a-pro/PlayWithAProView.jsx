@@ -188,14 +188,10 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', pos: 'center 25%' },
                 { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
               ]}
-              renderItem={(photo) => (
-                <div key={photo.src} className="pwap-day-carousel__item">
-                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 72vw, 320px" style={{ objectFit: 'cover', objectPosition: photo.pos }} />
-                </div>
-              )}
               containerClassName="pwap-day-carousel"
               viewportClassName="pwap-day-carousel__viewport"
               trackClassName="pwap-day-carousel__track"
+              itemClassName="pwap-day-carousel__item"
             />
             <div className="included">
               <h3>{content.included.title}</h3>
@@ -297,14 +293,10 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', pos: 'center 25%' },
                 { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
               ]}
-              renderItem={(photo) => (
-                <div key={photo.src} className="pwap-testimonials-carousel__item">
-                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 72vw, 320px" style={{ objectFit: 'cover', objectPosition: photo.pos }} />
-                </div>
-              )}
               containerClassName="pwap-testimonials-carousel"
               viewportClassName="pwap-testimonials-carousel__viewport"
               trackClassName="pwap-testimonials-carousel__track"
+              itemClassName="pwap-testimonials-carousel__item"
             />
           </div>
         </section>

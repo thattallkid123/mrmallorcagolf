@@ -3,21 +3,20 @@ import Image from 'next/image'
 import { useRef, useEffect } from 'react'
 
 /**
- * Generic horizontal carousel with auto-scroll
+ * Generic horizontal carousel with auto-scroll for images
  * - Auto-scrolls at 1px/frame
  * - Pauses 1.8s on pointer/wheel/touch interaction
  * - Duplicates items for infinite loop
  * - Respects prefers-reduced-motion
- * - Supports optional objectPosition override per item
  */
 export default function CarouselStrip({
   items,
-  renderItem,
   label,
   heading,
   containerClassName = 'carousel-strip',
   viewportClassName = 'carousel-strip__viewport',
   trackClassName = 'carousel-strip__track',
+  itemClassName = 'carousel-strip__item',
 }) {
   const viewportRef = useRef(null)
   const trackRef = useRef(null)
@@ -69,7 +68,11 @@ export default function CarouselStrip({
       )}
       <div ref={viewportRef} className={viewportClassName} aria-label="Carousel">
         <div ref={trackRef} className={trackClassName}>
-          {allItems.map((item, i) => renderItem(item, i))}
+          {allItems.map((item, i) => (
+            <div key={item.src} className={itemClassName}>
+              <Image src={item.src} alt={item.alt} fill sizes="(max-width: 768px) 72vw, 320px" style={{ objectFit: 'cover', objectPosition: item.pos }} />
+            </div>
+          ))}
         </div>
         <div className={`${containerClassName}__fade ${containerClassName}__fade--left`} />
         <div className={`${containerClassName}__fade ${containerClassName}__fade--right`} />
