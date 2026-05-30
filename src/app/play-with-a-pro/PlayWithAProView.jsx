@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRef, useEffect } from 'react'
+import { useRef, useState } from 'react'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
@@ -100,42 +100,23 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
   }
-  const collageRef = useRef(null)
+  const pauseTimer = useRef(null)
+  const [paused, setPaused] = useState(false)
+  const dayPhotos = [
+    { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada' },
+    { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual' },
+    { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual' },
+    { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views' },
+    { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca' },
+    { src: '/images/client-group-pond.webp', alt: 'Group day with water views' },
+  ]
+  const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
 
-  // Auto-scroll carousel
-  useEffect(() => {
-    const carousel = collageRef.current
-    if (!carousel) return
-
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (prefersReducedMotion) return
-
-    let pausedUntil = 0
-    let raf
-
-    const pauseBriefly = () => {
-      pausedUntil = performance.now() + 1800
-    }
-
-    const tick = () => {
-      if (performance.now() > pausedUntil) {
-        carousel.scrollLeft = Math.round(carousel.scrollLeft + 1)
-      }
-      raf = requestAnimationFrame(tick)
-    }
-
-    carousel.addEventListener('pointerdown', pauseBriefly)
-    carousel.addEventListener('wheel', pauseBriefly, { passive: true })
-    carousel.addEventListener('touchstart', pauseBriefly, { passive: true })
-    raf = requestAnimationFrame(tick)
-
-    return () => {
-      cancelAnimationFrame(raf)
-      carousel.removeEventListener('pointerdown', pauseBriefly)
-      carousel.removeEventListener('wheel', pauseBriefly)
-      carousel.removeEventListener('touchstart', pauseBriefly)
-    }
-  }, [])
+  const pauseBriefly = () => {
+    setPaused(true)
+    clearTimeout(pauseTimer.current)
+    pauseTimer.current = setTimeout(() => setPaused(false), 2200)
+  }
 
   return (
     <>
@@ -216,19 +197,27 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
           </div>
           <div className="pwap-day__right reveal">
-            <div ref={collageRef} className="pwap-collage pwap-collage--day pwap-collage--scroll">
-              {[
-                { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', pos: 'center 40%' },
-                { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', pos: 'center 30%' },
-                { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual', pos: 'center 25%' },
-                { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', pos: 'center 20%' },
-                { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', pos: 'center 25%' },
-                { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
-              ].map((photo) => (
-                <div key={photo.src} className="pwap-collage__item">
-                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'contain', objectPosition: 'center' }} />
-                </div>
-              ))}
+            <div
+              className="pwap-day-strip"
+              aria-label="Play With A Pro round photos"
+              onPointerDown={pauseBriefly}
+              onWheel={pauseBriefly}
+              onTouchStart={pauseBriefly}
+              onTouchEnd={pauseBriefly}
+            >
+              <div className={`pwap-day-strip__track${paused ? ' paused' : ''}`}>
+                {dayPhotosLoop.map((photo, index) => (
+                  <figure key={`${photo.src}-${index}`} className="pwap-day-strip__card">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      sizes="(max-width: 920px) 78vw, 360px"
+                      style={{ objectFit: 'contain', objectPosition: 'center center' }}
+                    />
+                  </figure>
+                ))}
+              </div>
             </div>
             <div className="included">
               <h3>{content.included.title}</h3>
