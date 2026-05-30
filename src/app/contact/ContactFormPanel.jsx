@@ -172,8 +172,8 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
 
         <div style={{ marginTop: '1.5rem' }}>
-          <p style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--deep)', marginBottom: '0.4rem', fontFamily: "'Jost',sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase' }}>{content.whatNext.heading}</p>
-          <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', lineHeight: 1.7, margin: 0, fontFamily: "'Jost',sans-serif" }}>
+          <h3 style={{ marginBottom: '0.5rem' }}>{content.whatNext.heading}</h3>
+          <p style={{ margin: 0 }}>
             {content.whatNext.body}
           </p>
         </div>

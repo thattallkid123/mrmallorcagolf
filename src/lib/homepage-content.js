@@ -194,9 +194,9 @@ export const HOME_CONTENT = {
       title: 'The person behind the recommendations.',
       intro: 'I am a UK PGA Advanced Professional based in Mallorca. Before building Mr Mallorca Golf I coached and worked across some very different golf environments: elite coaching in China, Pebble Beach, Doral, Evian, The Open, and a season at sea with Costa Cruises.',
       items: [
-        { title: 'PGA Advanced Professional', detail: 'UK PGA qualification — the highest standard in British golf coaching — with more than 15,000 hours on the range and course.' },
+        { title: 'PGA Advanced Professional', detail: 'UK PGA qualification, the highest standard in British golf coaching, with more than 15,000 hours on the range and course.' },
         { title: 'Trackman Master', detail: 'The first Trackman Master in China. Data-driven coaching built on the technology that Tour coaches use.' },
-        { title: 'TPI Level 3', detail: 'Titleist Performance Institute certification — understanding how the body moves and how it limits or unlocks the swing.' },
+        { title: 'TPI Level 3', detail: 'Titleist Performance Institute certification: understanding how the body moves and how it limits or unlocks the swing.' },
         { title: 'US Kids Top 50 Coach', detail: 'Recognised for junior development and long-term player development environments.' },
         { title: '11 years in Shanghai', detail: 'National team players, hundreds of millions of coaching views on Douyin, and real elite coaching environments.' },
         { title: 'World-class venues', detail: 'Pebble Beach, Doral, Evian, The Open Championship, Costa Cruises, and now the courses of Mallorca.' },
@@ -217,7 +217,7 @@ export const HOME_CONTENT = {
     packages: {
       eyebrow: 'What I offer',
       title: 'A day on the course with me. Or the whole trip, built around it.',
-      body: 'The core service is Play With A Pro — a private day on the course with Andy. You can book it solo, as a group, or as a full Signature Experience. If you want the whole trip planned around it, that is available too.',
+      body: 'The core service is Play With A Pro, a private day on the course with Andy. You can book it solo, as a group, or as a full Signature Experience. If you want the whole trip planned around it, that is available too.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -261,7 +261,7 @@ export const HOME_CONTENT = {
             'Private transfers and recovery time',
             'Caddy, videographer, and premium club hire options',
             'Post-round video analysis included',
-            'Priority booking — your dates held first',
+            'Priority booking: your dates held first',
           ],
           note: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you.',
           cta: 'Enquire →',
@@ -273,7 +273,7 @@ export const HOME_CONTENT = {
           name: 'Plan Your Trip',
           price: 'Price on enquiry',
           features: [
-            'No searching apps or websites — tee times handled for you',
+            'No searching apps or websites: tee times handled for you',
             'Courses picked to match your group, level, and budget',
             'Routing and number of rounds planned around your schedule',
             'Buggies, club hire, and transfers all arranged',
@@ -289,7 +289,7 @@ export const HOME_CONTENT = {
       multiDay: {
         eyebrow: 'Want the full picture?',
         title: 'Add trip planning around your day with Andy.',
-        body: 'If you want me to handle the whole trip — courses, base, routing, tee times, buggies, rentals, and dining — I can plan it all around the Play With A Pro day.',
+        body: 'If you want me to handle the whole trip: courses, base, routing, tee times, buggies, rentals, and dining. I can plan it all around the Play With A Pro day.',
         cta: 'Plan Your Trip',
         href: '/plan-your-trip',
       },

@@ -73,7 +73,7 @@ export const CONTACT_CONTENT = {
     },
     stayInTouch: {
       heading: 'Stay in touch',
-      body: 'Course notes and Mallorca golf insights every two weeks — straight to your inbox.',
+      body: 'Course notes and Mallorca golf insights every two weeks.straight to your inbox.',
     },
     dateCta: 'Build Your Itinerary',
   },
@@ -146,7 +146,7 @@ export const CONTACT_CONTENT = {
     },
     stayInTouch: {
       heading: 'In Kontakt bleiben',
-      body: 'Platz-Updates und Mallorca-Golf-Einblicke alle zwei Wochen — direkt in Ihr Postfach.',
+      body: 'Platz-Updates und Mallorca-Golf-Einblicke alle zwei Wochen.direkt in Ihr Postfach.',
     },
     dateCta: 'Meine Daten mitteilen',
   },
@@ -219,7 +219,7 @@ export const CONTACT_CONTENT = {
     },
     stayInTouch: {
       heading: 'Mantenerse en contacto',
-      body: 'Notas sobre campos y consejos de golf en Mallorca cada dos semanas — directamente en su bandeja de entrada.',
+      body: 'Notas sobre campos y consejos de golf en Mallorca cada dos semanas.directamente en su bandeja de entrada.',
     },
     dateCta: 'Dígame sus fechas',
   },
@@ -292,7 +292,7 @@ export const CONTACT_CONTENT = {
     },
     stayInTouch: {
       heading: 'Rester en contact',
-      body: 'Notes de parcours et conseils golf à Majorque toutes les deux semaines — directement dans votre boîte mail.',
+      body: 'Notes de parcours et conseils golf à Majorque toutes les deux semaines.directement dans votre boîte mail.',
     },
     dateCta: 'Dites-moi vos dates',
   },
@@ -365,7 +365,7 @@ export const CONTACT_CONTENT = {
     },
     stayInTouch: {
       heading: 'Blijf op de hoogte',
-      body: 'Baannotities en Mallorca golf-inzichten elke twee weken — rechtstreeks in uw inbox.',
+      body: 'Baannotities en Mallorca golf-inzichten elke twee weken.rechtstreeks in uw inbox.',
     },
     dateCta: 'Vertel me uw data',
   },
@@ -438,7 +438,7 @@ export const CONTACT_CONTENT = {
     },
     stayInTouch: {
       heading: 'Håll kontakten',
-      body: 'Bannoteringar och golfinblickar från Mallorca varannan vecka — direkt till din inkorg.',
+      body: 'Bannoteringar och golfinblickar från Mallorca varannan vecka.direkt till din inkorg.',
     },
     dateCta: 'Berätta dina datum',
   },

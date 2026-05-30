@@ -34,7 +34,7 @@ export const ABOUT_CONTENT = {
         paragraphs: [
           "I moved to Mallorca in March 2025 with my wife Yina. Closer to family in the UK, year-round sunshine, and a golf island that still doesn't get enough credit.",
           'I started playing properly again. Working my way through every course on the island. Rediscovering what it feels like to stand on a first tee and actually care about the score. That competitive instinct, dormant through years of full-time coaching, came back fast.',
-          "A PGA Professional who spent over a decade coaching in Asia, now helping visiting golfers build better Mallorca itineraries. The coaching background matters, but the bigger job is choosing the right courses, rhythm, and add-ons for the trip.",
+          "I'm a PGA Professional who spent over a decade coaching in Asia. Now I help visiting golfers play Mallorca properly: either as a private day on the course with me, or as a full trip planned around it. The coaching background matters, but the bigger job is choosing the right courses, rhythm, and add-ons for the day or the week.",
         ],
         quote: 'Playing properly again has only confirmed what I already believed: the quickest improvements usually happen on the course, not on the range.',
       },

@@ -88,7 +88,7 @@ const LANG_CONFIG = {
 const LANG_CODES = NAV_LOCALES.map((locale) => ({
   code: locale === 'en' ? 'EN' : locale.toUpperCase(),
   locale,
-  label: locale === 'zh' ? 'ZH' : locale.toUpperCase(),
+  label: locale === 'zh' ? '中文' : locale.toUpperCase(),
 }))
 
 export default function Nav({ transparent = false, lang }) {

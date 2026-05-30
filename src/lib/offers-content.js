@@ -12,11 +12,11 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Book Play With A Pro as a standalone private golf day or add it to a planned Mallorca golf trip. Solo from €495. Groups from €950. Green fees additional.',
     playHeroBody:
-      'Book it as a standalone private round, or add it to a planned Mallorca golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €495. Groups from €950. Green fees additional, confirmed when we speak.',
+      'Book it as a standalone private round, or add it to a planned Mallorca golf trip.\nPlay 18 holes alongside a PGA Advanced Professional.\nSolo from €495. Groups from €950. Green fees additional, confirmed when we speak.',
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
-    tripPlanningContactLabel: 'Trip planning - build my Mallorca golf itinerary',
+    tripPlanningContactLabel: 'Trip planning - build my golf itinerary',
     contactUnknown: 'Not sure yet - advise me',
     offers: {
       [OFFER_IDS.solo]: {

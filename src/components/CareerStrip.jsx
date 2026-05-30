@@ -25,8 +25,7 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
     const track = trackRef.current
     if (!viewport || !track) return
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches
-    if (prefersReducedMotion || isTouchDevice) return
+    if (prefersReducedMotion) return
     let pausedUntil = 0
     let raf
 
