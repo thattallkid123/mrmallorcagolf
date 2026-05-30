@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRef, useEffect } from 'react'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
@@ -98,6 +100,42 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
   }
+  const collageRef = useRef(null)
+
+  // Auto-scroll carousel
+  useEffect(() => {
+    const carousel = collageRef.current
+    if (!carousel) return
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReducedMotion) return
+
+    let pausedUntil = 0
+    let raf
+
+    const pauseBriefly = () => {
+      pausedUntil = performance.now() + 1800
+    }
+
+    const tick = () => {
+      if (performance.now() > pausedUntil) {
+        carousel.scrollLeft = Math.round(carousel.scrollLeft + 1)
+      }
+      raf = requestAnimationFrame(tick)
+    }
+
+    carousel.addEventListener('pointerdown', pauseBriefly)
+    carousel.addEventListener('wheel', pauseBriefly, { passive: true })
+    carousel.addEventListener('touchstart', pauseBriefly, { passive: true })
+    raf = requestAnimationFrame(tick)
+
+    return () => {
+      cancelAnimationFrame(raf)
+      carousel.removeEventListener('pointerdown', pauseBriefly)
+      carousel.removeEventListener('wheel', pauseBriefly)
+      carousel.removeEventListener('touchstart', pauseBriefly)
+    }
+  }, [])
 
   return (
     <>
@@ -178,7 +216,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
           </div>
           <div className="pwap-day__right reveal">
-            <div className="pwap-collage pwap-collage--day pwap-collage--scroll">
+            <div ref={collageRef} className="pwap-collage pwap-collage--day pwap-collage--scroll">
               {[
                 { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', pos: 'center 40%' },
                 { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', pos: 'center 30%' },
@@ -188,7 +226,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
               ].map((photo) => (
                 <div key={photo.src} className="pwap-collage__item">
-                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover', objectPosition: photo.pos }} />
+                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'contain', objectPosition: 'center' }} />
                 </div>
               ))}
             </div>
@@ -271,33 +309,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               </Link>
             </div>
           ) : null}
-        </section>
-
-        <section className="pwap-testimonials">
-          <div className="pwap-testimonials__inner">
-            <div className="reveal pwap-testimonials__header">
-              <p className="eyebrow pwap-testimonials__eyebrow">
-                {content.testimonials.eyebrow}
-              </p>
-              <h2 className="serif-display pwap-testimonials__title">
-                {content.testimonials.title}
-              </h2>
-            </div>
-            <div className="pwap-testimonials__scroll">
-              {[
-                { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', pos: 'center 40%' },
-                { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', pos: 'center 30%' },
-                { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual', pos: 'center 25%' },
-                { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', pos: 'center 20%' },
-                { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', pos: 'center 25%' },
-                { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
-              ].map((photo) => (
-                <div key={photo.src} className="pwap-testimonials__scroll-item">
-                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover', objectPosition: photo.pos }} />
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
 
         <section className="cta-final">
