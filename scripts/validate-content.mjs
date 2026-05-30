@@ -171,8 +171,8 @@ async function main() {
     });
     console.log('✅ play-with-a-pro-content.js validated');
 
-    // Skip homepage validation - it uses different structure (packages.items vs packages.tiers)
-    console.log('⏭️  homepage-content.js (different structure, skipped)');
+    // Skip homepage validation - it uses normalizeHomePackageItems function, not direct tier definitions
+    console.log('⏭️  homepage-content.js (uses normalizeHomePackageItems function)');
 
     console.log('\n✅ Content validation passed');
     process.exit(0);

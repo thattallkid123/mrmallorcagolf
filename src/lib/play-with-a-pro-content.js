@@ -1,4 +1,21 @@
 import { getOfferById, getPlayHeroBody, getPlayMultiDayDetail, OFFER_IDS } from './offers-content.js'
+import { TIER_CONFIG } from './content/tier-definitions.js'
+
+/**
+ * Helper: Apply tier flags from TIER_CONFIG to tier definition
+ * Ensures featured/signature always match the single source of truth
+ */
+function applyTierFlags(tier) {
+  const flags = TIER_CONFIG[tier.name]
+  if (!flags) {
+    throw new Error(`Unknown tier: "${tier.name}". Valid: ${Object.keys(TIER_CONFIG).join(', ')}`)
+  }
+  return {
+    ...tier,
+    featured: flags.featured,
+    signature: flags.signature,
+  }
+}
 
 export const PLAY_WITH_A_PRO_CONTENT = {
   en: {
@@ -77,7 +94,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       title: 'Solo, group, or Signature Day.',
       body: 'Solo and group are the core Play With A Pro private course day rates. Signature Day is the more complete, high-touch version when you want the golf day wrapped in transfers, food, premium extras, and proper trip handling.',
       tiers: [
-        {
+        applyTierFlags({
           eyebrow: 'A Day With Andy',
           name: 'Solo',
           price: '€495',
@@ -91,9 +108,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           ],
           button: 'Enquire →',
           href: '/contact',
-          featured: false,
-        },
-        {
+        }),
+        applyTierFlags({
           eyebrow: 'A Day With Andy',
           name: 'Group',
           price: '€950',
@@ -111,9 +127,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           ],
           button: 'Enquire →',
           href: '/contact',
-          featured: true,
-        },
-        {
+        }),
+        applyTierFlags({
           eyebrow: 'Signature Day',
           name: 'Signature Day',
           price: '€3,000+',
@@ -128,10 +143,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           ],
           button: 'Enquire →',
           href: '/contact',
-          featured: false,
-          signature: true,
-        },
-        {
+        }),
+        applyTierFlags({
           eyebrow: 'Trip Planning',
           name: 'Plan Your Trip',
           price: 'Price on enquiry',
@@ -146,8 +159,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           ],
           button: 'Enquire →',
           href: '/contact',
-          featured: false,
-        },
+        }),
       ],
       multiDay: {
         eyebrow: 'Still planning the full trip?',
