@@ -18,6 +18,8 @@
     "check:locale-leaks": "node scripts/check-locale-english-leaks.js",
     "check:shared-locale": "node scripts/check-shared-locale-fallbacks.js",
     "check:guide-locale-leaks": "node scripts/check-guide-locale-english-leaks.js",
+    "check:locale-parity": "node scripts/check-locale-parity.js",
+    "check:content-validation": "node scripts/validate-content.mjs",
     "check:i18n-release": "node scripts/locale-release-check.js",
     "check:lighthouse": "node scripts/lighthouse-scorecard.mjs",
     "check:visual": "playwright test",

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@lib/*": ["src/lib/*"],
+      "@app/*": ["src/app/*"],
+      "@public/*": ["public/*"]
+    },
+    "jsx": "preserve"
+  },
+  "include": ["next.env.d.ts", "**/*.js", "**/*.jsx"],
+  "exclude": ["node_modules"]
+}

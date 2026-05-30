@@ -32,9 +32,11 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 |------|---------|
 | Build locally | `npm run dev` |
 | Content checks | `npm run check:content` |
+| Content validation | `npm run check:content-validation` — catches structural errors |
+| Locale parity check | `npm run check:locale-parity` — verifies 6-language consistency |
 | Build check | `npm run build` |
 | Visual smoke checks | `npm run check:visual` |
-| Pre-deploy check | `npm run predeploy` if available, otherwise run the three checks above |
+| Pre-deploy check | `npm run predeploy` if available, otherwise run the checks above |
 | Deploy | `git add -A` then `git commit -m "..."` then `git push` — **PowerShell does not support `&&`, always use separate lines** |
 | GA4 report | `python ga4_analytics/ga4_report.py` |
 
@@ -49,6 +51,12 @@ Before substantial work, read:
 3. `COURSE_BLOG_PIPELINE.md` for course reviews
 4. `MMG_BRAND_VOICE_GUIDELINES.md` for any writing
 5. `MMG_WORK_STATUS.md` for current priorities
+
+**Infrastructure & Validation:**
+- `docs/LOCALE_PARITY_CHECKLIST.md` — 6-language structure consistency
+- `docs/CONTENT_STRUCTURE.md` — Which file controls what (critical)
+- `docs/CODEBASE_IMPROVEMENTS.md` — Infrastructure, validation, path aliases
+- `POWERSHELL_SYNTAX_REMINDER.md` — PowerShell doesn't support `&&`
 
 ## Course scorecard data (par / SI / distances)
 
