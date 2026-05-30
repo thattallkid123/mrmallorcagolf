@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
-import CarouselStrip from '../../components/CarouselStrip'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 
 const PAGE_LINKS = {
@@ -179,20 +178,20 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
           </div>
           <div className="pwap-day__right reveal">
-            <CarouselStrip
-              items={[
+            <div className="pwap-collage pwap-collage--day pwap-collage--scroll">
+              {[
                 { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', pos: 'center 40%' },
                 { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', pos: 'center 30%' },
                 { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual', pos: 'center 25%' },
                 { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', pos: 'center 20%' },
                 { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', pos: 'center 25%' },
                 { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
-              ]}
-              containerClassName="pwap-day-carousel"
-              viewportClassName="pwap-day-carousel__viewport"
-              trackClassName="pwap-day-carousel__track"
-              itemClassName="pwap-day-carousel__item"
-            />
+              ].map((photo) => (
+                <div key={photo.src} className="pwap-collage__item">
+                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover', objectPosition: photo.pos }} />
+                </div>
+              ))}
+            </div>
             <div className="included">
               <h3>{content.included.title}</h3>
               <ul className="included-list">
@@ -284,20 +283,20 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 {content.testimonials.title}
               </h2>
             </div>
-            <CarouselStrip
-              items={[
+            <div className="pwap-testimonials__scroll">
+              {[
                 { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', pos: 'center 40%' },
                 { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', pos: 'center 30%' },
                 { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual', pos: 'center 25%' },
                 { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', pos: 'center 20%' },
                 { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', pos: 'center 25%' },
                 { src: '/images/client-group-pond.webp', alt: 'Group day with water views', pos: 'center 20%' },
-              ]}
-              containerClassName="pwap-testimonials-carousel"
-              viewportClassName="pwap-testimonials-carousel__viewport"
-              trackClassName="pwap-testimonials-carousel__track"
-              itemClassName="pwap-testimonials-carousel__item"
-            />
+              ].map((photo) => (
+                <div key={photo.src} className="pwap-testimonials__scroll-item">
+                  <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover', objectPosition: photo.pos }} />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
