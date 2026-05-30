@@ -2694,8 +2694,8 @@ select.form-control { cursor: pointer; }
   .pwap-who { padding: 60px 20px; }
   .pwap-testimonials { padding: 60px 20px; }
   .pwap-testimonials__grid { grid-template-columns: 1fr; }
-  .pwap-collage--scroll .pwap-collage__item { width: 240px; height: 240px; }
-  .pwap-testimonials__scroll-item { width: 240px; height: 240px; }
+  .pwap-collage--scroll .pwap-collage__item { width: 72vw; height: 180px; }
+  .pwap-testimonials__scroll-item { width: 72vw; height: 180px; }
   .pwap-collage { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 160px); }
   .pwap-collage--day { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 150px); gap: 5px; }
   .pwap-packages__header { margin-bottom: 32px; }
@@ -3066,17 +3066,17 @@ select.form-control { cursor: pointer; }
   }
 }
 
-/* PWAP Collage Scroll - horizontal scrolling instead of 2x3 grid */
-.pwap-collage--scroll { display: flex; overflow-x: auto; overflow-y: hidden; gap: 6px; max-width: none; margin: 0 0 2rem; border-radius: 2px; -ms-overflow-style: none; scrollbar-width: none; }
+/* PWAP Collage Scroll - match career-strip carousel style */
+.pwap-collage--scroll { display: flex; overflow-x: auto; overflow-y: hidden; -ms-overflow-style: none; scrollbar-width: none; overscroll-behavior-x: contain; touch-action: pan-x; cursor: grab; gap: 12px; width: 100%; margin: 0 0 2rem; }
+.pwap-collage--scroll:active { cursor: grabbing; }
 .pwap-collage--scroll::-webkit-scrollbar { display: none; }
-.pwap-collage--scroll .pwap-collage__item { flex-shrink: 0; width: 280px; height: 280px; border-radius: 0; }
-.pwap-collage--scroll .pwap-collage__item:first-child { border-radius: 2px 0 0 2px; }
-.pwap-collage--scroll .pwap-collage__item:last-child { border-radius: 0 2px 2px 0; }
+.pwap-collage--scroll .pwap-collage__item { position: relative; flex-shrink: 0; width: 260px; height: 220px; overflow: hidden; border-radius: 0; }
 
-/* PWAP Testimonials Scroll - horizontal scrolling for photos */
-.pwap-testimonials__scroll { display: flex; overflow-x: auto; overflow-y: hidden; gap: 0; margin-top: 2rem; border-radius: 2px; -ms-overflow-style: none; scrollbar-width: none; }
+/* PWAP Testimonials Scroll - match career-strip carousel style */
+.pwap-testimonials__scroll { display: flex; overflow-x: auto; overflow-y: hidden; -ms-overflow-style: none; scrollbar-width: none; overscroll-behavior-x: contain; touch-action: pan-x; cursor: grab; gap: 12px; width: 100%; margin-top: 2rem; }
+.pwap-testimonials__scroll:active { cursor: grabbing; }
 .pwap-testimonials__scroll::-webkit-scrollbar { display: none; }
-.pwap-testimonials__scroll-item { position: relative; flex-shrink: 0; width: 280px; height: 280px; overflow: hidden; }
+.pwap-testimonials__scroll-item { position: relative; flex-shrink: 0; width: 260px; height: 220px; overflow: hidden; }
 
 .career-strip { background: linear-gradient(180deg, #171613 0%, #1d1a17 100%); padding: clamp(48px,6vw,72px) 0; overflow: hidden; }
 .career-strip__header { max-width: 1200px; margin: 0 auto 2.5rem; padding: 0 clamp(20px,5vw,60px); }
