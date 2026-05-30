@@ -1907,7 +1907,7 @@ body {
 .pwap-hero__price { font-family: var(--font-serif); font-size: 1.15rem; color: var(--gold-light); margin-bottom: 2rem; }
 .pwap-hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.pwap-day { background: linear-gradient(180deg, #f7f3eb 0%, #fbfaf7 100%); padding: 104px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 92px; align-items: start; }
+.pwap-day { background: linear-gradient(180deg, #f7f3eb 0%, #fbfaf7 100%); padding: 104px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 92px; align-items: start; max-width: 1200px; margin: 0 auto; }
 .pwap-day__left p { font-size: 1rem; font-weight: 300; color: var(--charcoal); line-height: 1.9; margin-bottom: 1.2rem; }
 .pwap-course-note { margin-top: 2rem; padding: 26px 26px 24px; background: rgba(255,255,255,0.72); border-top: 1px solid rgba(184,151,60,0.5); box-shadow: var(--shadow-soft); }
 .pwap-course-note h3 { font-family: var(--font-serif); font-size: 1.28rem; font-weight: 500; line-height: 1.22; color: var(--deep); margin: 0 0 0.75rem; }
