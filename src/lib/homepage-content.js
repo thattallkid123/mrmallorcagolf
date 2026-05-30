@@ -1462,7 +1462,7 @@ const HOME_PACKAGE_ITEMS = {
       eyebrow: 'Trip Planning',
       name: 'Plan Your Trip',
       price: 'Price on enquiry',
-      featured: true,
+      featured: false,
       features: [
         'No searching apps or websites - tee times handled for you',
         'Courses picked to match your group, level, and budget',

@@ -751,7 +751,7 @@ const PLAY_EXTRA_TIER = {
     ],
     button: 'Anfragen →',
     href: '/de/contact',
-    featured: true,
+    featured: false,
   },
   es: {
     eyebrow: 'Planificación de viaje',
@@ -768,7 +768,7 @@ const PLAY_EXTRA_TIER = {
     ],
     button: 'Consultar →',
     href: '/es/contact',
-    featured: true,
+    featured: false,
   },
   fr: {
     eyebrow: 'Organisation du voyage',
@@ -785,7 +785,7 @@ const PLAY_EXTRA_TIER = {
     ],
     button: 'Demander →',
     href: '/fr/contact',
-    featured: true,
+    featured: false,
   },
   nl: {
     eyebrow: 'Reisplanning',
@@ -802,7 +802,7 @@ const PLAY_EXTRA_TIER = {
     ],
     button: 'Contact opnemen →',
     href: '/nl/contact',
-    featured: true,
+    featured: false,
   },
   sv: {
     eyebrow: 'Reseplanering',
@@ -819,7 +819,7 @@ const PLAY_EXTRA_TIER = {
     ],
     button: 'Kontakta mig →',
     href: '/sv/contact',
-    featured: true,
+    featured: false,
   },
   zh: {
     eyebrow: '行程规划',
@@ -836,7 +836,7 @@ const PLAY_EXTRA_TIER = {
     ],
     button: '咨询 →',
     href: '/zh/contact',
-    featured: true,
+    featured: false,
   },
 }
 

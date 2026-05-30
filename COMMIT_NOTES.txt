@@ -1,0 +1,29 @@
+COMMIT: Auto-scroll carousels for PWAP images + Plan Your Trip featured flag fix
+
+Changes:
+1. Fixed Plan Your Trip featured flag from true → false across all 6 languages (DE, ES, FR, NL, SV, ZH) in play-with-a-pro-content.js
+   - Now homepage and PWAP have consistent color sequence: cream, green, gold, cream
+
+2. Created reusable CarouselStrip.jsx component
+   - Auto-scroll at 1px/frame with 1.8s pause on interaction
+   - Duplicates items for infinite loop
+   - Respects prefers-reduced-motion
+
+3. Replaced "Which course" collage grid with auto-scroll carousel (pwap-day-carousel)
+   - 6 client photos scrolling horizontally
+   - Full-size images, no cropping
+
+4. Replaced "Proof of work" testimonials grid with auto-scroll carousel (pwap-testimonials-carousel)
+   - 6 client photos scrolling horizontally
+   - Full-size images, matches CareerStrip behavior
+
+5. Added responsive CSS for both carousels
+   - Mobile: 280x280px items
+   - Desktop: 360x360px items
+   - Fade gradients on left/right edges
+
+Updated files:
+- src/components/CarouselStrip.jsx (new)
+- src/app/play-with-a-pro/PlayWithAProView.jsx (import + 2 sections)
+- src/lib/play-with-a-pro-content.js (6 featured flag fixes)
+- src/styles/globals.css (carousel + responsive CSS)
