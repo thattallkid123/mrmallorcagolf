@@ -87,6 +87,9 @@ export default function HomePageInner({ locale = 'en' }) {
             style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
           />
         </div>
+        <div className="hero__fx hero__fx--a" aria-hidden="true"></div>
+        <div className="hero__fx hero__fx--b" aria-hidden="true"></div>
+        <div className="hero__fx-grid" aria-hidden="true"></div>
         <div className="hero__bg"></div>
         <div className="hero__content">
           <p className="hero__eyebrow">{home.hero.eyebrow}</p>
@@ -114,6 +117,19 @@ export default function HomePageInner({ locale = 'en' }) {
               <span>Need the whole trip planned? →</span>
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="home-proof-marquee" aria-label="Trust markers">
+        <div className="home-proof-marquee__track">
+          <span>PGA Advanced Professional guidance</span>
+          <span>24 Mallorca courses reviewed</span>
+          <span>Trip pacing built around your group</span>
+          <span>Private Play With A Pro integration</span>
+          <span>Trusted by repeat golf travellers</span>
+          <span>PGA Advanced Professional guidance</span>
+          <span>24 Mallorca courses reviewed</span>
+          <span>Trip pacing built around your group</span>
         </div>
       </section>
 
@@ -194,7 +210,7 @@ export default function HomePageInner({ locale = 'en' }) {
                 <a
                   key={item.title}
                   href={localizePath(item.href, locale)}
-                  className={`journey-card journey-card--photo reveal${index ? ` reveal-delay-${index}` : ''}`}
+                  className={`journey-card journey-card--photo journey-card--spotlight reveal${index ? ` reveal-delay-${index}` : ''}`}
                 >
                   {img && (
                     <div className="journey-card__photo">
