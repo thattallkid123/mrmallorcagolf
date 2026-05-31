@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRef, useState } from 'react'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
@@ -100,8 +99,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
   }
-  const pauseTimer = useRef(null)
-  const [paused, setPaused] = useState(false)
   const dayPhotos = [
     { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', position: 'center 38%' },
     { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
@@ -111,12 +108,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
     { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
   ]
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
-
-  const pauseBriefly = () => {
-    setPaused(true)
-    clearTimeout(pauseTimer.current)
-    pauseTimer.current = setTimeout(() => setPaused(false), 2200)
-  }
 
   return (
     <>
@@ -176,7 +167,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         </section>
 
         <section className="pwap-day">
-          <div className="pwap-day__left reveal">
+          <div className="pwap-day__lead reveal">
             <p className="eyebrow">{content.day.eyebrow}</p>
             <h2 className="serif-display pwap-section-title">
               {content.day.title}
@@ -191,12 +182,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <div
               className="pwap-day-strip"
               aria-label="Play With A Pro round photos"
-              onPointerDown={pauseBriefly}
-              onWheel={pauseBriefly}
-              onTouchStart={pauseBriefly}
-              onTouchEnd={pauseBriefly}
             >
-              <div className={`pwap-day-strip__track${paused ? ' paused' : ''}`}>
+              <div className="pwap-day-strip__track">
                 {dayPhotosLoop.map((photo, index) => (
                   <figure
                     key={`${photo.src}-${index}`}
@@ -221,7 +208,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             </div>
             {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
           </div>
-          <div className="pwap-day__right reveal">
+          <div className="pwap-day__details reveal">
             <div className="included">
               <h3>{content.included.title}</h3>
               <ul className="included-list">
