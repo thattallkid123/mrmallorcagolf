@@ -18,6 +18,14 @@ import { getHomeContent } from '../../lib/homepage-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 
 function getWinnerProofImages() {
+  const IMAGE_OVERRIDES = {
+    1: { position: 'center 28%', zoom: 1.04 },
+    2: { position: 'center 30%', zoom: 1.02 },
+    4: { position: 'center 28%', zoom: 1.04 },
+    30: { position: 'center 27%', zoom: 1.04 },
+    36: { position: 'center 26%', zoom: 1.03 },
+  }
+
   const winnersDir = path.join(process.cwd(), 'public', 'images', 'winners')
   const imageFiles = fs
     .readdirSync(winnersDir, { withFileTypes: true })
@@ -46,7 +54,8 @@ function getWinnerProofImages() {
 
   const dedupedFiles = [...byBaseName.values()].sort((a, b) => a.localeCompare(b))
 
-  return dedupedFiles.map((fileName) => {
+  return dedupedFiles.map((fileName, idx) => {
+    const imageNumber = idx + 1
     const localPath = path.join(winnersDir, fileName)
     const { width = 1, height = 1 } = imageSize(localPath)
     const ratio = width / height
@@ -57,13 +66,17 @@ function getWinnerProofImages() {
 
     if (ratio >= 1.45) {
       variant = 'landscape'
-      position = 'center 40%'
+      position = 'center 52%'
       zoom = 1.12
     } else if (ratio <= 0.82) {
       variant = 'portrait'
       position = 'center 30%'
       zoom = 1.05
     }
+
+    const override = IMAGE_OVERRIDES[imageNumber]
+    if (override?.position) position = override.position
+    if (typeof override?.zoom === 'number') zoom = override.zoom
 
     return {
       src: `/images/winners/${fileName}`,

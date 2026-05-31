@@ -82,7 +82,6 @@ export default function HomePageInner({ locale = 'en' }) {
             alt="Golf day in Mallorca with PGA Advanced Professional Andy Griffiths"
             fill
             priority
-            unoptimized
             sizes="100vw"
             style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
           />
