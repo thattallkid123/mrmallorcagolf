@@ -103,12 +103,12 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const pauseTimer = useRef(null)
   const [paused, setPaused] = useState(false)
   const dayPhotos = [
-    { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada' },
-    { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual' },
-    { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual' },
-    { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views' },
-    { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca' },
-    { src: '/images/client-group-pond.webp', alt: 'Group day with water views' },
+    { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', position: 'center 38%' },
+    { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
+    { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual', position: 'center 45%' },
+    { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
+    { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', position: 'center 36%' },
+    { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
   ]
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
 
@@ -188,15 +188,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
-            <div className="pwap-course-note">
-              <p className="eyebrow">{content.courses.eyebrow}</p>
-              <h3>{content.courses.title}</h3>
-              <p>{content.courses.body}</p>
-              <Link href={reviewLinks.courses} className="pwap-course-note__link">{links.courses}</Link>
-            </div>
-            {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
-          </div>
-          <div className="pwap-day__right reveal">
             <div
               className="pwap-day-strip"
               aria-label="Play With A Pro round photos"
@@ -207,18 +198,30 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             >
               <div className={`pwap-day-strip__track${paused ? ' paused' : ''}`}>
                 {dayPhotosLoop.map((photo, index) => (
-                  <figure key={`${photo.src}-${index}`} className="pwap-day-strip__card">
+                  <figure
+                    key={`${photo.src}-${index}`}
+                    className={`pwap-day-strip__card${photo.variant === 'portrait' ? ' pwap-day-strip__card--portrait' : ''}`}
+                  >
                     <Image
                       src={photo.src}
                       alt={photo.alt}
                       fill
                       sizes="(max-width: 920px) 78vw, 360px"
-                      style={{ objectFit: 'contain', objectPosition: 'center center' }}
+                      style={{ objectFit: 'cover', objectPosition: photo.position || 'center center' }}
                     />
                   </figure>
                 ))}
               </div>
             </div>
+            <div className="pwap-course-note">
+              <p className="eyebrow">{content.courses.eyebrow}</p>
+              <h3>{content.courses.title}</h3>
+              <p>{content.courses.body}</p>
+              <Link href={reviewLinks.courses} className="pwap-course-note__link">{links.courses}</Link>
+            </div>
+            {/* Questionnaire CTA intentionally removed from public page — shown only on booking confirmation */}
+          </div>
+          <div className="pwap-day__right reveal">
             <div className="included">
               <h3>{content.included.title}</h3>
               <ul className="included-list">
@@ -233,6 +236,19 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 ))}
               </ul>
             </div>
+          </div>
+        </section>
+
+        <section className="pwap-feature-photo reveal" aria-label="Play With A Pro featured image">
+          <div className="pwap-feature-photo__inner">
+            <Image
+              src="/images/pwap-mandarin-ab101723.jpg"
+              alt="Play With A Pro day in Mallorca with sea and fairway backdrop"
+              width={7008}
+              height={4672}
+              sizes="(max-width: 920px) 100vw, 1200px"
+              className="pwap-feature-photo__img"
+            />
           </div>
         </section>
 
