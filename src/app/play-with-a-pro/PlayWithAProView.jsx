@@ -282,7 +282,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         <section className="pwap-feature-photo reveal" aria-label="Play With A Pro featured image">
           <div className="pwap-feature-photo__inner">
             <Image
-              src="/images/pwap-mandarin-ab101723.jpg"
+              src="/images/pwap-mandarin-ab101723.webp"
               alt="Play With A Pro day in Mallorca with sea and fairway backdrop"
               width={7008}
               height={4672}
