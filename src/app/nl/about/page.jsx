@@ -1,9 +1,5 @@
-import { buildAboutMetadata } from '../../../lib/page-metadata'
-import { getAboutContent } from '../../../lib/about-content'
-import AboutView from '../../about/AboutView'
+import { createAboutMetadata, createAboutPage } from '../../_locale/page-factories'
 
-export const metadata = buildAboutMetadata('nl')
+export const metadata = createAboutMetadata('nl')
 
-export default function AboutNL() {
-  return <AboutView content={getAboutContent('nl')} locale="nl" />
-}
+export default createAboutPage('nl')

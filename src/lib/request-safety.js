@@ -1,5 +1,6 @@
 const DEFAULT_WINDOW_MS = 5 * 60 * 1000
 const DEFAULT_ALLOWED_ORIGINS = new Set(['https://www.mrmallorcagolf.com', 'https://mrmallorcagolf.com'])
+const DEV_ALLOWED_ORIGINS = new Set(['http://localhost:3000', 'http://127.0.0.1:3000'])
 
 function getStore() {
   if (!globalThis.__mrmallorcagolfRateLimitStore) {
@@ -11,7 +12,9 @@ function getStore() {
 
 export function getClientKey(request, scope = 'default') {
   const forwardedFor = request.headers.get('x-forwarded-for')
-  const ip = forwardedFor ? forwardedFor.split(',')[0].trim() : 'unknown'
+  const realIp = request.headers.get('x-real-ip')
+  const vercelForwardedFor = request.headers.get('x-vercel-forwarded-for')
+  const ip = (forwardedFor ? forwardedFor.split(',')[0].trim() : '') || realIp || vercelForwardedFor || 'unknown'
   return `${scope}:${ip}`
 }
 
@@ -19,7 +22,12 @@ export function isAllowedOrigin(request, extraOrigins = []) {
   const origin = request.headers.get('origin')
   if (!origin) return true
 
-  const allowed = new Set([...DEFAULT_ALLOWED_ORIGINS, ...extraOrigins.filter(Boolean)])
+  const includeDevOrigins = process.env.NODE_ENV !== 'production'
+  const allowed = new Set([
+    ...DEFAULT_ALLOWED_ORIGINS,
+    ...(includeDevOrigins ? DEV_ALLOWED_ORIGINS : []),
+    ...extraOrigins.filter(Boolean),
+  ])
   return allowed.has(origin)
 }
 

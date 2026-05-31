@@ -14,12 +14,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'mrmallorcagolf.com' }],
-        destination: 'https://www.mrmallorcagolf.com/:path*',
-        permanent: true,
-      },
-      {
         source: '/fr/privacy-policy',
         destination: '/privacy-policy',
         permanent: true,
@@ -37,6 +31,7 @@ const nextConfig = {
     ]
   },
   async headers() {
+    const allowUnsafeEval = process.env.NODE_ENV !== 'production'
     const contentSecurityPolicy = [
       "default-src 'self'",
       "base-uri 'self'",
@@ -46,7 +41,7 @@ const nextConfig = {
       "frame-src https://subscribe-forms.beehiiv.com",
       "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com",
       "object-src 'none'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://subscribe-forms.beehiiv.com",
+      `script-src 'self' 'unsafe-inline'${allowUnsafeEval ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://www.google-analytics.com https://subscribe-forms.beehiiv.com`,
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://subscribe-forms.beehiiv.com",
       'upgrade-insecure-requests',

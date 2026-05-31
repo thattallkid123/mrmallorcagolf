@@ -1,9 +1,5 @@
-import { buildPlayWithAProMetadata } from '../../../lib/page-metadata'
-import { getPlayWithAProContent } from '../../../lib/play-with-a-pro-content'
-import PlayWithAProView from '../../play-with-a-pro/PlayWithAProView'
+import { createPlayWithAProMetadata, createPlayWithAProPage } from '../../_locale/page-factories'
 
-export const metadata = buildPlayWithAProMetadata('de')
+export const metadata = createPlayWithAProMetadata('de')
 
-export default function PlayWithAProDE() {
-  return <PlayWithAProView content={getPlayWithAProContent('de')} locale="de" />
-}
+export default createPlayWithAProPage('de')

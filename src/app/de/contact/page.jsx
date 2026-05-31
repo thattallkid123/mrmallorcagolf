@@ -1,13 +1,5 @@
-import PageLayout from '../../../components/PageLayout'
-import ContactForm from '../../contact/ContactForm'
-import { buildContactMetadata } from '../../../lib/page-metadata'
+import { createContactMetadata, createContactPage } from '../../_locale/page-factories'
 
-export const metadata = buildContactMetadata('de')
+export const metadata = createContactMetadata('de')
 
-export default function ContactDE() {
-  return (
-    <PageLayout lang="de" navTransparent={false}>
-      <ContactForm locale="de" />
-    </PageLayout>
-  )
-}
+export default createContactPage('de')

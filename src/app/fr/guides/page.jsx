@@ -1,9 +1,5 @@
-import { buildGuidesIndexMetadata } from '../../../lib/page-metadata'
-import { getGuidesContent } from '../../../lib/guides-content'
-import GuidesIndexView from '../../guides/GuidesIndexView'
+import { createGuidesIndexMetadata, createGuidesIndexPage } from '../../_locale/page-factories'
 
-export const metadata = buildGuidesIndexMetadata('fr')
+export const metadata = createGuidesIndexMetadata('fr')
 
-export default function GuidesIndexFR() {
-  return <GuidesIndexView locale="fr" pageLang="fr" content={getGuidesContent('fr')} />
-}
+export default createGuidesIndexPage('fr')

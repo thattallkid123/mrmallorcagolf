@@ -1,14 +1,5 @@
-import PageLayout from '../../../components/PageLayout'
-import PlanYourTripView from '../../plan-your-trip/PlanYourTripView'
-import { buildPlanYourTripMetadata } from '../../../lib/page-metadata'
-import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
+import { createPlanYourTripMetadata, createPlanYourTripPage } from '../../_locale/page-factories'
 
-export const metadata = buildPlanYourTripMetadata('zh')
+export const metadata = createPlanYourTripMetadata('zh')
 
-export default function PlanYourTripZH() {
-  return (
-    <PageLayout lang="zh" navTransparent={false}>
-      <PlanYourTripView locale="zh" content={getPlanYourTripContent('zh')} />
-    </PageLayout>
-  )
-}
+export default createPlanYourTripPage('zh')

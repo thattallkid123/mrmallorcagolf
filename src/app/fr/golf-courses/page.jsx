@@ -1,9 +1,5 @@
-import { buildGolfCoursesMetadata } from '../../../lib/page-metadata'
-import { getGolfCoursesContent } from '../../../lib/golf-courses-content'
-import GolfCoursesView from '../../golf-courses/GolfCoursesView'
+import { createGolfCoursesMetadata, createGolfCoursesPage } from '../../_locale/page-factories'
 
-export const metadata = buildGolfCoursesMetadata('fr')
+export const metadata = createGolfCoursesMetadata('fr')
 
-export default function GolfCourses() {
-  return <GolfCoursesView locale="fr" content={getGolfCoursesContent('fr')} />
-}
+export default createGolfCoursesPage('fr')

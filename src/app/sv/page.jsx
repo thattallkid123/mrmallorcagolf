@@ -1,13 +1,5 @@
-import HomePageInner from '../HomePageInner'
-import HomeLayout from '../HomeLayout'
-import { buildHomeMetadata } from '../../lib/page-metadata'
+import { createHomeMetadata, createHomePage } from '../_locale/page-factories'
 
-export const metadata = buildHomeMetadata('sv')
+export const metadata = createHomeMetadata('sv')
 
-export default function HomeSV() {
-  return (
-    <HomeLayout lang="sv">
-      <HomePageInner locale="sv" />
-    </HomeLayout>
-  )
-}
+export default createHomePage('sv')

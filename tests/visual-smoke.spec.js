@@ -1,6 +1,6 @@
 const { expect, test } = require('@playwright/test')
 
-const ROUTES = ['/', '/about', '/play-with-a-pro']
+const ROUTES = ['/', '/about', '/play-with-a-pro', '/guides', '/es', '/fr/play-with-a-pro']
 
 test.describe('visual smoke checks', () => {
   for (const route of ROUTES) {

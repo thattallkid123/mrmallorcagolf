@@ -1,6 +1,6 @@
 # Mr Mallorca Golf
 
-Next.js 14 App Router site for `mrmallorcagolf.com`.
+Next.js 15 App Router site for `mrmallorcagolf.com`.
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Stack
 
-- Next.js 14 App Router
+- Next.js 15 App Router
 - React 18
 - Plain CSS in `src/styles/globals.css`
 - Deployed on Vercel via GitHub
@@ -32,6 +32,7 @@ Before substantial work, read:
 
 - `BRANCHES.md` - what belongs on `main` vs `itinerary-preview`
 - `CONTENT_WORKFLOW.md` - content checklist and shared branch rules
+- `docs/ROUTING_AND_CONTENT_SYSTEM.md` - locale routes, guide slug system, and parity checks
 - `COURSE_BLOG_PIPELINE.md` - full course review publishing process
 - `MMG_BRAND_VOICE_GUIDELINES.md` - writing rules and brand voice
 - `CLAUDE.md` - project context and recurring commands
@@ -52,10 +53,22 @@ npm run build
 npm run check:visual
 ```
 
+Quick gate used before deploy:
+
+```bash
+npm run check:ready
+```
+
 For localized guide work, also run:
 
 ```bash
 npm run check:i18n-release
+```
+
+If port `3000` is occupied, run visual checks on another port:
+
+```powershell
+$env:PLAYWRIGHT_PORT='3100'; npm.cmd run check:visual
 ```
 
 ## Deployment

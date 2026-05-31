@@ -1,13 +1,5 @@
-import HomePageInner from '../HomePageInner'
-import HomeLayout from '../HomeLayout'
-import { buildHomeMetadata } from '../../lib/page-metadata'
+import { createHomeMetadata, createHomePage } from '../_locale/page-factories'
 
-export const metadata = buildHomeMetadata('nl')
+export const metadata = createHomeMetadata('nl')
 
-export default function HomeNL() {
-  return (
-    <HomeLayout lang="nl">
-      <HomePageInner locale="nl" />
-    </HomeLayout>
-  )
-}
+export default createHomePage('nl')

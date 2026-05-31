@@ -1,14 +1,5 @@
-import PageLayout from '../../../components/PageLayout'
-import PlanYourTripView from '../../plan-your-trip/PlanYourTripView'
-import { buildPlanYourTripMetadata } from '../../../lib/page-metadata'
-import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
+import { createPlanYourTripMetadata, createPlanYourTripPage } from '../../_locale/page-factories'
 
-export const metadata = buildPlanYourTripMetadata('es')
+export const metadata = createPlanYourTripMetadata('es')
 
-export default function PlanYourTripES() {
-  return (
-    <PageLayout lang="es" navTransparent={false}>
-      <PlanYourTripView locale="es" content={getPlanYourTripContent('es')} />
-    </PageLayout>
-  )
-}
+export default createPlanYourTripPage('es')

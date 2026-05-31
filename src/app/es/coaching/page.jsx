@@ -1,3 +1,5 @@
-import { permanentRedirect } from 'next/navigation'
-export const metadata = { robots: { index: false, follow: false } }
-export default function CoachingRedirect() { permanentRedirect('/es/play-with-a-pro') }
+import { createCoachingRedirectPage, noIndexMetadata } from '../../_locale/page-factories'
+
+export const metadata = noIndexMetadata
+
+export default createCoachingRedirectPage('es')
