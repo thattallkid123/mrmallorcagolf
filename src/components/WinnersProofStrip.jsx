@@ -70,7 +70,7 @@ export default function WinnersProofStrip({ images }) {
               priority={index < 4}
               quality={90}
               sizes="(max-width: 700px) 44vw, 260px"
-              style={{ objectFit: 'cover', objectPosition: image.position || 'center 35%' }}
+              style={{ objectFit: 'contain', objectPosition: image.position || 'center center' }}
             />
           </figure>
         ))}

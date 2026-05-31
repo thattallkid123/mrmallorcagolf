@@ -24,10 +24,31 @@ function getWinnerProofImages() {
     .map((entry) => entry.name)
     .sort((a, b) => a.localeCompare(b))
 
-  return imageFiles.map((fileName) => ({
+  const extensionRank = { webp: 0, jpg: 1, jpeg: 2, png: 3 }
+  const byBaseName = new Map()
+
+  for (const fileName of imageFiles) {
+    const ext = path.extname(fileName).slice(1).toLowerCase()
+    const base = path.basename(fileName, path.extname(fileName))
+    const current = byBaseName.get(base)
+    if (!current) {
+      byBaseName.set(base, fileName)
+      continue
+    }
+    const currentExt = path.extname(current).slice(1).toLowerCase()
+    const currentRank = extensionRank[currentExt] ?? 99
+    const nextRank = extensionRank[ext] ?? 99
+    if (nextRank < currentRank) {
+      byBaseName.set(base, fileName)
+    }
+  }
+
+  const dedupedFiles = [...byBaseName.values()].sort((a, b) => a.localeCompare(b))
+
+  return dedupedFiles.map((fileName) => ({
     src: `/images/winners/${fileName}`,
     alt: 'Competition winners coached by Andy',
-    position: 'center 42%',
+    position: 'center center',
   }))
 }
 
