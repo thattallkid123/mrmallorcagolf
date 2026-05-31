@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import fs from 'node:fs'
+import path from 'node:path'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import CareerStrip from '../../components/CareerStrip'
@@ -14,16 +16,22 @@ import WinnersProofStrip from '../../components/WinnersProofStrip'
 import { getHomeContent } from '../../lib/homepage-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 
-const WINNER_PROOF_IMAGES = [
-  { src: '/images/winners/01f43146e7bbd479cd809b6daabd9b105b0008ca18.jpg', alt: 'Junior tournament winners with trophies after coaching with Andy', position: 'center 42%' },
-  { src: '/images/winners/01896bd5845040a4f9957ce34acc61c2e68540c266.jpg', alt: 'Golf academy team holding tournament banners', position: 'center 40%' },
-  { src: '/images/winners/2020_11_25_12_20_00.jpg', alt: 'Junior open golf winners standing together', position: 'center 36%' },
-  { src: '/images/winners/2023_12_03_16_55_19.jpg', alt: 'Tournament trophy and winner certificate', position: 'center 50%' },
-  { src: '/images/winners/01ae26f53c5692f97b8207b9f36ca1cbbefa4618cc.jpg', alt: 'Junior golfers on a tournament podium', position: 'center 38%' },
-  { src: '/images/winners/0134a9b7aac8ad0d0656f04a253c43088b7331ce8f.jpg', alt: 'Junior golfer kneeling with trophy on a golf course', position: 'center 45%' },
-  { src: '/images/winners/2024_06_28_12_16_55.jpg', alt: 'Two golfers holding trophies after a tournament', position: 'center 42%' },
-  { src: '/images/winners/01642ab42974ebfa93f60beb07ab37157b87a3a515.jpg', alt: 'Golfer holding a medal and certificate', position: 'center 42%' },
-]
+function getWinnerProofImages() {
+  const winnersDir = path.join(process.cwd(), 'public', 'images', 'winners')
+  const imageFiles = fs
+    .readdirSync(winnersDir, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && /\.(jpg|jpeg|png|webp)$/i.test(entry.name))
+    .map((entry) => entry.name)
+    .sort((a, b) => a.localeCompare(b))
+
+  return imageFiles.map((fileName) => ({
+    src: `/images/winners/${fileName}`,
+    alt: 'Competition winners coached by Andy',
+    position: 'center 42%',
+  }))
+}
+
+const WINNER_PROOF_IMAGES = getWinnerProofImages()
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />

@@ -7,7 +7,6 @@ export default function WinnersProofStrip({ images }) {
   const trackRef = useRef(null)
   const [paused, setPaused] = useState(false)
   const pauseTimer = useRef(null)
-  const isInteractingRef = useRef(false)
   const autoScrollRafRef = useRef(null)
   const lastTickRef = useRef(0)
   const allImages = [...images, ...images]
@@ -30,7 +29,7 @@ export default function WinnersProofStrip({ images }) {
       const delta = timestamp - lastTickRef.current
       lastTickRef.current = timestamp
 
-      if (!paused && !isInteractingRef.current) {
+      if (!paused) {
         const speedPxPerSecond = 36
         viewport.scrollLeft += (speedPxPerSecond * delta) / 1000
         const loopWidth = track.scrollWidth / 2
@@ -60,13 +59,6 @@ export default function WinnersProofStrip({ images }) {
       onWheel={pauseBriefly}
       onTouchStart={pauseBriefly}
       onTouchEnd={pauseBriefly}
-      onMouseEnter={() => { isInteractingRef.current = true }}
-      onMouseLeave={() => { isInteractingRef.current = false }}
-      onTouchMove={() => { isInteractingRef.current = true }}
-      onTouchCancel={() => { isInteractingRef.current = false }}
-      onTouchEndCapture={() => {
-        isInteractingRef.current = false
-      }}
     >
       <div ref={trackRef} className={`winners-proof__track${paused ? ' paused' : ''}`}>
         {allImages.map((image, index) => (
