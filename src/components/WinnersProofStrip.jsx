@@ -50,18 +50,8 @@ export default function WinnersProofStrip({ images }) {
     >
       <div ref={trackRef} className="winners-proof__track">
         {allImages.map((image, index) => (
-          <figure className="winners-proof__card" key={`${image.src}-${index}`}>
+          <figure className={`winners-proof__card winners-proof__card--${image.variant || 'square'}`} key={`${image.src}-${index}`}>
             <div className="winners-proof__media">
-              <Image
-                src={image.src}
-                alt=""
-                aria-hidden="true"
-                fill
-                quality={70}
-                sizes="(max-width: 700px) 44vw, 260px"
-                className="winners-proof__img winners-proof__img--bg"
-                style={{ objectFit: 'cover', objectPosition: image.position || 'center center' }}
-              />
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -70,7 +60,11 @@ export default function WinnersProofStrip({ images }) {
                 quality={90}
                 sizes="(max-width: 700px) 44vw, 260px"
                 className="winners-proof__img winners-proof__img--fg"
-                style={{ objectFit: 'contain', objectPosition: image.position || 'center center' }}
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: image.position || 'center 36%',
+                  transform: `scale(${image.zoom || 1.08})`,
+                }}
               />
             </div>
           </figure>

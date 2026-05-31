@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import fs from 'node:fs'
 import path from 'node:path'
+import { imageSize } from 'image-size'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import CareerStrip from '../../components/CareerStrip'
@@ -45,11 +46,33 @@ function getWinnerProofImages() {
 
   const dedupedFiles = [...byBaseName.values()].sort((a, b) => a.localeCompare(b))
 
-  return dedupedFiles.map((fileName) => ({
-    src: `/images/winners/${fileName}`,
-    alt: 'Competition winners coached by Andy',
-    position: 'center center',
-  }))
+  return dedupedFiles.map((fileName) => {
+    const localPath = path.join(winnersDir, fileName)
+    const { width = 1, height = 1 } = imageSize(localPath)
+    const ratio = width / height
+
+    let variant = 'square'
+    let position = 'center 36%'
+    let zoom = 1.08
+
+    if (ratio >= 1.45) {
+      variant = 'landscape'
+      position = 'center 40%'
+      zoom = 1.12
+    } else if (ratio <= 0.82) {
+      variant = 'portrait'
+      position = 'center 30%'
+      zoom = 1.05
+    }
+
+    return {
+      src: `/images/winners/${fileName}`,
+      alt: 'Competition winners coached by Andy',
+      position,
+      variant,
+      zoom,
+    }
+  })
 }
 
 const WINNER_PROOF_IMAGES = getWinnerProofImages()
