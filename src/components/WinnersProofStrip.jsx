@@ -54,12 +54,23 @@ export default function WinnersProofStrip({ images }) {
             <div className="winners-proof__media">
               <Image
                 src={image.src}
+                alt=""
+                aria-hidden="true"
+                fill
+                quality={70}
+                sizes="(max-width: 700px) 44vw, 260px"
+                className="winners-proof__img winners-proof__img--bg"
+                style={{ objectFit: 'cover', objectPosition: image.position || 'center center' }}
+              />
+              <Image
+                src={image.src}
                 alt={image.alt}
                 fill
                 priority={index < 4}
                 quality={90}
                 sizes="(max-width: 700px) 44vw, 260px"
-                style={{ objectFit: 'cover', objectPosition: image.position || 'center center' }}
+                className="winners-proof__img winners-proof__img--fg"
+                style={{ objectFit: 'contain', objectPosition: image.position || 'center center' }}
               />
             </div>
           </figure>
