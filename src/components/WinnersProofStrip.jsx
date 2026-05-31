@@ -1,77 +1,67 @@
 'use client'
 import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 export default function WinnersProofStrip({ images }) {
   const viewportRef = useRef(null)
   const trackRef = useRef(null)
-  const [paused, setPaused] = useState(false)
-  const pauseTimer = useRef(null)
-  const autoScrollRafRef = useRef(null)
-  const lastTickRef = useRef(0)
   const allImages = [...images, ...images]
-
-  const pauseBriefly = () => {
-    setPaused(true)
-    clearTimeout(pauseTimer.current)
-    pauseTimer.current = setTimeout(() => setPaused(false), 2200)
-  }
 
   useEffect(() => {
     const viewport = viewportRef.current
     const track = trackRef.current
-    if (!viewport || !track) return undefined
+    if (!viewport || !track) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
-    const scrollStep = (timestamp) => {
-      if (!lastTickRef.current) {
-        lastTickRef.current = timestamp
-      }
-      const delta = timestamp - lastTickRef.current
-      lastTickRef.current = timestamp
+    let pausedUntil = 0
+    let raf
+    const pauseBriefly = () => {
+      pausedUntil = performance.now() + 2200
+    }
 
-      if (!paused) {
-        const speedPxPerSecond = 36
-        viewport.scrollLeft += (speedPxPerSecond * delta) / 1000
-        const loopWidth = track.scrollWidth / 2
-        if (viewport.scrollLeft >= loopWidth) {
-          viewport.scrollLeft -= loopWidth
+    const tick = () => {
+      if (performance.now() > pausedUntil) {
+        viewport.scrollLeft = Math.round(viewport.scrollLeft + 1)
+        if (viewport.scrollLeft >= track.scrollWidth / 2) {
+          viewport.scrollLeft = 0
         }
       }
-
-      autoScrollRafRef.current = window.requestAnimationFrame(scrollStep)
+      raf = requestAnimationFrame(tick)
     }
 
-    autoScrollRafRef.current = window.requestAnimationFrame(scrollStep)
+    viewport.addEventListener('pointerdown', pauseBriefly)
+    viewport.addEventListener('wheel', pauseBriefly, { passive: true })
+    viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
+    raf = requestAnimationFrame(tick)
+
     return () => {
-      if (autoScrollRafRef.current) {
-        window.cancelAnimationFrame(autoScrollRafRef.current)
-      }
-      clearTimeout(pauseTimer.current)
+      cancelAnimationFrame(raf)
+      viewport.removeEventListener('pointerdown', pauseBriefly)
+      viewport.removeEventListener('wheel', pauseBriefly)
+      viewport.removeEventListener('touchstart', pauseBriefly)
     }
-  }, [paused])
+  }, [])
 
   return (
     <div
       ref={viewportRef}
       className="winners-proof"
       aria-label="Competition winners coached by Andy over the years"
-      onPointerDown={pauseBriefly}
-      onWheel={pauseBriefly}
-      onTouchStart={pauseBriefly}
-      onTouchEnd={pauseBriefly}
     >
-      <div ref={trackRef} className={`winners-proof__track${paused ? ' paused' : ''}`}>
+      <div ref={trackRef} className="winners-proof__track">
         {allImages.map((image, index) => (
           <figure className="winners-proof__card" key={`${image.src}-${index}`}>
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              priority={index < 4}
-              quality={90}
-              sizes="(max-width: 700px) 44vw, 260px"
-              style={{ objectFit: 'contain', objectPosition: image.position || 'center center' }}
-            />
+            <div className="winners-proof__media">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                priority={index < 4}
+                quality={90}
+                sizes="(max-width: 700px) 44vw, 260px"
+                style={{ objectFit: 'cover', objectPosition: image.position || 'center center' }}
+              />
+            </div>
           </figure>
         ))}
       </div>
