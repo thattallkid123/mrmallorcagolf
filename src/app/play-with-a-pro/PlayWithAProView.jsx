@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useRef } from 'react'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
@@ -95,6 +96,8 @@ function buildBreadcrumbSchema(locale) {
 }
 
 export default function PlayWithAProView({ content, locale = 'en' }) {
+  const stripViewportRef = useRef(null)
+  const stripTrackRef = useRef(null)
   const links = PAGE_LINKS[locale] || PAGE_LINKS.en
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
@@ -108,6 +111,42 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
     { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
   ]
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
+
+  useEffect(() => {
+    const viewport = stripViewportRef.current
+    const track = stripTrackRef.current
+    if (!viewport || !track) return
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReducedMotion) return
+
+    let pausedUntil = 0
+    let raf
+
+    const pauseBriefly = () => {
+      pausedUntil = performance.now() + 1800
+    }
+
+    const tick = () => {
+      if (performance.now() > pausedUntil) {
+        viewport.scrollLeft = Math.round(viewport.scrollLeft + 1)
+        if (viewport.scrollLeft >= track.scrollWidth / 2) viewport.scrollLeft = 0
+      }
+      raf = requestAnimationFrame(tick)
+    }
+
+    viewport.addEventListener('pointerdown', pauseBriefly)
+    viewport.addEventListener('wheel', pauseBriefly, { passive: true })
+    viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
+    raf = requestAnimationFrame(tick)
+
+    return () => {
+      cancelAnimationFrame(raf)
+      viewport.removeEventListener('pointerdown', pauseBriefly)
+      viewport.removeEventListener('wheel', pauseBriefly)
+      viewport.removeEventListener('touchstart', pauseBriefly)
+    }
+  }, [])
 
   return (
     <>
@@ -179,11 +218,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
-            <div
-              className="pwap-day-strip"
-              aria-label="Play With A Pro round photos"
-            >
-              <div className="pwap-day-strip__track">
+            <div className="pwap-day-strip" aria-label="Play With A Pro round photos" ref={stripViewportRef}>
+              <div className="pwap-day-strip__track" ref={stripTrackRef}>
                 {dayPhotosLoop.map((photo, index) => (
                   <figure
                     key={`${photo.src}-${index}`}
@@ -194,7 +230,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                       alt={photo.alt}
                       fill
                       sizes="(max-width: 920px) 78vw, 360px"
-                      style={{ objectFit: 'cover', objectPosition: photo.position || 'center center' }}
+                      style={{ objectFit: 'contain', objectPosition: photo.position || 'center center' }}
                     />
                   </figure>
                 ))}
