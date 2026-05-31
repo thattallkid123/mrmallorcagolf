@@ -105,7 +105,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const dayPhotos = [
     { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', position: 'center 38%' },
     { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
-    { src: '/images/client-son-gual2.webp', alt: 'Group day at Son Gual', position: 'center 44%' },
+    { src: '/images/client-coaching.webp', alt: 'Andy with two guests on course in Mallorca', position: 'center 42%' },
     { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
     { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', position: 'center 36%' },
     { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
@@ -122,29 +122,46 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
 
     let pausedUntil = 0
     let raf
+    let halfWidth = 0
+
+    const setHalfWidth = () => {
+      halfWidth = track.scrollWidth / 2
+    }
 
     const pauseBriefly = () => {
       pausedUntil = performance.now() + 1800
     }
 
+    const normalizeLoopPosition = () => {
+      if (!halfWidth) return
+      if (viewport.scrollLeft >= halfWidth) viewport.scrollLeft -= halfWidth
+      if (viewport.scrollLeft < 0) viewport.scrollLeft += halfWidth
+    }
+
     const tick = () => {
       if (performance.now() > pausedUntil) {
         viewport.scrollLeft = Math.round(viewport.scrollLeft + 1)
-        if (viewport.scrollLeft >= track.scrollWidth / 2) viewport.scrollLeft = 0
+        normalizeLoopPosition()
       }
       raf = requestAnimationFrame(tick)
     }
 
+    setHalfWidth()
+    window.addEventListener('resize', setHalfWidth)
+
     viewport.addEventListener('pointerdown', pauseBriefly)
     viewport.addEventListener('wheel', pauseBriefly, { passive: true })
     viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
+    viewport.addEventListener('scroll', normalizeLoopPosition, { passive: true })
     raf = requestAnimationFrame(tick)
 
     return () => {
       cancelAnimationFrame(raf)
+      window.removeEventListener('resize', setHalfWidth)
       viewport.removeEventListener('pointerdown', pauseBriefly)
       viewport.removeEventListener('wheel', pauseBriefly)
       viewport.removeEventListener('touchstart', pauseBriefly)
+      viewport.removeEventListener('scroll', normalizeLoopPosition)
     }
   }, [])
 
