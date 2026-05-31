@@ -104,10 +104,10 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   }
   const dayPhotos = [
     { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', position: 'center 38%' },
-    { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
     { src: '/images/son-antem-west-review-blog/son-antem-west-4.webp', alt: 'Andy with two guests on a play-with-a-pro day at Son Antem West', position: 'center 42%' },
     { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
     { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', position: 'center 36%' },
+    { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
     { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
   ]
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]

@@ -48,6 +48,50 @@ function getImagePresentation(block, imageOrdinal) {
   return 'full'
 }
 
+function parseStarRating(value) {
+  if (typeof value !== 'string') return null
+  const trimmed = value.trim()
+  const numericMatch = trimmed.match(/(\d(?:\.\d)?)/)
+  if (numericMatch) {
+    const parsed = Number(numericMatch[1])
+    return Number.isFinite(parsed) ? parsed : null
+  }
+
+  const fullStars = (trimmed.match(/★/g) || []).length
+  if (!fullStars) return null
+  const hasHalf = trimmed.includes('½') || trimmed.includes('⯨')
+  return fullStars + (hasHalf ? 0.5 : 0)
+}
+
+function renderStars(value) {
+  const rating = parseStarRating(String(value))
+  if (!Number.isFinite(rating)) return value
+
+  const full = Math.floor(rating)
+  const hasHalf = rating - full >= 0.5
+
+  return (
+    <span aria-label={`${rating} stars`} title={`${rating} stars`} style={{ display: 'inline-flex', alignItems: 'center', gap: 0, whiteSpace: 'nowrap' }}>
+      {Array.from({ length: full }, (_, i) => (
+        <span key={`full-${i}`}>★</span>
+      ))}
+      {hasHalf ? (
+        <span
+          style={{
+            display: 'inline-block',
+            width: '0.52em',
+            overflow: 'hidden',
+            lineHeight: 1,
+            verticalAlign: 'middle',
+          }}
+        >
+          <span style={{ display: 'inline-block' }}>★</span>
+        </span>
+      ) : null}
+    </span>
+  )
+}
+
 function renderBlock(block, index, locale, imageOrdinal) {
   if (block.type === 'paragraph') {
     return <p key={`${index}-${block.text.slice(0, 24)}`}><InlineRichText text={block.text} locale={locale} /></p>
@@ -213,9 +257,14 @@ function renderBlock(block, index, locale, imageOrdinal) {
           <tbody>
             {block.rows.map((row, ri) => (
               <tr key={ri} style={{ borderBottom: '1px solid rgba(0,0,0,0.08)', background: ri % 2 === 0 ? 'transparent' : 'rgba(0,0,0,0.025)' }}>
-                {row.map((cell, ci) => (
-                  <td key={ci} style={{ padding: '0.4rem 0.75rem', verticalAlign: 'top' }}>{cell}</td>
-                ))}
+                {row.map((cell, ci) => {
+                  const isStarsColumn = block.headers[ci] === 'Stars'
+                  return (
+                    <td key={ci} style={{ padding: '0.4rem 0.75rem', verticalAlign: 'top' }}>
+                      {isStarsColumn ? renderStars(cell) : cell}
+                    </td>
+                  )
+                })}
               </tr>
             ))}
           </tbody>
