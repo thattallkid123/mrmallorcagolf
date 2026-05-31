@@ -463,7 +463,6 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Palma Pitch & Putt', 'Central Palma', '27 (9H)', '\u20AC14-22', '2/10', '3.0', 'Beginners, approach practice'],
           ['Reserva Rotana', 'Manacor', '36 (9H)', 'Hotel guests only', '6/10', '3.5', 'Stay-and-play, private estate'],
         ],
-        ],
       },
       { type: 'heading', text: 'The Top Courses - By Purpose' },
       { type: 'subheading', text: 'For a Serious Championship Round: Son Gual' },
@@ -1189,4 +1188,3 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
     },
   }
 }
-
