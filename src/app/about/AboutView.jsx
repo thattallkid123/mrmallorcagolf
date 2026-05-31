@@ -117,28 +117,21 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
                 </span>
               ))}
             </h1>
-            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: '1.25rem' }}>
-              {content.hero.tags.map((tag, index) => (
-                <span key={tag} className={`cred-tag${index === 0 ? ' cred-tag--gold' : ''}`}>
-                  {tag}
-                </span>
-              ))}
-            </div>
           </div>
         </header>
 
-        <section className="cred-logo-bar">
-          <div className="cred-logo-bar__logos">
+        <section className="about-hero-logo-rail">
+          <div className="about-hero-logo-rail__inner">
             {CREDENTIAL_LOGOS.map((logo) => (
-              <div className="cred-logo-bar__item" key={logo.name}>
+              <div className="about-hero-logo-rail__item" key={logo.name}>
                 <Image
                   src={logo.src}
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className="cred-logo-bar__img"
+                  className="about-hero-logo-rail__img"
                   quality={90}
-                  sizes="(max-width: 700px) 45vw, 238px"
+                  sizes="(max-width: 700px) 42vw, 180px"
                 />
               </div>
             ))}

@@ -91,13 +91,13 @@ export default function HomePageInner({ locale = 'en' }) {
         <div className="hero__content">
           <p className="hero__eyebrow">{home.hero.eyebrow}</p>
           <h1 className="serif-display hero__title">
-            {home.hero.titleLines[0]}
+            <span className="hero__title-line">{home.hero.titleLines[0]}</span>
             <br />
-            {home.hero.titleLines[1]}
+            <span className="hero__title-line">{home.hero.titleLines[1]}</span>
             {home.hero.emphasis ? (
               <>
                 <br />
-                <em style={{ fontStyle: 'italic', fontWeight: 400, opacity: 0.85 }}>{home.hero.emphasis}</em>
+                <em className="hero__title-emphasis">{home.hero.emphasis}</em>
               </>
             ) : null}
           </h1>
@@ -156,10 +156,10 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="intro__creds">
           {[
-            { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
-            { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
-            { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
-            { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
+            { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399, className: 'intro__cred-logo--pga' },
+            { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438, className: 'intro__cred-logo--tpi' },
+            { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918, className: 'intro__cred-logo--trackman' },
+            { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091, className: 'intro__cred-logo--uskids' },
           ].map((logo) => (
             <div className="intro__cred-item" key={logo.name}>
               <Image
@@ -167,7 +167,7 @@ export default function HomePageInner({ locale = 'en' }) {
                 alt={logo.name}
                 width={logo.width}
                 height={logo.height}
-                className="cred-logo-bar__img"
+                className={`cred-logo-bar__img ${logo.className || ''}`}
                 quality={90}
                 sizes="(max-width: 700px) 45vw, 140px"
               />
