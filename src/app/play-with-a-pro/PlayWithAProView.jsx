@@ -104,8 +104,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   }
   const dayPhotos = [
     { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', position: 'center 38%' },
-    { src: '/images/client-son-gual-banner.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
-    { src: '/images/client-son-gual2-banner.webp', alt: 'Group day at Son Gual', position: 'center 45%' },
+    { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
+    { src: '/images/client-son-gual2.webp', alt: 'Group day at Son Gual', position: 'center 44%' },
     { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
     { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', position: 'center 36%' },
     { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
@@ -230,7 +230,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                       alt={photo.alt}
                       fill
                       sizes="(max-width: 920px) 78vw, 360px"
-                      style={{ objectFit: 'contain', objectPosition: photo.position || 'center center' }}
+                      style={{ objectFit: 'cover', objectPosition: photo.position || 'center center' }}
                     />
                   </figure>
                 ))}

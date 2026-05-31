@@ -1950,7 +1950,7 @@ body {
 .pwap-day-strip:active { cursor: grabbing; }
 .pwap-day-strip::-webkit-scrollbar { display: none; }
 .pwap-day-strip__track { display: flex; gap: 10px; width: max-content; padding: 10px; }
-.pwap-day-strip__card { position: relative; flex: 0 0 352px; height: 248px; margin: 0; overflow: hidden; background: #f4f1eb; border: 1px solid rgba(26,25,22,0.08); }
+.pwap-day-strip__card { position: relative; flex: 0 0 352px; height: 248px; margin: 0; overflow: hidden; background: #111; border: 1px solid rgba(26,25,22,0.08); }
 .pwap-day-strip__card--portrait { flex-basis: 228px; }
 
 .pwap-feature-photo { background: linear-gradient(180deg, #f7f3eb 0%, #f4efe5 100%); padding: 8px 40px 82px; }
@@ -2689,11 +2689,12 @@ select.form-control { cursor: pointer; }
   .cred-logo-bar__img { width: min(196px, 98%); height: auto; max-height: 174px; }
   .cred-logo-bar__title { font-size: 0.95rem; }
   .about-hero-logo-rail { padding: 0 20px; }
-  .about-hero-logo-rail__inner { flex-wrap: wrap; }
-  .about-hero-logo-rail__item { flex: 1 1 45%; min-height: 100px; border-right: none; border-bottom: 1px solid rgba(26,25,22,0.09); }
+  .about-hero-logo-rail__inner { flex-wrap: nowrap; }
+  .about-hero-logo-rail__item { flex: 1 1 0; min-width: 0; min-height: 96px; padding: 0.45rem 0.35rem; border-right: 1px solid rgba(26,25,22,0.09); border-bottom: none; }
   .about-hero-logo-rail__item:nth-child(odd) { border-right: 1px solid rgba(26,25,22,0.09); }
   .about-hero-logo-rail__item:nth-last-child(-n+2) { border-bottom: none; }
-  .about-hero-logo-rail__img { width: min(94px, 90%); max-height: 68px; }
+  .about-hero-logo-rail__item:last-child { border-right: none; }
+  .about-hero-logo-rail__img { width: min(82px, 96%); max-height: 62px; }
   .testimonials { padding: 70px 20px; }
   .testimonials__grid { display: block; overflow: visible; }
   .testimonials__grid .testimonial { max-width: none; width: 100%; }
