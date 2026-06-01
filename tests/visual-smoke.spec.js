@@ -45,6 +45,24 @@ test.describe('visual smoke checks', () => {
         await expect(packages.locator('.tier__btn')).toHaveCount(4)
       }
 
+      if (route.endsWith('/play-with-a-pro') && test.info().project.name === 'desktop-chrome') {
+        const daySection = page.locator('.pwap-day')
+        const dayLead = page.locator('.pwap-day__lead')
+        await daySection.scrollIntoViewIfNeeded()
+        const widths = await page.evaluate(() => {
+          const section = document.querySelector('.pwap-day')
+          const lead = document.querySelector('.pwap-day__lead')
+          if (!section || !lead) return null
+          return {
+            section: section.getBoundingClientRect().width,
+            lead: lead.getBoundingClientRect().width,
+          }
+        })
+        expect(widths, `Missing PWAP day layout nodes on ${route}`).not.toBeNull()
+        const ratio = widths.lead / widths.section
+        expect(ratio, `PWAP day lead too narrow on ${route}; expected near full-width on desktop`).toBeGreaterThan(0.9)
+      }
+
       if (route === '/about') {
         await page.locator('.winners-proof').scrollIntoViewIfNeeded()
         await expect(page.locator('.winners-proof__card')).toHaveCount(74)
