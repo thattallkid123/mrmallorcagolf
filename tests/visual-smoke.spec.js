@@ -1,6 +1,11 @@
 const { expect, test } = require('@playwright/test')
 
-const ROUTES = ['/', '/about', '/play-with-a-pro', '/guides', '/es', '/fr/play-with-a-pro']
+const LOCALES = ['de', 'es', 'fr', 'nl', 'sv', 'zh']
+const BASE_ROUTES = ['/', '/about', '/play-with-a-pro', '/guides', '/contact', '/golf-courses']
+const ROUTES = [
+  ...BASE_ROUTES,
+  ...LOCALES.flatMap((locale) => ['/', '/about', '/play-with-a-pro', '/guides', '/contact', '/golf-courses'].map((p) => `/${locale}${p === '/' ? '' : p}`)),
+]
 
 test.describe('visual smoke checks', () => {
   for (const route of ROUTES) {
@@ -42,7 +47,7 @@ test.describe('visual smoke checks', () => {
 
       if (route === '/about') {
         await page.locator('.winners-proof').scrollIntoViewIfNeeded()
-        await expect(page.locator('.winners-proof__card')).toHaveCount(16)
+        await expect(page.locator('.winners-proof__card')).toHaveCount(74)
         await expect.poll(async () => page.locator('.winners-proof img').first().evaluate((image) => image.naturalWidth)).toBeGreaterThan(0)
         await page.locator('.career-strip').scrollIntoViewIfNeeded()
         await expect(page.locator('.career-strip__card')).toHaveCount(16)

@@ -148,7 +148,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="intro__media" aria-label="Andy Griffiths">
           <Image
-            src="/images/andy-on-course-smile.webp"
+                    src="/images/andy-on-course-smile.jpg"
             alt="Andy Griffiths, PGA Advanced Professional, Mallorca"
             fill
             quality={90}
