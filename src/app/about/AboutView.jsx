@@ -19,13 +19,13 @@ import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 
 function getWinnerProofImages() {
   const IMAGE_OVERRIDES = {
-    1: { position: 'center 22%', zoom: 1.0 },
-    2: { position: 'center 26%', zoom: 1.0 },
-    3: { position: 'center 22%', zoom: 1.0 },
-    4: { position: 'center 22%', zoom: 1.0 },
-    10: { position: 'center 22%', zoom: 1.0 },
-    30: { position: 'center 23%', zoom: 1.01 },
-    36: { position: 'center 22%', zoom: 1.0 },
+    1: { position: 'center 18%', zoom: 1.0, variant: 'portrait' },
+    2: { position: 'center 50%', zoom: 1.06 },
+    3: { position: 'center 18%', zoom: 1.0 },
+    4: { position: 'center 18%', zoom: 1.0, variant: 'portrait' },
+    10: { position: 'center 18%', zoom: 1.0 },
+    30: { position: 'center 20%', zoom: 1.0 },
+    36: { position: 'center 18%', zoom: 1.0 },
   }
 
   const winnersDir = path.join(process.cwd(), 'public', 'images', 'winners')
@@ -63,20 +63,21 @@ function getWinnerProofImages() {
     const ratio = width / height
 
     let variant = 'square'
-    let position = 'center 36%'
-    let zoom = 1.08
+    let position = 'center 34%'
+    let zoom = 1.04
 
-    if (ratio >= 1.45) {
+    if (ratio >= 1.35) {
       variant = 'landscape'
-      position = 'center 50%'
-      zoom = 1.08
-    } else if (ratio <= 0.82) {
+      position = 'center 56%'
+      zoom = 1.06
+    } else if (ratio <= 1.02) {
       variant = 'portrait'
-      position = 'center 24%'
-      zoom = 1.02
+      position = 'center 22%'
+      zoom = 1.01
     }
 
     const override = IMAGE_OVERRIDES[imageNumber]
+    if (override?.variant) variant = override.variant
     if (override?.position) position = override.position
     if (typeof override?.zoom === 'number') zoom = override.zoom
 
