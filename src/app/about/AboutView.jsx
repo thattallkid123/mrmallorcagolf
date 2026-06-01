@@ -19,11 +19,13 @@ import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 
 function getWinnerProofImages() {
   const IMAGE_OVERRIDES = {
-    1: { position: 'center 28%', zoom: 1.04 },
-    2: { position: 'center 30%', zoom: 1.02 },
-    4: { position: 'center 28%', zoom: 1.04 },
-    30: { position: 'center 27%', zoom: 1.04 },
-    36: { position: 'center 26%', zoom: 1.03 },
+    1: { position: 'center 22%', zoom: 1.0 },
+    2: { position: 'center 26%', zoom: 1.0 },
+    3: { position: 'center 22%', zoom: 1.0 },
+    4: { position: 'center 22%', zoom: 1.0 },
+    10: { position: 'center 22%', zoom: 1.0 },
+    30: { position: 'center 23%', zoom: 1.01 },
+    36: { position: 'center 22%', zoom: 1.0 },
   }
 
   const winnersDir = path.join(process.cwd(), 'public', 'images', 'winners')
@@ -66,12 +68,12 @@ function getWinnerProofImages() {
 
     if (ratio >= 1.45) {
       variant = 'landscape'
-      position = 'center 52%'
-      zoom = 1.12
+      position = 'center 50%'
+      zoom = 1.08
     } else if (ratio <= 0.82) {
       variant = 'portrait'
-      position = 'center 30%'
-      zoom = 1.05
+      position = 'center 24%'
+      zoom = 1.02
     }
 
     const override = IMAGE_OVERRIDES[imageNumber]

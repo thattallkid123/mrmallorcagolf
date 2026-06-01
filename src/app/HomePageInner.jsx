@@ -119,19 +119,6 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
       </section>
 
-      <section className="home-proof-marquee" aria-label="Trust markers">
-        <div className="home-proof-marquee__track">
-          <span>PGA Advanced Professional guidance</span>
-          <span>24 Mallorca courses reviewed</span>
-          <span>Trip pacing built around your group</span>
-          <span>Private Play With A Pro integration</span>
-          <span>Trusted by repeat golf travellers</span>
-          <span>PGA Advanced Professional guidance</span>
-          <span>24 Mallorca courses reviewed</span>
-          <span>Trip pacing built around your group</span>
-        </div>
-      </section>
-
       <section className="intro reveal">
         <div className="intro__left">
           <p className="eyebrow">
