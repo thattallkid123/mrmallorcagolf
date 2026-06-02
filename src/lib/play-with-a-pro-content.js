@@ -1237,6 +1237,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           ],
           button: 'Anfragen →',
           href: '/de/contact',
+          detailHref: '/signature-day',
+          detailLabel: 'Alle Details ansehen →',
           featured: false,
         },
         {
@@ -1338,6 +1340,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           ],
           button: 'Consultar →',
           href: '/es/contact',
+          detailHref: '/signature-day',
+          detailLabel: 'Ver todos los detalles →',
           featured: false,
         },
         {
@@ -1439,6 +1443,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           ],
           button: 'Demander →',
           href: '/fr/contact',
+          detailHref: '/signature-day',
+          detailLabel: 'Voir tous les détails →',
           featured: false,
         },
         {
@@ -1540,6 +1546,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           ],
           button: 'Aanvragen →',
           href: '/nl/contact',
+          detailHref: '/signature-day',
+          detailLabel: 'Alle details bekijken →',
           featured: false,
         },
         {
@@ -1641,6 +1649,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           ],
           button: 'Förfrågan →',
           href: '/sv/contact',
+          detailHref: '/signature-day',
+          detailLabel: 'Se alla detaljer →',
           featured: false,
         },
         {
@@ -1742,6 +1752,8 @@ const PLAY_WITH_A_PRO_RELOCALIZED_OVERRIDES = {
           ],
           button: '立即咨询 →',
           href: '/zh/contact',
+          detailHref: '/signature-day',
+          detailLabel: '查看完整详情 →',
           featured: false,
         },
         {
