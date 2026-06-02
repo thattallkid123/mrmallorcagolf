@@ -2,26 +2,30 @@ import { notFound } from 'next/navigation'
 
 import { buildGuidePostMetadata } from '../../lib/page-metadata'
 import { getGuidePostContent } from '../../lib/guide-post-content'
-import { ARTICLE_SLUGS, REVIEW_POST_SLUGS, isPublishedGuideSlug } from '../../lib/site'
+import { getGuideArticleContent, buildGuideArticleMetadata } from '../../lib/guide-article-content'
+import { ARTICLE_SLUGS, REVIEW_POST_SLUGS, isPublishedGuideSlug, isArticleSlug } from '../../lib/site'
 import GuidePostView from '../guides/GuidePostView'
+import GuideArticleView from '../guides/GuideArticleView'
 
 const GUIDE_SLUGS = [...REVIEW_POST_SLUGS, ...ARTICLE_SLUGS]
-
-function getContent(slug, locale) {
-  if (!isPublishedGuideSlug(slug)) return null
-  return getGuidePostContent(slug, locale)
-}
 
 export function createGuideSlugStaticParams() {
   return GUIDE_SLUGS.map((slug) => ({ slug }))
 }
 
 export function createGuideSlugMetadata(locale, params) {
-  const content = getContent(params.slug, locale)
+  const slug = params.slug
+  if (!isPublishedGuideSlug(slug)) return {}
+
+  if (isArticleSlug(slug)) {
+    return buildGuideArticleMetadata(slug, locale)
+  }
+
+  const content = getGuidePostContent(slug, locale)
   if (!content) return {}
 
   return buildGuidePostMetadata({
-    slug: params.slug,
+    slug,
     locale,
     title: content.metadata.title,
     description: content.metadata.description,
@@ -30,7 +34,16 @@ export function createGuideSlugMetadata(locale, params) {
 }
 
 export function createGuideSlugPage(locale, params) {
-  const content = getContent(params.slug, locale)
+  const slug = params.slug
+  if (!isPublishedGuideSlug(slug)) notFound()
+
+  if (isArticleSlug(slug)) {
+    const content = getGuideArticleContent(slug, locale)
+    if (!content) notFound()
+    return <GuideArticleView meta={content.meta} blocks={content.blocks} />
+  }
+
+  const content = getGuidePostContent(slug, locale)
   if (!content) notFound()
 
   return <GuidePostView locale={locale} meta={content.meta} blocks={content.blocks} />

@@ -1,3 +1,25 @@
+## 2026-06-02
+
+### Mr Mallorca Golf
+- [site] Website photo positioning: added 3 premium Andy shots to homepage intro and PWAP page; homepage hero now shows Andy smiling on-course (warm, approachable), PWAP page hero and mid-section show coaching moments with clients
+- [site] Fixed PWAP page layout: removed 6-photo collage from pricing section, restored clean pricing copy ("all inclusive" framing), moved collage to dedicated grid between "Which course?" and "What's included" blocks with proper crop and spacing
+- [site] Fixed carousel image display: changed objectFit from 'cover' to 'contain' so full photos visible without face cropping, supports portrait and landscape dimensions
+- [site] Fixed page width constraint: added max-width: 1200px wrapper to `.pwap-day` section so layout matches other pages (was breaking out of bounds on mobile)
+- [site] Fixed "Which course?" carousel: switched to single 6-photo auto-scroll carousel (1px/frame, 1.8s pause on interaction), removed duplicate carousel, matches career-strip and proof-of-work scroll behavior
+- [site] PWAP copy: removed "the round has a rhythm to it" and "background shapes the day but doesn't dominate" banned constructions, tightened to "A round of golf, played properly"
+- [site] Fixed locale parity CI error: added missing 6th Signature Day feature ("Priority booking") to DE/ES/FR/NL/SV/ZH; all non-EN locales now match EN feature count
+- [site] Credentials logos: reduced from 72px to 56px tall, lowered to 55% opacity (icons more subtle), fixed mobile wrapping to stay 4-in-a-row, added colour on hover, balanced padding top/bottom to 88px each side
+- [admin] Reorganized MMG course research files: triaged `MMG_COURSES_RESEARCH_2026.docx` (March, research notes, 30.7KB) vs `MMG_COURSE_MARKET_REFERENCE_2026.md` (May 1, public reference, 41.5KB); confirmed .md is working version with all 24 courses, par/SI, pricing benchmarks
+- [automation] Installed Playwright in mrmallorcagolf-real repo; built all-locale check to validate content parity across 7 languages
+
+### Personal Systems
+- [admin] Set up Autonomo business file structure: clarified `MMG_Financial_Reference_2026_v3.xlsx` already existed in Drive Active, deleted Downloads duplicate and superseded cashflow file, confirmed Autonomo projection files in Drive To Do
+- [business] Spain self-employed tax setup: created comprehensive Autonomo tracker Excel workbook with 5 tabs (Ledger, Invoices, Tax Calculator, Tax Brackets, Gestor Questions) for tracking income/expenses, generating quarterly Modelo 130 estimates, and preparing for gestor meeting
+- [business] Cuota Cero Baleares 2026 deadline flagged (10 June 2026); application starts at caib.es/seucaib, eligible for ~€960 subsidy over 12 months; also Makro card instant via app with NIE + RETA doc
+
+### Tech / AI Workflow
+- [automation] Created changelog automation task: reads session history, generates entries with proper tags and dates, maintains state file to avoid duplicates
+
 ## 2026-05-25
 
 ### Mr Mallorca Golf
