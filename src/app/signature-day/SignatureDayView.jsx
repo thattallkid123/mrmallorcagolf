@@ -265,7 +265,7 @@ export default function SignatureDayView() {
         </div>
         <div className="pwap-day__right reveal">
           <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '0.75rem' }}>
-            <Image src="/images/food/mallorca-orchard-dining.jpg" alt="Private outdoor dining in Mallorca" fill quality={85} sizes="(max-width: 768px) 100vw, 560px" style={{ objectFit: 'cover', objectPosition: 'center 40%' }} />
+            <Image src="/images/food/mallorca-orchard-dining.jpg" alt="Private outdoor dining in Mallorca" fill unoptimized sizes="(max-width: 768px) 100vw, 560px" style={{ objectFit: 'cover', objectPosition: 'center 40%' }} />
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
             {[
@@ -275,7 +275,7 @@ export default function SignatureDayView() {
               { src: '/images/food/mallorca-paella.jpg', alt: 'Mallorca paella' },
             ].map((img, i) => (
               <div key={i} style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '1/1' }}>
-                <Image src={img.src} alt={img.alt} fill quality={82} sizes="200px" style={{ objectFit: 'cover' }} />
+                <Image src={img.src} alt={img.alt} fill unoptimized style={{ objectFit: 'cover' }} />
               </div>
             ))}
           </div>
