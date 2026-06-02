@@ -568,7 +568,7 @@
   <div class="hero-inner">
     <p class="eyebrow">Before we play</p>
     <h1>Tell me about <em>your game.</em></h1>
-    <p>Five minutes before the round. The more honest you are, the more useful the day will be. There are no right answers — just the ones that help me help you.</p>
+    <p>Take five minutes before the round. Honest answers help me make the day more useful. There are no right answers - just the ones that help me help you.</p>
   </div>
 </section>
 
@@ -626,15 +626,16 @@
         <input type="text" id="q-handicap" placeholder="e.g. 14, or 'beginner'">
       </div>
       <div class="question">
-        <label class="question-label" for="q-age">Age range</label>
+        <label class="question-label" for="q-age">Age range (optional)</label>
         <div class="select-wrap">
           <select id="q-age">
             <option value="" disabled selected>Select</option>
+            <option>Prefer not to say</option>
             <option>Under 25</option>
-            <option>25–35</option>
-            <option>35–45</option>
-            <option>45–55</option>
-            <option>55–65</option>
+            <option>25-35</option>
+            <option>35-45</option>
+            <option>45-55</option>
+            <option>55-65</option>
             <option>65+</option>
           </select>
         </div>
@@ -652,12 +653,12 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="years-playing">
           <span class="option-marker"></span>
-          <span class="option-text">2–5 years</span>
+          <span class="option-text">2-5 years</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="years-playing">
           <span class="option-marker"></span>
-          <span class="option-text">5–15 years</span>
+          <span class="option-text">5-15 years</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="years-playing">
@@ -678,17 +679,17 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="freq-play">
           <span class="option-marker"></span>
-          <span class="option-text">Once or twice a month</span>
+          <span class="option-text">A few times a month</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="freq-play">
           <span class="option-marker"></span>
-          <span class="option-text">Once a week</span>
+          <span class="option-text">Most weeks</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="freq-play">
           <span class="option-marker"></span>
-          <span class="option-text">Multiple times a week</span>
+          <span class="option-text">Several times a week</span>
         </label>
       </div>
     </div>
@@ -709,12 +710,12 @@
 
     <div class="question">
       <label class="question-label">How would you describe your game right now?</label>
-      <p class="question-hint">Pick the one that feels most accurate, even if it's not flattering.</p>
+      <p class="question-hint">Pick the one that feels most accurate, even if it is not flattering.</p>
       <div class="options-grid single-col radio-type">
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
-          <span class="option-text">Playing well — close to my best</span>
+          <span class="option-text">Playing well - close to my best</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
@@ -724,17 +725,17 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
-          <span class="option-text">A bit out of form — not sure why</span>
+          <span class="option-text">A bit out of form - not sure why</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
-          <span class="option-text">Struggling — something's not clicking</span>
+          <span class="option-text">Struggling - nothing's clicking</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="game-state">
           <span class="option-marker"></span>
-          <span class="option-text">Just starting out — building from scratch</span>
+          <span class="option-text">Just starting out - building from scratch</span>
         </label>
       </div>
     </div>
@@ -746,17 +747,17 @@
         <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
-          <span class="option-text">Driving — accuracy off the tee</span>
+          <span class="option-text">Driving - off the tee</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
-          <span class="option-text">Irons — ball striking</span>
+          <span class="option-text">Irons - ball striking</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
-          <span class="option-text">Short game — chipping &amp; pitching</span>
+          <span class="option-text">Short game - chipping and pitching</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
@@ -766,12 +767,12 @@
         <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
-          <span class="option-text">Course management — wrong decisions</span>
+          <span class="option-text">Course management - decisions</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'checkbox', event)">
           <input type="checkbox">
           <span class="option-marker"></span>
-          <span class="option-text">Mental game — inconsistency under pressure</span>
+          <span class="option-text">Mental game - pressure and consistency</span>
         </label>
       </div>
     </div>
@@ -788,7 +789,7 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="best-golf-when">
           <span class="option-marker"></span>
-          <span class="option-text">Recently — within the last month</span>
+          <span class="option-text">Recently - within the last month</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="best-golf-when">
@@ -803,7 +804,7 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="best-golf-when">
           <span class="option-marker"></span>
-          <span class="option-text">I'm still building — haven't found it yet</span>
+          <span class="option-text">I'm still building - haven't found it yet</span>
         </label>
       </div>
     </div>
@@ -839,17 +840,17 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="practice-freq">
           <span class="option-marker"></span>
-          <span class="option-text">Occasionally — a few times a month</span>
+          <span class="option-text">Occasionally - a few times a month</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="practice-freq">
           <span class="option-marker"></span>
-          <span class="option-text">Regularly — most weeks</span>
+          <span class="option-text">Regularly - most weeks</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="practice-freq">
           <span class="option-marker"></span>
-          <span class="option-text">Often — several times a week</span>
+          <span class="option-text">Often - several times a week</span>
         </label>
       </div>
     </div>
@@ -892,29 +893,29 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="prev-coaching">
           <span class="option-marker"></span>
-          <span class="option-text">No — today is my first</span>
+          <span class="option-text">No - today is my first</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="prev-coaching">
           <span class="option-marker"></span>
-          <span class="option-text">Yes — a few lessons, some time ago</span>
+          <span class="option-text">Yes - a few lessons, some time ago</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="prev-coaching">
           <span class="option-marker"></span>
-          <span class="option-text">Yes — regular lessons over the years</span>
+          <span class="option-text">Yes - regular lessons over the years</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="prev-coaching">
           <span class="option-marker"></span>
-          <span class="option-text">Yes — I've had consistent coaching recently</span>
+          <span class="option-text">Yes - recent consistent coaching</span>
         </label>
       </div>
     </div>
 
     <div class="question">
-      <label class="question-label" for="q-coaching-takeaway">If you've had coaching before — what's the one thing that's actually stuck?</label>
-      <p class="question-hint">Or what advice did you receive that you've never been able to apply?</p>
+      <label class="question-label" for="q-coaching-takeaway">If you've had coaching before, what's the one thing that's actually stuck?</label>
+      <p class="question-hint">Or what advice have you never really been able to apply?</p>
       <textarea id="q-coaching-takeaway" placeholder="Leave blank if not applicable..."></textarea>
     </div>
 
@@ -934,26 +935,26 @@
 
     <div class="question">
       <label class="question-label">What frustrates you most about your game?</label>
-      <textarea id="q-frustration" placeholder="Be specific — is it a shot type, a situation, the gap between range and course..."></textarea>
+      <textarea id="q-frustration" placeholder="Be specific - a shot type, a situation, or the gap between range and course..."></textarea>
     </div>
 
     <div class="question">
-      <label class="question-label">How would you describe the difference between your range game and your on-course game?</label>
+      <label class="question-label">How different is your range game from your on-course game?</label>
       <div class="options-grid single-col radio-type">
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="range-vs-course">
           <span class="option-marker"></span>
-          <span class="option-text">Similar — what I do on the range is what I take to the course</span>
+          <span class="option-text">Similar - what I do on the range transfers well</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="range-vs-course">
           <span class="option-marker"></span>
-          <span class="option-text">Some gap — I play a bit worse on the course</span>
+          <span class="option-text">Some gap - I am a bit worse on the course</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="range-vs-course">
           <span class="option-marker"></span>
-          <span class="option-text">Big gap — I can stripe it on the range and fall apart on the course</span>
+          <span class="option-text">Big gap - great on the range, loose on the course</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="range-vs-course">
@@ -969,12 +970,12 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="bad-start">
           <span class="option-marker"></span>
-          <span class="option-text">I reset quickly — bad holes don't carry over much</span>
+          <span class="option-text">I reset quickly - bad holes do not carry over much</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="bad-start">
           <span class="option-marker"></span>
-          <span class="option-text">It takes a few holes but I get back on track</span>
+          <span class="option-text">It takes a few holes, then I get back on track</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="bad-start">
@@ -984,14 +985,14 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="bad-start">
           <span class="option-marker"></span>
-          <span class="option-text">A bad opening often writes off the whole round</span>
+          <span class="option-text">A bad opening can write off the round</span>
         </label>
       </div>
     </div>
 
     <div class="question">
       <label class="question-label">Rate your confidence in these areas</label>
-      <p class="question-hint">1 = low confidence, 5 = high confidence</p>
+      <p class="question-hint">1 = low confidence, 5 = high confidence, or Not sure if you cannot judge it.</p>
 
       <div style="margin-bottom:20px;">
         <p style="font-size:0.85rem;font-weight:500;color:var(--deep);margin-bottom:8px;">Driving off the tee</p>
@@ -1001,6 +1002,7 @@
           <label class="scale-item"><input type="radio" name="conf-drive" value="3"><span class="scale-btn" onclick="selectScale(this, event)">3</span></label>
           <label class="scale-item"><input type="radio" name="conf-drive" value="4"><span class="scale-btn" onclick="selectScale(this, event)">4</span></label>
           <label class="scale-item"><input type="radio" name="conf-drive" value="5"><span class="scale-btn" onclick="selectScale(this, event)">5</span></label>
+          <label class="scale-item"><input type="radio" name="conf-drive" value="not-sure"><span class="scale-btn" onclick="selectScale(this, event)">Not sure</span></label>
         </div>
         <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
       </div>
@@ -1013,6 +1015,7 @@
           <label class="scale-item"><input type="radio" name="conf-iron" value="3"><span class="scale-btn" onclick="selectScale(this, event)">3</span></label>
           <label class="scale-item"><input type="radio" name="conf-iron" value="4"><span class="scale-btn" onclick="selectScale(this, event)">4</span></label>
           <label class="scale-item"><input type="radio" name="conf-iron" value="5"><span class="scale-btn" onclick="selectScale(this, event)">5</span></label>
+          <label class="scale-item"><input type="radio" name="conf-iron" value="not-sure"><span class="scale-btn" onclick="selectScale(this, event)">Not sure</span></label>
         </div>
         <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
       </div>
@@ -1025,6 +1028,7 @@
           <label class="scale-item"><input type="radio" name="conf-short" value="3"><span class="scale-btn" onclick="selectScale(this, event)">3</span></label>
           <label class="scale-item"><input type="radio" name="conf-short" value="4"><span class="scale-btn" onclick="selectScale(this, event)">4</span></label>
           <label class="scale-item"><input type="radio" name="conf-short" value="5"><span class="scale-btn" onclick="selectScale(this, event)">5</span></label>
+          <label class="scale-item"><input type="radio" name="conf-short" value="not-sure"><span class="scale-btn" onclick="selectScale(this, event)">Not sure</span></label>
         </div>
         <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
       </div>
@@ -1037,6 +1041,7 @@
           <label class="scale-item"><input type="radio" name="conf-putt" value="3"><span class="scale-btn" onclick="selectScale(this, event)">3</span></label>
           <label class="scale-item"><input type="radio" name="conf-putt" value="4"><span class="scale-btn" onclick="selectScale(this, event)">4</span></label>
           <label class="scale-item"><input type="radio" name="conf-putt" value="5"><span class="scale-btn" onclick="selectScale(this, event)">5</span></label>
+          <label class="scale-item"><input type="radio" name="conf-putt" value="not-sure"><span class="scale-btn" onclick="selectScale(this, event)">Not sure</span></label>
         </div>
         <div class="scale-labels"><span>Low confidence</span><span>High confidence</span></div>
       </div>
@@ -1058,13 +1063,13 @@
 
     <div class="question">
       <label class="question-label">What would make today a good day for you?</label>
-      <p class="question-hint">Not a score — what would you want to take away from the round?</p>
-      <textarea id="q-good-day" placeholder="e.g. understand my course management better, fix one thing that's been bothering me, just enjoy a great course..."></textarea>
+      <p class="question-hint">Not a score - what would you want to take away from the round?</p>
+      <textarea id="q-good-day" placeholder="e.g. understand my course management better, fix one thing, enjoy a great course..."></textarea>
     </div>
 
     <div class="question">
       <label class="question-label">Is there one specific thing you'd like to work on today?</label>
-      <textarea id="q-one-thing" placeholder="e.g. my approach shots under 100m, staying patient on the back nine, reading greens better..."></textarea>
+      <textarea id="q-one-thing" placeholder="e.g. approach shots under 100m, staying patient on the back nine, reading greens better..."></textarea>
     </div>
 
     <div class="question">
@@ -1073,7 +1078,7 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="feeling-today">
           <span class="option-marker"></span>
-          <span class="option-text">Confident — ready to play</span>
+          <span class="option-text">Confident - ready to play</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="feeling-today">
@@ -1083,12 +1088,12 @@
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="feeling-today">
           <span class="option-marker"></span>
-          <span class="option-text">A bit uncertain — not sure what to expect</span>
+          <span class="option-text">A bit uncertain - not sure what to expect</span>
         </label>
         <label class="option-item" onclick="selectOption(this,'radio', event)">
           <input type="radio" name="feeling-today">
           <span class="option-marker"></span>
-          <span class="option-text">Nervous — it's been a while</span>
+          <span class="option-text">Nervous - it has been a while</span>
         </label>
       </div>
     </div>
@@ -1227,7 +1232,8 @@
 
   function getScale(name) {
     const el = document.querySelector(`input[name="${name}"]:checked`);
-    return el ? el.value + ' / 5' : '—';
+    if (!el) return '—';
+    return el.value === 'not-sure' ? 'Not sure' : el.value + ' / 5';
   }
 
   function submitForm() {
