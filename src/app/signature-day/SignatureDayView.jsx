@@ -248,7 +248,7 @@ export default function SignatureDayView() {
             The Signature Day is designed to end at your hotel. I work directly with your concierge team to coordinate the evening around what your property does well: a private terrace booking, a chef's table, or a dedicated dining arrangement.
           </p>
           <p>
-            The photos on this page are from restaurants and food experiences I have had on the island. They give you an idea of the quality of dining available at the partner properties, but the specific arrangement depends on your hotel and what they can offer on your dates.
+            The photos below are from restaurants and food experiences I have had on the island. The specific arrangement depends on your hotel and what they can offer on your dates, but this is the standard to expect.
           </p>
           <p>
             If you are staying at a property not on the list below, contact me. Most five-star hotels on the island can accommodate this with enough notice.
@@ -263,15 +263,18 @@ export default function SignatureDayView() {
           </div>
         </div>
         <div className="pwap-day__right reveal">
+          <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '0.75rem' }}>
+            <Image src="/images/food/mallorca-orchard-dining.jpg" alt="Private outdoor dining in Mallorca" fill quality={85} sizes="(max-width: 768px) 100vw, 560px" style={{ objectFit: 'cover', objectPosition: 'center 40%' }} />
+          </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
             {[
-              { src: '/images/client-alcanada.webp', alt: 'Client day at Alcanada' },
-              { src: '/images/home-plan-play-mandarin.webp', alt: 'Mandarin Oriental Mallorca' },
-              { src: '/images/client-son-gual-banner.webp', alt: 'Son Gual client day' },
-              { src: '/images/pwap-hero-client.webp', alt: 'Play With A Pro client' },
+              { src: '/images/food/mallorca-restaurant-interior.jpg', alt: 'Mallorca restaurant interior' },
+              { src: '/images/food/mallorca-fine-dining-service.jpg', alt: 'Fine dining tableside service Mallorca' },
+              { src: '/images/food/mallorca-red-mullet.jpg', alt: 'Red mullet dish Mallorca' },
+              { src: '/images/food/mallorca-paella.jpg', alt: 'Mallorca paella' },
             ].map((img, i) => (
               <div key={i} style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '1/1' }}>
-                <Image src={img.src} alt={img.alt} fill quality={80} sizes="180px" style={{ objectFit: 'cover' }} />
+                <Image src={img.src} alt={img.alt} fill quality={82} sizes="200px" style={{ objectFit: 'cover' }} />
               </div>
             ))}
           </div>
