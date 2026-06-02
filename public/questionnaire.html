@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pre-Round Questionnaire — Mr Mallorca Golf</title>
+<meta name="theme-color" content="#2D4A3E">
+<link rel="manifest" href="/questionnaire-manifest.json">
 <link rel="icon" href="/questionnaire-favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/questionnaire-favicon-512.png" sizes="512x512" type="image/png">
 <link rel="apple-touch-icon" href="/questionnaire-icon-192.png">
@@ -76,6 +78,24 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(255,255,255,0.4);
+  }
+  .header-share {
+    border: 1px solid rgba(255,255,255,0.22);
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+    font-family: var(--sans);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 9px 12px;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+  }
+  .header-share:hover {
+    border-color: rgba(255,255,255,0.45);
+    color: var(--white);
+    background: rgba(255,255,255,0.06);
   }
 
   /* ── HERO ── */
@@ -544,6 +564,9 @@
   /* ── RESPONSIVE ── */
   @media (max-width: 640px) {
     .header { padding: 0 20px; }
+    .header-logo { font-size: 0.98rem; white-space: nowrap; }
+    .header-tag { display: none; }
+    .header-share { padding: 8px 10px; }
     .hero { padding: 56px 20px 52px; }
     .main { padding: 0 20px 60px; }
     .progress-bar { padding: 0 20px; }
@@ -563,7 +586,10 @@
 <!-- HEADER -->
 <header class="header">
   <a href="https://www.mrmallorcagolf.com" class="header-logo">Mr Mallorca Golf</a>
-  <span class="header-tag">Pre-Round Questionnaire</span>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span class="header-tag">Pre-Round Questionnaire</span>
+    <button class="header-share" type="button" onclick="shareQuestionnaire()">Share</button>
+  </div>
 </header>
 
 <!-- HERO -->
@@ -1237,6 +1263,32 @@
     const el = document.querySelector(`input[name="${name}"]:checked`);
     if (!el) return '—';
     return el.value === 'not-sure' ? 'Not sure' : el.value + ' / 5';
+  }
+
+  async function shareQuestionnaire() {
+    const shareUrl = `${window.location.origin}/questionnaire.html`;
+    const shareData = {
+      title: 'Mr Mallorca Golf Questionnaire',
+      text: 'Fill this in before the round.',
+      url: shareUrl,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        return;
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+        alert('Questionnaire link copied.');
+        return;
+      }
+    } catch (err) {
+      console.warn('Share failed', err);
+    }
+
+    window.prompt('Copy this questionnaire link:', shareUrl);
   }
 
   function submitForm() {
