@@ -172,7 +172,7 @@ export default function SignatureDayView() {
         <div className="how__steps">
           {DAY_ARC.map((step, i) => (
             <div key={step.title} className={`how__step reveal${i > 0 ? ` reveal-delay-${i % 3}` : ''}`}>
-              <div className="how__step-number">{String(i + 1).padStart(2, '0')}</div>
+              <span className="how__num">{String(i + 1).padStart(2, '0')}</span>
               <p className="eyebrow" style={{ marginBottom: '0.25rem', marginTop: '0.5rem' }}>{step.time}</p>
               <h3 className="serif-display" style={{ fontSize: '1.2rem', fontWeight: 400, marginBottom: '0.75rem' }}>{step.title}</h3>
               <p style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>{step.body}</p>
@@ -216,24 +216,25 @@ export default function SignatureDayView() {
       </section>
 
       {/* COURSES */}
-      <section className="experience" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-        <div className="experience__left reveal">
+      <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
+        <div className="pwap-day__left reveal">
           <p className="eyebrow">The course</p>
-          <h2 className="serif-display">Chosen for the occasion.</h2>
+          <h2 className="serif-display pwap-section-title">Chosen for the occasion.</h2>
           <p>
             Son Gual and Alcanada are my primary venues for a serious full day. Son Gual is my favourite course in Mallorca: Thomas Himmel's 2007 design, the closing stretch from 15 through 18 is among the best in European golf. Alcanada is Robert Trent Jones Jr. at his most scenic, with the lighthouse visible for most of the round.
           </p>
           <p>
             The right course depends on you, your group, and what you want from the day. I will recommend honestly and explain why.
           </p>
+          <Link href="/golf-courses" className="pwap-course-note__link" style={{ marginTop: '1rem', display: 'inline-block' }}>See all 24 courses on the island</Link>
         </div>
-        <div className="experience__right reveal">
+        <div className="pwap-day__right reveal">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
             <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '3/4' }}>
-              <Image src="/images/son-gual.webp" alt="Son Gual golf course Mallorca" fill quality={82} sizes="200px" style={{ objectFit: 'cover' }} />
+              <Image src="/images/son-gual.jpg" alt="Son Gual golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '3/4' }}>
-              <Image src="/images/alcanada.webp" alt="Alcanada golf course Mallorca" fill quality={82} sizes="200px" style={{ objectFit: 'cover' }} />
+              <Image src="/images/alcanada.jpg" alt="Alcanada golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover' }} />
             </div>
           </div>
         </div>
@@ -282,20 +283,23 @@ export default function SignatureDayView() {
       </section>
 
       {/* OPTIONAL EXTRAS */}
-      <section className="what" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-        <div className="what__header reveal">
+      <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
+        <div className="pwap-day__left reveal">
           <p className="eyebrow">Optional and additional</p>
-          <h2 className="serif-display">Add what makes sense for your day.</h2>
+          <h2 className="serif-display pwap-section-title">Add what makes sense for your day.</h2>
+          <p>Not everything needs adding. These are available if you want them.</p>
         </div>
-        <div className="what__features">
-          {OPTIONAL_EXTRAS.map((item, i) => (
-            <div key={item.title} className={`what__feature reveal${i > 0 ? ` reveal-delay-${i % 3}` : ''}`}>
-              <div className="what__feature-text">
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            </div>
-          ))}
+        <div className="pwap-day__right reveal">
+          <div className="included">
+            <ul className="included-list">
+              {OPTIONAL_EXTRAS.map((item) => (
+                <li key={item.title} className="included-item">
+                  <span className="included-dot"></span>
+                  <p><strong>{item.title}</strong><br /><span style={{ fontWeight: 400 }}>{item.text}</span></p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
