@@ -50,10 +50,10 @@ export default function SubscribeClient() {
       {/* PAGE HEADER */}
       <section style={{ background: "var(--deep)", padding: "clamp(80px,10vw,120px) clamp(24px,6vw,80px) clamp(48px,6vw,72px)", textAlign: "center" }}>
         <div style={{ maxWidth: "640px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", margin: "0 0 0.75rem 0" }}>Newsletter</p>
+          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", margin: "0 0 0.75rem 0" }}>Planning notes</p>
           <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 auto 1.5rem", display: "block" }} />
-          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem,4.5vw,3.2rem)", fontWeight: 500, color: "#fff", lineHeight: 1.08, margin: "0 0 1.25rem 0" }}>Golf insights from Mallorca</h1>
-          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem,1.5vw,1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, margin: 0 }}>Every two weeks I write up what I find playing the island. What each course actually asks of you, when to go, which ones pair well together, and the kind of detail that changes how you plan a round.</p>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem,4.5vw,3.2rem)", fontWeight: 500, color: "#fff", lineHeight: 1.08, margin: "0 0 1.25rem 0" }}>Plan the golf before you book the tee times</h1>
+          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem,1.5vw,1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, margin: 0 }}>I send practical Mallorca golf notes: which courses suit which groups, what the green fee tells you, when to go, and what I would think about before locking in a trip.</p>
         </div>
       </section>
 
@@ -65,13 +65,13 @@ export default function SubscribeClient() {
           <div style={{ paddingTop: "4px" }}>
             <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>What you get</p>
             <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 0 1.5rem 0", display: "block" }} />
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.7rem,2.8vw,2.4rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.1rem 0" }}>One email. No noise.</h2>
-            <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>I am working my way through every course on the island. Each newsletter is a note from the round: what I noticed, what works, what I would do differently. The kind of detail that changes how you plan a golf trip.</p>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.7rem,2.8vw,2.4rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.1rem 0" }}>A useful first shortlist.</h2>
+            <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>Most Mallorca golf trips start with too many course names and not enough context. I write about the fit: who each course suits, what it costs, when it works, and what I would avoid.</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               {[
-                ["Course notes", "How each course plays in real conditions. Greens, strategy, conditions, best times of day."],
-                ["Timing and seasons", "When to go, what changes through the year, which months to avoid and why."],
-                ["Planning logic", "Which courses pair well together. How to build a week that makes sense with your golf and more."],
+                ["Course fit", "Which courses suit lower handicaps, mixed groups, scenery-first trips, and serious golf days."],
+                ["Timing and seasons", "When to go, what changes through the year, which tee times are worth protecting."],
+                ["Planning logic", "Which courses pair well together. How to build a week that makes sense with driving time and budget."],
                 ["Coaching observations", "Things I notice on the course that you can apply to your own game."],
                 ["No spam", "One email every two weeks. Unsubscribe whenever you like."],
               ].map(([title, detail]) => (
@@ -91,8 +91,8 @@ export default function SubscribeClient() {
             <div className="sub-formbox">
               <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>Subscribe</p>
               <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 0 1.5rem 0", display: "block" }} />
-              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem,2.4vw,2rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.1, margin: "0 0 0.85rem 0" }}>Stay close to the island</h2>
-              <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.9rem", color: "var(--charcoal)", lineHeight: 1.8, margin: "0 0 1.5rem 0" }}>Free. Every two weeks. I will tell you what I find.</p>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem,2.4vw,2rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.1, margin: "0 0 0.85rem 0" }}>Get the planning notes</h2>
+              <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.9rem", color: "var(--charcoal)", lineHeight: 1.8, margin: "0 0 1.5rem 0" }}>Free. Useful before you book. I will send course notes and trip planning logic as I update them.</p>
               <div style={{ width: "100%", marginBottom: "0.75rem" }}>
                 <iframe
                   src="https://subscribe-forms.beehiiv.com/e2f8f5dc-5fbd-4a3a-a5bb-26fc117cf9e4"

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
 import { SITE_ORIGIN, buildLocalePath } from '../lib/site'
+import PlanningGuideCta from '../components/PlanningGuideCta'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -221,6 +222,12 @@ export default function HomePageInner({ locale = 'en' }) {
               )
             })}
           </div>
+        </section>
+      ) : null}
+
+      {locale === 'en' ? (
+        <section className="planning-guide-home reveal">
+          <PlanningGuideCta />
         </section>
       ) : null}
 

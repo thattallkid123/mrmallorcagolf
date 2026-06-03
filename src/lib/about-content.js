@@ -63,6 +63,14 @@ export const ABOUT_CONTENT = {
       secondaryCta: 'Get in touch',
       secondaryHref: '/contact',
     },
+    press: {
+      eyebrow: 'Featured in',
+      publication: 'Majorca Daily Bulletin',
+      title: 'The New Pro in Town',
+      excerpt: 'How Andy Griffiths brought world-class Chinese academy experience to the Mediterranean.',
+      url: 'https://www.majorcadailybulletin.com/holiday/life-style/2026/05/22/142571/the-new-pro-town-andy-griffiths-brings-world-class-chinese-academy-experience-the-mediterranean.html',
+      linkText: 'Read the full feature',
+    },
   },
   de: {
     locale: 'de',

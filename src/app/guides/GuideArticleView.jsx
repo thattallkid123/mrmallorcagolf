@@ -1,6 +1,8 @@
+import { Fragment } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../components/PageLayout'
+import PlanningGuideCta from '../../components/PlanningGuideCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 import InlineRichText from './InlineRichText'
 
@@ -339,7 +341,18 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
         <PostLayout meta={meta} lang={locale}>
           {blocks.map((block, index) => {
             const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
-            return renderBlock(block, index, locale, currentImageOrdinal)
+            const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal)
+
+            if (locale === 'en' && index === 4) {
+              return (
+                <Fragment key={`article-block-with-planning-${index}`}>
+                  {renderedBlock}
+                  <PlanningGuideCta compact />
+                </Fragment>
+              )
+            }
+
+            return renderedBlock
           })}
         </PostLayout>
         {children}

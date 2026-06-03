@@ -2,7 +2,11 @@
 
 import { useState } from 'react'
 
-export default function BeehiivEmbed() {
+export default function BeehiivEmbed({
+  placeholder = 'Enter your email',
+  buttonLabel = 'Subscribe',
+  successMessage = "You're on the list.",
+}) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState('idle') // idle | submitting | success | error
 
@@ -39,7 +43,7 @@ export default function BeehiivEmbed() {
         fontWeight: 500,
         margin: 0,
       }}>
-        You&rsquo;re on the list.
+        {successMessage}
       </p>
     )
   }
@@ -61,7 +65,7 @@ export default function BeehiivEmbed() {
         type="email"
         value={email}
         onChange={e => setEmail(e.target.value)}
-        placeholder="Enter your email"
+        placeholder={placeholder}
         required
         style={{
           flex: 1,
@@ -95,7 +99,7 @@ export default function BeehiivEmbed() {
           transition: 'background 0.2s',
         }}
       >
-        {status === 'submitting' ? '…' : 'Subscribe'}
+        {status === 'submitting' ? '...' : buttonLabel}
       </button>
     </form>
   )

@@ -284,6 +284,42 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
           <WinnersProofStrip images={WINNER_PROOF_IMAGES} />
         </section>
 
+        {content.press && (
+          <section className="press-mention" style={{ backgroundColor: 'rgba(184, 151, 60, 0.04)', padding: '3rem 2rem', marginTop: '3rem' }}>
+            <div style={{ maxWidth: 1200, margin: '0 auto' }} className="reveal">
+              <p className="eyebrow eyebrow--gold">{content.press.eyebrow}</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'center' }}>
+                <div>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem' }}>
+                    {content.press.publication}
+                  </p>
+                  <h3 style={{ fontSize: '1.5rem', color: '#fff', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+                    {content.press.title}
+                  </h3>
+                  <p style={{ color: 'rgba(255,255,255,0.76)', fontSize: '0.95rem', marginBottom: '1.5rem' }}>
+                    {content.press.excerpt}
+                  </p>
+                  <a
+                    href={content.press.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: 'var(--gold)',
+                      textDecoration: 'none',
+                      fontSize: '0.95rem',
+                      fontWeight: 500,
+                      borderBottom: '1px solid var(--gold)',
+                      paddingBottom: '0.25rem',
+                    }}
+                  >
+                    {content.press.linkText} →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         <section className="cta-final">
           <div className="cta-final__left reveal">
             <p className="eyebrow eyebrow--gold">{content.finalCta.eyebrow}</p>
