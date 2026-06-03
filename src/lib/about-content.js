@@ -142,6 +142,14 @@ export const ABOUT_CONTENT = {
       secondaryCta: 'Kontakt',
       secondaryHref: '/de/contact',
     },
+    press: {
+      eyebrow: 'Vorgestellt in',
+      publication: 'Majorca Daily Bulletin',
+      title: 'The New Pro in Town',
+      excerpt: 'Wie Andy Griffiths die erstklassige Erfahrung einer chinesischen Akademie ans Mittelmeer gebracht hat.',
+      url: 'https://www.majorcadailybulletin.com/holiday/life-style/2026/05/22/142571/the-new-pro-town-andy-griffiths-brings-world-class-chinese-academy-experience-the-mediterranean.html',
+      linkText: 'Den vollständigen Artikel lesen',
+    },
   },
   es: {
     locale: 'es',
@@ -217,6 +225,14 @@ export const ABOUT_CONTENT = {
       secondaryCta: 'Ponerse en contacto',
       secondaryHref: '/es/contact',
     },
+    press: {
+      eyebrow: 'Aparecido en',
+      publication: 'Majorca Daily Bulletin',
+      title: 'The New Pro in Town',
+      excerpt: 'Cómo Andy Griffiths trajo la experiencia de una academia china de primer nivel al Mediterráneo.',
+      url: 'https://www.majorcadailybulletin.com/holiday/life-style/2026/05/22/142571/the-new-pro-town-andy-griffiths-brings-world-class-chinese-academy-experience-the-mediterranean.html',
+      linkText: 'Leer el reportaje completo',
+    },
   },
   fr: {
     locale: 'fr',
@@ -288,6 +304,14 @@ export const ABOUT_CONTENT = {
       secondaryCta: 'Nous contacter',
       secondaryHref: '/fr/contact',
     },
+    press: {
+      eyebrow: 'À la une de',
+      publication: 'Majorca Daily Bulletin',
+      title: 'The New Pro in Town',
+      excerpt: 'Comment Andy Griffiths a apporté l\'expérience d\'une académie chinoise de premier plan en Méditerranée.',
+      url: 'https://www.majorcadailybulletin.com/holiday/life-style/2026/05/22/142571/the-new-pro-town-andy-griffiths-brings-world-class-chinese-academy-experience-the-mediterranean.html',
+      linkText: 'Lire le reportage complet',
+    },
   },
   nl: {
     locale: 'nl',
@@ -303,6 +327,7 @@ export const ABOUT_CONTENT = {
     credentials: [{ title: 'UKPGA Advanced Professional', detail: 'Meer dan 15.000 uur coaching gegeven' }, { title: 'Applied Golf Management Studies', detail: 'University of Birmingham' }, { title: 'TPI Niveau 3 gecertificeerd', detail: 'Titleist Performance Institute' }, { title: 'Trackman Master gecertificeerd', detail: 'Eerste in China' }, { title: 'US Kids Golf', detail: 'Top 50 Coach wereldwijd' }, { title: '11 jaar in Shanghai', detail: 'Vloeiend Mandarijn' }, { title: 'Chinees Nationaal Team', detail: 'Elite junior- en wedstrijdcoaching' }, { title: 'Honderden miljoenen weergaven', detail: 'Golfcoaching-video’s op Douyin' }, { title: 'Gepubliceerd auteur', detail: 'Putting It Out There - A Life in Full Swing, 2016 (Amazon)', isBookLink: true }, { title: 'Gevestigd op Mallorca', detail: 'Sinds maart 2025' }],
     sidebarCta: { title: 'Speel de mooiste banen van Mallorca met mij aan uw zijde.', body: 'Privédagen op Son Gual, Alcanada en meer. Alles geregeld. Coaching op de baan gedurende de hele dag.', button: 'Bekijk de ervaringen →', href: '/nl/play-with-a-pro' },
     finalCta: { eyebrow: 'Klaar om te spelen?', title: 'Een PGA Advanced Professional. Een uitzonderlijk golfeiland. Uw ronde.', body: 'Vertel me uw data, uw handicap en wat u zoekt. Ik bouw de dag rondom u.', primaryCta: 'Bekijk de ervaringen →', primaryHref: '/nl/play-with-a-pro', secondaryCta: 'Neem contact op', secondaryHref: '/nl/contact' },
+    press: { eyebrow: 'Uitgelicht in', publication: 'Majorca Daily Bulletin', title: 'The New Pro in Town', excerpt: 'Hoe Andy Griffiths wereldklasse ervaring van een Chinese academie naar de Middellandse Zee bracht.', url: 'https://www.majorcadailybulletin.com/holiday/life-style/2026/05/22/142571/the-new-pro-town-andy-griffiths-brings-world-class-chinese-academy-experience-the-mediterranean.html', linkText: 'Lees het volledige artikel' },
   },
   sv: {
     locale: 'sv',
@@ -318,6 +343,7 @@ export const ABOUT_CONTENT = {
     credentials: [{ title: 'UKPGA Advanced Professional', detail: 'Över 15 000 timmars coaching' }, { title: 'Applied Golf Management Studies', detail: 'University of Birmingham' }, { title: 'TPI Level 3 Certified', detail: 'Titleist Performance Institute' }, { title: 'Trackman Master Certified', detail: 'Först i Kina' }, { title: 'US Kids Golf', detail: 'Top 50 Coach Worldwide' }, { title: '11 år i Shanghai', detail: 'Flytande mandarin' }, { title: 'Chinese National Team', detail: 'Elitcoachning för juniorer och tävling' }, { title: 'Hundratals miljoner visningar', detail: 'Golfcoaching-videor på Douyin' }, { title: 'Published Author', detail: 'Putting It Out There - A Life in Full Swing, 2016 (Amazon)', isBookLink: true }, { title: 'Baserad i Mallorca', detail: 'Sedan mars 2025' }],
     sidebarCta: { title: 'Spela Mallorcas finaste banor med mig vid din sida.', body: 'Privata dagar på Son Gual, Alcanada och fler därtill. Allt ordnat. Coaching ute på banan hela dagen.', button: 'Se upplevelserna →', href: '/sv/play-with-a-pro' },
     finalCta: { eyebrow: 'Redo att spela?', title: 'En PGA Advanced Professional. En exceptionell golfö. Din runda.', body: 'Berätta dina datum, ditt handicap och vad du letar efter. Jag bygger dagen runt dig.', primaryCta: 'Se upplevelserna →', primaryHref: '/sv/play-with-a-pro', secondaryCta: 'Kontakta mig', secondaryHref: '/sv/contact' },
+    press: { eyebrow: 'Presenterad i', publication: 'Majorca Daily Bulletin', title: 'The New Pro in Town', excerpt: 'Hur Andy Griffiths tog med sig kinesisk akademiexpertis i världsklass till Medelhavet.', url: 'https://www.majorcadailybulletin.com/holiday/life-style/2026/05/22/142571/the-new-pro-town-andy-griffiths-brings-world-class-chinese-academy-experience-the-mediterranean.html', linkText: 'Läs hela reportaget' },
   },
   zh: {
     locale: 'zh',
@@ -333,6 +359,7 @@ export const ABOUT_CONTENT = {
     credentials: [{ title: '英国PGA高级职业教练', detail: '累计执教超过 15,000 小时' }, { title: '应用高尔夫管理研究', detail: '伯明翰大学' }, { title: 'TPI 3级认证', detail: 'Titleist Performance Institute' }, { title: 'Trackman大师认证', detail: '中国首位' }, { title: 'US Kids Golf 认证', detail: '全球前 50 教练' }, { title: '上海 11 年', detail: '普通话流利' }, { title: '中国国家队', detail: '精英青少年与竞赛教学' }, { title: '数亿次观看', detail: '抖音高尔夫教学视频内容' }, { title: '出版作者', detail: 'Putting It Out There - A Life in Full Swing, 2016 (Amazon)', isBookLink: true }, { title: '现居马略卡', detail: '自 2025 年 3 月起' }],
     sidebarCta: { title: '与我一起打马略卡最好的球场。', body: '在 Son Gual、Alcanada 以及更多球场安排私人高尔夫日。全程安排妥当，并提供球场实战教学。', button: '查看体验 →', href: '/zh/play-with-a-pro' },
     finalCta: { eyebrow: '准备好下场了吗？', title: 'PGA高级职业教练。一座非凡的高尔夫岛屿。属于你的一轮。', body: '告诉我你的日期、差点和你想要的体验。我会围绕你来安排这一天。', primaryCta: '查看体验 →', primaryHref: '/zh/play-with-a-pro', secondaryCta: '联系我', secondaryHref: '/zh/contact' },
+    press: { eyebrow: '媒体报道', publication: 'Majorca Daily Bulletin', title: 'The New Pro in Town', excerpt: 'Andy Griffiths 如何将中国顶级高尔夫学院的教学经验带到地中海。', url: 'https://www.majorcadailybulletin.com/holiday/life-style/2026/05/22/142571/the-new-pro-town-andy-griffiths-brings-world-class-chinese-academy-experience-the-mediterranean.html', linkText: '阅读完整报道' },
   },
 }
 
