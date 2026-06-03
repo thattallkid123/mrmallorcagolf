@@ -285,36 +285,48 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
         </section>
 
         {content.press && (
-          <section className="press-mention" style={{ backgroundColor: 'rgba(184, 151, 60, 0.04)', padding: '3rem 2rem', marginTop: '3rem' }}>
-            <div style={{ maxWidth: 1200, margin: '0 auto' }} className="reveal">
-              <p className="eyebrow eyebrow--gold">{content.press.eyebrow}</p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'center' }}>
+          <section className="press-mention" style={{ padding: '3rem 2rem', marginTop: '3rem' }}>
+            <div style={{ maxWidth: 1400, margin: '0 auto' }} className="reveal">
+              <div style={{ marginBottom: '1.5rem' }}>
+                <div style={{ overflow: 'hidden', borderRadius: '0.5rem', boxShadow: '0 8px 24px rgba(0,0,0,0.3)' }}>
+                  <Image
+                    src="/images/press-spread.webp"
+                    alt={content.press.title}
+                    width={1600}
+                    height={989}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      display: 'block',
+                    }}
+                  />
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
                 <div>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem' }}>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--taupe)', textTransform: 'uppercase', letterSpacing: '0.05em', margin: 0 }}>
                     {content.press.publication}
                   </p>
-                  <h3 style={{ fontSize: '1.5rem', color: '#fff', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+                  <p style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--dark)', margin: '0.25rem 0 0 0' }}>
                     {content.press.title}
-                  </h3>
-                  <p style={{ color: 'rgba(255,255,255,0.76)', fontSize: '0.95rem', marginBottom: '1.5rem' }}>
-                    {content.press.excerpt}
                   </p>
-                  <a
-                    href={content.press.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      color: 'var(--gold)',
-                      textDecoration: 'none',
-                      fontSize: '0.95rem',
-                      fontWeight: 500,
-                      borderBottom: '1px solid var(--gold)',
-                      paddingBottom: '0.25rem',
-                    }}
-                  >
-                    {content.press.linkText} →
-                  </a>
                 </div>
+                <a
+                  href={content.press.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'var(--gold)',
+                    textDecoration: 'none',
+                    fontSize: '0.95rem',
+                    fontWeight: 500,
+                    borderBottom: '1px solid var(--gold)',
+                    paddingBottom: '0.25rem',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {content.press.linkText} →
+                </a>
               </div>
             </div>
           </section>
