@@ -132,22 +132,22 @@ export default function ADayPage() {
       {/* HERO */}
       <section className="hero a-day-hero">
         <div className="hero__content">
-          <p className="hero__eyebrow">Son Gual · Palma · A Full Day</p>
+          <p className="hero__eyebrow">A Full Day on Course · Mallorca</p>
           <h1 className="serif-display hero__title a-day-hero__title">
-            A Day at Son Gual
+            A Day Playing Golf
             <br />
-            <em>with Andy.</em>
+            <em>with a Pro.</em>
           </h1>
           <p className="a-day-hero__lead">
-            What actually happens from the drive up to the last green — and what most people take
-            home that they didn't expect.
+            What a full day on course actually looks like. How it changes what you see in your game.
+            What people take home that they didn't expect.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.5rem' }}>
             <Link href="/play-with-a-pro" className="btn btn--gold">
               See pricing
             </Link>
-            <Link href="/guides/son-gual-review" className="btn btn--outline-white">
-              Read the Son Gual review
+            <Link href="/golf-courses" className="btn btn--outline-white">
+              Browse the courses
             </Link>
           </div>
         </div>
@@ -161,7 +161,7 @@ export default function ADayPage() {
             potential.&rdquo;
           </p>
           <p className="a-day-quote__credit">
-            Jo — after a day at Son Gual
+            Jo
           </p>
         </div>
       </section>
@@ -241,7 +241,7 @@ export default function ADayPage() {
               The decisions here are real.
             </h2>
             <p className="a-day-section__copy">
-              Son Gual sits on an exposed plateau eleven kilometres south of Palma. Thomas Himmel&rsquo;s design builds the wind into every hole. The decisions you make change with the conditions, and getting them right or wrong matters. That&rsquo;s why the day works.
+              The course is chosen to match your game. A proper test, but not unfair. Wind, conditions, narrow fairways, water—the decisions you make change with what's in front of you, and getting them right or wrong matters. That&rsquo;s why playing with someone matters.
             </p>
             <p className="a-day-section__copy">
               On a range, a tip about club selection or alignment is abstract. You hear it, you file it, you move to the next shot. On course, when the wind is pushing, the fairway is narrow, and the score is real, the same information becomes concrete. You feel it. That difference is what makes things stick.
@@ -250,7 +250,7 @@ export default function ADayPage() {
               The coaching arrives at the right moment. On the tee into the wind where the decision is contested. On the approach where club selection changes the hole. On the putt where reading the break from the right side makes one more shot possible. Not a running commentary. Just the observation that changes the hole.
             </p>
             <p className="a-day-section__copy">
-              Finlay said it best: &ldquo;The insight into what calculations go into each shot has helped me improve my decision making immensely.&rdquo; That&rsquo;s what you take from five hours on a course where the decisions matter.
+              Finlay said it best: &ldquo;The insight into what calculations go into each shot has helped me improve my decision making immensely.&rdquo; That&rsquo;s what you take from a full day on a course where the decisions matter.
             </p>
           </div>
         </section>
@@ -277,10 +277,10 @@ export default function ADayPage() {
               Where the day gets talked through properly.
             </h2>
             <p className="a-day-section__copy">
-              The restaurant sits above the course with a view across the layout you&rsquo;ve just played. Lunch is unhurried. This is Mallorca, not a corporate golf day in Surrey. We talk through the round. What clicked, what didn&rsquo;t, what to take home.
+              Lunch is unhurried. We talk through the round. What clicked, what didn&rsquo;t, what to take home. Most people realise something shifts in how they see the game. Not a list of fixes to work on. Something closer to clearer decisions, less noise in your head about the shot. A better sense of what you&rsquo;re actually capable of.
             </p>
             <p className="a-day-section__copy">
-              Most people realise something shifts in how they see the game. Not a list of fixes to work on. Something closer to clearer decisions, less noise in your head about the shot. A better sense of what you&rsquo;re actually capable of. Jo put it simply: &ldquo;After just 18 holes together, I&rsquo;ve discovered a new ceiling to my potential.&rdquo;
+              Jo put it simply: &ldquo;After just 18 holes together, I&rsquo;ve discovered a new ceiling to my potential.&rdquo; That&rsquo;s the shift that happens when the decisions are real and someone who sees the game clearly is watching.
             </p>
             <p className="a-day-section__copy">
               The day doesn&rsquo;t end with a handshake at the 18th. It ends when you&rsquo;re done talking. That&rsquo;s the pace we work at.
@@ -307,16 +307,16 @@ export default function ADayPage() {
 
       </article>
 
-      {/* COURSE FACTS */}
+      {/* WHAT'S INCLUDED */}
       <div className="a-day-facts">
         <div className="a-day-facts__grid">
           {[
-            { label: 'Course', value: 'Son Gual Golf Club' },
-            { label: 'Location', value: 'Palma, 11 km south' },
-            { label: 'Design', value: 'Thomas Himmel, 2007' },
-            { label: 'Par', value: '72 · Championship' },
-            { label: 'Green fee', value: 'Typically €109–165 per person' },
-            { label: 'Day rate', value: `${soloOffer.priceDisplay} solo · ${groupOffer.priceDisplay} group (green fee additional)` },
+            { label: 'Format', value: '18 holes, full day' },
+            { label: 'Course selection', value: 'Matched to your game and handicap' },
+            { label: 'What's included', value: 'Course, tee time, coaching, strategy' },
+            { label: 'Lunch', value: 'Included and unhurried' },
+            { label: 'Duration', value: 'Typically 5–6 hours' },
+            { label: 'Day rate', value: `${soloOffer.priceDisplay} solo · ${groupOffer.priceDisplay} group (course fee additional)` },
           ].map(({ label, value }) => (
             <div key={label}>
               <p className="a-day-facts__label">
@@ -330,7 +330,7 @@ export default function ADayPage() {
         </div>
         <div style={{ marginTop: '2rem', textAlign: 'center' }}>
           <Link href="/golf-courses" className="btn btn--dark">
-            Browse all Mallorca courses
+            See which courses work for you
           </Link>
         </div>
       </div>
