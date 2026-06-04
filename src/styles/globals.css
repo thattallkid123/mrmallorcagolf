@@ -2036,15 +2036,15 @@ body {
 /* Signature Day — warm champagne gold tier */
 .tier--signature { background: linear-gradient(160deg, #c9a85c 0%, #b8975a 45%, #a6874e 100%); border-color: rgba(166,135,78,0.3); }
 .tier--signature:hover { background: linear-gradient(160deg, #d4b46a 0%, #c9a85c 45%, #b8975a 100%); border-color: rgba(166,135,78,0.45); box-shadow: 0 26px 60px rgba(166,135,78,0.28); transform: translateY(-6px); }
-.tier--signature .tier__name-small { color: rgba(26,22,14,0.65); }
-.tier--signature .tier__name { color: var(--deep); }
-.tier--signature .tier__price { color: var(--deep); }
-.tier--signature .tier__note { color: rgba(26,22,14,0.72); }
-.tier--signature .tier__rule { background: rgba(26,22,14,0.18); }
-.tier--signature .tier__features li { color: rgba(26,22,14,0.85); }
-.tier--signature .tier__features li::before { background: var(--deep); }
-.tier--signature .tier__btn { background: rgba(26,22,14,0.12); color: var(--deep); border: 1px solid rgba(26,22,14,0.22); }
-.tier--signature .tier__btn:hover { background: rgba(26,22,14,0.2); transform: translateY(-1px); }
+.tier--signature .tier__name-small { color: rgba(255,255,255,0.8); }
+.tier--signature .tier__name { color: rgba(255,255,255,0.95); }
+.tier--signature .tier__price { color: rgba(255,255,255,0.95); }
+.tier--signature .tier__note { color: rgba(255,255,255,0.85); }
+.tier--signature .tier__rule { background: rgba(255,255,255,0.2); }
+.tier--signature .tier__features li { color: rgba(255,255,255,0.9); }
+.tier--signature .tier__features li::before { background: rgba(255,255,255,0.7); }
+.tier--signature .tier__btn { background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.95); border: 1px solid rgba(255,255,255,0.3); }
+.tier--signature .tier__btn:hover { background: rgba(255,255,255,0.25); transform: translateY(-1px); }
 .packages__shared-cta { display: flex; justify-content: center; margin: 34px auto 0; }
 .packages__shared-cta .tier__btn { min-width: min(280px, 100%); background: var(--pine); border-color: var(--pine); color: var(--white); }
 .packages__shared-cta .tier__btn:hover { background: var(--deep); border-color: var(--deep); color: var(--white); }

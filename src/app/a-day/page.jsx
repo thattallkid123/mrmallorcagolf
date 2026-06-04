@@ -134,9 +134,9 @@ export default function ADayPage() {
         <div className="hero__content">
           <p className="hero__eyebrow">A Full Day on Course · Mallorca</p>
           <h1 className="serif-display hero__title a-day-hero__title">
-            A Day Playing Golf
+            What &ldquo;Play with a Pro&rdquo;
             <br />
-            <em>with a Pro.</em>
+            <em>actually looks like.</em>
           </h1>
           <p className="a-day-hero__lead">
             What a full day on course actually looks like. How it changes what you see in your game.
