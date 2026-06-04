@@ -1,32 +1,10 @@
+'use client'
+import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useRef } from 'react'
 import PageLayout from '../../components/PageLayout'
 import { getOfferById, OFFER_IDS } from '../../lib/offers-content.js'
-import { DEFAULT_SOCIAL_IMAGE } from '../../lib/page-metadata.js'
 import { SITE_ORIGIN } from '../../lib/site.js'
-
-export const metadata = {
-  title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
-  description:
-    "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks. From the drive up to the last green.",
-  alternates: {
-    canonical: `${SITE_ORIGIN}/a-day`,
-  },
-  openGraph: {
-    type: 'article',
-    url: `${SITE_ORIGIN}/a-day`,
-    title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
-    description:
-      "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks. From the drive up to the last green.",
-    images: [DEFAULT_SOCIAL_IMAGE],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'A Day at Son Gual with Andy | Mr Mallorca Golf',
-    description:
-      "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks.",
-    images: [DEFAULT_SOCIAL_IMAGE.url],
-  },
-}
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
@@ -80,6 +58,71 @@ function buildBreadcrumbSchema() {
 export default function ADayPage() {
   const soloOffer = getOfferById(OFFER_IDS.solo)
   const groupOffer = getOfferById(OFFER_IDS.group)
+  const stripViewportRef = useRef(null)
+  const stripTrackRef = useRef(null)
+
+  const dayPhotos = [
+    { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', position: 'center 38%' },
+    { src: '/images/son-antem-west-review-blog/son-antem-west-4.webp', alt: 'Andy with two guests on a play-with-a-pro day at Son Antem West', position: 'center 42%' },
+    { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
+    { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', position: 'center 36%' },
+    { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
+    { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
+  ]
+  const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
+
+  useEffect(() => {
+    const viewport = stripViewportRef.current
+    const track = stripTrackRef.current
+    if (!viewport || !track) return
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReducedMotion) return
+
+    let pausedUntil = 0
+    let raf
+    let halfWidth = 0
+
+    const setHalfWidth = () => {
+      halfWidth = track.scrollWidth / 2
+    }
+
+    const pauseBriefly = () => {
+      pausedUntil = performance.now() + 1800
+    }
+
+    const normalizeLoopPosition = () => {
+      if (!halfWidth) return
+      if (viewport.scrollLeft >= halfWidth) viewport.scrollLeft -= halfWidth
+      if (viewport.scrollLeft < 0) viewport.scrollLeft += halfWidth
+    }
+
+    const tick = () => {
+      if (performance.now() > pausedUntil) {
+        viewport.scrollLeft = Math.round(viewport.scrollLeft + 1)
+        normalizeLoopPosition()
+      }
+      raf = requestAnimationFrame(tick)
+    }
+
+    setHalfWidth()
+    window.addEventListener('resize', setHalfWidth)
+
+    viewport.addEventListener('pointerdown', pauseBriefly)
+    viewport.addEventListener('wheel', pauseBriefly, { passive: true })
+    viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
+    viewport.addEventListener('scroll', normalizeLoopPosition, { passive: true })
+    raf = requestAnimationFrame(tick)
+
+    return () => {
+      cancelAnimationFrame(raf)
+      window.removeEventListener('resize', setHalfWidth)
+      viewport.removeEventListener('pointerdown', pauseBriefly)
+      viewport.removeEventListener('wheel', pauseBriefly)
+      viewport.removeEventListener('touchstart', pauseBriefly)
+      viewport.removeEventListener('scroll', normalizeLoopPosition)
+    }
+  }, [])
 
   return (
     <PageLayout>
@@ -125,70 +168,88 @@ export default function ADayPage() {
       {/* NARRATIVE */}
       <article className="a-day-article">
 
-        {/* THE APPROACH */}
-        <section className="a-day-section a-day-section--cream">
+        {/* WHY PLAY WITH A PRO */}
+        <section className="a-day-section a-day-section--white">
           <div className="a-day-section__inner">
-            <p className="eyebrow">The approach</p>
+            <p className="eyebrow">Why play with a pro</p>
             <div className="a-day-rule" />
             <h2 className="serif-display a-day-section__title">
-              The drive up tells you something about what&rsquo;s coming.
+              Seeing your decisions. Seeing your mistakes. Asking the right questions.
             </h2>
             <p className="a-day-section__copy">
-              Son Gual sits eleven kilometres south of Palma. The access road climbs through low
-              scrubland and then opens out, and before you&rsquo;ve stepped out of the car you can
-              see the layout of the course from the high point of the car park. It&rsquo;s one of
-              those rare moments on a golf course where the scale of the thing becomes clear all at
-              once — you realise this is going to take the full day, and that&rsquo;s exactly what
-              it deserves.
+              Playing alone, you can miss what&rsquo;s actually happening. A shot that felt solid but came off the club slightly different. A decision that worked out but was based on incomplete information. A habit you&rsquo;ve built over weeks that you don&rsquo;t see because you&rsquo;re inside it.
             </p>
             <p className="a-day-section__copy">
-              We meet at the clubhouse. There&rsquo;s no rush. Before we go anywhere near the first
-              tee, we sit down and talk — your game, what you&rsquo;ve been working on, what&rsquo;s
-              been frustrating you, what a good day looks like from where you&rsquo;re standing.
-              This isn&rsquo;t a questionnaire you fill in. It&rsquo;s a conversation, and it shapes
-              everything that happens over the next five hours.
+              When I&rsquo;m there, I see those things. Not to criticise. To show you what&rsquo;s actually possible if the decision changes. That&rsquo;s the product. Clarity about what you&rsquo;re doing and why it matters.
             </p>
             <p className="a-day-section__copy">
-              Most people come in expecting to be assessed. What they find instead is that they&rsquo;re
-              being listened to. The difference is significant.
+              A lot of coaching is about swing positions and mechanics. This day is different. It&rsquo;s about the low-hanging fruit. What&rsquo;s the one thing in your shot selection or course management that, if it changes, makes the biggest difference. Practice types that actually work for how you learn. Questions about your own game that a practice range can&rsquo;t answer. Not a full overhaul. Just the clarity to know what to work on and how.
             </p>
           </div>
         </section>
 
-        {/* IMAGE BREAK */}
-        <div className="a-day-image-break">
-          <div className="a-day-image-break__panel a-day-image-break__panel--walk" />
-          <div className="a-day-image-break__panel a-day-image-break__panel--chip" />
-        </div>
-
-        {/* THE ROUND */}
-        <section className="a-day-section a-day-section--white">
+        {/* QUESTIONS BEFORE YOU COME */}
+        <section className="a-day-section a-day-section--cream">
           <div className="a-day-section__inner">
-            <p className="eyebrow">The round</p>
+            <p className="eyebrow">Before the day</p>
             <div className="a-day-rule" />
             <h2 className="serif-display a-day-section__title">
-              The coaching doesn&rsquo;t feel like coaching.
+              What if I play badly. I haven&rsquo;t played for a long time.
             </h2>
             <p className="a-day-section__copy">
-              Son Gual has its own wind. Thomas Himmel&rsquo;s 2007 design is built into an exposed
-              plateau, and the prevailing breeze changes the calculus on almost every hole. The
-              decisions you have to make here are real ones — getting them right or wrong matters.
+              I hear this more than anything else. The concern is real. You book a day, you show up, and your swing feels unfamiliar. Your short game is rusty. You&rsquo;re reading the fairway wrong. None of that is the point.
             </p>
             <p className="a-day-section__copy">
-              The coaching that happens during a round here isn&rsquo;t a running commentary. It&rsquo;s
-              the right observation at the right moment — on the tee into the wind, the approach where
-              club selection is genuinely contested, the putt where reading the slope from the right
-              side makes a one-putt possible. The observations arrive when they can still change the
-              hole.
+              A day like this isn&rsquo;t measured against your handicap or your best round. It&rsquo;s measured against what changes in how you see the game. Adam played since he was five, figured he had the fundamentals down. One day on course shifted his whole approach to shot selection. Jo hadn&rsquo;t played in years. The day opened something up for him that a week at a practice range could not.
             </p>
             <p className="a-day-section__copy">
-              What most guests notice is that the insight lands differently on a course. On a range,
-              a tip is abstract. On the course, when the shot is real and the score matters, the same
-              information becomes concrete. You feel the difference immediately.
+              The score matters less than the questions it provokes. What was the right club there. How would I have played that differently. What do I actually need to work on when I get home. Those are the things that stay.
             </p>
             <p className="a-day-section__copy">
-              The closing stretch from the 15th through the 18th is among the finest in European golf.
-              By the time you reach it, you have the course in your body.
+              Before we go anywhere near the first tee, we sit down and talk. Your game, what you&rsquo;ve been working on, what&rsquo;s been frustrating you, what a good day looks like from where you&rsquo;re standing. This conversation shapes everything that happens next. It&rsquo;s not a questionnaire. It&rsquo;s how I understand what you actually need.
+            </p>
+          </div>
+        </section>
+
+        {/* GOLFER CAROUSEL */}
+        <div className="pwap-day-strip" aria-label="Play With A Pro round photos" ref={stripViewportRef}>
+          <div className="pwap-day-strip__track" ref={stripTrackRef}>
+            {dayPhotosLoop.map((photo, index) => (
+              <figure
+                key={`${photo.src}-${index}`}
+                className={`pwap-day-strip__card${photo.variant === 'portrait' ? ' pwap-day-strip__card--portrait' : ''}`}
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 920px) 78vw, 360px"
+                  style={{ objectFit: 'cover', objectPosition: photo.position || 'center center' }}
+                />
+              </figure>
+            ))}
+          </div>
+        </div>
+
+        {/* THE COURSE AND DECISIONS */}
+        <section className="a-day-section a-day-section--white">
+          <div className="a-day-section__inner">
+            <p className="eyebrow">During the round</p>
+            <div className="a-day-rule" />
+            <h2 className="serif-display a-day-section__title">
+              The decisions here are real.
+            </h2>
+            <p className="a-day-section__copy">
+              Son Gual sits on an exposed plateau eleven kilometres south of Palma. Thomas Himmel&rsquo;s design builds the wind into every hole. The decisions you make change with the conditions, and getting them right or wrong matters. That&rsquo;s why the day works.
+            </p>
+            <p className="a-day-section__copy">
+              On a range, a tip about club selection or alignment is abstract. You hear it, you file it, you move to the next shot. On course, when the wind is pushing, the fairway is narrow, and the score is real, the same information becomes concrete. You feel it. That difference is what makes things stick.
+            </p>
+            <p className="a-day-section__copy">
+              The coaching arrives at the right moment. On the tee into the wind where the decision is contested. On the approach where club selection changes the hole. On the putt where reading the break from the right side makes one more shot possible. Not a running commentary. Just the observation that changes the hole.
+            </p>
+            <p className="a-day-section__copy">
+              Finlay said it best: &ldquo;The insight into what calculations go into each shot has helped me improve my decision making immensely.&rdquo; That&rsquo;s what you take from five hours on a course where the decisions matter.
             </p>
           </div>
         </section>
@@ -206,54 +267,39 @@ export default function ADayPage() {
           </div>
         </div>
 
-        {/* LUNCH */}
+        {/* LUNCH AND REFLECTION */}
         <section className="a-day-section a-day-section--cream">
           <div className="a-day-section__inner">
-            <p className="eyebrow">The lunch</p>
+            <p className="eyebrow">At lunch</p>
             <div className="a-day-rule" />
             <h2 className="serif-display a-day-section__title">
-              The best part of the day, according to almost everyone.
+              Where the day gets talked through properly.
             </h2>
             <p className="a-day-section__copy">
-              Son Gual&rsquo;s restaurant sits above the course with a view across the layout
-              you&rsquo;ve just played. Lunch is unhurried — this is Mallorca, not a corporate golf
-              day in Surrey — and it&rsquo;s where the round gets talked through properly. What
-              clicked, what didn&rsquo;t, what to take home.
+              The restaurant sits above the course with a view across the layout you&rsquo;ve just played. Lunch is unhurried. This is Mallorca, not a corporate golf day in Surrey. We talk through the round. What clicked, what didn&rsquo;t, what to take home.
             </p>
             <p className="a-day-section__copy">
-              It&rsquo;s also where most people realise that what they got from the day is harder to
-              describe than they expected. Not a list of fixes. Something closer to a change in how
-              they think about the game — clearer decisions, less noise, a better sense of what
-              they&rsquo;re actually capable of.
+              Most people realise something shifts in how they see the game. Not a list of fixes to work on. Something closer to clearer decisions, less noise in your head about the shot. A better sense of what you&rsquo;re actually capable of. Jo put it simply: &ldquo;After just 18 holes together, I&rsquo;ve discovered a new ceiling to my potential.&rdquo;
             </p>
             <p className="a-day-section__copy">
-              The day doesn&rsquo;t end with a handshake at the 18th. It ends when you&rsquo;re done.
-              That&rsquo;s the pace we work at.
+              The day doesn&rsquo;t end with a handshake at the 18th. It ends when you&rsquo;re done talking. That&rsquo;s the pace we work at.
             </p>
           </div>
         </section>
 
-        {/* WHAT YOU TAKE HOME */}
+        {/* WHAT CHANGES */}
         <section className="a-day-section a-day-section--white">
           <div className="a-day-section__inner">
-            <p className="eyebrow">What you take home</p>
+            <p className="eyebrow">Afterward</p>
             <div className="a-day-rule" />
             <h2 className="serif-display a-day-section__title">
-              Not a swing tip. A different way of thinking about the game.
+              The gap between what you expected and what you got.
             </h2>
             <p className="a-day-section__copy">
-              Most coaching produces a list — things to practise, positions to find, habits to break.
-              A day like this produces something different. Because the decisions were real and the
-              shots had consequences, what you learned is stored differently. It stays.
+              Most coaching produces a list. Things to practise, positions to find, habits to break. A day like this produces something different. Because the decisions were real and the shots had consequences, what you learned is stored differently. It stays.
             </p>
             <p className="a-day-section__copy">
-              Adam had played golf since he was five and was sure he had the fundamentals covered.
-              One session changed that view — not because the coaching was brutal, but because seeing
-              it happen on a real course, in real conditions, made it impossible to ignore.
-            </p>
-            <p className="a-day-section__copy">
-              That&rsquo;s the product. Not 18 holes. The gap between what you expected and what you
-              actually got.
+              The score card will show what it shows. The real product is the shift in how you approach the next round. The questions you ask before you play. The reads you trust. The decisions you make with more clarity because you made them on a course where they mattered.
             </p>
           </div>
         </section>
