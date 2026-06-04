@@ -36,14 +36,14 @@ const nextConfig = {
       "default-src 'self'",
       "base-uri 'self'",
       "font-src 'self' https://fonts.gstatic.com data:",
-      "form-action 'self' https://subscribe-forms.beehiiv.com https://assets.mailerlite.com",
+      "form-action 'self' https://assets.mailerlite.com",
       "frame-ancestors 'self'",
-      "frame-src https://subscribe-forms.beehiiv.com https://preview.mailerlite.io",
+      "frame-src https://preview.mailerlite.io",
       "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://preview.mailerlite.io https://assets.mailerlite.com",
       "object-src 'none'",
-      `script-src 'self' 'unsafe-inline'${allowUnsafeEval ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://www.google-analytics.com https://subscribe-forms.beehiiv.com https://assets.mailerlite.com`,
+      `script-src 'self' 'unsafe-inline'${allowUnsafeEval ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://www.google-analytics.com https://assets.mailerlite.com`,
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://subscribe-forms.beehiiv.com https://assets.mailerlite.com",
+      "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://assets.mailerlite.com",
       'upgrade-insecure-requests',
     ].join('; ')
 

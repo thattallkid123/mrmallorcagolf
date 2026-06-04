@@ -1,14 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-import BeehiivEmbed from './BeehiivEmbed'
 
 export default function EmailSignup({
   placeholder = 'Email address',
   buttonLabel = 'Send guide',
   successMessage = "You're on the list.",
   title = 'Email signup',
-  mailerliteEmbedUrl,
   mailerliteFormAction,
   redirectOnSuccess,
 }) {
@@ -17,7 +15,6 @@ export default function EmailSignup({
   const [errorMessage, setErrorMessage] = useState('')
 
   const resolvedMailerLiteFormAction = mailerliteFormAction || process.env.NEXT_PUBLIC_MAILERLITE_FORM_ACTION
-  const resolvedMailerLiteEmbedUrl = mailerliteEmbedUrl || process.env.NEXT_PUBLIC_MAILERLITE_EMBED_URL
 
   async function handleMailerLiteSubmit(event) {
     event.preventDefault()
@@ -150,22 +147,5 @@ export default function EmailSignup({
     )
   }
 
-  if (resolvedMailerLiteEmbedUrl) {
-    return (
-      <iframe
-        src={resolvedMailerLiteEmbedUrl}
-        title={title}
-        className="email-signup__iframe"
-        loading="lazy"
-      />
-    )
-  }
-
-  return (
-    <BeehiivEmbed
-      placeholder={placeholder}
-      buttonLabel={buttonLabel}
-      successMessage={successMessage}
-    />
-  )
+  return null
 }

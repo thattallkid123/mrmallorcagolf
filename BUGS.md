@@ -54,9 +54,9 @@ When a new bug is fixed, add it here so it never comes back.
 **Pattern:** Hook file existed but was not running checks. Encoding and text issues slipped through.
 **Fix (Apr 2026):** Repaired hook. Always verify `npm run check:text` and `npm run check:i18n-release` pass locally.
 
-## Beehiiv custom API approach failing
-**Pattern:** Built a custom email signup API endpoint; it broke silently and signups were lost.
-**Fix (Apr 2026):** Replaced with Beehiiv's official iframe embed. Do not build custom API wrappers for third-party email tools.
+## Third-party email signup blocked by CSP
+**Pattern:** Email capture can appear to work in the UI but fail silently if the live Content Security Policy blocks the provider endpoint.
+**Fix (Jun 2026):** Allow the active provider in `connect-src` and re-test a real signup on the public site after each provider change.
 
 ## Home screen web app manifest broken on main site
 **Pattern:** `manifest.json` pointed to wrong paths after restructuring, breaking PWA/add-to-homescreen.
