@@ -164,7 +164,7 @@ The SEO skill confirms "golf courses Mallorca" (1,900/mo) is the #1 target term.
 ## 6. Lead Magnet & Newsletter Strategy
 
 ### Current state
-- Beehiiv newsletter exists at `/subscribe`
+- Newsletter signup exists at `/subscribe`
 - Described as "every two weeks" with course notes, timing, planning logic
 - No visible subscriber count or social proof shown
 - No lead magnet — it's just a free newsletter with a general pitch

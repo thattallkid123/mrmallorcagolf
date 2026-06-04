@@ -114,7 +114,7 @@
 
 ## 2026-05-11
 
-- [site] Quick-win UX fixes: centred Beehiiv newsletter on homepage and contact page
+- [site] Quick-win UX fixes: centred the newsletter signup on homepage and contact page
 - [site] Added regional course pills to golf-courses geography section (replaced flying text with visual pill layout)
 - [site] Updated € pricing across all 6 language versions of club hire guide (€30–60 airline fees detail)
 - [site] Fixed contact form: made handicap field smaller with "optional" label, expanded dates field to textarea
