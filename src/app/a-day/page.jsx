@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import PageLayout from '../../components/PageLayout'
 import { getOfferById, OFFER_IDS } from '../../lib/offers-content.js'
+import { DEFAULT_SOCIAL_IMAGE } from '../../lib/page-metadata.js'
 import { SITE_ORIGIN } from '../../lib/site.js'
 
 function JsonLd({ data }) {
