@@ -204,8 +204,11 @@ export default function CourseSelectorClient() {
                 ))}
               </div>
               <div className="course-selector__email">
-                <h2>Want these sent to you?</h2>
-                <p>Leave your email and I will send the planning notes as they are updated.</p>
+                <h2>Want the saved shortlist and follow-up notes?</h2>
+                <p>
+                  You can use the page without signing up. Add your email if you want the shortlist sent over,
+                  plus the follow-up notes on timing, course fit, and how to build the trip properly.
+                </p>
                 <EmailSignup
                   placeholder="Email address"
                   buttonLabel="Send notes"
@@ -215,7 +218,7 @@ export default function CourseSelectorClient() {
                   redirectOnSuccess="/course-selector/check-email"
                 />
                 <p className="course-selector__fineprint">
-                  Free. Unsubscribe any time.
+                  Free. Useful before you book. Unsubscribe any time.
                 </p>
               </div>
             </>

@@ -52,8 +52,8 @@ export default function HomepageLeadPopup() {
         <p className="lead-popup__eyebrow">Free Mallorca golf shortlist</p>
         <h2 id="lead-popup-title">Not sure which courses are worth your time?</h2>
         <p className="lead-popup__body">
-          Take the course selector and get a first shortlist by email. Useful if you are still comparing
-          Son Gual, Alcanada, Son Muntaner and the rest.
+          Take the course selector for a first shortlist, then get the saved version and follow-up planning
+          notes by email. Useful if you are still comparing Son Gual, Alcanada, Son Muntaner and the rest.
         </p>
         <div className="lead-popup__actions">
           <Link href="/course-selector" className="lead-popup__primary" onClick={closePopup}>
@@ -63,7 +63,7 @@ export default function HomepageLeadPopup() {
             Not now
           </button>
         </div>
-        <p className="lead-popup__note">Five quick questions. No generic newsletter fluff.</p>
+        <p className="lead-popup__note">Five quick questions. Useful notes after, not generic newsletter fluff.</p>
       </div>
     </div>
   )

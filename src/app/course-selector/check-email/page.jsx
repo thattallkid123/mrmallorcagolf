@@ -26,7 +26,7 @@ export default function CourseSelectorCheckEmailPage() {
     <LeadCaptureStatusPage
       eyebrow="Course selector"
       title="Check your email"
-      intro="I have sent a confirmation email. Click the link in that email and I will send the shortlist and follow-up planning notes."
+      intro="I have sent a confirmation email. Click the link in that email and I will send the saved shortlist and the follow-up planning notes."
       bullets={[
         {
           title: 'Open the confirmation email',
