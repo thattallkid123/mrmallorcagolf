@@ -14,8 +14,9 @@ const FOOTER_COPY = {
     about: 'About',
     allCourses: 'All Courses',
     enquire: null,
-    newsletter: 'Newsletter',
-    newsletterLink: 'Subscribe for insights',
+    newsletter: 'Planning notes',
+    newsletterLink: 'Free course selector',
+    newsletterHref: '/course-selector',
     privacy: 'Privacy Policy',
     terms: 'Terms & Conditions',
   },
@@ -30,6 +31,7 @@ const FOOTER_COPY = {
     enquire: 'Anfragen',
     newsletter: 'Newsletter',
     newsletterLink: 'Einschreiben',
+    newsletterHref: null,
     privacy: 'Datenschutz',
     terms: 'AGB',
   },
@@ -44,6 +46,7 @@ const FOOTER_COPY = {
     enquire: 'Contacto',
     newsletter: 'Newsletter',
     newsletterLink: 'Suscribirse',
+    newsletterHref: null,
     privacy: 'Privacidad',
     terms: 'Términos',
   },
@@ -58,6 +61,7 @@ const FOOTER_COPY = {
     enquire: 'Contact',
     newsletter: 'Newsletter',
     newsletterLink: "S'abonner",
+    newsletterHref: null,
     privacy: 'Confidentialité',
     terms: 'Conditions',
   },
@@ -72,6 +76,7 @@ const FOOTER_COPY = {
     enquire: 'Contact',
     newsletter: 'Newsletter',
     newsletterLink: 'Inschrijven',
+    newsletterHref: null,
     privacy: 'Privacybeleid',
     terms: 'Voorwaarden',
   },
@@ -86,6 +91,7 @@ const FOOTER_COPY = {
     enquire: 'Kontakt',
     newsletter: 'Newsletter',
     newsletterLink: 'Prenumerera',
+    newsletterHref: null,
     privacy: 'Integritet',
     terms: 'Villkor',
   },
@@ -100,6 +106,7 @@ const FOOTER_COPY = {
     enquire: '联系',
     newsletter: '通讯',
     newsletterLink: '订阅',
+    newsletterHref: null,
     privacy: '隐私政策',
     terms: '条款',
   },
@@ -170,7 +177,7 @@ export default function Footer({ lang }) {
       <div className="footer__col">
         <h3>{copy.newsletter}</h3>
         <ul>
-          <li><Link href={`${prefix}/subscribe`} prefetch={false}>{copy.newsletterLink}</Link></li>
+          <li><Link href={copy.newsletterHref || `${prefix}/subscribe`} prefetch={false}>{copy.newsletterLink}</Link></li>
         </ul>
       </div>
 

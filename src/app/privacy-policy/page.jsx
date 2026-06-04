@@ -16,13 +16,13 @@ export default function PrivacyPolicy() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Privacy Policy</h1>
-            <p className="legal-page__updated">Last updated: March 2025</p>
+            <p className="legal-page__updated">Last updated: June 2026</p>
           </div>
 
           <section className="legal-section">
             <h2>1. Who We Are</h2>
             <p>This website is operated by Andy Griffiths, trading as <strong>Mr Mallorca Golf</strong>, based in Mallorca, Spain.</p>
-            <p>For all data protection enquiries, contact: <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a></p>
+            <p>For all data protection enquiries, contact: <a href="mailto:info@mrmallorcagolf.com">info@mrmallorcagolf.com</a></p>
           </section>
 
           <section className="legal-section">
@@ -31,6 +31,7 @@ export default function PrivacyPolicy() {
             <ul>
               <li><strong>Contact form submissions:</strong> your name, email address, phone number, and any message you send us</li>
               <li><strong>Email and WhatsApp enquiries:</strong> your name and contact details when you reach out directly</li>
+              <li><strong>Course Selector and email signup forms:</strong> your email address, and any optional information you choose to provide when requesting planning notes or shortlist follow-ups</li>
               <li><strong>Analytics data:</strong> anonymous usage data collected by Google Analytics (see Section 5)</li>
             </ul>
             <p>We do not collect payment card details. All payments are handled offline via bank transfer.</p>
@@ -42,9 +43,10 @@ export default function PrivacyPolicy() {
             <ul>
               <li>Respond to your enquiry and arrange your golf experience</li>
               <li>Communicate with you about your booking or planned visit</li>
+              <li>Send Course Selector follow-up emails and Mallorca golf planning notes where you have chosen to opt in</li>
               <li>Improve our services based on general usage patterns (analytics only)</li>
             </ul>
-            <p>We will not use your data for unsolicited marketing without your explicit consent. If we introduce a newsletter in the future, we will ask for your permission separately before sending any marketing communications.</p>
+            <p>We will not use your data for unsolicited marketing without your explicit consent. If you sign up for Course Selector results or planning emails, you can unsubscribe at any time using the link in the email or by contacting us directly.</p>
           </section>
 
           <section className="legal-section">
@@ -74,6 +76,7 @@ export default function PrivacyPolicy() {
             <p>We do not sell or rent your personal data to third parties. We may share data in the following limited circumstances:</p>
             <ul>
               <li><strong>Google Analytics:</strong> anonymised usage data as described above</li>
+              <li><strong>MailerLite:</strong> email address and related signup data for Course Selector results and follow-up emails</li>
               <li><strong>Legal requirement:</strong> where required by law or a competent authority</li>
             </ul>
             <p>We may share necessary information (your name and contact details) with golf courses or service providers in Mallorca when arranging your experience, but only to the extent required to fulfil your booking.</p>
@@ -96,7 +99,7 @@ export default function PrivacyPolicy() {
               <li><strong>Portability:</strong> receive your data in a structured, commonly used format</li>
               <li><strong>Objection:</strong> object to processing based on legitimate interests</li>
             </ul>
-            <p>To exercise any of these rights, email us at <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a>. We will respond within 30 days.</p>
+            <p>To exercise any of these rights, email us at <a href="mailto:info@mrmallorcagolf.com">info@mrmallorcagolf.com</a>. We will respond within 30 days.</p>
           </section>
 
           <section className="legal-section">

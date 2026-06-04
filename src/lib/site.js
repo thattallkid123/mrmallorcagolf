@@ -17,7 +17,7 @@ const SHARED_BASE_PATHS = new Set([
   '/guides',
 ])
 
-const EN_ONLY_BASE_PATHS = new Set(['/itinerary'])
+const EN_ONLY_BASE_PATHS = new Set(['/itinerary', '/course-selector'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es'])
 

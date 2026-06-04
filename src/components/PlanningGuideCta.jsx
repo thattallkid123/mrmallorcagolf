@@ -1,22 +1,20 @@
-import BeehiivEmbed from './BeehiivEmbed'
+import Link from 'next/link'
 
 export default function PlanningGuideCta({ compact = false }) {
   return (
     <aside className={`planning-guide-cta${compact ? ' planning-guide-cta--compact' : ''}`}>
       <div className="planning-guide-cta__copy">
-        <p className="planning-guide-cta__eyebrow">Free planning notes</p>
-        <h2>Before you book tee times, get the Mallorca course guide.</h2>
+        <p className="planning-guide-cta__eyebrow">Free Mallorca golf shortlist</p>
+        <h2>Take the course selector before you book</h2>
         <p>
-          Course fit, price ranges, timing, and the courses I would put first for different groups. Useful if you are still comparing options and not ready to enquire yet.
+          Answer five quick questions and get a first shortlist matched to your group, budget, timing, and trip style. It is the simplest way to narrow the island down before you start comparing tee times.
         </p>
       </div>
       <div className="planning-guide-cta__form">
-        <BeehiivEmbed
-          placeholder="Email address"
-          buttonLabel="Send guide"
-          successMessage="You're on the list. I'll send the guide by email."
-        />
-        <p className="planning-guide-cta__fineprint">Free. No spam. Unsubscribe any time.</p>
+        <Link href="/course-selector" className="planning-guide-cta__button">
+          Get my shortlist
+        </Link>
+        <p className="planning-guide-cta__fineprint">Free. Five questions. Useful before you enquire.</p>
       </div>
     </aside>
   )

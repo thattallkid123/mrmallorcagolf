@@ -1,17 +1,12 @@
 "use client"
 
-import React, { useEffect } from "react"
+import React from "react"
+import Link from "next/link"
 import PageLayout from "../../components/PageLayout"
+import EmailSignup from "../../components/EmailSignup"
+import { COURSE_SELECTOR_MAILERLITE_ACTION } from "../../lib/signup-config"
 
 export default function SubscribeClient() {
-  useEffect(() => {
-    if (document.querySelector("script[src=\"https://subscribe-forms.beehiiv.com/embed.js\"]")) return
-    const script = document.createElement("script")
-    script.src = "https://subscribe-forms.beehiiv.com/embed.js"
-    script.async = true
-    document.head.appendChild(script)
-  }, [])
-
   return (
     <PageLayout lang="en" navTransparent={false}>
       <style>{`
@@ -52,8 +47,8 @@ export default function SubscribeClient() {
         <div style={{ maxWidth: "640px", margin: "0 auto" }}>
           <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", margin: "0 0 0.75rem 0" }}>Planning notes</p>
           <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 auto 1.5rem", display: "block" }} />
-          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem,4.5vw,3.2rem)", fontWeight: 500, color: "#fff", lineHeight: 1.08, margin: "0 0 1.25rem 0" }}>Plan the golf before you book the tee times</h1>
-          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem,1.5vw,1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, margin: 0 }}>I send practical Mallorca golf notes: which courses suit which groups, what the green fee tells you, when to go, and what I would think about before locking in a trip.</p>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2rem,4.5vw,3.2rem)", fontWeight: 500, color: "#fff", lineHeight: 1.08, margin: "0 0 1.25rem 0" }}>Get the shortlist, then the planning notes</h1>
+          <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem,1.5vw,1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, margin: 0 }}>The best starting point is the course selector. If you already know you want the follow-up notes by email, you can subscribe here as well.</p>
         </div>
       </section>
 
@@ -65,15 +60,20 @@ export default function SubscribeClient() {
           <div style={{ paddingTop: "4px" }}>
             <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>What you get</p>
             <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 0 1.5rem 0", display: "block" }} />
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.7rem,2.8vw,2.4rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.1rem 0" }}>A useful first shortlist.</h2>
-            <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>Most Mallorca golf trips start with too many course names and not enough context. I write about the fit: who each course suits, what it costs, when it works, and what I would avoid.</p>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.7rem,2.8vw,2.4rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.1rem 0" }}>Start with the selector.</h2>
+            <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>Most Mallorca golf trips start with too many course names and not enough context. The course selector gives you a first shortlist, then the email notes help you turn that into a sensible trip plan.</p>
+            <div style={{ margin: "0 0 1.75rem 0" }}>
+              <Link href="/course-selector" style={{ display: "inline-block", padding: "14px 28px", background: "var(--pine)", color: "#fff", fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none" }}>
+                Take the course selector
+              </Link>
+            </div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               {[
-                ["Course fit", "Which courses suit lower handicaps, mixed groups, scenery-first trips, and serious golf days."],
-                ["Timing and seasons", "When to go, what changes through the year, which tee times are worth protecting."],
-                ["Planning logic", "Which courses pair well together. How to build a week that makes sense with driving time and budget."],
-                ["Coaching observations", "Things I notice on the course that you can apply to your own game."],
-                ["No spam", "One email every two weeks. Unsubscribe whenever you like."],
+                ["First shortlist", "Which courses suit lower handicaps, mixed groups, scenery-first trips, and serious golf days."],
+                ["Timing and seasons", "When to go, what changes through the year, and which tee times are worth protecting."],
+                ["Planning logic", "Which courses pair well together and how to build a week that makes sense with driving time and budget."],
+                ["On-course judgment", "What I notice when I play the courses myself, and what that means for your trip."],
+                ["No noise", "Useful notes only. Unsubscribe whenever you like."],
               ].map(([title, detail]) => (
                 <li key={title} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
                   <span style={{ fontFamily: "'Cormorant Garamond', serif", color: "var(--gold)", fontSize: "1rem", lineHeight: 1.6, flexShrink: 0, marginTop: "2px" }} aria-hidden="true">&#x2014;</span>
@@ -89,19 +89,17 @@ export default function SubscribeClient() {
           {/* Right: form */}
           <div>
             <div className="sub-formbox">
-              <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>Subscribe</p>
+              <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>Email delivery</p>
               <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 0 1.5rem 0", display: "block" }} />
-              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem,2.4vw,2rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.1, margin: "0 0 0.85rem 0" }}>Get the planning notes</h2>
-              <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.9rem", color: "var(--charcoal)", lineHeight: 1.8, margin: "0 0 1.5rem 0" }}>Free. Useful before you book. I will send course notes and trip planning logic as I update them.</p>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.5rem,2.4vw,2rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.1, margin: "0 0 0.85rem 0" }}>Get the shortlist by email</h2>
+              <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.9rem", color: "var(--charcoal)", lineHeight: 1.8, margin: "0 0 1.5rem 0" }}>Free. Useful before you book. This sends the shortlist and adds you to the follow-up planning notes.</p>
               <div style={{ width: "100%", marginBottom: "0.75rem" }}>
-                <iframe
-                  src="https://subscribe-forms.beehiiv.com/e2f8f5dc-5fbd-4a3a-a5bb-26fc117cf9e4"
-                  data-test-id="beehiiv-embed"
-                  frameBorder="0"
-                  scrolling="no"
-                  className="beehiiv-embed sub-iframe"
-                  title="Subscribe to the Mr Mallorca Golf newsletter"
-                  loading="lazy"
+                <EmailSignup
+                  placeholder="Email address"
+                  buttonLabel="Send notes"
+                  successMessage="You're on the list. I'll send the planning notes by email."
+                  title="Subscribe to Mr Mallorca Golf planning notes"
+                  mailerliteFormAction={COURSE_SELECTOR_MAILERLITE_ACTION}
                 />
               </div>
               <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "10px", letterSpacing: "0.06em", color: "var(--taupe)", margin: 0, textAlign: "center" }}>Free. Unsubscribe any time.</p>
