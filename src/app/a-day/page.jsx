@@ -313,7 +313,7 @@ export default function ADayPage() {
           {[
             { label: 'Format', value: '18 holes, full day' },
             { label: 'Course selection', value: 'Matched to your game and handicap' },
-            { label: 'What's included', value: 'Course, tee time, coaching, strategy' },
+            { label: "What's included", value: 'Course, tee time, coaching, strategy' },
             { label: 'Lunch', value: 'Included and unhurried' },
             { label: 'Duration', value: 'Typically 5–6 hours' },
             { label: 'Day rate', value: `${soloOffer.priceDisplay} solo · ${groupOffer.priceDisplay} group (course fee additional)` },
