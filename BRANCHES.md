@@ -64,3 +64,22 @@ npm run check:content
 npm run build
 npm run check:visual
 ```
+
+## Vercel Deploy Triage
+
+If Vercel fails on a commit that is older than local `main`, do not assume the branch still needs the same code fix.
+
+Check in this order:
+
+```powershell
+git status --short --branch
+git rev-parse HEAD
+git ls-remote --heads origin main
+npm run build
+```
+
+Rules:
+
+- If local `HEAD` and `origin/main` match, the fix is already on GitHub.
+- If the local production build passes, redeploy the latest `main` commit in Vercel instead of making speculative code edits.
+- If a fresh deployment still needs a trigger, prefer a tiny docs-only commit over touching live page code unnecessarily.
