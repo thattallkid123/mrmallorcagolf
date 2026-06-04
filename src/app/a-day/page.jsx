@@ -143,11 +143,11 @@ export default function ADayPage() {
             What people take home that they didn't expect.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.5rem' }}>
-            <Link href="/play-with-a-pro" className="btn btn--gold">
+            <Link href="/play-with-a-pro#packages" className="btn btn--gold">
               See pricing
             </Link>
-            <Link href="/golf-courses" className="btn btn--outline-white">
-              Browse the courses
+            <Link href="/play-with-a-pro" className="btn btn--outline-white">
+              More info
             </Link>
           </div>
         </div>
