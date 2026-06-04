@@ -10,6 +10,7 @@ export default function EmailSignup({
   title = 'Email signup',
   mailerliteEmbedUrl,
   mailerliteFormAction,
+  redirectOnSuccess,
 }) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState('idle')
@@ -44,6 +45,11 @@ export default function EmailSignup({
       const data = await response.json().catch(() => null)
 
       if (response.ok && data?.success) {
+        if (redirectOnSuccess && typeof window !== 'undefined') {
+          window.location.assign(redirectOnSuccess)
+          return
+        }
+
         setStatus('success')
         setEmail('')
         return

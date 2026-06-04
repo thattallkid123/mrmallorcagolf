@@ -100,6 +100,7 @@ export default function SubscribeClient() {
                   successMessage="You're on the list. I'll send the planning notes by email."
                   title="Subscribe to Mr Mallorca Golf planning notes"
                   mailerliteFormAction={COURSE_SELECTOR_MAILERLITE_ACTION}
+                  redirectOnSuccess="/course-selector/check-email"
                 />
               </div>
               <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "10px", letterSpacing: "0.06em", color: "var(--taupe)", margin: 0, textAlign: "center" }}>Free. Unsubscribe any time.</p>

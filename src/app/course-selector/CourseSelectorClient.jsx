@@ -212,6 +212,7 @@ export default function CourseSelectorClient() {
                   successMessage="You're on the list. I'll send the notes by email."
                   title="Send Mallorca course selector results"
                   mailerliteFormAction={COURSE_SELECTOR_MAILERLITE_ACTION}
+                  redirectOnSuccess="/course-selector/check-email"
                 />
                 <p className="course-selector__fineprint">
                   Free. Unsubscribe any time.
