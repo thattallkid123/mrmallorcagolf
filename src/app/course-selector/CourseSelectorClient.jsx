@@ -204,10 +204,10 @@ export default function CourseSelectorClient() {
                 ))}
               </div>
               <div className="course-selector__email">
-                <h2>Want the saved shortlist and follow-up notes?</h2>
+                <h2>Want the follow-up notes by email?</h2>
                 <p>
-                  You can use the page without signing up. Add your email if you want the shortlist sent over,
-                  plus the follow-up notes on timing, course fit, and how to build the trip properly.
+                  You can use the page without signing up. Add your email if you want the follow-up notes on
+                  timing, course fit, and how to build the trip properly after using the selector.
                 </p>
                 <EmailSignup
                   placeholder="Email address"

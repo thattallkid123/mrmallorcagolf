@@ -4,7 +4,7 @@ import LeadCaptureStatusPage from '../../../components/LeadCaptureStatusPage'
 
 export const metadata = {
   title: 'You Are In | Mallorca Course Selector',
-  description: 'Your email is confirmed. You are now on the list for the Mallorca golf shortlist and planning notes.',
+  description: 'Your email is confirmed. You are now on the list for Mallorca golf planning notes.',
   alternates: { canonical: `${SITE_ORIGIN}/course-selector/confirmed` },
   openGraph: {
     type: 'website',
@@ -26,11 +26,11 @@ export default function CourseSelectorConfirmedPage() {
     <LeadCaptureStatusPage
       eyebrow="Email confirmed"
       title="You are on the list"
-      intro="That confirmation is done. You will now receive the shortlist and the follow-up planning notes properly."
+      intro="That confirmation is done. You will now receive the follow-up planning notes properly."
       bullets={[
         {
-          title: 'Shortlist first',
-          text: 'The first email gives you a practical shortlist rather than a generic Mallorca course roundup.',
+          title: 'Useful first email',
+          text: 'The first email gives you a practical starting point rather than a generic Mallorca course roundup.',
         },
         {
           title: 'Then the useful planning notes',
