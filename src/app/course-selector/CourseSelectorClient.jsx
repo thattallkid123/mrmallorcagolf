@@ -139,10 +139,30 @@ function getRecommendations(answers) {
     .slice(0, 5)
 }
 
+function getAnswerSummary(answers) {
+  return QUESTIONS.map((question) => {
+    const option = question.options.find((item) => item.value === answers[question.id])
+    return `${question.label} ${option?.label || ''}`.trim()
+  }).join(' | ')
+}
+
+function getShortlistSummary(recommendations) {
+  return recommendations
+    .map((course, index) => `${index + 1}. ${course.name} - ${course.location} - ${course.fees}`)
+    .join(' | ')
+}
+
+function getShortlistNames(recommendations) {
+  return recommendations.map((course) => course.name).join(', ')
+}
+
 export default function CourseSelectorClient() {
   const [answers, setAnswers] = useState(INITIAL_ANSWERS)
   const [showResults, setShowResults] = useState(false)
   const recommendations = useMemo(() => getRecommendations(answers), [answers])
+  const selectorAnswerSummary = useMemo(() => getAnswerSummary(answers), [answers])
+  const shortlistSummary = useMemo(() => getShortlistSummary(recommendations), [recommendations])
+  const shortlistNames = useMemo(() => getShortlistNames(recommendations), [recommendations])
 
   return (
     <main className="course-selector">
@@ -216,6 +236,11 @@ export default function CourseSelectorClient() {
                   title="Send Mallorca course selector results"
                   mailerliteFormAction={COURSE_SELECTOR_MAILERLITE_ACTION}
                   redirectOnSuccess="/course-selector/check-email"
+                  extraFields={{
+                    selector_answers: selectorAnswerSummary,
+                    selector_shortlist: shortlistSummary,
+                    selector_shortlist_names: shortlistNames,
+                  }}
                 />
                 <p className="course-selector__fineprint">
                   Free. Useful before you book. Unsubscribe any time.

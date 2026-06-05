@@ -9,6 +9,7 @@ export default function EmailSignup({
   title = 'Email signup',
   mailerliteFormAction,
   redirectOnSuccess,
+  extraFields = {},
 }) {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState('idle')
@@ -28,6 +29,13 @@ export default function EmailSignup({
         'fields[email]': email,
         'ml-submit': '1',
         'anticsrf': 'true',
+      })
+
+      Object.entries(extraFields).forEach(([key, value]) => {
+        if (typeof value !== 'string') return
+        const trimmedValue = value.trim()
+        if (!trimmedValue) return
+        body.set(`fields[${key}]`, trimmedValue)
       })
 
       const response = await fetch(resolvedMailerLiteFormAction, {
