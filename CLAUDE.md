@@ -60,6 +60,10 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 ## Start Here
 
+**For operations & monitoring:**
+1. `MMG_CONTROL_PANEL_INTEGRATED.md` (repo root) — Systems architecture, GA4/Search Console workflow, weekly/monthly checklists
+2. `MMG_MASTER_CONTROL_CENTER.md` (Google Drive root) — Business operations & financial tracking
+
 **For code/website work:**
 1. `BRANCHES.md` (git rules)
 2. `CONTENT_WORKFLOW.md` (content structure)
@@ -125,22 +129,25 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 **Google Drive (C:\Users\andyg\My Drive\Mr Mallorca Golf):**
 - **Master control:** `MMG_MASTER_CONTROL_CENTER.md` ← Start here for all business questions
-- **Financial:** `Financial/2026/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker)
+- **Financial:** `Financial/2026/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker) + `MMG_Business_Model.pdf` (pricing model)
 - **Systems & planning:** `Systems & Planning/` (business plan, pricing, checklists)
+- **Contacts & partnerships:** `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` (3 sheets: Golf Courses 24 + Affiliates 40 + China Operators 15)
+- **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx` (client tracker: names, dates, courses, revenue, follow-ups)
 - **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
-- **Partnerships:** `Partnerships/[Partner]/` (contacts, agreements, notes)
 - **Tax & compliance:** `Tax & Compliance/2026/` (documentation, Q&A with gestor)
-- **Archive:** `Archive/` (old audits, temp files, old trackers)
-- **Reference (existing):** `Reference/` (scorecard PDFs, pricing research)
-- **Active (existing):** `Active/MMG_BRAND_VOICE_GUIDELINES.md`, contacts, master data
-- **To Do (existing):** `To Do/ACTION_LIST.md` ← Single source of truth for active work
+- **Archive:** `Archive/` (old audits, temp files, control panel backups)
+- **Reference:** `Reference/` (scorecard PDFs, pricing research)
+- **Active skills:** `Active/Skills/MMG_SKILL_*.md` (10 skills — blog, seo, social, carousel, chinese, pipeline, design, nextjs, business-ops, partnerships)
+- **To Do:** `To Do/ACTION_LIST.md` ← Single source of truth for active work
 
 **Repo (code & development only):**
+- **Operations:** `MMG_CONTROL_PANEL_INTEGRATED.md` (systems architecture + GA4 workflow + weekly/monthly checklists)
 - **Branch rules:** `BRANCHES.md`
 - **Content workflow:** `CONTENT_WORKFLOW.md`
 - **Course review pipeline:** `COURSE_BLOG_PIPELINE.md`
 - **Status & priorities:** `MMG_WORK_STATUS.md`
 - **Brand voice:** `MMG_BRAND_VOICE_GUIDELINES.md` (writing guide for all content)
+- **Skills sync:** `SKILLS_SYNC.ps1` (automation script: Google Drive → Cowork & Repo)
 
 Never reference private contact details in public content.
 

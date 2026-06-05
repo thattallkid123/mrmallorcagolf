@@ -23,7 +23,8 @@ $skills = @(
     @{Drive="MMG_SKILL_CONTENT_PIPELINE.md"; Cowork="content-pipeline"; Repo="content-pipeline.skill.md"},
     @{Drive="MMG_SKILL_FRONTEND_DESIGN.md"; Cowork="frontend-design-mmg"; Repo="frontend-design-mmg.skill.md"},
     @{Drive="MMG_SKILL_NEXTJS.md"; Cowork="nextjs-mrmallorcagolf"; Repo="nextjs-mrmallorcagolf.skill.md"},
-    @{Drive="MMG_SKILL_BUSINESS_OPERATIONS.md"; Cowork="mmg-business-operations"; Repo="mmg-business-operations.skill.md"}
+    @{Drive="MMG_SKILL_BUSINESS_OPERATIONS.md"; Cowork="mmg-business-operations"; Repo="mmg-business-operations.skill.md"},
+    @{Drive="MMG_SKILL_PARTNERSHIPS.md"; Cowork="mmg-partnerships"; Repo="mmg-partnerships.skill.md"}
 )
 
 Write-Host "MMG Skills Sync Script" -ForegroundColor Green
