@@ -5,7 +5,7 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: "Son Gual Golf Mallorca Review (2026) - Is It Worth It? Green Fees, Conditions & Verdict",
+        title: "Son Gual Golf Mallorca — Honest 2026 Review",
         description:
           "Son Gual reviews are consistently strong — and earned. Green fees €110–€165, par 72, handicap required. My honest PGA verdict: conditions, difficulty, ideal player profile, and whether it is worth it.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
@@ -169,7 +169,7 @@ export const GUIDE_POST_CONTENT = {
   'alcanada-review': {
     en: {
       metadata: {
-        title: "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)",
+        title: "Alcanada Golf Mallorca — Honest 2026 Review",
         description:
           'Alcanada golf course Mallorca reviewed by a PGA Professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.',
         imagePath: '/images/alcanada-blog/alc-7.webp',
@@ -316,7 +316,7 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Mallorca Review (2026) - Green Fees, Layout & Honest Verdict",
+        title: "Son Muntaner Golf Mallorca — Honest 2026 Review",
         description:
           "Son Muntaner golf club reviews back Spain's Best Course 2025 — but is it right for your group? Green fees €125–€250, buggy included, 5 mins from Palma. Honest PGA verdict inside.",
         imagePath: '/images/son-muntaner-blog/sm-8.webp',

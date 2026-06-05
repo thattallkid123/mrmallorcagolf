@@ -40,9 +40,9 @@ $errorCount = 0
 foreach ($skill in $skills) {
     Write-Host "Syncing: $($skill.Drive)" -ForegroundColor Cyan
 
-    $driveFile = Join-Path $gdrive $skill.Drive
-    $coworkFile = Join-Path $cowork $skill.Cowork "SKILL.md"
-    $repoFile = Join-Path $repo $skill.Repo
+    $driveFile = "$gdrive\$($skill.Drive)"
+    $coworkFile = "$cowork\$($skill.Cowork)\SKILL.md"
+    $repoFile = "$repo\$($skill.Repo)"
 
     # Check if source exists
     if (-not (Test-Path $driveFile)) {
@@ -89,10 +89,10 @@ Write-Host "  Errors: $errorCount"
 Write-Host ""
 
 if ($errorCount -eq 0) {
-    Write-Host "✓ All skills synced successfully" -ForegroundColor Green
+    Write-Host "All skills synced successfully" -ForegroundColor Green
     Write-Host "  Google Drive is the master. This script keeps Cowork and Repo in sync." -ForegroundColor Gray
     Write-Host "  To update a skill: edit in Drive, then run this script." -ForegroundColor Gray
 } else {
-    Write-Host "❌ Some syncs failed. Check the errors above." -ForegroundColor Red
+    Write-Host "Some syncs failed. Check the errors above." -ForegroundColor Red
     exit 1
 }

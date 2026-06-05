@@ -4,6 +4,7 @@ import PageLayout from '../../components/PageLayout'
 import DeferredHydrate from '../../components/DeferredHydrate'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 import GolfCoursesClient from './GolfCoursesClient'
+import { GOLF_COURSE_DATA } from '../../lib/golf-courses-data'
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
@@ -143,6 +144,12 @@ export default function GolfCoursesView({ locale = 'en', content }) {
             <section style={{ padding: '64px 20px', maxWidth: 1100, margin: '0 auto' }}>
               <p className="eyebrow">Loading course explorer</p>
               <h2 className="serif-display" style={{ marginTop: 8 }}>Preparing filters and full course data...</h2>
+              {/* Server-rendered course index for search engines */}
+              <ul aria-hidden="true" style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
+                {GOLF_COURSE_DATA.map(course => (
+                  <li key={course.name}>{course.name} — Mallorca golf course</li>
+                ))}
+              </ul>
             </section>
           )}
         >

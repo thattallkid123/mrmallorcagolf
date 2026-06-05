@@ -24,7 +24,7 @@ const HOME_METADATA = {
   en: {
     title: 'Mallorca Golf Lessons, Trip Planning & On-Course Coaching',
     description:
-      'Plan golf lessons and better golf trips in Mallorca with PGA Advanced Professional Andy Griffiths: course advice, itineraries, local recommendations, and on-course Play With A Pro coaching.',
+      'Plan your Mallorca or Majorca golf trip with PGA Advanced Professional Andy Griffiths — course advice, itineraries, local recommendations, and on-course Play With A Pro days from €495.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro | Mr Mallorca Golf',
@@ -60,7 +60,7 @@ const HOME_METADATA = {
 
 const GOLF_COURSES_METADATA = {
   en: {
-    title: 'Best Golf Courses in Mallorca (2026) - All 24 Courses, Green Fees & Honest Reviews',
+    title: 'Golf Courses in Mallorca & Majorca — 2026',
     description:
       'Compare every golf course in Mallorca: green fees (€55–€250), par, difficulty, regions, and first-hand PGA recommendations on who each course suits. Updated 2026.',
   },
@@ -212,7 +212,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Play With A Pro in Mallorca | Private Golf Day',
+    title: 'Play With A Pro Mallorca | Private Golf Day',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {

@@ -182,6 +182,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
                 <span key={line}>
                   {line}
                   {index < titleLines.length - 1 ? <br /> : null}
+                  {index < titleLines.length - 1 ? ' ' : null}
                 </span>
               ))}
             </h1>
