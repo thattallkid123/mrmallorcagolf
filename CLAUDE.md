@@ -42,15 +42,33 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 **Local path:** `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`
 
+## Organization Rule: Code in Repo, Business in Google Drive
+
+**Repo root contains ONLY code & development docs:**
+- Code: `src/`, `public/`, `scripts/`, `docs/`
+- Dev docs: `BRANCHES.md`, `CONTENT_WORKFLOW.md`, `COURSE_BLOG_PIPELINE.md`, `MMG_BRAND_VOICE_GUIDELINES.md`, `MMG_WORK_STATUS.md`, `README.md`, `CHANGELOG.md`
+- Config: `package.json`, build files, git files
+
+**ALL business docs live in Google Drive:** `C:\Users\andyg\My Drive\Mr Mallorca Golf\`
+- Financial: `Financial/2026/`
+- Strategy & operations: `Systems & Planning/`
+- Tax & compliance: `Tax & Compliance/2026/`
+- Courses: `Courses/` (reviews, scorecards, assets)
+- Partnerships: `Partnerships/`
+- Archive: `Archive/` (old/temp files)
+- **Master reference:** `MMG_MASTER_CONTROL_CENTER.md` (start here for business questions)
+
 ## Start Here
 
-Before substantial work, read:
+**For code/website work:**
+1. `BRANCHES.md` (git rules)
+2. `CONTENT_WORKFLOW.md` (content structure)
+3. `COURSE_BLOG_PIPELINE.md` (course reviews)
+4. `MMG_BRAND_VOICE_GUIDELINES.md` (writing voice)
+5. `MMG_WORK_STATUS.md` (current priorities)
 
-1. `BRANCHES.md`
-2. `CONTENT_WORKFLOW.md`
-3. `COURSE_BLOG_PIPELINE.md` for course reviews
-4. `MMG_BRAND_VOICE_GUIDELINES.md` for any writing
-5. `MMG_WORK_STATUS.md` for current priorities
+**For business/financial work:**
+- Read: `Google Drive / Mr Mallorca Golf / MMG_MASTER_CONTROL_CENTER.md` (everything links from here)
 
 **Infrastructure & Validation:**
 - `docs/LOCALE_PARITY_CHECKLIST.md` — 6-language structure consistency
@@ -105,16 +123,28 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 ## Sources of Truth
 
-- **Brand voice & writing:** `MMG_BRAND_VOICE_GUIDELINES.md` in repo root, also mirrored in Drive `Active/`
-- **Course review pipeline:** `COURSE_BLOG_PIPELINE.md`
+**Google Drive (C:\Users\andyg\My Drive\Mr Mallorca Golf):**
+- **Master control:** `MMG_MASTER_CONTROL_CENTER.md` ← Start here for all business questions
+- **Financial:** `Financial/2026/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker)
+- **Systems & planning:** `Systems & Planning/` (business plan, pricing, checklists)
+- **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
+- **Partnerships:** `Partnerships/[Partner]/` (contacts, agreements, notes)
+- **Tax & compliance:** `Tax & Compliance/2026/` (documentation, Q&A with gestor)
+- **Archive:** `Archive/` (old audits, temp files, old trackers)
+- **Reference (existing):** `Reference/` (scorecard PDFs, pricing research)
+- **Active (existing):** `Active/MMG_BRAND_VOICE_GUIDELINES.md`, contacts, master data
+- **To Do (existing):** `To Do/ACTION_LIST.md` ← Single source of truth for active work
+
+**Repo (code & development only):**
 - **Branch rules:** `BRANCHES.md`
-- **Content checklist:** `CONTENT_WORKFLOW.md`
-- **Work tracking:** `MMG_WORK_STATUS.md`
-- **Drive docs:** `C:\Users\andyg\Documents\Mr Mallorca Golf\Active\`
-- **Public course/contact info:** `Documents/Active/MMG_CONTACTS_PUBLIC.xlsx`
-- **Private contact info:** `Documents/Private/Workbooks/MMG_CONTACTS_PRIVATE.xlsx`
+- **Content workflow:** `CONTENT_WORKFLOW.md`
+- **Course review pipeline:** `COURSE_BLOG_PIPELINE.md`
+- **Status & priorities:** `MMG_WORK_STATUS.md`
+- **Brand voice:** `MMG_BRAND_VOICE_GUIDELINES.md` (writing guide for all content)
 
 Never reference private contact details in public content.
+
+**Scorecard sync note:** Official scorecard PDFs live in `Reference/Scorecards/Scorecard PDFs/`. Individual course folders in `Courses/` link to or sync these for easy access during content creation.
 
 ## Branch Rule
 
@@ -148,11 +178,18 @@ For shared guide content, update both `main` and `itinerary-preview` unless Andy
 
 ## What Not To Do
 
+- **Do not add business/financial files to this repo.** Code only. Everything else → Google Drive.
 - Do not bring itinerary-specific homepage/planner/service-positioning changes into `main` unless Andy explicitly asks.
 - Do not create new frameworks, Tailwind, TypeScript, databases, auth, or CMS without approval.
 - Do not modify English master copy when only fixing a language page.
 - Do not invent image captions.
 - Do not change testimonials unless Andy explicitly asks.
+
+---
+
+## 🧹 Repository Cleanup
+
+See `REPO_CLEANUP_CHECKLIST.txt` in repo root for old file removal tasks.
 
 ---
 
