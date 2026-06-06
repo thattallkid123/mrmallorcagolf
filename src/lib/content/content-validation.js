@@ -116,6 +116,48 @@ export function validateHomepageContent(content) {
 }
 
 /**
+ * Validate Chinese (zh) locale completeness
+ * Detects keys present in EN but missing in ZH (would silently fall back to English)
+ * @param {object} content - A content object keyed by locale
+ * @param {string} source - File name for error reporting
+ * @returns {object} { missingKeys: [...], warnings: [...] }
+ */
+export function validateZHCompleteness(content, source) {
+  const enKeys = new Set();
+  const zhKeys = new Set();
+  const warnings = [];
+
+  // Collect all keys at depth 1 in EN
+  if (content.en) {
+    Object.keys(content.en).forEach(key => {
+      if (typeof content.en[key] === 'object' && !Array.isArray(content.en[key])) {
+        enKeys.add(key);
+      }
+    });
+  }
+
+  // Collect all keys at depth 1 in ZH
+  if (content.zh) {
+    Object.keys(content.zh).forEach(key => {
+      if (typeof content.zh[key] === 'object' && !Array.isArray(content.zh[key])) {
+        zhKeys.add(key);
+      }
+    });
+  }
+
+  // Find missing keys
+  const missingKeys = Array.from(enKeys).filter(key => !zhKeys.has(key));
+
+  if (missingKeys.length > 0) {
+    warnings.push(
+      `[${source}] Chinese (zh) locale missing content sections (will fall back to English): ${missingKeys.join(', ')}`
+    );
+  }
+
+  return { missingKeys, warnings };
+}
+
+/**
  * Run all content validations
  * Call this in check:content script
  */
@@ -126,6 +168,16 @@ export async function runAllValidations() {
 
     validatePWAPContent(PLAY_WITH_A_PRO_CONTENT);
     validateHomepageContent(HOMEPAGE_CONTENT);
+
+    // Check zh completeness as warnings
+    const pwapZH = validateZHCompleteness(PLAY_WITH_A_PRO_CONTENT, 'play-with-a-pro-content.js');
+    const homeZH = validateZHCompleteness(HOMEPAGE_CONTENT, 'homepage-content.js');
+
+    if (pwapZH.warnings.length > 0 || homeZH.warnings.length > 0) {
+      console.warn('⚠️  Chinese (zh) content gaps detected:');
+      pwapZH.warnings.forEach(w => console.warn(`   ${w}`));
+      homeZH.warnings.forEach(w => console.warn(`   ${w}`));
+    }
 
     console.log('✅ Content validation passed');
     return { success: true };

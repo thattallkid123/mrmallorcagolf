@@ -121,6 +121,43 @@ function validateHomepageItems(itemsArray, source, enTierNames = null) {
 }
 
 /**
+ * Check for missing zh (Chinese) keys that will silently fall back to English
+ */
+function checkZHCompleteness(content, source) {
+  const enKeys = new Set();
+  const zhKeys = new Set();
+  const warnings = [];
+
+  // Collect top-level keys in EN
+  if (content.en && typeof content.en === 'object') {
+    Object.keys(content.en).forEach(key => {
+      if (typeof content.en[key] === 'object' && !Array.isArray(content.en[key])) {
+        enKeys.add(key);
+      }
+    });
+  }
+
+  // Collect top-level keys in ZH
+  if (content.zh && typeof content.zh === 'object') {
+    Object.keys(content.zh).forEach(key => {
+      if (typeof content.zh[key] === 'object' && !Array.isArray(content.zh[key])) {
+        zhKeys.add(key);
+      }
+    });
+  }
+
+  // Find missing
+  const missingKeys = Array.from(enKeys).filter(key => !zhKeys.has(key));
+  if (missingKeys.length > 0) {
+    warnings.push(
+      `⚠️  [${source}] Chinese (zh) missing sections (will silently fall back to EN): ${missingKeys.join(', ')}`
+    );
+  }
+
+  return warnings;
+}
+
+/**
  * Convert Windows path to file:// URL
  */
 function pathToFileURL(filePath) {
@@ -173,6 +210,18 @@ async function main() {
 
     // Skip homepage validation - it uses normalizeHomePackageItems function, not direct tier definitions
     console.log('⏭️  homepage-content.js (uses normalizeHomePackageItems function)');
+
+    // Check zh completeness (non-critical warnings)
+    console.log('\n🌐 Checking Chinese (zh) content completeness...');
+    const pwapZHWarnings = checkZHCompleteness(PLAY_WITH_A_PRO_CONTENT, 'play-with-a-pro-content.js');
+    const homeZHWarnings = checkZHCompleteness(HOME_CONTENT, 'homepage-content.js');
+
+    const allWarnings = [...pwapZHWarnings, ...homeZHWarnings];
+    if (allWarnings.length > 0) {
+      allWarnings.forEach(w => console.log(w));
+    } else {
+      console.log('✅ Chinese (zh) sections are complete');
+    }
 
     console.log('\n✅ Content validation passed');
     process.exit(0);

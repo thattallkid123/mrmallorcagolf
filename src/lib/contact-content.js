@@ -463,7 +463,7 @@ export const CONTACT_CONTENT = {
     },
     success: {
       title: '已收到您的咨询。',
-      body: '我会在 24 小时内亲自回复您。如果您希望更快沟通，WhatsApp 是最直接的方式。',
+      body: '我会在 24 小时内亲自回复您。如果您希望更快沟通，可以直接加我微信。',
     },
     form: {
       eyebrow: '咨询表单',
@@ -509,7 +509,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: '接下来会发生什么',
-      body: '我会亲自阅读每一条咨询。24 小时内您将收到我的回复，包括球场推荐和后续步骤 - 通常更快。如果您希望直接沟通，WhatsApp 是最快的方式。',
+      body: '我会亲自阅读每一条咨询。24 小时内您将收到我的回复，包括球场推荐和后续步骤 - 通常更快。如果您希望直接沟通，微信是最快的方式。',
     },
     stayInTouch: {
       heading: '保持联系',

@@ -181,10 +181,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Google Analytics */}
+        {/* Google Analytics (disabled on /zh locale — blocked in mainland China) */}
         <Script id="google-analytics-deferred" strategy="afterInteractive">
           {`
             (function () {
+              // Skip GA on zh pages (Google blocked in mainland China; use Baidu Analytics instead)
+              if (window.location.pathname.startsWith('/zh')) return;
+
               var init = function () {
                 if (window.__mmgGaLoaded) return;
                 window.__mmgGaLoaded = true;
@@ -207,6 +210,26 @@ export default function RootLayout({ children }) {
               window.addEventListener('keydown', once, { passive: true, once: true });
               window.addEventListener('touchstart', once, { passive: true, once: true });
               setTimeout(init, 20000);
+            })();
+          `}
+        </Script>
+
+        {/* Baidu Analytics (for /zh pages — works in mainland China) */}
+        <Script id="baidu-analytics" strategy="afterInteractive">
+          {`
+            (function () {
+              // Only load Baidu Analytics on /zh pages
+              if (!window.location.pathname.startsWith('/zh')) return;
+
+              // Baidu Analytics ID — update with real ba_token when configured
+              // https://tongji.baidu.com/
+              var ba_token = '';
+              if (!ba_token) return; // Skip if not configured yet
+
+              var s = document.createElement('script');
+              s.async = true;
+              s.src = 'https://hm.baidu.com/hm.js?' + ba_token;
+              document.head.appendChild(s);
             })();
           `}
         </Script>
