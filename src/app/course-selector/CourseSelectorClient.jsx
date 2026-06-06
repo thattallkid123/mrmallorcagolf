@@ -232,10 +232,9 @@ export default function CourseSelectorClient() {
                 <EmailSignup
                   placeholder="Email address"
                   buttonLabel="Send notes"
-                  successMessage="You're on the list. I'll send the notes by email."
+                  successMessage="Done — check your inbox. I'll send the notes by email."
                   title="Send Mallorca course selector results"
                   mailerliteFormAction={COURSE_SELECTOR_MAILERLITE_ACTION}
-                  redirectOnSuccess="/course-selector/check-email"
                   extraFields={{
                     selector_answers: selectorAnswerSummary,
                     selector_shortlist: shortlistSummary,
