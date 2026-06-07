@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
+import BookingPolicyNotice from '../../components/BookingPolicyNotice'
 import PageLayout from '../../components/PageLayout'
 import RevealObserver from '../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
@@ -276,6 +277,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 ))}
               </ul>
             </div>
+            <BookingPolicyNotice locale={locale} />
           </div>
         </section>
 

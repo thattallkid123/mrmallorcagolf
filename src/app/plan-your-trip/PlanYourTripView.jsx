@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ItineraryPlanner from '../itinerary/ItineraryPlanner'
+import BookingPolicyNotice from '../../components/BookingPolicyNotice'
 import { buildLocalePath } from '../../lib/site'
 import { getPlanYourTripContent } from '../../lib/plan-your-trip-content'
 
@@ -75,6 +76,8 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               {content.professional.cta}
             </Link>
           </div>
+
+          <BookingPolicyNotice locale={locale} />
         </div>
       </section>
 
