@@ -1,8 +1,8 @@
 import LocalizedSignatureDayPage from '../../../components/LocalizedSignatureDayPage'
 import { buildSignatureDayMetadata, getSignatureDayContent } from '../../../lib/signature-day-content'
 
-export const metadata = buildSignatureDayMetadata('zh')
+export const metadata = buildSignatureDayMetadata('es')
 
-export default function ZHSignatureDayPage() {
-  return <LocalizedSignatureDayPage locale="zh" content={getSignatureDayContent('zh')} />
+export default function ESSignatureDayPage() {
+  return <LocalizedSignatureDayPage locale="es" content={getSignatureDayContent('es')} />
 }

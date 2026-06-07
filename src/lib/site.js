@@ -10,8 +10,10 @@ const HREFLANG_CODES = {
 const SHARED_BASE_PATHS = new Set([
   '/',
   '/about',
+  '/a-day',
   '/plan-your-trip',
   '/play-with-a-pro',
+  '/signature-day',
   '/golf-courses',
   '/contact',
   '/guides',
