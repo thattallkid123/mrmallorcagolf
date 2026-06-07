@@ -40,7 +40,7 @@ export function createGuideSlugPage(locale, params) {
   if (isArticleSlug(slug)) {
     const content = getGuideArticleContent(slug, locale)
     if (!content) notFound()
-    return <GuideArticleView meta={content.meta} blocks={content.blocks} />
+    return <GuideArticleView locale={locale} meta={content.meta} blocks={content.blocks} />
   }
 
   const content = getGuidePostContent(slug, locale)

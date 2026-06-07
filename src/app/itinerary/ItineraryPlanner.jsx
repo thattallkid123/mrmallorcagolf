@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useMemo, useState } from 'react'
+import { buildLocalePath } from '../../lib/site'
 
 const ITINERARY_COPY = {
   en: {
@@ -1569,6 +1570,7 @@ export default function ItineraryPlanner(props) {
   const embedded = Boolean(props?.embedded)
   const locale = ITINERARY_COPY[props?.locale] ? props.locale : 'en'
   const copy = ITINERARY_COPY[locale] || ITINERARY_COPY.en
+  const contactHref = buildLocalePath('/contact', locale)
   const priorityOptions = getLocalizedPriorityOptions(locale)
   const courseDetails = getLocalizedCourseDetails(locale)
   const baseDetails = getLocalizedBaseDetails(locale)
@@ -1775,7 +1777,7 @@ export default function ItineraryPlanner(props) {
             <p>{copy.nextParagraph}</p>
             <div className="itinerary-actions">
               <a href={whatsappHref} className="btn btn--gold" target="_blank" rel="noopener noreferrer">{copy.sendCourseList}</a>
-              <a href="/contact" className="btn btn--dark">{copy.getInTouch}</a>
+              <a href={contactHref} className="btn btn--dark">{copy.getInTouch}</a>
             </div>
           </div>
         </div>
