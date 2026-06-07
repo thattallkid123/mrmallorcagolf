@@ -74,14 +74,14 @@ const LANG_CONFIG = {
   },
   zh: {
     links: [
-      { href: '/zh', label: 'Home' },
-      { href: '/zh/about', label: 'About Andy' },
-      { href: '/zh/plan-your-trip', label: 'Plan Trip' },
-      { href: '/zh/play-with-a-pro', label: 'Play With Andy' },
-      { href: '/zh/golf-courses', label: 'Courses' },
-      { href: '/zh/guides', label: 'Guides' },
+      { href: '/zh', label: '首页' },
+      { href: '/zh/about', label: '关于 Andy' },
+      { href: '/zh/plan-your-trip', label: '规划行程' },
+      { href: '/zh/play-with-a-pro', label: '与 Andy 同场' },
+      { href: '/zh/golf-courses', label: '球场' },
+      { href: '/zh/guides', label: '指南' },
     ],
-    cta: { href: '/zh/contact', label: 'Contact' },
+    cta: { href: '/zh/contact', label: '联系' },
   },
 }
 
