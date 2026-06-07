@@ -30,7 +30,7 @@ export const metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
     template: '%s | Mr Mallorca Golf',
-    default: 'Mallorca Golf Trip Planning | Mr Mallorca Golf',
+    default: 'Mallorca Golf Trip Planning',
   },
   description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Build itineraries, compare courses, and add a private Play With A Pro day where it helps.',
   alternates: {
