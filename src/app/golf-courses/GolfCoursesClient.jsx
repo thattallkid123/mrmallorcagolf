@@ -90,6 +90,16 @@ const SORT_UI = {
   },
 }
 
+const REVIEW_LINK_LABELS = {
+  en: 'Read my full review',
+  de: 'Meine komplette Bewertung lesen',
+  es: 'Leer mi analisis completo',
+  fr: 'Lire mon avis complet',
+  nl: 'Lees mijn volledige review',
+  sv: 'Las min fullstandiga recension',
+  zh: '阅读我的完整评测',
+}
+
 const DISPLAY_TEXT_REPLACEMENTS = []
 
 const COURSE_GEO_META = {
@@ -548,9 +558,9 @@ function CourseCard({ c, lang = 'en' }) {
       </div>
       <div className="course__footer">
         <span className="course__footer-info">{footerText}</span>
-        {c.reviewSlug && lang === 'en' && (
-          <Link href={`/guides/${c.reviewSlug}`} className="course__review-link">
-            Read my full review &rarr;
+        {c.reviewSlug && (
+          <Link href={buildLocalePath(`/guides/${c.reviewSlug}`, lang)} className="course__review-link">
+            {REVIEW_LINK_LABELS[lang] || REVIEW_LINK_LABELS.en} &rarr;
           </Link>
         )}
       </div>

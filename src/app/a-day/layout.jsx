@@ -2,25 +2,25 @@ import { DEFAULT_SOCIAL_IMAGE } from '../../lib/page-metadata.js'
 import { SITE_ORIGIN } from '../../lib/site.js'
 
 export const metadata = {
-  title: 'A Day at Son Gual with Andy',
+  title: 'A Day at Son Gual | Mallorca Golf Day with Andy Griffiths',
   description:
-    "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks. From the drive up to the last green.",
+    "See what a full day at Son Gual looks like with Andy Griffiths: Mallorca's standout course, real on-course coaching, and the rhythm of a proper private golf day.",
   alternates: {
     canonical: `${SITE_ORIGIN}/a-day`,
   },
   openGraph: {
     type: 'article',
     url: `${SITE_ORIGIN}/a-day`,
-    title: 'A Day at Son Gual with Andy',
+    title: 'A Day at Son Gual | Mallorca Golf Day with Andy Griffiths',
     description:
-      "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks. From the drive up to the last green.",
+      "See what a full day at Son Gual looks like with Andy Griffiths: Mallorca's standout course, real on-course coaching, and the rhythm of a proper private golf day.",
     images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'A Day at Son Gual with Andy',
+    title: 'A Day at Son Gual | Mallorca Golf Day with Andy Griffiths',
     description:
-      "What actually happens when you spend a full day on Mallorca's finest course with a PGA Advanced Professional who plays it most weeks.",
+      "See what a full day at Son Gual looks like with Andy Griffiths on Mallorca's standout course.",
     images: [DEFAULT_SOCIAL_IMAGE.url],
   },
 }
