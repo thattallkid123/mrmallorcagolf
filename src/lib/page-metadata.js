@@ -243,9 +243,9 @@ const PLAY_WITH_A_PRO_METADATA = {
 
 const CONTACT_METADATA = {
   en: {
-    title: 'Plan Your Mallorca Golf Trip | Contact Mr Mallorca Golf',
+    title: 'Contact Andy | Mr Mallorca Golf - PGA Professional in Mallorca',
     description:
-      'Send your Mallorca golf trip dates, group details, and course ideas to Andy Griffiths for itinerary help, booking direction, or a Play With A Pro add-on.',
+      'Get in touch with Andy Griffiths, PGA Advanced Professional in Mallorca. Personal replies within 24 hours. WhatsApp or email - your choice.',
   },
   de: {
     title: 'Kontakt - Mr Mallorca Golf | Andy Griffiths UK PGA Professional',

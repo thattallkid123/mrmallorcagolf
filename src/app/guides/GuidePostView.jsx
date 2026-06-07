@@ -67,6 +67,12 @@ const MONTHS = {
   December: '12',
 }
 
+function joinHref(locale, path) {
+  if (!path || path.startsWith('http')) return path
+  if (locale === 'en') return path
+  return `/${locale}${path === '/' ? '' : path}`
+}
+
 function normalizeContainerStyle(style, fallback) {
   const merged = style || fallback
   if (!merged) return merged
@@ -157,10 +163,11 @@ function renderBlock(block, index, locale, imageOrdinal) {
   }
 
   if (block.type === 'cta') {
+    const href = joinHref(locale, block.href)
     return (
       <div key={`cta-${index}`} className="post-cta">
         <p><InlineRichText text={block.text} locale={locale} /></p>
-        <a href={block.href}>{block.linkLabel}</a>
+        <a href={href}>{block.linkLabel}</a>
       </div>
     )
   }

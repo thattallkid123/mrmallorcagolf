@@ -14,6 +14,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/zh-Hans',
+        destination: '/zh',
+        permanent: true,
+      },
+      {
+        source: '/zh-Hans/:path*',
+        destination: '/zh/:path*',
+        permanent: true,
+      },
+      {
         source: '/fr/privacy-policy',
         destination: '/privacy-policy',
         permanent: true,

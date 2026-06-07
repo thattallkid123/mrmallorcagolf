@@ -1,4 +1,3 @@
-import DeferredHydrate from '../../components/DeferredHydrate'
 import { getContactContent } from '../../lib/contact-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../lib/site'
 import ContactFormPanel from './ContactFormPanel'
@@ -154,22 +153,9 @@ export default function ContactForm({ locale = 'en' }) {
           </div>
 
         </div>
-
-        <DeferredHydrate
-          timeoutMs={1800}
-          fallback={(
-            <div className="contact-right">
-              <div className="form-header">
-                <p className="form-header__eyebrow">Loading form</p>
-                <h2>Preparing your enquiry form...</h2>
-              </div>
-            </div>
-          )}
-        >
-          <div className="contact-right">
-            <ContactFormPanel locale={locale} content={content} />
-          </div>
-        </DeferredHydrate>
+        <div className="contact-right">
+          <ContactFormPanel locale={locale} content={content} />
+        </div>
       </div>
     </>
   )
