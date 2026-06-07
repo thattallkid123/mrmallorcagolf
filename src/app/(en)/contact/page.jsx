@@ -1,0 +1,13 @@
+import PageLayout from '../../../components/PageLayout'
+import ContactForm from '../contact/ContactForm'
+import { buildContactMetadata } from '../../../lib/page-metadata'
+
+export const metadata = buildContactMetadata('en')
+
+export default function Contact() {
+  return (
+    <PageLayout lang="en" navTransparent={false} showWhatsAppButton={false}>
+      <ContactForm />
+    </PageLayout>
+  )
+}

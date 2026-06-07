@@ -4,8 +4,8 @@ import { buildGuidePostMetadata } from '../../lib/page-metadata'
 import { getGuidePostContent } from '../../lib/guide-post-content'
 import { getGuideArticleContent, buildGuideArticleMetadata } from '../../lib/guide-article-content'
 import { ARTICLE_SLUGS, REVIEW_POST_SLUGS, isPublishedGuideSlug, isArticleSlug } from '../../lib/site'
-import GuidePostView from '../guides/GuidePostView'
-import GuideArticleView from '../guides/GuideArticleView'
+import GuidePostView from '../(en)/guides/GuidePostView'
+import GuideArticleView from '../(en)/guides/GuideArticleView'
 
 const GUIDE_SLUGS = [...REVIEW_POST_SLUGS, ...ARTICLE_SLUGS]
 
