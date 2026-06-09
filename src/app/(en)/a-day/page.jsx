@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import PageLayout from '../../../components/PageLayout'
+import StickyMobileCta from '../../../components/StickyMobileCta'
 import { getOfferById, OFFER_IDS } from '../../../lib/offers-content.js'
 import { DEFAULT_SOCIAL_IMAGE } from '../../../lib/page-metadata.js'
 import { SITE_ORIGIN } from '../../../lib/site.js'
@@ -356,6 +357,13 @@ export default function ADayPage() {
           </Link>
         </div>
       </section>
+
+      <StickyMobileCta
+        primaryHref="/contact"
+        primaryLabel="Get in touch"
+        secondaryHref="https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20day%20at%20Son%20Gual."
+        secondaryLabel="Message on WhatsApp"
+      />
     </PageLayout>
   )
 }

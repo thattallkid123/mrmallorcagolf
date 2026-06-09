@@ -24,7 +24,7 @@ const HOME_METADATA = {
   en: {
     title: 'Mallorca Golf Lessons, Trip Planning & On-Course Coaching',
     description:
-      'Plan your Mallorca or Majorca golf trip with PGA Advanced Professional Andy Griffiths — course advice, itineraries, local recommendations, and on-course Play With A Pro days from €495.',
+      'Play Mallorca\'s best courses with a PGA Advanced Professional by your side. Private golf days from €495. Honest course reviews. Expert trip planning.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro',

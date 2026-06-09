@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ItineraryPlanner from '../itinerary/ItineraryPlanner'
 import BookingPolicyNotice from '../../../components/BookingPolicyNotice'
+import StickyMobileCta from '../../../components/StickyMobileCta'
 import { buildLocalePath } from '../../../lib/site'
 import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
 
@@ -100,6 +101,13 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           </div>
         </div>
       </section>
+
+      <StickyMobileCta
+        primaryHref={contactHref}
+        primaryLabel={content.professional.cta}
+        secondaryHref="https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20planning%20a%20golf%20trip%20to%20Mallorca."
+        secondaryLabel="Message on WhatsApp"
+      />
     </main>
   )
 }

@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 import { getLegalPath } from '../lib/site'
 
@@ -93,23 +96,35 @@ export function getBookingPolicyCopy(locale = 'en') {
 }
 
 export default function BookingPolicyNotice({ locale = 'en' }) {
+  const [isOpen, setIsOpen] = useState(false)
   const copy = getBookingPolicyCopy(locale)
 
   return (
     <section className="booking-policy">
       <p className="booking-policy__eyebrow">{copy.eyebrow}</p>
-      <h3 className="booking-policy__title">{copy.title}</h3>
-      <ul className="booking-policy__list">
-        {copy.items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-      <p className="booking-policy__footnote">
-        {copy.footnote}{' '}
-        <Link href={getLegalPath('terms', locale)} className="booking-policy__link">
-          {copy.linkLabel}
-        </Link>
-      </p>
+      <button
+        className="booking-policy__toggle"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+      >
+        <h3 className="booking-policy__title">{copy.title}</h3>
+        <span className="booking-policy__icon">{isOpen ? '−' : '+'}</span>
+      </button>
+      {isOpen && (
+        <>
+          <ul className="booking-policy__list">
+            {copy.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <p className="booking-policy__footnote">
+            {copy.footnote}{' '}
+            <Link href={getLegalPath('terms', locale)} className="booking-policy__link">
+              {copy.linkLabel}
+            </Link>
+          </p>
+        </>
+      )}
     </section>
   )
 }

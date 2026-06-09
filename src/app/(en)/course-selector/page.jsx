@@ -5,7 +5,7 @@ import { buildPageMetadata } from '../../../lib/page-metadata'
 export const metadata = buildPageMetadata('/course-selector', 'en', {
   title: 'Mallorca Golf Course Selector',
   description:
-    'Answer five quick questions and get a first shortlist of Mallorca golf courses matched to your group, budget, timing, and trip style.',
+    'Not sure which Mallorca course to play? Answer 5 quick questions and get a personalised recommendation from a PGA professional who plays them all.',
 })
 
 export default function CourseSelectorPage() {
