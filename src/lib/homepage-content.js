@@ -304,8 +304,8 @@ export const HOME_CONTENT = {
           a: 'Not at all. The experience adjusts to your game: beginners and scratch players both get something from the day. The only requirement is wanting a golf day that feels more personal than a standard tee time.',
         },
         {
-          q: 'Do you offer golf lessons or coaching in Mallorca?',
-          a: 'Yes, but the strongest version is on-course coaching rather than a range lesson. I help with club choice, course management, scoring decisions, and the swing patterns that show up when you are actually playing.',
+          q: 'What kind of coaching do you offer?',
+          a: "On-course coaching during a full day of play. Not range lessons or individual swing instruction — I work with you playing real holes, where course management and decision-making matter. I help with club choice, scoring decisions, and the patterns that only show up when you're actually playing.",
         },
         {
           q: 'Which course do you use?',

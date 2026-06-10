@@ -11,8 +11,8 @@ export default function StickyMobileCta({ primaryHref, primaryLabel, secondaryHr
       const scrollTop = window.scrollY
       const docHeight = document.documentElement.scrollHeight
       const winHeight = window.innerHeight
-      const scrollThreshold = 300 // Show after scrolling 300px
-      const footerBuffer = 200 // Hide when within 200px of footer
+      const scrollThreshold = 300
+      const footerBuffer = 200
 
       const shouldShow = scrollTop > scrollThreshold && scrollTop < docHeight - winHeight - footerBuffer
 
@@ -22,6 +22,15 @@ export default function StickyMobileCta({ primaryHref, primaryLabel, secondaryHr
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    if (isVisible) {
+      document.body.classList.add('sticky-cta-active')
+    } else {
+      document.body.classList.remove('sticky-cta-active')
+    }
+    return () => document.body.classList.remove('sticky-cta-active')
+  }, [isVisible])
 
   if (!isVisible) return null
 
