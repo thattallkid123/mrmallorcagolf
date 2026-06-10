@@ -4,6 +4,7 @@ import Script from 'next/script'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
 import { DEFAULT_SOCIAL_IMAGE } from '../lib/page-metadata.js'
+import ScrollToTop from './scroll-to-top.jsx'
 
 const jost = Jost({
   subsets: ['latin'],
@@ -233,6 +234,7 @@ export default function SiteRootLayout({ lang, children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
+        <ScrollToTop />
         {children}
       </body>
     </html>
