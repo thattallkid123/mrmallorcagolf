@@ -120,6 +120,14 @@
     [data-theme=dark] .deploy-state.READY{background:#1b3520;color:#a5d6a7} [data-theme=dark] .deploy-state.ERROR{background:#2e0d10;color:#ef9a9a}
     .deploy-meta{flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:var(--muted)}
     .deploy-time{font-size:11px;color:var(--muted);flex-shrink:0}
+    /* Status Box Grid */
+    .status-box{background:#fffaf0;border:1px solid var(--sand);border-left:4px solid var(--gold);border-radius:var(--r);padding:14px;font-size:13px}
+    .status-box.good{background:#e8f5e9;border-left-color:#43a047}
+    [data-theme=dark] .status-box{background:#1e1c17;border-color:#333028;border-left-color:var(--gold)}
+    [data-theme=dark] .status-box.good{background:#1b3520;border-left-color:#81c784}
+    .status-box-val{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--heading);margin:6px 0 2px}
+    .status-box-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+    .status-box-sub{font-size:10px;color:var(--muted)}
     /* Logos */
     .logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
     @media(max-width:800px){.logo-grid{grid-template-columns:repeat(2,1fr)}}
@@ -271,8 +279,10 @@
     <button class="tab-btn active" data-tab="overview">Overview</button>
     <button class="tab-btn" data-tab="analytics">Analytics</button>
     <button class="tab-btn" data-tab="search">Search</button>
-    <button class="tab-btn" data-tab="tasks">Tasks</button>
     <button class="tab-btn" data-tab="content">Content</button>
+    <button class="tab-btn" data-tab="partnerships">Partnerships</button>
+    <button class="tab-btn" data-tab="execution">Weekly</button>
+    <button class="tab-btn" data-tab="tasks">Tasks</button>
     <button class="tab-btn" data-tab="brand">Brand</button>
     <button class="tab-btn" data-tab="deploy">Deploy</button>
     <button class="tab-btn" data-tab="scripts">Scripts</button>
@@ -363,17 +373,24 @@
 
     <!-- ── ANALYTICS ──────────────────────────────────────────── -->
     <div id="tab-analytics" class="tab-pane">
-      <div class="card">
-        <div class="card-title">Google Analytics 4</div>
-        <div class="status info">Property <strong>G-0Z2BRNWB4N</strong> &middot; compare vs previous period</div>
-        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:4px">
-          <div class="range-switcher" id="ga4RangeSwitcher">
-            <button class="range-btn active" onclick="setGA4Range(7,this)">7 days</button>
-            <button class="range-btn" onclick="setGA4Range(28,this)">28 days</button>
-            <button class="range-btn" onclick="setGA4Range(90,this)">90 days</button>
-          </div>
-          <button class="btn ghost" style="margin:0" onclick="fetchGA4()">&#8635; Refresh</button>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:16px">
+        <div class="range-switcher" id="ga4RangeSwitcher">
+          <button class="range-btn active" onclick="setGA4Range(7,this)">7 days</button>
+          <button class="range-btn" onclick="setGA4Range(28,this)">28 days</button>
+          <button class="range-btn" onclick="setGA4Range(90,this)">90 days</button>
         </div>
+        <button class="btn ghost" style="margin:0" onclick="fetchGA4()">&#8635; Refresh</button>
+      </div>
+
+      <!-- Traffic Overview -->
+      <div class="card">
+        <div class="card-title">Traffic Overview</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px" id="ga4StatusGrid"></div>
+      </div>
+
+      <!-- Detailed Metrics -->
+      <div class="card">
+        <div class="card-title">Full Breakdown</div>
         <div id="ga4Status"></div>
         <div id="ga4Metrics" class="metrics-row"></div>
         <div id="ga4Insight"></div>
@@ -384,17 +401,24 @@
 
     <!-- ── SEARCH ──────────────────────────────────────────────── -->
     <div id="tab-search" class="tab-pane">
-      <div class="card">
-        <div class="card-title">Google Search Console</div>
-        <div class="status info">Site <strong>mrmallorcagolf.com</strong> &middot; data shown up to 3 days ago (SC lag)</div>
-        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:4px">
-          <div class="range-switcher" id="scRangeSwitcher">
-            <button class="range-btn" onclick="setSCRange(7,this)">7 days</button>
-            <button class="range-btn active" onclick="setSCRange(28,this)">28 days</button>
-            <button class="range-btn" onclick="setSCRange(90,this)">90 days</button>
-          </div>
-          <button class="btn ghost" style="margin:0" onclick="fetchSearch()">&#8635; Refresh</button>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:16px">
+        <div class="range-switcher" id="scRangeSwitcher">
+          <button class="range-btn" onclick="setSCRange(7,this)">7 days</button>
+          <button class="range-btn active" onclick="setSCRange(28,this)">28 days</button>
+          <button class="range-btn" onclick="setSCRange(90,this)">90 days</button>
         </div>
+        <button class="btn ghost" style="margin:0" onclick="fetchSearch()">&#8635; Refresh</button>
+      </div>
+
+      <!-- Search Overview -->
+      <div class="card">
+        <div class="card-title">Search Performance</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px" id="scStatusGrid"></div>
+      </div>
+
+      <!-- Opportunities & Details -->
+      <div class="card">
+        <div class="card-title">Full Breakdown</div>
         <div id="scStatus"></div>
         <div id="scMetrics" class="metrics-row"></div>
         <div id="scOpportunities" style="margin-top:4px"></div>
@@ -405,34 +429,23 @@
 
     <!-- ── TASKS ───────────────────────────────────────────────── -->
     <div id="tab-tasks" class="tab-pane">
-      <div class="card" style="background:var(--gold-pale);border-color:var(--sand)">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
-          <div>
-            <div class="card-subtitle" style="margin-top:0">&#128190; Where tasks are saved</div>
-            <p style="font-size:13px;color:var(--text);margin-bottom:8px">Tasks sync to <strong>Google Drive</strong> as a file called <code style="font-family:monospace;font-size:12px;background:rgba(0,0,0,.06);padding:1px 5px;border-radius:3px">MMG_TASKS.json</code> in your Drive root. Auto-saves 2.5s after any change.</p>
-            <p style="font-size:13px;color:var(--muted);margin-bottom:0">To view/edit raw: Drive → search "MMG_TASKS" → open. To reset: delete that file and reload this page.</p>
-          </div>
-          <div>
-            <div class="card-subtitle" style="margin-top:0">&#129302; Adding tasks via Claude</div>
-            <p style="font-size:13px;color:var(--text);margin-bottom:8px">Tell Claude or Codex:</p>
-            <div style="background:var(--deep);color:#b8e0c8;font-family:monospace;font-size:11px;padding:10px 12px;border-radius:4px;line-height:1.7">
-              "Add a task called [task name] to the<br>
-              [Week X] group in the control panel<br>
-              task list (MMG_TASKS.json on Drive)"
-            </div>
-            <p style="font-size:12px;color:var(--muted);margin-top:8px;margin-bottom:0">Or just add directly here — it's faster.</p>
-          </div>
-        </div>
-      </div>
       <div class="card">
-        <div class="card-title">Task List</div>
-        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0">
-          <button class="btn" onclick="saveTasks(true)">Save to Drive</button>
-          <button class="btn ghost" onclick="loadTasks()">Reload from Drive</button>
-          <span class="autosave-tag" id="autosaveTag"></span>
+        <div class="card-title" style="display:flex;align-items:center;justify-content:space-between">
+          <span>Tasks</span>
+          <span style="font-size:11px;color:var(--muted);font-weight:400">Syncs with Google Tasks app &amp; phone</span>
         </div>
-        <div id="taskStatus"></div>
-        <div id="tasksContainer" style="margin-top:20px"></div>
+        <div style="display:flex;gap:8px;margin-bottom:16px">
+          <input id="newTaskInput" class="add-task-input" placeholder="Add a task…" style="flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:8px 12px;font-size:13px;color:var(--text);font-family:Jost,sans-serif;outline:none" onkeydown="if(event.key==='Enter')addGTask()">
+          <button class="btn" onclick="addGTask()">+ Add</button>
+          <button class="btn ghost" onclick="loadTasks()" style="padding:0 10px" title="Reload">&#8635;</button>
+        </div>
+        <div id="taskStatus" style="font-size:12px;color:var(--muted);min-height:16px;margin-bottom:8px"></div>
+        <div id="tasksContainer"></div>
+      </div>
+      <div class="card" style="background:var(--gold-pale);border-color:var(--sand)">
+        <div class="card-subtitle" style="margin-top:0">&#129302; Adding tasks via Claude</div>
+        <p style="font-size:13px;color:var(--text);margin-bottom:8px">Tell Claude: <em>"Add a task to my Google Tasks: [task name]"</em></p>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:0">Tasks added here or via Claude appear instantly in the Google Tasks app on your phone and in Gmail.</p>
       </div>
     </div>
 
@@ -468,6 +481,125 @@
         <a href="https://tasks.google.com/" target="_blank" class="btn gold" style="display:inline-block;width:auto">
           → Open Google Tasks
         </a>
+      </div>
+    </div>
+
+    <!-- ── PARTNERSHIPS ────────────────────────────────────────── -->
+    <div id="tab-partnerships" class="tab-pane">
+      <div class="card">
+        <div class="card-title">Tier 1 Partnership Tracker</div>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:16px">Track outreach, stages, and timeline for high-value partnerships.</p>
+        <div style="overflow-x:auto">
+          <table style="width:100%;font-size:12px;border-collapse:collapse">
+            <thead style="background:var(--surface2);border-bottom:1.5px solid var(--border)">
+              <tr>
+                <th style="text-align:left;padding:10px;font-weight:600;color:var(--heading)">Company</th>
+                <th style="text-align:left;padding:10px;font-weight:600;color:var(--heading)">Stage</th>
+                <th style="text-align:left;padding:10px;font-weight:600;color:var(--heading)">Notes</th>
+                <th style="text-align:right;padding:10px;font-weight:600;color:var(--heading)">Last Touch</th>
+              </tr>
+            </thead>
+            <tbody id="partnershipTable">
+              <tr>
+                <td colspan="4" style="padding:20px;text-align:center;color:var(--muted)">Loading partnerships...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">30-60-90 Plan Status</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+          <div style="background:var(--surface2);border-radius:6px;padding:16px;border-left:4px solid var(--gold)">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;font-weight:600;margin-bottom:8px">30 Days</div>
+            <div style="font-size:13px;color:var(--heading)">Capability sheet + outreach list</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:8px">✓ Complete</div>
+          </div>
+          <div style="background:var(--surface2);border-radius:6px;padding:16px;border-left:4px solid var(--gold)">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;font-weight:600;margin-bottom:8px">60 Days</div>
+            <div style="font-size:13px;color:var(--heading)">Tier 1 outreach + first meetings</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:8px">In progress</div>
+          </div>
+          <div style="background:var(--surface2);border-radius:6px;padding:16px;border-left:4px solid var(--gold)">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;font-weight:600;margin-bottom:8px">90 Days</div>
+            <div style="font-size:13px;color:var(--heading)">FAM rounds + first partnerships</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:8px">Pending</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── WEEKLY EXECUTION ─────────────────────────────────────── -->
+    <div id="tab-execution" class="tab-pane">
+      <div class="card">
+        <div class="card-title">This Week's Targets</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px">
+          <div style="background:var(--surface2);border-radius:6px;padding:14px;text-align:center;border-top:3px solid var(--gold)">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">SEO Fixes</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--heading)">1/1</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:4px">100%</div>
+          </div>
+          <div style="background:var(--surface2);border-radius:6px;padding:14px;text-align:center;border-top:3px solid var(--gold)">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Content</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--heading)">1/1</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:4px">100%</div>
+          </div>
+          <div style="background:var(--surface2);border-radius:6px;padding:14px;text-align:center;border-top:3px solid #ffb300">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Partners</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--heading)">0/1</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:4px">0%</div>
+          </div>
+          <div style="background:var(--surface2);border-radius:6px;padding:14px;text-align:center;border-top:3px solid #ffb300">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Overall</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--heading)">67%</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:4px">2 of 3</div>
+          </div>
+        </div>
+
+        <div class="card-subtitle">Quick Actions</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-top:12px">
+          <button class="btn" style="flex-direction:column;height:auto;padding:12px 8px">🔨 Build</button>
+          <button class="btn" style="flex-direction:column;height:auto;padding:12px 8px">📤 Deploy</button>
+          <button class="btn" style="flex-direction:column;height:auto;padding:12px 8px">✓ Check</button>
+          <button class="btn" style="flex-direction:column;height:auto;padding:12px 8px">💰 Pricing</button>
+          <button class="btn" style="flex-direction:column;height:auto;padding:12px 8px">🏌️ Cards</button>
+          <button class="btn" style="flex-direction:column;height:auto;padding:12px 8px">📊 GA4</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Success Checklist</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <label style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;cursor:pointer">
+            <input type="checkbox" checked style="margin-top:2px">
+            <div>
+              <div style="font-weight:600;color:var(--heading)">Prioritized action queue</div>
+              <div style="font-size:11px;color:var(--muted)">3 SEO fixes identified</div>
+            </div>
+          </label>
+          <label style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;cursor:pointer;border-bottom:1px solid var(--border)">
+            <input type="checkbox" style="margin-top:2px">
+            <div>
+              <div style="font-weight:600;color:var(--heading)">One technical fix shipped</div>
+              <div style="font-size:11px;color:var(--muted)">CLS on course review pages</div>
+            </div>
+          </label>
+          <label style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;cursor:pointer;border-bottom:1px solid var(--border)">
+            <input type="checkbox" checked style="margin-top:2px">
+            <div>
+              <div style="font-weight:600;color:var(--heading)">One content improvement shipped</div>
+              <div style="font-size:11px;color:var(--muted)">Canyamel review draft</div>
+            </div>
+          </label>
+          <label style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;cursor:pointer">
+            <input type="checkbox" style="margin-top:2px">
+            <div>
+              <div style="font-weight:600;color:var(--heading)">One partnership step completed</div>
+              <div style="font-size:11px;color:var(--muted)">Follow-up email to Tier 1 targets</div>
+            </div>
+          </label>
+        </div>
       </div>
     </div>
 
@@ -572,11 +704,8 @@
 
 <script>
 let isAuthed = false;
-let checkedTasks = new Set();
-let customTasks = [];
 let ga4Days = 7;
 let scDays = 28;
-let autosaveTimer = null;
 
 const WEEKS = {
   "Week 1-2: Foundation": ["Sign up MailerLite + set brand colours","Build Course Selector Quiz landing page","Create media kit PDF","Sketch homepage CTAs"],
@@ -890,6 +1019,20 @@ async function fetchGA4() {
     if (d.error) throw new Error(d.error);
     _ga4Snap = d;
     sEl.innerHTML = '<div class="status ok">&#10003; ' + (d.fromCache ? 'Cached ' : 'Updated ') + new Date(d.lastUpdated).toLocaleTimeString() + (d.fromCache ? ' (live in 1h)' : '') + '</div>';
+
+    // Populate status grid
+    const gridEl = document.getElementById("ga4StatusGrid");
+    const chgFormat = v => {
+      if (v === null || v === undefined) return '';
+      return (v > 0 ? '+' : '') + v + '%';
+    };
+    gridEl.innerHTML = [
+      {label: 'Users', val: d.users.toLocaleString(), sub: chgFormat(d.usersChange), good: d.usersChange > 0},
+      {label: 'Sessions', val: d.sessions.toLocaleString(), sub: chgFormat(d.sessionsChange), good: d.sessionsChange > 0},
+      {label: 'Bounce Rate', val: d.bounceRate + '%', sub: 'Goal: <50%', good: parseFloat(d.bounceRate) < 50},
+      {label: 'Avg Duration', val: d.duration + 's', sub: chgFormat(d.durationChange), good: d.duration > 120}
+    ].map(m => '<div class="status-box ' + (m.good ? 'good' : '') + '"><div class="status-box-label">' + m.label + '</div><div class="status-box-val">' + m.val + '</div><div class="status-box-sub">' + m.sub + '</div></div>').join('');
+
     const chg = v => {
       if (v === null || v === undefined) return '<span class="metric-change flat">No prior data</span>';
       const cls = v > 0 ? "up" : v < 0 ? "down" : "flat";
@@ -978,6 +1121,17 @@ async function fetchSearch() {
     if (d.error) throw new Error(d.error);
     _scSnap = d;
     sEl.innerHTML = '<div class="status ok">&#10003; ' + (d.fromCache ? 'Cached ' : 'Updated ') + new Date(d.lastUpdated).toLocaleTimeString() + (d.fromCache ? ' (live in 1h)' : '') + '</div>';
+
+    // Populate search status grid
+    const scGridEl = document.getElementById("scStatusGrid");
+    const ctr = parseFloat(d.ctr), pos = parseFloat(d.position);
+    scGridEl.innerHTML = [
+      {label: 'Impressions', val: d.impressions.toLocaleString(), sub: scDays + 'd', good: d.impressions > 1000},
+      {label: 'Clicks', val: d.clicks.toLocaleString(), sub: 'CTR ' + d.ctr + '%', good: ctr > 2},
+      {label: 'Avg Position', val: pos.toFixed(1), sub: 'Lower = better', good: pos < 10},
+      {label: 'Top Keyword', val: (d.topQueries[0]?.query || 'N/A').substring(0, 20), sub: 'Pos ' + (d.topQueries[0]?.position || '—'), good: d.topQueries.length > 0}
+    ].map(m => '<div class="status-box ' + (m.good ? 'good' : '') + '"><div class="status-box-label">' + m.label + '</div><div class="status-box-val">' + m.val + '</div><div class="status-box-sub">' + m.sub + '</div></div>').join('');
+
     mEl.innerHTML = [
       ["Impressions (" + scDays + "d)", d.impressions.toLocaleString(), ""],
       ["Clicks", d.clicks.toLocaleString(), ""],
@@ -1116,161 +1270,99 @@ function copySwatch(el, hex) {
 }
 
 // ── Tasks ────────────────────────────────────────────────────────────────────
+let _gTasks = [];
+
 async function loadTasks() {
+  const status = document.getElementById("taskStatus");
+  const container = document.getElementById("tasksContainer");
+  if (status) status.textContent = "Loading…";
   try {
     const r = await fetch("/api/tasks");
     if (r.status === 401) { handle401(); return; }
     const d = await r.json();
-    checkedTasks = new Set(d.checked || []);
-    customTasks = d.custom || [];
+    if (d.error) throw new Error(d.error);
+    _gTasks = d.tasks || [];
     renderTasks();
-  } catch { renderTasks(); }
-}
-
-function scheduleAutosave() {
-  clearTimeout(autosaveTimer);
-  const tag = document.getElementById("autosaveTag");
-  if (tag) tag.textContent = "unsaved changes…";
-  autosaveTimer = setTimeout(() => saveTasks(false), 2500);
+    if (status) status.textContent = "";
+  } catch(e) {
+    if (status) status.textContent = "Could not load tasks: " + e.message;
+  }
 }
 
 function renderTasks() {
-  // Use data- attributes throughout — avoids all quote-escaping in inline handlers
-  const builtIn = Object.entries(WEEKS).map(([week, tasks]) => {
-    const done = tasks.filter(t => checkedTasks.has(t)).length;
-    const pct = Math.round(done / tasks.length * 100);
-    const items = tasks.map((t, i) => {
-      const id = "tk" + i + week.replace(/\W/g, "");
-      const chk = checkedTasks.has(t);
-      return '<div class="task-item' + (chk ? " done" : "") + '">' +
-        '<input type="checkbox" id="' + id + '"' + (chk ? " checked" : "") +
-        ' data-task="' + escAttr(t) + '" onchange="toggleBuiltinEl(this)">' +
-        '<label for="' + id + '">' + escHtml(t) + '</label>' +
-        '</div>';
-    }).join("");
-    return '<div class="task-group">' +
-      '<div class="task-group-header">' +
-        '<span class="task-group-title">' + escHtml(week) + '</span>' +
-        '<span class="task-progress">' + done + '/' + tasks.length + ' &middot; ' + pct + '%</span>' +
-      '</div><div class="task-list">' + items +
-        '<div class="add-task-row">' +
-          '<input class="add-task-input" data-week="' + escAttr(week) + '" placeholder="+ Add task to this group…" onkeydown="if(event.key===String.fromCharCode(13))addTaskEl(this)">' +
-          '<button class="btn sm" data-week="' + escAttr(week) + '" onclick="addTaskBtn(this)">Add</button>' +
-        '</div></div></div>';
-  }).join("");
-
-  const customWeeks = {};
-  customTasks.forEach(t => { if (!customWeeks[t.week]) customWeeks[t.week] = []; customWeeks[t.week].push(t); });
-
-  const customHtml = Object.entries(customWeeks).map(([week, tasks]) => {
-    const done = tasks.filter(t => t.done).length;
-    const pct = tasks.length ? Math.round(done / tasks.length * 100) : 0;
-    const items = tasks.map(t =>
-      '<div class="task-item' + (t.done ? " done" : "") + '">' +
-      '<input type="checkbox"' + (t.done ? " checked" : "") +
-      ' data-id="' + escAttr(t.id) + '" onchange="toggleCustomEl(this)">' +
-      '<label>' + escHtml(t.text) + '</label>' +
-      '<button class="task-del" data-id="' + escAttr(t.id) + '" onclick="deleteTaskEl(this)" title="Delete">&#215;</button>' +
-      '</div>'
-    ).join("");
-    return '<div class="task-group">' +
-      '<div class="task-group-header">' +
-        '<span class="task-group-title">' + escHtml(week) + ' <span style="font-size:11px;color:var(--gold)">Custom</span></span>' +
-        '<span class="task-progress">' + done + '/' + tasks.length + ' &middot; ' + pct + '%</span>' +
-      '</div><div class="task-list">' + items + '</div></div>';
-  }).join("");
-
-  const newWeekHtml = '<div class="task-group">' +
-    '<div class="task-group-header" style="border-radius:var(--r)">' +
-      '<span class="task-group-title" style="color:var(--muted);font-size:15px">Add to a new group</span>' +
-    '</div>' +
-    '<div style="display:flex;gap:8px;padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-top:none;border-radius:0 0 var(--r) var(--r)">' +
-      '<input id="newWeekName" class="add-task-input" placeholder="Group name…" style="flex:1">' +
-      '<input id="newWeekTask" class="add-task-input" placeholder="First task…" style="flex:2">' +
-      '<button class="btn sm" onclick="addToNewWeek()">Add</button>' +
-    '</div></div>';
-
-  document.getElementById("tasksContainer").innerHTML = builtIn + customHtml + newWeekHtml;
+  const container = document.getElementById("tasksContainer");
+  if (!container) return;
+  if (!_gTasks.length) {
+    container.innerHTML = '<p style="color:var(--muted);font-size:13px;padding:8px 0">No tasks. Add one above.</p>';
+    updateTaskOverview(); return;
+  }
+  container.innerHTML = _gTasks.map(t =>
+    '<div class="task-item' + (t.status === "completed" ? " done" : "") + '" data-id="' + escAttr(t.id) + '">' +
+      '<input type="checkbox"' + (t.status === "completed" ? " checked" : "") +
+      ' onchange="toggleGTask(this)" data-id="' + escAttr(t.id) + '">' +
+      '<label style="flex:1">' + escHtml(t.title) + (t.notes ? '<span style="display:block;font-size:11px;color:var(--muted);margin-top:2px">' + escHtml(t.notes) + '</span>' : '') + '</label>' +
+      '<button class="task-del" onclick="deleteGTask(this)" data-id="' + escAttr(t.id) + '" title="Delete">&#215;</button>' +
+    '</div>'
+  ).join("");
   updateTaskOverview();
 }
 
 function updateTaskOverview() {
-  const builtTotal = Object.values(WEEKS).flat().length;
-  const builtDone  = Object.values(WEEKS).flat().filter(t => checkedTasks.has(t)).length;
-  document.getElementById("ov-tasks").textContent = (builtDone + customTasks.filter(t => t.done).length) + "/" + (builtTotal + customTasks.length);
+  const done  = _gTasks.filter(t => t.status === "completed").length;
+  const total = _gTasks.length;
+  const el = document.getElementById("ov-tasks");
+  if (el) el.textContent = done + "/" + total;
 }
 
-// data-attribute handler wrappers — no string escaping needed
-function toggleBuiltinEl(cb) {
-  const task = cb.dataset.task;
-  if (cb.checked) checkedTasks.add(task); else checkedTasks.delete(task);
-  renderTasks(); scheduleAutosave();
-}
-function toggleCustomEl(cb) {
-  const t = customTasks.find(t => t.id === cb.dataset.id);
-  if (t) t.done = cb.checked;
-  renderTasks(); scheduleAutosave();
-}
-function deleteTaskEl(btn) {
-  customTasks = customTasks.filter(t => t.id !== btn.dataset.id);
-  renderTasks(); scheduleAutosave();
-}
-function addTaskEl(input) {
-  const text = input.value.trim(); if (!text) return;
-  const week = input.dataset.week;
-  customTasks.push({ id: Date.now() + Math.random().toString(36).slice(2), text, week, done: false });
-  input.value = ""; renderTasks(); scheduleAutosave();
-}
-function addTaskBtn(btn) {
-  const input = btn.previousElementSibling;
-  const text = input.value.trim(); if (!text) return;
-  const week = btn.dataset.week;
-  customTasks.push({ id: Date.now() + Math.random().toString(36).slice(2), text, week, done: false });
-  input.value = ""; renderTasks(); scheduleAutosave();
-}
-// keep old names as aliases in case called from anywhere else
-function toggleBuiltin(cb, task) { if (cb.checked) checkedTasks.add(task); else checkedTasks.delete(task); renderTasks(); scheduleAutosave(); }
-function toggleCustom(id, checked) { const t = customTasks.find(t => t.id === id); if (t) t.done = checked; renderTasks(); scheduleAutosave(); }
-function deleteTask(id) { customTasks = customTasks.filter(t => t.id !== id); renderTasks(); scheduleAutosave(); }
-function addTask(week, input) {
-  const text = input.value.trim(); if (!text) return;
-  customTasks.push({ id: Date.now() + Math.random().toString(36).slice(2), text, week, done: false });
-  input.value = ""; renderTasks(); scheduleAutosave();
-}
-function addToNewWeek() {
-  const weekEl = document.getElementById("newWeekName");
-  const taskEl = document.getElementById("newWeekTask");
-  const week = weekEl.value.trim(); const text = taskEl.value.trim();
-  if (!week || !text) return;
-  customTasks.push({ id: Date.now() + Math.random().toString(36).slice(2), text, week, done: false });
-  weekEl.value = ""; taskEl.value = ""; renderTasks(); scheduleAutosave();
-}
-function deleteTask(id) {
-  customTasks = customTasks.filter(t => t.id !== id);
-  renderTasks(); scheduleAutosave();
-}
-
-async function saveTasks(manual = true) {
-  const el = document.getElementById("taskStatus");
-  const tag = document.getElementById("autosaveTag");
-  if (manual) el.innerHTML = '<div class="status warn"><span class="spin">&#8635;</span> Saving…</div>';
+async function addGTask() {
+  const input = document.getElementById("newTaskInput");
+  const title = input.value.trim();
+  if (!title) return;
+  input.value = "";
+  const status = document.getElementById("taskStatus");
   try {
-    const r = await fetch("/api/tasks", {
-      method: "POST", headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({ checked: [...checkedTasks], custom: customTasks })
+    const r = await fetch("/api/tasks/add", {
+      method: "POST", headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({ title })
     });
-    if (!r.ok) throw new Error("Save failed " + r.status);
-    if (manual) {
-      el.innerHTML = '<div class="status ok">&#10003; Saved to Google Drive</div>';
-      setTimeout(() => el.innerHTML = "", 3000);
-    }
-    if (tag) tag.textContent = "saved ✓";
-    setTimeout(() => { if (tag) tag.textContent = ""; }, 3000);
+    const d = await r.json();
+    if (d.error) throw new Error(d.error);
+    _gTasks.unshift(d.task);
+    renderTasks();
+    if (status) status.textContent = "";
   } catch(e) {
-    if (manual) el.innerHTML = '<div class="status err">&#10007; ' + e.message + '</div>';
-    if (tag) tag.textContent = "save failed";
+    if (status) status.textContent = "Could not add task: " + e.message;
+    input.value = title;
   }
 }
+
+async function toggleGTask(cb) {
+  const id = cb.dataset.id;
+  const task = _gTasks.find(t => t.id === id);
+  if (!task) return;
+  const prev = task.status;
+  task.status = cb.checked ? "completed" : "needsAction";
+  renderTasks();
+  try {
+    await fetch("/api/tasks/" + encodeURIComponent(id) + "/complete", { method: "PATCH" });
+  } catch(e) {
+    task.status = prev; renderTasks();
+  }
+}
+
+async function deleteGTask(btn) {
+  const id = btn.dataset.id;
+  const task = _gTasks.find(t => t.id === id);
+  if (!task || !confirm('Delete "' + task.title + '"?')) return;
+  _gTasks = _gTasks.filter(t => t.id !== id);
+  renderTasks();
+  try {
+    await fetch("/api/tasks/" + encodeURIComponent(id), { method: "DELETE" });
+  } catch(e) {
+    loadTasks();
+  }
+}
+
 
 // ── Utilities ─────────────────────────────────────────────────────────────────
 function copyText(url) {
