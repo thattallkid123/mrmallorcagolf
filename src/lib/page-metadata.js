@@ -60,9 +60,9 @@ const HOME_METADATA = {
 
 const GOLF_COURSES_METADATA = {
   en: {
-    title: 'Golf Courses in Mallorca & Majorca — 2026',
+    title: 'Golf Courses in Mallorca 2026 | Reviews, Green Fees & Advice',
     description:
-      'Compare every golf course in Mallorca: green fees (€55–€250), par, difficulty, regions, and first-hand PGA recommendations on who each course suits. Updated 2026.',
+      'Compare every golf course in Mallorca in one place, with green fees, regions, difficulty, and honest PGA recommendations on who each course suits best.',
   },
   de: {
     title: 'Mallorca Golf Guide 2026 - Jeder Kurs auf der Insel',
@@ -243,9 +243,9 @@ const PLAY_WITH_A_PRO_METADATA = {
 
 const CONTACT_METADATA = {
   en: {
-    title: 'Contact Andy - PGA Professional in Mallorca',
+    title: 'Contact Andy Griffiths | Mallorca Golf Planning & Private Days',
     description:
-      'Get in touch with Andy Griffiths, PGA Advanced Professional in Mallorca. Personal replies within 24 hours. WhatsApp or email - your choice.',
+      'Tell Andy Griffiths your dates, handicap, hotel area, and what you want from the trip. Personal reply within 24 hours by email or WhatsApp.',
   },
   de: {
     title: 'Kontakt Andy Griffiths - UK PGA Professional',
