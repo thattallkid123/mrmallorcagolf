@@ -162,6 +162,25 @@ function renderBlock(block, index, locale, imageOrdinal) {
     )
   }
 
+  if (block.type === 'notes') {
+    return (
+      <section key={`notes-${index}`} className="post-notes">
+        <div className="post-notes__header">
+          <span className="post-notes__eyebrow">{block.eyebrow || 'Mr Mallorca Notes'}</span>
+          {block.title ? <h2>{block.title}</h2> : null}
+        </div>
+        <ul className="post-notes__list">
+          {block.items.map(([label, text]) => (
+            <li key={label} className="post-notes__item">
+              <span className="post-notes__label">{label}</span>
+              <p><InlineRichText text={text} locale={locale} /></p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
   if (block.type === 'cta') {
     const href = joinHref(locale, block.href)
     return (

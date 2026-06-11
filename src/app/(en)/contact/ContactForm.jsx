@@ -76,6 +76,13 @@ export default function ContactForm({ locale = 'en' }) {
             <p className="contact-left__intro">{content.hero.intro}</p>
           </div>
 
+          {content.trust ? (
+            <div className="promise-block">
+              <p>&ldquo;{content.trust.quote}&rdquo;</p>
+              <cite>- {content.trust.credit}</cite>
+            </div>
+          ) : null}
+
           <div className="contact-cards">
             <a
               href="mailto:andy@mrmallorcagolf.com"

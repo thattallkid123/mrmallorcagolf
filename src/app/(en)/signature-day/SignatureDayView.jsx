@@ -77,8 +77,6 @@ const HOTEL_PARTNERS = [
 export default function SignatureDayView() {
   return (
     <main>
-
-      {/* HERO */}
       <section className="pwap-hero pwap-hero--tall">
         <div className="pwap-hero__bg" aria-hidden="true">
           <Image
@@ -103,11 +101,11 @@ export default function SignatureDayView() {
             </p>
             <p className="eyebrow eyebrow--gold pwap-hero__eyebrow">The Complete Experience, Mallorca</p>
             <h1 className="serif-display pwap-hero__title">
-              One day.<br />
-              The whole thing done properly.
+              A private golf day<br />
+              built around the round, the body, and the evening.
             </h1>
             <p className="pwap-hero__body">
-              Golf with me, a physio session with The Golf Doctor, private transfers, and dinner at a partner hotel. Every element coordinated in advance, built around you specifically.
+              Golf with me, a physio session with John Brazier, private transfers, and dinner at a partner hotel. Every part is coordinated in advance so the day feels deliberate, personal, and worth the premium.
             </p>
             <p className="pwap-hero__price">From €3,000</p>
             <div className="pwap-hero__actions">
@@ -118,12 +116,11 @@ export default function SignatureDayView() {
         </div>
       </section>
 
-      {/* INTRO */}
       <section className="pwap-day" id="the-day">
         <div className="pwap-day__left reveal">
           <p className="eyebrow">What this is</p>
           <h2 className="serif-display pwap-section-title">
-            A Play With A Pro day, with the full picture around it.
+            A premium golf day, not just a longer round.
           </h2>
           <p>
             I play 18 holes with you, watch how your game behaves under real conditions, and take notes throughout. After the round, John Brazier examines the physical side of what I observed. Between us, you leave with one connected picture of your game: what happened on the course, why it is happening in your body, and what to do about it.
@@ -163,7 +160,42 @@ export default function SignatureDayView() {
         </div>
       </section>
 
-      {/* DAY ARC */}
+      <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
+        <div className="pwap-day__left reveal">
+          <p className="eyebrow">Who this is for</p>
+          <h2 className="serif-display pwap-section-title">High-touch, premium, and built for a proper occasion.</h2>
+          <div className="included" style={{ marginTop: '1.25rem' }}>
+            <h3>Ideal for</h3>
+            <ul className="included-list">
+              <li className="included-item"><span className="included-dot"></span><p><strong>Golfers who want the day to feel special</strong><br /><span style={{ fontWeight: 400 }}>A serious private booking, not a standard tee time with a few extras bolted on.</span></p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>Players who want a clear takeaway</strong><br /><span style={{ fontWeight: 400 }}>You get a connected read on the round, the body, and the priorities afterward.</span></p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>Groups marking an occasion</strong><br /><span style={{ fontWeight: 400 }}>Ideal for a trip that should feel thoughtful, memorable, and well handled.</span></p></li>
+            </ul>
+          </div>
+          <div className="included" style={{ marginTop: '1rem' }}>
+            <h3>Not ideal for</h3>
+            <ul className="included-list">
+              <li className="included-item"><span className="included-dot"></span><p><strong>Lowest-price shoppers</strong><br /><span style={{ fontWeight: 400 }}>This is a premium day and is priced accordingly.</span></p></li>
+              <li className="included-item"><span className="included-dot"></span><p><strong>Anyone looking for a quick add-on</strong><br /><span style={{ fontWeight: 400 }}>If you just want a tee time, the standard Play With A Pro route is the better fit.</span></p></li>
+            </ul>
+          </div>
+        </div>
+        <div className="pwap-day__right reveal">
+          <div className="pull-quote">
+            <p>&ldquo;After just 18 holes together, I&rsquo;ve discovered a new ceiling to my potential.&rdquo;</p>
+          </div>
+          <div className="pwap-course-note">
+            <p className="eyebrow">Why people book it</p>
+            <p>
+              The value here is not just the round. It is the coordination, the physical follow-through, the dinner, and the feeling that the whole day has been built around the guest rather than assembled from separate services.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              That is what makes the price feel premium instead of arbitrary.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="how">
         <div className="how__header reveal">
           <p className="eyebrow">How the day runs</p>
@@ -182,7 +214,6 @@ export default function SignatureDayView() {
         </div>
       </section>
 
-      {/* ANDY AND JOHN COMBINED */}
       <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
         <div className="pwap-day__left reveal">
           <p className="eyebrow">Why this is different</p>
@@ -216,7 +247,6 @@ export default function SignatureDayView() {
         </div>
       </section>
 
-      {/* COURSES */}
       <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
         <div className="pwap-day__left reveal">
           <p className="eyebrow">The course</p>
@@ -241,7 +271,6 @@ export default function SignatureDayView() {
         </div>
       </section>
 
-      {/* HOTEL PARTNERS */}
       <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
         <div className="pwap-day__left reveal">
           <p className="eyebrow">The evening</p>
@@ -283,7 +312,6 @@ export default function SignatureDayView() {
         </div>
       </section>
 
-      {/* OPTIONAL EXTRAS */}
       <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
         <div className="pwap-day__left reveal">
           <p className="eyebrow">Optional and additional</p>
@@ -304,12 +332,14 @@ export default function SignatureDayView() {
         </div>
       </section>
 
-      {/* PRICING */}
       <section className="pwap-packages" id="pricing" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
         <div className="pwap-packages__header reveal">
           <p className="eyebrow">Pricing</p>
           <h2 className="serif-display pwap-section-title">Confirmed after the first conversation.</h2>
           <p>The Signature Day starts at €3,000. The final figure depends on the course, the hotel, the number of people, and which extras you want. Everything is confirmed before you commit to anything.</p>
+          <p style={{ maxWidth: 760, margin: '0.75rem auto 0', lineHeight: 1.8, color: 'var(--charcoal)' }}>
+            What is included is the day itself: course choice, tee time, the full round, John Brazier&apos;s session, private transfers, and dinner coordination. What is separate is the green fee, lunch, and any optional extras. That split keeps the offer clear and makes the premium part of the day easy to understand.
+          </p>
         </div>
         <div style={{ maxWidth: 640, margin: '2rem auto 0' }} className="pwap-course-note">
           <p className="eyebrow">Always included</p>
@@ -326,7 +356,6 @@ export default function SignatureDayView() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
       <section className="pwap-final-cta reveal" style={{ borderTop: '1px solid var(--border, #e8e4dc)', textAlign: 'center', padding: '5rem 1.5rem' }}>
         <p className="eyebrow">Ready to book</p>
         <h2 className="serif-display" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', maxWidth: 560, margin: '0 auto 1.5rem', fontWeight: 400 }}>

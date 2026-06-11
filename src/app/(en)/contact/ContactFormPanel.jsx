@@ -36,6 +36,15 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         <p>{content.form.intro}</p>
       </div>
 
+      {content.form.experienceHelp ? (
+        <div style={{ background: 'rgba(255,255,255,0.76)', border: '1px solid rgba(184,151,90,0.18)', borderLeft: '3px solid var(--gold)', padding: '16px 18px', marginBottom: '1.35rem' }}>
+          <p style={{ margin: 0, fontSize: '0.88rem', lineHeight: 1.75, color: 'var(--charcoal)' }}>
+            <strong style={{ display: 'block', marginBottom: '0.35rem', color: 'var(--deep)' }}>{content.form.experienceHelpTitle}</strong>
+            {content.form.experienceHelp}
+          </p>
+        </div>
+      ) : null}
+
       <form onSubmit={handleSubmit} aria-busy={submitting}>
         <input
           type="text"

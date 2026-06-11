@@ -6,6 +6,8 @@ export const GOLF_COURSES_CONTENT = {
       breadcrumbCurrent: 'Golf Courses in Mallorca',
       title: 'Golf Courses in Mallorca: My 2026 Guide',
       tags: ['24 Courses Covered', 'Green Fees Updated 2026', 'Played and Researched Properly', 'PGA Professional'],
+      lead:
+        "If you are deciding where to play first, start here. Use the explorer to narrow the island down by area, price, and difficulty, then send me your dates, handicap, and hotel area and I'll point you towards the right shortlist.",
     },
     regionHeaders: {
       palma: { title: 'Palma', subtitle: 'Courses around the city', count: '8 courses' },
@@ -29,19 +31,33 @@ export const GOLF_COURSES_CONTENT = {
       sidebarH3: 'Want to play one of these courses with a UK PGA professional alongside you?',
       sidebarP: 'Private day, everything arranged and a course chosen for what would be best for you.',
       sidebarBtn: 'Get in touch →',
-      quickPicksTitle: 'Quick picks',
-      quickPicks: [
-        'Best overall: Son Gual',
-        'Most scenic: Alcanada',
-        'Best in Spain: Son Muntaner',
-        'Most challenging: Golf de Andratx',
-        'Best for beginners: Son Quint',
-        'Best value: Golf Pollença',
-        'Best East coast: Pula or Canyamel',
+      startHereEyebrow: 'Start here',
+      startHereTitle: 'How to use this page',
+      startHerePaths: [
+        {
+          title: 'I want the best first round',
+          body: 'Start with Son Gual, Son Muntaner, and Alcanada. They give most visitors the clearest shortlist.',
+        },
+        {
+          title: 'I need the right fit for my group',
+          body: 'Filter by region, then compare price, difficulty, and the review note on each card.',
+        },
+        {
+          title: 'I want a personal recommendation',
+          body: 'Once you have two or three contenders, send your dates, level, and hotel area and I will narrow it down.',
+        },
       ],
-      ctaEyebrow: 'Want to play one of these?',
-      ctaH2: 'Private golf day, with me alongside you from the first tee onwards.',
-      ctaP: "Tell me which course interests you, your dates, and your handicap. I'll come back with a recommendation within 24 hours.",
+      quickPicksTitle: 'Start with these reviews',
+      quickPicks: [
+        'Son Gual for the strongest all-round first impression',
+        'Son Muntaner for tour-level condition and premium feel',
+        'Alcanada for the most scenic full-day round',
+      ],
+      explorerIntro:
+        'Use the filters to narrow the island down. Each card shows price shape, difficulty, Andy rating, and the key thing to know before you book.',
+      ctaEyebrow: 'Narrowed it down?',
+      ctaH2: 'Tell Andy the trip details and get a proper course recommendation back.',
+      ctaP: "Send your dates, handicap, hotel area, and the two or three courses you are considering. I'll come back personally within 24 hours with the clearest fit.",
       seeExperiences: 'See the Experiences →',
       getInTouch: 'Get in touch',
       courseNote: '',

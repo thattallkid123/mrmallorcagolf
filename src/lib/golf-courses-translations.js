@@ -2,9 +2,9 @@ export const GOLF_COURSE_UI_TRANSLATIONS = {
   en: {
     sidebarH3: 'Want to play one of these courses with a UK PGA professional alongside you?',
     sidebarP: 'Private day, everything arranged, and the course chosen around what would be best for you.',
-    ctaEyebrow: 'Want to play one of these?',
-    ctaH2: 'Private golf day, with me alongside you from the first tee onwards.',
-    ctaP: "Tell me which course interests you, your dates, and your handicap. I'll come back with a recommendation within 24 hours.",
+    ctaEyebrow: 'Narrowed it down?',
+    ctaH2: 'Tell Andy the trip details and get a proper course recommendation back.',
+    ctaP: "Send your dates, handicap, hotel area, and the two or three courses you are considering. I'll come back personally within 24 hours with the clearest fit.",
   },
   de: {
     allCourses: 'Alle Plätze', expertPicks: '★ Nur Expertentipps',

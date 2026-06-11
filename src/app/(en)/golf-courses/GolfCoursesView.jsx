@@ -129,11 +129,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
               ))}
             </div>
             <p className="page-hero__lead" style={{ maxWidth: 780 }}>
-              Start with our reviews of{' '}
-              <Link href={joinHref(locale, '/guides/son-gual-review')}>Son Gual</Link>,{' '}
-              <Link href={joinHref(locale, '/guides/son-muntaner-review')}>Son Muntaner</Link>, and{' '}
-              <Link href={joinHref(locale, '/guides/alcanada-review')}>Alcanada</Link>{' '}
-              if you are deciding where to play first in Mallorca.
+              {content.hero.lead}
             </p>
           </div>
         </header>
@@ -146,7 +142,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
               <h2 className="serif-display" style={{ marginTop: 8 }}>Preparing filters and full course data...</h2>
               {/* Server-rendered course index for search engines */}
               <ul aria-hidden="true" style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
-                {GOLF_COURSE_DATA.map(course => (
+                {GOLF_COURSE_DATA.flatMap(region => region.courses).map(course => (
                   <li key={course.name}>{course.name} — Mallorca golf course</li>
                 ))}
               </ul>

@@ -27,6 +27,9 @@ export const CONTACT_CONTENT = {
       eyebrow: 'Enquiry form',
       title: 'Start planning your trip.',
       intro: 'The more detail you give me, the better I can match the courses, add-ons, and timing to your group.',
+      experienceHelpTitle: 'Which option fits you?',
+      experienceHelp:
+        'Choose the closest match and I will refine it with you. Trip planning means I shape the route around your dates and group. Play With A Pro means you want Andy on the course with you. If you are not sure yet, choose the unsure option and I will point you in the right direction.',
       labels: {
         fname: 'First name',
         lname: 'Last name',
@@ -67,13 +70,18 @@ export const CONTACT_CONTENT = {
       heading: 'Buying this as a gift?',
       body: "Let me know in the message above and I'll prepare a certificate and keep the day details private until you're ready to share them.",
     },
+    trust: {
+      eyebrow: 'Why people enquire',
+      quote: "After just 18 holes together, I've discovered a new ceiling to my potential.",
+      credit: 'Jo, Play With A Pro client',
+    },
     whatNext: {
       heading: 'What happens next',
       body: 'I read every enquiry myself. I will come back within 24 hours with the clearest next step: the course logic, planning route, or the best way to add a Play With A Pro day.',
     },
     stayInTouch: {
       heading: 'Stay in touch',
-      body: 'Course notes and Mallorca golf insights every two weeks.straight to your inbox.',
+      body: 'Course notes and Mallorca golf insights every two weeks straight to your inbox.',
     },
     dateCta: 'Build Your Itinerary',
   },
