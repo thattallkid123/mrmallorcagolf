@@ -20,7 +20,7 @@ export function getClientKey(request, scope = 'default') {
 
 export function isAllowedOrigin(request, extraOrigins = []) {
   const origin = request.headers.get('origin')
-  if (!origin) return true
+  if (!origin) return process.env.NODE_ENV !== 'production'
 
   const includeDevOrigins = process.env.NODE_ENV !== 'production'
   const allowed = new Set([
