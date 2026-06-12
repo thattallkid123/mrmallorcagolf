@@ -1,140 +1,112 @@
 # Content Structure & File Dependencies
 
+## Pricing Source Order
+
+When pricing changes, treat the files in this order:
+
+1. shared website content in `src/lib/`
+2. page components and metadata that render that shared content
+3. local tools and static apps in `mmg-tools/` and `standalone-apps/`
+4. internal docs and audit notes
+5. private encyclopaedia/reference notes for known-but-not-public booking paths
+
+The practical source of truth for package and offer values is `src/lib/offers-content.js`. Other files should consume those values, not recreate them.
+
+Santa Ponsa 2 and 3 can be documented in the private reference layer as known pricing with restricted access. That keeps the price available for Andy without implying public bookability.
+
+Historical planning and audit docs may mention prices, but they should point back to the source order above instead of acting like a second source of truth.
+
 ## Critical File Map
+
+### `src/lib/offers-content.js`
+**Purpose:** Shared offer content across pages, metadata, and form options.
+
+**Key sections:**
+- `en.playHeroBody` - PWAP hero body text
+- `en.tripPlanningContactLabel` - Contact form option for trip planning
+- `en.offers` - Individual offer definitions
+
+**Rule:** keep the pricing facts here and let the page files consume them.
 
 ### `src/lib/play-with-a-pro-content.js`
 **Purpose:** Controls the Play With A Pro page (`/play-with-a-pro`)
 
 **Key sections:**
-- `en.hero` - PWAP hero section (title, body, CTA)
-- `en.day` - What the day looks like (paragraphs, quote)
-- `en.included` - Included services (4 items as of latest edits)
-- `en.who` - Who this is for (3 cards)
+- `en.hero` - PWAP hero section
+- `en.day` - What the day looks like
+- `en.included` - Included services
+- `en.who` - Who this is for
 - `en.testimonials` - Client testimonials
-- **`en.packages.tiers`** ⭐ **CRITICAL:** 4-tier pricing structure
-  - Solo (featured: false)
-  - Group (featured: true)
-  - Signature Day (signature: true)
-  - Plan Your Trip (featured: false)
-- `en.finalCta` - End page CTA
-
-**Repeated for:** DE, ES, FR, NL, SV, ZH (all must have identical tier structure)
-
-### `src/lib/offers-content.js`
-**Purpose:** Shared offer content across pages (homepage, contact form, etc.)
-
-**Key sections:**
-- `en.playHeroBody` - PWAP hero body text (can differ from play-with-a-pro-content.js hero.body)
-- `en.tripPlanningContactLabel` - Contact form option for trip planning
-- `en.offers` - Individual offer definitions (Solo, Group, Premium/Signature)
-
-**⚠️ WARNING:** This file has some offer data but PWAP page uses play-with-a-pro-content.js. Don't rely on offers-content.js for PWAP tier definitions.
+- `en.packages.tiers` - page layout for the pricing section
+- `en.finalCta` - end page CTA
 
 ### `src/lib/homepage-content.js`
 **Purpose:** Homepage content including packages/pricing section
 
 **Key sections:**
-- `en.packages.tiers` ⭐ **SEPARATE from PWAP tiers** — has its own 4-tier array with same featured flags
+- `en.packages.tiers` - homepage pricing section
 - `en.packages.multiDay` - Trip planning CTA
-- `en.credentials` - Andy's credentials/credentials section
+- `en.credentials` - Andy's credentials section
 - `en.quote`, `en.winners`, `en.faq` - Other homepage sections
 
-**⚠️ IMPORTANT:** Homepage tiers are INDEPENDENT of PWAP tiers. They happen to have the same featured flags, but they're in different files. Changing one does NOT automatically update the other.
+**Important:** Homepage pricing should stay aligned with `offers-content.js`. Do not hardcode a second copy of the same offer facts here.
 
 ### `src/lib/contact-content.js`
 **Purpose:** Contact/enquiry form content
 
 **Key sections:**
-- `en.form.experiences` - Radio button options (includes trip planning, PWAP options)
+- `en.form.experiences` - radio button options derived from `offers-content.js`
 - `en.whatNext` - "What happens next" section
-- `en.form.labels`, `en.form.placeholders` - Form field labels
+- `en.form.labels`, `en.form.placeholders` - form field labels
 
-## Dependency Relationships
+### Dependency Relationships
 
-```
+```text
 Homepage
-├─ homepage-content.js (packages.tiers)
-└─ offers-content.js (shared offer definitions)
+|-- homepage-content.js (packages.tiers)
+`-- offers-content.js (shared offer definitions)
 
 Play With A Pro Page
-└─ play-with-a-pro-content.js (packages.tiers) ← SEPARATE from homepage!
+`-- play-with-a-pro-content.js (packages.tiers)
 
 Contact Form
-├─ contact-content.js (form.experiences)
-├─ offers-content.js (offer labels)
-└─ offers-content.js (tripPlanningContactLabel)
+|-- contact-content.js (form.experiences derived from offers-content.js)
+`-- offers-content.js (offer labels and contact option labels)
 ```
 
 ## When to Edit Each File
 
 ### Edit `play-with-a-pro-content.js` when:
-- ✅ Adding/removing features from PWAP tier descriptions
-- ✅ Updating day paragraphs or quote
-- ✅ Changing who the day is for
-- ✅ Updating testimonials
-- ✅ Changing final CTA text
+- updating PWAP page wording
+- changing day paragraphs or quote
+- changing who the day is for
+- updating testimonials
+- changing final CTA text
 
 ### Edit `homepage-content.js` when:
-- ✅ Updating homepage pricing/packages section
-- ✅ Changing credentials section
-- ✅ Updating FAQs or other homepage sections
-- ⚠️ **NOT** for PWAP page content
+- updating homepage pricing/packages section
+- changing credentials section
+- updating FAQs or other homepage sections
 
 ### Edit `offers-content.js` when:
-- ✅ Updating offer descriptions shown across multiple pages
-- ✅ Changing trip planning label (used in contact form)
-- ⚠️ **NOT** the primary source for PWAP tiers
+- updating shared offer definitions
+- changing contact form labels that come from the shared offer set
+- changing cross-page pricing facts or shared offer prose
 
 ### Edit `contact-content.js` when:
-- ✅ Updating contact form labels or placeholders
-- ✅ Changing what happens next section
-- ✅ Modifying form experience options
-
-## Current Tier Structure (as of latest edits)
-
-### PWAP Page Tiers (play-with-a-pro-content.js)
-```
-1. Solo
-   featured: false
-   signature: undefined
-   price: €495
-
-2. Group
-   featured: true ← GREEN
-   signature: undefined
-   price: €950
-
-3. Signature Day
-   featured: false
-   signature: true ← GOLD
-   price: €3,000+
-
-4. Plan Your Trip
-   featured: false
-   signature: undefined
-   price: Price on enquiry
-```
-
-### Homepage Tiers (homepage-content.js)
-```
-Same structure as PWAP page (same featured/signature flags)
-```
+- updating contact form labels or placeholders
+- changing what happens next section
+- changing form layout or help text
 
 ## Translation Requirements
 
-**Both files need translation for all 6 languages:**
-- play-with-a-pro-content.js: EN, DE, ES, FR, NL, SV, ZH
-- homepage-content.js: EN, DE, ES, FR, NL, SV, ZH
-- contact-content.js: EN, DE, ES, FR, NL, SV, ZH
-- offers-content.js: EN, DE, ES, FR, NL, SV, ZH
-
-When editing any section, **translate for all 6 languages simultaneously** to maintain parity.
+Keep translated content aligned across all supported languages when editing shared copy.
 
 ## Common Mistakes to Avoid
 
-❌ Editing PWAP page content in homepage-content.js instead of play-with-a-pro-content.js
-❌ Changing featured/signature flags without updating all 6 languages
-❌ Adding a 5th tier to one language only
-❌ Translating only English without translating other languages
-❌ Forgetting to update both PWAP and homepage tier definitions
-❌ Using wrong file for offer definitions (offers-content.js vs play-with-a-pro-content.js)
+- editing PWAP page content in `homepage-content.js` instead of `play-with-a-pro-content.js`
+- changing pricing facts in one consumer file without updating `offers-content.js`
+- adding a second markdown handover instead of updating the existing master file
+- translating only English without updating the other languages
+- forgetting that contact option labels are derived from the shared offer library
+- using the wrong file for offer definitions instead of the shared source

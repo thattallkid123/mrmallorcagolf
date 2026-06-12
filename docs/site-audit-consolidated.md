@@ -3,6 +3,8 @@
 
 Items marked **[CONFIRMED IN CODE]** have been verified against the actual source. Items marked **[AUDIT ERROR]** were wrong in the original reviews and should be ignored.
 
+Pricing examples in this audit are observations and recommendations, not the source of truth. Use `docs/content-architecture.md` and the pricing visibility map before changing live rates.
+
 ---
 
 ## 1. Hero Section

@@ -4,7 +4,7 @@ import { getLocalizedGuideArticleContent } from './guide-article-content-localiz
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
     metadata: {
-      title: 'How Much Does Golf Cost in Mallorca? (2026 Green Fee Guide)',
+      title: 'How Much Does Golf Cost in Mallorca? | 2026 Green Fee Guide',
       description:
         'Green fees in Mallorca range from €55 to €250 depending on the course and season. Exact prices for all 24 courses in 2026, plus club hire, buggies, and where to save.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
@@ -142,7 +142,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'golf-trip-planning-mallorca': {
     metadata: {
-      title: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
+      title: 'How to Plan the Perfect Golf Trip to Mallorca | Courses, Base & Tee Times',
       description:
         'Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you are off the course. By a PGA professional based on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
@@ -154,7 +154,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       badgeGold: false,
       readTime: '7 min read',
       updated: 'March 2026',
-      title: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
+      title: 'How to Plan the Perfect Golf Trip to Mallorca | Courses, Base & Tee Times',
       intro:
         "No tourism copy, no padding. Which courses, when to go, how many rounds, getting around, and what to do when you're not on the course.",
       related: [
@@ -280,8 +280,8 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'Want the trip arranged properly - courses, tee times, restaurants, transport, PGA professional throughout?',
-        linkLabel: 'Get in touch to start planning →',
-        href: '/contact',
+        linkLabel: 'Plan your trip →',
+        href: '/plan-your-trip',
       },
     ],
   },
@@ -393,14 +393,14 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: "Planning a trip? Get in touch - I'll help you choose the right time and the right courses.",
-        linkLabel: 'Get in touch →',
-        href: '/contact',
+        linkLabel: 'Plan your trip →',
+        href: '/plan-your-trip',
       },
     ],
   },
   'best-golf-courses-mallorca': {
     metadata: {
-      title: "Best Golf Courses in Mallorca 2026 - Ranked & Reviewed by a PGA Professional",
+      title: "Best Golf Courses in Mallorca 2026 | Ranked & Reviewed by a PGA Professional",
       description:
         'All 24 Mallorca golf courses ranked by a PGA pro who plays them. Green fees from €55–€250, difficulty ratings, and an honest verdict on who each course suits. Updated 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
@@ -446,8 +446,8 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Golf Son Vida', 'Son Vida - Palma', '70', '\u20AC80-190', '8/10', '4.5', 'Historic course, Seve won here'],
           ['T Golf Palma (Puntiro)', 'Palma', '71', '\u20AC100-140', '7/10', '4.5', 'Only Nicklaus design on island'],
           ['Golf Santa Ponsa 1', 'Santa Ponsa', '72', '\u20AC75-125', '8/10', '4.0', 'European Tour venue, public access'],
-          ['Golf Santa Ponsa 2', 'Santa Ponsa', '72', 'Members or member guest only', '7/10', '3.5', 'Quiet, members-only feel'],
-          ['Golf Santa Ponsa 3', 'Santa Ponsa', '30 (9H)', 'Members or member guest only', '4/10', '3.0', 'Beginners, approach practice'],
+          ['Golf Santa Ponsa 2', 'Santa Ponsa', '72', 'Members or member guest only · €65-88', '7/10', '3.5', 'Quiet, members-only feel'],
+          ['Golf Santa Ponsa 3', 'Santa Ponsa', '30 (9H)', 'Members or member guest only · €25-30', '4/10', '3.0', 'Beginners, approach practice'],
           ['Golf Son Quint', 'Son Vida - Palma', '71', '\u20AC70-140', '5/10', '4.0', 'All levels, Tiger Woods played here'],
           ['Real Golf de Bendinat', 'Bendinat', '70', '\u20AC75-125', '6/10', '3.5', 'Wooded valley, bay views'],
           ['Golf Son Termes', 'Bunyola', '70', '\u20AC85-110', '6/10', '3.5', 'Tramuntana mountain setting'],
@@ -608,7 +608,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'golf-club-hire-mallorca': {
     metadata: {
-      title: 'Golf Club Hire in Mallorca 2026 - Prices, Best Companies & Honest Advice',
+      title: 'Golf Club Hire in Mallorca 2026 | Prices, Best Companies & Honest Advice',
       description:
         'Golf club hire in Mallorca costs €25–€65/day. I cover the best companies, what quality to expect, whether to bring your own, and where to get the best deal in 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
@@ -973,9 +973,9 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'cta',
-        text: "If this sounds like the kind of day you're looking for - get in touch. Tell me your dates and I'll sort the rest.",
-        linkLabel: 'Book your day →',
-        href: '/contact',
+        text: "If this sounds like the kind of trip you're planning - start with the full planning page. Tell me your dates and I'll sort the rest.",
+        linkLabel: 'Plan your trip →',
+        href: '/plan-your-trip',
         internal: true,
       },
     ],
