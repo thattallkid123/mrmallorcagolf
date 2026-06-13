@@ -3,6 +3,7 @@
 Use this when any golf pricing changes, including Santa Ponsa 2 and 3.
 
 For the full list of surfaces to check, see `docs/pricing-surfaces-inventory.md`.
+For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subject "Course or offer" --old OLD --new NEW`.
 
 ## 1. Update the source of truth
 

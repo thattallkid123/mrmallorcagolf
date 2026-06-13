@@ -3,7 +3,16 @@
 const path = require('path')
 const fs = require('fs')
 
-const [, , subject = 'pricing change', oldValue = '', newValue = ''] = process.argv
+function readArg(flag, fallback = '') {
+  const index = process.argv.indexOf(flag)
+  if (index >= 0 && process.argv[index + 1]) return process.argv[index + 1]
+  return fallback
+}
+
+const positional = process.argv.slice(2).filter((value) => !value.startsWith('--'))
+const subject = readArg('--subject', positional[0] || 'pricing change')
+const oldValue = readArg('--old', positional[1] || '')
+const newValue = readArg('--new', positional[2] || '')
 
 const inventoryPath = path.join(__dirname, '..', 'docs', 'pricing-surfaces-inventory.md')
 const inventoryExists = fs.existsSync(inventoryPath)
@@ -37,6 +46,9 @@ const sections = [
   '- new price',
   '- course name variants',
   '- recurring offer values like €495 and €950',
+  '',
+  'Example:',
+  'node scripts/pricing-change-reminder.js --subject "Santa Ponsa 2" --old 88 --new 65',
   '',
   inventoryExists ? `Inventory: ${path.relative(process.cwd(), inventoryPath)}` : null,
 ]
