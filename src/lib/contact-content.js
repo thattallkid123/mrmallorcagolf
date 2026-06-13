@@ -30,6 +30,8 @@ export const CONTACT_CONTENT = {
       experienceHelpTitle: 'Which option fits you?',
       experienceHelp:
         'Choose the closest match and I will refine it with you. Trip planning means I shape the route around your dates and group. Play With A Pro means you want Andy on the course with you. If you are not sure yet, choose the unsure option and I will point you in the right direction.',
+      sendPrompt:
+        'Best details to send: dates, group size, hotel area, handicap range, and any courses already on your shortlist. If you are still deciding, just say what you are comparing and I will narrow it down for you.',
       labels: {
         fname: 'First name',
         lname: 'Last name',
@@ -527,13 +529,92 @@ export const CONTACT_CONTENT = {
   },
 }
 
+const CONTACT_FORM_HELP = {
+  de: {
+    experienceHelpTitle: 'Welche Option passt?',
+    experienceHelp:
+      'Waehlen Sie die naechste passende Option und ich verfeinere den Rest mit Ihnen. Reiseplanung bedeutet, dass ich Ablauf, Plaetze und Logik rund um Ihre Daten und Gruppe aufbaue. Play With A Pro bedeutet, dass Andy mit Ihnen auf dem Platz ist. Wenn Sie noch unsicher sind, waehlen Sie die unsichere Option und ich leite Sie in die richtige Richtung.',
+  },
+  es: {
+    experienceHelpTitle: 'Que opcion le encaja?',
+    experienceHelp:
+      'Elija la opcion mas cercana y yo afinare el resto con usted. Planificacion de viaje significa que organizo la ruta, los campos y la logica alrededor de sus fechas y su grupo. Play With A Pro significa que Andy estara con usted en el campo. Si todavia no lo tiene claro, elija la opcion de duda y yo le orientare.',
+  },
+  fr: {
+    experienceHelpTitle: 'Quelle option vous correspond ?',
+    experienceHelp:
+      'Choisissez l option la plus proche et j affine le reste avec vous. La planification de voyage signifie que je construis le parcours, la logique et le rythme autour de vos dates et de votre groupe. Play With A Pro signifie qu Andy sera sur le parcours avec vous. Si vous n etes pas encore certain, choisissez l option d hesitation et je vous orienterai.',
+  },
+  nl: {
+    experienceHelpTitle: 'Welke optie past het best?',
+    experienceHelp:
+      'Kies de optie die het dichtst in de buurt komt en ik werk de rest met u uit. Reisplanning betekent dat ik route, banen en timing opbouw rond uw data en uw groep. Play With A Pro betekent dat Andy met u op de baan is. Twijfelt u nog, kies dan de onzekere optie en ik help u de juiste richting op.',
+  },
+  sv: {
+    experienceHelpTitle: 'Vilket upplagg passar bast?',
+    experienceHelp:
+      'Valj det alternativ som ligger narmast och sa finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplagget runt dina datum och din grupp. Play With A Pro betyder att Andy ar med dig ute pa banan. Om du inte ar saker annu, valj det osakra alternativet sa pekar jag dig ratt.',
+  },
+  zh: {
+    experienceHelpTitle: 'na yi zhong an pai geng he shi?',
+    experienceHelp:
+      'qing xuan ze zui jie jin de xuan xiang, wo hui zai ci ji chu shang bang nin xi hua. xing cheng gui hua yi wei zhe wo hui wei nin de ri qi he tong xing ren an pai qiu chang, lu xian he jie zou. Play With A Pro yi wei zhe Andy hui he nin yi qi xia chang. ru guo hai bu que ding, jiu xuan ze bu que ding de xuan xiang, wo hui bang nin pan duan.',
+  },
+}
+
+const CONTACT_SEND_PROMPT = {
+  en: 'Best details to send: dates, group size, hotel area, handicap range, and any courses already on your shortlist.',
+  de: 'Am besten senden: Daten, Gruppengroesse, Hotelregion, Handicap und alle Plaetze, die schon auf Ihrer Liste stehen.',
+  es: 'Mejor enviar: fechas, tamano del grupo, zona de hotel, handicap y los campos que ya tenga en mente.',
+  fr: 'Idealement : dates, taille du groupe, zone d hotel, niveau et parcours deja envisages.',
+  nl: 'Graag meesturen: data, groepsgrootte, hotelregio, handicap en banen die al op uw shortlist staan.',
+  sv: 'Skicka garna: datum, gruppstorlek, hotellomrade, handicap och banor ni redan funderar pa.',
+  zh: 'jian yi yi bing gao zhi: chu xing ri qi, ren shu, zhu su qu yu, cha dian fan wei, yi ji nin yi kao lv de qiu chang.',
+}
+
+const CONTACT_TRUST = {
+  de: {
+    eyebrow: 'Warum Menschen anfragen',
+    quote: 'Nach nur 18 Loechern zusammen habe ich eine neue Grenze meines Potenzials entdeckt.',
+    credit: 'Jo, Play With A Pro Kunde',
+  },
+  es: {
+    eyebrow: 'Por que la gente consulta',
+    quote: 'Despues de solo 18 hoyos juntos, he descubierto un nuevo techo para mi potencial.',
+    credit: 'Jo, cliente de Play With A Pro',
+  },
+  fr: {
+    eyebrow: 'Pourquoi les gens prennent contact',
+    quote: 'Apres seulement 18 trous ensemble, j ai decouvert un nouveau plafond a mon potentiel.',
+    credit: 'Jo, client Play With A Pro',
+  },
+  nl: {
+    eyebrow: 'Waarom mensen aanvragen',
+    quote: 'Na slechts 18 holes samen heb ik een nieuw plafond in mijn potentieel ontdekt.',
+    credit: 'Jo, Play With A Pro klant',
+  },
+  sv: {
+    eyebrow: 'Varfor folk hor av sig',
+    quote: 'Efter bara 18 hal tillsammans upptackte jag ett nytt tak for min potential.',
+    credit: 'Jo, Play With A Pro-kund',
+  },
+  zh: {
+    eyebrow: 'wei shen me da jia hui lai zi xun',
+    quote: 'zhi da le 18 dong, wo jiu fa xian zi ji de qian li hai neng zai wang shang zou yi ceng.',
+    credit: 'Jo, Play With A Pro ke hu',
+  },
+}
+
 export function getContactContent(locale = 'en') {
   const content = CONTACT_CONTENT[locale] || CONTACT_CONTENT.en
 
   return {
     ...content,
+    trust: content.trust || CONTACT_TRUST[locale] || CONTACT_CONTENT.en.trust,
     form: {
       ...content.form,
+      ...(content.form?.experienceHelpTitle ? {} : CONTACT_FORM_HELP[locale]),
+      sendPrompt: content.form?.sendPrompt || CONTACT_SEND_PROMPT[locale] || CONTACT_SEND_PROMPT.en,
       experiences: getContactExperienceOptions(locale),
     },
   }
