@@ -12,6 +12,8 @@ When pricing changes, treat the files in this order:
 
 The practical source of truth for package and offer values is `src/lib/offers-content.js`. Other files should consume those values, not recreate them.
 
+For the full price-change checklist, see `docs/pricing-change-checklist.md`.
+
 Santa Ponsa 2 and 3 can be documented in the private reference layer as known pricing with restricted access. That keeps the price available for Andy without implying public bookability.
 
 Historical planning and audit docs may mention prices, but they should point back to the source order above instead of acting like a second source of truth.

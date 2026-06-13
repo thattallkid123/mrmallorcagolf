@@ -41,9 +41,10 @@ Before substantial work, read:
 
 When pricing changes, use this order:
 
-1. `docs/content-architecture.md` - pricing visibility map and change checklist
-2. `docs/CONTENT_STRUCTURE.md` - source order for course data and pricing masters
-3. `CLAUDE.md` - repo-wide pricing handoff notes
+1. `docs/pricing-change-checklist.md` - step-by-step pricing update flow
+2. `docs/content-architecture.md` - pricing visibility map
+3. `docs/CONTENT_STRUCTURE.md` - source order for course data and pricing masters
+4. `CLAUDE.md` - repo-wide pricing handoff notes
 
 For Santa Ponsa 2 and 3, keep the pricing recorded in the master/reference layer even if the public website does not show a standard bookable green-fee pill. The access path is restricted; the pricing itself is not secret.
 

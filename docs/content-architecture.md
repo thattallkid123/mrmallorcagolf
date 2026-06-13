@@ -7,6 +7,8 @@ This repo used to be vulnerable to two expensive classes of regressions:
 
 The current setup is designed to stop that cycle.
 
+For the step-by-step pricing update flow, use `docs/pricing-change-checklist.md`.
+
 ## Single Sources Of Truth
 
 - `src/lib/offers-content.js`
