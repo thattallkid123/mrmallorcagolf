@@ -2,6 +2,8 @@
 
 Use this when any golf pricing changes, including Santa Ponsa 2 and 3.
 
+For the full list of surfaces to check, see `docs/pricing-surfaces-inventory.md`.
+
 ## 1. Update the source of truth
 
 - Edit `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_EDIT-THIS.xlsx`

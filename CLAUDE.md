@@ -198,6 +198,7 @@ python scripts/sync-pricing.py
 
 For the full pricing visibility map where prices appear on the site, in local tools, and in manual channels, see `docs/content-architecture.md`.
 When Andy asks to change pricing, follow `docs/pricing-change-checklist.md` plus the visibility map before editing only one page or file. That includes the website, the `mmg-tools` apps, the static apps, internal docs, and any private encyclopaedia/reference notes if Andy wants the price kept on record but not public. Santa Ponsa 2 and 3 pricing can live in those private reference notes even when the courses are not generally bookable.
+For a shorter reminder list of every surface to check, see `docs/pricing-surfaces-inventory.md`.
 
 **What the sync does NOT cover**  must update manually when pricing changes:
 - `src/lib/golf-courses-data.js`  pills text (e.g. `Peak 22 / Low 14`)
