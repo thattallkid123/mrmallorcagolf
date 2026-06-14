@@ -20,22 +20,22 @@ export const HOME_CONTENT = {
     },
     intro: {
       eyebrow: 'What I do',
-      title: 'A private day on the course with a PGA professional. Or let me plan the whole trip around it.',
+      title: 'A hosted 18-hole day with Andy. Or let me build the trip around it.',
       paragraphs: [
-        'Play With A Pro is the private on-course day. One course, 18 holes, with me alongside you: course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.',
-        'Plan Your Trip is the full planning service. If you want me to handle the courses, base, routing, tee times, buggies, and bookings before you arrive, I do that too.',
+        'Play With A Pro is the hosted on-course day. One course, 18 holes, with me alongside you: course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.',
+        'Plan Your Trip is the route-planning service. If you want me to handle the courses, base, routing, tee times, buggies, and bookings before you arrive, I do that too.',
       ],
       services: [
         {
           title: 'Play With A Pro',
-          text: 'A private course day with Andy. Standalone or the centrepiece of a wider trip.',
-          cta: 'Book the day',
+          text: 'A hosted 18-hole day with Andy. Standalone, or the anchor for a wider Mallorca trip.',
+          cta: 'Explore the day',
           href: '/play-with-a-pro',
         },
         {
           title: 'Plan Your Trip',
           text: 'Courses, base, routing, tee times, buggies, rental clubs, and dining suggestions.',
-          cta: 'Plan the trip',
+          cta: 'Build the route',
           href: '/plan-your-trip',
         },
       ],
@@ -219,7 +219,7 @@ export const HOME_CONTENT = {
     packages: {
       eyebrow: 'What I offer',
       title: 'A day on the course with me. Or the whole trip, built around it.',
-      body: 'The core service is Play With A Pro, a private day on the course with Andy. You can book it solo, as a group, or as a full Signature Experience. If you want the whole trip planned around it, that is available too.',
+      body: 'The core service is Play With A Pro, a hosted 18-hole day with Andy. You can book it solo, as a group, or as a Signature Day. If you want the whole trip planned around it, that is available too.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -254,7 +254,7 @@ export const HOME_CONTENT = {
           featured: true,
         },
         {
-          eyebrow: 'Signature Experience',
+          eyebrow: 'Signature Day',
           name: 'Signature Day',
           price: '€3,000+',
           features: [
@@ -290,9 +290,9 @@ export const HOME_CONTENT = {
       ],
       multiDay: {
         eyebrow: 'Want the full picture?',
-        title: 'Add trip planning around your day with Andy.',
+        title: 'Build the whole trip around your day with Andy.',
         body: 'If you want me to handle the whole trip: courses, base, routing, tee times, buggies, rentals, and dining. I can plan it all around the Play With A Pro day.',
-        cta: 'Plan Your Trip',
+        cta: 'Plan the trip',
         href: '/plan-your-trip',
       },
     },
@@ -307,11 +307,11 @@ export const HOME_CONTENT = {
         },
         {
           q: 'What kind of coaching do you offer?',
-          a: "On-course coaching during a full day of play. Not range lessons or individual swing instruction — I work with you playing real holes, where course management and decision-making matter. I help with club choice, scoring decisions, and the patterns that only show up when you're actually playing.",
+          a: "On-course coaching during a complete 18-hole round. Not range lessons or individual swing instruction — I work with you playing real holes, where course management and decision-making matter. I help with club choice, scoring decisions, and the patterns that only show up when you're actually playing.",
         },
         {
           q: 'Which course do you use?',
-          a: "It depends on you. Son Gual and Alcanada are my primary venues for a serious full day. For beginners, groups, or shorter rounds, there are better options, and I'll tell you honestly which one fits.",
+          a: "It depends on you. Son Gual and Alcanada are my primary venues for a serious 18-hole day. For beginners, groups, or shorter rounds, there are better options, and I'll tell you honestly which one fits.",
         },
         {
           q: 'How do I book?',
