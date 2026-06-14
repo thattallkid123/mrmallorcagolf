@@ -3810,6 +3810,41 @@ select.form-control { cursor: pointer; }
     transform: none;
     box-shadow: none;
   }
+  .packages { padding: 56px 20px; }
+  .package {
+    padding: 32px 22px;
+    box-shadow: none;
+    transform: none;
+  }
+  .package:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: rgba(26,25,22,0.08);
+  }
+  .package--featured:hover {
+    box-shadow: none;
+  }
+  .booking-policy,
+  .pwap-course-note,
+  .pwap-questionnaire,
+  .story__summary {
+    box-shadow: none;
+  }
+  .booking-policy,
+  .pwap-course-note,
+  .pwap-questionnaire {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .booking-policy {
+    border-width: 1px 0;
+  }
+  .pwap-course-note {
+    border-top-width: 1px;
+  }
+  .story__summary {
+    padding: 18px 18px;
+  }
 }
 
 /* Homepage polish refinement - 2026-06-01 */
