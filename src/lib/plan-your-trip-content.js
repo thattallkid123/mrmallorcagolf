@@ -1,3 +1,5 @@
+import { getOfferById, OFFER_IDS } from './offers-content.js'
+
 export const PLAN_YOUR_TRIP_CONTENT = {
   en: {
     heroEyebrow: 'Plan Your Mallorca Golf Trip',
@@ -7,7 +9,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     options: {
       basicLabel: 'Basic',
       basicTitle: 'Free course finder',
-      basicNote: 'On-site tool. A shortlist only.',
+      basicNote: 'On-site tool. Shortlist only.',
       proLabel: 'Professional',
       proTitle: 'Paid trip planning',
       proNote: 'The real service: route, bookings, base, and add-ons.',
@@ -34,6 +36,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       ],
       note:
         'Send your dates, group size, handicap range, and any courses already on your list. I will come back with the right next step and a quote.',
+      sendPrompt: 'Best details to send: dates, group size, handicap range, hotel area, and any courses already on your shortlist.',
       cta: 'Get in touch',
     },
     addon: {
@@ -84,6 +87,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       ],
       note:
         'Senden Sie mir Ihre Daten, die Gruppengröße, Ihr Handicap und alle Plätze, die schon auf Ihrer Liste stehen. Ich melde mich mit dem passenden nächsten Schritt und einem Angebot.',
+      sendPrompt: 'Am besten senden: Daten, Gruppengröße, Handicap, Hotelregion und alle Plätze, die schon auf Ihrer Liste stehen.',
       cta: 'Kontakt aufnehmen',
     },
     addon: {
@@ -134,6 +138,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       ],
       note:
         'Envíeme sus fechas, tamaño del grupo, rango de handicap y los campos que ya tenga en mente. Le responderé con el siguiente paso y un presupuesto.',
+      sendPrompt: 'Mejor enviar: fechas, tamaño del grupo, handicap, zona de hotel y los campos que ya tenga pensados.',
       cta: 'Contacto',
     },
     addon: {
@@ -184,6 +189,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       ],
       note:
         'Envoyez-moi vos dates, la taille du groupe, votre niveau et les parcours déjà envisagés. Je vous répondrai avec la bonne prochaine étape et un devis.',
+      sendPrompt: 'Idéalement : dates, taille du groupe, niveau, zone d’hotel et parcours déjà envisagés.',
       cta: 'Nous contacter',
     },
     addon: {
@@ -234,6 +240,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       ],
       note:
         'Stuur uw data, groepsgrootte, handicaprange en banen die al op uw lijst staan. Ik reageer met de juiste volgende stap en een prijsindicatie.',
+      sendPrompt: 'Graag meesturen: data, groepsgrootte, handicap, hotelregio en banen die al op uw shortlist staan.',
       cta: 'Contact opnemen',
     },
     addon: {
@@ -284,6 +291,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       ],
       note:
         'Skicka datum, gruppstorlek, handicapnivå och banor ni redan funderar på. Jag återkommer med nästa steg och en offert.',
+      sendPrompt: 'Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor ni redan funderar på.',
       cta: 'Kontakta mig',
     },
     addon: {
@@ -334,6 +342,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       ],
       note:
         '把日期、人数、差点范围和已经看中的球场发给我。我会告诉您下一步怎么走，并给出报价。',
+      sendPrompt: '最好一并发送：日期、人数、差点、酒店区域，以及已经看中的球场。',
       cta: '联系我',
     },
     addon: {
@@ -352,5 +361,18 @@ export const PLAN_YOUR_TRIP_CONTENT = {
 }
 
 export function getPlanYourTripContent(locale = 'en') {
-  return PLAN_YOUR_TRIP_CONTENT[locale] || PLAN_YOUR_TRIP_CONTENT.en
+  const content = PLAN_YOUR_TRIP_CONTENT[locale] || PLAN_YOUR_TRIP_CONTENT.en
+  const soloOffer = getOfferById(OFFER_IDS.solo, locale)
+  const groupOffer = getOfferById(OFFER_IDS.group, locale)
+
+  return content.addon
+    ? {
+        ...content,
+        addon: {
+          ...content.addon,
+          priceValue: soloOffer.priceDisplay,
+          groupValue: groupOffer.priceDisplay,
+        },
+      }
+    : content
 }

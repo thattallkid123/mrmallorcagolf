@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { LEAD_MAGNET_MAILERLITE_ACTION } from '../lib/signup-config'
 
 export default function LeadMagnetPage({ guide }) {
   const [email, setEmail] = useState('')
@@ -15,20 +14,10 @@ export default function LeadMagnetPage({ guide }) {
     setErrorMessage('')
 
     try {
-      const body = new URLSearchParams({
-        'fields[email]': email,
-        'fields[source]': guide.slug,
-        'ml-submit': '1',
-        anticsrf: 'true',
-      })
-
-      const response = await fetch(LEAD_MAGNET_MAILERLITE_ACTION, {
+      const response = await fetch('/api/lead-magnet-signup', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          Accept: 'application/json',
-        },
-        body: body.toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, guide: guide.slug }),
       })
 
       const data = await response.json().catch(() => null)
@@ -39,8 +28,7 @@ export default function LeadMagnetPage({ guide }) {
         return
       }
 
-      const nextError =
-        data?.errors?.fields?.email?.[0] || 'There was a problem. Please try again.'
+      const nextError = data?.error || 'There was a problem. Please try again.'
       setStatus('error')
       setErrorMessage(nextError)
     } catch {

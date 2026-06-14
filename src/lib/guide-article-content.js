@@ -4,9 +4,9 @@ import { getLocalizedGuideArticleContent } from './guide-article-content-localiz
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
     metadata: {
-      title: 'How Much Does Golf Cost in Mallorca? | 2026 Green Fee Guide',
+      title: 'Mallorca Golf Green Fees 2026 | All 24 Courses, €55–€250',
       description:
-        'Green fees in Mallorca range from €55 to €250 depending on the course and season. Exact prices for all 24 courses in 2026, plus club hire, buggies, and where to save.',
+        'Every Mallorca golf course with 2026 green fees: from €55 at Pollensa to €250 at Son Muntaner. Plus club hire, buggy costs, and the best-value rounds on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',

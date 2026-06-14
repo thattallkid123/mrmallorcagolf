@@ -51,7 +51,7 @@ function buildGolfCoursesSchema(locale, content) {
   }
 }
 
-function buildBreadcrumbSchema(locale) {
+function buildBreadcrumbSchema(locale, content) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -59,13 +59,13 @@ function buildBreadcrumbSchema(locale) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: 'Home',
+        name: content.hero.breadcrumbHome || 'Home',
         item: `${SITE_ORIGIN}${buildLocalePath('/', locale)}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Golf Courses',
+        name: content.hero.breadcrumbCurrent || 'Golf Courses',
         item: `${SITE_ORIGIN}${buildLocalePath('/golf-courses', locale)}`,
       },
     ],
@@ -83,7 +83,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
       <link rel="preload" as="image" href="/images/golf-courses.webp" />
       <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false} showScrollReset={true}>
         <JsonLd data={buildGolfCoursesSchema(locale, content)} />
-        <JsonLd data={buildBreadcrumbSchema(locale)} />
+        <JsonLd data={buildBreadcrumbSchema(locale, content)} />
 
         <header className="page-hero" style={{ minHeight: '72vh', overflow: 'hidden', position: 'relative' }}>
           <div aria-hidden="true" style={{ position: 'absolute', inset: 0 }}>

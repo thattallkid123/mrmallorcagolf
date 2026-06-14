@@ -10,7 +10,7 @@ const OFFER_CONTENT = {
   en: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Book Play With A Pro as a standalone private golf day or add it to a planned Mallorca golf trip. Solo from €495. Groups from €950. Green fees additional.',
+      'A private 18-hole golf day in Mallorca with Andy Griffiths, or add it to a trip I plan for you. Solo from €495. Groups from €950. Green fees additional.',
     playHeroBody:
       'Book it as a standalone private round, or add it to a planned Mallorca golf trip.\nPlay 18 holes alongside a PGA Advanced Professional.\nSolo from €495. Groups from €950. Green fees additional, confirmed when we speak.',
     playMultiDayDetail: null,

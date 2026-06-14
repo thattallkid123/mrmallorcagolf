@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import PlanningGuideCta from '../../../components/PlanningGuideCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
@@ -183,10 +184,16 @@ function renderBlock(block, index, locale, imageOrdinal) {
 
   if (block.type === 'cta') {
     const href = joinHref(locale, block.href)
+    const contactHref = buildLocalePath('/contact', locale)
     return (
       <div key={`cta-${index}`} className="post-cta">
         <p><InlineRichText text={block.text} locale={locale} /></p>
         <a href={href}>{block.linkLabel}</a>
+        {locale === 'en' && block.href === '/play-with-a-pro' ? (
+          <p className="post-cta__secondary">
+            Still narrowing down the trip? Use the <Link href={contactHref}>contact page</Link> and send Andy your dates, hotel area, handicap, and shortlist.
+          </p>
+        ) : null}
       </div>
     )
   }

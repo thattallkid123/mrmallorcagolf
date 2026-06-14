@@ -8,6 +8,13 @@ export const COURSE_SELECTOR_GROUP_NAME = 'Course Selector Leads'
 
 export const LEAD_MAGNET_MAILERLITE_ACTION = 'https://assets.mailerlite.com/jsonp/2404105/forms/190189762313717408/subscribe'
 
+export const LEAD_MAGNET_GROUPS = {
+  'cost-guide': '190205560073749928',
+  'trip-planner': '190205564290074522',
+  'beginners-guide': '190205567197775102',
+  'course-comparison': '190205569293878890',
+}
+
 export const LEAD_MAGNETS = {
   'cost-guide': {
     slug: 'cost-guide',

@@ -8,7 +8,7 @@ export const GUIDE_POST_CONTENT = {
         title: "Son Gual Golf Mallorca — Honest 2026 Review",
         description:
           "Son Gual reviews are consistently strong — and earned. Green fees €110–€165, par 72, handicap required. My honest PGA verdict: conditions, difficulty, ideal player profile, and whether it is worth it.",
-        title: 'Son Gual Golf Mallorca Review (2026) | Green Fees, Conditions & Verdict',
+        title: 'Son Gual Golf Mallorca Review (2026) | Is It Worth It? Green Fees, Wind & Verdict',
         description:
           'Thinking about playing Son Gual in Mallorca? Honest 2026 PGA review with green fees, course conditions, wind notes, handicap requirement, and whether it is worth booking.',
         imagePath: '/images/son-gual-blog/sg-hero.webp',
@@ -18,7 +18,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '7 min read',
         updated: 'March 2026',
-        title: "Son Gual Golf Mallorca Review (2026) - Is It Worth It? Green Fees, Conditions & Verdict",
+        title: 'Son Gual Golf Mallorca Review (2026) - Is It Worth It? Green Fees, Wind & Verdict',
         intro:
           'My most-played course on the island. The wind is fickle, the greens are quick, and the closing stretch is as good as anything in Mallorca.',
         related: [
@@ -172,7 +172,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Playing Son Gual? I guide rounds here regularly and can help you plot your way round from the first tee.',
+          text: 'Playing Son Gual? I guide rounds here regularly and can help you plot a proper way round from the first tee.',
           linkLabel: 'See the play-with-a-pro experience →',
           href: '/play-with-a-pro',
         },
@@ -329,7 +329,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Playing Alcanada? I use it regularly for guided days and can help you get far more out of it than a sightseeing round.',
+          text: 'Playing Alcanada? I use it regularly for guided days and can help you turn the views into a real scoring plan.',
           linkLabel: 'See the play-with-a-pro experience →',
           href: '/play-with-a-pro',
         },
@@ -415,7 +415,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         { type: 'paragraph', text: "The Best Golf Course in Spain title is not marketing. Son Muntaner delivers a course that tests positioning, discipline, and clarity of decision-making from the first hole to the last. It rewards control over power and creates scoring opportunities through precision. Five minutes from Palma makes the logistics straightforward. The greens alone justify the trip. Compare all courses on the <a href='/golf-courses'>Mallorca golf courses page</a>." },
         { type: 'paragraph', text: "A return visit with more fairways found would unlock a deeper read of the layout. That's the mark of a course worth coming back to." },
-        { type: 'cta', text: 'Playing Son Muntaner? I can guide the round, help with the strategy, and make sure the premium green fee actually feels justified.', linkLabel: 'See the play-with-a-pro experience →', href: '/play-with-a-pro' },
+        { type: 'cta', text: 'Playing Son Muntaner? I can help the premium fee feel justified with the right plan off the tee and into the greens.', linkLabel: 'See the play-with-a-pro experience →', href: '/play-with-a-pro' },
       ],
     },
   },
@@ -535,7 +535,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Playing Santa Ponsa 1? I can build it into a Mallorca golf day and help you use the course the way it is meant to be played.',
+          text: 'Playing Santa Ponsa 1? I can build it into a Mallorca golf day and help you use the wide fairways properly.',
           linkLabel: 'See the play-with-a-pro experience →',
           href: '/play-with-a-pro',
         },
@@ -706,7 +706,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Playing Golf Andratx? I can guide the strategy, the clubbing, and the misses that matter most around this layout.',
+          text: 'Playing Golf Andratx? I can help with the strategy, the clubbing, and the trouble zones that matter most around this layout.',
           linkLabel: 'See the play-with-a-pro experience →',
           href: '/play-with-a-pro',
         },
@@ -872,7 +872,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Thinking about Son Termes? I can tell you whether it fits your trip and guide the round if you want a more strategic day there.',
+          text: 'Thinking about Son Termes? I can tell you whether it fits your trip and whether it should be the Palma-area round you build around.',
           linkLabel: 'Get in touch →',
           href: '/contact',
         },
@@ -1056,7 +1056,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Playing T Golf Calvià? I can help you manage the carries, the green complexes, and the course decisions that shape the score here.',
+          text: 'Playing T Golf Calvià? I can help you manage the carries, the green complexes, and the scoring decisions this course asks for.',
           linkLabel: 'See the play-with-a-pro experience →',
           href: '/play-with-a-pro',
         },
@@ -1250,7 +1250,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Playing Son Antem West? I use it for relaxed, well-run guided days and can tell you if it fits your group better than the bigger names.',
+          text: 'Playing Son Antem West? I use it for relaxed, well-run guided days and can help you decide if it fits your group better than the bigger names.',
           linkLabel: 'See the play-with-a-pro experience',
           href: '/play-with-a-pro',
         },

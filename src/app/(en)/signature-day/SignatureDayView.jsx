@@ -42,7 +42,7 @@ const DAY_ARC = [
   {
     time: 'Optional',
     title: 'Welcome and extras',
-    body: 'A small welcome from the course on arrival where available. Caddy is something I am working to include as standard and will confirm at the time of booking. Videographer available to document the day. Premium club hire pre-arranged at the course if needed.',
+    body: 'A small welcome from the course on arrival where available. Caddy can be arranged where the course and date allow and will be confirmed at booking. Videography and photo capture can be added if you want the day documented. Premium club hire can be pre-arranged at the course if needed.',
     img: '/images/alcanada.webp',
     imgAlt: 'Alcanada golf course Mallorca',
   },
@@ -105,7 +105,7 @@ export default function SignatureDayView() {
               built around the round, the body, and the evening.
             </h1>
             <p className="pwap-hero__body">
-              Golf with me, a physio session with John Brazier, private transfers, and dinner at a partner hotel. Every part is coordinated in advance so the day feels deliberate, personal, and worth the premium.
+              Golf with me, a physio session with John Brazier, private transfers, and dinner at a partner hotel. Every part is coordinated in advance so the day feels deliberate, personal, and worth the premium. Videography and photo capture can be added if you want the day documented.
             </p>
             <p className="pwap-hero__price">From €3,000</p>
             <div className="pwap-hero__actions">
@@ -179,6 +179,9 @@ export default function SignatureDayView() {
               <li className="included-item"><span className="included-dot"></span><p><strong>Anyone looking for a quick add-on</strong><br /><span style={{ fontWeight: 400 }}>If you just want a tee time, the standard Play With A Pro route is the better fit.</span></p></li>
             </ul>
           </div>
+          <p style={{ marginTop: '1.25rem', fontSize: '0.92rem', lineHeight: 1.7, color: 'var(--charcoal)' }}>
+            The premium price reflects the full coordination: golf, physio, transfers, dinner, and the level of attention around the day. It is meant to feel like a properly built experience, not a standard round with a few expensive extras attached.
+          </p>
         </div>
         <div className="pwap-day__right reveal">
           <div className="pull-quote">

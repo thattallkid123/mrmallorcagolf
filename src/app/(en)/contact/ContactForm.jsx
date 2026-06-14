@@ -30,7 +30,7 @@ function buildContactPageSchema(locale, content) {
   }
 }
 
-function buildBreadcrumbSchema(locale) {
+function buildBreadcrumbSchema(locale, content) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -38,13 +38,13 @@ function buildBreadcrumbSchema(locale) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: 'Home',
+        name: content.hero.breadcrumbHome || 'Home',
         item: `${SITE_ORIGIN}${buildLocalePath('/', locale)}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Contact',
+        name: content.hero.breadcrumbCurrent || 'Contact',
         item: `${SITE_ORIGIN}${buildLocalePath('/contact', locale)}`,
       },
     ],
@@ -57,7 +57,7 @@ export default function ContactForm({ locale = 'en' }) {
   return (
     <>
       <JsonLd data={buildContactPageSchema(locale, content)} />
-      <JsonLd data={buildBreadcrumbSchema(locale)} />
+      <JsonLd data={buildBreadcrumbSchema(locale, content)} />
       <div className="contact-wrap">
         <div className="contact-left">
           <div>
@@ -94,7 +94,7 @@ export default function ContactForm({ locale = 'en' }) {
                 <p className="contact-card__value">andy@mrmallorcagolf.com</p>
               </div>
             </a>
-            <a
+            {locale !== 'zh' && <a
               href="https://wa.me/34624466702"
               className="contact-card contact-card--whatsapp"
               target="_blank"
@@ -109,7 +109,7 @@ export default function ContactForm({ locale = 'en' }) {
                 <p className="contact-card__label">{content.cards.whatsappLabel}</p>
                 <p className="contact-card__value">{content.cards.whatsappValue}</p>
               </div>
-            </a>
+            </a>}
             {content.cards.wechatLabel ? (
               <div className="contact-card contact-card--wechat">
                 <span className="contact-card__icon">

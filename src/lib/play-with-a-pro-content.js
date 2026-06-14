@@ -36,7 +36,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: 'What the day looks like',
       title: 'One course. 18 holes. Everything handled before you arrive.',
       paragraphs: [
-        'You arrive at the course. I handle everything before that: the right course for your game, the tee time, after a brief questionnaire so I understand how your game works and what you are hoping to take away from the day. Then we play. The coaching comes in at the right time, whilst playing real golf and seeing all of the decision making, how you handle awkward lies and technical levels of your game. Between shots, there is time to talk: course strategy, how to read conditions, stories from golf around the world.',
+        'You arrive at the course. I handle everything before that: the right course for your game, the tee time, and a brief questionnaire so I understand how your game works and what you are hoping to take away from the day. Then we play. The coaching comes in at the right time, while you are playing real golf and making real decisions. Between shots, there is time to talk: course strategy, how to read conditions, and stories from golf around the world.',
         'I am a PGA Advanced Professional, have coached hundreds of competition winners, 15,000+ coaching hours and a Trackman Master certification. The day draws on that, but does not become purely a technical session. A round of golf, played properly.',
       ],
       quote:
@@ -50,7 +50,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       items: [
         ['Course selection', 'I match the course to your game, handicap, and what you want from the day.'],
         ['Tee time', 'Secured and fully handled before you arrive. You just show up.'],
-        ['Pre-round briefing', 'The pre-round questionnaire mentioned earlier, so I understand your game, expectations and state of your game.'],
+        ['Pre-round briefing', 'The pre-round questionnaire mentioned earlier, so I understand your game, expectations, and current form.'],
         ['18 holes with Andy', 'We play together as a group. Same tee, same conversation, same round.'],
         ['On-course coaching and strategy', 'Course management, shot selection, and decision-making at the moments they matter. Not a commentary, just the right observations at the right time.'],
         ['Post-round debrief', 'What changed during the round, what to take away, and what to work on next.'],
@@ -1799,6 +1799,7 @@ export function getPlayWithAProContent(locale = 'en') {
   const content = PLAY_WITH_A_PRO_CONTENT[locale] || PLAY_WITH_A_PRO_CONTENT.en
   const soloOffer = getOfferById(OFFER_IDS.solo, locale)
   const groupOffer = getOfferById(OFFER_IDS.group, locale)
+  // Keep the visible tier prices aligned with the shared offer library.
   const packages = content?.packages
     ? {
         ...content.packages,

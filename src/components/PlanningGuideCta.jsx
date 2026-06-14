@@ -15,6 +15,9 @@ export default function PlanningGuideCta({ compact = false }) {
           Get my shortlist
         </Link>
         <p className="planning-guide-cta__fineprint">Free. Five questions. Useful before you enquire.</p>
+        <p className="planning-guide-cta__contact">
+          Already comparing a few options? <Link href="/contact">Tell Andy what you are weighing up</Link>.
+        </p>
       </div>
     </aside>
   )

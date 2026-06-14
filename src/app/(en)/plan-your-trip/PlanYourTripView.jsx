@@ -10,6 +10,7 @@ import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
 
 export default function PlanYourTripView({ locale = 'en', content: rawContent }) {
   const content = rawContent || getPlanYourTripContent(locale)
+  const golfCoursesHref = buildLocalePath('/golf-courses', locale)
   const contactHref = buildLocalePath('/contact', locale)
   const pwapHref = buildLocalePath('/play-with-a-pro', locale)
 
@@ -52,6 +53,11 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
             <span className="pyt-tier-badge">{content.free.eyebrow}</span>
             <h2 className="pyt-tier-title">{content.free.title}</h2>
             <p className="pyt-tier-body">{content.free.body}</p>
+            <p className="pyt-tier-body" style={{ marginTop: '-0.35rem' }}>
+              <Link href={golfCoursesHref} style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid currentColor' }}>
+                View all Mallorca golf courses
+              </Link>
+            </p>
           </div>
           <ItineraryPlanner embedded locale={locale} />
         </div>
@@ -73,6 +79,11 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
 
           <div className="pyt-pro-cta">
             <p className="pyt-pro-cta__note">{content.professional.note}</p>
+            {content.professional.sendPrompt ? (
+              <p className="pyt-pro-cta__note" style={{ marginTop: '-0.35rem', opacity: 0.85 }}>
+                {content.professional.sendPrompt}
+              </p>
+            ) : null}
             <Link href={contactHref} className="pyt-pro-cta__btn">
               {content.professional.cta}
             </Link>

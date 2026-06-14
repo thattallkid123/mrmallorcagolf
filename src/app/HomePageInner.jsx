@@ -33,7 +33,15 @@ const FEATURE_ICONS = {
   ),
 }
 
-const ITINERARY_PLANNER_PATH = '/itinerary'
+const HOME_UI = {
+  en: { tripPrompt: 'Need the whole trip planned? ->' },
+  de: { tripPrompt: 'Soll die ganze Reise geplant werden? ->' },
+  es: { tripPrompt: 'Necesita que le planifique todo el viaje? ->' },
+  fr: { tripPrompt: 'Besoin que je planifie tout le sejour ? ->' },
+  nl: { tripPrompt: 'Wilt u dat ik de hele reis plan? ->' },
+  sv: { tripPrompt: 'Vill du att jag planerar hela resan? ->' },
+  zh: { tripPrompt: '想让我把整趟行程也一起安排好吗？ ->' },
+}
 
 
 function JsonLd({ data }) {
@@ -71,8 +79,10 @@ export default function HomePageInner({ locale = 'en' }) {
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
+  const planYourTripHref = locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`
   const itineraryHref = home.hero.primaryHref ? localizePath(home.hero.primaryHref, locale) : playWithAProHref
   const sharedPackageCta = null
+  const ui = HOME_UI[locale] || HOME_UI.en
 
   return (
     <>
@@ -114,8 +124,8 @@ export default function HomePageInner({ locale = 'en' }) {
                 {home.hero.secondaryCta}
               </a>
             </div>
-            <a href={locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`} className="hero__pwap-link">
-              <span>Need the whole trip planned? →</span>
+            <a href={planYourTripHref} className="hero__pwap-link">
+              <span>{ui.tripPrompt}</span>
             </a>
           </div>
         </div>
@@ -357,7 +367,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="cta-final__right reveal reveal-delay-1">
           <p className="serif-italic">&ldquo;{home.finalCta.quote}&rdquo;</p>
-          <a href={ITINERARY_PLANNER_PATH} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px', letterSpacing: '0.18em' }}>
+          <a href={planYourTripHref} className="btn btn--gold" style={{ fontSize: 11, padding: '15px 36px', letterSpacing: '0.18em' }}>
             {home.finalCta.primaryCta}
           </a>
           <a href="https://wa.me/34624466702" className="btn btn--outline-white" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>

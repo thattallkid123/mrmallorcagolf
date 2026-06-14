@@ -20,9 +20,55 @@ const UPDATED_LABELS = {
   nl: 'Bijgewerkt',
 }
 
+const SIDEBAR_PLANNING = {
+  en: {
+    title: 'Turn this course into a trip that works.',
+    body: 'Send your dates, handicap, hotel area, and shortlist. I will tell you where this course fits and what should sit around it.',
+    primary: 'Build itinerary',
+    secondary: 'Play With A Pro',
+  },
+  de: {
+    title: 'Machen Sie aus diesem Platz eine stimmige Reise.',
+    body: 'Schicken Sie mir Ihre Daten, Ihr Handicap, Ihre Hotelregion und Ihre Shortlist. Ich sage Ihnen, wo dieser Platz sinnvoll hineinpasst.',
+    primary: 'Reise planen',
+    secondary: 'Play With A Pro',
+  },
+  es: {
+    title: 'Convierta este campo en un viaje que tenga sentido.',
+    body: 'Envieme sus fechas, handicap, zona de hotel y lista corta. Le dire donde encaja este campo y que deberia acompanar esa decision.',
+    primary: 'Planificar viaje',
+    secondary: 'Play With A Pro',
+  },
+  fr: {
+    title: 'Faites entrer ce parcours dans un vrai sejour coherent.',
+    body: 'Envoyez-moi vos dates, votre index, la zone de votre hotel et votre short-list. Je vous dirai ou ce parcours a le plus de sens.',
+    primary: 'Planifier le sejour',
+    secondary: 'Play With A Pro',
+  },
+  nl: {
+    title: 'Maak van deze baan een reis die klopt.',
+    body: 'Stuur me uw data, handicap, hotelregio en shortlist. Ik laat u zien waar deze baan het best past.',
+    primary: 'Reis plannen',
+    secondary: 'Play With A Pro',
+  },
+  sv: {
+    title: 'Gor den har banan till en resa som hanger ihop.',
+    body: 'Skicka dina datum, ditt handicap, hotellomrade och din kortlista. Jag visar var den har banan passar in bast.',
+    primary: 'Planera resan',
+    secondary: 'Play With A Pro',
+  },
+  zh: {
+    title: 'ba zhe zuo qiu chang fang jin yi ge geng he li de xing cheng li.',
+    body: 'ba nin de ri qi, cha dian, jiu dian qu yu he ji ge bei xuan qiu chang fa gei wo. wo hui gao su nin ta ying gai fang zai xing cheng de na li.',
+    primary: 'gui hua xing cheng',
+    secondary: 'Play With A Pro',
+  },
+}
+
 export default function PostLayout({ children, meta, lang }) {
   const l = lang || meta.lang || 'en'
   const c = SIDEBAR_COPY[l] || SIDEBAR_COPY.en
+  const planning = SIDEBAR_PLANNING[l] || SIDEBAR_PLANNING.en
   const updatedLabel = UPDATED_LABELS[l] || UPDATED_LABELS.en
   const pre = l === 'en' ? '' : `/${l}`
   const relatedGuides = meta.related.filter((guide) => isPublishedGuideSlug(guide.slug))
@@ -52,6 +98,13 @@ export default function PostLayout({ children, meta, lang }) {
         <article className="post-article">{children}</article>
 
         <aside className="post-sidebar">
+          <div className="post-sidebar__block">
+            <p className="post-sidebar__label">{c.experience}</p>
+            <h3>{planning.title}</h3>
+            <p>{planning.body}</p>
+            <a href={`${pre}/contact`} className="btn btn--gold post-sidebar__cta">{planning.primary}</a>
+            <a href={`${pre}/play-with-a-pro`} className="btn btn--outline-white post-sidebar__cta post-sidebar__cta--secondary">{planning.secondary}</a>
+          </div>
           <div className="post-sidebar__block" style={{ marginTop: '2px' }}>
             <p className="post-sidebar__label">{c.moreGuides}</p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>

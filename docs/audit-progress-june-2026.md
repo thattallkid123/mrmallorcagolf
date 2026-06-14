@@ -9,7 +9,7 @@ Source of truth:
 Current status after this sprint pass:
 - Audit progress: `24%` by official phase items (`5/21`)
 - Phase 1: `5/7 complete`
-- Estimated audit hours completed: `16/262` (`6%`)
+- Estimated audit hours completed: `17/262` (`7%`)
 
 Baseline before this sprint:
 - Audit progress: `14%` by official phase items (`3/21`)
@@ -64,6 +64,12 @@ Current sprint:
 - Audit basis: detailed audit CRO recommendations for trust signals, testimonial proof, enquiry-type clarity, and "what happens next"
 - Intended outcome: reduce submission friction and increase confidence before enquiry
 
+### SEO / link polish
+
+- Status: complete
+- Audit basis: detailed audit recommendations on guide CTAs, internal links, and high-impression snippet tuning
+- Intended outcome: improve click-through, route undecided users to contact, and make high-intent pages read more clearly in search
+
 ## What Shipped In This Sprint
 
 ### `/golf-courses`
@@ -86,6 +92,12 @@ Current sprint:
 - Added one qualification section and one proof section
 - Clarified pricing logic: what is included, what stays separate, and why it is premium
 - Updated metadata/indexing intent to support business visibility
+
+### SEO / link polish
+
+- Tightened guide/article CTA endings so undecided users can still route into `/contact`
+- Refined titles/meta on high-intent guide pages already getting impressions
+- Kept the changes narrow so they improve CTR and enquiry flow without adding page clutter
 
 ## Remaining Official Audit Work
 

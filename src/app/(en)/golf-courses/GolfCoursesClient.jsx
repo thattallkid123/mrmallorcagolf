@@ -724,6 +724,16 @@ export default function GolfCoursesClient({ lang = 'en' }) {
                 </div>
               ))}
             </div>
+            {t.quickPicks?.length ? (
+              <div className="course-guidance-strip__picks" aria-label={t.quickPicksTitle || 'Quick picks'}>
+                <p className="course-guidance-strip__picks-title">{t.quickPicksTitle}</p>
+                <ul className="course-guidance-strip__picks-list">
+                  {t.quickPicks.map((pick) => (
+                    <li key={pick}>{pick}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
         ) : null}
         <div id="all-courses" className="filter-tabs filter-tabs--anchored filter-tabs--primary">

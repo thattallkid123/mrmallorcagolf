@@ -45,6 +45,15 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
       ) : null}
 
+      {content.form.sendPrompt ? (
+        <div style={{ background: 'rgba(255,255,255,0.72)', border: '1px solid rgba(184,151,90,0.14)', padding: '14px 16px', marginBottom: '1.35rem' }}>
+          <p style={{ margin: 0, fontSize: '0.86rem', lineHeight: 1.7, color: 'var(--charcoal)' }}>
+            <strong style={{ display: 'block', marginBottom: '0.35rem', color: 'var(--deep)' }}>What to send</strong>
+            {content.form.sendPrompt}
+          </p>
+        </div>
+      ) : null}
+
       <form onSubmit={handleSubmit} aria-busy={submitting}>
         <input
           type="text"

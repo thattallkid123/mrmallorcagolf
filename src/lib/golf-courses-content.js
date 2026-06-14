@@ -81,6 +81,7 @@ export const GOLF_COURSES_CONTENT = {
       breadcrumbCurrent: 'Golfplaetze auf Mallorca',
       title: 'Golfplaetze auf Mallorca: mein Guide 2026',
       tags: ['24 Plaetze im Blick', 'Greenfees aktualisiert 2026', 'Selbst gespielt oder sauber recherchiert', 'PGA Professional'],
+      lead: 'Wenn Sie zuerst entscheiden muessen, wo Sie spielen sollen, beginnen Sie hier. Nutzen Sie den Explorer, um die Insel nach Region, Preis und Schwierigkeit einzugrenzen. Schicken Sie mir dann Ihre Daten, Ihr Handicap und Ihre Hotelregion, und ich nenne Ihnen die richtige Shortlist.',
     },
     regionHeaders: {
       palma: { title: 'Palma', subtitle: 'Plaetze rund um die Stadt', count: '8 Plaetze' },
@@ -97,6 +98,7 @@ export const GOLF_COURSES_CONTENT = {
       breadcrumbCurrent: 'Campos de golf en Mallorca',
       title: 'Campos de golf en Mallorca: mi guia 2026',
       tags: ['24 campos revisados', 'Green fees actualizados 2026', 'Jugados o investigados a fondo', 'Profesional PGA'],
+      lead: 'Si esta decidiendo por donde empezar a jugar, empiece aqui. Use el explorador para reducir la isla por zona, precio y dificultad, y despues envieme sus fechas, handicap y zona de hotel para que le devuelva la mejor lista corta.',
     },
     regionHeaders: {
       palma: { title: 'Palma', subtitle: 'Campos alrededor de la ciudad', count: '8 campos' },
@@ -113,6 +115,7 @@ export const GOLF_COURSES_CONTENT = {
       breadcrumbCurrent: 'Parcours de golf a Majorque',
       title: 'Parcours de golf a Majorque : mon guide 2026',
       tags: ['24 parcours couverts', 'Green fees mis a jour 2026', 'Joues ou etudies serieusement', 'Professionnel PGA'],
+      lead: 'Si vous cherchez par ou commencer, commencez ici. Utilisez l explorateur pour reduire l ile par zone, prix et difficulte, puis envoyez-moi vos dates, votre index et la zone de votre hotel pour que je vous renvoie la bonne short-list.',
     },
     regionHeaders: {
       palma: { title: 'Palma', subtitle: 'Parcours autour de la ville', count: '8 parcours' },
@@ -129,6 +132,7 @@ export const GOLF_COURSES_CONTENT = {
       breadcrumbCurrent: 'Golfbanen op Mallorca',
       title: 'Golfbanen op Mallorca: mijn gids 2026',
       tags: ['24 banen bekeken', 'Greenfees bijgewerkt 2026', 'Gespeeld of grondig onderzocht', 'PGA Professional'],
+      lead: 'Als u nog moet bepalen waar u het best begint te spelen, begin dan hier. Gebruik de verkenner om het eiland te verfijnen op regio, prijs en moeilijkheid, en stuur me daarna uw data, handicap en hotelregio zodat ik de juiste shortlist kan teruggeven.',
     },
     regionHeaders: {
       palma: { title: 'Palma', subtitle: 'Banen rond de stad', count: '8 banen' },
@@ -145,6 +149,7 @@ export const GOLF_COURSES_CONTENT = {
       breadcrumbCurrent: 'Golfbanor pa Mallorca',
       title: 'Golfbanor pa Mallorca: min guide 2026',
       tags: ['24 banor genomgangna', 'Greenfee uppdaterad 2026', 'Spelade eller ordentligt granskade', 'PGA Professional'],
+      lead: 'Om du forsoker avgora var du ska borja spela, borja har. Anvand utforskaren for att smalna av on efter omrade, pris och svarighetsgrad, och skicka sedan dina datum, ditt handicap och hotellomrade sa pekar jag ut ratt kortlista.',
     },
     regionHeaders: {
       palma: { title: 'Palma', subtitle: 'Banor runt staden', count: '8 banor' },
@@ -161,6 +166,7 @@ export const GOLF_COURSES_CONTENT = {
       breadcrumbCurrent: '马略卡高尔夫球场',
       title: '马略卡高尔夫球场：我的 2026 指南',
       tags: ['涵盖 24 座球场', '2026 价格已更新', '亲自下场或认真调研', 'PGA 职业教练'],
+      lead: '如果您还在决定先打哪座球场，就从这里开始。使用筛选器按地区、价格和难度缩小范围，然后把您的日期、差点和酒店区域发给我，我会帮您锁定最合适的几个选项。',
     },
     regionHeaders: {
       palma: { title: '帕尔马', subtitle: '城市周边球场', count: '8 座球场' },
@@ -172,6 +178,29 @@ export const GOLF_COURSES_CONTENT = {
   },
 }
 
+const GOLF_COURSES_HERO_LEADS = {
+  de:
+    'Wenn Sie zuerst entscheiden muessen, wo Sie spielen sollen, beginnen Sie hier. Nutzen Sie den Explorer, um die Insel nach Region, Preis und Schwierigkeit einzugrenzen. Schicken Sie mir dann Ihre Daten, Ihr Handicap und Ihre Hotelregion, und ich nenne Ihnen die richtige Shortlist.',
+  es:
+    'Si esta decidiendo por donde empezar a jugar, empiece aqui. Use el explorador para reducir la isla por zona, precio y dificultad, y despues envieme sus fechas, handicap y zona de hotel para que le devuelva la mejor lista corta.',
+  fr:
+    'Si vous cherchez par ou commencer, commencez ici. Utilisez l explorateur pour reduire l ile par zone, prix et difficulte, puis envoyez-moi vos dates, votre index et la zone de votre hotel pour que je vous renvoie la bonne short-list.',
+  nl:
+    'Als u nog moet bepalen waar u het best begint te spelen, begin dan hier. Gebruik de verkenner om het eiland te verfijnen op regio, prijs en moeilijkheid, en stuur me daarna uw data, handicap en hotelregio zodat ik de juiste shortlist kan teruggeven.',
+  sv:
+    'Om du forsoker avgora var du ska borja spela, borja har. Anvand utforskaren for att smalna av on efter omrade, pris och svarighetsgrad, och skicka sedan dina datum, ditt handicap och hotellomrade sa pekar jag ut ratt kortlista.',
+  zh:
+    'ru guo nin hai zai jue ding xian da na yi zuo qiu chang, jiu cong zhe li kai shi. yong zhe ge ye mian an di qu, jia ge he nan du suo xiao fan wei, ran hou ba nin de ri qi, cha dian he jiu dian qu yu fa gei wo, wo hui bang nin suo ding zui he shi de ji ge xuan xiang.',
+}
+
 export function getGolfCoursesContent(locale = 'en') {
-  return GOLF_COURSES_CONTENT[locale] || GOLF_COURSES_CONTENT.en
+  const content = GOLF_COURSES_CONTENT[locale] || GOLF_COURSES_CONTENT.en
+
+  return {
+    ...content,
+    hero: {
+      ...content.hero,
+      lead: content.hero?.lead || GOLF_COURSES_HERO_LEADS[locale] || GOLF_COURSES_CONTENT.en.hero.lead,
+    },
+  }
 }
