@@ -858,6 +858,34 @@ const HOME_OVERRIDES = {
   // Chinese copy is market-localized, not a literal translation of the other language versions.
   zh: {
     hero: { eyebrow: '上海 11 年 · 普通话 · PGA 高级职业教练', titleLines: ['打马略卡最好的', '高尔夫球场。'], emphasis: '由 Andy 教练全程陪同。', primaryCta: '预订这一天', secondaryCta: '查看球场' },
+    journey: {
+      eyebrow: '选择你的方式',
+      title: '从你现在所在的位置开始。',
+      items: [
+        {
+          title: '和 Andy 一起打一轮',
+          text: '预订与我共度的私人一天：一座球场、18 洞、球场管理指导贯穿全程。单人或小组均可。',
+          cta: '了解陪打服务',
+          href: '/play-with-a-pro',
+        },
+        {
+          title: '我在计划一趟高尔夫旅行',
+          text: '让我来负责所有安排：球场选择、住宿、路线规划、开球时间、球车和预订，全部在你出发前搞定。',
+          cta: '了解行程规划',
+          href: '/plan-your-trip',
+        },
+        {
+          title: '我在比较各个球场',
+          text: '查看我的球场评测，获取关于果岭费、难度、球场状态、风景以及各球场适合哪类球手的第一手诚实评价。',
+          cta: '比较全部球场',
+          href: '/golf-courses',
+        },
+      ],
+    },
+    quote: {
+      text: '只打了 18 洞，我就发现自己的潜力还能再往上走一层。',
+      attribution: 'Jo，在 Son Gual 打球后',
+    },
     intro: {
       eyebrow: '真正拉开差距的地方',
       title: '我在上海待了 11 年，也知道中国客人要的不是一场普通预订，而是清楚、专业、有人把细节都安排好的私人高尔夫一天。',
@@ -894,6 +922,73 @@ const HOME_OVERRIDES = {
       eyebrow: '体验与套餐',
       title: '选择你的那一天',
       body: '三种方案都是私人的，也都由我亲自带。球场、发球时间和教练费用已包含。果岭费和午餐另计。',
+      items: [
+        {
+          eyebrow: '与 Andy 共打一天',
+          name: '单人',
+          price: '€495',
+          features: [
+            '根据你的水平和差点匹配球场',
+            '开球时间已全程安排',
+            '18 洞与 Andy 同场',
+            '一轮中的下场指导',
+            '赛后复盘与建议',
+          ],
+          note: 'Andy 的全天费用。球场果岭费和午餐另计。球车和租用球杆可选配。',
+          cta: '发起咨询 →',
+          href: '/contact',
+          featured: false,
+        },
+        {
+          eyebrow: '与 Andy 共打一天',
+          name: '小组',
+          price: '€950',
+          features: [
+            '最多 3 人，Andy 固定全天费用',
+            '根据小组情况匹配球场',
+            '开球时间已全程安排',
+            '18 洞与 Andy 同场',
+            '一轮中的下场指导',
+          ],
+          note: 'Andy 陪 2-3 位球手的固定全天费用。果岭费和午餐另计。球车和租用球杆可选配。',
+          cta: '发起咨询 →',
+          href: '/contact',
+          featured: true,
+        },
+        {
+          eyebrow: '精品体验',
+          name: '签名日',
+          price: '€3,000+',
+          features: [
+            '球场、开球时间与 Andy 全程主持',
+            '午餐、私厨或餐厅预订',
+            '专属接送与休息时间',
+            '球童、摄影师和高端球杆租用',
+            '赛后视频技术分析',
+            '优先锁定：你的日期优先保留',
+          ],
+          note: '从头到尾个性化定制。接送、球童、高尔夫理疗、私厨、摄影师等配套均按你的需求规划。',
+          cta: '发起咨询 →',
+          href: '/contact',
+          signature: true,
+        },
+        {
+          eyebrow: '行程规划',
+          name: '为你规划全程',
+          price: '咨询报价',
+          features: [
+            '无需自己查平台：开球时间全部由我代为处理',
+            '球场根据小组水平、差点和预算精选',
+            '住宿区域和路线建议',
+            '一份在地图上真正合理的行程',
+            '可加配 Play With A Pro 一天',
+          ],
+          note: '费用在咨询时说明——不是冷冰冰的定价页面。告诉我你的旅行规模，我来报一个合理的数字。',
+          cta: '发起咨询 →',
+          href: '/contact',
+          featured: false,
+        },
+      ],
     },
     faq: {
       eyebrow: '常见问题',
@@ -907,7 +1002,7 @@ const HOME_OVERRIDES = {
         { q: '一年里什么时候最好？', a: '十月、十一月、三月和四月。球场状态、天气、性价比和节奏，这几个月的平衡最好。' },
       ],
     },
-    finalCta: { eyebrow: '准备好真正打懂马略卡了吗？', title: '联系我，剩下的我来安排。', body: '告诉我你的日期、差点和你希望这一天达到什么效果。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。', primaryCta: '预订这一天', secondaryCta: 'WhatsApp' },
+    finalCta: { eyebrow: '准备好真正打懂马略卡了吗？', title: '联系我，剩下的我来安排。', body: '告诉我你的日期、差点和你希望这一天达到什么效果。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。', primaryCta: '预订这一天', secondaryCta: '微信联系' },
   },
 }
 
