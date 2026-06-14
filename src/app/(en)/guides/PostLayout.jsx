@@ -58,9 +58,9 @@ const SIDEBAR_PLANNING = {
     secondary: 'Play With A Pro',
   },
   zh: {
-    title: 'ba zhe zuo qiu chang fang jin yi ge geng he li de xing cheng li.',
-    body: 'ba nin de ri qi, cha dian, jiu dian qu yu he ji ge bei xuan qiu chang fa gei wo. wo hui gao su nin ta ying gai fang zai xing cheng de na li.',
-    primary: 'gui hua xing cheng',
+    title: '把这座球场纳入一个合理的行程里。',
+    body: '把您的日期、差点、酒店区域和几个备选球场发给我。我会告诉您这座球场应该放在行程的哪里。',
+    primary: '规划行程',
     secondary: 'Play With A Pro',
   },
 }

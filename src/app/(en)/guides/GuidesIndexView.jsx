@@ -9,7 +9,7 @@ const HERO_ACTIONS = {
   fr: { experience: "Voir l'experience", reviews: 'Avis parcours', articles: 'Guides & articles' },
   nl: { experience: 'Bekijk de ervaring', reviews: 'Baanbeoordelingen', articles: 'Gidsen & artikelen' },
   sv: { experience: 'Se upplevelsen', reviews: 'Banrecensioner', articles: 'Guider & artiklar' },
-  zh: { experience: 'Kan ti yan', reviews: 'Qiu chang ping ce', articles: 'Zhi nan yu wen zhang' },
+  zh: { experience: '了解体验项目', reviews: '球场评测', articles: '指南与文章' },
 }
 
 function shortTitle(title) {

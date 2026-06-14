@@ -190,7 +190,7 @@ const GOLF_COURSES_HERO_LEADS = {
   sv:
     'Om du forsoker avgora var du ska borja spela, borja har. Anvand utforskaren for att smalna av on efter omrade, pris och svarighetsgrad, och skicka sedan dina datum, ditt handicap och hotellomrade sa pekar jag ut ratt kortlista.',
   zh:
-    'ru guo nin hai zai jue ding xian da na yi zuo qiu chang, jiu cong zhe li kai shi. yong zhe ge ye mian an di qu, jia ge he nan du suo xiao fan wei, ran hou ba nin de ri qi, cha dian he jiu dian qu yu fa gei wo, wo hui bang nin suo ding zui he shi de ji ge xuan xiang.',
+    '如果您还在决定先打哪座球场，就从这里开始。使用筛选器按地区、价格和难度缩小范围，然后把您的日期、差点和酒店区域发给我，我会帮您锁定最合适的几个选项。',
 }
 
 export function getGolfCoursesContent(locale = 'en') {
