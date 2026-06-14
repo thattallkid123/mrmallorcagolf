@@ -34,7 +34,7 @@ const FEATURE_ICONS = {
 }
 
 const HOME_UI = {
-  en: { tripPrompt: 'Need the whole trip planned? ->' },
+  en: { tripPrompt: 'Need the whole trip planned? Start here ->' },
   de: { tripPrompt: 'Soll die ganze Reise geplant werden? ->' },
   es: { tripPrompt: 'Necesita que le planifique todo el viaje? ->' },
   fr: { tripPrompt: 'Besoin que je planifie tout le sejour ? ->' },

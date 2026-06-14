@@ -470,8 +470,8 @@ export const CONTACT_CONTENT = {
     },
     cards: {
       emailLabel: '电子邮箱',
-      whatsappLabel: 'WhatsApp',
-      whatsappValue: '通过 WhatsApp 联系 →',
+      whatsappLabel: '微信',
+      whatsappValue: '通过微信联系 →',
       responseLabel: '回复时间',
       responseValue: '24 小时内 - 通常更快',
       basedLabel: '所在地',
@@ -484,7 +484,7 @@ export const CONTACT_CONTENT = {
       body: '我会在 24 小时内亲自回复您。如果您希望更快沟通，可以直接加我微信。',
       fasterReplyText: '想更快联系到我？',
       fasterReplyCta: '通过微信联系 Andy →',
-      fasterReplyCta_href: 'https://wa.me/34624466702',
+      fasterReplyCta_href: '/zh/contact#wechat',
     },
     form: {
       eyebrow: '咨询表单',

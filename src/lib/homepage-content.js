@@ -29,18 +29,18 @@ export const HOME_CONTENT = {
         {
           title: 'Play With A Pro',
           text: 'A private course day with Andy. Standalone or the centrepiece of a wider trip.',
-          cta: 'See Play With A Pro',
+          cta: 'Book the day',
           href: '/play-with-a-pro',
         },
         {
           title: 'Plan Your Trip',
           text: 'Courses, base, routing, tee times, buggies, rental clubs, and dining suggestions.',
-          cta: 'See trip planning',
+          cta: 'Plan the trip',
           href: '/plan-your-trip',
         },
       ],
       coursesBlurb: "I play and review every course on the island — Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. If you want to compare courses before booking,",
-      coursesBlurbLink: 'all 24 are here',
+      coursesBlurbLink: 'see the full list',
       stats: [
         { value: 'Jan-Dec', label: 'year-round season' },
         { value: '24', label: 'courses on the island' },
@@ -56,19 +56,19 @@ export const HOME_CONTENT = {
         {
           title: 'Play a round with Andy',
           text: 'Book a private day with me: one course, 18 holes, local course management, and coaching woven into the round. Solo or group.',
-          cta: 'Play With A Pro',
+          cta: 'Book Play With A Pro',
           href: '/play-with-a-pro',
         },
         {
           title: 'I am planning a golf trip',
           text: 'Let me handle the planning: courses matched to your group, base, routing, tee times, buggies, and bookings all taken care of before you arrive.',
-          cta: 'Plan Your Trip',
+          cta: 'Plan the trip',
           href: '/plan-your-trip',
         },
         {
           title: 'I am comparing courses',
           text: 'Read my course guide for honest, first-hand notes on green fees, difficulty, conditioning, scenery, and who each course actually suits.',
-          cta: 'Compare all courses',
+          cta: 'Compare courses',
           href: '/golf-courses',
         },
       ],
@@ -110,7 +110,7 @@ export const HOME_CONTENT = {
     courses: {
       eyebrow: 'Featured Courses',
       title: "Mallorca's finest, played and reviewed.",
-      viewAll: 'View all 24 courses →',
+      viewAll: 'See every Mallorca course →',
       items: [
         {
           cls: 'course-card--1',

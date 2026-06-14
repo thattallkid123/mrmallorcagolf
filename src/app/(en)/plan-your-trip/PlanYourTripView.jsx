@@ -8,8 +8,19 @@ import StickyMobileCta from '../../../components/StickyMobileCta'
 import { buildLocalePath } from '../../../lib/site'
 import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
 
+const COURSE_LINK_LABELS = {
+  en: 'View all Mallorca golf courses',
+  de: 'Alle Golfplaetze ansehen',
+  es: 'Ver todos los campos',
+  fr: 'Voir tous les parcours',
+  nl: 'Bekijk alle banen',
+  sv: 'Se alla banor',
+  zh: '查看所有马略卡球场',
+}
+
 export default function PlanYourTripView({ locale = 'en', content: rawContent }) {
   const content = rawContent || getPlanYourTripContent(locale)
+  const courseLinkLabel = COURSE_LINK_LABELS[locale] || COURSE_LINK_LABELS.en
   const golfCoursesHref = buildLocalePath('/golf-courses', locale)
   const contactHref = buildLocalePath('/contact', locale)
   const pwapHref = buildLocalePath('/play-with-a-pro', locale)
@@ -55,7 +66,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
             <p className="pyt-tier-body">{content.free.body}</p>
             <p className="pyt-tier-body" style={{ marginTop: '-0.35rem' }}>
               <Link href={golfCoursesHref} style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid currentColor' }}>
-                View all Mallorca golf courses
+                {courseLinkLabel}
               </Link>
             </p>
           </div>
@@ -116,8 +127,8 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
       <StickyMobileCta
         primaryHref={contactHref}
         primaryLabel={content.professional.cta}
-        secondaryHref="https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20planning%20a%20golf%20trip%20to%20Mallorca."
-        secondaryLabel="Message on WhatsApp"
+        secondaryHref={locale === 'zh' ? `${contactHref}#wechat` : 'https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20planning%20a%20golf%20trip%20to%20Mallorca.'}
+        secondaryLabel={locale === 'zh' ? '微信联系' : 'Message on WhatsApp'}
       />
     </main>
   )

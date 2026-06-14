@@ -1,11 +1,18 @@
-export default function WhatsAppButton() {
+import { buildLocalePath } from '../lib/site'
+
+export default function WhatsAppButton({ lang }) {
+  const isChinese = lang === 'zh'
+  const href = isChinese ? `${buildLocalePath('/contact', 'zh')}#wechat` : 'https://wa.me/34624466702'
+  const label = isChinese ? '联系微信' : 'Message on WhatsApp'
+
   return (
     <div className="whatsapp-float">
       <a
-        href="https://wa.me/34624466702"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Message on WhatsApp"
+        href={href}
+        target={isChinese ? undefined : '_blank'}
+        rel={isChinese ? undefined : 'noopener noreferrer'}
+        aria-label={label}
+        title={label}
         className="whatsapp-float__link"
       >
         <svg viewBox="0 0 24 24" fill="white" style={{ width: 26, height: 26 }}>

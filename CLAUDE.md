@@ -290,6 +290,11 @@ POST https://script.google.com/macros/s/AKfycbw0RzUzzrXzn3inKcggu0deF05wbL2xGlR1
 - **Content:** English is master. Do not add localized content that is not present in English.
 - **Shared locale edits:** If you add a new key to shared content used across locales, either add it for de/es/fr/nl/sv/zh in the same edit or provide an explicit getter fallback. Do not leave English-only structure gaps.
 - **Release gate for locale-facing work:** After editing shared content, locale content, metadata, or localized page copy, run `npm run check:i18n-release` before commit.
+- **Text-change checklist:** When changing copy on any locale page, check the shared components it flows through as well:
+  - contact page cards, success CTA, floating contact button, and mobile CTAs
+  - page-level CTA labels used by `Plan Your Trip`, `Play With A Pro`, and `Signature Day`
+  - Chinese-specific contact handling must use WeChat language and anchors, not English WhatsApp wording
+  - run `npm run check:locale-leaks` and `npm run build` after the edit, then scan for any remaining English copy on the target locale pages
 - **Large content files:** Do not use fragile editor operations on `guide-post-content.js` or `guides-content.js`; use precise scripted/byte replacement.
 - **Pre-deploy:** Run `npm run check:content`, `npm run build`, and `npm run check:visual`.
 
