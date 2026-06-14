@@ -43,6 +43,7 @@ function buildPlayWithAProSchema(locale, content) {
   const contactPath = buildLocalePath('/contact', locale)
   const golfCoursesPath = buildLocalePath('/golf-courses', locale)
   const serviceName = locale === 'en' ? 'Play With A Pro Mallorca Private Golf Day' : content.hero.title
+  const serviceType = locale === 'zh' ? '私人高尔夫球日' : 'Private golf day'
 
   return {
     '@context': 'https://schema.org',
@@ -59,7 +60,7 @@ function buildPlayWithAProSchema(locale, content) {
       '@type': 'Place',
       name: 'Mallorca, Spain',
     },
-    serviceType: 'Private golf day',
+    serviceType,
     offers: {
       '@type': 'AggregateOffer',
       lowPrice: 495,
@@ -73,7 +74,7 @@ function buildPlayWithAProSchema(locale, content) {
   }
 }
 
-function buildBreadcrumbSchema(locale) {
+function buildBreadcrumbSchema(locale, content) {
   const homePath = buildLocalePath('/', locale)
   const playPath = buildLocalePath('/play-with-a-pro', locale)
 
@@ -84,13 +85,13 @@ function buildBreadcrumbSchema(locale) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: 'Home',
+        name: content.hero.breadcrumbHome,
         item: `${SITE_ORIGIN}${homePath}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Play with a Pro',
+        name: content.hero.breadcrumbCurrent,
         item: `${SITE_ORIGIN}${playPath}`,
       },
     ],
@@ -101,16 +102,46 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const stripViewportRef = useRef(null)
   const stripTrackRef = useRef(null)
   const links = PAGE_LINKS[locale] || PAGE_LINKS.en
+  const copy =
+    locale === 'zh'
+      ? {
+          heroImageAlt: 'Andy Griffiths 在马略卡球场上指导球手',
+          stripLabel: '与 Andy 同场照片',
+          featuredLabel: '与 Andy 同场特色图片',
+          featuredImageAlt: '马略卡私人高尔夫体验，海景与球道背景',
+          photos: [
+            'Alcanada 上与球手同场',
+            'Son Antem West 的同场高尔夫日',
+            '带海景的小组高尔夫日',
+            '马略卡四人高尔夫小组',
+            'Son Gual 上的 Andy 与球手',
+            '带水景的小组高尔夫日',
+          ],
+        }
+      : {
+          heroImageAlt: 'Andy Griffiths coaching a client on the golf course in Mallorca',
+          stripLabel: 'Play With A Pro round photos',
+          featuredLabel: 'Play With A Pro featured image',
+          featuredImageAlt: 'Play With A Pro day in Mallorca with sea and fairway backdrop',
+          photos: [
+            'Andy with a client at Alcanada',
+            'Andy with two guests on a play-with-a-pro day at Son Antem West',
+            'Group golf day with sea views',
+            'Group of four golfers in Mallorca',
+            'Andy and client at Son Gual',
+            'Group day with water views',
+          ],
+        }
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
   }
   const dayPhotos = [
-    { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', position: 'center 38%' },
-    { src: '/images/son-antem-west-review-blog/son-antem-west-4.webp', alt: 'Andy with two guests on a play-with-a-pro day at Son Antem West', position: 'center 42%' },
-    { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
-    { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', position: 'center 36%' },
-    { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
-    { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
+    { src: '/images/client-alcanada.webp', alt: copy.photos[0], position: 'center 38%' },
+    { src: '/images/son-antem-west-review-blog/son-antem-west-4.webp', alt: copy.photos[1], position: 'center 42%' },
+    { src: '/images/client-group-alcanada.webp', alt: copy.photos[2], position: 'center 44%' },
+    { src: '/images/client-group-valley.webp', alt: copy.photos[3], position: 'center 36%' },
+    { src: '/images/client-son-gual.webp', alt: copy.photos[4], position: 'center 32%', variant: 'portrait' },
+    { src: '/images/client-group-pond.webp', alt: copy.photos[5], position: 'center 26%', variant: 'portrait' },
   ]
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
 
@@ -171,14 +202,14 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
     <>
       <PageLayout lang={locale}>
         <JsonLd data={buildPlayWithAProSchema(locale, content)} />
-        <JsonLd data={buildBreadcrumbSchema(locale)} />
+        <JsonLd data={buildBreadcrumbSchema(locale, content)} />
         <RevealObserver />
 
         <section className="pwap-hero pwap-hero--tall">
           <div className="pwap-hero__bg" aria-hidden="true">
             <Image
               src="/images/andy-coaching-client.webp"
-              alt="Andy Griffiths coaching a client on the golf course in Mallorca"
+              alt={copy.heroImageAlt}
               fill
               priority
               quality={88}
@@ -237,7 +268,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
-            <div className="pwap-day-strip" aria-label="Play With A Pro round photos" ref={stripViewportRef}>
+            <div className="pwap-day-strip" aria-label={copy.stripLabel} ref={stripViewportRef}>
               <div className="pwap-day-strip__track" ref={stripTrackRef}>
                 {dayPhotosLoop.map((photo, index) => (
                   <figure
@@ -282,11 +313,11 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           </div>
         </section>
 
-        <section className="pwap-feature-photo reveal" aria-label="Play With A Pro featured image">
+        <section className="pwap-feature-photo reveal" aria-label={copy.featuredLabel}>
           <div className="pwap-feature-photo__inner">
             <Image
               src="/images/pwap-mandarin-ab101723.webp"
-              alt="Play With A Pro day in Mallorca with sea and fairway backdrop"
+              alt={copy.featuredImageAlt}
               width={7008}
               height={4672}
               sizes="(max-width: 920px) 100vw, 1200px"

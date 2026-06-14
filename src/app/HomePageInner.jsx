@@ -34,13 +34,13 @@ const FEATURE_ICONS = {
 }
 
 const HOME_UI = {
-  en: { tripPrompt: 'Need the whole trip planned? Start here ->' },
-  de: { tripPrompt: 'Soll die ganze Reise geplant werden? ->' },
-  es: { tripPrompt: 'Necesita que le planifique todo el viaje? ->' },
-  fr: { tripPrompt: 'Besoin que je planifie tout le sejour ? ->' },
-  nl: { tripPrompt: 'Wilt u dat ik de hele reis plan? ->' },
-  sv: { tripPrompt: 'Vill du att jag planerar hela resan? ->' },
-  zh: { tripPrompt: '想让我把整趟行程也一起安排好吗？ ->' },
+  en: { tripPrompt: 'Need the whole trip planned? Start here' },
+  de: { tripPrompt: 'Soll die ganze Reise geplant werden?' },
+  es: { tripPrompt: 'Necesita que le planifique todo el viaje?' },
+  fr: { tripPrompt: 'Besoin que je planifie tout le sejour ?' },
+  nl: { tripPrompt: 'Wilt u dat ik de hele reis plan?' },
+  sv: { tripPrompt: 'Vill du att jag planerar hela resan?' },
+  zh: { tripPrompt: '想让我把整趟行程也一起安排好吗？' },
 }
 
 

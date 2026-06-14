@@ -297,6 +297,7 @@ POST https://script.google.com/macros/s/AKfycbw0RzUzzrXzn3inKcggu0deF05wbL2xGlR1
   - Chinese pages should localize visible service labels too: `Play With A Pro`, `Plan Your Trip`, `Signature Day`, and `A Day With Andy` should read as Chinese-facing names on zh pages unless an English brand/proper noun is genuinely required
   - FAQ styling is shared globally; if you change FAQ copy, inspect the rendered accordion on mobile and desktop so borders, spacing, and open-state formatting stay clean
   - when changing any locale text, check the shared source files plus the rendered zh routes (`/zh`, `/zh/contact`, `/zh/play-with-a-pro`, `/zh/plan-your-trip`, `/zh/signature-day`) in one pass before declaring done
+  - check visible text and hidden metadata together: breadcrumb JSON-LD, og/twitter tags, alt text, and CTA labels can still leak English even when the page body looks translated
   - run `npm run check:locale-leaks` and `npm run build` after the edit, then scan the rendered Chinese pages for any remaining English copy or mixed-language CTA labels
 - **Large content files:** Do not use fragile editor operations on `guide-post-content.js` or `guides-content.js`; use precise scripted/byte replacement.
 - **Pre-deploy:** Run `npm run check:content`, `npm run build`, and `npm run check:visual`.
