@@ -9,7 +9,7 @@
 $ErrorActionPreference = "Stop"
 
 # Define paths
-$gdrive = "C:\Users\andyg\My Drive\Mr Mallorca Golf\Active\Skills"
+$gdrive = "C:\Users\andyg\My Drive\Mr Mallorca Golf\Systems & Planning\Skills"
 $cowork = "C:\Users\andyg\AppData\Roaming\Claude\local-agent-mode-sessions\skills-plugin\b3bebfb7-33e8-46ab-bd72-6182db69a9e5\fe7a7714-7c35-4970-aaae-5a3d84f73007\skills"
 $repo = "C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real\skills"
 

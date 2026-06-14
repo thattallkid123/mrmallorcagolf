@@ -1,4 +1,4 @@
-"""
+﻿"""
 Weekly GA4 report runner for Mr Mallorca Golf.
 
 Runs the existing GA4 report, saves a local text copy, and optionally emails it
@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = ROOT / "ga4_analytics" / "reports"
-DOWNLOADS_COPY = Path(r"C:\Users\andyg\Downloads\MMG-GA4-weekly-latest.txt")
+DOWNLOADS_COPY = Path(r"C:\Users\andyg\Downloads\MMG-Reports\MMG-GA4-weekly-latest.txt")
 
 
 def run_report(days: int) -> str:

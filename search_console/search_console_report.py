@@ -17,13 +17,22 @@ from search_console_auth import get_credentials  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = ROOT / "search_console" / "reports"
-DOWNLOADS_TXT = Path(r"C:\Users\andyg\Downloads\MMG-Search-Console-latest.txt")
-DOWNLOADS_CSV = Path(r"C:\Users\andyg\Downloads\MMG-Search-Console-latest.csv")
+DOWNLOADS_TXT = Path(r"C:\Users\andyg\Downloads\MMG-Reports\MMG-Search-Console-latest.txt")
+DOWNLOADS_CSV = Path(r"C:\Users\andyg\Downloads\MMG-Reports\MMG-Search-Console-latest.csv")
 API_ROOT = "https://www.googleapis.com/webmasters/v3"
 DEFAULT_SITE_CANDIDATES = [
     "sc-domain:mrmallorcagolf.com",
     "https://www.mrmallorcagolf.com/",
     "https://mrmallorcagolf.com/",
+]
+
+STRATEGIC_PAGE_HINTS = [
+    ("/golf-courses", "Course hub: make the first-choice path clearer and keep the enquiry CTA visible."),
+    ("/contact", "Contact: strengthen trust above the form and make enquiry types feel simpler."),
+    ("/plan-your-trip", "Trip planner: show enough guidance to help users ask better questions, without over-explaining."),
+    ("/play-with-a-pro", "Private day: keep the premium value, inclusions, and booking path obvious."),
+    ("/signature-day", "Signature Day: keep the premium positioning sharp and make pricing/inclusions easy to scan."),
+    ("/coaching", "Coaching: if it stays public, make it clearly about Andy as coach and what a lesson solves."),
 ]
 
 
@@ -84,6 +93,27 @@ def query(session, site_url, start_date, end_date, dimensions, row_limit=25):
 def path_from_url(url):
     parsed = urlparse(url)
     return parsed.path or "/"
+
+
+def page_hint(path):
+    if path == "/":
+        return "Homepage: lift service clarity and push visitors toward golf-courses, play-with-a-pro, and plan-your-trip."
+    for prefix, hint in STRATEGIC_PAGE_HINTS:
+        if path == prefix or path.startswith(prefix.rstrip("/") + "/"):
+            return hint
+    if path.startswith("/guides/"):
+        return "Guide page: improve the title/meta/intro and link to the most relevant next step."
+    return "Page opportunity: tighten the intro and add a clearer next step."
+
+
+def page_kind(path):
+    if path == "/":
+        return "homepage"
+    if path.startswith("/guides/"):
+        return "guide"
+    if any(path == prefix for prefix, _ in STRATEGIC_PAGE_HINTS):
+        return "service"
+    return "other"
 
 
 def fmt_pct(value):
@@ -153,9 +183,16 @@ def build_report(days, site=None):
         {
             **row,
             "path": path_from_url(row["keys"][0]),
+            "kind": page_kind(path_from_url(row["keys"][0])),
         }
         for row in by_page
     ]
+
+    page_opportunities = [
+        row for row in page_rows
+        if row.get("impressions", 0) >= 20 and row.get("ctr", 0) < 0.02
+    ]
+    page_opportunities.sort(key=lambda row: (row.get("ctr", 0), -row.get("impressions", 0), row.get("position", 99)))
 
     lines = []
     lines.append(f"Mr Mallorca Golf - Search Console Report")
@@ -173,21 +210,28 @@ def build_report(days, site=None):
     lines.append("=" * 60)
     lines.append("  ACTION SUMMARY")
     lines.append("=" * 60)
+    if page_opportunities:
+        lines.append("  1. Fix these pages first:")
+        for row in page_opportunities[:5]:
+            lines.append(
+                f"     - {row['path']} ({row.get('impressions', 0):.0f} impr, pos {row.get('position', 0):.1f}, CTR {fmt_pct(row.get('ctr', 0))})"
+            )
+            lines.append(f"       {page_hint(row['path'])}")
     if title_meta_jobs:
-        lines.append("  1. Improve titles/meta/intros where position is decent but CTR is weak:")
+        lines.append("  2. Improve titles/meta/intros where position is decent but CTR is weak:")
         for row in title_meta_jobs[:5]:
             lines.append(
                 f"     - {path_from_url(row['keys'][0])} for '{row['keys'][1]}' "
                 f"({row.get('impressions', 0):.0f} impr, pos {row.get('position', 0):.1f}, CTR {fmt_pct(row.get('ctr', 0))})"
             )
     if internal_link_jobs:
-        lines.append("  2. Add internal links / improve page depth for near-ranking queries:")
+        lines.append("  3. Add internal links / improve page depth for near-ranking queries:")
         for row in internal_link_jobs[:5]:
             lines.append(
                 f"     - {path_from_url(row['keys'][0])} for '{row['keys'][1]}' "
                 f"(pos {row.get('position', 0):.1f})"
             )
-    if not title_meta_jobs and not internal_link_jobs:
+    if not page_opportunities and not title_meta_jobs and not internal_link_jobs:
         lines.append("  No obvious quick actions from current thresholds.")
 
     from io import StringIO
@@ -210,6 +254,13 @@ def build_report(days, site=None):
             ("Pos", 5, lambda r: f"{r.get('position', 0):.1f}"),
             ("Page", 36, lambda r: r["path"]),
         ])
+        print_table("PAGE OPPORTUNITIES", page_opportunities[:10], [
+            ("Impr.", 6, lambda r: int(r.get("impressions", 0))),
+            ("CTR", 7, lambda r: fmt_pct(r.get("ctr", 0))),
+            ("Pos", 5, lambda r: f"{r.get('position', 0):.1f}"),
+            ("Type", 10, lambda r: r.get("kind", "")),
+            ("Page", 28, lambda r: r["path"]),
+        ])
         print_table("QUICK WINS", opportunities, [
             ("Impr.", 6, lambda r: int(r.get("impressions", 0))),
             ("Pos", 5, lambda r: f"{r.get('position', 0):.1f}"),
@@ -222,6 +273,7 @@ def build_report(days, site=None):
     lines.append("")
     lines.append("Action notes:")
     lines.append("- Quick wins = impressions, no clicks, position 30 or better.")
+    lines.append("- Page opportunities = pages with enough impressions and CTR below 2%.")
     lines.append("- Start with better title/meta/intro/internal links for those page-query pairs.")
     lines.append("- Use the Indexing tab for URL-level coverage checks.")
 

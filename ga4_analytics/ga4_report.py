@@ -22,6 +22,15 @@ import os
 from datetime import date, timedelta
 
 PROPERTY_ID = "529404785"
+STRATEGIC_PAGES = [
+    ("/", "Homepage"),
+    ("/golf-courses", "Golf courses hub"),
+    ("/plan-your-trip", "Plan your trip"),
+    ("/play-with-a-pro", "Play with a pro"),
+    ("/signature-day", "Signature Day"),
+    ("/contact", "Contact"),
+    ("/coaching", "Coaching"),
+]
 
 
 def get_client():
@@ -123,6 +132,36 @@ def report_top_pages(client, start_date, end_date):
         mins = int(duration // 60)
         secs = int(duration % 60)
         print(f"  {views:>6,}  {users:>5,}  {mins}m {secs:02d}s    {path}")
+
+
+def report_strategic_pages(client, start_date, end_date):
+    print_section("STRATEGIC PAGES")
+    response = run_report(
+        client,
+        dimensions=["pagePath"],
+        metrics=["screenPageViews", "activeUsers", "averageSessionDuration"],
+        start_date=start_date,
+        end_date=end_date,
+        limit=100,
+    )
+
+    rows_by_path = {}
+    for row in response.rows:
+        rows_by_path[row.dimension_values[0].value] = row
+
+    print(f"  {'Views':>6}  {'Users':>5}  {'Avg time':>8}  Page")
+    print(f"  {'-'*6}  {'-'*5}  {'-'*8}  {'-'*40}")
+    for path, label in STRATEGIC_PAGES:
+        row = rows_by_path.get(path)
+        if row:
+            views = int(row.metric_values[0].value)
+            users = int(row.metric_values[1].value)
+            duration = float(row.metric_values[2].value)
+            mins = int(duration // 60)
+            secs = int(duration % 60)
+            print(f"  {views:>6,}  {users:>5,}  {mins}m {secs:02d}s    {path}  ({label})")
+        else:
+            print(f"  {'-':>6}  {'-':>5}  {'-':>8}  {path}  ({label})")
 
 
 def report_traffic_sources(client, start_date, end_date):
@@ -245,6 +284,7 @@ def main():
         report_overview(client, start_date, end_date)
     if args.report in ("all", "pages"):
         report_top_pages(client, start_date, end_date)
+        report_strategic_pages(client, start_date, end_date)
     if args.report in ("all", "sources"):
         report_traffic_sources(client, start_date, end_date)
     if args.report in ("all", "countries"):

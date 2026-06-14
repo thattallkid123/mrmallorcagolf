@@ -1,20 +1,100 @@
 # Mr Mallorca Golf — Integrated Control Panel
 
-**Last updated:** June 5, 2026  
+**Last updated:** June 5, 2026
 **Status:** All systems live and in sync
 
 ---
 
-## 🎯 One-Stop Command Reference
+## 🚀 LAUNCH CONTROL PANEL
 
-| What You Need | Command / Link | Time | Where |
-|---|---|---|---|
-| **Update a skill** | Edit in Drive → Run `.\SKILLS_SYNC.ps1` | 2 min | PowerShell |
-| **Deploy code changes** | `git add -A` → `git commit -m "..."` → `git push` | 3 min | PowerShell |
-| **Log a booking** | Add row to Ledger tab | 1 min | `MMG_TAX_CALCULATOR_2026.xlsx` |
-| **Weekly monitoring** | Run GA4 + Search Console checks | 15 min | Google Analytics / GSC |
-| **Check business status** | Read entire doc | 5 min | `MMG_MASTER_CONTROL_CENTER.md` |
-| **Find a contact** | Search by course | 1 min | `MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` |
+**To open the dashboard:**
+```
+cd C:\Users\andyg\Desktop\cursor\mmg-tools
+.\MMG-UNIFIED-CONTROL.cmd
+```
+
+Or double-click: `C:\Users\andyg\Desktop\cursor\mmg-tools\MMG-UNIFIED-CONTROL.cmd`
+
+This launches the unified control panel dashboard in your browser.
+
+---
+
+## 🎯 Scripts Reference
+
+All scripts are in: `C:\Users\andyg\Desktop\cursor\mmg-tools\scripts\` or `C:\Users\andyg\Desktop\cursor\mmg-tools\`
+
+### ✅ SKILLS_SYNC.ps1
+**What it does:** Syncs all 10 MMG skills from Google Drive (master) to Cowork and Repo
+**When to run:** After editing any skill file in Drive
+**Command:**
+```powershell
+cd C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
+.\SKILLS_SYNC.ps1
+```
+**Time:** 1 minute
+**Expected output:** "All skills synced successfully"
+
+### ✅ Run-ClaudeBackup.ps1
+**What it does:** Backs up Claude configuration and settings
+**When to run:** Weekly or after major changes
+**Command:**
+```powershell
+cd C:\Users\andyg\Desktop\cursor\mmg-tools\scripts
+.\Run-ClaudeBackup.ps1
+```
+**Time:** 2 minutes
+**Location:** Backup saved to `claude-config-backup/`
+
+### ✅ deploy.ps1
+**What it does:** Deploys code changes to live (git push to Vercel)
+**When to run:** After code changes are committed
+**Command:**
+```powershell
+cd C:\Users\andyg\Desktop\cursor\mmg-tools
+.\deploy.ps1
+```
+**Time:** 2 minutes (+ Vercel build time ~2 min)
+**Expected:** Site live at mrmallorcagolf.com
+
+### ✅ run-weekly-business-check.ps1
+**What it does:** Runs weekly GA4, Search Console, and business metrics checks
+**When to run:** Every Friday morning
+**Command:**
+```powershell
+cd C:\Users\andyg\Desktop\cursor\mmg-tools\scripts
+.\run-weekly-business-check.ps1
+```
+**Time:** 5 minutes
+**Outputs:** GA4 report, Search Console data, indexing status
+
+### ✅ mmg.cmd
+**What it does:** Main command launcher for various mmg-tools operations
+**When to run:** For quick operations or from control panel
+**Usage:**
+```
+mmg.cmd [command]
+```
+**Common commands:**
+```
+mmg pricing      → Sync pricing from Excel to JSON
+mmg site         → Update site content
+mmg status-sync  → Update course status
+mmg help         → Show all available commands
+```
+
+---
+
+## 📊 Quick Command Reference
+
+| Task | Command | Time |
+|---|---|---|
+| **Update a skill** | Edit Drive → Run `.\SKILLS_SYNC.ps1` | 2 min |
+| **Backup Claude config** | `.\Run-ClaudeBackup.ps1` | 2 min |
+| **Deploy code changes** | Commit → `.\deploy.ps1` | 4 min |
+| **Weekly business check** | `.\run-weekly-business-check.ps1` | 5 min |
+| **Log a booking** | Add row to Ledger tab | 1 min |
+| **Check business status** | Read `MMG_MASTER_CONTROL_CENTER.md` | 5 min |
+| **Find a contact** | Search `MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` | 1 min |
 
 ---
 
@@ -197,6 +277,82 @@ BEFORE QUARTERLY TAX PAYMENT (10 days before due date):
 ```
 
 **Master reference:** `MMG_MASTER_CONTROL_CENTER.md` (Google Drive root)
+
+---
+
+---
+
+## 📊 GA4 & Analytics
+
+**Property ID:** G-0Z2BRNWB4N
+**Dashboard:** https://analytics.google.com/analytics/web/
+
+**Weekly checks (Friday morning):**
+1. Users (last 7 days) — trend up/flat/down?
+2. Sessions (last 7 days) — compare to previous week
+3. Bounce rate — target <60% for service site
+4. Top pages — which get the most traffic?
+5. Top traffic source — Direct? Organic? Social? Referral?
+
+**Monthly summary (first Friday of month):**
+- Total users (last 30 days)
+- Total sessions
+- CTR trend
+- Top 10 pages
+- Top 5 traffic sources
+
+**Success metrics (target by Oct 2026):**
+- 300+ users/month
+- 50+ sessions/month from organic search
+- 2+ blog posts ranking in Google top 10
+- Zero site errors
+- CTR improving month-on-month
+
+---
+
+## 🔍 Google Search Console
+
+**Property:** https://search.google.com/search-console/mrmal lorcagolf.com
+
+**Weekly checks:**
+1. Coverage — any new errors?
+2. Performance — impressions, clicks, avg position
+3. Top queries — what searches find you?
+4. Look for drops >5% week-on-week
+
+**Monthly deep dive:**
+- Impressions (last 28 days) vs previous month
+- Clicks vs previous month
+- CTR — healthy is 2-5% for service sites
+- Top 10 queries — are SEO targets ranking?
+- Top 10 pages — which get most impressions?
+
+---
+
+## 🎨 Brand Identity
+
+### Brand Colors
+- **Primary Green:** `#2D4A3E` (dark teal) — premium, professional
+- **Accent Gold:** `#B8973C` (warm gold) — luxury, warmth
+- **Background:** `#F7F4EF` (off-white) — clean, premium feel
+- **Text:** `#1A1916` (near-black) — readability
+
+### Typography
+- **Headlines:** Lora (serif, elegant)
+- **Body:** System fonts (-apple-system, BlinkMacSystemFont, Segoe UI) — clean, modern
+- **Spacing:** Generous (premium feel)
+
+### Brand Voice
+- Professional but approachable
+- Premium positioning (coaching, not commodity)
+- Expert authority (UK PGA Advanced Professional)
+- Client-focused (bespoke, personalized)
+
+**See:** `MMG_BRAND_VOICE_GUIDELINES.md` (repo root) for full writing guidelines
+
+### Logo & Assets
+- Logo: MMG wordmark in dark green
+- All assets in: `C:\Users\andyg\My Drive\Mr Mallorca Golf\Active\`
 
 ---
 

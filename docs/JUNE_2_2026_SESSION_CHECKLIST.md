@@ -128,7 +128,7 @@
 - `/Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` — Private data
 
 **Skill files (all updated):**
-- `/Active/Skills/MMG_SKILL_*.md` (8 files)
+- `Skills/MMG_SKILL_*.md` (historical note; current skills live in the Drive `Skills/` folder)
 
 ---
 
