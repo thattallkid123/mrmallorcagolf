@@ -148,7 +148,7 @@ function buildLocalBusinessSchema(lang) {
     additionalType: 'https://schema.org/SportsActivityLocation',
     name: 'Mr Mallorca Golf',
     description: zh
-      ? '马略卡高尔夫行程规划、球场建议与高端 Play With A Pro 增值服务，由英国 PGA 高级职业教练 Andy Griffiths 主理。'
+      ? '马略卡高尔夫行程规划、球场建议与高端私人陪打服务，由英国 PGA 高级职业教练 Andy Griffiths 主理。'
       : 'Mallorca golf trip planning, course guidance, and premium Play With A Pro add-ons led by PGA Advanced Professional Andy Griffiths.',
     url: SITE_ORIGIN,
     email: 'andy@mrmallorcagolf.com',
