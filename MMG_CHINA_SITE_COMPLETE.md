@@ -1,12 +1,19 @@
 # MMG Chinese Site — Complete Implementation Guide
 
-**Date:** 2026-06-06  
+**Date:** 2026-06-11
 **Build Status:** ✅ PASSING (184 routes)  
 **Deployment Status:** ✅ READY NOW
 
 ---
 
 ## What's Been Done (Deployed in Current Build)
+
+### 2026-06-11 Note
+
+- The zh homepage is now intentionally market-localized rather than a literal translation of the other languages.
+- Homepage copy now leans on the verified China proof points already in the repo: Shanghai, Mandarin, Douyin, and WeChat.
+- `public/llms.txt` already existed and was refreshed instead of recreated.
+- Figure captions are already implemented in the guide system, so no caption-gap fix was needed.
 
 ### Code Changes (8 files modified, all tested)
 

@@ -32,7 +32,7 @@ export const rootMetadata = {
     template: '%s | Mr Mallorca Golf',
     default: 'Mallorca Golf Trip Planning',
   },
-  description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Build itineraries, compare courses, and add a private Play With A Pro day where it helps.',
+  description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Compare courses, build better itineraries, and add a private Play With A Pro day where it helps.',
   alternates: {
     canonical: '/',
     languages: Object.fromEntries(
@@ -49,7 +49,7 @@ export const rootMetadata = {
     url: SITE_ORIGIN,
     siteName: 'Mr Mallorca Golf',
     title: 'Mallorca Golf Trip Planning | Mr Mallorca Golf',
-    description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Build itineraries, compare courses, and add a private Play With A Pro day where it helps.',
+    description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Compare courses, build better itineraries, and add a private Play With A Pro day where it helps.',
     images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
@@ -79,7 +79,7 @@ const PERSON_SCHEMA = {
   '@id': `${SITE_ORIGIN}/#person-andy-griffiths`,
   name: 'Andy Griffiths',
   jobTitle: 'PGA Advanced Professional',
-  description: 'UK PGA Advanced Professional, Trackman Master, and Mallorca-based golf trip planner with 18 years coaching experience across three continents.',
+  description: 'UK PGA Advanced Professional, Trackman Master, and Mallorca-based golf trip planner with 18 years of coaching experience across three continents.',
   url: `${SITE_ORIGIN}/about`,
   image: DEFAULT_SOCIAL_IMAGE.url,
   sameAs: [

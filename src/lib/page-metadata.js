@@ -22,9 +22,9 @@ const OPEN_GRAPH_ALT_LOCALES = Object.values(OPEN_GRAPH_LOCALES)
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf Lessons, Trip Planning & On-Course Coaching',
+    title: 'Mallorca Golf | Courses, Coaching & Private Days',
     description:
-      'Play Mallorca\'s best courses with a PGA Advanced Professional by your side. Private golf days from €495. Honest course reviews. Expert trip planning.',
+      'Compare Mallorca golf courses, book private golf days, and get honest local advice from Andy Griffiths before you commit.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro',
@@ -52,17 +52,17 @@ const HOME_METADATA = {
       'Privata golfdagar pa Mallorca med Andy Griffiths, PGA Advanced Professional. Spela Son Gual, Alcanada och mer, med allt ordnat.',
   },
   zh: {
-    title: '马略卡高尔夫球日',
+    title: '马略卡高尔夫｜上海 11 年经验 · 普通话 · 抖音',
     description:
-      '与英国 PGA 高级职业教练 Andy Griffiths 共度马略卡私人高尔夫球日。畅打 Son Gual、Alcanada 等顶级球场，一切细节均已安排妥当。',
+      '由曾在上海执教 11 年、普通话流利并在抖音拥有大量高尔夫内容的 Andy Griffiths 安排马略卡私人高尔夫球日。畅打 Son Gual、Alcanada 等球场，一切细节均已安排妥当。',
   },
 }
 
 const GOLF_COURSES_METADATA = {
   en: {
-    title: 'Golf Courses in Mallorca 2026 | Reviews, Green Fees & Advice',
+    title: 'Mallorca Golf Courses | Reviews, Green Fees & Which Course to Choose',
     description:
-      'Compare every golf course in Mallorca in one place, with green fees, regions, difficulty, and honest PGA recommendations on who each course suits best.',
+      'Compare every Mallorca golf course in one place. See reviews, green fees, regions, difficulty, and which course fits your trip best.',
   },
   de: {
     title: 'Mallorca Golf Guide 2026 - Jeder Kurs auf der Insel',
@@ -179,9 +179,9 @@ const COACHING_METADATA = {
       'On-course golf coaching in Mallorca with PGA Advanced Professional Andy Griffiths. Real improvement in real conditions - for visiting and resident golfers.',
   },
   de: {
-    title: 'On-Course Golf Coaching auf Mallorca - PGA Professional',
+    title: 'Golfschule Mallorca | Golflehrer Andy Griffiths – PGA Professional',
     description:
-      'On-Course Golf Coaching auf Mallorca mit PGA Advanced Professional Andy Griffiths. Echte Verbesserung in echten Bedingungen - fuer besuchende und ansaessige Golfer.',
+      'Golfunterricht auf dem Platz in Mallorca mit PGA Advanced Professional Andy Griffiths. TPI Level 3, TrackMan-zertifiziert, 11 Jahre Coaching in Shanghai. Fuer Besucher und Einwohner.',
   },
   es: {
     title: 'Coaching de Golf en Campo en Mallorca - PGA Profesional',
@@ -212,7 +212,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Play With A Pro Mallorca | Private Golf Day',
+    title: 'Play With A Pro Mallorca | Private Golf Day with Andy Griffiths',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {
@@ -243,9 +243,9 @@ const PLAY_WITH_A_PRO_METADATA = {
 
 const CONTACT_METADATA = {
   en: {
-    title: 'Contact Andy Griffiths | Mallorca Golf Planning & Private Days',
+    title: 'Contact Andy Griffiths | Mallorca Golf Enquiry & Private Days',
     description:
-      'Tell Andy Griffiths your dates, handicap, hotel area, and what you want from the trip. Personal reply within 24 hours by email or WhatsApp.',
+      'Tell Andy Griffiths your dates, handicap, hotel area, and what you are comparing. You will get a personal reply within 24 hours by email or WhatsApp.',
   },
   de: {
     title: 'Kontakt Andy Griffiths - UK PGA Professional',
@@ -289,9 +289,9 @@ const ITINERARY_METADATA = {
 
 const PLAN_YOUR_TRIP_METADATA = {
   en: {
-    title: 'Plan Your Mallorca Golf Trip',
+    title: 'Plan Your Mallorca Golf Trip | Courses, Base & Tee Times',
     description:
-      'Use the free course finder as a starting point, or ask Andy to plan your Mallorca golf trip properly: courses, base, routing, tee times, buggies, rentals, and dining.',
+      'Use the course finder as a starting point, or ask Andy to plan your Mallorca golf trip properly: courses, base, routing, tee times, buggies, rentals, and dining.',
   },
   de: {
     title: 'Mallorca Golfreise planen',

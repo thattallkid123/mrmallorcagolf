@@ -112,6 +112,9 @@ export const CONTACT_CONTENT = {
       eyebrow: 'Anfrageformular',
       title: 'Beginnen Sie mit der Planung Ihres Tages.',
       intro: 'Je mehr Details Sie mir geben, desto besser kann ich den Tag auf Sie abstimmen.',
+      experienceHelpTitle: 'Welche Option passt?',
+      experienceHelp:
+        'Waehlen Sie die naechste passende Option und ich verfeinere den Rest mit Ihnen. Reiseplanung bedeutet, dass ich Ablauf, Plaetze und Logik rund um Ihre Daten und Gruppe aufbaue. Play With A Pro bedeutet, dass Andy mit Ihnen auf dem Platz ist. Wenn Sie noch unsicher sind, waehlen Sie die unsichere Option und ich leite Sie in die richtige Richtung.',
       labels: {
         fname: 'Vorname',
         lname: 'Nachname',
@@ -149,6 +152,11 @@ export const CONTACT_CONTENT = {
     gift: {
       heading: 'Schenken Sie diesen Tag?',
       body: 'Teilen Sie mir das bitte in der Nachricht oben mit. Ich bereite dann ein Zertifikat vor und halte die Details zur Erfahrung zurück, bis Sie bereit sind, sie zu teilen.',
+    },
+    trust: {
+      eyebrow: 'Warum Menschen anfragen',
+      quote: 'Nach nur 18 Loechern zusammen habe ich eine neue Grenze meines Potenzials entdeckt.',
+      credit: 'Jo, Play With A Pro Kunde',
     },
     whatNext: {
       heading: 'Was passiert als Nächstes?',

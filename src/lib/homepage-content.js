@@ -20,7 +20,7 @@ export const HOME_CONTENT = {
     },
     intro: {
       eyebrow: 'What I do',
-      title: 'A private day on the course with a PGA pro. Or let me plan the whole trip around it.',
+      title: 'A private day on the course with a PGA professional. Or let me plan the whole trip around it.',
       paragraphs: [
         'Play With A Pro is the private on-course day. One course, 18 holes, with me alongside you: course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.',
         'Plan Your Trip is the full planning service. If you want me to handle the courses, base, routing, tee times, buggies, and bookings before you arrive, I do that too.',
@@ -28,7 +28,7 @@ export const HOME_CONTENT = {
       services: [
         {
           title: 'Play With A Pro',
-          text: 'A private course day with Andy. Standalone, or the centrepiece of a wider trip.',
+          text: 'A private course day with Andy. Standalone or the centrepiece of a wider trip.',
           cta: 'See Play With A Pro',
           href: '/play-with-a-pro',
         },
@@ -853,23 +853,24 @@ const HOME_OVERRIDES = {
     },
     finalCta: { eyebrow: 'Redo att spela Mallorca på riktigt?', title: 'Hör av dig. Jag ordnar resten.', body: 'Berätta dina datum, ditt handicap och vad du vill få ut av dagen. Jag återkommer personligen inom 24 timmar.', primaryCta: 'Boka din dag', secondaryCta: 'WhatsApp' },
   },
+  // Chinese copy is market-localized, not a literal translation of the other language versions.
   zh: {
-    hero: { eyebrow: 'PGA Advanced Professional · Mallorca', titleLines: ['打马略卡最好的', '高尔夫球场。'], emphasis: '由职业教练全程陪同。', primaryCta: '预订这一天', secondaryCta: '查看球场' },
+    hero: { eyebrow: '上海 11 年 · 普通话 · PGA 高级职业教练', titleLines: ['打马略卡最好的', '高尔夫球场。'], emphasis: '由 Andy 教练全程陪同。', primaryCta: '预订这一天', secondaryCta: '查看球场' },
     intro: {
       eyebrow: '真正拉开差距的地方',
-      title: '马略卡很多高尔夫体验，都是从预订平台开始，以一张账单结束。这里更像一场真正为你安排好的私人一天。',
+      title: '我在上海待了 11 年，也知道中国客人要的不是一场普通预订，而是清楚、专业、有人把细节都安排好的私人高尔夫一天。',
       paragraphs: [
         '我会在岛上最好的球场陪你打一整天，指导直接发生在球场上，而不是打完以后再补几句建议。球会打得更好，决策会更清楚，整天的体验也会更周到。',
-        '马略卡全年都可以打球。知道哪个球场适合你的水平，哪些开球时间值得预订，以及什么时候状态最好，往往就是一天打得好与打得很好的全部差别。',
+        '我在上海执教过 11 年，和中国国家队球员、高要求家庭以及真正认真看内容的球手合作过，也在抖音上做过大量高尔夫内容。普通话流利，所以沟通、判断和安排都可以更直接。',
       ],
       stats: [
-        { value: '18', label: '年高尔夫执教经验' },
-        { value: '15,000+', label: '完成课程次数' },
-        { value: '300+', label: '带出的冠军球员' },
+        { value: '11', label: '年上海执教' },
+        { value: '普通话', label: '流利沟通' },
+        { value: '抖音', label: '数亿次观看内容' },
       ],
     },
-    socialProof: 'PGA 高级职业球手 · Trackman 大师认证 · 鹅卵石滩 · 英国公开赛 · 艾维昂',
-    how: { eyebrow: '流程很简单', title: '三个步骤。', steps: [{ number: '01', title: '联系我', text: '告诉我你的日期、差点和你想要什么样的一天。我会在 24 小时内亲自回复。' }, { number: '02', title: '我来安排这一天', text: '球场建议、开球时间和午餐都会在你到场前安排好。交通如有需要，也可以另外加上。' }, { number: '03', title: '到场开打', text: '你唯一要做的，就是享受这一轮。大多数人都会比自己预想中打得更好。' }] },
+    socialProof: '上海 11 年 · 普通话流利 · 抖音数亿次观看 · 中国国家队 · Trackman 大师认证',
+    how: { eyebrow: '流程很简单', title: '三个步骤。', steps: [{ number: '01', title: '联系我', text: '告诉我你的日期、差点、酒店区域和你想要什么样的一天。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。' }, { number: '02', title: '我来安排这一天', text: '球场建议、开球时间和午餐都会在你到场前安排好。交通如有需要，也可以另外加上。' }, { number: '03', title: '到场开打', text: '你唯一要做的，就是享受这一轮。大多数人都会比自己预想中打得更好。' }] },
     whyMallorca: { eyebrow: '为什么是马略卡', title: '马略卡有真正达到巡回赛水准的球场。很多来这里的人，其实只看到了很小的一部分。', paragraphs: ['欧洲很多顶级球场一到冬天就关门，马略卡不会。每年 10 月到次年 4 月，是这里的甜蜜期：果岭费更低，球场更安静，球况却依然出色。', '全岛共有 24 座球场，距离都不算远，其中不少有巡回赛历史，也有很成熟的设计。马略卡是真正的高尔夫目的地，只是大多数访客还没有真正认识它。'], stats: [{ value: 'Jan-Dec', label: '全年可打' }, { value: '24', label: '岛上球场总数' }, { value: '21', label: '向散客开放' }, { value: '3', label: '私人或受限' }] },
     courses: { eyebrow: '精选球场', title: '马略卡最值得打的球场，我都亲自打过，也认真评过。', viewAll: '查看全部 24 座球场 →' },
     experience: {
@@ -902,7 +903,7 @@ const HOME_OVERRIDES = {
         { q: '一年里什么时候最好？', a: '十月、十一月、三月和四月。球场状态、天气、性价比和节奏，这几个月的平衡最好。' },
       ],
     },
-    finalCta: { eyebrow: '准备好真正打懂马略卡了吗？', title: '联系我，剩下的我来安排。', body: '告诉我你的日期、差点，以及你希望这一天达到什么效果。我会在 24 小时内亲自回复。', primaryCta: '预订这一天', secondaryCta: 'WhatsApp' },
+    finalCta: { eyebrow: '准备好真正打懂马略卡了吗？', title: '联系我，剩下的我来安排。', body: '告诉我你的日期、差点和你希望这一天达到什么效果。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。', primaryCta: '预订这一天', secondaryCta: 'WhatsApp' },
   },
 }
 
@@ -2187,6 +2188,7 @@ export function getHomeContent(locale = 'en') {
   const soloOffer = getOfferById(OFFER_IDS.solo, locale)
   const groupOffer = getOfferById(OFFER_IDS.group, locale)
   const featuredCourseItems = getFeaturedHomeCourseItems()
+  // Keep the visible package prices aligned with the shared offer library.
   const packages = content.packages
     ? {
         ...content.packages,
