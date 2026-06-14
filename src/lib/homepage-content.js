@@ -1263,7 +1263,7 @@ const HOME_OVERRIDES = {
   },
   // Chinese copy is market-localized, not a literal translation of the other language versions.
   zh: {
-    hero: { eyebrow: '上海 11 年 · 普通话 · PGA 高级职业教练', titleLines: ['打马略卡最好的', '高尔夫球场。'], emphasis: '由 Andy 教练全程陪同。', primaryCta: '预订这一天', secondaryCta: '查看球场' },
+    hero: { eyebrow: '上海 11 年 · 普通话 · 英国职业高尔夫协会高级职业教练', titleLines: ['打马略卡最好的', '高尔夫球场。'], emphasis: '由 Andy 教练全程陪同。', primaryCta: '预订这一天', secondaryCta: '查看球场' },
     journey: {
       eyebrow: '选择你的方式',
       title: '从你现在所在的位置开始。',
@@ -1334,7 +1334,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: '一切都已安排好', text: '球场、开球时间、交通和午餐都会在你到场前安排妥当。' },
         { title: '下场指导', text: '真正有用的观察会出现在一轮当中，而且是在还来得及改变结果的时候。' },
-        { title: '完全私密', text: '只有你和一位 PGA Advanced Professional，不会有陌生人加入。' },
+        { title: '完全私密', text: '只有你和一位英国职业高尔夫协会高级职业教练，不会有陌生人加入。' },
         { title: '更多独家资源', text: '包括大多数访客无法自行预订的会员制球场。' },
       ],
     },
@@ -1401,7 +1401,7 @@ const HOME_OVERRIDES = {
             '球场根据小组水平、差点和预算精选',
             '住宿区域和路线建议',
             '一份在地图上真正合理的行程',
-            '可加配 Play With A Pro 一天',
+            '可加配陪打体验一天',
           ],
           note: '费用在咨询时说明——不是冷冰冰的定价页面。告诉我你的旅行规模，我来报一个合理的数字。',
           cta: '发起咨询 →',
@@ -1512,7 +1512,7 @@ const HOME_AUDIT_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: '岛上球场数量' },
-        { value: '英国PGA', label: '高级职业教练' },
+        { value: '英国职业高尔夫协会', label: '高级职业教练' },
       ],
     },
   },
@@ -1716,9 +1716,9 @@ const HOME_HUMANIZED_OVERRIDES = {
   },
   zh: {
     hero: {
-      eyebrow: '英国 PGA 高级职业教练 · 马略卡',
+      eyebrow: '英国职业高尔夫协会高级职业教练 · 马略卡',
       trust: [
-        '英国 PGA 高级职业教练',
+        '英国职业高尔夫协会高级职业教练',
         'Trackman Master 认证',
         '18 年高尔夫执教经验',
         'Pebble Beach · Évian · The Open',
