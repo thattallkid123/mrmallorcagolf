@@ -2683,15 +2683,15 @@ select.form-control { cursor: pointer; }
   .story__sidebar { position: static; border-left: none; border-top: 1px solid var(--linen); min-height: auto; }
 }
 @media (max-width: 768px) {
-  .hero { padding: 0 20px 60px; }
+  .hero { padding: 0 20px 44px; }
   .hero__content { width: 100%; max-width: 100%; min-width: 0; }
   .hero__eyebrow { max-width: 100%; flex-wrap: wrap; gap: 8px; font-size: 8px; letter-spacing: 0.14em; line-height: 1.6; }
   .hero__eyebrow::before { width: 24px; }
-  .hero__title { max-width: 100%; font-size: clamp(2rem, 9.4vw, 2.45rem); line-height: 1.1; overflow-wrap: normal; }
+  .hero__title { max-width: 100%; font-size: clamp(1.9rem, 9vw, 2.35rem); line-height: 1.08; overflow-wrap: normal; margin-bottom: 1.15rem; }
   .hero__cta-stack { width: 100%; gap: 10px; }
   .hero__actions { width: 100%; flex-direction: column; align-items: stretch; gap: 10px; }
   .hero__actions .btn { width: 100%; padding-left: 18px; padding-right: 18px; }
-  .hero__pwap-link { width: 100%; flex-direction: column; gap: 3px; text-align: center; font-size: 9px; letter-spacing: 0.1em; line-height: 1.65; padding: 11px 14px; }
+  .hero__pwap-link { width: 100%; flex-direction: column; gap: 3px; text-align: center; font-size: 8px; letter-spacing: 0.1em; line-height: 1.55; padding: 10px 12px; }
   .hero__pwap-link span:not(:first-child)::before { display: none; }
   .hero__pwap-link span::after { margin-left: 0.45em; }
   .intro { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
@@ -2821,6 +2821,25 @@ select.form-control { cursor: pointer; }
   .guide-cta__actions { min-width: 0; width: 100%; flex-direction: column; }
   .guide-cta__actions .btn { width: 100%; text-align: center; justify-content: center; }
   .pwap-hero__inner { padding: 0 20px 60px; }
+  .packages { padding: 56px 20px 44px; }
+  .packages__header { margin-bottom: 28px; }
+  .packages__header p { font-size: 0.94rem; line-height: 1.72; }
+  .packages__grid { gap: 14px; }
+  .package { padding: 28px 20px; }
+  .package__name { font-size: 1.38rem; }
+  .package__price { font-size: 1rem; margin-bottom: 18px; }
+  .package__divider { margin-bottom: 22px; }
+  .package__features { gap: 12px; margin-bottom: 20px; }
+  .package__features li { font-size: 0.86rem; line-height: 1.56; }
+  .package__note { font-size: 0.74rem; margin-bottom: 1.1rem; }
+  .packages__shared-cta { margin-top: 26px; }
+  .tier__name-small { font-size: 9px; }
+  .tier__name { font-size: 1.35rem; margin-bottom: 10px; }
+  .tier__price { font-size: 1rem; margin-bottom: 18px; }
+  .tier__rule { margin-bottom: 22px; }
+  .tier__features { gap: 12px; }
+  .tier__features li { font-size: 0.86rem; line-height: 1.56; }
+  .tier__btn { margin-top: 20px; padding: 12px 16px; font-size: 10px; }
   .who-section { padding: 60px 20px; }
   /* Course cards: show image on top on mobile, hide side image */
   .course__img-mobile { display:block; height: 220px; margin-bottom: 18px; }
