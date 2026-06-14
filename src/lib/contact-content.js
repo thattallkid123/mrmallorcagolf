@@ -577,7 +577,7 @@ const CONTACT_SEND_PROMPT = {
   fr: 'Idealement : dates, taille du groupe, zone d hotel, niveau et parcours deja envisages.',
   nl: 'Graag meesturen: data, groepsgrootte, hotelregio, handicap en banen die al op uw shortlist staan.',
   sv: 'Skicka garna: datum, gruppstorlek, hotellomrade, handicap och banor ni redan funderar pa.',
-  zh: 'jian yi yi bing gao zhi: chu xing ri qi, ren shu, zhu su qu yu, cha dian fan wei, yi ji nin yi kao lv de qiu chang.',
+  zh: '建议一并告知：出行日期、人数、住宿区域、差点范围，以及您已考虑的球场。',
 }
 
 const CONTACT_TRUST = {
@@ -607,9 +607,9 @@ const CONTACT_TRUST = {
     credit: 'Jo, Play With A Pro-kund',
   },
   zh: {
-    eyebrow: 'wei shen me da jia hui lai zi xun',
-    quote: 'zhi da le 18 dong, wo jiu fa xian zi ji de qian li hai neng zai wang shang zou yi ceng.',
-    credit: 'Jo, Play With A Pro ke hu',
+    eyebrow: '为什么大家会来咨询',
+    quote: '只打了 18 洞，我就发现自己的潜力还能再往上走一层。',
+    credit: 'Jo，Play With A Pro 客户',
   },
 }
 
