@@ -564,9 +564,9 @@ const CONTACT_FORM_HELP = {
       'Valj det alternativ som ligger narmast och sa finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplagget runt dina datum och din grupp. Play With A Pro betyder att Andy ar med dig ute pa banan. Om du inte ar saker annu, valj det osakra alternativet sa pekar jag dig ratt.',
   },
   zh: {
-    experienceHelpTitle: 'na yi zhong an pai geng he shi?',
+    experienceHelpTitle: '哪一种安排更合适？',
     experienceHelp:
-      'qing xuan ze zui jie jin de xuan xiang, wo hui zai ci ji chu shang bang nin xi hua. xing cheng gui hua yi wei zhe wo hui wei nin de ri qi he tong xing ren an pai qiu chang, lu xian he jie zou. Play With A Pro yi wei zhe Andy hui he nin yi qi xia chang. ru guo hai bu que ding, jiu xuan ze bu que ding de xuan xiang, wo hui bang nin pan duan.',
+      '请选择最接近的选项，我会在此基础上帮您细化。行程规划意味着我会为您的日期和同行人安排球场、路线和节奏。Play With A Pro 意味着 Andy 会和您一起下场。如果还不确定，就选择不确定的选项，我会帮您判断。',
   },
 }
 
