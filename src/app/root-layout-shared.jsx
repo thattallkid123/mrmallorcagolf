@@ -3,7 +3,7 @@ import { Cormorant_Garamond, Jost } from 'next/font/google'
 import Script from 'next/script'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
-import { DEFAULT_SOCIAL_IMAGE } from '../lib/page-metadata.js'
+import { DEFAULT_SOCIAL_IMAGE, getSocialImage } from '../lib/page-metadata.js'
 import ScrollToTop from './scroll-to-top.jsx'
 
 const jost = Jost({
@@ -73,99 +73,91 @@ export const rootMetadata = {
   },
 }
 
-const PERSON_SCHEMA = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  '@id': `${SITE_ORIGIN}/#person-andy-griffiths`,
-  name: 'Andy Griffiths',
-  jobTitle: 'PGA Advanced Professional',
-  description: 'UK PGA Advanced Professional, Trackman Master, and Mallorca-based golf trip planner with 18 years of coaching experience across three continents.',
-  url: `${SITE_ORIGIN}/about`,
-  image: DEFAULT_SOCIAL_IMAGE.url,
-  sameAs: [
-    'https://www.instagram.com/mrmallorcagolf',
-    'https://www.linkedin.com/in/andygriffithsgolf',
-  ],
-  knowsAbout: ['Golf coaching', 'On-course coaching', 'Mallorca golf courses', 'Course management', 'Golf trip planning'],
-  hasCredential: [
-    { '@type': 'EducationalOccupationalCredential', name: 'PGA Advanced Professional', credentialCategory: 'Professional Qualification' },
-    { '@type': 'EducationalOccupationalCredential', name: 'Trackman Master Certified', credentialCategory: 'Technical Certification' },
-    { '@type': 'EducationalOccupationalCredential', name: 'TPI Level 3 Certified', credentialCategory: 'Professional Certification' },
-  ],
+function buildPersonSchema(lang) {
+  const zh = lang.startsWith('zh')
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${SITE_ORIGIN}/#person-andy-griffiths`,
+    name: 'Andy Griffiths',
+    jobTitle: zh ? '英国 PGA 高级职业教练' : 'PGA Advanced Professional',
+    description: zh
+      ? '英国 PGA 高级职业教练、Trackman Master、马略卡高尔夫行程规划师，拥有横跨三大洲的 18 年教学经验。'
+      : 'UK PGA Advanced Professional, Trackman Master, and Mallorca-based golf trip planner with 18 years of coaching experience across three continents.',
+    url: `${SITE_ORIGIN}/about`,
+    image: getSocialImage(zh ? 'zh' : 'en').url,
+    sameAs: [
+      'https://www.instagram.com/mrmallorcagolf',
+      'https://www.linkedin.com/in/andygriffithsgolf',
+    ],
+    knowsAbout: zh
+      ? ['高尔夫教学', '场上指导', '马略卡高尔夫球场', '球场管理', '高尔夫行程规划']
+      : ['Golf coaching', 'On-course coaching', 'Mallorca golf courses', 'Course management', 'Golf trip planning'],
+    hasCredential: [
+      zh
+        ? { '@type': 'EducationalOccupationalCredential', name: 'PGA 高级职业教练', credentialCategory: '职业资质' }
+        : { '@type': 'EducationalOccupationalCredential', name: 'PGA Advanced Professional', credentialCategory: 'Professional Qualification' },
+      zh
+        ? { '@type': 'EducationalOccupationalCredential', name: 'Trackman 大师认证', credentialCategory: '技术认证' }
+        : { '@type': 'EducationalOccupationalCredential', name: 'Trackman Master Certified', credentialCategory: 'Technical Certification' },
+      zh
+        ? { '@type': 'EducationalOccupationalCredential', name: 'TPI 三级认证', credentialCategory: '专业认证' }
+        : { '@type': 'EducationalOccupationalCredential', name: 'TPI Level 3 Certified', credentialCategory: 'Professional Certification' },
+    ],
+  }
 }
 
-const LOCAL_BUSINESS_SCHEMA = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${SITE_ORIGIN}/#localbusiness`,
-  additionalType: 'https://schema.org/SportsActivityLocation',
-  name: 'Mr Mallorca Golf',
-  description: 'Mallorca golf trip planning, course guidance, and premium Play With A Pro add-ons led by PGA Advanced Professional Andy Griffiths.',
-  url: SITE_ORIGIN,
-  email: 'andy@mrmallorcagolf.com',
-  telephone: '+34624466702',
-  image: DEFAULT_SOCIAL_IMAGE.url,
-  sameAs: [
-    'https://www.instagram.com/mrmallorcagolf',
-    'https://www.linkedin.com/in/andygriffithsgolf',
-  ],
-  logo: {
-    '@type': 'ImageObject',
-    url: `${SITE_ORIGIN}/MMG_Logo_Green.png`,
-    width: 1200,
-    height: 1200,
-  },
-  contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', url: 'https://wa.me/34624466702', availableLanguage: ['English', 'Mandarin Chinese'] },
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Mallorca',
-    addressRegion: 'Balearic Islands',
-    addressCountry: 'ES',
-  },
-  geo: { '@type': 'GeoCoordinates', latitude: 39.6953, longitude: 3.0176 },
-  priceRange: 'EUR',
-  currenciesAccepted: 'EUR',
-  areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
-  founder: { '@id': `${SITE_ORIGIN}/#person-andy-griffiths` },
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Mallorca Golf Trip Planning',
-    itemListElement: getStructuredOfferCatalog(),
-  },
+function buildLocalBusinessSchema(lang) {
+  const zh = lang.startsWith('zh')
+  const socialImage = getSocialImage(zh ? 'zh' : 'en')
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${SITE_ORIGIN}/#localbusiness`,
+    additionalType: 'https://schema.org/SportsActivityLocation',
+    name: 'Mr Mallorca Golf',
+    description: zh
+      ? '马略卡高尔夫行程规划、球场建议与高端 Play With A Pro 增值服务，由英国 PGA 高级职业教练 Andy Griffiths 主理。'
+      : 'Mallorca golf trip planning, course guidance, and premium Play With A Pro add-ons led by PGA Advanced Professional Andy Griffiths.',
+    url: SITE_ORIGIN,
+    email: 'andy@mrmallorcagolf.com',
+    telephone: '+34624466702',
+    image: socialImage.url,
+    sameAs: [
+      'https://www.instagram.com/mrmallorcagolf',
+      'https://www.linkedin.com/in/andygriffithsgolf',
+    ],
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_ORIGIN}/MMG_Logo_Green.png`,
+      width: 1200,
+      height: 1200,
+    },
+    contactPoint: zh
+      ? { '@type': 'ContactPoint', contactType: '客服', url: 'https://wa.me/34624466702', availableLanguage: ['中文'] }
+      : { '@type': 'ContactPoint', contactType: 'customer service', url: 'https://wa.me/34624466702', availableLanguage: ['English', 'Mandarin Chinese'] },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Mallorca',
+      addressRegion: 'Balearic Islands',
+      addressCountry: 'ES',
+    },
+    geo: { '@type': 'GeoCoordinates', latitude: 39.6953, longitude: 3.0176 },
+    priceRange: 'EUR',
+    currenciesAccepted: 'EUR',
+    areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
+    founder: { '@id': `${SITE_ORIGIN}/#person-andy-griffiths` },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: zh ? '马略卡高尔夫行程规划' : 'Mallorca Golf Trip Planning',
+      itemListElement: getStructuredOfferCatalog(zh ? 'zh' : 'en'),
+    },
+  }
 }
 
-const ORGANIZATION_SCHEMA = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  '@id': `${SITE_ORIGIN}/#organization`,
-  name: 'Mr Mallorca Golf',
-  url: SITE_ORIGIN,
-  logo: {
-    '@type': 'ImageObject',
-    url: `${SITE_ORIGIN}/MMG_Logo_Green.png`,
-    width: 1200,
-    height: 1200,
-  },
-  sameAs: [
-    'https://www.instagram.com/mrmallorcagolf',
-    'https://www.linkedin.com/in/andygriffithsgolf',
-  ],
-  founder: { '@id': `${SITE_ORIGIN}/#person-andy-griffiths` },
-}
-
-const WEBSITE_SCHEMA = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  '@id': `${SITE_ORIGIN}/#website`,
-  name: 'Mr Mallorca Golf',
-  url: SITE_ORIGIN,
-  inLanguage: ['en', 'es', 'de', 'fr', 'nl', 'sv', 'zh-Hans'],
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: `${SITE_ORIGIN}/guides?search={search_term_string}`,
-    'query-input': 'required name=search_term_string',
-  },
-  publisher: {
+function buildOrganizationSchema() {
+  return {
+    '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': `${SITE_ORIGIN}/#organization`,
     name: 'Mr Mallorca Golf',
@@ -173,11 +165,49 @@ const WEBSITE_SCHEMA = {
     logo: {
       '@type': 'ImageObject',
       url: `${SITE_ORIGIN}/MMG_Logo_Green.png`,
+      width: 1200,
+      height: 1200,
     },
-  },
+    sameAs: [
+      'https://www.instagram.com/mrmallorcagolf',
+      'https://www.linkedin.com/in/andygriffithsgolf',
+    ],
+    founder: { '@id': `${SITE_ORIGIN}/#person-andy-griffiths` },
+  }
+}
+
+function buildWebsiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_ORIGIN}/#website`,
+    name: 'Mr Mallorca Golf',
+    url: SITE_ORIGIN,
+    inLanguage: ['en', 'es', 'de', 'fr', 'nl', 'sv', 'zh-Hans'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${SITE_ORIGIN}/guides?search={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+    publisher: {
+      '@type': 'Organization',
+      '@id': `${SITE_ORIGIN}/#organization`,
+      name: 'Mr Mallorca Golf',
+      url: SITE_ORIGIN,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_ORIGIN}/MMG_Logo_Green.png`,
+      },
+    },
+  }
 }
 
 export default function SiteRootLayout({ lang, children }) {
+  const personSchema = buildPersonSchema(lang)
+  const localBusinessSchema = buildLocalBusinessSchema(lang)
+  const organizationSchema = buildOrganizationSchema()
+  const websiteSchema = buildWebsiteSchema()
+
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
@@ -228,10 +258,10 @@ export default function SiteRootLayout({ lang, children }) {
           `}
         </Script>
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
         <ScrollToTop />

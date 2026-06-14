@@ -5,7 +5,12 @@ export const DEFAULT_SOCIAL_IMAGE = {
   url: `${SITE_ORIGIN}/images/social-preview.jpg`,
   width: 1200,
   height: 630,
-  alt: 'Private golf day in Mallorca with Mr Mallorca Golf',
+  alt: 'Mr Mallorca Golf',
+}
+
+const SOCIAL_IMAGE_ALT = {
+  en: DEFAULT_SOCIAL_IMAGE.alt,
+  zh: '马略卡私人高尔夫日，Mr Mallorca Golf',
 }
 
 const OPEN_GRAPH_LOCALES = {
@@ -19,6 +24,13 @@ const OPEN_GRAPH_LOCALES = {
 }
 
 const OPEN_GRAPH_ALT_LOCALES = Object.values(OPEN_GRAPH_LOCALES)
+
+export function getSocialImage(locale = 'en') {
+  return {
+    ...DEFAULT_SOCIAL_IMAGE,
+    alt: SOCIAL_IMAGE_ALT[locale] || DEFAULT_SOCIAL_IMAGE.alt,
+  }
+}
 
 const HOME_METADATA = {
   en: {
@@ -397,6 +409,7 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
   const pageUrl = `${SITE_ORIGIN}${pathname}`
   const openGraphLocale = OPEN_GRAPH_LOCALES[locale] || OPEN_GRAPH_LOCALES.en
   const openGraphAltLocales = OPEN_GRAPH_ALT_LOCALES.filter((candidate) => candidate !== openGraphLocale)
+  const socialImage = getSocialImage(locale)
   const openGraph = overrides.openGraph || (title || description
     ? {
         type: 'website',
@@ -404,7 +417,7 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
         siteName: 'Mr Mallorca Golf',
         locale: openGraphLocale,
         alternateLocale: openGraphAltLocales,
-        images: [DEFAULT_SOCIAL_IMAGE],
+        images: [socialImage],
         ...(title ? { title } : {}),
         ...(description ? { description } : {}),
       }
@@ -412,7 +425,7 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
   const twitter = overrides.twitter || (title || description
     ? {
         card: 'summary_large_image',
-        images: [DEFAULT_SOCIAL_IMAGE.url],
+        images: [socialImage.url],
         ...(title ? { title } : {}),
         ...(description ? { description } : {}),
       }

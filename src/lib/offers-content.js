@@ -301,26 +301,29 @@ export function getExperienceLabel(id, locale = 'en') {
   return getOfferById(id, locale).fullLabel
 }
 
-export function getStructuredOfferCatalog() {
+export function getStructuredOfferCatalog(locale = 'en') {
+  const offerLocale = getOfferLocale(locale)
+  const soloPrefix = locale === 'zh' ? '单人' : 'Solo'
+  const groupPrefix = locale === 'zh' ? '小组' : 'Group'
   return [
     {
       '@type': 'Offer',
-      name: `Solo - ${getOfferById(OFFER_IDS.solo, 'en').displayName}`,
-      description: getOfferById(OFFER_IDS.solo, 'en').structuredDescription,
-      price: getOfferById(OFFER_IDS.solo, 'en').priceNumeric,
+      name: `${soloPrefix} - ${getOfferById(OFFER_IDS.solo, locale).displayName}`,
+      description: getOfferById(OFFER_IDS.solo, locale).structuredDescription,
+      price: getOfferById(OFFER_IDS.solo, locale).priceNumeric,
       priceCurrency: 'EUR',
     },
     {
       '@type': 'Offer',
-      name: `Group - ${getOfferById(OFFER_IDS.group, 'en').displayName}`,
-      description: getOfferById(OFFER_IDS.group, 'en').structuredDescription,
-      price: getOfferById(OFFER_IDS.group, 'en').priceNumeric,
+      name: `${groupPrefix} - ${getOfferById(OFFER_IDS.group, locale).displayName}`,
+      description: getOfferById(OFFER_IDS.group, locale).structuredDescription,
+      price: getOfferById(OFFER_IDS.group, locale).priceNumeric,
       priceCurrency: 'EUR',
     },
     {
       '@type': 'Offer',
-      name: getOfferById(OFFER_IDS.premium, 'en').structuredName,
-      description: getOfferById(OFFER_IDS.premium, 'en').structuredDescription,
+      name: offerLocale.offers[OFFER_IDS.premium].structuredName || getOfferById(OFFER_IDS.premium, locale).structuredName,
+      description: getOfferById(OFFER_IDS.premium, locale).structuredDescription,
       priceCurrency: 'EUR',
     },
   ]
