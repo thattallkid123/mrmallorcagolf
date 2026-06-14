@@ -39,6 +39,8 @@ export const HOME_CONTENT = {
           href: '/plan-your-trip',
         },
       ],
+      coursesBlurb: "I play and review every course on the island — Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. If you want to compare courses before booking,",
+      coursesBlurbLink: 'all 24 are here',
       stats: [
         { value: 'Jan-Dec', label: 'year-round season' },
         { value: '24', label: 'courses on the island' },
@@ -863,6 +865,8 @@ const HOME_OVERRIDES = {
         '我会在岛上最好的球场陪你打一整天，指导直接发生在球场上，而不是打完以后再补几句建议。球会打得更好，决策会更清楚，整天的体验也会更周到。',
         '我在上海执教过 11 年，和中国国家队球员、高要求家庭以及真正认真看内容的球手合作过，也在抖音上做过大量高尔夫内容。普通话流利，所以沟通、判断和安排都可以更直接。',
       ],
+      coursesBlurb: '全岛 24 座球场，我都亲自打过并认真评价过——Son Gual、Alcanada、Son Muntaner 以及其余所有球场。如果你想在预订前比较球场，',
+      coursesBlurbLink: '全部球场在这里',
       stats: [
         { value: '11', label: '年上海执教' },
         { value: '普通话', label: '流利沟通' },

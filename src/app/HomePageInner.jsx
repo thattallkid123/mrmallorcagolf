@@ -142,10 +142,12 @@ export default function HomePageInner({ locale = 'en' }) {
           {home.intro.paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
-          <p>
-            I play and review every course on the island — Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. If you want to compare courses before booking,{' '}
-            <a href={golfCoursesHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>all 24 are here</a>.
-          </p>
+          {home.intro.coursesBlurb ? (
+            <p>
+              {home.intro.coursesBlurb}{' '}
+              <a href={golfCoursesHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>{home.intro.coursesBlurbLink}</a>.
+            </p>
+          ) : null}
           {home.intro.services ? (
             <div className="intro__services">
               {home.intro.services.map((service) => (
