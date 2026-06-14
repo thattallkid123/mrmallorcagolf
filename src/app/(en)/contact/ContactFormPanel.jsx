@@ -12,14 +12,14 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         <h3>{content.success.title}</h3>
         <p>{content.success.body}</p>
         <p style={{ marginTop: '1.5rem', fontSize: '0.88rem', color: 'var(--taupe)', lineHeight: 1.7 }}>
-          Want a faster reply?{' '}
+          {content.success.fasterReplyText || 'Want a faster reply?'}{' '}
           <a
-            href="https://wa.me/34624466702"
+            href={content.success.fasterReplyCta_href || 'https://wa.me/34624466702'}
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: 'var(--gold)', textDecoration: 'none', fontWeight: 500 }}
           >
-            Message Andy on WhatsApp →
+            {content.success.fasterReplyCta || 'Message Andy on WhatsApp →'}
           </a>
         </p>
       </div>
@@ -48,7 +48,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
       {content.form.sendPrompt ? (
         <div style={{ background: 'rgba(255,255,255,0.72)', border: '1px solid rgba(184,151,90,0.14)', padding: '14px 16px', marginBottom: '1.35rem' }}>
           <p style={{ margin: 0, fontSize: '0.86rem', lineHeight: 1.7, color: 'var(--charcoal)' }}>
-            <strong style={{ display: 'block', marginBottom: '0.35rem', color: 'var(--deep)' }}>What to send</strong>
+            <strong style={{ display: 'block', marginBottom: '0.35rem', color: 'var(--deep)' }}>{content.form.sendPromptLabel || 'What to send'}</strong>
             {content.form.sendPrompt}
           </p>
         </div>
@@ -121,7 +121,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
 
         <div className="form-group">
-          <label htmlFor="handicap">{content.form.labels.handicap} <span style={{ fontSize: '0.85em', color: 'var(--taupe)' }}>(optional)</span></label>
+          <label htmlFor="handicap">{content.form.labels.handicap} <span style={{ fontSize: '0.85em', color: 'var(--taupe)' }}>{content.form.handicapOptional || '(optional)'}</span></label>
           <input
             type="text"
             id="handicap"

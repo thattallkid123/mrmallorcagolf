@@ -482,11 +482,16 @@ export const CONTACT_CONTENT = {
     success: {
       title: '已收到您的咨询。',
       body: '我会在 24 小时内亲自回复您。如果您希望更快沟通，可以直接加我微信。',
+      fasterReplyText: '想更快联系到我？',
+      fasterReplyCta: '通过微信联系 Andy →',
+      fasterReplyCta_href: 'https://wa.me/34624466702',
     },
     form: {
       eyebrow: '咨询表单',
       title: '开始安排您的这一天。',
       intro: '您提供的信息越详细，我就越能把这一天安排得更贴合您的球和您的需求。',
+      handicapOptional: '（可选）',
+      sendPromptLabel: '建议提供以下信息',
       labels: {
         fname: '名字',
         lname: '姓氏',
