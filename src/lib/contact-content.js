@@ -571,7 +571,7 @@ const CONTACT_FORM_HELP = {
   zh: {
     experienceHelpTitle: '哪一种安排更合适？',
     experienceHelp:
-      '请选择最接近的选项，我会在此基础上帮您细化。行程规划意味着我会为您的日期和同行人安排球场、路线和节奏。Play With A Pro 意味着 Andy 会和您一起下场。如果还不确定，就选择不确定的选项，我会帮您判断。',
+      '请选择最接近的选项，我会在此基础上帮您细化。行程规划意味着我会为您的日期和同行人安排球场、路线和节奏。与 Andy 同场意味着 Andy 会和您一起下场。如果还不确定，就选择不确定的选项，我会帮您判断。',
   },
 }
 
@@ -614,7 +614,7 @@ const CONTACT_TRUST = {
   zh: {
     eyebrow: '为什么大家会来咨询',
     quote: '只打了 18 洞，我就发现自己的潜力还能再往上走一层。',
-    credit: 'Jo，Play With A Pro 客户',
+    credit: 'Jo，同场陪打客户',
   },
 }
 

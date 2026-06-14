@@ -19,6 +19,7 @@ const FOOTER_COPY = {
     newsletterHref: '/course-selector',
     privacy: 'Privacy Policy',
     terms: 'Terms & Conditions',
+    professional: 'PGA Advanced Professional',
   },
   de: {
     tagline: 'Private Golftage auf Mallorca mit Andy Griffiths. Lokale Einschätzung, aufmerksame Begleitung, alles arrangiert.',
@@ -109,6 +110,7 @@ const FOOTER_COPY = {
     newsletterHref: null,
     privacy: '隐私政策',
     terms: '条款',
+    professional: '英国职业高尔夫协会高级职业教练',
   },
 }
 
@@ -183,7 +185,7 @@ export default function Footer({ lang }) {
 
       <div className="footer__bottom">
         <p>
-          {'\u00a9'} 2026 Mr Mallorca Golf {'\u00b7'} Andy Griffiths {'\u00b7'} PGA Advanced Professional {'\u00b7'}{' '}
+          {'\u00a9'} 2026 Mr Mallorca Golf {'\u00b7'} Andy Griffiths {'\u00b7'} {copy.professional} {'\u00b7'}{' '}
           <Link href={getLegalPath('privacy-policy', locale)} prefetch={false} className="footer__legal-link">
             {copy.privacy}
           </Link>{' '}

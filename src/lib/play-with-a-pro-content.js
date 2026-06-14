@@ -589,7 +589,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       breadcrumbCurrent: '与职业球手同场',
       eyebrow: '私人高尔夫体验 · 马略卡',
       title: '在马略卡的一天私人高尔夫体验。',
-      body: '这是一整天的私人高尔夫体验，地点会选在马略卡最好的球场之一。我会全程与您同组下场，并把指导自然地放进整轮球里。它适合有一定水平的球手、来度假的球手，也适合任何想拥有比普通 tee time 更好一天的人。',
+      body: '这是一整天的私人高尔夫体验，地点会选在马略卡最好的球场之一。我会全程与您同组下场，并把指导自然地放进整轮球里。它适合有一定水平的球手、来度假的球手，也适合任何想拥有比普通开球时间更好一天的人。',
       primaryCta: '预订您的高尔夫日 →',
       primaryHref: '/zh/contact',
       secondaryCta: '查看方案',
@@ -626,7 +626,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       eyebrow: '适合哪些人',
       title: '这一天会根据站在第一洞的人而改变。',
       cards: [
-        { num: '01', title: '度假型球手', text: '有差点、会打球，也希望这轮马略卡高尔夫真的值得记住，而不是像普通线上预订一个 tee time 那样匆匆结束。' },
+        { num: '01', title: '度假型球手', text: '有差点、会打球，也希望这轮马略卡高尔夫真的值得记住，而不是像普通线上预订一个开球时间那样匆匆结束。' },
         { num: '02', title: '练习场和球场脱节的人', text: '练习场里打得不错，但一到球场就发挥不出来。问题通常不在挥杆本身，而在球场管理和临场决策。' },
         { num: '03', title: '商务或高管团体', text: '企业团体、来岛上的高管，以及任何想要一整天高规格、有人全程安排并带着真正高尔夫判断的人。' },
         { num: '04', title: '初学者', text: '想要有专业人士陪伴，但又不想有压力的休闲球手。重点不在记分卡，而在信心和享受。' },
@@ -1102,7 +1102,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   zh: {
     hero: {
-      body: '一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €495 起。小组方案 €950 起。果岭费另计。',
+      body: '一座球场。一整天与一位已经把一切都安排好的英国职业高尔夫协会高级职业教练同组下场。单人方案 €495 起。小组方案 €950 起。果岭费另计。',
       price: null,
     },
     packages: {
@@ -1111,7 +1111,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
       tiers: [
         {
           eyebrow: '单人',
-          name: 'A Day With Andy',
+          name: '与 Andy 同场',
           price: null,
           note: 'Andy 的单人日费。果岭费另计，沟通后确认。',
           features: [
@@ -1128,7 +1128,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
         },
         {
           eyebrow: '小组',
-          name: 'A Day With Andy',
+          name: '与 Andy 同场',
           price: null,
           note: '小组（2 或 3 人）按 Andy 的固定日费计价。果岭费另计，并在沟通后确认。',
           features: [

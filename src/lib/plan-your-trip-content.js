@@ -338,7 +338,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         '开球时间预订并确认',
         '球车和球杆租赁安排',
         '配合行程的餐饮建议',
-        '任何时候都可加购 Play With A Pro',
+        '任何时候都可加购同场陪打服务',
       ],
       note:
         '把日期、人数、差点范围和已经看中的球场发给我。我会告诉您下一步怎么走，并给出报价。',
@@ -347,7 +347,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     },
     addon: {
       eyebrow: '任何级别都可加购',
-      title: 'Play With A Pro',
+      title: '同场陪打',
       body:
         '与我一起完成 18 洞的私人球场日。可作为独立预订，也可作为已规划旅程的一部分。仅选择一座适合您水平的球场，在整轮之中融入当地的场上决策与指导。',
       price: '单人起价',
@@ -355,7 +355,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       groupLabel: '团体起价',
       groupValue: '€950',
       priceSuffix: '果岭费另计',
-      cta: '查看 Play With A Pro',
+      cta: '查看同场陪打',
     },
   },
 }

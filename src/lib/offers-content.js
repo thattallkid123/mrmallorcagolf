@@ -26,7 +26,8 @@ const OFFER_CONTENT = {
         priceDisplay: '€495',
         priceNumeric: '495',
         contactPrice: '€495',
-        structuredDescription: "Private full day with PGA Advanced Professional Andy Griffiths. Andy's fee for the day. Green fee additional, confirmed when we speak.",
+        structuredDescription:
+          "Private full day with PGA Advanced Professional Andy Griffiths. Andy's fee for the day. Green fee additional, confirmed when we speak.",
       },
       [OFFER_IDS.group]: {
         shortLabel: 'Group',
@@ -35,13 +36,15 @@ const OFFER_CONTENT = {
         priceDisplay: '€950',
         priceNumeric: '950',
         contactPrice: '€950',
-        structuredDescription: 'Full day for groups of up to 3 with PGA Advanced Professional Andy Griffiths. One fixed day rate. Green fees confirmed separately.',
+        structuredDescription:
+          'Full day for groups of up to 3 with PGA Advanced Professional Andy Griffiths. One fixed day rate. Green fees confirmed separately.',
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'Signature Day',
         contactPrice: 'From €3,000',
         structuredName: 'Signature Day',
-        structuredDescription: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From €3,000 on enquiry.',
+        structuredDescription:
+          'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From €3,000 on enquiry.',
       },
     },
   },
@@ -208,32 +211,42 @@ const OFFER_CONTENT = {
   zh: {
     statSoloLabel: '单人',
     playWithAProMeta:
-      'A private golf day in Mallorca alongside Andy Griffiths. Solo €495. Groups from €950. Green fees additional.',
+      '马略卡私人 18 洞陪打日，Andy Griffiths 全程同行。单人 €495，小组从 €950 起。果岭费另计。',
     playHeroBody:
-      '一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €495。小组从 €950 起，果岭费另计。',
+      '一座球场。与一位英国职业高尔夫协会高级职业教练同组下场一整天。单人方案 €495，小组从 €950 起。果岭费另计，沟通时确认。',
     playMultiDayDetail:
-      '完整的 Andy 日：一个球场，所有安排妥当。€3,000 起。没有物流，没有决定，到达时无需组织任何事务。根据您对这一天的期望，可以包括球童、摄影师、米其林级午餐、私人接送、水疗礼遇、高级球具租赁。Andy 提前协调一切，并在您到达前与您确认完整的行程安排。',
+      '完整的 Andy 日：一个球场，所有安排妥当。€3,000 起。到达后无需处理物流、决定或现场组织。可按需要安排球童、摄影、米其林午餐、私人接送、水疗礼遇、高级租杆等。Andy 会提前协调，并在您到达前确认完整行程。',
     homeMultiDayBody:
-      '完整的 Andy 日 -一个球场，所有安排妥当。没有物流，没有决定，无需组织。€3,000 起。',
-    contactUnknown: '暂时不确定 - 请给我建议',
+      '完整的 Andy 日 - 一个球场，所有安排妥当。没有物流，没有决定，无需组织。€3,000 起。',
+    tripPlanningContactLabel: '行程规划 - 制定我的马略卡高尔夫行程',
+    contactUnknown: '还不确定 - 请给我建议',
     offers: {
       [OFFER_IDS.solo]: {
         shortLabel: '单人',
-        displayName: '与 Andy 共度一天',
-        fullLabel: '与 Andy 共度一天 - 单人',
+        displayName: '与 Andy 同场',
+        fullLabel: '与 Andy 同场 - 单人',
         priceDisplay: '€495',
+        priceNumeric: '495',
         contactPrice: '€495',
+        structuredDescription:
+          '与英国职业高尔夫协会高级职业教练 Andy Griffiths 一起完成的私人整天体验。Andy 的日费。果岭费另计，沟通时确认。',
       },
       [OFFER_IDS.group]: {
         shortLabel: '小组',
-        displayName: '与 Andy 共度一天',
-        fullLabel: '与 Andy 共度一天 - 小组',
+        displayName: '与 Andy 同场',
+        fullLabel: '与 Andy 同场 - 小组',
         priceDisplay: '€950',
+        priceNumeric: '950',
         contactPrice: '€950',
+        structuredDescription:
+          '最多 3 位球手的私人整天体验，与英国职业高尔夫协会高级职业教练 Andy Griffiths 同场。固定日费。果岭费另计。',
       },
       [OFFER_IDS.premium]: {
         fullLabel: '完整的 Andy 日',
         contactPrice: '€3,000 起',
+        structuredName: '完整的 Andy 日',
+        structuredDescription:
+          '从头到尾按您的需求定制。接送、球童、高尔夫理疗、私人主厨、摄影师和其他加配项目都会在行程前安排好。咨询报价，€3,000 起。',
       },
     },
   },

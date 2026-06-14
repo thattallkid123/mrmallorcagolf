@@ -1299,6 +1299,20 @@ const HOME_OVERRIDES = {
         '我会在岛上最好的球场陪你打一整天，指导直接发生在球场上，而不是打完以后再补几句建议。球会打得更好，决策会更清楚，整天的体验也会更周到。',
         '我在上海执教过 11 年，和中国国家队球员、高要求家庭以及真正认真看内容的球手合作过，也在抖音上做过大量高尔夫内容。普通话流利，所以沟通、判断和安排都可以更直接。',
       ],
+      services: [
+        {
+          title: '与 Andy 同场',
+          text: '一整天的私人陪打：一座球场、18 洞、球场管理指导贯穿全程。单人或小组均可。',
+          cta: '了解陪打服务',
+          href: '/play-with-a-pro',
+        },
+        {
+          title: '行程规划',
+          text: '把球场、住宿基点、路线、开球时间、球车、球杆租赁和餐饮建议都交给我。',
+          cta: '了解行程规划',
+          href: '/plan-your-trip',
+        },
+      ],
       coursesBlurb: '全岛 24 座球场，我都亲自打过并认真评价过——Son Gual、Alcanada、Son Muntaner 以及其余所有球场。如果你想在预订前比较球场，',
       coursesBlurbLink: '全部球场在这里',
       stats: [
@@ -1309,7 +1323,7 @@ const HOME_OVERRIDES = {
     },
     socialProof: '上海 11 年 · 普通话流利 · 抖音数亿次观看 · 中国国家队 · Trackman 大师认证',
     how: { eyebrow: '流程很简单', title: '三个步骤。', steps: [{ number: '01', title: '联系我', text: '告诉我你的日期、差点、酒店区域和你想要什么样的一天。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。' }, { number: '02', title: '我来安排这一天', text: '球场建议、开球时间和午餐都会在你到场前安排好。交通如有需要，也可以另外加上。' }, { number: '03', title: '到场开打', text: '你唯一要做的，就是享受这一轮。大多数人都会比自己预想中打得更好。' }] },
-    whyMallorca: { eyebrow: '为什么是马略卡', title: '马略卡有真正达到巡回赛水准的球场。很多来这里的人，其实只看到了很小的一部分。', paragraphs: ['欧洲很多顶级球场一到冬天就关门，马略卡不会。每年 10 月到次年 4 月，是这里的甜蜜期：果岭费更低，球场更安静，球况却依然出色。', '全岛共有 24 座球场，距离都不算远，其中不少有巡回赛历史，也有很成熟的设计。马略卡是真正的高尔夫目的地，只是大多数访客还没有真正认识它。'], stats: [{ value: 'Jan-Dec', label: '全年可打' }, { value: '24', label: '岛上球场总数' }, { value: '21', label: '向散客开放' }, { value: '3', label: '私人或受限' }] },
+    whyMallorca: { eyebrow: '为什么是马略卡', title: '马略卡有真正达到巡回赛水准的球场。很多来这里的人，其实只看到了很小的一部分。', paragraphs: ['欧洲很多顶级球场一到冬天就关门，马略卡不会。每年 10 月到次年 4 月，是这里的甜蜜期：果岭费更低，球场更安静，球况却依然出色。', '全岛共有 24 座球场，距离都不算远，其中不少有巡回赛历史，也有很成熟的设计。马略卡是真正的高尔夫目的地，只是大多数访客还没有真正认识它。'], stats: [{ value: '全年', label: '全年可打' }, { value: '24', label: '岛上球场总数' }, { value: '21', label: '向散客开放' }, { value: '3', label: '私人或受限' }] },
     courses: { eyebrow: '精选球场', title: '马略卡最值得打的球场，我都亲自打过，也认真评过。', viewAll: '查看全部 24 座球场 →' },
     experience: {
       eyebrow: '这一天会是什么样',
@@ -1498,7 +1512,7 @@ const HOME_AUDIT_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: '岛上球场数量' },
-        { value: 'PGA', label: 'Advanced Professional' },
+        { value: '英国PGA', label: '高级职业教练' },
       ],
     },
   },
@@ -2235,8 +2249,8 @@ const HOME_PACKAGE_ITEMS = {
   zh: [
     {
       tier: '单人',
-      eyebrow: 'A Day With Andy',
-      name: 'Solo',
+      eyebrow: '与 Andy 同场',
+      name: '单人',
       features: [
         '根据您的球技匹配球场',
         '开球时间已预订',
@@ -2250,8 +2264,8 @@ const HOME_PACKAGE_ITEMS = {
     },
     {
       tier: '小组',
-      eyebrow: 'A Day With Andy',
-      name: 'Group',
+      eyebrow: '与 Andy 同场',
+      name: '小组',
       featured: true,
       features: [
         '最多 3 位球手，Andy 收取固定日费',
@@ -2265,9 +2279,9 @@ const HOME_PACKAGE_ITEMS = {
       cta: '查看价格',
     },
     {
-      tier: 'Signature 体验',
-      eyebrow: 'The Signature Experience',
-      name: 'Full Day',
+      tier: '签名体验',
+      eyebrow: '签名体验',
+      name: '全天体验',
       price: '€3,000+',
       signature: true,
       features: [

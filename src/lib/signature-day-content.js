@@ -193,21 +193,21 @@ const SIGNATURE_DAY_CONTENT = {
   },
   zh: {
     metadata: {
-      title: 'Signature Day Mallorca | 私人高尔夫日、理疗与晚餐',
+      title: '马略卡高端定制高尔夫日 | 私人高尔夫日、理疗与晚餐',
       description:
         '在马略卡的一整天高尔夫体验：与 Andy Griffiths 私人同场，John Brazier 高尔夫理疗，私人接送，以及酒店晚餐。3,000 欧元起。',
     },
     heroEyebrow: '马略卡的完整体验',
     heroTitle: '一天。\n每个环节都安排妥当。',
     heroBody:
-      '和我一起下场，再加上 The Golf Doctor 的理疗、私人接送，以及合作酒店晚餐。所有环节都会提前围绕您来安排。',
+      '和我一起下场，再加上 John Brazier 的理疗、私人接送，以及合作酒店晚餐。所有环节都会提前围绕您来安排。',
     price: '3,000 欧元起',
     primaryCta: '联系我',
     secondaryCta: '查看包含内容',
     coursesCta: '查看全部球场',
-    playCta: '查看 Play With A Pro',
+    playCta: '查看陪打体验',
     sections: {
-      introTitle: '这是一个把前后所有环节都接起来的 Play With A Pro 体验。',
+      introTitle: '这是一个把前后所有环节都接起来的高端体验。',
       introBody:
         '我们一起打 18 洞。我会看到您的球在真实条件下如何表现。随后，John Brazier 会接手我在球场上观察到的身体层面问题。您带走的是一套连贯、清楚的整体判断。',
       includedTitle: '包含内容',
@@ -224,7 +224,7 @@ const SIGNATURE_DAY_CONTENT = {
       courseTitle: '球场和当天节奏都会有意识地选择',
       courseBody:
         'Son Gual 和 Alcanada 都很适合这个形式，但真正合适的选择仍然取决于您、您的同行人，以及这一天想达到什么效果。我会坦白告诉您什么最合适。',
-      finalTitle: '每一个 Signature Day 都从一次沟通开始。',
+      finalTitle: '每一个高端定制高尔夫日都从一次沟通开始。',
       finalBody:
         '没有自动下单。把您的日期、人数和期待发给我，我会亲自回复，给您最合适的安排。',
     },
