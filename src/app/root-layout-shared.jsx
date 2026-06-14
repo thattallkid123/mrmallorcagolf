@@ -73,6 +73,37 @@ export const rootMetadata = {
   },
 }
 
+export function buildRootMetadata(locale = 'en') {
+  if (locale !== 'zh' && locale !== 'zh-Hans') {
+    return rootMetadata
+  }
+
+  const zhSocialImage = getSocialImage('zh')
+  const zhDescription = '马略卡高尔夫行程规划、球场建议与私人陪打服务，中文沟通顺畅，所有细节都可以提前安排好。'
+  return {
+    ...rootMetadata,
+    title: {
+      ...rootMetadata.title,
+      default: '马略卡高尔夫',
+    },
+    description: zhDescription,
+    keywords: ['马略卡高尔夫', '马略卡高尔夫行程', '马略卡球场', '私人陪打', '中文高尔夫', 'Andy Griffiths'],
+    openGraph: {
+      ...rootMetadata.openGraph,
+      locale: 'zh_CN',
+      title: '马略卡高尔夫 | 球场、陪打与私人行程',
+      description: zhDescription,
+      images: [zhSocialImage],
+    },
+    twitter: {
+      ...rootMetadata.twitter,
+      title: '马略卡高尔夫 | 球场、陪打与私人行程',
+      description: zhDescription,
+      images: [zhSocialImage.url],
+    },
+  }
+}
+
 function buildPersonSchema(lang) {
   const zh = lang.startsWith('zh')
   return {
