@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Mallorca Golf — Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pine: #2D4A3E;
+      --gold: #B8973C;
+      --cream: #F7F4EF;
+      --deep: #1A1916;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Jost', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--cream); font-family: var(--font-sans); color: var(--deep); }
+    header {
+      background: var(--pine);
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    header img { height: 48px; }
+    header h1 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+    main {
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--pine);
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 48px;
+      line-height: 1.6;
+    }
+    .tools {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .tool-card {
+      background: #fff;
+      border: 1px solid rgba(45,74,62,0.15);
+      border-radius: 4px;
+      padding: 28px 32px;
+      text-decoration: none;
+      display: block;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .tool-card:hover {
+      border-color: var(--pine);
+      box-shadow: 0 4px 16px rgba(45,74,62,0.08);
+    }
+    .tool-name {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--pine);
+      margin-bottom: 6px;
+    }
+    .tool-desc {
+      font-size: 0.88rem;
+      color: #666;
+      line-height: 1.6;
+    }
+    .tool-tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      padding: 48px 24px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="MMG_Logo_White_Transparent.png" alt="Mr Mallorca Golf">
+    <h1>Prototype Tools</h1>
+  </header>
+
+  <main>
+    <h2>Planning Tools</h2>
+    <p class="subtitle">Internal prototypes for testing before integration into the main site.</p>
+
+    <div class="tools">
+      <a class="tool-card" href="course-selector/">
+        <div class="tool-name">Course Selector</div>
+        <div class="tool-desc">Recommends the right Mallorca golf course based on skill level, preferred style, and group type. Covers all 24 courses.</div>
+        <span class="tool-tag">Quiz</span>
+      </a>
+
+      <a class="tool-card" href="hotel-recommender/">
+        <div class="tool-name">Hotel Recommender</div>
+        <div class="tool-desc">Matches golfers to the right hotel based on area, priorities, group size, style, and budget. 70 hotels across 5 areas of the island.</div>
+        <span class="tool-tag">Quiz</span>
+      </a>
+
+      <a class="tool-card" href="golf-day-builder/">
+        <div class="tool-name">Golf Day Builder</div>
+        <div class="tool-desc">Helps plan a full golf day in Mallorca, including tee time, transfer, warm-up, and post-round plans.</div>
+        <span class="tool-tag">Planner</span>
+      </a>
+
+      <a class="tool-card" href="golf-cost-calculator/">
+        <div class="tool-name">Golf Cost Calculator</div>
+        <div class="tool-desc">Estimates total golf trip costs based on group size, number of rounds, and budget tier.</div>
+        <span class="tool-tag">Calculator</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>Mr Mallorca Golf — internal prototype environment</footer>
+</body>
+</html>
