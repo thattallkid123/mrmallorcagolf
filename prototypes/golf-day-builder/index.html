@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your Perfect Golf Day in Mallorca | Mr Mallorca Golf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* ==========================================================
+     MMG design system tokens
+     Source: MMG_BRAND_COLOURS_AND_DESIGN_SYSTEM.md + globals.css
+     ========================================================== */
+  :root{
+    --cream:        #F7F4EF;
+    --linen:        #EDE9E1;
+    --sand:         #E0D8CB;
+    --stone:        #C4BAA9;
+    --taupe:        #8A7F74;
+    --charcoal:     #2C2A27;
+    --deep:         #1A1916;
+    --pine:         #2D4A3E;
+    --pine-mid:     #3D6455;
+    --pine-light:   #4D7A67;
+    --pine-pale:    #EBF2EF;
+    --gold:         #B8973C;
+    --gold-light:   #D4B068;
+    --gold-pale:    #F4EDD8;
+    --white:        #FFFFFF;
+    --font-serif:   'Cormorant Garamond', Georgia, serif;
+    --font-sans:    'Jost', 'Helvetica Neue', Arial, sans-serif;
+    --shadow-soft:  0 22px 60px rgba(18, 17, 15, 0.08);
+    --ease-luxury:  cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  *, *::before, *::after{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:var(--font-sans);
+    font-weight:300;
+    color:var(--charcoal);
+    background:var(--cream);
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px 90px}
+
+  /* ---------- Eyebrow / headline pattern ---------- */
+  .eyebrow{
+    font-family:var(--font-sans);font-weight:500;
+    font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+  }
+  .gold-rule{width:36px;height:1px;background:var(--gold);margin:18px auto 0}
+
+  /* ---------- Header (inner-page hero pattern) ---------- */
+  header{
+    background:linear-gradient(160deg, var(--deep) 0%, #20241F 55%, var(--pine) 130%);
+    color:var(--white);
+    padding:64px 24px 58px;
+    text-align:center;
+  }
+  header .eyebrow{color:var(--gold-light);margin-bottom:16px}
+  header h1{
+    font-family:var(--font-serif);
+    font-size:clamp(2.2rem, 5vw, 3.4rem);
+    font-weight:500;line-height:1.08;letter-spacing:-0.01em;
+    max-width:560px;margin:0 auto;
+    text-wrap:balance;
+  }
+  header p{
+    margin:18px auto 0;color:rgba(255,255,255,0.72);
+    font-size:1rem;max-width:460px;font-weight:300;
+  }
+
+  /* ---------- Progress ---------- */
+  .progress{
+    display:flex;gap:4px;justify-content:center;
+    margin:34px auto 10px;max-width:300px;
+  }
+  .progress span{
+    flex:1;height:2px;
+    background:var(--sand);transition:background .3s;
+  }
+  .progress span.done{background:var(--gold)}
+  .step-label{
+    text-align:center;font-weight:400;
+    font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--taupe);margin-bottom:8px;
+  }
+
+  /* ---------- Question cards ---------- */
+  .qcard{display:none;animation:fadeUp .4s var(--ease-luxury) both}
+  .qcard.active{display:block}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .qcard h2{
+    font-family:var(--font-serif);
+    font-size:clamp(1.7rem, 4vw, 2.3rem);font-weight:500;line-height:1.12;
+    color:var(--deep);text-align:center;margin:16px 0 4px;
+  }
+  .qcard .sub{
+    text-align:center;color:var(--taupe);font-size:.95rem;margin-bottom:26px;line-height:1.6;
+  }
+  .opts{display:grid;grid-template-columns:1fr;gap:10px}
+  @media(min-width:560px){.opts{grid-template-columns:1fr 1fr}}
+  .opt{
+    background:var(--white);border:1px solid var(--sand);
+    padding:18px;cursor:pointer;text-align:left;
+    display:flex;gap:16px;align-items:center;
+    transition:border-color .25s, box-shadow .25s, transform .2s var(--ease-luxury);
+    font:inherit;color:inherit;width:100%;
+  }
+  .opt:hover{border-color:var(--gold);transform:translateY(-1px)}
+  .opt.selected{border-color:var(--gold);background:var(--gold-pale);box-shadow:var(--shadow-soft)}
+  .opt .ico{
+    width:36px;height:36px;flex:0 0 36px;
+    border:1px solid var(--gold);color:var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-serif);font-style:italic;font-size:.95rem;
+    background:var(--white);
+  }
+  .opt.selected .ico{background:var(--pine);border-color:var(--pine);color:var(--gold-light)}
+  .opt .t{font-family:var(--font-serif);font-size:1.18rem;font-weight:500;color:var(--deep);line-height:1.2}
+  .opt .d{font-size:.78rem;font-weight:400;color:var(--taupe);margin-top:2px;line-height:1.5;display:block}
+  .multi-note{
+    text-align:center;font-weight:400;
+    font-size:9px;color:var(--gold);margin-bottom:16px;
+    letter-spacing:.14em;text-transform:uppercase;
+  }
+  .nav-row{display:flex;justify-content:space-between;margin-top:28px;gap:12px}
+  .btn{
+    font-family:var(--font-sans);font-weight:500;
+    border:none;cursor:pointer;
+    padding:16px 34px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    transition:background .25s, opacity .25s, transform .2s;
+    border-radius:999px;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn-pine{background:var(--pine);color:var(--white)}
+  .btn-pine:hover{background:var(--pine-mid)}
+  .btn-gold{background:var(--gold);color:var(--deep);box-shadow:0 14px 28px rgba(184,151,60,0.2)}
+  .btn-gold:hover{opacity:.9}
+  .btn-ghost{background:transparent;color:var(--taupe);border:1px solid var(--sand)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--charcoal)}
+  .btn[disabled]{opacity:.35;cursor:not-allowed}
+
+  /* ---------- Intro ---------- */
+  #intro{text-align:center;padding-top:40px}
+  #intro .lead{font-size:1rem;max-width:440px;margin:0 auto 30px;color:var(--charcoal);line-height:1.85}
+
+  /* ---------- Results ---------- */
+  #results{display:none}
+  .result-head{text-align:center;padding-top:40px;margin-bottom:8px}
+  .result-head .eyebrow{color:var(--gold);margin-bottom:12px}
+  .result-head h2{
+    font-family:var(--font-serif);font-size:clamp(1.9rem,4.5vw,2.7rem);
+    font-weight:500;color:var(--deep);line-height:1.1;
+  }
+  .result-head p{color:var(--taupe);margin-top:10px;font-size:.95rem}
+
+  .tabs{display:flex;gap:2px;margin:28px 0 24px;border:1px solid var(--sand);background:var(--white)}
+  .tab{
+    flex:1;border:none;padding:14px 6px;cursor:pointer;
+    font-family:var(--font-sans);font-weight:500;font-size:9px;
+    letter-spacing:.12em;text-transform:uppercase;line-height:1.5;
+    background:transparent;color:var(--taupe);
+    transition:background .25s,color .25s;
+  }
+  .tab.active{background:var(--pine);color:var(--white)}
+
+  .itin{display:none;animation:fadeUp .35s var(--ease-luxury) both}
+  .itin.active{display:block}
+
+  .course-card{
+    background:linear-gradient(165deg, var(--pine) 0%, var(--deep) 120%);
+    color:var(--white);
+    padding:30px 26px;margin-bottom:28px;
+    position:relative;overflow:hidden;
+  }
+  .course-card::after{
+    content:'M';position:absolute;right:-14px;bottom:-58px;
+    font-family:var(--font-serif);font-weight:500;
+    font-size:13rem;line-height:1;color:rgba(255,255,255,0.04);
+    pointer-events:none;
+  }
+  .course-card .tag{
+    display:inline-block;font-weight:500;
+    font-size:9px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold-light);border:1px solid rgba(212,176,104,.4);
+    padding:6px 12px;margin-bottom:16px;
+  }
+  .course-card h3{font-family:var(--font-serif);font-size:1.9rem;font-weight:500;line-height:1.1;margin-bottom:8px}
+  .course-card .where{font-size:.78rem;font-weight:400;letter-spacing:.06em;color:rgba(255,255,255,0.72)}
+  .course-card .blurb{margin-top:14px;font-size:.92rem;color:rgba(255,255,255,0.78);line-height:1.8;max-width:46ch;position:relative;z-index:1}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;position:relative;z-index:1}
+  .pill{
+    font-size:.72rem;font-weight:400;letter-spacing:.04em;
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);
+    padding:5px 12px;color:rgba(255,255,255,0.85);
+  }
+
+  /* ---------- Timeline ---------- */
+  .timeline{position:relative;padding-left:40px;margin-bottom:8px}
+  .timeline::before{
+    content:"";position:absolute;left:13px;top:10px;bottom:14px;
+    width:1px;background:linear-gradient(var(--gold), var(--sand));
+  }
+  .tl-item{position:relative;padding-bottom:26px}
+  .tl-item:last-child{padding-bottom:8px}
+  .tl-dot{
+    position:absolute;left:-40px;top:0;width:27px;height:27px;
+    background:var(--white);border:1px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-serif);font-style:italic;font-size:.8rem;color:var(--gold);
+  }
+  .tl-time{
+    font-size:9px;font-weight:500;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+  }
+  .tl-title{font-family:var(--font-serif);font-size:1.22rem;font-weight:500;color:var(--deep);margin-top:3px;line-height:1.25}
+  .tl-desc{font-size:.85rem;font-weight:300;color:var(--charcoal);margin-top:4px;line-height:1.75;max-width:52ch}
+
+  /* ---------- Why / Andy cards ---------- */
+  .why-card{
+    border-left:2px solid var(--gold);background:var(--gold-pale);
+    padding:24px 26px;margin-top:26px;
+  }
+  .why-card h4{
+    font-weight:500;font-size:10px;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;
+  }
+  .why-card p{
+    font-family:var(--font-serif);font-style:italic;
+    font-size:1.1rem;color:var(--pine);line-height:1.6;
+  }
+  .andy-card{background:var(--linen);padding:26px;margin-top:18px}
+  .andy-card h4{
+    font-weight:500;font-size:10px;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;
+  }
+  .andy-card ul{list-style:none}
+  .andy-card li{
+    font-size:.88rem;font-weight:300;
+    padding:6px 0 6px 28px;position:relative;color:var(--charcoal);
+  }
+  .andy-card li::before{
+    content:'·';position:absolute;left:6px;
+    font-family:var(--font-serif);font-size:1.4rem;line-height:1;top:6px;color:var(--gold);
+  }
+
+  .estimate-note{
+    font-size:.74rem;font-weight:300;font-style:italic;
+    color:var(--taupe);text-align:center;margin-top:22px;line-height:1.7;
+  }
+
+  /* ---------- CTA block (dark section) ---------- */
+  .cta-block{
+    margin-top:38px;background:var(--deep);
+    padding:44px 28px;text-align:center;color:var(--white);
+    position:relative;overflow:hidden;
+  }
+  .cta-block::before{
+    content:'M';font-family:var(--font-serif);font-size:16rem;font-weight:500;
+    color:rgba(255,255,255,0.03);position:absolute;right:-30px;top:-60px;
+    line-height:1;pointer-events:none;
+  }
+  .cta-block .eyebrow{color:var(--gold-light);margin-bottom:14px}
+  .cta-block h3{
+    font-family:var(--font-serif);font-size:clamp(1.6rem,4vw,2.1rem);
+    font-weight:500;line-height:1.15;max-width:420px;margin:0 auto 12px;
+  }
+  .cta-block .cta-copy{
+    font-size:.9rem;color:rgba(255,255,255,.72);
+    max-width:400px;margin:0 auto 28px;line-height:1.8;
+  }
+  .cta-grid{display:grid;gap:10px;max-width:380px;margin:0 auto;position:relative;z-index:1}
+  .cta-grid .btn{width:100%}
+  .cta-block .btn-pine{background:var(--pine)}
+  .cta-secondary{display:flex;gap:8px;margin-top:6px}
+  .cta-secondary .btn{
+    flex:1;background:transparent;color:rgba(255,255,255,0.85);
+    border:1px solid rgba(255,255,255,.22);font-size:9px;padding:13px 6px;letter-spacing:.12em;
+  }
+  .cta-secondary .btn:hover{border-color:var(--gold-light);color:var(--gold-light)}
+  .restart{
+    display:block;margin:18px auto 0;background:none;border:none;cursor:pointer;
+    font-family:var(--font-sans);font-weight:400;font-size:10px;
+    letter-spacing:.14em;text-transform:uppercase;padding:14px 12px 2px;
+    color:var(--taupe);border-bottom:1px solid var(--stone);
+  }
+  .restart:hover{color:var(--charcoal);border-color:var(--gold)}
+
+  .toast{
+    position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);
+    background:var(--deep);color:var(--cream);
+    padding:13px 26px;font-size:.8rem;font-weight:400;letter-spacing:.02em;
+    box-shadow:var(--shadow-soft);transition:transform .35s var(--ease-luxury);z-index:50;
+    max-width:88vw;text-align:center;border-radius:999px;
+  }
+  .toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<nav style="background:#2D4A3E;padding:12px 20px;display:flex;align-items:center;">
+  <img src="../MMG_Logo_White_Transparent.png" alt="Mr Mallorca Golf" style="height:36px;width:auto;">
+</nav>
+
+<header>
+  <div class="eyebrow">Mr Mallorca Golf · Andy Griffiths, PGA Advanced Professional</div>
+  <h1>Build your perfect golf day in Mallorca</h1>
+  <p>Answer eight short questions and get three structured day plans built around your group, your level, and where you are staying.</p>
+  <div class="gold-rule"></div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section id="intro">
+    <p class="lead">The island has more than twenty courses and the right one depends on who is playing, when you want to tee off, and what you want from the rest of the day. This takes about a minute and gives you a plan worth keeping.</p>
+    <button class="btn btn-gold" onclick="startBuilder()">Start building my day</button>
+  </section>
+
+  <!-- ============ QUESTIONS ============ -->
+  <section id="questions" style="display:none">
+    <div class="progress" id="progressBar"></div>
+    <div class="step-label" id="stepLabel"></div>
+    <div id="qContainer"></div>
+    <div class="nav-row">
+      <button class="btn btn-ghost" id="backBtn" onclick="prevStep()">Back</button>
+      <button class="btn btn-pine" id="nextBtn" onclick="nextStep()" disabled>Continue</button>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section id="results">
+    <div class="result-head">
+      <div class="eyebrow">Your personalised plan</div>
+      <h2 id="resultTitle">Your golf day, three ways</h2>
+      <p id="resultSub"></p>
+    </div>
+
+    <div class="tabs" id="itinTabs">
+      <button class="tab active" data-itin="0" onclick="switchItin(0)">Efficient<br>golf day</button>
+      <button class="tab" data-itin="1" onclick="switchItin(1)">Golf &amp;<br>long lunch</button>
+      <button class="tab" data-itin="2" onclick="switchItin(2)">Full<br>experience</button>
+    </div>
+
+    <div id="itinContainer"></div>
+
+    <p class="estimate-note">Timings, travel durations, and costs shown here are planning estimates. Andy confirms exact tee times, tables, and transport when you book.</p>
+
+    <div class="cta-block">
+      <div class="eyebrow">Make it real</div>
+      <h3>This plan is a starting point</h3>
+      <p class="cta-copy">Andy can refine the course, tee time, restaurant, transport, and experience around your exact group.</p>
+      <div class="cta-grid">
+        <button class="btn btn-gold" onclick="ctaAction('ask_andy')">Ask Andy to build this for my group</button>
+        <button class="btn btn-pine" onclick="ctaAction('book_pwap')">Book Play With A Pro</button>
+        <div id="emailCapture" style="display:flex;gap:8px;flex-wrap:wrap;align-items:stretch;">
+          <input type="email" id="emailInput" placeholder="you@email.com" aria-label="Email address"
+                 style="flex:1 1 160px;min-width:0;border:none;padding:14px 16px;font-size:14px;font-family:var(--font-sans);color:var(--charcoal);">
+          <button class="btn btn-gold" id="emailBtn" style="flex:0 0 auto;width:auto;" onclick="ctaAction('email')">Email itinerary</button>
+        </div>
+        <label id="newsletterOpt" style="display:flex;align-items:center;gap:8px;font-family:var(--font-sans);font-size:12px;color:var(--taupe);cursor:pointer;margin-top:4px;">
+          <input type="checkbox" id="newsletterCheck" style="accent-color:var(--pine);">
+          Also send me Andy's course tips and seasonal recommendations
+        </label>
+        <p id="emailSuccess" style="display:none;font-size:13px;color:var(--gold-light);margin:0;">&#10003; Done. Your itinerary is on its way.</p>
+        <div class="cta-secondary">
+          <button class="btn" onclick="ctaAction('pdf')">Download PDF</button>
+          <button class="btn" onclick="ctaAction('whatsapp')">WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--linen);padding:18px 20px;margin-top:20px;text-align:center">
+      <div style="font-family:var(--font-sans);font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:var(--taupe);margin-bottom:12px">More planning tools</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
+        <a href="../course-selector/" class="btn btn-ghost" style="padding:10px 18px;font-size:.78rem">Find your courses</a>
+        <a href="../hotel-recommender.html" class="btn btn-ghost" style="padding:10px 18px;font-size:.78rem">Find hotels</a>
+        <a href="../golf-cost-calculator/" class="btn btn-ghost" style="padding:10px 18px;font-size:.78rem">Estimate trip cost</a>
+      </div>
+    </div>
+    <button class="restart" onclick="restart()">Start over with different answers</button>
+  </section>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* =====================================================================
+   ANALYTICS TRACKING POINTS
+   Wire these to GA4 / gtag when integrating (see src/lib/analytics.js):
+   - itinerary_start          : user begins the question flow
+   - course_style_selected    : user picks a course type preference
+   - itinerary_generated      : all answers complete, plans rendered
+   - email_itinerary          : "Email this itinerary" clicked
+   - download_pdf_click       : "Download PDF" clicked
+   - whatsapp_click           : "Send on WhatsApp" clicked
+   - booking_click            : "Ask Andy" or "Book Play With A Pro" clicked
+===================================================================== */
+function track(event, params){
+  // gtag('event', event, params)  <-- enable in production
+  console.log('[analytics]', event, params || {});
+}
+
+/* =====================================================================
+   EDITABLE DATA
+   Course names, par, and design facts match src/lib/golf-courses-data.js.
+   Drive times are planning placeholders. Restaurants are placeholders.
+   No live prices or live availability anywhere in this file.
+===================================================================== */
+const COURSES = [
+  // region: southwest | palma | north | east
+  // level: minimum comfortable level (beginner+ / casual+ / confident+)
+  { id:’son-gual’,     name:’Golf Son Gual’,           region:’palma’,     tags:[‘famous’,’challenging’,’serious’,’luxury’],
+    facts:[‘Par 72 · Championship’,’Thomas Himmel, 2007’],
+    blurb:’The strongest conditioning on the island and a layout that tests every part of your game. Wide enough to enjoy, demanding enough to remember. Note that a handicap certificate is required.’,
+    level:’confident+’, driveMins:{southwest:30, palma:15, north:45, east:40, south:20} },
+  { id:’alcanada’,     name:’Club de Golf Alcanada’,   region:’north’,     tags:[‘famous’,’scenic’,’luxury’,’serious’],
+    facts:[‘Par 72 · Robert Trent Jones Jr.’,’58 bunkers’],
+    blurb:’Sea views from most of the round and a Robert Trent Jones Jr. design that holds its own without them. The 58 bunkers are positioned to be in play, so expect to use your sand wedge.’,
+    level:’casual+’, driveMins:{southwest:60, palma:45, north:10, east:40, south:60} },
+  { id:’t-golf-palma’, name:’T Golf Palma (Puntiró)’,  region:’palma’,     tags:[‘challenging’,’serious’],
+    facts:[‘Par 71 · Jack Nicklaus Design’,’Only Nicklaus course in Mallorca’],
+    blurb:’A Jack Nicklaus design twenty minutes from Palma. Firm, strategic, and honest: good shots are rewarded and loose ones are punished in proportion.’,
+    level:’confident+’, driveMins:{southwest:30, palma:20, north:50, east:50, south:25} },
+  { id:’son-muntaner’, name:’Son Muntaner’,            region:’palma’,     tags:[‘luxury’,’famous’,’challenging’],
+    facts:[‘Par 72 · Best in Spain 2025’,’Sa Capitana olive tree, hole 15’],
+    blurb:’The flagship of the Arabella courses and the most polished club experience near Palma. Conditioning and service are the draw here, and both deliver.’,
+    level:’casual+’, driveMins:{southwest:20, palma:10, north:50, east:55, south:25} },
+  { id:’santa-ponsa’,  name:’Golf Santa Ponsa 1’,      region:’southwest’, tags:[‘forgiving’,’relaxed’,’family’],
+    facts:[‘Par 72 · Longest on the island’,’Hosted 2021 European Tour’],
+    blurb:’Broad fairways and a relaxed pace in the southwest. The length looks intimidating on the card but the width keeps it playable for most levels.’,
+    level:’beginner+’, driveMins:{southwest:10, palma:25, north:60, east:65, south:35} },
+  { id:’andratx’,      name:’Golf de Andratx’,         region:’southwest’, tags:[‘scenic’,’challenging’,’luxury’],
+    facts:[‘Par 72 · David Kidd, 1999’,’Longest par-5 in Spain (609m)’],
+    blurb:’Dramatic elevation changes through the hills above Camp de Mar. The views are the headline, but the tight lines and sloping lies mean it plays harder than the card suggests.’,
+    level:’confident+’, driveMins:{southwest:15, palma:30, north:65, east:70, south:40} },
+  { id:’son-vida’,     name:’Golf Son Vida’,           region:’palma’,     tags:[‘famous’,’relaxed’,’forgiving’,’luxury’],
+    facts:[‘Par 70 · Est. 1964 · Oldest in Mallorca’,’Seve won here in 1990’],
+    blurb:’Mallorca’s oldest course, and it carries the history well. Short by modern standards, charming throughout, and a sensible choice when the day is about more than the score.’,
+    level:’beginner+’, driveMins:{southwest:20, palma:10, north:50, east:55, south:25} },
+  { id:’bendinat’,     name:’Real Golf de Bendinat’,   region:’southwest’, tags:[‘scenic’,’relaxed’,’close’],
+    facts:[‘Par 70 · Martin Hawtree, 1986’,’5,660m’],
+    blurb:’Tight, pretty, and tucked between pines with sea glimpses on the higher holes. A shorter, social round that suits a half-day plan. Leave the driver in the bag on several tees.’,
+    level:’casual+’, driveMins:{southwest:10, palma:15, north:55, east:60, south:25} },
+  { id:’capdepera’,    name:’Capdepera Golf’,          region:’east’,      tags:[‘scenic’,’forgiving’,’relaxed’,’family’],
+    facts:[‘Par 73 · Dan Maples’,’Hole 15 (voted best in Mallorca’],
+    blurb:’Rolling countryside golf in the quiet east, usually uncrowded even in season. Friendly off the tee, with enough variety to keep better players interested.’,
+    level:’beginner+’, driveMins:{southwest:70, palma:55, north:40, east:10, south:65} },
+  { id:’canyamel’,     name:’Canyamel Golf’,           region:’east’,      tags:[‘scenic’,’challenging’],
+    facts:[‘Par 73 · José Gancedo’,’Stone hut on hole 9) unique in Mallorca’],
+    blurb:’A valley course near the coast that few visitors plan for and most are glad they played. Quietly testing, particularly the approach shots into sloped greens.’,
+    level:’casual+’, driveMins:{southwest:70, palma:55, north:40, east:10, south:65} },
+  { id:’pula’,         name:’Pula Golf’,               region:’east’,      tags:[‘forgiving’,’relaxed’,’family’],
+    facts:[‘Par 72 · Olazábal redesign’,’TrackMan Range (unique in Mallorca’],
+    blurb:’A welcoming east coast course with a serious tournament past, redesigned by José María Olazábal. Generous where it matters and well kept year round.’,
+    level:’beginner+’, driveMins:{southwest:65, palma:50, north:35, east:10, south:60} },
+  { id:’son-servera’,  name:’Golf Club Son Servera’,   region:’east’,      tags:[‘relaxed’,’scenic’,’forgiving’],
+    facts:[‘Par 72 · Est. 1967 · 2nd oldest in Mallorca’,’Coastal parkland’],
+    blurb:’Classic pine-lined parkland by the sea and one of the island’s oldest clubs. Unhurried, traditional, and a fair test without drama.’,
+    level:’beginner+’, driveMins:{southwest:70, palma:55, north:40, east:10, south:70} },
+  { id:’son-antem-west’, name:’Golf Son Antem West’,   region:’south’,     tags:[‘forgiving’,’relaxed’,’family’,’close’],
+    facts:[‘Par 72 · Francisco Lopez Segales, 1995’,’25 mins from Palma’],
+    blurb:’Open countryside golf near Llucmajor, 15 minutes from Palma and 25 from the airport. Generous fairways and a flat layout make it accessible for most levels. Hole 16) uphill dogleg par-5 through trees (is the standout. Book early: it can be slow on peak weekends.’,
+    level:’beginner+’, driveMins:{southwest:30, palma:20, north:55, east:55, south:10} },
+  { id:’son-termes’,  name:’Golf Son Termes’,          region:’palma’,     tags:[‘scenic’,’challenging’,’close’],
+    facts:[‘Par 70 · Grupo Harris, 1998’,’Mountain views of Palma’],
+    blurb:’Na Burguesa mountain golf 20 minutes from Palma. On clear days, Castell de Bellver and the cathedral are visible from the upper holes with the Mediterranean behind. Blind tee shots and sharp doglegs give it real character at a sensible price. Front nine walkable; back nine steep.’,
+    level:’casual+’, driveMins:{southwest:25, palma:20, north:55, east:60, south:30} },
+  { id:’t-golf-calvia’, name:’T Golf Calvià (Poniente)’, region:’southwest’, tags:[‘famous’,’luxury’,’serious’,’scenic’],
+    facts:[‘Par 72 · 15 lakes’,’Host of the Mallorca Open’],
+    blurb:’Rebuilt after a €10 million renovation, T Golf Calvià feels polished from arrival to finish. Wide driving lines, 15 lakes in play, and excellent conditioning throughout. One of the strongest all-round experiences on the island) Andy has a full review.’,
+    level:’casual+’, driveMins:{southwest:15, palma:25, north:55, east:65, south:35} },
+  { id:’son-antem-east’, name:’Golf Son Antem East’,    region:’south’,     tags:[‘forgiving’,’relaxed’,’family’,’close’],
+    facts:[‘Par 72 · Francisco Lopez-Segalés, 1994’,’Marriott resort · 5 lakes’],
+    blurb:’The more accessible of the two Son Antem courses. Generous fairways and five lakes on a former hunting estate near Llucmajor. The right starting point for mixed-ability groups (build confidence here before tackling the West course.’,
+    level:’beginner+’, driveMins:{southwest:30, palma:20, north:55, east:60, south:10} },
+  { id:’son-quint’,    name:’Golf Son Quint’,            region:’palma’,     tags:[‘forgiving’,’relaxed’,’family’,’close’],
+    facts:[‘Par 71 · Opened 2007’,’Tiger Woods & Charlie played here, July 2022’],
+    blurb:’The most approachable of the Son Vida courses. Wide fairways, four tee positions, and a view directly toward Palma Cathedral from hole 8. Tiger Woods played here with his son in 2022. Stone walls are in play) not just decoration.’,
+    level:’beginner+’, driveMins:{southwest:20, palma:10, north:50, east:55, south:25} },
+  { id:’maioris’,      name:’Golf Maioris’,              region:’south’,     tags:[‘relaxed’,’forgiving’,’close’],
+    facts:[‘Par 72 · Opened 2006’,’One of few public grass driving ranges in Mallorca’],
+    blurb:’Front nine Scottish and bumpy, back nine more American and flatter (two personalities in one round. Less crowded than the Palma courses, with one of the island\’s rare public grass driving ranges. Sensible choice for an arrival or departure day.’,
+    level:’beginner+’, driveMins:{southwest:30, palma:20, north:55, east:55, south:10} },
+  { id:’vall-dor’,     name:"Vall d’Or Golf",            region:’east’,      tags:[‘scenic’,’relaxed’,’family’],
+    facts:["Par 71 · 1986","Cliffside finish with east coast sea views"],
+    blurb:"A round that improves as it goes: tight traditional front nine, then the back nine opens toward the coast with sea views and a cliffside finish. Friday barbecues with live music at Maxime Restaurant, May–October.",
+    level:’casual+’, driveMins:{southwest:75, palma:60, north:45, east:15, south:65} },
+  { id:’golf-pollenca’, name:’Golf Pollença’,            region:’north’,     tags:[‘scenic’,’relaxed’,’family’,’forgiving’],
+    facts:[‘Par 35 · 9 holes · José Gancedo, 1986’,’Views of Tramuntana, Bay of Pollença and Bay of Alcúdia’],
+    blurb:’Nine holes integrated into the hillside above Pollença town) views of the Tramuntana, two bays, and the sea. The right afternoon complement to an Alcanada morning. Completable in 90 minutes. One of the island\’s most affordable rounds.’,
+    level:’beginner+’, driveMins:{southwest:65, palma:55, north:10, east:50, south:65} },
+  { id:’santa-ponsa-2’, name:’Golf Santa Ponsa 2’,       region:’southwest’, tags:[‘relaxed’,’serious’],
+    facts:[‘Par 72 · Members + arranged access’,’18th green shaped like the island of Mallorca’],
+    blurb:’Members-only and usually the quietest course in the Southwest cluster. Tree-lined fairways reward placement over power. The 18th green is shaped like the island of Mallorca (a course fact worth knowing before you play. Access arranged through Andy.’,
+    level:’casual+’, driveMins:{southwest:10, palma:25, north:60, east:65, south:35} },
+  { id:’santa-ponsa-3’, name:’Golf Santa Ponsa 3 (9 holes)’, region:’southwest’, tags:[‘forgiving’,’relaxed’,’family’],
+    facts:[‘Par 35 · 9 holes · Arranged access’,’€25–30 · one of the most affordable rounds in Mallorca’],
+    blurb:’Nine holes through the Santa Ponsa residential estate) short, accurate, and well-suited to beginners, juniors, or anyone wanting a quick round without the full-course commitment. Best paired with a morning at Santa Ponsa 1 or 2. Access arranged through Andy.’,
+    level:’beginner+’, driveMins:{southwest:10, palma:25, north:60, east:65, south:35},
+    note:’9 holes (build this as an afternoon add-on alongside a full round at Santa Ponsa 1 or 2’ },
+  { id:’palma-pitch-putt’, name:’Palma Pitch & Putt’,        region:’palma’,     tags:[‘forgiving’,’relaxed’,’family’],
+    facts:[‘Par 27 · 9 holes all par-3s · €14–22’,’The only pitch & putt in Mallorca’],
+    blurb:’The only pitch-and-putt in Mallorca, and the course Andy uses for coaching introductions. All par 3s between 50 and 100m) demands accuracy, not power. Central Palma location. Good for a non-golfing partner wanting to try the game, for juniors, or as a late-afternoon knock when the main round is done.’,
+    level:’beginner+’, driveMins:{southwest:25, palma:5, north:55, east:60, south:25},
+    note:’9 holes (works as a half-day plan, a pre-round warm-up, or an introduction to the game’ },
+  { id:’reserva-rotana’, name:’Rotana Greens (Reserva Rotana)’, region:’east’,  tags:[‘relaxed’,’scenic’,’luxury’],
+    facts:[‘9 holes · Hotel guests only · Estate course’,’Capdepera and Pula within 25 minutes’],
+    blurb:’A private 9-hole estate course at Reserva Rotana near Manacor, available exclusively for hotel guests. Gently rolling terrain with a driving range, chipping green, and practice bunkers. Not a standalone booking) it is part of the Rotana stay experience. Capdepera and Pula are 25 minutes away for full rounds.’,
+    level:’beginner+’, driveMins:{southwest:80, palma:60, north:35, east:15, south:70},
+    note:’Hotel guests only (this option only applies if your group is staying at Reserva Rotana’ },
+];
+
+const RESTAURANTS = {
+  southwest:{
+    casual: ‘Campino Restaurant at Golf de Andratx) Italian and Mediterranean on the terrace, booked around your round finish time’,
+    premium:’Sa Clastra (1 Michelin star) at Castell Son Claret, Es Capdellà (around 15 minutes from most Southwest courses. One of the best lunch tables on the island’,
+    village:’Lunch in Calvià village) a quiet hilltop town with local restaurants that rarely see tourists. Andy books the right table’,
+    michelin:’Sa Clastra (1★) at Castell Son Claret, Es Capdellà, or Es Fum (1★) at the St. Regis Mardavall (two of the island\’s finest tables, both in the Southwest’
+  },
+  palma:{
+    casual: ‘Na Capitana at Son Muntaner) reliable Mediterranean lunch on the terrace overlooking the course, or a short drive to Santa Catalina market for tapas’,
+    premium:’DINS Santi Taura (1 Michelin star) in central Palma, or Marc Fosh (1 Michelin star) in the old town (Andy times the booking around your round’,
+    village:’Santa Catalina market) the best food neighbourhood in Palma, 10 minutes from most courses. Andy picks the right spot for the group’,
+    michelin:’DINS Santi Taura (1★), Marc Fosh (1★) and Zaranda (1★) are all in Palma (the strongest Michelin cluster on the island, all within 15 minutes of the Palma courses’
+  },
+  north:{
+    casual: ‘Beachfront lunch in Port de Pollença) the promenade has several good fish and seafood options. Andy books ahead in high season’,
+    premium:’Maca de Castro (1 Michelin star + Green Star) in Port d\’Alcúdia (seasonal tasting menus built on local produce. Around 10 minutes from Alcanada’,
+    village:’Pollença old town) a quiet hilltop town with a good market square, reliable local restaurants, and a Sunday market. Worth the short detour’,
+    michelin:’Maca de Castro (1★ + Green Star) in Port d\’Alcúdia (one of the island\’s most interesting chef-driven restaurants, close to Alcanada golf’
+  },
+  east:{
+    casual: ‘Roca Viva restaurant at Capdepera Golf) Mediterranean and Mallorcan, with an on-site vegetable garden and terrace by the 18th. One of the better clubhouse lunches on the island’,
+    premium:’VORO (2 Michelin stars) at Cap Vermell Grand Hotel, Canyamel (Mallorca\’s only two-star restaurant, chef Álvaro Salazar. 18 or 22-course tasting menu. The east coast fine-dining event’,
+    village:’Artà old town) one of the most characterful towns in eastern Mallorca. A good stop for coffee and lunch before or after the round’,
+    michelin:’VORO (2★) at Cap Vermell, Canyamel (the strongest Michelin argument for a night on the east coast’
+  },
+  south:{
+    casual: ‘T19 Restobar at Golf Maioris) outdoor terrace, German and Mediterranean clubhouse food, useful stop near the airport’,
+    premium:’Andreu Genestra (1 Michelin star + Green Star) near Llucmajor (seasonal tasting menus, sustainability-led cooking. Around 10 minutes from Golf Maioris and Son Antem. Book well ahead’,
+    village:’Llucmajor old town) a quiet market town 20 minutes from Palma with good local restaurants and a Saturday market’,
+    michelin:’Andreu Genestra (1★ + Green Star) near Llucmajor (one of Mallorca\’s most interesting chef-driven restaurants, close to the south course cluster’
+  },
+};
+
+const ADDONS = {
+  beach:   { glyph:'b', title:'Beach hour',           desc:'A nearby cove for a swim and a slow hour in the shade. Beach chosen by region when the plan is confirmed.' },
+  spa:     { glyph:'s', title:'Spa and recovery',     desc:'A post-round session at a resort spa in the area) options include Arabella Son Vida, Secrets Paguera, and Bendinat. Andy confirms the venue when you book.' },
+  village: { glyph:'v', title:'Local village hour',   desc:'An hour in one of the island’s historic towns: coffee, side streets, and a viewpoint or two.' },
+  wine:    { glyph:’w’, title:’Wine tasting’,         desc:’A guided tasting at a local bodega. Mallorca has a small but serious wine scene (José L. Ferrer in Binissalem and Macià Batle are both worth the detour. Andy times this around the round.’ },
+  family:  { glyph:'f', title:'Family activity',      desc:'A boat trip, the caves, or a waterpark depending on the region and ages. Confirmed with the booking.' },
+  coaching:{ glyph:'a', title:'Coaching with Andy',   desc:'A focused session with Andy Griffiths, UK PGA Advanced Professional: warm-up, technique, or on-course strategy.' },
+  lunch:   { glyph:'l', title:'Long lunch',           desc:'A proper Mallorcan table, booked and timed around your round.' },
+};
+
+const START_WINDOWS = {
+  early:{ label:'Early morning start', tee:'8:00 to 9:00', depart:'7:15' },
+  mid:  { label:'Mid-morning start',   tee:'10:00 to 11:00', depart:'9:00' },
+  pm:   { label:'Afternoon start',     tee:'13:30 to 14:30', depart:'12:30' },
+};
+
+/* =====================================================================
+   QUESTION FLOW
+===================================================================== */
+const QUESTIONS = [
+  { key:'region', label:'Step 1 of 8 · Location', title:'Where are you staying?', sub:'The plan is built around your base.', multi:false, opts:[
+    {v:'southwest', t:'Southwest', d:'Santa Ponsa, Andratx, Bendinat, Calvià', g:'sw'},
+    {v:'palma',     t:'Palma and around', d:'Palma city, Son Vida, central island', g:'p'},
+    {v:'north',     t:'North', d:'Alcúdia, Pollença, the bays', g:'n'},
+    {v:'east',      t:'East', d:'Cala Millor, Canyamel, Artà', g:'e'},
+    {v:'south',     t:'South', d:'Llucmajor, airport area, Son Antem', g:'s'},
+    {v:'unbooked',  t:'Not booked yet', d:'We will suggest the best golf base for you', g:'?'},
+  ]},
+  { key:'dayStyle', label:'Step 2 of 8 · Day style', title:'What kind of day are you after?', sub:'Pick the one that sounds most like you.', multi:false, opts:[
+    {v:'serious', t:'Serious golf', d:'The round is the main event', g:'i'},
+    {v:'relaxed', t:'Relaxed golf', d:'Good golf without pressure', g:'ii'},
+    {v:'luxury',  t:'Luxury', d:'The best of everything, handled', g:'iii'},
+    {v:'family',  t:'Family day', d:'Golf plus something for everyone', g:'iv'},
+    {v:'scenic',  t:'Scenic', d:'Views first, score second', g:'v'},
+    {v:'food',    t:'Food first', d:'Golf built around a great lunch', g:'vi'},
+  ]},
+  { key:'level', label:'Step 3 of 8 · Golf level', title:'How would you describe your golf?', sub:'Honest answers make better days.', multi:false, opts:[
+    {v:'beginner',  t:'Beginner', d:'New to the game or returning to it', g:'1'},
+    {v:'casual',    t:'Casual', d:'A few rounds a year', g:'2'},
+    {v:'confident', t:'Confident', d:'Regular golfer, mid handicap', g:'3'},
+    {v:'low',       t:'Low handicap', d:'Single figures, bring the test', g:'4'},
+  ]},
+  { key:'start', label:'Step 4 of 8 · Start time', title:'When do you like to start?', sub:'', multi:false, opts:[
+    {v:'early', t:'Early morning', d:'First off, the day is yours after', g:'am'},
+    {v:'mid',   t:'Mid-morning', d:'A civilised start with a full day shape', g:'md'},
+    {v:'pm',    t:'Afternoon', d:'Slow morning, late-light golf', g:'pm'},
+  ]},
+  { key:'courseType', label:'Step 5 of 8 · Course type', title:'What matters most in the course?', sub:'', multi:false, opts:[
+    {v:'famous',      t:'A known name', d:'The courses people ask about', g:'a'},
+    {v:'scenic',      t:'Scenery', d:'Sea views, mountains, elevation', g:'b'},
+    {v:'challenging', t:'A real test', d:'A course that asks questions', g:'c'},
+    {v:'forgiving',   t:'Forgiving', d:'Wide, friendly, and fun', g:'d'},
+    {v:'close',       t:'Close to my hotel', d:'Minimum time in the car', g:'e'},
+  ]},
+  { key:'addons', label:'Step 6 of 8 · Beyond the golf', title:'What would round out the day?', sub:'', multi:true, opts:[
+    {v:'lunch',   t:'Long lunch', d:'A proper Mallorcan table', g:'l'},
+    {v:'beach',   t:'Beach', d:'A swim after the round', g:'b'},
+    {v:'spa',     t:'Spa', d:'Recovery done well', g:'s'},
+    {v:'village', t:'Local village', d:'An hour in a historic town', g:'v'},
+    {v:'wine',    t:'Wine', d:'A bodega visit or tasting', g:'w'},
+    {v:'family',  t:'Family activity', d:'Something for the non-golfers', g:'f'},
+    {v:'coaching',t:'Coaching with Andy', d:'PGA Advanced Professional session', g:'a'},
+  ]},
+  { key:'transport', label:'Step 7 of 8 · Transport', title:'Do you need transport arranged?', sub:'', multi:false, opts:[
+    {v:'yes', t:'Yes, arrange it', d:'Driver or transfers, door to door', g:'y'},
+    {v:'no',  t:'No, we will drive', d:'Hire car or own wheels', g:'n'},
+  ]},
+  { key:'group', label:'Step 8 of 8 · Your group', title:'Who is coming?', sub:'', multi:false, opts:[
+    {v:'solo',     t:'Just me', d:'Solo golf, full focus', g:'1'},
+    {v:'couple',   t:'A couple', d:'Two of you', g:'2'},
+    {v:'friends',  t:'Friends', d:'A small group trip', g:'3'},
+    {v:'family',   t:'Family', d:'Mixed ages and interests', g:'4'},
+    {v:'vip',      t:'VIP or corporate', d:'Hosting clients or marking an occasion', g:'5'},
+  ]},
+];
+
+let stepIdx = 0;
+const answers = {};
+
+function startBuilder(){
+  track('itinerary_start');
+  document.getElementById('intro').style.display='none';
+  document.getElementById('questions').style.display='block';
+  renderStep();
+}
+
+function renderStep(){
+  const q = QUESTIONS[stepIdx];
+  const bar = document.getElementById('progressBar');
+  bar.innerHTML = QUESTIONS.map((_,i)=>`<span class="${i<=stepIdx?'done':''}"></span>`).join('');
+  document.getElementById('stepLabel').textContent = q.label;
+
+  const sel = answers[q.key] || (q.multi ? [] : null);
+  const html = `
+    <div class="qcard active">
+      <h2>${q.title}</h2>
+      <p class="sub">${q.sub||''}</p>
+      ${q.multi ? '<div class="multi-note">Select any that appeal, or none</div>' : ''}
+      <div class="opts">
+        ${q.opts.map(o=>{
+          const isSel = q.multi ? sel.includes(o.v) : sel===o.v;
+          return `<button class="opt ${isSel?'selected':''}" onclick="pick('${q.key}','${o.v}',${q.multi})">
+            <span class="ico">${o.g}</span>
+            <span><span class="t">${o.t}</span><span class="d">${o.d}</span></span>
+          </button>`;
+        }).join('')}
+      </div>
+    </div>`;
+  document.getElementById('qContainer').innerHTML = html;
+  document.getElementById('backBtn').style.visibility = stepIdx===0 ? 'hidden':'visible';
+  updateNext();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function pick(key, val, multi){
+  if(multi){
+    answers[key] = answers[key] || [];
+    const i = answers[key].indexOf(val);
+    i>=0 ? answers[key].splice(i,1) : answers[key].push(val);
+  } else {
+    answers[key] = val;
+    if(key==='courseType') track('course_style_selected', {style:val});
+  }
+  renderStep();
+}
+
+function updateNext(){
+  const q = QUESTIONS[stepIdx];
+  const ok = q.multi ? true : !!answers[q.key];
+  const btn = document.getElementById('nextBtn');
+  btn.disabled = !ok;
+  btn.textContent = stepIdx===QUESTIONS.length-1 ? 'Build my day' : 'Continue';
+}
+
+function nextStep(){
+  if(stepIdx < QUESTIONS.length-1){ stepIdx++; renderStep(); }
+  else generateItineraries();
+}
+function prevStep(){ if(stepIdx>0){ stepIdx--; renderStep(); } }
+
+/* =====================================================================
+   ITINERARY LOGIC
+===================================================================== */
+const LEVEL_RANK = {beginner:0, casual:1, confident:2, low:3};
+const LEVEL_REQ  = {'beginner+':0, 'casual+':1, 'confident+':2};
+
+function pickCourse(){
+  const region = answers.region==='unbooked' ? 'southwest' : answers.region;
+  const lvl = LEVEL_RANK[answers.level];
+  const wantClose = answers.courseType==='close';
+
+  const scored = COURSES.map(c=>{
+    let s = 0;
+    if(c.tags.includes(answers.courseType)) s += 5;
+    if(c.tags.includes(answers.dayStyle)) s += 3;
+    const drive = c.driveMins[region];
+    if(wantClose) s += Math.max(0, 6 - drive/10);
+    else s += Math.max(0, 3 - drive/25);
+    if(lvl >= LEVEL_REQ[c.level]) s += 2; else s -= 4;
+    if(answers.dayStyle==='family' && c.tags.includes('family')) s += 2;
+    return {c, s, drive};
+  }).sort((a,b)=>b.s-a.s);
+
+  return scored[0];
+}
+
+function lunchFor(region, premium){
+  const r = RESTAURANTS[region] || RESTAURANTS.palma;
+  if(answers.addons?.includes('village')) return r.village;
+  if(answers.dayStyle==='luxury' || answers.dayStyle==='food') return r.michelin || r.premium;
+  return premium ? r.premium : r.casual;
+}
+
+function whyCourseChosen(course){
+  const reasons = [];
+  if(course.tags.includes(answers.courseType)){
+    const p = {famous:"it is one of the island's best-known courses",scenic:"it has the views you asked for",challenging:"it is the most demanding course within reach of your base",forgiving:"the layout is wide and forgiving",close:"it is the closest quality course to where you are staying"}[answers.courseType];
+    if(p) reasons.push(p);
+  }
+  if(course.tags.includes(answers.dayStyle) && answers.dayStyle!==answers.courseType){
+    const p = {serious:"it delivers a serious round",relaxed:"the pace and layout suit a relaxed day",luxury:"it is the premium option in your area",family:"it works for all abilities in the group",scenic:"the setting is the highlight",food:"it sits close to the best restaurant options in the area"}[answers.dayStyle];
+    if(p) reasons.push(p);
+  }
+  const lvl = LEVEL_RANK[answers.level];
+  if(lvl >= LEVEL_REQ[course.level]) reasons.push("it is well-matched to your game");
+  if(!reasons.length) return "The best available match for your answers in this area.";
+  return reasons.map((r,i)=>i===0 ? r.charAt(0).toUpperCase()+r.slice(1) : r).join(", ")+".";
+}
+
+function buildItineraries(){
+  const picked = pickCourse();
+  const course = picked.c;
+  const region = answers.region==='unbooked' ? 'southwest' : answers.region;
+  const drive = picked.drive;
+  const sw = START_WINDOWS[answers.start];
+  const wantsCoaching = answers.addons?.includes('coaching');
+  const transport = answers.transport==='yes';
+  const addonKeys = (answers.addons||[]).filter(a=>!['lunch','coaching'].includes(a));
+  const firstAddon = addonKeys.length ? ADDONS[addonKeys[0]] : null;
+  const secondAddon = addonKeys.length>1 ? ADDONS[addonKeys[1]] : null;
+  const isNineHole = !!course.note;
+  const holesLabel = isNineHole ? `9 holes at ${course.name}` : `18 holes at ${course.name}`;
+  const holeNote = isNineHole ? ` (${course.note})` : '';
+
+  const travelDesc = transport
+    ? `A private transfer collects you from your accommodation. Around ${drive} minutes to the course (estimate).`
+    : `Self-drive to the course, around ${drive} minutes (estimate). Parking notes come with the confirmed plan.`;
+
+  const warmup = wantsCoaching
+    ? {time:'Before the round', title:'Coaching warm-up with Andy', desc:'A 45-minute session with Andy Griffiths: range warm-up, short game, and a plan for the holes ahead.'}
+    : {time:'Before the round', title:'Warm-up and coffee', desc:'Range balls, the putting green, and a coffee on the terrace. Arrive 45 minutes before your tee time.'};
+
+  const itins = [];
+
+  // ---- 1. Efficient golf day ----
+  itins.push({
+    name:'Efficient golf day',
+    tagline:'The round is the day. Played early, played well, back with the afternoon free.',
+    course, drive,
+    steps:[
+      {time:`${sw.depart} (estimate)`, title:'Depart your accommodation', desc:travelDesc},
+      {time:'On arrival', title:warmup.title, desc:warmup.desc},
+      {time:`Tee time window ${sw.tee} (estimate)`, title:holesLabel, desc:course.blurb+(holeNote?`\n\nNote: `+holeNote:'')},
+      {time:'After the round', title:'A drink and a bite at the clubhouse', desc:'A relaxed sandwich and a drink on the terrace while the scorecards are still being disputed.'},
+      {time:'Early to mid afternoon', title:'Return', desc:`Back at your base with the rest of the day untouched. Around ${drive} minutes (estimate).`},
+    ],
+    why:`The golf comes first and the timings stay tight. ${whyCourseChosen(course)} Nothing in the schedule you did not ask for.`,
+  });
+
+  // ---- 2. Golf and long lunch day ----
+  itins.push({
+    name:'Golf and long lunch day',
+    tagline:'A serious round followed by a serious table.',
+    course, drive,
+    steps:[
+      {time:`${sw.depart} (estimate)`, title:'An unhurried departure', desc:travelDesc},
+      {time:'On arrival', title:warmup.title, desc:warmup.desc},
+      {time:`Tee time window ${sw.tee} (estimate)`, title:holesLabel, desc:course.blurb+(holeNote?`\n\nNote: `+holeNote:'')},
+      {time:'After the round', title:'A long Mallorcan lunch', desc:`${lunchFor(region,true)}. The table is booked and timed so you walk off the last hole and sit straight down.`},
+      {time:'Late afternoon', title:'A relaxed return', desc:`A slow drive back, around ${drive} minutes (estimate), or a detour if the mood takes you.`},
+    ],
+    why:`Good golf and good food are the two things this island does most reliably. ${whyCourseChosen(course)} This day gives proper time to both and rushes neither.`,
+  });
+
+  // ---- 3. Full experience day ----
+  const fullSteps = [
+    {time:`${sw.depart} (estimate)`, title:'Depart your accommodation', desc:travelDesc},
+    {time:'On arrival', title:warmup.title, desc:warmup.desc},
+    {time:`Tee time window ${sw.tee} (estimate)`, title:holesLabel, desc:course.blurb+(holeNote?`\n\nNote: `+holeNote:'')},
+    {time:'Lunch', title:'Lunch, booked and timed', desc:`${lunchFor(region, answers.dayStyle==='luxury')}. Andy books the right table for your group.`},
+  ];
+  if(firstAddon) fullSteps.push({time:'Afternoon', title:firstAddon.title, desc:firstAddon.desc});
+  else fullSteps.push({time:'Afternoon', title:'Beach or village hour', desc:'A nearby cove or a historic town, chosen by region when the plan is confirmed.'});
+  if(secondAddon) fullSteps.push({time:'Late afternoon', title:secondAddon.title, desc:secondAddon.desc});
+  fullSteps.push({time:'Evening', title:'Return in the last of the light', desc:`Back to your base, around ${drive} minutes (estimate), with a full Mallorca day behind you.`});
+
+  itins.push({
+    name:'Full experience day',
+    tagline:'The golf is the centrepiece. The island fills the rest of the schedule.',
+    course, drive,
+    steps: fullSteps,
+    why: answers.addons?.length
+      ? `${whyCourseChosen(course)} You chose add-ons that deserve real time in the schedule, so this plan gives them that time. One tee time becomes a complete Mallorca day.`
+      : `${whyCourseChosen(course)} Your day style suits more than golf alone, so this plan adds the island around the round without crowding it.`,
+  });
+
+  return itins;
+}
+
+const GROUP_LABEL = {solo:'a solo golfer', couple:'a couple', friends:'a group of friends', family:'a family', vip:'a VIP or corporate group'};
+const REGION_LABEL = {southwest:'in the southwest', palma:'in or near Palma', north:'in the north', east:'in the east', south:'in the south', unbooked:'wherever suits the golf best'};
+
+function generateItineraries(){
+  const itins = buildItineraries();
+  track('itinerary_generated', {course:itins[0].course.id, dayStyle:answers.dayStyle, group:answers.group});
+
+  document.getElementById('questions').style.display='none';
+  document.getElementById('results').style.display='block';
+
+  const builtFor = `Built for ${GROUP_LABEL[answers.group]} staying ${REGION_LABEL[answers.region]}.`;
+  const courseReason = whyCourseChosen(itins[0].course);
+  document.getElementById('resultSub').innerHTML =
+    `${builtFor} <span style="display:block;margin-top:6px;font-size:.82rem;color:var(--taupe);">Course chosen: ${courseReason}</span>`;
+
+  const andyHandles = [
+    'Tee time secured at the right rate',
+    'Restaurant table booked and timed around your round',
+    answers.transport==='yes' ? 'Door-to-door transport arranged' : 'Route and parking guidance for your drive',
+    'Buggies, clubs, and rentals organised if needed',
+    answers.addons?.includes('coaching') ? 'Your coaching session with Andy confirmed' : 'Optional warm-up or on-course coaching with Andy',
+    'One WhatsApp contact for the whole day',
+  ];
+
+  document.getElementById('itinContainer').innerHTML = itins.map((it,i)=>`
+    <div class="itin ${i===0?'active':''}" id="itin-${i}">
+      <div class="course-card">
+        <span class="tag">${it.name}</span>
+        <h3>${it.course.name}</h3>
+        <div class="where">Around ${it.drive} min from your base (estimate)</div>
+        <p class="blurb">${it.tagline}</p>
+        <div class="pills">
+          ${it.course.facts.map(f=>`<span class="pill">${f}</span>`).join('')}
+          <span class="pill">${START_WINDOWS[answers.start].label}</span>
+        </div>
+      </div>
+      <div class="timeline">
+        ${it.steps.map((s,idx)=>`
+          <div class="tl-item">
+            <div class="tl-dot">${idx+1}</div>
+            <div class="tl-time">${s.time}</div>
+            <div class="tl-title">${s.title}</div>
+            <div class="tl-desc">${s.desc}</div>
+          </div>`).join('')}
+      </div>
+      <div class="why-card">
+        <h4>Why this day fits you</h4>
+        <p>${it.why}</p>
+      </div>
+      <div class="andy-card">
+        <h4>What Andy handles when you book through Mr Mallorca Golf</h4>
+        <ul>${andyHandles.map(h=>`<li>${h}</li>`).join('')}</ul>
+      </div>
+    </div>`).join('');
+
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function switchItin(i){
+  document.querySelectorAll('.tab').forEach((t,idx)=>t.classList.toggle('active', idx===i));
+  document.querySelectorAll('.itin').forEach((el,idx)=>el.classList.toggle('active', idx===i));
+}
+
+/* =====================================================================
+   CTA HANDLERS - placeholder integrations
+===================================================================== */
+function ctaAction(type){
+  switch(type){
+    case 'email':
+      emailItinerary();
+      break;
+    case 'pdf':
+      track('download_pdf_click');
+      window.print();
+      break;
+    case 'whatsapp':
+      track('whatsapp_click');
+      window.open('https://wa.me/34611931088?text=' + encodeURIComponent('Hi Andy, I built a golf day on your website and would like to make it real.'), '_blank', 'noopener');
+      break;
+    case 'ask_andy':
+      track('booking_click', {cta:'ask_andy'});
+      window.open('https://www.mrmallorcagolf.com/contact', '_blank', 'noopener');
+      break;
+    case 'book_pwap':
+      track('booking_click', {cta:'play_with_a_pro'});
+      window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener');
+      break;
+  }
+}
+
+let toastTimer;
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 3200);
+}
+
+function restart(){
+  stepIdx = 0;
+  for(const k in answers) delete answers[k];
+  document.getElementById('results').style.display='none';
+  document.getElementById('intro').style.display='block';
+  document.getElementById('emailCapture').style.display='flex';
+  document.getElementById('emailSuccess').style.display='none';
+  window.scrollTo({top:0});
+}
+
+async function emailItinerary(){
+  const input = document.getElementById('emailInput');
+  const email = input.value.trim();
+  if (!email || !email.includes('@')){ input.focus(); return; }
+  const btn = document.getElementById('emailBtn');
+  btn.disabled = true; btn.textContent = 'Sending…';
+  track('email_itinerary', {dayStyle: answers.dayStyle, group: answers.group});
+
+  // Serialise the currently-visible itinerary card to plain HTML for the email
+  const card = document.querySelector('.itin-card');
+  const bodyHtml = card ? card.innerHTML : '<p>Your itinerary is ready) visit mrmallorcagolf.com to view it.</p>';
+  const subscribe = document.getElementById('newsletterCheck')?.checked || false;
+
+  try {
+    const res = await fetch('/api/send-itinerary', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        email,
+        tool: 'golf-day-builder',
+        subject: 'Your Mallorca golf day plan',
+        bodyHtml,
+        subscribeNewsletter: subscribe,
+      }),
+    });
+    const ok = res.ok;
+    btn.disabled = false; btn.textContent = 'Email itinerary';
+    if (ok){
+      document.getElementById('emailCapture').style.display = 'none';
+      document.getElementById('newsletterOpt').style.display = 'none';
+      document.getElementById('emailSuccess').style.display = 'block';
+    } else {
+      showToast('That didn\'t go through. Check the address and try again.');
+    }
+  } catch(e) {
+    btn.disabled = false; btn.textContent = 'Email itinerary';
+    showToast('That didn\'t go through. Check the address and try again.');
+  }
+}
+</script>
+</body>
+</html>

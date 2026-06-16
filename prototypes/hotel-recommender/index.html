@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Where to Stay — Mallorca Golf Hotel Finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --pine: #2D4A3E;
+    --pine-light: #3a5f50;
+    --gold: #B8973C;
+    --gold-light: #c9a84c;
+    --cream: #F7F4EF;
+    --cream-dark: #EDE8DF;
+    --deep: #1A1916;
+    --charcoal: #2C2A27;
+    --taupe: #8A7F74;
+    --sand: #C8B89A;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Jost', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--cream);
+    color: var(--charcoal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* HEADER */
+  .site-header {
+    background: var(--pine);
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .site-header img { height: 36px; width: auto; }
+  .site-header__divider { width: 1px; height: 28px; background: rgba(247,244,239,0.25); }
+  .site-header__label {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(247,244,239,0.85);
+    letter-spacing: 0.02em;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--pine);
+    padding: 52px 32px 48px;
+    text-align: center;
+    color: var(--cream);
+  }
+  .hero__eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .hero p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: rgba(247,244,239,0.75);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  /* PROGRESS */
+  .progress-wrap {
+    background: var(--pine);
+    padding: 0 32px 28px;
+  }
+  .progress-bar {
+    height: 2px;
+    background: rgba(247,244,239,0.15);
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+    transition: width 0.4s ease;
+    width: 0%;
+  }
+
+  /* QUIZ */
+  .quiz-wrap {
+    flex: 1;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 60px;
+    width: 100%;
+  }
+
+  .step { display: none; }
+  .step.active { display: block; }
+
+  .step-number {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .step h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 400;
+    color: var(--deep);
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+  .step__sub {
+    font-size: 0.88rem;
+    color: var(--taupe);
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+
+  /* OPTIONS */
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .opt {
+    background: #fff;
+    border: 1.5px solid #E0D8CB;
+    border-radius: 3px;
+    padding: 16px 20px;
+    cursor: pointer;
+    transition: border-color 0.18s, background 0.18s, transform 0.12s;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .opt:hover { border-color: var(--pine); background: rgba(45,74,62,0.03); }
+  .opt.selected {
+    border-color: var(--pine);
+    background: rgba(45,74,62,0.06);
+  }
+  .opt__icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
+  .opt__body { flex: 1; }
+  .opt__label {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--deep);
+    margin-bottom: 3px;
+  }
+  .opt__desc { font-size: 0.82rem; color: var(--taupe); line-height: 1.55; }
+
+  /* MULTI-SELECT hint */
+  .multi-hint {
+    font-size: 0.78rem;
+    color: var(--taupe);
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+
+  /* GRID options (for compact choices) */
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .options-grid .opt { align-items: center; gap: 10px; }
+
+  /* NAV */
+  .step-nav {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+    align-items: center;
+  }
+  .btn-next {
+    background: var(--pine);
+    color: var(--cream);
+    border: none;
+    padding: 13px 32px;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.18s;
+  }
+  .btn-next:hover { background: var(--pine-light); }
+  .btn-next:disabled { opacity: 0.4; cursor: default; }
+  .btn-back {
+    background: none;
+    border: none;
+    color: var(--taupe);
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.18s;
+  }
+  .btn-back:hover { color: var(--deep); }
+
+  /* RESULTS */
+  #results { display: none; }
+  .results-hero {
+    background: var(--pine);
+    padding: 48px 32px 40px;
+    text-align: center;
+    color: var(--cream);
+  }
+  .results-hero h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .results-hero p {
+    font-size: 0.9rem;
+    color: rgba(247,244,239,0.7);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .results-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 44px 24px 60px;
+  }
+
+  .results-label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--taupe);
+    margin-bottom: 24px;
+  }
+
+  /* HOTEL CARD */
+  .hotel-card {
+    background: #fff;
+    border: 1px solid #E0D8CB;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .hotel-card--top {
+    border-color: var(--pine);
+    border-width: 2px;
+  }
+  .hotel-card__rank {
+    background: var(--pine);
+    color: var(--cream);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+  }
+  .hotel-card__rank--gold { background: var(--gold); }
+  .hotel-card__body { padding: 22px 22px 18px; }
+  .hotel-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .hotel-card__area {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .hotel-card__sep { color: var(--sand); }
+  .hotel-card__tier {
+    font-size: 0.78rem;
+    color: var(--taupe);
+  }
+  .hotel-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  .hotel-card__pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .pill {
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+  }
+  .pill--beach { background: #E8F0F5; color: #2a5a7a; }
+  .pill--spa { background: #F0EDF7; color: #4a3070; }
+  .pill--golf { background: #E8F0EC; color: var(--pine); }
+  .pill--adults { background: #FAF0E6; color: #7a4a2a; }
+  .pill--family { background: #FFF3E0; color: #7a5a0a; }
+  .hotel-card__why {
+    font-size: 0.88rem;
+    color: var(--charcoal);
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  .hotel-card__andy {
+    background: var(--cream);
+    border-left: 3px solid var(--gold);
+    padding: 12px 14px;
+    margin-bottom: 12px;
+  }
+  .hotel-card__andy-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+  .hotel-card__andy p {
+    font-size: 0.85rem;
+    color: var(--charcoal);
+    line-height: 1.65;
+    font-style: italic;
+  }
+  .hotel-card__golf {
+    font-size: 0.82rem;
+    color: var(--taupe);
+    margin-bottom: 14px;
+    line-height: 1.55;
+  }
+  .hotel-card__golf strong { color: var(--pine); font-weight: 500; }
+  .hotel-card__cta {
+    display: inline-block;
+    background: var(--pine);
+    color: var(--cream);
+    text-decoration: none;
+    padding: 10px 22px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    border-radius: 2px;
+    transition: background 0.18s;
+  }
+  .hotel-card__cta:hover { background: var(--pine-light); }
+
+  /* NORTHWEST WARNING */
+  .area-warning {
+    background: #FFF8E6;
+    border: 1px solid #E8D06A;
+    border-left: 4px solid var(--gold);
+    padding: 14px 16px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #5a4a1a;
+    line-height: 1.65;
+  }
+
+  /* EMAIL SECTION */
+  .email-section {
+    background: var(--pine);
+    padding: 36px 28px;
+    text-align: center;
+    color: var(--cream);
+    border-radius: 3px;
+    margin-top: 36px;
+  }
+  .email-section h3 {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+  .email-section p {
+    font-size: 0.85rem;
+    color: rgba(247,244,239,0.7);
+    margin-bottom: 20px;
+    line-height: 1.65;
+  }
+  .email-row {
+    display: flex;
+    gap: 10px;
+    max-width: 420px;
+    margin: 0 auto 12px;
+    flex-wrap: wrap;
+  }
+  .email-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 11px 14px;
+    border: 1px solid rgba(247,244,239,0.3);
+    background: rgba(247,244,239,0.1);
+    color: var(--cream);
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    border-radius: 2px;
+    outline: none;
+  }
+  .email-input::placeholder { color: rgba(247,244,239,0.4); }
+  .email-input:focus { border-color: var(--gold); }
+  .btn-email {
+    background: var(--gold);
+    color: var(--deep);
+    border: none;
+    padding: 11px 22px;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    white-space: nowrap;
+    transition: background 0.18s;
+  }
+  .btn-email:hover { background: var(--gold-light); }
+  .newsletter-opt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: rgba(247,244,239,0.55);
+    cursor: pointer;
+  }
+  .newsletter-opt input { accent-color: var(--gold); }
+  .email-success {
+    display: none;
+    font-size: 0.88rem;
+    color: var(--gold);
+    padding: 8px 0;
+  }
+
+  /* ANDY CTA */
+  .andy-cta {
+    background: #fff;
+    border: 1px solid #E0D8CB;
+    border-radius: 3px;
+    padding: 28px 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .andy-cta h3 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--deep);
+    margin-bottom: 8px;
+  }
+  .andy-cta p {
+    font-size: 0.85rem;
+    color: var(--taupe);
+    line-height: 1.65;
+    margin-bottom: 18px;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cta-link {
+    display: inline-block;
+    padding: 11px 24px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 2px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: background 0.18s, color 0.18s;
+  }
+  .cta-link--primary { background: var(--pine); color: var(--cream); }
+  .cta-link--primary:hover { background: var(--pine-light); }
+  .cta-link--secondary { background: transparent; border: 1.5px solid var(--pine); color: var(--pine); }
+  .cta-link--secondary:hover { background: rgba(45,74,62,0.06); }
+
+  /* RETRY */
+  .btn-retry {
+    background: none;
+    border: 1.5px solid rgba(247,244,239,0.3);
+    color: rgba(247,244,239,0.7);
+    padding: 10px 24px;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 20px;
+    letter-spacing: 0.05em;
+    transition: border-color 0.18s, color 0.18s;
+  }
+  .btn-retry:hover { border-color: rgba(247,244,239,0.6); color: var(--cream); }
+
+  @media (max-width: 520px) {
+    .options-grid { grid-template-columns: 1fr; }
+    .site-header { padding: 16px 20px; }
+    .hero, .progress-wrap { padding-left: 20px; padding-right: 20px; }
+    .quiz-wrap, .results-wrap { padding-left: 16px; padding-right: 16px; }
+    .results-hero { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <img src="../MMG_Logo_White_Transparent.png" alt="Mr Mallorca Golf">
+  <div class="site-header__divider"></div>
+  <span class="site-header__label">Hotel Finder</span>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero__eyebrow">Free tool</p>
+  <h1>Where should you stay<br>for your golf trip?</h1>
+  <p>Six questions. A personalised shortlist of hotels and villas matched to your golf itinerary, group, and style.</p>
+</div>
+
+<!-- PROGRESS -->
+<div class="progress-wrap">
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+</div>
+
+<!-- QUIZ -->
+<div class="quiz-wrap" id="quizWrap">
+
+  <!-- STEP 1: Area -->
+  <div class="step active" id="step1">
+    <p class="step-number">Question 1 of 6</p>
+    <h2>Which part of Mallorca are you planning to golf in?</h2>
+    <p class="step__sub">This determines which course clusters you can reach easily. If you are unsure, choose Southwest — it has the most courses.</p>
+    <div class="options" id="q-area">
+      <div class="opt" data-val="southwest" onclick="select(this,'area')">
+        <span class="opt__icon">🏌️</span>
+        <div class="opt__body">
+          <div class="opt__label">Southwest Mallorca</div>
+          <div class="opt__desc">Andratx, Santa Ponsa, Bendinat, Calvià. The main golf cluster — 4 to 5 courses within 15 minutes. Best base for a golf-heavy trip.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="north" onclick="select(this,'area')">
+        <span class="opt__icon">⛰️</span>
+        <div class="opt__body">
+          <div class="opt__label">North Mallorca</div>
+          <div class="opt__desc">Alcúdia, Pollença, Formentor. Alcanada is one of the island's best courses. Fewer courses but a more scenic, relaxed base.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="east" onclick="select(this,'area')">
+        <span class="opt__icon">🌊</span>
+        <div class="opt__body">
+          <div class="opt__label">East Mallorca</div>
+          <div class="opt__desc">Capdepera, Pula, Vall d'Or. Quieter, great beaches, underrated courses. Good for families or those who want calm over convenience.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="palma" onclick="select(this,'area')">
+        <span class="opt__icon">🏙️</span>
+        <div class="opt__body">
+          <div class="opt__label">Near Palma</div>
+          <div class="opt__desc">Use Palma as an evening base. Son Gual and Bendinat within 20 minutes. Good if you want city restaurants and nightlife between rounds.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="northwest" onclick="select(this,'area')">
+        <span class="opt__icon">🏔️</span>
+        <div class="opt__body">
+          <div class="opt__label">Northwest — Tramuntana experience</div>
+          <div class="opt__desc">Sóller, Deià, Valldemossa. Spectacular scenery. Not a golf base — nearest course is 50 minutes. Best as a 2-night add-on to another area.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step-nav">
+      <button class="btn-next" id="next1" onclick="next(1)" disabled>Continue</button>
+    </div>
+  </div>
+
+  <!-- STEP 2: Priority -->
+  <div class="step" id="step2">
+    <p class="step-number">Question 2 of 6</p>
+    <h2>What matters most outside the golf?</h2>
+    <p class="step__sub">Between rounds, what does the group want?</p>
+    <div class="options" id="q-priority">
+      <div class="opt" data-val="golf-focused" onclick="select(this,'priority')">
+        <span class="opt__icon">⛳</span>
+        <div class="opt__body">
+          <div class="opt__label">Be as close to the courses as possible</div>
+          <div class="opt__desc">On or beside a course, easy early tee times, nothing to get in the way of the rounds.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="beach" onclick="select(this,'priority')">
+        <span class="opt__icon">🏖️</span>
+        <div class="opt__body">
+          <div class="opt__label">Beach and pool time after golf</div>
+          <div class="opt__desc">Post-round recovery at the sea or pool is just as important as the round itself.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="spa" onclick="select(this,'priority')">
+        <span class="opt__icon">♨️</span>
+        <div class="opt__body">
+          <div class="opt__label">Spa and wellness recovery</div>
+          <div class="opt__desc">A proper spa for legs and backs after multiple rounds. Treatments, steam, pool.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="dining" onclick="select(this,'priority')">
+        <span class="opt__icon">🍷</span>
+        <div class="opt__body">
+          <div class="opt__label">Good food and evenings out</div>
+          <div class="opt__desc">Restaurants, wine, local markets. The evenings are as important as the days.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="privacy" onclick="select(this,'priority')">
+        <span class="opt__icon">🏡</span>
+        <div class="opt__body">
+          <div class="opt__label">Privacy and space — our own place</div>
+          <div class="opt__desc">Own pool, own schedule, no hotel timetable. A villa where the group can do what it wants.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step-nav">
+      <button class="btn-next" id="next2" onclick="next(2)" disabled>Continue</button>
+      <button class="btn-back" onclick="back(2)">Back</button>
+    </div>
+  </div>
+
+  <!-- STEP 3: Group type -->
+  <div class="step" id="step3">
+    <p class="step-number">Question 3 of 6</p>
+    <h2>Who is travelling?</h2>
+    <p class="step__sub">Helps match the right atmosphere and facilities.</p>
+    <div class="options-grid" id="q-group">
+      <div class="opt" data-val="couple" onclick="select(this,'group')">
+        <span class="opt__icon">💑</span>
+        <div class="opt__body">
+          <div class="opt__label">Couple</div>
+        </div>
+      </div>
+      <div class="opt" data-val="friends" onclick="select(this,'group')">
+        <span class="opt__icon">🍺</span>
+        <div class="opt__body">
+          <div class="opt__label">Group of friends</div>
+        </div>
+      </div>
+      <div class="opt" data-val="family" onclick="select(this,'group')">
+        <span class="opt__icon">👨‍👩‍👧‍👦</span>
+        <div class="opt__body">
+          <div class="opt__label">Family with kids</div>
+        </div>
+      </div>
+      <div class="opt" data-val="solo" onclick="select(this,'group')">
+        <span class="opt__icon">🧳</span>
+        <div class="opt__body">
+          <div class="opt__label">Travelling solo</div>
+        </div>
+      </div>
+      <div class="opt" data-val="corporate" onclick="select(this,'group')">
+        <span class="opt__icon">💼</span>
+        <div class="opt__body">
+          <div class="opt__label">Corporate group</div>
+        </div>
+      </div>
+    </div>
+    <div class="step-nav">
+      <button class="btn-next" id="next3" onclick="next(3)" disabled>Continue</button>
+      <button class="btn-back" onclick="back(3)">Back</button>
+    </div>
+  </div>
+
+  <!-- STEP 4: Group size -->
+  <div class="step" id="step4">
+    <p class="step-number">Question 4 of 6</p>
+    <h2>How many people in total?</h2>
+    <p class="step__sub">Affects whether a villa makes more sense than a hotel.</p>
+    <div class="options-grid" id="q-size">
+      <div class="opt" data-val="1-2" onclick="select(this,'size')">
+        <div class="opt__body"><div class="opt__label">1 or 2</div></div>
+      </div>
+      <div class="opt" data-val="3-5" onclick="select(this,'size')">
+        <div class="opt__body"><div class="opt__label">3 to 5</div></div>
+      </div>
+      <div class="opt" data-val="6-9" onclick="select(this,'size')">
+        <div class="opt__body"><div class="opt__label">6 to 9</div></div>
+      </div>
+      <div class="opt" data-val="10+" onclick="select(this,'size')">
+        <div class="opt__body"><div class="opt__label">10 or more</div></div>
+      </div>
+    </div>
+    <div class="step-nav">
+      <button class="btn-next" id="next4" onclick="next(4)" disabled>Continue</button>
+      <button class="btn-back" onclick="back(4)">Back</button>
+    </div>
+  </div>
+
+  <!-- STEP 5: Style -->
+  <div class="step" id="step5">
+    <p class="step-number">Question 5 of 6</p>
+    <h2>What kind of place feels right?</h2>
+    <p class="step__sub">Not about budget — about character.</p>
+    <div class="options" id="q-style">
+      <div class="opt" data-val="boutique" onclick="select(this,'style')">
+        <span class="opt__icon">🕯️</span>
+        <div class="opt__body">
+          <div class="opt__label">Boutique and intimate</div>
+          <div class="opt__desc">Small, characterful, personal service. You know the staff by name after a day.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="resort" onclick="select(this,'style')">
+        <span class="opt__icon">🏨</span>
+        <div class="opt__body">
+          <div class="opt__label">Full resort with all facilities</div>
+          <div class="opt__desc">Multiple pools, restaurants, a spa, activities. Everything in one place.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="classic" onclick="select(this,'style')">
+        <span class="opt__icon">🏛️</span>
+        <div class="opt__body">
+          <div class="opt__label">Classic and established</div>
+          <div class="opt__desc">Proper hotel, reliable service, no Instagram gimmicks. Stands for itself.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="villa" onclick="select(this,'style')">
+        <span class="opt__icon">🌿</span>
+        <div class="opt__body">
+          <div class="opt__label">Private villa</div>
+          <div class="opt__desc">Own pool, own kitchen, own timetable. No hotel lobby, no check-out time.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="countryside" onclick="select(this,'style')">
+        <span class="opt__icon">🌾</span>
+        <div class="opt__body">
+          <div class="opt__label">Countryside finca or rural retreat</div>
+          <div class="opt__desc">Farmhouse conversion, olive groves, quiet. The island away from the coast.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step-nav">
+      <button class="btn-next" id="next5" onclick="next(5)" disabled>Continue</button>
+      <button class="btn-back" onclick="back(5)">Back</button>
+    </div>
+  </div>
+
+  <!-- STEP 6: Budget -->
+  <div class="step" id="step6">
+    <p class="step-number">Question 6 of 6</p>
+    <h2>What is the rough budget per room per night?</h2>
+    <p class="step__sub">In high season (June to September). Helps filter to realistic options.</p>
+    <div class="options" id="q-budget">
+      <div class="opt" data-val="mid" onclick="select(this,'budget')">
+        <div class="opt__body">
+          <div class="opt__label">Up to €250 per room</div>
+          <div class="opt__desc">Mid-range four-star. Good location, comfortable, nothing extravagant.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="premium" onclick="select(this,'budget')">
+        <div class="opt__body">
+          <div class="opt__label">€250 to €500 per room</div>
+          <div class="opt__desc">Premium four or five-star. Proper spa, quality dining, noticeably better.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="ultra" onclick="select(this,'budget')">
+        <div class="opt__body">
+          <div class="opt__label">€500 or more per room</div>
+          <div class="opt__desc">Ultra-luxury. Four Seasons, Belmond, Jumeirah. The best the island has.</div>
+        </div>
+      </div>
+      <div class="opt" data-val="flexible" onclick="select(this,'budget')">
+        <div class="opt__body">
+          <div class="opt__label">Flexible — show me the best option</div>
+          <div class="opt__desc">Not constrained by price. Show me what genuinely fits best.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step-nav">
+      <button class="btn-next" id="next6" onclick="next(6)" disabled>See my recommendations</button>
+      <button class="btn-back" onclick="back(6)">Back</button>
+    </div>
+  </div>
+
+</div><!-- /quiz-wrap -->
+
+<!-- RESULTS -->
+<div id="results">
+  <div class="results-hero">
+    <h2>Your hotel shortlist</h2>
+    <p id="resultsIntro">Based on your answers, here are the best options for your trip.</p>
+  </div>
+
+  <div class="results-wrap">
+    <div id="areaWarning"></div>
+    <p class="results-label" id="resultsLabel"></p>
+    <div id="hotelCards"></div>
+
+    <!-- EMAIL -->
+    <div class="email-section" id="emailSection">
+      <h3>Save your shortlist</h3>
+      <p>Get these recommendations sent to your inbox — useful when comparing options with the rest of the group.</p>
+      <div class="email-row">
+        <input class="email-input" type="email" id="emailInput" placeholder="your@email.com">
+        <button class="btn-email" onclick="sendEmail()">Send to me</button>
+      </div>
+      <label class="newsletter-opt">
+        <input type="checkbox" id="newsletterCheck"> Also send Andy's seasonal course tips
+      </label>
+      <p class="email-success" id="emailSuccess">Sent. Check your inbox.</p>
+    </div>
+
+    <!-- ANDY CTA -->
+    <div class="andy-cta">
+      <h3>Ready to put the trip together?</h3>
+      <p>Andy can match your hotel choice to the right tee times, courses, and schedule — based on the area, your handicap, and how many rounds you want to fit in.</p>
+      <div class="cta-links">
+        <a href="/contact" class="cta-link cta-link--primary">Enquire with Andy</a>
+        <a href="https://wa.me/34624466702" target="_blank" rel="noopener noreferrer" class="cta-link cta-link--secondary">WhatsApp Andy</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center; padding-bottom: 40px;">
+    <button class="btn-retry" onclick="restart()">Start again</button>
+  </div>
+</div>
+
+<script>
+/* ===================================================================
+   DATA
+=================================================================== */
+const HOTELS = [
+  /* ——— SOUTHWEST ——— */
+  {
+    id:'arabella-son-vida', name:'Arabella Golf Hotel Son Vida',
+    subname:'Sheraton Collection',
+    area:'southwest', luxury:4, type:'hotel',
+    vibes:['resort','golf-focused'],
+    styles:['resort','classic'],
+    groups:['friends','couple','solo','corporate'],
+    sizes:['1-2','3-5','6-9','10+'],
+    beach:false, spa:true, golfProximity:3,
+    priority:['golf-focused','spa'],
+    pills:['On course','Spa','Michelin dining'],
+    budgets:['ultra','flexible'],
+    why:'Son Vida and Son Quint are on the estate. T Golf Calvià is 10 minutes. Wake up, play, eat, recover — nothing outside the hotel required.',
+    andy:'The default answer for a golf-first group who want everything managed. Es Fum holds one Michelin star in the hotel. Puerto Portals is walkable for evenings.',
+    golf:'Courses on the estate: Son Vida, Son Quint. T Golf Calvià 10 min. Real Golf de Bendinat 15 min. Santa Ponsa cluster 20 min.',
+    travelTime:'15 min from Palma airport'
+  },
+  {
+    id:'gran-melia-de-mar', name:'Gran Meliá de Mar',
+    subname:'Illetas',
+    area:'southwest', luxury:4, type:'hotel',
+    vibes:['resort','luxury'],
+    styles:['resort','boutique'],
+    groups:['couple','solo','corporate'],
+    sizes:['1-2','3-5'],
+    beach:true, spa:true, golfProximity:2,
+    priority:['beach','spa','dining'],
+    pills:['Beach','Spa','Palma nearby'],
+    budgets:['ultra','flexible'],
+    why:'Ultra-luxury with beach access and full resort service. Bendinat golf 8 minutes. Illetas puts both Palma city and the Southwest course cluster in range.',
+    andy:'A quieter five-star than the Mandarin Oriental. Flexible base for different round combinations.',
+    golf:'Real Golf de Bendinat 8 min. T Golf Calvià 15 min. Son Vida 20 min.',
+    travelTime:'12 min from Palma airport'
+  },
+  {
+    id:'hospes-maricel', name:'Hospes Maricel',
+    subname:'Cas Català',
+    area:'southwest', luxury:3, type:'hotel',
+    vibes:['boutique','luxury'],
+    styles:['boutique','classic'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:true, spa:true, golfProximity:2,
+    priority:['beach','spa','dining'],
+    pills:['Boutique','Seafront','Private jetty'],
+    budgets:['premium','ultra','flexible'],
+    why:'1940s palace feel with a private jetty. Old Mallorcan glamour, smaller and more intimate than the big five-stars. Bendinat golf 8 minutes.',
+    andy:'A distinctive alternative to the larger five-stars. The kind of place that feels genuinely Mallorcan rather than international-hotel-chain.',
+    golf:'Real Golf de Bendinat 8 min. T Golf Calvià 15 min.',
+    travelTime:'12 min from Palma airport'
+  },
+  {
+    id:'hotel-bendinat', name:'Hotel Bendinat',
+    subname:'Bendinat',
+    area:'southwest', luxury:2, type:'hotel',
+    vibes:['classic','resort'],
+    styles:['classic','resort'],
+    groups:['friends','couple','solo'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:false, golfProximity:3,
+    priority:['golf-focused'],
+    pills:['On course','Good value','Quiet area'],
+    budgets:['mid','premium','flexible'],
+    why:'Right next to Real Golf de Bendinat. The sensible pick when the brief is golf and a good location, not poolside luxury.',
+    andy:'Old Bendinat is one of the quieter corners of the Southwest. Not a resort — an honest golf hotel that does what it says.',
+    golf:'Real Golf de Bendinat on the doorstep. T Golf Calvià 10 min. Santa Ponsa cluster 20 min.',
+    travelTime:'15 min from Palma airport'
+  },
+  {
+    id:'son-caliu', name:'Son Caliu Hotel Spa',
+    subname:'Palma Nova',
+    area:'southwest', luxury:2, type:'hotel',
+    vibes:['resort'],
+    styles:['resort','classic'],
+    groups:['friends','family','couple'],
+    sizes:['3-5','6-9'],
+    beach:true, spa:true, golfProximity:2,
+    priority:['beach','spa'],
+    pills:['Beach','1100m² spa','Family-friendly'],
+    budgets:['mid','flexible'],
+    why:'Mid-range four-star with a proper spa and sea access via jetty. A practical mid-point for the Southwest course cluster at a sensible price.',
+    andy:'Between Puerto Portals and Palma Nova. Good for mixed groups where not everyone golfs — the spa and beach hold their own.',
+    golf:'T Golf Calvià 10 min. Real Golf de Bendinat 15 min. Santa Ponsa 20 min.',
+    travelTime:'20 min from Palma airport'
+  },
+  {
+    id:'zafiro-andratx', name:'Zafiro Palace Andratx',
+    subname:'Camp de Mar',
+    area:'southwest', luxury:3, type:'hotel',
+    vibes:['resort','family-friendly'],
+    styles:['resort'],
+    groups:['friends','family','couple'],
+    sizes:['3-5','6-9','10+'],
+    beach:true, spa:true, golfProximity:3,
+    priority:['beach','spa','golf-focused'],
+    pills:['Beach','Spa','Family resort','Golf de Andratx 5 min'],
+    budgets:['premium','flexible'],
+    why:'Five-star resort five minutes from Golf de Andratx. Beach is walkable. Good value if half the group golfs and half does not.',
+    andy:'One thing to plan around: Golf de Andratx is the hardest course on the island, handicap limit 28. Match the easier rounds at Santa Ponsa for weaker players.',
+    golf:'Golf de Andratx 5 min. T Golf Calvià 20 min. Santa Ponsa cluster 25 min.',
+    travelTime:'30 min from Palma airport'
+  },
+  {
+    id:'secrets-villamil', name:'Secrets Mallorca Villamil',
+    subname:'AMR Collection, Paguera',
+    area:'southwest', luxury:4, type:'hotel',
+    vibes:['resort'],
+    styles:['resort','boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:true, spa:true, golfProximity:2,
+    priority:['beach','spa'],
+    pills:['Adults only','Cliff pool','Paguera beach'],
+    budgets:['ultra','flexible'],
+    why:'Adults-only AMR Collection on Paguera beach. Overwater suites, cliff-edge infinity pools, multiple dining options. Golf de Andratx 15 minutes.',
+    andy:'Good five-star base if the couple wants a serious beach resort with the full range of Southwest courses available. Andratx is the closest and most dramatic.',
+    golf:'Golf de Andratx 15 min. T Golf Calvià 20 min. Santa Ponsa 25 min.',
+    travelTime:'30 min from Palma airport'
+  },
+  {
+    id:'donna-portals', name:'The Donna Portals',
+    subname:'Portals Nous',
+    area:'southwest', luxury:3, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:true, spa:false, golfProximity:2,
+    priority:['beach','dining'],
+    pills:['Boutique','Private cove','Puerto Portals nearby'],
+    budgets:['premium','ultra','flexible'],
+    why:'Design-led boutique next to a private cove in Portals Nous. Themed suites, Day Club, flower pool. Puerto Portals marina for evenings.',
+    andy:'T Golf Calvià 10 minutes inland, Santa Ponsa cluster 15 minutes. Port Adriano makes a good dinner base mid-week.',
+    golf:'Real Golf de Bendinat 10 min. T Golf Calvià 10 min. Son Vida 18 min.',
+    travelTime:'15 min from Palma airport'
+  },
+  {
+    id:'finca-serena', name:'Finca Serena',
+    subname:'Near Llucmajor',
+    area:'southwest', luxury:3, type:'hotel',
+    vibes:['countryside'],
+    styles:['countryside'],
+    groups:['couple','solo','friends'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:true, golfProximity:2,
+    priority:['spa','privacy'],
+    pills:['Finca','Wellness','40 hectares'],
+    budgets:['premium','ultra','flexible'],
+    why:'Holistic five-star finca with 40 hectares of farmland and a serious wellness programme. Golf Maioris 5 minutes, Son Gual 15 minutes.',
+    andy:'Golf Maioris and Son Gual are two of the most interesting courses in Mallorca. Andreu Genestra (one Michelin star) is nearby.',
+    golf:'Golf Maioris 5 min. Son Gual 15 min. Note: courses here are 40-60 min from Palma.',
+    travelTime:'25 min from Palma airport'
+  },
+  {
+    id:'sw-villa', name:'Luxury Villa, Southwest',
+    subname:'Santa Ponsa / Andratx area',
+    area:'southwest', luxury:3, type:'villa',
+    vibes:['villa'],
+    styles:['villa'],
+    groups:['friends','family','couple'],
+    sizes:['6-9','10+'],
+    beach:false, spa:false, golfProximity:2,
+    priority:['privacy','beach'],
+    pills:['Private villa','Own pool','Full flexibility'],
+    budgets:['premium','ultra','flexible','mid'],
+    why:'For six or more, a villa changes the trip: late breakfasts, your own pool after the round, no hotel timetable. Four courses within 15 minutes.',
+    andy:'The villa location needs to match the tee sheet. This is exactly the matching Andy can help with.',
+    golf:'Golf Santa Ponsa 1, Golf de Andratx, T Golf Calvià, Real Golf de Bendinat — all within 15-20 min depending on villa location.',
+    travelTime:'25-35 min from Palma airport'
+  },
+
+  /* ——— NORTH ——— */
+  {
+    id:'four-seasons-formentor', name:'Four Seasons Resort Mallorca at Formentor',
+    subname:'Formentor Peninsula',
+    area:'north', luxury:4, type:'hotel',
+    vibes:['resort','boutique'],
+    styles:['resort','boutique'],
+    groups:['couple','solo','corporate'],
+    sizes:['1-2','3-5'],
+    beach:true, spa:true, golfProximity:2,
+    priority:['beach','spa','dining'],
+    pills:['Four Seasons','Formentor bay','Peninsula drive'],
+    budgets:['ultra','flexible'],
+    why:'Ultra-luxury with the Formentor bay. One of the most scenic stays on the island. Golf early, Formentor bay the rest of the day.',
+    andy:'The peninsula road is the best drive in Mallorca. Alcanada is 35 minutes — not the closest, but worth it for the setting.',
+    golf:'Club de Golf Alcanada 35 min. Golf Pollença 20 min.',
+    travelTime:'55 min from Palma airport'
+  },
+  {
+    id:'el-vicenc', name:'El Vicenç de la Mar',
+    subname:'Cala de Sant Vicenç',
+    area:'north', luxury:4, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:true, spa:false, golfProximity:2,
+    priority:['beach','dining'],
+    pills:['Boutique','Michelin chef','Beachfront'],
+    budgets:['ultra','flexible'],
+    why:'Boutique five-star with direct beach access and Santi Taura (one Michelin star) in the restaurant. Alcanada 20 minutes. Pollença old town 10 minutes.',
+    andy:'Santi Taura is one of the best chefs in Mallorca. If the food matters as much as the golf, and the north is the zone, this is the answer.',
+    golf:'Club de Golf Alcanada 20 min. Golf Pollença 10 min.',
+    travelTime:'50 min from Palma airport'
+  },
+  {
+    id:'illa-dor', name:"Illa d'Or",
+    subname:'Port de Pollença',
+    area:'north', luxury:2, type:'hotel',
+    vibes:['classic','boutique'],
+    styles:['classic','boutique'],
+    groups:['couple','solo','friends'],
+    sizes:['1-2','3-5'],
+    beach:true, spa:false, golfProximity:2,
+    priority:['beach','dining'],
+    pills:['Bay views','Classic','Walkable evenings'],
+    budgets:['mid','premium','flexible'],
+    why:'Port de Pollença is one of the nicest bases in the North. Quieter than Alcúdia, walkable in evenings, and Alcanada 20 minutes away.',
+    andy:'The most established hotel right on the bay. 23 rooms. Good food.',
+    golf:'Club de Golf Alcanada 20 min. Golf Pollença 10 min (9 holes).',
+    travelTime:'50 min from Palma airport'
+  },
+  {
+    id:'north-villa', name:'Luxury Villa, North Mallorca',
+    subname:'Pollença / Alcúdia area',
+    area:'north', luxury:3, type:'villa',
+    vibes:['villa'],
+    styles:['villa'],
+    groups:['friends','family','couple'],
+    sizes:['6-9','10+'],
+    beach:true, spa:false, golfProximity:2,
+    priority:['privacy','beach'],
+    pills:['Private villa','Own pool','Coves nearby'],
+    budgets:['premium','ultra','flexible','mid'],
+    why:'Pollença valley or coastal Alcúdia puts you 15 minutes from Alcanada. Hire cars essential. Beaches and coves nearby.',
+    andy:'The north is quieter and more scenic than the Southwest. A north villa works well if the brief is a proper holiday with good golf rather than maximum rounds.',
+    golf:'Club de Golf Alcanada 15-20 min. Golf Pollença 10-15 min.',
+    travelTime:'50 min from Palma airport'
+  },
+
+  /* ——— EAST ——— */
+  {
+    id:'can-simoneta', name:'Can Simoneta',
+    subname:'Canyamel',
+    area:'east', luxury:3, type:'hotel',
+    vibes:['boutique','countryside'],
+    styles:['boutique','countryside'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:true, golfProximity:2,
+    priority:['spa','privacy'],
+    pills:['Clifftop','Spa','VORO restaurant'],
+    budgets:['premium','ultra','flexible'],
+    why:'Clifftop boutique five-star with a serious spa and Capdepera golf 5 minutes away. VORO (Mallorca\'s only two-Michelin-star restaurant) is in the hotel.',
+    andy:'Quietest of the east coast options. Suits couples who want privacy over facilities.',
+    golf:'Golf Capdepera 5 min. Club de Golf Pula 15 min.',
+    travelTime:'60 min from Palma airport'
+  },
+  {
+    id:'pleta-de-mar', name:'Pleta de Mar',
+    subname:'Canyamel',
+    area:'east', luxury:3, type:'hotel',
+    vibes:['resort'],
+    styles:['resort'],
+    groups:['couple','friends','family'],
+    sizes:['1-2','3-5'],
+    beach:true, spa:true, golfProximity:2,
+    priority:['beach','spa'],
+    pills:['Eco-luxury','2 infinity pools','Private beach','VORO on site'],
+    budgets:['premium','ultra','flexible'],
+    why:'East coast beach luxury. Two infinity pools, private beach access, and VORO restaurant (two Michelin stars) on site. Capdepera golf 5 minutes.',
+    andy:'The east is underrated. Fewer crowds, better water, two quality courses. VORO is worth a special dinner even for guests who are not staying here.',
+    golf:'Golf Capdepera 5 min. Club de Golf Pula 15 min. Golf Vall d\'Or 20 min.',
+    travelTime:'60 min from Palma airport'
+  },
+  {
+    id:'east-villa', name:'Luxury Villa, East Mallorca',
+    subname:"Cala d'Or / Porto Cristo area",
+    area:'east', luxury:3, type:'villa',
+    vibes:['villa'],
+    styles:['villa'],
+    groups:['friends','family'],
+    sizes:['6-9','10+'],
+    beach:true, spa:false, golfProximity:2,
+    priority:['privacy','beach'],
+    pills:['Private villa','Calm coves','Good value'],
+    budgets:['mid','premium','flexible'],
+    why:"Families or groups wanting calm coves and easy access to Vall d'Or and Pula. The east coast has the island's calmest family beaches.",
+    andy:'The east is underrated for a golf trip. Fewer crowds, better water, two quality courses that do not get the attention they deserve.',
+    golf:"Golf Vall d'Or 20 min. Club de Golf Pula 15 min. Golf Capdepera 20 min.",
+    travelTime:'55-65 min from Palma airport'
+  },
+
+  /* ——— PALMA ——— */
+  {
+    id:'el-llorenc', name:'El Llorenç Parc de la Mar',
+    subname:'Palma old town',
+    area:'palma', luxury:3, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique'],
+    groups:['couple','solo','corporate'],
+    sizes:['1-2'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['dining'],
+    pills:['City boutique','Michelin dining','Rooftop pool'],
+    budgets:['premium','ultra','flexible'],
+    why:'Design rooms, rooftop pool, and Santi Taura (one Michelin star). Golf requires a drive but Palma evenings more than compensate.',
+    andy:'Rooftop pool at dusk and dinner afterwards is a strong Palma evening. Son Gual is 20 minutes for a morning round.',
+    golf:'Son Gual 20 min. Real Golf de Bendinat 20 min. Golf Maioris 25 min.',
+    travelTime:'20 min from Palma airport'
+  },
+  {
+    id:'santos-nixe', name:'Santos Nixe Palace',
+    subname:'Cala Major, Palma',
+    area:'palma', luxury:2, type:'hotel',
+    vibes:['resort','classic'],
+    styles:['classic','resort'],
+    groups:['couple','friends'],
+    sizes:['1-2','3-5'],
+    beach:true, spa:true, golfProximity:2,
+    priority:['beach','spa'],
+    pills:['Beach','Spa','Value four-star'],
+    budgets:['mid','premium','flexible'],
+    why:'Practical, well-located four-star with actual beach access and a proper spa. Similar golf access to the Illetas five-stars at a lower price.',
+    andy:'A sensible pick for couples or small groups who want beach and spa without the ultra-luxury price tag. Bendinat 15 minutes.',
+    golf:'Real Golf de Bendinat 15 min. T Golf Calvià 20 min.',
+    travelTime:'12 min from Palma airport'
+  },
+  {
+    id:'portixol', name:'Hotel Portixol',
+    subname:'Portixol, Palma',
+    area:'palma', luxury:2, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['dining'],
+    pills:['Neighbourhood feel','Best fish in Palma','Quiet'],
+    budgets:['mid','premium','flexible'],
+    why:'Portixol village feel with some of the best fish restaurants in Mallorca. Es Mollet 5 minutes on foot. Golf requires a drive.',
+    andy:'A quieter Palma option. Use as an evening base. Son Gual is 25 minutes for a morning round.',
+    golf:'Son Gual 25 min. Real Golf de Bendinat 20 min.',
+    travelTime:'15 min from Palma airport'
+  },
+  {
+    id:'convent-missio', name:'Convent de la Missió',
+    subname:'Palma old town',
+    area:'palma', luxury:3, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique'],
+    groups:['couple','solo','corporate'],
+    sizes:['1-2'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['dining'],
+    pills:['Design hotel','Palma old town','Rooftop'],
+    budgets:['premium','ultra','flexible'],
+    why:'Design rooms, rooftop terrace, and one of Palma\'s best dining options. For golfers who want the city experience between rounds.',
+    andy:'The old town is 10 minutes on foot. Multiple acclaimed restaurants within walking distance.',
+    golf:'Son Gual 25 min. Real Golf de Bendinat 20 min.',
+    travelTime:'20 min from Palma airport'
+  },
+
+  /* ——— NORTHWEST ——— */
+  {
+    id:'jumeirah-port-soller', name:'Jumeirah Port Soller',
+    subname:'Port de Sóller',
+    area:'northwest', luxury:4, type:'hotel',
+    vibes:['resort'],
+    styles:['resort'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:true, spa:true, golfProximity:1,
+    priority:['spa','beach','dining'],
+    pills:['Ultra-luxury','Clifftop','Hammam spa','Tramuntana views'],
+    budgets:['ultra','flexible'],
+    why:'Perched on cliffs above Port de Sóller. 180-degree Mediterranean views, hammam spa, and the Tramuntana mountains on the doorstep.',
+    andy:'Not a golf-first base. One of the most visually spectacular hotels on the island. Good as a 2-night Tramuntana experience alongside the golf.',
+    golf:'Nearest course: Golf de Andratx, approximately 50 minutes via mountain roads.',
+    travelTime:'50 min from Palma airport'
+  },
+  {
+    id:'la-residencia', name:'La Residencia',
+    subname:'A Belmond Hotel, Deià',
+    area:'northwest', luxury:4, type:'hotel',
+    vibes:['boutique','countryside'],
+    styles:['boutique','countryside'],
+    groups:['couple','solo','corporate'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:true, golfProximity:1,
+    priority:['spa','dining','privacy'],
+    pills:['Belmond','Deià','Historic manor'],
+    budgets:['ultra','flexible'],
+    why:'Two 16th-century stone manor houses above Deià. The most celebrated boutique hotel on the island. David Bowie, Robert Graves, Princess Diana all stayed here.',
+    andy:'Not a golf trip base — one of the best hotels in Spain. Works well as 2 nights in the northwest before moving to the Southwest for the rounds.',
+    golf:'Nearest course: Golf de Andratx, approximately 50 minutes. Golf rounds need to be planned as full-day excursions.',
+    travelTime:'60 min from Palma airport'
+  },
+  {
+    id:'cas-xorc', name:"Ca's Xorc",
+    subname:'Sóller',
+    area:'northwest', luxury:3, type:'hotel',
+    vibes:['countryside','boutique'],
+    styles:['countryside','boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['privacy'],
+    pills:['Finca','Infinity pool','Remote'],
+    budgets:['premium','ultra','flexible'],
+    why:'Converted farmhouse on the Sóller-Deià road. Infinity pool, homegrown kitchen, distant sea views. Very remote — car essential.',
+    andy:'One of the most romantic locations on the island. Not the base for a golf trip, but the right answer if someone wants the Tramuntana experience with a round or two worked in.',
+    golf:'Nearest course: Golf de Andratx, approximately 50 minutes.',
+    travelTime:'50 min from Palma airport'
+  },
+  {
+    id:'es-moli', name:'Es Moli',
+    subname:'Deià',
+    area:'northwest', luxury:3, type:'hotel',
+    vibes:['boutique','countryside'],
+    styles:['boutique','countryside'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:true, golfProximity:1,
+    priority:['spa','privacy'],
+    pills:['Classic Tramuntana','Terraced pools','Open Mar-Nov'],
+    budgets:['premium','ultra','flexible'],
+    why:'Classic Mallorca without the Belmond price. Multiple terraced pools carved into the cliff, valley and sea views. Open March to November.',
+    andy:'Plan 2 nights in the northwest for the scenery, then move to the Southwest for the rounds.',
+    golf:'Nearest course: Golf de Andratx, approximately 50 minutes.',
+    travelTime:'55 min from Palma airport'
+  },
+];
+
+/* ===================================================================
+   STATE
+=================================================================== */
+const A = { area:null, priority:null, group:null, size:null, style:null, budget:null };
+let currentStep = 1;
+const TOTAL = 6;
+const scored = [];
+
+/* ===================================================================
+   QUIZ LOGIC
+=================================================================== */
+function select(el, q) {
+  const container = el.parentElement;
+  container.querySelectorAll('.opt').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  A[q] = el.dataset.val;
+  const nextBtn = document.getElementById('next' + currentStep);
+  if (nextBtn) nextBtn.disabled = false;
+}
+
+function next(stepNum) {
+  if (stepNum === TOTAL) { buildResults(); return; }
+  goTo(stepNum + 1);
+}
+
+function back(stepNum) {
+  goTo(stepNum - 1);
+}
+
+function goTo(n) {
+  document.getElementById('step' + currentStep).classList.remove('active');
+  currentStep = n;
+  document.getElementById('step' + currentStep).classList.add('active');
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function updateProgress() {
+  document.getElementById('progressFill').style.width = ((currentStep - 1) / TOTAL * 100) + '%';
+}
+
+/* ===================================================================
+   SCORING
+=================================================================== */
+function scoreHotel(h) {
+  let s = 0;
+
+  // Area match — hard filter
+  if (h.area !== A.area) return -999;
+
+  // Priority
+  if (h.priority.includes(A.priority)) s += 30;
+
+  // Group type
+  if (h.groups.includes(A.group)) s += 20;
+  // Couples and adults-only properties
+  if (A.group === 'family' && (h.id.includes('secrets') || h.id.includes('vicenc'))) s -= 25;
+  if (A.group === 'family' && h.type === 'villa') s += 10;
+
+  // Size
+  if (h.sizes.includes(A.size)) s += 15;
+  // Large groups push toward villas
+  if ((A.size === '6-9' || A.size === '10+') && h.type === 'villa') s += 20;
+  if ((A.size === '1-2') && h.type === 'villa') s -= 15;
+
+  // Style
+  if (h.styles.includes(A.style)) s += 25;
+  if (A.style === 'villa' && h.type !== 'villa') s -= 20;
+  if (A.style !== 'villa' && h.type === 'villa') s -= 10;
+
+  // Budget
+  if (h.budgets.includes(A.budget)) s += 20;
+  if (A.budget === 'mid' && h.luxury === 4) s -= 25;
+  if (A.budget === 'ultra' && h.luxury === 2) s -= 15;
+  if (A.budget === 'flexible') s += 5;
+
+  // Priority-specific bonuses
+  if (A.priority === 'beach' && h.beach) s += 15;
+  if (A.priority === 'spa' && h.spa) s += 15;
+  if (A.priority === 'golf-focused' && h.golfProximity === 3) s += 20;
+  if (A.priority === 'golf-focused' && h.golfProximity === 2) s += 10;
+  if (A.priority === 'privacy' && h.type === 'villa') s += 25;
+  if (A.priority === 'dining') {
+    if (['arabella-son-vida','el-vicenc','el-llorenc','can-simoneta','donna-portals','hospes-maricel'].includes(h.id)) s += 12;
+  }
+
+  // Slight penalty for northwest golf proximity (already area-filtered but flag poor fit)
+  if (h.area === 'northwest' && A.priority === 'golf-focused') s -= 30;
+
+  return s;
+}
+
+/* ===================================================================
+   RESULTS
+=================================================================== */
+function buildResults() {
+  document.getElementById('quizWrap').style.display = 'none';
+  document.getElementById('progressFill').style.width = '100%';
+
+  const allScored = HOTELS.map(h => ({ hotel: h, score: scoreHotel(h) }))
+    .filter(x => x.score > -999)
+    .sort((a, b) => b.score - a.score);
+
+  const top = allScored.slice(0, 3).filter(x => x.score > 0);
+  scored.length = 0;
+  top.forEach(x => scored.push(x));
+
+  // Northwest warning
+  const warnEl = document.getElementById('areaWarning');
+  if (A.area === 'northwest') {
+    warnEl.innerHTML = `<div class="area-warning">
+      <strong>Planning note:</strong> The northwest is spectacular but not a golf base. The nearest course (Golf de Andratx) is around 50 minutes via mountain roads. These options work best as a 2-night Tramuntana experience — plan golf rounds as full-day excursions or combine with a Southwest base.
+    </div>`;
+  } else {
+    warnEl.innerHTML = '';
+  }
+
+  // Label
+  const areaLabels = {
+    southwest:'Southwest Mallorca',north:'North Mallorca',east:'East Mallorca',
+    palma:'Near Palma',northwest:'Northwest / Tramuntana'
+  };
+  document.getElementById('resultsLabel').textContent =
+    `Best options for ${areaLabels[A.area] || A.area}`;
+
+  // Results intro
+  const groupLabel = { couple:'a couple', friends:'a group of friends', family:'a family', solo:'a solo traveller', corporate:'a corporate group' };
+  const priorityLabel = { 'golf-focused':'with golf as the main focus', beach:'with beach time after golf', spa:'with spa recovery between rounds', dining:'with good food and evenings', privacy:'wanting a private villa' };
+  document.getElementById('resultsIntro').textContent =
+    `For ${groupLabel[A.group] || 'your group'}, ${priorityLabel[A.priority] || ''}, staying in ${areaLabels[A.area] || A.area}.`;
+
+  // Cards
+  const container = document.getElementById('hotelCards');
+  container.innerHTML = '';
+
+  if (top.length === 0) {
+    container.innerHTML = '<p style="color:var(--taupe);line-height:1.7;font-size:0.9rem;">No exact matches — try adjusting your area or budget answers.</p>';
+  } else {
+    top.forEach((x, i) => {
+      container.appendChild(buildCard(x.hotel, i));
+    });
+  }
+
+  document.getElementById('results').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function buildCard(h, rank) {
+  const rankLabels = ['Best match', 'Second choice', 'Also worth considering'];
+  const rankClasses = ['hotel-card__rank--gold', '', ''];
+
+  const card = document.createElement('div');
+  card.className = 'hotel-card' + (rank === 0 ? ' hotel-card--top' : '');
+
+  const pills = h.pills.map(p => {
+    let cls = '';
+    if (p.toLowerCase().includes('beach')) cls = 'pill--beach';
+    else if (p.toLowerCase().includes('spa') || p.toLowerCase().includes('wellness')) cls = 'pill--spa';
+    else if (p.toLowerCase().includes('course') || p.toLowerCase().includes('golf')) cls = 'pill--golf';
+    else if (p.toLowerCase().includes('adult')) cls = 'pill--adults';
+    else if (p.toLowerCase().includes('famil')) cls = 'pill--family';
+    return `<span class="pill ${cls}">${p}</span>`;
+  }).join('');
+
+  const areaLabels = {
+    southwest:'Southwest', north:'North', east:'East', palma:'Palma', northwest:'Northwest'
+  };
+  const tierLabels = {1:'Mid-range',2:'Four-star',3:'Premium five-star',4:'Ultra-luxury'};
+  const typeLabel = h.type === 'villa' ? 'Private villa' : (tierLabels[h.luxury] || '');
+
+  card.innerHTML = `
+    <div class="hotel-card__rank ${rankClasses[rank]}">${rankLabels[rank]}</div>
+    <div class="hotel-card__body">
+      <div class="hotel-card__meta">
+        <span class="hotel-card__area">${areaLabels[h.area] || h.area}</span>
+        <span class="hotel-card__sep">·</span>
+        <span class="hotel-card__tier">${typeLabel}</span>
+        ${h.travelTime ? `<span class="hotel-card__sep">·</span><span class="hotel-card__tier">${h.travelTime}</span>` : ''}
+      </div>
+      <h3>${h.name}</h3>
+      ${h.subname ? `<p style="font-size:0.8rem;color:var(--taupe);margin-bottom:10px;">${h.subname}</p>` : ''}
+      <div class="hotel-card__pills">${pills}</div>
+      <p class="hotel-card__why">${h.why}</p>
+      <div class="hotel-card__andy">
+        <div class="hotel-card__andy-label">Andy's note</div>
+        <p>${h.andy}</p>
+      </div>
+      <p class="hotel-card__golf"><strong>Nearby golf:</strong> ${h.golf}</p>
+      <a href="/contact?ref=hotel-${h.id}" class="hotel-card__cta">Plan this with Andy</a>
+    </div>
+  `;
+  return card;
+}
+
+/* ===================================================================
+   EMAIL
+=================================================================== */
+function sendEmail() {
+  const email = document.getElementById('emailInput').value.trim();
+  if (!email || !email.includes('@')) {
+    document.getElementById('emailInput').focus();
+    return;
+  }
+
+  const newsletter = document.getElementById('newsletterCheck').checked;
+
+  let bodyHtml = `<p>Here are your top hotel recommendations for a Mallorca golf trip.</p>`;
+  scored.forEach((x, i) => {
+    const h = x.hotel;
+    bodyHtml += `
+      <div style="background:#fff;border:1px solid #E0D8CB;padding:20px;margin-bottom:16px;">
+        <p style="font-size:0.75rem;color:#B8973C;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">
+          ${['Best match','Second choice','Also worth considering'][i]}
+        </p>
+        <h3 style="font-family:Georgia,serif;font-size:1.15rem;font-weight:400;color:#1A1916;margin-bottom:6px;">${h.name}</h3>
+        <p style="font-size:0.82rem;color:#8A7F74;margin-bottom:10px;">${h.subname || ''}</p>
+        <p style="font-size:0.88rem;color:#2C2A27;line-height:1.65;margin-bottom:8px;">${h.why}</p>
+        <p style="font-size:0.82rem;color:#8A7F74;line-height:1.55;"><strong style="color:#2D4A3E;">Nearby golf:</strong> ${h.golf}</p>
+      </div>
+    `;
+  });
+  bodyHtml += `<p style="font-size:0.85rem;color:#8A7F74;">To match your hotel choice to the right tee times and courses, <a href="https://www.mrmallorcagolf.com/contact" style="color:#2D4A3E;">get in touch with Andy</a>.</p>`;
+
+  fetch('/api/send-itinerary', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      email,
+      tool: 'hotel-recommender',
+      subject: 'Your Mallorca golf hotel shortlist',
+      bodyHtml,
+      subscribeNewsletter: newsletter,
+    }),
+  })
+  .then(r => r.json())
+  .then(() => {
+    document.getElementById('emailSuccess').style.display = 'block';
+    document.querySelector('.email-row').style.display = 'none';
+    document.querySelector('.newsletter-opt').style.display = 'none';
+  })
+  .catch(() => {
+    document.getElementById('emailSuccess').textContent = 'Something went wrong. Try emailing andy@mrmallorcagolf.com directly.';
+    document.getElementById('emailSuccess').style.display = 'block';
+  });
+}
+
+/* ===================================================================
+   RESTART
+=================================================================== */
+function restart() {
+  Object.keys(A).forEach(k => A[k] = null);
+  currentStep = 1;
+  document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected'));
+  document.querySelectorAll('.btn-next').forEach(b => b.disabled = true);
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('quizWrap').style.display = 'block';
+  document.getElementById('step1').classList.add('active');
+  document.querySelectorAll('.step').forEach((s,i) => { if(i>0) s.classList.remove('active'); });
+  updateProgress();
+  document.getElementById('emailSuccess').style.display = 'none';
+  document.querySelector('.email-row').style.display = 'flex';
+  document.querySelector('.newsletter-opt').style.display = 'flex';
+  document.getElementById('emailInput').value = '';
+  document.getElementById('newsletterCheck').checked = false;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Init
+updateProgress();
+</script>
+</body>
+</html>

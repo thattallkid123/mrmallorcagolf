@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mallorca Golf Trip Cost Calculator (Mr Mallorca Golf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#15392b;
+    --green-deep:#0e2a1f;
+    --green-soft:#1f4a38;
+    --cream:#f7f2e7;
+    --cream-soft:#efe7d6;
+    --gold:#b59a5f;
+    --gold-soft:#cdb98a;
+    --ink:#22302a;
+    --muted:#6c7a72;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Cormorant Garamond', Georgia, serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:20px 16px 64px;}
+  header.site{
+    background:var(--green);
+    color:var(--cream);
+    padding:28px 16px 32px;
+    text-align:center;
+  }
+  header.site .brand{
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft);
+    margin-bottom:10px;font-family:'Jost', Verdana, sans-serif;
+  }
+  header.site h1{font-size:clamp(24px,5vw,34px);font-weight:600;line-height:1.2;}
+  header.site p{margin-top:10px;color:#d8e2db;font-size:15px;max-width:480px;margin-left:auto;margin-right:auto;}
+
+  /* progress */
+  .progress{display:flex;gap:6px;margin:22px 0 18px;}
+  .progress span{flex:1;height:4px;border-radius:2px;background:#ddd4c0;transition:background .3s;}
+  .progress span.on{background:var(--gold);}
+  .step-label{font-family:'Jost', Verdana, sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+
+  .card{
+    background:#fff;border:1px solid #e6ddc9;border-radius:var(--radius);
+    padding:22px 18px;box-shadow:0 2px 10px rgba(21,57,43,.06);
+  }
+  .card h2{font-size:21px;color:var(--green);margin-bottom:4px;}
+  .card .sub{font-size:14px;color:var(--muted);margin-bottom:18px;}
+
+  .field{margin-bottom:18px;}
+  .field label.flabel{display:block;font-family:'Jost', Verdana, sans-serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:8px;font-weight:bold;}
+
+  .opts{display:flex;flex-wrap:wrap;gap:8px;}
+  .opt{
+    border:1.5px solid #d9cfb8;background:var(--cream);
+    border-radius:10px;padding:10px 14px;cursor:pointer;
+    font-size:14px;font-family:inherit;color:var(--ink);
+    transition:all .15s;flex:1 1 auto;min-width:72px;text-align:center;
+  }
+  .opt small{display:block;font-size:11px;color:var(--muted);margin-top:2px;}
+  .opt.sel{border-color:var(--gold);background:var(--green);color:var(--cream);}
+  .opt.sel small{color:var(--gold-soft);}
+  .opt:hover{border-color:var(--gold);}
+
+  .stepper{display:flex;align-items:center;gap:14px;}
+  .stepper button{
+    width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);
+    background:#fff;color:var(--green);font-size:22px;cursor:pointer;line-height:1;
+  }
+  .stepper button:active{background:var(--cream-soft);}
+  .stepper .val{font-size:24px;color:var(--green);min-width:48px;text-align:center;font-weight:600;}
+  .stepper .unit{font-size:13px;color:var(--muted);}
+
+  .nav{display:flex;gap:10px;margin-top:22px;}
+  .btn{
+    border:none;border-radius:10px;padding:14px 20px;font-size:15px;cursor:pointer;
+    font-family:inherit;transition:opacity .15s;
+  }
+  .btn.primary{background:var(--green);color:var(--cream);flex:1;}
+  .btn.primary:hover{background:var(--green-soft);}
+  .btn.ghost{background:transparent;color:var(--muted);border:1.5px solid #d9cfb8;}
+  .btn.gold{background:var(--gold);color:#fff;flex:1;}
+  .btn.gold:hover{opacity:.9;}
+  .btn:disabled{opacity:.4;cursor:not-allowed;}
+
+  /* results */
+  .hero-est{
+    background:var(--green);color:var(--cream);border-radius:var(--radius);
+    padding:26px 20px;text-align:center;margin-bottom:14px;
+  }
+  .hero-est .lab{font-family:'Jost', Verdana, sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);}
+  .hero-est .big{font-size:clamp(30px,7vw,42px);font-weight:700;margin:8px 0 2px;}
+  .hero-est .per{font-size:15px;color:#cfdad2;}
+  .approx{font-size:12px;color:var(--gold-soft);margin-top:10px;font-style:italic;}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;}
+  .mini{
+    background:#fff;border:1px solid #e6ddc9;border-radius:var(--radius);padding:16px;text-align:center;
+  }
+  .mini .lab{font-family:'Jost', Verdana, sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+  .mini .num{font-size:20px;color:var(--green);font-weight:700;margin-top:4px;}
+
+  .rcard{background:#fff;border:1px solid #e6ddc9;border-radius:var(--radius);padding:20px 18px;margin-bottom:14px;}
+  .rcard h3{font-size:17px;color:var(--green);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+  .rcard h3 .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block;}
+  .rcard ul{list-style:none;}
+  .rcard li{padding:7px 0;border-bottom:1px solid #f1ead9;font-size:14px;display:flex;justify-content:space-between;gap:10px;}
+  .rcard li:last-child{border-bottom:none;}
+  .rcard li .amt{color:var(--green);font-weight:600;white-space:nowrap;}
+  .rcard p{font-size:14px;}
+  .rcard .tag{display:inline-block;background:var(--cream-soft);border:1px solid var(--gold-soft);color:var(--green);border-radius:20px;padding:4px 12px;font-size:13px;margin:3px 4px 3px 0;}
+
+  .bar{height:10px;border-radius:5px;background:var(--cream-soft);overflow:hidden;margin:4px 0 10px;}
+  .bar i{display:block;height:100%;background:var(--gold);border-radius:5px;}
+  .bar-row{font-size:13px;display:flex;justify-content:space-between;color:var(--ink);}
+
+  .cta-box{
+    background:var(--green-deep);color:var(--cream);border-radius:var(--radius);
+    padding:24px 20px;margin-top:8px;
+  }
+  .cta-box h3{font-size:19px;margin-bottom:6px;color:#fff;}
+  .cta-box p{font-size:14px;color:#cfdad2;margin-bottom:16px;}
+  .cta-box .btn{width:100%;margin-bottom:10px;display:block;text-align:center;text-decoration:none;}
+  .cta-box a.link{display:block;text-align:center;color:var(--gold-soft);font-size:14px;margin-top:6px;}
+  .disclaimer{font-size:12px;color:var(--muted);text-align:center;margin-top:18px;font-style:italic;}
+
+  .hidden{display:none;}
+  @media(min-width:560px){
+    .opts .opt{flex:0 1 auto;}
+  }
+</style>
+</head>
+<body>
+
+<nav style="background:var(--green-deep);padding:12px 20px;display:flex;align-items:center;">
+  <img src="../MMG_Logo_White_Transparent.png" alt="Mr Mallorca Golf" style="height:36px;width:auto;">
+</nav>
+<header class="site">
+  <div class="brand">Mr Mallorca Golf</div>
+  <h1>Mallorca Golf Trip Cost Calculator</h1>
+  <p>Build a realistic planning estimate for your group in under a minute. Andy can then refine it into a real itinerary.</p>
+</header>
+
+<div class="wrap">
+  <div class="progress" id="progress"></div>
+
+  <!-- ============ STEP 1: TRIP BASICS ============ -->
+  <section class="card step" id="step1">
+    <div class="step-label">Step 1 of 4</div>
+    <h2>Your trip basics</h2>
+    <p class="sub">Tell us about the group and how much golf you want.</p>
+
+    <div class="field">
+      <label class="flabel">Trip length (days)</label>
+      <div class="stepper" data-key="days" data-min="1" data-max="7">
+        <button type="button" class="dec">−</button>
+        <span class="val">4</span><span class="unit">days</span>
+        <button type="button" class="inc">+</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="flabel">Number of golfers</label>
+      <div class="stepper" data-key="golfers" data-min="1" data-max="8">
+        <button type="button" class="dec">−</button>
+        <span class="val">2</span><span class="unit">golfers</span>
+        <button type="button" class="inc">+</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="flabel">Rounds of golf</label>
+      <div class="stepper" data-key="rounds" data-min="1" data-max="6">
+        <button type="button" class="dec">−</button>
+        <span class="val">3</span><span class="unit">rounds</span>
+        <button type="button" class="inc">+</button>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button class="btn primary" onclick="goTo(2)">Continue</button>
+    </div>
+  </section>
+
+  <!-- ============ STEP 2: GOLF STYLE ============ -->
+  <section class="card step hidden" id="step2">
+    <div class="step-label">Step 2 of 4</div>
+    <h2>Your golf style</h2>
+    <p class="sub">This shapes the course mix we suggest.</p>
+
+    <div class="field">
+      <label class="flabel">Budget style</label>
+      <div class="opts" data-key="budget">
+        <button class="opt" data-val="value">Value<small>Smart spending</small></button>
+        <button class="opt sel" data-val="balanced">Balanced<small>Quality &amp; value</small></button>
+        <button class="opt" data-val="premium">Premium<small>Top-tier courses</small></button>
+        <button class="opt" data-val="luxury">Luxury<small>Bucket-list trip</small></button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="flabel">Course preference</label>
+      <div class="opts" data-key="preference">
+        <button class="opt" data-val="scenic">Scenic</button>
+        <button class="opt" data-val="famous">Famous</button>
+        <button class="opt" data-val="challenging">Challenging</button>
+        <button class="opt" data-val="relaxed">Relaxed</button>
+        <button class="opt" data-val="near">Near hotel</button>
+        <button class="opt sel" data-val="none">No preference</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="flabel">Which area of Mallorca?</label>
+      <div class="opts" data-key="area">
+        <button class="opt" data-val="southwest">Southwest</button>
+        <button class="opt" data-val="palma">Palma</button>
+        <button class="opt" data-val="north">North</button>
+        <button class="opt" data-val="east">East</button>
+        <button class="opt" data-val="south">South</button>
+        <button class="opt sel" data-val="flexible">Flexible</button>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button class="btn ghost" onclick="goTo(1)">Back</button>
+      <button class="btn primary" onclick="goTo(3)">Continue</button>
+    </div>
+  </section>
+
+  <!-- ============ STEP 3: EXTRAS ============ -->
+  <section class="card step hidden" id="step3">
+    <div class="step-label">Step 3 of 4</div>
+    <h2>Extras &amp; off-course</h2>
+    <p class="sub">Buggies, clubs, transport, where you stay and eat.</p>
+
+    <div class="field">
+      <label class="flabel">Buggy?</label>
+      <div class="opts" data-key="buggy">
+        <button class="opt sel" data-val="yes">Yes</button>
+        <button class="opt" data-val="some">Some rounds</button>
+        <button class="opt" data-val="no">No</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="flabel">Club hire?</label>
+      <div class="opts" data-key="clubs">
+        <button class="opt" data-val="yes">Yes</button>
+        <button class="opt sel" data-val="no">No, bringing our own</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="flabel">Transport help (transfers / driver)?</label>
+      <div class="opts" data-key="transport">
+        <button class="opt sel" data-val="yes">Yes</button>
+        <button class="opt" data-val="no">No, we'll self-drive</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="flabel">Accommodation style</label>
+      <div class="opts" data-key="accommodation">
+        <button class="opt" data-val="self">Self-arranged</button>
+        <button class="opt" data-val="3star">3-star</button>
+        <button class="opt sel" data-val="4star">4-star</button>
+        <button class="opt" data-val="5star">5-star</button>
+        <button class="opt" data-val="villa">Luxury villa</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="flabel">Restaurant level</label>
+      <div class="opts" data-key="dining">
+        <button class="opt" data-val="casual">Casual</button>
+        <button class="opt sel" data-val="local">Good local</button>
+        <button class="opt" data-val="premium">Premium</button>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button class="btn ghost" onclick="goTo(2)">Back</button>
+      <button class="btn gold" onclick="showResults()">See my estimate</button>
+    </div>
+  </section>
+
+  <!-- ============ STEP 4: RESULTS ============ -->
+  <section class="step hidden" id="step4">
+    <div class="step-label">Step 4 of 4: Your planning estimate</div>
+
+    <div class="hero-est">
+      <div class="lab">Estimated total trip cost</div>
+      <div class="big" id="r-total">€0 – €0</div>
+      <div class="per" id="r-summary"></div>
+      <div class="approx">Approximate planning estimate, not a quote.</div>
+    </div>
+
+    <div class="grid2">
+      <div class="mini"><div class="lab">Per golfer</div><div class="num" id="r-pergolfer"></div></div>
+      <div class="mini"><div class="lab">Golf only</div><div class="num" id="r-golfonly"></div></div>
+      <div class="mini"><div class="lab">Full trip</div><div class="num" id="r-fulltrip"></div></div>
+      <div class="mini"><div class="lab">Golf cost / round / golfer</div><div class="num" id="r-perround"></div></div>
+    </div>
+
+    <div class="rcard">
+      <h3><span class="dot"></span>Suggested course mix</h3>
+      <p id="r-mix-note" style="margin-bottom:10px;color:var(--muted);"></p>
+      <div id="r-courses"></div>
+    </div>
+
+    <div class="rcard">
+      <h3><span class="dot"></span>Where your budget is going</h3>
+      <div id="r-breakdown"></div>
+    </div>
+
+    <div class="rcard">
+      <h3><span class="dot"></span>Ways to reduce cost</h3>
+      <ul id="r-save"></ul>
+    </div>
+
+    <div class="rcard">
+      <h3><span class="dot"></span>When it's worth upgrading</h3>
+      <ul id="r-upgrade"></ul>
+    </div>
+
+    <div class="rcard" style="border-color:var(--gold);">
+      <h3><span class="dot"></span>Recommended Andy package</h3>
+      <p id="r-package"></p>
+      <p style="margin-top:8px;font-size:13px;color:var(--muted);">Play With A Pro and trip planning support are priced per group. Andy will confirm options when he sees your plan. <!-- PLACEHOLDER: PWAP/planning fee range defined in COSTS.proPackage --></p>
+    </div>
+
+    <div class="cta-box">
+      <h3>Make this estimate real</h3>
+      <p>This is a planning estimate. Andy can refine the courses, timing, transport, and bookings around your group.</p>
+      <div id="email-capture" style="display:flex;gap:8px;margin-bottom:6px;flex-wrap:wrap;">
+        <input type="email" id="email-input" placeholder="you@email.com" aria-label="Email address"
+               style="flex:1 1 160px;min-width:0;border:none;border-radius:10px;padding:14px 16px;font-size:15px;font-family:inherit;">
+        <button class="btn gold" id="email-btn" style="flex:0 0 auto;" onclick="emailEstimate()">Email this estimate</button>
+      </div>
+      <label id="newsletter-opt" style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(247,244,239,0.6);cursor:pointer;margin-bottom:10px;">
+        <input type="checkbox" id="newsletter-check" style="accent-color:#B8973C;">
+        Also send me Andy's course tips and seasonal recommendations
+      </label>
+      <p id="email-success" style="display:none;font-size:13px;color:var(--gold-soft);margin-bottom:10px;">&#10003; Done. Your estimate is on its way.</p>
+      <p id="email-error" style="display:none;font-size:13px;color:#e8b4a8;margin-bottom:10px;">That didn't go through. Check the address and try again.</p>
+      <a class="btn primary" style="background:var(--green-soft);" href="https://www.mrmallorcagolf.com/contact" target="_blank" rel="noopener" onclick="track('booking_enquiry_click')">Ask Andy to refine this trip</a>
+      <a class="btn primary" style="background:var(--green-soft);" href="https://www.mrmallorcagolf.com/play-with-a-pro" target="_blank" rel="noopener" onclick="track('booking_enquiry_click')">Book a golf day with Andy</a>
+      <a class="link" href="https://www.mrmallorcagolf.com/guides" target="_blank" rel="noopener">Read the full Mallorca golf course guides →</a>
+    </div>
+
+    <div class="nav">
+      <button class="btn ghost" style="flex:1" onclick="goTo(3)">Adjust my answers</button>
+      <button class="btn ghost" style="flex:1" onclick="restart()">Start over</button>
+    </div>
+
+    <div style="background:#f4f1eb;border-radius:12px;padding:18px 20px;margin:20px 0;text-align:center">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:#8a7f74;margin-bottom:12px">More planning tools</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
+        <a href="../course-selector/" style="display:inline-block;padding:10px 18px;font-size:12px;border:1px solid #2d4a3e;color:#2d4a3e;text-decoration:none;border-radius:6px">Find your courses</a>
+        <a href="../hotel-recommender.html" style="display:inline-block;padding:10px 18px;font-size:12px;border:1px solid #2d4a3e;color:#2d4a3e;text-decoration:none;border-radius:6px">Find hotels</a>
+        <a href="../golf-day-builder/" style="display:inline-block;padding:10px 18px;font-size:12px;border:1px solid #2d4a3e;color:#2d4a3e;text-decoration:none;border-radius:6px">Build a golf day</a>
+      </div>
+    </div>
+    <p class="disclaimer">Green fees, hotel rates, and dining prices in Mallorca vary by season and availability. All figures here are approximate ranges for planning only.</p>
+  </section>
+</div>
+
+<script>
+/* =====================================================================
+   COST DATA) real 2026 Mallorca pricing ranges (EUR).
+   Source: MMG_COURSE_PRICING_MASTER (May 2026) + market research.
+   [lo, hi] = low season to peak season per unit.
+   Buggies and clubs averaged across public courses.
+   ===================================================================== */
+const COSTS = {
+  // Green fee per golfer per round, by budget style
+  // Source: App pricing tiers from pricing master
+  greenFees: {
+    value:    [55, 85],     // Pollença, Maioris, Capdepera, Son Termes
+    balanced: [74, 126],    // Bendinat, Canyamel, Pula, Santa Ponsa, Vall d'Or, Son Servera
+    premium:  [80, 165],    // Son Gual, T Golf Palma, Son Vida, Andratx, Son Quint
+    luxury:   [96, 220]     // Alcanada, Son Muntaner (up to €259 peak)
+  },
+  // Buggy cost per golfer per round (shared buggy, averaged from pricing master)
+  // Ranges EUR 25-49 across courses; using EUR 30-42 as typical
+  buggyPerRound: [30, 42],
+  // Club hire per golfer per round (EUR 18-40 range from master)
+  clubHirePerRound: [25, 40],
+  // Transport help per GROUP per day (assumed driver/transfer service)
+  transportPerDay: [80, 140],
+  // Restaurants per golfer per day (based on Mallorca dining cost levels)
+  dining: {
+    casual:  [35, 55],      // tapas, casual beach
+    local:   [55, 85],      // good local spots, casual dining
+    premium: [85, 150]      // nice restaurant, seaside
+  },
+  // Accommodation per golfer per night (villa = per-golfer share, typically 4-6 people)
+  // Realistic Mallorca hotel and villa market rates
+  accommodation: {
+    self:    [0, 0],        // user's own booking
+    "3star": [70, 130],     // typical 3-star hotel per person
+    "4star": [120, 200],    // 4-star hotel per person
+    "5star": [200, 350],    // luxury hotel per person
+    villa:   [180, 350]     // villa cost / shared golfers (usually 4-6 people)
+  },
+  // Optional Play With A Pro / trip planning fee per group
+  // Typical PWAP + planning from Andy's offerings
+  proPackage: [200, 400]
+};
+
+/* Course recommendations by budget style */
+const COURSE_MIX = {
+  value:    ["Golf Pollença", "Golf Maioris", "Son Antem East", "Capdepera Golf"],
+  balanced: ["Golf de Bendinat", "Canyamel Golf", "Pula Golf", "Golf Son Antem West", "Vall d'Or Golf", "Son Servera"],
+  premium:  ["Son Gual", "Son Vida", "T Golf Palma", "T Golf Calvià (Poniente)", "Golf de Andratx"],
+  luxury:   ["Club de Golf Alcanada", "Son Muntaner", "T Golf Calvià (Poniente)"]
+};
+
+const PREF_NOTES = {
+  scenic:      "You asked for scenic. Andy will weight the mix toward courses with the best views and settings.",
+  famous:      "You asked for famous names. Andy will prioritise the island's best-known courses in this tier.",
+  challenging: "You asked for a challenge. Andy will pick the courses in this tier that ask the most questions of your game.",
+  relaxed:     "You asked for relaxed golf. Andy will favour friendlier layouts and gentler pacing.",
+  near:        "You want courses near your hotel. Once Andy knows where you're staying, he'll tighten the mix around it.",
+  none:        "A balanced mix from this tier. Andy will tailor it once he knows your group."
+};
+
+const PACKAGES = {
+  value:    "Course Picks &amp; Booking Help. Andy confirms your course mix, books tee times at the right rates, and shares his course notes for each round.",
+  balanced: "Trip Planning + One Coached Round. Andy plans the trip end to end and joins you for a Play With A Pro round at one of your courses.",
+  premium:  "Signature Golf Day + Full Trip Planning. A hosted Signature Day with Andy plus full planning of courses, tee times, and transport.",
+  luxury:   "Full Concierge Trip. Every round, transfer, table, and tee time arranged, with Andy hosting your marquee golf day."
+};
+
+/* ============================ STATE ============================ */
+const state = {
+  days: 4, golfers: 2, rounds: 3,
+  budget: "balanced", preference: "none", area: "flexible",
+  buggy: "yes", clubs: "no", transport: "yes",
+  accommodation: "4star", dining: "local"
+};
+
+let started = false;
+let currentStep = 1;
+
+/* ============================ ANALYTICS ============================ */
+/* ANALYTICS EVENTS (wire to GA4 gtag('event', ...) in production):
+   - calculator_start          : first interaction with step 1
+   - budget_selected           : budget style chosen (param: budget)
+   - cost_estimate_generated   : results screen shown (params: budget, total_mid)
+   - email_estimate            : "Email this estimate" clicked
+   - booking_enquiry_click     : enquiry/booking CTA clicked
+*/
+function track(event, params){
+  console.log("[analytics]", event, params || {});
+  // PLACEHOLDER: replace with -> if (window.gtag) gtag('event', event, params);
+}
+
+/* ============================ UI WIRING ============================ */
+function renderProgress(){
+  const p = document.getElementById("progress");
+  p.innerHTML = "";
+  for (let i=1;i<=4;i++){
+    const s = document.createElement("span");
+    if (i<=currentStep) s.classList.add("on");
+    p.appendChild(s);
+  }
+}
+
+function goTo(step){
+  document.querySelectorAll(".step").forEach(el=>el.classList.add("hidden"));
+  document.getElementById("step"+step).classList.remove("hidden");
+  currentStep = step;
+  renderProgress();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+function restart(){ goTo(1); }
+
+function markStart(){
+  if (!started){ started = true; track("calculator_start"); }
+}
+
+// steppers
+document.querySelectorAll(".stepper").forEach(st=>{
+  const key = st.dataset.key, min = +st.dataset.min, max = +st.dataset.max;
+  const val = st.querySelector(".val");
+  val.textContent = state[key];
+  st.querySelector(".dec").addEventListener("click", ()=>{
+    markStart();
+    state[key] = Math.max(min, state[key]-1);
+    val.textContent = state[key];
+  });
+  st.querySelector(".inc").addEventListener("click", ()=>{
+    markStart();
+    state[key] = Math.min(max, state[key]+1);
+    val.textContent = state[key];
+  });
+});
+
+// option groups
+document.querySelectorAll(".opts").forEach(group=>{
+  const key = group.dataset.key;
+  group.querySelectorAll(".opt").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      markStart();
+      group.querySelectorAll(".opt").forEach(b=>b.classList.remove("sel"));
+      btn.classList.add("sel");
+      state[key] = btn.dataset.val;
+      if (key === "budget") track("budget_selected", { budget: state.budget });
+    });
+  });
+});
+
+/* ============================ CALCULATION ============================ */
+function range(perUnit, units){ return [perUnit[0]*units, perUnit[1]*units]; }
+function addR(a,b){ return [a[0]+b[0], a[1]+b[1]]; }
+function fmt(n){ return "€" + Math.round(n).toLocaleString("en-GB"); }
+function fmtR(r){ return fmt(r[0]) + " – " + fmt(r[1]); }
+function mid(r){ return (r[0]+r[1])/2; }
+
+function calculate(){
+  const s = state;
+  // rounds capped at sensible max vs days handled by inputs; effective buggy rounds:
+  const buggyRounds = s.buggy === "yes" ? s.rounds : s.buggy === "some" ? Math.ceil(s.rounds/2) : 0;
+  const nights = Math.max(0, s.days - 1);
+
+  const greenFees = range(COSTS.greenFees[s.budget], s.rounds * s.golfers);
+  const buggy     = range(COSTS.buggyPerRound, buggyRounds * s.golfers);
+  const clubs     = s.clubs === "yes" ? range(COSTS.clubHirePerRound, s.rounds * s.golfers) : [0,0];
+  const transport = s.transport === "yes" ? range(COSTS.transportPerDay, s.days) : [0,0];
+  const dining    = range(COSTS.dining[s.dining], s.days * s.golfers);
+  const accom     = range(COSTS.accommodation[s.accommodation], nights * s.golfers);
+
+  const golfOnly  = addR(addR(greenFees, buggy), clubs);
+  let total = addR(addR(addR(golfOnly, transport), dining), accom);
+
+  return { greenFees, buggy, clubs, transport, dining, accom, golfOnly, total,
+           perGolfer: [total[0]/s.golfers, total[1]/s.golfers],
+           perRound:  [golfOnly[0]/(s.rounds*s.golfers), golfOnly[1]/(s.rounds*s.golfers)] };
+}
+
+/* ============================ RESULTS ============================ */
+function showResults(){
+  const r = calculate();
+  const s = state;
+
+  document.getElementById("r-total").textContent = fmtR(r.total);
+  document.getElementById("r-summary").textContent =
+    `${s.golfers} golfer${s.golfers>1?"s":""} · ${s.days} day${s.days>1?"s":""} · ${s.rounds} round${s.rounds>1?"s":""} · ${s.budget} style`;
+  document.getElementById("r-pergolfer").textContent = fmtR(r.perGolfer);
+  document.getElementById("r-golfonly").textContent  = fmtR(r.golfOnly);
+  document.getElementById("r-fulltrip").textContent  = fmtR(r.total);
+  document.getElementById("r-perround").textContent  = fmtR(r.perRound);
+
+  // course mix
+  const courses = COURSE_MIX[s.budget].slice(0, Math.min(s.rounds, COURSE_MIX[s.budget].length));
+  document.getElementById("r-courses").innerHTML =
+    courses.map(c=>`<span class="tag">${c}</span>`).join("") +
+    (s.rounds > courses.length ? `<span class="tag">+ repeat a favourite</span>` : "");
+  let note = PREF_NOTES[s.preference];
+  if (s.area !== "flexible"){
+    const areaName = {southwest:"the Southwest",palma:"the Palma area",north:"the North",east:"the East",south:"the South"}[s.area] || "your chosen area";
+    note += ` Since you're based around ${areaName}, Andy will adjust for drive times.`;
+  }
+  document.getElementById("r-mix-note").textContent = note;
+
+  // breakdown bars
+  const parts = [
+    ["Green fees", r.greenFees], ["Accommodation", r.accom], ["Restaurants", r.dining],
+    ["Buggies", r.buggy], ["Club hire", r.clubs], ["Transport", r.transport]
+  ].filter(p=>mid(p[1])>0).sort((a,b)=>mid(b[1])-mid(a[1]));
+  const totalMid = mid(r.total) || 1;
+  document.getElementById("r-breakdown").innerHTML = parts.map(([name, rng])=>{
+    const pct = Math.round(mid(rng)/totalMid*100);
+    return `<div class="bar-row"><span>${name}</span><span>${fmtR(rng)} · ~${pct}%</span></div>
+            <div class="bar"><i style="width:${pct}%"></i></div>`;
+  }).join("");
+
+  // ways to save
+  const save = [];
+  if (s.budget !== "value") save.push("Mix in one or two value-tier rounds (Son Servera, Maioris, Capdepera). Often the biggest single saving.");
+  save.push("Play afternoon or twilight tee times. Many courses discount later slots.");
+  if (s.buggy === "yes") save.push("Walk the flatter courses and save buggies for the hilly ones.");
+  if (s.clubs === "yes") save.push("Bringing your own clubs usually beats hiring for 3+ rounds. Check your airline's bag fee.");
+  if (s.accommodation === "5star" || s.accommodation === "villa") save.push("A good 4-star near your courses can free up budget for an extra round.");
+  if (s.dining === "premium") save.push("Save premium dining for one or two standout nights and go good-local the rest.");
+  save.push("Travel outside peak spring/autumn weeks, green fees and hotels both drop.");
+  document.getElementById("r-save").innerHTML = save.slice(0,5).map(t=>`<li>${t}</li>`).join("");
+
+  // when to upgrade
+  const up = [];
+  if (s.budget === "value" || s.budget === "balanced") up.push("If this is a once-in-a-while trip, one bucket-list round (Son Gual, Alcanada, or Andratx) is usually worth the stretch.");
+  if (s.buggy === "no") up.push("Several Mallorca courses are seriously hilly. A buggy on those days protects your energy and your score.");
+  if (s.transport === "no") up.push("With " + s.golfers + " golfer" + (s.golfers>1?"s":"") + " and clubs, arranged transport often costs little more than taxis and removes all the friction.");
+  up.push("A Play With A Pro round with Andy turns one round into course strategy you'll use all trip.");
+  if (s.dining !== "premium") up.push("One premium dinner makes a strong final-night centrepiece. Andy knows the tables worth booking.");
+  document.getElementById("r-upgrade").innerHTML = up.slice(0,4).map(t=>`<li>${t}</li>`).join("");
+
+  // package
+  document.getElementById("r-package").innerHTML = PACKAGES[s.budget];
+
+  track("cost_estimate_generated", { budget: s.budget, total_mid: Math.round(totalMid), golfers: s.golfers, rounds: s.rounds });
+  goTo(4);
+}
+
+renderProgress();
+</script>
+
+<script>
+  async function emailEstimate(){
+    const input = document.getElementById('email-input');
+    const email = input.value.trim();
+    if (!email || !email.includes('@')){ input.focus(); return; }
+    const btn = document.getElementById('email-btn');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    track('email_estimate', { budget: state.budget, golfers: state.golfers });
+
+    const r = calculate();
+    const s = state;
+    const row = (label, val) => `<tr><td style="padding:8px 0;font-family:'Jost',Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:#8A7F74;border-bottom:1px solid #EDE9E1;">${label}</td><td style="padding:8px 0;font-family:Georgia,serif;font-size:15px;color:#1A1916;text-align:right;border-bottom:1px solid #EDE9E1;">${val}</td></tr>`;
+    const bodyHtml = `
+      <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Here is your planning estimate for a ${s.days}-day trip with ${s.golfers} golfer${s.golfers>1?'s':''}, ${s.rounds} round${s.rounds>1?'s':''} of golf.</p>
+      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+        ${row('Green fees', fmtR(r.greenFees))}
+        ${s.buggy!=='no' ? row('Buggy hire', fmtR(r.buggy)) : ''}
+        ${s.clubs==='yes' ? row('Club hire', fmtR(r.clubs)) : ''}
+        ${s.transport==='yes' ? row('Transport', fmtR(r.transport)) : ''}
+        ${row('Dining', fmtR(r.dining))}
+        ${row('Accommodation', fmtR(r.accom))}
+      </table>
+      <div style="background:#2D4A3E;border-radius:4px;padding:20px 24px;margin-bottom:20px;">
+        <p style="margin:0 0 4px;font-family:'Jost',Arial,sans-serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,244,239,0.6);">Total estimate</p>
+        <p style="margin:0;font-family:Georgia,serif;font-size:26px;color:#F7F4EF;">${fmtR(r.total)}</p>
+        <p style="margin:6px 0 0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:rgba(247,244,239,0.6);">${fmtR(r.perGolfer)} per golfer</p>
+      </div>
+      <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8A7F74;">These are planning estimates. Tee times, bookings, and exact pricing are confirmed when you book with Andy.</p>`;
+
+    const subscribe = document.getElementById('newsletter-check')?.checked || false;
+
+    try {
+      const res = await fetch('/api/send-itinerary', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({
+          email,
+          tool: 'golf-cost-calculator',
+          subject: 'Your Mallorca golf trip cost estimate',
+          bodyHtml,
+          subscribeNewsletter: subscribe,
+        }),
+      });
+      const ok = res.ok;
+      btn.disabled = false; btn.textContent = 'Email this estimate';
+      document.getElementById('email-success').style.display = ok ? 'block' : 'none';
+      document.getElementById('email-error').style.display = ok ? 'none' : 'block';
+      if (ok) {
+        document.getElementById('email-capture').style.display = 'none';
+        document.getElementById('newsletter-opt').style.display = 'none';
+      }
+    } catch(e) {
+      btn.disabled = false; btn.textContent = 'Email this estimate';
+      document.getElementById('email-error').style.display = 'block';
+    }
+  }
+</script>
+</body>
+</html>

@@ -2116,7 +2116,7 @@ body {
 
 /* ─── CONTACT PAGE ───────────────────────────────────────── */
 .contact-wrap { margin-top: var(--nav-h); display: grid; grid-template-columns: 1fr 460px; min-height: calc(100vh - var(--nav-h)); }
-.contact-left { background: var(--deep); padding: 70px 60px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; background-image: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.55) 50%, rgba(26,25,22,0.8) 100%), url(/images/contact.webp); background-size: cover; background-position: center 30%; }
+.contact-left { background: var(--deep); padding: 70px 60px; display: flex; flex-direction: column; justify-content: flex-start; gap: 2.5rem; position: relative; overflow: hidden; background-image: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.55) 50%, rgba(26,25,22,0.8) 100%), url(/images/contact.webp); background-size: cover; background-position: center 30%; }
 .contact-left::before { content: 'M'; font-family: var(--font-serif); font-size: 30rem; font-weight: 400; color: rgba(255,255,255,0.02); position: absolute; right: -60px; bottom: -80px; line-height: 1; pointer-events: none; }
 .contact-left__eyebrow { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.72); margin-bottom: 1.5rem; }
 .contact-left__title { font-size: clamp(2rem,4vw,3.2rem); color: #fff; line-height: 1.08; margin-bottom: 1.5rem; }
@@ -2130,7 +2130,7 @@ body {
 .contact-detail__value { font-size: 0.9rem; font-weight: 300; color: rgba(255,255,255,0.84); }
 .contact-detail__value a { color: var(--gold-light); text-decoration: none; }
 /* Contact cards — redesigned info section */
-.contact-cards { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 12px; position: relative; z-index: 1; }
+.contact-cards { display: flex; flex-direction: column; gap: 12px; position: relative; z-index: 1; }
 .contact-card { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 22px; text-decoration: none; color: inherit; transition: background 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury); cursor: pointer; }
 .contact-card:hover { background: rgba(255,255,255,0.10); border-color: rgba(255,255,255,0.2); transform: translateY(-2px); }
 .contact-card--whatsapp:hover { border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.07); }
