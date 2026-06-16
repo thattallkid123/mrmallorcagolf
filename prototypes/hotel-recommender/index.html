@@ -843,7 +843,8 @@
    DATA
 =================================================================== */
 const HOTELS = [
-  /* ——— SOUTHWEST ——— */
+
+  /* ===================== SOUTHWEST ===================== */
   {
     id:'arabella-son-vida', name:'Arabella Golf Hotel Son Vida',
     subname:'Sheraton Collection',
@@ -1015,7 +1016,111 @@ const HOTELS = [
     travelTime:'25-35 min from Palma airport'
   },
 
-  /* ——— NORTH ——— */
+  /* ——— SW additions ——— */
+  {
+    id:'son-net', name:'Son Net',
+    subname:'Puigpunyent',
+    area:'southwest', luxury:4, type:'hotel',
+    vibes:['boutique','countryside'],
+    styles:['boutique','countryside'],
+    groups:['couple','solo','friends'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:true, golfProximity:2,
+    priority:['privacy','spa','dining'],
+    pills:['Historic finca','17th century','Infinity pool'],
+    budgets:['ultra','flexible'],
+    why:'Seventeenth-century stone finca in the Tramuntana foothills, 20 minutes from Golf de Andratx. Infinity pool, old olive groves, completely private feel.',
+    andy:'One of the most beautiful buildings on the island. A proper finca escape that still puts you within reach of the Southwest courses.',
+    golf:'Golf de Andratx 20 min. T Golf Calvià 25 min. Santa Ponsa cluster 30 min.',
+    travelTime:'25 min from Palma airport'
+  },
+  {
+    id:'valparaiso-palace', name:'Valparaiso Palace',
+    subname:'Son Armadans, Palma',
+    area:'southwest', luxury:3, type:'hotel',
+    vibes:['resort','classic'],
+    styles:['resort','classic'],
+    groups:['friends','family','couple','corporate'],
+    sizes:['3-5','6-9','10+'],
+    beach:false, spa:true, golfProximity:2,
+    priority:['spa','golf-focused'],
+    pills:['Large resort','Conference facilities','Palma views'],
+    budgets:['mid','premium','flexible'],
+    why:'Large four-star on the hill above Palma with panoramic bay views and a full spa. Practical for bigger groups and corporate trips that need meeting space alongside golf.',
+    andy:'Not the most glamorous but very capable for groups. Good base for multiple course combinations across the Southwest and Palma area.',
+    golf:'Son Vida / Son Quint / Son Muntaner 10 min. Real Golf de Bendinat 15 min. T Golf Calvià 20 min.',
+    travelTime:'15 min from Palma airport'
+  },
+  {
+    id:'melia-calvia-beach', name:'Meliá Calviá Beach',
+    subname:'Santa Ponsa',
+    area:'southwest', luxury:3, type:'hotel',
+    vibes:['resort'],
+    styles:['resort'],
+    groups:['friends','family','couple'],
+    sizes:['3-5','6-9','10+'],
+    beach:true, spa:true, golfProximity:3,
+    priority:['beach','spa','golf-focused'],
+    pills:['Beach resort','Santa Ponsa','Golf nearby'],
+    budgets:['premium','flexible'],
+    why:'Large beach resort directly in Santa Ponsa, a short walk from Golf Santa Ponsa 1. Good facilities for bigger groups who want beach and multiple courses.',
+    andy:'The Santa Ponsa courses are all around you here. Golf Santa Ponsa 1 is a 10-minute walk. A solid group base without the boutique price.',
+    golf:'Golf Santa Ponsa 1 walking distance. Golf Santa Ponsa 2 and 3 nearby. T Golf Calvià 15 min. Golf de Andratx 20 min.',
+    travelTime:'25 min from Palma airport'
+  },
+  {
+    id:'barcelo-illetas', name:'Barceló Illetas Albatros',
+    subname:'Illetas',
+    area:'southwest', luxury:2, type:'hotel',
+    vibes:['resort','classic'],
+    styles:['classic','resort'],
+    groups:['couple','friends'],
+    sizes:['1-2','3-5'],
+    beach:true, spa:false, golfProximity:2,
+    priority:['beach'],
+    pills:['Sea views','Adults preferred','Value'],
+    budgets:['mid','flexible'],
+    why:'Well-priced four-star in Illetas with good sea views and direct access to the water. Bendinat golf 10 minutes. A sensible mid-range option in an expensive area.',
+    andy:'Good value for the location. Illetas is a step up from Palma Nova without the five-star prices of Gran Meliá.',
+    golf:'Real Golf de Bendinat 10 min. T Golf Calvià 15 min. Son Vida 18 min.',
+    travelTime:'12 min from Palma airport'
+  },
+  {
+    id:'portals-hills', name:'Portals Hills Boutique Hotel',
+    subname:'Portals Nous',
+    area:'southwest', luxury:3, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:true, golfProximity:2,
+    priority:['privacy','spa'],
+    pills:['Adults only','Hilltop','Infinity pool'],
+    budgets:['premium','flexible'],
+    why:'Adults-only boutique perched above Portals Nous with an infinity pool looking out to sea. Intimate and calm, 10 minutes from both golf and Puerto Portals marina.',
+    andy:'A quieter alternative to the Donna Portals for couples who want privacy over scene. T Golf Calvià is 10 minutes.',
+    golf:'T Golf Calvià 10 min. Real Golf de Bendinat 12 min. Son Vida 15 min.',
+    travelTime:'15 min from Palma airport'
+  },
+  {
+    id:'son-antem-marriott', name:'Marriott Son Antem Golf Resort',
+    subname:'Llucmajor',
+    area:'southwest', luxury:2, type:'hotel',
+    vibes:['resort','golf-focused'],
+    styles:['resort','classic'],
+    groups:['friends','couple','corporate'],
+    sizes:['3-5','6-9','10+'],
+    beach:false, spa:true, golfProximity:3,
+    priority:['golf-focused','spa'],
+    pills:['On course','36 holes','Resort facilities'],
+    budgets:['mid','premium','flexible'],
+    why:'Marriott resort sitting directly between Son Antem East and West — 36 holes on the doorstep. Good corporate golf facilities and reliable four-star comfort.',
+    andy:'Not the most exciting hotel on the island but the most practical if Son Antem is on the schedule. Golf Maioris is 10 minutes and Son Gual 15.',
+    golf:'Son Antem East and West on site. Golf Maioris 10 min. Son Gual 15 min. Finca Serena area accessible.',
+    travelTime:'20 min from Palma airport'
+  },
+
+  /* ===================== NORTH ===================== */
   {
     id:'four-seasons-formentor', name:'Four Seasons Resort Mallorca at Formentor',
     subname:'Formentor Peninsula',
@@ -1051,6 +1156,23 @@ const HOTELS = [
     travelTime:'50 min from Palma airport'
   },
   {
+    id:'son-brull', name:'Son Brull Hotel & Spa',
+    subname:'Near Pollença',
+    area:'north', luxury:4, type:'hotel',
+    vibes:['boutique','countryside'],
+    styles:['boutique','countryside'],
+    groups:['couple','solo','friends'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:true, golfProximity:2,
+    priority:['spa','privacy','dining'],
+    pills:['Boutique five-star','Serious spa','360 wine'],
+    budgets:['ultra','flexible'],
+    why:'Eighteenth-century monastery converted into a serious boutique five-star. The spa is one of the best on the island and 360 restaurant uses the estate\'s own produce.',
+    andy:'A strong argument for staying in the north even if you want serious golf. Alcanada 15 minutes. Quiet, high-quality, genuinely Mallorcan.',
+    golf:'Club de Golf Alcanada 15 min. Golf Pollença 5 min.',
+    travelTime:'50 min from Palma airport'
+  },
+  {
     id:'illa-dor', name:"Illa d'Or",
     subname:'Port de Pollença',
     area:'north', luxury:2, type:'hotel',
@@ -1066,6 +1188,57 @@ const HOTELS = [
     andy:'The most established hotel right on the bay. 23 rooms. Good food.',
     golf:'Club de Golf Alcanada 20 min. Golf Pollença 10 min (9 holes).',
     travelTime:'50 min from Palma airport'
+  },
+  {
+    id:'can-cuarassa', name:'Can Cuarassa',
+    subname:'Port de Pollença',
+    area:'north', luxury:3, type:'hotel',
+    vibes:['boutique','classic'],
+    styles:['boutique','classic'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:true, spa:false, golfProximity:2,
+    priority:['beach','privacy'],
+    pills:['Boutique','Private gardens','Beachfront'],
+    budgets:['premium','flexible'],
+    why:'Small boutique hotel with private gardens running down to the beach at Port de Pollença. Good rooms, quiet atmosphere, strong local food scene nearby.',
+    andy:'A level up from Illa d\'Or in terms of character. Alcanada 20 minutes, Pollença old town 10. A genuinely relaxed north base.',
+    golf:'Club de Golf Alcanada 20 min. Golf Pollença 8 min.',
+    travelTime:'50 min from Palma airport'
+  },
+  {
+    id:'hotel-sis-pins', name:'Hotel Sis Pins',
+    subname:'Port de Pollença',
+    area:'north', luxury:1, type:'hotel',
+    vibes:['classic'],
+    styles:['classic'],
+    groups:['couple','friends','solo'],
+    sizes:['1-2','3-5'],
+    beach:true, spa:false, golfProximity:2,
+    priority:['beach'],
+    pills:['Budget-friendly','Bay views','Simple and clean'],
+    budgets:['mid','flexible'],
+    why:'Honest, clean mid-range hotel right on the Port de Pollença promenade. No frills but good value in one of the nicest towns in the north.',
+    andy:'If the budget is tight and the north is the zone, this is the practical answer. Golf Alcanada 20 minutes, evenings sorted by the Pollença food scene.',
+    golf:'Club de Golf Alcanada 20 min. Golf Pollença 10 min.',
+    travelTime:'50 min from Palma airport'
+  },
+  {
+    id:'agrotourisme-son-palou', name:'Agrotourisme Son Palou',
+    subname:'Orient',
+    area:'north', luxury:2, type:'hotel',
+    vibes:['countryside'],
+    styles:['countryside'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['privacy'],
+    pills:['Rural finca','Mountain village','Complete peace'],
+    budgets:['mid','premium','flexible'],
+    why:'Traditional agrotourism finca in the tiny village of Orient, surrounded by Tramuntana mountains. Complete silence, fresh produce, proper countryside Mallorca.',
+    andy:'Orient is one of the most special villages on the island. Golf requires a drive but the experience here is unlike any hotel. Best combined with a few rounds at Alcanada.',
+    golf:'Club de Golf Alcanada 30 min. Golf Pollença 20 min.',
+    travelTime:'35 min from Palma airport'
   },
   {
     id:'north-villa', name:'Luxury Villa, North Mallorca',
@@ -1085,7 +1258,7 @@ const HOTELS = [
     travelTime:'50 min from Palma airport'
   },
 
-  /* ——— EAST ——— */
+  /* ===================== EAST ===================== */
   {
     id:'can-simoneta', name:'Can Simoneta',
     subname:'Canyamel',
@@ -1098,9 +1271,9 @@ const HOTELS = [
     priority:['spa','privacy'],
     pills:['Clifftop','Spa','VORO restaurant'],
     budgets:['premium','ultra','flexible'],
-    why:'Clifftop boutique five-star with a serious spa and Capdepera golf 5 minutes away. VORO (Mallorca\'s only two-Michelin-star restaurant) is in the hotel.',
+    why:'Clifftop boutique five-star with a serious spa and Capdepera golf 5 minutes away. VORO (Mallorca\'s only two-Michelin-star restaurant) is in the complex.',
     andy:'Quietest of the east coast options. Suits couples who want privacy over facilities.',
-    golf:'Capdepera Golf 5 min. Canyamel Golf 10 min. Club de Golf Pula 15 min. Vall d\'Or 25 min. Golf Club Son Servera 20 min.',
+    golf:'Capdepera Golf 5 min. Canyamel Golf 10 min. Club de Golf Pula 15 min. Golf Club Son Servera 20 min. Vall d\'Or 25 min.',
     travelTime:'60 min from Palma airport'
   },
   {
@@ -1121,6 +1294,74 @@ const HOTELS = [
     travelTime:'60 min from Palma airport'
   },
   {
+    id:'cases-son-barbassa', name:'Cases de Son Barbassa',
+    subname:'Capdepera',
+    area:'east', luxury:3, type:'hotel',
+    vibes:['countryside','boutique'],
+    styles:['countryside','boutique'],
+    groups:['couple','solo','friends'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:true, golfProximity:3,
+    priority:['privacy','spa'],
+    pills:['Rural finca','Private pool','Capdepera Golf 5 min'],
+    budgets:['premium','flexible'],
+    why:'Restored rural estate 5 minutes from Capdepera Golf. Private pool, local produce, genuinely off-the-beaten-track feel with good golf on the doorstep.',
+    andy:'The east finca option. No beach but great pool, total quiet, and an excellent golf base. Combine with an evening at VORO nearby.',
+    golf:'Capdepera Golf 5 min. Canyamel Golf 15 min. Club de Golf Pula 15 min.',
+    travelTime:'60 min from Palma airport'
+  },
+  {
+    id:'pula-resort', name:'Pula Resort',
+    subname:'Son Servera',
+    area:'east', luxury:2, type:'hotel',
+    vibes:['resort','golf-focused'],
+    styles:['resort','classic'],
+    groups:['friends','couple','corporate'],
+    sizes:['3-5','6-9'],
+    beach:false, spa:false, golfProximity:3,
+    priority:['golf-focused'],
+    pills:['On course','Trackman range','Golf packages'],
+    budgets:['mid','premium','flexible'],
+    why:'Hotel sitting directly on Pula Golf, with full practice facilities including Trackman technology. Eight European Tour events hosted here. Straightforward golf base.',
+    andy:'If Pula is on the schedule and the group wants everything in one place, this is the answer. The practice facilities are among the best in Mallorca.',
+    golf:'Pula Golf on site. Golf Club Son Servera 10 min. Capdepera Golf 15 min. Canyamel Golf 20 min.',
+    travelTime:'60 min from Palma airport'
+  },
+  {
+    id:'sa-bassa-rotja', name:'Sa Bassa Rotja',
+    subname:'Porreres',
+    area:'east', luxury:3, type:'hotel',
+    vibes:['countryside','boutique'],
+    styles:['countryside'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:true, golfProximity:2,
+    priority:['privacy','spa'],
+    pills:['Winery estate','Organic spa','Countryside'],
+    budgets:['premium','flexible'],
+    why:'Boutique hotel on a working winery estate in the Mallorcan interior. Organic spa, estate wines, proper countryside calm. Not a standard beach or golf resort.',
+    andy:'A different kind of stay. For couples who want the interior of Mallorca and are happy to drive 25-30 minutes to reach the east coast courses.',
+    golf:'Vall d\'Or Golf 25 min. Club de Golf Pula 25 min. Golf Club Son Servera 30 min.',
+    travelTime:'35 min from Palma airport'
+  },
+  {
+    id:'son-gener', name:'Finca Hotel Son Gener',
+    subname:'Son Servera',
+    area:'east', luxury:3, type:'hotel',
+    vibes:['boutique','countryside'],
+    styles:['boutique','countryside'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:true, golfProximity:2,
+    priority:['privacy','spa'],
+    pills:['Adults only','Pool terrace','Rural east'],
+    budgets:['premium','flexible'],
+    why:'Adults-only boutique finca in Son Servera with a quiet pool terrace and good spa facilities. Golf Club Son Servera a short drive, Pula 10 minutes.',
+    andy:'A calmer, more intimate option than the bigger east coast resorts. Suits couples who want countryside and golf without the beach-resort crowds.',
+    golf:'Golf Club Son Servera 10 min. Club de Golf Pula 10 min. Capdepera Golf 15 min. Canyamel Golf 20 min.',
+    travelTime:'55 min from Palma airport'
+  },
+  {
     id:'east-villa', name:'Luxury Villa, East Mallorca',
     subname:"Cala d'Or / Porto Cristo area",
     area:'east', luxury:3, type:'villa',
@@ -1138,7 +1379,7 @@ const HOTELS = [
     travelTime:'55-65 min from Palma airport'
   },
 
-  /* ——— PALMA ——— */
+  /* ===================== PALMA ===================== */
   {
     id:'el-llorenc', name:'El Llorenç Parc de la Mar',
     subname:'Palma old town',
@@ -1174,6 +1415,57 @@ const HOTELS = [
     travelTime:'12 min from Palma airport'
   },
   {
+    id:'born-hotel', name:'Born Hotel',
+    subname:'Palma old town',
+    area:'palma', luxury:3, type:'hotel',
+    vibes:['boutique','classic'],
+    styles:['boutique','classic'],
+    groups:['couple','solo','corporate'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['dining'],
+    pills:['Palma palace','Courtyard terrace','Old town'],
+    budgets:['premium','flexible'],
+    why:'A 19th-century palace on Carrer Born, Palma\'s most fashionable street. Ornate courtyard, excellent location for the old town, cathedral, and restaurants.',
+    andy:'The Born puts you at the centre of Palma evenings. Son Gual 20 minutes for an early morning round, then back for a long lunch.',
+    golf:'Son Gual 20 min. T Golf Palma (Puntiró) 20 min. Son Vida / Son Quint / Son Muntaner 18 min. Real Golf de Bendinat 20 min.',
+    travelTime:'20 min from Palma airport'
+  },
+  {
+    id:'nakar-hotel', name:'Nakar Hotel',
+    subname:'Palma',
+    area:'palma', luxury:3, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique'],
+    groups:['couple','solo','friends'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['dining'],
+    pills:['Rooftop pool','Design rooms','City centre'],
+    budgets:['premium','flexible'],
+    why:'Modern design hotel in central Palma with a strong rooftop pool and bar. Younger feel than the old-town palace hotels. Well-placed for the Passeig des Born.',
+    andy:'For the group that wants Palma nightlife without being too far from golf. Son Gual is 20 minutes at most.',
+    golf:'Son Gual 20 min. T Golf Palma (Puntiró) 18 min. Son Vida / Son Quint 15 min. Real Golf de Bendinat 18 min.',
+    travelTime:'18 min from Palma airport'
+  },
+  {
+    id:'palacio-ca-sa-galesa', name:'Palacio Ca Sa Galesa',
+    subname:'Palma old town',
+    area:'palma', luxury:4, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique','classic'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:true, golfProximity:1,
+    priority:['dining','privacy'],
+    pills:['Ultra-luxury','12 rooms','Cathedral views'],
+    budgets:['ultra','flexible'],
+    why:'Twelve-room ultra-luxury hotel in the heart of Palma old town, with views of the cathedral. One of the most intimate and special hotels in the city. Indoor pool and spa.',
+    andy:'The most exclusive Palma city option. Dinners on the terrace looking at La Seu. Son Gual 20 minutes for the morning round.',
+    golf:'Son Gual 20 min. Son Vida / Son Quint / Son Muntaner 15 min. T Golf Palma (Puntiró) 18 min. Real Golf de Bendinat 20 min.',
+    travelTime:'20 min from Palma airport'
+  },
+  {
     id:'portixol', name:'Hotel Portixol',
     subname:'Portixol, Palma',
     area:'palma', luxury:2, type:'hotel',
@@ -1207,8 +1499,42 @@ const HOTELS = [
     golf:'Son Gual 25 min. Son Vida / Son Quint / Son Muntaner 20 min. T Golf Palma (Puntiró) 15 min. Real Golf de Bendinat 20 min.',
     travelTime:'20 min from Palma airport'
   },
+  {
+    id:'innside-palma', name:'INNSiDE by Meliá Palma Bay',
+    subname:'Palma',
+    area:'palma', luxury:2, type:'hotel',
+    vibes:['resort','classic'],
+    styles:['classic'],
+    groups:['friends','couple','corporate'],
+    sizes:['1-2','3-5','6-9'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['dining'],
+    pills:['Modern four-star','Bay views','Good value'],
+    budgets:['mid','flexible'],
+    why:'Modern four-star with bay views and a good central Palma location. No frills beyond the basics but well-priced and practical for groups who want the city base without boutique hotel prices.',
+    andy:'A no-nonsense Palma base. Good for corporate groups. Son Gual 20 minutes for the rounds.',
+    golf:'Son Gual 20 min. T Golf Palma (Puntiró) 18 min. Son Vida / Son Quint 15 min.',
+    travelTime:'15 min from Palma airport'
+  },
+  {
+    id:'brondo-architect', name:'Brondo Architect Hotel',
+    subname:'Palma old town',
+    area:'palma', luxury:2, type:'hotel',
+    vibes:['boutique'],
+    styles:['boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['dining'],
+    pills:['Boutique','Design','Old town location'],
+    budgets:['mid','premium','flexible'],
+    why:'Small design-led hotel in the Palma old town, within walking distance of the main restaurants, the cathedral, and Es Baluard museum.',
+    andy:'The affordable boutique Palma option. Not the luxury of Palacio Ca Sa Galesa but the location is the same and the character is genuine.',
+    golf:'Son Gual 22 min. T Golf Palma (Puntiró) 18 min. Real Golf de Bendinat 20 min.',
+    travelTime:'20 min from Palma airport'
+  },
 
-  /* ——— NORTHWEST ——— */
+  /* ===================== NORTHWEST ===================== */
   {
     id:'jumeirah-port-soller', name:'Jumeirah Port Soller',
     subname:'Port de Sóller',
@@ -1276,6 +1602,74 @@ const HOTELS = [
     andy:'Plan 2 nights in the northwest for the scenery, then move to the Southwest for the rounds.',
     golf:'Nearest course: Golf de Andratx, approximately 50 minutes.',
     travelTime:'55 min from Palma airport'
+  },
+  {
+    id:'hotel-hermitage', name:"Hotel L'Hermitage",
+    subname:'Orient',
+    area:'northwest', luxury:3, type:'hotel',
+    vibes:['countryside','boutique'],
+    styles:['countryside','boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:true, golfProximity:1,
+    priority:['privacy','spa'],
+    pills:['Mountain village','Pool','Total quiet'],
+    budgets:['premium','flexible'],
+    why:'Tucked into the tiny mountain village of Orient in the heart of the Tramuntana. Pool, spa, and complete calm. The village has fewer than 50 inhabitants.',
+    andy:'For the couple who wants to disappear. Orient is the most hidden corner of the island. Golf de Andratx is 35 minutes on mountain roads.',
+    golf:'Nearest course: Golf de Andratx, approximately 35-40 minutes via mountain roads.',
+    travelTime:'30 min from Palma airport'
+  },
+  {
+    id:'gran-hotel-soller', name:'Gran Hotel Sóller',
+    subname:'Sóller',
+    area:'northwest', luxury:2, type:'hotel',
+    vibes:['classic'],
+    styles:['classic'],
+    groups:['couple','friends','solo'],
+    sizes:['1-2','3-5'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['dining'],
+    pills:['Sóller town','Classic four-star','Orange groves'],
+    budgets:['mid','premium','flexible'],
+    why:'Four-star in the centre of Sóller, one of Mallorca\'s most charming towns. The orange grove market, the historic tram to Port de Sóller, and good restaurants on the doorstep.',
+    andy:'A more accessible price point for the northwest. For groups who want the Sóller experience without Jumeirah prices. Golf requires a 50-minute drive.',
+    golf:'Nearest course: Golf de Andratx, approximately 50 minutes.',
+    travelTime:'35 min from Palma airport'
+  },
+  {
+    id:'can-verdera', name:'Can Verdera',
+    subname:'Fornalutx',
+    area:'northwest', luxury:2, type:'hotel',
+    vibes:['boutique','classic'],
+    styles:['boutique'],
+    groups:['couple','solo'],
+    sizes:['1-2'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['privacy','dining'],
+    pills:['Stone village','Rooftop terrace','Fornalutx views'],
+    budgets:['mid','premium','flexible'],
+    why:'Small boutique hotel in Fornalutx, repeatedly voted one of Spain\'s most beautiful villages. Stone-built, rooftop terrace, exceptional mountain views.',
+    andy:'Fornalutx is the most photographed village in Mallorca. A very different experience from any beach hotel. Golf is a long drive but the setting is worth it for 2 nights.',
+    golf:'Nearest course: Golf de Andratx, approximately 55 minutes.',
+    travelTime:'40 min from Palma airport'
+  },
+  {
+    id:'northwest-villa', name:'Luxury Villa, Northwest',
+    subname:'Sóller / Valldemossa area',
+    area:'northwest', luxury:3, type:'villa',
+    vibes:['villa','countryside'],
+    styles:['villa','countryside'],
+    groups:['friends','family','couple'],
+    sizes:['6-9','10+'],
+    beach:false, spa:false, golfProximity:1,
+    priority:['privacy'],
+    pills:['Private villa','Mountain views','Tramuntana'],
+    budgets:['premium','ultra','flexible'],
+    why:'A northwest villa offers total privacy in the most dramatic landscape on the island. Private pool, mountain views, olive and lemon groves. Golf is an excursion, not a daily commute.',
+    andy:'Only recommend to groups who are genuinely comfortable with the drive. The right brief: Tramuntana experience first, golf second.',
+    golf:'Golf de Andratx 45-55 min via mountain roads. Plan full-day golf excursions.',
+    travelTime:'35-50 min from Palma airport'
   },
 ];
 
