@@ -157,7 +157,6 @@
     border-color: var(--pine);
     background: rgba(45,74,62,0.06);
   }
-  .opt__icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
   .opt__body { flex: 1; }
   .opt__label {
     font-weight: 500;
@@ -527,6 +526,7 @@
 <!-- HEADER -->
 <header class="site-header">
   <img src="../MMG_Logo_White_Transparent.png" alt="Mr Mallorca Golf">
+
   <div class="site-header__divider"></div>
   <span class="site-header__label">Hotel Finder</span>
 </header>
@@ -540,6 +540,7 @@
 
 <!-- PROGRESS -->
 <div class="progress-wrap">
+
   <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
 </div>
 
@@ -547,94 +548,120 @@
 <div class="quiz-wrap" id="quizWrap">
 
   <!-- STEP 1: Area -->
+
   <div class="step active" id="step1">
     <p class="step-number">Question 1 of 6</p>
     <h2>Which part of Mallorca are you planning to golf in?</h2>
     <p class="step__sub">This determines which course clusters you can reach easily. If you are unsure, choose Southwest: it has the most courses.</p>
+
     <div class="options" id="q-area">
+
       <div class="opt" data-val="southwest" onclick="select(this,'area')">
-        <span class="opt__icon">🏌️</span>
         <div class="opt__body">
+
           <div class="opt__label">Southwest Mallorca</div>
+
           <div class="opt__desc">Andratx, Santa Ponsa, Bendinat, Calvià. The main golf cluster: 4 to 5 courses within 15 minutes. Best base for a golf-heavy trip.</div>
         </div>
       </div>
+
       <div class="opt" data-val="north" onclick="select(this,'area')">
-        <span class="opt__icon">⛰️</span>
         <div class="opt__body">
+
           <div class="opt__label">North Mallorca</div>
+
           <div class="opt__desc">Alcúdia, Pollença, Formentor. Alcanada is one of the island's best courses. Fewer rounds available but a more scenic, relaxed base.</div>
         </div>
       </div>
+
       <div class="opt" data-val="east" onclick="select(this,'area')">
-        <span class="opt__icon">🌊</span>
         <div class="opt__body">
+
           <div class="opt__label">East Mallorca</div>
+
           <div class="opt__desc">Capdepera, Canyamel, Pula, Son Servera, Vall d'Or. Quieter, great beaches, underrated courses. Good for families or those who want calm over convenience.</div>
         </div>
       </div>
+
       <div class="opt" data-val="palma" onclick="select(this,'area')">
-        <span class="opt__icon">🏙️</span>
         <div class="opt__body">
+
           <div class="opt__label">Near Palma</div>
+
           <div class="opt__desc">Use Palma as an evening base. Son Gual, Son Vida, Son Muntaner, and Bendinat all within 20 minutes. Good if city restaurants and nightlife matter as much as golf.</div>
         </div>
       </div>
+
       <div class="opt" data-val="northwest" onclick="select(this,'area')">
-        <span class="opt__icon">🏔️</span>
         <div class="opt__body">
+
           <div class="opt__label">Northwest: Tramuntana experience</div>
+
           <div class="opt__desc">Sóller, Deià, Valldemossa. Spectacular scenery. Not a golf base: nearest course is 50 minutes. Best as a 2-night add-on to another area.</div>
         </div>
       </div>
     </div>
+
     <div class="step-nav">
       <button class="btn-next" id="next1" onclick="next(1)" disabled>Continue</button>
     </div>
   </div>
 
   <!-- STEP 2: Priority -->
+
   <div class="step" id="step2">
     <p class="step-number">Question 2 of 6</p>
     <h2>What matters most outside the golf?</h2>
     <p class="step__sub">Between rounds, what does the group want?</p>
+
     <div class="options" id="q-priority">
+
       <div class="opt" data-val="golf-focused" onclick="select(this,'priority')">
-        <span class="opt__icon">⛳</span>
         <div class="opt__body">
+
           <div class="opt__label">Be as close to the courses as possible</div>
+
           <div class="opt__desc">On or beside a course, easy early tee times, nothing to get in the way of the rounds.</div>
         </div>
       </div>
+
       <div class="opt" data-val="beach" onclick="select(this,'priority')">
-        <span class="opt__icon">🏖️</span>
         <div class="opt__body">
+
           <div class="opt__label">Beach and pool time after golf</div>
+
           <div class="opt__desc">Post-round recovery at the sea or pool is just as important as the round itself.</div>
         </div>
       </div>
+
       <div class="opt" data-val="spa" onclick="select(this,'priority')">
-        <span class="opt__icon">♨️</span>
         <div class="opt__body">
+
           <div class="opt__label">Spa and wellness recovery</div>
+
           <div class="opt__desc">A proper spa for legs and backs after multiple rounds. Treatments, steam, pool.</div>
         </div>
       </div>
+
       <div class="opt" data-val="dining" onclick="select(this,'priority')">
-        <span class="opt__icon">🍷</span>
         <div class="opt__body">
+
           <div class="opt__label">Good food and evenings out</div>
+
           <div class="opt__desc">Restaurants, wine, local markets. The evenings are as important as the days.</div>
         </div>
       </div>
+
       <div class="opt" data-val="privacy" onclick="select(this,'priority')">
-        <span class="opt__icon">🏡</span>
         <div class="opt__body">
+
           <div class="opt__label">Privacy and space: our own place</div>
+
           <div class="opt__desc">Own pool, own schedule, no hotel timetable. A villa where the group can do what it wants.</div>
         </div>
       </div>
     </div>
+
     <div class="step-nav">
       <button class="btn-next" id="next2" onclick="next(2)" disabled>Continue</button>
       <button class="btn-back" onclick="back(2)">Back</button>
@@ -642,42 +669,50 @@
   </div>
 
   <!-- STEP 3: Group type -->
+
   <div class="step" id="step3">
     <p class="step-number">Question 3 of 6</p>
     <h2>Who is travelling?</h2>
     <p class="step__sub">Helps match the right atmosphere and facilities.</p>
+
     <div class="options-grid" id="q-group">
+
       <div class="opt" data-val="couple" onclick="select(this,'group')">
-        <span class="opt__icon">💑</span>
         <div class="opt__body">
+
           <div class="opt__label">Couple</div>
         </div>
       </div>
+
       <div class="opt" data-val="friends" onclick="select(this,'group')">
-        <span class="opt__icon">🍺</span>
         <div class="opt__body">
+
           <div class="opt__label">Group of friends</div>
         </div>
       </div>
+
       <div class="opt" data-val="family" onclick="select(this,'group')">
-        <span class="opt__icon">👨‍👩‍👧‍👦</span>
         <div class="opt__body">
+
           <div class="opt__label">Family with kids</div>
         </div>
       </div>
+
       <div class="opt" data-val="solo" onclick="select(this,'group')">
-        <span class="opt__icon">🧳</span>
         <div class="opt__body">
+
           <div class="opt__label">Travelling solo</div>
         </div>
       </div>
+
       <div class="opt" data-val="corporate" onclick="select(this,'group')">
-        <span class="opt__icon">💼</span>
         <div class="opt__body">
+
           <div class="opt__label">Corporate group</div>
         </div>
       </div>
     </div>
+
     <div class="step-nav">
       <button class="btn-next" id="next3" onclick="next(3)" disabled>Continue</button>
       <button class="btn-back" onclick="back(3)">Back</button>
@@ -685,24 +720,35 @@
   </div>
 
   <!-- STEP 4: Group size -->
+
   <div class="step" id="step4">
     <p class="step-number">Question 4 of 6</p>
     <h2>How many people in total?</h2>
     <p class="step__sub">Affects whether a villa makes more sense than a hotel.</p>
+
     <div class="options-grid" id="q-size">
+
       <div class="opt" data-val="1-2" onclick="select(this,'size')">
+
         <div class="opt__body"><div class="opt__label">1 or 2</div></div>
       </div>
+
       <div class="opt" data-val="3-5" onclick="select(this,'size')">
+
         <div class="opt__body"><div class="opt__label">3 to 5</div></div>
       </div>
+
       <div class="opt" data-val="6-9" onclick="select(this,'size')">
+
         <div class="opt__body"><div class="opt__label">6 to 9</div></div>
       </div>
+
       <div class="opt" data-val="10+" onclick="select(this,'size')">
+
         <div class="opt__body"><div class="opt__label">10 or more</div></div>
       </div>
     </div>
+
     <div class="step-nav">
       <button class="btn-next" id="next4" onclick="next(4)" disabled>Continue</button>
       <button class="btn-back" onclick="back(4)">Back</button>
@@ -710,47 +756,60 @@
   </div>
 
   <!-- STEP 5: Style -->
+
   <div class="step" id="step5">
     <p class="step-number">Question 5 of 6</p>
     <h2>What kind of place feels right?</h2>
     <p class="step__sub">Not about budget. About character.</p>
+
     <div class="options" id="q-style">
+
       <div class="opt" data-val="boutique" onclick="select(this,'style')">
-        <span class="opt__icon">🕯️</span>
         <div class="opt__body">
+
           <div class="opt__label">Boutique and intimate</div>
+
           <div class="opt__desc">Small, characterful, personal service. You know the staff by name after a day.</div>
         </div>
       </div>
+
       <div class="opt" data-val="resort" onclick="select(this,'style')">
-        <span class="opt__icon">🏨</span>
         <div class="opt__body">
+
           <div class="opt__label">Full resort with all facilities</div>
+
           <div class="opt__desc">Multiple pools, restaurants, a spa, activities. Everything in one place.</div>
         </div>
       </div>
+
       <div class="opt" data-val="classic" onclick="select(this,'style')">
-        <span class="opt__icon">🏛️</span>
         <div class="opt__body">
+
           <div class="opt__label">Classic and established</div>
+
           <div class="opt__desc">Proper hotel, reliable service, no Instagram gimmicks. Stands for itself.</div>
         </div>
       </div>
+
       <div class="opt" data-val="villa" onclick="select(this,'style')">
-        <span class="opt__icon">🌿</span>
         <div class="opt__body">
+
           <div class="opt__label">Private villa</div>
+
           <div class="opt__desc">Own pool, own kitchen, own timetable. No hotel lobby, no check-out time.</div>
         </div>
       </div>
+
       <div class="opt" data-val="countryside" onclick="select(this,'style')">
-        <span class="opt__icon">🌾</span>
         <div class="opt__body">
+
           <div class="opt__label">Countryside finca or rural retreat</div>
+
           <div class="opt__desc">Farmhouse conversion, olive groves, quiet. The island away from the coast.</div>
         </div>
       </div>
     </div>
+
     <div class="step-nav">
       <button class="btn-next" id="next5" onclick="next(5)" disabled>Continue</button>
       <button class="btn-back" onclick="back(5)">Back</button>
@@ -758,36 +817,55 @@
   </div>
 
   <!-- STEP 6: Budget -->
+
   <div class="step" id="step6">
     <p class="step-number">Question 6 of 6</p>
     <h2>What is the rough budget per room per night?</h2>
     <p class="step__sub">In high season (June to September). Helps filter to realistic options.</p>
+
     <div class="options" id="q-budget">
+
       <div class="opt" data-val="mid" onclick="select(this,'budget')">
+
         <div class="opt__body">
+
           <div class="opt__label">Up to €250 per room</div>
+
           <div class="opt__desc">Mid-range four-star. Good location, comfortable, nothing extravagant.</div>
         </div>
       </div>
+
       <div class="opt" data-val="premium" onclick="select(this,'budget')">
+
         <div class="opt__body">
+
           <div class="opt__label">€250 to €500 per room</div>
+
           <div class="opt__desc">Premium four or five-star. Proper spa, quality dining, noticeably better.</div>
         </div>
       </div>
+
       <div class="opt" data-val="ultra" onclick="select(this,'budget')">
+
         <div class="opt__body">
+
           <div class="opt__label">€500 or more per room</div>
+
           <div class="opt__desc">Ultra-luxury. Four Seasons, Belmond, Jumeirah. The best the island has.</div>
         </div>
       </div>
+
       <div class="opt" data-val="flexible" onclick="select(this,'budget')">
+
         <div class="opt__body">
+
           <div class="opt__label">Flexible: show me the best option</div>
+
           <div class="opt__desc">Not constrained by price. Show me what genuinely fits best.</div>
         </div>
       </div>
     </div>
+
     <div class="step-nav">
       <button class="btn-next" id="next6" onclick="next(6)" disabled>See my recommendations</button>
       <button class="btn-back" onclick="back(6)">Back</button>
@@ -798,20 +876,26 @@
 
 <!-- RESULTS -->
 <div id="results">
+
   <div class="results-hero">
     <h2>Your hotel shortlist</h2>
     <p id="resultsIntro">Based on your answers, here are the best options for your trip.</p>
   </div>
 
+
   <div class="results-wrap">
+
     <div id="areaWarning"></div>
     <p class="results-label" id="resultsLabel"></p>
+
     <div id="hotelCards"></div>
 
     <!-- EMAIL -->
+
     <div class="email-section" id="emailSection">
       <h3>Save your shortlist</h3>
       <p>Get these recommendations sent to your inbox. Useful when comparing options with the rest of the group.</p>
+
       <div class="email-row">
         <input class="email-input" type="email" id="emailInput" placeholder="your@email.com">
         <button class="btn-email" onclick="sendEmail()">Send to me</button>
@@ -823,15 +907,18 @@
     </div>
 
     <!-- ANDY CTA -->
+
     <div class="andy-cta">
       <h3>Ready to put the trip together?</h3>
       <p>Andy can match your hotel choice to the right tee times, courses, and schedule: based on the area, your handicap, and how many rounds you want to fit in.</p>
+
       <div class="cta-links">
         <a href="/contact" class="cta-link cta-link--primary">Enquire with Andy</a>
         <a href="https://wa.me/34624466702" target="_blank" rel="noopener noreferrer" class="cta-link cta-link--secondary">WhatsApp Andy</a>
       </div>
     </div>
   </div>
+
 
   <div style="text-align:center; padding-bottom: 40px;">
     <button class="btn-retry" onclick="restart()">Start again</button>
@@ -1845,7 +1932,9 @@ function buildCard(h, rank) {
 
   card.innerHTML = `
     <div class="hotel-card__rank ${rankClasses[rank]}">${rankLabels[rank]}</div>
+
     <div class="hotel-card__body">
+
       <div class="hotel-card__meta">
         <span class="hotel-card__area">${areaLabels[h.area] || h.area}</span>
         <span class="hotel-card__sep">·</span>
@@ -1856,7 +1945,9 @@ function buildCard(h, rank) {
       ${h.subname ? `<p style="font-size:0.8rem;color:var(--taupe);margin-bottom:10px;">${h.subname}</p>` : ''}
       <div class="hotel-card__pills">${pills}</div>
       <p class="hotel-card__why">${h.why}</p>
+
       <div class="hotel-card__andy">
+
         <div class="hotel-card__andy-label">Andy's note</div>
         <p>${h.andy}</p>
       </div>
