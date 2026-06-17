@@ -63,7 +63,7 @@ function buildPlayWithAProSchema(locale, content) {
     serviceType,
     offers: {
       '@type': 'AggregateOffer',
-      lowPrice: 495,
+      lowPrice: 595,
       highPrice: 3000,
       priceCurrency: 'EUR',
       url: `${SITE_ORIGIN}${contactPath}`,
@@ -135,6 +135,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
   }
+  const wechatHref = locale === 'zh' ? buildLocalePath('/contact#wechat', locale) : null
   const dayPhotos = [
     { src: '/images/client-alcanada.webp', alt: copy.photos[0], position: 'center 38%' },
     { src: '/images/son-antem-west-review-blog/son-antem-west-4.webp', alt: copy.photos[1], position: 'center 42%' },
@@ -251,6 +252,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                   {content.hero.secondaryCta}
                 </a>
               </div>
+              {wechatHref ? (
+                <p className="pwap-hero__note">
+                  <a href={wechatHref} style={{ color: 'var(--gold-light)', textDecoration: 'none' }}>
+                    微信联系：直接从这里找到我
+                  </a>
+                </p>
+              ) : null}
             </div>
           </div>
         </section>

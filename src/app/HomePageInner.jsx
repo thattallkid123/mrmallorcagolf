@@ -83,6 +83,7 @@ export default function HomePageInner({ locale = 'en' }) {
   const itineraryHref = home.hero.primaryHref ? localizePath(home.hero.primaryHref, locale) : playWithAProHref
   const sharedPackageCta = null
   const ui = HOME_UI[locale] || HOME_UI.en
+  const wechatHref = locale === 'zh' ? `${contactHref}#wechat` : null
 
   return (
     <>
@@ -124,6 +125,11 @@ export default function HomePageInner({ locale = 'en' }) {
                 {home.hero.secondaryCta}
               </a>
             </div>
+            {wechatHref ? (
+              <a href={wechatHref} className="hero__pwap-link">
+                <span>微信联系：直接加我，或先看联系页</span>
+              </a>
+            ) : null}
             <a href={planYourTripHref} className="hero__pwap-link">
               <span>{ui.tripPrompt}</span>
             </a>
