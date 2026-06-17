@@ -186,14 +186,11 @@ export default function ContactFormPanel({ locale = 'en', content }) {
             {content.form.submit}
           </button>
           {error && <p className="form-error" role="alert">{error}</p>}
-          <p className="form-note">{content.form.note}</p>
         </div>
 
-        <div style={{ marginTop: '1.5rem' }}>
-          <h3 style={{ marginBottom: '0.5rem', fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: '1.15rem', color: '#1A1916' }}>{content.whatNext.heading}</h3>
-          <p style={{ margin: 0 }}>
-            {content.whatNext.body}
-          </p>
+        <div style={{ marginTop: '1.75rem', padding: '1.25rem 1.5rem', background: 'rgba(45,74,62,0.05)', borderTop: '1px solid rgba(45,74,62,0.12)' }}>
+          <p style={{ margin: '0 0 0.35rem', fontSize: '9px', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#2D4A3E', fontFamily: "'Jost', sans-serif" }}>{content.whatNext.heading}</p>
+          <p style={{ margin: 0, fontSize: '0.85rem', color: '#2C2A27', lineHeight: 1.7, fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>{content.whatNext.body}</p>
         </div>
       </form>
     </>
