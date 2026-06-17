@@ -1,4 +1,4 @@
-# Mr Mallorca Golf - Claude Session Context
+﻿# Mr Mallorca Golf - Claude Session Context
 
 ---
 
@@ -97,10 +97,9 @@ Common folders to mount: Downloads, Documents, specific project folders.
 - **Bookings/**  Client itineraries, proposals, terms, booking logic
 - **Content/**  Blog drafts, Chinese content, research, SEO strategy, email templates, article guides
 - **Systems & Planning/**  Operational workflows, checklists, control panels, business logic docs, booking rules
-  - **Skills/**  Master skill files (source of truth for SKILLS_SYNC.ps1)
+- **Skills/**  Master skill files (source of truth for SKILLS_SYNC.ps1)
 - **Media/**  Photos, carousels, brand assets, carousel creation guides, photo usage rules, inventory
 - **Reference/**  Scorecard master, pricing research, trip guides, brand guidelines, course prestige docs
-- **To Do/**  Historical (superseded by Google Tasks webhook)
 - **Private/**
   - **Workbooks/**  All contacts (courses, partners, China operators, sensitive data)
   - **Templates/**  Outreach email templates, booking templates, proposal templates
@@ -220,9 +219,9 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 **Google Drive (C:\Users\andyg\My Drive\Mr Mallorca Golf):**
 - **Master control:** `MMG_MASTER_CONTROL_CENTER.md`  Start here for all business questions
-- **Financial:** `Financial/2026/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker) + `MMG_Business_Model.pdf` (pricing model)
+- **Financial:** `Business Operations & Financial/2026/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker) + `MMG_Business_Model.pdf` (pricing model)
 - **Systems & planning:** `Systems & Planning/` (business plan, pricing, checklists)
-- **Contacts & partnerships:** `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` (3 sheets: Golf Courses 24 + Affiliates 40 + China Operators 15)
+- **Contacts & partnerships:** `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` (3 sheets: Golf Courses 24 + Affiliates 39 incl. website/phone/location + China Operators 15)
 - **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx` (client tracker: names, dates, courses, revenue, follow-ups)
 - **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
 - **Tax & compliance:** `Tax & Compliance/2026/` (documentation, Q&A with gestor)
@@ -286,6 +285,7 @@ POST https://script.google.com/macros/s/AKfycbw0RzUzzrXzn3inKcggu0deF05wbL2xGlR1
 - **Writing:** Read `MMG_BRAND_VOICE_GUIDELINES.md` before any draft. Mandatory self-check before shipping.
 - **Course reviews:** Read `COURSE_BLOG_PIPELINE.md` before starting.
 - **Course photos:** Always `ImageOps.exif_transpose()` from original source files. Never crop blog images. Max 1600px, WebP quality 82.
+- **Prototype images (tools, quizzes, selectors):** Use `/images/*-card.webp` for course guide card images; use `/images/courses/*.webp` for full course detail images. Do NOT use external stock photos (Unsplash, etc.). All images sourced from `public/images/` folder. See [Prototype Image Reference](#prototype-image-reference) below.
 - **Import paths:** English pages use `../../components/`; language pages use `../../../components/`.
 - **Content:** English is master. Do not add localized content that is not present in English.
 - **Shared locale edits:** If you add a new key to shared content used across locales, either add it for de/es/fr/nl/sv/zh in the same edit or provide an explicit getter fallback. Do not leave English-only structure gaps.
@@ -310,6 +310,68 @@ POST https://script.google.com/macros/s/AKfycbw0RzUzzrXzn3inKcggu0deF05wbL2xGlR1
 - For SEO or CRO work, only ship changes that clearly improve CTR, enquiry conversion, trust, course-choice clarity, or premium positioning.
 - For China-facing copy, pull proof from existing verified sources first (`about-content.js`, `contact-content.js`, `homepage-content.js`) and reuse the real Shanghai, Mandarin, Douyin, and WeChat details already in the repo.
 - Chinese pages do not need to be literal translations of English pages. Localize them for the Chinese audience and business goal, while keeping factual claims consistent with the verified source material.
+
+## Prototype Image Reference
+
+**Location:** `prototypes/` folder contains interactive tools, quizzes, and selectors (HTML + inline JS).
+
+**Image sourcing rule:** All prototype images come from `public/images/`. Do NOT use external stock photos (Unsplash, Pexels, etc.). All images are WebP, optimized, and deployed with the site.
+
+**Available image paths:**
+
+| Path | Courses Covered | Use Case |
+|------|---|---|
+| `/images/*-card.webp` | alcanada, son-gual, t-golf-calvia, son-muntaner, santa-ponsa, andratx | Guide listing cards (homepage, guides page) |
+| `/images/courses/*.webp` | All 24 courses including son-vida, son-quint, bendinat, capdepera, canyamel, pula, son-servera, maioris, vall-dor, + others | Detail pages, quizzes, recommenders |
+
+**How to use in prototypes:**
+
+```html
+<!-- For guide card images (if available) -->
+<img src="/images/son-gual-card.webp" alt="Son Gual course view">
+
+<!-- For course detail images (fallback for all courses) -->
+<img src="/images/courses/bendinat.webp" alt="Bendinat coastal course">
+```
+
+**When adding a new prototype:**
+1. Check if card images exist for your courses (`/images/*-card.webp`)
+2. If not, use course detail images (`/images/courses/*.webp`)
+3. Never hardcode Unsplash, Pexels, or other external URLs
+4. Add `loading="lazy"` and appropriate `alt` text to all images
+5. Test that images load when prototype is served from the site
+
+**If an image is missing:**
+- For guide cards: request from `Drive/Media/` or use course detail image as fallback
+- For course detail images: check `public/images/courses/` first; if missing, it needs to be added to the project
+
+## Prototype Deployment Checklist
+
+**Before deploying any prototype to the /zh site:**
+
+1. **Images**
+   - [ ] All course images load via `/images/` paths (not external Unsplash/Pexels)
+   - [ ] WeChat QR code exists at `public/images/wechat-qr.png`
+   - [ ] Images tested on site (not just standalone HTML)
+
+2. **Contact details**
+   - [ ] WeChat ID: `andygriffiths1` (in code + image)
+   - [ ] WhatsApp: `+34624466702` (from `WhatsAppButton.jsx`)
+   - [ ] Contact links point to `/zh/contact`, `/zh/play-with-a-pro`, `/zh/guides`
+
+3. **Email integration**
+   - [ ] Email endpoint exists (`/api/zh-selector-email` for course selector)
+   - [ ] Resend API key configured (not MailerLite)
+   - [ ] Email template tested with real data
+
+4. **Analytics**
+   - [ ] Baidu Analytics wired up (GA4 blocked in mainland China)
+   - [ ] Track events: `zh_selector_start`, `zh_answer_selected`, `zh_recommendation_viewed`, `zh_email_results`, `zh_wechat_click`, `zh_booking_click`
+
+5. **Localization**
+   - [ ] Run `npm run check:locale-parity` to verify /zh consistency
+   - [ ] Check for English leaks in Chinese content
+   - [ ] Verify all contact labels use Chinese (not English WhatsApp/WeChat)
 
 ## Adding Or Translating A Course Review
 
