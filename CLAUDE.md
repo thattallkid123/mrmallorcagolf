@@ -1,4 +1,4 @@
-﻿# Mr Mallorca Golf - Claude Session Context
+# Mr Mallorca Golf - Claude Session Context
 
 ---
 
