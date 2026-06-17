@@ -190,7 +190,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
 
         <div style={{ marginTop: '1.5rem' }}>
-          <h3 style={{ marginBottom: '0.5rem', fontFamily: 'var(--font-serif)', fontWeight: 500, fontSize: '1.15rem', color: 'var(--deep)' }}>{content.whatNext.heading}</h3>
+          <h3 style={{ marginBottom: '0.5rem', fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: '1.15rem', color: '#1A1916' }}>{content.whatNext.heading}</h3>
           <p style={{ margin: 0 }}>
             {content.whatNext.body}
           </p>
