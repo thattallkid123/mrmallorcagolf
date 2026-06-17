@@ -54,6 +54,20 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 3. Confirm Google Drive is synced and the `Mr Mallorca Golf\Reference\` folder is available
 4. Run `npm install` in the repo root before any dev work
 5. Apply Windows settings: see `WINDOWS_SETTINGS_MIGRATION.md` in the repo root
+6. Hand-carry the gitignored secrets (see below) — git/GitHub does NOT contain them
+
+**Secrets to hand-carry to a new PC (NOT in git — copy manually via USB or password manager):**
+These are gitignored on purpose, so cloning the repo will NOT bring them. The control panel and integrations break without them.
+- `token.json` (repo root) — Google OAuth token for the control panel. `control-panel-server.js` reads/writes it from the repo root, so it must sit there.
+- `.env` and `.env.local` (repo root) — API keys (Resend, etc.)
+- `.github-token`
+- `ga4_analytics/ga4_credentials.json`, `ga4_oauth_client.json`, `ga4_token.json`
+- `search_console/search_console_token.json`, `seo_analytics/google_token.json`
+- `zoho_mail/zoho_config.json`, `zoho_mail/zoho_auth.py`
+
+Also carry over Claude/Codex setup separately: copy `~/.claude/settings*.json`, `~/.claude.json` (MCP servers), `~/.claude/skills/`, `~/.claude/agents/`, and any `memory/` folders; sign in fresh rather than copying `.credentials.json`. Same for `~/.codex` (carry config, re-login). History/session folders are optional — leaving them behind avoids drift between the two PCs.
+
+**Single source of truth across two PCs:** neither PC is canonical — the cloud is. Code → GitHub, business docs → Google Drive. Before stepping away from a machine, `git push` and let Drive finish syncing; the other PC just pulls. Only one machine should make edits at a time.
 
 **Typical path changes to check:**
 - Username different? (`andyg`  whatever)  update all four paths above

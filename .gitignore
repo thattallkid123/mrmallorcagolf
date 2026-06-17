@@ -5,6 +5,9 @@ b64imgs.txt
 # GitHub token (never commit)
 .github-token
 
+# Google OAuth token for control panel (never commit — hand-carry to new machines)
+token.json
+
 # Zoho Mail credentials (never commit these)
 zoho_mail/zoho_config.json
 zoho_mail/zoho_auth.py
