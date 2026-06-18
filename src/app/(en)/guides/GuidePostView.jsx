@@ -187,11 +187,13 @@ function renderBlock(block, index, locale, imageOrdinal) {
     const contactHref = buildLocalePath('/contact', locale)
     return (
       <div key={`cta-${index}`} className="post-cta">
-        <p><InlineRichText text={block.text} locale={locale} /></p>
-        <a href={href}>{block.linkLabel}</a>
+        <p className="post-cta__text"><InlineRichText text={block.text} locale={locale} /></p>
+        <div className="post-cta__actions">
+          <a href={href} className="post-cta__button">{block.linkLabel}</a>
+        </div>
         {locale === 'en' && block.href === '/play-with-a-pro' ? (
           <p className="post-cta__secondary">
-            Still narrowing down the trip? Use the <Link href={contactHref}>contact page</Link> and send Andy your dates, hotel area, handicap, and shortlist.
+            Still narrowing down the trip? Use the <Link href={contactHref} className="post-cta__secondary-link">contact page</Link> and send Andy your dates, hotel area, handicap, and shortlist.
           </p>
         ) : null}
       </div>

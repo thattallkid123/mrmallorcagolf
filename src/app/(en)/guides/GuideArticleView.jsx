@@ -239,11 +239,17 @@ function renderBlock(block, index, locale, imageOrdinal) {
     const href = joinHref(locale, block.href)
     return (
       <div key={`cta-${index}`} className="post-cta">
-        <p><InlineRichText text={block.text} locale={locale} /></p>
-        {block.internal ? <Link href={href}>{block.linkLabel}</Link> : <a href={href}>{block.linkLabel}</a>}
+        <p className="post-cta__text"><InlineRichText text={block.text} locale={locale} /></p>
+        <div className="post-cta__actions">
+          {block.internal ? (
+            <Link href={href} className="post-cta__button">{block.linkLabel}</Link>
+          ) : (
+            <a href={href} className="post-cta__button">{block.linkLabel}</a>
+          )}
+        </div>
         {locale === 'en' && block.href === '/play-with-a-pro' ? (
           <p className="post-cta__secondary">
-            If you are still choosing courses or trying to shape the trip first, <Link href={buildLocalePath('/contact', locale)}>send Andy the details</Link> and he will narrow it down for you.
+            If you are still choosing courses or trying to shape the trip first, <Link href={buildLocalePath('/contact', locale)} className="post-cta__secondary-link">send Andy the details</Link> and he will narrow it down for you.
           </p>
         ) : null}
       </div>

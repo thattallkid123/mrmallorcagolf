@@ -3052,14 +3052,19 @@ select.form-control { cursor: pointer; }
 .post-notes__label { color: var(--deep); font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-family: var(--font-sans); }
 .post-notes__item p { margin: 0 !important; }
 
-.post-cta { background: linear-gradient(135deg, #264237 0%, #2d4a3e 54%, #345749 100%); padding: 28px 32px; margin: 2.5rem 0; display: flex; flex-direction: column; gap: 12px; position: relative; overflow: hidden; box-shadow: var(--shadow-soft); }
-.post-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at top left, rgba(212,176,104,0.16), transparent 28%); pointer-events: none; }
-.post-cta p { font-family: var(--font-serif); font-style: italic; font-size: 1.1rem !important; color: rgba(255,255,255,.85) !important; line-height: 1.5 !important; margin: 0 !important; }
-.post-cta a { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; font-family: var(--font-sans); padding: 12px 24px; background: var(--gold); color: var(--deep); text-decoration: none; align-self: flex-start; transition: background .25s ease, transform .25s ease; border-radius: 999px; position: relative; z-index: 1; }
-.post-cta a:hover { background: var(--gold-light); transform: translateY(-1px); }
-.post-cta__secondary { font-size: 0.82rem !important; font-style: normal !important; line-height: 1.7 !important; color: rgba(255,255,255,0.72) !important; margin-top: 4px !important; }
-.post-cta__secondary a { display: inline; padding: 0; background: transparent; color: var(--gold-light); letter-spacing: normal; text-transform: none; font-size: inherit; }
-.post-cta__secondary a:hover { background: transparent; transform: none; text-decoration: underline; }
+.post-cta { background: linear-gradient(135deg, #264237 0%, #2d4a3e 100%); border-left: 3px solid var(--gold); padding: 28px 32px; margin: 2.5rem 0; display: grid; gap: 16px; box-shadow: var(--shadow-soft); }
+.post-cta__text { margin: 0 !important; color: rgba(255,255,255,.88) !important; font-family: var(--font-serif); font-size: 1.12rem !important; font-style: normal; font-weight: 500; line-height: 1.45 !important; }
+.post-cta__actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.post-cta__button { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 12px 22px; background: var(--gold); color: var(--deep); font-family: var(--font-sans); font-size: 0.76rem; font-weight: 600; line-height: 1.2; text-decoration: none; transition: background .25s ease, transform .25s ease; }
+.post-cta__button:hover { background: var(--gold-light); transform: translateY(-1px); }
+.post-cta__secondary { max-width: 58ch; margin: 0 !important; color: rgba(255,255,255,0.74) !important; font-family: var(--font-sans); font-size: 0.86rem !important; font-style: normal !important; font-weight: 300; line-height: 1.7 !important; }
+.post-cta__secondary-link { color: var(--gold-light); font: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.post-cta__secondary-link:hover { color: #fff; }
+
+@media (max-width: 640px) {
+  .post-cta { padding: 24px 22px; }
+  .post-cta__button { width: 100%; }
+}
 
 .planning-guide-home {
   background: var(--cream);
