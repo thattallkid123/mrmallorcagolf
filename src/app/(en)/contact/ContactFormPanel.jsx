@@ -5,6 +5,30 @@ import { useContactFormSubmission } from '../../../lib/contact-form'
 export default function ContactFormPanel({ locale = 'en', content }) {
   const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission(locale)
 
+  const formNoteStyle = {
+    background: 'rgba(45,74,62,0.05)',
+    borderLeft: '3px solid var(--gold)',
+    borderTop: '1px solid rgba(45,74,62,0.1)',
+    padding: '1.25rem 1.5rem',
+  }
+  const formNoteHeadingStyle = {
+    margin: '0 0 0.45rem',
+    color: '#2D4A3E',
+    fontFamily: 'var(--font-serif)',
+    fontSize: '1.02rem',
+    fontWeight: 500,
+    letterSpacing: 0,
+    lineHeight: 1.25,
+  }
+  const formNoteBodyStyle = {
+    margin: 0,
+    color: '#2C2A27',
+    fontFamily: "'Jost', sans-serif",
+    fontSize: '0.85rem',
+    fontWeight: 300,
+    lineHeight: 1.7,
+  }
+
   if (submitted) {
     return (
       <div className="form-success visible">
@@ -175,10 +199,9 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           />
         </div>
 
-        <div style={{ background: 'var(--cream)', borderRadius: 2, padding: '1.25rem 1.5rem', marginBottom: '1.5rem', borderLeft: '3px solid var(--gold)' }}>
-          <p style={{ fontSize: '0.85rem', color: 'var(--deep)', lineHeight: 1.7, margin: 0 }}>
-            <strong>{content.gift.heading}</strong> {content.gift.body}
-          </p>
+        <div style={{ ...formNoteStyle, marginBottom: '1.5rem' }}>
+          <h3 style={formNoteHeadingStyle}>{content.gift.heading}</h3>
+          <p style={formNoteBodyStyle}>{content.gift.body}</p>
         </div>
 
         <div className="form-submit">
@@ -188,9 +211,9 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           {error && <p className="form-error" role="alert">{error}</p>}
         </div>
 
-        <div style={{ marginTop: '1.75rem', padding: '1.25rem 1.5rem', background: 'rgba(45,74,62,0.05)', borderTop: '1px solid rgba(45,74,62,0.12)' }}>
-          <h3 style={{ margin: '0 0 0.45rem', fontSize: '1.02rem', fontWeight: 500, letterSpacing: '-0.01em', textTransform: 'none', color: '#2D4A3E', fontFamily: 'var(--font-serif)' }}>{content.whatNext.heading}</h3>
-          <p style={{ margin: 0, fontSize: '0.85rem', color: '#2C2A27', lineHeight: 1.7, fontFamily: "'Jost', sans-serif", fontWeight: 300 }}>{content.whatNext.body}</p>
+        <div style={{ ...formNoteStyle, marginTop: '1.75rem' }}>
+          <h3 style={formNoteHeadingStyle}>{content.whatNext.heading}</h3>
+          <p style={formNoteBodyStyle}>{content.whatNext.body}</p>
         </div>
       </form>
     </>

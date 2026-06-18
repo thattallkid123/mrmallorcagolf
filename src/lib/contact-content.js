@@ -557,9 +557,9 @@ const CONTACT_FORM_HELP = {
       'Valj det alternativ som ligger narmast och sa finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplagget runt dina datum och din grupp. Play With A Pro betyder att Andy ar med dig ute pa banan. Om du inte ar saker annu, valj det osakra alternativet sa pekar jag dig ratt.',
   },
   zh: {
-    experienceHelpTitle: 'å“ªä¸€ç§å®‰æŽ’æ›´åˆé€‚ï¼Ÿ',
+    experienceHelpTitle: '\u{54EA}\u{4E00}\u{79CD}\u{5B89}\u{6392}\u{66F4}\u{5408}\u{9002}\u{FF1F}',
     experienceHelp:
-      'è¯·é€‰æ‹©æœ€æŽ¥è¿‘çš„é€‰é¡¹ï¼Œæˆ‘ä¼šåœ¨æ­¤åŸºç¡€ä¸Šå¸®æ‚¨ç»†åŒ–ã€‚è¡Œç¨‹è§„åˆ’æ„å‘³ç€æˆ‘ä¼šä¸ºæ‚¨çš„æ—¥æœŸå’ŒåŒè¡Œäººå®‰æŽ’çƒåœºã€è·¯çº¿å’ŒèŠ‚å¥ã€‚ä¸Ž Andy åŒåœºæ„å‘³ç€ Andy ä¼šå’Œæ‚¨ä¸€èµ·ä¸‹åœºã€‚å¦‚æžœè¿˜ä¸ç¡®å®šï¼Œå°±é€‰æ‹©ä¸ç¡®å®šçš„é€‰é¡¹ï¼Œæˆ‘ä¼šå¸®æ‚¨åˆ¤æ–­ã€‚',
+      '\u{8BF7}\u{9009}\u{62E9}\u{6700}\u{63A5}\u{8FD1}\u{7684}\u{9009}\u{9879}\u{FF0C}\u{6211}\u{4F1A}\u{5728}\u{6B64}\u{57FA}\u{7840}\u{4E0A}\u{5E2E}\u{60A8}\u{7EC6}\u{5316}\u{3002}\u{884C}\u{7A0B}\u{89C4}\u{5212}\u{610F}\u{5473}\u{7740}\u{6211}\u{4F1A}\u{56F4}\u{7ED5}\u{60A8}\u{7684}\u{65E5}\u{671F}\u{548C}\u{540C}\u{884C}\u{4EBA}\u{5B89}\u{6392}\u{7403}\u{573A}\u{3001}\u{8DEF}\u{7EBF}\u{548C}\u{8282}\u{594F}\u{3002}Play With A Pro \u{610F}\u{5473}\u{7740} Andy \u{4F1A}\u{548C}\u{60A8}\u{4E00}\u{8D77}\u{4E0B}\u{573A}\u{3002}\u{5982}\u{679C}\u{8FD8}\u{4E0D}\u{786E}\u{5B9A}\u{FF0C}\u{5C31}\u{9009}\u{62E9}\u{4E0D}\u{786E}\u{5B9A}\u{7684}\u{9009}\u{9879}\u{FF0C}\u{6211}\u{4F1A}\u{5E2E}\u{60A8}\u{5224}\u{65AD}\u{3002}',
   },
 }
 
@@ -570,7 +570,7 @@ const CONTACT_SEND_PROMPT = {
   fr: 'Idealement : dates, taille du groupe, zone d hotel, niveau et parcours deja envisages.',
   nl: 'Graag meesturen: data, groepsgrootte, hotelregio, handicap en banen die al op uw shortlist staan.',
   sv: 'Skicka garna: datum, gruppstorlek, hotellomrade, handicap och banor ni redan funderar pa.',
-  zh: 'å»ºè®®ä¸€å¹¶å‘ŠçŸ¥ï¼šå‡ºè¡Œæ—¥æœŸã€äººæ•°ã€ä½å®¿åŒºåŸŸã€å·®ç‚¹èŒƒå›´ï¼Œä»¥åŠæ‚¨å·²è€ƒè™‘çš„çƒåœºã€‚',
+  zh: '\u{5EFA}\u{8BAE}\u{4E00}\u{5E76}\u{544A}\u{77E5}\u{FF1A}\u{51FA}\u{884C}\u{65E5}\u{671F}\u{3001}\u{4EBA}\u{6570}\u{3001}\u{4F4F}\u{5BBF}\u{533A}\u{57DF}\u{3001}\u{5DEE}\u{70B9}\u{8303}\u{56F4}\u{FF0C}\u{4EE5}\u{53CA}\u{60A8}\u{5DF2}\u{8003}\u{8651}\u{7684}\u{7403}\u{573A}\u{3002}',
 }
 
 const CONTACT_TRUST = {
@@ -600,9 +600,9 @@ const CONTACT_TRUST = {
     credit: 'Jo, Play With A Pro-kund',
   },
   zh: {
-    eyebrow: 'ä¸ºä»€ä¹ˆå¤§å®¶ä¼šæ¥å’¨è¯¢',
-    quote: 'åªæ‰“äº† 18 æ´žï¼Œæˆ‘å°±å‘çŽ°è‡ªå·±çš„æ½œåŠ›è¿˜èƒ½å†å¾€ä¸Šèµ°ä¸€å±‚ã€‚',
-    credit: 'Joï¼ŒåŒåœºé™ªæ‰“å®¢æˆ·',
+    eyebrow: '\u{4E3A}\u{4EC0}\u{4E48}\u{5927}\u{5BB6}\u{4F1A}\u{6765}\u{54A8}\u{8BE2}',
+    quote: '\u{53EA}\u{6253}\u{4E86} 18 \u{6D1E}\u{FF0C}\u{6211}\u{5C31}\u{53D1}\u{73B0}\u{81EA}\u{5DF1}\u{7684}\u{6F5C}\u{529B}\u{8FD8}\u{80FD}\u{518D}\u{5F80}\u{4E0A}\u{8D70}\u{4E00}\u{5C42}\u{3002}',
+    credit: 'Jo\u{FF0C}Play With A Pro \u{5BA2}\u{6237}',
   },
 }
 
