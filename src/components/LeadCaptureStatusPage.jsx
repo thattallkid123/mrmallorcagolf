@@ -27,7 +27,19 @@ export default function LeadCaptureStatusPage({
       <section className="lead-status__body">
         <div className="lead-status__grid">
           <div>
-            <p className="lead-status__eyebrow">What happens next</p>
+            <h2
+              style={{
+                margin: '0 0 0.45rem',
+                color: 'var(--deep)',
+                fontFamily: 'var(--font-serif)',
+                fontSize: '1.02rem',
+                fontWeight: 500,
+                letterSpacing: '-0.01em',
+                textTransform: 'none',
+              }}
+            >
+              What happens next
+            </h2>
             <div className="lead-status__rule" />
             <ul className="lead-status__list">
               {bullets.map((bullet) => (
