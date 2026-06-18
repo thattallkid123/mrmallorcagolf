@@ -94,3 +94,5 @@ outputs/.lh-temp/
 outputs/lighthouse-live/
 outputs/lighthouse-*.json
 outputs/site-ops/
+outputs/*.png
+outputs/pdf-text/
