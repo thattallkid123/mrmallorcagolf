@@ -48,7 +48,7 @@ Use this as the reminder list when a price changes.
 - The old price
 - The new price
 - Course names and variants
-- `€495`, `€950`, and other recurring offer prices
+- `€695`, `€950 total`, and other recurring offer prices
 - `Santa Ponsa 2`, `Santa Ponsa 3`, and any other restricted-access course names
 
 ## Rule of thumb

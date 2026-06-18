@@ -26,13 +26,13 @@ secondaryCta: 'What the day looks like'
 - "Play Mallorca's best courses. Properly." with the sub becoming "A private day with a PGA Advanced Professional who has arranged everything."
 - Or lead with the experience, not the destination: "A private day at Mallorca's best courses." Full stop. One idea, stated once.
 
-**The hero has no price signal at all.** A cold visitor has no idea if this is €150 or €3,000. The `/play-with-a-pro` hero does include the price in body copy: "Solo from €495. Groups from €950." That price anchor should be visible on the homepage too — even a single line. Affluent clients don't need to be protected from the number; showing it reads as confidence.
+**The hero has no price signal at all.** A cold visitor has no idea if this is €150 or €3,000. The `/play-with-a-pro` hero does include the price in body copy: "Solo from €695. Groups from €950 total." That price anchor should be visible on the homepage too — even a single line. Affluent clients don't need to be protected from the number; showing it reads as confidence.
 
 **No social proof above the fold.** The hero has no credential beyond the eyebrow. A brief trust bar directly below the hero (not buried further down) would do a lot of work quickly.
 
 ### Recommended changes
 1. Rewrite the H1 into a single unified thought — no em-italics afterthought.
-2. Add a one-line price anchor in the hero sub: "Private days from €495."
+2. Add a one-line price anchor in the hero sub: "Private days from €695."
 3. Add a 4-item credential bar directly beneath the hero (see Section 2).
 
 ---
@@ -47,7 +47,7 @@ This renders as a pale strip of small text between the intro and the How It Work
 
 ### Why this is a problem
 
-All three audits flag this independently. The reasoning is sound: "TikTok" signals mass-market content creator. "300 million views" signals viral entertainment. Neither credential means anything to someone considering a €495–€3,000 private golf day. A HNWI considering spending €3,000 on a day sees the word "TikTok" and their mental model shifts from "PGA professional" to "social media person who also does golf."
+All three audits flag this independently. The reasoning is sound: "TikTok" signals mass-market content creator. "300 million views" signals viral entertainment. Neither credential means anything to someone considering a €695–€3,000 private golf day. A HNWI considering spending €3,000 on a day sees the word "TikTok" and their mental model shifts from "PGA professional" to "social media person who also does golf."
 
 The Chinese characters "教练" are unexplained to non-Chinese readers and read as either a localisation error or a leftover from a different market.
 
@@ -195,7 +195,7 @@ The `/play-with-a-pro` version is far more specific and persuasive. The homepage
 
 ### Recommended changes
 
-1. Add prices to the homepage tier cards (€495 / €950 / €3,000+). Remove "See pricing" CTA. Change to "Enquire →" that goes directly to `/contact`.
+1. Add prices to the homepage tier cards (€695 / €950 total / €3,000+). Remove "See pricing" CTA. Change to "Enquire →" that goes directly to `/contact`.
 2. Align homepage Signature features to match the fuller `/play-with-a-pro` version.
 3. Add one sentence of specificity to the Signature: name the Michelin restaurant (if there's a primary one) and describe what the video product is.
 
@@ -210,7 +210,7 @@ The structure is strong: hero with price, day description, questionnaire hook, w
 
 **The hero body tries to do too much:**
 ```
-'One course. A full day alongside a PGA Advanced Professional who has arranged everything. Solo from €495. Groups from €950. Green fees additional, confirmed when we speak.'
+'One course. A full day alongside a PGA Advanced Professional who has arranged everything. Solo from €695. Groups from €950 total. Green fees additional, confirmed when we speak.'
 ```
 Good information, but "Green fees additional, confirmed when we speak" is a caveat in the first sentence. It's the right disclosure but wrong placement — it slightly undercuts the confident opening. Move the caveat into the package notes (where it already appears) and let the hero breathe.
 

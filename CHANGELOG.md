@@ -5,6 +5,20 @@
 - **Cowork tasks:** Handled by separate weekly scheduled pull → no manual entries needed
 - **Format:** Entries grouped by date, tagged by type ([site] [admin] [automation] etc.)
 
+## 2026-06-15
+
+### Mr Mallorca Golf
+- [content] Produced 3 copy-paste Cowork goal prompts (lead magnets + MailerLite audit, 24 course guide drafts, IG carousel research + China DMC outreach)
+- [admin] Wrote Fable 5.0 strategy + "big things" doc (interactive course selector, cost calculator, itinerary builder, booking dashboard, China selector) saved to Downloads
+- [automation] Set up scheduled task to draft a Fable 5.0 idea while away from PC
+- [business] Designed minimal WhatsApp Business broadcast workflow (Course Reviews / PWAP / Chinese Operators lists) for content distribution and list growth
+- [admin] Built MMG Business & Tax PWA (mmg-business-tax) — pre-filled Julien (€250, PWAP, May 17) and Synove (PWAP, June 5) incomes, integrated Google OAuth Client ID for Drive sync, deployed to Netlify
+- [admin] Financial audit cleanup — deleted old tax/temp files and API keys, renamed Hotel Bendinat partnership doc to MMG_ format, created Q2 2026 summary (€745 income, ~€149 tax) and quarterly tax timeline
+- [admin] Created MMG_SKILL_EMAIL_MANAGEMENT.md covering MailerLite setup, campaigns, automation; archived unused Remotion folder
+- [admin] Reorganized Google Drive — removed Active/ and Working Reference/ folders, moved Skills/ to root, updated all 12 skill file paths and 4 CLAUDE.md references
+- [site] Fixed Scoring Companion (swipe-to-reveal delete button) and Strokes Gained (round setup repositioned, added Clear Round button) apps in mmg-tools, pushed to GitHub/Netlify
+- [site] Added Distribute Large Costs card and smart recurring-deletion ("stop future only") option to zhouffiths-budget app, pushed to GitHub/Netlify
+
 ## 2026-06-11
 
 ### Claude Code Work

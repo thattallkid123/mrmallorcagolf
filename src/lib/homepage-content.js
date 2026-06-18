@@ -224,7 +224,7 @@ export const HOME_CONTENT = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Solo',
-          price: '€495',
+          price: '€695',
           features: [
             'Course matched to your game and handicap',
             'Tee time secured and fully handled',
@@ -240,7 +240,7 @@ export const HOME_CONTENT = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Group',
-          price: '€950',
+          price: '€950 total',
           features: [
             'Up to 3 players, one fixed day rate for Andy',
             'Course matched to your group',
@@ -731,7 +731,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Individual',
-          price: '€495',
+          price: '€695',
           features: [
             'Campo adaptado a tu juego y hándicap',
             'Tee time asegurado y gestionado',
@@ -746,7 +746,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Grupo',
-          price: '€950',
+          price: '€950 total',
           features: [
             'Hasta 3 jugadores, una tarifa fija diaria para Andy',
             'Campo adaptado al grupo',
@@ -897,7 +897,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Solo',
-          price: '€495',
+          price: '€695',
           features: [
             'Parcours adapté à votre jeu et votre handicap',
             'Heure de départ sécurisée et gérée',
@@ -912,7 +912,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Groupe',
-          price: '€950',
+          price: '€950 total',
           features: [
             'Jusqu’à 3 joueurs, un tarif fixe journalier pour Andy',
             'Parcours adapté au groupe',
@@ -1041,7 +1041,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Solo',
-          price: '€495',
+          price: '€695',
           features: [
             'Baan afgestemd op uw spel en handicap',
             'Starttijd geregeld en volledig afgehandeld',
@@ -1056,7 +1056,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Groep',
-          price: '€950',
+          price: '€950 total',
           features: [
             'Tot 3 spelers, één vast dagtarief voor Andy',
             'Baan afgestemd op uw groep',
@@ -1185,7 +1185,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Solo',
-          price: '€495',
+          price: '€695',
           features: [
             'Bana matchad efter ditt spel och handicap',
             'Starttid säkrad och fullt hanterad',
@@ -1200,7 +1200,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Grupp',
-          price: '€950',
+          price: '€950 total',
           features: [
             'Upp till 3 spelare, ett fast dagsarvode för Andy',
             'Bana matchad efter din grupp',
@@ -1346,7 +1346,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: '与 Andy 共打一天',
           name: '单人',
-          price: '€495',
+          price: '€695',
           features: [
             '根据你的水平和差点匹配球场',
             '开球时间已全程安排',
@@ -1362,7 +1362,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: '与 Andy 共打一天',
           name: '小组',
-          price: '€950',
+          price: '€950 total',
           features: [
             '最多 3 人，Andy 固定全天费用',
             '根据小组情况匹配球场',

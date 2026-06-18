@@ -26,7 +26,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       breadcrumbCurrent: 'Play with a Pro',
       eyebrow: 'A Private Day on Course · Mallorca',
       title: 'One course. 18 holes.\nMe alongside you the whole way.',
-      body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. Book it as a standalone day, or add it to a trip I plan for you. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €495. Groups from €950.',
+      body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. Book it as a standalone day, or add it to a trip I plan for you. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €695. Groups from €950 total.',
       price: null,
       primaryCta: 'Enquire →',
       primaryHref: '/contact',
@@ -97,7 +97,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         applyTierFlags({
           eyebrow: 'A Day With Andy',
           name: 'Solo',
-          price: '€495',
+          price: '€695',
           note: "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
           features: [
             'Course matched to your game and handicap',
@@ -112,7 +112,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         applyTierFlags({
           eyebrow: 'A Day With Andy',
           name: 'Group',
-          price: '€950',
+          price: '€950 total',
           noteLines: [
             "Andy's fixed day rate for 2 or 3 golfers.",
             "Golf course green fee and lunch are separate.",
@@ -857,7 +857,7 @@ function mergeDeep(base, override) {
 const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   de: {
     hero: {
-      body: 'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €495. Gruppen ab €950. Greenfees zusätzlich, werden bei der Anfrage bestätigt.',
+      body: 'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 total. Greenfees zusätzlich, werden bei der Anfrage bestätigt.',
       price: null,
     },
     packages: {
@@ -906,7 +906,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   es: {
     hero: {
-      body: 'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €495. Grupos desde €950. Green fees adicionales, confirmados cuando hablemos.',
+      body: 'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 total. Green fees adicionales, confirmados cuando hablemos.',
       price: null,
     },
     packages: {
@@ -955,7 +955,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   fr: {
     hero: {
-      body: "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. Solo à partir de 594 €. Groupes à partir de 950 €. Green fees en plus.",
+      body: "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. Solo à partir de 695 €. Groupes à partir de 950 € total. Green fees en plus.",
       price: null,
     },
     packages: {
@@ -1004,7 +1004,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   nl: {
     hero: {
-      body: 'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €495. Groepen vanaf €950. Greenfees bijkomend, bevestigd wanneer we spreken.',
+      body: 'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 total. Greenfees bijkomend, bevestigd wanneer we spreken.',
       price: null,
     },
     packages: {
@@ -1053,7 +1053,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   sv: {
     hero: {
-      body: 'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €495. Grupper från €950. Green fees tillkommer, bekräftas när vi pratar.',
+      body: 'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 total. Green fees tillkommer, bekräftas när vi pratar.',
       price: null,
     },
     packages: {
@@ -1102,7 +1102,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   zh: {
     hero: {
-      body: '一座球场。一整天与一位已经把一切都安排好的英国职业高尔夫协会高级职业教练同组下场。单人方案 €495 起。小组方案 €950 起。果岭费另计。',
+      body: '一座球场。一整天与一位已经把一切都安排好的英国职业高尔夫协会高级职业教练同组下场。单人方案 €695 起。小组方案 €950 total 起。果岭费另计。',
       price: null,
     },
     packages: {

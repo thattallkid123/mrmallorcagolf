@@ -63,7 +63,7 @@ function buildPlayWithAProSchema(locale, content) {
     serviceType,
     offers: {
       '@type': 'AggregateOffer',
-      lowPrice: 595,
+      lowPrice: 695,
       highPrice: 3000,
       priceCurrency: 'EUR',
       url: `${SITE_ORIGIN}${contactPath}`,

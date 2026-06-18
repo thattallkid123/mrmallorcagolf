@@ -317,7 +317,7 @@ export default function ADayPage() {
             { label: "What's included", value: 'Course, tee time, coaching, strategy' },
             { label: 'Lunch', value: 'Included and unhurried' },
             { label: 'Duration', value: 'Typically 5–6 hours' },
-            { label: 'Day rate', value: `${soloOffer.priceDisplay} solo · ${groupOffer.priceDisplay} group (course fee additional)` },
+            { label: 'Day rate', value: `${soloOffer.priceDisplay} solo · ${groupOffer.priceDisplay} total for 2-3 golfers (course fee additional)` },
           ].map(({ label, value }) => (
             <div key={label}>
               <p className="a-day-facts__label">
