@@ -172,8 +172,7 @@ Completion gate for repo work:
 4. `MMG_BRAND_VOICE_GUIDELINES.md` (writing voice)  in Drive/Systems & Planning/
 
 **For current priorities/status:**
-- Check: `MMG_MASTER_TASK_TRACKER.md` (Google Drive / Systems & Planning/)  QUICK STATUS section shows what's in progress, queued, or not started
-- Or: Google Tasks for immediate action items (synced to control panel)
+- Check: Google Tasks (canonical — synced to control panel)
 
 **For business/financial work:**
 - Read: `Google Drive / Mr Mallorca Golf / MMG_MASTER_CONTROL_CENTER.md` (everything links from here)
