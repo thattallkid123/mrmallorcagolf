@@ -60,7 +60,14 @@ These still need a human update outside the repo:
 Recommended wording for those manual updates:
 
 - Solo: `EUR 695`
-- Group: `EUR 950 total for 2-3 golfers`
+- Group, by language:
+  - English: `EUR 950 total for 2-3 golfers`
+  - German: `EUR 950 insgesamt`
+  - Spanish: `EUR 950 en total`
+  - French: `EUR 950 au total`
+  - Dutch: `EUR 950 in totaal`
+  - Swedish: `EUR 950 totalt`
+  - Chinese: `EUR 950 总价`
 - Premium day: `EUR 3,000+`
 - Trip planning: by enquiry
 
