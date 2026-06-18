@@ -1,5 +1,6 @@
 import { getOfferById, getPlayHeroBody, getPlayMultiDayDetail, OFFER_IDS } from './offers-content.js'
 import { TIER_CONFIG } from './content/tier-definitions.js'
+import { normalizeMojibakeDeep } from './text-normalization.js'
 
 /**
  * Helper: Apply tier flags from TIER_CONFIG to tier definition
@@ -857,7 +858,7 @@ function mergeDeep(base, override) {
 const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   de: {
     hero: {
-      body: 'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 total. Greenfees zusätzlich, werden bei der Anfrage bestätigt.',
+      body: 'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.',
       price: null,
     },
     packages: {
@@ -906,7 +907,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   es: {
     hero: {
-      body: 'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 total. Green fees adicionales, confirmados cuando hablemos.',
+      body: 'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.',
       price: null,
     },
     packages: {
@@ -1004,7 +1005,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   nl: {
     hero: {
-      body: 'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 total. Greenfees bijkomend, bevestigd wanneer we spreken.',
+      body: 'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
       price: null,
     },
     packages: {
@@ -1053,7 +1054,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   sv: {
     hero: {
-      body: 'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 total. Green fees tillkommer, bekräftas när vi pratar.',
+      body: 'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.',
       price: null,
     },
     packages: {
@@ -1102,7 +1103,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   zh: {
     hero: {
-      body: '一座球场。一整天与一位已经把一切都安排好的英国职业高尔夫协会高级职业教练同组下场。单人方案 €695 起。小组方案 €950 total 起。果岭费另计。',
+      body: '一座球场。一整天与一位已经把一切都安排好的英国职业高尔夫协会高级职业教练同组下场。单人方案 €695 起。小组方案 €950 总计起。果岭费另计。',
       price: null,
     },
     packages: {
@@ -1796,7 +1797,7 @@ for (const [locale, override] of Object.entries(PLAY_WITH_A_PRO_RELOCALIZED_OVER
 }
 
 export function getPlayWithAProContent(locale = 'en') {
-  const content = PLAY_WITH_A_PRO_CONTENT[locale] || PLAY_WITH_A_PRO_CONTENT.en
+  const content = normalizeMojibakeDeep(PLAY_WITH_A_PRO_CONTENT[locale] || PLAY_WITH_A_PRO_CONTENT.en)
   const soloOffer = getOfferById(OFFER_IDS.solo, locale)
   const groupOffer = getOfferById(OFFER_IDS.group, locale)
   // Keep the visible tier prices aligned with the shared offer library.

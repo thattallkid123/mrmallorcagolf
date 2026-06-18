@@ -7,7 +7,13 @@
 - Signature Day: `EUR 3,000+`
 - Trip planning: enquiry only
 
-The positioning here is intentionally premium. Avoid language that sounds like a split bill or a discount structure. Use `EUR 950 total` or `EUR 950 total for 2-3 golfers` when extra context is needed.
+Note on PDFs:
+
+- The regenerated PDFs were rejected because the output quality was worse than the originals.
+- The four live PDFs in `public/downloads/` were restored to the original tracked versions.
+- If pricing inside those PDFs needs changing later, treat that as a separate manual or Claude follow-up.
+
+The positioning here is intentionally premium. Avoid language that sounds like a split bill or a discount structure. Use the translated "total" wording for each language when extra context is needed.
 
 ## Updated In Code
 
@@ -46,6 +52,11 @@ Key files touched:
 
 These still need a human update outside the repo:
 
+- `about.me`
+- Trust Pilot business page
+- Google business page
+- WhatsApp business page
+- MailerLite live form copy and nurture emails
 - LinkedIn profile text
 - Trustpilot profile text and reply templates
 - Google Reviews request copy
@@ -67,11 +78,11 @@ Recommended wording for those manual updates:
   - French: `EUR 950 au total`
   - Dutch: `EUR 950 in totaal`
   - Swedish: `EUR 950 totalt`
-  - Chinese: `EUR 950 总价`
+  - Chinese: `EUR 950 total`
 - Premium day: `EUR 3,000+`
 - Trip planning: by enquiry
 
 ## Scan Notes
 
-- Exact-price searches for `495` and `595` patterns came back clean in the site, MMG tools, and Mallorca Hub app after the pricing pass.
+- Exact-price searches for legacy pricing patterns came back clean in the site, MMG tools, and Mallorca Hub app after the pricing pass.
 - If any external doc or social channel still shows the legacy solo price, it should be treated as stale and updated to match the new pricing above.

@@ -81,7 +81,7 @@ async function main() {
 
   const structuredCatalog = getStructuredOfferCatalog()
   assert(structuredCatalog.length === 3, 'Structured offer catalog should expose exactly 3 offers')
-  assert(structuredCatalog[0].price === '495', 'Structured solo offer price drifted')
+  assert(structuredCatalog[0].price === '695', 'Structured solo offer price drifted')
   assert(structuredCatalog[1].price === '950', 'Structured group offer price drifted')
 
   console.log('Offer consistency checks passed.')

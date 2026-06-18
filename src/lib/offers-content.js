@@ -1,8 +1,9 @@
+import { normalizeMojibakeDeep } from './text-normalization.js'
+
 const OFFER_IDS = {
   solo: 'mallorca-round',
   group: 'signature-day',
   premium: 'full-andy-day',
-  planning: 'trip-planning',
   undecided: 'not-sure',
 }
 
@@ -10,112 +11,108 @@ const OFFER_CONTENT = {
   en: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'A private 18-hole golf day in Mallorca with Andy Griffiths, or add it to a trip I plan for you. Solo from â‚¬695. Groups from â‚¬950 total. Green fees additional.',
+      'Book Play With A Pro as a standalone private golf day or add it to a planned Mallorca golf trip. Solo from €695. Groups from €950 total. Green fees additional.',
     playHeroBody:
-      'Book it as a standalone private round, or add it to a planned Mallorca golf trip.\nPlay 18 holes alongside a PGA Advanced Professional.\nSolo from â‚¬695. Groups from â‚¬950 total. Green fees additional, confirmed when we speak.',
+      'Book it as a standalone private round, or add it to a planned Mallorca golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €695. Groups from €950 total. Green fees additional, confirmed when we speak.',
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
-    tripPlanningContactLabel: 'Trip planning - build my golf itinerary',
     contactUnknown: 'Not sure yet - advise me',
     offers: {
       [OFFER_IDS.solo]: {
         shortLabel: 'Solo',
         displayName: 'A Day With Andy',
-        fullLabel: 'A Day With Andy - Solo',
-        priceDisplay: 'â‚¬695',
+        fullLabel: 'A Day With Andy -Solo',
+        priceDisplay: '€695',
         priceNumeric: '695',
-        contactPrice: 'â‚¬695',
-        structuredDescription:
-          "Private full day with PGA Advanced Professional Andy Griffiths. Andy's fee for the day. Green fee additional, confirmed when we speak.",
+        contactPrice: '€695',
+        structuredDescription: "Private full day with PGA Advanced Professional Andy Griffiths. Andy's fee for the day. Green fee additional, confirmed when we speak.",
       },
       [OFFER_IDS.group]: {
         shortLabel: 'Group',
         displayName: 'A Day With Andy',
         fullLabel: 'A Day With Andy - Group',
-        priceDisplay: 'â‚¬950 total',
+        priceDisplay: '€950 total',
         priceNumeric: '950',
-        contactPrice: 'â‚¬950 total',
-        structuredDescription:
-          'Full day for groups of up to 3 with PGA Advanced Professional Andy Griffiths. One fixed day rate. Green fees confirmed separately.',
+        contactPrice: '€950 total',
+        structuredDescription: 'Full day for groups of up to 3 with PGA Advanced Professional Andy Griffiths. One fixed day rate. Green fees confirmed separately.',
       },
       [OFFER_IDS.premium]: {
-        fullLabel: 'Signature Day',
-        contactPrice: 'From â‚¬3,000',
-        structuredName: 'Signature Day',
-        structuredDescription:
-          'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From â‚¬3,000 on enquiry.',
+        fullLabel: 'The Full Andy Day',
+        contactPrice: 'From €3,000',
+        structuredName: 'The Full Andy Day',
+        structuredDescription: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From €3,000 on enquiry.',
       },
     },
   },
   de: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Ein privater Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab â‚¬695. Gruppen ab â‚¬950 insgesamt. Greenfees zusÃ¤tzlich.',
+      'Ein privater Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zus?tzlich.',
     playHeroBody:
-      'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab â‚¬695. Gruppen ab â‚¬950 insgesamt. Greenfees zusÃ¤tzlich, werden bei der Anfrage bestÃ¤tigt.',
+      'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zus?tzlich, werden bei der Anfrage best?tigt.',
     playMultiDayDetail:
-      'Der volle Andy Tag. Ein Tag, ein Platz, alles ist arrangiert. Ab â‚¬3.000. Keine Logistik, keine Entscheidungen, nichts zum Organisieren bei der Ankunft. Je nachdem, was Sie vom Tag erwarten, kann dies einen Caddie, einen Videografen, Michelin-Lunch, private Transfers, Spa-Zugang, ein Premium-Leih-Set beinhalten. Andy koordiniert alles im Voraus und bestÃ¤tigt das vollstÃ¤ndige Programm mit Ihnen vor Ihrer Ankunft.',
+      'Der volle Andy Tag. Ein Tag, ein Platz, alles ist arrangiert. Ab €3.000. Keine Logistik, keine Entscheidungen, nichts zum Organisieren bei der Ankunft. Je nachdem, was Sie vom Tag erwarten, kann dies einen Caddie, einen Videografen, Michelin-Lunch, private Transfers, Spa-Zugang, ein Premium-Leih-Set beinhalten. Andy koordiniert alles im Voraus und bestätigt das vollständige Programm mit Ihnen vor Ihrer Ankunft.',
     homeMultiDayBody:
-      'Der volle Andy Tag -ein Platz, alles ist arrangiert. Keine Logistik, keine Entscheidungen, nichts zum Organisieren. Ab â‚¬3.000.',
+      'Der volle Andy Tag -ein Platz, alles ist arrangiert. Keine Logistik, keine Entscheidungen, nichts zum Organisieren. Ab €3.000.',
     contactUnknown: 'Noch unsicher - beraten Sie mich',
     offers: {
       [OFFER_IDS.solo]: {
         shortLabel: 'Solo',
         displayName: 'A Day With Andy',
         fullLabel: 'Ein Tag mit Andy - Solo',
-        priceDisplay: 'â‚¬695',
-        contactPrice: 'â‚¬695',
+        priceDisplay: '€695',
+        contactPrice: '€695',
       },
       [OFFER_IDS.group]: {
         shortLabel: 'Gruppe',
         displayName: 'A Day With Andy',
         fullLabel: 'Ein Tag mit Andy - Gruppe',
-        priceDisplay: 'â‚¬950 insgesamt',
-        contactPrice: 'â‚¬950 insgesamt',
+        priceDisplay: '€950 insgesamt',
+        contactPrice: '€950 insgesamt',
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'Der volle Andy Tag',
-        contactPrice: 'Ab â‚¬3.000',
+        contactPrice: 'Ab €3.000',
       },
     },
   },
   es: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Un dÃ­a privado de golf en Mallorca junto a Andy Griffiths. Solo desde â‚¬695. Grupos desde â‚¬950 en total. Green fees adicionales.',
+      'Un d?a privado de golf en Mallorca junto a Andy Griffiths. Solo desde €695. Grupos desde €950 en total. Green fees adicionales.',
     playHeroBody:
-      'Un campo. Un dÃ­a completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde â‚¬695. Grupos desde â‚¬950 en total. Green fees adicionales, confirmados cuando hablemos.',
+      'Un campo. Un d?a completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.',
     playMultiDayDetail:
-      'El DÃ­a Andy Completo. Un dÃ­a, un campo, todo estÃ¡ organizado. Desde â‚¬3.000. Sin logÃ­stica, sin decisiones, nada que organizar a tu llegada. Dependiendo de lo que quieras del dÃ­a, esto puede incluir un caddie, un videÃ³grafo, almuerzo Michelin, traslados privados, acceso a spa, equipo de alquiler premium. Andy coordina todo por adelantado y confirma el itinerario completo contigo antes de tu llegada.',
+      'El D?a Andy Completo. Un d?a, un campo, todo est? organizado. Desde €3.000. Sin log?stica, sin decisiones, nada que organizar a tu llegada. Dependiendo de lo que quieras del d?a, esto puede incluir un caddie, un vide?grafo, almuerzo Michelin, traslados privados, acceso a spa, equipo de alquiler premium. Andy coordina todo por adelantado y confirma el itinerario completo contigo antes de tu llegada.',
     homeMultiDayBody:
-      'El DÃ­a Andy Completo -un campo, todo estÃ¡ organizado. Sin logÃ­stica, sin decisiones, nada que organizar. Desde â‚¬3.000.',
-    contactUnknown: 'AÃºn no lo sÃ© - aconsÃ©jeme',
+      'El D?a Andy Completo -un campo, todo est? organizado. Sin log?stica, sin decisiones, nada que organizar. Desde €3.000.',
+    contactUnknown: 'A?n no lo s? - acons?jeme',
     offers: {
       [OFFER_IDS.solo]: {
         shortLabel: 'Solo',
         displayName: 'A Day With Andy',
-        fullLabel: 'Un dÃ­a con Andy - Solo',
-        priceDisplay: 'â‚¬695',
-        contactPrice: 'â‚¬695',
+        fullLabel: 'Un d?a con Andy - Solo',
+        priceDisplay: '€695',
+        contactPrice: '€695',
       },
       [OFFER_IDS.group]: {
         shortLabel: 'Grupo',
         displayName: 'A Day With Andy',
-        fullLabel: 'Un dÃ­a con Andy - Grupo',
-        priceDisplay: 'â‚¬950 en total',
-        contactPrice: 'â‚¬950 en total',
+        fullLabel: 'Un d?a con Andy - Grupo',
+        priceDisplay: '€950 en total',
+        contactPrice: '€950 en total',
       },
       [OFFER_IDS.premium]: {
-        fullLabel: 'El DÃ­a Andy Completo',
-        contactPrice: 'Desde â‚¬3.000',
+        fullLabel: 'El D?a Andy Completo',
+        contactPrice: 'Desde €3.000',
       },
     },
   },
   fr: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Une journee de golf privee a Majorque aux cotes d\'Andy Griffiths. Solo a partir de â‚¬695. Groupes a partir de â‚¬950 au total. Green fees additionnels.',
+      'Une journee de golf privee a Majorque aux cotes d\'Andy Griffiths. Solo a partir de €695. Groupes a partir de €950 au total. Green fees additionnels.',
     playHeroBody:
       'Un parcours. Une journee complete aux cotes d\'un PGA Advanced Professional qui a tout organise. En solo a partir de 695 EUR. Groupes a partir de 950 EUR au total. Green fees additionnels, confirmes lors de notre conversation.',
     playMultiDayDetail:
@@ -127,16 +124,16 @@ const OFFER_CONTENT = {
       [OFFER_IDS.solo]: {
         shortLabel: 'Solo',
         displayName: 'A Day With Andy',
-        fullLabel: 'Une journÃ©e avec Andy - Solo',
-        priceDisplay: 'â‚¬695',
-        contactPrice: 'â‚¬695',
+        fullLabel: 'Une journ?e avec Andy - Solo',
+        priceDisplay: '€695',
+        contactPrice: '€695',
       },
       [OFFER_IDS.group]: {
         shortLabel: 'Groupe',
         displayName: 'A Day With Andy',
-        fullLabel: 'Une journÃ©e avec Andy - Groupe',
-        priceDisplay: 'â‚¬950 au total',
-        contactPrice: 'â‚¬950 au total',
+        fullLabel: 'Une journ?e avec Andy - Groupe',
+        priceDisplay: '€950 au total',
+        contactPrice: '€950 au total',
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'La Journee Andy Complete',
@@ -147,113 +144,103 @@ const OFFER_CONTENT = {
   nl: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Een privÃ©-golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf â‚¬695. Groepen vanaf â‚¬950 in totaal. Greenfees bijkomend.',
+      'Een priv?-golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf €695. Groepen vanaf €950 in totaal. Greenfees bijkomend.',
     playHeroBody:
-      'EÃ©n baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf â‚¬695. Groepen vanaf â‚¬950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
+      'E?n baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
     playMultiDayDetail:
-      'De Volledige Andy Dag. EÃ©n dag, Ã©Ã©n baan, alles is geregeld. Vanaf â‚¬3.000. Geen logistiek, geen beslissingen, niets om te organiseren bij aankomst. Afhankelijk van wat je van de dag wilt, kan dit een caddie, videograaf, Michelin-lunch, privÃ©vervoer, spavergoeging, premium verhuurapparatuur omvatten. Andy coÃ¶rdineert alles vooraf en bevestigt het volledige programma met je vÃ³Ã³r je aankomst.',
+      'De Volledige Andy Dag. E?n dag, ??n baan, alles is geregeld. Vanaf €3.000. Geen logistiek, geen beslissingen, niets om te organiseren bij aankomst. Afhankelijk van wat je van de dag wilt, kan dit een caddie, videograaf, Michelin-lunch, priv?vervoer, spavergoeding, premium verhuurapparatuur omvatten. Andy co?rdineert alles vooraf en bevestigt het volledige programma met je v??r je aankomst.',
     homeMultiDayBody:
-      'De Volledige Andy Dag -eÃ©n baan, alles is geregeld. Geen logistiek, geen beslissingen, niets om te organiseren. Vanaf â‚¬3.000.',
+      'De Volledige Andy Dag -eén baan, alles is geregeld. Geen logistiek, geen beslissingen, niets om te organiseren. Vanaf €3.000.',
     contactUnknown: 'Nog niet zeker - adviseer me',
     offers: {
       [OFFER_IDS.solo]: {
         shortLabel: 'Solo',
         displayName: 'A Day With Andy',
         fullLabel: 'Een dag met Andy - Solo',
-        priceDisplay: 'â‚¬695',
-        contactPrice: 'â‚¬695',
+        priceDisplay: '€695',
+        contactPrice: '€695',
       },
       [OFFER_IDS.group]: {
         shortLabel: 'Groep',
         displayName: 'A Day With Andy',
         fullLabel: 'Een dag met Andy - Groep',
-        priceDisplay: 'â‚¬950 in totaal',
-        contactPrice: 'â‚¬950 in totaal',
+        priceDisplay: '€950 totaal',
+        contactPrice: '€950 totaal',
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'De Volledige Andy Dag',
-        contactPrice: 'Vanaf â‚¬3.000',
+        contactPrice: 'Vanaf €3.000',
       },
     },
   },
   sv: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'En privat golfdag pÃ¥ Mallorca tillsammans med Andy Griffiths. Solo frÃ¥n â‚¬695. Grupper frÃ¥n â‚¬950 totalt. Green fees tillkommer.',
+      'En privat golfdag p? Mallorca tillsammans med Andy Griffiths. Solo fr?n €695. Grupper fr?n €950 totalt. Green fees tillkommer.',
     playHeroBody:
-      'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo frÃ¥n â‚¬695. Grupper frÃ¥n â‚¬950 totalt. Green fees tillkommer, bekrÃ¤ftas nÃ¤r vi pratar.',
+      'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo fr?n €695. Grupper fr?n €950 totalt. Green fees tillkommer, bekr?ftas n?r vi pratar.',
     playMultiDayDetail:
-      'Den FullstÃ¤ndiga Andy-dagen. En dag, en bana, allt Ã¤r ordnat. FrÃ¥n â‚¬3.000. Ingen logistik, inga beslut, inget att organisera vid ankomst. Beroende pÃ¥ vad du vill frÃ¥n dagen kan detta innefatta en caddie, en videograf, Michelin-lunch, privata transfers, spa-tillgÃ¥ng, premiumklubbor fÃ¶r uthyrning. Andy koordinerar allt pÃ¥ fÃ¶rhand och bekrÃ¤ftar det fullstÃ¤ndiga programmet med dig innan du anlÃ¤nder.',
+      'Den Fullst?ndiga Andy-dagen. En dag, en bana, allt ?r ordnat. Fr?n €3.000. Ingen logistik, inga beslut, inget att organisera vid ankomst. Beroende p? vad du vill fr?n dagen kan detta innefatta en caddie, en videograf, Michelin-lunch, privata transfers, spa-tillg?ng, premiumklubbor f?r uthyrning. Andy koordinerar allt p? f?rhand och bekr?ftar det fullst?ndiga programmet med dig innan du anl?nder.',
     homeMultiDayBody:
-      'Den FullstÃ¤ndiga Andy-dagen -en bana, allt Ã¤r ordnat. Ingen logistik, inga beslut, inget att organisera. FrÃ¥n â‚¬3.000.',
-    contactUnknown: 'Inte sÃ¤ker Ã¤nnu - ge mig rÃ¥d',
+      'Den Fullst?ndiga Andy-dagen -en bana, allt ?r ordnat. Ingen logistik, inga beslut, inget att organisera. Fr?n €3.000.',
+    contactUnknown: 'Inte säker ännu - ge mig råd',
     offers: {
       [OFFER_IDS.solo]: {
         shortLabel: 'Solo',
         displayName: 'A Day With Andy',
         fullLabel: 'En dag med Andy - Solo',
-        priceDisplay: 'â‚¬695',
-        contactPrice: 'â‚¬695',
+        priceDisplay: '€695',
+        contactPrice: '€695',
       },
       [OFFER_IDS.group]: {
         shortLabel: 'Grupp',
         displayName: 'A Day With Andy',
         fullLabel: 'En dag med Andy - Grupp',
-        priceDisplay: 'â‚¬950 totalt',
-        contactPrice: 'â‚¬950 totalt',
+        priceDisplay: '€950 totalt',
+        contactPrice: '€950 totalt',
       },
       [OFFER_IDS.premium]: {
-        fullLabel: 'Den FullstÃ¤ndiga Andy-dagen',
-        contactPrice: 'FrÃ¥n â‚¬3.000',
+        fullLabel: 'Den Fullständiga Andy-dagen',
+        contactPrice: 'Från €3.000',
       },
     },
   },
   zh: {
-    statSoloLabel: 'å•äºº',
+    statSoloLabel: '单人',
     playWithAProMeta:
-      'é©¬ç•¥å¡ç§äºº 18 æ´žé™ªæ‰“æ—¥ï¼ŒAndy Griffiths å…¨ç¨‹åŒè¡Œã€‚å•äºº â‚¬695ï¼Œå°ç»„ä»Ž â‚¬950 ?? èµ·ã€‚æžœå²­è´¹å¦è®¡ã€‚',
+      'A private golf day in Mallorca alongside Andy Griffiths. Solo €695. Groups from €950 total. Green fees additional.',
     playHeroBody:
-      'ä¸€åº§çƒåœºã€‚ä¸Žä¸€ä½è‹±å›½èŒä¸šé«˜å°”å¤«åä¼šé«˜çº§èŒä¸šæ•™ç»ƒåŒç»„ä¸‹åœºä¸€æ•´å¤©ã€‚å•äººæ–¹æ¡ˆ â‚¬695ï¼Œå°ç»„ä»Ž â‚¬950 ?? èµ·ã€‚æžœå²­è´¹å¦è®¡ï¼Œæ²Ÿé€šæ—¶ç¡®è®¤ã€‚',
+      '一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €695。小组从 €950 总计起，果岭费另计。',
     playMultiDayDetail:
-      'å®Œæ•´çš„ Andy æ—¥ï¼šä¸€ä¸ªçƒåœºï¼Œæ‰€æœ‰å®‰æŽ’å¦¥å½“ã€‚â‚¬3,000 èµ·ã€‚åˆ°è¾¾åŽæ— éœ€å¤„ç†ç‰©æµã€å†³å®šæˆ–çŽ°åœºç»„ç»‡ã€‚å¯æŒ‰éœ€è¦å®‰æŽ’çƒç«¥ã€æ‘„å½±ã€ç±³å…¶æž—åˆé¤ã€ç§äººæŽ¥é€ã€æ°´ç–—ç¤¼é‡ã€é«˜çº§ç§Ÿæ†ç­‰ã€‚Andy ä¼šæå‰åè°ƒï¼Œå¹¶åœ¨æ‚¨åˆ°è¾¾å‰ç¡®è®¤å®Œæ•´è¡Œç¨‹ã€‚',
+      '完整的 Andy 日：一个球场，所有安排妥当。€3,000 起。没有物流，没有决定，到达时无需组织任何事务。根据您对这一天的期望，可以包括球童、摄影师、米其林级午餐、私人接送、水疗礼遇、高级球具租赁。Andy 提前协调一切，并在您到达前与您确认完整的行程安排。',
     homeMultiDayBody:
-      'å®Œæ•´çš„ Andy æ—¥ - ä¸€ä¸ªçƒåœºï¼Œæ‰€æœ‰å®‰æŽ’å¦¥å½“ã€‚æ²¡æœ‰ç‰©æµï¼Œæ²¡æœ‰å†³å®šï¼Œæ— éœ€ç»„ç»‡ã€‚â‚¬3,000 èµ·ã€‚',
-    tripPlanningContactLabel: 'è¡Œç¨‹è§„åˆ’ - åˆ¶å®šæˆ‘çš„é©¬ç•¥å¡é«˜å°”å¤«è¡Œç¨‹',
-    contactUnknown: 'è¿˜ä¸ç¡®å®š - è¯·ç»™æˆ‘å»ºè®®',
+      '完整的 Andy 日 -一个球场，所有安排妥当。没有物流，没有决定，无需组织。€3,000 起。',
+    contactUnknown: '暂时不确定 - 请给我建议',
     offers: {
       [OFFER_IDS.solo]: {
-        shortLabel: 'å•äºº',
-        displayName: 'ä¸Ž Andy åŒåœº',
-        fullLabel: 'ä¸Ž Andy åŒåœº - å•äºº',
-        priceDisplay: 'â‚¬695',
-        priceNumeric: '695',
-        contactPrice: 'â‚¬695',
-        structuredDescription:
-          'ä¸Žè‹±å›½èŒä¸šé«˜å°”å¤«åä¼šé«˜çº§èŒä¸šæ•™ç»ƒ Andy Griffiths ä¸€èµ·å®Œæˆçš„ç§äººæ•´å¤©ä½“éªŒã€‚Andy çš„æ—¥è´¹ã€‚æžœå²­è´¹å¦è®¡ï¼Œæ²Ÿé€šæ—¶ç¡®è®¤ã€‚',
+        shortLabel: '单人',
+        displayName: '与 Andy 共度一天',
+        fullLabel: '与 Andy 共度一天 - 单人',
+        priceDisplay: '€695',
+        contactPrice: '€695',
       },
       [OFFER_IDS.group]: {
-        shortLabel: 'å°ç»„',
-        displayName: 'ä¸Ž Andy åŒåœº',
-        fullLabel: 'ä¸Ž Andy åŒåœº - å°ç»„',
-        priceDisplay: 'â‚¬950 ??',
-        priceNumeric: '950',
-        contactPrice: 'â‚¬950 ??',
-        structuredDescription:
-          'æœ€å¤š 3 ä½çƒæ‰‹çš„ç§äººæ•´å¤©ä½“éªŒï¼Œä¸Žè‹±å›½èŒä¸šé«˜å°”å¤«åä¼šé«˜çº§èŒä¸šæ•™ç»ƒ Andy Griffiths åŒåœºã€‚å›ºå®šæ—¥è´¹ã€‚æžœå²­è´¹å¦è®¡ã€‚',
+        shortLabel: '小组',
+        displayName: '与 Andy 共度一天',
+        fullLabel: '与 Andy 共度一天 - 小组',
+        priceDisplay: '€950 总计',
+        contactPrice: '€950 总计',
       },
       [OFFER_IDS.premium]: {
-        fullLabel: 'å®Œæ•´çš„ Andy æ—¥',
-        contactPrice: 'â‚¬3,000 èµ·',
-        structuredName: 'å®Œæ•´çš„ Andy æ—¥',
-        structuredDescription:
-          'ä»Žå¤´åˆ°å°¾æŒ‰æ‚¨çš„éœ€æ±‚å®šåˆ¶ã€‚æŽ¥é€ã€çƒç«¥ã€é«˜å°”å¤«ç†ç–—ã€ç§äººä¸»åŽ¨ã€æ‘„å½±å¸ˆå’Œå…¶ä»–åŠ é…é¡¹ç›®éƒ½ä¼šåœ¨è¡Œç¨‹å‰å®‰æŽ’å¥½ã€‚å’¨è¯¢æŠ¥ä»·ï¼Œâ‚¬3,000 èµ·ã€‚',
+        fullLabel: '完整的 Andy 日',
+        contactPrice: '€3,000 起',
       },
     },
   },
 }
 
 function getOfferLocale(locale = 'en') {
-  return OFFER_CONTENT[locale] || OFFER_CONTENT.en
+  return normalizeMojibakeDeep(OFFER_CONTENT[locale] || OFFER_CONTENT.en)
 }
 
 export function getOfferCopy(locale = 'en') {
@@ -290,40 +277,35 @@ export function getContactExperienceOptions(locale = 'en') {
       getOfferById(OFFER_IDS.premium, locale).fullLabel,
       getOfferById(OFFER_IDS.premium, locale).contactPrice,
     ],
-    [OFFER_IDS.planning, localeContent.tripPlanningContactLabel || OFFER_CONTENT.en.tripPlanningContactLabel, 'Enquiry'],
     [OFFER_IDS.undecided, localeContent.contactUnknown, ''],
   ]
 }
 
 export function getExperienceLabel(id, locale = 'en') {
-  if (id === OFFER_IDS.planning) return getOfferLocale(locale).tripPlanningContactLabel || OFFER_CONTENT.en.tripPlanningContactLabel
   if (id === OFFER_IDS.undecided) return getOfferLocale(locale).contactUnknown
   return getOfferById(id, locale).fullLabel
 }
 
-export function getStructuredOfferCatalog(locale = 'en') {
-  const offerLocale = getOfferLocale(locale)
-  const soloPrefix = locale === 'zh' ? 'å•äºº' : 'Solo'
-  const groupPrefix = locale === 'zh' ? 'å°ç»„' : 'Group'
+export function getStructuredOfferCatalog() {
   return [
     {
       '@type': 'Offer',
-      name: `${soloPrefix} - ${getOfferById(OFFER_IDS.solo, locale).displayName}`,
-      description: getOfferById(OFFER_IDS.solo, locale).structuredDescription,
-      price: getOfferById(OFFER_IDS.solo, locale).priceNumeric,
+      name: `Solo - ${getOfferById(OFFER_IDS.solo, 'en').displayName}`,
+      description: getOfferById(OFFER_IDS.solo, 'en').structuredDescription,
+      price: getOfferById(OFFER_IDS.solo, 'en').priceNumeric,
       priceCurrency: 'EUR',
     },
     {
       '@type': 'Offer',
-      name: `${groupPrefix} - ${getOfferById(OFFER_IDS.group, locale).displayName}`,
-      description: getOfferById(OFFER_IDS.group, locale).structuredDescription,
-      price: getOfferById(OFFER_IDS.group, locale).priceNumeric,
+      name: `Group - ${getOfferById(OFFER_IDS.group, 'en').displayName}`,
+      description: getOfferById(OFFER_IDS.group, 'en').structuredDescription,
+      price: getOfferById(OFFER_IDS.group, 'en').priceNumeric,
       priceCurrency: 'EUR',
     },
     {
       '@type': 'Offer',
-      name: offerLocale.offers[OFFER_IDS.premium].structuredName || getOfferById(OFFER_IDS.premium, locale).structuredName,
-      description: getOfferById(OFFER_IDS.premium, locale).structuredDescription,
+      name: getOfferById(OFFER_IDS.premium, 'en').structuredName,
+      description: getOfferById(OFFER_IDS.premium, 'en').structuredDescription,
       priceCurrency: 'EUR',
     },
   ]

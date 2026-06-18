@@ -1,4 +1,5 @@
 import { getOfferById, OFFER_IDS } from './offers-content.js'
+import { normalizeMojibakeDeep } from './text-normalization.js'
 
 export const PLAN_YOUR_TRIP_CONTENT = {
   en: {
@@ -98,7 +99,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       price: 'Solo ab',
       priceValue: '€695',
       groupLabel: 'Gruppen ab',
-      groupValue: '€950 total',
+      groupValue: '€950 insgesamt',
       priceSuffix: 'Greenfees zusätzlich',
       cta: 'Play With A Pro ansehen',
     },
@@ -149,7 +150,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       price: 'Solo desde',
       priceValue: '€695',
       groupLabel: 'Grupos desde',
-      groupValue: '€950 total',
+      groupValue: '€950 en total',
       priceSuffix: 'Green fees aparte',
       cta: 'Ver Play With A Pro',
     },
@@ -200,7 +201,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       price: 'Solo à partir de',
       priceValue: '€695',
       groupLabel: 'Groupes à partir de',
-      groupValue: '€950 total',
+      groupValue: '€950 au total',
       priceSuffix: 'Green fees en plus',
       cta: 'Voir Play With A Pro',
     },
@@ -251,7 +252,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       price: 'Solo vanaf',
       priceValue: '€695',
       groupLabel: 'Groepen vanaf',
-      groupValue: '€950 total',
+      groupValue: '€950 in totaal',
       priceSuffix: 'Greenfees extra',
       cta: 'Bekijk Play With A Pro',
     },
@@ -302,7 +303,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       price: 'Solo från',
       priceValue: '€695',
       groupLabel: 'Grupper från',
-      groupValue: '€950 total',
+      groupValue: '€950 totalt',
       priceSuffix: 'Green fee tillkommer',
       cta: 'Se Play With A Pro',
     },
@@ -353,7 +354,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       price: '单人起价',
       priceValue: '€695',
       groupLabel: '团体起价',
-      groupValue: '€950 total',
+      groupValue: '€950 总计',
       priceSuffix: '果岭费另计',
       cta: '查看同场陪打',
     },
@@ -361,7 +362,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
 }
 
 export function getPlanYourTripContent(locale = 'en') {
-  const content = PLAN_YOUR_TRIP_CONTENT[locale] || PLAN_YOUR_TRIP_CONTENT.en
+  const content = normalizeMojibakeDeep(PLAN_YOUR_TRIP_CONTENT[locale] || PLAN_YOUR_TRIP_CONTENT.en)
   const soloOffer = getOfferById(OFFER_IDS.solo, locale)
   const groupOffer = getOfferById(OFFER_IDS.group, locale)
 

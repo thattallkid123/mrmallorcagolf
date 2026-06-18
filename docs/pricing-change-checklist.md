@@ -23,16 +23,33 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 
 - `mmg-tools/day-cost/`
 - `mmg-tools/guide/`
+- `mmg-tools/internal/`
 - `standalone-apps/mallorca-hub/`
+- `prototypes/course-selector-simple/index.html`
+- `prototypes/hotel-recommender/index.html`
+- `prototypes/golf-day-builder/index.html`
+- `prototypes/golf-cost-calculator/index.html`
+- `prototypes/index.html`
 - Any other app or tool that shows the same course or package price
 
 ## 4. Update docs and reference layers
 
+- `src/lib/signup-config.js`
+- `src/app/api/lead-magnet-signup/route.js`
+- `public/downloads/*.pdf` via `python scripts/generate-lead-magnet-pdfs.py`
 - `docs/content-architecture.md`
 - `docs/CONTENT_STRUCTURE.md`
+- `docs/pricing-handover-2026-06-18.md`
 - `CLAUDE.md`
 - `README.md`
 - Any audit, handover, or encyclopaedia/reference note that mentions the price
+
+Manual surfaces to remember in the same pass:
+
+- `about.me`
+- Trust Pilot business page
+- Google business page
+- WhatsApp business page
 
 ## 5. Keep the visibility rules straight
 
@@ -45,4 +62,6 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 
 - Search for the old and new price strings
 - Check the course pages, guide cards, and pricing tools
+- Regenerate the lead magnet PDFs if any PDF-visible price changed
+- Run `npm run check:content` and fix any failures before commit or push
 - Commit and push the repo(s) that changed

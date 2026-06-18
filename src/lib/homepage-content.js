@@ -1,5 +1,6 @@
 import { getHomepageSoloStat, getOfferById, getHomeMultiDayBody, OFFER_IDS } from './offers-content.js'
 import { findCourseByName, getCourseDestination, getCoursePriceMeta } from './golf-courses-helpers.js'
+import { normalizeMojibakeDeep } from './text-normalization.js'
 
 export const HOME_CONTENT = {
   en: {
@@ -746,7 +747,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Grupo',
-          price: '€950 total',
+          price: '€950 en total',
           features: [
             'Hasta 3 jugadores, una tarifa fija diaria para Andy',
             'Campo adaptado al grupo',
@@ -912,7 +913,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Groupe',
-          price: '€950 total',
+          price: '€950 au total',
           features: [
             'Jusqu’à 3 joueurs, un tarif fixe journalier pour Andy',
             'Parcours adapté au groupe',
@@ -1056,7 +1057,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Groep',
-          price: '€950 total',
+          price: '€950 in totaal',
           features: [
             'Tot 3 spelers, één vast dagtarief voor Andy',
             'Baan afgestemd op uw groep',
@@ -1200,7 +1201,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: 'Play With A Pro',
           name: 'Grupp',
-          price: '€950 total',
+          price: '€950 totalt',
           features: [
             'Upp till 3 spelare, ett fast dagsarvode för Andy',
             'Bana matchad efter din grupp',
@@ -1362,7 +1363,7 @@ const HOME_OVERRIDES = {
         {
           eyebrow: '与 Andy 共打一天',
           name: '小组',
-          price: '€950 total',
+          price: '€950 总计',
           features: [
             '最多 3 人，Andy 固定全天费用',
             '根据小组情况匹配球场',
@@ -2701,6 +2702,28 @@ function getFeaturedHomeCourseItems() {
   })
 }
 
+function cleanHomeVisibleText(value) {
+  if (typeof value === 'string') {
+    return normalizeMojibakeDeep(value)
+      .replaceAll('\u00C2\u00B7', '·')
+      .replaceAll('\u00C2', '')
+      .replaceAll('\u00E2\u201A\u00AC', '€')
+      .replaceAll('\u00E2\u2020\u2019', '→')
+      .replaceAll('\u00E2\u20AC\u201D', '—')
+      .replaceAll('\u00E2\u20AC\u201C', '–')
+  }
+  if (Array.isArray(value)) {
+    return value.map((item) => cleanHomeVisibleText(item))
+  }
+  if (value && typeof value === 'object') {
+    const output = {}
+    for (const [key, nestedValue] of Object.entries(value)) {
+      output[key] = cleanHomeVisibleText(nestedValue)
+    }
+    return output
+  }
+  return value
+}
 export function getHomeContent(locale = 'en') {
   const content = HOME_CONTENT[locale] || HOME_CONTENT.en
   const localizedPackageItems = HOME_PACKAGE_ITEMS[locale] || HOME_PACKAGE_ITEMS.en
@@ -2729,9 +2752,8 @@ export function getHomeContent(locale = 'en') {
           : content.packages.multiDay,
       }
     : content.packages
-
   if (locale === 'en') {
-    return {
+    return cleanHomeVisibleText({
       ...content,
       ui: HOME_UI_COPY.en,
       packages,
@@ -2741,10 +2763,9 @@ export function getHomeContent(locale = 'en') {
             items: featuredCourseItems,
           }
         : content.courses,
-    }
+    })
   }
-
-  return {
+  return cleanHomeVisibleText({
     ...content,
     ui: HOME_UI_COPY[locale] || HOME_UI_COPY.en,
     experience: content.experience
@@ -2760,5 +2781,5 @@ export function getHomeContent(locale = 'en') {
           items: localizeHomeFeaturedItems(featuredCourseItems, locale),
         }
       : content.courses,
-  }
+  })
 }
