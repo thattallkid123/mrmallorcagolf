@@ -152,6 +152,13 @@ Common folders to mount: Downloads, Documents, specific project folders.
 | GA4 report | `python ga4_analytics/ga4_report.py` |
 **Local path:** `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`
 
+Completion gate for repo work:
+- A push is not complete just because GitHub accepted it.
+- Do not report repo work as done until the required local checks have passed after the final edit set in the same worktree.
+- Minimum gate for site content or pricing work: `npm run check:content`.
+- Minimum gate for deploy-sensitive site work: `npm run check:content` and `npm run build`, plus any locale or visual checks required by the change.
+- If a push happens before checks are green, treat the task as still in progress until the failures are fixed and the checks pass.
+
 ## Start Here
 
 **For operations & monitoring:**
@@ -315,6 +322,7 @@ POST https://script.google.com/macros/s/AKfycbw0RzUzzrXzn3inKcggu0deF05wbL2xGlR1
   - run `npm run check:locale-leaks` and `npm run build` after the edit, then scan the rendered Chinese pages for any remaining English copy or mixed-language CTA labels
 - **Large content files:** Do not use fragile editor operations on `guide-post-content.js` or `guides-content.js`; use precise scripted/byte replacement.
 - **Pre-deploy:** Run `npm run check:content`, `npm run build`, and `npm run check:visual`.
+- **Push completion rule:** A successful `git push` only means the branch updated. It does not count as complete until the required local checks pass after the last change.
 
 ## Analytics And SEO Rules
 

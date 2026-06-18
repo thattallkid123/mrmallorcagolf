@@ -21,6 +21,7 @@
     "check:locale-parity": "node scripts/check-locale-parity.js",
     "check:routes": "node --no-warnings scripts/check-route-parity.mjs && node --no-warnings scripts/check-locale-route-files.mjs",
     "check:content-validation": "node scripts/validate-content.mjs",
+    "generate:lead-magnet-pdfs": "python scripts/generate-lead-magnet-pdfs.py",
     "check:i18n-release": "node --no-warnings scripts/locale-release-check.js",
     "check:lighthouse": "node scripts/lighthouse-scorecard.mjs",
     "check:visual": "playwright test",
@@ -46,6 +47,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "docx": "^9.7.1",
     "eslint": "^8",
     "eslint-config-next": "^15.5.18",
     "sharp": "^0.34.5"
