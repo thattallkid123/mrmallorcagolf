@@ -106,13 +106,16 @@ Common folders to mount: Downloads, Documents, specific project folders.
 **Clearly-named folders  no ambiguity about what's inside:**
 
 - **PWAP/**  Post-round coaching feedback (client reviews, feedback templates)
-- **Business Operations & Financial/**  Autonomo setup, Tax filings, Accounting (invoices, expenses, statements)
+- **Business Operations & Financial/**  Autonomo setup, accounting (invoices, expenses, bank statements), tax calculator, finance guides
+  - **Tax & Compliance/** - Tax filings, gestor Q&A, quarterly/annual returns, compliance guides (nested here)
 - **Partnerships/**  Contracts, relationships, outreach emails
 - **Bookings/**  Client itineraries, proposals, terms, booking logic
 - **Content/**  Blog drafts, Chinese content, research, SEO strategy, email templates, article guides
 - **Systems & Planning/**  Operational workflows, checklists, control panels, business logic docs, booking rules
 - **Skills/**  Master skill files (source of truth for SKILLS_SYNC.ps1)
-- **Media/**  Photos, carousels, brand assets, carousel creation guides, photo usage rules, inventory
+- **Scripts/** - Automation scripts: Python (analytics, trends, scorecard sync) + PowerShell (setup check, skills sync)
+- **Media/**  Photos, carousels, blog images, photo/carousel usage guides, inventory
+- **Brand Assets/** - Logos (all colours), font/colour template, email signature
 - **Reference/**  Scorecard master, pricing research, trip guides, brand guidelines, course prestige docs
 - **Private/**
   - **Workbooks/**  All contacts (courses, partners, China operators, sensitive data)
@@ -245,7 +248,7 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 - **Contacts & partnerships:** `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` (3 sheets: Golf Courses 24 + Affiliates 39 incl. website/phone/location + China Operators 15)
 - **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx` (client tracker: names, dates, courses, revenue, follow-ups)
 - **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
-- **Tax & compliance:** `Tax & Compliance/2026/` (documentation, Q&A with gestor)
+- **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/` (documentation, Q&A with gestor)
 - **Archive:** `Archive/` (old audits, temp files, control panel backups)
 - **Reference:** `Reference/` (scorecard PDFs, pricing research)
 - **Skills:** `Skills/MMG_SKILL_*.md` (12 skills  blog, seo, social, carousel, chinese, pipeline, design, nextjs, business-ops, partnerships, repurpose, chinese-backlog)
