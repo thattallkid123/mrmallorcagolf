@@ -20,6 +20,7 @@ echo ""
 FILES=$(sed '/^## File Hygiene Rule/,$d' CLAUDE.md | \
   grep -oE '\b[A-Za-z_/][A-Za-z0-9_/\-]*\.(md|txt|xlsx|ps1|py)' | \
   grep -v '^Users' | \
+  grep -v '^OneDrive' | \
   sort -u)
 
 FOUND=0
