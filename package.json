@@ -25,6 +25,8 @@
     "check:i18n-release": "node --no-warnings scripts/locale-release-check.js",
     "check:lighthouse": "node scripts/lighthouse-scorecard.mjs",
     "check:visual": "playwright test",
+    "check:responsive": "node scripts/responsive-audit.js",
+    "check:responsive:live": "node scripts/responsive-audit.js --base-url https://www.mrmallorcagolf.com",
     "check:ready": "npm run check:content && npm run check:i18n-release && npm run build",
     "predeploy": "npm run check:text && npm run check:i18n-release && npm run build",
     "ops:daily": "node scripts/site-ops/run-daily-health-check.mjs && node scripts/site-ops/generate-master-priority-report.mjs",
