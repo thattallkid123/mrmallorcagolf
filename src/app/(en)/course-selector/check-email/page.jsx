@@ -5,6 +5,10 @@ import LeadCaptureStatusPage from '../../../../components/LeadCaptureStatusPage'
 export const metadata = {
   title: 'Check Your Email | Mallorca Course Selector',
   description: 'Confirm your email to receive Mallorca golf planning notes and selector follow-up from Andy Griffiths.',
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: { canonical: `${SITE_ORIGIN}/course-selector/check-email` },
   openGraph: {
     type: 'website',

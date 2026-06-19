@@ -10,7 +10,6 @@ const HREFLANG_CODES = {
 const SHARED_BASE_PATHS = new Set([
   '/',
   '/about',
-  '/a-day',
   '/plan-your-trip',
   '/play-with-a-pro',
   '/signature-day',
@@ -19,7 +18,7 @@ const SHARED_BASE_PATHS = new Set([
   '/guides',
 ])
 
-const EN_ONLY_BASE_PATHS = new Set(['/itinerary', '/course-selector'])
+const EN_ONLY_BASE_PATHS = new Set(['/a-day', '/itinerary', '/course-selector'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es'])
 

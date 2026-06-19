@@ -5,6 +5,10 @@ import LeadCaptureStatusPage from '../../../../components/LeadCaptureStatusPage'
 export const metadata = {
   title: 'You Are In | Mallorca Course Selector',
   description: 'Your email is confirmed. You are now on the list for Mallorca golf planning notes.',
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: { canonical: `${SITE_ORIGIN}/course-selector/confirmed` },
   openGraph: {
     type: 'website',
