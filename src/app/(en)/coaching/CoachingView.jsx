@@ -20,7 +20,7 @@ export default function CoachingView({ locale = 'en', content }) {
   return (
     <>
       <link rel="preload" as="image" href="/images/coaching-hero.jpg" />
-      <PageLayout lang={locale === 'en' ? undefined : locale}>
+      <PageLayout lang={locale === 'en' ? undefined : locale} trackScrollDepth>
         <RevealObserver />
 
         <header

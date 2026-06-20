@@ -201,7 +201,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
 
   return (
     <>
-      <PageLayout lang={locale}>
+      <PageLayout lang={locale} trackScrollDepth>
         <JsonLd data={buildPlayWithAProSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale, content)} />
         <RevealObserver />

@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import StickyMobileCta from '../../../components/StickyMobileCta'
+import ScrollDepthTracker from '../../../components/ScrollDepthTracker'
 
 const DAY_ARC = [
   {
@@ -76,6 +77,8 @@ const HOTEL_PARTNERS = [
 
 export default function SignatureDayView() {
   return (
+    <>
+    <ScrollDepthTracker />
     <main>
       <section className="pwap-hero pwap-hero--tall">
         <div className="pwap-hero__bg" aria-hidden="true">
@@ -377,5 +380,6 @@ export default function SignatureDayView() {
         secondaryLabel="Message on WhatsApp"
       />
     </main>
+    </>
   )
 }

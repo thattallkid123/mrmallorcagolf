@@ -127,7 +127,7 @@ export default function ADayPage() {
   }, [])
 
   return (
-    <PageLayout>
+    <PageLayout trackScrollDepth>
       <JsonLd data={buildArticleSchema()} />
       <JsonLd data={buildBreadcrumbSchema()} />
       {/* HERO */}
