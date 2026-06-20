@@ -21,6 +21,7 @@ const IGNORE_DIRS = new Set([
   '.next',
   'node_modules',
   'out',
+  'outputs',
   'dist',
   'build',
 ])
@@ -30,6 +31,7 @@ const IGNORE_FILES = new Set([
   path.join('src', 'app', 'golf-courses', 'GolfCoursesClient.jsx'),
   'package-lock.json',
 ])
+const MAX_FILE_BYTES = 2 * 1024 * 1024
 
 const QUOTED_STRING_PATTERN = /('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*")/gs
 const DIRECT_PATTERNS = [
@@ -43,7 +45,8 @@ const DIRECT_PATTERNS = [
   /â[€-™]/g,
 ]
 
-const MOJIBAKE_MARKERS = ['Ã', 'Â', '\u0080', '\u0082', '\u0083', '\u009d']
+const MOJIBAKE_MARKERS = ['Ã', '\u0080', '\u0082', '\u0083', '\u009d']
+const SUSPICIOUS_CIRCUMFLEX_A_PATTERN = /Â(?=[^A-Za-zÀ-ÿ])/g
 
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -84,7 +87,9 @@ function countControlChars(text) {
 }
 
 function countMarkers(text) {
-  return MOJIBAKE_MARKERS.reduce((total, marker) => total + text.split(marker).length - 1, 0)
+  const baseMarkers = MOJIBAKE_MARKERS.reduce((total, marker) => total + text.split(marker).length - 1, 0)
+  const suspiciousCircumflexA = text.match(SUSPICIOUS_CIRCUMFLEX_A_PATTERN)?.length || 0
+  return baseMarkers + suspiciousCircumflexA
 }
 
 function goodness(text) {
@@ -112,7 +117,8 @@ function isBetterScore(candidate, current) {
 }
 
 function maybeRepair(text) {
-  const hasMarkers = MOJIBAKE_MARKERS.some((marker) => text.includes(marker))
+  const hasSuspiciousCircumflexA = /Â(?=[^A-Za-zÀ-ÿ])/.test(text)
+  const hasMarkers = MOJIBAKE_MARKERS.some((marker) => text.includes(marker)) || hasSuspiciousCircumflexA
   const looksLikeCjkMojibake = countCjk(text) === 0 && countLatinSupplement(text) >= 6
 
   if (!hasMarkers && !looksLikeCjkMojibake) return text
@@ -182,6 +188,9 @@ function collectDirectMatches(content) {
 const findings = []
 
 for (const file of walk(ROOT)) {
+  const { size } = fs.statSync(file)
+  if (size > MAX_FILE_BYTES) continue
+
   const raw = fs.readFileSync(file)
   const content = raw.toString('utf8')
   const quotedFixes = collectQuotedStringFixes(content)
