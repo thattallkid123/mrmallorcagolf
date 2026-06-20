@@ -65,7 +65,7 @@ export default function ToolsIndex() {
         .ti-hero {
           background: #2D4A3E;
           color: #F7F4EF;
-          padding: 120px 24px 56px;
+          padding: 100px 24px 28px;
           text-align: center;
         }
         .ti-eyebrow {
@@ -76,25 +76,19 @@ export default function ToolsIndex() {
           letter-spacing: .18em;
           text-transform: uppercase;
           color: #CBA968;
-          margin-bottom: 16px;
+          margin-bottom: 10px;
         }
         .ti-h1 {
           font-family: 'Cormorant Garamond', Georgia, serif;
           font-weight: 500;
-          font-size: clamp(2.2rem, 5vw, 3.4rem);
+          font-size: clamp(1.6rem, 4vw, 2.2rem);
           line-height: 1.1;
           color: #F7F4EF;
           max-width: 640px;
           margin: 0 auto;
         }
         .ti-sub {
-          font-family: 'Jost', sans-serif;
-          font-weight: 300;
-          font-size: 1rem;
-          line-height: 1.65;
-          color: rgba(247,244,239,0.78);
-          max-width: 500px;
-          margin: 18px auto 0;
+          display: none;
         }
         .ti-wrap {
           max-width: 760px;
