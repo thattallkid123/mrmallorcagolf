@@ -262,10 +262,11 @@ export default function ZhCourseSelectorClient() {
         /* Intro card */
         .intro-card { background: #fff; padding: 52px 48px; margin-top: 40px; box-shadow: 0 22px 60px rgba(18,17,15,0.08); text-align: center; border-top: 3px solid #B8973C; }
         .intro-card h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.5vw, 2rem); color: #1A1916; margin-bottom: 14px; line-height: 1.1; }
-        .intro-card p { font-size: 15px; color: #8A7F74; margin-bottom: 0; line-height: 1.72; }
-        .intro-trust { display: flex; flex-direction: column; gap: 5px; align-items: center; margin: 22px 0 32px; }
-        .intro-trust span { font-size: 13px; font-weight: 300; color: #8A7F74; }
-        .intro-trust span::before { content: '— '; color: #B8973C; }
+        .intro-card p { font-size: 15px; color: #2C2A27; margin-bottom: 0; line-height: 1.72; }
+        .intro-trust { display: flex; flex-direction: column; gap: 6px; align-items: center; margin: 28px 0 32px; padding: 20px 0; border-top: 1px solid rgba(184,151,60,0.25); border-bottom: 1px solid rgba(184,151,60,0.25); }
+        .intro-trust-label { font-size: 9px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #B8973C; margin-bottom: 6px; }
+        .intro-trust span { font-size: 12px; font-weight: 300; color: #8A7F74; letter-spacing: 0.03em; }
+        .intro-trust span::before { content: ''; }
         /* Progress */
         .progress-row { display: flex; align-items: center; gap: 14px; padding: 32px 0 20px; }
         .progress-track { flex: 1; height: 1px; background: #E0D8CB; overflow: hidden; }
@@ -380,11 +381,14 @@ export default function ZhCourseSelectorClient() {
             <h2>来马略卡打球，先选对球场。</h2>
             <p>岛上 24 座球场，难度与价格差异极大。回答 7 个问题，Andy 教练为您精准匹配最合适的 3 座。</p>
             <div className="intro-trust">
+              <div className="intro-trust-label">Andy 教练资历</div>
               <span>上海执教 11 年 · 普通话流利</span>
               <span>中国国家队球员教练</span>
               <span>PGA 高级职业教练 · Trackman 大师认证</span>
             </div>
-            <button className="btn-action btn-gold-solid" onClick={startQuiz}>开始选球场</button>
+            <div style={{ textAlign: 'center' }}>
+              <button className="btn-action btn-gold-solid" onClick={startQuiz}>开始选球场</button>
+            </div>
           </div>
         )}
 

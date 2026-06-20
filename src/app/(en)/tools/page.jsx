@@ -51,7 +51,7 @@ const TOOLS = [
     eyebrow: '中文工具',
     title: '马略卡高尔夫球场推荐',
     desc: '七个问题，找到最适合你的马略卡岛高尔夫球场。根据你的水平、预算和风格量身推荐。',
-    time: '< 1 分钟',
+    time: '不到1分钟',
     cta: '开始推荐',
     accent: '#2D4A3E',
     zh: true,
@@ -222,7 +222,7 @@ export default function ToolsIndex() {
               <div className="ti-card-desc">{tool.desc}</div>
               <div className="ti-card-footer">
                 <span className="ti-card-cta">{tool.cta}</span>
-                <span className="ti-card-time">Takes {tool.time}</span>
+                <span className="ti-card-time">{tool.zh ? tool.time : `Takes ${tool.time}`}</span>
               </div>
             </Link>
           ))}
