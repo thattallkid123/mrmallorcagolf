@@ -179,6 +179,7 @@ export default function ToolsIndex() {
           justify-content: space-between;
           flex-wrap: wrap;
           gap: 10px;
+          margin-top: auto;
         }
         .ti-card-cta {
           display: inline-block;
