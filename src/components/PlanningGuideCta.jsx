@@ -11,7 +11,7 @@ export default function PlanningGuideCta({ compact = false }) {
         </p>
       </div>
       <div className="planning-guide-cta__form">
-        <Link href="/course-selector" className="planning-guide-cta__button">
+        <Link href="/tools/course-selector" className="planning-guide-cta__button">
           Get my shortlist
         </Link>
         <p className="planning-guide-cta__fineprint">Free. Five questions. Useful before you enquire.</p>

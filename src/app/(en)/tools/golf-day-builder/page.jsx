@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = {
   title: 'Mallorca Golf Day Builder',
   description: 'Eight questions. A complete day plan built around your group.',
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 }
 
 import PageLayout from '../../../../components/PageLayout'

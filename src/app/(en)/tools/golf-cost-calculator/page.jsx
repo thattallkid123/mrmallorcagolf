@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = {
   title: 'Mallorca Golf Trip Cost Calculator',
   description: 'Three steps. A cost estimate for your trip with a suggested course mix.',
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 }
 
 import PageLayout from '../../../../components/PageLayout'

@@ -63,7 +63,7 @@ export default function SubscribeClient() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.7rem,2.8vw,2.4rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.1rem 0" }}>Start with the selector.</h2>
               <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>Most Mallorca golf trips start with too many course names and not enough context. The course selector gives you a first shortlist on the site, then the email notes help you turn that into a sensible trip plan.</p>
             <div style={{ margin: "0 0 1.75rem 0" }}>
-              <Link href="/course-selector" style={{ display: "inline-block", padding: "14px 28px", background: "var(--pine)", color: "#fff", fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none" }}>
+              <Link href="/tools/course-selector" style={{ display: "inline-block", padding: "14px 28px", background: "var(--pine)", color: "#fff", fontFamily: "'Jost', sans-serif", fontWeight: 500, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none" }}>
                 Take the course selector
               </Link>
             </div>

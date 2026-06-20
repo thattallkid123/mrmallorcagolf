@@ -1,9 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { COURSE_SELECTOR_T } from '@lib/course-selector-translations'
+
+const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
+const COURSE_COMPARISON_PDF_URL = '/downloads/course-comparison.pdf'
 
 /* =====================================================================
-   COURSE DATA — ported faithfully from prototypes/course-selector/index.html
+   COURSE DATA. Ported faithfully from prototypes/course-selector/index.html
    Facts verified from src/lib/golf-courses-data.js. Green fees are
    peak/low season indications, not live rates.
    walkability (1–5) is a placeholder estimate (verify before launch).
@@ -86,7 +90,7 @@ const COURSES = [
     played:false,
     bestPlayer:'Casual to low handicap',
     designer:'Jack Nicklaus, 2006 (only Nicklaus design in Mallorca)',
-    michelin:'DINS Santi Taura (1★), Marc Fosh (1★) and Zaranda (1★) are all in Palma, about 15 minutes away — the natural evening after a Puntiró round.',
+    michelin:'DINS Santi Taura (1★), Marc Fosh (1★) and Zaranda (1★) are all in Palma, about 15 minutes away. The natural evening after a Puntiró round.',
     tags:{ability:['casual','confident','low'],style:['scenic','serious','relaxed'],budget:['mid','premium'],group:['friends','solo','couple','corporate']}
   },
   {
@@ -133,9 +137,9 @@ const COURSES = [
     bestPlayer:'Confident to low handicap',
     handicapReq:true,
     designer:'David Kidd, 1999',
-    signatureHole:'Hole 6: 609m par-5 — the longest hole in Spain, known as the Green Monster. Plays downhill toward Camp de Mar with sea views.',
-    michelin:'Sa Clastra (1★) at Castell Son Claret is about 15 minutes away — chef Jordi Cantó, one of two restaurants inside the estate.',
-    pairsWith:'Pair with Golf Santa Ponsa 1 on consecutive days — Andratx for the challenge, Santa Ponsa 1 for the European Tour experience at a lower cost.',
+    signatureHole:'Hole 6: 609m par-5. The longest hole in Spain, known as the Green Monster. Plays downhill toward Camp de Mar with sea views.',
+    michelin:'Sa Clastra (1★) at Castell Son Claret is about 15 minutes away. Chef Jordi Cantó, one of two restaurants inside the estate.',
+    pairsWith:'Pair with Golf Santa Ponsa 1 on consecutive days. Andratx for the challenge, Santa Ponsa 1 for the European Tour experience at a lower cost.',
     tags:{ability:['confident','low'],style:['scenic','bucket-list','serious'],budget:['mid','premium'],group:['friends','solo','couple']}
   },
   {
@@ -229,9 +233,9 @@ const COURSES = [
     played:false,
     bestPlayer:'Casual to confident',
     designer:'José Gancedo (\'Picasso of Golf\'), 1988',
-    signatureHole:'Hole 9: a traditional stone hut sits in the middle of the fairway — the only hole in Mallorca with a built structure as a hazard. Hole 4 has views to Menorca on a clear day.',
+    signatureHole:'Hole 9: a traditional stone hut sits in the middle of the fairway. The only hole in Mallorca with a built structure as a hazard. Hole 4 has views to Menorca on a clear day.',
     michelin:'Cap Vermell Grand Hotel (10 minutes) for dining.',
-    pairsWith:'Pair with Capdepera Golf for a full east coast day — two contrasting courses 15 minutes apart.',
+    pairsWith:'Pair with Capdepera Golf for a full east coast day. Two contrasting courses 15 minutes apart.',
     tags:{ability:['casual','confident','low'],style:['scenic','relaxed','family'],budget:['value','mid'],group:['couple','friends','solo']}
   },
   {
@@ -260,7 +264,7 @@ const COURSES = [
     andy:'Andy\'s tip for the day you land: clubs off the carousel and on the tee within the hour. The grass range is a rarity on the island.',
     played:false,
     bestPlayer:'Casual to low handicap',
-    michelin:'Andreu Genestra (1★ + Green Star) is about 10 minutes away near Llucmajor — seasonal tasting menus, sustainability-led cooking, one of Mallorca\'s most interesting chef-driven restaurants. Book well ahead.',
+    michelin:'Andreu Genestra (1★ + Green Star) is about 10 minutes away near Llucmajor. Seasonal tasting menus, sustainability-led cooking, one of Mallorca\'s most interesting chef-driven restaurants. Book well ahead.',
     tags:{ability:['beginner','casual','confident','low'],style:['relaxed','family','serious'],budget:['value'],group:['friends','family','solo','couple']}
   },
   {
@@ -274,7 +278,7 @@ const COURSES = [
     andy:'Andy\'s view: if you like a course that improves as the round goes on, this is a very good day out. Keep the driver in the bag on the front nine.',
     played:false,
     bestPlayer:'Casual to confident',
-    designer:'Historic layout, 1986. Two nines built at different times — contrasting characters is the story.',
+    designer:'Historic layout, 1986. Two nines built at different times. Contrasting characters is the story.',
     signatureHole:'Back nine opens toward the coast with sea views and a cliffside finish. Friday barbecues with live music at Maxime Restaurant, May–October.',
     tags:{ability:['casual','confident','beginner'],style:['scenic','relaxed','family'],budget:['value','mid'],group:['couple','family','friends']}
   },
@@ -285,13 +289,13 @@ const COURSES = [
     greenFee:'Peak €135 / Low €90',
     buggyNote:'Flat terrain; easy walking, though most use buggies for pace',
     bestFor:'A well-run resort course close to Palma with forgiving fairways and one memorable hole',
-    why:'An open countryside layout near Llucmajor, 15 minutes from Palma and 25 from the airport. Generous fairways and light rough make it accessible for most abilities. The tree-lined holes are where the round comes alive — hole 16, an uphill dogleg-right par-5 finishing at a protected green, is the standout. Flat terrain suits walking.',
+    why:'An open countryside layout near Llucmajor, 15 minutes from Palma and 25 from the airport. Generous fairways and light rough make it accessible for most abilities. The tree-lined holes are where the round comes alive. Hole 16, an uphill dogleg-right par-5 finishing at a protected green, is the standout. Flat terrain suits walking.',
     andy:'The 16th is worth the round alone. Book early to manage pace, and use a running chip on the raised greens rather than trying to land it soft.',
     played:true, reviewSlug:null,
     bestPlayer:'Beginner to confident',
     designer:'Francisco Lopez Segales, 1995',
     signatureHole:'Hole 16: uphill dogleg-right par-5 through trees, finishing at a protected green. One of the most satisfying holes near Palma.',
-    michelin:'Andreu Genestra (1★ + Green Star) is about 10 minutes near Llucmajor — sustainability-led tasting menus, one of Mallorca\'s most interesting restaurants. Book well ahead for evenings.',
+    michelin:'Andreu Genestra (1★ + Green Star) is about 10 minutes near Llucmajor. Sustainability-led tasting menus, one of Mallorca\'s most interesting restaurants. Book well ahead for evenings.',
     pairsWith:'Play Son Antem East the day before as a gentler warm-up, or pair with Golf Maioris for a south-of-Palma double day.',
     tags:{ability:['beginner','casual','confident'],style:['relaxed','family','serious'],budget:['value','mid'],group:['family','friends','couple','solo']}
   },
@@ -300,16 +304,16 @@ const COURSES = [
     area:'Palma', areaLabel:'Na Burguesa · Palma',
     diff10:6, scenery:5, prestige:3, value:5, walkability:2,
     greenFee:'Peak €110 / Low €75',
-    buggyNote:'Front nine walkable; back nine steep — buggy advised unless very fit',
+    buggyNote:'Front nine walkable; back nine steep. Buggy advised unless very fit',
     bestFor:'The best views closest to Palma, at a sensible price',
     why:'Located in the Na Burguesa mountains, 20 minutes from Palma but feeling entirely removed from the city. On a clear day the Castell de Bellver and Palma Cathedral are visible from the upper holes, with the Mediterranean behind. Not a long course, but blind tee shots, sharp doglegs, and elevation swings keep every hole interesting.',
     andy:'More character than most courses at this price level. The views from the back nine are the best available this close to Palma. Walk the front nine and take the buggy for the back if you value your knees.',
     played:true, reviewSlug:null,
     bestPlayer:'Casual to confident',
     designer:'Grupo Harris, 1998',
-    signatureHole:'Hole 12: a short par-3 from an elevated tee with the best views on the course. Hole 13 plays differently than the card suggests — a 9-iron tee shot is the correct play.',
+    signatureHole:'Hole 12: a short par-3 from an elevated tee with the best views on the course. Hole 13 plays differently than the card suggests. A 9-iron tee shot is the correct play.',
     michelin:'DINS Santi Taura (1★), Marc Fosh (1★) and Zaranda (1★) are all in Palma, about 20 minutes from the course.',
-    pairsWith:'Pair with Golf Son Gual on consecutive days — Son Termes at the value end, Son Gual the benchmark.',
+    pairsWith:'Pair with Golf Son Gual on consecutive days. Son Termes at the value end, Son Gual the benchmark.',
     tags:{ability:['casual','confident','low'],style:['scenic','relaxed','value'],budget:['value','mid'],group:['friends','couple','solo','family']}
   },
   {
@@ -320,7 +324,7 @@ const COURSES = [
     buggyNote:'Buggies widely used; walkable but most opt to ride',
     bestFor:'One of the strongest all-round golf experiences on the island',
     why:'Originally designed by John Harris in 1978 and completely rebuilt after a €10 million renovation, T Golf Calvià now feels polished from arrival to finish. Fifteen lakes, wide driving lines, and large undulating greens make it playable without being bland. The sea sits on one side, the Tramuntana on the other. Host of the Mallorca Open.',
-    andy:'Conditioning and service are both at the very top here. The lake system means you need to think on about half the holes — but the lines are generous enough that it plays fair for most levels. One of the courses I recommend most in the Southwest.',
+    andy:'Conditioning and service are both at the very top here. The lake system means you need to think on about half the holes. But the lines are generous enough that it plays fair for most levels. One of the courses I recommend most in the Southwest.',
     played:true, reviewSlug:'t-golf-calvia-review',
     bestPlayer:'Casual to low handicap',
     designer:'John Harris (1978); completely rebuilt, €10m renovation. Host of the Mallorca Open.',
@@ -334,15 +338,15 @@ const COURSES = [
     area:'South', areaLabel:'Llucmajor · South',
     diff10:6, scenery:3, prestige:3, value:4, walkability:4,
     greenFee:'Peak €140 / Low €90 (dynamic)',
-    buggyNote:'Wide, flat terrain — comfortable walking with a trolley',
+    buggyNote:'Wide, flat terrain. Comfortable walking with a trolley',
     bestFor:'A forgiving, family-friendly resort round near Palma',
     why:'The more accessible of the two Son Antem courses. Wide, generous fairways and five lakes keep better players honest without punishing beginners. Designed by Francisco Lopez-Segalés, opened 1994 on a former hunting estate near Llucmajor. Part of the Marriott resort complex. Within 25 minutes of Palma airport.',
     andy:'Start here if your group has mixed abilities. The East course builds confidence and pairs naturally with the West course the following morning for those who want the step up.',
     played:false,
     bestPlayer:'Beginner to casual',
     designer:'Francisco Lopez-Segalés, 1994. Part of the Marriott Son Antem resort.',
-    michelin:'Andreu Genestra (1★ + Green Star) is about 10 minutes near Llucmajor — sustainability-led tasting menus. Book well ahead.',
-    pairsWith:'Play Son Antem East on day one, then Golf Son Antem West the following morning — a satisfying step up in difficulty on the same estate.',
+    michelin:'Andreu Genestra (1★ + Green Star) is about 10 minutes near Llucmajor. Sustainability-led tasting menus. Book well ahead.',
+    pairsWith:'Play Son Antem East on day one, then Golf Son Antem West the following morning. A satisfying step up in difficulty on the same estate.',
     tags:{ability:['beginner','casual'],style:['relaxed','family'],budget:['value','mid'],group:['family','couple','friends','solo']}
   },
   {
@@ -350,16 +354,16 @@ const COURSES = [
     area:'North', areaLabel:'Pollença · North',
     diff10:4, scenery:4, prestige:2, value:5, walkability:4,
     greenFee:'Peak €65 / Low €55 (9 holes)',
-    buggyNote:'Gentle hillside layout — walkable throughout',
+    buggyNote:'Gentle hillside layout. Walkable throughout',
     bestFor:'A scenic afternoon nine near Pollença with Tramuntana views',
-    why:'Nine holes at the entrance to Pollença town, designed by José Gancedo in 1986 and integrated into the hillside. Views of the Tramuntana, the Bay of Pollença, and the Bay of Alcúdia from the higher holes. Compact enough to complete in 90 minutes — ideal as a late-afternoon round, a warm-up, or a first introduction to the game.',
+    why:'Nine holes at the entrance to Pollença town, designed by José Gancedo in 1986 and integrated into the hillside. Views of the Tramuntana, the Bay of Pollença, and the Bay of Alcúdia from the higher holes. Compact enough to complete in 90 minutes. Ideal as a late-afternoon round, a warm-up, or a first introduction to the game.',
     andy:'Play Alcanada in the morning and Pollença in the late afternoon. Back at the hotel by 6pm, nine holes of proper scenery, and one of the best values on the island.',
     played:false,
     bestPlayer:'Beginner to confident',
     designer:'José Gancedo, 1986',
     signatureHole:'Nine holes with views of the Tramuntana, Bay of Pollença, and Bay of Alcúdia from the hillside layout. Pairs perfectly with Alcanada for a full north day.',
     michelin:'Maca de Castro in Port d\'Alcúdia (20 minutes) has excellent local menus.',
-    pairsWith:'Pair with Club de Golf Alcanada as a morning-afternoon combination — the strongest full golf day in the north.',
+    pairsWith:'Pair with Club de Golf Alcanada as a morning-afternoon combination. The strongest full golf day in the north.',
     tags:{ability:['beginner','casual','confident'],style:['scenic','relaxed','family'],budget:['value'],group:['family','couple','friends','solo']}
   },
   {
@@ -367,15 +371,15 @@ const COURSES = [
     area:'Southwest', areaLabel:'Santa Ponsa · Southwest',
     diff10:7, scenery:3, prestige:3, value:5, walkability:3,
     greenFee:'Peak €88 / Low €65 (members + arranged access)',
-    buggyNote:'Buggies available; quiet course — rarely congested',
+    buggyNote:'Buggies available; quiet course. Rarely congested',
     bestFor:'A quiet members-quality round in Santa Ponsa (access arrangeable for Andy\'s clients)',
-    why:'Members-only and usually the least-crowded course in the Southwest cluster. Many tee shots reward a hybrid over a driver: tree-lining is heavy and a ball in the wrong place means chipping back to the fairway. The 18th green is shaped like the island of Mallorca — a detail worth knowing before you play.',
-    andy:'The 18th green is shaped like Mallorca itself. One of those details you want to know before you arrive. I arrange access for clients — mention it when you enquire.',
+    why:'Members-only and usually the least-crowded course in the Southwest cluster. Many tee shots reward a hybrid over a driver: tree-lining is heavy and a ball in the wrong place means chipping back to the fairway. The 18th green is shaped like the island of Mallorca. A detail worth knowing before you play.',
+    andy:'The 18th green is shaped like Mallorca itself. One of those details you want to know before you arrive. I arrange access for clients. Mention it when you enquire.',
     played:true, reviewSlug:null,
     bestPlayer:'Casual to confident',
     designer:'Opened 1991 · Members and arranged-access only',
-    signatureHole:'Hole 18: par-3 with a green shaped like the island of Mallorca — unique in Mallorca. The 2nd hole rewards a hybrid off the tee.',
-    pairsWith:'Pair with Golf Santa Ponsa 1 for a full estate day — two very different courses at very different price points.',
+    signatureHole:'Hole 18: par-3 with a green shaped like the island of Mallorca. Unique in Mallorca. The 2nd hole rewards a hybrid off the tee.',
+    pairsWith:'Pair with Golf Santa Ponsa 1 for a full estate day. Two very different courses at very different price points.',
     tags:{ability:['casual','confident','low'],style:['relaxed','serious'],budget:['value','mid'],group:['friends','couple','solo']}
   },
   {
@@ -383,7 +387,7 @@ const COURSES = [
     area:'Southwest', areaLabel:'Santa Ponsa · Southwest',
     diff10:4, scenery:3, prestige:2, value:5, walkability:4,
     greenFee:'Peak €30 / Low €25 (9 holes · arranged access)',
-    buggyNote:'Compact and flat — walkable throughout',
+    buggyNote:'Compact and flat. Walkable throughout',
     bestFor:'A quick nine for beginners or as an affordable add-on round',
     why:'Nine holes winding through the Santa Ponsa residential community. Most holes are short and well-suited to beginners, juniors, or anyone wanting to practise approach play without the commitment of a full round. At €25–30, one of the most affordable rounds in Mallorca. Access arranged through Andy.',
     andy:'A good choice for the beginner in the group who wants to try the game without pressure. I arrange access.',
@@ -399,8 +403,8 @@ const COURSES = [
     greenFee:'9 holes €14 · 18 holes €22',
     buggyNote:'Walking only (compact par-3 layout)',
     bestFor:'Beginners, juniors, and anyone who wants a quick accurate round in the city',
-    why:'The only official pitch & putt in Mallorca. Nine holes, par 27, all par 3s ranging from 50–100m. Demands accuracy rather than power — a genuinely useful test for anyone working on their short game or new to the game entirely. Club hire available. Central Palma location.',
-    andy:'I use this for coaching introductions — wide enough to swing freely, short enough to focus on technique rather than distance.',
+    why:'The only official pitch & putt in Mallorca. Nine holes, par 27, all par 3s ranging from 50–100m. Demands accuracy rather than power. A genuinely useful test for anyone working on their short game or new to the game entirely. Club hire available. Central Palma location.',
+    andy:'I use this for coaching introductions. Wide enough to swing freely, short enough to focus on technique rather than distance.',
     played:false,
     bestPlayer:'Beginner to casual',
     designer:'Par 27 · 9 holes · The only pitch & putt in Mallorca',
@@ -411,14 +415,14 @@ const COURSES = [
     area:'East', areaLabel:'Manacor · East',
     diff10:5, scenery:4, prestige:2, value:4, walkability:3,
     greenFee:'Included for hotel guests · Not available to the public',
-    buggyNote:'Calm estate course — walkable with a trolley',
+    buggyNote:'Calm estate course. Walkable with a trolley',
     bestFor:'Guests of Reserva Rotana who want golf on the estate between rounds at Capdepera or Pula',
     why:'A private 9-hole course at Reserva Rotana near Manacor, available exclusively for hotel guests as part of the stay experience. Gently rolling estate terrain with a driving range, chipping green, practice bunkers, and a par-3 training area. Not a course you can book independently.',
     andy:'Rotana is a beautiful property and the estate course is a good morning warm-up before heading east. Not a standalone round.',
     played:false,
     bestPlayer:'Beginner to confident',
     designer:'Private 9-hole estate course · Hotel guests only',
-    michelin:'VORO (2★) at Cap Vermell Grand Hotel is about 25 minutes — Mallorca\'s only two-star restaurant.',
+    michelin:'VORO (2★) at Cap Vermell Grand Hotel is about 25 minutes. Mallorca\'s only two-star restaurant.',
     pairsWith:'Use the estate course for warm-up or coaching work, then head to Capdepera or Pula for the main round.',
     tags:{ability:['beginner','casual','confident'],style:['relaxed','luxury'],budget:['value','mid'],group:['couple','solo','friends']}
   },
@@ -544,27 +548,29 @@ function scoreCourse(c, answers) {
 
 const DIFF_LABEL = d => d >= 9 ? `Hard · ${d}/10` : d >= 7 ? `Testing · ${d}/10` : d >= 5 ? `Fair · ${d}/10` : `Gentle · ${d}/10`
 
-function personalMatchLine(c, rank, answers) {
+function personalMatchLine(c, rank, answers, t) {
+  const ml = t.matchLines
   const reasons = []
   if (c.tags.ability.includes(answers.ability)) {
-    const p = {beginner:'the layout suits someone new to the game',casual:'well-matched to a casual holiday golfer',confident:'right for a regular mid-handicapper',low:'a genuine test for a low handicapper'}[answers.ability]
+    const p = ml.ability[answers.ability]
     if (p) reasons.push(p)
   }
   if (c.tags.style.includes(answers.style)) {
-    const p = {luxury:'fits the tone of a luxury trip',scenic:'delivers on scenery',relaxed:'plays at a relaxed pace',serious:'asks real questions of your game',family:'works for a mixed-ability group','bucket-list':'is one of the island\'s famous names'}[answers.style]
+    const p = ml.style[answers.style]
     if (p) reasons.push(p)
   }
-  if (answers.area !== 'flexible' && c.area === answers.area) reasons.push('close to your base')
+  if (answers.area !== 'flexible' && c.area === answers.area) reasons.push(ml.location)
   if (c.tags.budget.includes(answers.budget)) {
-    const p = {value:'at a fair green fee',mid:'at a sensible mid-range price',premium:'priced at the premium tier'}[answers.budget]
+    const p = ml.budget[answers.budget]
     if (p) reasons.push(p)
   }
-  const prefix = ['Strongest match for your answers','Close second','Worth the trip'][rank] || 'Recommended'
-  if (!reasons.length) return `${prefix} — fits your game and trip style.`
+  const prefix = ml.prefix[rank] || 'Recommended'
+  if (!reasons.length) return `${prefix}: ${ml.fallback}`
   return `${prefix}: ${reasons.join(', ')}.`
 }
 
-export default function CourseSelectorToolClient() {
+export default function CourseSelectorToolClient({ lang = 'en' }) {
+  const t = COURSE_SELECTOR_T[lang] || COURSE_SELECTOR_T.en
   const [phase, setPhase] = useState('intro')
   const [qIndex, setQIndex] = useState(0)
   const [answers, setAnswers] = useState({})
@@ -574,6 +580,7 @@ export default function CourseSelectorToolClient() {
   const [emailSent, setEmailSent] = useState(false)
   const [emailError, setEmailError] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
+  const [pdfSent, setPdfSent] = useState(false)
 
   function visibleQuestions(ans) {
     return QUESTIONS.filter(q => {
@@ -675,6 +682,17 @@ export default function CourseSelectorToolClient() {
     setEmailSending(true)
     setEmailError(false)
 
+    // Fire-and-forget: add to MailerLite Course Selector Leads group
+    const mlBody = new URLSearchParams()
+    mlBody.set('fields[email]', email)
+    mlBody.set('ml-submit', '1')
+    mlBody.set('anticsrf', 'true')
+    fetch(MAILERLITE_COURSE_SELECTOR, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: mlBody.toString(),
+    }).catch(() => {})
+
     const bodyHtml = topCourses.map((c, i) => {
       const label = ['Strongest match','Close second','Worth the trip'][i] || 'Recommended'
       return `<div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #EDE9E1;">
@@ -708,6 +726,18 @@ export default function CourseSelectorToolClient() {
     }
   }
 
+  async function requestPdf() {
+    if (!email) return
+    setPdfSent(true)
+    try {
+      await fetch('/api/lead-magnet-signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, guide: 'course-comparison' }),
+      })
+    } catch { /* fire and forget */ }
+  }
+
   function restart() {
     setPhase('intro')
     setQIndex(0)
@@ -717,6 +747,7 @@ export default function CourseSelectorToolClient() {
     setEmail('')
     setEmailSent(false)
     setEmailError(false)
+    setPdfSent(false)
     window.scrollTo({ top: 0 })
   }
 
@@ -772,7 +803,7 @@ export default function CourseSelectorToolClient() {
         /* Course cards */
         .cst-course-card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 22px 60px rgba(18,17,15,0.08); margin-bottom:24px; border:1px solid rgba(26,25,22,0.08); }
         .cst-cc-banner { background:linear-gradient(120deg,#1A1916,#2D4A3E); padding:42px 24px 20px; position:relative; }
-        .cst-cc-rank { position:absolute; top:16px; left:22px; background:#B8973C; color:#fff; font-size:.65rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; padding:5px 13px; border-radius:99px; font-family:'Jost',sans-serif; }
+        .cst-cc-rank { position:absolute; top:12px; left:12px; background:#B8973C; color:#fff; font-size:.65rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; padding:5px 13px; border-radius:99px; font-family:'Jost',sans-serif; }
         .cst-cc-banner h3 { font-family:'Cormorant Garamond',Georgia,serif; color:#F7F4EF; font-size:1.7rem; margin-bottom:10px; line-height:1.1; font-weight:500; }
         .cst-cc-match-line { font-family:'Jost',sans-serif; font-size:.8rem; color:rgba(247,244,239,0.78); line-height:1.55; border-top:1px solid rgba(255,255,255,.14); padding-top:10px; }
         .cst-cc-body { padding:22px 24px 26px; }
@@ -812,9 +843,9 @@ export default function CourseSelectorToolClient() {
 
       {/* HERO */}
       <section className="cst-hero">
-        <span className="cst-eyebrow">Free tool</span>
-        <h1 className="cst-h1">Find your Mallorca course</h1>
-        <p className="cst-sub">Five questions. A shortlist matched to your handicap, budget, and what you want from a round.</p>
+        <span className="cst-eyebrow">{t.hero.eyebrow}</span>
+        <h1 className="cst-h1">{t.hero.h1}</h1>
+        <p className="cst-sub">{t.hero.sub}</p>
       </section>
 
       <div className="cst-wrap">
@@ -822,9 +853,9 @@ export default function CourseSelectorToolClient() {
         {/* INTRO */}
         {phase === 'intro' && (
           <div className="cst-intro-card">
-            <h2>Which courses fit your game?</h2>
-            <p>A 9/10 championship test and a relaxed holiday round are both on this island. Booking the wrong one wastes a day of your trip. This takes under a minute and matches courses to your ability, budget, area and group.</p>
-            <button className="cst-btn gold" onClick={startQuiz}>Start the course finder</button>
+            <h2>{t.intro.h2}</h2>
+            <p>{t.intro.p}</p>
+            <button className="cst-btn gold" onClick={startQuiz}>{t.intro.cta}</button>
           </div>
         )}
 
@@ -836,13 +867,13 @@ export default function CourseSelectorToolClient() {
                 <div className="cst-progress-fill" style={{ width: `${(qIndex / activeQs.length) * 100}%` }} />
               </div>
               <div className="cst-progress-label">
-                <span>Question {qIndex + 1} of {activeQs.length}</span>
-                <span>{Math.round((qIndex / activeQs.length) * 100)}%</span>
+                <span>{t.progress.label(qIndex + 1, activeQs.length)}</span>
+                <span>{t.progress.pct(Math.round((qIndex / activeQs.length) * 100))}</span>
               </div>
             </div>
 
-            <h2 className="cst-q-title">{q.title}</h2>
-            {q.sub && <p className="cst-q-sub">{q.sub}</p>}
+            <h2 className="cst-q-title">{t.questions[q.id]?.title || q.title}</h2>
+            {(t.questions[q.id]?.sub || q.sub) && <p className="cst-q-sub">{t.questions[q.id]?.sub || q.sub}</p>}
 
             <div className={`cst-opts${q.cols ? ' cols-2' : ''}`}>
               {q.options.map(opt => {
@@ -855,8 +886,10 @@ export default function CourseSelectorToolClient() {
                     className={`cst-opt${isSelected ? ' selected' : ''}`}
                     onClick={() => selectOption(q.id, opt.value, q.multi)}
                   >
-                    <span className="cst-opt-label">{opt.label}</span>
-                    {opt.desc && <span className="cst-opt-desc">{opt.desc}</span>}
+                    <span className="cst-opt-label">{t.questions[q.id]?.options?.[opt.value]?.label || opt.label}</span>
+                    {(t.questions[q.id]?.options?.[opt.value]?.desc || opt.desc) && (
+                      <span className="cst-opt-desc">{t.questions[q.id]?.options?.[opt.value]?.desc || opt.desc}</span>
+                    )}
                   </button>
                 )
               })}
@@ -866,7 +899,7 @@ export default function CourseSelectorToolClient() {
                   style={{ gridColumn:'1 / -1', marginTop:'14px', justifySelf:'center', minWidth:'240px' }}
                   onClick={continueMulti}
                 >
-                  Show my courses
+                  {t.progress.showCourses}
                 </button>
               )}
             </div>
@@ -877,7 +910,7 @@ export default function CourseSelectorToolClient() {
                 onClick={goBack}
                 style={{ visibility: qIndex === 0 ? 'hidden' : 'visible' }}
               >
-                ← Back
+                {t.progress.back}
               </button>
               <span />
             </div>
@@ -888,43 +921,41 @@ export default function CourseSelectorToolClient() {
         {phase === 'results' && topCourses.length > 0 && (
           <div>
             <div className="cst-results-head">
-              <span className="cst-eyebrow-sm">Your Matches</span>
-              <h2>Your three courses</h2>
-              <p>
-                {`Three courses matched to your game, a ${({luxury:'luxury',scenic:'scenic',relaxed:'relaxed',serious:'serious golf',family:'family-friendly','bucket-list':'bucket list'}[answers.style] || '')} trip, and ${answers.area === 'flexible' ? 'anywhere on the island' : `the ${answers.area === 'North' ? 'north and east' : answers.area} area`}. Green fees are peak/low season indications — Andy confirms exact rates when booking.`}
-              </p>
+              <span className="cst-eyebrow-sm">{t.results.eyebrow}</span>
+              <h2>{t.results.h2}</h2>
+              <p>{t.results.intro(answers.style, answers.area)}</p>
             </div>
 
             {topCourses.map((c, i) => (
               <div key={c.id} className="cst-course-card">
                 <div className="cst-cc-banner" style={COURSE_IMGS[c.id] ? { backgroundImage: `linear-gradient(120deg, rgba(26,25,22,0.82), rgba(45,74,62,0.75)), url(${COURSE_IMGS[c.id]})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}>
-                  <div className="cst-cc-rank">{['#1 Match','#2 Match','#3 Match'][i]}</div>
+                  <div className="cst-cc-rank">{t.results.ranks[i]}</div>
                   <h3>{c.name}</h3>
-                  <div className="cst-cc-match-line">{personalMatchLine(c, i, answers)}</div>
+                  <div className="cst-cc-match-line">{personalMatchLine(c, i, answers, t)}</div>
                 </div>
                 <div className="cst-cc-body">
-                  <div className="cst-cc-bestfor">Best for: {c.bestFor}</div>
+                  <div className="cst-cc-bestfor">{t.results.bestFor} {c.bestFor}</div>
                   <p className="cst-cc-why">{c.why}</p>
                   <div className="cst-cc-grid">
-                    <div className="cst-cc-stat"><div className="k">Difficulty</div><div className="v">{DIFF_LABEL(c.diff10)}</div></div>
-                    <div className="cst-cc-stat"><div className="k">Location</div><div className="v">{c.areaLabel}</div></div>
-                    <div className="cst-cc-stat"><div className="k">Green fee*</div><div className="v">{c.greenFee}</div></div>
-                    <div className="cst-cc-stat"><div className="k">Walk or ride</div><div className="v">{c.buggyNote}</div></div>
+                    <div className="cst-cc-stat"><div className="k">{t.results.stats.difficulty}</div><div className="v">{DIFF_LABEL(c.diff10)}</div></div>
+                    <div className="cst-cc-stat"><div className="k">{t.results.stats.location}</div><div className="v">{c.areaLabel}</div></div>
+                    <div className="cst-cc-stat"><div className="k">{t.results.stats.greenFee}</div><div className="v">{c.greenFee}</div></div>
+                    <div className="cst-cc-stat"><div className="k">{t.results.stats.walkRide}</div><div className="v">{c.buggyNote}</div></div>
                   </div>
                   {c.handicapReq && (
-                    <div className="cst-cc-hcap">⚠ Handicap certificate required to book this course. Andy can confirm eligibility when you enquire.</div>
+                    <div className="cst-cc-hcap">{t.results.handicapNote}</div>
                   )}
                   <div className="cst-cc-andy">
-                    <strong>Andy says</strong>
+                    <strong>{t.results.andySays}</strong>
                     {c.andy}
                   </div>
                   <div className="cst-cc-actions">
                     <a className="cst-btn gold" href={`${SITE}/contact`} style={{ padding:'11px 22px', fontSize:'.82rem' }}>
-                      Enquire with Andy
+                      {t.results.enquire}
                     </a>
                     {c.reviewSlug && (
                       <a className="cst-cc-review" href={`${SITE}/guides/${c.reviewSlug}`}>
-                        Read review →
+                        {t.results.readReview}
                       </a>
                     )}
                     <label className="cst-compare-check">
@@ -935,31 +966,31 @@ export default function CourseSelectorToolClient() {
                         disabled={!compareSelection.includes(c.id) && compareSelection.length >= 2}
                         style={{ accentColor:'#2D4A3E', width:'16px', height:'16px' }}
                       />
-                      Compare
+                      {t.results.compare}
                     </label>
                   </div>
                 </div>
               </div>
             ))}
 
-            <p className="cst-fee-note">*Peak/low season indications from the course guide. Several courses use dynamic pricing — exact rates confirmed at booking.</p>
+            <p className="cst-fee-note">{t.results.feesNote}</p>
 
             {/* COMPARE TABLE */}
             {compareA && compareB && (
               <div style={{ marginTop:'42px' }}>
                 <div className="cst-results-head">
-                  <span className="cst-eyebrow-sm">Side by Side</span>
-                  <h2 style={{ fontSize:'1.6rem' }}>{compareA.name} or {compareB.name}</h2>
+                  <span className="cst-eyebrow-sm">{t.results.compareSection.eyebrow}</span>
+                  <h2 style={{ fontSize:'1.6rem' }}>{compareA.name} / {compareB.name}</h2>
                 </div>
                 <div className="cst-compare-wrap">
                   <table className="cst-compare">
                     <tbody>
                       <tr><th></th><th>{compareA.name}</th><th>{compareB.name}</th></tr>
-                      <tr><td>Difficulty</td><td>{DIFF_LABEL(compareA.diff10)}</td><td>{DIFF_LABEL(compareB.diff10)}</td></tr>
-                      <tr><td>Location</td><td>{compareA.areaLabel}</td><td>{compareB.areaLabel}</td></tr>
-                      <tr><td>Green fee*</td><td>{compareA.greenFee}</td><td>{compareB.greenFee}</td></tr>
-                      <tr><td>Designer</td><td>{compareA.designer || '—'}</td><td>{compareB.designer || '—'}</td></tr>
-                      <tr><td>Best player type</td><td>{compareA.bestPlayer}</td><td>{compareB.bestPlayer}</td></tr>
+                      <tr><td>{t.results.stats.difficulty}</td><td>{DIFF_LABEL(compareA.diff10)}</td><td>{DIFF_LABEL(compareB.diff10)}</td></tr>
+                      <tr><td>{t.results.stats.location}</td><td>{compareA.areaLabel}</td><td>{compareB.areaLabel}</td></tr>
+                      <tr><td>{t.results.stats.greenFee}</td><td>{compareA.greenFee}</td><td>{compareB.greenFee}</td></tr>
+                      <tr><td>Designer</td><td>{compareA.designer || '–'}</td><td>{compareB.designer || '–'}</td></tr>
+                      <tr><td>{t.results.compareSection.bestPlayer}</td><td>{compareA.bestPlayer}</td><td>{compareB.bestPlayer}</td></tr>
                     </tbody>
                   </table>
                 </div>
@@ -971,15 +1002,15 @@ export default function CourseSelectorToolClient() {
               const extras = answers.extras || []
               const items = []
               if (extras.includes('hotel')) items.push(
-                <a key="hotel" href="/tools/hotel-recommender" className="cst-btn gold" style={{ padding:'12px 22px', fontSize:'.82rem', display:'block', textAlign:'center', marginBottom:'8px' }}>Find hotels near these courses</a>
+                <a key="hotel" href="/tools/hotel-recommender" className="cst-btn gold" style={{ padding:'12px 22px', fontSize:'.82rem', display:'block', textAlign:'center', marginBottom:'8px' }}>{t.results.hotelCta}</a>
               )
               if (extras.includes('coaching')) items.push(
-                <a key="coaching" href={`${SITE}/play-with-a-pro`} target="_blank" rel="noopener" className="cst-btn" style={{ padding:'12px 22px', fontSize:'.82rem', display:'block', textAlign:'center', marginBottom:'8px' }}>Book a Play With A Pro round with Andy</a>
+                <a key="coaching" href={`${SITE}/play-with-a-pro`} target="_blank" rel="noopener" className="cst-btn" style={{ padding:'12px 22px', fontSize:'.82rem', display:'block', textAlign:'center', marginBottom:'8px' }}>{t.results.coachingCta}</a>
               )
               if (!items.length) return null
               return (
                 <div style={{ background:'#EDE9E1', borderRadius:'14px', padding:'18px 20px', marginTop:'16px' }}>
-                  <div style={{ fontFamily:"'Jost',sans-serif", fontSize:'.68rem', textTransform:'uppercase', letterSpacing:'.18em', color:'#8A7F74', marginBottom:'12px' }}>You also asked about</div>
+                  <div style={{ fontFamily:"'Jost',sans-serif", fontSize:'.68rem', textTransform:'uppercase', letterSpacing:'.18em', color:'#8A7F74', marginBottom:'12px' }}>{t.results.extrasHeader}</div>
                   {items}
                 </div>
               )
@@ -987,12 +1018,33 @@ export default function CourseSelectorToolClient() {
 
             {/* FINAL CTA / EMAIL */}
             <div className="cst-final-cta">
-              <span className="cst-eyebrow-sm" style={{ color:'#D4B068', display:'block', marginBottom:'10px' }}>Keep your shortlist</span>
-              <h2>Email yourself these three courses</h2>
-              <p>We'll send the full breakdown: difficulty, green fees, walkability and Andy's note on each, so you can compare with your group before committing to anything.</p>
+              <span className="cst-eyebrow-sm" style={{ color:'#D4B068', display:'block', marginBottom:'10px' }}>{t.results.email.eyebrow}</span>
+              <h2>{t.results.email.h2}</h2>
+              <p>{t.results.email.p}</p>
 
               {emailSent ? (
-                <p style={{ color:'#D4B068', fontSize:'.88rem', marginBottom:'14px' }}>Done. Your three courses are on their way.</p>
+                <div style={{ marginBottom:'20px' }}>
+                  <p style={{ color:'#D4B068', fontSize:'.88rem', marginBottom:'18px' }}>{t.results.email.sent}</p>
+                  {/* PDF offer on success */}
+                  <div style={{ background:'rgba(247,244,239,0.1)', border:'1px solid rgba(184,151,60,0.35)', borderRadius:'12px', padding:'18px 20px', maxWidth:'400px', margin:'0 auto' }}>
+                    <p style={{ color:'#D4B068', fontSize:'.74rem', letterSpacing:'.14em', textTransform:'uppercase', marginBottom:'6px', fontFamily:"'Jost',sans-serif" }}>{t.results.email.pdfLabel}</p>
+                    <p style={{ fontSize:'.82rem', color:'rgba(247,244,239,0.78)', marginBottom:'14px', lineHeight:'1.55' }}>{t.results.email.pdfDesc}</p>
+                    {pdfSent ? (
+                      <p style={{ color:'#D4B068', fontSize:'.82rem' }}>{t.results.email.pdfSent}</p>
+                    ) : (
+                      <a
+                        href={COURSE_COMPARISON_PDF_URL}
+                        target="_blank"
+                        rel="noopener"
+                        className="cst-btn gold"
+                        style={{ padding:'10px 22px', fontSize:'.82rem', display:'inline-block' }}
+                        onClick={requestPdf}
+                      >
+                        {t.results.email.pdfButton}
+                      </a>
+                    )}
+                  </div>
+                </div>
               ) : (
                 <>
                   <div className="cst-email-row">
@@ -1004,38 +1056,38 @@ export default function CourseSelectorToolClient() {
                       onChange={e => setEmail(e.target.value)}
                     />
                     <button className="cst-btn gold" onClick={emailResults} disabled={emailSending} style={{ padding:'12px 26px', flexShrink:'0' }}>
-                      {emailSending ? 'Sending…' : 'Send me my 3 courses'}
+                      {emailSending ? t.results.email.sending : t.results.email.button}
                     </button>
                   </div>
-                  {emailError && <p style={{ color:'#e8b4a8', fontSize:'.88rem', marginBottom:'14px' }}>That didn't go through. Check the address and try again.</p>}
+                  {emailError && <p style={{ color:'#e8b4a8', fontSize:'.88rem', marginBottom:'14px' }}>{t.results.email.error}</p>}
                 </>
               )}
 
-              <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.55)', marginTop:'8px', textAlign:'center' }}>No spam. Andy reads every message and replies personally.</p>
+              <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.55)', marginTop:'8px', textAlign:'center' }}>{t.results.email.spam}</p>
 
               <div style={{ borderTop:'1px solid rgba(255,255,255,.14)', margin:'26px 0 20px' }} />
-              <p style={{ color:'rgba(247,244,239,0.8)', fontSize:'.92rem', marginBottom:'18px', maxWidth:'470px', marginLeft:'auto', marginRight:'auto' }}>Ready to make it real? Andy confirms tee times, arranges access at members' courses, and builds the trip around your golf.</p>
+              <p style={{ color:'rgba(247,244,239,0.8)', fontSize:'.92rem', marginBottom:'18px', maxWidth:'470px', marginLeft:'auto', marginRight:'auto' }}>{t.results.email.planText}</p>
 
               <div className="cst-cta-stack">
-                <a className="cst-btn gold" href={`${SITE}/plan-your-trip`}>Ask Andy to plan this trip</a>
-                <a className="cst-btn" style={{ background:'transparent', borderColor:'#D4B068', color:'#D4B068' }} href={`${SITE}/play-with-a-pro`}>Book a Play With A Pro round</a>
+                <a className="cst-btn gold" href={`${SITE}/plan-your-trip`}>{t.results.email.planCta}</a>
+                <a className="cst-btn" style={{ background:'transparent', borderColor:'#D4B068', color:'#D4B068' }} href={`${SITE}/play-with-a-pro`}>{t.results.email.pwapCta}</a>
               </div>
 
               <div style={{ marginTop:'24px', fontSize:'.8rem', letterSpacing:'.04em' }}>
-                <a href={`${SITE}/golf-courses`} style={{ color:'#D4B068', textDecoration:'underline', textUnderlineOffset:'3px', margin:'0 9px' }}>All course guides</a>
+                <a href={`${SITE}/golf-courses`} style={{ color:'#D4B068', textDecoration:'underline', textUnderlineOffset:'3px', margin:'0 9px' }}>{t.results.email.allCourses}</a>
               </div>
             </div>
 
             <div style={{ display:'flex', gap:'10px', maxWidth:'400px', margin:'20px auto 0', justifyContent:'center' }}>
-              <button className="cst-restart" style={{ flex:1 }} onClick={() => { setPhase('quiz'); setQIndex(activeQs.length - 1); window.scrollTo({ top:0, behavior:'smooth' }) }}>Adjust my answers</button>
-              <button className="cst-restart" style={{ flex:1 }} onClick={restart}>Start over</button>
+              <button className="cst-restart" style={{ flex:1 }} onClick={() => { setPhase('quiz'); setQIndex(activeQs.length - 1); window.scrollTo({ top:0, behavior:'smooth' }) }}>{t.results.adjust}</button>
+              <button className="cst-restart" style={{ flex:1 }} onClick={restart}>{t.results.restart}</button>
             </div>
 
             {/* Floating compare bar */}
             {compareSelection.length > 0 && (
               <div className="cst-compare-bar" style={{ display:'flex' }}>
                 <span>
-                  {compareSelection.length === 1 ? 'Pick one more course to compare' : 'Two courses selected — see table above'}
+                  {compareSelection.length === 1 ? t.results.compare1 : t.results.compare2}
                 </span>
               </div>
             )}

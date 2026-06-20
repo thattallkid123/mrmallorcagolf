@@ -74,14 +74,14 @@ export const LEAD_MAGNETS = {
     description:
       "A side-by-side comparison of Mallorca's top courses across price, difficulty, scenery, walkability, and insider rating - so you can choose in minutes.",
     bullets: [
-      '14 courses rated across 6 key criteria',
-      'Green fees, difficulty, and scenery at a glance',
+      'All 24 courses on the island, compared',
+      'Green fees, difficulty, and best-for at a glance',
       "A PGA pro's honest pick for every type of golfer",
     ],
     downloadUrl: 'https://mrmallorcagolf.com/downloads/course-comparison.pdf',
     buttonLabel: 'Send me the chart',
     metaTitle: 'Mallorca Golf Course Comparison Chart - Free Download',
     metaDescription:
-      "Compare Mallorca's top 14 golf courses side by side. Download the free chart - price, difficulty, scenery, and a PGA pro's honest rating.",
+      "Compare all 24 Mallorca golf courses side by side. Download the free chart - green fees, difficulty, and a PGA pro's honest rating for every type of golfer.",
   },
 }

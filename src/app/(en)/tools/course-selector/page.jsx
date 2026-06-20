@@ -1,9 +1,9 @@
 export const dynamic = 'force-dynamic'
 
 export const metadata = {
-  title: 'Find Your Mallorca Golf Course',
-  description: 'Five questions. A shortlist matched to your handicap, budget, and what you want from a round.',
-  robots: { index: false, follow: false },
+  title: 'Find Your Mallorca Golf Course | Free Course Selector',
+  description: 'Eight questions. A personalised shortlist of Mallorca golf courses matched to your handicap, budget, group and style. Free, instant, no sign-up.',
+  robots: { index: true, follow: true },
 }
 
 import PageLayout from '../../../../components/PageLayout'

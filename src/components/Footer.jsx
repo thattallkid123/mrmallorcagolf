@@ -16,7 +16,7 @@ const FOOTER_COPY = {
     enquire: null,
     newsletter: 'Planning notes',
     newsletterLink: 'Free course selector',
-    newsletterHref: '/course-selector',
+    newsletterHref: '/tools/course-selector',
     privacy: 'Privacy Policy',
     terms: 'Terms & Conditions',
     professional: 'PGA Advanced Professional',

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import ItineraryPlanner from '../itinerary/ItineraryPlanner'
+import CourseSelectorToolClient from '../tools/course-selector/CourseSelectorToolClient'
 import BookingPolicyNotice from '../../../components/BookingPolicyNotice'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import { buildLocalePath } from '../../../lib/site'
@@ -70,7 +70,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               </Link>
             </p>
           </div>
-          <ItineraryPlanner embedded locale={locale} />
+          <CourseSelectorToolClient lang={locale} />
         </div>
       </section>
 

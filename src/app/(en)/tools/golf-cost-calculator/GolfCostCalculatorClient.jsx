@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 /* =====================================================================
-   COST DATA — real 2026 Mallorca pricing ranges (EUR).
+   COST DATA. Real 2026 Mallorca pricing ranges (EUR).
    Source: MMG_COURSE_PRICING_MASTER (May 2026) + market research.
    [lo, hi] = low season to peak season per unit.
 ===================================================================== */
@@ -97,6 +97,9 @@ const DEFAULT_STATE = {
   accommodation: '4star', dining: 'local',
 }
 
+const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
+const COST_GUIDE_PDF_URL = '/downloads/cost-guide.pdf'
+
 export default function GolfCostCalculatorClient() {
   const [step, setStep] = useState(1)
   const [state, setState] = useState({ ...DEFAULT_STATE })
@@ -105,6 +108,7 @@ export default function GolfCostCalculatorClient() {
   const [emailSent, setEmailSent] = useState(false)
   const [emailError, setEmailError] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
+  const [pdfSent, setPdfSent] = useState(false)
 
   function set(key, val) {
     setState(prev => ({ ...prev, [key]: val }))
@@ -124,13 +128,37 @@ export default function GolfCostCalculatorClient() {
     setEmail('')
     setEmailSent(false)
     setEmailError(false)
+    setPdfSent(false)
     goTo(1)
+  }
+
+  async function requestCostPdf() {
+    if (!email) return
+    setPdfSent(true)
+    try {
+      await fetch('/api/lead-magnet-signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, guide: 'cost-guide' }),
+      })
+    } catch { /* fire and forget */ }
   }
 
   async function emailEstimate() {
     if (!email || !email.includes('@')) return
     setEmailSending(true)
     setEmailError(false)
+
+    // Fire-and-forget: add to MailerLite Course Selector Leads
+    const mlBody = new URLSearchParams()
+    mlBody.set('fields[email]', email)
+    mlBody.set('ml-submit', '1')
+    mlBody.set('anticsrf', 'true')
+    fetch(MAILERLITE_COURSE_SELECTOR, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: mlBody.toString(),
+    }).catch(() => {})
     const r = results || calculate(state)
     const s = state
 
@@ -441,7 +469,7 @@ export default function GolfCostCalculatorClient() {
           if (s.buggy === 'yes') save.push('Walk the flatter courses and save buggies for the hilly ones.')
           if (s.clubs === 'yes') save.push('Bringing your own clubs usually beats hiring for 3+ rounds. Check your airline\'s bag fee.')
           if (s.accommodation === '5star' || s.accommodation === 'villa') save.push('A good 4-star near your courses can free up budget for an extra round.')
-          save.push('Travel outside peak spring/autumn weeks — green fees and hotels both drop.')
+          save.push('Travel outside peak spring/autumn weeks. Green fees and hotels both drop.')
 
           const up = []
           if (s.budget === 'value' || s.budget === 'balanced') up.push('If this is a once-in-a-while trip, one bucket-list round (Son Gual, Alcanada, or Andratx) is usually worth the stretch.')
@@ -508,10 +536,28 @@ export default function GolfCostCalculatorClient() {
 
               <div className="gcc-cta-box">
                 <h3>Email yourself this breakdown</h3>
-                <p>We'll send the full cost breakdown and suggested course mix — handy for sharing with the group or setting a budget before you book. Then Andy can refine the real numbers around your dates.</p>
+                <p>We'll send the full cost breakdown and suggested course mix. Handy for sharing with the group or setting a budget before you book. Then Andy can refine the real numbers around your dates.</p>
 
                 {emailSent ? (
-                  <p style={{ fontSize:'13px', color:'#D4B068', marginBottom:'10px' }}>&#10003; Done. Your estimate is on its way.</p>
+                  <div style={{ marginBottom:'14px' }}>
+                    <p style={{ fontSize:'13px', color:'#D4B068', marginBottom:'14px' }}>&#10003; Done. Your estimate is on its way.</p>
+                    {!pdfSent ? (
+                      <div style={{ background:'rgba(247,244,239,0.08)', border:'1px solid rgba(184,151,60,0.3)', borderRadius:'10px', padding:'14px 16px', marginBottom:'10px' }}>
+                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:"'Jost',sans-serif" }}>Also free</p>
+                        <p style={{ fontSize:'13px', color:'rgba(247,244,239,0.78)', marginBottom:'10px', lineHeight:'1.5' }}>The full Mallorca Golf Cost Breakdown PDF. Every green fee, buggy hire and hidden cost, course by course.</p>
+                        <a
+                          href={COST_GUIDE_PDF_URL}
+                          target="_blank"
+                          rel="noopener"
+                          className="gcc-btn gold"
+                          style={{ fontSize:'13px', display:'inline-block', padding:'10px 20px' }}
+                          onClick={requestCostPdf}
+                        >Download free PDF</a>
+                      </div>
+                    ) : (
+                      <p style={{ fontSize:'12px', color:'#D4B068' }}>PDF on its way too.</p>
+                    )}
+                  </div>
                 ) : (
                   <>
                     <div className="gcc-email-capture">

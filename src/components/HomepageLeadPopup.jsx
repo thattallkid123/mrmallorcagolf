@@ -18,11 +18,34 @@ export default function HomepageLeadPopup() {
       }
     }
 
-    const timer = window.setTimeout(() => {
+    let fired = false
+    function show() {
+      if (fired) return
+      fired = true
       setIsVisible(true)
-    }, 7000)
+      window.removeEventListener('scroll', onScroll)
+      document.removeEventListener('mouseleave', onMouseLeave)
+    }
 
-    return () => window.clearTimeout(timer)
+    // Trigger 1: scroll past 50% of page
+    function onScroll() {
+      const scrolled = window.scrollY + window.innerHeight
+      const total = document.documentElement.scrollHeight
+      if (scrolled / total >= 0.5) show()
+    }
+
+    // Trigger 2: exit-intent (mouse leaves viewport through top)
+    function onMouseLeave(e) {
+      if (e.clientY <= 0) show()
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    document.addEventListener('mouseleave', onMouseLeave)
+
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      document.removeEventListener('mouseleave', onMouseLeave)
+    }
   }, [])
 
   function closePopup() {
@@ -47,23 +70,28 @@ export default function HomepageLeadPopup() {
           aria-label="Close popup"
           onClick={closePopup}
         >
-          Close
+          &#x2715;
         </button>
-        <p className="lead-popup__eyebrow">Free Mallorca golf shortlist</p>
-        <h2 id="lead-popup-title">Not sure which courses are worth your time?</h2>
+        <p className="lead-popup__eyebrow">Free Mallorca golf planning</p>
+        <h2 id="lead-popup-title">Choose the right courses before you book.</h2>
         <p className="lead-popup__body">
-          Take the course selector for a first shortlist, then get follow-up planning notes by email.
-          Useful if you are still comparing Son Gual, Alcanada, Son Muntaner and the rest.
+          Answer five quick questions for a shortlist matched to your game. Or download the chart that compares all 24 courses on the island, side by side.
         </p>
         <div className="lead-popup__actions">
-          <Link href="/course-selector" className="lead-popup__primary" onClick={closePopup}>
-            Take the course selector
+          <Link href="/tools/course-selector" className="btn btn--gold" onClick={closePopup}>
+            Find my courses
           </Link>
-          <button type="button" className="lead-popup__secondary" onClick={closePopup}>
-            Not now
-          </button>
+          <a
+            href="/downloads/course-comparison.pdf"
+            target="_blank"
+            rel="noopener"
+            className="btn btn--dark"
+            onClick={closePopup}
+          >
+            Download the PDF chart
+          </a>
         </div>
-        <p className="lead-popup__note">Five quick questions. Useful notes after, not generic newsletter fluff.</p>
+        <p className="lead-popup__note">Both are free, no sign-up needed. Andy reads every message and replies personally.</p>
       </div>
     </div>
   )

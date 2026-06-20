@@ -220,6 +220,18 @@ export default function HotelRecommenderClient() {
   async function sendEmail() {
     if (!email || !email.includes('@')) return
     const hotelNames = results.map(x => x.hotel.name).join(', ')
+
+    // Fire-and-forget: add to MailerLite
+    const mlBody = new URLSearchParams()
+    mlBody.set('fields[email]', email)
+    mlBody.set('ml-submit', '1')
+    mlBody.set('anticsrf', 'true')
+    fetch('https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: mlBody.toString(),
+    }).catch(() => {})
+
     try {
       await fetch('/api/send-itinerary', {
         method: 'POST',

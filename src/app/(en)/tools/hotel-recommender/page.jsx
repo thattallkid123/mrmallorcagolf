@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = {
   title: 'Mallorca Golf Hotel Recommender',
   description: 'Six questions. A personalised hotel shortlist matched to your golf trip.',
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 }
 
 import PageLayout from '../../../../components/PageLayout'

@@ -51,9 +51,9 @@ const COURSES = [
   { id:"vall-dor", name:"Vall d'Or Golf", region:"east", tags:["scenic","relaxed","family"], facts:["Par 71 · 1986","Cliffside finish with east coast sea views"], blurb:"A round that improves as it goes: tight traditional front nine, then the back nine opens toward the coast with sea views and a cliffside finish.", level:"casual+", driveMins:{southwest:75, palma:60, north:45, east:15, south:65} },
   { id:"golf-pollenca", name:"Golf Pollença", region:"north", tags:["scenic","relaxed","family","forgiving"], facts:["Par 35 · 9 holes · José Gancedo, 1986","Views of Tramuntana, Bay of Pollença and Bay of Alcúdia"], blurb:"Nine holes integrated into the hillside above Pollença town: views of the Tramuntana, two bays, and the sea. The right afternoon complement to an Alcanada morning. Completable in 90 minutes.", level:"beginner+", driveMins:{southwest:65, palma:55, north:10, east:50, south:65} },
   { id:"santa-ponsa-2", name:"Golf Santa Ponsa 2", region:"southwest", tags:["relaxed","serious"], facts:["Par 72 · Members + arranged access","18th green shaped like the island of Mallorca"], blurb:"Members-only and usually the quietest course in the Southwest cluster. Tree-lined fairways reward placement over power. Access arranged through Andy.", level:"casual+", driveMins:{southwest:10, palma:25, north:60, east:65, south:35} },
-  { id:"santa-ponsa-3", name:"Golf Santa Ponsa 3 (9 holes)", region:"southwest", tags:["forgiving","relaxed","family"], facts:["Par 35 · 9 holes · Arranged access","€25–30 · one of the most affordable rounds in Mallorca"], blurb:"Nine holes through the Santa Ponsa residential estate: short, accurate, and well-suited to beginners, juniors, or anyone wanting a quick round.", level:"beginner+", driveMins:{southwest:10, palma:25, north:60, east:65, south:35}, note:"9 holes — build this as an afternoon add-on alongside a full round at Santa Ponsa 1 or 2" },
-  { id:"palma-pitch-putt", name:"Palma Pitch & Putt", region:"palma", tags:["forgiving","relaxed","family"], facts:["Par 27 · 9 holes all par-3s · €14–22","The only pitch & putt in Mallorca"], blurb:"The only pitch-and-putt in Mallorca, and the course Andy uses for coaching introductions. All par 3s between 50 and 100m.", level:"beginner+", driveMins:{southwest:25, palma:5, north:55, east:60, south:25}, note:"9 holes — works as a half-day plan, a pre-round warm-up, or an introduction to the game" },
-  { id:"reserva-rotana", name:"Rotana Greens (Reserva Rotana)", region:"east", hotelOnly:true, tags:["relaxed","scenic","luxury"], facts:["9 holes · Hotel guests only · Estate course","Capdepera and Pula within 25 minutes"], blurb:"A private 9-hole estate course at Reserva Rotana near Manacor, available exclusively for hotel guests.", level:"beginner+", driveMins:{southwest:80, palma:60, north:35, east:15, south:70}, note:"Hotel guests only — this option only applies if your group is staying at Reserva Rotana" },
+  { id:"santa-ponsa-3", name:"Golf Santa Ponsa 3 (9 holes)", region:"southwest", tags:["forgiving","relaxed","family"], facts:["Par 35 · 9 holes · Arranged access","€25–30 · one of the most affordable rounds in Mallorca"], blurb:"Nine holes through the Santa Ponsa residential estate: short, accurate, and well-suited to beginners, juniors, or anyone wanting a quick round.", level:"beginner+", driveMins:{southwest:10, palma:25, north:60, east:65, south:35}, note:"9 holes. Build this as an afternoon add-on alongside a full round at Santa Ponsa 1 or 2" },
+  { id:"palma-pitch-putt", name:"Palma Pitch & Putt", region:"palma", tags:["forgiving","relaxed","family"], facts:["Par 27 · 9 holes all par-3s · €14–22","The only pitch & putt in Mallorca"], blurb:"The only pitch-and-putt in Mallorca, and the course Andy uses for coaching introductions. All par 3s between 50 and 100m.", level:"beginner+", driveMins:{southwest:25, palma:5, north:55, east:60, south:25}, note:"9 holes. Works as a half-day plan, a pre-round warm-up, or an introduction to the game" },
+  { id:"reserva-rotana", name:"Rotana Greens (Reserva Rotana)", region:"east", hotelOnly:true, tags:["relaxed","scenic","luxury"], facts:["9 holes · Hotel guests only · Estate course","Capdepera and Pula within 25 minutes"], blurb:"A private 9-hole estate course at Reserva Rotana near Manacor, available exclusively for hotel guests.", level:"beginner+", driveMins:{southwest:80, palma:60, north:35, east:15, south:70}, note:"Hotel guests only. This option only applies if your group is staying at Reserva Rotana" },
 ]
 
 const RESTAURANTS = {
@@ -210,7 +210,7 @@ function whyCourseChosen(course, answers) {
 function buildItineraries(answers) {
   const region = answers.region === 'unbooked' ? 'southwest' : answers.region
   const ranked = scoreAllCourses(answers)
-  // Use top 3 distinct courses — one per plan
+  // Use top 3 distinct courses. One per plan
   const top3 = ranked.slice(0, 3)
   const sw = START_WINDOWS[answers.start]
   const wantsCoaching = answers.addons?.includes('coaching')
@@ -292,6 +292,9 @@ function buildItineraries(answers) {
   return itins
 }
 
+const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
+const TRIP_PLANNER_PDF_URL = '/downloads/trip-planner.pdf'
+
 export default function GolfDayBuilderClient() {
   const [phase, setPhase] = useState('intro') // 'intro' | 'quiz' | 'results'
   const [stepIdx, setStepIdx] = useState(0)
@@ -301,6 +304,7 @@ export default function GolfDayBuilderClient() {
   const [email, setEmail] = useState('')
   const [emailSent, setEmailSent] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
+  const [pdfSent, setPdfSent] = useState(false)
   const [toast, setToast] = useState('')
   const [showToast, setShowToast] = useState(false)
 
@@ -365,7 +369,20 @@ export default function GolfDayBuilderClient() {
     setActiveItin(0)
     setEmail('')
     setEmailSent(false)
+    setPdfSent(false)
     window.scrollTo({ top: 0 })
+  }
+
+  async function requestTripPdf() {
+    if (!email) return
+    setPdfSent(true)
+    try {
+      await fetch('/api/lead-magnet-signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, guide: 'trip-planner' }),
+      })
+    } catch { /* fire and forget */ }
   }
 
   function displayToast(msg) {
@@ -377,6 +394,17 @@ export default function GolfDayBuilderClient() {
   async function emailItinerary() {
     if (!email || !email.includes('@')) return
     setEmailSending(true)
+
+    // Fire-and-forget: add to MailerLite
+    const mlBody = new URLSearchParams()
+    mlBody.set('fields[email]', email)
+    mlBody.set('ml-submit', '1')
+    mlBody.set('anticsrf', 'true')
+    fetch(MAILERLITE_COURSE_SELECTOR, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: mlBody.toString(),
+    }).catch(() => {})
     const builtItins = itins || buildItineraries(answers)
     const bodyHtml = builtItins.map(it => `
       <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #EDE9E1;">
@@ -493,8 +521,9 @@ export default function GolfDayBuilderClient() {
         .gdb-cta-block h3 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.6rem,4vw,2.1rem); font-weight:500; line-height:1.15; max-width:420px; margin:0 auto 12px; }
         .gdb-cta-copy { font-size:.9rem; color:rgba(255,255,255,.72); max-width:400px; margin:0 auto 28px; line-height:1.8; }
         .gdb-cta-grid { display:grid; gap:10px; max-width:380px; margin:0 auto; }
-        .gdb-email-row { display:flex; gap:8px; flex-wrap:wrap; align-items:stretch; }
-        .gdb-email-input { flex:1 1 160px; min-width:0; border:none; padding:14px 16px; font-size:14px; font-family:'Jost',sans-serif; color:#2C2A27; border-radius:999px; }
+        .gdb-email-row { display:flex; flex-direction:column; gap:8px; align-items:center; }
+        .gdb-email-row .gdb-btn-gold { width:100%; }
+        .gdb-email-input { width:100%; border:none; padding:14px 16px; font-size:14px; font-family:'Jost',sans-serif; color:#2C2A27; border-radius:999px; text-align:center; }
         .gdb-email-success { font-size:13px; color:#D4B068; margin:0; }
         .gdb-newsletter-label { display:flex; align-items:center; gap:8px; font-family:'Jost',sans-serif; font-size:12px; color:rgba(255,255,255,.6); cursor:pointer; margin-top:4px; }
         .gdb-cta-secondary { display:flex; gap:8px; margin-top:6px; }
@@ -643,7 +672,25 @@ export default function GolfDayBuilderClient() {
               <p className="gdb-cta-copy">We'll send the full itineraries: timings, courses and Andy's notes, so you can share them with your group and decide together. No spam. Andy replies to every message personally.</p>
               <div className="gdb-cta-grid">
                 {emailSent ? (
-                  <p className="gdb-email-success">&#10003; Done. Your plans are on their way.</p>
+                  <div>
+                    <p className="gdb-email-success">&#10003; Done. Your plans are on their way.</p>
+                    {!pdfSent ? (
+                      <div style={{ background:'rgba(247,244,239,0.08)', border:'1px solid rgba(184,151,60,0.3)', borderRadius:'10px', padding:'14px 16px', margin:'10px 0' }}>
+                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:"'Jost',sans-serif" }}>Also free</p>
+                        <p style={{ fontSize:'13px', color:'rgba(247,244,239,0.78)', marginBottom:'10px', lineHeight:'1.5' }}>The 7-Day Mallorca Golf Itinerary PDF. A ready-to-use week plan with the right courses in the right order.</p>
+                        <a
+                          href={TRIP_PLANNER_PDF_URL}
+                          target="_blank"
+                          rel="noopener"
+                          className="gdb-btn-gold"
+                          style={{ fontSize:'13px', display:'inline-block', textDecoration:'none', padding:'10px 20px', borderRadius:'99px' }}
+                          onClick={requestTripPdf}
+                        >Download free PDF</a>
+                      </div>
+                    ) : (
+                      <p style={{ fontSize:'12px', color:'#D4B068', margin:'6px 0' }}>PDF on its way too.</p>
+                    )}
+                  </div>
                 ) : (
                   <div className="gdb-email-row">
                     <input
@@ -673,9 +720,9 @@ export default function GolfDayBuilderClient() {
             <div className="gdb-more-tools">
               <div className="gdb-more-tools-label">More planning tools</div>
               <div className="gdb-tool-links">
-                <a href="/course-selector" className="gdb-tool-link">Find your courses</a>
-                <a href="/hotel-recommender" className="gdb-tool-link">Find hotels</a>
-                <a href="/golf-trip-calculator" className="gdb-tool-link">Estimate trip cost</a>
+                <a href="/tools/course-selector" className="gdb-tool-link">Find your courses</a>
+                <a href="/tools/hotel-recommender" className="gdb-tool-link">Find hotels</a>
+                <a href="/tools/golf-cost-calculator" className="gdb-tool-link">Estimate trip cost</a>
               </div>
             </div>
 
