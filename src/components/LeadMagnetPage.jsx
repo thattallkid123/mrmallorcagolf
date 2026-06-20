@@ -140,6 +140,14 @@ export default function LeadMagnetPage({ guide }) {
           ))}
         </ul>
 
+        <style>{`
+          @media (max-width: 480px) {
+            .lm-form { flex-direction: column !important; border: none !important; background: transparent !important; overflow: visible !important; }
+            .lm-input { border: 1px solid rgba(44,42,39,0.2); border-radius: 3px; background: #fff; }
+            .lm-btn { border-radius: 3px; text-align: center; }
+          }
+        `}</style>
+
         {status === 'success' ? (
           <div
             style={{
@@ -196,6 +204,7 @@ export default function LeadMagnetPage({ guide }) {
           <>
             <form
               onSubmit={handleSubmit}
+              className="lm-form"
               style={{
                 display: 'flex',
                 width: '100%',
@@ -203,6 +212,7 @@ export default function LeadMagnetPage({ guide }) {
                 overflow: 'hidden',
                 border: '1px solid rgba(44,42,39,0.2)',
                 background: 'var(--white, #fff)',
+                gap: 0,
               }}
             >
               <input
@@ -211,6 +221,7 @@ export default function LeadMagnetPage({ guide }) {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address"
                 required
+                className="lm-input"
                 style={{
                   flex: 1,
                   minWidth: 0,
@@ -227,6 +238,7 @@ export default function LeadMagnetPage({ guide }) {
               <button
                 type="submit"
                 disabled={status === 'submitting'}
+                className="lm-btn"
                 style={{
                   flexShrink: 0,
                   padding: '14px 22px',

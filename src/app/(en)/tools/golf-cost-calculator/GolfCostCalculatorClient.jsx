@@ -178,7 +178,7 @@ export default function GolfCostCalculatorClient() {
   }
 
   function Stepper({ label, stateKey, min, max, unit }) {
-    const btnStyle = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0 }
+    const btnStyle = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center' }
     return (
       <div className="gcc-field">
         <label className="gcc-flabel">{label}</label>

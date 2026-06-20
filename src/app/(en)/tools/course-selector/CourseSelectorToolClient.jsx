@@ -825,7 +825,6 @@ export default function CourseSelectorToolClient() {
             <h2>Which courses fit your game?</h2>
             <p>A 9/10 championship test and a relaxed holiday round are both on this island. Booking the wrong one wastes a day of your trip. This takes under a minute and matches courses to your ability, budget, area and group.</p>
             <button className="cst-btn gold" onClick={startQuiz}>Start the course finder</button>
-            <div className="cst-intro-meta">8 questions · under a minute · no sign-up needed</div>
           </div>
         )}
 

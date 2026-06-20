@@ -65,7 +65,7 @@ export default function ToolsIndex() {
         .ti-hero {
           background: #2D4A3E;
           color: #F7F4EF;
-          padding: 64px 24px 56px;
+          padding: 120px 24px 56px;
           text-align: center;
         }
         .ti-eyebrow {
