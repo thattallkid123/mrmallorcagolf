@@ -17,25 +17,6 @@ const TOOLS = [
     desc: 'Eight questions. A shortlist of three courses matched to your handicap, group, budget, and what you want from a round.',
     time: '< 1 min',
     cta: 'Find my courses',
-    accent: '#2D4A3E',
-  },
-  {
-    href: '/tools/golf-cost-calculator',
-    eyebrow: 'Budget planning',
-    title: 'Golf trip cost calculator',
-    desc: 'Three steps. A realistic cost estimate for your whole trip — green fees, accommodation, transport, dining — with a suggested course mix.',
-    time: '< 2 min',
-    cta: 'Estimate my trip',
-    accent: '#B8973C',
-  },
-  {
-    href: '/tools/hotel-recommender',
-    eyebrow: 'Hotel matching',
-    title: 'Golf hotel recommender',
-    desc: 'Six questions. A shortlist of hotels matched to your courses, group size, and travel style. Covers the main areas of the island.',
-    time: '< 1 min',
-    cta: 'Find hotels',
-    accent: '#2D4A3E',
   },
   {
     href: '/tools/golf-day-builder',
@@ -44,7 +25,22 @@ const TOOLS = [
     desc: 'Eight questions. A complete day plan — course, tee time, buggy or walk, where to eat — built around your group and the part of the island you\'re based in.',
     time: '< 2 min',
     cta: 'Build my day',
-    accent: '#B8973C',
+  },
+  {
+    href: '/tools/golf-cost-calculator',
+    eyebrow: 'Budget planning',
+    title: 'Golf trip cost calculator',
+    desc: 'Three steps. A realistic cost estimate for your whole trip — green fees, accommodation, transport, dining — with a suggested course mix.',
+    time: '< 2 min',
+    cta: 'Estimate my trip',
+  },
+  {
+    href: '/tools/hotel-recommender',
+    eyebrow: 'Hotel matching',
+    title: 'Golf hotel recommender',
+    desc: 'Six questions. A shortlist of hotels matched to your courses, group size, and travel style. Covers the main areas of the island.',
+    time: '< 1 min',
+    cta: 'Find hotels',
   },
   {
     href: '/zh/tools/course-selector',
@@ -53,7 +49,6 @@ const TOOLS = [
     desc: '七个问题，找到最适合你的马略卡岛高尔夫球场。根据你的水平、预算和风格量身推荐。',
     time: '不到1分钟',
     cta: '开始推荐',
-    accent: '#2D4A3E',
     zh: true,
   },
 ]
@@ -130,8 +125,8 @@ export default function ToolsIndex() {
         }
         .ti-track::-webkit-scrollbar { display: none; }
         .ti-card {
-          flex: 0 0 320px;
-          min-height: 300px;
+          flex: 0 0 clamp(240px, 18vw, 270px);
+          min-height: 280px;
           scroll-snap-align: start;
           background: #fff;
           border: 1px solid rgba(26,25,22,0.09);
