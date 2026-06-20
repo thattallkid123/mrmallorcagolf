@@ -1,0 +1,18 @@
+export const dynamic = 'force-dynamic'
+
+export const metadata = {
+  title: 'Mallorca Golf Hotel Recommender',
+  description: 'Six questions. A personalised hotel shortlist matched to your golf trip.',
+  robots: { index: false, follow: false },
+}
+
+import PageLayout from '../../../../components/PageLayout'
+import HotelRecommenderClient from '../../hotel-recommender/HotelRecommenderClient'
+
+export default function HotelRecommenderTool() {
+  return (
+    <PageLayout lang="en" navTransparent={false} showWhatsAppButton={false}>
+      <HotelRecommenderClient />
+    </PageLayout>
+  )
+}
