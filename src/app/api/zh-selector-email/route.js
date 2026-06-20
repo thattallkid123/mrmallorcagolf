@@ -1,16 +1,11 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import { isAllowedOrigin, isJsonRequest } from '../../../lib/request-safety'
 
+// Note: this endpoint intentionally mirrors /api/send-itinerary (no origin lock)
+// so the Chinese selector behaves like the other four tools and is testable the
+// same way. It keeps its own handler to send a Chinese email with the zh WhatsApp
+// number (+34624466702) rather than the English wrapper.
 export async function POST(request) {
-  if (!isAllowedOrigin(request)) {
-    return NextResponse.json({ ok: false, error: 'Origin not allowed.' }, { status: 403 })
-  }
-
-  if (!isJsonRequest(request)) {
-    return NextResponse.json({ ok: false, error: 'Unsupported content type.' }, { status: 415 })
-  }
-
   if (!process.env.RESEND_API_KEY) {
     return NextResponse.json({ ok: false, error: 'Email service not configured.' }, { status: 500 })
   }

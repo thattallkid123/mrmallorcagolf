@@ -30,8 +30,8 @@ const COSTS = {
 const COURSE_MIX = {
   value: ['Golf Pollença', 'Golf Maioris', 'Capdepera Golf'],
   balanced: ['Golf de Bendinat', 'Canyamel Golf', 'Pula Golf', "Vall d'Or Golf", 'Son Servera'],
-  premium: ['Son Gual', 'Son Vida', 'T Golf Palma', 'T Golf Calvià', 'Golf de Andratx'],
-  luxury: ['Club de Golf Alcanada', 'Son Muntaner'],
+  premium: ['Son Gual', 'T Golf Calvià', 'Golf de Andratx', 'Son Muntaner', 'T Golf Palma'],
+  luxury: ['Son Muntaner', 'Club de Golf Alcanada', 'T Golf Calvià', 'Son Gual'],
 }
 
 const PREF_NOTES = {
@@ -762,7 +762,7 @@ export default function GolfTripCalculatorClient() {
               })}
           </div>
 
-          <div className="calc-rcard">
+          {state.budget !== 'luxury' && state.budget !== 'Luxury' && <div className="calc-rcard">
             <h3>
               <span className="calc-rcard__dot" />
               Ways to reduce cost
@@ -783,7 +783,7 @@ export default function GolfTripCalculatorClient() {
                   <li key={i}>{tip}</li>
                 ))}
             </ul>
-          </div>
+          </div>}
 
           <div className="calc-rcard">
             <h3>
