@@ -90,20 +90,53 @@ export default function ToolsIndex() {
         .ti-sub {
           display: none;
         }
-        .ti-wrap {
-          max-width: 760px;
-          margin: 0 auto;
-          padding: 48px 18px 80px;
+        .ti-carousel {
+          padding: 40px 0 24px clamp(20px, 4vw, 40px);
+          overflow: hidden;
         }
-        .ti-grid {
-          display: grid;
-          gap: 20px;
+        .ti-carousel__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding-right: clamp(20px, 4vw, 40px);
+          margin-bottom: 24px;
         }
+        .ti-carousel__label {
+          font-family: 'Jost', sans-serif;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: .18em;
+          text-transform: uppercase;
+          color: #B8973C;
+        }
+        .ti-carousel__hint {
+          font-family: 'Jost', sans-serif;
+          font-size: 10px;
+          letter-spacing: .16em;
+          text-transform: uppercase;
+          color: #C4BAA9;
+        }
+        .ti-track {
+          display: flex;
+          gap: 18px;
+          overflow-x: auto;
+          overflow-y: hidden;
+          scroll-snap-type: x mandatory;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          padding: 6px clamp(20px, 4vw, 40px) 18px 0;
+          overscroll-behavior-x: contain;
+          touch-action: pan-x;
+        }
+        .ti-track::-webkit-scrollbar { display: none; }
         .ti-card {
+          flex: 0 0 320px;
+          min-height: 300px;
+          scroll-snap-align: start;
           background: #fff;
           border: 1px solid rgba(26,25,22,0.09);
           border-radius: 18px;
-          padding: 32px 28px;
+          padding: 30px 28px;
           box-shadow: 0 4px 24px rgba(18,17,15,0.06);
           display: flex;
           flex-direction: column;
@@ -113,8 +146,11 @@ export default function ToolsIndex() {
           transition: transform .3s cubic-bezier(0.22,1,0.36,1), box-shadow .3s;
         }
         .ti-card:hover {
-          transform: translateY(-3px);
+          transform: translateY(-4px);
           box-shadow: 0 18px 48px rgba(18,17,15,0.11);
+        }
+        @media (max-width: 600px) {
+          .ti-card { flex: 0 0 82vw; }
         }
         .ti-card-eyebrow {
           font-family: 'Jost', sans-serif;
@@ -169,10 +205,15 @@ export default function ToolsIndex() {
           color: #C4BAA9;
           letter-spacing: .04em;
         }
+        .ti-andy-wrap {
+          max-width: 760px;
+          margin: 0 auto;
+          padding: 12px 20px 80px;
+        }
         .ti-divider {
           height: 1px;
           background: #EDE9E1;
-          margin: 40px 0 36px;
+          margin: 24px 0 36px;
         }
         .ti-andy {
           background: #F7F4EF;
@@ -213,8 +254,12 @@ export default function ToolsIndex() {
         <p className="ti-sub">Five free tools. No sign-up needed. Each one takes under two minutes and gives you something useful — a course shortlist, a cost estimate, a hotel match, or a full day plan.</p>
       </section>
 
-      <div className="ti-wrap">
-        <div className="ti-grid">
+      <section className="ti-carousel">
+        <div className="ti-carousel__header">
+          <span className="ti-carousel__label">Choose a tool</span>
+          <span className="ti-carousel__hint">{'<- scroll ->'}</span>
+        </div>
+        <div className="ti-track" aria-label="Free tools carousel">
           {TOOLS.map(tool => (
             <Link key={tool.href} href={tool.href} className="ti-card">
               <div className="ti-card-eyebrow">{tool.eyebrow}</div>
@@ -227,7 +272,9 @@ export default function ToolsIndex() {
             </Link>
           ))}
         </div>
+      </section>
 
+      <div className="ti-andy-wrap">
         <div className="ti-divider" />
 
         <div className="ti-andy">
