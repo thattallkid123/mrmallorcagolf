@@ -164,6 +164,9 @@ export default function ToolsIndex() {
           line-height: 1.15;
           margin-bottom: 10px;
         }
+        .ti-card.ti-card--zh .ti-card-title {
+          font-weight: 400;
+        }
         .ti-card-desc {
           font-family: 'Jost', sans-serif;
           font-weight: 300;
@@ -257,7 +260,7 @@ export default function ToolsIndex() {
         </div>
         <div className="ti-track" aria-label="Free tools carousel">
           {TOOLS.map(tool => (
-            <Link key={tool.href} href={tool.href} className="ti-card">
+            <Link key={tool.href} href={tool.href} className={`ti-card${tool.zh ? ' ti-card--zh' : ''}`}>
               <div className="ti-card-eyebrow">{tool.eyebrow}</div>
               <div className="ti-card-title">{tool.title}</div>
               <div className="ti-card-desc">{tool.desc}</div>
