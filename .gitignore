@@ -96,3 +96,7 @@ outputs/lighthouse-*.json
 outputs/site-ops/
 outputs/*.png
 outputs/pdf-text/
+
+# Backup of OAuth token (never commit)
+token.json.bak
+*.bak
