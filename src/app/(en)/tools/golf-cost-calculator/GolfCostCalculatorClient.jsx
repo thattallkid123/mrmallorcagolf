@@ -178,20 +178,15 @@ export default function GolfCostCalculatorClient() {
   }
 
   function Stepper({ label, stateKey, min, max, unit }) {
+    const btnStyle = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0 }
     return (
       <div className="gcc-field">
         <label className="gcc-flabel">{label}</label>
-        <div className="gcc-stepper">
-          <button
-            type="button"
-            onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}
-          >−</button>
+        <div style={{ display:'flex', alignItems:'center', gap:14 }}>
+          <button type="button" style={btnStyle} onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}>−</button>
           <span className="gcc-val">{state[stateKey]}</span>
           <span className="gcc-unit">{unit}</span>
-          <button
-            type="button"
-            onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}
-          >+</button>
+          <button type="button" style={btnStyle} onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}>+</button>
         </div>
       </div>
     )
