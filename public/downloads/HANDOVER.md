@@ -1,73 +1,63 @@
 # Mr Mallorca Golf — Full Project Handover
-**Date:** June 2026
+**Date:** June 2026 · Mobile QA completed June 2026
 
 ---
 
-## 1. What's Actually Live on the Site
+## 1. All Live Pages
 
-### Tools & interactive pages
+### Interactive tools
 
-| Page | URL | Status |
-|------|-----|--------|
-| Golf trip calculator | mrmallorcagolf.com/golf-trip-calculator | Live |
-| Course selector | mrmallorcagolf.com/course-selector | Live |
-| ZH course selector | mrmallorcagolf.com/zh/course-selector | Live |
-| PDF signup — Cost Guide | mrmallorcagolf.com/guides/cost-guide | Live |
-| PDF signup — Trip Planner | mrmallorcagolf.com/guides/trip-planner | Live |
-| PDF signup — Beginners Guide | mrmallorcagolf.com/guides/beginners-guide | Live |
-| PDF signup — Course Comparison | mrmallorcagolf.com/guides/course-comparison | Live |
+| Page | URL | Indexed |
+|------|-----|---------|
+| Golf trip calculator | mrmallorcagolf.com/golf-trip-calculator | Yes |
+| Course selector | mrmallorcagolf.com/course-selector | Yes |
+| ZH course selector | mrmallorcagolf.com/zh/course-selector | Yes |
+| Tools index | mrmallorcagolf.com/tools/ | Yes |
+| Tools — Course selector | mrmallorcagolf.com/tools/course-selector | No (noindex) |
+| Tools — Golf cost calculator | mrmallorcagolf.com/tools/golf-cost-calculator | No (noindex) |
+| Tools — Hotel recommender | mrmallorcagolf.com/tools/hotel-recommender | No (noindex) |
+| Tools — Golf day builder | mrmallorcagolf.com/tools/golf-day-builder | No (noindex) |
+| ZH tools — Course selector | mrmallorcagolf.com/zh/tools/course-selector | No (noindex) |
 
-### Tools built locally but NOT yet committed or deployed (currently 404)
+To make any tool indexable: open its `page.jsx` and change `robots: { index: false }` to `index: true`, then push.
 
-These exist in the local repo as untracked files — never pushed to GitHub, so they're not live:
+### PDF lead magnet signup pages
 
-| Tool | Local path |
-|------|-----------|
-| Tools index | `src/app/(en)/tools/` |
-| Course selector (new /tools version) | `src/app/(en)/tools/course-selector/` |
-| Golf cost calculator | `src/app/(en)/tools/golf-cost-calculator/` |
-| Hotel recommender | `src/app/(en)/hotel-recommender/` |
-| Golf day builder | `src/app/(en)/golf-day-builder/` |
-| ZH tools | `src/app/zh/tools/` |
+| Guide | Signup Page | PDF Download |
+|-------|-------------|--------------|
+| Mallorca Golf Cost Breakdown 2026 | mrmallorcagolf.com/guides/cost-guide | mrmallorcagolf.com/downloads/cost-guide.pdf |
+| 7-Day Mallorca Golf Itinerary | mrmallorcagolf.com/guides/trip-planner | mrmallorcagolf.com/downloads/trip-planner.pdf |
+| Beginner's Guide to Golf in Mallorca | mrmallorcagolf.com/guides/beginners-guide | mrmallorcagolf.com/downloads/beginners-guide.pdf |
+| Mallorca Golf Course Comparison Chart | mrmallorcagolf.com/guides/course-comparison | mrmallorcagolf.com/downloads/course-comparison.pdf |
 
-To deploy these: `git add src/app/(en)/tools src/app/(en)/hotel-recommender src/app/(en)/golf-day-builder src/app/zh/tools` then commit and push.
+All 4 signup pages are indexable. PDFs backed up at: `Google Drive / Mr Mallorca Golf / Lead Magnets / PDFs/`
 
 ---
 
-## 2. HTML Prototypes — Local Only, Untouched
+## 2. HTML Prototypes — Local Only
 
-Original prototype files still exist locally for reference. Not published anywhere.
+Original prototype files for reference. Never published.
 
 | File | Local path |
 |------|-----------|
-| Prototypes index | `prototypes/index.html` |
 | Course selector | `prototypes/course-selector/index.html` |
 | Golf cost calculator | `prototypes/golf-cost-calculator/index.html` |
 | Hotel recommender | `prototypes/hotel-recommender/index.html` |
-| Hotel recommender (alt) | `prototypes/hotel-recommender.html` |
 | Golf day builder | `prototypes/golf-day-builder/index.html` |
 | ZH course selector | `prototypes/zh-course-selector.html` |
 
 ---
 
-## 3. PDF Lead Magnets — All Live
+## 3. How the PDF Lead Magnet Flow Works
 
-4 PDFs built from scratch (Python + Playwright), matching site fonts and brand palette. All data verified from the repo encyclopedia and cost calculator. Final versions committed June 2026.
+1. Visitor lands on a signup page (e.g. `/guides/cost-guide`)
+2. Enters email and submits
+3. POST hits `/api/lead-magnet-signup`
+4. Subscriber added to the correct MailerLite group
+5. Resend sends an instant delivery email with the PDF download link
+6. MailerLite nurture sequence begins automatically
 
-| Guide | PDF URL | Signup Page |
-|-------|---------|-------------|
-| Mallorca Golf Cost Breakdown 2026 | mrmallorcagolf.com/downloads/cost-guide.pdf | mrmallorcagolf.com/guides/cost-guide |
-| 7-Day Mallorca Golf Itinerary | mrmallorcagolf.com/downloads/trip-planner.pdf | mrmallorcagolf.com/guides/trip-planner |
-| Beginner's Guide to Golf in Mallorca | mrmallorcagolf.com/downloads/beginners-guide.pdf | mrmallorcagolf.com/guides/beginners-guide |
-| Mallorca Golf Course Comparison Chart | mrmallorcagolf.com/downloads/course-comparison.pdf | mrmallorcagolf.com/guides/course-comparison |
-
-PDFs are also backed up at: `Google Drive / Mr Mallorca Golf / Lead Magnets / PDFs/`
-
-**How the flow works:** Visitor lands on signup page → enters email → POST to `/api/lead-magnet-signup` → added to the correct MailerLite group → Resend delivers an email with the PDF download link → MailerLite nurture sequence begins automatically.
-
-**Tested June 2026:** API call confirmed `{"success":true}`. Delivery email sends via Resend. MailerLite group assignment works.
-
-**Signup pages** have no robots block — they're indexable. Good to leave them that way.
+**Tested June 2026:** API confirmed `{"success":true}` end-to-end. Resend delivers correctly.
 
 ---
 
@@ -81,60 +71,100 @@ PDFs are also backed up at: `Google Drive / Mr Mallorca Golf / Lead Magnets / PD
 | Trip Planner nurture | Trip Planner Leads | 3 emails | Active |
 | Beginners Guide nurture | Beginners Guide Leads | 3 emails | Active |
 | Course Comparison nurture | Course Comparison Leads | 3 emails (Day 1 / +2 / +2) | Active |
-| Course Selector Welcome | Course Selector Leads | 4 emails | Active — 80% open rate, working |
+| Course Selector Welcome | Course Selector Leads | 4 emails | Active — 80% open rate |
 
-Zero PDF subscribers so far — expected, nothing links to those pages yet. Once CTAs go in, subscribers will flow into the right groups automatically.
+Zero PDF subscribers so far — expected, nothing links to those pages yet.
 
-**Free plan limit:** 1,000 subscribers. Upgrade before you hit that if running active CTAs.
+**Free plan limit:** 1,000 subscribers. Upgrade before hitting that when CTAs go live.
 
 ---
 
-## 5. Mobile Test Results (June 2026)
+## 5. Mobile QA Results (June 2026, iPhone 14 viewport 390px)
 
-- **PDF signup page** (`/guides/cost-guide`) — renders correctly on iPhone 14 viewport (390px). Form, bullets, and button all display cleanly.
-- **Golf trip calculator** (`/golf-trip-calculator`) — loads on mobile. The `−` / `+` stepper buttons are slightly small on a real thumb but functional.
-- **Tools pages** — not testable, currently 404 (see section 1).
+All pages tested in Chrome DevTools mobile emulation at 390×844.
+
+| Page | Result | Notes |
+|------|--------|-------|
+| Homepage | ✅ Clean | Hero, popup, WhatsApp button all correct |
+| `/guides/cost-guide` (PDF signup) | ✅ Clean | Form, bullets, button all display correctly |
+| `/tools/course-selector` | ✅ Clean | Question flow, card layout good |
+| `/tools/golf-cost-calculator` | ✅ Fixed | Stepper layout was broken (styled-jsx not applying flex); fixed with inline styles June 2026 |
+| `/tools/hotel-recommender` | ✅ Clean | Question flow renders correctly |
+| `/tools/golf-day-builder` | ✅ Clean | Intro card, CTA button clean |
+| `/golf-trip-calculator` | ✅ Clean | Stepper buttons functional (this page has its own stepper component unaffected) |
+
+**Not yet tested interactively:** clicking through multi-step flows, form submission on mobile, result screens. For a full regression test, use Playwright (see section 7).
 
 ---
 
 ## 6. Where to Add CTAs — Strategy
 
-### Quickest wins (do these first — 10 min each)
+### Quickest wins (10 min each, do these first)
 
-1. **Bottom of best courses post** (`/guides/best-golf-courses-mallorca`) → Course Comparison CTA. Highest traffic post, perfect intent match.
-2. **Bottom of cost guide post** (`/guides/golf-cost-mallorca`) → Cost Guide PDF CTA. Same topic, warm audience.
-3. **Homepage** — Course Comparison as the primary lead magnet. Broadest appeal, works for any visitor.
+1. **Bottom of best courses post** (`/guides/best-golf-courses-mallorca`) → Course Comparison PDF. Highest traffic post, perfect intent.
+2. **Bottom of cost guide post** (`/guides/golf-cost-mallorca`) → Cost Guide PDF. Same topic, warm audience.
+3. **Homepage** → Course Comparison as primary lead magnet. Broadest appeal.
 
 ### Full placement map
 
 **Cost Guide** — `mrmallorcagolf.com/guides/cost-guide`
-- CTA at the bottom of every course review and the main cost guide post
-- Golf trip calculator: show a "Download the full breakdown" banner after the result is displayed
-- Homepage "Plan Your Trip" section, alongside the calculator link
+- CTA at bottom of every course review and the main cost guide post
+- Golf trip calculator: "Download the full breakdown" banner after result is shown
+- Homepage "Plan Your Trip" section alongside the calculator link
 
 **Course Comparison** — `mrmallorcagolf.com/guides/course-comparison`
-- Best courses post: CTA at top ("grab the comparison chart before reading") and bottom
-- Course selector tool: after the tool outputs a recommendation, offer the full PDF
+- Best courses post: CTA at top and bottom
+- Course selector tool: offer the PDF after the tool outputs its recommendation
 - Homepage: best candidate for the primary lead magnet CTA
 
 **7-Day Trip Planner** — `mrmallorcagolf.com/guides/trip-planner`
 - Golf trip planning post (`/guides/golf-trip-planning-mallorca`): CTA mid-article
-- Golf day builder tool: offer the full week PDF after someone builds a single day
-- Contact/WhatsApp page: "Planning a week? Download my itinerary first" — warms up leads before they message you
+- Golf day builder: offer the full week PDF after someone builds a day plan
+- Contact/WhatsApp page: "Planning a week? Download my itinerary first"
 
 **Beginners Guide** — `mrmallorcagolf.com/guides/beginners-guide`
-- "Is Mallorca good for golf?" post (`/guides/is-mallorca-good-for-golf`): beginner search traffic, natural fit
-- On-course coaching page: newer players → offer the guide as a free resource
-- Course selector tool: if output flags beginner-friendly courses, add the guide CTA below
+- "Is Mallorca good for golf?" post (`/guides/is-mallorca-good-for-golf`)
+- On-course coaching page: newer players → free resource
+- Course selector: if output flags beginner-friendly courses, add guide CTA
 
 ---
 
-## 7. Open Items / Next Steps
+## 7. Playwright QA — Hand to Codex
+
+For a full automated regression test across all viewports and interactive flows, paste this brief into Codex:
+
+> Using Playwright, run a visual and functional QA check on mrmallorcagolf.com. Test at three viewports: mobile (390×844), tablet (768×1024), desktop (1440×900).
+>
+> **Pages and interactions to test:**
+> - `/` — homepage loads, popup renders, close popup, scroll to footer
+> - `/golf-trip-calculator` — click through all 4 steps to completion
+> - `/course-selector` — answer all questions through to result
+> - `/tools/course-selector` — load and complete the question flow
+> - `/tools/golf-cost-calculator` — click through all steps, verify stepper `− N unit +` layout is correct on mobile
+> - `/tools/hotel-recommender` — answer all questions through to result
+> - `/tools/golf-day-builder` — click through to completion
+> - `/guides/cost-guide` — verify email input and submit button are visible without scrolling on mobile
+> - `/guides/trip-planner`, `/guides/beginners-guide`, `/guides/course-comparison` — same check
+>
+> **For each page/viewport check:**
+> 1. No console errors
+> 2. No horizontal scroll (`document.documentElement.scrollWidth === window.innerWidth`)
+> 3. Nav: hamburger on mobile, full nav on desktop
+> 4. All interactive buttons ≥ 44px touch target
+> 5. No text overflow or truncation
+> 6. Screenshot each page at each viewport, save to `/qa-screenshots/PAGENAME-VIEWPORT.png`
+>
+> Report failures with page, viewport, and what specifically broke.
+
+---
+
+## 8. Open Items
 
 | Item | Priority | Notes |
 |------|----------|-------|
 | Add CTA to best courses post → Course Comparison | High | Quickest subscriber win |
 | Add CTA to homepage | High | Course Comparison recommended |
-| Commit and deploy the untracked tools | Medium | When ready to go public with them |
-| Test mobile on tools once deployed | Medium | Trip calculator stepper buttons could be larger |
-| MailerLite free tier limit | Watch | 1,000 subscriber cap — upgrade when running CTAs |
+| Decide which tools to surface in nav | Medium | All currently noindex/hidden |
+| Flip robots to `index: true` on tools you want found | When ready | Edit each `page.jsx` |
+| Run Playwright QA (section 7) | Medium | Full interaction + multi-viewport test |
+| MailerLite free tier limit | Watch | 1,000 subscriber cap |
