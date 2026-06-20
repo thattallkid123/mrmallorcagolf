@@ -178,10 +178,9 @@ export default function ToolsIndex() {
         }
         .ti-card-footer {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          gap: 10px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
           margin-top: auto;
         }
         .ti-card-cta {
