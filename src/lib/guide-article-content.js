@@ -134,6 +134,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'cta',
+        text: 'Want all the green fees, buggy costs, and seasonal pricing in one place? Download the free 2026 Cost Guide PDF.',
+        linkLabel: 'Get the free Cost Guide →',
+        href: '/guides/cost-guide',
+        internal: true,
+      },
+      {
+        type: 'cta',
         text: 'Want a full day arranged - course, tee time, coaching, and everything handled before you arrive?',
         linkLabel: 'See the play-with-a-pro experience →',
         href: '/play-with-a-pro',
@@ -464,6 +471,13 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Reserva Rotana', 'Manacor', '36 (9H)', 'Hotel guests only', '6/10', '3.5', 'Stay-and-play, private estate'],
         ],
       },
+      {
+        type: 'cta',
+        text: 'Want all 24 courses compared side by side on one page? Download the free Course Comparison Chart.',
+        linkLabel: 'Get the free Course Comparison →',
+        href: '/guides/course-comparison',
+        internal: true,
+      },
       { type: 'heading', text: 'The Top Courses - By Purpose' },
       { type: 'subheading', text: 'For a Serious Championship Round: Son Gual' },
       {
@@ -597,6 +611,13 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'pull',
         text:
           "The island has been one of Europe's best-kept golf secrets. I arrived from Shanghai and the conditions in January, when courses in England are closed, genuinely surprised me.",
+      },
+      {
+        type: 'cta',
+        text: 'Download the free Course Comparison Chart comparing all 24 Mallorca courses on green fees, difficulty, and who each one suits.',
+        linkLabel: 'Download the Course Comparison →',
+        href: '/guides/course-comparison',
+        internal: true,
       },
       {
         type: 'cta',
