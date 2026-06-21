@@ -30,6 +30,7 @@ function buildDeliveryEmail(guideName, downloadUrl) {
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#F7F4EF;font-family:Georgia,serif;">
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">Who I am and why this might actually be useful.</div>
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#F7F4EF;padding:48px 24px;">
     <tr><td align="center">
       <table width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;">
@@ -37,16 +38,20 @@ function buildDeliveryEmail(guideName, downloadUrl) {
           <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#B8973C;">Mr Mallorca Golf</p>
         </td></tr>
         <tr><td style="background:#fff;border-radius:4px;padding:40px 40px 32px;">
-          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Here is your guide.</p>
-          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">You signed up for the ${guideName}. Click the link below to download it.</p>
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Hi,</p>
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Here is your ${guideName}. Click the link below to download it.</p>
           <table cellpadding="0" cellspacing="0" style="margin:28px 0;">
             <tr><td style="background:#2D4A3E;border-radius:3px;">
               <a href="${downloadUrl}" style="display:inline-block;padding:14px 28px;font-family:'Jost',Arial,sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#fff;text-decoration:none;">Download PDF</a>
             </td></tr>
           </table>
-          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Any questions about planning your trip, just reply. I am on the island full time and happy to help.</p>
-          <p style="margin:28px 0 4px;font-family:Georgia,serif;font-size:15px;color:#2C2A27;">Andy</p>
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8a8784;">PGA Advanced Professional, Mr Mallorca Golf</p>
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Wanted to say hello properly too.</p>
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">I'm Andy. UK PGA Advanced Professional, based in Mallorca. I moved here from Shanghai in early 2025 after eleven years coaching there. I play the courses here most weeks and I know all 24 of them well: which ones are worth the green fee, which ones look better in photos than they play, and which ones most visitors miss entirely.</p>
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Everything I write comes from that. No tourism copy, no padding. Practical information from someone who actually plays here.</p>
+          <p style="margin:0 0 24px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">If you have a question about courses, timing, what to budget, or whether to bring your own clubs, reply to this email. I read everything.</p>
+          <p style="margin:0;font-family:Georgia,serif;font-size:15px;line-height:1.45;color:#2C2A27;">Andy</p>
+          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;line-height:1.45;color:#8a8784;">UKPGA Advanced Professional</p>
+          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;line-height:1.45;color:#8a8784;">Mr Mallorca Golf</p>
         </td></tr>
         <tr><td style="padding:24px 0 0;text-align:center;">
           <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:11px;color:#aaa;">Mr Mallorca Golf, Mallorca, Spain</p>

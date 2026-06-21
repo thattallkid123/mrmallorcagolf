@@ -14,6 +14,7 @@ function buildEmail(tool, bodyHtml) {
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#F7F4EF;font-family:Georgia,serif;">
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">Who I am and why this might actually be useful.</div>
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#F7F4EF;padding:48px 24px;">
     <tr><td align="center">
       <table width="100%" cellpadding="0" cellspacing="0" style="max-width:580px;">
@@ -27,9 +28,14 @@ function buildEmail(tool, bodyHtml) {
         <tr><td style="background:#fff;border-radius:0 0 4px 4px;padding:32px 40px 40px;">
           ${bodyHtml}
           <hr style="border:none;border-top:1px solid #EDE9E1;margin:32px 0;">
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Wanted to say hello properly too.</p>
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">I'm Andy. UK PGA Advanced Professional, based in Mallorca. I moved here from Shanghai in early 2025 after eleven years coaching there. I play the courses here most weeks and I know all 24 of them well: which ones are worth the green fee, which ones look better in photos than they play, and which ones most visitors miss entirely.</p>
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Everything I write comes from that. No tourism copy, no padding. Practical information from someone who actually plays here.</p>
+          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">If you have a question about courses, timing, what to budget, or whether to bring your own clubs, reply to this email. I read everything.</p>
           <p style="margin:0 0 8px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Ready to make this real? Reply to this email or message me on WhatsApp and I will build it around your group.</p>
-          <p style="margin:20px 0 4px;font-family:Georgia,serif;font-size:15px;color:#2C2A27;">Andy</p>
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8a8784;">PGA Advanced Professional, Mr Mallorca Golf</p>
+          <p style="margin:24px 0 0;font-family:Georgia,serif;font-size:15px;line-height:1.45;color:#2C2A27;">Andy</p>
+          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;line-height:1.45;color:#8a8784;">UKPGA Advanced Professional</p>
+          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;line-height:1.45;color:#8a8784;">Mr Mallorca Golf</p>
           <table cellpadding="0" cellspacing="0" style="margin-top:20px;">
             <tr>
               <td style="padding-right:8px;">
