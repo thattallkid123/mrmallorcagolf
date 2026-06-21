@@ -3221,8 +3221,102 @@ select.form-control { cursor: pointer; }
   padding: 16px;
 }
 
+.tool-placement-cta {
+  max-width: 1120px;
+  margin: 2.5rem auto;
+  background: #fff;
+  border: 1px solid rgba(184,151,60,0.28);
+  border-left: 3px solid var(--gold);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(24px, 3vw, 34px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.55fr);
+  gap: clamp(20px, 3vw, 36px);
+  align-items: center;
+}
+
+.tool-placement-cta--dark {
+  background: #F7F4EF;
+  box-shadow: none;
+}
+
+.tool-placement-cta__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 .6rem;
+}
+
+.tool-placement-cta h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+  font-weight: 500;
+  color: var(--deep);
+  line-height: 1.12;
+  margin: 0 0 .85rem;
+}
+
+.tool-placement-cta p {
+  font-family: var(--font-sans);
+  font-size: .9rem;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.72;
+  margin: 0;
+}
+
+.tool-placement-cta__action {
+  display: grid;
+  gap: 10px;
+}
+
+.tool-placement-cta__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 22px;
+  background: var(--pine);
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  transition: background .25s ease, transform .25s ease;
+}
+
+.tool-placement-cta__button:hover {
+  background: var(--deep);
+  transform: translateY(-1px);
+}
+
+.tool-placement-cta__action p {
+  color: var(--taupe);
+  font-size: .76rem;
+  line-height: 1.6;
+}
+
+.tool-placement-cta--compact {
+  margin: 2.25rem 0;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.tool-placement-cta--compact .tool-placement-cta__action {
+  max-width: 420px;
+}
+
 @media (max-width: 760px) {
   .planning-guide-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-placement-cta {
     grid-template-columns: 1fr;
   }
 

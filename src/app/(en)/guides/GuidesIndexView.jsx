@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
+import ToolPlacementCta from '../../../components/ToolPlacementCta'
 
 const HERO_ACTIONS = {
   en: { experience: 'See the Experience', reviews: 'Course Reviews', articles: 'Guides & Articles' },
@@ -148,6 +149,21 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
           </div>
         </div>
       </header>
+
+      {locale === 'en' ? (
+        <section style={{ background: 'var(--cream)', padding: 'clamp(28px, 5vw, 52px) clamp(20px, 5vw, 60px)' }}>
+          <ToolPlacementCta
+            tool={{
+              eyebrow: 'Free planning tools',
+              title: 'Reading guides because you are still narrowing the trip down?',
+              body: 'Use the tools when you want a practical next step: a course shortlist, trip cost estimate, golf day plan, or hotel-base suggestion.',
+              href: '/tools',
+              cta: 'Choose a tool',
+            }}
+            dark
+          />
+        </section>
+      ) : null}
 
       <GuideCarousel
         id="course-reviews"

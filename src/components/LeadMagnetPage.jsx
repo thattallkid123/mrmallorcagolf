@@ -2,11 +2,35 @@
 
 import { useState } from 'react'
 
+const NEXT_TOOL_BY_GUIDE = {
+  'course-comparison': {
+    href: '/tools/course-selector',
+    label: 'Find courses for my group',
+    text: 'Want a shortlist based on your own trip?',
+  },
+  'cost-guide': {
+    href: '/tools/golf-cost-calculator',
+    label: 'Estimate my trip cost',
+    text: 'Want to run the numbers for your own group?',
+  },
+  'trip-planner': {
+    href: '/tools/golf-day-builder',
+    label: 'Build a golf day',
+    text: 'Want to turn the itinerary into a sample day plan?',
+  },
+  'beginners-guide': {
+    href: '/tools/course-selector',
+    label: 'Find beginner-friendly courses',
+    text: 'Want to see which courses fit your level?',
+  },
+}
+
 export default function LeadMagnetPage({ guide }) {
   const [email, setEmail] = useState('')
   const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
   const [status, setStatus] = useState('idle')
   const [errorMessage, setErrorMessage] = useState('')
+  const nextTool = NEXT_TOOL_BY_GUIDE[guide.slug]
 
   async function handleSubmit(event) {
     event.preventDefault()
@@ -201,6 +225,37 @@ export default function LeadMagnetPage({ guide }) {
             >
               Download PDF
             </a>
+            {nextTool ? (
+              <div style={{ marginTop: 22, paddingTop: 20, borderTop: '1px solid rgba(247,244,239,0.18)' }}>
+                <p
+                  style={{
+                    fontFamily: "'Jost', sans-serif",
+                    fontSize: '0.78rem',
+                    fontWeight: 300,
+                    color: 'rgba(247,244,239,0.72)',
+                    margin: '0 0 10px',
+                  }}
+                >
+                  {nextTool.text}
+                </p>
+                <a
+                  href={nextTool.href}
+                  style={{
+                    display: 'inline-block',
+                    fontFamily: "'Jost', sans-serif",
+                    fontSize: '0.7rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.1em',
+                    textTransform: 'uppercase',
+                    color: 'var(--cream, #F7F4EF)',
+                    textDecoration: 'underline',
+                    textUnderlineOffset: 4,
+                  }}
+                >
+                  {nextTool.label}
+                </a>
+              </div>
+            ) : null}
           </div>
         ) : (
           <>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import DeferredHydrate from '../../../components/DeferredHydrate'
+import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import GolfCoursesClient from '../golf-courses/GolfCoursesClient'
 import { GOLF_COURSE_DATA } from '../../../lib/golf-courses-data'
@@ -133,6 +134,21 @@ export default function GolfCoursesView({ locale = 'en', content }) {
             </p>
           </div>
         </header>
+
+        {locale === 'en' ? (
+          <section style={{ background: 'var(--cream)', padding: 'clamp(28px, 5vw, 52px) clamp(20px, 5vw, 60px)' }}>
+            <ToolPlacementCta
+              tool={{
+                eyebrow: 'Shortcut',
+                title: 'Want a shortlist instead of reading all 24 course reviews?',
+                body: 'Use the course selector if you know your handicap, budget, base, and trip style. It will narrow the island down before you start comparing tee times.',
+                href: '/tools/course-selector',
+                cta: 'Find my courses',
+              }}
+              dark
+            />
+          </section>
+        ) : null}
 
         <DeferredHydrate
           timeoutMs={1600}

@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
-import PlanningGuideCta from '../../../components/PlanningGuideCta'
+import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import InlineRichText from '../guides/InlineRichText'
 
@@ -342,8 +342,19 @@ function JsonLd({ data }) {
   )
 }
 
+const ARTICLE_TOOL_PLACEMENTS = {
+  'golf-cost-mallorca': 'costCalculator',
+  'golf-trip-planning-mallorca': 'dayBuilder',
+  'best-time-play-golf-mallorca': 'dayBuilder',
+  'best-golf-courses-mallorca': 'courseSelector',
+  'golf-club-hire-mallorca': 'costCalculator',
+  'is-mallorca-good-for-golf': 'courseSelector',
+  'a-day-at-son-gual': 'dayBuilder',
+}
+
 export default function GuideArticleView({ meta, blocks, locale = 'en', children = null }) {
   let imageOrdinal = 0
+  const contextualTool = ARTICLE_TOOL_PLACEMENTS[meta.slug] || 'courseSelector'
 
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
@@ -358,7 +369,7 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
               return (
                 <Fragment key={`article-block-with-planning-${index}`}>
                   {renderedBlock}
-                  <PlanningGuideCta compact />
+                  <ToolPlacementCta tool={contextualTool} compact />
                 </Fragment>
               )
             }

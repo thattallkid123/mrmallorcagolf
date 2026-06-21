@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
-import PlanningGuideCta from '../../../components/PlanningGuideCta'
+import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import InlineRichText from '../guides/InlineRichText'
 
@@ -319,7 +319,7 @@ export default function GuidePostView({ locale = 'en', meta, blocks }) {
             return (
               <Fragment key={`post-block-with-planning-${index}`}>
                 {renderedBlock}
-                <PlanningGuideCta compact />
+                <ToolPlacementCta tool="courseSelector" compact />
               </Fragment>
             )
           }
