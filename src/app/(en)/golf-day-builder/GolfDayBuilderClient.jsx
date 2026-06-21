@@ -710,7 +710,7 @@ export default function GolfDayBuilderClient() {
                 <div style={{ borderTop:'1px solid rgba(255,255,255,.14)', margin:'6px 0 2px' }} />
                 <p style={{ fontFamily:"'Jost',sans-serif", fontSize:'.82rem', color:'rgba(255,255,255,.7)', margin:'2px 0 4px', lineHeight:'1.6' }}>Or have Andy turn one of these into a booked day: tee time, restaurant and transport handled around your group.</p>
                 <button className="gdb-btn-gold" onClick={() => window.open('https://www.mrmallorcagolf.com/contact', '_blank', 'noopener')}>Ask Andy to build this for my group</button>
-                <button className="gdb-btn-pine" style={{ borderRadius:'999px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>Book Play With A Pro</button>
+                <button className="gdb-btn-pine" style={{ borderRadius:'999px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>Explore Play With A Pro</button>
                 <div className="gdb-cta-secondary">
                   <button className="gdb-btn-secondary" onClick={() => window.open('https://wa.me/34624466702?text=' + encodeURIComponent('Hi Andy, I built a golf day on your website and would like to make it real.'), '_blank', 'noopener')}>WhatsApp Andy</button>
                 </div>

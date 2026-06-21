@@ -303,8 +303,9 @@ export default function GolfCostCalculatorClient() {
         .gcc-cta-box h3 { font-family:'Cormorant Garamond',Georgia,serif; font-size:24px; margin-bottom:8px; color:#fff; font-weight:500; line-height:1.2; }
         .gcc-cta-box p { font-family:'Jost',sans-serif; font-size:13px; color:#cfdad2; margin-bottom:18px; font-weight:300; line-height:1.6; }
         .gcc-cta-box a { display:block; text-align:center; text-decoration:none; width:100%; margin-bottom:10px; padding:14px 20px; border:none; border-radius:10px; font-size:15px; font-family:inherit; cursor:pointer; }
-        .gcc-email-capture { display:flex; gap:8px; margin-bottom:6px; flex-wrap:wrap; }
-        .gcc-email-capture input { flex:1 1 160px; min-width:0; border:none; border-radius:10px; padding:14px 16px; font-size:15px; font-family:inherit; }
+        .gcc-email-capture { display:flex; flex-direction:column; gap:8px; margin-bottom:6px; align-items:center; }
+        .gcc-email-capture input { width:100%; border:none; border-radius:10px; padding:14px 16px; font-size:15px; font-family:inherit; text-align:center; }
+        .gcc-email-capture button { width:100%; }
         .gcc-disclaimer { font-family:'Jost',sans-serif; font-size:11px; color:#8A7F74; text-align:center; margin-top:20px; font-weight:300; line-height:1.5; }
       `}</style>
 
@@ -595,7 +596,7 @@ export default function GolfCostCalculatorClient() {
                   href="https://www.mrmallorcagolf.com/play-with-a-pro"
                   target="_blank"
                   rel="noopener"
-                >Book a golf day with Andy</a>
+                >Explore a golf day with Andy</a>
                 <a
                   href="https://www.mrmallorcagolf.com/guides"
                   target="_blank"

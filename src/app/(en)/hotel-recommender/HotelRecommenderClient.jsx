@@ -308,8 +308,9 @@ export default function HotelRecommenderClient() {
         .hr-email-section { background:#2D4A3E; padding:36px 28px; text-align:center; color:#F7F4EF; border-radius:3px; margin-top:36px; }
         .hr-email-section h3 { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.4rem; font-weight:300; margin-bottom:8px; }
         .hr-email-section p { font-size:0.85rem; color:rgba(247,244,239,0.7); margin-bottom:20px; line-height:1.65; }
-        .hr-email-row { display:flex; gap:10px; max-width:420px; margin:0 auto 12px; flex-wrap:wrap; }
-        .hr-email-input { flex:1; min-width:200px; padding:11px 14px; border:1px solid rgba(247,244,239,0.3); background:rgba(247,244,239,0.1); color:#F7F4EF; font-family:'Jost',sans-serif; font-size:0.88rem; border-radius:2px; outline:none; }
+        .hr-email-row { display:flex; flex-direction:column; gap:10px; max-width:420px; margin:0 auto 12px; align-items:center; }
+        .hr-email-row .hr-btn-email { width:100%; }
+        .hr-email-input { width:100%; padding:11px 14px; border:1px solid rgba(247,244,239,0.3); background:rgba(247,244,239,0.1); color:#F7F4EF; font-family:'Jost',sans-serif; font-size:0.88rem; border-radius:2px; outline:none; text-align:center; }
         .hr-email-input::placeholder { color:rgba(247,244,239,0.4); }
         .hr-email-input:focus { border-color:#B8973C; }
         .hr-btn-email { background:#B8973C; color:#1A1916; border:none; padding:11px 22px; font-family:'Jost',sans-serif; font-size:0.85rem; font-weight:500; cursor:pointer; border-radius:2px; white-space:nowrap; transition:background 0.18s; }

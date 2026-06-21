@@ -762,11 +762,6 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .cst-sub { font-family:'Jost',sans-serif; font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .cst-wrap { max-width:680px; margin:0 auto; padding:0 18px 90px; }
-        /* Intro */
-        .cst-intro-card { background:#2D4A3E; border-radius:20px; padding:48px 32px; text-align:center; color:#F7F4EF; max-width:640px; margin:32px auto; box-shadow:0 30px 80px rgba(18,17,15,0.16); }
-        .cst-intro-card h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.7rem,4.5vw,2.4rem); margin-bottom:14px; font-weight:500; }
-        .cst-intro-card p { color:rgba(247,244,239,0.78); font-size:.95rem; line-height:1.7; max-width:460px; margin:0 auto 28px; font-weight:300; }
-        .cst-intro-meta { font-size:.72rem; color:#D4B068; letter-spacing:.16em; text-transform:uppercase; margin-top:20px; font-family:'Jost',sans-serif; }
         /* Progress */
         .cst-progress { margin:32px auto 28px; max-width:560px; }
         .cst-progress-track { height:3px; background:#EDE9E1; border-radius:99px; overflow:hidden; }
@@ -830,9 +825,10 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-final-cta { background:#2D4A3E; border-radius:20px; padding:42px 30px; text-align:center; color:#F7F4EF; margin-top:40px; box-shadow:0 30px 80px rgba(18,17,15,0.16); }
         .cst-final-cta h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.5rem,4vw,2rem); margin-bottom:12px; font-weight:500; }
         .cst-final-cta p { color:rgba(247,244,239,0.78); font-size:.92rem; max-width:470px; margin:0 auto 26px; line-height:1.7; font-weight:300; }
-        .cst-email-row { display:flex; gap:8px; max-width:400px; margin:0 auto 16px; flex-wrap:wrap; }
-        .cst-email-row input { flex:1; padding:13px 18px; border-radius:99px; border:none; font-family:inherit; font-size:.9rem; min-width:180px; background:rgba(247,244,239,0.95); color:#2C2A27; }
+        .cst-email-row { display:flex; flex-direction:column; gap:10px; max-width:400px; margin:0 auto 16px; align-items:center; }
+        .cst-email-row input { width:100%; padding:13px 18px; border-radius:99px; border:none; font-family:inherit; font-size:.9rem; background:rgba(247,244,239,0.95); color:#2C2A27; text-align:center; }
         .cst-email-row input:focus { outline:2px solid #D4B068; }
+        .cst-email-row .cst-btn { width:100%; }
         .cst-cta-stack { display:flex; flex-direction:column; gap:12px; max-width:400px; margin:0 auto; }
         .cst-fee-note { text-align:center; font-size:.74rem; color:#8A7F74; margin-top:4px; }
         .cst-restart { display:block; text-align:center; margin:20px auto 0; padding:14px 18px; color:#8A7F74; background:none; border:none; cursor:pointer; font-size:.85rem; text-decoration:underline; text-underline-offset:3px; font-family:inherit; }
@@ -845,19 +841,14 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
       <section className="cst-hero">
         <span className="cst-eyebrow">{t.hero.eyebrow}</span>
         <h1 className="cst-h1">{t.hero.h1}</h1>
-        <p className="cst-sub">{t.hero.sub}</p>
+        <p className="cst-sub">{phase === 'intro' ? t.intro.p : t.hero.sub}</p>
+        {phase === 'intro' && (
+          <button className="cst-btn gold" onClick={startQuiz} style={{ marginTop:'26px' }}>{t.intro.cta}</button>
+        )}
       </section>
 
       <div className="cst-wrap">
 
-        {/* INTRO */}
-        {phase === 'intro' && (
-          <div className="cst-intro-card">
-            <h2>{t.intro.h2}</h2>
-            <p>{t.intro.p}</p>
-            <button className="cst-btn gold" onClick={startQuiz}>{t.intro.cta}</button>
-          </div>
-        )}
 
         {/* QUIZ */}
         {phase === 'quiz' && q && (
@@ -1069,7 +1060,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
               <p style={{ color:'rgba(247,244,239,0.8)', fontSize:'.92rem', marginBottom:'18px', maxWidth:'470px', marginLeft:'auto', marginRight:'auto' }}>{t.results.email.planText}</p>
 
               <div className="cst-cta-stack">
-                <a className="cst-btn gold" href={`${SITE}/plan-your-trip`}>{t.results.email.planCta}</a>
+                <a className="cst-btn gold" href={`${SITE}/contact`}>{t.results.email.planCta}</a>
                 <a className="cst-btn" style={{ background:'transparent', borderColor:'#D4B068', color:'#D4B068' }} href={`${SITE}/play-with-a-pro`}>{t.results.email.pwapCta}</a>
               </div>
 
