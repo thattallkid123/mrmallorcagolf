@@ -520,6 +520,35 @@ const QUESTIONS = [
   },
 ]
 
+function optionLabels(question, value) {
+  if (!question || value == null) return []
+  const values = Array.isArray(value) ? value : [value]
+  return values
+    .map(v => question.options.find(option => option.value === v)?.label || String(v))
+    .filter(Boolean)
+}
+
+function selectorAnswerSummary(answers) {
+  return QUESTIONS
+    .map(question => {
+      const labels = optionLabels(question, answers[question.id])
+      if (!labels.length) return null
+      return `${question.title} ${labels.join(', ')}`
+    })
+    .filter(Boolean)
+    .join(' | ')
+}
+
+function selectorShortlistSummary(courses) {
+  return courses
+    .map((course, index) => `${index + 1}. ${course.name} - ${course.areaLabel} - ${course.greenFee}`)
+    .join(' | ')
+}
+
+function selectorShortlistNames(courses) {
+  return courses.map(course => course.name).join(', ')
+}
+
 /* =====================================================================
    SCORING ENGINE
 ===================================================================== */
@@ -686,6 +715,9 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     // Fire-and-forget: add to MailerLite Course Selector Leads group
     const mlBody = new URLSearchParams()
     mlBody.set('fields[email]', email)
+    mlBody.set('fields[selector_answers]', selectorAnswerSummary(answers))
+    mlBody.set('fields[selector_shortlist]', selectorShortlistSummary(topCourses))
+    mlBody.set('fields[selector_shortlist_names]', selectorShortlistNames(topCourses))
     mlBody.set('ml-submit', '1')
     mlBody.set('anticsrf', 'true')
     fetch(MAILERLITE_COURSE_SELECTOR, {
