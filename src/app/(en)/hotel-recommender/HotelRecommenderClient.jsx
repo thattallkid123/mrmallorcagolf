@@ -219,7 +219,24 @@ export default function HotelRecommenderClient() {
 
   async function sendEmail() {
     if (!email || !email.includes('@')) return
-    const hotelNames = results.map(x => x.hotel.name).join(', ')
+    const escapeHtml = value => String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;')
+
+    const bodyHtml = `
+      <p style="margin:0 0 16px;">Here are the hotel bases I would start with from your answers:</p>
+      ${results.map((x, index) => `
+        <div style="margin:0 0 18px;padding:0 0 16px;border-bottom:1px solid #E6DED1;">
+          <p style="margin:0 0 6px;font-weight:700;color:#2D4A3E;">${index + 1}. ${escapeHtml(x.hotel.name)}</p>
+          <p style="margin:0 0 8px;color:#6F665B;">${escapeHtml(x.hotel.subname)}</p>
+          <p style="margin:0 0 8px;">${escapeHtml(x.hotel.why)}</p>
+          <p style="margin:0;"><strong>Golf fit:</strong> ${escapeHtml(x.hotel.golf)}</p>
+        </div>
+      `).join('')}
+    `
 
     // Fire-and-forget: add to MailerLite
     const mlBody = new URLSearchParams()
@@ -233,11 +250,18 @@ export default function HotelRecommenderClient() {
     }).catch(() => {})
 
     try {
-      await fetch('/api/send-itinerary', {
+      const response = await fetch('/api/send-itinerary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, name: 'Hotel Recommender', summary: hotelNames, subscribeNewsletter: newsletter }),
+        body: JSON.stringify({
+          email,
+          tool: 'hotel-recommender',
+          subject: 'Your Mallorca golf hotel shortlist',
+          bodyHtml,
+          subscribeNewsletter: newsletter,
+        }),
       })
+      if (!response.ok) throw new Error('Email failed')
       setEmailSent(true)
     } catch {
       setEmailError(true)
