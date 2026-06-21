@@ -109,6 +109,7 @@ export default function GolfCostCalculatorClient() {
   const [emailError, setEmailError] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
+  const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
 
   function set(key, val) {
     setState(prev => ({ ...prev, [key]: val }))
@@ -129,6 +130,7 @@ export default function GolfCostCalculatorClient() {
     setEmailSent(false)
     setEmailError(false)
     setPdfSent(false)
+    setSubscribeNewsletter(false)
     goTo(1)
   }
 
@@ -139,7 +141,7 @@ export default function GolfCostCalculatorClient() {
       await fetch('/api/lead-magnet-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, guide: 'cost-guide' }),
+        body: JSON.stringify({ email, guide: 'cost-guide', subscribeNewsletter }),
       })
     } catch { /* fire and forget */ }
   }
@@ -191,6 +193,7 @@ export default function GolfCostCalculatorClient() {
           tool: 'tools-golf-cost-calculator',
           subject: 'Your Mallorca golf trip cost estimate',
           bodyHtml,
+          subscribeNewsletter,
         }),
       })
       setEmailSending(false)
@@ -578,6 +581,15 @@ export default function GolfCostCalculatorClient() {
                         {emailSending ? 'Sending…' : 'Email me the breakdown'}
                       </button>
                     </div>
+                    <label style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'8px', color:'rgba(247,244,239,0.62)', fontSize:'12px', margin:'10px 0 12px', cursor:'pointer', fontFamily:"'Jost',sans-serif" }}>
+                      <input
+                        type="checkbox"
+                        checked={subscribeNewsletter}
+                        onChange={e => setSubscribeNewsletter(e.target.checked)}
+                        style={{ accentColor:'#D4B068' }}
+                      />
+                      Also send me Andy's occasional Mallorca golf planning notes
+                    </label>
                     {emailError && <p style={{ fontSize:'13px', color:'#e8b4a8', marginBottom:'10px' }}>That didn't go through. Check the address and try again.</p>}
                   </>
                 )}

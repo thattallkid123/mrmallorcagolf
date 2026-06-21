@@ -581,6 +581,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
   const [emailError, setEmailError] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
+  const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
 
   function visibleQuestions(ans) {
     return QUESTIONS.filter(q => {
@@ -712,6 +713,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
           tool: 'tools-course-selector',
           subject: 'Your Mallorca course recommendations',
           bodyHtml,
+          subscribeNewsletter,
         }),
       })
       setEmailSending(false)
@@ -733,7 +735,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
       await fetch('/api/lead-magnet-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, guide: 'course-comparison' }),
+        body: JSON.stringify({ email, guide: 'course-comparison', subscribeNewsletter }),
       })
     } catch { /* fire and forget */ }
   }
@@ -748,6 +750,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     setEmailSent(false)
     setEmailError(false)
     setPdfSent(false)
+    setSubscribeNewsletter(false)
     window.scrollTo({ top: 0 })
   }
 
@@ -1050,6 +1053,15 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
                       {emailSending ? t.results.email.sending : t.results.email.button}
                     </button>
                   </div>
+                  <label style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'8px', color:'rgba(247,244,239,0.62)', fontSize:'.78rem', margin:'10px 0 12px', cursor:'pointer', fontFamily:"'Jost',sans-serif" }}>
+                    <input
+                      type="checkbox"
+                      checked={subscribeNewsletter}
+                      onChange={e => setSubscribeNewsletter(e.target.checked)}
+                      style={{ accentColor:'#D4B068' }}
+                    />
+                    Also send me Andy's occasional Mallorca golf planning notes
+                  </label>
                   {emailError && <p style={{ color:'#e8b4a8', fontSize:'.88rem', marginBottom:'14px' }}>{t.results.email.error}</p>}
                 </>
               )}

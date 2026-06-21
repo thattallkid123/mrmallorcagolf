@@ -305,6 +305,7 @@ export default function GolfDayBuilderClient() {
   const [emailSent, setEmailSent] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
+  const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
   const [toast, setToast] = useState('')
   const [showToast, setShowToast] = useState(false)
 
@@ -370,6 +371,7 @@ export default function GolfDayBuilderClient() {
     setEmail('')
     setEmailSent(false)
     setPdfSent(false)
+    setSubscribeNewsletter(false)
     window.scrollTo({ top: 0 })
   }
 
@@ -380,7 +382,7 @@ export default function GolfDayBuilderClient() {
       await fetch('/api/lead-magnet-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, guide: 'trip-planner' }),
+        body: JSON.stringify({ email, guide: 'trip-planner', subscribeNewsletter }),
       })
     } catch { /* fire and forget */ }
   }
@@ -422,7 +424,7 @@ export default function GolfDayBuilderClient() {
       const res = await fetch('/api/send-itinerary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, tool: 'golf-day-builder', subject: 'Your Mallorca golf day plan', bodyHtml }),
+        body: JSON.stringify({ email, tool: 'golf-day-builder', subject: 'Your Mallorca golf day plan', bodyHtml, subscribeNewsletter }),
       })
       setEmailSending(false)
       if (res.ok) { setEmailSent(true) }
@@ -704,6 +706,15 @@ export default function GolfDayBuilderClient() {
                     <button className="gdb-btn-gold" onClick={emailItinerary} disabled={emailSending}>
                       {emailSending ? 'Sending…' : 'Email me these plans'}
                     </button>
+                    <label className="gdb-newsletter-label">
+                      <input
+                        type="checkbox"
+                        checked={subscribeNewsletter}
+                        onChange={e => setSubscribeNewsletter(e.target.checked)}
+                        style={{ accentColor:'#D4B068' }}
+                      />
+                      Also send me Andy's occasional Mallorca golf planning notes
+                    </label>
                   </div>
                 )}
 

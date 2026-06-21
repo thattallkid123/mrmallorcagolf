@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 export default function LeadMagnetPage({ guide }) {
   const [email, setEmail] = useState('')
+  const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
   const [status, setStatus] = useState('idle')
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -17,7 +18,7 @@ export default function LeadMagnetPage({ guide }) {
       const response = await fetch('/api/lead-magnet-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, guide: guide.slug }),
+        body: JSON.stringify({ email, guide: guide.slug, subscribeNewsletter }),
       })
 
       const data = await response.json().catch(() => null)
@@ -25,6 +26,7 @@ export default function LeadMagnetPage({ guide }) {
       if (response.ok && data?.success) {
         setStatus('success')
         setEmail('')
+        setSubscribeNewsletter(false)
         return
       }
 
@@ -257,6 +259,27 @@ export default function LeadMagnetPage({ guide }) {
                 {status === 'submitting' ? '...' : guide.buttonLabel}
               </button>
             </form>
+            <label
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+                fontFamily: "'Jost', sans-serif",
+                fontSize: '0.78rem',
+                fontWeight: 300,
+                color: 'rgba(44,42,39,0.62)',
+                margin: '10px 0 0',
+                cursor: 'pointer',
+              }}
+            >
+              <input
+                type="checkbox"
+                checked={subscribeNewsletter}
+                onChange={(e) => setSubscribeNewsletter(e.target.checked)}
+                style={{ accentColor: 'var(--gold, #B8973C)' }}
+              />
+              Also send me Andy&apos;s occasional Mallorca golf planning notes
+            </label>
             {status === 'error' ? (
               <p
                 style={{

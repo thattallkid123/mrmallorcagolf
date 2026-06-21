@@ -487,7 +487,7 @@ export default function HotelRecommenderClient() {
                   </div>
                   <label className="hr-newsletter-opt">
                     <input type="checkbox" checked={newsletter} onChange={e => setNewsletter(e.target.checked)} style={{ accentColor:'#B8973C' }} />
-                    Also send me Andy's occasional planning notes
+                    Also send me Andy's occasional Mallorca golf planning notes
                   </label>
                   <p style={{ fontSize:'11px', color:'#8A7F74', marginTop:'8px' }}>No spam. Andy replies to every message personally, usually within a day.</p>
                   {emailError && <p className="hr-email-success">Something went wrong. Try emailing andy@mrmallorcagolf.com directly.</p>}

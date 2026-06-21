@@ -65,7 +65,7 @@ function buildDeliveryEmail(guideName, downloadUrl) {
 
 export async function POST(request) {
   try {
-    const { email, guide } = await request.json()
+    const { email, guide, subscribeNewsletter } = await request.json()
 
     if (!email || !guide) {
       return NextResponse.json({ error: 'Missing email or guide' }, { status: 400 })
@@ -101,6 +101,26 @@ export async function POST(request) {
     if (!mlResponse.ok && mlResponse.status !== 200 && mlResponse.status !== 201) {
       const message = mlData?.message || 'Subscription failed'
       return NextResponse.json({ error: message }, { status: mlResponse.status })
+    }
+
+    // Optional newsletter/planning-notes opt-in
+    if (subscribeNewsletter) {
+      const newsletterGroupId = process.env.MAILERLITE_TOOLS_GROUP_ID
+      if (newsletterGroupId) {
+        await fetch('https://connect.mailerlite.com/api/subscribers', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${apiToken}`,
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+            groups: [newsletterGroupId],
+            fields: { source: `${guide}-planning-notes` },
+          }),
+        }).catch(() => {})
+      }
     }
 
     // Send instant delivery email via Resend
