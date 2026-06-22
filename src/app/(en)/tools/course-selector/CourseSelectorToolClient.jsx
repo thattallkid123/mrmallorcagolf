@@ -600,7 +600,7 @@ function personalMatchLine(c, rank, answers, t) {
 
 export default function CourseSelectorToolClient({ lang = 'en' }) {
   const t = COURSE_SELECTOR_T[lang] || COURSE_SELECTOR_T.en
-  const [phase, setPhase] = useState('intro')
+  const [phase, setPhase] = useState('quiz')
   const [qIndex, setQIndex] = useState(0)
   const [answers, setAnswers] = useState({})
   const [topCourses, setTopCourses] = useState([])
@@ -773,7 +773,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
   }
 
   function restart() {
-    setPhase('intro')
+    setPhase('quiz')
     setQIndex(0)
     setAnswers({})
     setTopCourses([])

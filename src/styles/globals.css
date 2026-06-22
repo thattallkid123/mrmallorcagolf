@@ -3096,16 +3096,16 @@ select.form-control { cursor: pointer; }
 }
 
 .planning-guide-cta {
-  max-width: 1120px;
+  max-width: 680px;
   margin: 0 auto;
   background: linear-gradient(135deg, #f7f1e6 0%, #fffaf0 52%, #eadfca 100%);
   border: 1px solid rgba(184,151,60,0.28);
   box-shadow: var(--shadow-soft);
-  padding: clamp(28px, 4vw, 44px);
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-  gap: clamp(24px, 4vw, 48px);
+  padding: clamp(32px, 5vw, 52px) clamp(24px, 5vw, 56px);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -3118,12 +3118,6 @@ select.form-control { cursor: pointer; }
   pointer-events: none;
 }
 
-.planning-guide-cta__copy,
-.planning-guide-cta__form {
-  position: relative;
-  z-index: 1;
-}
-
 .planning-guide-cta__eyebrow {
   font-family: var(--font-sans);
   font-size: 9px;
@@ -3132,30 +3126,31 @@ select.form-control { cursor: pointer; }
   text-transform: uppercase;
   color: var(--taupe);
   margin: 0 0 .75rem;
+  position: relative;
+  z-index: 1;
 }
 
 .planning-guide-cta h2 {
   font-family: var(--font-serif);
-  font-size: clamp(1.55rem, 2.8vw, 2.35rem);
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
   font-weight: 500;
   color: var(--deep);
   line-height: 1.08;
   margin: 0 0 1rem;
+  position: relative;
+  z-index: 1;
 }
 
-.planning-guide-cta p {
+.planning-guide-cta__body {
   font-family: var(--font-sans);
   font-size: .94rem;
   font-weight: 300;
   color: var(--charcoal);
   line-height: 1.75;
-  margin: 0;
-}
-
-.planning-guide-cta__form {
-  background: rgba(255,255,255,0.72);
-  border: 1px solid rgba(184,151,60,0.22);
-  padding: 20px;
+  margin: 0 0 1.75rem;
+  max-width: 480px;
+  position: relative;
+  z-index: 1;
 }
 
 .planning-guide-cta__fineprint {
@@ -3164,6 +3159,8 @@ select.form-control { cursor: pointer; }
   color: var(--taupe) !important;
   font-size: 10px !important;
   letter-spacing: .06em;
+  position: relative;
+  z-index: 1;
 }
 
 .planning-guide-cta__contact {
@@ -3172,6 +3169,8 @@ select.form-control { cursor: pointer; }
   font-size: 0.78rem !important;
   line-height: 1.6 !important;
   color: var(--charcoal) !important;
+  position: relative;
+  z-index: 1;
 }
 
 .planning-guide-cta__contact a {
@@ -3185,10 +3184,10 @@ select.form-control { cursor: pointer; }
 }
 
 .planning-guide-cta__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  padding: 0 36px;
   min-height: 48px;
   background: var(--pine);
   color: var(--white);
@@ -3198,7 +3197,10 @@ select.form-control { cursor: pointer; }
   font-weight: 500;
   letter-spacing: .16em;
   text-transform: uppercase;
+  border-radius: 999px;
   transition: background .25s ease, transform .25s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .planning-guide-cta__button:hover {
@@ -3208,17 +3210,11 @@ select.form-control { cursor: pointer; }
 
 .planning-guide-cta--compact {
   margin: 2.5rem 0;
-  padding: 28px;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  padding: 28px 24px;
 }
 
 .planning-guide-cta--compact h2 {
   font-size: clamp(1.35rem, 2.4vw, 1.9rem);
-}
-
-.planning-guide-cta--compact .planning-guide-cta__form {
-  padding: 16px;
 }
 
 .tool-placement-cta {
@@ -3312,20 +3308,8 @@ select.form-control { cursor: pointer; }
 }
 
 @media (max-width: 760px) {
-  .planning-guide-cta {
-    grid-template-columns: 1fr;
-  }
-
   .tool-placement-cta {
     grid-template-columns: 1fr;
-  }
-
-  .planning-guide-cta__form form {
-    flex-direction: column;
-  }
-
-  .planning-guide-cta__form button {
-    width: 100%;
   }
 }
 
