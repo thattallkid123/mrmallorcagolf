@@ -495,13 +495,21 @@ app.post('/api/backup/config', (req, res) => {
 
 app.get('/api/backup/status', (req, res) => {
   try {
-    const { execSync } = require('child_process');
-    const log = execSync('git log -1 --format=%ci|||%s', { cwd: BACKUP_REPO_PATH }).toString().trim();
+    const { spawnSync } = require('child_process');
+    // Use PowerShell + forward-slash path to avoid cmd.exe pipe/percent issues
+    const repoPath = BACKUP_REPO_PATH.replace(/\\/g, '/');
+    const r = spawnSync('powershell.exe', [
+      '-NoProfile', '-NonInteractive', '-Command',
+      `git -C '${repoPath}' log -1 '--format=%ci|||%s'`
+    ], { encoding: 'utf8' });
+    if (r.error) throw r.error;
+    if (r.status !== 0) throw new Error(r.stderr || 'git log failed');
+    const log = r.stdout.trim();
     const sep = log.indexOf('|||');
     const date = sep > -1 ? log.slice(0, sep).trim() : '';
     const msg  = sep > -1 ? log.slice(sep + 3).trim() : log;
     res.json({ lastRun: date || null, lastMessage: msg || 'No commits yet' });
-  } catch(e) { res.json({ lastRun: null, lastMessage: 'Backup repo not found or no commits yet' }); }
+  } catch(e) { res.json({ lastRun: null, lastMessage: 'Backup repo not found or no commits yet: ' + e.message }); }
 });
 
 app.post('/api/backup/run', (req, res) => {

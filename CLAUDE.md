@@ -133,6 +133,8 @@ Common folders to mount: Downloads, Documents, specific project folders.
 
 **Do not accumulate "process" files  keep only outcomes.**
 
+**Build scripts and intermediate files:** If a task requires helper scripts, extracted text files, or intermediate outputs (e.g. a `build_doc.js` script, a `content.txt` extraction), delete these automatically before reporting the task as done. Only the final deliverable remains.
+
 ---
 
 ## Quick Commands
@@ -165,6 +167,16 @@ Completion gate for repo work:
 2. `MMG_CONTROL_PANEL_INTEGRATED.md` (repo root)  Systems architecture, workflows, weekly/monthly checklists
 3. `MMG_MASTER_CONTROL_CENTER.md` (Google Drive root)  Business operations & financial tracking
 
+**For AI coaching / strategic context:**
+- `MMG_BUSINESS_BRIEF.md` (Google Drive root)  Complete business context doc — drop into AI projects alongside any OS file. Covers brand, pricing, clients, partners, China strategy, Yina's role, ideas pipeline. Refresh monthly.
+- `Systems & Planning/AI Coach/` — four business coach OS files (drop one or more alongside the Brief for strategic coaching sessions):
+  - `HORMOZI_OPERATING_SYSTEM.md` — offer mechanics, pricing, Stage I discipline, lead generation
+  - `PRIESTLEY_OPERATING_SYSTEM.md` — oversubscribed positioning, 5 Ps, personal brand as business, 24 assets
+  - `BLAIRENNS_OPERATING_SYSTEM.md` — expert selling without pitching, hotel GM conversations, premium pricing psychology
+  - `CHINA_OS.md` — everything China in one file: digital strategy, traveller profile (Dragon Trail/Hurun/Ctrip), Douyin/Xiaohongshu/WeChat mechanics, seasonal calendar, Yina's role
+  - `SOCIAL_MEDIA_WESTERN_OS.md` — Instagram + YouTube (Strong Media hooks/captions/filming, algorithm mechanics, MMG content pillars)
+  - `HOW_TO_USE_THIS_SYSTEM.md` — setup guide for claude.ai Projects, which files to combine per question type, example questions
+
 **For code/website work:**
 1. `BRANCHES.md` (git rules)
 2. `CONTENT_WORKFLOW.md` (content structure)
@@ -173,6 +185,23 @@ Completion gate for repo work:
 
 **For current priorities/status:**
 - Check: Google Tasks (canonical — synced to control panel)
+
+### Lead Magnets, Tools, And Newsletter Status (22 June 2026)
+
+The PDF lead magnets, HTML planning tools, MailerLite groups/automations, immediate Resend delivery emails, optional planning-notes opt-in, and Course Selector personalization are set up and tested.
+
+Current state:
+- Website-side PDF/tool result emails send the promised download/result immediately.
+- MailerLite nurtures are active and delayed so they follow the immediate website email rather than duplicate it.
+- Course Selector sends `selector_answers`, `selector_shortlist`, and `selector_shortlist_names` to MailerLite.
+- MailerLite `Email 1 - Shortlist` uses the proper `selector_shortlist_names` variable; raw placeholder text no longer appears in preview.
+- Course images remain on website result cards only, not in emails. Keep emails light unless there is a clear reason to add images later.
+- The detailed handover/audit lives at `C:\Users\andyg\Downloads\mrmallorcagolf-lead-magnets-CTA-and-mailing-list-handover-june-2026.md`.
+
+Next newsletter step:
+- Do not build a heavy newsletter programme yet. The system is now mainly waiting for real subscribers.
+- When there is enough list activity, start with a light monthly "Mallorca golf planning notes" email: one course note, one planning tip, one course worth considering, and a soft reply CTA.
+- Tone: useful, practical, first-hand. Not generic tourism copy and not a hard sales newsletter.
 
 **For business/financial work:**
 - Read: `Google Drive / Mr Mallorca Golf / MMG_MASTER_CONTROL_CENTER.md` (everything links from here)
@@ -238,6 +267,8 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 **Google Drive (C:\Users\andyg\My Drive\Mr Mallorca Golf):**
 - **Master control:** `MMG_MASTER_CONTROL_CENTER.md`  Start here for all business questions
+- **Business Brief:** `MMG_BUSINESS_BRIEF.md` (root)  AI coaching context, business story, current status
+- **Course encyclopaedia:** `MMG_ENCYCLOPAEDIA_DATA_MASTER.md` (root)  All 24 courses, facts, pricing, access rules
 - **Financial:** `Business Operations & Financial/2026/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker) + `MMG_Business_Model.pdf` (pricing model)
 - **Systems & planning:** `Systems & Planning/` (business plan, pricing, checklists)
 - **Contacts & partnerships:** `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` (3 sheets: Golf Courses 24 + Affiliates 39 incl. website/phone/location + China Operators 15)
