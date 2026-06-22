@@ -367,7 +367,7 @@ const COURSES = [
     tags:{ability:['beginner','casual','confident'],style:['scenic','relaxed','family'],budget:['value'],group:['family','couple','friends','solo']}
   },
   {
-    id:'santa-ponsa-2', name:'Golf Santa Ponsa 2',
+    id:'santa-ponsa-2', name:'Golf Santa Ponsa 2', membersOnly:true,
     area:'Southwest', areaLabel:'Santa Ponsa · Southwest',
     diff10:7, scenery:3, prestige:3, value:5, walkability:3,
     greenFee:'Peak €88 / Low €65 (members + arranged access)',
@@ -383,7 +383,7 @@ const COURSES = [
     tags:{ability:['casual','confident','low'],style:['relaxed','serious'],budget:['value','mid'],group:['friends','couple','solo']}
   },
   {
-    id:'santa-ponsa-3', name:'Golf Santa Ponsa 3',
+    id:'santa-ponsa-3', name:'Golf Santa Ponsa 3', membersOnly:true,
     area:'Southwest', areaLabel:'Santa Ponsa · Southwest',
     diff10:4, scenery:3, prestige:2, value:5, walkability:4,
     greenFee:'Peak €30 / Low €25 (9 holes · arranged access)',
@@ -732,7 +732,8 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         <p style="margin:0 0 4px;font-family:'Jost',Arial,sans-serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#B8973C;">${label}</p>
         <h3 style="margin:0 0 8px;font-family:Georgia,serif;font-size:19px;font-weight:400;color:#1A1916;">${c.name}</h3>
         <p style="margin:0 0 6px;font-family:Georgia,serif;font-size:14px;line-height:1.6;color:#2C2A27;">${c.bestFor}</p>
-        <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8A7F74;">${c.areaLabel} · ${DIFF_LABEL(c.diff10)} · ${c.greenFee}</p>
+        <p style="margin:0 0 ${c.membersOnly ? '10px' : '0'};font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8A7F74;">${c.areaLabel} · ${DIFF_LABEL(c.diff10)} · ${c.greenFee}</p>
+        ${c.membersOnly ? `<p style="margin:0;padding:8px 12px;background:#f0f4ff;border-left:3px solid #4a6fa5;border-radius:0 4px 4px 0;font-family:'Jost',Arial,sans-serif;font-size:11px;color:#2a3f6f;line-height:1.5;">Members-only course. Andy arranges access for clients — mention it when you enquire.</p>` : ''}
       </div>`
     }).join('')
 
@@ -846,6 +847,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-cc-andy { background:#F7F4EF; border-left:3px solid #B8973C; border-radius:0 10px 10px 0; padding:13px 17px; font-size:.9rem; line-height:1.65; color:#2C2A27; margin-bottom:18px; font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; }
         .cst-cc-andy strong { font-style:normal; font-family:'Jost',sans-serif; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:#2D4A3E; display:block; margin-bottom:4px; }
         .cst-cc-hcap { background:#fff8ee; border-left:3px solid #e8860a; border-radius:0 10px 10px 0; padding:9px 17px; font-size:.82rem; line-height:1.5; color:#7a4300; margin-bottom:18px; font-weight:400; }
+        .cst-cc-members { background:#f0f4ff; border-left:3px solid #4a6fa5; border-radius:0 10px 10px 0; padding:9px 17px; font-size:.82rem; line-height:1.5; color:#2a3f6f; margin-bottom:18px; font-weight:400; }
         .cst-cc-actions { display:flex; flex-wrap:wrap; gap:10px; align-items:stretch; flex-direction:column; }
         .cst-cc-review { font-size:.83rem; color:#2D4A3E; text-decoration:underline; text-underline-offset:3px; cursor:pointer; background:none; border:none; font-family:inherit; }
         .cst-compare-check { display:flex; align-items:center; gap:8px; font-size:.83rem; color:#8A7F74; cursor:pointer; margin-left:auto; letter-spacing:.03em; font-family:'Jost',sans-serif; }
@@ -968,6 +970,9 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
                     <div className="cst-cc-stat"><div className="k">{t.results.stats.greenFee}</div><div className="v">{c.greenFee}</div></div>
                     <div className="cst-cc-stat"><div className="k">{t.results.stats.walkRide}</div><div className="v">{c.buggyNote}</div></div>
                   </div>
+                  {c.membersOnly && (
+                    <div className="cst-cc-members">Members-only course. Andy arranges access for clients — mention it when you enquire.</div>
+                  )}
                   {c.handicapReq && (
                     <div className="cst-cc-hcap">{t.results.handicapNote}</div>
                   )}
@@ -1056,7 +1061,10 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
                     <p style={{ color:'#D4B068', fontSize:'.74rem', letterSpacing:'.14em', textTransform:'uppercase', marginBottom:'6px', fontFamily:"'Jost',sans-serif" }}>{t.results.email.pdfLabel}</p>
                     <p style={{ fontSize:'.82rem', color:'rgba(247,244,239,0.78)', marginBottom:'14px', lineHeight:'1.55' }}>{t.results.email.pdfDesc}</p>
                     {pdfSent ? (
-                      <p style={{ color:'#D4B068', fontSize:'.82rem' }}>{t.results.email.pdfSent}</p>
+                      <div style={{ padding:'12px 0 4px' }}>
+                        <p style={{ color:'#D4B068', fontSize:'1.1rem', marginBottom:'4px' }}>✓</p>
+                        <p style={{ color:'#F7F4EF', fontSize:'.88rem', lineHeight:'1.5', margin:0 }}>{t.results.email.pdfSent}</p>
+                      </div>
                     ) : (
                       <button
                         className="cst-btn gold"
@@ -1096,17 +1104,18 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
               )}
 
               <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.55)', marginTop:'8px', textAlign:'center' }}>{t.results.email.spam}</p>
+            </div>
 
-              <div style={{ borderTop:'1px solid rgba(255,255,255,.14)', margin:'26px 0 20px' }} />
-              <p style={{ color:'rgba(247,244,239,0.8)', fontSize:'.92rem', marginBottom:'18px', maxWidth:'470px', marginLeft:'auto', marginRight:'auto' }}>{t.results.email.planText}</p>
+            <div style={{ background:'#fff', border:'1px solid #EDE9E1', borderRadius:'20px', padding:'32px 24px', textAlign:'center', marginTop:'16px' }}>
+              <p style={{ color:'#2C2A27', fontSize:'.95rem', marginBottom:'20px', maxWidth:'470px', marginLeft:'auto', marginRight:'auto', lineHeight:'1.7' }}>{t.results.email.planText}</p>
 
               <div className="cst-cta-stack">
                 <a className="cst-btn gold" href={`${SITE}/contact`}>{t.results.email.planCta}</a>
-                <a className="cst-btn" style={{ background:'transparent', borderColor:'#D4B068', color:'#D4B068' }} href={`${SITE}/play-with-a-pro`}>{t.results.email.pwapCta}</a>
+                <a className="cst-btn" style={{ background:'transparent', border:'1px solid #2D4A3E', color:'#2D4A3E' }} href={`${SITE}/play-with-a-pro`}>{t.results.email.pwapCta}</a>
               </div>
 
-              <div style={{ marginTop:'24px', fontSize:'.8rem', letterSpacing:'.04em' }}>
-                <a href={`${SITE}/golf-courses`} style={{ color:'#D4B068', textDecoration:'underline', textUnderlineOffset:'3px', margin:'0 9px' }}>{t.results.email.allCourses}</a>
+              <div style={{ marginTop:'20px', fontSize:'.8rem', letterSpacing:'.04em' }}>
+                <a href={`${SITE}/golf-courses`} style={{ color:'#B8973C', textDecoration:'underline', textUnderlineOffset:'3px' }}>{t.results.email.allCourses}</a>
               </div>
             </div>
 
