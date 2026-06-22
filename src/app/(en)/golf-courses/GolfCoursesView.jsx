@@ -159,7 +159,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
               {/* Server-rendered course index for search engines */}
               <ul aria-hidden="true" style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
                 {GOLF_COURSE_DATA.flatMap(region => region.courses).map(course => (
-                  <li key={course.name}>{course.name} — Mallorca golf course</li>
+                  <li key={course.name}>{course.name}, Mallorca golf course</li>
                 ))}
               </ul>
             </section>

@@ -50,7 +50,7 @@ export const GUIDES_CONTENT = {
         badgeGold: true,
         img: '/images/son-muntaner-card.webp',
         imgPosition: 'center 30%',
-        title: "Golf Son Muntaner, Mallorca — A PGA Professional's Honest Review (2026)",
+        title: "Golf Son Muntaner, Mallorca. A PGA Professional's Honest Review (2026)",
         intro:
           "Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
         readTime: '6 min read',

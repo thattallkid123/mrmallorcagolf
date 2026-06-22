@@ -5,9 +5,9 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: "Son Gual Golf Mallorca — Honest 2026 Review",
+        title: "Son Gual Golf Mallorca: Honest 2026 Review",
         description:
-          "Son Gual reviews are consistently strong — and earned. Green fees €110–€165, par 72, handicap required. My honest PGA verdict: conditions, difficulty, ideal player profile, and whether it is worth it.",
+          "Son Gual reviews are consistently strong. And earned. Green fees €110–€165, par 72, handicap required. My honest PGA verdict: conditions, difficulty, ideal player profile, and whether it is worth it.",
         title: 'Son Gual Golf Mallorca Review (2026) | Is It Worth It? Green Fees, Wind & Verdict',
         description:
           'Thinking about playing Son Gual in Mallorca? Honest 2026 PGA review with green fees, course conditions, wind notes, handicap requirement, and whether it is worth booking.',
@@ -182,7 +182,7 @@ export const GUIDE_POST_CONTENT = {
   'alcanada-review': {
     en: {
       metadata: {
-        title: "Alcanada Golf Mallorca — Honest 2026 Review",
+        title: "Alcanada Golf Mallorca: Honest 2026 Review",
         description:
           'Alcanada golf course Mallorca reviewed by a PGA Professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.',
         imagePath: '/images/alcanada-blog/alc-7.webp',
@@ -339,9 +339,9 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Mallorca — Honest 2026 Review",
+        title: "Son Muntaner Golf Mallorca: Honest 2026 Review",
         description:
-          "Son Muntaner golf club reviews back Spain's Best Course 2025 — but is it right for your group? Green fees €125–€250, buggy included, 5 mins from Palma. Honest PGA verdict inside.",
+          "Son Muntaner golf club reviews back Spain's Best Course 2025. Is it right for your group? Green fees €125–€250, buggy included, 5 mins from Palma. Honest PGA verdict inside.",
         title: 'Son Muntaner Golf Mallorca Review (2026) | Green Fees, Buggy & Verdict',
         description:
           "Son Muntaner review from a PGA professional: Spain's Best Course 2025, green fees, buggy included, course conditions, and whether it is the right Mallorca round for your group.",
@@ -548,7 +548,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx Review (2026) - Green Fees, Difficulty & Honest Rating",
         description:
-          "Golf de Andratx: ~€125, par 72, the longest par 5 in Spain. Mountain setting in the southwest. I played it in May 2026 — tactical layout that rewards patience far more than length.",
+          "Golf de Andratx: ~€125, par 72, the longest par 5 in Spain. Mountain setting in the southwest. I played it in May 2026. Tactical layout that rewards patience far more than length.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
@@ -1264,7 +1264,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: 'On-Course Golf Coaching in Mallorca - Play Better, Right Now | Mr Mallorca Golf',
         description:
-          'On-course golf coaching in Mallorca with a PGA Advanced Professional. Real situations, real feedback, real improvement. Not a lesson — a round with a coach who makes you better as you play.',
+          'On-course golf coaching in Mallorca with a PGA Advanced Professional. Real situations, real feedback, real improvement. Not a lesson. A round with a coach who makes you better as you play.',
         imagePath: '/images/son-gual-blog/sg-swing.webp',
       },
       meta: {
@@ -1272,7 +1272,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '5 min read',
         updated: 'May 2026',
-        title: 'On-Course Golf Coaching in Mallorca — Play Better, Right Now',
+        title: 'On-Course Golf Coaching in Mallorca. Play Better, Right Now',
         intro:
           'Most lessons happen on a range. On-course coaching happens where the game actually is. Here is what it involves, who it suits, and what you can expect from a day with me.',
         related: [
@@ -1318,7 +1318,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'The Courses We Use' },
         {
           type: 'paragraph',
-          text: 'Most Play With A Pro days take place at <a href="/guides/son-gual-review">Son Gual</a> — my most-played course on the island and one of the best tests of course management available here. We also use <a href="/guides/alcanada-review">Alcanada</a> for groups who want the most scenic round, and other courses depending on the group level and what they want to work on.',
+          text: 'Most Play With A Pro days take place at <a href="/guides/son-gual-review">Son Gual</a>, my most-played course on the island and one of the best tests of course management available here. We also use <a href="/guides/alcanada-review">Alcanada</a> for groups who want the most scenic round, and other courses depending on the group level and what they want to work on.',
         },
         { type: 'heading', text: 'What You Get Out of It' },
         {
@@ -1336,7 +1336,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'cta',
-          text: 'Interested in a Play With A Pro day — on-course coaching on one of Mallorca best courses?',
+          text: 'Interested in a Play With A Pro day? On-course coaching on one of Mallorca best courses.',
           linkLabel: 'See how it works →',
           href: '/play-with-a-pro',
           internal: true,

@@ -754,7 +754,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'is-mallorca-good-for-golf': {
     metadata: {
-      title: "Is Mallorca Good for Golf? Yes — Here's What to Know (2026)",
+      title: "Is Mallorca Good for Golf? Yes. Here's What to Know (2026)",
       description:
         '24 courses, year-round sunshine, green fees from €55. A PGA professional based in Mallorca since 2025 gives an honest answer on courses, conditions, and what to expect.',
       canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',

@@ -44,10 +44,10 @@ const PREF_NOTES = {
 }
 
 const PACKAGES = {
-  value: 'Course Picks & Booking Help — Andy confirms your course mix, books tee times at the right rates, and shares his course notes for each round.',
-  balanced: 'Trip Planning + One Coached Round — Andy plans the trip end to end and joins you for a Play With A Pro round at one of your courses.',
-  premium: 'Signature Golf Day + Full Trip Planning — a hosted Signature Day with Andy plus full planning of courses, tee times, and transport.',
-  luxury: 'Full Concierge Trip — every round, transfer, table, and tee time arranged, with Andy hosting your marquee golf day.',
+  value: 'Course Picks & Booking Help: Andy confirms your course mix, books tee times at the right rates, and shares his course notes for each round.',
+  balanced: 'Trip Planning + One Coached Round: Andy plans the trip end to end and joins you for a Play With A Pro round at one of your courses.',
+  premium: 'Signature Golf Day + Full Trip Planning: a hosted Signature Day with Andy plus full planning of courses, tee times, and transport.',
+  luxury: 'Full Concierge Trip: every round, transfer, table, and tee time arranged, with Andy hosting your marquee golf day.',
 }
 
 function range(perUnit, units) {
@@ -775,7 +775,7 @@ export default function GolfTripCalculatorClient() {
                 state.clubs === 'yes' && "Bringing your own clubs usually beats hiring for 3+ rounds. Check your airline's bag fee.",
                 (state.accommodation === '5star' || state.accommodation === 'villa') && 'A good 4-star near your courses can free up budget for an extra round.',
                 state.dining === 'premium' && 'Save premium dining for one or two standout nights and go good-local the rest.',
-                'Travel outside peak spring/autumn weeks — green fees and hotels both drop.',
+                'Travel outside peak spring/autumn weeks. Green fees and hotels both drop.',
               ]
                 .filter(Boolean)
                 .slice(0, 5)

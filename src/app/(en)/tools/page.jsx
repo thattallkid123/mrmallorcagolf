@@ -249,7 +249,7 @@ export default function ToolsIndex() {
       <section className="ti-hero">
         <span className="ti-eyebrow">Free tools</span>
         <h1 className="ti-h1">Plan your Mallorca golf trip</h1>
-        <p className="ti-sub">Five free tools. No sign-up needed. Each one takes under two minutes and gives you something useful — a course shortlist, a cost estimate, a hotel match, or a full day plan.</p>
+        <p className="ti-sub">Five free tools. No sign-up needed. Each one takes under two minutes: a course shortlist, a cost estimate, a hotel match, or a full day plan.</p>
       </section>
 
       <section className="ti-carousel">
@@ -280,7 +280,7 @@ export default function ToolsIndex() {
           <div>
             <div className="ti-andy-label">Andy Griffiths · UK PGA Advanced Professional</div>
             <p className="ti-andy-text">
-              These tools give you a starting point — a shortlist, an estimate, a plan. When you're ready to make it real, I confirm tee times, arrange access at members-only courses, and build the trip around your golf. Everything is free until you decide to book.
+              These tools give you a starting point: a shortlist, an estimate, a plan. When you're ready to make it real, I confirm tee times, arrange access at members-only courses, and build the trip around your golf. Everything is free until you decide to book.
             </p>
           </div>
         </div>

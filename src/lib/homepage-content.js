@@ -40,7 +40,7 @@ export const HOME_CONTENT = {
           href: '/plan-your-trip',
         },
       ],
-      coursesBlurb: "I play and review every course on the island — Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. If you want to compare courses before booking,",
+      coursesBlurb: "I play and review every course on the island: Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. If you want to compare courses before booking,",
       coursesBlurbLink: 'see the full list',
       stats: [
         { value: 'Jan-Dec', label: 'year-round season' },
@@ -308,7 +308,7 @@ export const HOME_CONTENT = {
         },
         {
           q: 'What kind of coaching do you offer?',
-          a: "On-course coaching during a complete 18-hole round. Not range lessons or individual swing instruction — I work with you playing real holes, where course management and decision-making matter. I help with club choice, scoring decisions, and the patterns that only show up when you're actually playing.",
+          a: "On-course coaching during a complete 18-hole round. Not range lessons or individual swing instruction. I work with you playing real holes, where course management and decision-making matter. I help with club choice, scoring decisions, and the patterns that only show up when you're actually playing.",
         },
         {
           q: 'Which course do you use?',
@@ -1972,7 +1972,7 @@ const HOME_PACKAGE_ITEMS = {
         'Private transfers and recovery time',
         'Caddy, videographer, and premium club hire options',
         'Post-round video analysis included',
-        'Priority booking — your dates held first',
+        'Priority booking. Your dates held first.',
       ],
       note: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons can be planned around you before the day.',
       cta: 'Enquire',

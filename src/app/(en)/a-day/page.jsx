@@ -242,7 +242,7 @@ export default function ADayPage() {
               The decisions here are real.
             </h2>
             <p className="a-day-section__copy">
-              The course is chosen to match your game. A proper test, but not unfair. Wind, conditions, narrow fairways, water—the decisions you make change with what's in front of you, and getting them right or wrong matters. That&rsquo;s why playing with someone matters.
+              The course is chosen to match your game. A proper test, but not unfair. Wind, conditions, narrow fairways, water: the decisions you make change with what's in front of you, and getting them right or wrong matters. That&rsquo;s why playing with someone matters.
             </p>
             <p className="a-day-section__copy">
               On a range, a tip about club selection or alignment is abstract. You hear it, you file it, you move to the next shot. On course, when the wind is pushing, the fairway is narrow, and the score is real, the same information becomes concrete. You feel it. That difference is what makes things stick.

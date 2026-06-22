@@ -84,7 +84,7 @@ export const CONTACT_CONTENT = {
     },
     stayInTouch: {
       heading: 'Stay in touch',
-      body: 'Course notes and Mallorca golf insights every two weeks — straight to your inbox.',
+      body: 'Course notes and Mallorca golf insights every two weeks, straight to your inbox.',
     },
     dateCta: 'Build Your Itinerary',
   },

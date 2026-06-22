@@ -18,7 +18,7 @@ import {
 const SORT_UI = {
   en: {
     controlsIntro: "Filter by region. Each card shows peak and low green fee, par, Andy's personal rating, and key things to know before you play.",
-    dynamicKey: '* Dynamic-pricing course — the fee changes by season, time of day, or demand. We display the peak price.',
+    dynamicKey: '* Dynamic-pricing course: the fee changes by season, time of day, or demand. We display the peak price.',
     sortLabel: 'Sort:',
     topRated: 'Top Rated',
     az: 'A-Z',
@@ -30,7 +30,7 @@ const SORT_UI = {
   },
   de: {
     controlsIntro: 'Nach Region filtern. Jede Karte zeigt Spitzen- und Niedrigpreis, Par, Andys persoenliche Bewertung und die wichtigsten Hinweise vor der Runde.',
-    dynamicKey: '* Platz mit dynamischer Preisgestaltung — der Preis variiert je nach Saison, Tageszeit oder Nachfrage. Wir zeigen den Spitzenpreis.',
+    dynamicKey: '* Platz mit dynamischer Preisgestaltung: der Preis variiert je nach Saison, Tageszeit oder Nachfrage. Wir zeigen den Spitzenpreis.',
     sortLabel: 'Sortierung:',
     topRated: 'Top bewertet',
     az: 'A-Z',
@@ -40,7 +40,7 @@ const SORT_UI = {
   },
   es: {
     controlsIntro: 'Filtra por zona. Cada ficha muestra green fee pico y bajo, par, la valoracion personal de Andy y lo mas importante antes de jugar.',
-    dynamicKey: '* Campo con tarifa dinamica — el precio varia segun la temporada, la hora del dia o la demanda. Mostramos el precio maximo.',
+    dynamicKey: '* Campo con tarifa dinamica: el precio varia segun la temporada, la hora del dia o la demanda. Mostramos el precio maximo.',
     sortLabel: 'Ordenar:',
     topRated: 'Mejor valorados',
     az: 'A-Z',
@@ -50,7 +50,7 @@ const SORT_UI = {
   },
   fr: {
     controlsIntro: "Filtrez par zone. Chaque fiche affiche le green fee maximum et bas, le par, la note personnelle d'Andy et les points utiles avant de jouer.",
-    dynamicKey: '* Parcours a tarification dynamique — le prix varie selon la saison, l heure ou la demande. Nous affichons le tarif maximum.',
+    dynamicKey: '* Parcours a tarification dynamique: le prix varie selon la saison, l heure ou la demande. Nous affichons le tarif maximum.',
     sortLabel: 'Tri :',
     topRated: 'Mieux notes',
     az: 'A-Z',
@@ -60,7 +60,7 @@ const SORT_UI = {
   },
   nl: {
     controlsIntro: "Filter op regio. Elke kaart toont de piek- en lage greenfee, par, Andy's persoonlijke beoordeling en de belangrijkste punten voor je speelt.",
-    dynamicKey: '* Baan met dynamische prijzen — de prijs varieert per seizoen, tijdstip of vraag. Wij tonen de piekprijs.',
+    dynamicKey: '* Baan met dynamische prijzen: de prijs varieert per seizoen, tijdstip of vraag. Wij tonen de piekprijs.',
     sortLabel: 'Sorteren:',
     topRated: 'Best beoordeeld',
     az: 'A-Z',
@@ -70,7 +70,7 @@ const SORT_UI = {
   },
   sv: {
     controlsIntro: "Filtrera efter region. Varje kort visar hogsta och lagsta greenfee, par, Andy's personliga betyg och det viktigaste att veta innan du spelar.",
-    dynamicKey: '* Bana med dynamisk prissattning — priset varierar beroende pa sasong, tid pa dagen eller efterfragan. Vi visar toppriset.',
+    dynamicKey: '* Bana med dynamisk prissattning: priset varierar beroende pa sasong, tid pa dagen eller efterfragan. Vi visar toppriset.',
     sortLabel: 'Sortera:',
     topRated: 'Hogst betyg',
     az: 'A-Z',
