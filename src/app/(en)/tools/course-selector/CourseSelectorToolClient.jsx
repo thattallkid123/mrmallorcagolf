@@ -1058,16 +1058,13 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
                     {pdfSent ? (
                       <p style={{ color:'#D4B068', fontSize:'.82rem' }}>{t.results.email.pdfSent}</p>
                     ) : (
-                      <a
-                        href={COURSE_COMPARISON_PDF_URL}
-                        target="_blank"
-                        rel="noopener"
+                      <button
                         className="cst-btn gold"
-                        style={{ padding:'10px 22px', fontSize:'.82rem', display:'inline-block' }}
+                        style={{ padding:'10px 22px', fontSize:'.82rem' }}
                         onClick={requestPdf}
                       >
                         {t.results.email.pdfButton}
-                      </a>
+                      </button>
                     )}
                   </div>
                 </div>
