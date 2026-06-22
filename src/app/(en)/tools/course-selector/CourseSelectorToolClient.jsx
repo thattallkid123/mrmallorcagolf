@@ -455,7 +455,7 @@ const QUESTIONS = [
   },
   {
     id:'style', title:'What kind of trip is this?',
-    sub:'Pick what matters most.', cols:true,
+    sub:'Pick all that apply.', cols:true, multi:true,
     options:[
       {value:'luxury',label:'Luxury',desc:'The best of everything'},
       {value:'scenic',label:'Scenic',desc:'Views first, score second'},
@@ -479,7 +479,7 @@ const QUESTIONS = [
   {
     id:'budget', title:'How do you think about green fees?',
     sub:'Fees shown later are seasonal indications, confirmed at booking.', cols:false,
-    skipIf:(a) => a.style === 'luxury',
+    skipIf:(a) => Array.isArray(a.style) ? a.style.includes('luxury') : a.style === 'luxury',
     autoValue:'premium',
     options:[
       {value:'value',label:'Best value',desc:'Good golf at sensible money'},
@@ -556,7 +556,9 @@ function scoreCourse(c, answers) {
   let s = 0
   if (c.tags.ability.includes(answers.ability)) s += 30; else s -= 25
   if (answers.ability === 'beginner' && c.diff10 >= 8) s -= 100
-  if (c.tags.style.includes(answers.style)) s += 22
+  const styles = Array.isArray(answers.style) ? answers.style : (answers.style ? [answers.style] : [])
+  const styleMatches = styles.filter(st => c.tags.style.includes(st)).length
+  s += styleMatches > 0 ? Math.min(22, 14 + styleMatches * 8) : 0
   const zone = a => (a === 'North' || a === 'East') ? 'NE' : a
   if (answers.area === 'flexible') s += 8
   else if (zone(c.area) === zone(answers.area)) s += 20

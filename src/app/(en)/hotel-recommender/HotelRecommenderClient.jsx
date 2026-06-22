@@ -86,7 +86,7 @@ const QUESTIONS_DATA = [
     { val: 'palma', label: 'Near Palma', desc: 'Use Palma as an evening base. Son Gual, Son Vida, Son Muntaner, and Bendinat all within 20 minutes. Good if city restaurants and nightlife matter as much as golf.' },
     { val: 'northwest', label: 'Northwest: Tramuntana experience', desc: 'Sóller, Deià, Valldemossa. Spectacular scenery. Not a golf base: nearest course is 50 minutes. Best as a 2-night add-on to another area.' },
   ]},
-  { key: 'priority', qNum: '2', total: '6', title: 'What matters most outside the golf?', sub: 'Between rounds, what does the group want?', grid: false, opts: [
+  { key: 'priority', qNum: '2', total: '6', title: 'What matters most outside the golf?', sub: 'Pick all that apply — between rounds, what does the group want?', grid: false, multi: true, opts: [
     { val: 'golf-focused', label: 'Be as close to the courses as possible', desc: 'On or beside a course, easy early tee times, nothing to get in the way of the rounds.' },
     { val: 'beach', label: 'Beach and pool time after golf', desc: 'Post-round recovery at the sea or pool is just as important as the round itself.' },
     { val: 'spa', label: 'Spa and wellness recovery', desc: 'A proper spa for legs and backs after multiple rounds. Treatments, steam, pool.' },
@@ -124,7 +124,10 @@ const QUESTIONS_DATA = [
 function scoreHotel(h, answers) {
   let s = 0
   if (h.area !== answers.area) return -999
-  if (h.priority.includes(answers.priority)) s += 30
+  const priorities = Array.isArray(answers.priority) ? answers.priority : (answers.priority ? [answers.priority] : [])
+  const hasPriority = val => priorities.includes(val)
+  const matchCount = priorities.filter(p => h.priority.includes(p)).length
+  s += matchCount * 18
   if (h.groups.includes(answers.group)) s += 20
   if (answers.group === 'family' && (h.id.includes('secrets') || h.id.includes('vicenc'))) s -= 25
   if (answers.group === 'family' && h.type === 'villa') s += 10
@@ -138,15 +141,15 @@ function scoreHotel(h, answers) {
   if (answers.budget === 'mid' && h.luxury === 4) s -= 25
   if (answers.budget === 'ultra' && h.luxury === 2) s -= 15
   if (answers.budget === 'flexible') s += 5
-  if (answers.priority === 'beach' && h.beach) s += 15
-  if (answers.priority === 'spa' && h.spa) s += 15
-  if (answers.priority === 'golf-focused' && h.golfProximity === 3) s += 20
-  if (answers.priority === 'golf-focused' && h.golfProximity === 2) s += 10
-  if (answers.priority === 'privacy' && h.type === 'villa') s += 25
-  if (answers.priority === 'dining') {
+  if (hasPriority('beach') && h.beach) s += 15
+  if (hasPriority('spa') && h.spa) s += 15
+  if (hasPriority('golf-focused') && h.golfProximity === 3) s += 20
+  if (hasPriority('golf-focused') && h.golfProximity === 2) s += 10
+  if (hasPriority('privacy') && h.type === 'villa') s += 25
+  if (hasPriority('dining')) {
     if (['arabella-son-vida','el-vicenc','el-llorenc','can-simoneta','donna-portals','hospes-maricel'].includes(h.id)) s += 12
   }
-  if (h.area === 'northwest' && answers.priority === 'golf-focused') s -= 30
+  if (h.area === 'northwest' && hasPriority('golf-focused')) s -= 30
   return s
 }
 
@@ -180,20 +183,28 @@ export default function HotelRecommenderClient() {
   const progress = ((step - 1) / TOTAL) * 100
 
   function selectAnswer(key, val) {
-    const newAnswers = { ...answers, [key]: val }
-    setAnswers(newAnswers)
-    setTimeout(() => {
-      if (step === TOTAL) {
-        const allScored = HOTELS.map(h => ({ hotel: h, score: scoreHotel(h, newAnswers) }))
-          .filter(x => x.score > -999)
-          .sort((a, b) => b.score - a.score)
-        setResults(allScored.slice(0, 3).filter(x => x.score > 0))
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      } else {
-        setStep(s => s + 1)
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      }
-    }, 220)
+    if (currentQ && currentQ.multi) {
+      setAnswers(prev => {
+        const curr = Array.isArray(prev[key]) ? prev[key] : []
+        const idx = curr.indexOf(val)
+        return { ...prev, [key]: idx >= 0 ? curr.filter(v => v !== val) : [...curr, val] }
+      })
+    } else {
+      const newAnswers = { ...answers, [key]: val }
+      setAnswers(newAnswers)
+      setTimeout(() => {
+        if (step === TOTAL) {
+          const allScored = HOTELS.map(h => ({ hotel: h, score: scoreHotel(h, newAnswers) }))
+            .filter(x => x.score > -999)
+            .sort((a, b) => b.score - a.score)
+          setResults(allScored.slice(0, 3).filter(x => x.score > 0))
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        } else {
+          setStep(s => s + 1)
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+      }, 220)
+    }
   }
 
   function next() {
@@ -239,7 +250,26 @@ export default function HotelRecommenderClient() {
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#39;')
 
+    const answerSummary = (() => {
+      const parts = []
+      const areaMap = { southwest:'Southwest Mallorca', north:'North Mallorca', east:'East Mallorca', palma:'Near Palma', northwest:'Northwest / Tramuntana' }
+      const priorityMap = { 'golf-focused':'Close to courses', beach:'Beach & pool', spa:'Spa & wellness', dining:'Food & evenings', privacy:'Private villa / own space' }
+      const groupMap = { couple:'Couple', friends:'Group of friends', family:'Family', solo:'Solo', corporate:'Corporate group' }
+      const sizeMap = { '1-2':'1–2 people', '3-5':'3–5 people', '6-9':'6–9 people', '10+':'10+ people' }
+      const styleMap = { boutique:'Boutique', resort:'Full resort', classic:'Classic hotel', villa:'Private villa', countryside:'Countryside finca' }
+      const budgetMap = { mid:'Up to €250/room', premium:'€250–€500/room', ultra:'€500+/room', flexible:'Flexible budget' }
+      if (answers.area) parts.push(`Area: ${areaMap[answers.area] || answers.area}`)
+      const pArr = Array.isArray(answers.priority) ? answers.priority : (answers.priority ? [answers.priority] : [])
+      if (pArr.length) parts.push(`Priorities: ${pArr.map(p => priorityMap[p] || p).join(', ')}`)
+      if (answers.group) parts.push(`Group: ${groupMap[answers.group] || answers.group}`)
+      if (answers.size) parts.push(`Size: ${sizeMap[answers.size] || answers.size}`)
+      if (answers.style) parts.push(`Style: ${styleMap[answers.style] || answers.style}`)
+      if (answers.budget) parts.push(`Budget: ${budgetMap[answers.budget] || answers.budget}`)
+      return parts.join(' | ')
+    })()
+
     const bodyHtml = `
+      <p style="margin:0 0 12px;font-size:12px;color:#8A7F74;line-height:1.6;">${answerSummary}</p>
       <p style="margin:0 0 16px;">Here are the hotel bases I would start with from your answers:</p>
       ${results.map((x, index) => `
         <div style="margin:0 0 18px;padding:0 0 16px;border-bottom:1px solid #E6DED1;">
@@ -254,6 +284,7 @@ export default function HotelRecommenderClient() {
     // Fire-and-forget: add to MailerLite
     const mlBody = new URLSearchParams()
     mlBody.set('fields[email]', email)
+    mlBody.set('fields[hotel_answers]', answerSummary)
     mlBody.set('ml-submit', '1')
     mlBody.set('anticsrf', 'true')
     fetch('https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe', {
@@ -281,7 +312,7 @@ export default function HotelRecommenderClient() {
     }
   }
 
-  const canContinue = currentQ && answers[currentQ.key]
+  const canContinue = currentQ && (Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].length > 0 : !!answers[currentQ.key])
   const isLastStep = step === TOTAL
 
   return (
@@ -397,7 +428,7 @@ export default function HotelRecommenderClient() {
               {currentQ.opts.map(opt => (
                 <button
                   key={opt.val}
-                  className={`hr-opt${answers[currentQ.key] === opt.val ? ' selected' : ''}`}
+                  className={`hr-opt${(Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].includes(opt.val) : answers[currentQ.key] === opt.val) ? ' selected' : ''}`}
                   onClick={() => selectAnswer(currentQ.key, opt.val)}
                 >
                   <div className="hr-opt-body">
