@@ -296,7 +296,7 @@ const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/
 const TRIP_PLANNER_PDF_URL = '/downloads/trip-planner.pdf'
 
 export default function GolfDayBuilderClient() {
-  const [phase, setPhase] = useState('intro') // 'intro' | 'quiz' | 'results'
+  const [phase, setPhase] = useState('quiz') // 'intro' | 'quiz' | 'results'
   const [stepIdx, setStepIdx] = useState(0)
   const [answers, setAnswers] = useState({})
   const [itins, setItins] = useState(null)
@@ -323,7 +323,20 @@ export default function GolfDayBuilderClient() {
       const next = idx >= 0 ? curr.filter(v => v !== val) : [...curr, val]
       setAnswers(prev => ({ ...prev, [key]: next }))
     } else {
-      setAnswers(prev => ({ ...prev, [key]: val }))
+      const newAnswers = { ...answers, [key]: val }
+      setAnswers(newAnswers)
+      setTimeout(() => {
+        if (stepIdx < QUESTIONS.length - 1) {
+          setStepIdx(s => s + 1)
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        } else {
+          const built = buildItineraries(newAnswers)
+          setItins(built)
+          setActiveItin(0)
+          setPhase('results')
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+      }, 220)
     }
   }
 
@@ -363,7 +376,7 @@ export default function GolfDayBuilderClient() {
   }
 
   function restart() {
-    setPhase('intro')
+    setPhase('quiz')
     setStepIdx(0)
     setAnswers({})
     setItins(null)

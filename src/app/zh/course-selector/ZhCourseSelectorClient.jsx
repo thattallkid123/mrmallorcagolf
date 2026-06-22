@@ -172,7 +172,7 @@ function recommend(answers) {
 }
 
 export default function ZhCourseSelectorClient() {
-  const [phase, setPhase] = useState('intro') // 'intro' | 'quiz' | 'results'
+  const [phase, setPhase] = useState('quiz') // 'intro' | 'quiz' | 'results'
   const [stepIdx, setStepIdx] = useState(0)
   const [answers, setAnswers] = useState({})
   const [results, setResults] = useState(null)

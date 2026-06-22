@@ -180,7 +180,20 @@ export default function HotelRecommenderClient() {
   const progress = ((step - 1) / TOTAL) * 100
 
   function selectAnswer(key, val) {
-    setAnswers(prev => ({ ...prev, [key]: val }))
+    const newAnswers = { ...answers, [key]: val }
+    setAnswers(newAnswers)
+    setTimeout(() => {
+      if (step === TOTAL) {
+        const allScored = HOTELS.map(h => ({ hotel: h, score: scoreHotel(h, newAnswers) }))
+          .filter(x => x.score > -999)
+          .sort((a, b) => b.score - a.score)
+        setResults(allScored.slice(0, 3).filter(x => x.score > 0))
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      } else {
+        setStep(s => s + 1)
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    }, 220)
   }
 
   function next() {
