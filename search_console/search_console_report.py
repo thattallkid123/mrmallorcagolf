@@ -298,6 +298,7 @@ def build_report(days, site=None):
 
 def save_report(result):
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    DOWNLOADS_TXT.parent.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime("%Y-%m-%d")
     archive_txt = REPORTS_DIR / f"search-console-{stamp}.txt"
     archive_csv = REPORTS_DIR / f"search-console-{stamp}.csv"

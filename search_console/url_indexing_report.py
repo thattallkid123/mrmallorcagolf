@@ -142,6 +142,7 @@ def build_report(limit=None, delay=0.25):
 
 def save_report(result):
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    DOWNLOADS_TXT.parent.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime("%Y-%m-%d")
     archive_txt = REPORTS_DIR / f"url-indexing-{stamp}.txt"
     archive_csv = REPORTS_DIR / f"url-indexing-{stamp}.csv"

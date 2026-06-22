@@ -36,6 +36,7 @@ def save_report(output: str) -> Path:
     archive = REPORTS_DIR / f"ga4-weekly-{stamp}.txt"
     archive.write_text(output, encoding="utf-8")
     try:
+      DOWNLOADS_COPY.parent.mkdir(parents=True, exist_ok=True)
       DOWNLOADS_COPY.write_text(output, encoding="utf-8")
     except OSError:
       pass
