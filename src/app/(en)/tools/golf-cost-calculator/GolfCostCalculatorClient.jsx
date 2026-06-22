@@ -208,37 +208,43 @@ export default function GolfCostCalculatorClient() {
     }
   }
 
+  const fieldStyle = { marginBottom: 18 }
+  const labelStyle = { display:'block', fontFamily:"'Jost',sans-serif", fontSize:11, letterSpacing:'.08em', textTransform:'uppercase', color:'#2D4A3E', marginBottom:12, fontWeight:600 }
+  const circleBtn = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center' }
+
   function Stepper({ label, stateKey, min, max, unit }) {
-    const btnStyle = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center' }
     return (
-      <div className="gcc-field">
-        <label className="gcc-flabel">{label}</label>
+      <div style={fieldStyle}>
+        <label style={labelStyle}>{label}</label>
         <div style={{ display:'flex', alignItems:'center', gap:12 }}>
-          <button type="button" style={btnStyle} onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}>−</button>
-          <span className="gcc-val">{state[stateKey]}</span>
-          <button type="button" style={btnStyle} onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}>+</button>
-          <span className="gcc-unit">{unit}</span>
+          <button type="button" style={circleBtn} onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}>−</button>
+          <span style={{ fontFamily:"'Jost',sans-serif", fontSize:26, color:'#2D4A3E', minWidth:48, textAlign:'center', fontWeight:400 }}>{state[stateKey]}</span>
+          <button type="button" style={circleBtn} onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}>+</button>
+          <span style={{ fontFamily:"'Jost',sans-serif", fontSize:12, color:'#8A7F74', fontWeight:300 }}>{unit}</span>
         </div>
       </div>
     )
   }
 
   function OptGroup({ label, stateKey, opts, cols }) {
-    const gridClass = cols === 3 ? 'gcc-opts three' : 'gcc-opts'
+    const colCount = cols || 2
     return (
-      <div className="gcc-field">
-        <label className="gcc-flabel">{label}</label>
-        <div className={gridClass}>
-          {opts.map(o => (
-            <button
-              key={o.val}
-              className={`gcc-opt${state[stateKey] === o.val ? ' sel' : ''}`}
-              onClick={() => set(stateKey, o.val)}
-            >
-              {o.label}
-              {o.small && <span style={{ display:'block', fontSize:'10px', color: state[stateKey] === o.val ? '#D4B068' : '#8A7F74', marginTop:'3px', fontWeight:300 }}>{o.small}</span>}
-            </button>
-          ))}
+      <div style={fieldStyle}>
+        <label style={labelStyle}>{label}</label>
+        <div style={{ display:'grid', gridTemplateColumns:`repeat(${colCount}, 1fr)`, gap:8 }}>
+          {opts.map(o => {
+            const sel = state[stateKey] === o.val
+            return (
+              <button
+                key={o.val}
+                style={{ border:`1.5px solid ${sel ? '#B8973C' : '#d9cfb8'}`, background: sel ? '#2D4A3E' : '#F7F4EF', borderRadius:10, padding:'13px 10px', cursor:'pointer', fontSize:13, fontFamily:'inherit', color: sel ? '#F7F4EF' : '#2C2A27', transition:'all .15s', textAlign:'center', fontWeight:500, lineHeight:1.3 }}
+                onClick={() => set(stateKey, o.val)}
+              >
+                {o.label}
+                {o.small && <span style={{ display:'block', fontSize:10, color: sel ? '#D4B068' : '#8A7F74', marginTop:3, fontWeight:300 }}>{o.small}</span>}
+              </button>
+            )
+          })}
         </div>
       </div>
     )

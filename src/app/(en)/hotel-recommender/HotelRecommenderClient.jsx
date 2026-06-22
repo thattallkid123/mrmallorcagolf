@@ -488,7 +488,7 @@ export default function HotelRecommenderClient() {
                         {h.travelTime && (
                           <>
                             <span className="hr-card-sep">·</span>
-                            <span className="hr-card-tier">{h.travelTime}</span>
+                            <span className="hr-card-tier">{h.travelTime.replace(/-/g, '–')}</span>
                           </>
                         )}
                       </div>
