@@ -176,8 +176,9 @@ function scoreAllCourses(answers) {
     if (c.tags.includes(answers.courseType)) s += 5
     if (c.tags.includes(answers.dayStyle)) s += 3
     const drive = c.driveMins[region] || 30
+    if (c.region === region) s += 10
     if (wantClose) s += Math.max(0, 6 - drive / 10)
-    else s += Math.max(0, 3 - drive / 25)
+    else s += Math.max(0, 4 - drive / 20)
     if (lvl >= LEVEL_REQ[c.level]) s += 2; else s -= 4
     if (answers.dayStyle === 'family' && c.tags.includes('family')) s += 2
     return { c, s, drive }

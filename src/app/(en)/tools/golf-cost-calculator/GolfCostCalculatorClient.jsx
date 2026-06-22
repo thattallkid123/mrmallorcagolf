@@ -213,21 +213,22 @@ export default function GolfCostCalculatorClient() {
     return (
       <div className="gcc-field">
         <label className="gcc-flabel">{label}</label>
-        <div style={{ display:'flex', alignItems:'center', gap:14 }}>
+        <div style={{ display:'flex', alignItems:'center', gap:12 }}>
           <button type="button" style={btnStyle} onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}>−</button>
           <span className="gcc-val">{state[stateKey]}</span>
-          <span className="gcc-unit">{unit}</span>
           <button type="button" style={btnStyle} onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}>+</button>
+          <span className="gcc-unit">{unit}</span>
         </div>
       </div>
     )
   }
 
-  function OptGroup({ label, stateKey, opts }) {
+  function OptGroup({ label, stateKey, opts, cols }) {
+    const gridClass = cols === 3 ? 'gcc-opts three' : 'gcc-opts'
     return (
       <div className="gcc-field">
         <label className="gcc-flabel">{label}</label>
-        <div className="gcc-opts">
+        <div className={gridClass}>
           {opts.map(o => (
             <button
               key={o.val}
@@ -235,7 +236,7 @@ export default function GolfCostCalculatorClient() {
               onClick={() => set(stateKey, o.val)}
             >
               {o.label}
-              {o.small && <small>{o.small}</small>}
+              {o.small && <span style={{ display:'block', fontSize:'10px', color: state[stateKey] === o.val ? '#D4B068' : '#8A7F74', marginTop:'3px', fontWeight:300 }}>{o.small}</span>}
             </button>
           ))}
         </div>
@@ -262,12 +263,11 @@ export default function GolfCostCalculatorClient() {
         .gcc-card .sub { font-size:13px; color:#8A7F74; margin-bottom:20px; line-height:1.6; font-weight:300; }
         .gcc-field { margin-bottom:18px; }
         .gcc-flabel { display:block; font-family:'Jost',sans-serif; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#2D4A3E; margin-bottom:12px; font-weight:600; }
-        .gcc-opts { display:flex; flex-wrap:wrap; gap:8px; }
-        .gcc-opt { border:1px solid #d9cfb8; background:#F7F4EF; border-radius:10px; padding:12px 14px; cursor:pointer; font-size:13px; font-family:inherit; color:#2C2A27; transition:all .15s; flex:1 1 auto; min-width:72px; text-align:center; font-weight:400; }
-        .gcc-opt small { display:block; font-size:10px; color:#8A7F74; margin-top:3px; font-weight:300; }
+        .gcc-opts { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+        .gcc-opts.three { grid-template-columns:1fr 1fr 1fr; }
+        .gcc-opt { border:1.5px solid #d9cfb8; background:#F7F4EF; border-radius:10px; padding:13px 12px; cursor:pointer; font-size:13px; font-family:inherit; color:#2C2A27; transition:all .15s; text-align:center; font-weight:500; line-height:1.3; }
         .gcc-opt.sel { border-color:#B8973C; background:#2D4A3E; color:#F7F4EF; }
-        .gcc-opt.sel small { color:#D4B068; }
-        .gcc-opt:hover { border-color:#B8973C; }
+        .gcc-opt:hover:not(.sel) { border-color:#B8973C; background:#faf7f0; }
         .gcc-stepper { display:flex; align-items:center; gap:14px; }
         .gcc-stepper button { width:44px; height:44px; border-radius:50%; border:1.5px solid #B8973C; background:#fff; color:#2D4A3E; font-size:22px; cursor:pointer; line-height:1; font-family:inherit; }
         .gcc-stepper button:active { background:#EDE9E1; }
@@ -361,6 +361,7 @@ export default function GolfCostCalculatorClient() {
             <OptGroup
               label="Course preference"
               stateKey="preference"
+              cols={3}
               opts={[
                 {val:'scenic',      label:'Scenic'},
                 {val:'famous',      label:'Famous'},
@@ -373,6 +374,7 @@ export default function GolfCostCalculatorClient() {
             <OptGroup
               label="Which area of Mallorca?"
               stateKey="area"
+              cols={3}
               opts={[
                 {val:'southwest', label:'Southwest'},
                 {val:'palma',     label:'Palma'},

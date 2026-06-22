@@ -331,7 +331,7 @@ export default function HotelRecommenderClient() {
         .hr-step-sub { font-size:0.88rem; color:#8A7F74; line-height:1.65; margin-bottom:28px; }
         .hr-options { display:flex; flex-direction:column; gap:10px; }
         .hr-options-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-        .hr-options-grid > button:last-child:nth-child(odd) { grid-column:1 / -1; max-width:calc(50% - 5px); justify-self:center; }
+        .hr-options-grid > button:last-child:nth-child(odd) { grid-column:1 / -1; }
         .hr-opt { background:#fff; border:1.5px solid #E0D8CB; border-radius:3px; padding:16px 20px; cursor:pointer; transition:border-color 0.18s, background 0.18s; display:flex; align-items:flex-start; gap:14px; font-family:inherit; font-size:inherit; text-align:left; width:100%; }
         .hr-opt:hover { border-color:#2D4A3E; background:rgba(45,74,62,0.03); }
         .hr-opt.selected { border-color:#2D4A3E; background:rgba(45,74,62,0.06); }
