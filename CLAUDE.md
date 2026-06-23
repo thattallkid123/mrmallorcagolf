@@ -285,7 +285,7 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 - **Master control:** `MMG_MASTER_CONTROL_CENTER.md`  Start here for all business questions
 - **Business Brief:** `MMG_BUSINESS_BRIEF.md` (root)  AI coaching context, business story, current status
 - **Course encyclopaedia:** `MMG_ENCYCLOPAEDIA_DATA_MASTER.md` (root)  All 24 courses, facts, pricing, access rules
-- **Financial:** `Business Operations & Financial/2026/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker) + `MMG_Business_Model.pdf` (pricing model)
+- **Financial:** `Business Operations & Financial/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker) + `MMG_Business_Model.pdf` (pricing model)
 - **Systems & planning:** `Systems & Planning/` (business plan, pricing, checklists)
 - **Contacts & partnerships:** `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` (3 sheets: Golf Courses 24 + Affiliates 39 incl. website/phone/location + China Operators 15)
 - **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx` (client tracker: names, dates, courses, revenue, follow-ups)
