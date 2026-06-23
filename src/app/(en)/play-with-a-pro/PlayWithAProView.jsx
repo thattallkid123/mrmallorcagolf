@@ -74,6 +74,24 @@ function buildPlayWithAProSchema(locale, content) {
   }
 }
 
+function buildFaqSchema(locale, content) {
+  if (!content.faq?.items?.length) return null
+  const pagePath = buildLocalePath('/play-with-a-pro', locale)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    url: `${SITE_ORIGIN}${pagePath}`,
+    mainEntity: content.faq.items.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  }
+}
+
 function buildBreadcrumbSchema(locale, content) {
   const homePath = buildLocalePath('/', locale)
   const playPath = buildLocalePath('/play-with-a-pro', locale)
@@ -204,6 +222,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
       <PageLayout lang={locale} trackScrollDepth>
         <JsonLd data={buildPlayWithAProSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale, content)} />
+        {content.faq?.items?.length ? <JsonLd data={buildFaqSchema(locale, content)} /> : null}
         <RevealObserver />
 
         <section className="pwap-hero pwap-hero--tall">
@@ -398,6 +417,26 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             </div>
           ) : null}
         </section>
+
+        {content.faq?.items?.length ? (
+          <section className="faq">
+            <div className="faq__left reveal">
+              <p className="eyebrow">{content.faq.eyebrow}</p>
+              <h2 className="serif-display">{content.faq.title}</h2>
+              <p>{content.faq.intro}</p>
+            </div>
+            <div className="faq__list reveal reveal-delay-1">
+              {content.faq.items.map((item, index) => (
+                <details key={item.q} className="faq__item" open={index === 0}>
+                  <summary className="faq__q">{item.q}</summary>
+                  <div className="faq__a">
+                    <p>{item.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <section className="cta-final">
           <div className="cta-final__left reveal">

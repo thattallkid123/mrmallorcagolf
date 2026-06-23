@@ -170,6 +170,49 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         href: '/plan-your-trip',
       },
     },
+    faq: {
+      eyebrow: 'Questions',
+      title: 'Common questions.',
+      intro: 'Anything not covered here is best asked directly. I reply personally.',
+      items: [
+        {
+          q: 'Do you offer lessons for complete beginners?',
+          a: 'Yes. All my sessions take place on the golf course, not the driving range. With some great par 3s and short courses here in Mallorca, beginners can start playing real golf straight away and see the skills they need to develop. Range-only sessions are not something I offer, but I am happy to point you toward someone who does.',
+        },
+        {
+          q: 'Do I need to bring my own clubs?',
+          a: 'No. Hire clubs are available at most courses on the island. Just mention it when you book and I will help sort it.',
+        },
+        {
+          q: 'Where exactly do lessons take place in Mallorca?',
+          a: 'At courses across the island, chosen to suit you and your game. When you get in touch, we will pick the right fit for your level and what you are working on.',
+        },
+        {
+          q: 'What languages do you teach in?',
+          a: 'English and Mandarin. My Spanish is a work in progress, but Mallorca is a great place to practice both.',
+        },
+        {
+          q: "What's the difference between your Solo and Group packages?",
+          a: 'Solo is a private session for one golfer. Group packages are for 2 to 3 golfers, small enough that I can still play alongside everyone and give real attention throughout the round.',
+        },
+        {
+          q: 'Do you work with juniors?',
+          a: 'Yes. I work with juniors at all levels, including complete beginners. We adapt the difficulty of the course so they are learning from a real golf environment without being overwhelmed. Same approach, scaled to where they are.',
+        },
+        {
+          q: 'What qualifications does Andy have?',
+          a: 'PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon putting certification. Mike Adams. US Kids Top 50 Worldwide instructor. Full details on the about page.',
+        },
+        {
+          q: 'How far in advance do I need to book?',
+          a: '3 to 4 weeks is typical, but there is flexibility. Get in touch and we will find something that works.',
+        },
+        {
+          q: 'What happens if it rains?',
+          a: 'Mallorca gets over 300 days of sunshine a year, so it rarely comes up. If a session does get rained out, we will rearrange at no extra cost.',
+        },
+      ],
+    },
     finalCta: {
       eyebrow: 'Want this inside your trip?',
       title: "Tell me your dates and I'll recommend the right format.",

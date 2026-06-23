@@ -311,10 +311,6 @@ export const HOME_CONTENT = {
           a: "On-course coaching during a complete 18-hole round. Not range lessons or individual swing instruction. I work with you playing real holes, where course management and decision-making matter. I help with club choice, scoring decisions, and the patterns that only show up when you're actually playing.",
         },
         {
-          q: 'Which course do you use?',
-          a: "It depends on you. Son Gual and Alcanada are my primary venues for a serious 18-hole day. For beginners, groups, or shorter rounds, there are better options, and I'll tell you honestly which one fits.",
-        },
-        {
           q: 'How do I book?',
           a: 'Start with the itinerary planner if you are still planning. If you already know your dates and want me involved, send an enquiry and I will come back personally within 24 hours.',
         },
@@ -325,6 +321,14 @@ export const HOME_CONTENT = {
         {
           q: 'When is the best time of year to visit?',
           a: 'For the best conditions, look at late spring and autumn peak windows. For better value, June to August and December to February are usually cheaper. The island is playable year-round, but spring and autumn are no longer the budget season.',
+        },
+        {
+          q: 'Can I book a one-off session during a golf holiday?',
+          a: 'Yes. Many of my clients are here on holiday and want to add something different to their golf days. A single on-course session works well for that.',
+        },
+        {
+          q: 'Is this just for tourists or do you work with residents too?',
+          a: 'Both. I work with golfers who live on the island year-round and visitors here for a week or two. Long-term programmes and one-off sessions are both welcome.',
         },
       ],
     },
