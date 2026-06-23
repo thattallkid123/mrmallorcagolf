@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+
+if [ "${SKIP_MMG_CONTENT_EXPORT:-}" = "1" ]; then
+  echo "Skipping MMG Blog Content export because SKIP_MMG_CONTENT_EXPORT=1."
+  exit 0
+fi
+
+echo "Refreshing Google Drive guide/article text exports after merge..."
+npm run export:blog-content

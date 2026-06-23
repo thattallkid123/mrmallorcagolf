@@ -21,6 +21,7 @@
     "check:locale-parity": "node scripts/check-locale-parity.js",
     "check:routes": "node --no-warnings scripts/check-route-parity.mjs && node --no-warnings scripts/check-locale-route-files.mjs",
     "check:content-validation": "node scripts/validate-content.mjs",
+    "export:blog-content": "node --no-warnings scripts/export-live-guide-content.mjs",
     "generate:lead-magnet-pdfs": "python scripts/generate-lead-magnet-pdfs.py",
     "check:i18n-release": "node --no-warnings scripts/locale-release-check.js",
     "check:lighthouse": "node scripts/lighthouse-scorecard.mjs",

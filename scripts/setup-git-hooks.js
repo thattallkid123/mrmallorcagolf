@@ -17,14 +17,18 @@ function configureHooksPath() {
   })
 }
 
-function ensureHookExecutable() {
-  const hookPath = path.join(hooksDir, 'pre-commit')
-  if (!fs.existsSync(hookPath)) return
+function ensureHooksExecutable() {
+  if (!fs.existsSync(hooksDir)) return
 
-  try {
-    fs.chmodSync(hookPath, 0o755)
-  } catch {
-    // Ignore chmod failures on filesystems that do not support POSIX modes.
+  for (const hookFile of fs.readdirSync(hooksDir)) {
+    const hookPath = path.join(hooksDir, hookFile)
+    if (!fs.statSync(hookPath).isFile()) continue
+
+    try {
+      fs.chmodSync(hookPath, 0o755)
+    } catch {
+      // Ignore chmod failures on filesystems that do not support POSIX modes.
+    }
   }
 }
 
@@ -35,7 +39,7 @@ if (!hasGitRepo()) {
 
 try {
   configureHooksPath()
-  ensureHookExecutable()
+  ensureHooksExecutable()
   console.log('Git hooks configured to use .githooks.')
 } catch (error) {
   console.warn(`Skipping git hook setup: ${error.message}`)
