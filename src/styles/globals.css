@@ -3313,6 +3313,71 @@ select.form-control { cursor: pointer; }
   }
 }
 
+.tool-placement-cta--slim {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  padding: 14px clamp(20px, 3vw, 32px);
+  margin: 0 auto;
+  border-left: 3px solid var(--gold);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: none;
+  max-width: 1120px;
+}
+
+.tool-placement-cta--slim .tool-placement-cta__eyebrow {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.tool-placement-cta--slim .tool-placement-cta__copy {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.tool-placement-cta--slim .tool-placement-cta__copy p {
+  margin: 0;
+  font-size: .82rem;
+  color: var(--charcoal);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tool-placement-cta--slim h2 {
+  display: none;
+}
+
+.tool-placement-cta--slim .tool-placement-cta__action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.tool-placement-cta--slim .tool-placement-cta__action > p {
+  display: none;
+}
+
+.tool-placement-cta--slim .tool-placement-cta__button {
+  min-height: 36px;
+  padding: 8px 18px;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .tool-placement-cta--slim .tool-placement-cta__copy p {
+    display: none;
+  }
+}
+
 .email-signup__iframe {
   display: block;
   width: 100%;

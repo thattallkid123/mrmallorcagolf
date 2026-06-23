@@ -151,15 +151,16 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
       </header>
 
       {locale === 'en' ? (
-        <section style={{ background: 'var(--cream)', padding: 'clamp(28px, 5vw, 52px) clamp(20px, 5vw, 60px)' }}>
+        <section style={{ background: 'var(--cream)', padding: '16px clamp(20px, 5vw, 60px)' }}>
           <ToolPlacementCta
             tool={{
               eyebrow: 'Free planning tools',
-              title: 'Reading guides because you are still narrowing the trip down?',
-              body: 'Use the tools when you want a practical next step: a course shortlist, trip cost estimate, golf day plan, or hotel-base suggestion.',
+              title: 'Still narrowing down your trip?',
+              body: 'Course shortlist, trip cost estimate, golf day plan, hotel-base suggestion — all free.',
               href: '/tools',
-              cta: 'Choose a tool',
+              cta: 'Open the tools',
             }}
+            slim
             dark
           />
         </section>
