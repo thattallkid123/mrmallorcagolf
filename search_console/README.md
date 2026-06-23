@@ -24,8 +24,8 @@ python search_console\search_console_report.py --days 28
 Latest copies are written to Downloads:
 
 ```text
-C:\Users\andyg\Downloads\MMG-Search-Console-latest.txt
-C:\Users\andyg\Downloads\MMG-Search-Console-latest.csv
+C:\Users\andyg\Downloads\MMG Reports\MMG Search Console Latest.txt
+C:\Users\andyg\Downloads\MMG Reports\MMG Search Console Latest.csv
 ```
 
 ## URL Indexing Report
@@ -37,8 +37,8 @@ python search_console\url_indexing_report.py --limit 25
 Latest copies are written to Downloads:
 
 ```text
-C:\Users\andyg\Downloads\MMG-URL-Indexing-latest.txt
-C:\Users\andyg\Downloads\MMG-URL-Indexing-latest.csv
+C:\Users\andyg\Downloads\MMG Reports\MMG URL Indexing Latest.txt
+C:\Users\andyg\Downloads\MMG Reports\MMG URL Indexing Latest.csv
 ```
 
 Notes:

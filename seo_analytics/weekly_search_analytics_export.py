@@ -1,5 +1,5 @@
 """
-Weekly SEO export: Search Console + GA4 -> CSV files in Downloads.
+Weekly SEO export: Search Console + GA4 -> CSV files in Downloads/MMG Reports.
 
 Usage:
   python seo_analytics/weekly_search_analytics_export.py --days 7
@@ -25,7 +25,7 @@ SITE_CANDIDATES = [
     "sc-domain:mrmallorcagolf.com",
     "https://www.mrmallorcagolf.com/",
 ]
-DOWNLOADS_ROOT = Path(r"C:\Users\andyg\Downloads\MMG-weekly-seo")
+DOWNLOADS_ROOT = Path(r"C:\Users\andyg\Downloads\MMG Reports\Weekly SEO")
 
 
 def daterange(days: int) -> tuple[str, str]:

@@ -22,8 +22,8 @@ from search_console_report import choose_site  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = ROOT / "search_console" / "reports"
-DOWNLOADS_TXT = Path(r"C:\Users\andyg\Downloads\MMG-Reports\MMG-URL-Indexing-latest.txt")
-DOWNLOADS_CSV = Path(r"C:\Users\andyg\Downloads\MMG-Reports\MMG-URL-Indexing-latest.csv")
+DOWNLOADS_TXT = Path(r"C:\Users\andyg\Downloads\MMG Reports\MMG URL Indexing Latest.txt")
+DOWNLOADS_CSV = Path(r"C:\Users\andyg\Downloads\MMG Reports\MMG URL Indexing Latest.csv")
 SITEMAP_URL = "https://www.mrmallorcagolf.com/sitemap.xml"
 INSPECTION_ENDPOINT = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
 
