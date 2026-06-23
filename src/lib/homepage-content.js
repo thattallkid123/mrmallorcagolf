@@ -1447,20 +1447,20 @@ const HOME_COACHING_FAQ = {
     a: 'Ja. Am sinnvollsten ist Coaching direkt auf dem Platz statt einer isolierten Range-Stunde: Schlaegerwahl, Strategie, Entscheidungen und die Schwungmuster, die waehrend einer echten Runde auftauchen.',
   },
   es: {
-    q: 'Ofrece clases de golf o coaching en Mallorca?',
-    a: 'Si. La version mas util es coaching en el campo, no una clase aislada en el range: seleccion de palo, estrategia, decisiones de juego y los patrones de swing que aparecen durante una vuelta real.',
+    q: '¿Ofrece clases de golf o coaching en Mallorca?',
+    a: 'Sí. La versión más útil es coaching en el campo, no una clase aislada en el range: selección de palo, estrategia, decisiones de juego y los patrones de swing que aparecen durante una vuelta real.',
   },
   fr: {
-    q: 'Proposez-vous des cours de golf ou du coaching a Majorque ?',
-    a: 'Oui. La version la plus utile se fait sur le parcours plutot que sur un practice : choix de club, strategie, decisions de jeu et tendances de swing visibles en situation reelle.',
+    q: 'Proposez-vous des cours de golf ou du coaching à Majorque ?',
+    a: 'Oui. La version la plus utile se fait sur le parcours plutôt que sur un practice : choix de club, stratégie, décisions de jeu et tendances de swing visibles en situation réelle.',
   },
   nl: {
     q: 'Geeft u golflessen of coaching op Mallorca?',
     a: 'Ja. De sterkste vorm is coaching op de baan in plaats van een losse les op de driving range: clubkeuze, strategie, beslissingen en de swingpatronen die tijdens een echte ronde zichtbaar worden.',
   },
   sv: {
-    q: 'Erbjuder du golflektioner eller coaching pa Mallorca?',
-    a: 'Ja. Den mest anvandbara formen ar coaching ute pa banan, inte en separat rangelektion: klubbval, strategi, beslut och de svingmonster som syns nar du spelar en riktig rond.',
+    q: 'Erbjuder du golflektioner eller coaching på Mallorca?',
+    a: 'Ja. Den mest användbara formen är coaching ute på banan, inte en separat rangelektion: klubbval, strategi, beslut och de svingmönster som syns när du spelar en riktig rond.',
   },
   zh: {
     q: '可以在马略卡上高尔夫课或做球场指导吗？',
