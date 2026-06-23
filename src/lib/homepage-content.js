@@ -7,7 +7,7 @@ export const HOME_CONTENT = {
     locale: 'en',
     hero: {
       eyebrow: 'UK PGA Advanced Professional · Mallorca',
-      titleLines: ["Play Mallorca's Best Courses", 'with a Pro by Your Side'],
+      titleLines: ["Play Mallorca\'s Best Courses", 'with a Pro by Your Side'],
       emphasis: '',
       primaryCta: 'Book a Day with Andy',
       primaryHref: '/play-with-a-pro',
@@ -110,7 +110,7 @@ export const HOME_CONTENT = {
     },
     courses: {
       eyebrow: 'Featured Courses',
-      title: "Mallorca's finest, played and reviewed.",
+      title: "Mallorca\'s finest, played and reviewed.",
       viewAll: 'See every Mallorca course →',
       items: [
         {
@@ -121,7 +121,7 @@ export const HOME_CONTENT = {
           meta: ['Championship', 'Par 72', '€80-165'],
           stars: '★★★★★',
           difficulty: '9/10 Difficulty',
-          excerpt: "Thomas Himmel's 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.",
+          excerpt: "Thomas Himmel\'s 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.",
           img: '/images/son-gual.webp',
           href: '/guides/son-gual-review',
         },
@@ -206,7 +206,7 @@ export const HOME_CONTENT = {
       ],
     },
     quote: {
-      text: "After just 18 holes together, I've discovered a new ceiling to my potential.",
+      text: "After just 18 holes together, I\'ve discovered a new ceiling to my potential.",
       attribution: 'Jo, after a day at Son Gual',
     },
     winners: {
@@ -214,7 +214,7 @@ export const HOME_CONTENT = {
       title: 'Competition winners, ambitious golfers, and plenty in between.',
       intro: 'I have coached elite juniors, club golfers, and plenty of people who simply wanted to stop throwing shots away. The common thread is usually the same: clearer decisions, better patterns, and improvement that still shows up when the card is in your hand.',
       testimonial:
-        "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough.",
+        "I\'ve been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I\'m glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I\'m confident they\'ll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can\'t thank him enough.",
       attribution: 'Adam',
     },
     packages: {
@@ -233,7 +233,7 @@ export const HOME_CONTENT = {
             'On-course coaching during the round',
             'Post-round debrief and next steps',
           ],
-          note: "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons.",
+          note: "Andy\'s day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons.",
           cta: 'Enquire →',
           href: '/contact',
           featured: false,
@@ -249,7 +249,7 @@ export const HOME_CONTENT = {
             '18 holes with Andy',
             'On-course coaching during the round',
           ],
-          note: "Andy's fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons.",
+          note: "Andy\'s fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons.",
           cta: 'Enquire →',
           href: '/contact',
           featured: true,
@@ -308,7 +308,7 @@ export const HOME_CONTENT = {
         },
         {
           q: 'What kind of coaching do you offer?',
-          a: "On-course coaching during a complete 18-hole round. Not range lessons or individual swing instruction. I work with you playing real holes, where course management and decision-making matter. I help with club choice, scoring decisions, and the patterns that only show up when you're actually playing.",
+          a: "On-course coaching during a complete 18-hole round. Not range lessons or individual swing instruction. I work with you playing real holes, where course management and decision-making matter. I help with club choice, scoring decisions, and the patterns that only show up when you\'re actually playing.",
         },
         {
           q: 'How do I book?',
@@ -334,7 +334,7 @@ export const HOME_CONTENT = {
     },
     finalCta: {
       eyebrow: 'Ready to plan it properly?',
-      title: "Tell me the trip you want. I'll help build it properly.",
+      title: "Tell me the trip you want. I\'ll help build it properly.",
       body: 'Start with your dates, group size, handicap range, budget, and the kind of golf you want. I will help you turn that into a Mallorca golf plan that works on the ground.',
       quote: 'The right course on the right day beats a famous name in the wrong slot.',
       primaryCta: 'Plan Your Trip',
@@ -524,10 +524,11 @@ const HOME_OVERRIDES = {
       intro: 'Nennen Sie mir Ihre Termine, Ihr Handicap und wonach Sie suchen. Ich antworte persönlich innerhalb von 24 Stunden.',
       items: [
         { q: 'Muss ich ein guter Golfer sein?', a: 'Überhaupt nicht. Das Erlebnis passt sich Ihrem Spiel an. Anfänger und Scratch-Spieler profitieren beide.' },
-        { q: 'Welchen Platz nutzen Sie?', a: 'Das hängt von Ihnen ab. Son Gual und Alcanada sind meine Hauptplätze für einen ernsthaften vollen Tag, aber nicht immer die richtige Wahl.' },
         { q: 'Wie buche ich?', a: 'Schreiben Sie mir einfach. Keine Buchungsplattformen. Keine Warteschleife.' },
         { q: 'Ist das für Gruppen geeignet?', a: 'Ja. Für Einzelpersonen, Paare, Freundesgruppen und Firmenrunden.' },
         { q: 'Wann ist die beste Jahreszeit?', a: 'Oktober, November, März und April. Die beste Mischung aus Platzbedingungen, Wetter, Wert und Spielfluss.' },
+        { q: 'Kann ich eine Einzelsession während meines Golfurlaubs buchen?', a: 'Ja. Viele meiner Kunden sind im Urlaub hier und möchten ihren Golftagen etwas Besonderes hinzufügen. Eine einzelne Session auf dem Platz passt gut dazu.' },
+        { q: 'Ist das nur für Touristen oder arbeiten Sie auch mit Inselresidenten?', a: 'Beides. Ich arbeite mit Golfern, die das ganze Jahr auf der Insel leben, und mit Besuchern für eine oder zwei Wochen.' },
       ],
     },
     finalCta: {
@@ -808,10 +809,6 @@ const HOME_OVERRIDES = {
           a: 'No. La experiencia se adapta a su nivel. Tanto un principiante como un jugador de scratch pueden sacar mucho del día. Lo único importante es querer algo más personal que un tee time estándar.',
         },
         {
-          q: '¿Qué campo utiliza?',
-          a: 'Depende de usted. Son Gual y Alcanada son mis sedes principales para un día serio y completo, pero no siempre son la mejor opción. Si viene en grupo, con principiantes o quiere algo más corto, le diré con honestidad qué encaja mejor.',
-        },
-        {
           q: '¿Cómo se reserva?',
           a: 'Escríbame. Dígame sus fechas y lo que busca, y le contestaré personalmente en 24 horas. Sin plataforma de reservas. Sin esperas.',
         },
@@ -823,6 +820,8 @@ const HOME_OVERRIDES = {
           q: '¿Cuál es la mejor época del año?',
           a: 'Octubre, noviembre, marzo y abril. Es la mejor combinación de estado del campo, clima, precio y ritmo de juego. La isla se juega todo el año: en enero los fairways aquí están mejor que muchos fairways ingleses en agosto.',
         },
+        { q: '¿Puedo reservar una sesión única durante unas vacaciones de golf?', a: 'Sí. Muchos de mis clientes están aquí de vacaciones y quieren añadir algo diferente a sus días de golf. Una sesión única en el campo encaja bien.' },
+        { q: '¿Es solo para turistas o también trabaja con residentes de la isla?', a: 'Ambos. Trabajo con golfistas que viven en la isla todo el año y con visitantes que pasan una o dos semanas.' },
       ],
     },
     finalCta: {
@@ -838,7 +837,7 @@ const HOME_OVERRIDES = {
     hero: { eyebrow: 'PGA Advanced Professional · Majorque', titleLines: ['Jouez les plus beaux', 'parcours de Majorque.'], emphasis: 'Avec un pro à vos côtés.', primaryCta: 'Réserver votre journée', secondaryCta: 'Voir les parcours' },
     intro: {
       eyebrow: 'Ce qui fait la différence',
-      title: 'Beaucoup de journées de golf à Majorque commencent sur une plateforme de réservation et se terminent avec une facture. Ici, c’est plus personnel.',
+      title: 'Beaucoup de journées de golf à Majorque commencent sur une plateforme de réservation et se terminent avec une facture. Ici, c\'est plus personnel.',
       paragraphs: [
         "J\u2019organise des journ\u00e9es de golf priv\u00e9es sur les meilleurs parcours de l\u2019\u00eele, avec le coaching int\u00e9gr\u00e9 pendant la partie plut\u00f4t qu\u2019ajout\u00e9 apr\u00e8s. On joue mieux, les d\u00e9cisions deviennent plus claires et toute la journ\u00e9e est mieux tenue.",
         "Majorque se joue toute l\u2019ann\u00e9e. Savoir quel parcours correspond \u00e0 votre jeu, quelles heures de d\u00e9part valent le coup et quand les conditions sont r\u00e9unies fait souvent la diff\u00e9rence entre une bonne journ\u00e9e et une excellente.",
@@ -850,19 +849,19 @@ const HOME_OVERRIDES = {
       ],
     },
     socialProof: 'PGA Advanced Professional · Trackman Master · Pebble Beach · The Open Championship · Evian',
-    how: { eyebrow: 'Comment cela fonctionne', title: 'Trois étapes simples.', steps: [{ number: '01', title: 'Écrivez-moi', text: 'Donnez-moi vos dates, votre handicap et ce que vous cherchez. Je réponds personnellement sous 24 heures.' }, { number: '02', title: 'Je construis votre journée', text: 'Parcours, heure de départ et déjeuner sont réglés avant votre arrivée. Le transport peut s’ajouter si nécessaire.' }, { number: '03', title: 'Arrivez et jouez', text: 'Votre seul travail est de profiter du tour. La plupart jouent mieux qu’ils ne l’imaginaient.' }] },
-    whyMallorca: { eyebrow: 'Pourquoi Majorque', title: 'Majorque a des parcours de niveau Tour. Beaucoup de visiteurs n’en voient qu’une petite partie.', paragraphs: ['Les meilleures conditions tombent souvent en plein tarif, surtout de mi-mars à début juin puis de mi-septembre à mi-novembre. Pour de meilleurs prix, regardez plutôt l’été et l’hiver.', 'Vingt-quatre parcours sont accessibles en peu de temps, plusieurs avec une vraie histoire de Tour et une architecture sérieuse. Majorque est une vraie destination de golf, et la plupart des visiteurs n’en voient qu’une petite partie.'], stats: [{ value: "Jan-Déc", label: "saison toute l'année" }, { value: "24", label: "parcours sur l'île" }, { value: "21", label: "ouverts aux green fees" }, { value: "3", label: "privés ou restreints" }] },
+    how: { eyebrow: 'Comment cela fonctionne', title: 'Trois étapes simples.', steps: [{ number: '01', title: 'Écrivez-moi', text: 'Donnez-moi vos dates, votre handicap et ce que vous cherchez. Je réponds personnellement sous 24 heures.' }, { number: '02', title: 'Je construis votre journée', text: 'Parcours, heure de départ et déjeuner sont réglés avant votre arrivée. Le transport peut s\'ajouter si nécessaire.' }, { number: '03', title: 'Arrivez et jouez', text: 'Votre seul travail est de profiter du tour. La plupart jouent mieux qu\'ils ne l\'imaginaient.' }] },
+    whyMallorca: { eyebrow: 'Pourquoi Majorque', title: 'Majorque a des parcours de niveau Tour. Beaucoup de visiteurs n\'en voient qu\'une petite partie.', paragraphs: ['Les meilleures conditions tombent souvent en plein tarif, surtout de mi-mars à début juin puis de mi-septembre à mi-novembre. Pour de meilleurs prix, regardez plutôt l\'été et l\'hiver.', 'Vingt-quatre parcours sont accessibles en peu de temps, plusieurs avec une vraie histoire de Tour et une architecture sérieuse. Majorque est une vraie destination de golf, et la plupart des visiteurs n\'en voient qu\'une petite partie.'], stats: [{ value: "Jan-Déc", label: "saison toute l\'année" }, { value: "24", label: "parcours sur l\'île" }, { value: "21", label: "ouverts aux green fees" }, { value: "3", label: "privés ou restreints" }] },
     courses: { eyebrow: 'Parcours en vedette', title: 'Les meilleurs parcours de Majorque, joués et évalués honnêtement.', viewAll: 'Voir les 24 parcours →' },
     experience: {
-      eyebrow: 'L’expérience',
+      eyebrow: 'L\'expérience',
       title: 'La plupart des journées de golf à Majorque se limitent à une heure de départ et un signe de la main.',
-      paragraphs: ['J’ai passé plus de dix ans à coacher en Chine, dans un contexte où l’on attendait une vraie amélioration, pas des encouragements creux.', 'Cette expérience façonne chaque partie que j’accompagne. Nous jouons ensemble sur l’un des meilleurs parcours de Majorque, et le coaching arrive là où il fait gagner des coups.', 'Tout est réglé avant votre arrivée : parcours, heure de départ et déjeuner. Votre seul travail ce jour-là est de jouer.'],
+      paragraphs: ['J\'ai passé plus de dix ans à coacher en Chine, dans un contexte où l\'on attendait une vraie amélioration, pas des encouragements creux.', 'Cette expérience façonne chaque partie que j\'accompagne. Nous jouons ensemble sur l\'un des meilleurs parcours de Majorque, et le coaching arrive là où il fait gagner des coups.', 'Tout est réglé avant votre arrivée : parcours, heure de départ et déjeuner. Votre seul travail ce jour-là est de jouer.'],
       button: 'Voir les expériences',
       dateCta: 'Dites-moi vos dates',
       features: [
         { title: 'Tout est organisé', text: 'Parcours, heure de départ, transport et déjeuner sont réglés avant votre arrivée.' },
-        { title: 'Coaching sur le parcours', text: 'Des observations utiles au bon moment, tant qu’elles peuvent encore changer quelque chose.' },
-        { title: 'Entièrement privé', text: 'Juste vous et un PGA Advanced Professional. Personne d’autre dans votre partie.' },
+        { title: 'Coaching sur le parcours', text: 'Des observations utiles au bon moment, tant qu\'elles peuvent encore changer quelque chose.' },
+        { title: 'Entièrement privé', text: 'Juste vous et un PGA Advanced Professional. Personne d\'autre dans votre partie.' },
         { title: 'Accès à davantage', text: 'Des parcours membres que la plupart des visiteurs ne peuvent pas réserver seuls.' },
       ],
     },
@@ -884,14 +883,14 @@ const HOME_OVERRIDES = {
         },
         {
           title: 'Je compare les parcours',
-          text: "Consultez mon guide des parcours pour des notes honnêtes et de première main sur les droits de jeu, la difficulté, l’entretien, le cadre et à qui convient vraiment chaque parcours.",
+          text: "Consultez mon guide des parcours pour des notes honnêtes et de première main sur les droits de jeu, la difficulté, l\'entretien, le cadre et à qui convient vraiment chaque parcours.",
           cta: 'Comparer tous les parcours',
           href: '/golf-courses',
         },
       ],
     },
     quote: {
-      text: 'Après seulement 18 trous ensemble, j’ai découvert un nouveau plafond à mon potentiel.',
+      text: 'Après seulement 18 trous ensemble, j\'ai découvert un nouveau plafond à mon potentiel.',
       attribution: 'Jo, après une journée à Son Gual',
     },
     packages: {
@@ -910,7 +909,7 @@ const HOME_OVERRIDES = {
             'Coaching sur le parcours pendant la partie',
             'Débriefing après la partie et prochaines étapes',
           ],
-          note: 'Tarif journalier d’Andy. Les droits de jeu et le déjeuner sont en sus. Voiturette et clubs de location disponibles en option.',
+          note: 'Tarif journalier d\'Andy. Les droits de jeu et le déjeuner sont en sus. Voiturette et clubs de location disponibles en option.',
           cta: 'Demander →',
           href: '/contact',
         },
@@ -919,13 +918,13 @@ const HOME_OVERRIDES = {
           name: 'Groupe',
           price: '€950 au total',
           features: [
-            'Jusqu’à 3 joueurs, un tarif fixe journalier pour Andy',
+            'Jusqu\'à 3 joueurs, un tarif fixe journalier pour Andy',
             'Parcours adapté au groupe',
             'Heure de départ sécurisée et gérée',
             '18 trous avec Andy',
             'Coaching sur le parcours pendant la partie',
           ],
-          note: 'Tarif fixe journalier d’Andy pour 2 ou 3 golfeurs. Droits de jeu et déjeuner en sus. Voiturette et clubs de location disponibles.',
+          note: 'Tarif fixe journalier d\'Andy pour 2 ou 3 golfeurs. Droits de jeu et déjeuner en sus. Voiturette et clubs de location disponibles.',
           cta: 'Demander →',
           href: '/contact',
           featured: true,
@@ -954,11 +953,11 @@ const HOME_OVERRIDES = {
           features: [
             'Pas besoin de chercher sur des applis : les heures de départ sont gérées pour vous',
             'Parcours choisis selon votre groupe, niveau et budget',
-            'Conseils sur la zone d’hébergement et l’itinéraire',
+            'Conseils sur la zone d\'hébergement et l\'itinéraire',
             'Un programme qui a du sens sur la carte',
             'Journée Play With A Pro ajoutée si vous le souhaitez',
           ],
-          note: 'Tarif communiqué lors de notre échange, pas affiché sur la page d’accueil. Dites-moi la taille du voyage et je vous propose un chiffre adapté.',
+          note: 'Tarif communiqué lors de notre échange, pas affiché sur la page d\'accueil. Dites-moi la taille du voyage et je vous propose un chiffre adapté.',
           cta: 'Demander →',
           href: '/contact',
         },
@@ -969,14 +968,15 @@ const HOME_OVERRIDES = {
       title: 'Ce que les gens demandent avant de prendre contact.',
       intro: 'Donnez-moi vos dates, votre handicap et ce que vous cherchez. Je réponds personnellement sous 24 heures.',
       items: [
-        { q: 'Faut-il être un bon joueur ?', a: 'Pas du tout. L’expérience s’adapte à votre niveau. Débutants comme joueurs scratch peuvent y gagner quelque chose.' },
-        { q: 'Quel parcours utilisez-vous ?', a: 'Cela dépend de vous. Son Gual et Alcanada sont mes principales bases pour une vraie grande journée, mais ce ne sont pas toujours les meilleurs choix.' },
-        { q: 'Comment réserver ?', a: 'Écrivez-moi simplement. Donnez-moi vos dates et ce que vous cherchez, et je vous répondrai personnellement sous 24 heures. Pas de plateforme de réservation. Pas d’attente.' },
-        { q: 'Est-ce adapté aux groupes ?', a: 'Oui. Pour une personne seule, un couple, un groupe d’amis ou une journée d’entreprise.' },
-        { q: 'Quelle est la meilleure période ?', a: 'Octobre, novembre, mars et avril. C’est le meilleur mélange de conditions, météo, valeur et rythme de jeu.' },
+        { q: 'Faut-il être un bon joueur ?', a: 'Pas du tout. L\'expérience s\'adapte à votre niveau. Débutants comme joueurs scratch peuvent y gagner quelque chose.' },
+        { q: 'Comment réserver ?', a: 'Écrivez-moi simplement. Donnez-moi vos dates et ce que vous cherchez, et je vous répondrai personnellement sous 24 heures. Pas de plateforme de réservation. Pas d\'attente.' },
+        { q: 'Est-ce adapté aux groupes ?', a: 'Oui. Pour une personne seule, un couple, un groupe d\'amis ou une journée d\'entreprise.' },
+        { q: 'Quelle est la meilleure période ?', a: 'Octobre, novembre, mars et avril. C\'est le meilleur mélange de conditions, météo, valeur et rythme de jeu.' },
+        { q: 'Puis-je réserver une session unique pendant des vacances golf ?', a: 'Oui. Beaucoup de mes clients sont ici en vacances et veulent ajouter quelque chose de différent à leurs journées de golf. Une session unique sur le parcours convient bien.' },
+        { q: 'C\'est uniquement pour les touristes ou travaillez-vous aussi avec les résidents ?', a: 'Les deux. Je travaille avec des golfeurs qui vivent sur l\'île toute l\'année et avec des visiteurs pour une ou deux semaines.' },
       ],
     },
-    finalCta: { eyebrow: 'Prêt à jouer Majorque comme il faut ?', title: 'Contactez-moi. Je m’occupe du reste.', body: 'Donnez-moi vos dates, votre handicap et ce que vous attendez de la journée. Je reviens vers vous personnellement sous 24 heures.', primaryCta: 'Réserver votre journée', secondaryCta: 'WhatsApp' },
+    finalCta: { eyebrow: 'Prêt à jouer Majorque comme il faut ?', title: 'Contactez-moi. Je m\'occupe du reste.', body: 'Donnez-moi vos dates, votre handicap et ce que vous attendez de la journée. Je reviens vers vous personnellement sous 24 heures.', primaryCta: 'Réserver votre journée', secondaryCta: 'WhatsApp' },
   },
   nl: {
     hero: { eyebrow: 'PGA Advanced Professional · Mallorca', titleLines: ['Speel de beste', 'banen van Mallorca.'], emphasis: 'Met een professional aan uw zijde.', primaryCta: 'Boek uw dag', secondaryCta: 'Bekijk de banen' },
@@ -995,7 +995,7 @@ const HOME_OVERRIDES = {
     },
     socialProof: 'PGA Advanced Professional · Trackman Master · Pebble Beach · The Open Championship · Evian',
     how: { eyebrow: 'Hoe het werkt', title: 'Drie eenvoudige stappen.', steps: [{ number: '01', title: 'Neem contact op', text: 'Vertel me uw data, handicap en wat u zoekt. Ik reageer persoonlijk binnen 24 uur.' }, { number: '02', title: 'Ik bouw uw dag', text: 'Baanadvies, tee time en lunch worden geregeld vóór uw aankomst. Vervoer kan worden toegevoegd als dat handig is.' }, { number: '03', title: 'Kom en speel', text: 'Uw taak is simpel: genieten van de ronde. De meeste mensen spelen beter dan verwacht.' }] },
-    whyMallorca: { eyebrow: 'Waarom Mallorca', title: 'Mallorca heeft banen op Tour-niveau. Veel bezoekers ontdekken maar een klein deel.', paragraphs: ['Veel van Europa’s beste banen sluiten in de winter. Mallorca niet. Van oktober tot april krijgt u lagere greenfees, rustigere banen en omstandigheden die elders midden in de zomer al goed zouden zijn.', 'Er liggen 24 banen binnen bereik, verschillende met echte Tourgeschiedenis en serieuze architectuur. Mallorca is een echte golfbestemming, en de meeste bezoekers zien daar maar een klein deel van.'], stats: [{ value: 'Jan-Dec', label: 'seizoen het hele jaar' }, { value: '24', label: 'banen op het eiland' }, { value: '21', label: 'open voor green fee' }, { value: '3', label: 'privé of beperkt' }] },
+    whyMallorca: { eyebrow: 'Waarom Mallorca', title: 'Mallorca heeft banen op Tour-niveau. Veel bezoekers ontdekken maar een klein deel.', paragraphs: ['Veel van Europa\'s beste banen sluiten in de winter. Mallorca niet. Van oktober tot april krijgt u lagere greenfees, rustigere banen en omstandigheden die elders midden in de zomer al goed zouden zijn.', 'Er liggen 24 banen binnen bereik, verschillende met echte Tourgeschiedenis en serieuze architectuur. Mallorca is een echte golfbestemming, en de meeste bezoekers zien daar maar een klein deel van.'], stats: [{ value: 'Jan-Dec', label: 'seizoen het hele jaar' }, { value: '24', label: 'banen op het eiland' }, { value: '21', label: 'open voor green fee' }, { value: '3', label: 'privé of beperkt' }] },
     courses: { eyebrow: 'Uitgelichte banen', title: 'De beste van Mallorca, gespeeld en eerlijk beoordeeld.', viewAll: 'Bekijk alle 24 banen →' },
     experience: {
       eyebrow: 'De ervaring',
@@ -1054,7 +1054,7 @@ const HOME_OVERRIDES = {
             'Coaching op de baan tijdens de ronde',
             'Debriefing na de ronde en vervolgstappen',
           ],
-          note: "Andy's dagtarief. Greenfee en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele toevoegingen.",
+          note: "Andy\'s dagtarief. Greenfee en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele toevoegingen.",
           cta: 'Aanvragen →',
           href: '/contact',
         },
@@ -1114,10 +1114,11 @@ const HOME_OVERRIDES = {
       intro: 'Vertel me uw data, handicap en wat u zoekt. Ik reageer persoonlijk binnen 24 uur.',
       items: [
         { q: 'Moet ik een goede golfer zijn?', a: 'Nee. De ervaring past zich aan uw spel aan. Zowel beginners als scratchspelers halen er iets uit.' },
-        { q: 'Welke baan gebruikt u?', a: 'Dat hangt van u af. Son Gual en Alcanada zijn mijn hoofdlocaties voor een serieuze volledige dag, maar niet altijd de juiste keuze.' },
         { q: 'Hoe boek ik?', a: 'Neem gewoon contact op. Vertel me uw data en wat u zoekt, en ik kom persoonlijk binnen 24 uur bij u terug. Geen boekingsplatform. Geen wachtrij.' },
-        { q: 'Is dit geschikt voor groepen?', a: 'Ja. Voor solo’s, koppels, vriendengroepen en zakelijke dagen.' },
+        { q: 'Is dit geschikt voor groepen?', a: 'Ja. Voor solo\'s, koppels, vriendengroepen en zakelijke dagen.' },
         { q: 'Wat is de beste tijd van het jaar?', a: 'Oktober, november, maart en april. De beste mix van baancondities, weer, waarde en speeltempo.' },
+        { q: 'Kan ik een losse sessie boeken tijdens een golfvakantie?', a: 'Ja. Veel van mijn klanten zijn hier op vakantie en willen iets anders toevoegen aan hun golfdagen. Een enkele sessie op de baan past daar goed bij.' },
+        { q: 'Is dit alleen voor toeristen of werkt u ook met eilandbewoners?', a: 'Beide. Ik werk met golfers die het hele jaar op het eiland wonen en met bezoekers voor een week of twee.' },
       ],
     },
     finalCta: { eyebrow: 'Klaar om Mallorca goed te spelen?', title: 'Neem contact op. Ik regel de rest.', body: 'Vertel me uw data, handicap en wat u uit de dag wilt halen. Ik kom persoonlijk binnen 24 uur bij u terug.', primaryCta: 'Boek uw dag', secondaryCta: 'WhatsApp' },
@@ -1258,10 +1259,11 @@ const HOME_OVERRIDES = {
       intro: 'Berätta dina datum, ditt handicap och vad du letar efter. Jag svarar personligen inom 24 timmar.',
       items: [
         { q: 'Måste jag vara en bra golfare?', a: 'Nej. Upplevelsen anpassas efter ditt spel. Både nybörjare och scratchspelare får ut något av dagen.' },
-        { q: 'Vilken bana använder du?', a: 'Det beror på dig. Son Gual och Alcanada är mina huvudval för en seriös heldag, men inte alltid rätt val.' },
         { q: 'Hur bokar jag?', a: 'Hör bara av dig. Berätta dina datum och vad du söker, så återkommer jag personligen inom 24 timmar. Ingen bokningsplattform. Ingen väntan.' },
         { q: 'Passar det här grupper?', a: 'Ja. För solo, par, kompisgäng och företagsdagar.' },
         { q: 'När är bästa tiden på året?', a: 'Oktober, november, mars och april. Den bästa kombinationen av banförhållanden, väder, värde och speltempo.' },
+        { q: 'Kan jag boka en enskild session under en golfsemester?', a: 'Ja. Många av mina kunder är här på semester och vill lägga till något annorlunda till sina golfdagar. En enskild session på banan passar bra för det.' },
+        { q: 'Är det bara för turister eller arbetar du också med öbor?', a: 'Bägge. Jag arbetar med golfare som bor på ön året runt och med besökare för en eller två veckor.' },
       ],
     },
     finalCta: { eyebrow: 'Redo att spela Mallorca på riktigt?', title: 'Hör av dig. Jag ordnar resten.', body: 'Berätta dina datum, ditt handicap och vad du vill få ut av dagen. Jag återkommer personligen inom 24 timmar.', primaryCta: 'Boka din dag', secondaryCta: 'WhatsApp' },
@@ -1421,10 +1423,11 @@ const HOME_OVERRIDES = {
       intro: '告诉我你的日期、差点和你想要什么样的一天。我会在 24 小时内亲自回复。',
       items: [
         { q: '一定要打得很好吗？', a: '不需要。这个体验会根据你的水平来调整。无论是初学者还是低差点球员，都能从中得到真正的帮助。' },
-        { q: '通常会安排在哪个球场？', a: '要看你本人。Son Gual 和 Alcanada 是我做完整高质量一天时最常用的两个球场，但并不是每次都最合适。' },
         { q: '怎么预订？', a: '直接联系我就行。把你的日期和想要的体验告诉我，我会在 24 小时内亲自回复。没有预订平台，也不用排队等。' },
         { q: '适合团体吗？', a: '适合。无论是一人、两人、朋友小团体，还是企业接待日，都可以安排。' },
         { q: '一年里什么时候最好？', a: '十月、十一月、三月和四月。球场状态、天气、性价比和节奏，这几个月的平衡最好。' },
+        { q: '度假期间可以单独预订一次指导吗？', a: '可以。很多客人是来度假的，想在高尔夫行程里加点不一样的体验。单独预订一次球场指导完全没问题。' },
+        { q: '这只面向游客，还是岛上的居民也可以？', a: '都可以。我既和长期住在岛上的球员合作，也接待来这里度一两周假的访客。' },
       ],
     },
     finalCta: { eyebrow: '准备好真正打懂马略卡了吗？', title: '联系我，剩下的我来安排。', body: '告诉我你的日期、差点和你希望这一天达到什么效果。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。', primaryCta: '预订这一天', secondaryCta: '微信联系' },
@@ -1492,7 +1495,7 @@ const HOME_AUDIT_OVERRIDES = {
   fr: {
     intro: {
       stats: [
-        { value: '24', label: "parcours sur l'île" },
+        { value: '24', label: "parcours sur l\'île" },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
@@ -1659,9 +1662,9 @@ const HOME_HUMANIZED_OVERRIDES = {
     },
     winners: {
       eyebrow: 'Preuves sur le terrain',
-      title: 'Des vainqueurs en compétition, des joueurs ambitieux, et tout ce qu’il y a entre les deux.',
-      intro: 'J’ai accompagné des juniors de haut niveau, des joueurs de club et beaucoup de personnes qui voulaient simplement arrêter de gâcher des coups. Le fil conducteur est presque toujours le même : des décisions plus claires, de meilleurs schémas, et un progrès qui tient encore quand la carte compte.',
-      testimonial: 'Je joue au golf depuis l’âge de cinq ans. Je pensais avoir les bases et avoir surtout besoin de répétitions, pas d’un coach. Puis on m’a offert une séance avec Andy, et j’ai décidé d’essayer. J’ai bien fait. Nous avons travaillé les détails fins du swing, la qualité du contact, le transfert d’appui et la mécanique. Même de petits ajustements ont produit des résultats réguliers, et je suis convaincu qu’ils peuvent me faire gagner 5 à 10 coups avec une seule séance. Andy a été irréprochable du début à la fin. Je ne le remercierai jamais assez.',
+      title: 'Des vainqueurs en compétition, des joueurs ambitieux, et tout ce qu\'il y a entre les deux.',
+      intro: 'J\'ai accompagné des juniors de haut niveau, des joueurs de club et beaucoup de personnes qui voulaient simplement arrêter de gâcher des coups. Le fil conducteur est presque toujours le même : des décisions plus claires, de meilleurs schémas, et un progrès qui tient encore quand la carte compte.',
+      testimonial: 'Je joue au golf depuis l\'âge de cinq ans. Je pensais avoir les bases et avoir surtout besoin de répétitions, pas d\'un coach. Puis on m\'a offert une séance avec Andy, et j\'ai décidé d\'essayer. J\'ai bien fait. Nous avons travaillé les détails fins du swing, la qualité du contact, le transfert d\'appui et la mécanique. Même de petits ajustements ont produit des résultats réguliers, et je suis convaincu qu\'ils peuvent me faire gagner 5 à 10 coups avec une seule séance. Andy a été irréprochable du début à la fin. Je ne le remercierai jamais assez.',
       attribution: 'Adam',
     },
     packages: {
@@ -1828,20 +1831,20 @@ const HOME_NO_PRICE_OVERRIDES = {
   fr: {
     intro: {
       stats: [
-        { value: '24', label: 'parcours sur l’île' },
+        { value: '24', label: 'parcours sur l\'île' },
         { value: 'Privé', label: 'journées solo et petits groupes' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
-      intro: 'Les deux formats sont privés, organisés personnellement par moi, et joués sur l’un des plus beaux parcours de l’île. Le tarif est partagé lors de notre échange, pas affiché comme sur une simple plateforme de réservation.',
+      intro: 'Les deux formats sont privés, organisés personnellement par moi, et joués sur l\'un des plus beaux parcours de l\'île. Le tarif est partagé lors de notre échange, pas affiché comme sur une simple plateforme de réservation.',
       items: [
         {
           note: 'Je vous communique le tarif personnellement une fois vos dates, la taille du groupe et le bon parcours définis.',
           price: null,
         },
         {
-          note: "Pour les groupes, il y a un tarif fixe pour la journée d’Andy ; le déroulé précis et les green fees sont confirmés ensemble.",
+          note: "Pour les groupes, il y a un tarif fixe pour la journée d\'Andy ; le déroulé précis et les green fees sont confirmés ensemble.",
           price: null,
         },
       ],
@@ -1944,7 +1947,7 @@ const HOME_PACKAGE_ITEMS = {
         'On-course coaching during the round',
         'Post-round debrief',
       ],
-      note: "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+      note: "Andy\'s day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
       cta: 'Enquire',
       href: '/contact',
     },
@@ -1960,7 +1963,7 @@ const HOME_PACKAGE_ITEMS = {
         '18 holes with Andy',
         'On-course coaching during the round',
       ],
-      note: "Andy's fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+      note: "Andy\'s fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
       cta: 'Enquire',
       href: '/contact',
     },
@@ -2330,7 +2333,7 @@ const HOME_UI_COPY = {
     newsletterEyebrow: 'LA NEWSLETTER',
     newsletterTitle: 'Des infos golf livrées régulièrement.',
     newsletterBody:
-      'Des notes de parcours mises à jour au fil de mes parties. Les heures de départ qui valent le coup, les greens qui roulent vite et ce qu’il faut savoir avant de prendre l’avion. Toutes les deux semaines, désinscription à tout moment.',
+      'Des notes de parcours mises à jour au fil de mes parties. Les heures de départ qui valent le coup, les greens qui roulent vite et ce qu\'il faut savoir avant de prendre l\'avion. Toutes les deux semaines, désinscription à tout moment.',
   },
   nl: {
     coursesHint: 'Veeg of scroll om te bekijken',
@@ -2417,7 +2420,7 @@ const HOME_EXTRA_PACKAGE_ITEM = {
     price: 'Prix sur demande',
     featured: true,
     features: [
-      'Pas d’apps ni de sites à chercher - les heures de départ sont gérées pour vous',
+      'Pas d\'apps ni de sites à chercher - les heures de départ sont gérées pour vous',
       'Parcours choisis selon votre groupe, votre niveau et votre budget',
       'Itinéraire et nombre de tours pensés selon votre planning',
       'Buggies, location de clubs et transferts organisés',
@@ -2506,7 +2509,7 @@ function normalizeHomePackageItems(locale, items = []) {
 const HOME_FEATURED_BADGE_MAP = {
   de: { 'Expert Pick': 'Expertenwahl', 'Best in Spain 2025': 'Bester Platz Spaniens 2025' },
   es: { 'Expert Pick': 'Selección personal', 'Best in Spain 2025': 'Mejor campo de España 2025' },
-  fr: { 'Expert Pick': 'Choix d’expert', 'Best in Spain 2025': 'Meilleur d’Espagne 2025' },
+  fr: { 'Expert Pick': 'Choix d\'expert', 'Best in Spain 2025': 'Meilleur d\'Espagne 2025' },
   nl: { 'Expert Pick': 'Expertkeuze', 'Best in Spain 2025': 'Beste van Spanje 2025' },
   sv: { 'Expert Pick': 'Expertval', 'Best in Spain 2025': 'Bäst i Spanien 2025' },
   zh: { 'Expert Pick': '专家推荐', 'Best in Spain 2025': '2025 西班牙最佳' },
@@ -2522,7 +2525,7 @@ const HOME_FEATURED_COURSE_CONFIG = [
     metaLead: 'Championship',
     stars: '★★★★★',
     difficulty: '9/10 Difficulty',
-    excerpt: "Thomas Himmel's 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.",
+    excerpt: "Thomas Himmel\'s 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.",
     img: '/images/son-gual.webp',
   },
   {
@@ -2613,10 +2616,10 @@ const HOME_FEATURED_REPLACEMENTS = {
     ['Championship', 'Championship'],
     ['Difficulty', 'de difficulté'],
     ['Thomas Himmel\'s 2007 design lives in its own wind ecosystem. The closing stretch from 15 through 18 is among the finest in European golf.', 'Le dessin de Thomas Himmel, signé en 2007, vit dans son propre système de vent. Le final du 15 au 18 compte parmi les meilleures séquences du golf européen.'],
-    ['Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.', 'Robert Trent Jones Jr. dans sa version la plus spectaculaire. Le phare reste visible pendant une grande partie du parcours, dans l’un des cadres les plus beaux d’Espagne.'],
-    ['Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.', 'Élu meilleur parcours d’Espagne aux World Golf Awards 2025, avec vue sur la baie de Palma et un olivier millénaire au 15.'],
-    ['Host of the 2021 DP World Tour Mallorca Open. Long, generous from the tee, and one of the easiest places on the island to swing freely with driver.', 'Hôte du Mallorca Open du DP World Tour en 2021. Long, généreux au départ, et l’un des endroits les plus simples de l’île pour laisser partir le driver.'],
-    ['The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', 'Le 6 est le plus long par 5 d’Espagne avec 609 mètres. Tracé dans les collines côtières sans concession. Prévoyez quelques balles de plus et laissez l’ego de côté.'],
+    ['Robert Trent Jones Jr. at his most scenic. The lighthouse remains visible for most of the round and the setting is one of the prettiest in Spain.', 'Robert Trent Jones Jr. dans sa version la plus spectaculaire. Le phare reste visible pendant une grande partie du parcours, dans l\'un des cadres les plus beaux d\'Espagne.'],
+    ['Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.', 'Élu meilleur parcours d\'Espagne aux World Golf Awards 2025, avec vue sur la baie de Palma et un olivier millénaire au 15.'],
+    ['Host of the 2021 DP World Tour Mallorca Open. Long, generous from the tee, and one of the easiest places on the island to swing freely with driver.', 'Hôte du Mallorca Open du DP World Tour en 2021. Long, généreux au départ, et l\'un des endroits les plus simples de l\'île pour laisser partir le driver.'],
+    ['The 6th is the longest par 5 in Spain at 609 metres. Built into coastal hills without compromise. Bring extra balls and no ego.', 'Le 6 est le plus long par 5 d\'Espagne avec 609 mètres. Tracé dans les collines côtières sans concession. Prévoyez quelques balles de plus et laissez l\'ego de côté.'],
   ],
   nl: [
     ['Palma · 11 km from city', 'Palma · 11 km van de stad'],
