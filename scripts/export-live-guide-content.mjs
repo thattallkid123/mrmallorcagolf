@@ -19,21 +19,21 @@ const OUTPUT_DIR = process.env.MMG_BLOG_EXPORT_DIR || DEFAULT_OUTPUT_DIR
 const EXPORT_STARTED_AT = new Date()
 
 const FILE_NAME_OVERRIDES = new Map([
-  ['a-day-at-son-gual', 'A Day at Son Gual.txt'],
-  ['alcanada-review', "Club de Golf Alcanada - A PGA Professional's Honest Review (2026).txt"],
-  ['best-golf-courses-mallorca', "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026).txt"],
-  ['best-time-play-golf-mallorca', 'The Best Time of Year to Play Golf in Mallorca - Month by Month (2026).txt'],
-  ['golf-andratx-review', "Golf de Andratx Review - A PGA Professional's Honest Take (2026).txt"],
-  ['golf-club-hire-mallorca', 'Golf Club Hire in Mallorca - Everything You Need to Know (2026).txt'],
-  ['golf-cost-mallorca', 'How Much Does Golf Cost In Mallorca - A Complete 2026 Breakdown.txt'],
-  ['golf-trip-planning-mallorca', 'How to Plan the Perfect Golf Trip to Mallorca - Courses, Base & Tee Times.txt'],
-  ['is-mallorca-good-for-golf', "Is Mallorca Good For Golf - A PGA Professional's Answer.txt"],
-  ['santa-ponsa-1-review', "Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026).txt"],
-  ['son-antem-west-review', "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026).txt"],
-  ['son-gual-review', 'Son Gual Golf Mallorca Review 2026 - Is It Worth It - Green Fees Wind And Verdict.txt'],
-  ['son-muntaner-review', 'Son Muntaner Golf Mallorca Review 2026 - Best In Spain But Is It Worth It.txt'],
-  ['son-termes-review', "Son Termes Golf, Mallorca - A PGA Professional's Honest Review (2026).txt"],
-  ['t-golf-calvia-review', "T Golf Calvià Review - A PGA Professional's Honest Take (2026).txt"],
+  ['a-day-at-son-gual', 'Guide Article - A Day at Son Gual.txt'],
+  ['alcanada-review', "Course Review - Club de Golf Alcanada - A PGA Professional's Honest Review (2026).txt"],
+  ['best-golf-courses-mallorca', "Guide Article - The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026).txt"],
+  ['best-time-play-golf-mallorca', 'Guide Article - The Best Time of Year to Play Golf in Mallorca - Month by Month (2026).txt'],
+  ['golf-andratx-review', "Course Review - Golf de Andratx Review - A PGA Professional's Honest Take (2026).txt"],
+  ['golf-club-hire-mallorca', 'Guide Article - Golf Club Hire in Mallorca - Everything You Need to Know (2026).txt'],
+  ['golf-cost-mallorca', 'Guide Article - How Much Does Golf Cost In Mallorca - A Complete 2026 Breakdown.txt'],
+  ['golf-trip-planning-mallorca', 'Guide Article - How to Plan the Perfect Golf Trip to Mallorca - Courses, Base & Tee Times.txt'],
+  ['is-mallorca-good-for-golf', "Guide Article - Is Mallorca Good For Golf - A PGA Professional's Answer.txt"],
+  ['santa-ponsa-1-review', "Course Review - Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026).txt"],
+  ['son-antem-west-review', "Course Review - Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026).txt"],
+  ['son-gual-review', 'Course Review - Son Gual Golf Mallorca Review 2026 - Is It Worth It - Green Fees Wind And Verdict.txt'],
+  ['son-muntaner-review', 'Course Review - Son Muntaner Golf Mallorca Review 2026 - Best In Spain But Is It Worth It.txt'],
+  ['son-termes-review', "Course Review - Son Termes Golf, Mallorca - A PGA Professional's Honest Review (2026).txt"],
+  ['t-golf-calvia-review', "Course Review - T Golf Calvià Review - A PGA Professional's Honest Take (2026).txt"],
 ])
 
 function stripHtml(value = '') {
@@ -256,6 +256,7 @@ function main() {
     '',
     'Rule',
     '----',
+    'Generated files are named `Course Review - ...` or `Guide Article - ...` so the folder is clear at a glance.',
     'Run `npm run export:blog-content` after live site content changes. The local git pre-push hook runs this automatically before pushes from this PC.',
     '',
   ]
