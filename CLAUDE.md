@@ -118,6 +118,22 @@ Common folders to mount: Downloads, Documents, specific project folders.
   - **Templates/**  Outreach email templates, booking templates, proposal templates
 - **Archive/**  Historical docs (old projects, superseded versions, handover docs)
 
+### Google Drive Naming Rules
+
+Generated client/admin documents use one date placement:
+
+```text
+MMG_<Document_Type>_YYYY-MM-DD_<Client>[_Qualifier].ext
+```
+
+Invoice PDFs also include the legal invoice number after the date:
+
+```text
+MMG_Invoice_YYYY-MM-DD_INV-YYYY-###_ClientName.pdf
+```
+
+Examples: `MMG_Gift_Voucher_2026-06-22_Gero.pdf`, `MMG_Itinerary_2026-05-01_Philipp.pdf`, `MMG_Proposal_2026-05-01_Philipp_Internal.pdf`, `MMG_Booking_Terms_2026-09.docx`. PWAP review folders use `YYYY-MM-DD_Client`; PDFs use `MMG_Player_Review_YYYY-MM-DD_Client.pdf`. Partnership contracts use `MMG_Partnership_Partner_Name_v2.docx`. Templates keep `Template` at the end, e.g. `MMG_Gift_Voucher_Template.pptx`.
+
 ## File Hygiene Rule
 
 **Planning/working documents:**
