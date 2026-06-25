@@ -81,7 +81,6 @@ export default function ContactForm({ locale = 'en' }) {
             <div className="promise-block">
               <p>&ldquo;{content.trust.quote}&rdquo;</p>
               <cite>- {content.trust.credit}</cite>
-              <TrustpilotBadge variant="inline-bar" theme="dark" />
             </div>
           ) : null}
 
@@ -159,6 +158,10 @@ export default function ContactForm({ locale = 'en' }) {
                 <p className="contact-card__value">{content.cards.basedValue}</p>
               </div>
             </a>
+          </div>
+
+          <div className="contact-trust">
+            <TrustpilotBadge variant="text" theme="dark" />
           </div>
 
         </div>

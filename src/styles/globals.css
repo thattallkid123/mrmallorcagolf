@@ -2216,29 +2216,24 @@ body {
 .tp-footer-block__brand { color: #00b67a; font-weight: 500; }
 .tp-footer-block:hover .tp-footer-block__brand { text-decoration: underline; }
 
-/* Trustpilot inline bar (Option C) */
-.tp-inline-bar { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; padding: 10px 16px; border-radius: 6px; transition: background 0.2s; }
-.tp-inline-bar__left { display: flex; align-items: center; gap: 6px; }
-.tp-inline-bar__divider { width: 1px; height: 22px; flex-shrink: 0; }
-.tp-inline-bar__text { font-size: 0.72rem; letter-spacing: 0.02em; line-height: 1.4; }
-.tp-inline-bar__brand { font-weight: 500; }
-/* light theme */
-.tp-inline-bar--light { background: rgba(26,25,22,0.04); border: 0.5px solid rgba(26,25,22,0.08); }
-.tp-inline-bar--light:hover { background: rgba(26,25,22,0.07); }
-.tp-inline-bar--light .tp-inline-bar__score { font-size: 0.85rem; font-weight: 600; color: #1a1916; }
-.tp-inline-bar--light .tp-inline-bar__divider { background: rgba(26,25,22,0.12); }
-.tp-inline-bar--light .tp-inline-bar__text { color: rgba(26,25,22,0.55); }
-.tp-inline-bar--light .tp-inline-bar__brand { color: #00b67a; }
-/* dark theme */
-.tp-inline-bar--dark { background: rgba(255,255,255,0.06); border: 0.5px solid rgba(255,255,255,0.1); }
-.tp-inline-bar--dark:hover { background: rgba(255,255,255,0.1); }
-.tp-inline-bar--dark .tp-inline-bar__score { font-size: 0.85rem; font-weight: 600; color: #fff; }
-.tp-inline-bar--dark .tp-inline-bar__divider { background: rgba(255,255,255,0.15); }
-.tp-inline-bar--dark .tp-inline-bar__text { color: rgba(255,255,255,0.5); }
-.tp-inline-bar--dark .tp-inline-bar__brand { color: #00b67a; }
+/* Trustpilot text-only badge (Option C — boxless, centred) */
+.tp-text { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; text-decoration: none; }
+.tp-text .tp-stars { gap: 2px; }
+.tp-text__line { font-size: 0.78rem; letter-spacing: 0.04em; line-height: 1; }
+.tp-text__score { font-weight: 600; }
+.tp-text__brand { font-weight: 500; color: #00b67a; }
+.tp-text__count { opacity: 0.7; }
+.tp-text--dark .tp-text__line { color: rgba(255,255,255,0.62); }
+.tp-text--dark .tp-text__score { color: #fff; }
+.tp-text--light .tp-text__line { color: rgba(26,25,22,0.6); }
+.tp-text--light .tp-text__score { color: #1a1916; }
+.tp-text:hover .tp-text__brand { text-decoration: underline; }
 
-/* PWAP packages trust bar */
-.packages__trust { display: flex; justify-content: center; margin-top: 20px; }
+/* Contact: trust centred in the space below the contact cards */
+.contact-trust { margin: auto 0; padding-top: 0.5rem; display: flex; justify-content: center; position: relative; z-index: 1; }
+
+/* PWAP: trust band centred in the gap between packages and FAQ */
+.pwap-trust-band { display: flex; justify-content: center; padding: 56px 24px; }
 
 .contact-details { margin-top: 40px; position: relative; z-index: 1; display: flex; flex-direction: column; gap: 16px; }
 .contact-detail { display: flex; gap: 14px; align-items: center; }

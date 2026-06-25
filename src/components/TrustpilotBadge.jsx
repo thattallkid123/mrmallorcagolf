@@ -89,22 +89,20 @@ export default function TrustpilotBadge({ variant = 'compact', theme = 'dark' })
     )
   }
 
-  if (variant === 'inline-bar') {
+  if (variant === 'text') {
     return (
       <a
         href={TRUSTPILOT_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className={`tp-inline-bar tp-inline-bar--${theme}`}
+        className={`tp-text tp-text--${theme}`}
         aria-label={`Rated ${TP_RATING} out of 5 on Trustpilot, ${TP_COUNT} reviews`}
       >
-        <div className="tp-inline-bar__left">
-          <Stars rating={TP_RATING} size={13} />
-          <span className="tp-inline-bar__score">{TP_RATING}</span>
-        </div>
-        <span className="tp-inline-bar__divider" aria-hidden="true" />
-        <span className="tp-inline-bar__text">
-          {TP_COUNT} verified reviews on <span className="tp-inline-bar__brand">Trustpilot</span>
+        <Stars rating={TP_RATING} size={15} />
+        <span className="tp-text__line">
+          <span className="tp-text__score">{TP_RATING}</span> on{' '}
+          <span className="tp-text__brand">Trustpilot</span>
+          <span className="tp-text__count"> · {TP_COUNT} reviews</span>
         </span>
       </a>
     )

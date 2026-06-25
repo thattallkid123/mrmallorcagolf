@@ -421,10 +421,11 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               </Link>
             </div>
           ) : null}
-          <div className="packages__trust">
-            <TrustpilotBadge variant="inline-bar" theme="light" />
-          </div>
         </section>
+
+        <div className="pwap-trust-band">
+          <TrustpilotBadge variant="text" theme="light" />
+        </div>
 
         {content.faq?.items?.length ? (
           <section className="faq">
