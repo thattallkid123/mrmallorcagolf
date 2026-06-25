@@ -407,13 +407,36 @@
           <button class="range-btn active" onclick="setSCRange(28,this)">28 days</button>
           <button class="range-btn" onclick="setSCRange(90,this)">90 days</button>
         </div>
-        <button class="btn ghost" style="margin:0" onclick="fetchSearch()">&#8635; Refresh</button>
+        <button class="btn ghost" style="margin:0" onclick="fetchSearch();fetchIndexing();fetchActionQueue()">&#8635; Refresh</button>
       </div>
 
       <!-- Search Overview -->
       <div class="card">
         <div class="card-title">Search Performance</div>
         <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px" id="scStatusGrid"></div>
+      </div>
+
+      <!-- Indexing Status -->
+      <div class="card" id="indexingCard">
+        <div class="card-title">Page Indexing Status <span id="indexingUpdated" style="font-size:11px;font-weight:300;color:var(--muted);margin-left:8px"></span></div>
+        <div id="indexingStatus"></div>
+        <table class="pages-table" id="indexingTable" style="display:none">
+          <thead><tr>
+            <th>Page</th>
+            <th>Status</th>
+            <th>Coverage</th>
+            <th>Last Crawled</th>
+            <th>Action</th>
+          </tr></thead>
+          <tbody id="indexingBody"></tbody>
+        </table>
+      </div>
+
+      <!-- Weekly Action Queue -->
+      <div class="card" id="actionQueueCard">
+        <div class="card-title">This Week's SEO Actions <span id="actionWeek" style="font-size:11px;font-weight:300;color:var(--muted);margin-left:8px"></span></div>
+        <div id="actionQueueStatus"></div>
+        <div id="actionQueueList"></div>
       </div>
 
       <!-- Opportunities & Details -->
@@ -787,6 +810,7 @@ function switchTab(id, btn) {
   const pane = document.getElementById("tab-" + id);
   if (pane) pane.classList.add("active");
   if (id === "backup") loadBackup();
+  if (id === "search") { fetchIndexing(); fetchActionQueue(); }
 }
 
 function toggleTheme() {
@@ -819,6 +843,8 @@ function loadAllData() {
   fetchSearch();
   fetchVercel();
   fetchMailerLite();
+  fetchIndexing();
+  fetchActionQueue();
 }
 
 // ── MailerLite ───────────────────────────────────────────────────────────────
@@ -1196,6 +1222,76 @@ async function fetchSearch() {
     }
   } catch(e) {
     sEl.innerHTML = '<div class="status err">&#10007; ' + e.message + '</div>';
+  }
+}
+
+// ── SEO Indexing Status ───────────────────────────────────────────────────────
+async function fetchIndexing() {
+  const statusEl = document.getElementById('indexingStatus');
+  const tableEl  = document.getElementById('indexingTable');
+  const bodyEl   = document.getElementById('indexingBody');
+  const updatedEl = document.getElementById('indexingUpdated');
+  statusEl.innerHTML = '<div class="status warn"><span class="spin">&#8635;</span> Loading indexing data&hellip;</div>';
+  tableEl.style.display = 'none';
+  try {
+    const r = await fetch('/api/seo-indexing');
+    const d = await r.json();
+    if (d.error && !d.rows.length) { statusEl.innerHTML = '<div class="status warn">&#9888; ' + escHtml(d.error) + '</div>'; return; }
+    statusEl.innerHTML = '';
+    if (d.updated) updatedEl.textContent = 'as of ' + new Date(d.updated).toLocaleDateString('en-GB', {day:'numeric',month:'short'});
+    const pass = d.rows.filter(r => r.verdict === 'PASS').length;
+    const fail = d.rows.filter(r => r.verdict !== 'PASS').length;
+    if (fail > 0) statusEl.innerHTML = '<div class="status err">&#10007; ' + fail + ' page' + (fail>1?'s':'') + ' not indexed — see table below</div>';
+    else statusEl.innerHTML = '<div class="status ok">&#10003; All ' + pass + ' tracked pages indexed</div>';
+    bodyEl.innerHTML = d.rows.map(row => {
+      const isPass = row.verdict === 'PASS';
+      const dot = isPass ? '&#9679;' : '&#9679;';
+      const dotColor = isPass ? '#43a047' : (row.verdict === 'NEUTRAL' ? '#ffb300' : '#e53935');
+      const lastCrawl = row.last_crawl ? new Date(row.last_crawl).toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'2-digit'}) : '—';
+      const shortPath = row.url.replace('https://www.mrmallorcagolf.com','') || '/';
+      const gscLink = 'https://search.google.com/search-console/inspect?resource_id=sc-domain:mrmallorcagolf.com&id=' + encodeURIComponent(row.url);
+      return '<tr>' +
+        '<td class="path">' + escHtml(shortPath) + '</td>' +
+        '<td><span style="color:' + dotColor + ';font-size:10px">&#9679;</span> ' + (isPass ? 'Indexed' : row.verdict === 'NEUTRAL' ? 'Unknown' : 'Excluded') + '</td>' +
+        '<td style="font-size:12px;color:var(--muted)">' + escHtml(row.coverage_state || '—') + '</td>' +
+        '<td style="font-size:12px;color:var(--muted)">' + lastCrawl + '</td>' +
+        '<td><a href="' + gscLink + '" target="_blank" style="font-size:11px;color:var(--gold)">Inspect ↗</a></td>' +
+        '</tr>';
+    }).join('');
+    tableEl.style.display = '';
+  } catch(e) {
+    statusEl.innerHTML = '<div class="status err">&#10007; ' + e.message + '</div>';
+  }
+}
+
+// ── Weekly Action Queue ───────────────────────────────────────────────────────
+async function fetchActionQueue() {
+  const statusEl = document.getElementById('actionQueueStatus');
+  const listEl   = document.getElementById('actionQueueList');
+  const weekEl   = document.getElementById('actionWeek');
+  statusEl.innerHTML = '<div class="status warn"><span class="spin">&#8635;</span> Loading actions&hellip;</div>';
+  listEl.innerHTML = '';
+  try {
+    const r = await fetch('/api/seo-actions');
+    const d = await r.json();
+    if (d.week) weekEl.textContent = 'week of ' + d.week;
+    if (d.error && !d.actions.length) { statusEl.innerHTML = '<div class="status info">&#8505; ' + escHtml(d.error) + '</div>'; return; }
+    statusEl.innerHTML = '';
+    if (!d.actions.length) { listEl.innerHTML = '<div class="status ok">&#10003; No actions in queue — nothing outstanding this week</div>'; return; }
+    const priorityIcon = p => p <= 1 ? '&#128308;' : p <= 2 ? '&#128993;' : '&#128994;';
+    listEl.innerHTML = '<div style="display:flex;flex-direction:column;gap:10px">' +
+      d.actions.map(a => {
+        const shortPage = (a.page || '').replace('https://www.mrmallorcagolf.com','') || '/';
+        return '<div style="display:flex;gap:12px;padding:14px 16px;background:var(--surface2);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:var(--r)">' +
+          '<span style="font-size:18px;flex-shrink:0;margin-top:1px">' + priorityIcon(parseInt(a.priority)||3) + '</span>' +
+          '<div style="min-width:0">' +
+          '<div style="font-size:13px;font-weight:500;color:var(--heading);margin-bottom:4px">' + escHtml(a.recommended_action || a.opportunity_type || 'Review this page') + '</div>' +
+          '<div style="font-size:11px;color:var(--muted);margin-bottom:3px">Page: <span style="font-family:monospace;color:var(--pine)">' + escHtml(shortPage) + '</span></div>' +
+          (a.query ? '<div style="font-size:11px;color:var(--muted)">Query: <em>' + escHtml(a.query) + '</em> · pos ' + (parseFloat(a.position)||0).toFixed(1) + ' · ' + (a.impressions||0) + ' impr</div>' : '') +
+          '</div></div>';
+      }).join('') + '</div>';
+  } catch(e) {
+    statusEl.innerHTML = '<div class="status err">&#10007; ' + e.message + '</div>';
   }
 }
 

@@ -303,6 +303,20 @@ function schemaDate(updated = '') {
   return year && MONTHS[month] ? `${year}-${MONTHS[month]}-01` : '2026-03-01'
 }
 
+function buildBreadcrumbSchema(meta, locale) {
+  const slug = meta.slug
+  const pagePath = slug ? buildLocalePath(`/guides/${slug}`, locale) : buildLocalePath('/guides', locale)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_ORIGIN },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${SITE_ORIGIN}${buildLocalePath('/guides', locale)}` },
+      { '@type': 'ListItem', position: 3, name: meta.title, item: `${SITE_ORIGIN}${pagePath}` },
+    ],
+  }
+}
+
 function buildBlogPostingSchema(meta, blocks, locale) {
   const slug = meta.slug
   const pagePath = slug ? buildLocalePath(`/guides/${slug}`, locale) : buildLocalePath('/guides', locale)
@@ -359,6 +373,7 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
       <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
+      <JsonLd data={buildBreadcrumbSchema(meta, locale)} />
       <>
         <PostLayout meta={meta} lang={locale}>
           {blocks.map((block, index) => {

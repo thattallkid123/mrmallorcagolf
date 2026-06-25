@@ -19,6 +19,13 @@ const SHARED_BASE_PATHS = new Set([
 ])
 
 const EN_ONLY_BASE_PATHS = new Set(['/a-day', '/itinerary', '/course-selector'])
+const EN_ONLY_TOOL_PATHS = new Set([
+  '/tools',
+  '/tools/golf-day-builder',
+  '/tools/golf-cost-calculator',
+  '/tools/hotel-recommender',
+])
+const LOCALES_FOR_COURSE_SELECTOR_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es'])
 
@@ -33,7 +40,9 @@ export const REVIEW_POST_SLUGS = new Set([
   'son-antem-west-review',
 ])
 
-export const EN_ONLY_REVIEW_POST_SLUGS = new Set([])
+export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
+  'on-course-coaching-mallorca',
+])
 
 export const ARTICLE_SLUGS = new Set([
   'a-day-at-son-gual',
@@ -129,6 +138,8 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
   if (EN_ONLY_BASE_PATHS.has(basePath)) return locale === 'en'
   if (SHARED_BASE_PATHS.has(basePath)) return true
   if (LEGAL_BASE_PATHS.has(basePath)) return LEGAL_LOCALES.has(locale)
+  if (EN_ONLY_TOOL_PATHS.has(basePath)) return locale === 'en'
+  if (basePath === '/tools/course-selector') return LOCALES_FOR_COURSE_SELECTOR_TOOL.has(locale)
 
   if (!basePath.startsWith('/guides/')) return false
 
@@ -230,6 +241,16 @@ export function getSitemapPaths() {
     for (const locale of ALL_LOCALES) {
       paths.push(buildLocalePath(`/guides/${slug}`, locale))
     }
+  }
+
+  // Tool pages (en-only tools)
+  for (const path of EN_ONLY_TOOL_PATHS) {
+    paths.push(buildLocalePath(path, 'en'))
+  }
+
+  // Course selector tool: available in all locales except zh
+  for (const locale of LOCALES_FOR_COURSE_SELECTOR_TOOL) {
+    paths.push(buildLocalePath('/tools/course-selector', locale))
   }
 
   return [...new Set(paths)]

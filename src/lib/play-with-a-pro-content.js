@@ -25,7 +25,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/',
       breadcrumbHome: 'Home',
       breadcrumbCurrent: 'Play with a Pro',
-      eyebrow: 'A Private Day on Course · Mallorca',
+      eyebrow: 'Private Golf Day · Mallorca · PGA Professional',
       title: 'One course. 18 holes.\nMe alongside you the whole way.',
       body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. Book it as a standalone day, or add it to a trip I plan for you. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €695. Groups from €950 total.',
       price: null,

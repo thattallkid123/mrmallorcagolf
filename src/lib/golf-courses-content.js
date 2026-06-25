@@ -72,6 +72,25 @@ export const GOLF_COURSES_CONTENT = {
         { region: 'East', courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or · Reserva Rotana" },
         { region: 'North', courses: 'Alcanada · Golf Pollença' },
       ],
+      faqTitle: 'Common questions',
+      faq: [
+        {
+          q: 'How many golf courses are in Mallorca?',
+          a: 'Mallorca has 24 golf courses in total. Of those, 21 are open to green-fee visitors without membership. The island covers five main regions: Palma, Southwest, South, East, and North.',
+        },
+        {
+          q: 'What is the best golf course in Mallorca?',
+          a: 'For most visitors the strongest first round is Son Gual — championship layout, excellent conditions, and a proper challenge. Son Muntaner is the most tour-like experience. Alcanada is the most scenic. The right answer depends on your handicap, group, and what type of round you want.',
+        },
+        {
+          q: 'How much does it cost to play golf in Mallorca?',
+          a: 'Green fees range from around €55 at the value end (Golf Pollença in quieter months) up to around €250 at Son Muntaner at peak. Most visitor rounds fall between €85–€165. Buggy hire is typically €30–€40 extra.',
+        },
+        {
+          q: 'Do you need a handicap certificate to play golf in Mallorca?',
+          a: 'Some courses — including Son Gual and Son Muntaner — require a handicap certificate or equivalent. Others do not. It is always worth checking before you book, particularly for championship-standard venues.',
+        },
+      ],
     },
   },
   de: {

@@ -51,6 +51,11 @@ const COURSE_REVIEW_DETAILS = {
     ratingValue: 5,
     addressLocality: 'Calvià',
   },
+  'son-muntaner-review': {
+    name: 'Son Muntaner Golf',
+    ratingValue: 5,
+    addressLocality: 'Palma',
+  },
 }
 
 const MONTHS = {
@@ -293,6 +298,31 @@ function buildReviewSchema(meta, blocks, locale) {
   }
 }
 
+function buildFaqSchema(meta, blocks, locale) {
+  const items = []
+  for (let i = 0; i < blocks.length - 1; i++) {
+    const block = blocks[i]
+    if (block.type === 'heading' && block.text.startsWith('Quick Answer:')) {
+      const next = blocks[i + 1]
+      if (next?.type === 'paragraph') {
+        items.push({ question: block.text.replace(/^Quick Answer:\s*/i, '').trim(), answer: next.text.replace(/<[^>]+>/g, '') })
+      }
+    }
+  }
+  if (!items.length) return null
+  const pagePath = meta.slug ? buildLocalePath(`/guides/${meta.slug}`, locale) : buildLocalePath('/guides', locale)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    url: `${SITE_ORIGIN}${pagePath}`,
+    mainEntity: items.map(({ question, answer }) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: { '@type': 'Answer', text: answer },
+    })),
+  }
+}
+
 function JsonLd({ data }) {
   return (
     <script
@@ -310,6 +340,7 @@ export default function GuidePostView({ locale = 'en', meta, blocks }) {
     <PageLayout lang={pageLang}>
       <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
       <JsonLd data={buildReviewSchema(meta, blocks, locale)} />
+      {buildFaqSchema(meta, blocks, locale) && <JsonLd data={buildFaqSchema(meta, blocks, locale)} />}
       <PostLayout meta={meta} lang={pageLang}>
         {blocks.map((block, index) => {
           const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null

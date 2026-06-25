@@ -157,6 +157,8 @@ function buildLocalBusinessSchema(lang) {
     sameAs: [
       'https://www.instagram.com/mrmallorcagolf',
       'https://www.linkedin.com/in/andygriffithsgolf',
+      'https://www.trustpilot.com/review/mrmallorcagolf.com',
+      'https://share.google/nHaKTQQmeooC4JE0K',
     ],
     logo: {
       '@type': 'ImageObject',
@@ -177,6 +179,13 @@ function buildLocalBusinessSchema(lang) {
     priceRange: 'EUR',
     currenciesAccepted: 'EUR',
     areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.2',
+      reviewCount: '6',
+      bestRating: '5',
+      worstRating: '1',
+    },
     founder: { '@id': `${SITE_ORIGIN}/#person-andy-griffiths` },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',

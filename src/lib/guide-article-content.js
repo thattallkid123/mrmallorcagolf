@@ -142,7 +142,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'Want a full day arranged - course, tee time, coaching, and everything handled before you arrive?',
-        linkLabel: 'See the play-with-a-pro experience →',
+        linkLabel: 'Book a private golf day in Mallorca →',
         href: '/play-with-a-pro',
       },
     ],
@@ -547,6 +547,12 @@ export const GUIDE_ARTICLE_CONTENT = {
         text:
           'Widely considered one of the most difficult courses on the island. A championship layout in the southwest with breathtaking scenery and hazards on near enough every hole. The 6th is the longest par 5 in the whole of Spain at 609 metres. Recommended for experienced players, and bring extra balls!',
       },
+      {
+        type: 'cta',
+        text: 'Considering Andratx? I cover the layout, wind, best tee choice, and whether it suits your game.',
+        linkLabel: 'Read the Golf de Andratx review →',
+        href: '/guides/golf-andratx-review',
+      },
       { type: 'subheading', text: 'For the Most Beautiful Setting: Canyamel' },
       {
         type: 'image',
@@ -622,7 +628,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'Want to play one of these courses with a PGA professional alongside you?',
-        linkLabel: 'See the play-with-a-pro experience →',
+        linkLabel: 'Book a private golf day in Mallorca →',
         href: '/play-with-a-pro',
       },
     ],
@@ -876,7 +882,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'Want to see what the best of Mallorca golf looks like, with a PGA professional alongside you?',
-        linkLabel: 'See the play-with-a-pro experience →',
+        linkLabel: 'Book a private golf day in Mallorca →',
         href: '/play-with-a-pro',
       },
     ],

@@ -38,6 +38,21 @@ const nextConfig = {
         destination: '/guides/alcanada-review',
         permanent: true,
       },
+      {
+        source: '/golf-trip-calculator',
+        destination: '/tools/golf-cost-calculator',
+        permanent: true,
+      },
+      {
+        source: '/hotel-recommender',
+        destination: '/tools/hotel-recommender',
+        permanent: true,
+      },
+      {
+        source: '/golf-day-builder',
+        destination: '/tools/golf-day-builder',
+        permanent: true,
+      },
     ]
   },
   async headers() {

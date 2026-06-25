@@ -574,6 +574,46 @@ app.post('/api/run-script', (req, res) => {
   runNext();
 });
 
+// ── 11. SEO Reports — read CSV files from Downloads/MMG Reports ────────────
+const MMG_REPORTS = 'C:\\Users\\andyg\\Downloads\\MMG Reports';
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n').filter(Boolean);
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+  return lines.slice(1).map(line => {
+    const vals = line.split(',').map(v => v.trim().replace(/^"|"$/g, ''));
+    return Object.fromEntries(headers.map((h, i) => [h, vals[i] ?? '']));
+  });
+}
+
+function latestWeeklyFolder() {
+  const base = path.join(MMG_REPORTS, 'Weekly SEO');
+  if (!fs.existsSync(base)) return null;
+  const folders = fs.readdirSync(base).filter(f => /^\d{4}-\d{2}-\d{2}$/.test(f)).sort().reverse();
+  return folders.length ? path.join(base, folders[0]) : null;
+}
+
+app.get('/api/seo-indexing', (req, res) => {
+  const csvPath = path.join(MMG_REPORTS, 'MMG URL Indexing Latest.csv');
+  if (!fs.existsSync(csvPath)) return res.json({ error: 'MMG URL Indexing Latest.csv not found', rows: [] });
+  try {
+    const rows = parseCSV(fs.readFileSync(csvPath, 'utf8'));
+    res.json({ rows, updated: fs.statSync(csvPath).mtime });
+  } catch(e) { res.status(500).json({ error: e.message, rows: [] }); }
+});
+
+app.get('/api/seo-actions', (req, res) => {
+  const folder = latestWeeklyFolder();
+  if (!folder) return res.json({ error: 'No weekly SEO folder found', actions: [], week: null });
+  const csvPath = path.join(folder, 'action_queue.csv');
+  if (!fs.existsSync(csvPath)) return res.json({ error: 'action_queue.csv not found', actions: [], week: path.basename(folder) });
+  try {
+    const actions = parseCSV(fs.readFileSync(csvPath, 'utf8'));
+    res.json({ actions, week: path.basename(folder) });
+  } catch(e) { res.status(500).json({ error: e.message, actions: [], week: null }); }
+});
+
 // ── Start ──────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log('\n  Mr Mallorca Golf Control Panel');

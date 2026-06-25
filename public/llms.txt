@@ -2,22 +2,27 @@
 
 > Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Course guidance, itinerary logic, and premium Play With A Pro add-ons for visiting golfers.
 
-Last updated: 2026-06-11
+Last updated: 2026-06-25
 Canonical domain: https://www.mrmallorcagolf.com
 
 ## Core Pages
 
 - [Homepage](https://www.mrmallorcagolf.com/): Main overview of the itinerary-led planning path.
 - [Itinerary Planner](https://www.mrmallorcagolf.com/itinerary): Public planning tool for trip shape, course mix, dates, and add-ons.
-- [Play with a Pro](https://www.mrmallorcagolf.com/play-with-a-pro): Premium private golf day add-on inside a Mallorca trip.
-- [Golf Courses](https://www.mrmallorcagolf.com/golf-courses): Course guide covering the island's golf courses.
-- [Guides](https://www.mrmallorcagolf.com/guides): Destination, planning, and course advice articles.
+- [Play with a Pro](https://www.mrmallorcagolf.com/play-with-a-pro): Private golf day with Andy — one course, 18 holes, full coaching woven into the round. Solo from €695, groups from €950.
+- [Signature Day](https://www.mrmallorcagolf.com/signature-day): Premium full-day experience including on-course time with Andy, post-round golf physio with John Brazier (The Golf Doctor), private transfers, and dinner. From €3,000.
+- [Golf Courses](https://www.mrmallorcagolf.com/golf-courses): Course guide covering all 24 courses on the island with green fees, difficulty, and regional breakdowns.
+- [Guides](https://www.mrmallorcagolf.com/guides): Destination, planning, and course review articles.
+- [Tools](https://www.mrmallorcagolf.com/tools): Free planning tools — course selector, golf day builder, cost calculator, hotel recommender.
+- [On-Course Coaching](https://www.mrmallorcagolf.com/guides/on-course-coaching-mallorca): Guide to on-course coaching in Mallorca with a PGA professional.
 - [Contact](https://www.mrmallorcagolf.com/contact): Enquiry page for dates, itinerary, and booking discussions.
 
 ## Offer
 
 - Itinerary Planner: Main planning path for visiting golfers.
-- Play With A Pro: Optional private 18-hole day with Andy, built around your handicap, goals, and the right course.
+- Play With A Pro (Solo, €695): One-person private golf day — one course, 18 holes, full coaching throughout.
+- Play With A Pro (Group, €950 total): Up to 3 guests alongside Andy on the same format.
+- Signature Day (from €3,000): Full premium day — golf, physio (John Brazier), private transfers, dinner.
 - Hosted Golf Journey: Bespoke multi-day golf trips with itinerary support on request.
 
 ## Credentials

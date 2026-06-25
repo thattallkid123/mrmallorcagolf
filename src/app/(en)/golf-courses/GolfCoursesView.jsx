@@ -52,6 +52,21 @@ function buildGolfCoursesSchema(locale, content) {
   }
 }
 
+function buildFaqSchema(locale, content) {
+  if (!content.ui?.faq?.length) return null
+  const pagePath = buildLocalePath('/golf-courses', locale)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    url: `${SITE_ORIGIN}${pagePath}`,
+    mainEntity: content.ui.faq.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  }
+}
+
 function buildBreadcrumbSchema(locale, content) {
   return {
     '@context': 'https://schema.org',
@@ -85,6 +100,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
       <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false} showScrollReset={true}>
         <JsonLd data={buildGolfCoursesSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale, content)} />
+        {buildFaqSchema(locale, content) && <JsonLd data={buildFaqSchema(locale, content)} />}
 
         <header className="page-hero" style={{ minHeight: '72vh', overflow: 'hidden', position: 'relative' }}>
           <div aria-hidden="true" style={{ position: 'absolute', inset: 0 }}>
@@ -149,6 +165,24 @@ export default function GolfCoursesView({ locale = 'en', content }) {
             />
           </section>
         ) : null}
+
+        {content.ui?.faq?.length > 0 && (
+          <section style={{ background: 'var(--cream)', padding: 'clamp(28px, 5vw, 52px) clamp(20px, 5vw, 60px)' }}>
+            <div style={{ maxWidth: 780, margin: '0 auto' }}>
+              <h2 className="serif-display" style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)', marginBottom: '1.5rem' }}>
+                {content.ui.faqTitle || 'Common questions'}
+              </h2>
+              <dl>
+                {content.ui.faq.map(({ q, a }) => (
+                  <div key={q} style={{ marginBottom: '1.25rem' }}>
+                    <dt style={{ fontWeight: 600, marginBottom: '0.35rem' }}>{q}</dt>
+                    <dd style={{ margin: 0, color: 'var(--text-secondary, #555)' }}>{a}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </section>
+        )}
 
         <DeferredHydrate
           timeoutMs={1600}

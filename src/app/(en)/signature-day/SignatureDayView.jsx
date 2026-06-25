@@ -4,6 +4,39 @@ import Link from 'next/link'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import ScrollDepthTracker from '../../../components/ScrollDepthTracker'
 
+const SIGNATURE_DAY_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Signature Day Mallorca',
+  description: 'A premium Mallorca golf day with 18 holes alongside Andy Griffiths (PGA Advanced Professional), post-round golf physio with John Brazier, private transfers, and private dinner at your hotel.',
+  url: 'https://www.mrmallorcagolf.com/signature-day',
+  provider: {
+    '@type': 'Organization',
+    name: 'Mr Mallorca Golf',
+    url: 'https://www.mrmallorcagolf.com',
+  },
+  areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
+  serviceType: 'Premium private golf day',
+  offers: {
+    '@type': 'Offer',
+    price: '3000',
+    priceCurrency: 'EUR',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      price: 3000,
+      priceCurrency: 'EUR',
+      description: 'From €3,000 per day. Exact price depends on course selection, group size, and add-ons.',
+      minPrice: 3000,
+    },
+    url: 'https://www.mrmallorcagolf.com/contact',
+    availability: 'https://schema.org/InStock',
+  },
+}
+
+function JsonLd({ data }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+}
+
 const DAY_ARC = [
   {
     time: 'Before the round',
@@ -78,6 +111,7 @@ const HOTEL_PARTNERS = [
 export default function SignatureDayView() {
   return (
     <>
+    <JsonLd data={SIGNATURE_DAY_SCHEMA} />
     <ScrollDepthTracker />
     <main>
       <section className="pwap-hero pwap-hero--tall">

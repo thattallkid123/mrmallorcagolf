@@ -405,7 +405,11 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 <Link href={tier.href} className="tier__btn">
                   {tier.button}
                 </Link>
-                {/* detailHref link intentionally hidden until Signature Day page is ready to go live */}
+                {tier.detailHref ? (
+                  <Link href={tier.detailHref} className="tier__detail-link">
+                    {tier.detailLabel || 'See full details →'}
+                  </Link>
+                ) : null}
               </div>
             ))}
           </div>

@@ -77,9 +77,9 @@ const GOLF_COURSES_METADATA = {
       'Compare every Mallorca golf course in one place. See reviews, green fees, regions, difficulty, and which course fits your trip best.',
   },
   de: {
-    title: 'Mallorca Golf Guide 2026 - Jeder Kurs auf der Insel',
+    title: 'Golfplätze Mallorca 2026 | Alle 24 Plätze, Green Fees & Bewertungen',
     description:
-      'Der vollstaendige Leitfaden fuer Golf auf Mallorca - alle 24 Kurse, Green Fees, Schwierigkeitsratings und ehrliche Empfehlungen von einem auf der Insel ansaessigen PGA Professional. 2026 Ausgabe.',
+      'Vergleiche alle 24 Golfplätze auf Mallorca: Green Fees, Schwierigkeitsgrad, Regionen und ehrliche Empfehlungen eines PGA Advanced Professionals vor Ort. Aktualisiert 2026.',
   },
   es: {
     title: 'Mejores campos de golf en Mallorca (2026) - guia completa',
@@ -115,9 +115,9 @@ const GUIDES_INDEX_METADATA = {
       'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit - all updated for 2026.',
   },
   de: {
-    title: 'Mallorca Golff\u00fchrer - Platz-Bewertungen und Tipps',
+    title: 'Mallorca Golff\u00fchrer - Platz-Bewertungen, Tipps & Reiseplanung',
     description:
-      'Ehrliche Golfratgeber fur Mallorca von einem PGA Professional. Platz-Bewertungen, Greenfees und Reiseplanung - aktualisiert fur 2026.',
+      'Ehrliche Golfratgeber f\u00fcr Mallorca von einem PGA Advanced Professional vor Ort. Platzbewertungen, Greenfees, beste Reisezeit und Urlaubsplanung \u2013 aktualisiert f\u00fcr 2026.',
   },
   es: {
     title: 'Guia de Golf en Mallorca - Analisis de campos y consejos',
@@ -224,7 +224,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Play With A Pro Mallorca | Private Golf Day with Andy Griffiths',
+    title: 'Private Golf Day Mallorca | Play Alongside a PGA Pro',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {

@@ -169,12 +169,22 @@ Examples: `MMG_Gift_Voucher_2026-06-22_Gero.pdf`, `MMG_Itinerary_2026-05-01_Phil
 | GA4 report | `python ga4_analytics/ga4_report.py` |
 **Local path:** `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`
 
-Completion gate for repo work:
-- A push is not complete just because GitHub accepted it.
-- Do not report repo work as done until the required local checks have passed after the final edit set in the same worktree.
-- Minimum gate for site content or pricing work: `npm run check:content`.
-- Minimum gate for deploy-sensitive site work: `npm run check:content` and `npm run build`, plus any locale or visual checks required by the change.
-- If a push happens before checks are green, treat the task as still in progress until the failures are fixed and the checks pass.
+## Completion Gate (MANDATORY — READ EVERY SESSION)
+
+**A task is NOT done until the changes are live on mrmallorcagolf.com.**
+
+Work is incomplete if it is only edited locally, only committed, or only pushed to GitHub. The finish line is a confirmed READY Vercel deployment serving the change in production.
+
+Steps in order — do not skip, do not report done early:
+1. Local checks pass: `npm run check:content` (always). Add `npm run build` for any structural or deploy-sensitive change. Add `npm run check:i18n-release` if localized content changed.
+2. Commit with a clear message.
+3. Push to GitHub (`git push`). Vercel auto-deploys from `main`.
+4. Confirm the Vercel deployment reaches READY state (use the Vercel MCP `list_deployments` or check the dashboard).
+5. Only then say the task is done.
+
+**If any step is blocked** (hook failure, build error, Vercel error) — fix it. Do not close out the task and do not leave the repo in a broken state.
+
+**Stale uncommitted changes are a risk.** Before starting new work each session, run `git status`. If there are uncommitted changes that look complete, ask whether they should be committed first rather than letting them accumulate.
 
 ## Start Here
 
