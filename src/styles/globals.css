@@ -1119,7 +1119,7 @@ body {
 .nav__links > li { display: flex; align-items: center; }
 .nav__links a {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.75);
