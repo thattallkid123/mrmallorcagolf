@@ -2128,6 +2128,12 @@ body {
 .tier--signature .tier__features li::before { background: rgba(255,255,255,0.7); }
 .tier--signature .tier__btn { background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.95); border: 1px solid rgba(255,255,255,0.3); }
 .tier--signature .tier__btn:hover { background: rgba(255,255,255,0.25); transform: translateY(-1px); }
+.tier__detail-link { display: block; margin-top: 12px; text-align: center; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
+.tier__detail-link:hover { color: var(--pine); }
+.tier--feature .tier__detail-link { color: rgba(255,255,255,0.55); }
+.tier--feature .tier__detail-link:hover { color: rgba(255,255,255,0.9); }
+.tier--signature .tier__detail-link { color: rgba(255,255,255,0.6); }
+.tier--signature .tier__detail-link:hover { color: rgba(255,255,255,0.95); }
 .packages__shared-cta { display: flex; justify-content: center; margin: 34px auto 0; }
 .packages__shared-cta .tier__btn { min-width: min(280px, 100%); background: var(--pine); border-color: var(--pine); color: var(--white); }
 .packages__shared-cta .tier__btn:hover { background: var(--deep); border-color: var(--deep); color: var(--white); }
