@@ -406,7 +406,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                   {tier.button}
                 </Link>
                 {tier.detailHref ? (
-                  <Link href={tier.detailHref} className="tier__detail-link">
+                  <Link href={buildLocalePath(tier.detailHref, locale)} className="tier__detail-link">
                     {tier.detailLabel || 'See full details →'}
                   </Link>
                 ) : null}

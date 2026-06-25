@@ -614,6 +614,60 @@ app.get('/api/seo-actions', (req, res) => {
   } catch(e) { res.status(500).json({ error: e.message, actions: [], week: null }); }
 });
 
+// ── 12. Drive Draft Files ──────────────────────────────────────────────────
+const DRIVE_CONTENT_PATH = 'C:\\Users\\andyg\\My Drive\\Mr Mallorca Golf\\Content';
+
+app.get('/api/drafts', (req, res) => {
+  try {
+    const drafts = [];
+    function scanDir(dir) {
+      if (!fs.existsSync(dir)) return;
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        if (entry.isDirectory()) { scanDir(path.join(dir, entry.name)); continue; }
+        if (!entry.name.endsWith('.md') || !entry.name.includes('Draft')) continue;
+        const full = path.join(dir, entry.name);
+        const stat = fs.statSync(full);
+        const isCourseReview = entry.name.toLowerCase().includes('course review');
+        const label = entry.name
+          .replace(/^Course Review Draft - /i, '')
+          .replace(/^Guide Article Draft - /i, '')
+          .replace(/\.md$/, '');
+        drafts.push({
+          name: entry.name,
+          label,
+          type: isCourseReview ? 'course-review' : 'guide-article',
+          modified: stat.mtime,
+          path: full
+        });
+      }
+    }
+    scanDir(DRIVE_CONTENT_PATH);
+    drafts.sort((a, b) => new Date(b.modified) - new Date(a.modified));
+    res.json({ drafts });
+  } catch(e) { res.status(500).json({ error: e.message, drafts: [] }); }
+});
+
+app.get('/api/drafts/content', (req, res) => {
+  const name = req.query.name;
+  if (!name || name.includes('..') || name.includes('/') || name.includes('\\')) {
+    return res.status(400).json({ error: 'Invalid file name' });
+  }
+  try {
+    function findFile(dir) {
+      if (!fs.existsSync(dir)) return null;
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        if (entry.isDirectory()) { const r = findFile(path.join(dir, entry.name)); if (r) return r; }
+        else if (entry.name === name) return path.join(dir, entry.name);
+      }
+      return null;
+    }
+    const filePath = findFile(DRIVE_CONTENT_PATH);
+    if (!filePath) return res.status(404).json({ error: 'File not found' });
+    const content = fs.readFileSync(filePath, 'utf8');
+    res.json({ content });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
 // ── Start ──────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log('\n  Mr Mallorca Golf Control Panel');
