@@ -1118,9 +1118,9 @@ body {
 .nav__links { display: flex; align-items: center; gap: 2rem; list-style: none; }
 .nav__links > li { display: flex; align-items: center; }
 .nav__links a {
-  font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 0.12em;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.75);
   text-decoration: none;
@@ -1135,7 +1135,7 @@ body {
 .nav.scrolled .nav__links a:hover,
 .nav.solid .nav__links a:hover { color: var(--pine); border-bottom-color: var(--pine); }
 .nav.scrolled .nav__links a.active,
-.nav.solid .nav__links a.active { color: var(--deep); border-bottom-color: var(--pine); }
+.nav.solid .nav__links a.active { color: var(--deep); border-bottom-color: var(--pine); font-weight: 500; }
 
 .nav__cta {
   font-family: var(--font-sans);
@@ -2186,6 +2186,18 @@ body {
 .promise-block { background: rgba(255,255,255,0.055); padding: 22px 26px; border-left: 2px solid var(--gold); position: relative; z-index: 1; }
 .promise-block p { font-family: var(--font-serif); font-style: italic; font-size: 1.02rem; color: rgba(255,255,255,0.77); line-height: 1.62; margin-bottom: 8px; }
 .promise-block cite { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; color: var(--gold-light); font-style: normal; }
+
+/* Trustpilot badge */
+.tp-badge { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; line-height: 1; }
+.tp-stars { display: inline-flex; align-items: center; gap: 1px; }
+.tp-badge__score { font-size: 0.82rem; font-weight: 600; color: #00b67a; letter-spacing: 0.01em; }
+.tp-badge__divider { color: rgba(255,255,255,0.25); font-size: 0.75rem; }
+.tp-badge__count { font-size: 0.75rem; color: rgba(255,255,255,0.5); }
+.tp-badge__brand { font-size: 0.75rem; font-weight: 500; color: rgba(255,255,255,0.45); letter-spacing: 0.03em; }
+.tp-badge:hover .tp-badge__brand { color: #00b67a; }
+.tp-badge--compact { margin-top: 12px; }
+.tp-badge--mini .tp-badge__score { font-size: 0.72rem; }
+.tp-badge--mini .tp-badge__brand { font-size: 0.68rem; }
 .contact-details { margin-top: 40px; position: relative; z-index: 1; display: flex; flex-direction: column; gap: 16px; }
 .contact-detail { display: flex; gap: 14px; align-items: center; }
 .contact-detail__label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.7); min-width: 72px; }
