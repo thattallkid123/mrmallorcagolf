@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import BookingPolicyNotice from '../../../components/BookingPolicyNotice'
+import TrustpilotBadge from '../../../components/TrustpilotBadge'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
@@ -420,6 +421,9 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               </Link>
             </div>
           ) : null}
+          <div className="packages__trust">
+            <TrustpilotBadge variant="inline-bar" theme="light" />
+          </div>
         </section>
 
         {content.faq?.items?.length ? (

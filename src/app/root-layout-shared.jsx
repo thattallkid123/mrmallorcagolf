@@ -181,7 +181,7 @@ function buildLocalBusinessSchema(lang) {
     areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.2',
+      ratingValue: '4.4',
       reviewCount: '6',
       bestRating: '5',
       worstRating: '1',

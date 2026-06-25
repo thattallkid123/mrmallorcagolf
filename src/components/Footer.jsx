@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { NAV_LOCALES, getLegalPath } from '../lib/site'
+import TrustpilotBadge from './TrustpilotBadge'
 
 const FOOTER_COPY = {
   en: {
@@ -181,6 +182,10 @@ export default function Footer({ lang }) {
         <ul>
           <li><Link href={copy.newsletterHref || `${prefix}/subscribe`} prefetch={false}>{copy.newsletterLink}</Link></li>
         </ul>
+      </div>
+
+      <div className="footer__trust">
+        <TrustpilotBadge variant="footer-block" />
       </div>
 
       <div className="footer__bottom">
