@@ -72,25 +72,7 @@ app.get('/auth/google', (req, res) => {
 
 // ── 2. Control Panel — handles BOTH OAuth callback AND normal page load ────
 app.get('/control-panel', async (req, res) => {
-  // Google redirects back here with ?code= after login
-  if (req.query.code) {
-    try {
-      const { tokens } = await oauth2Client.getToken(req.query.code);
-      oauth2Client.setCredentials(tokens);
-      fs.writeFileSync(path.join(__dirname, 'token.json'), JSON.stringify(tokens, null, 2));
-    } catch (err) {
-      console.error('OAuth token exchange failed:', err.message);
-    }
-    // Always redirect to clean URL after handling code
-    return res.redirect('/control-panel');
-  }
-  // Normal page load
-  const htmlPath = path.join(__dirname, 'control-panel-frontend.html');
-  if (fs.existsSync(htmlPath)) {
-    res.sendFile(htmlPath);
-  } else {
-    res.status(404).send('control-panel-frontend.html not found in repo root.');
-  }
+  return res.redirect('http://localhost:8765/control-panel.html');
 });
 
 // ── 3. Auth check endpoint ─────────────────────────────────────────────────
