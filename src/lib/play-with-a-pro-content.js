@@ -27,7 +27,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       breadcrumbCurrent: 'Play with a Pro',
       eyebrow: 'Private Golf Day · Mallorca · PGA Professional',
       title: 'One course. 18 holes.\nMe alongside you the whole way.',
-      body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. Book it as a standalone day, or add it to a trip I plan for you. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €695. Groups from €950 total.',
+      body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. Book it as a standalone day, or add it to a trip I plan for you. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €695. Groups from €950 total total.',
       price: null,
       primaryCta: 'Enquire →',
       primaryHref: '/contact',
@@ -997,7 +997,7 @@ function mergeDeep(base, override) {
 const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   de: {
     hero: {
-      body: 'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.',
+      body: 'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 total insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.',
       price: null,
     },
     packages: {
@@ -1046,7 +1046,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   es: {
     hero: {
-      body: 'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.',
+      body: 'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 total en total. Green fees adicionales, confirmados cuando hablemos.',
       price: null,
     },
     packages: {
@@ -1095,7 +1095,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   fr: {
     hero: {
-      body: "Un parcours. Une journée complète aux côtés d\'un PGA Advanced Professional qui a tout organisé. Solo à partir de 695 €. Groupes à partir de 950 € total. Green fees en plus.",
+      body: "Un parcours. Une journée complète aux côtés d\'un PGA Advanced Professional qui a tout organisé. Solo à partir de 695 €. Groupes à partir de €950 total total. Green fees en plus.",
       price: null,
     },
     packages: {
@@ -1144,7 +1144,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   nl: {
     hero: {
-      body: 'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
+      body: 'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 total totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
       price: null,
     },
     packages: {
@@ -1193,7 +1193,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
   },
   sv: {
     hero: {
-      body: 'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.',
+      body: 'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 total totalt. Green fees tillkommer, bekräftas när vi pratar.',
       price: null,
     },
     packages: {

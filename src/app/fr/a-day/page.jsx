@@ -1,5 +1,5 @@
 import { permanentRedirect } from 'next/navigation'
 
 export default function FRADayPage() {
-  permanentRedirect('/fr/guides/a-day-at-son-gual')
+  permanentRedirect('/fr/guides/play-with-a-pro-explained')
 }

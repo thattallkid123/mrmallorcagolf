@@ -1,5 +1,5 @@
 import { permanentRedirect } from 'next/navigation'
 
 export default function DEADayPage() {
-  permanentRedirect('/de/guides/a-day-at-son-gual')
+  permanentRedirect('/de/guides/play-with-a-pro-explained')
 }

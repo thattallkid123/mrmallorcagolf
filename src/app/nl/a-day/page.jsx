@@ -1,5 +1,5 @@
 import { permanentRedirect } from 'next/navigation'
 
 export default function NLADayPage() {
-  permanentRedirect('/nl/guides/a-day-at-son-gual')
+  permanentRedirect('/nl/guides/play-with-a-pro-explained')
 }

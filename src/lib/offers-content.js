@@ -11,9 +11,9 @@ const OFFER_CONTENT = {
   en: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Book Play With A Pro as a standalone private golf day or add it to a planned Mallorca golf trip. Solo from €695. Groups from €950 total. Green fees additional.',
+      'Book Play With A Pro as a standalone private golf day or add it to a planned Mallorca golf trip. Solo from €695. Groups from €950 total total. Green fees additional.',
     playHeroBody:
-      'Book it as a standalone private round, or add it to a planned Mallorca golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €695. Groups from €950 total. Green fees additional, confirmed when we speak.',
+      'Book it as a standalone private round, or add it to a planned Mallorca golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €695. Groups from €950 total total. Green fees additional, confirmed when we speak.',
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
@@ -39,22 +39,22 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'The Full Andy Day',
-        contactPrice: 'From €3,000',
+        contactPrice: 'From €3,000+',
         structuredName: 'The Full Andy Day',
-        structuredDescription: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From €3,000 on enquiry.',
+        structuredDescription: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From €3,000+ on enquiry.',
       },
     },
   },
   de: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Ein privater Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zus?tzlich.',
+      'Ein privater Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab €695. Gruppen ab €950 total insgesamt. Greenfees zus?tzlich.',
     playHeroBody:
-      'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zus?tzlich, werden bei der Anfrage best?tigt.',
+      'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 total insgesamt. Greenfees zus?tzlich, werden bei der Anfrage best?tigt.',
     playMultiDayDetail:
-      'Der volle Andy Tag. Ein Tag, ein Platz, alles ist arrangiert. Ab €3.000. Keine Logistik, keine Entscheidungen, nichts zum Organisieren bei der Ankunft. Je nachdem, was Sie vom Tag erwarten, kann dies einen Caddie, einen Videografen, Michelin-Lunch, private Transfers, Spa-Zugang, ein Premium-Leih-Set beinhalten. Andy koordiniert alles im Voraus und bestätigt das vollständige Programm mit Ihnen vor Ihrer Ankunft.',
+      'Der volle Andy Tag. Ein Tag, ein Platz, alles ist arrangiert. Ab €3,000+. Keine Logistik, keine Entscheidungen, nichts zum Organisieren bei der Ankunft. Je nachdem, was Sie vom Tag erwarten, kann dies einen Caddie, einen Videografen, Michelin-Lunch, private Transfers, Spa-Zugang, ein Premium-Leih-Set beinhalten. Andy koordiniert alles im Voraus und bestätigt das vollständige Programm mit Ihnen vor Ihrer Ankunft.',
     homeMultiDayBody:
-      'Der volle Andy Tag -ein Platz, alles ist arrangiert. Keine Logistik, keine Entscheidungen, nichts zum Organisieren. Ab €3.000.',
+      'Der volle Andy Tag -ein Platz, alles ist arrangiert. Keine Logistik, keine Entscheidungen, nichts zum Organisieren. Ab €3,000+.',
     contactUnknown: 'Noch unsicher - beraten Sie mich',
     offers: {
       [OFFER_IDS.solo]: {
@@ -73,20 +73,20 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'Der volle Andy Tag',
-        contactPrice: 'Ab €3.000',
+        contactPrice: 'Ab €3,000+',
       },
     },
   },
   es: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Un d?a privado de golf en Mallorca junto a Andy Griffiths. Solo desde €695. Grupos desde €950 en total. Green fees adicionales.',
+      'Un d?a privado de golf en Mallorca junto a Andy Griffiths. Solo desde €695. Grupos desde €950 total en total. Green fees adicionales.',
     playHeroBody:
-      'Un campo. Un d?a completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.',
+      'Un campo. Un d?a completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 total en total. Green fees adicionales, confirmados cuando hablemos.',
     playMultiDayDetail:
-      'El D?a Andy Completo. Un d?a, un campo, todo est? organizado. Desde €3.000. Sin log?stica, sin decisiones, nada que organizar a tu llegada. Dependiendo de lo que quieras del d?a, esto puede incluir un caddie, un vide?grafo, almuerzo Michelin, traslados privados, acceso a spa, equipo de alquiler premium. Andy coordina todo por adelantado y confirma el itinerario completo contigo antes de tu llegada.',
+      'El D?a Andy Completo. Un d?a, un campo, todo est? organizado. Desde €3,000+. Sin log?stica, sin decisiones, nada que organizar a tu llegada. Dependiendo de lo que quieras del d?a, esto puede incluir un caddie, un vide?grafo, almuerzo Michelin, traslados privados, acceso a spa, equipo de alquiler premium. Andy coordina todo por adelantado y confirma el itinerario completo contigo antes de tu llegada.',
     homeMultiDayBody:
-      'El D?a Andy Completo -un campo, todo est? organizado. Sin log?stica, sin decisiones, nada que organizar. Desde €3.000.',
+      'El D?a Andy Completo -un campo, todo est? organizado. Sin log?stica, sin decisiones, nada que organizar. Desde €3,000+.',
     contactUnknown: 'A?n no lo s? - acons?jeme',
     offers: {
       [OFFER_IDS.solo]: {
@@ -105,7 +105,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'El D?a Andy Completo',
-        contactPrice: 'Desde €3.000',
+        contactPrice: 'Desde €3,000+',
       },
     },
   },
@@ -144,13 +144,13 @@ const OFFER_CONTENT = {
   nl: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Een priv?-golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf €695. Groepen vanaf €950 in totaal. Greenfees bijkomend.',
+      'Een priv?-golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf €695. Groepen vanaf €950 total in totaal. Greenfees bijkomend.',
     playHeroBody:
-      'E?n baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
+      'E?n baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 total in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
     playMultiDayDetail:
-      'De Volledige Andy Dag. E?n dag, ??n baan, alles is geregeld. Vanaf €3.000. Geen logistiek, geen beslissingen, niets om te organiseren bij aankomst. Afhankelijk van wat je van de dag wilt, kan dit een caddie, videograaf, Michelin-lunch, priv?vervoer, spavergoeding, premium verhuurapparatuur omvatten. Andy co?rdineert alles vooraf en bevestigt het volledige programma met je v??r je aankomst.',
+      'De Volledige Andy Dag. E?n dag, ??n baan, alles is geregeld. Vanaf €3,000+. Geen logistiek, geen beslissingen, niets om te organiseren bij aankomst. Afhankelijk van wat je van de dag wilt, kan dit een caddie, videograaf, Michelin-lunch, priv?vervoer, spavergoeding, premium verhuurapparatuur omvatten. Andy co?rdineert alles vooraf en bevestigt het volledige programma met je v??r je aankomst.',
     homeMultiDayBody:
-      'De Volledige Andy Dag -eén baan, alles is geregeld. Geen logistiek, geen beslissingen, niets om te organiseren. Vanaf €3.000.',
+      'De Volledige Andy Dag -eén baan, alles is geregeld. Geen logistiek, geen beslissingen, niets om te organiseren. Vanaf €3,000+.',
     contactUnknown: 'Nog niet zeker - adviseer me',
     offers: {
       [OFFER_IDS.solo]: {
@@ -169,7 +169,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'De Volledige Andy Dag',
-        contactPrice: 'Vanaf €3.000',
+        contactPrice: 'Vanaf €3,000+',
       },
     },
   },
@@ -201,14 +201,14 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'Den Fullständiga Andy-dagen',
-        contactPrice: 'Från €3.000',
+        contactPrice: 'Från €3,000+',
       },
     },
   },
   zh: {
     statSoloLabel: '单人',
     playWithAProMeta:
-      'A private golf day in Mallorca alongside Andy Griffiths. Solo €695. Groups from €950 total. Green fees additional.',
+      'A private golf day in Mallorca alongside Andy Griffiths. Solo €695. Groups from €950 total total. Green fees additional.',
     playHeroBody:
       '一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €695。小组从 €950 总计起，果岭费另计。',
     playMultiDayDetail:
