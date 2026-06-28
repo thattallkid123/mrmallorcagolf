@@ -167,6 +167,7 @@ Examples: `MMG_Gift_Voucher_2026-06-22_Gero.pdf`, `MMG_Itinerary_2026-05-01_Phil
 | Pre-deploy check | `npm run predeploy` if available, otherwise run the checks above |
 | Deploy | `git add -A` then `git commit -m "..."` then `git push` - **PowerShell does not support `&&`, always use separate lines** |
 | GA4 report | `python ga4_analytics/ga4_report.py` |
+| Update Trustpilot rating | Edit `TP_RATING` and `TP_COUNT` at the top of `src/components/TrustpilotBadge.jsx` — those two constants drive the badge on every page (contact, footer) and the `aria-label`. Then commit and push. |
 **Local path:** `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`
 
 ## Completion Gate (MANDATORY — READ EVERY SESSION)
@@ -255,18 +256,19 @@ There is **no auto-sync** for par/SI. When scorecard data changes, update manual
 
 ## Course pricing data  sync chain
 
-**The system:** Edit Excel  run script  JSON + readable MD regenerate automatically.
+**The system:** Edit the Google Sheet → run sync from mmg-tools → JSON + readable MD regenerate automatically.
 
-| File | Role | Edit? |
+| File / Source | Role | Edit? |
 |---|---|---|
-| `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_EDIT-THIS.xlsx` | Source of truth for green fees, buggy, clubs |  Edit this |
+| Pricing master Google Sheet (in mmg-tools control panel) | Source of truth for green fees, buggy, clubs, TO rates |  Edit this |
 | `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_DO-NOT-EDIT.json` | Generated JSON master |  Script only |
 | `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_READABLE_DO-NOT-EDIT.md` | Human-readable output |  Script only |
 | `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_MARKET_PRICING_RESEARCH_2026.csv` | Raw research reference | Update when new data arrives |
 
-**After editing the Excel, run:**
+**After editing the Sheet, run from the mmg-tools directory:**
 ```
-python scripts/sync-pricing.py
+.\mmg.ps1 pricing      # regenerates JSON
+.\mmg.ps1 site         # updates website price pills
 ```
 
 For the full pricing visibility map where prices appear on the site, in local tools, and in manual channels, see `docs/content-architecture.md`.
@@ -297,7 +299,7 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 - **Course encyclopaedia:** `MMG_ENCYCLOPAEDIA_DATA_MASTER.md` (root)  All 24 courses, facts, pricing, access rules
 - **Financial:** `Business Operations & Financial/MMG_TAX_CALCULATOR_2026.xlsx` (live tracker) + `MMG_Business_Model.pdf` (pricing model)
 - **Systems & planning:** `Systems & Planning/` (business plan, pricing, checklists)
-- **Contacts & partnerships:** `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` (3 sheets: Golf Courses 24 + Affiliates 39 incl. website/phone/location + China Operators 15)
+- **Course contacts & courtesy:** Courtesy master Google Sheet (Golf Courses tab — 24 courses, contacts, booking info, courtesy terms). Affiliates and China Operators remain in `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx`.
 - **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx` (client tracker: names, dates, courses, revenue, follow-ups)
 - **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
 - **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/` (documentation, Q&A with gestor)
@@ -381,12 +383,152 @@ POST https://script.google.com/macros/s/AKfycbw0RzUzzrXzn3inKcggu0deF05wbL2xGlR1
 
 ## Analytics And SEO Rules
 
-- Treat GA4 and Search Console reports as decision aids, not as content by themselves. Every insight must map to a specific page, query, or event.
+### Canonical Domain — ALWAYS www
+
+**The canonical domain is `https://www.mrmallorcagolf.com`. Never use the non-www version.**
+
+- All internal links, hardcoded URLs, structured data `@id` values, OG `url` tags, canonical tags, sitemap entries, and any new content must reference `www.mrmallorcagolf.com`.
+- The non-www → www 301 redirect is live in `vercel.json`. Do not remove or alter it.
+- `SITE_ORIGIN` in `src/lib/site.js` is `https://www.mrmallorcagolf.com` — use this constant everywhere instead of hardcoding the domain.
+- If you spot any hardcoded `mrmallorcagolf.com` (without www) in code, fix it immediately.
+- In Search Console, always submit/inspect URLs as `https://www.mrmallorcagolf.com/...` — never the non-www version. Accidentally re-indexing both causes months of consolidation delay.
+
+### Technical SEO — What's In Place (June 2026)
+
+- **Sitemap:** `/sitemap.xml` — dynamic, multilingual, all 7 locales. Last-modified dates are hardcoded in `src/app/sitemap.js` — update when content changes.
+- **robots.txt:** `public/robots.txt` — permissive, disallows `/api/`, `/admin/`, PDFs. References sitemap.
+- **RSS feed:** `/feed.xml` — live as of June 2026. Covers all guides (course reviews + articles). Update `GUIDE_DATES` in `src/app/feed.xml/route.js` when new guides are published.
+- **llms.txt:** `public/llms.txt` — AI agent discovery file. Keep updated when major pages or offers change.
+- **No-Vary-Search headers:** All routes ignore UTM parameters for cache purposes. Configured in `next.config.js`.
+- **Structured data:** Person, LocalBusiness, Organization, WebSite, Article, CollectionPage, BreadcrumbList, FAQPage — all in `root-layout-shared.jsx` and page-level components.
+- **RSS alternate link:** Declared in root metadata `alternates.types` — auto-discovered by browsers and feed readers.
+- **hreflang:** Configured via `getAlternates()` in `site.js` for all 7 locales with `x-default`.
+- **OG images:** Dynamic branded images at `/api/og?title=...&badge=...&image=...` (1200×630). Design: course hero photo as background, dark overlay, MMG logo top-left, gold "Course Review" (or custom badge) top-right, white title bottom-left. Falls back to pine gradient if no JPEG/PNG is provided — this should never happen for a live guide with photos. Both course reviews (`buildGuidePostMetadata`) and article guides (`buildGuideArticleMetadata`) generate the OG URL automatically from the guide's `imagePath`.
+- **OG image conversion (automated):** `scripts/convert-og-images.mjs` runs automatically before every build (`"prebuild"` in package.json) and converts all WebP images in `public/images/` to JPEG. satori (ImageResponse) does not support WebP — only JPEG/PNG. No manual action needed: upload WebP → next build auto-converts → OG picks up JPEG. To run without a full build: `npm run convert-og-images`.
+- **OG photo guidelines:** Use **landscape** photos for best results — the OG frame is 2:1 wide, so portrait shots get cropped. Wide fairway, green, or clubhouse shots work best. The overlay darkens the top and bottom thirds, so keep the key visual content in the middle band of the image. For course reviews, the `imagePath` in the guide content object controls which photo is used as the OG background.
+- **OG placeholder for draft courses:** All 24 course thumbnail photos already exist at `/images/courses/{course-name}.jpg`. If a draft guide needs a temporary OG before the blog photos are uploaded, use `imagePath: '/images/courses/son-vida.jpg'` (swap for the correct course). Switch to the proper blog hero photo once uploaded.
+- **To preview any OG image:** `http://localhost:3000/api/og?title=YOUR+TITLE&badge=Course+Review&image=%2Fimages%2Fcourses%2Fson-vida.jpg` — swap values as needed. On production: same URL with `https://www.mrmallorcagolf.com`.
+- **IndexNow:** Key file at `/8165a51f1761605d62f207e8043a2027.txt`. Vercel cron runs `GET /api/cron/indexnow` daily at 06:00 UTC to ping Bing/IndexNow with all guide URLs. Manual trigger also available via `npm run indexnow`. Add new guide URLs to both `scripts/indexnow-ping.mjs` and `src/app/api/cron/indexnow/route.js` when publishing new guides.
+
+### Meta Descriptions — CTR Approach
+
+Low CTR on high-impression pages is the primary SEO lever right now. Rules for writing descriptions:
+
+- **Lead with the specific number or fact** the searcher is looking for (price, award, distance).
+- **Answer the real question** — not "honest review" but "is it worth the price", "who should book it".
+- **Stay under 155 characters.**
+- Avoid filler endings like "Honest PGA verdict inside", "find out more", "read now".
+- Use double quotes for strings that contain apostrophes (`'`) — the SWC compiler treats curly apostrophes (`'` U+2019) as string terminators in single-quoted JS strings.
+
+**Key pages and their current descriptions (updated June 2026):**
+
+| Page | Impressions (90d) | CTR before | Description now leads with |
+|------|------------------|------------|---------------------------|
+| Son Gual review | 864 | 0.5% | `€110–€165 + handicap certificate required` |
+| Son Muntaner review | 586 | 0.7% | `Spain's Best Golf Course 2025` |
+| Golf Cost Mallorca | 671 | 0.5% | Named course prices (Pollensa/Son Gual/Son Muntaner) |
+| Best Golf Courses | 1,815 | 1.2% | (current — monitor) |
+
+### Analytics Workflow
+
+- Treat GA4 and Search Console reports as decision aids, not content by themselves. Every insight must map to a specific page, query, or event.
 - When a report surfaces a problem, translate it into a page-level action: title/meta, intro, internal links, trust copy, or enquiry path.
 - Do not guess that a feature or file is missing. Check the source first, especially for items like `llms.txt`, figure captions, or localized content parity.
 - For SEO or CRO work, only ship changes that clearly improve CTR, enquiry conversion, trust, course-choice clarity, or premium positioning.
+- GA4 property ID: `G-0Z2BRNWB4N`. GA4 is excluded on `/zh` routes (Chinese compliance).
 - For China-facing copy, pull proof from existing verified sources first (`about-content.js`, `contact-content.js`, `homepage-content.js`) and reuse the real Shanghai, Mandarin, Douyin, and WeChat details already in the repo.
 - Chinese pages do not need to be literal translations of English pages. Localize them for the Chinese audience and business goal, while keeping factual claims consistent with the verified source material.
+
+## Publishing a New Course Guide — End-to-End Checklist
+
+Follow this every time Andy has played a new course and is ready to publish.
+
+### Step 1 — Photos
+- Upload all course photos as WebP to `/public/images/{course}-blog/` (e.g. `son-gual-blog/`)
+- Pick the **hero photo** for the OG image: landscape orientation, wide fairway/green/clubhouse shot, nothing critical near the edges
+- Name it clearly (e.g. `cb-hero.webp`, `cb-1.webp`, `cb-2.webp` etc.)
+- The next `npm run build` auto-converts all WebP to JPEG — no manual step needed
+
+### Step 2 — Guide content in `guide-post-content.js`
+- Add the course entry following the existing pattern
+- Set `imagePath` to the WebP hero path (e.g. `'/images/capdepera-blog/cb-hero.webp'`) — the OG system converts `.webp` → `.jpg` automatically
+- Fill in all required facts (see "Required facts" section below)
+- Add a `Common Questions` heading + paragraph block covering handicap, buggy, walking, daily licence, singles, and the "surprise detail"
+
+### Step 3 — Metadata & routing
+- Confirm `slug` matches the folder name in `src/app/(en)/guides/{slug}/page.jsx`
+- Create the `page.jsx` file for the new guide (copy an existing one, update the slug)
+- Add the slug to `ARTICLE_SLUGS` in `site.js` if it is an article guide (not needed for course reviews)
+
+### Step 4 — Sitemap & IndexNow
+- Add the new guide URL to `src/app/sitemap.js` with today's date
+- Add the URL to `scripts/indexnow-ping.mjs` and `src/app/api/cron/indexnow/route.js`
+
+### Step 5 — Verify OG image before deploying
+- Run `npm run dev` and open: `http://localhost:3000/api/og?title=YOUR+TITLE&badge=Course+Review&image=%2Fimages%2F{course}-blog%2F{hero}.jpg`
+- Confirm: course photo fills the frame (not the fallback pine gradient), logo visible top-left, badge top-right, title readable
+- If the gradient shows instead of the photo, the JPEG conversion hasn't run yet — run `npm run convert-og-images` then retry
+
+### Step 6 — Deploy
+- `npm run build` (runs prebuild WebP→JPEG conversion automatically, then builds)
+- Push to GitHub → Vercel deploys
+
+---
+
+## Course Guide Content Standards
+
+Every course review guide should cover all of the following. If any item is missing, ask Andy before publishing — these are the long-tail ranking signals and the questions real visitors have before booking.
+
+### Required facts for every course guide
+
+**Pricing & access**
+- Green fee range (peak / low season) with year
+- Handicap limit — men and women separately
+- Is a valid WHS/EGA handicap certificate required at booking?
+- Daily Spanish Golf Federation licence — does it apply? (€3 for non-federated players)
+
+**Practicalities**
+- Drive time from Palma (minutes, not km)
+- Walking: permitted all day / only after Xpm / not permitted?
+- Buggy: mandatory before Xpm / optional / included in green fee from [month] to [month]
+- Can single players book, or groups only? (and will singles be paired up?)
+- Dress code: any notable strictness vs. typical island standard?
+
+**On-course details**
+- Handicap difficulty level this course genuinely suits (beginner / mid / better golfer)
+- Wind exposure — which holes / which time of day is worst
+- One "surprise" detail most first-timers do not expect (visual, layout, hazard)
+- Signature hole or standout hole and why
+- Any confusion point (blind tee shot, confusing signage, route that catches visitors off guard)
+
+**Facilities**
+- Restaurant/terrace: worth staying for lunch? Views? Rough cost?
+- Practice facilities: grass range / Toptracer / putting green / short game area
+- Club hire options and pricing
+
+### Course-specific known facts (verified by Andy, June 2026)
+
+| Course | Handicap limit | Buggy | Walking | Daily licence | Singles |
+|--------|---------------|-------|---------|---------------|---------|
+| Son Gual | 33M / 35L | €45, optional | Yes | €3 | Yes (may be paired) |
+| Son Muntaner | 36M / 36L | Included Mar–late Nov | Yes | €3 | — |
+| Golf de Andratx | 28M / 36L | Mandatory before 2pm | After 2pm only | €3 | — |
+| T Golf Calvià | 28M / 34L | Recommended, optional | Yes | €3 | — |
+| Alcanada | — | — | — | — | — |
+| Santa Ponsa 1 | — | — | — | — | — |
+| Son Termes | — | — | — | — | — |
+| Son Antem West | — | — | — | — | — |
+
+Fill in blanks when verified. Never guess or copy from external sites without checking.
+
+### FAQ sections to add when expanding existing guides
+
+When lengthening a guide, add a `{ type: 'heading', text: 'Common Questions' }` block followed by one or two `{ type: 'paragraph', ... }` blocks covering:
+1. Handicap limit and certificate requirement
+2. Walking vs. buggy options
+3. Who the course suits best (level of golfer)
+4. One thing that surprises first-time visitors
+5. Any local knowledge tip (first tee, wind timing, post-round lunch)
 
 ## Prototype Image Reference
 

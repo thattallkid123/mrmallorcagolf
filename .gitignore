@@ -1,6 +1,11 @@
 # Large temp files — never commit
 b64imgs.txt
 *.py
+*.log
+*.tmp
+*.err.log
+*.out.log
+~$*
 
 # GitHub token (never commit)
 .github-token
