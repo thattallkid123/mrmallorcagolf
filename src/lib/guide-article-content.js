@@ -887,6 +887,105 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
     ],
   },
+  'play-with-a-pro-explained': {
+    metadata: {
+      title: 'What "Play with a Pro" Actually Looks Like | Mr Mallorca Golf',
+      description:
+        'A PGA pro joins your group for a full round — reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like.',
+      canonical: 'https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained',
+      image: 'https://www.mrmallorcagolf.com/images/pwap-hero-mandarin.jpg',
+      imageAlt: 'Andy Griffiths PGA pro with a client during a Play with a Pro day in Mallorca',
+    },
+    meta: {
+      badge: 'The Experience',
+      badgeGold: false,
+      readTime: '5 min read',
+      updated: 'June 2026',
+      title: 'What "Play with a Pro" Actually Looks Like',
+      intro:
+        'A full day on course with a PGA professional. What happens, what changes, and what people take home that they did not expect.',
+      related: [
+        { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+        { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
+        { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca' },
+      ],
+    },
+    blocks: [
+      {
+        type: 'paragraph',
+        text: 'Playing alone, you can miss what is actually happening. A shot that felt solid but came off the club slightly different. A decision that worked out but was based on incomplete information. A habit built over weeks that you do not see because you are inside it. When a PGA professional is there, those things become visible.',
+      },
+      {
+        type: 'image',
+        src: '/images/client-alcanada.webp',
+        alt: 'Andy with a client at Alcanada during a Play with a Pro day',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        caption: 'A Play with a Pro day at Club de Golf Alcanada',
+      },
+      { type: 'heading', text: 'Why Play with a Pro' },
+      {
+        type: 'paragraph',
+        text: 'A lot of coaching is about swing positions and mechanics. This day is different. It is about the low-hanging fruit — what is the one thing in your shot selection or course management that, if it changes, makes the biggest difference. Practice types that actually work for how you learn. Questions about your own game that a practice range cannot answer. Not a full overhaul. Just the clarity to know what to work on and how.',
+      },
+      {
+        type: 'pull',
+        text: '"After just 18 holes together, I\'ve discovered a new ceiling to my potential."',
+        attribution: 'Jo',
+      },
+      { type: 'heading', text: 'Before the Day' },
+      {
+        type: 'paragraph',
+        text: 'The most common concern before a day like this: what if I play badly, what if I have not played for a long time. A day like this is not measured against your handicap or your best round. It is measured against what changes in how you see the game. Adam played since he was five, figured he had the fundamentals down. One day on course shifted his whole approach to shot selection. Jo had not played in years. The day opened something up for him that a week at a practice range could not.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Before the first tee, we sit down and talk. Your game, what you have been working on, what has been frustrating you, what a good day looks like from where you are standing. This conversation shapes everything that happens next. It is not a questionnaire. It is how I understand what you actually need.',
+      },
+      { type: 'heading', text: 'During the Round' },
+      {
+        type: 'paragraph',
+        text: 'The course is chosen to match your game. A proper test, but not unfair. Wind, conditions, narrow fairways, water: the decisions you make change with what is in front of you, and getting them right or wrong matters. On a range, a tip about club selection or alignment is abstract. On course, when the wind is pushing and the score is real, the same information becomes concrete. You feel it. That difference is what makes things stick.',
+      },
+      {
+        type: 'paragraph',
+        text: 'The coaching arrives at the right moment. On the tee into the wind where the decision is contested. On the approach where club selection changes the hole. On the putt where reading the break from the right side makes one more shot possible. Not a running commentary. Just the observation that changes the hole.',
+      },
+      {
+        type: 'pull',
+        text: '"The insight into what calculations go into each shot has helped me improve my decision making immensely."',
+        attribution: 'Finlay',
+      },
+      {
+        type: 'image',
+        src: '/images/client-group-alcanada.webp',
+        alt: 'Group golf day with sea views at Alcanada',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        caption: 'Group Play with a Pro days — 2 to 3 golfers',
+      },
+      { type: 'heading', text: 'At Lunch' },
+      {
+        type: 'paragraph',
+        text: 'Lunch is unhurried. We talk through the round. What clicked, what did not, what to take home. Most people realise something shifts in how they see the game. Not a list of fixes to work on. Something closer to clearer decisions, less noise about the shot, a better sense of what you are actually capable of. The day does not end with a handshake at the 18th. It ends when you are done talking.',
+      },
+      { type: 'heading', text: 'What\'s Included' },
+      {
+        type: 'facts',
+        items: [
+          ['Format', '18 holes, full day'],
+          ['Course selection', 'Matched to your game and handicap'],
+          ['What\'s included', 'Course, tee time, coaching, strategy'],
+          ['Duration', 'Typically 5–6 hours'],
+          ['Day rate', '€695 solo · €495 per person for 2–3 golfers (course fee and lunch additional)'],
+        ],
+      },
+      {
+        type: 'cta',
+        text: 'Ready to book a Play with a Pro day in Mallorca?',
+        linkLabel: 'See pricing and availability →',
+        href: '/play-with-a-pro',
+      },
+    ],
+  },
 }
 
 const GUIDE_ARTICLE_LOCALES = ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']
