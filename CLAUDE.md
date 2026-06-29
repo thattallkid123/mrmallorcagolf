@@ -1,4 +1,6 @@
-# Mr Mallorca Golf - Claude Session Context
+# Mr Mallorca Golf — Website Repo (mrmallorcagolf-real)
+
+> **Scope:** This is the **website and code repo only** (`mrmallorcagolf-real`). For internal tooling, control panel, pricing sync scripts, and standalone apps, switch to `mmg-tools/` — it has its own CLAUDE.md.
 
 ---
 
