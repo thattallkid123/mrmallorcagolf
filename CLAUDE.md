@@ -134,6 +134,18 @@ MMG_Invoice_YYYY-MM-DD_INV-YYYY-###_ClientName.pdf
 
 Examples: `MMG_Gift_Voucher_2026-06-22_Gero.pdf`, `MMG_Itinerary_2026-05-01_Philipp.pdf`, `MMG_Proposal_2026-05-01_Philipp_Internal.pdf`, `MMG_Booking_Terms_2026-09.docx`. PWAP review folders use `YYYY-MM-DD_Client`; PDFs use `MMG_Player_Review_YYYY-MM-DD_Client.pdf`. Partnership contracts use `MMG_Partnership_Partner_Name_v2.docx`. Templates keep `Template` at the end, e.g. `MMG_Gift_Voucher_Template.pptx`.
 
+## Repo Hygiene Rules
+
+**Outputs are ephemeral.** Logs, screenshots, Lighthouse reports, and visual audits go to `outputs/` (gitignored). Delete `outputs/` contents after a task is done — never move these to `docs/` or anywhere tracked.
+
+**No Drive duplicates in `docs/`.** If a doc lives in Google Drive, note the Drive path in `docs/README.md` rather than keeping a copy here. Copies drift and go stale.
+
+**Session notes go straight to `docs/archive/`.** Checklists, handover prompts, session summaries, and `*_JUNE_*`-style files belong in `docs/archive/` immediately. `docs/` root is for live reference only.
+
+**Sensitive data never in the repo.** Course contacts, courtesy terms, TO rates, emails, and phone numbers stay in `Private/Workbooks/` on Drive. The repo reads from generated JSON (gitignored). If AI help is needed for a specific contact, share just that row in chat.
+
+---
+
 ## File Hygiene Rule
 
 **Planning/working documents:**
@@ -191,8 +203,7 @@ Steps in order — do not skip, do not report done early:
 
 **For operations & monitoring:**
 1. `MMG Analytics Dashboard.gsheet` (Google Drive / Systems & Planning/)  Live GA4/Search Console monitoring dashboard
-2. `MMG_CONTROL_PANEL_INTEGRATED.md` (repo root)  Systems architecture, workflows, weekly/monthly checklists
-3. `MMG_MASTER_CONTROL_CENTER.md` (Google Drive root)  Business operations & financial tracking
+2. `MMG_MASTER_CONTROL_CENTER.md` (Google Drive root)  Business operations & financial tracking
 
 **For AI coaching / strategic context:**
 - `MMG_BUSINESS_BRIEF.md` (Google Drive root)  Complete business context doc — drop into AI projects alongside any OS file. Covers brand, pricing, clients, partners, China strategy, Yina's role, ideas pipeline. Refresh monthly.
@@ -223,8 +234,6 @@ Current state:
 - Course Selector sends `selector_answers`, `selector_shortlist`, and `selector_shortlist_names` to MailerLite.
 - MailerLite `Email 1 - Shortlist` uses the proper `selector_shortlist_names` variable; raw placeholder text no longer appears in preview.
 - Course images remain on website result cards only, not in emails. Keep emails light unless there is a clear reason to add images later.
-- The detailed handover/audit lives at `C:\Users\andyg\Downloads\mrmallorcagolf-lead-magnets-CTA-and-mailing-list-handover-june-2026.md`.
-
 Next newsletter step:
 - Do not build a heavy newsletter programme yet. The system is now mainly waiting for real subscribers.
 - When there is enough list activity, start with a light monthly "Mallorca golf planning notes" email: one course note, one planning tip, one course worth considering, and a soft reply CTA.
@@ -237,20 +246,17 @@ Next newsletter step:
 - `docs/LOCALE_PARITY_CHECKLIST.md`  6-language structure consistency
 - `docs/CONTENT_STRUCTURE.md`  Which file controls what (critical)
 - `docs/CODEBASE_IMPROVEMENTS.md`  Infrastructure, validation, path aliases
-- `POWERSHELL_SYNTAX_REMINDER.md`  PowerShell doesn't support `&&`
+- Note: PowerShell doesn't support `&&` — always use separate lines or `;`
 
 ## Course scorecard data (par / SI / distances)
 
 **Source of truth:** `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\Scorecards\Scorecard PDFs\`  official club PDFs for all 24 courses.  
 **Human-readable master:** `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\SCORECARD_MASTER.md`  read this before touching any par/SI data.  
-**Repo scorecard Excel:** `MMG_Scorecards.xlsx` in repo root  par/SI per hole, PDF-verified.
-
 There is **no auto-sync** for par/SI. When scorecard data changes, update manually:
 1. PDF in `Reference/Scorecards/Scorecard PDFs/`
 2. `Reference/SCORECARD_MASTER.md` (in Drive)
-3. `MMG_Scorecards.xlsx` (in repo)
-4. `src/lib/golf-courses-data.js`  par value in `pills` text only
-5. Any blog post content mentioning that course's par
+3. `src/lib/golf-courses-data.js`  par value in `pills` text only
+4. Any blog post content mentioning that course's par
 
 **Note:** Official scorecard PDFs live in `Reference/Scorecards/Scorecard PDFs/`. Individual course folders in `Courses/` link to or sync these for easy access during content creation.
 
@@ -309,7 +315,6 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 - **Tasks:** Google Tasks (synced to control panel)  see Task Management section below
 
 **Repo (code & development only):**
-- **Operations:** `MMG_CONTROL_PANEL_INTEGRATED.md` (systems architecture + GA4 workflow + weekly/monthly checklists)
 - **Branch rules:** `BRANCHES.md`
 - **Content workflow:** `CONTENT_WORKFLOW.md`
 - **Course review pipeline:** `COURSE_BLOG_PIPELINE.md`
@@ -607,12 +612,6 @@ For shared guide content, update both `main` and `itinerary-preview` unless Andy
 - Do not invent image captions.
 - Do not assume analytics, `llms.txt`, or caption gaps without checking the source file first.
 - Do not change testimonials unless Andy explicitly asks.
-
----
-
-##  Repository Cleanup
-
-See `REPO_CLEANUP_CHECKLIST.txt` in repo root for old file removal tasks.
 
 ---
 
