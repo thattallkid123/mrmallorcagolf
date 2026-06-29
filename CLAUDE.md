@@ -74,67 +74,11 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 ---
 
-## File Access Rule (IMPORTANT)
+## File Organization Principle
 
-**If I need access to a folder, I will ask you to mount it via Cowork.**
+**Repository = website code only.** No business/operational/financial/partnership/content-drafting docs. No contact files (those belong in `Drive/Private/Workbooks/`).
 
-Rather than working around missing access or assuming a folder isn't available, I will ask directly. You can always say no, but mounting is better than creating workarounds that complicate the workflow.
-
-**Example:** "I need access to C:\Users\andyg\Downloads  can you mount it?"
-
-Common folders to mount: Downloads, Documents, specific project folders.
-
-**This keeps the workflow simple and transparent.**
-
----
-
-## File Organization Principle (FINAL  ENFORCED)
-
-**This has been decided. All future work must follow this. Audit completed June 2026.**
-
-### Repository (mrmallorcagolf-real/) = Website Code ONLY
-- Website source code: `src/`, `public/`, `scripts/`, `tests/`
-- Development documentation: `BRANCHES.md`, `CONTENT_WORKFLOW.md`, `COURSE_BLOG_PIPELINE.md`
-- Code configuration: `package.json`, `next.config.js`, build files
-- **NO business/operational/financial/partnership/content-drafting docs**
-- **NO contact files (those belong in Drive/Private/Workbooks/)**
-
-### Google Drive (C:\Users\andyg\My Drive\Mr Mallorca Golf\) = Business + Operations
-
-**Clearly-named folders  no ambiguity about what's inside:**
-
-- **PWAP/**  Post-round coaching feedback (client reviews, feedback templates)
-- **Business Operations & Financial/**  Autonomo setup, accounting (invoices, expenses, bank statements), tax calculator, finance guides
-  - **Tax & Compliance/** - Tax filings, gestor Q&A, quarterly/annual returns, compliance guides (nested here)
-- **Partnerships/**  Contracts, relationships, outreach emails
-- **Bookings/**  Client itineraries, proposals, terms, booking logic
-- **Content/**  Blog drafts, Chinese content, research, SEO strategy, email templates, article guides
-- **Systems & Planning/**  Operational workflows, checklists, control panels, business logic docs, booking rules
-- **Skills/**  Master skill files (source of truth for SKILLS_SYNC.ps1)
-- **Scripts/** - Automation scripts: Python (analytics, trends, scorecard sync) + PowerShell (setup check, skills sync)
-- **Media/**  Photos, carousels, blog images, photo/carousel usage guides, inventory
-- **Brand Assets/** - Logos (all colours), font/colour template, email signature
-- **Reference/**  Scorecard master, pricing research, trip guides, brand guidelines, course prestige docs
-- **Private/**
-  - **Workbooks/**  All contacts (courses, partners, China operators, sensitive data)
-  - **Templates/**  Outreach email templates, booking templates, proposal templates
-- **Archive/**  Historical docs (old projects, superseded versions, handover docs)
-
-### Google Drive Naming Rules
-
-Generated client/admin documents use one date placement:
-
-```text
-MMG_<Document_Type>_YYYY-MM-DD_<Client>[_Qualifier].ext
-```
-
-Invoice PDFs also include the legal invoice number after the date:
-
-```text
-MMG_Invoice_YYYY-MM-DD_INV-YYYY-###_ClientName.pdf
-```
-
-Examples: `MMG_Gift_Voucher_2026-06-22_Gero.pdf`, `MMG_Itinerary_2026-05-01_Philipp.pdf`, `MMG_Proposal_2026-05-01_Philipp_Internal.pdf`, `MMG_Booking_Terms_2026-09.docx`. PWAP review folders use `YYYY-MM-DD_Client`; PDFs use `MMG_Player_Review_YYYY-MM-DD_Client.pdf`. Partnership contracts use `MMG_Partnership_Partner_Name_v2.docx`. Templates keep `Template` at the end, e.g. `MMG_Gift_Voucher_Template.pptx`.
+**Drive structure, naming conventions, and privacy rules** → see `cursor/CLAUDE.md` (workspace file, always loaded).
 
 ## Repo Hygiene Rules
 
