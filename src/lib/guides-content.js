@@ -11,6 +11,17 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'play-with-a-pro-explained',
+        badge: 'The Experience',
+        img: '/images/pwap-hero-mandarin.jpg',
+        imgPosition: 'center 40%',
+        title: 'What "Play with a Pro" Actually Looks Like',
+        intro:
+          'A full day on course with a PGA professional. What happens, what changes, and what people take home that they did not expect.',
+        readTime: '5 min read',
+        keywords: 'Play with a Pro · Full day · On-course coaching',
+      },
+      {
         slug: 'alcanada-review',
         badge: 'Course Review',
         img: '/images/alcanada-card.webp',
@@ -89,17 +100,6 @@ export const GUIDES_CONTENT = {
           'Mountain views above Palma, tighter driving lines than people expect, and one of the most distinctive layouts at this price point on the island.',
         readTime: '5 min read',
         keywords: 'Mountain course - Par 70 - EUR 85-110 - 20 min from Palma',
-      },
-      {
-        slug: 'play-with-a-pro-explained',
-        badge: 'The Experience',
-        img: '/images/pwap-hero-mandarin.jpg',
-        imgPosition: 'center 40%',
-        title: 'What "Play with a Pro" Actually Looks Like',
-        intro:
-          'A full day on course with a PGA professional. What happens, what changes, and what people take home that they did not expect.',
-        readTime: '5 min read',
-        keywords: 'Play with a Pro · Full day · On-course coaching',
       },
       {
         slug: 'best-golf-courses-mallorca',
@@ -192,6 +192,17 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'play-with-a-pro-explained',
+        badge: 'La Experiencia',
+        img: '/images/pwap-hero-mandarin.jpg',
+        imgPosition: 'center 40%',
+        title: 'Cómo es un día completo en el campo con un Profesional PGA',
+        intro:
+          'Un día entero en el campo con un profesional PGA. Qué pasa, qué cambia y qué se llevan los jugadores que no esperaban.',
+        readTime: '5 min read',
+        keywords: 'Día con un pro · Jornada completa · Coaching en campo',
+      },
+      {
         slug: 'alcanada-review',
         badge: 'Análisis del campo',
         title: 'Club de Golf Alcanada - análisis honesto de un Profesional PGA (2026)',
@@ -254,15 +265,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Montaña · Par 72 · EUR 110 aprox. · 20 min desde Palma',
       },
 
-      {
-        slug: 'play-with-a-pro-explained',
-        badge: 'La experiencia',
-        title: 'Un día en Son Gual con un Profesional PGA',
-        intro:
-          'Lo que ocurre realmente cuando pasas un día completo en el mejor campo de Mallorca con un coach que lo juega casi cada semana.',
-        readTime: '5 min',
-        keywords: 'Son Gual · Jugar con un Pro · Experiencia de día completo',
-      },
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guía',
@@ -341,6 +343,17 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'play-with-a-pro-explained',
+        badge: 'Das Erlebnis',
+        img: '/images/pwap-hero-mandarin.jpg',
+        imgPosition: 'center 40%',
+        title: 'Was ein ganzer Golftag mit einem PGA-Profi wirklich bedeutet',
+        intro:
+          'Ein kompletter Tag auf dem Platz mit einem PGA-Profi. Was passiert, was sich verändert und was Golfer mitnehmen, das sie nicht erwartet haben.',
+        readTime: '5 min read',
+        keywords: 'Mit einem Pro spielen · Ganzer Tag · Coaching auf dem Platz',
+      },
+      {
         slug: 'alcanada-review',
         badge: 'Platz-Bewertung',
         title: 'Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals (2026)',
@@ -403,15 +416,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Bergplatz · Par 72 · ca. EUR 110 · 20 Min. von Palma',
       },
 
-      {
-        slug: 'play-with-a-pro-explained',
-        badge: 'Das Erlebnis',
-        title: 'Ein Tag in Son Gual mit einem PGA Professional',
-        intro:
-          'Was wirklich passiert, wenn man einen ganzen Tag auf Mallorcas bestem Platz mit einem Coach verbringt, der ihn fast jede Woche spielt.',
-        readTime: '5 Min.',
-        keywords: 'Son Gual · Mit Profi spielen · Ganztageserlebnis',
-      },
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Ratgeber',
@@ -490,6 +494,17 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'play-with-a-pro-explained',
+        badge: "L'Expérience",
+        img: '/images/pwap-hero-mandarin.jpg',
+        imgPosition: 'center 40%',
+        title: 'À quoi ressemble vraiment une journée avec un professionnel PGA',
+        intro:
+          "Une journée entière sur le parcours avec un professionnel PGA. Ce qui se passe, ce qui change et ce que les golfeurs retiennent sans l'avoir anticipé.",
+        readTime: '5 min read',
+        keywords: 'Journée avec un pro · Journée complète · Coaching sur le parcours',
+      },
+      {
         slug: 'alcanada-review',
         badge: 'Avis parcours',
         title: "Club de Golf Alcanada - avis honnête d'un Professionnel PGA (2026)",
@@ -552,15 +567,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Montagne · Par 72 · env. EUR 110 · 20 min de Palma',
       },
 
-      {
-        slug: 'play-with-a-pro-explained',
-        badge: "L'expérience",
-        title: 'Une journée à Son Gual avec un Professionnel PGA',
-        intro:
-          "Ce qui se passe vraiment quand vous passez une journée entière sur le meilleur parcours de Majorque avec un coach qui le joue presque chaque semaine.",
-        readTime: '5 min',
-        keywords: 'Son Gual · Jouer avec un Pro · Journée complète',
-      },
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guide',
@@ -639,6 +645,17 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'play-with-a-pro-explained',
+        badge: 'De Ervaring',
+        img: '/images/pwap-hero-mandarin.jpg',
+        imgPosition: 'center 40%',
+        title: 'Hoe een volledige golfdag met een PGA-professional er echt uitziet',
+        intro:
+          'Een volledige dag op de baan met een PGA-professional. Wat er gebeurt, wat er verandert en wat golfers meenemen dat ze niet verwacht hadden.',
+        readTime: '5 min read',
+        keywords: 'Spelen met een pro · Volledige dag · Coaching op de baan',
+      },
+      {
         slug: 'alcanada-review',
         badge: 'Baanbeoordeling',
         title: 'Club de Golf Alcanada - eerlijke beoordeling van een PGA Professional (2026)',
@@ -701,15 +718,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Bergbaan · Par 72 · circa EUR 110 · 20 min van Palma',
       },
 
-      {
-        slug: 'play-with-a-pro-explained',
-        badge: 'De ervaring',
-        title: 'Een dag op Son Gual met een PGA Professional',
-        intro:
-          'Wat er werkelijk gebeurt als je een volledige dag doorbrengt op het mooiste parcours van Mallorca met een coach die het bijna elke week speelt.',
-        readTime: '5 min',
-        keywords: 'Son Gual · Spelen met een Pro · Dagervaring',
-      },
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Gids',
@@ -788,6 +796,17 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'play-with-a-pro-explained',
+        badge: 'Upplevelsen',
+        img: '/images/pwap-hero-mandarin.jpg',
+        imgPosition: 'center 40%',
+        title: 'Hur en hel golfdag med en PGA-proffs verkligen ser ut',
+        intro:
+          'En hel dag på banan med en PGA-proffs. Vad som händer, vad som förändras och vad golfare tar med sig hem som de inte förväntade sig.',
+        readTime: '5 min read',
+        keywords: 'Spela med en pro · Heldag · Coaching på banan',
+      },
+      {
         slug: 'alcanada-review',
         badge: 'Banomdöme',
         title: 'Club de Golf Alcanada - ärlig recension av en PGA Professional (2026)',
@@ -850,15 +869,6 @@ export const GUIDES_CONTENT = {
         keywords: 'Bergsbana · Par 72 · cirka EUR 110 · 20 min från Palma',
       },
 
-      {
-        slug: 'play-with-a-pro-explained',
-        badge: 'Upplevelsen',
-        title: 'En dag på Son Gual med en PGA-professionell',
-        intro:
-          'Vad som faktiskt händer när du tillbringar en hel dag på Mallorcas finaste bana med en coach som spelar den nästan varje vecka.',
-        readTime: '5 min',
-        keywords: 'Son Gual · Spela med ett proffs · Heldagsupplevelse',
-      },
       {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guide',
@@ -937,6 +947,17 @@ export const GUIDES_CONTENT = {
     },
     liveGuides: [
       {
+        slug: 'play-with-a-pro-explained',
+        badge: '亲身体验',
+        img: '/images/pwap-hero-mandarin.jpg',
+        imgPosition: 'center 40%',
+        title: '与PGA职业球手共度一天：真实体验全记录',
+        intro:
+          '与PGA职业球手在球场度过完整的一天。会发生什么，带来什么改变，以及球手们带走了什么意想不到的收获。',
+        readTime: '5 min read',
+        keywords: '职业陪打 · 全天体验 · 球场实战指导',
+      },
+      {
         slug: 'alcanada-review',
         badge: '球场评测',
         title: '阿尔卡纳达高尔夫球场 - PGA 职业教练诚实评测（2026）',
@@ -999,15 +1020,6 @@ export const GUIDES_CONTENT = {
         keywords: '山地球场 · 标准杆72 · 约 EUR 110 · 距帕尔马20分钟',
       },
 
-      {
-        slug: 'play-with-a-pro-explained',
-        badge: '亲历体验',
-        title: '与 PGA 职业球手共度 Son Gual 的一天',
-        intro:
-          '当你与一位几乎每周都在马略卡岛最佳球场挥杆的教练共度一整天，究竟会发生什么。',
-        readTime: '5分钟',
-        keywords: 'Son Gual · 与职业球手同场 · 全天体验',
-      },
       {
         slug: 'best-golf-courses-mallorca',
         badge: '指南',
