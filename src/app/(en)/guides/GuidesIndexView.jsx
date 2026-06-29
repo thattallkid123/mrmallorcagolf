@@ -101,8 +101,8 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const pageLayoutLang = pageLang || locale
   const heroActions = HERO_ACTIONS[locale] || HERO_ACTIONS.en
 
-  const reviewGuides = content.liveGuides.filter((g) => g.slug.endsWith('-review') || g.slug === 'play-with-a-pro-explained')
-  const articleGuides = content.liveGuides.filter((g) => !g.slug.endsWith('-review') && g.slug !== 'play-with-a-pro-explained')
+  const reviewGuides = content.liveGuides.filter((g) => g.slug.endsWith('-review'))
+  const articleGuides = content.liveGuides.filter((g) => !g.slug.endsWith('-review'))
 
   return (
     <PageLayout lang={pageLayoutLang} navTransparent={false} showWhatsAppButton={false}>
