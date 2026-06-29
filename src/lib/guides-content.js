@@ -93,13 +93,13 @@ export const GUIDES_CONTENT = {
       {
         slug: 'play-with-a-pro-explained',
         badge: 'The Experience',
-        img: '/images/son-gual-blog/sg-hero.webp',
-        imgPosition: 'center 35%',
-        title: 'A Day at Son Gual with a PGA Professional',
+        img: '/images/pwap-hero-mandarin.jpg',
+        imgPosition: 'center 40%',
+        title: 'What "Play with a Pro" Actually Looks Like',
         intro:
-          "What actually happens when you spend a full day on Mallorca's finest course with a coach who plays it most weeks.",
+          'A full day on course with a PGA professional. What happens, what changes, and what people take home that they did not expect.',
         readTime: '5 min read',
-        keywords: 'Son Gual · Play with a Pro · Full day experience',
+        keywords: 'Play with a Pro · Full day · On-course coaching',
       },
       {
         slug: 'best-golf-courses-mallorca',
