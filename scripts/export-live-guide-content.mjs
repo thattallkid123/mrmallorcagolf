@@ -240,7 +240,7 @@ function main() {
     })),
   ]
 
-  const written = items.map(writeContentFile)
+  const written = items.filter((item) => item.content !== null).map(writeContentFile)
   const manifestLines = [
     'MMG Live Site Content Export Manifest',
     '====================================',
