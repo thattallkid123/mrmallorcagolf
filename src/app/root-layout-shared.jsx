@@ -4,6 +4,7 @@ import Script from 'next/script'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
 import { DEFAULT_SOCIAL_IMAGE, getSocialImage } from '../lib/page-metadata.js'
+import PageViewTracker from '../components/PageViewTracker.jsx'
 import ScrollToTop from './scroll-to-top.jsx'
 
 const jost = Jost({
@@ -305,6 +306,7 @@ export default function SiteRootLayout({ lang, children }) {
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
         <ScrollToTop />
+        <PageViewTracker />
         {children}
       </body>
     </html>

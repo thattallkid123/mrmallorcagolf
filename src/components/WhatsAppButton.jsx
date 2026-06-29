@@ -1,6 +1,6 @@
 'use client'
 import { buildLocalePath } from '../lib/site'
-import { trackEvent } from '../lib/analytics'
+import { currentPagePath, trackEvent, trackLead } from '../lib/analytics'
 
 export default function WhatsAppButton({ lang }) {
   const isChinese = lang === 'zh'
@@ -8,9 +8,14 @@ export default function WhatsAppButton({ lang }) {
   const label = isChinese ? '联系微信' : 'Message on WhatsApp'
 
   function handleClick() {
+    const channel = isChinese ? 'wechat' : 'whatsapp'
     trackEvent('whatsapp_click', {
-      channel: isChinese ? 'wechat' : 'whatsapp',
-      page_path: window.location.pathname,
+      channel,
+      page_path: currentPagePath(),
+    })
+    trackLead('message_intent', {
+      contact_method: channel,
+      page_path: currentPagePath(),
     })
   }
 

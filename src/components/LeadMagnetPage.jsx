@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { currentPagePath, trackEvent, trackLead, trackNewsletterSignup } from '../lib/analytics'
 
 const NEXT_TOOL_BY_GUIDE = {
   'course-comparison': {
@@ -48,6 +49,23 @@ export default function LeadMagnetPage({ guide }) {
       const data = await response.json().catch(() => null)
 
       if (response.ok && data?.success) {
+        trackEvent('lead_magnet_signup', {
+          guide_slug: guide.slug,
+          newsletter_opt_in: subscribeNewsletter,
+          page_path: currentPagePath(),
+        })
+        trackLead('lead_magnet', {
+          guide_slug: guide.slug,
+          newsletter_opt_in: subscribeNewsletter,
+          page_path: currentPagePath(),
+        })
+        if (subscribeNewsletter) {
+          trackNewsletterSignup({
+            form_name: 'lead_magnet',
+            guide_slug: guide.slug,
+            page_path: currentPagePath(),
+          })
+        }
         setStatus('success')
         setEmail('')
         setSubscribeNewsletter(false)
@@ -55,9 +73,17 @@ export default function LeadMagnetPage({ guide }) {
       }
 
       const nextError = data?.error || 'There was a problem. Please try again.'
+      trackEvent('lead_magnet_error', {
+        guide_slug: guide.slug,
+        page_path: currentPagePath(),
+      })
       setStatus('error')
       setErrorMessage(nextError)
     } catch {
+      trackEvent('lead_magnet_error', {
+        guide_slug: guide.slug,
+        page_path: currentPagePath(),
+      })
       setStatus('error')
       setErrorMessage('There was a problem. Please try again.')
     }
