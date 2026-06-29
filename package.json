@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/convert-og-images.mjs",
     "build": "next build",
     "start": "next start",
     "prepare": "node scripts/setup-git-hooks.js",
@@ -34,7 +35,9 @@
     "ops:weekly": "node scripts/site-ops/run-weekly-seo-performance.mjs && node scripts/site-ops/generate-master-priority-report.mjs",
     "ops:monthly": "node scripts/site-ops/run-monthly-technical-audit.mjs && node scripts/site-ops/generate-master-priority-report.mjs",
     "ops:master": "node scripts/site-ops/generate-master-priority-report.mjs",
-    "ops:install-tasks": "powershell -ExecutionPolicy Bypass -File scripts/site-ops/install-windows-scheduled-tasks.ps1"
+    "ops:install-tasks": "powershell -ExecutionPolicy Bypass -File scripts/site-ops/install-windows-scheduled-tasks.ps1",
+    "indexnow": "node scripts/indexnow-ping.mjs",
+    "convert-og-images": "node scripts/convert-og-images.mjs"
   },
   "dependencies": {
     "express": "^5.2.1",

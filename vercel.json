@@ -1,5 +1,8 @@
 {
   "framework": "nextjs",
+  "crons": [
+    { "path": "/api/cron/indexnow", "schedule": "0 6 * * *" }
+  ],
   "redirects": [
     {
       "source": "/coaching",
@@ -44,6 +47,16 @@
     {
       "source": "/golf-courses/alcanada-review",
       "destination": "/guides/alcanada-review",
+      "permanent": true
+    },
+    {
+      "source": "/guides/a-day-at-son-gual",
+      "destination": "/guides/play-with-a-pro-explained",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(de|es|fr|nl|sv|zh)/guides/a-day-at-son-gual",
+      "destination": "/:locale/guides/play-with-a-pro-explained",
       "permanent": true
     },
     {

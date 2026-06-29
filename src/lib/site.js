@@ -45,7 +45,7 @@ export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
 ])
 
 export const ARTICLE_SLUGS = new Set([
-  'a-day-at-son-gual',
+  'play-with-a-pro-explained',
   'best-golf-courses-mallorca',
   'best-time-play-golf-mallorca',
   'golf-club-hire-mallorca',

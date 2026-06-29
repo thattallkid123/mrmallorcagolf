@@ -6,7 +6,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'Mallorca Golf Green Fees 2026 | All 24 Courses, €55–€250',
       description:
-        'Every Mallorca golf course with 2026 green fees: from €55 at Pollensa to €250 at Son Muntaner. Plus club hire, buggy costs, and the best-value rounds on the island.',
+        'Every Mallorca course with 2026 green fees: €55 at Pollensa, €165 at Son Gual, €250 at Son Muntaner. Club hire from €30, buggy from €20, and where to play for under €80.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
@@ -887,14 +887,14 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
     ],
   },
-  'a-day-at-son-gual': {
+  'play-with-a-pro-explained': {
     metadata: {
-      title: 'A Day at Son Gual - What the Play-With-a-Pro Experience Actually Looks Like',
+      title: 'What Is a Play-With-a-Pro Day in Mallorca? Here Is What Actually Happens',
       description:
-        'From the drive up to the last putt to lunch on the terrace - a specific, honest account of what a play-with-a-pro day at Son Gual looks and feels like.',
-      canonical: 'https://www.mrmallorcagolf.com/guides/a-day-at-son-gual',
+        "A PGA pro joins your group for a full round — reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like from arrival to lunch.",
+      canonical: 'https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained',
       image: 'https://www.mrmallorcagolf.com/images/son-gual-blog/sg-hero.webp',
-      imageAlt: 'A Day at Son Gual - What the Play-With-a-Pro Experience Actually Looks Like',
+      imageAlt: 'Play-With-a-Pro day at Son Gual golf course Mallorca with PGA professional Andy Griffiths',
     },
     meta: {
       badge: 'The Experience',
@@ -1178,7 +1178,10 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
       `${SITE_ORIGIN}${buildLocalePath(`/guides/${slug}`, lang)}`,
     ])
   )
-  const imageUrl = content.metadata.image?.replace('https://www.mrmallorcagolf.com', SITE_ORIGIN)
+  const badge = content.meta?.badge || 'Golf Guide'
+  const rawImageUrl = content.metadata.image?.replace('https://www.mrmallorcagolf.com', SITE_ORIGIN) || ''
+  const imagePath = rawImageUrl.replace(SITE_ORIGIN, '').replace(/\.webp$/i, '.jpg')
+  const ogImageUrl = `${SITE_ORIGIN}/api/og?title=${encodeURIComponent(content.metadata.title)}&badge=${encodeURIComponent(badge)}&image=${encodeURIComponent(imagePath)}`
 
   return {
     title: content.metadata.title,
@@ -1200,7 +1203,7 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
       authors: ['Andy Griffiths'],
       images: [
         {
-          url: imageUrl,
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: content.metadata.imageAlt,
@@ -1211,7 +1214,7 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
       card: 'summary_large_image',
       title: content.metadata.title,
       description: content.metadata.description,
-      images: [imageUrl],
+      images: [ogImageUrl],
     },
   }
 }

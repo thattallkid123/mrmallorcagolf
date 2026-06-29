@@ -36,6 +36,9 @@ export const rootMetadata = {
   description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Compare courses, build better itineraries, and add a private Play With A Pro day where it helps.',
   alternates: {
     canonical: '/',
+    types: {
+      'application/rss+xml': `${SITE_ORIGIN}/feed.xml`,
+    },
     languages: Object.fromEntries(
       ALL_LOCALES.map((locale) => [
         locale === 'zh' ? 'zh-Hans' : locale,

@@ -34,7 +34,7 @@ const GUIDE_IMAGES = {
   'golf-andratx-review': { src: '/images/andratx-card.webp', position: 'center 40%' },
   'son-antem-west-review': { src: '/images/courses/son-antem-west.webp', position: 'center 45%' },
   't-golf-calvia-review': { src: '/images/t-golf-calvia-card.webp', position: 'center 40%' },
-  'a-day-at-son-gual': { src: '/images/son-gual-blog/sg-hero.webp', position: 'center 35%' },
+  'play-with-a-pro-explained': { src: '/images/son-gual-blog/sg-hero.webp', position: 'center 35%' },
   'best-golf-courses-mallorca': { src: '/images/blog-best-golf-courses/Son Gual.webp', position: 'center 50%' },
   'is-mallorca-good-for-golf': { src: '/images/blog-is-mallorca-good/Son Gual.jpg', position: 'center 40%' },
   'best-time-play-golf-mallorca': { src: '/images/blog-best-time-play/Son Severa Sunny Golf.jpg', position: 'center 50%' },
@@ -101,8 +101,8 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const pageLayoutLang = pageLang || locale
   const heroActions = HERO_ACTIONS[locale] || HERO_ACTIONS.en
 
-  const reviewGuides = content.liveGuides.filter((g) => g.slug.endsWith('-review') || g.slug === 'a-day-at-son-gual')
-  const articleGuides = content.liveGuides.filter((g) => !g.slug.endsWith('-review') && g.slug !== 'a-day-at-son-gual')
+  const reviewGuides = content.liveGuides.filter((g) => g.slug.endsWith('-review') || g.slug === 'play-with-a-pro-explained')
+  const articleGuides = content.liveGuides.filter((g) => !g.slug.endsWith('-review') && g.slug !== 'play-with-a-pro-explained')
 
   return (
     <PageLayout lang={pageLayoutLang} navTransparent={false} showWhatsAppButton={false}>

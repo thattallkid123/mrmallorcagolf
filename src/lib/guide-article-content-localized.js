@@ -2207,7 +2207,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       ],
     },
   },
-  'a-day-at-son-gual': {
+  'play-with-a-pro-explained': {
     de: {
       metadata: {
         title: 'Ein Tag in Son Gual: wie das Erlebnis wirklich aussieht',
@@ -6992,7 +6992,7 @@ export function getLocalizedGuideArticleContent(slug, locale) {
     }
   }
 
-  if (slug === 'a-day-at-son-gual') {
+  if (slug === 'play-with-a-pro-explained') {
     return patchADayAtSonGualContent(locale, content)
   }
 

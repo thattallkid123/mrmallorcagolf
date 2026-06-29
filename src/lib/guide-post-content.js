@@ -5,12 +5,9 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: "Son Gual Golf Mallorca: Honest 2026 Review",
-        description:
-          "Son Gual reviews are consistently strong. And earned. Green fees €110–€165, par 72, handicap required. My honest PGA verdict: conditions, difficulty, ideal player profile, and whether it is worth it.",
         title: 'Son Gual Golf Mallorca Review (2026) | Is It Worth It? Green Fees, Wind & Verdict',
         description:
-          'Thinking about playing Son Gual in Mallorca? Honest 2026 PGA review with green fees, course conditions, wind notes, handicap requirement, and whether it is worth booking.',
+          "Son Gual charges €110–€165 and requires a handicap certificate. PGA review: course conditions, wind notes, and a straight answer on who should — and shouldn't — book it.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
       },
       meta: {
@@ -24,8 +21,8 @@ export const GUIDE_POST_CONTENT = {
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
+          { slug: 'golf-andratx-review', title: 'Golf de Andratx - Honest Review 2026' },
           { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
-          { slug: 'best-time-play-golf-mallorca', title: 'Best Time of Year to Play Golf in Mallorca' },
         ],
       },
       blocks: [
@@ -152,7 +149,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Club hire at the pro shop: Callaway €35, Titleist €45 per round. Buggy €45, electric trolley from €15. A valid WHS handicap certificate is required to book.',
+            "Club hire at the pro shop: Callaway €35, Titleist €45 per round. Buggy €45, electric trolley from €15. Handicap limit: 33 for men, 35 for ladies — a valid WHS certificate is required at booking. Walking is permitted. A €3 daily Spanish Golf Federation licence is payable at check-in.",
         },
         {
           type: 'notes',
@@ -163,6 +160,11 @@ export const GUIDE_POST_CONTENT = {
             ['Where visitors miss', 'Most dropped shots come from getting slightly out of position off the tee, then short-siding yourself around those raised greens. The bunkers are exactly where indecision sends the ball.'],
             ['Clubhouse tip', 'Do not rush away afterwards. The terrace and the Bay of Palma view are part of the reason this place feels premium from start to finish.'],
           ],
+        },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: "Can single players book? Yes — solo bookings are accepted, though during peak season you are likely to be paired with others on the day. What surprises most first-timers? The lighthouse is visible from a large number of holes. Visitors do not expect that view to carry through the round the way it does — it becomes a recurring landmark rather than a one-hole moment.",
         },
         { type: 'heading', text: 'Verdict' },
         {
@@ -197,8 +199,8 @@ export const GUIDE_POST_CONTENT = {
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
-          { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
-          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+          { slug: 'son-muntaner-review', title: 'Son Muntaner Golf - Honest Review 2026' },
+          { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Honest Review 2026' },
         ],
       },
       blocks: [
@@ -339,13 +341,10 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Mallorca: Honest 2026 Review",
+        title: "Son Muntaner Golf Review 2026 | Spain's Best Course, €125–€250, Buggy Included",
         description:
-          "Son Muntaner golf club reviews back Spain's Best Course 2025. Is it right for your group? Green fees €125–€250, buggy included, 5 mins from Palma. Honest PGA verdict inside.",
-        title: 'Son Muntaner Golf Mallorca Review (2026) | Green Fees, Buggy & Verdict',
-        description:
-          "Son Muntaner review from a PGA professional: Spain's Best Course 2025, green fees, buggy included, course conditions, and whether it is the right Mallorca round for your group.",
-        imagePath: '/images/son-muntaner-blog/sm-8.webp',
+          "Spain's Best Golf Course 2025. Green fees €125–€250 with buggy included, 5 minutes from Palma. PGA review: conditions, who it suits, and whether the premium is worth paying.",
+        imagePath: '/images/son-muntaner-blog/sm-4.webp',
       },
       meta: {
         badge: 'Course Review',
@@ -357,8 +356,8 @@ export const GUIDE_POST_CONTENT = {
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
+          { slug: 'golf-andratx-review', title: 'Golf de Andratx - Honest Review 2026' },
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
-          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
         ],
       },
       blocks: [
@@ -400,7 +399,9 @@ export const GUIDE_POST_CONTENT = {
         { type: 'paragraph', text: "Not an afterthought. The food matches the standard of the course. Worth staying for after the round rather than heading straight back to Palma." },
         { type: 'facts', items: [['Peak €250 / Low €125', '2026 price guide'], ['7/10', 'Difficulty'], ['Par 72', 'Championship layout'], ['Included', 'Buggy in green fee']] },
         { type: 'heading', text: '2026 Green Fees' },
-        { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €250 for 18 holes, with the lowest widely seen later-day rate around €125. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap certificate required." },
+        { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €250 for 18 holes, with the lowest widely seen later-day rate around €125. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap limit is 36 for both men and women. Buggy is included in the green fee from March through late November. A €3 daily Spanish Golf Federation licence is payable at check-in." },
+        { type: 'heading', text: 'Common Questions' },
+        { type: 'paragraph', text: "First time on this course? Walk to the front of the first tee box and take a proper look before you play. The driving range sits just out of sight to the right and is easy to drift toward from the tee if you have not seen the full picture. Most visitors who go right on the opening hole have simply not had a clear view of where they are going." },
         { type: 'paragraph', text: "Son Muntaner is part of the Arabella Golf Mallorca group alongside Son Vida and Son Quint. All three courses are accessible from the same resort complex." },
         {
           type: 'notes',
@@ -437,8 +438,8 @@ export const GUIDE_POST_CONTENT = {
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
-          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
-          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+          { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Honest Review 2026' },
+          { slug: 'golf-andratx-review', title: 'Golf de Andratx - Honest Review 2026' },
         ],
       },
       blocks: [
@@ -561,9 +562,9 @@ export const GUIDE_POST_CONTENT = {
           'We started on the 3rd, the robots were cutting the Green Monster, and by hole 8 we were looking down over the whole southwest of Mallorca. A 7.5 out of 10 and worth the drive.',
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
-          { slug: 'alcanada-review', title: 'Alcanada Golf: Honest Review 2026' },
+          { slug: 'santa-ponsa-1-review', title: 'Santa Ponsa 1 - Honest Review 2026' },
+          { slug: 'son-termes-review', title: 'Son Termes Golf - Honest Review 2026' },
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
-          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
         ],
       },
       blocks: [
@@ -680,7 +681,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Green fee in May 2026 was around €125 per person. Buggies are mandatory before 2pm and are charged separately. Golf insurance of €3 is required at check-in. Yellow tees are the right choice for most visiting golfers. The course is in the southwest of the island, around 20 minutes from Palma depending on where you are staying. Andratx town itself is just a few minutes away.',
+          text: "Green fee in May 2026 was around €125 per person. Buggies are mandatory before 2pm and are charged separately — walking is allowed from 2pm onwards. Golf insurance of €3 is required at check-in. Yellow tees are the right choice for most visiting golfers. The course is in the southwest of the island, around 30 minutes from Palma. Andratx town itself is just a few minutes away. Despite spending almost the entire round high in the mountains, the sea view over Camp de Mar is visible only from hole 2 — a detail worth knowing before you build expectations around the water view.",
         },
         {
           type: 'paragraph',
@@ -731,7 +732,7 @@ export const GUIDE_POST_CONTENT = {
           'Twenty minutes from Palma, up in the Na Burguesa mountains. More character than most courses at this price level, and better views than anywhere else close to the city.',
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
-          { slug: 'alcanada-review', title: 'Alcanada Golf: Honest Review 2026' },
+          { slug: 'golf-andratx-review', title: 'Golf de Andratx - Honest Review 2026' },
           { slug: 'son-muntaner-review', title: 'Son Muntaner: Best Golf Course in Spain 2025' },
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
         ],
@@ -898,8 +899,8 @@ export const GUIDE_POST_CONTENT = {
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
           { slug: 'son-muntaner-review', title: 'Son Muntaner Golf: Honest Review 2026' },
-          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
-          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+          { slug: 'santa-ponsa-1-review', title: 'Santa Ponsa 1 - Honest Review 2026' },
+          { slug: 'son-antem-west-review', title: 'Son Antem West - Honest Review 2026' },
         ],
       },
       blocks: [
@@ -1023,6 +1024,11 @@ export const GUIDE_POST_CONTENT = {
           type: 'paragraph',
           text: 'One thing to note: signage around restricted buggy areas could be clearer. A couple of times I ended up somewhere that was not obviously marked as off limits and had to reverse back out. Not a problem once you know the course.',
         },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: "Handicap limit: 28 for men, 34 for ladies. Walking is possible here, though with the distance and wind exposure a buggy is the more comfortable choice for most. The 15 lakes are not background scenery — they line fairways and force carries on multiple holes. The raised greens and quick fringe areas make approach play the main challenge; this is a course that suits the better golfer rather than someone new to the island.",
+        },
         {
           type: 'image',
           src: '/images/t-golf-calvia-blog/t-golf-calvia-2.webp',
@@ -1080,9 +1086,9 @@ export const GUIDE_POST_CONTENT = {
         intro: 'A resort course 15-20 minutes from Palma. Good conditioning, open countryside, and a layout that suits a wide range of players.',
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+          { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Honest Review 2026' },
+          { slug: 'santa-ponsa-1-review', title: 'Santa Ponsa 1 - Honest Review 2026' },
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
-          { slug: 'alcanada-review', title: 'Alcanada Golf: Honest Review 2026' },
-          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
         ],
       },
       blocks: [

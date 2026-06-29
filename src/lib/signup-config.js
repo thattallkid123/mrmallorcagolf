@@ -27,7 +27,7 @@ export const LEAD_MAGNETS = {
       'What extras actually cost on the day',
       'Where to find the best value rounds',
     ],
-    downloadUrl: 'https://mrmallorcagolf.com/downloads/cost-guide.pdf',
+    downloadUrl: 'https://www.mrmallorcagolf.com/downloads/cost-guide.pdf',
     buttonLabel: 'Send me the breakdown',
     metaTitle: 'Mallorca Golf Cost Breakdown 2026 - Free Guide',
     metaDescription:
@@ -44,7 +44,7 @@ export const LEAD_MAGNETS = {
       'Drive times and logistics between courses',
       'Local tips from a PGA pro based on the island',
     ],
-    downloadUrl: 'https://mrmallorcagolf.com/downloads/trip-planner.pdf',
+    downloadUrl: 'https://www.mrmallorcagolf.com/downloads/trip-planner.pdf',
     buttonLabel: 'Send me the itinerary',
     metaTitle: '7-Day Mallorca Golf Itinerary - Free Download',
     metaDescription:
@@ -61,7 +61,7 @@ export const LEAD_MAGNETS = {
       'Local rules, dress codes, and etiquette',
       'How to get the most from your round as a beginner',
     ],
-    downloadUrl: 'https://mrmallorcagolf.com/downloads/beginners-guide.pdf',
+    downloadUrl: 'https://www.mrmallorcagolf.com/downloads/beginners-guide.pdf',
     buttonLabel: 'Send me the guide',
     metaTitle: "Beginner's Guide to Golf in Mallorca - Free Download",
     metaDescription:
@@ -78,7 +78,7 @@ export const LEAD_MAGNETS = {
       'Green fees, difficulty, and best-for at a glance',
       "A PGA pro's honest pick for every type of golfer",
     ],
-    downloadUrl: 'https://mrmallorcagolf.com/downloads/course-comparison.pdf',
+    downloadUrl: 'https://www.mrmallorcagolf.com/downloads/course-comparison.pdf',
     buttonLabel: 'Send me the chart',
     metaTitle: 'Mallorca Golf Course Comparison Chart - Free Download',
     metaDescription:

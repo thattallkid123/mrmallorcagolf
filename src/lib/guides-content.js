@@ -91,7 +91,7 @@ export const GUIDES_CONTENT = {
         keywords: 'Mountain course - Par 70 - EUR 85-110 - 20 min from Palma',
       },
       {
-        slug: 'a-day-at-son-gual',
+        slug: 'play-with-a-pro-explained',
         badge: 'The Experience',
         img: '/images/son-gual-blog/sg-hero.webp',
         imgPosition: 'center 35%',
@@ -255,7 +255,7 @@ export const GUIDES_CONTENT = {
       },
 
       {
-        slug: 'a-day-at-son-gual',
+        slug: 'play-with-a-pro-explained',
         badge: 'La experiencia',
         title: 'Un día en Son Gual con un Profesional PGA',
         intro:
@@ -404,7 +404,7 @@ export const GUIDES_CONTENT = {
       },
 
       {
-        slug: 'a-day-at-son-gual',
+        slug: 'play-with-a-pro-explained',
         badge: 'Das Erlebnis',
         title: 'Ein Tag in Son Gual mit einem PGA Professional',
         intro:
@@ -553,7 +553,7 @@ export const GUIDES_CONTENT = {
       },
 
       {
-        slug: 'a-day-at-son-gual',
+        slug: 'play-with-a-pro-explained',
         badge: "L'expérience",
         title: 'Une journée à Son Gual avec un Professionnel PGA',
         intro:
@@ -702,7 +702,7 @@ export const GUIDES_CONTENT = {
       },
 
       {
-        slug: 'a-day-at-son-gual',
+        slug: 'play-with-a-pro-explained',
         badge: 'De ervaring',
         title: 'Een dag op Son Gual met een PGA Professional',
         intro:
@@ -851,7 +851,7 @@ export const GUIDES_CONTENT = {
       },
 
       {
-        slug: 'a-day-at-son-gual',
+        slug: 'play-with-a-pro-explained',
         badge: 'Upplevelsen',
         title: 'En dag på Son Gual med en PGA-professionell',
         intro:
@@ -1000,7 +1000,7 @@ export const GUIDES_CONTENT = {
       },
 
       {
-        slug: 'a-day-at-son-gual',
+        slug: 'play-with-a-pro-explained',
         badge: '亲历体验',
         title: '与 PGA 职业球手共度 Son Gual 的一天',
         intro:

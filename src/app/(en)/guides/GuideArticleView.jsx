@@ -363,7 +363,7 @@ const ARTICLE_TOOL_PLACEMENTS = {
   'best-golf-courses-mallorca': 'courseSelector',
   'golf-club-hire-mallorca': 'costCalculator',
   'is-mallorca-good-for-golf': 'courseSelector',
-  'a-day-at-son-gual': 'dayBuilder',
+  'play-with-a-pro-explained': 'dayBuilder',
 }
 
 export default function GuideArticleView({ meta, blocks, locale = 'en', children = null }) {

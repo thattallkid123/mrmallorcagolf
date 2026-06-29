@@ -124,7 +124,7 @@ function getPrefix(locale) {
 }
 
 function getADayPath(locale) {
-  return locale === 'en' ? '/a-day' : `/${locale}/guides/a-day-at-son-gual`
+  return locale === 'en' ? '/a-day' : `/${locale}/guides/play-with-a-pro-explained`
 }
 
 export default function Footer({ lang }) {

@@ -461,10 +461,12 @@ export function buildGuidePostMetadata({
   title,
   description,
   imagePath,
+  badge = 'Course Review',
   publishedTime = '2026-03-01',
 }) {
   const pathname = locale === 'en' ? `/guides/${slug}` : `/${locale}/guides/${slug}`
-  const imageUrl = imagePath.startsWith('http') ? imagePath : `${SITE_ORIGIN}${imagePath}`
+  const jpegImagePath = imagePath.replace(/\.webp$/i, '.jpg')
+  const ogImageUrl = `${SITE_ORIGIN}/api/og?title=${encodeURIComponent(title)}&badge=${encodeURIComponent(badge)}&image=${encodeURIComponent(jpegImagePath)}`
 
   const metadata = {
     title,
@@ -480,13 +482,13 @@ export function buildGuidePostMetadata({
       description,
       publishedTime,
       authors: ['Andy Griffiths'],
-      images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [imageUrl],
+      images: [ogImageUrl],
     },
   }
 
