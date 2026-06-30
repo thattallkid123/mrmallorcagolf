@@ -962,10 +962,15 @@ export const GUIDE_ARTICLE_CONTENT = {
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'Group Play with a Pro days — 2 to 3 golfers',
       },
-      { type: 'heading', text: 'At Lunch' },
+      { type: 'heading', text: 'After the Round' },
       {
         type: 'paragraph',
-        text: 'Lunch is unhurried. We talk through the round. What clicked, what did not, what to take home. Most people realise something shifts in how they see the game. Not a list of fixes to work on. Something closer to clearer decisions, less noise about the shot, a better sense of what you are actually capable of. The day does not end with a handshake at the 18th. It ends when you are done talking.',
+        text: 'When the round is done, we take some time to go through what happened. What worked well, what did not, what things to keep working on. This sometimes happens over lunch at the course, sometimes a shorter debrief at the 18th. I will also send you a summary afterwards so you do not forget the detail from the day. You finish with a clear picture, not a long list, just the things that will actually make a difference.',
+      },
+      {
+        type: 'pull',
+        text: '"He gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot."',
+        attribution: 'Synøve',
       },
       { type: 'heading', text: 'What\'s Included' },
       {
