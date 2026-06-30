@@ -147,8 +147,8 @@ export default function PlayWithAProExplainedPage() {
             <em>actually looks like.</em>
           </h1>
           <p className="a-day-hero__lead">
-            What a full day on course actually looks like. How it changes what you see in your game.
-            What people take home that they didn&rsquo;t expect.
+            What a full day on course actually looks like, how it changes what you see in your game,
+            and what people take home that they did not expect.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.5rem' }}>
             <Link href="/play-with-a-pro#packages" className="btn btn--gold">
@@ -212,7 +212,7 @@ export default function PlayWithAProExplainedPage() {
               A day like this isn&rsquo;t measured against your handicap or your best round. It&rsquo;s measured against what changes in how you see the game. Adam played since he was five, figured he had the fundamentals down. One day on course shifted his whole approach to shot selection. Jo hadn&rsquo;t played in years. The day opened something up for him that a week at a practice range could not.
             </p>
             <p className="a-day-section__copy">
-              The score matters less than the questions it provokes. What was the right club there. How would I have played that differently. What do I actually need to work on when I get home. Those are the things that stay.
+              The score matters less than the questions it provokes. What was the right club there. What do I actually need to work on when I get home. Those are the things that stay.
             </p>
             <p className="a-day-section__copy">
               Before we go anywhere near the first tee, we sit down and talk. Your game, what you&rsquo;ve been working on, what&rsquo;s been frustrating you, what a good day looks like from where you&rsquo;re standing. This conversation shapes everything that happens next. It&rsquo;s not a questionnaire. It&rsquo;s how I understand what you actually need.
@@ -255,10 +255,7 @@ export default function PlayWithAProExplainedPage() {
               On a range, a tip about club selection or alignment is abstract. You hear it, you file it, you move to the next shot. On course, when the wind is pushing, the fairway is narrow, and the score is real, the same information becomes concrete. You feel it. That difference is what makes things stick.
             </p>
             <p className="a-day-section__copy">
-              The coaching arrives at the right moment. On the tee into the wind where the decision is contested. On the approach where club selection changes the hole. On the putt where reading the break from the right side makes one more shot possible. Not a running commentary. Just the observation that changes the hole.
-            </p>
-            <p className="a-day-section__copy">
-              Finlay said it best: &ldquo;The insight into what calculations go into each shot has helped me improve my decision making immensely.&rdquo; That&rsquo;s what you take from a full day on a course where the decisions matter.
+              The coaching arrives at the right moment: on the tee into the wind where the decision is contested, on the approach where club selection changes the hole, on the putt where reading the break from the right side makes one more shot possible. Not a running commentary. Just the observation that changes the hole.
             </p>
           </div>
         </section>
@@ -276,23 +273,21 @@ export default function PlayWithAProExplainedPage() {
           </div>
         </div>
 
-        {/* LUNCH AND REFLECTION */}
+        {/* AFTER THE ROUND */}
         <section className="a-day-section a-day-section--cream">
           <div className="a-day-section__inner">
-            <p className="eyebrow">At lunch</p>
+            <p className="eyebrow">After the round</p>
             <div className="a-day-rule" />
             <h2 className="serif-display a-day-section__title">
-              Where the day gets talked through properly.
+              What you take from the day.
             </h2>
             <p className="a-day-section__copy">
-              Lunch is unhurried. We talk through the round. What clicked, what didn&rsquo;t, what to take home. Most people realise something shifts in how they see the game. Not a list of fixes to work on. Something closer to clearer decisions, less noise in your head about the shot. A better sense of what you&rsquo;re actually capable of.
+              When the round is done, we take some time to go through what happened. What worked well, what did not, what things to keep working on. This sometimes happens over lunch at the course, sometimes a shorter debrief at the 18th. I will also send you a summary afterwards so you do not forget the detail from the day. You finish with a clear picture, not a long list, just the things that will actually make a difference.
             </p>
-            <p className="a-day-section__copy">
-              Jo put it simply: &ldquo;After just 18 holes together, I&rsquo;ve discovered a new ceiling to my potential.&rdquo; That&rsquo;s the shift that happens when the decisions are real and someone who sees the game clearly is watching.
-            </p>
-            <p className="a-day-section__copy">
-              The day doesn&rsquo;t end with a handshake at the 18th. It ends when you&rsquo;re done talking. That&rsquo;s the pace we work at.
-            </p>
+            <blockquote style={{ borderLeft: '3px solid var(--gold)', paddingLeft: '1.25rem', margin: '1.75rem 0 0', fontStyle: 'italic' }}>
+              <p className="a-day-section__copy" style={{ margin: 0 }}>&ldquo;He gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot.&rdquo;</p>
+              <cite style={{ display: 'block', marginTop: '0.5rem', fontStyle: 'normal', fontSize: '0.875rem', opacity: 0.7 }}>Syn&oslash;ve</cite>
+            </blockquote>
           </div>
         </section>
 
@@ -308,7 +303,7 @@ export default function PlayWithAProExplainedPage() {
               Most coaching produces a list. Things to practise, positions to find, habits to break. A day like this produces something different. Because the decisions were real and the shots had consequences, what you learned is stored differently. It stays.
             </p>
             <p className="a-day-section__copy">
-              The score card will show what it shows. The real product is the shift in how you approach the next round. The questions you ask before you play. The reads you trust. The decisions you make with more clarity because you made them on a course where they mattered.
+              The score card will show what it shows. The real product is the shift in how you approach the next round: the questions you ask before you play, the reads you trust, the decisions you make with more clarity because you made them on a course where they mattered.
             </p>
           </div>
         </section>

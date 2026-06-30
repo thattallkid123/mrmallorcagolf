@@ -383,7 +383,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         src: '/images/blog-best-time-play/Rolex Challenge Grand Final.webp',
         alt: 'Rolex Challenge Tour Grand Final at Alcanada',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'October: peak conditions and world-class golf events',
+        caption: 'October: peak conditions and top-level golf events',
       },
       { type: 'heading', text: 'November-December' },
       {
@@ -508,7 +508,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Alcanada is the course I choose when someone asks for one unforgettable day. The views are spectacular from start to finish, but this is not just a pretty round. It is a serious Robert Trent Jones Jr. championship layout with fast, contoured greens and strategic bunkering that asks good questions all day.",
+          "Alcanada is the course I choose when someone asks for one day that will stay with them. The views are spectacular from start to finish, but this is not just a pretty round. It is a serious Robert Trent Jones Jr. championship layout with fast, contoured greens and strategic bunkering that asks good questions all day.",
       },
       {
         type: 'paragraph',
@@ -545,7 +545,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Widely considered one of the most difficult courses on the island. A championship layout in the southwest with breathtaking scenery and hazards on near enough every hole. The 6th is the longest par 5 in the whole of Spain at 609 metres. Recommended for experienced players, and bring extra balls!',
+          'Widely considered one of the most difficult courses on the island. A championship layout in the southwest with dramatic coastal views and hazards on near enough every hole. The 6th is the longest par 5 in the whole of Spain at 609 metres. Recommended for experienced players.',
       },
       {
         type: 'cta',
@@ -852,7 +852,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "One thing visitors often underestimate: Mallorca is an exceptional island beyond the golf which is why so many celebrities, sports stars and more call home here or visit for holidays. The courses are the anchor, but the days between rounds - or the afternoon after an early finish - are what makes the trip.",
+          "One thing visitors often underestimate: Mallorca is a serious island beyond the golf, which is why so many celebrities, sports stars and others call it home or return year after year. The courses are the anchor, but the days between rounds, or the afternoon after an early finish, are what makes the trip.",
       },
       {
         type: 'paragraph',
@@ -891,7 +891,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'What "Play with a Pro" Actually Looks Like | Mr Mallorca Golf',
       description:
-        'A PGA pro joins your group for a full round — reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like.',
+        'A PGA pro joins your group for a full round: reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like.',
       canonical: 'https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained',
       image: 'https://www.mrmallorcagolf.com/images/pwap-hero-mandarin.jpg',
       imageAlt: 'Andy Griffiths PGA pro with a client during a Play with a Pro day in Mallorca',
@@ -925,7 +925,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'heading', text: 'Why Play with a Pro' },
       {
         type: 'paragraph',
-        text: 'A lot of coaching is about swing positions and mechanics. This day is different. It is about the low-hanging fruit — what is the one thing in your shot selection or course management that, if it changes, makes the biggest difference. Practice types that actually work for how you learn. Questions about your own game that a practice range cannot answer. Not a full overhaul. Just the clarity to know what to work on and how.',
+        text: 'A lot of coaching is about swing positions and mechanics. This day is different. It is about the low-hanging fruit: what is the one thing in your shot selection or course management that, if it changes, makes the biggest difference. Practice types that actually work for how you learn. Questions about your own game that a practice range cannot answer. Not a full overhaul. Just the clarity to know what to work on and how.',
       },
       {
         type: 'pull',
@@ -960,7 +960,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         src: '/images/client-group-alcanada.webp',
         alt: 'Group golf day with sea views at Alcanada',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'Group Play with a Pro days — 2 to 3 golfers',
+        caption: 'Group Play with a Pro days, 2 to 3 golfers',
       },
       { type: 'heading', text: 'After the Round' },
       {

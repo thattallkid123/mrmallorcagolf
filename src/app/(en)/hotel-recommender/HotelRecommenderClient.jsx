@@ -86,7 +86,7 @@ const QUESTIONS_DATA = [
     { val: 'palma', label: 'Near Palma', desc: 'Use Palma as an evening base. Son Gual, Son Vida, Son Muntaner, and Bendinat all within 20 minutes. Good if city restaurants and nightlife matter as much as golf.' },
     { val: 'northwest', label: 'Northwest: Tramuntana experience', desc: 'Sóller, Deià, Valldemossa. Spectacular scenery. Not a golf base: nearest course is 50 minutes. Best as a 2-night add-on to another area.' },
   ]},
-  { key: 'priority', qNum: '2', total: '6', title: 'What matters most outside the golf?', sub: 'Pick all that apply — between rounds, what does the group want?', grid: false, multi: true, opts: [
+  { key: 'priority', qNum: '2', total: '6', title: 'What matters most outside the golf?', sub: 'Pick all that apply: between rounds, what does the group want?', grid: false, multi: true, opts: [
     { val: 'golf-focused', label: 'Be as close to the courses as possible', desc: 'On or beside a course, easy early tee times, nothing to get in the way of the rounds.' },
     { val: 'beach', label: 'Beach and pool time after golf', desc: 'Post-round recovery at the sea or pool is just as important as the round itself.' },
     { val: 'spa', label: 'Spa and wellness recovery', desc: 'A proper spa for legs and backs after multiple rounds. Treatments, steam, pool.' },

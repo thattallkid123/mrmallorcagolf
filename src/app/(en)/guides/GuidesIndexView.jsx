@@ -156,7 +156,7 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
             tool={{
               eyebrow: 'Free planning tools',
               title: 'Still narrowing down your trip?',
-              body: 'Course shortlist, trip cost estimate, golf day plan, hotel-base suggestion — all free.',
+              body: 'Course shortlist, trip cost estimate, golf day plan, hotel-base suggestion: all free.',
               href: '/tools',
               cta: 'Open the tools',
             }}
