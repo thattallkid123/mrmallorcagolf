@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 const HOTELS = [
   /* ===================== SOUTHWEST ===================== */
@@ -177,6 +177,13 @@ export default function HotelRecommenderClient() {
   const [newsletter, setNewsletter] = useState(false)
   const [emailSent, setEmailSent] = useState(false)
   const [emailError, setEmailError] = useState(false)
+  const containerRef = useRef(null)
+
+  function scrollToTop() {
+    const el = containerRef.current
+    if (!el) return
+    window.scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + window.scrollY - 70), behavior: 'smooth' })
+  }
 
   const TOTAL = QUESTIONS_DATA.length
   const currentQ = QUESTIONS_DATA[step - 1]
@@ -198,10 +205,10 @@ export default function HotelRecommenderClient() {
             .filter(x => x.score > -999)
             .sort((a, b) => b.score - a.score)
           setResults(allScored.slice(0, 3).filter(x => x.score > 0))
-          window.scrollTo({ top: 0, behavior: 'smooth' })
+          scrollToTop()
         } else {
           setStep(s => s + 1)
-          window.scrollTo({ top: 0, behavior: 'smooth' })
+          scrollToTop()
         }
       }, 220)
     }
@@ -212,13 +219,13 @@ export default function HotelRecommenderClient() {
       buildResults()
     } else {
       setStep(s => s + 1)
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      scrollToTop()
     }
   }
 
   function back() {
     setStep(s => s - 1)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop()
   }
 
   function buildResults() {
@@ -227,7 +234,7 @@ export default function HotelRecommenderClient() {
       .sort((a, b) => b.score - a.score)
     const top = allScored.slice(0, 3).filter(x => x.score > 0)
     setResults(top)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop()
   }
 
   function restart() {
@@ -238,7 +245,7 @@ export default function HotelRecommenderClient() {
     setNewsletter(false)
     setEmailSent(false)
     setEmailError(false)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop()
   }
 
   async function sendEmail() {
@@ -316,7 +323,7 @@ export default function HotelRecommenderClient() {
   const isLastStep = step === TOTAL
 
   return (
-    <>
+    <div ref={containerRef}>
       <style jsx>{`
         .hr-hero { background:#2D4A3E; color:#F7F4EF; padding:52px 24px 48px; text-align:center; }
         .hr-eyebrow { font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
@@ -550,12 +557,12 @@ export default function HotelRecommenderClient() {
             </div>
 
             <div className="hr-retry-wrap">
-              <button className="hr-btn-retry" onClick={() => { setResults(null); setStep(1); setAnswers({}); window.scrollTo({ top:0, behavior:'smooth' }) }}>Change my answers</button>
+              <button className="hr-btn-retry" onClick={() => { setResults(null); setStep(1); setAnswers({}); scrollToTop() }}>Change my answers</button>
               <button className="hr-btn-retry" onClick={restart} style={{ fontSize:'.78rem', opacity:.7 }}>Start again from scratch</button>
             </div>
           </div>
         </>
       )}
-    </>
+    </div>
   )
 }

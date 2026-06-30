@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 /* =====================================================================
    COST DATA. Real 2026 Mallorca pricing ranges (EUR).
@@ -110,6 +110,13 @@ export default function GolfCostCalculatorClient() {
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
   const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
+  const containerRef = useRef(null)
+
+  function scrollToTop() {
+    const el = containerRef.current
+    if (!el) return
+    window.scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + window.scrollY - 70), behavior: 'smooth' })
+  }
 
   function set(key, val) {
     setState(prev => ({ ...prev, [key]: val }))
@@ -120,7 +127,7 @@ export default function GolfCostCalculatorClient() {
       setResults(calculate(state))
     }
     setStep(n)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop()
   }
 
   function restart() {
@@ -253,7 +260,7 @@ export default function GolfCostCalculatorClient() {
   const r = results
 
   return (
-    <>
+    <div ref={containerRef}>
       <style jsx>{`
         .gcc-hero { background:#2D4A3E; color:#F7F4EF; padding:52px 24px 48px; text-align:center; }
         .gcc-eyebrow { display:inline-block; font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; }
@@ -644,6 +651,6 @@ export default function GolfCostCalculatorClient() {
           )
         })()}
       </div>
-    </>
+    </div>
   )
 }

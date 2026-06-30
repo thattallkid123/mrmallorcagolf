@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 const COURSE_IMGS = {
   'son-gual':         '/images/courses/son-gual.webp',
@@ -309,12 +309,19 @@ export default function GolfDayBuilderClient() {
   const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
   const [toast, setToast] = useState('')
   const [showToast, setShowToast] = useState(false)
+  const containerRef = useRef(null)
+
+  function scrollToTop() {
+    const el = containerRef.current
+    if (!el) return
+    window.scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + window.scrollY - 70), behavior: 'smooth' })
+  }
 
   const q = QUESTIONS[stepIdx]
 
   function startBuilder() {
     setPhase('quiz')
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop()
   }
 
   function pick(key, val, multi) {
@@ -329,13 +336,13 @@ export default function GolfDayBuilderClient() {
       setTimeout(() => {
         if (stepIdx < QUESTIONS.length - 1) {
           setStepIdx(s => s + 1)
-          window.scrollTo({ top: 0, behavior: 'smooth' })
+          scrollToTop()
         } else {
           const built = buildItineraries(newAnswers)
           setItins(built)
           setActiveItin(0)
           setPhase('results')
-          window.scrollTo({ top: 0, behavior: 'smooth' })
+          scrollToTop()
         }
       }, 220)
     }
@@ -355,7 +362,7 @@ export default function GolfDayBuilderClient() {
   function nextStep() {
     if (stepIdx < QUESTIONS.length - 1) {
       setStepIdx(s => s + 1)
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      scrollToTop()
     } else {
       generateItineraries()
     }
@@ -364,7 +371,7 @@ export default function GolfDayBuilderClient() {
   function prevStep() {
     if (stepIdx > 0) {
       setStepIdx(s => s - 1)
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      scrollToTop()
     }
   }
 
@@ -373,7 +380,7 @@ export default function GolfDayBuilderClient() {
     setItins(built)
     setActiveItin(0)
     setPhase('results')
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop()
   }
 
   function restart() {
@@ -386,7 +393,7 @@ export default function GolfDayBuilderClient() {
     setEmailSent(false)
     setPdfSent(false)
     setSubscribeNewsletter(false)
-    window.scrollTo({ top: 0 })
+    scrollToTop()
   }
 
   async function requestTripPdf() {
@@ -459,7 +466,7 @@ export default function GolfDayBuilderClient() {
   ] : []
 
   return (
-    <>
+    <div ref={containerRef}>
       <style jsx>{`
         .gdb-hero { background:#2D4A3E; color:#F7F4EF; padding:52px 24px 48px; text-align:center; }
         .gdb-eyebrow { font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
@@ -752,7 +759,7 @@ export default function GolfDayBuilderClient() {
             </div>
 
             <div style={{ display:'flex', gap:'10px', maxWidth:'480px', margin:'0 auto' }}>
-              <button className="gdb-restart" style={{ flex:1 }} onClick={() => { setPhase('quiz'); setStepIdx(QUESTIONS.length - 1); window.scrollTo({ top:0, behavior:'smooth' }) }}>Adjust my answers</button>
+              <button className="gdb-restart" style={{ flex:1 }} onClick={() => { setPhase('quiz'); setStepIdx(QUESTIONS.length - 1); scrollToTop() }}>Adjust my answers</button>
               <button className="gdb-restart" style={{ flex:1 }} onClick={restart}>Start over</button>
             </div>
           </section>
@@ -760,6 +767,6 @@ export default function GolfDayBuilderClient() {
       </div>
 
       <div className={`gdb-toast${showToast ? ' show' : ''}`}>{toast}</div>
-    </>
+    </div>
   )
 }

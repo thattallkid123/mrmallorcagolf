@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = {
   title: 'Free Mallorca Golf Planning Tools | Mr Mallorca Golf',
-  description: 'Five free tools to plan your Mallorca golf trip: course finder, cost calculator, hotel recommender, day builder, and Chinese course selector.',
+  description: 'Four free tools to plan your Mallorca golf trip: course finder, cost calculator, hotel recommender, and day builder.',
   robots: { index: true, follow: true },
 }
 

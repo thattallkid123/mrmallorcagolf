@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { COURSE_SELECTOR_T } from '@lib/course-selector-translations'
 
 const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
@@ -613,6 +613,13 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
   const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
+  const containerRef = useRef(null)
+
+  function scrollToTop() {
+    const el = containerRef.current
+    if (!el) return
+    window.scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + window.scrollY - 70), behavior: 'smooth' })
+  }
 
   function visibleQuestions(ans) {
     return QUESTIONS.filter(q => {
@@ -632,7 +639,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     setPhase('quiz')
     setQIndex(0)
     setAnswers({})
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop()
   }
 
   function selectOption(qId, value, multi) {
@@ -660,7 +667,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     const qs = visibleQuestions(ans)
     if (qIndex < qs.length - 1) {
       setQIndex(i => i + 1)
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      scrollToTop()
     } else {
       showResults(ans)
     }
@@ -669,7 +676,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
   function goBack() {
     if (qIndex > 0) {
       setQIndex(i => i - 1)
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      scrollToTop()
     }
   }
 
@@ -692,7 +699,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     setTopCourses(ranked)
     setAnswers(finalAns)
     setPhase('results')
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop()
   }
 
   function toggleCompare(id) {
@@ -786,14 +793,14 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     setEmailError(false)
     setPdfSent(false)
     setSubscribeNewsletter(false)
-    window.scrollTo({ top: 0 })
+    scrollToTop()
   }
 
   const compareA = compareSelection.length >= 1 ? COURSES.find(c => c.id === compareSelection[0]) : null
   const compareB = compareSelection.length >= 2 ? COURSES.find(c => c.id === compareSelection[1]) : null
 
   return (
-    <>
+    <div ref={containerRef}>
       <style jsx>{`
         .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:52px 24px 48px; text-align:center; }
         .cst-eyebrow { font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
@@ -1122,7 +1129,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
             </div>
 
             <div style={{ display:'flex', gap:'10px', maxWidth:'400px', margin:'20px auto 0', justifyContent:'center' }}>
-              <button className="cst-restart" style={{ flex:1 }} onClick={() => { setPhase('quiz'); setQIndex(activeQs.length - 1); window.scrollTo({ top:0, behavior:'smooth' }) }}>{t.results.adjust}</button>
+              <button className="cst-restart" style={{ flex:1 }} onClick={() => { setPhase('quiz'); setQIndex(activeQs.length - 1); scrollToTop() }}>{t.results.adjust}</button>
               <button className="cst-restart" style={{ flex:1 }} onClick={restart}>{t.results.restart}</button>
             </div>
 
@@ -1137,6 +1144,6 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
           </div>
         )}
       </div>
-    </>
+    </div>
   )
 }
