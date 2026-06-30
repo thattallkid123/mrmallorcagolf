@@ -327,7 +327,6 @@ export default function GolfCostCalculatorClient() {
 
       {/* HERO */}
       <section className="gcc-hero">
-        <span className="gcc-eyebrow">Free tool</span>
         <h1 className="gcc-h1">Mallorca golf trip cost calculator</h1>
         <p className="gcc-sub">Three steps. A cost estimate for your trip with a suggested course mix.</p>
       </section>

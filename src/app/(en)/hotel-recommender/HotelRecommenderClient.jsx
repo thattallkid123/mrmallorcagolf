@@ -334,8 +334,8 @@ export default function HotelRecommenderClient() {
         .hr-progress-fill { height:100%; background:#B8973C; border-radius:2px; transition:width 0.4s ease; }
         .hr-quiz-wrap { max-width:640px; margin:0 auto; padding:48px 24px 60px; }
         .hr-step-num { font-size:0.72rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#B8973C; margin-bottom:10px; }
-        .hr-step h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.5rem,3.5vw,2rem); font-weight:400; color:#1A1916; line-height:1.25; margin-bottom:8px; }
-        .hr-step-sub { font-size:0.88rem; color:#8A7F74; line-height:1.65; margin-bottom:28px; }
+        .hr-step h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.5rem,3.5vw,2rem); font-weight:400; color:#1A1916; line-height:1.25; margin-bottom:8px; text-align:center; }
+        .hr-step-sub { font-size:0.88rem; color:#8A7F74; line-height:1.65; margin-bottom:28px; text-align:center; }
         .hr-options { display:flex; flex-direction:column; gap:10px; }
         .hr-options-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
         .hr-options-grid > button:last-child:nth-child(odd) { grid-column:1 / -1; }

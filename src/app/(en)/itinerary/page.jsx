@@ -1,13 +1,9 @@
-import PageLayout from '../../../components/PageLayout'
-import { buildItineraryMetadata } from '../../../lib/page-metadata'
-import ItineraryPlanner from '../itinerary/ItineraryPlanner'
+import { permanentRedirect } from 'next/navigation'
 
-export const metadata = buildItineraryMetadata()
+export const metadata = {
+  robots: { index: false, follow: true },
+}
 
 export default function ItineraryPage() {
-  return (
-    <PageLayout lang="en" navTransparent={false} showWhatsAppButton={false}>
-      <ItineraryPlanner />
-    </PageLayout>
-  )
+  permanentRedirect('/tools/golf-day-builder')
 }
