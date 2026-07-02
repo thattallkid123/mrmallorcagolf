@@ -96,6 +96,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           text: 'He gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot. I will continue to use Andy as my pro.',
           author: 'Synøve',
         },
+        {
+          text: 'Played 18 holes with Andy this morning. After 4 holes or so Andy came in with his assessment and from then everything became enjoyable and the improvement was immense. Down to earth guy explained everything with ease and made me feel so relaxed. Can\'t wait for my next round on Sunday.',
+          author: 'Mark',
+        },
       ],
     },
     packages: {
@@ -295,6 +299,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         { text: 'Andy hat komplett verändert, wie ich über Platzmanagement denke. Ich habe jahrelang gespielt, ohne die Entscheidungen hinter jedem Schlag wirklich zu verstehen. Nach 18 Löchern mit ihm in Son Gual spielte ich dort mein bestes Ergebnis und verstand endlich auch warum. Vom Briefing bis zum Mittagessen war der ganze Tag genau so, wie ein großartiger Golftag sein sollte.', author: 'Adam' },
         { text: 'Eine tolle Erfahrung. Andy hat alle Aspekte meines Spiels bewertet — Schwungtechnik, Platzmanagement und die mentale Seite — und dabei laufend Anpassungen vorgenommen. Ich habe eine Menge Verbesserungspunkte mitgenommen.', author: 'John' },
         { text: 'Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon lange kämpfe, hat sich stark verbessert. Ich werde Andy weiterhin als meinen Pro nutzen.', author: 'Synøve' },
+        { text: 'Heute Morgen habe ich 18 Löcher mit Andy gespielt. Nach ungefähr 4 Löchern kam er mit seiner Einschätzung und von da an wurde alles angenehmer und die Verbesserung war enorm. Ein bodenständiger Typ, der alles mit Leichtigkeit erklärt und mich so entspannt hat. Kann es kaum erwarten bis zu meiner nächsten Runde am Sonntag.', author: 'Mark' },
       ],
     },
     packages: {
@@ -393,6 +398,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         { text: 'Andy cambió por completo mi forma de entender la gestión del campo. Llevaba años jugando sin comprender de verdad las decisiones que hay detrás de cada golpe. Después de 18 hoyos con él en Son Gual, hice allí mi mejor resultado y por fin entendí por qué. Desde el briefing hasta la comida, todo el día fue exactamente lo que debería ser una gran jornada de golf.', author: 'Adam' },
         { text: 'Una experiencia increíble. Andy evaluó todos los aspectos de mi juego — el swing, la gestión del campo y la parte mental — haciendo ajustes a medida que avanzábamos. Me fui con muchas cosas concretas en las que trabajar.', author: 'John' },
         { text: 'Me dio un feedback claro y específico que me ayudó a corregir varios errores. Especialmente el putting, con el que siempre he tenido dificultades, ha mejorado mucho. Seguiré contando con Andy como mi pro.', author: 'Synøve' },
+        { text: 'Jugué 18 hoyos con Andy esta mañana. Después de unos 4 hoyos Andy llegó con su valoración y a partir de ahí todo se volvió más disfrutable y la mejora fue enorme. Un tipo con los pies en la tierra que explicó todo con facilidad y me hizo sentir muy relajado. No puedo esperar a mi próxima ronda el domingo.', author: 'Mark' },
       ],
     },
     packages: {
@@ -491,6 +497,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         { text: "Andy a complètement changé ma manière de penser la gestion du parcours. J\'avais joué pendant des années sans vraiment comprendre les décisions derrière chaque coup. Après 18 trous avec lui à Son Gual, j\'y ai signé mon meilleur score et j\'ai enfin compris pourquoi. Du briefing jusqu\'au déjeuner, la journée entière correspondait exactement à ce qu\'un grand jour de golf devrait être.", author: 'Adam' },
         { text: "Une expérience formidable. Andy a évalué tous les aspects de mon jeu — le swing, la gestion du parcours et le mental — en faisant des ajustements au fil de la partie. Je suis reparti avec beaucoup de points concrets à travailler.", author: 'John' },
         { text: "Il m\'a donné un retour clair et précis qui m\'a aidée à corriger plusieurs erreurs. Mon putting en particulier, avec lequel j\'ai toujours eu du mal, s\'est vraiment amélioré. Je continuerai à faire appel à Andy comme mon pro.", author: 'Synøve' },
+        { text: "J\'ai joué 18 trous avec Andy ce matin. Après environ 4 trous Andy est arrivé avec son analyse et à partir de là tout est devenu agréable et la progression a été immense. Un gars accessible qui a tout expliqué avec facilité et m\'a mis très à l\'aise. Vivement ma prochaine partie dimanche.", author: 'Mark' },
       ],
     },
     packages: {
@@ -589,6 +596,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         { text: 'Andy heeft volledig veranderd hoe ik over baanmanagement denk. Ik speelde al jaren zonder echt te begrijpen welke beslissingen achter elke slag zitten. Na 18 holes met hem op Son Gual liep ik daar weg met mijn beste score ooit en begreep ik eindelijk waarom. Van briefing tot lunch voelde de hele dag precies zoals een geweldige golfdag zou moeten voelen.', author: 'Adam' },
         { text: 'Een geweldige ervaring. Andy beoordeelde alle aspecten van mijn spel — swing, baamanagement en het mentale deel — en paste onderweg dingen aan. Ik ging weg met veel concrete punten om aan te werken.', author: 'John' },
         { text: 'Hij gaf me duidelijke en specifieke feedback waarmee ik meerdere fouten kon corrigeren. Vooral mijn putting, waar ik altijd mee worstelde, is sterk verbeterd. Ik blijf Andy gebruiken als mijn pro.', author: 'Synøve' },
+        { text: 'Ik speelde vanochtend 18 holes met Andy. Na een hole of 4 kwam Andy met zijn beoordeling en vanaf dat moment werd alles leuker en was de verbetering enorm. Een nuchter persoon die alles gemakkelijk uitlegde en me zo ontspannen liet voelen. Kan niet wachten op mijn volgende ronde op zondag.', author: 'Mark' },
       ],
     },
     packages: {
@@ -687,6 +695,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         { text: 'Andy förändrade helt hur jag tänker kring banstrategi. Jag hade spelat i åratal utan att verkligen förstå besluten bakom varje slag. Efter 18 hål med honom på Son Gual gick jag därifrån med mitt bästa resultat där och förstod äntligen varför. Från briefing till lunch kändes hela dagen precis som en riktigt stor golfdag ska göra.', author: 'Adam' },
         { text: 'En fantastisk upplevelse. Andy utvärderade alla delar av mitt spel — swingen, banstrategin och det mentala — och justerade längs vägen. Jag åkte hem med massor av konkreta saker att jobba med.', author: 'John' },
         { text: 'Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag länge kämpat med, har förbättrats mycket. Jag kommer fortsätta använda Andy som min pro.', author: 'Synøve' },
+        { text: 'Jag spelade 18 hål med Andy i morse. Efter ungefär 4 hål kom Andy med sin bedömning och från och med då blev allt roligare och förbättringen var enorm. En jordnära kille som förklarade allt med lätthet och fick mig att känna mig helt avslappnad. Ser fram emot min nästa runda på söndag.', author: 'Mark' },
       ],
     },
     packages: {
@@ -785,6 +794,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         { text: 'Andy 彻底改变了我对球场管理的理解。过去我打了很多年球，却并没有真正明白每一杆背后的决定。和他在 Son Gual 打完 18 洞后，我在那里打出了自己的最好成绩，也终于明白了原因。从赛前简报到午餐复盘，整整一天都像一场真正高水平的高尔夫体验该有的样子。', author: 'Adam' },
         { text: '非常棒的体验。Andy 对我高尔夫的各个方面进行了评估——挥杆技术、球场管理和心理状态——并在过程中不断调整。我带走了很多具体可以改进的地方。', author: 'John' },
         { text: '他给了我清晰具体的反馈，帮我纠正了好几个问题。尤其是推杆——我一直在这方面挣扎——进步很大。我会继续让 Andy 做我的教练。', author: 'Synøve' },
+        { text: '今天早上我和 Andy 打了 18 洞。大约打了 4 洞后，Andy 分享了他的评估，从那以后一切都变得愉快起来，进步也非常显著。他是个很接地气的人，用轻松的方式解释了一切，让我完全放松下来。迫不及待想打周日的下一场。', author: 'Mark' },
       ],
     },
     packages: {

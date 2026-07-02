@@ -77,6 +77,7 @@ export default function PlayWithAProExplainedPage() {
     { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
     { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
     { src: '/images/client-santa-ponsa.jpg', alt: 'Andy with a client at Santa Ponsa during a Play with a Pro day', position: 'center 40%' },
+    { src: '/images/client-santa-ponsa-mark.jpg', alt: 'Andy with Mark at Santa Ponsa during a Play with a Pro day', position: 'center 40%' },
   ]
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
 
