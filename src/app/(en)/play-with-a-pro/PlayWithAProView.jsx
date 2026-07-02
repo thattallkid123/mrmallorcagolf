@@ -8,6 +8,7 @@ import StickyMobileCta from '../../../components/StickyMobileCta'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
+import { PWAP_PHOTOS } from '../../../lib/pwap-photos.js'
 
 const PAGE_LINKS = {
   en: {
@@ -130,11 +131,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           featuredImageAlt: '马略卡私人高尔夫体验，海景与球道背景',
           photos: [
             'Alcanada 上与球手同场',
-            'Son Antem West 的同场高尔夫日',
             '带海景的小组高尔夫日',
+            'Son Antem West 的同场高尔夫日',
             '马略卡四人高尔夫小组',
             'Son Gual 上的 Andy 与球手',
             '带水景的小组高尔夫日',
+            'Andy 与球手在 Santa Ponsa 的同场高尔夫日',
+            'Andy 与 Mark 在 Santa Ponsa 的同场高尔夫日',
           ],
         }
       : {
@@ -144,11 +147,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           featuredImageAlt: 'Play With A Pro day in Mallorca with sea and fairway backdrop',
           photos: [
             'Andy with a client at Alcanada',
-            'Andy with two guests on a play-with-a-pro day at Son Antem West',
             'Group golf day with sea views',
+            'Andy with two guests on a play-with-a-pro day at Son Antem West',
             'Group of four golfers in Mallorca',
             'Andy and client at Son Gual',
             'Group day with water views',
+            'Andy with a client at Santa Ponsa during a Play with a Pro day',
+            'Andy with Mark at Santa Ponsa during a Play with a Pro day',
           ],
         }
   const reviewLinks = {
@@ -156,12 +161,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   }
   const wechatHref = locale === 'zh' ? buildLocalePath('/contact#wechat', locale) : null
   const dayPhotos = [
-    { src: '/images/client-alcanada.webp', alt: copy.photos[0], position: 'center 38%' },
-    { src: '/images/son-antem-west-review-blog/son-antem-west-4.webp', alt: copy.photos[1], position: 'center 42%' },
-    { src: '/images/client-group-alcanada.webp', alt: copy.photos[2], position: 'center 44%' },
-    { src: '/images/client-group-valley.webp', alt: copy.photos[3], position: 'center 36%' },
-    { src: '/images/client-son-gual.webp', alt: copy.photos[4], position: 'center 32%', variant: 'portrait' },
-    { src: '/images/client-group-pond.webp', alt: copy.photos[5], position: 'center 26%', variant: 'portrait' },
+    ...PWAP_PHOTOS.map((photo, i) => ({ ...photo, alt: copy.photos[i] ?? photo.alt })),
   ]
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
 
