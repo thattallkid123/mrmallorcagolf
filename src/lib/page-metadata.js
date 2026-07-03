@@ -466,7 +466,7 @@ export function buildGuidePostMetadata({
 }) {
   const pathname = locale === 'en' ? `/guides/${slug}` : `/${locale}/guides/${slug}`
   const jpegImagePath = imagePath.replace(/\.webp$/i, '.jpg')
-  const ogImageUrl = `${SITE_ORIGIN}/api/og?title=${encodeURIComponent(title)}&badge=${encodeURIComponent(badge)}&image=${encodeURIComponent(jpegImagePath)}`
+  const ogImageUrl = jpegImagePath.startsWith('http') ? jpegImagePath : `${SITE_ORIGIN}${jpegImagePath}`
 
   const metadata = {
     title,
