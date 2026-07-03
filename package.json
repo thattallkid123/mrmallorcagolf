@@ -37,6 +37,7 @@
     "ops:master": "node scripts/site-ops/generate-master-priority-report.mjs",
     "ops:install-tasks": "powershell -ExecutionPolicy Bypass -File scripts/site-ops/install-windows-scheduled-tasks.ps1",
     "indexnow": "node scripts/indexnow-ping.mjs",
+    "skills:sync": "node scripts/sync-agent-skills.mjs",
     "convert-og-images": "node scripts/convert-og-images.mjs"
   },
   "dependencies": {
