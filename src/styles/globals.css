@@ -3139,6 +3139,16 @@ select.form-control { cursor: pointer; }
   .post-cta__button { width: 100%; }
 }
 
+.post-funnel-cta { background: var(--cream); border: 1px solid rgba(38,66,55,0.18); border-left: 3px solid var(--gold); padding: 24px 28px; margin: 2rem 0; display: grid; gap: 12px; }
+.post-funnel-cta__item { display: flex; flex-direction: column; gap: 4px; }
+.post-funnel-cta__item + .post-funnel-cta__item { padding-top: 12px; border-top: 1px solid rgba(26,25,22,0.08); }
+.post-funnel-cta__question { margin: 0; font-family: var(--font-sans); font-size: 0.88rem; color: var(--charcoal); line-height: 1.5; }
+.post-funnel-cta__link { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; color: var(--pine); text-decoration: none; letter-spacing: 0.01em; transition: color 0.2s; }
+.post-funnel-cta__link:hover { color: var(--gold); }
+@media (max-width: 640px) {
+  .post-funnel-cta { padding: 20px 18px; }
+}
+
 .planning-guide-home {
   background: var(--cream);
   padding: clamp(28px, 5vw, 56px) clamp(20px, 5vw, 60px);

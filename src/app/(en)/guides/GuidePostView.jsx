@@ -15,6 +15,69 @@ function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', p
 }
 import PostLayout from '../guides/PostLayout'
 
+const FUNNEL_CTA_STRINGS = {
+  en: {
+    q1: (name) => `Not sure if ${name} is right for your group?`,
+    l1: 'Take the 60-second course match →',
+    q2: 'Want Andy to arrange a round here?',
+    l2: 'Get a quote →',
+  },
+  de: {
+    q1: (name) => `Nicht sicher, ob ${name} zu Ihrer Gruppe passt?`,
+    l1: 'Platzmatch in 60 Sekunden →',
+    q2: 'Möchten Sie, dass Andy eine Runde hier organisiert?',
+    l2: 'Angebot anfragen →',
+  },
+  es: {
+    q1: (name) => `¿No estás seguro de si ${name} es el campo adecuado para tu grupo?`,
+    l1: 'Selector de campo en 60 segundos →',
+    q2: '¿Quieres que Andy organice una vuelta aquí?',
+    l2: 'Solicitar presupuesto →',
+  },
+  fr: {
+    q1: (name) => `Vous n'êtes pas sûr que ${name} convienne à votre groupe ?`,
+    l1: 'Trouvez le bon parcours en 60 secondes →',
+    q2: "Vous souhaitez qu’Andy organise une partie ici ?",
+    l2: 'Demander un devis →',
+  },
+  nl: {
+    q1: (name) => `Twijfelt u of ${name} geschikt is voor uw groep?`,
+    l1: 'Baanselector in 60 seconden →',
+    q2: 'Wilt u dat Andy een ronde hier regelt?',
+    l2: 'Offerte aanvragen →',
+  },
+  sv: {
+    q1: (name) => `Inte säker på om ${name} passar er grupp?`,
+    l1: 'Banmatchning på 60 sekunder →',
+    q2: 'Vill du att Andy ordnar en runda här?',
+    l2: 'Begär offert →',
+  },
+  zh: {
+    q1: (name) => `不确定${name}是否适合您的团队？`,
+    l1: '60秒球场匹配 →',
+    q2: '想让Andy为您安排一场比赛？',
+    l2: '获取报价 →',
+  },
+}
+
+function FunnelCtaBlock({ locale, courseName }) {
+  const t = FUNNEL_CTA_STRINGS[locale] || FUNNEL_CTA_STRINGS.en
+  const toolsHref = joinHref(locale, '/tools')
+  const contactHref = joinHref(locale, '/contact')
+  return (
+    <div className="post-funnel-cta">
+      <div className="post-funnel-cta__item">
+        <p className="post-funnel-cta__question">{t.q1(courseName)}</p>
+        <Link href={toolsHref} className="post-funnel-cta__link">{t.l1}</Link>
+      </div>
+      <div className="post-funnel-cta__item">
+        <p className="post-funnel-cta__question">{t.q2}</p>
+        <Link href={contactHref} className="post-funnel-cta__link">{t.l2}</Link>
+      </div>
+    </div>
+  )
+}
+
 const COURSE_REVIEW_DETAILS = {
   'son-gual-review': {
     name: 'Golf Son Gual',
@@ -335,6 +398,8 @@ function JsonLd({ data }) {
 export default function GuidePostView({ locale = 'en', meta, blocks }) {
   const pageLang = locale === 'en' ? undefined : locale
   let imageOrdinal = 0
+  const courseDetails = COURSE_REVIEW_DETAILS[meta.slug]
+  const lastCtaIndex = blocks.length - 1
 
   return (
     <PageLayout lang={pageLang}>
@@ -351,6 +416,15 @@ export default function GuidePostView({ locale = 'en', meta, blocks }) {
               <Fragment key={`post-block-with-planning-${index}`}>
                 {renderedBlock}
                 <ToolPlacementCta tool="courseSelector" compact />
+              </Fragment>
+            )
+          }
+
+          if (courseDetails && index === lastCtaIndex && block.type === 'cta') {
+            return (
+              <Fragment key={`funnel-cta-wrap-${index}`}>
+                <FunnelCtaBlock locale={locale} courseName={courseDetails.name} />
+                {renderedBlock}
               </Fragment>
             )
           }
