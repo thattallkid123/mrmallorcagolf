@@ -14,5 +14,8 @@ These are **separate from the Drive-mastered `MMG_SKILL_*` docs** synced by `SKI
 | `update-testimonials` | Andy asks to change testimonials or Trustpilot numbers |
 | `add-site-photos` | New photos (clients, courses, heroes) onto the site |
 | `seo-review` | GA4/Search Console review → page-level actions |
+| `new-prototype` | New interactive tool/quiz/selector, incl. zh deployment checklist |
+| `expand-guide` | Adding Common Questions / new facts to a live guide |
+| `scorecard-update` | Par/SI/distance changes — the manual four-step chain |
 
 Editing rules: keep each skill procedural (ordered steps, exact file paths, verification commands). When a workflow changes (new file in the publish chain, new pricing surface), update the skill in the same commit as the change — stale skills are worse than no skills.
