@@ -281,7 +281,7 @@ export default function ToolsIndex() {
           <div>
             <div className="ti-andy-label">Andy Griffiths · UK PGA Advanced Professional</div>
             <p className="ti-andy-text">
-              These tools give you a starting point: a shortlist, an estimate, a plan. When you're ready to make it real, I confirm tee times, arrange access at members-only courses, and build the trip around your golf. Everything is free until you decide to book.
+              These tools give you a starting point: a shortlist, an estimate, a plan. When you're ready to make it real, I confirm tee times, arrange access at members-only courses, and build the trip around your golf. Nothing to pay until you decide to book.
             </p>
           </div>
         </div>
