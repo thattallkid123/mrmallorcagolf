@@ -4,8 +4,12 @@
 #
 # NOTE: this covers the Drive-mastered MMG_SKILL_* knowledge skills only.
 # The repo's code-workflow skills live in .claude/skills/ (mastered in git,
-# mirrored to .codex/skills/ via `npm run skills:sync`) and are NOT part of
+# mirrored to .codex/skills/ via "npm run skills:sync") and are NOT part of
 # this sync.
+#
+# ASCII only on purpose: Windows PowerShell 5.1 reads BOM-less scripts as the
+# system ANSI codepage, which corrupts non-ASCII bytes (emoji) and breaks
+# string parsing. Keep this file plain ASCII.
 #
 # Usage: .\SKILLS_SYNC.ps1
 # Requires: PowerShell 5+
@@ -51,7 +55,7 @@ foreach ($skill in $skills) {
 
     # Check if source exists
     if (-not (Test-Path $driveFile)) {
-        Write-Host "  ❌ Source not found: $driveFile" -ForegroundColor Red
+        Write-Host "  [ERROR] Source not found: $driveFile" -ForegroundColor Red
         $errorCount++
         continue
     }
@@ -60,14 +64,14 @@ foreach ($skill in $skills) {
     if (Test-Path $coworkFile) {
         try {
             Copy-Item $driveFile $coworkFile -Force
-            Write-Host "  ✓ Copied to Cowork" -ForegroundColor Green
+            Write-Host "  [OK] Copied to Cowork" -ForegroundColor Green
         } catch {
-            Write-Host "  ❌ Failed to copy to Cowork: $_" -ForegroundColor Red
+            Write-Host "  [ERROR] Failed to copy to Cowork: $_" -ForegroundColor Red
             $errorCount++
             continue
         }
     } else {
-        Write-Host "  ⚠ Cowork target not found, skipping: $coworkFile" -ForegroundColor Yellow
+        Write-Host "  [SKIP] Cowork target not found: $coworkFile" -ForegroundColor Yellow
     }
 
     $syncCount++
@@ -86,13 +90,13 @@ if (Test-Path $gdrive) {
     $onDrive = Get-ChildItem "$gdrive\MMG_SKILL_*.md" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Name
     $unmapped = $onDrive | Where-Object { $mapped -notcontains $_ }
     if ($unmapped) {
-        Write-Host "⚠ Unmapped skills found in Drive (add them to the mapping above):" -ForegroundColor Yellow
+        Write-Host "[WARN] Unmapped skills found in Drive (add them to the mapping above):" -ForegroundColor Yellow
         $unmapped | ForEach-Object { Write-Host "    $_" -ForegroundColor Yellow }
         Write-Host ""
     }
 } else {
-    Write-Host "❌ Drive source folder not found: $gdrive" -ForegroundColor Red
-    Write-Host "   Check the `$gdrive path at the top of this script." -ForegroundColor Red
+    Write-Host "[ERROR] Drive source folder not found: $gdrive" -ForegroundColor Red
+    Write-Host "   Check the gdrive source path at the top of this script." -ForegroundColor Red
     Write-Host ""
 }
 
