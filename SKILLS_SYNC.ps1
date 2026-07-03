@@ -60,18 +60,28 @@ foreach ($skill in $skills) {
         continue
     }
 
-    # Copy to Cowork
-    if (Test-Path $coworkFile) {
-        try {
-            Copy-Item $driveFile $coworkFile -Force
-            Write-Host "  [OK] Copied to Cowork" -ForegroundColor Green
-        } catch {
-            Write-Host "  [ERROR] Failed to copy to Cowork: $_" -ForegroundColor Red
-            $errorCount++
-            continue
+    # Copy to Cowork, creating the skill folder if Cowork does not have it yet.
+    # The parent skills root must already exist; if it does not, the cowork
+    # path is stale (Cowork session changed) and needs updating at the top.
+    $coworkDir = Split-Path $coworkFile -Parent
+    $coworkRoot = Split-Path $coworkDir -Parent
+    if (-not (Test-Path $coworkRoot)) {
+        Write-Host "  [ERROR] Cowork skills root missing: $coworkRoot" -ForegroundColor Red
+        Write-Host "          Update the cowork path at the top of this script." -ForegroundColor Red
+        $errorCount++
+        continue
+    }
+    try {
+        if (-not (Test-Path $coworkDir)) {
+            New-Item -ItemType Directory -Path $coworkDir -Force | Out-Null
+            Write-Host "  [NEW] Created Cowork folder: $($skill.Cowork)" -ForegroundColor Cyan
         }
-    } else {
-        Write-Host "  [SKIP] Cowork target not found: $coworkFile" -ForegroundColor Yellow
+        Copy-Item $driveFile $coworkFile -Force
+        Write-Host "  [OK] Copied to Cowork" -ForegroundColor Green
+    } catch {
+        Write-Host "  [ERROR] Failed to copy to Cowork: $_" -ForegroundColor Red
+        $errorCount++
+        continue
     }
 
     $syncCount++
