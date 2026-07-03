@@ -58,8 +58,9 @@ public/images/old.jpg
 public/images/raw/
 public/images/originals/
 
-# Claude Code local config
-.claude/
+# Claude Code local config (but version the shared repo skills)
+.claude/*
+!.claude/skills/
 
 # debug
 npm-debug.log*
