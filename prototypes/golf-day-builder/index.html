@@ -297,6 +297,16 @@
     max-width:88vw;text-align:center;border-radius:999px;
   }
   .toast.show{transform:translateX(-50%) translateY(0)}
+
+  /* ---------- Share block ---------- */
+  .share-block{background:var(--linen);padding:22px 24px;margin:24px 0 0;text-align:center}
+  .share-eyebrow{font-size:9px;text-transform:uppercase;letter-spacing:.2em;color:var(--taupe);margin-bottom:8px}
+  .share-desc{font-size:.84rem;color:var(--taupe);margin:0 0 14px;line-height:1.6;font-weight:300}
+  .share-actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+  .share-copy-btn{background:var(--pine);color:var(--cream);border:none;padding:11px 24px;font-family:var(--font-sans);font-size:.8rem;cursor:pointer;font-weight:400;letter-spacing:.05em;transition:background .2s}
+  .share-copy-btn:hover{background:var(--pine-mid)}
+  .share-wa-btn{background:transparent;border:1px solid var(--pine);color:var(--pine);padding:11px 24px;font-family:var(--font-sans);font-size:.8rem;text-decoration:none;display:inline-flex;align-items:center;letter-spacing:.05em;transition:all .2s}
+  .share-wa-btn:hover{background:var(--pine);color:var(--cream)}
 </style>
 </head>
 <body>
@@ -347,6 +357,15 @@
     <div id="itinContainer"></div>
 
     <p class="estimate-note">Timings, travel durations, and costs shown here are planning estimates. Andy confirms exact tee times, tables, and transport when you book.</p>
+
+    <div class="share-block" id="shareBlock" style="display:none">
+      <div class="share-eyebrow">Share your day plan</div>
+      <p class="share-desc">Send these three itinerary options to your group before you commit.</p>
+      <div class="share-actions">
+        <button class="share-copy-btn" onclick="copyShareLink()">Copy link</button>
+        <a class="share-wa-btn" id="shareWaLink" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+      </div>
+    </div>
 
     <div class="cta-block">
       <div class="eyebrow">Make it real</div>
@@ -825,6 +844,13 @@ function generateItineraries(){
   document.getElementById('questions').style.display='none';
   document.getElementById('results').style.display='block';
 
+  // Shareable URL
+  const encoded = encodeShareData(answers);
+  if (encoded) {
+    pushShareURL(encoded);
+    document.getElementById('shareBlock').style.display = '';
+  }
+
   const builtFor = `Built for ${GROUP_LABEL[answers.group]} staying ${REGION_LABEL[answers.region]}.`;
   const courseReason = whyCourseChosen(itins[0].course);
   document.getElementById('resultSub').innerHTML =
@@ -918,11 +944,42 @@ function restart(){
   stepIdx = 0;
   for(const k in answers) delete answers[k];
   document.getElementById('results').style.display='none';
+  document.getElementById('shareBlock').style.display='none';
   document.getElementById('intro').style.display='block';
   document.getElementById('emailCapture').style.display='flex';
   document.getElementById('emailSuccess').style.display='none';
+  const u=new URL(window.location.href);u.searchParams.delete('r');history.replaceState(null,'',u.toString());
   window.scrollTo({top:0});
 }
+
+/* =====================================================================
+   SHARE UTILS
+===================================================================== */
+function encodeShareData(d){try{return btoa(unescape(encodeURIComponent(JSON.stringify(d))));}catch(e){return null;}}
+function decodeShareData(s){try{return JSON.parse(decodeURIComponent(escape(atob(s))));}catch(e){return null;}}
+function pushShareURL(encoded){
+  const u=new URL(window.location.href);
+  u.searchParams.set('r',encoded);
+  history.replaceState(null,'',u.toString());
+  const wa=document.getElementById('shareWaLink');
+  if(wa){const msg=encodeURIComponent("Here's my Mallorca golf day plan — what do you think? "+u.toString());wa.href='https://wa.me/?text='+msg;}
+}
+function copyShareLink(){
+  const u=window.location.href;
+  const doToast=()=>showToast('Link copied — send it to your group');
+  if(navigator.clipboard){navigator.clipboard.writeText(u).then(doToast).catch(fallback);}else{fallback();}
+  function fallback(){const t=document.createElement('textarea');t.value=u;t.style.cssText='position:fixed;opacity:0';document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);doToast();}
+}
+
+// Restore from shared URL on load
+(function initShare(){
+  const p=new URLSearchParams(window.location.search).get('r');
+  if(!p)return;
+  const d=decodeShareData(p);
+  if(!d||typeof d!=='object')return;
+  Object.assign(answers,d);
+  generateItineraries();
+})();
 
 async function emailItinerary(){
   const input = document.getElementById('emailInput');

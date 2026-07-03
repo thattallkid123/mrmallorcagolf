@@ -136,6 +136,105 @@
   @media(min-width:560px){
     .opts .opt{flex:0 1 auto;}
   }
+
+  /* ---------- Share block ---------- */
+  .share-block{background:var(--cream-soft);border:1px solid #e6ddc9;border-radius:var(--radius);padding:20px 18px;margin:0 0 14px;text-align:center}
+  .share-eyebrow{font-family:'Jost',Verdana,sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:8px}
+  .share-desc{font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.6}
+  .share-actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+  .share-copy-btn{background:var(--green);color:var(--cream);border:none;border-radius:10px;padding:11px 22px;font-family:inherit;font-size:13px;cursor:pointer;transition:opacity .15s}
+  .share-copy-btn:hover{opacity:.85}
+  .share-wa-btn{background:transparent;border:1.5px solid var(--green);color:var(--green);border-radius:10px;padding:11px 22px;font-family:inherit;font-size:13px;text-decoration:none;display:inline-flex;align-items:center;transition:all .15s}
+  .share-wa-btn:hover{background:var(--green);color:var(--cream)}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);background:var(--ink);color:var(--cream);padding:13px 26px;font-size:13px;box-shadow:0 8px 24px rgba(0,0,0,.15);transition:transform .35s cubic-bezier(.22,1,.36,1);z-index:100;max-width:88vw;text-align:center;border-radius:10px}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+
+  /* ============ Trip Quote Builder ============ */
+  .quote-cta{
+    position:relative;
+    background:linear-gradient(150deg, var(--green-deep) 0%, var(--green) 60%, var(--green-soft) 100%);
+    border:1px solid var(--gold);
+    border-radius:var(--radius);
+    padding:28px 22px;
+    margin:18px 0 14px;
+    text-align:center;
+    color:var(--cream);
+    overflow:hidden;
+  }
+  .quote-cta::before{
+    content:"";position:absolute;inset:6px;border:1px solid rgba(205,185,138,.35);
+    border-radius:calc(var(--radius) - 5px);pointer-events:none;
+  }
+  .quote-cta .kicker{font-family:'Jost', Verdana, sans-serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:8px;}
+  .quote-cta h3{font-size:clamp(21px,5vw,26px);color:#fff;font-weight:600;margin-bottom:8px;}
+  .quote-cta p{font-size:14px;color:#cfdad2;max-width:420px;margin:0 auto 18px;}
+  .quote-cta .btn{width:100%;max-width:340px;font-size:16px;padding:16px 22px;letter-spacing:.02em;}
+  .quote-cta .note{font-size:12px;color:var(--gold-soft);margin-top:10px;font-style:italic;}
+
+  .qb-overlay{
+    position:fixed;inset:0;background:rgba(14,42,31,.55);backdrop-filter:blur(2px);
+    z-index:60;opacity:0;pointer-events:none;transition:opacity .25s;
+  }
+  .qb-overlay.open{opacity:1;pointer-events:auto;}
+  .qb-panel{
+    position:fixed;z-index:61;background:var(--cream);
+    left:0;right:0;bottom:0;top:auto;max-height:92dvh;
+    border-radius:18px 18px 0 0;
+    transform:translateY(105%);transition:transform .32s cubic-bezier(.32,.72,.28,1);
+    overflow-y:auto;-webkit-overflow-scrolling:touch;
+    box-shadow:0 -12px 40px rgba(14,42,31,.35);
+  }
+  .qb-panel.open{transform:translateY(0);}
+  @media(min-width:720px){
+    .qb-panel{
+      left:auto;top:0;bottom:0;right:0;width:460px;max-height:none;
+      border-radius:18px 0 0 18px;
+      transform:translateX(105%);
+    }
+    .qb-panel.open{transform:translateX(0);}
+  }
+  .qb-head{
+    position:sticky;top:0;background:var(--green);color:var(--cream);
+    padding:20px 22px 18px;border-radius:18px 18px 0 0;z-index:2;
+  }
+  @media(min-width:720px){ .qb-head{border-radius:18px 0 0 0;} }
+  .qb-head .kicker{font-family:'Jost', Verdana, sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:4px;}
+  .qb-head h3{font-size:20px;color:#fff;font-weight:600;padding-right:36px;}
+  .qb-close{
+    position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;
+    border:1px solid rgba(205,185,138,.5);background:transparent;color:var(--cream);
+    font-size:17px;line-height:1;cursor:pointer;
+  }
+  .qb-body{padding:20px 22px 30px;}
+  .qb-summary{
+    background:#fff;border:1px solid var(--gold-soft);border-radius:12px;
+    padding:14px 16px;margin-bottom:18px;
+  }
+  .qb-summary .lab{font-family:'Jost', Verdana, sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+  .qb-summary ul{list-style:none;}
+  .qb-summary li{display:flex;justify-content:space-between;gap:12px;font-size:14px;padding:5px 0;border-bottom:1px solid #f1ead9;}
+  .qb-summary li:last-child{border-bottom:none;}
+  .qb-summary li b{color:var(--green);font-weight:600;text-align:right;}
+  .qb-field{margin-bottom:16px;}
+  .qb-field label{display:block;font-family:'Jost', Verdana, sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-weight:bold;margin-bottom:6px;}
+  .qb-field label .opt-tag{color:var(--muted);font-weight:normal;text-transform:none;letter-spacing:0;}
+  .qb-field input, .qb-field textarea{
+    width:100%;border:1.5px solid #d9cfb8;border-radius:10px;background:#fff;
+    padding:13px 14px;font-size:15px;font-family:inherit;color:var(--ink);
+  }
+  .qb-field input:focus, .qb-field textarea:focus{outline:none;border-color:var(--gold);}
+  .qb-field textarea{min-height:96px;resize:vertical;}
+  .qb-error{display:none;font-size:13px;color:#a4432f;margin:-8px 0 12px;}
+  .qb-submit{width:100%;font-size:16px;padding:16px 22px;}
+  .qb-privacy{font-size:12px;color:var(--muted);text-align:center;margin-top:12px;font-style:italic;}
+  .qb-success{text-align:center;padding:26px 6px 12px;}
+  .qb-success .tick{
+    width:54px;height:54px;border-radius:50%;background:var(--green);color:var(--gold-soft);
+    display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 16px;
+  }
+  .qb-success h4{font-size:20px;color:var(--green);margin-bottom:8px;}
+  .qb-success p{font-size:15px;color:var(--ink);max-width:320px;margin:0 auto 18px;}
+  body.qb-lock{overflow:hidden;}
 </style>
 </head>
 <body>
@@ -338,6 +437,14 @@
       <p style="margin-top:8px;font-size:13px;color:var(--muted);">Play With A Pro is €695 solo or €950 total for 2-3 golfers. Trip planning is quoted separately once Andy sees your dates, group, and routing needs.</p>
     </div>
 
+    <div class="quote-cta">
+      <div class="kicker">Trip Quote Builder</div>
+      <h3>Get a real quote from Andy</h3>
+      <p>Your answers are already filled in. Add your email and dates, and Andy will turn this estimate into a real, bookable trip quote.</p>
+      <button class="btn gold" onclick="openQuoteBuilder()">Get my personal quote</button>
+      <div class="note">No obligation. One email, from Andy himself.</div>
+    </div>
+
     <div class="cta-box">
       <h3>Make this estimate real</h3>
       <p>This is a planning estimate. Andy can refine the courses, timing, transport, and bookings around your group.</p>
@@ -357,6 +464,15 @@
       <a class="link" href="https://www.mrmallorcagolf.com/guides" target="_blank" rel="noopener">Read the full Mallorca golf course guides →</a>
     </div>
 
+    <div class="share-block" id="shareBlock" style="display:none">
+      <div class="share-eyebrow">Share your estimate</div>
+      <p class="share-desc">Send this cost estimate to the group before you commit to anything.</p>
+      <div class="share-actions">
+        <button class="share-copy-btn" onclick="copyShareLink()">Copy link</button>
+        <a class="share-wa-btn" id="shareWaLink" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+      </div>
+    </div>
+
     <div class="nav">
       <button class="btn ghost" style="flex:1" onclick="goTo(3)">Adjust my answers</button>
       <button class="btn ghost" style="flex:1" onclick="restart()">Start over</button>
@@ -373,6 +489,45 @@
     <p class="disclaimer">Green fees, hotel rates, and dining prices in Mallorca vary by season and availability. All figures here are approximate ranges for planning only.</p>
   </section>
 </div>
+
+<!-- ============ TRIP QUOTE BUILDER PANEL ============ -->
+<div class="qb-overlay" id="qb-overlay" onclick="closeQuoteBuilder()"></div>
+<aside class="qb-panel" id="qb-panel" role="dialog" aria-modal="true" aria-labelledby="qb-title">
+  <div class="qb-head">
+    <div class="kicker">Trip Quote Builder</div>
+    <h3 id="qb-title">Get a real quote from Andy</h3>
+    <button class="qb-close" onclick="closeQuoteBuilder()" aria-label="Close">&times;</button>
+  </div>
+  <div class="qb-body">
+    <form id="qb-form" onsubmit="submitQuote(event)">
+      <div class="qb-summary">
+        <div class="lab">Your trip, as calculated</div>
+        <ul id="qb-summary-list"></ul>
+      </div>
+      <div class="qb-field">
+        <label for="qb-email">Email address</label>
+        <input type="email" id="qb-email" placeholder="you@email.com" required autocomplete="email">
+      </div>
+      <div class="qb-field">
+        <label for="qb-dates">Preferred dates <span class="opt-tag">(optional)</span></label>
+        <input type="text" id="qb-dates" placeholder="e.g. First week of October, flexible">
+      </div>
+      <div class="qb-field">
+        <label for="qb-notes">Anything else Andy should know about your trip?</label>
+        <textarea id="qb-notes" placeholder="Handicaps, occasions, non-golfers in the group, must-play courses…"></textarea>
+      </div>
+      <p class="qb-error" id="qb-error">Please add a valid email address so Andy can reply.</p>
+      <button type="submit" class="btn gold qb-submit" id="qb-submit-btn">Send to Andy</button>
+      <p class="qb-privacy">Your details go straight to Andy — no lists, no spam.</p>
+    </form>
+    <div class="qb-success hidden" id="qb-success">
+      <div class="tick">&#10003;</div>
+      <h4>Sent to Andy</h4>
+      <p>Andy will come back to you personally — usually within a few hours.</p>
+      <button class="btn primary" style="width:100%;" onclick="closeQuoteBuilder()">Back to my estimate</button>
+    </div>
+  </div>
+</aside>
 
 <script>
 /* =====================================================================
@@ -609,6 +764,13 @@ function showResults(){
 
   track("cost_estimate_generated", { budget: s.budget, total_mid: Math.round(totalMid), golfers: s.golfers, rounds: s.rounds });
   goTo(4);
+
+  // Shareable URL
+  const encoded = encodeShareData(state);
+  if (encoded) {
+    pushShareURL(encoded);
+    document.getElementById('shareBlock').style.display = '';
+  }
 }
 
 renderProgress();
@@ -671,5 +833,177 @@ renderProgress();
     }
   }
 </script>
+
+<script>
+/* =====================================================================
+   TRIP QUOTE BUILDER — the main conversion step.
+   MailerLite: replace the placeholders below when wiring to production.
+   Uses the same JSONP subscribe pattern as the other MMG tools.
+   ===================================================================== */
+const MAILERLITE_ACCOUNT_ID = 'MAILERLITE_ACCOUNT_ID';
+const MAILERLITE_GROUP_QUOTE_BUILDER = 'MAILERLITE_GROUP_QUOTE_BUILDER';
+const ANDY_EMAIL = 'andy@mrmallorcagolf.com';
+
+const BUDGET_LABELS = { value:'Value', balanced:'Balanced', premium:'Premium', luxury:'Luxury' };
+
+function quoteData(){
+  const r = calculate();
+  const s = state;
+  const courses = COURSE_MIX[s.budget].slice(0, Math.min(s.rounds, COURSE_MIX[s.budget].length));
+  return {
+    golfers: s.golfers,
+    days: s.days,
+    rounds: s.rounds,
+    budget: BUDGET_LABELS[s.budget] || s.budget,
+    courses: courses.join(', '),
+    estimate: fmtR(r.total),
+    perGolfer: fmtR(r.perGolfer),
+  };
+}
+
+function openQuoteBuilder(){
+  const q = quoteData();
+  document.getElementById('qb-summary-list').innerHTML = [
+    ['Golfers', q.golfers],
+    ['Trip length', q.days + ' day' + (q.days>1?'s':'')],
+    ['Rounds', q.rounds],
+    ['Budget style', q.budget],
+    ['Suggested courses', q.courses],
+    ['Estimated total', q.estimate],
+  ].map(([k,v])=>`<li><span>${k}</span><b>${v}</b></li>`).join('');
+
+  document.getElementById('qb-form').classList.remove('hidden');
+  document.getElementById('qb-success').classList.add('hidden');
+  document.getElementById('qb-error').style.display = 'none';
+  document.getElementById('qb-overlay').classList.add('open');
+  document.getElementById('qb-panel').classList.add('open');
+  document.body.classList.add('qb-lock');
+  track('quote_builder_open', { budget: state.budget, golfers: state.golfers });
+  setTimeout(()=>document.getElementById('qb-email').focus(), 350);
+}
+
+function closeQuoteBuilder(){
+  document.getElementById('qb-overlay').classList.remove('open');
+  document.getElementById('qb-panel').classList.remove('open');
+  document.body.classList.remove('qb-lock');
+}
+
+function sendToMailerLite(email, q, dates, notes){
+  // Fire-and-forget; the mailto fallback below is the guaranteed path.
+  try {
+    const fd = new FormData();
+    fd.append('fields[email]', email);
+    fd.append('fields[quote_golfers]', q.golfers);
+    fd.append('fields[quote_rounds]', q.rounds);
+    fd.append('fields[quote_budget_style]', q.budget);
+    fd.append('fields[quote_courses]', q.courses);
+    fd.append('fields[quote_estimate]', q.estimate);
+    if (dates) fd.append('fields[quote_dates]', dates);
+    if (notes) fd.append('fields[quote_notes]', notes);
+    fd.append('ml-submit', '1');
+    fd.append('anticsrf', 'true');
+    fetch(`https://assets.mailerlite.com/jsonp/${MAILERLITE_ACCOUNT_ID}/forms/${MAILERLITE_GROUP_QUOTE_BUILDER}/subscribe`, {
+      method: 'POST', body: fd, mode: 'no-cors'
+    }).catch(()=>{});
+  } catch(e){ /* never block the lead on MailerLite */ }
+}
+
+function submitQuote(ev){
+  ev.preventDefault();
+  const emailEl = document.getElementById('qb-email');
+  const email = emailEl.value.trim();
+  if (!email || !email.includes('@')){
+    document.getElementById('qb-error').style.display = 'block';
+    emailEl.focus();
+    return;
+  }
+  document.getElementById('qb-error').style.display = 'none';
+  const dates = document.getElementById('qb-dates').value.trim();
+  const notes = document.getElementById('qb-notes').value.trim();
+  const q = quoteData();
+
+  track('quote_builder_submit', { budget: state.budget, golfers: state.golfers, rounds: state.rounds });
+  sendToMailerLite(email, q, dates, notes);
+
+  // Structured lead for Andy's inbox via mailto fallback
+  const bodyLines = [
+    'New trip quote request from the cost calculator',
+    '',
+    `Client email: ${email}`,
+    `Preferred dates: ${dates || 'Not given'}`,
+    '',
+    `Golfers: ${q.golfers}`,
+    `Trip length: ${q.days} days`,
+    `Rounds: ${q.rounds}`,
+    `Budget style: ${q.budget}`,
+    `Suggested courses: ${q.courses}`,
+    `Estimated total: ${q.estimate} (${q.perGolfer} per golfer)`,
+    '',
+    'Anything else about the trip:',
+    notes || '(nothing added)',
+  ];
+  const mailto = `mailto:${ANDY_EMAIL}`
+    + `?subject=${encodeURIComponent('Trip quote request — ' + q.golfers + ' golfers, ' + q.rounds + ' rounds (' + q.budget + ')')}`
+    + `&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+  window.location.href = mailto;
+
+  document.getElementById('qb-form').classList.add('hidden');
+  document.getElementById('qb-success').classList.remove('hidden');
+  document.getElementById('qb-panel').scrollTo({ top: 0 });
+}
+
+document.addEventListener('keydown', (e)=>{
+  if (e.key === 'Escape' && document.getElementById('qb-panel').classList.contains('open')) closeQuoteBuilder();
+});
+</script>
+
+<script>
+/* =====================================================================
+   SHARE UTILS
+===================================================================== */
+function encodeShareData(d){try{return btoa(unescape(encodeURIComponent(JSON.stringify(d))));}catch(e){return null;}}
+function decodeShareData(s){try{return JSON.parse(decodeURIComponent(escape(atob(s))));}catch(e){return null;}}
+function pushShareURL(encoded){
+  const u=new URL(window.location.href);
+  u.searchParams.set('r',encoded);
+  history.replaceState(null,'',u.toString());
+  const wa=document.getElementById('shareWaLink');
+  if(wa){const msg=encodeURIComponent("Here's my Mallorca golf trip cost estimate — what do you think? "+u.toString());wa.href='https://wa.me/?text='+msg;}
+}
+function copyShareLink(){
+  const u=window.location.href;
+  const doToast=()=>showShareToast();
+  if(navigator.clipboard){navigator.clipboard.writeText(u).then(doToast).catch(fallback);}else{fallback();}
+  function fallback(){const t=document.createElement('textarea');t.value=u;t.style.cssText='position:fixed;opacity:0';document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);doToast();}
+}
+function showShareToast(){
+  const t=document.getElementById('shareToast');if(!t)return;
+  t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800);
+}
+
+// Restore from shared URL on load
+(function initShare(){
+  const p=new URLSearchParams(window.location.search).get('r');
+  if(!p)return;
+  const d=decodeShareData(p);
+  if(!d||typeof d!=='object')return;
+  // Restore state values
+  Object.assign(state,d);
+  // Update stepper displays
+  document.querySelectorAll('.stepper').forEach(st=>{
+    const key=st.dataset.key;
+    if(state[key]!==undefined) st.querySelector('.val').textContent=state[key];
+  });
+  // Update option button selections
+  document.querySelectorAll('.opts').forEach(group=>{
+    const key=group.dataset.key;
+    group.querySelectorAll('.opt').forEach(btn=>{
+      btn.classList.toggle('sel', btn.dataset.val===state[key]);
+    });
+  });
+  showResults();
+})();
+</script>
+<div class="toast" id="shareToast">Link copied — send it to your group</div>
 </body>
 </html>

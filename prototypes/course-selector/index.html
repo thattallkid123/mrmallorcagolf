@@ -207,6 +207,18 @@
   .restart{display:block;text-align:center;margin:20px auto 0;padding:14px 18px;color:var(--taupe);background:none;border:none;cursor:pointer;font-size:.85rem;text-decoration:underline;text-underline-offset:3px;font-family:inherit}
   .restart:hover{color:var(--pine)}
   .fee-note{text-align:center;font-size:.74rem;color:var(--taupe);margin-top:4px}
+
+  /* ---------- Share block ---------- */
+  .share-block{background:var(--linen);border-radius:14px;padding:22px 22px;margin:24px 0 0;text-align:center}
+  .share-eyebrow{font-family:var(--font-sans);font-size:.68rem;text-transform:uppercase;letter-spacing:.18em;color:var(--taupe);margin-bottom:8px}
+  .share-desc{font-size:.84rem;color:var(--taupe);margin:0 0 14px;line-height:1.6}
+  .share-actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+  .share-copy-btn{background:var(--pine);color:var(--cream);border:none;border-radius:99px;padding:11px 24px;font-family:var(--font-sans);font-size:.82rem;cursor:pointer;font-weight:400;letter-spacing:.04em;transition:background .2s}
+  .share-copy-btn:hover{background:var(--pine-mid)}
+  .share-wa-btn{background:transparent;border:1px solid var(--pine);color:var(--pine);border-radius:99px;padding:11px 24px;font-family:var(--font-sans);font-size:.82rem;text-decoration:none;letter-spacing:.04em;display:inline-flex;align-items:center;transition:all .2s}
+  .share-wa-btn:hover{background:var(--pine);color:var(--cream)}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);background:var(--deep);color:var(--cream);padding:13px 26px;font-size:.8rem;letter-spacing:.02em;box-shadow:0 8px 24px rgba(0,0,0,.15);transition:transform .35s cubic-bezier(0.22,1,0.36,1);z-index:100;max-width:88vw;text-align:center;border-radius:999px}
+  .toast.show{transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
@@ -302,6 +314,15 @@
         <a href="../hotel-recommender.html" class="btn outline" style="padding:10px 18px;font-size:.78rem">Find hotels</a>
         <a id="dayBuilderLink" href="../golf-day-builder/" class="btn outline" style="padding:10px 18px;font-size:.78rem">Build a golf day</a>
         <a href="../golf-cost-calculator/" class="btn outline" style="padding:10px 18px;font-size:.78rem">Estimate trip cost</a>
+      </div>
+    </div>
+
+    <div class="share-block" id="shareBlock" style="display:none">
+      <div class="share-eyebrow">Share your results</div>
+      <p class="share-desc">Send your shortlist to the group to help decide which courses to book.</p>
+      <div class="share-actions">
+        <button class="share-copy-btn" onclick="copyShareLink()">Copy link</button>
+        <a class="share-wa-btn" id="shareWaLink" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
       </div>
     </div>
 
@@ -1037,6 +1058,13 @@ function showResults(){
   }
 
   show('screen-results');
+
+  // Shareable URL
+  const encoded = encodeShareData(answers);
+  if (encoded) {
+    pushShareURL(encoded);
+    document.getElementById('shareBlock').style.display = '';
+  }
 }
 
 /* =====================================================================
@@ -1146,8 +1174,45 @@ function restart(){
   $('emailSuccess').style.display='none';
   $('emailError').style.display='none';
   $('compareBar').classList.remove('show');
+  // Clear share param from URL
+  const u=new URL(window.location.href);u.searchParams.delete('r');history.replaceState(null,'',u.toString());
   show('screen-intro');
 }
+
+/* =====================================================================
+   SHARE UTILS
+===================================================================== */
+function encodeShareData(d){try{return btoa(unescape(encodeURIComponent(JSON.stringify(d))));}catch(e){return null;}}
+function decodeShareData(s){try{return JSON.parse(decodeURIComponent(escape(atob(s))));}catch(e){return null;}}
+function pushShareURL(encoded){
+  const u=new URL(window.location.href);
+  u.searchParams.set('r',encoded);
+  history.replaceState(null,'',u.toString());
+  const wa=document.getElementById('shareWaLink');
+  if(wa){const msg=encodeURIComponent("Here's my Mallorca golf shortlist — what do you think? "+u.toString());wa.href='https://wa.me/?text='+msg;}
+}
+function copyShareLink(){
+  const u=window.location.href;
+  const doToast=()=>showShareToast();
+  if(navigator.clipboard){navigator.clipboard.writeText(u).then(doToast).catch(fallback);}else{fallback();}
+  function fallback(){const t=document.createElement('textarea');t.value=u;t.style.cssText='position:fixed;opacity:0';document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);doToast();}
+}
+function showShareToast(){
+  const t=document.getElementById('shareToast');if(!t)return;
+  t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800);
+}
+
+// Restore from shared URL on load
+(function initShare(){
+  const p=new URLSearchParams(window.location.search).get('r');
+  if(!p)return;
+  const d=decodeShareData(p);
+  if(!d||typeof d!=='object')return;
+  Object.assign(answers,d);
+  activeQuestions=visibleQuestions();
+  showResults();
+})();
 </script>
+<div class="toast" id="shareToast">Link copied — send it to your group</div>
 </body>
 </html>

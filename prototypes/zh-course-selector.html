@@ -375,6 +375,19 @@
     .email-row { flex-direction: column; }
     .email-row .btn { width: 100%; }
   }
+
+/* Share block */
+.share-block { background: var(--linen); border: 1px solid var(--gold); border-radius: 10px; padding: 20px 24px; margin: 28px 0 0; }
+.share-eyebrow { font-family: var(--font-sans, 'Jost', sans-serif); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.share-desc { font-size: 0.88rem; color: var(--taupe, #7a756e); margin: 0 0 14px; line-height: 1.55; }
+.share-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.share-copy-btn { font-family: var(--font-sans, 'Jost', sans-serif); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; padding: 9px 18px; border: 1.5px solid var(--pine, #2D4A3E); background: transparent; color: var(--pine, #2D4A3E); border-radius: 6px; cursor: pointer; transition: background 0.15s, color 0.15s; }
+.share-copy-btn:hover { background: var(--pine, #2D4A3E); color: #fff; }
+.share-wa-btn { font-family: var(--font-sans, 'Jost', sans-serif); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; padding: 9px 18px; border: 1.5px solid #25D366; background: #25D366; color: #fff; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; transition: opacity 0.15s; }
+.share-wa-btn:hover { opacity: 0.88; }
+/* Toast */
+.toast { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--pine, #2D4A3E); color: #fff; font-family: var(--font-sans, 'Jost', sans-serif); font-size: 0.85rem; padding: 11px 22px; border-radius: 8px; opacity: 0; transition: opacity 0.25s, transform 0.25s; pointer-events: none; white-space: nowrap; z-index: 999; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 </style>
 </head>
 <body>
@@ -428,6 +441,14 @@
       <p>由 Andy 教练的实地打球经验匹配，按适合程度排序。</p>
     </div>
     <div id="results-list"></div>
+
+    <div class="share-block" id="shareBlock" style="display:none">
+      <div class="share-eyebrow">分享您的推荐结果</div>
+      <p class="share-desc">把这份球场推荐发给同行的朋友，一起决定打哪几场。</p>
+      <div class="share-actions">
+        <button class="share-copy-btn" onclick="copyShareLink()">复制链接</button>
+      </div>
+    </div>
 
     <!-- Final conversion block -->
     <div class="final-card">
@@ -1043,6 +1064,13 @@ function showResults() {
 
   list.querySelectorAll('[data-evt="booking"]').forEach(a =>
     a.addEventListener('click', () => track('zh_booking_click', { source: 'result_card' }))); // zh_booking_click
+
+  // Shareable URL
+  const encoded = encodeShareData(state.answers);
+  if (encoded) {
+    pushShareURL(encoded);
+    $('shareBlock').style.display = '';
+  }
 }
 
 /* ---------- Conversion actions ---------- */
@@ -1101,6 +1129,33 @@ $('btn-guides').href = LINKS.guides;
 $('btn-whatsapp').href = LINKS.whatsapp;
 $('wechat-box').addEventListener('click', () => track('zh_wechat_click')); // zh_wechat_click
 
+/* ---- Share utilities ---- */
+function encodeShareData(d){try{return btoa(unescape(encodeURIComponent(JSON.stringify(d))));}catch(e){return null;}}
+function decodeShareData(s){try{return JSON.parse(decodeURIComponent(escape(atob(s))));}catch(e){return null;}}
+function pushShareURL(encoded){
+  const u=new URL(window.location.href);
+  u.searchParams.set('r',encoded);
+  history.replaceState(null,'',u.toString());
+}
+function copyShareLink(){
+  const u=window.location.href;
+  const doToast=()=>showShareToast();
+  if(navigator.clipboard){navigator.clipboard.writeText(u).then(doToast).catch(fallback);}else{fallback();}
+  function fallback(){const t=document.createElement('textarea');t.value=u;t.style.cssText='position:fixed;opacity:0';document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);doToast();}
+}
+function showShareToast(){
+  const t=$('shareToast');if(!t)return;
+  t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800);
+}
+(function initShare(){
+  const p=new URLSearchParams(window.location.search).get('r');
+  if(!p)return;
+  const d=decodeShareData(p);
+  if(!d||typeof d!=='object')return;
+  Object.assign(state.answers,d);
+  showResults();
+})();
+
 $('btn-restart').addEventListener('click', () => {
   state.idx = 0; state.answers = {};
   $('screen-results').classList.add('hidden');
@@ -1109,9 +1164,12 @@ $('btn-restart').addEventListener('click', () => {
   $('email-sent').textContent = '✓ 推荐结果将发送到您的邮箱（中文版，附英文球场名，方便预订时使用）';
   $('btn-email').textContent = '发送';
   $('email-input').value = '';
+  $('shareBlock').style.display = 'none';
+  const u=new URL(window.location.href);u.searchParams.delete('r');history.replaceState(null,'',u.toString());
   renderQuestion();
   window.scrollTo({ top: 0 });
 });
 </script>
+<div class="toast" id="shareToast">链接已复制 — 发给同行的朋友吧</div>
 </body>
 </html>
