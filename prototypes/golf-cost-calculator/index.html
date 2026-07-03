@@ -837,13 +837,8 @@ renderProgress();
 <script>
 /* =====================================================================
    TRIP QUOTE BUILDER — the main conversion step.
-   MailerLite: replace the placeholders below when wiring to production.
-   Uses the same JSONP subscribe pattern as the other MMG tools.
+   Backend API handles lead submission, MailerLite subscription, and Resend.
    ===================================================================== */
-const MAILERLITE_ACCOUNT_ID = 'MAILERLITE_ACCOUNT_ID';
-const MAILERLITE_GROUP_QUOTE_BUILDER = 'MAILERLITE_GROUP_QUOTE_BUILDER';
-const ANDY_EMAIL = 'andy@mrmallorcagolf.com';
-
 const BUDGET_LABELS = { value:'Value', balanced:'Balanced', premium:'Premium', luxury:'Luxury' };
 
 function quoteData(){
@@ -888,27 +883,7 @@ function closeQuoteBuilder(){
   document.body.classList.remove('qb-lock');
 }
 
-function sendToMailerLite(email, q, dates, notes){
-  // Fire-and-forget; the mailto fallback below is the guaranteed path.
-  try {
-    const fd = new FormData();
-    fd.append('fields[email]', email);
-    fd.append('fields[quote_golfers]', q.golfers);
-    fd.append('fields[quote_rounds]', q.rounds);
-    fd.append('fields[quote_budget_style]', q.budget);
-    fd.append('fields[quote_courses]', q.courses);
-    fd.append('fields[quote_estimate]', q.estimate);
-    if (dates) fd.append('fields[quote_dates]', dates);
-    if (notes) fd.append('fields[quote_notes]', notes);
-    fd.append('ml-submit', '1');
-    fd.append('anticsrf', 'true');
-    fetch(`https://assets.mailerlite.com/jsonp/${MAILERLITE_ACCOUNT_ID}/forms/${MAILERLITE_GROUP_QUOTE_BUILDER}/subscribe`, {
-      method: 'POST', body: fd, mode: 'no-cors'
-    }).catch(()=>{});
-  } catch(e){ /* never block the lead on MailerLite */ }
-}
-
-function submitQuote(ev){
+async function submitQuote(ev){
   ev.preventDefault();
   const emailEl = document.getElementById('qb-email');
   const email = emailEl.value.trim();
@@ -922,34 +897,45 @@ function submitQuote(ev){
   const notes = document.getElementById('qb-notes').value.trim();
   const q = quoteData();
 
+  const btn = document.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+
   track('quote_builder_submit', { budget: state.budget, golfers: state.golfers, rounds: state.rounds });
-  sendToMailerLite(email, q, dates, notes);
 
-  // Structured lead for Andy's inbox via mailto fallback
-  const bodyLines = [
-    'New trip quote request from the cost calculator',
-    '',
-    `Client email: ${email}`,
-    `Preferred dates: ${dates || 'Not given'}`,
-    '',
-    `Golfers: ${q.golfers}`,
-    `Trip length: ${q.days} days`,
-    `Rounds: ${q.rounds}`,
-    `Budget style: ${q.budget}`,
-    `Suggested courses: ${q.courses}`,
-    `Estimated total: ${q.estimate} (${q.perGolfer} per golfer)`,
-    '',
-    'Anything else about the trip:',
-    notes || '(nothing added)',
-  ];
-  const mailto = `mailto:${ANDY_EMAIL}`
-    + `?subject=${encodeURIComponent('Trip quote request — ' + q.golfers + ' golfers, ' + q.rounds + ' rounds (' + q.budget + ')')}`
-    + `&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-  window.location.href = mailto;
+  try {
+    const res = await fetch('/api/trip-quote-submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+        golfers: q.golfers,
+        days: q.days,
+        rounds: q.rounds,
+        budget: q.budget,
+        courses: q.courses,
+        estimate: q.estimate,
+        perGolfer: q.perGolfer,
+        dates: dates || null,
+        notes: notes || null,
+      }),
+    });
 
-  document.getElementById('qb-form').classList.add('hidden');
-  document.getElementById('qb-success').classList.remove('hidden');
-  document.getElementById('qb-panel').scrollTo({ top: 0 });
+    btn.disabled = false;
+    btn.textContent = 'Send to Andy';
+
+    if (res.ok) {
+      document.getElementById('qb-form').classList.add('hidden');
+      document.getElementById('qb-success').classList.remove('hidden');
+      document.getElementById('qb-panel').scrollTo({ top: 0 });
+    } else {
+      document.getElementById('qb-error').style.display = 'block';
+    }
+  } catch(e) {
+    btn.disabled = false;
+    btn.textContent = 'Send to Andy';
+    document.getElementById('qb-error').style.display = 'block';
+  }
 }
 
 document.addEventListener('keydown', (e)=>{
