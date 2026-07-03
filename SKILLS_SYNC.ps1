@@ -13,7 +13,7 @@
 $ErrorActionPreference = "Stop"
 
 # Define paths
-$gdrive = "C:\Users\andyg\My Drive\Mr Mallorca Golf\Systems & Planning\Skills"
+$gdrive = "C:\Users\andyg\My Drive\Mr Mallorca Golf\Skills"
 $cowork = "C:\Users\andyg\AppData\Roaming\Claude\local-agent-mode-sessions\skills-plugin\b3bebfb7-33e8-46ab-bd72-6182db69a9e5\fe7a7714-7c35-4970-aaae-5a3d84f73007\skills"
 
 # Skill mappings: Drive filename -> Cowork folder name
@@ -27,7 +27,10 @@ $skills = @(
     @{Drive="MMG_SKILL_FRONTEND_DESIGN.md"; Cowork="frontend-design-mmg"},
     @{Drive="MMG_SKILL_NEXTJS.md"; Cowork="nextjs-mrmallorcagolf"},
     @{Drive="MMG_SKILL_BUSINESS_OPERATIONS.md"; Cowork="mmg-business-operations"},
-    @{Drive="MMG_SKILL_PARTNERSHIPS.md"; Cowork="mmg-partnerships"}
+    @{Drive="MMG_SKILL_PARTNERSHIPS.md"; Cowork="mmg-partnerships"},
+    @{Drive="MMG_SKILL_REPURPOSE.md"; Cowork="repurpose"},
+    @{Drive="MMG_SKILL_CHINESE_BACKLOG.md"; Cowork="chinese-backlog"},
+    @{Drive="MMG_SKILL_EMAIL_MANAGEMENT.md"; Cowork="email-management"}
 )
 
 Write-Host "MMG Skills Sync Script" -ForegroundColor Green
@@ -75,6 +78,23 @@ Write-Host "Sync Complete" -ForegroundColor Green
 Write-Host "  Synced: $syncCount"
 Write-Host "  Errors: $errorCount"
 Write-Host ""
+
+# Drift check: warn about any MMG_SKILL_*.md in Drive that this script does not map.
+# Catches the case where a new skill is added to Drive but never wired into the mapping.
+if (Test-Path $gdrive) {
+    $mapped = $skills | ForEach-Object { $_.Drive }
+    $onDrive = Get-ChildItem "$gdrive\MMG_SKILL_*.md" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Name
+    $unmapped = $onDrive | Where-Object { $mapped -notcontains $_ }
+    if ($unmapped) {
+        Write-Host "⚠ Unmapped skills found in Drive (add them to the mapping above):" -ForegroundColor Yellow
+        $unmapped | ForEach-Object { Write-Host "    $_" -ForegroundColor Yellow }
+        Write-Host ""
+    }
+} else {
+    Write-Host "❌ Drive source folder not found: $gdrive" -ForegroundColor Red
+    Write-Host "   Check the `$gdrive path at the top of this script." -ForegroundColor Red
+    Write-Host ""
+}
 
 if ($errorCount -eq 0) {
     Write-Host "All skills synced successfully" -ForegroundColor Green

@@ -257,7 +257,7 @@ C:\Users\andyg\Desktop\cursor\PROJECTS.md
 - **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/` (documentation, Q&A with gestor)
 - **Archive:** `Archive/` (old audits, temp files, control panel backups)
 - **Reference:** `Reference/` (scorecard PDFs, pricing research)
-- **Skills:** `Skills/MMG_SKILL_*.md` (12 skills  blog, seo, social, carousel, chinese, pipeline, design, nextjs, business-ops, partnerships, repurpose, chinese-backlog)
+- **Skills:** `Skills/MMG_SKILL_*.md` (13 knowledge skills  blog, seo, social, carousel, chinese, chinese-backlog, pipeline, design, nextjs, business-ops, partnerships, repurpose, email-management). Synced to Cowork by `SKILLS_SYNC.ps1`. Separate from the repo code-workflow skills in `.claude/skills/` (see `.claude/skills/README.md`).
 - **Tasks:** Google Tasks (synced to control panel)  see Task Management section below
 
 **Repo (code & development only):**
