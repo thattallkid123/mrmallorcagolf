@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can I Play It? Mallorca Handicap &amp; Access Checker | Mr Mallorca Golf</title>
+  <meta name="description" content="Enter your handicap and instantly see which Mallorca golf courses you can book, which need a certificate, and where Andy can arrange access.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pine: #2D4A3E;
+      --pine-dark: #223A30;
+      --gold: #B8973C;
+      --cream: #F7F4EF;
+      --row-alt: #EFEDE8;
+      --deep: #1A1916;
+      --muted: #6B6862;
+      --ok: #2D6A44;
+      --ok-bg: #EAF3EC;
+      --warn: #8a6f26;
+      --warn-bg: #F6EFDD;
+      --no: #8a3a26;
+      --no-bg: #F5E7E2;
+      --info: #3B5A72;
+      --info-bg: #E8EFF4;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Jost', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--cream); font-family: var(--font-sans); color: var(--deep); }
+
+    .sticky-cta {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--pine-dark);
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; padding: 12px 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+    }
+    .sticky-cta .brand {
+      font-family: var(--font-serif); color: #fff;
+      font-size: 1.05rem; letter-spacing: 0.03em; white-space: nowrap;
+    }
+    .sticky-cta a.cta {
+      background: var(--gold); color: #fff; text-decoration: none;
+      font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 10px 18px; border-radius: 3px; white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .sticky-cta a.cta:hover { background: #a5862f; }
+
+    header.page-head {
+      background: var(--pine);
+      padding: 48px 24px 40px;
+      text-align: center; color: #fff;
+    }
+    header.page-head h1 {
+      font-family: var(--font-serif); font-weight: 400;
+      font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: 10px;
+    }
+    header.page-head .sub {
+      font-size: 0.95rem; color: rgba(255,255,255,0.85);
+      max-width: 620px; margin: 0 auto; line-height: 1.6;
+    }
+    .updated {
+      display: inline-block; margin-top: 18px;
+      border: 1px solid var(--gold); color: var(--gold);
+      font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 2px;
+    }
+
+    main { max-width: 860px; margin: 0 auto; padding: 32px 20px 80px; }
+
+    /* Form panel */
+    .panel {
+      background: #fff; border-radius: 4px; padding: 26px 24px;
+      box-shadow: 0 2px 12px rgba(45,74,62,0.08); margin-bottom: 28px;
+    }
+    .panel h2 {
+      font-family: var(--font-serif); font-weight: 500; color: var(--pine);
+      font-size: 1.35rem; margin-bottom: 18px;
+    }
+    .form-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 18px 22px;
+    }
+    @media (max-width: 560px) { .form-grid { grid-template-columns: 1fr; } }
+    .field label.top {
+      display: block; font-size: 0.72rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 7px;
+    }
+    .field input[type="number"], .field select {
+      font-family: var(--font-sans); font-size: 0.95rem; width: 100%;
+      padding: 10px 12px; border: 1px solid rgba(45,74,62,0.3);
+      border-radius: 3px; background: #fff; color: var(--deep);
+    }
+    .field input:focus, .field select:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+    .seg { display: flex; flex-wrap: wrap; gap: 8px; }
+    .seg button {
+      font-family: var(--font-sans); font-size: 0.88rem; cursor: pointer;
+      padding: 9px 16px; border: 1px solid rgba(45,74,62,0.3);
+      border-radius: 3px; background: #fff; color: var(--deep);
+      transition: all 0.15s;
+    }
+    .seg button.active {
+      background: var(--pine); color: #fff; border-color: var(--pine);
+    }
+    .no-hcp {
+      display: flex; align-items: center; gap: 8px; margin-top: 9px;
+      font-size: 0.85rem; color: var(--muted); cursor: pointer;
+    }
+    .no-hcp input { accent-color: var(--pine); width: 16px; height: 16px; cursor: pointer; }
+    .check-btn {
+      margin-top: 22px; width: 100%;
+      background: var(--gold); color: #fff; border: none; cursor: pointer;
+      font-family: var(--font-sans); font-size: 0.95rem; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 14px 20px; border-radius: 3px;
+      transition: background 0.2s;
+    }
+    .check-btn:hover { background: #a5862f; }
+
+    /* Results */
+    #results { display: none; }
+    .summary {
+      background: var(--pine); color: #fff; border-radius: 4px;
+      padding: 20px 24px; margin-bottom: 22px; line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    .summary strong { color: var(--gold); font-weight: 500; }
+    .group-head {
+      font-family: var(--font-serif); font-size: 1.3rem; font-weight: 500;
+      color: var(--pine); margin: 26px 0 12px; display: flex; align-items: baseline; gap: 10px;
+    }
+    .group-head .count { font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); }
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+    .card {
+      background: #fff; border-radius: 4px; padding: 16px 18px;
+      box-shadow: 0 2px 8px rgba(45,74,62,0.07);
+      border-left: 4px solid var(--muted);
+    }
+    .card.ok { border-left-color: var(--ok); }
+    .card.warn { border-left-color: var(--gold); }
+    .card.no { border-left-color: var(--no); }
+    .card.info { border-left-color: var(--info); }
+    .card .name {
+      font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500;
+      color: var(--pine); margin-bottom: 6px;
+    }
+    .badge {
+      display: inline-block; font-size: 0.72rem; letter-spacing: 0.04em;
+      padding: 3px 10px; border-radius: 10px; margin-bottom: 8px;
+    }
+    .badge.ok { background: var(--ok-bg); color: var(--ok); }
+    .badge.warn { background: var(--warn-bg); color: var(--warn); }
+    .badge.no { background: var(--no-bg); color: var(--no); }
+    .badge.info { background: var(--info-bg); color: var(--info); }
+    .card .detail { font-size: 0.84rem; color: var(--muted); line-height: 1.55; }
+    .card .limits { font-size: 0.75rem; color: var(--muted); margin-top: 8px; letter-spacing: 0.03em; }
+    .card a.enquire {
+      display: inline-block; margin-top: 8px; font-size: 0.8rem;
+      color: var(--gold); text-decoration: none; letter-spacing: 0.04em;
+    }
+    .card a.enquire:hover { text-decoration: underline; }
+
+    /* Conversion blocks */
+    .cta-block {
+      background: var(--pine-dark); color: #fff; border-radius: 4px;
+      padding: 24px; margin-top: 30px; text-align: center;
+    }
+    .cta-block h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.4rem; margin-bottom: 8px; }
+    .cta-block p { font-size: 0.9rem; color: rgba(255,255,255,0.85); margin-bottom: 16px; line-height: 1.6; }
+    .cta-block a.btn {
+      display: inline-block; background: var(--gold); color: #fff; text-decoration: none;
+      font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 12px 24px; border-radius: 3px; transition: background 0.2s;
+    }
+    .cta-block a.btn:hover { background: #a5862f; }
+
+    .selector-link {
+      text-align: center; margin-top: 22px; font-size: 0.95rem;
+    }
+    .selector-link a { color: var(--pine); text-decoration: none; border-bottom: 1px solid var(--gold); }
+    .selector-link a:hover { color: var(--gold); }
+
+    /* Email capture */
+    .email-block {
+      background: #fff; border-radius: 4px; padding: 24px;
+      box-shadow: 0 2px 12px rgba(45,74,62,0.08); margin-top: 26px;
+    }
+    .email-block h3 { font-family: var(--font-serif); font-weight: 500; color: var(--pine); font-size: 1.3rem; margin-bottom: 6px; }
+    .email-block p { font-size: 0.86rem; color: var(--muted); margin-bottom: 14px; line-height: 1.55; }
+    .email-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .email-row input[type="email"] {
+      flex: 1; min-width: 220px; font-family: var(--font-sans); font-size: 0.95rem;
+      padding: 11px 12px; border: 1px solid rgba(45,74,62,0.3); border-radius: 3px;
+    }
+    .email-row input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+    .email-row button {
+      background: var(--pine); color: #fff; border: none; cursor: pointer;
+      font-family: var(--font-sans); font-size: 0.85rem; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 11px 20px; border-radius: 3px;
+      transition: background 0.2s;
+    }
+    .email-row button:hover { background: var(--pine-dark); }
+    .email-msg { font-size: 0.85rem; margin-top: 10px; }
+    .email-msg.ok { color: var(--ok); }
+    .email-msg.err { color: var(--no); }
+
+    .footnote {
+      font-size: 0.78rem; color: var(--muted); margin-top: 34px;
+      line-height: 1.6; border-top: 1px solid rgba(45,74,62,0.15); padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sticky-cta">
+    <span class="brand">Mr Mallorca Golf</span>
+    <a class="cta" href="/plan-your-trip">Plan Your Trip</a>
+  </div>
+
+  <header class="page-head">
+    <h1>Can I Play It?</h1>
+    <p class="sub">Enter your handicap and see instantly which of Mallorca's courses you can book, which need a certificate, and where I can arrange access for you.</p>
+    <span class="updated">Updated July 2026</span>
+  </header>
+
+  <main>
+    <section class="panel" id="form-panel">
+      <h2>Your details</h2>
+      <div class="form-grid">
+        <div class="field">
+          <label class="top" for="hcp">Handicap index</label>
+          <input type="number" id="hcp" min="0" max="54" step="0.1" placeholder="e.g. 18.4">
+          <label class="no-hcp"><input type="checkbox" id="no-hcp"> I don't have an official handicap</label>
+        </div>
+        <div class="field">
+          <label class="top">Gender</label>
+          <div class="seg" id="gender">
+            <button type="button" data-val="M" class="active">Male</button>
+            <button type="button" data-val="F">Female</button>
+          </div>
+        </div>
+        <div class="field">
+          <label class="top">Handicap certificate</label>
+          <div class="seg" id="cert">
+            <button type="button" data-val="yes" class="active">Yes</button>
+            <button type="button" data-val="digital">Digital (app)</button>
+            <button type="button" data-val="no">No</button>
+          </div>
+        </div>
+        <div class="field">
+          <label class="top">Group size</label>
+          <div class="seg" id="group">
+            <button type="button" data-val="1">1</button>
+            <button type="button" data-val="2" class="active">2</button>
+            <button type="button" data-val="3">3</button>
+            <button type="button" data-val="4">4</button>
+            <button type="button" data-val="5">4+</button>
+          </div>
+        </div>
+      </div>
+      <button class="check-btn" id="check">Check my access</button>
+    </section>
+
+    <section id="results">
+      <div class="summary" id="summary"></div>
+      <div id="groups"></div>
+
+      <div class="cta-block" id="borderline-cta" style="display:none;">
+        <h3>Borderline handicap?</h3>
+        <p>Course handicap limits in Mallorca are more flexible than the published numbers suggest. Andy can often arrange access when you're a few shots over the limit &mdash; especially midweek and outside peak season.</p>
+        <a class="btn" href="/contact">Enquire About Access</a>
+      </div>
+
+      <div class="email-block">
+        <h3>Email my access results</h3>
+        <p>Get your personal course access list by email, plus occasional Mallorca golf planning notes. No spam, unsubscribe any time.</p>
+        <div class="email-row">
+          <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+          <button id="email-send">Send my results</button>
+        </div>
+        <div class="email-msg" id="email-msg"></div>
+      </div>
+
+      <p class="selector-link">Not sure which of these to play? <a href="/course-selector">Try the course selector &rarr;</a></p>
+
+      <p class="footnote">
+        Handicap limits and certificate rules are set by each club and can change without notice &mdash; always confirmed at the time of booking. A daily Spanish Golf Federation licence (&euro;3) applies at most member clubs for non-federated visitors. This checker is a planning guide, not a booking guarantee.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    // Course access data — from MMG_ENCYCLOPAEDIA_DATA_MASTER.md (June 2026)
+    // limits: { M, F } max handicap; cert: certificate required at booking;
+    // strict: club enforces limits rigidly (no borderline flexibility);
+    // publicAccess: pay-and-play; restricted: members/guests/hotel-only;
+    // pairing: club commonly pairs solo/duo bookings with other guests in season.
+    const COURSES = [
+      // PALMA REGION
+      { name: 'Golf Son Gual',          M: 33, F: 35, cert: true,  pairing: true },
+      { name: 'Golf Son Vida',          M: 36, F: 36, cert: true },
+      { name: 'Son Muntaner',           M: 36, F: 36,  pairing: true },
+      { name: 'Golf Son Quint',         M: 36, F: 36,  pairing: true },
+      { name: 'T Golf Palma',           M: 34, F: 36,  pairing: true },
+      { name: 'Palma Pitch & Putt',     M: 54, F: 54, publicAccess: true },  // 9 holes, par 27
+      { name: 'Golf Son Termes',        M: 36, F: 36, cert: true,  pairing: true },
+
+      // SOUTHWEST REGION
+      { name: 'Golf Santa Ponsa 1',     M: 28, F: 36, cert: true, publicAccess: true },
+      { name: 'Golf Santa Ponsa 2',     M: 28, F: 36, cert: true, restricted: 'Members/guests only — contact Andy' },
+      { name: 'Golf Santa Ponsa 3',     M: 28, F: 36, cert: true, restricted: 'Members/guests only — contact Andy' },  // 9 holes
+      { name: 'Real Golf de Bendinat',  M: 36, F: 36,  pairing: true },
+      { name: 'T Golf Calvià',          M: 28, F: 34,  pairing: true },
+      { name: 'Golf de Andratx',        M: 28, F: 36, cert: true,  strict: true, pairing: true },
+
+      // SOUTH REGION
+      { name: 'Golf Maioris',           M: 36, F: 36, publicAccess: true },
+      { name: 'Golf Son Antem East',    M: 54, F: 54,  pairing: true },
+      { name: 'Golf Son Antem West',    M: 27, F: 35,  pairing: true },
+
+      // EAST REGION
+      { name: 'Capdepera Golf',         M: 36, F: 36, cert: true,  pairing: true },
+      { name: 'Canyamel Golf',          M: 36, F: 45,  pairing: true },
+      { name: 'Pula Golf',              M: 34, F: 36,  pairing: true },
+      { name: 'Golf Club Son Servera',  M: 36, F: 36, cert: true, publicAccess: true },
+      { name: "Vall d'Or Golf",         M: 36, F: 36,  pairing: true },
+      { name: 'Reserva Rotana',         M: 36, F: 36, cert: true, restricted: 'Hotel guests only — cannot arrange' },  // 9 holes
+
+      // NORTH REGION
+      { name: 'Club de Golf Alcanada',  M: 33, F: 35, cert: true,  pairing: true },
+      { name: 'Golf Pollença',          M: 36, F: 36, publicAccess: true },  // 9 holes, par 35
+    ];
+
+    const BORDERLINE_MARGIN = 8; // shots over the limit where Andy can often still arrange access // VERIFY margin with Andy
+
+    // Segmented control state
+    const state = { gender: 'M', cert: 'yes', group: '2' };
+    ['gender', 'cert', 'group'].forEach(id => {
+      const wrap = document.getElementById(id);
+      wrap.addEventListener('click', e => {
+        const btn = e.target.closest('button');
+        if (!btn) return;
+        wrap.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state[id] = btn.dataset.val;
+      });
+    });
+    document.getElementById('no-hcp').addEventListener('change', e => {
+      document.getElementById('hcp').disabled = e.target.checked;
+    });
+
+    function evaluate(course, hcp, hasHcp, hasCert, groupSize) {
+      const limit = state.gender === ‘M’ ? course.M : course.F;
+
+      // Restricted access (members, hotel guests only)
+      if (course.restricted) {
+        return { status: ‘warn’, label: ‘⚠️ ‘ + course.restricted,
+          detail: course.restricted === ‘Hotel guests only — cannot arrange’
+            ? ‘This is a private hotel course. Access requires staying at the property.’
+            : ‘This course is for members and their guests. Contact Andy to arrange access if possible.’ };
+      }
+
+      // Pay-and-play courses: open to everyone
+      if (course.publicAccess) {
+        return { status: ‘ok’, label: ‘✅ You can book — no restrictions’,
+          detail: ‘Pay-and-play access. No handicap certificate needed here.’ };
+      }
+
+      // No official handicap
+      if (!hasHcp) {
+        if (course.cert) {
+          return { status: ‘info’, label: ‘ℹ️ Certificate required’,
+            detail: ‘This club asks for a valid WHS/EGA handicap certificate at booking. You’ll need to obtain one first — or ask Andy about playing here as part of a coached round.’ };
+        }
+        return { status: ‘warn’, label: ‘⚠️ Borderline — enquire’,
+          detail: ‘No official handicap is usually fine here for competent players, but it’s at the club’s discretion. Andy can often arrange access — enquire.’, borderline: true };
+      }
+
+      // Over the handicap limit
+      if (hcp > limit) {
+        if (!course.strict && hcp <= limit + BORDERLINE_MARGIN) {
+          return { status: ‘warn’, label: ‘⚠️ Borderline — enquire’,
+            detail: `The published limit is ${limit} for ${state.gender === ‘M’ ? ‘men’ : ‘women’} and you’re at ${hcp}. Andy can often arrange access at this course — enquire.`, borderline: true };
+        }
+        return { status: ‘no’, label: ‘❌ Handicap limit’,
+          detail: `This course requires ${limit} or lower for ${state.gender === ‘M’ ? ‘men’ : ‘women’}${course.strict ? ‘ and enforces it strictly’ : ‘’}. Worth revisiting once your handicap comes down.` };
+      }
+
+      // Within limit but certificate required and not held
+      if (course.cert && !hasCert) {
+        return { status: ‘info’, label: ‘ℹ️ Certificate required’,
+          detail: ‘Your handicap qualifies, but this club asks for a valid WHS/EGA certificate at booking. You’ll need to obtain one first — a digital app certificate is accepted.’ };
+      }
+
+      // Bookable — pairing note for small groups
+      if (course.pairing && groupSize <= 2) {
+        const pairingNote = groupSize === 1
+          ? ‘You can book, but this course pairs solo players with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.’
+          : ‘You can book, but this course pairs two-balls with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.’;
+        return { status: ‘warn’, label: ‘⚠️ Pairing likely’,
+          detail: pairingNote };
+      }
+
+      if (course.cert) {
+        return { status: ‘ok’, label: ‘✅ You can book — certificate required (you have one)’,
+          detail: ‘Your handicap qualifies and your certificate covers the club’s requirement. Bring it (or the app) on the day.’ };
+      }
+      return { status: ‘ok’, label: ‘✅ You can book — no restrictions’,
+        detail: ‘Your handicap is comfortably within this course’s limit.’ };
+    }
+
+    let lastResults = null;
+
+    document.getElementById('check').addEventListener('click', () => {
+      const noHcp = document.getElementById('no-hcp').checked;
+      const hcpRaw = document.getElementById('hcp').value;
+      if (!noHcp && hcpRaw === '') {
+        document.getElementById('hcp').focus();
+        return;
+      }
+      const hcp = noHcp ? null : Math.min(54, Math.max(0, parseFloat(hcpRaw)));
+      const hasCert = state.cert === 'yes' || state.cert === 'digital';
+      const groupSize = parseInt(state.group, 10);
+
+      const results = COURSES.map(c => ({ course: c, r: evaluate(c, hcp, !noHcp, hasCert, groupSize) }));
+      lastResults = { hcp: noHcp ? 'none' : hcp, gender: state.gender, cert: state.cert, group: state.group, results };
+      render(results, hcp, noHcp);
+    });
+
+    function render(results, hcp, noHcp) {
+      const groupsEl = document.getElementById('groups');
+      const order = [
+        { key: 'ok',   title: 'You can book' },
+        { key: 'warn', title: 'Worth an enquiry' },
+        { key: 'info', title: 'Certificate needed first' },
+        { key: 'no',   title: 'Out of reach for now' },
+      ];
+      groupsEl.innerHTML = order.map(g => {
+        const items = results.filter(x => x.r.status === g.key);
+        if (!items.length) return '';
+        return `
+          <h2 class="group-head">${g.title} <span class="count">${items.length} course${items.length > 1 ? 's' : ''}</span></h2>
+          <div class="cards">
+            ${items.map(({ course, r }) => `
+              <div class="card ${r.status}">
+                <div class="name">${course.name}</div>
+                <span class="badge ${r.status}">${r.label}</span>
+                <div class="detail">${r.detail}</div>
+                <div class="limits">Limit: ${course.M}M / ${course.F}F${course.cert ? ' · Certificate required' : ''}${course.publicAccess ? ' · Pay &amp; play' : ''}</div>
+                ${r.borderline ? '<a class="enquire" href="/contact">Ask Andy about access &rarr;</a>' : ''}
+              </div>`).join('')}
+          </div>`;
+      }).join('');
+
+      const okCount = results.filter(x => x.r.status === 'ok').length;
+      const warnCount = results.filter(x => x.r.status === 'warn').length;
+      const hasBorderline = results.some(x => x.r.borderline);
+      document.getElementById('summary').innerHTML = noHcp
+        ? `Without an official handicap you can still book <strong>${okCount}</strong> of Mallorca’s courses outright, and <strong>${warnCount}</strong> more are worth an enquiry. The premium member clubs will want a certificate first.`
+        : `Playing off <strong>${hcp}</strong>, you can book <strong>${okCount}</strong> of Mallorca’s courses${warnCount ? `, with <strong>${warnCount}</strong> more worth an enquiry or carrying a pairing note` : ''}.`;
+      document.getElementById('borderline-cta').style.display = hasBorderline ? 'block' : 'none';
+
+      const resultsEl = document.getElementById('results');
+      resultsEl.style.display = 'block';
+      resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // MailerLite email capture
+    const MAILERLITE_ACCOUNT_ID = '2404105';
+    const MAILERLITE_FORM_ID = 'MAILERLITE_FORM_ID_HANDICAP_CHECKER';  // VERIFY: create form in MailerLite and add ID here
+
+    document.getElementById('email-send').addEventListener('click', async () => {
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('email-msg');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        msg.textContent = 'Please enter a valid email address.';
+        msg.className = 'email-msg err';
+        return;
+      }
+      if (!lastResults) {
+        msg.textContent = 'Run the checker first so we have results to send.';
+        msg.className = 'email-msg err';
+        return;
+      }
+      const summary = lastResults.results
+        .map(({ course, r }) => `${course.name}: ${r.status}`)
+        .join('; ');
+      try {
+        // MailerLite Universal form-style subscribe. Endpoint pattern matches the
+        // other MMG tools; swap in the real account/group before deploy.
+        const body = new FormData();
+        body.append('fields[email]', email);
+        body.append('fields[hcp_checker_handicap]', String(lastResults.hcp));
+        body.append('fields[hcp_checker_summary]', summary.slice(0, 950));
+        body.append('ml-submit', '1');
+        body.append('anticsrf', 'true');
+        await fetch(`https://assets.mailerlite.com/jsonp/${MAILERLITE_ACCOUNT_ID}/forms/${MAILERLITE_GROUP}/subscribe`, {
+          method: 'POST', body, mode: 'no-cors'
+        });
+        msg.textContent = 'Done — your access results are on their way.';
+        msg.className = 'email-msg ok';
+        document.getElementById('email').value = '';
+      } catch (e) {
+        msg.textContent = 'Something went wrong — please try again in a moment.';
+        msg.className = 'email-msg err';
+      }
+    });
+  </script>
+</body>
+</html>
