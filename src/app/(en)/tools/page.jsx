@@ -1,13 +1,14 @@
 import PageLayout from '../../../components/PageLayout'
 import Link from 'next/link'
+import { buildPageMetadata } from '../../../lib/page-metadata'
 
 export const dynamic = 'force-dynamic'
 
-export const metadata = {
+export const metadata = buildPageMetadata('/tools', 'en', {
   title: 'Free Mallorca Golf Planning Tools | Mr Mallorca Golf',
   description: 'Four free tools to plan your Mallorca golf trip: course finder, cost calculator, hotel recommender, and day builder.',
   robots: { index: true, follow: true },
-}
+})
 
 const TOOLS = [
   {
