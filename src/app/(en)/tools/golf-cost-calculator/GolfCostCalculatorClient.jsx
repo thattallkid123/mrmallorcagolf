@@ -110,6 +110,13 @@ export default function GolfCostCalculatorClient() {
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
   const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
+  const [quoteBuilderOpen, setQuoteBuilderOpen] = useState(false)
+  const [quoteEmail, setQuoteEmail] = useState('')
+  const [quoteDates, setQuoteDates] = useState('')
+  const [quoteNotes, setQuoteNotes] = useState('')
+  const [quoteSubmitting, setQuoteSubmitting] = useState(false)
+  const [quoteSuccess, setQuoteSuccess] = useState(false)
+  const [quoteError, setQuoteError] = useState(false)
   const containerRef = useRef(null)
 
   function scrollToTop() {
@@ -212,6 +219,49 @@ export default function GolfCostCalculatorClient() {
     } catch {
       setEmailSending(false)
       setEmailError(true)
+    }
+  }
+
+  async function submitQuote(e) {
+    e.preventDefault()
+    if (!quoteEmail || !quoteEmail.includes('@')) {
+      setQuoteError(true)
+      return
+    }
+    setQuoteError(false)
+    setQuoteSubmitting(true)
+
+    const r = results || calculate(state)
+    const s = state
+    const courses = COURSE_MIX[s.budget].slice(0, Math.min(s.rounds, COURSE_MIX[s.budget].length))
+
+    try {
+      const res = await fetch('/api/trip-quote-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: quoteEmail,
+          golfers: s.golfers,
+          days: s.days,
+          rounds: s.rounds,
+          budget: s.budget,
+          courses: courses.join(', '),
+          estimate: fmtR(r.total),
+          perGolfer: fmtR(r.perGolfer),
+          dates: quoteDates || null,
+          notes: quoteNotes || null,
+        }),
+      })
+
+      setQuoteSubmitting(false)
+      if (res.ok) {
+        setQuoteSuccess(true)
+      } else {
+        setQuoteError(true)
+      }
+    } catch {
+      setQuoteSubmitting(false)
+      setQuoteError(true)
     }
   }
 
@@ -552,6 +602,29 @@ export default function GolfCostCalculatorClient() {
                 <p style={{ marginTop:'8px' }}>Play With A Pro is €695 solo or €950 total for 2–3 golfers. Trip planning is quoted separately once Andy sees your dates, group, and routing needs.</p>
               </div>
 
+              {/* QUOTE BUILDER CTA */}
+              <div style={{ position:'relative', background:'linear-gradient(150deg, #0e2a1f 0%, #15392b 60%, #1f4a38 100%)', border:'1px solid #b59a5f', borderRadius:14, padding:'28px 22px', marginTop:18, marginBottom:14, textAlign:'center', color:'#f7f2e7', overflow:'hidden' }}>
+                <div style={{ content:'""', position:'absolute', inset:6, border:'1px solid rgba(205,185,138,.35)', borderRadius:9, pointerEvents:'none' }}></div>
+                <div style={{ position:'relative', zIndex:1 }}>
+                  <div style={{ fontFamily:"'Jost',sans-serif", fontSize:11, letterSpacing:'.24em', textTransform:'uppercase', color:'#cdb98a', marginBottom:8 }}>Trip Quote Builder</div>
+                  <h3 style={{ fontSize:26, color:'#fff', fontWeight:600, marginBottom:8 }}>Get a real quote from Andy</h3>
+                  <p style={{ fontSize:14, color:'#cfdad2', maxWidth:420, margin:'0 auto 18px' }}>Your answers are already filled in. Add your email and dates, and Andy will turn this estimate into a real, bookable trip quote.</p>
+                  <button
+                    className="gcc-btn gold"
+                    style={{ width:'100%', maxWidth:340, fontSize:16, padding:'16px 22px', letterSpacing:'.02em', marginBottom:10 }}
+                    onClick={() => {
+                      setQuoteEmail('')
+                      setQuoteDates('')
+                      setQuoteNotes('')
+                      setQuoteSuccess(false)
+                      setQuoteError(false)
+                      setQuoteBuilderOpen(true)
+                    }}
+                  >Get my personal quote</button>
+                  <div style={{ fontSize:12, color:'#cdb98a', marginTop:10, fontStyle:'italic' }}>No obligation. One email, from Andy himself.</div>
+                </div>
+              </div>
+
               <div className="gcc-cta-box">
                 <h3>Email yourself this breakdown</h3>
                 <p>We'll send the full cost breakdown and suggested course mix. Handy for sharing with the group or setting a budget before you book. Then Andy can refine the real numbers around your dates.</p>
@@ -650,6 +723,191 @@ export default function GolfCostCalculatorClient() {
           )
         })()}
       </div>
+
+      {/* QUOTE BUILDER OVERLAY & PANEL */}
+      {quoteBuilderOpen && (
+        <>
+          <div
+            style={{
+              position:'fixed',
+              inset:0,
+              background:'rgba(14,42,31,.55)',
+              backdropFilter:'blur(2px)',
+              zIndex:60,
+              opacity:1,
+              cursor:'pointer',
+            }}
+            onClick={() => !quoteSuccess && setQuoteBuilderOpen(false)}
+          />
+          <aside
+            style={{
+              position:'fixed',
+              zIndex:61,
+              background:'#f7f2e7',
+              left:0,
+              right:0,
+              bottom:0,
+              top:'auto',
+              maxHeight:'92dvh',
+              borderRadius:'18px 18px 0 0',
+              overflow:'hidden',
+              boxShadow:'0 -12px 40px rgba(14,42,31,.35)',
+              display:'flex',
+              flexDirection:'column',
+            }}
+          >
+            {/* Header */}
+            <div style={{ background:'#15392b', color:'#f7f2e7', padding:'20px 22px 18px', position:'sticky', top:0, borderRadius:'18px 18px 0 0', zIndex:2 }}>
+              <div style={{ fontFamily:"'Jost',sans-serif", fontSize:10, letterSpacing:'.22em', textTransform:'uppercase', color:'#cdb98a', marginBottom:4 }}>Trip Quote Builder</div>
+              <h3 style={{ fontSize:20, color:'#fff', fontWeight:600, paddingRight:36 }}>Get a real quote from Andy</h3>
+              <button
+                onClick={() => !quoteSuccess && setQuoteBuilderOpen(false)}
+                style={{
+                  position:'absolute',
+                  top:16,
+                  right:16,
+                  width:34,
+                  height:34,
+                  borderRadius:'50%',
+                  border:'1px solid rgba(205,185,138,.5)',
+                  background:'transparent',
+                  color:'#f7f2e7',
+                  fontSize:17,
+                  lineHeight:1,
+                  cursor:'pointer',
+                  fontFamily:'inherit',
+                }}
+              >×</button>
+            </div>
+
+            {/* Content */}
+            <div style={{ padding:'20px 22px 30px', overflowY:'auto', flex:1 }}>
+              {!quoteSuccess ? (
+                <>
+                  {/* Summary */}
+                  <div style={{ background:'#fff', border:'1px solid #cdb98a', borderRadius:12, padding:'14px 16px', marginBottom:18 }}>
+                    <div style={{ fontFamily:"'Jost',sans-serif", fontSize:10, letterSpacing:'.16em', textTransform:'uppercase', color:'#8a7f74', marginBottom:8 }}>Your trip, as calculated</div>
+                    <ul style={{ listStyle:'none', margin:0, padding:0 }}>
+                      <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
+                        <span>Golfers</span>
+                        <b style={{ color:'#15392b', fontWeight:600 }}>{state.golfers}</b>
+                      </li>
+                      <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
+                        <span>Trip length</span>
+                        <b style={{ color:'#15392b', fontWeight:600 }}>{state.days} day{state.days > 1 ? 's' : ''}</b>
+                      </li>
+                      <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
+                        <span>Rounds</span>
+                        <b style={{ color:'#15392b', fontWeight:600 }}>{state.rounds}</b>
+                      </li>
+                      <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
+                        <span>Budget style</span>
+                        <b style={{ color:'#15392b', fontWeight:600, textTransform:'capitalize' }}>{state.budget}</b>
+                      </li>
+                      <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
+                        <span>Suggested courses</span>
+                        <b style={{ color:'#15392b', fontWeight:600, textAlign:'right' }}>{COURSE_MIX[state.budget].slice(0, Math.min(state.rounds, COURSE_MIX[state.budget].length)).join(', ')}</b>
+                      </li>
+                      <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0' }}>
+                        <span>Estimated total</span>
+                        <b style={{ color:'#15392b', fontWeight:600 }}>{results ? fmtR(results.total) : '—'}</b>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Form */}
+                  <form onSubmit={submitQuote}>
+                    <div style={{ marginBottom:16 }}>
+                      <label style={labelStyle}>Email address</label>
+                      <input
+                        type="email"
+                        value={quoteEmail}
+                        onChange={e => setQuoteEmail(e.target.value)}
+                        placeholder="you@email.com"
+                        style={{
+                          width:'100%',
+                          border:'1.5px solid #d9cfb8',
+                          borderRadius:10,
+                          background:'#fff',
+                          padding:'13px 14px',
+                          fontSize:15,
+                          fontFamily:'inherit',
+                          color:'#2c2a27',
+                        }}
+                      />
+                    </div>
+
+                    <div style={{ marginBottom:16 }}>
+                      <label style={labelStyle}>Preferred dates <span style={{ textTransform:'none', fontWeight:'normal' }}>(optional)</span></label>
+                      <input
+                        type="text"
+                        value={quoteDates}
+                        onChange={e => setQuoteDates(e.target.value)}
+                        placeholder="e.g. First week of October, flexible"
+                        style={{
+                          width:'100%',
+                          border:'1.5px solid #d9cfb8',
+                          borderRadius:10,
+                          background:'#fff',
+                          padding:'13px 14px',
+                          fontSize:15,
+                          fontFamily:'inherit',
+                          color:'#2c2a27',
+                        }}
+                      />
+                    </div>
+
+                    <div style={{ marginBottom:16 }}>
+                      <label style={labelStyle}>Anything else Andy should know about your trip?</label>
+                      <textarea
+                        value={quoteNotes}
+                        onChange={e => setQuoteNotes(e.target.value)}
+                        placeholder="Handicaps, occasions, non-golfers in the group, must-play courses…"
+                        style={{
+                          width:'100%',
+                          border:'1.5px solid #d9cfb8',
+                          borderRadius:10,
+                          background:'#fff',
+                          padding:'13px 14px',
+                          fontSize:15,
+                          fontFamily:'inherit',
+                          color:'#2c2a27',
+                          minHeight:96,
+                          resize:'vertical',
+                        }}
+                      />
+                    </div>
+
+                    {quoteError && <p style={{ fontSize:13, color:'#a4432f', margin:'-8px 0 12px' }}>Please add a valid email address so Andy can reply.</p>}
+
+                    <button
+                      type="submit"
+                      className="gcc-btn gold"
+                      style={{ width:'100%', fontSize:16, padding:'16px 22px', marginBottom:12 }}
+                      disabled={quoteSubmitting}
+                    >
+                      {quoteSubmitting ? 'Sending…' : 'Send to Andy'}
+                    </button>
+
+                    <p style={{ fontSize:12, color:'#8a7f74', textAlign:'center', marginTop:12, fontStyle:'italic' }}>Your details go straight to Andy — no lists, no spam.</p>
+                  </form>
+                </>
+              ) : (
+                <div style={{ textAlign:'center', padding:'26px 6px 12px' }}>
+                  <div style={{ width:54, height:54, borderRadius:'50%', background:'#15392b', color:'#cdb98a', display:'flex', alignItems:'center', justifyContent:'center', fontSize:24, margin:'0 auto 16px' }}>✓</div>
+                  <h4 style={{ fontSize:20, color:'#15392b', marginBottom:8 }}>Sent to Andy</h4>
+                  <p style={{ fontSize:15, color:'#2c2a27', maxWidth:320, margin:'0 auto 18px' }}>Andy will come back to you personally — usually within a few hours.</p>
+                  <button
+                    className="gcc-btn primary"
+                    style={{ width:'100%' }}
+                    onClick={() => setQuoteBuilderOpen(false)}
+                  >Back to my estimate</button>
+                </div>
+              )}
+            </div>
+          </aside>
+        </>
+      )}
     </div>
   )
 }

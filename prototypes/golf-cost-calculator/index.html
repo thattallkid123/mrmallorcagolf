@@ -904,7 +904,10 @@ async function submitQuote(ev){
   track('quote_builder_submit', { budget: state.budget, golfers: state.golfers, rounds: state.rounds });
 
   try {
-    const res = await fetch('/api/trip-quote-submit', {
+    const apiUrl = window.location.port === '4173'
+      ? 'http://localhost:3000/api/trip-quote-submit'
+      : '/api/trip-quote-submit';
+    const res = await fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
