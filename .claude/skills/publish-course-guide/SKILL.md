@@ -37,6 +37,7 @@ Cross-check known facts against the table in `CLAUDE.md` ("Course-specific known
 
 - Create `src/app/(en)/guides/{slug}/page.jsx` by copying an existing review (e.g. `son-termes-review/page.jsx`) and changing the slug — it appears 2× (getGuidePostContent + metadata).
 - Course reviews do NOT go in `ARTICLE_SLUGS` in `src/lib/site.js` (that's article guides only).
+- **Add the course to `COURSE_REVIEW_DETAILS`** in `src/app/(en)/guides/GuidePostView.jsx`. This object powers two things: the Review schema (structured data) and the inline funnel CTA that appears just before the booking CTA on every course review. Without this entry, neither feature activates. Fields: `name` (official course name), `ratingValue` (1–5), `addressLocality` (town).
 
 ## Step 4 — Discovery surfaces (all four, easy to miss)
 
