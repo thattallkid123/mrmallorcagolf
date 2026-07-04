@@ -1,4 +1,4 @@
-const REVIEW_URL = 'https://www.google.com/maps?cid=15465703647005358475'
+const REVIEW_URL = 'https://www.google.com/search?q=Mr+Mallorca+Golf+Santa+Pon%C3%A7a+reviews'
 // Manual aggregate proof. Editorial testimonials live in:
 // C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_TESTIMONIALS_AND_FEEDBACK.md
 const REVIEW_RATING = 5.0
