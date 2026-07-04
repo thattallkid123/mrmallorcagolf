@@ -3,6 +3,25 @@
 import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
+import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
+
+const WA_MESSAGE = 'Hi Andy, I was comparing green fees on your site and I’d like help planning a Mallorca golf trip and tee times.'
+const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
+
+function WhatsAppCta({ label = 'Message Andy on WhatsApp' }) {
+  function handleClick() {
+    trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'green-fees' })
+    trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'green-fees' })
+  }
+  return (
+    <a className="btn-wa" href={WA_HREF} target="_blank" rel="noopener noreferrer" onClick={handleClick}>
+      <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: 17, height: 17, flexShrink: 0 }} aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+      {label}
+    </a>
+  )
+}
 
 /* =====================================================================
    COURSE DATA — sourced from MMG_ENCYCLOPAEDIA_DATA_MASTER.md.
@@ -138,6 +157,14 @@ export default function GreenFeesClient() {
         .gf-selcta p { font-size:.9rem; color:rgba(255,255,255,.8); margin-bottom:18px; }
         .gf-selcta a { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:11px 22px; border-radius:4px; transition:background .2s; }
         .gf-selcta a:hover { background:#a5862f; }
+        .gf-contact { margin-top:16px; background:var(--pine-dark); color:#fff; border-radius:6px; padding:28px; text-align:center; }
+        .gf-contact h2 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:1.5rem; margin-bottom:8px; }
+        .gf-contact p { font-size:.9rem; color:rgba(255,255,255,.82); margin-bottom:18px; line-height:1.6; }
+        .gf-cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .gf-contact a.btn-gold { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:12px 22px; border-radius:4px; transition:background .2s; }
+        .gf-contact a.btn-gold:hover { background:#a5862f; }
+        .btn-wa { display:inline-flex; align-items:center; gap:9px; background:#25D366; color:#fff; text-decoration:none; font-family:'Jost',sans-serif; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:12px 22px; border-radius:4px; transition:background .2s; }
+        .btn-wa:hover { background:#1eb858; }
         .gf-foot { text-align:center; font-size:.78rem; color:var(--muted); margin-top:36px; line-height:1.6; }
         .gf-foot a { color:var(--gold); text-decoration:none; }
         @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } }
@@ -261,6 +288,15 @@ export default function GreenFeesClient() {
           <h2>Not sure which course fits your group?</h2>
           <p>Answer a few quick questions and get a shortlist matched to your handicap, budget and travel plans.</p>
           <Link href="/tools/course-selector">Try the course selector →</Link>
+        </div>
+
+        <div className="gf-contact">
+          <h2>Want Andy to sort the tee times?</h2>
+          <p>Confirmed rates change by season and day. Tell me your dates and group and I&rsquo;ll get you real prices and book it around your golf — or just message me if that&rsquo;s easier.</p>
+          <div className="gf-cta-btns">
+            <Link className="btn-gold" href="/contact">Enquire</Link>
+            <WhatsAppCta />
+          </div>
         </div>
 
         <footer className="gf-foot">

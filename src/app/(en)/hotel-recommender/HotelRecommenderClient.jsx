@@ -2,6 +2,15 @@
 
 import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
+import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
+
+const WA_HOTEL_MESSAGE = 'Hi Andy, I used the hotel recommender on your site and I’d like help matching where I stay to the courses I want to play.'
+const WA_HOTEL_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_HOTEL_MESSAGE)}`
+
+function trackHotelWhatsApp() {
+  trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'hotel-recommender' })
+  trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'hotel-recommender' })
+}
 
 const HOTELS = [
   /* ===================== SOUTHWEST ===================== */
@@ -555,7 +564,7 @@ export default function HotelRecommenderClient() {
               <p>Andy can match your hotel choice to the right tee times, courses, and schedule: based on the area, your handicap, and how many rounds you want to fit in.</p>
               <div className="hr-cta-links">
                 <a href="https://www.mrmallorcagolf.com/contact" className="hr-cta-link hr-cta-link-primary">Enquire with Andy</a>
-                <a href="https://wa.me/34624466702" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary">WhatsApp Andy</a>
+                <a href={WA_HOTEL_HREF} target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>WhatsApp Andy</a>
               </div>
             </div>
 

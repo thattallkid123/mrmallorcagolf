@@ -2,6 +2,14 @@
 
 import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
+import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
+
+const WA_DAY_HREF = `https://wa.me/34624466702?text=${encodeURIComponent('Hi Andy, I built a golf day on your website and would like to make it real.')}`
+
+function trackDayWhatsApp() {
+  trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'golf-day-builder' })
+  trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'golf-day-builder' })
+}
 
 const COURSE_IMGS = {
   'son-gual':         '/images/courses/son-gual.webp',
@@ -747,7 +755,7 @@ export default function GolfDayBuilderClient() {
                 <button className="gdb-btn-gold" onClick={() => window.open('https://www.mrmallorcagolf.com/contact', '_blank', 'noopener')}>Ask Andy to build this for my group</button>
                 <button className="gdb-btn-pine" style={{ borderRadius:'999px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>Explore Play With A Pro</button>
                 <div className="gdb-cta-secondary">
-                  <button className="gdb-btn-secondary" onClick={() => window.open('https://wa.me/34624466702?text=' + encodeURIComponent('Hi Andy, I built a golf day on your website and would like to make it real.'), '_blank', 'noopener')}>WhatsApp Andy</button>
+                  <button className="gdb-btn-secondary" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>WhatsApp Andy</button>
                 </div>
               </div>
             </div>
