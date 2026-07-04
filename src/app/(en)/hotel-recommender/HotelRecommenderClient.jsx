@@ -564,7 +564,7 @@ export default function HotelRecommenderClient() {
               <p>Andy can match your hotel choice to the right tee times, courses, and schedule: based on the area, your handicap, and how many rounds you want to fit in.</p>
               <div className="hr-cta-links">
                 <a href="https://www.mrmallorcagolf.com/contact" className="hr-cta-link hr-cta-link-primary">Enquire with Andy</a>
-                <a href={WA_HOTEL_HREF} target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>WhatsApp Andy</a>
+                <a href={WA_HOTEL_HREF} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>WhatsApp Andy</a>
               </div>
             </div>
 
