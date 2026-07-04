@@ -104,14 +104,14 @@ export default function ToolsIndex() {
           display: none;
         }
         .ti-carousel {
-          padding: 40px 0 24px clamp(20px, 4vw, 40px);
-          overflow: hidden;
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 40px clamp(20px, 4vw, 40px) 24px;
         }
         .ti-carousel__header {
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
-          padding-right: clamp(20px, 4vw, 40px);
           margin-bottom: 24px;
         }
         .ti-carousel__label {
@@ -130,22 +130,15 @@ export default function ToolsIndex() {
           color: #C4BAA9;
         }
         .ti-track {
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
           gap: 18px;
-          overflow-x: auto;
-          overflow-y: hidden;
-          scroll-snap-type: x mandatory;
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-          padding: 6px clamp(20px, 4vw, 40px) 18px 0;
-          overscroll-behavior-x: contain;
-          touch-action: pan-x;
+          padding: 6px 0 18px;
         }
-        .ti-track::-webkit-scrollbar { display: none; }
+        @media (max-width: 900px) { .ti-track { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 560px) { .ti-track { grid-template-columns: 1fr; } }
         .ti-card {
-          flex: 0 0 clamp(240px, 18vw, 270px);
-          min-height: 280px;
-          scroll-snap-align: start;
+          min-height: 260px;
           background: #fff;
           border: 1px solid rgba(26,25,22,0.09);
           border-radius: 18px;
@@ -161,9 +154,6 @@ export default function ToolsIndex() {
         .ti-card:hover {
           transform: translateY(-4px);
           box-shadow: 0 18px 48px rgba(18,17,15,0.11);
-        }
-        @media (max-width: 600px) {
-          .ti-card { flex: 0 0 82vw; }
         }
         .ti-card-eyebrow {
           font-family: 'Jost', sans-serif;
@@ -273,7 +263,6 @@ export default function ToolsIndex() {
       <section className="ti-carousel">
         <div className="ti-carousel__header">
           <span className="ti-carousel__label">Choose a tool</span>
-          <span className="ti-carousel__hint">{'<- scroll ->'}</span>
         </div>
         <div className="ti-track" aria-label="Free tools carousel">
           {TOOLS.map(tool => (

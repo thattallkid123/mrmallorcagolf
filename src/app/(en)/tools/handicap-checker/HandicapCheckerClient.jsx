@@ -70,19 +70,25 @@ function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender) {
   const limit = gender === 'M' ? course.M : course.F
 
   if (course.restricted) {
+    // Hotel-only courses genuinely cannot be arranged for a standalone round.
+    if (course.restricted === 'Hotel guests only — cannot arrange') {
+      return {
+        status: 'no',
+        label: '❌ Hotel guests only',
+        detail: 'A private hotel course — access needs a stay at the property, so I cannot arrange a standalone round here.',
+      }
+    }
     return {
       status: 'warn',
-      label: '⚠️ ' + course.restricted,
-      detail: course.restricted === 'Hotel guests only — cannot arrange'
-        ? 'This is a private hotel course. Access requires staying at the property.'
-        : 'This course is for members and their guests. Contact Andy to arrange access if possible.',
+      label: '⚠️ Members & guests only',
+      detail: 'Normally members and their guests only. I can enquire on your behalf, but access here is the club’s decision and is not guaranteed.',
     }
   }
 
   if (course.publicAccess && !course.cert) {
     return {
       status: 'ok',
-      label: '✅ You can book — no restrictions',
+      label: '✅ You can book',
       detail: 'Pay-and-play access. No handicap certificate needed here.',
     }
   }
@@ -92,14 +98,13 @@ function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender) {
       return {
         status: 'info',
         label: 'ℹ️ Certificate required',
-        detail: `This club asks for a valid WHS/EGA handicap certificate at booking. You'll need to obtain one first — or ask Andy about playing here as part of a coached round.`,
+        detail: `This club asks for a valid WHS/EGA handicap certificate at booking. You'll need to obtain one first — or ask me about playing here as part of a coached round.`,
       }
     }
     return {
       status: 'warn',
-      label: '⚠️ Borderline — enquire',
-      detail: `No official handicap is usually fine here for competent players, but it's at the club's discretion. Andy can often arrange access — enquire.`,
-      borderline: true,
+      label: '⚠️ Worth an enquiry',
+      detail: `No official handicap is usually fine here for competent players, but it's the club's call. I'm happy to enquire — I can't promise it, but it's often possible.`,
     }
   }
 
@@ -107,8 +112,8 @@ function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender) {
     if (!course.strict && hcp <= limit + BORDERLINE_MARGIN) {
       return {
         status: 'warn',
-        label: '⚠️ Borderline — enquire',
-        detail: `The published limit is ${limit} for ${gender === 'M' ? 'men' : 'women'} and you're at ${hcp}. Andy can often arrange access at this course — enquire.`,
+        label: '⚠️ Just over the limit',
+        detail: `The published limit is ${limit} for ${gender === 'M' ? 'men' : 'women'} and you're at ${hcp}. I'm happy to enquire, but access over the limit is the club's decision — I can't promise it.`,
         borderline: true,
       }
     }
@@ -127,23 +132,22 @@ function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender) {
     }
   }
 
+  // Handicap qualifies. Small groups may be paired in peak season — flagged and
+  // rolled into a single shared note rather than repeated on every card.
   if (course.pairing && groupSize <= 2) {
-    const pairingNote = groupSize === 1
-      ? 'You can book, but this course pairs solo players with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.'
-      : 'You can book, but this course pairs two-balls with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.'
-    return { status: 'warn', label: '⚠️ Pairing likely', detail: pairingNote }
+    return { status: 'ok', label: '✅ You can book', pairs: true, detail: 'Your handicap qualifies here.' }
   }
 
   if (course.cert) {
     return {
       status: 'ok',
-      label: '✅ You can book — certificate required (you have one)',
+      label: '✅ You can book',
       detail: `Your handicap qualifies and your certificate covers the club's requirement. Bring it (or the app) on the day.`,
     }
   }
   return {
     status: 'ok',
-    label: '✅ You can book — no restrictions',
+    label: '✅ You can book',
     detail: `Your handicap is comfortably within this course's limit.`,
   }
 }
@@ -180,7 +184,8 @@ export default function HandicapCheckerClient() {
     const areaBookable = area === 'any' ? bookable : bookable.filter((x) => x.course.region === area)
     const recPool = (areaBookable.length ? areaBookable : bookable).slice(0, 3).map((x) => x.course.name)
 
-    setResult({ hcp: noHcp ? 'none' : hcpVal, tier, results, recPool, area })
+    const pairNames = results.filter((x) => x.r.pairs).map((x) => x.course.name)
+    setResult({ hcp: noHcp ? 'none' : hcpVal, tier, results, recPool, area, group, pairNames })
     setEmailState('idle')
     setEmailMsg('')
     setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 40)
@@ -273,6 +278,9 @@ export default function HandicapCheckerClient() {
         .hc-rec { background:#fff; border-left:4px solid var(--gold); border-radius:6px; padding:18px 20px; margin-bottom:22px; box-shadow:0 2px 8px rgba(45,74,62,.07); }
         .hc-rec .lbl { font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); margin-bottom:6px; }
         .hc-rec p { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.12rem; color:#2C2A27; line-height:1.6; }
+        .hc-pairnote { background:#fff; border-left:4px solid var(--pine); border-radius:6px; padding:16px 20px; margin:22px 0; box-shadow:0 2px 8px rgba(45,74,62,.07); }
+        .hc-pairnote .lbl { font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--pine); margin-bottom:6px; }
+        .hc-pairnote p { font-family:'Jost',sans-serif; font-size:.9rem; color:#4a463f; line-height:1.6; }
         .hc-group-head { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.35rem; font-weight:500; color:var(--pine);
           margin:26px 0 12px; display:flex; align-items:baseline; gap:10px; }
         .hc-group-head .count { font-family:'Jost',sans-serif; font-size:.8rem; color:var(--muted); }
@@ -375,7 +383,7 @@ export default function HandicapCheckerClient() {
             <div className="hc-summary">
               {result.hcp === 'none'
                 ? <>Without an official handicap you can still book <strong>{okCount}</strong> of Mallorca&rsquo;s courses outright, and <strong>{warnCount}</strong> more are worth an enquiry. The premium member clubs will want a certificate first.</>
-                : <>Playing off <strong>{result.hcp}</strong>, you can book <strong>{okCount}</strong> of Mallorca&rsquo;s courses{warnCount ? <>, with <strong>{warnCount}</strong> more worth an enquiry or carrying a pairing note</> : ''}.</>}
+                : <>Playing off <strong>{result.hcp}</strong>, you can book <strong>{okCount}</strong> of Mallorca&rsquo;s courses{warnCount ? <>, with <strong>{warnCount}</strong> more worth an enquiry</> : ''}.</>}
             </div>
 
             {result.recPool.length > 0 && (
@@ -399,7 +407,7 @@ export default function HandicapCheckerClient() {
                         <div className="name">{course.name}</div>
                         <span className={`hc-badge ${r.status}`}>{r.label}</span>
                         <div className="detail">{r.detail}</div>
-                        {r.borderline && <Link className="enquire" href="/contact">Ask Andy about access →</Link>}
+                        {r.borderline && <Link className="enquire" href="/contact">Ask if it&rsquo;s possible →</Link>}
                       </div>
                     ))}
                   </div>
@@ -407,10 +415,19 @@ export default function HandicapCheckerClient() {
               )
             })}
 
+            {result.pairNames.length > 0 && (
+              <div className="hc-pairnote">
+                <div className="lbl">Peak-season pairing</div>
+                <p>
+                  Playing as {result.group === '1' ? 'a single golfer' : 'a two-ball'}, most Mallorca clubs pair small bookings with other players in peak season — you can usually reserve the whole tee time as a private group instead. Likely at: {result.pairNames.join(', ')}. I know the exact private-tee costs for the Arabella estate courses and Alcanada; for the others I&rsquo;ll confirm when you enquire.
+                </p>
+              </div>
+            )}
+
             {hasBorderline && (
               <div className="hc-cta">
-                <h3>Borderline handicap?</h3>
-                <p>Course handicap limits in Mallorca are more flexible than the published numbers suggest. Andy can often arrange access when you&rsquo;re a few shots over the limit — especially midweek and outside peak season.</p>
+                <h3>A few shots over a limit?</h3>
+                <p>Published limits are sometimes more flexible than they look, especially midweek and outside peak season. I&rsquo;m happy to enquire on your behalf — but the club always has the final say, so I can&rsquo;t promise access.</p>
                 <Link className="btn" href="/contact">Enquire About Access</Link>
               </div>
             )}
