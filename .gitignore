@@ -3,6 +3,10 @@ b64imgs.txt
 *.py
 !scripts/site-ops/monthly-traffic-interest-snapshot.py
 !scripts/site-ops/ga4-key-events-setup.py
+
+# Ephemeral outputs and Python caches — never commit
+outputs/
+__pycache__/
 *.log
 *.tmp
 *.err.log

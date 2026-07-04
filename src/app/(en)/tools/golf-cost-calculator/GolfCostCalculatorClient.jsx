@@ -15,6 +15,7 @@ function WhatsAppQuoteLink() {
   return (
     <a
       href={WA_HREF}
+      data-analytics-manual="true"
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
