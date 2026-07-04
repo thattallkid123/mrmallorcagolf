@@ -47,10 +47,12 @@ function Register-OrReplaceTask {
 
 $dailyTrigger = New-ScheduledTaskTrigger -Daily -At 7:00AM
 $weeklyTrigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Monday -At 8:00AM
-$monthlyTrigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -WeeksInterval 4 -At 9:00AM
-
 Register-OrReplaceTask -TaskName "MMG-Daily-Health-Check" -Trigger $dailyTrigger -ScriptPath $dailyScript
 Register-OrReplaceTask -TaskName "MMG-Weekly-SEO-Performance" -Trigger $weeklyTrigger -ScriptPath $weeklyScript
-Register-OrReplaceTask -TaskName "MMG-Monthly-Technical-Audit" -Trigger $monthlyTrigger -ScriptPath $monthlyScript
+
+$monthlyTaskName = "MMG-Monthly-Technical-Audit"
+$monthlyCommand = "powershell.exe -NoProfile -ExecutionPolicy Bypass -File `"$monthlyScript`""
+schtasks /Create /F /TN $monthlyTaskName /TR $monthlyCommand /SC MONTHLY /D 1 /ST 09:15 | Out-Null
+Write-Host "Registered monthly task: $monthlyTaskName"
 
 Write-Host "All MMG site-ops scheduled tasks are installed."

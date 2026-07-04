@@ -22,6 +22,7 @@ export default function WhatsAppButton({ lang }) {
   return (
     <div className="contact-float">
       <a
+        data-analytics-manual="true"
         href={href}
         target={isChinese ? undefined : '_blank'}
         rel={isChinese ? undefined : 'noopener noreferrer'}

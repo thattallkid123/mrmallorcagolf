@@ -1,6 +1,8 @@
 # Large temp files — never commit
 b64imgs.txt
 *.py
+!scripts/site-ops/monthly-traffic-interest-snapshot.py
+!scripts/site-ops/ga4-key-events-setup.py
 *.log
 *.tmp
 *.err.log
@@ -21,6 +23,7 @@ zoho_mail/zoho_auth.py
 ga4_analytics/ga4_credentials.json
 ga4_analytics/ga4_oauth_client.json
 ga4_analytics/ga4_token.json
+ga4_analytics/ga4_admin_token.json
 ga4_analytics/reports/
 ga4_analytics/__pycache__/
 search_console/search_console_token.json

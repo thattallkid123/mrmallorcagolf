@@ -4,7 +4,9 @@ import Script from 'next/script'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
 import { DEFAULT_SOCIAL_IMAGE, getSocialImage } from '../lib/page-metadata.js'
+import IntentTracker from '../components/IntentTracker.jsx'
 import PageViewTracker from '../components/PageViewTracker.jsx'
+import ScrollDepthTracker from '../components/ScrollDepthTracker.jsx'
 import ScrollToTop from './scroll-to-top.jsx'
 
 const jost = Jost({
@@ -258,6 +260,7 @@ export default function SiteRootLayout({ lang, children }) {
           {`
             (function () {
               if (window.location.pathname.startsWith('/zh')) return;
+              if (!/^(www\\.)?mrmallorcagolf\\.com$/.test(window.location.hostname)) return;
 
               var init = function () {
                 if (window.__mmgGaLoaded) return;
@@ -309,6 +312,8 @@ export default function SiteRootLayout({ lang, children }) {
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
         <ScrollToTop />
         <PageViewTracker />
+        <ScrollDepthTracker />
+        <IntentTracker />
         {children}
       </body>
     </html>

@@ -4,10 +4,20 @@ function canTrack() {
   return typeof window !== 'undefined' && typeof window.gtag === 'function'
 }
 
+function withPageDefaults(params = {}) {
+  if (typeof window === 'undefined') return params
+
+  return {
+    page_path: currentPagePath(),
+    page_location: currentPageLocation(),
+    ...params,
+  }
+}
+
 export function trackEvent(name, params = {}) {
   if (!canTrack()) return
 
-  window.gtag('event', name, params)
+  window.gtag('event', name, withPageDefaults(params))
 }
 
 export function trackPageView({ page_path, page_title, page_location } = {}) {
@@ -25,7 +35,7 @@ export function trackLead(leadType, params = {}) {
 
   window.gtag('event', 'generate_lead', {
     lead_type: leadType,
-    ...params,
+    ...withPageDefaults(params),
   })
 }
 
@@ -34,7 +44,7 @@ export function trackNewsletterSignup(params = {}) {
 
   window.gtag('event', 'sign_up', {
     method: 'email',
-    ...params,
+    ...withPageDefaults(params),
   })
 }
 
