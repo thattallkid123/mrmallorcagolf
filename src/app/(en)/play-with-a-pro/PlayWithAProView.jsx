@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import BookingPolicyNotice from '../../../components/BookingPolicyNotice'
-import TrustpilotBadge from '../../../components/TrustpilotBadge'
+import ReviewBadge from '../../../components/ReviewBadge'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
@@ -424,7 +424,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         </section>
 
         <div className="pwap-trust-band">
-          <TrustpilotBadge variant="text" theme="light" />
+          <ReviewBadge variant="text" theme="light" />
         </div>
 
         {content.faq?.items?.length ? (

@@ -1,6 +1,6 @@
 import { getContactContent } from '../../../lib/contact-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
-import TrustpilotBadge from '../../../components/TrustpilotBadge'
+import ReviewBadge from '../../../components/ReviewBadge'
 import ContactFormPanel from '../contact/ContactFormPanel'
 
 function JsonLd({ data }) {
@@ -161,7 +161,7 @@ export default function ContactForm({ locale = 'en' }) {
           </div>
 
           <div className="contact-trust">
-            <TrustpilotBadge variant="text" theme="dark" />
+            <ReviewBadge variant="text" theme="dark" />
           </div>
 
         </div>

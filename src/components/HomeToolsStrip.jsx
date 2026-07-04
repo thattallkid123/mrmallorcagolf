@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import TrustpilotBadge from './TrustpilotBadge'
+import ReviewBadge from './ReviewBadge'
 
 const STRIP_TOOLS = [
   {
@@ -149,7 +149,7 @@ export default function HomeToolsStrip() {
       <div className="hts-footer">
         <Link href="/tools" className="hts-all">See all free tools</Link>
         <p className="hts-fineprint">Free. No sign-up to use the tools. Built by a UK PGA Advanced Professional based in Mallorca.</p>
-        <TrustpilotBadge variant="mini" />
+        <ReviewBadge variant="mini" />
       </div>
     </aside>
   )

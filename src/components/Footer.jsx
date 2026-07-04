@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { NAV_LOCALES, getLegalPath } from '../lib/site'
-import TrustpilotBadge from './TrustpilotBadge'
+import ReviewBadge from './ReviewBadge'
 
 const FOOTER_COPY = {
   en: {
@@ -185,7 +185,7 @@ export default function Footer({ lang }) {
       </div>
 
       <div className="footer__trust">
-        <TrustpilotBadge variant="footer-block" />
+        <ReviewBadge variant="footer-block" />
       </div>
 
       <div className="footer__bottom">
@@ -210,6 +210,5 @@ export default function Footer({ lang }) {
     </footer>
   )
 }
-
 
 

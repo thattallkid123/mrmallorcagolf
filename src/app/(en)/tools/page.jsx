@@ -1,6 +1,6 @@
 import PageLayout from '../../../components/PageLayout'
 import Link from 'next/link'
-import TrustpilotBadge from '../../../components/TrustpilotBadge'
+import ReviewBadge from '../../../components/ReviewBadge'
 import { buildPageMetadata } from '../../../lib/page-metadata'
 
 export const dynamic = 'force-dynamic'
@@ -301,7 +301,7 @@ export default function ToolsIndex() {
               These tools give you a starting point: a shortlist, an estimate, a plan. When you're ready to make it real, I confirm tee times, arrange access at members-only courses, and build the trip around your golf. Nothing to pay until you decide to book.
             </p>
             <div style={{ marginTop: 14 }}>
-              <TrustpilotBadge variant="text" theme="light" />
+              <ReviewBadge variant="text" theme="light" />
             </div>
           </div>
         </div>

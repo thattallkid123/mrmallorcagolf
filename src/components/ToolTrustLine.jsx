@@ -1,4 +1,4 @@
-import TrustpilotBadge from './TrustpilotBadge'
+import ReviewBadge from './ReviewBadge'
 
 export default function ToolTrustLine() {
   return (
@@ -12,7 +12,7 @@ export default function ToolTrustLine() {
         padding: '18px 24px 0',
       }}
     >
-      <TrustpilotBadge variant="mini" />
+      <ReviewBadge variant="mini" />
       <p
         style={{
           fontFamily: "'Jost', sans-serif",

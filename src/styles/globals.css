@@ -2193,41 +2193,41 @@ body {
 .promise-block p { font-family: var(--font-serif); font-style: italic; font-size: 1.02rem; color: rgba(255,255,255,0.77); line-height: 1.62; margin-bottom: 8px; }
 .promise-block cite { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; color: var(--gold-light); font-style: normal; }
 
-/* Trustpilot badge */
-.tp-badge { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; line-height: 1; }
-.tp-stars { display: inline-flex; align-items: center; gap: 1px; }
-.tp-badge__score { font-size: 0.82rem; font-weight: 600; color: #00b67a; letter-spacing: 0.01em; }
-.tp-badge__divider { color: rgba(255,255,255,0.25); font-size: 0.75rem; }
-.tp-badge__count { font-size: 0.75rem; color: rgba(255,255,255,0.5); }
-.tp-badge__brand { font-size: 0.75rem; font-weight: 500; color: rgba(255,255,255,0.45); letter-spacing: 0.03em; }
-.tp-badge:hover .tp-badge__brand { color: #00b67a; }
-.tp-badge--compact { margin-top: 12px; }
-.tp-badge--mini .tp-badge__score { font-size: 0.72rem; }
-.tp-badge--mini .tp-badge__brand { font-size: 0.68rem; }
+/* Review badge */
+.review-badge { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; line-height: 1; }
+.review-stars { display: inline-flex; align-items: center; gap: 1px; }
+.review-badge__score { font-size: 0.82rem; font-weight: 600; color: var(--gold, #B8973C); letter-spacing: 0.01em; }
+.review-badge__divider { color: rgba(26,25,22,0.25); font-size: 0.75rem; }
+.review-badge__count { font-size: 0.75rem; color: rgba(26,25,22,0.55); }
+.review-badge__brand { font-size: 0.75rem; font-weight: 500; color: rgba(26,25,22,0.58); letter-spacing: 0.03em; }
+.review-badge:hover .review-badge__brand { color: var(--gold, #B8973C); }
+.review-badge--compact { margin-top: 12px; }
+.review-badge--mini .review-badge__score { font-size: 0.72rem; }
+.review-badge--mini .review-badge__brand { font-size: 0.68rem; }
+.review-badge--mini .review-badge__count { font-size: 0.68rem; }
 
-/* Trustpilot footer block (Option B) */
+/* Review footer block */
 .footer__trust { grid-column: 1 / -1; border-top: 0.5px solid rgba(255,255,255,0.08); padding: 28px 0 20px; }
-.tp-footer-block { display: inline-flex; flex-direction: column; gap: 6px; text-decoration: none; }
-.tp-footer-block__eyebrow { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin: 0; }
-.tp-footer-block__rating { display: flex; align-items: center; gap: 8px; }
-.tp-footer-block__score { font-size: 1.5rem; font-weight: 500; color: #fff; letter-spacing: -0.01em; line-height: 1; }
-.tp-footer-block__out-of { font-size: 0.85rem; color: rgba(255,255,255,0.35); }
-.tp-footer-block__count { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin: 0; letter-spacing: 0.02em; }
-.tp-footer-block__brand { color: #00b67a; font-weight: 500; }
-.tp-footer-block:hover .tp-footer-block__brand { text-decoration: underline; }
+.review-footer-block { display: inline-flex; flex-direction: column; gap: 6px; text-decoration: none; }
+.review-footer-block__eyebrow { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin: 0; }
+.review-footer-block__rating { display: flex; align-items: center; gap: 8px; }
+.review-footer-block__score { font-size: 1.5rem; font-weight: 500; color: #fff; letter-spacing: -0.01em; line-height: 1; }
+.review-footer-block__out-of { font-size: 0.85rem; color: rgba(255,255,255,0.35); }
+.review-footer-block__count { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin: 0; letter-spacing: 0.02em; }
+.review-footer-block:hover .review-footer-block__eyebrow { color: var(--gold, #B8973C); }
 
-/* Trustpilot text-only badge (Option C — boxless, centred) */
-.tp-text { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; text-decoration: none; }
-.tp-text .tp-stars { gap: 2px; }
-.tp-text__line { font-size: 0.78rem; letter-spacing: 0.04em; line-height: 1; }
-.tp-text__score { font-weight: 600; }
-.tp-text__brand { font-weight: 500; color: #00b67a; }
-.tp-text__count { opacity: 0.7; }
-.tp-text--dark .tp-text__line { color: rgba(255,255,255,0.62); }
-.tp-text--dark .tp-text__score { color: #fff; }
-.tp-text--light .tp-text__line { color: rgba(26,25,22,0.6); }
-.tp-text--light .tp-text__score { color: #1a1916; }
-.tp-text:hover .tp-text__brand { text-decoration: underline; }
+/* Review text-only badge */
+.review-text { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; text-decoration: none; }
+.review-text .review-stars { gap: 2px; }
+.review-text__line { font-size: 0.78rem; letter-spacing: 0.04em; line-height: 1.25; text-align: center; }
+.review-text__score { font-weight: 600; }
+.review-text__brand { font-weight: 500; color: var(--gold, #B8973C); }
+.review-text__count { opacity: 0.7; }
+.review-text--dark .review-text__line { color: rgba(255,255,255,0.62); }
+.review-text--dark .review-text__score { color: #fff; }
+.review-text--light .review-text__line { color: rgba(26,25,22,0.6); }
+.review-text--light .review-text__score { color: #1a1916; }
+.review-text:hover .review-text__brand { text-decoration: underline; }
 
 /* Contact: trust centred in the space below the contact cards */
 .contact-trust { margin: auto 0; padding-top: 0.5rem; display: flex; justify-content: center; position: relative; z-index: 1; }
