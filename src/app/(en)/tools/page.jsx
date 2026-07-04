@@ -21,12 +21,20 @@ const TOOLS = [
     cta: 'Find my courses',
   },
   {
-    href: '/handicap-checker.html',
+    href: '/tools/handicap-checker',
     eyebrow: 'Access check',
     title: 'Can I play it?',
     desc: 'Enter your handicap and group size. See instantly which of Mallorca\'s courses you can book, which need a certificate, and where Andy can arrange access.',
     time: '< 1 min',
     cta: 'Check my access',
+  },
+  {
+    href: '/tools/green-fees',
+    eyebrow: 'Price comparison',
+    title: 'Green fee comparison',
+    desc: 'All 24 courses in one honest table: approximate green fees, buggy costs, walking rules and handicap limits, with a one-line verdict from Andy on each.',
+    time: '< 1 min',
+    cta: 'Compare green fees',
   },
   {
     href: '/tools/golf-day-builder',

@@ -5,6 +5,11 @@
   ],
   "redirects": [
     {
+      "source": "/handicap-checker.html",
+      "destination": "/tools/handicap-checker",
+      "permanent": true
+    },
+    {
       "source": "/coaching",
       "destination": "/play-with-a-pro",
       "permanent": true

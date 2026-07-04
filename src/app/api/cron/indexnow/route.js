@@ -23,6 +23,9 @@ const URLS = [
   '/guides/play-with-a-pro-explained',
   '/play-with-a-pro',
   '/golf-courses',
+  '/tools',
+  '/tools/handicap-checker',
+  '/tools/green-fees',
 ].map((path) => `${SITE_ORIGIN}${path}`)
 
 export async function GET(request) {

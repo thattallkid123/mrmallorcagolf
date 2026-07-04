@@ -34,6 +34,8 @@ const LAST_MODIFIED_BY_PATH = {
   '/contact': '2026-04-01',
   '/plan-your-trip': '2026-05-01',
   '/course-selector': '2026-06-01',
+  '/tools/handicap-checker': '2026-07-04',
+  '/tools/green-fees': '2026-07-04',
 }
 
 export default function sitemap() {

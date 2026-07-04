@@ -1,0 +1,438 @@
+'use client'
+
+import { useRef, useState } from 'react'
+import Link from 'next/link'
+import ToolTrustLine from '../../../../components/ToolTrustLine'
+
+/* =====================================================================
+   Course access data — from MMG_ENCYCLOPAEDIA_DATA_MASTER.md
+   M/F: max handicap (men/women); cert: certificate required at booking;
+   strict: club enforces limits rigidly; publicAccess: pay-and-play;
+   restricted: members/guests/hotel-only; pairing: club commonly pairs
+   solo/duo bookings with other guests in season; region: island area.
+   ===================================================================== */
+const COURSES = [
+  // PALMA REGION
+  { name: 'Golf Son Gual',          region: 'palma',     M: 33, F: 35, cert: true,  pairing: true },
+  { name: 'Golf Son Vida',          region: 'palma',     M: 36, F: 36, cert: true },
+  { name: 'Son Muntaner',           region: 'palma',     M: 36, F: 36, pairing: true },
+  { name: 'Golf Son Quint',         region: 'palma',     M: 36, F: 36, pairing: true },
+  { name: 'T Golf Palma',           region: 'palma',     M: 34, F: 36, pairing: true },
+  { name: 'Palma Pitch & Putt',     region: 'palma',     M: 54, F: 54, publicAccess: true },
+  { name: 'Golf Son Termes',        region: 'palma',     M: 36, F: 36, cert: true,  pairing: true },
+
+  // SOUTHWEST REGION
+  { name: 'Golf Santa Ponsa 1',     region: 'southwest', M: 28, F: 36, cert: true, publicAccess: true },
+  { name: 'Golf Santa Ponsa 2',     region: 'southwest', M: 28, F: 36, cert: true, restricted: 'Members/guests only — contact Andy' },
+  { name: 'Golf Santa Ponsa 3',     region: 'southwest', M: 28, F: 36, cert: true, restricted: 'Members/guests only — contact Andy' },
+  { name: 'Real Golf de Bendinat',  region: 'southwest', M: 36, F: 36, pairing: true },
+  { name: 'T Golf Calvià',          region: 'southwest', M: 28, F: 34, pairing: true },
+  { name: 'Golf de Andratx',        region: 'southwest', M: 28, F: 36, cert: true, strict: true, pairing: true },
+
+  // SOUTH REGION
+  { name: 'Golf Maioris',           region: 'south',     M: 36, F: 36, publicAccess: true },
+  { name: 'Golf Son Antem East',    region: 'south',     M: 54, F: 54, pairing: true },
+  { name: 'Golf Son Antem West',    region: 'south',     M: 27, F: 35, pairing: true },
+
+  // EAST REGION
+  { name: 'Capdepera Golf',         region: 'east',      M: 36, F: 36, cert: true,  pairing: true },
+  { name: 'Canyamel Golf',          region: 'east',      M: 36, F: 45, pairing: true },
+  { name: 'Pula Golf',              region: 'east',      M: 34, F: 36, pairing: true },
+  { name: 'Golf Club Son Servera',  region: 'east',      M: 36, F: 36, cert: true, publicAccess: true },
+  { name: "Vall d'Or Golf",         region: 'east',      M: 36, F: 36, pairing: true },
+  { name: 'Reserva Rotana',         region: 'east',      M: 36, F: 36, cert: true, restricted: 'Hotel guests only — cannot arrange' },
+
+  // NORTH REGION
+  { name: 'Club de Golf Alcanada',  region: 'north',     M: 33, F: 35, cert: true,  pairing: true },
+  { name: 'Golf Pollença',          region: 'north',     M: 36, F: 36, publicAccess: true },
+]
+
+const BORDERLINE_MARGIN = 8
+
+const AREA_LABELS = {
+  any: 'Anywhere on the island',
+  palma: 'Palma & around',
+  southwest: 'Southwest (Calvià, Santa Ponsa, Andratx)',
+  south: 'South (Llucmajor, Son Antem)',
+  east: 'East (Capdepera, Canyamel, Pula)',
+  north: 'North (Alcúdia, Pollença)',
+}
+
+function tierFromHcp(hcp, noHcp) {
+  if (noHcp) return { key: 'new', label: 'a newer golfer' }
+  if (hcp <= 9) return { key: 'low', label: 'a low-handicap golfer' }
+  if (hcp <= 18) return { key: 'mid', label: 'a solid club golfer' }
+  if (hcp <= 28) return { key: 'improver', label: 'an improving golfer' }
+  return { key: 'relaxed', label: 'a relaxed, higher-handicap golfer' }
+}
+
+function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender) {
+  const limit = gender === 'M' ? course.M : course.F
+
+  if (course.restricted) {
+    return {
+      status: 'warn',
+      label: '⚠️ ' + course.restricted,
+      detail: course.restricted === 'Hotel guests only — cannot arrange'
+        ? 'This is a private hotel course. Access requires staying at the property.'
+        : 'This course is for members and their guests. Contact Andy to arrange access if possible.',
+    }
+  }
+
+  if (course.publicAccess && !course.cert) {
+    return {
+      status: 'ok',
+      label: '✅ You can book — no restrictions',
+      detail: 'Pay-and-play access. No handicap certificate needed here.',
+    }
+  }
+
+  if (!hasHcp) {
+    if (course.cert) {
+      return {
+        status: 'info',
+        label: 'ℹ️ Certificate required',
+        detail: `This club asks for a valid WHS/EGA handicap certificate at booking. You'll need to obtain one first — or ask Andy about playing here as part of a coached round.`,
+      }
+    }
+    return {
+      status: 'warn',
+      label: '⚠️ Borderline — enquire',
+      detail: `No official handicap is usually fine here for competent players, but it's at the club's discretion. Andy can often arrange access — enquire.`,
+      borderline: true,
+    }
+  }
+
+  if (hcp > limit) {
+    if (!course.strict && hcp <= limit + BORDERLINE_MARGIN) {
+      return {
+        status: 'warn',
+        label: '⚠️ Borderline — enquire',
+        detail: `The published limit is ${limit} for ${gender === 'M' ? 'men' : 'women'} and you're at ${hcp}. Andy can often arrange access at this course — enquire.`,
+        borderline: true,
+      }
+    }
+    return {
+      status: 'no',
+      label: '❌ Handicap limit',
+      detail: `This course requires ${limit} or lower for ${gender === 'M' ? 'men' : 'women'}${course.strict ? ' and enforces it strictly' : ''}. Worth revisiting once your handicap comes down.`,
+    }
+  }
+
+  if (course.cert && !hasCert) {
+    return {
+      status: 'info',
+      label: 'ℹ️ Certificate required',
+      detail: `Your handicap qualifies, but this club asks for a valid WHS/EGA certificate at booking. You'll need to obtain one first — a digital app certificate is accepted.`,
+    }
+  }
+
+  if (course.pairing && groupSize <= 2) {
+    const pairingNote = groupSize === 1
+      ? 'You can book, but this course pairs solo players with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.'
+      : 'You can book, but this course pairs two-balls with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.'
+    return { status: 'warn', label: '⚠️ Pairing likely', detail: pairingNote }
+  }
+
+  if (course.cert) {
+    return {
+      status: 'ok',
+      label: '✅ You can book — certificate required (you have one)',
+      detail: `Your handicap qualifies and your certificate covers the club's requirement. Bring it (or the app) on the day.`,
+    }
+  }
+  return {
+    status: 'ok',
+    label: '✅ You can book — no restrictions',
+    detail: `Your handicap is comfortably within this course's limit.`,
+  }
+}
+
+const GROUP_ORDER = [
+  { key: 'ok',   title: 'You can book' },
+  { key: 'warn', title: 'Worth an enquiry' },
+  { key: 'info', title: 'Certificate needed first' },
+  { key: 'no',   title: 'Out of reach for now' },
+]
+
+export default function HandicapCheckerClient() {
+  const [hcp, setHcp] = useState('')
+  const [noHcp, setNoHcp] = useState(false)
+  const [gender, setGender] = useState('M')
+  const [cert, setCert] = useState('yes')
+  const [group, setGroup] = useState('2')
+  const [area, setArea] = useState('any')
+  const [result, setResult] = useState(null)
+  const [email, setEmail] = useState('')
+  const [emailState, setEmailState] = useState('idle') // idle | sending | ok | err
+  const [emailMsg, setEmailMsg] = useState('')
+  const resultsRef = useRef(null)
+
+  function runCheck() {
+    if (!noHcp && hcp === '') return
+    const hcpVal = noHcp ? null : Math.min(54, Math.max(0, parseFloat(hcp)))
+    const hasCert = cert === 'yes' || cert === 'digital'
+    const groupSize = parseInt(group, 10)
+    const results = COURSES.map((c) => ({ course: c, r: evaluate(c, hcpVal, !noHcp, hasCert, groupSize, gender) }))
+
+    const tier = tierFromHcp(hcpVal, noHcp)
+    const bookable = results.filter((x) => x.r.status === 'ok')
+    const areaBookable = area === 'any' ? bookable : bookable.filter((x) => x.course.region === area)
+    const recPool = (areaBookable.length ? areaBookable : bookable).slice(0, 3).map((x) => x.course.name)
+
+    setResult({ hcp: noHcp ? 'none' : hcpVal, tier, results, recPool, area })
+    setEmailState('idle')
+    setEmailMsg('')
+    setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 40)
+  }
+
+  async function sendEmail() {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setEmailState('err')
+      setEmailMsg('Please enter a valid email address.')
+      return
+    }
+    if (!result) {
+      setEmailState('err')
+      setEmailMsg('Run the checker first so we have results to send.')
+      return
+    }
+    setEmailState('sending')
+    setEmailMsg('')
+    const summary = result.results.map(({ course, r }) => `${course.name}: ${r.label.replace(/^[^\w]+\s*/, '')}`)
+    try {
+      const res = await fetch('/api/handicap-checker-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          handicap: result.hcp,
+          gender: gender === 'M' ? 'Male' : 'Female',
+          area: AREA_LABELS[result.area],
+          tier: result.tier.label,
+          recommendations: result.recPool,
+          summary,
+        }),
+      })
+      if (res.ok) {
+        setEmailState('ok')
+        setEmailMsg('Done — your access list is on its way to your inbox.')
+        setEmail('')
+      } else {
+        setEmailState('err')
+        setEmailMsg('Something went wrong — please try again in a moment.')
+      }
+    } catch (e) {
+      setEmailState('err')
+      setEmailMsg('Something went wrong — please try again in a moment.')
+    }
+  }
+
+  const okCount = result ? result.results.filter((x) => x.r.status === 'ok').length : 0
+  const warnCount = result ? result.results.filter((x) => x.r.status === 'warn').length : 0
+  const hasBorderline = result ? result.results.some((x) => x.r.borderline) : false
+
+  return (
+    <div className="hc">
+      <style>{`
+        .hc { --pine:#2D4A3E; --pine-dark:#223A30; --gold:#B8973C; --cream:#F7F4EF;
+          --deep:#1A1916; --muted:#6B6862; --ok:#2D6A44; --ok-bg:#EAF3EC; --warn:#8a6f26;
+          --warn-bg:#F6EFDD; --no:#8a3a26; --no-bg:#F5E7E2; --info:#3B5A72; --info-bg:#E8EFF4;
+          background:var(--cream); color:var(--deep); }
+        .hc-hero { background:var(--pine); padding:52px 24px 44px; text-align:center; color:#fff; }
+        .hc-eyebrow { font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em;
+          text-transform:uppercase; color:var(--gold); }
+        .hc-hero h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500;
+          font-size:clamp(1.9rem,4vw,2.8rem); margin:10px 0; }
+        .hc-hero .sub { font-family:'Jost',sans-serif; font-weight:300; font-size:.95rem;
+          color:rgba(255,255,255,.85); max-width:620px; margin:0 auto; line-height:1.6; }
+        .hc-updated { display:inline-block; margin-top:18px; border:1px solid var(--gold); color:var(--gold);
+          font-family:'Jost',sans-serif; font-size:.75rem; letter-spacing:.1em; text-transform:uppercase;
+          padding:6px 14px; border-radius:2px; }
+        .hc-main { max-width:860px; margin:0 auto; padding:28px 20px 80px; font-family:'Jost',sans-serif; }
+        .hc-panel { background:#fff; border-radius:6px; padding:26px 24px; box-shadow:0 2px 12px rgba(45,74,62,.08); margin-bottom:26px; }
+        .hc-panel h2 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; color:var(--pine); font-size:1.4rem; margin-bottom:18px; }
+        .hc-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px 22px; }
+        @media (max-width:560px){ .hc-grid { grid-template-columns:1fr; } }
+        .hc-field .top { display:block; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:7px; }
+        .hc-field input[type=number], .hc-field select { font-family:'Jost',sans-serif; font-size:.95rem; width:100%;
+          padding:10px 12px; border:1px solid rgba(45,74,62,.3); border-radius:4px; background:#fff; color:var(--deep); }
+        .hc-field input:focus, .hc-field select:focus { outline:2px solid var(--gold); outline-offset:1px; }
+        .hc-seg { display:flex; flex-wrap:wrap; gap:8px; }
+        .hc-seg button { font-family:'Jost',sans-serif; font-size:.88rem; cursor:pointer; padding:9px 16px;
+          border:1px solid rgba(45,74,62,.3); border-radius:4px; background:#fff; color:var(--deep); transition:all .15s; }
+        .hc-seg button.active { background:var(--pine); color:#fff; border-color:var(--pine); }
+        .hc-nohcp { display:flex; align-items:center; gap:8px; margin-top:9px; font-size:.85rem; color:var(--muted); cursor:pointer; }
+        .hc-nohcp input { accent-color:var(--pine); width:16px; height:16px; cursor:pointer; }
+        .hc-field-full { grid-column:1 / -1; }
+        .hc-check { margin-top:22px; width:100%; background:var(--gold); color:#fff; border:none; cursor:pointer;
+          font-family:'Jost',sans-serif; font-size:.95rem; letter-spacing:.08em; text-transform:uppercase; padding:14px 20px; border-radius:4px; transition:background .2s; }
+        .hc-check:hover { background:#a5862f; }
+        .hc-summary { background:var(--pine); color:#fff; border-radius:6px; padding:20px 24px; margin-bottom:22px; line-height:1.6; font-size:.95rem; }
+        .hc-summary strong { color:var(--gold); font-weight:500; }
+        .hc-rec { background:#fff; border-left:4px solid var(--gold); border-radius:6px; padding:18px 20px; margin-bottom:22px; box-shadow:0 2px 8px rgba(45,74,62,.07); }
+        .hc-rec .lbl { font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); margin-bottom:6px; }
+        .hc-rec p { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.12rem; color:#2C2A27; line-height:1.6; }
+        .hc-group-head { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.35rem; font-weight:500; color:var(--pine);
+          margin:26px 0 12px; display:flex; align-items:baseline; gap:10px; }
+        .hc-group-head .count { font-family:'Jost',sans-serif; font-size:.8rem; color:var(--muted); }
+        .hc-cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+        @media (max-width:640px){ .hc-cards { grid-template-columns:1fr; } }
+        .hc-card { background:#fff; border-radius:6px; padding:16px 18px; box-shadow:0 2px 8px rgba(45,74,62,.07); border-left:4px solid var(--muted); }
+        .hc-card.ok { border-left-color:var(--ok); } .hc-card.warn { border-left-color:var(--gold); }
+        .hc-card.no { border-left-color:var(--no); } .hc-card.info { border-left-color:var(--info); }
+        .hc-card .name { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.15rem; font-weight:500; color:var(--pine); margin-bottom:6px; }
+        .hc-badge { display:inline-block; font-size:.72rem; letter-spacing:.04em; padding:3px 10px; border-radius:10px; margin-bottom:8px; }
+        .hc-badge.ok { background:var(--ok-bg); color:var(--ok); } .hc-badge.warn { background:var(--warn-bg); color:var(--warn); }
+        .hc-badge.no { background:var(--no-bg); color:var(--no); } .hc-badge.info { background:var(--info-bg); color:var(--info); }
+        .hc-card .detail { font-size:.84rem; color:var(--muted); line-height:1.55; }
+        .hc-card a.enquire { display:inline-block; margin-top:8px; font-size:.8rem; color:var(--gold); text-decoration:none; letter-spacing:.04em; }
+        .hc-card a.enquire:hover { text-decoration:underline; }
+        .hc-cta { background:var(--pine-dark); color:#fff; border-radius:6px; padding:24px; margin-top:30px; text-align:center; }
+        .hc-cta h3 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:1.4rem; margin-bottom:8px; }
+        .hc-cta p { font-size:.9rem; color:rgba(255,255,255,.85); margin-bottom:16px; line-height:1.6; }
+        .hc-cta a.btn { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem;
+          letter-spacing:.06em; text-transform:uppercase; padding:12px 24px; border-radius:4px; transition:background .2s; }
+        .hc-cta a.btn:hover { background:#a5862f; }
+        .hc-email { background:#fff; border-radius:6px; padding:24px; box-shadow:0 2px 12px rgba(45,74,62,.08); margin-top:26px; }
+        .hc-email h3 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; color:var(--pine); font-size:1.3rem; margin-bottom:6px; }
+        .hc-email p { font-size:.86rem; color:var(--muted); margin-bottom:14px; line-height:1.55; }
+        .hc-email-row { display:flex; gap:10px; flex-wrap:wrap; }
+        .hc-email-row input { flex:1; min-width:220px; font-family:'Jost',sans-serif; font-size:.95rem; padding:11px 12px; border:1px solid rgba(45,74,62,.3); border-radius:4px; }
+        .hc-email-row input:focus { outline:2px solid var(--gold); outline-offset:1px; }
+        .hc-email-row button { background:var(--pine); color:#fff; border:none; cursor:pointer; font-family:'Jost',sans-serif;
+          font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:11px 20px; border-radius:4px; transition:background .2s; }
+        .hc-email-row button:hover { background:var(--pine-dark); }
+        .hc-email-row button:disabled { opacity:.6; cursor:default; }
+        .hc-email-msg { font-size:.85rem; margin-top:10px; }
+        .hc-email-msg.ok { color:var(--ok); } .hc-email-msg.err { color:var(--no); }
+        .hc-selector { text-align:center; margin-top:22px; font-size:.95rem; }
+        .hc-selector a { color:var(--pine); text-decoration:none; border-bottom:1px solid var(--gold); }
+        .hc-selector a:hover { color:var(--gold); }
+        .hc-foot { font-size:.78rem; color:var(--muted); margin-top:34px; line-height:1.6; border-top:1px solid rgba(45,74,62,.15); padding-top:16px; }
+      `}</style>
+
+      <section className="hc-hero">
+        <span className="hc-eyebrow">Free tool</span>
+        <h1>Can I Play It?</h1>
+        <p className="sub">Enter your handicap and see instantly which of Mallorca&rsquo;s courses you can book, which need a certificate, and where I can arrange access for you.</p>
+        <div><span className="hc-updated">Updated July 2026</span></div>
+      </section>
+
+      <ToolTrustLine />
+
+      <main className="hc-main">
+        <section className="hc-panel">
+          <h2>Your details</h2>
+          <div className="hc-grid">
+            <div className="hc-field">
+              <label className="top" htmlFor="hcp">Handicap index</label>
+              <input type="number" id="hcp" min="0" max="54" step="0.1" placeholder="e.g. 18.4"
+                value={hcp} disabled={noHcp} onChange={(e) => setHcp(e.target.value)} />
+              <label className="hc-nohcp">
+                <input type="checkbox" checked={noHcp} onChange={(e) => setNoHcp(e.target.checked)} />
+                I don&rsquo;t have an official handicap
+              </label>
+            </div>
+            <div className="hc-field">
+              <span className="top">Gender</span>
+              <div className="hc-seg">
+                {[['M', 'Male'], ['F', 'Female']].map(([v, l]) => (
+                  <button key={v} type="button" className={gender === v ? 'active' : ''} onClick={() => setGender(v)}>{l}</button>
+                ))}
+              </div>
+            </div>
+            <div className="hc-field">
+              <span className="top">Handicap certificate</span>
+              <div className="hc-seg">
+                {[['yes', 'Yes'], ['digital', 'Digital (app)'], ['no', 'No']].map(([v, l]) => (
+                  <button key={v} type="button" className={cert === v ? 'active' : ''} onClick={() => setCert(v)}>{l}</button>
+                ))}
+              </div>
+            </div>
+            <div className="hc-field">
+              <span className="top">Group size</span>
+              <div className="hc-seg">
+                {[['1', '1'], ['2', '2'], ['3', '3'], ['4', '4'], ['5', '4+']].map(([v, l]) => (
+                  <button key={v} type="button" className={group === v ? 'active' : ''} onClick={() => setGroup(v)}>{l}</button>
+                ))}
+              </div>
+            </div>
+            <div className="hc-field hc-field-full">
+              <label className="top" htmlFor="area">Where are you based or staying? <span style={{ textTransform: 'none', letterSpacing: 0 }}>(optional — tailors your recommendation)</span></label>
+              <select id="area" value={area} onChange={(e) => setArea(e.target.value)}>
+                {Object.entries(AREA_LABELS).map(([v, l]) => (
+                  <option key={v} value={v}>{l}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+          <button className="hc-check" onClick={runCheck}>Check my access</button>
+        </section>
+
+        {result && (
+          <section ref={resultsRef}>
+            <div className="hc-summary">
+              {result.hcp === 'none'
+                ? <>Without an official handicap you can still book <strong>{okCount}</strong> of Mallorca&rsquo;s courses outright, and <strong>{warnCount}</strong> more are worth an enquiry. The premium member clubs will want a certificate first.</>
+                : <>Playing off <strong>{result.hcp}</strong>, you can book <strong>{okCount}</strong> of Mallorca&rsquo;s courses{warnCount ? <>, with <strong>{warnCount}</strong> more worth an enquiry or carrying a pairing note</> : ''}.</>}
+            </div>
+
+            {result.recPool.length > 0 && (
+              <div className="hc-rec">
+                <div className="lbl">Andy&rsquo;s pick for you</div>
+                <p>
+                  As {result.tier.label}{result.area !== 'any' ? ` around ${AREA_LABELS[result.area].replace(/ \(.*\)/, '')}` : ''}, I&rsquo;d start with {result.recPool.slice(0, 3).join(', ')}. Tell me your dates and I&rsquo;ll build the round order and tee times around your golf.
+                </p>
+              </div>
+            )}
+
+            {GROUP_ORDER.map((g) => {
+              const items = result.results.filter((x) => x.r.status === g.key)
+              if (!items.length) return null
+              return (
+                <div key={g.key}>
+                  <h3 className="hc-group-head">{g.title} <span className="count">{items.length} course{items.length > 1 ? 's' : ''}</span></h3>
+                  <div className="hc-cards">
+                    {items.map(({ course, r }) => (
+                      <div key={course.name} className={`hc-card ${r.status}`}>
+                        <div className="name">{course.name}</div>
+                        <span className={`hc-badge ${r.status}`}>{r.label}</span>
+                        <div className="detail">{r.detail}</div>
+                        {r.borderline && <Link className="enquire" href="/contact">Ask Andy about access →</Link>}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )
+            })}
+
+            {hasBorderline && (
+              <div className="hc-cta">
+                <h3>Borderline handicap?</h3>
+                <p>Course handicap limits in Mallorca are more flexible than the published numbers suggest. Andy can often arrange access when you&rsquo;re a few shots over the limit — especially midweek and outside peak season.</p>
+                <Link className="btn" href="/contact">Enquire About Access</Link>
+              </div>
+            )}
+
+            <div className="hc-email">
+              <h3>Email my access list</h3>
+              <p>Get your personal course access list and Andy&rsquo;s pick sent to your inbox, plus occasional Mallorca golf planning notes. No spam, unsubscribe any time.</p>
+              <div className="hc-email-row">
+                <input type="email" placeholder="you@example.com" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <button onClick={sendEmail} disabled={emailState === 'sending'}>{emailState === 'sending' ? 'Sending…' : 'Send my list'}</button>
+              </div>
+              {emailMsg && <div className={`hc-email-msg ${emailState === 'ok' ? 'ok' : 'err'}`}>{emailMsg}</div>}
+            </div>
+
+            <p className="hc-selector">Not sure which of these to play? <Link href="/tools/course-selector">Try the course selector →</Link></p>
+
+            <p className="hc-foot">
+              Handicap limits and certificate rules are set by each club and can change without notice — always confirmed at the time of booking. A daily Spanish Golf Federation licence (€3) applies at most member clubs for non-federated visitors. This checker is a planning guide, not a booking guarantee.
+            </p>
+          </section>
+        )}
+      </main>
+    </div>
+  )
+}

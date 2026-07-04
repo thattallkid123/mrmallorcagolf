@@ -8,7 +8,7 @@ const STRIP_TOOLS = [
     desc: 'A shortlist of three courses matched to your group.',
   },
   {
-    href: '/handicap-checker.html',
+    href: '/tools/handicap-checker',
     label: 'Can I play it?',
     desc: 'Check handicap limits and certificate rules for every course.',
   },

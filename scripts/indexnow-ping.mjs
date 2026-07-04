@@ -25,6 +25,9 @@ const URLS = [
   'https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained',
   'https://www.mrmallorcagolf.com/play-with-a-pro',
   'https://www.mrmallorcagolf.com/golf-courses',
+  'https://www.mrmallorcagolf.com/tools',
+  'https://www.mrmallorcagolf.com/tools/handicap-checker',
+  'https://www.mrmallorcagolf.com/tools/green-fees',
 ]
 
 const body = JSON.stringify({ host: HOST, key: KEY, keyLocation: `https://${HOST}/${KEY}.txt`, urlList: URLS })

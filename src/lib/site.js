@@ -24,6 +24,8 @@ const EN_ONLY_TOOL_PATHS = new Set([
   '/tools/golf-day-builder',
   '/tools/golf-cost-calculator',
   '/tools/hotel-recommender',
+  '/tools/handicap-checker',
+  '/tools/green-fees',
 ])
 const LOCALES_FOR_COURSE_SELECTOR_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
