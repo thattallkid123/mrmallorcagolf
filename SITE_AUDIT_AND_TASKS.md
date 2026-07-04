@@ -212,6 +212,21 @@ four live `src/app/(en)/tools/...` clients (and the zh selector, copy-link only)
 - [ ] `prototypes/green-fees.html` → `/green-fees` Next route, driven from pricing master JSON
 - [ ] Visible "Prices updated [date]" stamp; keep in sync via `mmg.ps1 pricing`
 
+### Set up MailerLite nurtures for the two newest groups
+**Priority:** High. **Why:** the "Trip Quote Builder" and "Handicap Access Checker" groups exist and
+capture subscribers correctly, but **neither has an automation attached** — so subscribers currently
+receive NO follow-up emails. The other 5 tools each have a nurture (Course Selector Welcome Sequence,
+Cost Guide, Trip Planner, Beginners, Course Comparison). Also, the handicap checker promises "get your
+access list by email" but nothing sends it — that email needs to be built as the automation's first
+step (or an autoresponder), otherwise the promise isn't kept.
+- [ ] Build a "Handicap Access Checker" automation: step 1 delivers the access list / a useful
+      follow-up; then a short nurture. Trigger = joins the "Handicap Access Checker" group.
+- [ ] Build a "Trip Quote Builder" automation (subscriber-facing — separate from the Resend lead
+      email that goes to Andy). Trigger = joins the "Trip Quote Builder" group.
+- [ ] Confirm whether the handicap checker's MailerLite form passes the custom fields
+      (`hcp_checker_handicap`, `hcp_checker_summary`) — the account fields now exist, but classic
+      JSONP forms only store fields mapped on the form itself.
+
 ### Email capture on Day Builder and Hotel Recommender
 **Priority:** High. **Why:** course selector and handicap checker capture email; these two don't.
 - [ ] Add an optional "email me this plan / shortlist" step at the results stage of each, reusing
@@ -234,14 +249,12 @@ four live `src/app/(en)/tools/...` clients (and the zh selector, copy-link only)
       / Outils / Herramientas / Hulpmiddelen / Verktyg / 工具)
 - [ ] Check the nav doesn't overflow on mobile with the extra item
 
-### Fix or delete the broken prototype HTML files
-**Priority:** Medium (not user-facing, but confusing/rotting). **Why:** same smart-quote corruption
-that broke the live checker.
-- [ ] `prototypes/handicap-checker.html` — superseded by the live `public/handicap-checker.html`;
-      delete it (freeze-prototype rule) or apply the same quote fix
-- [ ] `prototypes/golf-day-builder/index.html` — live tool is the React component; delete or fix
-- [ ] Extend the `check:content` corruption checker to scan `public/*.html` (and optionally
-      `prototypes/`) so broken static HTML can't ship again
+### Broken prototype HTML files — DONE (deleted 4 Jul)
+- [x] `prototypes/handicap-checker.html` — deleted (superseded by live `public/handicap-checker.html`)
+- [x] `prototypes/golf-day-builder/` — deleted (superseded by the React component); removed its dead
+      link from `prototypes/index.html`
+- [ ] **Still open:** extend the `check:content` corruption checker to scan `public/*.html` so broken
+      static HTML can't ship again (this is the gap that let the handicap checker ship broken)
 
 ### Publish sprint — clear the content backlog (audit item, 4 Jul)
 **Priority:** Highest for growth. **Why:** 16 unpublished course reviews + 12 guide drafts sit in
