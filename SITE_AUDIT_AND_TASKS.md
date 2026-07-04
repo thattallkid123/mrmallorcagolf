@@ -13,49 +13,66 @@ under "Active / In Progress". Move items between them as they land. Reference by
 
 ## ⚡ Current status — what's left to do / test / approve / push
 
-**Last session: 4 Jul 2026 (round 2).** Rebuilt the handicap checker as a proper route with an
-instant results email, promoted the green-fees table live, and dropped the calculator-subdomain 301.
+**Last worked: 4 Jul 2026.** A long build day across several rounds — all shipped and confirmed
+READY on production. Latest commit: `a68e934` (WhatsApp on all six tools). Summary of the day below;
+the only genuinely open items are in "Still open" and the Active section further down.
 
-### Shipped this session (round 2) — all built, tested, needs push
-1. **Handicap checker rebuilt as a native route** `/tools/handicap-checker` (React, site header/footer,
-   in sitemap + IndexNow, old `/handicap-checker.html` 301'd to it, static file deleted). Now has an
-   **optional area question** and an **instant results email**: on submitting their address it emails
-   the golfer their full course access list + a handicap-tier recommendation + area-based picks, via
-   Resend (`/api/handicap-checker-submit`), and adds them to the MailerLite group with fields.
-   **Verified:** 24 courses evaluate/group correctly; area rec works; email sends; MailerLite
-   subscriber + fields populate.
-2. **Green-fee comparison table promoted live** `/tools/green-fees` (React, sitemap + IndexNow, all 24
-   courses, filter/sort, mobile cards). **Verified:** renders, filters, sorts; cross-links to guides
-   and the course selector. Added cards for both on `/tools` and the handicap checker to the homepage
-   strip.
+### Shipped and live today (in order)
+1. **Handicap checker fatal bug fixed** (round 1) — the old static `handicap-checker.html` had 89 smart
+   quotes used as JS string delimiters (fatal syntax error, "Check my access" did nothing live). Fixed;
+   also fixed its `MAILERLITE_GROUP` undefined var and created the missing Trip Quote Builder MailerLite
+   fields. *(The static file is now gone — superseded by the route rebuild below.)*
+2. **Handicap checker rebuilt as a native route** `/tools/handicap-checker` (React, site header/footer,
+   sitemap + IndexNow, old `.html` 301'd, static file deleted). Added an **optional area question** and
+   an **instant results email** via Resend (`/api/handicap-checker-submit`): emails the golfer their
+   access list + a handicap-tier recommendation + area-based picks, and adds them to the MailerLite
+   group with fields.
+3. **Green-fee comparison table promoted live** `/tools/green-fees` (React, all 24 courses, filter/sort,
+   mobile cards, sitemap + IndexNow). Cross-links to guides + the course selector.
+4. **Stale tool-count copy fixed** — "five tools" → six; `/tools` meta description now lists all six.
+5. **Handicap checker output reworked from your feedback** (commit `826aef1`):
+   - **Pairing no longer repeated 12×.** Pairing courses now count as "You can book" and roll into
+     **one shared note** that just lists the course names, with honest wording (most clubs pair small
+     groups in peak season; exact private-tee costs known only for the Arabella courses + Alcanada,
+     others confirmed on enquiry).
+   - **Stopped over-promising access.** Over-limit / no-handicap / members-only now say "I can enquire,
+     but it's the club's call — no promise". Hotel-only (Rotana) moved to "Out of reach" and states it
+     can't be arranged. Results email softened to match.
+6. **/tools carousel → responsive grid** — the horizontal scroll was hiding ~4 of 7 cards; now a 3-col
+   (→2→1) grid shows all six tools at once.
+7. **WhatsApp added to all six English tools** (commit `a68e934`) — a low-friction "message Andy" path
+   in each tool's results/CTA stage, **never beside the email box** (so it doesn't weaken email
+   signups). Each link pre-fills a per-tool context message and fires uniform `whatsapp_click` +
+   `message_intent` analytics with a `tool` tag. The standalone **Chinese tool is untouched** (separate
+   `ZhCourseSelectorClient`, keeps WeChat); the course selector's other five languages got WhatsApp too
+   with localized labels.
 
-### Why "2× email" is no longer needed
-The handicap checker now **sends its own results email instantly** (Resend), so its "get your access
-list by email" promise is kept **without** any MailerLite automation. The Trip Quote Builder's promise
-is Andy's personal reply, so it needs no automated email either. **Zero MailerLite automations are
-required** for both live tools to be honest. Nurture automations are now optional extra value (see
-Active) — nothing is broken without them.
+### Google reviews migration (your change) — verified clean, nothing to fix
+Trustpilot → Google reviews (`ReviewBadge`) is a complete swap: zero `Trustpilot` references left, old
+`TrustpilotBadge.jsx` gone, all variants (`mini`/`footer-block`/`text`/`compact`) implemented, CSS is
+all `.review-*`, build passes. Worth a 30-sec eyeball of the live footer/contact badge, but structurally
+sound.
 
-### Needs your decision / approval
-- **Add "Tools" to the top nav?** Still not in the main nav (Home · About · Play With A Pro · Plan
-  Your Trip · Golf Courses · Guides · Enquire). You said "not for now" — left as-is. Reachable via the
-  homepage strip, in-guide links, footer, `/tools`.
-- **Calculator subdomain** (`calculator.mrmallorcagolf.com`): it's a *different* tool — a "Deal
-  Calculator" (green-fee/2-for-1 style), not the trip cost calculator — so **no 301 was done**. It
-  needs its own look: what is it, do you still want it, does it duplicate anything? (See Active.)
+### Why no MailerLite automations are required
+Both email-capturing tools keep their promise in code: the handicap checker sends its results email
+instantly (Resend); the Trip Quote Builder's promise is Andy's personal reply. **Zero automations
+needed** for honesty. Nurture sequences are optional extra value (see Active).
 
-### Left to test with your own eyes (after deploy)
-- Open `/tools/handicap-checker` on production, run it, enter your email, confirm the **results email
-  actually arrives** in a real inbox (Resend delivery to external addresses).
-- Open `/tools/green-fees` and sanity-check a few prices against your rate cards.
-- Course selector, day builder, hotel recommender: result-screen flows still not driven end-to-end
-  (trust line + load confirmed only). Worth a manual click-through.
+### Still open — your eyes / your call (nothing broken)
+- **Deliverability check:** run `/tools/handicap-checker` on production with your own email and confirm
+  the results email **actually lands in a real external inbox** (I can only confirm Resend accepted the
+  send). Same worth doing for the cost calculator's quote email.
+- **Green-fee price sanity:** eyeball a few numbers on `/tools/green-fees` vs your rate cards (currently
+  hardcoded from the encyclopaedia master, accurate as of Jul 2026 — not yet wired to the pricing JSON).
+- **Deal Calculator subdomain** (`calculator.mrmallorcagolf.com`): a *different* tool (green-fee/2-for-1
+  "Deal Calculator"), deliberately **not** 301'd. Decide what it is / whether to keep it.
+- **"Tools" in top nav:** you said not for now — left off. Reachable via homepage strip, footer, `/tools`.
+- Optional: MailerLite nurture sequences for the two newest groups; add handicap-checker inline CTA on
+  strict-limit reviews; wire green-fees to the pricing JSON. All in Active below.
 
-### Fixed in round 1 (earlier same day, already live)
-1. **Handicap checker was completely broken in production** — 89 smart quotes used as JS string
-   delimiters (fatal syntax error). Fixed. *(Now superseded by the full route rebuild above.)*
-2. **Its email capture referenced an undefined `MAILERLITE_GROUP`** — fixed. Also created the missing
-   Trip Quote Builder MailerLite fields so quote submissions enrich the CRM record.
+> Note: several unrelated files are uncommitted in the working tree (IntentTracker, analytics,
+> PageLayout, Footer, root-layout-shared, site-ops scripts) — that is separate work-in-progress and was
+> deliberately **not** swept into today's commits.
 
 ---
 
@@ -231,16 +248,18 @@ not the trip cost calculator — so it was NOT 301'd. Needs a proper look.
 - [ ] Confirm what it does and whether it's still wanted
 - [ ] Decide: fold into the main site as a tool, retire it, or leave it — then handle SEO accordingly
 
-### Email capture on Day Builder and Hotel Recommender
-**Priority:** High. **Why:** course selector and handicap checker capture email; these two don't.
-- [ ] Add an optional "email me this plan / shortlist" step at the results stage of each, reusing
-      the MailerLite JSONP pattern from `CourseSelectorToolClient.jsx` (new group + form per tool)
+### Email capture on Day Builder and Hotel Recommender — DONE (verified 4 Jul)
+Both already capture email at the results stage: the day builder has "email me this plan"
+(`emailItinerary`) and the hotel recommender has "Email me my shortlist" (`sendEmail`). All six tools
+now have an email path; all six also now have a WhatsApp path (commit `a68e934`). Nothing open here.
 
 ### Consolidate the tools estate (audit item, 4 Jul)
-**Priority:** High. **Why:** sprawl and drift.
-- [ ] Fix `/tools` index copy count (meta/hero said "Four"/"Five", neither counted the checker)
-- [ ] Rule: once a tool is live, delete/freeze its `prototypes/` copy (the cost calculator is
-      currently maintained in two places)
+**Priority:** Medium. **Why:** sprawl and drift.
+- [x] Fix `/tools` index copy count — now "six", count-agnostic wording, meta lists all six
+- [x] `/tools` layout: scroll carousel → responsive grid so all six are visible at once
+- [ ] Rule: once a tool is live, delete/freeze its `prototypes/` copy (the cost calculator + others
+      are still duplicated under `prototypes/`; green-fees + handicap prototypes now superseded by live
+      routes and can be frozen/removed)
 - [ ] Then freeze — no new tools until an existing one demonstrably produces enquiries
 
 ### Add "Tools" to the top navigation (needs approval)
