@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import ToolTrustLine from '../../../../components/ToolTrustLine'
 
 /* =====================================================================
    COST DATA. Real 2026 Mallorca pricing ranges (EUR).
@@ -380,6 +381,8 @@ export default function GolfCostCalculatorClient() {
         <h1 className="gcc-h1">Mallorca golf trip cost calculator</h1>
         <p className="gcc-sub">Three steps. A cost estimate for your trip with a suggested course mix.</p>
       </section>
+
+      <ToolTrustLine />
 
       <div className="gcc-wrap">
         {/* PROGRESS */}

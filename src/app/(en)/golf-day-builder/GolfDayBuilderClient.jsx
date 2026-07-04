@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import ToolTrustLine from '../../../components/ToolTrustLine'
 
 const COURSE_IMGS = {
   'son-gual':         '/images/courses/son-gual.webp',
@@ -569,6 +570,8 @@ export default function GolfDayBuilderClient() {
         <h1 className="gdb-h1">Build your perfect Mallorca golf day</h1>
         <p className="gdb-sub">Eight questions. A complete day plan with course, lunch, and add-ons, built around your group.</p>
       </section>
+
+      <ToolTrustLine />
 
       <div className="gdb-wrap">
 

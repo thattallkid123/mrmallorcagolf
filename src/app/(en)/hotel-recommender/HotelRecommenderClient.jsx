@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import ToolTrustLine from '../../../components/ToolTrustLine'
 
 const HOTELS = [
   /* ===================== SOUTHWEST ===================== */
@@ -415,6 +416,8 @@ export default function HotelRecommenderClient() {
         <h1 className="hr-h1">Where should you stay<br/>for your golf trip?</h1>
         <p className="hr-sub">Six questions. A personalised shortlist matched to your golf itinerary, group, and style.</p>
       </section>
+
+      <ToolTrustLine />
 
       {/* PROGRESS */}
       <div className="hr-progress-wrap">

@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react'
 import { COURSE_SELECTOR_T } from '@lib/course-selector-translations'
+import ToolTrustLine from '../../../../components/ToolTrustLine'
 
 const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
 const COURSE_COMPARISON_PDF_URL = '/downloads/course-comparison.pdf'
@@ -892,6 +893,8 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
           <button className="cst-btn gold" onClick={startQuiz} style={{ marginTop:'26px' }}>{t.intro.cta}</button>
         )}
       </section>
+
+      {lang === 'en' && <ToolTrustLine />}
 
       <div className="cst-wrap">
 

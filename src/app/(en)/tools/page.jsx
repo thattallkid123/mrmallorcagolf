@@ -1,12 +1,13 @@
 import PageLayout from '../../../components/PageLayout'
 import Link from 'next/link'
+import TrustpilotBadge from '../../../components/TrustpilotBadge'
 import { buildPageMetadata } from '../../../lib/page-metadata'
 
 export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools', 'en', {
   title: 'Free Mallorca Golf Planning Tools | Mr Mallorca Golf',
-  description: 'Four free tools to plan your Mallorca golf trip: course finder, cost calculator, hotel recommender, and day builder.',
+  description: 'Free tools to plan your Mallorca golf trip: course finder, handicap checker, cost calculator, hotel recommender, and day builder.',
   robots: { index: true, follow: true },
 })
 
@@ -18,6 +19,14 @@ const TOOLS = [
     desc: 'Eight questions. A shortlist of three courses matched to your handicap, group, budget, and what you want from a round.',
     time: '< 1 min',
     cta: 'Find my courses',
+  },
+  {
+    href: '/handicap-checker.html',
+    eyebrow: 'Access check',
+    title: 'Can I play it?',
+    desc: 'Enter your handicap and group size. See instantly which of Mallorca\'s courses you can book, which need a certificate, and where Andy can arrange access.',
+    time: '< 1 min',
+    cta: 'Check my access',
   },
   {
     href: '/tools/golf-day-builder',
@@ -283,6 +292,9 @@ export default function ToolsIndex() {
             <p className="ti-andy-text">
               These tools give you a starting point: a shortlist, an estimate, a plan. When you're ready to make it real, I confirm tee times, arrange access at members-only courses, and build the trip around your golf. Nothing to pay until you decide to book.
             </p>
+            <div style={{ marginTop: 14 }}>
+              <TrustpilotBadge variant="text" theme="light" />
+            </div>
           </div>
         </div>
       </div>

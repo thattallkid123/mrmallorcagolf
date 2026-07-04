@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { getHomeContent } from '../lib/homepage-content'
 import { SITE_ORIGIN, buildLocalePath } from '../lib/site'
-import PlanningGuideCta from '../components/PlanningGuideCta'
+import HomeToolsStrip from '../components/HomeToolsStrip'
 import HomepageLeadPopup from '../components/HomepageLeadPopup'
 
 const FEATURE_ICONS = {
@@ -246,7 +246,7 @@ export default function HomePageInner({ locale = 'en' }) {
 
       {locale === 'en' ? (
         <section className="planning-guide-home reveal">
-          <PlanningGuideCta />
+          <HomeToolsStrip />
         </section>
       ) : null}
 
