@@ -353,63 +353,63 @@
     });
 
     function evaluate(course, hcp, hasHcp, hasCert, groupSize) {
-      const limit = state.gender === ‘M’ ? course.M : course.F;
+      const limit = state.gender === 'M' ? course.M : course.F;
 
       // Restricted access (members, hotel guests only)
       if (course.restricted) {
-        return { status: ‘warn’, label: ‘⚠️ ‘ + course.restricted,
-          detail: course.restricted === ‘Hotel guests only — cannot arrange’
-            ? ‘This is a private hotel course. Access requires staying at the property.’
-            : ‘This course is for members and their guests. Contact Andy to arrange access if possible.’ };
+        return { status: 'warn', label: '⚠️ ' + course.restricted,
+          detail: course.restricted === 'Hotel guests only — cannot arrange'
+            ? 'This is a private hotel course. Access requires staying at the property.'
+            : 'This course is for members and their guests. Contact Andy to arrange access if possible.' };
       }
 
       // Pay-and-play courses: open to everyone
       if (course.publicAccess) {
-        return { status: ‘ok’, label: ‘✅ You can book — no restrictions’,
-          detail: ‘Pay-and-play access. No handicap certificate needed here.’ };
+        return { status: 'ok', label: '✅ You can book — no restrictions',
+          detail: 'Pay-and-play access. No handicap certificate needed here.' };
       }
 
       // No official handicap
       if (!hasHcp) {
         if (course.cert) {
-          return { status: ‘info’, label: ‘ℹ️ Certificate required’,
-            detail: ‘This club asks for a valid WHS/EGA handicap certificate at booking. You’ll need to obtain one first — or ask Andy about playing here as part of a coached round.’ };
+          return { status: 'info', label: 'ℹ️ Certificate required',
+            detail: `This club asks for a valid WHS/EGA handicap certificate at booking. You'll need to obtain one first — or ask Andy about playing here as part of a coached round.` };
         }
-        return { status: ‘warn’, label: ‘⚠️ Borderline — enquire’,
-          detail: ‘No official handicap is usually fine here for competent players, but it’s at the club’s discretion. Andy can often arrange access — enquire.’, borderline: true };
+        return { status: 'warn', label: '⚠️ Borderline — enquire',
+          detail: `No official handicap is usually fine here for competent players, but it's at the club's discretion. Andy can often arrange access — enquire.`, borderline: true };
       }
 
       // Over the handicap limit
       if (hcp > limit) {
         if (!course.strict && hcp <= limit + BORDERLINE_MARGIN) {
-          return { status: ‘warn’, label: ‘⚠️ Borderline — enquire’,
-            detail: `The published limit is ${limit} for ${state.gender === ‘M’ ? ‘men’ : ‘women’} and you’re at ${hcp}. Andy can often arrange access at this course — enquire.`, borderline: true };
+          return { status: 'warn', label: '⚠️ Borderline — enquire',
+            detail: `The published limit is ${limit} for ${state.gender === 'M' ? 'men' : 'women'} and you're at ${hcp}. Andy can often arrange access at this course — enquire.`, borderline: true };
         }
-        return { status: ‘no’, label: ‘❌ Handicap limit’,
-          detail: `This course requires ${limit} or lower for ${state.gender === ‘M’ ? ‘men’ : ‘women’}${course.strict ? ‘ and enforces it strictly’ : ‘’}. Worth revisiting once your handicap comes down.` };
+        return { status: 'no', label: '❌ Handicap limit',
+          detail: `This course requires ${limit} or lower for ${state.gender === 'M' ? 'men' : 'women'}${course.strict ? ' and enforces it strictly' : ''}. Worth revisiting once your handicap comes down.` };
       }
 
       // Within limit but certificate required and not held
       if (course.cert && !hasCert) {
-        return { status: ‘info’, label: ‘ℹ️ Certificate required’,
-          detail: ‘Your handicap qualifies, but this club asks for a valid WHS/EGA certificate at booking. You’ll need to obtain one first — a digital app certificate is accepted.’ };
+        return { status: 'info', label: 'ℹ️ Certificate required',
+          detail: `Your handicap qualifies, but this club asks for a valid WHS/EGA certificate at booking. You'll need to obtain one first — a digital app certificate is accepted.` };
       }
 
       // Bookable — pairing note for small groups
       if (course.pairing && groupSize <= 2) {
         const pairingNote = groupSize === 1
-          ? ‘You can book, but this course pairs solo players with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.’
-          : ‘You can book, but this course pairs two-balls with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.’;
-        return { status: ‘warn’, label: ‘⚠️ Pairing likely’,
+          ? 'You can book, but this course pairs solo players with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.'
+          : 'You can book, but this course pairs two-balls with other guests in peak season. You can also reserve the full tee time as a private group — ask Andy about pricing and availability.';
+        return { status: 'warn', label: '⚠️ Pairing likely',
           detail: pairingNote };
       }
 
       if (course.cert) {
-        return { status: ‘ok’, label: ‘✅ You can book — certificate required (you have one)’,
-          detail: ‘Your handicap qualifies and your certificate covers the club’s requirement. Bring it (or the app) on the day.’ };
+        return { status: 'ok', label: '✅ You can book — certificate required (you have one)',
+          detail: `Your handicap qualifies and your certificate covers the club's requirement. Bring it (or the app) on the day.` };
       }
-      return { status: ‘ok’, label: ‘✅ You can book — no restrictions’,
-        detail: ‘Your handicap is comfortably within this course’s limit.’ };
+      return { status: 'ok', label: '✅ You can book — no restrictions',
+        detail: `Your handicap is comfortably within this course's limit.` };
     }
 
     let lastResults = null;
@@ -459,8 +459,8 @@
       const warnCount = results.filter(x => x.r.status === 'warn').length;
       const hasBorderline = results.some(x => x.r.borderline);
       document.getElementById('summary').innerHTML = noHcp
-        ? `Without an official handicap you can still book <strong>${okCount}</strong> of Mallorca’s courses outright, and <strong>${warnCount}</strong> more are worth an enquiry. The premium member clubs will want a certificate first.`
-        : `Playing off <strong>${hcp}</strong>, you can book <strong>${okCount}</strong> of Mallorca’s courses${warnCount ? `, with <strong>${warnCount}</strong> more worth an enquiry or carrying a pairing note` : ''}.`;
+        ? `Without an official handicap you can still book <strong>${okCount}</strong> of Mallorca's courses outright, and <strong>${warnCount}</strong> more are worth an enquiry. The premium member clubs will want a certificate first.`
+        : `Playing off <strong>${hcp}</strong>, you can book <strong>${okCount}</strong> of Mallorca's courses${warnCount ? `, with <strong>${warnCount}</strong> more worth an enquiry or carrying a pairing note` : ''}.`;
       document.getElementById('borderline-cta').style.display = hasBorderline ? 'block' : 'none';
 
       const resultsEl = document.getElementById('results');
@@ -490,14 +490,14 @@
         .join('; ');
       try {
         // MailerLite Universal form-style subscribe. Endpoint pattern matches the
-        // other MMG tools; swap in the real account/group before deploy.
+        // other MMG tools (account/form IDs set in the constants above).
         const body = new FormData();
         body.append('fields[email]', email);
         body.append('fields[hcp_checker_handicap]', String(lastResults.hcp));
         body.append('fields[hcp_checker_summary]', summary.slice(0, 950));
         body.append('ml-submit', '1');
         body.append('anticsrf', 'true');
-        await fetch(`https://assets.mailerlite.com/jsonp/${MAILERLITE_ACCOUNT_ID}/forms/${MAILERLITE_GROUP}/subscribe`, {
+        await fetch(`https://assets.mailerlite.com/jsonp/${MAILERLITE_ACCOUNT_ID}/forms/${MAILERLITE_FORM_ID}/subscribe`, {
           method: 'POST', body, mode: 'no-cors'
         });
         msg.textContent = 'Done — your access results are on their way.';

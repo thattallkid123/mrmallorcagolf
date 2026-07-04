@@ -11,6 +11,56 @@ under "Active / In Progress". Move items between them as they land. Reference by
 
 ---
 
+## ⚡ Current status — what's left to do / test / approve / push
+
+**Last session: 4 Jul 2026.** Tested every live tool, fixed two real bugs, updated this doc.
+
+### Needs your decision / approval
+- **Add "Tools" to the top nav?** Right now the tools are **not in the main navigation** (nav is
+  Home · About · Play With A Pro · Plan Your Trip · Golf Courses · Guides · Enquire). They're only
+  reachable from the homepage tools strip, in-guide links, the footer, and the direct `/tools` URL —
+  so on every other page they're effectively hidden. Adding a "Tools" nav link (all 7 locales) is a
+  strong quick win but changes navigation on every page, so it's your call. **Say the word and I'll
+  do it.**
+- **Two test emails** from the Trip Quote Builder test landed in andy@mrmallorcagolf.com — delete
+  them at your leisure (I can't reach the inbox).
+
+### Ready to push (uncommitted right now)
+- **Handicap checker fixes** in `public/handicap-checker.html` — see "Fixed this session" below.
+  Verified working locally; needs commit + push + Vercel confirm.
+
+### Left to test (needs live data or your eyes)
+- Handicap checker **email capture** stores email + group correctly; the two enrichment fields
+  (`hcp_checker_handicap`, `hcp_checker_summary`) now exist in MailerLite but the **classic JSONP
+  form** may not pass custom fields through until the fields are added to that form in the MailerLite
+  UI. Email + group tagging (the important part) works. Verify a real submission appears in the
+  "Handicap Access Checker" group after deploy.
+- Course selector, day builder, hotel recommender: their result-screen flows weren't driven
+  end-to-end this session (trust line + page load confirmed). Worth a manual click-through.
+
+### Fixed this session (2 real bugs)
+1. **Handicap checker was completely broken in production.** Its `<script>` had 89 smart quotes
+   (`'…'`) used as JavaScript string delimiters — a fatal syntax error, so clicking "Check my
+   access" did nothing on the live site. Root cause: a smart-quote conversion (likely the em-dash /
+   voice pass). Fixed by converting delimiters to straight quotes and re-delimiting the 5 detail
+   strings that contain apostrophes (`You'll`, `club's`, `course's`) as template literals. Verified:
+   24 courses now evaluate and group correctly.
+2. **Handicap checker email capture referenced an undefined `MAILERLITE_GROUP`** (should be
+   `MAILERLITE_FORM_ID`) — every submission threw and silently failed. Fixed and verified: a test
+   email now lands in the "Handicap Access Checker" MailerLite group.
+   Also created the missing Trip Quote Builder MailerLite fields (golfers, trip_days, rounds,
+   budget_style, suggested_courses, estimated_total, preferred_dates, trip_notes) — quote submissions
+   now enrich the CRM record, not just email Andy.
+
+### Known follow-ups (added to Active below)
+- `prototypes/handicap-checker.html` and `prototypes/golf-day-builder/index.html` have the **same
+  smart-quote corruption** but are prototype-only (not served to users; the live day builder is the
+  React component). Fix or delete them per the "freeze prototypes once live" rule.
+- The `check:content` corruption checker scans `src/` but **not `public/` or `prototypes/`**, which
+  is why the broken handicap checker shipped. Extend it to cover shipped static HTML.
+
+---
+
 ## Shipped — how to test & what's next
 
 Everything in this section is **live on www.mrmallorcagolf.com** unless a line says "prototype only".
@@ -64,9 +114,13 @@ from the encyclopaedia master (verified access rules). Optional email capture wi
 **Why:** handicap limits and certificate rules are the #1 pre-booking anxiety, and MMG publishes the
 verified figures competitors only guess at. Genuinely useful, a natural email capture, and every
 result is a soft enquiry ("a few shots over? Andy can often arrange it, especially midweek").
-**How to test:** open **/handicap-checker.html**, enter e.g. handicap 30 / male / no certificate /
-2 players and confirm the course list splits correctly (playable vs certificate-required vs
-arrange-access). Submit the email form and confirm the address lands in the MailerLite group.
+**Status (4 Jul):** was shipped **broken** — smart-quote syntax error killed the script and the
+email capture referenced an undefined var. **Both fixed and verified working locally this session**
+(pending commit/push). See "Fixed this session" at the top.
+**How to test:** open **/handicap-checker.html**, enter e.g. handicap 28 / male / no certificate /
+1 player and confirm the course list splits correctly (5 bookable / 13 enquire / 6 certificate for
+that input). Submit the email form and confirm the address lands in the "Handicap Access Checker"
+MailerLite group.
 **Known gap (tracked in Active):** it's a **static file**, not a Next.js route — so it has no site
 header/footer, no metadata/OG, and is **not in the sitemap or IndexNow**. Its only current traffic
 is the new `/tools` card and homepage strip link. Promoting it to `/tools/handicap-checker` is the
@@ -85,11 +139,14 @@ usually within a few hours."
 **Why:** this closes the biggest conversion leak — the gap between a free estimate and an actual
 enquiry. The warmest traffic (someone who just costed their trip) now converts inline as a
 structured lead instead of hitting a blank contact form.
+**Status (4 Jul):** tested end-to-end this session via the API — Resend email to Andy sends, and the
+subscriber lands in the MailerLite "Trip Quote Builder" group with all 8 fields populated (the
+missing MailerLite fields were created this session). **Working.**
 **How to test:** open **/tools/golf-cost-calculator**, complete all steps to the estimate, click the
 quote CTA, fill the panel with a test email, submit. Confirm (a) the success message shows, (b) an
 email arrives at andy@mrmallorcagolf.com with the pre-filled trip details, (c) the address appears
-in the MailerLite Trip Quote Builder group. Requires `RESEND_*` and MailerLite env vars in
-`.env.local` (already configured).
+in the MailerLite Trip Quote Builder group with fields filled. Requires `RESEND_*` and MailerLite
+env vars in `.env.local` (already configured).
 **What's next:** a Chinese version is the top Active task (see below). Consider also firing the quote
 CTA from the course selector shortlist, not just the calculator.
 
@@ -170,6 +227,21 @@ four live `src/app/(en)/tools/...` clients (and the zh selector, copy-link only)
 - [ ] Rule: once a tool is live, delete/freeze its `prototypes/` copy (the cost calculator is
       currently maintained in two places)
 - [ ] Then freeze — no new tools until an existing one demonstrably produces enquiries
+
+### Add "Tools" to the top navigation (needs approval)
+**Priority:** High-value quick win. **Why:** tools are invisible on every page except the homepage.
+- [ ] Add a "Tools" link → `/tools` in `src/components/Nav.jsx` for all 7 locales (Tools / Werkzeuge
+      / Outils / Herramientas / Hulpmiddelen / Verktyg / 工具)
+- [ ] Check the nav doesn't overflow on mobile with the extra item
+
+### Fix or delete the broken prototype HTML files
+**Priority:** Medium (not user-facing, but confusing/rotting). **Why:** same smart-quote corruption
+that broke the live checker.
+- [ ] `prototypes/handicap-checker.html` — superseded by the live `public/handicap-checker.html`;
+      delete it (freeze-prototype rule) or apply the same quote fix
+- [ ] `prototypes/golf-day-builder/index.html` — live tool is the React component; delete or fix
+- [ ] Extend the `check:content` corruption checker to scan `public/*.html` (and optionally
+      `prototypes/`) so broken static HTML can't ship again
 
 ### Publish sprint — clear the content backlog (audit item, 4 Jul)
 **Priority:** Highest for growth. **Why:** 16 unpublished course reviews + 12 guide drafts sit in
