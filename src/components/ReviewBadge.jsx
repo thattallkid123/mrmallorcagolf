@@ -1,4 +1,4 @@
-const REVIEW_URL = 'https://share.google/5bKiLcjCTCf1zsLD7'
+const REVIEW_URL = 'https://www.google.com/search?kgmid=/g/11z2dzhjbh&hl=en-ES&q=Mr+Mallorca+Golf&shem=epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/osrp/m5/1&kgs=72136b8a8955917a&utm_source=epsd1,ltae,rimspwouoe,sh/x/loc/osrp/m5/1#mpd=~15465703647005358475/customers/reviews'
 // Manual aggregate proof. Editorial testimonials live in:
 // C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_TESTIMONIALS_AND_FEEDBACK.md
 const REVIEW_RATING = 5.0
