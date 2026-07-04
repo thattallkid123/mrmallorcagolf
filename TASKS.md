@@ -82,6 +82,26 @@
 
 ## Completed ✅
 
+### Site Audit + Action Items Logged
+**Status:** DONE  
+**Completed:** 2026-07-04  
+- [x] Full audit: website, tools, prototypes, analytics, docs, Drive organisation
+- [x] Four action items added to Active (publish sprint, tools consolidation, link-in-bio page, repo hygiene)
+- [x] Committed (8468b0f) and Vercel deploy confirmed READY
+
+### Can I Play It? Handicap & Access Checker
+**Status:** DONE (as static page — see "Consolidate the Tools Estate" for promotion to /tools route)  
+**Completed:** 2026-07-04  
+- [x] All 24 courses with verified access rules from encyclopaedia master
+- [x] MailerLite form wired (ID 192036664270390915)
+- [x] Live at /handicap-checker.html (commits 4ee3520, 13aba95)
+- [ ] Not yet on /tools index, sitemap, or IndexNow — tracked in Active
+
+### Green Fee Comparison Table — Prototype
+**Status:** DONE (prototype only — promote-or-park decision tracked in Active)  
+**Completed:** 2026-07-04  
+- [x] Sortable/filterable table, all 24 courses, links to 8 live reviews (commit feb52ac)
+
 ### Trip Quote Builder — Live Tool
 **Status:** DONE  
 **Completed:** 2026-07-04  
