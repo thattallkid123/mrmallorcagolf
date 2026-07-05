@@ -174,7 +174,7 @@ export const GUIDES_CONTENT = {
     articlesHeading: 'Guides & Articles',
     finalCta: {
       eyebrow: 'Ready to play?',
-      title: 'A private round on one of these courses, with a PGA Professional alongside you.',
+      title: 'A round on one of these courses, with a PGA Professional alongside you.',
       body: "Tell me your dates and what you're looking for. I'll come back personally within 24 hours.",
       primaryCta: 'See the Experiences →',
       secondaryCta: 'Get in Touch',
@@ -1197,4 +1197,3 @@ export function getGuidesContent(locale = 'en') {
     liveGuides: insertGuideAfter(content.liveGuides, card, 'golf-andratx-review'),
   }
 }
-

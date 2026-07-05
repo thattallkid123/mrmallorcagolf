@@ -558,7 +558,7 @@ const HOME_OVERRIDES = {
       eyebrow: 'Qué marca la diferencia',
       title: 'Muchos días de golf en Mallorca empiezan con una plataforma de reservas y acaban con una factura. Esto es más personal.',
       paragraphs: [
-        'Organizo días privados de golf en algunos de los mejores campos de la isla, con el coaching integrado en la vuelta y no como un extra al final. Se juega mejor, se toman decisiones más claras y todo el día se siente mejor llevado.',
+        'Organizo días de golf en algunos de los mejores campos de la isla, con el coaching integrado en la vuelta y no como un extra al final. Se juega mejor, se toman decisiones más claras y todo el día se siente mejor llevado.',
         'Mallorca se puede jugar todo el año. Saber qué campo encaja con tu juego, qué tee times merecen la pena y cuándo las condiciones son las correctas marca mucho de la diferencia entre un buen día y uno excepcional.',
       ],
       stats: [
@@ -839,7 +839,7 @@ const HOME_OVERRIDES = {
       eyebrow: 'Ce qui fait la différence',
       title: 'Beaucoup de journées de golf à Majorque commencent sur une plateforme de réservation et se terminent avec une facture. Ici, c\'est plus personnel.',
       paragraphs: [
-        "J\u2019organise des journ\u00e9es de golf priv\u00e9es sur les meilleurs parcours de l\u2019\u00eele, avec le coaching int\u00e9gr\u00e9 pendant la partie plut\u00f4t qu\u2019ajout\u00e9 apr\u00e8s. On joue mieux, les d\u00e9cisions deviennent plus claires et toute la journ\u00e9e est mieux tenue.",
+        "J\u2019organise des journ\u00e9es de golf sur les meilleurs parcours de l\u2019\u00eele, avec le coaching int\u00e9gr\u00e9 pendant la partie plut\u00f4t qu\u2019ajout\u00e9 apr\u00e8s. On joue mieux, les d\u00e9cisions deviennent plus claires et toute la journ\u00e9e est mieux tenue.",
         "Majorque se joue toute l\u2019ann\u00e9e. Savoir quel parcours correspond \u00e0 votre jeu, quelles heures de d\u00e9part valent le coup et quand les conditions sont r\u00e9unies fait souvent la diff\u00e9rence entre une bonne journ\u00e9e et une excellente.",
       ],
       stats: [
@@ -984,7 +984,7 @@ const HOME_OVERRIDES = {
       eyebrow: 'Wat dit anders maakt',
       title: 'De meeste golfdagen op Mallorca beginnen op een boekingsplatform en eindigen met een rekening. Dit is persoonlijker.',
       paragraphs: [
-        'Ik organiseer privé-golfdagen op de beste banen van het eiland, met coaching tijdens de ronde in plaats van als extra achteraf. U speelt beter, beslissingen worden duidelijker en de hele dag voelt beter verzorgd.',
+        'Ik organiseer golfdagen op de beste banen van het eiland, met coaching tijdens de ronde in plaats van als extra achteraf. U speelt beter, beslissingen worden duidelijker en de hele dag voelt beter verzorgd.',
         'Mallorca is het hele jaar bespeelbaar. Weten welke baan bij uw spel past, welke starttijden het waard zijn en wanneer de omstandigheden kloppen, maakt veel van het verschil tussen een goede dag en een geweldige.',
       ],
       stats: [
