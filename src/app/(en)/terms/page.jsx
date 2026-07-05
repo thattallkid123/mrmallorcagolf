@@ -74,6 +74,7 @@ export default function Terms() {
             <h2>6. Golf Course Rules and Green Fees</h2>
             <p>All participants must comply with the rules and dress code of each golf course visited. We reserve the right to end an experience without refund where a participant is asked to leave a course due to conduct.</p>
             <p>Green fees and course charges are additional unless explicitly stated otherwise in your booking confirmation. Club hire, buggy, and any personal food and drink are the responsibility of the participant.</p>
+            <p>On busy days the golf course may pair your group with other players on the same tee time. This is at the club&apos;s discretion and outside our control. We always aim to book a tee time that keeps the round as personal as possible. Where you would like the tee time reserved for your party only, we can arrange the remaining player slots at additional cost, confirmed before booking. Signature Day bookings include a private tee time as standard.</p>
           </section>
 
           <section className="legal-section">

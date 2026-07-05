@@ -23,6 +23,7 @@ const SIGNATURE_DAY_CONTENT = {
       includedTitle: 'Was enthalten ist',
       included: [
         'Platzwahl passend zu Ihrem Spiel und Anlass',
+        'Private Startzeit, die freien Plaetze sind reserviert und im Preis enthalten, sodass die Runde nur Ihrer Gruppe gehoert',
         '18 Loecher mit Andy Griffiths',
         'Physio-Session mit John Brazier nach der Runde',
         'Private Transfers zum und vom Platz',
@@ -61,6 +62,7 @@ const SIGNATURE_DAY_CONTENT = {
       includedTitle: 'Que esta incluido',
       included: [
         'Eleccion del campo segun su juego y el tipo de dia',
+        'Hora de salida privada, las plazas libres quedan reservadas e incluidas en el precio, asi que la vuelta es solo para su grupo',
         '18 hoyos con Andy Griffiths',
         'Sesion de fisio con John Brazier despues de la vuelta',
         'Traslados privados de ida y vuelta',
@@ -99,6 +101,7 @@ const SIGNATURE_DAY_CONTENT = {
       includedTitle: 'Ce qui est inclus',
       included: [
         'Choix du parcours selon votre jeu et l occasion',
+        'Depart prive, les places restantes sont reservees et incluses dans le prix, la partie est donc reservee a votre groupe',
         '18 trous avec Andy Griffiths',
         'Session de physio avec John Brazier apres la partie',
         'Transferts prives aller-retour',
@@ -137,6 +140,7 @@ const SIGNATURE_DAY_CONTENT = {
       includedTitle: 'Wat is inbegrepen',
       included: [
         'Baankeuze passend bij uw spel en de gelegenheid',
+        'Prive starttijd, de vrije plekken zijn gereserveerd en inbegrepen in de prijs, zodat de ronde alleen voor uw groep is',
         '18 holes met Andy Griffiths',
         'Fysiosessie met John Brazier na de ronde',
         'Prive transfers van en naar de baan',
@@ -175,6 +179,7 @@ const SIGNATURE_DAY_CONTENT = {
       includedTitle: 'Detta ingar',
       included: [
         'Bana vald efter ditt spel och sammanhanget',
+        'Privat starttid, de lediga platserna ar bokade och ingar i priset, sa rundan ar reserverad for ert sallskap',
         '18 hal med Andy Griffiths',
         'Fysiosession med John Brazier efter rundan',
         'Privata transfers till och fran banan',
@@ -213,6 +218,7 @@ const SIGNATURE_DAY_CONTENT = {
       includedTitle: '包含内容',
       included: [
         '按您的球技与场合选择最合适的球场',
+        '私人开球时段：其余名额已一并预订并含在价格内，整组球局仅属于您这一行人',
         '与 Andy Griffiths 同打 18 洞',
         '赛后由 John Brazier 进行理疗分析',
         '往返球场的私人接送',

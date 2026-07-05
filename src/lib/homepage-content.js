@@ -259,7 +259,7 @@ export const HOME_CONTENT = {
           name: 'Signature Day',
           price: '€3,000+',
           features: [
-            'Course, tee time, and hosted golf day with Andy',
+            'Course, private tee time, and hosted golf day with Andy',
             'Lunch, private chef, or restaurant booking',
             'Private transfers and recovery time',
             'Caddy, videographer, and premium club hire options',
@@ -417,7 +417,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: 'Alles organisiert', text: 'Platz, Abschlagszeit und Mittagessen stehen vor Ihrer Ankunft fest. Transport kann bei Bedarf ergänzt werden.' },
         { title: 'On-Course-Coaching', text: 'Hilfreiche Beobachtungen mitten in der Runde, wenn sie noch etwas verändern können.' },
-        { title: 'Komplett privat', text: 'Nur Sie und ein PGA Advanced Professional. Keine Fremden in Ihrer Gruppe.' },
+        { title: 'Ganz persönlich', text: 'Nur Sie und ein PGA Advanced Professional, der ganze Tag rund um Ihr Spiel.' },
         { title: 'Mehr Zugang', text: 'Mitgliederplätze, die die meisten Besucher nicht selbst buchen können.' },
       ],
     },
@@ -683,8 +683,8 @@ const HOME_OVERRIDES = {
           text: 'Observaciones útiles en mitad de la vuelta, cuando todavía pueden cambiar algo.',
         },
         {
-          title: 'Completamente privado',
-          text: 'Solo usted y un PGA Advanced Professional. Nadie más en el grupo.',
+          title: 'Atención personal',
+          text: 'Solo usted y un PGA Advanced Professional, con todo el día centrado en su juego.',
         },
         {
           title: 'Acceso a más',
@@ -770,7 +770,7 @@ const HOME_OVERRIDES = {
           name: 'Día Signature',
           price: '€3.000+',
           features: [
-            'Campo, tee time y día de golf con Andy de anfitrión',
+            'Campo, tee time privado y día de golf con Andy de anfitrión',
             'Almuerzo, chef privado o reserva de restaurante',
             'Traslados privados y tiempo de recuperación',
             'Caddie, videógrafo y alquiler premium de palos',
@@ -861,7 +861,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: 'Tout est organisé', text: 'Parcours, heure de départ, transport et déjeuner sont réglés avant votre arrivée.' },
         { title: 'Coaching sur le parcours', text: 'Des observations utiles au bon moment, tant qu\'elles peuvent encore changer quelque chose.' },
-        { title: 'Entièrement privé', text: 'Juste vous et un PGA Advanced Professional. Personne d\'autre dans votre partie.' },
+        { title: 'Attention personnelle', text: 'Juste vous et un PGA Advanced Professional, toute la journée autour de votre jeu.' },
         { title: 'Accès à davantage', text: 'Des parcours membres que la plupart des visiteurs ne peuvent pas réserver seuls.' },
       ],
     },
@@ -934,7 +934,7 @@ const HOME_OVERRIDES = {
           name: 'Signature Day',
           price: '€3 000+',
           features: [
-            'Parcours, heure de départ et journée de golf animée par Andy',
+            'Parcours, départ privé et journée de golf animée par Andy',
             'Déjeuner, chef privé ou réservation de restaurant',
             'Transferts privés et temps de récupération',
             'Caddie, vidéaste et location de clubs premium',
@@ -1006,7 +1006,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: 'Alles geregeld', text: 'Baan, tee time en lunch staan vast vóór uw aankomst. Vervoer kan worden toegevoegd als dat handig is.' },
         { title: 'Coaching op de baan', text: 'Nuttige observaties midden in de ronde, zolang ze nog iets kunnen veranderen.' },
-        { title: 'Volledig privé', text: 'Alleen u en een PGA Advanced Professional. Geen onbekenden in uw flight.' },
+        { title: 'Persoonlijke aandacht', text: 'Alleen u en een PGA Advanced Professional, de hele dag rond uw spel.' },
         { title: 'Toegang tot meer', text: 'Ledenbanen die de meeste bezoekers niet zelfstandig kunnen boeken.' },
       ],
     },
@@ -1079,7 +1079,7 @@ const HOME_OVERRIDES = {
           name: 'Signature Day',
           price: '€3.000+',
           features: [
-            'Baan, starttijd en georganiseerde golfdag met Andy',
+            'Baan, privé starttijd en georganiseerde golfdag met Andy',
             'Lunch, privékok of restaurantreservering',
             'Privétransfers en hersteltijd',
             'Caddie, videograaf en premium clubhuur',
@@ -1151,7 +1151,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: 'Allt ordnat', text: 'Bana, starttid och lunch är klara innan du anländer. Transport kan läggas till vid behov.' },
         { title: 'Coaching på banan', text: 'Användbara observationer mitt i rundan, medan de fortfarande kan förändra något.' },
-        { title: 'Helt privat', text: 'Bara du och en PGA Advanced Professional. Inga främlingar i gruppen.' },
+        { title: 'Personlig uppmärksamhet', text: 'Bara du och en PGA Advanced Professional, hela dagen kring ditt spel.' },
         { title: 'Tillgång till mer', text: 'Medlemsbanor som de flesta besökare inte kan boka själva.' },
       ],
     },
@@ -1224,7 +1224,7 @@ const HOME_OVERRIDES = {
           name: 'Signature Day',
           price: '€3 000+',
           features: [
-            'Bana, starttid och golfdag ledd av Andy',
+            'Bana, privat starttid och golfdag ledd av Andy',
             'Lunch, privatkock eller restaurangbokning',
             'Privata transferer och återhämtningstid',
             'Caddie, videograf och premium klubbuthyrning',
@@ -1341,7 +1341,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: '一切都已安排好', text: '球场、开球时间、交通和午餐都会在你到场前安排妥当。' },
         { title: '下场指导', text: '真正有用的观察会出现在一轮当中，而且是在还来得及改变结果的时候。' },
-        { title: '完全私密', text: '只有你和一位英国职业高尔夫协会高级职业教练，不会有陌生人加入。' },
+        { title: '专属关注', text: '只有你和一位英国职业高尔夫协会高级职业教练，全天都围绕你的球来安排。' },
         { title: '更多独家资源', text: '包括大多数访客无法自行预订的会员制球场。' },
       ],
     },
@@ -1387,7 +1387,7 @@ const HOME_OVERRIDES = {
           name: '签名日',
           price: '€3,000+',
           features: [
-            '球场、开球时间与 Andy 全程主持',
+            '球场、私人开球时段与 Andy 全程主持',
             '午餐、私厨或餐厅预订',
             '专属接送与休息时间',
             '球童、摄影师和高端球杆租用',
@@ -1974,7 +1974,7 @@ const HOME_PACKAGE_ITEMS = {
       price: '€3,000+',
       signature: true,
       features: [
-        'Course, tee time, and hosted golf day',
+        'Course, private tee time, and hosted golf day',
         'Lunch, private chef, or restaurant booking',
         'Private transfers and recovery time',
         'Caddy, videographer, and premium club hire options',

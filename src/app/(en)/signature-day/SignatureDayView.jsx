@@ -84,7 +84,7 @@ const DAY_ARC = [
 
 const WHAT_IS_INCLUDED = [
   ['Course selection', 'Personally chosen for your game, your group, and the occasion. Members-only courses available where appropriate.'],
-  ['Tee time', 'Booked and handled before you arrive. You just show up.'],
+  ['Private tee time', 'Booked and handled before you arrive, with the spare slots reserved and priced in, so the round is kept for your party only.'],
   ['18 holes with Andy', 'PGA Advanced Professional, Trackman Master, TPI Level 3. I keep notes throughout on what I am seeing in your game.'],
   ['Combined prescription from Andy and John', 'My on-course observations and John\'s physical findings are connected into one specific set of recommendations. Not two separate sessions.'],
   ['Golf physio with John Brazier', 'Post-round session with The Golf Doctor. Movement screening, recovery, and personalised take-home recommendations.'],

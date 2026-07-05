@@ -71,7 +71,8 @@ export default function TermsES() {
           <section className="legal-section">
             <h2>6. Normas del campo y green fees</h2>
             <p>Todos los participantes deben cumplir las normas y el código de vestimenta de cada campo visitado. Nos reservamos el derecho de dar por finalizada la experiencia sin reembolso en caso de que un participante sea invitado a abandonar el campo por su conducta.</p>
-            <p>Las green fees y demás tasas del campo están incluidas en el precio indicado, salvo que se especifique lo contrario. Los gastos de consumición (comida, bebida, alquiler de material no incluido en el acuerdo) corren a cargo del participante.</p>
+            <p>Las green fees y demás tasas del campo son adicionales, salvo que se indique expresamente lo contrario en la confirmación de tu reserva. El alquiler de material, el buggy y cualquier comida o bebida personal corren a cargo del participante.</p>
+            <p>En días de mucha afluencia, el campo puede juntar a tu grupo con otros jugadores en la misma hora de salida. Esta decisión corresponde al club y queda fuera de nuestro control. Siempre intentamos reservar una hora de salida que haga la vuelta lo más personal posible. Si prefieres que la salida quede reservada solo para tu grupo, podemos gestionar las plazas restantes con un coste adicional, confirmado antes de reservar. Las reservas de Signature Day incluyen una hora de salida privada de forma estándar.</p>
           </section>
 
           <section className="legal-section">
