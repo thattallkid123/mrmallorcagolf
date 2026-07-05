@@ -77,7 +77,7 @@ export const HOME_CONTENT = {
     how: {
       eyebrow: 'How I help',
       title: 'Plan the trip first. Add the extras where they make sense.',
-      body: 'Planning support, a private Play With A Pro day, or both.',
+      body: 'Planning support, a Play With A Pro day, or both.',
       steps: [
         {
           number: '01',
@@ -370,7 +370,7 @@ const HOME_OVERRIDES = {
       eyebrow: 'Was den Unterschied macht',
       title: 'Die meisten Golftage auf Mallorca beginnen auf einer Buchungsplattform und enden mit einer Rechnung. Hier ist es persönlicher.',
       paragraphs: [
-        'Ich begleite private Golftage auf den besten Plätzen der Insel. Das Coaching passiert während der Runde und nicht erst danach als Zusatz. Das Golf ist besser, die Entscheidungen werden klarer und der ganze Tag fühlt sich wirklich gut betreut an.',
+        'Ich begleite Golftage auf den besten Plätzen der Insel. Das Coaching passiert während der Runde und nicht erst danach als Zusatz. Das Golf ist besser, die Entscheidungen werden klarer und der ganze Tag fühlt sich wirklich gut betreut an.',
         'Mallorca ist das ganze Jahr bespielbahr. Zu wissen, welcher Platz zu Ihrem Spiel passt, wann die Abschlagszeiten es wert sind und wann die Bedingungen stimmen, macht oft den Unterschied zwischen einem guten und einem großartigen Tag.',
       ],
       stats: [
@@ -1129,7 +1129,7 @@ const HOME_OVERRIDES = {
       eyebrow: 'Det som gör skillnaden',
       title: 'De flesta golfdagar på Mallorca börjar via en bokningsplattform och slutar med en faktura. Det här är mer personligt.',
       paragraphs: [
-        'Jag arrangerar privata golfdagar på öns bästa banor, med coachingen invävd i rundan i stället för lagd ovanpå efteråt. Spelet blir bättre, besluten blir tydligare och hela dagen känns mer omhändertagen.',
+        'Jag arrangerar golfdagar på öns bästa banor, med coachingen invävd i rundan i stället för lagd ovanpå efteråt. Spelet blir bättre, besluten blir tydligare och hela dagen känns mer omhändertagen.',
         'Mallorca är spelbart hela året. Att veta vilken bana som passar ditt spel, vilka starttider som är värda det och när förhållandena stämmer är mycket av skillnaden mellan en bra dag och en riktigt bra.',
       ],
       stats: [

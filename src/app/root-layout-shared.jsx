@@ -35,7 +35,7 @@ export const rootMetadata = {
     template: '%s | Mr Mallorca Golf',
     default: 'Mallorca Golf Trip Planning',
   },
-  description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Compare courses, build better itineraries, and add a private Play With A Pro day where it helps.',
+  description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Compare courses, build better itineraries, and add a hosted Play With A Pro day where it helps.',
   alternates: {
     canonical: '/',
     types: {
@@ -55,7 +55,7 @@ export const rootMetadata = {
     url: SITE_ORIGIN,
     siteName: 'Mr Mallorca Golf',
     title: 'Mallorca Golf Trip Planning | Mr Mallorca Golf',
-    description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Compare courses, build better itineraries, and add a private Play With A Pro day where it helps.',
+    description: 'Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Compare courses, build better itineraries, and add a hosted Play With A Pro day where it helps.',
     images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {

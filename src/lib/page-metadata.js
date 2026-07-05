@@ -34,14 +34,14 @@ export function getSocialImage(locale = 'en') {
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf | Courses, Coaching & Private Days',
+    title: 'Mallorca Golf | Courses, Coaching & Golf Days',
     description:
-      'Compare Mallorca golf courses, book private golf days, and get honest local advice from Andy Griffiths before you commit.',
+      'Compare Mallorca golf courses, plan a golf day with Andy, and get honest local advice before you commit.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro',
     description:
-      'Private Golftage auf Mallorca mit PGA Advanced Professional Andy Griffiths. Spielen Sie Son Gual, Alcanada und mehr - alles ist arrangiert.',
+      'Golftage auf Mallorca mit PGA Advanced Professional Andy Griffiths. Spielen Sie Son Gual, Alcanada und mehr - alles ist arrangiert.',
   },
   es: {
     title: 'Clases de Golf en Mallorca | PGA Pro',
@@ -51,17 +51,17 @@ const HOME_METADATA = {
   fr: {
     title: 'Golf a Majorque avec PGA Pro',
     description:
-      'Journees golf privees a Majorque avec Andy Griffiths, PGA Advanced Professional. Jouez Son Gual, Alcanada et plus, avec tous les details organises.',
+      'Journees golf a Majorque avec Andy Griffiths, PGA Advanced Professional. Jouez Son Gual, Alcanada et plus, avec tous les details organises.',
   },
   nl: {
     title: 'Golf op Mallorca met PGA Pro',
     description:
-      'Prive golfdagen op Mallorca met Andy Griffiths, PGA Advanced Professional. Speel Son Gual, Alcanada en meer, met alles geregeld.',
+      'Golfdagen op Mallorca met Andy Griffiths, PGA Advanced Professional. Speel Son Gual, Alcanada en meer, met alles geregeld.',
   },
   sv: {
     title: 'Golf pa Mallorca med PGA-proffs',
     description:
-      'Privata golfdagar pa Mallorca med Andy Griffiths, PGA Advanced Professional. Spela Son Gual, Alcanada och mer, med allt ordnat.',
+      'Golfdagar pa Mallorca med Andy Griffiths, PGA Advanced Professional. Spela Son Gual, Alcanada och mer, med allt ordnat.',
   },
   zh: {
     title: '马略卡高尔夫｜上海 11 年经验 · 普通话 · 抖音',
@@ -224,27 +224,27 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Private Golf Day Mallorca | Play Alongside a PGA Pro',
+    title: 'Golf Day Mallorca | Play Alongside a PGA Pro',
     description: getPlayWithAProMetadataDescription('en'),
   },
   de: {
-    title: 'Mit einem Profi spielen - Private Golftage auf Mallorca',
+    title: 'Mit einem Profi spielen - Golftag auf Mallorca',
     description: getPlayWithAProMetadataDescription('de'),
   },
   es: {
-    title: 'Jugar con un Profesional - Dias de Golf Privados en Mallorca',
+    title: 'Jugar con un Profesional - Golf en Mallorca con un PGA Pro',
     description: getPlayWithAProMetadataDescription('es'),
   },
   fr: {
-    title: 'Jouer avec un Pro - Journees Golf Privees a Majorque',
+    title: 'Jouer avec un Pro - Golf a Majorque avec un PGA Pro',
     description: getPlayWithAProMetadataDescription('fr'),
   },
   nl: {
-    title: 'Spelen met een Pro - Privegolfdagen op Mallorca',
+    title: 'Spelen met een Pro - Golfdag op Mallorca',
     description: getPlayWithAProMetadataDescription('nl'),
   },
   sv: {
-    title: 'Spela med ett Proffs - Privata Golfdagar pa Mallorca',
+    title: 'Spela med ett Proffs - Golfdag pa Mallorca',
     description: getPlayWithAProMetadataDescription('sv'),
   },
   zh: {
@@ -255,34 +255,34 @@ const PLAY_WITH_A_PRO_METADATA = {
 
 const CONTACT_METADATA = {
   en: {
-    title: 'Contact Andy Griffiths | Mallorca Golf Enquiry & Private Days',
+    title: 'Contact Andy Griffiths | Mallorca Golf Enquiry',
     description:
       'Tell Andy Griffiths your dates, handicap, hotel area, and what you are comparing. You will get a personal reply within 24 hours by email or WhatsApp.',
   },
   de: {
     title: 'Kontakt Andy Griffiths - UK PGA Professional',
     description:
-      'Arrangieren Sie Ihren privaten Golftag auf Mallorca. UK PGA Advanced Professional Andy Griffiths antwortet persoenlich innerhalb von 24 Stunden.',
+      'Arrangieren Sie Ihren Golftag auf Mallorca. UK PGA Advanced Professional Andy Griffiths antwortet persoenlich innerhalb von 24 Stunden.',
   },
   es: {
     title: 'Contacto Andy Griffiths - PGA Profesional',
     description:
-      'Organice su dia de golf privado en Mallorca. Andy Griffiths responde personalmente en 24 horas.',
+      'Organice su dia de golf en Mallorca. Andy Griffiths responde personalmente en 24 horas.',
   },
   fr: {
     title: 'Contact Andy Griffiths - PGA Professionnel',
     description:
-      'Organisez votre journee golf privee a Majorque. Andy Griffiths repond personnellement sous 24 heures.',
+      'Organisez votre journee golf a Majorque. Andy Griffiths repond personnellement sous 24 heures.',
   },
   nl: {
     title: 'Contact Andy Griffiths - PGA Professional',
     description:
-      'Organiseer uw privegolfdag op Mallorca. Andy Griffiths reageert persoonlijk binnen 24 uur.',
+      'Organiseer uw golfdag op Mallorca. Andy Griffiths reageert persoonlijk binnen 24 uur.',
   },
   sv: {
     title: 'Kontakt Andy Griffiths - UK PGA-proffs',
     description:
-      'Arrangera din privata golfdag pa Mallorca. Andy Griffiths svarar personligen inom 24 timmar.',
+      'Arrangera din golfdag pa Mallorca. Andy Griffiths svarar personligen inom 24 timmar.',
   },
   zh: {
     title: '联系 Andy Griffiths - PGA 职业教练',

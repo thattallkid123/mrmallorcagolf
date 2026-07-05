@@ -197,7 +197,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       eyebrow: 'Option disponible à tout niveau',
       title: 'Play With A Pro',
       body:
-        'Une journée privée sur le parcours avec moi pendant les 18 trous. Fonctionne comme réservation autonome ou comme partie d’un voyage planifié. Un seul parcours, choisi pour votre jeu, avec gestion locale et coaching intégré pendant la partie.',
+        'Une journée sur le parcours avec moi pendant les 18 trous. Fonctionne comme réservation autonome ou comme partie d’un voyage planifié. Un seul parcours, choisi pour votre jeu, avec gestion locale et coaching intégré pendant la partie.',
       price: 'Solo à partir de',
       priceValue: '€695',
       groupLabel: 'Groupes à partir de',

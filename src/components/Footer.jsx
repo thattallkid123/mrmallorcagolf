@@ -23,7 +23,7 @@ const FOOTER_COPY = {
     professional: 'PGA Advanced Professional',
   },
   de: {
-    tagline: 'Private Golftage auf Mallorca mit Andy Griffiths. Lokale Einschätzung, aufmerksame Begleitung, alles arrangiert.',
+    tagline: 'Golftage auf Mallorca mit Andy Griffiths. Lokale Einschätzung, aufmerksame Begleitung, alles arrangiert.',
     experiences: 'Erlebnisse',
     pwap: 'Mit Profi spielen',
     day: 'Ein Tag in Son Gual',
@@ -38,7 +38,7 @@ const FOOTER_COPY = {
     terms: 'AGB',
   },
   es: {
-    tagline: 'Días privados de golf en Mallorca con Andy Griffiths. Criterio local, atención personal y todo bien organizado.',
+    tagline: 'Días de golf en Mallorca con Andy Griffiths. Criterio local, atención personal y todo bien organizado.',
     experiences: 'Experiencias',
     pwap: 'Jugar con un Pro',
     day: 'Un día en Son Gual',
@@ -53,7 +53,7 @@ const FOOTER_COPY = {
     terms: 'Términos',
   },
   fr: {
-    tagline: 'Journées de golf privées à Majorque avec Andy Griffiths. Regard local, présence attentive et tout bien organisé.',
+    tagline: 'Journées de golf à Majorque avec Andy Griffiths. Regard local, présence attentive et tout bien organisé.',
     experiences: 'Expériences',
     pwap: 'Jouer avec un Pro',
     day: 'Une journée à Son Gual',
@@ -68,7 +68,7 @@ const FOOTER_COPY = {
     terms: 'Conditions',
   },
   nl: {
-    tagline: 'Privé-golfdagen op Mallorca met Andy Griffiths. Lokale kennis, rustige begeleiding en alles geregeld.',
+    tagline: 'Golfdagen op Mallorca met Andy Griffiths. Lokale kennis, rustige begeleiding en alles geregeld.',
     experiences: 'Ervaringen',
     pwap: 'Spelen met een Pro',
     day: 'Een dag op Son Gual',
@@ -83,7 +83,7 @@ const FOOTER_COPY = {
     terms: 'Voorwaarden',
   },
   sv: {
-    tagline: 'Privata golfdagar på Mallorca med Andy Griffiths. Lokal känsla, trygg värdskap och allt ordnat.',
+    tagline: 'Golfdagar på Mallorca med Andy Griffiths. Lokal känsla, trygg värdskap och allt ordnat.',
     experiences: 'Upplevelser',
     pwap: 'Spela med ett proffs',
     day: 'En dag på Son Gual',
@@ -98,7 +98,7 @@ const FOOTER_COPY = {
     terms: 'Villkor',
   },
   zh: {
-    tagline: '与 Andy Griffiths 在马略卡体验私人高尔夫日程。熟悉本地，安排周到，全程轻松从容。',
+    tagline: '与 Andy Griffiths 在马略卡体验高尔夫日程。熟悉本地，安排周到，全程轻松从容。',
     experiences: '体验',
     pwap: '与职业球手同场',
     day: 'Son Gual 的一天',
@@ -210,5 +210,3 @@ export default function Footer({ lang }) {
     </footer>
   )
 }
-
-

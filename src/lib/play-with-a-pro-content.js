@@ -449,7 +449,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       breadcrumbCurrent: 'Jouer avec un pro',
       eyebrow: 'Journée de golf · Majorque',
       title: 'Une journée de golf à Majorque.',
-      body: "Une journée privée sur l\'un des meilleurs parcours de Majorque, avec moi à vos côtés pendant le tour et un coaching intégré naturellement tout au long de la partie. Cela convient aux bons joueurs, aux golfeurs en vacances et à tous ceux qui veulent mieux qu\'un simple tee time.",
+      body: "Une journée de golf sur l\'un des meilleurs parcours de Majorque, avec moi à vos côtés pendant le tour et un coaching intégré naturellement tout au long de la partie. Cela convient aux bons joueurs, aux golfeurs en vacances et à tous ceux qui veulent mieux qu\'un simple tee time.",
       primaryCta: 'Réserver votre journée →',
       primaryHref: '/fr/contact',
       secondaryCta: 'Voir les formules',
@@ -1140,7 +1140,7 @@ const PLAY_WITH_A_PRO_AUDIT_OVERRIDES = {
     },
     packages: {
       title: 'Trois façons de vivre la journée.',
-      body: "Les trois formats sont privés, organisés avec moi et joués sur l\'un des plus beaux parcours de l\'île. Parcours, heure de départ et coaching inclus. Green fees et déjeuner en sus, sauf pour l\'Expérience Signature où tout est compris.",
+      body: "Les trois formats sont construits autour de vous, organisés avec moi et joués sur l\'un des plus beaux parcours de l\'île. Parcours, heure de départ et coaching inclus. Green fees et déjeuner en sus, sauf pour l\'Expérience Signature où tout est compris.",
       tiers: [
         {
           eyebrow: 'Solo',
