@@ -980,7 +980,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Course selection', 'Matched to your game and handicap'],
           ['What\'s included', 'Course, tee time, coaching, strategy'],
           ['Duration', 'Typically 5–6 hours'],
-          ['Day rate', '€695 solo · €495 per person for 2–3 golfers (course fee and lunch additional)'],
+          ['Day rate', '€695 solo · €950 total for 2–3 golfers (course fee and lunch additional)'],
         ],
       },
       {
