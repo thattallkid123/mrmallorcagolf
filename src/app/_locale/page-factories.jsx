@@ -58,7 +58,7 @@ export function createContactMetadata(locale) {
 export function createContactPage(locale) {
   return function LocaleContactPage() {
     return (
-      <PageLayout lang={locale} navTransparent={false}>
+      <PageLayout lang={locale} navTransparent={false} showWhatsAppButton={false}>
         <ContactForm locale={locale} />
       </PageLayout>
     )
