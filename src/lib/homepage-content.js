@@ -427,7 +427,7 @@ const HOME_OVERRIDES = {
       items: [
         {
           title: 'Eine Runde mit Andy spielen',
-          text: 'Buchen Sie einen privaten Tag mit mir: ein Platz, 18 Löcher, Platzmanagement und Coaching direkt in die Runde eingebaut. Solo oder in der Gruppe.',
+          text: 'Buchen Sie einen Golftag mit mir: ein Platz, 18 Löcher, Platzmanagement und Coaching direkt in die Runde eingebaut. Solo oder in der Gruppe.',
           cta: 'Play With A Pro',
           href: '/play-with-a-pro',
         },
@@ -456,7 +456,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Erlebnisse und Pakete',
       title: 'Wähle deinen Tag',
-      body: 'Alle drei sind privat und von mir persönlich geleitet. Platz, Abschlagszeit und Coaching sind enthalten. Greenfees und Mittagessen separat.',
+      body: 'Alle drei werden von mir persönlich geleitet. Platz, Abschlagszeit und Coaching sind enthalten. Greenfees und Mittagessen separat.',
       items: [
         {
           eyebrow: 'Ein Tag mit Andy',
@@ -1041,7 +1041,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Ervaringen en pakketten',
       title: 'Kies je dag',
-      body: 'Alle drie zijn privé en alle drie worden persoonlijk door mij begeleid. Baan, startijd en coaching inbegrepen. Greenfees en lunch apart.',
+      body: 'Alle drie worden persoonlijk door mij begeleid. Baan, startijd en coaching inbegrepen. Greenfees en lunch apart.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -1186,7 +1186,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Upplevelser och paket',
       title: 'Välj din dag',
-      body: 'Alla tre är privata och alla tre leds personligen av mig. Bana, startid och coaching ingår. Green fees och lunch separat.',
+      body: 'Alla tre leds personligen av mig. Bana, startid och coaching ingår. Green fees och lunch separat.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -1757,12 +1757,12 @@ const HOME_NO_PRICE_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: 'Courses on the island' },
-        { value: 'Private', label: 'Solo and small-group days' },
+        { value: 'Personal', label: 'Solo and small-group days' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
-      intro: 'Both are private, arranged by me, and played on one of the island\'s finest courses. The homepage stays light; the full experience and pricing sit on the next page.',
+      intro: 'Both are arranged by me and played on one of the island\'s finest courses. The homepage stays light; the full experience and pricing sit on the next page.',
       items: [
         {
           note: 'Pricing shared personally once I know your dates, group size, and the right course for the day.',
@@ -1782,12 +1782,12 @@ const HOME_NO_PRICE_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: 'Plätze auf der Insel' },
-        { value: 'Privat', label: 'Solo- und Kleingruppentage' },
+        { value: 'Persönlich', label: 'Solo- und Kleingruppentage' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
-      intro: 'Beide Varianten sind privat, werden von mir persönlich begleitet und auf einem der besten Plätze der Insel gespielt. Über den Preis sprechen wir direkt, sobald ich Ihre Daten und die passende Runde kenne.',
+      intro: 'Beide Varianten werden von mir persönlich begleitet und auf einem der besten Plätze der Insel gespielt. Über den Preis sprechen wir direkt, sobald ich Ihre Daten und die passende Runde kenne.',
       items: [
         {
           note: 'Den Preis teile ich Ihnen persönlich mit, sobald ich Ihre Reisedaten, Gruppengröße und den passenden Platz kenne.',
@@ -1807,12 +1807,12 @@ const HOME_NO_PRICE_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: 'campos en la isla' },
-        { value: 'Privado', label: 'días para uno o grupos pequeños' },
+        { value: 'Personal', label: 'días para uno o grupos pequeños' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
-      intro: 'Ambas opciones son privadas, las organizo personalmente y se juegan en algunos de los mejores campos de la isla. El precio se comparte cuando hablamos, no dentro de un sistema de reserva frío.',
+      intro: 'Ambas opciones las organizo personalmente y se juegan en algunos de los mejores campos de la isla. El precio se comparte cuando hablamos, no dentro de un sistema de reserva frío.',
       items: [
         {
           note: 'Le comparto el precio personalmente cuando conozca sus fechas, el tamaño del grupo y el campo adecuado para el día.',
@@ -1832,12 +1832,12 @@ const HOME_NO_PRICE_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: 'parcours sur l\'île' },
-        { value: 'Privé', label: 'journées solo et petits groupes' },
+        { value: 'Sur mesure', label: 'journées solo et petits groupes' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
-      intro: 'Les deux formats sont privés, organisés personnellement par moi, et joués sur l\'un des plus beaux parcours de l\'île. Le tarif est partagé lors de notre échange, pas affiché comme sur une simple plateforme de réservation.',
+      intro: 'Les deux formats sont organisés personnellement par moi et joués sur l\'un des plus beaux parcours de l\'île. Le tarif est partagé lors de notre échange, pas affiché comme sur une simple plateforme de réservation.',
       items: [
         {
           note: 'Je vous communique le tarif personnellement une fois vos dates, la taille du groupe et le bon parcours définis.',
@@ -1857,12 +1857,12 @@ const HOME_NO_PRICE_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: 'banen op het eiland' },
-        { value: 'Privé', label: 'dagen voor solo en kleine groepen' },
+        { value: 'Persoonlijk', label: 'dagen voor solo en kleine groepen' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
-      intro: 'Beide opties zijn privé, worden persoonlijk door mij begeleid en gespeeld op een van de beste banen van het eiland. De prijs deel ik wanneer we spreken, niet als een koud boekingsblok op de homepage.',
+      intro: 'Beide opties worden persoonlijk door mij begeleid en gespeeld op een van de beste banen van het eiland. De prijs deel ik wanneer we spreken, niet als een koud boekingsblok op de homepage.',
       items: [
         {
           note: 'Ik deel de prijs persoonlijk zodra ik uw data, groepsgrootte en de juiste baan voor die dag ken.',
@@ -1882,12 +1882,12 @@ const HOME_NO_PRICE_OVERRIDES = {
     intro: {
       stats: [
         { value: '24', label: 'banor på ön' },
-        { value: 'Privat', label: 'dagar för solo och små grupper' },
+        { value: 'Personligt', label: 'dagar för solo och små grupper' },
         { value: 'PGA', label: 'Advanced Professional' },
       ],
     },
     packages: {
-      intro: 'Båda alternativen är privata, leds personligen av mig och spelas på någon av öns bästa banor. Priset delar jag när vi pratar, inte som en stel prisruta på startsidan.',
+      intro: 'Båda alternativen leds personligen av mig och spelas på någon av öns bästa banor. Priset delar jag när vi pratar, inte som en stel prisruta på startsidan.',
       items: [
         {
           note: 'Jag delar priset personligen när jag vet dina datum, gruppstorlek och vilken bana som passar bäst för dagen.',

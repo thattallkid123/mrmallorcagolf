@@ -4,7 +4,7 @@ import { SITE_ORIGIN } from '../../../lib/site.js'
 export const metadata = {
   title: 'A Day at Son Gual | Mallorca Golf Day with Andy Griffiths',
   description:
-    "See what a full day at Son Gual looks like with Andy Griffiths: Mallorca's standout course, real on-course coaching, and the rhythm of a proper private golf day.",
+    "See what a full day at Son Gual looks like with Andy Griffiths: Mallorca's standout course, real on-course coaching, and the rhythm of a proper golf day.",
   alternates: {
     canonical: `${SITE_ORIGIN}/a-day`,
   },
@@ -13,7 +13,7 @@ export const metadata = {
     url: `${SITE_ORIGIN}/a-day`,
     title: 'A Day at Son Gual | Mallorca Golf Day with Andy Griffiths',
     description:
-      "See what a full day at Son Gual looks like with Andy Griffiths: Mallorca's standout course, real on-course coaching, and the rhythm of a proper private golf day.",
+      "See what a full day at Son Gual looks like with Andy Griffiths: Mallorca's standout course, real on-course coaching, and the rhythm of a proper golf day.",
     images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {

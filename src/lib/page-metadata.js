@@ -10,7 +10,7 @@ export const DEFAULT_SOCIAL_IMAGE = {
 
 const SOCIAL_IMAGE_ALT = {
   en: DEFAULT_SOCIAL_IMAGE.alt,
-  zh: '马略卡私人高尔夫日，Mr Mallorca Golf',
+  zh: '马略卡高尔夫日，Mr Mallorca Golf',
 }
 
 const OPEN_GRAPH_LOCALES = {

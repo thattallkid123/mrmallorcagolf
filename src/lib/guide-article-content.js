@@ -142,7 +142,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'Want a full day arranged - course, tee time, coaching, and everything handled before you arrive?',
-        linkLabel: 'Book a private golf day in Mallorca →',
+        linkLabel: 'Book a Play With A Pro day in Mallorca →',
         href: '/play-with-a-pro',
       },
     ],
@@ -628,7 +628,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'Want to play one of these courses with a PGA professional alongside you?',
-        linkLabel: 'Book a private golf day in Mallorca →',
+        linkLabel: 'Book a Play With A Pro day in Mallorca →',
         href: '/play-with-a-pro',
       },
     ],
@@ -882,7 +882,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'Want to see what the best of Mallorca golf looks like, with a PGA professional alongside you?',
-        linkLabel: 'Book a private golf day in Mallorca →',
+        linkLabel: 'Book a Play With A Pro day in Mallorca →',
         href: '/play-with-a-pro',
       },
     ],

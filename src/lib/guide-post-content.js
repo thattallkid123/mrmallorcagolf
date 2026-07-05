@@ -175,7 +175,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'cta',
           text: 'Playing Son Gual? I guide rounds here regularly and can help you plot a proper way round from the first tee.',
-          linkLabel: 'Book a private golf day in Mallorca →',
+          linkLabel: 'Book a Play With A Pro day in Mallorca →',
           href: '/play-with-a-pro',
         },
       ],
@@ -332,7 +332,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'cta',
           text: 'Playing Alcanada? I use it regularly for guided days and can help you turn the views into a real scoring plan.',
-          linkLabel: 'Book a private golf day in Mallorca →',
+          linkLabel: 'Book a Play With A Pro day in Mallorca →',
           href: '/play-with-a-pro',
         },
       ],
@@ -416,7 +416,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         { type: 'paragraph', text: "The Best Golf Course in Spain title is not marketing. Son Muntaner delivers a course that tests positioning, discipline, and clarity of decision-making from the first hole to the last. It rewards control over power and creates scoring opportunities through precision. Five minutes from Palma makes the logistics straightforward. The greens alone justify the trip. Compare all courses on the <a href='/golf-courses'>Mallorca golf courses page</a>." },
         { type: 'paragraph', text: "A return visit with more fairways found would unlock a deeper read of the layout. That's the mark of a course worth coming back to." },
-        { type: 'cta', text: 'Playing Son Muntaner? I can help the premium fee feel justified with the right plan off the tee and into the greens.', linkLabel: 'Book a private golf day in Mallorca →', href: '/play-with-a-pro' },
+        { type: 'cta', text: 'Playing Son Muntaner? I can help the premium fee feel justified with the right plan off the tee and into the greens.', linkLabel: 'Book a Play With A Pro day in Mallorca →', href: '/play-with-a-pro' },
       ],
     },
   },
@@ -537,7 +537,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'cta',
           text: 'Playing Santa Ponsa 1? I can build it into a Mallorca golf day and help you use the wide fairways properly.',
-          linkLabel: 'Book a private golf day in Mallorca →',
+          linkLabel: 'Book a Play With A Pro day in Mallorca →',
           href: '/play-with-a-pro',
         },
       ],
@@ -708,7 +708,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'cta',
           text: 'Playing Golf Andratx? I can help with the strategy, the clubbing, and the trouble zones that matter most around this layout.',
-          linkLabel: 'Book a private golf day in Mallorca →',
+          linkLabel: 'Book a Play With A Pro day in Mallorca →',
           href: '/play-with-a-pro',
         },
       ],
@@ -1063,7 +1063,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'cta',
           text: 'Playing T Golf Calvià? I can help you manage the carries, the green complexes, and the scoring decisions this course asks for.',
-          linkLabel: 'Book a private golf day in Mallorca →',
+          linkLabel: 'Book a Play With A Pro day in Mallorca →',
           href: '/play-with-a-pro',
         },
       ],

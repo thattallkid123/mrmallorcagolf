@@ -115,7 +115,7 @@ const ITINERARY_COPY = {
     },
     dayLabel: (n) => `Day ${n}`,
     pwapDayLabel: 'Play With A Pro',
-    pwapDayTitle: 'A private day with Andy',
+    pwapDayTitle: 'A day with Andy',
     pwapDayDetail: 'Course management, local decisions, and coaching folded into the round.',
     breathingSpaceLabel: 'Breathing space',
     longLunchTitle: 'Long lunch or Palma evening',
@@ -981,7 +981,7 @@ const PLANNER_TEXT_BY_LOCALE = {
   en: {
     priorityDefault: 'Not sure yet',
     addOns: {
-      pwap: 'Play With A Pro: a private round with Andy for course management, local decisions, and coaching on the course.',
+      pwap: 'Play With A Pro: a round with Andy for course management, local decisions, and coaching on the course.',
       clubHire: 'Club hire: Andy can arrange it with the course booking where possible, or point you to the right rental option.',
       courseFit: 'Course fit: keep at least one forgiving round in the plan so everyone enjoys the trip, not just the strongest golfer.',
       restaurants: 'One proper lunch or Palma evening, planned around the best golf day rather than forced into every day.',
@@ -1336,7 +1336,7 @@ function getTripDays(form, courses) {
   if (form.priorities.includes('pwap') || form.priorities.includes('coaching')) {
     days.splice(Math.min(1, days.length), 0, {
       label: 'Play With A Pro',
-      title: 'A private day with Andy',
+      title: 'A day with Andy',
       detail: 'Course management, local decisions, and coaching folded into the round.',
     })
   }
@@ -1442,7 +1442,7 @@ function getSeasonAdvice(form) {
 function getAddOns(form) {
   const addOns = []
   if (form.priorities.includes('pwap') || form.priorities.includes('coaching') || form.golf === 'serious') {
-    addOns.push('Play With A Pro: a private round with Andy for course management, local decisions, and coaching on the course.')
+    addOns.push('Play With A Pro: a round with Andy for course management, local decisions, and coaching on the course.')
   }
   if (form.priorities.includes('clubHire')) {
     addOns.push('Club hire: Andy can arrange it with the course booking where possible, or point you to the right rental option.')

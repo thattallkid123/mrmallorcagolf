@@ -28,9 +28,9 @@ export default function Terms() {
 
           <section className="legal-section">
             <h2>2. Our Services</h2>
-            <p>Mr Mallorca Golf offers private golf day experiences on courses across Mallorca, Spain. Services may include:</p>
+            <p>Mr Mallorca Golf offers hosted golf day experiences on courses across Mallorca, Spain. Services may include:</p>
             <ul>
-              <li>Private golf days with a PGA professional</li>
+              <li>Hosted golf days with a PGA professional</li>
               <li>On-course coaching and instruction</li>
               <li>Course selection and tee time arrangement</li>
               <li>Airport transfers and logistical support where arranged</li>
