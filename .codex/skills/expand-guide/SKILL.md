@@ -23,7 +23,7 @@ Cover, in Andy's voice (read `MMG_BRAND_VOICE_GUIDELINES.md` first):
 4. One thing that surprises first-time visitors
 5. A local-knowledge tip (first tee, wind timing, post-round lunch)
 
-**Facts only from verified sources:** the "Course-specific known facts" table in `CLAUDE.md`, `guide-post-content.js` itself, or Andy directly. Blank cells in that table mean *unverified* — ask Andy, never guess or copy from external sites. If Andy confirms a new fact, update the CLAUDE.md table in the same commit.
+**Facts only from verified sources:** the "Course-specific known facts" table in `docs/course-guide-standards.md`, `guide-post-content.js` itself, or Andy directly. Blank cells in that table mean *unverified* — ask Andy, never guess or copy from external sites. If Andy confirms a new fact, update that table in the same commit.
 
 ## 2. Editing the content file
 

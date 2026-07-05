@@ -20,7 +20,7 @@ Notes: GA4 is excluded on `/zh` routes (Chinese compliance) — zh traffic gaps 
 
 ## Interpretation order
 
-1. **High impressions + low CTR** — the primary lever. Fix via the `meta-ctr` skill; log changes in the CLAUDE.md CTR table with dates; judge after ~4 weeks of data.
+1. **High impressions + low CTR** — the primary lever. Fix via the `meta-ctr` skill; log changes in the `docs/seo-reference.md` CTR table with dates; judge after ~4 weeks of data.
 2. **Rising queries with no dedicated page/section** — candidate for a guide expansion (add a Common Questions block) or a new guide via `publish-course-guide`.
 3. **Pages with traffic but no enquiries** — check the enquiry path: contact CTAs present, trust copy near the ask, price clarity.
 4. **Technical flags** (indexing, canonical, hreflang) — verify in the source before acting. **Never assume a feature or file is missing** (llms.txt, captions, locale parity) — check `public/`, `src/lib/site.js`, and the actual page first.

@@ -25,7 +25,7 @@ Low CTR on high-impression pages is the primary SEO lever. Every description is 
 
 1. Pull the target pages: high impressions + low CTR from Search Console (or `npm run ops:weekly` output). Always inspect URLs as `https://www.mrmallorcagolf.com/...` (www).
 2. Draft the new description; verify <155 chars (`node -e "console.log('...'.length)"`).
-3. Update the "Key pages and their current descriptions" table in `CLAUDE.md` so the next session knows what changed and why.
+3. Update the key-pages tracking table in `docs/seo-reference.md` so the next session knows what changed and why.
 4. Ship via the `ship` skill (`check:content`; add `check:i18n-release` if localized metadata changed).
 5. Note the change date — CTR effects need ~4 weeks of Search Console data before judging.
 

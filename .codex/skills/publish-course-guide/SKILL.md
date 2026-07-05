@@ -16,7 +16,7 @@ Do NOT publish a guide missing any of these. Ask Andy once (never drip-feed):
 - **On-course:** who it genuinely suits, wind exposure (which holes/time of day), the "surprise" detail, signature hole, any confusion point, the honest negative (one per post, specific)
 - **Facilities:** restaurant/terrace verdict, practice facilities, club hire + pricing
 
-Cross-check known facts against the table in `CLAUDE.md` ("Course-specific known facts"). Never guess or copy from external sites.
+Cross-check known facts against the table in `docs/course-guide-standards.md` ("Course-specific known facts"). Never guess or copy from external sites.
 
 ## Step 1 — Photos
 
