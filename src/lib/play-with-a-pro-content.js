@@ -25,7 +25,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/',
       breadcrumbHome: 'Home',
       breadcrumbCurrent: 'Play with a Pro',
-      eyebrow: 'Private Golf Day · Mallorca · PGA Professional',
+      eyebrow: 'Golf Day · Mallorca · PGA Professional',
       title: 'One course. 18 holes.\nMe alongside you the whole way.',
       body: 'Most people play Mallorca and leave wondering what they missed. This day is for the ones who want to know. Book it as a standalone day, or add it to a trip I plan for you. One carefully chosen course, 18 holes together, local course management, and coaching woven naturally into the round. Solo from €695. Groups from €950 total total.',
       price: null,
@@ -105,7 +105,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Pricing',
       title: 'Solo, group, or Signature Day.',
-      body: 'Solo and group are the core Play With A Pro private course day rates. Signature Day is the more complete, high-touch version when you want the golf day wrapped in transfers, food, premium extras, and proper trip handling.',
+      body: 'Solo and group are the core Play With A Pro day rates. Signature Day is the more complete, high-touch version when you want the golf day wrapped in transfers, food, premium extras, and a guaranteed private tee time.',
       tiers: [
         applyTierFlags({
           eyebrow: 'A Day With Andy',
@@ -247,9 +247,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/de',
       breadcrumbHome: 'Start',
       breadcrumbCurrent: 'Mit einem Pro spielen',
-      eyebrow: 'Private Golftage · Mallorca',
-      title: 'Ein privater Golftag auf Mallorca.',
-      body: 'Ein privater Tag auf einem der besten Plätze Mallorcas, bei dem ich an Ihrer Seite spiele und Sie ganz natürlich während der Runde coache. Das passt zu guten Golfern, Urlaubsgolfern und allen, die mehr wollen als nur eine normale Startzeit.',
+      eyebrow: 'Golftag · Mallorca',
+      title: 'Ein Golftag auf Mallorca.',
+      body: 'Ein Golftag auf einem der besten Plätze Mallorcas, bei dem ich an Ihrer Seite spiele und Sie ganz natürlich während der Runde coache. Das passt zu guten Golfern, Urlaubsgolfern und allen, die mehr wollen als nur eine normale Startzeit.',
       primaryCta: 'Ihren Tag buchen →',
       primaryHref: '/de/contact',
       secondaryCta: 'Pakete ansehen',
@@ -309,7 +309,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Erlebnisse & Pakete',
       title: 'Drei Wege, den Tag zu gestalten.',
-      body: 'Alle drei Optionen sind privat und alle drei beinhalten dieselbe Qualität an Begleitung auf dem Platz. Der Unterschied liegt darin, wie viel Sie rund um das Golfspiel organisiert haben möchten.',
+      body: 'Alle drei Optionen werden um Sie herum aufgebaut und von mir begleitet. Der Unterschied liegt darin, wie viel Sie rund um das Golfspiel organisiert haben möchten. Signature Day beinhaltet die private Startzeit standardmäßig.',
       tiers: [],
     },
     faq: {
@@ -347,9 +347,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/es',
       breadcrumbHome: 'Inicio',
       breadcrumbCurrent: 'Jugar con un Pro',
-      eyebrow: 'Días de golf privados · Mallorca',
-      title: 'Un día de golf privado en Mallorca.',
-      body: 'Un día privado en uno de los mejores campos de Mallorca, conmigo jugando a su lado y acompañándole de forma natural durante la vuelta. Funciona para buenos jugadores, golfistas de vacaciones y cualquiera que quiera un día mejor que un simple tee time.',
+      eyebrow: 'Día de golf · Mallorca',
+      title: 'Un día de golf en Mallorca.',
+      body: 'Un día de golf en uno de los mejores campos de Mallorca, conmigo jugando a su lado y acompañándole de forma natural durante la vuelta. Funciona para buenos jugadores, golfistas de vacaciones y cualquiera que quiera un día mejor que un simple tee time.',
       primaryCta: 'Reserve su día →',
       primaryHref: '/es/contact',
       secondaryCta: 'Ver paquetes',
@@ -409,7 +409,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Experiencias y paquetes',
       title: 'Tres formas de hacerlo.',
-      body: 'Las tres opciones son privadas y las tres incluyen el mismo nivel de compañía y criterio en el campo. La diferencia está en cuánto quiere construir el día alrededor del golf.',
+      body: 'Las tres opciones se construyen alrededor de usted y cuentan con el mismo nivel de compañía y criterio en el campo. La diferencia está en cuánto quiere construir el día alrededor del golf. Signature Day incluye la salida privada de serie.',
       tiers: [],
     },
     faq: {
@@ -447,8 +447,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/fr',
       breadcrumbHome: 'Accueil',
       breadcrumbCurrent: 'Jouer avec un pro',
-      eyebrow: 'Journées de golf privées · Majorque',
-      title: 'Une journée de golf privée à Majorque.',
+      eyebrow: 'Journée de golf · Majorque',
+      title: 'Une journée de golf à Majorque.',
       body: "Une journée privée sur l\'un des meilleurs parcours de Majorque, avec moi à vos côtés pendant le tour et un coaching intégré naturellement tout au long de la partie. Cela convient aux bons joueurs, aux golfeurs en vacances et à tous ceux qui veulent mieux qu\'un simple tee time.",
       primaryCta: 'Réserver votre journée →',
       primaryHref: '/fr/contact',
@@ -509,7 +509,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Expériences et formules',
       title: 'Trois façons de vivre la journée.',
-      body: "Les trois options sont privées et les trois incluent le même niveau d\'accompagnement sur le parcours. Ce qui change, c\'est le degré d\'organisation que vous voulez autour du golf.",
+      body: "Les trois options sont construites autour de vous et incluent le même niveau d\'accompagnement sur le parcours. Ce qui change, c\'est le degré d\'organisation que vous voulez autour du golf. Le Signature Day inclut d\'office un départ privé.",
       tiers: [],
     },
     faq: {
@@ -547,9 +547,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/nl',
       breadcrumbHome: 'Home',
       breadcrumbCurrent: 'Spelen met een pro',
-      eyebrow: 'Privé golfdagen · Mallorca',
-      title: 'Een privé golfdag op Mallorca.',
-      body: 'Een privé dag op een van de beste banen van Mallorca, met mij naast u in de flight en coaching die op een natuurlijke manier door de ronde heen loopt. Dit past bij goede golfers, vakantiegolfers en iedereen die meer wil dan een standaard starttijd.',
+      eyebrow: 'Golfdag · Mallorca',
+      title: 'Een golfdag op Mallorca.',
+      body: 'Een golfdag op een van de beste banen van Mallorca, met mij naast u in de flight en coaching die op een natuurlijke manier door de ronde heen loopt. Dit past bij goede golfers, vakantiegolfers en iedereen die meer wil dan een standaard starttijd.',
       primaryCta: 'Reserveer uw dag →',
       primaryHref: '/nl/contact',
       secondaryCta: 'Bekijk pakketten',
@@ -609,7 +609,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Ervaringen en pakketten',
       title: 'Drie manieren om de dag op te bouwen.',
-      body: 'Alle drie de opties zijn privé en alle drie geven ze u hetzelfde niveau van begeleiding op de baan. Het verschil zit in hoeveel u rond het golf wilt laten organiseren.',
+      body: 'Alle drie de opties worden rond u opgebouwd en geven u hetzelfde niveau van begeleiding op de baan. Het verschil zit in hoeveel u rond het golf wilt laten organiseren. Signature Day bevat standaard een privé starttijd.',
       tiers: [],
     },
     faq: {
@@ -647,9 +647,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       homeHref: '/sv',
       breadcrumbHome: 'Hem',
       breadcrumbCurrent: 'Spela med ett proffs',
-      eyebrow: 'Privata golfdagar · Mallorca',
-      title: 'En privat golfdag på Mallorca.',
-      body: 'En privat dag på en av Mallorcas bästa banor, där jag spelar vid din sida och coachar naturligt under rundan. Det passar skickliga golfare, semester-golfare och alla som vill ha något bättre än en vanlig starttid.',
+      eyebrow: 'Golfdag · Mallorca',
+      title: 'En golfdag på Mallorca.',
+      body: 'En golfdag på en av Mallorcas bästa banor, där jag spelar vid din sida och coachar naturligt under rundan. Det passar skickliga golfare, semester-golfare och alla som vill ha något bättre än en vanlig starttid.',
       primaryCta: 'Boka din dag →',
       primaryHref: '/sv/contact',
       secondaryCta: 'Se paket',
@@ -709,7 +709,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Upplevelser och paket',
       title: 'Tre sätt att lägga upp dagen.',
-      body: 'Alla tre alternativen är privata och alla tre ger samma nivå av sällskap och expertis på banan. Skillnaden ligger i hur mycket du vill bygga dagen runt själva golfen.',
+      body: 'Alla tre alternativen byggs runt dig och ger samma nivå av sällskap och expertis på banan. Skillnaden ligger i hur mycket du vill bygga dagen runt själva golfen. Signature Day inkluderar privat starttid som standard.',
       tiers: [],
     },
     faq: {

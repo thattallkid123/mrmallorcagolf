@@ -56,7 +56,7 @@ export const HOME_CONTENT = {
       items: [
         {
           title: 'Play a round with Andy',
-          text: 'Book a private day with me: one course, 18 holes, local course management, and coaching woven into the round. Solo or group.',
+          text: 'Book a day with me: one course, 18 holes, local course management, and coaching woven into the round. Solo or group.',
           cta: 'Book Play With A Pro',
           href: '/play-with-a-pro',
         },
@@ -684,7 +684,7 @@ const HOME_OVERRIDES = {
         },
         {
           title: 'Atención personal',
-          text: 'Solo usted y un PGA Advanced Professional, con todo el día centrado en su juego.',
+          text: 'Un PGA Advanced Professional, con todo el día centrado en su juego.',
         },
         {
           title: 'Acceso a más',
@@ -698,7 +698,7 @@ const HOME_OVERRIDES = {
       items: [
         {
           title: 'Jugar una vuelta con Andy',
-          text: 'Reserve un día privado conmigo: un campo, 18 hoyos, gestión del campo y coaching integrado en la vuelta. Solo o en grupo.',
+          text: 'Reserve un día conmigo: un campo, 18 hoyos, gestión del campo y coaching integrado en la vuelta. Solo o en grupo.',
           cta: 'Play With A Pro',
           href: '/play-with-a-pro',
         },
@@ -732,7 +732,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Experiencias y paquetes',
       title: 'Elige tu día',
-      body: 'Las tres opciones son privadas y las tres las llevo yo personalmente. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte.',
+      body: 'Las tres opciones se organizan alrededor de usted y las llevo yo personalmente. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -861,7 +861,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: 'Tout est organisé', text: 'Parcours, heure de départ, transport et déjeuner sont réglés avant votre arrivée.' },
         { title: 'Coaching sur le parcours', text: 'Des observations utiles au bon moment, tant qu\'elles peuvent encore changer quelque chose.' },
-        { title: 'Attention personnelle', text: 'Juste vous et un PGA Advanced Professional, toute la journée autour de votre jeu.' },
+        { title: 'Attention personnelle', text: 'Un PGA Advanced Professional, toute la journée autour de votre jeu.' },
         { title: 'Accès à davantage', text: 'Des parcours membres que la plupart des visiteurs ne peuvent pas réserver seuls.' },
       ],
     },
@@ -871,7 +871,7 @@ const HOME_OVERRIDES = {
       items: [
         {
           title: 'Jouer une partie avec Andy',
-          text: 'Réservez une journée privée avec moi : un parcours, 18 trous, gestion de parcours et coaching intégré dans la partie. En solo ou en groupe.',
+          text: 'Réservez une journée avec moi : un parcours, 18 trous, gestion de parcours et coaching intégré dans la partie. En solo ou en groupe.',
           cta: 'Play With A Pro',
           href: '/play-with-a-pro',
         },
@@ -896,7 +896,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Expériences et forfaits',
       title: 'Choisissez votre jour',
-      body: 'Les trois options sont privées, et les trois sont menées par moi. Parcours, heure de départ et coaching inclus. Droits verts et déjeuner en sus.',
+      body: 'Les trois options sont construites autour de vous et menées par moi. Parcours, heure de départ et coaching inclus. Droits verts et déjeuner en sus.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -1006,7 +1006,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: 'Alles geregeld', text: 'Baan, tee time en lunch staan vast vóór uw aankomst. Vervoer kan worden toegevoegd als dat handig is.' },
         { title: 'Coaching op de baan', text: 'Nuttige observaties midden in de ronde, zolang ze nog iets kunnen veranderen.' },
-        { title: 'Persoonlijke aandacht', text: 'Alleen u en een PGA Advanced Professional, de hele dag rond uw spel.' },
+        { title: 'Persoonlijke aandacht', text: 'Een PGA Advanced Professional, de hele dag rond uw spel.' },
         { title: 'Toegang tot meer', text: 'Ledenbanen die de meeste bezoekers niet zelfstandig kunnen boeken.' },
       ],
     },
@@ -1016,7 +1016,7 @@ const HOME_OVERRIDES = {
       items: [
         {
           title: 'Een ronde spelen met Andy',
-          text: 'Boek een privédag met mij: één baan, 18 holes, lokaal baanmanagement en coaching verweven in de ronde. Solo of in een groep.',
+          text: 'Boek een dag met mij: één baan, 18 holes, lokaal baanmanagement en coaching verweven in de ronde. Solo of in een groep.',
           cta: 'Play With A Pro',
           href: '/play-with-a-pro',
         },
@@ -1151,7 +1151,7 @@ const HOME_OVERRIDES = {
       features: [
         { title: 'Allt ordnat', text: 'Bana, starttid och lunch är klara innan du anländer. Transport kan läggas till vid behov.' },
         { title: 'Coaching på banan', text: 'Användbara observationer mitt i rundan, medan de fortfarande kan förändra något.' },
-        { title: 'Personlig uppmärksamhet', text: 'Bara du och en PGA Advanced Professional, hela dagen kring ditt spel.' },
+        { title: 'Personlig uppmärksamhet', text: 'En PGA Advanced Professional, hela dagen kring ditt spel.' },
         { title: 'Tillgång till mer', text: 'Medlemsbanor som de flesta besökare inte kan boka själva.' },
       ],
     },
@@ -1161,7 +1161,7 @@ const HOME_OVERRIDES = {
       items: [
         {
           title: 'Spela en runda med Andy',
-          text: 'Boka en privat dag med mig: en bana, 18 hål, lokalt banhanterande och coaching inbyggd i rundan. Solo eller i grupp.',
+          text: 'Boka en dag med mig: en bana, 18 hål, lokalt banhanterande och coaching inbyggd i rundan. Solo eller i grupp.',
           cta: 'Play With A Pro',
           href: '/play-with-a-pro',
         },
