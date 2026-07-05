@@ -124,10 +124,16 @@ export default function ContactForm({ locale = 'en' }) {
                     <div className="contact-card__qr-container">
                       <img
                         src="/images/wechat-qr.png"
-                        alt={locale === 'zh' ? '微信二维码，账号 andygriffiths1' : 'WeChat QR code for andygriffiths1'}
+                        alt={locale === 'zh' ? '\u5fae\u4fe1\u4e8c\u7ef4\u7801\uff0c\u8d26\u53f7 andygriffiths1' : 'WeChat QR code for andygriffiths1'}
                         className="contact-card__qr-image"
                       />
-                      <p className="contact-card__qr-label">扫一扫添加微信</p>
+                      <p className="contact-card__qr-label">{'\u626b\u4e00\u626b\u6dfb\u52a0\u5fae\u4fe1'}</p>
+                      <p className="contact-card__fallback">
+                        {'\u5728\u6d77\u5916\uff0c\u6216\u60a8\u5e73\u65f6\u66f4\u4e60\u60ef\u7528 WhatsApp\uff1f '}
+                        <a href="https://wa.me/34624466702" target="_blank" rel="noopener noreferrer" data-analytics-manual="true">
+                          {'\u4e5f\u53ef\u4ee5\u901a\u8fc7 WhatsApp \u8054\u7cfb'}
+                        </a>
+                      </p>
                     </div>
                   ) : (
                     <p className="contact-card__value">
