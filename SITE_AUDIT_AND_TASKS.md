@@ -13,9 +13,10 @@ under "Active / In Progress". Move items between them as they land. Reference by
 
 ## ⚡ Current status — what's left to do / test / approve / push
 
-**Last worked: 4 Jul 2026.** A long build day across several rounds — all shipped and confirmed
-READY on production. Latest commit: `a68e934` (WhatsApp on all six tools). Summary of the day below;
-the only genuinely open items are in "Still open" and the Active section further down.
+**Last worked: 5 Jul 2026.** Tools/conversion suite shipped (4 Jul); analytics upgrade shipped (5 Jul).
+All changes live on www.mrmallorcagolf.com. Latest commits: `430714d` (dedupe WhatsApp tracking),
+`612ab0a` (dedupe four tools), `d902ba3` (IntentTracker + analytics + monthly automation).
+Summary of both days below; the only genuinely open items are in "Still open" and the Active section.
 
 ### Shipped and live today (in order)
 1. **Handicap checker fatal bug fixed** (round 1) — the old static `handicap-checker.html` had 89 smart
@@ -47,6 +48,31 @@ the only genuinely open items are in "Still open" and the Active section further
    `ZhCourseSelectorClient`, keeps WeChat); the course selector's other five languages got WhatsApp too
    with localized labels.
 
+### 8. Analytics upgrade: global intent tracking + monthly automation (5 Jul)
+**Shipped:** 5 Jul 2026 (commits `d902ba3`, `612ab0a`, `430714d`).
+**What was built:**
+- **Global IntentTracker** (`src/components/IntentTracker.jsx`) — listens to all link clicks on every page,
+  auto-fires GA4 events for email/phone/WhatsApp/tool/outbound clicks without manual wiring. Each tool's
+  WhatsApp button now fires its own richer event (tool-specific) and is marked `data-analytics-manual="true"`
+  so IntentTracker doesn't double-count.
+- **Analytics.js upgrade** — every GA4 event now auto-attaches `page_path` and `page_location`, so you see
+  *where* each event happened (which tool, which review, etc.).
+- **ScrollDepthTracker moved to global** — was per-page opt-in, now fires on all routes by default
+  (tracks when users scroll past 25%, 50%, 75%).
+- **Host guard** — GA4 only loads on the real www.mrmallorcagolf.com (not localhost/previews), so test
+  traffic stays out of your data.
+- **Monthly reporting automation** (`scripts/site-ops/`) — two new Python scripts (`ga4-key-events-setup.py`,
+  `monthly-traffic-interest-snapshot.py`) and Windows scheduled-task wiring so you can auto-generate
+  traffic/intent reports. `.gitignore` updated to un-ignore these scripts (Python is otherwise blocked).
+**Why:** the tools shipped without full funnel visibility. Now you see *intent signals* (which links people
+click, when they scroll, where they came from) in GA4 without adding a tracking line to every new feature.
+The monthly automation gives you a standing report on what's working.
+**How to test:** open any page on the live site, open dev console (F12 → Network), click a few links
+(email link, WhatsApp, a tool card, an external link), and confirm GA4 events fire in the gtag calls.
+Check that the WhatsApp buttons in `/tools/*` fire `whatsapp_click` events in GA4 (with the `tool` param).
+**Status:** live on production. Optional to verify: run one of the monthly scripts locally and confirm it
+generates a report (requires GA4 OAuth token, already configured on both machines).
+
 ### Google reviews migration (your change) — verified clean, nothing to fix
 Trustpilot → Google reviews (`ReviewBadge`) is a complete swap: zero `Trustpilot` references left, old
 `TrustpilotBadge.jsx` gone, all variants (`mini`/`footer-block`/`text`/`compact`) implemented, CSS is
@@ -58,21 +84,24 @@ Both email-capturing tools keep their promise in code: the handicap checker send
 instantly (Resend); the Trip Quote Builder's promise is Andy's personal reply. **Zero automations
 needed** for honesty. Nurture sequences are optional extra value (see Active).
 
-### Still open — your eyes / your call (nothing broken)
-- **Deliverability check:** run `/tools/handicap-checker` on production with your own email and confirm
-  the results email **actually lands in a real external inbox** (I can only confirm Resend accepted the
-  send). Same worth doing for the cost calculator's quote email.
-- **Green-fee price sanity:** eyeball a few numbers on `/tools/green-fees` vs your rate cards (currently
-  hardcoded from the encyclopaedia master, accurate as of Jul 2026 — not yet wired to the pricing JSON).
-- **Deal Calculator subdomain** (`calculator.mrmallorcagolf.com`): a *different* tool (green-fee/2-for-1
-  "Deal Calculator"), deliberately **not** 301'd. Decide what it is / whether to keep it.
-- **"Tools" in top nav:** you said not for now — left off. Reachable via homepage strip, footer, `/tools`.
-- Optional: MailerLite nurture sequences for the two newest groups; add handicap-checker inline CTA on
-  strict-limit reviews; wire green-fees to the pricing JSON. All in Active below.
+### Still open — your eyes / your call (nothing broken; all "nice to have" or decision-needed)
 
-> Note: several unrelated files are uncommitted in the working tree (IntentTracker, analytics,
-> PageLayout, Footer, root-layout-shared, site-ops scripts) — that is separate work-in-progress and was
-> deliberately **not** swept into today's commits.
+**Testing & deliverability (easy, 10 min each):**
+- [ ] Run `/tools/handicap-checker` on production with your own email → confirm results email lands in
+      your external inbox (Resend confirmed delivery, but you should see it end-to-end).
+- [ ] Same for `/tools/golf-cost-calculator` quote email (Trip Quote Builder).
+- [ ] Eyeball a few green-fee numbers on `/tools/green-fees` vs your rate cards (hardcoded from the
+      encyclopaedia master; accurate as of Jul 2026, but good to sanity-check).
+
+**Decisions needed:**
+- [ ] **Deal Calculator subdomain** (`calculator.mrmallorcagolf.com`): a *separate* tool (Deal/2-for-1
+      green-fee calculator), not the trip cost calculator — so it was **not** 301'd. Decide: fold into
+      main site, keep separate, or retire? Then set SEO accordingly (redirect or keep as is).
+- [ ] **"Tools" in top nav:** you said "not for now" — it's parked. Reachable via homepage strip, footer,
+      `/tools`. Revisit when you want it live across all 7 locales.
+
+**In Active below:** nurture sequences (optional), handicap checker on reviews, green-fees pricing-JSON
+wiring, prototype freezing, publish sprint, link-in-bio page, repo hygiene, corruption-checker extension.
 
 ---
 
@@ -204,32 +233,34 @@ testimonial line, not just the badge.
 
 ## Active / In Progress
 
-### Port shareable results URLs to the live tools
-**Priority:** Medium. **Why:** the share feature (item 1) only exists in the prototypes; live tool
-users can't share. Reimplement the `?r=base64` encode/replay + copy-link + WhatsApp share inside the
-four live `src/app/(en)/tools/...` clients (and the zh selector, copy-link only).
+### 🔴 Publish sprint — clear the backlog (HIGHEST PRIORITY)
+**Why:** 16 unpublished course reviews + 12 guide drafts sit in Drive while only 8 of 24 reviews are
+live. Organic growth comes from new indexed pages. This is the single biggest lever for SEO/traffic.
+- [ ] Andy records voice memos for the 4 priority articles (Solo Golf Trip, Beginners, Itinerary,
+      Best Time of Year) in `Drive/MMG_UNPUBLISHED_ARTICLES_VOICE_MEMO_QUESTIONS.md`
+- [ ] Turn each into a guide via the publish-course-guide skill; publish **minimum 2/month**
+- [ ] Publish the next verified course review as you play it
+**Estimate:** ongoing; 4–6 weeks to clear the backlog at 2/month.
 
 ### Trip Quote Builder — Chinese version
-**Priority:** High. **Why:** Chinese golf tourists need the calculator + quote funnel too.
+**Priority:** High. **Why:** Chinese golf tourists need the calculator + quote funnel; closes a
+conversion gap.
 - [ ] Duplicate `GolfCostCalculatorClient.jsx` → `src/app/zh/tools/golf-cost-calculator/ZhGolfCostCalculatorClient.jsx`
-- [ ] Translate all labels, buttons, explanations, and quote form fields (邮箱, 首选日期, 其他信息)
-- [ ] Adapt the email so Andy sees it's from a Chinese user; prefer WeChat over WhatsApp
-- [ ] Add `src/app/zh/tools/golf-cost-calculator/page.jsx` route
-- [ ] Test full flow calculator → quote → email; wire MailerLite group
+- [ ] Translate labels/buttons/form fields (邮箱/首选日期/其他信息)
+- [ ] Adapt email to show Chinese user, prefer WeChat over WhatsApp
+- [ ] Add route `src/app/zh/tools/golf-cost-calculator/page.jsx`
+- [ ] Test end-to-end; wire MailerLite
 **Estimate:** 2–3 hours.
 
-### Promote the handicap checker to a real route — DONE (4 Jul)
-- [x] Rebuilt as `/tools/handicap-checker` (React route, native chrome); added to `/tools` card,
-      homepage strip, sitemap, IndexNow; 301'd the old `.html`; deleted the static file
-- [x] Added instant Resend results email + optional area question + MailerLite group/fields
-- [ ] **Still open:** add it as a third inline-CTA link on strict-limit course reviews (Son Gual,
-      Andratx)
+### Handicap checker live + email working — DONE (4 Jul)
+- [x] Rebuilt as `/tools/handicap-checker` (React, sitemap, IndexNow, 301'd old `.html`)
+- [x] Instant Resend email + optional area question + MailerLite group
+- [ ] **Next:** add as third inline CTA on strict-limit reviews (Son Gual, Andratx)
 
-### Promote the green fees table to a live route — DONE (4 Jul)
-- [x] Promoted `prototypes/green-fees.html` → `/tools/green-fees` (React route, sitemap, IndexNow,
-      `/tools` card); visible "Last updated: July 2026" stamp; cross-links to guides + selector
-- [ ] **Still open:** wire the fee numbers to the pricing master JSON so `mmg.ps1 pricing` keeps them
-      in sync automatically (currently hardcoded from the encyclopaedia master — accurate as of Jul 2026)
+### Green fees table live at `/tools/green-fees` — DONE (4 Jul)
+- [x] Promoted to live route (React, sitemap, IndexNow, `/tools` card, timestamp)
+- [x] All 24 courses, filter/sort, links to guides
+- [ ] **Next:** wire fees to pricing JSON so `mmg.ps1 pricing` keeps them synced (currently hardcoded)
 
 ### Optional: MailerLite nurtures for the two newest groups
 **Priority:** Medium (nice-to-have, not required — the tools are honest without these; see status
@@ -248,52 +279,88 @@ not the trip cost calculator — so it was NOT 301'd. Needs a proper look.
 - [ ] Confirm what it does and whether it's still wanted
 - [ ] Decide: fold into the main site as a tool, retire it, or leave it — then handle SEO accordingly
 
-### Email capture on Day Builder and Hotel Recommender — DONE (verified 4 Jul)
-Both already capture email at the results stage: the day builder has "email me this plan"
-(`emailItinerary`) and the hotel recommender has "Email me my shortlist" (`sendEmail`). All six tools
-now have an email path; all six also now have a WhatsApp path (commit `a68e934`). Nothing open here.
+### Email capture + WhatsApp on all tools — DONE (4–5 Jul)
+- [x] All six tools have email capture: day builder (`emailItinerary`), hotel recommender (`sendEmail`),
+      handicap checker (Resend), cost calculator (Resend + MailerLite).
+- [x] All six tools have WhatsApp: each link pre-fills context, fires GA4 event with tool tag, marked
+      `data-analytics-manual="true"` to avoid double-counting by IntentTracker.
+Nothing open here.
 
-### Consolidate the tools estate (audit item, 4 Jul)
+### Tools estate consolidation — IN PROGRESS (4–5 Jul)
 **Priority:** Medium. **Why:** sprawl and drift.
-- [x] Fix `/tools` index copy count — now "six", count-agnostic wording, meta lists all six
-- [x] `/tools` layout: scroll carousel → responsive grid so all six are visible at once
-- [ ] Rule: once a tool is live, delete/freeze its `prototypes/` copy (the cost calculator + others
-      are still duplicated under `prototypes/`; green-fees + handicap prototypes now superseded by live
-      routes and can be frozen/removed)
-- [ ] Then freeze — no new tools until an existing one demonstrably produces enquiries
+- [x] Fixed `/tools` copy ("six" tools, count-agnostic)
+- [x] Converted carousel → responsive grid (all six visible at once)
+- [ ] **Next:** freeze prototypes superseded by live routes (handicap-checker, green-fees, cost-calc
+      prototypes still exist under `prototypes/`); delete or mark "archived"
 
-### Add "Tools" to the top navigation (needs approval)
-**Priority:** High-value quick win. **Why:** tools are invisible on every page except the homepage.
-- [ ] Add a "Tools" link → `/tools` in `src/components/Nav.jsx` for all 7 locales (Tools / Werkzeuge
-      / Outils / Herramientas / Hulpmiddelen / Verktyg / 工具)
-- [ ] Check the nav doesn't overflow on mobile with the extra item
+### Add handicap checker CTA to strict-limit reviews
+**Priority:** High. **Why:** these courses reject most golfers; the checker is the soft answer.
+- [ ] Add handicap checker as a third inline link on Son Gual & Andratx reviews (alongside the two
+      existing funnel CTAs)
+- [ ] Test on production
+**Estimate:** 15 min.
 
-### Broken prototype HTML files — DONE (deleted 4 Jul)
-- [x] `prototypes/handicap-checker.html` — deleted (superseded by live `public/handicap-checker.html`)
-- [x] `prototypes/golf-day-builder/` — deleted (superseded by the React component); removed its dead
-      link from `prototypes/index.html`
-- [ ] **Still open:** extend the `check:content` corruption checker to scan `public/*.html` so broken
-      static HTML can't ship again (this is the gap that let the handicap checker ship broken)
+### Wire green-fees table to pricing JSON
+**Priority:** High. **Why:** auto-sync fees when `mmg.ps1 pricing` runs (currently hardcoded).
+- [ ] Update `GreenFeesClient.jsx` to import from pricing JSON instead of inline data
+- [ ] Verify output matches JSON
+**Estimate:** 30 min.
 
-### Publish sprint — clear the content backlog (audit item, 4 Jul)
-**Priority:** Highest for growth. **Why:** 16 unpublished course reviews + 12 guide drafts sit in
-Drive while only 8 of 24 reviews are live. Organic growth comes from new indexed pages, not more
-polish.
-- [ ] Andy records voice memos for the 4 priority articles (Solo Golf Trip, Beginners, Itinerary,
-      Best Time of Year) in `Drive/MMG_UNPUBLISHED_ARTICLES_VOICE_MEMO_QUESTIONS.md`
-- [ ] Turn each into a guide via the pipeline; publish min. 2 guides/month
-- [ ] Publish the next verified course review as played
+### Port shareable results URLs to live tools
+**Priority:** Medium. **Why:** share feature only exists in prototypes (`?r=base64`); live tools can't
+share. Reimplement in all four live tools + zh selector.
+- [ ] Implement `?r=base64` encode/replay for course selector, cost calculator, day builder, hotel
+      recommender, and zh selector
+- [ ] Add "Copy link" + "Share on WhatsApp" buttons (English tools only on WhatsApp)
+**Estimate:** 3–4 hours.
 
-### Link-in-bio landing page for social traffic (audit item, 4 Jul)
-**Priority:** Medium. **Why:** ~10 of 16 weekly sessions are social (mostly US), bouncing off the
-homepage in ~6s.
-- [ ] Build a one-screen `/start`: who Andy is, one guide, one tool, WhatsApp/WeChat CTA
+### Investigate the Deal Calculator subdomain
+**Priority:** Medium. **Why:** `calculator.mrmallorcagolf.com` is a *separate* tool (Deal/2-for-1),
+not the trip cost calculator — needs a decision.
+- [ ] Confirm what it does and whether it's wanted
+- [ ] Decide: fold into main site, retire, or keep separate — then set SEO accordingly
+**Estimate:** 30 min.
+
+### Link-in-bio landing page for social traffic
+**Priority:** Medium. **Why:** ~10 of 16 weekly sessions are social (mostly US), bouncing off homepage
+in ~6s.
+- [ ] Build one-screen `/start`: who Andy is, one featured guide, one tool, WhatsApp/WeChat CTA
 - [ ] Point Instagram/Douyin bios at it; track with `trackEvent`/`trackLead`
+**Estimate:** 2–3 hours.
 
-### Repo hygiene sweep (audit item, 4 Jul) — ~15 min
+### Optional: MailerLite nurtures for new subscriber groups
+**Priority:** Nice-to-have. **Why:** "Trip Quote Builder" & "Handicap Access Checker" groups capture
+subscribers but have no ongoing nurture. This is extra value, not a broken promise.
+- [ ] (Optional) Build "Handicap Access Checker" follow-up sequence (trigger = joins group)
+- [ ] (Optional) Build "Trip Quote Builder" holding email (trigger = joins group)
+- [ ] Build in MailerLite visual automation. I can draft the copy in brand voice if you want.
+
+### Freeze prototype HTML files superseded by live routes
+**Priority:** Low (hygiene). **Why:** `prototypes/handicap-checker.html`, `prototypes/green-fees.html`,
+`prototypes/golf-cost-calculator/` are now live routes; the old prototype HTML should be frozen/deleted.
+- [ ] Delete or move to `archive/` the prototypes superseded by live routes
+- [ ] Keep only the five active tool prototypes
+**Estimate:** 15 min.
+
+### Extend content corruption checker
+**Priority:** Low (hygiene). **Why:** old `handicap-checker.html` shipped with fatal syntax errors.
+The corruption checker doesn't scan `public/*.html` yet.
+- [ ] Add `public/*.html` files to the `check:content` script so broken static HTML can't ship again
+**Estimate:** 15 min.
+
+### Repo hygiene sweep
+**Priority:** Low (nice-to-have). **Why:** cleanup and organisation.
 - [ ] Move `MMG-Booking-Terms-Sep2026.docx` out of repo root to `Drive/Bookings/`
-- [ ] Delete `token.json.bak`; remove `netlify.toml` (deploys on Vercel)
+- [ ] Delete `token.json.bak`; remove `netlify.toml` (you deploy on Vercel)
 - [ ] Consider moving `push.sh` and `Run Claude Config Backup.bat` into `scripts/`
+**Estimate:** 10 min.
+
+### Add "Tools" to top navigation
+**Priority:** Parked (approved "not for now"). **Why:** tools currently only visible on homepage,
+footer, and `/tools` index. Adding to nav would expose them on every page.
+- [ ] Add "Tools" link → `/tools` in `src/components/Nav.jsx` for all 7 locales
+- [ ] Check mobile nav doesn't overflow
+**Estimate:** 30 min. **Revisit when:** you decide tools should be first-class navigation.
 
 ---
 
