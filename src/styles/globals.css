@@ -2016,6 +2016,8 @@ body {
 .contact-float { position: fixed; bottom: 24px; right: 24px; z-index: 999; }
 .contact-float__link { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 50%; background: #25D366; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .contact-float__link:hover { transform: scale(1.06); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+.contact-float__link--wechat { background: #07C160; box-shadow: 0 4px 20px rgba(7,193,96,0.35); }
+.contact-float__link--wechat:hover { box-shadow: 0 6px 24px rgba(7,193,96,0.45); }
 .pwap-section-title { font-size: clamp(1.8rem,3vw,2.5rem); color: var(--deep); margin-top: .72rem; margin-bottom: 1.45rem; line-height: 1.16; text-wrap: balance; max-width: 20ch; }
 .pwap-section-title--spacious { margin-bottom: 2.5rem; }
 .pwap-section-title--tight { margin-top: .5rem; margin-bottom: 1rem; }
@@ -4509,5 +4511,15 @@ select.form-control { cursor: pointer; }
 
   .sticky-cta-active .contact-float {
     display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

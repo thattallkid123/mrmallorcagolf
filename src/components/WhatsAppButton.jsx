@@ -28,7 +28,7 @@ export default function WhatsAppButton({ lang }) {
         rel={isChinese ? undefined : 'noopener noreferrer'}
         aria-label={label}
         title={label}
-        className="contact-float__link"
+        className={`contact-float__link${isChinese ? ' contact-float__link--wechat' : ''}`}
         onClick={handleClick}
       >
         {isChinese ? (

@@ -485,6 +485,8 @@ export const CONTACT_CONTENT = {
       eyebrow: '咨询表单',
       title: '开始安排您的这一天。',
       intro: '您提供的信息越详细，我就越能把这一天安排得更贴合您的球和您的需求。',
+      sendPromptLabel: '建议提供',
+      handicapOptional: '（可选）',
       labels: {
         fname: '名字',
         lname: '姓氏',

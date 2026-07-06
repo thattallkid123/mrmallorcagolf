@@ -7,7 +7,7 @@ export const COURSE_SELECTOR_T = {
     hero: {
       eyebrow: 'Free tool',
       h1: 'Find your Mallorca course',
-      sub: 'Five questions. A shortlist matched to your handicap, budget, and what you want from a round.',
+      sub: 'Eight quick questions. A shortlist matched to your handicap, budget, and what you want from a round.',
     },
     intro: {
       h2: 'Which courses fit your game?',
@@ -18,7 +18,7 @@ export const COURSE_SELECTOR_T = {
       label: (n, total) => `Question ${n} of ${total}`,
       pct: p => `${p}%`,
       back: '← Back',
-      showCourses: 'Show my courses',
+      showCourses: 'Next',
     },
     questions: {
       ability: {
