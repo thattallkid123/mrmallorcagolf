@@ -300,11 +300,21 @@ Nothing open here.
 - [ ] Test on production
 **Estimate:** 15 min.
 
-### Wire green-fees table to pricing JSON
+### Wire green-fees table to pricing JSON — DISCOVERY IN PROGRESS
 **Priority:** High. **Why:** auto-sync fees when `mmg.ps1 pricing` runs (currently hardcoded).
-- [ ] Update `GreenFeesClient.jsx` to import from pricing JSON instead of inline data
-- [ ] Verify output matches JSON
-**Estimate:** 30 min.
+
+**Status (5 Jul):** Discovered that green-fees table and pricing JSON have independent, unreconciled data with drift on ~12 of 24 courses. Verified official rates against club websites for 6 courses:
+- **Verified correct (JSON):** Son Servera 145/80 ✅, Vall d'Or 132/99 ✅
+- **Verified correct (Table):** Maioris 110/91 ✅, Son Gual 165/115 ✅
+- **Verified but needs fixing:** Son Termes should be 110/90 (table missing low, JSON wrong)
+- **Verified but needs fixing:** Pollensa 75/55 (JSON high wrong)
+
+**Next steps:**
+- [ ] Update the 4 official-rate courses (Servera, Vall d'Or, Son Termes, Pollensa) to verified numbers
+- [ ] Check 7 dynamic courses (Son Quint, Son Vida, Son Muntaner, T Golf Palma, Son Antem E/W, T Golf Calvià) on TeeOne/golfmanager for current booking prices
+- [ ] Once all 24 are verified, extend `sync-site-pricing.js` to generate a `course-fees.json` for the site repo
+- [ ] Wire both green-fees table and cost calculator to import from that JSON
+**Estimate:** Phase 1 (fix + wire) 1–2 hours once numbers confirmed.
 
 ### Port shareable results URLs to live tools
 **Priority:** Medium. **Why:** share feature only exists in prototypes (`?r=base64`); live tools can't
