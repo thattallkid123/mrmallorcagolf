@@ -7,7 +7,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: 'Son Gual Golf Mallorca Review (2026) | Is It Worth It? Green Fees, Wind & Verdict',
         description:
-          "Son Gual charges €110–€165 and requires a handicap certificate. PGA review: course conditions, wind notes, and a straight answer on who should — and shouldn't — book it.",
+          "Son Gual charges €115–€165 and requires a handicap certificate. PGA review: course conditions, wind notes, and a straight answer on who should — and shouldn't — book it.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
       },
       meta: {
@@ -134,7 +134,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['Peak €165 / Low €110', '2026 price guide'],
+            ['Peak €165 / Low €115', '2026 price guide'],
             ['9/10', 'Difficulty'],
             ['Par 72', 'Championship layout'],
             ['2007', 'Designed by Thomas Himmel'],
@@ -144,7 +144,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Public 18-hole pricing typically runs from €110 to €165. January maintenance windows can dip lower, but that should not be used as the honest comparison rate. Peak spring and autumn sit at €165, with most standard summer/public pricing well above the old maintenance figure. Full seasonal breakdown at son-gual.com.',
+            'Public 18-hole pricing typically runs from €115 to €165. January maintenance windows can dip lower, but that should not be used as the honest comparison rate. Peak spring and autumn sit at €165, with most standard summer/public pricing well above the old maintenance figure. Full seasonal breakdown at son-gual.com.',
         },
         {
           type: 'paragraph',
@@ -341,9 +341,9 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Review 2026 | Spain's Best Course, €125–€250, Buggy Included",
+        title: "Son Muntaner Golf Review 2026 | Spain's Best Course, €110–€260, Buggy Included",
         description:
-          "Spain's Best Golf Course 2025. Green fees €125–€250 with buggy included, 5 minutes from Palma. PGA review: conditions, who it suits, and whether the premium is worth paying.",
+          "Spain's Best Golf Course 2025. Green fees €110–€260 with buggy included, 5 minutes from Palma. PGA review: conditions, who it suits, and whether the premium is worth paying.",
         imagePath: '/images/son-muntaner-blog/sm-4.webp',
       },
       meta: {
@@ -368,7 +368,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'paragraph',
           text: "Book Son Muntaner if you want premium conditioning close to Palma, with a buggy included and a layout that rewards positional golf over pure power. If your group prefers a bigger visual experience, compare it with <a href='/guides/alcanada-review'>Alcanada</a>; if you want the sternest championship test, compare <a href='/guides/son-gual-review'>Son Gual</a>.",
         },
-        { type: 'facts', items: [['€125-€250', '2026 green fee range'], ['Included', 'Buggy'], ['5 mins', 'From central Palma'], ['7/10', 'Difficulty']] },
+        { type: 'facts', items: [['€110-€260', '2026 green fee range'], ['Included', 'Buggy'], ['5 mins', 'From central Palma'], ['7/10', 'Difficulty']] },
         { type: 'heading', text: 'Getting There' },
         { type: 'paragraph', text: "Five minutes from central Palma. That alone puts it in a different category from most courses on the island worth talking about. Son Gual takes twenty minutes, Alcanada fifty. If you're based in the city and want a serious round without building a half-day around the drive, Son Muntaner is the answer." },
         { type: 'paragraph', text: "The service from arrival through to the round was smooth. The team are attentive without being intrusive. Range balls, practice facilities, and the overall operation all sit at the level the course's reputation would lead you to expect." },
@@ -397,9 +397,9 @@ export const GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: 'Ancient olive tree on hole 15 at Son Muntaner golf course Mallorca with Na Burguesa mountains behind', caption: "Hole 15. That olive tree has been standing for roughly a thousand years. The Balearic government declared it a natural monument. Someone decided to build a golf hole around it, and I'm glad they did." },
         { type: 'heading', text: 'The Restaurant' },
         { type: 'paragraph', text: "Not an afterthought. The food matches the standard of the course. Worth staying for after the round rather than heading straight back to Palma." },
-        { type: 'facts', items: [['Peak €250 / Low €125', '2026 price guide'], ['7/10', 'Difficulty'], ['Par 72', 'Championship layout'], ['Included', 'Buggy in green fee']] },
+        { type: 'facts', items: [['Peak €260 / Low €110', '2026 price guide'], ['7/10', 'Difficulty'], ['Par 72', 'Championship layout'], ['Included', 'Buggy in green fee']] },
         { type: 'heading', text: '2026 Green Fees' },
-        { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €250 for 18 holes, with the lowest widely seen later-day rate around €125. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap limit is 36 for both men and women. Buggy is included in the green fee from March through late November. A €3 daily Spanish Golf Federation licence is payable at check-in." },
+        { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €260 for 18 holes, with the lowest widely seen later-day rate around €110. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap limit is 36 for both men and women. Buggy is included in the green fee from March through late November. A €3 daily Spanish Golf Federation licence is payable at check-in." },
         { type: 'heading', text: 'Common Questions' },
         { type: 'paragraph', text: "First time on this course? Walk to the front of the first tee box and take a proper look before you play. The driving range sits just out of sight to the right and is easy to drift toward from the tee if you have not seen the full picture. Most visitors who go right on the opening hole have simply not had a clear view of where they are going." },
         { type: 'paragraph', text: "Son Muntaner is part of the Arabella Golf Mallorca group alongside Son Vida and Son Quint. All three courses are accessible from the same resort complex." },

@@ -125,11 +125,13 @@ Edit the pricing master Google Sheet (mmg-tools control panel) → run sync → 
 
 For any price change use the `/pricing-change` skill (full surface sweep). Reference maps: `docs/content-architecture.md`, `docs/pricing-change-checklist.md`, `docs/pricing-surfaces-inventory.md`. Santa Ponsa 2 and 3 can stay in private reference notes even when not bookable.
 
-**The sync does NOT cover these — always manual when pricing changes:**
-- `src/lib/golf-courses-data.js` — pills text (e.g. `Peak 22 / Low 14`)
-- `src/lib/guide-article-content.js` — EN blog post pricing references
-- `src/lib/guide-article-content-localized.js` — all 6 language versions
-- Any `guide-post-content.js` entries mentioning specific prices
+**Auto-synced when you run `.\mmg.ps1 pricing`:**
+- Course-listing pills in `src/lib/golf-courses-data.js` (e.g., `Peak €165 / Low €115`)
+
+**Manual edits required when pricing changes:**
+- `src/lib/guide-article-content.js` — EN blog post pricing references (narrative context, not auto-synced)
+- `src/lib/guide-article-content-localized.js` — all 6 language versions (narrative context, not auto-synced)
+- Any `guide-post-content.js` entries mentioning specific prices (narrative context, not auto-synced)
 
 `src/lib/mallorca-tracker-courses.js` is placeholder prototype data — do not update from pricing data. Writing guardrails: `MMG_BRAND_VOICE_GUIDELINES.md` (NOT the superseded `MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`).
 
