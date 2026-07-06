@@ -283,7 +283,7 @@ export default function SiteRootLayout({ lang, children }) {
               window.addEventListener('pointerdown', once, { passive: true, once: true });
               window.addEventListener('keydown', once, { passive: true, once: true });
               window.addEventListener('touchstart', once, { passive: true, once: true });
-              setTimeout(init, 20000);
+              setTimeout(init, 3000);
             })();
           `}
         </Script>
