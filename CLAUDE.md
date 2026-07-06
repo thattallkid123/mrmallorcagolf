@@ -80,7 +80,7 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 | Visual smoke checks | `npm run check:visual` |
 | Pre-deploy check | `npm run predeploy` if available, otherwise run the checks above |
 | GA4 report | `python ga4_analytics/ga4_report.py` |
-| Update Trustpilot rating | Edit `TP_RATING` and `TP_COUNT` at the top of `src/components/TrustpilotBadge.jsx` — those two constants drive the badge on every page + the `aria-label`. Then commit and push. |
+| Update Google rating | Edit `REVIEW_RATING` and `REVIEW_COUNT` at the top of `src/components/ReviewBadge.jsx` — those two constants drive the badge on every page + the `aria-label`. Then commit and push. |
 
 **Local path:** `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`. PowerShell does not support `&&` — use separate lines or `;`.
 
