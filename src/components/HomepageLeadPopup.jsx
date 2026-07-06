@@ -27,11 +27,11 @@ export default function HomepageLeadPopup() {
       document.removeEventListener('mouseleave', onMouseLeave)
     }
 
-    // Trigger 1: scroll past 50% of page
+    // Trigger 1: scroll past 80% of page
     function onScroll() {
       const scrolled = window.scrollY + window.innerHeight
       const total = document.documentElement.scrollHeight
-      if (scrolled / total >= 0.5) show()
+      if (scrolled / total >= 0.8) show()
     }
 
     // Trigger 2: exit-intent (mouse leaves viewport through top)
