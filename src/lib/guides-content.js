@@ -102,6 +102,18 @@ export const GUIDES_CONTENT = {
         keywords: 'Play with a Pro · Full day · On-course coaching',
       },
       {
+        slug: 'on-course-coaching-mallorca',
+        badge: 'Coaching Guide',
+        badgeGold: true,
+        img: '/images/son-gual-blog/sg-swing.webp',
+        imgPosition: 'center 40%',
+        title: 'On-Course Golf Coaching in Mallorca. Play Better, Right Now',
+        intro:
+          'Most lessons happen on a range. On-course coaching happens where the game actually is. Here is what it involves and what to expect.',
+        readTime: '5 min read',
+        keywords: 'On-course coaching · PGA Advanced Professional · Real situations',
+      },
+      {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guide',
         img: '/images/blog-best-golf-courses/Son Gual.webp',
@@ -266,6 +278,18 @@ export const GUIDES_CONTENT = {
         keywords: 'Día con un pro · Jornada completa · Coaching en campo',
       },
       {
+        slug: 'on-course-coaching-mallorca',
+        badge: 'Guía de Coaching',
+        badgeGold: true,
+        img: '/images/son-gual-blog/sg-swing.webp',
+        imgPosition: 'center 40%',
+        title: 'Coaching en el campo en Mallorca. Juega mejor, ahora mismo',
+        intro:
+          'La mayoría de las clases ocurren en el campo de prácticas. El coaching en campo ocurre donde realmente se juega al golf. Qué implica y qué esperar.',
+        readTime: '5 min',
+        keywords: 'Coaching en campo · Profesional PGA · Situaciones reales',
+      },
+      {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guía',
         title: 'Los mejores campos de golf de Mallorca - ranking honesto de un Profesional PGA',
@@ -415,6 +439,18 @@ export const GUIDES_CONTENT = {
           'Ein kompletter Tag auf dem Platz mit einem PGA-Profi. Was passiert, was sich verändert und was Golfer mitnehmen, das sie nicht erwartet haben.',
         readTime: '5 min read',
         keywords: 'Mit einem Pro spielen · Ganzer Tag · Coaching auf dem Platz',
+      },
+      {
+        slug: 'on-course-coaching-mallorca',
+        badge: 'Coaching-Ratgeber',
+        badgeGold: true,
+        img: '/images/son-gual-blog/sg-swing.webp',
+        imgPosition: 'center 40%',
+        title: 'Golf-Coaching auf dem Platz in Mallorca. Sofort besser spielen',
+        intro:
+          'Die meisten Lektionen finden auf der Range statt. Coaching auf dem Platz findet dort statt, wo das Golfspiel wirklich passiert. Das steckt dahinter.',
+        readTime: '5 Min.',
+        keywords: 'Coaching auf dem Platz · PGA Professional · Reale Situationen',
       },
       {
         slug: 'best-golf-courses-mallorca',
@@ -568,6 +604,18 @@ export const GUIDES_CONTENT = {
         keywords: 'Journée avec un pro · Journée complète · Coaching sur le parcours',
       },
       {
+        slug: 'on-course-coaching-mallorca',
+        badge: 'Guide de Coaching',
+        badgeGold: true,
+        img: '/images/son-gual-blog/sg-swing.webp',
+        imgPosition: 'center 40%',
+        title: 'Coaching sur le parcours à Majorque. Jouez mieux, dès maintenant',
+        intro:
+          "La plupart des leçons se déroulent au practice. Le coaching sur le parcours se déroule là où le golf se joue vraiment. Voici ce que cela implique.",
+        readTime: '5 min',
+        keywords: 'Coaching sur le parcours · Professionnel PGA · Situations réelles',
+      },
+      {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guide',
         title: 'Les meilleurs parcours de golf de Majorque - classement honnête par un Professionnel PGA',
@@ -717,6 +765,18 @@ export const GUIDES_CONTENT = {
           'Een volledige dag op de baan met een PGA-professional. Wat er gebeurt, wat er verandert en wat golfers meenemen dat ze niet verwacht hadden.',
         readTime: '5 min read',
         keywords: 'Spelen met een pro · Volledige dag · Coaching op de baan',
+      },
+      {
+        slug: 'on-course-coaching-mallorca',
+        badge: 'Coachinggids',
+        badgeGold: true,
+        img: '/images/son-gual-blog/sg-swing.webp',
+        imgPosition: 'center 40%',
+        title: 'Coaching op de baan in Mallorca. Speel meteen beter',
+        intro:
+          'De meeste lessen vinden plaats op de driving range. Coaching op de baan vindt plaats waar het golfspel zich echt afspeelt. Dit is wat het inhoudt.',
+        readTime: '5 min',
+        keywords: 'Coaching op de baan · PGA Professional · Echte situaties',
       },
       {
         slug: 'best-golf-courses-mallorca',
@@ -870,6 +930,18 @@ export const GUIDES_CONTENT = {
         keywords: 'Spela med en pro · Heldag · Coaching på banan',
       },
       {
+        slug: 'on-course-coaching-mallorca',
+        badge: 'Coachingguide',
+        badgeGold: true,
+        img: '/images/son-gual-blog/sg-swing.webp',
+        imgPosition: 'center 40%',
+        title: 'Golfcoaching på banan i Mallorca. Spela bättre, direkt',
+        intro:
+          'De flesta lektioner sker på rangen. Coaching på banan sker där golfen faktiskt spelas. Så här går det till.',
+        readTime: '5 min',
+        keywords: 'Coaching på banan · PGA Professional · Verkliga situationer',
+      },
+      {
         slug: 'best-golf-courses-mallorca',
         badge: 'Guide',
         title: 'De bästa golfbanorna på Mallorca - en PGA-professionells ärliga ranking',
@@ -1019,6 +1091,18 @@ export const GUIDES_CONTENT = {
           '与PGA职业球手在球场度过完整的一天。会发生什么，带来什么改变，以及球手们带走了什么意想不到的收获。',
         readTime: '5 min read',
         keywords: '职业陪打 · 全天体验 · 球场实战指导',
+      },
+      {
+        slug: 'on-course-coaching-mallorca',
+        badge: '教学指南',
+        badgeGold: true,
+        img: '/images/son-gual-blog/sg-swing.webp',
+        imgPosition: 'center 40%',
+        title: '马略卡球场实战教学：即刻提升球技',
+        intro:
+          '大多数教学课发生在练习场。球场实战教学发生在高尔夫真正被打的地方。这里是详细介绍。',
+        readTime: '5分钟',
+        keywords: '球场实战教学 · PGA职业教练 · 真实场景',
       },
       {
         slug: 'best-golf-courses-mallorca',
