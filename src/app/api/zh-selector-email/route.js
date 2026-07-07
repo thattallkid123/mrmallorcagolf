@@ -1,33 +1,67 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-// Note: this endpoint intentionally mirrors /api/send-itinerary (no origin lock)
-// so the Chinese selector behaves like the other four tools and is testable the
-// same way. It keeps its own handler to send a Chinese email with the zh WhatsApp
-// number (+34624466702) rather than the English wrapper.
+import {
+  checkRateLimit,
+  escapeHtml,
+  getClientKey,
+  isAllowedOrigin,
+  isJsonRequest,
+  isPayloadTooLarge,
+  isValidEmail,
+  sanitizeText,
+} from '../../../lib/request-safety'
+
+// Keeps its own handler to send a Chinese email with the zh WhatsApp number
+// (+34624466702) rather than the English wrapper. Guarded the same way as the
+// other tool endpoints (origin lock + rate limit).
 export async function POST(request) {
+  if (!isAllowedOrigin(request)) {
+    return NextResponse.json({ ok: false, error: 'Origin not allowed.' }, { status: 403 })
+  }
+
+  if (!isJsonRequest(request)) {
+    return NextResponse.json({ ok: false, error: 'Unsupported content type.' }, { status: 415 })
+  }
+
+  if (isPayloadTooLarge(request, 64 * 1024)) {
+    return NextResponse.json({ ok: false, error: 'Payload too large.' }, { status: 413 })
+  }
+
+  if (!checkRateLimit(getClientKey(request, 'zh-selector'), 10, 10 * 60 * 1000)) {
+    return NextResponse.json({ ok: false, error: 'Too many requests. Please wait a few minutes and try again.' }, { status: 429 })
+  }
+
   if (!process.env.RESEND_API_KEY) {
     return NextResponse.json({ ok: false, error: 'Email service not configured.' }, { status: 500 })
   }
 
   try {
     const payload = await request.json()
+
+    if (payload?.website) {
+      return NextResponse.json({ ok: true })
+    }
+
     const { email, courses = [] } = payload
 
-    if (!email || !email.includes('@')) {
+    if (!email || !isValidEmail(email)) {
       return NextResponse.json({ ok: false, error: 'Invalid email address.' }, { status: 400 })
     }
 
-    // Build course list HTML
-    const courseListHtml = courses
-      .map(
-        c => `
+    // Build course list HTML (escape user-supplied labels)
+    const courseListHtml = (Array.isArray(courses) ? courses : [])
+      .slice(0, 12)
+      .map((c) => {
+        const en = escapeHtml(sanitizeText(c?.en, 120))
+        const zh = escapeHtml(sanitizeText(c?.zh, 120))
+        return `
           <div style="margin-bottom:20px;border-left:3px solid #B8973C;padding-left:16px;">
-            <p style="margin:0 0 4px;font-family:Georgia,serif;font-size:14px;font-weight:bold;color:#2D4A3E;">${c.en}</p>
-            <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#666;">${c.zh}</p>
+            <p style="margin:0 0 4px;font-family:Georgia,serif;font-size:14px;font-weight:bold;color:#2D4A3E;">${en}</p>
+            <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#666;">${zh}</p>
           </div>
         `
-      )
+      })
       .join('')
 
     const emailHtml = `<!DOCTYPE html>

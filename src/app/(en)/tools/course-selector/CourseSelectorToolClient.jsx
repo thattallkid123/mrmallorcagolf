@@ -755,16 +755,14 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
       body: mlBody.toString(),
     }).catch(() => {})
 
-    const bodyHtml = topCourses.map((c, i) => {
-      const label = ['Strongest match','Close second','Worth the trip'][i] || 'Recommended'
-      return `<div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #EDE9E1;">
-        <p style="margin:0 0 4px;font-family:'Jost',Arial,sans-serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#B8973C;">${label}</p>
-        <h3 style="margin:0 0 8px;font-family:Georgia,serif;font-size:19px;font-weight:400;color:#1A1916;">${c.name}</h3>
-        <p style="margin:0 0 6px;font-family:Georgia,serif;font-size:14px;line-height:1.6;color:#2C2A27;">${c.bestFor}</p>
-        <p style="margin:0 0 ${c.membersOnly ? '10px' : '0'};font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8A7F74;">${c.areaLabel} · ${DIFF_LABEL(c.diff10)} · ${c.greenFee}</p>
-        ${c.membersOnly ? `<p style="margin:0;padding:8px 12px;background:#f0f4ff;border-left:3px solid #4a6fa5;border-radius:0 4px 4px 0;font-family:'Jost',Arial,sans-serif;font-size:11px;color:#2a3f6f;line-height:1.5;">Members-only course. Andy arranges access for clients — mention it when you enquire.</p>` : ''}
-      </div>`
-    }).join('')
+    const topCoursesForEmail = topCourses.map(c => ({
+      name: c.name,
+      bestFor: c.bestFor,
+      areaLabel: c.areaLabel,
+      diff10: c.diff10,
+      greenFee: c.greenFee,
+      membersOnly: !!c.membersOnly,
+    }))
 
     try {
       const res = await fetch('/api/send-itinerary', {
@@ -772,9 +770,9 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,
-          tool: 'tools-course-selector',
+          tool: 'course-selector',
           subject: 'Your Mallorca course recommendations',
-          bodyHtml,
+          data: { topCourses: topCoursesForEmail },
           subscribeNewsletter,
         }),
       })

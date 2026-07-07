@@ -1,6 +1,14 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { LEAD_MAGNET_GROUPS, LEAD_MAGNETS } from '../../../lib/signup-config'
+import {
+  checkRateLimit,
+  getClientKey,
+  isAllowedOrigin,
+  isJsonRequest,
+  isPayloadTooLarge,
+  isValidEmail,
+} from '../../../lib/request-safety'
 
 const DELIVERY_EMAILS = {
   'cost-guide': {
@@ -64,11 +72,31 @@ function buildDeliveryEmail(guideName, downloadUrl) {
 }
 
 export async function POST(request) {
-  try {
-    const { email, guide, subscribeNewsletter } = await request.json()
+  if (!isAllowedOrigin(request)) {
+    return NextResponse.json({ error: 'Origin not allowed' }, { status: 403 })
+  }
 
-    if (!email || !guide) {
-      return NextResponse.json({ error: 'Missing email or guide' }, { status: 400 })
+  if (!isJsonRequest(request)) {
+    return NextResponse.json({ error: 'Unsupported content type' }, { status: 415 })
+  }
+
+  if (isPayloadTooLarge(request, 16 * 1024)) {
+    return NextResponse.json({ error: 'Payload too large' }, { status: 413 })
+  }
+
+  if (!checkRateLimit(getClientKey(request, 'lead-magnet'), 10, 10 * 60 * 1000)) {
+    return NextResponse.json({ error: 'Too many requests. Please wait a few minutes and try again.' }, { status: 429 })
+  }
+
+  try {
+    const { email, guide, subscribeNewsletter, website } = await request.json()
+
+    if (website) {
+      return NextResponse.json({ success: true })
+    }
+
+    if (!email || !isValidEmail(email) || !guide) {
+      return NextResponse.json({ error: 'Missing or invalid email or guide' }, { status: 400 })
     }
 
     const groupId = LEAD_MAGNET_GROUPS[guide]

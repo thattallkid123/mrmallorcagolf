@@ -1,14 +1,47 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
+import {
+  checkRateLimit,
+  escapeHtml,
+  getClientKey,
+  isAllowedOrigin,
+  isJsonRequest,
+  isPayloadTooLarge,
+  isValidEmail,
+  sanitizeText,
+} from '../../../lib/request-safety'
+
 // Stable, non-secret MailerLite group id for the Handicap Access Checker.
 const MAILERLITE_HANDICAP_GROUP_ID = '192009044036159243'
 
 export async function POST(request) {
-  try {
-    const { email, handicap, gender, area, tier, recommendations, summary } = await request.json()
+  if (!isAllowedOrigin(request)) {
+    return NextResponse.json({ error: 'Origin not allowed' }, { status: 403 })
+  }
 
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  if (!isJsonRequest(request)) {
+    return NextResponse.json({ error: 'Unsupported content type' }, { status: 415 })
+  }
+
+  if (isPayloadTooLarge(request, 64 * 1024)) {
+    return NextResponse.json({ error: 'Payload too large' }, { status: 413 })
+  }
+
+  if (!checkRateLimit(getClientKey(request, 'handicap-checker'), 10, 10 * 60 * 1000)) {
+    return NextResponse.json({ error: 'Too many requests. Please wait a few minutes and try again.' }, { status: 429 })
+  }
+
+  try {
+    const payload = await request.json()
+
+    if (payload?.website) {
+      return NextResponse.json({ success: true })
+    }
+
+    const { email, handicap, gender, area, tier, recommendations, summary } = payload
+
+    if (!email || !isValidEmail(email)) {
       return NextResponse.json({ error: 'Missing or invalid email' }, { status: 400 })
     }
 
@@ -17,8 +50,14 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 })
     }
 
-    const recs = Array.isArray(recommendations) ? recommendations : []
-    const rows = Array.isArray(summary) ? summary : []
+    const safeHandicap = escapeHtml(sanitizeText(handicap, 40))
+    const safeArea = escapeHtml(sanitizeText(area, 80))
+    const recs = (Array.isArray(recommendations) ? recommendations : [])
+      .map((r) => escapeHtml(sanitizeText(String(r), 120)))
+      .filter(Boolean)
+    const rows = (Array.isArray(summary) ? summary : [])
+      .map((line) => escapeHtml(sanitizeText(String(line), 200)))
+      .filter(Boolean)
 
     const recHtml = recs.length
       ? `<p style="margin:0 0 8px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;"><strong>Andy's pick for you:</strong> ${recs.join(', ')}.</p>`
@@ -29,7 +68,7 @@ export async function POST(request) {
       .join('')
 
     const bodyHtml = `
-      <p style="margin:0 0 16px;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#2C2A27;">Here's your Mallorca course access list${handicap && handicap !== 'none' ? ` playing off <strong>${handicap}</strong>` : ''}${area ? `, based around ${area}` : ''}.</p>
+      <p style="margin:0 0 16px;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#2C2A27;">Here's your Mallorca course access list${safeHandicap && safeHandicap !== 'none' ? ` playing off <strong>${safeHandicap}</strong>` : ''}${safeArea ? `, based around ${safeArea}` : ''}.</p>
       ${recHtml}
       <table width="100%" cellpadding="0" cellspacing="0" style="margin:18px 0 24px;">${listHtml}</table>
       <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Handicap limits in Mallorca are sometimes more flexible than the published numbers, especially midweek and outside peak season. If you're a few shots over a limit I'm happy to enquire on your behalf — I can't promise it, as access is always the club's call. Tell me your dates and group and I'll build the round order and tee times around your golf.</p>
@@ -60,8 +99,8 @@ export async function POST(request) {
           email,
           groups: [MAILERLITE_HANDICAP_GROUP_ID],
           fields: {
-            hcp_checker_handicap: String(handicap ?? ''),
-            hcp_checker_summary: rows.join('; ').slice(0, 950),
+            hcp_checker_handicap: sanitizeText(handicap, 40),
+            hcp_checker_summary: (Array.isArray(summary) ? summary : []).join('; ').slice(0, 950),
           },
         }),
       }).catch(() => {})

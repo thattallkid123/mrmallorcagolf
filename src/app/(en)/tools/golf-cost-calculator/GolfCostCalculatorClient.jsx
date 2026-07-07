@@ -205,35 +205,30 @@ export default function GolfCostCalculatorClient() {
     const r = results || calculate(state)
     const s = state
 
-    const row = (label, val) =>
-      `<tr><td style="padding:8px 0;font-family:'Jost',Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:#8A7F74;border-bottom:1px solid #EDE9E1;">${label}</td><td style="padding:8px 0;font-family:'Jost',Arial,sans-serif;font-size:15px;color:#1A1916;text-align:right;border-bottom:1px solid #EDE9E1;">${val}</td></tr>`
-
-    const bodyHtml = `
-      <p style="margin:0 0 20px;font-family:'Jost',Arial,sans-serif;font-size:15px;line-height:1.7;color:#2C2A27;">Here is your planning estimate for a ${s.days}-day trip with ${s.golfers} golfer${s.golfers > 1 ? 's' : ''}, ${s.rounds} round${s.rounds > 1 ? 's' : ''} of golf.</p>
-      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
-        ${row('Green fees', fmtR(r.greenFees))}
-        ${s.buggy !== 'no' ? row('Buggy hire', fmtR(r.buggy)) : ''}
-        ${s.clubs === 'yes' ? row('Club hire', fmtR(r.clubs)) : ''}
-        ${s.transport === 'yes' ? row('Transport', fmtR(r.transport)) : ''}
-        ${row('Dining', fmtR(r.dining))}
-        ${row('Accommodation', fmtR(r.accom))}
-      </table>
-      <div style="background:#2D4A3E;border-radius:4px;padding:20px 24px;margin-bottom:20px;">
-        <p style="margin:0 0 4px;font-family:'Jost',Arial,sans-serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,244,239,0.6);">Total estimate</p>
-        <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:26px;color:#F7F4EF;">${fmtR(r.total)}</p>
-        <p style="margin:6px 0 0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:rgba(247,244,239,0.6);">${fmtR(r.perGolfer)} per golfer</p>
-      </div>
-      <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8A7F74;">These are planning estimates. Tee times, bookings, and exact pricing are confirmed when you book with Andy.</p>`
-
     try {
       const res = await fetch('/api/send-itinerary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,
-          tool: 'tools-golf-cost-calculator',
+          tool: 'golf-cost-calculator',
           subject: 'Your Mallorca golf trip cost estimate',
-          bodyHtml,
+          data: {
+            days: s.days,
+            golfers: s.golfers,
+            rounds: s.rounds,
+            buggy: s.buggy !== 'no',
+            clubs: s.clubs === 'yes',
+            transport: s.transport === 'yes',
+            greenFees: r.greenFees,
+            buggyRange: r.buggy,
+            clubsRange: r.clubs,
+            transportRange: r.transport,
+            dining: r.dining,
+            accommodation: r.accom,
+            total: r.total,
+            perGolfer: r.perGolfer,
+          },
           subscribeNewsletter,
         }),
       })

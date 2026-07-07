@@ -438,23 +438,17 @@ export default function GolfDayBuilderClient() {
       body: mlBody.toString(),
     }).catch(() => {})
     const builtItins = itins || buildItineraries(answers)
-    const bodyHtml = builtItins.map(it => `
-      <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #EDE9E1;">
-        <p style="margin:0 0 4px;font-family:'Jost',Arial,sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#B8973C;">${it.name}</p>
-        <h3 style="margin:0 0 6px;font-family:Georgia,serif;font-size:19px;font-weight:400;color:#1A1916;">${it.course.name}</h3>
-        <p style="margin:0 0 12px;font-family:Georgia,serif;font-size:14px;line-height:1.6;color:#2C2A27;">${it.tagline}</p>
-        <table width="100%" cellpadding="0" cellspacing="0">
-          ${it.steps.map(s => `<tr>
-            <td style="padding:4px 10px 4px 0;font-family:'Jost',Arial,sans-serif;font-size:11px;color:#8A7F74;white-space:nowrap;vertical-align:top;">${s.time}</td>
-            <td style="padding:4px 0;font-family:'Jost',Arial,sans-serif;font-size:13px;color:#2C2A27;"><strong>${s.title}</strong></td>
-          </tr>`).join('')}
-        </table>
-      </div>`).join('')
+    const itineraries = builtItins.map(it => ({
+      name: it.name,
+      courseName: it.course.name,
+      tagline: it.tagline,
+      steps: it.steps.map(s => ({ time: s.time, title: s.title })),
+    }))
     try {
       const res = await fetch('/api/send-itinerary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, tool: 'golf-day-builder', subject: 'Your Mallorca golf day plan', bodyHtml, subscribeNewsletter }),
+        body: JSON.stringify({ email, tool: 'golf-day-builder', subject: 'Your Mallorca golf day plan', data: { itineraries }, subscribeNewsletter }),
       })
       setEmailSending(false)
       if (res.ok) { setEmailSent(true) }

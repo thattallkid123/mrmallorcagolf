@@ -260,12 +260,6 @@ export default function HotelRecommenderClient() {
 
   async function sendEmail() {
     if (!email || !email.includes('@')) return
-    const escapeHtml = value => String(value)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;')
 
     const answerSummary = (() => {
       const parts = []
@@ -285,18 +279,12 @@ export default function HotelRecommenderClient() {
       return parts.join(' | ')
     })()
 
-    const bodyHtml = `
-      <p style="margin:0 0 12px;font-size:12px;color:#8A7F74;line-height:1.6;">${answerSummary}</p>
-      <p style="margin:0 0 16px;">Here are the hotel bases I would start with from your answers:</p>
-      ${results.map((x, index) => `
-        <div style="margin:0 0 18px;padding:0 0 16px;border-bottom:1px solid #E6DED1;">
-          <p style="margin:0 0 6px;font-weight:700;color:#2D4A3E;">${index + 1}. ${escapeHtml(x.hotel.name)}</p>
-          <p style="margin:0 0 8px;color:#6F665B;">${escapeHtml(x.hotel.subname)}</p>
-          <p style="margin:0 0 8px;">${escapeHtml(x.hotel.why)}</p>
-          <p style="margin:0;"><strong>Golf fit:</strong> ${escapeHtml(x.hotel.golf)}</p>
-        </div>
-      `).join('')}
-    `
+    const hotelResults = results.map(x => ({
+      name: x.hotel.name,
+      subname: x.hotel.subname,
+      why: x.hotel.why,
+      golf: x.hotel.golf,
+    }))
 
     // Fire-and-forget: add to MailerLite
     const mlBody = new URLSearchParams()
@@ -318,7 +306,7 @@ export default function HotelRecommenderClient() {
           email,
           tool: 'hotel-recommender',
           subject: 'Your Mallorca golf hotel shortlist',
-          bodyHtml,
+          data: { answerSummary, results: hotelResults },
           subscribeNewsletter: newsletter,
         }),
       })
