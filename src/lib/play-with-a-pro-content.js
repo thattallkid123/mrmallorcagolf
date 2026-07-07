@@ -81,7 +81,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Pricing',
       title: 'Solo, group, or Signature Day.',
-      body: 'Solo and group are the core Play With A Pro day rates. Signature Day is the more complete, high-touch version when you want the golf day wrapped in transfers, food, premium extras, and a guaranteed private tee time.',
+      body: 'Solo and group are the core Play With A Pro day rates. I always try to secure the most personal tee time possible, but golf courses may pair bookings when busy. A guaranteed private tee time can usually be arranged as an add-on, and is included as standard with Signature Day.',
       tiers: [
         applyTierFlags({
           eyebrow: 'A Day With Andy',

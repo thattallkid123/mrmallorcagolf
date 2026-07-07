@@ -220,7 +220,7 @@ export const HOME_CONTENT = {
     packages: {
       eyebrow: 'What I offer',
       title: 'A day on the course with me. Or the whole trip, built around it.',
-      body: 'The core service is Play With A Pro, a hosted 18-hole day with Andy. You can book it solo, as a group, or as a Signature Day. If you want the whole trip planned around it, that is available too.',
+      body: 'The core service is Play With A Pro, a hosted 18-hole day with Andy. Solo and group are the core day rates. I always try to secure the most personal tee time possible, but golf courses may pair bookings when busy. A guaranteed private tee time can usually be arranged as an add-on, and is included as standard with Signature Day. If you want the whole trip planned around it, that is available too.',
       items: [
         {
           eyebrow: 'Play With A Pro',
