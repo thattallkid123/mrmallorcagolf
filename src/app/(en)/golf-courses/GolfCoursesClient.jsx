@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { buildLocalePath } from '../../../lib/site'
 import { getGolfCoursesContent } from '../../../lib/golf-courses-content'
-import { GOLF_COURSE_DATA } from '../../../lib/golf-courses-data'
+import { GOLF_COURSE_DATA, COURSE_HANDICAP } from '../../../lib/golf-courses-data'
 import {
   GOLF_COURSE_TRANSLATIONS,
   getGolfCourseUiTranslations,
@@ -201,6 +201,33 @@ function buildPricePill(course) {
 
 function getDisplayPills(course) {
   return [buildPricePill(course), ...course.pills.slice(1)]
+}
+
+const HANDICAP_LABELS = {
+  en: { hcp: 'HCP', certShort: 'Cert.', men: 'men', women: 'women', certReq: 'valid handicap certificate required' },
+  de: { hcp: 'HCP', certShort: 'Nachw.', men: 'Herren', women: 'Damen', certReq: 'gültiges Handicap-Zertifikat erforderlich' },
+  es: { hcp: 'HCP', certShort: 'Cert.', men: 'hombres', women: 'mujeres', certReq: 'certificado de handicap válido obligatorio' },
+  fr: { hcp: 'HCP', certShort: 'Cert.', men: 'hommes', women: 'femmes', certReq: 'certificat de handicap valide requis' },
+  nl: { hcp: 'HCP', certShort: 'Bewijs', men: 'heren', women: 'dames', certReq: 'geldig handicapbewijs vereist' },
+  sv: { hcp: 'HCP', certShort: 'Intyg', men: 'herrar', women: 'damer', certReq: 'giltigt handicapintyg krävs' },
+  zh: { hcp: 'HCP', certShort: '需证明', men: '男', women: '女', certReq: '需有效差点证明' },
+}
+
+// Builds the minimal handicap badge shown on a course card, or null if the course
+// has no meaningful gate (see COURSE_HANDICAP in golf-courses-data.js). The badge
+// stays terse (e.g. "HCP 28/36"); the full requirement sits in the hover title.
+function buildHandicapBadge(courseName, lang) {
+  const req = COURSE_HANDICAP[courseName]
+  if (!req) return null
+  const L = HANDICAP_LABELS[lang] || HANDICAP_LABELS.en
+  const hasNums = typeof req.m === 'number' || typeof req.w === 'number'
+  if (hasNums) {
+    const m = req.m ?? req.w
+    const w = req.w ?? req.m
+    const aria = `${L.hcp}: ${m} ${L.men} / ${w} ${L.women}${req.cert ? `, ${L.certReq}` : ''}`
+    return { text: `${L.hcp} ${m}/${w}`, aria }
+  }
+  return { text: L.certShort, aria: L.certReq }
 }
 
 const DEFAULT_SORT_DIRECTIONS = {
@@ -538,6 +565,14 @@ function CourseCard({ c, lang = 'en' }) {
           </div>
           <div className="course__stats">
             {(translated.pills || displayPills).slice(0, 4).map((pill, i) => <span key={i} className={`stat-pill${i === 0 ? ' stat-pill--gold' : ''}`}>{translateCourseText(pill, lang)}</span>)}
+            {(() => {
+              const hb = buildHandicapBadge(c.name, lang)
+              return hb ? (
+                <span className="stat-pill stat-pill--handicap" title={hb.aria}>
+                  <span aria-hidden="true" className="stat-pill__flag">⚑</span> {hb.text}
+                </span>
+              ) : null
+            })()}
           </div>
           <p className="course__text">{bodyText}</p>
           {(c.text2 || translated.text2) && <p className="course__text course__text--spaced">{bodyText2}</p>}
@@ -724,16 +759,6 @@ export default function GolfCoursesClient({ lang = 'en' }) {
                 </div>
               ))}
             </div>
-            {t.quickPicks?.length ? (
-              <div className="course-guidance-strip__picks" aria-label={t.quickPicksTitle || 'Quick picks'}>
-                <p className="course-guidance-strip__picks-title">{t.quickPicksTitle}</p>
-                <ul className="course-guidance-strip__picks-list">
-                  {t.quickPicks.map((pick) => (
-                    <li key={pick}>{pick}</li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
         ) : null}
         <div id="all-courses" className="filter-tabs filter-tabs--anchored filter-tabs--primary">

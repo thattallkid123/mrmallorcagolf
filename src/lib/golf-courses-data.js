@@ -49,3 +49,28 @@ export const GOLF_COURSE_DATA = [
     ],
   },
 ]
+
+// Handicap requirements per course, sourced from MMG_ENCYCLOPAEDIA_DATA_MASTER.md (access rules).
+// Only courses with a MEANINGFUL gate are listed: a valid handicap certificate is required (cert),
+// and/or the men's maximum handicap is below 36 (max). Courses that accept up to HCP 36 with no
+// certificate (the majority) are intentionally omitted so cards are not cluttered with a non-gate.
+// Keyed by the exact `name` used in GOLF_COURSE_DATA above.
+// m = men's max handicap, w = women's max handicap, cert = valid certificate required.
+// Courses with no meaningful gate (accept up to HCP 36, no certificate) are omitted.
+export const COURSE_HANDICAP = {
+  'Golf Son Gual': { m: 33, w: 35, cert: true },
+  'Golf Son Vida': { cert: true },
+  'T Golf Palma (Puntiró)': { m: 34, w: 36 },
+  'Golf Son Termes': { cert: true },
+  'Golf Santa Ponsa 1': { m: 28, w: 36, cert: true },
+  'Golf Santa Ponsa 2': { m: 28, w: 36 },
+  'Golf Santa Ponsa 3': { m: 28, w: 36 },
+  'T Golf Calvià (Poniente)': { m: 28, w: 34 },
+  'Golf de Andratx': { m: 28, w: 36, cert: true },
+  'Golf Son Antem West': { m: 27, w: 35 },
+  'Capdepera Golf': { cert: true },
+  'Pula Golf': { m: 34, w: 36 },
+  'Golf Club Son Servera': { cert: true },
+  'Reserva Rotana': { cert: true },
+  'Club de Golf Alcanada': { m: 33, w: 35 },
+}

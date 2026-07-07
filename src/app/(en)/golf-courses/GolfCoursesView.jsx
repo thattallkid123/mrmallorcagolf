@@ -167,16 +167,14 @@ export default function GolfCoursesView({ locale = 'en', content }) {
         ) : null}
 
         {content.ui?.faq?.length > 0 && (
-          <section style={{ background: 'var(--cream)', padding: 'clamp(28px, 5vw, 52px) clamp(20px, 5vw, 60px)' }}>
-            <div style={{ maxWidth: 780, margin: '0 auto' }}>
-              <h2 className="serif-display" style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)', marginBottom: '1.5rem' }}>
-                {content.ui.faqTitle || 'Common questions'}
-              </h2>
-              <dl>
+          <section className="course-faq">
+            <div className="course-faq__inner">
+              <h2 className="course-faq__title">{content.ui.faqTitle || 'Common questions'}</h2>
+              <dl className="course-faq__list">
                 {content.ui.faq.map(({ q, a }) => (
-                  <div key={q} style={{ marginBottom: '1.25rem' }}>
-                    <dt style={{ fontWeight: 600, marginBottom: '0.35rem' }}>{q}</dt>
-                    <dd style={{ margin: 0, color: 'var(--text-secondary, #555)' }}>{a}</dd>
+                  <div key={q} className="course-faq__item">
+                    <dt className="course-faq__q">{q}</dt>
+                    <dd className="course-faq__a">{a}</dd>
                   </div>
                 ))}
               </dl>

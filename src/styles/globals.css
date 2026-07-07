@@ -2330,6 +2330,14 @@ select.form-control { cursor: pointer; }
 .course-guidance-strip__picks-title { font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.7rem; }
 .course-guidance-strip__picks-list { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.45rem; }
 .course-guidance-strip__picks-list li { font-size: 0.88rem; font-weight: 300; line-height: 1.6; color: var(--charcoal); }
+.course-faq { background: var(--cream); padding: clamp(32px, 5vw, 56px) clamp(20px, 5vw, 60px); border-top: 1px solid rgba(26,25,22,0.08); }
+.course-faq__inner { max-width: 780px; margin: 0 auto; }
+.course-faq__title { font-family: var(--font-serif); font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 500; color: var(--deep); line-height: 1.2; margin-bottom: 1.6rem; }
+.course-faq__list { margin: 0; }
+.course-faq__item { padding: 1.1rem 0; border-bottom: 1px solid rgba(26,25,22,0.08); }
+.course-faq__item:first-child { border-top: 1px solid rgba(26,25,22,0.08); }
+.course-faq__q { font-family: var(--font-serif); font-size: 1.08rem; font-weight: 500; color: var(--deep); line-height: 1.35; margin-bottom: 0.5rem; }
+.course-faq__a { margin: 0; font-size: 0.92rem; font-weight: 300; line-height: 1.75; color: var(--charcoal); }
 .course-controls-copy { padding: 0 40px 16px; }
 .course-controls-copy p { font-size: 0.85rem; font-weight: 300; color: var(--stone); line-height: 1.7; margin-bottom: 0; max-width: 920px; }
 .course-controls-copy__key { margin-top: 0.5rem; color: var(--taupe); }
@@ -2441,6 +2449,8 @@ select.form-control { cursor: pointer; }
 .course__stats { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
 .stat-pill { font-size: 10px; letter-spacing: 0.09em; text-transform: uppercase; background: var(--cream); color: var(--taupe); padding: 5px 10px; }
 .stat-pill--gold { background: var(--gold-pale); color: var(--pine); font-weight: 500; }
+.stat-pill--handicap { background: rgba(184,151,90,0.08); color: var(--taupe); }
+.stat-pill__flag { font-size: 10px; line-height: 1; opacity: 0.75; }
 .course__difficulty {
   display: flex;
   align-items: center;
