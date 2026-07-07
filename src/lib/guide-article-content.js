@@ -56,7 +56,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Son Gual sits around €110-165. Alcanada runs roughly €115-220. Son Muntaner reaches around €250 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €210, and Son Vida to around €190. The top end in Mallorca is higher than many older guides suggest.',
+          'Son Gual sits around €115-165. Alcanada runs roughly €115-220. Son Muntaner reaches around €250 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €210, and Son Vida to around €190. The top end in Mallorca is higher than many older guides suggest.',
       },
       {
         type: 'paragraph',

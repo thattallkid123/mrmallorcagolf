@@ -1,8 +1,4 @@
-const REVIEW_URL = 'https://maps.app.goo.gl/esnaWeEJ1d8FGKWU9'
-// Manual aggregate proof. Editorial testimonials live in:
-// C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_TESTIMONIALS_AND_FEEDBACK.md
-const REVIEW_RATING = 5.0
-const REVIEW_COUNT = 9
+import { reviewRating as REVIEW_RATING, reviewCount as REVIEW_COUNT, reviewUrl as REVIEW_URL } from '../data/site-social-proof.json' with { type: 'json' }
 
 function Stars({ rating = 5, size = 14 }) {
   const full = Math.floor(rating)
