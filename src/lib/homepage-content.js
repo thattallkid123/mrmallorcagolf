@@ -2364,7 +2364,7 @@ const HOME_EXTRA_PACKAGE_ITEM = {
     eyebrow: 'Trip Planning',
     name: 'Plan Your Trip',
     price: 'Price on enquiry',
-    featured: true,
+    featured: false,
     features: [
       'No searching apps or websites - tee times handled for you',
       'Courses picked to match your group, level, and budget',
@@ -2382,7 +2382,7 @@ const HOME_EXTRA_PACKAGE_ITEM = {
     eyebrow: 'Reiseplanung',
     name: 'Ihre Reise planen',
     price: 'Preis auf Anfrage',
-    featured: true,
+    featured: false,
     features: [
       'Keine Apps oder Websites durchsuchen - Abschlagszeiten werden für Sie organisiert',
       'Plätze passend zu Gruppe, Spielstärke und Budget',
@@ -2400,7 +2400,7 @@ const HOME_EXTRA_PACKAGE_ITEM = {
     eyebrow: 'Planificación del viaje',
     name: 'Planifique su viaje',
     price: 'Precio a consultar',
-    featured: true,
+    featured: false,
     features: [
       'Sin buscar en apps ni webs - yo me encargo de los tee times',
       'Campos elegidos según su grupo, nivel y presupuesto',
@@ -2418,7 +2418,7 @@ const HOME_EXTRA_PACKAGE_ITEM = {
     eyebrow: 'Planification du séjour',
     name: 'Planifiez votre séjour',
     price: 'Prix sur demande',
-    featured: true,
+    featured: false,
     features: [
       'Pas d\'apps ni de sites à chercher - les heures de départ sont gérées pour vous',
       'Parcours choisis selon votre groupe, votre niveau et votre budget',
@@ -2436,7 +2436,7 @@ const HOME_EXTRA_PACKAGE_ITEM = {
     eyebrow: 'Reisplanning',
     name: 'Plan uw reis',
     price: 'Prijs op aanvraag',
-    featured: true,
+    featured: false,
     features: [
       'Geen apps of websites zoeken - tee times worden voor u geregeld',
       'Baankeuze afgestemd op uw groep, niveau en budget',
@@ -2454,7 +2454,7 @@ const HOME_EXTRA_PACKAGE_ITEM = {
     eyebrow: 'Reseplanering',
     name: 'Planera din resa',
     price: 'Pris på förfrågan',
-    featured: true,
+    featured: false,
     features: [
       'Inga appar eller webbplatser att leta i - tee times ordnas åt dig',
       'Banor valda efter grupp, nivå och budget',
@@ -2472,7 +2472,7 @@ const HOME_EXTRA_PACKAGE_ITEM = {
     eyebrow: '行程规划',
     name: '规划您的行程',
     price: '咨询定价',
-    featured: true,
+    featured: false,
     features: [
       '不用再翻应用或网站 - 开球时间我来安排',
       '根据您的团队、水平和预算挑选球场',

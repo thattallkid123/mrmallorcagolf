@@ -445,7 +445,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'table',
         headers: ['Course', 'Location', 'Par', 'Green Fee', 'Difficulty', 'Stars', 'Best For'],
         rows: [
-          ['Son Gual', 'Palma', '72', '\u20AC110-165', '9/10', '5.0', 'Serious championship round'],
+          ['Son Gual', 'Palma', '72', '\u20AC115-165', '9/10', '5.0', 'Serious championship round'],
           ['Club de Golf Alcanada', "Port d'Alcudia", '72', '\u20AC115-220', '7/10', '5.0', 'Spectacular views, championship quality'],
           ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-250', '7/10', '4.5', 'Best-conditioned, close to Palma'],
           ['T Golf Calvia', 'Calvia', '72', '\u20AC170-210', '7/10', '5.0', 'Premium all-round experience'],
@@ -905,9 +905,10 @@ export const GUIDE_ARTICLE_CONTENT = {
       intro:
         'A full day on course with a PGA professional. What happens, what changes, and what people take home that they did not expect.',
       related: [
-        { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
-        { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
+        { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
+        { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
         { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca' },
+        { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
       ],
     },
     blocks: [

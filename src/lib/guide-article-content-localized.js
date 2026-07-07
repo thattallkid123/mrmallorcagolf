@@ -306,7 +306,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: 'Parcours 18 trous de milieu de gamme' },
         { type: 'paragraph', text: 'Environ €80-145 selon la saison. Son Termes à partir de €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145, Vall d\'Or €85-130. Ce sont de vrais parcours, en bon état, pas des options secondaires. Vérifiez toujours le site du club, car les tarifs évoluent selon la saison.' },
         { type: 'subheading', text: 'Parcours premium' },
-        { type: 'paragraph', text: 'Son Gual varie d’environ €110 en basse saison à €165 aux pics de mars à mai et de septembre à novembre. Alcanada va d’environ €115 en basse saison à €220 au plus haut. Son Muntaner monte jusqu’à environ €250 et descend autour de €125 aux créneaux les moins chers. Ce sont les cartes tarifaires publiées pour 2026. Pour les parcours Arabella, mieux vaut vérifier le tarif du moment sur arabellagolfmallorca.com.' },
+        { type: 'paragraph', text: 'Son Gual varie d’environ €115 en basse saison à €165 aux pics de mars à mai et de septembre à novembre. Alcanada va d’environ €115 en basse saison à €220 au plus haut. Son Muntaner monte jusqu’à environ €250 et descend autour de €125 aux créneaux les moins chers. Ce sont les cartes tarifaires publiées pour 2026. Pour les parcours Arabella, mieux vaut vérifier le tarif du moment sur arabellagolfmallorca.com.' },
         { type: 'paragraph', text: 'Beaucoup de parcours pratiquent une tarification dynamique. Si vous cherchez un départ de dernière minute sur un parcours demandé, vous paierez plus cher. Réservez tôt, fixez vos priorités et vous économiserez un peu. Il vaut aussi la peine de surveiller les offres Black Friday, Noël et les packs multi-parcours. En faisant les choses correctement, on économise souvent 30-40 %.' },
         { type: 'image', src: '/images/blog-golf-cost/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - parcours premium, €115-165' },
         { type: 'pull', text: 'Son Gual a €165 reste moins cher qu\'un parcours equivalent en Angleterre. Les parcours de milieu de gamme ici offrent une vraie valeur selon les standards britanniques.' },
@@ -365,7 +365,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: '18-holesbanen in het middensegment' },
         { type: 'paragraph', text: 'Ongeveer €80-145 afhankelijk van het seizoen. Son Termes vanaf €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145 en Vall d\'Or €85-130. Dit zijn serieuze golfbanen in goede staat, geen bijzaak. Controleer altijd de website van de baan, want prijzen veranderen per seizoen.' },
         { type: 'subheading', text: 'Premiumbanen' },
-        { type: 'paragraph', text: 'Son Gual loopt van ongeveer €110 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €250 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com.' },
+        { type: 'paragraph', text: 'Son Gual loopt van ongeveer €115 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €250 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com.' },
         { type: 'paragraph', text: 'Veel banen werken met dynamische prijzen. Wie op het laatste moment een starttijd op een populaire baan wil, betaalt meestal meer. Plan vroeg, bepaal uw prioriteiten en bespaar geld. Het loont ook om te letten op Black Friday, kerstacties en combinatiedeals. Als u dat slim doet, bespaart u vaak 30-40 procent.' },
         { type: 'image', src: '/images/blog-golf-cost/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - premiumbaan, €115-165' },
         { type: 'pull', text: 'Son Gual voor €165 is nog altijd minder dan een vergelijkbare baan in Engeland zou vragen. Het middensegment op Mallorca biedt naar Britse maatstaven sterke waarde.' },
@@ -424,7 +424,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: '18-halsbanor i mellansegmentet' },
         { type: 'paragraph', text: 'Cirka €80-145 beroende på säsong. Son Termes från €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145 och Vall d\'Or €85-130. Det här är riktiga golfbanor i bra skick, inte bara reservval. Kontrollera alltid banans webbplats eftersom priserna ändras med säsongen.' },
         { type: 'subheading', text: 'Premiumbanor' },
-        { type: 'paragraph', text: 'Son Gual ligger mellan ungefär €110 i lågsäsong och €165 i toppperioderna mars till maj samt september till november. Alcanada går från ungefär €115 i lågsäsong till €220 när det är som dyrast. Son Muntaner går upp till ungefär €250 och ned till cirka €125 på de billigaste tiderna. Det här är publicerade 2026-priser. Kontrollera aktuella Arabella-priser på arabellagolfmallorca.com.' },
+        { type: 'paragraph', text: 'Son Gual ligger mellan ungefär €115 i lågsäsong och €165 i toppperioderna mars till maj samt september till november. Alcanada går från ungefär €115 i lågsäsong till €220 när det är som dyrast. Son Muntaner går upp till ungefär €250 och ned till cirka €125 på de billigaste tiderna. Det här är publicerade 2026-priser. Kontrollera aktuella Arabella-priser på arabellagolfmallorca.com.' },
         { type: 'paragraph', text: 'Många banor har dynamisk prissättning. Försöker man få en sen tee time på en populär bana betalar man oftast mer. Planera tidigt, välj vad som är viktigt och spara pengar. Det är också värt att hålla koll på Black Friday, julkampanjer och paketerbjudanden. Gör man det rätt går det ofta att spara 30-40 procent.' },
         { type: 'image', src: '/images/blog-golf-cost/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual - premiumbana, €115-165' },
         { type: 'pull', text: 'Son Gual för €165 är billigare än vad en likvärdig bana i England ofta skulle ta. Mellanklassen här ger bra värde med brittiska mått mätt.' },
@@ -483,7 +483,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'subheading', text: '中档18洞球场' },
         { type: 'paragraph', text: '大约€80-145（约¥620-1,130），具体取决于季节。Son Termes从€85起，Bendinat €75-125，Capdepera €85-135，Canyamel €65-145，Son Servera €80-145，Vall d\'Or €85-130。这些都是真正值得打的球场，不是随便凑数的选择。价格会按季节变化，最好直接看球场官网。' },
         { type: 'subheading', text: '高端球场' },
-        { type: 'paragraph', text: 'Son Gual淡季约€110（约¥860），高峰期€165（约¥1,290）；高峰期通常是3-5月以及9-11月。Alcanada淡季约€115，高峰期€220（约¥1,720）。Son Muntaner最高约€250，最低价位约€125。这些都是公开的2026年价格。Arabella旗下价格建议直接去arabellagolfmallorca.com确认。' },
+        { type: 'paragraph', text: 'Son Gual淡季约€115（约¥860），高峰期€165（约¥1,290）；高峰期通常是3-5月以及9-11月。Alcanada淡季约€115，高峰期€220（约¥1,720）。Son Muntaner最高约€250，最低价位约€125。这些都是公开的2026年价格。Arabella旗下价格建议直接去arabellagolfmallorca.com确认。' },
         { type: 'paragraph', text: '很多球场采用动态定价。如果你在热门时段临时订热门球场，价格通常会更高。提前规划、先想清楚自己最看重什么，能省下一笔。Black Friday、圣诞节和多轮套餐有时很值得看，做得对的话，经常可以省下30%-40%。' },
         { type: 'image', src: '/images/blog-golf-cost/Son Gual.webp', alt: 'Son Gual Golf Course', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Son Gual，高端球场，€115-165' },
         { type: 'pull', text: 'Son Gual高峰期€165，放到英国同级别球场并不算贵。马略卡中档球场的性价比，其实相当强。' },
@@ -2540,7 +2540,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "Son Gual varie d’environ €110 en basse saison à €165 aux pics de mars à mai et de septembre à novembre. Alcanada va d’environ €115 en basse saison à €220 au plus haut. Son Muntaner monte jusqu’à environ €250 et descend autour de €125 aux créneaux les moins chers. Ce sont les cartes tarifaires publiées pour 2026. Pour les parcours Arabella, mieux vaut vérifier le tarif du moment sur arabellagolfmallorca.com."
+          "text": "Son Gual varie d’environ €115 en basse saison à €165 aux pics de mars à mai et de septembre à novembre. Alcanada va d’environ €115 en basse saison à €220 au plus haut. Son Muntaner monte jusqu’à environ €250 et descend autour de €125 aux créneaux les moins chers. Ce sont les cartes tarifaires publiées pour 2026. Pour les parcours Arabella, mieux vaut vérifier le tarif du moment sur arabellagolfmallorca.com."
         },
         {
           "type": "paragraph",
@@ -2728,7 +2728,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "Son Gual loopt van ongeveer €110 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €250 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com."
+          "text": "Son Gual loopt van ongeveer €115 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €250 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com."
         },
         {
           "type": "paragraph",
@@ -2916,7 +2916,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "Son Gual ligger mellan ungefär €110 i lågsäsong och €165 i toppperioderna mars till maj samt september till november. Alcanada går från ungefär €115 i lågsäsong till €220 när det är som dyrast. Son Muntaner går upp till ungefär €250 och ned till cirka €125 på de billigaste tiderna. Det här är publicerade 2026-priser. Kontrollera aktuella Arabella-priser på arabellagolfmallorca.com."
+          "text": "Son Gual ligger mellan ungefär €115 i lågsäsong och €165 i toppperioderna mars till maj samt september till november. Alcanada går från ungefär €115 i lågsäsong till €220 när det är som dyrast. Son Muntaner går upp till ungefär €250 och ned till cirka €125 på de billigaste tiderna. Det här är publicerade 2026-priser. Kontrollera aktuella Arabella-priser på arabellagolfmallorca.com."
         },
         {
           "type": "paragraph",
@@ -3104,7 +3104,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "Son Gual淡季约€110（约¥860），高峰期€165（约¥1,290）；高峰期通常是3-5月以及9-11月。Alcanada淡季约€115，高峰期€220（约¥1,720）。Son Muntaner最高约€250，最低价位约€125。这些都是公开的2026年价格。Arabella旗下价格建议直接去arabellagolfmallorca.com确认。"
+          "text": "Son Gual淡季约€115（约¥860），高峰期€165（约¥1,290）；高峰期通常是3-5月以及9-11月。Alcanada淡季约€115，高峰期€220（约¥1,720）。Son Muntaner最高约€250，最低价位约€125。这些都是公开的2026年价格。Arabella旗下价格建议直接去arabellagolfmallorca.com确认。"
         },
         {
           "type": "paragraph",

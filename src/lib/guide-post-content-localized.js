@@ -714,7 +714,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€110-165', 'Greenfee 2026'],
+            ['€115-165', 'Greenfee 2026'],
             ['9/10', 'Schwierigkeit'],
             ['Par 72', 'Championship-Layout'],
             ['2007', 'Entwurf von Thomas Himmel'],
@@ -853,7 +853,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€110-165', 'Green fee 2026'],
+            ['€115-165', 'Green fee 2026'],
             ['9/10', 'Dificultad'],
             ['Par 72', 'Recorrido championship'],
             ['2007', 'Diseñado por Thomas Himmel'],
@@ -991,7 +991,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€110-165', 'Green fees 2026'],
+            ['€115-165', 'Green fees 2026'],
             ['9/10', 'Difficulté'],
             ['Par 72', 'Parcours championship'],
             ['2007', 'Conçu par Thomas Himmel'],
@@ -1137,7 +1137,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€110–165",
+      "€115–165",
       "Greenfee bereik 2026"
     ],
     [
@@ -1299,7 +1299,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€110–165",
+      "€115–165",
       "Greenavgifter 2026"
     ],
     [
@@ -1461,7 +1461,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€110–165",
+      "€115–165",
       "2026年果岭费区间"
     ],
     [
@@ -5299,7 +5299,7 @@ const SON_GUAL_BLOCK_OVERRIDES = {
     greens2: 'Einer meiner Mitspieler an diesem Tag, ein Schueler aus Shanghai, schlug einen kleinen Draw ins 4. Green. Der Ball landete nur wenige Meter von der Fahne entfernt und rollte trotzdem ueber die Rueckseite. Das passiert hier oft. Ein ordentlicher Schlag ist nicht automatisch ein guter Score.',
     course1: 'Thomas Himmels Design von 2007 nutzt die Hoehenunterschiede intelligent. Das 2. Loch hat einen der groessten Bunker Europas. Die Schlussloecher von 15 bis 18 gehoeren zu den besten Finishes, die ich auf Mallorca gespielt habe.',
     visitors: 'Rafa Nadal spielt hier regelmaessig und hat gesagt, dass es sein Lieblingsplatz auf Mallorca ist. Barack Obama spielte hier im November 2024. Normalerweise interessieren mich solche Namen nicht besonders, aber sie zeigen, welche Stellung Son Gual auf der Insel hat.',
-    fees1: 'Die oeffentlichen 18-Loch-Preise liegen normalerweise zwischen 110 € und 165 €. Das Wartungsfenster im Januar lag bei 80 € fuer 9 Loecher. Fruehjahr und Herbst sind am teuersten. Sommer und Winter sind besser fuer den Preis.',
+    fees1: 'Die oeffentlichen 18-Loch-Preise liegen normalerweise zwischen 115 € und 165 €. Das Wartungsfenster im Januar lag bei 80 € fuer 9 Loecher. Fruehjahr und Herbst sind am teuersten. Sommer und Winter sind besser fuer den Preis.',
     fees2: 'Leihschlaeger im Proshop: Callaway 35 €, Titleist 45 € pro Runde. Buggy 45 €, Elektrotrolley ab 15 €. Ein gueltiger WHS-Handicapnachweis ist erforderlich.',
     verdict: 'Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich wuerde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen.',
     cta: 'Ich nehme regelmaessig Gaeste mit nach Son Gual. Moechten Sie den Platz mit jemandem spielen, der jedes Loch kennt?',
@@ -5314,7 +5314,7 @@ const SON_GUAL_BLOCK_OVERRIDES = {
     greens2: 'Uno de mis companeros ese dia, un alumno de Shanghai, pego un pequeno draw al green del 4. La bola cayo a pocos metros de la bandera y aun asi rodo por detras. Eso pasa mucho aqui. Un golpe decente no siempre significa un buen resultado.',
     course1: 'El diseno de Thomas Himmel de 2007 usa muy bien los desniveles. El hoyo 2 tiene uno de los bunkers mas grandes de Europa. El tramo final del 15 al 18 es de los mejores cierres que he jugado en Mallorca.',
     visitors: 'Rafa Nadal juega aqui con frecuencia y ha dicho que es su campo favorito en Mallorca. Barack Obama jugo aqui en noviembre de 2024. Normalmente esos nombres no me importan demasiado, pero dicen algo sobre la posicion de Son Gual en la isla.',
-    fees1: 'El precio publico de 18 hoyos suele moverse entre 110 € y 165 €. La ventana de mantenimiento de enero fue de 80 € por 9 hoyos. Primavera y otono son los meses mas caros. Verano e invierno tienen mejor valor.',
+    fees1: 'El precio publico de 18 hoyos suele moverse entre 115 € y 165 €. La ventana de mantenimiento de enero fue de 80 € por 9 hoyos. Primavera y otono son los meses mas caros. Verano e invierno tienen mejor valor.',
     fees2: 'Alquiler de palos en la tienda: Callaway 35 €, Titleist 45 € por vuelta. Buggy 45 €, trolley electrico desde 15 €. Se requiere handicap WHS valido.',
     verdict: 'Son Gual es mi campo favorito en Mallorca. El mantenimiento es fuerte, el diseno esta bien pensado y el campo obliga a tomar buenas decisiones desde el primer tee. No lo venderia como una ronda facil de vacaciones. Si quiere buenas condiciones, greens serios y un campo que le examine de verdad, deberia jugarlo.',
     cta: 'Llevo clientes a Son Gual con regularidad. Quiere jugarlo con alguien que conoce cada hoyo?',
@@ -5329,7 +5329,7 @@ const SON_GUAL_BLOCK_OVERRIDES = {
     greens2: "Un de mes partenaires ce jour-la, un eleve venu de Shanghai, a joue un petit draw vers le green du 4. La balle est tombee a quelques metres du drapeau et a quand meme roule derriere. Cela arrive souvent ici. Un coup correct ne donne pas toujours un bon score.",
     course1: "Le dessin de Thomas Himmel en 2007 utilise intelligemment les deniveles. Le trou 2 possede l'un des plus grands bunkers d'Europe. La sequence finale du 15 au 18 fait partie des meilleurs finishs que j'ai joues a Majorque.",
     visitors: "Rafa Nadal joue ici regulierement et a dit que c'etait son parcours prefere a Majorque. Barack Obama y a joue en novembre 2024. D'habitude, ces noms ne changent pas grand-chose pour moi, mais ils disent quelque chose sur la place de Son Gual sur l'ile.",
-    fees1: "Le tarif public 18 trous se situe generalement entre 110 € et 165 €. La fenetre d'entretien de janvier etait a 80 € pour 9 trous. Le printemps et l'automne sont les periodes les plus cheres. L'ete et l'hiver offrent plus de valeur.",
+    fees1: "Le tarif public 18 trous se situe generalement entre 115 € et 165 €. La fenetre d'entretien de janvier etait a 80 € pour 9 trous. Le printemps et l'automne sont les periodes les plus cheres. L'ete et l'hiver offrent plus de valeur.",
     fees2: "Location de clubs au proshop : Callaway 35 €, Titleist 45 € par partie. Buggy 45 €, chariot electrique a partir de 15 €. Un justificatif WHS valide est demande.",
     verdict: "Son Gual est mon parcours prefere a Majorque. L'entretien est fort, le dessin est intelligent, et le parcours oblige a prendre de bonnes decisions des le premier tee. Je ne le presenterais pas comme une partie de vacances facile. Si vous voulez de bonnes conditions, des greens serieux et un parcours qui vous teste vraiment, jouez-le.",
     cta: "J'emmene regulierement des clients a Son Gual. Voulez-vous le jouer avec quelqu'un qui connait chaque trou ?",
@@ -5344,7 +5344,7 @@ const SON_GUAL_BLOCK_OVERRIDES = {
     greens2: 'Een van mijn speelpartners die dag, een student uit Shanghai, sloeg een kleine draw naar de 4e green. De bal landde maar een paar meter van de vlag en rolde toch over de achterkant. Dat gebeurt hier vaak. Een redelijke slag betekent niet automatisch een goede score.',
     course1: 'Thomas Himmels ontwerp uit 2007 gebruikt de hoogteverschillen slim. De 2e hole heeft een van de grootste bunkers van Europa. De slotreeks van 15 tot en met 18 is een van de beste finishes die ik op Mallorca heb gespeeld.',
     visitors: 'Rafa Nadal speelt hier regelmatig en heeft gezegd dat het zijn favoriete baan op Mallorca is. Barack Obama speelde hier in november 2024. Zulke namen doen mij normaal weinig, maar ze zeggen wel iets over de positie van Son Gual op het eiland.',
-    fees1: 'Publieke 18-holes tarieven liggen meestal tussen €110 en €165. Het onderhoudsvenster in januari was €80 voor 9 holes. Voorjaar en herfst zijn het duurst. Zomer en winter geven betere waarde.',
+    fees1: 'Publieke 18-holes tarieven liggen meestal tussen €115 en €165. Het onderhoudsvenster in januari was €80 voor 9 holes. Voorjaar en herfst zijn het duurst. Zomer en winter geven betere waarde.',
     fees2: 'Clubhuur in de proshop: Callaway €35, Titleist €45 per ronde. Buggy €45, elektrische trolley vanaf €15. Een geldig WHS-handicapbewijs is vereist.',
     verdict: 'Son Gual is mijn favoriete baan op Mallorca. De conditie is sterk, het ontwerp is slim, en de baan vraagt vanaf de eerste tee om goede beslissingen. Ik zou hem niet verkopen als een makkelijke vakantieronde. Wie goede omstandigheden, serieuze greens en een baan wil die echt test, moet hem spelen.',
     cta: 'Ik neem regelmatig klanten mee naar Son Gual. Wilt u hem spelen met iemand die elke hole kent?',
@@ -5359,7 +5359,7 @@ const SON_GUAL_BLOCK_OVERRIDES = {
     greens2: 'En av mina spelpartners den dagen, en elev fran Shanghai, slog en liten draw in mot green pa hal 4. Bollen landade bara nagra meter fran flaggan och rullade anda over bakkanten. Det hander ofta har. Ett okej slag betyder inte automatiskt ett bra resultat.',
     course1: 'Thomas Himmels design fran 2007 anvander hojdskillnaderna smart. Hal 2 har en av Europas storsta bunkrar. Avslutningen fran 15 till 18 ar en av de basta jag har spelat pa Mallorca.',
     visitors: 'Rafa Nadal spelar har regelbundet och har sagt att det ar hans favoritbana pa Mallorca. Barack Obama spelade har i november 2024. Sadana namn ar normalt inte avgorande for mig, men de sager nagot om Son Guals position pa on.',
-    fees1: 'Publikt pris for 18 hal ligger normalt mellan 110 € och 165 €. Januarifonstret for underhall var 80 € for 9 hal. Var och host ar dyrast. Sommar och vinter ger battre varde.',
+    fees1: 'Publikt pris for 18 hal ligger normalt mellan 115 € och 165 €. Januarifonstret for underhall var 80 € for 9 hal. Var och host ar dyrast. Sommar och vinter ger battre varde.',
     fees2: 'Klubbhyra i proshoppen: Callaway 35 €, Titleist 45 € per rond. Buggy 45 €, elvagn fran 15 €. Giltigt WHS-handicapbevis kravs.',
     verdict: 'Son Gual ar min favoritbana pa Mallorca. Skicket ar starkt, designen ar smart, och banan kraver bra beslut fran forsta tee. Jag skulle inte salja den som en enkel semesterrunda. Vill du ha bra forhallanden, seriösa greener och en bana som verkligen testar dig, ska du spela den.',
     cta: 'Jag tar regelbundet klienter till Son Gual. Vill du spela den med nagon som kan varje hal?',
@@ -5374,7 +5374,7 @@ const SON_GUAL_BLOCK_OVERRIDES = {
     greens2: '那天同组的一位上海学生，在第 4 洞打了一个小 draw 攻果岭。球落在旗杆几米外，还是滚过了后沿。这里经常这样。一个还不错的球，不一定等于一个好成绩。',
     course1: 'Thomas Himmel 2007 年的设计很好地利用了地形起伏。第 2 洞有欧洲最大的沙坑之一。15 到 18 洞的收官段，是我在马略卡打过最好的收官段之一。',
     visitors: 'Rafa Nadal 经常在这里打球，并说过这是他在马略卡最喜欢的球场。Barack Obama 在 2024 年 11 月也来这里打过。通常这些名字对我并不重要，但它们说明了 Son Gual 在岛上的位置。',
-    fees1: '公开 18 洞价格通常在 110 € 到 165 € 之间。一月份养护窗口期，9 洞价格是 80 €。春秋最贵。夏季和冬季性价比更好。',
+    fees1: '公开 18 洞价格通常在 115 € 到 165 € 之间。一月份养护窗口期，9 洞价格是 80 €。春秋最贵。夏季和冬季性价比更好。',
     fees2: '会所租杆：Callaway 每轮 35 €，Titleist 每轮 45 €。球车 45 €，电动手推车 15 € 起。需要有效 WHS 差点证明。',
     verdict: 'Son Gual 是我在马略卡最喜欢的球场。养护很好，设计聪明，从第一洞开始就要求你做清楚的决定。我不会把它说成轻松的度假球。如果你想要好球况、严肃的果岭，以及一座真正考验你的球场，它值得打。',
     cta: '我经常带客户去 Son Gual。你想和熟悉每个洞的人一起打吗？',
@@ -5467,7 +5467,7 @@ function buildSonGualBlocks(locale) {
     { type: 'heading', text: locale === 'de' ? 'Bekannte Besucher' : locale === 'es' ? 'Visitantes conocidos' : locale === 'fr' ? 'Visiteurs connus' : locale === 'nl' ? 'Bekende bezoekers' : locale === 'sv' ? 'Kanda besokare' : '知名访客' },
     { type: 'paragraph', text: copy.visitors },
     { type: 'image', src: '/images/son-gual-blog/sg-4.webp', alt: 'Son Gual course detail', caption: captions.tenthTee[locale] },
-    { type: 'facts', items: [['110-165 EUR', factLabels[locale][0]], ['9/10', factLabels[locale][1]], ['Par 72', factLabels[locale][2]], ['2007', factLabels[locale][3]]] },
+    { type: 'facts', items: [['115-165 EUR', factLabels[locale][0]], ['9/10', factLabels[locale][1]], ['Par 72', factLabels[locale][2]], ['2007', factLabels[locale][3]]] },
     { type: 'heading', text: locale === 'de' ? 'Greenfees 2026' : locale === 'es' ? 'Green fees 2026' : locale === 'fr' ? 'Green fees 2026' : locale === 'nl' ? 'Greenfees 2026' : locale === 'sv' ? 'Greenfee 2026' : '2026 果岭费' },
     { type: 'paragraph', text: copy.fees1 },
     { type: 'paragraph', text: copy.fees2 },
