@@ -31,6 +31,37 @@ export const SHORT_TO_ID = {
   'Golf Pollenca': 'golf-pollenca',
 }
 
+// Short display labels for course listings (cards, A-Z sort). The full `name`
+// in golf-courses-data.js stays the stable identity used for anchor ids, rating
+// / map / handicap lookups, the pricing sync, and SEO review titles. This map
+// only changes what a listing shows. Courses not listed here display their full
+// name unchanged (T Golf brands and Reserva Rotana keep their tags on purpose).
+export const COURSE_SHORT_NAME = {
+  'Golf Son Gual': 'Son Gual',
+  'Golf Son Vida': 'Son Vida',
+  'Golf Son Quint': 'Son Quint',
+  'Golf Son Termes': 'Son Termes',
+  'Golf Santa Ponsa 1': 'Santa Ponsa 1',
+  'Golf Santa Ponsa 2': 'Santa Ponsa 2',
+  'Golf Santa Ponsa 3': 'Santa Ponsa 3',
+  'Real Golf de Bendinat': 'Bendinat',
+  'Golf de Andratx': 'Andratx',
+  'Golf Maioris': 'Maioris',
+  'Golf Son Antem East': 'Son Antem East',
+  'Golf Son Antem West': 'Son Antem West',
+  'Capdepera Golf': 'Capdepera',
+  'Canyamel Golf': 'Canyamel',
+  'Pula Golf': 'Pula',
+  'Golf Club Son Servera': 'Son Servera',
+  "Vall d'Or Golf": "Vall d'Or",
+  'Club de Golf Alcanada': 'Alcanada',
+  'Golf Pollença': 'Pollença',
+}
+
+export function getCourseShortName(name) {
+  return COURSE_SHORT_NAME[name] || name
+}
+
 export const COURSE_DESTINATIONS = {
   'Son Gual': { type: 'review', slug: 'son-gual-review' },
   Alcanada: { type: 'review', slug: 'alcanada-review' },

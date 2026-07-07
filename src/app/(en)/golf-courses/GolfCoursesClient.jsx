@@ -13,6 +13,7 @@ import {
 import {
   getCoursePriceMeta,
   slugifyCourseName,
+  getCourseShortName,
 } from '../../../lib/golf-courses-helpers'
 
 const SORT_UI = {
@@ -125,7 +126,7 @@ const COURSE_GEO_META = {
   'golf-club-son-servera': { rating: 4, lat: 39.6151, lng: 3.3528 },
   'golf-santa-ponsa-3': { rating: 3, lat: 39.505, lng: 2.4944 },
   'golf-son-antem-east': { rating: 3.5, lat: 39.5642, lng: 2.8853 },
-  'palma-pitch-putt': { rating: 3, lat: 39.5688, lng: 2.6428 },
+  'palma-pitch-and-putt': { rating: 3, lat: 39.5688, lng: 2.6428 },
   'vall-d-or-golf': { rating: 3.5, lat: 39.5563, lng: 3.2175 },
 }
 
@@ -244,7 +245,11 @@ function sortCourses(courses, sortKey, direction = DEFAULT_SORT_DIRECTIONS[sortK
     const bMeta = getCourseMeta(b.name)
     const descending = direction === 'desc'
 
-    if (sortKey === 'az') return descending ? b.name.localeCompare(a.name) : a.name.localeCompare(b.name)
+    if (sortKey === 'az') {
+      const aName = getCourseShortName(a.name)
+      const bName = getCourseShortName(b.name)
+      return descending ? bName.localeCompare(aName) : aName.localeCompare(bName)
+    }
 
     if (sortKey === 'price') {
       const aPrice = aMeta.peakPrice
@@ -522,6 +527,7 @@ function CourseCard({ c, lang = 'en' }) {
   const meta = getCourseMeta(c.name)
   const displayPills = getDisplayPills(c)
   const courseName = cleanDisplayText(c.name)
+  const displayName = cleanDisplayText(getCourseShortName(c.name))
   const locationText = cleanDisplayText(translated.location || translateCourseText(c.location, lang))
   const bodyText = cleanDisplayText(translated.text || c.text)
   const bodyText2 = cleanDisplayText(translated.text2 || c.text2)
@@ -557,7 +563,7 @@ function CourseCard({ c, lang = 'en' }) {
             </div>
           )}
           <h3 className="course__name">
-            {courseName}
+            {displayName}
           </h3>
           <p className="course__location">{locationText}</p>
           <div className="course__rating-row" aria-label={`Rated ${ratingValue} out of 5`}>
