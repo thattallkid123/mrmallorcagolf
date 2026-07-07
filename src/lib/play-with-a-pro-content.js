@@ -278,7 +278,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Erlebnisse & Pakete',
       title: 'Drei Wege, den Tag zu gestalten.',
-      body: 'Alle drei Optionen werden um Sie herum aufgebaut und von mir begleitet. Der Unterschied liegt darin, wie viel Sie rund um das Golfspiel organisiert haben möchten. Signature Day beinhaltet die private Startzeit standardmäßig.',
+      body: 'Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Ich versuche immer, die persönlichste Startzeit für Sie zu sichern, aber an vollen Tagen kann der Golfplatz Flights zusammenlegen. Eine garantierte private Startzeit lässt sich in der Regel als Zusatz buchen und ist beim Signature Day standardmäßig enthalten.',
       tiers: [],
     },
     faq: {
@@ -371,7 +371,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Experiencias y paquetes',
       title: 'Tres formas de hacerlo.',
-      body: 'Las tres opciones se construyen alrededor de usted y cuentan con el mismo nivel de compañía y criterio en el campo. La diferencia está en cuánto quiere construir el día alrededor del golf. Signature Day incluye la salida privada de serie.',
+      body: 'Solo y Grupo son las tarifas base de Play With A Pro. Siempre intento conseguir la salida más personal posible, pero en días de mucha demanda el campo puede agrupar partidas. Una salida privada garantizada normalmente puede organizarse como extra, y viene incluida de serie en Signature Day.',
       tiers: [],
     },
     faq: {
@@ -464,7 +464,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Expériences et formules',
       title: 'Trois façons de vivre la journée.',
-      body: "Les trois options sont construites autour de vous et incluent le même niveau d\'accompagnement sur le parcours. Ce qui change, c\'est le degré d\'organisation que vous voulez autour du golf. Le Signature Day inclut d\'office un départ privé.",
+      body: "Solo et Groupe sont les tarifs de base de Play With A Pro. Je cherche toujours à obtenir le départ le plus personnel possible, mais les jours de forte affluence le golf peut regrouper les réservations. Un départ privé garanti peut généralement être organisé en option, et il est inclus d\'office avec le Signature Day.",
       tiers: [],
     },
     faq: {
@@ -557,7 +557,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Ervaringen en pakketten',
       title: 'Drie manieren om de dag op te bouwen.',
-      body: 'Alle drie de opties worden rond u opgebouwd en geven u hetzelfde niveau van begeleiding op de baan. Het verschil zit in hoeveel u rond het golf wilt laten organiseren. Signature Day bevat standaard een privé starttijd.',
+      body: 'Solo en groep zijn de standaard Play With A Pro dagtarieven. Ik probeer altijd de meest persoonlijke starttijd mogelijk te regelen, maar op drukke dagen kan de golfbaan flights samenvoegen. Een gegarandeerd privé starttijdslot kan meestal als extra worden geregeld, en is standaard inbegrepen bij Signature Day.',
       tiers: [],
     },
     faq: {
@@ -650,7 +650,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: 'Upplevelser och paket',
       title: 'Tre sätt att lägga upp dagen.',
-      body: 'Alla tre alternativen byggs runt dig och ger samma nivå av sällskap och expertis på banan. Skillnaden ligger i hur mycket du vill bygga dagen runt själva golfen. Signature Day inkluderar privat starttid som standard.',
+      body: 'Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Jag försöker alltid ordna den mest personliga starttiden som är möjlig, men under fullbokade dagar kan golfbanan slå ihop bokningar. En garanterad privat starttid kan oftast ordnas som tillval och ingår som standard i Signature Day.',
       tiers: [],
     },
     faq: {
@@ -743,7 +743,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     packages: {
       eyebrow: '体验方案',
       title: '三种安排这一天的方式。',
-      body: '三种方案都是私人的，也都包含同样水准的球场陪打与判断。真正的区别，在于您想让这一天围绕高尔夫安排到什么程度。',
+      body: '单人和小组是 Play With A Pro 的基础日费方案。我都会尽量安排最具私密感的开球时间，但在球场繁忙时，球场可能会将不同预订拼组。如需保证私密开球时间，通常可以作为加购安排，而 Signature Day 则已默认包含。',
       tiers: [],
     },
     faq: {

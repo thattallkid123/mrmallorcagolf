@@ -456,7 +456,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Erlebnisse und Pakete',
       title: 'Wähle deinen Tag',
-      body: 'Alle drei werden von mir persönlich geleitet. Platz, Abschlagszeit und Coaching sind enthalten. Greenfees und Mittagessen separat.',
+      body: 'Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Ich versuche immer, die persönlichste Startzeit für Sie zu sichern, aber an vollen Tagen kann der Golfplatz Flights zusammenlegen. Eine garantierte private Startzeit lässt sich in der Regel als Zusatz buchen und ist beim Signature Day standardmäßig enthalten.',
       items: [
         {
           eyebrow: 'Ein Tag mit Andy',
@@ -732,7 +732,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Experiencias y paquetes',
       title: 'Elige tu día',
-      body: 'Las tres opciones se organizan alrededor de usted y las llevo yo personalmente. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte.',
+      body: 'Solo y Grupo son las tarifas base de Play With A Pro. Siempre intento conseguir la salida más personal posible, pero en días de mucha demanda el campo puede agrupar partidas. Una salida privada garantizada normalmente puede organizarse como extra, y viene incluida de serie en Signature Day.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -896,7 +896,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Expériences et forfaits',
       title: 'Choisissez votre jour',
-      body: 'Les trois options sont construites autour de vous et menées par moi. Parcours, heure de départ et coaching inclus. Droits verts et déjeuner en sus.',
+      body: 'Solo et Groupe sont les tarifs de base de Play With A Pro. Je cherche toujours à obtenir le départ le plus personnel possible, mais les jours de forte affluence le golf peut regrouper les réservations. Un départ privé garanti peut généralement être organisé en option, et il est inclus d\'office avec le Signature Day.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -1041,7 +1041,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Ervaringen en pakketten',
       title: 'Kies je dag',
-      body: 'Alle drie worden persoonlijk door mij begeleid. Baan, startijd en coaching inbegrepen. Greenfees en lunch apart.',
+      body: 'Solo en groep zijn de standaard Play With A Pro dagtarieven. Ik probeer altijd de meest persoonlijke starttijd mogelijk te regelen, maar op drukke dagen kan de golfbaan flights samenvoegen. Een gegarandeerd privé starttijdslot kan meestal als extra worden geregeld, en is standaard inbegrepen bij Signature Day.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -1186,7 +1186,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: 'Upplevelser och paket',
       title: 'Välj din dag',
-      body: 'Alla tre leds personligen av mig. Bana, startid och coaching ingår. Green fees och lunch separat.',
+      body: 'Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Jag försöker alltid ordna den mest personliga starttiden som är möjlig, men under fullbokade dagar kan golfbanan slå ihop bokningar. En garanterad privat starttid kan oftast ordnas som tillval och ingår som standard i Signature Day.',
       items: [
         {
           eyebrow: 'Play With A Pro',
@@ -1348,7 +1348,7 @@ const HOME_OVERRIDES = {
     packages: {
       eyebrow: '体验与套餐',
       title: '选择你的那一天',
-      body: '三种方案都是私人的，也都由我亲自带。球场、发球时间和教练费用已包含。果岭费和午餐另计。',
+      body: '单人和小组是 Play With A Pro 的基础日费方案。我都会尽量安排最具私密感的开球时间，但在球场繁忙时，球场可能会将不同预订拼组。如需保证私密开球时间，通常可以作为加购安排，而 Signature Day 则已默认包含。',
       items: [
         {
           eyebrow: '与 Andy 共打一天',
@@ -1627,7 +1627,7 @@ const HOME_HUMANIZED_OVERRIDES = {
       ],
     },
     packages: {
-      intro: 'Beide Varianten sind privat, und ich begleite beide persönlich. Solo ist inklusive Greenfee und Lunch. Für Gruppen von 2 oder 3 gilt ein fester Tagessatz, die Greenfees bestätigen wir gemeinsam.',
+      intro: 'Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Ich versuche immer, die persönlichste Startzeit für Sie zu sichern, aber an vollen Tagen kann der Golfplatz Flights zusammenlegen. Eine garantierte private Startzeit lässt sich in der Regel als Zusatz buchen und ist beim Signature Day standardmäßig enthalten.',
       multiDay: {
         cta: 'Mehrtägige Reise anfragen',
       },
@@ -1644,7 +1644,7 @@ const HOME_HUMANIZED_OVERRIDES = {
       ],
     },
     packages: {
-      intro: 'Las dos opciones son privadas y las acompaño personalmente. El formato individual lo incluye todo. Los grupos de 2 o 3 tienen una tarifa fija por el día, y los green fees se confirman aparte.',
+      intro: 'Solo y Grupo son las tarifas base de Play With A Pro. Siempre intento conseguir la salida más personal posible, pero en días de mucha demanda el campo puede agrupar partidas. Una salida privada garantizada normalmente puede organizarse como extra, y viene incluida de serie en Signature Day.',
       multiDay: {
         cta: 'Consultar un viaje de varios días',
       },
@@ -1668,7 +1668,7 @@ const HOME_HUMANIZED_OVERRIDES = {
       attribution: 'Adam',
     },
     packages: {
-      intro: 'Les deux formats sont privés, et je les accompagne moi-même. En solo, tout est compris. Pour les groupes de 2 ou 3, il y a un tarif fixe pour la journée, et les green fees sont confirmés séparément.',
+      intro: 'Solo et Groupe sont les tarifs de base de Play With A Pro. Je cherche toujours à obtenir le départ le plus personnel possible, mais les jours de forte affluence le golf peut regrouper les réservations. Un départ privé garanti peut généralement être organisé en option, et il est inclus d\'office avec le Signature Day.',
       multiDay: {
         cta: 'Demander un séjour sur plusieurs jours',
       },
@@ -1692,7 +1692,7 @@ const HOME_HUMANIZED_OVERRIDES = {
       attribution: 'Adam',
     },
     packages: {
-      intro: 'Beide opties zijn privé en ik begeleid ze persoonlijk. Solo is volledig inbegrepen. Voor groepen van 2 of 3 geldt één vaste dagprijs, met greenfees die we apart bevestigen.',
+      intro: 'Solo en groep zijn de standaard Play With A Pro dagtarieven. Ik probeer altijd de meest persoonlijke starttijd mogelijk te regelen, maar op drukke dagen kan de golfbaan flights samenvoegen. Een gegarandeerd privé starttijdslot kan meestal als extra worden geregeld, en is standaard inbegrepen bij Signature Day.',
       multiDay: {
         cta: 'Meerdaagse trip aanvragen',
       },
@@ -1716,7 +1716,7 @@ const HOME_HUMANIZED_OVERRIDES = {
       attribution: 'Adam',
     },
     packages: {
-      intro: 'Båda alternativen är privata och leds personligen av mig. Solo inkluderar greenfee och lunch. För grupper på 2 eller 3 gäller ett fast dagspris, och green fees bekräftar vi separat.',
+      intro: 'Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Jag försöker alltid ordna den mest personliga starttiden som är möjlig, men under fullbokade dagar kan golfbanan slå ihop bokningar. En garanterad privat starttid kan oftast ordnas som tillval och ingår som standard i Signature Day.',
       multiDay: {
         cta: 'Fråga om en flerdagarsresa',
       },
@@ -1740,7 +1740,7 @@ const HOME_HUMANIZED_OVERRIDES = {
       attribution: 'Adam',
     },
     packages: {
-      intro: '这两种安排都是私人的，也都由我亲自带着走。单人方案全部包含在内。2 或 3 人的小组按固定日费计价，果岭费另外确认。',
+      intro: '单人和小组是 Play With A Pro 的基础日费方案。我都会尽量安排最具私密感的开球时间，但在球场繁忙时，球场可能会将不同预订拼组。如需保证私密开球时间，通常可以作为加购安排，而 Signature Day 则已默认包含。',
       multiDay: {
         cta: '咨询多日行程',
       },
@@ -1787,7 +1787,7 @@ const HOME_NO_PRICE_OVERRIDES = {
       ],
     },
     packages: {
-      intro: 'Beide Varianten werden von mir persönlich begleitet und auf einem der besten Plätze der Insel gespielt. Über den Preis sprechen wir direkt, sobald ich Ihre Daten und die passende Runde kenne.',
+      intro: 'Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Ich versuche immer, die persönlichste Startzeit für Sie zu sichern, aber an vollen Tagen kann der Golfplatz Flights zusammenlegen. Eine garantierte private Startzeit lässt sich in der Regel als Zusatz buchen und ist beim Signature Day standardmäßig enthalten.',
       items: [
         {
           note: 'Den Preis teile ich Ihnen persönlich mit, sobald ich Ihre Reisedaten, Gruppengröße und den passenden Platz kenne.',
@@ -1812,7 +1812,7 @@ const HOME_NO_PRICE_OVERRIDES = {
       ],
     },
     packages: {
-      intro: 'Ambas opciones las organizo personalmente y se juegan en algunos de los mejores campos de la isla. El precio se comparte cuando hablamos, no dentro de un sistema de reserva frío.',
+      intro: 'Solo y Grupo son las tarifas base de Play With A Pro. Siempre intento conseguir la salida más personal posible, pero en días de mucha demanda el campo puede agrupar partidas. Una salida privada garantizada normalmente puede organizarse como extra, y viene incluida de serie en Signature Day.',
       items: [
         {
           note: 'Le comparto el precio personalmente cuando conozca sus fechas, el tamaño del grupo y el campo adecuado para el día.',
@@ -1837,7 +1837,7 @@ const HOME_NO_PRICE_OVERRIDES = {
       ],
     },
     packages: {
-      intro: 'Les deux formats sont organisés personnellement par moi et joués sur l\'un des plus beaux parcours de l\'île. Le tarif est partagé lors de notre échange, pas affiché comme sur une simple plateforme de réservation.',
+      intro: 'Solo et Groupe sont les tarifs de base de Play With A Pro. Je cherche toujours à obtenir le départ le plus personnel possible, mais les jours de forte affluence le golf peut regrouper les réservations. Un départ privé garanti peut généralement être organisé en option, et il est inclus d\'office avec le Signature Day.',
       items: [
         {
           note: 'Je vous communique le tarif personnellement une fois vos dates, la taille du groupe et le bon parcours définis.',
@@ -1862,7 +1862,7 @@ const HOME_NO_PRICE_OVERRIDES = {
       ],
     },
     packages: {
-      intro: 'Beide opties worden persoonlijk door mij begeleid en gespeeld op een van de beste banen van het eiland. De prijs deel ik wanneer we spreken, niet als een koud boekingsblok op de homepage.',
+      intro: 'Solo en groep zijn de standaard Play With A Pro dagtarieven. Ik probeer altijd de meest persoonlijke starttijd mogelijk te regelen, maar op drukke dagen kan de golfbaan flights samenvoegen. Een gegarandeerd privé starttijdslot kan meestal als extra worden geregeld, en is standaard inbegrepen bij Signature Day.',
       items: [
         {
           note: 'Ik deel de prijs persoonlijk zodra ik uw data, groepsgrootte en de juiste baan voor die dag ken.',
@@ -1887,7 +1887,7 @@ const HOME_NO_PRICE_OVERRIDES = {
       ],
     },
     packages: {
-      intro: 'Båda alternativen leds personligen av mig och spelas på någon av öns bästa banor. Priset delar jag när vi pratar, inte som en stel prisruta på startsidan.',
+      intro: 'Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Jag försöker alltid ordna den mest personliga starttiden som är möjlig, men under fullbokade dagar kan golfbanan slå ihop bokningar. En garanterad privat starttid kan oftast ordnas som tillval och ingår som standard i Signature Day.',
       items: [
         {
           note: 'Jag delar priset personligen när jag vet dina datum, gruppstorlek och vilken bana som passar bäst för dagen.',
@@ -1912,7 +1912,7 @@ const HOME_NO_PRICE_OVERRIDES = {
       ],
     },
     packages: {
-      intro: '两种方案都是私人定制，由我亲自陪同，也都会安排在岛上最值得打的球场之一。价格会在沟通后明确告知，而不是在首页像普通预订页一样直接摆出来。',
+      intro: '单人和小组是 Play With A Pro 的基础日费方案。我都会尽量安排最具私密感的开球时间，但在球场繁忙时，球场可能会将不同预订拼组。如需保证私密开球时间，通常可以作为加购安排，而 Signature Day 则已默认包含。',
       items: [
         {
           note: '当我了解您的日期、人数以及最适合的球场之后，会亲自把价格发给您。',
