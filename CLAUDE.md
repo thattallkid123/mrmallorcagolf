@@ -40,7 +40,7 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 **Two-PC daily rule:** before leaving a machine `git push` and let Drive sync finish; before starting on the other `git pull`; only edit on one machine at a time.
 
-**Secrets (not in git — must exist on both machines):** `token.json` (repo root, Google OAuth for control panel); `.env` and `.env.local` (API keys — Resend etc.); `.github-token`; `ga4_analytics/ga4_oauth_client.json`, `ga4_token.json`; `search_console/search_console_token.json`; `seo_analytics/google_token.json`; `zoho_mail/zoho_config.json`.
+**Secrets (not in git — must exist on both machines):** `.env` and `.env.local` (API keys — Resend etc.); `.github-token`; `ga4_analytics/ga4_oauth_client.json`, `ga4_token.json`; `search_console/search_console_token.json`; `seo_analytics/google_token.json`; `zoho_mail/zoho_config.json`.
 
 **Claude/Codex config** lives at `~/.claude/` and `~/.codex/` on each machine. Sign in fresh on each — do not copy credentials between machines. Skills, agents, and memory folders should match.
 
@@ -165,14 +165,12 @@ JSON: `{ "title": "...", "description": "... (optional)", "dueDate": "YYYY-MM-DD
 
 ## Branch Rule
 
-- `main` is the live coaching/current site.
-- `itinerary-preview` is the future trip-led / itinerary-led version.
-- Shared factual content, course reviews, translations, course data, docs, tooling, and bug fixes should usually be kept on both branches.
-- Strategy-specific homepage, itinerary planner, Plan Trip, service-positioning, and copy experiments can diverge.
+- `main` is the live site and the single source of truth. Do all work here.
+- `itinerary-preview` is **retired** — the itinerary release was merged into `main` (22 May 2026) and the branch has not moved since. It is preserved for reference/recovery in git (`origin/itinerary-preview` and local `snapshot/archive-itinerary-preview`) but is no longer dual-maintained. Do not update it or split content across branches unless Andy explicitly asks to revive that direction.
 
 ## Tech Stack
 
-Next.js 14 App Router, React 18, JSX only. Vercel deployment from GitHub. Languages: EN default + DE, ES, FR, NL, SV, ZH. No database, no auth, no payment gateway.
+Next.js 15 App Router, React 18, JSX only. Vercel deployment from GitHub. Languages: EN default + DE, ES, FR, NL, SV, ZH. No database, no auth, no payment gateway.
 
 ## Critical Rules
 
@@ -221,7 +219,7 @@ CTR on high-impression pages is the primary SEO lever. Rules + the key-pages tra
 - **New guide:** `/publish-course-guide` skill — full chain (photos → `guide-post-content.js` → `page.jsx` routing → sitemap + IndexNow + RSS → OG verify → deploy).
 - **Expanding a live guide:** `/expand-guide` skill.
 - **Content standards + verified course-facts table:** `docs/course-guide-standards.md`. If any required fact is missing, ask Andy before publishing.
-- For shared guide content, update both `main` and `itinerary-preview` unless Andy says otherwise.
+- Publish to `main` only. (`itinerary-preview` is retired — see Branch Rule.)
 
 ## Prototypes (tools, quizzes, selectors)
 

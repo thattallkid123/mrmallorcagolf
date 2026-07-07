@@ -4,7 +4,7 @@
 
 Quick orientation:
 
-- Next.js 14 App Router site for mrmallorcagolf.com, deployed to Vercel from `main`. 7 locales (EN master + DE/ES/FR/NL/SV/ZH). No database, no auth.
+- Next.js 15 App Router site for mrmallorcagolf.com, deployed to Vercel from `main`. 7 locales (EN master + DE/ES/FR/NL/SV/ZH). No database, no auth.
 - Canonical domain is always `https://www.mrmallorcagolf.com` (www, never non-www).
 - Pre-deploy checks: `npm run check:content` always; add `npm run build` for structural changes and `npm run check:i18n-release` for locale-facing changes. A task is not done until the change is live on the site.
 - English is master content — never add localized content that isn't in English first.
