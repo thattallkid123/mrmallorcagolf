@@ -46,6 +46,25 @@ async function main() {
     if (normalizeSet(strokeIndexes) !== normalizeSet(expectedStrokeIndexes)) {
       issues.push(`${name}: stroke indexes should be 1-${expectedHoleCount}, found ${normalizeSet(strokeIndexes)}`)
     }
+
+    if (typeof scorecard.teeVerification !== 'string' || scorecard.teeVerification.length === 0) {
+      issues.push(`${name}: teeVerification is missing`)
+    }
+
+    if (!Array.isArray(scorecard.tees) || scorecard.tees.length === 0) {
+      issues.push(`${name}: tee data is missing`)
+      continue
+    }
+
+    for (const tee of scorecard.tees) {
+      if (typeof tee.name !== 'string' || typeof tee.label !== 'string') {
+        issues.push(`${name}: tee is missing name/label`)
+      }
+
+      if (!Number.isFinite(tee.totalLengthMeters) || tee.totalLengthMeters <= 0) {
+        issues.push(`${name}: tee ${tee.label || tee.name || 'unknown'} has invalid totalLengthMeters`)
+      }
+    }
   }
 
   for (const region of GOLF_COURSE_DATA) {
