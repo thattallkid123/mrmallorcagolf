@@ -166,22 +166,6 @@ export default function GolfCoursesView({ locale = 'en', content }) {
           </section>
         ) : null}
 
-        {content.ui?.faq?.length > 0 && (
-          <section className="course-faq">
-            <div className="course-faq__inner">
-              <h2 className="course-faq__title">{content.ui.faqTitle || 'Common questions'}</h2>
-              <dl className="course-faq__list">
-                {content.ui.faq.map(({ q, a }) => (
-                  <div key={q} className="course-faq__item">
-                    <dt className="course-faq__q">{q}</dt>
-                    <dd className="course-faq__a">{a}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          </section>
-        )}
-
         <DeferredHydrate
           timeoutMs={1600}
           fallback={(
@@ -199,6 +183,31 @@ export default function GolfCoursesView({ locale = 'en', content }) {
         >
           <GolfCoursesClient lang={locale} />
         </DeferredHydrate>
+
+        {content.ui?.faq?.length > 0 && (
+          <section className="faq">
+            <div className="faq__left reveal">
+              <p className="eyebrow">{content.ui.faqEyebrow || 'Questions'}</p>
+              <h2 className="serif-display">{content.ui.faqTitle || 'Common questions'}</h2>
+              {content.ui.faqIntro ? <p>{content.ui.faqIntro}</p> : null}
+            </div>
+            <div className="faq__list reveal reveal-delay-1">
+              {content.ui.faq.map(({ q, a }, index) => (
+                <details key={q} className="faq__item" open={index === 0}>
+                  <summary className="faq__q">
+                    {q}
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                      <path d="M8 3v10M3 8h10" />
+                    </svg>
+                  </summary>
+                  <div className="faq__a">
+                    <p>{a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
       </PageLayout>
     </>
   )

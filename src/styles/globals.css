@@ -2319,25 +2319,6 @@ select.form-control { cursor: pointer; }
 .intro-bar__text p { font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.82); line-height: 1.9; margin-bottom: 1rem; }
 .intro-bar__text--full { max-width: 100%; }
 .course-controls-shell { background: var(--cream); border-bottom: 1px solid var(--sand); }
-.course-guidance-strip { padding: 34px 40px 22px; border-bottom: 1px solid rgba(26,25,22,0.08); background: linear-gradient(180deg, rgba(255,255,255,0.34), rgba(255,255,255,0)); }
-.course-guidance-strip__eyebrow { font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
-.course-guidance-strip__title { font-family: var(--font-serif); font-size: clamp(1.3rem, 2.2vw, 2rem); font-weight: 500; color: var(--deep); line-height: 1.2; margin-bottom: 1rem; max-width: 18ch; }
-.course-guidance-strip__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-.course-guidance-strip__card { background: rgba(255,255,255,0.72); border: 1px solid rgba(184,151,90,0.16); padding: 16px 18px 18px; box-shadow: var(--shadow-soft); }
-.course-guidance-strip__card h3 { font-family: var(--font-serif); font-size: 1rem; font-weight: 500; color: var(--deep); line-height: 1.3; margin-bottom: 0.5rem; }
-.course-guidance-strip__card p { font-size: 0.86rem; font-weight: 300; line-height: 1.7; color: var(--charcoal); margin-bottom: 0; }
-.course-guidance-strip__picks { margin-top: 18px; padding: 16px 18px; background: rgba(255,255,255,0.62); border: 1px solid rgba(184,151,90,0.14); }
-.course-guidance-strip__picks-title { font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.7rem; }
-.course-guidance-strip__picks-list { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.45rem; }
-.course-guidance-strip__picks-list li { font-size: 0.88rem; font-weight: 300; line-height: 1.6; color: var(--charcoal); }
-.course-faq { background: var(--cream); padding: clamp(32px, 5vw, 56px) clamp(20px, 5vw, 60px); border-top: 1px solid rgba(26,25,22,0.08); }
-.course-faq__inner { max-width: 780px; margin: 0 auto; }
-.course-faq__title { font-family: var(--font-serif); font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 500; color: var(--deep); line-height: 1.2; margin-bottom: 1.6rem; }
-.course-faq__list { margin: 0; }
-.course-faq__item { padding: 1.1rem 0; border-bottom: 1px solid rgba(26,25,22,0.08); }
-.course-faq__item:first-child { border-top: 1px solid rgba(26,25,22,0.08); }
-.course-faq__q { font-family: var(--font-serif); font-size: 1.08rem; font-weight: 500; color: var(--deep); line-height: 1.35; margin-bottom: 0.5rem; }
-.course-faq__a { margin: 0; font-size: 0.92rem; font-weight: 300; line-height: 1.75; color: var(--charcoal); }
 .course-controls-copy { padding: 0 40px 16px; }
 .course-controls-copy p { font-size: 0.85rem; font-weight: 300; color: var(--stone); line-height: 1.7; margin-bottom: 0; max-width: 920px; }
 .course-controls-copy__key { margin-top: 0.5rem; color: var(--taupe); }
@@ -2928,16 +2909,6 @@ select.form-control { cursor: pointer; }
   .form-row { grid-template-columns: 1fr; }
   .geography { grid-template-columns: 1fr; gap: 40px; padding: 50px 20px; }
   .intro-bar { grid-template-columns: 1fr; gap: 32px; padding: 40px 20px; }
-  .course-guidance-strip { padding: 20px 20px 14px; }
-  .course-guidance-strip__grid { grid-template-columns: 1fr; }
-  .course-guidance-strip__title { max-width: 100%; }
-  .course-guidance-strip__title { margin-bottom: 0.7rem; font-size: clamp(1.15rem, 7vw, 1.55rem); }
-  .course-guidance-strip__card { padding: 14px 16px 15px; }
-  .course-guidance-strip__card h3 { font-size: 0.96rem; margin-bottom: 0.35rem; }
-  .course-guidance-strip__card p { font-size: 0.82rem; line-height: 1.58; }
-  .course-guidance-strip__picks { margin-top: 14px; padding: 14px 16px; }
-  .course-guidance-strip__picks-list { gap: 0.35rem; }
-  .course-guidance-strip__picks-list li { font-size: 0.83rem; line-height: 1.55; }
   .course-controls-copy { padding: 24px 20px 12px; }
   .course-controls-copy p { font-size: 0.82rem; line-height: 1.6; }
   .filter-tabs { padding: 0 20px; }

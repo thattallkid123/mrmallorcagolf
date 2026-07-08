@@ -31,24 +31,8 @@ export const GOLF_COURSES_CONTENT = {
       sidebarH3: 'Want to play one of these courses with a UK PGA professional alongside you?',
       sidebarP: 'Private day, everything arranged and a course chosen for what would be best for you.',
       sidebarBtn: 'Get in touch →',
-      startHereEyebrow: 'Start here',
-      startHereTitle: 'How to use this page',
-      startHerePaths: [
-        {
-          title: 'I want the best first round',
-          body: 'Sort by my rating and filter by difficulty to surface the strongest all-round options, then read the note on each card before you shortlist.',
-        },
-        {
-          title: 'I need the right fit for my group',
-          body: 'Filter by region, then compare price, difficulty, and the review note on each card.',
-        },
-        {
-          title: 'I want a personal recommendation',
-          body: 'Once you have two or three contenders, send your dates, level, and hotel area and I will narrow it down.',
-        },
-      ],
       explorerIntro:
-        'Use the filters to narrow the island down. Each card shows price shape, difficulty, Andy rating, and the key thing to know before you book.',
+        'Start with region, price, and difficulty to narrow the courses down fast. Each card highlights the key things to know before you book.',
       ctaEyebrow: 'Narrowed it down?',
       ctaH2: 'Tell Andy the trip details and get a proper course recommendation back.',
       ctaP: "Send your dates, handicap, hotel area, and the two or three courses you are considering. I'll come back personally within 24 hours with the clearest fit.",
@@ -66,7 +50,9 @@ export const GOLF_COURSES_CONTENT = {
         { region: 'East', courses: "Capdepera · Canyamel · Pula · Son Servera · Vall d'Or · Reserva Rotana" },
         { region: 'North', courses: 'Alcanada · Golf Pollença' },
       ],
+      faqEyebrow: 'Questions',
       faqTitle: 'Common questions',
+      faqIntro: 'A few quick answers before you shortlist or book.',
       faq: [
         {
           q: 'How many golf courses are in Mallorca?',
@@ -104,19 +90,16 @@ export const GOLF_COURSES_CONTENT = {
       north: { title: 'Norden', subtitle: 'Alcanada allein lohnt die Fahrt', count: '2 Plaetze' },
     },
     ui: {
-      startHereEyebrow: 'Hier starten',
-      startHereTitle: 'So nutzen Sie diese Seite',
-      startHerePaths: [
-        { title: 'Ich will die beste erste Runde', body: 'Sortieren Sie nach meiner Bewertung und filtern Sie nach Schwierigkeit, um die insgesamt stärksten Plätze zu sehen, und lesen Sie die Notiz auf jeder Karte, bevor Sie eine Auswahl treffen.' },
-        { title: 'Ich suche das Richtige für meine Gruppe', body: 'Filtern Sie nach Region und vergleichen Sie dann Preis, Schwierigkeit und die Bewertungsnotiz auf jeder Karte.' },
-        { title: 'Ich möchte eine persönliche Empfehlung', body: 'Wenn Sie zwei oder drei Favoriten haben, schicken Sie mir Ihre Daten, Ihr Niveau und Ihre Hotelregion, und ich grenze es für Sie ein.' },
-      ],
-      faqTitle: 'Häufige Fragen',
+      explorerIntro:
+        'Beginnen Sie mit Region, Preis und Schwierigkeit, um die passenden Plaetze schnell einzugrenzen. Jede Karte zeigt die wichtigsten Punkte vor der Buchung.',
+      faqEyebrow: 'Fragen',
+      faqTitle: 'Haeufige Fragen',
+      faqIntro: 'Ein paar schnelle Antworten, bevor Sie Ihre Auswahl treffen oder buchen.',
       faq: [
-        { q: 'Wie viele Golfplätze gibt es auf Mallorca?', a: 'Mallorca hat insgesamt 24 Golfplätze. Davon sind 21 ohne Mitgliedschaft für Greenfee-Gäste zugänglich. Die Insel gliedert sich in fünf Hauptregionen: Palma, Südwesten, Süden, Osten und Norden.' },
-        { q: 'Welcher ist der beste Golfplatz auf Mallorca?', a: 'Es gibt nicht den einen besten Platz. Es kommt darauf an, was Sie von der Runde erwarten. Für einen echten Championship-Test schauen Sie auf die schwierigsten Plätze. Für Landschaft filtern Sie nach den Küsten- und Bergkulissen. Für Pflege auf Tour-Niveau sortieren Sie nach meiner Bewertung. Schicken Sie mir Ihr Handicap und was Ihnen am wichtigsten ist, und ich nenne Ihnen die richtige Auswahl.' },
-        { q: 'Was kostet eine Runde Golf auf Mallorca?', a: 'Die Greenfees reichen von rund 55 € im günstigen Bereich bis rund 250 € an der Spitze in der Hochsaison. Die meisten Gästerunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 30 € bis 40 € zusätzlich.' },
-        { q: 'Braucht man für Mallorca ein Handicap-Zertifikat?', a: 'Die meisten Plätze heißen alle Spielstärken willkommen, einige verlangen jedoch ein gültiges Handicap-Zertifikat oder setzen ein maximales Handicap. Auf den Platzkarten oben habe ich die Plätze mit Handicap-Vorgabe und dem jeweiligen Limit markiert, damit Sie es vor der Buchung sehen. Wenn Sie bei Ihrem Zertifikat unsicher sind, nennen Sie mir die Plätze, die Sie in Betracht ziehen, und ich prüfe es für Sie.' },
+        { q: 'Wie viele Golfplaetze gibt es auf Mallorca?', a: 'Mallorca hat insgesamt 24 Golfplaetze. Davon sind 21 ohne Mitgliedschaft fuer Greenfee-Gaeste zugaenglich. Die Insel gliedert sich in fuenf Hauptregionen: Palma, Suedwesten, Sueden, Osten und Norden.' },
+        { q: 'Welcher ist der beste Golfplatz auf Mallorca?', a: 'Es gibt nicht den einen besten Platz. Es kommt darauf an, was Sie von der Runde erwarten. Fuer einen echten Championship-Test schauen Sie auf die schwierigsten Plaetze. Fuer Landschaft filtern Sie nach den Kuesten- und Bergkulissen. Fuer Pflege auf Tour-Niveau sortieren Sie nach meiner Bewertung. Schicken Sie mir Ihr Handicap und was Ihnen am wichtigsten ist, und ich nenne Ihnen die richtige Auswahl.' },
+        { q: 'Was kostet eine Runde Golf auf Mallorca?', a: 'Die Greenfees reichen von rund 55 € im guenstigen Bereich bis rund 250 € an der Spitze in der Hochsaison. Die meisten Gaesterunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 30 € bis 40 € zusaetzlich.' },
+        { q: 'Braucht man fuer Mallorca ein Handicap-Zertifikat?', a: 'Die meisten Plaetze heissen alle Spielstaerken willkommen, einige verlangen jedoch ein gueltiges Handicap-Zertifikat oder setzen ein maximales Handicap. Auf den Platzkarten oben habe ich die Plaetze mit Handicap-Vorgabe und dem jeweiligen Limit markiert, damit Sie es vor der Buchung sehen. Wenn Sie bei Ihrem Zertifikat unsicher sind, nennen Sie mir die Plaetze, die Sie in Betracht ziehen, und ich pruefe es fuer Sie.' },
       ],
     },
   },
@@ -137,19 +120,16 @@ export const GOLF_COURSES_CONTENT = {
       north: { title: 'Norte', subtitle: 'Solo Alcanada ya justifica el trayecto', count: '2 campos' },
     },
     ui: {
-      startHereEyebrow: 'Empiece aquí',
-      startHereTitle: 'Cómo usar esta página',
-      startHerePaths: [
-        { title: 'Quiero la mejor primera ronda', body: 'Ordene por mi valoración y filtre por dificultad para ver las opciones más completas, y lea la nota de cada ficha antes de hacer su lista.' },
-        { title: 'Busco lo adecuado para mi grupo', body: 'Filtre por zona y compare precio, dificultad y la nota de la reseña en cada ficha.' },
-        { title: 'Quiero una recomendación personal', body: 'Cuando tenga dos o tres candidatos, envíeme sus fechas, su nivel y su zona de hotel y le ayudo a decidir.' },
-      ],
+      explorerIntro:
+        'Empiece por zona, precio y dificultad para reducir los campos rapidamente. Cada ficha destaca lo mas importante antes de reservar.',
+      faqEyebrow: 'Preguntas',
       faqTitle: 'Preguntas frecuentes',
+      faqIntro: 'Respuestas rapidas antes de hacer su lista corta o reservar.',
       faq: [
-        { q: '¿Cuántos campos de golf hay en Mallorca?', a: 'Mallorca tiene 24 campos de golf en total. De ellos, 21 están abiertos a visitantes con green fee sin necesidad de ser socio. La isla se divide en cinco regiones principales: Palma, Suroeste, Sur, Este y Norte.' },
-        { q: '¿Cuál es el mejor campo de golf de Mallorca?', a: 'No hay un único mejor campo. Depende de lo que busque en la ronda. Para una prueba de nivel campeonato, mire los campos más difíciles. Para paisaje, filtre por los entornos de costa y montaña. Para un mantenimiento de nivel Tour, ordene por mi valoración. Envíeme su handicap y lo que más le importa y le indicaré la mejor lista corta.' },
-        { q: '¿Cuánto cuesta jugar al golf en Mallorca?', a: 'Los green fees van desde unos 55 € en la franja de valor hasta unos 250 € en lo más alto en temporada alta. La mayoría de las rondas de visitante se sitúan entre 85 € y 165 €. El buggy suele costar de 30 € a 40 € aparte.' },
-        { q: '¿Hace falta certificado de handicap para jugar en Mallorca?', a: 'La mayoría de los campos admiten todos los niveles, pero algunos exigen un certificado de handicap válido o fijan un handicap máximo. En las fichas de arriba he señalado los campos con requisito de handicap y el límite que aplica, para que lo vea antes de reservar. Si tiene dudas con su certificado, dígame los campos que está considerando y lo compruebo por usted.' },
+        { q: '¿Cuantos campos de golf hay en Mallorca?', a: 'Mallorca tiene 24 campos de golf en total. De ellos, 21 estan abiertos a visitantes con green fee sin necesidad de ser socio. La isla se divide en cinco regiones principales: Palma, Suroeste, Sur, Este y Norte.' },
+        { q: '¿Cual es el mejor campo de golf de Mallorca?', a: 'No hay un unico mejor campo. Depende de lo que busque en la ronda. Para una prueba de nivel campeonato, mire los campos mas dificiles. Para paisaje, filtre por los entornos de costa y montaña. Para un mantenimiento de nivel Tour, ordene por mi valoracion. Envieme su handicap y lo que mas le importa y le indicare la mejor lista corta.' },
+        { q: '¿Cuanto cuesta jugar al golf en Mallorca?', a: 'Los green fees van desde unos 55 € en la franja de valor hasta unos 250 € en lo mas alto en temporada alta. La mayoria de las rondas de visitante se situan entre 85 € y 165 €. El buggy suele costar de 30 € a 40 € aparte.' },
+        { q: '¿Hace falta certificado de handicap para jugar en Mallorca?', a: 'La mayoria de los campos admiten todos los niveles, pero algunos exigen un certificado de handicap valido o fijan un handicap maximo. En las fichas de arriba he señalado los campos con requisito de handicap y el limite que aplica, para que lo vea antes de reservar. Si tiene dudas con su certificado, digame los campos que esta considerando y lo compruebo por usted.' },
       ],
     },
   },
@@ -170,19 +150,16 @@ export const GOLF_COURSES_CONTENT = {
       north: { title: 'Nord', subtitle: 'Alcanada vaut le trajet a lui seul', count: '2 parcours' },
     },
     ui: {
-      startHereEyebrow: "Commencez ici",
-      startHereTitle: "Comment utiliser cette page",
-      startHerePaths: [
-        { title: "Je veux le meilleur premier parcours", body: "Triez par ma note et filtrez par difficulté pour faire ressortir les options les plus complètes, puis lisez la note de chaque fiche avant de faire votre sélection." },
-        { title: "Je cherche ce qui convient à mon groupe", body: "Filtrez par région, puis comparez le prix, la difficulté et la note de l'avis sur chaque fiche." },
-        { title: "Je veux une recommandation personnelle", body: "Une fois que vous avez deux ou trois favoris, envoyez-moi vos dates, votre niveau et votre zone d'hôtel et je vous aide à trancher." },
-      ],
-      faqTitle: "Questions fréquentes",
+      explorerIntro:
+        'Commencez par la region, le prix et la difficulte pour reduire rapidement les choix. Chaque fiche met en avant l essentiel avant de reserver.',
+      faqEyebrow: 'Questions',
+      faqTitle: 'Questions frequentes',
+      faqIntro: 'Quelques reponses rapides avant de faire votre short-list ou de reserver.',
       faq: [
-        { q: "Combien y a-t-il de parcours de golf à Majorque ?", a: "Majorque compte 24 parcours de golf au total. Parmi eux, 21 sont ouverts aux visiteurs en green fee sans adhésion. L'île se divise en cinq grandes régions : Palma, Sud-ouest, Sud, Est et Nord." },
-        { q: "Quel est le meilleur parcours de golf de Majorque ?", a: "Il n'y a pas un seul meilleur parcours. Cela dépend de ce que vous attendez de la partie. Pour un vrai test de niveau championnat, regardez les parcours les plus difficiles. Pour le paysage, filtrez par les cadres de côte et de montagne. Pour un entretien de niveau Tour, triez par ma note. Envoyez-moi votre index et ce qui compte le plus pour vous et je vous indiquerai la bonne sélection." },
-        { q: "Combien coûte une partie de golf à Majorque ?", a: "Les green fees vont d'environ 55 € dans la gamme accessible jusqu'à environ 250 € au sommet en haute saison. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coûte généralement de 30 € à 40 € en plus." },
-        { q: "Faut-il un certificat de handicap pour jouer à Majorque ?", a: "La plupart des parcours accueillent tous les niveaux, mais certains exigent un certificat de handicap valide ou fixent un handicap maximum. Sur les fiches ci-dessus, j'ai signalé les parcours avec une exigence de handicap et la limite qui s'applique, pour que vous le voyiez avant de réserver. Si vous avez un doute sur votre certificat, indiquez-moi les parcours que vous envisagez et je vérifie pour vous." },
+        { q: 'Combien y a-t-il de parcours de golf a Majorque ?', a: 'Majorque compte 24 parcours de golf au total. Parmi eux, 21 sont ouverts aux visiteurs en green fee sans adhesion. L ile se divise en cinq grandes regions : Palma, Sud-ouest, Sud, Est et Nord.' },
+        { q: 'Quel est le meilleur parcours de golf de Majorque ?', a: 'Il n y a pas un seul meilleur parcours. Cela depend de ce que vous attendez de la partie. Pour un vrai test de niveau championnat, regardez les parcours les plus difficiles. Pour le paysage, filtrez par les cadres de cote et de montagne. Pour un entretien de niveau Tour, triez par ma note. Envoyez-moi votre index et ce qui compte le plus pour vous et je vous indiquerai la bonne selection.' },
+        { q: 'Combien coute une partie de golf a Majorque ?', a: 'Les green fees vont d environ 55 € dans la gamme accessible jusqu a environ 250 € au sommet en haute saison. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coute generalement de 30 € a 40 € en plus.' },
+        { q: 'Faut-il un certificat de handicap pour jouer a Majorque ?', a: 'La plupart des parcours accueillent tous les niveaux, mais certains exigent un certificat de handicap valide ou fixent un handicap maximum. Sur les fiches ci-dessus, j ai signale les parcours avec une exigence de handicap et la limite qui s applique, pour que vous le voyiez avant de reserver. Si vous avez un doute sur votre certificat, indiquez-moi les parcours que vous envisagez et je verifie pour vous.' },
       ],
     },
   },
@@ -203,19 +180,16 @@ export const GOLF_COURSES_CONTENT = {
       north: { title: 'Noord', subtitle: 'Alleen Alcanada maakt de rit al de moeite waard', count: '2 banen' },
     },
     ui: {
-      startHereEyebrow: 'Begin hier',
-      startHereTitle: 'Zo gebruikt u deze pagina',
-      startHerePaths: [
-        { title: 'Ik wil de beste eerste ronde', body: 'Sorteer op mijn beoordeling en filter op moeilijkheid om de sterkste opties naar boven te halen, en lees de notitie op elke kaart voordat u een keuze maakt.' },
-        { title: 'Ik zoek wat past bij mijn groep', body: 'Filter op regio en vergelijk daarna prijs, moeilijkheid en de recensienotitie op elke kaart.' },
-        { title: 'Ik wil een persoonlijk advies', body: 'Zodra u twee of drie kandidaten heeft, stuur me uw data, uw niveau en uw hotelregio en ik help u kiezen.' },
-      ],
+      explorerIntro:
+        'Begin met regio, prijs en moeilijkheid om de banen snel terug te brengen tot de juiste opties. Elke kaart laat zien wat u voor het boeken moet weten.',
+      faqEyebrow: 'Vragen',
       faqTitle: 'Veelgestelde vragen',
+      faqIntro: 'Snelle antwoorden voordat u een shortlist maakt of boekt.',
       faq: [
         { q: 'Hoeveel golfbanen zijn er op Mallorca?', a: "Mallorca heeft in totaal 24 golfbanen. Daarvan zijn er 21 open voor greenfee-bezoekers zonder lidmaatschap. Het eiland bestaat uit vijf hoofdregio's: Palma, Zuidwest, Zuid, Oost en Noord." },
-        { q: 'Wat is de beste golfbaan van Mallorca?', a: 'Er is niet één beste baan. Het hangt af van wat u van de ronde verwacht. Voor een echte championship-test kijkt u naar de moeilijkste banen. Voor het landschap filtert u op de kust- en bergomgevingen. Voor onderhoud op Tour-niveau sorteert u op mijn beoordeling. Stuur me uw handicap en wat voor u het belangrijkst is en ik wijs u de juiste shortlist.' },
+        { q: 'Wat is de beste golfbaan van Mallorca?', a: 'Er is niet een beste baan. Het hangt af van wat u van de ronde verwacht. Voor een echte championship-test kijkt u naar de moeilijkste banen. Voor het landschap filtert u op de kust- en bergomgevingen. Voor onderhoud op Tour-niveau sorteert u op mijn beoordeling. Stuur me uw handicap en wat voor u het belangrijkst is en ik wijs u de juiste shortlist.' },
         { q: 'Wat kost een rondje golf op Mallorca?', a: 'De greenfees lopen van rond 55 € in het voordelige segment tot rond 250 € aan de top in het hoogseizoen. De meeste bezoekersrondes liggen tussen 85 € en 165 €. Een buggy kost meestal 30 € tot 40 € extra.' },
-        { q: 'Heeft u een handicapbewijs nodig om op Mallorca te spelen?', a: 'De meeste banen verwelkomen alle niveaus, maar sommige vragen een geldig handicapbewijs of stellen een maximale handicap. Op de baankaarten hierboven heb ik de banen met een handicapeis en de geldende limiet gemarkeerd, zodat u het vóór het boeken ziet. Twijfelt u over uw bewijs, noem me dan de banen die u overweegt en ik zoek het voor u uit.' },
+        { q: 'Heeft u een handicapbewijs nodig om op Mallorca te spelen?', a: 'De meeste banen verwelkomen alle niveaus, maar sommige vragen een geldig handicapbewijs of stellen een maximale handicap. Op de baankaarten hierboven heb ik de banen met een handicapeis en de geldende limiet gemarkeerd, zodat u het voor het boeken ziet. Twijfelt u over uw bewijs, noem me dan de banen die u overweegt en ik zoek het voor u uit.' },
       ],
     },
   },
@@ -236,19 +210,16 @@ export const GOLF_COURSES_CONTENT = {
       north: { title: 'Norr', subtitle: 'Bara Alcanada gor resan vard det', count: '2 banor' },
     },
     ui: {
-      startHereEyebrow: 'Börja här',
-      startHereTitle: 'Så använder du den här sidan',
-      startHerePaths: [
-        { title: 'Jag vill ha den bästa första rundan', body: 'Sortera på mitt betyg och filtrera på svårighetsgrad för att lyfta fram de starkaste alternativen, och läs noteringen på varje kort innan du gör ditt urval.' },
-        { title: 'Jag söker rätt bana för mitt sällskap', body: 'Filtrera på region och jämför sedan pris, svårighetsgrad och recensionsnoteringen på varje kort.' },
-        { title: 'Jag vill ha en personlig rekommendation', body: 'När du har två eller tre kandidater, skicka dina datum, din nivå och ditt hotellområde så hjälper jag dig att välja.' },
-      ],
-      faqTitle: 'Vanliga frågor',
+      explorerIntro:
+        'Borja med region, pris och svarighetsgrad for att smalna av banorna snabbt. Varje kort lyfter fram det viktigaste att veta fore bokning.',
+      faqEyebrow: 'Fragor',
+      faqTitle: 'Vanliga fragor',
+      faqIntro: 'Nagra snabba svar innan du gor din kortlista eller bokar.',
       faq: [
-        { q: 'Hur många golfbanor finns det på Mallorca?', a: 'Mallorca har totalt 24 golfbanor. Av dem är 21 öppna för greenfee-besökare utan medlemskap. Ön delas in i fem huvudregioner: Palma, Sydväst, Söder, Öst och Norr.' },
-        { q: 'Vilken är den bästa golfbanan på Mallorca?', a: 'Det finns ingen enskild bästa bana. Det beror på vad du vill ha ut av rundan. För ett riktigt mästerskapstest, titta på de svåraste banorna. För landskap, filtrera på kust- och bergsmiljöerna. För skötsel på tour-nivå, sortera på mitt betyg. Skicka mig ditt handicap och vad som betyder mest för dig så pekar jag ut rätt kortlista.' },
-        { q: 'Vad kostar det att spela golf på Mallorca?', a: 'Greenfees går från runt 55 € i den prisvärda delen upp till runt 250 € i toppen under högsäsong. De flesta besöksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 30 € till 40 € extra.' },
-        { q: 'Behöver man ett handicapintyg för att spela på Mallorca?', a: 'De flesta banor välkomnar alla nivåer, men vissa kräver ett giltigt handicapintyg eller sätter ett maxhandicap. På bankorten ovan har jag markerat banorna med handicapkrav och gränsen som gäller, så att du ser det före bokning. Om du är osäker på ditt intyg, säg vilka banor du överväger så kollar jag åt dig.' },
+        { q: 'Hur manga golfbanor finns det pa Mallorca?', a: 'Mallorca har totalt 24 golfbanor. Av dem ar 21 oppna for greenfee-besokare utan medlemskap. On delas in i fem huvudregioner: Palma, Sydvast, Soder, Ost och Norr.' },
+        { q: 'Vilken ar den basta golfbanan pa Mallorca?', a: 'Det finns ingen enskild basta bana. Det beror pa vad du vill ha ut av rundan. For ett riktigt masterskapstest, titta pa de svaraste banorna. For landskap, filtrera pa kust- och bergsmiljoerna. For skotsel pa tour-niva, sortera pa mitt betyg. Skicka mig ditt handicap och vad som betyder mest for dig sa pekar jag ut ratt kortlista.' },
+        { q: 'Vad kostar det att spela golf pa Mallorca?', a: 'Greenfees gar fran runt 55 € i den prisvarda delen upp till runt 250 € i toppen under hogsasong. De flesta besoksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 30 € till 40 € extra.' },
+        { q: 'Behover man ett handicapintyg for att spela pa Mallorca?', a: 'De flesta banor valkomnar alla nivaer, men vissa kraver ett giltigt handicapintyg eller satter ett maxhandicap. Pa bankorten ovan har jag markerat banorna med handicapkrav och gransen som galler, sa att du ser det fore bokning. Om du ar osaker pa ditt intyg, sag vilka banor du overvager sa kollar jag at dig.' },
       ],
     },
   },
@@ -269,16 +240,13 @@ export const GOLF_COURSES_CONTENT = {
       north: { title: '北部', subtitle: 'Alcanada 本身就值得专程一去', count: '2 座球场' },
     },
     ui: {
-      startHereEyebrow: '从这里开始',
-      startHereTitle: '如何使用本页',
-      startHerePaths: [
-        { title: '我想要最好的第一场', body: '按我的评分排序，并按难度筛选，找出综合表现最强的球场，在列入候选前先看每张卡片上的点评。' },
-        { title: '我要适合我这一组的球场', body: '先按地区筛选，再比较每张卡片上的价格、难度和点评。' },
-        { title: '我想要个性化推荐', body: '选出两三个候选后，把您的日期、水平和酒店区域发给我，我来帮您缩小范围。' },
-      ],
+      explorerIntro:
+        '先按地区、价格和难度筛选，这样可以更快缩小到合适的球场。每张卡片都会标出预订前最该知道的重点。',
+      faqEyebrow: '问题',
       faqTitle: '常见问题',
+      faqIntro: '在您列出 shortlist 或预订之前，先看几个简短答案。',
       faq: [
-        { q: '马略卡有多少座高尔夫球场？', a: '马略卡岛共有 24 座高尔夫球场，其中 21 座对支付果岭费的访客开放，无需会籍。全岛分为五个主要区域：帕尔马、西南部、南部、东部和北部。' },
+        { q: '马略卡有多少座高尔夫球场？', a: '马略卡岛共拥有 24 座高尔夫球场，其中 21 座对支付果岭费的访客开放，无需会籍。全岛分为五个主要区域：帕尔马、西南部、南部、东部和北部。' },
         { q: '马略卡最好的高尔夫球场是哪一座？', a: '没有唯一的最佳球场，关键看您想从这一场中得到什么。想要真正的锦标赛级挑战，就看难度最高的球场；想要风景，就筛选海岸和山地球场；想要巡回赛级的球场养护，就按我的评分排序。把您的差点和最看重的方面发给我，我会为您推荐合适的名单。' },
         { q: '在马略卡打一场高尔夫要多少钱？', a: '果岭费从性价比端的约 55 欧元，到旺季高端的约 250 欧元不等。大多数访客单场在 85 到 165 欧元之间，球车通常另加 30 到 40 欧元。' },
         { q: '在马略卡打球需要差点证明吗？', a: '大多数球场欢迎各种水平，但有些要求有效的差点证明，或设有最高差点限制。我已在上方的球场卡片上标出有差点要求的球场及其限制，方便您预订前查看。如果您不确定自己的证明，把您考虑的球场告诉我，我来帮您确认。' },

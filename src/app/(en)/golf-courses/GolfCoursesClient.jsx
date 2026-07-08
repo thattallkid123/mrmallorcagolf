@@ -753,20 +753,6 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   return (
     <>
       <section className="course-controls-shell">
-        {t.startHereTitle ? (
-          <div className="course-guidance-strip">
-            <p className="course-guidance-strip__eyebrow">{t.startHereEyebrow}</p>
-            <h2 className="course-guidance-strip__title">{t.startHereTitle}</h2>
-            <div className="course-guidance-strip__grid">
-              {t.startHerePaths?.map((item) => (
-                <div key={item.title} className="course-guidance-strip__card">
-                  <h3>{item.title}</h3>
-                  <p>{item.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        ) : null}
         <div id="all-courses" className="filter-tabs filter-tabs--anchored filter-tabs--primary">
           {regions.map((region) => (
             <button
