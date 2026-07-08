@@ -25,7 +25,7 @@ export async function POST(request) {
     return Response.json({ ok: false, error: 'Payload too large.' }, { status: 413 })
   }
 
-  if (!checkRateLimit(getClientKey(request, 'questionnaire'), 5)) {
+  if (!await checkRateLimit(getClientKey(request, 'questionnaire'), 5)) {
     return Response.json(
       { ok: false, error: 'Too many submissions from this connection. Please try again shortly.' },
       { status: 429 },

@@ -37,7 +37,7 @@ export async function POST(request) {
     return Response.json({ ok: false, error: 'Payload too large.' }, { status: 413 })
   }
 
-  if (!checkRateLimit(getClientKey(request, 'contact'), 12, 10 * 60 * 1000)) {
+  if (!await checkRateLimit(getClientKey(request, 'contact'), 12, 10 * 60 * 1000)) {
     return Response.json(
       { ok: false, error: 'Too many enquiries from this connection. Please wait a few minutes and try again.' },
       { status: 429 },

@@ -28,7 +28,7 @@ export async function POST(request) {
     return NextResponse.json({ ok: false, error: 'Payload too large.' }, { status: 413 })
   }
 
-  if (!checkRateLimit(getClientKey(request, 'zh-selector'), 10, 10 * 60 * 1000)) {
+  if (!await checkRateLimit(getClientKey(request, 'zh-selector'), 10, 10 * 60 * 1000)) {
     return NextResponse.json({ ok: false, error: 'Too many requests. Please wait a few minutes and try again.' }, { status: 429 })
   }
 

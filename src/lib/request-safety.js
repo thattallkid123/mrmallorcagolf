@@ -1,6 +1,11 @@
+import { Redis } from '@upstash/redis'
+
 const DEFAULT_WINDOW_MS = 5 * 60 * 1000
 const DEFAULT_ALLOWED_ORIGINS = new Set(['https://www.mrmallorcagolf.com', 'https://mrmallorcagolf.com'])
 const DEV_ALLOWED_ORIGINS = new Set(['http://localhost:3000', 'http://127.0.0.1:3000'])
+
+let redisClient
+let redisUnavailableLogged = false
 
 function getStore() {
   if (!globalThis.__mrmallorcagolfRateLimitStore) {
@@ -42,7 +47,23 @@ export function isPayloadTooLarge(request, maxBytes = 64 * 1024) {
   return contentLength > maxBytes
 }
 
-export function checkRateLimit(key, limit = 5, windowMs = DEFAULT_WINDOW_MS) {
+function getRedisClient() {
+  if (redisClient !== undefined) {
+    return redisClient
+  }
+
+  // Safe rollout: production keeps the existing in-memory limiter until the
+  // shared Upstash env vars are added in Vercel/local env.
+  if (!process.env.UPSTASH_REDIS_REST_URL || !process.env.UPSTASH_REDIS_REST_TOKEN) {
+    redisClient = null
+    return redisClient
+  }
+
+  redisClient = Redis.fromEnv()
+  return redisClient
+}
+
+function checkRateLimitInMemory(key, limit = 5, windowMs = DEFAULT_WINDOW_MS) {
   const store = getStore()
   const now = Date.now()
   const entry = store.get(key)
@@ -59,6 +80,31 @@ export function checkRateLimit(key, limit = 5, windowMs = DEFAULT_WINDOW_MS) {
   entry.count += 1
   store.set(key, entry)
   return true
+}
+
+export async function checkRateLimit(key, limit = 5, windowMs = DEFAULT_WINDOW_MS) {
+  const redis = getRedisClient()
+  if (!redis) {
+    return checkRateLimitInMemory(key, limit, windowMs)
+  }
+
+  try {
+    const namespacedKey = `rate-limit:${key}`
+    const count = await redis.incr(namespacedKey)
+
+    if (count === 1) {
+      await redis.pexpire(namespacedKey, windowMs)
+    }
+
+    return count <= limit
+  } catch (error) {
+    if (!redisUnavailableLogged) {
+      redisUnavailableLogged = true
+      console.error('[request-safety] Upstash rate limit fallback:', error)
+    }
+
+    return checkRateLimitInMemory(key, limit, windowMs)
+  }
 }
 
 export function sanitizeText(value, maxLength = 1000) {

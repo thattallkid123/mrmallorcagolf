@@ -182,7 +182,7 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Payload too large' }, { status: 413 })
   }
 
-  if (!checkRateLimit(getClientKey(request, 'send-itinerary'), 10, 10 * 60 * 1000)) {
+  if (!await checkRateLimit(getClientKey(request, 'send-itinerary'), 10, 10 * 60 * 1000)) {
     return NextResponse.json({ error: 'Too many requests. Please wait a few minutes and try again.' }, { status: 429 })
   }
 
