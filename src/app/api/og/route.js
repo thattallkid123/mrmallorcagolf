@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 import { SITE_ORIGIN } from '../../../lib/site.js'
 
-export const runtime = 'edge'
+export const runtime = 'nodejs'
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url)
