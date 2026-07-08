@@ -117,7 +117,7 @@ Next newsletter step: do not build a heavy programme yet — the system is mostl
 
 ## Course scorecard data (par / SI / distances)
 
-**No auto-sync for par/SI.** Source of truth: official club PDFs in Drive `Reference/Scorecards/Scorecard PDFs/` and the human-readable `Reference/SCORECARD_MASTER.md` — read that before touching par/SI data. Full manual update chain (PDF → SCORECARD_MASTER → `src/lib/golf-courses-data.js` pills text → any blog content mentioning that par): use the `/scorecard-update` skill.
+**Par / SI / tee data now sync from the MMG tools scorecard pipeline.** Source of truth remains the official club PDFs in Drive `Reference/Scorecards/Scorecard PDFs/` plus the human-readable `Reference/SCORECARD_MASTER.md`. Run `C:\Users\andyg\Desktop\cursor\mmg-tools\.\mmg.ps1 scorecards` to refresh `src/lib/scorecard-data.js` from that master. Course-listing pills and any editorial/blog copy that mention par or length are still manual surfaces and should be checked separately. For the full manual chain (PDF → SCORECARD_MASTER → generated scorecard data → `src/lib/golf-courses-data.js` pills text → any blog content mentioning that par), use the `/scorecard-update` skill.
 
 ## Course pricing data — sync chain
 
