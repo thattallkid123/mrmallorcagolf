@@ -151,18 +151,9 @@ export default function GolfCoursesView({ locale = 'en', content }) {
           </div>
         </header>
 
-        {locale === 'en' ? (
+        {content.ui?.toolCta ? (
           <section style={{ background: 'var(--cream)', padding: 'clamp(28px, 5vw, 52px) clamp(20px, 5vw, 60px)' }}>
-            <ToolPlacementCta
-              tool={{
-                eyebrow: 'Shortcut',
-                title: 'Want a shortlist instead of reading all 24 course reviews?',
-                body: 'Use the course selector if you know your handicap, budget, base, and trip style. It will narrow the island down before you start comparing tee times.',
-                href: '/tools/course-selector',
-                cta: 'Find my courses',
-              }}
-              dark
-            />
+            <ToolPlacementCta tool={content.ui.toolCta} dark />
           </section>
         ) : null}
 

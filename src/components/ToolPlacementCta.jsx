@@ -41,6 +41,7 @@ export default function ToolPlacementCta({
 }) {
   const resolvedTool = typeof tool === 'string' ? DEFAULT_TOOLS[tool] : tool
   if (!resolvedTool) return null
+  const helperNote = resolvedTool.note || 'No email needed to use the tool. Only enter it if you want the result sent to you.'
 
   return (
     <aside
@@ -55,7 +56,7 @@ export default function ToolPlacementCta({
         <Link href={resolvedTool.href} className="tool-placement-cta__button">
           {resolvedTool.cta}
         </Link>
-        <p>No email needed to use the tool. Only enter it if you want the result sent to you.</p>
+        <p>{helperNote}</p>
       </div>
     </aside>
   )

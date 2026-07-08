@@ -1,4 +1,10 @@
-import { reviewRating as REVIEW_RATING, reviewCount as REVIEW_COUNT, reviewUrl as REVIEW_URL } from '../data/site-social-proof.json' with { type: 'json' }
+import siteSocialProof from '../data/site-social-proof.json' with { type: 'json' }
+
+const {
+  reviewRating: REVIEW_RATING,
+  reviewCount: REVIEW_COUNT,
+  reviewUrl: REVIEW_URL,
+} = siteSocialProof
 
 function Stars({ rating = 5, size = 14 }) {
   const full = Math.floor(rating)

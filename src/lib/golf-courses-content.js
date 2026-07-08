@@ -270,6 +270,65 @@ const GOLF_COURSES_HERO_LEADS = {
     '如果您还在决定先打哪座球场，就从这里开始。使用筛选器按地区、价格和难度缩小范围，然后把您的日期、差点和酒店区域发给我，我会帮您锁定最合适的几个选项。',
 }
 
+const GOLF_COURSE_TOOL_CTA = {
+  en: {
+    eyebrow: 'Shortcut',
+    title: 'Want a shortlist instead of reading all 24 course reviews?',
+    body: 'Use the course selector if you know your handicap, budget, base, and trip style. It will narrow the island down before you start comparing tee times.',
+    href: '/tools/course-selector',
+    cta: 'Find my courses',
+    note: 'No email needed to use the tool. Only enter it if you want the result sent to you.',
+  },
+  de: {
+    eyebrow: 'Kurzweg',
+    title: 'Lieber erst eine Shortlist statt alle 24 Platzreviews zu lesen?',
+    body: 'Nutzen Sie den Course Selector, wenn Sie Handicap, Budget, Basis und Reisestil schon kennen. Er grenzt die Insel ein, bevor Sie Tee Times vergleichen.',
+    href: '/tools/course-selector',
+    cta: 'Meine Plaetze finden',
+    note: 'Sie brauchen keine E-Mail, um das Tool zu nutzen. Geben Sie sie nur ein, wenn Sie das Ergebnis zugeschickt haben moechten.',
+  },
+  es: {
+    eyebrow: 'Atajo',
+    title: 'Prefiere una lista corta antes de leer las 24 resenas?',
+    body: 'Use el selector de campos si ya conoce su handicap, presupuesto, base y estilo de viaje. Reducira la isla antes de empezar a comparar salidas.',
+    href: '/tools/course-selector',
+    cta: 'Encontrar mis campos',
+    note: 'No necesita email para usar la herramienta. Solo introduzcalo si quiere que le envien el resultado.',
+  },
+  fr: {
+    eyebrow: 'Raccourci',
+    title: 'Vous preferez une short-list avant de lire les 24 avis ?',
+    body: 'Utilisez le selecteur de parcours si vous connaissez deja votre index, budget, base et style de sejour. Il reduira l ile avant meme de comparer les departs.',
+    href: '/tools/course-selector',
+    cta: 'Trouver mes parcours',
+    note: 'Aucun email n est necessaire pour utiliser l outil. Saisissez-le seulement si vous voulez recevoir le resultat.',
+  },
+  nl: {
+    eyebrow: 'Snelkoppeling',
+    title: 'Liever eerst een shortlist dan alle 24 reviews lezen?',
+    body: 'Gebruik de course selector als u uw handicap, budget, uitvalsbasis en tripstijl al weet. Daarmee verkleint u de keuze voordat u starttijden gaat vergelijken.',
+    href: '/tools/course-selector',
+    cta: 'Mijn banen vinden',
+    note: 'U hebt geen e-mail nodig om de tool te gebruiken. Vul die alleen in als u het resultaat toegestuurd wilt krijgen.',
+  },
+  sv: {
+    eyebrow: 'Genvag',
+    title: 'Vill du hellre ha en kortlista an lasa alla 24 recensioner?',
+    body: 'Anvand course selector om du redan vet handicap, budget, bas och resstil. Den smalnar av on innan du borjar jamfora starttider.',
+    href: '/tools/course-selector',
+    cta: 'Hitta mina banor',
+    note: 'Du behover ingen e-post for att anvanda verktyget. Fyll bara i den om du vill fa resultatet skickat till dig.',
+  },
+  zh: {
+    eyebrow: '\u5feb\u6377\u5165\u53e3',
+    title: '\u60f3\u5148\u62ff\u5230 shortlist\uff0c\u800c\u4e0d\u662f\u5148\u8bfb\u5b8c 24 \u7bc7\u7403\u573a\u8bc4\u6d4b\uff1f',
+    body: '\u5982\u679c\u60a8\u5df2\u7ecf\u77e5\u9053\u81ea\u5df1\u7684\u5dee\u70b9\u3001\u9884\u7b97\u3001\u843d\u811a\u533a\u57df\u548c\u65c5\u884c\u98ce\u683c\uff0c\u53ef\u4ee5\u5148\u7528\u7403\u573a\u7b5b\u9009\u5de5\u5177\u3002\u5b83\u4f1a\u5728\u60a8\u6bd4\u8f83\u5f00\u7403\u65f6\u95f4\u524d\u5148\u5e2e\u60a8\u7f29\u5c0f\u8303\u56f4\u3002',
+    href: '/tools/course-selector',
+    cta: '\u5e2e\u6211\u627e\u7403\u573a',
+    note: '\u4f7f\u7528\u8fd9\u4e2a\u5de5\u5177\u4e0d\u9700\u8981\u586b\u5199\u90ae\u7bb1\u3002\u53ea\u6709\u5f53\u60a8\u5e0c\u671b\u628a\u7ed3\u679c\u53d1\u9001\u7ed9\u81ea\u5df1\u65f6\u624d\u9700\u8981\u586b\u5199\u3002',
+  },
+}
+
 export function getGolfCoursesContent(locale = 'en') {
   const content = GOLF_COURSES_CONTENT[locale] || GOLF_COURSES_CONTENT.en
 
@@ -278,6 +337,10 @@ export function getGolfCoursesContent(locale = 'en') {
     hero: {
       ...content.hero,
       lead: content.hero?.lead || GOLF_COURSES_HERO_LEADS[locale] || GOLF_COURSES_CONTENT.en.hero.lead,
+    },
+    ui: {
+      ...content.ui,
+      toolCta: GOLF_COURSE_TOOL_CTA[locale] || GOLF_COURSE_TOOL_CTA.en,
     },
   }
 }
