@@ -32,7 +32,7 @@ export const GOLF_COURSES_CONTENT = {
       sidebarP: 'Private day, everything arranged and a course chosen for what would be best for you.',
       sidebarBtn: 'Get in touch →',
       explorerIntro:
-        'Start with region, price, and difficulty to narrow the courses down fast. Each card highlights the key things to know before you book.',
+        'Start with region, price, and difficulty to narrow the courses down fast. Each card shows price, difficulty, rating, and any dynamic pricing or handicap requirement before booking.',
       ctaEyebrow: 'Narrowed it down?',
       ctaH2: 'Tell Andy the trip details and get a proper course recommendation back.',
       ctaP: "Send your dates, handicap, hotel area, and the two or three courses you are considering. I'll come back personally within 24 hours with the clearest fit.",
@@ -91,7 +91,7 @@ export const GOLF_COURSES_CONTENT = {
     },
     ui: {
       explorerIntro:
-        'Beginnen Sie mit Region, Preis und Schwierigkeit, um die passenden Plaetze schnell einzugrenzen. Jede Karte zeigt die wichtigsten Punkte vor der Buchung.',
+        'Beginnen Sie mit Region, Preis und Schwierigkeit, um die passenden Plaetze schnell einzugrenzen. Jede Karte zeigt Preis, Schwierigkeit, Bewertung und eventuelle dynamische Preise oder Handicap-Vorgaben vor der Buchung.',
       faqEyebrow: 'Fragen',
       faqTitle: 'Haeufige Fragen',
       faqIntro: 'Ein paar schnelle Antworten, bevor Sie Ihre Auswahl treffen oder buchen.',
@@ -121,7 +121,7 @@ export const GOLF_COURSES_CONTENT = {
     },
     ui: {
       explorerIntro:
-        'Empiece por zona, precio y dificultad para reducir los campos rapidamente. Cada ficha destaca lo mas importante antes de reservar.',
+        'Empiece por zona, precio y dificultad para reducir los campos rapidamente. Cada ficha muestra precio, dificultad, valoracion y cualquier tarifa dinamica o requisito de handicap antes de reservar.',
       faqEyebrow: 'Preguntas',
       faqTitle: 'Preguntas frecuentes',
       faqIntro: 'Respuestas rapidas antes de hacer su lista corta o reservar.',
@@ -151,7 +151,7 @@ export const GOLF_COURSES_CONTENT = {
     },
     ui: {
       explorerIntro:
-        'Commencez par la region, le prix et la difficulte pour reduire rapidement les choix. Chaque fiche met en avant l essentiel avant de reserver.',
+        'Commencez par la region, le prix et la difficulte pour reduire rapidement les choix. Chaque fiche montre le prix, la difficulte, la note et tout tarif dynamique ou exigence de handicap avant de reserver.',
       faqEyebrow: 'Questions',
       faqTitle: 'Questions frequentes',
       faqIntro: 'Quelques reponses rapides avant de faire votre short-list ou de reserver.',
@@ -181,7 +181,7 @@ export const GOLF_COURSES_CONTENT = {
     },
     ui: {
       explorerIntro:
-        'Begin met regio, prijs en moeilijkheid om de banen snel terug te brengen tot de juiste opties. Elke kaart laat zien wat u voor het boeken moet weten.',
+        'Begin met regio, prijs en moeilijkheid om de banen snel terug te brengen tot de juiste opties. Elke kaart toont prijs, moeilijkheid, beoordeling en eventuele dynamische prijzen of handicapeisen voor het boeken.',
       faqEyebrow: 'Vragen',
       faqTitle: 'Veelgestelde vragen',
       faqIntro: 'Snelle antwoorden voordat u een shortlist maakt of boekt.',
@@ -211,7 +211,7 @@ export const GOLF_COURSES_CONTENT = {
     },
     ui: {
       explorerIntro:
-        'Borja med region, pris och svarighetsgrad for att smalna av banorna snabbt. Varje kort lyfter fram det viktigaste att veta fore bokning.',
+        'Borja med region, pris och svarighetsgrad for att smalna av banorna snabbt. Varje kort visar pris, svarighetsgrad, betyg och eventuell dynamisk prissattning eller handicapkrav fore bokning.',
       faqEyebrow: 'Fragor',
       faqTitle: 'Vanliga fragor',
       faqIntro: 'Nagra snabba svar innan du gor din kortlista eller bokar.',
@@ -241,7 +241,7 @@ export const GOLF_COURSES_CONTENT = {
     },
     ui: {
       explorerIntro:
-        '先按地区、价格和难度筛选，这样可以更快缩小到合适的球场。每张卡片都会标出预订前最该知道的重点。',
+        '先按地区、价格和难度筛选，这样可以更快缩小到合适的球场。每张卡片都会标出价格、难度、评分，以及预订前要注意的动态定价或差点要求。',
       faqEyebrow: '问题',
       faqTitle: '常见问题',
       faqIntro: '在您列出 shortlist 或预订之前，先看几个简短答案。',
