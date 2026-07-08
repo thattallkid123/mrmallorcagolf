@@ -5430,78 +5430,100 @@ export const SCORECARD_DATA = {
         9
       ]
     ],
-    "teeVerification": "verified_pdf_text",
-    "teeNotes": [],
+    "teeVerification": "verified_pdf_manual",
+    "teeNotes": [
+      "Values manually transcribed from public course scorecard or official handicap source images.",
+      "Manual transcription from the published Reserva Rotana handicap calculator image for active tee rating, slope, and total length values.",
+      "The public source publishes lengths in yards for this 9-hole course. Stored metre totals and hole lengths are converted from the yard figures so the master remains metre-first."
+    ],
     "tees": [
       {
         "name": "white_m",
         "label": "White M",
-        "totalLengthMeters": 2815,
-        "totalLengthYards": 3079,
-        "courseRating": 70.7,
+        "totalLengthMeters": 2574,
+        "totalLengthYards": 2815,
+        "courseRating": 35.4,
         "slope": 121,
-        "outLengthMeters": null,
-        "outLengthYards": null,
+        "outLengthMeters": 2574,
+        "outLengthYards": 2815,
         "inLengthMeters": null,
         "inLengthYards": null,
         "holeLengthsMeters": [
+          311,
+          165,
+          402,
+          288,
+          270,
+          320,
+          347,
+          375,
+          96
+        ],
+        "holeLengthsYards": [
           340,
           180,
           440,
           315,
           295,
           350,
-          380,
+          379,
           410,
           105
         ],
-        "holeLengthsYards": [
-          372,
-          197,
-          481,
-          344,
-          323,
-          383,
-          416,
-          448,
-          115
+        "ratingVariants": [
+          {
+            "gender": "men",
+            "holes": 9,
+            "courseRating": 35.4,
+            "slope": 121,
+            "par": 36
+          }
         ],
-        "source": "pdf"
+        "source": "pdf_manual"
       },
       {
         "name": "red_w",
         "label": "Red W",
-        "totalLengthMeters": 2500,
-        "totalLengthYards": 2734,
-        "courseRating": 67.1,
+        "totalLengthMeters": 2286,
+        "totalLengthYards": 2500,
+        "courseRating": 33.6,
         "slope": 113,
-        "outLengthMeters": null,
-        "outLengthYards": null,
+        "outLengthMeters": 2286,
+        "outLengthYards": 2500,
         "inLengthMeters": null,
         "inLengthYards": null,
         "holeLengthsMeters": [
+          279,
+          155,
+          311,
+          224,
+          265,
+          315,
+          329,
+          329,
+          79
+        ],
+        "holeLengthsYards": [
           305,
           170,
           340,
           245,
           290,
-          345,
+          344,
           360,
           360,
-          85
+          86
         ],
-        "holeLengthsYards": [
-          334,
-          186,
-          372,
-          268,
-          317,
-          377,
-          394,
-          394,
-          93
+        "ratingVariants": [
+          {
+            "gender": "women",
+            "holes": 9,
+            "courseRating": 33.6,
+            "slope": 113,
+            "par": 36
+          }
         ],
-        "source": "pdf"
+        "source": "pdf_manual"
       }
     ]
   },

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { buildLocalePath } from '../../../lib/site'
 import { getGolfCoursesContent } from '../../../lib/golf-courses-content'
 import { GOLF_COURSE_DATA, COURSE_HANDICAP } from '../../../lib/golf-courses-data'
+import { getScorecardByCourseName, getScorecardTees } from '../../../lib/scorecard-data'
 import {
   GOLF_COURSE_TRANSLATIONS,
   getGolfCourseUiTranslations,
@@ -200,8 +201,45 @@ function buildPricePill(course) {
   return `${dynamicPrefix}Peak \u20ac${meta.peakPrice}`
 }
 
+const SCORECARD_TEE_DISPLAY_ORDER = ['yellow', 'white', 'standard', 'green', 'blue', 'red', 'black', 'pink']
+const SCORECARD_TEE_DISPLAY_BY_COURSE = {
+  'Reserva Rotana': ['white_m', 'red_w'],
+}
+
+function formatMeters(value) {
+  if (!Number.isFinite(value)) return null
+  return new Intl.NumberFormat('en-GB').format(value)
+}
+
+function getPreferredScorecardTee(courseName) {
+  const tees = getScorecardTees(courseName)
+  if (!tees.length) return null
+
+  const preferredNames = SCORECARD_TEE_DISPLAY_BY_COURSE[courseName] || SCORECARD_TEE_DISPLAY_ORDER
+  for (const preferredName of preferredNames) {
+    const match = tees.find((tee) => tee.name === preferredName)
+    if (match) return match
+  }
+
+  return tees[0]
+}
+
+function buildScorecardFactPill(course) {
+  const scorecard = getScorecardByCourseName(course.name)
+  const fallback = course.pills[1]
+  if (!scorecard) return fallback
+
+  const tee = getPreferredScorecardTee(course.name)
+  const lengthMeters = tee?.totalLengthMeters
+  if (!Number.isFinite(scorecard.par) || !Number.isFinite(lengthMeters)) return fallback
+
+  const teeLabel = tee?.label && tee.label !== 'Standard' ? `${tee.label} ` : ''
+  return `Par ${scorecard.par} · ${teeLabel}${formatMeters(lengthMeters)}m`
+}
+
 function getDisplayPills(course) {
-  return [buildPricePill(course), ...course.pills.slice(1)]
+  const factualPill = buildScorecardFactPill(course)
+  return [buildPricePill(course), factualPill, ...course.pills.slice(2)]
 }
 
 const HANDICAP_LABELS = {
