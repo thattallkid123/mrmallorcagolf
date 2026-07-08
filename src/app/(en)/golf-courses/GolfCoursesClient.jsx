@@ -214,6 +214,16 @@ const HANDICAP_LABELS = {
   zh: { hcp: 'HCP', certShort: '需证明', men: '男', women: '女', certReq: '需有效差点证明' },
 }
 
+const CERT_ONLY_BADGE_TEXT = {
+  en: 'Cert. required',
+  de: 'Nachw. erforderlich',
+  es: 'Cert. obligatorio',
+  fr: 'Cert. requis',
+  nl: 'Bewijs vereist',
+  sv: 'Intyg kravs',
+  zh: 'éœ€è¯æ˜Ž',
+}
+
 // Builds the minimal handicap badge shown on a course card, or null if the course
 // has no meaningful gate (see COURSE_HANDICAP in golf-courses-data.js). The badge
 // stays terse (e.g. "HCP 28/36"); the full requirement sits in the hover title.
@@ -228,7 +238,7 @@ function buildHandicapBadge(courseName, lang) {
     const aria = `${L.hcp}: ${m} ${L.men} / ${w} ${L.women}${req.cert ? `, ${L.certReq}` : ''}`
     return { text: `${L.hcp} ${m}/${w}`, aria }
   }
-  return { text: L.certShort, aria: L.certReq }
+  return { text: CERT_ONLY_BADGE_TEXT[lang] || CERT_ONLY_BADGE_TEXT.en, aria: L.certReq }
 }
 
 const DEFAULT_SORT_DIRECTIONS = {
