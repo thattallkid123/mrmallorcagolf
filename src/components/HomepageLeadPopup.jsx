@@ -81,17 +81,11 @@ export default function HomepageLeadPopup() {
           <Link href="/tools/course-selector" className="btn btn--gold" onClick={closePopup}>
             Find my courses
           </Link>
-          <a
-            href="/downloads/course-comparison.pdf"
-            target="_blank"
-            rel="noopener"
-            className="btn btn--dark"
-            onClick={closePopup}
-          >
-            Download the PDF chart
-          </a>
+          <Link href="/guides/course-comparison" className="btn btn--dark" onClick={closePopup}>
+            Get the PDF chart
+          </Link>
         </div>
-        <p className="lead-popup__note">Both are free, no sign-up needed. Andy reads every message and replies personally.</p>
+        <p className="lead-popup__note">Both are free. Andy reads every message and replies personally.</p>
       </div>
     </div>
   )

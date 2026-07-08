@@ -14,22 +14,22 @@ const DELIVERY_EMAILS = {
   'cost-guide': {
     subject: 'Your Mallorca golf cost breakdown is ready',
     guideName: 'Mallorca Golf Cost Breakdown 2026',
-    downloadUrl: 'https://mrmallorcagolf.com/downloads/cost-guide.pdf',
+    downloadUrl: 'https://www.mrmallorcagolf.com/downloads/cost-guide.pdf',
   },
   'trip-planner': {
     subject: 'Your 7-day Mallorca golf itinerary is ready',
     guideName: '7-Day Mallorca Golf Itinerary',
-    downloadUrl: 'https://mrmallorcagolf.com/downloads/trip-planner.pdf',
+    downloadUrl: 'https://www.mrmallorcagolf.com/downloads/trip-planner.pdf',
   },
   'beginners-guide': {
     subject: "Your beginner's guide to golf in Mallorca is ready",
     guideName: "Beginner's Guide to Golf in Mallorca",
-    downloadUrl: 'https://mrmallorcagolf.com/downloads/beginners-guide.pdf',
+    downloadUrl: 'https://www.mrmallorcagolf.com/downloads/beginners-guide.pdf',
   },
   'course-comparison': {
     subject: 'Your Mallorca golf course comparison chart is ready',
     guideName: 'Mallorca Golf Course Comparison Chart',
-    downloadUrl: 'https://mrmallorcagolf.com/downloads/course-comparison.pdf',
+    downloadUrl: 'https://www.mrmallorcagolf.com/downloads/course-comparison.pdf',
   },
 }
 
