@@ -1,3 +1,7 @@
+import { GOLF_COURSE_DATA } from './golf-courses-data.js'
+import { getCoursePriceMeta } from './golf-courses-helpers.js'
+import { getScorecardByCourseName } from './scorecard-data.js'
+
 export const GUIDES_CONTENT = {
   en: {
     locale: 'en',
@@ -1078,7 +1082,7 @@ export const GUIDES_CONTENT = {
         intro:
           '帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。',
         readTime: '5分钟',
-        keywords: '山地球场 · 标准杆72 · 约 EUR 110 · 距帕尔马20分钟',
+        keywords: '山地球场 · 标准杆70 · 约 EUR 110 · 距帕尔马20分钟',
       },
 
       {
@@ -1255,8 +1259,70 @@ const SON_ANTEM_WEST_GUIDE_CARDS = {
     intro:
       '距离帕尔马15-20分钟的度假村球场。养护好，环境开阔，球场设计适合很多类型的球手。',
     readTime: '6分钟',
-    keywords: '度假村球场 - 标准杆72 - EUR 90-135 - 距帕尔马15-20分钟',
+    keywords: '度假村球场 - 标准杆70 - EUR 90-135 - 距帕尔马15-20分钟',
   },
+}
+
+const COURSE_REVIEW_SLUGS = new Set([
+  'alcanada-review',
+  'son-gual-review',
+  't-golf-calvia-review',
+  'son-muntaner-review',
+  'santa-ponsa-1-review',
+  'golf-andratx-review',
+  'son-termes-review',
+  'son-antem-west-review',
+])
+
+const GUIDE_PRICE_LABELS = {
+  zh: { currency: 'EUR ' },
+  default: { currency: '\u20ac' },
+}
+
+function getGuideCourseBySlug(slug) {
+  return GOLF_COURSE_DATA.flatMap((region) => region.courses).find((course) => course.reviewSlug === slug) || null
+}
+
+function formatGuidePriceSegment(locale, peakPrice, lowPrice) {
+  const labels = GUIDE_PRICE_LABELS[locale] || GUIDE_PRICE_LABELS.default
+  if (Number.isFinite(lowPrice) && Number.isFinite(peakPrice)) {
+    return `${labels.currency}${lowPrice}-${peakPrice}`
+  }
+  if (Number.isFinite(peakPrice)) {
+    return `${labels.currency}${peakPrice}`
+  }
+  return null
+}
+
+function formatGuideParSegment(locale, par) {
+  if (!Number.isFinite(par)) return null
+  return locale === 'zh' ? `\u6807\u51c6\u6746${par}` : `Par ${par}`
+}
+
+function syncGuideKeywordFacts(locale, guide) {
+  if (!COURSE_REVIEW_SLUGS.has(guide.slug)) return guide
+
+  const course = getGuideCourseBySlug(guide.slug)
+  if (!course) return guide
+
+  const par = getScorecardByCourseName(course.name)?.par
+  const { peakPrice, lowPrice } = getCoursePriceMeta(course)
+  const separator = guide.keywords?.includes(' \u00b7 ') ? ' \u00b7 ' : ' - '
+  const parts = String(guide.keywords || '').split(separator)
+  const nextParts = parts.map((part) => {
+    if (/(?:Par|\u6807\u51c6\u6746|\u6a19\u6e96\u687f)\s*\d+/i.test(part)) {
+      return formatGuideParSegment(locale, par) || part
+    }
+    if (/(?:\u20ac|EUR|â‚¬)/i.test(part)) {
+      return formatGuidePriceSegment(locale, peakPrice, lowPrice) || part
+    }
+    return part
+  })
+
+  return {
+    ...guide,
+    keywords: nextParts.join(separator),
+  }
 }
 
 function insertGuideAfter(guides, card, previousSlug) {
@@ -1274,10 +1340,11 @@ function insertGuideAfter(guides, card, previousSlug) {
 
 export function getGuidesContent(locale = 'en') {
   const content = GUIDES_CONTENT[locale] || GUIDES_CONTENT.en
-  const card = SON_ANTEM_WEST_GUIDE_CARDS[locale] || SON_ANTEM_WEST_GUIDE_CARDS.en
+  const card = syncGuideKeywordFacts(locale, SON_ANTEM_WEST_GUIDE_CARDS[locale] || SON_ANTEM_WEST_GUIDE_CARDS.en)
+  const liveGuides = (content.liveGuides || []).map((guide) => syncGuideKeywordFacts(locale, guide))
 
   return {
     ...content,
-    liveGuides: insertGuideAfter(content.liveGuides, card, 'golf-andratx-review'),
+    liveGuides: insertGuideAfter(liveGuides, card, 'golf-andratx-review'),
   }
 }
