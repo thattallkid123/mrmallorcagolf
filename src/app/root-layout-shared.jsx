@@ -4,6 +4,7 @@ import Script from 'next/script'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
 import { DEFAULT_SOCIAL_IMAGE, getSocialImage } from '../lib/page-metadata.js'
+import siteSocialProof from '../data/site-social-proof.json' with { type: 'json' }
 import IntentTracker from '../components/IntentTracker.jsx'
 import PageViewTracker from '../components/PageViewTracker.jsx'
 import ScrollDepthTracker from '../components/ScrollDepthTracker.jsx'
@@ -147,6 +148,8 @@ function buildPersonSchema(lang) {
 function buildLocalBusinessSchema(lang) {
   const zh = lang.startsWith('zh')
   const socialImage = getSocialImage(zh ? 'zh' : 'en')
+  const ratingValue = Number(siteSocialProof.reviewRating).toFixed(1)
+  const reviewCount = String(siteSocialProof.reviewCount)
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -186,8 +189,8 @@ function buildLocalBusinessSchema(lang) {
     areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: '9',
+      ratingValue,
+      reviewCount,
       bestRating: '5',
       worstRating: '1',
     },
