@@ -1,6 +1,8 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import { getCanonicalCourseDataByName } from '@lib/course-catalog'
+import { resolveCourseAccessName } from '@lib/course-access-data'
 import { COURSE_SELECTOR_T } from '@lib/course-selector-translations'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
@@ -448,6 +450,33 @@ const COURSES = [
   },
 ]
 
+const SELECTOR_CANONICAL_NAME_BY_ID = {
+  'reserva-rotana': 'Reserva Rotana',
+  'vall-dor': "Vall d'Or Golf",
+}
+
+function getCanonicalCourseInfo(course) {
+  const canonicalName =
+    SELECTOR_CANONICAL_NAME_BY_ID[course.id] ||
+    resolveCourseAccessName(course.name) ||
+    course.name
+  return getCanonicalCourseDataByName(canonicalName)
+}
+
+const SELECTOR_COURSES = COURSES.map((course) => {
+  const canonical = getCanonicalCourseInfo(course)
+  return {
+    ...course,
+    canonicalName: canonical?.canonicalName || course.name,
+    displayName: canonical?.publicName || course.name,
+    coursePar: canonical?.par ?? null,
+    holeCount: canonical?.holeCount ?? null,
+    accessRequirement: canonical?.access?.requirementLabel || null,
+    accessType: canonical?.access?.accessTypeLabel || null,
+    handicapRequired: canonical?.access?.handicapRequired ?? !!course.handicapReq,
+  }
+})
+
 /* =====================================================================
    QUESTIONS + BRANCHING LOGIC
 ===================================================================== */
@@ -561,12 +590,12 @@ function selectorAnswerSummary(answers) {
 
 function selectorShortlistSummary(courses) {
   return courses
-    .map((course, index) => `${index + 1}. ${course.name} - ${course.areaLabel} - ${course.greenFee}`)
+    .map((course, index) => `${index + 1}. ${course.displayName || course.name} - ${course.areaLabel} - ${course.greenFee}`)
     .join(' | ')
 }
 
 function selectorShortlistNames(courses) {
-  return courses.map(course => course.name).join(', ')
+  return courses.map(course => course.displayName || course.name).join(', ')
 }
 
 /* =====================================================================
@@ -618,6 +647,15 @@ function personalMatchLine(c, rank, answers, t) {
   const prefix = ml.prefix[rank] || 'Recommended'
   if (!reasons.length) return `${prefix}: ${ml.fallback}`
   return `${prefix}: ${reasons.join(', ')}.`
+}
+
+function getCourseFactsLine(course) {
+  const facts = []
+  if (Number.isFinite(course.coursePar)) facts.push(`Par ${course.coursePar}`)
+  if (Number.isFinite(course.holeCount)) facts.push(`${course.holeCount} holes`)
+  if (course.accessRequirement) facts.push(course.accessRequirement)
+  if (course.accessType) facts.push(course.accessType)
+  return facts.join(' · ')
 }
 
 export default function CourseSelectorToolClient({ lang = 'en' }) {
@@ -711,7 +749,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         finalAns[ques.id] = ques.autoValue
       }
     })
-    const ranked = COURSES
+    const ranked = SELECTOR_COURSES
       .map(c => ({ c, s: scoreCourse(c, finalAns) }))
       .sort((a, b) => b.s - a.s)
       .slice(0, 3)
@@ -756,7 +794,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     }).catch(() => {})
 
     const topCoursesForEmail = topCourses.map(c => ({
-      name: c.name,
+      name: c.displayName || c.name,
       bestFor: c.bestFor,
       areaLabel: c.areaLabel,
       diff10: c.diff10,
@@ -814,8 +852,8 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     scrollToTop()
   }
 
-  const compareA = compareSelection.length >= 1 ? COURSES.find(c => c.id === compareSelection[0]) : null
-  const compareB = compareSelection.length >= 2 ? COURSES.find(c => c.id === compareSelection[1]) : null
+  const compareA = compareSelection.length >= 1 ? SELECTOR_COURSES.find(c => c.id === compareSelection[0]) : null
+  const compareB = compareSelection.length >= 2 ? SELECTOR_COURSES.find(c => c.id === compareSelection[1]) : null
 
   return (
     <div ref={containerRef}>
@@ -868,7 +906,8 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-cc-match-line { font-family:'Jost',sans-serif; font-size:.8rem; color:rgba(247,244,239,0.78); line-height:1.55; border-top:1px solid rgba(255,255,255,.14); padding-top:10px; }
         .cst-cc-body { padding:22px 24px 26px; }
         .cst-cc-bestfor { font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:#B8973C; font-weight:500; margin-bottom:10px; font-family:'Jost',sans-serif; }
-        .cst-cc-why { font-size:.93rem; line-height:1.7; color:#2C2A27; margin-bottom:18px; }
+        .cst-cc-why { font-size:.93rem; line-height:1.7; color:#2C2A27; margin-bottom:12px; }
+        .cst-cc-facts { font-size:.78rem; line-height:1.6; color:#8A7F74; margin-bottom:18px; font-family:'Jost',sans-serif; letter-spacing:.03em; }
         .cst-cc-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px 18px; margin-bottom:18px; border-top:1px solid #EDE9E1; border-bottom:1px solid #EDE9E1; padding:14px 0; }
         @media(min-width:560px) { .cst-cc-grid { grid-template-columns:1fr 1fr 1fr 1fr; } }
         .cst-cc-stat .k { font-size:.66rem; text-transform:uppercase; letter-spacing:.12em; color:#8A7F74; font-family:'Jost',sans-serif; }
@@ -989,12 +1028,15 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
               <div key={c.id} className="cst-course-card">
                 <div className="cst-cc-banner" style={COURSE_IMGS[c.id] ? { backgroundImage: `linear-gradient(120deg, rgba(26,25,22,0.82), rgba(45,74,62,0.75)), url(${COURSE_IMGS[c.id]})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}>
                   <div className="cst-cc-rank">{t.results.ranks[i]}</div>
-                  <h3>{c.name}</h3>
+                  <h3>{c.displayName || c.name}</h3>
                   <div className="cst-cc-match-line">{personalMatchLine(c, i, answers, t)}</div>
                 </div>
                 <div className="cst-cc-body">
                   <div className="cst-cc-bestfor">{t.results.bestFor} {c.bestFor}</div>
                   <p className="cst-cc-why">{c.why}</p>
+                  {getCourseFactsLine(c) && (
+                    <div className="cst-cc-facts">{getCourseFactsLine(c)}</div>
+                  )}
                   <div className="cst-cc-grid">
                     <div className="cst-cc-stat"><div className="k">{t.results.stats.difficulty}</div><div className="v">{DIFF_LABEL(c.diff10)}</div></div>
                     <div className="cst-cc-stat"><div className="k">{t.results.stats.location}</div><div className="v">{c.areaLabel}</div></div>
@@ -1004,8 +1046,11 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
                   {c.membersOnly && (
                     <div className="cst-cc-members">Members-only course. Andy arranges access for clients — mention it when you enquire.</div>
                   )}
-                  {c.handicapReq && (
-                    <div className="cst-cc-hcap">{t.results.handicapNote}</div>
+                  {c.handicapRequired && (
+                    <div className="cst-cc-hcap">
+                      {t.results.handicapNote}
+                      {c.accessRequirement ? ` (${c.accessRequirement})` : ''}
+                    </div>
                   )}
                   <div className="cst-cc-andy">
                     <strong>{t.results.andySays}</strong>
@@ -1042,14 +1087,17 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
               <div style={{ marginTop:'42px' }}>
                 <div className="cst-results-head">
                   <span className="cst-eyebrow-sm">{t.results.compareSection.eyebrow}</span>
-                  <h2 style={{ fontSize:'1.6rem' }}>{compareA.name} / {compareB.name}</h2>
+                  <h2 style={{ fontSize:'1.6rem' }}>{compareA.displayName || compareA.name} / {compareB.displayName || compareB.name}</h2>
                 </div>
                 <div className="cst-compare-wrap">
                   <table className="cst-compare">
                     <tbody>
-                      <tr><th></th><th>{compareA.name}</th><th>{compareB.name}</th></tr>
+                      <tr><th></th><th>{compareA.displayName || compareA.name}</th><th>{compareB.displayName || compareB.name}</th></tr>
                       <tr><td>{t.results.stats.difficulty}</td><td>{DIFF_LABEL(compareA.diff10)}</td><td>{DIFF_LABEL(compareB.diff10)}</td></tr>
                       <tr><td>{t.results.stats.location}</td><td>{compareA.areaLabel}</td><td>{compareB.areaLabel}</td></tr>
+                      <tr><td>Holes</td><td>{compareA.holeCount || '–'}</td><td>{compareB.holeCount || '–'}</td></tr>
+                      <tr><td>Par</td><td>{compareA.coursePar || '–'}</td><td>{compareB.coursePar || '–'}</td></tr>
+                      <tr><td>Access</td><td>{compareA.accessRequirement || compareA.accessType || '–'}</td><td>{compareB.accessRequirement || compareB.accessType || '–'}</td></tr>
                       <tr><td>{t.results.stats.greenFee}</td><td>{compareA.greenFee}</td><td>{compareB.greenFee}</td></tr>
                       <tr><td>Designer</td><td>{compareA.designer || '–'}</td><td>{compareB.designer || '–'}</td></tr>
                       <tr><td>{t.results.compareSection.bestPlayer}</td><td>{compareA.bestPlayer}</td><td>{compareB.bestPlayer}</td></tr>
