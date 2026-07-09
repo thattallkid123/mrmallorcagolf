@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import EmailSignup from '../../../components/EmailSignup'
+import { formatCourseFeeLabel, getCoursePricingByName } from '../../../lib/course-pricing-data'
 import { COURSE_SELECTOR_MAILERLITE_ACTION } from '../../../lib/signup-config'
 
 const QUESTIONS = [
@@ -121,6 +122,14 @@ const COURSES = [
   },
 ]
 
+const SELECTOR_COURSES = COURSES.map((course) => {
+  const pricing = getCoursePricingByName(course.name)
+  return {
+    ...course,
+    fees: pricing ? formatCourseFeeLabel(course.name, { pricing, fallback: course.fees }) : course.fees,
+  }
+})
+
 const INITIAL_ANSWERS = QUESTIONS.reduce((acc, question) => {
   acc[question.id] = question.options[0].value
   return acc
@@ -133,7 +142,7 @@ function scoreCourse(course, answers) {
 }
 
 function getRecommendations(answers) {
-  return COURSES
+  return SELECTOR_COURSES
     .map((course) => ({ ...course, score: scoreCourse(course, answers) }))
     .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
     .slice(0, 5)

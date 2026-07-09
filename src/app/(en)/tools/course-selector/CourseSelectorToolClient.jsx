@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import { getCanonicalCourseDataByName } from '@lib/course-catalog'
 import { resolveCourseAccessName } from '@lib/course-access-data'
+import { formatCourseFeeLabel, getCoursePricingByName } from '@lib/course-pricing-data'
 import { COURSE_SELECTOR_T } from '@lib/course-selector-translations'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
@@ -465,6 +466,13 @@ function getCanonicalCourseInfo(course) {
 
 const SELECTOR_COURSES = COURSES.map((course) => {
   const canonical = getCanonicalCourseInfo(course)
+  const pricingName = canonical?.canonicalName || course.name
+  const pricing = getCoursePricingByName(pricingName)
+  const greenFee =
+    pricing
+      ? formatCourseFeeLabel(pricingName, { pricing, fallback: course.greenFee })
+      : course.greenFee
+
   return {
     ...course,
     canonicalName: canonical?.canonicalName || course.name,
@@ -474,6 +482,7 @@ const SELECTOR_COURSES = COURSES.map((course) => {
     accessRequirement: canonical?.access?.requirementLabel || null,
     accessType: canonical?.access?.accessTypeLabel || null,
     handicapRequired: canonical?.access?.handicapRequired ?? !!course.handicapReq,
+    greenFee,
   }
 })
 
