@@ -1,4 +1,68 @@
-export const GOLF_COURSE_DATA = [
+import { COURSE_HANDICAP, getCourseAccessByName } from './course-access-data.js'
+import { getScorecardByCourseName, getScorecardTees } from './scorecard-data.js'
+
+const SCORECARD_TEE_DISPLAY_ORDER = ['yellow', 'white', 'standard', 'green', 'blue', 'red', 'black', 'pink']
+const SCORECARD_TEE_DISPLAY_BY_COURSE = {
+  'Reserva Rotana': ['white_m', 'red_w'],
+}
+
+function formatMeters(value) {
+  if (!Number.isFinite(value)) return null
+  return new Intl.NumberFormat('en-GB').format(value)
+}
+
+function getPreferredScorecardTee(courseName) {
+  const tees = getScorecardTees(courseName)
+  if (!tees.length) return null
+
+  const preferredNames = SCORECARD_TEE_DISPLAY_BY_COURSE[courseName] || SCORECARD_TEE_DISPLAY_ORDER
+  for (const preferredName of preferredNames) {
+    const match = tees.find((tee) => tee.name === preferredName)
+    if (match) return match
+  }
+
+  return tees[0]
+}
+
+function buildScorecardFactPill(course) {
+  const scorecard = getScorecardByCourseName(course.name)
+  const fallback = course.pills[1]
+  if (!scorecard) return fallback
+
+  const tee = getPreferredScorecardTee(course.name)
+  const lengthMeters = tee?.totalLengthMeters
+  if (!Number.isFinite(scorecard.par) || !Number.isFinite(lengthMeters)) return fallback
+
+  const teeLabel = tee?.label && tee.label !== 'Standard' ? `${tee.label} ` : ''
+  return `Par ${scorecard.par} · ${teeLabel}${formatMeters(lengthMeters)}m`
+}
+
+function buildAccessFactPill(course) {
+  const access = getCourseAccessByName(course.name)
+  if (!access) return null
+
+  if (access.accessType === 'hotel_guests') return 'Hotel guests only'
+  if (access.accessType === 'members_arranged') return 'Members + arranged access'
+  if (access.holes === 9) return '9 holes'
+  return null
+}
+
+function isRedundantFactualPill(pill) {
+  return /par\s+\d+|handicap required|handicap max|public access|members\s*\/\s*guests only|private course|9 holes/i.test(pill)
+}
+
+function normalizeCourse(course) {
+  const factualPill = buildScorecardFactPill(course)
+  const accessPill = buildAccessFactPill(course)
+  const retainedPills = course.pills.slice(2).filter((pill) => !isRedundantFactualPill(pill))
+
+  return {
+    ...course,
+    pills: [course.pills[0], factualPill, accessPill, ...retainedPills].filter(Boolean),
+  }
+}
+
+const RAW_GOLF_COURSE_DATA = [
   {
     region: 'palma',
     courses: [
@@ -50,27 +114,14 @@ export const GOLF_COURSE_DATA = [
   },
 ]
 
+export const GOLF_COURSE_DATA = RAW_GOLF_COURSE_DATA.map((region) => ({
+  ...region,
+  courses: region.courses.map(normalizeCourse),
+}))
+
 // Handicap requirements per course, sourced from MMG_ENCYCLOPAEDIA_DATA_MASTER.md (access rules).
 // Only courses with a MEANINGFUL gate are listed: a valid handicap certificate is required (cert),
 // and/or the men's maximum handicap is below 36 (max). Courses that accept up to HCP 36 with no
 // certificate (the majority) are intentionally omitted so cards are not cluttered with a non-gate.
 // Keyed by the exact `name` used in GOLF_COURSE_DATA above.
-// m = men's max handicap, w = women's max handicap, cert = valid certificate required.
-// Courses with no meaningful gate (accept up to HCP 36, no certificate) are omitted.
-export const COURSE_HANDICAP = {
-  'Golf Son Gual': { m: 33, w: 35, cert: true },
-  'Golf Son Vida': { cert: true },
-  'T Golf Palma (Puntiró)': { m: 34, w: 36 },
-  'Golf Son Termes': { cert: true },
-  'Golf Santa Ponsa 1': { m: 28, w: 36, cert: true },
-  'Golf Santa Ponsa 2': { m: 28, w: 36 },
-  'Golf Santa Ponsa 3': { m: 28, w: 36 },
-  'T Golf Calvià (Poniente)': { m: 28, w: 34 },
-  'Golf de Andratx': { m: 28, w: 36, cert: true },
-  'Golf Son Antem West': { m: 27, w: 35 },
-  'Capdepera Golf': { cert: true },
-  'Pula Golf': { m: 34, w: 36 },
-  'Golf Club Son Servera': { cert: true },
-  'Reserva Rotana': { cert: true },
-  'Club de Golf Alcanada': { m: 33, w: 35 },
-}
+export { COURSE_HANDICAP }

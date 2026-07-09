@@ -4,13 +4,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { buildLocalePath } from '../../../lib/site'
 import { getGolfCoursesContent } from '../../../lib/golf-courses-content'
-import { GOLF_COURSE_DATA, COURSE_HANDICAP } from '../../../lib/golf-courses-data'
-import { getScorecardByCourseName, getScorecardTees } from '../../../lib/scorecard-data'
+import { GOLF_COURSE_DATA } from '../../../lib/golf-courses-data'
+import { getCourseAccessByName } from '../../../lib/course-access-data'
 import {
   GOLF_COURSE_TRANSLATIONS,
   getGolfCourseUiTranslations,
   getGolfCourseRegions,
-} from '../../../lib/golf-courses-translations'
+} from '@lib/golf-courses-translations.js'
 import {
   getCoursePriceMeta,
   slugifyCourseName,
@@ -237,9 +237,22 @@ function buildScorecardFactPill(course) {
   return `Par ${scorecard.par} · ${teeLabel}${formatMeters(lengthMeters)}m`
 }
 
+function buildAccessFactPill(course) {
+  const access = getCourseAccessByName(course.name)
+  if (!access) return null
+
+  if (access.accessType === 'hotel_guests') return 'Hotel guests only'
+  if (access.accessType === 'members_arranged') return 'Members + arranged access'
+  if (access.holes === 9) return '9 holes'
+  return null
+}
+
+function isRedundantFactualPill(pill) {
+  return /handicap required|public access|members\s*\/\s*guests only|private course|9 holes/i.test(pill)
+}
+
 function getDisplayPills(course) {
-  const factualPill = buildScorecardFactPill(course)
-  return [buildPricePill(course), factualPill, ...course.pills.slice(2)]
+  return [buildPricePill(course), ...course.pills.slice(1)].filter(Boolean)
 }
 
 const HANDICAP_LABELS = {
@@ -262,19 +275,22 @@ const CERT_ONLY_BADGE_TEXT = {
   zh: 'éœ€è¯æ˜Ž',
 }
 
-// Builds the minimal handicap badge shown on a course card, or null if the course
-// has no meaningful gate (see COURSE_HANDICAP in golf-courses-data.js). The badge
-// stays terse (e.g. "HCP 28/36"); the full requirement sits in the hover title.
+// Builds the minimal handicap badge shown on a course card from the canonical
+// course-access dataset. The badge stays terse (e.g. "HCP 28/36"); the full
+// requirement sits in the hover title.
 function buildHandicapBadge(courseName, lang) {
-  const req = COURSE_HANDICAP[courseName]
-  if (!req) return null
+  const req = getCourseAccessByName(courseName)
+  if (!req || (!req.handicapRequired && !req.certificateRequired)) return null
   const L = HANDICAP_LABELS[lang] || HANDICAP_LABELS.en
-  const hasNums = typeof req.m === 'number' || typeof req.w === 'number'
+  const hasNums = Number.isFinite(req.handicapMen) || Number.isFinite(req.handicapWomen)
   if (hasNums) {
-    const m = req.m ?? req.w
-    const w = req.w ?? req.m
-    const aria = `${L.hcp}: ${m} ${L.men} / ${w} ${L.women}${req.cert ? `, ${L.certReq}` : ''}`
-    return { text: `${L.hcp} ${m}/${w}`, aria }
+    const m = req.handicapMen ?? req.handicapWomen
+    const w = req.handicapWomen ?? req.handicapMen
+    const sameLimits = m === w
+    const aria = sameLimits
+      ? `${L.hcp}: ${m}${req.certificateRequired ? `, ${L.certReq}` : ''}`
+      : `${L.hcp}: ${m} ${L.men} / ${w} ${L.women}${req.certificateRequired ? `, ${L.certReq}` : ''}`
+    return { text: sameLimits ? `${L.hcp} ${m}` : `${L.hcp} ${m}/${w}`, aria }
   }
   return { text: CERT_ONLY_BADGE_TEXT[lang] || CERT_ONLY_BADGE_TEXT.en, aria: L.certReq }
 }
