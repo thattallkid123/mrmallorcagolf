@@ -34,7 +34,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {
           type: 'paragraph',
           text:
-            '€14 für 9 Löcher oder €22 für 18 Löcher (Schlägermiete extra). Das Arabella Pitch & Putt in Palma ist ein richtiges Kurzplatz-Setup am unteren Ende der Skala. Sehr gut für Anfänger, entspannt und ohne Druck, dazu praktisch direkt neben den größeren Arabella-Plätzen.',
+            '€20 für 9 Löcher oder €30 für 18 Löcher (Schlägermiete extra). Das Arabella Pitch & Putt in Palma ist ein richtiges Kurzplatz-Setup am unteren Ende der Skala. Sehr gut für Anfänger, entspannt und ohne Druck, dazu praktisch direkt neben den größeren Arabella-Plätzen.',
         },
         {
           type: 'image',
@@ -171,7 +171,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {
           type: 'paragraph',
           text:
-            '€14 por 9 hoyos o €22 por 18 hoyos (alquiler de palos aparte). El Arabella Pitch & Putt de Palma es un recorrido corto de verdad dentro del tramo más económico. Muy bueno para principiantes, con poco estrés y además muy cerca de sus campos grandes del mismo complejo.',
+            '€20 por 9 hoyos o €30 por 18 hoyos (alquiler de palos aparte). El Arabella Pitch & Putt de Palma es un recorrido corto de verdad dentro del tramo más económico. Muy bueno para principiantes, con poco estrés y además muy cerca de sus campos grandes del mismo complejo.',
         },
         {
           type: 'image',
@@ -301,7 +301,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Le golf à Majorque peut être franchement abordable ou vraiment coûteux. L\'écart entre les deux est plus grand que ce que la plupart des visiteurs imaginent. Voici le détail honnête pour 2026, donné par quelqu\'un qui joue ici presque toutes les semaines. Comparé à Shanghai, où j\'ai passé onze ans, Majorque offre un excellent rapport qualité-prix. En revanche, les coûts annexes montent vite si l\'on ne planifie pas correctement.' },
         { type: 'heading', text: 'Green fees' },
         { type: 'subheading', text: 'Budget (9 trous, pitch and putt)' },
-        { type: 'paragraph', text: '€14 pour 9 trous ou €22 pour 18 trous (location de clubs en supplément). L\'Arabella Pitch & Putt à Palma est un vrai petit parcours dans le bas de l\'échelle tarifaire. Très bien pour les débutants, avec une ambiance détendue et sans pression, juste à côté des grands parcours Arabella.' },
+        { type: 'paragraph', text: '€20 pour 9 trous ou €30 pour 18 trous (location de clubs en supplément). L\'Arabella Pitch & Putt à Palma est un vrai petit parcours dans le bas de l\'échelle tarifaire. Très bien pour les débutants, avec une ambiance détendue et sans pression, juste à côté des grands parcours Arabella.' },
         { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - parfait pour débuter' },
         { type: 'subheading', text: 'Parcours 18 trous de milieu de gamme' },
         { type: 'paragraph', text: 'Environ €80-145 selon la saison. Son Termes à partir de €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145, Vall d\'Or €85-130. Ce sont de vrais parcours, en bon état, pas des options secondaires. Vérifiez toujours le site du club, car les tarifs évoluent selon la saison.' },
@@ -360,7 +360,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Golf op Mallorca kan echt betaalbaar zijn of behoorlijk prijzig. Het verschil daartussen is groter dan de meeste bezoekers verwachten. Dit is het eerlijke kostenoverzicht voor 2026 van iemand die hier bijna elke week speelt. Vergeleken met Shanghai, waar ik elf jaar werkte, is Mallorca sterk geprijsd. Maar zonder planning lopen de extra kosten alsnog snel op.' },
         { type: 'heading', text: 'Greenfees' },
         { type: 'subheading', text: 'Budget (negen holes, pitch and putt)' },
-        { type: 'paragraph', text: '€14 voor 9 holes of €22 voor 18 holes (clubs huren is apart). De Arabella Pitch & Putt in Palma is een echte korte baan aan de onderkant van de prijsschaal. Prima voor beginners, ontspannen van sfeer en handig dicht bij de grotere Arabella-banen.' },
+        { type: 'paragraph', text: '€20 voor 9 holes of €30 voor 18 holes (clubs huren is apart). De Arabella Pitch & Putt in Palma is een echte korte baan aan de onderkant van de prijsschaal. Prima voor beginners, ontspannen van sfeer en handig dicht bij de grotere Arabella-banen.' },
         { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - ideaal voor beginners' },
         { type: 'subheading', text: '18-holesbanen in het middensegment' },
         { type: 'paragraph', text: 'Ongeveer €80-145 afhankelijk van het seizoen. Son Termes vanaf €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145 en Vall d\'Or €85-130. Dit zijn serieuze golfbanen in goede staat, geen bijzaak. Controleer altijd de website van de baan, want prijzen veranderen per seizoen.' },
@@ -419,7 +419,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: 'Golf på Mallorca kan vara genuint prisvärt eller riktigt dyrt. Spannet mellan de två är större än många besökare tror. Här är den raka kostnadsbilden för 2026 från någon som spelar här nästan varje vecka. Jämfört med Shanghai, där jag arbetade i elva år, ger Mallorca mycket bättre värde. Men utan planering drar extrakostnaderna snabbt iväg.' },
         { type: 'heading', text: 'Greenfee' },
         { type: 'subheading', text: 'Budget (nio hal, pitch and putt)' },
-        { type: 'paragraph', text: '€14 för 9 hål eller €22 för 18 hål (klubbhyra tillkommer). Arabella Pitch & Putt i Palma är en riktig kortbana i den lägre prisnivån. Bra för nybörjare, med låg press och dessutom praktiskt nära de större Arabella-banorna i samma område.' },
+        { type: 'paragraph', text: '€20 för 9 hål eller €30 för 18 hål (klubbhyra tillkommer). Arabella Pitch & Putt i Palma är en riktig kortbana i den lägre prisnivån. Bra för nybörjare, med låg press och dessutom praktiskt nära de större Arabella-banorna i samma område.' },
         { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt - perfekt för nybörjare' },
         { type: 'subheading', text: '18-halsbanor i mellansegmentet' },
         { type: 'paragraph', text: 'Cirka €80-145 beroende på säsong. Son Termes från €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145 och Vall d\'Or €85-130. Det här är riktiga golfbanor i bra skick, inte bara reservval. Kontrollera alltid banans webbplats eftersom priserna ändras med säsongen.' },
@@ -478,7 +478,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         { type: 'paragraph', text: '马略卡打高尔夫，可以非常划算，也可以相当昂贵，价格差比大多数游客想象得更大。这是一份2026年的真实费用说明，来自一个几乎每周都在这里下场的人。和我过去工作了十一年的上海相比，这里的整体性价比其实相当不错，但如果不提前规划，附加成本会一项一项冒出来。' },
         { type: 'heading', text: '果岭费' },
         { type: 'subheading', text: '预算级选择：9洞短杆场 / Pitch & Putt' },
-        { type: 'paragraph', text: '9洞€14，18洞€22（球杆租借另计）。Palma的Arabella Pitch & Putt是真正意义上的短杆场，价格位于最低区间。对初学者很友好，压力小，而且离Arabella那几座大场很近。' },
+        { type: 'paragraph', text: '9洞€20，18洞€30（球杆租借另计）。Palma的Arabella Pitch & Putt是真正意义上的短杆场，价格位于最低区间。对初学者很友好，压力小，而且离Arabella那几座大场很近。' },
         { type: 'image', src: '/images/blog-golf-cost/Arabella Pitch and Putt.webp', alt: 'Arabella Pitch and Putt', containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' }, caption: 'Arabella Pitch & Putt，适合刚开始打球的人' },
         { type: 'subheading', text: '中档18洞球场' },
         { type: 'paragraph', text: '大约€80-145（约¥620-1,130），具体取决于季节。Son Termes从€85起，Bendinat €75-125，Capdepera €85-135，Canyamel €65-145，Son Servera €80-145，Vall d\'Or €85-130。这些都是真正值得打的球场，不是随便凑数的选择。价格会按季节变化，最好直接看球场官网。' },
@@ -2513,7 +2513,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "€14 pour 9 trous ou €22 pour 18 trous (location de clubs en supplément). L'Arabella Pitch & Putt à Palma est un vrai petit parcours dans le bas de l'échelle tarifaire. Très bien pour les débutants, avec une ambiance détendue et sans pression, juste à côté des grands parcours Arabella."
+          "text": "€20 pour 9 trous ou €30 pour 18 trous (location de clubs en supplément). L'Arabella Pitch & Putt à Palma est un vrai petit parcours dans le bas de l'échelle tarifaire. Très bien pour les débutants, avec une ambiance détendue et sans pression, juste à côté des grands parcours Arabella."
         },
         {
           "type": "image",
@@ -2701,7 +2701,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "€14 voor 9 holes of €22 voor 18 holes (clubs huren is apart). De Arabella Pitch & Putt in Palma is een echte korte baan aan de onderkant van de prijsschaal. Prima voor beginners, ontspannen van sfeer en handig dicht bij de grotere Arabella-banen."
+          "text": "€20 voor 9 holes of €30 voor 18 holes (clubs huren is apart). De Arabella Pitch & Putt in Palma is een echte korte baan aan de onderkant van de prijsschaal. Prima voor beginners, ontspannen van sfeer en handig dicht bij de grotere Arabella-banen."
         },
         {
           "type": "image",
@@ -2889,7 +2889,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "€14 för 9 hål eller €22 för 18 hål (klubbhyra tillkommer). Arabella Pitch & Putt i Palma är en riktig kortbana i den lägre prisnivån. Bra för nybörjare, med låg press och dessutom praktiskt nära de större Arabella-banorna i samma område."
+          "text": "€20 för 9 hål eller €30 för 18 hål (klubbhyra tillkommer). Arabella Pitch & Putt i Palma är en riktig kortbana i den lägre prisnivån. Bra för nybörjare, med låg press och dessutom praktiskt nära de större Arabella-banorna i samma område."
         },
         {
           "type": "image",
@@ -3077,7 +3077,7 @@ const REPAIRED_ARTICLE_LOCALES = {
         },
         {
           "type": "paragraph",
-          "text": "9洞€14，18洞€22（球杆租借另计）。Palma的Arabella Pitch & Putt是真正意义上的短杆场，价格位于最低区间。对初学者很友好，压力小，而且离Arabella那几座大场很近。"
+          "text": "9洞€20，18洞€30（球杆租借另计）。Palma的Arabella Pitch & Putt是真正意义上的短杆场，价格位于最低区间。对初学者很友好，压力小，而且离Arabella那几座大场很近。"
         },
         {
           "type": "image",
@@ -6998,4 +6998,3 @@ export function getLocalizedGuideArticleContent(slug, locale) {
 
   return content
 }
-

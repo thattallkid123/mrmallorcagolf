@@ -37,7 +37,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '€14 for 9 holes or €22 for 18 holes at Palma Pitch & Putt (club hire extra), or around €55-65 if you want the cheapest full-size options such as Golf Pollença in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
+          '€20 for 9 holes or €30 for 18 holes at Palma Pitch & Putt (club hire extra), or around €55-65 if you want the cheapest full-size options such as Golf Pollença in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
       },
       {
         type: 'image',
@@ -467,7 +467,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Capdepera Golf', 'Arta', '72', '\u20AC85-135', '7/10', '3.5', 'Strong back nine and standout mountain hole'],
           ['Canyamel Golf', 'Capdepera', '73', '\u20AC65-145', '6/10', '4.0', 'Most photographed, east coast'],
           ['Golf Pollensa', 'Pollensa', '35 (9H)', '\u20AC55-65', '4/10', '3.5', 'Easy warm-up, Tramuntana views'],
-          ['Palma Pitch & Putt', 'Central Palma', '27 (9H)', '\u20AC14-22', '2/10', '3.0', 'Beginners, approach practice'],
+          ['Palma Pitch & Putt', 'Central Palma', '27 (9H)', '\u20AC20-30', '2/10', '3.0', 'Beginners, approach practice'],
           ['Reserva Rotana', 'Manacor', '36 (9H)', 'Hotel guests only', '6/10', '3.5', 'Stay-and-play, private estate'],
         ],
       },
