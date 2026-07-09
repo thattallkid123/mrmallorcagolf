@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
+import { getCanonicalCourseDataByName } from '../../../lib/course-catalog'
 import { getCourseShortName } from '../../../lib/golf-courses-helpers'
 
 const WA_DAY_HREF = `https://wa.me/34624466702?text=${encodeURIComponent('Hi Andy, I built a golf day on your website and would like to make it real.')}`
@@ -181,6 +182,42 @@ function displayCourseName(name) {
   return getCourseShortName(name)
 }
 
+function getCanonicalCourseInfo(course) {
+  return getCanonicalCourseDataByName(course.name)
+}
+
+function getCourseHoleCount(course) {
+  return getCanonicalCourseInfo(course)?.holeCount || (course.note?.includes('9 holes') ? 9 : 18)
+}
+
+function getCourseFacts(course) {
+  const canonical = getCanonicalCourseInfo(course)
+  if (!canonical) return course.facts
+
+  const facts = []
+  let primaryFact = `Par ${canonical.par}`
+  if (canonical.holeCount === 9) primaryFact += ' · 9 holes'
+  facts.push(primaryFact)
+
+  if (canonical.access) {
+    if (!canonical.access.handicapRequired) {
+      facts.push(
+        canonical.access.accessType === 'hotel_guests'
+          ? 'Hotel guests only'
+          : 'No handicap required'
+      )
+    } else {
+      facts.push(canonical.access.requirementLabel)
+    }
+  }
+
+  for (const fact of course.facts || []) {
+    if (!facts.includes(fact)) facts.push(fact)
+  }
+
+  return facts.slice(0, 3)
+}
+
 function scoreAllCourses(answers) {
   const region = answers.region === 'unbooked' ? 'southwest' : answers.region
   const lvl = LEVEL_RANK[answers.level]
@@ -237,7 +274,8 @@ function buildItineraries(answers) {
   function makePlan(picked, planName, planTagline, planStepsFn, planWhy) {
     const course = picked.c
     const drive = picked.drive
-    const isNineHole = !!course.note
+    const holeCount = getCourseHoleCount(course)
+    const isNineHole = holeCount === 9
     const holesLabel = isNineHole ? `9 holes at ${displayCourseName(course.name)}` : `18 holes at ${displayCourseName(course.name)}`
     const holeNote = isNineHole ? ` Note: ${course.note}` : ''
     const travelDesc = transport
@@ -669,7 +707,7 @@ export default function GolfDayBuilderClient() {
                   <div className="where">Around {it.drive} min from your base (estimate)</div>
                   <p className="blurb">{it.tagline}</p>
                   <div className="gdb-pills">
-                    {it.course.facts.map(f => <span key={f} className="gdb-pill">{f}</span>)}
+                    {getCourseFacts(it.course).map(f => <span key={f} className="gdb-pill">{f}</span>)}
                     <span className="gdb-pill">{START_WINDOWS[answers.start]?.label}</span>
                   </div>
                 </div>
