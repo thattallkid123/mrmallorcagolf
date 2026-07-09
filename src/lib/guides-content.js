@@ -263,7 +263,7 @@ export const GUIDES_CONTENT = {
         intro:
           'Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.',
         readTime: '5 min de lectura',
-        keywords: 'Montaña · Par 72 · EUR 110 aprox. · 20 min desde Palma',
+        keywords: 'Montaña · Par 70 · EUR 110 aprox. · 20 min desde Palma',
       },
 
       {
@@ -426,7 +426,7 @@ export const GUIDES_CONTENT = {
         intro:
           'Bergblicke über Palma, engere Abschlagslinien als man erwartet und eines der eigenständigsten Layouts der Insel in dieser Preisklasse.',
         readTime: '5 Min. Lesezeit',
-        keywords: 'Bergplatz · Par 72 · ca. EUR 110 · 20 Min. von Palma',
+        keywords: 'Bergplatz · Par 70 · ca. EUR 110 · 20 Min. von Palma',
       },
 
       {
@@ -589,7 +589,7 @@ export const GUIDES_CONTENT = {
         intro:
           "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
         readTime: '5 min de lecture',
-        keywords: 'Montagne · Par 72 · env. EUR 110 · 20 min de Palma',
+        keywords: 'Montagne · Par 70 · env. EUR 110 · 20 min de Palma',
       },
 
       {
@@ -752,7 +752,7 @@ export const GUIDES_CONTENT = {
         intro:
           'Bergzichten boven Palma, strakkere drivinglijnen dan je verwacht en een van de meest karaktervolle layouts op het eiland in deze prijsklasse.',
         readTime: '5 min leestijd',
-        keywords: 'Bergbaan · Par 72 · circa EUR 110 · 20 min van Palma',
+        keywords: 'Bergbaan · Par 70 · circa EUR 110 · 20 min van Palma',
       },
 
       {
@@ -915,7 +915,7 @@ export const GUIDES_CONTENT = {
         intro:
           'Bergsvyer ovanför Palma, tajtare utslagslinjer än man tror och en av öns mest personliga banlayouter i den här prisklassen.',
         readTime: '5 min läsning',
-        keywords: 'Bergsbana · Par 72 · cirka EUR 110 · 20 min från Palma',
+        keywords: 'Bergsbana · Par 70 · cirka EUR 110 · 20 min från Palma',
       },
 
       {
