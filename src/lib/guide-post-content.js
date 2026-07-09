@@ -1074,7 +1074,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)",
         description:
-          'Son Antem West: green fees from €90, par 72, 6,300m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
+          'Son Antem West: green fees from €90, par 72, 6,293m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
       },
       meta: {
@@ -1137,7 +1137,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Francisco Lopez Segalés designed Son Antem West, which opened in 1995. It plays to a par 72 from around 6,890 yards on the back tees. The layout is generally open, the fairways generous, and most tee shots carry little penalty for being slightly offline. That makes it accessible for mixed-ability groups and holiday golfers, and clearly that is what it was designed for.',
+          text: 'Francisco Lopez Segalés designed Son Antem West, which opened in 1995. It plays to a par 72 and measures 6,293 metres from the back tees. The layout is generally open, the fairways generous, and most tee shots carry little penalty for being slightly offline. That makes it accessible for mixed-ability groups and holiday golfers, and clearly that is what it was designed for.',
         },
         {
           type: 'paragraph',
@@ -1220,7 +1220,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['€90-135', 'Green fee'],
             ['7/10', 'My rating'],
-            ['Par 72', '~6,890 yards'],
+            ['Par 72', '6,293m'],
             ['Llucmajor', '15-20 min from Palma'],
           ],
         },

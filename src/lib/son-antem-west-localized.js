@@ -3,7 +3,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
     metadata: {
       title: "Son Antem West Golf Club, Mallorca - analisis honesto de un Profesional PGA (2026)",
       description:
-        'Son Antem West: green fees desde 90 €, par 72, 6.300 m. Un campo de resort a 15-20 minutos de Palma, bien mantenido y facil de jugar. Asi se juega de verdad y a quien le conviene.',
+        'Son Antem West: green fees desde 90 €, par 72, 6.293 m. Un campo de resort a 15-20 minutos de Palma, bien mantenido y facil de jugar. Asi se juega de verdad y a quien le conviene.',
       imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
     },
     meta: {
@@ -29,7 +29,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'paragraph', text: 'En el campo, el entorno se abre. El West Course esta en la campina mallorquina cerca de Llucmajor, a 15 o 20 minutos de Palma. No hay casas visibles desde las calles, la montana de Randa aparece al fondo en la segunda vuelta y la fauna esta presente durante toda la ronda. Conejos cruzan las calles con frecuencia. Garzas y otros pajaros aparecen en los hoyos con agua. No se siente como un campo suburbano, y eso ayuda.' },
       { type: 'image', alt: 'Pajaros en la calle de Son Antem West con agua y green detras, Mallorca', caption: 'La fauna aparece mucho en la segunda vuelta: conejos, garzas y varios pajaros, sobre todo alrededor de los hoyos con agua.' },
       { type: 'heading', text: 'El campo' },
-      { type: 'paragraph', text: 'Francisco Lopez Segales diseno Son Antem West, que abrio en 1995. Es par 72 y mide alrededor de 6.890 yardas desde las barras de atras. El diseno es abierto, las calles son generosas y muchos golpes de salida no castigan demasiado si te sales un poco de linea. Eso lo hace accesible para grupos de nivel mixto y golfistas de vacaciones. Claramente fue pensado para eso.' },
+      { type: 'paragraph', text: 'Francisco Lopez Segales diseno Son Antem West, que abrio en 1995. Es par 72 y mide 6.293 metros desde las barras de atras. El diseno es abierto, las calles son generosas y muchos golpes de salida no castigan demasiado si te sales un poco de linea. Eso lo hace accesible para grupos de nivel mixto y golfistas de vacaciones. Claramente fue pensado para eso.' },
       { type: 'paragraph', text: 'Los hoyos que mas destacan son los que van entre arboles. En esos, el golpe de salida es mas estrecho, la linea importa mas y el approach cambia segun el lado de la calle en el que acabes. Las zonas mas abiertas son agradables, pero no te obligan a pensar mucho desde el tee. Escoges un objetivo y pegas.' },
       { type: 'image', alt: 'Andy Griffiths observando a un cliente pegar un hierro en un hoyo arbolado de Son Antem West', caption: 'Driver en uno de los hoyos de la segunda vuelta. El campo estuvo en buen estado durante toda la ronda.' },
       { type: 'paragraph', text: 'Hay algunos hoyos que merece conocer. El 10 es un dogleg a la derecha con agua corta del green. El approach exige decision: jugar por encima del agua o colocar, segun como haya salido el drive. El 12 es un par 4 bastante abierto, pero la montana de Randa al fondo lo convierte en uno de los hoyos mas bonitos de la segunda vuelta. El 16 es el mejor hoyo del campo: un par 5 cuesta arriba, dogleg a la derecha, entre arboles y con un green pequeno y protegido. El 18 tiene agua cubriendo gran parte del lado izquierdo desde el tee.' },
@@ -44,7 +44,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'image', alt: 'Andy Griffiths con clientes en un dia play-with-a-pro en Son Antem West, Mallorca', caption: 'Un dia play-with-a-pro en Son Antem West. El recorrido perdona lo suficiente para que los invitados puedan jugar con libertad.' },
       { type: 'heading', text: 'La parte honesta' },
       { type: 'paragraph', text: 'Una parte grande de Son Antem West es estrategicamente plana. Los hoyos abiertos dan una zona de caida amplia, un approach sencillo y un green pequeno como objetivo. Puedes jugar esos hoyos casi en piloto automatico. Comparado con Son Gual, Alcanada o Andratx, el campo ocupa menos espacio mental. Con green fees en un rango parecido, compite en precio con esos campos, pero ofrece menos en cuanto a recuerdo del diseno.' },
-      { type: 'facts', items: [['90-135 €', 'Green fee'], ['7/10', 'Mi valoracion'], ['Par 72', '~6.890 yardas'], ['Llucmajor', '15-20 min desde Palma']] },
+      { type: 'facts', items: [['90-135 €', 'Green fee'], ['7/10', 'Mi valoracion'], ['Par 72', '6.293 m'], ['Llucmajor', '15-20 min desde Palma']] },
       { type: 'heading', text: 'Informacion practica' },
       { type: 'paragraph', text: 'Green fee: 105 € el dia que jugamos. El resort esta bien preparado antes y despues de la ronda. Hay una pequena tienda cerca del check-in para cafe, agua y snacks, algo realmente util si tienes una salida temprana. Hay buggy disponible. Caminar es sencillo en todo el recorrido.' },
       { type: 'paragraph', text: 'Ubicacion: Llucmajor, a unos 15 o 20 minutos al sur de Palma. Facil de llegar y facil de combinar con uno o dos dias en la ciudad.' },
@@ -57,7 +57,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
     metadata: {
       title: "Son Antem West Golf Club, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
       description:
-        'Son Antem West: Greenfees ab 90 €, Par 72, 6.300 m. Ein Resortplatz 15-20 Minuten von Palma entfernt, gut gepflegt und entspannt spielbar. So spielt er sich wirklich und fuer wen er passt.',
+        'Son Antem West: Greenfees ab 90 €, Par 72, 6.293 m. Ein Resortplatz 15-20 Minuten von Palma entfernt, gut gepflegt und entspannt spielbar. So spielt er sich wirklich und fuer wen er passt.',
       imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
     },
     meta: {
@@ -83,7 +83,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'paragraph', text: 'Auf dem Platz oeffnet sich die Umgebung. Der West Course liegt in der mallorquinischen Landschaft bei Llucmajor, 15 bis 20 Minuten von Palma. Von den Fairways sieht man keine Haeuser, der Randa-Berg steht auf den zweiten Neun im Hintergrund, und Tiere sind staendig praesent. Kaninchen laufen regelmaessig ueber die Fairways. Reiher und andere Voegel sind rund um die Wasserloecher zu sehen. Es fuehlt sich nicht wie ein Vorstadtplatz an, und das hilft.' },
       { type: 'image', alt: 'Voegel auf dem Fairway von Son Antem West mit Wasser und Green dahinter, Mallorca', caption: 'Tiere gehoeren besonders auf den zweiten Neun dazu: Kaninchen, Reiher und verschiedene Voegel, vor allem an den Wasserloechern.' },
       { type: 'heading', text: 'Der Platz' },
-      { type: 'paragraph', text: 'Francisco Lopez Segales entwarf Son Antem West, der 1995 eroeffnet wurde. Der Platz spielt als Par 72 von den hinteren Abschlaegen auf rund 6.890 Yards. Das Layout ist insgesamt offen, die Fairways sind grosszuegig, und viele Abschlaege bestrafen einen leicht verzogenen Ball nicht sofort. Das macht ihn fuer gemischte Gruppen und Urlaubsgolfer zugaenglich. Genau dafuer wurde er offensichtlich gebaut.' },
+      { type: 'paragraph', text: 'Francisco Lopez Segales entwarf Son Antem West, der 1995 eroeffnet wurde. Der Platz spielt als Par 72 und misst 6.293 Meter von den hinteren Abschlaegen. Das Layout ist insgesamt offen, die Fairways sind grosszuegig, und viele Abschlaege bestrafen einen leicht verzogenen Ball nicht sofort. Das macht ihn fuer gemischte Gruppen und Urlaubsgolfer zugaenglich. Genau dafuer wurde er offensichtlich gebaut.' },
       { type: 'paragraph', text: 'Die Loecher, die auffallen, sind die baumgesaeumten. Dort ist der Abschlag enger, die Linie wichtiger, und der Winkel ins Green veraendert sich je nachdem, auf welcher Fairwayseite der Ball liegt. Die offeneren Abschnitte sind angenehm, verlangen vom Tee aber weniger Denken. Ziel waehlen und schwingen.' },
       { type: 'image', alt: 'Andy Griffiths beobachtet einen Eisenschlag eines Kunden auf einem baumgesaeumten Loch von Son Antem West', caption: 'Driver auf einem der Back-Nine-Loecher. Der Platz war durchgehend in gutem Zustand.' },
       { type: 'paragraph', text: 'Ein paar Loecher sollte man kennen. Die 10 ist ein Dogleg nach rechts mit Wasser kurz vor dem Green. Beim Approach muss man entscheiden: Wasser angreifen oder vorlegen, je nachdem wie der Abschlag gelungen ist. Die 12 ist ein relativ offenes Par 4, aber mit dem Randa-Berg dahinter eines der besseren Bilder auf den zweiten Neun. Die 16 ist das beste Loch des Platzes: ein bergauf spielendes Par 5, Dogleg rechts, durch die Baeume zu einem kleinen, gut verteidigten Green. Die 18 hat Wasser ueber weite Teile der linken Seite vom Tee.' },
@@ -98,7 +98,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'image', alt: 'Andy Griffiths mit Kunden bei einer begleiteten Golfrunde auf Son Antem West, Mallorca', caption: 'Ein begleiteter Golftag auf Son Antem West. Das Layout verzeiht genug, damit Gaeste frei spielen koennen.' },
       { type: 'heading', text: 'Der ehrliche Teil' },
       { type: 'paragraph', text: 'Ein grosser Teil von Son Antem West ist strategisch flach. Die offenen Loecher geben breite Landezonen, einen unkomplizierten Approach und ein kleines Green als Ziel. Man kann diese Loecher fast im Autopilot spielen. Im Vergleich zu Son Gual, Alcanada oder Andratx fordert der Platz mental weniger. Bei Greenfees in einer aehnlichen Spanne konkurriert er preislich mit diesen Plaetzen, bleibt vom Layout her aber weniger haengen.' },
-      { type: 'facts', items: [['90-135 €', 'Greenfee'], ['7/10', 'Meine Bewertung'], ['Par 72', '~6.890 Yards'], ['Llucmajor', '15-20 Min. von Palma']] },
+      { type: 'facts', items: [['90-135 €', 'Greenfee'], ['7/10', 'Meine Bewertung'], ['Par 72', '6.293 m'], ['Llucmajor', '15-20 Min. von Palma']] },
       { type: 'heading', text: 'Praktische Informationen' },
       { type: 'paragraph', text: 'Greenfee: 105 € an dem Tag, an dem wir spielten. Das Resort ist vor und nach der Runde gut aufgestellt. Es gibt einen kleinen Shop nahe dem Check-in fuer Kaffee, Wasser und Snacks, was bei einer fruehen Startzeit wirklich nuetzlich ist. Buggys sind verfuegbar. Zu Fuss ist der Platz problemlos.' },
       { type: 'paragraph', text: 'Lage: Llucmajor, etwa 15 bis 20 Minuten suedlich von Palma. Leicht zu erreichen und gut mit einem Tag oder zwei in der Stadt zu verbinden.' },
@@ -111,7 +111,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
     metadata: {
       title: "Son Antem West Golf Club, Majorque - avis honnete d'un professionnel PGA (2026)",
       description:
-        'Son Antem West : green fees a partir de 90 €, par 72, 6 300 m. Un parcours de resort a 15-20 minutes de Palma, bien entretenu et facile a jouer. Voici comment il se joue vraiment et a qui il convient.',
+        'Son Antem West : green fees a partir de 90 €, par 72, 6 293 m. Un parcours de resort a 15-20 minutes de Palma, bien entretenu et facile a jouer. Voici comment il se joue vraiment et a qui il convient.',
       imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
     },
     meta: {
@@ -137,7 +137,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'paragraph', text: 'Sur le parcours, le cadre s ouvre. Le West Course se trouve dans la campagne majorquine pres de Llucmajor, a 15 ou 20 minutes de Palma. Aucune maison n est visible depuis les fairways, la montagne de Randa apparait en arriere-plan sur le retour, et la faune est presente tout au long de la partie. Des lapins traversent regulierement les fairways. Herons et autres oiseaux sont autour des trous avec eau. Cela ne ressemble pas a un parcours de banlieue, et c est un vrai plus.' },
       { type: 'image', alt: 'Oiseaux sur le fairway de Son Antem West avec eau et green derriere, Majorque', caption: 'La faune est reguliere sur le retour : lapins, herons et differents oiseaux, surtout autour des trous avec eau.' },
       { type: 'heading', text: 'Le parcours' },
-      { type: 'paragraph', text: 'Francisco Lopez Segales a dessine Son Antem West, ouvert en 1995. Il se joue en par 72 et mesure environ 6 890 yards des departs arriere. Le trace est globalement ouvert, les fairways sont genereux, et beaucoup de mises en jeu pardonnent une legere erreur de ligne. Cela le rend accessible aux groupes de niveaux mixtes et aux golfeurs en vacances. C est clairement son role.' },
+      { type: 'paragraph', text: 'Francisco Lopez Segales a dessine Son Antem West, ouvert en 1995. Il se joue en par 72 et mesure 6 293 metres des departs arriere. Le trace est globalement ouvert, les fairways sont genereux, et beaucoup de mises en jeu pardonnent une legere erreur de ligne. Cela le rend accessible aux groupes de niveaux mixtes et aux golfeurs en vacances. C est clairement son role.' },
       { type: 'paragraph', text: 'Les trous qui ressortent sont ceux bordes d arbres. La mise en jeu y est plus serree, la ligne compte davantage, et l angle d attaque change selon le cote du fairway trouve. Les sections plus ouvertes sont agreables, mais demandent moins de reflexion au depart. On choisit une cible et on swingue.' },
       { type: 'image', alt: 'Andy Griffiths regarde un client taper un fer sur un trou borde d arbres a Son Antem West', caption: 'Driver sur un trou du retour. Le parcours etait en bon etat du debut a la fin.' },
       { type: 'paragraph', text: 'Quelques trous sont a connaitre. Le 10 est un dogleg droite avec de l eau courte du green. L approche impose une decision : prendre l eau en jeu ou se placer, selon la mise en jeu. Le 12 est un par 4 assez ouvert, mais la montagne de Randa en fond en fait un des plus beaux trous du retour. Le 16 est le meilleur trou du parcours : un par 5 en montee, dogleg droite, entre les arbres, qui finit sur un petit green protege. Le 18 a de l eau sur une grande partie du cote gauche depuis le tee.' },
@@ -152,7 +152,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'image', alt: 'Andy Griffiths avec des clients lors d une journee play-with-a-pro a Son Antem West, Majorque', caption: 'Une journee play-with-a-pro a Son Antem West. Le trace pardonne assez pour permettre aux invites de jouer librement.' },
       { type: 'heading', text: 'La partie honnete' },
       { type: 'paragraph', text: 'Une grande partie de Son Antem West est strategiquement plate. Les trous ouverts donnent une large zone de reception, une approche simple et un petit green comme cible. On peut jouer ces trous presque en pilote automatique. Par rapport a Son Gual, Alcanada ou Andratx, le parcours prend moins de place mentalement. Avec des green fees dans une fourchette proche, il rivalise sur le prix, mais laisse moins de trace par son dessin.' },
-      { type: 'facts', items: [['90-135 €', 'Green fee'], ['7/10', 'Ma note'], ['Par 72', '~6 890 yards'], ['Llucmajor', '15-20 min de Palma']] },
+      { type: 'facts', items: [['90-135 €', 'Green fee'], ['7/10', 'Ma note'], ['Par 72', '6 293 m'], ['Llucmajor', '15-20 min de Palma']] },
       { type: 'heading', text: 'Informations pratiques' },
       { type: 'paragraph', text: 'Green fee : 105 € le jour ou nous avons joue. Le resort est bien organise avant et apres la partie. Il y a une petite boutique pres du check-in pour cafe, eau et snacks, vraiment utile avec un depart matinal. Les voiturettes sont disponibles. Marcher reste simple partout.' },
       { type: 'paragraph', text: 'Lieu : Llucmajor, a environ 15 a 20 minutes au sud de Palma. Facile d acces et facile a combiner avec une journee ou deux en ville.' },
@@ -162,7 +162,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
     ],
   },
   nl: {
-    metadata: { title: "Son Antem West Golf Club, Mallorca - eerlijke review van een PGA Professional (2026)", description: 'Son Antem West: greenfees vanaf 90 euro, par 72, 6.300 m. Een resortbaan op 15-20 minuten van Palma, goed onderhouden en ontspannen speelbaar. Zo speelt hij echt en voor wie past hij.', imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp' },
+    metadata: { title: "Son Antem West Golf Club, Mallorca - eerlijke review van een PGA Professional (2026)", description: 'Son Antem West: greenfees vanaf 90 euro, par 72, 6.293 m. Een resortbaan op 15-20 minuten van Palma, goed onderhouden en ontspannen speelbaar. Zo speelt hij echt en voor wie past hij.', imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp' },
     meta: { badge: 'Baanbeoordeling', badgeGold: true, readTime: '6 min', updated: 'Mei 2026', title: "Son Antem West Golf Club, Mallorca - eerlijke review van een PGA Professional (2026)", intro: 'Een resortbaan op 15-20 minuten van Palma. Goede conditie, open landschap en een lay-out die voor veel spelers werkt.', related: [{ slug: 'best-golf-courses-mallorca', title: 'Beste golfbanen op Mallorca 2026' }, { slug: 'son-gual-review', title: 'Son Gual Golf: eerlijke review 2026' }, { slug: 'alcanada-review', title: 'Alcanada Golf: eerlijke review 2026' }, { slug: 'golf-cost-mallorca', title: 'Wat kost golf op Mallorca?' }] },
     blocks: [
       { type: 'image', alt: 'Waterhindernis op Son Antem West, Llucmajor, Mallorca', caption: 'Een van de waterholes op de West Course. De baan ligt in Llucmajor, ongeveer 15-20 minuten van Palma, open in het landschap en zonder zichtbare huizen.' },
@@ -173,7 +173,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'paragraph', text: 'Op de baan opent de omgeving zich. De West Course ligt in het Mallorcaanse landschap bij Llucmajor, 15 tot 20 minuten van Palma. Vanaf de fairways zie je geen huizen, de Randa-berg ligt op de back nine in de achtergrond, en dieren zijn constant aanwezig. Konijnen kruisen regelmatig de fairways. Reigers en andere vogels zitten rond de waterholes. Het voelt niet als een suburbane golfbaan, en dat helpt.' },
       { type: 'image', alt: 'Vogels op de fairway van Son Antem West met water en green erachter, Mallorca', caption: 'Dieren zijn vooral op de back nine vaak aanwezig: konijnen, reigers en verschillende vogels rond de waterholes.' },
       { type: 'heading', text: 'De baan' },
-      { type: 'paragraph', text: 'Francisco Lopez Segales ontwierp Son Antem West, geopend in 1995. Het is een par 72 van ongeveer 6.890 yards vanaf de back tees. De lay-out is overwegend open, de fairways zijn royaal, en veel tee shots straffen een kleine afwijking niet zwaar. Daardoor werkt de baan goed voor gemengde groepen en vakantiegolfers. Daar is hij duidelijk voor gemaakt.' },
+      { type: 'paragraph', text: 'Francisco Lopez Segales ontwierp Son Antem West, geopend in 1995. Het is een par 72 en meet 6.293 meter vanaf de back tees. De lay-out is overwegend open, de fairways zijn royaal, en veel tee shots straffen een kleine afwijking niet zwaar. Daardoor werkt de baan goed voor gemengde groepen en vakantiegolfers. Daar is hij duidelijk voor gemaakt.' },
       { type: 'paragraph', text: 'De holes die opvallen zijn de holes tussen de bomen. Daar is de tee shot strakker, de lijn belangrijker, en de approach verandert afhankelijk van welke kant van de fairway je vindt. De open gedeeltes zijn prettig, maar vragen minder denkwerk vanaf de tee. Je kiest een doel en slaat.' },
       { type: 'image', alt: 'Andy Griffiths kijkt naar een ijzerslag van een klant op een boomrijke hole van Son Antem West', caption: 'Driver op een van de holes van de back nine. De baan was de hele ronde in goede conditie.' },
       { type: 'paragraph', text: 'Een paar holes zijn goed om te kennen. De 10e is een dogleg naar rechts met water kort voor de green. De approach vraagt een keuze: over het water spelen of opleggen, afhankelijk van de drive. De 12e is een vrij open par 4, maar met de Randa-berg op de achtergrond een van de mooiere holes van de back nine. De 16e is de beste hole van de baan: een uphill dogleg rechts par 5 door de bomen naar een kleine, beschermde green. De 18e heeft water over een groot deel van de linkerkant vanaf de tee.' },
@@ -188,7 +188,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'image', alt: 'Andy Griffiths met klanten tijdens een play-with-a-pro-dag op Son Antem West, Mallorca', caption: 'Een play-with-a-pro-dag op Son Antem West. De lay-out vergeeft genoeg om gasten vrij te laten spelen.' },
       { type: 'heading', text: 'Het eerlijke deel' },
       { type: 'paragraph', text: 'Een groot deel van Son Antem West is strategisch vlak. De open holes geven brede landingszones, een eenvoudige approach en een kleine green als doel. Je kunt die holes bijna op automatische piloot spelen. Vergeleken met Son Gual, Alcanada of Andratx vraagt de baan mentaal minder. Met greenfees in dezelfde range concurreert hij op prijs, maar blijft de lay-out minder hangen.' },
-      { type: 'facts', items: [['90-135 euro', 'Greenfee'], ['7/10', 'Mijn beoordeling'], ['Par 72', '~6.890 yards'], ['Llucmajor', '15-20 min van Palma']] },
+      { type: 'facts', items: [['90-135 euro', 'Greenfee'], ['7/10', 'Mijn beoordeling'], ['Par 72', '6.293 m'], ['Llucmajor', '15-20 min van Palma']] },
       { type: 'heading', text: 'Praktische informatie' },
       { type: 'paragraph', text: 'Greenfee: 105 euro op de dag dat wij speelden. Het resort is goed ingericht voor en na de ronde. Er is een klein winkeltje bij de check-in voor koffie, water en snacks, echt handig bij een vroege starttijd. Buggyhuur is beschikbaar. Lopen is overal eenvoudig.' },
       { type: 'paragraph', text: 'Locatie: Llucmajor, ongeveer 15 tot 20 minuten ten zuiden van Palma. Makkelijk te bereiken en goed te combineren met een dag of twee in de stad.' },
@@ -198,7 +198,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
     ],
   },
   sv: {
-    metadata: { title: "Son Antem West Golf Club, Mallorca - arlig recension av en PGA Professional (2026)", description: 'Son Antem West: greenfee fran 90 euro, par 72, 6 300 m. En resortbana 15-20 minuter fran Palma med bra skick och en avslappnad, spelbar layout. Sa spelar den egentligen och vilka passar den for.', imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp' },
+    metadata: { title: "Son Antem West Golf Club, Mallorca - arlig recension av en PGA Professional (2026)", description: 'Son Antem West: greenfee fran 90 euro, par 72, 6 293 m. En resortbana 15-20 minuter fran Palma med bra skick och en avslappnad, spelbar layout. Sa spelar den egentligen och vilka passar den for.', imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp' },
     meta: { badge: 'Banrecension', badgeGold: true, readTime: '6 min', updated: 'Maj 2026', title: "Son Antem West Golf Club, Mallorca - arlig recension av en PGA Professional (2026)", intro: 'En resortbana 15-20 minuter fran Palma. Bra skick, oppet landskap och en layout som passar manga olika spelare.', related: [{ slug: 'best-golf-courses-mallorca', title: 'Basta golfbanorna pa Mallorca 2026' }, { slug: 'son-gual-review', title: 'Son Gual Golf: arlig recension 2026' }, { slug: 'alcanada-review', title: 'Alcanada Golf: arlig recension 2026' }, { slug: 'golf-cost-mallorca', title: 'Vad kostar golf pa Mallorca?' }] },
     blocks: [
       { type: 'image', alt: 'Vattenhinder pa Son Antem West, Llucmajor, Mallorca', caption: 'Ett av vattenhalen pa West Course. Banan ligger i Llucmajor, cirka 15-20 minuter fran Palma, i oppet landskap utan synliga hus.' },
@@ -209,7 +209,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'paragraph', text: 'Ute pa banan oppnar landskapet sig. West Course ligger i mallorkinsk landsbygd nara Llucmajor, 15 till 20 minuter fran Palma. Inga hus syns fran fairways, Randa-berget ligger i bakgrunden pa back nine, och djurlivet finns dar hela rundan. Kaniner korsar fairways regelbundet. Hagrar och andra faglar syns runt vattenhalen. Det kanns inte som en forortsbana, och det hjalper.' },
       { type: 'image', alt: 'Faglar pa fairway pa Son Antem West med vatten och green bakom, Mallorca', caption: 'Djurlivet ar tydligt pa back nine: kaniner, hagrar och olika faglar, framfor allt runt vattenhalen.' },
       { type: 'heading', text: 'Banan' },
-      { type: 'paragraph', text: 'Francisco Lopez Segales designade Son Antem West, som oppnade 1995. Den spelar som par 72 fran cirka 6 890 yards fran bakre tee. Layouten ar generellt oppen, fairways ar generosa, och de flesta utslag straffar inte en liten miss for hart. Det gor den tillganglig for blandade grupper och semestergolfare. Det ar tydligt vad den ar byggd for.' },
+      { type: 'paragraph', text: 'Francisco Lopez Segales designade Son Antem West, som oppnade 1995. Den spelar som par 72 och mater 6 293 meter fran bakre tee. Layouten ar generellt oppen, fairways ar generosa, och de flesta utslag straffar inte en liten miss for hart. Det gor den tillganglig for blandade grupper och semestergolfare. Det ar tydligt vad den ar byggd for.' },
       { type: 'paragraph', text: 'Halen som sticker ut ar de tradkantade. Dar ar utslaget smalare, linjen viktigare och inspelet andras beroende pa vilken sida av fairway du hittar. De oppnare partierna ar trevliga men ger mindre att tanka pa fran tee. Valj ett mal och swing.' },
       { type: 'image', alt: 'Andy Griffiths tittar pa en klients jarnslag pa ett tradkantat hal pa Son Antem West', caption: 'Driver pa ett av back-nine-halen. Banan var i gott skick hela rundan.' },
       { type: 'paragraph', text: 'Nagra hal ar vard att kanna till. 10 ar en dogleg hoger med vatten kort om green. Inspelsslaget ger ett beslut: ta vattenhindret eller lagga upp, beroende pa utslaget. 12 ar en ganska oppen par 4, men Randa-berget i bakgrunden gor den till ett av de snyggare halen pa back nine. 16 ar banans basta hal: en uppfors dogleg hoger par 5 genom traden till en liten, skyddad green. 18 har vatten langs en stor del av vanstersidan fran tee.' },
@@ -224,7 +224,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'image', alt: 'Andy Griffiths med klienter pa en play-with-a-pro-dag pa Son Antem West, Mallorca', caption: 'En play-with-a-pro-dag pa Son Antem West. Layouten ar tillrackligt forlatande for att gaster ska kunna spela fritt.' },
       { type: 'heading', text: 'Den arliga delen' },
       { type: 'paragraph', text: 'En stor del av Son Antem West ar strategiskt platt. De oppna halen ger breda landningsytor, ett enkelt inspel och en liten green att sikta pa. Du kan spela de halen nastan pa autopilot. Jamfort med Son Gual, Alcanada eller Andratx kraver banan mindre mentalt. Med greenfee i samma spann konkurrerar den prismassigt, men layouten stannar inte kvar lika starkt.' },
-      { type: 'facts', items: [['90-135 euro', 'Greenfee'], ['7/10', 'Mitt betyg'], ['Par 72', '~6 890 yards'], ['Llucmajor', '15-20 min fran Palma']] },
+      { type: 'facts', items: [['90-135 euro', 'Greenfee'], ['7/10', 'Mitt betyg'], ['Par 72', '6 293 m'], ['Llucmajor', '15-20 min fran Palma']] },
       { type: 'heading', text: 'Praktisk information' },
       { type: 'paragraph', text: 'Greenfee: 105 euro den dag vi spelade. Resorten fungerar bra fore och efter rundan. Det finns en liten butik vid incheckningen for kaffe, vatten och snacks, vilket ar verkligt anvandbart vid tidig starttid. Buggy finns. Att ga ar enkelt hela vagen.' },
       { type: 'paragraph', text: 'Plats: Llucmajor, cirka 15 till 20 minuter soder om Palma. Latt att na och latt att kombinera med en dag eller tva i staden.' },
@@ -234,7 +234,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
     ],
   },
   zh: {
-    metadata: { title: 'Son Antem West 高尔夫俱乐部，马略卡 - PGA 职业教练真实评测（2026）', description: 'Son Antem West：果岭费90欧起，标准杆72，6,300米。距离帕尔马15-20分钟的度假村球场，养护不错，打法轻松。这里是它真实的下场体验，以及适合的人群。', imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp' },
+    metadata: { title: 'Son Antem West 高尔夫俱乐部，马略卡 - PGA 职业教练真实评测（2026）', description: 'Son Antem West：果岭费90欧起，标准杆72，6,293米。距离帕尔马15-20分钟的度假村球场，养护不错，打法轻松。这里是它真实的下场体验，以及适合的人群。', imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp' },
     meta: { badge: '球场评测', badgeGold: true, readTime: '6分钟', updated: '2026年5月', title: 'Son Antem West 高尔夫俱乐部，马略卡 - PGA 职业教练真实评测（2026）', intro: '距离帕尔马15-20分钟的度假村球场。养护好，环境开阔，球场设计适合很多类型的球手。', related: [{ slug: 'best-golf-courses-mallorca', title: '2026马略卡最佳高尔夫球场' }, { slug: 'son-gual-review', title: 'Son Gual Golf：真实评测2026' }, { slug: 'alcanada-review', title: 'Alcanada Golf：真实评测2026' }, { slug: 'golf-cost-mallorca', title: '在马略卡打高尔夫要多少钱？' }] },
     blocks: [
       { type: 'image', alt: '马略卡Llucmajor的Son Antem West球场水障碍', caption: 'West Course其中一个有水的球洞。球场位于Llucmajor，距离帕尔马约15-20分钟，四周开阔，看不到住宅。' },
@@ -245,7 +245,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'paragraph', text: '下到球场后，视野打开。West Course位于Llucmajor附近的马略卡乡间，离帕尔马15到20分钟。球道上看不到住宅，后九能看到Randa山，野生动物一路都在。兔子经常横穿球道。水障碍附近有鹭和其他鸟类。它不像城市边缘的球场，这一点加分。' },
       { type: 'image', alt: 'Son Antem West球道上的鸟，后方有水和果岭，马略卡', caption: '后九的野生动物很多：兔子、鹭和各种鸟，尤其集中在水障碍附近。' },
       { type: 'heading', text: '球场' },
-      { type: 'paragraph', text: 'Son Antem West由Francisco Lopez Segales设计，1995年开业。标准杆72，从后发球台约6,890码。整体设计偏开阔，球道宽容，大多数开球稍微偏一点不会受到太重惩罚。这让它很适合不同水平混合的组合和度假球手。它显然就是为这种使用场景设计的。' },
+      { type: 'paragraph', text: 'Son Antem West由Francisco Lopez Segales设计，1995年开业。标准杆72，从后发球台长6,293米。整体设计偏开阔，球道宽容，大多数开球稍微偏一点不会受到太重惩罚。这让它很适合不同水平混合的组合和度假球手。它显然就是为这种使用场景设计的。' },
       { type: 'paragraph', text: '真正突出的，是那些树木夹道的球洞。在这些洞，开球线更窄，线路更重要，第二杆角度也会因为你停在球道哪一边而改变。更开阔的区域打起来舒服，但开球时不需要想太多。选一个目标，然后挥杆。' },
       { type: 'image', alt: 'Andy Griffiths看客户在Son Antem West树木夹道球洞打铁杆', caption: '后九其中一个洞开一号木。整轮球场状态都不错。' },
       { type: 'paragraph', text: '有几个洞值得提前知道。10号洞是右狗腿，果岭前短处有水。第二杆需要决定：直接越过水，还是先放到安全位置，取决于开球结果。12号洞是相对开阔的4杆洞，但Randa山做背景，是后九比较好看的洞之一。16号洞是全场最佳：上坡右狗腿5杆洞，穿过树林，最后到一个小而受保护的果岭。18号洞从发球台看，左侧大部分都是水。' },
@@ -260,7 +260,7 @@ export const SON_ANTEM_WEST_LOCALIZED = {
       { type: 'image', alt: 'Andy Griffiths和客户在Son Antem West进行play-with-a-pro体验，马略卡', caption: '在Son Antem West的一天play-with-a-pro体验。球场足够宽容，客人可以比较自由地打。' },
       { type: 'heading', text: '诚实部分' },
       { type: 'paragraph', text: 'Son Antem West有很大一部分在策略上比较平。开阔的球洞给你宽大的落球区，直接的第二杆，以及一个小果岭作为目标。这些洞几乎可以自动驾驶式地打。和Son Gual、Alcanada或Andratx相比，它在脑子里留下的东西少一些。在类似价格区间，它能和这些球场竞争价格，但在设计记忆点上少一些。' },
-      { type: 'facts', items: [['90-135欧', '果岭费'], ['7/10', '我的评分'], ['标准杆72', '约6,890码'], ['Llucmajor', '距帕尔马15-20分钟']] },
+      { type: 'facts', items: [['90-135欧', '果岭费'], ['7/10', '我的评分'], ['标准杆72', '6,293米'], ['Llucmajor', '距帕尔马15-20分钟']] },
       { type: 'heading', text: '实用信息' },
       { type: 'paragraph', text: '果岭费：我们那天是105欧。度假村在下场前后都安排得不错。报到处附近有小店可以买咖啡、水和零食，早场出发时很实用。可以租球车。全场步行也很简单。' },
       { type: 'paragraph', text: '位置：Llucmajor，帕尔马以南约15到20分钟。很容易到达，也容易和在帕尔马住一两天组合起来。' },
