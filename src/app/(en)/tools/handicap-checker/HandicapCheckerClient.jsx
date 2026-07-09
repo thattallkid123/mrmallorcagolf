@@ -4,6 +4,8 @@ import { useRef, useState } from 'react'
 import Link from 'next/link'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
+import { COURSE_ACCESS_LIST } from '../../../../lib/course-access-data'
+import { getCourseShortName } from '../../../../lib/golf-courses-helpers'
 
 const WA_MESSAGE = 'Hi Andy, I used the handicap checker on your site and I’d like help planning which Mallorca courses I can play.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -23,58 +25,87 @@ function WhatsAppCta({ label = 'Message Andy on WhatsApp' }) {
   )
 }
 
-/* =====================================================================
-   Course access data — from MMG_ENCYCLOPAEDIA_DATA_MASTER.md
-   M/F: max handicap (men/women); cert: certificate required at booking;
-   strict: club enforces limits rigidly; publicAccess: pay-and-play;
-   restricted: members/guests/hotel-only; pairing: club commonly pairs
-   solo/duo bookings with other guests in season; region: island area.
-   ===================================================================== */
-const COURSES = [
-  // PALMA REGION
-  { name: 'Golf Son Gual',          region: 'palma',     M: 33, F: 35, cert: true,  pairing: true },
-  { name: 'Golf Son Vida',          region: 'palma',     M: 36, F: 36, cert: true },
-  { name: 'Son Muntaner',           region: 'palma',     M: 36, F: 36, pairing: true },
-  { name: 'Golf Son Quint',         region: 'palma',     M: 36, F: 36, pairing: true },
-  { name: 'T Golf Palma',           region: 'palma',     M: 34, F: 36, pairing: true },
-  { name: 'Palma Pitch & Putt',     region: 'palma',     M: 54, F: 54, publicAccess: true },
-  { name: 'Golf Son Termes',        region: 'palma',     M: 36, F: 36, cert: true,  pairing: true },
+const COURSE_REGIONS = {
+  'Golf Son Gual': 'palma',
+  'Golf Son Vida': 'palma',
+  'Son Muntaner': 'palma',
+  'Golf Son Quint': 'palma',
+  'T Golf Palma (Puntir\u00f3)': 'palma',
+  'Palma Pitch & Putt': 'palma',
+  'Golf Son Termes': 'palma',
+  'Golf Santa Ponsa 1': 'southwest',
+  'Golf Santa Ponsa 2': 'southwest',
+  'Golf Santa Ponsa 3': 'southwest',
+  'Real Golf de Bendinat': 'southwest',
+  'T Golf Calvi\u00e0 (Poniente)': 'southwest',
+  'Golf de Andratx': 'southwest',
+  'Golf Maioris': 'south',
+  'Golf Son Antem East': 'south',
+  'Golf Son Antem West': 'south',
+  'Capdepera Golf': 'east',
+  'Canyamel Golf': 'east',
+  'Pula Golf': 'east',
+  'Golf Club Son Servera': 'east',
+  "Vall d'Or Golf": 'east',
+  'Reserva Rotana': 'east',
+  'Club de Golf Alcanada': 'north',
+  'Golf Pollen\u00e7a': 'north',
+}
 
-  // SOUTHWEST REGION
-  { name: 'Golf Santa Ponsa 1',     region: 'southwest', M: 28, F: 36, cert: true, publicAccess: true },
-  { name: 'Golf Santa Ponsa 2',     region: 'southwest', M: 28, F: 36, cert: true, restricted: 'Members/guests only — contact Andy' },
-  { name: 'Golf Santa Ponsa 3',     region: 'southwest', M: 28, F: 36, cert: true, restricted: 'Members/guests only — contact Andy' },
-  { name: 'Real Golf de Bendinat',  region: 'southwest', M: 36, F: 36, pairing: true },
-  { name: 'T Golf Calvià',          region: 'southwest', M: 28, F: 34, pairing: true },
-  { name: 'Golf de Andratx',        region: 'southwest', M: 28, F: 36, cert: true, strict: true, pairing: true },
+const COURSE_PLAYING_OVERRIDES = {
+  'Golf de Andratx': { strict: true, pairing: true },
+  'Golf Son Gual': { pairing: true },
+  'Golf Son Quint': { pairing: true },
+  'Golf Son Antem East': { pairing: true },
+  'Golf Son Antem West': { pairing: true },
+  'Golf Son Termes': { pairing: true },
+  'Capdepera Golf': { pairing: true },
+  'Canyamel Golf': { pairing: true },
+  'Club de Golf Alcanada': { pairing: true },
+  'Golf Club Son Servera': { pairing: true },
+  'Pula Golf': { pairing: true },
+  'Real Golf de Bendinat': { pairing: true },
+  'Son Muntaner': { pairing: true },
+  'T Golf Calvi\u00e0 (Poniente)': { pairing: true },
+  'T Golf Palma (Puntir\u00f3)': { pairing: true },
+  "Vall d'Or Golf": { pairing: true },
+}
 
-  // SOUTH REGION
-  { name: 'Golf Maioris',           region: 'south',     M: 36, F: 36, publicAccess: true },
-  { name: 'Golf Son Antem East',    region: 'south',     M: 54, F: 54, pairing: true },
-  { name: 'Golf Son Antem West',    region: 'south',     M: 27, F: 35, pairing: true },
+const COURSES = COURSE_ACCESS_LIST
+  .map((entry) => {
+    const region = COURSE_REGIONS[entry.name]
+    if (!region) return null
 
-  // EAST REGION
-  { name: 'Capdepera Golf',         region: 'east',      M: 36, F: 36, cert: true,  pairing: true },
-  { name: 'Canyamel Golf',          region: 'east',      M: 36, F: 45, pairing: true },
-  { name: 'Pula Golf',              region: 'east',      M: 34, F: 36, pairing: true },
-  { name: 'Golf Club Son Servera',  region: 'east',      M: 36, F: 36, cert: true, publicAccess: true },
-  { name: "Vall d'Or Golf",         region: 'east',      M: 36, F: 36, pairing: true },
-  { name: 'Reserva Rotana',         region: 'east',      M: 36, F: 36, cert: true, restricted: 'Hotel guests only — cannot arrange' },
+    const restricted =
+      entry.accessType === 'hotel_guests'
+        ? 'Hotel guests only \u2014 cannot arrange'
+        : entry.accessType === 'members_arranged'
+          ? 'Members/guests only \u2014 contact Andy'
+          : null
 
-  // NORTH REGION
-  { name: 'Club de Golf Alcanada',  region: 'north',     M: 33, F: 35, cert: true,  pairing: true },
-  { name: 'Golf Pollença',          region: 'north',     M: 36, F: 36, publicAccess: true },
-]
+    return {
+      name: getCourseShortName(entry.name),
+      region,
+      M: entry.handicapMen,
+      F: entry.handicapWomen,
+      cert: entry.certificateRequired,
+      handicapRequired: entry.handicapRequired,
+      publicAccess: entry.accessType === 'public',
+      restricted,
+      ...COURSE_PLAYING_OVERRIDES[entry.name],
+    }
+  })
+  .filter(Boolean)
 
 const BORDERLINE_MARGIN = 8
 
 const AREA_LABELS = {
   any: 'Anywhere on the island',
   palma: 'Palma & around',
-  southwest: 'Southwest (Calvià, Santa Ponsa, Andratx)',
+  southwest: 'Southwest (Calvi\u00e0, Santa Ponsa, Andratx)',
   south: 'South (Llucmajor, Son Antem)',
   east: 'East (Capdepera, Canyamel, Pula)',
-  north: 'North (Alcúdia, Pollença)',
+  north: 'North (Alc\u00fadia, Pollen\u00e7a)',
 }
 
 function tierFromHcp(hcp, noHcp) {
@@ -90,7 +121,7 @@ function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender) {
 
   if (course.restricted) {
     // Hotel-only courses genuinely cannot be arranged for a standalone round.
-    if (course.restricted === 'Hotel guests only — cannot arrange') {
+    if (course.restricted === 'Hotel guests only \u2014 cannot arrange') {
       return {
         status: 'no',
         label: '❌ Hotel guests only',
@@ -101,6 +132,16 @@ function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender) {
       status: 'warn',
       label: '⚠️ Members & guests only',
       detail: 'Normally members and their guests only. I can enquire on your behalf, but access here is the club’s decision and is not guaranteed.',
+    }
+  }
+
+  if (!course.handicapRequired && !course.cert) {
+    return {
+      status: 'ok',
+      label: '\u2705 You can book',
+      detail: course.publicAccess
+        ? 'No handicap certificate needed here.'
+        : 'No handicap needed here, subject to the venue access rules above.',
     }
   }
 

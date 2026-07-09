@@ -7,6 +7,8 @@ export const SHORT_TO_ID = {
   'Son Vida': 'golf-son-vida',
   'Son Quint': 'golf-son-quint',
   'T Golf Palma (Puntiro)': 't-golf-palma-puntiro',
+  'T Golf Palma (Puntir\u00f3)': 't-golf-palma-puntiro',
+  'T Golf Palma (Puntiró)': 't-golf-palma-puntiro',
   'T Golf Puntiro': 't-golf-palma-puntiro',
   'Son Termes': 'golf-son-termes',
   'Palma Pitch & Putt': 'palma-pitch-putt',
@@ -14,7 +16,11 @@ export const SHORT_TO_ID = {
   'Santa Ponsa 2': 'golf-santa-ponsa-2',
   'Santa Ponsa 3': 'golf-santa-ponsa-3',
   'T Golf Calvia': 't-golf-calvia-poniente',
+  'T Golf Calvi\u00e0': 't-golf-calvia-poniente',
+  'T Golf Calvià': 't-golf-calvia-poniente',
   'T Golf Calvia (Poniente)': 't-golf-calvia-poniente',
+  'T Golf Calvi\u00e0 (Poniente)': 't-golf-calvia-poniente',
+  'T Golf Calvià (Poniente)': 't-golf-calvia-poniente',
   Bendinat: 'real-golf-de-bendinat',
   'Golf de Andratx': 'golf-de-andratx',
   'Golf Maioris': 'golf-maioris',
@@ -29,6 +35,8 @@ export const SHORT_TO_ID = {
   Alcanada: 'club-de-golf-alcanada',
   'Golf Pollensa': 'golf-pollenca',
   'Golf Pollenca': 'golf-pollenca',
+  'Golf Pollen\u00e7a': 'golf-pollenca',
+  'Golf Pollença': 'golf-pollenca',
 }
 
 // Short display labels for course listings (cards, A-Z sort). The full `name`
@@ -44,6 +52,9 @@ export const COURSE_SHORT_NAME = {
   'Golf Santa Ponsa 1': 'Santa Ponsa 1',
   'Golf Santa Ponsa 2': 'Santa Ponsa 2',
   'Golf Santa Ponsa 3': 'Santa Ponsa 3',
+  'Santa Ponsa I': 'Santa Ponsa 1',
+  'Santa Ponsa II': 'Santa Ponsa 2',
+  'Santa Ponsa III': 'Santa Ponsa 3',
   'Real Golf de Bendinat': 'Bendinat',
   'Golf de Andratx': 'Andratx',
   'Golf Maioris': 'Maioris',
@@ -55,6 +66,12 @@ export const COURSE_SHORT_NAME = {
   'Golf Club Son Servera': 'Son Servera',
   "Vall d'Or Golf": "Vall d'Or",
   'Club de Golf Alcanada': 'Alcanada',
+  'T Golf Calvi\u00e0': 'T Golf Calvi\u00e0 (Poniente)',
+  'T Golf Calvi??': 'T Golf Calvi\u00e0 (Poniente)',
+  'T Golf Palma Puntir\u00f3': 'T Golf Palma (Puntir\u00f3)',
+  'T Golf Palma Puntir??': 'T Golf Palma (Puntir\u00f3)',
+  'T Golf Palma (Puntir??)': 'T Golf Palma (Puntir\u00f3)',
+  'Golf Pollen\u00e7a': 'Pollen\u00e7a',
   'Golf Pollença': 'Pollença',
 }
 

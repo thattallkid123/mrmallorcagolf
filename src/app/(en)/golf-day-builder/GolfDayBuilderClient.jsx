@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
+import { getCourseShortName } from '../../../lib/golf-courses-helpers'
 
 const WA_DAY_HREF = `https://wa.me/34624466702?text=${encodeURIComponent('Hi Andy, I built a golf day on your website and would like to make it real.')}`
 
@@ -176,6 +177,10 @@ const LEVEL_REQ  = { 'beginner+':0, 'casual+':1, 'confident+':2 }
 const GROUP_LABEL = { solo:'a solo golfer', couple:'a couple', friends:'a group of friends', family:'a family', vip:'a VIP or corporate group' }
 const REGION_LABEL = { southwest:'in the southwest', palma:'in or near Palma', north:'in the north', east:'in the east', south:'in the south', unbooked:'wherever suits the golf best' }
 
+function displayCourseName(name) {
+  return getCourseShortName(name)
+}
+
 function scoreAllCourses(answers) {
   const region = answers.region === 'unbooked' ? 'southwest' : answers.region
   const lvl = LEVEL_RANK[answers.level]
@@ -233,7 +238,7 @@ function buildItineraries(answers) {
     const course = picked.c
     const drive = picked.drive
     const isNineHole = !!course.note
-    const holesLabel = isNineHole ? `9 holes at ${course.name}` : `18 holes at ${course.name}`
+    const holesLabel = isNineHole ? `9 holes at ${displayCourseName(course.name)}` : `18 holes at ${displayCourseName(course.name)}`
     const holeNote = isNineHole ? ` Note: ${course.note}` : ''
     const travelDesc = transport
       ? `A private transfer collects you from your accommodation. Around ${drive} minutes to the course (estimate).`
@@ -440,7 +445,7 @@ export default function GolfDayBuilderClient() {
     const builtItins = itins || buildItineraries(answers)
     const itineraries = builtItins.map(it => ({
       name: it.name,
-      courseName: it.course.name,
+      courseName: displayCourseName(it.course.name),
       tagline: it.tagline,
       steps: it.steps.map(s => ({ time: s.time, title: s.title })),
     }))
@@ -660,7 +665,7 @@ export default function GolfDayBuilderClient() {
               <div key={i} className={`gdb-itin${activeItin === i ? ' active' : ''}`}>
                 <div className="gdb-course-card" style={COURSE_IMGS[it.course.id] ? { backgroundImage: `linear-gradient(165deg, rgba(45,74,62,0.88) 0%, rgba(26,25,22,0.92) 120%), url(${COURSE_IMGS[it.course.id]})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}>
                   <span className="tag">{it.name}</span>
-                  <h3>{it.course.name}</h3>
+                  <h3>{displayCourseName(it.course.name)}</h3>
                   <div className="where">Around {it.drive} min from your base (estimate)</div>
                   <p className="blurb">{it.tagline}</p>
                   <div className="gdb-pills">

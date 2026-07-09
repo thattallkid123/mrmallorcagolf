@@ -4,6 +4,8 @@ import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
+import { formatCourseAccessRequirement, getCourseAccessByName } from '../../../../lib/course-access-data'
+import { getCourseShortName } from '../../../../lib/golf-courses-helpers'
 
 const WA_MESSAGE = 'Hi Andy, I was comparing green fees on your site and I’d like help planning a Mallorca golf trip and tee times.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -28,7 +30,7 @@ function WhatsAppCta({ label = 'Message Andy on WhatsApp' }) {
    Cross-check against the pricing master Sheet (mmg.ps1 pricing) when
    green fees change. Approximate, seasonal — always confirm at booking.
    ===================================================================== */
-const COURSES = [
+const BASE_COURSES = [
   { name: 'Son Gual',           area: 'Palma',     peak: 165, low: 115, buggy: '€45 (optional)',                walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '33M / 35L + certificate', nineHoles: false, verdict: 'My most-played course in Mallorca and the one I recommend most consistently. Peak season €165 / low season €115. Not a soft holiday round.', guideUrl: '/guides/son-gual-review' },
   { name: 'Alcanada',           area: 'North',     peak: 220, low: 115, buggy: '€48 with GPS',                  walking: 'restricted', walkingNote: 'Hilly, most take a buggy',     handicap: 'yes', handicapNote: '33M / 35L',               nineHoles: false, verdict: 'The lighthouse is visible from 16 of the 18 holes. The course I take people to when I want them to remember one round in particular.', guideUrl: '/guides/alcanada-review' },
   { name: 'T Golf Calvià',      area: 'Southwest', peak: 210, low: 80,  buggy: '€40 (recommended)',             walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '28M / 34L',               nineHoles: false, verdict: 'One of the best-conditioned courses I have played in Mallorca. Fifteen lakes keep water in play mentally all day.', guideUrl: '/guides/t-golf-calvia-review' },
@@ -54,6 +56,22 @@ const COURSES = [
   { name: "Vall d'Or",          area: 'East',      peak: 132, low: 99,  buggy: '€35–€50 (sensible)',            walking: 'restricted', walkingNote: 'Hilly',                       handicap: 'yes', handicapNote: '36',                      nineHoles: false, verdict: 'Two different nines: wooded and uphill going out, sea views coming home.', guideUrl: null },
   { name: 'La Reserva Rotana',  area: 'East',      peakText: 'Hotel guests', lowText: 'Included in stay', buggy: 'Not needed', walking: 'yes', walkingNote: '',                    handicap: 'yes', handicapNote: 'Certificate required',     nineHoles: true,  verdict: 'A private estate course for hotel guests. More escape than examination.', guideUrl: null },
 ]
+
+const COURSES = BASE_COURSES.map((course) => {
+  const access = getCourseAccessByName(course.name)
+  if (!access) return course
+
+  return {
+    ...course,
+    handicap: access.handicapRequired || access.certificateRequired ? 'yes' : 'no',
+    handicapNote: formatCourseAccessRequirement(access),
+    nineHoles: access.holes === 9,
+  }
+})
+
+function displayCourseName(name) {
+  return getCourseShortName(name)
+}
 
 const fmtFee = (num, text) => (text ? text : num ? `approx. €${num}` : 'approx. €XX')
 
@@ -87,9 +105,9 @@ export default function GreenFeesClient() {
     })
     list.sort((a, b) => {
       let r = 0
-      if (sort === 'name') r = a.name.localeCompare(b.name)
-      else if (sort === 'area') r = a.area.localeCompare(b.area) || a.name.localeCompare(b.name)
-      else r = ((a.peak || 9999) - (b.peak || 9999)) || a.name.localeCompare(b.name)
+      if (sort === 'name') r = displayCourseName(a.name).localeCompare(displayCourseName(b.name))
+      else if (sort === 'area') r = a.area.localeCompare(b.area) || displayCourseName(a.name).localeCompare(displayCourseName(b.name))
+      else r = ((a.peak || 9999) - (b.peak || 9999)) || displayCourseName(a.name).localeCompare(displayCourseName(b.name))
       return r * dir
     })
     return list
@@ -244,7 +262,7 @@ export default function GreenFeesClient() {
                 const w = walkingLabel(c)
                 return (
                   <tr key={c.name}>
-                    <td className="gf-course">{c.name}{guideCell(c)}</td>
+                    <td className="gf-course">{displayCourseName(c.name)}{guideCell(c)}</td>
                     <td>{c.area}</td>
                     <td>{fmtFee(c.peak, c.peakText)}<span className="approx">peak season</span></td>
                     <td>{fmtFee(c.low, c.lowText)}<span className="approx">low season</span></td>
@@ -267,7 +285,7 @@ export default function GreenFeesClient() {
             const w = walkingLabel(c)
             return (
               <div className="gf-card" key={c.name}>
-                <h3>{c.name}</h3>
+                <h3>{displayCourseName(c.name)}</h3>
                 <div className="area-tag">{c.area}</div>
                 <div className="grid">
                   <div><span className="k">Peak fee</span>{fmtFee(c.peak, c.peakText)}</div>
