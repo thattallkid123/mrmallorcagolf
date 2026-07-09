@@ -1,33 +1,33 @@
 import { resolveCourseAccessName } from './course-access-data.js'
 
-// Generated from mmg-tools/pricing/course-pricing-master.json.
-// Update the pricing master, then mirror changes here or wire up a direct export.
+// Generated from mmg-tools/pricing/course-pricing-master.json via .\\mmg.ps1 pricing.
+// Edit the pricing master, then rerun the sync.
 
 export const COURSE_PRICING_BY_NAME = {
-  'Canyamel Golf': { low: 85, peak: 145, dynamic: false, licenceFee: null },
-  'Capdepera Golf': { low: 79, peak: 125, dynamic: true, licenceFee: 0 },
-  'Club de Golf Alcanada': { low: 115, peak: 220, dynamic: false, licenceFee: 3 },
-  'Golf Club Son Servera': { low: 80, peak: 145, dynamic: false, licenceFee: 0 },
-  'Golf Maioris': { low: 91, peak: 110, dynamic: false, licenceFee: 0 },
-  'Golf Pollen\u00e7a': { low: 55, peak: 65, dynamic: false, licenceFee: 0, holes: 9 },
-  'Golf Santa Ponsa 1': { low: 77, peak: 126, dynamic: false, licenceFee: 0 },
-  'Golf Santa Ponsa 2': { low: 65, peak: 88, dynamic: false, licenceFee: 0 },
-  'Golf Santa Ponsa 3': { low: 25, peak: 30, dynamic: false, licenceFee: 0, holes: 9 },
-  'Golf Son Antem East': { low: 64, peak: 140, dynamic: true, licenceFee: 0 },
-  'Golf Son Antem West': { low: 67, peak: 135, dynamic: true, licenceFee: 0 },
-  'Golf Son Gual': { low: 115, peak: 165, dynamic: false, licenceFee: 0 },
-  'Golf Son Quint': { low: 70, peak: 172, dynamic: true, licenceFee: 3 },
-  'Golf Son Termes': { low: 80, peak: 100, dynamic: false, licenceFee: 0 },
-  'Golf Son Vida': { low: 85, peak: 190, dynamic: true, licenceFee: 3 },
-  'Golf de Andratx': { low: 90, peak: 140, dynamic: false, licenceFee: null },
-  'Palma Pitch & Putt': { low: 20, peak: 30, dynamic: false, licenceFee: 2, holes: 9, feeMode: 'pitch_putt' },
-  'Pula Golf': { low: 69, peak: 145, dynamic: true, licenceFee: 0 },
-  'Real Golf de Bendinat': { low: 74, peak: 123, dynamic: false, licenceFee: 0 },
-  'Reserva Rotana': { low: 85, peak: 130, dynamic: false, licenceFee: 0, holes: 9, feeMode: 'hotel_only' },
-  'Son Muntaner': { low: 110, peak: 259, dynamic: true, licenceFee: 3 },
-  'T Golf Calvi\u00e0 (Poniente)': { low: 80, peak: 210, dynamic: true, licenceFee: null },
-  'T Golf Palma (Puntir\u00f3)': { low: 60, peak: 150, dynamic: true, licenceFee: null },
-  "Vall d'Or Golf": { low: 99, peak: 132, dynamic: false, licenceFee: 0 },
+  "Canyamel Golf": {"low":85,"peak":145,"dynamic":false,"licenceFee":3},
+  "Capdepera Golf": {"low":79,"peak":125,"dynamic":true,"licenceFee":0},
+  "Club de Golf Alcanada": {"low":115,"peak":220,"dynamic":false,"licenceFee":3},
+  "Golf Club Son Servera": {"low":80,"peak":145,"dynamic":false,"licenceFee":0},
+  "Golf de Andratx": {"low":90,"peak":140,"dynamic":false,"licenceFee":3},
+  "Golf Maioris": {"low":91,"peak":110,"dynamic":false,"licenceFee":0},
+  "Golf Pollença": {"low":55,"peak":65,"dynamic":false,"licenceFee":0,"holes":9},
+  "Golf Santa Ponsa 1": {"low":77,"peak":126,"dynamic":false,"licenceFee":0},
+  "Golf Santa Ponsa 2": {"low":65,"peak":88,"dynamic":false,"licenceFee":0},
+  "Golf Santa Ponsa 3": {"low":25,"peak":30,"dynamic":false,"licenceFee":0,"holes":9},
+  "Golf Son Antem East": {"low":64,"peak":140,"dynamic":true,"licenceFee":0},
+  "Golf Son Antem West": {"low":67,"peak":135,"dynamic":true,"licenceFee":0},
+  "Golf Son Gual": {"low":115,"peak":165,"dynamic":false,"licenceFee":0},
+  "Golf Son Quint": {"low":70,"peak":172,"dynamic":true,"licenceFee":3},
+  "Golf Son Termes": {"low":80,"peak":100,"dynamic":false,"licenceFee":0},
+  "Golf Son Vida": {"low":85,"peak":190,"dynamic":true,"licenceFee":3},
+  "Palma Pitch & Putt": {"low":20,"peak":30,"dynamic":false,"licenceFee":2,"holes":9,"feeMode":"pitch_putt"},
+  "Pula Golf": {"low":69,"peak":145,"dynamic":true,"licenceFee":0},
+  "Real Golf de Bendinat": {"low":74,"peak":123,"dynamic":false,"licenceFee":0},
+  "Reserva Rotana": {"low":85,"peak":130,"dynamic":false,"licenceFee":0,"holes":9,"feeMode":"hotel_only"},
+  "Son Muntaner": {"low":110,"peak":259,"dynamic":true,"licenceFee":3},
+  "T Golf Calvià (Poniente)": {"low":80,"peak":210,"dynamic":true,"licenceFee":3},
+  "T Golf Palma (Puntiró)": {"low":60,"peak":150,"dynamic":true,"licenceFee":3},
+  "Vall d'Or Golf": {"low":99,"peak":132,"dynamic":false,"licenceFee":0},
 }
 
 export function getCoursePricingByName(name) {
@@ -39,7 +39,7 @@ export function getCoursePricingByName(name) {
 }
 
 function formatEuro(amount) {
-  return `\u20ac${amount}`
+  return `€${amount}`
 }
 
 export function formatCourseFeeLabel(name, options = {}) {
