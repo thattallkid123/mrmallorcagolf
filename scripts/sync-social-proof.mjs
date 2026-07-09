@@ -2,12 +2,22 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 const repoRoot = process.cwd()
-const masterPath =
-  'C:\\Users\\andyg\\My Drive\\Mr Mallorca Golf\\Reference\\MMG_TESTIMONIALS_AND_FEEDBACK.md'
 const socialProofPath = path.join(repoRoot, 'src', 'data', 'site-social-proof.json')
+const defaultMasterPath =
+  'C:\\Users\\andyg\\My Drive\\Mr Mallorca Golf\\Reference\\MMG_TESTIMONIALS_AND_FEEDBACK.md'
 
 function readUtf8(filePath) {
   return fs.readFileSync(filePath, 'utf8')
+}
+
+function resolveMasterPath() {
+  const candidates = [
+    process.env.MMG_TESTIMONIAL_MASTER_PATH,
+    path.join(repoRoot, 'MMG_TESTIMONIALS_AND_FEEDBACK.md'),
+    defaultMasterPath,
+  ].filter(Boolean)
+
+  return candidates.find((candidate) => fs.existsSync(candidate)) ?? null
 }
 
 function countPublicReadyGoogleReviews(text) {
@@ -29,8 +39,24 @@ function countPublicReadyGoogleReviews(text) {
 }
 
 function syncSocialProof({ checkOnly = false } = {}) {
-  const masterText = readUtf8(masterPath)
   const current = JSON.parse(readUtf8(socialProofPath))
+  const masterPath = resolveMasterPath()
+
+  if (!masterPath) {
+    if (checkOnly) {
+      console.warn(
+        'Skipping social proof sync check because no testimonial master file was found. ' +
+          'Set MMG_TESTIMONIAL_MASTER_PATH or add MMG_TESTIMONIALS_AND_FEEDBACK.md at the repo root to enable it.',
+      )
+      return false
+    }
+
+    throw new Error(
+      'No testimonial master file found. Set MMG_TESTIMONIAL_MASTER_PATH or add MMG_TESTIMONIALS_AND_FEEDBACK.md at the repo root.',
+    )
+  }
+
+  const masterText = readUtf8(masterPath)
   const next = {
     ...current,
     reviewCount: countPublicReadyGoogleReviews(masterText),
