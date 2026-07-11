@@ -1,6 +1,6 @@
 ---
 name: update-testimonials
-description: Add or update client testimonials, the Trustpilot rating badge, and other social-proof copy across all 7 locales. Use ONLY when Andy explicitly asks to add/change a testimonial or update the Trustpilot numbers — never change testimonials on your own initiative.
+description: Add or update client testimonials, the Google reviews rating badge, and other social-proof copy across all 7 locales. Use ONLY when Andy explicitly asks to add/change a testimonial or update the Google review numbers — never change testimonials on your own initiative.
 ---
 
 # Testimonials & Social Proof
@@ -26,9 +26,9 @@ Before editing, grep `testimonial` across `src/` — surfaces may have been adde
 4. **Translate for de/es/fr/nl/sv/zh in the same edit** — no English-only structure gaps. Match the register of the existing translations (see the current Adam testimonial in each locale for tone). For zh, follow the `localize-check` skill rules.
 5. Keep factual claims verifiable (competition wins, handicap drops) — if a claim can't be verified, soften it or leave it out.
 
-## Trustpilot badge update
+## Reviews badge update
 
-When the rating or review count changes: edit `TP_RATING` and `TP_COUNT` at the top of `src/components/TrustpilotBadge.jsx`. Those two constants drive the badge on every page (contact, footer) and the `aria-label`. Nothing else to touch.
+When the rating or review count changes: edit `REVIEW_RATING` and `REVIEW_COUNT` at the top of `src/components/ReviewBadge.jsx`. Those two constants drive the badge on every page (contact, footer) and the `aria-label`. The site uses **Google reviews** (replaced Trustpilot, July 2026). Nothing else to touch.
 
 ## Verify and ship
 

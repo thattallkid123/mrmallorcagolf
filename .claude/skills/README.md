@@ -11,7 +11,7 @@ These are **separate from the Drive-mastered `MMG_SKILL_*` docs** synced by `SKI
 | `ship` | Deploying any change — the mandatory completion gate |
 | `localize-check` | Any copy change touching locales or shared content |
 | `meta-ctr` | Writing/rewriting meta descriptions and titles |
-| `update-testimonials` | Andy asks to change testimonials or Trustpilot numbers |
+| `update-testimonials` | Andy asks to change testimonials or Google review numbers |
 | `add-site-photos` | New photos (clients, courses, heroes) onto the site |
 | `seo-review` | GA4/Search Console review → page-level actions |
 | `new-prototype` | New interactive tool/quiz/selector, incl. zh deployment checklist |
