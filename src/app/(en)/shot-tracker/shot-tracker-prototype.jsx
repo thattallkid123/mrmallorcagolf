@@ -12,6 +12,14 @@ const STORAGE_KEY = 'mmg-shot-tracker-prototype-v4'
 const YARDS_PER_METER = 1.09361
 const QUICK_NOTES = ['Good strike', 'Pulled left', 'Blocked right', 'Downwind', 'Into wind', 'From rough']
 
+function getHoleTeeLength(hole, teeName) {
+  const selectedLength = hole?.tees?.[teeName]?.lengthMeters
+  if (Number.isFinite(selectedLength)) return selectedLength
+
+  const fallbackLength = Object.values(hole?.tees || {}).find((tee) => Number.isFinite(tee?.lengthMeters))?.lengthMeters
+  return Number.isFinite(fallbackLength) ? fallbackLength : 0
+}
+
 function toRadians(value) {
   return (value * Math.PI) / 180
 }
@@ -92,7 +100,7 @@ function buildEmptyScorecard(course, teeName) {
   return course.holes.map((hole) => ({
     holeNumber: hole.holeNumber,
     par: hole.par,
-    teeLengthMeters: hole.tees[teeName]?.lengthMeters || hole.tees.white.lengthMeters,
+    teeLengthMeters: getHoleTeeLength(hole, teeName),
     score: '',
     putts: '',
     penalties: '',
@@ -130,7 +138,7 @@ function calculatePerformanceSnapshot({ scorecard, course, teeName, shots }) {
   const playedHoleModels = course.holes.slice(0, holesPlayed || course.holes.length)
   const parPlayed = playedHoleModels.reduce((sum, hole) => sum + hole.par, 0)
   const expectedFromTeeTotal = playedHoleModels.reduce(
-    (sum, hole) => sum + expectedStrokesFromTee(hole.tees[teeName]?.lengthMeters || hole.tees.white.lengthMeters, hole.par),
+    (sum, hole) => sum + expectedStrokesFromTee(getHoleTeeLength(hole, teeName), hole.par),
     0,
   )
 
@@ -224,7 +232,7 @@ function HoleOverview({
   remainingMeters,
   trackedHoleDistance,
 }) {
-  const selectedHoleLength = hole.tees[teeName]?.lengthMeters || hole.tees.white.lengthMeters
+  const selectedHoleLength = getHoleTeeLength(hole, teeName)
   const greenDistances = getGreenDistances(remainingMeters, hole.greenDepthMeters)
   const targetDistances = getTargetDistances(hole, selectedHoleLength, trackedHoleDistance)
   const distanceLabel = latestShot?.distanceMeters
@@ -643,7 +651,7 @@ export default function ShotTrackerPrototype() {
   const currentHoleShots = currentRoundShots.filter((shot) => shot.holeNumber === holeNumber)
   const latestShot = currentHoleShots[0] || null
   const trackedHoleDistance = getHoleShotDistance(currentRoundShots, holeNumber)
-  const selectedHoleLength = selectedHole.tees[teeName]?.lengthMeters || selectedHole.tees.white.lengthMeters
+  const selectedHoleLength = getHoleTeeLength(selectedHole, teeName)
   const remainingMeters = Math.max(0, selectedHoleLength - trackedHoleDistance)
   const handicapIndex = computeHandicapIndex(savedRounds)
   const snapshot = calculatePerformanceSnapshot({
@@ -922,7 +930,7 @@ export default function ShotTrackerPrototype() {
               </div>
               <div className={styles.summaryCard}>
                 <span className={styles.metaLabel}>Hole length</span>
-                <strong className={styles.summaryValue}>{formatDistance(selectedHole.tees[teeName]?.lengthMeters, unit)}</strong>
+                <strong className={styles.summaryValue}>{formatDistance(getHoleTeeLength(selectedHole, teeName), unit)}</strong>
               </div>
               <div className={styles.summaryCard}>
                 <span className={styles.metaLabel}>Target carry</span>

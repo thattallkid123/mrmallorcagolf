@@ -6,14 +6,14 @@ const REVIEW_SLUG_TO_COURSE = {
   'golf-andratx-review': 'Golf de Andratx',
   'santa-ponsa-1-review': 'Golf Santa Ponsa 1',
   'son-antem-west-review': 'Golf Son Antem West',
-  'son-gual-review': 'Son Gual',
+  'son-gual-review': 'Golf Son Gual',
   'son-muntaner-review': 'Son Muntaner',
   'son-termes-review': 'Golf Son Termes',
-  't-golf-calvia-review': 'T Golf Calvià (Poniente)',
+  't-golf-calvia-review': 'T Golf Calvi\u00e0 (Poniente)',
 }
 
 function extractParValue(text) {
-  const match = text.match(/(?:Par|æ ‡å‡†æ†)\s*([0-9]+)/i)
+  const match = text.match(/(?:Par|标准杆)\s*([0-9]+)/i)
   return match ? Number(match[1]) : null
 }
 

@@ -6279,8 +6279,8 @@ export const SCORECARD_DATA = {
         "totalLengthYards": 2852,
         "courseRating": 34.5,
         "slope": 134,
-        "outLengthMeters": 2608,
-        "outLengthYards": 2852,
+        "outLengthMeters": null,
+        "outLengthYards": null,
         "inLengthMeters": null,
         "inLengthYards": null,
         "holeLengthsMeters": [
@@ -6330,8 +6330,8 @@ export const SCORECARD_DATA = {
         "totalLengthYards": 2561,
         "courseRating": 33,
         "slope": 126,
-        "outLengthMeters": 2342,
-        "outLengthYards": 2561,
+        "outLengthMeters": null,
+        "outLengthYards": null,
         "inLengthMeters": null,
         "inLengthYards": null,
         "holeLengthsMeters": [
