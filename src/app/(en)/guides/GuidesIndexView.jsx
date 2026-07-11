@@ -2,6 +2,60 @@ import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
+import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
+
+function JsonLd({ data }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+}
+
+function buildGuidesIndexSchema(locale, content) {
+  const pagePath = buildLocalePath('/guides', locale)
+  const guides = content.liveGuides
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: content.hero.title,
+    description: content.hero.lead,
+    url: `${SITE_ORIGIN}${pagePath}`,
+    about: {
+      '@type': 'Thing',
+      name: 'Golf in Mallorca',
+    },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      numberOfItems: guides.length,
+      itemListElement: guides.map((guide, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: shortTitle(guide.title),
+        url: `${SITE_ORIGIN}${buildLocalePath(`/guides/${guide.slug}`, locale)}`,
+      })),
+    },
+  }
+}
+
+function buildGuidesBreadcrumbSchema(locale, content) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: content.hero.breadcrumbHome || 'Home',
+        item: `${SITE_ORIGIN}${buildLocalePath('/', locale)}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: content.hero.breadcrumbCurrent || 'Guides',
+        item: `${SITE_ORIGIN}${buildLocalePath('/guides', locale)}`,
+      },
+    ],
+  }
+}
 
 const HERO_ACTIONS = {
   en: { experience: 'See the Experience', reviews: 'Course Reviews', articles: 'Guides & Articles' },
@@ -106,6 +160,8 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
 
   return (
     <PageLayout lang={pageLayoutLang} navTransparent={false} showWhatsAppButton={false}>
+      <JsonLd data={buildGuidesIndexSchema(locale, content)} />
+      <JsonLd data={buildGuidesBreadcrumbSchema(locale, content)} />
       <header className="page-hero page-hero--guides">
         <div className="page-hero__media" aria-hidden="true">
           <Image
