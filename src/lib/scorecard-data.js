@@ -1,10 +1,9 @@
-// Generated from mmg-tools/pricing/scorecards.json via .\mmg.ps1 scorecards.
+// Generated from mmg-tools/pricing/edit/confirmed/scorecards.json via .\mmg.ps1 scorecards.
 // Source chain:
-// - Par/SI: Google Drive Reference/SCORECARD_MASTER.md.
-// - Tee totals/rating/slope: merged from scorecard PDFs, manual scorecard transcription, and retained legacy data where still noted.
+// - Editable master: mmg-tools/pricing/edit/confirmed/scorecards.json.
+// - Legacy rebuild inputs still available: SCORECARD_MASTER.md plus trusted PDF/manual tee sources.
 
 const VERIFIED_PDF_MANUAL = "verified_pdf_manual"
-const VERIFIED_PDF_MANUAL_PARTIAL = "verified_pdf_manual_partial"
 const VERIFIED_PDF_TEXT = "verified_pdf_text"
 
 export const SCORECARD_DATA = {
@@ -2438,10 +2437,10 @@ export const SCORECARD_DATA = {
         3
       ]
     ],
-    "teeVerification": "verified_pdf_manual_partial",
+    "teeVerification": "verified_pdf_manual",
     "teeNotes": [
       "Values manually transcribed from public course scorecard or official handicap source images.",
-      "Manual transcription from rendered scorecard image. The scorecard clearly shows tee lengths and slope; existing seeded course ratings are retained until a card with visible ratings is available."
+      "Kept as the 9-hole course (par 30). Course rating and slope from the official RFEG WHS equivalence card (BP51-3 SANTA PONSA - Santa Ponsa III, valid from 30/10/2011): men's Amarillas 18-hole CR 59.1 / SR 101 and men's Rojas 18-hole CR 55.9 / SR 75. Stored as 9-hole course ratings (18-hole CR halved; slope carried as-is), matching the convention used for the other 9-hole courses. Women's Rojas rating (CR 58.2 / SR 88) available on the card if a ladies tee is added later."
     ],
     "tees": [
       {
@@ -2449,8 +2448,8 @@ export const SCORECARD_DATA = {
         "label": "Yellow",
         "totalLengthMeters": 1599,
         "totalLengthYards": 1749,
-        "courseRating": 30,
-        "slope": 29,
+        "courseRating": 29.6,
+        "slope": 101,
         "outLengthMeters": 1599,
         "outLengthYards": 1749,
         "inLengthMeters": null,
@@ -2484,8 +2483,8 @@ export const SCORECARD_DATA = {
         "label": "Red",
         "totalLengthMeters": 1332,
         "totalLengthYards": 1457,
-        "courseRating": 30,
-        "slope": 72,
+        "courseRating": 28,
+        "slope": 75,
         "outLengthMeters": 1332,
         "outLengthYards": 1457,
         "inLengthMeters": null,
@@ -6279,8 +6278,8 @@ export const SCORECARD_DATA = {
         "totalLengthYards": 2852,
         "courseRating": 34.5,
         "slope": 134,
-        "outLengthMeters": null,
-        "outLengthYards": null,
+        "outLengthMeters": 2608,
+        "outLengthYards": 2852,
         "inLengthMeters": null,
         "inLengthYards": null,
         "holeLengthsMeters": [
@@ -6330,8 +6329,8 @@ export const SCORECARD_DATA = {
         "totalLengthYards": 2561,
         "courseRating": 33,
         "slope": 126,
-        "outLengthMeters": null,
-        "outLengthYards": null,
+        "outLengthMeters": 2342,
+        "outLengthYards": 2561,
         "inLengthMeters": null,
         "inLengthYards": null,
         "holeLengthsMeters": [
@@ -6380,7 +6379,6 @@ export const SCORECARD_DATA = {
 
 export const SCORECARD_TEE_VERIFICATION = {
   VERIFIED_PDF_MANUAL,
-  VERIFIED_PDF_MANUAL_PARTIAL,
   VERIFIED_PDF_TEXT,
 }
 
