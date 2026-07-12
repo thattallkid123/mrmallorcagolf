@@ -1,6 +1,6 @@
 # Locale Parity & Translation Boundaries
 
-**Critical:** All 6 languages (EN, DE, ES, FR, NL, SV, ZH) must have identical structure and flag patterns.
+**Critical:** All 7 languages (EN, DE, ES, FR, NL, SV, ZH) must have identical structure and flag patterns.
 
 ## Quick Lookup: Which File Controls What
 

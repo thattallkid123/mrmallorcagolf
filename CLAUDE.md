@@ -117,7 +117,7 @@ Next newsletter step: do not build a heavy programme yet — the system is mostl
 
 ## Course scorecard data (par / SI / distances)
 
-**Par / SI / tee data now sync from the MMG tools scorecard pipeline.** Source of truth remains the official club PDFs in Drive `Reference/Scorecards/Scorecard PDFs/` plus the human-readable `Reference/SCORECARD_MASTER.md`. Run `C:\Users\andyg\Desktop\cursor\mmg-tools\.\mmg.ps1 scorecards` to refresh `src/lib/scorecard-data.js` from that master. Course-listing pills and any editorial/blog copy that mention par or length are still manual surfaces and should be checked separately. For the full manual chain (PDF → SCORECARD_MASTER → generated scorecard data → `src/lib/golf-courses-data.js` pills text → any blog content mentioning that par), use the `/scorecard-update` skill.
+**Par / SI / tee data now sync from the MMG tools scorecard pipeline.** Ultimate truth is the official club PDFs in Drive `Reference/Scorecards/Scorecard PDFs/`. The editable machine master is `mmg-tools\pricing\edit\confirmed\scorecards.json`; run `.\mmg.ps1 scorecards` from mmg-tools to refresh `src/lib/scorecard-data.js` (plus the scoring apps) from it. `Reference/SCORECARD_MASTER.md` is a human-readable legacy reference only — do not edit it as a sync source. Validation commands: `.\mmg.ps1 scorecard-audit` (PDF vs master) and `.\mmg.ps1 scorecard-sources` (PDF vs central JSON vs strokes-gained). Course-listing pills and any editorial/blog copy that mention par or length are still manual surfaces and should be checked separately. For the full manual chain (PDF → `scorecards.json` → generated scorecard data → `src/lib/golf-courses-data.js` pills text → any blog content mentioning that par), use the `/scorecard-update` skill.
 
 ## Course pricing data — sync chain
 
@@ -178,7 +178,7 @@ Next.js 15 App Router, React 18, JSX only. Vercel deployment from GitHub. Langua
 - **Course reviews:** Read `COURSE_BLOG_PIPELINE.md` before starting.
 - **Course photos:** Always `ImageOps.exif_transpose()` from original source files. Never crop blog images. Max 1600px, WebP quality 82. (Full workflow: `/add-site-photos`.)
 - **Prototype images:** Use `/images/*-card.webp` for guide card images, `/images/courses/*.webp` for full course detail images. No external stock photos (Unsplash etc.) — all from `public/images/`. See `docs/prototype-guide.md`.
-- **Import paths:** English pages use `../../components/`; language pages use `../../../components/`.
+- **Import paths:** Section pages live under a locale directory — `src/app/(en)/…` for English (route group) and `src/app/<lang>/…` for other locales — so both sit the same depth from `src/components`. A page such as `src/app/(en)/golf-courses/GolfCoursesView.jsx` imports via `../../../components/`. Count directory levels rather than assuming a fixed depth; deeper nesting adds another `../`.
 - **Content:** English is master. Do not add localized content not present in English.
 - **Shared locale edits:** If you add a new key to shared content used across locales, add it for de/es/fr/nl/sv/zh in the same edit or provide an explicit getter fallback. No English-only structure gaps.
 - **Release gate for locale-facing work:** After editing shared content, locale content, metadata, or localized page copy, run `npm run check:i18n-release` before commit.
