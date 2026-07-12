@@ -1,4 +1,4 @@
-// Generated from mmg-tools/pricing/course-access-master.csv via .\\mmg.ps1 pricing.
+// Generated from mmg-tools/pricing/edit/confirmed/course-access-master.csv via .\\mmg.ps1 pricing.
 // Edit the access master CSV, then rerun the sync.
 // Canonical source for handicap limits, certificate expectations, access type, and 9/18-hole facts.
 

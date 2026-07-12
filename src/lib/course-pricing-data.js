@@ -1,6 +1,6 @@
 import { resolveCourseAccessName } from './course-access-data.js'
 
-// Generated from mmg-tools/pricing/course-pricing-master.json via .\\mmg.ps1 pricing.
+// Generated from mmg-tools/pricing/output/course-pricing-master.json via .\\mmg.ps1 pricing.
 // Edit the pricing master, then rerun the sync.
 
 export const COURSE_PRICING_BY_NAME = {
@@ -14,8 +14,8 @@ export const COURSE_PRICING_BY_NAME = {
   "Golf Santa Ponsa 1": {"low":77,"peak":126,"dynamic":false,"licenceFee":0},
   "Golf Santa Ponsa 2": {"low":65,"peak":88,"dynamic":false,"licenceFee":0},
   "Golf Santa Ponsa 3": {"low":25,"peak":30,"dynamic":false,"licenceFee":0,"holes":9},
-  "Golf Son Antem East": {"low":64,"peak":140,"dynamic":true,"licenceFee":0},
-  "Golf Son Antem West": {"low":67,"peak":135,"dynamic":true,"licenceFee":0},
+  "Golf Son Antem East": {"low":105,"peak":140,"dynamic":true,"licenceFee":0},
+  "Golf Son Antem West": {"low":109,"peak":135,"dynamic":true,"licenceFee":0},
   "Golf Son Gual": {"low":115,"peak":165,"dynamic":false,"licenceFee":0},
   "Golf Son Quint": {"low":70,"peak":172,"dynamic":true,"licenceFee":3},
   "Golf Son Termes": {"low":80,"peak":100,"dynamic":false,"licenceFee":0},
@@ -26,7 +26,7 @@ export const COURSE_PRICING_BY_NAME = {
   "Reserva Rotana": {"low":85,"peak":130,"dynamic":false,"licenceFee":0,"holes":9,"feeMode":"hotel_only"},
   "Son Muntaner": {"low":110,"peak":259,"dynamic":true,"licenceFee":3},
   "T Golf Calvià (Poniente)": {"low":80,"peak":210,"dynamic":true,"licenceFee":3},
-  "T Golf Palma (Puntiró)": {"low":60,"peak":150,"dynamic":true,"licenceFee":3},
+  "T Golf Palma (Puntiró)": {"low":105,"peak":150,"dynamic":true,"licenceFee":3},
   "Vall d'Or Golf": {"low":99,"peak":132,"dynamic":false,"licenceFee":0},
 }
 
