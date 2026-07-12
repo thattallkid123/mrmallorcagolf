@@ -25,9 +25,6 @@ For the step-by-step pricing update flow, use `docs/pricing-change-checklist.md`
 - `src/lib/golf-courses-helpers.js`
   - shared derivation helpers for course price, distance, and slug/meta lookups
 
-- `src/lib/experience-copy.js`
-  - shared localized promo/sidebar copy for guides, about, and golf-course conversion sections
-
 - `src/lib/contact-content.js`
   - form layout and locale copy for the contact page
   - experience options are derived from `offers-content.js` at runtime, so do not maintain a second pricing list there
@@ -71,25 +68,25 @@ This is usually worth it for pricing and offer facts. It is usually not worth it
   - Visible price-bearing areas: hero/package cards, course cards, and the trip-planning / enquiry CTAs
 - Play With A Pro
   - `src/lib/play-with-a-pro-content.js`
-  - `src/app/en/play-with-a-pro/PlayWithAProView.jsx`
+  - `src/app/(en)/play-with-a-pro/PlayWithAProView.jsx`
   - Visible price-bearing areas: hero body, package cards, multi-day section
 - Signature Day
   - `src/lib/signature-day-content.js`
-  - `src/app/en/signature-day/`
+  - `src/app/(en)/signature-day/`
   - Visible price-bearing areas: hero price and intro/body copy
 - Plan Your Trip
   - `src/lib/plan-your-trip-content.js`
-  - `src/app/en/plan-your-trip/`
+  - `src/app/(en)/plan-your-trip/`
   - Visible price-bearing areas: enquiry framing and price-on-enquiry language
 - Contact
   - `src/lib/contact-content.js`
-  - `src/app/en/contact/`
+  - `src/app/(en)/contact/`
   - Visible price-bearing areas: radio labels and option copy
 - Golf courses directory and selector
   - `src/lib/golf-courses-data.js`
   - `src/lib/golf-courses-helpers.js`
-  - `src/app/en/golf-courses/GolfCoursesClient.jsx`
-  - `src/app/en/course-selector/CourseSelectorClient.jsx`
+  - `src/app/(en)/golf-courses/GolfCoursesClient.jsx`
+  - `src/app/(en)/course-selector/CourseSelectorClient.jsx`
   - Visible price-bearing areas: peak/low pills, course cards, comparison copy
 - Guides and long-form course articles
   - `src/lib/guide-article-content.js`
