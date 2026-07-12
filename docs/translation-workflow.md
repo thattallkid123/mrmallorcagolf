@@ -57,9 +57,9 @@ That means there is no safe “English only” release for translated pages.
 
 ### Shared renderers
 
-- `src/app/guides/GuideArticleView.jsx`
-- `src/app/guides/GuidePostView.jsx`
-- `src/app/golf-courses/GolfCoursesClient.jsx`
+- `src/app/(en)/guides/GuideArticleView.jsx`
+- `src/app/(en)/guides/GuidePostView.jsx`
+- `src/app/(en)/golf-courses/GolfCoursesClient.jsx`
 - `src/styles/globals.css`
 
 ## Safe Vs Unsafe Changes
