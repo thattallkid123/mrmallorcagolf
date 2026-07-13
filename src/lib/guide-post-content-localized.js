@@ -2328,7 +2328,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€75-125', 'Greenfee 2026'],
+            ['€77-126', 'Greenfee 2026'],
             ['8/10', 'Schwierigkeit'],
             ['Par 72', 'Championship-Layout'],
             ['Öffentlich', 'Für Gäste buchbar'],
@@ -2338,7 +2338,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Hochsaison von Mitte März bis Anfang Juni sowie von Mitte September bis Anfang November: €125. Zwischensaison: €105. Nebensaison: €75. Die vollständigen Preise stehen auf golf-santaponsa.com. Ein gültiger WHS-Handicapnachweis ist erforderlich.',
+            'Hochsaison von Mitte März bis Anfang Juni sowie von Mitte September bis Anfang November: €126. Zwischensaison: €106. Nebensaison: €77. Die vollständigen Preise stehen auf golf-santaponsa.com. Ein gültiger WHS-Handicapnachweis ist erforderlich.',
         },
         {
           type: 'paragraph',
@@ -2417,7 +2417,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€75-125', 'Green fees 2026'],
+            ['€77-126', 'Green fees 2026'],
             ['8/10', 'Dificultad'],
             ['Par 72', 'Recorrido championship'],
             ['Público', 'Abierto a visitantes'],
@@ -2427,7 +2427,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Temporada alta de mediados de marzo a principios de junio y de mediados de septiembre a principios de noviembre: €125. Temporada media: €105. Temporada baja: €75. Los detalles completos están en golf-santaponsa.com. Se requiere certificado de hándicap WHS válido.',
+            'Temporada alta de mediados de marzo a principios de junio y de mediados de septiembre a principios de noviembre: €126. Temporada media: €106. Temporada baja: €77. Los detalles completos están en golf-santaponsa.com. Se requiere certificado de hándicap WHS válido.',
         },
         {
           type: 'paragraph',
@@ -2506,7 +2506,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€75-125', 'Green fees 2026'],
+            ['€77-126', 'Green fees 2026'],
             ['8/10', 'Difficulté'],
             ['Par 72', 'Parcours championship'],
             ['Public', 'Ouvert aux visiteurs'],
@@ -2516,7 +2516,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            'Haute saison de mi-mars à début juin puis de mi-septembre à début novembre : €125. Mi-saison : €105. Basse saison : €75. Les détails complets figurent sur golf-santaponsa.com. Un certificat de handicap WHS valide est requis.',
+            'Haute saison de mi-mars à début juin puis de mi-septembre à début novembre : €126. Mi-saison : €106. Basse saison : €77. Les détails complets figurent sur golf-santaponsa.com. Un certificat de handicap WHS valide est requis.',
         },
         {
           type: 'paragraph',
@@ -2602,7 +2602,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€75-125",
+      "€77-126",
       "Greenfees 2026"
     ],
     [
@@ -2625,7 +2625,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Hoogseizoen van half maart tot begin juni en van half september tot begin november: €125. Middenseizoen: €105. Laagseizoen: €75. De volledige details staan op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
+  "text": "Hoogseizoen van half maart tot begin juni en van half september tot begin november: €126. Middenseizoen: €106. Laagseizoen: €77. De volledige details staan op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
 },
 {
   "type": "paragraph",
@@ -2712,7 +2712,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€75-125",
+      "€77-126",
       "Greenfees 2026"
     ],
     [
@@ -2735,7 +2735,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "Högsäsong från mitten av mars till början av juni och från mitten av september till början av november: €125. Mellansäsong: €105. Lågsäsong: €75. Fullständig prislista finns på golf-santaponsa.com. Giltigt WHS-handicapintyg krävs."
+  "text": "Högsäsong från mitten av mars till början av juni och från mitten av september till början av november: €126. Mellansäsong: €106. Lågsäsong: €77. Fullständig prislista finns på golf-santaponsa.com. Giltigt WHS-handicapintyg krävs."
 },
 {
   "type": "paragraph",
@@ -2822,7 +2822,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "type": "facts",
   "items": [
     [
-      "€75-125",
+      "€77-126",
       "2026年果岭费"
     ],
     [
@@ -2845,7 +2845,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
 },
 {
   "type": "paragraph",
-  "text": "旺季为3月中旬至6月初，以及9月中旬至11月初，价格约为€125。中间季节约€105。淡季约€75。完整信息见golf-santaponsa.com。需要提供有效的WHS差点证明。"
+  "text": "旺季为3月中旬至6月初，以及9月中旬至11月初，价格约为€126。中间季节约€106。淡季约€77。完整信息见golf-santaponsa.com。需要提供有效的WHS差点证明。"
 },
 {
   "type": "paragraph",

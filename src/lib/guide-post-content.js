@@ -504,7 +504,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['Peak €125 / Low €75', '2026 price guide'],
+            ['Peak €126 / Low €77', '2026 price guide'],
             ['8/10', 'Difficulty'],
             ['Par 72', 'Championship layout'],
             ['Public', 'Open to all visitors'],
@@ -513,7 +513,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: '2026 Green Fees' },
         {
           type: 'paragraph',
-          text: 'Peak price is €125 and the low-season entry point is €75. Full details at golf-santaponsa.com. A valid WHS handicap certificate is required.',
+          text: 'Peak price is €126 and the low-season entry point is €77. Full details at golf-santaponsa.com. A valid WHS handicap certificate is required.',
         },
         {
           type: 'paragraph',
