@@ -28,7 +28,7 @@ const IGNORE_DIRS = new Set([
 
 const IGNORE_FILES = new Set([
   path.join('scripts', 'check-text-corruption.js'),
-  path.join('src', 'app', 'golf-courses', 'GolfCoursesClient.jsx'),
+  path.join('src', 'app', '(en)', 'golf-courses', 'GolfCoursesClient.jsx'),
   'package-lock.json',
 ])
 const MAX_FILE_BYTES = 2 * 1024 * 1024

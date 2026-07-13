@@ -39,7 +39,7 @@ Use this as the exact map when a price changes. Status column updated 2026-06-18
 | `prototypes/golf-cost-calculator/index.html` | ✅ Verified €695 / €950 |
 | `prototypes/course-selector-simple/index.html` | Check — no price found in last scan |
 | `prototypes/hotel-recommender/index.html` | Check — no price found in last scan |
-| `prototypes/golf-day-builder/index.html` | Check — no price found in last scan |
+| `src/app/(en)/tools/golf-day-builder/` | Live route (promoted from prototype) — no price found in last scan |
 
 ## Course pricing and golf-cost reference layers
 
@@ -59,7 +59,7 @@ Use this as the exact map when a price changes. Status column updated 2026-06-18
 | File | Status |
 |---|---|
 | `docs/pricing-change-checklist.md` | ✅ Current |
-| `docs/pricing-handover-2026-06-18.md` | ✅ Current — records the Jun 2026 decision |
+| `docs/archive/pricing-handover-2026-06-18.md` | Archived — records the Jun 2026 decision |
 | `docs/pricing-surfaces-inventory.md` | ✅ This file — updated 2026-06-18 |
 | `docs/content-architecture.md` | Check for hardcoded price references |
 | `CLAUDE.md` | No hardcoded price (pricing rules link out to checklist) |

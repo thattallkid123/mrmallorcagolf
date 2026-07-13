@@ -27,7 +27,7 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 - `standalone-apps/mallorca-hub/`
 - `prototypes/course-selector-simple/index.html`
 - `prototypes/hotel-recommender/index.html`
-- `prototypes/golf-day-builder/index.html`
+- `src/app/(en)/tools/golf-day-builder/` (promoted from prototype to live route)
 - `prototypes/golf-cost-calculator/index.html`
 - `prototypes/index.html`
 - Any other app or tool that shows the same course or package price
@@ -39,7 +39,7 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 - `public/downloads/*.pdf` via `python scripts/generate-lead-magnet-pdfs.py`
 - `docs/content-architecture.md`
 - `docs/CONTENT_STRUCTURE.md`
-- `docs/pricing-handover-2026-06-18.md`
+- `docs/archive/pricing-handover-2026-06-18.md`
 - `CLAUDE.md`
 - `README.md`
 - Any audit, handover, or encyclopaedia/reference note that mentions the price

@@ -110,7 +110,7 @@ This is usually worth it for pricing and offer facts. It is usually not worth it
   - `docs/CONTENT_STRUCTURE.md`
   - `docs/content-architecture.md`
   - `docs/site-audit-consolidated.md`
-  - `docs/audit-progress-june-2026.md`
+  - `docs/archive/audit-progress-june-2026.md`
   - These often repeat prices for reference, guidance, or comparison, so they need a search pass when rates change
 - Blog/guide planning docs
   - course blog pipeline and guide planning docs can carry pricing examples or notes, even when the live article content is unchanged
@@ -158,7 +158,7 @@ This is usually worth it for pricing and offer facts. It is usually not worth it
 | Guides and blogs | Guide article content, guide post content, golf-course guide copy | Search the guide files for price mentions and refresh examples |
 | Local tools and apps | `mmg-tools/day-cost/index.html`, `mmg-tools/guide/index.html`, `standalone-apps/mallorca-hub/index.html` | Update the local pricing source and any visible text in the app |
 | Metadata and snippets | `src/lib/page-metadata.js`, structured data | Update SEO text and structured data if the price appears there |
-| Internal docs | `docs/CONTENT_STRUCTURE.md`, `docs/site-audit-consolidated.md`, `docs/audit-progress-june-2026.md` | Search and refresh examples so future audits stay in sync |
+| Internal docs | `docs/CONTENT_STRUCTURE.md`, `docs/site-audit-consolidated.md`, `docs/archive/audit-progress-june-2026.md` | Search and refresh examples so future audits stay in sync |
 | Private reference | Encyclopaedia master / private course notes | Keep fuller pricing there if Andy wants it documented but not public |
 | Manual/public extras | LinkedIn, Google Business Profile, Trustpilot, email, PDFs, partner pages | Update by hand and re-check the old price is gone |
 
@@ -188,7 +188,7 @@ Use this when a price changes, or when we want to make sure a new price is refle
 5. Update internal docs and audit notes
    - `docs/CONTENT_STRUCTURE.md`
    - `docs/site-audit-consolidated.md`
-   - `docs/audit-progress-june-2026.md`
+   - `docs/archive/audit-progress-june-2026.md`
    - any guide/blog planning docs that repeat price examples
    - private encyclopaedia/reference docs if Andy wants the price recorded but not public
 6. Update manual/public-facing extras
