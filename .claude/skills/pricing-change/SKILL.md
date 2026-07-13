@@ -18,10 +18,13 @@ Optional reminder packet: `node scripts/pricing-change-reminder.js --subject "Co
 
 Green fees: the pricing master Google Sheet / `MMG_COURSE_PRICING_MASTER_EDIT-THIS.xlsx` in Drive, then `python scripts/sync-pricing.py` (or `.\mmg.ps1 pricing` from mmg-tools). The generated JSON/MD are outputs — never edit them directly.
 
+**Auto-synced by `.\mmg.ps1 pricing` — do NOT hand-edit (regenerated from the master):**
+- `src/lib/golf-courses-data.js` — course-listing pills (e.g. `Peak €165 / Low €115`). Editing these by hand is overwritten on the next sync and breaks the data-flow rule; fix the master and re-run instead.
+
 **The sync does NOT cover these — always manual:**
-- `src/lib/golf-courses-data.js` — pills text (e.g. `Peak 22 / Low 14`)
-- `src/lib/guide-article-content.js` (EN) and `src/lib/guide-article-content-localized.js` (all 6 languages)
+- `src/lib/guide-article-content.js` (EN) and `src/lib/guide-article-content-localized.js` (all 6 languages). Includes the "All 24 Courses" quick-reference `type: 'table'` — a per-course **Green Fee** column that has drifted from canonical before.
 - Any `guide-post-content.js` entry mentioning the price
+- `src/lib/homepage-content.js` — narrative bands (note: the `courses.items` featured-card block is legacy/unrendered; its `meta` price bands don't appear on any live page)
 - `src/lib/mallorca-tracker-courses.js` is prototype placeholder data — do NOT update it
 
 ## 3. Grep-driven sweep
@@ -38,6 +41,7 @@ Grep the repo for the OLD price string (digits, and rendered phrases like `Solo 
 - Grep for the OLD price again — zero hits expected in live surfaces (historical handover docs may legitimately keep it).
 - Grep for the NEW price — confirm it appears everywhere expected, all 7 locales.
 - `npm run check:content`; add `npm run check:i18n-release` if localized content changed.
+- `check:pricing-narrative` (runs inside `check:content`) cross-checks every labelled `Peak/Low` pair, `€low-high` band, and table Green-Fee cell across the content files against canonical `course-pricing-data.js`. **It does not catch two things — eyeball them:** dynamic-priced courses are exempt (observed rates vary), and freeform prose ranges inside a sentence ("charges €115–€165", "from €90") are not parsed.
 
 ## 5. Record and report
 

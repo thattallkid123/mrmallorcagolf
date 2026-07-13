@@ -108,6 +108,11 @@ export const HOME_CONTENT = {
         { value: '24', label: 'courses on the island' },
       ],
     },
+    // NOTE: this `courses` block (eyebrow/title/viewAll + `items`, incl. the
+    // €low-high price bands in each card's `meta`) is NOT rendered by the live
+    // homepage — HomePageInner uses only `intro.coursesBlurb`, and nothing else
+    // maps `home.courses.items`. It is legacy/secondary data. check:pricing-narrative
+    // still keeps the bands canonical, but editing prices here changes no live page.
     courses: {
       eyebrow: 'Featured Courses',
       title: "Mallorca\'s finest, played and reviewed.",
