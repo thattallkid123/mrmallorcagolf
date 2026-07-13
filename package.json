@@ -24,6 +24,7 @@
     "check:routes": "node --no-warnings scripts/check-route-parity.mjs && node --no-warnings scripts/check-locale-route-files.mjs",
     "check:content-validation": "node scripts/validate-content.mjs",
     "check:pointers": "node scripts/check-doc-pointers.mjs",
+    "check:voice": "node scripts/check-voice.mjs",
     "check:course-data": "node --no-warnings scripts/check-course-destinations.js && node --no-warnings scripts/check-scorecard-data.js && node --no-warnings scripts/check-course-access-data.js && node --no-warnings scripts/check-tracker-course-pack.js",
     "export:blog-content": "node --no-warnings scripts/export-live-guide-content.mjs",
     "sync:social-proof": "node --no-warnings scripts/sync-social-proof.mjs",

@@ -787,7 +787,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         text:
           "Yes. But let me give you the proper answer - because Mallorca is good for golf in ways that aren't obvious from the outside.",
       },
-      { type: 'heading', text: 'The Courses Are Genuinely World-Class' },
+      { type: 'heading', text: 'The Courses Rank With The Best In Europe' },
       {
         type: 'paragraph',
         text:

@@ -7,7 +7,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: 'Son Gual Golf Mallorca Review (2026) | Is It Worth It? Green Fees, Wind & Verdict',
         description:
-          "Son Gual charges €115–€165 and requires a handicap certificate. PGA review: course conditions, wind notes, and a straight answer on who should — and shouldn't — book it.",
+          "Son Gual charges €115–€165 and requires a handicap certificate. PGA review: course conditions, wind notes, and a straight answer on who should and shouldn't book it.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
       },
       meta: {
@@ -149,7 +149,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            "Club hire at the pro shop: Callaway €35, Titleist €45 per round. Buggy €45, electric trolley from €15. Handicap limit: 33 for men, 35 for ladies — a valid WHS certificate is required at booking. Walking is permitted. A €3 daily Spanish Golf Federation licence is payable at check-in.",
+            "Club hire at the pro shop: Callaway €35, Titleist €45 per round. Buggy €45, electric trolley from €15. Handicap limit: 33 for men, 35 for ladies. A valid WHS certificate is required at booking. Walking is permitted. A €3 daily Spanish Golf Federation licence is payable at check-in.",
         },
         {
           type: 'notes',
@@ -164,7 +164,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Common Questions' },
         {
           type: 'paragraph',
-          text: "Can single players book? Yes — solo bookings are accepted, though during peak season you are likely to be paired with others on the day. What surprises most first-timers? The lighthouse is visible from a large number of holes. Visitors do not expect that view to carry through the round the way it does — it becomes a recurring landmark rather than a one-hole moment.",
+          text: "Can single players book? Yes. Solo bookings are accepted, though during peak season you are likely to be paired with others on the day. What surprises most first-timers? The lighthouse is visible from a large number of holes. Visitors do not expect that view to carry through the round the way it does. It becomes a recurring landmark rather than a one-hole moment.",
         },
         { type: 'heading', text: 'Verdict' },
         {
@@ -681,7 +681,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "Green fee in May 2026 was around €125 per person. Buggies are mandatory before 2pm and are charged separately — walking is allowed from 2pm onwards. Golf insurance of €3 is required at check-in. Yellow tees are the right choice for most visiting golfers. The course is in the southwest of the island, around 30 minutes from Palma. Andratx town itself is just a few minutes away. Despite spending almost the entire round high in the mountains, the sea view over Camp de Mar is visible only from hole 2 — a detail worth knowing before you build expectations around the water view.",
+          text: "Green fee in May 2026 was around €125 per person. Buggies are mandatory before 2pm and are charged separately. Walking is allowed from 2pm onwards. Golf insurance of €3 is required at check-in. Yellow tees are the right choice for most visiting golfers. The course is in the southwest of the island, around 30 minutes from Palma. Andratx town itself is just a few minutes away. Despite spending almost the entire round high in the mountains, the sea view over Camp de Mar is visible only from hole 2, a detail worth knowing before you build expectations around the water view.",
         },
         {
           type: 'paragraph',
@@ -1027,7 +1027,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Common Questions' },
         {
           type: 'paragraph',
-          text: "Handicap limit: 28 for men, 34 for ladies. Walking is possible here, though with the distance and wind exposure a buggy is the more comfortable choice for most. The 15 lakes are not background scenery — they line fairways and force carries on multiple holes. The raised greens and quick fringe areas make approach play the main challenge; this is a course that suits the better golfer rather than someone new to the island.",
+          text: "Handicap limit: 28 for men, 34 for ladies. Walking is possible here, though with the distance and wind exposure a buggy is the more comfortable choice for most. The 15 lakes are not background scenery. They line fairways and force carries on multiple holes. The raised greens and quick fringe areas make approach play the main challenge; this is a course that suits the better golfer rather than someone new to the island.",
         },
         {
           type: 'image',
