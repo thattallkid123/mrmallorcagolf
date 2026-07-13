@@ -157,6 +157,8 @@ Never reference private contact details in public content.
 
 ## Task Management
 
+> **⚠️ Status (2026-07-13): the Google Tasks webhook is currently non-functional** — a live test returned `tasks.tasks.insert: Quota Exceeded`. Plumbing works but no task is created. Ruled out Hermes (nothing in its scripts/crons calls it); the fault is Apps Script-side (Tasks API quota in its Google Cloud project) and needs fixing at script.google.com. Andy is moving away from Google Tasks, so **do not POST to this webhook or treat it as the source of truth until confirmed working.**
+
 **Where tasks go:** Google Tasks. **Webhook for automation scripts:**
 ```
 POST https://script.google.com/macros/s/AKfycbw0RzUzzrXzn3inKcggu0deF05wbL2xGlR1r-tiMTR00nwLb03Lrx6lDWg8LGqbhUt7/exec
