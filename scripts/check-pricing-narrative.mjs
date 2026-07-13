@@ -44,14 +44,21 @@ import { dirname, join, resolve } from 'node:path'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = resolve(__dirname, '..')
 
-// Prose surfaces that carry hand-written green-fee prices (not auto-synced).
-const PROSE_FILES = [
+// Content surfaces that carry a green-fee figure tied to a course.
+//
+// The first block is hand-written prose (not auto-synced) — the primary target.
+// golf-courses-data.js is the exception: its course-listing pills ARE
+// auto-synced from the pricing master by `.\mmg.ps1 pricing`, but they render
+// on /golf-courses, so we verify them too — a mismatch means the sync was
+// missed or a pill was hand-edited, which is worth catching before it ships.
+const CONTENT_FILES = [
   'src/lib/guide-post-content.js',
   'src/lib/guide-post-content-localized.js',
   'src/lib/guide-article-content.js',
   'src/lib/offers-content.js',
   'src/lib/homepage-content.js',
   'src/lib/plan-your-trip-content.js',
+  'src/lib/golf-courses-data.js',
 ]
 
 async function importLib(rel) {
@@ -105,6 +112,10 @@ const LABELLED_PEAK_FIRST = /Peak\s*€\s?(\d{2,3})\s*\/\s*Low\s*€\s?(\d{2,3})
 const LABELLED_LOW_FIRST = /Low\s*€\s?(\d{2,3})\s*\/\s*Peak\s*€\s?(\d{2,3})/i
 // A whole string that is nothing but a band, e.g. "€80-165" or "€77 – €126".
 const STANDALONE_BAND = /^\s*€\s?(\d{2,3})\s*[-–—]\s*€?\s?(\d{2,3})\s*$/
+// A band appearing anywhere — only used inside a table's "Green Fee" column,
+// where the column header already establishes that the number is a green fee
+// (so "Members … · €65-88" is safe to read).
+const ANY_BAND = /€\s?(\d{2,3})\s*[-–—]\s*€?\s?(\d{2,3})/
 
 // Returns {low, peak, kind} for a string, or null if it carries no checkable
 // green-fee shape.
@@ -124,31 +135,56 @@ const CTX_FIELDS = ['reviewSlug', 'href', 'slug', 'courseName', 'course', 'name'
 const findings = []
 const seen = new Set()
 
-function checkString(value, ctx, file) {
-  const band = extractBand(value)
-  if (!band) return
-  if (!ctx) return // no resolvable course — never guess
-  const pricing = COURSE_PRICING_BY_NAME[ctx]
+// Compare one attributed band against canonical and record a finding.
+// course must already be a resolved canonical name.
+function record(file, course, quoted, kind, low, peak) {
+  const pricing = COURSE_PRICING_BY_NAME[course]
   if (!pricing) return
   if (pricing.dynamic) return // observed rates vary — exempt
 
   const problems = []
-  if (band.low !== pricing.low) problems.push(`low €${band.low} ≠ €${pricing.low}`)
-  if (band.peak !== pricing.peak) problems.push(`peak €${band.peak} ≠ €${pricing.peak}`)
-  if (problems.length) {
-    // Dedupe: locale subtrees often share the same card object by reference,
-    // so the same quoted band surfaces once per locale — collapse to one.
-    const key = `${file}|${ctx}|${value.trim()}`
-    if (seen.has(key)) return
-    seen.add(key)
-    findings.push({
-      file,
-      course: ctx,
-      quoted: value.trim(),
-      kind: band.kind,
-      expected: `Low €${pricing.low} / Peak €${pricing.peak}`,
-      problems,
-    })
+  if (low !== pricing.low) problems.push(`low €${low} ≠ €${pricing.low}`)
+  if (peak !== pricing.peak) problems.push(`peak €${peak} ≠ €${pricing.peak}`)
+  if (!problems.length) return
+
+  // Dedupe: locale subtrees often share the same card object by reference,
+  // so the same quoted band surfaces once per locale — collapse to one.
+  const key = `${file}|${course}|${quoted}`
+  if (seen.has(key)) return
+  seen.add(key)
+  findings.push({
+    file,
+    course,
+    quoted,
+    kind,
+    expected: `Low €${pricing.low} / Peak €${pricing.peak}`,
+    problems,
+  })
+}
+
+function checkString(value, ctx, file) {
+  const band = extractBand(value)
+  if (!band) return
+  if (!ctx) return // no resolvable course — never guess
+  record(file, ctx, value.trim(), band.kind, band.low, band.peak)
+}
+
+// A `type: 'table'` block with a Course column and a Green Fee column attributes
+// each row's fee cell to that row's course — a clean, rendered, per-course
+// surface (e.g. the guide-article "All 24 Courses" quick reference).
+function checkTable(node, file) {
+  const headers = (node.headers || []).map((h) => String(h).toLowerCase())
+  const courseIdx = headers.findIndex((h) => /course/.test(h))
+  const feeIdx = headers.findIndex((h) => /fee|price|green/.test(h))
+  if (courseIdx < 0 || feeIdx < 0) return
+  for (const row of node.rows || []) {
+    if (!Array.isArray(row)) continue
+    const course = toCanonical(String(row[courseIdx] || ''))
+    if (!course) continue
+    const cell = String(row[feeIdx] || '')
+    const m = cell.match(ANY_BAND)
+    if (!m) continue
+    record(file, course, cell.trim(), 'table green-fee cell', +m[1], +m[2])
   }
 }
 
@@ -162,6 +198,7 @@ function walk(node, ctx, file) {
     return
   }
   if (node && typeof node === 'object') {
+    if (node.type === 'table') checkTable(node, file)
     // Does this object itself declare a course? (card name/href pattern)
     let objCtx = ctx
     for (const field of CTX_FIELDS) {
@@ -189,19 +226,20 @@ function walk(node, ctx, file) {
 function findLines(file, quoted) {
   const abs = join(REPO_ROOT, file)
   if (!existsSync(abs)) return []
-  const needle = quoted
+  // Source may store the euro sign literally or as a € escape — try both.
+  const needles = [quoted, quoted.replace(/€/g, '\\u20AC')]
   const lines = readFileSync(abs, 'utf8').split('\n')
   const hits = []
   lines.forEach((line, idx) => {
-    if (line.includes(needle)) hits.push(idx + 1)
+    if (needles.some((n) => line.includes(n))) hits.push(idx + 1)
   })
   return hits
 }
 
-for (const file of PROSE_FILES) {
+for (const file of CONTENT_FILES) {
   const abs = join(REPO_ROOT, file)
   if (!existsSync(abs)) {
-    console.warn(`⚠️  Skipping missing prose file: ${file}`)
+    console.warn(`⚠️  Skipping missing content file: ${file}`)
     continue
   }
   const mod = await importLib(file)
@@ -214,7 +252,7 @@ for (const file of PROSE_FILES) {
 // ── Report ──────────────────────────────────────────────────────────────────
 if (findings.length === 0) {
   console.log(
-    `✅ Pricing narrative check passed — scanned ${PROSE_FILES.length} prose file(s); every labelled/banded green fee matches canonical.`,
+    `✅ Pricing narrative check passed — scanned ${CONTENT_FILES.length} content file(s); every labelled/banded/tabulated green fee matches canonical.`,
   )
   process.exit(0)
 }
