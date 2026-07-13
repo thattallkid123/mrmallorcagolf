@@ -27,7 +27,7 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 - `standalone-apps/mallorca-hub/`
 - `prototypes/course-selector-simple/index.html`
 - `prototypes/hotel-recommender/index.html`
-- `src/app/(en)/tools/golf-day-builder/` (promoted from prototype to live route)
+- `src/app/(en)/tools/golf-day-builder/` — live route; pulls prices dynamically from canonical course data, no manual update needed
 - `prototypes/golf-cost-calculator/index.html`
 - `prototypes/index.html`
 - Any other app or tool that shows the same course or package price
