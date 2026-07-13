@@ -17,7 +17,7 @@ Report any failure verbatim — a red check is a ready-made candidate.
 
 ## Then sweep for what the checks do NOT cover
 1. **Tools hardcoding canonical values** — `grep -rlE "€[0-9]" "src/app/(en)/tools"` and confirm each hit is either dynamic (`getCanonicalCourseData` / `course-catalog`) or covered by `check:tool-prices`. New hardcoded price = candidate.
-2. **Repo TODO/FIXME/deprecated backlog** — `grep -rniE "\b(TODO|FIXME|HACK|deprecated)\b" src/`. Triage into still-valid / already-done / delete.
+2. **Repo TODO/FIXME/deprecated backlog** — `grep -rnE "\b(TODO|FIXME|HACK)\b" src/` (case-SENSITIVE — a case-insensitive grep matches the Spanish word "todo" all over the localized content and reports a fake backlog). As of Jul 2026 there are zero real markers. Triage any new ones into still-valid / already-done / delete.
 3. **Sync system docs (`../mmg-tools`)** — its SOURCE-OF-TRUTH-MAP.md, DATA-FLOWS.md, OPERATING-MAP.md, CLEANUP-BACKLOG.md have never had the dead-pointer/contradiction treatment the site docs got. Candidate: port `check:pointers` there. Also flag stray artefacts (e.g. `debug.log`).
 4. **Narrative price consistency** — canonical prices in `src/lib/course-pricing-data.js` and PWAP in `play-with-a-pro-content.js` vs prose mentions in `guide-*-content*.js`, `offers-content.js`, `homepage-content.js`, `plan-your-trip-content.js`. Only `check:tool-prices` covers the tool; prose is still manual. Candidate: a `check:pricing-narrative`.
 5. **Locale structure parity for guides** — existing checks cover slug coverage + flags + tracked leaks, not per-slug section-structure parity across the 7 locales. Candidate: a guide-structure parity check.
