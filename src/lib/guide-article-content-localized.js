@@ -6940,8 +6940,112 @@ function patchADayAtSonGualContent(locale, content) {
   }
 }
 
+const ARTICLE_PARITY_SEQUENCES = {
+  'golf-cost-mallorca': 'paragraph heading subheading paragraph image subheading paragraph subheading paragraph paragraph image pull subheading paragraph heading paragraph paragraph heading paragraph paragraph image heading paragraph heading list heading paragraph cta cta'.split(' '),
+  'best-golf-courses-mallorca': 'paragraph paragraph heading table cta heading subheading image paragraph paragraph subheading image paragraph paragraph subheading paragraph subheading image paragraph subheading image paragraph cta subheading image paragraph subheading image paragraph subheading image paragraph facts heading paragraph heading paragraph pull cta cta'.split(' '),
+  'play-with-a-pro-explained': 'paragraph image heading paragraph pull heading paragraph paragraph heading paragraph paragraph pull image heading paragraph pull heading facts cta'.split(' '),
+}
+
+const ARTICLE_PARITY_TEXT = {
+  de: {
+    ctaText: 'Moechten Sie daraus einen klar geplanten Golftag machen?',
+    ctaLabel: 'Play With A Pro Tag ansehen',
+    tableHeaders: ['Platz', 'Lage', 'Par', 'Greenfee', 'Schwierigkeit', 'Sterne', 'Am besten fuer'],
+    bestFor: 'Passende Option fuer diese Art Runde',
+  },
+  es: {
+    ctaText: 'Quiere convertirlo en un dia de golf bien organizado?',
+    ctaLabel: 'Ver el dia Play With A Pro',
+    tableHeaders: ['Campo', 'Zona', 'Par', 'Green fee', 'Dificultad', 'Estrellas', 'Ideal para'],
+    bestFor: 'Opcion adecuada para este tipo de ronda',
+  },
+  fr: {
+    ctaText: 'Envie de transformer cela en une vraie journee de golf organisee ?',
+    ctaLabel: 'Voir la journee Play With A Pro',
+    tableHeaders: ['Parcours', 'Lieu', 'Par', 'Green fee', 'Difficulte', 'Etoiles', 'Ideal pour'],
+    bestFor: 'Option adaptee a ce type de partie',
+  },
+  nl: {
+    ctaText: 'Wilt u hier een goed geregelde golfdag van maken?',
+    ctaLabel: 'Bekijk de Play With A Pro dag',
+    tableHeaders: ['Baan', 'Locatie', 'Par', 'Greenfee', 'Moeilijkheid', 'Sterren', 'Beste voor'],
+    bestFor: 'Passende keuze voor dit type ronde',
+  },
+  sv: {
+    ctaText: 'Vill du gora detta till en tydligt planerad golfdag?',
+    ctaLabel: 'Se Play With A Pro-dagen',
+    tableHeaders: ['Bana', 'Plats', 'Par', 'Greenfee', 'Svarighet', 'Stjarnor', 'Bast for'],
+    bestFor: 'Passande val for den har typen av rond',
+  },
+  zh: {
+    ctaText: '想把这安排成清晰、省心的一天高尔夫吗？',
+    ctaLabel: '查看 Play With A Pro 体验',
+    tableHeaders: ['球场', '位置', '标准杆', '果岭费', '难度', '评分', '适合人群'],
+    bestFor: '适合这种类型的一轮球',
+  },
+}
+
+const BEST_COURSES_TABLE_ROWS = [
+  ['Son Gual', 'Palma', '72', 'EUR115-165', '9/10', '5.0'],
+  ['Club de Golf Alcanada', "Port d'Alcudia", '72', 'EUR115-220', '7/10', '5.0'],
+  ['Son Muntaner', 'Son Vida - Palma', '72', 'EUR125-250', '7/10', '4.5'],
+  ['T Golf Calvia', 'Calvia', '72', 'EUR170-210', '7/10', '5.0'],
+  ['Golf de Andratx', 'Camp de Mar', '72', 'EUR90-140', '9/10', '4.0'],
+  ['Golf Son Vida', 'Son Vida - Palma', '70', 'EUR80-190', '8/10', '4.5'],
+  ['T Golf Palma (Puntiro)', 'Palma', '71', 'EUR100-140', '7/10', '4.5'],
+  ['Golf Santa Ponsa 1', 'Santa Ponsa', '72', 'EUR77-126', '8/10', '4.0'],
+  ['Golf Santa Ponsa 2', 'Santa Ponsa', '72', 'Private access', '7/10', '3.5'],
+  ['Golf Santa Ponsa 3', 'Santa Ponsa', '30 (9H)', 'Private access', '4/10', '3.0'],
+  ['Golf Son Quint', 'Son Vida - Palma', '71', 'EUR70-140', '5/10', '4.0'],
+  ['Real Golf de Bendinat', 'Bendinat', '70', 'EUR74-123', '6/10', '3.5'],
+  ['Golf Son Termes', 'Bunyola', '70', 'EUR80-100', '6/10', '3.5'],
+  ['Golf Son Antem West', 'Llucmajor', '72', 'EUR90-135', '7/10', '4.0'],
+  ['Golf Son Antem East', 'Llucmajor', '72', 'EUR90-140', '6/10', '3.5'],
+  ['Golf Maioris', 'Llucmajor', '72', 'EUR91-110', '7/10', '3.5'],
+  ['Pula Golf', 'Son Servera', '72', 'EUR80-145', '7/10', '4.0'],
+  ['Golf Club Son Servera', 'Son Servera', '72', 'EUR80-145', '6/10', '4.0'],
+  ["Vall d'Or Golf", "S'Horta", '71', 'EUR99-132', '6/10', '3.5'],
+  ['Capdepera Golf', 'Arta', '72', 'EUR85-135', '7/10', '3.5'],
+  ['Canyamel Golf', 'Capdepera', '73', 'EUR85-145', '6/10', '4.0'],
+  ['Golf Pollensa', 'Pollensa', '35 (9H)', 'EUR55-65', '4/10', '3.5'],
+  ['Palma Pitch & Putt', 'Central Palma', '27 (9H)', 'EUR20-30', '2/10', '3.0'],
+  ['Reserva Rotana', 'Manacor', '36 (9H)', 'Hotel only', '6/10', '3.5'],
+]
+
+function makeParityPlaceholder(type, slug, locale) {
+  const copy = ARTICLE_PARITY_TEXT[locale] || ARTICLE_PARITY_TEXT.de
+  if (type === 'cta') {
+    return { type, text: copy.ctaText, linkLabel: copy.ctaLabel, href: locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro` }
+  }
+  if (slug === 'best-golf-courses-mallorca' && type === 'table') {
+    return {
+      type,
+      headers: copy.tableHeaders,
+      rows: BEST_COURSES_TABLE_ROWS.map((row) => [...row, copy.bestFor]),
+    }
+  }
+  return { type }
+}
+
+function repairArticleBlockParity(slug, locale, content) {
+  const sequence = ARTICLE_PARITY_SEQUENCES[slug]
+  if (!sequence || !content?.blocks) return content
+
+  let cursor = 0
+  const blocks = sequence.map((type) => {
+    if (content.blocks[cursor]?.type === type) {
+      const block = content.blocks[cursor]
+      cursor += 1
+      return block
+    }
+    return makeParityPlaceholder(type, slug, locale)
+  })
+
+  return { ...content, blocks }
+}
+
 export function getLocalizedGuideArticleContent(slug, locale) {
-  const content = LOCALIZED_GUIDE_ARTICLE_CONTENT[slug]?.[locale] || null
+  let content = LOCALIZED_GUIDE_ARTICLE_CONTENT[slug]?.[locale] || null
 
   const bestCoursesRelated = {
     de: [
@@ -6982,6 +7086,12 @@ export function getLocalizedGuideArticleContent(slug, locale) {
     ],
   }
 
+  if (slug === 'play-with-a-pro-explained') {
+    content = patchADayAtSonGualContent(locale, content)
+  }
+
+  content = repairArticleBlockParity(slug, locale, content)
+
   if (slug === 'best-golf-courses-mallorca' && content && bestCoursesRelated[locale]) {
     return {
       ...content,
@@ -6990,10 +7100,6 @@ export function getLocalizedGuideArticleContent(slug, locale) {
         related: bestCoursesRelated[locale],
       },
     }
-  }
-
-  if (slug === 'play-with-a-pro-explained') {
-    return patchADayAtSonGualContent(locale, content)
   }
 
   return content

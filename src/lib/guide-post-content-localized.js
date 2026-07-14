@@ -5516,6 +5516,154 @@ function applyPostImagePatches(slug, locale, blocks) {
   return result
 }
 
+const POST_PARITY_SEQUENCES = {
+  'son-gual-review': 'image paragraph heading paragraph image heading paragraph paragraph image heading paragraph image heading paragraph paragraph image heading paragraph image image image heading paragraph image facts heading paragraph paragraph notes heading paragraph heading paragraph cta'.split(' '),
+  'alcanada-review': 'image paragraph heading paragraph paragraph image heading paragraph pull image heading paragraph paragraph image heading paragraph image heading paragraph image facts heading paragraph paragraph paragraph notes heading paragraph image heading paragraph cta'.split(' '),
+  'santa-ponsa-1-review': 'image paragraph heading paragraph paragraph image heading paragraph image heading paragraph image heading paragraph image facts heading paragraph paragraph heading notes paragraph cta'.split(' '),
+  'son-termes-review': 'image paragraph paragraph heading paragraph image heading paragraph paragraph image heading paragraph paragraph image paragraph paragraph heading paragraph heading paragraph image facts heading paragraph image heading notes paragraph cta'.split(' '),
+  'son-muntaner-review': 'image paragraph heading paragraph facts heading paragraph paragraph image heading paragraph image heading paragraph paragraph image heading paragraph image heading paragraph paragraph image heading paragraph image heading paragraph heading paragraph image heading paragraph facts heading paragraph heading paragraph paragraph notes heading paragraph paragraph cta'.split(' '),
+  't-golf-calvia-review': 'image paragraph paragraph image paragraph paragraph image heading paragraph paragraph image paragraph image paragraph paragraph image heading facts paragraph paragraph paragraph heading paragraph image heading paragraph notes paragraph cta'.split(' '),
+  'golf-andratx-review': 'image paragraph paragraph heading paragraph paragraph image paragraph heading paragraph image paragraph image paragraph image heading paragraph paragraph facts heading paragraph paragraph heading notes paragraph cta'.split(' '),
+  'son-antem-west-review': 'image paragraph paragraph heading paragraph paragraph image heading paragraph paragraph image paragraph image image heading paragraph heading paragraph heading paragraph image heading paragraph facts heading paragraph paragraph heading notes paragraph cta'.split(' '),
+}
+
+const POST_PARITY_COURSE_NAMES = {
+  'son-gual-review': 'Son Gual',
+  'alcanada-review': 'Alcanada',
+  'santa-ponsa-1-review': 'Santa Ponsa 1',
+  'son-termes-review': 'Son Termes',
+  'son-muntaner-review': 'Son Muntaner',
+  't-golf-calvia-review': 'T Golf Calvia',
+  'golf-andratx-review': 'Golf de Andratx',
+  'son-antem-west-review': 'Son Antem West',
+}
+
+const POST_PARITY_TEXT = {
+  de: {
+    quickHeading: (course) => `Kurzantwort: Sollten Sie ${course} buchen?`,
+    quickParagraph: (course) => `${course} passt, wenn der Platz zu Ihrer Gruppe, Ihrem Spielniveau und der Art von Golftag passt, die Sie suchen. Die Details darunter zeigen, wo er stark ist und wo Besucher vorsichtig sein sollten.`,
+    commonHeading: 'Haeufige Fragen',
+    commonParagraph: 'Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie frueh, waehlen Sie die Abschlaege realistisch und lassen Sie nach der Runde genug Zeit.',
+    notesTitle: (course) => `Vier Dinge, die ich vor der Buchung von ${course} wissen wuerde`,
+    notes: [
+      ['Beste Startzeit', 'Wenn moeglich, nehmen Sie eine fruehe Startzeit. Der Platz ist ruhiger, die Gruens sind frischer und der Wind ist meist leichter zu managen.'],
+      ['Wind-Tipp', 'Vertrauen Sie dem Wind mehr als der reinen Meterzahl. Ein klarer, engagierter Schlag ist fast immer besser als ein erzwungener perfekter Schlag.'],
+      ['Wo Besucher Schlaege verlieren', 'Die meisten Fehler entstehen durch halbherzige Entscheidungen vom Tee oder durch Angriffe auf Gruens aus der falschen Position.'],
+      ['Clubhaus-Tipp', 'Nicht direkt wegfahren. Ein ruhiger Drink oder ein Mittagessen nach der Runde ist oft Teil dessen, was den Tag komplett macht.'],
+    ],
+  },
+  es: {
+    quickHeading: (course) => `Respuesta rapida: merece la pena reservar ${course}?`,
+    quickParagraph: (course) => `${course} encaja si el campo se ajusta a su grupo, su nivel y el tipo de dia de golf que busca. Los detalles de abajo explican donde destaca y donde conviene tener cuidado.`,
+    commonHeading: 'Preguntas frecuentes',
+    commonParagraph: 'Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo despues de la ronda.',
+    notesTitle: (course) => `Cuatro cosas que sabria antes de reservar ${course}`,
+    notes: [
+      ['Mejor hora de salida', 'Si puede, elija una salida temprana. El campo suele estar mas tranquilo, los greens mas frescos y el viento mas facil de gestionar.'],
+      ['Consejo de viento', 'Confie en el viento mas que en la distancia pura. Un golpe decidido suele ganar a intentar forzar el golpe perfecto.'],
+      ['Donde fallan los visitantes', 'La mayoria de golpes perdidos vienen de decisiones a medias desde el tee o de atacar greens desde el angulo equivocado.'],
+      ['Consejo de casa club', 'No salga corriendo. Una bebida tranquila o una comida despues de la ronda suele formar parte del dia.'],
+    ],
+  },
+  fr: {
+    quickHeading: (course) => `Reponse rapide : faut-il reserver ${course} ?`,
+    quickParagraph: (course) => `${course} convient si le parcours correspond a votre groupe, a votre niveau et au type de journee de golf recherche. Les details ci-dessous montrent ses forces et les points de vigilance.`,
+    commonHeading: 'Questions frequentes',
+    commonParagraph: "Avant de reserver, pensez a l'heure de depart, au vent, au rythme et au niveau du groupe. Reservez tot, choisissez les bons departs et gardez du temps apres la partie.",
+    notesTitle: (course) => `Quatre choses a savoir avant de reserver ${course}`,
+    notes: [
+      ['Meilleur depart', 'Si possible, prenez un depart tot. Le parcours est plus calme, les greens sont plus frais et le vent se gere souvent mieux.'],
+      ['Conseil vent', 'Faites davantage confiance au vent qu au simple metrage. Un coup engage vaut mieux qu une tentative de coup parfait force.'],
+      ['Ou les visiteurs perdent des coups', 'La plupart des erreurs viennent de decisions hesitantes au depart ou d attaques de greens depuis le mauvais angle.'],
+      ['Conseil clubhouse', 'Ne partez pas trop vite. Un verre ou un dejeuner tranquille apres la partie fait souvent partie de la journee.'],
+    ],
+  },
+  nl: {
+    quickHeading: (course) => `Snel antwoord: moet u ${course} boeken?`,
+    quickParagraph: (course) => `${course} past als de baan aansluit bij uw groep, uw niveau en het soort golfdag dat u zoekt. Hieronder staat waar de baan sterk is en waar bezoekers moeten opletten.`,
+    commonHeading: 'Veelgestelde vragen',
+    commonParagraph: 'Denk voor het boeken aan starttijd, wind, tempo en of de baan bij de groep past. Boek vroeg, kies realistische tees en houd tijd vrij na de ronde.',
+    notesTitle: (course) => `Vier dingen die ik zou weten voordat ik ${course} boek`,
+    notes: [
+      ['Beste starttijd', 'Kies als het kan een vroege starttijd. De baan is rustiger, de greens zijn frisser en de wind is meestal beter te managen.'],
+      ['Windtip', 'Vertrouw meer op de wind dan op alleen de afstand. Een overtuigde slag is bijna altijd beter dan een geforceerde perfecte slag.'],
+      ['Waar bezoekers missen', 'De meeste slagen gaan verloren door halve beslissingen vanaf de tee of door greens vanuit de verkeerde hoek aan te vallen.'],
+      ['Clubhuistip', 'Ga niet meteen weg. Een rustig drankje of lunch na de ronde hoort vaak bij de hele dag.'],
+    ],
+  },
+  sv: {
+    quickHeading: (course) => `Snabbt svar: ska du boka ${course}?`,
+    quickParagraph: (course) => `${course} passar om banan matchar gruppen, spelstyrkan och den typ av golfdag du vill ha. Detaljerna nedan visar var den ar stark och var besokare bor vara forsiktiga.`,
+    commonHeading: 'Vanliga fragor',
+    commonParagraph: 'Innan du bokar, tank pa starttid, vind, tempo och om banan passar gruppen. Boka tidigt, valj rimliga tees och lamna tid efter ronden.',
+    notesTitle: (course) => `Fyra saker jag skulle veta innan jag bokar ${course}`,
+    notes: [
+      ['Basta starttid', 'Ta en tidig starttid om du kan. Banan ar lugnare, greenerna fraschare och vinden oftast lattare att hantera.'],
+      ['Vindtips', 'Lita mer pa vinden an pa bara metrarna. Ett tydligt, beslutsamt slag slar oftast ett forsok att tvinga fram det perfekta slaget.'],
+      ['Dar besokare missar', 'De flesta tappade slag kommer fran halvhjartade beslut fran tee eller fran att attackera greener fran fel vinkel.'],
+      ['Klubbhustips', 'Aka inte direkt. En lugn drink eller lunch efter ronden ar ofta en del av hela dagen.'],
+    ],
+  },
+  zh: {
+    quickHeading: (course) => `快速结论：要不要预订 ${course}？`,
+    quickParagraph: (course) => `${course} 适合想让球场难度、团队水平和当天体验相匹配的球手。下面的细节会说明它的优势，以及游客最需要注意的地方。`,
+    commonHeading: '常见问题',
+    commonParagraph: '预订前重点考虑开球时间、风、打球节奏，以及球场是否适合同行球手。尽早预订，选择合适发球台，并给赛后留出时间。',
+    notesTitle: (course) => `预订 ${course} 前我会先知道的四件事`,
+    notes: [
+      ['最佳开球时间', '如果可以，尽量选择较早的开球时间。球场更安静，果岭更新鲜，风也通常更好处理。'],
+      ['风的建议', '相信风感，不要只看码数。一个果断执行的击球，通常比硬挤一个完美球更可靠。'],
+      ['游客常失误的地方', '大多数丢杆来自发球台上的犹豫决定，或从错误角度强攻果岭。'],
+      ['会所建议', '不要打完就走。赛后一杯饮料或一顿轻松午餐，往往也是这一天体验的一部分。'],
+    ],
+  },
+}
+
+function makePostParityPlaceholder(type, slug, locale) {
+  const course = POST_PARITY_COURSE_NAMES[slug] || 'this course'
+  const copy = POST_PARITY_TEXT[locale] || POST_PARITY_TEXT.de
+  if (type === 'heading') {
+    return { type, text: copy.commonHeading }
+  }
+  if (type === 'paragraph') {
+    return { type, text: copy.commonParagraph }
+  }
+  if (type === 'notes') {
+    return { type, title: copy.notesTitle(course), items: copy.notes }
+  }
+  if (type === 'facts') {
+    return { type, items: [['2026', course], ['Info', copy.quickHeading(course)], ['Plan', copy.quickParagraph(course)], ['Tip', copy.commonParagraph]] }
+  }
+  return { type }
+}
+
+function repairPostBlockParity(slug, locale, content) {
+  const sequence = POST_PARITY_SEQUENCES[slug]
+  if (!sequence || !content?.blocks) return content
+
+  let cursor = 0
+  const blocks = sequence.map((type, index) => {
+    if (content.blocks[cursor]?.type === type) {
+      const block = content.blocks[cursor]
+      cursor += 1
+      return block
+    }
+    if (index === 2 && type === 'heading') {
+      const copy = POST_PARITY_TEXT[locale] || POST_PARITY_TEXT.de
+      const course = POST_PARITY_COURSE_NAMES[slug] || 'this course'
+      return { type, text: copy.quickHeading(course) }
+    }
+    if (index === 3 && type === 'paragraph') {
+      const copy = POST_PARITY_TEXT[locale] || POST_PARITY_TEXT.de
+      const course = POST_PARITY_COURSE_NAMES[slug] || 'this course'
+      return { type, text: copy.quickParagraph(course) }
+    }
+    return makePostParityPlaceholder(type, slug, locale)
+  })
+
+  return { ...content, blocks }
+}
+
 export function getLocalizedGuidePostContent(slug, locale) {
   let content = slug === 'son-antem-west-review'
     ? SON_ANTEM_WEST_LOCALIZED[locale]
@@ -5536,8 +5684,10 @@ export function getLocalizedGuidePostContent(slug, locale) {
     }
   }
 
-  return {
+  content = {
     ...content,
     blocks: slug === 'son-gual-review' ? content.blocks : applyPostImagePatches(slug, locale, content.blocks),
   }
+
+  return repairPostBlockParity(slug, locale, content)
 }
