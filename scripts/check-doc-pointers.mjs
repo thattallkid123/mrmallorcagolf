@@ -24,6 +24,7 @@ import { dirname, join, resolve } from 'node:path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = resolve(__dirname, '..')
+const WORKSPACE_ROOT = resolve(REPO_ROOT, '..')
 
 // Top-level repo directories a checkable path may start with.
 const REPO_DIR_PREFIXES = [
@@ -34,6 +35,15 @@ const REPO_DIR_PREFIXES = [
   'prototypes/',
   'styles/',
   '.claude/',
+]
+
+const WORKSPACE_DIR_PREFIXES = [
+  'mrmallorcagolf-real/',
+  'mmg-tools/',
+  'standalone-apps/',
+  'old-site-builds/',
+  'archive/',
+  'fonts/',
 ]
 
 // Headings whose section is a record of removed/archived files, not live refs.
@@ -82,8 +92,21 @@ function listDocFiles() {
   return files
 }
 
+function listWorkspaceDocFiles() {
+  const files = []
+  for (const name of ['CLAUDE.md', 'PROJECTS.md', 'WHERE_THINGS_LIVE.md']) {
+    const p = join(WORKSPACE_ROOT, name)
+    if (existsSync(p)) files.push(p)
+  }
+  return files
+}
+
 function looksLikeRepoPath(token) {
   return REPO_DIR_PREFIXES.some((prefix) => token.startsWith(prefix))
+}
+
+function looksLikeWorkspacePath(token) {
+  return WORKSPACE_DIR_PREFIXES.some((prefix) => token.startsWith(prefix))
 }
 
 function cleanToken(raw) {
@@ -91,13 +114,16 @@ function cleanToken(raw) {
   return raw.replace(/[.,;:)]+$/, '').trim()
 }
 
-function pathExists(token) {
+function pathExists(token, root = REPO_ROOT) {
   const rel = token.replace(/\/$/, '')
-  return existsSync(join(REPO_ROOT, rel))
+  return existsSync(join(root, rel))
 }
 
-function checkFile(absPath) {
-  const rel = absPath.slice(REPO_ROOT.length + 1).replace(/\\/g, '/')
+function checkFile(absPath, options = {}) {
+  const root = options.root || REPO_ROOT
+  const pathLabelRoot = options.pathLabelRoot || root
+  const isCheckablePath = options.isCheckablePath || looksLikeRepoPath
+  const rel = absPath.slice(pathLabelRoot.length + 1).replace(/\\/g, '/')
   const lines = readFileSync(absPath, 'utf8').split('\n')
   const misses = []
   let inFence = false
@@ -125,11 +151,11 @@ function checkFile(absPath) {
 
     for (const wrapped of tokens) {
       const token = cleanToken(wrapped.slice(1, -1))
-      if (!looksLikeRepoPath(token)) continue
+      if (!isCheckablePath(token)) continue
       if (PLACEHOLDER.test(token)) continue
       if (token.includes(' ')) continue
       if (ALLOW.has(token)) continue
-      if (!pathExists(token)) {
+      if (!pathExists(token, root)) {
         misses.push({ line: idx + 1, token })
       }
     }
@@ -140,12 +166,24 @@ function checkFile(absPath) {
 
 function main() {
   const files = listDocFiles()
-  const results = files.map(checkFile).filter((r) => r.misses.length > 0)
+  const workspaceFiles = listWorkspaceDocFiles()
+  const results = [
+    ...files.map((file) => checkFile(file)),
+    ...workspaceFiles.map((file) =>
+      checkFile(file, {
+        root: WORKSPACE_ROOT,
+        pathLabelRoot: WORKSPACE_ROOT,
+        isCheckablePath: looksLikeWorkspacePath,
+      }),
+    ),
+  ].filter((r) => r.misses.length > 0)
 
   const total = results.reduce((n, r) => n + r.misses.length, 0)
 
   if (total === 0) {
-    console.log(`✅ Doc pointer check passed — scanned ${files.length} files, no dead repo paths.`)
+    console.log(
+      `✅ Doc pointer check passed — scanned ${files.length} repo file(s) and ${workspaceFiles.length} workspace file(s), no dead repo paths.`,
+    )
     return
   }
 

@@ -21,6 +21,8 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 
 ## 3. Update tools and static apps
 
+- `src/app/(en)/tools/course-selector/` — manual fallback fee strings must still match canonical pricing even though the live route resolves prices from `src/lib/course-pricing-data.js`
+- `src/app/(en)/tools/green-fees/` — base table rows must match canonical pricing; the route overlays canonical values at runtime
 - `mmg-tools/day-cost/`
 - `mmg-tools/guide/`
 - `mmg-tools/internal/`
@@ -62,6 +64,7 @@ Manual surfaces to remember in the same pass:
 
 - Search for the old and new price strings
 - Check the course pages, guide cards, and pricing tools
+- Run `npm run check:tool-green-fees` if any public green-fee number changed
 - Regenerate the lead magnet PDFs if any PDF-visible price changed
 - Run `npm run check:content` and fix any failures before commit or push
 - Commit and push the repo(s) that changed

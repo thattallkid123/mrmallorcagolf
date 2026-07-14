@@ -39,6 +39,8 @@ Use this as the exact map when a price changes. Status column updated 2026-06-18
 | `prototypes/golf-cost-calculator/index.html` | ✅ Verified €695 / €950 |
 | `prototypes/course-selector-simple/index.html` | Check — no price found in last scan |
 | `prototypes/hotel-recommender/index.html` | Check — no price found in last scan |
+| `src/app/(en)/tools/course-selector/CourseSelectorToolClient.jsx` | Manual fallback fee strings present; verified by `npm run check:tool-green-fees` |
+| `src/app/(en)/tools/green-fees/GreenFeesClient.jsx` | Base comparison rows present; verified by `npm run check:tool-green-fees` |
 | `src/app/(en)/tools/golf-day-builder/` | Live route — pulls prices dynamically from canonical course data, no manual update needed |
 
 ## Course pricing and golf-cost reference layers

@@ -42,14 +42,14 @@ const DAY_ARC = [
     time: 'Before the round',
     title: 'Transfer and course briefing',
     body: 'Private transfer from your hotel to the course. I meet you on arrival. Before we play, I want to understand how your game works, what you have been working on, and what you want from the day. The briefing is short and specific. No generic welcome pack.',
-    img: '/images/andy-on-course-smile.jpg',
+    img: '/images/andy-on-course-smile.webp',
     imgAlt: 'Andy Griffiths at the course',
   },
   {
     time: 'The round',
     title: '18 holes with me',
     body: 'One course, chosen for your game and the occasion. I play alongside you for the full 18. Course management, shot selection, and the patterns in your game that only show up in a real round. I keep notes throughout on what I am seeing, the decisions you are making, and where the scoring opportunities are being missed.',
-    img: '/images/andy-coaching-client.jpg',
+    img: '/images/andy-coaching-client.webp',
     imgAlt: 'Andy coaching a client on the green',
   },
   {
@@ -117,7 +117,7 @@ export default function SignatureDayView() {
       <section className="pwap-hero pwap-hero--tall">
         <div className="pwap-hero__bg" aria-hidden="true">
           <Image
-            src="/images/andy-walking-course.jpg"
+            src="/images/andy-walking-course.webp"
             alt="Andy Griffiths on the golf course in Mallorca at golden hour"
             fill
             priority
@@ -175,7 +175,7 @@ export default function SignatureDayView() {
         <div className="pwap-day__right reveal">
           <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '2rem' }}>
             <Image
-              src="/images/andy-coaching-swing.jpg"
+              src="/images/andy-coaching-swing.webp"
               alt="Andy Griffiths coaching a golfer in Mallorca"
               fill
               quality={88}
