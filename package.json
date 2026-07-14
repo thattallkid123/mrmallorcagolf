@@ -28,6 +28,7 @@
     "check:voice": "node scripts/check-voice.mjs",
     "check:tool-prices": "node scripts/check-tool-price-sync.mjs",
     "check:pricing-narrative": "node --no-warnings scripts/check-pricing-narrative.mjs",
+    "check:guide-parity": "node --no-warnings scripts/check-guide-parity.mjs",
     "check:course-data": "node --no-warnings scripts/check-course-destinations.js && node --no-warnings scripts/check-scorecard-data.js && node --no-warnings scripts/check-course-access-data.js && node --no-warnings scripts/check-tracker-course-pack.js",
     "export:blog-content": "node --no-warnings scripts/export-live-guide-content.mjs",
     "sync:social-proof": "node --no-warnings scripts/sync-social-proof.mjs",
