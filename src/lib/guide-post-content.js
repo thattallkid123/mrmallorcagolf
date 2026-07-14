@@ -155,10 +155,10 @@ export const GUIDE_POST_CONTENT = {
           type: 'notes',
           title: 'Four things I would know before booking Son Gual',
           items: [
-            ['Best tee time', 'If you can get one of the earlier starts, take it. Son Gual is superb all day, but the course tends to feel calmer and more scoreable before the wind settles in.'],
-            ['Wind tip', 'Trust the breeze more than the yardage. On the exposed holes, especially across the middle and closing stretch, an extra club with a committed swing usually beats trying to force a perfect shot.'],
-            ['Where visitors miss', 'Most dropped shots come from getting slightly out of position off the tee, then short-siding yourself around those raised greens. The bunkers are exactly where indecision sends the ball.'],
-            ['Clubhouse tip', 'Do not rush away afterwards. The terrace and the Bay of Palma view are part of the reason this place feels premium from start to finish.'],
+            ['Best tee time', 'Early morning or late afternoon. Son Gual feels calm when you can see over Palma and the course is quiet. The light on the property is at its best at both ends of the day.'],
+            ['Wind tip', 'If there is even a hint of breeze, pay attention on the exposed middle stretch. This is one of the few Mallorca courses where being half a club wrong can leave you in exactly the wrong part of the green, and two putts from there are tough.'],
+            ['Where visitors miss', 'Most dropped shots come from getting slightly out of position off the tee, finding one of the large bunkers, then short-siding yourself and having a really tricky chip shot around those raised greens.'],
+            ['Clubhouse tip', 'If you are making a day of it, eat after the round rather than before. The terrace is a peaceful place to eat good food and watch golfers as they finish their rounds.'],
           ],
         },
         { type: 'heading', text: 'Common Questions' },
@@ -307,10 +307,10 @@ export const GUIDE_POST_CONTENT = {
           type: 'notes',
           title: 'Four things I would know before booking Alcanada',
           items: [
-            ['Best tee time', 'Morning is ideal here. The light is at its best, the lighthouse feels part of the round straight away, and you normally get the gentlest version of the coastal breeze.'],
-            ['Wind tip', 'Treat the exposed holes with respect. The sea air can make a comfortable yardage suddenly feel a club longer, especially when you are playing into it on the back nine.'],
-            ['Where visitors miss', 'People get seduced by the views, make freer swings than the hole really allows from the elevated tees, then spend the rest of the hole scrambling around the greens.'],
-            ['Clubhouse tip', 'Leave time for lunch on the terrace. Alcanada is one of the few Mallorca rounds where the post-round meal genuinely feels like part of the booking.'],
+            ['Best tee time', 'Morning is ideal here. The light is at its best and you normally get the gentlest version of the coastal breeze.'],
+            ['Wind tip', 'Treat the exposed holes with respect. The sea air can make a comfortable yardage suddenly play a club longer, especially when you are playing into it on the back nine.'],
+            ['Where visitors miss', 'The views can make the tee shot feel easier than it is. Pick the line first, especially from the elevated tees, then be ready for fast greens with very few easy putts.'],
+            ['Clubhouse tip', 'Leave time for lunch on the terrace. The food is great, the large terrace faces the lighthouse and elongates a great day.'],
           ],
         },
         { type: 'heading', text: 'The Restaurant Terrace' },
@@ -408,7 +408,7 @@ export const GUIDE_POST_CONTENT = {
           title: 'Four things I would know before booking Son Muntaner',
           items: [
             ['Best tee time', 'If you are staying in Palma, use that proximity and go early. You get the easy transfer, fresher greens, and a slightly calmer start before the tee sheet fills up.'],
-            ['Wind tip', 'This is a positional course first. Pick your landing area, not the heroic line, and let the buggy save your legs for the uphill shots that actually matter.'],
+            ['Wind tip', 'This is a positional course first. Pick your landing area, not the heroic line, and let the buggy save your legs for later in the round.'],
             ['Where visitors miss', 'Most people attack the greens from the wrong angle, come up short on the elevated par 3s, or underestimate how small the real targets are from distance.'],
             ['Clubhouse tip', 'Stay for food afterwards. The restaurant is better than a quick clubhouse stop and makes sense if you are using Son Muntaner as your Palma day.'],
           ],
@@ -526,8 +526,8 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Best tee time', 'Earlier is better if you can get it. The course is more comfortable before the usual breeze picks up, and the long holes feel much friendlier first thing.'],
             ['Wind tip', 'When the wind arrives, it hits the long par 3s and the 10th hardest. Take enough club and treat the scorecard yardage as the starting point, not the answer.'],
-            ['Where visitors miss', 'Most visitors enjoy the wide fairways, get overconfident with driver, then lose shots by attacking the small targets too aggressively from good positions.'],
-            ['Clubhouse tip', 'This is a very good confidence course before a sterner test. If your trip includes Son Gual or Andratx, Santa Ponsa 1 makes sense earlier in the week.'],
+            ['Where visitors miss', 'Most visitors enjoy the wide fairways, get overconfident with driver, then lose shots by attacking the small targets too aggressively from good positions and having tricky chip shots.'],
+            ['Clubhouse tip', 'This is a good confidence course (if your driver is good) before a sterner test. If your trip includes Son Gual or Andratx, Santa Ponsa 1 makes sense earlier in the week.'],
           ],
         },
         {
@@ -697,7 +697,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Best tee time', 'Go as early as you reasonably can. The course is in demand, the mountain light is best in the morning, and you give yourself the best chance of beating the stronger wind.'],
             ['Wind tip', 'Use a GPS or proper course guide and trust it. This course punishes half-decisions on carries and exposed par 3s far more than it punishes a committed conservative play.'],
-            ['Where visitors miss', 'The common mistake is thinking the challenge is just length. Most big numbers here actually come from poor distance control into cross-fairway hazards and trouble you do not fully see from the tee.'],
+            ['Where visitors miss', 'The common mistake is thinking the challenge is just length. Most big numbers here actually come from poor distance control into cross-fairway hazards, massive elevation changes on short holes and trouble you do not fully see from the tee.'],
             ['Clubhouse tip', 'The practice setup is a little unusual, so arrive with enough time to use the short-game area and settle in before you head to the first tee.'],
           ],
         },
@@ -861,10 +861,10 @@ export const GUIDE_POST_CONTENT = {
           type: 'notes',
           title: 'Four things I would know before booking Son Termes',
           items: [
-            ['Best tee time', 'An earlier start is the safer play, especially if you want to walk. The back nine climbs, the wind tends to build, and the course gets tougher the longer you leave it.'],
+            ['Best tee time', 'An earlier start is the safer play, especially if you want to walk during warmer months. The back nine climbs, the wind tends to build, and the course gets tougher the longer you leave it.'],
             ['Wind tip', 'Club up on the exposed short holes once you get into the upper part of the course. The yardage looks modest, but the mountain breeze changes the shot quickly.'],
-            ['Where visitors miss', 'Most dropped shots come from assuming a short course must be straightforward. Blind doglegs, sticky rough, and hidden targets punish anyone switching off.'],
-            ['Clubhouse tip', 'If you like courses with personality more than polish, this is a good Palma-area alternative to the premium names. The terrace finish with the mountain views is part of the appeal.'],
+            ['Where visitors miss', 'Most dropped shots come from assuming a short course must be straightforward. Blind doglegs, water that cuts in, sticky rough, and hidden targets punish anyone switching off.'],
+            ['Clubhouse tip', 'If you like courses with personality more than polish, this is a good Palma-area alternative to the premium names. The terrace finish with the mountain views is a great way to finish up.'],
           ],
         },
         {
@@ -1050,10 +1050,10 @@ export const GUIDE_POST_CONTENT = {
           type: 'notes',
           title: 'Four things I would know before booking T Golf Calvia',
           items: [
-            ['Best tee time', 'Midweek twilight is a very good play here. You get the course in beautiful light, quieter rhythm, and a price point that makes the quality feel like value.'],
+            ['Best tee time', 'Midweek twilight is a very good play here. You get the course in beautiful light, quieter rhythm, very reasonable twilight rates as an added benefit.'],
             ['Wind tip', 'Work from your number, not what your eye tells you. The semi-blind approaches and exposed water carries punish anyone who guesses rather than commits.'],
-            ['Where visitors miss', 'The usual mistake is underclubbing on the holes that look friendlier than they are, then trying to win the shot back too quickly and dragging more water into play.'],
-            ['Clubhouse tip', 'Use the grass range before you go out and leave enough time for a drink afterwards. The whole setup feels more complete if you do not treat it as a rush round.'],
+            ['Where visitors miss', 'The usual mistake is underclubbing on the holes that look friendlier than they are, then being aggressive and dragging more water into play.'],
+            ['Clubhouse tip', 'Use the grass range before you go out and leave enough time for a drink afterwards. The whole setup feels more complete if you do not treat it as a rushed round.'],
           ],
         },
         {
@@ -1246,7 +1246,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Best tee time', 'Weekday mornings are the sweet spot if you can manage them. Sundays can back up early, even on the first wave, because the course is so popular with resort golfers.'],
             ['Wind tip', 'On a calm day it is very playable, which is exactly why it works for mixed groups. If the breeze gets up, focus on landing areas and use the flatter routing to stay patient.'],
-            ['Where visitors miss', 'The big mistake is going on autopilot because the fairways look generous. The chips release, the better holes ask for shape, and the wrong side of the fairway still matters.'],
+            ['Where visitors miss', 'The big mistake is going on autopilot because the fairways look generous. Being on the wrong side of the fairway still matters, some of the smaller greens need accurate club selection and the chip shots roll on.'],
             ['Clubhouse tip', 'The small shop by check-in is useful if you are on an early start. Coffee, water, and a snack there makes the opening stretch feel a lot easier.'],
           ],
         },

@@ -5538,6 +5538,457 @@ const POST_PARITY_COURSE_NAMES = {
   'son-antem-west-review': 'Son Antem West',
 }
 
+const POST_NOTES_OVERRIDES = {
+  'son-gual-review': {
+    de: {
+      title: 'Vier Dinge, die ich vor der Buchung von Son Gual wissen wuerde',
+      items: [
+        ['Beste Startzeit', 'Frueher Morgen oder spaeter Nachmittag. Son Gual fuehlt sich ruhig an, wenn man ueber Palma blicken kann und der Platz leiser ist. Dann ist auch das Licht auf dem Gelaende am besten.'],
+        ['Wind-Tipp', 'Wenn nur ein Hauch von Wind da ist, achten Sie auf die offene Mittelstrecke. Das ist einer der wenigen Plaetze auf Mallorca, auf denen ein halber Schlaeger zu wenig Sie genau auf den falschen Teil des Gruens bringen kann, und von dort sind zwei Putts schwer.'],
+        ['Wo Besucher Schlaege verlieren', 'Die meisten Schlagverluste beginnen mit einer leicht schlechten Position vom Tee, einem Ball in einem der grossen Bunker und danach einem kurzen Spiel von der falschen Seite rund um diese erhoehten Gruens.'],
+        ['Clubhaus-Tipp', 'Wenn Sie einen ganzen Tag daraus machen, essen Sie lieber nach der Runde als davor. Die Terrasse ist ein ruhiger Ort fuer gutes Essen und um zuzusehen, wie andere ihre Runde beenden.'],
+      ],
+    },
+    es: {
+      title: 'Cuatro cosas que yo sabria antes de reservar Son Gual',
+      items: [
+        ['Mejor hora de salida', 'Temprano por la manana o a ultima hora de la tarde. Son Gual se siente tranquilo cuando puede ver sobre Palma y el campo esta en calma. La luz en la finca es mejor en esos dos momentos del dia.'],
+        ['Consejo con el viento', 'Si hay aunque sea un poco de brisa, preste atencion al tramo expuesto del medio. Es uno de los pocos campos de Mallorca donde fallar medio palo puede dejarle justo en la parte equivocada del green, y desde ahi dos putts son duros.'],
+        ['Donde suelen perder golpes los visitantes', 'La mayoria de golpes perdidos empiezan con una mala posicion ligera desde el tee, una bola en uno de los bunkers grandes y luego un juego corto muy incomodo alrededor de esos greens elevados.'],
+        ['Consejo de casa club', 'Si va a hacer un dia completo, coma despues de la vuelta y no antes. La terraza es un lugar tranquilo para comer bien y ver a los jugadores terminar sus rondas.'],
+      ],
+    },
+    fr: {
+      title: 'Quatre choses que je voudrais savoir avant de reserver Son Gual',
+      items: [
+        ['Meilleur depart', 'Tot le matin ou en fin d apres-midi. Son Gual parait plus calme quand on voit Palma au loin et que le parcours est tranquille. C est aussi la que la lumiere est la meilleure sur toute la propriete.'],
+        ['Conseil vent', 'S il y a meme un peu de vent, faites attention a la partie exposee du milieu. C est l un des rares parcours de Majorque ou une demi-can ne de moins peut vous laisser exactement sur la mauvaise partie du green, et de la deux putts deviennent difficiles.'],
+        ['Ou les visiteurs perdent des coups', 'La plupart des coups perdus commencent par une position legerement mauvaise au depart, une balle dans un des grands bunkers, puis un petit jeu tres delicat autour de ces greens sureleves.'],
+        ['Conseil clubhouse', 'Si vous en faites une vraie journee, mangez apres la partie plutot qu avant. La terrasse est un endroit calme pour bien manger et regarder les joueurs terminer leur parcours.'],
+      ],
+    },
+    nl: {
+      title: 'Vier dingen die ik zou willen weten voor ik Son Gual boek',
+      items: [
+        ['Beste starttijd', 'Vroeg in de ochtend of laat in de middag. Son Gual voelt rustig aan wanneer je over Palma kunt kijken en de baan stil is. Op die twee momenten is het licht op het terrein ook op zijn best.'],
+        ['Windtip', 'Als er ook maar een beetje bries staat, let dan op het open middendeel. Dit is een van de weinige banen op Mallorca waar een halve club fout je precies op het verkeerde deel van de green kan brengen, en van daaruit zijn twee putts lastig.'],
+        ['Waar bezoekers slagen verliezen', 'De meeste verloren slagen beginnen met een iets mindere positie vanaf de tee, een bal in een van de grote bunkers, en daarna een heel lastige chip rond die verhoogde greens.'],
+        ['Clubhuistip', 'Als je er een hele dag van maakt, eet dan liever na de ronde dan ervoor. Het terras is een rustige plek om goed te eten en golfers hun ronde te zien afmaken.'],
+      ],
+    },
+    sv: {
+      title: 'Fyra saker jag skulle vilja veta innan jag bokar Son Gual',
+      items: [
+        ['Basta starttid', 'Tidigt pa morgonen eller sent pa eftermiddagen. Son Gual kanns lugnt nar man ser ut over Palma och banan ar stilla. Ljuset over anlaggningen ar ocksa som bast da.'],
+        ['Vindtips', 'Om det ens finns en liten bris, hall koll pa den oppna mittdelen. Det har ar en av fa banor pa Mallorca dar en halv klubba fel kan lamna dig exakt pa fel del av greenen, och darifran ar tva puttar svara.'],
+        ['Dar besokare tappar slag', 'De flesta tappade slagen borjar med en lite dalig position fran tee, en boll i en av de stora bunkrarna och sedan ett riktigt knepigt narspel runt de upphojda greenerna.'],
+        ['Klubbhustips', 'Om du gor en hel dag av det, at efter rundan i stallet for fore. Terrassen ar en lugn plats for bra mat och for att se andra spelare avsluta sina rundor.'],
+      ],
+    },
+    zh: {
+      title: '预订 Son Gual 前我会先知道的四件事',
+      items: [
+        ['最佳开球时间', '清晨或傍晚最好。能看向 Palma、球场又安静的时候，Son Gual 会显得很平静。球场的光线在这两个时间段也最好。'],
+        ['风的建议', '哪怕只有一点风，也要特别注意中段那些暴露的球洞。这是马略卡少数几个你只差半支杆就可能被放到错误果岭位置的球场之一，而从那里开始，两推都会很难。'],
+        ['游客通常在哪里丢杆', '大多数丢杆都始于开球后位置稍差，接着进了一个大沙坑，然后又在那些抬高果岭周围留下很难处理的切杆。'],
+        ['会所建议', '如果你打算把这天过完整一点，最好把吃饭放在打完之后。露台很安静，适合好好吃一顿，也适合看其他球手结束他们的这一轮。'],
+      ],
+    },
+  },
+  'alcanada-review': {
+    de: {
+      title: 'Vier Dinge, die ich vor der Buchung von Alcanada wissen wuerde',
+      items: [
+        ['Beste Startzeit', 'Am besten am Morgen. Dann ist das Licht am schoensten und die Kuestenbrise meist am sanftesten.'],
+        ['Wind-Tipp', 'Behandeln Sie die offenen Loecher mit Respekt. Die Seeluft kann eine bequeme Distanz ploetzlich wie einen Schlaeger laenger spielen lassen, besonders wenn Sie auf den Back Nine gegen den Wind spielen.'],
+        ['Wo Besucher Schlaege verlieren', 'Die Aussicht kann den Abschlag einfacher wirken lassen, als er ist. Waehlen Sie zuerst die Linie, besonders von den erhoehten Abschlaegen, und stellen Sie sich dann auf schnelle Gruens mit sehr wenigen einfachen Putts ein.'],
+        ['Clubhaus-Tipp', 'Planen Sie Zeit fuer ein Mittagessen auf der Terrasse ein. Das Essen ist sehr gut, die grosse Terrasse schaut auf den Leuchtturm, und sie verlaengert einen ohnehin guten Golftag.'],
+      ],
+    },
+    es: {
+      title: 'Cuatro cosas que yo sabria antes de reservar Alcanada',
+      items: [
+        ['Mejor hora de salida', 'La manana es ideal aqui. La luz es mejor y normalmente tiene la version mas suave de la brisa costera.'],
+        ['Consejo con el viento', 'Trate los hoyos expuestos con respeto. El aire del mar puede hacer que una distancia comoda juegue de repente un palo mas, sobre todo cuando va contra el viento en la segunda vuelta.'],
+        ['Donde suelen perder golpes los visitantes', 'Las vistas pueden hacer que el tee parezca mas facil de lo que es. Elija primero la linea, sobre todo desde los tees elevados, y luego este listo para greens rapidos con muy pocos putts sencillos.'],
+        ['Consejo de casa club', 'Deje tiempo para almorzar en la terraza. La comida es muy buena, la terraza grande mira al faro y alarga un gran dia.'],
+      ],
+    },
+    fr: {
+      title: 'Quatre choses que je voudrais savoir avant de reserver Alcanada',
+      items: [
+        ['Meilleur depart', 'Le matin est ideal ici. La lumiere est la meilleure et la brise cotiere est en general la plus douce.'],
+        ['Conseil vent', 'Respectez les trous exposes. L air de la mer peut faire jouer une distance confortable avec un club de plus, surtout quand vous jouez face au vent sur le retour.'],
+        ['Ou les visiteurs perdent des coups', 'La vue peut faire paraitre le depart plus simple qu il ne l est. Choisissez d abord votre ligne, surtout depuis les tees sureleves, puis attendez-vous a des greens rapides avec tres peu de putts faciles.'],
+        ['Conseil clubhouse', 'Gardez du temps pour dejeuner sur la terrasse. La cuisine est tres bonne, la grande terrasse regarde le phare, et elle prolonge une tres bonne journee.'],
+      ],
+    },
+    nl: {
+      title: 'Vier dingen die ik zou willen weten voor ik Alcanada boek',
+      items: [
+        ['Beste starttijd', 'De ochtend is hier ideaal. Dan is het licht op zijn best en heb je meestal de mildste versie van de kustbries.'],
+        ['Windtip', 'Neem de open holes serieus. De zeelucht kan een comfortabele afstand ineens een club langer laten spelen, vooral wanneer je op de back nine tegen de wind in speelt.'],
+        ['Waar bezoekers slagen verliezen', 'Het uitzicht kan de tee-shot makkelijker laten lijken dan hij is. Kies eerst de lijn, zeker vanaf de verhoogde tees, en wees daarna voorbereid op snelle greens met heel weinig makkelijke putts.'],
+        ['Clubhuistip', 'Laat tijd over voor lunch op het terras. Het eten is erg goed, het grote terras kijkt uit op de vuurtoren en verlengt een toch al mooie dag.'],
+      ],
+    },
+    sv: {
+      title: 'Fyra saker jag skulle vilja veta innan jag bokar Alcanada',
+      items: [
+        ['Basta starttid', 'Morgonen ar idealisk har. Ljuset ar som bast och kustbrisen ar oftast som mildast.'],
+        ['Vindtips', 'Respektera de oppna halen. Havsluften kan fa ett bekvamt avstand att plotsligt spela en klubba langre, sarskilt nar du spelar i motvind pa back nine.'],
+        ['Dar besokare tappar slag', 'Utsikten kan fa utslaget att kannas enklare an det ar. Valj linjen forst, sarskilt fran de upphojda tees, och var sedan redo for snabba greener med valdigt fa enkla puttar.'],
+        ['Klubbhustips', 'Lamna tid for lunch pa terrassen. Maten ar riktigt bra, den stora terrassen vetter mot fyren och forlanger en redan fin dag.'],
+      ],
+    },
+    zh: {
+      title: '预订 Alcanada 前我会先知道的四件事',
+      items: [
+        ['最佳开球时间', '这里最适合早上开球。光线最好，海边的风通常也最温和。'],
+        ['风的建议', '要尊重那些暴露的球洞。海风会让一个本来舒服的距离突然多打一支杆，尤其是在后九逆风的时候。'],
+        ['游客通常在哪里丢杆', '这里的景色会让开球看起来比实际更简单。尤其是从抬高发球台开球时，先把线路定好，然后要准备面对速度很快、几乎没有轻松推杆机会的果岭。'],
+        ['会所建议', '给露台午餐留一点时间。这里的食物很好，大露台正对着灯塔，也会让本来已经很好的这一天再拉长一点。'],
+      ],
+    },
+  },
+  'santa-ponsa-1-review': {
+    de: {
+      title: 'Vier Dinge, die ich vor der Buchung von Santa Ponsa 1 wissen wuerde',
+      items: [
+        ['Beste Startzeit', 'Je frueher, desto besser, wenn Sie es bekommen koennen. Der Platz ist angenehmer, bevor die uebliche Brise einsetzt, und die langen Loecher spielen sich am Morgen freundlicher.'],
+        ['Wind-Tipp', 'Wenn der Wind kommt, trifft er die langen Par 3s und das 10. Loch am haertesten. Nehmen Sie genug Schlaeger und sehen Sie die Yardage auf der Scorekarte eher als Ausgangspunkt als als Antwort.'],
+        ['Wo Besucher Schlaege verlieren', 'Viele Besucher geniessen die breiten Fairways, werden mit dem Driver zu selbstsicher und verlieren dann Schlaege, weil sie die kleinen Ziele aus guten Positionen zu aggressiv angreifen und sich schwierige Chips lassen.'],
+        ['Clubhaus-Tipp', 'Das ist ein guter Selbstvertrauensplatz, wenn Ihr Driver gut ist, bevor spaeter ein haerterer Test kommt. Wenn Ihre Reise Son Gual oder Andratx enthaelt, passt Santa Ponsa 1 frueher in der Woche gut.'],
+      ],
+    },
+    es: {
+      title: 'Cuatro cosas que yo sabria antes de reservar Santa Ponsa 1',
+      items: [
+        ['Mejor hora de salida', 'Cuanto antes, mejor, si puede conseguirla. El campo se juega mas comodo antes de que entre la brisa habitual, y los hoyos largos se sienten bastante mas amables a primera hora.'],
+        ['Consejo con el viento', 'Cuando llega el viento, golpea sobre todo a los pares 3 largos y al hoyo 10. Coja palo suficiente y trate la distancia de la tarjeta como un punto de partida, no como la respuesta final.'],
+        ['Donde suelen perder golpes los visitantes', 'Muchos visitantes disfrutan de las calles anchas, se confian con el driver y luego pierden golpes por atacar objetivos pequenos con demasiada agresividad desde buenas posiciones y dejarse chips incomodos.'],
+        ['Consejo de casa club', 'Este es un buen campo para ganar confianza, si esta pegando bien el driver, antes de un examen mas serio. Si su viaje incluye Son Gual o Andratx, Santa Ponsa 1 encaja bien al principio de la semana.'],
+      ],
+    },
+    fr: {
+      title: 'Quatre choses que je voudrais savoir avant de reserver Santa Ponsa 1',
+      items: [
+        ['Meilleur depart', 'Le plus tot possible, si vous pouvez l avoir. Le parcours est plus agreable avant que la brise habituelle ne monte, et les longs trous paraissent bien plus abordables tot le matin.'],
+        ['Conseil vent', 'Quand le vent arrive, il touche surtout les longs par 3 et le trou 10. Prenez assez de club et considerez le yardage de la carte comme un point de depart, pas comme la reponse definitive.'],
+        ['Ou les visiteurs perdent des coups', 'Beaucoup de visiteurs profitent des fairways larges, prennent trop confiance avec le driver, puis perdent des coups en attaquant des cibles petites trop agressivement depuis de bonnes positions et en se laissant des chips delicats.'],
+        ['Conseil clubhouse', 'C est un bon parcours de confiance, si votre driver est en place, avant un test plus serieux. Si votre voyage comprend Son Gual ou Andratx, Santa Ponsa 1 se place bien plus tot dans la semaine.'],
+      ],
+    },
+    nl: {
+      title: 'Vier dingen die ik zou willen weten voor ik Santa Ponsa 1 boek',
+      items: [
+        ['Beste starttijd', 'Hoe vroeger hoe beter, als je die tijd kunt krijgen. De baan speelt comfortabeler voordat de gebruikelijke bries opkomt, en de lange holes voelen vroeg op de dag vriendelijker aan.'],
+        ['Windtip', 'Wanneer de wind opkomt, raakt die vooral de lange par 3 holes en hole 10. Neem genoeg club en zie de afstand op de scorekaart als vertrekpunt, niet als definitief antwoord.'],
+        ['Waar bezoekers slagen verliezen', 'Veel bezoekers genieten van de brede fairways, krijgen te veel vertrouwen met de driver en verliezen daarna slagen door kleine doelen te agressief aan te vallen vanuit goede posities en lastige chips over te houden.'],
+        ['Clubhuistip', 'Dit is een goede confidence-baan, als je driver goed is, voordat er later een zwaardere test komt. Als je trip Son Gual of Andratx bevat, past Santa Ponsa 1 goed eerder in de week.'],
+      ],
+    },
+    sv: {
+      title: 'Fyra saker jag skulle vilja veta innan jag bokar Santa Ponsa 1',
+      items: [
+        ['Basta starttid', 'Ju tidigare desto battre om du kan fa en tid. Banan ar bekvamare innan den vanliga brisen kommer, och de langa halen kanns betydligt snallare tidigt pa dagen.'],
+        ['Vindtips', 'Nar vinden kommer slar den framfor allt mot de langa par 3-halen och hal 10. Ta tillrackligt med klubba och se yardaget pa scorekortet som en startpunkt, inte som hela svaret.'],
+        ['Dar besokare tappar slag', 'Manga besokare gillar de breda fairwaysen, blir for sjalvsakra med drivern och tappar sedan slag genom att attackera sma mal for aggressivt fran bra lagen och lamna sig knepiga chippar.'],
+        ['Klubbhustips', 'Det har ar en bra sjalvfortroendebana, om drivern fungerar, innan ett tuffare test senare. Om resan ocksa innehaller Son Gual eller Andratx passar Santa Ponsa 1 bra tidigare i veckan.'],
+      ],
+    },
+    zh: {
+      title: '预订 Santa Ponsa 1 前我会先知道的四件事',
+      items: [
+        ['最佳开球时间', '如果可以，越早越好。在平常那阵风起来之前，这座球场会舒服很多，长洞在早上也会友善得多。'],
+        ['风的建议', '风一起来，最受影响的是长三杆洞和第 10 洞。杆要拿够，把记分卡上的距离当作起点，不要当作标准答案。'],
+        ['游客通常在哪里丢杆', '很多游客会享受宽阔球道，结果用一号木打得太有自信，然后从好位置过度激进地去打那些很小的目标，最后给自己留下很难处理的切杆。'],
+        ['会所建议', '如果你的一号木状态不错，这是一座很适合先建立信心、再去面对更严肃测试的球场。如果你的行程里还有 Son Gual 或 Andratx，Santa Ponsa 1 更适合放在周初。'],
+      ],
+    },
+  },
+  'son-termes-review': {
+    de: {
+      title: 'Vier Dinge, die ich vor der Buchung von Son Termes wissen wuerde',
+      items: [
+        ['Beste Startzeit', 'Ein frueherer Start ist die sicherere Wahl, besonders wenn Sie in den waermeren Monaten zu Fuss gehen wollen. Die Back Nine steigen an, der Wind baut sich auf, und je spaeter Sie starten, desto haerter wird der Platz.'],
+        ['Wind-Tipp', 'Auf den offenen kurzen Loechern im oberen Teil des Platzes lieber einen Schlaeger mehr nehmen. Die Yardage sieht harmlos aus, aber die Bergbrise aendert den Schlag schnell.'],
+        ['Wo Besucher Schlaege verlieren', 'Die meisten Schlagverluste kommen daher, dass ein kurzer Platz automatisch einfach wirkt. Blinde Doglegs, einschneidendes Wasser, klebriges Rough und versteckte Ziele bestrafen jeden, der kurz abschaltet.'],
+        ['Clubhaus-Tipp', 'Wenn Sie Plaetze mit Persoenlichkeit lieber moegen als perfekte Politur, ist das hier eine gute Palma-Alternative zu den Premiumnamen. Der Abschluss auf der Terrasse mit Bergblick ist ein sehr guter Ausklang.'],
+      ],
+    },
+    es: {
+      title: 'Cuatro cosas que yo sabria antes de reservar Son Termes',
+      items: [
+        ['Mejor hora de salida', 'Salir antes es la opcion mas segura, sobre todo si quiere caminar en los meses mas calurosos. La segunda vuelta sube, el viento suele crecer, y cuanto mas tarde salga, mas duro se pone el campo.'],
+        ['Consejo con el viento', 'En los hoyos cortos expuestos de la parte alta del recorrido, suba un palo. La distancia parece modesta, pero la brisa de montana cambia el golpe muy rapido.'],
+        ['Donde suelen perder golpes los visitantes', 'Muchos golpes perdidos vienen de asumir que un campo corto tiene que ser sencillo. Doglegs ciegos, agua que entra en juego, rough pegajoso y objetivos escondidos castigan a quien se desconecta.'],
+        ['Consejo de casa club', 'Si prefiere los campos con personalidad antes que los mas pulidos, esta es una buena alternativa cerca de Palma frente a los nombres premium. Terminar en la terraza con vistas a la montana es una muy buena forma de acabar.'],
+      ],
+    },
+    fr: {
+      title: 'Quatre choses que je voudrais savoir avant de reserver Son Termes',
+      items: [
+        ['Meilleur depart', 'Partir plus tot est l option la plus sure, surtout si vous voulez marcher pendant les mois chauds. Le retour monte, le vent prend souvent de la force, et plus vous laissez trainer le depart, plus le parcours devient exigeant.'],
+        ['Conseil vent', 'Sur les trous courts exposes de la partie haute, prenez un club de plus. Le yardage parait modeste, mais la brise de montagne change vite le coup.'],
+        ['Ou les visiteurs perdent des coups', 'Beaucoup de coups perdus viennent de l idee qu un parcours court doit forcement etre simple. Doglegs aveugles, eau qui rentre en jeu, rough collant et cibles cachees punissent ceux qui deconnectent.'],
+        ['Conseil clubhouse', 'Si vous aimez davantage les parcours de caractere que les parcours polis, c est une bonne alternative pres de Palma face aux noms premium. Finir sur la terrasse avec la vue sur les montagnes est une tres bonne facon de terminer.'],
+      ],
+    },
+    nl: {
+      title: 'Vier dingen die ik zou willen weten voor ik Son Termes boek',
+      items: [
+        ['Beste starttijd', 'Vroeger starten is de veiligere keuze, vooral als je in warmere maanden wilt lopen. De back nine klimt, de wind bouwt vaak op, en hoe later je vertrekt, hoe taaier de baan wordt.'],
+        ['Windtip', 'Neem op de open korte holes in het hogere deel van de baan liever een club meer. De afstand oogt bescheiden, maar de bergbries verandert de slag snel.'],
+        ['Waar bezoekers slagen verliezen', 'Veel verloren slagen komen voort uit het idee dat een korte baan automatisch eenvoudig is. Blinde doglegs, water dat insnijdt, plakkerige rough en verborgen doelen straffen iedereen die even uitschakelt.'],
+        ['Clubhuistip', 'Als je liever banen met karakter hebt dan banen die helemaal gepolijst aanvoelen, is dit een goed alternatief bij Palma tegenover de premium namen. Afsluiten op het terras met uitzicht op de bergen is een heel goede manier om te eindigen.'],
+      ],
+    },
+    sv: {
+      title: 'Fyra saker jag skulle vilja veta innan jag bokar Son Termes',
+      items: [
+        ['Basta starttid', 'En tidigare start ar det sakrare valet, sarskilt om du vill ga under de varmare manaderna. Back nine klattrar, vinden bygger ofta upp, och ju senare du gar ut desto tuffare blir banan.'],
+        ['Vindtips', 'Ta en klubba mer pa de oppna korta halen pa den ovre delen av banan. Yardaget ser beskedligt ut, men bergsbrisen andrar slaget snabbt.'],
+        ['Dar besokare tappar slag', 'Manga tappade slag kommer fran antagandet att en kort bana maste vara enkel. Blinda doglegs, vatten som skar in, seg ruff och dolda mal straffar den som stanger av.'],
+        ['Klubbhustips', 'Om du foredrar banor med personlighet framfor perfekt putsade banor ar det har ett bra Palma-nara alternativ till premiumnamnen. Att avsluta pa terrassen med bergsutsikt ar ett mycket bra satt att runda av.'],
+      ],
+    },
+    zh: {
+      title: '预订 Son Termes 前我会先知道的四件事',
+      items: [
+        ['最佳开球时间', '更早开球会更稳妥，尤其是你想在较热月份步行的时候。后九会上坡，风也往往会起来，越晚出发，这座球场就越难。'],
+        ['风的建议', '到了球场上半段那些暴露的短洞，最好多拿一支杆。码数看起来不长，但山风会很快改变这一杆。'],
+        ['游客通常在哪里丢杆', '很多丢杆都来自一个错误判断，就是觉得短球场一定简单。盲狗腿、切进来的水障碍、黏人的长草和隐藏目标，都会惩罚那些一放松就出问题的人。'],
+        ['会所建议', '如果你更喜欢有个性的球场，而不是特别精致打磨过的球场，这里是 Palma 附近一个很好的高端替代选项。最后在露台上配着山景收尾，会是很好的结束方式。'],
+      ],
+    },
+  },
+  'son-muntaner-review': {
+    de: {
+      title: 'Vier Dinge, die ich vor der Buchung von Son Muntaner wissen wuerde',
+      items: [
+        ['Beste Startzeit', 'Wenn Sie in Palma wohnen, nutzen Sie die Naehe und gehen Sie frueh raus. Sie haben die einfache Anfahrt, frischere Gruens und einen etwas ruhigeren Start, bevor sich das Tee Sheet fuellt.'],
+        ['Wind-Tipp', 'Das ist zuerst ein Positionsplatz. Waehlen Sie Ihre Landezone, nicht die heroische Linie, und lassen Sie den Buggy Ihre Beine fuer den spaeteren Teil der Runde sparen.'],
+        ['Wo Besucher Schlaege verlieren', 'Viele greifen die Gruens aus dem falschen Winkel an, bleiben an den erhoehten Par 3s zu kurz oder unterschaetzen, wie klein die echten Ziele aus der Distanz sind.'],
+        ['Clubhaus-Tipp', 'Bleiben Sie danach zum Essen. Das Restaurant ist besser als ein schneller Clubhaus-Stopp und passt gut, wenn Son Muntaner Ihr Palma-Tag ist.'],
+      ],
+    },
+    es: {
+      title: 'Cuatro cosas que yo sabria antes de reservar Son Muntaner',
+      items: [
+        ['Mejor hora de salida', 'Si se aloja en Palma, aproveche la cercania y salga temprano. Tiene el traslado facil, greens mas frescos y un inicio algo mas calmado antes de que se llene el tee sheet.'],
+        ['Consejo con el viento', 'Este es un campo de posicion antes que nada. Elija su zona de aterrizaje, no la linea heroica, y deje que el buggy le guarde las piernas para mas adelante en la vuelta.'],
+        ['Donde suelen perder golpes los visitantes', 'Mucha gente ataca los greens desde el angulo equivocado, se queda corta en los pares 3 elevados o subestima lo pequenos que son los objetivos reales desde lejos.'],
+        ['Consejo de casa club', 'Quedese a comer despues. El restaurante es mejor que una parada rapida de casa club y tiene sentido si Son Muntaner es su dia en Palma.'],
+      ],
+    },
+    fr: {
+      title: 'Quatre choses que je voudrais savoir avant de reserver Son Muntaner',
+      items: [
+        ['Meilleur depart', 'Si vous logez a Palma, profitez de la proximite et partez tot. Vous aurez le trajet facile, des greens plus frais et un debut un peu plus calme avant que le tee sheet se remplisse.'],
+        ['Conseil vent', 'C est d abord un parcours de placement. Choisissez votre zone d atterrissage, pas la ligne heroique, et laissez le buggy garder vos jambes pour plus tard dans la partie.'],
+        ['Ou les visiteurs perdent des coups', 'Beaucoup attaquent les greens depuis le mauvais angle, restent courts sur les par 3 sureleves ou sous-estiment la petite taille des vraies cibles vues de loin.'],
+        ['Conseil clubhouse', 'Restez manger apres la partie. Le restaurant vaut mieux qu un simple arret au clubhouse et fonctionne bien si Son Muntaner est votre journee Palma.'],
+      ],
+    },
+    nl: {
+      title: 'Vier dingen die ik zou willen weten voor ik Son Muntaner boek',
+      items: [
+        ['Beste starttijd', 'Als je in Palma verblijft, gebruik dan die nabijheid en ga vroeg op pad. Je hebt de makkelijke transfer, frissere greens en een iets rustigere start voordat het tee sheet volloopt.'],
+        ['Windtip', 'Dit is in de eerste plaats een positioneringsbaan. Kies je landingszone, niet de hero-lijn, en laat de buggy je benen sparen voor later in de ronde.'],
+        ['Waar bezoekers slagen verliezen', 'Veel spelers vallen de greens vanuit de verkeerde hoek aan, blijven te kort op de verhoogde par 3 holes of onderschatten hoe klein de echte doelen van afstand zijn.'],
+        ['Clubhuistip', 'Blijf na de ronde eten. Het restaurant is beter dan een snelle clubhuisstop en past goed als Son Muntaner je Palma-dag is.'],
+      ],
+    },
+    sv: {
+      title: 'Fyra saker jag skulle vilja veta innan jag bokar Son Muntaner',
+      items: [
+        ['Basta starttid', 'Om du bor i Palma, utnyttja narheten och ga ut tidigt. Du far enkel transfer, fraschare greener och en lite lugnare start innan tee sheet fylls upp.'],
+        ['Vindtips', 'Det har ar forst och framst en positionsbana. Valj landningsyta, inte den heroiska linjen, och lat buggyn spara benen till senare i rundan.'],
+        ['Dar besokare tappar slag', 'Manga attackerar greener fran fel vinkel, kommer kort pa de upphojda par 3-halen eller underskattar hur sma de verkliga malen ar pa distans.'],
+        ['Klubbhustips', 'Stanna och at efter rundan. Restaurangen ar battre an ett snabbt klubbhusstopp och passar bra om Son Muntaner ar din Palma-dag.'],
+      ],
+    },
+    zh: {
+      title: '预订 Son Muntaner 前我会先知道的四件事',
+      items: [
+        ['最佳开球时间', '如果你住在 Palma，就利用这个距离优势早点出发。路程轻松，果岭更新鲜，在 tee sheet 填满之前开局也会更平静一些。'],
+        ['风的建议', '这首先是一座讲究落点位置的球场。先选好落点，不要总想着英雄线路，让球车把体力留给后面的球洞。'],
+        ['游客通常在哪里丢杆', '很多人会从错误角度去攻果岭，在抬高的三杆洞上打短，或者低估远距离看过去那些真实目标到底有多小。'],
+        ['会所建议', '打完之后留下来吃点东西。这里的餐厅比那种匆匆的会所停留要好得多，如果 Son Muntaner 是你在 Palma 的那一天，这样安排也很合适。'],
+      ],
+    },
+  },
+  't-golf-calvia-review': {
+    de: {
+      title: 'Vier Dinge, die ich vor der Buchung von T Golf Calvia wissen wuerde',
+      items: [
+        ['Beste Startzeit', 'Twilight unter der Woche ist hier ein sehr guter Zug. Sie bekommen den Platz in schoenem Licht, einen ruhigeren Rhythmus und dazu sehr vernuenftige Twilight-Raten.'],
+        ['Wind-Tipp', 'Arbeiten Sie von Ihrer Zahl aus, nicht von dem, was das Auge sagt. Die halbblinden Annaeherungen und freien Wassertraeger bestrafen jeden, der raet statt sich festzulegen.'],
+        ['Wo Besucher Schlaege verlieren', 'Der uebliche Fehler ist, auf die Loecher, die freundlicher aussehen, zu wenig Schlaeger zu nehmen und danach zu aggressiv zu werden, wodurch mehr Wasser ins Spiel kommt.'],
+        ['Clubhaus-Tipp', 'Nutzen Sie die Gras-Range vor der Runde und lassen Sie sich danach noch Zeit fuer ein Getraenk. Die gesamte Anlage fuehlt sich kompletter an, wenn man sie nicht wie eine gehetzte Runde behandelt.'],
+      ],
+    },
+    es: {
+      title: 'Cuatro cosas que yo sabria antes de reservar T Golf Calvia',
+      items: [
+        ['Mejor hora de salida', 'El twilight entre semana es una muy buena jugada aqui. Tiene el campo con una luz preciosa, un ritmo mas tranquilo y ademas unas tarifas twilight muy razonables.'],
+        ['Consejo con el viento', 'Trabaje desde su numero, no desde lo que le diga el ojo. Las aproximaciones semiciega y los golpes sobre agua en zonas expuestas castigan a quien adivina en lugar de decidirse.'],
+        ['Donde suelen perder golpes los visitantes', 'El error habitual es quedarse corto de palo en los hoyos que parecen mas amables y luego ponerse agresivo, metiendo aun mas agua en juego.'],
+        ['Consejo de casa club', 'Use la cancha de hierba antes de salir y deje tiempo para una bebida despues. Todo el montaje se siente mas completo si no trata la ronda como una carrera.'],
+      ],
+    },
+    fr: {
+      title: 'Quatre choses que je voudrais savoir avant de reserver T Golf Calvia',
+      items: [
+        ['Meilleur depart', 'Le twilight en semaine est un tres bon plan ici. Vous avez le parcours dans une belle lumiere, un rythme plus calme et des tarifs twilight tres raisonnables en plus.'],
+        ['Conseil vent', 'Travaillez a partir de votre nombre, pas de ce que l oeil vous raconte. Les approches semi-aveugles et les carries d eau exposes punissent ceux qui devinent au lieu de s engager.'],
+        ['Ou les visiteurs perdent des coups', 'L erreur classique consiste a prendre trop peu de club sur les trous qui paraissent plus aimables, puis a devenir trop agressif et a ramener encore plus d eau dans le jeu.'],
+        ['Conseil clubhouse', 'Utilisez le practice sur herbe avant de partir et gardez du temps pour boire quelque chose apres. L ensemble parait plus complet quand on ne traite pas la partie comme une course.'],
+      ],
+    },
+    nl: {
+      title: 'Vier dingen die ik zou willen weten voor ik T Golf Calvia boek',
+      items: [
+        ['Beste starttijd', 'Midweek twilight is hier een heel sterke zet. Je krijgt de baan in prachtig licht, een rustiger ritme en bovendien heel redelijke twilight-tarieven.'],
+        ['Windtip', 'Werk vanuit je getal, niet vanuit wat je oog je vertelt. De halfblinde approaches en open water-carries straffen iedereen die gokt in plaats van zich vastlegt.'],
+        ['Waar bezoekers slagen verliezen', 'De gebruikelijke fout is te weinig club nemen op holes die vriendelijker lijken dan ze zijn, en daarna agressief worden waardoor nog meer water in het spel komt.'],
+        ['Clubhuistip', 'Gebruik de grasrange voor je de baan op gaat en laat daarna nog tijd voor een drankje. Het geheel voelt completer als je de ronde niet als haastwerk behandelt.'],
+      ],
+    },
+    sv: {
+      title: 'Fyra saker jag skulle vilja veta innan jag bokar T Golf Calvia',
+      items: [
+        ['Basta starttid', 'Twilight mitt i veckan ar ett mycket bra spel har. Du far banan i vackert ljus, ett lugnare tempo och dessutom mycket rimliga twilight-priser.'],
+        ['Vindtips', 'Utga fran ditt nummer, inte fran vad ogat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar alla som gissar i stallet for att bestamma sig.'],
+        ['Dar besokare tappar slag', 'Det vanliga misstaget ar att ta for lite klubba pa halen som ser snallare ut an de ar, och sedan bli aggressiv sa att annu mer vatten kommer in i spelet.'],
+        ['Klubbhustips', 'Anvand grasrangen innan du gar ut och lamna sedan tid for en drink efterat. Helheten kanns mer komplett om du inte behandlar rundan som nagot du bara ska skynda igenom.'],
+      ],
+    },
+    zh: {
+      title: '预订 T Golf Calvia 前我会先知道的四件事',
+      items: [
+        ['最佳开球时间', '工作日 twilight 是这里非常好的选择。你能在很漂亮的光线里打球，节奏也更安静一些，而且 twilight 价格也很合理。'],
+        ['风的建议', '按你的实际码数来，不要按眼睛觉得的来。半盲攻果岭和暴露的过水击球，会惩罚所有靠猜的人。'],
+        ['游客通常在哪里丢杆', '最常见的错误是在那些看起来更友善的球洞上拿杆不足，然后变得过于激进，把更多的水障碍带进比赛。'],
+        ['会所建议', '下场前用一下草地练习场，打完之后也给自己留点时间喝一杯。如果你不把这轮球当成赶时间，这里的整体体验会完整得多。'],
+      ],
+    },
+  },
+  'golf-andratx-review': {
+    de: {
+      title: 'Vier Dinge, die ich vor der Buchung von Golf de Andratx wissen wuerde',
+      items: [
+        ['Beste Startzeit', 'Gehen Sie so frueh raus, wie es sinnvoll moeglich ist. Der Platz ist gefragt, das Berglicht ist morgens am besten, und so haben Sie die beste Chance, dem staerkeren Wind zuvorzukommen.'],
+        ['Wind-Tipp', 'Nutzen Sie ein GPS oder einen ordentlichen Platzfuehrer und vertrauen Sie ihm. Dieser Platz bestraft halbe Entscheidungen bei Carries und offenen Par 3s viel mehr als eine bewusst konservative Wahl.'],
+        ['Wo Besucher Schlaege verlieren', 'Der haeufigste Fehler ist zu denken, die Herausforderung sei nur die Laenge. Die grossen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Hoehenunterschieden auf kurzen Loechern und Problemen, die Sie vom Tee nicht voll sehen.'],
+        ['Clubhaus-Tipp', 'Der Uebungsbereich ist etwas ungewoehnlich. Kommen Sie frueh genug, um den Kurzspielbereich zu nutzen und sich vor dem ersten Abschlag in Ruhe einzufinden.'],
+      ],
+    },
+    es: {
+      title: 'Cuatro cosas que yo sabria antes de reservar Golf de Andratx',
+      items: [
+        ['Mejor hora de salida', 'Salga tan temprano como le resulte razonable. El campo tiene demanda, la luz de montana es mejor por la manana, y asi tiene la mejor opcion de evitar el viento mas fuerte.'],
+        ['Consejo con el viento', 'Use un GPS o una buena guia del campo y confie en ella. Este recorrido castiga mucho mas las medias decisiones en carries y pares 3 expuestos que una eleccion conservadora bien asumida.'],
+        ['Donde suelen perder golpes los visitantes', 'El error mas comun es pensar que el reto es solo la longitud. Los numeros altos aqui vienen mucho mas de un mal control de distancia hacia obstaculos cruzados, de grandes cambios de elevacion en hoyos cortos y de problemas que no ve del todo desde el tee.'],
+        ['Consejo de casa club', 'La zona de practicas es un poco peculiar. Llegue con tiempo suficiente para usar el area de juego corto y asentarse bien antes del primer tee.'],
+      ],
+    },
+    fr: {
+      title: 'Quatre choses que je voudrais savoir avant de reserver Golf de Andratx',
+      items: [
+        ['Meilleur depart', 'Partez aussi tot que raisonnablement possible. Le parcours est demande, la lumiere de montagne est la meilleure le matin, et c est ainsi que vous avez la meilleure chance d eviter le vent plus fort.'],
+        ['Conseil vent', 'Utilisez un GPS ou un vrai guide du parcours et faites-lui confiance. Ce parcours punit bien plus les demi-decisions sur les carries et les par 3 exposes qu un choix conservateur assume.'],
+        ['Ou les visiteurs perdent des coups', 'L erreur la plus courante est de croire que le defi n est qu une question de longueur. Les gros scores viennent ici bien plus d un mauvais controle de distance vers des obstacles en travers, de gros changements de denivele sur les trous courts, et de problemes que l on ne voit pas totalement depuis le tee.'],
+        ['Conseil clubhouse', 'La zone d entrainement est un peu particuliere. Arrivez assez tot pour utiliser l espace de petit jeu et vous installer tranquillement avant le premier depart.'],
+      ],
+    },
+    nl: {
+      title: 'Vier dingen die ik zou willen weten voor ik Golf de Andratx boek',
+      items: [
+        ['Beste starttijd', 'Ga zo vroeg mogelijk naar buiten, voor zover dat redelijk is. De baan is gewild, het berglicht is in de ochtend op zijn best en zo heb je de grootste kans om de sterkere wind voor te blijven.'],
+        ['Windtip', 'Gebruik een GPS of een goede course guide en vertrouw daarop. Deze baan straft halve beslissingen bij carries en open par 3 holes veel harder af dan een bewust conservatieve keuze.'],
+        ['Waar bezoekers slagen verliezen', 'De meest voorkomende fout is denken dat de uitdaging alleen lengte is. De grote cijfers komen hier veel vaker voort uit slechte afstandscontrole naar dwarsliggende hindernissen, forse hoogteverschillen op korte holes en problemen die je vanaf de tee niet volledig ziet.'],
+        ['Clubhuistip', 'De oefenopstelling is wat ongebruikelijk. Kom op tijd genoeg om het korte-spelgebied te gebruiken en rustig in de ronde te komen voor de eerste tee.'],
+      ],
+    },
+    sv: {
+      title: 'Fyra saker jag skulle vilja veta innan jag bokar Golf de Andratx',
+      items: [
+        ['Basta starttid', 'Ga ut sa tidigt som det rimligen gar. Banan ar efterfragad, bergsljuset ar som bast pa morgonen, och da har du bast chans att slippa den starkare vinden.'],
+        ['Vindtips', 'Anvand GPS eller en riktig banbok och lita pa den. Den har banan straffar halvhjartade beslut over carries och pa oppna par 3-hall mycket mer an ett medvetet konservativt val.'],
+        ['Dar besokare tappar slag', 'Det vanligaste misstaget ar att tro att utmaningen bara handlar om langd. De stora siffrorna kommer har mycket oftare fran dalig distanskontroll in i tvarliggande hinder, stora hojdskillnader pa korta hal och problem som du inte ser fullt ut fran tee.'],
+        ['Klubbhustips', 'Ovningsupplagget ar lite ovanligt. Kom tillrackligt tidigt for att anvanda kortspelsomradet och landa i rundan innan du gar till forsta tee.'],
+      ],
+    },
+    zh: {
+      title: '预订 Golf de Andratx 前我会先知道的四件事',
+      items: [
+        ['最佳开球时间', '尽量安排在合理范围内越早越好。这座球场很抢手，山里的晨光最好，而且你也最有机会避开后面更强的风。'],
+        ['风的建议', '用 GPS 或靠谱的球场指南，并且相信它。这座球场对过水决策和暴露三杆洞上的半吊子决定，惩罚远远大于一次有意识的保守选择。'],
+        ['游客通常在哪里丢杆', '最常见的错误是以为这里的挑战只是长度。这里打出大数字，更多是因为进攻横向障碍时的距离控制不好、短洞上巨大的高低差，以及从发球台看不完整的麻烦位置。'],
+        ['会所建议', '练习区的设置有点特别。提前到，先去用一下短杆练习区，再从容地走向第一洞开球台。'],
+      ],
+    },
+  },
+  'son-antem-west-review': {
+    de: {
+      title: 'Vier Dinge, die ich vor der Buchung von Son Antem West wissen wuerde',
+      items: [
+        ['Beste Startzeit', 'Wochentags am Morgen ist hier der Sweet Spot, wenn Sie es einrichten koennen. Sonntage koennen schon in der ersten Welle stocken, weil der Platz bei Resort-Gaesten so beliebt ist.'],
+        ['Wind-Tipp', 'An einem ruhigen Tag ist der Platz sehr spielbar, und genau deshalb funktioniert er gut fuer gemischte Gruppen. Wenn die Brise aufkommt, konzentrieren Sie sich auf Landezonen und bleiben Sie geduldig.'],
+        ['Wo Besucher Schlaege verlieren', 'Der grosse Fehler ist, in den Autopilot zu gehen, weil die Fairways grosszuegig wirken. Die falsche Fairway-Seite zaehlt trotzdem, einige der kleineren Gruens verlangen praezise Schlaegerwahl, und Chips rollen weiter aus.'],
+        ['Clubhaus-Tipp', 'Der kleine Laden am Check-in ist bei einem fruehen Start wirklich nuetzlich. Kaffee, Wasser und ein Snack dort machen den Anfang deutlich einfacher.'],
+      ],
+    },
+    es: {
+      title: 'Cuatro cosas que yo sabria antes de reservar Son Antem West',
+      items: [
+        ['Mejor hora de salida', 'Entre semana por la manana esta el punto dulce, si puede organizarlo. Los domingos se puede atascar pronto, incluso en la primera ola, porque el campo gusta mucho a los jugadores del resort.'],
+        ['Consejo con el viento', 'En un dia calmado es un campo muy jugable, y justo por eso funciona bien para grupos mezclados. Si se levanta la brisa, concentrese en las zonas de aterrizaje y tenga paciencia.'],
+        ['Donde suelen perder golpes los visitantes', 'El gran error es ponerse en piloto automatico porque las calles parecen generosas. Seguir en el lado equivocado de la calle sigue importando, algunos greens pequenos exigen una eleccion de palo muy precisa y los chips siguen rodando.'],
+        ['Consejo de casa club', 'La pequena tienda junto al check-in es realmente util si sale temprano. Un cafe, agua y algo de comer ahi hacen mucho mas facil el inicio de la vuelta.'],
+      ],
+    },
+    fr: {
+      title: 'Quatre choses que je voudrais savoir avant de reserver Son Antem West',
+      items: [
+        ['Meilleur depart', 'Le matin en semaine est le meilleur moment si vous pouvez l organiser. Le dimanche peut deja ralentir des la premiere vague, car le parcours est tres populaire aupres des joueurs du resort.'],
+        ['Conseil vent', 'Par jour calme, le parcours est tres jouable, et c est justement pour cela qu il fonctionne bien pour des groupes mixtes. Si la brise se leve, concentrez-vous sur les zones d atterrissage et restez patient.'],
+        ['Ou les visiteurs perdent des coups', 'La grosse erreur consiste a passer en pilote automatique parce que les fairways paraissent larges. Le mauvais cote du fairway compte toujours, certains petits greens exigent un choix de club tres precis, et les chips continuent de rouler.'],
+        ['Conseil clubhouse', 'La petite boutique a cote du check-in est vraiment utile pour un depart matinal. Un cafe, de l eau et un snack la-bas rendent le debut de partie beaucoup plus simple.'],
+      ],
+    },
+    nl: {
+      title: 'Vier dingen die ik zou willen weten voor ik Son Antem West boek',
+      items: [
+        ['Beste starttijd', 'Doordeweekse ochtenden zijn hier de sweet spot, als je dat kunt regelen. Op zondag kan het al vroeg opstropen, zelfs in de eerste wave, omdat de baan zo populair is bij resortgolfers.'],
+        ['Windtip', 'Op een rustige dag is de baan heel speelbaar, en juist daarom werkt hij goed voor gemengde groepen. Komt de bries op, focus dan op landingszones en blijf geduldig.'],
+        ['Waar bezoekers slagen verliezen', 'De grote fout is op automatische piloot gaan omdat de fairways royaal ogen. De verkeerde kant van de fairway blijft tellen, sommige kleinere greens vragen heel precieze clubkeuze en chips blijven doorrollen.'],
+        ['Clubhuistip', 'Het kleine winkeltje bij de check-in is echt handig bij een vroege start. Koffie, water en een snack daar maken het begin van de ronde veel makkelijker.'],
+      ],
+    },
+    sv: {
+      title: 'Fyra saker jag skulle vilja veta innan jag bokar Son Antem West',
+      items: [
+        ['Basta starttid', 'Vardagsmorgnar ar sweet spot har om du kan fa till det. Sonderdagar kan korka igen tidigt, till och med i forsta vagen, eftersom banan ar sa populart bland resortgaster.'],
+        ['Vindtips', 'En lugn dag ar banan mycket spelbar, och det ar precis darfor den fungerar bra for blandade grupper. Om brisen kommer upp, fokusera pa landningsytor och hall talamodet uppe.'],
+        ['Dar besokare tappar slag', 'Det stora misstaget ar att ga pa autopilot eftersom fairways ser generosa ut. Fel sida av fairway spelar fortfarande roll, vissa av de mindre greenerna kravs noggrant klubbval och chipparna fortsatter rulla.'],
+        ['Klubbhustips', 'Den lilla butiken vid check-in ar verkligen anvandbar vid en tidig start. Kaffe, vatten och ett snack dar gor oppningen av rundan mycket enklare.'],
+      ],
+    },
+    zh: {
+      title: '预订 Son Antem West 前我会先知道的四件事',
+      items: [
+        ['最佳开球时间', '如果能安排，工作日上午是这里最好的时间。周日很早就可能堵起来，哪怕是第一波出发，因为这座球场很受度假村客人欢迎。'],
+        ['风的建议', '在无风的日子里，这座球场非常好打，而这正是它适合混合水平组别的原因。风一起来，就把注意力放在落点区域上，保持耐心。'],
+        ['游客通常在哪里丢杆', '最大的错误是因为球道看起来很宽就开始自动驾驶。站在球道错误一侧仍然会出问题，一些较小的果岭需要非常准确的选杆，而且切杆会继续往前跑。'],
+        ['会所建议', '如果是早开球，check-in 旁边那家小店真的很有用。先在那里拿杯咖啡、带瓶水和一点吃的，会让开局轻松很多。'],
+      ],
+    },
+  },
+}
+
 const POST_PARITY_TEXT = {
   de: {
     quickHeading: (course) => `Kurzantwort: Sollten Sie ${course} buchen?`,
@@ -5629,6 +6080,10 @@ function makePostParityPlaceholder(type, slug, locale) {
     return { type, text: copy.commonParagraph }
   }
   if (type === 'notes') {
+    const notesOverride = POST_NOTES_OVERRIDES[slug]?.[locale]
+    if (notesOverride) {
+      return { type, title: notesOverride.title, items: notesOverride.items }
+    }
     return { type, title: copy.notesTitle(course), items: copy.notes }
   }
   if (type === 'facts') {
