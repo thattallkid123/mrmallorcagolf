@@ -3,6 +3,8 @@ import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
+import GuidesFilterSection from './GuidesFilterSection'
+import GuidesHeroAnchors from './GuidesHeroAnchors'
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
@@ -101,62 +103,10 @@ function getLocalePrefix(locale) {
   return locale === 'en' ? '' : `/${locale}`
 }
 
-function GuideCarousel({ id, heading, guides, prefix, priorityFirst = false, dark = false }) {
-  return (
-    <section className={`guides-carousel-section${dark ? ' guides-carousel-section--dark' : ''}`} id={id}>
-      {heading && (
-        <div className="guides-carousel-section__header">
-          <p className={`eyebrow${dark ? ' eyebrow--light' : ''}`}>{heading}</p>
-          <p className="guides-carousel-section__hint" style={dark ? { color: 'rgba(255,255,255,0.4)' } : {}}>{'<- scroll ->'}</p>
-        </div>
-      )}
-      <div className="guides-carousel__track" aria-label={`${heading || 'Guides'} carousel`}>
-        {guides.map((guide, i) => {
-          const img = guide.img
-            ? { src: guide.img, position: guide.imgPosition || 'center 40%' }
-            : GUIDE_IMAGES[guide.slug]
-          return (
-            <Link
-              key={guide.slug}
-              href={`${prefix}/guides/${guide.slug}`}
-              className="guide-photo-card reveal"
-            >
-              <div className="guide-photo-card__clip">
-                {img && (
-                  <div className="guide-photo-card__bg">
-                    <Image
-                      src={img.src}
-                      alt={guide.title}
-                      fill
-                      quality={88}
-                      sizes="(max-width: 760px) 92vw, 380px"
-                      style={{ objectFit: 'cover', objectPosition: img.position }}
-                      priority={priorityFirst && i === 0}
-                    />
-                  </div>
-                )}
-                <div className="guide-photo-card__overlay" />
-              </div>
-              <span className="guide-photo-card__badge">{guide.badge}</span>
-              <div className="guide-photo-card__content">
-                <h2 className="guide-photo-card__title">{shortTitle(guide.title)}</h2>
-                <p className="guide-photo-card__keywords">{guide.keywords}</p>
-              </div>
-            </Link>
-          )
-        })}
-      </div>
-    </section>
-  )
-}
-
 export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const prefix = getLocalePrefix(locale)
   const pageLayoutLang = pageLang || locale
   const heroActions = HERO_ACTIONS[locale] || HERO_ACTIONS.en
-
-  const reviewGuides = content.liveGuides.filter((g) => g.slug.endsWith('-review'))
-  const articleGuides = content.liveGuides.filter((g) => !g.slug.endsWith('-review'))
 
   return (
     <PageLayout lang={pageLayoutLang} navTransparent={false} showWhatsAppButton={false}>
@@ -195,14 +145,10 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
             <span className="page-hero__tag page-hero__tag--gold">{content.hero.tags[1]}</span>
             <span className="page-hero__tag">{content.hero.tags[2]}</span>
           </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.75rem' }}>
-            <a href="#course-reviews" className="btn btn--outline-white">
-              {heroActions.reviews}
-            </a>
-            <a href="#guides-articles" className="btn btn--outline-white">
-              {heroActions.articles}
-            </a>
-          </div>
+          <GuidesHeroAnchors
+            reviewsLabel={heroActions.reviews}
+            articlesLabel={heroActions.articles}
+          />
         </div>
       </header>
 
@@ -222,23 +168,14 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         </section>
       ) : null}
 
-      <GuideCarousel
-        id="course-reviews"
-        heading={content.reviewsHeading}
-        guides={reviewGuides}
+      <GuidesFilterSection
+        locale={locale}
         prefix={prefix}
-        priorityFirst
+        guides={content.liveGuides}
+        reviewsHeading={content.reviewsHeading}
+        articlesHeading={content.articlesHeading}
+        imageBySlug={GUIDE_IMAGES}
       />
-
-      {articleGuides.length > 0 && (
-        <GuideCarousel
-          id="guides-articles"
-          heading={content.articlesHeading}
-          guides={articleGuides}
-          prefix={prefix}
-          dark
-        />
-      )}
 
       <section className="cta-final">
         <div className="cta-final__left">

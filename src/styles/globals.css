@@ -3807,6 +3807,16 @@ select.form-control { cursor: pointer; }
   line-height: 1.6;
 }
 /* ── Guides Index — Photo Card Carousel ─────────────────────────── */
+.guides-filter-shell { padding: 22px clamp(20px,4vw,40px) 0; background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,247,242,0.94)); }
+.guides-filter-shell__inner { width: min(1180px, 100%); margin: 0 auto; }
+.guides-filter-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.guides-filter-tab { min-height: 52px; border: 1px solid rgba(26,25,22,0.14); background: rgba(255,255,255,0.92); color: var(--charcoal); font-family: var(--font-sans); font-size: 12px; font-weight: 500; letter-spacing: 0.04em; text-align: center; cursor: pointer; transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease; }
+.guides-filter-tab:hover { border-color: rgba(184,151,60,0.38); transform: translateY(-1px); }
+.guides-filter-tab.is-active { background: var(--pine); border-color: var(--pine); color: #fff; }
+.guides-filter-shell,
+.guides-carousel-section {
+  scroll-margin-top: calc(var(--nav-h) + 18px);
+}
 .guides-carousel-section { padding: clamp(56px,8vw,104px) 0 clamp(56px,8vw,104px) clamp(20px,4vw,40px); background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,247,242,0.94)); overflow: hidden; }
 .guides-carousel-section__header { display: flex; justify-content: space-between; align-items: flex-end; padding-right: clamp(20px,4vw,40px); margin-bottom: 36px; }
 .guides-carousel-section__hint { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--taupe); }
@@ -3868,6 +3878,17 @@ select.form-control { cursor: pointer; }
 }
 
 @media (max-width: 760px) {
+  .guides-filter-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .guides-filter-tab {
+    min-height: 58px;
+    padding: 8px 10px;
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
   .guides-carousel__track {
     scroll-snap-type: x proximity;
   }
