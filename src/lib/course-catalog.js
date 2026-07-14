@@ -41,7 +41,7 @@ export const CANONICAL_COURSE_DATA = Object.entries(SCORECARD_DATA)
   })
   .sort(compareByPublicName)
 
-export const CANONICAL_COURSE_DATA_BY_NAME = Object.fromEntries(
+const CANONICAL_COURSE_DATA_BY_NAME = Object.fromEntries(
   CANONICAL_COURSE_DATA.map((course) => [course.canonicalName, course])
 )
 

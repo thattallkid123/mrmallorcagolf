@@ -56,6 +56,10 @@ export const ARTICLE_SLUGS = new Set([
   'is-mallorca-good-for-golf',
 ])
 
+export const EN_ONLY_ARTICLE_SLUGS = new Set([
+  'play-with-a-pro-explained',
+])
+
 export function normalizePath(pathname = '/') {
   if (!pathname) return '/'
 
@@ -148,6 +152,7 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
   const slug = getGuideSlug(basePath)
   if (REVIEW_POST_SLUGS.has(slug)) return true
   if (EN_ONLY_REVIEW_POST_SLUGS.has(slug)) return locale === 'en'
+  if (EN_ONLY_ARTICLE_SLUGS.has(slug)) return locale === 'en'
   if (isArticleSlug(slug)) return ALL_LOCALES.includes(locale)
 
   return false
@@ -238,9 +243,9 @@ export function getSitemapPaths() {
     paths.push(buildLocalePath(`/guides/${slug}`, 'en'))
   }
 
-  // Article/guide posts: include ALL locales (published in all languages)
   for (const slug of ARTICLE_SLUGS) {
-    for (const locale of ALL_LOCALES) {
+    const locales = EN_ONLY_ARTICLE_SLUGS.has(slug) ? ['en'] : ALL_LOCALES
+    for (const locale of locales) {
       paths.push(buildLocalePath(`/guides/${slug}`, locale))
     }
   }

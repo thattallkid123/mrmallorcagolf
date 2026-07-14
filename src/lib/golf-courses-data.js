@@ -1,4 +1,4 @@
-import { COURSE_HANDICAP, getCourseAccessByName } from './course-access-data.js'
+import { getCourseAccessByName } from './course-access-data.js'
 import { getScorecardByCourseName, getScorecardTees } from './scorecard-data.js'
 
 const SCORECARD_TEE_DISPLAY_ORDER = ['yellow', 'white', 'standard', 'green', 'blue', 'red', 'black', 'pink']
@@ -119,9 +119,3 @@ export const GOLF_COURSE_DATA = RAW_GOLF_COURSE_DATA.map((region) => ({
   courses: region.courses.map(normalizeCourse),
 }))
 
-// Handicap requirements per course, sourced from MMG_ENCYCLOPAEDIA_DATA_MASTER.md (access rules).
-// Only courses with a MEANINGFUL gate are listed: a valid handicap certificate is required (cert),
-// and/or the men's maximum handicap is below 36 (max). Courses that accept up to HCP 36 with no
-// certificate (the majority) are intentionally omitted so cards are not cluttered with a non-gate.
-// Keyed by the exact `name` used in GOLF_COURSE_DATA above.
-export { COURSE_HANDICAP }

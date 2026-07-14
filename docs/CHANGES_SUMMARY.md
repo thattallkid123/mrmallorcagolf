@@ -8,9 +8,9 @@
    - Extract tier flags to one place
    - Prevents parity bugs by definition
 
-2. **Content Validation Schema** — `src/lib/content/content-validation.js`
+2. **Content Validation Schema** — `scripts/validate-content.mjs`
    - Catches structural errors before build
-   - Validates tier count, required fields, flag patterns
+   - Validates tier count, required fields, and flag patterns from the CLI check
 
 3. **Locale Parity Checker (Enhanced)** — `scripts/check-locale-parity.js`
    - Added `--fix` flag for auto-fix attempts
@@ -37,11 +37,10 @@
 ```
 src/lib/content/
 ├── tier-definitions.js         [NEW] Single source of tier flags
-└── content-validation.js        [NEW] Structural validation logic
 
 scripts/
 ├── check-locale-parity.js       [UPDATED] Added --fix mode
-└── validate-content.js          [NEW] CLI runner for validation
+└── validate-content.mjs         [ACTIVE] CLI runner for validation
 
 docs/
 ├── CODEBASE_IMPROVEMENTS.md     [NEW] Infrastructure overview
@@ -160,3 +159,4 @@ No build changes, but verify:
 ---
 
 **Status:** ✅ All improvements implemented, zero risk, backwards compatible.
+

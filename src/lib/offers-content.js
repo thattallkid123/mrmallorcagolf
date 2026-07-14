@@ -243,7 +243,7 @@ function getOfferLocale(locale = 'en') {
   return normalizeMojibakeDeep(OFFER_CONTENT[locale] || OFFER_CONTENT.en)
 }
 
-export function getOfferCopy(locale = 'en') {
+function getOfferCopy(locale = 'en') {
   return getOfferLocale(locale)
 }
 

@@ -1,7 +1,7 @@
 import { getOfferById, OFFER_IDS } from './offers-content.js'
 import { normalizeMojibakeDeep } from './text-normalization.js'
 
-export const PLAN_YOUR_TRIP_CONTENT = {
+const PLAN_YOUR_TRIP_CONTENT = {
   en: {
     heroEyebrow: 'Plan Your Mallorca Golf Trip',
     heroTitle: 'Start with the courses. Let me build the trip properly.',

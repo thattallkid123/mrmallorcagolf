@@ -108,7 +108,7 @@ function withOverrides(baseKey, overrides) {
   }
 }
 
-export const PRIORITY_COURSE_ART = {
+const PRIORITY_COURSE_ART = {
   'Golf Son Gual': [
     withOverrides('straight', { waterPath: 'M22 126 C16 118, 16 104, 24 98 C33 92, 42 96, 43 106 C44 116, 35 126, 22 126 Z' }),
     withOverrides('dogleg-right', { bunkers: [...DEFAULT_ART['dogleg-right'].bunkers, { x: 25, y: 135, rx: 4.6, ry: 2.1, rotate: 24 }] }),

@@ -31,7 +31,7 @@ const DEFAULT_TOOLS = {
   },
 }
 
-export const TOOL_PLACEMENTS = DEFAULT_TOOLS
+const TOOL_PLACEMENTS = DEFAULT_TOOLS
 
 export default function ToolPlacementCta({
   tool = DEFAULT_TOOLS.courseSelector,

@@ -5,7 +5,7 @@ function scoreMojibake(value) {
   return matches ? matches.length : 0
 }
 
-export function repairLikelyMojibake(value) {
+function repairLikelyMojibake(value) {
   if (typeof value !== 'string') return value
   if (!MOJIBAKE_PATTERN.test(value)) return value
 

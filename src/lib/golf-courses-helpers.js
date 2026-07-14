@@ -1,7 +1,7 @@
 import { GOLF_COURSE_DATA } from './golf-courses-data.js'
 import { getGuidePath } from './site.js'
 
-export const SHORT_TO_ID = {
+const SHORT_TO_ID = {
   'Son Gual': 'golf-son-gual',
   'Son Muntaner': 'son-muntaner',
   'Son Vida': 'golf-son-vida',
@@ -44,7 +44,7 @@ export const SHORT_TO_ID = {
 // / map / handicap lookups, the pricing sync, and SEO review titles. This map
 // only changes what a listing shows. Courses not listed here display their full
 // name unchanged (T Golf brands and Reserva Rotana keep their tags on purpose).
-export const COURSE_SHORT_NAME = {
+const COURSE_SHORT_NAME = {
   'Golf Son Gual': 'Son Gual',
   'Golf Son Vida': 'Son Vida',
   'Golf Son Quint': 'Son Quint',
@@ -97,7 +97,7 @@ export function slugifyCourseName(name) {
     .replace(/(^-|-$)/g, '')
 }
 
-export function normalizeCourseName(name) {
+function normalizeCourseName(name) {
   return name
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
@@ -151,7 +151,7 @@ export function findCourseByName(name) {
   return null
 }
 
-export function getCourseDistanceKm(course) {
+function getCourseDistanceKm(course) {
   const match = course?.location?.match(/(\d+)\s*km/i)
   return match ? Number(match[1]) : Number.POSITIVE_INFINITY
 }
@@ -170,7 +170,7 @@ export function getCoursePriceMeta(course) {
   }
 }
 
-export function getCourseMetaByName(name) {
+function getCourseMetaByName(name) {
   const course = findCourseByName(name)
   return course ? getCoursePriceMeta(course) : { dynamic: false, peakPrice: null, lowPrice: null, distanceKm: Number.POSITIVE_INFINITY }
 }

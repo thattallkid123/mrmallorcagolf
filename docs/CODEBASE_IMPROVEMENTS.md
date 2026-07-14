@@ -12,22 +12,8 @@ Instead of tier flags being defined in three separate places (PWAP content, home
 
 **What changed:**
 - Extracted `TIER_CONFIG` object with all tier flags
-- Utility functions: `getTierFlags()`, `validateTierFlags()`, etc.
+- Shared constants: `TIER_CONFIG` and `TIER_NAMES`
 - Any tier name or flag change updates everywhere automatically
-
-**Usage:**
-```javascript
-import { getTierFlags, validateTierFlags } from '@lib/content/tier-definitions.js';
-
-const soloFlags = getTierFlags('Solo'); // { featured: false, signature: false }
-
-// Validate tier matches config
-try {
-  validateTierFlags(myTier);
-} catch (err) {
-  console.error('Tier flags mismatch:', err.message);
-}
-```
 
 **Benefit:** One edit to tier structure applies to all content files instantly. No more searching three files to change featured/signature flags.
 
@@ -36,8 +22,8 @@ try {
 ## 2. Content Validation Schema
 
 **Files:** 
-- `src/lib/content/content-validation.js` (validation logic)
-- `scripts/validate-content.js` (CLI runner)
+- `scripts/validate-content.mjs` (active CLI runner)
+- `scripts/validate-content.js` (legacy CLI runner retained in repo)
 
 Catches structural errors before deploy:
 - Missing tier fields
@@ -113,7 +99,7 @@ Added to `package.json`:
 
 ```json
 "check:locale-parity": "node scripts/check-locale-parity.js",
-"check:content-validation": "node scripts/validate-content.js"
+"check:content-validation": "node scripts/validate-content.mjs"
 ```
 
 **Update your CI/CD:**
@@ -218,9 +204,10 @@ None of these changes affect what users see or how the site runs.
 | Improvement | File | Purpose |
 |---|---|---|
 | Tier definitions | `src/lib/content/tier-definitions.js` | Single source of truth for tier flags |
-| Content validation | `src/lib/content/content-validation.js` | Structural error detection |
+| Content validation | `scripts/validate-content.mjs` | Structural error detection |
 | Parity checker | `scripts/check-locale-parity.js` | Verify 6-language consistency |
 | Import aliases | `jsconfig.json` | Same paths in all language versions |
 | Validation script | `scripts/validate-content.js` | Run validation from CLI |
 
 All work together to catch errors early and make content editing clearer.
+

@@ -98,7 +98,7 @@ const BOOKING_POLICY_COPY = {
   },
 }
 
-export function getBookingPolicyCopy(locale = 'en') {
+function getBookingPolicyCopy(locale = 'en') {
   return BOOKING_POLICY_COPY[locale] || BOOKING_POLICY_COPY.en
 }
 

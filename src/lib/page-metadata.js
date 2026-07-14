@@ -499,7 +499,7 @@ export function buildAboutMetadata(locale = 'en') {
   return buildPageMetadata(locale === 'en' ? '/about' : `/${locale}/about`, locale, ABOUT_METADATA[locale] || ABOUT_METADATA.en)
 }
 
-export function buildCoachingMetadata(locale = 'en') {
+function buildCoachingMetadata(locale = 'en') {
   return buildPageMetadata(
     locale === 'en' ? '/coaching' : `/${locale}/coaching`,
     locale,
@@ -523,7 +523,7 @@ export function buildContactMetadata(locale = 'en') {
   )
 }
 
-export function buildItineraryMetadata() {
+function buildItineraryMetadata() {
   return buildPageMetadata('/itinerary', 'en', ITINERARY_METADATA.en)
 }
 
@@ -535,7 +535,7 @@ export function buildPlanYourTripMetadata(locale = 'en') {
   )
 }
 
-export function buildSubscribeMetadata(locale = 'en') {
+function buildSubscribeMetadata(locale = 'en') {
   return buildPageMetadata(
     locale === 'en' ? '/subscribe' : `/${locale}/subscribe`,
     locale,
