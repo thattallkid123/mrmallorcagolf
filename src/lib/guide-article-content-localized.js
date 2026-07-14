@@ -6947,42 +6947,12 @@ const ARTICLE_PARITY_SEQUENCES = {
 }
 
 const ARTICLE_PARITY_TEXT = {
-  de: {
-    ctaText: 'Moechten Sie daraus einen klar geplanten Golftag machen?',
-    ctaLabel: 'Play With A Pro Tag ansehen',
-    tableHeaders: ['Platz', 'Lage', 'Par', 'Greenfee', 'Schwierigkeit', 'Sterne', 'Am besten fuer'],
-    bestFor: 'Passende Option fuer diese Art Runde',
-  },
-  es: {
-    ctaText: 'Quiere convertirlo en un dia de golf bien organizado?',
-    ctaLabel: 'Ver el dia Play With A Pro',
-    tableHeaders: ['Campo', 'Zona', 'Par', 'Green fee', 'Dificultad', 'Estrellas', 'Ideal para'],
-    bestFor: 'Opcion adecuada para este tipo de ronda',
-  },
-  fr: {
-    ctaText: 'Envie de transformer cela en une vraie journee de golf organisee ?',
-    ctaLabel: 'Voir la journee Play With A Pro',
-    tableHeaders: ['Parcours', 'Lieu', 'Par', 'Green fee', 'Difficulte', 'Etoiles', 'Ideal pour'],
-    bestFor: 'Option adaptee a ce type de partie',
-  },
-  nl: {
-    ctaText: 'Wilt u hier een goed geregelde golfdag van maken?',
-    ctaLabel: 'Bekijk de Play With A Pro dag',
-    tableHeaders: ['Baan', 'Locatie', 'Par', 'Greenfee', 'Moeilijkheid', 'Sterren', 'Beste voor'],
-    bestFor: 'Passende keuze voor dit type ronde',
-  },
-  sv: {
-    ctaText: 'Vill du gora detta till en tydligt planerad golfdag?',
-    ctaLabel: 'Se Play With A Pro-dagen',
-    tableHeaders: ['Bana', 'Plats', 'Par', 'Greenfee', 'Svarighet', 'Stjarnor', 'Bast for'],
-    bestFor: 'Passande val for den har typen av rond',
-  },
-  zh: {
-    ctaText: '想把这安排成清晰、省心的一天高尔夫吗？',
-    ctaLabel: '查看 Play With A Pro 体验',
-    tableHeaders: ['球场', '位置', '标准杆', '果岭费', '难度', '评分', '适合人群'],
-    bestFor: '适合这种类型的一轮球',
-  },
+  de: { ctaText: 'Moechten Sie daraus einen klar geplanten Golftag machen?', ctaLabel: 'Play With A Pro Tag ansehen' },
+  es: { ctaText: 'Quiere convertirlo en un dia de golf bien organizado?', ctaLabel: 'Ver el dia Play With A Pro' },
+  fr: { ctaText: 'Envie de transformer cela en une vraie journee de golf organisee ?', ctaLabel: 'Voir la journee Play With A Pro' },
+  nl: { ctaText: 'Wilt u hier een goed geregelde golfdag van maken?', ctaLabel: 'Bekijk de Play With A Pro dag' },
+  sv: { ctaText: 'Vill du gora detta till en tydligt planerad golfdag?', ctaLabel: 'Se Play With A Pro-dagen' },
+  zh: { ctaText: '想把这安排成清晰、省心的一天高尔夫吗？', ctaLabel: '查看 Play With A Pro 体验' },
 }
 
 const BEST_COURSES_TABLE_ROWS = [
@@ -7012,17 +6982,191 @@ const BEST_COURSES_TABLE_ROWS = [
   ['Reserva Rotana', 'Manacor', '36 (9H)', 'Hotel only', '6/10', '3.5'],
 ]
 
-function makeParityPlaceholder(type, slug, locale) {
+const BEST_COURSES_TABLE_TEXT = {
+  de: {
+    headers: ['Platz', 'Lage', 'Par', 'Greenfee', 'Schwierigkeit', 'Sterne', 'Am besten fuer'],
+    bestFor: ['Ernsthafte Championship-Runde', 'Spektakulaere Aussichten, Turnierqualitaet', 'Beste Pflege, nah an Palma', 'Premium-Erlebnis auf breiter Front', 'Haertester Test auf der Insel', 'Historischer Platz, Seve gewann hier', 'Einziges Nicklaus-Design der Insel', 'European-Tour-Standort, oeffentlich spielbar', 'Ruhig, mitgliederorientiertes Gefuehl', 'Anfaenger, kurzes Spiel trainieren', 'Alle Spielstaerken, Tiger spielte hier', 'Bewaldetes Tal, Blicke zur Bucht', 'Tramuntana-Bergkulisse', 'Resortplatz, haerter als Son Antem East', 'Breite Fairways, Resort-Golf', 'Unterschaetzt, ruhigere Option', 'Olazabal-Umbau, 8 Tour-Events', 'Entspannter Parklandkurs, historisch', 'Ostkuestenblicke, starke Back Nine', 'Starke Back Nine und markantes Bergloch', 'Meistfotografierter Platz der Ostkueste', 'Einfache Aufwaermrunde, Tramuntana-Blicke', 'Anfaenger, kurzes Spiel trainieren', 'Stay-and-play auf privatem Landgut'],
+    tableCtaText: 'Moechten Sie alle 24 Plaetze auf einer Seite direkt vergleichen? Laden Sie die kostenlose Vergleichsuebersicht herunter.',
+    tableCtaLabel: 'Kostenlosen Platzvergleich holen →',
+    purposeHeading: 'Die Top-Plaetze nach Einsatzbereich',
+    alcanadaExtra: 'Auf den erhoehten hinteren Abschlaegen zu stehen, ist ein Erlebnis fuer sich. Man fuehlt sich weit weg von allem, der Leuchtturm steht vor einem, die Bucht zieht sich auf, und der Driver verschwindet gefuehlt ins Leere. Genau so fuehlt es sich an.',
+    capdeperaHeading: 'Fuer eine starke Ostkuesten-Ueberraschung: Capdepera',
+    capdeperaText: 'Capdepera ist besser, als viele Besucher erwarten. Die Front Nine ist offen und gut spielbar, dann steigt die Back Nine in die Huegel und wird deutlich taktischer. Das Par-3 an der 15 ist eines der besten Loecher der Insel, mit erhoehten Bergblicken, die die Anfahrt schon vor dem letzten Putt lohnend machen.',
+    sonMuntanerHeading: 'Fuer ein DP-World-Tour-Erlebnis: Son Muntaner',
+    andratxCtaText: 'Sie denken ueber Andratx nach? Ich erklaere Layout, Wind, passende Abschlaege und ob der Platz wirklich zu Ihrem Spiel passt.',
+    andratxCtaLabel: 'Zur Golf-de-Andratx-Bewertung →',
+    comparisonCtaText: 'Laden Sie die kostenlose Vergleichsuebersicht herunter, die alle 24 Mallorca-Plaetze nach Greenfees, Schwierigkeit und Eignung nebeneinander stellt.',
+    comparisonCtaLabel: 'Platzvergleich herunterladen →',
+  },
+  es: {
+    headers: ['Campo', 'Zona', 'Par', 'Green fee', 'Dificultad', 'Estrellas', 'Ideal para'],
+    bestFor: ['Vuelta seria de nivel championship', 'Vistas espectaculares y calidad de torneo', 'Mejor mantenimiento, cerca de Palma', 'Experiencia premium muy completa', 'La prueba mas dura de la isla', 'Campo historico, aqui gano Seve', 'Unico diseno Nicklaus de la isla', 'Sede de European Tour con acceso publico', 'Ambiente tranquilo y mas de socios', 'Principiantes y juego corto', 'Todos los niveles, Tiger jugo aqui', 'Valle arbolado y vistas a la bahia', 'Entorno Tramuntana', 'Resort, mas exigente que Son Antem East', 'Calles anchas y golf de resort', 'Opcion infravalorada y mas tranquila', 'Rediseño de Olazabal y 8 eventos Tour', 'Parkland relajado e historico', 'Vistas de la costa este y gran segunda vuelta', 'Gran back nine y hoyo de montana destacado', 'El mas fotografiado de la costa este', 'Ronda facil para entrar en calor', 'Principiantes y practicas de approach', 'Stay-and-play en finca privada'],
+    tableCtaText: 'Quiere comparar los 24 campos lado a lado en una sola pagina? Descargue la tabla comparativa gratuita.',
+    tableCtaLabel: 'Descargar la comparativa gratuita →',
+    purposeHeading: 'Los mejores campos segun para que los quiere',
+    alcanadaExtra: 'Estar en los tees elevados del fondo es una experiencia en si misma. Se siente lejos de todo, con el faro delante, la bahia abriendose y el driver saliendo casi hacia el vacio. Esa es la sensacion.',
+    capdeperaHeading: 'Para una sorpresa de la costa este: Capdepera',
+    capdeperaText: 'Capdepera es mejor de lo que muchos visitantes esperan. Los primeros nueve son abiertos y jugables, y luego la segunda vuelta se mete en las colinas y se vuelve mas tactica. El par 3 del 15 es uno de los mejores hoyos de la isla, con vistas elevadas de montana que ya justifican el viaje antes incluso del ultimo putt.',
+    sonMuntanerHeading: 'Para una experiencia DP World Tour: Son Muntaner',
+    andratxCtaText: 'Pensando en Andratx? Explico el recorrido, el viento, la salida adecuada y si de verdad encaja con su juego.',
+    andratxCtaLabel: 'Leer la reseña de Golf de Andratx →',
+    comparisonCtaText: 'Descargue la tabla comparativa gratuita con los 24 campos de Mallorca comparados por green fees, dificultad y tipo de jugador al que mejor encajan.',
+    comparisonCtaLabel: 'Descargar la comparativa →',
+  },
+  fr: {
+    headers: ['Parcours', 'Lieu', 'Par', 'Green fee', 'Difficulte', 'Etoiles', 'Ideal pour'],
+    bestFor: ['Vraie partie championship', 'Vues spectaculaires et qualite tournoi', 'Etat de jeu exceptionnel, proche de Palma', 'Experience premium tres complete', 'Le test le plus dur de l ile', 'Parcours historique, victoire de Seve ici', 'Seul dessin Nicklaus de l ile', 'Site European Tour accessible au public', 'Ambiance calme, esprit membres', 'Debutants et petit jeu', 'Tous niveaux, Tiger y a joue', 'Vallee boisee avec vues sur la baie', 'Cadre Tramuntana', 'Resort plus exigeant que Son Antem East', 'Fairways larges, golf de resort', 'Option sous-estimee et plus calme', 'Redesign Olazabal, 8 evenements du Tour', 'Parkland detendu, historique', 'Vues cote est et tres bonne back nine', 'Belle back nine et trou de montagne marquant', 'Le plus photographie de la cote est', 'Parfait pour se chauffer, vues Tramuntana', 'Debutants et travail d approches', 'Sejour golf sur domaine prive'],
+    tableCtaText: 'Vous voulez comparer les 24 parcours cote a cote sur une seule page ? Telechargez le tableau comparatif gratuit.',
+    tableCtaLabel: 'Obtenir le comparatif gratuit →',
+    purposeHeading: 'Les meilleurs parcours selon l usage',
+    alcanadaExtra: 'Se tenir sur les tees sureleves du fond est une experience en soi. On se sent loin de tout, avec le phare devant, la baie qui s ouvre et un drive lance presque dans le vide. C est exactement cette sensation.',
+    capdeperaHeading: 'Pour une tres bonne surprise sur la cote est : Capdepera',
+    capdeperaText: 'Capdepera est meilleur que ce que beaucoup de visiteurs imaginent. L aller est ouvert et assez jouable, puis le retour grimpe dans les collines et devient bien plus tactique. Le par 3 du 15 compte parmi les meilleurs trous de l ile, avec des vues de montagne en hauteur qui justifient le trajet avant meme le dernier putt.',
+    sonMuntanerHeading: 'Pour une experience DP World Tour : Son Muntaner',
+    andratxCtaText: 'Vous pensez a Andratx ? J y explique le trace, le vent, le bon depart et si le parcours correspond reellement a votre jeu.',
+    andratxCtaLabel: 'Lire l avis sur Golf de Andratx →',
+    comparisonCtaText: 'Telechargez le tableau comparatif gratuit des 24 parcours de Majorque, avec green fees, difficulte et profil de joueur ideale en un coup d oeil.',
+    comparisonCtaLabel: 'Telecharger le comparatif →',
+  },
+  nl: {
+    headers: ['Baan', 'Locatie', 'Par', 'Greenfee', 'Moeilijkheid', 'Sterren', 'Beste voor'],
+    bestFor: ['Serieuze championship-ronde', 'Spectaculair uitzicht en toernooikwaliteit', 'Best onderhouden, dicht bij Palma', 'Complete premiumervaring', 'Zwaarste test van het eiland', 'Historische baan, Seve won hier', 'Enige Nicklaus-ontwerp op het eiland', 'European Tour-locatie met publieke toegang', 'Rustig met meer ledengevoel', 'Beginners en kort spel', 'Alle niveaus, Tiger speelde hier', 'Bosrijke vallei met baaizicht', 'Tramuntana-bergsetting', 'Resortbaan, taaier dan Son Antem East', 'Brede fairways en resortgolf', 'Onderrated en rustiger alternatief', 'Olazabal-redesign, 8 Tour-events', 'Ontspannen parkland, historisch', 'Oostkustuitzicht en sterke back nine', 'Sterke back nine en opvallend berghole', 'Meest gefotografeerde baan van de oostkust', 'Makkelijke opwarmer met Tramuntana-zicht', 'Beginners en approach-oefening', 'Stay-and-play op privelandgoed'],
+    tableCtaText: 'Wilt u alle 24 banen op een pagina naast elkaar vergelijken? Download dan de gratis vergelijkingskaart.',
+    tableCtaLabel: 'Gratis vergelijking downloaden →',
+    purposeHeading: 'De topbanen per type ronde',
+    alcanadaExtra: 'Op de verhoogde back tees staan is een ervaring op zich. U voelt zich ver van alles, met de vuurtoren voor u, de baai die openvalt en een driver die bijna de leegte in verdwijnt. Dat is precies het gevoel.',
+    capdeperaHeading: 'Voor een sterke verrassing aan de oostkust: Capdepera',
+    capdeperaText: 'Capdepera is beter dan veel bezoekers verwachten. De eerste negen zijn opener en speelbaar, daarna klimt de back nine de heuvels in en wordt de baan tactischer. De par-3 15e is een van de beste holes van het eiland, met verhoogde berguitzichten die de rit al de moeite waard maken voordat u uitputt.',
+    sonMuntanerHeading: 'Voor een DP World Tour-gevoel: Son Muntaner',
+    andratxCtaText: 'Overweegt u Andratx? Ik leg de baan uit, de wind, de beste tee-keuze en of hij echt bij uw spel past.',
+    andratxCtaLabel: 'Lees de Golf de Andratx-review →',
+    comparisonCtaText: 'Download de gratis vergelijkingskaart met alle 24 banen van Mallorca vergeleken op greenfees, moeilijkheid en voor welk type golfer ze het beste werken.',
+    comparisonCtaLabel: 'Vergelijking downloaden →',
+  },
+  sv: {
+    headers: ['Bana', 'Plats', 'Par', 'Greenfee', 'Svarighet', 'Stjarnor', 'Bast for'],
+    bestFor: ['Serios championship-rond', 'Spektakulara vyer och tournament-kvalitet', 'Bast skick, nara Palma', 'Premiumupplevelse rakt igenom', 'Den tuffaste testen pa on', 'Historisk bana, Seve vann har', 'Ons enda Nicklaus-design', 'European Tour-plats med offentlig access', 'Lugn, medlemsbetonad kansla', 'Nybörjare och narspel', 'Alla nivaer, Tiger spelade har', 'Skogsdal med utsikt over bukten', 'Tramuntana-miljo', 'Resortbana, tuffare an Son Antem East', 'Breda fairways och resortgolf', 'Underskattat och lugnare alternativ', 'Olazabal-ombyggnad, 8 Tour-event', 'Avslappnad parkland, historisk', 'Ostkustvyer och stark back nine', 'Stark back nine och tydligt bergshal', 'Mest fotograferad pa ostkusten', 'Enkel uppvarmning med Tramuntana-vyer', 'Nybörjare och inspelstraning', 'Bo-och-spela pa privat egendom'],
+    tableCtaText: 'Vill du jamfora alla 24 banor sida vid sida pa en sida? Ladda ner den kostnadsfria jamforelseguiden.',
+    tableCtaLabel: 'Hamta den kostnadsfria jamforelsen →',
+    purposeHeading: 'Toppbanorna efter syfte',
+    alcanadaExtra: 'Att sta pa de upphojda bakre tees ar en upplevelse i sig. Man kanner sig langt ifran allt, med fyren framfor sig, bukten som oppnar upp sig och en driver som forsvinner ut i tomheten. Det ar precis den kanslan.',
+    capdeperaHeading: 'For en stark overraskning pa ostkusten: Capdepera',
+    capdeperaText: 'Capdepera ar battre an manga besokare forvantar sig. De forsta nio ar oppna och spelbara, sedan klattrar back nine upp i kullarna och blir mer taktisk. Par-3-halet nummer 15 ar ett av de basta pa on, med upphojda bergsvyer som gor bilturen vard det redan innan sista putten.',
+    sonMuntanerHeading: 'For en DP World Tour-upplevelse: Son Muntaner',
+    andratxCtaText: 'Funderar du pa Andratx? Jag gar igenom layouten, vinden, vilken tee som passar och om banan faktiskt passar ditt spel.',
+    andratxCtaLabel: 'Las Golf de Andratx-recensionen →',
+    comparisonCtaText: 'Ladda ner den kostnadsfria jamforelseguiden med alla 24 Mallorca-banor jamforda efter greenfee, svarighet och vilken spelare de passar bast.',
+    comparisonCtaLabel: 'Ladda ner jamforelsen →',
+  },
+  zh: {
+    headers: ['球场', '位置', '标准杆', '果岭费', '难度', '评分', '适合人群'],
+    bestFor: ['真正像样的硬仗', '风景最强且具比赛品质', '保养最好，离Palma近', '整体非常完整的高端体验', '岛上最硬的测试', '有历史，也有Seve赢过的故事', '岛上唯一的Nicklaus设计', '公开可打的European Tour场地感', '安静，会员氛围更强', '初学者和短杆练习', '各种水平都能打，Tiger来过', '林地山谷，带海湾视野', 'Tramuntana山景环境', '度假型球场，但比Son Antem East更硬', '宽球道，典型resort golf', '被低估、更安静的选择', 'Olazabal改造，办过8场巡回赛', '放松型parkland，也有历史', '东海岸视野和很强的后九洞', '后九洞很强，还有标志性山景洞', '东海岸最上镜的球场', '轻松热身，Tramuntana风景', '初学者和切推练习', '私家庄园里的stay-and-play'],
+    tableCtaText: '想把24座球场放在一页里直接横向比较？可以下载免费的球场对比表。',
+    tableCtaLabel: '获取免费对比表 →',
+    purposeHeading: '按用途来看的顶级球场',
+    alcanadaExtra: '站在高起的后发球台上，本身就是一种体验。你会觉得自己离其他一切都很远，前面是灯塔，海湾在眼前铺开，而driver像是要直接打进远处的空旷里。那种感觉就是它的魅力。',
+    capdeperaHeading: '如果你想要一座东海岸惊喜：Capdepera',
+    capdeperaText: 'Capdepera比很多访客预想的更好。前九洞更开阔、更好上手，后九洞则爬进山里，变得更有策略性。15号洞那个三杆洞是全岛最好的洞之一，高处的山景会让你在最后一推之前就觉得这趟车程值得。',
+    sonMuntanerHeading: '如果你想要DP World Tour那种比赛感：Son Muntaner',
+    andratxCtaText: '如果你正在考虑Andratx，我在详细评测里会讲清楚它的布局、风、该打哪组发球台，以及它到底适不适合你的球。',
+    andratxCtaLabel: '阅读 Golf de Andratx 评测 →',
+    comparisonCtaText: '下载免费的球场对比表，把马略卡24座球场按果岭费、难度和适合哪类球手放在一起看清楚。',
+    comparisonCtaLabel: '下载球场对比表 →',
+  },
+}
+
+const ARTICLE_PARITY_OVERRIDES = {
+  'golf-cost-mallorca': {
+    de: {
+      28: { type: 'cta', text: 'Moechten Sie einen kompletten Golftag organisiert haben, mit Platz, Tee Time, Coaching und allem vor Ihrer Ankunft geklaert?', linkLabel: 'Play With A Pro Tag auf Mallorca buchen →', href: '/play-with-a-pro' },
+    },
+    es: {
+      28: { type: 'cta', text: 'Quiere llegar con el dia completo ya resuelto, con campo, hora de salida, coaching y todo organizado antes de aterrizar?', linkLabel: 'Reservar un dia Play With A Pro en Mallorca →', href: '/play-with-a-pro' },
+    },
+    fr: {
+      28: { type: 'cta', text: 'Vous voulez une journee complete deja organisee, avec parcours, tee time, coaching et tout regle avant votre arrivee ?', linkLabel: 'Reserver une journee Play With A Pro a Majorque →', href: '/play-with-a-pro' },
+    },
+    nl: {
+      28: { type: 'cta', text: 'Wilt u dat de hele golfdag al geregeld is, met baan, starttijd, coaching en alles vast voordat u aankomt?', linkLabel: 'Boek een Play With A Pro-dag op Mallorca →', href: '/play-with-a-pro' },
+    },
+    sv: {
+      28: { type: 'cta', text: 'Vill du att hela golfdagen ska vara ordnad i forvag, med bana, starttid, coaching och allt klart innan du kommer fram?', linkLabel: 'Boka en Play With A Pro-dag pa Mallorca →', href: '/play-with-a-pro' },
+    },
+    zh: {
+      28: { type: 'cta', text: '如果你想在出发前就把整天安排好，包括球场、开球时间、陪打指导和所有细节，这里可以直接开始。', linkLabel: '预订马略卡 Play With A Pro 一天体验 →', href: '/play-with-a-pro' },
+    },
+  },
+  'best-golf-courses-mallorca': {
+    de: (copy => ({
+      3: { type: 'table', headers: copy.headers, rows: BEST_COURSES_TABLE_ROWS.map((row, index) => [...row, copy.bestFor[index]]) },
+      4: { type: 'cta', text: copy.tableCtaText, linkLabel: copy.tableCtaLabel, href: '/guides/course-comparison', internal: true },
+      5: { type: 'heading', text: copy.purposeHeading },
+      13: { type: 'paragraph', text: copy.alcanadaExtra },
+      15: { type: 'paragraph', text: copy.capdeperaText },
+      16: { type: 'subheading', text: copy.sonMuntanerHeading },
+      22: { type: 'cta', text: copy.andratxCtaText, linkLabel: copy.andratxCtaLabel, href: '/guides/golf-andratx-review' },
+      38: { type: 'cta', text: copy.comparisonCtaText, linkLabel: copy.comparisonCtaLabel, href: '/guides/course-comparison', internal: true },
+    }))(BEST_COURSES_TABLE_TEXT.de),
+    es: (copy => ({
+      3: { type: 'table', headers: copy.headers, rows: BEST_COURSES_TABLE_ROWS.map((row, index) => [...row, copy.bestFor[index]]) },
+      4: { type: 'cta', text: copy.tableCtaText, linkLabel: copy.tableCtaLabel, href: '/guides/course-comparison', internal: true },
+      5: { type: 'heading', text: copy.purposeHeading },
+      13: { type: 'paragraph', text: copy.alcanadaExtra },
+      15: { type: 'paragraph', text: copy.capdeperaText },
+      16: { type: 'subheading', text: copy.sonMuntanerHeading },
+      22: { type: 'cta', text: copy.andratxCtaText, linkLabel: copy.andratxCtaLabel, href: '/guides/golf-andratx-review' },
+      38: { type: 'cta', text: copy.comparisonCtaText, linkLabel: copy.comparisonCtaLabel, href: '/guides/course-comparison', internal: true },
+    }))(BEST_COURSES_TABLE_TEXT.es),
+    fr: (copy => ({
+      3: { type: 'table', headers: copy.headers, rows: BEST_COURSES_TABLE_ROWS.map((row, index) => [...row, copy.bestFor[index]]) },
+      4: { type: 'cta', text: copy.tableCtaText, linkLabel: copy.tableCtaLabel, href: '/guides/course-comparison', internal: true },
+      5: { type: 'heading', text: copy.purposeHeading },
+      13: { type: 'paragraph', text: copy.alcanadaExtra },
+      15: { type: 'paragraph', text: copy.capdeperaText },
+      16: { type: 'subheading', text: copy.sonMuntanerHeading },
+      22: { type: 'cta', text: copy.andratxCtaText, linkLabel: copy.andratxCtaLabel, href: '/guides/golf-andratx-review' },
+      38: { type: 'cta', text: copy.comparisonCtaText, linkLabel: copy.comparisonCtaLabel, href: '/guides/course-comparison', internal: true },
+    }))(BEST_COURSES_TABLE_TEXT.fr),
+    nl: (copy => ({
+      3: { type: 'table', headers: copy.headers, rows: BEST_COURSES_TABLE_ROWS.map((row, index) => [...row, copy.bestFor[index]]) },
+      4: { type: 'cta', text: copy.tableCtaText, linkLabel: copy.tableCtaLabel, href: '/guides/course-comparison', internal: true },
+      5: { type: 'heading', text: copy.purposeHeading },
+      13: { type: 'paragraph', text: copy.alcanadaExtra },
+      15: { type: 'paragraph', text: copy.capdeperaText },
+      16: { type: 'subheading', text: copy.sonMuntanerHeading },
+      22: { type: 'cta', text: copy.andratxCtaText, linkLabel: copy.andratxCtaLabel, href: '/guides/golf-andratx-review' },
+      38: { type: 'cta', text: copy.comparisonCtaText, linkLabel: copy.comparisonCtaLabel, href: '/guides/course-comparison', internal: true },
+    }))(BEST_COURSES_TABLE_TEXT.nl),
+    sv: (copy => ({
+      3: { type: 'table', headers: copy.headers, rows: BEST_COURSES_TABLE_ROWS.map((row, index) => [...row, copy.bestFor[index]]) },
+      4: { type: 'cta', text: copy.tableCtaText, linkLabel: copy.tableCtaLabel, href: '/guides/course-comparison', internal: true },
+      5: { type: 'heading', text: copy.purposeHeading },
+      13: { type: 'paragraph', text: copy.alcanadaExtra },
+      15: { type: 'paragraph', text: copy.capdeperaText },
+      16: { type: 'subheading', text: copy.sonMuntanerHeading },
+      22: { type: 'cta', text: copy.andratxCtaText, linkLabel: copy.andratxCtaLabel, href: '/guides/golf-andratx-review' },
+      38: { type: 'cta', text: copy.comparisonCtaText, linkLabel: copy.comparisonCtaLabel, href: '/guides/course-comparison', internal: true },
+    }))(BEST_COURSES_TABLE_TEXT.sv),
+    zh: (copy => ({
+      3: { type: 'table', headers: copy.headers, rows: BEST_COURSES_TABLE_ROWS.map((row, index) => [...row, copy.bestFor[index]]) },
+      4: { type: 'cta', text: copy.tableCtaText, linkLabel: copy.tableCtaLabel, href: '/guides/course-comparison', internal: true },
+      5: { type: 'heading', text: copy.purposeHeading },
+      13: { type: 'paragraph', text: copy.alcanadaExtra },
+      15: { type: 'paragraph', text: copy.capdeperaText },
+      16: { type: 'subheading', text: copy.sonMuntanerHeading },
+      22: { type: 'cta', text: copy.andratxCtaText, linkLabel: copy.andratxCtaLabel, href: '/guides/golf-andratx-review' },
+      38: { type: 'cta', text: copy.comparisonCtaText, linkLabel: copy.comparisonCtaLabel, href: '/guides/course-comparison', internal: true },
+    }))(BEST_COURSES_TABLE_TEXT.zh),
+  },
+}
+
+function makeParityPlaceholder(type, slug, locale, index) {
+  const override = ARTICLE_PARITY_OVERRIDES[slug]?.[locale]?.[index]
+  if (override) return override
+
   const copy = ARTICLE_PARITY_TEXT[locale] || ARTICLE_PARITY_TEXT.de
   if (type === 'cta') {
     return { type, text: copy.ctaText, linkLabel: copy.ctaLabel, href: locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro` }
-  }
-  if (slug === 'best-golf-courses-mallorca' && type === 'table') {
-    return {
-      type,
-      headers: copy.tableHeaders,
-      rows: BEST_COURSES_TABLE_ROWS.map((row) => [...row, copy.bestFor]),
-    }
   }
   return { type }
 }
@@ -7032,13 +7176,13 @@ function repairArticleBlockParity(slug, locale, content) {
   if (!sequence || !content?.blocks) return content
 
   let cursor = 0
-  const blocks = sequence.map((type) => {
+  const blocks = sequence.map((type, index) => {
     if (content.blocks[cursor]?.type === type) {
       const block = content.blocks[cursor]
       cursor += 1
       return block
     }
-    return makeParityPlaceholder(type, slug, locale)
+    return makeParityPlaceholder(type, slug, locale, index)
   })
 
   return { ...content, blocks }
