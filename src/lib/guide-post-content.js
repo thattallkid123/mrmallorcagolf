@@ -309,7 +309,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Best tee time', 'Morning is ideal here. The light is at its best, the lighthouse feels part of the round straight away, and you normally get the gentlest version of the coastal breeze.'],
             ['Wind tip', 'Treat the exposed holes with respect. The sea air can make a comfortable yardage suddenly feel a club longer, especially when you are playing into it on the back nine.'],
-            ['Where visitors miss', 'People get seduced by the views, swing too freely from the elevated tees, then spend the rest of the hole recovering on and around the greens.'],
+            ['Where visitors miss', 'People get seduced by the views, make freer swings than the hole really allows from the elevated tees, then spend the rest of the hole scrambling around the greens.'],
             ['Clubhouse tip', 'Leave time for lunch on the terrace. Alcanada is one of the few Mallorca rounds where the post-round meal genuinely feels like part of the booking.'],
           ],
         },
@@ -697,7 +697,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Best tee time', 'Go as early as you reasonably can. The course is in demand, the mountain light is best in the morning, and you give yourself the best chance of beating the stronger wind.'],
             ['Wind tip', 'Use a GPS or proper course guide and trust it. This course punishes half-decisions on carries and exposed par 3s far more than it punishes a committed conservative play.'],
-            ['Where visitors miss', 'The common mistake is treating it like a length test. Most big numbers here come from poor distance control into cross-fairway hazards and hidden trouble.'],
+            ['Where visitors miss', 'The common mistake is thinking the challenge is just length. Most big numbers here actually come from poor distance control into cross-fairway hazards and trouble you do not fully see from the tee.'],
             ['Clubhouse tip', 'The practice setup is a little unusual, so arrive with enough time to use the short-game area and settle in before you head to the first tee.'],
           ],
         },
@@ -1052,7 +1052,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Best tee time', 'Midweek twilight is a very good play here. You get the course in beautiful light, quieter rhythm, and a price point that makes the quality feel like value.'],
             ['Wind tip', 'Work from your number, not what your eye tells you. The semi-blind approaches and exposed water carries punish anyone who guesses rather than commits.'],
-            ['Where visitors miss', 'The usual mistake is underclubbing on the attractive-looking approach holes, then chasing too hard after one miss and bringing more water into play.'],
+            ['Where visitors miss', 'The usual mistake is underclubbing on the holes that look friendlier than they are, then trying to win the shot back too quickly and dragging more water into play.'],
             ['Clubhouse tip', 'Use the grass range before you go out and leave enough time for a drink afterwards. The whole setup feels more complete if you do not treat it as a rush round.'],
           ],
         },

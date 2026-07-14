@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { buildGuidePostMetadata } from '../../lib/page-metadata'
 import { getGuidePostContent } from '../../lib/guide-post-content'
 import { getGuideArticleContent, buildGuideArticleMetadata } from '../../lib/guide-article-content'
-import { ARTICLE_SLUGS, REVIEW_POST_SLUGS, isPublishedGuideSlug, isArticleSlug } from '../../lib/site'
+import { ARTICLE_SLUGS, REVIEW_POST_SLUGS, isPublishedGuideSlug, isArticleSlug, hasLocaleRoute } from '../../lib/site'
 import GuidePostView from '../(en)/guides/GuidePostView'
 import GuideArticleView from '../(en)/guides/GuideArticleView'
 
@@ -16,6 +16,7 @@ export function createGuideSlugStaticParams() {
 export function createGuideSlugMetadata(locale, params) {
   const slug = params.slug
   if (!isPublishedGuideSlug(slug)) return {}
+  if (!hasLocaleRoute(`/guides/${slug}`, locale)) return {}
 
   if (isArticleSlug(slug)) {
     return buildGuideArticleMetadata(slug, locale)
@@ -36,6 +37,7 @@ export function createGuideSlugMetadata(locale, params) {
 export function createGuideSlugPage(locale, params) {
   const slug = params.slug
   if (!isPublishedGuideSlug(slug)) notFound()
+  if (!hasLocaleRoute(`/guides/${slug}`, locale)) notFound()
 
   if (isArticleSlug(slug)) {
     const content = getGuideArticleContent(slug, locale)

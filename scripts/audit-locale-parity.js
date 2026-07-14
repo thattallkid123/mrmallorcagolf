@@ -89,11 +89,12 @@ function compareShape(base, candidate, trail, issues, warnings) {
   }
 }
 
-function auditContentGetter(name, getContent) {
-  const english = getContent('en')
+function auditContentGetter(name, getContent, getEnglishForLocale = null) {
+  const defaultEnglish = getContent('en')
   const results = []
 
   for (const locale of LOCALES) {
+    const english = getEnglishForLocale ? getEnglishForLocale(locale) : defaultEnglish
     const candidate = getContent(locale)
     const issues = []
     const warnings = []
@@ -108,6 +109,22 @@ function auditContentGetter(name, getContent) {
   }
 
   return results
+}
+
+function normalizeGuidesIndexShape(english, candidate, locale, hasLocaleRoute) {
+  if (!candidate || !hasLocaleRoute) return { english, candidate }
+
+  const englishLiveGuides = (english.liveGuides || []).filter((guide) =>
+    hasLocaleRoute(`/guides/${guide.slug}`, locale)
+  )
+
+  return {
+    english: {
+      ...english,
+      liveGuides: englishLiveGuides,
+    },
+    candidate,
+  }
 }
 
 function auditGuides(name, slugs, getContent) {
@@ -167,6 +184,7 @@ async function main() {
     guides,
     guideArticles,
     guidePosts,
+    site,
   ] = await Promise.all([
     import(toFileUrl('src/lib/homepage-content.js')),
     import(toFileUrl('src/lib/play-with-a-pro-content.js')),
@@ -177,7 +195,16 @@ async function main() {
     import(toFileUrl('src/lib/guides-content.js')),
     import(toFileUrl('src/lib/guide-article-content.js')),
     import(toFileUrl('src/lib/guide-post-content.js')),
+    import(toFileUrl('src/lib/site.js')),
   ])
+
+  const getGuidesIndexEnglish = (locale) =>
+    normalizeGuidesIndexShape(
+      guides.getGuidesContent('en'),
+      guides.getGuidesContent(locale),
+      locale,
+      site.hasLocaleRoute
+    ).english
 
   const audits = [
     ['home', auditContentGetter('home', homepage.getHomeContent)],
@@ -186,7 +213,7 @@ async function main() {
     ['contact', auditContentGetter('contact', contact.getContactContent)],
     ['coaching', auditContentGetter('coaching', coaching.getCoachingContent)],
     ['golf-courses', auditContentGetter('golf-courses', golfCourses.getGolfCoursesContent)],
-    ['guides-index', auditContentGetter('guides-index', guides.getGuidesContent)],
+    ['guides-index', auditContentGetter('guides-index', guides.getGuidesContent, getGuidesIndexEnglish)],
     [
       'guide-articles',
       auditGuides(
