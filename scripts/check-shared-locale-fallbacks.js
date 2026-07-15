@@ -5,32 +5,42 @@ const CHECKS = [
   {
     label: 'HOME_CONTENT',
     modulePath: '../src/lib/homepage-content.js',
-    exportName: 'HOME_CONTENT',
+    getterName: 'getHomeContent',
   },
   {
     label: 'ABOUT_CONTENT',
     modulePath: '../src/lib/about-content.js',
-    exportName: 'ABOUT_CONTENT',
+    getterName: 'getAboutContent',
   },
   {
     label: 'COACHING_CONTENT',
     modulePath: '../src/lib/coaching-content.js',
-    exportName: 'COACHING_CONTENT',
+    getterName: 'getCoachingContent',
+  },
+  {
+    label: 'GOLF_COURSES_CONTENT',
+    modulePath: '../src/lib/golf-courses-content.js',
+    getterName: 'getGolfCoursesContent',
   },
   {
     label: 'CONTACT_CONTENT',
     modulePath: '../src/lib/contact-content.js',
-    exportName: 'CONTACT_CONTENT',
+    getterName: 'getContactContent',
   },
   {
     label: 'PLAY_WITH_A_PRO_CONTENT',
     modulePath: '../src/lib/play-with-a-pro-content.js',
-    exportName: 'PLAY_WITH_A_PRO_CONTENT',
+    getterName: 'getPlayWithAProContent',
   },
   {
     label: 'GUIDES_CONTENT',
     modulePath: '../src/lib/guides-content.js',
-    exportName: 'GUIDES_CONTENT',
+    getterName: 'getGuidesContent',
+  },
+  {
+    label: 'PLAN_YOUR_TRIP_CONTENT',
+    modulePath: '../src/lib/plan-your-trip-content.js',
+    getterName: 'getPlanYourTripContent',
   },
 ]
 
@@ -85,12 +95,11 @@ async function main() {
 
   for (const check of CHECKS) {
     const module = require(check.modulePath)
-    const source = module[check.exportName]
-
-    if (!source || typeof source !== 'object') continue
+    const getter = module[check.getterName]
+    if (typeof getter !== 'function') continue
 
     for (const locale of LOCALES) {
-      const content = source[locale]
+      const content = getter(locale)
       if (!content) continue
 
       walkStrings(content, (text, trail) => {

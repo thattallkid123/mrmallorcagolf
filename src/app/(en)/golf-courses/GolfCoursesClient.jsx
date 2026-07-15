@@ -6,11 +6,7 @@ import { buildLocalePath } from '../../../lib/site'
 import { getGolfCoursesContent } from '../../../lib/golf-courses-content'
 import { GOLF_COURSE_DATA } from '../../../lib/golf-courses-data'
 import { getCourseAccessByName } from '../../../lib/course-access-data'
-import {
-  GOLF_COURSE_TRANSLATIONS,
-  getGolfCourseUiTranslations,
-  getGolfCourseRegions,
-} from '@lib/golf-courses-translations.js'
+import { GOLF_COURSE_TRANSLATIONS } from '@lib/golf-courses-translations.js'
 import {
   getCoursePriceMeta,
   slugifyCourseName,
@@ -689,14 +685,22 @@ function getSortTriangleDirection(sortKey, direction) {
   return direction === 'asc' ? 'down' : 'up'
 }
 
+function getExplorerRegions(content) {
+  return [
+    { key: 'all', label: content.ui.allCourses },
+    ...Object.entries(content.regionHeaders).map(([key, region]) => ({
+      key,
+      label: region.title,
+    })),
+  ]
+}
+
 export default function GolfCoursesClient({ lang = 'en' }) {
   const localizedContent = getGolfCoursesContent(lang)
-  const t = lang === 'en'
-    ? { ...localizedContent.ui, ...getGolfCourseUiTranslations('en') }
-    : { ...localizedContent.ui, ...getGolfCourseUiTranslations(lang) }
+  const t = localizedContent.ui
   const sortUi = SORT_UI[lang] || SORT_UI.en
   const regionHeaders = localizedContent.regionHeaders
-  const regions = getGolfCourseRegions(t)
+  const regions = getExplorerRegions(localizedContent)
   const [activeFilter, setActiveFilter] = useState('all')
   const [activeSort, setActiveSort] = useState('rating')
   const [sortDirections, setSortDirections] = useState(DEFAULT_SORT_DIRECTIONS)

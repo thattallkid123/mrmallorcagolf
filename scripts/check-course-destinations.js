@@ -1,4 +1,3 @@
-const fs = require('fs')
 const path = require('path')
 const { pathToFileURL } = require('url')
 
@@ -13,25 +12,18 @@ function normalizeId(value) {
 
 async function main() {
   const repoRoot = path.join(__dirname, '..')
-  const homepagePath = path.join(repoRoot, 'src', 'lib', 'homepage-content.js')
   const courseDataPath = path.join(repoRoot, 'src', 'lib', 'golf-courses-data.js')
   const guidePostPath = path.join(repoRoot, 'src', 'lib', 'guide-post-content.js')
 
-  const homepageSource = fs.readFileSync(homepagePath, 'utf8')
-  const courseDataSource = fs.readFileSync(courseDataPath, 'utf8')
-  const guidePostSource = fs.readFileSync(guidePostPath, 'utf8')
+  const [{ getHomeContent }, courseDataModule, guidePostModule, siteModule] = await Promise.all([
+    import(pathToFileURL(path.join(repoRoot, 'src', 'lib', 'homepage-content.js')).href),
+    import(pathToFileURL(courseDataPath).href),
+    import(pathToFileURL(guidePostPath).href),
+    import(pathToFileURL(path.join(repoRoot, 'src', 'lib', 'golf-courses-helpers.js')).href),
+  ])
 
-  const siteModule = await import(pathToFileURL(path.join(repoRoot, 'src', 'lib', 'golf-courses-helpers.js')).href)
-  const englishFeaturedBlock = homepageSource.match(
-    /en:\s*\{[\s\S]*?courses:\s*\{[\s\S]*?items:\s*\[([\s\S]*?)\r?\n\s*\],\r?\n\s*\},\r?\n\s*experience:/
-  )
-
-  if (!englishFeaturedBlock) {
-    console.error('Could not locate the English featured-course block in homepage-content.js')
-    process.exit(1)
-  }
-
-  const featuredCourseNames = [...englishFeaturedBlock[1].matchAll(/name:\s*'([^']+)'/g)].map((match) => match[1])
+  const homeContent = getHomeContent('en')
+  const featuredCourseNames = (homeContent.courses?.items || []).map((item) => item.name).filter(Boolean)
   const uniqueFeatured = [...new Set(featuredCourseNames)]
   const destinationNames = new Set(Object.keys(siteModule.COURSE_DESTINATIONS))
   const missing = uniqueFeatured.filter((name) => !destinationNames.has(name))
@@ -42,8 +34,8 @@ async function main() {
     process.exit(1)
   }
 
-  const courseIds = new Set([...courseDataSource.matchAll(/name:\s*'([^']+)'/g)].map((match) => normalizeId(match[1])))
-  const reviewSlugs = new Set([...guidePostSource.matchAll(/^  '([^']+)': \{$/gm)].map((match) => match[1]))
+  const courseIds = new Set((courseDataModule.GOLF_COURSES_DATA || []).map((course) => normalizeId(course.name)))
+  const reviewSlugs = new Set(Object.keys(guidePostModule.GUIDE_POST_CONTENT || {}))
   const invalidDestinations = []
 
   for (const [name, destination] of Object.entries(siteModule.COURSE_DESTINATIONS)) {
@@ -64,8 +56,8 @@ async function main() {
 
   const anchorMismatches = []
 
-  for (const match of courseDataSource.matchAll(/name:\s*'([^']+)'/g)) {
-    const courseName = match[1]
+  for (const course of courseDataModule.GOLF_COURSES_DATA || []) {
+    const courseName = course.name
     const expectedId = siteModule.slugifyCourseName(courseName)
     const shortId = siteModule.getShortCourseId(courseName)
 

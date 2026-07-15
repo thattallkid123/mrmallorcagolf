@@ -1,6 +1,5 @@
 const { getHomeContent } = require('../src/lib/homepage-content.js')
 const { getGolfCoursesContent } = require('../src/lib/golf-courses-content.js')
-const { GOLF_COURSE_UI_TRANSLATIONS } = require('../src/lib/golf-courses-translations.js')
 
 const LOCALES = ['de', 'es', 'fr', 'nl', 'sv', 'zh']
 
@@ -49,7 +48,7 @@ for (const locale of LOCALES) {
     home: getHomeContent(locale),
     golfHero: getGolfCoursesContent(locale).hero,
     golfRegions: getGolfCoursesContent(locale).regionHeaders,
-    golfUi: GOLF_COURSE_UI_TRANSLATIONS[locale],
+    golfUi: getGolfCoursesContent(locale).ui,
   }
 
   for (const [scope, target] of Object.entries(targets)) {

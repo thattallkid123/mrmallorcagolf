@@ -5,6 +5,7 @@ const STEPS = [
   ['node', ['--no-warnings', 'scripts/check-locale-content.js']],
   ['node', ['--no-warnings', 'scripts/check-locale-english-leaks.js']],
   ['node', ['--no-warnings', 'scripts/check-shared-locale-fallbacks.js']],
+  ['node', ['--no-warnings', 'scripts/check-localized-overlay-integrity.js']],
   ['node', ['--no-warnings', 'scripts/check-guide-locale-coverage.js']],
   ['node', ['--no-warnings', 'scripts/check-guide-locale-english-leaks.js']],
   ['node', ['--no-warnings', 'scripts/audit-locale-parity.js']],

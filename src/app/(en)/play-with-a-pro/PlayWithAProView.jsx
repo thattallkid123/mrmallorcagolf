@@ -132,9 +132,9 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           photos: [
             'Alcanada 上与球手同场',
             '带海景的小组高尔夫日',
-            'Son Antem West 的同场高尔夫日',
             '马略卡四人高尔夫小组',
             'Son Gual 上的 Andy 与球手',
+            'Son Antem West 的同场高尔夫日',
             '带水景的小组高尔夫日',
             'Andy 与球手在 Santa Ponsa 的同场高尔夫日',
             'Andy 与 Mark 在 Santa Ponsa 的同场高尔夫日',
@@ -148,9 +148,9 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           photos: [
             'Andy with a client at Alcanada',
             'Group golf day with sea views',
-            'Andy with two guests on a play-with-a-pro day at Son Antem West',
             'Group of four golfers in Mallorca',
             'Andy and client at Son Gual',
+            'Andy with two guests on a play-with-a-pro day at Son Antem West',
             'Group day with water views',
             'Andy with a client at Santa Ponsa during a Play with a Pro day',
             'Andy with Mark at Santa Ponsa during a Play with a Pro day',

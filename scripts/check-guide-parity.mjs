@@ -1,31 +1,19 @@
 /**
  * check-guide-parity.mjs
  *
- * Guardrail for translation drift in the guide content. For every guide slug,
- * compares the section structure — the ordered sequence of block types and the
- * block count — of each localized version against the English master:
+ * Guardrail for guide translation drift.
  *
- *   articles:  guide-article-content.js  vs  guide-article-content-localized.js
- *   posts:     guide-post-content.js     vs  guide-post-content-localized.js
+ * English guide content owns canonical block structure: order, type, media
+ * layout, and non-localized behavior. Locale files are overlays for translated
+ * copy plus the few locale-specific link/media values needed to preserve the
+ * current pages.
  *
- * Why raw entries, not rendered output: the runtime merge (alignLocalizedBlocks)
- * silently drops EN blocks a translation is missing, so the live locale page
- * hides exactly the drift this check exists to catch. We therefore compare the
- * EN master objects against getLocalizedGuideArticleContent / -PostContent,
- * which return the raw localized entry with the file's own repair/injection
- * patches applied.
+ * For every translated guide, this check verifies:
+ *   - the locale entry exists
+ *   - the locale overlay has one block slot per canonical English block
+ *   - localized blocks do not reintroduce structural fields such as `type`
  *
- * Failure categories:
- *   structure-mismatch — a locale's block-type sequence differs from EN
- *   missing-locale     — a translated guide has no entry for a locale
- *                        (EN_ONLY_REVIEW_POST_SLUGS are exempt)
- *   orphan-slug        — localized content exists for a slug with no EN master
- *
- * Intentional divergences (e.g. a zh version restructured for the Chinese
- * audience) go in STRUCTURE_ALLOW below with a comment.
- *
- * Run: npm run check:guide-parity   (standalone — wire into check:content once
- * the existing translation drift it found on 2026-07-14 has been fixed)
+ * Run: npm run check:guide-parity
  */
 
 import { fileURLToPath, pathToFileURL } from 'node:url'
@@ -34,37 +22,18 @@ import { dirname, join, resolve } from 'node:path'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = resolve(__dirname, '..')
 
-// 'slug:locale' entries whose structure is allowed to differ from EN on purpose.
-const STRUCTURE_ALLOW = new Set([])
-
 // 'slug:locale' entries allowed to have no translation yet (staged rollouts).
 const MISSING_ALLOW = new Set([])
+
+const STRUCTURAL_BLOCK_KEYS = new Set(['type', 'containerStyle', 'imageStyle', 'fit'])
 
 function importLib(rel) {
   return import(pathToFileURL(join(REPO_ROOT, rel)).href)
 }
 
-function typeSequence(content) {
-  return (content?.blocks || []).map((block) => block?.type ?? '(untyped)')
-}
-
-function typeCounts(sequence) {
-  const counts = {}
-  for (const type of sequence) counts[type] = (counts[type] || 0) + 1
-  return Object.entries(counts)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([type, n]) => `${n} ${type}`)
-    .join(', ')
-}
-
-function firstDivergence(enSeq, locSeq) {
-  const max = Math.max(enSeq.length, locSeq.length)
-  for (let i = 0; i < max; i++) {
-    if (enSeq[i] !== locSeq[i]) {
-      return { index: i, en: enSeq[i] ?? '(end)', loc: locSeq[i] ?? '(end)' }
-    }
-  }
-  return null
+function structuralBlockKeys(block) {
+  if (!block || typeof block !== 'object') return []
+  return Object.keys(block).filter((key) => STRUCTURAL_BLOCK_KEYS.has(key))
 }
 
 function compareGroup({ label, slugs, locales, getEnglish, getLocalized, enOnlySlugs }) {
@@ -76,7 +45,8 @@ function compareGroup({ label, slugs, locales, getEnglish, getLocalized, enOnlyS
       failures.push({ kind: 'orphan-slug', label, slug, detail: 'localized content exists but no English master entry' })
       continue
     }
-    const enSeq = typeSequence(english)
+
+    const englishBlockCount = english?.blocks?.length || 0
 
     for (const locale of locales) {
       const key = `${slug}:${locale}`
@@ -88,22 +58,27 @@ function compareGroup({ label, slugs, locales, getEnglish, getLocalized, enOnlyS
         continue
       }
 
-      if (STRUCTURE_ALLOW.has(key)) continue
+      const localizedBlockCount = localized?.blocks?.length || 0
+      if (englishBlockCount !== localizedBlockCount) {
+        failures.push({
+          kind: 'block-count-mismatch',
+          label,
+          slug,
+          locale,
+          detail: `English has ${englishBlockCount} blocks; ${locale} overlay has ${localizedBlockCount}. Add/remove overlay slots to match the canonical structure.`,
+        })
+      }
 
-      const locSeq = typeSequence(localized)
-      if (enSeq.join('|') === locSeq.join('|')) continue
-
-      const div = firstDivergence(enSeq, locSeq)
-      failures.push({
-        kind: 'structure-mismatch',
-        label,
-        slug,
-        locale,
-        detail:
-          `en ${enSeq.length} blocks vs ${locale} ${locSeq.length} blocks; ` +
-          `first divergence at block ${div.index} (en: ${div.en}, ${locale}: ${div.loc})\n` +
-          `      en: ${typeCounts(enSeq)}\n` +
-          `      ${locale}: ${typeCounts(locSeq)}`,
+      localized?.blocks?.forEach((block, index) => {
+        const structuralKeys = structuralBlockKeys(block)
+        if (structuralKeys.length === 0) return
+        failures.push({
+          kind: 'structural-overlay',
+          label,
+          slug,
+          locale,
+          detail: `block ${index} contains structural key(s): ${structuralKeys.join(', ')}. Keep structure in the English guide content file.`,
+        })
       })
     }
   }
@@ -122,8 +97,6 @@ async function main() {
 
   const locales = site.ALL_LOCALES.filter((locale) => locale !== 'en')
 
-  // Union of the canonical slug sets and whatever the content files actually
-  // hold, so an orphaned or unregistered entry still gets checked.
   const articleSlugs = new Set([
     ...site.ARTICLE_SLUGS,
     ...Object.keys(articlesEn.GUIDE_ARTICLE_CONTENT),
@@ -141,14 +114,14 @@ async function main() {
       label: 'article',
       slugs: articleSlugs,
       locales,
-      getEnglish: (slug) => articlesEn.GUIDE_ARTICLE_CONTENT[slug],
+      getEnglish: (slug) => articlesEn.getGuideArticleContent(slug, 'en'),
       getLocalized: (slug, locale) => articlesLoc.getLocalizedGuideArticleContent(slug, locale),
     }),
     ...compareGroup({
       label: 'post',
       slugs: postSlugs,
       locales,
-      getEnglish: (slug) => postsEn.GUIDE_POST_CONTENT[slug]?.en,
+      getEnglish: (slug) => postsEn.getGuidePostContent(slug, 'en'),
       getLocalized: (slug, locale) => postsLoc.getLocalizedGuidePostContent(slug, locale),
       enOnlySlugs: site.EN_ONLY_REVIEW_POST_SLUGS,
     }),
@@ -157,21 +130,19 @@ async function main() {
   const checked = (articleSlugs.size + postSlugs.size) * locales.length
   if (failures.length === 0) {
     console.log(
-      `✅ Guide parity check passed — ${articleSlugs.size} articles + ${postSlugs.size} posts × ${locales.length} locales (${checked} pairs), structure matches English.`,
+      `Guide parity check passed - ${articleSlugs.size} articles + ${postSlugs.size} posts x ${locales.length} locales (${checked} pairs), overlays match canonical English block counts.`,
     )
     return
   }
 
-  console.error(`❌ Guide parity check FAILED — ${failures.length} issue(s):\n`)
+  console.error(`Guide parity check FAILED - ${failures.length} issue(s):\n`)
   for (const f of failures) {
     const where = f.locale ? `${f.slug} [${f.locale}]` : f.slug
     console.error(`  [${f.kind}] ${f.label} ${where}`)
     console.error(`    ${f.detail}\n`)
   }
   console.error(
-    'Fix the translation so its block structure mirrors the English master.\n' +
-      'If a divergence is intentional (e.g. a restructured zh version), add\n' +
-      '"slug:locale" to STRUCTURE_ALLOW in scripts/check-guide-parity.mjs with a comment.',
+    'Fix the localized overlay so it has one overlay slot per English block, and keep block type/order/layout in the English guide content file.',
   )
   process.exitCode = 1
 }

@@ -1,5 +1,6 @@
 import { SITE_ORIGIN, buildLocalePath, getHreflangCode } from './site.js'
 import { getLocalizedGuideArticleContent } from './guide-article-content-localized.js'
+import { mergeGuideContent } from './guide-content-localization.js'
 
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
@@ -996,59 +997,6 @@ export const GUIDE_ARTICLE_CONTENT = {
 
 const GUIDE_ARTICLE_LOCALES = ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']
 
-const LOCALIZED_TEXT_KEYS = new Set([
-  'title',
-  'description',
-  'imageAlt',
-  'badge',
-  'readTime',
-  'updated',
-  'intro',
-  'text',
-  'caption',
-  'alt',
-  'label',
-  'attribution',
-  'linkLabel',
-])
-
-function mergeLocalizedValue(baseValue, localizedValue, key) {
-  if (localizedValue == null) return baseValue
-
-  if (Array.isArray(baseValue) && Array.isArray(localizedValue)) {
-    if (key === 'related') return localizedValue
-    if (baseValue.some(Array.isArray)) return localizedValue
-    if (baseValue.every((item) => item == null || typeof item !== 'object')) return localizedValue
-
-    return baseValue.map((item, index) => mergeLocalizedValue(item, localizedValue[index], key))
-  }
-
-  if (
-    baseValue &&
-    localizedValue &&
-    typeof baseValue === 'object' &&
-    typeof localizedValue === 'object' &&
-    !Array.isArray(baseValue) &&
-    !Array.isArray(localizedValue)
-  ) {
-    const merged = { ...baseValue }
-
-    for (const [childKey, childValue] of Object.entries(localizedValue)) {
-      if (childKey in baseValue) {
-        merged[childKey] = mergeLocalizedValue(baseValue[childKey], childValue, childKey)
-      } else if (LOCALIZED_TEXT_KEYS.has(childKey)) {
-        merged[childKey] = childValue
-      }
-    }
-
-    return merged
-  }
-
-  if (LOCALIZED_TEXT_KEYS.has(key)) return localizedValue
-
-  return baseValue
-}
-
 function withGuideArticleSlug(content, slug) {
   return {
     ...content,
@@ -1134,20 +1082,21 @@ function linkClubHireCompanies(content) {
 export function getGuideArticleContent(slug, locale = 'en') {
   const baseContent = GUIDE_ARTICLE_CONTENT[slug] || null
   if (!baseContent) return null
+  const structuredBase = slug === 'golf-club-hire-mallorca' ? addClubRentalsPartnerLink(baseContent) : baseContent
 
   if (locale === 'en') {
-    const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(addClubRentalsPartnerLink(baseContent)) : baseContent
+    const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(structuredBase) : structuredBase
     return withGuideArticleSlug(enriched, slug)
   }
 
   const localizedContent = getLocalizedGuideArticleContent(slug, locale)
   if (!localizedContent) {
-    const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(addClubRentalsPartnerLink(baseContent)) : baseContent
+    const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(structuredBase) : structuredBase
     return withGuideArticleSlug(enriched, slug)
   }
 
-  const merged = mergeLocalizedValue(baseContent, localizedContent)
-  const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(addClubRentalsPartnerLink(merged)) : merged
+  const merged = mergeGuideContent(structuredBase, localizedContent)
+  const enriched = slug === 'golf-club-hire-mallorca' ? linkClubHireCompanies(merged) : merged
 
   return withGuideArticleSlug(enriched, slug)
 }

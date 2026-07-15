@@ -1,629 +1,139 @@
 import { getContactExperienceOptions } from './offers-content.js'
 import { normalizeMojibakeDeep } from './text-normalization.js'
+import { mergeLocalizedContent } from './guide-content-localization.js'
+import { getLocalizedContactContent } from './contact-content-localized.js'
 
 export const CONTACT_CONTENT = {
   en: {
-    locale: 'en',
-    hero: {
-      eyebrow: 'Get in touch',
-      title: "Tell me the trip you're building. I'll help make it work.",
-      intro:
-        "If you already have dates, courses, or a rough itinerary, send it over. If you are still early, start with the itinerary planner first. Either way, I reply personally and help you turn the idea into a Mallorca golf plan that makes sense.",
-    },
-    cards: {
-      emailLabel: 'Email',
-      whatsappLabel: 'WhatsApp',
-      whatsappValue: 'Message on WhatsApp →',
-      responseLabel: 'Response time',
-      responseValue: 'Within 24 hours - usually sooner',
-      basedLabel: 'Based in',
-      basedValue: 'Mallorca, Spain',
-    },
-    success: {
-      title: 'Enquiry received.',
-      body:
-        "I'll come back to you personally, usually within a few hours, always within 24. If you'd prefer to speak directly, WhatsApp is the fastest route.",
-    },
-    form: {
-      eyebrow: 'Enquiry form',
-      title: 'Start planning your trip.',
-      intro: 'The more detail you give me, the better I can match the courses, add-ons, and timing to your group.',
-      experienceHelpTitle: 'Which option fits you?',
-      experienceHelp:
-        'Choose the closest match and I will refine it with you. Trip planning means I shape the route around your dates and group. Play With A Pro means you want Andy on the course with you. If you are not sure yet, choose the unsure option and I will point you in the right direction.',
-      sendPrompt:
-        'Best details to send: dates, group size, hotel area, handicap range, and any courses already on your shortlist. If you are still deciding, just say what you are comparing and I will narrow it down for you.',
-      labels: {
-        fname: 'First name',
-        lname: 'Last name',
-        email: 'Email address',
-        dates: 'Preferred trip dates',
-        handicap: 'Your handicap',
-        groupsize: 'Group size',
-        experience: 'What do you want help with?',
-        message: 'Anything else I should know',
-      },
-      placeholders: {
-        fname: 'Andy',
-        lname: 'Smith',
-        email: 'andy@example.com',
-        dates: 'e.g. 15-22 October 2026',
-        handicap: "e.g. 14, or 'beginner'",
-        message:
-          "Dates, hotel area, courses you've heard of, budget, group mix, whether you want me on the course - anything helps me build the right plan.",
-      },
-      groupsizeOptions: [
-        { value: '', label: 'Select group size' },
-        { value: '1 - solo', label: '1 - solo' },
-        { value: '2 - pair', label: '2 - pair' },
-        { value: '3-4 - small group', label: '3-4 - small group' },
-        { value: '5+ - larger group / corporate', label: '5+ - larger group / corporate' },
-      ],
-      experiences: [
-        ['plan-your-trip', 'Plan Your Trip - professional planning', 'Enquiry'],
-        ['pwap-solo', 'A Day With Andy - Solo', '€695'],
-        ['pwap-group', 'A Day With Andy - Group', '€950 total'],
-        ['signature-day', 'Signature Day - full experience', 'From €3,000+'],
-        ['not-sure', 'Not sure yet - advise me', ''],
-      ],
-      submit: 'Send Enquiry →',
-      note: 'I respond personally to every enquiry within 24 hours. Your details are used only to arrange your day.',
-    },
-    gift: {
-      heading: 'Buying this as a gift?',
-      body: "Let me know in the message above and I'll prepare a certificate and keep the day details private until you're ready to share them.",
-    },
-    trust: {
-      eyebrow: 'Why people enquire',
-      quote: "After just 18 holes together, I've discovered a new ceiling to my potential.",
-      credit: 'Jo, Play With A Pro client',
-    },
-    whatNext: {
-      heading: 'What happens next',
-      body: 'I read every enquiry myself. I will come back within 24 hours with the clearest next step: the course logic, planning route, or the best way to add a Play With A Pro day.',
-    },
-    stayInTouch: {
-      heading: 'Stay in touch',
-      body: 'Course notes and Mallorca golf insights every two weeks, straight to your inbox.',
-    },
-    dateCta: 'Build Your Itinerary',
+  "locale": "en",
+  "hero": {
+    "eyebrow": "Get in touch",
+    "title": "Tell me the trip you're building. I'll help make it work.",
+    "intro": "If you already have dates, courses, or a rough itinerary, send it over. If you are still early, start with the itinerary planner first. Either way, I reply personally and help you turn the idea into a Mallorca golf plan that makes sense."
   },
-  de: {
-    locale: 'de',
-    hero: {
-      eyebrow: 'Kontakt',
-      title: 'Sagen Sie mir, was Sie suchen. Ich kümmere mich um den Rest.',
-      intro:
-        'Kein Buchungssystem. Sagen Sie mir Ihre Daten, Ihr Handicap und was Sie sich von dem Tag erhoffen. Ich melde mich persönlich bei Ihnen, meist innerhalb weniger Stunden und immer innerhalb von 24 Stunden.',
-    },
-    cards: {
-      emailLabel: 'E-Mail',
-      whatsappLabel: 'WhatsApp',
-      whatsappValue: 'Per WhatsApp schreiben →',
-      responseLabel: 'Antwortzeit',
-      responseValue: 'Innerhalb von 24 Stunden - meist schneller',
-      basedLabel: 'Standort',
-      basedValue: 'Mallorca, Spanien',
-    },
-    success: {
-      title: 'Anfrage erhalten.',
-      body: 'Ich melde mich persönlich innerhalb von 24 Stunden. Wenn es schneller gehen soll, ist WhatsApp der einfachste Weg.',
-    },
-    form: {
-      eyebrow: 'Anfrageformular',
-      title: 'Beginnen Sie mit der Planung Ihres Tages.',
-      intro: 'Je mehr Details Sie mir geben, desto besser kann ich den Tag auf Sie abstimmen.',
-      labels: {
-        fname: 'Vorname',
-        lname: 'Nachname',
-        email: 'E-Mail-Adresse',
-        dates: 'Bevorzugte Termine',
-        handicap: 'Ihr Handicap',
-        groupsize: 'Gruppengröße',
-        experience: 'Welche Option passt am besten?',
-        message: 'Was sollte ich sonst noch wissen?',
-      },
-      placeholders: {
-        fname: 'Max',
-        lname: 'Mustermann',
-        email: 'max@beispiel.de',
-        dates: 'z. B. 15.-22. Oktober 2026',
-        handicap: "z. B. 14 oder 'Anfänger'",
-        message: 'Ziele für den Tag, Wunschplätze, gemischte Gruppe, besondere Wünsche - alles hilft mir, den richtigen Tag für Sie zu planen.',
-      },
-      groupsizeOptions: [
-        { value: '', label: 'Gruppengröße wählen' },
-        { value: '1 - solo', label: '1 - allein' },
-        { value: '2 - pair', label: '2 - zu zweit' },
-        { value: '3-4 - small group', label: '3-4 - kleine Gruppe' },
-        { value: '5+ - larger group / corporate', label: '5+ - größere Gruppe / Firma' },
-      ],
-      experiences: [
-        ['plan-your-trip', 'Reiseplanung - professionelle Planung', 'Auf Anfrage'],
-        ['pwap-solo', 'Ein Tag mit Andy - Solo', '€695'],
-        ['pwap-group', 'Ein Tag mit Andy - Gruppe', '€950 insgesamt'],
-        ['signature-day', 'Signature Day - vollständiges Erlebnis', 'Ab €3.000+'],
-        ['not-sure', 'Noch unsicher - beraten Sie mich', ''],
-      ],
-      submit: 'Anfrage senden →',
-      note: 'Ich beantworte jede Anfrage persönlich innerhalb von 24 Stunden. Ihre Angaben nutze ich nur, um Ihren Tag zu planen.',
-    },
-    gift: {
-      heading: 'Schenken Sie diesen Tag?',
-      body: 'Teilen Sie mir das bitte in der Nachricht oben mit. Ich bereite dann ein Zertifikat vor und halte die Details zur Erfahrung zurück, bis Sie bereit sind, sie zu teilen.',
-    },
-    whatNext: {
-      heading: 'Was passiert als Nächstes?',
-      body: 'Ich lese jede Anfrage persönlich. Sie hören von mir innerhalb von 24 Stunden mit einer Kursempfehlung und den nächsten Schritten - normalerweise früher. Wenn Sie lieber direkt sprechen möchten, ist WhatsApp am schnellsten.',
-    },
-    stayInTouch: {
-      heading: 'In Kontakt bleiben',
-      body: 'Platz-Updates und Mallorca-Golf-Einblicke alle zwei Wochen — direkt in Ihr Postfach.',
-    },
-    dateCta: 'Meine Daten mitteilen',
+  "cards": {
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "Message on WhatsApp →",
+    "responseLabel": "Response time",
+    "responseValue": "Within 24 hours - usually sooner",
+    "basedLabel": "Based in",
+    "basedValue": "Mallorca, Spain"
   },
-  es: {
-    locale: 'es',
-    hero: {
-      eyebrow: 'Ponerse en contacto',
-      title: 'Dígame qué busca. Yo me encargo del resto.',
-      intro:
-        'Sin sistemas de reserva. Dígame sus fechas, su hándicap y lo que quiere del día. Le responderé personalmente, normalmente en unas horas y siempre dentro de 24.',
-    },
-    cards: {
-      emailLabel: 'Correo electrónico',
-      whatsappLabel: 'WhatsApp',
-      whatsappValue: 'Escribir por WhatsApp →',
-      responseLabel: 'Tiempo de respuesta',
-      responseValue: 'En 24 horas - normalmente antes',
-      basedLabel: 'Ubicación',
-      basedValue: 'Mallorca, España',
-    },
-    success: {
-      title: 'Consulta recibida.',
-      body: 'Le responderé personalmente dentro de 24 horas. Si quiere hablar directamente, WhatsApp es la vía más rápida.',
-    },
-    form: {
-      eyebrow: 'Formulario de consulta',
-      title: 'Empiece a planificar su día.',
-      intro: 'Cuantos más detalles me dé, mejor podré adaptar el día a usted.',
-      labels: {
-        fname: 'Nombre',
-        lname: 'Apellido',
-        email: 'Correo electrónico',
-        dates: 'Fechas preferidas',
-        handicap: 'Su hándicap',
-        groupsize: 'Tamaño del grupo',
-        experience: '¿Qué opción le encaja mejor?',
-        message: 'Cualquier otra cosa que deba saber',
-      },
-      placeholders: {
-        fname: 'Juan',
-        lname: 'García',
-        email: 'juan@ejemplo.com',
-        dates: 'p. ej. 15-22 octubre 2026',
-        handicap: 'p. ej. 14 o "principiante"',
-        message: 'Objetivos para el día, campos que ha visto, grupo mixto, peticiones específicas: cualquier detalle ayuda.',
-      },
-      groupsizeOptions: [
-        { value: '', label: 'Seleccione el tamaño del grupo' },
-        { value: '1 - solo', label: '1 - solo/a' },
-        { value: '2 - pair', label: '2 - pareja' },
-        { value: '3-4 - small group', label: '3-4 - grupo pequeño' },
-        { value: '5+ - larger group / corporate', label: '5+ - grupo grande / empresa' },
-      ],
-      experiences: [
-        ['plan-your-trip', 'Planificación de viaje - planificación profesional', 'A consultar'],
-        ['pwap-solo', 'Un día con Andy - Solo', '€695'],
-        ['pwap-group', 'Un día con Andy - Grupo', '€950 en total'],
-        ['signature-day', 'Signature Day - experiencia completa', 'Desde €3.000+'],
-        ['not-sure', 'Aún no lo sé - aconséjeme', ''],
-      ],
-      submit: 'Enviar consulta →',
-      note: 'Respondo personalmente a cada consulta en 24 horas. Sus datos se usan solo para organizar su jornada.',
-    },
-    gift: {
-      heading: '¿Es un regalo?',
-      body: 'Indíquemelo en el mensaje de arriba y prepararé un certificado, manteniendo los detalles del día en privado hasta que esté listo para compartirlos.',
-    },
-    whatNext: {
-      heading: 'Qué ocurre a continuación',
-      body: 'Leo cada consulta personalmente. Le responderé en 24 horas con una recomendación de campo y los próximos pasos - normalmente antes. Si prefiere hablar directamente, WhatsApp es la vía más rápida.',
-    },
-    stayInTouch: {
-      heading: 'Mantenerse en contacto',
-      body: 'Notas sobre campos y consejos de golf en Mallorca cada dos semanas — directamente en su bandeja de entrada.',
-    },
-    dateCta: 'Dígame sus fechas',
+  "success": {
+    "title": "Enquiry received.",
+    "body": "I'll come back to you personally, usually within a few hours, always within 24. If you'd prefer to speak directly, WhatsApp is the fastest route."
   },
-  fr: {
-    locale: 'fr',
-    hero: {
-      eyebrow: 'Prendre contact',
-      title: "Dites-moi ce que vous cherchez. Je m'occupe du reste.",
-      intro:
-        'Pas de système de réservation. Donnez-moi vos dates, votre handicap et ce que vous attendez de la journée. Je vous répondrai personnellement, souvent en quelques heures et toujours sous 24 heures.',
+  "form": {
+    "eyebrow": "Enquiry form",
+    "title": "Start planning your trip.",
+    "intro": "The more detail you give me, the better I can match the courses, add-ons, and timing to your group.",
+    "experienceHelpTitle": "Which option fits you?",
+    "experienceHelp": "Choose the closest match and I will refine it with you. Trip planning means I shape the route around your dates and group. Play With A Pro means you want Andy on the course with you. If you are not sure yet, choose the unsure option and I will point you in the right direction.",
+    "sendPrompt": "Best details to send: dates, group size, hotel area, handicap range, and any courses already on your shortlist. If you are still deciding, just say what you are comparing and I will narrow it down for you.",
+    "labels": {
+      "fname": "First name",
+      "lname": "Last name",
+      "email": "Email address",
+      "dates": "Preferred trip dates",
+      "handicap": "Your handicap",
+      "groupsize": "Group size",
+      "experience": "What do you want help with?",
+      "message": "Anything else I should know"
     },
-    cards: {
-      emailLabel: 'E-mail',
-      whatsappLabel: 'WhatsApp',
-      whatsappValue: 'Écrire sur WhatsApp →',
-      responseLabel: 'Délai de réponse',
-      responseValue: 'Sous 24 heures - souvent plus vite',
-      basedLabel: 'Basé à',
-      basedValue: 'Majorque, Espagne',
+    "placeholders": {
+      "fname": "Andy",
+      "lname": "Smith",
+      "email": "andy@example.com",
+      "dates": "e.g. 15-22 October 2026",
+      "handicap": "e.g. 14, or 'beginner'",
+      "message": "Dates, hotel area, courses you've heard of, budget, group mix, whether you want me on the course - anything helps me build the right plan."
     },
-    success: {
-      title: 'Demande reçue.',
-      body: 'Je vous répondrai personnellement sous 24 heures. Si vous préférez parler directement, WhatsApp est le plus rapide.',
-    },
-    form: {
-      eyebrow: 'Formulaire de contact',
-      title: 'Commencez à planifier votre journée.',
-      intro: 'Plus vous me donnez de détails, mieux je pourrai adapter la journée à vous.',
-      labels: {
-        fname: 'Prénom',
-        lname: 'Nom',
-        email: 'Adresse e-mail',
-        dates: 'Dates souhaitées',
-        handicap: 'Votre handicap',
-        groupsize: 'Taille du groupe',
-        experience: 'Quelle formule vous convient le mieux ?',
-        message: 'Autre chose que je devrais savoir',
+    "groupsizeOptions": [
+      {
+        "value": "",
+        "label": "Select group size"
       },
-      placeholders: {
-        fname: 'Jean',
-        lname: 'Dupont',
-        email: 'jean@exemple.com',
-        dates: 'ex. 15-22 octobre 2026',
-        handicap: "ex. 14 ou 'débutant'",
-        message: 'Vos objectifs, les parcours que vous regardez, un groupe mixte, des demandes spécifiques : tout m’aide à préparer la bonne journée.',
+      {
+        "value": "1 - solo",
+        "label": "1 - solo"
       },
-      groupsizeOptions: [
-        { value: '', label: 'Choisir la taille du groupe' },
-        { value: '1 - solo', label: '1 - seul(e)' },
-        { value: '2 - pair', label: '2 - duo' },
-        { value: '3-4 - small group', label: '3-4 - petit groupe' },
-        { value: '5+ - larger group / corporate', label: '5+ - grand groupe / entreprise' },
+      {
+        "value": "2 - pair",
+        "label": "2 - pair"
+      },
+      {
+        "value": "3-4 - small group",
+        "label": "3-4 - small group"
+      },
+      {
+        "value": "5+ - larger group / corporate",
+        "label": "5+ - larger group / corporate"
+      }
+    ],
+    "experiences": [
+      [
+        "pwap-solo",
+        "A Day With Andy - Solo",
+        "€695"
       ],
-      experiences: [
-        ['plan-your-trip', 'Planification de voyage - planification professionnelle', 'Sur demande'],
-        ['pwap-solo', 'Une journée avec Andy - Solo', '€695'],
-        ['pwap-group', 'Une journée avec Andy - Groupe', '€950 au total'],
-        ['signature-day', 'Signature Day - expérience complète', 'À partir de 3 000 EUR'],
-        ['not-sure', 'Je ne suis pas encore certain(e) - conseillez-moi', ''],
+      [
+        "pwap-group",
+        "A Day With Andy - Group",
+        "€950 total"
       ],
-      submit: 'Envoyer la demande →',
-      note: 'Je réponds personnellement à chaque demande sous 24 heures. Vos coordonnées servent uniquement à organiser votre journée.',
-    },
-    gift: {
-      heading: 'Vous offrez cette journée ?',
-      body: "Mentionnez-le dans le message ci-dessus et je préparerai un certificat, en gardant les détails confidentiels jusqu'à ce que vous soyez prêt à les partager.",
-    },
-    whatNext: {
-      heading: 'Que se passe-t-il ensuite ?',
-      body: 'Je lis chaque demande personnellement. Vous aurez de mes nouvelles sous 24 heures avec une recommandation de parcours et les prochaines étapes - souvent plus tôt. Si vous préférez parler directement, WhatsApp est le plus rapide.',
-    },
-    stayInTouch: {
-      heading: 'Rester en contact',
-      body: 'Notes de parcours et conseils golf à Majorque toutes les deux semaines — directement dans votre boîte mail.',
-    },
-    dateCta: 'Dites-moi vos dates',
+      [
+        "signature-day",
+        "Signature Day",
+        "From €3,000+"
+      ],
+      [
+        "not-sure",
+        "Not sure yet - advise me",
+        ""
+      ]
+    ],
+    "submit": "Send Enquiry →",
+    "note": "I respond personally to every enquiry within 24 hours. Your details are used only to arrange your day."
   },
-  nl: {
-    locale: 'nl',
-    hero: {
-      eyebrow: 'Neem contact op',
-      title: 'Vertel me wat u zoekt. Ik regel de rest.',
-      intro:
-        'Geen boekingssysteem. Vertel me uw data, uw handicap en wat u van de dag wilt. Ik reageer persoonlijk, meestal binnen een paar uur en altijd binnen 24 uur.',
-    },
-    cards: {
-      emailLabel: 'E-mail',
-      whatsappLabel: 'WhatsApp',
-      whatsappValue: 'Stuur een WhatsApp-bericht →',
-      responseLabel: 'Reactietijd',
-      responseValue: 'Binnen 24 uur - meestal sneller',
-      basedLabel: 'Gevestigd in',
-      basedValue: 'Mallorca, Spanje',
-    },
-    success: {
-      title: 'Aanvraag ontvangen.',
-      body: 'Ik reageer persoonlijk binnen 24 uur. Als u liever direct spreekt, is WhatsApp de snelste route.',
-    },
-    form: {
-      eyebrow: 'Aanvraagformulier',
-      title: 'Begin met het plannen van uw dag.',
-      intro: 'Hoe meer details u me geeft, hoe beter ik de dag op u kan afstemmen.',
-      labels: {
-        fname: 'Voornaam',
-        lname: 'Achternaam',
-        email: 'E-mailadres',
-        dates: 'Gewenste data',
-        handicap: 'Uw handicap',
-        groupsize: 'Groepsgrootte',
-        experience: 'Welke optie past het best?',
-        message: 'Is er verder nog iets dat ik moet weten?',
-      },
-      placeholders: {
-        fname: 'Jan',
-        lname: 'de Vries',
-        email: 'jan@voorbeeld.com',
-        dates: 'bijv. 15-22 oktober 2026',
-        handicap: "bijv. 14 of 'beginner'",
-        message: 'Doelen voor de dag, banen die u op het oog heeft, gemengde groep, speciale wensen - elk detail helpt.',
-      },
-      groupsizeOptions: [
-        { value: '', label: 'Kies groepsgrootte' },
-        { value: '1 - solo', label: '1 - solo' },
-        { value: '2 - pair', label: '2 - tweetal' },
-        { value: '3-4 - small group', label: '3-4 - kleine groep' },
-        { value: '5+ - larger group / corporate', label: '5+ - grotere groep / bedrijf' },
-      ],
-      experiences: [
-        ['plan-your-trip', 'Reisplanning - professionele planning', 'Op aanvraag'],
-        ['pwap-solo', 'Een dag met Andy - Solo', '€695'],
-        ['pwap-group', 'Een dag met Andy - Groep', '€950 totaal'],
-        ['signature-day', 'Signature Day - volledige ervaring', 'Vanaf €3.000+'],
-        ['not-sure', 'Nog niet zeker - adviseer me', ''],
-      ],
-      submit: 'Aanvraag versturen →',
-      note: 'Ik reageer persoonlijk op elke aanvraag binnen 24 uur. Uw gegevens worden alleen gebruikt om uw dag te organiseren.',
-    },
-    gift: {
-      heading: 'Is dit een cadeau?',
-      body: 'Vermeld het in het bericht hierboven en ik maak een certificaat klaar, waarbij ik de details van de dag privé houd totdat u klaar bent om ze te delen.',
-    },
-    whatNext: {
-      heading: 'Wat gebeurt er daarna?',
-      body: 'Ik lees elke aanvraag persoonlijk. U hoort binnen 24 uur van mij met een baanaanbeveling en de volgende stappen - meestal eerder. Als u liever direct spreekt, is WhatsApp de snelste route.',
-    },
-    stayInTouch: {
-      heading: 'Blijf op de hoogte',
-      body: 'Baannotities en Mallorca golf-inzichten elke twee weken — rechtstreeks in uw inbox.',
-    },
-    dateCta: 'Vertel me uw data',
+  "gift": {
+    "heading": "Buying this as a gift?",
+    "body": "Let me know in the message above and I'll prepare a certificate and keep the day details private until you're ready to share them."
   },
-  sv: {
-    locale: 'sv',
-    hero: {
-      eyebrow: 'Hör av dig',
-      title: 'Berätta vad du söker. Jag ordnar resten.',
-      intro:
-        'Inga bokningssystem. Berätta om dina datum, ditt handicap och vad du vill få ut av dagen. Jag svarar personligen, oftast inom några timmar och alltid inom 24 timmar.',
-    },
-    cards: {
-      emailLabel: 'E-post',
-      whatsappLabel: 'WhatsApp',
-      whatsappValue: 'Skicka ett WhatsApp-meddelande →',
-      responseLabel: 'Svarstid',
-      responseValue: 'Inom 24 timmar - oftast snabbare',
-      basedLabel: 'Bas i',
-      basedValue: 'Mallorca, Spanien',
-    },
-    success: {
-      title: 'Förfrågan mottagen.',
-      body: 'Jag återkommer personligen inom 24 timmar. Om du vill prata direkt är WhatsApp den snabbaste vägen.',
-    },
-    form: {
-      eyebrow: 'Förfrågan',
-      title: 'Börja planera din dag.',
-      intro: 'Ju mer detaljer du ger mig, desto bättre kan jag anpassa dagen efter dig.',
-      labels: {
-        fname: 'Förnamn',
-        lname: 'Efternamn',
-        email: 'E-postadress',
-        dates: 'Önskade datum',
-        handicap: 'Ditt handicap',
-        groupsize: 'Gruppstorlek',
-        experience: 'Vilket upplägg passar dig bäst?',
-        message: 'Något annat jag bör veta',
-      },
-      placeholders: {
-        fname: 'Erik',
-        lname: 'Svensson',
-        email: 'erik@exempel.se',
-        dates: 't.ex. 15-22 oktober 2026',
-        handicap: "t.ex. 14 eller 'nybörjare'",
-        message: 'Mål för dagen, banor du tittar på, blandad grupp, särskilda önskemål - allt hjälper mig att skapa rätt dag.',
-      },
-      groupsizeOptions: [
-        { value: '', label: 'Välj gruppstorlek' },
-        { value: '1 - solo', label: '1 - solo' },
-        { value: '2 - pair', label: '2 - par' },
-        { value: '3-4 - small group', label: '3-4 - liten grupp' },
-        { value: '5+ - larger group / corporate', label: '5+ - större grupp / företag' },
-      ],
-      experiences: [
-        ['plan-your-trip', 'Reseplanering - professionell planering', 'På förfrågan'],
-        ['pwap-solo', 'En dag med Andy - Solo', '€695'],
-        ['pwap-group', 'En dag med Andy - Grupp', '€950 totalt'],
-        ['signature-day', 'Signature Day - fullständig upplevelse', 'Från €3.000+'],
-        ['not-sure', 'Inte säker ännu - ge mig råd', ''],
-      ],
-      submit: 'Skicka förfrågan →',
-      note: 'Jag svarar personligen på varje förfrågan inom 24 timmar. Dina uppgifter används bara för att planera din dag.',
-    },
-    gift: {
-      heading: 'Köper du detta som en present?',
-      body: 'Berätta det i meddelandet ovan så förbereder jag ett presentkort och håller dagsinformationen privat tills du är redo att dela den.',
-    },
-    whatNext: {
-      heading: 'Vad händer härnäst?',
-      body: 'Jag läser varje förfrågan personligen. Du hör av mig inom 24 timmar med en banrekommendation och nästa steg - oftast snabbare. Om du föredrar att prata direkt är WhatsApp snabbast.',
-    },
-    stayInTouch: {
-      heading: 'Håll kontakten',
-      body: 'Bannoteringar och golfinblickar från Mallorca varannan vecka — direkt till din inkorg.',
-    },
-    dateCta: 'Berätta dina datum',
+  "trust": {
+    "eyebrow": "Why people enquire",
+    "quote": "After just 18 holes together, I've discovered a new ceiling to my potential.",
+    "credit": "Jo, Play With A Pro client"
   },
-  zh: {
-    locale: 'zh',
-    hero: {
-      eyebrow: '联系我',
-      title: '告诉我您想要怎样的一天。其余的我来安排。',
-      intro:
-        '这里没有自动预订系统。告诉我您的日期、差点以及您希望这一天达到什么效果。我会亲自回复您，通常几小时内，最晚不超过 24 小时。',
-    },
-    cards: {
-      emailLabel: '电子邮箱',
-      whatsappLabel: 'WhatsApp',
-      whatsappValue: '通过 WhatsApp 联系 →',
-      responseLabel: '回复时间',
-      responseValue: '24 小时内 - 通常更快',
-      basedLabel: '所在地',
-      basedValue: '马略卡，西班牙',
-      wechatLabel: '微信',
-      wechatValue: 'andygriffiths1',
-    },
-    success: {
-      title: '已收到您的咨询。',
-      body: '我会在 24 小时内亲自回复您。如果您希望更快沟通，WhatsApp 是最直接的方式。',
-    },
-    form: {
-      eyebrow: '咨询表单',
-      title: '开始安排您的这一天。',
-      intro: '您提供的信息越详细，我就越能把这一天安排得更贴合您的球和您的需求。',
-      sendPromptLabel: '建议提供',
-      handicapOptional: '（可选）',
-      labels: {
-        fname: '名字',
-        lname: '姓氏',
-        email: '电子邮箱',
-        dates: '希望的日期',
-        handicap: '您的差点',
-        groupsize: '人数',
-        experience: '您更想了解哪种安排？',
-        message: '还有什么我应该知道的？',
-      },
-      placeholders: {
-        fname: '张',
-        lname: '先生',
-        email: 'zhang@example.com',
-        dates: '例如 2026 年 10 月 15-22 日',
-        handicap: "例如 14 或 '初学者'",
-        message: '这一天的目标、您在考虑的球场、是否为混合水平小组、特别要求等，任何信息都能帮助我安排得更准确。',
-      },
-      groupsizeOptions: [
-        { value: '', label: '选择人数' },
-        { value: '1 - solo', label: '1 人 - 单人' },
-        { value: '2 - pair', label: '2 人 - 双人' },
-        { value: '3-4 - small group', label: '3-4 人 - 小组' },
-        { value: '5+ - larger group / corporate', label: '5 人以上 - 团队 / 公司' },
-      ],
-      experiences: [
-        ['plan-your-trip', '行程规划 - 专业规划', '按需报价'],
-        ['pwap-solo', '与 Andy 共度一天 - 单人', '€695'],
-        ['pwap-group', '与 Andy 共度一天 - 小组', '€950 总计'],
-        ['signature-day', 'Signature Day - 完整体验', '€3,000 起'],
-        ['not-sure', '暂时不确定 - 请给我建议', ''],
-      ],
-      submit: '发送咨询 →',
-      note: '我会在 24 小时内亲自回复每一条咨询。您的信息只会用于安排您的这一天。',
-    },
-    gift: {
-      heading: '这是一份礼物？',
-      body: '请在上方留言告知我，我会准备一张礼品证书，并在您准备好分享之前保密行程细节。',
-    },
-    whatNext: {
-      heading: '接下来会发生什么',
-      body: '我会亲自阅读每一条咨询。24 小时内您将收到我的回复，包括球场推荐和后续步骤 - 通常更快。如果您希望直接沟通，请用微信联系我。',
-    },
-    stayInTouch: {
-      heading: '保持联系',
-      body: '每两周发送一次马略卡球场动态和高尔夫资讯——直接发送到您的收件箱。',
-    },
-    dateCta: '告诉我您的日期',
+  "whatNext": {
+    "heading": "What happens next",
+    "body": "I read every enquiry myself. I will come back within 24 hours with the clearest next step: the course logic, planning route, or the best way to add a Play With A Pro day."
   },
+  "stayInTouch": {
+    "heading": "Stay in touch",
+    "body": "Course notes and Mallorca golf insights every two weeks, straight to your inbox."
+  },
+  "dateCta": "Build Your Itinerary"
+}
 }
 
-const CONTACT_FORM_HELP = {
-  de: {
-    experienceHelpTitle: 'Welche Option passt?',
-    experienceHelp:
-      'Waehlen Sie die naechste passende Option und ich verfeinere den Rest mit Ihnen. Reiseplanung bedeutet, dass ich Ablauf, Plaetze und Logik rund um Ihre Daten und Gruppe aufbaue. Play With A Pro bedeutet, dass Andy mit Ihnen auf dem Platz ist. Wenn Sie noch unsicher sind, waehlen Sie die unsichere Option und ich leite Sie in die richtige Richtung.',
-  },
-  es: {
-    experienceHelpTitle: 'Que opcion le encaja?',
-    experienceHelp:
-      'Elija la opcion mas cercana y yo afinare el resto con usted. Planificacion de viaje significa que organizo la ruta, los campos y la logica alrededor de sus fechas y su grupo. Play With A Pro significa que Andy estara con usted en el campo. Si todavia no lo tiene claro, elija la opcion de duda y yo le orientare.',
-  },
-  fr: {
-    experienceHelpTitle: 'Quelle option vous correspond ?',
-    experienceHelp:
-      'Choisissez l option la plus proche et j affine le reste avec vous. La planification de voyage signifie que je construis le parcours, la logique et le rythme autour de vos dates et de votre groupe. Play With A Pro signifie qu Andy sera sur le parcours avec vous. Si vous n etes pas encore certain, choisissez l option d hesitation et je vous orienterai.',
-  },
-  nl: {
-    experienceHelpTitle: 'Welke optie past het best?',
-    experienceHelp:
-      'Kies de optie die het dichtst in de buurt komt en ik werk de rest met u uit. Reisplanning betekent dat ik route, banen en timing opbouw rond uw data en uw groep. Play With A Pro betekent dat Andy met u op de baan is. Twijfelt u nog, kies dan de onzekere optie en ik help u de juiste richting op.',
-  },
-  sv: {
-    experienceHelpTitle: 'Vilket upplagg passar bast?',
-    experienceHelp:
-      'Valj det alternativ som ligger narmast och sa finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplagget runt dina datum och din grupp. Play With A Pro betyder att Andy ar med dig ute pa banan. Om du inte ar saker annu, valj det osakra alternativet sa pekar jag dig ratt.',
-  },
-  zh: {
-    experienceHelpTitle: '\u{54EA}\u{4E00}\u{79CD}\u{5B89}\u{6392}\u{66F4}\u{5408}\u{9002}\u{FF1F}',
-    experienceHelp:
-      '\u{8BF7}\u{9009}\u{62E9}\u{6700}\u{63A5}\u{8FD1}\u{7684}\u{9009}\u{9879}\u{FF0C}\u{6211}\u{4F1A}\u{5728}\u{6B64}\u{57FA}\u{7840}\u{4E0A}\u{5E2E}\u{60A8}\u{7EC6}\u{5316}\u{3002}\u{884C}\u{7A0B}\u{89C4}\u{5212}\u{610F}\u{5473}\u{7740}\u{6211}\u{4F1A}\u{56F4}\u{7ED5}\u{60A8}\u{7684}\u{65E5}\u{671F}\u{548C}\u{540C}\u{884C}\u{4EBA}\u{5B89}\u{6392}\u{7403}\u{573A}\u{3001}\u{8DEF}\u{7EBF}\u{548C}\u{8282}\u{594F}\u{3002}Play With A Pro \u{610F}\u{5473}\u{7740} Andy \u{4F1A}\u{548C}\u{60A8}\u{4E00}\u{8D77}\u{4E0B}\u{573A}\u{3002}\u{5982}\u{679C}\u{8FD8}\u{4E0D}\u{786E}\u{5B9A}\u{FF0C}\u{5C31}\u{9009}\u{62E9}\u{4E0D}\u{786E}\u{5B9A}\u{7684}\u{9009}\u{9879}\u{FF0C}\u{6211}\u{4F1A}\u{5E2E}\u{60A8}\u{5224}\u{65AD}\u{3002}',
-  },
-}
-
-const CONTACT_SEND_PROMPT = {
-  en: 'Best details to send: dates, group size, hotel area, handicap range, and any courses already on your shortlist.',
-  de: 'Am besten senden: Daten, Gruppengroesse, Hotelregion, Handicap und alle Plaetze, die schon auf Ihrer Liste stehen.',
-  es: 'Mejor enviar: fechas, tamano del grupo, zona de hotel, handicap y los campos que ya tenga en mente.',
-  fr: 'Idealement : dates, taille du groupe, zone d hotel, niveau et parcours deja envisages.',
-  nl: 'Graag meesturen: data, groepsgrootte, hotelregio, handicap en banen die al op uw shortlist staan.',
-  sv: 'Skicka garna: datum, gruppstorlek, hotellomrade, handicap och banor ni redan funderar pa.',
-  zh: '\u{5EFA}\u{8BAE}\u{4E00}\u{5E76}\u{544A}\u{77E5}\u{FF1A}\u{51FA}\u{884C}\u{65E5}\u{671F}\u{3001}\u{4EBA}\u{6570}\u{3001}\u{4F4F}\u{5BBF}\u{533A}\u{57DF}\u{3001}\u{5DEE}\u{70B9}\u{8303}\u{56F4}\u{FF0C}\u{4EE5}\u{53CA}\u{60A8}\u{5DF2}\u{8003}\u{8651}\u{7684}\u{7403}\u{573A}\u{3002}',
-}
-
-const CONTACT_TRUST = {
-  de: {
-    eyebrow: 'Warum Menschen anfragen',
-    quote: 'Nach nur 18 Loechern zusammen habe ich eine neue Grenze meines Potenzials entdeckt.',
-    credit: 'Jo, Play With A Pro Kunde',
-  },
-  es: {
-    eyebrow: 'Por que la gente consulta',
-    quote: 'Despues de solo 18 hoyos juntos, he descubierto un nuevo techo para mi potencial.',
-    credit: 'Jo, cliente de Play With A Pro',
-  },
-  fr: {
-    eyebrow: 'Pourquoi les gens prennent contact',
-    quote: 'Apres seulement 18 trous ensemble, j ai decouvert un nouveau plafond a mon potentiel.',
-    credit: 'Jo, client Play With A Pro',
-  },
-  nl: {
-    eyebrow: 'Waarom mensen aanvragen',
-    quote: 'Na slechts 18 holes samen heb ik een nieuw plafond in mijn potentieel ontdekt.',
-    credit: 'Jo, Play With A Pro klant',
-  },
-  sv: {
-    eyebrow: 'Varfor folk hor av sig',
-    quote: 'Efter bara 18 hal tillsammans upptackte jag ett nytt tak for min potential.',
-    credit: 'Jo, Play With A Pro-kund',
-  },
-  zh: {
-    eyebrow: '\u{4E3A}\u{4EC0}\u{4E48}\u{5927}\u{5BB6}\u{4F1A}\u{6765}\u{54A8}\u{8BE2}',
-    quote: '\u{53EA}\u{6253}\u{4E86} 18 \u{6D1E}\u{FF0C}\u{6211}\u{5C31}\u{53D1}\u{73B0}\u{81EA}\u{5DF1}\u{7684}\u{6F5C}\u{529B}\u{8FD8}\u{80FD}\u{518D}\u{5F80}\u{4E0A}\u{8D70}\u{4E00}\u{5C42}\u{3002}',
-    credit: 'Jo\u{FF0C}Play With A Pro \u{5BA2}\u{6237}',
-  },
+function getMergedContactContent(locale = 'en') {
+  if (locale === 'en') return CONTACT_CONTENT.en
+  const localized = getLocalizedContactContent(locale)
+  return localized
+    ? {
+        ...mergeLocalizedContent(CONTACT_CONTENT.en, localized),
+        locale,
+      }
+    : CONTACT_CONTENT.en
 }
 
 export function getContactContent(locale = 'en') {
-  const content = CONTACT_CONTENT[locale] || CONTACT_CONTENT.en
-
+  const content = getMergedContactContent(locale)
   return normalizeMojibakeDeep({
     ...content,
-    trust: content.trust || CONTACT_TRUST[locale] || CONTACT_CONTENT.en.trust,
     form: {
       ...content.form,
-      ...(content.form?.experienceHelpTitle ? {} : CONTACT_FORM_HELP[locale]),
-      sendPrompt: content.form?.sendPrompt || CONTACT_SEND_PROMPT[locale] || CONTACT_SEND_PROMPT.en,
       experiences: getContactExperienceOptions(locale),
     },
   })
