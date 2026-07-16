@@ -248,7 +248,7 @@ export function buildSignatureDayMetadata(locale = 'zh') {
     locale,
     {
       ...content.metadata,
-      robots: { index: false, follow: false },
+      robots: { index: true, follow: true },
     },
   )
 }

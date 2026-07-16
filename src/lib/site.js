@@ -218,17 +218,12 @@ export function getAlternates(pathname = '/') {
 export function getSitemapPaths() {
   const paths = []
   const sharedPages = Array.from(SHARED_BASE_PATHS)
-  const englishOnlyPages = Array.from(EN_ONLY_BASE_PATHS)
 
   // Include shared pages in all locales (they exist in all languages)
   for (const locale of ALL_LOCALES) {
     for (const path of sharedPages) {
       paths.push(buildLocalePath(path, locale))
     }
-  }
-
-  for (const path of englishOnlyPages) {
-    paths.push(buildLocalePath(path, 'en'))
   }
 
   // Review posts: include ALL locales (published in all languages)

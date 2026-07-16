@@ -8,7 +8,7 @@ Canonical domain: https://www.mrmallorcagolf.com
 ## Core Pages
 
 - [Homepage](https://www.mrmallorcagolf.com/): Main overview of the itinerary-led planning path.
-- [Itinerary Planner](https://www.mrmallorcagolf.com/itinerary): Public planning tool for trip shape, course mix, dates, and add-ons.
+- [Itinerary Planner](https://www.mrmallorcagolf.com/tools/golf-day-builder): Public planning tool for trip shape, course mix, dates, and add-ons.
 - [Play with a Pro](https://www.mrmallorcagolf.com/play-with-a-pro): Private golf day with Andy — one course, 18 holes, full coaching woven into the round. Solo from €695, groups from €950.
 - [Signature Day](https://www.mrmallorcagolf.com/signature-day): Premium full-day experience including on-course time with Andy, post-round golf physio with John Brazier (The Golf Doctor), private transfers, and dinner. From €3,000.
 - [Golf Courses](https://www.mrmallorcagolf.com/golf-courses): Course guide covering all 24 courses on the island with green fees, difficulty, and regional breakdowns.

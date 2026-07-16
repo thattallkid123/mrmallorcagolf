@@ -55,13 +55,23 @@
       "permanent": true
     },
     {
+      "source": "/golf-courses-391",
+      "destination": "/golf-courses",
+      "permanent": true
+    },
+    {
+      "source": "/golf-courses/son-gual",
+      "destination": "/guides/son-gual-review",
+      "permanent": true
+    },
+    {
       "source": "/guides/a-day-at-son-gual",
       "destination": "/guides/play-with-a-pro-explained",
       "permanent": true
     },
     {
       "source": "/:locale(de|es|fr|nl|sv|zh)/guides/a-day-at-son-gual",
-      "destination": "/:locale/guides/play-with-a-pro-explained",
+      "destination": "/:locale/play-with-a-pro",
       "permanent": true
     },
     {
