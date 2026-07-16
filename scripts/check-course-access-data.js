@@ -45,8 +45,8 @@ async function main() {
     }
 
     if (entry.handicapRequired) {
-      if (!Number.isFinite(entry.handicapMen) && !Number.isFinite(entry.handicapWomen)) {
-        issues.push(`${entry.name}: handicapRequired is true but no handicap limit is set`)
+      if (!Number.isFinite(entry.handicapMen) && !Number.isFinite(entry.handicapWomen) && !entry.certificateRequired) {
+        issues.push(`${entry.name}: handicapRequired needs either a numeric limit or a required handicap certificate`)
       }
     } else if (entry.certificateRequired) {
       issues.push(`${entry.name}: certificateRequired cannot be true when handicapRequired is false`)

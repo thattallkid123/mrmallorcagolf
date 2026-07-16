@@ -15,7 +15,7 @@ export const COURSE_PRICING_BY_NAME = {
   "Golf Santa Ponsa 2": {"low":65,"peak":88,"dynamic":false,"licenceFee":0},
   "Golf Santa Ponsa 3": {"low":25,"peak":30,"dynamic":false,"licenceFee":0,"holes":9},
   "Golf Son Antem East": {"low":105,"peak":140,"dynamic":true,"licenceFee":0},
-  "Golf Son Antem West": {"low":109,"peak":135,"dynamic":true,"licenceFee":0},
+  "Golf Son Antem West": {"low":109,"peak":145,"dynamic":true,"licenceFee":0},
   "Golf Son Gual": {"low":115,"peak":165,"dynamic":false,"licenceFee":0},
   "Golf Son Quint": {"low":70,"peak":172,"dynamic":true,"licenceFee":3},
   "Golf Son Termes": {"low":80,"peak":100,"dynamic":false,"licenceFee":0},
