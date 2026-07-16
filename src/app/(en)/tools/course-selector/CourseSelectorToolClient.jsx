@@ -309,7 +309,7 @@ const COURSES = [
     id:'son-antem-west', name:'Golf Son Antem West',
     area:'South', areaLabel:'Llucmajor · South',
     diff10:7, scenery:3, prestige:3, value:4, walkability:4,
-    greenFee:'Peak €135 / Low €109 (dynamic)',
+    greenFee:'Peak €145 / Low €109 (dynamic)',
     buggyNote:'Flat terrain; easy walking, though most use buggies for pace',
     bestFor:'A well-run resort course close to Palma with forgiving fairways and one memorable hole',
     why:'An open countryside layout near Llucmajor, 15 minutes from Palma and 25 from the airport. Generous fairways and light rough make it accessible for most abilities. The tree-lined holes are where the round comes alive. Hole 16, an uphill dogleg-right par-5 finishing at a protected green, is the standout. Flat terrain suits walking.',
