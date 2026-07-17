@@ -6229,19 +6229,23 @@ export const SCORECARD_DATA = {
     "holes": [
       [
         3,
-        5
+        6
       ],
       [
         5,
-        3
+        1
       ],
       [
         4,
-        2
+        3
       ],
       [
         3,
-        6
+        5
+      ],
+      [
+        4,
+        7
       ],
       [
         4,
@@ -6249,20 +6253,21 @@ export const SCORECARD_DATA = {
       ],
       [
         4,
-        9
-      ],
-      [
-        4,
-        1
+        4
       ],
       [
         3,
-        7
+        9
       ],
       [
         5,
-        4
+        2
       ]
+    ],
+    "strokeIndexVerification": "verified_rfeg_2026-07-17",
+    "strokeIndexNotes": [
+      "RFEG club BP07 publishes outgoing handicap values 11,1,5,9,13,15,7,17,3; these are ranked to the 9-hole sequence 6,1,3,5,7,8,4,9,2 used by MMG scoring tools.",
+      "Golf Pollenca's own course page publishes a conflicting incoming allocation 9,5,3,11,15,17,1,13,7, which would rank to 5,3,2,6,8,9,1,7,4. Do not replace the RFEG sequence automatically; review with the club if this source conflict changes."
     ],
     "teeVerification": "verified_pdf_manual",
     "teeNotes": [
