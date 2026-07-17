@@ -6229,23 +6229,19 @@ export const SCORECARD_DATA = {
     "holes": [
       [
         3,
-        6
-      ],
-      [
-        5,
-        1
-      ],
-      [
-        4,
-        3
-      ],
-      [
-        3,
         5
       ],
       [
+        5,
+        3
+      ],
+      [
         4,
-        7
+        2
+      ],
+      [
+        3,
+        6
       ],
       [
         4,
@@ -6253,15 +6249,19 @@ export const SCORECARD_DATA = {
       ],
       [
         4,
-        4
-      ],
-      [
-        3,
         9
       ],
       [
+        4,
+        1
+      ],
+      [
+        3,
+        7
+      ],
+      [
         5,
-        2
+        4
       ]
     ],
     "teeVerification": "verified_pdf_manual",
