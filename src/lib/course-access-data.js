@@ -127,14 +127,14 @@ export const COURSE_ACCESS_LIST = [
   },
   {
     name: "Golf Son Gual",
-    handicapMen: 33,
-    handicapWomen: 35,
+    handicapMen: null,
+    handicapWomen: null,
     certificateRequired: true,
     handicapRequired: true,
     accessType: "public",
     holes: 18,
-    confidence: "medium",
-    sourceNote: "User still wants cleaner proof for the 33/35 gate.",
+    confidence: "reviewed_conflict",
+    sourceNote: "Reviewed 2026-07-17: official Son Gual public materials do not publish a numeric visitor limit; third-party sources conflict between 33/35 and 28/36. Keep certificate requirement, but do not state a numeric cap unless the club confirms it directly.",
   },
   {
     name: "Golf Son Quint",
