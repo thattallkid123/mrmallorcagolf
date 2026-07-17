@@ -127,14 +127,14 @@ export const COURSE_ACCESS_LIST = [
   },
   {
     name: "Golf Son Gual",
-    handicapMen: null,
-    handicapWomen: null,
+    handicapMen: 28,
+    handicapWomen: 36,
     certificateRequired: true,
     handicapRequired: true,
     accessType: "public",
     holes: 18,
-    confidence: "reviewed_conflict",
-    sourceNote: "Reviewed 2026-07-17: official Son Gual public materials do not publish a numeric visitor limit; third-party sources conflict between 33/35 and 28/36. Keep certificate requirement, but do not state a numeric cap unless the club confirms it directly.",
+    confidence: "high",
+    sourceNote: "Confirmed by Andy 2026-07-17: maximum handicap 28 men / 36 ladies; handicap certificate required.",
   },
   {
     name: "Golf Son Quint",
