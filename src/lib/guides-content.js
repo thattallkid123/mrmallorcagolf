@@ -59,7 +59,7 @@ export const GUIDES_CONTENT = {
       "title": "Golf Son Muntaner, Mallorca. A PGA Professional's Honest Review (2026)",
       "intro": "Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
       "readTime": "6 min read",
-      "keywords": "Championship · Par 72 · €110-259 · Buggy included"
+      "keywords": "Championship · Par 72 · €110-260 · Buggy included"
     },
     {
       "slug": "santa-ponsa-1-review",
@@ -162,7 +162,7 @@ export const GUIDES_CONTENT = {
       "title": "How Much Does Golf Cost in Mallorca? Green Fees, Hire, and Hidden Costs",
       "intro": "The full picture on what a golf trip here actually costs - green fees, hire, caddies, and where you can save without compromising.",
       "readTime": "5 min read",
-      "keywords": "€55-250 green fees · Hire · Caddies · 2026 prices"
+      "keywords": "€55-260 green fees · Hire · Caddies · 2026 prices"
     },
     {
       "slug": "golf-trip-planning-mallorca",

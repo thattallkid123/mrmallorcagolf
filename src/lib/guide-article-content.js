@@ -5,12 +5,12 @@ import { mergeGuideContent } from './guide-content-localization.js'
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
     metadata: {
-      title: 'Mallorca Golf Green Fees 2026 | All 24 Courses, €55–€250',
+      title: 'Mallorca Golf Green Fees 2026 | All 24 Courses, €55–€260',
       description:
-        'A round in Mallorca costs €55–€250, most €90–€150. Cheapest Pollença (€55), priciest Son Muntaner (€250). Club hire from €30, buggy €20.',
+        'A round in Mallorca costs €55–€260, most €90–€150. Cheapest Pollença (€55), priciest Son Muntaner (€260). Club hire from €30, buggy €20.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
-      imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
+      imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€260, Club Hire & What to Budget',
     },
     meta: {
       badge: 'Green Fees',
@@ -19,7 +19,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       updated: 'March 2026',
       title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
       intro:
-        'Public 18-hole golf in Mallorca runs from about €55 at the value end up to around €250 at Son Muntaner in peak season. Here is the honest 2026 breakdown from someone who plays here most weeks.',
+        'Public 18-hole golf in Mallorca runs from about €55 at the value end up to around €260 at Son Muntaner in peak season. Here is the honest 2026 breakdown from someone who plays here most weeks.',
       related: [
         { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
         { slug: 'golf-club-hire-mallorca', title: 'Golf Club Hire in Mallorca' },
@@ -57,7 +57,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Son Gual sits around €115-165. Alcanada runs roughly €115-220. Son Muntaner reaches around €250 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €210, and Son Vida to around €190. The top end in Mallorca is higher than many older guides suggest.',
+          'Son Gual sits around €115-165. Alcanada runs roughly €115-220. Son Muntaner reaches around €260 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €210, and Son Vida to around €190. The top end in Mallorca is higher than many older guides suggest.',
       },
       {
         type: 'paragraph',
@@ -410,7 +410,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: "Best Golf Courses in Mallorca 2026 | Ranked & Reviewed by a PGA Professional",
       description:
-        'All 24 Mallorca (Majorca) golf courses ranked by a PGA pro who plays them. Green fees from €55–€250, difficulty ratings, and an honest verdict on who each course suits. Updated 2026.',
+        'All 24 Mallorca (Majorca) golf courses ranked by a PGA pro who plays them. Green fees from €55–€260, difficulty ratings, and an honest verdict on who each course suits. Updated 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
       imageAlt: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
@@ -448,7 +448,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         rows: [
           ['Son Gual', 'Palma', '72', '\u20AC115-165', '9/10', '5.0', 'Serious championship round'],
           ['Club de Golf Alcanada', "Port d'Alcudia", '72', '\u20AC115-220', '7/10', '5.0', 'Spectacular views, championship quality'],
-          ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-250', '7/10', '4.5', 'Best-conditioned, close to Palma'],
+          ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-260', '7/10', '4.5', 'Best-conditioned, close to Palma'],
           ['T Golf Calvia', 'Calvia', '72', '\u20AC170-210', '7/10', '5.0', 'Premium all-round experience'],
           ['Golf de Andratx', 'Camp de Mar', '72', '\u20AC90-140', '9/10', '4.0', 'Hardest test on the island'],
           ['Golf Son Vida', 'Son Vida - Palma', '70', '\u20AC80-190', '8/10', '4.5', 'Historic course, Seve won here'],
@@ -597,7 +597,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'facts',
         items: [
           ['24', 'Courses on the island'],
-          ['€55-250', '18-hole green fee range'],
+          ['€55-260', '18-hole green fee range'],
           ['300', 'Days of sunshine'],
           ['12 mo', 'Golf played year-round'],
         ],

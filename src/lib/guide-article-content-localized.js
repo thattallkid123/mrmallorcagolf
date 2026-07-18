@@ -517,7 +517,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "EUR125-250",
+              "EUR125-260",
               "7/10",
               "4.5",
               "Mejor mantenimiento, cerca de Palma"
@@ -811,7 +811,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Campos en la isla"
             ],
             [
-              "€55-250",
+              "€55-260",
               "Rango 18 hoyos"
             ],
             [
@@ -923,7 +923,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "EUR125-250",
+              "EUR125-260",
               "7/10",
               "4.5",
               "Beste Pflege, nah an Palma"
@@ -1217,7 +1217,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Plaetze auf der Insel"
             ],
             [
-              "€55-250",
+              "€55-260",
               "18-Loch-Spanne"
             ],
             [
@@ -1329,7 +1329,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "EUR125-250",
+              "EUR125-260",
               "7/10",
               "4.5",
               "Etat de jeu exceptionnel, proche de Palma"
@@ -1623,7 +1623,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Parcours sur l'ile"
             ],
             [
-              "€55-250",
+              "€55-260",
               "Plage de green fees"
             ],
             [
@@ -1735,7 +1735,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "EUR125-250",
+              "EUR125-260",
               "7/10",
               "4.5",
               "Best onderhouden, dicht bij Palma"
@@ -2029,7 +2029,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Banen op het eiland"
             ],
             [
-              "€55-250",
+              "€55-260",
               "Range van greenfees"
             ],
             [
@@ -2141,7 +2141,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "EUR125-250",
+              "EUR125-260",
               "7/10",
               "4.5",
               "Bast skick, nara Palma"
@@ -2435,7 +2435,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Banor pa on"
             ],
             [
-              "€55-250",
+              "€55-260",
               "Greenfee-spann"
             ],
             [
@@ -2547,7 +2547,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "EUR125-250",
+              "EUR125-260",
               "7/10",
               "4.5",
               "保养最好，离Palma近"
@@ -2841,7 +2841,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "岛上球场总数"
             ],
             [
-              "€55-250",
+              "€55-260",
               "果岭费范围"
             ],
             [
@@ -4594,7 +4594,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "5 min de lecture",
         "updated": "Mars 2026",
         "title": "Combien coûte le golf à Majorque ? Le vrai détail 2026",
-        "intro": "Une partie peut coûter d’environ €55 en saison creuse jusqu’à environ €250 aux tarifs les plus élevés. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque chaque semaine.",
+        "intro": "Une partie peut coûter d’environ €55 en saison creuse jusqu’à environ €260 aux tarifs les plus élevés. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque chaque semaine.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4641,7 +4641,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Parcours premium"
         },
         {
-          "text": "Son Gual varie d’environ €115 en basse saison à €165 aux pics de mars à mai et de septembre à novembre. Alcanada va d’environ €115 en basse saison à €220 au plus haut. Son Muntaner monte jusqu’à environ €250 et descend autour de €125 aux créneaux les moins chers. Ce sont les cartes tarifaires publiées pour 2026. Pour les parcours Arabella, mieux vaut vérifier le tarif du moment sur arabellagolfmallorca.com."
+          "text": "Son Gual varie d’environ €115 en basse saison à €165 aux pics de mars à mai et de septembre à novembre. Alcanada va d’environ €115 en basse saison à €220 au plus haut. Son Muntaner monte jusqu’à environ €260 et descend autour de €125 aux créneaux les moins chers. Ce sont les cartes tarifaires publiées pour 2026. Pour les parcours Arabella, mieux vaut vérifier le tarif du moment sur arabellagolfmallorca.com."
         },
         {
           "text": "Beaucoup de parcours pratiquent une tarification dynamique. Si vous cherchez un départ de dernière minute sur un parcours demandé, vous paierez plus cher. Réservez tôt, fixez vos priorités et vous économiserez un peu. Il vaut aussi la peine de surveiller les offres Black Friday, Noël et les packs multi-parcours. En faisant les choses correctement, on économise souvent 30-40 %."
@@ -4735,7 +4735,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "5 min leestijd",
         "updated": "Maart 2026",
         "title": "Wat kost golf op Mallorca? Het complete overzicht voor 2026",
-        "intro": "Een ronde kan van ongeveer €55 in het waardeseizoen oplopen tot ongeveer €250 aan de top van de markt. Dit is het eerlijke overzicht voor 2026 van iemand die hier bijna elke week speelt.",
+        "intro": "Een ronde kan van ongeveer €55 in het waardeseizoen oplopen tot ongeveer €260 aan de top van de markt. Dit is het eerlijke overzicht voor 2026 van iemand die hier bijna elke week speelt.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4782,7 +4782,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Premiumbanen"
         },
         {
-          "text": "Son Gual loopt van ongeveer €115 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €250 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com."
+          "text": "Son Gual loopt van ongeveer €115 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €260 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com."
         },
         {
           "text": "Veel banen werken met dynamische prijzen. Wie op het laatste moment een starttijd op een populaire baan wil, betaalt meestal meer. Plan vroeg, bepaal uw prioriteiten en bespaar geld. Het loont ook om te letten op Black Friday, kerstacties en combinatiedeals. Als u dat slim doet, bespaart u vaak 30-40 procent."
@@ -4876,7 +4876,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "5 min lasning",
         "updated": "Mars 2026",
         "title": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026",
-        "intro": "En rond kan kosta från ungefär €55 under värdesäsongen upp till ungefär €250 på de högsta nivåerna. Här är den raka kostnadsbilden för 2026 från någon som spelar här nästan varje vecka.",
+        "intro": "En rond kan kosta från ungefär €55 under värdesäsongen upp till ungefär €260 på de högsta nivåerna. Här är den raka kostnadsbilden för 2026 från någon som spelar här nästan varje vecka.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4923,7 +4923,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Premiumbanor"
         },
         {
-          "text": "Son Gual ligger mellan ungefär €115 i lågsäsong och €165 i toppperioderna mars till maj samt september till november. Alcanada går från ungefär €115 i lågsäsong till €220 när det är som dyrast. Son Muntaner går upp till ungefär €250 och ned till cirka €125 på de billigaste tiderna. Det här är publicerade 2026-priser. Kontrollera aktuella Arabella-priser på arabellagolfmallorca.com."
+          "text": "Son Gual ligger mellan ungefär €115 i lågsäsong och €165 i toppperioderna mars till maj samt september till november. Alcanada går från ungefär €115 i lågsäsong till €220 när det är som dyrast. Son Muntaner går upp till ungefär €260 och ned till cirka €125 på de billigaste tiderna. Det här är publicerade 2026-priser. Kontrollera aktuella Arabella-priser på arabellagolfmallorca.com."
         },
         {
           "text": "Många banor har dynamisk prissättning. Försöker man få en sen tee time på en populär bana betalar man oftast mer. Planera tidigt, välj vad som är viktigt och spara pengar. Det är också värt att hålla koll på Black Friday, julkampanjer och paketerbjudanden. Gör man det rätt går det ofta att spara 30-40 procent."
@@ -5017,7 +5017,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "5分钟阅读",
         "updated": "2026年3月",
         "title": "马略卡打高尔夫要花多少钱？2026完整费用解析",
-        "intro": "如果看标准18洞轮次，价格大致从€55到€250不等。下面这份2026年费用解析，来自一位几乎每周都在这里下场的教练。",
+        "intro": "如果看标准18洞轮次，价格大致从€55到€260不等。下面这份2026年费用解析，来自一位几乎每周都在这里下场的教练。",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5064,7 +5064,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "高端球场"
         },
         {
-          "text": "Son Gual淡季约€115（约¥860），高峰期€165（约¥1,290）；高峰期通常是3-5月以及9-11月。Alcanada淡季约€115，高峰期€220（约¥1,720）。Son Muntaner最高约€250，最低价位约€125。这些都是公开的2026年价格。Arabella旗下价格建议直接去arabellagolfmallorca.com确认。"
+          "text": "Son Gual淡季约€115（约¥860），高峰期€165（约¥1,290）；高峰期通常是3-5月以及9-11月。Alcanada淡季约€115，高峰期€220（约¥1,720）。Son Muntaner最高约€260，最低价位约€125。这些都是公开的2026年价格。Arabella旗下价格建议直接去arabellagolfmallorca.com确认。"
         },
         {
           "text": "很多球场采用动态定价。如果你在热门时段临时订热门球场，价格通常会更高。提前规划、先想清楚自己最看重什么，能省下一笔。Black Friday、圣诞节和多轮套餐有时很值得看，做得对的话，经常可以省下30%-40%。"

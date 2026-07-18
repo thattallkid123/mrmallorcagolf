@@ -48,7 +48,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Mallorca — análisis honesto de un Profesional PGA (2026)",
         "intro": "Mejor campo de España en los World Golf Awards 2025. A cinco minutos de Palma. Lo jugué con el tee sheet completo un sábado por la mañana — esto es lo que encontré.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €110-259 · Buggy incluido"
+        "keywords": "Championship · Par 72 · €110-260 · Buggy incluido"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -116,7 +116,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "¿Cuánto cuesta el golf en Mallorca? Green fees, alquiler y costes ocultos",
         "intro": "La foto completa de lo que cuesta realmente un viaje de golf aquí: green fees, alquiler, caddies y dónde ahorrar sin sacrificar calidad.",
         "readTime": "5 min",
-        "keywords": "€55-250 green fees · Alquiler · Caddies · Precios 2026"
+        "keywords": "€55-260 green fees · Alquiler · Caddies · Precios 2026"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -192,7 +192,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Bester Golfplatz Spaniens bei den World Golf Awards 2025. Fünf Minuten von Palma. Ich spielte ihn mit vollem Abschlagskalender an einem Samstagmorgen — das sind meine Eindrücke.",
         "readTime": "6 Min.",
-        "keywords": "Championship · Par 72 · €110-259 · Buggy inklusive"
+        "keywords": "Championship · Par 72 · €110-260 · Buggy inklusive"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -260,7 +260,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Was kostet Golf auf Mallorca? Greenfees, Leihausrüstung und versteckte Kosten",
         "intro": "Das vollständige Bild, was ein Golftrip hier wirklich kostet: Greenfees, Leihausrüstung, Caddies und wo man sparen kann.",
         "readTime": "5 Min.",
-        "keywords": "€55-250 Greenfees · Leihausrüstung · Caddies · Preise 2026"
+        "keywords": "€55-260 Greenfees · Leihausrüstung · Caddies · Preise 2026"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -335,7 +335,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Majorque — avis honnête d'un Professionnel PGA (2026)",
         "intro": "Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. À cinq minutes de Palma. Je l'ai joué avec un départ complet un samedi matin — voici ce que j'y ai trouvé.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €110-259 · Buggy inclus"
+        "keywords": "Championship · Par 72 · €110-260 · Buggy inclus"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -403,7 +403,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Combien coûte le golf à Majorque ? Green fees, location et coûts cachés",
         "intro": "Le tableau complet de ce que coûte réellement un séjour golf ici: green fees, location, caddies et où économiser sans compromis.",
         "readTime": "5 min",
-        "keywords": "€55-250 green fees · Location · Caddies · Tarifs 2026"
+        "keywords": "€55-260 green fees · Location · Caddies · Tarifs 2026"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -479,7 +479,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Mallorca — eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "Beste golfbaan van Spanje bij de World Golf Awards 2025. Vijf minuten van Palma. Ik speelde het met een vol tee sheet op een zaterdagochtend — dit zijn mijn bevindingen.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €110-259 · Buggy inbegrepen"
+        "keywords": "Championship · Par 72 · €110-260 · Buggy inbegrepen"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -547,7 +547,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten",
         "intro": "Het volledige beeld van wat een golfreis hier werkelijk kost: greenfees, verhuur, caddies en waar je kunt besparen zonder in te leveren.",
         "readTime": "5 min",
-        "keywords": "€55-250 greenfees · Verhuur · Caddies · Prijzen 2026"
+        "keywords": "€55-260 greenfees · Verhuur · Caddies · Prijzen 2026"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -623,7 +623,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Mallorca — ärlig recension av en PGA Professional (2026)",
         "intro": "Bästa golfbana i Spanien vid World Golf Awards 2025. Fem minuter från Palma. Jag spelade den med fullbokat tee sheet en lördagsmorgon — här är vad jag hittade.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €110-259 · Buggy ingår"
+        "keywords": "Championship · Par 72 · €110-260 · Buggy ingår"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -691,7 +691,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Vad kostar golf på Mallorca? Greenfees, uthyrning och dolda kostnader",
         "intro": "Den fullständiga bilden av vad en golfresa hit faktiskt kostar: greenfees, uthyrning, caddies och var du kan spara utan att kompromissa.",
         "readTime": "5 min",
-        "keywords": "€55-250 greenfees · Uthyrning · Caddies · Priser 2026"
+        "keywords": "€55-260 greenfees · Uthyrning · Caddies · Priser 2026"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -767,7 +767,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Muntaner 高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）",
         "intro": "2025年世界高尔夫奖西班牙最佳球场。距巴尔马市中心五分钟。我在满员开球表的周六早晨打了一轮——以下是我的真实体验。",
         "readTime": "6分钟",
-        "keywords": "锦标赛级 · 标准杆72 · EUR 110-259 · 含球车"
+        "keywords": "锦标赛级 · 标准杆72 · EUR 110-260 · 含球车"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -835,7 +835,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "马略卡岛打高尔夫要多少钱？果岭费、租杆费及隐性费用全解析",
         "intro": "一次马略卡高尔夫之旅的真实花销:果岭费、租杆、球童，以及在哪里可以省钱而不降低体验。",
         "readTime": "5分钟",
-        "keywords": "€55-250果岭费 · 租杆 · 球童 · 2026年价格"
+        "keywords": "€55-260果岭费 · 租杆 · 球童 · 2026年价格"
       },
       {
         "slug": "golf-trip-planning-mallorca",
