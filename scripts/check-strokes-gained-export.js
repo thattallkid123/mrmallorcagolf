@@ -8,6 +8,16 @@ async function main() {
   const mmgToolsRoot = path.join(repoRoot, '..', 'mmg-tools')
   const exportPath = path.join(mmgToolsRoot, 'strokes-gained', 'course-data.js')
 
+  // mmg-tools is a sibling repo, only present on a local machine that has it
+  // checked out (never in CI, which only checks out this repo). Skip rather
+  // than fail when the whole sibling repo is absent; still fail if it's
+  // present but this specific generated file is missing, since that means
+  // the export is stale/broken rather than just unavailable.
+  if (!fs.existsSync(mmgToolsRoot)) {
+    console.log('Skipping strokes-gained export check because the sibling mmg-tools repo is not checked out here (expected in CI).')
+    return
+  }
+
   const [{ MALLORCA_TRACKER_COURSES }] = await Promise.all([
     import(pathToFileURL(path.join(repoRoot, 'src', 'lib', 'mallorca-tracker-courses.js')).href),
   ])
