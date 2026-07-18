@@ -55,6 +55,7 @@ const CONTENT_FILES = [
   'src/lib/guide-post-content.js',
   'src/lib/guide-post-content-localized.js',
   'src/lib/guide-article-content.js',
+  'src/lib/guide-article-content-localized.js',
   'src/lib/offers-content.js',
   'src/lib/homepage-content.js',
   'src/lib/plan-your-trip-content.js',
@@ -111,11 +112,12 @@ function toCanonical(str) {
 const LABELLED_PEAK_FIRST = /Peak\s*€\s?(\d{2,3})\s*\/\s*Low\s*€\s?(\d{2,3})/i
 const LABELLED_LOW_FIRST = /Low\s*€\s?(\d{2,3})\s*\/\s*Peak\s*€\s?(\d{2,3})/i
 // A whole string that is nothing but a band, e.g. "€80-165" or "€77 – €126".
-const STANDALONE_BAND = /^\s*€\s?(\d{2,3})\s*[-–—]\s*€?\s?(\d{2,3})\s*$/
+const STANDALONE_BAND = /^\s*(?:€|EUR)\s?(\d{2,3})\s*[-–—]\s*(?:€|EUR)?\s?(\d{2,3})\s*$/
 // A band appearing anywhere — only used inside a table's "Green Fee" column,
 // where the column header already establishes that the number is a green fee
-// (so "Members … · €65-88" is safe to read).
-const ANY_BAND = /€\s?(\d{2,3})\s*[-–—]\s*€?\s?(\d{2,3})/
+// (so "Members … · €65-88" is safe to read). Localized table cells spell the
+// currency as literal "EUR" instead of the € symbol, so both are accepted.
+const ANY_BAND = /(?:€|EUR)\s?(\d{2,3})\s*[-–—]\s*(?:€|EUR)?\s?(\d{2,3})/
 
 // Returns {low, peak, kind} for a string, or null if it carries no checkable
 // green-fee shape.
@@ -174,8 +176,19 @@ function checkString(value, ctx, file) {
 // surface (e.g. the guide-article "All 24 Courses" quick reference).
 function checkTable(node, file) {
   const headers = (node.headers || []).map((h) => String(h).toLowerCase())
-  const courseIdx = headers.findIndex((h) => /course/.test(h))
-  const feeIdx = headers.findIndex((h) => /fee|price|green/.test(h))
+  let courseIdx = headers.findIndex((h) => /course/.test(h))
+  let feeIdx = headers.findIndex((h) => /fee|price|green/.test(h))
+  // Localized mirrors of this table translate every header ("Campo", "Platz",
+  // "球场"…) so the English-word regexes above never match. "Par" is left
+  // untranslated in every locale variant, so anchor on it: course is always
+  // the first column and fee always immediately follows Par.
+  if (courseIdx < 0 || feeIdx < 0) {
+    const parIdx = headers.findIndex((h) => h.trim() === 'par')
+    if (parIdx >= 0) {
+      if (courseIdx < 0) courseIdx = 0
+      if (feeIdx < 0) feeIdx = parIdx + 1
+    }
+  }
   if (courseIdx < 0 || feeIdx < 0) return
   for (const row of node.rows || []) {
     if (!Array.isArray(row)) continue
@@ -198,7 +211,11 @@ function walk(node, ctx, file) {
     return
   }
   if (node && typeof node === 'object') {
-    if (node.type === 'table') checkTable(node, file)
+    // English tables carry an explicit type: 'table'; localized mirrors of
+    // the same table omit it, so also detect the shape structurally.
+    if (node.type === 'table' || (Array.isArray(node.headers) && Array.isArray(node.rows))) {
+      checkTable(node, file)
+    }
     // Does this object itself declare a course? (card name/href pattern)
     let objCtx = ctx
     for (const field of CTX_FIELDS) {

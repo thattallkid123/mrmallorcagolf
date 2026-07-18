@@ -2,7 +2,7 @@
 
 > **Scope:** This is the **website and code repo only** (`mrmallorcagolf-real`). For internal tooling, control panel, pricing sync scripts, and standalone apps, switch to `mmg-tools/` — it has its own CLAUDE.md.
 
-> **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update` — over re-deriving these from this file.
+> **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update`, `/health-check` — over re-deriving these from this file.
 
 ---
 
@@ -38,7 +38,7 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 - DOCUMENTS: `C:\Users\Andy\Documents`
 - PROJECTS_FILE: `C:\OneDrive\Desktop\cursor\PROJECTS.md`
 
-**Two-PC daily rule:** before leaving a machine `git push` and let Drive sync finish; before starting on the other `git pull`; only edit on one machine at a time.
+**Two-PC daily rule:** before leaving a machine `git push` and let Drive sync finish; before starting on the other `git pull`; only edit on one machine at a time. Run `Start-Session.ps1` (workspace root, works from either repo) at the start of a session — it fetches, reports ahead/behind vs origin, and lists uncommitted changes so a stale pull or an accidental overwrite doesn't happen.
 
 **Secrets (not in git — must exist on both machines):** `.env` and `.env.local` (API keys — Resend etc.); `.github-token`; `ga4_analytics/ga4_oauth_client.json`, `ga4_token.json`; `search_console/search_console_token.json`; `seo_analytics/google_token.json`; `zoho_mail/zoho_config.json`.
 
@@ -78,7 +78,7 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 | i18n release check | `npm run check:i18n-release` — run after any shared content or locale-facing edit |
 | Build check | `npm run build` |
 | Visual smoke checks | `npm run check:visual` |
-| Pre-deploy check | `npm run predeploy` if available, otherwise run the checks above |
+| Pre-deploy check (full bundle) | `npm run check:ready` (alias: `npm run predeploy`) — runs `check:content` + `check:i18n-release` + `build` |
 | GA4 report | `python ga4_analytics/ga4_report.py` |
 | Update Google rating | Edit `REVIEW_RATING` and `REVIEW_COUNT` at the top of `src/components/ReviewBadge.jsx` — those two constants drive the badge on every page + the `aria-label`. Then commit and push. |
 
@@ -117,7 +117,7 @@ Next newsletter step: do not build a heavy programme yet — the system is mostl
 
 ## Course scorecard data (par / SI / distances)
 
-**Par / SI / tee data now sync from the MMG tools scorecard pipeline.** Ultimate truth is the official club PDFs in Drive `Reference/Scorecards/Scorecard PDFs/`. The editable machine master is `mmg-tools\pricing\edit\confirmed\scorecards.json`; run `.\mmg.ps1 scorecards` from mmg-tools to refresh `src/lib/scorecard-data.js` (plus the scoring apps) from it. `Reference/SCORECARD_MASTER.md` is a human-readable legacy reference only — do not edit it as a sync source. Validation commands: `.\mmg.ps1 scorecard-audit` (PDF vs master) and `.\mmg.ps1 scorecard-sources` (PDF vs central JSON vs strokes-gained). Course-listing pills and any editorial/blog copy that mention par or length are still manual surfaces and should be checked separately. For the full manual chain (PDF → `scorecards.json` → generated scorecard data → `src/lib/golf-courses-data.js` pills text → any blog content mentioning that par), use the `/scorecard-update` skill.
+**Par / SI / tee data now sync from the MMG tools scorecard pipeline.** Ultimate truth is the official club PDFs in Drive `Reference/Scorecards/Scorecard PDFs/`. The editable machine master is `mmg-tools\pricing\edit\confirmed\scorecards.json`; run `.\mmg.ps1 scorecards` from mmg-tools to refresh `src/lib/scorecard-data.js` (plus the scoring apps) from it. `Reference/SCORECARD_MASTER.md` is a human-readable legacy reference only — do not edit it as a sync source. Validation commands: `.\mmg.ps1 scorecard-audit` (PDF vs master) and `.\mmg.ps1 scorecard-sources` (PDF vs central JSON vs strokes-gained). Course-listing par pills are checked against the scorecard master by `npm run check:course-data` (`check-scorecard-data.js`); editorial/blog copy that mentions par or length is still a manual surface and should be checked separately. For the full manual chain (PDF → `scorecards.json` → generated scorecard data → `src/lib/golf-courses-data.js` pills text → any blog content mentioning that par), use the `/scorecard-update` skill.
 
 ## Course pricing data — sync chain
 
@@ -128,12 +128,13 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 **Auto-synced when you run `.\mmg.ps1 pricing`:**
 - Course-listing pills in `src/lib/golf-courses-data.js` (e.g., `Peak €165 / Low €115`)
 
-**Manual edits required when pricing changes:**
-- `src/lib/guide-article-content.js` — EN blog post pricing references (narrative context, not auto-synced)
-- `src/lib/guide-article-content-localized.js` — all 6 language versions (narrative context, not auto-synced)
-- Any `guide-post-content.js` entries mentioning specific prices (narrative context, not auto-synced)
+**Manual edits required when pricing changes** (narrative context, not auto-synced by `.\mmg.ps1 pricing` — but validated against canonical by `npm run check:pricing-narrative`):
+- `src/lib/guide-article-content.js` — EN blog post pricing references
+- `src/lib/guide-article-content-localized.js` — all 6 language versions
+- Any `guide-post-content.js` entries mentioning specific prices
+- `scripts/generate-lead-magnet-pdfs.py` — downloadable PDF prices, validated by `npm run check:lead-magnet-prices`; after fixing figures, regenerate with `npm run generate:lead-magnet-pdfs`
 
-`src/lib/mallorca-tracker-courses.js` is placeholder prototype data — do not update from pricing data. Writing guardrails: `MMG_BRAND_VOICE_GUIDELINES.md` (NOT the superseded `MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`).
+`src/lib/mallorca-tracker-courses.js` holds live course data for the strokes-gained tool, not placeholder content — its scorecard facts (par/tees) are refreshed by `.\mmg.ps1 scorecards` and checked against the scorecard master by `npm run check:course-data` (`check-tracker-course-pack.js`, `check-strokes-gained-export.js`). Writing guardrails: `MMG_BRAND_VOICE_GUIDELINES.md` (NOT the superseded `MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`).
 
 ## Sources of Truth
 
@@ -148,7 +149,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 - **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
 - **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/`
 - **Reference:** `Reference/` (scorecard PDFs, pricing research)
-- **Knowledge skills:** `Skills/MMG_SKILL_*.md` (13 skills — blog, seo, social, carousel, chinese, chinese-backlog, pipeline, design, nextjs, business-ops, partnerships, repurpose, email-management). Synced to Cowork by `SKILLS_SYNC.ps1`. Separate from the repo code-workflow skills in `.claude/skills/`.
+- **Knowledge skills:** `Skills/MMG_SKILL_*.md` (17 skills - autonomo-filing, blog-writing, chinese-backlog, chinese-content, client-docs, content-pipeline, email-management, frontend-design-mmg, hermes-ops, mmg-business-operations, mmg-partnerships, mr-mallorca-golf-carousel, nextjs-mrmallorcagolf, repurpose, seo-content, site-operations-mmg, social-media-mmg). Synced to Cowork by `SKILLS_SYNC.ps1`. Separate from the repo code-workflow skills in `.claude/skills/`.
 - **Tasks:** no settled canonical task system at the moment — see Task Management below.
 
 **Repo (code & development only):** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md`, `COURSE_BLOG_PIPELINE.md`, `MMG_BRAND_VOICE_GUIDELINES.md` (in Drive/Systems & Planning), `SKILLS_SYNC.ps1` (Drive → Cowork knowledge-skill sync).
