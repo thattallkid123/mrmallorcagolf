@@ -105,7 +105,7 @@ Steps in order — do not skip, do not report done early:
 
 **Code/website work:** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md` (content structure), `COURSE_BLOG_PIPELINE.md` (course reviews), `MMG_BRAND_VOICE_GUIDELINES.md` (writing voice, in Drive/Systems & Planning).
 
-**Current priorities/status:** Google Tasks (canonical — synced to control panel).
+**Current priorities/status:** use the current conversation, handover, and live Drive masters. Do not assume Google Tasks is canonical unless Andy explicitly says it is.
 
 **Infrastructure & validation:** `docs/LOCALE_PARITY_CHECKLIST.md` (6-language structure), `docs/CONTENT_STRUCTURE.md` (which file controls what — critical), `docs/CODEBASE_IMPROVEMENTS.md` (infrastructure, validation, path aliases).
 
@@ -141,7 +141,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 - **Master control:** `MMG_MASTER_CONTROL_CENTER.md` — start here for business questions
 - **Business Brief:** `MMG_BUSINESS_BRIEF.md` (root) — AI coaching context, business story, status
 - **Course encyclopaedia:** `MMG_ENCYCLOPAEDIA_DATA_MASTER.md` (root) — all 24 courses, facts, pricing, access rules
-- **Financial:** `Business Operations & Financial/MMG_TAX_CALCULATOR_2026.xlsx` + `MMG_Business_Model.pdf`
+- **Financial:** `Business Operations & Financial/MMG_Income_and_Expenses_2026.xlsx` + `Business Operations & Financial/MMG_Extra_Coaching_2026.xlsx`
 - **Systems & planning:** `Systems & Planning/`
 - **Course contacts & courtesy:** Courtesy master Google Sheet (Golf Courses tab — 24 courses, contacts, booking, courtesy). Affiliates and China Operators in `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx`.
 - **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx`
@@ -149,7 +149,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 - **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/`
 - **Reference:** `Reference/` (scorecard PDFs, pricing research)
 - **Knowledge skills:** `Skills/MMG_SKILL_*.md` (13 skills — blog, seo, social, carousel, chinese, chinese-backlog, pipeline, design, nextjs, business-ops, partnerships, repurpose, email-management). Synced to Cowork by `SKILLS_SYNC.ps1`. Separate from the repo code-workflow skills in `.claude/skills/`.
-- **Tasks:** Google Tasks (synced to control panel) — see Task Management below.
+- **Tasks:** no settled canonical task system at the moment — see Task Management below.
 
 **Repo (code & development only):** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md`, `COURSE_BLOG_PIPELINE.md`, `MMG_BRAND_VOICE_GUIDELINES.md` (in Drive/Systems & Planning), `SKILLS_SYNC.ps1` (Drive → Cowork knowledge-skill sync).
 
@@ -157,13 +157,7 @@ Never reference private contact details in public content.
 
 ## Task Management
 
-> **⚠️ Status (2026-07-13): the Google Tasks webhook is currently non-functional** — a live test returned `tasks.tasks.insert: Quota Exceeded`. Plumbing works but no task is created. Ruled out Hermes (nothing in its scripts/crons calls it); the fault is Apps Script-side (Tasks API quota in its Google Cloud project) and needs fixing at script.google.com. Andy is moving away from Google Tasks, so **do not POST to this webhook or treat it as the source of truth until confirmed working.**
-
-**Where tasks go:** Google Tasks. **Webhook for automation scripts:**
-```
-POST https://script.google.com/macros/s/AKfycbw0RzUzzrXzn3inKcggu0deF05wbL2xGlR1r-tiMTR00nwLb03Lrx6lDWg8LGqbhUt7/exec
-```
-JSON: `{ "title": "...", "description": "... (optional)", "dueDate": "YYYY-MM-DD (optional)" }`. This is independent of Claude tokens, syncs to the control panel, and is the single source of truth for active work. Full integration details: `C:\Users\andyg\.claude\projects\C--Users-andyg-Downloads\memory\mmg-google-tasks-webhook.md`.
+> **Status (2026-07-16): do not treat Google Tasks as the live MMG source of truth.** The old webhook path is not reliable and Andy is moving away from that setup. Use the current task, handover file, and live Drive masters instead.
 
 ## Branch Rule
 
