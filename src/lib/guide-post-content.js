@@ -165,7 +165,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Common Questions' },
         {
           type: 'paragraph',
-          text: "Can single players book? Yes. Solo bookings are accepted, though during peak season you are likely to be paired with others on the day. What surprises most first-timers? The lighthouse is visible from a large number of holes. Visitors do not expect that view to carry through the round the way it does. It becomes a recurring landmark rather than a one-hole moment.",
+          text: "Can single players book? Yes. Solo bookings are accepted, though during peak season you are likely to be paired with others on the day. Does the handicap requirement actually mean what it says? Yes. The club enforces it at check-in with a valid WHS certificate.",
         },
         { type: 'heading', text: 'Verdict' },
         {
