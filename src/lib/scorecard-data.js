@@ -4,6 +4,7 @@
 // - Legacy rebuild inputs still available: SCORECARD_MASTER.md plus trusted PDF/manual tee sources.
 
 const VERIFIED_PDF_MANUAL = "verified_pdf_manual"
+const VERIFIED_PDF = "verified_pdf"
 const VERIFIED_PDF_TEXT = "verified_pdf_text"
 
 export const SCORECARD_DATA = {
@@ -2591,117 +2592,117 @@ export const SCORECARD_DATA = {
         4
       ]
     ],
-    "teeVerification": "verified_pdf_manual",
+    "teeVerification": "verified_pdf",
     "teeNotes": [
-      "Values manually transcribed from public course scorecard or official handicap source images.",
-      "Manual transcription from the published scorecard image for public tee labels, plus the official Bendinat handicap calculator image for masculine hole lengths, course rating, and slope values."
+      "Updated 2026-07-18 from the official Real Golf de Bendinat scorecard PDF (Reference/Scorecards/Scorecard PDFs/Bendinat.pdf): Caballeros (yellow/men) 5,471m, Senoras (red/women) 4,848m, par 69. Per-hole par and stroke index unchanged from the prior verified source - the new PDF matches holes_data exactly.",
+      "Course rating and slope figures retained from the prior verified source; the printed card shows a single slope (129), matching the previously recorded women's tee slope."
     ],
     "tees": [
       {
         "name": "yellow",
         "label": "Yellow",
-        "totalLengthMeters": 5342,
-        "totalLengthYards": 5842,
+        "totalLengthMeters": 5471,
+        "totalLengthYards": 5983,
         "courseRating": 69.5,
         "slope": 141,
-        "outLengthMeters": 2579,
-        "outLengthYards": 2820,
-        "inLengthMeters": 2763,
-        "inLengthYards": 3022,
+        "outLengthMeters": 2625,
+        "outLengthYards": 2871,
+        "inLengthMeters": 2845,
+        "inLengthYards": 3112,
         "holeLengthsMeters": [
           344,
-          152,
-          334,
+          158,
+          330,
           163,
           396,
-          366,
-          174,
+          380,
+          180,
           340,
-          310,
+          334,
           349,
-          291,
+          329,
           135,
           294,
-          444,
-          334,
-          320,
-          152,
-          444
+          452,
+          345,
+          328,
+          159,
+          454
         ],
         "holeLengthsYards": [
           376,
-          166,
-          365,
+          173,
+          361,
           178,
           433,
-          400,
-          190,
+          416,
+          197,
           372,
-          339,
+          365,
           382,
-          318,
+          360,
           148,
           322,
-          486,
-          365,
-          350,
-          166,
-          486
+          494,
+          377,
+          359,
+          174,
+          496
         ],
-        "source": "pdf_manual"
+        "source": "pdf"
       },
       {
         "name": "red",
         "label": "Red",
-        "totalLengthMeters": 4470,
-        "totalLengthYards": 4888,
+        "totalLengthMeters": 4848,
+        "totalLengthYards": 5302,
         "courseRating": 64.6,
         "slope": 129,
-        "outLengthMeters": 2151,
-        "outLengthYards": 2352,
-        "inLengthMeters": 2319,
-        "inLengthYards": 2536,
+        "outLengthMeters": 2274,
+        "outLengthYards": 2487,
+        "inLengthMeters": 2574,
+        "inLengthYards": 2815,
         "holeLengthsMeters": [
-          253,
-          107,
-          288,
+          314,
+          147,
+          283,
           130,
           339,
           354,
-          129,
+          136,
           287,
-          264,
-          267,
-          270,
-          101,
+          284,
+          320,
+          294,
+          122,
           238,
-          354,
-          251,
+          435,
+          327,
           289,
           119,
           430
         ],
         "holeLengthsYards": [
-          277,
-          117,
-          315,
+          343,
+          161,
+          309,
           142,
           371,
           387,
-          141,
+          149,
           314,
-          289,
-          292,
-          295,
-          110,
+          311,
+          350,
+          322,
+          133,
           260,
-          387,
-          274,
+          476,
+          358,
           316,
           130,
           470
         ],
-        "source": "pdf_manual"
+        "source": "pdf"
       }
     ]
   },
@@ -6384,6 +6385,7 @@ export const SCORECARD_DATA = {
 
 export const SCORECARD_TEE_VERIFICATION = {
   VERIFIED_PDF_MANUAL,
+  VERIFIED_PDF,
   VERIFIED_PDF_TEXT,
 }
 

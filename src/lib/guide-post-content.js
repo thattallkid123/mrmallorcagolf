@@ -846,7 +846,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: '2026 Green Fees' },
         {
           type: 'paragraph',
-          text: 'Full in-season pricing is around €110. Check current rates directly with Son Termes before booking as pricing varies seasonally. There is a multi-round deal worth knowing about. More details on that coming soon. The course is approximately 20 minutes from central Palma, up in the Na Burguesa mountains.',
+          text: 'Full in-season pricing is around €100. Check current rates directly with Son Termes before booking as pricing varies seasonally. There is a multi-round deal worth knowing about. More details on that coming soon. The course is approximately 20 minutes from central Palma, up in the Na Burguesa mountains.',
         },
         {
           type: 'image',
@@ -1075,7 +1075,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)",
         description:
-          'Son Antem West: green fees from €90, par 72, 6,293m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
+          'Son Antem West: green fees from €109, par 72, 6,293m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
       },
       meta: {
@@ -1219,7 +1219,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€90-135', 'Green fee'],
+            ['€109-145', 'Green fee'],
             ['7/10', 'My rating'],
             ['Par 72', '6,293m'],
             ['Llucmajor', '15-20 min from Palma'],

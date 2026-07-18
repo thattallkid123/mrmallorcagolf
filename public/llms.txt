@@ -2,7 +2,7 @@
 
 > Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Course guidance, itinerary logic, and premium Play With A Pro add-ons for visiting golfers.
 
-Last updated: 2026-06-25
+Last updated: 2026-07-18
 Canonical domain: https://www.mrmallorcagolf.com
 
 ## Core Pages
@@ -16,6 +16,29 @@ Canonical domain: https://www.mrmallorcagolf.com
 - [Tools](https://www.mrmallorcagolf.com/tools): Free planning tools — course selector, golf day builder, cost calculator, hotel recommender.
 - [On-Course Coaching](https://www.mrmallorcagolf.com/guides/on-course-coaching-mallorca): Guide to on-course coaching in Mallorca with a PGA professional.
 - [Contact](https://www.mrmallorcagolf.com/contact): Enquiry page for dates, itinerary, and booking discussions.
+
+## Guides
+
+Course reviews written by Andy Griffiths after playing each course. Each includes green fees, conditions, an honest limitation, and who the course suits.
+
+- [Son Gual Review](https://www.mrmallorcagolf.com/guides/son-gual-review): Andy's most-played course in Mallorca. Green fees €115–€165, handicap certificate required. A hard championship test, not a relaxed holiday round.
+- [Son Muntaner Review](https://www.mrmallorcagolf.com/guides/son-muntaner-review): Named Best Golf Course in Spain at the 2025 World Golf Awards. Green fees €110–€260 with buggy included, 5 minutes from central Palma.
+- [Alcanada Review](https://www.mrmallorcagolf.com/guides/alcanada-review): The most scenic round on the island, set around the Alcanada lighthouse in the north. The course Andy takes people to for a memorable day.
+- [T Golf Calvià Review](https://www.mrmallorcagolf.com/guides/t-golf-calvia-review): One of the best-conditioned courses in Mallorca (9/10). Up to €210 peak, twilight from €150. 15 lakes and 6,500m from the back tees.
+- [Golf de Andratx Review](https://www.mrmallorcagolf.com/guides/golf-andratx-review): Par 72 mountain course in the southwest, around €125. Home to the longest par 5 in Spain. Rewards patience over length.
+- [Santa Ponsa 1 Review](https://www.mrmallorcagolf.com/guides/santa-ponsa-1-review): One of Europe's longest courses with DP World Tour history. A confidence-builder for golfers who enjoy hitting driver.
+- [Son Termes Review](https://www.mrmallorcagolf.com/guides/son-termes-review): A mountain-view course with honest notes on green fees, conditioning, and who it suits.
+- [Son Antem West Review](https://www.mrmallorcagolf.com/guides/son-antem-west-review): Resort course 15–20 minutes from Palma. Par 72, 6,293m, green fees from €109. Good conditioning and a relaxed, playable layout.
+
+Planning and destination guides:
+
+- [Best Golf Courses in Mallorca](https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca): Andy's ranking of the best courses on the island, with who each one suits.
+- [How Much Does Golf Cost in Mallorca](https://www.mrmallorcagolf.com/guides/golf-cost-mallorca): A round costs €55–€250, with most courses €90–€150. Cheapest is Pollença (€55), priciest Son Muntaner (€260).
+- [Golf Club Hire in Mallorca](https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca): Where and how to hire clubs in Mallorca, what it costs, and what to expect from rental sets.
+- [Best Time to Play Golf in Mallorca](https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca): Which months play best on climate, course condition, and crowds. Winter golf is a core strength here.
+- [Golf Trip Planning in Mallorca](https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca): How to structure a Mallorca golf trip — course mix, regions, timing, and logistics.
+- [Is Mallorca Good for Golf](https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf): Yes. 24 courses, year-round playable conditions, and short drive times from Palma.
+- [Play With A Pro Explained](https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained): What a private golf day with Andy involves — one course, 18 holes, coaching woven through the round.
 
 ## Offer
 
