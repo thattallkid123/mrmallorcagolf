@@ -24,7 +24,7 @@ Low CTR on high-impression pages is the primary SEO lever. Every description is 
 ## Process
 
 1. Pull the target pages: high impressions + low CTR from Search Console (or `npm run ops:weekly` output). Always inspect URLs as `https://www.mrmallorcagolf.com/...` (www).
-2. Draft the new description; verify <155 chars (`node -e "console.log('...'.length)"`).
+2. Draft the new description; verify <155 chars and no curly-apostrophe compiler trap with `npm run check:meta-length` (scans `page-metadata.js` + guide metadata files). As of 2026-07-18 this found 32 pre-existing over-length descriptions and one compiler-trap fix already applied — it's a standalone command, not yet in `check:content`, until that backlog is worked through page by page.
 3. Update the key-pages tracking table in `docs/seo-reference.md` so the next session knows what changed and why.
 4. Ship via the `ship` skill (`check:content`; add `check:i18n-release` if localized metadata changed).
 5. Note the change date — CTR effects need ~4 weeks of Search Console data before judging.

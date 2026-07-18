@@ -35,18 +35,14 @@ Cross-check known facts against the table in `docs/course-guide-standards.md` ("
 
 ## Step 3 — Routing
 
-- Create `src/app/(en)/guides/{slug}/page.jsx` by copying an existing review (e.g. `son-termes-review/page.jsx`) and changing the slug — it appears 2× (getGuidePostContent + metadata).
+Run `node scripts/scaffold-guide.mjs --slug {slug} --name "<official course name>" --locality "<town>" --rating <1-5>` (requires step 2 done first — it reads the title from `guide-post-content.js`). This creates `src/app/(en)/guides/{slug}/page.jsx` and adds the `COURSE_REVIEW_DETAILS` entry in `src/app/(en)/guides/GuidePostView.jsx` in one command, skipping either half if it already exists.
+
 - Course reviews do NOT go in `ARTICLE_SLUGS` in `src/lib/site.js` (that's article guides only).
-- **Add the course to `COURSE_REVIEW_DETAILS`** in `src/app/(en)/guides/GuidePostView.jsx`. This object powers two things: the Review schema (structured data) and the inline funnel CTA that appears just before the booking CTA on every course review. Without this entry, neither feature activates. Fields: `name` (official course name), `ratingValue` (1–5), `addressLocality` (town).
+- `COURSE_REVIEW_DETAILS` powers two things: the Review schema (structured data) and the inline funnel CTA that appears just before the booking CTA on every course review. Without this entry, neither feature activates.
 
-## Step 4 — Discovery surfaces (all four, easy to miss)
+## Step 4 — Discovery surfaces
 
-1. `src/app/sitemap.js` — add `'/guides/{slug}': 'YYYY-MM-DD'` (today) to `LAST_MODIFIED_BY_PATH`
-2. `scripts/indexnow-ping.mjs` — add the full URL to `URLS`
-3. `src/app/api/cron/indexnow/route.js` — add the same URL
-4. `src/app/feed.xml/route.js` — add `'{slug}': 'YYYY-MM-DD'` to `GUIDE_DATES`
-
-Always use `https://www.mrmallorcagolf.com/...` (www — never non-www).
+Run `node scripts/sync-discovery.mjs --add {slug}` — adds the slug to all four surfaces in one command (`sitemap.js`, `feed.xml/route.js`, `indexnow-ping.mjs`, `api/cron/indexnow/route.js`). `npm run check:discovery` (part of `check:content`) fails the build if the four ever disagree with each other or with the live guide content, so a missed surface can't ship silently.
 
 ## Step 5 — Verify OG before deploying
 

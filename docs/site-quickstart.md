@@ -2,7 +2,7 @@
 
 Start here, then use the real workflow:
 
-- [translation-workflow.md](c:/Users/andyg/Desktop/cursor/mrmallorca-audit/docs/translation-workflow.md)
+- [translation-workflow.md](translation-workflow.md)
 
 That file is the only source of truth for multilingual release readiness.
 

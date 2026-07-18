@@ -1,22 +1,36 @@
-# docs/ — Synced reference files
+# docs/ — Repo reference index
 
-These files are copies of the active documents in:
-`C:\Users\andyg\Documents\Mr Mallorca Golf\Active\`
+Live, code-adjacent reference docs for `mrmallorcagolf-real`. These are mastered in this repo (git), not synced copies of anything in Google Drive or `Documents/`. Business/brand/financial source-of-truth docs live in Google Drive — see `WHERE_THINGS_LIVE.md` at the workspace root.
 
-That folder is the **source of truth** (Google Drive synced, available everywhere).
-This `docs/` folder exists so Claude can read them during coding sessions without needing the Documents folder connected.
+## Hygiene rule
 
-## Sync convention
-
-When you update a file in `Documents/Active/`, tell Claude: **"sync docs"**
-Claude will copy the changed file(s) into this folder.
-
-When Claude creates a new reference file (like BEEHIIV_SETUP), it writes to both places at once.
+Anything added here should be a **live reference**, not a session log. Dated checklists, one-off handover notes, and completed-audit writeups belong in `docs/archive/` from the start. If a file in this root stops being actively useful, move it to `docs/archive/` rather than deleting it, and remove its row below.
 
 ## Files here
 
-| File | Source | Purpose |
-|------|--------|---------|
-| `MMG_BEEHIIV_SETUP.md` | Active/MMG_BEEHIIV_SETUP.md | Newsletter setup, post format, style values |
+| File | Purpose |
+|---|---|
+| `CONTENT_STRUCTURE.md` | Which file controls what content — the map to check before editing |
+| `content-architecture.md` | How content flows through the site's shared components |
+| `multilingual-content-architecture.md` | English-canonical-plus-locale-overlay pattern for site-wide (non-guide) content |
+| `TRANSLATION_BOUNDARIES.md` | What must vs. must not be translated |
+| `translation-workflow.md` | Single source of truth for multilingual release readiness |
+| `LOCALE_PARITY_CHECKLIST.md` | 7-language structure checklist |
+| `guide-content-rules.md` | Rules for guide/review `blocks`, notes, and locale parity |
+| `course-guide-standards.md` | Content standards + verified course-facts table for reviews |
+| `ROUTING_AND_CONTENT_SYSTEM.md` | App Router routing conventions |
+| `pricing-surfaces-inventory.md` | Full inventory of where prices live |
+| `pricing-change-checklist.md` | Checklist companion to the `/pricing-change` skill |
+| `seo-reference.md` | Sitemap, robots, RSS, llms.txt, structured data, hreflang, OG images, IndexNow, CTR tracking table |
+| `SEARCH_CONSOLE_INDEXING_WORKFLOW.md` | Search Console submission/indexing steps |
+| `site-ops-automation.md` | `ops:daily` / `ops:weekly` / `ops:monthly` automation reference |
+| `prototype-guide.md` | Image sourcing rules and `/images/` paths for tools/prototypes |
+| `growth-roadmap.md` | Live course-review backlog and content-priority tracking |
+| `site-quickstart.md` | One-command readiness check pointer |
+| `site-handover-guide.md` | Short handover orientation |
+| `site-rebuild-guide.md` | History/context of the multilingual rebuild |
+| `CODEBASE_IMPROVEMENTS.md` | Infrastructure, validation, and path-alias notes |
 
-Brand, voice, and pricing files (MMG_MASTER.md, MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md, MMG_COURSE_MARKET_REFERENCE_2026.md) are in Documents only — upload them to Claude when working on content.
+## Archive
+
+`docs/archive/` holds dated session notes, completed audits, and superseded checklists — historical reference only, never load-bearing. Nothing there is expected to stay current.

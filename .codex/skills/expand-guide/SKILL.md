@@ -33,11 +33,7 @@ Cover, in Andy's voice (read `MMG_BRAND_VOICE_GUIDELINES.md` first):
 
 ## 3. Refresh discovery surfaces
 
-An expanded guide should be re-crawled:
-
-1. `src/app/sitemap.js` — bump the guide's date in `LAST_MODIFIED_BY_PATH` to today
-2. `src/app/feed.xml/route.js` — bump the slug's date in `GUIDE_DATES`
-3. After deploy: `npm run indexnow` (URL is already in the list for existing guides)
+An expanded guide should be re-crawled: run `node scripts/sync-discovery.mjs --bump {slug}` — bumps today's date in `sitemap.js` and `feed.xml/route.js`, and adds the slug to the IndexNow surfaces if it was somehow missing. After deploy: `npm run indexnow`.
 
 ## 4. Ship
 

@@ -103,7 +103,7 @@ Added to `package.json`:
 ```
 
 **Update your CI/CD:**
-Consider adding `check:content-validation` to your `check:content` or `predeploy` script if you want automated checks on every build.
+Consider adding `check:content-validation` to your `check:content` or `check:ready` script if you want automated checks on every build.
 
 ---
 

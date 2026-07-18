@@ -10,7 +10,7 @@ description: The mandatory completion gate for deploying any change to mrmallorc
 ## 0. Pre-flight
 
 - `git status` — if there are stale uncommitted changes from earlier work that look complete, ask Andy whether to commit them first. Don't silently bundle unrelated changes into this commit.
-- Confirm you're on the right branch (`main` = live site; `itinerary-preview` = trip-led variant; shared factual content usually goes to both — see `BRANCHES.md`).
+- Confirm you're on `main` — the single active branch (see `BRANCHES.md`). `itinerary-preview` and other historical branches are retired/reference-only; do not split work across branches unless Andy explicitly asks.
 
 ## 1. Checks — pick by change type
 

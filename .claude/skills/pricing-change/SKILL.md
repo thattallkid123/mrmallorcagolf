@@ -29,7 +29,7 @@ Green fees: the pricing master Google Sheet / `MMG_COURSE_PRICING_MASTER_EDIT-TH
 
 ## 3. Grep-driven sweep
 
-Grep the repo for the OLD price string (digits, and rendered phrases like `Solo from`, `EUR 950 total` and its 6 locale variants — see the inventory's search-terms section). Then sweep in this order:
+Run `node scripts/price-sweep.mjs --old <old> --new <new> --label "<what changed>"` — greps the OLD price (as a standalone number, avoiding false hits on longer numbers) across every surface group in the inventory below, prints the rendered locale phrase variants to eyeball by hand, confirms the NEW price's hit count, and lists the external/manual surfaces to report. It does not understand context (a match may be a stroke index or a year) — read each hit before editing, and it doesn't replace the sweep in this order:
 
 1. **Core offers:** `offers-content.js`, `play-with-a-pro-content.js`, `plan-your-trip-content.js`, `homepage-content.js` (all 7 locales live in each file), `page-metadata.js` (meta descriptions can carry prices)
 2. **Tools/prototypes:** `prototypes/golf-cost-calculator/`, `course-selector-simple/`, `hotel-recommender/`, `golf-day-builder/`, `prototypes/index.html` — plus `mmg-tools/` and `standalone-apps/mallorca-hub/` if that repo is available (if not mounted/available, list them as pending in the report)
