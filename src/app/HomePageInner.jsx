@@ -78,6 +78,7 @@ export default function HomePageInner({ locale = 'en' }) {
   const faqSchema = buildHomeFaqSchema(home, locale)
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
   const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
+  const bestCoursesGuideHref = locale === 'en' ? '/guides/best-golf-courses-mallorca' : `/${locale}/guides/best-golf-courses-mallorca`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
   const planYourTripHref = locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`
   const itineraryHref = home.hero.primaryHref ? localizePath(home.hero.primaryHref, locale) : playWithAProHref
@@ -152,6 +153,12 @@ export default function HomePageInner({ locale = 'en' }) {
             <p>
               {home.intro.coursesBlurb}{' '}
               <a href={golfCoursesHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>{home.intro.coursesBlurbLink}</a>.
+            </p>
+          ) : null}
+          {home.intro.guideBlurb ? (
+            <p>
+              {home.intro.guideBlurb}{' '}
+              <a href={bestCoursesGuideHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>{home.intro.guideBlurbLink}</a>.
             </p>
           ) : null}
           {home.intro.services ? (

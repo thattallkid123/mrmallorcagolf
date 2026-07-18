@@ -171,7 +171,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            "Son Gual is my favourite course in Mallorca. The conditioning is superb, the design asks proper questions, and the setting is strong without needing to shout about it. If your game is in decent order and you want a serious round, start here. See how it compares on the <a href='/golf-courses'>full Mallorca golf courses page</a>.",
+            "Son Gual is my favourite course in Mallorca. The conditioning is superb, the design asks proper questions, and the setting is strong without needing to shout about it. If your game is in decent order and you want a serious round, start here. See how it compares on the <a href='/golf-courses'>full Mallorca golf courses page</a>. If Son Gual is going into a longer trip, the <a href='/plan-your-trip'>trip planning guide</a> covers tee times, logistics, and fitting other courses around it.",
         },
         {
           type: 'cta',
@@ -328,7 +328,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "Alcanada is the course I'd use if I wanted someone to understand why people come back to golf in Mallorca. The greens will test you, the drive north is worth it, and you should leave enough time for lunch afterwards. Browse all 24 courses and green fees on the <a href='/golf-courses'>Mallorca golf courses page</a>.",
+          text: "Alcanada is the course I'd use if I wanted someone to understand why people come back to golf in Mallorca. The greens will test you, the drive north is worth it, and you should leave enough time for lunch afterwards. Browse all 24 courses and green fees on the <a href='/golf-courses'>Mallorca golf courses page</a>. Planning more than one round on the trip? Start with the <a href='/plan-your-trip'>trip planning guide</a>.",
         },
         {
           type: 'cta',
@@ -342,9 +342,9 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Review 2026 | Spain's Best Course, €110–€260, Buggy Included",
+        title: "Son Muntaner Golf Review 2026 | Worth €260? Spain's Best Course, Tested",
         description:
-          "Spain's Best Golf Course 2025. Green fees €110–€260 with buggy included, 5 minutes from Palma. PGA review: conditions, who it suits, and whether the premium is worth paying.",
+          "Spain's Best Golf Course 2025. €110–€260 with buggy, 5 min from Palma. PGA verdict on conditions, who it suits, and if the premium is worth it.",
         imagePath: '/images/son-muntaner-blog/sm-4.webp',
       },
       meta: {
@@ -416,7 +416,7 @@ export const GUIDE_POST_CONTENT = {
         },
         { type: 'heading', text: 'Verdict' },
         { type: 'paragraph', text: "The Best Golf Course in Spain title is not marketing. Son Muntaner delivers a course that tests positioning, discipline, and clarity of decision-making from the first hole to the last. It rewards control over power and creates scoring opportunities through precision. Five minutes from Palma makes the logistics straightforward. The greens alone justify the trip. Compare all courses on the <a href='/golf-courses'>Mallorca golf courses page</a>." },
-        { type: 'paragraph', text: "A return visit with more fairways found would unlock a deeper read of the layout. That's the mark of a course worth coming back to." },
+        { type: 'paragraph', text: "A return visit with more fairways found would unlock a deeper read of the layout. That's the mark of a course worth coming back to. If Son Muntaner is the centrepiece of a longer trip, the <a href='/plan-your-trip'>trip planning guide</a> covers timing and logistics." },
         { type: 'cta', text: 'Playing Son Muntaner? I can help the premium fee feel justified with the right plan off the tee and into the greens.', linkLabel: 'Book a Play With A Pro day in Mallorca →', href: '/play-with-a-pro' },
       ],
     },
@@ -533,7 +533,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "If you're driving the ball well and want to enjoy it, play Santa Ponsa 1. If you're choosing between Son Gual and Alcanada for a serious day and want something more open, with proper European Tour history behind it, this is the one. The par-3s will keep you honest. The rest of the round tends to give you something back.",
+          text: "If you're driving the ball well and want to enjoy it, play Santa Ponsa 1. If you're choosing between Son Gual and Alcanada for a serious day and want something more open, with proper European Tour history behind it, this is the one. The par-3s will keep you honest. The rest of the round tends to give you something back. If you're mapping out more than one round, the <a href='/plan-your-trip'>trip planning guide</a> covers how to sequence courses and tee times.",
         },
         {
           type: 'cta',
@@ -704,7 +704,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Golf Andratx is a 7.5 out of 10. The views from the higher holes are the best I have seen in the southwest of the island. The layout is a proper test, the Green Monster is the longest par 5 in Spain and plays every metre of it, and hole 12 over Camp del Mar is one of the best holes I have played in Mallorca. The mandatory buggies before 2pm and a busy morning made it feel more managed than relaxed, but that is the reality of a course in this kind of demand. Worth playing, and worth going back to with a course planner in hand.',
+          text: 'Golf Andratx is a 7.5 out of 10. The views from the higher holes are the best I have seen in the southwest of the island. The layout is a proper test, the Green Monster is the longest par 5 in Spain and plays every metre of it, and hole 12 over Camp del Mar is one of the best holes I have played in Mallorca. The mandatory buggies before 2pm and a busy morning made it feel more managed than relaxed, but that is the reality of a course in this kind of demand. Worth playing, and worth going back to with a course planner in hand. For help sequencing it with other courses, see the <a href="/plan-your-trip">trip planning guide</a>.',
         },
         {
           type: 'cta',
@@ -870,7 +870,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Son Termes delivers more character than most courses at this price level. The views from the back nine are the best available anywhere this close to Palma. The layout keeps you thinking throughout, and a second visit would unlock a better score. For a visiting golfer who wants something different from the premium courses, or a resident looking for a course with genuine personality at a sensible price, it earns its place on the list.',
+          text: 'Son Termes delivers more character than most courses at this price level. The views from the back nine are the best available anywhere this close to Palma. The layout keeps you thinking throughout, and a second visit would unlock a better score. For a visiting golfer who wants something different from the premium courses, or a resident looking for a course with genuine personality at a sensible price, it earns its place on the list. If you\'re still working out the wider itinerary, the <a href="/plan-your-trip">trip planning guide</a> covers logistics and timing.',
         },
         {
           type: 'cta',
@@ -1059,7 +1059,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'It suits players who want a serious round in good condition. I would not put a high-handicapper here as their first course on a holiday trip, but for anyone on a dedicated golf visit it belongs on the itinerary. The twilight rate and the midweek offers make it good value at the right time.',
+          text: 'It suits players who want a serious round in good condition. I would not put a high-handicapper here as their first course on a holiday trip, but for anyone on a dedicated golf visit it belongs on the itinerary. The twilight rate and the midweek offers make it good value at the right time. Fitting it into a longer trip? The <a href="/plan-your-trip">trip planning guide</a> covers sequencing and timing.',
         },
         {
           type: 'cta',
@@ -1253,7 +1253,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: '7/10. Son Antem West is a well-run resort course with good conditioning, reliable service, and a layout that suits a wide range of players. The 16th is the best hole, the tree-lined sections are the most engaging, and the wildlife and open countryside make the setting better than the course alone. It suits holiday golfers, mixed groups, and anyone who wants an enjoyable and accessible round close to Palma. It is not the right choice if you are specifically looking for a course that will test you from start to finish. See how it fits alongside the others on the <a href="/golf-courses">full Mallorca golf courses page</a>.',
+          text: '7/10. Son Antem West is a well-run resort course with good conditioning, reliable service, and a layout that suits a wide range of players. The 16th is the best hole, the tree-lined sections are the most engaging, and the wildlife and open countryside make the setting better than the course alone. It suits holiday golfers, mixed groups, and anyone who wants an enjoyable and accessible round close to Palma. It is not the right choice if you are specifically looking for a course that will test you from start to finish. See how it fits alongside the others on the <a href="/golf-courses">full Mallorca golf courses page</a>. If you\'re planning several rounds around it, the <a href="/plan-your-trip">trip planning guide</a> covers timing and logistics.',
         },
         {
           type: 'cta',

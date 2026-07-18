@@ -7,7 +7,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'Mallorca Golf Green Fees 2026 | All 24 Courses, €55–€250',
       description:
-        'Every Mallorca course with 2026 green fees: €55 at Pollensa, €165 at Son Gual, €250 at Son Muntaner. Club hire from €30, buggy from €20, and where to play for under €80.',
+        'A round in Mallorca costs €55–€250, most €90–€150. Cheapest Pollença (€55), priciest Son Muntaner (€250). Club hire from €30, buggy €20.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€250, Club Hire & What to Budget',
@@ -410,7 +410,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: "Best Golf Courses in Mallorca 2026 | Ranked & Reviewed by a PGA Professional",
       description:
-        'All 24 Mallorca golf courses ranked by a PGA pro who plays them. Green fees from €55–€250, difficulty ratings, and an honest verdict on who each course suits. Updated 2026.',
+        'All 24 Mallorca (Majorca) golf courses ranked by a PGA pro who plays them. Green fees from €55–€250, difficulty ratings, and an honest verdict on who each course suits. Updated 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
       imageAlt: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",

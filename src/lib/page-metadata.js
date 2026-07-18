@@ -34,9 +34,9 @@ export function getSocialImage(locale = 'en') {
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf | Courses, Coaching & Golf Days',
+    title: 'Mallorca Golf | 24 Courses, Reviewed by a Local PGA Pro',
     description:
-      'Compare Mallorca golf courses, plan a golf day with Andy, and get honest local advice before you commit.',
+      '24 Mallorca golf courses reviewed by a PGA Advanced Professional who lives on the island. Green fees, honest verdicts, and help planning your trip.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro',
@@ -74,7 +74,7 @@ const GOLF_COURSES_METADATA = {
   en: {
     title: 'Mallorca Golf Courses | Reviews, Green Fees & Which Course to Choose',
     description:
-      'Compare every Mallorca golf course in one place. See reviews, green fees, regions, difficulty, and which course fits your trip best.',
+      'All 24 Mallorca golf courses in one place: green fees €55-€250, regions, difficulty, and which one fits your trip, from a PGA pro who plays them all.',
   },
   de: {
     title: 'Golfplätze Mallorca 2026 | Alle 24 Plätze, Green Fees & Bewertungen',
@@ -323,7 +323,7 @@ const PLAN_YOUR_TRIP_METADATA = {
   nl: {
     title: 'Plan uw golfreis naar Mallorca',
     description:
-      'Gebruik de gratis banenzoeker als startpunt, of laat Andy uw golfreis naar Mallorca goed plannen: banen, basis, route, starttijden, buggy’s, clubhuur en restaurants.',
+      "Gebruik de gratis banenzoeker als startpunt, of laat Andy uw golfreis naar Mallorca goed plannen: banen, basis, route, starttijden, buggy’s, clubhuur en restaurants.",
   },
   sv: {
     title: 'Planera din golfresa till Mallorca',

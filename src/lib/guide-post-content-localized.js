@@ -160,7 +160,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Veredicto"
         },
         {
-          "text": "Son Gual es mi campo favorito en Mallorca. El mantenimiento es fuerte, el diseno esta bien pensado y el campo obliga a tomar buenas decisiones desde el primer tee. No lo venderia como una ronda facil de vacaciones. Si quiere buenas condiciones, greens serios y un campo que le examine de verdad, deberia jugarlo."
+          "text": "Son Gual es mi campo favorito en Mallorca. El mantenimiento es fuerte, el diseno esta bien pensado y el campo obliga a tomar buenas decisiones desde el primer tee. No lo venderia como una ronda facil de vacaciones. Si quiere buenas condiciones, greens serios y un campo que le examine de verdad, deberia jugarlo. Si Son Gual forma parte de un viaje mas largo, la <a href=\"/plan-your-trip\">guia de planificacion del viaje</a> cubre horarios de salida, logistica y como encajar otros campos."
         },
         {
           "text": "Preguntas frecuentes"
@@ -331,7 +331,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Fazit"
         },
         {
-          "text": "Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich wuerde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen."
+          "text": "Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich wuerde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen. Wenn Son Gual Teil einer laengeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Tee Times, Logistik und die Kombination mit anderen Plaetzen ab."
         },
         {
           "text": "Haeufige Fragen"
@@ -502,7 +502,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Verdict"
         },
         {
-          "text": "Son Gual est mon parcours prefere a Majorque. L'entretien est fort, le dessin est intelligent, et le parcours oblige a prendre de bonnes decisions des le premier tee. Je ne le presenterais pas comme une partie de vacances facile. Si vous voulez de bonnes conditions, des greens serieux et un parcours qui vous teste vraiment, jouez-le."
+          "text": "Son Gual est mon parcours prefere a Majorque. L'entretien est fort, le dessin est intelligent, et le parcours oblige a prendre de bonnes decisions des le premier tee. Je ne le presenterais pas comme une partie de vacances facile. Si vous voulez de bonnes conditions, des greens serieux et un parcours qui vous teste vraiment, jouez-le. Si Son Gual s'integre dans un voyage plus long, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre les heures de depart, la logistique et comment combiner d'autres parcours."
         },
         {
           "text": "Questions frequentes"
@@ -673,7 +673,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Oordeel"
         },
         {
-          "text": "Son Gual is mijn favoriete baan op Mallorca. De conditie is sterk, het ontwerp is slim, en de baan vraagt vanaf de eerste tee om goede beslissingen. Ik zou hem niet verkopen als een makkelijke vakantieronde. Wie goede omstandigheden, serieuze greens en een baan wil die echt test, moet hem spelen."
+          "text": "Son Gual is mijn favoriete baan op Mallorca. De conditie is sterk, het ontwerp is slim, en de baan vraagt vanaf de eerste tee om goede beslissingen. Ik zou hem niet verkopen als een makkelijke vakantieronde. Wie goede omstandigheden, serieuze greens en een baan wil die echt test, moet hem spelen. Als Son Gual onderdeel is van een langere reis, behandelt de <a href=\"/plan-your-trip\">reisplanningsgids</a> starttijden, logistiek en het combineren van andere banen."
         },
         {
           "text": "Veelgestelde vragen"
@@ -844,7 +844,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Omdome"
         },
         {
-          "text": "Son Gual ar min favoritbana pa Mallorca. Skicket ar starkt, designen ar smart, och banan kraver bra beslut fran forsta tee. Jag skulle inte salja den som en enkel semesterrunda. Vill du ha bra forhallanden, seriösa greener och en bana som verkligen testar dig, ska du spela den."
+          "text": "Son Gual ar min favoritbana pa Mallorca. Skicket ar starkt, designen ar smart, och banan kraver bra beslut fran forsta tee. Jag skulle inte salja den som en enkel semesterrunda. Vill du ha bra forhallanden, seriösa greener och en bana som verkligen testar dig, ska du spela den. Om Son Gual ar en del av en langre resa tacker <a href=\"/plan-your-trip\">reseplaneringsguiden</a> starttider, logistik och hur du kombinerar andra banor."
         },
         {
           "text": "Vanliga fragor"
@@ -1015,7 +1015,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "结论"
         },
         {
-          "text": "Son Gual 是我在马略卡最喜欢的球场。养护很好，设计聪明，从第一洞开始就要求你做清楚的决定。我不会把它说成轻松的度假球。如果你想要好球况、严肃的果岭，以及一座真正考验你的球场，它值得打。"
+          "text": "Son Gual 是我在马略卡最喜欢的球场。养护很好，设计聪明，从第一洞开始就要求你做清楚的决定。我不会把它说成轻松的度假球。如果你想要好球况、严肃的果岭，以及一座真正考验你的球场，它值得打。如果 Son Gual 是更长行程的一部分，<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了开球时间、后勤安排，以及如何搭配其他球场。"
         },
         {
           "text": "常见问题"
@@ -1188,7 +1188,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Veredicto"
         },
         {
-          "text": "Alcanada es el campo que elegiría para hacer que alguien se enamore del golf en Mallorca. Los greens te van a examinar. El viaje al norte merece la pena. Y la comida después de la vuelta no es negociable."
+          "text": "Alcanada es el campo que elegiría para hacer que alguien se enamore del golf en Mallorca. Los greens te van a examinar. El viaje al norte merece la pena. Y la comida después de la vuelta no es negociable. ¿Planeando más de una vuelta en el viaje? Empieza por la <a href=\"/plan-your-trip\">guía de planificación del viaje</a>."
         },
         {
           "text": "Alcanada es uno de mis dos campos base para los días play-with-a-pro. ¿Quieres jugarlo de verdad como se merece?",
@@ -1353,7 +1353,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Fazit"
         },
         {
-          "text": "Alcanada ist der Platz, den ich jemandem zeigen würde, wenn ich möchte, dass er sich in Mallorca-Golf verliebt. Die Grüns prüfen Sie. Die Fahrt nach Norden lohnt sich. Und das Mittagessen danach ist nicht verhandelbar."
+          "text": "Alcanada ist der Platz, den ich jemandem zeigen würde, wenn ich möchte, dass er sich in Mallorca-Golf verliebt. Die Grüns prüfen Sie. Die Fahrt nach Norden lohnt sich. Und das Mittagessen danach ist nicht verhandelbar. Planen Sie mehr als eine Runde für die Reise? Starten Sie mit dem <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a>."
         },
         {
           "text": "Alcanada ist einer meiner beiden Ankerplätze für meine Golf-Tage mit Pro. Möchten Sie den Platz richtig erleben?",
@@ -1516,7 +1516,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {},
         {
-          "text": "Alcanada est le parcours que je choisirais pour faire tomber quelqu'un amoureux du golf à Majorque. Les greens vont vous tester. Le trajet vers le nord en vaut la peine. Et le déjeuner après la partie n'est pas négociable."
+          "text": "Alcanada est le parcours que je choisirais pour faire tomber quelqu'un amoureux du golf à Majorque. Les greens vont vous tester. Le trajet vers le nord en vaut la peine. Et le déjeuner après la partie n'est pas négociable. Vous prévoyez plusieurs parcours pendant le voyage ? Commencez par le <a href=\"/plan-your-trip\">guide de planification du voyage</a>."
         },
         {
           "text": "Alcanada est l'un de mes deux parcours de référence pour les journées play-with-a-pro. Envie de le jouer comme il faut ?",
@@ -1681,7 +1681,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Oordeel"
         },
         {
-          "text": "Alcanada is de baan die ik iemand zou laten spelen als ik wil dat diegene verliefd wordt op golf op Mallorca. De greens testen je. De rit naar het noorden is het waard. En de lunch achteraf is niet onderhandelbaar."
+          "text": "Alcanada is de baan die ik iemand zou laten spelen als ik wil dat diegene verliefd wordt op golf op Mallorca. De greens testen je. De rit naar het noorden is het waard. En de lunch achteraf is niet onderhandelbaar. Ben je van plan meerdere rondes te spelen tijdens je reis? Begin met de <a href=\"/plan-your-trip\">reisplanningsgids</a>."
         },
         {
           "text": "Alcanada is een van mijn twee basisbanen voor play-with-a-pro-dagen. Wil je hem echt goed spelen?",
@@ -1846,7 +1846,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Omdöme"
         },
         {
-          "text": "Alcanada är banan jag skulle välja om jag ville få någon att bli kär i golf på Mallorca. Greenerna kommer att testa dig. Resan norrut är värd det. Och lunchen efteråt är inte förhandlingsbar."
+          "text": "Alcanada är banan jag skulle välja om jag ville få någon att bli kär i golf på Mallorca. Greenerna kommer att testa dig. Resan norrut är värd det. Och lunchen efteråt är inte förhandlingsbar. Planerar du fler än en runda under resan? Börja med <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
         },
         {
           "text": "Alcanada är en av mina två huvudbanor för play-with-a-pro-dagar. Vill du spela den på rätt sätt?",
@@ -2011,7 +2011,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "结论"
         },
         {
-          "text": "如果我想让一个人爱上马略卡的高尔夫，我会带他来Alcanada。果岭会认真考验你。往北开这段路完全值得。打完后的午餐更是这一天不可分割的一部分。"
+          "text": "如果我想让一个人爱上马略卡的高尔夫，我会带他来Alcanada。果岭会认真考验你。往北开这段路完全值得。打完后的午餐更是这一天不可分割的一部分。计划在行程中打不止一轮？从<a href=\"/plan-your-trip\">行程规划指南</a>开始。"
         },
         {
           "text": "Alcanada是我两条play-with-a-pro核心线路之一。想真正把它打明白吗？",
@@ -2151,7 +2151,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Si estás pegando bien el driver y quieres disfrutar de esa sensación, juega Santa Ponsa 1. Si estás entre Son Gual y Alcanada para un gran día de golf y buscas algo que contraste con ambos - más abierto, más amigable para la confianza y con verdadera historia de Tour europeo - este es el campo. Los pares 3 te mantendrán honesto. El resto de la vuelta te devolverá bastante."
+          "text": "Si estás pegando bien el driver y quieres disfrutar de esa sensación, juega Santa Ponsa 1. Si estás entre Son Gual y Alcanada para un gran día de golf y buscas algo que contraste con ambos - más abierto, más amigable para la confianza y con verdadera historia de Tour europeo - este es el campo. Los pares 3 te mantendrán honesto. El resto de la vuelta te devolverá bastante. ¿Está organizando más de una vuelta? La <a href=\"/plan-your-trip\">guía de planificación del viaje</a> explica cómo secuenciar campos y horarios de salida."
         },
         {
           "text": "¿Quieres jugar Santa Ponsa 1 como parte de un día de golf en Mallorca? Yo puedo organizarlo.",
@@ -2289,7 +2289,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Wenn Sie den Ball gut vom Tee schlagen und dieses Gefühl genießen wollen, spielen Sie Santa Ponsa 1. Wenn Sie zwischen Son Gual und Alcanada einen Kontrast suchen - offener, vertrauensfördernder und mit echter European-Tour-Geschichte - dann ist das hier der Platz. Die Par 3s halten Sie ehrlich. Der Rest der Runde gibt Ihnen dafür auch etwas zurück."
+          "text": "Wenn Sie den Ball gut vom Tee schlagen und dieses Gefühl genießen wollen, spielen Sie Santa Ponsa 1. Wenn Sie zwischen Son Gual und Alcanada einen Kontrast suchen - offener, vertrauensfördernder und mit echter European-Tour-Geschichte - dann ist das hier der Platz. Die Par 3s halten Sie ehrlich. Der Rest der Runde gibt Ihnen dafür auch etwas zurück. Planen Sie mehrere Runden? Der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> erklärt, wie Sie Plätze und Tee Times sinnvoll aufeinander abstimmen."
         },
         {
           "text": "Möchten Sie Santa Ponsa 1 als Teil eines Golftags auf Mallorca spielen? Ich kann das für Sie organisieren.",
@@ -2425,7 +2425,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Si vous tapez bien la balle au départ et que vous voulez profiter de cette sensation, jouez Santa Ponsa 1. Si vous hésitez entre Son Gual et Alcanada pour une grande journée de golf et que vous voulez un contraste plus ouvert, plus rassurant, avec une vraie histoire de Tour européen, c'est le bon choix. Les par 3 vous garderont honnête. Le reste du parcours vous rendra quelque chose."
+          "text": "Si vous tapez bien la balle au départ et que vous voulez profiter de cette sensation, jouez Santa Ponsa 1. Si vous hésitez entre Son Gual et Alcanada pour une grande journée de golf et que vous voulez un contraste plus ouvert, plus rassurant, avec une vraie histoire de Tour européen, c'est le bon choix. Les par 3 vous garderont honnête. Le reste du parcours vous rendra quelque chose. Vous prévoyez plusieurs parcours ? Le <a href=\"/plan-your-trip\">guide de planification du voyage</a> explique comment enchaîner les parcours et les heures de départ."
         },
         {
           "text": "Envie de jouer Santa Ponsa 1 dans le cadre d'une journée golf à Majorque ? Je peux tout organiser.",
@@ -2563,7 +2563,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Als je de bal goed drijft en je dat gevoel wilt vasthouden, speel dan Santa Ponsa 1. Als je tussen Son Gual en Alcanada twijfelt voor een serieuze golfdag en iets wilt dat daarmee contrasteert - opener, zelfvertrouwen gevender en met echte European Tour-historie - dan is dit de baan. De par 3's houden je scherp. De rest van de ronde geeft je veel terug."
+          "text": "Als je de bal goed drijft en je dat gevoel wilt vasthouden, speel dan Santa Ponsa 1. Als je tussen Son Gual en Alcanada twijfelt voor een serieuze golfdag en iets wilt dat daarmee contrasteert - opener, zelfvertrouwen gevender en met echte European Tour-historie - dan is dit de baan. De par 3's houden je scherp. De rest van de ronde geeft je veel terug. Plan je meerdere rondes? De <a href=\"/plan-your-trip\">reisplanningsgids</a> laat zien hoe je banen en starttijden goed op elkaar afstemt."
         },
         {
           "text": "Wil je Santa Ponsa 1 spelen als onderdeel van een golfdag op Mallorca? Ik kan dat voor je regelen.",
@@ -2701,7 +2701,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Om du slår drivern bra och vill bygga vidare på den känslan ska du spela Santa Ponsa 1. Om du står mellan Son Gual och Alcanada för en större golfdag och vill ha något som kontrasterar mot båda - öppnare, mer självförtroendegivande och med riktig European Tour-historia - då är det här banan. Par 3-hålen håller dig ärlig. Resten av rundan ger dig mycket tillbaka."
+          "text": "Om du slår drivern bra och vill bygga vidare på den känslan ska du spela Santa Ponsa 1. Om du står mellan Son Gual och Alcanada för en större golfdag och vill ha något som kontrasterar mot båda - öppnare, mer självförtroendegivande och med riktig European Tour-historia - då är det här banan. Par 3-hålen håller dig ärlig. Resten av rundan ger dig mycket tillbaka. Planerar du fler än en runda? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> visar hur du sekvenserar banor och starttider."
         },
         {
           "text": "Vill du spela Santa Ponsa 1 som en del av en golfdag på Mallorca? Jag kan ordna det.",
@@ -2839,7 +2839,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "如果你最近一号木状态不错，而且想把这种感觉继续放大，那就来打Santa Ponsa 1。如果你在Son Gual和Alcanada之外，还想找一场有鲜明对比的高质量高尔夫日 - 更开阔、更能建立信心、又带着真实欧巡历史 - 那就是这里。这里的三杆洞会让你保持诚实，而其他部分会给你很多回报。"
+          "text": "如果你最近一号木状态不错，而且想把这种感觉继续放大，那就来打Santa Ponsa 1。如果你在Son Gual和Alcanada之外，还想找一场有鲜明对比的高质量高尔夫日 - 更开阔、更能建立信心、又带着真实欧巡历史 - 那就是这里。这里的三杆洞会让你保持诚实，而其他部分会给你很多回报。计划打不止一轮？<a href=\"/plan-your-trip\">行程规划指南</a>介绍了如何安排球场顺序和开球时间。"
         },
         {
           "text": "想把Santa Ponsa 1安排进你在马略卡的一天高尔夫体验里吗？我可以为你安排。",
@@ -3003,7 +3003,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Son Termes ofrece más personalidad que la mayoría de campos en este rango de precio. Las vistas de los nueve de vuelta son las mejores que se pueden encontrar tan cerca de Palma. El diseño te obliga a pensar todo el tiempo y una segunda vuelta probablemente sacaría una mejor tarjeta. Para el golfista visitante que quiera algo distinto de los campos premium, o para un residente que busque un recorrido con verdadera personalidad a un precio sensato, merece su sitio en la lista."
+          "text": "Son Termes ofrece más personalidad que la mayoría de campos en este rango de precio. Las vistas de los nueve de vuelta son las mejores que se pueden encontrar tan cerca de Palma. El diseño te obliga a pensar todo el tiempo y una segunda vuelta probablemente sacaría una mejor tarjeta. Para el golfista visitante que quiera algo distinto de los campos premium, o para un residente que busque un recorrido con verdadera personalidad a un precio sensato, merece su sitio en la lista. Si todavía estás definiendo el itinerario completo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre la logística y los horarios."
         },
         {
           "text": "¿Estás pensando en jugar Son Termes o quieres que te recomendemos qué campo encaja mejor con tu juego?",
@@ -3164,7 +3164,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Son Termes bietet mehr Charakter als die meisten Plätze in dieser Preisklasse. Die Ausblicke auf den Back Nine sind die besten, die man so nah an Palma bekommen kann. Das Layout fordert durchgehend Entscheidungen, und bei einem zweiten Besuch ist ein besserer Score sehr realistisch. Für Gastspieler, die etwas anderes als die Premiumplätze suchen, oder für Residenten, die einen Platz mit echter Persönlichkeit zu einem vernünftigen Preis wollen, verdient Son Termes seinen Platz auf der Liste."
+          "text": "Son Termes bietet mehr Charakter als die meisten Plätze in dieser Preisklasse. Die Ausblicke auf den Back Nine sind die besten, die man so nah an Palma bekommen kann. Das Layout fordert durchgehend Entscheidungen, und bei einem zweiten Besuch ist ein besserer Score sehr realistisch. Für Gastspieler, die etwas anderes als die Premiumplätze suchen, oder für Residenten, die einen Platz mit echter Persönlichkeit zu einem vernünftigen Preis wollen, verdient Son Termes seinen Platz auf der Liste. Wenn Sie die restliche Reiseroute noch planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Logistik und Timing ab."
         },
         {
           "text": "Sie überlegen, Son Termes zu spielen, oder möchten eine Empfehlung, welcher Platz zu Ihrem Spiel passt?",
@@ -3324,7 +3324,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Son Termes offre plus de caractère que la plupart des parcours à ce niveau de prix. Les vues du retour sont les plus belles que l'on puisse avoir aussi près de Palma. Le tracé oblige à réfléchir du début à la fin, et une deuxième partie permettrait sans doute de signer une meilleure carte. Pour un golfeur de passage qui cherche autre chose que les parcours premium, ou pour un résident qui veut un parcours avec une vraie personnalité à un tarif raisonnable, il mérite sa place dans la sélection."
+          "text": "Son Termes offre plus de caractère que la plupart des parcours à ce niveau de prix. Les vues du retour sont les plus belles que l'on puisse avoir aussi près de Palma. Le tracé oblige à réfléchir du début à la fin, et une deuxième partie permettrait sans doute de signer une meilleure carte. Pour un golfeur de passage qui cherche autre chose que les parcours premium, ou pour un résident qui veut un parcours avec une vraie personnalité à un tarif raisonnable, il mérite sa place dans la sélection. Si vous finalisez encore l'itinéraire complet, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre la logistique et le timing."
         },
         {
           "text": "Vous pensez jouer Son Termes ou vous voulez savoir quel parcours correspond le mieux à votre jeu ?",
@@ -3486,7 +3486,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Son Termes biedt meer karakter dan de meeste banen in deze prijsklasse. De uitzichten op de back nine zijn het beste wat je zo dicht bij Palma kunt krijgen. De lay-out blijft je de hele ronde aan het denken zetten, en een tweede bezoek zou vrijwel zeker een betere score opleveren. Voor een bezoekende golfer die iets anders wil dan de premiumbanen, of voor een local die een baan met echte persoonlijkheid zoekt voor een redelijke prijs, verdient Son Termes zijn plek op de lijst."
+          "text": "Son Termes biedt meer karakter dan de meeste banen in deze prijsklasse. De uitzichten op de back nine zijn het beste wat je zo dicht bij Palma kunt krijgen. De lay-out blijft je de hele ronde aan het denken zetten, en een tweede bezoek zou vrijwel zeker een betere score opleveren. Voor een bezoekende golfer die iets anders wil dan de premiumbanen, of voor een local die een baan met echte persoonlijkheid zoekt voor een redelijke prijs, verdient Son Termes zijn plek op de lijst. Ben je de rest van je reisschema nog aan het uitwerken? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt logistiek en timing."
         },
         {
           "text": "Denk je eraan om Son Termes te spelen, of wil je advies over welke baan het best bij jouw spel past?",
@@ -3648,7 +3648,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Son Termes erbjuder mer karaktär än de flesta banor i den här prisklassen. Utsikten från back nine är den bästa du hittar så här nära Palma. Layouten får dig att tänka hela vägen runt, och ett andra besök skulle sannolikt ge ett bättre score. För en golfresenär som vill spela något annat än premiumbanorna, eller en boende som söker en bana med verklig personlighet till ett vettigt pris, förtjänar den sin plats på listan."
+          "text": "Son Termes erbjuder mer karaktär än de flesta banor i den här prisklassen. Utsikten från back nine är den bästa du hittar så här nära Palma. Layouten får dig att tänka hela vägen runt, och ett andra besök skulle sannolikt ge ett bättre score. För en golfresenär som vill spela något annat än premiumbanorna, eller en boende som söker en bana med verklig personlighet till ett vettigt pris, förtjänar den sin plats på listan. Planerar du fortfarande resten av resan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp logistik och timing."
         },
         {
           "text": "Funderar du på att spela Son Termes eller vill du ha en rekommendation om vilken bana som passar ditt spel?",
@@ -3810,7 +3810,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "在这个价位上，Son Termes 的个性强过大多数球场。后九的景观，是离帕尔马这么近的范围内最出色的。整座球场一路都在逼你思考打法，而第二次来打，大概率能把成绩再往下压。对来岛上打球、又想体验一点不同于高端名场风格的访客，或是想找一座价格合理、真正有性格球场的本地球手来说，它完全值得进入名单。"
+          "text": "在这个价位上，Son Termes 的个性强过大多数球场。后九的景观，是离帕尔马这么近的范围内最出色的。整座球场一路都在逼你思考打法，而第二次来打，大概率能把成绩再往下压。对来岛上打球、又想体验一点不同于高端名场风格的访客，或是想找一座价格合理、真正有性格球场的本地球手来说，它完全值得进入名单。还在规划整体行程？<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了后勤安排和时间安排。"
         },
         {
           "text": "想打 Son Termes，或者想知道哪座球场更适合你的球风？",
@@ -4039,7 +4039,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "El título de Mejor Campo de Golf de España no es marketing. Son Muntaner ofrece un recorrido que pone a prueba el posicionamiento, la disciplina y la claridad en la toma de decisiones desde el primer hasta el último hoyo. Premia el control sobre la potencia y crea oportunidades de scoring a través de la precisión. A cinco minutos de Palma, la logística es sencilla. Solo los greens justifican el viaje."
         },
         {
-          "text": "Una segunda visita encontrando más fairways permitiría conocer el trazado en profundidad. Esa es la señal de un campo al que merece la pena volver."
+          "text": "Una segunda visita encontrando más fairways permitiría conocer el trazado en profundidad. Esa es la señal de un campo al que merece la pena volver. Si Son Muntaner es el punto central de un viaje más largo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios y logística."
         },
         {
           "text": "¿Quieres jugar Son Muntaner con un Profesional PGA a tu lado?",
@@ -4265,7 +4265,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Der Titel Bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und Klarheit in der Entscheidungsfindung vom ersten bis zum letzten Loch fordert. Er belohnt Kontrolle mehr als Kraft und schafft Scoring-Chancen durch Präzision. Fünf Minuten von Palma machen die Anreise unkompliziert. Allein die Greens rechtfertigen den Besuch."
         },
         {
-          "text": "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte."
+          "text": "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte. Wenn Son Muntaner der Mittelpunkt einer längeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
         },
         {
           "text": "Möchten Sie Son Muntaner mit einem PGA-Professional an Ihrer Seite spielen?",
@@ -4490,7 +4490,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Le titre de Meilleur Parcours de Golf d'Espagne n'est pas du marketing. Son Muntaner propose un parcours qui teste le positionnement, la discipline et la clarté dans la prise de décision du premier au dernier trou. Il récompense le contrôle plus que la puissance et crée des opportunités de score grâce à la précision. À cinq minutes de Palma, la logistique est simple. Les greens seuls justifient le déplacement."
         },
         {
-          "text": "Une prochaine visite avec plus de fairways trouvés permettrait une lecture plus approfondie du tracé. C'est la marque d'un parcours sur lequel il vaut la peine de revenir."
+          "text": "Une prochaine visite avec plus de fairways trouvés permettrait une lecture plus approfondie du tracé. C'est la marque d'un parcours sur lequel il vaut la peine de revenir. Si Son Muntaner est le point central d'un voyage plus long, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre le timing et la logistique."
         },
         {
           "text": "Vous souhaitez jouer Son Muntaner avec un Professionnel PGA à vos côtés ?",
@@ -4714,7 +4714,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "De titel Beste Golfbaan van Spanje is geen marketing. Son Muntaner biedt een baan die positionering, discipline en helderheid in besluitvorming test van het eerste tot het laatste hole. Het beloont controle boven kracht en creëert scoringskansen door precisie. Vijf minuten van Palma maakt de logistiek eenvoudig. Alleen al de greens rechtvaardigen de trip."
         },
         {
-          "text": "Een volgend bezoek met meer gevonden fairways zou een diepere kennis van het ontwerp ontsluiten. Dat is het kenmerk van een baan die het waard is om naar terug te keren."
+          "text": "Een volgend bezoek met meer gevonden fairways zou een diepere kennis van het ontwerp ontsluiten. Dat is het kenmerk van een baan die het waard is om naar terug te keren. Als Son Muntaner het middelpunt is van een langere reis, behandelt de <a href=\"/plan-your-trip\">reisplanningsgids</a> timing en logistiek."
         },
         {
           "text": "Wil je Son Muntaner spelen met een PGA Professional naast je?",
@@ -4940,7 +4940,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Titeln Bästa Golfbana i Spanien är inte marknadsföring. Son Muntaner levererar en bana som testar positionering, disciplin och beslutsfattande klarhet från första till sista hål. Det belönar kontroll över kraft och skapar poängmöjligheter genom precision. Fem minuter från Palma gör logistiken enkel. Greenerna ensamma motiverar resan."
         },
         {
-          "text": "Ett återbesök med fler hittade fairways skulle låsa upp en djupare läsning av layouten. Det är tecknet på en bana värd att komma tillbaka till."
+          "text": "Ett återbesök med fler hittade fairways skulle låsa upp en djupare läsning av layouten. Det är tecknet på en bana värd att komma tillbaka till. Om Son Muntaner är mittpunkten i en längre resa tar <a href=\"/plan-your-trip\">reseplaneringsguiden</a> upp timing och logistik."
         },
         {
           "text": "Vill du spela Son Muntaner med en PGA Professional vid din sida?",
@@ -5167,7 +5167,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "西班牙最佳高尔夫球场的称号并非营销噱头。Son Muntaner提供了一个从第一洞到最后一洞始终考验位置选择、自律性和决策清晰度的球场。它以控制奖励胜于力量，以精准创造得分机会。距巴尔马五分钟让行程安排简便。仅凭果岭就值得专程前来。"
         },
         {
-          "text": "带着更多找到球道的经历再次造访，将解锁对球道布局更深层的理解。这正是一个值得回头再打的球场所具备的特质。"
+          "text": "带着更多找到球道的经历再次造访，将解锁对球道布局更深层的理解。这正是一个值得回头再打的球场所具备的特质。如果 Son Muntaner 是更长行程的核心，<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了时间安排和后勤事项。"
         },
         {
           "text": "希望在PGA职业教练陪同下打Son Muntaner？",
@@ -5332,7 +5332,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Es ideal para jugadores que buscan una vuelta seria en buenas condiciones. No llevaría aquí a un jugador de hándicap alto como primer campo en un viaje de vacaciones, pero para cualquiera en una visita dedicada al golf pertenece al itinerario. La tarifa twilight y las ofertas entre semana lo convierten en una buena opción en el momento adecuado."
+          "text": "Es ideal para jugadores que buscan una vuelta seria en buenas condiciones. No llevaría aquí a un jugador de hándicap alto como primer campo en un viaje de vacaciones, pero para cualquiera en una visita dedicada al golf pertenece al itinerario. La tarifa twilight y las ofertas entre semana lo convierten en una buena opción en el momento adecuado. ¿Lo vas a encajar en un viaje más largo? La <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre la secuencia y los horarios."
         },
         {
           "text": "¿Quieres jugar T Golf Calvià con un profesional PGA que conoce cada hoyo?",
@@ -5495,7 +5495,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Er eignet sich für Spieler, die eine ernsthafte Runde in guten Bedingungen suchen. Einen Hochhandicapper würde ich hier nicht als ersten Platz eines Urlaubsaufenthalts empfehlen, aber für jeden auf einem dedizierten Golftrip gehört er auf die Liste. Die Twilight-Rate und die Wochentagesangebote machen ihn zum richtigen Zeitpunkt zu einem guten Preis-Leistungs-Verhältnis."
+          "text": "Er eignet sich für Spieler, die eine ernsthafte Runde in guten Bedingungen suchen. Einen Hochhandicapper würde ich hier nicht als ersten Platz eines Urlaubsaufenthalts empfehlen, aber für jeden auf einem dedizierten Golftrip gehört er auf die Liste. Die Twilight-Rate und die Wochentagesangebote machen ihn zum richtigen Zeitpunkt zu einem guten Preis-Leistungs-Verhältnis. Passt das in eine längere Reise? Der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> deckt Reihenfolge und Timing ab."
         },
         {
           "text": "T Golf Calvià mit einem PGA-Professional spielen, der jeden Abschlag kennt?",
@@ -5656,7 +5656,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Il convient aux joueurs qui veulent une vraie partie dans de bonnes conditions. Je n'y enverrais pas un haut handicap comme premier parcours d'un séjour de vacances, mais pour quiconque est en voyage golf dédié, il mérite d'être au programme. Le tarif twilight et les offres en semaine en font un bon rapport qualité-prix au bon moment."
+          "text": "Il convient aux joueurs qui veulent une vraie partie dans de bonnes conditions. Je n'y enverrais pas un haut handicap comme premier parcours d'un séjour de vacances, mais pour quiconque est en voyage golf dédié, il mérite d'être au programme. Le tarif twilight et les offres en semaine en font un bon rapport qualité-prix au bon moment. Vous l'intégrez dans un voyage plus long ? Le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre l'enchaînement et le timing."
         },
         {
           "text": "Envie de jouer le T Golf Calvià avec un professionnel PGA qui connaît chaque trou ?",
@@ -5819,7 +5819,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Het is geschikt voor spelers die een serieuze ronde in goede conditie willen. Ik zou een hoog-handicapper hier niet naartoe sturen als eerste baan van een vakantie, maar voor iedereen op een dedicated golfbezoek hoort het op het programma. Het twilight tarief en de doordeweekse aanbiedingen maken het op het juiste moment goede waar voor het geld."
+          "text": "Het is geschikt voor spelers die een serieuze ronde in goede conditie willen. Ik zou een hoog-handicapper hier niet naartoe sturen als eerste baan van een vakantie, maar voor iedereen op een dedicated golfbezoek hoort het op het programma. Het twilight tarief en de doordeweekse aanbiedingen maken het op het juiste moment goede waar voor het geld. Past dit in een langere reis? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt de volgorde en timing."
         },
         {
           "text": "Wil je T Golf Calvià spelen met een PGA professional die elke hole kent?",
@@ -5982,7 +5982,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Det passar spelare som vill ha en seriös runda i bra skick. Jag skulle inte skicka en högt handicappare hit som första bana på en semesterresa, men för alla på ett dedikerat golfbesök hör det hemma på programmet. Twilight-priset och veckodagserbjudandena gör det till ett bra värde vid rätt tidpunkt."
+          "text": "Det passar spelare som vill ha en seriös runda i bra skick. Jag skulle inte skicka en högt handicappare hit som första bana på en semesterresa, men för alla på ett dedikerat golfbesök hör det hemma på programmet. Twilight-priset och veckodagserbjudandena gör det till ett bra värde vid rätt tidpunkt. Passar det in i en längre resa? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp ordningsföljd och timing."
         },
         {
           "text": "Vill du spela T Golf Calvià med en PGA-professional som känner varje hål?",
@@ -6145,7 +6145,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "适合希望在良好状态下打一场认真球的球手。我不会把高差点球手送到这里作为度假行程的第一站，但对于专程高尔夫之旅的任何人来说，这里都值得排进日程。黄昏场费率和工作日优惠让它在合适的时间段物超所值。"
+          "text": "适合希望在良好状态下打一场认真球的球手。我不会把高差点球手送到这里作为度假行程的第一站，但对于专程高尔夫之旅的任何人来说，这里都值得排进日程。黄昏场费率和工作日优惠让它在合适的时间段物超所值。打算把它安排进更长的行程吗？<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了顺序安排和时间安排。"
         },
         {
           "text": "想与熟悉每一个洞的PGA职业球员同打T Golf Calvià？",
@@ -6299,7 +6299,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Golf Andratx es un 7,5 sobre 10. Las vistas desde los hoyos más altos son las mejores que he visto en el suroeste de la isla. El trazado es una prueba seria, el Green Monster es el par 5 más largo de España y se juega cada metro, y el hoyo 12 sobre Camp del Mar es uno de los mejores que he jugado en Mallorca. Los buggies obligatorios antes de las 14:00 y una mañana concurrida lo hicieron sentir más organizado que relajado, pero esa es la realidad de un campo con esta demanda. Merece la pena jugarlo, y merece la pena volver con un plano del campo en mano."
+          "text": "Golf Andratx es un 7,5 sobre 10. Las vistas desde los hoyos más altos son las mejores que he visto en el suroeste de la isla. El trazado es una prueba seria, el Green Monster es el par 5 más largo de España y se juega cada metro, y el hoyo 12 sobre Camp del Mar es uno de los mejores que he jugado en Mallorca. Los buggies obligatorios antes de las 14:00 y una mañana concurrida lo hicieron sentir más organizado que relajado, pero esa es la realidad de un campo con esta demanda. Merece la pena jugarlo, y merece la pena volver con un plano del campo en mano. Para ayuda con la secuencia frente a otros campos, consulta la <a href=\"/plan-your-trip\">guía de planificación del viaje</a>."
         },
         {
           "text": "¿Le gustaría jugar Golf Andratx con un Profesional PGA que le ayude a planificar el recorrido?",
@@ -6451,7 +6451,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Golf Andratx ist eine 7,5 von 10. Die Aussichten von den höheren Löchern sind die besten, die ich im Südwesten der Insel gesehen habe. Das Layout ist eine echte Prüfung, der Green Monster ist das längste Par 5 Spaniens und spielt jeden Meter davon, und Loch 12 über Camp del Mar ist eines der besten Löcher, die ich auf Mallorca gespielt habe. Die Pflichtbuggys vor 14 Uhr und ein belebter Morgen ließen es gemanagter als entspannt wirken, aber das ist die Realität eines Platzes mit dieser Nachfrage. Lohnt sich zu spielen, und es lohnt sich, mit einem Kursplaner in der Hand wiederzukommen."
+          "text": "Golf Andratx ist eine 7,5 von 10. Die Aussichten von den höheren Löchern sind die besten, die ich im Südwesten der Insel gesehen habe. Das Layout ist eine echte Prüfung, der Green Monster ist das längste Par 5 Spaniens und spielt jeden Meter davon, und Loch 12 über Camp del Mar ist eines der besten Löcher, die ich auf Mallorca gespielt habe. Die Pflichtbuggys vor 14 Uhr und ein belebter Morgen ließen es gemanagter als entspannt wirken, aber das ist die Realität eines Platzes mit dieser Nachfrage. Lohnt sich zu spielen, und es lohnt sich, mit einem Kursplaner in der Hand wiederzukommen. Für Hilfe bei der Reihenfolge mit anderen Plätzen, siehe den <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a>."
         },
         {
           "text": "Möchten Sie Golf de Andratx mit einem PGA-Professional spielen, der Ihnen hilft, den Weg durch den Platz zu finden?",
@@ -6601,7 +6601,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Golf Andratx mérite un 7,5 sur 10. Les vues depuis les trous les plus élevés sont les meilleures que j'aie vues dans le sud-ouest de l'île. Le tracé est un vrai test, le Green Monster est le par 5 le plus long d'Espagne et se joue sur chaque mètre, et le trou 12 au-dessus de Camp del Mar est l'un des meilleurs trous que j'aie joués à Majorque. Les voiturettes obligatoires avant 14h et une matinée chargée lui ont donné un côté plus cadré que détendu, mais c'est la réalité d'un parcours avec cette demande. Ça vaut le détour, et ça vaut la peine d'y revenir avec un planificateur en main."
+          "text": "Golf Andratx mérite un 7,5 sur 10. Les vues depuis les trous les plus élevés sont les meilleures que j'aie vues dans le sud-ouest de l'île. Le tracé est un vrai test, le Green Monster est le par 5 le plus long d'Espagne et se joue sur chaque mètre, et le trou 12 au-dessus de Camp del Mar est l'un des meilleurs trous que j'aie joués à Majorque. Les voiturettes obligatoires avant 14h et une matinée chargée lui ont donné un côté plus cadré que détendu, mais c'est la réalité d'un parcours avec cette demande. Ça vaut le détour, et ça vaut la peine d'y revenir avec un planificateur en main. Pour vous aider à l'enchaîner avec d'autres parcours, consultez le <a href=\"/plan-your-trip\">guide de planification du voyage</a>."
         },
         {
           "text": "Vous souhaitez jouer Golf Andratx avec un Professionnel PGA qui peut vous aider à trouver votre chemin sur le parcours ?",
@@ -6753,7 +6753,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Golf Andratx krijgt een 7,5 uit 10. Het uitzicht vanaf de hogere holes is het beste dat ik in het zuidwesten van het eiland heb gezien. De indeling is een echte test, de Green Monster is de langste par 5 van Spanje en speelt elke meter ervan, en hole 12 boven Camp del Mar is een van de beste holes die ik op Mallorca heb gespeeld. De verplichte buggies voor 14:00 uur en een drukke ochtend gaven het een meer georganiseerd dan ontspannen gevoel, maar dat is de realiteit van een baan met deze vraag. De moeite waard om te spelen, en de moeite waard om naar terug te keren met een baanplan bij de hand."
+          "text": "Golf Andratx krijgt een 7,5 uit 10. Het uitzicht vanaf de hogere holes is het beste dat ik in het zuidwesten van het eiland heb gezien. De indeling is een echte test, de Green Monster is de langste par 5 van Spanje en speelt elke meter ervan, en hole 12 boven Camp del Mar is een van de beste holes die ik op Mallorca heb gespeeld. De verplichte buggies voor 14:00 uur en een drukke ochtend gaven het een meer georganiseerd dan ontspannen gevoel, maar dat is de realiteit van een baan met deze vraag. De moeite waard om te spelen, en de moeite waard om naar terug te keren met een baanplan bij de hand. Hulp nodig bij de volgorde met andere banen? Bekijk de <a href=\"/plan-your-trip\">reisplanningsgids</a>."
         },
         {
           "text": "Wil je Golf Andratx spelen met een PGA Professional die je helpt de weg door de baan te vinden?",
@@ -6905,7 +6905,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Monster är det längsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen."
+          "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Monster är det längsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen. Behöver du hjälp att sekvensera det med andra banor? Se <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
         },
         {
           "text": "Vill du spela Golf Andratx med en PGA-professional som kan hjälpa dig att planera din väg runt banan?",
@@ -7057,7 +7057,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Golf Andratx 总评 7.5 分。从高处几个洞俯瞰的景色，是我在岛屿西南部见过最好的。球场布局是正经的考验，Green Monster 是西班牙最长的五杆洞，每一米都打得出来，第 12 洞俯瞰 Camp del Mar 的视野，是我在马略卡（Mallorca）打过最好的球洞之一。下午 2 点前的强制球车规定和热闹的上午，让整个体验感觉更像是被管理着走，而不是自在地打，但这就是一个供不应求的球场的现实。值得去打，也值得带着球场导览再来一次。"
+          "text": "Golf Andratx 总评 7.5 分。从高处几个洞俯瞰的景色，是我在岛屿西南部见过最好的。球场布局是正经的考验，Green Monster 是西班牙最长的五杆洞，每一米都打得出来，第 12 洞俯瞰 Camp del Mar 的视野，是我在马略卡（Mallorca）打过最好的球洞之一。下午 2 点前的强制球车规定和热闹的上午，让整个体验感觉更像是被管理着走，而不是自在地打，但这就是一个供不应求的球场的现实。值得去打，也值得带着球场导览再来一次。需要帮忙安排它和其他球场的打球顺序？参考<a href=\"/plan-your-trip\">行程规划指南</a>。"
         },
         {
           "text": "想和 PGA 职业教练一起打 Golf Andratx，让他帮你规划每一洞的打法？",
@@ -7227,7 +7227,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "7/10. Son Antem West es un campo de resort bien gestionado, con buen mantenimiento, servicio fiable y un trazado que sirve para muchos jugadores. El 16 es el mejor hoyo, las zonas entre arboles son las mas interesantes, y la fauna junto al campo abierto mejora el entorno. Conviene a golfistas de vacaciones, grupos mixtos y cualquiera que quiera una ronda agradable y accesible cerca de Palma. No es la mejor eleccion si buscas un campo que te examine de principio a fin. Puedes ver como encaja con el resto en la <a href=\"/golf-courses\">pagina completa de campos de golf de Mallorca</a>."
+          "text": "7/10. Son Antem West es un campo de resort bien gestionado, con buen mantenimiento, servicio fiable y un trazado que sirve para muchos jugadores. El 16 es el mejor hoyo, las zonas entre arboles son las mas interesantes, y la fauna junto al campo abierto mejora el entorno. Conviene a golfistas de vacaciones, grupos mixtos y cualquiera que quiera una ronda agradable y accesible cerca de Palma. No es la mejor eleccion si buscas un campo que te examine de principio a fin. Puedes ver como encaja con el resto en la <a href=\"/golf-courses\">pagina completa de campos de golf de Mallorca</a>. Si estás planeando varias vueltas alrededor de este campo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios y logística."
         },
         {
           "text": "Llevo clientes a Son Antem West en dias play-with-a-pro. Quieres jugarlo con alguien a tu lado?",
@@ -7395,7 +7395,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "7/10. Son Antem West ist ein gut gefuehrter Resortplatz mit guter Pflege, verlaesslichem Service und einem Layout, das vielen Spielern passt. Die 16 ist das beste Loch, die baumgesaeumten Abschnitte sind am interessantesten, und Tiere plus offene Landschaft machen die Umgebung besser als der Platz allein. Er passt zu Urlaubsgolfern, gemischten Gruppen und allen, die eine angenehme, zugaengliche Runde nahe Palma suchen. Er ist nicht die richtige Wahl, wenn man einen Platz sucht, der von Anfang bis Ende prueft. Auf der <a href=\"/golf-courses\">vollstaendigen Mallorca-Golfplatzseite</a> sieht man, wie er im Vergleich einzuordnen ist."
+          "text": "7/10. Son Antem West ist ein gut gefuehrter Resortplatz mit guter Pflege, verlaesslichem Service und einem Layout, das vielen Spielern passt. Die 16 ist das beste Loch, die baumgesaeumten Abschnitte sind am interessantesten, und Tiere plus offene Landschaft machen die Umgebung besser als der Platz allein. Er passt zu Urlaubsgolfern, gemischten Gruppen und allen, die eine angenehme, zugaengliche Runde nahe Palma suchen. Er ist nicht die richtige Wahl, wenn man einen Platz sucht, der von Anfang bis Ende prueft. Auf der <a href=\"/golf-courses\">vollstaendigen Mallorca-Golfplatzseite</a> sieht man, wie er im Vergleich einzuordnen ist. Wenn Sie mehrere Runden rund um diesen Platz planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
         },
         {
           "text": "Ich bringe Kunden an begleiteten Golftagen nach Son Antem West. Moechten Sie ihn mit jemandem an Ihrer Seite spielen?",
@@ -7561,7 +7561,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "7/10. Son Antem West est un parcours de resort bien gere, bien entretenu, avec un service fiable et un trace qui convient a beaucoup de joueurs. Le 16 est le meilleur trou, les sections bordees d arbres sont les plus interessantes, et la faune avec la campagne ouverte rendent le cadre meilleur que le parcours seul. Il convient aux golfeurs en vacances, aux groupes mixtes et a ceux qui veulent une partie agreable et accessible pres de Palma. Ce n est pas le bon choix si vous cherchez un parcours qui teste du premier au dernier trou. Vous pouvez voir comment il se compare aux autres sur la <a href=\"/golf-courses\">page complete des parcours de golf a Majorque</a>."
+          "text": "7/10. Son Antem West est un parcours de resort bien gere, bien entretenu, avec un service fiable et un trace qui convient a beaucoup de joueurs. Le 16 est le meilleur trou, les sections bordees d arbres sont les plus interessantes, et la faune avec la campagne ouverte rendent le cadre meilleur que le parcours seul. Il convient aux golfeurs en vacances, aux groupes mixtes et a ceux qui veulent une partie agreable et accessible pres de Palma. Ce n est pas le bon choix si vous cherchez un parcours qui teste du premier au dernier trou. Vous pouvez voir comment il se compare aux autres sur la <a href=\"/golf-courses\">page complete des parcours de golf a Majorque</a>. Si vous prévoyez plusieurs parcours autour de celui-ci, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre le timing et la logistique."
         },
         {
           "text": "J emmene des clients a Son Antem West lors de journees play-with-a-pro. Envie de le jouer avec quelqu un a vos cotes ?",
@@ -7729,7 +7729,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "7/10. Son Antem West is een goed gerunde resortbaan met goede conditie, betrouwbare service en een lay-out die bij veel spelers past. De 16e is de beste hole, de stukken tussen de bomen zijn het meest interessant, en de dieren en open countryside maken de setting sterker dan de baan alleen. Hij past bij vakantiegolfers, gemengde groepen en iedereen die een prettige, toegankelijke ronde dicht bij Palma wil. Niet de juiste keuze als je een baan zoekt die je van begin tot eind test. Bekijk hoe hij past tussen de rest op de <a href=\"/golf-courses\">volledige Mallorca golfbanenpagina</a>."
+          "text": "7/10. Son Antem West is een goed gerunde resortbaan met goede conditie, betrouwbare service en een lay-out die bij veel spelers past. De 16e is de beste hole, de stukken tussen de bomen zijn het meest interessant, en de dieren en open countryside maken de setting sterker dan de baan alleen. Hij past bij vakantiegolfers, gemengde groepen en iedereen die een prettige, toegankelijke ronde dicht bij Palma wil. Niet de juiste keuze als je een baan zoekt die je van begin tot eind test. Bekijk hoe hij past tussen de rest op de <a href=\"/golf-courses\">volledige Mallorca golfbanenpagina</a>. Plan je meerdere rondes rond deze baan? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt timing en logistiek."
         },
         {
           "text": "Ik neem klanten mee naar Son Antem West op play-with-a-pro-dagen. Wil je hem spelen met iemand naast je?",
@@ -7897,7 +7897,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "7/10. Son Antem West ar en valskott resortbana med bra skick, palitlig service och en layout som passar manga spelare. 16 ar basta halet, de tradkantade partierna ar mest engagerande, och djurlivet tillsammans med det oppna landskapet gor miljon battre an banan ensam. Den passar semestergolfare, blandade grupper och alla som vill ha en trevlig, tillganglig runda nara Palma. Den ar inte ratt val om du soker en bana som testar dig fran borjan till slut. Se hur den passar in bland de andra pa <a href=\"/golf-courses\">hela sidan om Mallorcas golfbanor</a>."
+          "text": "7/10. Son Antem West ar en valskott resortbana med bra skick, palitlig service och en layout som passar manga spelare. 16 ar basta halet, de tradkantade partierna ar mest engagerande, och djurlivet tillsammans med det oppna landskapet gor miljon battre an banan ensam. Den passar semestergolfare, blandade grupper och alla som vill ha en trevlig, tillganglig runda nara Palma. Den ar inte ratt val om du soker en bana som testar dig fran borjan till slut. Se hur den passar in bland de andra pa <a href=\"/golf-courses\">hela sidan om Mallorcas golfbanor</a>. Planerar du flera rundor kring den här banan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp timing och logistik."
         },
         {
           "text": "Jag tar klienter till Son Antem West pa play-with-a-pro-dagar. Vill du spela den med nagon vid din sida?",
@@ -8065,7 +8065,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "7/10。Son Antem West是一座运营成熟的度假村球场，养护好，服务稳定，设计适合很多球手。16号洞是最佳洞，树木夹道的部分最有意思，野生动物和开阔乡间让环境比球场本身更好。它适合度假球手、水平混合的组合，以及任何想在帕尔马附近打一轮轻松、好进入状态的球手。如果你专门想找一座从头到尾都考验你的球场，它不是最合适的选择。你可以在<a href=\"/golf-courses\">马略卡高尔夫球场完整页面</a>看看它和其他球场如何对比。"
+          "text": "7/10。Son Antem West是一座运营成熟的度假村球场，养护好，服务稳定，设计适合很多球手。16号洞是最佳洞，树木夹道的部分最有意思，野生动物和开阔乡间让环境比球场本身更好。它适合度假球手、水平混合的组合，以及任何想在帕尔马附近打一轮轻松、好进入状态的球手。如果你专门想找一座从头到尾都考验你的球场，它不是最合适的选择。你可以在<a href=\"/golf-courses\">马略卡高尔夫球场完整页面</a>看看它和其他球场如何对比。如果你打算围绕它安排多轮球，<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了时间安排和后勤事项。"
         },
         {
           "text": "我会带客户去Son Antem West进行play-with-a-pro体验。想和有人陪你一起下场吗？",

@@ -29,3 +29,17 @@ Detailed reference for SEO/analytics work. The always-on *rules* (canonical www,
 | Best Golf Courses | 1,815 | 1.2% | (current — monitor) |
 
 Update this table when descriptions change, with the date, so CTR effects can be judged after ~4 weeks of Search Console data.
+
+### 2026-07-17 CTR round
+
+Prior round's changes didn't move the needle (some went backwards) — this round is a second attempt, judge again in ~4 weeks:
+
+| Page | Impressions (28d) | CTR before | Change made |
+|------|------------------|------------|-------------|
+| Golf Cost Mallorca | 329 | 0.3% | Description now opens with the direct price answer (`A round costs €55–€250; most courses charge €90–€150`) instead of a course-name list |
+| Son Muntaner review | 738 | 0.4% | Title now leads with a question hook (`Worth €260?`) instead of a price range |
+| Homepage | 460 (non-brand) | 0.2% | Title/description rewritten around concrete proof (24 courses, PGA Advanced Professional living on the island) instead of generic service names |
+| /golf-courses hub | 413 | 0.7% | Description now leads with the number (`All 24 Mallorca golf courses... green fees €55-€250`) |
+| Best Golf Courses guide | 2,356 | 1.5% | Description now includes "Majorca" alongside "Mallorca" to catch the "majorca golf courses" query cluster (18–28 impressions/query, position 19–29) |
+
+Also shipped this round (not CTR-focused, judge via enquiry events instead): every course review (8) and the Best Golf Courses guide now link to `/plan-your-trip`, mirrored across all 6 non-English locales. Homepage intro section gained a second link to the Best Golf Courses guide.

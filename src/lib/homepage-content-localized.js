@@ -1537,6 +1537,8 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "coursesBlurb": "全岛 24 座球场，我都亲自打过并认真评价过——Son Gual、Alcanada、Son Muntaner 以及其余所有球场。如果你想在预订前比较球场，",
       "coursesBlurbLink": "全部球场在这里",
+      "guideBlurb": "想看马略卡（Majorca）全部 24 座球场的完整排名，包括果岭费和每座球场适合谁，",
+      "guideBlurbLink": "阅读完整球场指南",
       "stats": [
         {
           "label": "岛上球场数量"
