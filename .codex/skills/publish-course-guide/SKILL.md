@@ -35,9 +35,10 @@ Cross-check known facts against the table in `docs/course-guide-standards.md` ("
 
 ## Step 3 — Routing
 
-- Create `src/app/(en)/guides/{slug}/page.jsx` by copying an existing review (e.g. `son-termes-review/page.jsx`) and changing the slug — it appears 2× (getGuidePostContent + metadata).
+Run `node scripts/scaffold-guide.mjs --slug {slug} --name "<official course name>" --locality "<town>" --rating <1-5>` (requires step 2 done first — it reads the title from `guide-post-content.js`). This creates `src/app/(en)/guides/{slug}/page.jsx` and adds the `COURSE_REVIEW_DETAILS` entry in `src/app/(en)/guides/GuidePostView.jsx` in one command, skipping either half if it already exists.
+
 - Course reviews do NOT go in `ARTICLE_SLUGS` in `src/lib/site.js` (that's article guides only).
-- **Add the course to `COURSE_REVIEW_DETAILS`** in `src/app/(en)/guides/GuidePostView.jsx`. This object powers two things: the Review schema (structured data) and the inline funnel CTA that appears just before the booking CTA on every course review. Without this entry, neither feature activates. Fields: `name` (official course name), `ratingValue` (1–5), `addressLocality` (town).
+- `COURSE_REVIEW_DETAILS` powers two things: the Review schema (structured data) and the inline funnel CTA that appears just before the booking CTA on every course review. Without this entry, neither feature activates.
 
 ## Step 4 — Discovery surfaces
 

@@ -15,13 +15,19 @@ From `mrmallorcagolf-real`:
 - `npm run check:i18n-release` and `npm run build` if anything locale-facing looks off.
 Report any failure verbatim — a red check is a ready-made candidate.
 
+## Already covered (do not re-propose these)
+- Prose price consistency across guide/offer/homepage content vs canonical pricing — `check:pricing-narrative`
+- Guide slug structure parity across all 7 locales — `check:guide-parity`
+- mmg-tools doc-pointer / dead-reference check — `scripts/check-doc-pointers.mjs` in that repo (`node scripts/check-doc-pointers.mjs`)
+- Discovery surfaces (sitemap/feed/IndexNow×2) agreeing on the same guide slug set — `check:discovery`
+- Meta description length + curly-apostrophe compiler trap — `check:meta-length` (standalone, not yet in `check:content` — there's a known backlog of 32 over-length descriptions, re-check whether that's been worked down)
+
 ## Then sweep for what the checks do NOT cover
 1. **Tools hardcoding canonical values** — `grep -rlE "€[0-9]" "src/app/(en)/tools"` and confirm each hit is either dynamic (`getCanonicalCourseData` / `course-catalog`) or covered by `check:tool-prices`. New hardcoded price = candidate.
 2. **Repo TODO/FIXME/deprecated backlog** — `grep -rnE "\b(TODO|FIXME|HACK)\b" src/` (case-SENSITIVE — a case-insensitive grep matches the Spanish word "todo" all over the localized content and reports a fake backlog). As of Jul 2026 there are zero real markers. Triage any new ones into still-valid / already-done / delete.
-3. **Sync system docs (`../mmg-tools`)** — its SOURCE-OF-TRUTH-MAP.md, DATA-FLOWS.md, OPERATING-MAP.md, CLEANUP-BACKLOG.md have never had the dead-pointer/contradiction treatment the site docs got. Candidate: port `check:pointers` there. Also flag stray artefacts (e.g. `debug.log`).
-4. **Narrative price consistency** — canonical prices in `src/lib/course-pricing-data.js` and PWAP in `play-with-a-pro-content.js` vs prose mentions in `guide-*-content*.js`, `offers-content.js`, `homepage-content.js`, `plan-your-trip-content.js`. Only `check:tool-prices` covers the tool; prose is still manual. Candidate: a `check:pricing-narrative`.
-5. **Locale structure parity for guides** — existing checks cover slug coverage + flags + tracked leaks, not per-slug section-structure parity across the 7 locales. Candidate: a guide-structure parity check.
-6. **Drive organisation** — loose working docs at the Drive root, duplicates of generated files, and `WHERE_THINGS_LIVE.md` accuracy. Lower priority.
+3. **Drive organisation** — loose working docs at the Drive root, duplicates of generated files, and `WHERE_THINGS_LIVE.md` accuracy. Lower priority.
+4. **docs/ root drift** — any file added to `docs/` root since the last pass that should be in `docs/archive/` per the hygiene rule (dated/session files), and whether `docs/README.md`'s index still matches what's actually there.
+5. **Skill mirror drift** — `.claude/skills/` vs `.codex/skills/` (run `npm run skills:sync` and see if anything changes) and whether the skills README / CLAUDE.md skill list still names every skill that exists.
 
 ## Output
 A single ranked list: each item = what, where (file:line), why it matters, and whether the fix is mechanical or judgement. Recommend an order (things that compound first: fix a surface, then the check that locks it). Do not edit anything.

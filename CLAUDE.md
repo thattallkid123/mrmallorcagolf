@@ -86,13 +86,13 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 ## Completion Gate (MANDATORY — READ EVERY SESSION)
 
-**A task is NOT done until the changes are live on mrmallorcagolf.com.** Edited-locally, committed, or pushed-to-GitHub are all incomplete. The finish line is a confirmed READY Vercel deployment serving the change in production. Full sequence: the `/ship` skill.
+**A task is NOT done until the changes are live on mrmallorcagolf.com.** Edited-locally, committed, or pushed-to-GitHub are all incomplete. The finish line is a **green GitHub Actions run AND a confirmed READY Vercel deployment** — these are two independent pipelines that can disagree (Vercel does not wait for or depend on CI passing), so a Ready Vercel deployment alone is not proof the push is good. Full sequence: the `/ship` skill.
 
 Steps in order — do not skip, do not report done early:
 1. Local checks pass: `npm run check:content` (always). Add `npm run build` for structural/deploy-sensitive changes. Add `npm run check:i18n-release` if localized content changed.
 2. Commit with a clear message.
 3. Push to GitHub (`git push`). Vercel auto-deploys from `main`.
-4. Confirm the Vercel deployment reaches READY (Vercel MCP `list_deployments` or the dashboard).
+4. Confirm **both**: `gh run list --limit 1` (watch/fix if it's running or red) AND the Vercel deployment reaching READY (Vercel MCP `list_deployments` or the dashboard). A passing local `check:content` before commit does not guarantee CI passes — CI can fail on things a local run can't see (e.g. a check that only works because a file/sibling-repo happens to exist on this machine).
 5. Only then say the task is done.
 
 **If any step is blocked** (hook failure, build error, Vercel error) — fix it. Do not close out the task or leave the repo broken. **Before starting new work each session, run `git status`;** if there are complete-looking uncommitted changes, ask whether to commit them first.
