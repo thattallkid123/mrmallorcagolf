@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
+import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import InlineRichText from '../guides/InlineRichText'
@@ -401,8 +402,28 @@ export default function GuidePostView({ locale = 'en', meta, blocks }) {
   const courseDetails = COURSE_REVIEW_DETAILS[meta.slug]
   const lastCtaIndex = blocks.length - 1
 
+  const planHref = joinHref(locale, '/plan-your-trip')
+  const playHref = joinHref(locale, '/play-with-a-pro')
+
+  const ctalabels = {
+    en: { plan: 'Plan Your Trip', play: 'Play With A Pro' },
+    de: { plan: 'Reise planen', play: 'Mit Andy spielen' },
+    es: { plan: 'Planifica tu viaje', play: 'Jugar con Andy' },
+    fr: { plan: 'Planifier', play: 'Jouer avec Andy' },
+    nl: { plan: 'Reis plannen', play: 'Spelen met Andy' },
+    sv: { plan: 'Planera resan', play: 'Spela med Andy' },
+    zh: { plan: '规划行程', play: '与 Andy 同场' },
+  }
+  const labels = ctalabels[locale] || ctalabels.en
+
   return (
     <PageLayout lang={pageLang}>
+      <StickyMobileCta
+        primaryHref={planHref}
+        primaryLabel={labels.plan}
+        secondaryHref={playHref}
+        secondaryLabel={labels.play}
+      />
       <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
       <JsonLd data={buildReviewSchema(meta, blocks, locale)} />
       {buildFaqSchema(meta, blocks, locale) && <JsonLd data={buildFaqSchema(meta, blocks, locale)} />}

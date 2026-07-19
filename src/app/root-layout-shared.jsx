@@ -259,7 +259,7 @@ export default function SiteRootLayout({ lang, children }) {
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
-        <Script id="google-analytics-deferred" strategy="afterInteractive">
+        <Script id="google-analytics-deferred" strategy="lazyOnload">
           {`
             (function () {
               if (window.location.pathname.startsWith('/zh')) return;

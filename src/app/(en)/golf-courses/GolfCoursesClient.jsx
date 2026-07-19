@@ -604,7 +604,7 @@ function CourseCard({ c, lang = 'en' }) {
             alt={courseName}
             fill
             quality={88}
-            sizes="(max-width: 768px) 100vw, 620px"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 48vw, 560px"
             className="course__image"
           />
         </div>
@@ -651,7 +651,7 @@ function CourseCard({ c, lang = 'en' }) {
               alt={courseName}
               fill
               quality={88}
-              sizes="(max-width: 768px) 100vw, 620px"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 48vw, 560px"
               className="course__image"
             />
           </div>

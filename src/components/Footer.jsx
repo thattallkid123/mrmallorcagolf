@@ -12,6 +12,7 @@ const FOOTER_COPY = {
     day: 'A Day at Son Gual',
     guide: 'Golf Guides',
     guideArticles: 'Planning Articles',
+    tools: 'Free Tools',
     about: 'About',
     allCourses: 'All Courses',
     enquire: null,
@@ -28,6 +29,7 @@ const FOOTER_COPY = {
     pwap: 'Mit Profi spielen',
     day: 'Ein Tag in Son Gual',
     guide: 'Golfführer',
+    tools: 'Kostenlose Tools',
     about: 'Über Andy',
     allCourses: 'Alle Plätze',
     enquire: 'Anfragen',
@@ -43,6 +45,7 @@ const FOOTER_COPY = {
     pwap: 'Jugar con un Pro',
     day: 'Un día en Son Gual',
     guide: 'Guía de Golf',
+    tools: 'Herramientas Gratis',
     about: 'Sobre Andy',
     allCourses: 'Todos los campos',
     enquire: 'Contacto',
@@ -58,6 +61,7 @@ const FOOTER_COPY = {
     pwap: 'Jouer avec un Pro',
     day: 'Une journée à Son Gual',
     guide: 'Guide Golf',
+    tools: 'Outils Gratuits',
     about: 'À propos',
     allCourses: 'Tous les parcours',
     enquire: 'Contact',
@@ -73,6 +77,7 @@ const FOOTER_COPY = {
     pwap: 'Spelen met een Pro',
     day: 'Een dag op Son Gual',
     guide: 'Golfgids',
+    tools: 'Gratis Tools',
     about: 'Over Andy',
     allCourses: 'Alle banen',
     enquire: 'Contact',
@@ -88,6 +93,7 @@ const FOOTER_COPY = {
     pwap: 'Spela med ett proffs',
     day: 'En dag på Son Gual',
     guide: 'Golfguide',
+    tools: 'Gratis Verktyg',
     about: 'Om Andy',
     allCourses: 'Alla banor',
     enquire: 'Kontakt',
@@ -103,6 +109,7 @@ const FOOTER_COPY = {
     pwap: '与职业球手同场',
     day: 'Son Gual 的一天',
     guide: '高尔夫指南',
+    tools: '免费工具',
     about: '关于 Andy',
     allCourses: '全部球场',
     enquire: '联系',
@@ -165,6 +172,13 @@ export default function Footer({ lang }) {
         <ul>
           <li><Link href={`${prefix}/guides`} prefetch={false}>{copy.guideArticles || copy.guide}</Link></li>
           <li><Link href={`${prefix}/golf-courses`} prefetch={false}>{copy.allCourses}</Link></li>
+        </ul>
+      </div>
+
+      <div className="footer__col">
+        <h3>{copy.tools}</h3>
+        <ul>
+          <li><Link href={`${prefix}/tools`} prefetch={false}>{copy.tools}</Link></li>
         </ul>
       </div>
 
