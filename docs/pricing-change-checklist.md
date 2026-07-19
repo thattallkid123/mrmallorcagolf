@@ -7,8 +7,8 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 
 ## 1. Update the source of truth
 
-- Edit `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_EDIT-THIS.xlsx`
-- Run `python scripts/sync-pricing.py`
+- Edit the pricing master Google Sheet (the single source of truth)
+- Run `.\mmg.ps1 pricing` then `.\mmg.ps1 site` from mmg-tools
 - Treat the generated JSON and readable MD as outputs, not edit targets
 
 ## 2. Update the main site

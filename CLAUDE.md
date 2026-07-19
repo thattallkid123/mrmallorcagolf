@@ -144,7 +144,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 - **Course encyclopaedia:** `MMG_ENCYCLOPAEDIA_DATA_MASTER.md` (root) — all 24 courses, facts, pricing, access rules
 - **Financial:** `Business Operations & Financial/MMG_Income_and_Expenses_2026.xlsx` + `Business Operations & Financial/MMG_Extra_Coaching_2026.xlsx`
 - **Systems & planning:** `Systems & Planning/`
-- **Course contacts & courtesy:** Courtesy master Google Sheet (Golf Courses tab — 24 courses, contacts, booking, courtesy). Affiliates and China Operators in `Private/Workbooks/MMG_CONTACTS_COURSES_AND_COURTESY.xlsx`.
+- **Course contacts & courtesy:** Courtesy master Google Sheet (Golf Courses tab — 24 courses, contacts, booking, courtesy; plus Affiliates and China Operators tabs). The old `MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` is retired/archived.
 - **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx`
 - **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
 - **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/`

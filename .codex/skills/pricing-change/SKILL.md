@@ -16,7 +16,7 @@ Optional reminder packet: `node scripts/pricing-change-reminder.js --subject "Co
 
 ## 2. Source of truth first
 
-Green fees: the pricing master Google Sheet / `MMG_COURSE_PRICING_MASTER_EDIT-THIS.xlsx` in Drive, then `python scripts/sync-pricing.py` (or `.\mmg.ps1 pricing` from mmg-tools). The generated JSON/MD are outputs — never edit them directly.
+Green fees: edit the pricing master Google Sheet (the single source of truth), then run `.\mmg.ps1 pricing` from mmg-tools. The generated JSON/MD are outputs — never edit them directly. (The old Excel workbook and the legacy `sync-pricing.py` are retired.)
 
 **Auto-synced by `.\mmg.ps1 pricing` — do NOT hand-edit (regenerated from the master):**
 - `src/lib/golf-courses-data.js` — course-listing pills (e.g. `Peak €165 / Low €115`). Editing these by hand is overwritten on the next sync and breaks the data-flow rule; fix the master and re-run instead.

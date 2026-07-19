@@ -47,7 +47,7 @@ Use this as the exact map when a price changes. Status column updated 2026-06-18
 
 | File | Status |
 |---|---|
-| `C:\Users\andyg\My Drive\Mr Mallorca Golf\Reference\MMG_COURSE_PRICING_MASTER_EDIT-THIS.xlsx` | Source of truth for green fees — edit here first |
+| Pricing master Google Sheet (via mmg-tools control panel) | Source of truth for green fees — edit here first, then `.\mmg.ps1 pricing` |
 | `src/lib/golf-courses-data.js` | Pills text (e.g. `Peak 22 / Low 14`) — manual update |
 | `src/lib/golf-courses-content.js` | Course content data |
 | `src/lib/guide-post-content.js` | Blog post pricing references |
