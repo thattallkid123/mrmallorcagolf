@@ -4,17 +4,18 @@ import { useEffect, useRef, useState } from 'react'
 import 'leaflet/dist/leaflet.css'
 import { GOLF_COURSE_DATA } from '../lib/golf-courses-data'
 import { COURSE_COORDINATES } from '../lib/golf-courses-coordinates'
+import { getCourseShortName } from '../lib/golf-courses-helpers'
 
 const REGION_IDS = ['all', 'palma', 'southwest', 'south', 'east', 'north']
 
 const LABELS = {
-  en: { title: 'Where the courses are', regions: ['All courses', 'Palma', 'Southwest', 'South', 'East', 'North'] },
-  de: { title: 'Wo die Plätze liegen', regions: ['Alle Plätze', 'Palma', 'Südwesten', 'Süden', 'Osten', 'Norden'] },
-  es: { title: 'Dónde están los campos', regions: ['Todos los campos', 'Palma', 'Suroeste', 'Sur', 'Este', 'Norte'] },
-  fr: { title: 'Où sont les parcours', regions: ['Tous les parcours', 'Palma', 'Sud-ouest', 'Sud', 'Est', 'Nord'] },
-  nl: { title: 'Waar de banen liggen', regions: ['Alle banen', 'Palma', 'Zuidwesten', 'Zuiden', 'Oosten', 'Noorden'] },
-  sv: { title: 'Var banorna ligger', regions: ['Alla banor', 'Palma', 'Sydväst', 'Söder', 'Öster', 'Norr'] },
-  zh: { title: '球场分布图', regions: ['所有球场', '帕尔马', '西南', '南部', '东部', '北部'] },
+  en: { title: 'Where the courses are', hint: 'Hover a pin or tap a course below to locate it.', regions: ['All courses', 'Palma', 'Southwest', 'South', 'East', 'North'] },
+  de: { title: 'Wo die Plätze liegen', hint: 'Fahren Sie über eine Markierung oder tippen Sie unten auf einen Platz.', regions: ['Alle Plätze', 'Palma', 'Südwesten', 'Süden', 'Osten', 'Norden'] },
+  es: { title: 'Dónde están los campos', hint: 'Pase el cursor por un pin o toque un campo abajo para localizarlo.', regions: ['Todos los campos', 'Palma', 'Suroeste', 'Sur', 'Este', 'Norte'] },
+  fr: { title: 'Où sont les parcours', hint: 'Survolez un repère ou touchez un parcours ci-dessous pour le localiser.', regions: ['Tous les parcours', 'Palma', 'Sud-ouest', 'Sud', 'Est', 'Nord'] },
+  nl: { title: 'Waar de banen liggen', hint: 'Beweeg over een pin of tik hieronder op een baan om die te vinden.', regions: ['Alle banen', 'Palma', 'Zuidwesten', 'Zuiden', 'Oosten', 'Noorden'] },
+  sv: { title: 'Var banorna ligger', hint: 'Håll muspekaren över en nål eller tryck på en bana nedan.', regions: ['Alla banor', 'Palma', 'Sydväst', 'Söder', 'Öster', 'Norr'] },
+  zh: { title: '球场分布图', hint: '将鼠标悬停在标记上，或点击下方球场进行定位。', regions: ['所有球场', '帕尔马', '西南', '南部', '东部', '北部'] },
 }
 
 // Flatten once, attaching the parent region to each course.
@@ -28,7 +29,11 @@ export default function CourseMapView({ lang = 'en' }) {
   const containerRef = useRef(null)
   const mapRef = useRef(null)
   const markerLayerRef = useRef(null)
+  const markersRef = useRef({})
+  const pointsRef = useRef([])
+  const didFitRef = useRef(false)
   const [selectedRegion, setSelectedRegion] = useState('all')
+  const [legend, setLegend] = useState([])
 
   const filteredCourses = selectedRegion === 'all'
     ? ALL_COURSES
@@ -43,7 +48,11 @@ export default function CourseMapView({ lang = 'en' }) {
     import('leaflet').then((L) => {
       if (cancelled || !containerRef.current || mapRef.current) return
 
-      const map = L.map(containerRef.current, { scrollWheelZoom: false }).setView([39.62, 2.95], 9)
+      // zoomAnimation is disabled: the site's global CSS transitions interfere
+      // with Leaflet's zoom animation, which then reverts every zoom change
+      // (including fitBounds and the +/- buttons) back to the start. Instant
+      // zoom avoids that and keeps every zoom control working.
+      const map = L.map(containerRef.current, { scrollWheelZoom: false, zoomAnimation: false }).setView([39.62, 2.95], 9)
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
         attribution: '&copy; OpenStreetMap contributors',
@@ -54,11 +63,19 @@ export default function CourseMapView({ lang = 'en' }) {
       drawMarkers()
 
       // The map is lazy-loaded below the fold, so its container often has no
-      // settled size when L.map() runs and Leaflet never requests tiles.
-      // Recompute size once now and whenever the container resizes.
+      // settled size when L.map() runs — Leaflet then caches a zero size, never
+      // requests tiles, and fitBounds zooms wrong. Recompute size and refit
+      // once the container reports a real width.
       map.invalidateSize()
+      fitToMarkers()
       if (typeof ResizeObserver !== 'undefined') {
-        observer = new ResizeObserver(() => map.invalidateSize())
+        observer = new ResizeObserver(() => {
+          map.invalidateSize()
+          if (!didFitRef.current && containerRef.current && containerRef.current.offsetWidth > 0) {
+            fitToMarkers()
+            didFitRef.current = true
+          }
+        })
         observer.observe(containerRef.current)
       }
     })
@@ -75,19 +92,29 @@ export default function CourseMapView({ lang = 'en' }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Redraw markers whenever the region filter changes.
+  // Redraw markers and refit whenever the region filter changes.
   useEffect(() => {
     drawMarkers()
+    fitToMarkers()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedRegion])
 
+  function fitToMarkers() {
+    if (!mapRef.current || !containerRef.current || containerRef.current.offsetWidth === 0) return
+    const { map } = mapRef.current
+    const pts = pointsRef.current
+    if (pts.length > 1) map.fitBounds(pts, { padding: [25, 25], maxZoom: 12 })
+    else if (pts.length === 1) map.setView(pts[0], 12)
+  }
+
   function drawMarkers() {
     if (!mapRef.current || !markerLayerRef.current) return
-    const { L, map } = mapRef.current
+    const { L } = mapRef.current
     markerLayerRef.current.clearLayers()
+    markersRef.current = {}
 
     // Group courses that share the same coordinate (e.g. Santa Ponsa 2 & 3,
-    // Son Antem East & West) so they render as one pin with a combined label.
+    // Son Antem East & West) so they render as one numbered pin.
     const groups = new Map()
     filteredCourses.forEach((course) => {
       const coords = COURSE_COORDINATES[course.name]
@@ -98,33 +125,46 @@ export default function CourseMapView({ lang = 'en' }) {
     })
 
     const points = []
+    const legendItems = []
+    let n = 0
     groups.forEach(({ coords, courses }) => {
+      n += 1
       points.push(coords)
-      const names = courses.map((c) => c.name).join(' & ')
+      const fullNames = courses.map((c) => c.name).join(' & ')
+      const shortNames = courses.map((c) => getCourseShortName(c.name)).join(' & ')
       const location = courses[0].location || ''
-      L.circleMarker(coords, {
-        radius: 7,
-        color: '#2D4A3E',
-        weight: 2,
-        fillColor: '#CBA968',
-        fillOpacity: 0.9,
+      const icon = L.divIcon({
+        className: '',
+        html: `<div style="width:26px;height:26px;border-radius:50%;background:#CBA968;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:'Jost',sans-serif;font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35)">${n}</div>`,
+        iconSize: [26, 26],
+        iconAnchor: [13, 13],
+        popupAnchor: [0, -14],
       })
-        .bindPopup(`<strong>${names}</strong><br/>${location}`)
+      const marker = L.marker(coords, { icon })
+        .bindPopup(`<strong>${n}. ${fullNames}</strong><br/>${location}`)
+        .bindTooltip(`${n}. ${shortNames}`, { direction: 'top', offset: [0, -12] })
         .addTo(markerLayerRef.current)
+      markersRef.current[n] = marker
+      legendItems.push({ n, label: shortNames, coords })
     })
 
-    if (points.length > 1) {
-      map.fitBounds(points, { padding: [40, 40], maxZoom: 12 })
-    } else if (points.length === 1) {
-      map.setView(points[0], 12)
-    }
+    pointsRef.current = points
+    setLegend(legendItems)
+  }
+
+  function focusPin(item) {
+    if (!mapRef.current) return
+    mapRef.current.map.setView(item.coords, 13, { animate: true })
+    markersRef.current[item.n]?.openPopup()
+    containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
 
   return (
     <div>
-      <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: 'clamp(1.5rem, 3.5vw, 2rem)', color: '#1A1916', marginBottom: 20 }}>
+      <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: 'clamp(1.5rem, 3.5vw, 2rem)', color: '#1A1916', marginBottom: 8 }}>
         {labels.title}
       </h2>
+      <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '0.85rem', color: '#6B6862', margin: '0 0 16px' }}>{labels.hint}</p>
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
         {regions.map(region => {
           const active = selectedRegion === region.id
@@ -163,6 +203,23 @@ export default function CourseMapView({ lang = 'en' }) {
           background: '#e8ece6',
         }}
       />
+
+      {legend.length > 0 && (
+        <ol style={{ listStyle: 'none', margin: '18px 0 0', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '4px 18px' }}>
+          {legend.map(item => (
+            <li key={item.n}>
+              <button
+                type="button"
+                onClick={() => focusPin(item)}
+                style={{ display: 'flex', alignItems: 'center', gap: 9, width: '100%', textAlign: 'left', background: 'none', border: 'none', padding: '5px 0', cursor: 'pointer', fontFamily: "'Jost', sans-serif", fontSize: '0.83rem', color: '#3A342C', lineHeight: 1.3 }}
+              >
+                <span style={{ flexShrink: 0, width: 22, height: 22, borderRadius: '50%', background: '#CBA968', border: '1.5px solid #2D4A3E', color: '#20362C', fontSize: 11, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.n}</span>
+                {item.label}
+              </button>
+            </li>
+          ))}
+        </ol>
+      )}
     </div>
   )
 }
