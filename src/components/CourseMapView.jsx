@@ -39,6 +39,7 @@ export default function CourseMapView({ lang = 'en' }) {
     if (!containerRef.current || mapRef.current) return
 
     let cancelled = false
+    let observer = null
     import('leaflet').then((L) => {
       if (cancelled || !containerRef.current || mapRef.current) return
 
@@ -51,10 +52,20 @@ export default function CourseMapView({ lang = 'en' }) {
       markerLayerRef.current = L.layerGroup().addTo(map)
       mapRef.current = { L, map }
       drawMarkers()
+
+      // The map is lazy-loaded below the fold, so its container often has no
+      // settled size when L.map() runs and Leaflet never requests tiles.
+      // Recompute size once now and whenever the container resizes.
+      map.invalidateSize()
+      if (typeof ResizeObserver !== 'undefined') {
+        observer = new ResizeObserver(() => map.invalidateSize())
+        observer.observe(containerRef.current)
+      }
     })
 
     return () => {
       cancelled = true
+      if (observer) observer.disconnect()
       if (mapRef.current) {
         mapRef.current.map.remove()
         mapRef.current = null
@@ -75,11 +86,22 @@ export default function CourseMapView({ lang = 'en' }) {
     const { L, map } = mapRef.current
     markerLayerRef.current.clearLayers()
 
-    const points = []
+    // Group courses that share the same coordinate (e.g. Santa Ponsa 2 & 3,
+    // Son Antem East & West) so they render as one pin with a combined label.
+    const groups = new Map()
     filteredCourses.forEach((course) => {
       const coords = COURSE_COORDINATES[course.name]
       if (!coords) return
+      const key = `${coords[0]},${coords[1]}`
+      if (!groups.has(key)) groups.set(key, { coords, courses: [] })
+      groups.get(key).courses.push(course)
+    })
+
+    const points = []
+    groups.forEach(({ coords, courses }) => {
       points.push(coords)
+      const names = courses.map((c) => c.name).join(' & ')
+      const location = courses[0].location || ''
       L.circleMarker(coords, {
         radius: 7,
         color: '#2D4A3E',
@@ -87,7 +109,7 @@ export default function CourseMapView({ lang = 'en' }) {
         fillColor: '#CBA968',
         fillOpacity: 0.9,
       })
-        .bindPopup(`<strong>${course.name}</strong><br/>${course.location || ''}`)
+        .bindPopup(`<strong>${names}</strong><br/>${location}`)
         .addTo(markerLayerRef.current)
     })
 

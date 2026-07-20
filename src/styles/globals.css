@@ -2405,9 +2405,7 @@ select.form-control { cursor: pointer; }
 .region-subtitle { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; color: var(--taupe); }
 .region-count { font-size: 10px; letter-spacing: 0.11em; text-transform: uppercase; color: var(--stone); margin-left: auto; }
 .region-note { font-size: 0.82rem; color: var(--taupe); font-style: italic; padding: 12px 0; border-bottom: 1px solid var(--linen); margin-bottom: 16px; }
-.courses-grid-list { display: grid; grid-template-columns: 1fr; gap: 2px; }
-@media (min-width: 768px) { .courses-grid-list { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1400px) { .courses-grid-list { grid-template-columns: repeat(2, 1fr); } }
+.courses-grid-list { display: flex; flex-direction: column; gap: 2px; }
 .divider { height: 1px; background: var(--linen); margin: 0 40px; }
 
 .course { background: rgba(255,255,255,0.92); border: 1px solid var(--linen); transition: border-color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury), box-shadow 0.35s var(--ease-luxury); box-shadow: var(--shadow-soft); }

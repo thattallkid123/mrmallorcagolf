@@ -203,7 +203,7 @@ export default function GreenFeesClient() {
         .gf-fg select { font-family:'Jost',sans-serif; font-size:.9rem; padding:9px 12px; border:1px solid rgba(45,74,62,.3); border-radius:4px; background:#fff; color:var(--deep); min-width:150px; cursor:pointer; }
         .gf-fg select:focus { outline:2px solid var(--gold); outline-offset:1px; }
         .gf-count { font-size:.85rem; color:var(--muted); margin-left:auto; align-self:center; }
-        .gf-table-wrap { background:#fff; border-radius:6px; overflow:hidden; box-shadow:0 2px 12px rgba(45,74,62,.08); }
+        .gf-table-wrap { background:#fff; border-radius:6px; overflow-x:auto; box-shadow:0 2px 12px rgba(45,74,62,.08); }
         .gf table { width:100%; border-collapse:collapse; font-size:.88rem; }
         .gf thead th { background:var(--pine); color:#fff; font-weight:400; letter-spacing:.05em; text-transform:uppercase; font-size:.72rem; text-align:left; padding:14px 12px; cursor:pointer; user-select:none; white-space:nowrap; }
         .gf thead th .arw { color:var(--gold); font-size:.75rem; margin-left:4px; }
@@ -213,6 +213,7 @@ export default function GreenFeesClient() {
         .gf tbody tr:nth-child(even) { background:var(--row-alt); }
         .gf tbody tr:hover { background:#F1EBDD; }
         .gf td.gf-course { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.08rem; font-weight:500; color:var(--pine); white-space:nowrap; }
+        .gf-9h { display:block; font-family:'Jost',sans-serif; font-size:.66rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); margin-top:3px; }
         .gf-guide { display:block; font-family:'Jost',sans-serif; font-size:.75rem; margin-top:3px; color:var(--gold); text-decoration:none; letter-spacing:.03em; }
         a.gf-guide:hover { text-decoration:underline; }
         .gf .approx { color:var(--muted); font-size:.72rem; display:block; }
@@ -334,7 +335,6 @@ export default function GreenFeesClient() {
                 <th>Buggy</th>
                 <th>Walking</th>
                 <th>Handicap req.</th>
-                <th>9 holes</th>
                 <th>Andy&rsquo;s verdict</th>
               </tr>
             </thead>
@@ -343,7 +343,7 @@ export default function GreenFeesClient() {
                 const w = walkingLabel(c)
                 return (
                   <tr key={c.name}>
-                    <td className="gf-course">{displayCourseName(c.name)}{guideCell(c)}</td>
+                    <td className="gf-course">{displayCourseName(c.name)}{c.nineHoles && <span className="gf-9h">9-hole course</span>}{guideCell(c)}</td>
                     <td>{c.area}</td>
                     <td>{fmtFee(c.peak, c.peakText)}<span className="approx">peak season</span></td>
                     <td>{fmtFee(c.low, c.lowText)}<span className="approx">low season</span></td>
@@ -352,7 +352,6 @@ export default function GreenFeesClient() {
                     <td>{c.handicap === 'yes'
                       ? <span className="gf-pill gold">{c.handicapNote || 'Yes'}</span>
                       : <span className="gf-pill">{c.handicapNote || 'No'}</span>}</td>
-                    <td>{c.nineHoles ? <span className="gf-pill">Yes</span> : <span className="gf-pill no">No</span>}</td>
                     <td className="gf-verdict">{c.verdict}</td>
                   </tr>
                 )
@@ -367,14 +366,13 @@ export default function GreenFeesClient() {
             return (
               <div className="gf-card" key={c.name}>
                 <h3>{displayCourseName(c.name)}</h3>
-                <div className="area-tag">{c.area}</div>
+                <div className="area-tag">{c.area}{c.nineHoles ? ' · 9-hole course' : ''}</div>
                 <div className="grid">
                   <div><span className="k">Peak fee</span>{fmtFee(c.peak, c.peakText)}</div>
                   <div><span className="k">Low season</span>{fmtFee(c.low, c.lowText)}</div>
                   <div><span className="k">Buggy</span>{c.buggy}</div>
                   <div><span className="k">Walking</span>{w.text}</div>
                   <div><span className="k">Handicap req.</span>{c.handicap === 'yes' ? (c.handicapNote || 'Yes') : (c.handicapNote || 'No')}</div>
-                  <div><span className="k">9 holes</span>{c.nineHoles ? 'Yes' : 'No'}</div>
                 </div>
                 <div className="v-line">&ldquo;{c.verdict}&rdquo;</div>
                 {c.guideUrl && <Link className="gf-guide" href={c.guideUrl}>View full guide →</Link>}
