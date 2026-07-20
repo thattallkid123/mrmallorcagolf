@@ -13,10 +13,10 @@ export const COURSE_COORDINATES = {
   "Real Golf de Bendinat": [39.5455, 2.5834],
   "Canyamel Golf": [39.6741, 3.4317],
   "Capdepera Golf": [39.6993, 3.3978],
-  "Palma Pitch & Putt": [39.547, 2.679], // APPROX — verify
+  "Palma Pitch & Putt": [39.5895, 2.6015],
   "Golf Pollença": [39.8592, 3.0358],
   "Pula Golf": [39.6475, 3.384],
-  "Golf Maioris": [39.4555, 2.748], // APPROX — verify
+  "Golf Maioris": [39.4548, 2.7505],
   "Reserva Rotana": [39.6061, 3.1839],
   "Golf Santa Ponsa 1": [39.5119, 2.4993],
   "Golf Santa Ponsa 2": [39.5133, 2.5012],
