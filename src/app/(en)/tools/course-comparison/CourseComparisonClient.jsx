@@ -46,7 +46,7 @@ export default function CourseComparisonClient() {
       return `${label}${note}`
     }},
     { label: 'Handicap requirement', key: 'handicapNote' },
-    { label: 'Andy's verdict', key: 'verdict' },
+    { label: "Andy's verdict", key: 'verdict' },
   ]
 
   return (
