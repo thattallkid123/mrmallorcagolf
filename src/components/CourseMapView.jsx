@@ -1,127 +1,146 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import dynamic from 'next/dynamic'
+import 'leaflet/dist/leaflet.css'
 import { GOLF_COURSE_DATA } from '../lib/golf-courses-data'
 import { COURSE_COORDINATES } from '../lib/golf-courses-coordinates'
 
-export default function CourseMapView({ onCourseSelect }) {
-  const mapContainer = useRef(null)
-  const map = useRef(null)
+const REGION_IDS = ['all', 'palma', 'southwest', 'south', 'east', 'north']
+
+const LABELS = {
+  en: { title: 'Where the courses are', regions: ['All courses', 'Palma', 'Southwest', 'South', 'East', 'North'] },
+  de: { title: 'Wo die Plätze liegen', regions: ['Alle Plätze', 'Palma', 'Südwesten', 'Süden', 'Osten', 'Norden'] },
+  es: { title: 'Dónde están los campos', regions: ['Todos los campos', 'Palma', 'Suroeste', 'Sur', 'Este', 'Norte'] },
+  fr: { title: 'Où sont les parcours', regions: ['Tous les parcours', 'Palma', 'Sud-ouest', 'Sud', 'Est', 'Nord'] },
+  nl: { title: 'Waar de banen liggen', regions: ['Alle banen', 'Palma', 'Zuidwesten', 'Zuiden', 'Oosten', 'Noorden'] },
+  sv: { title: 'Var banorna ligger', regions: ['Alla banor', 'Palma', 'Sydväst', 'Söder', 'Öster', 'Norr'] },
+  zh: { title: '球场分布图', regions: ['所有球场', '帕尔马', '西南', '南部', '东部', '北部'] },
+}
+
+// Flatten once, attaching the parent region to each course.
+const ALL_COURSES = GOLF_COURSE_DATA.flatMap(region =>
+  region.courses.map(course => ({ ...course, region: region.region }))
+)
+
+export default function CourseMapView({ lang = 'en' }) {
+  const labels = LABELS[lang] || LABELS.en
+  const regions = REGION_IDS.map((id, i) => ({ id, label: labels.regions[i] }))
+  const containerRef = useRef(null)
+  const mapRef = useRef(null)
+  const markerLayerRef = useRef(null)
   const [selectedRegion, setSelectedRegion] = useState('all')
-  const [mapReady, setMapReady] = useState(false)
-
-  const regions = [
-    { id: 'all', label: 'All Courses' },
-    { id: 'palma', label: 'Palma' },
-    { id: 'southwest', label: 'Southwest' },
-    { id: 'south', label: 'South' },
-    { id: 'east', label: 'East' },
-    { id: 'north', label: 'North' },
-  ]
-
-  const allCourses = GOLF_COURSE_DATA.flatMap(region => region.courses)
 
   const filteredCourses = selectedRegion === 'all'
-    ? allCourses
-    : allCourses.filter(c => c.region === selectedRegion)
+    ? ALL_COURSES
+    : ALL_COURSES.filter(c => c.region === selectedRegion)
 
+  // Initialise the map once.
   useEffect(() => {
-    if (!mapContainer.current) return
+    if (!containerRef.current || mapRef.current) return
 
-    const initializeMap = async () => {
-      const L = await import('leaflet')
+    let cancelled = false
+    import('leaflet').then((L) => {
+      if (cancelled || !containerRef.current || mapRef.current) return
 
-      if (map.current) {
-        map.current.remove()
-      }
-
-      map.current = L.map(mapContainer.current).setView([39.6953, 3.0176], 9)
-
+      const map = L.map(containerRef.current, { scrollWheelZoom: false }).setView([39.62, 2.95], 9)
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© OpenStreetMap contributors',
-      }).addTo(map.current)
+        maxZoom: 18,
+        attribution: '&copy; OpenStreetMap contributors',
+      }).addTo(map)
 
-      filteredCourses.forEach(course => {
-        const coords = COURSE_COORDINATES[course.name]
-        if (coords) {
-          L.marker(coords)
-            .addTo(map.current)
-            .bindPopup(`<strong>${course.name}</strong><br/>${course.region}`)
-        }
-      })
-
-      setMapReady(true)
-    }
-
-    initializeMap()
+      markerLayerRef.current = L.layerGroup().addTo(map)
+      mapRef.current = { L, map }
+      drawMarkers()
+    })
 
     return () => {
-      if (map.current) {
-        map.current.remove()
+      cancelled = true
+      if (mapRef.current) {
+        mapRef.current.map.remove()
+        mapRef.current = null
+        markerLayerRef.current = null
       }
     }
-  }, [filteredCourses])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // Redraw markers whenever the region filter changes.
+  useEffect(() => {
+    drawMarkers()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedRegion])
+
+  function drawMarkers() {
+    if (!mapRef.current || !markerLayerRef.current) return
+    const { L, map } = mapRef.current
+    markerLayerRef.current.clearLayers()
+
+    const points = []
+    filteredCourses.forEach((course) => {
+      const coords = COURSE_COORDINATES[course.name]
+      if (!coords) return
+      points.push(coords)
+      L.circleMarker(coords, {
+        radius: 7,
+        color: '#2D4A3E',
+        weight: 2,
+        fillColor: '#CBA968',
+        fillOpacity: 0.9,
+      })
+        .bindPopup(`<strong>${course.name}</strong><br/>${course.location || ''}`)
+        .addTo(markerLayerRef.current)
+    })
+
+    if (points.length > 1) {
+      map.fitBounds(points, { padding: [40, 40], maxZoom: 12 })
+    } else if (points.length === 1) {
+      map.setView(points[0], 12)
+    }
+  }
 
   return (
-    <div style={{ marginTop: 40 }}>
-      <div style={{ marginBottom: 20 }}>
-        <p style={{ fontSize: 10, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'var(--taupe)', marginBottom: 12 }}>
-          Filter by region
-        </p>
-        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-          {regions.map(region => (
+    <div>
+      <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: 'clamp(1.5rem, 3.5vw, 2rem)', color: '#1A1916', marginBottom: 20 }}>
+        {labels.title}
+      </h2>
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
+        {regions.map(region => {
+          const active = selectedRegion === region.id
+          return (
             <button
               key={region.id}
+              type="button"
               onClick={() => setSelectedRegion(region.id)}
               style={{
                 padding: '8px 16px',
-                fontSize: '0.85rem',
-                border: selectedRegion === region.id ? '2px solid var(--pine)' : '1px solid var(--linen)',
-                background: selectedRegion === region.id ? 'var(--pine-pale)' : 'var(--white)',
-                color: selectedRegion === region.id ? 'var(--pine)' : 'var(--taupe)',
-                borderRadius: 4,
+                fontSize: '0.78rem',
+                fontFamily: "'Jost', sans-serif",
+                letterSpacing: '0.04em',
+                border: active ? '1px solid #2D4A3E' : '1px solid rgba(26,25,22,0.14)',
+                background: active ? '#2D4A3E' : '#fff',
+                color: active ? '#F7F4EF' : '#5A5248',
+                borderRadius: 99,
                 cursor: 'pointer',
-                fontWeight: 500,
                 transition: 'all 0.2s',
               }}
             >
               {region.label}
             </button>
-          ))}
-        </div>
+          )
+        })}
       </div>
 
       <div
-        ref={mapContainer}
+        ref={containerRef}
         style={{
           width: '100%',
-          height: '600px',
-          backgroundColor: 'var(--cream)',
-          borderRadius: 8,
-          border: '1px solid var(--linen)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: 'var(--taupe)',
-          fontSize: '0.9rem',
-          position: 'relative',
+          height: 480,
+          borderRadius: 12,
+          overflow: 'hidden',
+          border: '1px solid rgba(26,25,22,0.1)',
+          background: '#e8ece6',
         }}
-      >
-        {!mapReady && (
-          <div style={{ textAlign: 'center' }}>
-            <p>Map loading...</p>
-            <p style={{ fontSize: '0.8rem', marginTop: 8 }}>Showing {filteredCourses.length} course{filteredCourses.length !== 1 ? 's' : ''}</p>
-          </div>
-        )}
-      </div>
-
-      <div style={{ marginTop: 20, padding: '16px', backgroundColor: 'var(--cream)', borderRadius: 4 }}>
-        <p style={{ fontSize: '0.85rem', color: 'var(--charcoal)' }}>
-          <strong>{filteredCourses.length} course{filteredCourses.length !== 1 ? 's' : ''} in {selectedRegion === 'all' ? 'all regions' : regions.find(r => r.id === selectedRegion)?.label}</strong>
-        </p>
-      </div>
+      />
     </div>
   )
 }

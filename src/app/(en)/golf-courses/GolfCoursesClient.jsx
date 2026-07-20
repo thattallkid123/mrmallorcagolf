@@ -2,6 +2,12 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+
+const CourseMapView = dynamic(() => import('../../../components/CourseMapView'), {
+  ssr: false,
+  loading: () => <div style={{ height: 540 }} aria-hidden="true" />,
+})
 import { buildLocalePath } from '../../../lib/site'
 import { getGolfCoursesContent } from '../../../lib/golf-courses-content'
 import { GOLF_COURSE_DATA } from '../../../lib/golf-courses-data'
@@ -907,6 +913,10 @@ export default function GolfCoursesClient({ lang = 'en' }) {
         </div>
 
       </div>
+
+      <section style={{ maxWidth: 1120, margin: '0 auto', padding: '32px clamp(20px, 4vw, 40px) 56px' }}>
+        <CourseMapView lang={lang} />
+      </section>
 
       <section className="guide-cta">
         <div>

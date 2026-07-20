@@ -1,28 +1,42 @@
-// Mallorca golf course coordinates (lat, long)
-// Used by the map view for course location pins
+// Mallorca golf course coordinates [latitude, longitude] for the map view.
+// Keys MUST match the `name` field in golf-courses-data.js exactly (full names).
+//
+// Sources: OpenStreetMap (Nominatim + Photon geocoders), cross-checked against
+// each course's own listing. 22 of 24 are confirmed against the OSM
+// `golf_course` tag. The two marked APPROX below could not be resolved cleanly
+// by the geocoders — verify these against the course's Google listing.
 export const COURSE_COORDINATES = {
-  "Son Gual": [39.5439, 2.8628],
-  "Alcanada": [39.8189, 3.1361],
-  "T Golf Calvià": [39.2683, 2.6233],
-  "Son Muntaner": [39.5297, 2.8636],
-  "Son Vida": [39.5578, 2.8614],
-  "Son Quint": [39.5536, 2.8469],
-  "T Golf Palma Puntiró": [39.5664, 2.9236],
-  "Palma Pitch & Putt": [39.6033, 2.7447],
-  "Santa Ponsa I": [39.2994, 2.5264],
-  "Santa Ponsa II": [39.2969, 2.5294],
-  "Santa Ponsa III": [39.2947, 2.5361],
-  "Golf de Andratx": [39.1903, 2.3969],
-  "Bendinat": [39.3092, 2.6128],
-  "Maioris": [39.5578, 2.8814],
-  "Son Antem East": [39.4922, 2.9686],
-  "Son Antem West": [39.4886, 2.9736],
-  "Son Termes": [39.5703, 2.9289],
-  "Pollensa": [39.8461, 3.1328],
-  "Capdepera": [39.4153, 3.4331],
-  "Canyamel": [39.4297, 3.4183],
-  "Pula": [39.4519, 3.3711],
-  "Son Servera": [39.4586, 3.3572],
-  "Vall d'Or": [39.4614, 3.2869],
-  "La Reserva Rotana": [39.4819, 3.3425],
+  // Palma
+  'Golf Son Gual': [39.5662, 2.8003],
+  'Golf Son Vida': [39.5908, 2.5939],
+  'Son Muntaner': [39.5828, 2.6074],
+  'Golf Son Quint': [39.5913, 2.6044],
+  'T Golf Palma (Puntiró)': [39.5863, 2.7862],
+  'Palma Pitch & Putt': [39.5470, 2.6790], // APPROX — verify
+  'Golf Son Termes': [39.6728, 2.6583],
+
+  // Southwest
+  'Golf Santa Ponsa 1': [39.5119, 2.4993],
+  'Golf Santa Ponsa 2': [39.5133, 2.5012],
+  'Golf Santa Ponsa 3': [39.5106, 2.5031],
+  'Real Golf de Bendinat': [39.5455, 2.5834],
+  'T Golf Calvià (Poniente)': [39.4921, 2.5148],
+  'Golf de Andratx': [39.5414, 2.4202],
+
+  // South
+  'Golf Maioris': [39.4555, 2.7480], // APPROX — verify
+  'Golf Son Antem East': [39.4755, 2.8300],
+  'Golf Son Antem West': [39.4780, 2.8255],
+
+  // East
+  'Capdepera Golf': [39.6993, 3.3978],
+  'Canyamel Golf': [39.6741, 3.4317],
+  'Pula Golf': [39.6475, 3.3840],
+  'Golf Club Son Servera': [39.6406, 3.4120],
+  "Vall d'Or Golf": [39.4327, 3.2188],
+  'Reserva Rotana': [39.6061, 3.1839],
+
+  // North
+  'Club de Golf Alcanada': [39.8383, 3.1592],
+  'Golf Pollença': [39.8592, 3.0358],
 }
