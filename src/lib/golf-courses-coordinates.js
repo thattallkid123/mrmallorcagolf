@@ -1,0 +1,28 @@
+// Mallorca golf course coordinates (lat, long)
+// Used by the map view for course location pins
+export const COURSE_COORDINATES = {
+  "Son Gual": [39.5439, 2.8628],
+  "Alcanada": [39.8189, 3.1361],
+  "T Golf Calvià": [39.2683, 2.6233],
+  "Son Muntaner": [39.5297, 2.8636],
+  "Son Vida": [39.5578, 2.8614],
+  "Son Quint": [39.5536, 2.8469],
+  "T Golf Palma Puntiró": [39.5664, 2.9236],
+  "Palma Pitch & Putt": [39.6033, 2.7447],
+  "Santa Ponsa I": [39.2994, 2.5264],
+  "Santa Ponsa II": [39.2969, 2.5294],
+  "Santa Ponsa III": [39.2947, 2.5361],
+  "Golf de Andratx": [39.1903, 2.3969],
+  "Bendinat": [39.3092, 2.6128],
+  "Maioris": [39.5578, 2.8814],
+  "Son Antem East": [39.4922, 2.9686],
+  "Son Antem West": [39.4886, 2.9736],
+  "Son Termes": [39.5703, 2.9289],
+  "Pollensa": [39.8461, 3.1328],
+  "Capdepera": [39.4153, 3.4331],
+  "Canyamel": [39.4297, 3.4183],
+  "Pula": [39.4519, 3.3711],
+  "Son Servera": [39.4586, 3.3572],
+  "Vall d'Or": [39.4614, 3.2869],
+  "La Reserva Rotana": [39.4819, 3.3425],
+}
