@@ -1243,13 +1243,6 @@ body {
   gap: 0;
 }
 .nav__mobile.open { display: flex; }
-.nav__mobile.open::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.3);
-  z-index: -1;
-}
 .nav__mobile a {
   font-size: 11px;
   letter-spacing: 0.14em;
@@ -2335,7 +2328,7 @@ select.form-control { cursor: pointer; }
 .expert-cta { display: block; text-align: center; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; padding: 12px; background: var(--pine); color: #fff; text-decoration: none; font-family: var(--font-sans); transition: background 0.2s; }
 .expert-cta:hover { background: var(--pine-mid); }
 
-.filter-tabs { background: linear-gradient(to right, var(--white) 0%, var(--white) 85%, rgba(255,255,255,0.7) 100%); border-bottom: 1px solid var(--linen); padding: 0 40px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; position: sticky; top: var(--nav-h); z-index: 50; }
+.filter-tabs { background: var(--white); border-bottom: 1px solid var(--linen); padding: 0 40px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; position: sticky; top: var(--nav-h); z-index: 50; }
 .filter-tabs--anchored { scroll-margin-top: 80px; }
 .filter-tabs--primary { position: static; top: auto; }
 .filter-tabs--primary { background: var(--cream); border-bottom: 1px solid var(--sand); }
