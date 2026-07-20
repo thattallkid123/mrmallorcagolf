@@ -1,16 +1,12 @@
-import PageLayout from '../../../../components/PageLayout'
-import CourseComparisonClient from './CourseComparisonClient'
+import { permanentRedirect } from 'next/navigation'
 
+// The standalone comparison tool was merged into the green-fees tool
+// (now "Compare Mallorca Golf Courses"), which has the all-24 table plus a
+// head-to-head mode. Keep this path working with a permanent redirect.
 export const metadata = {
-  title: 'Compare Mallorca Golf Courses — Fees, Par, Difficulty & More',
-  description: "Compare all 24 Mallorca golf courses side-by-side. See green fees, par, difficulty, handicap requirements, walking rules, buggy costs, and Andy's verdict for each course.",
-  robots: { index: true, follow: true },
+  robots: { index: false, follow: true },
 }
 
-export default function CourseComparisonPage() {
-  return (
-    <PageLayout lang="en" navTransparent={false} showWhatsAppButton={false}>
-      <CourseComparisonClient />
-    </PageLayout>
-  )
+export default function CourseComparisonRedirect() {
+  permanentRedirect('/tools/green-fees')
 }

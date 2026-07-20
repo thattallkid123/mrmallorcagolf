@@ -6,7 +6,8 @@ import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { formatCourseAccessRequirement, getCourseAccessByName } from '../../../../lib/course-access-data'
 import { getCoursePricingByName } from '../../../../lib/course-pricing-data'
-import { getCourseShortName } from '../../../../lib/golf-courses-helpers'
+import { getCourseShortName, findCourseByName } from '../../../../lib/golf-courses-helpers'
+import { getScorecardByCourseName } from '../../../../lib/scorecard-data'
 
 const WA_MESSAGE = 'Hi Andy, I was comparing green fees on your site and I’d like help planning a Mallorca golf trip and tee times.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -97,6 +98,60 @@ export default function GreenFeesClient() {
   const [walking, setWalking] = useState('')
   const [sort, setSort] = useState('name')
   const [dir, setDir] = useState(1)
+  const [mode, setMode] = useState('table')
+  const [cmp, setCmp] = useState(['Son Gual', 'Alcanada'])
+
+  // findCourseByName is fuzzy but can't bridge Roman-vs-Arabic numerals or the
+  // Pollensa/Pollença spelling. Map those few to their canonical data names.
+  const COMPARE_NAME_FIX = {
+    'Santa Ponsa I': 'Golf Santa Ponsa 1',
+    'Santa Ponsa II': 'Golf Santa Ponsa 2',
+    'Santa Ponsa III': 'Golf Santa Ponsa 3',
+    Pollensa: 'Golf Pollença',
+  }
+
+  const compareData = useMemo(() => {
+    const byName = {}
+    COURSES.forEach((c) => {
+      const listing = findCourseByName(COMPARE_NAME_FIX[c.name] || c.name)
+      const scorecard = listing ? getScorecardByCourseName(listing.name) : null
+      byName[c.name] = {
+        ...c,
+        location: listing?.location || c.area,
+        par: scorecard?.par ?? null,
+        diffScore: listing?.diffScore ?? null,
+      }
+    })
+    return byName
+  }, [])
+
+  const compared = useMemo(
+    () => cmp.map((n) => compareData[n]).filter(Boolean),
+    [cmp, compareData],
+  )
+
+  function changeCompare(index, name) {
+    setCmp((prev) => {
+      const next = [...prev]
+      if (name) next[index] = name
+      else next.splice(index, 1)
+      return next
+    })
+  }
+
+  const compareRows = [
+    { label: 'Location', get: (c) => c.location || '–' },
+    { label: 'Area', get: (c) => c.area || '–' },
+    { label: 'Par', get: (c) => (c.par ? `Par ${c.par}` : '–') },
+    { label: 'Difficulty', get: (c) => c.diffScore || '–' },
+    { label: 'Holes', get: (c) => (c.nineHoles ? '9 holes' : '18 holes') },
+    { label: 'Green fee (peak)', get: (c) => fmtFee(c.peak, c.peakText) },
+    { label: 'Green fee (low)', get: (c) => fmtFee(c.low, c.lowText) },
+    { label: 'Buggy', get: (c) => c.buggy || '–' },
+    { label: 'Walking', get: (c) => walkingLabel(c).text },
+    { label: 'Handicap requirement', get: (c) => c.handicapNote || (c.handicap === 'yes' ? 'Yes' : 'No') },
+    { label: 'Andy’s verdict', get: (c) => c.verdict || '–' },
+  ]
 
   const rows = useMemo(() => {
     const list = COURSES.filter((c) => {
@@ -188,19 +243,42 @@ export default function GreenFeesClient() {
         .btn-wa:hover { background:#1eb858; }
         .gf-foot { text-align:center; font-size:.78rem; color:var(--muted); margin-top:36px; line-height:1.6; }
         .gf-foot a { color:var(--gold); text-decoration:none; }
-        @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } }
+        .gf-modebar { background:var(--cream); padding:18px 20px 0; }
+        .gf-modebar__inner { max-width:1100px; margin:0 auto; display:flex; gap:6px; border-bottom:1px solid rgba(45,74,62,.15); }
+        .gf-mode { font-family:'Jost',sans-serif; font-size:.85rem; letter-spacing:.04em; padding:12px 20px; background:none; border:none; border-bottom:2px solid transparent; color:var(--muted); cursor:pointer; margin-bottom:-1px; }
+        .gf-mode.is-active { color:var(--pine); border-bottom-color:var(--gold); font-weight:500; }
+        .gf-mode:hover { color:var(--pine); }
+        .gf-compare__intro { font-size:.9rem; color:var(--muted); line-height:1.6; margin-bottom:20px; }
+        .gf-compare__pickers { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px; }
+        .gf-compare__pickers .gf-fg select { min-width:200px; }
+        .gf-compare__table { overflow-x:auto; }
+        .gf-compare__label { font-weight:500; color:var(--pine); background:var(--cream); white-space:nowrap; }
+        @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } .gf-compare .gf-table-wrap { display:block; } .gf-compare__pickers .gf-fg select { min-width:140px; } }
       `}</style>
 
       <section className="gf-hero">
         <span className="gf-eyebrow">Free tool</span>
-        <h1>Mallorca Green Fee Comparison</h1>
-        <p className="sub">All 24 courses on the island in one honest table: approximate green fees, buggy costs, walking rules and handicap requirements, with a one-line verdict from Andy, a UK PGA Advanced Professional based in Mallorca.</p>
+        <h1>Compare Mallorca Golf Courses</h1>
+        <p className="sub">All 24 courses on the island: green fees, buggy costs, walking rules, par, difficulty and handicap requirements, with a one-line verdict from Andy, a UK PGA Advanced Professional based in Mallorca. Browse the full table, or put two or three head to head.</p>
         <div><span className="gf-updated">Last updated: July 2026</span></div>
       </section>
+
+      <div className="gf-modebar">
+        <div className="gf-modebar__inner" role="tablist" aria-label="Comparison mode">
+          <button type="button" role="tab" aria-selected={mode === 'table'} className={`gf-mode${mode === 'table' ? ' is-active' : ''}`} onClick={() => setMode('table')}>
+            All 24 courses
+          </button>
+          <button type="button" role="tab" aria-selected={mode === 'compare'} className={`gf-mode${mode === 'compare' ? ' is-active' : ''}`} onClick={() => setMode('compare')}>
+            Head-to-head (2–3)
+          </button>
+        </div>
+      </div>
 
       <ToolTrustLine />
 
       <main className="gf-main">
+        {mode === 'table' && (
+        <>
         <div className="gf-disclaimer">
           <strong>Please note:</strong> Prices are approximate and change seasonally. Always confirm directly with the course before booking. Peak season on Mallorca generally runs March–May and September–November; low season is midsummer and midwinter.
         </div>
@@ -304,6 +382,52 @@ export default function GreenFeesClient() {
             )
           })}
         </div>
+        </>
+        )}
+
+        {mode === 'compare' && (
+          <div className="gf-compare">
+            <p className="gf-compare__intro">Pick two or three courses to see them side by side. Every fact below comes from the same data as the full table.</p>
+            <div className="gf-compare__pickers">
+              {[0, 1, 2].map((i) => (
+                <div className="gf-fg" key={i}>
+                  <label htmlFor={`cmp-${i}`}>Course {i + 1}{i === 2 ? ' (optional)' : ''}</label>
+                  <select id={`cmp-${i}`} value={cmp[i] || ''} onChange={(e) => changeCompare(i, e.target.value)}>
+                    <option value="">{i === 2 ? 'Add a third course…' : 'Select a course…'}</option>
+                    {COURSES.map((c) => (
+                      <option key={c.name} value={c.name}>{displayCourseName(c.name)}</option>
+                    ))}
+                  </select>
+                </div>
+              ))}
+            </div>
+
+            {compared.length > 0 && (
+              <div className="gf-table-wrap gf-compare__table">
+                <table aria-label="Head-to-head course comparison">
+                  <thead>
+                    <tr>
+                      <th />
+                      {compared.map((c, i) => (
+                        <th key={`ch-${i}`}>{displayCourseName(c.name)}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {compareRows.map((row) => (
+                      <tr key={row.label}>
+                        <td className="gf-compare__label">{row.label}</td>
+                        {compared.map((c, i) => (
+                          <td key={`${row.label}-${i}`} className={row.label === 'Andy’s verdict' ? 'gf-verdict' : ''}>{row.get(c)}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </div>
+        )}
 
         <div className="gf-selcta">
           <h2>Not sure which course fits your group?</h2>

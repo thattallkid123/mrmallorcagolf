@@ -1,8 +1,8 @@
 export const dynamic = 'force-dynamic'
 
 export const metadata = {
-  title: 'Mallorca Green Fee Comparison — All 24 Courses',
-  description: 'Compare approximate green fees, buggy costs, walking rules and handicap limits for every golf course in Mallorca. One honest table, updated July 2026.',
+  title: 'Compare Mallorca Golf Courses — All 24, Fees, Par & Difficulty',
+  description: 'Compare all 24 Mallorca golf courses: green fees, buggy costs, walking rules, par, difficulty and handicap limits. Browse the full table or put two or three head to head.',
   robots: { index: true, follow: true },
 }
 

@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools', 'en', {
   title: 'Free Mallorca Golf Planning Tools | Mr Mallorca Golf',
-  description: 'Free tools to plan your Mallorca golf trip: course finder, handicap checker, green fee comparison, cost calculator, hotel recommender, and day builder.',
+  description: 'Free tools to plan your Mallorca golf trip: course finder, handicap checker, course comparison, cost calculator, hotel recommender, and day builder.',
   robots: { index: true, follow: true },
 })
 
@@ -30,11 +30,11 @@ const TOOLS = [
   },
   {
     href: '/tools/green-fees',
-    eyebrow: 'Price comparison',
-    title: 'Green fee comparison',
-    desc: 'All 24 courses in one honest table: approximate green fees, buggy costs, walking rules and handicap limits, with a one-line verdict from Andy on each.',
+    eyebrow: 'Course comparison',
+    title: 'Compare all 24 courses',
+    desc: 'Every course in one table: green fees, buggy costs, walking rules, par, difficulty and handicap limits, with Andy\'s verdict. Or put two or three head to head.',
     time: '< 1 min',
-    cta: 'Compare green fees',
+    cta: 'Compare courses',
   },
   {
     href: '/tools/golf-day-builder',
