@@ -147,17 +147,17 @@ export default function GreenFeesClient() {
   }
 
   const compareRows = [
-    { label: ‘Location’, get: (c) => c.location || ‘-’ },
-    { label: ‘Area’, get: (c) => c.area || ‘-’ },
-    { label: ‘Par’, get: (c) => (c.par ? `Par ${c.par}` : ‘-’) },
-    { label: ‘Difficulty’, get: (c) => c.diffScore || ‘-’ },
-    { label: ‘Holes’, get: (c) => (c.nineHoles ? ‘9’ : ‘18’) },
-    { label: ‘Peak fee’, get: (c) => fmtFee(c.peak, c.peakText) },
-    { label: ‘Low season’, get: (c) => fmtFee(c.low, c.lowText) },
-    { label: ‘Buggy’, get: (c) => c.buggy || ‘-’ },
-    { label: ‘Walkable’, get: (c) => walkableLabel(c).text },
-    { label: ‘Handicap’, get: (c) => handicapDisplay(c).text },
-    { label: "Andy’s verdict", get: (c) => c.verdict || ‘-’ },
+    { label: "Location", get: (c) => c.location || "-" },
+    { label: "Area", get: (c) => c.area || "-" },
+    { label: "Par", get: (c) => (c.par ? `Par ${c.par}` : "-") },
+    { label: "Difficulty", get: (c) => c.diffScore || "-" },
+    { label: "Holes", get: (c) => (c.nineHoles ? "9" : "18") },
+    { label: "Peak fee", get: (c) => fmtFee(c.peak, c.peakText) },
+    { label: "Low season", get: (c) => fmtFee(c.low, c.lowText) },
+    { label: "Buggy", get: (c) => c.buggy || "-" },
+    { label: "Walkable", get: (c) => walkableLabel(c).text },
+    { label: "Handicap", get: (c) => handicapDisplay(c).text },
+    { label: "Andy’s verdict", get: (c) => c.verdict || "-" },
   ]
 
   const rows = useMemo(() => {
