@@ -148,6 +148,9 @@ export default function GolfCoursesView({ locale = 'en', content }) {
             <p className="page-hero__lead" style={{ maxWidth: 780 }}>
               {content.hero.lead}
             </p>
+            <Link href={joinHref(locale, '/guides/mallorca-course-map')} style={{ display: 'inline-block', marginTop: 24, padding: '12px 28px', background: 'var(--gold)', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontSize: '0.9rem', fontWeight: 500, fontFamily: "'Jost', sans-serif", letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+              Map of All Courses →
+            </Link>
           </div>
         </header>
 
