@@ -157,7 +157,7 @@ export default function GreenFeesClient() {
     { label: ‘Buggy’, get: (c) => c.buggy || ‘-’ },
     { label: ‘Walkable’, get: (c) => walkableLabel(c).text },
     { label: ‘Handicap’, get: (c) => handicapDisplay(c).text },
-    { label: ‘Andy’s verdict’, get: (c) => c.verdict || ‘-’ },
+    { label: "Andy’s verdict", get: (c) => c.verdict || ‘-’ },
   ]
 
   const rows = useMemo(() => {
