@@ -6,6 +6,7 @@ import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { formatCourseAccessRequirement, getCourseAccessByName } from '../../../../lib/course-access-data'
 import { getCoursePricingByName } from '../../../../lib/course-pricing-data'
+import { getCourseLogisticsByName } from '../../../../lib/course-logistics-data'
 import { getCourseShortName, findCourseByName } from '../../../../lib/golf-courses-helpers'
 import { getScorecardByCourseName } from '../../../../lib/scorecard-data'
 
@@ -59,9 +60,33 @@ const BASE_COURSES = [
   { name: 'La Reserva Rotana',  area: 'East',      peakText: 'Hotel', lowText: 'Incl.', buggy: 'Not needed', walking: 'yes', walkingNote: '',                    handicap: 'yes', handicapNote: 'Cert req.', certRequired: true, nineHoles: true,  verdict: 'A private estate course for hotel guests. More escape than examination.', guideUrl: null },
 ]
 
+// Buggy guidance text comes straight from the master (course-logistics-data.js,
+// synced from the pricing sheet + course-logistics.json). Reduce it to a short
+// tag rather than showing the full sentence in a table cell.
+function buggyTag(guidance) {
+  if (!guidance) return null
+  const g = guidance.toLowerCase()
+  // Check 'recommended' first: some guidance reads "recommended... but not
+  // essential", where a plain essential-substring match would invert the meaning.
+  if (g.includes('recommended') || g.includes('required if')) return 'Recommended'
+  if (g.includes('essential')) return 'Essential'
+  if (g.includes('optional')) return 'Optional'
+  if (g.includes('no buggy needed')) return 'Not needed'
+  return null
+}
+
+function formatBuggyDisplay(logistics, fallback) {
+  if (!logistics) return fallback
+  if (logistics.buggyIncl) return 'Included'
+  const tag = buggyTag(logistics.buggyGuidance)
+  if (!logistics.buggy) return tag || 'Not needed'
+  return tag ? `€${logistics.buggy} · ${tag}` : `€${logistics.buggy}`
+}
+
 const COURSES = BASE_COURSES.map((course) => {
   const access = getCourseAccessByName(course.name)
   const pricing = getCoursePricingByName(course.name)
+  const logistics = getCourseLogisticsByName(course.name)
 
   return {
     ...course,
@@ -70,6 +95,10 @@ const COURSES = BASE_COURSES.map((course) => {
     handicap: access?.handicapRequired || access?.certificateRequired ? 'yes' : 'no',
     handicapNote: access ? formatCourseAccessRequirement(access) : course.handicapNote,
     nineHoles: access ? access.holes === 9 : course.nineHoles,
+    certRequired: access ? Boolean(access.certificateRequired) : course.certRequired,
+    buggy: formatBuggyDisplay(logistics, course.buggy),
+    walking: typeof logistics?.walkAllowed === 'boolean' ? (logistics.walkAllowed ? 'yes' : 'no') : course.walking,
+    walkingNote: '',
   }
 })
 
