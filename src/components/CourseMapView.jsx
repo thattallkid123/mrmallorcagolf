@@ -160,8 +160,7 @@ export default function CourseMapView({ lang = 'en' }) {
   function focusPin(item) {
     if (!mapRef.current) return
     const { map } = mapRef.current
-    map.panTo(item.coords)
-    map.setZoom(13)
+    map.flyTo(item.coords, 13, { duration: 1.5 })
     markersRef.current[item.n]?.openPopup()
     containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
