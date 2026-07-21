@@ -1,6 +1,11 @@
 # Mr Mallorca Golf — Website Repo (mrmallorcagolf-real)
 
-> **Scope:** This is the **website and code repo only** (`mrmallorcagolf-real`). For internal tooling, control panel, pricing sync scripts, and standalone apps, switch to `mmg-tools/` — it has its own CLAUDE.md.
+> **Scope:** This is the **website and code repo only** (`mrmallorcagolf-real`). For internal tooling, control panel, pricing sync scripts, and standalone apps, switch to `mmg-tools/` and read its documentation:
+>
+> - **`UPDATE-WORKFLOWS.md`** — what to edit and what command to run (start here)
+> - **`DATA-FLOWS.md`** — complete data flow maps  
+> - **`SOURCE-OF-TRUTH-MAP.md`** — canonical source for each data type
+> - **`CLAUDE.md`** — operating contract and rules
 
 > **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update`, `/health-check` — over re-deriving these from this file.
 
