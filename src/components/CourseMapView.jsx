@@ -141,10 +141,14 @@ export default function CourseMapView({ lang = 'en' }) {
         iconAnchor: [13, 13],
         popupAnchor: [0, -14],
       })
+      const popupContent = courses.length > 1
+        ? `<strong>${courses.map(c => getCourseShortName(c.name)).join('</strong><br/><strong>')}</strong><br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
+        : `<strong>${fullNames}</strong><br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
       const marker = L.marker(coords, { icon })
-        .bindPopup(`<strong>${fullNames}</strong><br/>${location}`)
-        .bindTooltip(`${n}. ${shortNames}`, { direction: 'top', offset: [0, -12] })
+        .bindPopup(popupContent)
+        .bindTooltip(shortNames, { direction: 'top', offset: [0, -12] })
         .addTo(markerLayerRef.current)
+        .on('popupopen', () => marker.closeTooltip())
       markersRef.current[n] = marker
       legendItems.push({ n, label: shortNames, coords })
     })
@@ -155,9 +159,11 @@ export default function CourseMapView({ lang = 'en' }) {
 
   function focusPin(item) {
     if (!mapRef.current) return
-    mapRef.current.map.setView(item.coords, 13, { animate: true })
+    const { map } = mapRef.current
+    map.panTo(item.coords)
+    map.setZoom(13)
     markersRef.current[item.n]?.openPopup()
-    containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   return (
