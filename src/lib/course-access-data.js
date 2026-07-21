@@ -112,7 +112,7 @@ export const COURSE_ACCESS_LIST = [
     accessType: "public",
     holes: 18,
     confidence: "high",
-    sourceNote: "Signed 2026 contract: handicap card required; no numeric East-course limit stated.",
+    sourceNote: "Official 2026 contract: course has no numeric handicap limit; handicap card/certificate required as proof of golfing ability.",
   },
   {
     name: "Golf Son Antem West",
@@ -123,7 +123,7 @@ export const COURSE_ACCESS_LIST = [
     accessType: "public",
     holes: 18,
     confidence: "high",
-    sourceNote: "Signed 2026 contract: maximum handicap 36 for ladies and gentlemen.",
+    sourceNote: "Official 2026 contract: maximum handicap 36 for ladies and gentlemen.",
   },
   {
     name: "Golf Son Gual",

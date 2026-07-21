@@ -133,15 +133,16 @@ export default function CourseMapView({ lang = 'en' }) {
       const fullNames = courses.map((c) => c.name).join(' & ')
       const shortNames = courses.map((c) => getCourseShortName(c.name)).join(' & ')
       const location = courses[0].location || ''
+      const isGrouped = courses.length > 1
       const icon = L.divIcon({
         className: '',
-        html: `<div style="width:26px;height:26px;border-radius:50%;background:#CBA968;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:'Jost',sans-serif;font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35)">${n}</div>`,
+        html: `<div style="width:26px;height:26px;border-radius:50%;background:#CBA968;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:'Jost',sans-serif;font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35);position:relative">${n}${isGrouped ? '<span style="position:absolute;bottom:-2px;right:-2px;width:14px;height:14px;background:#E8B854;border:1px solid #2D4A3E;border-radius:50%;font-size:9px;display:flex;align-items:center;justify-content:center">+</span>' : ''}</div>`,
         iconSize: [26, 26],
         iconAnchor: [13, 13],
         popupAnchor: [0, -14],
       })
       const marker = L.marker(coords, { icon })
-        .bindPopup(`<strong>${n}. ${fullNames}</strong><br/>${location}`)
+        .bindPopup(`<strong>${fullNames}</strong><br/>${location}`)
         .bindTooltip(`${n}. ${shortNames}`, { direction: 'top', offset: [0, -12] })
         .addTo(markerLayerRef.current)
       markersRef.current[n] = marker
