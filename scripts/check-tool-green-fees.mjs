@@ -85,9 +85,12 @@ function main() {
   const errors = []
   const selectorText = read('src/app/(en)/tools/course-selector/CourseSelectorToolClient.jsx')
   const greenFeesText = read('src/app/(en)/tools/green-fees/GreenFeesClient.jsx')
+  const dayBuilderText = read('src/app/(en)/golf-day-builder/GolfDayBuilderClient.jsx')
+  const greenFeesPrototypeText = read('prototypes/green-fees.html')
 
   if (!selectorText) errors.push('course-selector file not found')
   if (!greenFeesText) errors.push('green-fees file not found')
+  if (!dayBuilderText) errors.push('golf-day-builder file not found')
   if (errors.length) {
     for (const error of errors) console.error(`  - ${error}`)
     process.exitCode = 1
@@ -128,6 +131,26 @@ function main() {
         `green-fees "${row.name}" base row is Peak €${row.peak} / Low €${row.low}; canonical is Peak €${pricing.peak} / Low €${pricing.low}`,
       )
     }
+  }
+
+  const facilityClaimFiles = [
+    ['green-fees', greenFeesText],
+    ['golf-day-builder', dayBuilderText],
+    ['green-fees prototype', greenFeesPrototypeText],
+  ]
+  const exclusiveTrackmanClaim = /\b(?:only|unique)\b.{0,80}\btrackman\b|\btrackman\b.{0,80}\b(?:only|unique)\b/is
+  for (const [label, text] of facilityClaimFiles) {
+    if (text && exclusiveTrackmanClaim.test(text)) {
+      errors.push(`${label} must not claim that a Mallorca TrackMan Range is unique or the only one`)
+    }
+  }
+
+  const santaPonsa3Block = dayBuilderText?.match(/\{\s*id:\s*["']santa-ponsa-3["'][\s\S]*?\n\s*\}/)?.[0] || ''
+  if (!santaPonsa3Block.includes('Par 30')) {
+    errors.push('golf-day-builder Santa Ponsa 3 must match the scorecard master: Par 30')
+  }
+  if (/arranged access|access arranged through Andy/i.test(dayBuilderText)) {
+    errors.push('golf-day-builder must describe Santa Ponsa 2/3 as members only; guests must play with a member')
   }
 
   if (errors.length === 0) {

@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
-import { getCourseAccessByName } from '../../../../lib/course-access-data'
+import { getCourseAccessByName, getCourseAccessTypeLabel } from '../../../../lib/course-access-data'
 import { getCoursePricingByName } from '../../../../lib/course-pricing-data'
 import { getCourseLogisticsByName } from '../../../../lib/course-logistics-data'
 import { getCourseShortName, findCourseByName } from '../../../../lib/golf-courses-helpers'
@@ -43,8 +43,8 @@ const BASE_COURSES = [
   { name: 'T Golf Palma Puntiró', area: 'Palma',   peak: 150, low: 105, buggy: '€40',                           walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '28M / 34L', certRequired: true, nineHoles: false, verdict: "The only Nicklaus design in Mallorca, with a 42-bay range that makes it the island's best practice hub.", guideUrl: null },
   { name: 'Palma Pitch & Putt', area: 'Palma',     peak: 30,  low: 20,  buggy: 'Not needed',                    walking: 'yes',        walkingNote: '',                            handicap: 'no',  handicapNote: 'None', certRequired: false, nineHoles: true,  verdict: 'The natural starting point for beginners and juniors, a useful warm-up, or a low-pressure way for a non-golfer to try the game.', guideUrl: null },
   { name: 'Santa Ponsa I',      area: 'Southwest', peak: 126, low: 77,  buggy: '€43',                          walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '28M / 36L', certRequired: true, nineHoles: false, verdict: 'The open fairways here helped me get my own driving confidence back. The 590m 10th is one of the longest par 5s in Europe.', guideUrl: '/guides/santa-ponsa-1-review' },
-  { name: 'Santa Ponsa II',     area: 'Southwest', peakText: 'Via pro', lowText: 'Members', buggy: 'Member', walking: 'yes', walkingNote: '',           handicap: 'yes', handicapNote: '28M / 36L', certRequired: true, nineHoles: false, verdict: 'Quieter and more strategic than Santa Ponsa 1. The 18th green is shaped like Mallorca itself.', guideUrl: null },
-  { name: 'Santa Ponsa III',    area: 'Southwest', peakText: 'Via pro', lowText: 'Members', buggy: 'Not needed',        walking: 'yes', walkingNote: '',           handicap: 'yes', handicapNote: '28M / 36L', certRequired: true, nineHoles: true,  verdict: 'Most holes are short, but the second still asks for a precise tee shot. Best for beginners, approach practice, or a quick extra nine.', guideUrl: null },
+  { name: 'Santa Ponsa II',     area: 'Southwest', peak: 88, low: 65, buggy: '€38 · Optional', walking: 'yes', walkingNote: '', handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: false, verdict: 'Quieter and more strategic than Santa Ponsa 1. The 18th green is shaped like Mallorca itself.', guideUrl: null },
+  { name: 'Santa Ponsa III',    area: 'Southwest', peak: 30, low: 25, buggy: '€38 · Optional', walking: 'yes', walkingNote: '', handicap: 'no', handicapNote: 'None', certRequired: false, nineHoles: true, verdict: 'Most holes are short, but the second still asks for a precise tee shot. Best for beginners, approach practice, or a quick extra nine.', guideUrl: null },
   { name: 'Golf de Andratx',    area: 'Southwest', peak: 140, low: 90,  buggy: '€45 (morning)',                 walking: 'restricted', walkingNote: 'Walkable afternoon',         handicap: 'yes', handicapNote: '28M / 36L', certRequired: true, nineHoles: false, verdict: 'Home to the longest par 5 in Spain and the best sea views on the island. Bring plenty of golf balls.', guideUrl: '/guides/golf-andratx-review' },
   { name: 'Bendinat',           area: 'Southwest', peak: 123, low: 74,  buggy: '€33–€43',                       walking: 'restricted', walkingNote: 'Hilly',                     handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: false, verdict: 'Castle views and real hills. Take the buggy and enjoy it.', guideUrl: null },
   { name: 'Maioris',            area: 'Palma',     peak: 110, low: 91,  buggy: '€36–€47',                       walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: false, verdict: 'Less crowded than many Palma courses, with two significant climbs waiting in the closing holes.', guideUrl: null },
@@ -54,7 +54,7 @@ const BASE_COURSES = [
   { name: 'Pollensa',           area: 'North',     peak: 65,  low: 55,  buggy: '€25–€35',                       walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: true,  verdict: 'A compact nine-hole option under the Tramuntana mountains, with a few proper climbs despite the short format.', guideUrl: null },
   { name: 'Capdepera',          area: 'East',      peak: 125, low: 79,  buggy: '€35–€45',                       walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: false, verdict: 'The 15th is stroke index 1 and was voted the best hole on the island. Rafa Nadal plays here regularly.', guideUrl: null },
   { name: 'Canyamel',           area: 'East',      peak: 145, low: 85,  buggy: '€30–€45',                       walking: 'restricted', walkingNote: 'Front hilly', handicap: 'yes', handicapNote: '36M / 45L', certRequired: true, nineHoles: false, verdict: 'A José Gancedo design with lakes throughout. Tee off before 8:50am and the early-bird rate saves a decent amount.', guideUrl: null },
-  { name: 'Pula',               area: 'East',      peak: 145, low: 69,  buggy: '€45',                           walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '34M / 36L', certRequired: true, nineHoles: false, verdict: 'An Olazábal redesign with the only TrackMan range in Mallorca.', guideUrl: null },
+  { name: 'Pula',               area: 'East',      peak: 145, low: 69,  buggy: '€45',                           walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '34M / 36L', certRequired: true, nineHoles: false, verdict: 'An Olazábal redesign with a two-level range and strong short-game facilities. A good choice for a practice-heavy golf day.', guideUrl: null },
   { name: 'Son Servera',        area: 'East',      peak: 145, low: 80,  buggy: '€38–€49',                       walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: false, verdict: "The island's second oldest club. Flat, walkable, and the €21 menu del día is honest value.", guideUrl: null },
   { name: "Vall d'Or",          area: 'East',      peak: 132, low: 99,  buggy: '€35–€50',                       walking: 'restricted', walkingNote: 'Hilly',                      handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: false, verdict: 'Two different nines: wooded and uphill going out, sea views coming home.', guideUrl: null },
   { name: 'La Reserva Rotana',  area: 'East',      peakText: 'Hotel', lowText: 'Incl.', buggy: 'Not needed', walking: 'yes', walkingNote: '',                    handicap: 'yes', handicapNote: 'Cert req.', certRequired: true, nineHoles: true,  verdict: 'A quiet nine-hole estate course. More of a relaxed hotel round than a course to build the trip around.', guideUrl: null },
@@ -127,20 +127,21 @@ function walkableLabel(c) {
 }
 
 function handicapDisplay(c) {
-  if (!c.handicapRequired) return { text: 'No handicap limit', certificate: '', cls: '' }
+  if (!c.handicapRequired) return { text: 'No handicap limit', certificate: false, cls: '' }
   const sameLimit = Number.isFinite(c.handicapMen) && c.handicapMen === c.handicapWomen
   let text = 'Handicap required'
   if (sameLimit) text = `Max ${c.handicapMen}`
   else if (Number.isFinite(c.handicapMen) && Number.isFinite(c.handicapWomen)) text = `Max ${c.handicapMen} men / ${c.handicapWomen} women`
   else if (Number.isFinite(c.handicapMen)) text = `Max ${c.handicapMen} men`
   else if (Number.isFinite(c.handicapWomen)) text = `Max ${c.handicapWomen} women`
-  return { text, certificate: c.certRequired ? 'Certificate required' : '', cls: c.certRequired ? 'gold' : '' }
+  return { text, certificate: c.certRequired, cls: '' }
 }
 
 function accessDisplay(c) {
-  if (c.accessType === 'members_arranged') return { text: 'Members / arranged', cls: 'gold' }
-  if (c.accessType === 'hotel_guests') return { text: 'Hotel guests only', cls: 'gold' }
-  return { text: 'Public', cls: '' }
+  return {
+    text: getCourseAccessTypeLabel(c),
+    cls: c.accessType === 'public' ? '' : 'gold',
+  }
 }
 
 function feeDisplay(c, season) {
@@ -202,15 +203,13 @@ export default function GreenFeesClient() {
   function changeCompare(index, name) {
     setCmp((prev) => {
       const next = [...prev]
-      if (name) next[index] = name
-      else next.splice(index, 1)
+      next[index] = name
       return next
     })
   }
 
   const compareRows = [
     { label: "Location", get: (c) => c.location || "-" },
-    { label: "Area", get: (c) => c.area || "-" },
     { label: "Par", get: (c) => (c.par ? `Par ${c.par}` : "-") },
     { label: "Difficulty", get: (c) => c.diffScore || "-" },
     { label: "Holes", get: (c) => (c.nineHoles ? "9" : "18") },
@@ -219,8 +218,9 @@ export default function GreenFeesClient() {
     { label: "Access", get: (c) => accessDisplay(c).text },
     { label: "Buggy", get: (c) => c.buggy || "-" },
     { label: "Walkable", get: (c) => walkableLabel(c).text },
-    { label: "Handicap", get: (c) => `${handicapDisplay(c).text}${handicapDisplay(c).certificate ? ` · ${handicapDisplay(c).certificate}` : ''}` },
+    { label: "Handicap limit", get: (c) => `${handicapDisplay(c).text}${handicapDisplay(c).certificate ? '*' : ''}` },
     { label: "Andy’s verdict", get: (c) => c.verdict || "-" },
+    { label: "Course guide", get: (c) => c.guideUrl ? <Link className="gf-guide" href={c.guideUrl}>View full guide →</Link> : <span style={{ color: 'var(--muted)' }}>Coming soon</span> },
   ]
 
   const rows = useMemo(() => {
@@ -272,10 +272,7 @@ export default function GreenFeesClient() {
         .gf-hero .sub { font-family:'Jost',sans-serif; font-weight:300; font-size:.95rem; color:rgba(255,255,255,.85); max-width:640px; margin:0 auto; line-height:1.6; }
         .gf-updated { display:inline-block; margin-top:18px; border:1px solid var(--gold); color:var(--gold); font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; padding:6px 14px; border-radius:2px; }
         .gf-main { max-width:1100px; margin:0 auto; padding:32px 20px 80px; }
-        .gf-disclaimer { background:#fff; border-left:3px solid var(--gold); padding:14px 18px; font-size:.88rem; color:var(--muted); line-height:1.6; margin-bottom:18px; border-radius:0 3px 3px 0; }
-        .gf-key { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:28px; }
-        .gf-key__item { background:rgba(255,255,255,.7); border:1px solid rgba(45,74,62,.12); padding:12px 14px; font-size:.78rem; color:var(--muted); line-height:1.5; }
-        .gf-key__item strong { display:block; color:var(--pine); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:3px; }
+        .gf-disclaimer { background:#fff; border-left:3px solid var(--gold); padding:14px 18px; font-size:.88rem; color:var(--muted); line-height:1.6; margin-bottom:28px; border-radius:0 3px 3px 0; }
         .gf-filters { display:flex; flex-wrap:wrap; gap:12px; align-items:flex-end; margin-bottom:24px; }
         .gf-fg { display:flex; flex-direction:column; gap:5px; }
         .gf-fg label { font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
@@ -305,7 +302,7 @@ export default function GreenFeesClient() {
         .gf-pill { display:inline-block; font-size:.72rem; padding:2px 8px; border-radius:10px; background:rgba(45,74,62,.1); color:var(--pine); white-space:nowrap; }
         .gf-pill.no { background:rgba(160,60,40,.1); color:#8a3a26; }
         .gf-pill.gold { background:rgba(184,151,60,.15); color:#8a6f26; }
-        .gf-requirement { display:block; color:#8a3a26; font-size:.69rem; font-weight:500; line-height:1.35; margin-top:4px; white-space:nowrap; }
+        .gf-footnote { font-size:.76rem; color:var(--muted); line-height:1.5; margin:12px 2px 0; }
         .gf-reset { min-height:40px; border:1px solid rgba(45,74,62,.3); border-radius:4px; background:transparent; color:var(--pine); padding:8px 12px; font-family:'Jost',sans-serif; font-size:.82rem; cursor:pointer; }
         .gf-reset:hover { background:#fff; }
         .gf-cards { display:none; }
@@ -340,16 +337,17 @@ export default function GreenFeesClient() {
         .gf-compare__pickers { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px; }
         .gf-compare__pickers .gf-fg select { min-width:200px; }
         .gf-compare__table { overflow-x:auto; }
-        .gf-compare__table table { table-layout:auto; min-width:760px; }
+        .gf-compare__table table { table-layout:fixed; }
         .gf-compare__table thead th { position:static; width:auto; }
-        .gf-compare__label { font-weight:500; color:var(--pine); background:var(--cream); white-space:nowrap; }
-        @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } .gf-compare .gf-table-wrap { display:block; } .gf-compare__pickers .gf-fg select { min-width:140px; } .gf-key { grid-template-columns:1fr; } }
+        .gf-compare__table thead th:first-child { position:sticky; top:auto; left:0; z-index:3; width:130px; }
+        .gf-compare__label { position:sticky; left:0; z-index:2; width:130px; font-weight:500; color:var(--pine); background:var(--cream); white-space:nowrap; box-shadow:1px 0 rgba(45,74,62,.12); }
+        @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } .gf-compare .gf-table-wrap { display:block; } .gf-compare__pickers .gf-fg select { min-width:140px; } }
       `}</style>
 
       <section className="gf-hero">
         <span className="gf-eyebrow">Free tool</span>
         <h1>Compare Mallorca Golf Courses</h1>
-        <p className="sub">All 24 courses on the island: green fees, buggy costs, walking rules, par, difficulty and handicap requirements, with a one-line verdict from Andy, a UK PGA Advanced Professional based in Mallorca. Browse the full table, or put two or three head to head.</p>
+        <p className="sub">All 24 courses on the island: green fees, buggy costs, walking rules, access, difficulty and handicap limits, plus a one-line verdict from Andy, a UK PGA Advanced Professional based in Mallorca. Browse the full guide or compare up to five courses side by side.</p>
         <div><span className="gf-updated">Last updated: July 2026</span></div>
       </section>
 
@@ -367,18 +365,12 @@ export default function GreenFeesClient() {
       <ToolTrustLine />
 
       <main className="gf-main">
+        <div className="gf-disclaimer">
+          <strong>Planning prices:</strong> Peak season is generally March–May and September–November; low season is usually midsummer and midwinter. <strong>Variable rate</strong> means the course changes its price by demand, tee time, availability and how early you book, much like flights or hotels. Confirm the exact rate for your date before booking.
+        </div>
+
         {mode === 'table' && (
         <>
-        <div className="gf-disclaimer">
-          <strong>How to read the prices:</strong> Peak season on Mallorca generally runs March–May and September–November. Low season is usually midsummer and midwinter. These are planning prices, not live quotes, so confirm the rate for your exact date before booking.
-        </div>
-
-        <div className="gf-key" aria-label="Guide key">
-          <div className="gf-key__item"><strong>Peak-season fee</strong>The busier spring and autumn rate.</div>
-          <div className="gf-key__item"><strong>Low-season fee</strong>The quieter summer and winter rate.</div>
-          <div className="gf-key__item"><strong>Certificate required</strong>Shown in full beside the handicap limit. No symbols to decode.</div>
-        </div>
-
         <div className="gf-filters">
           <div className="gf-fg">
             <label htmlFor="f-area">Area</label>
@@ -435,7 +427,7 @@ export default function GreenFeesClient() {
                 <th>Access</th>
                 <th>Buggy</th>
                 <th>Walkable</th>
-                <th>Handicap</th>
+                <th>Handicap limit</th>
                 <th>Andy&rsquo;s verdict</th>
               </tr>
             </thead>
@@ -453,7 +445,7 @@ export default function GreenFeesClient() {
                     <td><span className={`gf-pill ${a.cls}`}>{a.text}</span></td>
                     <td>{c.buggy}</td>
                     <td><span className={`gf-pill ${w.cls}`}>{w.text}</span></td>
-                    <td><span className={`gf-pill ${h.cls}`}>{h.text}</span>{h.certificate && <span className="gf-requirement">{h.certificate}</span>}</td>
+                    <td><span className={`gf-pill ${h.cls}`}>{h.text}{h.certificate && <sup>*</sup>}</span></td>
                     <td className="gf-verdict">{c.verdict}</td>
                   </tr>
                 )
@@ -477,7 +469,7 @@ export default function GreenFeesClient() {
                   <div><span className="k">Access</span>{a.text}</div>
                   <div><span className="k">Buggy</span>{c.buggy}</div>
                   <div><span className="k">Walkable</span>{w.text}</div>
-                  <div><span className="k">Handicap</span>{h.text}{h.certificate && <span className="gf-requirement">{h.certificate}</span>}</div>
+                  <div><span className="k">Handicap limit</span>{h.text}{h.certificate && <sup>*</sup>}</div>
                 </div>
                 <div className="v-line">&ldquo;{c.verdict}&rdquo;</div>
                 {c.guideUrl && <Link className="gf-guide" href={c.guideUrl}>View full guide →</Link>}
@@ -485,12 +477,13 @@ export default function GreenFeesClient() {
             )
           })}
         </div>
+        <p className="gf-footnote">* Valid handicap certificate required.</p>
         </>
         )}
 
         {mode === 'compare' && (
           <div className="gf-compare">
-            <p className="gf-compare__intro">Pick up to five courses to see them side by side. Every fact below comes from the same data as the full table.</p>
+            <p className="gf-compare__intro">Choose two to five courses for a direct side-by-side check. On a phone, scroll the table sideways; the row labels stay visible.</p>
             <div className="gf-compare__pickers">
               {[0, 1, 2, 3, 4].map((i) => (
                 <div className="gf-fg" key={i}>
@@ -498,7 +491,7 @@ export default function GreenFeesClient() {
                   <select id={`cmp-${i}`} value={cmp[i] || ''} onChange={(e) => changeCompare(i, e.target.value)}>
                     <option value="">{i > 1 ? `Add course ${i + 1}…` : 'Select a course…'}</option>
                     {COURSES.map((c) => (
-                      <option key={c.name} value={c.name}>{displayCourseName(c.name)}</option>
+                      <option key={c.name} value={c.name} disabled={cmp.includes(c.name) && cmp[i] !== c.name}>{displayCourseName(c.name)}</option>
                     ))}
                   </select>
                 </div>
@@ -506,8 +499,8 @@ export default function GreenFeesClient() {
             </div>
 
             {compared.length > 0 && (
-              <div className="gf-table-wrap gf-compare__table">
-                <table aria-label="Head-to-head course comparison">
+              <div className="gf-table-wrap gf-compare__table" role="region" aria-label="Scrollable course comparison" tabIndex="0">
+                <table aria-label="Head-to-head course comparison" aria-describedby="gf-compare-note" style={{ minWidth: Math.max(760, 130 + compared.length * 200) }}>
                   <thead>
                     <tr>
                       <th />
@@ -529,6 +522,7 @@ export default function GreenFeesClient() {
                 </table>
               </div>
             )}
+            <p className="gf-footnote" id="gf-compare-note">* Valid handicap certificate required.</p>
           </div>
         )}
 

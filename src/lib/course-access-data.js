@@ -92,6 +92,7 @@ export const COURSE_ACCESS_LIST = [
     accessType: "members_arranged",
     holes: 18,
     confidence: "high",
+    sourceNote: "Confirmed by Andy 2026-07-22: members only; guests may play only when accompanied by a member.",
   },
   {
     name: "Golf Santa Ponsa 3",
@@ -102,6 +103,7 @@ export const COURSE_ACCESS_LIST = [
     accessType: "members_arranged",
     holes: 9,
     confidence: "high",
+    sourceNote: "Confirmed by Andy 2026-07-22: members only; guests may play only when accompanied by a member.",
   },
   {
     name: "Golf Son Antem East",
@@ -332,7 +334,7 @@ export function getCourseAccessTypeLabel(entryOrName) {
 
   switch (entry?.accessType) {
     case 'members_arranged':
-      return 'Members / arranged access'
+      return 'Members only · guests must play with a member'
     case 'hotel_guests':
       return 'Hotel guests only'
     case 'public':
