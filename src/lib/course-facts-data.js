@@ -79,8 +79,8 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Very hilly.",
     "buggyGuidance": "Buggy essential.",
     "travelFromPalmaMinutes": 15,
-    "designer": null,
-    "opened": null,
+    "designer": "Martin Hawtree",
+    "opened": "1986 (9 holes; extended to 18 in 1995)",
     "signatureHole": null,
     "practiceFacilities": "Driving range | Putting green | Chipping area"
   },
@@ -107,8 +107,8 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Front nine hilly with real elevation changes (buggy recommended); back nine flatter and easier, with equal scenery.",
     "buggyGuidance": "Buggy recommended for the front nine; optional on the back nine.",
     "travelFromPalmaMinutes": 75,
-    "designer": null,
-    "opened": null,
+    "designer": "José Gancedo",
+    "opened": "1988",
     "signatureHole": null,
     "practiceFacilities": "Driving range | Putting green | Pitching green | Chipping green | Practice bunker"
   },
@@ -135,9 +135,9 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Mostly flat, but the last 6 holes climb into the hills.",
     "buggyGuidance": "Some players will need a buggy.",
     "travelFromPalmaMinutes": 70,
-    "designer": null,
-    "opened": null,
-    "signatureHole": null,
+    "designer": "Dan Maples",
+    "opened": "1989",
+    "signatureHole": "15 (mountain views; voted Mallorca's most beautiful hole by Mallorca Magazin)",
     "practiceFacilities": "Driving range | Large practice range | Chipping areas | Bunkers | Putting greens"
   },
   "maioris": {
@@ -164,7 +164,7 @@ export const COURSE_FACTS = Object.freeze({
     "buggyGuidance": "Buggy required if that climbing is a concern.",
     "travelFromPalmaMinutes": 25,
     "designer": "Dieter Cabus",
-    "opened": null,
+    "opened": "2006",
     "signatureHole": null,
     "practiceFacilities": "Driving range with grass and mats | Large putting green | All-grass chipping/pitching area with slopes | Bunker work area"
   },
@@ -222,8 +222,8 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Walkable if reasonably fit, but there are a few climbs and it includes two of the longest holes in Mallorca.",
     "buggyGuidance": "Buggy recommended for many players, but not essential for everyone.",
     "travelFromPalmaMinutes": 45,
-    "designer": null,
-    "opened": null,
+    "designer": "José Gancedo (original) | Michael Pinner, Nicklaus Group (2000 redesign)",
+    "opened": "1986",
     "signatureHole": null,
     "practiceFacilities": "Driving range | Practice bunker | Pitching & putting greens | Golf school"
   },
@@ -283,7 +283,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": null,
     "opened": null,
     "signatureHole": null,
-    "practiceFacilities": "Driving range | Putting green | Pitching area / short practice hole (~70 yards)"
+    "practiceFacilities": "Driving range | Chipping green | Practice bunkers | Par-3 training area | Academy"
   },
   "santa_ponsa": {
     "id": "santa_ponsa",
