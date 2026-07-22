@@ -250,9 +250,9 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Walkable if fit; one notable hill.",
     "buggyGuidance": "Buggy optional for most players.",
     "travelFromPalmaMinutes": 60,
-    "designer": "Olazábal redesign",
-    "opened": null,
-    "signatureHole": "TrackMan Range",
+    "designer": "Opened in 1995 | José María Olazábal redesign completed in 2006",
+    "opened": "1995",
+    "signatureHole": "Olazábal redesign completed in 2006 — \"Challenging but Fair\"",
     "practiceFacilities": "Two-level driving range | TrackMan Range | 2 putting greens | Pitching green | Short-game area and bunkers | Head pro: Miquel Tous"
   },
   "rotana": {
@@ -340,7 +340,7 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Easily walkable, with some longer walks from greens to tees but not that undulating.",
     "buggyGuidance": "Buggy optional.",
     "travelFromPalmaMinutes": 25,
-    "designer": null,
+    "designer": "José Gancedo",
     "opened": "1991",
     "signatureHole": null,
     "practiceFacilities": "Shared Santa Ponsa practice complex | Long driving range | Large putting green | Pitching and chipping areas, including bunker practice"
@@ -370,7 +370,7 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Easily walkable as a short golf course.",
     "buggyGuidance": "Buggy optional.",
     "travelFromPalmaMinutes": 30,
-    "designer": null,
+    "designer": "Francisco López",
     "opened": "1999",
     "signatureHole": null,
     "practiceFacilities": "Shared Santa Ponsa practice complex | Long driving range | Large putting green | Pitching and chipping areas, including bunker practice"
@@ -540,8 +540,8 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Easily walkable; flat.",
     "buggyGuidance": "Buggy optional.",
     "travelFromPalmaMinutes": 60,
-    "designer": null,
-    "opened": null,
+    "designer": "John Harris (original 9 holes) | Francisco López Segalés (18-hole expansion)",
+    "opened": "1967",
     "signatureHole": "Expanded from 9 to 18 holes in 2012",
     "practiceFacilities": "Driving range | 15 mats + seasonal grass area | Putting green | 2 chipping areas | Practice bunker | Golf school"
   },
@@ -629,7 +629,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "John Harris",
     "opened": "1978 (renovated €10M)",
     "signatureHole": "10 (water hazard)",
-    "practiceFacilities": "Grass driving range with Toptracer | Short game area"
+    "practiceFacilities": "Grass driving range with Toptracer | 40 stations | 7 target greens at varying distances protected by 10 bunkers | Short game area"
   },
   "t_golf_palma": {
     "id": "t_golf_palma",
@@ -660,7 +660,7 @@ export const COURSE_FACTS = Object.freeze({
     "buggyGuidance": "Buggy paths exist and buggies can go onto fairways, weather permitting.",
     "travelFromPalmaMinutes": 25,
     "designer": "Jack Nicklaus",
-    "opened": null,
+    "opened": "2006",
     "signatureHole": null,
     "practiceFacilities": "42-bay driving range (14 covered bays) | 250-metre distance | Putting greens | Generous short game training area | PGA-certified coaches available (multiple languages) | Academy coaches: Coque Insua, Marc Urpi, Moritz Beyer"
   },
