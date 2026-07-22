@@ -299,7 +299,7 @@ export default function GreenFeesClient() {
         a.gf-guide:hover { text-decoration:underline; }
         .gf .approx { color:var(--muted); font-size:.72rem; display:block; }
         .gf td.gf-verdict { font-style:italic; color:#4a463f; max-width:240px; min-width:180px; padding-right:16px; }
-        .gf-pill { display:inline-block; font-size:.72rem; padding:2px 8px; border-radius:10px; background:rgba(45,74,62,.1); color:var(--pine); white-space:nowrap; }
+        .gf-pill { display:inline-block; box-sizing:border-box; max-width:100%; font-size:.72rem; line-height:1.35; padding:2px 8px; border-radius:10px; background:rgba(45,74,62,.1); color:var(--pine); white-space:normal; overflow-wrap:anywhere; }
         .gf-pill.no { background:rgba(160,60,40,.1); color:#8a3a26; }
         .gf-pill.gold { background:rgba(184,151,60,.15); color:#8a6f26; }
         .gf-footnote { font-size:.76rem; color:var(--muted); line-height:1.5; margin:12px 2px 0; }
