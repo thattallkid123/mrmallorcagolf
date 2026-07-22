@@ -72,7 +72,7 @@ const HOME_METADATA = {
 
 const GOLF_COURSES_METADATA = {
   en: {
-    title: 'Mallorca Golf Courses | Reviews, Green Fees & Which Course to Choose',
+    title: 'Mallorca Golf Courses: Reviews, Green Fees & Which to Play',
     description:
       'All 24 Mallorca golf courses in one place: green fees €55-€250, regions, difficulty, and which one fits your trip, from a PGA pro who plays them all.',
   },

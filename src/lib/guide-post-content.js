@@ -6,7 +6,7 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: 'Son Gual Golf Mallorca Review (2026) | Is It Worth It? Green Fees, Wind & Verdict',
+        title: 'Son Gual Mallorca: Honest Golf Review & Green Fees (2026)',
         description:
           "Son Gual charges €115–€165 and requires a handicap certificate. PGA review: course conditions, wind notes, and a straight answer on who should and shouldn't book it.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
@@ -424,7 +424,7 @@ export const GUIDE_POST_CONTENT = {
   'santa-ponsa-1-review': {
     en: {
       metadata: {
-        title: "Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026)",
+        title: "Santa Ponsa 1 Golf - Honest Mallorca Review (2026)",
         description:
           "Santa Ponsa 1 golf course Mallorca reviewed by a PGA Professional. One of Europe's longest courses, DP World Tour history, and a confidence-builder for anyone who loves hitting driver.",
         imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
