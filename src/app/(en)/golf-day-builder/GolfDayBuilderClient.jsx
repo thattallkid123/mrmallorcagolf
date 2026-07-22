@@ -523,22 +523,23 @@ export default function GolfDayBuilderClient() {
     <div ref={containerRef}>
       <style jsx>{`
         .gdb-hero { background:#2D4A3E; color:#F7F4EF; padding:52px 24px 48px; text-align:center; }
-        .gdb-eyebrow { font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
-        .gdb-h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
-        .gdb-sub { font-family:'Jost',sans-serif; font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
+        .gdb-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
+        .gdb-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .gdb-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .gdb-wrap { max-width:680px; margin:0 auto; padding:0 22px 90px; }
         /* Intro */
         .gdb-intro { text-align:center; padding-top:40px; }
         .gdb-lead { font-size:1rem; max-width:440px; margin:0 auto 30px; color:#2C2A27; line-height:1.85; }
-        .gdb-btn-gold { background:#B8973C; color:#1A1916; border:none; padding:16px 34px; font-family:'Jost',sans-serif; font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; border-radius:999px; transition:opacity .25s; }
+        .gdb-btn-gold { background:#B8973C; color:#1A1916; border:none; padding:16px 34px; font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; border-radius:999px; transition:opacity .25s, transform .25s; }
         .gdb-btn-gold:hover { opacity:.9; }
+        .gdb-btn-gold:hover, .gdb-btn-pine:hover, .gdb-btn-ghost:hover, .gdb-cta-secondary .gdb-btn-secondary:hover, .gdb-tool-link:hover { transform:translateY(-1px); }
         /* Progress */
         .gdb-progress { display:flex; gap:4px; justify-content:center; margin:34px auto 10px; max-width:300px; }
         .gdb-progress span { flex:1; height:2px; background:#E0D8CB; transition:background .3s; }
         .gdb-progress span.done { background:#B8973C; }
         .gdb-step-label { text-align:center; font-weight:400; font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:#8A7F74; margin-bottom:8px; }
         /* Question cards */
-        .gdb-qcard h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.7rem,4vw,2.3rem); font-weight:500; line-height:1.12; color:#1A1916; text-align:center; margin:16px 0 4px; }
+        .gdb-qcard h2 { font-family:var(--font-serif); font-size:clamp(1.7rem,4vw,2.3rem); font-weight:500; line-height:1.12; color:#1A1916; text-align:center; margin:16px 0 4px; }
         .gdb-qcard .sub { text-align:center; color:#8A7F74; font-size:.95rem; margin-bottom:26px; line-height:1.6; }
         .gdb-multi-note { text-align:center; font-weight:400; font-size:9px; color:#B8973C; margin-bottom:16px; letter-spacing:.14em; text-transform:uppercase; }
         .gdb-opts { display:grid; grid-template-columns:1fr; gap:10px; }
@@ -549,27 +550,27 @@ export default function GolfDayBuilderClient() {
         .gdb-opt { background:#fff; border:1px solid #E0D8CB; padding:18px; cursor:pointer; text-align:left; display:flex; gap:16px; align-items:center; transition:border-color .25s, box-shadow .25s, transform .2s; font:inherit; color:inherit; width:100%; }
         .gdb-opt:hover { border-color:#B8973C; transform:translateY(-1px); }
         .gdb-opt.selected { border-color:#B8973C; background:#F4EDD8; }
-        .gdb-opt .t { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.18rem; font-weight:500; color:#1A1916; line-height:1.2; }
+        .gdb-opt .t { font-family:var(--font-serif); font-size:1.18rem; font-weight:500; color:#1A1916; line-height:1.2; }
         .gdb-opt .d { font-size:.78rem; font-weight:400; color:#8A7F74; margin-top:2px; line-height:1.5; display:block; }
         .gdb-nav-row { display:flex; justify-content:space-between; margin-top:28px; gap:12px; }
-        .gdb-btn-pine { background:#2D4A3E; color:#fff; border:none; padding:16px 34px; font-family:'Jost',sans-serif; font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:background .25s; border-radius:999px; }
+        .gdb-btn-pine { background:#2D4A3E; color:#fff; border:none; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:background .25s, transform .25s; border-radius:999px; }
         .gdb-btn-pine:hover { background:#3D6455; }
         .gdb-btn-pine:disabled { opacity:.35; cursor:not-allowed; }
-        .gdb-btn-ghost { background:transparent; color:#8A7F74; border:1px solid #E0D8CB; padding:16px 34px; font-family:'Jost',sans-serif; font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:border-color .25s; border-radius:999px; }
+        .gdb-btn-ghost { background:transparent; color:#8A7F74; border:1px solid #E0D8CB; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:border-color .25s, color .25s, transform .25s; border-radius:999px; }
         .gdb-btn-ghost:hover { border-color:#B8973C; color:#2C2A27; }
         /* Results */
         .gdb-result-head { text-align:center; padding-top:40px; margin-bottom:8px; }
-        .gdb-result-head .eyebrow { font-family:'Jost',sans-serif; font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:12px; display:block; }
-        .gdb-result-head h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.9rem,4.5vw,2.7rem); font-weight:500; color:#1A1916; line-height:1.1; }
+        .gdb-result-head .eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:12px; display:block; }
+        .gdb-result-head h2 { font-family:var(--font-serif); font-size:clamp(1.9rem,4.5vw,2.7rem); font-weight:500; color:#1A1916; line-height:1.1; }
         .gdb-result-head p { color:#8A7F74; margin-top:10px; font-size:.95rem; }
         .gdb-tabs { display:flex; gap:2px; margin:28px 0 24px; border:1px solid #E0D8CB; background:#fff; }
-        .gdb-tab { flex:1; border:none; padding:14px 6px; cursor:pointer; font-family:'Jost',sans-serif; font-weight:500; font-size:9px; letter-spacing:.12em; text-transform:uppercase; line-height:1.5; background:transparent; color:#8A7F74; transition:background .25s, color .25s; }
+        .gdb-tab { flex:1; border:none; padding:14px 6px; cursor:pointer; font-family:var(--font-sans); font-weight:500; font-size:9px; letter-spacing:.12em; text-transform:uppercase; line-height:1.5; background:transparent; color:#8A7F74; transition:background .25s, color .25s; }
         .gdb-tab.active { background:#2D4A3E; color:#fff; }
         .gdb-itin { display:none; }
         .gdb-itin.active { display:block; }
         .gdb-course-card { background:linear-gradient(165deg, #2D4A3E 0%, #1A1916 120%); color:#fff; padding:30px 26px; margin-bottom:28px; position:relative; overflow:hidden; }
         .gdb-course-card .tag { display:inline-block; font-weight:500; font-size:9px; letter-spacing:.22em; text-transform:uppercase; color:#D4B068; border:1px solid rgba(212,176,104,.4); padding:6px 12px; margin-bottom:16px; }
-        .gdb-course-card h3 { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.9rem; font-weight:500; line-height:1.1; margin-bottom:8px; }
+        .gdb-course-card h3 { font-family:var(--font-serif); font-size:1.9rem; font-weight:500; line-height:1.1; margin-bottom:8px; }
         .gdb-course-card .where { font-size:.78rem; font-weight:400; letter-spacing:.06em; color:rgba(255,255,255,0.72); }
         .gdb-course-card .blurb { margin-top:14px; font-size:.92rem; color:rgba(255,255,255,0.78); line-height:1.8; max-width:46ch; }
         .gdb-pills { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
@@ -579,40 +580,40 @@ export default function GolfDayBuilderClient() {
         .gdb-timeline::before { content:""; position:absolute; left:13px; top:10px; bottom:14px; width:1px; background:linear-gradient(#B8973C, #E0D8CB); }
         .gdb-tl-item { position:relative; padding-bottom:26px; }
         .gdb-tl-item:last-child { padding-bottom:8px; }
-        .gdb-tl-dot { position:absolute; left:-40px; top:0; width:27px; height:27px; background:#fff; border:1px solid #B8973C; display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; font-size:.8rem; color:#B8973C; }
+        .gdb-tl-dot { position:absolute; left:-40px; top:0; width:27px; height:27px; background:#fff; border:1px solid #B8973C; display:flex; align-items:center; justify-content:center; font-family:var(--font-serif); font-style:italic; font-size:.8rem; color:#B8973C; }
         .gdb-tl-time { font-size:9px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#B8973C; }
-        .gdb-tl-title { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.22rem; font-weight:500; color:#1A1916; margin-top:3px; line-height:1.25; }
+        .gdb-tl-title { font-family:var(--font-serif); font-size:1.22rem; font-weight:500; color:#1A1916; margin-top:3px; line-height:1.25; }
         .gdb-tl-desc { font-size:.85rem; font-weight:300; color:#2C2A27; margin-top:4px; line-height:1.75; max-width:52ch; }
         .gdb-why-card { border-left:2px solid #B8973C; background:#F4EDD8; padding:24px 26px; margin-top:26px; }
         .gdb-why-card h4 { font-weight:500; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:10px; }
-        .gdb-why-card p { font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; font-size:1.1rem; color:#2D4A3E; line-height:1.6; }
+        .gdb-why-card p { font-family:var(--font-serif); font-style:italic; font-size:1.1rem; color:#2D4A3E; line-height:1.6; }
         .gdb-andy-card { background:#EDE9E1; padding:26px; margin-top:18px; }
         .gdb-andy-card h4 { font-weight:500; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:14px; }
         .gdb-andy-card ul { list-style:none; }
         .gdb-andy-card li { font-size:.88rem; font-weight:300; padding:6px 0 6px 28px; position:relative; color:#2C2A27; }
-        .gdb-andy-card li::before { content:'·'; position:absolute; left:6px; font-family:'Cormorant Garamond',Georgia,serif; font-size:1.4rem; line-height:1; top:6px; color:#B8973C; }
+        .gdb-andy-card li::before { content:'·'; position:absolute; left:6px; font-family:var(--font-serif); font-size:1.4rem; line-height:1; top:6px; color:#B8973C; }
         .gdb-estimate-note { font-size:.74rem; font-weight:300; font-style:italic; color:#8A7F74; text-align:center; margin-top:22px; line-height:1.7; }
         /* CTA block */
         .gdb-cta-block { margin-top:38px; background:#1A1916; padding:44px 28px; text-align:center; color:#fff; }
-        .gdb-cta-block .eyebrow { font-family:'Jost',sans-serif; font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#D4B068; margin-bottom:14px; display:block; }
-        .gdb-cta-block h3 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.6rem,4vw,2.1rem); font-weight:500; line-height:1.15; max-width:420px; margin:0 auto 12px; }
+        .gdb-cta-block .eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#D4B068; margin-bottom:14px; display:block; }
+        .gdb-cta-block h3 { font-family:var(--font-serif); font-size:clamp(1.6rem,4vw,2.1rem); font-weight:500; line-height:1.15; max-width:420px; margin:0 auto 12px; }
         .gdb-cta-copy { font-size:.9rem; color:rgba(255,255,255,.72); max-width:400px; margin:0 auto 28px; line-height:1.8; }
         .gdb-cta-grid { display:grid; gap:10px; max-width:380px; margin:0 auto; }
         .gdb-email-row { display:flex; flex-direction:column; gap:8px; align-items:center; }
         .gdb-email-row .gdb-btn-gold { width:100%; }
-        .gdb-email-input { width:100%; border:none; padding:14px 16px; font-size:14px; font-family:'Jost',sans-serif; color:#2C2A27; border-radius:999px; text-align:center; }
+        .gdb-email-input { width:100%; border:none; padding:14px 16px; font-size:14px; font-family:var(--font-sans); color:#2C2A27; border-radius:999px; text-align:center; }
         .gdb-email-success { font-size:13px; color:#D4B068; margin:0; }
-        .gdb-newsletter-label { display:flex; align-items:center; gap:8px; font-family:'Jost',sans-serif; font-size:12px; color:rgba(255,255,255,.6); cursor:pointer; margin-top:4px; }
+        .gdb-newsletter-label { display:flex; align-items:center; gap:8px; font-family:var(--font-sans); font-size:12px; color:rgba(255,255,255,.6); cursor:pointer; margin-top:4px; }
         .gdb-cta-secondary { display:flex; gap:8px; margin-top:6px; }
-        .gdb-cta-secondary .gdb-btn-secondary { flex:1; background:transparent; color:rgba(255,255,255,0.85); border:1px solid rgba(255,255,255,.22); padding:13px 6px; font-family:'Jost',sans-serif; font-size:9px; font-weight:500; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; border-radius:999px; }
+        .gdb-cta-secondary .gdb-btn-secondary { flex:1; background:transparent; color:rgba(255,255,255,0.85); border:1px solid rgba(255,255,255,.22); padding:13px 6px; font-family:var(--font-sans); font-size:9px; font-weight:500; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; border-radius:999px; transition:border-color .25s, color .25s, transform .25s; }
         .gdb-cta-secondary .gdb-btn-secondary:hover { border-color:#D4B068; color:#D4B068; }
-        .gdb-restart { display:block; margin:18px auto 0; background:none; border:none; cursor:pointer; font-family:'Jost',sans-serif; font-weight:400; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding:14px 12px 2px; color:#8A7F74; border-bottom:1px solid #C4BAA9; }
+        .gdb-restart { display:block; margin:18px auto 0; background:none; border:none; cursor:pointer; font-family:var(--font-sans); font-weight:400; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding:14px 12px 2px; color:#8A7F74; border-bottom:1px solid #C4BAA9; }
         .gdb-restart:hover { color:#2C2A27; border-color:#B8973C; }
-        .gdb-more-tools { background:#EDE9E1; padding:18px 20px; margin-top:20px; text-align:center; }
-        .gdb-more-tools-label { font-family:'Jost',sans-serif; font-size:9px; text-transform:uppercase; letter-spacing:.18em; color:#8A7F74; margin-bottom:12px; }
+        .gdb-more-tools { background:#f4f1eb; border:1px solid #e0d8cb; border-radius:14px; padding:18px 20px; margin-top:20px; text-align:center; }
+        .gdb-more-tools-label { font-family:var(--font-sans); font-size:10px; text-transform:uppercase; letter-spacing:.18em; color:#8A7F74; margin-bottom:12px; font-weight:500; }
         .gdb-tool-links { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
-        .gdb-tool-link { display:inline-block; padding:10px 18px; font-size:.78rem; font-family:'Jost',sans-serif; font-weight:400; border:1px solid #E0D8CB; background:transparent; color:#8A7F74; text-decoration:none; border-radius:999px; transition:border-color .25s, color .25s; }
-        .gdb-tool-link:hover { border-color:#B8973C; color:#2C2A27; }
+        .gdb-tool-link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 18px; font-size:10px; font-family:var(--font-sans); font-weight:500; letter-spacing:.14em; text-transform:uppercase; border:1px solid rgba(45,74,62,.18); background:#fff; color:#2d4a3e; text-decoration:none; border-radius:999px; transition:border-color .25s, color .25s, transform .25s; }
+        .gdb-tool-link:hover { border-color:#B8973C; color:#1A1916; }
         .gdb-toast { position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(90px); background:#1A1916; color:#F7F4EF; padding:13px 26px; font-size:.8rem; font-weight:400; letter-spacing:.02em; box-shadow:0 22px 60px rgba(18,17,15,0.08); transition:transform .35s; z-index:50; max-width:88vw; text-align:center; border-radius:999px; }
         .gdb-toast.show { transform:translateX(-50%) translateY(0); }
       `}</style>
@@ -755,7 +756,7 @@ export default function GolfDayBuilderClient() {
                     <p className="gdb-email-success">&#10003; Done. Your plans are on their way.</p>
                     {!pdfSent ? (
                       <div style={{ background:'rgba(247,244,239,0.08)', border:'1px solid rgba(184,151,60,0.3)', borderRadius:'10px', padding:'14px 16px', margin:'10px 0' }}>
-                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:"'Jost',sans-serif" }}>Also free</p>
+                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:'var(--font-sans)' }}>Also free</p>
                         <p style={{ fontSize:'13px', color:'rgba(247,244,239,0.78)', marginBottom:'10px', lineHeight:'1.5' }}>The 7-Day Mallorca Golf Itinerary PDF. A ready-to-use week plan with the right courses in the right order.</p>
                         <a
                           href={TRIP_PLANNER_PDF_URL}
@@ -796,7 +797,7 @@ export default function GolfDayBuilderClient() {
                 )}
 
                 <div style={{ borderTop:'1px solid rgba(255,255,255,.14)', margin:'6px 0 2px' }} />
-                <p style={{ fontFamily:"'Jost',sans-serif", fontSize:'.82rem', color:'rgba(255,255,255,.7)', margin:'2px 0 4px', lineHeight:'1.6' }}>Or have Andy turn one of these into a booked day: tee time, restaurant and transport handled around your group.</p>
+                <p style={{ fontFamily:'var(--font-sans)', fontSize:'.82rem', color:'rgba(255,255,255,.7)', margin:'2px 0 4px', lineHeight:'1.6' }}>Or have Andy turn one of these into a booked day: tee time, restaurant and transport handled around your group.</p>
                 <button className="gdb-btn-gold" onClick={() => window.open('https://www.mrmallorcagolf.com/contact', '_blank', 'noopener')}>Ask Andy to build this for my group</button>
                 <button className="gdb-btn-pine" style={{ borderRadius:'999px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>Explore Play With A Pro</button>
                 <div className="gdb-cta-secondary">

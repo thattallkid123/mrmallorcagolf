@@ -873,9 +873,9 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     <div ref={containerRef}>
       <style jsx>{`
         .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:52px 24px 48px; text-align:center; }
-        .cst-eyebrow { font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
-        .cst-h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
-        .cst-sub { font-family:'Jost',sans-serif; font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
+        .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
+        .cst-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .cst-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .cst-wrap { max-width:680px; margin:0 auto; padding:0 18px 90px; }
         /* Progress */
         .cst-progress { margin:32px auto 28px; max-width:560px; }
@@ -883,7 +883,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-progress-fill { height:100%; background:linear-gradient(90deg,#B8973C,#D4B068); transition:width .5s cubic-bezier(0.22,1,0.36,1); border-radius:99px; }
         .cst-progress-label { display:flex; justify-content:space-between; font-size:.7rem; color:#8A7F74; margin-top:9px; letter-spacing:.12em; text-transform:uppercase; }
         /* Question */
-        .cst-q-title { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.55rem,4vw,2.1rem); color:#1A1916; text-align:center; margin-bottom:6px; font-weight:500; }
+        .cst-q-title { font-family:var(--font-serif); font-size:clamp(1.55rem,4vw,2.1rem); color:#1A1916; text-align:center; margin-bottom:6px; font-weight:500; }
         .cst-q-sub { text-align:center; color:#8A7F74; font-size:.9rem; margin-bottom:28px; }
         .cst-opts { display:grid; gap:12px; max-width:560px; margin:0 auto; }
         .cst-opts.cols-2 { grid-template-columns:1fr; }
@@ -899,7 +899,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-nav-row { display:flex; justify-content:space-between; max-width:560px; margin:26px auto 0; }
         .cst-btn-ghost { background:none; border:none; color:#8A7F74; cursor:pointer; font-size:.85rem; padding:10px 14px; font-family:inherit; letter-spacing:.04em; }
         .cst-btn-ghost:hover { color:#2D4A3E; }
-        .cst-btn { display:inline-block; background:#2D4A3E; color:#F7F4EF; border:1px solid #2D4A3E; cursor:pointer; padding:14px 30px; border-radius:99px; font-weight:400; font-size:.9rem; font-family:'Jost',sans-serif; letter-spacing:.06em; transition:all .3s; text-decoration:none; text-align:center; }
+        .cst-btn { display:inline-block; background:#2D4A3E; color:#F7F4EF; border:1px solid #2D4A3E; cursor:pointer; padding:14px 30px; border-radius:99px; font-weight:500; font-size:.8rem; font-family:var(--font-sans); letter-spacing:.18em; text-transform:uppercase; transition:all .3s; text-decoration:none; text-align:center; }
         .cst-btn:hover { background:#3D6455; border-color:#3D6455; transform:translateY(-2px); box-shadow:0 14px 30px rgba(45,74,62,0.22); }
         .cst-btn.gold { background:#B8973C; border-color:#B8973C; color:#fff; }
         .cst-btn.gold:hover { background:#D4B068; border-color:#D4B068; }
@@ -909,40 +909,40 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-btn.wa:hover { background:#1eb858; border-color:#1eb858; }
         /* Results */
         .cst-results-head { text-align:center; margin:10px 0 32px; }
-        .cst-results-head h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.7rem,4.5vw,2.4rem); color:#1A1916; font-weight:500; }
+        .cst-results-head h2 { font-family:var(--font-serif); font-size:clamp(1.7rem,4.5vw,2.4rem); color:#1A1916; font-weight:500; }
         .cst-results-head p { color:#8A7F74; margin-top:10px; font-size:.92rem; max-width:540px; margin-inline:auto; line-height:1.65; }
-        .cst-eyebrow-sm { display:inline-block; letter-spacing:.22em; text-transform:uppercase; font-size:.7rem; font-weight:500; color:#B8973C; margin-bottom:14px; font-family:'Jost',sans-serif; }
+        .cst-eyebrow-sm { display:inline-block; letter-spacing:.22em; text-transform:uppercase; font-size:.7rem; font-weight:500; color:#B8973C; margin-bottom:14px; font-family:var(--font-sans); }
         /* Course cards */
         .cst-course-card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 22px 60px rgba(18,17,15,0.08); margin-bottom:24px; border:1px solid rgba(26,25,22,0.08); }
         .cst-cc-banner { background:linear-gradient(120deg,#1A1916,#2D4A3E); padding:42px 24px 20px; position:relative; }
-        .cst-cc-rank { position:absolute; top:12px; left:12px; background:#B8973C; color:#fff; font-size:.65rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; padding:5px 13px; border-radius:99px; font-family:'Jost',sans-serif; }
-        .cst-cc-banner h3 { font-family:'Cormorant Garamond',Georgia,serif; color:#F7F4EF; font-size:1.7rem; margin-bottom:10px; line-height:1.1; font-weight:500; }
-        .cst-cc-match-line { font-family:'Jost',sans-serif; font-size:.8rem; color:rgba(247,244,239,0.78); line-height:1.55; border-top:1px solid rgba(255,255,255,.14); padding-top:10px; }
+        .cst-cc-rank { position:absolute; top:12px; left:12px; background:#B8973C; color:#fff; font-size:.65rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; padding:5px 13px; border-radius:99px; font-family:var(--font-sans); }
+        .cst-cc-banner h3 { font-family:var(--font-serif); color:#F7F4EF; font-size:1.7rem; margin-bottom:10px; line-height:1.1; font-weight:500; }
+        .cst-cc-match-line { font-family:var(--font-sans); font-size:.8rem; color:rgba(247,244,239,0.78); line-height:1.55; border-top:1px solid rgba(255,255,255,.14); padding-top:10px; }
         .cst-cc-body { padding:22px 24px 26px; }
-        .cst-cc-bestfor { font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:#B8973C; font-weight:500; margin-bottom:10px; font-family:'Jost',sans-serif; }
+        .cst-cc-bestfor { font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:#B8973C; font-weight:500; margin-bottom:10px; font-family:var(--font-sans); }
         .cst-cc-why { font-size:.93rem; line-height:1.7; color:#2C2A27; margin-bottom:12px; }
-        .cst-cc-facts { font-size:.78rem; line-height:1.6; color:#8A7F74; margin-bottom:18px; font-family:'Jost',sans-serif; letter-spacing:.03em; }
+        .cst-cc-facts { font-size:.78rem; line-height:1.6; color:#8A7F74; margin-bottom:18px; font-family:var(--font-sans); letter-spacing:.03em; }
         .cst-cc-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px 18px; margin-bottom:18px; border-top:1px solid #EDE9E1; border-bottom:1px solid #EDE9E1; padding:14px 0; }
         @media(min-width:560px) { .cst-cc-grid { grid-template-columns:1fr 1fr 1fr 1fr; } }
-        .cst-cc-stat .k { font-size:.66rem; text-transform:uppercase; letter-spacing:.12em; color:#8A7F74; font-family:'Jost',sans-serif; }
+        .cst-cc-stat .k { font-size:.66rem; text-transform:uppercase; letter-spacing:.12em; color:#8A7F74; font-family:var(--font-sans); }
         .cst-cc-stat .v { font-size:.86rem; font-weight:400; color:#2D4A3E; margin-top:3px; line-height:1.4; }
-        .cst-cc-andy { background:#F7F4EF; border-left:3px solid #B8973C; border-radius:0 10px 10px 0; padding:13px 17px; font-size:.9rem; line-height:1.65; color:#2C2A27; margin-bottom:18px; font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; }
-        .cst-cc-andy strong { font-style:normal; font-family:'Jost',sans-serif; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:#2D4A3E; display:block; margin-bottom:4px; }
+        .cst-cc-andy { background:#F7F4EF; border-left:3px solid #B8973C; border-radius:0 10px 10px 0; padding:13px 17px; font-size:.9rem; line-height:1.65; color:#2C2A27; margin-bottom:18px; font-family:var(--font-serif); font-style:italic; }
+        .cst-cc-andy strong { font-style:normal; font-family:var(--font-sans); font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:#2D4A3E; display:block; margin-bottom:4px; }
         .cst-cc-hcap { background:#fff8ee; border-left:3px solid #e8860a; border-radius:0 10px 10px 0; padding:9px 17px; font-size:.82rem; line-height:1.5; color:#7a4300; margin-bottom:18px; font-weight:400; }
         .cst-cc-members { background:#f0f4ff; border-left:3px solid #4a6fa5; border-radius:0 10px 10px 0; padding:9px 17px; font-size:.82rem; line-height:1.5; color:#2a3f6f; margin-bottom:18px; font-weight:400; }
         .cst-cc-actions { display:flex; flex-wrap:wrap; gap:10px; align-items:stretch; flex-direction:column; }
         .cst-cc-review { font-size:.83rem; color:#2D4A3E; text-decoration:underline; text-underline-offset:3px; cursor:pointer; background:none; border:none; font-family:inherit; }
-        .cst-compare-check { display:flex; align-items:center; gap:8px; font-size:.83rem; color:#8A7F74; cursor:pointer; margin-left:auto; letter-spacing:.03em; font-family:'Jost',sans-serif; }
+        .cst-compare-check { display:flex; align-items:center; gap:8px; font-size:.83rem; color:#8A7F74; cursor:pointer; margin-left:auto; letter-spacing:.03em; font-family:var(--font-sans); }
         /* Compare table */
         .cst-compare-wrap { overflow-x:auto; margin:20px 0; border-radius:14px; border:1px solid rgba(26,25,22,0.08); box-shadow:0 22px 60px rgba(18,17,15,0.08); }
         table.cst-compare { width:100%; border-collapse:collapse; background:#fff; min-width:560px; }
         table.cst-compare th, table.cst-compare td { padding:13px 18px; text-align:left; font-size:.88rem; border-bottom:1px solid #EDE9E1; font-weight:300; line-height:1.5; }
-        table.cst-compare th { background:#2D4A3E; color:#F7F4EF; font-family:'Cormorant Garamond',Georgia,serif; font-size:1.15rem; font-weight:500; }
+        table.cst-compare th { background:#2D4A3E; color:#F7F4EF; font-family:var(--font-serif); font-size:1.15rem; font-weight:500; }
         table.cst-compare td:first-child { font-weight:400; color:#8A7F74; font-size:.7rem; text-transform:uppercase; letter-spacing:.12em; width:140px; }
         table.cst-compare tr:last-child td { border-bottom:none; }
         /* Final CTA */
         .cst-final-cta { background:#2D4A3E; border-radius:20px; padding:42px 30px; text-align:center; color:#F7F4EF; margin-top:40px; box-shadow:0 30px 80px rgba(18,17,15,0.16); }
-        .cst-final-cta h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.5rem,4vw,2rem); margin-bottom:12px; font-weight:500; }
+        .cst-final-cta h2 { font-family:var(--font-serif); font-size:clamp(1.5rem,4vw,2rem); margin-bottom:12px; font-weight:500; }
         .cst-final-cta p { color:rgba(247,244,239,0.78); font-size:.92rem; max-width:470px; margin:0 auto 26px; line-height:1.7; font-weight:300; }
         .cst-email-row { display:flex; flex-direction:column; gap:10px; max-width:400px; margin:0 auto 16px; align-items:center; }
         .cst-email-row input { width:100%; padding:13px 18px; border-radius:99px; border:none; font-family:inherit; font-size:.9rem; background:rgba(247,244,239,0.95); color:#2C2A27; text-align:center; }
@@ -953,7 +953,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-restart { display:block; text-align:center; margin:20px auto 0; padding:14px 18px; color:#8A7F74; background:none; border:none; cursor:pointer; font-size:.85rem; text-decoration:underline; text-underline-offset:3px; font-family:inherit; }
         .cst-restart:hover { color:#2D4A3E; }
         /* Compare bar */
-        .cst-compare-bar { position:fixed; bottom:0; left:0; right:0; background:#1A1916; color:#F7F4EF; padding:14px 18px; justify-content:center; align-items:center; gap:16px; box-shadow:0 -10px 30px rgba(0,0,0,.2); z-index:50; font-size:.88rem; letter-spacing:.03em; font-family:'Jost',sans-serif; }
+        .cst-compare-bar { position:fixed; bottom:0; left:0; right:0; background:#1A1916; color:#F7F4EF; padding:14px 18px; justify-content:center; align-items:center; gap:16px; box-shadow:0 -10px 30px rgba(0,0,0,.2); z-index:50; font-size:.88rem; letter-spacing:.03em; font-family:var(--font-sans); }
       `}</style>
 
       {/* HERO */}
@@ -1134,7 +1134,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
               if (!items.length) return null
               return (
                 <div style={{ background:'#EDE9E1', borderRadius:'14px', padding:'18px 20px', marginTop:'16px' }}>
-                  <div style={{ fontFamily:"'Jost',sans-serif", fontSize:'.68rem', textTransform:'uppercase', letterSpacing:'.18em', color:'#8A7F74', marginBottom:'12px' }}>{t.results.extrasHeader}</div>
+                  <div style={{ fontFamily:'var(--font-sans)', fontSize:'.68rem', textTransform:'uppercase', letterSpacing:'.18em', color:'#8A7F74', marginBottom:'12px' }}>{t.results.extrasHeader}</div>
                   {items}
                 </div>
               )
@@ -1151,7 +1151,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
                   <p style={{ color:'#D4B068', fontSize:'.88rem', marginBottom:'18px' }}>{t.results.email.sent}</p>
                   {/* PDF offer on success */}
                   <div style={{ background:'rgba(247,244,239,0.1)', border:'1px solid rgba(184,151,60,0.35)', borderRadius:'12px', padding:'18px 20px', maxWidth:'400px', margin:'0 auto' }}>
-                    <p style={{ color:'#D4B068', fontSize:'.74rem', letterSpacing:'.14em', textTransform:'uppercase', marginBottom:'6px', fontFamily:"'Jost',sans-serif" }}>{t.results.email.pdfLabel}</p>
+                    <p style={{ color:'#D4B068', fontSize:'.74rem', letterSpacing:'.14em', textTransform:'uppercase', marginBottom:'6px', fontFamily:'var(--font-sans)' }}>{t.results.email.pdfLabel}</p>
                     <p style={{ fontSize:'.82rem', color:'rgba(247,244,239,0.78)', marginBottom:'14px', lineHeight:'1.55' }}>{t.results.email.pdfDesc}</p>
                     {pdfSent ? (
                       <div style={{ padding:'12px 0 4px' }}>
@@ -1183,7 +1183,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
                       {emailSending ? t.results.email.sending : t.results.email.button}
                     </button>
                   </div>
-                  <label style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'8px', color:'rgba(247,244,239,0.62)', fontSize:'.78rem', margin:'10px 0 12px', cursor:'pointer', fontFamily:"'Jost',sans-serif" }}>
+                  <label style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'8px', color:'rgba(247,244,239,0.62)', fontSize:'.78rem', margin:'10px 0 12px', cursor:'pointer', fontFamily:'var(--font-sans)' }}>
                     <input
                       type="checkbox"
                       checked={subscribeNewsletter}

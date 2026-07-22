@@ -305,51 +305,51 @@ export default function HandicapCheckerClient() {
           --warn-bg:#F6EFDD; --no:#8a3a26; --no-bg:#F5E7E2; --info:#3B5A72; --info-bg:#E8EFF4;
           background:var(--cream); color:var(--deep); }
         .hc-hero { background:var(--pine); padding:52px 24px 44px; text-align:center; color:#fff; }
-        .hc-eyebrow { font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em;
+        .hc-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em;
           text-transform:uppercase; color:var(--gold); }
-        .hc-hero h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500;
+        .hc-hero h1 { font-family:var(--font-serif); font-weight:500;
           font-size:clamp(1.9rem,4vw,2.8rem); margin:10px 0; }
-        .hc-hero .sub { font-family:'Jost',sans-serif; font-weight:300; font-size:.95rem;
+        .hc-hero .sub { font-family:var(--font-sans); font-weight:300; font-size:.95rem;
           color:rgba(255,255,255,.85); max-width:620px; margin:0 auto; line-height:1.6; }
         .hc-updated { display:inline-block; margin-top:18px; border:1px solid var(--gold); color:var(--gold);
-          font-family:'Jost',sans-serif; font-size:.75rem; letter-spacing:.1em; text-transform:uppercase;
+          font-family:var(--font-sans); font-size:.75rem; letter-spacing:.14em; text-transform:uppercase;
           padding:6px 14px; border-radius:2px; }
-        .hc-main { max-width:860px; margin:0 auto; padding:28px 20px 80px; font-family:'Jost',sans-serif; }
+        .hc-main { max-width:860px; margin:0 auto; padding:28px 20px 80px; font-family:var(--font-sans); }
         .hc-panel { background:#fff; border-radius:6px; padding:26px 24px; box-shadow:0 2px 12px rgba(45,74,62,.08); margin-bottom:26px; }
-        .hc-panel h2 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; color:var(--pine); font-size:1.4rem; margin-bottom:18px; }
+        .hc-panel h2 { font-family:var(--font-serif); font-weight:500; color:var(--pine); font-size:1.4rem; margin-bottom:18px; }
         .hc-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px 22px; }
         @media (max-width:560px){ .hc-grid { grid-template-columns:1fr; } }
         .hc-field .top { display:block; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:7px; }
-        .hc-field input[type=number], .hc-field select { font-family:'Jost',sans-serif; font-size:.95rem; width:100%;
-          padding:10px 12px; border:1px solid rgba(45,74,62,.3); border-radius:4px; background:#fff; color:var(--deep); }
+        .hc-field input[type=number], .hc-field select { font-family:var(--font-sans); font-size:.95rem; width:100%;
+          padding:11px 14px; border:1px solid rgba(45,74,62,.18); border-radius:999px; background:#fff; color:var(--deep); }
         .hc-field input:focus, .hc-field select:focus { outline:2px solid var(--gold); outline-offset:1px; }
         .hc-seg { display:flex; flex-wrap:wrap; gap:8px; }
-        .hc-seg button { font-family:'Jost',sans-serif; font-size:.88rem; cursor:pointer; padding:9px 16px;
-          border:1px solid rgba(45,74,62,.3); border-radius:4px; background:#fff; color:var(--deep); transition:all .15s; }
+        .hc-seg button { font-family:var(--font-sans); font-size:.82rem; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; padding:9px 16px;
+          border:1px solid rgba(45,74,62,.3); border-radius:999px; background:#fff; color:var(--deep); transition:all .15s; }
         .hc-seg button.active { background:var(--pine); color:#fff; border-color:var(--pine); }
         .hc-nohcp { display:flex; align-items:center; gap:8px; margin-top:9px; font-size:.85rem; color:var(--muted); cursor:pointer; }
         .hc-nohcp input { accent-color:var(--pine); width:16px; height:16px; cursor:pointer; }
         .hc-field-full { grid-column:1 / -1; }
         .hc-check { margin-top:22px; width:100%; background:var(--gold); color:#fff; border:none; cursor:pointer;
-          font-family:'Jost',sans-serif; font-size:.95rem; letter-spacing:.08em; text-transform:uppercase; padding:14px 20px; border-radius:4px; transition:background .2s; }
+          font-family:var(--font-sans); font-size:.82rem; letter-spacing:.18em; text-transform:uppercase; padding:14px 20px; border-radius:999px; transition:background .2s; }
         .hc-check:hover { background:#a5862f; }
         .hc-summary { background:var(--pine); color:#fff; border-radius:6px; padding:20px 24px; margin-bottom:22px; line-height:1.6; font-size:.95rem; }
         .hc-summary strong { color:var(--gold); font-weight:500; }
         .hc-rec { background:#fff; border-left:4px solid var(--gold); border-radius:6px; padding:18px 20px; margin-bottom:22px; box-shadow:0 2px 8px rgba(45,74,62,.07); }
         .hc-rec .lbl { font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); margin-bottom:6px; }
-        .hc-rec p { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.12rem; color:#2C2A27; line-height:1.6; }
+        .hc-rec p { font-family:var(--font-serif); font-size:1.12rem; color:#2C2A27; line-height:1.6; }
         .hc-pairnote { background:#fff; border-left:4px solid var(--pine); border-radius:6px; padding:16px 20px; margin:22px 0; box-shadow:0 2px 8px rgba(45,74,62,.07); }
         .hc-pairnote .lbl { font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--pine); margin-bottom:6px; }
-        .hc-pairnote p { font-family:'Jost',sans-serif; font-size:.9rem; color:#4a463f; line-height:1.6; }
-        .hc-group-head { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.35rem; font-weight:500; color:var(--pine);
+        .hc-pairnote p { font-family:var(--font-sans); font-size:.9rem; color:#4a463f; line-height:1.6; }
+        .hc-group-head { font-family:var(--font-serif); font-size:1.35rem; font-weight:500; color:var(--pine);
           margin:26px 0 12px; display:flex; align-items:baseline; gap:10px; }
-        .hc-group-head .count { font-family:'Jost',sans-serif; font-size:.8rem; color:var(--muted); }
+        .hc-group-head .count { font-family:var(--font-sans); font-size:.8rem; color:var(--muted); }
         .hc-cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
         @media (max-width:640px){ .hc-cards { grid-template-columns:1fr; } }
         .hc-card { background:#fff; border-radius:6px; padding:16px 18px; box-shadow:0 2px 8px rgba(45,74,62,.07); border-left:4px solid var(--muted); }
         .hc-card.ok { border-left-color:var(--ok); } .hc-card.warn { border-left-color:var(--gold); }
         .hc-card.no { border-left-color:var(--no); } .hc-card.info { border-left-color:var(--info); }
-        .hc-card .name { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.15rem; font-weight:500; color:var(--pine); margin-bottom:6px; }
+        .hc-card .name { font-family:var(--font-serif); font-size:1.15rem; font-weight:500; color:var(--pine); margin-bottom:6px; }
         .hc-badge { display:inline-block; font-size:.72rem; letter-spacing:.04em; padding:3px 10px; border-radius:10px; margin-bottom:8px; }
         .hc-badge.ok { background:var(--ok-bg); color:var(--ok); } .hc-badge.warn { background:var(--warn-bg); color:var(--warn); }
         .hc-badge.no { background:var(--no-bg); color:var(--no); } .hc-badge.info { background:var(--info-bg); color:var(--info); }
@@ -357,23 +357,23 @@ export default function HandicapCheckerClient() {
         .hc-card a.enquire { display:inline-block; margin-top:8px; font-size:.8rem; color:var(--gold); text-decoration:none; letter-spacing:.04em; }
         .hc-card a.enquire:hover { text-decoration:underline; }
         .hc-cta { background:var(--pine-dark); color:#fff; border-radius:6px; padding:24px; margin-top:30px; text-align:center; }
-        .hc-cta h3 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:1.4rem; margin-bottom:8px; }
+        .hc-cta h3 { font-family:var(--font-serif); font-weight:400; font-size:1.4rem; margin-bottom:8px; }
         .hc-cta p { font-size:.9rem; color:rgba(255,255,255,.85); margin-bottom:16px; line-height:1.6; }
         .hc-cta a.btn { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem;
           letter-spacing:.06em; text-transform:uppercase; padding:12px 24px; border-radius:4px; transition:background .2s; }
         .hc-cta a.btn:hover { background:#a5862f; }
         .hc-cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
         .btn-wa { display:inline-flex; align-items:center; gap:9px; background:#25D366; color:#fff; text-decoration:none;
-          font-family:'Jost',sans-serif; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:12px 22px; border-radius:4px; transition:background .2s; }
+          font-family:var(--font-sans); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:12px 22px; border-radius:999px; transition:background .2s; }
         .btn-wa:hover { background:#1eb858; }
         .hc-email { background:#fff; border-radius:6px; padding:24px; box-shadow:0 2px 12px rgba(45,74,62,.08); margin-top:26px; }
-        .hc-email h3 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; color:var(--pine); font-size:1.3rem; margin-bottom:6px; }
+        .hc-email h3 { font-family:var(--font-serif); font-weight:500; color:var(--pine); font-size:1.3rem; margin-bottom:6px; }
         .hc-email p { font-size:.86rem; color:var(--muted); margin-bottom:14px; line-height:1.55; }
         .hc-email-row { display:flex; gap:10px; flex-wrap:wrap; }
-        .hc-email-row input { flex:1; min-width:220px; font-family:'Jost',sans-serif; font-size:.95rem; padding:11px 12px; border:1px solid rgba(45,74,62,.3); border-radius:4px; }
+        .hc-email-row input { flex:1; min-width:220px; font-family:var(--font-sans); font-size:.95rem; padding:11px 14px; border:1px solid rgba(45,74,62,.3); border-radius:999px; }
         .hc-email-row input:focus { outline:2px solid var(--gold); outline-offset:1px; }
-        .hc-email-row button { background:var(--pine); color:#fff; border:none; cursor:pointer; font-family:'Jost',sans-serif;
-          font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:11px 20px; border-radius:4px; transition:background .2s; }
+        .hc-email-row button { background:var(--pine); color:#fff; border:none; cursor:pointer; font-family:var(--font-sans);
+          font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:11px 20px; border-radius:999px; transition:background .2s; }
         .hc-email-row button:hover { background:var(--pine-dark); }
         .hc-email-row button:disabled { opacity:.6; cursor:default; }
         .hc-email-msg { font-size:.85rem; margin-top:10px; }
