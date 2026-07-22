@@ -131,9 +131,9 @@ function handicapDisplay(c) {
   const sameLimit = Number.isFinite(c.handicapMen) && c.handicapMen === c.handicapWomen
   let text = 'Handicap required'
   if (sameLimit) text = `Max ${c.handicapMen}`
-  else if (Number.isFinite(c.handicapMen) && Number.isFinite(c.handicapWomen)) text = `Max ${c.handicapMen} men / ${c.handicapWomen} women`
-  else if (Number.isFinite(c.handicapMen)) text = `Max ${c.handicapMen} men`
-  else if (Number.isFinite(c.handicapWomen)) text = `Max ${c.handicapWomen} women`
+  else if (Number.isFinite(c.handicapMen) && Number.isFinite(c.handicapWomen)) text = `M ${c.handicapMen} / W ${c.handicapWomen}`
+  else if (Number.isFinite(c.handicapMen)) text = `M ${c.handicapMen}`
+  else if (Number.isFinite(c.handicapWomen)) text = `W ${c.handicapWomen}`
   return { text, certificate: c.certRequired, cls: '' }
 }
 
