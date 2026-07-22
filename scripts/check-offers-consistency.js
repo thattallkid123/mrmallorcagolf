@@ -20,6 +20,7 @@ async function main() {
   const playModule = await importModule('src/lib/play-with-a-pro-content.js')
   const contactModule = await importModule('src/lib/contact-content.js')
   const metadataModule = await importModule('src/lib/page-metadata.js')
+  const servicePricingModule = await importModule('src/lib/service-pricing-data.js')
 
   const {
     OFFER_IDS,
@@ -81,8 +82,8 @@ async function main() {
 
   const structuredCatalog = getStructuredOfferCatalog()
   assert(structuredCatalog.length === 3, 'Structured offer catalog should expose exactly 3 offers')
-  assert(structuredCatalog[0].price === '695', 'Structured solo offer price drifted')
-  assert(structuredCatalog[1].price === '950', 'Structured group offer price drifted')
+  assert(structuredCatalog[0].price === String(servicePricingModule.SERVICE_PRICES.solo), 'Structured solo offer price drifted')
+  assert(structuredCatalog[1].price === String(servicePricingModule.SERVICE_PRICES.group), 'Structured group offer price drifted')
 
   console.log('Offer consistency checks passed.')
 }

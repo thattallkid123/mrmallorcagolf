@@ -1,5 +1,6 @@
 import { getCourseAccessByName } from './course-access-data.js'
 import { getScorecardByCourseName, getScorecardTees } from './scorecard-data.js'
+import { COURSE_FACTS } from './course-facts-data.js'
 
 const SCORECARD_TEE_DISPLAY_ORDER = ['yellow', 'white', 'standard', 'green', 'blue', 'red', 'black', 'pink']
 const SCORECARD_TEE_DISPLAY_BY_COURSE = {
@@ -52,12 +53,14 @@ function isRedundantFactualPill(pill) {
 }
 
 function normalizeCourse(course) {
+  const fact = Object.values(COURSE_FACTS).find((entry) => entry.name === course.name || entry.matchNames?.includes(course.name))
   const factualPill = buildScorecardFactPill(course)
   const accessPill = buildAccessFactPill(course)
   const retainedPills = course.pills.slice(2).filter((pill) => !isRedundantFactualPill(pill))
 
   return {
     ...course,
+    facts: fact || null,
     pills: [course.pills[0], factualPill, accessPill, ...retainedPills].filter(Boolean),
   }
 }

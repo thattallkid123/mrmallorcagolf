@@ -482,6 +482,11 @@ const SELECTOR_COURSES = COURSES.map((course) => {
     accessRequirement: canonical?.access?.requirementLabel || null,
     accessType: canonical?.access?.accessTypeLabel || null,
     handicapRequired: canonical?.access?.handicapRequired ?? !!course.handicapReq,
+    designer: canonical?.facts?.designer
+      ? `${canonical.facts.designer}${canonical.facts.opened ? `, ${canonical.facts.opened}` : ''}`
+      : course.designer,
+    signatureHole: canonical?.facts?.signatureHole || course.signatureHole,
+    practiceFacilities: canonical?.facts?.practiceFacilities || null,
     greenFee,
   }
 })

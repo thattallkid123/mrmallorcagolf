@@ -29,9 +29,9 @@ function WhatsAppCta({ label = 'Message Andy on WhatsApp' }) {
 }
 
 /* =====================================================================
-   COURSE DATA — sourced from MMG_ENCYCLOPAEDIA_DATA_MASTER.md.
-   Cross-check against the pricing master Sheet (mmg.ps1 pricing) when
-   green fees change. Approximate, seasonal — always confirm at booking.
+   EDITORIAL COURSE DATA — verdicts and guide links may stay local here.
+   Prices, access, handicap/certificate rules, buggy guidance and walking
+   rules are overlaid from the generated MMG masters below.
    ===================================================================== */
 const BASE_COURSES = [
   { name: 'Son Gual',           area: 'Palma',     peak: 165, low: 115, buggy: '€45',                           walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '28M / 36L', certRequired: true, nineHoles: false, verdict: 'My most-played course on the island. The wind is fickle, the greens are quick, and the closing stretch is as good as anything in Mallorca.', guideUrl: '/guides/son-gual-review' },
@@ -338,8 +338,8 @@ export default function GreenFeesClient() {
         .gf-compare__pickers .gf-fg select { min-width:200px; }
         .gf-compare__table { overflow-x:auto; }
         .gf-compare__table table { table-layout:fixed; }
-        .gf-compare__table thead th { position:static; width:auto; }
-        .gf-compare__table thead th:first-child { position:sticky; top:auto; left:0; z-index:3; width:130px; }
+        .gf-compare__table thead th { position:sticky; top:var(--nav-h); z-index:3; width:auto; }
+        .gf-compare__table thead th:first-child { left:0; z-index:4; width:130px; }
         .gf-compare__label { position:sticky; left:0; z-index:2; width:130px; font-weight:500; color:var(--pine); background:var(--cream); white-space:nowrap; box-shadow:1px 0 rgba(45,74,62,.12); }
         @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } .gf-compare .gf-table-wrap { display:block; } .gf-compare__pickers .gf-fg select { min-width:140px; } }
       `}</style>

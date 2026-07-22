@@ -211,6 +211,14 @@ function getCourseFacts(course) {
     }
   }
 
+  if (canonical.facts?.designer) {
+    facts.push(`${canonical.facts.designer}${canonical.facts.opened ? ` · ${canonical.facts.opened}` : ''}`)
+  }
+
+  if (canonical.facts?.practiceFacilities) {
+    facts.push(canonical.facts.practiceFacilities)
+  }
+
   for (const fact of course.facts || []) {
     if (!facts.includes(fact)) facts.push(fact)
   }

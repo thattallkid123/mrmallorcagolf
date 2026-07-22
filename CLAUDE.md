@@ -146,7 +146,8 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 **Google Drive (`C:\Users\andyg\My Drive\Mr Mallorca Golf`):**
 - **Master control:** `MMG_MASTER_CONTROL_CENTER.md` — start here for business questions
 - **Business Brief:** `MMG_BUSINESS_BRIEF.md` (root) — AI coaching context, business story, status
-- **Course encyclopaedia:** `MMG_ENCYCLOPAEDIA_DATA_MASTER.md` (root) — all 24 courses, facts, pricing, access rules
+- **Stable course facts:** `mmg-tools/pricing/edit/confirmed/course-facts-master.json`, edited through the MMG Control Panel and published with `.\mmg.ps1 course-facts`. Website access/coordinate/fact helpers are generated outputs.
+- **Course Encyclopaedia:** Drive `MMG_ENCYCLOPAEDIA_DATA_MASTER.md` — editorial voice, firsthand experience, rankings, restaurants and content angles. It is not the authority for pricing, access or other synced operational facts.
 - **Financial:** `Business Operations & Financial/MMG_Income_and_Expenses_2026.xlsx` + `Business Operations & Financial/MMG_Extra_Coaching_2026.xlsx`
 - **Systems & planning:** `Systems & Planning/`
 - **Course contacts & courtesy:** Courtesy master Google Sheet (Golf Courses tab — 24 courses, contacts, booking, courtesy; plus Affiliates and China Operators tabs). The old `MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` is retired/archived.
