@@ -3,5 +3,6 @@ Allow: /
 Disallow: /api/
 Disallow: /admin/
 Disallow: /*.pdf$
+Disallow: /bb1b760cc2c740b593a7f392beae2fdb.txt
 
 Sitemap: https://www.mrmallorcagolf.com/sitemap.xml
