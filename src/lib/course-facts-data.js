@@ -26,7 +26,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "Robert Trent Jones Jr.",
     "opened": "2003",
     "signatureHole": "7 & 13 (lighthouse backdrop)",
-    "practiceFacilities": "Toptracer driving range | Short game area"
+    "practiceFacilities": "Toptracer driving range | Covered practice area with 10 mats | Outdoor practice area with 10 mats | Seasonal natural-grass practice area when available | Short game area"
   },
   "andratx": {
     "id": "andratx",
@@ -428,9 +428,9 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Flat and easily walked.",
     "buggyGuidance": "Buggies must stay on paths.",
     "travelFromPalmaMinutes": 25,
-    "designer": "Francisco Lopez Segales",
-    "opened": "1995",
-    "signatureHole": "16 (uphill par-5 through trees)",
+    "designer": "Francisco Lopez-Segalés",
+    "opened": "2001",
+    "signatureHole": "Technical back nine, with three large lakes in play on five holes",
     "practiceFacilities": "Shared academy with Son Antem East | Circular driving range | Grass + artificial tees | Approach green with bunkers | ~1,000m² putting green | FlightScope used for teaching"
   },
   "son_gual": {
@@ -487,7 +487,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "Kurt Rossknecht",
     "opened": "2000",
     "signatureHole": "15 (Sa Capitana olive tree)",
-    "practiceFacilities": "TrackMan Range | Chipping area | Putting green"
+    "practiceFacilities": "Toptracer Range | Chipping area | Putting green"
   },
   "son_quint": {
     "id": "son_quint",
