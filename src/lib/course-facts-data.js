@@ -54,7 +54,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "David Kidd",
     "opened": "1999",
     "signatureHole": "6 (609m par-5, \"Green Monster\")",
-    "practiceFacilities": "Driving range | Short-game area | 21 practice tees (7 covered) | 3 practice bunkers | TrackMan Range"
+    "practiceFacilities": "Public TrackMan Range | Short-game area | 21 practice tees (7 covered) | 3 practice bunkers"
   },
   "bendinat": {
     "id": "bendinat",
@@ -191,10 +191,10 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Easily walkable as a short golf course.",
     "buggyGuidance": "No buggy needed for normal play.",
     "travelFromPalmaMinutes": 10,
-    "designer": null,
-    "opened": null,
+    "designer": "James Arnold",
+    "opened": "2008",
     "signatureHole": null,
-    "practiceFacilities": "Official 9-hole pitch & putt (par 27 / 638 metres) | Landscaped with indigenous Mallorca vegetation (olive, carob, pine, Leyland cypress) | Terrace at clubhouse"
+    "practiceFacilities": "Official 9-hole pitch & putt (par 27 / 638 metres) | Son Quint driving range, chipping area and putting green are less than 100 metres away | Terrace at clubhouse"
   },
   "pollenca": {
     "id": "pollenca",
@@ -253,7 +253,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "Opened in 1995 | José María Olazábal redesign completed in 2006",
     "opened": "1995",
     "signatureHole": "Olazábal redesign completed in 2006 — \"Challenging but Fair\"",
-    "practiceFacilities": "Two-level driving range | TrackMan Range | 2 putting greens | Pitching green | Short-game area and bunkers | Head pro: Miquel Tous"
+    "practiceFacilities": "Two-level public TrackMan Range | 2 putting greens | Pitching green | Short-game area and bunkers | Head pro: Miquel Tous"
   },
   "rotana": {
     "id": "rotana",
@@ -513,9 +513,9 @@ export const COURSE_FACTS = Object.freeze({
     "buggyGuidance": "Buggies allowed on fairways, weather permitting.",
     "travelFromPalmaMinutes": 15,
     "designer": "Ramón Espinosa & Kurt Rossknecht",
-    "opened": null,
+    "opened": "2007",
     "signatureHole": "8 (Palma Cathedral view)",
-    "practiceFacilities": "Small mat/carpet range | Chipping area | Putting green | No visitor-facing Toptracer confirmed for Son Quint itself"
+    "practiceFacilities": "Separate driving range | 60 m² warm-up area beside the clubhouse | Chipping area | Putting green | No Toptracer confirmed at Son Quint"
   },
   "son_servera": {
     "id": "son_servera",
@@ -599,7 +599,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "Historic established course (1964+)",
     "opened": "1964",
     "signatureHole": "18th with green views",
-    "practiceFacilities": "Warm-up net | Putting green | Approach / chipping area | Main range use via Son Muntaner"
+    "practiceFacilities": "Covered 8-spot warm-up net (no balls; not a driving range) | Putting green | Approach / chipping area | Full driving range at Son Muntaner, about 3 minutes away"
   },
   "t_golf_calvia": {
     "id": "t_golf_calvia",
@@ -629,7 +629,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "John Harris",
     "opened": "1978 (renovated €10M)",
     "signatureHole": "10 (water hazard)",
-    "practiceFacilities": "Grass driving range with Toptracer | 40 stations | 7 target greens at varying distances protected by 10 bunkers | Short game area"
+    "practiceFacilities": "Grass driving range with Toptracer | 40 stations | 7 target greens at varying distances protected by 10 bunkers | 2 putting greens | 2 chipping greens | 2 pitching / approach areas with practice bunkers"
   },
   "t_golf_palma": {
     "id": "t_golf_palma",
