@@ -11,9 +11,9 @@ const OFFER_CONTENT = {
   en: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Book Play With A Pro as a standalone golf day or add it to a planned Mallorca golf trip. Solo from €695. Groups from €950 total. Green fees additional.',
+      'Play golf with a PGA pro in Mallorca (Majorca). Solo from €695, groups from €950 total, green fees additional. Book a standalone day or add it to your trip.',
     playHeroBody:
-      'Book it as a standalone day with me, or add it to a planned Mallorca golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €695. Groups from €950 total. Green fees additional, confirmed when we speak.',
+      'Book it as a standalone day with me, or add it to a planned Mallorca (Majorca) golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €695. Groups from €950 total. Green fees additional, confirmed when we speak.',
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',

@@ -224,8 +224,15 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Golf Day Mallorca | Play Alongside a PGA Pro',
+    title: 'Play With a Golf Pro in Mallorca | PGA Day',
     description: getPlayWithAProMetadataDescription('en'),
+    keywords: [
+      'golf pro Mallorca',
+      'play with a golf pro Mallorca',
+      'play golf with a pro Majorca',
+      'Mallorca golf pro',
+      'PGA golf pro Mallorca',
+    ],
   },
   de: {
     title: 'Mit einem Profi spielen - Golftag auf Mallorca',
