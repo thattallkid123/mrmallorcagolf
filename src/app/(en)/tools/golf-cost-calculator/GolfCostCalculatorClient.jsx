@@ -19,7 +19,7 @@ function WhatsAppQuoteLink() {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
-      style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 9, color: '#cfe9d6', textDecoration: 'none', fontFamily: "'Jost',sans-serif", fontSize: 13.5, letterSpacing: '.02em', marginTop: 4 }}
+      style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 9, color: '#cfe9d6', textDecoration: 'none', fontFamily: 'var(--font-sans)', fontSize: 13.5, letterSpacing: '.02em', marginTop: 4 }}
     >
       <svg viewBox="0 0 24 24" fill="#25D366" style={{ width: 18, height: 18, flexShrink: 0 }} aria-hidden="true">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -288,7 +288,7 @@ export default function GolfCostCalculatorClient() {
   }
 
   const fieldStyle = { marginBottom: 18 }
-  const labelStyle = { display:'block', fontFamily:"'Jost',sans-serif", fontSize:11, letterSpacing:'.08em', textTransform:'uppercase', color:'#2D4A3E', marginBottom:12, fontWeight:600 }
+  const labelStyle = { display:'block', fontFamily:'var(--font-sans)', fontSize:11, letterSpacing:'.08em', textTransform:'uppercase', color:'#2D4A3E', marginBottom:12, fontWeight:600 }
   const circleBtn = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center' }
 
   function Stepper({ label, stateKey, min, max, unit }) {
@@ -297,9 +297,9 @@ export default function GolfCostCalculatorClient() {
         <label style={labelStyle}>{label}</label>
         <div style={{ display:'flex', alignItems:'center', gap:12 }}>
           <button type="button" style={circleBtn} onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}>−</button>
-          <span style={{ fontFamily:"'Jost',sans-serif", fontSize:26, color:'#2D4A3E', minWidth:48, textAlign:'center', fontWeight:400 }}>{state[stateKey]}</span>
+          <span style={{ fontFamily:'var(--font-sans)', fontSize:26, color:'#2D4A3E', minWidth:48, textAlign:'center', fontWeight:400 }}>{state[stateKey]}</span>
           <button type="button" style={circleBtn} onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}>+</button>
-          <span style={{ fontFamily:"'Jost',sans-serif", fontSize:12, color:'#8A7F74', fontWeight:300 }}>{unit}</span>
+          <span style={{ fontFamily:'var(--font-sans)', fontSize:12, color:'#8A7F74', fontWeight:300 }}>{unit}</span>
         </div>
       </div>
     )
@@ -335,19 +335,19 @@ export default function GolfCostCalculatorClient() {
     <div ref={containerRef}>
       <style jsx>{`
         .gcc-hero { background:#2D4A3E; color:#F7F4EF; padding:52px 24px 48px; text-align:center; }
-        .gcc-eyebrow { display:inline-block; font-family:'Jost',sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; }
-        .gcc-h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
-        .gcc-sub { font-family:'Jost',sans-serif; font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
+        .gcc-eyebrow { display:inline-block; font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; }
+        .gcc-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .gcc-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .gcc-wrap { max-width:680px; margin:0 auto; padding:20px 16px 64px; }
         .gcc-progress { display:flex; gap:6px; margin:22px 0 18px; }
         .gcc-progress span { flex:1; height:4px; border-radius:2px; background:#ddd4c0; transition:background .3s; }
         .gcc-progress span.on { background:#B8973C; }
-        .gcc-step-label { font-family:'Jost',sans-serif; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:#8A7F74; margin-bottom:6px; }
+        .gcc-step-label { font-family:var(--font-sans); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:#8A7F74; margin-bottom:6px; }
         .gcc-card { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:22px 18px; box-shadow:0 2px 10px rgba(21,57,43,.06); }
-        .gcc-card h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:26px; color:#2D4A3E; margin-bottom:6px; font-weight:500; line-height:1.15; }
+        .gcc-card h2 { font-family:var(--font-serif); font-size:26px; color:#2D4A3E; margin-bottom:6px; font-weight:500; line-height:1.15; }
         .gcc-card .sub { font-size:13px; color:#8A7F74; margin-bottom:20px; line-height:1.6; font-weight:300; }
         .gcc-field { margin-bottom:18px; }
-        .gcc-flabel { display:block; font-family:'Jost',sans-serif; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#2D4A3E; margin-bottom:12px; font-weight:600; }
+        .gcc-flabel { display:block; font-family:var(--font-sans); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#2D4A3E; margin-bottom:12px; font-weight:600; }
         .gcc-opts { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
         .gcc-opts.three { grid-template-columns:1fr 1fr 1fr; }
         .gcc-opt { border:1.5px solid #d9cfb8; background:#F7F4EF; border-radius:10px; padding:13px 12px; cursor:pointer; font-size:13px; font-family:inherit; color:#2C2A27; transition:all .15s; text-align:center; font-weight:500; line-height:1.3; }
@@ -356,10 +356,11 @@ export default function GolfCostCalculatorClient() {
         .gcc-stepper { display:flex; align-items:center; gap:14px; }
         .gcc-stepper button { width:44px; height:44px; border-radius:50%; border:1.5px solid #B8973C; background:#fff; color:#2D4A3E; font-size:22px; cursor:pointer; line-height:1; font-family:inherit; }
         .gcc-stepper button:active { background:#EDE9E1; }
-        .gcc-val { font-family:'Jost',sans-serif; font-size:26px; color:#2D4A3E; min-width:48px; text-align:center; font-weight:400; }
-        .gcc-unit { font-family:'Jost',sans-serif; font-size:12px; color:#8A7F74; font-weight:300; }
+        .gcc-val { font-family:var(--font-sans); font-size:26px; color:#2D4A3E; min-width:48px; text-align:center; font-weight:400; }
+        .gcc-unit { font-family:var(--font-sans); font-size:12px; color:#8A7F74; font-weight:300; }
         .gcc-nav { display:flex; gap:10px; margin-top:22px; }
-        .gcc-btn { border:none; border-radius:10px; padding:14px 20px; font-size:15px; cursor:pointer; font-family:inherit; transition:opacity .15s; }
+        .gcc-btn { border:none; border-radius:999px; padding:16px 24px; font-size:11px; cursor:pointer; font-family:var(--font-sans); font-weight:500; letter-spacing:.16em; line-height:1.25; text-transform:uppercase; transition:opacity .15s, transform .15s; }
+        .gcc-btn:hover { transform:translateY(-1px); }
         .gcc-btn.primary { background:#2D4A3E; color:#F7F4EF; flex:1; }
         .gcc-btn.primary:hover { background:#3D6455; }
         .gcc-btn.ghost { background:transparent; color:#8A7F74; border:1.5px solid #d9cfb8; }
@@ -367,34 +368,54 @@ export default function GolfCostCalculatorClient() {
         .gcc-btn.gold:hover { opacity:.9; }
         /* Results */
         .gcc-hero-est { background:#2D4A3E; color:#F7F4EF; border-radius:14px; padding:26px 20px; text-align:center; margin-bottom:14px; }
-        .gcc-hero-est .lab { font-family:'Jost',sans-serif; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:#D4B068; font-weight:500; }
-        .gcc-hero-est .big { font-family:'Jost',sans-serif; font-size:clamp(32px,8vw,44px); font-weight:400; margin:10px 0 4px; letter-spacing:-0.02em; }
-        .gcc-hero-est .per { font-family:'Jost',sans-serif; font-size:14px; color:#cfdad2; font-weight:300; }
+        .gcc-hero-est .lab { font-family:var(--font-sans); font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:#D4B068; font-weight:500; }
+        .gcc-hero-est .big { font-family:var(--font-serif); font-size:clamp(32px,8vw,44px); font-weight:500; margin:10px 0 4px; letter-spacing:-0.02em; line-height:1.02; }
+        .gcc-hero-est .per { font-family:var(--font-sans); font-size:14px; color:#cfdad2; font-weight:300; }
         .gcc-approx { font-size:12px; color:#D4B068; margin-top:10px; font-style:italic; }
         .gcc-grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
         .gcc-mini { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:16px; text-align:center; }
-        .gcc-mini .lab { font-family:'Jost',sans-serif; font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:#8A7F74; font-weight:500; }
-        .gcc-mini .num { font-family:'Jost',sans-serif; font-size:20px; color:#2D4A3E; font-weight:400; margin-top:6px; }
+        .gcc-mini .lab { font-family:var(--font-sans); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:#8A7F74; font-weight:500; }
+        .gcc-mini .num { font-family:var(--font-serif); font-size:20px; color:#2D4A3E; font-weight:500; margin-top:6px; line-height:1.1; }
         .gcc-rcard { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:20px 18px; margin-bottom:14px; }
-        .gcc-rcard h3 { font-family:'Cormorant Garamond',Georgia,serif; font-size:20px; color:#2D4A3E; margin-bottom:12px; display:flex; align-items:center; gap:8px; font-weight:500; line-height:1.2; }
+        .gcc-rcard h3 { font-family:var(--font-serif); font-size:20px; color:#2D4A3E; margin-bottom:12px; display:flex; align-items:center; gap:8px; font-weight:500; line-height:1.2; }
         .gcc-rcard h3 .dot { width:8px; height:8px; border-radius:50%; background:#B8973C; display:inline-block; flex-shrink:0; }
         .gcc-rcard ul { list-style:none; }
         .gcc-rcard li { padding:8px 0; border-bottom:1px solid #f1ead9; font-size:13px; display:flex; justify-content:space-between; gap:10px; font-weight:300; color:#2C2A27; }
         .gcc-rcard li:last-child { border-bottom:none; }
-        .gcc-rcard li .amt { color:#2D4A3E; font-weight:400; white-space:nowrap; font-family:'Jost',sans-serif; }
-        .gcc-rcard p { font-family:'Jost',sans-serif; font-size:13px; font-weight:300; line-height:1.6; color:#8A7F74; }
-        .gcc-tag { display:inline-block; background:#EDE9E1; border:1px solid #D4B068; color:#2D4A3E; border-radius:20px; padding:4px 12px; font-size:13px; margin:3px 4px 3px 0; }
+        .gcc-rcard li .amt { color:#2D4A3E; font-weight:400; white-space:nowrap; font-family:var(--font-sans); }
+        .gcc-rcard p { font-family:var(--font-sans); font-size:13px; font-weight:300; line-height:1.6; color:#8A7F74; }
+        .gcc-tag { display:inline-flex; align-items:center; min-height:34px; background:#F7F4EF; border:1px solid #D4B068; color:#2D4A3E; border-radius:999px; padding:6px 14px; font-size:11px; font-family:var(--font-sans); font-weight:500; letter-spacing:.12em; text-transform:uppercase; margin:4px 6px 4px 0; }
         .gcc-bar { height:10px; border-radius:5px; background:#EDE9E1; overflow:hidden; margin:4px 0 10px; }
         .gcc-bar i { display:block; height:100%; background:#B8973C; border-radius:5px; }
-        .gcc-bar-row { font-family:'Jost',sans-serif; font-size:12px; display:flex; justify-content:space-between; color:#2C2A27; font-weight:400; margin-bottom:4px; }
+        .gcc-bar-row { font-family:var(--font-sans); font-size:12px; display:flex; justify-content:space-between; color:#2C2A27; font-weight:400; margin-bottom:4px; }
+        .gcc-quote-cta { position:relative; background:linear-gradient(150deg, #0e2a1f 0%, #15392b 60%, #1f4a38 100%); border:1px solid #b59a5f; border-radius:14px; padding:28px 22px; margin-top:18px; margin-bottom:14px; text-align:center; color:#f7f2e7; overflow:hidden; }
+        .gcc-quote-cta::before { content:''; position:absolute; inset:6px; border:1px solid rgba(205,185,138,.35); border-radius:9px; pointer-events:none; }
+        .gcc-quote-cta__inner { position:relative; z-index:1; }
+        .gcc-quote-cta__eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:#cdb98a; margin-bottom:8px; }
+        .gcc-quote-cta__title { font-family:var(--font-serif); font-size:clamp(2rem, 3.6vw, 2.45rem); color:#fff; font-weight:500; margin:0 0 10px; line-height:1.08; text-wrap:balance; }
+        .gcc-quote-cta__body { font-family:var(--font-sans); font-size:14px; color:#cfdad2; max-width:420px; margin:0 auto 18px; line-height:1.65; }
+        .gcc-quote-cta__note { font-family:var(--font-serif); font-size:18px; color:#cdb98a; margin-top:10px; font-style:italic; line-height:1.35; }
         .gcc-cta-box { background:#1A1916; color:#F7F4EF; border-radius:14px; padding:24px 20px; margin-top:8px; }
-        .gcc-cta-box h3 { font-family:'Cormorant Garamond',Georgia,serif; font-size:24px; margin-bottom:8px; color:#fff; font-weight:500; line-height:1.2; }
-        .gcc-cta-box p { font-family:'Jost',sans-serif; font-size:13px; color:#cfdad2; margin-bottom:18px; font-weight:300; line-height:1.6; }
+        .gcc-cta-box h3 { font-family:var(--font-serif); font-size:24px; margin-bottom:8px; color:#fff; font-weight:500; line-height:1.2; }
+        .gcc-cta-box p { font-family:var(--font-sans); font-size:13px; color:#cfdad2; margin-bottom:18px; font-weight:300; line-height:1.6; }
         .gcc-cta-box a { display:block; text-align:center; text-decoration:none; width:100%; margin-bottom:10px; padding:14px 20px; border:none; border-radius:10px; font-size:15px; font-family:inherit; cursor:pointer; }
         .gcc-email-capture { display:flex; flex-direction:column; gap:8px; margin-bottom:6px; align-items:center; }
         .gcc-email-capture input { width:100%; border:none; border-radius:10px; padding:14px 16px; font-size:15px; font-family:inherit; text-align:center; }
         .gcc-email-capture button { width:100%; }
-        .gcc-disclaimer { font-family:'Jost',sans-serif; font-size:11px; color:#8A7F74; text-align:center; margin-top:20px; font-weight:300; line-height:1.5; }
+        .gcc-disclaimer { font-family:var(--font-sans); font-size:11px; color:#8A7F74; text-align:center; margin-top:20px; font-weight:300; line-height:1.5; }
+        .gcc-tools-panel { background:#f4f1eb; border:1px solid #e0d8cb; border-radius:14px; padding:18px 20px; margin:20px 0; text-align:center; }
+        .gcc-tools-panel__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#8a7f74; margin-bottom:12px; }
+        .gcc-tools-panel__links { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+        .gcc-tools-panel__link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 18px; font-size:10px; font-family:var(--font-sans); font-weight:500; letter-spacing:.14em; text-transform:uppercase; border:1px solid rgba(45,74,62,.18); color:#2d4a3e; text-decoration:none; border-radius:999px; background:#fff; transition:border-color .2s, color .2s, transform .2s; }
+        .gcc-tools-panel__link:hover { border-color:#B8973C; color:#1A1916; transform:translateY(-1px); }
+        .gcc-sheet-head { background:#15392b; color:#f7f2e7; padding:20px 22px 18px; position:sticky; top:0; border-radius:18px 18px 0 0; z-index:2; }
+        .gcc-sheet-head__eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#cdb98a; margin-bottom:4px; }
+        .gcc-sheet-head__title { font-family:var(--font-serif); font-size:24px; color:#fff; font-weight:500; padding-right:36px; line-height:1.08; }
+        .gcc-sheet-head__close { position:absolute; top:16px; right:16px; width:34px; height:34px; border-radius:50%; border:1px solid rgba(205,185,138,.5); background:transparent; color:#f7f2e7; font-size:17px; line-height:1; cursor:pointer; font-family:var(--font-sans); }
+        .gcc-sheet-summary__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:#8a7f74; margin-bottom:8px; }
+        .gcc-sheet-success__icon { width:54px; height:54px; border-radius:50%; background:#15392b; color:#cdb98a; display:flex; align-items:center; justify-content:center; font-size:24px; margin:0 auto 16px; }
+        .gcc-sheet-success__title { font-family:var(--font-serif); font-size:24px; color:#15392b; margin-bottom:8px; line-height:1.08; }
+        .gcc-sheet-success__body { font-family:var(--font-sans); font-size:15px; color:#2c2a27; max-width:320px; margin:0 auto 18px; line-height:1.65; }
       `}</style>
 
       {/* HERO */}
@@ -627,15 +648,14 @@ export default function GolfCostCalculatorClient() {
               </div>
 
               {/* QUOTE BUILDER CTA */}
-              <div style={{ position:'relative', background:'linear-gradient(150deg, #0e2a1f 0%, #15392b 60%, #1f4a38 100%)', border:'1px solid #b59a5f', borderRadius:14, padding:'28px 22px', marginTop:18, marginBottom:14, textAlign:'center', color:'#f7f2e7', overflow:'hidden' }}>
-                <div style={{ content:'""', position:'absolute', inset:6, border:'1px solid rgba(205,185,138,.35)', borderRadius:9, pointerEvents:'none' }}></div>
-                <div style={{ position:'relative', zIndex:1 }}>
-                  <div style={{ fontFamily:"'Jost',sans-serif", fontSize:11, letterSpacing:'.24em', textTransform:'uppercase', color:'#cdb98a', marginBottom:8 }}>Trip Quote Builder</div>
-                  <h3 style={{ fontSize:26, color:'#fff', fontWeight:600, marginBottom:8 }}>Get a real quote from Andy</h3>
-                  <p style={{ fontSize:14, color:'#cfdad2', maxWidth:420, margin:'0 auto 18px' }}>Your answers are already filled in. Add your email and dates, and Andy will turn this estimate into a real, bookable trip quote.</p>
+              <div className="gcc-quote-cta">
+                <div className="gcc-quote-cta__inner">
+                  <div className="gcc-quote-cta__eyebrow">Trip Quote Builder</div>
+                  <h3 className="gcc-quote-cta__title">Get a real quote from Andy</h3>
+                  <p className="gcc-quote-cta__body">Your answers are already filled in. Add your email and dates, and Andy will turn this estimate into a real, bookable trip quote.</p>
                   <button
                     className="gcc-btn gold"
-                    style={{ width:'100%', maxWidth:340, fontSize:16, padding:'16px 22px', letterSpacing:'.02em', marginBottom:10 }}
+                    style={{ width:'100%', maxWidth:340, marginBottom:10 }}
                     onClick={() => {
                       setQuoteEmail('')
                       setQuoteDates('')
@@ -646,7 +666,7 @@ export default function GolfCostCalculatorClient() {
                     }}
                   >Get my personal quote</button>
                   <div style={{ marginTop:6, marginBottom:2 }}><WhatsAppQuoteLink /></div>
-                  <div style={{ fontSize:12, color:'#cdb98a', marginTop:10, fontStyle:'italic' }}>No obligation. One email, from Andy himself.</div>
+                  <div className="gcc-quote-cta__note">No obligation. One email, from Andy himself.</div>
                 </div>
               </div>
 
@@ -659,7 +679,7 @@ export default function GolfCostCalculatorClient() {
                     <p style={{ fontSize:'13px', color:'#D4B068', marginBottom:'14px' }}>&#10003; Done. Your estimate is on its way.</p>
                     {!pdfSent ? (
                       <div style={{ background:'rgba(247,244,239,0.08)', border:'1px solid rgba(184,151,60,0.3)', borderRadius:'10px', padding:'14px 16px', marginBottom:'10px' }}>
-                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:"'Jost',sans-serif" }}>Also free</p>
+                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:'var(--font-sans)' }}>Also free</p>
                         <p style={{ fontSize:'13px', color:'rgba(247,244,239,0.78)', marginBottom:'10px', lineHeight:'1.5' }}>The full Mallorca Golf Cost Breakdown PDF. Every green fee, buggy hire and hidden cost, course by course.</p>
                         <a
                           href={COST_GUIDE_PDF_URL}
@@ -693,7 +713,7 @@ export default function GolfCostCalculatorClient() {
                         {emailSending ? 'Sending…' : 'Email me the breakdown'}
                       </button>
                     </div>
-                    <label style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'8px', color:'rgba(247,244,239,0.62)', fontSize:'12px', margin:'10px 0 12px', cursor:'pointer', fontFamily:"'Jost',sans-serif" }}>
+                    <label style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'8px', color:'rgba(247,244,239,0.62)', fontSize:'12px', margin:'10px 0 12px', cursor:'pointer', fontFamily:'var(--font-sans)' }}>
                       <input
                         type="checkbox"
                         checked={subscribeNewsletter}
@@ -725,7 +745,7 @@ export default function GolfCostCalculatorClient() {
                   href="https://www.mrmallorcagolf.com/guides"
                   target="_blank"
                   rel="noopener"
-                  style={{ display:'block', textAlign:'center', color:'#D4B068', fontFamily:"'Jost',sans-serif", fontSize:'13px', marginTop:'12px', fontWeight:'400' }}
+                  style={{ display:'block', textAlign:'center', color:'#D4B068', fontFamily:'var(--font-sans)', fontSize:'13px', marginTop:'12px', fontWeight:'400' }}
                 >Read the full Mallorca golf course guides →</a>
               </div>
 
@@ -734,12 +754,12 @@ export default function GolfCostCalculatorClient() {
                 <button className="gcc-btn ghost" style={{ flex:1 }} onClick={restart}>Start over</button>
               </div>
 
-              <div style={{ background:'#f4f1eb', borderRadius:'12px', padding:'18px 20px', margin:'20px 0', textAlign:'center' }}>
-                <div style={{ fontSize:'11px', textTransform:'uppercase', letterSpacing:'.14em', color:'#8a7f74', marginBottom:'12px' }}>More planning tools</div>
-                <div style={{ display:'flex', flexWrap:'wrap', gap:'8px', justifyContent:'center' }}>
-                  <a href="/tools/course-selector" style={{ display:'inline-block', padding:'10px 18px', fontSize:'12px', border:'1px solid #2d4a3e', color:'#2d4a3e', textDecoration:'none', borderRadius:'6px' }}>Find your courses</a>
-                  <a href="/tools/hotel-recommender" style={{ display:'inline-block', padding:'10px 18px', fontSize:'12px', border:'1px solid #2d4a3e', color:'#2d4a3e', textDecoration:'none', borderRadius:'6px' }}>Find hotels</a>
-                  <a href="/tools/golf-day-builder" style={{ display:'inline-block', padding:'10px 18px', fontSize:'12px', border:'1px solid #2d4a3e', color:'#2d4a3e', textDecoration:'none', borderRadius:'6px' }}>Build a golf day</a>
+              <div className="gcc-tools-panel">
+                <div className="gcc-tools-panel__label">More planning tools</div>
+                <div className="gcc-tools-panel__links">
+                  <a href="/tools/course-selector" className="gcc-tools-panel__link">Find your courses</a>
+                  <a href="/tools/hotel-recommender" className="gcc-tools-panel__link">Find hotels</a>
+                  <a href="/tools/golf-day-builder" className="gcc-tools-panel__link">Build a golf day</a>
                 </div>
               </div>
 
@@ -782,26 +802,12 @@ export default function GolfCostCalculatorClient() {
             }}
           >
             {/* Header */}
-            <div style={{ background:'#15392b', color:'#f7f2e7', padding:'20px 22px 18px', position:'sticky', top:0, borderRadius:'18px 18px 0 0', zIndex:2 }}>
-              <div style={{ fontFamily:"'Jost',sans-serif", fontSize:10, letterSpacing:'.22em', textTransform:'uppercase', color:'#cdb98a', marginBottom:4 }}>Trip Quote Builder</div>
-              <h3 style={{ fontSize:20, color:'#fff', fontWeight:600, paddingRight:36 }}>Get a real quote from Andy</h3>
+            <div className="gcc-sheet-head">
+              <div className="gcc-sheet-head__eyebrow">Trip Quote Builder</div>
+              <h3 className="gcc-sheet-head__title">Get a real quote from Andy</h3>
               <button
                 onClick={() => !quoteSuccess && setQuoteBuilderOpen(false)}
-                style={{
-                  position:'absolute',
-                  top:16,
-                  right:16,
-                  width:34,
-                  height:34,
-                  borderRadius:'50%',
-                  border:'1px solid rgba(205,185,138,.5)',
-                  background:'transparent',
-                  color:'#f7f2e7',
-                  fontSize:17,
-                  lineHeight:1,
-                  cursor:'pointer',
-                  fontFamily:'inherit',
-                }}
+                className="gcc-sheet-head__close"
               >×</button>
             </div>
 
@@ -811,7 +817,7 @@ export default function GolfCostCalculatorClient() {
                 <>
                   {/* Summary */}
                   <div style={{ background:'#fff', border:'1px solid #cdb98a', borderRadius:12, padding:'14px 16px', marginBottom:18 }}>
-                    <div style={{ fontFamily:"'Jost',sans-serif", fontSize:10, letterSpacing:'.16em', textTransform:'uppercase', color:'#8a7f74', marginBottom:8 }}>Your trip, as calculated</div>
+                    <div className="gcc-sheet-summary__label">Your trip, as calculated</div>
                     <ul style={{ listStyle:'none', margin:0, padding:0 }}>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>Golfers</span>
@@ -908,7 +914,7 @@ export default function GolfCostCalculatorClient() {
                     <button
                       type="submit"
                       className="gcc-btn gold"
-                      style={{ width:'100%', fontSize:16, padding:'16px 22px', marginBottom:12 }}
+                      style={{ width:'100%', marginBottom:12 }}
                       disabled={quoteSubmitting}
                     >
                       {quoteSubmitting ? 'Sending…' : 'Send to Andy'}
@@ -920,7 +926,7 @@ export default function GolfCostCalculatorClient() {
               ) : (
                 <div style={{ textAlign:'center', padding:'26px 6px 12px' }}>
                   <div style={{ width:54, height:54, borderRadius:'50%', background:'#15392b', color:'#cdb98a', display:'flex', alignItems:'center', justifyContent:'center', fontSize:24, margin:'0 auto 16px' }}>✓</div>
-                  <h4 style={{ fontSize:20, color:'#15392b', marginBottom:8 }}>Sent to Andy</h4>
+                  <h4 className="gcc-sheet-success__title">Sent to Andy</h4>
                   <p style={{ fontSize:15, color:'#2c2a27', maxWidth:320, margin:'0 auto 18px' }}>Andy will come back to you personally — usually within a few hours.</p>
                   <button
                     className="gcc-btn primary"
