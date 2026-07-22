@@ -113,7 +113,12 @@ function displayCourseName(name) {
 
 const fmtFee = (num, text) => (text ? text : num ? `€${num}` : '-')
 
+function hidesPublicPricing(c) {
+  return c.accessType === 'members_arranged'
+}
+
 function budgetBand(c) {
+  if (hidesPublicPricing(c)) return null
   if (!c.peak) return null
   if (c.peak < 80) return 'low'
   if (c.peak <= 130) return 'mid'
@@ -144,7 +149,15 @@ function accessDisplay(c) {
   }
 }
 
+function publicFeeSortValue(c, season) {
+  if (hidesPublicPricing(c)) return null
+  return Number.isFinite(c[season]) ? c[season] : null
+}
+
 function feeDisplay(c, season) {
+  if (hidesPublicPricing(c)) {
+    return { text: 'Member arrangement', note: 'Not public' }
+  }
   if (c.feeMode === 'pitch_putt') {
     return season === 'peak'
       ? { text: fmtFee(c.peak), note: '18 holes, not seasonal' }
@@ -236,8 +249,8 @@ export default function GreenFeesClient() {
       if (sort === 'name') r = displayCourseName(a.name).localeCompare(displayCourseName(b.name))
       else if (sort === 'area') r = a.area.localeCompare(b.area) || displayCourseName(a.name).localeCompare(displayCourseName(b.name))
       else if (sort === 'peak' || sort === 'low') {
-        const av = Number.isFinite(a[sort]) ? a[sort] : null
-        const bv = Number.isFinite(b[sort]) ? b[sort] : null
+        const av = publicFeeSortValue(a, sort)
+        const bv = publicFeeSortValue(b, sort)
         if (av === null && bv !== null) return 1
         if (av !== null && bv === null) return -1
         r = (av - bv) || displayCourseName(a.name).localeCompare(displayCourseName(b.name))
