@@ -163,7 +163,7 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Walkable if relatively fit, but the final holes include two significant climbs.",
     "buggyGuidance": "Buggy required if that climbing is a concern.",
     "travelFromPalmaMinutes": 25,
-    "designer": null,
+    "designer": "Dieter Cabus",
     "opened": null,
     "signatureHole": null,
     "practiceFacilities": "Driving range with grass and mats | Large putting green | All-grass chipping/pitching area with slopes | Bunker work area"
