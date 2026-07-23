@@ -1,12 +1,9 @@
-// Template for locale-specific course map page
-// Replace de with actual locale
-
 import PageLayout from '../../../../components/PageLayout'
 import CourseMapView from '../../../../components/CourseMapView'
 
 export const metadata = {
-  title: 'Map of All 24 Golf Courses in Mallorca | Interactive Guide',
-  description: 'Interactive map showing all 24 Mallorca golf courses. Filter by region (Palma, Southwest, South, East, North). Click to locate each course.',
+  title: 'Karte aller 24 Golfplätze auf Mallorca | Interaktiver Überblick',
+  description: 'Interaktive Karte mit allen 24 Golfplätzen auf Mallorca. Filtern Sie nach Region (Palma, Südwesten, Süden, Osten, Norden) und finden Sie jeden Platz.',
   robots: { index: true, follow: true },
 }
 
@@ -15,10 +12,10 @@ export default function MallorcaCourseMapGuide() {
     <PageLayout lang="de" navTransparent={false} showWhatsAppButton={false}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '48px 24px 80px' }}>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', color: '#1A1916', marginBottom: 24 }}>
-          Map of All 24 Courses
+          Karte aller 24 Plätze
         </h1>
         <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '0.95rem', color: '#6B6862', marginBottom: 32, maxWidth: '640px', lineHeight: 1.6 }}>
-          All 24 Mallorca golf courses on one interactive map. Filter by region, click a course name to locate it on the map, or hover over a pin to see which courses share a location.
+          Alle 24 Golfplätze Mallorcas auf einer interaktiven Karte. Filtern Sie nach Region oder klicken Sie auf einen Platz, um ihn zu finden. Zwei Markierungen stehen für je zwei Plätze: Santa Ponsa 2 und 3 sowie Son Antem East und West.
         </p>
         <CourseMapView lang="de" />
       </div>

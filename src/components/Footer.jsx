@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { NAV_LOCALES, getLegalPath } from '../lib/site'
+import { NAV_LOCALES, getLegalPath, hasLocaleRoute, buildLocalePath } from '../lib/site'
 import ReviewBadge from './ReviewBadge'
 
 const FOOTER_COPY = {
@@ -12,7 +12,6 @@ const FOOTER_COPY = {
     day: 'What Play With A Pro Looks Like',
     guide: 'Golf Guides',
     guideArticles: 'Planning Articles',
-    tools: 'Free Tools',
     about: 'About',
     allCourses: 'All Courses',
     enquire: null,
@@ -29,7 +28,6 @@ const FOOTER_COPY = {
     pwap: 'Mit Profi spielen',
     day: 'Wie Play With A Pro Aussieht',
     guide: 'Golfführer',
-    tools: 'Kostenlose Tools',
     about: 'Über Andy',
     allCourses: 'Alle Plätze',
     enquire: 'Anfragen',
@@ -45,7 +43,6 @@ const FOOTER_COPY = {
     pwap: 'Jugar con un Pro',
     day: 'Cómo Es Jugar Con Un Pro',
     guide: 'Guía de Golf',
-    tools: 'Herramientas Gratis',
     about: 'Sobre Andy',
     allCourses: 'Todos los campos',
     enquire: 'Contacto',
@@ -61,7 +58,6 @@ const FOOTER_COPY = {
     pwap: 'Jouer avec un Pro',
     day: 'Ce Que C\'Est de Jouer Avec Un Pro',
     guide: 'Guide Golf',
-    tools: 'Outils Gratuits',
     about: 'À propos',
     allCourses: 'Tous les parcours',
     enquire: 'Contact',
@@ -77,7 +73,6 @@ const FOOTER_COPY = {
     pwap: 'Spelen met een Pro',
     day: 'Hoe Spelen Met Een Pro Eruitziet',
     guide: 'Golfgids',
-    tools: 'Gratis Tools',
     about: 'Over Andy',
     allCourses: 'Alle banen',
     enquire: 'Contact',
@@ -93,7 +88,6 @@ const FOOTER_COPY = {
     pwap: 'Spela med ett proffs',
     day: 'Så Här Är Det Att Spela Med Ett Proffs',
     guide: 'Golfguide',
-    tools: 'Gratis Verktyg',
     about: 'Om Andy',
     allCourses: 'Alla banor',
     enquire: 'Kontakt',
@@ -109,7 +103,6 @@ const FOOTER_COPY = {
     pwap: '与职业球手同场',
     day: '与职业球手同场的体验',
     guide: '高尔夫指南',
-    tools: '免费工具',
     about: '关于 Andy',
     allCourses: '全部球场',
     enquire: '联系',
@@ -132,6 +125,13 @@ function getPrefix(locale) {
 
 function getADayPath(locale) {
   return locale === 'en' ? '/guides/play-with-a-pro-explained' : `/${locale}/play-with-a-pro`
+}
+
+// Tools are English-only except course-selector (en/de/es/fr/nl/sv). Link to the
+// localized route when it exists, otherwise fall back to the English tool path so
+// non-English footers never point at a 404.
+function toolHref(basePath, locale) {
+  return hasLocaleRoute(basePath, locale) ? buildLocalePath(basePath, locale) : basePath
 }
 
 export default function Footer({ lang }) {
@@ -178,9 +178,9 @@ export default function Footer({ lang }) {
       <div className="footer__col">
         <h3>Planning Tools</h3>
         <ul>
-          <li><Link href={`${prefix}/tools/course-selector`} prefetch={false}>Find your Mallorca course</Link></li>
-          <li><Link href={`${prefix}/tools/green-fees`} prefetch={false}>Compare all 24 courses</Link></li>
-          <li><Link href={`${prefix}/tools/golf-day-builder`} prefetch={false}>Golf day builder</Link></li>
+          <li><Link href={toolHref('/tools/course-selector', locale)} prefetch={false}>Find your Mallorca course</Link></li>
+          <li><Link href={toolHref('/tools/green-fees', locale)} prefetch={false}>Compare all 24 courses</Link></li>
+          <li><Link href={toolHref('/tools/golf-day-builder', locale)} prefetch={false}>Golf day builder</Link></li>
         </ul>
       </div>
 

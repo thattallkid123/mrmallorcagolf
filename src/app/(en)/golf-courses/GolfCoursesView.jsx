@@ -159,7 +159,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
             <p className="page-hero__lead" style={{ maxWidth: 780 }}>
               {content.hero.lead}
             </p>
-            <Link href={joinHref(locale, '/guides/mallorca-course-map')} style={{ display: 'inline-block', marginTop: 24, padding: '12px 28px', background: 'var(--gold)', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontSize: '0.9rem', fontWeight: 500, fontFamily: "'Jost', sans-serif", letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+            <Link href={joinHref(locale, '/guides/mallorca-course-map')} style={{ display: 'inline-block', marginTop: 20, color: 'var(--gold)', textDecoration: 'none', fontSize: '0.82rem', fontWeight: 500, fontFamily: "'Jost', sans-serif", letterSpacing: '0.08em', textTransform: 'uppercase', borderBottom: '1px solid rgba(184,151,60,0.45)', paddingBottom: 3 }}>
               {MAP_BUTTON_LABELS[locale] || MAP_BUTTON_LABELS.en}
             </Link>
           </div>
