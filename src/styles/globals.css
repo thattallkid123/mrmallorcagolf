@@ -1925,7 +1925,9 @@ body {
 .cta-final { background: linear-gradient(135deg, #21392f 0%, #2d4a3e 52%, #345749 100%); padding: 112px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; overflow: hidden; }
 .cta-final::before { content: 'M'; font-family: var(--font-serif); font-size: 28rem; font-weight: 500; color: rgba(255,255,255,0.03); position: absolute; right: -40px; top: -80px; line-height: 1; pointer-events: none; }
 .cta-final::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at top left, rgba(212,176,104,0.16), transparent 24%); pointer-events: none; }
-.cta-final__left p { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.78); line-height: 1.8; }
+.cta-final__left p { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.78); line-height: 1.8; margin-top: 18px; }
+.cta-final__left .eyebrow { margin-bottom: 18px; }
+.cta-final__left .serif-display { margin-bottom: 24px; margin-top: 0; }
 .cta-final__right { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
 .cta-final__right .serif-italic { font-size: 1.3rem; color: rgba(255,255,255,0.72); line-height: 1.5; margin-bottom: 8px; }
 .cta-final__aux { font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.72); text-decoration: none; font-family: var(--font-sans); padding-top: 2px; border-bottom: 1px solid rgba(255,255,255,0.18); transition: color 0.2s ease, border-color 0.2s ease; }

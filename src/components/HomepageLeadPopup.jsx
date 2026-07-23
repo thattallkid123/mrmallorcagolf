@@ -81,6 +81,9 @@ export default function HomepageLeadPopup() {
           <Link href="/tools/course-selector" className="btn btn--gold" onClick={closePopup}>
             Find my courses
           </Link>
+          <Link href="/tools/green-fees" className="btn btn--dark" onClick={closePopup}>
+            Compare all 24 courses
+          </Link>
         </div>
         <p className="lead-popup__note">Andy reads every message and replies personally.</p>
       </div>
