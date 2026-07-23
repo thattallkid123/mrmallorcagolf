@@ -7,6 +7,24 @@ import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import GolfCoursesClient from '../golf-courses/GolfCoursesClient'
 import { GOLF_COURSE_DATA } from '../../../lib/golf-courses-data'
 
+const MAP_BUTTON_LABELS = {
+  en: 'Map of All Courses →',
+  de: 'Karte aller Plätze →',
+  es: 'Mapa de todos los campos →',
+  fr: 'Carte de tous les parcours →',
+  nl: 'Kaart van alle banen →',
+  sv: 'Karta över alla banor →',
+  zh: '所有球场地图 →',
+}
+
+',
+  de: 'Karte aller Plätze →',
+  es: 'Mapa de todos los campos →',
+  fr: 'Carte de tous les parcours →',
+  nl: 'Kaart van alle banen →',
+  sv: 'Karta över alla banor →',
+  zh: '所有球场地图 →',
+}
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
 }
@@ -149,7 +167,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
               {content.hero.lead}
             </p>
             <Link href={joinHref(locale, '/guides/mallorca-course-map')} style={{ display: 'inline-block', marginTop: 24, padding: '12px 28px', background: 'var(--gold)', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontSize: '0.9rem', fontWeight: 500, fontFamily: "'Jost', sans-serif", letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-              Map of All Courses →
+              {MAP_BUTTON_LABELS[locale] || MAP_BUTTON_LABELS.en}
             </Link>
           </div>
         </header>

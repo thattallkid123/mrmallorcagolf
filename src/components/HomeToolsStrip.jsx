@@ -147,8 +147,8 @@ export default function HomeToolsStrip() {
       </div>
 
       <div className="hts-footer">
-        <Link href="/tools" className="hts-all">See all free tools</Link>
-        <p className="hts-fineprint">Free. No sign-up to use the tools. Built by a UK PGA Advanced Professional based in Mallorca.</p>
+        <Link href="/tools" className="hts-all">Explore all planning tools</Link>
+        <p className="hts-fineprint">No sign-up needed. Built by a UK PGA Advanced Professional based in Mallorca.</p>
         <ReviewBadge variant="mini" />
       </div>
     </aside>
