@@ -17,14 +17,7 @@ const MAP_BUTTON_LABELS = {
   zh: '所有球场地图 →',
 }
 
-',
-  de: 'Karte aller Plätze →',
-  es: 'Mapa de todos los campos →',
-  fr: 'Carte de tous les parcours →',
-  nl: 'Kaart van alle banen →',
-  sv: 'Karta över alla banor →',
-  zh: '所有球场地图 →',
-}
+
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
 }
