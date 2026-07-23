@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import CourseSelectorToolClient from '../tools/course-selector/CourseSelectorToolClient'
@@ -19,11 +20,13 @@ const COURSE_LINK_LABELS = {
 }
 
 export default function PlanYourTripView({ locale = 'en', content: rawContent }) {
+  const [itineraryOpen, setItineraryOpen] = useState(false)
   const content = rawContent || getPlanYourTripContent(locale)
   const courseLinkLabel = COURSE_LINK_LABELS[locale] || COURSE_LINK_LABELS.en
   const golfCoursesHref = buildLocalePath('/golf-courses', locale)
   const contactHref = buildLocalePath('/contact', locale)
   const pwapHref = buildLocalePath('/play-with-a-pro', locale)
+  const hotelRecommenderHref = buildLocalePath('/tools/hotel-recommender', locale)
 
   return (
     <main>
@@ -123,6 +126,57 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           </div>
         </div>
       </section>
+
+      {content.sampleItinerary && (
+        <section className="pyt-section pyt-section--light">
+          <div className="pyt-section__inner">
+            <button
+              onClick={() => setItineraryOpen(!itineraryOpen)}
+              className="pyt-itinerary-toggle"
+              aria-expanded={itineraryOpen}
+            >
+              {content.sampleItinerary.eyebrow}
+            </button>
+
+            {itineraryOpen && (
+              <div className="pyt-itinerary">
+                <h2 className="pyt-itinerary__title">{content.sampleItinerary.title}</h2>
+                <p className="pyt-itinerary__intro">{content.sampleItinerary.intro}</p>
+
+                <div className="pyt-itinerary__grid">
+                  {content.sampleItinerary.days.map((day) => (
+                    <div key={day.day} className="pyt-itinerary__card">
+                      <div className="pyt-itinerary__day">{day.day}</div>
+                      <h3 className="pyt-itinerary__course">{day.course}</h3>
+                      <p className="pyt-itinerary__subtitle">{day.title}</p>
+                      <p className="pyt-itinerary__body">{day.body}</p>
+                      <div className="pyt-itinerary__meta">
+                        <span className="pyt-itinerary__meta-item">{day.fromPalma}</span>
+                        <span className="pyt-itinerary__meta-item">{day.price}</span>
+                      </div>
+                      <Link href={day.guide} className="pyt-itinerary__link">
+                        Read guide
+                      </Link>
+                      {day.dining && <p className="pyt-itinerary__dining">{day.dining}</p>}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pyt-itinerary__footer">
+                  <p><strong>{content.sampleItinerary.summary}</strong></p>
+                  <p>{content.sampleItinerary.fees}</p>
+                  <p>
+                    {content.sampleItinerary.hotelEyebrow}:{' '}
+                    <Link href={hotelRecommenderHref} style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid currentColor' }}>
+                      {content.sampleItinerary.hotelCta}
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       <StickyMobileCta
         primaryHref={contactHref}
