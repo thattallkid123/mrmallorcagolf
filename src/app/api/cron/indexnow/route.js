@@ -10,6 +10,7 @@ const INDEXNOW_GUIDES = [
   '/guides/best-golf-courses-mallorca',
   '/guides/best-time-play-golf-mallorca',
   '/guides/golf-club-hire-mallorca',
+  '/guides/mallorca-course-map',
   '/guides/santa-ponsa-1-review',
   '/guides/son-antem-west-review',
   '/guides/son-gual-review',

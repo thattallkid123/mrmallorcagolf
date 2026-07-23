@@ -26,6 +26,7 @@ const LAST_MODIFIED_BY_PATH = {
   '/guides/son-antem-west-review': '2026-05-01',
   '/guides/t-golf-calvia-review': '2026-05-01',
   '/guides/play-with-a-pro-explained': '2026-06-26',
+  '/guides/mallorca-course-map': '2026-07-23',
   '/guides/is-mallorca-good-for-golf': '2026-05-01',
   '/guides/on-course-coaching-mallorca': '2026-05-01',
   '/play-with-a-pro': '2026-06-25',

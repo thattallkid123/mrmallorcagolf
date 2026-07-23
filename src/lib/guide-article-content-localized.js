@@ -7949,6 +7949,110 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {}
       ]
     }
+  },
+  "mallorca-course-map": {
+    "de": {
+      "metadata": {
+        "title": "Interaktive Karte aller 24 Golfplätze auf Mallorca",
+        "description": "Interaktive Karte aller 24 Golfplätze auf Mallorca. Finden Sie Plätze nach Region und Entfernung von Palma.",
+        "imageAlt": "Karte der Golfplätze auf Mallorca"
+      },
+      "meta": {
+        "badge": "Referenz",
+        "readTime": "2 min",
+        "updated": "Juli 2026",
+        "title": "Mallorca Golfplätze-Karte",
+        "intro": "Alle 24 Plätze auf einer Karte. Finden Sie sie nach Ort, Entfernung von Palma oder Platzname."
+      },
+      "blocks": [
+        { "text": "Nutzen Sie diese interaktive Karte, um alle 24 Golfplätze auf Mallorca zu erkunden. Filtern Sie nach Region, Entfernung von Palma oder Schwierigkeitsgrad. Klicken Sie auf einen Platz, um vollständige Details, Greenfees und Buchungsmöglichkeiten zu sehen." }
+      ]
+    },
+    "es": {
+      "metadata": {
+        "title": "Mapa Interactivo de los 24 Campos de Golf en Mallorca",
+        "description": "Mapa interactivo de todos los campos de golf en Mallorca. Encuentra campos por región y distancia de Palma.",
+        "imageAlt": "Mapa de campos de golf en Mallorca"
+      },
+      "meta": {
+        "badge": "Referencia",
+        "readTime": "2 min",
+        "updated": "Julio 2026",
+        "title": "Mapa de campos de Mallorca",
+        "intro": "Los 24 campos en un mapa. Búscalos por ubicación, distancia de Palma o nombre del campo."
+      },
+      "blocks": [
+        { "text": "Utiliza este mapa interactivo para explorar los 24 campos de golf en Mallorca. Filtra por región, distancia desde Palma o dificultad. Haz clic en cualquier campo para ver detalles completos, tarifas y cómo reservar." }
+      ]
+    },
+    "fr": {
+      "metadata": {
+        "title": "Carte interactive des 24 terrains de golf à Majorque",
+        "description": "Carte interactive de tous les terrains de golf à Majorque. Trouvez les parcours par région et distance de Palma.",
+        "imageAlt": "Carte des terrains de golf de Majorque"
+      },
+      "meta": {
+        "badge": "Référence",
+        "readTime": "2 min",
+        "updated": "Juillet 2026",
+        "title": "Carte des parcours à Majorque",
+        "intro": "Les 24 parcours sur une carte. Trouvez-les par localisation, distance de Palma ou nom du parcours."
+      },
+      "blocks": [
+        { "text": "Utilisez cette carte interactive pour explorer les 24 terrains de golf à Majorque. Filtrez par région, distance de Palma ou difficulté. Cliquez sur un terrain pour voir les détails complets, les tarifs et comment réserver." }
+      ]
+    },
+    "nl": {
+      "metadata": {
+        "title": "Interactieve kaart van alle 24 golfbanen op Mallorca",
+        "description": "Interactieve kaart van alle golfbanen op Mallorca. Vind banen op locatie en afstand van Palma.",
+        "imageAlt": "Kaart van golfbanen op Mallorca"
+      },
+      "meta": {
+        "badge": "Referentie",
+        "readTime": "2 min",
+        "updated": "Juli 2026",
+        "title": "Golfbanen kaart Mallorca",
+        "intro": "Alle 24 banen op één kaart. Zoek op locatie, afstand van Palma of baannaam."
+      },
+      "blocks": [
+        { "text": "Gebruik deze interactieve kaart om alle 24 golfbanen op Mallorca te verkennen. Filter op regio, afstand van Palma of moeilijkheidsgraad. Klik op een baan voor volledige details, greenfees en boekinginformatie." }
+      ]
+    },
+    "sv": {
+      "metadata": {
+        "title": "Interaktiv karta över alla 24 golfbanor på Mallorca",
+        "description": "Interaktiv karta över alla golfbanor på Mallorca. Hitta banor efter region och avstånd från Palma.",
+        "imageAlt": "Karta över golfbanor på Mallorca"
+      },
+      "meta": {
+        "badge": "Referens",
+        "readTime": "2 min",
+        "updated": "Juli 2026",
+        "title": "Golfbanor på Mallorca karta",
+        "intro": "Alla 24 banor på en karta. Hitta dem efter plats, avstånd från Palma eller banannamn."
+      },
+      "blocks": [
+        { "text": "Använd denna interaktiva karta för att utforska alla 24 golfbanor på Mallorca. Filtrera efter region, avstånd från Palma eller svårighetsgrad. Klicka på en bana för fullständig information, greenfees och bokningsdetaljer." }
+      ]
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡所有24个高尔夫球场的互动地图",
+        "description": "马略卡所有高尔夫球场的互动地图。按地区和距帕尔马的距离查找球场。",
+        "imageAlt": "马略卡高尔夫球场地图"
+      },
+      "meta": {
+        "badge": "参考",
+        "readTime": "2 分钟",
+        "updated": "2026 年 7 月",
+        "title": "马略卡球场地图",
+        "intro": "所有 24 个球场在一张地图上。按位置、距帕尔马的距离或球场名称查找。"
+      },
+      "blocks": [
+        { "text": "使用此互动地图探索马略卡的全部 24 个高尔夫球场。按地区、距帕尔马的距离或难度筛选。点击任何球场可查看完整详情、绿费和预订方式。" }
+      ]
+    }
   }
 }
 

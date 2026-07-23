@@ -17,6 +17,7 @@ const INDEXNOW_GUIDES = [
   'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
   'https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
   'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
+  'https://www.mrmallorcagolf.com/guides/mallorca-course-map',
   'https://www.mrmallorcagolf.com/guides/santa-ponsa-1-review',
   'https://www.mrmallorcagolf.com/guides/son-antem-west-review',
   'https://www.mrmallorcagolf.com/guides/son-gual-review',

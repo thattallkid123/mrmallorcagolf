@@ -19,6 +19,7 @@ const GUIDE_DATES = {
   'on-course-coaching-mallorca': '2026-05-01',
   'is-mallorca-good-for-golf': '2026-04-01',
   'play-with-a-pro-explained': '2026-06-26',
+  'mallorca-course-map': '2026-07-23',
 }
 
 function escapeXml(str) {

@@ -16,9 +16,9 @@ const FOOTER_COPY = {
     about: 'About',
     allCourses: 'All Courses',
     enquire: null,
-    newsletter: 'Planning notes',
-    newsletterLink: 'Free course selector',
-    newsletterHref: '/tools/course-selector',
+    newsletter: null,
+    newsletterLink: null,
+    newsletterHref: null,
     privacy: 'Privacy Policy',
     terms: 'Terms & Conditions',
     professional: 'PGA Advanced Professional',
@@ -33,9 +33,9 @@ const FOOTER_COPY = {
     about: 'Über Andy',
     allCourses: 'Alle Plätze',
     enquire: 'Anfragen',
-    newsletter: 'Newsletter',
-    newsletterLink: 'Einschreiben',
-    newsletterHref: '/tools/course-selector',
+    newsletter: null,
+    newsletterLink: null,
+    newsletterHref: null,
     privacy: 'Datenschutz',
     terms: 'AGB',
   },
@@ -176,9 +176,11 @@ export default function Footer({ lang }) {
       </div>
 
       <div className="footer__col">
-        <h3>{copy.tools}</h3>
+        <h3>Planning Tools</h3>
         <ul>
-          <li><Link href={`${prefix}/tools`} prefetch={false}>{copy.tools}</Link></li>
+          <li><Link href={`${prefix}/tools/course-selector`} prefetch={false}>Find your Mallorca course</Link></li>
+          <li><Link href={`${prefix}/tools/green-fees`} prefetch={false}>Compare all 24 courses</Link></li>
+          <li><Link href={`${prefix}/tools/golf-day-builder`} prefetch={false}>Golf day builder</Link></li>
         </ul>
       </div>
 
@@ -191,12 +193,14 @@ export default function Footer({ lang }) {
         </ul>
       </div>
 
-      <div className="footer__col">
-        <h3>{copy.newsletter}</h3>
-        <ul>
-          <li><Link href={copy.newsletterHref || `${prefix}/subscribe`} prefetch={false}>{copy.newsletterLink}</Link></li>
-        </ul>
-      </div>
+      {copy.newsletter ? (
+        <div className="footer__col">
+          <h3>{copy.newsletter}</h3>
+          <ul>
+            <li><Link href={copy.newsletterHref || `${prefix}/subscribe`} prefetch={false}>{copy.newsletterLink}</Link></li>
+          </ul>
+        </div>
+      ) : null}
 
       <div className="footer__trust">
         <ReviewBadge variant="footer-block" />

@@ -993,6 +993,34 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
     ],
   },
+  'mallorca-course-map': {
+    metadata: {
+      title: 'Interactive Map of All 24 Mallorca Golf Courses',
+      description: 'Interactive map showing the locations of all 24 golf courses in Mallorca. Find courses by region and distance from Palma.',
+      canonical: 'https://www.mrmallorcagolf.com/guides/mallorca-course-map',
+      image: 'https://www.mrmallorcagolf.com/images/courses/mallorca-map.webp',
+      imageAlt: 'Map of Mallorca Golf Courses',
+    },
+    meta: {
+      badge: 'Reference',
+      badgeGold: false,
+      readTime: '2 min',
+      updated: 'July 2026',
+      title: 'Mallorca Golf Courses Map',
+      intro: 'All 24 courses on one map. Find by location, distance from Palma, or course name.',
+      related: [
+        { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+        { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+        { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
+      ],
+    },
+    blocks: [
+      {
+        type: 'paragraph',
+        text: 'Use this interactive map to explore all 24 golf courses across Mallorca. Filter by region, distance from Palma, or difficulty. Click any course to see full details, green fees, and how to book.',
+      },
+    ],
+  },
 }
 
 const GUIDE_ARTICLE_LOCALES = ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']

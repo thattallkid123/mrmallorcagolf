@@ -54,6 +54,7 @@ export const ARTICLE_SLUGS = new Set([
   'golf-cost-mallorca',
   'golf-trip-planning-mallorca',
   'is-mallorca-good-for-golf',
+  'mallorca-course-map',
 ])
 
 export const EN_ONLY_ARTICLE_SLUGS = new Set([
