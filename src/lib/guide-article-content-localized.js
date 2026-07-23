@@ -6643,6 +6643,1312 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         }
       ]
     }
+  },
+  "golf-club-hire-mallorca": {
+    "de": {
+      "metadata": {
+        "title": "Golfschlägerverleih auf Mallorca 2026",
+        "description": "Golfschlägerverleih auf Mallorca kostet €25–€65 pro Tag. Beste Unternehmen, Qualität und wie man 2026 das beste Angebot bekommt."
+      },
+      "blocks": []
+    },
+    "es": {
+      "metadata": {
+        "title": "Alquiler de palos de golf en Mallorca 2026",
+        "description": "El alquiler de palos de golf en Mallorca cuesta €25–€65 por día. Mejores empresas, calidad y dónde obtener el mejor precio en 2026."
+      },
+      "blocks": []
+    },
+    "fr": {
+      "metadata": {
+        "title": "Location de clubs de golf à Majorque 2026",
+        "description": "La location de clubs de golf à Majorque coûte €25–€65 par jour. Meilleures entreprises, qualité et où obtenir la meilleure affaire en 2026."
+      },
+      "blocks": []
+    },
+    "nl": {
+      "metadata": {
+        "title": "Golfspelenset verhuur op Mallorca 2026",
+        "description": "Golfspelenset verhuur op Mallorca kost €25–€65 per dag. Beste bedrijven, kwaliteit en waar je de beste deal in 2026 krijgt."
+      },
+      "blocks": []
+    },
+    "sv": {
+      "metadata": {
+        "title": "Golfklubbuthyrning på Mallorca 2026",
+        "description": "Golfklubbuthyrning på Mallorca kostar €25–€65 per dag. Bästa företag, kvalitet och var man får det bästa erbjudandet 2026."
+      },
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡高尔夫球具租赁 2026",
+        "description": "马略卡高尔夫球具租赁每天€25-€65。最好的租赁公司、质量和如何在2026年获得最佳价格。"
+      },
+      "blocks": []
+    }
+  },
+  "best-golf-courses-mallorca": {
+    "de": {
+      "metadata": {
+        "title": "Alle 24 Golfplätze auf Mallorca 2026",
+        "description": "Alle 24 Golfplätze auf Mallorca von einem PGA-Profi bewertet. Greenfees €55–€260, Schwierigkeitsgrade und ehrliche Bewertungen. Aktualisiert 2026."
+      },
+      "blocks": []
+    },
+    "es": {
+      "metadata": {
+        "title": "Todos los 24 campos de golf en Mallorca 2026",
+        "description": "Los 24 campos de golf en Mallorca clasificados por un profesional PGA. Greenfees €55–€260, dificultad y veredictos honestos. Actualizado 2026."
+      },
+      "blocks": []
+    },
+    "fr": {
+      "metadata": {
+        "title": "Les 24 parcours de golf à Majorque 2026",
+        "description": "Les 24 parcours de golf à Majorque classés par un professionnel PGA. Greenfees €55–€260, évaluations de difficulté et verdicts honnêtes. Mis à jour 2026."
+      },
+      "blocks": []
+    },
+    "nl": {
+      "metadata": {
+        "title": "Alle 24 golfbanen op Mallorca 2026",
+        "description": "Alle 24 golfbanen op Mallorca geclassificeerd door een PGA-professional. Greenfees €55–€260, moeilijkheidsgraden en eerlijke beoordelingen. Bijgewerkt 2026."
+      },
+      "blocks": []
+    },
+    "sv": {
+      "metadata": {
+        "title": "Alla 24 golfbanor på Mallorca 2026",
+        "description": "Alla 24 golfbanor på Mallorca klassificerade av en PGA-proffs. Greenfees €55–€260, svårighetsgrader och ärlika omdömen. Uppdaterad 2026."
+      },
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡全部24座高尔夫球场 2026",
+        "description": "由PGA职业教练排名的马略卡全部24座高尔夫球场。绿费€55-€260、难度和诚实评价。2026年更新。"
+      },
+      "blocks": []
+    }
+  },
+  "play-with-a-pro-explained": {
+    "de": {
+      "metadata": {
+        "title": "Mit einem PGA-Profi spielen – so sieht der Tag aus",
+        "description": "Ein PGA-Profi schließt sich Ihrer Gruppe an: Grüne lesen, Wind managen und Entscheidungen in Echtzeit verbessern. So sieht der Tag genau aus."
+      },
+      "blocks": []
+    },
+    "es": {
+      "metadata": {
+        "title": "Jugar con un profesional PGA – así se ve realmente",
+        "description": "Un profesional PGA se une a su grupo: lectura de greens, gestión del viento y mejora de decisiones en tiempo real. Así es exactamente el día."
+      },
+      "blocks": []
+    },
+    "fr": {
+      "metadata": {
+        "title": "Jouer avec un pro PGA – voilà à quoi ça ressemble",
+        "description": "Un pro PGA se joint à votre groupe : lire les greens, gérer le vent et améliorer vos décisions en temps réel. C'est exactement ça."
+      },
+      "blocks": []
+    },
+    "nl": {
+      "metadata": {
+        "title": "Spelen met een PGA-pro – zo ziet de dag er uit",
+        "description": "Een PGA-pro sluit zich aan bij uw groep: greens lezen, wind managen en beslissingen in real-time verbeteren. Zo ziet het er precies uit."
+      },
+      "blocks": []
+    },
+    "sv": {
+      "metadata": {
+        "title": "Spela med en PGA-proffs – så ser dagen ut",
+        "description": "En PGA-proffs ansluter sig till din grupp: läsa greener, hantera vind och förbättra beslut i realtid. Så ser det ut exakt."
+      },
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "与PGA职业教练同场竞技一天",
+        "description": "PGA职业教练加入您的小组：判读果岭、管理风向和实时改进决策。这就是这一天的情况。"
+      },
+      "blocks": []
+    }
+  },
+  "golf-trip-planning-mallorca": {
+    "de": {
+      "metadata": {
+        "title": "Planung einer Golftrip nach Mallorca",
+        "description": "Eine Golftrip nach Mallorca planen? Plätze, Zeit, Runden, Transport, Ausrüstung und Aktivitäten. Von einem PGA-Professional auf der Insel."
+      },
+      "blocks": []
+    },
+    "es": {
+      "metadata": {
+        "title": "Planificación de un viaje de golf a Mallorca",
+        "description": "¿Planificar un viaje de golf a Mallorca? Campos, tiempo, rondas, transporte, equipos y actividades. Por un profesional PGA en la isla."
+      },
+      "blocks": []
+    },
+    "fr": {
+      "metadata": {
+        "title": "Planification d'un voyage golf à Majorque",
+        "description": "Planifier un voyage golf à Majorque ? Parcours, dates, rondes, transport, équipement et activités. Par un professionnel PGA sur l'île."
+      },
+      "blocks": []
+    },
+    "nl": {
+      "metadata": {
+        "title": "Planning van een golfreis naar Mallorca",
+        "description": "Een golfreis naar Mallorca plannen? Banen, dates, rondes, transport, uitrusting en activiteiten. Door een PGA-professional op het eiland."
+      },
+      "blocks": []
+    },
+    "sv": {
+      "metadata": {
+        "title": "Planering av en golfresa till Mallorca",
+        "description": "Planera en golfresa till Mallorca? Banor, datum, omgångar, transport, utrustning och aktiviteter. Av en PGA-proffs på ön."
+      },
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "如何规划马略卡高尔夫之旅",
+        "description": "计划马略卡高尔夫之旅？球场、日期、轮次、交通、设备和活动。由岛上的PGA职业教练编写。"
+      },
+      "blocks": []
+    }
+  },
+  "golf-cost-mallorca": {
+    "de": {
+      "metadata": {
+        "title": "Was kostet Golf auf Mallorca? 2026",
+        "description": "Golf auf Mallorca kostet €55–€260, meist €90–€150. Günstigste Pollença (€55), teuerste Son Muntaner (€260). Verleih ab €30."
+      },
+      "blocks": []
+    },
+    "es": {
+      "metadata": {
+        "title": "¿Cuánto cuesta golf en Mallorca? 2026",
+        "description": "Golf en Mallorca cuesta €55–€260, mayoría €90–€150. Más barato Pollença (€55), más caro Son Muntaner (€260). Alquiler desde €30."
+      },
+      "blocks": []
+    },
+    "fr": {
+      "metadata": {
+        "title": "Combien coûte le golf à Majorque? 2026",
+        "description": "Le golf à Majorque coûte €55–€260, la plupart €90–€150. Le moins cher Pollença (€55), le plus cher Son Muntaner (€260). Location dès €30."
+      },
+      "blocks": []
+    },
+    "nl": {
+      "metadata": {
+        "title": "Wat kost golf op Mallorca? 2026",
+        "description": "Golf op Mallorca kost €55–€260, meestal €90–€150. Goedkoopste Pollença (€55), duurste Son Muntaner (€260). Verhuur vanaf €30."
+      },
+      "blocks": []
+    },
+    "sv": {
+      "metadata": {
+        "title": "Hur mycket kostar golf på Mallorca? 2026",
+        "description": "Golf på Mallorca kostar €55–€260, mest €90–€150. Billigaste Pollença (€55), dyraste Son Muntaner (€260). Uthyrning från €30."
+      },
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡高尔夫要花多少钱 2026",
+        "description": "马略卡高尔夫€55-€260，多数€90-€150。最便宜Pollença（€55），最贵Son Muntaner（€260）。租赁€30起。"
+      },
+      "blocks": []
+    }
+  }
+,
+  "golf-club-hire-mallorca": {
+    "de": {
+      "blocks": []
+    },
+    "es": {
+      "blocks": []
+    },
+    "fr": {
+      "blocks": []
+    },
+    "nl": {
+      "blocks": []
+    },
+    "sv": {
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡高尔夫用品租赁指南",
+        "description": "如何在马略卡租赁高尔夫球杆、高尔夫鞋和其他用品。当地租赁店、价格和建议。",
+        "imageAlt": "马略卡高尔夫用品租赁"
+      },
+      "blocks": []
+    }
+  },
+  "best-golf-courses-mallorca": {
+    "de": {
+      "blocks": []
+    },
+    "es": {
+      "blocks": []
+    },
+    "fr": {
+      "blocks": []
+    },
+    "nl": {
+      "blocks": []
+    },
+    "sv": {
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡最佳高尔夫球场 2026",
+        "description": "马略卡24个高尔夫球场的完整指南。排名、设计师、难度等级和专业建议。",
+        "imageAlt": "马略卡高尔夫球场"
+      },
+      "blocks": []
+    }
+  },
+  "golf-trip-planning-mallorca": {
+    "de": {
+      "blocks": []
+    },
+    "es": {
+      "blocks": []
+    },
+    "fr": {
+      "blocks": []
+    },
+    "nl": {
+      "blocks": []
+    },
+    "sv": {
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "如何规划马略卡高尔夫旅行",
+        "description": "马略卡高尔夫度假的完整规划指南。球场选择、餐饮、住宿和日程安排。",
+        "imageAlt": "马略卡高尔夫旅行规划"
+      },
+      "blocks": []
+    }
+  },
+  "golf-cost-mallorca": {
+    "de": {
+      "blocks": []
+    },
+    "es": {
+      "blocks": []
+    },
+    "fr": {
+      "blocks": []
+    },
+    "nl": {
+      "blocks": []
+    },
+    "sv": {
+      "blocks": []
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡高尔夫费用详解",
+        "description": "在马略卡打高尔夫的真实成本。球场费用、用品租赁、餐饮和出行费用。",
+        "imageAlt": "马略卡高尔夫费用"
+      },
+      "blocks": []
+    }
+  }
+,
+  "play-with-a-pro-explained": {
+    "de": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "es": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "fr": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "nl": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "sv": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "zh": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    }
+  },
+  "golf-club-hire-mallorca": {
+    "de": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "es": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "fr": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "nl": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "sv": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡高尔夫用品租赁指南",
+        "description": "如何在马略卡租赁高尔夫球杆、高尔夫鞋和其他用品。当地租赁店、价格和建议。",
+        "imageAlt": "马略卡高尔夫用品租赁"
+      },
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    }
+  },
+  "best-golf-courses-mallorca": {
+    "de": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "es": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "fr": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "nl": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "sv": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡最佳高尔夫球场 2026",
+        "description": "马略卡24个高尔夫球场的完整指南。排名、设计师、难度等级和专业建议。",
+        "imageAlt": "马略卡高尔夫球场"
+      },
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    }
+  },
+  "golf-trip-planning-mallorca": {
+    "de": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "es": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "fr": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "nl": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "sv": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "zh": {
+      "metadata": {
+        "title": "如何规划马略卡高尔夫旅行",
+        "description": "马略卡高尔夫度假的完整规划指南。球场选择、餐饮、住宿和日程安排。",
+        "imageAlt": "马略卡高尔夫旅行规划"
+      },
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    }
+  },
+  "golf-cost-mallorca": {
+    "de": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "es": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "fr": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "nl": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "sv": {
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "zh": {
+      "metadata": {
+        "title": "马略卡高尔夫费用详解",
+        "description": "在马略卡打高尔夫的真实成本。球场费用、用品租赁、餐饮和出行费用。",
+        "imageAlt": "马略卡高尔夫费用"
+      },
+      "blocks": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    }
   }
 }
 
