@@ -34,7 +34,7 @@ export function getSocialImage(locale = 'en') {
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf | 24 Courses, Reviewed by a Local PGA Pro',
+    title: 'Mallorca Golf: Play With a Pro, Plan Your Trip',
     description:
       '24 Mallorca golf courses reviewed by a PGA Advanced Professional who lives on the island. Green fees, honest verdicts, and help planning your trip.',
   },
