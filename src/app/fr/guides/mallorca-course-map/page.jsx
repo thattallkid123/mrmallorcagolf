@@ -10,7 +10,7 @@ export const metadata = {
 export default function MallorcaCourseMapGuide() {
   return (
     <PageLayout lang="fr" navTransparent={false} showWhatsAppButton={false}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '48px 24px 80px' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: 'calc(var(--nav-h) + 40px) 24px 80px' }}>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', color: '#1A1916', marginBottom: 24 }}>
           Carte des 24 parcours
         </h1>

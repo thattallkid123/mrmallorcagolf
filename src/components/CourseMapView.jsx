@@ -207,6 +207,10 @@ export default function CourseMapView({ lang = 'en' }) {
           overflow: 'hidden',
           border: '1px solid rgba(26,25,22,0.1)',
           background: '#e8ece6',
+          // Own stacking context so Leaflet's internal panes (z-index up to
+          // 1000) stay below the fixed nav (z-index 100) when scrolled.
+          position: 'relative',
+          zIndex: 0,
         }}
       />
 
