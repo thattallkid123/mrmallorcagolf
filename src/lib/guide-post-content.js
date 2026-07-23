@@ -16,7 +16,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '7 min read',
         updated: 'March 2026',
-        title: 'Son Gual Golf Mallorca Review (2026) - Is It Worth It? Green Fees, Wind & Verdict',
+        title: 'Son Gual Golf - Worth It? (2026)',
         intro:
           'My most-played course on the island. The wind is fickle, the greens are quick, and the closing stretch is as good as anything in Mallorca.',
         related: [
@@ -195,7 +195,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '7 min read',
         updated: 'March 2026',
-        title: "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)",
+        title: "Alcanada Golf - Review (2026)",
         intro: 'If I want someone to go home talking about one round, I take them to Alcanada. The lighthouse helps, but the course stands up on its own.',
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
@@ -352,7 +352,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '6 min read',
         updated: 'April 2026',
-        title: "Son Muntaner Golf Mallorca Review (2026) - Best in Spain, But Is It Worth It?",
+        title: "Son Muntaner Golf - Best in Spain? (2026)",
         intro: "Best Golf Course in Spain at the 2025 World Golf Awards. Five minutes from Palma. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
@@ -434,7 +434,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '6 min read',
         updated: 'March 2026',
-        title: "Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026)",
+        title: "Santa Ponsa 1 Golf - Review (2026)",
         intro: "One of Europe's longest courses, real DP World Tour history, and one of the easiest places on the island to enjoy hitting driver.",
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
@@ -558,7 +558,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '6 min read',
         updated: 'May 2026',
-        title: "Golf de Andratx Review - A PGA Professional's Honest Take (2026)",
+        title: "Golf de Andratx - Review (2026)",
         intro:
           'We started on the 3rd, the robots were cutting the Green Monster, and by hole 8 we were looking down over the whole southwest of Mallorca. A 7.5 out of 10 and worth the drive.',
         related: [
@@ -718,7 +718,7 @@ export const GUIDE_POST_CONTENT = {
   'son-termes-review': {
     en: {
       metadata: {
-        title: "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
+        title: "Son Termes Golf - Review (2026)",
         description:
           'Son Termes golf course Mallorca reviewed by a PGA professional. Mountain views, honest course notes, green fees, and who it suits, from someone who played it this week.',
         imagePath: '/images/son-termes-blog/st-2.webp',
@@ -894,7 +894,7 @@ export const GUIDE_POST_CONTENT = {
         badgeGold: true,
         readTime: '6 min read',
         updated: 'May 2026',
-        title: "T Golf Calvià Review - A PGA Professional's Honest Take (2026)",
+        title: "T Golf Calvià - Review (2026)",
         intro:
           'Fifteen lakes, windmills throughout, and some of the purest greens I have played in Mallorca. A 9 out of 10 and one of the best-conditioned courses on the island.',
         related: [
@@ -1073,7 +1073,7 @@ export const GUIDE_POST_CONTENT = {
   'son-antem-west-review': {
     en: {
       metadata: {
-        title: "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)",
+        title: "Son Antem West Golf - Review (2026)",
         description:
           'Son Antem West: green fees from €109, par 72, 6,293m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',

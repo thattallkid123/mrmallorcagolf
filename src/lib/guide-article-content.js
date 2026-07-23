@@ -17,7 +17,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       badgeGold: false,
       readTime: '5 min read',
       updated: 'March 2026',
-      title: 'How Much Does Golf Cost in Mallorca? A Complete 2026 Breakdown',
+      title: 'Golf Cost in Mallorca (2026)',
       intro:
         'Public 18-hole golf in Mallorca runs from about €55 at the value end up to around €260 at Son Muntaner in peak season. Here is the honest 2026 breakdown from someone who plays here most weeks.',
       related: [
@@ -150,7 +150,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'golf-trip-planning-mallorca': {
     metadata: {
-      title: 'How to Plan the Perfect Golf Trip to Mallorca | Courses, Base & Tee Times',
+      title: 'Plan Your Mallorca Golf Trip (2026)',
       description:
         'Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you are off the course. By a PGA professional based on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
@@ -295,7 +295,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'best-time-play-golf-mallorca': {
     metadata: {
-      title: 'The Best Time of Year to Play Golf in Mallorca - Month by Month (2026)',
+      title: 'Best Time to Play Golf (2026)',
       description:
         'When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island - weather, green fees, course conditions, and crowds.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
@@ -420,7 +420,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       badgeGold: true,
       readTime: '8 min read',
       updated: 'March 2026',
-      title: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
+      title: "Best Golf Courses in Mallorca (2026)",
       intro:
           "Mallorca has more outstanding golf than most visitors realise. Twenty-four courses, several of them capable of hosting European Tour events. Here's what I know from playing them.",
       related: [
@@ -648,7 +648,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       badgeGold: false,
       readTime: '6 min read',
       updated: 'March 2026',
-      title: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
+      title: 'Golf Club Hire in Mallorca (2026)',
       intro: 'Should you bring your own clubs? Which hire companies are worth using? What should you pay? Answered honestly.',
       related: [
         { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },

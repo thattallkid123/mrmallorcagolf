@@ -23,6 +23,24 @@ const ALL_COURSES = GOLF_COURSE_DATA.flatMap(region =>
   region.courses.map(course => ({ ...course, region: region.region }))
 )
 
+// Join grouped course short names, collapsing a shared leading word-prefix so
+// "Santa Ponsa 2" + "Santa Ponsa 3" reads "Santa Ponsa 2 & 3", and
+// "Son Antem East" + "Son Antem West" reads "Son Antem East & West".
+function collapseSharedPrefix(shortNames) {
+  if (shortNames.length < 2) return shortNames.join(' & ')
+  const wordLists = shortNames.map((s) => s.split(' '))
+  const minLen = Math.min(...wordLists.map((w) => w.length))
+  const common = []
+  for (let i = 0; i < minLen - 1; i += 1) {
+    const word = wordLists[0][i]
+    if (wordLists.every((w) => w[i] === word)) common.push(word)
+    else break
+  }
+  if (common.length === 0) return shortNames.join(' & ')
+  const suffixes = wordLists.map((w) => w.slice(common.length).join(' '))
+  return `${common.join(' ')} ${suffixes.join(' & ')}`
+}
+
 export default function CourseMapView({ lang = 'en' }) {
   const labels = LABELS[lang] || LABELS.en
   const regions = REGION_IDS.map((id, i) => ({ id, label: labels.regions[i] }))
@@ -131,7 +149,7 @@ export default function CourseMapView({ lang = 'en' }) {
       n += 1
       points.push(coords)
       const fullNames = courses.map((c) => c.name).join(' & ')
-      const shortNames = courses.map((c) => getCourseShortName(c.name)).join(' & ')
+      const shortNames = collapseSharedPrefix(courses.map((c) => getCourseShortName(c.name)))
       const location = courses[0].location || ''
       const isGrouped = courses.length > 1
       const icon = L.divIcon({
