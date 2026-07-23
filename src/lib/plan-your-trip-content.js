@@ -48,6 +48,66 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "groupValue": "€950 total",
     "priceSuffix": "Green fees additional",
     "cta": "See Play With A Pro"
+  },
+  "sampleItinerary": {
+    "eyebrow": "Sample Trip",
+    "title": "Five courses, five days. Base in Palma.",
+    "intro": "A realistic 5-day trip: open course to warm up on, championship test with coaching, north drive to the island's most memorable hole, and a short finish near the airport. All five courses have published guides on the site.",
+    "days": [
+      {
+        "day": "Day 1",
+        "course": "Son Quint",
+        "fromPalma": "15 min",
+        "price": "€80–140",
+        "title": "Opener. Easy routing from Palma.",
+        "body": "15 minutes from Palma, open layout, room to swing. Early morning tee time. No pressure on day one after travel.",
+        "guide": "/guides/son-quint-review"
+      },
+      {
+        "day": "Day 2",
+        "course": "Santa Ponsa 1",
+        "fromPalma": "25 min",
+        "price": "€77–126",
+        "title": "Familiar. Still based in Palma.",
+        "body": "Public access course, forgiving layout, manageable from the tee. 25 minutes from the city. Early slot recommended.",
+        "guide": "/guides/santa-ponsa-1-review"
+      },
+      {
+        "day": "Day 3",
+        "course": "Son Gual",
+        "fromPalma": "20 min",
+        "price": "€115–165",
+        "title": "Play With A Pro. Championship test.",
+        "body": "Fast greens, tight fringes, wind behaviour unique to this course. Where a pro adds value. Early tee time for the wind. Food on site.",
+        "guide": "/guides/son-gual-review",
+        "dining": "El Camino, Marc Fosh or Zaranda for dinner in Palma."
+      },
+      {
+        "day": "Day 4",
+        "course": "Alcanada",
+        "fromPalma": "50 min",
+        "price": "€115–220",
+        "title": "Full day north. The memorable one.",
+        "body": "Coastal course, lighthouse in sight for 16 holes. Book early morning for light and wind. 50 minutes is a proper drive but a full day out, not a rush. Severe greens. Book your breakfast early.",
+        "guide": "/guides/alcanada-review",
+        "dining": "Maca de Castro in Port d'Alcúdia, 10 min from the course."
+      },
+      {
+        "day": "Day 5",
+        "course": "T Golf Calvià",
+        "fromPalma": "30 min",
+        "price": "€140–210",
+        "title": "Change of style. Back toward the airport.",
+        "body": "Post-renovation course with 15 lakes and serious conditioning. 30 minutes from Palma, 40 from the airport. Or choose Son Termes instead: 5,282m, par 70, 10 minutes from Palma, short and scenic for a travel day.",
+        "guide": "/guides/t-golf-calvia-review",
+        "dining": "El Camino or local options near the course."
+      }
+    ],
+    "summary": "Five courses. Base in Palma for Days 1, 2, 3 and 5. One long drive to Alcanada on Day 4. Green fees roughly €427–700 across the week, plus Play With A Pro if Day 3.",
+    "fees": "Green fees €427–700 total. €3 daily licence at Alcanada. Play With A Pro is €695 solo, €950 group, green fees separate.",
+    "hotelEyebrow": "Where to stay",
+    "hotelCta": "Use the hotel recommender",
+    "hotelLink": "/tools/hotel-recommender"
   }
 }
 }
