@@ -873,9 +873,9 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
     <div ref={containerRef}>
       <style jsx>{`
         .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:52px 24px 48px; text-align:center; }
-        .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
-        .cst-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
-        .cst-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
+        .cst-eyebrow { font-family:"Jost",sans-serif; font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
+        .cst-h1 { font-family:"Cormorant Garamond",serif; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .cst-sub { font-family:"Jost",sans-serif; font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .cst-wrap { max-width:680px; margin:0 auto; padding:0 18px 90px; }
         /* Progress */
         .cst-progress { margin:32px auto 28px; max-width:560px; }
@@ -883,7 +883,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
         .cst-progress-fill { height:100%; background:linear-gradient(90deg,#B8973C,#D4B068); transition:width .5s cubic-bezier(0.22,1,0.36,1); border-radius:99px; }
         .cst-progress-label { display:flex; justify-content:space-between; font-size:.7rem; color:#8A7F74; margin-top:9px; letter-spacing:.12em; text-transform:uppercase; }
         /* Question */
-        .cst-q-title { font-family:var(--font-serif); font-size:clamp(1.55rem,4vw,2.1rem); color:#1A1916; text-align:center; margin-bottom:6px; font-weight:500; }
+        .cst-q-title { font-family:"Cormorant Garamond",serif; font-size:clamp(1.55rem,4vw,2.1rem); color:#1A1916; text-align:center; margin-bottom:6px; font-weight:500; }
         .cst-q-sub { text-align:center; color:#8A7F74; font-size:.9rem; margin-bottom:28px; }
         .cst-opts { display:grid; gap:12px; max-width:560px; margin:0 auto; }
         .cst-opts.cols-2 { grid-template-columns:1fr; }

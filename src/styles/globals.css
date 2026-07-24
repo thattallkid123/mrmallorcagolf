@@ -142,7 +142,21 @@
 
 /* The embedded course selector carries its own bottom padding */
 #free-course-finder .cst-wrap {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
+}
+
+/* Mobile: tighten spacing around Sample Trip */
+@media (max-width: 640px) {
+  .pyt-section {
+    padding: 48px clamp(16px, 4vw, 42px);
+  }
+  #sample-itinerary {
+    padding: 48px clamp(16px, 4vw, 42px);
+  }
+  /* Restore padding on the itin-invite card itself */
+  .pyt-itin-invite {
+    padding: 20px 18px;
+  }
 }
 
 .pyt-section--dark {
