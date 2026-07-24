@@ -77,6 +77,78 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
         </div>
       </section>
 
+      {content.sampleItinerary && (
+        <section className="pyt-section pyt-section--light" id="sample-itinerary">
+          <div className="pyt-section__inner pyt-section__inner--wide">
+            <div className="pyt-itin-invite">
+              <div className="pyt-itin-invite__text">
+                <span className="pyt-tier-badge">{content.sampleItinerary.eyebrow}</span>
+                <h2 className="pyt-itin-invite__title">{content.sampleItinerary.title}</h2>
+              </div>
+              <button
+                type="button"
+                onClick={() => setItineraryOpen(!itineraryOpen)}
+                className="pyt-itin-invite__btn"
+                aria-expanded={itineraryOpen}
+                aria-controls="sample-itinerary-body"
+              >
+                {itineraryOpen ? 'Hide itinerary' : 'See the 5 days'}
+              </button>
+            </div>
+
+            {itineraryOpen && (
+              <div className="pyt-itin" id="sample-itinerary-body">
+                <p className="pyt-itin__intro">{content.sampleItinerary.intro}</p>
+
+                {content.sampleItinerary.days.map((day, i) => (
+                  <article
+                    key={day.day}
+                    className={`pyt-itin-row${i % 2 === 1 ? ' pyt-itin-row--reverse' : ''}`}
+                  >
+                    <div className="pyt-itin-row__media">
+                      <Image
+                        src={day.image}
+                        alt={day.course}
+                        fill
+                        sizes="(max-width: 900px) 100vw, 46vw"
+                        quality={88}
+                        className="pyt-itin-row__img"
+                      />
+                    </div>
+                    <div className="pyt-itin-row__text">
+                      <p className="pyt-itin-row__day">{day.day}</p>
+                      <h3 className="pyt-itin-row__course">{day.course}</h3>
+                      <p className="pyt-itin-row__subtitle">{day.title}</p>
+                      <p className="pyt-itin-row__body">{day.body}</p>
+                      <p className="pyt-itin-row__meta">
+                        <span>{day.fromPalma} from Palma</span>
+                        <span aria-hidden="true">&middot;</span>
+                        <span>{day.price}</span>
+                      </p>
+                      {day.dining ? <p className="pyt-itin-row__dining">{day.dining}</p> : null}
+                      <Link href={day.guide} className="pyt-itin-row__link">
+                        Read the {day.course} guide
+                      </Link>
+                    </div>
+                  </article>
+                ))}
+
+                <div className="pyt-itin__footer">
+                  <p className="pyt-itin__summary">{content.sampleItinerary.summary}</p>
+                  <p>{content.sampleItinerary.fees}</p>
+                  <p>
+                    {content.sampleItinerary.hotelEyebrow}:{' '}
+                    <Link href={hotelRecommenderHref} className="pyt-itin__hotel-link">
+                      {content.sampleItinerary.hotelCta}
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
       <section className="pyt-section pyt-section--dark" id="professional-planning">
         <div className="pyt-section__inner">
           <div className="pyt-tier-header">
@@ -126,57 +198,6 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           </div>
         </div>
       </section>
-
-      {content.sampleItinerary && (
-        <section className="pyt-section pyt-section--light">
-          <div className="pyt-section__inner">
-            <button
-              onClick={() => setItineraryOpen(!itineraryOpen)}
-              className="pyt-itinerary-toggle"
-              aria-expanded={itineraryOpen}
-            >
-              {content.sampleItinerary.eyebrow}
-            </button>
-
-            {itineraryOpen && (
-              <div className="pyt-itinerary">
-                <h2 className="pyt-itinerary__title">{content.sampleItinerary.title}</h2>
-                <p className="pyt-itinerary__intro">{content.sampleItinerary.intro}</p>
-
-                <div className="pyt-itinerary__grid">
-                  {content.sampleItinerary.days.map((day) => (
-                    <div key={day.day} className="pyt-itinerary__card">
-                      <div className="pyt-itinerary__day">{day.day}</div>
-                      <h3 className="pyt-itinerary__course">{day.course}</h3>
-                      <p className="pyt-itinerary__subtitle">{day.title}</p>
-                      <p className="pyt-itinerary__body">{day.body}</p>
-                      <div className="pyt-itinerary__meta">
-                        <span className="pyt-itinerary__meta-item">{day.fromPalma}</span>
-                        <span className="pyt-itinerary__meta-item">{day.price}</span>
-                      </div>
-                      <Link href={day.guide} className="pyt-itinerary__link">
-                        Read guide
-                      </Link>
-                      {day.dining && <p className="pyt-itinerary__dining">{day.dining}</p>}
-                    </div>
-                  ))}
-                </div>
-
-                <div className="pyt-itinerary__footer">
-                  <p><strong>{content.sampleItinerary.summary}</strong></p>
-                  <p>{content.sampleItinerary.fees}</p>
-                  <p>
-                    {content.sampleItinerary.hotelEyebrow}:{' '}
-                    <Link href={hotelRecommenderHref} style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid currentColor' }}>
-                      {content.sampleItinerary.hotelCta}
-                    </Link>
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
-        </section>
-      )}
 
       <StickyMobileCta
         primaryHref={contactHref}

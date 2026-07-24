@@ -61,7 +61,8 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "price": "€80–140",
         "title": "Opener. Easy routing from Palma.",
         "body": "15 minutes from Palma, open layout, room to swing. Early morning tee time. No pressure on day one after travel.",
-        "guide": "/guides/son-quint-review"
+        "guide": "/guides/son-quint-review",
+        "image": "/images/courses/son-quint.webp"
       },
       {
         "day": "Day 2",
@@ -70,7 +71,8 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "price": "€77–126",
         "title": "Familiar. Still based in Palma.",
         "body": "Public access course, forgiving layout, manageable from the tee. 25 minutes from the city. Early slot recommended.",
-        "guide": "/guides/santa-ponsa-1-review"
+        "guide": "/guides/santa-ponsa-1-review",
+        "image": "/images/courses/santa-ponsa-1.webp"
       },
       {
         "day": "Day 3",
@@ -80,6 +82,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "title": "Play With A Pro. Championship test.",
         "body": "Fast greens, tight fringes, wind behaviour unique to this course. Where a pro adds value. Early tee time for the wind. Food on site.",
         "guide": "/guides/son-gual-review",
+        "image": "/images/courses/son-gual.webp",
         "dining": "El Camino, Marc Fosh or Zaranda for dinner in Palma."
       },
       {
@@ -90,6 +93,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "title": "Full day north. The memorable one.",
         "body": "Coastal course, lighthouse in sight for 16 holes. Book early morning for light and wind. 50 minutes is a proper drive but a full day out, not a rush. Severe greens. Book your breakfast early.",
         "guide": "/guides/alcanada-review",
+        "image": "/images/courses/alcanada.webp",
         "dining": "Maca de Castro in Port d'Alcúdia, 10 min from the course."
       },
       {
@@ -100,6 +104,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "title": "Change of style. Back toward the airport.",
         "body": "Post-renovation course with 15 lakes and serious conditioning. 30 minutes from Palma, 40 from the airport. Or choose Son Termes instead: 5,282m, par 70, 10 minutes from Palma, short and scenic for a travel day.",
         "guide": "/guides/t-golf-calvia-review",
+        "image": "/images/courses/t-golf-calvia.webp",
         "dining": "El Camino or local options near the course."
       }
     ],
