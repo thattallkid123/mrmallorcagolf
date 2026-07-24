@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import CourseSelectorToolClient from '../tools/course-selector/CourseSelectorToolClient'
-import BookingPolicyNotice from '../../../components/BookingPolicyNotice'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import { buildLocalePath } from '../../../lib/site'
 import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
@@ -67,8 +66,8 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
             <span className="pyt-tier-badge">{content.free.eyebrow}</span>
             <h2 className="pyt-tier-title">{content.free.title}</h2>
             <p className="pyt-tier-body">{content.free.body}</p>
-            <p className="pyt-tier-body" style={{ marginTop: '-0.35rem' }}>
-              <Link href={golfCoursesHref} style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid currentColor' }}>
+            <p className="pyt-tier-body" style={{ marginTop: '1.15rem' }}>
+              <Link href={golfCoursesHref} style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid currentColor', paddingBottom: 3 }}>
                 {courseLinkLabel}
               </Link>
             </p>
@@ -174,8 +173,6 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               {content.professional.cta}
             </Link>
           </div>
-
-          <BookingPolicyNotice locale={locale} />
         </div>
       </section>
 

@@ -18,7 +18,7 @@ export default function GuidesHeroAnchors({ reviewsLabel, articlesLabel }) {
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.75rem' }}>
       <a
         href="#course-reviews"
-        className="btn btn--outline-white"
+        className="btn btn--gold"
         onClick={(event) => {
           event.preventDefault()
           scrollToHash('#course-reviews')
@@ -28,7 +28,7 @@ export default function GuidesHeroAnchors({ reviewsLabel, articlesLabel }) {
       </a>
       <a
         href="#guides-articles"
-        className="btn btn--outline-white"
+        className="btn btn--outline-gold"
         onClick={(event) => {
           event.preventDefault()
           scrollToHash('#guides-articles')

@@ -135,6 +135,16 @@
   background: var(--cream);
 }
 
+/* Two light sections read as one block - don't stack both sets of padding */
+.pyt-section--light + .pyt-section--light {
+  padding-top: 0;
+}
+
+/* The embedded course selector carries its own bottom padding */
+#free-course-finder .cst-wrap {
+  padding-bottom: 0;
+}
+
 .pyt-section--dark {
   background: var(--linen);
 }
@@ -1291,6 +1301,9 @@ body {
 .btn--outline-white:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.68); transform: translateY(-2px); box-shadow: 0 14px 30px rgba(12,11,9,0.18); }
 .btn--gold { color: var(--deep); background: var(--gold); border-color: var(--gold); }
 .btn--gold:hover { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-2px); box-shadow: 0 16px 34px rgba(184,151,60,0.24); }
+/* Gold outline on a photo hero - readable without a second solid pill competing */
+.btn--outline-gold { color: var(--gold-light); border-color: rgba(184,151,60,0.72); background: rgba(12,11,9,0.42); backdrop-filter: blur(3px); }
+.btn--outline-gold:hover { color: var(--deep); background: var(--gold); border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 16px 34px rgba(184,151,60,0.24); }
 
 /* ─── NAVIGATION ───────────────────────────────────────────── */
 .nav {
@@ -2208,15 +2221,16 @@ body {
 .pwap-course-note__link { font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); text-decoration: none; }
 .booking-policy { margin-top: 2rem; padding: 24px 26px; border: 1px solid rgba(184,151,60,0.22); background: linear-gradient(180deg, rgba(255,255,255,0.94) 0%, rgba(248,244,236,0.96) 100%); box-shadow: var(--shadow-soft); }
 .booking-policy__eyebrow { margin: 0 0 0.7rem; font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
-.booking-policy__title { margin: 0 0 0.9rem; font-family: var(--font-serif); font-size: 1.2rem; font-weight: 500; line-height: 1.3; color: var(--deep); }
-.booking-policy__list { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.55rem; }
+.booking-policy__title { margin: 0; font-family: var(--font-serif); font-size: 1.2rem; font-weight: 500; line-height: 1.3; color: var(--deep); }
+.booking-policy__list { margin: 1.1rem 0 0; padding-left: 1.2rem; display: grid; gap: 0.55rem; }
 .booking-policy__list li { color: var(--charcoal); font-size: 0.92rem; font-weight: 300; line-height: 1.72; }
 .booking-policy__footnote { margin: 1rem 0 0; color: var(--taupe); font-size: 0.84rem; line-height: 1.7; }
 .booking-policy__link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
-.booking-policy__toggle { all: unset; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0; background: none; border: none; font-family: inherit; }
+.booking-policy__toggle { all: unset; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; width: 100%; padding: 0; background: none; border: none; font-family: inherit; }
 .booking-policy__toggle:hover { opacity: 0.8; }
 .booking-policy__toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
-.booking-policy__icon { font-size: 1.5rem; color: var(--gold); font-weight: 300; line-height: 1; }
+.booking-policy__toggle .booking-policy__title { flex: 1 1 auto; }
+.booking-policy__icon { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin-top: -2px; border: 1px solid rgba(184,151,60,0.4); border-radius: 999px; font-size: 1.15rem; color: var(--gold); font-weight: 300; line-height: 1; }
 .sticky-mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px; padding-bottom: calc(12px + env(safe-area-inset-bottom)); background: var(--deep); box-shadow: 0 -2px 12px rgba(0,0,0,0.15); z-index: 100; }
 .sticky-mobile-cta__inner { display: flex; gap: 10px; max-width: 1400px; margin: 0 auto; align-items: stretch; }
 .sticky-mobile-cta__primary { flex: 1; display: flex; align-items: center; justify-content: center; padding: 14px 12px; background: var(--gold); color: var(--deep); font-family: var(--font-sans); font-size: 14px; font-weight: 600; text-align: center; text-decoration: none; border: none; cursor: pointer; transition: opacity 0.2s; line-height: 1.2; }
