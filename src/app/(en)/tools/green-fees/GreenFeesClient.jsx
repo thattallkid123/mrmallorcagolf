@@ -9,6 +9,7 @@ import { getCoursePricingByName } from '../../../../lib/course-pricing-data'
 import { getCourseLogisticsByName } from '../../../../lib/course-logistics-data'
 import { getCourseShortName, findCourseByName } from '../../../../lib/golf-courses-helpers'
 import { getScorecardByCourseName } from '../../../../lib/scorecard-data'
+import { getGreenFeesT } from '../../../../lib/green-fees-translations'
 
 const WA_MESSAGE = 'Hi Andy, I was comparing green fees on your site and I’d like help planning a Mallorca golf trip and tee times.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -175,7 +176,8 @@ function FeeCell({ course, season }) {
   return <>{fee.text}{fee.note && <span className="approx">{fee.note}</span>}</>
 }
 
-export default function GreenFeesClient() {
+export default function GreenFeesClient({ lang = 'en' }) {
+  const t = getGreenFeesT(lang)
   const [area, setArea] = useState('')
   const [budget, setBudget] = useState('')
   const [walking, setWalking] = useState('')

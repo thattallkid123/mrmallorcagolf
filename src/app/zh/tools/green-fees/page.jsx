@@ -1,5 +1,18 @@
-import { redirect } from 'next/navigation'
+export const dynamic = 'force-dynamic'
 
-export default function Page() {
-  redirect('/tools/green-fees')
+export const metadata = {
+  title: 'Mallorca green fee comparison',
+  description: '马略卡果岭费比较',
+  robots: { index: true, follow: true },
+}
+
+import PageLayout from '../../../../components/PageLayout'
+import GreenFeesClient from '../../../(en)/tools/green-fees/GreenFeesClient'
+
+export default function GreenFeesZh() {
+  return (
+    <PageLayout lang="zh" navTransparent={false} showWhatsAppButton={false}>
+      <GreenFeesClient lang="zh" />
+    </PageLayout>
+  )
 }
