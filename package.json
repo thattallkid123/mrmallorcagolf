@@ -34,7 +34,7 @@
     "check:discovery": "node --no-warnings scripts/sync-discovery.mjs --check",
     "check:meta-length": "node --no-warnings scripts/check-meta-length.mjs",
     "sync:discovery": "node --no-warnings scripts/sync-discovery.mjs",
-    "check:course-data": "node --no-warnings scripts/check-course-destinations.js && node --no-warnings scripts/check-scorecard-data.js && node --no-warnings scripts/check-course-access-data.js && node --no-warnings scripts/check-tracker-course-pack.js && node --no-warnings scripts/check-strokes-gained-export.js",
+    "check:course-data": "node --no-warnings scripts/check-course-destinations.js && node --no-warnings scripts/check-scorecard-data.js && node --no-warnings scripts/check-course-access-data.js && node --no-warnings scripts/check-tracker-course-pack.js && node --no-warnings scripts/check-strokes-gained-export.js && node --no-warnings scripts/check-zh-course-editorial.mjs",
     "export:blog-content": "node --no-warnings scripts/export-live-guide-content.mjs",
     "sync:social-proof": "node --no-warnings scripts/sync-social-proof.mjs",
     "generate:lead-magnet-pdfs": "python scripts/generate-lead-magnet-pdfs.py",

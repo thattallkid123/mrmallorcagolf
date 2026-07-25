@@ -6,6 +6,10 @@ import ReviewBadge from './ReviewBadge'
 const FOOTER_COPY = {
   en: {
     tagline: 'Mallorca golf trip planning with Andy Griffiths. Local course judgment, itinerary logic, and premium add-ons when they help.',
+    toolsHeading: "Planning Tools",
+    toolCourseSelector: "Find your Mallorca course",
+    toolGreenFees: "Compare all 24 courses",
+    toolDayBuilder: "Golf day builder",
     experiences: 'Services',
     itinerary: 'Plan Your Trip',
     pwap: 'Play With A Pro',
@@ -24,6 +28,10 @@ const FOOTER_COPY = {
   },
   de: {
     tagline: 'Golftage auf Mallorca mit Andy Griffiths. Lokale Einschätzung, aufmerksame Begleitung, alles arrangiert.',
+    toolsHeading: "Planungstools",
+    toolCourseSelector: "Passenden Platz finden",
+    toolGreenFees: "Alle 24 Plätze vergleichen",
+    toolDayBuilder: "Golftag planen",
     experiences: 'Erlebnisse',
     pwap: 'Mit Profi spielen',
     day: 'Wie Play With A Pro Aussieht',
@@ -39,6 +47,10 @@ const FOOTER_COPY = {
   },
   es: {
     tagline: 'Días de golf en Mallorca con Andy Griffiths. Criterio local, atención personal y todo bien organizado.',
+    toolsHeading: "Herramientas",
+    toolCourseSelector: "Encuentra tu campo",
+    toolGreenFees: "Compara los 24 campos",
+    toolDayBuilder: "Planificador de jornada",
     experiences: 'Experiencias',
     pwap: 'Jugar con un Pro',
     day: 'Cómo Es Jugar Con Un Pro',
@@ -54,6 +66,10 @@ const FOOTER_COPY = {
   },
   fr: {
     tagline: 'Journées de golf à Majorque avec Andy Griffiths. Regard local, présence attentive et tout bien organisé.',
+    toolsHeading: "Outils de planification",
+    toolCourseSelector: "Trouvez votre parcours",
+    toolGreenFees: "Comparez les 24 parcours",
+    toolDayBuilder: "Organisateur de journée",
     experiences: 'Expériences',
     pwap: 'Jouer avec un Pro',
     day: 'Ce Que C\'Est de Jouer Avec Un Pro',
@@ -69,6 +85,10 @@ const FOOTER_COPY = {
   },
   nl: {
     tagline: 'Golfdagen op Mallorca met Andy Griffiths. Lokale kennis, rustige begeleiding en alles geregeld.',
+    toolsHeading: "Planningstools",
+    toolCourseSelector: "Vind uw baan",
+    toolGreenFees: "Vergelijk alle 24 banen",
+    toolDayBuilder: "Golfdag samenstellen",
     experiences: 'Ervaringen',
     pwap: 'Spelen met een Pro',
     day: 'Hoe Spelen Met Een Pro Eruitziet',
@@ -84,6 +104,10 @@ const FOOTER_COPY = {
   },
   sv: {
     tagline: 'Golfdagar på Mallorca med Andy Griffiths. Lokal känsla, trygg värdskap och allt ordnat.',
+    toolsHeading: "Planeringsverktyg",
+    toolCourseSelector: "Hitta din bana",
+    toolGreenFees: "Jämför alla 24 banor",
+    toolDayBuilder: "Planera golfdagen",
     experiences: 'Upplevelser',
     pwap: 'Spela med ett proffs',
     day: 'Så Här Är Det Att Spela Med Ett Proffs',
@@ -99,6 +123,10 @@ const FOOTER_COPY = {
   },
   zh: {
     tagline: '与 Andy Griffiths 在马略卡体验高尔夫日程。熟悉本地，安排周到，全程轻松从容。',
+    toolsHeading: "规划工具",
+    toolCourseSelector: "找到适合的球场",
+    toolGreenFees: "比较全部 24 座球场",
+    toolDayBuilder: "规划高尔夫行程",
     experiences: '体验',
     pwap: '与职业球手同场',
     day: '与职业球手同场的体验',
@@ -176,11 +204,11 @@ export default function Footer({ lang }) {
       </div>
 
       <div className="footer__col">
-        <h3>Planning Tools</h3>
+        <h3>{copy.toolsHeading}</h3>
         <ul>
-          <li><Link href={toolHref('/tools/course-selector', locale)} prefetch={false}>Find your Mallorca course</Link></li>
-          <li><Link href={toolHref('/tools/green-fees', locale)} prefetch={false}>Compare all 24 courses</Link></li>
-          <li><Link href={toolHref('/tools/golf-day-builder', locale)} prefetch={false}>Golf day builder</Link></li>
+          <li><Link href={toolHref('/tools/course-selector', locale)} prefetch={false}>{copy.toolCourseSelector}</Link></li>
+          <li><Link href={toolHref('/tools/green-fees', locale)} prefetch={false}>{copy.toolGreenFees}</Link></li>
+          <li><Link href={toolHref('/tools/golf-day-builder', locale)} prefetch={false}>{copy.toolDayBuilder}</Link></li>
         </ul>
       </div>
 

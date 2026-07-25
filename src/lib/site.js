@@ -27,7 +27,10 @@ const EN_ONLY_TOOL_PATHS = new Set([
   '/tools/handicap-checker',
   '/tools/green-fees',
 ])
-const LOCALES_FOR_COURSE_SELECTOR_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv'])
+// zh runs its own China-facing build of this tool rather than a translation of
+// the shared one, but the route is real, so it belongs here: this set drives the
+// footer link, the language switcher and the sitemap.
+const LOCALES_FOR_COURSE_SELECTOR_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es'])
 

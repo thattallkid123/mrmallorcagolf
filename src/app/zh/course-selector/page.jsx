@@ -1,21 +1,12 @@
-import PageLayout from '../../../components/PageLayout'
-import ZhCourseSelectorClient from './ZhCourseSelectorClient'
+import { permanentRedirect } from 'next/navigation'
 
-export const dynamic = 'force-dynamic'
-
+// The tool is canonical at /zh/tools/course-selector, which matches where every
+// other locale keeps it. This older path redirects, the same way /course-selector
+// redirects to /tools/course-selector on the English site.
 export const metadata = {
-  title: '马略卡岛高尔夫球场推荐',
-  description: '七个问题，找到最适合你的马略卡岛高尔夫球场。',
-  robots: {
-    index: false,
-    follow: false,
-  },
+  robots: { index: false, follow: false },
 }
 
-export default function ZhCourseSelector() {
-  return (
-    <PageLayout lang="zh" navTransparent={false} showWhatsAppButton={false}>
-      <ZhCourseSelectorClient />
-    </PageLayout>
-  )
+export default function ZhCourseSelectorRedirect() {
+  permanentRedirect('/zh/tools/course-selector')
 }
