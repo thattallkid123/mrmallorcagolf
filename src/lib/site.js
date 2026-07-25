@@ -20,17 +20,14 @@ const SHARED_BASE_PATHS = new Set([
 
 const EN_ONLY_BASE_PATHS = new Set(['/a-day', '/itinerary', '/course-selector'])
 const EN_ONLY_TOOL_PATHS = new Set([
-  '/tools',
-  '/tools/golf-day-builder',
   '/tools/golf-cost-calculator',
   '/tools/hotel-recommender',
   '/tools/handicap-checker',
-  '/tools/green-fees',
 ])
-// zh runs its own China-facing build of this tool rather than a translation of
-// the shared one, but the route is real, so it belongs here: this set drives the
-// footer link, the language switcher and the sitemap.
+// Tools available in all locales
 const LOCALES_FOR_COURSE_SELECTOR_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
+const LOCALES_FOR_GREEN_FEES_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
+const LOCALES_FOR_GOLF_DAY_BUILDER_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es'])
 
@@ -149,7 +146,10 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
   if (SHARED_BASE_PATHS.has(basePath)) return true
   if (LEGAL_BASE_PATHS.has(basePath)) return LEGAL_LOCALES.has(locale)
   if (EN_ONLY_TOOL_PATHS.has(basePath)) return locale === 'en'
+  if (basePath === '/tools') return LOCALES_FOR_GREEN_FEES_TOOL.has(locale)
   if (basePath === '/tools/course-selector') return LOCALES_FOR_COURSE_SELECTOR_TOOL.has(locale)
+  if (basePath === '/tools/green-fees') return LOCALES_FOR_GREEN_FEES_TOOL.has(locale)
+  if (basePath === '/tools/golf-day-builder') return LOCALES_FOR_GOLF_DAY_BUILDER_TOOL.has(locale)
 
   if (!basePath.startsWith('/guides/')) return false
 
@@ -254,9 +254,24 @@ export function getSitemapPaths() {
     paths.push(buildLocalePath(path, 'en'))
   }
 
-  // Course selector tool: available in all locales except zh
+  // Tools hub: available in all locales
+  for (const locale of LOCALES_FOR_GREEN_FEES_TOOL) {
+    paths.push(buildLocalePath('/tools', locale))
+  }
+
+  // Course selector tool: available in all locales
   for (const locale of LOCALES_FOR_COURSE_SELECTOR_TOOL) {
     paths.push(buildLocalePath('/tools/course-selector', locale))
+  }
+
+  // Green fees tool: available in all locales
+  for (const locale of LOCALES_FOR_GREEN_FEES_TOOL) {
+    paths.push(buildLocalePath('/tools/green-fees', locale))
+  }
+
+  // Golf day builder tool: available in all locales
+  for (const locale of LOCALES_FOR_GOLF_DAY_BUILDER_TOOL) {
+    paths.push(buildLocalePath('/tools/golf-day-builder', locale))
   }
 
   return [...new Set(paths)]
