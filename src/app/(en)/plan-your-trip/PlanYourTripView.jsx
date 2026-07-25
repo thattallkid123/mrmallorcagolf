@@ -25,7 +25,10 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
   const golfCoursesHref = buildLocalePath('/golf-courses', locale)
   const contactHref = buildLocalePath('/contact', locale)
   const pwapHref = buildLocalePath('/play-with-a-pro', locale)
-  const hotelRecommenderHref = buildLocalePath('/tools/hotel-recommender', locale)
+  // The hotel recommender only exists in English, so every locale links to the
+  // English route. buildLocalePath would produce /es/tools/hotel-recommender,
+  // which 404s.
+  const hotelRecommenderHref = '/tools/hotel-recommender'
 
   return (
     <main>
