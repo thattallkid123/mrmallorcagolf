@@ -1,5 +1,17 @@
-import { redirect } from 'next/navigation'
+export const dynamic = 'force-dynamic'
+
+export const metadata = {
+  title: 'Build your golf day',
+  robots: { index: true, follow: true },
+}
+
+import PageLayout from '../../../../components/PageLayout'
+import GolfDayBuilderClient from '../../../(en)/golf-day-builder/GolfDayBuilderClient'
 
 export default function Page() {
-  redirect('/tools/golf-day-builder')
+  return (
+    <PageLayout lang="es" navTransparent={false} showWhatsAppButton={false}>
+      <GolfDayBuilderClient lang="es" />
+    </PageLayout>
+  )
 }

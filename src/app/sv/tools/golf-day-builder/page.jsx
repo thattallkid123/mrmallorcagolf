@@ -10,8 +10,8 @@ import GolfDayBuilderClient from '../../../(en)/golf-day-builder/GolfDayBuilderC
 
 export default function Page() {
   return (
-    <PageLayout lang="fr" navTransparent={false} showWhatsAppButton={false}>
-      <GolfDayBuilderClient lang="fr" />
+    <PageLayout lang="sv" navTransparent={false} showWhatsAppButton={false}>
+      <GolfDayBuilderClient lang="sv" />
     </PageLayout>
   )
 }

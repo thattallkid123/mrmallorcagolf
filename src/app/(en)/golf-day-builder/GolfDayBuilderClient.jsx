@@ -5,6 +5,7 @@ import ToolTrustLine from '../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
 import { getCanonicalCourseDataByName } from '../../../lib/course-catalog'
 import { getCourseShortName } from '../../../lib/golf-courses-helpers'
+import { getGolfDayBuilderT } from '../../../lib/golf-day-builder-translations'
 
 const WA_DAY_HREF = `https://wa.me/34624466702?text=${encodeURIComponent('Hi Andy, I built a golf day on your website and would like to make it real.')}`
 
@@ -356,7 +357,8 @@ function buildItineraries(answers) {
 const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
 const TRIP_PLANNER_PDF_URL = '/downloads/trip-planner.pdf'
 
-export default function GolfDayBuilderClient() {
+export default function GolfDayBuilderClient({ lang = 'en' }) {
+  const t = getGolfDayBuilderT(lang)
   const [phase, setPhase] = useState('quiz') // 'intro' | 'quiz' | 'results'
   const [stepIdx, setStepIdx] = useState(0)
   const [answers, setAnswers] = useState({})
