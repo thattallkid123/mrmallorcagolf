@@ -63,6 +63,11 @@ export const GREEN_FEES_T = {
       guideComing: 'Coming soon',
       certificateNote: '* Valid handicap certificate required.',
     },
+    feeNotes: {
+      variableRate: 'Variable rate',
+      holes18NotSeasonal: '18 holes, not seasonal',
+      holes9NotSeasonal: '9 holes, not seasonal',
+    },
     compare: {
       intro: 'Choose two to five courses for a direct side-by-side check. On a phone, scroll the table sideways; the row labels stay visible.',
       course: 'Course',
@@ -73,6 +78,7 @@ export const GREEN_FEES_T = {
       par: 'Par',
       difficulty: 'Difficulty',
       holes: 'Holes',
+      courseGuide: 'Course guide',
       certificateNote: '* Valid handicap certificate required.',
     },
     accessLabels: {
@@ -176,6 +182,11 @@ export const GREEN_FEES_T = {
       guideComing: 'Kommt bald',
       certificateNote: '* Gültiges Vorgabe-Zertifikat erforderlich.',
     },
+    feeNotes: {
+      variableRate: 'Variabler Tarif',
+      holes18NotSeasonal: '18 Löcher, nicht saisonabhängig',
+      holes9NotSeasonal: '9 Löcher, nicht saisonabhängig',
+    },
     compare: {
       intro: 'Wählen Sie zwei bis fünf Plätze für einen direkten Vergleich. Auf dem Telefon nach rechts scrollen; die Zeilenbeschriftungen bleiben sichtbar.',
       course: 'Platz',
@@ -186,6 +197,7 @@ export const GREEN_FEES_T = {
       par: 'Par',
       difficulty: 'Schwierigkeit',
       holes: 'Löcher',
+      courseGuide: 'Platzführer',
       certificateNote: '* Gültiges Vorgabe-Zertifikat erforderlich.',
     },
     accessLabels: {
@@ -289,6 +301,11 @@ export const GREEN_FEES_T = {
       guideComing: 'Próximamente',
       certificateNote: '* Se requiere certificado de handicap válido.',
     },
+    feeNotes: {
+      variableRate: 'Tarifa variable',
+      holes18NotSeasonal: '18 hoyos, sin variación estacional',
+      holes9NotSeasonal: '9 hoyos, sin variación estacional',
+    },
     compare: {
       intro: 'Elige dos a cinco campos para una comparación directa. En teléfono, desplázate horizontalmente; las etiquetas de fila permanecen visibles.',
       course: 'Campo',
@@ -299,6 +316,7 @@ export const GREEN_FEES_T = {
       par: 'Par',
       difficulty: 'Dificultad',
       holes: 'Hoyos',
+      courseGuide: 'Guía del campo',
       certificateNote: '* Se requiere certificado de handicap válido.',
     },
     accessLabels: {
@@ -402,6 +420,11 @@ export const GREEN_FEES_T = {
       guideComing: 'À venir',
       certificateNote: '* Certificat de handicap valide requis.',
     },
+    feeNotes: {
+      variableRate: 'Tarif variable',
+      holes18NotSeasonal: '18 trous, non saisonnier',
+      holes9NotSeasonal: '9 trous, non saisonnier',
+    },
     compare: {
       intro: 'Sélectionnez deux à cinq parcours pour une comparaison directe. Sur un téléphone, faites défiler horizontalement ; les libellés de ligne restent visibles.',
       course: 'Parcours',
@@ -412,6 +435,7 @@ export const GREEN_FEES_T = {
       par: 'Par',
       difficulty: 'Difficulté',
       holes: 'Trous',
+      courseGuide: 'Guide du parcours',
       certificateNote: '* Certificat de handicap valide requis.',
     },
     accessLabels: {
@@ -515,6 +539,11 @@ export const GREEN_FEES_T = {
       guideComing: 'Binnenkort beschikbaar',
       certificateNote: '* Geldig handicapcertificaat vereist.',
     },
+    feeNotes: {
+      variableRate: 'Variabel tarief',
+      holes18NotSeasonal: '18 holes, niet seizoensgebonden',
+      holes9NotSeasonal: '9 holes, niet seizoensgebonden',
+    },
     compare: {
       intro: 'Kies twee tot vijf banen voor een directe vergelijking. Op een telefoon horizontaal schuiven; rijlabels blijven zichtbaar.',
       course: 'Baan',
@@ -525,6 +554,7 @@ export const GREEN_FEES_T = {
       par: 'Par',
       difficulty: 'Moeilijkheidsgraad',
       holes: 'Gaten',
+      courseGuide: 'Baangids',
       certificateNote: '* Geldig handicapcertificaat vereist.',
     },
     accessLabels: {
@@ -628,6 +658,11 @@ export const GREEN_FEES_T = {
       guideComing: 'Kommer snart',
       certificateNote: '* Giltigt handicapcertifikat krävs.',
     },
+    feeNotes: {
+      variableRate: 'Rörligt pris',
+      holes18NotSeasonal: '18 hål, ej säsongsberoende',
+      holes9NotSeasonal: '9 hål, ej säsongsberoende',
+    },
     compare: {
       intro: 'Välj två till fem banor för en direkt jämförelse. På en telefon, bläddra horisontellt; radetiketter förblir synliga.',
       course: 'Bana',
@@ -638,6 +673,7 @@ export const GREEN_FEES_T = {
       par: 'Par',
       difficulty: 'Svårighetsgrad',
       holes: 'Hål',
+      courseGuide: 'Banguide',
       certificateNote: '* Giltigt handicapcertifikat krävs.',
     },
     accessLabels: {
@@ -741,6 +777,11 @@ export const GREEN_FEES_T = {
       guideComing: '即将推出',
       certificateNote: '* 需要有效的差点证书。',
     },
+    feeNotes: {
+      variableRate: '浮动价格',
+      holes18NotSeasonal: '18 洞，不分季节',
+      holes9NotSeasonal: '9 洞，不分季节',
+    },
     compare: {
       intro: '选择二至五个球场进行直接比较。在手机上，向左滑动；行标签保持可见。',
       course: '球场',
@@ -751,6 +792,7 @@ export const GREEN_FEES_T = {
       par: '标准杆',
       difficulty: '难度',
       holes: '洞',
+      courseGuide: '球场指南',
       certificateNote: '* 需要有效的差点证书。',
     },
     accessLabels: {

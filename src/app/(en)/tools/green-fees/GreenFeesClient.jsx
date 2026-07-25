@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
-import { getCourseAccessByName, getCourseAccessTypeLabel } from '../../../../lib/course-access-data'
+import { getCourseAccessByName } from '../../../../lib/course-access-data'
 import { getCoursePricingByName } from '../../../../lib/course-pricing-data'
 import { getCourseLogisticsByName } from '../../../../lib/course-logistics-data'
 import { getCourseShortName, findCourseByName } from '../../../../lib/golf-courses-helpers'
@@ -63,25 +63,42 @@ const BASE_COURSES = [
 
 // Buggy guidance text comes straight from the master (course-logistics-data.js,
 // synced from the pricing sheet + course-logistics.json). Reduce it to a short
-// tag rather than showing the full sentence in a table cell.
-function buggyTag(guidance) {
+// tag key (translated at render time) rather than showing the full sentence.
+function buggyTagKey(guidance) {
   if (!guidance) return null
   const g = guidance.toLowerCase()
   // Check 'recommended' first: some guidance reads "recommended... but not
   // essential", where a plain essential-substring match would invert the meaning.
-  if (g.includes('recommended') || g.includes('required if')) return 'Recommended'
-  if (g.includes('essential')) return 'Essential'
-  if (g.includes('optional')) return 'Optional'
-  if (g.includes('no buggy needed')) return 'Not needed'
+  if (g.includes('recommended') || g.includes('required if')) return 'recommended'
+  if (g.includes('essential')) return 'essential'
+  if (g.includes('optional')) return 'optional'
+  if (g.includes('no buggy needed')) return 'notNeeded'
   return null
 }
 
-function formatBuggyDisplay(logistics, fallback) {
-  if (!logistics) return fallback
-  if (logistics.buggyIncl) return 'Included'
-  const tag = buggyTag(logistics.buggyGuidance)
-  if (!logistics.buggy) return tag || 'Not needed'
-  return tag ? `€${logistics.buggy} · ${tag}` : `€${logistics.buggy}`
+// Returns a structured descriptor rather than a formatted string, since the
+// tag words need translating at render time (this runs at module load,
+// before a locale's `t` exists).
+function buggyData(logistics, fallbackText) {
+  if (!logistics) return { mode: 'fallback', fallbackText }
+  if (logistics.buggyIncl) return { mode: 'included' }
+  const tagKey = buggyTagKey(logistics.buggyGuidance)
+  if (!logistics.buggy) return { mode: 'notNeeded', tagKey }
+  return { mode: 'priced', price: logistics.buggy, tagKey }
+}
+
+function buggyDisplay(data, t) {
+  if (!data) return '-'
+  if (data.mode === 'fallback') return data.fallbackText
+  if (data.mode === 'included') return t.buggyLabels.included
+  if (data.mode === 'notNeeded') return data.tagKey ? t.buggyLabels[data.tagKey] : t.buggyLabels.notNeeded
+  return data.tagKey ? `€${data.price} · ${t.buggyLabels[data.tagKey]}` : `€${data.price}`
+}
+
+const AREA_KEY_MAP = { Southwest: 'southwest', Palma: 'palma', North: 'north', East: 'east' }
+function areaDisplay(area, t) {
+  const key = AREA_KEY_MAP[area]
+  return key ? t.filters[key] : area
 }
 
 const COURSES = BASE_COURSES.map((course) => {
@@ -102,7 +119,7 @@ const COURSES = BASE_COURSES.map((course) => {
     nineHoles: access ? access.holes === 9 : course.nineHoles,
     certRequired: access ? Boolean(access.certificateRequired) : course.certRequired,
     accessType: access?.accessType || 'public',
-    buggy: formatBuggyDisplay(logistics, course.buggy),
+    buggy: buggyData(logistics, course.buggy),
     walking: typeof logistics?.walkAllowed === 'boolean' ? (logistics.walkAllowed ? 'yes' : 'no') : course.walking,
     walkingNote: '',
   }
@@ -126,16 +143,16 @@ function budgetBand(c) {
   return 'high'
 }
 
-function walkableLabel(c) {
-  if (c.walking === 'yes') return { text: 'Yes', cls: '' }
-  if (c.walking === 'no') return { text: 'No', cls: 'no' }
-  return { text: c.walkingNote || 'Restricted', cls: 'gold' }
+function walkableLabel(c, t) {
+  if (c.walking === 'yes') return { text: t.walkingLabels.yes, cls: '' }
+  if (c.walking === 'no') return { text: t.walkingLabels.no, cls: 'no' }
+  return { text: c.walkingNote || t.walkingLabels.restricted, cls: 'gold' }
 }
 
-function handicapDisplay(c) {
-  if (!c.handicapRequired) return { text: 'No handicap limit', certificate: false, cls: '' }
+function handicapDisplay(c, t) {
+  if (!c.handicapRequired) return { text: t.handicapLabels.noHandicapLimit, certificate: false, cls: '' }
   const sameLimit = Number.isFinite(c.handicapMen) && c.handicapMen === c.handicapWomen
-  let text = 'Handicap required'
+  let text = t.handicapLabels.handicapRequired
   if (sameLimit) text = `Max ${c.handicapMen}`
   else if (Number.isFinite(c.handicapMen) && Number.isFinite(c.handicapWomen)) text = `M ${c.handicapMen} / W ${c.handicapWomen}`
   else if (Number.isFinite(c.handicapMen)) text = `M ${c.handicapMen}`
@@ -143,9 +160,14 @@ function handicapDisplay(c) {
   return { text, certificate: c.certRequired, cls: '' }
 }
 
-function accessDisplay(c) {
+function accessDisplay(c, t) {
+  const map = {
+    public: t.accessLabels.public,
+    members_arranged: t.accessLabels.memberArrangement,
+    hotel_guests: t.accessLabels.hotelGuests,
+  }
   return {
-    text: getCourseAccessTypeLabel(c),
+    text: map[c.accessType] || t.accessLabels.public,
     cls: c.accessType === 'public' ? '' : 'gold',
   }
 }
@@ -155,24 +177,24 @@ function publicFeeSortValue(c, season) {
   return Number.isFinite(c[season]) ? c[season] : null
 }
 
-function feeDisplay(c, season) {
+function feeDisplay(c, season, t) {
   if (hidesPublicPricing(c)) {
-    return { text: 'Member arrangement', note: 'Not public' }
+    return { text: t.accessLabels.memberArrangement, note: t.accessLabels.notPublic }
   }
   if (c.feeMode === 'pitch_putt') {
     return season === 'peak'
-      ? { text: fmtFee(c.peak), note: '18 holes, not seasonal' }
-      : { text: fmtFee(c.low), note: '9 holes, not seasonal' }
+      ? { text: fmtFee(c.peak), note: t.feeNotes.holes18NotSeasonal }
+      : { text: fmtFee(c.low), note: t.feeNotes.holes9NotSeasonal }
   }
-  if (c.feeMode === 'hotel_only') return { text: 'Included', note: 'Hotel guests' }
+  if (c.feeMode === 'hotel_only') return { text: t.buggyLabels.included, note: t.accessLabels.hotelGuests }
   return {
     text: fmtFee(c[season], Number.isFinite(c[season]) ? null : (season === 'peak' ? c.peakText : c.lowText)),
-    note: c.dynamicPricing ? 'Variable rate' : '',
+    note: c.dynamicPricing ? t.feeNotes.variableRate : '',
   }
 }
 
-function FeeCell({ course, season }) {
-  const fee = feeDisplay(course, season)
+function FeeCell({ course, season, t }) {
+  const fee = feeDisplay(course, season, t)
   return <>{fee.text}{fee.note && <span className="approx">{fee.note}</span>}</>
 }
 
@@ -224,18 +246,18 @@ export default function GreenFeesClient({ lang = 'en' }) {
   }
 
   const compareRows = [
-    { label: "Location", get: (c) => c.location || "-" },
-    { label: "Par", get: (c) => (c.par ? `Par ${c.par}` : "-") },
-    { label: "Difficulty", get: (c) => c.diffScore || "-" },
-    { label: "Holes", get: (c) => (c.nineHoles ? "9" : "18") },
-    { label: "Peak-season fee", get: (c) => `${feeDisplay(c, 'peak').text}${feeDisplay(c, 'peak').note ? ` · ${feeDisplay(c, 'peak').note}` : ''}` },
-    { label: "Low-season fee", get: (c) => `${feeDisplay(c, 'low').text}${feeDisplay(c, 'low').note ? ` · ${feeDisplay(c, 'low').note}` : ''}` },
-    { label: "Access", get: (c) => accessDisplay(c).text },
-    { label: "Buggy", get: (c) => c.buggy || "-" },
-    { label: "Walkable", get: (c) => walkableLabel(c).text },
-    { label: "Handicap limit", get: (c) => `${handicapDisplay(c).text}${handicapDisplay(c).certificate ? '*' : ''}` },
-    { label: "Andy’s verdict", get: (c) => c.verdict || "-" },
-    { label: "Course guide", get: (c) => c.guideUrl ? <Link className="gf-guide" href={c.guideUrl}>View full guide →</Link> : <span style={{ color: 'var(--muted)' }}>Coming soon</span> },
+    { label: t.compare.location, get: (c) => c.location || "-" },
+    { label: t.compare.par, get: (c) => (c.par ? `${t.compare.par} ${c.par}` : "-") },
+    { label: t.compare.difficulty, get: (c) => c.diffScore || "-" },
+    { label: t.compare.holes, get: (c) => (c.nineHoles ? "9" : "18") },
+    { label: t.table.peakSeasonFee, get: (c) => `${feeDisplay(c, 'peak', t).text}${feeDisplay(c, 'peak', t).note ? ` · ${feeDisplay(c, 'peak', t).note}` : ''}` },
+    { label: t.table.lowSeasonFee, get: (c) => `${feeDisplay(c, 'low', t).text}${feeDisplay(c, 'low', t).note ? ` · ${feeDisplay(c, 'low', t).note}` : ''}` },
+    { label: t.table.access, get: (c) => accessDisplay(c, t).text },
+    { label: t.table.buggy, get: (c) => buggyDisplay(c.buggy, t) },
+    { label: t.table.walkable, get: (c) => walkableLabel(c, t).text },
+    { label: t.table.handicapLimit, get: (c) => `${handicapDisplay(c, t).text}${handicapDisplay(c, t).certificate ? '*' : ''}` },
+    { label: t.table.andyVerdic, get: (c) => c.verdict || "-" },
+    { label: t.compare.courseGuide, get: (c) => c.guideUrl ? <Link className="gf-guide" href={c.guideUrl}>{t.table.viewFullGuide}</Link> : <span style={{ color: 'var(--muted)' }}>{t.table.guideComing}</span> },
   ]
 
   const rows = useMemo(() => {
@@ -273,8 +295,8 @@ export default function GreenFeesClient({ lang = 'en' }) {
   const arrow = (k) => (sort === k ? (dir === 1 ? '▲' : '▼') : '')
 
   const guideCell = (c) => c.guideUrl
-    ? <Link className="gf-guide" href={c.guideUrl}>View full guide →</Link>
-    : <span className="gf-guide" style={{ opacity: 0.45 }}>Guide coming soon</span>
+    ? <Link className="gf-guide" href={c.guideUrl}>{t.table.viewFullGuide}</Link>
+    : <span className="gf-guide" style={{ opacity: 0.45 }}>{t.table.guideComing}</span>
 
   return (
     <div className="gf">
@@ -360,19 +382,19 @@ export default function GreenFeesClient({ lang = 'en' }) {
       `}</style>
 
       <section className="gf-hero">
-        <span className="gf-eyebrow">Free tool</span>
-        <h1>Compare Mallorca Golf Courses</h1>
-        <p className="sub">All 24 courses on the island: green fees, buggy costs, walking rules, access, difficulty and handicap limits, plus a one-line verdict from Andy, a UK PGA Advanced Professional based in Mallorca. Browse the full guide or compare up to five courses side by side.</p>
-        <div><span className="gf-updated">Last updated: July 2026</span></div>
+        <span className="gf-eyebrow">{t.hero.eyebrow}</span>
+        <h1>{t.hero.title}</h1>
+        <p className="sub">{t.hero.sub}</p>
+        <div><span className="gf-updated">{t.hero.updated}</span></div>
       </section>
 
       <div className="gf-modebar">
-        <div className="gf-modebar__inner" role="tablist" aria-label="Comparison mode">
+        <div className="gf-modebar__inner" role="tablist" aria-label={t.modebar.headToHead}>
           <button type="button" role="tab" aria-selected={mode === 'table'} className={`gf-mode${mode === 'table' ? ' is-active' : ''}`} onClick={() => setMode('table')}>
-            All 24 courses
+            {t.modebar.all24}
           </button>
           <button type="button" role="tab" aria-selected={mode === 'compare'} className={`gf-mode${mode === 'compare' ? ' is-active' : ''}`} onClick={() => setMode('compare')}>
-            Head-to-head (up to 5)
+            {t.modebar.headToHead}
           </button>
         </div>
       </div>
@@ -381,84 +403,84 @@ export default function GreenFeesClient({ lang = 'en' }) {
 
       <main className="gf-main">
         <div className="gf-disclaimer">
-          <strong>Planning prices:</strong> Peak season is generally March–May and September–November; low season is usually midsummer and midwinter. <strong>Variable rate</strong> means the course changes its price by demand, tee time, availability and how early you book, much like flights or hotels. Confirm the exact rate for your date before booking.
+          <strong>{t.disclaimer.title}</strong> {t.disclaimer.text}
         </div>
 
         {mode === 'table' && (
         <>
         <div className="gf-filters">
           <div className="gf-fg">
-            <label htmlFor="f-area">Area</label>
+            <label htmlFor="f-area">{t.filters.area}</label>
             <select id="f-area" value={area} onChange={(e) => setArea(e.target.value)}>
-              <option value="">All areas</option>
-              <option value="Southwest">Southwest</option>
-              <option value="Palma">Palma</option>
-              <option value="North">North</option>
-              <option value="East">East</option>
+              <option value="">{t.filters.allAreas}</option>
+              <option value="Southwest">{t.filters.southwest}</option>
+              <option value="Palma">{t.filters.palma}</option>
+              <option value="North">{t.filters.north}</option>
+              <option value="East">{t.filters.east}</option>
             </select>
           </div>
           <div className="gf-fg">
-            <label htmlFor="f-budget">Peak-season budget</label>
+            <label htmlFor="f-budget">{t.filters.budget}</label>
             <select id="f-budget" value={budget} onChange={(e) => setBudget(e.target.value)}>
-              <option value="">Any budget</option>
-              <option value="low">Under €80</option>
-              <option value="mid">€80–€130</option>
-              <option value="high">€130+</option>
+              <option value="">{t.filters.anyBudget}</option>
+              <option value="low">{t.filters.underEighty}</option>
+              <option value="mid">{t.filters.eightToThirty}</option>
+              <option value="high">{t.filters.overThirty}</option>
             </select>
           </div>
           <div className="gf-fg">
-            <label htmlFor="f-walking">Walking</label>
+            <label htmlFor="f-walking">{t.filters.walking}</label>
             <select id="f-walking" value={walking} onChange={(e) => setWalking(e.target.value)}>
-              <option value="">Walking or buggy</option>
-              <option value="yes">Walking allowed</option>
-              <option value="buggy">Buggy only / restricted</option>
+              <option value="">{t.filters.walkingOrBuggy}</option>
+              <option value="yes">{t.filters.walkingAllowed}</option>
+              <option value="buggy">{t.filters.buggyOnly}</option>
             </select>
           </div>
           <div className="gf-fg">
-            <label htmlFor="f-sort">Sort by</label>
+            <label htmlFor="f-sort">{t.filters.sort}</label>
             <select id="f-sort" value={sort === 'peak' || sort === 'low' ? `${sort}-${dir === -1 ? 'desc' : 'asc'}` : sort} onChange={(e) => sortSelect(e.target.value)}>
-              <option value="name">Course name (A–Z)</option>
-              <option value="peak-asc">Peak-season fee (low to high)</option>
-              <option value="peak-desc">Peak-season fee (high to low)</option>
-              <option value="low-asc">Low-season fee (low to high)</option>
-              <option value="low-desc">Low-season fee (high to low)</option>
-              <option value="area">Area</option>
+              <option value="name">{t.filters.courseName}</option>
+              <option value="peak-asc">{t.filters.peakAsc}</option>
+              <option value="peak-desc">{t.filters.peakDesc}</option>
+              <option value="low-asc">{t.filters.lowAsc}</option>
+              <option value="low-desc">{t.filters.lowDesc}</option>
+              <option value="area">{t.filters.byArea}</option>
             </select>
           </div>
           {(area || budget || walking || sort !== 'name' || dir !== 1) && (
-            <button type="button" className="gf-reset" onClick={() => { setArea(''); setBudget(''); setWalking(''); setSort('name'); setDir(1) }}>Reset filters</button>
+            <button type="button" className="gf-reset" onClick={() => { setArea(''); setBudget(''); setWalking(''); setSort('name'); setDir(1) }}>{t.filters.reset}</button>
           )}
-          <span className="gf-count">Showing {rows.length} of {COURSES.length} courses</span>
+          <span className="gf-count">{t.filters.showing} {rows.length} {t.filters.of} {COURSES.length} {t.filters.courses}</span>
         </div>
 
         <div className="gf-table-wrap">
-          <table aria-label="Mallorca green fee comparison">
+          <table aria-label={t.table.course}>
             <thead>
               <tr>
-                <th className="is-sortable" aria-sort={sort === 'name' ? (dir === 1 ? 'ascending' : 'descending') : 'none'}><button type="button" className="gf-sort" onClick={() => headerSort('name')}>Course<span className="arw">{arrow('name')}</span></button></th>
-                <th className="is-sortable" aria-sort={sort === 'area' ? (dir === 1 ? 'ascending' : 'descending') : 'none'}><button type="button" className="gf-sort" onClick={() => headerSort('area')}>Area<span className="arw">{arrow('area')}</span></button></th>
-                <th className="is-sortable" aria-sort={sort === 'peak' ? (dir === 1 ? 'ascending' : 'descending') : 'none'}><button type="button" className="gf-sort" onClick={() => headerSort('peak')}>Peak-season fee<span className="arw">{arrow('peak')}</span></button></th>
-                <th className="is-sortable" aria-sort={sort === 'low' ? (dir === 1 ? 'ascending' : 'descending') : 'none'}><button type="button" className="gf-sort" onClick={() => headerSort('low')}>Low-season fee<span className="arw">{arrow('low')}</span></button></th>
-                <th>Access</th>
-                <th>Buggy</th>
-                <th>Walkable</th>
-                <th>Handicap limit</th>
-                <th>Andy&rsquo;s verdict</th>
+                <th className="is-sortable" aria-sort={sort === 'name' ? (dir === 1 ? 'ascending' : 'descending') : 'none'}><button type="button" className="gf-sort" onClick={() => headerSort('name')}>{t.table.course}<span className="arw">{arrow('name')}</span></button></th>
+                <th className="is-sortable" aria-sort={sort === 'area' ? (dir === 1 ? 'ascending' : 'descending') : 'none'}><button type="button" className="gf-sort" onClick={() => headerSort('area')}>{t.table.area}<span className="arw">{arrow('area')}</span></button></th>
+                <th className="is-sortable" aria-sort={sort === 'peak' ? (dir === 1 ? 'ascending' : 'descending') : 'none'}><button type="button" className="gf-sort" onClick={() => headerSort('peak')}>{t.table.peakSeasonFee}<span className="arw">{arrow('peak')}</span></button></th>
+                <th className="is-sortable" aria-sort={sort === 'low' ? (dir === 1 ? 'ascending' : 'descending') : 'none'}><button type="button" className="gf-sort" onClick={() => headerSort('low')}>{t.table.lowSeasonFee}<span className="arw">{arrow('low')}</span></button></th>
+                <th>{t.table.access}</th>
+                <th>{t.table.buggy}</th>
+                <th>{t.table.walkable}</th>
+                <th>{t.table.handicapLimit}</th>
+                <th>{t.table.andyVerdic}</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((c) => {
-                const w = walkableLabel(c)
-                const h = handicapDisplay(c)
-                const a = accessDisplay(c)
+                const w = walkableLabel(c, t)
+                const h = handicapDisplay(c, t)
+                const a = accessDisplay(c, t)
                 return (
                   <tr key={c.name}>
-                    <td className="gf-course">{displayCourseName(c.name)}{c.nineHoles && <span className="gf-9h">9-hole course</span>}{guideCell(c)}</td>
-                    <td>{c.area}</td>
-                    <td><FeeCell course={c} season="peak" /></td>
-                    <td><FeeCell course={c} season="low" /></td>
+                    <td className="gf-course">{displayCourseName(c.name)}{c.nineHoles && <span className="gf-9h">{t.table.nineHoleCourse}</span>}{guideCell(c)}</td>
+                    <td>{areaDisplay(c.area, t)}</td>
+                    <td><FeeCell course={c} season="peak" t={t} /></td>
+                    <td><FeeCell course={c} season="low" t={t} /></td>
                     <td><span className={`gf-pill ${a.cls}`}>{a.text}</span></td>
-                    <td>{c.buggy}</td>
+                    <td>{buggyDisplay(c.buggy, t)}</td>
                     <td><span className={`gf-pill ${w.cls}`}>{w.text}</span></td>
                     <td><span className={`gf-pill ${h.cls}`}>{h.text}{h.certificate && <sup>*</sup>}</span></td>
                     <td className="gf-verdict">{c.verdict}</td>
@@ -471,40 +493,40 @@ export default function GreenFeesClient({ lang = 'en' }) {
 
         <div className="gf-cards">
           {rows.map((c) => {
-            const w = walkableLabel(c)
-            const h = handicapDisplay(c)
-            const a = accessDisplay(c)
+            const w = walkableLabel(c, t)
+            const h = handicapDisplay(c, t)
+            const a = accessDisplay(c, t)
             return (
               <div className="gf-card" key={c.name}>
                 <h3>{displayCourseName(c.name)}</h3>
-                <div className="area-tag">{c.area}{c.nineHoles ? ' · 9-hole course' : ''}</div>
+                <div className="area-tag">{areaDisplay(c.area, t)}{c.nineHoles ? ` · ${t.table.nineHoleCourse}` : ''}</div>
                 <div className="grid">
-                  <div><span className="k">Peak-season fee</span><FeeCell course={c} season="peak" /></div>
-                  <div><span className="k">Low-season fee</span><FeeCell course={c} season="low" /></div>
-                  <div><span className="k">Access</span>{a.text}</div>
-                  <div><span className="k">Buggy</span>{c.buggy}</div>
-                  <div><span className="k">Walkable</span>{w.text}</div>
-                  <div><span className="k">Handicap limit</span>{h.text}{h.certificate && <sup>*</sup>}</div>
+                  <div><span className="k">{t.table.peakSeasonFee}</span><FeeCell course={c} season="peak" t={t} /></div>
+                  <div><span className="k">{t.table.lowSeasonFee}</span><FeeCell course={c} season="low" t={t} /></div>
+                  <div><span className="k">{t.table.access}</span>{a.text}</div>
+                  <div><span className="k">{t.table.buggy}</span>{buggyDisplay(c.buggy, t)}</div>
+                  <div><span className="k">{t.table.walkable}</span>{w.text}</div>
+                  <div><span className="k">{t.table.handicapLimit}</span>{h.text}{h.certificate && <sup>*</sup>}</div>
                 </div>
                 <div className="v-line">&ldquo;{c.verdict}&rdquo;</div>
-                {c.guideUrl && <Link className="gf-guide" href={c.guideUrl}>View full guide →</Link>}
+                {c.guideUrl && <Link className="gf-guide" href={c.guideUrl}>{t.table.viewFullGuide}</Link>}
               </div>
             )
           })}
         </div>
-        <p className="gf-footnote">* Valid handicap certificate required.</p>
+        <p className="gf-footnote">{t.table.certificateNote}</p>
         </>
         )}
 
         {mode === 'compare' && (
           <div className="gf-compare">
-            <p className="gf-compare__intro">Choose two to five courses for a direct side-by-side check. On a phone, scroll the table sideways; the row labels stay visible.</p>
+            <p className="gf-compare__intro">{t.compare.intro}</p>
             <div className="gf-compare__pickers">
               {[0, 1, 2, 3, 4].map((i) => (
                 <div className="gf-fg" key={i}>
-                  <label htmlFor={`cmp-${i}`}>Course {i + 1}{i > 1 ? ' (optional)' : ''}</label>
+                  <label htmlFor={`cmp-${i}`}>{t.compare.course} {i + 1}{i > 1 ? ` ${t.compare.optional}` : ''}</label>
                   <select id={`cmp-${i}`} value={cmp[i] || ''} onChange={(e) => changeCompare(i, e.target.value)}>
-                    <option value="">{i > 1 ? `Add course ${i + 1}…` : 'Select a course…'}</option>
+                    <option value="">{i > 1 ? `${t.compare.addCourse} ${i + 1}…` : t.compare.selectCourse}</option>
                     {COURSES.map((c) => (
                       <option key={c.name} value={c.name} disabled={cmp.includes(c.name) && cmp[i] !== c.name}>{displayCourseName(c.name)}</option>
                     ))}
@@ -514,8 +536,8 @@ export default function GreenFeesClient({ lang = 'en' }) {
             </div>
 
             {compared.length > 0 && (
-              <div className="gf-table-wrap gf-compare__table" role="region" aria-label="Scrollable course comparison" tabIndex="0">
-                <table aria-label="Head-to-head course comparison" aria-describedby="gf-compare-note" style={{ minWidth: Math.max(760, 130 + compared.length * 200) }}>
+              <div className="gf-table-wrap gf-compare__table" role="region" aria-label={t.compare.intro} tabIndex="0">
+                <table aria-label={t.modebar.headToHead} aria-describedby="gf-compare-note" style={{ minWidth: Math.max(760, 130 + compared.length * 200) }}>
                   <thead>
                     <tr>
                       <th />
@@ -529,7 +551,7 @@ export default function GreenFeesClient({ lang = 'en' }) {
                       <tr key={row.label}>
                         <td className="gf-compare__label">{row.label}</td>
                         {compared.map((c, i) => (
-                          <td key={`${row.label}-${i}`} className={row.label === 'Andy’s verdict' ? 'gf-verdict' : ''}>{row.get(c)}</td>
+                          <td key={`${row.label}-${i}`} className={row.label === t.table.andyVerdic ? 'gf-verdict' : ''}>{row.get(c)}</td>
                         ))}
                       </tr>
                     ))}
@@ -537,28 +559,27 @@ export default function GreenFeesClient({ lang = 'en' }) {
                 </table>
               </div>
             )}
-            <p className="gf-footnote" id="gf-compare-note">* Valid handicap certificate required.</p>
+            <p className="gf-footnote" id="gf-compare-note">{t.compare.certificateNote}</p>
           </div>
         )}
 
         <div className="gf-selcta">
-          <h2>Not sure which course fits your group?</h2>
-          <p>Answer a few quick questions and get a shortlist matched to your handicap, budget and travel plans.</p>
-          <Link href="/tools/course-selector">Try the course selector →</Link>
+          <h2>{t.cta.courseSelector.title}</h2>
+          <p>{t.cta.courseSelector.desc}</p>
+          <Link href="/tools/course-selector">{t.cta.courseSelector.link}</Link>
         </div>
 
         <div className="gf-contact">
-          <h2>Want Andy to sort the tee times?</h2>
-          <p>Confirmed rates change by season and day. Tell me your dates and group and I&rsquo;ll get you real prices and book it around your golf — or just message me if that&rsquo;s easier.</p>
+          <h2>{t.cta.contact.title}</h2>
+          <p>{t.cta.contact.desc}</p>
           <div className="gf-cta-btns">
-            <Link className="btn-gold" href="/contact">Enquire</Link>
-            <WhatsAppCta />
+            <Link className="btn-gold" href="/contact">{t.cta.contact.enquire}</Link>
+            <WhatsAppCta label={t.cta.contact.whatsapp} />
           </div>
         </div>
 
         <footer className="gf-foot">
-          Green fee ranges are indicative only and are updated periodically from course rate cards.<br />
-          For confirmed rates, tee time availability, or help planning a full golf trip, <Link href="/contact">get in touch with Andy</Link>.
+          {t.footer.text} <Link href="/contact">{t.footer.linkText}</Link>.
         </footer>
       </main>
     </div>
