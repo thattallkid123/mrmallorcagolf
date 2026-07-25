@@ -19,15 +19,14 @@ const SHARED_BASE_PATHS = new Set([
 ])
 
 const EN_ONLY_BASE_PATHS = new Set(['/a-day', '/itinerary', '/course-selector'])
-const EN_ONLY_TOOL_PATHS = new Set([
-  '/tools/golf-cost-calculator',
-  '/tools/hotel-recommender',
-  '/tools/handicap-checker',
-])
+const EN_ONLY_TOOL_PATHS = new Set([])
 // Tools available in all locales
 const LOCALES_FOR_COURSE_SELECTOR_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
 const LOCALES_FOR_GREEN_FEES_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
 const LOCALES_FOR_GOLF_DAY_BUILDER_TOOL = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
+const LOCALES_FOR_GOLF_COST_CALCULATOR = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
+const LOCALES_FOR_HOTEL_RECOMMENDER = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
+const LOCALES_FOR_HANDICAP_CHECKER = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es'])
 
@@ -272,6 +271,21 @@ export function getSitemapPaths() {
   // Golf day builder tool: available in all locales
   for (const locale of LOCALES_FOR_GOLF_DAY_BUILDER_TOOL) {
     paths.push(buildLocalePath('/tools/golf-day-builder', locale))
+  }
+
+  // Golf cost calculator tool: available in all locales
+  for (const locale of LOCALES_FOR_GOLF_COST_CALCULATOR) {
+    paths.push(buildLocalePath('/tools/golf-cost-calculator', locale))
+  }
+
+  // Hotel recommender tool: available in all locales
+  for (const locale of LOCALES_FOR_HOTEL_RECOMMENDER) {
+    paths.push(buildLocalePath('/tools/hotel-recommender', locale))
+  }
+
+  // Handicap checker tool: available in all locales
+  for (const locale of LOCALES_FOR_HANDICAP_CHECKER) {
+    paths.push(buildLocalePath('/tools/handicap-checker', locale))
   }
 
   return [...new Set(paths)]

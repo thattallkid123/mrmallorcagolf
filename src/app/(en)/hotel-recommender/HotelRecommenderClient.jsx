@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
+import { getHotelRecommenderT } from '../../../lib/hotel-recommender-translations'
 
 const WA_HOTEL_MESSAGE = 'Hi Andy, I used the hotel recommender on your site and I’d like help matching where I stay to the courses I want to play.'
 const WA_HOTEL_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_HOTEL_MESSAGE)}`
@@ -179,7 +180,8 @@ const PRIORITY_LABEL = { 'golf-focused':'with golf as the main focus', beach:'wi
 const TIER_LABELS = { 1:'Mid-range', 2:'Four-star', 3:'Premium five-star', 4:'Ultra-luxury' }
 const AREA_SHORT = { southwest:'Southwest', north:'North', east:'East', palma:'Palma', northwest:'Northwest' }
 
-export default function HotelRecommenderClient() {
+export default function HotelRecommenderClient({ lang = 'en' }) {
+  const t = getHotelRecommenderT(lang)
   const [step, setStep] = useState(1)
   const [answers, setAnswers] = useState({})
   const [results, setResults] = useState(null)

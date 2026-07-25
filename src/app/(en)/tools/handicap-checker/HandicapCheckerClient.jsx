@@ -6,6 +6,7 @@ import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { COURSE_ACCESS_LIST } from '../../../../lib/course-access-data'
 import { getCourseShortName } from '../../../../lib/golf-courses-helpers'
+import { getHandicapCheckerT } from '../../../../lib/handicap-checker-translations'
 
 const WA_MESSAGE = 'Hi Andy, I used the handicap checker on your site and I’d like help planning which Mallorca courses I can play.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -219,7 +220,8 @@ const GROUP_ORDER = [
   { key: 'no',   title: 'Out of reach for now' },
 ]
 
-export default function HandicapCheckerClient() {
+export default function HandicapCheckerClient({ lang = 'en' }) {
+  const t = getHandicapCheckerT(lang)
   const [hcp, setHcp] = useState('')
   const [noHcp, setNoHcp] = useState(false)
   const [gender, setGender] = useState('M')

@@ -36,7 +36,9 @@ const LAST_MODIFIED_BY_PATH = {
   '/plan-your-trip': '2026-05-01',
   '/course-selector': '2026-06-01',
   '/tools': '2026-07-25',
-  '/tools/handicap-checker': '2026-07-04',
+  '/tools/golf-cost-calculator': '2026-07-25',
+  '/tools/hotel-recommender': '2026-07-25',
+  '/tools/handicap-checker': '2026-07-25',
   '/tools/green-fees': '2026-07-25',
   '/tools/golf-day-builder': '2026-07-25',
 }

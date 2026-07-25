@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
+import { getGolfCostCalculatorT } from '../../../../lib/golf-cost-calculator-translations'
 
 const WA_MESSAGE = 'Hi Andy, I used the trip cost calculator on your site and I’d like a real quote for my Mallorca golf trip.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -127,7 +128,8 @@ const DEFAULT_STATE = {
 const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
 const COST_GUIDE_PDF_URL = '/downloads/cost-guide.pdf'
 
-export default function GolfCostCalculatorClient() {
+export default function GolfCostCalculatorClient({ lang = 'en' }) {
+  const t = getGolfCostCalculatorT(lang)
   const [step, setStep] = useState(1)
   const [state, setState] = useState({ ...DEFAULT_STATE })
   const [results, setResults] = useState(null)
