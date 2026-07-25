@@ -10,18 +10,22 @@ const REGION_IDS = ['all', 'palma', 'southwest', 'south', 'east', 'north']
 
 const LABELS = {
   en: { title: 'Where the courses are', hint: 'Hover a pin or tap a course below to locate it.', regions: ['All courses', 'Palma', 'Southwest', 'South', 'East', 'North'] },
-  de: { title: 'Wo die Plätze liegen', hint: 'Fahren Sie über eine Markierung oder tippen Sie unten auf einen Platz.', regions: ['Alle Plätze', 'Palma', 'Südwesten', 'Süden', 'Osten', 'Norden'] },
+  de: { title: 'Wo die Plätze liegen', hint: 'Fahren Sie über eine Markierung oder tippen Sie unten auf einen Platz, um ihn zu finden.', regions: ['Alle Plätze', 'Palma', 'Südwesten', 'Süden', 'Osten', 'Norden'] },
   es: { title: 'Dónde están los campos', hint: 'Pase el cursor por un pin o toque un campo abajo para localizarlo.', regions: ['Todos los campos', 'Palma', 'Suroeste', 'Sur', 'Este', 'Norte'] },
   fr: { title: 'Où sont les parcours', hint: 'Survolez un repère ou touchez un parcours ci-dessous pour le localiser.', regions: ['Tous les parcours', 'Palma', 'Sud-ouest', 'Sud', 'Est', 'Nord'] },
   nl: { title: 'Waar de banen liggen', hint: 'Beweeg over een pin of tik hieronder op een baan om die te vinden.', regions: ['Alle banen', 'Palma', 'Zuidwesten', 'Zuiden', 'Oosten', 'Noorden'] },
-  sv: { title: 'Var banorna ligger', hint: 'Håll muspekaren över en nål eller tryck på en bana nedan.', regions: ['Alla banor', 'Palma', 'Sydväst', 'Söder', 'Öster', 'Norr'] },
+  sv: { title: 'Var banorna ligger', hint: 'Håll muspekaren över en nål eller tryck på en bana nedan för att hitta den.', regions: ['Alla banor', 'Palma', 'Sydväst', 'Söder', 'Öster', 'Norr'] },
   zh: { title: '球场分布图', hint: '将鼠标悬停在标记上，或点击下方球场进行定位。', regions: ['所有球场', '帕尔马', '西南', '南部', '东部', '北部'] },
 }
 
-// Flatten once, attaching the parent region to each course.
+// Flatten once, attaching the parent region to each course, then number all 24
+// in a fixed order. Numbering courses rather than pins means the total reads 24
+// even though two sites are shared, a course keeps the same number under any
+// region filter, and the numbers match the guide PWA, which lists the same 24
+// courses in this same sequence.
 const ALL_COURSES = GOLF_COURSE_DATA.flatMap(region =>
   region.courses.map(course => ({ ...course, region: region.region }))
-)
+).map((course, i) => ({ ...course, num: i + 1 }))
 
 // Join grouped course short names, collapsing a shared leading word-prefix so
 // "Santa Ponsa 2" + "Santa Ponsa 3" reads "Santa Ponsa 2 & 3", and
@@ -144,32 +148,41 @@ export default function CourseMapView({ lang = 'en' }) {
 
     const points = []
     const legendItems = []
-    let n = 0
-    groups.forEach(({ coords, courses }) => {
-      n += 1
+    groups.forEach(({ coords, courses }, key) => {
       points.push(coords)
-      const fullNames = courses.map((c) => c.name).join(' & ')
       const shortNames = collapseSharedPrefix(courses.map((c) => getCourseShortName(c.name)))
       const location = courses[0].location || ''
       const isGrouped = courses.length > 1
+      // A shared site carries every number it holds ("15–16") rather than a
+      // "+" badge, so no course number goes missing from the map.
+      const pinLabel = courses.map((c) => c.num).join('–')
+      const width = isGrouped ? 20 + pinLabel.length * 7 : 26
       const icon = L.divIcon({
         className: '',
-        html: `<div style="width:26px;height:26px;border-radius:50%;background:#CBA968;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:'Jost',sans-serif;font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35);position:relative">${n}${isGrouped ? '<span style="position:absolute;bottom:-2px;right:-2px;width:14px;height:14px;background:#E8B854;border:1px solid #2D4A3E;border-radius:50%;font-size:9px;display:flex;align-items:center;justify-content:center">+</span>' : ''}</div>`,
-        iconSize: [26, 26],
-        iconAnchor: [13, 13],
+        html: `<div style="width:${width}px;height:26px;border-radius:13px;background:#CBA968;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:'Jost',sans-serif;font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35);white-space:nowrap">${pinLabel}</div>`,
+        iconSize: [width, 26],
+        iconAnchor: [width / 2, 13],
         popupAnchor: [0, -14],
       })
-      const popupContent = courses.length > 1
-        ? `<strong>${courses.map(c => getCourseShortName(c.name)).join('</strong><br/><strong>')}</strong><br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
-        : `<strong>${fullNames}</strong><br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
+      const popupContent = isGrouped
+        ? `${courses.map(c => `<strong>${c.num}. ${getCourseShortName(c.name)}</strong>`).join('<br/>')}<br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
+        : `<strong>${courses[0].name}</strong><br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
       const marker = L.marker(coords, { icon })
         .bindPopup(popupContent)
         .bindTooltip(shortNames, { direction: 'top', offset: [0, -12] })
         .addTo(markerLayerRef.current)
         .on('popupopen', () => marker.closeTooltip())
-      markersRef.current[n] = marker
-      legendItems.push({ n, label: shortNames, coords })
+      markersRef.current[key] = marker
+      // One legend row per course, so all 24 are listed individually by name
+      // even though the two shared sites resolve to a single pin.
+      courses.forEach((c) => legendItems.push({
+        num: c.num,
+        key,
+        coords,
+        label: getCourseShortName(c.name),
+      }))
     })
+    legendItems.sort((a, b) => a.num - b.num)
 
     pointsRef.current = points
     setLegend(legendItems)
@@ -179,7 +192,9 @@ export default function CourseMapView({ lang = 'en' }) {
     if (!mapRef.current) return
     const { map } = mapRef.current
     map.flyTo(item.coords, 13, { duration: 1.5 })
-    markersRef.current[item.n]?.openPopup()
+    // Shared sites resolve to one marker, so either course opens the same
+    // popup - which lists both by number.
+    markersRef.current[item.key]?.openPopup()
     containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
@@ -235,13 +250,13 @@ export default function CourseMapView({ lang = 'en' }) {
       {legend.length > 0 && (
         <ol style={{ listStyle: 'none', margin: '18px 0 0', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '4px 18px' }}>
           {legend.map(item => (
-            <li key={item.n}>
+            <li key={item.num}>
               <button
                 type="button"
                 onClick={() => focusPin(item)}
                 style={{ display: 'flex', alignItems: 'center', gap: 9, width: '100%', textAlign: 'left', background: 'none', border: 'none', padding: '5px 0', cursor: 'pointer', fontFamily: "'Jost', sans-serif", fontSize: '0.83rem', color: '#3A342C', lineHeight: 1.3 }}
               >
-                <span style={{ flexShrink: 0, width: 22, height: 22, borderRadius: '50%', background: '#CBA968', border: '1.5px solid #2D4A3E', color: '#20362C', fontSize: 11, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.n}</span>
+                <span style={{ flexShrink: 0, width: 22, height: 22, borderRadius: '50%', background: '#CBA968', border: '1.5px solid #2D4A3E', color: '#20362C', fontSize: 11, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.num}</span>
                 {item.label}
               </button>
             </li>
