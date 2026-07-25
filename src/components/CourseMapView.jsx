@@ -159,14 +159,14 @@ export default function CourseMapView({ lang = 'en' }) {
       const width = isGrouped ? 20 + pinLabel.length * 7 : 26
       const icon = L.divIcon({
         className: '',
-        html: `<div style="width:${width}px;height:26px;border-radius:13px;background:#CBA968;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:'Jost',sans-serif;font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35);white-space:nowrap">${pinLabel}</div>`,
+        html: `<div style="width:${width}px;height:26px;border-radius:13px;background:#B8973C;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:'Jost',sans-serif;font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35);white-space:nowrap">${pinLabel}</div>`,
         iconSize: [width, 26],
         iconAnchor: [width / 2, 13],
         popupAnchor: [0, -14],
       })
       const popupContent = isGrouped
         ? `${courses.map(c => `<strong>${c.num}. ${getCourseShortName(c.name)}</strong>`).join('<br/>')}<br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
-        : `<strong>${courses[0].name}</strong><br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
+        : `<strong>${courses[0].num}. ${getCourseShortName(courses[0].name)}</strong><br/><span style="font-size:0.85em;color:#6B6862">${location}</span>`
       const marker = L.marker(coords, { icon })
         .bindPopup(popupContent)
         .bindTooltip(shortNames, { direction: 'top', offset: [0, -12] })
@@ -256,7 +256,7 @@ export default function CourseMapView({ lang = 'en' }) {
                 onClick={() => focusPin(item)}
                 style={{ display: 'flex', alignItems: 'center', gap: 9, width: '100%', textAlign: 'left', background: 'none', border: 'none', padding: '5px 0', cursor: 'pointer', fontFamily: "'Jost', sans-serif", fontSize: '0.83rem', color: '#3A342C', lineHeight: 1.3 }}
               >
-                <span style={{ flexShrink: 0, width: 22, height: 22, borderRadius: '50%', background: '#CBA968', border: '1.5px solid #2D4A3E', color: '#20362C', fontSize: 11, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.num}</span>
+                <span style={{ flexShrink: 0, width: 22, height: 22, borderRadius: '50%', background: '#B8973C', border: '1.5px solid #2D4A3E', color: '#20362C', fontSize: 11, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.num}</span>
                 {item.label}
               </button>
             </li>
