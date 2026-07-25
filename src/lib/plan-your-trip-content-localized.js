@@ -44,6 +44,9 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "groupValue": "€950 en total",
       "priceSuffix": "Green fees aparte",
       "cta": "Ver Play With A Pro"
+    },
+    "sampleItinerary": {
+      "readGuideLabel": "Leer la guía"
     }
   },
   "de": {
@@ -88,6 +91,9 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "groupValue": "€950 insgesamt",
       "priceSuffix": "Greenfees zusätzlich",
       "cta": "Play With A Pro ansehen"
+    },
+    "sampleItinerary": {
+      "readGuideLabel": "Lesen Sie den Ratgeber"
     }
   },
   "fr": {
@@ -132,6 +138,9 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "groupValue": "€950 au total",
       "priceSuffix": "Green fees en plus",
       "cta": "Voir Play With A Pro"
+    },
+    "sampleItinerary": {
+      "readGuideLabel": "Lire le guide"
     }
   },
   "nl": {
@@ -176,6 +185,9 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "groupValue": "€950 totaal",
       "priceSuffix": "Greenfees extra",
       "cta": "Bekijk Play With A Pro"
+    },
+    "sampleItinerary": {
+      "readGuideLabel": "Lees de gids"
     }
   },
   "sv": {
@@ -220,6 +232,9 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "groupValue": "€950 totalt",
       "priceSuffix": "Green fee tillkommer",
       "cta": "Se Play With A Pro"
+    },
+    "sampleItinerary": {
+      "readGuideLabel": "Läs guiden"
     }
   },
   "zh": {
@@ -265,6 +280,9 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "groupValue": "€950 总计",
       "priceSuffix": "果岭费另计",
       "cta": "查看同场陪打"
+    },
+    "sampleItinerary": {
+      "readGuideLabel": "阅读指南"
     }
   }
 }

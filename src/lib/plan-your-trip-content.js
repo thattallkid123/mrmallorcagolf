@@ -108,6 +108,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "dining": "El Camino or local options near the course."
       }
     ],
+    "readGuideLabel": "Read the guide",
     "summary": "Five courses. Base in Palma for Days 1, 2, 3 and 5. One long drive to Alcanada on Day 4. Green fees roughly €427–700 across the week, plus Play With A Pro if Day 3.",
     "fees": "Green fees €427–700 total. €3 daily licence at Alcanada. Play With A Pro is €695 solo, €950 group, green fees separate.",
     "hotelEyebrow": "Where to stay",

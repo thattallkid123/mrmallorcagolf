@@ -126,7 +126,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                       </p>
                       {day.dining ? <p className="pyt-itin-row__dining">{day.dining}</p> : null}
                       <Link href={day.guide} className="pyt-itin-row__link">
-                        Read the {day.course} guide
+                        {content.sampleItinerary.readGuideLabel}
                       </Link>
                     </div>
                   </article>
