@@ -73,6 +73,39 @@ const COURSE_MIX = {
   luxury:   ['Club de Golf Alcanada', 'Son Muntaner', 'T Golf Calvià (Poniente)'],
 }
 
+const AREA_COURSE_MIX = {
+  north: {
+    value: ['Golf Pollença', 'Club de Golf Alcanada', 'Pula Golf', 'Son Servera'],
+    balanced: ['Club de Golf Alcanada', 'Golf Pollença', 'Pula Golf', 'Son Servera'],
+    premium: ['Club de Golf Alcanada', 'Son Muntaner', 'Son Gual', 'T Golf Palma'],
+    luxury: ['Club de Golf Alcanada', 'Son Muntaner', 'Son Gual'],
+  },
+  east: {
+    value: ['Capdepera Golf', 'Son Servera', 'Golf Pollença', 'Golf Maioris'],
+    balanced: ['Canyamel Golf', 'Pula Golf', 'Capdepera Golf', 'Son Servera'],
+    premium: ['Pula Golf', 'Club de Golf Alcanada', 'Son Gual', 'T Golf Palma'],
+    luxury: ['Club de Golf Alcanada', 'Son Muntaner', 'Son Gual'],
+  },
+  south: {
+    value: ['Golf Maioris', 'Son Antem East', 'Son Antem West', 'Golf Pollença'],
+    balanced: ['Son Antem West', 'Golf Maioris', 'Golf de Bendinat', 'Canyamel Golf'],
+    premium: ['Son Gual', 'T Golf Palma', 'T Golf Calvià (Poniente)', 'Son Vida'],
+    luxury: ['Son Muntaner', 'Son Gual', 'Club de Golf Alcanada'],
+  },
+  palma: {
+    value: ['Golf Maioris', 'Son Antem East', 'Golf Pollença', 'Capdepera Golf'],
+    balanced: ['Golf de Bendinat', 'Golf Son Antem West', 'Son Servera', 'Canyamel Golf'],
+    premium: ['Son Gual', 'Son Vida', 'T Golf Palma', 'Son Muntaner'],
+    luxury: ['Son Muntaner', 'Son Gual', 'Club de Golf Alcanada'],
+  },
+  southwest: {
+    value: ['Golf Maioris', 'Son Antem East', 'Golf Pollença', 'Capdepera Golf'],
+    balanced: ['Golf de Bendinat', 'Golf Son Antem West', 'Canyamel Golf', 'Pula Golf'],
+    premium: ['T Golf Calvià (Poniente)', 'Golf de Andratx', 'Son Gual', 'Son Vida'],
+    luxury: ['Son Muntaner', 'T Golf Calvià (Poniente)', 'Club de Golf Alcanada'],
+  },
+}
+
 const PREF_NOTES = {
   scenic:      'You asked for scenic. Andy will weight the mix toward courses with the best views and settings.',
   famous:      'You asked for famous names. Andy will prioritise the island\'s best-known courses in this tier.',
@@ -102,6 +135,10 @@ function addR(a, b) { return [a[0] + b[0], a[1] + b[1]] }
 function fmt(n) { return '€' + Math.round(n).toLocaleString('en-GB') }
 function fmtR(r) { return fmt(r[0]) + ' – ' + fmt(r[1]) }
 function mid(r) { return (r[0] + r[1]) / 2 }
+
+function getSuggestedCourses(s) {
+  return AREA_COURSE_MIX[s.area]?.[s.budget] || COURSE_MIX[s.budget]
+}
 
 function calculate(state) {
   const s = state
@@ -264,7 +301,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
 
     const r = results || calculate(state)
     const s = state
-    const courses = COURSE_MIX[s.budget].slice(0, Math.min(s.rounds, COURSE_MIX[s.budget].length))
+    const suggestedCourses = getSuggestedCourses(s)
+    const courses = suggestedCourses.slice(0, Math.min(s.rounds, suggestedCourses.length))
 
     try {
       const res = await fetch('/api/trip-quote-submit', {
@@ -529,7 +567,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         {/* STEP 4: RESULTS */}
         {step === 4 && r && (() => {
           const s = state
-          const courses = COURSE_MIX[s.budget].slice(0, Math.min(s.rounds, COURSE_MIX[s.budget].length))
+          const suggestedCourses = getSuggestedCourses(s)
+          const courses = suggestedCourses.slice(0, Math.min(s.rounds, suggestedCourses.length))
           let note = t.prefNotes[s.preference] || ''
           if (s.area !== 'flexible') {
             const areaName = t.areaNames[s.area] || t.resultCards.areaFallback
@@ -815,7 +854,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>{t.quoteForm.summaryLabels.courses}</span>
-                        <b style={{ color:'#15392b', fontWeight:600, textAlign:'right' }}>{COURSE_MIX[state.budget].slice(0, Math.min(state.rounds, COURSE_MIX[state.budget].length)).join(', ')}</b>
+                        <b style={{ color:'#15392b', fontWeight:600, textAlign:'right' }}>{getSuggestedCourses(state).slice(0, Math.min(state.rounds, getSuggestedCourses(state).length)).join(', ')}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0' }}>
                         <span>{t.quoteForm.summaryLabels.total}</span>
