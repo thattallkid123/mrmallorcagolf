@@ -14,9 +14,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "title": "An 18-hole day with Andy.",
     "body": "Play With A Pro: on-course coaching, course strategy, and real game improvement on the right Mallorca course for you.",
     "price": null,
-    "primaryCta": "Enquire",
+    "primaryCta": "Enquire about the day",
     "primaryHref": "/contact",
-    "secondaryCta": "See the options"
+    "secondaryCta": "See pricing"
   },
   "offerSummary": {
     "eyebrow": "At a glance",
@@ -277,7 +277,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "eyebrow": "Want this inside your trip?",
     "title": "Tell me your dates and I'll recommend the right format.",
     "body": "Send dates, group size, handicap range, and any courses you are considering. I will tell you whether Play With A Pro works best as a standalone day or as part of a planned trip.",
-    "primaryCta": "Enquire →",
+    "primaryCta": "Enquire about the day →",
     "primaryHref": "/contact",
     "secondaryCta": "Message on WhatsApp",
     "secondaryHref": "https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20golf%20day%20in%20Mallorca.",
