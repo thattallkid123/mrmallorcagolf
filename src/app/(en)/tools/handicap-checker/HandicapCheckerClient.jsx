@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { Fragment, useRef, useState } from 'react'
 import Link from 'next/link'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
@@ -11,7 +11,7 @@ import { getHandicapCheckerT } from '../../../../lib/handicap-checker-translatio
 const WA_MESSAGE = 'Hi Andy, I used the handicap checker on your site and I’d like help planning which Mallorca courses I can play.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
 
-function WhatsAppCta({ label = 'Message Andy on WhatsApp' }) {
+function WhatsAppCta({ label }) {
   function handleClick() {
     trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'handicap-checker' })
     trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'handicap-checker' })
@@ -77,11 +77,12 @@ const COURSES = COURSE_ACCESS_LIST
     const region = COURSE_REGIONS[entry.name]
     if (!region) return null
 
-    const restricted =
+    // Sentinel key only \u2014 never rendered. The user-facing copy comes from `t.verdicts`.
+    const restrictedType =
       entry.accessType === 'hotel_guests'
-        ? 'Hotel guests only \u2014 cannot arrange'
+        ? 'hotel'
         : entry.accessType === 'members_arranged'
-          ? 'Members/guests only \u2014 contact Andy'
+          ? 'members'
           : null
 
     return {
@@ -92,7 +93,7 @@ const COURSES = COURSE_ACCESS_LIST
       cert: entry.certificateRequired,
       handicapRequired: entry.handicapRequired,
       publicAccess: entry.accessType === 'public',
-      restricted,
+      restrictedType,
       ...COURSE_PLAYING_OVERRIDES[entry.name],
     }
   })
@@ -100,125 +101,102 @@ const COURSES = COURSE_ACCESS_LIST
 
 const BORDERLINE_MARGIN = 8
 
-const AREA_LABELS = {
-  any: 'Anywhere on the island',
-  palma: 'Palma & around',
-  southwest: 'Southwest (Calvi\u00e0, Santa Ponsa, Andratx)',
-  south: 'South (Llucmajor, Son Antem)',
-  east: 'East (Capdepera, Canyamel, Pula)',
-  north: 'North (Alc\u00fadia, Pollen\u00e7a)',
+const AREA_KEYS = ['any', 'palma', 'southwest', 'south', 'east', 'north']
+const GROUP_KEYS = ['ok', 'warn', 'info', 'no']
+
+// Locale strings carry {placeholder} markers. `fill` returns a plain string;
+// `fillNodes` returns an array of nodes so React elements (e.g. <strong>) can be
+// substituted in without putting JSX in the translation file.
+function fill(template, values) {
+  return String(template).replace(/\{(\w+)\}/g, (match, key) => (key in values ? String(values[key]) : match))
 }
 
-function tierFromHcp(hcp, noHcp) {
-  if (noHcp) return { key: 'new', label: 'a newer golfer' }
-  if (hcp <= 9) return { key: 'low', label: 'a low-handicap golfer' }
-  if (hcp <= 18) return { key: 'mid', label: 'a solid club golfer' }
-  if (hcp <= 28) return { key: 'improver', label: 'an improving golfer' }
-  return { key: 'relaxed', label: 'a relaxed, higher-handicap golfer' }
+function fillNodes(template, values) {
+  return String(template)
+    .split(/(\{\w+\})/g)
+    .map((part, index) => {
+      const match = /^\{(\w+)\}$/.exec(part)
+      if (!match || !(match[1] in values)) return part
+      return <Fragment key={index}>{values[match[1]]}</Fragment>
+    })
 }
 
-function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender) {
+// Strips the leading status emoji (\u2705 \u26a0\ufe0f \u274c \u2139\ufe0f) before a label goes into the
+// email summary. The range stops well short of U+4E00 so CJK labels survive intact.
+function stripStatusIcon(label) {
+  return String(label).replace(/^[\u2000-\u27bf\ufe0f\s]+/, '')
+}
+
+function tierFromHcp(hcp, noHcp, t) {
+  if (noHcp) return { key: 'new', label: t.tiers.new }
+  if (hcp <= 9) return { key: 'low', label: t.tiers.low }
+  if (hcp <= 18) return { key: 'mid', label: t.tiers.mid }
+  if (hcp <= 28) return { key: 'improver', label: t.tiers.improver }
+  return { key: 'relaxed', label: t.tiers.relaxed }
+}
+
+function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender, t) {
+  const v = t.verdicts
   const limit = gender === 'M' ? course.M : course.F
 
-  if (course.restricted) {
+  if (course.restrictedType) {
     // Hotel-only courses genuinely cannot be arranged for a standalone round.
-    if (course.restricted === 'Hotel guests only \u2014 cannot arrange') {
-      return {
-        status: 'no',
-        label: '❌ Hotel guests only',
-        detail: 'A private hotel course — access needs a stay at the property, so I cannot arrange a standalone round here.',
-      }
+    if (course.restrictedType === 'hotel') {
+      return { status: 'no', label: v.hotelOnly, detail: v.hotelOnlyDetail }
     }
-    return {
-      status: 'warn',
-      label: '⚠️ Members & guests only',
-      detail: 'Normally members and their guests only. I can enquire on your behalf, but access here is the club’s decision and is not guaranteed.',
-    }
+    return { status: 'warn', label: v.membersOnly, detail: v.membersOnlyDetail }
   }
 
   if (!course.handicapRequired && !course.cert) {
     return {
       status: 'ok',
-      label: '\u2705 You can book',
-      detail: course.publicAccess
-        ? 'No handicap certificate needed here.'
-        : 'No handicap needed here, subject to the venue access rules above.',
+      label: v.canBook,
+      detail: course.publicAccess ? v.noCertNeeded : v.noHandicapVenueRules,
     }
   }
 
   if (course.publicAccess && !course.cert) {
-    return {
-      status: 'ok',
-      label: '✅ You can book',
-      detail: 'Pay-and-play access. No handicap certificate needed here.',
-    }
+    return { status: 'ok', label: v.canBook, detail: v.payAndPlay }
   }
 
   if (!hasHcp) {
     if (course.cert) {
-      return {
-        status: 'info',
-        label: 'ℹ️ Certificate required',
-        detail: `This club asks for a valid WHS/EGA handicap certificate at booking. You'll need to obtain one first — or ask me about playing here as part of a coached round.`,
-      }
+      return { status: 'info', label: v.certRequired, detail: v.certRequiredNoHandicap }
     }
-    return {
-      status: 'warn',
-      label: '⚠️ Worth an enquiry',
-      detail: `No official handicap is usually fine here for competent players, but it's the club's call. I'm happy to enquire — I can't promise it, but it's often possible.`,
-    }
+    return { status: 'warn', label: v.worthEnquiry, detail: v.worthEnquiryDetail }
   }
 
   if (hcp > limit) {
     if (!course.strict && hcp <= limit + BORDERLINE_MARGIN) {
       return {
         status: 'warn',
-        label: '⚠️ Just over the limit',
-        detail: `The published limit is ${limit} for ${gender === 'M' ? 'men' : 'women'} and you're at ${hcp}. I'm happy to enquire, but access over the limit is the club's decision — I can't promise it.`,
+        label: v.justOver,
+        detail: v.justOverDetail(limit, gender, hcp),
         borderline: true,
       }
     }
     return {
       status: 'no',
-      label: '❌ Handicap limit',
-      detail: `This course requires ${limit} or lower for ${gender === 'M' ? 'men' : 'women'}${course.strict ? ' and enforces it strictly' : ''}. Worth revisiting once your handicap comes down.`,
+      label: v.limitTooHigh,
+      detail: v.limitTooHighDetail(limit, gender, Boolean(course.strict)),
     }
   }
 
   if (course.cert && !hasCert) {
-    return {
-      status: 'info',
-      label: 'ℹ️ Certificate required',
-      detail: `Your handicap qualifies, but this club asks for a valid WHS/EGA certificate at booking. You'll need to obtain one first — a digital app certificate is accepted.`,
-    }
+    return { status: 'info', label: v.certRequired, detail: v.certRequiredQualifies }
   }
 
-  // Handicap qualifies. Small groups may be paired in peak season — flagged and
+  // Handicap qualifies. Small groups may be paired in peak season \u2014 flagged and
   // rolled into a single shared note rather than repeated on every card.
   if (course.pairing && groupSize <= 2) {
-    return { status: 'ok', label: '✅ You can book', pairs: true, detail: 'Your handicap qualifies here.' }
+    return { status: 'ok', label: v.canBook, pairs: true, detail: v.qualifies }
   }
 
   if (course.cert) {
-    return {
-      status: 'ok',
-      label: '✅ You can book',
-      detail: `Your handicap qualifies and your certificate covers the club's requirement. Bring it (or the app) on the day.`,
-    }
+    return { status: 'ok', label: v.canBook, detail: v.certCovered }
   }
-  return {
-    status: 'ok',
-    label: '✅ You can book',
-    detail: `Your handicap is comfortably within this course's limit.`,
-  }
+  return { status: 'ok', label: v.canBook, detail: v.withinLimit }
 }
-
-const GROUP_ORDER = [
-  { key: 'ok',   title: 'You can book' },
-  { key: 'warn', title: 'Worth an enquiry' },
-  { key: 'info', title: 'Certificate needed first' },
-  { key: 'no',   title: 'Out of reach for now' },
-]
 
 export default function HandicapCheckerClient({ lang = 'en' }) {
   const t = getHandicapCheckerT(lang)
@@ -239,9 +217,9 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
     const hcpVal = noHcp ? null : Math.min(54, Math.max(0, parseFloat(hcp)))
     const hasCert = cert === 'yes' || cert === 'digital'
     const groupSize = parseInt(group, 10)
-    const results = COURSES.map((c) => ({ course: c, r: evaluate(c, hcpVal, !noHcp, hasCert, groupSize, gender) }))
+    const results = COURSES.map((c) => ({ course: c, r: evaluate(c, hcpVal, !noHcp, hasCert, groupSize, gender, t) }))
 
-    const tier = tierFromHcp(hcpVal, noHcp)
+    const tier = tierFromHcp(hcpVal, noHcp, t)
     const bookable = results.filter((x) => x.r.status === 'ok')
     const areaBookable = area === 'any' ? bookable : bookable.filter((x) => x.course.region === area)
     const recPool = (areaBookable.length ? areaBookable : bookable).slice(0, 3).map((x) => x.course.name)
@@ -256,17 +234,17 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
   async function sendEmail() {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setEmailState('err')
-      setEmailMsg('Please enter a valid email address.')
+      setEmailMsg(t.errors.invalidEmail)
       return
     }
     if (!result) {
       setEmailState('err')
-      setEmailMsg('Run the checker first so we have results to send.')
+      setEmailMsg(t.errors.noResults)
       return
     }
     setEmailState('sending')
     setEmailMsg('')
-    const summary = result.results.map(({ course, r }) => `${course.name}: ${r.label.replace(/^[^\w]+\s*/, '')}`)
+    const summary = result.results.map(({ course, r }) => `${course.name}: ${stripStatusIcon(r.label)}`)
     try {
       const res = await fetch('/api/handicap-checker-submit', {
         method: 'POST',
@@ -274,8 +252,8 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         body: JSON.stringify({
           email,
           handicap: result.hcp,
-          gender: gender === 'M' ? 'Male' : 'Female',
-          area: AREA_LABELS[result.area],
+          gender: gender === 'M' ? t.inputs.male : t.inputs.female,
+          area: t.areas[result.area],
           tier: result.tier.label,
           recommendations: result.recPool,
           summary,
@@ -283,15 +261,15 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
       })
       if (res.ok) {
         setEmailState('ok')
-        setEmailMsg('Done — your access list is on its way to your inbox.')
+        setEmailMsg(t.email.sent)
         setEmail('')
       } else {
         setEmailState('err')
-        setEmailMsg('Something went wrong — please try again in a moment.')
+        setEmailMsg(t.errors.generic)
       }
     } catch (e) {
       setEmailState('err')
-      setEmailMsg('Something went wrong — please try again in a moment.')
+      setEmailMsg(t.errors.generic)
     }
   }
 
@@ -387,45 +365,45 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
       `}</style>
 
       <section className="hc-hero">
-        <span className="hc-eyebrow">Free tool</span>
-        <h1>Can I Play It?</h1>
-        <p className="sub">Enter your handicap and see instantly which of Mallorca&rsquo;s courses you can book, which need a certificate, and where I can arrange access for you.</p>
-        <div><span className="hc-updated">Updated July 2026</span></div>
+        <span className="hc-eyebrow">{t.hero.eyebrow}</span>
+        <h1>{t.hero.title}</h1>
+        <p className="sub">{t.hero.sub}</p>
+        <div><span className="hc-updated">{t.hero.updated}</span></div>
       </section>
 
-      <ToolTrustLine />
+      {lang === 'en' && <ToolTrustLine />}
 
       <main className="hc-main">
         <section className="hc-panel">
-          <h2>Your details</h2>
+          <h2>{t.panel.title}</h2>
           <div className="hc-grid">
             <div className="hc-field">
-              <label className="top" htmlFor="hcp">Handicap index</label>
-              <input type="number" id="hcp" min="0" max="54" step="0.1" placeholder="e.g. 18.4"
+              <label className="top" htmlFor="hcp">{t.inputs.handicap}</label>
+              <input type="number" id="hcp" min="0" max="54" step="0.1" placeholder={t.inputs.handicapPlaceholder}
                 value={hcp} disabled={noHcp} onChange={(e) => setHcp(e.target.value)} />
               <label className="hc-nohcp">
                 <input type="checkbox" checked={noHcp} onChange={(e) => setNoHcp(e.target.checked)} />
-                I don&rsquo;t have an official handicap
+                {t.inputs.noHandicap}
               </label>
             </div>
             <div className="hc-field">
-              <span className="top">Gender</span>
+              <span className="top">{t.inputs.gender}</span>
               <div className="hc-seg">
-                {[['M', 'Male'], ['F', 'Female']].map(([v, l]) => (
+                {[['M', t.inputs.male], ['F', t.inputs.female]].map(([v, l]) => (
                   <button key={v} type="button" className={gender === v ? 'active' : ''} onClick={() => setGender(v)}>{l}</button>
                 ))}
               </div>
             </div>
             <div className="hc-field">
-              <span className="top">Handicap certificate</span>
+              <span className="top">{t.inputs.cert}</span>
               <div className="hc-seg">
-                {[['yes', 'Yes'], ['digital', 'Digital (app)'], ['no', 'No']].map(([v, l]) => (
+                {[['yes', t.inputs.yes], ['digital', t.inputs.digital], ['no', t.inputs.no]].map(([v, l]) => (
                   <button key={v} type="button" className={cert === v ? 'active' : ''} onClick={() => setCert(v)}>{l}</button>
                 ))}
               </div>
             </div>
             <div className="hc-field">
-              <span className="top">Group size</span>
+              <span className="top">{t.inputs.groupSize}</span>
               <div className="hc-seg">
                 {[['1', '1'], ['2', '2'], ['3', '3'], ['4', '4'], ['5', '4+']].map(([v, l]) => (
                   <button key={v} type="button" className={group === v ? 'active' : ''} onClick={() => setGroup(v)}>{l}</button>
@@ -433,47 +411,60 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
               </div>
             </div>
             <div className="hc-field hc-field-full">
-              <label className="top" htmlFor="area">Where are you based or staying? <span style={{ textTransform: 'none', letterSpacing: 0 }}>(optional — tailors your recommendation)</span></label>
+              <label className="top" htmlFor="area">{t.inputs.area} <span style={{ textTransform: 'none', letterSpacing: 0 }}>{t.inputs.areaHint}</span></label>
               <select id="area" value={area} onChange={(e) => setArea(e.target.value)}>
-                {Object.entries(AREA_LABELS).map(([v, l]) => (
-                  <option key={v} value={v}>{l}</option>
+                {AREA_KEYS.map((v) => (
+                  <option key={v} value={v}>{t.areas[v]}</option>
                 ))}
               </select>
             </div>
           </div>
-          <button className="hc-check" onClick={runCheck}>Check my access</button>
+          <button className="hc-check" onClick={runCheck}>{t.inputs.check}</button>
         </section>
 
         {result && (
           <section ref={resultsRef}>
             <div className="hc-summary">
               {result.hcp === 'none'
-                ? <>Without an official handicap you can still book <strong>{okCount}</strong> of Mallorca&rsquo;s courses outright, and <strong>{warnCount}</strong> more are worth an enquiry. The premium member clubs will want a certificate first.</>
-                : <>Playing off <strong>{result.hcp}</strong>, you can book <strong>{okCount}</strong> of Mallorca&rsquo;s courses{warnCount ? <>, with <strong>{warnCount}</strong> more worth an enquiry</> : ''}.</>}
+                ? fillNodes(t.results.summaryNoHandicap, { ok: <strong>{okCount}</strong>, warn: <strong>{warnCount}</strong> })
+                : fillNodes(warnCount ? t.results.summaryHandicapWarn : t.results.summaryHandicap, {
+                    hcp: <strong>{result.hcp}</strong>,
+                    ok: <strong>{okCount}</strong>,
+                    warn: <strong>{warnCount}</strong>,
+                  })}
             </div>
 
             {result.recPool.length > 0 && (
               <div className="hc-rec">
-                <div className="lbl">Andy&rsquo;s pick for you</div>
+                <div className="lbl">{t.results.recLabel}</div>
                 <p>
-                  As {result.tier.label}{result.area !== 'any' ? ` around ${AREA_LABELS[result.area].replace(/ \(.*\)/, '')}` : ''}, I&rsquo;d start with {result.recPool.slice(0, 3).join(', ')}. Tell me your dates and I&rsquo;ll build the round order and tee times around your golf.
+                  {result.area !== 'any'
+                    ? fill(t.results.recTextArea, {
+                        tier: result.tier.label,
+                        area: t.areasShort[result.area],
+                        courses: result.recPool.slice(0, 3).join(', '),
+                      })
+                    : fill(t.results.recText, {
+                        tier: result.tier.label,
+                        courses: result.recPool.slice(0, 3).join(', '),
+                      })}
                 </p>
               </div>
             )}
 
-            {GROUP_ORDER.map((g) => {
-              const items = result.results.filter((x) => x.r.status === g.key)
+            {GROUP_KEYS.map((key) => {
+              const items = result.results.filter((x) => x.r.status === key)
               if (!items.length) return null
               return (
-                <div key={g.key}>
-                  <h3 className="hc-group-head">{g.title} <span className="count">{items.length} course{items.length > 1 ? 's' : ''}</span></h3>
+                <div key={key}>
+                  <h3 className="hc-group-head">{t.groups[key]} <span className="count">{t.results.courseCount(items.length)}</span></h3>
                   <div className="hc-cards">
                     {items.map(({ course, r }) => (
                       <div key={course.name} className={`hc-card ${r.status}`}>
                         <div className="name">{course.name}</div>
                         <span className={`hc-badge ${r.status}`}>{r.label}</span>
                         <div className="detail">{r.detail}</div>
-                        {r.borderline && <Link className="enquire" href="/contact">Ask if it&rsquo;s possible →</Link>}
+                        {r.borderline && <Link className="enquire" href="/contact">{t.results.askIfPossible}</Link>}
                       </div>
                     ))}
                   </div>
@@ -483,50 +474,51 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
 
             {result.pairNames.length > 0 && (
               <div className="hc-pairnote">
-                <div className="lbl">Peak-season pairing</div>
+                <div className="lbl">{t.results.pairingLabel}</div>
                 <p>
-                  Playing as {result.group === '1' ? 'a single golfer' : 'a two-ball'}, most Mallorca clubs pair small bookings with other players in peak season — you can usually reserve the whole tee time as a private group instead. Likely at: {result.pairNames.join(', ')}. I know the exact private-tee costs for the Arabella estate courses and Alcanada; for the others I&rsquo;ll confirm when you enquire.
+                  {fill(t.results.pairingText, {
+                    who: result.group === '1' ? t.results.pairingSingle : t.results.pairingTwoBall,
+                    courses: result.pairNames.join(', '),
+                  })}
                 </p>
               </div>
             )}
 
             {hasBorderline && (
               <div className="hc-cta">
-                <h3>A few shots over a limit?</h3>
-                <p>Published limits are sometimes more flexible than they look, especially midweek and outside peak season. I&rsquo;m happy to enquire on your behalf — but the club always has the final say, so I can&rsquo;t promise access.</p>
+                <h3>{t.cta.borderline}</h3>
+                <p>{t.cta.borderlineDesc}</p>
                 <div className="hc-cta-btns">
-                  <Link className="btn" href="/contact">Enquire About Access</Link>
-                  <WhatsAppCta label="Ask on WhatsApp" />
+                  <Link className="btn" href="/contact">{t.cta.enquireAccess}</Link>
+                  <WhatsAppCta label={t.cta.whatsappShort} />
                 </div>
               </div>
             )}
 
             <div className="hc-email">
-              <h3>Email my access list</h3>
-              <p>Get your personal course access list and Andy&rsquo;s pick sent to your inbox, plus occasional Mallorca golf planning notes. No spam, unsubscribe any time.</p>
+              <h3>{t.email.title}</h3>
+              <p>{t.email.sub}</p>
               <div className="hc-email-row">
-                <input type="email" placeholder="you@example.com" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                <button onClick={sendEmail} disabled={emailState === 'sending'}>{emailState === 'sending' ? 'Sending…' : 'Send my list'}</button>
+                <input type="email" placeholder={t.email.placeholder} autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <button onClick={sendEmail} disabled={emailState === 'sending'}>{emailState === 'sending' ? t.email.sending : t.email.button}</button>
               </div>
               {emailMsg && <div className={`hc-email-msg ${emailState === 'ok' ? 'ok' : 'err'}`}>{emailMsg}</div>}
             </div>
 
             {!hasBorderline && (
               <div className="hc-cta">
-                <h3>Ready to plan your golf?</h3>
-                <p>Tell me your dates and group and I&rsquo;ll sort the tee times, round order and anything the checker flagged. No form to fill if you&rsquo;d rather just message me.</p>
+                <h3>{t.cta.ready}</h3>
+                <p>{t.cta.readyDesc}</p>
                 <div className="hc-cta-btns">
-                  <Link className="btn" href="/contact">Enquire</Link>
-                  <WhatsAppCta />
+                  <Link className="btn" href="/contact">{t.cta.enquire}</Link>
+                  <WhatsAppCta label={t.cta.whatsapp} />
                 </div>
               </div>
             )}
 
-            <p className="hc-selector">Not sure which of these to play? <Link href="/tools/course-selector">Try the course selector →</Link></p>
+            <p className="hc-selector">{t.selector} <Link href="/tools/course-selector">{t.selectorLink}</Link></p>
 
-            <p className="hc-foot">
-              Handicap limits and certificate rules are set by each club and can change without notice — always confirmed at the time of booking. A daily Spanish Golf Federation licence (€3) applies at most member clubs for non-federated visitors. This checker is a planning guide, not a booking guarantee.
-            </p>
+            <p className="hc-foot">{t.disclaimer}</p>
           </section>
         )}
       </main>
