@@ -21,20 +21,20 @@ const TOOLS = [
     cta: '开始推荐',
   },
   {
-    href: '/zh/tools/handicap-checker',
-    eyebrow: '验证权限',
-    title: '检查你的差点',
-    desc: '输入你的差点和小组人数。立即查看马略卡哪些球场可以预订，哪些需要证书，Andy可以在哪里协助安排进场。',
-    time: '不到1分钟',
-    cta: '检查我的权限',
-  },
-  {
     href: '/zh/tools/green-fees',
     eyebrow: '选择球场',
     title: '探索所有24个球场',
     desc: '一个表格展示所有马略卡球场：球场费用、球车成本、步行规则、杆数、难度和差点限制，附加Andy的评价。或者并列对比两个或三个球场。',
     time: '不到1分钟',
     cta: '对比球场',
+  },
+  {
+    href: '/zh/tools/handicap-checker',
+    eyebrow: '验证权限',
+    title: '检查你的差点',
+    desc: '输入你的差点和小组人数。立即查看马略卡哪些球场可以预订，哪些需要证书，Andy可以在哪里协助安排进场。',
+    time: '不到1分钟',
+    cta: '检查我的权限',
   },
   {
     href: '/zh/tools/golf-day-builder',

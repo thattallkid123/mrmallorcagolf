@@ -21,20 +21,20 @@ const TOOLS = [
     cta: 'Finde meine Golfplätze',
   },
   {
+    href: '/de/tools/green-fees',
+    eyebrow: 'Wählen Sie Ihren Platz',
+    title: 'Alle 24 Plätze Durchsuchen',
+    desc: 'Jeder Golfplatz auf Mallorca in einer Tabelle: Greenfees, Buggy-Kosten, Begehungsregeln, Par, Schwierigkeit und Handicap-Limits, mit Andys Bewertung. Oder vergleiche zwei oder drei direkt miteinander.',
+    time: '< 1 Min',
+    cta: 'Vergleiche Golfplätze',
+  },
+  {
     href: '/de/tools/handicap-checker',
-    eyebrow: 'Zugang prüfen',
+    eyebrow: 'Zugang Prüfen',
     title: 'Überprüfen Sie Ihren Handicap',
     desc: 'Gib dein Handicap und deine Gruppengröße ein. Sieh sofort, welche Mallorca-Golfplätze du buchen kannst, wo du ein Zertifikat benötigst und wo Andy Zugang arrangieren kann.',
     time: '< 1 Min',
     cta: 'Überprüfe meinen Zugang',
-  },
-  {
-    href: '/de/tools/green-fees',
-    eyebrow: 'Wählen Sie Ihren Platz',
-    title: 'Alle 24 Plätze durchsuchen',
-    desc: 'Jeder Golfplatz auf Mallorca in einer Tabelle: Greenfees, Buggy-Kosten, Begehungsregeln, Par, Schwierigkeit und Handicap-Limits, mit Andys Bewertung. Oder vergleiche zwei oder drei direkt miteinander.',
-    time: '< 1 Min',
-    cta: 'Vergleiche Golfplätze',
   },
   {
     href: '/de/tools/golf-day-builder',
@@ -55,7 +55,7 @@ const TOOLS = [
   {
     href: '/de/tools/hotel-recommender',
     eyebrow: 'Planen Sie Ihre Reise',
-    title: 'Hotels finden',
+    title: 'Hotels Finden',
     desc: 'Sechs Fragen. Eine persönliche Liste mit Hotels, abgestimmt auf deine Golfplätze, Gruppengröße und Reisestil. Deckt die Hauptgebiete der Insel ab.',
     time: '< 1 Min',
     cta: 'Finde Hotels',
