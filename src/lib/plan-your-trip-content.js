@@ -6,25 +6,25 @@ import { getLocalizedPlanYourTripContent } from './plan-your-trip-content-locali
 export const PLAN_YOUR_TRIP_CONTENT = {
   en: {
   "heroEyebrow": "Plan Your Mallorca Golf Trip",
-  "heroTitle": "Start with the courses. Let me handle the golf side properly.",
-  "heroBody": "Use the free tool if you just want a first shortlist. If you want the golf side of the trip planned properly, I help with course choice, routing, tee times, buggies, rentals, and the details that make the week work on the ground.",
+  "heroTitle": "The right Mallorca courses, in the right order.",
+  "heroBody": "I choose the courses that suit your group, put them in the right order, and handle the tee times, buggies, rentals, and golf-side logistics before you arrive.",
   "options": {
-    "basicLabel": "Explore",
-    "basicTitle": "Free course finder",
+    "basicLabel": "Free",
+    "basicTitle": "Course finder",
     "basicNote": "Shortlist courses first.",
-    "proLabel": "Service",
-    "proTitle": "Golf trip planning with Andy",
-    "proNote": "Routing, tee times, and golf-side logistics handled."
+    "proLabel": "Personal",
+    "proTitle": "Trip planning",
+    "proNote": "Courses, routing, tee times, and bookings handled."
   },
   "free": {
-    "eyebrow": "Explore",
+    "eyebrow": "Free",
     "title": "Use the free course finder",
     "body": "Answer a few questions and the tool will suggest courses to consider based on your group, level, region, and budget. It is a useful first pass, not a route, booking plan, or day-by-day itinerary."
   },
   "professional": {
-    "eyebrow": "Service",
-    "title": "Let me plan the golf side properly",
-    "body": "Send me your dates, group size, and what you are hoping for. I will recommend the right courses for your group, work out the routing and number of rounds, book the tee times, arrange buggies and club rentals, and help shape the golf days so the trip runs cleanly from start to finish.",
+    "eyebrow": "Personal",
+    "title": "Let me plan and book the golf side properly",
+    "body": "Send me your dates, group size, and what you want from the trip. I will recommend the right courses for your group, work out the routing and number of rounds, book and confirm the tee times, arrange buggies and club rentals, and shape the golf days so the trip runs cleanly from start to finish.",
     "includes": [
       "Course recommendations matched to your game, group, and budget",
       "Where to base yourself and why",

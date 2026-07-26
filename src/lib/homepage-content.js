@@ -13,9 +13,9 @@ export const HOME_CONTENT = {
       "with a Pro by Your Side"
     ],
     "emphasis": "",
-    "primaryCta": "Book a Day with Andy",
+    "primaryCta": "Play With A Pro",
     "primaryHref": "/play-with-a-pro",
-    "secondaryCta": "Plan your trip",
+    "secondaryCta": "Plan Your Trip",
     "trust": [
       "PGA Advanced Professional",
       "Trackman Master Certified",
@@ -75,15 +75,15 @@ export const HOME_CONTENT = {
         "href": "/play-with-a-pro"
       },
       {
-        "title": "Plan your trip",
+        "title": "Plan Your Trip",
         "text": "Get help with the golf side of the trip: course choice, routing, tee times, buggies, and the details that make the week work properly.",
-        "cta": "Plan your trip",
+        "cta": "Plan Your Trip",
         "href": "/plan-your-trip"
       },
       {
-        "title": "Explore courses",
+        "title": "Explore Courses",
         "text": "Browse the island's courses, read the reviews, and compare the options before deciding what belongs in the trip.",
-        "cta": "Explore courses",
+        "cta": "Explore Courses",
         "href": "/golf-courses"
       }
     ]

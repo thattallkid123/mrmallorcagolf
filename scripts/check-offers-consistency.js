@@ -68,11 +68,14 @@ async function main() {
       `Homepage multi-day body drifted for locale ${locale}`,
     )
 
-    const contactExperiences = contactContent.form?.experiences || []
-    const contactSolo = contactExperiences.find(([id]) => id === OFFER_IDS.solo)
-    const contactGroup = contactExperiences.find(([id]) => id === OFFER_IDS.group)
-    assert(contactSolo?.[2] === soloOffer.contactPrice, `Contact solo option drifted for locale ${locale}`)
-    assert(contactGroup?.[2] === groupOffer.contactPrice, `Contact group option drifted for locale ${locale}`)
+    const contactServiceTypes = contactContent.form?.serviceTypes || []
+    const contactFormats = contactContent.form?.pwapFormats || []
+    const contactSolo = contactFormats.find(([id]) => id === OFFER_IDS.solo)
+    const contactGroup = contactFormats.find(([id]) => id === OFFER_IDS.group)
+    assert(contactServiceTypes.some(([id]) => id === 'trip-planning'), `Contact trip-planning option missing for locale ${locale}`)
+    assert(contactServiceTypes.some(([id]) => id === 'both'), `Contact both option missing for locale ${locale}`)
+    assert(contactSolo?.[2] === soloOffer.contactPrice, `Contact solo format drifted for locale ${locale}`)
+    assert(contactGroup?.[2] === groupOffer.contactPrice, `Contact group format drifted for locale ${locale}`)
 
     assert(
       playMetadata.description === offersModule.getPlayWithAProMetadataDescription(locale),

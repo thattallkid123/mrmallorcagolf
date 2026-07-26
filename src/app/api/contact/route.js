@@ -13,11 +13,19 @@ import {
 } from '../../../lib/request-safety'
 import { getExperienceLabel, OFFER_IDS } from '../../../lib/offers-content.js'
 
+const SERVICE_TYPE_LABELS = {
+  pwap: 'Play With A Pro',
+  'trip-planning': 'Plan my golf trip',
+  both: 'Both',
+  'not-sure': 'Not sure yet',
+}
+
 const EXPERIENCE_LABELS = {
   [OFFER_IDS.solo]: getExperienceLabel(OFFER_IDS.solo),
   [OFFER_IDS.group]: getExperienceLabel(OFFER_IDS.group),
   [OFFER_IDS.premium]: getExperienceLabel(OFFER_IDS.premium),
   [OFFER_IDS.undecided]: getExperienceLabel(OFFER_IDS.undecided),
+  'pwap-not-sure': 'Play With A Pro - Not sure yet',
 }
 
 function renderRow(label, value) {
@@ -57,6 +65,8 @@ export async function POST(request) {
     const dates = sanitizeText(payload?.dates, 120)
     const handicap = sanitizeText(payload?.handicap, 120)
     const groupsize = sanitizeText(payload?.groupsize, 120)
+    const serviceType = sanitizeText(payload?.serviceType, 80)
+    const pwapFormat = sanitizeText(payload?.pwapFormat, 80)
     const experience = sanitizeText(payload?.experience, 80)
     const message = sanitizeMultilineText(payload?.message, 4000)
     const lang = sanitizeText(payload?.lang, 12).toUpperCase() || 'EN'
@@ -73,7 +83,9 @@ export async function POST(request) {
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY)
-    const experienceLabel = EXPERIENCE_LABELS[experience] || experience || 'Not specified'
+    const serviceTypeLabel = SERVICE_TYPE_LABELS[serviceType] || serviceType || 'Not specified'
+    const pwapFormatLabel = EXPERIENCE_LABELS[pwapFormat] || pwapFormat || 'Not specified'
+    const experienceLabel = EXPERIENCE_LABELS[experience] || SERVICE_TYPE_LABELS[experience] || experience || 'Not specified'
     const fullName = `${fname} ${lname}`.trim()
     const safeEmail = escapeHtml(email)
 
@@ -91,6 +103,8 @@ export async function POST(request) {
             ${renderRow('Dates', dates || 'Not specified')}
             ${renderRow('Handicap', handicap || 'Not specified')}
             ${renderRow('Group size', groupsize || 'Not specified')}
+            ${renderRow('Main enquiry', serviceTypeLabel)}
+            ${renderRow('Play With A Pro format', (serviceType === 'pwap' || serviceType === 'both') ? pwapFormatLabel : 'Not applicable')}
             ${renderRow('Experience', experienceLabel)}
             ${renderRow('Language', lang)}
           </table>

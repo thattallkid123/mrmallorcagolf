@@ -122,7 +122,7 @@ export default function HomePageInner({ locale = 'en' }) {
               <a href={itineraryHref} className="btn btn--gold">
                 {home.hero.primaryCta}
               </a>
-              <a href={golfCoursesHref} className="btn btn--outline-white">
+              <a href={planYourTripHref} className="btn btn--outline-white">
                 {home.hero.secondaryCta}
               </a>
             </div>
@@ -131,8 +131,8 @@ export default function HomePageInner({ locale = 'en' }) {
                 <span>微信联系：直接加我，或先看联系页</span>
               </a>
             ) : null}
-            <a href={planYourTripHref} className="hero__pwap-link">
-              <span>{ui.tripPrompt}</span>
+            <a href={golfCoursesHref} className="hero__pwap-link" aria-label={ui.tripPrompt}>
+              <span>Explore Courses</span>
             </a>
           </div>
         </div>

@@ -4,6 +4,19 @@ import { useContactFormSubmission } from '../../../lib/contact-form'
 
 export default function ContactFormPanel({ locale = 'en', content }) {
   const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission(locale)
+  const serviceTypes = content.form.serviceTypes || [
+    ['pwap', 'Play With A Pro'],
+    ['trip-planning', 'Plan my golf trip'],
+    ['both', 'Both'],
+    ['not-sure', 'Not sure yet'],
+  ]
+  const pwapFormats = content.form.pwapFormats || [
+    ['pwap-solo', 'Solo', '€695'],
+    ['pwap-group', 'Group', '€950 total'],
+    ['signature-day', 'Signature Day', 'From €3,000+'],
+    ['pwap-not-sure', 'Not sure yet', ''],
+  ]
+  const showPwapFormats = form.serviceType === 'pwap' || form.serviceType === 'both'
 
   const formNoteStyle = {
     background: 'rgba(45,74,62,0.05)',
@@ -170,22 +183,46 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
 
         <div className="form-group">
-          <label>{content.form.labels.experience}</label>
+          <label>{content.form.labels.serviceType || 'What would you like help with?'}</label>
           <div className="radio-group">
-            {content.form.experiences.map(([val, label, price]) => (
+            {serviceTypes.map(([val, label]) => (
               <div
                 key={val}
-                onClick={() => setForm((f) => ({ ...f, experience: val }))}
-                className={`radio-option${form.experience === val ? ' radio-option--selected' : ''}`}
+                onClick={() => setForm((f) => ({
+                  ...f,
+                  serviceType: val,
+                  experience: val,
+                  pwapFormat: val === 'pwap' || val === 'both' ? f.pwapFormat : '',
+                }))}
+                className={`radio-option${form.serviceType === val ? ' radio-option--selected' : ''}`}
               >
-                <span className={`radio-option-label${form.experience === val ? ' radio-option-label--selected' : ''}`}>
+                <span className={`radio-option-label${form.serviceType === val ? ' radio-option-label--selected' : ''}`}>
                   {label}
                 </span>
-                {price && <span className="radio-option-price">{price}</span>}
               </div>
             ))}
           </div>
         </div>
+
+        {showPwapFormats ? (
+          <div className="form-group">
+            <label>{content.form.labels.pwapFormat || 'If Play With A Pro is part of it, which format sounds closest?'}</label>
+            <div className="radio-group">
+              {pwapFormats.map(([val, label, price]) => (
+                <div
+                  key={val}
+                  onClick={() => setForm((f) => ({ ...f, pwapFormat: val, experience: val }))}
+                  className={`radio-option${form.pwapFormat === val ? ' radio-option--selected' : ''}`}
+                >
+                  <span className={`radio-option-label${form.pwapFormat === val ? ' radio-option-label--selected' : ''}`}>
+                    {label}
+                  </span>
+                  {price && <span className="radio-option-price">{price}</span>}
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : null}
 
         <div className="form-group">
           <label htmlFor="message">{content.form.labels.message}</label>

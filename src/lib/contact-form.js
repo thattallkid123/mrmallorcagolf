@@ -10,6 +10,8 @@ const INITIAL_FORM = {
   dates: '',
   handicap: '',
   groupsize: '',
+  serviceType: '',
+  pwapFormat: '',
   experience: '',
   message: '',
   website: '',
@@ -61,14 +63,18 @@ export function useContactFormSubmission(lang = 'en') {
       trackEvent('contact_form_submit', {
         form_name: 'contact',
         language: lang,
-        experience: form.experience || 'not_specified',
+        service_type: form.serviceType || 'not_specified',
+        pwap_format: form.pwapFormat || 'not_specified',
+        experience: form.experience || form.pwapFormat || form.serviceType || 'not_specified',
         group_size: form.groupsize || 'not_specified',
         page_path: currentPagePath(),
       })
       trackLead('contact_form', {
         form_name: 'contact',
         language: lang,
-        experience: form.experience || 'not_specified',
+        service_type: form.serviceType || 'not_specified',
+        pwap_format: form.pwapFormat || 'not_specified',
+        experience: form.experience || form.pwapFormat || form.serviceType || 'not_specified',
         group_size: form.groupsize || 'not_specified',
         page_path: currentPagePath(),
       })
