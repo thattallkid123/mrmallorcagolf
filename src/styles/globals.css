@@ -77,20 +77,24 @@
 }
 
 .pyt-option-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 142px;
   padding: 24px 26px;
   border: 1px solid rgba(255,255,255,0.16);
   background: rgba(255,255,255,0.055);
   color: var(--cream);
   text-decoration: none;
-  transition: transform 0.3s var(--ease-luxury), border-color 0.3s var(--ease-luxury), background 0.3s var(--ease-luxury);
+  box-shadow: 0 18px 40px rgba(8, 7, 5, 0.14);
+  transition: transform 0.3s var(--ease-luxury), border-color 0.3s var(--ease-luxury), background 0.3s var(--ease-luxury), box-shadow 0.3s var(--ease-luxury);
 }
 
 .pyt-option-card:hover {
   transform: translateY(-3px);
   border-color: rgba(212,176,104,0.5);
   background: rgba(255,255,255,0.08);
+  box-shadow: 0 24px 56px rgba(8, 7, 5, 0.2);
 }
 
 .pyt-option-card span {
@@ -1095,8 +1099,8 @@
 
 @media (max-width: 640px) {
   .pyt-hero {
-    min-height: 90vh;
-    padding: calc(var(--nav-h) + 48px) 20px 54px;
+    min-height: 74svh;
+    padding: calc(var(--nav-h) + 34px) 20px 34px;
   }
 
   .pyt-hero__title {
@@ -1112,6 +1116,11 @@
   .pyt-option-card {
     min-height: 0;
     padding: 20px;
+  }
+
+  .pyt-option-strip {
+    grid-template-columns: 1fr;
+    margin-top: 24px;
   }
 
   .itinerary-page {
@@ -1801,7 +1810,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 680px;
+  min-height: 640px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -3037,15 +3046,15 @@ select.form-control { cursor: pointer; }
   .story__sidebar { position: static; border-left: none; border-top: 1px solid var(--linen); min-height: auto; }
 }
 @media (max-width: 768px) {
-  .hero { padding: 0 20px 44px; }
-  .hero__content { width: 100%; max-width: 100%; min-width: 0; }
+  .hero { height: 78svh; min-height: 560px; padding: 0 20px 30px; }
+  .hero__content { width: 100%; max-width: 31rem; min-width: 0; }
   .hero__eyebrow { max-width: 100%; flex-wrap: wrap; gap: 8px; font-size: 8px; letter-spacing: 0.14em; line-height: 1.6; }
   .hero__eyebrow::before { width: 24px; }
   .hero__title { max-width: 100%; font-size: clamp(1.9rem, 9vw, 2.35rem); line-height: 1.08; overflow-wrap: normal; margin-bottom: 1.15rem; }
   .hero__cta-stack { width: 100%; gap: 10px; }
   .hero__actions { width: 100%; flex-direction: column; align-items: stretch; gap: 10px; }
   .hero__actions .btn { width: 100%; padding-left: 18px; padding-right: 18px; }
-  .hero__pwap-link { width: 100%; flex-direction: column; gap: 3px; text-align: center; font-size: 8px; letter-spacing: 0.1em; line-height: 1.55; padding: 10px 12px; }
+  .hero__pwap-link { width: 100%; flex-direction: column; gap: 3px; text-align: center; font-size: 8px; letter-spacing: 0.1em; line-height: 1.55; padding: 9px 12px; }
   .hero__pwap-link span:not(:first-child)::before { display: none; }
   .hero__pwap-link span::after { margin-left: 0.45em; }
   .intro { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
@@ -3057,8 +3066,8 @@ select.form-control { cursor: pointer; }
   .journey { padding: 64px 20px; }
   .journey__grid { grid-template-columns: 1fr; }
   .journey-card { min-height: 0; padding: 28px 24px; }
-  .journey-card--photo { min-height: 340px; }
-  .journey-card--photo .journey-card__body { min-height: 340px; padding: 28px 24px; }
+  .journey-card--photo { min-height: 300px; }
+  .journey-card--photo .journey-card__body { min-height: 300px; padding: 24px 22px; }
   .journey-card--photo h3 { max-width: 12ch; }
   .journey-card--photo p { max-width: 100%; }
   .how { padding: 70px 20px; }
