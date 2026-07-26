@@ -8,8 +8,8 @@ export const CONTACT_CONTENT = {
   "locale": "en",
   "hero": {
     "eyebrow": "Get in touch",
-    "title": "Tell me the trip you're building. I'll help make it work.",
-    "intro": "If you already have dates, courses, or a rough itinerary, send it over. If you are still early, start with the itinerary planner first. Either way, I reply personally and help you turn the idea into a Mallorca golf plan that makes sense."
+    "title": "Tell me what you want to book. I'll tell you the right next step.",
+    "intro": "Play With A Pro, golf trip planning, or both. If you already have dates, courses, or a rough plan, send it over. If you are still deciding, I will help narrow down the best route."
   },
   "cards": {
     "emailLabel": "Email",
@@ -22,14 +22,14 @@ export const CONTACT_CONTENT = {
   },
   "success": {
     "title": "Enquiry received.",
-    "body": "I'll come back to you personally, usually within a few hours, always within 24. If you'd prefer to speak directly, WhatsApp is the fastest route."
+    "body": "I'll come back to you personally, usually within a few hours, always within 24. If you'd rather speak directly, WhatsApp is the fastest route."
   },
   "form": {
     "eyebrow": "Enquiry form",
-    "title": "Start planning your trip.",
-    "intro": "The more detail you give me, the better I can match the courses, add-ons, and timing to your group.",
+    "title": "Start the conversation.",
+    "intro": "The more detail you give me, the faster I can point you to the right service, courses, and next step.",
     "experienceHelpTitle": "Which option fits you?",
-    "experienceHelp": "Choose the closest match and I will refine it with you. Trip planning means I shape the route around your dates and group. Play With A Pro means you want Andy on the course with you. If you are not sure yet, choose the unsure option and I will point you in the right direction.",
+    "experienceHelp": "Choose the closest match and I will refine it with you. Trip planning means I help organise the golf side of the trip. Play With A Pro means you want Andy on the course with you. If you are not sure yet, choose the unsure option and I will point you in the right direction.",
     "sendPrompt": "Best details to send: dates, group size, hotel area, handicap range, and any courses already on your shortlist. If you are still deciding, just say what you are comparing and I will narrow it down for you.",
     "labels": {
       "fname": "First name",
@@ -93,7 +93,7 @@ export const CONTACT_CONTENT = {
         ""
       ]
     ],
-    "submit": "Send Enquiry →",
+    "submit": "Send enquiry →",
     "note": "I respond personally to every enquiry within 24 hours. Your details are used only to arrange your day."
   },
   "gift": {
@@ -107,7 +107,7 @@ export const CONTACT_CONTENT = {
   },
   "whatNext": {
     "heading": "What happens next",
-    "body": "I read every enquiry myself. I will come back within 24 hours with the clearest next step: the course logic, planning route, or the best way to add a Play With A Pro day."
+    "body": "I read every enquiry myself. I will come back within 24 hours with the clearest next step: book Play With A Pro, plan the golf side of the trip, or narrow down the right courses first."
   },
   "stayInTouch": {
     "heading": "Stay in touch",

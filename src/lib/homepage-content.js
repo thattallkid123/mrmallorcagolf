@@ -15,7 +15,7 @@ export const HOME_CONTENT = {
     "emphasis": "",
     "primaryCta": "Book a Day with Andy",
     "primaryHref": "/play-with-a-pro",
-    "secondaryCta": "See the courses",
+    "secondaryCta": "Plan your trip",
     "trust": [
       "PGA Advanced Professional",
       "Trackman Master Certified",
@@ -69,21 +69,21 @@ export const HOME_CONTENT = {
     "title": "Start where you are in the planning process.",
     "items": [
       {
-        "title": "Play a round with Andy",
-        "text": "Book a day with me: one course, 18 holes, local course management, and coaching woven into the round. Solo or group.",
+        "title": "Play With A Pro",
+        "text": "Book a day with Andy: one course, 18 holes, local course management, and coaching woven into the round. Solo or group.",
         "cta": "Book Play With A Pro",
         "href": "/play-with-a-pro"
       },
       {
-        "title": "I am planning a golf trip",
-        "text": "Let me handle the planning: courses matched to your group, base, routing, tee times, buggies, and bookings all taken care of before you arrive.",
-        "cta": "Plan the trip",
+        "title": "Plan your trip",
+        "text": "Get help with the golf side of the trip: course choice, routing, tee times, buggies, and the details that make the week work properly.",
+        "cta": "Plan your trip",
         "href": "/plan-your-trip"
       },
       {
-        "title": "I am comparing courses",
-        "text": "Read my course guide for honest, first-hand notes on green fees, difficulty, conditioning, scenery, and who each course actually suits.",
-        "cta": "Compare courses",
+        "title": "Explore courses",
+        "text": "Browse the island's courses, read the reviews, and compare the options before deciding what belongs in the trip.",
+        "cta": "Explore courses",
         "href": "/golf-courses"
       }
     ]

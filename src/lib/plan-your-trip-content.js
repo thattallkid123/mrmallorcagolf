@@ -6,25 +6,25 @@ import { getLocalizedPlanYourTripContent } from './plan-your-trip-content-locali
 export const PLAN_YOUR_TRIP_CONTENT = {
   en: {
   "heroEyebrow": "Plan Your Mallorca Golf Trip",
-  "heroTitle": "Start with the courses. Let me build the trip properly.",
-  "heroBody": "The free tool is a simple starting point. It helps you see which Mallorca courses might suit your group. The professional planning service is where the real trip gets built: base, route, number of rounds, tee times, buggies, rentals, and the details around the golf.",
+  "heroTitle": "Start with the courses. Let me handle the golf side properly.",
+  "heroBody": "Use the free tool if you just want a first shortlist. If you want the golf side of the trip planned properly, I help with course choice, routing, tee times, buggies, rentals, and the details that make the week work on the ground.",
   "options": {
-    "basicLabel": "Basic",
+    "basicLabel": "Explore",
     "basicTitle": "Free course finder",
-    "basicNote": "On-site tool. Shortlist only.",
-    "proLabel": "Professional",
-    "proTitle": "Paid trip planning",
-    "proNote": "The real service: route, bookings, base, and add-ons."
+    "basicNote": "Shortlist courses first.",
+    "proLabel": "Service",
+    "proTitle": "Golf trip planning with Andy",
+    "proNote": "Routing, tee times, and golf-side logistics handled."
   },
   "free": {
-    "eyebrow": "Basic",
+    "eyebrow": "Explore",
     "title": "Use the free course finder",
-    "body": "Answer a few questions and the tool will suggest courses to consider based on your group, level, region, and budget. It is not a route, a booking plan, or a day-by-day itinerary. Use it to get your bearings before asking me to plan the trip properly."
+    "body": "Answer a few questions and the tool will suggest courses to consider based on your group, level, region, and budget. It is a useful first pass, not a route, booking plan, or day-by-day itinerary."
   },
   "professional": {
-    "eyebrow": "Professional",
-    "title": "Let me plan it properly",
-    "body": "Send me your dates, group size, and what you are hoping for. I will recommend the right courses for your game, advise on where to base yourself and why, work out the routing and number of rounds, book the tee times, arrange buggies and club rentals, and suggest dining options that work around the golf. Price on enquiry.",
+    "eyebrow": "Service",
+    "title": "Let me plan the golf side properly",
+    "body": "Send me your dates, group size, and what you are hoping for. I will recommend the right courses for your group, work out the routing and number of rounds, book the tee times, arrange buggies and club rentals, and help shape the golf days so the trip runs cleanly from start to finish.",
     "includes": [
       "Course recommendations matched to your game, group, and budget",
       "Where to base yourself and why",
@@ -34,9 +34,9 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       "Dining suggestions built around the schedule",
       "Play With A Pro available as an add-on at any stage"
     ],
-    "note": "Send your dates, group size, handicap range, and any courses already on your list. I will come back with the right next step and a quote.",
+    "note": "Send your dates, group size, handicap range, hotel area, and any courses already on your list. I will come back with the right next step and a quote.",
     "sendPrompt": "Best details to send: dates, group size, handicap range, hotel area, and any courses already on your shortlist.",
-    "cta": "Get in touch"
+    "cta": "Enquire about trip planning"
   },
   "addon": {
     "eyebrow": "Add-on available at any level",
