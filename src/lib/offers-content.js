@@ -11,7 +11,7 @@ const OFFER_CONTENT = {
   en: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Play With A Pro in Mallorca (Majorca): an 18-hole day with PGA Advanced Professional Andy Griffiths. Solo from ?695, groups from ?950 total, green fees additional.',
+      'Play With A Pro in Mallorca (Majorca): an 18-hole day with PGA Advanced Professional Andy Griffiths. Solo from €695, groups from €950 total, green fees additional.',
     playHeroBody:
       'Play With A Pro: on-course coaching, course strategy, and real game improvement on the right Mallorca course for you.',
     playMultiDayDetail: null,
@@ -114,7 +114,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Une journée de golf à Majorque aux côtés d\'Andy Griffiths. Solo à partir de €695. Groupes à partir de €950 au total. Green fees additionnels.',
     playHeroBody:
-      'Un parcours. Une journée complète aux côtés d\'un PGA Advanced Professional qui a tout organisé. En solo à partir de ?695. Groupes à partir de 950 EUR au total. Green fees additionnels, confirmés lors de notre conversation.',
+      'Un parcours. Une journée complète aux côtés d\'un PGA Advanced Professional qui a tout organisé. En solo à partir de €695. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.',
     playMultiDayDetail:
       'La Journée Andy Complète. Un jour, un parcours, tout est organisé. À partir de 3 000 EUR. Pas de logistique, pas de décisions, rien à organiser à votre arrivée. Selon ce que vous souhaitez de cette journée, cela peut inclure un caddie, un vidéographe, un déjeuner Michelin, des transferts privés, accès au spa, un équipement de location premium. Andy coordonne tout à l\'avance et confirme l\'itinéraire complet avec vous avant votre arrivée.',
     homeMultiDayBody:

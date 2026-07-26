@@ -34,13 +34,13 @@ export const HOME_CONTENT = {
       {
         "title": "Play With A Pro",
         "text": "An 18-hole day with Andy. Standalone, or the anchor for a wider Mallorca trip.",
-        "cta": "Explore the day",
+        "cta": "See Play With A Pro",
         "href": "/play-with-a-pro"
       },
       {
         "title": "Plan Your Trip",
         "text": "Courses, base, routing, tee times, buggies, rental clubs, and dining suggestions.",
-        "cta": "Build the route",
+        "cta": "Plan Your Trip",
         "href": "/plan-your-trip"
       }
     ],
@@ -70,8 +70,8 @@ export const HOME_CONTENT = {
     "items": [
       {
         "title": "Play With A Pro",
-        "text": "Book a day with Andy: one course, 18 holes, local course management, and coaching woven into the round. Solo or group.",
-        "cta": "Book Play With A Pro",
+        "text": "An 18-hole day with Andy: one course, on-course coaching, course management, and local knowledge woven into the round. Solo or group.",
+        "cta": "See Play With A Pro",
         "href": "/play-with-a-pro"
       },
       {

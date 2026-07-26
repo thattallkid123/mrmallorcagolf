@@ -32,7 +32,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       },
       {
         "label": "Pricing",
-        "text": "Solo from ?695. Group from ?950 total. Green fees stay separate and are confirmed before booking."
+        "text": "Solo from €695. Group from €950 total. Green fees stay separate and are confirmed before booking."
       },
       {
         "label": "Next step",
