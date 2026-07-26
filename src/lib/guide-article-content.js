@@ -890,19 +890,19 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'play-with-a-pro-explained': {
     metadata: {
-      title: 'What "Play with a Pro" Actually Looks Like',
+      title: 'What "Play With A Pro" Actually Looks Like',
       description:
         'A PGA pro joins your group for a full round: reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like.',
       canonical: 'https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained',
       image: 'https://www.mrmallorcagolf.com/images/pwap-hero-mandarin.jpg',
-      imageAlt: 'Andy Griffiths PGA pro with a client during a Play with a Pro day in Mallorca',
+      imageAlt: 'Andy Griffiths PGA pro with a client during a Play With A Pro day in Mallorca',
     },
     meta: {
       badge: 'The Experience',
       badgeGold: false,
       readTime: '5 min read',
       updated: 'June 2026',
-      title: 'What "Play with a Pro" Actually Looks Like',
+      title: 'What "Play With A Pro" Actually Looks Like',
       intro:
         'A full day on course with a PGA professional. What happens, what changes, and what people take home that they did not expect.',
       related: [
@@ -920,11 +920,11 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'image',
         src: '/images/client-alcanada.webp',
-        alt: 'Andy with a client at Alcanada during a Play with a Pro day',
+        alt: 'Andy with a client at Alcanada during a Play With A Pro day',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'A Play with a Pro day at Club de Golf Alcanada',
+        caption: 'A Play With A Pro day at Club de Golf Alcanada',
       },
-      { type: 'heading', text: 'Why Play with a Pro' },
+      { type: 'heading', text: 'Why Play With A Pro' },
       {
         type: 'paragraph',
         text: 'A lot of coaching is about swing positions and mechanics. This day is different. It is about the low-hanging fruit: what is the one thing in your shot selection or course management that, if it changes, makes the biggest difference. Practice types that actually work for how you learn. Questions about your own game that a practice range cannot answer. Not a full overhaul. Just the clarity to know what to work on and how.',
@@ -962,7 +962,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         src: '/images/client-group-alcanada.webp',
         alt: 'Group golf day with sea views at Alcanada',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'Group Play with a Pro days, 2 to 3 golfers',
+        caption: 'Group Play With A Pro days, 2 to 3 golfers',
       },
       { type: 'heading', text: 'After the Round' },
       {
@@ -987,7 +987,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'cta',
-        text: 'Ready to book a Play with a Pro day in Mallorca?',
+        text: 'Ready to book a Play With A Pro day in Mallorca?',
         linkLabel: 'See pricing and availability →',
         href: '/play-with-a-pro',
       },

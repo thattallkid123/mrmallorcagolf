@@ -59,6 +59,43 @@ export default function ContactForm({ locale = 'en' }) {
     <>
       <JsonLd data={buildContactPageSchema(locale, content)} />
       <JsonLd data={buildBreadcrumbSchema(locale, content)} />
+      <style>{`
+        @media (max-width: 768px) {
+          .contact-wrap {
+            display: flex;
+            flex-direction: column;
+            background: var(--deep);
+          }
+          .contact-left {
+            display: contents;
+          }
+          .contact-left > div:first-child {
+            order: 1;
+            padding: 50px 24px;
+            background-image:
+              linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.58) 60%, rgba(26,25,22,0.82) 100%),
+              url(/images/contact.webp);
+            background-position: center 30%;
+            background-size: cover;
+          }
+          .contact-right {
+            order: 2;
+          }
+          .contact-left .promise-block {
+            order: 3;
+            margin: 44px 24px 0;
+          }
+          .contact-left .contact-cards {
+            order: 4;
+            padding: 32px 24px 0;
+          }
+          .contact-left .contact-trust {
+            order: 5;
+            margin: 0;
+            padding: 36px 24px 52px;
+          }
+        }
+      `}</style>
       <div className="contact-wrap">
         <div className="contact-left">
           <div>

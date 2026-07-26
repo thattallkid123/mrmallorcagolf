@@ -17,7 +17,7 @@ function buildArticleSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'What "Play with a Pro" Actually Looks Like',
+    headline: 'What "Play With A Pro" Actually Looks Like',
     description: "What a full day on course actually looks like. How it changes what you see in your game. What people take home that they didn't expect.",
     author: {
       '@type': 'Person',
@@ -31,7 +31,7 @@ function buildArticleSchema() {
     mainEntityOfPage: `${SITE_ORIGIN}/guides/play-with-a-pro-explained`,
     image: DEFAULT_SOCIAL_IMAGE.url,
     about: [
-      { '@type': 'Thing', name: 'Play with a Pro golf day Mallorca' },
+      { '@type': 'Thing', name: 'Play With A Pro golf day Mallorca' },
       { '@type': 'Thing', name: 'Private golf coaching Mallorca' },
     ],
   }
@@ -57,7 +57,7 @@ function buildBreadcrumbSchema() {
       {
         '@type': 'ListItem',
         position: 3,
-        name: 'Play With a Pro Explained',
+        name: 'Play With A Pro Explained',
         item: `${SITE_ORIGIN}/guides/play-with-a-pro-explained`,
       },
     ],
@@ -135,7 +135,7 @@ export default function PlayWithAProExplainedPage() {
         <div className="hero__content">
           <p className="hero__eyebrow">A Full Day on Course · Mallorca</p>
           <h1 className="serif-display hero__title a-day-hero__title">
-            What &ldquo;Play with a Pro&rdquo;
+            What &ldquo;Play With A Pro&rdquo;
             <br />
             <em>actually looks like.</em>
           </h1>

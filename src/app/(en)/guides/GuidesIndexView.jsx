@@ -184,10 +184,18 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
           <p>{content.finalCta.body}</p>
         </div>
         <div className="cta-final__right">
-          <Link href={`${prefix}/play-with-a-pro`} className="btn btn--gold cta-final__primary">
+          <Link
+            href={locale === 'en' ? '/plan-your-trip' : `${prefix}/play-with-a-pro`}
+            className="btn btn--gold cta-final__primary"
+          >
             {content.finalCta.primaryCta}
           </Link>
-          <Link href={`${prefix}/contact`} className="btn btn--outline-white">{content.finalCta.secondaryCta}</Link>
+          <Link
+            href={locale === 'en' ? '/play-with-a-pro' : `${prefix}/contact`}
+            className="btn btn--outline-white"
+          >
+            {content.finalCta.secondaryCta}
+          </Link>
         </div>
       </section>
     </PageLayout>

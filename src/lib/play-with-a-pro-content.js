@@ -9,7 +9,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
   "hero": {
     "homeHref": "/",
     "breadcrumbHome": "Home",
-    "breadcrumbCurrent": "Play with a Pro",
+    "breadcrumbCurrent": "Play With A Pro",
     "eyebrow": "Play With A Pro | Mallorca | PGA Professional",
     "title": "An 18-hole day with Andy.",
     "body": "Play With A Pro: on-course coaching, course strategy, and real game improvement on the right Mallorca course for you.",

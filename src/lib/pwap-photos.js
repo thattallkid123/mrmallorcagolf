@@ -10,6 +10,6 @@ export const PWAP_PHOTOS = [
   { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
   { src: '/images/son-antem-west-review-blog/son-antem-west-4.webp', alt: 'Andy with two guests on a play-with-a-pro day at Son Antem West', position: 'center 42%' },
   { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
-  { src: '/images/client-santa-ponsa.jpg', alt: 'Andy with a client at Santa Ponsa during a Play with a Pro day', position: 'center 40%' },
-  { src: '/images/client-santa-ponsa-mark.jpg', alt: 'Andy with Mark at Santa Ponsa during a Play with a Pro day', position: 'center 40%' },
+  { src: '/images/client-santa-ponsa.jpg', alt: 'Andy with a client at Santa Ponsa during a Play With A Pro day', position: 'center 40%' },
+  { src: '/images/client-santa-ponsa-mark.jpg', alt: 'Andy with Mark at Santa Ponsa during a Play With A Pro day', position: 'center 40%' },
 ]

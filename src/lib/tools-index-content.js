@@ -17,6 +17,10 @@ export const TOOLS_INDEX_CONTENT = {
     trust: {
       label: 'Andy Griffiths · UK PGA Advanced Professional',
       text: "These tools give you a starting point: a shortlist, an estimate, a plan. When you're ready to make it real, I confirm tee times, arrange access at members-only courses, and build the trip around your golf. Nothing to pay until you decide to book.",
+      primaryCta: 'Plan Your Trip',
+      primaryHref: '/plan-your-trip',
+      secondaryCta: 'Play With A Pro',
+      secondaryHref: '/play-with-a-pro',
     },
     tools: [
       {

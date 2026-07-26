@@ -73,24 +73,6 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         <p>{content.form.intro}</p>
       </div>
 
-      {content.form.experienceHelp ? (
-        <div style={{ background: 'rgba(255,255,255,0.76)', border: '1px solid rgba(184,151,90,0.18)', borderLeft: '3px solid var(--gold)', padding: '16px 18px', marginBottom: '1.35rem' }}>
-          <p style={{ margin: 0, fontSize: '0.88rem', lineHeight: 1.75, color: 'var(--charcoal)' }}>
-            <strong style={{ display: 'block', marginBottom: '0.35rem', color: 'var(--deep)' }}>{content.form.experienceHelpTitle}</strong>
-            {content.form.experienceHelp}
-          </p>
-        </div>
-      ) : null}
-
-      {content.form.sendPrompt ? (
-        <div style={{ background: 'rgba(255,255,255,0.72)', border: '1px solid rgba(184,151,90,0.14)', padding: '14px 16px', marginBottom: '1.35rem' }}>
-          <p style={{ margin: 0, fontSize: '0.86rem', lineHeight: 1.7, color: 'var(--charcoal)' }}>
-            <strong style={{ display: 'block', marginBottom: '0.35rem', color: 'var(--deep)' }}>{content.form.sendPromptLabel || 'What to send'}</strong>
-            {content.form.sendPrompt}
-          </p>
-        </div>
-      ) : null}
-
       <form onSubmit={handleSubmit} aria-busy={submitting}>
         <input
           type="text"
@@ -101,6 +83,68 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           value={form.website}
           onChange={handleChange}
         />
+        <div className="form-group">
+          <label>{content.form.labels.serviceType || 'What would you like help with?'}</label>
+          <div className="radio-group">
+            {serviceTypes.map(([val, label]) => (
+              <label
+                key={val}
+                className={`radio-option${form.serviceType === val ? ' radio-option--selected' : ''}`}
+              >
+                <input
+                  type="radio"
+                  name="serviceType"
+                  value={val}
+                  checked={form.serviceType === val}
+                  onChange={(event) => {
+                    handleChange(event)
+                    setForm((current) => ({
+                      ...current,
+                      serviceType: val,
+                      experience: val,
+                      pwapFormat: val === 'pwap' || val === 'both' ? current.pwapFormat : '',
+                    }))
+                  }}
+                  required
+                />
+                <span className={`radio-option-label${form.serviceType === val ? ' radio-option-label--selected' : ''}`}>
+                  {label}
+                </span>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {showPwapFormats ? (
+          <div className="form-group">
+            <label>{content.form.labels.pwapFormat || 'If Play With A Pro is part of it, which format sounds closest?'}</label>
+            <div className="radio-group">
+              {pwapFormats.map(([val, label, price]) => (
+                <label
+                  key={val}
+                  className={`radio-option${form.pwapFormat === val ? ' radio-option--selected' : ''}`}
+                >
+                  <input
+                    type="radio"
+                    name="pwapFormat"
+                    value={val}
+                    checked={form.pwapFormat === val}
+                    onChange={(event) => {
+                      handleChange(event)
+                      setForm((current) => ({ ...current, pwapFormat: val, experience: val }))
+                    }}
+                    required
+                  />
+                  <span className={`radio-option-label${form.pwapFormat === val ? ' radio-option-label--selected' : ''}`}>
+                    {label}
+                  </span>
+                  {price && <span className="radio-option-price">{price}</span>}
+                </label>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="fname">{content.form.labels.fname}</label>
@@ -123,7 +167,6 @@ export default function ContactFormPanel({ locale = 'en', content }) {
               name="lname"
               className="form-control"
               placeholder={content.form.placeholders.lname}
-              required
               value={form.lname}
               onChange={handleChange}
             />
@@ -183,48 +226,6 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
 
         <div className="form-group">
-          <label>{content.form.labels.serviceType || 'What would you like help with?'}</label>
-          <div className="radio-group">
-            {serviceTypes.map(([val, label]) => (
-              <div
-                key={val}
-                onClick={() => setForm((f) => ({
-                  ...f,
-                  serviceType: val,
-                  experience: val,
-                  pwapFormat: val === 'pwap' || val === 'both' ? f.pwapFormat : '',
-                }))}
-                className={`radio-option${form.serviceType === val ? ' radio-option--selected' : ''}`}
-              >
-                <span className={`radio-option-label${form.serviceType === val ? ' radio-option-label--selected' : ''}`}>
-                  {label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {showPwapFormats ? (
-          <div className="form-group">
-            <label>{content.form.labels.pwapFormat || 'If Play With A Pro is part of it, which format sounds closest?'}</label>
-            <div className="radio-group">
-              {pwapFormats.map(([val, label, price]) => (
-                <div
-                  key={val}
-                  onClick={() => setForm((f) => ({ ...f, pwapFormat: val, experience: val }))}
-                  className={`radio-option${form.pwapFormat === val ? ' radio-option--selected' : ''}`}
-                >
-                  <span className={`radio-option-label${form.pwapFormat === val ? ' radio-option-label--selected' : ''}`}>
-                    {label}
-                  </span>
-                  {price && <span className="radio-option-price">{price}</span>}
-                </div>
-              ))}
-            </div>
-          </div>
-        ) : null}
-
-        <div className="form-group">
           <label htmlFor="message">{content.form.labels.message}</label>
           <textarea
             id="message"
@@ -236,10 +237,19 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           />
         </div>
 
-        <div style={{ ...formNoteStyle, marginBottom: '1.5rem' }}>
-          <h3 style={formNoteHeadingStyle}>{content.gift.heading}</h3>
-          <p style={formNoteBodyStyle}>{content.gift.body}</p>
-        </div>
+        {showPwapFormats ? (
+          <div style={{ ...formNoteStyle, marginBottom: '1.5rem' }}>
+            <h3 style={formNoteHeadingStyle}>{content.gift.heading}</h3>
+            <p style={formNoteBodyStyle}>{content.gift.body}</p>
+          </div>
+        ) : null}
+
+        {content.form.sendPrompt ? (
+          <div style={{ ...formNoteStyle, marginBottom: '1.5rem' }}>
+            <h3 style={formNoteHeadingStyle}>{content.form.sendPromptLabel || 'What to send'}</h3>
+            <p style={formNoteBodyStyle}>{content.form.sendPrompt}</p>
+          </div>
+        ) : null}
 
         <div className="form-submit">
           <button type="submit" className="btn-submit" disabled={submitting}>

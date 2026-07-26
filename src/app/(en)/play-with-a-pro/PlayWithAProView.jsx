@@ -152,8 +152,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             'Andy and client at Son Gual',
             'Andy with two guests on a play-with-a-pro day at Son Antem West',
             'Group day with water views',
-            'Andy with a client at Santa Ponsa during a Play with a Pro day',
-            'Andy with Mark at Santa Ponsa during a Play with a Pro day',
+            'Andy with a client at Santa Ponsa during a Play With A Pro day',
+            'Andy with Mark at Santa Ponsa during a Play With A Pro day',
           ],
         }
   const reviewLinks = {

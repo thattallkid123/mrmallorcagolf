@@ -123,6 +123,16 @@ export default function ToolsIndexView({ locale = 'en', heroImage = null }) {
           <div className="tools-trust__badge">
             <ReviewBadge variant="text" theme="light" />
           </div>
+          {content.trust.primaryCta ? (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '24px' }}>
+              <Link href={content.trust.primaryHref} className="btn btn--gold">
+                {content.trust.primaryCta}
+              </Link>
+              <Link href={content.trust.secondaryHref} className="btn btn--pine">
+                {content.trust.secondaryCta}
+              </Link>
+            </div>
+          ) : null}
         </div>
       </section>
     </PageLayout>

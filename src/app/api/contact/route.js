@@ -71,9 +71,9 @@ export async function POST(request) {
     const message = sanitizeMultilineText(payload?.message, 4000)
     const lang = sanitizeText(payload?.lang, 12).toUpperCase() || 'EN'
 
-    if (!fname || !lname || !isValidEmail(email)) {
+    if (!fname || !isValidEmail(email)) {
       return Response.json(
-        { ok: false, error: 'Please provide your first name, last name, and a valid email address.' },
+        { ok: false, error: 'Please provide your first name and a valid email address.' },
         { status: 400 },
       )
     }

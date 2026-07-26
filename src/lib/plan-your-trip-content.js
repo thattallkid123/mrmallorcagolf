@@ -23,7 +23,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   },
   "professional": {
     "eyebrow": "Personal",
-    "title": "Let me plan and book the golf side properly",
+    "title": "Let me plan and book the golf side of your trip",
     "body": "Send me your dates, group size, and what you want from the trip. I will recommend the right courses for your group, work out the routing and number of rounds, book and confirm the tee times, arrange buggies and club rentals, and shape the golf days so the trip runs cleanly from start to finish.",
     "includes": [
       "Course recommendations matched to your game, group, and budget",
@@ -34,7 +34,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       "Dining suggestions built around the schedule",
       "Play With A Pro available as an add-on at any stage"
     ],
-    "note": "Send your dates, group size, handicap range, hotel area, and any courses already on your list. I will come back with the right next step and a quote.",
+    "note": "No commitment at enquiry stage. I reply personally within 24 hours with the recommended next step and a clear quote before anything is booked.",
     "sendPrompt": "Best details to send: dates, group size, handicap range, hotel area, and any courses already on your shortlist.",
     "cta": "Enquire about trip planning"
   },

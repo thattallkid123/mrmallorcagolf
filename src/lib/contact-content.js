@@ -27,13 +27,13 @@ export const CONTACT_CONTENT = {
     form: {
       eyebrow: 'Enquiry form',
       title: 'Start the conversation.',
-      intro: 'The more detail you give me, the faster I can point you to the right service, courses, and next step.',
+      intro: 'Choose what you need help with, then send whatever details you already know.',
       experienceHelpTitle: 'How this works',
       experienceHelp: 'Start with the main thing you want help with. If Play With A Pro is part of it, I will ask which format sounds closest so I can reply with the right next step.',
-      sendPrompt: 'Best details to send: dates, group size, hotel area, handicap range, and any courses already on your shortlist. If you are still deciding, just say what you are comparing and I will narrow it down for you.',
+      sendPrompt: 'Dates, group size, hotel area, handicap range, and any courses already on your shortlist are useful. If you are still deciding, send what you know and I will narrow it down with you.',
       labels: {
         fname: 'First name',
-        lname: 'Last name',
+        lname: 'Last name (optional)',
         email: 'Email address',
         dates: 'Preferred trip dates',
         handicap: 'Your handicap',
@@ -49,7 +49,7 @@ export const CONTACT_CONTENT = {
         email: 'andy@example.com',
         dates: 'e.g. 15-22 October 2026',
         handicap: "e.g. 14, or 'beginner'",
-        message: "Dates, hotel area, courses you've heard of, budget, group mix, whether you want me on the course - anything helps me build the right plan.",
+        message: "Hotel area, courses you've heard of, budget, group mix, or anything else that will help me understand the trip.",
       },
       groupsizeOptions: [
         { value: '', label: 'Select group size' },
@@ -77,7 +77,7 @@ export const CONTACT_CONTENT = {
         ['pwap-not-sure', 'Not sure yet', ''],
       ],
       submit: 'Send enquiry →',
-      note: 'I respond personally to every enquiry within 24 hours. Your details are used only to arrange your day.',
+      note: 'I respond personally to every enquiry within 24 hours. Your details are used only to reply and arrange the service you choose.',
     },
     gift: {
       heading: 'Buying this as a gift?',
@@ -90,7 +90,7 @@ export const CONTACT_CONTENT = {
     },
     whatNext: {
       heading: 'What happens next',
-      body: 'I read every enquiry myself. I will come back within 24 hours with the clearest next step: book Play With A Pro, plan the golf side of the trip, or narrow down the right courses first.',
+      body: 'I read every enquiry myself. Within 24 hours, I will reply with the clearest next step and any questions needed before I recommend or book anything.',
     },
     stayInTouch: {
       heading: 'Stay in touch',

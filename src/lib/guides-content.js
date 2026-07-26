@@ -108,10 +108,10 @@ export const GUIDES_CONTENT = {
       "badge": "The Experience",
       "img": "/images/pwap-hero-mandarin.jpg",
       "imgPosition": "center 40%",
-      "title": "What \"Play with a Pro\" Actually Looks Like",
+      "title": "What \"Play With A Pro\" Actually Looks Like",
       "intro": "A full day on course with a PGA professional. What happens, what changes, and what people take home that they did not expect.",
       "readTime": "5 min read",
-      "keywords": "Play with a Pro · Full day · On-course coaching"
+      "keywords": "Play With A Pro · Full day · On-course coaching"
     },
     {
       "slug": "on-course-coaching-mallorca",
@@ -190,11 +190,11 @@ export const GUIDES_CONTENT = {
   "reviewsHeading": "Course Reviews",
   "articlesHeading": "Guides & Articles",
   "finalCta": {
-    "eyebrow": "Ready to play?",
-    "title": "A round on one of these courses, with a PGA Professional alongside you.",
-    "body": "Tell me your dates and what you're looking for. I'll come back personally within 24 hours.",
-    "primaryCta": "See the Experiences →",
-    "secondaryCta": "Get in Touch"
+    "eyebrow": "Ready to make it real?",
+    "title": "The right courses, booked in the right order.",
+    "body": "Tell me your dates, group size, and what you want from the trip. I will reply personally within 24 hours with the clearest next step.",
+    "primaryCta": "Plan Your Trip",
+    "secondaryCta": "Play With A Pro"
   }
 }
 }
