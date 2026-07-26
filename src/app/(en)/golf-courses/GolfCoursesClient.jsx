@@ -712,8 +712,8 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   const [sortDirections, setSortDirections] = useState(DEFAULT_SORT_DIRECTIONS)
   const [userLocation, setUserLocation] = useState(null)
   const [isLocating, setIsLocating] = useState(false)
-  const contactHref = buildLocalePath('/contact', lang)
-  const experiencesHref = buildLocalePath('/play-with-a-pro', lang)
+  const planHref = buildLocalePath('/plan-your-trip', lang)
+  const playHref = buildLocalePath('/play-with-a-pro', lang)
 
   useEffect(() => {
     const scrollToHash = () => {
@@ -925,8 +925,8 @@ export default function GolfCoursesClient({ lang = 'en' }) {
           <p>{t.ctaP}</p>
         </div>
         <div className="guide-cta__actions">
-          <Link href={experiencesHref} className="btn btn--gold guide-cta__primary">{t.seeExperiences}</Link>
-          <Link href={contactHref} className="btn btn--outline-white">{t.getInTouch}</Link>
+          <Link href={planHref} className="btn btn--gold guide-cta__primary">{t.seeExperiences}</Link>
+          <Link href={playHref} className="btn btn--outline-white">{t.getInTouch}</Link>
         </div>
       </section>
     </>
