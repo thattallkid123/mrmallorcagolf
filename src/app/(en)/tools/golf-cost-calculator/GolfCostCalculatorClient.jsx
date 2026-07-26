@@ -8,7 +8,7 @@ import { getGolfCostCalculatorT } from '../../../../lib/golf-cost-calculator-tra
 const WA_MESSAGE = 'Hi Andy, I used the trip cost calculator on your site and I’d like a real quote for my Mallorca golf trip.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
 
-function WhatsAppQuoteLink() {
+function WhatsAppQuoteLink({ t = getGolfCostCalculatorT(lang) }) {
   function handleClick() {
     trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'golf-cost-calculator' })
     trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'golf-cost-calculator' })
@@ -25,7 +25,7 @@ function WhatsAppQuoteLink() {
       <svg viewBox="0 0 24 24" fill="#25D366" style={{ width: 18, height: 18, flexShrink: 0 }} aria-hidden="true">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
       </svg>
-      Prefer to message? WhatsApp Andy
+      {t.quote.prefMessage}
     </a>
   )
 }
@@ -422,8 +422,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
 
       {/* HERO */}
       <section className="gcc-hero">
-        <h1 className="gcc-h1">Mallorca golf trip cost calculator</h1>
-        <p className="gcc-sub">Three steps. A cost estimate for your trip with a suggested course mix.</p>
+        <h1 className="gcc-h1">{t.hero.title}</h1>
+        <p className="gcc-sub">{t.hero.sub}</p>
       </section>
 
       <ToolTrustLine />
@@ -439,14 +439,14 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         {/* STEP 1: TRIP BASICS */}
         {step === 1 && (
           <div className="gcc-card">
-            <div className="gcc-step-label">Step 1 of 4</div>
-            <h2>Your trip basics</h2>
-            <p className="sub">Tell us about the group and how much golf you want.</p>
-            <Stepper label="Trip length (days)" stateKey="days" min={1} max={7} unit="days" />
-            <Stepper label="Number of golfers" stateKey="golfers" min={1} max={8} unit="golfers" />
-            <Stepper label="Rounds of golf" stateKey="rounds" min={1} max={6} unit="rounds" />
+            <div className="gcc-step-label">{t.step1.label}</div>
+            <h2>{t.step1.heading}</h2>
+            <p className="sub">{t.step1.sub}</p>
+            <Stepper label={t.step1Fields.days} stateKey="days" min={1} max={7} unit="days" />
+            <Stepper label={t.step1Fields.golfers} stateKey="golfers" min={1} max={8} unit="golfers" />
+            <Stepper label={t.step1Fields.rounds} stateKey="rounds" min={1} max={6} unit="rounds" />
             <div className="gcc-nav">
-              <button className="gcc-btn primary" onClick={() => goTo(2)}>Continue</button>
+              <button className="gcc-btn primary" onClick={() => goTo(2)}>{t.buttons.continue}</button>
             </div>
           </div>
         )}
@@ -454,48 +454,29 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         {/* STEP 2: GOLF STYLE */}
         {step === 2 && (
           <div className="gcc-card">
-            <div className="gcc-step-label">Step 2 of 4</div>
-            <h2>Your golf style</h2>
-            <p className="sub">This shapes the course mix we suggest.</p>
+            <div className="gcc-step-label">{t.step2.label}</div>
+            <h2>{t.step2.heading}</h2>
+            <p className="sub">{t.step2.sub}</p>
             <OptGroup
-              label="Budget style"
+              label={t.step2Fields.budget}
               stateKey="budget"
-              opts={[
-                {val:'value',    label:'Value',   small:'Smart spending'},
-                {val:'balanced', label:'Balanced', small:'Quality & value'},
-                {val:'premium',  label:'Premium',  small:'Top-tier courses'},
-                {val:'luxury',   label:'Luxury',   small:'Bucket-list trip'},
-              ]}
+              opts={t.step2Fields.budgetOpts}
             />
             <OptGroup
-              label="Course preference"
+              label={t.step2Fields.preference}
               stateKey="preference"
               cols={3}
-              opts={[
-                {val:'scenic',      label:'Scenic'},
-                {val:'famous',      label:'Famous'},
-                {val:'challenging', label:'Challenging'},
-                {val:'relaxed',     label:'Relaxed'},
-                {val:'near',        label:'Near hotel'},
-                {val:'none',        label:'No preference'},
-              ]}
+              opts={t.step2Fields.prefOpts}
             />
             <OptGroup
-              label="Which area of Mallorca?"
+              label={t.step2Fields.area}
               stateKey="area"
               cols={3}
-              opts={[
-                {val:'southwest', label:'Southwest'},
-                {val:'palma',     label:'Palma'},
-                {val:'north',     label:'North'},
-                {val:'east',      label:'East'},
-                {val:'south',     label:'South'},
-                {val:'flexible',  label:'Flexible'},
-              ]}
+              opts={t.step2Fields.areaOpts}
             />
             <div className="gcc-nav">
-              <button className="gcc-btn ghost" onClick={() => goTo(1)}>Back</button>
-              <button className="gcc-btn primary" onClick={() => goTo(3)}>Continue</button>
+              <button className="gcc-btn ghost" onClick={() => goTo(1)}>{t.buttons.back}</button>
+              <button className="gcc-btn primary" onClick={() => goTo(3)}>{t.buttons.continue}</button>
             </div>
           </div>
         )}
@@ -503,57 +484,37 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         {/* STEP 3: EXTRAS */}
         {step === 3 && (
           <div className="gcc-card">
-            <div className="gcc-step-label">Step 3 of 4</div>
-            <h2>Extras &amp; off-course</h2>
-            <p className="sub">Buggies, clubs, transport, where you stay and eat.</p>
+            <div className="gcc-step-label">{t.step3.label}</div>
+            <h2>{t.step3.heading}</h2>
+            <p className="sub">{t.step3.sub}</p>
             <OptGroup
-              label="Buggy?"
+              label={t.step3Fields.buggy}
               stateKey="buggy"
-              opts={[
-                {val:'yes',  label:'Yes'},
-                {val:'some', label:'Some rounds'},
-                {val:'no',   label:'No'},
-              ]}
+              opts={t.step3Fields.buggyOpts}
             />
             <OptGroup
-              label="Club hire?"
+              label={t.step3Fields.clubs}
               stateKey="clubs"
-              opts={[
-                {val:'yes', label:'Yes'},
-                {val:'no',  label:'No, bringing our own'},
-              ]}
+              opts={t.step3Fields.clubsOpts}
             />
             <OptGroup
-              label="Transport help (transfers / driver)?"
+              label={t.step3Fields.transport}
               stateKey="transport"
-              opts={[
-                {val:'yes', label:'Yes'},
-                {val:'no',  label:'No, we\'ll self-drive'},
-              ]}
+              opts={t.step3Fields.transportOpts}
             />
             <OptGroup
-              label="Accommodation style"
+              label={t.step3Fields.accommodation}
               stateKey="accommodation"
-              opts={[
-                {val:'self',   label:'Self-arranged'},
-                {val:'3star',  label:'3-star'},
-                {val:'4star',  label:'4-star'},
-                {val:'5star',  label:'5-star'},
-                {val:'villa',  label:'Luxury villa'},
-              ]}
+              opts={t.step3Fields.accomOpts}
             />
             <OptGroup
-              label="Restaurant level"
+              label={t.step3Fields.dining}
               stateKey="dining"
-              opts={[
-                {val:'casual',  label:'Casual'},
-                {val:'local',   label:'Good local'},
-                {val:'premium', label:'Premium'},
-              ]}
+              opts={t.step3Fields.diningOpts}
             />
             <div className="gcc-nav">
-              <button className="gcc-btn ghost" onClick={() => goTo(2)}>Back</button>
-              <button className="gcc-btn gold" onClick={() => goTo(4)}>See my estimate</button>
+              <button className="gcc-btn ghost" onClick={() => goTo(2)}>{t.buttons.back}</button>
+              <button className="gcc-btn gold" onClick={() => goTo(4)}>{t.buttons.seeEstimate}</button>
             </div>
           </div>
         )}
@@ -562,14 +523,14 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         {step === 4 && r && (() => {
           const s = state
           const courses = COURSE_MIX[s.budget].slice(0, Math.min(s.rounds, COURSE_MIX[s.budget].length))
-          let note = PREF_NOTES[s.preference] || ''
+          let note = t.prefNotes[s.preference] || ''
           if (s.area !== 'flexible') {
-            const areaName = AREA_NAMES[s.area] || 'your chosen area'
+            const areaName = t.areaNames[s.area] || 'your chosen area'
             note += ` Since you're based around ${areaName}, Andy will adjust for drive times.`
           }
 
           const parts = [
-            ['Green fees', r.greenFees],
+            [t.resultCards.budget.split(' ').pop() === 'going' ? 'Green fees' : 'Green fees', r.greenFees],
             ['Accommodation', r.accom],
             ['Restaurants', r.dining],
             ['Buggies', r.buggy],
@@ -595,24 +556,24 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
 
           return (
             <div>
-              <div className="gcc-step-label">Step 4 of 4: Your planning estimate</div>
+              <div className="gcc-step-label">{t.results.label}</div>
 
               <div className="gcc-hero-est">
-                <div className="lab">Estimated total trip cost</div>
+                <div className="lab">{t.results.total}</div>
                 <div className="big">{fmtR(r.total)}</div>
                 <div className="per">{s.golfers} golfer{s.golfers > 1 ? 's' : ''} · {s.days} day{s.days > 1 ? 's' : ''} · {s.rounds} round{s.rounds > 1 ? 's' : ''} · {s.budget} style</div>
-                <div className="gcc-approx">Approximate planning estimate, not a quote.</div>
+                <div className="gcc-approx">{t.results.approx}</div>
               </div>
 
               <div className="gcc-grid2">
-                <div className="gcc-mini"><div className="lab">Per golfer</div><div className="num">{fmtR(r.perGolfer)}</div></div>
-                <div className="gcc-mini"><div className="lab">Golf only</div><div className="num">{fmtR(r.golfOnly)}</div></div>
-                <div className="gcc-mini"><div className="lab">Full trip</div><div className="num">{fmtR(r.total)}</div></div>
-                <div className="gcc-mini"><div className="lab">Golf cost / round / golfer</div><div className="num">{fmtR(r.perRound)}</div></div>
+                <div className="gcc-mini"><div className="lab">{t.results.perGolfer}</div><div className="num">{fmtR(r.perGolfer)}</div></div>
+                <div className="gcc-mini"><div className="lab">{t.results.golfOnly}</div><div className="num">{fmtR(r.golfOnly)}</div></div>
+                <div className="gcc-mini"><div className="lab">{t.results.fullTrip}</div><div className="num">{fmtR(r.total)}</div></div>
+                <div className="gcc-mini"><div className="lab">{t.results.perRound}</div><div className="num">{fmtR(r.perRound)}</div></div>
               </div>
 
               <div className="gcc-rcard">
-                <h3><span className="dot"></span>Suggested course mix</h3>
+                <h3><span className="dot"></span>{t.resultCards.courseMix}</h3>
                 <p style={{ marginBottom:'10px' }}>{note}</p>
                 <div>
                   {courses.map(c => <span key={c} className="gcc-tag">{c}</span>)}
@@ -621,7 +582,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
               </div>
 
               <div className="gcc-rcard">
-                <h3><span className="dot"></span>Where your budget is going</h3>
+                <h3><span className="dot"></span>{t.resultCards.budget}</h3>
                 {parts.map(([name, rng]) => {
                   const pct = Math.round(mid(rng) / totalMid * 100)
                   return (
@@ -634,27 +595,27 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
               </div>
 
               <div className="gcc-rcard">
-                <h3><span className="dot"></span>Ways to reduce cost</h3>
-                <ul>{save.slice(0, 5).map((t, i) => <li key={i}>{t}</li>)}</ul>
+                <h3><span className="dot"></span>{t.resultCards.saveMoney}</h3>
+                <ul>{save.slice(0, 5).map((item, i) => <li key={i}>{item}</li>)}</ul>
               </div>
 
               <div className="gcc-rcard">
-                <h3><span className="dot"></span>When it's worth upgrading</h3>
-                <ul>{up.slice(0, 4).map((t, i) => <li key={i}>{t}</li>)}</ul>
+                <h3><span className="dot"></span>{t.resultCards.upgrade}</h3>
+                <ul>{up.slice(0, 4).map((item, i) => <li key={i}>{item}</li>)}</ul>
               </div>
 
               <div className="gcc-rcard" style={{ borderColor:'#B8973C' }}>
-                <h3><span className="dot"></span>Recommended Andy package</h3>
-                <p dangerouslySetInnerHTML={{ __html: PACKAGES[s.budget] }} />
-                <p style={{ marginTop:'8px' }}>Play With A Pro is €695 solo or €950 total for 2–3 golfers. Trip planning is quoted separately once Andy sees your dates, group, and routing needs.</p>
+                <h3><span className="dot"></span>{t.resultCards.package}</h3>
+                <p dangerouslySetInnerHTML={{ __html: t.packages[s.budget] }} />
+                <p style={{ marginTop:'8px' }}>{t.resultCards.packageNote}</p>
               </div>
 
               {/* QUOTE BUILDER CTA */}
               <div className="gcc-quote-cta">
                 <div className="gcc-quote-cta__inner">
-                  <div className="gcc-quote-cta__eyebrow">Trip Quote Builder</div>
-                  <h3 className="gcc-quote-cta__title">Get a real quote from Andy</h3>
-                  <p className="gcc-quote-cta__body">Your answers are already filled in. Add your email and dates, and Andy will turn this estimate into a real, bookable trip quote.</p>
+                  <div className="gcc-quote-cta__eyebrow">{t.quote.cta}</div>
+                  <h3 className="gcc-quote-cta__title">{t.quote.title}</h3>
+                  <p className="gcc-quote-cta__body">{t.quote.body}</p>
                   <button
                     className="gcc-btn gold"
                     style={{ width:'100%', maxWidth:340, marginBottom:10 }}
@@ -666,23 +627,23 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       setQuoteError(false)
                       setQuoteBuilderOpen(true)
                     }}
-                  >Get my personal quote</button>
+                  >{t.quote.button}</button>
                   <div style={{ marginTop:6, marginBottom:2 }}><WhatsAppQuoteLink /></div>
-                  <div className="gcc-quote-cta__note">No obligation. One email, from Andy himself.</div>
+                  <div className="gcc-quote-cta__note">{t.quote.note}</div>
                 </div>
               </div>
 
               <div className="gcc-cta-box">
-                <h3>Email yourself this breakdown</h3>
-                <p>We'll send the full cost breakdown and suggested course mix. Handy for sharing with the group or setting a budget before you book. Then Andy can refine the real numbers around your dates.</p>
+                <h3>{t.email.title}</h3>
+                <p>{t.email.sub}</p>
 
                 {emailSent ? (
                   <div style={{ marginBottom:'14px' }}>
-                    <p style={{ fontSize:'13px', color:'#D4B068', marginBottom:'14px' }}>&#10003; Done. Your estimate is on its way.</p>
+                    <p style={{ fontSize:'13px', color:'#D4B068', marginBottom:'14px' }}>&#10003; {t.email.sent}</p>
                     {!pdfSent ? (
                       <div style={{ background:'rgba(247,244,239,0.08)', border:'1px solid rgba(184,151,60,0.3)', borderRadius:'10px', padding:'14px 16px', marginBottom:'10px' }}>
-                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:'var(--font-sans)' }}>Also free</p>
-                        <p style={{ fontSize:'13px', color:'rgba(247,244,239,0.78)', marginBottom:'10px', lineHeight:'1.5' }}>The full Mallorca Golf Cost Breakdown PDF. Every green fee, buggy hire and hidden cost, course by course.</p>
+                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:'var(--font-sans)' }}>{t.email.freePdf}</p>
+                        <p style={{ fontSize:'13px', color:'rgba(247,244,239,0.78)', marginBottom:'10px', lineHeight:'1.5' }}>{t.email.pdfDesc}</p>
                         <a
                           href={COST_GUIDE_PDF_URL}
                           target="_blank"
@@ -690,10 +651,10 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                           className="gcc-btn gold"
                           style={{ fontSize:'13px', display:'inline-block', padding:'10px 20px' }}
                           onClick={requestCostPdf}
-                        >Download free PDF</a>
+                        >{t.email.pdfButton}</a>
                       </div>
                     ) : (
-                      <p style={{ fontSize:'12px', color:'#D4B068' }}>PDF on its way too.</p>
+                      <p style={{ fontSize:'12px', color:'#D4B068' }}>{t.email.pdfSending}</p>
                     )}
                   </div>
                 ) : (
@@ -701,7 +662,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                     <div className="gcc-email-capture">
                       <input
                         type="email"
-                        placeholder="you@email.com"
+                        placeholder={t.email.placeholder}
                         aria-label="Email address"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
@@ -712,7 +673,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                         onClick={emailEstimate}
                         disabled={emailSending}
                       >
-                        {emailSending ? 'Sending…' : 'Email me the breakdown'}
+                        {emailSending ? t.email.sending : t.email.button}
                       </button>
                     </div>
                     <label style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'8px', color:'rgba(247,244,239,0.62)', fontSize:'12px', margin:'10px 0 12px', cursor:'pointer', fontFamily:'var(--font-sans)' }}>
@@ -722,50 +683,50 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                         onChange={e => setSubscribeNewsletter(e.target.checked)}
                         style={{ accentColor:'#D4B068' }}
                       />
-                      Also send me Andy's occasional Mallorca golf planning notes
+                      {t.email.newsletter}
                     </label>
-                    {emailError && <p style={{ fontSize:'13px', color:'#e8b4a8', marginBottom:'10px' }}>That didn't go through. Check the address and try again.</p>}
+                    {emailError && <p style={{ fontSize:'13px', color:'#e8b4a8', marginBottom:'10px' }}>{t.email.error}</p>}
                   </>
                 )}
 
-                <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.45)', marginBottom:'12px' }}>No spam. Andy replies to every enquiry personally, usually within a day.</p>
+                <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.45)', marginBottom:'12px' }}>{t.email.disclaimer}</p>
                 <a
                   className="gcc-btn primary"
                   style={{ background:'#3D6455' }}
                   href="https://www.mrmallorcagolf.com/contact"
                   target="_blank"
                   rel="noopener"
-                >Ask Andy to refine this trip</a>
+                >{t.email.refine}</a>
                 <a
                   className="gcc-btn primary"
                   style={{ background:'#3D6455' }}
                   href="https://www.mrmallorcagolf.com/play-with-a-pro"
                   target="_blank"
                   rel="noopener"
-                >Explore a golf day with Andy</a>
+                >{t.email.golfDay}</a>
                 <a
                   href="https://www.mrmallorcagolf.com/guides"
                   target="_blank"
                   rel="noopener"
                   style={{ display:'block', textAlign:'center', color:'#D4B068', fontFamily:'var(--font-sans)', fontSize:'13px', marginTop:'12px', fontWeight:'400' }}
-                >Read the full Mallorca golf course guides →</a>
+                >{t.email.guides}</a>
               </div>
 
               <div className="gcc-nav">
-                <button className="gcc-btn ghost" style={{ flex:1 }} onClick={() => goTo(3)}>Adjust my answers</button>
-                <button className="gcc-btn ghost" style={{ flex:1 }} onClick={restart}>Start over</button>
+                <button className="gcc-btn ghost" style={{ flex:1 }} onClick={() => goTo(3)}>{t.buttons.adjustAnswers}</button>
+                <button className="gcc-btn ghost" style={{ flex:1 }} onClick={restart}>{t.buttons.startOver}</button>
               </div>
 
               <div className="gcc-tools-panel">
-                <div className="gcc-tools-panel__label">More planning tools</div>
+                <div className="gcc-tools-panel__label">{t.tools.label}</div>
                 <div className="gcc-tools-panel__links">
-                  <a href="/tools/course-selector" className="gcc-tools-panel__link">Find your courses</a>
-                  <a href="/tools/hotel-recommender" className="gcc-tools-panel__link">Find hotels</a>
-                  <a href="/tools/golf-day-builder" className="gcc-tools-panel__link">Build a golf day</a>
+                  <a href="/tools/course-selector" className="gcc-tools-panel__link">{t.tools.selector}</a>
+                  <a href="/tools/hotel-recommender" className="gcc-tools-panel__link">{t.tools.hotelRecommender}</a>
+                  <a href="/tools/golf-day-builder" className="gcc-tools-panel__link">{t.tools.golfDay}</a>
                 </div>
               </div>
 
-              <p className="gcc-disclaimer">Green fees, hotel rates, and dining prices in Mallorca vary by season and availability. All figures here are approximate ranges for planning only.</p>
+              <p className="gcc-disclaimer">{t.disclaimer}</p>
             </div>
           )
         })()}
@@ -805,8 +766,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
           >
             {/* Header */}
             <div className="gcc-sheet-head">
-              <div className="gcc-sheet-head__eyebrow">Trip Quote Builder</div>
-              <h3 className="gcc-sheet-head__title">Get a real quote from Andy</h3>
+              <div className="gcc-sheet-head__eyebrow">{t.quote.cta}</div>
+              <h3 className="gcc-sheet-head__title">{t.quoteForm.heading}</h3>
               <button
                 onClick={() => !quoteSuccess && setQuoteBuilderOpen(false)}
                 className="gcc-sheet-head__close"
@@ -819,30 +780,30 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                 <>
                   {/* Summary */}
                   <div style={{ background:'#fff', border:'1px solid #cdb98a', borderRadius:12, padding:'14px 16px', marginBottom:18 }}>
-                    <div className="gcc-sheet-summary__label">Your trip, as calculated</div>
+                    <div className="gcc-sheet-summary__label">{t.quoteForm.summary}</div>
                     <ul style={{ listStyle:'none', margin:0, padding:0 }}>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
-                        <span>Golfers</span>
+                        <span>{t.quoteForm.summaryLabels.golfers}</span>
                         <b style={{ color:'#15392b', fontWeight:600 }}>{state.golfers}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
-                        <span>Trip length</span>
+                        <span>{t.quoteForm.summaryLabels.tripLength}</span>
                         <b style={{ color:'#15392b', fontWeight:600 }}>{state.days} day{state.days > 1 ? 's' : ''}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
-                        <span>Rounds</span>
+                        <span>{t.quoteForm.summaryLabels.rounds}</span>
                         <b style={{ color:'#15392b', fontWeight:600 }}>{state.rounds}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
-                        <span>Budget style</span>
+                        <span>{t.quoteForm.summaryLabels.budget}</span>
                         <b style={{ color:'#15392b', fontWeight:600, textTransform:'capitalize' }}>{state.budget}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
-                        <span>Suggested courses</span>
+                        <span>{t.quoteForm.summaryLabels.courses}</span>
                         <b style={{ color:'#15392b', fontWeight:600, textAlign:'right' }}>{COURSE_MIX[state.budget].slice(0, Math.min(state.rounds, COURSE_MIX[state.budget].length)).join(', ')}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0' }}>
-                        <span>Estimated total</span>
+                        <span>{t.quoteForm.summaryLabels.total}</span>
                         <b style={{ color:'#15392b', fontWeight:600 }}>{results ? fmtR(results.total) : '—'}</b>
                       </li>
                     </ul>
@@ -851,7 +812,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                   {/* Form */}
                   <form onSubmit={submitQuote}>
                     <div style={{ marginBottom:16 }}>
-                      <label style={labelStyle}>Email address</label>
+                      <label style={labelStyle}>{t.quoteForm.email}</label>
                       <input
                         type="email"
                         value={quoteEmail}
@@ -871,12 +832,12 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                     </div>
 
                     <div style={{ marginBottom:16 }}>
-                      <label style={labelStyle}>Preferred dates <span style={{ textTransform:'none', fontWeight:'normal' }}>(optional)</span></label>
+                      <label style={labelStyle}>{t.quoteForm.dates} <span style={{ textTransform:'none', fontWeight:'normal' }}>(optional)</span></label>
                       <input
                         type="text"
                         value={quoteDates}
                         onChange={e => setQuoteDates(e.target.value)}
-                        placeholder="e.g. First week of October, flexible"
+                        placeholder={t.quoteForm.datesPlaceholder}
                         style={{
                           width:'100%',
                           border:'1.5px solid #d9cfb8',
@@ -891,11 +852,11 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                     </div>
 
                     <div style={{ marginBottom:16 }}>
-                      <label style={labelStyle}>Anything else Andy should know about your trip?</label>
+                      <label style={labelStyle}>{t.quoteForm.notes}</label>
                       <textarea
                         value={quoteNotes}
                         onChange={e => setQuoteNotes(e.target.value)}
-                        placeholder="Handicaps, occasions, non-golfers in the group, must-play courses…"
+                        placeholder={t.quoteForm.notesPlaceholder}
                         style={{
                           width:'100%',
                           border:'1.5px solid #d9cfb8',
@@ -911,7 +872,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       />
                     </div>
 
-                    {quoteError && <p style={{ fontSize:13, color:'#a4432f', margin:'-8px 0 12px' }}>Please add a valid email address so Andy can reply.</p>}
+                    {quoteError && <p style={{ fontSize:13, color:'#a4432f', margin:'-8px 0 12px' }}>{t.quoteForm.error}</p>}
 
                     <button
                       type="submit"
@@ -919,22 +880,22 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       style={{ width:'100%', marginBottom:12 }}
                       disabled={quoteSubmitting}
                     >
-                      {quoteSubmitting ? 'Sending…' : 'Send to Andy'}
+                      {quoteSubmitting ? t.quoteForm.sending : t.quoteForm.button}
                     </button>
 
-                    <p style={{ fontSize:12, color:'#8a7f74', textAlign:'center', marginTop:12, fontStyle:'italic' }}>Your details go straight to Andy — no lists, no spam.</p>
+                    <p style={{ fontSize:12, color:'#8a7f74', textAlign:'center', marginTop:12, fontStyle:'italic' }}>{t.quoteForm.disclaimer}</p>
                   </form>
                 </>
               ) : (
                 <div style={{ textAlign:'center', padding:'26px 6px 12px' }}>
                   <div style={{ width:54, height:54, borderRadius:'50%', background:'#15392b', color:'#cdb98a', display:'flex', alignItems:'center', justifyContent:'center', fontSize:24, margin:'0 auto 16px' }}>✓</div>
-                  <h4 className="gcc-sheet-success__title">Sent to Andy</h4>
-                  <p style={{ fontSize:15, color:'#2c2a27', maxWidth:320, margin:'0 auto 18px' }}>Andy will come back to you personally — usually within a few hours.</p>
+                  <h4 className="gcc-sheet-success__title">{t.quoteForm.success}</h4>
+                  <p style={{ fontSize:15, color:'#2c2a27', maxWidth:320, margin:'0 auto 18px' }}>{t.quoteForm.successMsg}</p>
                   <button
                     className="gcc-btn primary"
                     style={{ width:'100%' }}
                     onClick={() => setQuoteBuilderOpen(false)}
-                  >Back to my estimate</button>
+                  >{t.quoteForm.backBtn}</button>
                 </div>
               )}
             </div>

@@ -24,7 +24,7 @@ const REPO_ROOT = resolve(__dirname, '..')
 const CHECKS = [
   {
     label: 'golf-cost-calculator PWAP price',
-    toolFile: 'src/app/(en)/tools/golf-cost-calculator/GolfCostCalculatorClient.jsx',
+    toolFile: 'src/lib/golf-cost-calculator-translations.js',
     canonicalFile: 'src/lib/play-with-a-pro-content.js',
     // Pull the two figures the tool states, then require both in the canonical file.
     extract: /€(\d+)\s*solo\s*or\s*€(\d+)\s*total/i,
