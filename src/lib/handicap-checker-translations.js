@@ -13,7 +13,7 @@ export const HANDICAP_CHECKER_T = {
     inputs: { handicap: 'Handicap index', handicapPlaceholder: 'e.g. 18.4', noHandicap: 'I don\'t have an official handicap', gender: 'Gender', male: 'Male', female: 'Female', cert: 'Handicap certificate', yes: 'Yes', digital: 'Digital (app)', no: 'No', groupSize: 'Group size', area: 'Where are you based or staying?', areaHint: '(optional — tailors your recommendation)', check: 'Check my access' },
     tiers: { new: 'a newer golfer', low: 'a low-handicap golfer', mid: 'a solid club golfer', improver: 'an improving golfer', relaxed: 'a relaxed, higher-handicap golfer' },
     areas: { any: 'Anywhere on the island', palma: 'Palma & around', southwest: 'Southwest (Calvià, Santa Ponsa, Andratx)', south: 'South (Llucmajor, Son Antem)', east: 'East (Capdepera, Canyamel, Pula)', north: 'North (Alcúdia, Pollença)' },
-    areasShort: { any: 'Anywhere on the island', palma: 'Palma', southwest: 'Southwest', south: 'South', east: 'East', north: 'North' },
+    areasShort: { any: 'Anywhere on the island', palma: 'Palma', southwest: 'Southwest Mallorca', south: 'South Mallorca', east: 'East Mallorca', north: 'North Mallorca' },
     groups: { ok: 'You can book', warn: 'Worth an enquiry', info: 'Certificate needed first', no: 'Out of reach for now' },
     verdicts: {
       canBook: '✅ You can book',
@@ -46,7 +46,7 @@ export const HANDICAP_CHECKER_T = {
       askIfPossible: 'Ask if it’s possible →',
       recLabel: 'Andy’s pick for you',
       recText: 'As {tier}, I’d start with {courses}. Tell me your dates and I’ll build the round order and tee times around your golf.',
-      recTextArea: 'As {tier} around {area}, I’d start with {courses}. Tell me your dates and I’ll build the round order and tee times around your golf.',
+      recTextArea: 'As {tier} staying in {area}, I’d start with {courses}. Tell me your dates and I’ll build the round order and tee times around your golf.',
       pairingLabel: 'Peak-season pairing',
       pairingSingle: 'a single golfer',
       pairingTwoBall: 'a two-ball',

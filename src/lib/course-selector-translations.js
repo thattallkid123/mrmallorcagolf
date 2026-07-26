@@ -7,7 +7,7 @@ export const COURSE_SELECTOR_T = {
     hero: {
       eyebrow: 'Free tool',
       h1: 'Find your Mallorca course',
-      sub: 'Eight quick questions. A shortlist matched to your handicap, budget, and what you want from a round.',
+      sub: 'A few quick questions. A shortlist matched to your handicap, budget, and what you want from a round.',
     },
     intro: {
       h2: 'Which courses fit your game?',

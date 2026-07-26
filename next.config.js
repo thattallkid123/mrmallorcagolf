@@ -73,11 +73,11 @@ const nextConfig = {
       "form-action 'self' https://assets.mailerlite.com",
       "frame-ancestors 'self'",
       "frame-src https://preview.mailerlite.io",
-      "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://preview.mailerlite.io https://assets.mailerlite.com https://*.tile.openstreetmap.org",
+      "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://www.google.es https://www.google.com https://preview.mailerlite.io https://assets.mailerlite.com https://*.tile.openstreetmap.org",
       "object-src 'none'",
       `script-src 'self' 'unsafe-inline'${allowUnsafeEval ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://www.google-analytics.com https://assets.mailerlite.com`,
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://assets.mailerlite.com",
+      "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://region1.analytics.google.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://assets.mailerlite.com",
       'upgrade-insecure-requests',
     ].join('; ')
 
