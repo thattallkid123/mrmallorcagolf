@@ -12,7 +12,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "breadcrumbCurrent": "Play with a Pro",
     "eyebrow": "Play With A Pro | Mallorca | PGA Professional",
     "title": "An 18-hole day with Andy.\nOn-course coaching while you play.",
-    "body": "Play With A Pro is an 18-hole day with Andy in Mallorca. The course is chosen for your game, the tee time is secured for you, and Andy plays the round alongside you with on-course coaching where it helps. Solo from 695 EUR. Groups from 950 EUR total. Green fees additional, confirmed before booking.",
+    "body": "Play With A Pro is an 18-hole day with Andy in Mallorca. The course is chosen for your game, the tee time is secured for you, and Andy plays the round alongside you with on-course coaching where it helps. Solo from ?695. Groups from ?950 total. Green fees additional, confirmed before booking.",
     "price": null,
     "primaryCta": "Enquire",
     "primaryHref": "/contact",
@@ -32,7 +32,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       },
       {
         "label": "Pricing",
-        "text": "Solo from 695 EUR. Group from 950 EUR total. Green fees stay separate and are confirmed before booking."
+        "text": "Solo from ?695. Group from ?950 total. Green fees stay separate and are confirmed before booking."
       },
       {
         "label": "Next step",
