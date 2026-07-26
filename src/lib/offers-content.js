@@ -11,9 +11,9 @@ const OFFER_CONTENT = {
   en: {
     statSoloLabel: 'Solo',
     playWithAProMeta:
-      'Play golf with a PGA pro in Mallorca (Majorca). Solo from €695, groups from €950 total, green fees additional. Book a standalone day or add it to your trip.',
+      'Play With A Pro in Mallorca (Majorca): an 18-hole day with PGA Advanced Professional Andy Griffiths. Solo from 695 EUR, groups from 950 EUR total, green fees additional.',
     playHeroBody:
-      'Book it as a standalone day with me, or add it to a planned Mallorca (Majorca) golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €695. Groups from €950 total. Green fees additional, confirmed when we speak.',
+      'Play With A Pro is an 18-hole day with Andy in Mallorca. The course is chosen for your game, the tee time is secured for you, and Andy plays the round alongside you with on-course coaching where it helps. Solo from 695 EUR. Groups from 950 EUR total. Green fees additional, confirmed before booking.',
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',

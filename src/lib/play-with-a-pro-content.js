@@ -10,13 +10,35 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "homeHref": "/",
     "breadcrumbHome": "Home",
     "breadcrumbCurrent": "Play with a Pro",
-    "eyebrow": "Golf Day · Mallorca · PGA Professional",
-    "title": "One course. 18 holes.\nMe alongside you the whole way.",
-    "body": "Book it as a standalone day with me, or add it to a planned Mallorca golf trip. Play 18 holes alongside a PGA Advanced Professional. Solo from €695. Groups from €950 total. Green fees additional, confirmed when we speak.",
+    "eyebrow": "Play With A Pro | Mallorca | PGA Professional",
+    "title": "An 18-hole day with Andy.\nOn-course coaching while you play.",
+    "body": "Play With A Pro is an 18-hole day with Andy in Mallorca. The course is chosen for your game, the tee time is secured for you, and Andy plays the round alongside you with on-course coaching where it helps. Solo from 695 EUR. Groups from 950 EUR total. Green fees additional, confirmed before booking.",
     "price": null,
-    "primaryCta": "Enquire →",
+    "primaryCta": "Enquire",
     "primaryHref": "/contact",
     "secondaryCta": "See the options"
+  },
+  "offerSummary": {
+    "eyebrow": "At a glance",
+    "title": "Understand the offer before you enquire.",
+    "items": [
+      {
+        "label": "Best for",
+        "text": "Solo golfers, pairs, and small groups who want one proper golf day in Mallorca."
+      },
+      {
+        "label": "Format",
+        "text": "One course, 18 holes, chosen for your game, with Andy alongside you throughout the round."
+      },
+      {
+        "label": "Pricing",
+        "text": "Solo from 695 EUR. Group from 950 EUR total. Green fees stay separate and are confirmed before booking."
+      },
+      {
+        "label": "Next step",
+        "text": "Send your dates, group size, and handicap range. Andy replies personally within 24 hours."
+      }
+    ]
   },
   "day": {
     "eyebrow": "What the day looks like",
@@ -164,7 +186,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "price": "€3,000+",
         "note": "Everything arranged. All details confirmed before the day.",
         "features": [
-          "Course, private tee time, and full hosted golf day with Andy",
+          "Course, private tee time, and a fully arranged day with Andy",
           "Golf physio with The Golf Doctor to work on the body and the swing issues we saw",
           "Private transfers to and from the course",
           "Evening dinner at a partner hotel"
@@ -301,7 +323,7 @@ export function getPlayWithAProContent(locale = 'en') {
     hero: content?.hero
       ? {
           ...content.hero,
-          body: getPlayHeroBody(locale),
+          body: locale === 'en' && content.hero.body ? content.hero.body : getPlayHeroBody(locale),
         }
       : content?.hero,
     packages,

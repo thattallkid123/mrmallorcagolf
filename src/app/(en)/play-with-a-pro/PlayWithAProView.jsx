@@ -283,6 +283,27 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           </div>
         </section>
 
+        {locale === 'en' && content.offerSummary ? (
+          <section className="pwap-summary">
+            <div className="pwap-summary__inner reveal">
+              <div className="pwap-summary__header">
+                <p className="eyebrow">{content.offerSummary.eyebrow}</p>
+                <h2 className="serif-display pwap-section-title pwap-section-title--tight">
+                  {content.offerSummary.title}
+                </h2>
+              </div>
+              <div className="pwap-summary__grid">
+                {content.offerSummary.items.map((item) => (
+                  <article key={item.label} className="pwap-summary__card">
+                    <p className="pwap-summary__label">{item.label}</p>
+                    <p className="pwap-summary__text">{item.text}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null}
+
         <section className="pwap-day">
           <div className="pwap-day__lead reveal">
             <p className="eyebrow">{content.day.eyebrow}</p>
