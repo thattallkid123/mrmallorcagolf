@@ -505,10 +505,10 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
       })
       setEmailSending(false)
       if (res.ok) { setEmailSent(true) }
-      else { displayToast("That didn't go through. Check the address and try again.") }
+      else { displayToast(t.cta.error) }
     } catch {
       setEmailSending(false)
-      displayToast("That didn't go through. Check the address and try again.")
+      displayToast(t.cta.error)
     }
   }
 
@@ -622,9 +622,9 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
 
       {/* HERO */}
       <section className="gdb-hero">
-        <span className="gdb-eyebrow">Free tool</span>
-        <h1 className="gdb-h1">Build your perfect Mallorca golf day</h1>
-        <p className="gdb-sub">Eight questions. A complete day plan with course, lunch, and add-ons, built around your group.</p>
+        <span className="gdb-eyebrow">{t.hero.eyebrow}</span>
+        <h1 className="gdb-h1">{t.hero.title}</h1>
+        <p className="gdb-sub">{t.hero.sub}</p>
       </section>
 
       <ToolTrustLine />
@@ -634,8 +634,8 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
         {/* INTRO */}
         {phase === 'intro' && (
           <section className="gdb-intro">
-            <p className="gdb-lead">The island has more than twenty courses and the right one depends on who is playing, when you want to tee off, and what you want from the rest of the day. This takes about a minute and gives you a plan worth keeping.</p>
-            <button className="gdb-btn-gold" onClick={startBuilder}>Start building my day</button>
+            <p className="gdb-lead">{t.intro.lead}</p>
+            <button className="gdb-btn-gold" onClick={startBuilder}>{t.intro.button}</button>
           </section>
         )}
 
@@ -651,7 +651,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
             <div className="gdb-qcard">
               <h2>{q.title}</h2>
               {q.sub && <p className="sub">{q.sub}</p>}
-              {q.multi && <div className="gdb-multi-note">Select any that appeal, or none</div>}
+              {q.multi && <div className="gdb-multi-note">{t.quiz.selectAny}</div>}
               <div className="gdb-opts">
                 {q.opts.map(o => (
                   <button
@@ -672,13 +672,13 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                 className="gdb-btn-ghost"
                 onClick={prevStep}
                 style={{ visibility: stepIdx === 0 ? 'hidden' : 'visible' }}
-              >Back</button>
+              >{t.quiz.back}</button>
               <button
                 className="gdb-btn-pine"
                 onClick={nextStep}
                 disabled={!canNext()}
               >
-                {stepIdx === QUESTIONS.length - 1 ? 'Build my day' : 'Continue'}
+                {stepIdx === QUESTIONS.length - 1 ? t.quiz.build : t.quiz.continue}
               </button>
             </div>
           </section>
@@ -688,24 +688,28 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
         {phase === 'results' && itins && (
           <section>
             <div className="gdb-result-head">
-              <span className="eyebrow">Your personalised plan</span>
-              <h2>Your golf day, three ways</h2>
+              <span className="eyebrow">{t.results.eyebrow}</span>
+              <h2>{t.results.title}</h2>
               <p>
-                Built for {GROUP_LABEL[answers.group]} staying {REGION_LABEL[answers.region]}.
+                {t.results.builtFor} {GROUP_LABEL[answers.group]} {t.results.staying} {REGION_LABEL[answers.region]}.
                 <span style={{ display:'block', marginTop:'6px', fontSize:'.82rem', color:'#8A7F74' }}>
-                  Course chosen: {whyCourseChosen(itins[0].course, answers)}
+                  {t.results.courseChosen} {whyCourseChosen(itins[0].course, answers)}
                 </span>
               </p>
             </div>
 
             <div className="gdb-tabs">
-              {['Efficient golf day', 'Golf & long lunch', 'Full experience'].map((label, i) => (
+              {[
+                { label: t.results.tabs.efficient, full: `${t.results.tabs.efficient}` },
+                { label: t.results.tabs.lunch, full: `${t.results.tabs.lunch}` },
+                { label: t.results.tabs.experience, full: `${t.results.tabs.experience}` },
+              ].map((item, i) => (
                 <button
                   key={i}
                   className={`gdb-tab${activeItin === i ? ' active' : ''}`}
                   onClick={() => setActiveItin(i)}
                 >
-                  {label.split(' ').slice(0,2).join(' ')}<br/>{label.split(' ').slice(2).join(' ')}
+                  {item.full.split(' ').slice(0,2).join(' ')}<br/>{item.full.split(' ').slice(2).join(' ')}
                 </button>
               ))}
             </div>
@@ -715,11 +719,11 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                 <div className="gdb-course-card" style={COURSE_IMGS[it.course.id] ? { backgroundImage: `linear-gradient(165deg, rgba(45,74,62,0.88) 0%, rgba(26,25,22,0.92) 120%), url(${COURSE_IMGS[it.course.id]})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}>
                   <span className="tag">{it.name}</span>
                   <h3>{displayCourseName(it.course.name)}</h3>
-                  <div className="where">Around {it.drive} min from your base (estimate)</div>
+                  <div className="where">{t.timeline.aroundMin} {it.drive} {t.timeline.minFrom}</div>
                   <p className="blurb">{it.tagline}</p>
                   <div className="gdb-pills">
                     {getCourseFacts(it.course).map(f => <span key={f} className="gdb-pill">{f}</span>)}
-                    <span className="gdb-pill">{START_WINDOWS[answers.start]?.label}</span>
+                    <span className="gdb-pill">{t.startWindows[answers.start]}</span>
                   </div>
                 </div>
 
@@ -735,31 +739,31 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                 </div>
 
                 <div className="gdb-why-card">
-                  <h4>Why this day fits you</h4>
+                  <h4>{t.results.whyCard}</h4>
                   <p>{it.why}</p>
                 </div>
 
                 <div className="gdb-andy-card">
-                  <h4>What Andy handles when you book through Mr Mallorca Golf</h4>
+                  <h4>{t.results.andyCard}</h4>
                   <ul>{andyHandles.map(h => <li key={h}>{h}</li>)}</ul>
                 </div>
               </div>
             ))}
 
-            <p className="gdb-estimate-note">Timings, travel durations, and costs shown here are planning estimates. Andy confirms exact tee times, tables, and transport when you book.</p>
+            <p className="gdb-estimate-note">{t.results.estimate}</p>
 
             <div className="gdb-cta-block">
-              <span className="eyebrow">Keep your day plan</span>
-              <h3>Email yourself all three day plans</h3>
-              <p className="gdb-cta-copy">We'll send the full itineraries: timings, courses and Andy's notes, so you can share them with your group and decide together. No spam. Andy replies to every message personally.</p>
+              <span className="eyebrow">{t.cta.eyebrow}</span>
+              <h3>{t.cta.title}</h3>
+              <p className="gdb-cta-copy">{t.cta.copy}</p>
               <div className="gdb-cta-grid">
                 {emailSent ? (
                   <div>
-                    <p className="gdb-email-success">&#10003; Done. Your plans are on their way.</p>
+                    <p className="gdb-email-success">{t.cta.success}</p>
                     {!pdfSent ? (
                       <div style={{ background:'rgba(247,244,239,0.08)', border:'1px solid rgba(184,151,60,0.3)', borderRadius:'10px', padding:'14px 16px', margin:'10px 0' }}>
-                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:'var(--font-sans)' }}>Also free</p>
-                        <p style={{ fontSize:'13px', color:'rgba(247,244,239,0.78)', marginBottom:'10px', lineHeight:'1.5' }}>The 7-Day Mallorca Golf Itinerary PDF. A ready-to-use week plan with the right courses in the right order.</p>
+                        <p style={{ fontSize:'11px', color:'#D4B068', letterSpacing:'.12em', textTransform:'uppercase', marginBottom:'6px', fontFamily:'var(--font-sans)' }}>{t.cta.alsoFree}</p>
+                        <p style={{ fontSize:'13px', color:'rgba(247,244,239,0.78)', marginBottom:'10px', lineHeight:'1.5' }}>{t.cta.pdfDesc}</p>
                         <a
                           href={TRIP_PLANNER_PDF_URL}
                           target="_blank"
@@ -767,10 +771,10 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                           className="gdb-btn-gold"
                           style={{ fontSize:'13px', display:'inline-block', textDecoration:'none', padding:'10px 20px', borderRadius:'99px' }}
                           onClick={requestTripPdf}
-                        >Download free PDF</a>
+                        >{t.cta.pdfButton}</a>
                       </div>
                     ) : (
-                      <p style={{ fontSize:'12px', color:'#D4B068', margin:'6px 0' }}>PDF on its way too.</p>
+                      <p style={{ fontSize:'12px', color:'#D4B068', margin:'6px 0' }}>{t.cta.pdfSent}</p>
                     )}
                   </div>
                 ) : (
@@ -778,13 +782,13 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                     <input
                       type="email"
                       className="gdb-email-input"
-                      placeholder="you@email.com"
+                      placeholder={t.cta.placeholder}
                       value={email}
                       onChange={e => setEmail(e.target.value)}
                       aria-label="Email address"
                     />
                     <button className="gdb-btn-gold" onClick={emailItinerary} disabled={emailSending}>
-                      {emailSending ? 'Sending…' : 'Email me these plans'}
+                      {emailSending ? t.cta.sending : t.cta.button}
                     </button>
                     <label className="gdb-newsletter-label">
                       <input
@@ -793,33 +797,33 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                         onChange={e => setSubscribeNewsletter(e.target.checked)}
                         style={{ accentColor:'#D4B068' }}
                       />
-                      Also send me Andy's occasional Mallorca golf planning notes
+                      {t.cta.newsletter}
                     </label>
                   </div>
                 )}
 
                 <div style={{ borderTop:'1px solid rgba(255,255,255,.14)', margin:'6px 0 2px' }} />
-                <p style={{ fontFamily:'var(--font-sans)', fontSize:'.82rem', color:'rgba(255,255,255,.7)', margin:'2px 0 4px', lineHeight:'1.6' }}>Or have Andy turn one of these into a booked day: tee time, restaurant and transport handled around your group.</p>
-                <button className="gdb-btn-gold" onClick={() => window.open('https://www.mrmallorcagolf.com/contact', '_blank', 'noopener')}>Ask Andy to build this for my group</button>
-                <button className="gdb-btn-pine" style={{ borderRadius:'999px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>Explore Play With A Pro</button>
+                <p style={{ fontFamily:'var(--font-sans)', fontSize:'.82rem', color:'rgba(255,255,255,.7)', margin:'2px 0 4px', lineHeight:'1.6' }}>{t.cta.footer}</p>
+                <button className="gdb-btn-gold" onClick={() => window.open('https://www.mrmallorcagolf.com/contact', '_blank', 'noopener')}>{t.cta.askAndy}</button>
+                <button className="gdb-btn-pine" style={{ borderRadius:'999px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>{t.cta.explorePro}</button>
                 <div className="gdb-cta-secondary">
-                  <button className="gdb-btn-secondary" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>WhatsApp Andy</button>
+                  <button className="gdb-btn-secondary" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>{t.cta.whatsapp}</button>
                 </div>
               </div>
             </div>
 
             <div className="gdb-more-tools">
-              <div className="gdb-more-tools-label">More planning tools</div>
+              <div className="gdb-more-tools-label">{t.moreTools.label}</div>
               <div className="gdb-tool-links">
-                <a href="/tools/course-selector" className="gdb-tool-link">Find your courses</a>
-                <a href="/tools/hotel-recommender" className="gdb-tool-link">Find hotels</a>
-                <a href="/tools/golf-cost-calculator" className="gdb-tool-link">Estimate trip cost</a>
+                <a href="/tools/course-selector" className="gdb-tool-link">{t.moreTools.courses}</a>
+                <a href="/tools/hotel-recommender" className="gdb-tool-link">{t.moreTools.hotels}</a>
+                <a href="/tools/golf-cost-calculator" className="gdb-tool-link">{t.moreTools.cost}</a>
               </div>
             </div>
 
             <div style={{ display:'flex', gap:'10px', maxWidth:'480px', margin:'0 auto' }}>
-              <button className="gdb-restart" style={{ flex:1 }} onClick={() => { setPhase('quiz'); setStepIdx(QUESTIONS.length - 1); scrollToTop() }}>Adjust my answers</button>
-              <button className="gdb-restart" style={{ flex:1 }} onClick={restart}>Start over</button>
+              <button className="gdb-restart" style={{ flex:1 }} onClick={() => { setPhase('quiz'); setStepIdx(QUESTIONS.length - 1); scrollToTop() }}>{t.adjust.adjust}</button>
+              <button className="gdb-restart" style={{ flex:1 }} onClick={restart}>{t.adjust.restart}</button>
             </div>
           </section>
         )}

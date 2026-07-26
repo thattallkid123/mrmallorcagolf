@@ -8,6 +8,11 @@ export const GOLF_DAY_BUILDER_T = {
       title: 'Build your perfect Mallorca golf day',
       sub: 'Eight questions. A complete day plan with course, lunch, and add-ons, built around your group.',
     },
+    startWindows: {
+      early: 'Early morning start',
+      mid: 'Mid-morning start',
+      pm: 'Afternoon start',
+    },
     intro: {
       lead: 'The island has more than twenty courses and the right one depends on who is playing, when you want to tee off, and what you want from the rest of the day. This takes about a minute and gives you a plan worth keeping.',
       button: 'Start building my day',
@@ -77,6 +82,11 @@ export const GOLF_DAY_BUILDER_T = {
       eyebrow: 'Kostenloses Tool',
       title: 'Planen Sie Ihren perfekten Mallorca-Golftag',
       sub: 'Acht Fragen. Ein kompletter Tagesplan mit Platz, Mittagessen und Zusatzoptionen, der auf Ihre Gruppe zugeschnitten ist.',
+    },
+    startWindows: {
+      early: 'Frühmorgens',
+      mid: 'Vormittags',
+      pm: 'Nachmittags',
     },
     intro: {
       lead: 'Die Insel hat mehr als zwanzig Plätze, und der richtige hängt davon ab, wer spielt, wann Sie abschlagen möchten und was Sie vom Rest des Tages erwarten. Dies dauert etwa eine Minute und gibt Ihnen einen Plan, den es sich lohnt zu behalten.',
@@ -148,6 +158,11 @@ export const GOLF_DAY_BUILDER_T = {
       title: 'Construye tu día de golf perfecto en Mallorca',
       sub: 'Ocho preguntas. Un plan de día completo con campo, almuerzo y complementos, diseñado para tu grupo.',
     },
+    startWindows: {
+      early: 'Salida temprana',
+      mid: 'Salida a media mañana',
+      pm: 'Salida por la tarde',
+    },
     intro: {
       lead: 'La isla tiene más de veinte campos, y el correcto depende de quién juega, cuándo quieres salir y qué quieres del resto del día. Esto toma aproximadamente un minuto y te da un plan que vale la pena mantener.',
       button: 'Comienza a construir mi día',
@@ -217,6 +232,11 @@ export const GOLF_DAY_BUILDER_T = {
       eyebrow: 'Outil gratuit',
       title: 'Construisez votre journée de golf parfaite à Majorque',
       sub: 'Huit questions. Un plan de jour complet avec parcours, déjeuner et compléments, conçu autour de votre groupe.',
+    },
+    startWindows: {
+      early: 'Départ matinal',
+      mid: 'Départ en milieu de matinée',
+      pm: 'Départ l\'après-midi',
     },
     intro: {
       lead: "L\'île compte plus de vingt parcours, et le bon dépend de qui joue, quand vous voulez partir et ce que vous voulez du reste de la journée. Cela prend environ une minute et vous donne un plan qui vaut la peine de garder.",
@@ -288,6 +308,11 @@ export const GOLF_DAY_BUILDER_T = {
       title: 'Bouw je perfecte golfdag op Mallorca',
       sub: "Acht vragen. Een compleet dagplan met baan, lunch en extra\'s, gebouwd rond jouw groep.",
     },
+    startWindows: {
+      early: 'Vroeg vertrek',
+      mid: 'Vertrek in de ochtend',
+      pm: 'Vertrek in de middag',
+    },
     intro: {
       lead: 'Het eiland heeft meer dan twintig banen, en de juiste hangt ervan af wie speelt, wanneer je wilt afslaan en wat je van de rest van de dag wilt. Dit duurt ongeveer een minuut en geeft je een plan dat het waard is om te bewaren.',
       button: 'Begin mijn dag op te bouwen',
@@ -358,6 +383,11 @@ export const GOLF_DAY_BUILDER_T = {
       title: 'Bygg din perfekta golfdag på Mallorca',
       sub: 'Åtta frågor. En komplett dagplan med bana, lunch och tillval, byggd kring din grupp.',
     },
+    startWindows: {
+      early: 'Tidig start',
+      mid: 'Sen förmiddag',
+      pm: 'Eftermiddagsstart',
+    },
     intro: {
       lead: 'Ön har mer än tjugo banor, och rätt bana beror på vem som spelar, när du vill slå och vad du vill från resten av dagen. Det tar ungefär en minut och ger dig en plan värd att spara.',
       button: 'Börja bygga min dag',
@@ -427,6 +457,11 @@ export const GOLF_DAY_BUILDER_T = {
       eyebrow: '免费工具',
       title: '规划你的完美马略卡高尔夫日',
       sub: '八个问题。一个完整的日计划，包括球场、午餐和附加选项，围绕你的团队定制。',
+    },
+    startWindows: {
+      early: '早上出发',
+      mid: '上午出发',
+      pm: '下午出发',
     },
     intro: {
       lead: '岛上有超过二十个球场，合适的取决于谁在打球、你何时想开球以及你对一天其余时间的期望。这大约需要一分钟，并为你提供值得保留的计划。',
