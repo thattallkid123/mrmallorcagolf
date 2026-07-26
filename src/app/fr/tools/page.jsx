@@ -6,7 +6,7 @@ import { buildPageMetadata } from '../../../lib/page-metadata'
 export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools', 'fr', {
-  title: 'Outils gratuits de planification de golf à Majorque | Mr Mallorca Golf',
+  title: 'Outils gratuits de planification de golf à Majorque',
   description: 'Outils gratuits pour planifier votre séjour de golf à Majorque : sélecteur de parcours, vérificateur de handicap, comparateur de parcours, calculatrice de coûts, recommandeur d\'hôtel et planificateur de journée.',
   robots: { index: true, follow: true },
 })
@@ -92,7 +92,7 @@ export default function ToolsIndexFr() {
           margin: 0 auto;
         }
         .ti-sub {
-          display: none;
+          display: block;
         }
         .ti-carousel {
           max-width: 1120px;

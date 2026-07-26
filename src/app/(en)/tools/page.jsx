@@ -6,7 +6,7 @@ import { buildPageMetadata } from '../../../lib/page-metadata'
 export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools', 'en', {
-  title: 'Free Mallorca Golf Planning Tools | Mr Mallorca Golf',
+  title: 'Free Mallorca Golf Planning Tools',
   description: 'Free tools to plan your Mallorca golf trip: course finder, handicap checker, course comparison, cost calculator, hotel recommender, and day builder.',
   robots: { index: true, follow: true },
 })
@@ -101,7 +101,7 @@ export default function ToolsIndex() {
           margin: 0 auto;
         }
         .ti-sub {
-          display: none;
+          display: block;
         }
         .ti-carousel {
           max-width: 1120px;
