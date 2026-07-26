@@ -21,7 +21,7 @@ const TOOLS = [
     cta: 'Encontrar mis campos',
   },
   {
-    href: '/tools/handicap-checker',
+    href: '/es/tools/handicap-checker',
     eyebrow: 'Verificación de acceso',
     title: '¿Puedo jugar aquí?',
     desc: 'Ingresa tu handicap y tamaño de grupo. Verifica instantáneamente qué campos de Mallorca puedes reservar, dónde necesitas certificado y dónde Andy puede arreglar el acceso.',
@@ -45,7 +45,7 @@ const TOOLS = [
     cta: 'Construir mi día',
   },
   {
-    href: '/tools/golf-cost-calculator',
+    href: '/es/tools/golf-cost-calculator',
     eyebrow: 'Planificación de presupuesto',
     title: 'Calculadora de costos de viaje de golf',
     desc: 'Tres pasos. Una estimación realista de costos para todo tu viaje: cuotas verdes, alojamiento, transporte, comida y una mezcla de campos sugerida.',
@@ -53,7 +53,7 @@ const TOOLS = [
     cta: 'Estimar mi viaje',
   },
   {
-    href: '/tools/hotel-recommender',
+    href: '/es/tools/hotel-recommender',
     eyebrow: 'Selección de hotel',
     title: 'Recomendador de hoteles de golf',
     desc: 'Seis preguntas. Una lista de hoteles adaptada a tus campos, tamaño de grupo y estilo de viaje. Cubre las áreas principales de la isla.',

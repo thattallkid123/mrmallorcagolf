@@ -21,7 +21,7 @@ const TOOLS = [
     cta: 'Hitta mina banor',
   },
   {
-    href: '/tools/handicap-checker',
+    href: '/sv/tools/handicap-checker',
     eyebrow: 'Åtkomstcheck',
     title: 'Kan jag spela där?',
     desc: 'Ange ditt handikap och gruppstorlek. Se direkt vilka Mallorca-banor du kan boka, vilka som kräver intyg och var Andy kan ordna åtkomst.',
@@ -45,7 +45,7 @@ const TOOLS = [
     cta: 'Bygga min dag',
   },
   {
-    href: '/tools/golf-cost-calculator',
+    href: '/sv/tools/golf-cost-calculator',
     eyebrow: 'Budgetplanering',
     title: 'Golfresor kostnadsräknare',
     desc: 'Tre steg. En realistisk kostnadsestimering för hela din resa: greenfees, boende, transport, mat och en föreslagen banmix.',
@@ -53,7 +53,7 @@ const TOOLS = [
     cta: 'Uppskatta min resa',
   },
   {
-    href: '/tools/hotel-recommender',
+    href: '/sv/tools/hotel-recommender',
     eyebrow: 'Hotellval',
     title: 'Golfhotell-rekommendation',
     desc: 'Sex frågor. En lista med hotell anpassad till dina banor, gruppstorlek och resestil. Täcker huvudområdena på ön.',

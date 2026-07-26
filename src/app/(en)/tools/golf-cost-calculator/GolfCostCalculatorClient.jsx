@@ -8,7 +8,14 @@ import { getGolfCostCalculatorT } from '../../../../lib/golf-cost-calculator-tra
 const WA_MESSAGE = 'Hi Andy, I used the trip cost calculator on your site and I’d like a real quote for my Mallorca golf trip.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
 
-function WhatsAppQuoteLink({ t = getGolfCostCalculatorT(lang) }) {
+function formatText(template, values = {}) {
+  return Object.entries(values).reduce(
+    (text, [key, value]) => text.replaceAll(`{${key}}`, String(value)),
+    template,
+  )
+}
+
+function WhatsAppQuoteLink({ t }) {
   function handleClick() {
     trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'golf-cost-calculator' })
     trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'golf-cost-calculator' })
@@ -426,7 +433,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         <p className="gcc-sub">{t.hero.sub}</p>
       </section>
 
-      <ToolTrustLine />
+      {lang === 'en' && <ToolTrustLine />}
 
       <div className="gcc-wrap">
         {/* PROGRESS */}
@@ -525,34 +532,34 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
           const courses = COURSE_MIX[s.budget].slice(0, Math.min(s.rounds, COURSE_MIX[s.budget].length))
           let note = t.prefNotes[s.preference] || ''
           if (s.area !== 'flexible') {
-            const areaName = t.areaNames[s.area] || 'your chosen area'
-            note += ` Since you're based around ${areaName}, Andy will adjust for drive times.`
+            const areaName = t.areaNames[s.area] || t.resultCards.areaFallback
+            note += ` ${formatText(t.resultCards.areaNote, { area: areaName })}`
           }
 
           const parts = [
-            [t.resultCards.budget.split(' ').pop() === 'going' ? 'Green fees' : 'Green fees', r.greenFees],
-            ['Accommodation', r.accom],
-            ['Restaurants', r.dining],
-            ['Buggies', r.buggy],
-            ['Club hire', r.clubs],
-            ['Transport', r.transport],
+            [t.resultCards.budgetLineGreenFees, r.greenFees],
+            [t.resultCards.budgetLineAccommodation, r.accom],
+            [t.resultCards.budgetLineDining, r.dining],
+            [t.resultCards.budgetLineBuggies, r.buggy],
+            [t.resultCards.budgetLineClubs, r.clubs],
+            [t.resultCards.budgetLineTransport, r.transport],
           ].filter(p => mid(p[1]) > 0).sort((a, b) => mid(b[1]) - mid(a[1]))
           const totalMid = mid(r.total) || 1
 
           const save = []
-          if (s.budget !== 'value') save.push('Mix in one or two value-tier rounds (Son Servera, Maioris, Capdepera). Often the biggest single saving.')
-          save.push('Play afternoon or twilight tee times. Many courses discount later slots.')
-          if (s.buggy === 'yes') save.push('Walk the flatter courses and save buggies for the hilly ones.')
-          if (s.clubs === 'yes') save.push('Bringing your own clubs usually beats hiring for 3+ rounds. Check your airline\'s bag fee.')
-          if (s.accommodation === '5star' || s.accommodation === 'villa') save.push('A good 4-star near your courses can free up budget for an extra round.')
-          save.push('Travel outside peak spring/autumn weeks. Green fees and hotels both drop.')
+          if (s.budget !== 'value') save.push(t.resultCards.saveValueRounds)
+          save.push(t.resultCards.saveTwilight)
+          if (s.buggy === 'yes') save.push(t.resultCards.saveBuggy)
+          if (s.clubs === 'yes') save.push(t.resultCards.saveClubs)
+          if (s.accommodation === '5star' || s.accommodation === 'villa') save.push(t.resultCards.saveAccommodation)
+          save.push(t.resultCards.saveOffPeak)
 
           const up = []
-          if (s.budget === 'value' || s.budget === 'balanced') up.push('If this is a once-in-a-while trip, one bucket-list round (Son Gual, Alcanada, or Andratx) is usually worth the stretch.')
-          if (s.buggy === 'no') up.push('Several Mallorca courses are seriously hilly. A buggy on those days protects your energy and your score.')
-          if (s.transport === 'no') up.push(`With ${s.golfers} golfer${s.golfers > 1 ? 's' : ''} and clubs, arranged transport often costs little more than taxis and removes all the friction.`)
-          up.push('A Play With A Pro round with Andy turns one round into course strategy you\'ll use all trip.')
-          if (s.dining !== 'premium') up.push('One premium dinner makes a strong final-night centrepiece. Andy knows the tables worth booking.')
+          if (s.budget === 'value' || s.budget === 'balanced') up.push(t.resultCards.upgradeBucketList)
+          if (s.buggy === 'no') up.push(t.resultCards.upgradeBuggy)
+          if (s.transport === 'no') up.push(formatText(t.resultCards.upgradeTransport, { golfers: s.golfers, plural: s.golfers > 1 ? 's' : '' }))
+          up.push(t.resultCards.upgradePro)
+          if (s.dining !== 'premium') up.push(t.resultCards.upgradeDinner)
 
           return (
             <div>
@@ -561,7 +568,15 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
               <div className="gcc-hero-est">
                 <div className="lab">{t.results.total}</div>
                 <div className="big">{fmtR(r.total)}</div>
-                <div className="per">{s.golfers} golfer{s.golfers > 1 ? 's' : ''} · {s.days} day{s.days > 1 ? 's' : ''} · {s.rounds} round{s.rounds > 1 ? 's' : ''} · {s.budget} style</div>
+                <div className="per">{formatText(t.resultCards.summary, {
+                  golfers: s.golfers,
+                  golfersPlural: s.golfers > 1 ? 's' : '',
+                  days: s.days,
+                  daysPlural: s.days > 1 ? 's' : '',
+                  rounds: s.rounds,
+                  roundsPlural: s.rounds > 1 ? 's' : '',
+                  budget: s.budget,
+                })}</div>
                 <div className="gcc-approx">{t.results.approx}</div>
               </div>
 
@@ -577,7 +592,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                 <p style={{ marginBottom:'10px' }}>{note}</p>
                 <div>
                   {courses.map(c => <span key={c} className="gcc-tag">{c}</span>)}
-                  {s.rounds > courses.length && <span className="gcc-tag">+ repeat a favourite</span>}
+                  {s.rounds > courses.length && <span className="gcc-tag">{t.resultCards.repeatFavourite}</span>}
                 </div>
               </div>
 
@@ -628,7 +643,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       setQuoteBuilderOpen(true)
                     }}
                   >{t.quote.button}</button>
-                  <div style={{ marginTop:6, marginBottom:2 }}><WhatsAppQuoteLink /></div>
+                  <div style={{ marginTop:6, marginBottom:2 }}><WhatsAppQuoteLink t={t} /></div>
                   <div className="gcc-quote-cta__note">{t.quote.note}</div>
                 </div>
               </div>

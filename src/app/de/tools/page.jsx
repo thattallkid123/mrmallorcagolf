@@ -21,7 +21,7 @@ const TOOLS = [
     cta: 'Finde meine Golfplätze',
   },
   {
-    href: '/tools/handicap-checker',
+    href: '/de/tools/handicap-checker',
     eyebrow: 'Zugangsprüfung',
     title: 'Kann ich dort spielen?',
     desc: 'Gib dein Handicap und deine Gruppengröße ein. Sieh sofort, welche Mallorca-Golfplätze du buchen kannst, wo du ein Zertifikat benötigst und wo Andy Zugang arrangieren kann.',
@@ -45,7 +45,7 @@ const TOOLS = [
     cta: 'Planen Sie meinen Tag',
   },
   {
-    href: '/tools/golf-cost-calculator',
+    href: '/de/tools/golf-cost-calculator',
     eyebrow: 'Budgetplanung',
     title: 'Golf-Reisekostenrechner',
     desc: 'Drei Schritte. Eine realistische Kostenschätzung für deine gesamte Reise: Greenfees, Unterkunft, Transport, Verpflegung und ein empfohlener Golfplatz-Mix.',
@@ -53,7 +53,7 @@ const TOOLS = [
     cta: 'Schätzen Sie meine Kosten',
   },
   {
-    href: '/tools/hotel-recommender',
+    href: '/de/tools/hotel-recommender',
     eyebrow: 'Hotel-Auswahl',
     title: 'Golf-Hotelempfehlungen',
     desc: 'Sechs Fragen. Eine persönliche Liste mit Hotels, abgestimmt auf deine Golfplätze, Gruppengröße und Reisestil. Deckt die Hauptgebiete der Insel ab.',

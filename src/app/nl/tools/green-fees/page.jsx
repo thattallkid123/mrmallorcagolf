@@ -1,10 +1,12 @@
 export const dynamic = 'force-dynamic'
 
-export const metadata = {
+export const metadata = buildPageMetadata('/tools/green-fees', 'nl', {
+
   title: 'Mallorca green fee comparison',
   robots: { index: true, follow: true },
-}
+})
 
+import { buildPageMetadata } from '../../../../lib/page-metadata'
 import PageLayout from '../../../../components/PageLayout'
 import GreenFeesClient from '../../../(en)/tools/green-fees/GreenFeesClient'
 

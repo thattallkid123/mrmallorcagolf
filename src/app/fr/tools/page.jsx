@@ -21,7 +21,7 @@ const TOOLS = [
     cta: 'Trouvez mes parcours',
   },
   {
-    href: '/tools/handicap-checker',
+    href: '/fr/tools/handicap-checker',
     eyebrow: 'Vérification d\'accès',
     title: 'Puis-je jouer ici?',
     desc: 'Entrez votre handicap et la taille de votre groupe. Vérifiez instantanément quels parcours de Majorque vous pouvez réserver, où un certificat est nécessaire et où Andy peut arranger l\'accès.',
@@ -45,7 +45,7 @@ const TOOLS = [
     cta: 'Planifiez ma journée',
   },
   {
-    href: '/tools/golf-cost-calculator',
+    href: '/fr/tools/golf-cost-calculator',
     eyebrow: 'Planification du budget',
     title: 'Calculatrice des coûts de voyage de golf',
     desc: 'Trois étapes. Une estimation réaliste des coûts pour tout votre séjour : droits verts, hébergement, transport, repas et une sélection de parcours suggérée.',
@@ -53,7 +53,7 @@ const TOOLS = [
     cta: 'Estimez mon voyage',
   },
   {
-    href: '/tools/hotel-recommender',
+    href: '/fr/tools/hotel-recommender',
     eyebrow: 'Sélection d\'hôtel',
     title: 'Recommandeur d\'hôtel de golf',
     desc: 'Six questions. Une liste d\'hôtels adaptée à vos parcours, taille de groupe et style de voyage. Couvre les principales zones de l\'île.',

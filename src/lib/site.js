@@ -149,6 +149,9 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
   if (basePath === '/tools/course-selector') return LOCALES_FOR_COURSE_SELECTOR_TOOL.has(locale)
   if (basePath === '/tools/green-fees') return LOCALES_FOR_GREEN_FEES_TOOL.has(locale)
   if (basePath === '/tools/golf-day-builder') return LOCALES_FOR_GOLF_DAY_BUILDER_TOOL.has(locale)
+  if (basePath === '/tools/golf-cost-calculator') return LOCALES_FOR_GOLF_COST_CALCULATOR.has(locale)
+  if (basePath === '/tools/hotel-recommender') return LOCALES_FOR_HOTEL_RECOMMENDER.has(locale)
+  if (basePath === '/tools/handicap-checker') return LOCALES_FOR_HANDICAP_CHECKER.has(locale)
 
   if (!basePath.startsWith('/guides/')) return false
 

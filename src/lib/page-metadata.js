@@ -1,4 +1,4 @@
-import { getAlternates, SITE_ORIGIN } from './site.js'
+import { buildLocalePath, getAlternates, SITE_ORIGIN, stripLocaleFromPath } from './site.js'
 import { getPlayWithAProMetadataDescription } from './offers-content.js'
 
 export const DEFAULT_SOCIAL_IMAGE = {
@@ -410,10 +410,11 @@ const LEGAL_METADATA = {
 }
 
 export function buildPageMetadata(pathname, locale, overrides = {}) {
-  const alternates = getAlternates(pathname)
+  const localePath = buildLocalePath(stripLocaleFromPath(pathname), locale)
+  const alternates = getAlternates(localePath)
   const title = typeof overrides.title === 'string' ? overrides.title : undefined
   const description = typeof overrides.description === 'string' ? overrides.description : undefined
-  const pageUrl = `${SITE_ORIGIN}${pathname}`
+  const pageUrl = `${SITE_ORIGIN}${localePath}`
   const openGraphLocale = OPEN_GRAPH_LOCALES[locale] || OPEN_GRAPH_LOCALES.en
   const openGraphAltLocales = OPEN_GRAPH_ALT_LOCALES.filter((candidate) => candidate !== openGraphLocale)
   const socialImage = getSocialImage(locale)

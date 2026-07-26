@@ -21,7 +21,7 @@ const TOOLS = [
     cta: 'Vind mijn banen',
   },
   {
-    href: '/tools/handicap-checker',
+    href: '/nl/tools/handicap-checker',
     eyebrow: 'Toegangscontrole',
     title: 'Kan ik hier spelen?',
     desc: 'Voer je handicap en groepsgrootte in. Zie direct welke Mallorca-banen je kunt reserveren, waar je een certificaat nodig hebt en waar Andy toegang kan regelen.',
@@ -45,7 +45,7 @@ const TOOLS = [
     cta: 'Plan mijn dag',
   },
   {
-    href: '/tools/golf-cost-calculator',
+    href: '/nl/tools/golf-cost-calculator',
     eyebrow: 'Budgetplanning',
     title: 'Golftrip kostencalculator',
     desc: 'Drie stappen. Een realistische kostenschatting voor je hele trip: greenfees, accommodatie, vervoer, eten en een voorgestelde baanmix.',
@@ -53,7 +53,7 @@ const TOOLS = [
     cta: 'Schat mijn trip',
   },
   {
-    href: '/tools/hotel-recommender',
+    href: '/nl/tools/hotel-recommender',
     eyebrow: 'Hotelkeuze',
     title: 'Golfhoteladviezer',
     desc: 'Zes vragen. Een lijst met hotels afgestemd op je banen, groepsgrootte en reizigerstijl. Beslaat de belangrijkste gebieden van het eiland.',

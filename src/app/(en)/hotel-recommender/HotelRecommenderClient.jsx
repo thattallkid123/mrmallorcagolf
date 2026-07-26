@@ -410,7 +410,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
         <p className="hr-sub">{t.hero.sub}</p>
       </section>
 
-      <ToolTrustLine />
+      {lang === 'en' && <ToolTrustLine />}
 
       {/* PROGRESS */}
       <div className="hr-progress-wrap">
@@ -459,8 +459,10 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
         <>
           <div className="hr-results-hero">
             <h2>{t.results.hero}</h2>
-            <p>
-              For {t.groupLabel[answers.group] || 'your group'}, {t.priorityLabel[answers.priority] || ''}, staying in {t.areaLabels[answers.area] || answers.area}.
+            <p>{t.results.heroSub
+              .replace('{group}', t.groupLabel[answers.group] || 'your group')
+              .replace('{priority}', t.priorityLabel[answers.priority] || '')
+              .replace('{area}', t.areaLabels[answers.area] || answers.area)}
             </p>
           </div>
 
@@ -471,7 +473,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
               </div>
             )}
 
-            <p className="hr-results-label">Best options for {t.areaLabels[answers.area] || answers.area}</p>
+            <p className="hr-results-label">{t.results.label.replace('{area}', t.areaLabels[answers.area] || answers.area)}</p>
 
             {results.length === 0 ? (
               <p style={{ color:'#8A7F74', lineHeight:'1.7', fontSize:'0.9rem' }}>{t.results.noMatches}</p>

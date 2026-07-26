@@ -1,11 +1,13 @@
 export const dynamic = 'force-dynamic'
 
-export const metadata = {
+export const metadata = buildPageMetadata('/tools/course-selector', 'en', {
+
   title: 'Find Your Mallorca Golf Course | Free Course Selector',
   description: 'Eight questions. A personalised shortlist of Mallorca golf courses matched to your handicap, budget, group and style. Free, instant, no sign-up.',
   robots: { index: true, follow: true },
-}
+})
 
+import { buildPageMetadata } from '../../../../lib/page-metadata'
 import PageLayout from '../../../../components/PageLayout'
 import CourseSelectorToolClient from './CourseSelectorToolClient'
 

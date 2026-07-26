@@ -8,7 +8,10 @@ const FOOTER_COPY = {
     tagline: 'Mallorca golf trip planning with Andy Griffiths. Local course judgment, itinerary logic, and premium add-ons when they help.',
     toolsHeading: "Planning Tools",
     toolCourseSelector: "Find your Mallorca course",
+    toolHandicapChecker: "Check your handicap access",
     toolGreenFees: "Compare all 24 courses",
+    toolCostCalculator: "Estimate trip costs",
+    toolHotelRecommender: "Find golf hotels",
     toolDayBuilder: "Golf day builder",
     experiences: 'Services',
     itinerary: 'Plan Your Trip',
@@ -30,7 +33,10 @@ const FOOTER_COPY = {
     tagline: 'Golftage auf Mallorca mit Andy Griffiths. Lokale Einschätzung, aufmerksame Begleitung, alles arrangiert.',
     toolsHeading: "Planungstools",
     toolCourseSelector: "Passenden Platz finden",
+    toolHandicapChecker: "Handicap-Zugang pr\u00fcfen",
     toolGreenFees: "Alle 24 Plätze vergleichen",
+    toolCostCalculator: "Reisekosten sch\u00e4tzen",
+    toolHotelRecommender: "Golfhotels finden",
     toolDayBuilder: "Golftag planen",
     experiences: 'Erlebnisse',
     pwap: 'Mit Profi spielen',
@@ -49,7 +55,10 @@ const FOOTER_COPY = {
     tagline: 'Días de golf en Mallorca con Andy Griffiths. Criterio local, atención personal y todo bien organizado.',
     toolsHeading: "Herramientas",
     toolCourseSelector: "Encuentra tu campo",
+    toolHandicapChecker: "Comprueba tu acceso",
     toolGreenFees: "Compara los 24 campos",
+    toolCostCalculator: "Calcula costes",
+    toolHotelRecommender: "Encuentra hoteles de golf",
     toolDayBuilder: "Planificador de jornada",
     experiences: 'Experiencias',
     pwap: 'Jugar con un Pro',
@@ -68,7 +77,10 @@ const FOOTER_COPY = {
     tagline: 'Journées de golf à Majorque avec Andy Griffiths. Regard local, présence attentive et tout bien organisé.',
     toolsHeading: "Outils de planification",
     toolCourseSelector: "Trouvez votre parcours",
+    toolHandicapChecker: "V\u00e9rifiez votre acc\u00e8s",
     toolGreenFees: "Comparez les 24 parcours",
+    toolCostCalculator: "Estimez les co\u00fbts",
+    toolHotelRecommender: "Trouvez des h\u00f4tels golf",
     toolDayBuilder: "Organisateur de journée",
     experiences: 'Expériences',
     pwap: 'Jouer avec un Pro',
@@ -87,7 +99,10 @@ const FOOTER_COPY = {
     tagline: 'Golfdagen op Mallorca met Andy Griffiths. Lokale kennis, rustige begeleiding en alles geregeld.',
     toolsHeading: "Planningstools",
     toolCourseSelector: "Vind uw baan",
+    toolHandicapChecker: "Check uw toegang",
     toolGreenFees: "Vergelijk alle 24 banen",
+    toolCostCalculator: "Schat reiskosten",
+    toolHotelRecommender: "Vind golfhotels",
     toolDayBuilder: "Golfdag samenstellen",
     experiences: 'Ervaringen',
     pwap: 'Spelen met een Pro',
@@ -106,7 +121,10 @@ const FOOTER_COPY = {
     tagline: 'Golfdagar på Mallorca med Andy Griffiths. Lokal känsla, trygg värdskap och allt ordnat.',
     toolsHeading: "Planeringsverktyg",
     toolCourseSelector: "Hitta din bana",
+    toolHandicapChecker: "Kontrollera tilltr\u00e4de",
     toolGreenFees: "Jämför alla 24 banor",
+    toolCostCalculator: "Ber\u00e4kna resekostnad",
+    toolHotelRecommender: "Hitta golfhotell",
     toolDayBuilder: "Planera golfdagen",
     experiences: 'Upplevelser',
     pwap: 'Spela med ett proffs',
@@ -125,7 +143,10 @@ const FOOTER_COPY = {
     tagline: '与 Andy Griffiths 在马略卡体验高尔夫日程。熟悉本地，安排周到，全程轻松从容。',
     toolsHeading: "规划工具",
     toolCourseSelector: "找到适合的球场",
+    toolHandicapChecker: "\u68c0\u67e5\u5dee\u70b9\u51c6\u5165",
     toolGreenFees: "比较全部 24 座球场",
+    toolCostCalculator: "\u4f30\u7b97\u65c5\u884c\u8d39\u7528",
+    toolHotelRecommender: "\u5bfb\u627e\u9ad8\u5c14\u592b\u9152\u5e97",
     toolDayBuilder: "规划高尔夫行程",
     experiences: '体验',
     pwap: '与职业球手同场',
@@ -207,7 +228,10 @@ export default function Footer({ lang }) {
         <h3>{copy.toolsHeading}</h3>
         <ul>
           <li><Link href={toolHref('/tools/course-selector', locale)} prefetch={false}>{copy.toolCourseSelector}</Link></li>
+          <li><Link href={toolHref('/tools/handicap-checker', locale)} prefetch={false}>{copy.toolHandicapChecker}</Link></li>
           <li><Link href={toolHref('/tools/green-fees', locale)} prefetch={false}>{copy.toolGreenFees}</Link></li>
+          <li><Link href={toolHref('/tools/golf-cost-calculator', locale)} prefetch={false}>{copy.toolCostCalculator}</Link></li>
+          <li><Link href={toolHref('/tools/hotel-recommender', locale)} prefetch={false}>{copy.toolHotelRecommender}</Link></li>
           <li><Link href={toolHref('/tools/golf-day-builder', locale)} prefetch={false}>{copy.toolDayBuilder}</Link></li>
         </ul>
       </div>

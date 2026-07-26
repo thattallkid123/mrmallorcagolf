@@ -21,7 +21,7 @@ const TOOLS = [
     cta: '开始推荐',
   },
   {
-    href: '/tools/handicap-checker',
+    href: '/zh/tools/handicap-checker',
     eyebrow: '进场权限检查',
     title: '我能在这里打球吗？',
     desc: '输入你的差点和小组人数。立即查看马略卡哪些球场可以预订，哪些需要证书，Andy可以在哪里协助安排进场。',
@@ -45,7 +45,7 @@ const TOOLS = [
     cta: '规划我的一天',
   },
   {
-    href: '/tools/golf-cost-calculator',
+    href: '/zh/tools/golf-cost-calculator',
     eyebrow: '预算规划',
     title: '高尔夫旅行成本计算器',
     desc: '三个步骤。获得整个行程的现实成本估计：球场费用、住宿、交通、用餐和建议的球场组合。',
@@ -53,7 +53,7 @@ const TOOLS = [
     cta: '估算我的旅行',
   },
   {
-    href: '/tools/hotel-recommender',
+    href: '/zh/tools/hotel-recommender',
     eyebrow: '酒店推荐',
     title: '高尔夫酒店推荐工具',
     desc: '六个问题。获得根据你的球场、小组人数和旅行风格定制的酒店列表。覆盖岛上的主要地区。',

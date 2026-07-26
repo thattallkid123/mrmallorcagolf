@@ -1,11 +1,13 @@
 export const dynamic = 'force-dynamic'
 
-export const metadata = {
+export const metadata = buildPageMetadata('/tools/golf-cost-calculator', 'en', {
+
   title: 'Mallorca Golf Trip Cost Calculator',
   description: 'Three steps. A cost estimate for your trip with a suggested course mix.',
   robots: { index: true, follow: true },
-}
+})
 
+import { buildPageMetadata } from '../../../../lib/page-metadata'
 import PageLayout from '../../../../components/PageLayout'
 import GolfCostCalculatorClient from './GolfCostCalculatorClient'
 

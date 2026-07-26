@@ -1,11 +1,13 @@
 export const dynamic = 'force-dynamic'
 
-export const metadata = {
+export const metadata = buildPageMetadata('/tools/course-selector', 'fr', {
+
   title: 'Sélecteur de parcours à Majorque | Gratuit',
   description: 'Huit questions. Une sélection personnalisée de parcours de golf à Majorque adaptée à votre handicap, budget et style. Gratuit, instantané, sans inscription.',
   robots: { index: true, follow: true },
-}
+})
 
+import { buildPageMetadata } from '../../../../lib/page-metadata'
 import PageLayout from '../../../../components/PageLayout'
 import CourseSelectorToolClient from '../../../(en)/tools/course-selector/CourseSelectorToolClient'
 

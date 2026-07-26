@@ -8,7 +8,6 @@ import { NAV_LOCALES, getLocaleFromPath, getLanguageSwitchPath } from '../lib/si
 const LANG_CONFIG = {
   en: {
     links: [
-      { href: '/', label: 'Home' },
       { href: '/about', label: 'About' },
       { href: '/play-with-a-pro', label: 'Play With A Pro' },
       { href: '/plan-your-trip', label: 'Plan Your Trip' },
@@ -20,10 +19,10 @@ const LANG_CONFIG = {
   de: {
     links: [
       { href: '/de', label: 'Start' },
-      { href: '/de/about', label: 'Uber Andy' },
+      { href: '/de/about', label: '\u00dcber Andy' },
       { href: '/de/plan-your-trip', label: 'Reise planen' },
       { href: '/de/play-with-a-pro', label: 'Mit Andy spielen' },
-      { href: '/de/golf-courses', label: 'Platze' },
+      { href: '/de/golf-courses', label: 'Pl\u00e4tze' },
       { href: '/de/guides', label: 'Ratgeber' },
     ],
     cta: { href: '/de/contact', label: 'Anfragen' },
@@ -85,11 +84,17 @@ const LANG_CONFIG = {
   },
 }
 
-const LANG_CODES = NAV_LOCALES.map((locale) => ({
-  code: locale === 'en' ? 'EN' : locale.toUpperCase(),
-  locale,
-  label: locale === 'zh' ? '中文' : locale.toUpperCase(),
-}))
+function getLangCodes(activeLang) {
+  const locales = NAV_LOCALES.includes(activeLang)
+    ? [activeLang, ...NAV_LOCALES.filter((locale) => locale !== activeLang)]
+    : NAV_LOCALES
+
+  return locales.map((locale) => ({
+    code: locale === 'en' ? 'EN' : locale.toUpperCase(),
+    locale,
+    label: locale === 'zh' ? '中文' : locale.toUpperCase(),
+  }))
+}
 
 export default function Nav({ transparent = false, lang }) {
   const [scrolled, setScrolled] = useState(false)
@@ -100,6 +105,7 @@ export default function Nav({ transparent = false, lang }) {
   const activeLang = lang || getLocaleFromPath(resolvedPathname)
   const config = LANG_CONFIG[activeLang] || LANG_CONFIG.en
   const activeLangCode = activeLang === 'en' ? 'EN' : activeLang.toUpperCase()
+  const langCodes = getLangCodes(activeLang)
 
   useEffect(() => {
     if (!transparent) return
@@ -139,10 +145,10 @@ export default function Nav({ transparent = false, lang }) {
           </li>
           <li>
             <div className="nav__lang">
-              {LANG_CODES.map(({ code, locale, label }, i) => (
+              {langCodes.map(({ code, locale, label }, i) => (
                 <span key={code}>
                   <Link href={getLanguageSwitchPath(resolvedPathname, locale)} prefetch={false} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
-                  {i < LANG_CODES.length - 1 && <span className="nav__lang-sep"> · </span>}
+                  {i < langCodes.length - 1 && <span className="nav__lang-sep"> · </span>}
                 </span>
               ))}
             </div>
@@ -168,7 +174,7 @@ export default function Nav({ transparent = false, lang }) {
           {config.cta.label} {'->'}
         </Link>
         <div className="mob-lang">
-          {LANG_CODES.map(({ code, locale, label }) => (
+          {langCodes.map(({ code, locale, label }) => (
             <Link key={code} href={getLanguageSwitchPath(resolvedPathname, locale)} prefetch={false} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               {label}
             </Link>
