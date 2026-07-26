@@ -16,7 +16,7 @@ const FOOTER_COPY = {
     experiences: 'Services',
     itinerary: 'Plan Your Trip',
     pwap: 'Play With A Pro',
-    day: 'What Play With A Pro Looks Like',
+    signature: 'Signature Day',
     guide: 'Golf Guides',
     guideArticles: 'Planning Articles',
     about: 'About',
@@ -211,7 +211,7 @@ export default function Footer({ lang }) {
         <ul>
           {copy.itinerary ? <li><Link href={`${prefix}/plan-your-trip`} prefetch={false}>{copy.itinerary}</Link></li> : null}
           <li><Link href={`${prefix}/play-with-a-pro`} prefetch={false}>{copy.pwap}</Link></li>
-          <li><Link href={getADayPath(locale)} prefetch={false}>{copy.day}</Link></li>
+          {copy.signature ? <li><Link href={`${prefix}/signature-day`} prefetch={false}>{copy.signature}</Link></li> : <li><Link href={getADayPath(locale)} prefetch={false}>{copy.day}</Link></li>}
           {copy.enquire ? <li><Link href={`${prefix}/contact`} prefetch={false}>{copy.enquire}</Link></li> : null}
         </ul>
       </div>
