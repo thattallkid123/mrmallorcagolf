@@ -13,7 +13,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Play With A Pro in Mallorca (Majorca): an 18-hole day with PGA Advanced Professional Andy Griffiths. Solo from ?695, groups from ?950 total, green fees additional.',
     playHeroBody:
-      'Play With A Pro is an 18-hole day with Andy in Mallorca. The course is chosen for your game, the tee time is secured for you, and Andy plays the round alongside you with on-course coaching where it helps. Solo from ?695. Groups from ?950 total. Green fees additional, confirmed before booking.',
+      'Play With A Pro: on-course coaching, course strategy, and real game improvement on the right Mallorca course for you.',
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
