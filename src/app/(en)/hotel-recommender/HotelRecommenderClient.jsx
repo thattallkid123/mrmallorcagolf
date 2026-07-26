@@ -174,11 +174,7 @@ function pillClass(p) {
   return ''
 }
 
-const AREA_LABELS = { southwest:'Southwest Mallorca', north:'North Mallorca', east:'East Mallorca', palma:'Near Palma', northwest:'Northwest / Tramuntana' }
-const GROUP_LABEL = { couple:'a couple', friends:'a group of friends', family:'a family', solo:'a solo traveller', corporate:'a corporate group' }
-const PRIORITY_LABEL = { 'golf-focused':'with golf as the main focus', beach:'with beach time after golf', spa:'with spa recovery between rounds', dining:'with good food and evenings', privacy:'wanting a private villa' }
-const TIER_LABELS = { 1:'Mid-range', 2:'Four-star', 3:'Premium five-star', 4:'Ultra-luxury' }
-const AREA_SHORT = { southwest:'Southwest', north:'North', east:'East', palma:'Palma', northwest:'Northwest' }
+// Note: AREA_LABELS, GROUP_LABEL, PRIORITY_LABEL, TIER_LABELS, AREA_SHORT now come from translations
 
 export default function HotelRecommenderClient({ lang = 'en' }) {
   const t = getHotelRecommenderT(lang)
@@ -265,16 +261,14 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
 
     const answerSummary = (() => {
       const parts = []
-      const areaMap = { southwest:'Southwest Mallorca', north:'North Mallorca', east:'East Mallorca', palma:'Near Palma', northwest:'Northwest / Tramuntana' }
-      const priorityMap = { 'golf-focused':'Close to courses', beach:'Beach & pool', spa:'Spa & wellness', dining:'Food & evenings', privacy:'Private villa / own space' }
-      const groupMap = { couple:'Couple', friends:'Group of friends', family:'Family', solo:'Solo', corporate:'Corporate group' }
+      const priorityMapForEmail = { 'golf-focused':'Close to courses', beach:'Beach & pool', spa:'Spa & wellness', dining:'Food & evenings', privacy:'Private villa / own space' }
       const sizeMap = { '1-2':'1–2 people', '3-5':'3–5 people', '6-9':'6–9 people', '10+':'10+ people' }
       const styleMap = { boutique:'Boutique', resort:'Full resort', classic:'Classic hotel', villa:'Private villa', countryside:'Countryside finca' }
       const budgetMap = { mid:'Up to €250/room', premium:'€250–€500/room', ultra:'€500+/room', flexible:'Flexible budget' }
-      if (answers.area) parts.push(`Area: ${areaMap[answers.area] || answers.area}`)
+      if (answers.area) parts.push(`Area: ${t.areaLabels[answers.area] || answers.area}`)
       const pArr = Array.isArray(answers.priority) ? answers.priority : (answers.priority ? [answers.priority] : [])
-      if (pArr.length) parts.push(`Priorities: ${pArr.map(p => priorityMap[p] || p).join(', ')}`)
-      if (answers.group) parts.push(`Group: ${groupMap[answers.group] || answers.group}`)
+      if (pArr.length) parts.push(`Priorities: ${pArr.map(p => priorityMapForEmail[p] || p).join(', ')}`)
+      if (answers.group) parts.push(`Group: ${t.groupLabel[answers.group] ? t.groupLabel[answers.group].charAt(0).toUpperCase() + t.groupLabel[answers.group].slice(1) : answers.group}`)
       if (answers.size) parts.push(`Size: ${sizeMap[answers.size] || answers.size}`)
       if (answers.style) parts.push(`Style: ${styleMap[answers.style] || answers.style}`)
       if (answers.budget) parts.push(`Budget: ${budgetMap[answers.budget] || answers.budget}`)
@@ -411,9 +405,9 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
 
       {/* HERO */}
       <section className="hr-hero">
-        <span className="hr-eyebrow">Free tool</span>
-        <h1 className="hr-h1">Where should you stay<br/>for your golf trip?</h1>
-        <p className="hr-sub">Six questions. A personalised shortlist matched to your golf itinerary, group, and style.</p>
+        <span className="hr-eyebrow">{t.hero.eyebrow}</span>
+        <h1 className="hr-h1">{t.hero.title}</h1>
+        <p className="hr-sub">{t.hero.sub}</p>
       </section>
 
       <ToolTrustLine />
@@ -429,7 +423,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
       {!results && currentQ && (
         <div className="hr-quiz-wrap">
           <div className="hr-step">
-            <p className="hr-step-num">Question {currentQ.qNum} of {currentQ.total}</p>
+            <p className="hr-step-num">{t.quiz.stepOf(currentQ.qNum, currentQ.total)}</p>
             <h2>{currentQ.title}</h2>
             <p className="hr-step-sub">{currentQ.sub}</p>
 
@@ -450,10 +444,10 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
 
             <div className="hr-nav">
               <button className="hr-btn-next" onClick={next} disabled={!canContinue}>
-                {isLastStep ? 'See my recommendations' : 'Continue'}
+                {isLastStep ? t.buttons.seeRecommendations : t.buttons.continue}
               </button>
               {step > 1 && (
-                <button className="hr-btn-back" onClick={back}>Back</button>
+                <button className="hr-btn-back" onClick={back}>{t.buttons.back}</button>
               )}
             </div>
           </div>
@@ -464,34 +458,34 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
       {results && (
         <>
           <div className="hr-results-hero">
-            <h2>Your hotel shortlist</h2>
+            <h2>{t.results.hero}</h2>
             <p>
-              For {GROUP_LABEL[answers.group] || 'your group'}, {PRIORITY_LABEL[answers.priority] || ''}, staying in {AREA_LABELS[answers.area] || answers.area}.
+              For {t.groupLabel[answers.group] || 'your group'}, {t.priorityLabel[answers.priority] || ''}, staying in {t.areaLabels[answers.area] || answers.area}.
             </p>
           </div>
 
           <div className="hr-results-wrap">
             {answers.area === 'northwest' && (
               <div className="hr-area-warning">
-                <strong>Planning note:</strong> The northwest is spectacular but not a golf base. The nearest course (Golf de Andratx) is around 50 minutes via mountain roads. These options work best as a 2-night Tramuntana experience. Plan golf rounds as full-day excursions or combine with a Southwest base.
+                <strong>{t.results.nwWarningTitle}</strong> {t.results.nwWarning}
               </div>
             )}
 
-            <p className="hr-results-label">Best options for {AREA_LABELS[answers.area] || answers.area}</p>
+            <p className="hr-results-label">Best options for {t.areaLabels[answers.area] || answers.area}</p>
 
             {results.length === 0 ? (
-              <p style={{ color:'#8A7F74', lineHeight:'1.7', fontSize:'0.9rem' }}>No exact matches. Try adjusting your area or budget answers.</p>
+              <p style={{ color:'#8A7F74', lineHeight:'1.7', fontSize:'0.9rem' }}>{t.results.noMatches}</p>
             ) : (
               results.map((x, i) => {
                 const h = x.hotel
-                const rankLabels = ['Best match', 'Second choice', 'Also worth considering']
-                const typeLabel = h.type === 'villa' ? 'Private villa' : (TIER_LABELS[h.luxury] || '')
+                const rankLabels = t.results.rankLabels
+                const typeLabel = h.type === 'villa' ? 'Private villa' : (t.tierLabels[h.luxury] || '')
                 return (
                   <div key={h.id} className={`hr-hotel-card${i === 0 ? ' top' : ''}`}>
                     <div className={`hr-card-rank${i === 0 ? ' gold' : ''}`}>{rankLabels[i]}</div>
                     <div className="hr-card-body">
                       <div className="hr-card-meta">
-                        <span className="hr-card-area">{AREA_SHORT[h.area] || h.area}</span>
+                        <span className="hr-card-area">{t.areaShort[h.area] || h.area}</span>
                         <span className="hr-card-sep">·</span>
                         <span className="hr-card-tier">{typeLabel}</span>
                         {h.travelTime && (
@@ -510,10 +504,10 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
                       </div>
                       <p className="hr-card-why">{h.why}</p>
                       <div className="hr-card-andy">
-                        <div className="hr-card-andy-label">Andy's note</div>
+                        <div className="hr-card-andy-label">{t.results.andysNote}</div>
                         <p>{h.andy}</p>
                       </div>
-                      <p className="hr-card-golf"><strong>Nearby golf:</strong> {h.golf}</p>
+                      <p className="hr-card-golf"><strong>{t.results.nearbyGolf}</strong> {h.golf}</p>
                     </div>
                   </div>
                 )
@@ -522,45 +516,45 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
 
             {/* EMAIL */}
             <div className="hr-email-section">
-              <h3>Email yourself this shortlist</h3>
-              <p>We'll send your matched hotels with the full notes, handy for comparing options with the rest of the group before anyone books.</p>
+              <h3>{t.email.title}</h3>
+              <p>{t.email.sub}</p>
               {emailSent ? (
-                <p className="hr-email-success">Sent. Check your inbox.</p>
+                <p className="hr-email-success">{t.email.success}</p>
               ) : (
                 <>
                   <div className="hr-email-row">
                     <input
                       className="hr-email-input"
                       type="email"
-                      placeholder="your@email.com"
+                      placeholder={t.email.placeholder}
                       value={email}
                       onChange={e => setEmail(e.target.value)}
                     />
-                    <button className="hr-btn-email" onClick={sendEmail}>Email me my shortlist</button>
+                    <button className="hr-btn-email" onClick={sendEmail}>{t.email.button}</button>
                   </div>
                   <label className="hr-newsletter-opt">
                     <input type="checkbox" checked={newsletter} onChange={e => setNewsletter(e.target.checked)} style={{ accentColor:'#B8973C' }} />
-                    Also send me Andy's occasional Mallorca golf planning notes
+                    {t.email.newsletter}
                   </label>
-                  <p style={{ fontSize:'11px', color:'#8A7F74', marginTop:'8px' }}>No spam. Andy replies to every message personally, usually within a day.</p>
-                  {emailError && <p className="hr-email-success">Something went wrong. Try emailing andy@mrmallorcagolf.com directly.</p>}
+                  <p style={{ fontSize:'11px', color:'#8A7F74', marginTop:'8px' }}>{t.email.disclaimer}</p>
+                  {emailError && <p className="hr-email-success">{t.email.error}</p>}
                 </>
               )}
             </div>
 
             {/* ANDY CTA */}
             <div className="hr-andy-cta">
-              <h3>Ready to put the trip together?</h3>
-              <p>Andy can match your hotel choice to the right tee times, courses, and schedule: based on the area, your handicap, and how many rounds you want to fit in.</p>
+              <h3>{t.cta.title}</h3>
+              <p>{t.cta.body}</p>
               <div className="hr-cta-links">
-                <a href="https://www.mrmallorcagolf.com/contact" className="hr-cta-link hr-cta-link-primary">Enquire with Andy</a>
-                <a href={WA_HOTEL_HREF} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>WhatsApp Andy</a>
+                <a href="https://www.mrmallorcagolf.com/contact" className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
+                <a href={WA_HOTEL_HREF} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>{t.cta.whatsapp}</a>
               </div>
             </div>
 
             <div className="hr-retry-wrap">
-              <button className="hr-btn-retry" onClick={() => { setResults(null); setStep(1); setAnswers({}); scrollToTop() }}>Change my answers</button>
-              <button className="hr-btn-retry" onClick={restart} style={{ fontSize:'.78rem', opacity:.7 }}>Start again from scratch</button>
+              <button className="hr-btn-retry" onClick={() => { setResults(null); setStep(1); setAnswers({}); scrollToTop() }}>{t.buttons.reset}</button>
+              <button className="hr-btn-retry" onClick={restart} style={{ fontSize:'.78rem', opacity:.7 }}>{t.buttons.retry}</button>
             </div>
           </div>
         </>
