@@ -177,6 +177,7 @@ Next.js 15 App Router, React 18, JSX only. Vercel deployment from GitHub. Langua
 
 ## Critical Rules
 
+- **Fonts:** Never hardcode `font-family: 'Jost'` or `font-family: 'Cormorant Garamond'`. Always use CSS variables: `font-family: var(--font-sans)` and `font-family: var(--font-serif)`. Hardcoding causes fallback fonts (Arial, Georgia) to render before the webfont loads. Read `docs/FONT_LOADING_RULE.md` for full context and audit status.
 - **Writing:** Read `MMG_BRAND_VOICE_GUIDELINES.md` before any draft. Mandatory self-check before shipping.
 - **Course reviews:** Read `COURSE_BLOG_PIPELINE.md` before starting.
 - **Course photos:** Always `ImageOps.exif_transpose()` from original source files. Never crop blog images. Max 1600px, WebP quality 82. (Full workflow: `/add-site-photos`.)

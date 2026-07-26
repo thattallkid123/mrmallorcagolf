@@ -36,7 +36,7 @@ export default function HomeToolsStrip() {
         }
         .hts-eyebrow {
           display: inline-block;
-          font-family: 'Jost', sans-serif;
+          font-family: var(--font-sans);
           font-size: 11px;
           font-weight: 500;
           letter-spacing: .18em;
@@ -45,7 +45,7 @@ export default function HomeToolsStrip() {
           margin-bottom: 10px;
         }
         .hts-title {
-          font-family: 'Cormorant Garamond', Georgia, serif;
+          font-family: var(--font-serif);
           font-weight: 500;
           font-size: clamp(1.6rem, 4vw, 2.2rem);
           line-height: 1.15;
@@ -84,14 +84,14 @@ export default function HomeToolsStrip() {
           box-shadow: 0 14px 36px rgba(18,17,15,0.10);
         }
         .hts-card-label {
-          font-family: 'Cormorant Garamond', Georgia, serif;
+          font-family: var(--font-serif);
           font-size: 1.25rem;
           font-weight: 500;
           color: #1A1916;
           line-height: 1.2;
         }
         .hts-card-desc {
-          font-family: 'Jost', sans-serif;
+          font-family: var(--font-sans);
           font-weight: 300;
           font-size: .86rem;
           line-height: 1.55;
@@ -99,7 +99,7 @@ export default function HomeToolsStrip() {
         }
         .hts-card-go {
           margin-top: auto;
-          font-family: 'Jost', sans-serif;
+          font-family: var(--font-sans);
           font-size: .78rem;
           letter-spacing: .08em;
           text-transform: uppercase;
@@ -116,7 +116,7 @@ export default function HomeToolsStrip() {
           display: inline-block;
           background: #2D4A3E;
           color: #F7F4EF;
-          font-family: 'Jost', sans-serif;
+          font-family: var(--font-sans);
           font-size: .84rem;
           letter-spacing: .06em;
           padding: 12px 28px;
@@ -126,7 +126,7 @@ export default function HomeToolsStrip() {
         }
         .hts-all:hover { background: #3D6455; }
         .hts-fineprint {
-          font-family: 'Jost', sans-serif;
+          font-family: var(--font-sans);
           font-weight: 300;
           font-size: .78rem;
           color: #8A7F74;

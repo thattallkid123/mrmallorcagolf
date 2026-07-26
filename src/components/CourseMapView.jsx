@@ -159,7 +159,7 @@ export default function CourseMapView({ lang = 'en' }) {
       const width = isGrouped ? 20 + pinLabel.length * 7 : 26
       const icon = L.divIcon({
         className: '',
-        html: `<div style="width:${width}px;height:26px;border-radius:13px;background:#B8973C;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:'Jost',sans-serif;font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35);white-space:nowrap">${pinLabel}</div>`,
+        html: `<div style="width:${width}px;height:26px;border-radius:13px;background:#B8973C;border:2px solid #2D4A3E;display:flex;align-items:center;justify-content:center;color:#20362C;font-family:var(--font-sans);font-weight:600;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,0.35);white-space:nowrap">${pinLabel}</div>`,
         iconSize: [width, 26],
         iconAnchor: [width / 2, 13],
         popupAnchor: [0, -14],
