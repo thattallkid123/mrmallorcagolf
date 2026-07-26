@@ -20,8 +20,8 @@ const FUNNEL_CTA_STRINGS = {
   en: {
     q1: (name) => `Not sure if ${name} is right for your group?`,
     l1: 'Take the 60-second course match →',
-    q2: 'Want Andy to arrange a round here?',
-    l2: 'Get a quote →',
+    q2: 'Want Andy to plan the trip around this course?',
+    l2: 'Plan Your Trip →',
   },
   de: {
     q1: (name) => `Nicht sicher, ob ${name} zu Ihrer Gruppe passt?`,

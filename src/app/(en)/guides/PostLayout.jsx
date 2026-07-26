@@ -1,7 +1,7 @@
 import { getGuidePath, isPublishedGuideSlug } from '../../../lib/site'
 
 const SIDEBAR_COPY = {
-  en: { experience: 'Plan the trip', h3: 'Want this course in a Mallorca golf itinerary that actually makes sense?', guidesTitle: 'Want this course in a Mallorca golf itinerary that actually makes sense?', p: 'Start with the itinerary planner, then add a Play With A Pro day if it improves the trip.', guidesBody: 'Start with the itinerary planner, then add a Play With A Pro day if it improves the trip.', seeExp: 'Play With A Pro', guidesPrimaryCta: 'Play With A Pro', contact: 'Build itinerary', guidesSecondaryCta: 'Build itinerary', moreGuides: 'More Guides', allGuides: 'All guides', home: 'Home', guidesLabel: 'Guides' },
+  en: { experience: 'Plan Your Trip', h3: 'Want this course in a Mallorca golf itinerary that actually makes sense?', guidesTitle: 'Want this course in a Mallorca golf itinerary that actually makes sense?', p: 'Start with the itinerary planner, then add a Play With A Pro day if it improves the trip.', guidesBody: 'Start with the itinerary planner, then add a Play With A Pro day if it improves the trip.', seeExp: 'Play With A Pro', guidesPrimaryCta: 'Play With A Pro', contact: 'Plan Your Trip', guidesSecondaryCta: 'Plan Your Trip', moreGuides: 'More Guides', allGuides: 'All guides', home: 'Home', guidesLabel: 'Guides' },
   de: { experience: 'Das Erlebnis', h3: 'Spielen Sie einen dieser Plätze mit einem PGA Professional an Ihrer Seite.', guidesTitle: 'Spielen Sie einen dieser Plätze mit einem PGA Professional an Ihrer Seite.', p: 'Golftage auf Son Gual, Alcanada und mehr. Alles arrangiert. Coaching auf dem Platz.', guidesBody: 'Golftage auf Son Gual, Alcanada und mehr. Alles arrangiert. Coaching auf dem Platz.', seeExp: 'Erlebnisse entdecken', guidesPrimaryCta: 'Erlebnisse entdecken', contact: 'Kontakt aufnehmen', guidesSecondaryCta: 'Kontakt aufnehmen', moreGuides: 'Weitere Ratgeber', allGuides: 'Alle Ratgeber', home: 'Startseite', guidesLabel: 'Ratgeber' },
   fr: { experience: "L'Expérience", h3: "Jouez l'un de ces parcours avec un professionnel PGA à vos côtés.", guidesTitle: "Jouez l'un de ces parcours avec un professionnel PGA à vos côtés.", p: 'Journées de golf sur Son Gual, Alcanada et ailleurs. Tout organisé. Coaching sur le parcours.', guidesBody: 'Journées de golf sur Son Gual, Alcanada et ailleurs. Tout organisé. Coaching sur le parcours.', seeExp: 'Voir les expériences', guidesPrimaryCta: 'Voir les expériences', contact: 'Prendre contact', guidesSecondaryCta: 'Prendre contact', moreGuides: 'Plus de guides', allGuides: 'Tous les guides', home: 'Accueil', guidesLabel: 'Guides' },
   es: { experience: 'La Experiencia', h3: 'Juegue uno de estos campos con un profesional PGA a su lado.', guidesTitle: 'Juegue uno de estos campos con un profesional PGA a su lado.', p: 'Días de golf en Son Gual, Alcanada y más. Todo organizado. Coaching en el campo.', guidesBody: 'Días de golf en Son Gual, Alcanada y más. Todo organizado. Coaching en el campo.', seeExp: 'Ver las experiencias', guidesPrimaryCta: 'Ver las experiencias', contact: 'Ponerse en contacto', guidesSecondaryCta: 'Ponerse en contacto', moreGuides: 'Más guías', allGuides: 'Todas las guías', home: 'Inicio', guidesLabel: 'Guías' },
@@ -23,8 +23,8 @@ const UPDATED_LABELS = {
 const SIDEBAR_PLANNING = {
   en: {
     title: 'Turn this course into a trip that works.',
-    body: 'Send your dates, handicap, hotel area, and shortlist. I will tell you where this course fits and what should sit around it.',
-    primary: 'Build itinerary',
+    body: 'Send your dates, handicap, hotel area, and shortlist. I will tell you whether this course belongs in the trip, where it fits, and what should sit around it.',
+    primary: 'Plan Your Trip',
     secondary: 'Play With A Pro',
   },
   de: {
