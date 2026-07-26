@@ -75,7 +75,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               </Link>
             </p>
           </div>
-          <CourseSelectorToolClient lang={locale} />
+          <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} />
         </div>
       </section>
 

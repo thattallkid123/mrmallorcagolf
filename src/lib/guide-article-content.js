@@ -890,7 +890,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'play-with-a-pro-explained': {
     metadata: {
-      title: 'What "Play with a Pro" Actually Looks Like | Mr Mallorca Golf',
+      title: 'What "Play with a Pro" Actually Looks Like',
       description:
         'A PGA pro joins your group for a full round: reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like.',
       canonical: 'https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained',

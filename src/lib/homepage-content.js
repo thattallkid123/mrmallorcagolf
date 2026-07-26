@@ -25,15 +25,15 @@ export const HOME_CONTENT = {
   },
   "intro": {
     "eyebrow": "What I do",
-    "title": "A hosted 18-hole day with Andy. Or let me build the trip around it.",
+    "title": "An 18-hole day with Andy. Or let me build the trip around it.",
     "paragraphs": [
-      "Play With A Pro is the hosted on-course day. One course, 18 holes, with me alongside you: course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.",
+      "Play With A Pro is the on-course day with Andy. One course, 18 holes, with me alongside you: course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.",
       "Plan Your Trip is the route-planning service. If you want me to handle the courses, base, routing, tee times, buggies, and bookings before you arrive, I do that too."
     ],
     "services": [
       {
         "title": "Play With A Pro",
-        "text": "A hosted 18-hole day with Andy. Standalone, or the anchor for a wider Mallorca trip.",
+        "text": "An 18-hole day with Andy. Standalone, or the anchor for a wider Mallorca trip.",
         "cta": "Explore the day",
         "href": "/play-with-a-pro"
       },
@@ -235,7 +235,7 @@ export const HOME_CONTENT = {
         "text": "Base, travel time, tee-time rhythm, rest days, lunch, transfers, and budget all matter."
       },
       {
-        "title": "Hosted course day",
+        "title": "Guided course day",
         "text": "When you want the day to be more than a tee time, I can join you for 18 holes and coach the decisions as they happen."
       },
       {
@@ -289,7 +289,7 @@ export const HOME_CONTENT = {
   "packages": {
     "eyebrow": "What I offer",
     "title": "A day on the course with me. Or the whole trip, built around it.",
-    "body": "The core service is Play With A Pro, a hosted 18-hole day with Andy. Solo and group are the core day rates. I always try to secure the most personal tee time possible, but golf courses may pair bookings when busy. A guaranteed private tee time can usually be arranged as an add-on, and is included as standard with Signature Day. If you want the whole trip planned around it, that is available too.",
+    "body": "The core service is Play With A Pro, an 18-hole day with Andy. Solo and group are the core day rates. I always try to secure the most personal tee time possible, but golf courses may pair bookings when busy. A guaranteed private tee time can usually be arranged as an add-on, and is included as standard with Signature Day. If you want the whole trip planned around it, that is available too.",
     "items": [
       {
         "tier": "Solo",
@@ -331,7 +331,7 @@ export const HOME_CONTENT = {
         "price": "€3,000+",
         "signature": true,
         "features": [
-          "Course, private tee time, and hosted golf day",
+          "Course, private tee time, and guided golf day",
           "Lunch, private chef, or restaurant booking",
           "Private transfers and recovery time",
           "Caddy, videographer, and premium club hire options",

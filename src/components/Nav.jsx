@@ -148,7 +148,14 @@ export default function Nav({ transparent = false, lang }) {
             <div className="nav__lang">
               {langCodes.map(({ code, locale, label }, i) => (
                 <span key={code}>
-                  <Link href={getLanguageSwitchPath(resolvedPathname, locale)} prefetch={false} className={activeLangCode === code ? 'active' : ''}>{label}</Link>
+                  <Link
+                    href={getLanguageSwitchPath(resolvedPathname, locale)}
+                    prefetch={false}
+                    className={activeLangCode === code ? 'active' : ''}
+                    aria-label={locale === activeLang ? `Current language: ${label}` : `Switch language to ${label}`}
+                  >
+                    {label}
+                  </Link>
                   {i < langCodes.length - 1 && <span className="nav__lang-sep"> · </span>}
                 </span>
               ))}
@@ -159,13 +166,15 @@ export default function Nav({ transparent = false, lang }) {
         <button
           className={`nav__hamburger${menuOpen ? ' open' : ''}`}
           onClick={() => setMenuOpen((m) => !m)}
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
         >
           <span /><span /><span />
         </button>
       </nav>
 
-      <div className={`nav__mobile${menuOpen ? ' open' : ''}`}>
+      <div className={`nav__mobile${menuOpen ? ' open' : ''}`} id="mobile-navigation">
         {config.links.map(({ href, label }) => (
           <Link key={href} href={href} prefetch={false} className={isActive(href) ? 'active' : ''} onClick={() => setMenuOpen(false)}>
             {label}
@@ -176,7 +185,14 @@ export default function Nav({ transparent = false, lang }) {
         </Link>
         <div className="mob-lang">
           {langCodes.map(({ code, locale, label }) => (
-            <Link key={code} href={getLanguageSwitchPath(resolvedPathname, locale)} prefetch={false} className={activeLangCode === code ? 'active' : ''} onClick={() => setMenuOpen(false)}>
+            <Link
+              key={code}
+              href={getLanguageSwitchPath(resolvedPathname, locale)}
+              prefetch={false}
+              className={activeLangCode === code ? 'active' : ''}
+              aria-label={locale === activeLang ? `Current language: ${label}` : `Switch language to ${label}`}
+              onClick={() => setMenuOpen(false)}
+            >
               {label}
             </Link>
           ))}

@@ -672,8 +672,9 @@ function getCourseFactsLine(course) {
   return facts.join(' · ')
 }
 
-export default function CourseSelectorToolClient({ lang = 'en' }) {
+export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel = 1 }) {
   const t = COURSE_SELECTOR_T[lang] || COURSE_SELECTOR_T.en
+  const HeroHeading = heroHeadingLevel === 2 ? 'h2' : 'h1'
   const [phase, setPhase] = useState('quiz')
   const [qIndex, setQIndex] = useState(0)
   const [answers, setAnswers] = useState({})
@@ -959,7 +960,7 @@ export default function CourseSelectorToolClient({ lang = 'en' }) {
       {/* HERO */}
       <section className="cst-hero">
         <span className="cst-eyebrow">{t.hero.eyebrow}</span>
-        <h1 className="cst-h1">{t.hero.h1}</h1>
+        <HeroHeading className="cst-h1">{t.hero.h1}</HeroHeading>
         <p className="cst-sub">{phase === 'intro' ? t.intro.p : t.hero.sub}</p>
         {phase === 'intro' && (
           <button className="cst-btn gold" onClick={startQuiz} style={{ marginTop:'26px' }}>{t.intro.cta}</button>

@@ -1269,7 +1269,7 @@ export const GUIDE_POST_CONTENT = {
   'on-course-coaching-mallorca': {
     en: {
       metadata: {
-        title: 'On-Course Golf Coaching in Mallorca - Play Better, Right Now | Mr Mallorca Golf',
+        title: 'On-Course Golf Coaching in Mallorca - Play Better, Right Now',
         description:
           'On-course golf coaching in Mallorca with a PGA Advanced Professional. Real situations, real feedback, real improvement. Not a lesson. A round with a coach who makes you better as you play.',
         imagePath: '/images/son-gual-blog/sg-swing.webp',
