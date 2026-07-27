@@ -1356,7 +1356,7 @@ body {
   border-bottom-color: rgba(26,25,22,0.06);
 }
 
-.nav__logo { display: flex; align-items: center; text-decoration: none; margin-left: -8px; }
+.nav__logo { display: flex; align-items: center; text-decoration: none; margin-left: 13px; }
 .nav__logo-img { height: 38px; width: 38px; object-fit: contain; display: block; }
 
 .nav__links { display: flex; align-items: center; gap: 2rem; list-style: none; }
@@ -4875,7 +4875,7 @@ select.form-control { cursor: pointer; }
   min-height: 268px;
   padding: 30px 28px 28px;
   background: var(--white);
-  border: 1px solid rgba(26,25,22,0.15);
+  border: 1px solid rgba(26,25,22,0.24);
   border-radius: 6px;
   text-decoration: none;
   color: inherit;
