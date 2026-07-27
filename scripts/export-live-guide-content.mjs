@@ -28,6 +28,7 @@ const FILE_NAME_OVERRIDES = new Map([
   ['golf-cost-mallorca', 'Guide Article - How Much Does Golf Cost In Mallorca - A Complete 2026 Breakdown.txt'],
   ['golf-trip-planning-mallorca', 'Guide Article - How to Plan the Perfect Golf Trip to Mallorca - Courses, Base & Tee Times.txt'],
   ['is-mallorca-good-for-golf', "Guide Article - Is Mallorca Good For Golf - A PGA Professional's Answer.txt"],
+  ['play-with-a-pro-explained', 'Guide Article - What Play With A Pro Actually Looks Like.txt'],
   ['santa-ponsa-1-review', "Course Review - Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026).txt"],
   ['son-antem-west-review', "Course Review - Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026).txt"],
   ['son-gual-review', 'Course Review - Son Gual Golf Mallorca Review 2026 - Is It Worth It - Green Fees Wind And Verdict.txt'],
