@@ -763,7 +763,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: "Is Mallorca Good for Golf? Yes",
       description:
-        '24 courses, year-round sunshine, €55–€260. PGA pro's honest answer: courses, conditions, expectations.',
+        "24 courses, year-round sunshine, €55–€260. PGA pro's honest answer: courses, conditions, expectations.",
       canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
       image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
       imageAlt: "Is Mallorca Good for Golf? A PGA Professional's Answer",
