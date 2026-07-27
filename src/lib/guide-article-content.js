@@ -5,7 +5,7 @@ import { mergeGuideContent } from './guide-content-localization.js'
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
     metadata: {
-      title: 'Mallorca Golf Green Fees 2026 | All 24 Courses, €55–€260',
+      title: 'Mallorca Golf Green Fees 2026 (€55–€260)',
       description:
         'A round in Mallorca costs €55–€260, most €90–€150. Cheapest Pollença (€55), priciest Son Muntaner (€260). Club hire from €30, buggy €20.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',

@@ -259,34 +259,20 @@ export default function SiteRootLayout({ lang, children }) {
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
-        <Script id="google-analytics-deferred" strategy="lazyOnload">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             (function () {
               if (window.location.pathname.startsWith('/zh')) return;
               if (!/^(www\\.)?mrmallorcagolf\\.com$/.test(window.location.hostname)) return;
 
-              var init = function () {
-                if (window.__mmgGaLoaded) return;
-                window.__mmgGaLoaded = true;
-                var s = document.createElement('script');
-                s.async = true;
-                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N';
-                document.head.appendChild(s);
-                window.dataLayer = window.dataLayer || [];
-                window.gtag = function(){window.dataLayer.push(arguments);};
-                window.gtag('js', new Date());
-                window.gtag('config', 'G-0Z2BRNWB4N');
-              };
-              var once = function () {
-                window.removeEventListener('pointerdown', once);
-                window.removeEventListener('keydown', once);
-                window.removeEventListener('touchstart', once);
-                init();
-              };
-              window.addEventListener('pointerdown', once, { passive: true, once: true });
-              window.addEventListener('keydown', once, { passive: true, once: true });
-              window.addEventListener('touchstart', once, { passive: true, once: true });
-              setTimeout(init, 3000);
+              var s = document.createElement('script');
+              s.async = true;
+              s.src = 'https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N';
+              document.head.appendChild(s);
+              window.dataLayer = window.dataLayer || [];
+              window.gtag = function(){window.dataLayer.push(arguments);};
+              window.gtag('js', new Date());
+              window.gtag('config', 'G-0Z2BRNWB4N');
             })();
           `}
         </Script>

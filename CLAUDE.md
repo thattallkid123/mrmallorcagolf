@@ -175,6 +175,8 @@ Never reference private contact details in public content.
 
 Next.js 15 App Router, React 18, JSX only. Vercel deployment from GitHub. Languages: EN default + DE, ES, FR, NL, SV, ZH. No database, no auth, no payment gateway.
 
+**NL and SV are SEO-only, unlinked from navigation on purpose** (`NAV_LOCALES` in `src/lib/site.js` deliberately excludes them; `ALL_LOCALES` has all 7). Pages exist and are maintained at full parity for organic search, but there is no nav link, language switcher entry, or other on-site path to them. This is intentional, not a gap — do not add them to nav links or flag their absence as a bug.
+
 ## Critical Rules
 
 - **Fonts:** Never hardcode `font-family: 'Jost'` or `font-family: 'Cormorant Garamond'`. Always use CSS variables: `font-family: var(--font-sans)` and `font-family: var(--font-serif)`. Hardcoding causes fallback fonts (Arial, Georgia) to render before the webfont loads. Read `docs/FONT_LOADING_RULE.md` for full context and audit status.

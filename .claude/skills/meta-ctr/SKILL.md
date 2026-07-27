@@ -23,12 +23,15 @@ Low CTR on high-impression pages is the primary SEO lever. Every description is 
 
 ## Process
 
-1. Pull the target pages: high impressions + low CTR from Search Console (or `npm run ops:weekly` output). Always inspect URLs as `https://www.mrmallorcagolf.com/...` (www).
-2. Draft the new description; verify <155 chars and no curly-apostrophe compiler trap with `npm run check:meta-length` (scans `page-metadata.js` + guide metadata files). As of 2026-07-18 this found 32 pre-existing over-length descriptions and one compiler-trap fix already applied — it's a standalone command, not yet in `check:content`, until that backlog is worked through page by page.
-3. Update the key-pages tracking table in `docs/seo-reference.md` so the next session knows what changed and why.
-4. Ship via the `ship` skill (`check:content`; add `check:i18n-release` if localized metadata changed).
-5. Note the change date — CTR effects need ~4 weeks of Search Console data before judging.
+1. Pull the target pages: high impressions + low CTR from Search Console (or `npm run ops:weekly` output). Always inspect URLs as `https://www.mrmallorcagolf.com/...` (www). For queries specific to one page, filter Search Console's `searchAnalytics.query` API by a `page` dimensionFilterGroup — the standalone `search_console_report.py` script has no `--page` flag.
+2. **Diagnose before rewriting.** If a page has decent position (top 10) but flat ~0% CTR across many distinct queries (not just one weak query), don't assume the copy is uncompelling — check what Google is actually showing first (`document.title`, `<meta name="description">`, length included). A title or description that's too long doesn't get a "worse" version shown — Google truncates or algorithmically rewrites it, discarding your copy entirely. Rewriting the wording again without fixing the length repeats the same failure. This happened on `/guides/son-muntaner-review` and `/guides/golf-cost-mallorca`: both titles were rewritten multiple times over months to try to lift CTR, but the *raw* string kept growing (adding price ranges, taglines) and no one accounted for the suffix (see below), so the rendered title in the SERP was 75–90 characters the whole time — none of the rewrites ever actually reached users differently.
+3. Draft the new title/description; verify with `npm run check:meta-length` (scans `page-metadata.js` + guide metadata + their `-localized.js` overlay files — titles and descriptions, all 7 locales). It's a standalone command, not yet in `check:content` — as of 2026-07-27 it has a large backlog (~195 findings sitewide, mostly pre-existing) that needs working through page by page, not fixed in one pass.
+4. Update the key-pages tracking table in `docs/seo-reference.md` so the next session knows what changed and why.
+5. Ship via the `ship` skill (`check:content`; add `check:i18n-release` if localized metadata changed).
+6. Note the change date — CTR effects need ~4 weeks of Search Console data before judging.
 
-## Titles (same lever)
+## Titles (same lever, same length trap as descriptions)
 
-If a title also underperforms: front-load the query words, keep the brand suffix, stay under ~60 visible characters. Don't churn titles and descriptions on the same page in the same week if you want to attribute the effect.
+**The 60-character budget is for the title as Google actually displays it — not the string you type.** Every page title gets `" | Mr Mallorca Golf"` (19 characters) appended automatically by the root layout's Next.js metadata template (`src/app/root-layout-shared.jsx`). This is invisible in the source file — a guide's `metadata.title` string never includes the brand suffix — so a raw title that "looks like" 55 characters in the code is actually 74 in the SERP. `check:meta-length` adds the 19-char suffix back before comparing against 60, so **trust the script's total, not a manual character count of the raw string.** Practical raw-string budget: ~40 characters.
+
+Front-load the query words, keep the brand suffix (don't try to omit it — it isn't part of the string, it's structural), stay under the 60-char *total*. Don't churn titles and descriptions on the same page in the same week if you want to attribute the effect.
