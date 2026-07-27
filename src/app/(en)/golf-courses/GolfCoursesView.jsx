@@ -113,7 +113,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
         <JsonLd data={buildBreadcrumbSchema(locale, content)} />
         {buildFaqSchema(locale, content) && <JsonLd data={buildFaqSchema(locale, content)} />}
 
-        <header className="page-hero" style={{ minHeight: '72vh', overflow: 'hidden', position: 'relative' }}>
+        <header className="page-hero" style={{ overflow: 'hidden', position: 'relative' }}>
           <div aria-hidden="true" style={{ position: 'absolute', inset: 0 }}>
             <Image
               src="/images/golf-courses.webp"

@@ -165,7 +165,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
         <header
           className="page-hero about-hero"
           style={{
-            minHeight: '100vh',
+            minHeight: '100svh',
             backgroundImage:
               'linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%), url(/images/hero-main.webp)',
             backgroundSize: 'auto, auto, cover',

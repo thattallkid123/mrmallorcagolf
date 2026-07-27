@@ -2,7 +2,7 @@
 
 .pyt-hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 100svh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -1099,7 +1099,7 @@
 
 @media (max-width: 640px) {
   .pyt-hero {
-    min-height: 74svh;
+    min-height: 100svh;
     padding: calc(var(--nav-h) + 34px) 20px 34px;
   }
 
@@ -1337,7 +1337,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 28px;
+  --nav-pad: 28px;
+  padding: 0 var(--nav-pad);
   transition: background 0.45s var(--ease-luxury), backdrop-filter 0.45s var(--ease-luxury), box-shadow 0.45s var(--ease-luxury), border-color 0.45s var(--ease-luxury);
   border-bottom: 1px solid transparent;
 }
@@ -1356,7 +1357,9 @@ body {
   border-bottom-color: rgba(26,25,22,0.06);
 }
 
-.nav__logo { display: flex; align-items: center; text-decoration: none; margin-left: 13px; }
+/* Pull the logo back out of the nav's side padding so the gap to the left edge
+   matches the gap above it: (nav height - logo height) / 2 */
+.nav__logo { display: flex; align-items: center; text-decoration: none; margin-left: calc((var(--nav-h) - 38px) / 2 - var(--nav-pad)); }
 .nav__logo-img { height: 38px; width: 38px; object-fit: contain; display: block; }
 
 .nav__links { display: flex; align-items: center; gap: 2rem; list-style: none; }
@@ -1576,7 +1579,7 @@ body {
   margin-top: 0.75rem;
   max-width: 320px;
 }
-.footer__brand .nav__logo { padding: 10px 14px 10px 0; }
+.footer__brand .nav__logo { padding: 10px 14px 10px 0; margin-left: 0; }
 .footer__logo { display: inline-flex; margin-bottom: 1.25rem; }
 .footer__col h3 {
   font-size: 9px;
@@ -1648,7 +1651,7 @@ body {
 
 /* ─── PAGE HERO (inner pages) ────────────────────────────── */
 .page-hero {
-  min-height: 100vh;
+  min-height: 100svh;
   background: var(--deep);
   padding: calc(var(--nav-h) + 20px) 40px 80px;
   position: relative;
@@ -1706,7 +1709,7 @@ body {
 /* ─── NAV RESPONSIVE ─────────────────────────────────────── */
 /* Below 1300px: tighten gaps so nav doesn't squash */
 @media (max-width: 1300px) {
-  .nav { padding: 0 24px; }
+  .nav { --nav-pad: 24px; padding: 0 var(--nav-pad); }
   .nav__links { gap: 1.25rem; }
   .nav__lang { margin-left: 0.75rem; gap: 4px; }
   .nav__cta { padding: 9px 16px; }
@@ -1720,7 +1723,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav { padding: 0 16px; }
+  .nav { --nav-pad: 16px; padding: 0 var(--nav-pad); }
   .hero__content,
   .pwap-hero__content,
   .page-hero__inner {
@@ -1809,7 +1812,7 @@ body {
 /* ─── HOMEPAGE HERO ──────────────────────────────────────── */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 100svh;
   min-height: 640px;
   display: flex;
   flex-direction: column;
@@ -2220,8 +2223,7 @@ body {
 .venue__detail { font-size: 10px; letter-spacing: 0.09em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
 
 /* ─── PLAY WITH A PRO PAGE ───────────────────────────────── */
-.pwap-hero { position: relative; height: 100vh; min-height: 680px; display: flex; align-items: flex-end; overflow: hidden; }
-.pwap-hero--tall { min-height: 92vh; }
+.pwap-hero { position: relative; height: 100svh; min-height: 640px; display: flex; align-items: flex-end; overflow: hidden; }
 .pwap-hero__bg { position: absolute; inset: 0; background-color: #1A3A5C; }
 .pwap-hero__image { object-fit: cover; object-position: 50% center; }
 .pwap-hero__overlay { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(12,11,9,0.76) 0%, rgba(12,11,9,0.5) 35%, rgba(12,11,9,0.2) 68%, rgba(12,11,9,0.08) 100%), linear-gradient(to bottom, rgba(12,11,9,0.08) 0%, rgba(12,11,9,0.38) 100%); }
@@ -4112,7 +4114,7 @@ select.form-control { cursor: pointer; }
 
 /* Guides page performance overrides */
 .page-hero--guides {
-  min-height: 100vh;
+  min-height: 100svh;
   background: #1a1916;
 }
 
@@ -4439,9 +4441,9 @@ select.form-control { cursor: pointer; }
 }
 
 /* Homepage polish refinement - 2026-06-01 */
-.nav { padding: 0 40px; }
-@media (max-width: 1300px) { .nav { padding: 0 30px; } }
-@media (max-width: 768px) { .nav { padding: 0 20px; } }
+.nav { --nav-pad: 40px; padding: 0 var(--nav-pad); }
+@media (max-width: 1300px) { .nav { --nav-pad: 30px; padding: 0 var(--nav-pad); } }
+@media (max-width: 768px) { .nav { --nav-pad: 20px; padding: 0 var(--nav-pad); } }
 
 .home-proof-marquee { display: none !important; }
 
@@ -4854,17 +4856,26 @@ select.form-control { cursor: pointer; }
 }
 .tools-hero--photo .tools-hero__inner { width: 100%; text-shadow: 0 3px 28px rgba(0,0,0,0.62); }
 
-/* Card grid */
+/* Card grid - full-bleed tinted band so the white cards read as six distinct tools */
 .tools-grid-section {
+  max-width: none;
+  margin: 0;
+  background: var(--linen);
+  border-top: 1px solid var(--surface-line);
+  border-bottom: 1px solid var(--surface-line);
+  padding: clamp(44px, 6vw, 72px) clamp(20px, 5vw, 60px) clamp(52px, 6vw, 76px);
+}
+.tools-grid-section__label,
+.tools-grid {
   max-width: var(--max-w);
-  margin: 0 auto;
-  padding: clamp(44px, 6vw, 72px) clamp(20px, 5vw, 60px) clamp(28px, 4vw, 44px);
+  margin-left: auto;
+  margin-right: auto;
 }
 .tools-grid-section__label { display: block; margin-bottom: 22px; }
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 24px;
 }
 @media (max-width: 940px) { .tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .tools-grid { grid-template-columns: 1fr; } }
@@ -4875,17 +4886,17 @@ select.form-control { cursor: pointer; }
   min-height: 268px;
   padding: 30px 28px 28px;
   background: var(--white);
-  border: 1px solid rgba(26,25,22,0.24);
-  border-radius: 6px;
+  border: 1px solid rgba(26,25,22,0.16);
+  border-radius: 4px;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 2px 14px rgba(18,17,15,0.04);
+  box-shadow: 0 4px 18px rgba(18,17,15,0.07);
   transition: transform 0.35s var(--ease-luxury), box-shadow 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury);
 }
 .tool-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(184,151,60,0.42);
-  box-shadow: var(--shadow-soft);
+  border-color: rgba(184,151,60,0.55);
+  box-shadow: var(--shadow-deep);
 }
 .tool-card__eyebrow {
   font-family: var(--font-sans);
