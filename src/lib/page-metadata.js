@@ -313,34 +313,34 @@ const PLAN_YOUR_TRIP_METADATA = {
       'Use our course finder or ask Andy to plan your Mallorca trip: courses, base, routing, tee times, buggies, rentals, dining.',
   },
   de: {
-    title: ‘Golfreise planen - Mallorca’,
+    title: 'Golfreise planen - Mallorca',
     description:
-      ‘Plätze, Basis, Route, Startzeiten, Buggys, Leihschläger und Restaurants - Andy plant Ihre Golfreise.’,
+      'Plätze, Basis, Route, Startzeiten, Buggys, Leihschläger und Restaurants - Andy plant Ihre Golfreise.',
   },
   es: {
-    title: ‘Planificar viaje golf - Mallorca’,
+    title: 'Planificar viaje golf - Mallorca',
     description:
-      ‘Campos, base, ruta, tee times, buggies, alquiler y restaurantes - Andy planifica su viaje.’,
+      'Campos, base, ruta, tee times, buggies, alquiler y restaurantes - Andy planifica su viaje.',
   },
   fr: {
-    title: ‘Planifier séjour golf - Majorque’,
+    title: 'Planifier séjour golf - Majorque',
     description:
-      ‘Parcours, base, itinéraire, heures de départ, buggys, location et repas - Andy planifie votre séjour.’,
+      'Parcours, base, itinéraire, heures de départ, buggys, location et repas - Andy planifie votre séjour.',
   },
   nl: {
-    title: ‘Golftrip plannen - Mallorca’,
+    title: 'Golftrip plannen - Mallorca',
     description:
-      ‘Banen, basis, route, starttijden, buggys, clubhuur en restaurants - Andy plant uw reis.’,
+      'Banen, basis, route, starttijden, buggys, clubhuur en restaurants - Andy plant uw reis.',
   },
   sv: {
-    title: ‘Planera golfresa - Mallorca’,
+    title: 'Planera golfresa - Mallorca',
     description:
-      ‘Banor, bas, rutt, starttider, golfbilar, klubbor och mat - Andy planerar din resa.’,
+      'Banor, bas, rutt, starttider, golfbilar, klubbor och mat - Andy planerar din resa.',
   },
   zh: {
-    title: ‘规划高尔夫之旅 - 马略卡’,
+    title: '规划高尔夫之旅 - 马略卡',
     description:
-      ‘球场、住宿、路线、开球时间、球车、租赁和餐饮 - Andy 为您规划行程。’,
+      '球场、住宿、路线、开球时间、球车、租赁和餐饮 - Andy 为您规划行程。',
   },
 }
 
