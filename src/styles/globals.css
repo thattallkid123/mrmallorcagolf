@@ -4875,8 +4875,8 @@ select.form-control { cursor: pointer; }
   min-height: 268px;
   padding: 30px 28px 28px;
   background: var(--white);
-  border: 1px solid var(--surface-line);
-  border-radius: 2px;
+  border: 1px solid rgba(26,25,22,0.15);
+  border-radius: 6px;
   text-decoration: none;
   color: inherit;
   box-shadow: 0 2px 14px rgba(18,17,15,0.04);
