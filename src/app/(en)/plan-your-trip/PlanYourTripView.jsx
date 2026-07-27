@@ -99,6 +99,21 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               <div className="pyt-itin" id="sample-itinerary-body">
                 <p className="pyt-itin__intro">{content.sampleItinerary.intro}</p>
 
+                {content.sampleItinerary.whyThisShape ? (
+                  <div className="pyt-itin-why">
+                    <h3 className="pyt-itin-why__title">{content.sampleItinerary.whyThisShape.title}</h3>
+                    <p className="pyt-itin-why__lead">{content.sampleItinerary.whyThisShape.lead}</p>
+                    <ul className="pyt-itin-why__list">
+                      {content.sampleItinerary.whyThisShape.points.map((point) => (
+                        <li key={point.title} className="pyt-itin-why__item">
+                          <strong className="pyt-itin-why__item-title">{point.title}</strong>
+                          <span className="pyt-itin-why__item-body">{point.body}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+
                 {content.sampleItinerary.days.map((day, i) => (
                   <article
                     key={day.day}
@@ -117,24 +132,51 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                     <div className="pyt-itin-row__text">
                       <p className="pyt-itin-row__day">{day.day}</p>
                       <h3 className="pyt-itin-row__course">{day.course}</h3>
-                      <p className="pyt-itin-row__subtitle">{day.title}</p>
-                      <p className="pyt-itin-row__body">{day.body}</p>
                       <p className="pyt-itin-row__meta">
-                        <span>{day.fromPalma} {locale === 'zh' ? '从帕尔马' : locale === 'es' ? 'de Palma' : locale === 'de' ? 'von Palma' : locale === 'fr' ? 'de Palma' : locale === 'nl' ? 'van Palma' : locale === 'sv' ? 'från Palma' : 'from Palma'}</span>
+                        <span>{day.fromPalma} {content.sampleItinerary.fromPalmaLabel}</span>
                         <span aria-hidden="true">&middot;</span>
-                        <span>{day.price}</span>
+                        <span>{day.courseType}</span>
+                        <span aria-hidden="true">&middot;</span>
+                        <span>{day.role}</span>
                       </p>
-                      {day.dining ? <p className="pyt-itin-row__dining">{day.dining}</p> : null}
-                      {day.guide && <Link href={day.guide} className="pyt-itin-row__link">
-                        {content.sampleItinerary.readGuideLabel}
-                      </Link>}
+                      <p className="pyt-itin-row__body">{day.body}</p>
+                      {day.teeTime ? (
+                        <p className="pyt-itin-row__note">
+                          <strong>{content.sampleItinerary.teeTimeLabel}:</strong> {day.teeTime}
+                        </p>
+                      ) : null}
+                      {day.planningNote ? (
+                        <p className="pyt-itin-row__note">
+                          <strong>{content.sampleItinerary.planningNoteLabel}:</strong> {day.planningNote}
+                        </p>
+                      ) : null}
+                      {day.dining ? (
+                        <p className="pyt-itin-row__dining">
+                          <strong>{content.sampleItinerary.diningLabel}:</strong> {day.dining}
+                        </p>
+                      ) : null}
+                      {day.swap ? (
+                        <p className="pyt-itin-row__swap">
+                          <strong>{content.sampleItinerary.swapLabel}:</strong> {day.swap}
+                        </p>
+                      ) : null}
+                      {day.guide ? (
+                        <Link href={buildLocalePath(day.guide, locale)} className="pyt-itin-row__link">
+                          {content.sampleItinerary.readGuideLabel}
+                        </Link>
+                      ) : null}
                     </div>
                   </article>
                 ))}
 
                 <div className="pyt-itin__footer">
                   <p className="pyt-itin__summary">{content.sampleItinerary.summary}</p>
-                  <p>{content.sampleItinerary.fees}</p>
+                  <p>
+                    {content.sampleItinerary.feesNote}{' '}
+                    <Link href={buildLocalePath(content.sampleItinerary.feesLink, locale)} className="pyt-itin__hotel-link">
+                      {content.sampleItinerary.feesCta}
+                    </Link>
+                  </p>
                   <p>
                     {content.sampleItinerary.hotelEyebrow}:{' '}
                     <Link href={hotelRecommenderHref} className="pyt-itin__hotel-link">
@@ -142,6 +184,15 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                     </Link>
                   </p>
                 </div>
+
+                {content.sampleItinerary.ctaText ? (
+                  <div className="pyt-itin__cta">
+                    <p className="pyt-itin__cta-text">{content.sampleItinerary.ctaText}</p>
+                    <Link href={contactHref} className="pyt-itin__cta-btn">
+                      {content.sampleItinerary.ctaLabel}
+                    </Link>
+                  </div>
+                ) : null}
               </div>
             )}
           </div>
