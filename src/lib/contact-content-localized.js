@@ -33,8 +33,22 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "handicap": "Su hándicap",
         "groupsize": "Tamaño del grupo",
         "experience": "¿Qué opción le encaja mejor?",
+        "serviceType": "¿Con qué necesita ayuda?",
+        "pwapFormat": "Si Play With A Pro es parte de ello, ¿cuál le parece más cercano?",
         "message": "Cualquier otra cosa que deba saber"
       },
+      "serviceTypes": [
+        ["pwap", "Play With A Pro"],
+        ["trip-planning", "Planificar mi viaje de golf"],
+        ["both", "Ambos"],
+        ["not-sure", "Aún no lo sé"]
+      ],
+      "pwapFormats": [
+        ["pwap-solo", "Solo", ""],
+        ["pwap-group", "Grupo", ""],
+        ["signature-day", "El Día Andy Completo", ""],
+        ["pwap-not-sure", "Aún no lo sé", ""]
+      ],
       "placeholders": {
         "fname": "Juan",
         "lname": "García",
@@ -138,8 +152,22 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "handicap": "Ihr Handicap",
         "groupsize": "Gruppengröße",
         "experience": "Welche Option passt am besten?",
+        "serviceType": "Wobei kann ich Ihnen helfen?",
+        "pwapFormat": "Wenn Play With A Pro Teil davon ist, welches Format passt am besten?",
         "message": "Was sollte ich sonst noch wissen?"
       },
+      "serviceTypes": [
+        ["pwap", "Play With A Pro"],
+        ["trip-planning", "Meine Golfreise planen"],
+        ["both", "Beides"],
+        ["not-sure", "Noch nicht sicher"]
+      ],
+      "pwapFormats": [
+        ["pwap-solo", "Solo", ""],
+        ["pwap-group", "Gruppe", ""],
+        ["signature-day", "Der Andy-Tag", ""],
+        ["pwap-not-sure", "Noch nicht sicher", ""]
+      ],
       "placeholders": {
         "fname": "Max",
         "lname": "Mustermann",
@@ -243,8 +271,22 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "handicap": "Votre handicap",
         "groupsize": "Taille du groupe",
         "experience": "Quelle formule vous convient le mieux ?",
+        "serviceType": "Avec quoi puis-je vous aider ?",
+        "pwapFormat": "Si Play With A Pro en fait partie, quelle formule vous convient le mieux ?",
         "message": "Autre chose que je devrais savoir"
       },
+      "serviceTypes": [
+        ["pwap", "Play With A Pro"],
+        ["trip-planning", "Planifier mon voyage de golf"],
+        ["both", "Les deux"],
+        ["not-sure", "Je ne suis pas sûr"]
+      ],
+      "pwapFormats": [
+        ["pwap-solo", "Solo", ""],
+        ["pwap-group", "Groupe", ""],
+        ["signature-day", "La Journée Andy", ""],
+        ["pwap-not-sure", "Je ne suis pas sûr", ""]
+      ],
       "placeholders": {
         "fname": "Jean",
         "lname": "Dupont",
@@ -348,8 +390,22 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "handicap": "Uw handicap",
         "groupsize": "Groepsgrootte",
         "experience": "Welke optie past het best?",
+        "serviceType": "Waarmee kan ik u helpen?",
+        "pwapFormat": "Als Play With A Pro ervan deel uitmaakt, welke optie past het best?",
         "message": "Is er verder nog iets dat ik moet weten?"
       },
+      "serviceTypes": [
+        ["pwap", "Play With A Pro"],
+        ["trip-planning", "Mijn golfreis plannen"],
+        ["both", "Beide"],
+        ["not-sure", "Ik weet het nog niet"]
+      ],
+      "pwapFormats": [
+        ["pwap-solo", "Solo", ""],
+        ["pwap-group", "Groep", ""],
+        ["signature-day", "De Andy-dag", ""],
+        ["pwap-not-sure", "Ik weet het nog niet", ""]
+      ],
       "placeholders": {
         "fname": "Jan",
         "lname": "de Vries",
@@ -451,8 +507,22 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "handicap": "Ditt handicap",
         "groupsize": "Gruppstorlek",
         "experience": "Vilket upplägg passar dig bäst?",
+        "serviceType": "Vad kan jag hjälpa dig med?",
+        "pwapFormat": "Om Play With A Pro är en del av det, vilket upplägg passar dig bäst?",
         "message": "Något annat jag bör veta"
       },
+      "serviceTypes": [
+        ["pwap", "Play With A Pro"],
+        ["trip-planning", "Planera min golfresa"],
+        ["both", "Båda"],
+        ["not-sure", "Jag är osäker"]
+      ],
+      "pwapFormats": [
+        ["pwap-solo", "Solo", ""],
+        ["pwap-group", "Grupp", ""],
+        ["signature-day", "Andys dag", ""],
+        ["pwap-not-sure", "Jag är osäker", ""]
+      ],
       "placeholders": {
         "fname": "Erik",
         "lname": "Svensson",
@@ -558,8 +628,22 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "handicap": "您的差点",
         "groupsize": "人数",
         "experience": "您更想了解哪种安排？",
+        "serviceType": "我可以为您提供什么帮助？",
+        "pwapFormat": "如果 Play With A Pro 是您想要的一部分，哪种方式最适合您？",
         "message": "还有什么我应该知道的？"
       },
+      "serviceTypes": [
+        ["pwap", "Play With A Pro"],
+        ["trip-planning", "规划我的高尔夫之旅"],
+        ["both", "两种都想"],
+        ["not-sure", "还没有决定"]
+      ],
+      "pwapFormats": [
+        ["pwap-solo", "单人", ""],
+        ["pwap-group", "小组", ""],
+        ["signature-day", "安迪之日", ""],
+        ["pwap-not-sure", "还没有决定", ""]
+      ],
       "placeholders": {
         "fname": "张",
         "lname": "先生",
