@@ -5,7 +5,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "play-with-a-pro-explained": {
     "es": {
       "metadata": {
-        "title": "Un día en Son Gual: cómo es realmente la experiencia",
+        "title": "Un día en Son Gual - La experiencia",
         "description": "Desde la llegada hasta el último putt y la comida en la terraza: así se vive de verdad un día en Son Gual con un profesional PGA.",
         "imageAlt": "Un día en Son Gual"
       },
@@ -78,7 +78,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Ein Tag in Son Gual: wie das Erlebnis wirklich aussieht",
+        "title": "Ein Tag in Son Gual - Das Erlebnis",
         "description": "Vom Weg zum Clubhaus bis zum letzten Putt und dem Mittagessen auf der Terrasse - so fühlt sich ein Tag in Son Gual mit einem PGA-Professional wirklich an.",
         "imageAlt": "Ein Tag in Son Gual"
       },
@@ -151,7 +151,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Une journée à Son Gual : à quoi ressemble vraiment l’expérience",
+        "title": "Une journée à Son Gual - L’expérience",
         "description": "De l’arrivée au club-house jusqu’au dernier putt puis au déjeuner en terrasse : voici à quoi ressemble vraiment une journée à Son Gual avec un professionnel PGA.",
         "imageAlt": "Une journée à Son Gual"
       },
@@ -453,7 +453,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Guía",
         "readTime": "8 min de lectura",
         "updated": "Marzo 2026",
-        "title": "Los mejores campos de golf de Mallorca: clasificación honesta",
+        "title": "Mejores campos - Clasificación honesta",
         "intro": "Veinticuatro campos en la isla. Así los priorizaría para un visitante con poco tiempo y expectativas altas.",
         "related": [
           {
@@ -1265,7 +1265,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Guide",
         "readTime": "8 min de lecture",
         "updated": "Mars 2026",
-        "title": "Les meilleurs parcours de golf à Majorque - classement honnête",
+        "title": "Meilleurs parcours - Classement honnête",
         "intro": "Vingt-quatre parcours sur l'île. Voilà comment je les prioriserais pour un visiteur avec peu de temps et des attentes élevées.",
         "related": [
           {
@@ -3123,7 +3123,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Saison",
         "readTime": "6 min de lecture",
         "updated": "Mars 2026",
-        "title": "La meilleure période pour jouer au golf à Majorque - mois par mois",
+        "title": "Meilleure période - Mois par mois",
         "intro": "La réponse courte : septembre à novembre et février à mai. Voici la version honnête, mois par mois.",
         "related": [
           {
@@ -3239,7 +3239,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Seizoen",
         "readTime": "6 min leestijd",
         "updated": "Maart 2026",
-        "title": "De beste tijd om golf te spelen op Mallorca - maand voor maand",
+        "title": "Beste tijd - Maand voor maand",
         "intro": "Het korte antwoord: september tot november en februari tot mei. Dit is de eerlijke versie, maand voor maand.",
         "related": [
           {
@@ -3581,7 +3581,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "golf-club-hire-mallorca": {
     "es": {
       "metadata": {
-        "title": "Alquiler de palos en Mallorca: lo que de verdad merece la pena",
+        "title": "Alquiler de palos - Qué merece la pena",
         "description": "Alquiler de palos en Mallorca explicado con honestidad: traer los propios palos o alquilar, qué empresas funcionan y dónde merece la pena gastar.",
         "imageAlt": "Alquiler de palos en Mallorca"
       },
@@ -4303,7 +4303,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "golf-cost-mallorca": {
     "es": {
       "metadata": {
-        "title": "¿Cuánto cuesta jugar al golf en Mallorca? Desglose completo 2026",
+        "title": "Cuánto cuesta golf - Desglose 2026",
         "description": "¿Cuánto cuesta jugar al golf en Mallorca en 2026? Greenfees, alquiler de palos, buggies y comida, explicado con claridad por un profesional PGA en la isla.",
         "imageAlt": "¿Cuánto cuesta jugar al golf en Mallorca? Desglose completo 2026"
       },
@@ -4311,7 +4311,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Greenfees",
         "readTime": "5 min de lectura",
         "updated": "Marzo 2026",
-        "title": "¿Cuánto cuesta jugar al golf en Mallorca? Desglose completo 2026",
+        "title": "Cuánto cuesta golf - Desglose 2026",
         "intro": "Una vuelta puede costar 20 € o 220 € según dónde juegue y en qué época venga. Este es el desglose honesto para 2026 de alguien que juega aquí casi cada semana.",
         "related": [
           {
@@ -4444,7 +4444,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Was kostet Golf auf Mallorca? Der komplette Preisüberblick 2026",
+        "title": "Golf Kosten - Preisüberblick 2026",
         "description": "Was kostet Golf auf Mallorca 2026? Greenfees, Leihschläger, Buggies und Essen - der ehrliche Preisüberblick von einem PGA-Professional vor Ort.",
         "imageAlt": "Was kostet Golf auf Mallorca? Der komplette Preisüberblick 2026"
       },
@@ -4452,7 +4452,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Greenfees",
         "readTime": "5 Min. Lesezeit",
         "updated": "März 2026",
-        "title": "Was kostet Golf auf Mallorca? Der komplette Preisüberblick 2026",
+        "title": "Golf Kosten - Preisüberblick 2026",
         "intro": "Eine Runde kann je nach Platz und Saison 20 € oder 220 € kosten. Hier ist der ehrliche Preisüberblick für 2026 von jemandem, der hier fast jede Woche spielt.",
         "related": [
           {
@@ -4867,7 +4867,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026",
+        "title": "Golfkostnader - Översikt 2026",
         "description": "Vad kostar golf på Mallorca 2026? Greenfee, klubbhyror, buggy och lunch - en rak kostnadsbild från ett PGA-proffs på ön.",
         "imageAlt": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026"
       },
@@ -4875,7 +4875,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Greenfee",
         "readTime": "5 min lasning",
         "updated": "Mars 2026",
-        "title": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026",
+        "title": "Golfkostnader - Översikt 2026",
         "intro": "En rond kan kosta från ungefär €55 under värdesäsongen upp till ungefär €260 på de högsta nivåerna. Här är den raka kostnadsbilden för 2026 från någon som spelar här nästan varje vecka.",
         "related": [
           {
@@ -5159,7 +5159,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Planificación",
         "readTime": "7 min de lectura",
         "updated": "Marzo 2026",
-        "title": "Cómo planificar un viaje de golf a Mallorca: lo importante de verdad",
+        "title": "Planificar viaje golf - Lo importante",
         "intro": "Sin relleno turístico. Qué campos jugar, cuándo venir, cuántas vueltas hacer, cómo desplazarse y qué merece la pena fuera del campo.",
         "related": [
           {
@@ -5285,7 +5285,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Reiseplanung",
         "readTime": "7 Min. Lesezeit",
         "updated": "März 2026",
-        "title": "Golfreise nach Mallorca planen: alles, was Sie wissen müssen",
+        "title": "Golfreise planen - Essentials",
         "intro": "Keine Tourismusfloskeln. Welche Plätze, welche Monate, wie viele Runden, wie man sich bewegt und was man außerhalb des Golfplatzes tun sollte.",
         "related": [
           {
@@ -5410,7 +5410,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Planification",
         "readTime": "7 min de lecture",
         "updated": "Mars 2026",
-        "title": "Planifier un voyage de golf à Majorque - ce qui compte vraiment",
+        "title": "Planifier voyage golf - L'essentiel",
         "intro": "Pas de discours touristique. Quels parcours, quelles périodes, combien de parties, comment se déplacer et quoi faire en dehors du parcours.",
         "related": [
           {
@@ -5532,7 +5532,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Reisplanning",
         "readTime": "7 min leestijd",
         "updated": "Maart 2026",
-        "title": "Een golfreis naar Mallorca plannen - wat echt telt",
+        "title": "Golftrip plannen - Essentials",
         "intro": "Geen toeristische opvulling. Welke banen u moet spelen, wanneer u komt, hoeveel rondes logisch zijn en wat de beste aanpak buiten de baan is.",
         "related": [
           {
@@ -5654,7 +5654,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Reseplanering",
         "readTime": "7 min läsning",
         "updated": "Mars 2026",
-        "title": "Planera en golfresa till Mallorca - det som faktiskt spelar roll",
+        "title": "Planera golfresa - Essentials",
         "intro": "Ingen turisttext. Vilka banor man ska spela, när man ska komma, hur många rundor som är vettiga och vad som är värt att göra utanför golfen.",
         "related": [
           {
@@ -5904,7 +5904,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Guía",
         "readTime": "5 min de lectura",
         "updated": "Marzo 2026",
-        "title": "¿Es Mallorca buena para el golf? Una respuesta honesta de alguien que vive aquí",
+        "title": "¿Mallorca buena para golf? Respuesta honesta",
         "intro": "Sí. Pero la respuesta correcta es un poco más completa, y ahí está justamente el valor.",
         "related": [
           {
@@ -6029,7 +6029,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Ratgeber",
         "readTime": "5 Min. Lesezeit",
         "updated": "März 2026",
-        "title": "Ist Mallorca gut für Golf? Die ehrliche Antwort von jemandem, der hier lebt",
+        "title": "Mallorca für Golf? Die ehrliche Antwort",
         "intro": "Ja. Aber die richtige Antwort ist etwas differenzierter - und genau darin liegt der Punkt.",
         "related": [
           {
@@ -6154,7 +6154,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Guide",
         "readTime": "5 min de lecture",
         "updated": "Mars 2026",
-        "title": "Majorque est-elle bonne pour le golf ? La réponse honnête de quelqu'un qui vit ici",
+        "title": "Majorque pour golf? La réponse honnête",
         "intro": "Oui. Mais la vraie réponse est un peu plus nuancée, et c'est justement là que l'île devient intéressante.",
         "related": [
           {
@@ -6277,7 +6277,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Gids",
         "readTime": "5 min leestijd",
         "updated": "Maart 2026",
-        "title": "Is Mallorca goed voor golf? Het eerlijke antwoord van iemand die hier woont",
+        "title": "Mallorca voor golf? Het eerlijke antwoord",
         "intro": "Ja. Maar het juiste antwoord is iets uitgebreider, en precies daar ligt de kracht van het eiland.",
         "related": [
           {
@@ -6402,7 +6402,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Guide",
         "readTime": "5 min lasning",
         "updated": "Mars 2026",
-        "title": "Ar Mallorca bra for golf? Det arliga svaret fran nagon som bor har",
+        "title": "Mallorca för golf? Det ärliga svaret",
         "intro": "Ja. Men det riktiga svaret ar lite mer nyanserat, och just dar ligger styrkan.",
         "related": [
           {

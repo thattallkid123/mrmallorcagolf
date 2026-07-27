@@ -77,29 +77,29 @@ const GOLF_COURSES_METADATA = {
       'All 24 Mallorca golf courses: green fees €55–€250, difficulty, regions, and which fits your trip.',
   },
   de: {
-    title: 'Golfplätze Mallorca 2026 | Alle 24 Plätze, Green Fees & Bewertungen',
+    title: '24 Golfplätze - Gebühren & Tipps',
     description:
-      'Vergleiche alle 24 Golfplätze auf Mallorca: Green Fees, Schwierigkeitsgrad, Regionen und ehrliche Empfehlungen eines PGA Advanced Professionals vor Ort. Aktualisiert 2026.',
+      '24 Golfplätze auf Mallorca: Gebühren €55–€250, Schwierigkeit, Regionen, welcher passt zu Ihnen.',
   },
   es: {
-    title: 'Mejores campos de golf en Mallorca (2026) - guia completa',
+    title: '24 Campos - Guía Completa',
     description:
-      'Compara los 24 campos de golf en Mallorca: green fees, dificultad, zonas y recomendaciones honestas de un PGA profesional para saber que campo te conviene.',
+      '24 campos de golf en Mallorca: green fees €55–€250, dificultad, zonas, cuál te conviene.',
   },
   fr: {
-    title: "Guide Golf Majorque 2026 - Tous les parcours de l'ile",
+    title: '24 Parcours - Guide Complet',
     description:
-      "Le guide complet du golf a Majorque - 24 parcours, green fees, evaluations de difficulte et recommandations honnetes d'un professionnel PGA base sur l'ile. Edition 2026.",
+      '24 parcours à Majorque: green fees €55–€250, difficulté, régions, lequel vous convient.',
   },
   nl: {
-    title: 'Mallorca Golfgids 2026 - Alle banen op het eiland',
+    title: '24 Banen - Gids & Gebühren',
     description:
-      'De complete gids voor golf op Mallorca - alle 24 banen, greenfees, moeilijkheidsgraden en eerlijke aanbevelingen van een PGA professional op het eiland. Editie 2026.',
+      '24 banen op Mallorca: greenfees €55–€250, moeilijkheid, regio\'s, welke past bij u.',
   },
   sv: {
-    title: 'Mallorca Golfguide 2026 - Alla banor pa on',
+    title: '24 Banor - Guide & Avgifter',
     description:
-      'Den kompletta guiden till golf pa Mallorca - alla 24 banor, greenavgifter, svarighetsbetyg och arliga rekommendationer fran en PGA-professional baserad pa on. 2026-utgavan.',
+      '24 banor på Mallorca: greenavgifter €55–€250, svårighet, regioner, vilken passar dig.',
   },
   zh: {
     title: '马略卡高尔夫球场指南 2026 - 岛上全部球场',
@@ -115,72 +115,72 @@ const GUIDES_INDEX_METADATA = {
       'Golf guides for Mallorca by a PGA pro: course reviews, green fees, trip planning, best time to visit.',
   },
   de: {
-    title: 'Mallorca Golff\u00fchrer - Platz-Bewertungen, Tipps & Reiseplanung',
+    title: 'Golf Guide - Tipps & Bewertungen',
     description:
-      'Ehrliche Golfratgeber f\u00fcr Mallorca von einem PGA Advanced Professional vor Ort. Platzbewertungen, Greenfees, beste Reisezeit und Urlaubsplanung \u2013 aktualisiert f\u00fcr 2026.',
+      'Golfratgeber f\u00fcr Mallorca von PGA Pro: Reviews, Geb\u00fchren, Reiseplanning.',
   },
   es: {
-    title: 'Guia de Golf en Mallorca - Analisis de campos y consejos',
+    title: 'Guía Golf - Consejos & Análisis',
     description:
-      'Guias honestas de golf en Mallorca de un Profesional PGA. Analisis de campos, green fees y planificacion de viajes - actualizadas para 2026.',
+      'Guías de golf en Mallorca de PGA Pro: análisis, green fees, planificación de viaje.',
   },
   fr: {
-    title: 'Guide Golf Majorque - Avis sur les parcours et conseils',
+    title: 'Guide Golf - Conseils & Avis',
     description:
-      'Guides honnetes sur le golf a Majorque par un Professionnel PGA. Avis sur les parcours, green fees et planification de voyage - mis a jour pour 2026.',
+      'Guide golf à Majorque par PGA Pro: avis, green fees, planification de voyage.',
   },
   nl: {
-    title: 'Mallorca Golfgids - Baanbeoordelingen en tips',
+    title: 'Golfgids - Tips & Beoordelingen',
     description:
-      'Eerlijke golfgidsen voor Mallorca van een PGA Professional. Baanbeoordelingen, greenfees en reisplanning - bijgewerkt voor 2026.',
+      'Golfgids voor Mallorca van PGA Pro: reviews, greenfees, reisplanning.',
   },
   sv: {
-    title: 'Mallorca Golfguide - Banomdomen och tips',
+    title: 'Golfguide - Tips & Omdömen',
     description:
-      'Arliga golfguider for Mallorca av en PGA Professional. Banomdomen, greenfees och reseplanering - uppdaterade for 2026.',
+      'Golfguide för Mallorca av PGA Pro: omdömen, greenavgifter, reseplanering.',
   },
   zh: {
-    title: '马略卡高尔夫指南 - 球场评测与实用建议',
+    title: '高尔夫指南 - 评测与建议',
     description:
-      '由驻岛 PGA 职业教练撰写的马略卡高尔夫真实指南，包含球场评测、绿费参考及 2026 年行程规划建议。',
+      '高尔夫真实指南，包含球场评测、绿费参考及行程规划建议。',
   },
 }
 
 const ABOUT_METADATA = {
   en: {
-    title: 'About Andy Griffiths - PGA Pro in Mallorca',
+    title: 'Andy Griffiths - PGA Pro, Mallorca',
     description:
-      'Andy Griffiths, PGA Advanced Professional. Experience: Pebble Beach, Evian, 11 years coaching in China.',
+      'PGA Pro based in Mallorca. Experience: Pebble Beach, Evian, 11 years coaching in China.',
   },
   de: {
-    title: 'Uber Andy Griffiths - PGA Professional, Mallorca',
+    title: 'Andy Griffiths - PGA Pro Mallorca',
     description:
-      'Andy Griffiths ist ein UK PGA Advanced Professional mit Sitz auf Mallorca. Ehemals Pebble Beach, Evian, 11 Jahre Coaching in China.',
+      'PGA Pro auf Mallorca. Früher: Pebble Beach, Evian, 11 Jahre Coaching in China.',
   },
   es: {
-    title: 'Sobre Andy Griffiths - PGA Profesional, Mallorca',
+    title: 'Andy Griffiths - PGA Pro Mallorca',
     description:
-      'Andy Griffiths es un UK PGA Advanced Professional con base en Mallorca. Anteriormente Pebble Beach, Evian, 11 anos de entrenamiento en China.',
+      'PGA Pro en Mallorca. Anterior: Pebble Beach, Evian, 11 años coaching en China.',
   },
   fr: {
-    title: "A propos d'Andy Griffiths - Professionnel PGA Avance, Majorque",
+    title: 'Andy Griffiths - PGA Pro Majorque',
     description:
-      "Andy Griffiths est un professionnel PGA avance du Royaume-Uni base a Majorque. Ancien coach a Pebble Beach, Evian, 11 ans de coaching en Chine.",
+      'PGA Pro à Majorque. Avant: Pebble Beach, Evian, 11 ans coaching en Chine.',
   },
   nl: {
-    title: 'Over Andy Griffiths - PGA Professional, Mallorca',
+    title: 'Andy Griffiths - PGA Pro Mallorca',
     description:
-      'Andy Griffiths is een Britse UK PGA Advanced Professional gevestigd op Mallorca. Eerder Pebble Beach, Evian, 11 jaar coaching in China.',
+      'PGA Pro op Mallorca. Eerder: Pebble Beach, Evian, 11 jaar coaching in China.',
   },
   sv: {
-    title: 'Om Andy Griffiths - PGA-professional, Mallorca',
+    title: 'Andy Griffiths - PGA Pro Mallorca',
     description:
-      'Andy Griffiths ar en brittisk PGA Advanced Professional baserad pa Mallorca. Tidigare Pebble Beach, Evian, 11 ar coaching i Kina.',
+      'PGA Pro på Mallorca. Tidigare: Pebble Beach, Evian, 11 år coaching i Kina.',
   },
   zh: {
-    title: '关于 Andy Griffiths - PGA 职业教练，马略卡',
+    title: '关于 Andy Griffiths - PGA 职业教练',
     description:
-      'Andy Griffiths 是英国 PGA 高级职业教练，现驻马略卡。曾执教于 Pebble Beach、Evian，并在中国从事高尔夫教学逾十一年。',
+      'PGA 职业教练驻马略卡。曾执教于 Pebble Beach、Evian，11 年中国教学经验。',
   },
 }
 
@@ -191,34 +191,34 @@ const COACHING_METADATA = {
       'On-course coaching with PGA pro Andy Griffiths. Real improvement in real conditions, for visiting and resident golfers.',
   },
   de: {
-    title: 'Golfschule Mallorca | Golflehrer Andy Griffiths – PGA Professional',
+    title: 'Golf Coaching Mallorca - PGA Pro',
     description:
-      'Golfunterricht auf dem Platz in Mallorca mit PGA Advanced Professional Andy Griffiths. TPI Level 3, TrackMan-zertifiziert, 11 Jahre Coaching in Shanghai. Fuer Besucher und Einwohner.',
+      'On-course coaching auf Mallorca mit PGA Pro Andy Griffiths. Echte Verbesserung unter echten Bedingungen.',
   },
   es: {
-    title: 'Coaching de Golf en Campo en Mallorca - PGA Profesional',
+    title: 'Coaching Golf Mallorca - PGA Pro',
     description:
-      'Coaching de golf en campo en Mallorca con UK PGA Advanced Professional Andy Griffiths. Mejora real en condiciones reales - para golfistas en visita y residentes.',
+      'Coaching en campo en Mallorca con PGA Pro Andy Griffiths. Mejora real en condiciones reales.',
   },
   fr: {
-    title: 'Coaching Golf sur Parcours a Majorque - Professionnel PGA',
+    title: 'Coaching Golf Majorque - PGA Pro',
     description:
-      'Coaching golf sur parcours a Majorque avec un Professionnel PGA Avance Andy Griffiths. Amelioration reelle dans des conditions reelles - pour golfeurs en visite et residents.',
+      'Coaching sur parcours à Majorque avec PGA Pro Andy Griffiths. Amélioration réelle en conditions réelles.',
   },
   nl: {
-    title: 'On-Course Golfcoaching in Mallorca - PGA Professional',
+    title: 'Golfcoaching Mallorca - PGA Pro',
     description:
-      'On-course golfcoaching op Mallorca met PGA Advanced Professional Andy Griffiths. Echte verbetering in echte omstandigheden - voor bezoekers en inwoners.',
+      'On-course coaching op Mallorca met PGA Pro Andy Griffiths. Echte verbetering in echte omstandigheden.',
   },
   sv: {
-    title: 'On-Course Golfcoaching i Mallorca - PGA-professional',
+    title: 'Golfcoaching Mallorca - PGA Pro',
     description:
-      'On-course golfcoaching i Mallorca med PGA Advanced Professional Andy Griffiths. Verklig forbattring i verkliga forhallanden - for besokande och bosatta golfare.',
+      'On-course coaching i Mallorca med PGA Pro Andy Griffiths. Verklig förbättring i verkliga förhållanden.',
   },
   zh: {
-    title: '马略卡球场实地高尔夫教学 - PGA 职业教练',
+    title: '马略卡高尔夫教学 - PGA 职业教练',
     description:
-      '与英国 PGA 高级职业教练 Andy Griffiths 在马略卡进行球场实地教学。在真实球场条件下获得真实进步，适合来访及在岛球手。',
+      '马略卡球场实地教学，由 PGA 职业教练 Andy Griffiths 指导。真实进步，真实条件。',
   },
 }
 
@@ -235,27 +235,27 @@ const PLAY_WITH_A_PRO_METADATA = {
     ],
   },
   de: {
-    title: 'Mit einem Profi spielen - Golftag auf Mallorca',
+    title: 'Mit Pro spielen - Mallorca Golf',
     description: getPlayWithAProMetadataDescription('de'),
   },
   es: {
-    title: 'Jugar con un Profesional - Golf en Mallorca con un PGA Pro',
+    title: 'Jugar con Pro - Golf Mallorca',
     description: getPlayWithAProMetadataDescription('es'),
   },
   fr: {
-    title: 'Jouer avec un Pro - Golf a Majorque avec un PGA Pro',
+    title: 'Jouer avec Pro - Golf Majorque',
     description: getPlayWithAProMetadataDescription('fr'),
   },
   nl: {
-    title: 'Spelen met een Pro - Golfdag op Mallorca',
+    title: 'Spelen met Pro - Golfdag',
     description: getPlayWithAProMetadataDescription('nl'),
   },
   sv: {
-    title: 'Spela med ett Proffs - Golfdag pa Mallorca',
+    title: 'Spela med Pro - Mallorca Golf',
     description: getPlayWithAProMetadataDescription('sv'),
   },
   zh: {
-    title: '马略卡私人高尔夫球日 - 与职业教练同场竞技',
+    title: '与职业教练同场竞技',
     description: getPlayWithAProMetadataDescription('zh'),
   },
 }
@@ -267,34 +267,34 @@ const CONTACT_METADATA = {
       'Share your dates, handicap, hotel area, and goals. Get a personal reply within 24 hours via email or WhatsApp.',
   },
   de: {
-    title: 'Kontakt Andy Griffiths - UK PGA Professional',
+    title: 'Kontakt - Golf Anfrage',
     description:
-      'Arrangieren Sie Ihren Golftag auf Mallorca. UK PGA Advanced Professional Andy Griffiths antwortet persoenlich innerhalb von 24 Stunden.',
+      'Teilen Sie Ihre Daten, Handicap und Ziele mit. Persönliche Antwort innerhalb von 24 Stunden.',
   },
   es: {
-    title: 'Contacto Andy Griffiths - PGA Profesional',
+    title: 'Contacto - Consulta Golf',
     description:
-      'Organice su dia de golf en Mallorca. Andy Griffiths responde personalmente en 24 horas.',
+      'Comparta sus fechas, handicap y objetivos. Respuesta personal dentro de 24 horas.',
   },
   fr: {
-    title: 'Contact Andy Griffiths - PGA Professionnel',
+    title: 'Contact - Demande Golf',
     description:
-      'Organisez votre journee golf a Majorque. Andy Griffiths repond personnellement sous 24 heures.',
+      'Partagez vos dates, handicap et objectifs. Réponse personnelle sous 24 heures.',
   },
   nl: {
-    title: 'Contact Andy Griffiths - PGA Professional',
+    title: 'Contact - Golfverzoek',
     description:
-      'Organiseer uw golfdag op Mallorca. Andy Griffiths reageert persoonlijk binnen 24 uur.',
+      'Deel je data, handicap en doelen. Persoonlijk antwoord binnen 24 uur.',
   },
   sv: {
-    title: 'Kontakt Andy Griffiths - UK PGA-proffs',
+    title: 'Kontakt - Golfförfrågan',
     description:
-      'Arrangera din golfdag pa Mallorca. Andy Griffiths svarar personligen inom 24 timmar.',
+      'Dela dina datum, handicap och mål. Personligt svar inom 24 timmar.',
   },
   zh: {
-    title: '联系 Andy Griffiths - PGA 职业教练',
+    title: '联系我们 - 高尔夫咨询',
     description:
-      '预约马略卡私人高尔夫球日。Andy Griffiths 亲自回复每一条咨询，24 小时内必达。',
+      '分享您的日期、差点和目标。24 小时内获得个人回复。',
   },
 }
 
@@ -313,34 +313,34 @@ const PLAN_YOUR_TRIP_METADATA = {
       'Use our course finder or ask Andy to plan your Mallorca trip: courses, base, routing, tee times, buggies, rentals, dining.',
   },
   de: {
-    title: 'Mallorca Golfreise planen',
+    title: ‘Golfreise planen - Mallorca’,
     description:
-      'Nutzen Sie den kostenlosen Platzfinder als Startpunkt oder lassen Sie Andy Ihre Mallorca Golfreise sauber planen: Plätze, Basis, Route, Startzeiten, Buggys, Leihschläger und Restaurants.',
+      ‘Plätze, Basis, Route, Startzeiten, Buggys, Leihschläger und Restaurants - Andy plant Ihre Golfreise.’,
   },
   es: {
-    title: 'Planifique su viaje de golf a Mallorca',
+    title: ‘Planificar viaje golf - Mallorca’,
     description:
-      'Use el buscador gratuito de campos como punto de partida o deje que Andy planifique su viaje de golf a Mallorca: campos, base, ruta, tee times, buggies, alquiler de palos y restaurantes.',
+      ‘Campos, base, ruta, tee times, buggies, alquiler y restaurantes - Andy planifica su viaje.’,
   },
   fr: {
-    title: 'Planifiez votre séjour golf à Majorque',
+    title: ‘Planifier séjour golf - Majorque’,
     description:
-      'Utilisez la sélection gratuite de parcours comme point de départ, ou demandez à Andy de planifier correctement votre séjour golf à Majorque : parcours, base, itinéraire, heures de départ, buggys, location de clubs et repas.',
+      ‘Parcours, base, itinéraire, heures de départ, buggys, location et repas - Andy planifie votre séjour.’,
   },
   nl: {
-    title: 'Plan uw golfreis naar Mallorca',
+    title: ‘Golftrip plannen - Mallorca’,
     description:
-      "Gebruik de gratis banenzoeker als startpunt, of laat Andy uw golfreis naar Mallorca goed plannen: banen, basis, route, starttijden, buggy’s, clubhuur en restaurants.",
+      ‘Banen, basis, route, starttijden, buggys, clubhuur en restaurants - Andy plant uw reis.’,
   },
   sv: {
-    title: 'Planera din golfresa till Mallorca',
+    title: ‘Planera golfresa - Mallorca’,
     description:
-      'Använd den fria banfindern som utgångspunkt, eller låt Andy planera din golfresa till Mallorca ordentligt: banor, bas, rutt, starttider, golfbilar, klubbor och mat.',
+      ‘Banor, bas, rutt, starttider, golfbilar, klubbor och mat - Andy planerar din resa.’,
   },
   zh: {
-    title: '规划您的马略卡高尔夫之旅',
+    title: ‘规划高尔夫之旅 - 马略卡’,
     description:
-      '可先用免费的球场筛选器做起点，或者直接让 Andy 为您认真规划马略卡高尔夫之旅：球场、住宿基点、路线、开球时间、球车、球杆租赁和餐饮。',
+      ‘球场、住宿、路线、开球时间、球车、租赁和餐饮 - Andy 为您规划行程。’,
   },
 }
 
@@ -351,34 +351,34 @@ const SUBSCRIBE_METADATA = {
       'Join our mailing list for Mallorca golf insights, course reviews, and trip planning tips from a PGA pro.',
   },
   de: {
-    title: 'Golf-Einblicke aus Mallorca - Wöchentlicher Newsletter',
+    title: 'Golf Newsletter - Mallorca Insights',
     description:
-      'Abonnieren Sie unseren Newsletter für wöchentliche Golf-Einblicke aus Mallorca, Platz-Bewertungen und Reiseplanung von einem PGA-Profi.',
+      'Golf-Einblicke, Platz-Bewertungen und Reiseplanung von PGA Pro aus Mallorca.',
   },
   es: {
-    title: 'Perspectivas de Golf en Mallorca - Boletín Semanal',
+    title: 'Newsletter Golf - Perspectivas Mallorca',
     description:
-      'Únase a nuestra lista de correo para obtener perspectivas semanales de golf en Mallorca, reseñas de campos y consejos de viaje de un profesional PGA.',
+      'Perspectivas de golf, reseñas de campos y consejos de viaje de PGA Pro.',
   },
   fr: {
-    title: 'Perspectives Golf à Majorque - Lettre d\'information Hebdomadaire',
+    title: 'Infolettre Golf - Perspectives Majorque',
     description:
-      'Rejoignez notre liste de diffusion pour des perspectives hebdomadaires sur le golf à Majorque, des avis sur les parcours et des conseils de voyage d\'un professionnel PGA.',
+      'Perspectives golf, avis sur les parcours et conseils de voyage de PGA Pro.',
   },
   nl: {
-    title: 'Golfinzichten van Mallorca - Wekelijkse Nieuwsbrief',
+    title: 'Golfnieuwsbrief - Mallorca Inzichten',
     description:
-      'Abonneer je op onze mailinglist voor wekelijkse golfinzichten van Mallorca, beoordelingen van banen en reisadviezen van een PGA-professional.',
+      'Golfinzichten, baanbeoordelingen en reisadviezen van PGA Pro.',
   },
   sv: {
-    title: 'Golfinblickar från Mallorca - Veckovis Nyhetsbrev',
+    title: 'Golfnyhetsbrev - Mallorca Inblickar',
     description:
-      'Prenumerera på vår maillista för veckovisa golfinblickar från Mallorca, banavgifter och reseplaneringsadiv från en PGA-professional.',
+      'Golfinblickar, banavgifter och reseplaneringsråd från PGA Pro.',
   },
   zh: {
-    title: '马略卡高尔夫资讯 - 定期简报',
+    title: '高尔夫简报 - 马略卡资讯',
     description:
-      '订阅邮件列表，每两周收到来自驻岛 PGA 职业教练的马略卡高尔夫资讯、球场评测与行程规划建议。',
+      '来自 PGA 职业教练的高尔夫资讯、球场评测和行程规划建议。',
   },
 }
 
@@ -390,9 +390,9 @@ const LEGAL_METADATA = {
         'Privacy policy for Mr Mallorca Golf. How we collect, use, and protect your personal data in accordance with GDPR and Spanish data protection law.',
     },
     es: {
-      title: 'Politica de Privacidad',
+      title: 'Privacidad',
       description:
-        'Politica de privacidad de Mr Mallorca Golf. Como recopilamos, usamos y protegemos tus datos personales conforme al RGPD y la LOPDGDD.',
+        'Política de privacidad: cómo recopilamos, usamos y protegemos tus datos conforme a RGPD.',
     },
   },
   terms: {
@@ -402,9 +402,9 @@ const LEGAL_METADATA = {
         'Terms and conditions for Mr Mallorca Golf experiences and services in Mallorca, Spain.',
     },
     es: {
-      title: 'Terminos y Condiciones',
+      title: 'Términos y Condiciones',
       description:
-        'Terminos y condiciones de las experiencias y servicios de Mr Mallorca Golf en Mallorca, Espana.',
+        'Términos y condiciones de servicios de Mr Mallorca Golf en Mallorca.',
     },
   },
 }

@@ -5,8 +5,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "son-gual-review": {
     "es": {
       "metadata": {
-        "title": "Son Gual Golf Mallorca - Reseña honesta de un profesional PGA (2026)",
-        "description": "El campo Son Gual en Mallorca, evaluado por un profesional PGA que lo juega con regularidad. Green fees, dificultad, qué esperar y por qué Obama y Nadal siguen volviendo."
+        "title": "Son Gual - Reseña & Tarifas",
+        "description": "Son Gual en Mallorca: green fees, dificultad y qué esperar."
       },
       "meta": {
         "badge": "Reseña del campo",
@@ -176,8 +176,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Son Gual Golf Mallorca - Ehrliche Bewertung eines PGA-Professionals (2026)",
-        "description": "Son Gual auf Mallorca, bewertet von einem PGA-Professional, der den Platz regelmäßig spielt. Greenfees, Schwierigkeit, was Sie erwartet und warum Obama und Nadal immer wiederkommen."
+        "title": "Son Gual - Review & Gebühren",
+        "description": "Son Gual auf Mallorca: Greenfees, Schwierigkeit und Erwartungen."
       },
       "meta": {
         "badge": "Platzbewertung",
@@ -347,8 +347,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Son Gual Golf Majorque - Avis honnête d'un professionnel PGA (2026)",
-        "description": "Le parcours Son Gual à Majorque, évalué par un professionnel PGA qui le joue régulièrement. Green fees, difficulté, ce qui vous attend et pourquoi Obama et Nadal y reviennent."
+        "title": "Son Gual - Avis & Tarifs",
+        "description": "Son Gual à Majorque: green fees, difficulté et ce qui vous attend."
       },
       "meta": {
         "badge": "Avis parcours",
@@ -518,8 +518,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Son Gual Golf Mallorca - eerlijke recensie van een PGA-professional (2026)",
-        "description": "Son Gual golfbaan op Mallorca, beoordeeld door een PGA-professional die er regelmatig speelt."
+        "title": "Son Gual - Review & Tarief",
+        "description": "Son Gual op Mallorca: greenfees, moeilijkheidsgraad en verwachtingen."
       },
       "meta": {
         "badge": "Baanrecensie",
@@ -689,8 +689,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Son Gual Golf Mallorca - ärlig recension från ett PGA-proffs (2026)",
-        "description": "Son Gual golfbana på Mallorca recenserad av ett PGA-proffs."
+        "title": "Son Gual - Recension & Avgifter",
+        "description": "Son Gual på Mallorca: golfavgifter, svårighet och förväntningar."
       },
       "meta": {
         "badge": "Banrecension",
@@ -1033,8 +1033,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "alcanada-review": {
     "es": {
       "metadata": {
-        "title": "Club de Golf Alcanada - Análisis honesto de un Profesional PGA",
-        "description": "Alcanada en Mallorca, visto por un Profesional PGA que lo juega con frecuencia. El faro, los greens, la terraza y los green fees de 2026."
+        "title": "Alcanada - Reseña & Tarifas",
+        "description": "Alcanada en Mallorca: el faro, los greens y green fees 2026."
       },
       "meta": {
         "badge": "Análisis del campo",
@@ -1198,8 +1198,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals",
-        "description": "Alcanada auf Mallorca, ehrlich bewertet von einem PGA-Professional, der den Platz regelmäßig spielt. Leuchtturm, Grüns, Restaurantterrasse und Greenfees 2026."
+        "title": "Alcanada - Review & Gebühren",
+        "description": "Alcanada auf Mallorca: Leuchtturm, Grüns und Greenfees 2026."
       },
       "meta": {
         "badge": "Platzbewertung",
@@ -2023,8 +2023,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "santa-ponsa-1-review": {
     "es": {
       "metadata": {
-        "title": "Golf Santa Ponsa 1, Mallorca - Análisis honesto de un Profesional PGA",
-        "description": "Santa Ponsa 1 en Mallorca, visto por un Profesional PGA. Historia de Tour, fairways amplios y confianza renovada con el driver."
+        "title": "Santa Ponsa 1 - Reseña & Tarifas",
+        "description": "Santa Ponsa 1 en Mallorca: historia de Tour, fairways amplios y tarifas."
       },
       "meta": {
         "badge": "Análisis del campo",
@@ -2161,8 +2161,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Golf Santa Ponsa 1, Mallorca - ehrliche Bewertung eines PGA-Professionals",
-        "description": "Santa Ponsa 1 auf Mallorca, ehrlich bewertet von einem PGA-Professional. Tour-Geschichte, breite Fairways und ein Platz, der Vertrauen vom Tee gibt."
+        "title": "Santa Ponsa 1 - Review & Gebühren",
+        "description": "Santa Ponsa 1 auf Mallorca: Tour-Geschichte, breite Fairways, Gebühren."
       },
       "meta": {
         "badge": "Platzbewertung",
@@ -2299,8 +2299,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Golf Santa Ponsa 1, Majorque - Avis honnête d'un professionnel PGA",
-        "description": "Santa Ponsa 1 à Majorque, vu par un professionnel PGA. Histoire du Tour, fairways généreux et confiance retrouvée au driver."
+        "title": "Santa Ponsa 1 - Avis & Tarifs",
+        "description": "Santa Ponsa 1 à Majorque: histoire du Tour, fairways généreux, tarifs."
       },
       "meta": {
         "badge": "Avis parcours",
@@ -2435,8 +2435,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Golf Santa Ponsa 1, Mallorca - eerlijke review van een PGA-professional",
-        "description": "Santa Ponsa 1 op Mallorca, bekeken door een PGA-professional. Tourgeschiedenis, brede fairways en hernieuwd vertrouwen met de driver."
+        "title": "Santa Ponsa 1 - Review & Tarief",
+        "description": "Santa Ponsa 1 op Mallorca: tourgeschiedenis, brede fairways, tarief."
       },
       "meta": {
         "badge": "Baanreview",
@@ -2573,8 +2573,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension från ett PGA-proffs",
-        "description": "Santa Ponsa 1 på Mallorca, sett genom ögonen på ett PGA-proffs. Tourhistoria, generösa fairways och förnyat självförtroende med drivern."
+        "title": "Santa Ponsa 1 - Recension & Avgifter",
+        "description": "Santa Ponsa 1 på Mallorca: tourhistoria, generösa fairways, avgifter."
       },
       "meta": {
         "badge": "Banrecension",
@@ -2851,8 +2851,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "son-termes-review": {
     "es": {
       "metadata": {
-        "title": "Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)",
-        "description": "Reseña de Son Termes Golf en Mallorca por un profesional de la PGA. Vistas de montaña, notas honestas del recorrido, green fee y para quién encaja, escrita por alguien que lo jugó esta misma semana."
+        "title": "Son Termes - Reseña & Tarifas",
+        "description": "Son Termes Golf en Mallorca: vistas de montaña, green fee y tarifas."
       },
       "meta": {
         "badge": "Reseña de campo",
@@ -3013,8 +3013,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)",
-        "description": "Son Termes Golf auf Mallorca, bewertet von einem PGA-Professional. Bergpanorama, ehrliche Platznotizen, Greenfees und für wen der Platz geeignet ist – von jemandem, der ihn diese Woche gespielt hat."
+        "title": "Son Termes - Review & Gebühren",
+        "description": "Son Termes Golf auf Mallorca: Bergpanorama, ehrliche Notizen, Greenfees."
       },
       "meta": {
         "badge": "Platz-Bewertung",
@@ -3174,8 +3174,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
-        "description": "Avis sur le golf de Son Termes à Majorque par un professionnel PGA. Vues de montagne, notes de parcours honnêtes, green-fee et profil de joueur, par quelqu'un qui l'a joué cette semaine."
+        "title": "Son Termes - Avis & Tarifs",
+        "description": "Son Termes Golf à Majorque: vues de montagne, notes honnêtes, tarifs."
       },
       "meta": {
         "badge": "Test de parcours",
@@ -3334,8 +3334,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)",
-        "description": "Son Termes Golf op Mallorca, beoordeeld door een PGA-professional. Bergzichten, eerlijke baannotities, greenfees en voor wie de baan geschikt is, van iemand die er deze week heeft gespeeld."
+        "title": "Son Termes - Review & Tarief",
+        "description": "Son Termes Golf op Mallorca: bergzichten, eerlijke notities, tarief."
       },
       "meta": {
         "badge": "Baanreview",
@@ -3496,8 +3496,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Son Termes Golf, Mallorca: en ärlig recension av ett PGA-proffs (2026)",
-        "description": "Recension av Son Termes Golf på Mallorca av ett PGA-proffs. Bergsvyer, ärliga bananteckningar, greenfee och vem banan passar, från någon som spelade den den här veckan."
+        "title": "Son Termes - Recension & Avgifter",
+        "description": "Son Termes Golf på Mallorca: bergsvyer, ärliga anteckningar, avgifter."
       },
       "meta": {
         "badge": "Banrecension",
@@ -4049,8 +4049,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Golf Son Muntaner, Mallorca - Ehrliche Bewertung eines PGA-Professionals (2026)",
-        "description": "Son Muntaner Golfplatz Mallorca – bewertet von einem PGA-Professional. Bester Golfplatz Spaniens 2025. Greenfees, Platzbedingungen und für wen er geeignet ist.",
+        "title": "Son Muntaner - Bewertung & Gebühren",
+        "description": "Son Muntaner Mallorca: bester Golfplatz Spaniens 2025, Gebühren.",
         "imagePath": "/images/son-muntaner-blog/sm-8.webp"
       },
       "meta": {
@@ -4275,8 +4275,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Golf Son Muntaner, Majorque - avis honnête d'un Professionnel PGA (2026)",
-        "description": "Son Muntaner, le parcours de golf de Majorque analysé par un Professionnel PGA. Meilleur parcours d'Espagne 2025. Green fees, conditions du parcours et à qui il convient.",
+        "title": "Son Muntaner - Avis & Tarifs",
+        "description": "Son Muntaner à Majorque: meilleur parcours d'Espagne 2025, tarifs.",
         "imagePath": "/images/son-muntaner-blog/sm-8.webp"
       },
       "meta": {
@@ -4500,8 +4500,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Golf Son Muntaner, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
-        "description": "Son Muntaner golfbaan Mallorca beoordeeld door een PGA Professional. Beste golfbaan van Spanje 2025. Greenfees, baanomstandigheden en voor wie het geschikt is.",
+        "title": "Son Muntaner - Beoordeling & Tarief",
+        "description": "Son Muntaner op Mallorca: beste baan van Spanje 2025, tarief.",
         "imagePath": "/images/son-muntaner-blog/sm-8.webp"
       },
       "meta": {
@@ -4724,8 +4724,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Golf Son Muntaner, Mallorca - ärlig recension av en PGA Professional (2026)",
-        "description": "Son Muntaner golfbana Mallorca recenserad av en PGA Professional. Bästa golfbana i Spanien 2025. Greenfees, banevillkor och vem det passar.",
+        "title": "Son Muntaner - Recension & Avgifter",
+        "description": "Son Muntaner på Mallorca: bästa bana i Spanien 2025, avgifter.",
         "imagePath": "/images/son-muntaner-blog/sm-8.webp"
       },
       "meta": {
@@ -5179,14 +5179,14 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "t-golf-calvia-review": {
     "es": {
       "metadata": {
-        "title": "T Golf Calvià Análisis (2026) - Greenfees, Estado del Campo y Valoración Honesta",
-        "description": "T Golf Calvià analizado por un profesional PGA que jugó en mayo de 2026. Hasta 210 € en hora punta, twilight desde 150 €. 15 lagos, 6.500 m desde los tees traseros, 9/10 en estado."
+        "title": "T Golf Calvià - Análisis & Tarifas",
+        "description": "T Golf Calvià en Mallorca: 15 lagos, 210 € punta, 9/10 estado."
       },
       "meta": {
         "badge": "Análisis de Campo",
         "readTime": "6 min",
         "updated": "Mayo 2026",
-        "title": "T Golf Calvià Análisis - La Opinión Honesta de un Profesional PGA (2026)",
+        "title": "T Golf Calvià - Análisis & Tarifas",
         "intro": "Quince lagos, molinos de viento por todo el campo y algunos de los greens más puros que he jugado en Mallorca. Un 9 sobre 10 y uno de los campos mejor cuidados de la isla.",
         "related": [
           {
@@ -5342,14 +5342,14 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "T Golf Calvià Bewertung (2026) - Greenfees, Platzzustand & ehrliche Einschätzung",
-        "description": "T Golf Calvià bewertet von einem PGA-Professional, der im Mai 2026 gespielt hat. Bis zu 210 € Peak, Twilight ab 150 €. 15 Seen, 6.500 m von den hinteren Abschlägen, 9/10 Platzzustand."
+        "title": "T Golf Calvià - Bewertung & Gebühren",
+        "description": "T Golf Calvià auf Mallorca: 15 Seen, 210 € Peak, 9/10 Zustand."
       },
       "meta": {
         "badge": "Platz-Bewertung",
         "readTime": "6 Min.",
         "updated": "Mai 2026",
-        "title": "T Golf Calvià Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
+        "title": "T Golf Calvià - Bewertung & Gebühren",
         "intro": "Fünfzehn Seen, Windmühlen auf dem gesamten Platz und einige der reinsten Grüns, die ich in Mallorca gespielt habe. 9 von 10 und einer der bestgepflegten Plätze der Insel.",
         "related": [
           {
@@ -5505,14 +5505,14 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "T Golf Calvià Avis (2026) - Green Fees, État du Parcours & Note Honnête",
-        "description": "T Golf Calvià analysé par un professionnel PGA qui a joué en mai 2026. Jusqu'à 210 € en haute saison, twilight à partir de 150 €. 15 lacs, 6 500 m depuis les départs arrière, 9/10 en état."
+        "title": "T Golf Calvià - Avis & Tarifs",
+        "description": "T Golf Calvià à Majorque: 15 lacs, 210 € haute saison, 9/10 état."
       },
       "meta": {
         "badge": "Avis Parcours",
         "readTime": "6 min",
         "updated": "Mai 2026",
-        "title": "T Golf Calvià Avis - L'Avis Honnête d'un Professionnel PGA (2026)",
+        "title": "T Golf Calvià - Avis & Tarifs",
         "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. Un 9 sur 10 et l'un des parcours les mieux entretenus de l'île.",
         "related": [
           {
@@ -5666,14 +5666,14 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "T Golf Calvià Review (2026) - Greenfees, Baancondities & Eerlijke Beoordeling",
-        "description": "T Golf Calvià beoordeeld door een PGA Professional die in mei 2026 speelde. Tot €210 piekperiode, twilight vanaf €150. 15 meren, 6.500m vanaf de achterste tees, 9/10 conditie."
+        "title": "T Golf Calvià - Review & Tarief",
+        "description": "T Golf Calvià op Mallorca: 15 meren, €210 piek, 9/10 conditie."
       },
       "meta": {
         "badge": "Baanreview",
         "readTime": "6 min",
         "updated": "Mei 2026",
-        "title": "T Golf Calvià Review - De Eerlijke Mening van een PGA Professional (2026)",
+        "title": "T Golf Calvià - Review & Tarief",
         "intro": "Vijftien meren, windmolens door de hele baan en enkele van de zuiverste greens die ik op Mallorca heb gespeeld. Een 9 uit 10 en een van de best onderhouden banen op het eiland.",
         "related": [
           {
@@ -5829,14 +5829,14 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "T Golf Calvià Recension (2026) - Greenfee, Banans Skick & Ärlig Bedömning",
-        "description": "T Golf Calvià recenserad av en PGA-professional som spelade i maj 2026. Upp till 210 € högsäsong, twilight från 150 €. 15 sjöar, 6 500 m från bakre tee, 9/10 i skick."
+        "title": "T Golf Calvià - Recension & Avgifter",
+        "description": "T Golf Calvià på Mallorca: 15 sjöar, 210 € högsäsong, 9/10 skick."
       },
       "meta": {
         "badge": "Banrecension",
         "readTime": "6 min",
         "updated": "Maj 2026",
-        "title": "T Golf Calvià Recension - En PGA-Professionals Ärliga Omdöme (2026)",
+        "title": "T Golf Calvià - Recension & Avgifter",
         "intro": "Femton sjöar, väderkvarnar på hela banan och några av de renaste greenerna jag spelat på Mallorca. En 9 av 10 och en av de bäst skötta banorna på ön.",
         "related": [
           {
