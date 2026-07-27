@@ -25,10 +25,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
   const golfCoursesHref = buildLocalePath('/golf-courses', locale)
   const contactHref = buildLocalePath('/contact', locale)
   const pwapHref = buildLocalePath('/play-with-a-pro', locale)
-  // The hotel recommender only exists in English, so every locale links to the
-  // English route. buildLocalePath would produce /es/tools/hotel-recommender,
-  // which 404s.
-  const hotelRecommenderHref = '/tools/hotel-recommender'
+  const hotelRecommenderHref = buildLocalePath('/tools/hotel-recommender', locale)
 
   return (
     <main>
@@ -94,7 +91,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                 aria-expanded={itineraryOpen}
                 aria-controls="sample-itinerary-body"
               >
-                {itineraryOpen ? 'Hide itinerary' : 'See the 5 days'}
+                {itineraryOpen ? content.sampleItinerary.toggleHideLabel : content.sampleItinerary.toggleShowLabel}
               </button>
             </div>
 
@@ -123,14 +120,14 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                       <p className="pyt-itin-row__subtitle">{day.title}</p>
                       <p className="pyt-itin-row__body">{day.body}</p>
                       <p className="pyt-itin-row__meta">
-                        <span>{day.fromPalma} from Palma</span>
+                        <span>{day.fromPalma} {locale === 'zh' ? '从帕尔马' : locale === 'es' ? 'de Palma' : locale === 'de' ? 'von Palma' : locale === 'fr' ? 'de Palma' : locale === 'nl' ? 'van Palma' : locale === 'sv' ? 'från Palma' : 'from Palma'}</span>
                         <span aria-hidden="true">&middot;</span>
                         <span>{day.price}</span>
                       </p>
                       {day.dining ? <p className="pyt-itin-row__dining">{day.dining}</p> : null}
-                      <Link href={day.guide} className="pyt-itin-row__link">
+                      {day.guide && <Link href={day.guide} className="pyt-itin-row__link">
                         {content.sampleItinerary.readGuideLabel}
-                      </Link>
+                      </Link>}
                     </div>
                   </article>
                 ))}
