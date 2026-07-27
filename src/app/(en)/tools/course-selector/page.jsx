@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools/course-selector', 'en', {
 
-  title: 'Find Your Mallorca Golf Course | Free Course Selector',
+  title: 'Find Your Golf Course - Selector',
   description: 'A few quick questions. A personalised shortlist of Mallorca golf courses matched to your handicap, budget, group and style. Free, instant, no sign-up.',
   robots: { index: true, follow: true },
 })
