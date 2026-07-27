@@ -150,9 +150,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'golf-trip-planning-mallorca': {
     metadata: {
-      title: 'Plan Your Mallorca Golf Trip (2026)',
+      title: 'Plan Your Golf Trip (2026)',
       description:
-        'Planning a golf trip to Mallorca? Which courses, when to go, how many rounds, transport, clubs, and what to do when you are off the course. By a PGA professional based on the island.',
+        'Plan your Mallorca golf trip: courses, when to go, transport, clubs, off-course activities. By a PGA pro on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
       imageAlt: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
@@ -297,7 +297,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'Best Time to Play Golf (2026)',
       description:
-        'When is the best time to play golf in Mallorca? Month-by-month guide from a PGA professional based on the island - weather, green fees, course conditions, and crowds.',
+        'Month-by-month Mallorca golf guide: weather, green fees, conditions, crowds. From a PGA pro on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/blog-best-time-play/T Golf Calvia Sun.webp',
       imageAlt: 'The Best Time of Year to Play Golf in Mallorca - Month by Month (2026)',
@@ -408,9 +408,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'best-golf-courses-mallorca': {
     metadata: {
-      title: "Best Golf Courses in Mallorca 2026 | Ranked & Reviewed by a PGA Professional",
+      title: "Best Golf Courses - 24 Ranked & Reviewed",
       description:
-        'All 24 Mallorca (Majorca) golf courses ranked by a PGA pro who plays them. Green fees from €55–€260, difficulty ratings, and an honest verdict on who each course suits. Updated 2026.',
+        'All 24 Mallorca courses ranked by a PGA pro. Green fees €55–€260, difficulty, who each suits.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
       imageAlt: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
@@ -636,9 +636,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'golf-club-hire-mallorca': {
     metadata: {
-      title: 'Golf Club Hire in Mallorca 2026 | Prices, Best Companies & Honest Advice',
+      title: 'Golf Club Hire Mallorca - Prices',
       description:
-        'Golf club hire in Mallorca costs €25–€65/day. I cover the best companies, what quality to expect, whether to bring your own, and where to get the best deal in 2026.',
+        'Golf club hire €25–€65/day. Best companies, quality levels, best deals for 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
       image: `${SITE_ORIGIN}/images/social-preview.webp`,
       imageAlt: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
@@ -761,9 +761,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'is-mallorca-good-for-golf': {
     metadata: {
-      title: "Is Mallorca Good for Golf? Yes. Here's What to Know (2026)",
+      title: "Is Mallorca Good for Golf? Yes",
       description:
-        '24 courses, year-round sunshine, green fees from €55. A PGA professional based in Mallorca since 2025 gives an honest answer on courses, conditions, and what to expect.',
+        '24 courses, year-round sunshine, €55–€260. PGA pro's honest answer: courses, conditions, expectations.',
       canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
       image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
       imageAlt: "Is Mallorca Good for Golf? A PGA Professional's Answer",
@@ -890,9 +890,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'play-with-a-pro-explained': {
     metadata: {
-      title: 'What "Play With A Pro" Actually Looks Like',
+      title: 'What Play With A Pro Actually Looks Like',
       description:
-        'A PGA pro joins your group for a full round: reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like.',
+        'PGA pro joins your round: reading greens, managing wind, improving decisions real-time. What the day actually looks like.',
       canonical: 'https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained',
       image: 'https://www.mrmallorcagolf.com/images/pwap-hero-mandarin.jpg',
       imageAlt: 'Andy Griffiths PGA pro with a client during a Play With A Pro day in Mallorca',
@@ -995,7 +995,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'mallorca-course-map': {
     metadata: {
-      title: 'Interactive Map of All 24 Mallorca Golf Courses',
+      title: 'Map - 24 Golf Courses Mallorca',
       description: 'Interactive map showing the locations of all 24 golf courses in Mallorca. Find courses by region and distance from Palma.',
       canonical: 'https://www.mrmallorcagolf.com/guides/mallorca-course-map',
       image: 'https://www.mrmallorcagolf.com/images/courses/mallorca-map.webp',

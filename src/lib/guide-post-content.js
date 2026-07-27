@@ -6,9 +6,9 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: 'Son Gual Mallorca: Honest Golf Review & Green Fees (2026)',
+        title: 'Son Gual Golf - Honest Review & Fees',
         description:
-          "Son Gual charges €115–€165 and requires a handicap certificate. PGA review: course conditions, wind notes, and a straight answer on who should and shouldn't book it.",
+          "Son Gual €115–€165, handicap certificate required. Course conditions, wind notes, and honest verdict on booking.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
       },
       meta: {
@@ -185,9 +185,9 @@ export const GUIDE_POST_CONTENT = {
   'alcanada-review': {
     en: {
       metadata: {
-        title: "Alcanada Golf Mallorca: Honest 2026 Review",
+        title: "Alcanada Golf - Honest Review 2026",
         description:
-          'Alcanada golf course Mallorca reviewed by a PGA Professional who plays it regularly. The lighthouse, the greens, the restaurant terrace, and the green fees for 2026.',
+          'Alcanada reviewed by a PGA Professional. Lighthouse, greens, restaurant terrace, green fees.',
         imagePath: '/images/alcanada-blog/alc-7.webp',
       },
       meta: {
@@ -424,9 +424,9 @@ export const GUIDE_POST_CONTENT = {
   'santa-ponsa-1-review': {
     en: {
       metadata: {
-        title: "Santa Ponsa 1 Golf - Honest Mallorca Review (2026)",
+        title: "Santa Ponsa 1 - Long Course Review",
         description:
-          "Santa Ponsa 1 golf course Mallorca reviewed by a PGA Professional. One of Europe's longest courses, DP World Tour history, and a confidence-builder for anyone who loves hitting driver.",
+          "One of Europe's longest, DP World Tour history. Confidence-builder for driver lovers.",
         imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
       },
       meta: {
@@ -548,9 +548,9 @@ export const GUIDE_POST_CONTENT = {
   'golf-andratx-review': {
     en: {
       metadata: {
-        title: "Golf de Andratx Review (2026) - Green Fees, Difficulty & Honest Rating",
+        title: "Golf Andratx - Review & Fees",
         description:
-          "Golf de Andratx: ~€125, par 72, the longest par 5 in Spain. Mountain setting in the southwest. I played it in May 2026. Tactical layout that rewards patience far more than length.",
+          "€125, par 72, longest par 5 in Spain. Mountain setting, tactical layout, patience over length.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
@@ -718,9 +718,9 @@ export const GUIDE_POST_CONTENT = {
   'son-termes-review': {
     en: {
       metadata: {
-        title: "Son Termes Golf - Review (2026)",
+        title: "Son Termes Golf - Review 2026",
         description:
-          'Son Termes golf course Mallorca reviewed by a PGA professional. Mountain views, honest course notes, green fees, and who it suits, from someone who played it this week.',
+          'Mountain views, honest course notes, green fees, who it suits. Reviewed by PGA pro.',
         imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
@@ -884,9 +884,9 @@ export const GUIDE_POST_CONTENT = {
   't-golf-calvia-review': {
     en: {
       metadata: {
-        title: 'T Golf Calvià Review (2026) - Green Fees, Conditions & Honest Rating',
+        title: 'T Golf Calvià - Review & Fees',
         description:
-          'T Golf Calvià reviewed by a PGA Professional who played it in May 2026. Up to €210 peak, twilight from €150. 15 lakes, 6,500m from the back tees, 9/10 conditioning.',
+          'Peak €210, twilight €150. 15 lakes, 6,500m back tees, 9/10 conditioning.',
         imagePath: '/images/t-golf-calvia-social.jpg',
       },
       meta: {
@@ -1073,9 +1073,9 @@ export const GUIDE_POST_CONTENT = {
   'son-antem-west-review': {
     en: {
       metadata: {
-        title: "Son Antem West Golf - Review (2026)",
+        title: "Son Antem West - Resort Review",
         description:
-          'Son Antem West: green fees from €109, par 72, 6,293m. A resort course 15-20 minutes from Palma with good conditioning and a relaxed, playable layout. Here is what it actually plays like and who it suits.',
+          'Green fees from €109, par 72, 6,293m. Resort course near Palma, relaxed layout, good conditioning.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
       },
       meta: {
@@ -1269,9 +1269,9 @@ export const GUIDE_POST_CONTENT = {
   'on-course-coaching-mallorca': {
     en: {
       metadata: {
-        title: 'On-Course Golf Coaching in Mallorca - Play Better, Right Now',
+        title: 'Golf Coaching Mallorca - Real Improvement',
         description:
-          'On-course golf coaching in Mallorca with a PGA Advanced Professional. Real situations, real feedback, real improvement. Not a lesson. A round with a coach who makes you better as you play.',
+          'On-course coaching with PGA Professional. Real feedback, real improvement. A round that makes you better as you play.',
         imagePath: '/images/son-gual-blog/sg-swing.webp',
       },
       meta: {
