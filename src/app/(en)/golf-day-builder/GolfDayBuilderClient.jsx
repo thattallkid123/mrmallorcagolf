@@ -627,7 +627,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
         <p className="gdb-sub">{t.hero.sub}</p>
       </section>
 
-      {lang === 'en' && <ToolTrustLine />}
+      {lang === 'en' && <ToolTrustLine locale={lang} />}
 
       <div className="gdb-wrap">
 

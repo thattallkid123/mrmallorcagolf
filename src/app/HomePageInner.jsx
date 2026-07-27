@@ -253,7 +253,7 @@ export default function HomePageInner({ locale = 'en' }) {
 
       {locale === 'en' ? (
         <section className="planning-guide-home reveal">
-          <HomeToolsStrip />
+          <HomeToolsStrip locale={locale} />
         </section>
       ) : null}
 

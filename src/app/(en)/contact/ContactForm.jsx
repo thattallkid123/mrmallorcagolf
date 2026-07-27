@@ -204,7 +204,7 @@ export default function ContactForm({ locale = 'en' }) {
           </div>
 
           <div className="contact-trust">
-            <ReviewBadge variant="text" theme="dark" />
+            <ReviewBadge variant="text" theme="dark" locale={locale} />
           </div>
 
         </div>

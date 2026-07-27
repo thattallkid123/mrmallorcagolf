@@ -371,7 +371,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         <div><span className="hc-updated">{t.hero.updated}</span></div>
       </section>
 
-      {lang === 'en' && <ToolTrustLine />}
+      {lang === 'en' && <ToolTrustLine locale={lang} />}
 
       <main className="hc-main">
         <section className="hc-panel">

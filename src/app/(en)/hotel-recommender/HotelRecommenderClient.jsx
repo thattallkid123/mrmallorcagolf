@@ -417,7 +417,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
 
       {lang === 'en' && (
         <div className="hr-trust-wrap">
-          <ToolTrustLine />
+          <ToolTrustLine locale={lang} />
         </div>
       )}
 

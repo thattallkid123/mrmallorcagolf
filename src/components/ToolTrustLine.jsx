@@ -1,6 +1,6 @@
 import ReviewBadge from './ReviewBadge'
 
-export default function ToolTrustLine() {
+export default function ToolTrustLine({ locale = 'en' }) {
   return (
     <div
       style={{
@@ -12,10 +12,10 @@ export default function ToolTrustLine() {
         padding: '18px 24px 0',
       }}
     >
-      <ReviewBadge variant="mini" />
+      <ReviewBadge variant="mini" locale={locale} />
       <p
         style={{
-          fontFamily: "'Jost', sans-serif",
+          fontFamily: 'var(--font-sans)',
           fontWeight: 300,
           fontSize: '.78rem',
           letterSpacing: '.04em',

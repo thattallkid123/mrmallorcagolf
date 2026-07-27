@@ -255,7 +255,7 @@ export default function Footer({ lang }) {
       ) : null}
 
       <div className="footer__trust">
-        <ReviewBadge variant="footer-block" />
+        <ReviewBadge variant="footer-block" locale={lang} />
       </div>
 
       <div className="footer__bottom">

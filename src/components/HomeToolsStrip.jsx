@@ -24,7 +24,7 @@ const STRIP_TOOLS = [
   },
 ]
 
-export default function HomeToolsStrip() {
+export default function HomeToolsStrip({ locale = 'en' }) {
   return (
     <aside className="home-tools-strip">
       <style>{`
@@ -149,7 +149,7 @@ export default function HomeToolsStrip() {
       <div className="hts-footer">
         <Link href="/tools" className="hts-all">Explore all planning tools</Link>
         <p className="hts-fineprint">No sign-up needed. Built by a UK PGA Advanced Professional based in Mallorca.</p>
-        <ReviewBadge variant="mini" />
+        <ReviewBadge variant="mini" locale={locale} />
       </div>
     </aside>
   )

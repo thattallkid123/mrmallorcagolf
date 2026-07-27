@@ -445,7 +445,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         </section>
 
         <div className="pwap-trust-band">
-          <ReviewBadge variant="text" theme="light" />
+          <ReviewBadge variant="text" theme="light" locale={locale} />
         </div>
 
         {content.faq?.items?.length ? (

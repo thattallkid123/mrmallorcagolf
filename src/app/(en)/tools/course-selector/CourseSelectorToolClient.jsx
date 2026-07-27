@@ -967,7 +967,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         )}
       </section>
 
-      {lang === 'en' && <ToolTrustLine />}
+      {lang === 'en' && <ToolTrustLine locale={lang} />}
 
       <div className="cst-wrap">
 

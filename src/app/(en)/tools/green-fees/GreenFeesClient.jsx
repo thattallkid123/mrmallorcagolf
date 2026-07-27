@@ -399,7 +399,7 @@ export default function GreenFeesClient({ lang = 'en' }) {
         </div>
       </div>
 
-      {lang === 'en' && <ToolTrustLine />}
+      {lang === 'en' && <ToolTrustLine locale={lang} />}
 
       <main className="gf-main">
         <div className="gf-disclaimer">

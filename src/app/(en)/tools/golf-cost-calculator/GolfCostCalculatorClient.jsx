@@ -471,7 +471,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         <p className="gcc-sub">{t.hero.sub}</p>
       </section>
 
-      {lang === 'en' && <ToolTrustLine />}
+      {lang === 'en' && <ToolTrustLine locale={lang} />}
 
       <div className="gcc-wrap">
         {/* PROGRESS */}

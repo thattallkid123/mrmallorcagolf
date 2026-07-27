@@ -6,6 +6,69 @@ const {
   reviewUrl: REVIEW_URL,
 } = siteSocialProof
 
+const REVIEW_BADGE_TEXT = {
+  en: {
+    ratedByGolfers: 'Rated by golfers on Google',
+    ratedByGolfersAriaLabel: 'Rated {rating} out of 5 by golfers on Google, {count} reviews',
+    ratedAriaLabel: 'Rated {rating} out of 5 on Google, {count} reviews',
+    ratedLine: 'Rated {rating} by golfers on Google {count} reviews',
+    onGoogle: 'on Google',
+    reviews: 'reviews',
+  },
+  de: {
+    ratedByGolfers: 'Von Golfern auf Google bewertet',
+    ratedByGolfersAriaLabel: 'Mit {rating} von 5 Sternen von Golfern auf Google bewertet, {count} Bewertungen',
+    ratedAriaLabel: 'Mit {rating} von 5 Sternen auf Google bewertet, {count} Bewertungen',
+    ratedLine: 'Mit {rating} Sternen von Golfern auf Google bewertet {count} Bewertungen',
+    onGoogle: 'auf Google',
+    reviews: 'Bewertungen',
+  },
+  es: {
+    ratedByGolfers: 'Puntuado por golfistas en Google',
+    ratedByGolfersAriaLabel: 'Puntuado con {rating} de 5 estrellas por golfistas en Google, {count} reseñas',
+    ratedAriaLabel: 'Puntuado con {rating} de 5 estrellas en Google, {count} reseñas',
+    ratedLine: 'Puntuado con {rating} estrellas por golfistas en Google {count} reseñas',
+    onGoogle: 'en Google',
+    reviews: 'reseñas',
+  },
+  fr: {
+    ratedByGolfers: 'Noté par les golfeurs sur Google',
+    ratedByGolfersAriaLabel: 'Noté {rating} sur 5 par les golfeurs sur Google, {count} avis',
+    ratedAriaLabel: 'Noté {rating} sur 5 sur Google, {count} avis',
+    ratedLine: 'Noté {rating} par les golfeurs sur Google {count} avis',
+    onGoogle: 'sur Google',
+    reviews: 'avis',
+  },
+  nl: {
+    ratedByGolfers: 'Beoordeeld door golfspelers op Google',
+    ratedByGolfersAriaLabel: 'Beoordeeld met {rating} van 5 sterren door golfspelers op Google, {count} recensies',
+    ratedAriaLabel: 'Beoordeeld met {rating} van 5 sterren op Google, {count} recensies',
+    ratedLine: 'Beoordeeld met {rating} sterren door golfspelers op Google {count} recensies',
+    onGoogle: 'op Google',
+    reviews: 'recensies',
+  },
+  sv: {
+    ratedByGolfers: 'Betygsatt av golfspelare på Google',
+    ratedByGolfersAriaLabel: 'Betygsatt {rating} av 5 stjärnor av golfspelare på Google, {count} recensioner',
+    ratedAriaLabel: 'Betygsatt {rating} av 5 stjärnor på Google, {count} recensioner',
+    ratedLine: 'Betygsatt {rating} stjärnor av golfspelare på Google {count} recensioner',
+    onGoogle: 'på Google',
+    reviews: 'recensioner',
+  },
+  zh: {
+    ratedByGolfers: '高尔夫球手在 Google 上的评分',
+    ratedByGolfersAriaLabel: '在 Google 上获得{rating}颗星（满分5颗），共{count}条高尔夫球手的评价',
+    ratedAriaLabel: '在 Google 上获得{rating}颗星（满分5颗），共{count}条评价',
+    ratedLine: '在 Google 上获得{rating}颗星{count}条高尔夫球手的评价',
+    onGoogle: '在 Google 上',
+    reviews: '评价',
+  },
+}
+
+function getReviewText(locale = 'en') {
+  return REVIEW_BADGE_TEXT[locale] || REVIEW_BADGE_TEXT.en
+}
+
 function Stars({ rating = 5, size = 14 }) {
   const full = Math.floor(rating)
   const partial = rating - full
@@ -51,8 +114,9 @@ function StarIcon({ fill, size }) {
   )
 }
 
-export default function ReviewBadge({ variant = 'compact', theme = 'dark' }) {
+export default function ReviewBadge({ variant = 'compact', theme = 'dark', locale = 'en' }) {
   const ratingLabel = REVIEW_RATING.toFixed(1)
+  const text = getReviewText(locale)
 
   if (variant === 'mini') {
     return (
@@ -61,13 +125,13 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark' }) {
         target="_blank"
         rel="noopener noreferrer"
         className="review-badge review-badge--mini"
-        aria-label={`Rated ${ratingLabel} out of 5 on Google, ${REVIEW_COUNT} reviews`}
+        aria-label={text.ratedAriaLabel.replace('{rating}', ratingLabel).replace('{count}', REVIEW_COUNT)}
       >
         <Stars rating={REVIEW_RATING} size={11} />
         <span className="review-badge__score">{ratingLabel}</span>
         <span className="review-badge__brand">Google</span>
         <span className="review-badge__divider">·</span>
-        <span className="review-badge__count">{REVIEW_COUNT} reviews</span>
+        <span className="review-badge__count">{REVIEW_COUNT} {text.reviews}</span>
       </a>
     )
   }
@@ -79,15 +143,15 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark' }) {
         target="_blank"
         rel="noopener noreferrer"
         className="review-footer-block"
-        aria-label={`Rated ${ratingLabel} out of 5 by golfers on Google, ${REVIEW_COUNT} reviews`}
+        aria-label={text.ratedByGolfersAriaLabel.replace('{rating}', ratingLabel).replace('{count}', REVIEW_COUNT)}
       >
-        <p className="review-footer-block__eyebrow">Rated by golfers on Google</p>
+        <p className="review-footer-block__eyebrow">{text.ratedByGolfers}</p>
         <div className="review-footer-block__rating">
           <Stars rating={REVIEW_RATING} size={22} />
           <span className="review-footer-block__score">{ratingLabel}</span>
           <span className="review-footer-block__out-of">/ 5</span>
         </div>
-        <p className="review-footer-block__count">{REVIEW_COUNT} reviews</p>
+        <p className="review-footer-block__count">{REVIEW_COUNT} {text.reviews}</p>
       </a>
     )
   }
@@ -99,13 +163,13 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark' }) {
         target="_blank"
         rel="noopener noreferrer"
         className={`review-text review-text--${theme}`}
-        aria-label={`Rated ${ratingLabel} out of 5 by golfers on Google, ${REVIEW_COUNT} reviews`}
+        aria-label={text.ratedByGolfersAriaLabel.replace('{rating}', ratingLabel).replace('{count}', REVIEW_COUNT)}
       >
         <Stars rating={REVIEW_RATING} size={15} />
         <span className="review-text__line">
           Rated <span className="review-text__score">{ratingLabel}</span> by golfers on{' '}
           <span className="review-text__brand">Google</span>
-          <span className="review-text__count"> · {REVIEW_COUNT} reviews</span>
+          <span className="review-text__count"> · {REVIEW_COUNT} {text.reviews}</span>
         </span>
       </a>
     )
@@ -117,13 +181,13 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark' }) {
       target="_blank"
       rel="noopener noreferrer"
       className="review-badge review-badge--compact"
-      aria-label={`Rated ${ratingLabel} out of 5 on Google, ${REVIEW_COUNT} reviews`}
+      aria-label={text.ratedAriaLabel.replace('{rating}', ratingLabel).replace('{count}', REVIEW_COUNT)}
     >
       <Stars rating={REVIEW_RATING} size={14} />
       <span className="review-badge__score">{ratingLabel}</span>
-      <span className="review-badge__brand">on Google</span>
+      <span className="review-badge__brand">{text.onGoogle}</span>
       <span className="review-badge__divider">·</span>
-      <span className="review-badge__count">{REVIEW_COUNT} reviews</span>
+      <span className="review-badge__count">{REVIEW_COUNT} {text.reviews}</span>
     </a>
   )
 }

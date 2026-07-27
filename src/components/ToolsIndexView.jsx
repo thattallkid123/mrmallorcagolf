@@ -121,7 +121,7 @@ export default function ToolsIndexView({ locale = 'en', heroImage = null }) {
           <p className="eyebrow tools-trust__label">{content.trust.label}</p>
           <p className="serif-italic tools-trust__text">{content.trust.text}</p>
           <div className="tools-trust__badge">
-            <ReviewBadge variant="text" theme="light" />
+            <ReviewBadge variant="text" theme="light" locale={locale} />
           </div>
           {content.trust.primaryCta ? (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '24px' }}>
