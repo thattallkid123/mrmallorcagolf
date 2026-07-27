@@ -34,9 +34,9 @@ export function getSocialImage(locale = 'en') {
 
 const HOME_METADATA = {
   en: {
-    title: 'Mallorca Golf: Play With A Pro, Plan Your Trip',
+    title: 'Mallorca Golf - Pro & Trip Planning',
     description:
-      '24 Mallorca golf courses reviewed by a PGA Advanced Professional who lives on the island. Green fees, honest verdicts, and help planning your trip.',
+      '24 Mallorca golf courses reviewed by a PGA pro on the island. Green fees, verdicts, and trip planning help.',
   },
   de: {
     title: 'Golf in Mallorca mit PGA Pro',
@@ -72,9 +72,9 @@ const HOME_METADATA = {
 
 const GOLF_COURSES_METADATA = {
   en: {
-    title: 'Mallorca Golf Courses: Reviews, Green Fees & Which to Play',
+    title: 'Mallorca Courses - Reviews & Fees',
     description:
-      'All 24 Mallorca golf courses in one place: green fees €55-€250, regions, difficulty, and which one fits your trip, from a PGA pro who plays them all.',
+      'All 24 Mallorca golf courses: green fees €55–€250, difficulty, regions, and which fits your trip.',
   },
   de: {
     title: 'Golfplätze Mallorca 2026 | Alle 24 Plätze, Green Fees & Bewertungen',
@@ -110,9 +110,9 @@ const GOLF_COURSES_METADATA = {
 
 const GUIDES_INDEX_METADATA = {
   en: {
-    title: 'Mallorca Golf Guide - Course Reviews, Tips and Advice',
+    title: 'Golf Guide - Reviews, Tips & Advice',
     description:
-      'Honest guides to golf in Mallorca from a PGA professional based on the island. Course reviews, green fees, trip planning, and when to visit - all updated for 2026.',
+      'Golf guides for Mallorca by a PGA pro: course reviews, green fees, trip planning, best time to visit.',
   },
   de: {
     title: 'Mallorca Golff\u00fchrer - Platz-Bewertungen, Tipps & Reiseplanung',
@@ -148,9 +148,9 @@ const GUIDES_INDEX_METADATA = {
 
 const ABOUT_METADATA = {
   en: {
-    title: 'About Andy Griffiths | PGA Advanced Professional in Mallorca',
+    title: 'About Andy Griffiths - PGA Pro in Mallorca',
     description:
-      'Meet Andy Griffiths, the PGA Advanced Professional behind Mr Mallorca Golf, with experience from Pebble Beach, Evian, and eleven years coaching in China.',
+      'Andy Griffiths, PGA Advanced Professional. Experience: Pebble Beach, Evian, 11 years coaching in China.',
   },
   de: {
     title: 'Uber Andy Griffiths - PGA Professional, Mallorca',
@@ -186,9 +186,9 @@ const ABOUT_METADATA = {
 
 const COACHING_METADATA = {
   en: {
-    title: 'On-Course Golf Coaching in Mallorca - PGA Professional',
+    title: 'Golf Coaching Mallorca - PGA Pro',
     description:
-      'On-course golf coaching in Mallorca with PGA Advanced Professional Andy Griffiths. Real improvement in real conditions - for visiting and resident golfers.',
+      'On-course coaching with PGA pro Andy Griffiths. Real improvement in real conditions, for visiting and resident golfers.',
   },
   de: {
     title: 'Golfschule Mallorca | Golflehrer Andy Griffiths – PGA Professional',
@@ -224,7 +224,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Play With A Pro: Golf Day in Mallorca | PGA Professional',
+    title: 'Play With A Pro - Golf Day in Mallorca',
     description: getPlayWithAProMetadataDescription('en'),
     keywords: [
       'golf pro Mallorca',
@@ -262,9 +262,9 @@ const PLAY_WITH_A_PRO_METADATA = {
 
 const CONTACT_METADATA = {
   en: {
-    title: 'Contact Andy Griffiths | Mallorca Golf Enquiry',
+    title: 'Contact Andy Griffiths - Golf Enquiry',
     description:
-      'Tell Andy Griffiths your dates, handicap, hotel area, and what you are comparing. You will get a personal reply within 24 hours by email or WhatsApp.',
+      'Share your dates, handicap, hotel area, and goals. Get a personal reply within 24 hours via email or WhatsApp.',
   },
   de: {
     title: 'Kontakt Andy Griffiths - UK PGA Professional',
@@ -308,9 +308,9 @@ const ITINERARY_METADATA = {
 
 const PLAN_YOUR_TRIP_METADATA = {
   en: {
-    title: 'Plan Your Mallorca Golf Trip | Courses, Base & Tee Times',
+    title: 'Plan Your Golf Trip - Courses, Base & Tee Times',
     description:
-      'Use the course finder as a starting point, or ask Andy to plan your Mallorca golf trip properly: courses, base, routing, tee times, buggies, rentals, and dining.',
+      'Use our course finder or ask Andy to plan your Mallorca trip: courses, base, routing, tee times, buggies, rentals, dining.',
   },
   de: {
     title: 'Mallorca Golfreise planen',
@@ -346,9 +346,9 @@ const PLAN_YOUR_TRIP_METADATA = {
 
 const SUBSCRIBE_METADATA = {
   en: {
-    title: 'Golf Insights from Mallorca - Weekly Newsletter',
+    title: 'Golf Insights from Mallorca - Newsletter',
     description:
-      'Join the mailing list for weekly Mallorca golf insights, course reviews, and trip planning tips from a PGA professional on the island.',
+      'Join our mailing list for Mallorca golf insights, course reviews, and trip planning tips from a PGA pro.',
   },
   de: {
     title: 'Golf-Einblicke aus Mallorca - Wöchentlicher Newsletter',
