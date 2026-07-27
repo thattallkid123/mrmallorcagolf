@@ -224,7 +224,7 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Play With a Golf Pro in Mallorca | PGA Day',
+    title: 'Play With A Pro: Golf Day in Mallorca | PGA Professional',
     description: getPlayWithAProMetadataDescription('en'),
     keywords: [
       'golf pro Mallorca',

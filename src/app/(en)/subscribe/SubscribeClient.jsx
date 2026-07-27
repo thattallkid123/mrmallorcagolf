@@ -115,7 +115,7 @@ export default function SubscribeClient() {
         <div style={{ maxWidth: "720px", width: "100%" }}>
           <div style={{ borderLeft: "2px solid var(--gold)", paddingLeft: "2rem" }}>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.15rem,2.2vw,1.6rem)", fontStyle: "italic", fontWeight: 400, color: "#fff", lineHeight: 1.6, margin: "0 0 1.25rem 0" }}>"Golfing with Andy was a superb experience. He has an unparalleled level of insight, and delivers it in a way that is both subtle and empathetic. After just 18 holes together, I have discovered a new ceiling to my potential."</p>
-            <p style={{ fontFamily: "'Jost', sans-serif", fontWeight: 400, fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--gold-light)", margin: 0 }}>Jo, Play-With-a-Pro client</p>
+            <p style={{ fontFamily: "var(--font-sans)", fontWeight: 400, fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--gold-light)", margin: 0 }}>Jo, Play With A Pro client</p>
           </div>
         </div>
       </section>

@@ -36,7 +36,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
   const formNoteBodyStyle = {
     margin: 0,
     color: '#2C2A27',
-    fontFamily: "'Jost', sans-serif",
+    fontFamily: 'var(--font-sans)',
     fontSize: '0.85rem',
     fontWeight: 300,
     lineHeight: 1.7,
