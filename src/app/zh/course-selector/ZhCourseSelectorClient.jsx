@@ -265,11 +265,11 @@ export default function ZhCourseSelectorClient() {
         .zh-eyebrow-wrap { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 16px; }
         .zh-eyebrow-line { width: 28px; height: 1px; background: #B8973C; flex-shrink: 0; }
         .zh-eyebrow-text { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #CBA968; }
-        .zh-hero h1 { font-family: 'Cormorant Garamond', 'Songti SC', Georgia, serif; font-weight: 500; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; color: #F7F4EF; max-width: 600px; margin: 0 auto; }
+        .zh-hero h1 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; color: #F7F4EF; max-width: 600px; margin: 0 auto; }
         .zh-hero p { font-weight: 300; font-size: 1rem; line-height: 1.6; color: rgba(247,244,239,0.78); max-width: 480px; margin: 16px auto 0; }
         /* Intro card */
         .intro-card { background: #fff; padding: 52px 48px; margin-top: 40px; box-shadow: 0 22px 60px rgba(18,17,15,0.08); text-align: center; border-top: 3px solid #B8973C; }
-        .intro-card h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.5vw, 2rem); color: #1A1916; margin-bottom: 14px; line-height: 1.1; }
+        .intro-card h2 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1.5rem, 3.5vw, 2rem); color: #1A1916; margin-bottom: 14px; line-height: 1.1; }
         .intro-card p { font-size: 15px; color: #2C2A27; margin-bottom: 0; line-height: 1.72; }
         .intro-trust { display: flex; flex-direction: column; gap: 6px; align-items: center; margin: 28px 0 32px; padding: 20px 0; border-top: 1px solid rgba(184,151,60,0.25); border-bottom: 1px solid rgba(184,151,60,0.25); }
         .intro-trust-label { font-size: 9px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #B8973C; margin-bottom: 6px; }
@@ -284,7 +284,7 @@ export default function ZhCourseSelectorClient() {
         .q-card { background: #fff; border: 1px solid rgba(26,25,22,0.08); padding: 48px 42px; box-shadow: 0 22px 60px rgba(18,17,15,0.08); }
         .q-num { font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #B8973C; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
         .q-num::before { content: ''; display: block; width: 20px; height: 1px; background: #B8973C; }
-        .q-card h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(1.35rem, 3vw, 1.65rem); line-height: 1.15; color: #1A1916; margin-bottom: 6px; }
+        .q-card h3 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1.35rem, 3vw, 1.65rem); line-height: 1.15; color: #1A1916; margin-bottom: 6px; }
         .q-sub { font-size: 13px; font-weight: 300; color: #8A7F74; margin-bottom: 26px; line-height: 1.6; }
         .opt-list { display: flex; flex-direction: column; gap: 8px; }
         .zh-opt { display: flex; justify-content: space-between; align-items: center; gap: 16px; border: 1px solid #E0D8CB; background: #F7F4EF; padding: 16px 20px; cursor: pointer; font-size: 15px; font-weight: 300; text-align: left; color: #2C2A27; transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), border-color 0.3s, background 0.3s; width: 100%; font-family: inherit; }
@@ -296,19 +296,19 @@ export default function ZhCourseSelectorClient() {
         .q-back:hover { color: #2D4A3E; }
         /* Results */
         .results-header { text-align: center; padding: 40px 0 28px; }
-        .results-header h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.08; color: #1A1916; margin-bottom: 10px; }
+        .results-header h2 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.08; color: #1A1916; margin-bottom: 10px; }
         .results-header p { font-size: 14px; color: #8A7F74; }
         .eyebrow-result { display: inline-flex; align-items: center; gap: 12px; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #B8973C; margin-bottom: 16px; }
         .eyebrow-result::before { content: ''; display: block; flex-shrink: 0; width: 28px; height: 1px; background: #B8973C; }
         /* Course card */
         .result-card { background: #fff; border: 1px solid rgba(26,25,22,0.08); box-shadow: 0 22px 60px rgba(18,17,15,0.08); margin-bottom: 42px; overflow: hidden; }
         .cc-photo { width: 100%; height: 240px; background: linear-gradient(135deg, #2D4A3E 0%, #1A1916 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
-        .cc-photo-label { position: absolute; text-align: center; padding: 0 24px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 1.5rem; color: rgba(247,244,239,0.92); }
+        .cc-photo-label { position: absolute; text-align: center; padding: 0 24px; font-family: var(--font-serif); font-weight: 500; font-size: 1.5rem; color: rgba(247,244,239,0.92); }
         .cc-photo img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
         .cc-head { background: #2D4A3E; padding: 36px 36px 0; }
         .cc-head-inner { border-bottom: 1px solid rgba(212,176,104,0.28); padding-bottom: 28px; }
         .cc-rank { display: inline-block; font-size: 8px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; background: #B8973C; color: #1A1916; padding: 5px 10px; margin-bottom: 14px; }
-        .cc-head h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.1; color: #fff; }
+        .cc-head h3 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.1; color: #fff; }
         .cc-zh { font-size: 12px; font-weight: 400; letter-spacing: 0.06em; color: rgba(247,244,239,0.68); margin-top: 6px; }
         .cc-tags { display: flex; flex-wrap: wrap; gap: 0; padding: 12px 0 0; }
         .cc-tags span { font-size: 8px; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.62); padding: 0 8px 0 0; line-height: 1.2; }
@@ -318,7 +318,7 @@ export default function ZhCourseSelectorClient() {
         .cc-row { display: flex; gap: 16px; margin-bottom: 20px; font-size: 14px; font-weight: 300; line-height: 1.72; }
         .cc-label { flex: 0 0 76px; padding-top: 1px; font-size: 9px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #B8973C; }
         .cc-val { flex: 1; color: #2C2A27; }
-        .cc-andy { background: #F4EDD8; border-left: 2px solid #B8973C; padding: 22px 24px; margin: 26px 0; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.05rem; line-height: 1.55; color: #2D4A3E; }
+        .cc-andy { background: #F4EDD8; border-left: 2px solid #B8973C; padding: 22px 24px; margin: 26px 0; font-family: var(--font-serif); font-style: italic; font-size: 1.05rem; line-height: 1.55; color: #2D4A3E; }
         .cc-andy strong { font-style: normal; font-weight: 500; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; display: block; margin-bottom: 8px; color: #B8973C; font-family: sans-serif; }
         .cc-links { display: flex; gap: 10px; flex-wrap: wrap; padding-top: 4px; }
         .cc-btn { flex: 1; min-width: 140px; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; padding: 14px 20px; border-radius: 999px; cursor: pointer; transition: background 0.3s, color 0.3s, transform 0.3s; font-family: inherit; border: 1px solid currentColor; }
@@ -328,7 +328,7 @@ export default function ZhCourseSelectorClient() {
         .cc-btn-gold:hover { background: #D4B068; border-color: #D4B068; transform: translateY(-2px); }
         /* Final block */
         .final-card { background: #1A1916; padding: 48px; color: #F7F4EF; box-shadow: 0 30px 80px rgba(18,17,15,0.16); margin-top: 28px; }
-        .final-card h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.1; color: #fff; text-align: center; margin-bottom: 10px; }
+        .final-card h3 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.1; color: #fff; text-align: center; margin-bottom: 10px; }
         .final-card > p { font-size: 14px; line-height: 1.72; color: rgba(247,244,239,0.75); text-align: center; margin-bottom: 32px; max-width: 460px; margin-left: auto; margin-right: auto; }
         .wechat-box { background: #2D4A3E; border: 1px solid rgba(212,176,104,0.35); padding: 36px 32px; text-align: center; margin-bottom: 24px; cursor: pointer; transition: border-color 0.3s; }
         .wechat-box:hover { border-color: rgba(212,176,104,0.7); }
