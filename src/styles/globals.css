@@ -3167,9 +3167,13 @@ select.form-control { cursor: pointer; }
   .courses-grid { grid-template-columns: 1fr; }
   .improvements-grid { grid-template-columns: 1fr; }
   .improvements { padding: 60px 20px; }
-  .contact-wrap { grid-template-columns: 1fr; }
-  .contact-left { padding: 50px 24px; }
-  .contact-right { padding: 50px 24px; }
+  .contact-wrap { grid-template-columns: 1fr; display: flex; flex-direction: column; background: var(--deep); }
+  .contact-left { display: contents; }
+  .contact-left > div:first-child { order: 1; padding: 50px 24px; background-image: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.58) 60%, rgba(26,25,22,0.82) 100%), url(/images/contact.webp); background-position: center 30%; background-size: cover; margin: 0; }
+  .contact-right { order: 2; padding: 40px 24px 50px; }
+  .contact-left .promise-block { order: 3; margin: 44px 24px 0; padding: 0; }
+  .contact-left .contact-cards { order: 4; padding: 32px 24px 0; margin: 0; }
+  .contact-left .contact-trust { order: 5; margin: 0; padding: 36px 24px 52px; }
   .form-row { grid-template-columns: 1fr; }
   .geography { grid-template-columns: 1fr; gap: 40px; padding: 50px 20px; }
   .intro-bar { grid-template-columns: 1fr; gap: 32px; padding: 40px 20px; }
