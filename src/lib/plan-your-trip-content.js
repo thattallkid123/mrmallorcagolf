@@ -52,16 +52,15 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   "sampleItinerary": {
     "eyebrow": "Sample Trip",
     "title": "Five courses, five days. Base in Palma.",
-    "intro": "A realistic 5-day trip: open course to warm up on, championship test with coaching, north drive to the island's most memorable hole, and a short finish near the airport. All five courses have published guides on the site.",
+    "intro": "A realistic 5-day trip: open course to warm up on, championship test with coaching, north drive to the island's most memorable hole, and a short finish near the airport. Four courses have published guides on the site.",
     "days": [
       {
         "day": "Day 1",
         "course": "Son Quint",
         "fromPalma": "15 min",
-        "price": "€80–140",
+        "price": "€70–172",
         "title": "Opener. Easy routing from Palma.",
         "body": "15 minutes from Palma, open layout, room to swing. Early morning tee time. No pressure on day one after travel.",
-        "guide": "/guides/son-quint-review",
         "image": "/images/courses/son-quint.webp"
       },
       {
@@ -100,17 +99,19 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "day": "Day 5",
         "course": "T Golf Calvià",
         "fromPalma": "30 min",
-        "price": "€140–210",
+        "price": "€80–210",
         "title": "Change of style. Back toward the airport.",
-        "body": "Post-renovation course with 15 lakes and serious conditioning. 30 minutes from Palma, 40 from the airport. Or choose Son Termes instead: 5,282m, par 70, 10 minutes from Palma, short and scenic for a travel day.",
+        "body": "Post-renovation course with 15 lakes and serious conditioning. 30 minutes from Palma, 40 from the airport. Or choose Son Termes instead: 5,285m, par 70, 10 minutes from Palma, short and scenic for a travel day.",
         "guide": "/guides/t-golf-calvia-review",
         "image": "/images/courses/t-golf-calvia.webp",
         "dining": "El Camino or local options near the course."
       }
     ],
     "readGuideLabel": "Read the guide",
-    "summary": "Five courses. Base in Palma for Days 1, 2, 3 and 5. One long drive to Alcanada on Day 4. Green fees roughly €427–700 across the week, plus Play With A Pro if Day 3.",
-    "fees": "Green fees €427–700 total. €3 daily licence at Alcanada. Play With A Pro is €695 solo, €950 group, green fees separate.",
+    "toggleShowLabel": "See the 5 days",
+    "toggleHideLabel": "Hide itinerary",
+    "summary": "Five courses. Base in Palma for Days 1, 2, 3 and 5. One long drive to Alcanada on Day 4. Green fees roughly €457–893 across the week, plus Play With A Pro if Day 3.",
+    "fees": "Green fees €457–893 total. €9 daily licence (€3 each at Son Quint, Alcanada, T Golf Calvià). Play With A Pro is €695 solo, €950 group, green fees separate.",
     "hotelEyebrow": "Where to stay",
     "hotelCta": "Use the hotel recommender",
     "hotelLink": "/tools/hotel-recommender"
