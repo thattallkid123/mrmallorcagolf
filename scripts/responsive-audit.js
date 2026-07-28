@@ -18,7 +18,7 @@ const ROUTES = [
   '/contact',
   '/guides',
   '/guides/son-gual-review',
-  '/a-day',
+  '/guides/play-with-a-pro-explained',
   '/signature-day',
 ]
 

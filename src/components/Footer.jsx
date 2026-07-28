@@ -16,7 +16,7 @@ const FOOTER_COPY = {
     experiences: 'Services',
     itinerary: 'Plan Your Trip',
     pwap: 'Play With A Pro',
-    day: 'What Play With A Pro Looks Like',
+    pwapGuide: 'What Play With A Pro Looks Like',
     guide: 'Golf Guides',
     guideArticles: 'Planning Articles',
     about: 'About',
@@ -40,7 +40,7 @@ const FOOTER_COPY = {
     toolDayBuilder: "Golftag planen",
     experiences: 'Erlebnisse',
     pwap: 'Mit Profi spielen',
-    day: 'Wie Play With A Pro Aussieht',
+    pwapGuide: 'Wie Play With A Pro Aussieht',
     guide: 'Golfführer',
     about: 'Über Andy',
     allCourses: 'Alle Plätze',
@@ -62,7 +62,7 @@ const FOOTER_COPY = {
     toolDayBuilder: "Planificador de jornada",
     experiences: 'Experiencias',
     pwap: 'Jugar con un Pro',
-    day: 'Cómo Es Jugar Con Un Pro',
+    pwapGuide: 'Cómo Es Jugar Con Un Pro',
     guide: 'Guía de Golf',
     about: 'Sobre Andy',
     allCourses: 'Todos los campos',
@@ -84,7 +84,7 @@ const FOOTER_COPY = {
     toolDayBuilder: "Organisateur de journée",
     experiences: 'Expériences',
     pwap: 'Jouer avec un Pro',
-    day: 'Ce Que C\'Est de Jouer Avec Un Pro',
+    pwapGuide: 'Ce Que C\'Est de Jouer Avec Un Pro',
     guide: 'Guide Golf',
     about: 'À propos',
     allCourses: 'Tous les parcours',
@@ -106,7 +106,7 @@ const FOOTER_COPY = {
     toolDayBuilder: "Golfdag samenstellen",
     experiences: 'Ervaringen',
     pwap: 'Spelen met een Pro',
-    day: 'Hoe Spelen Met Een Pro Eruitziet',
+    pwapGuide: 'Hoe Spelen Met Een Pro Eruitziet',
     guide: 'Golfgids',
     about: 'Over Andy',
     allCourses: 'Alle banen',
@@ -128,7 +128,7 @@ const FOOTER_COPY = {
     toolDayBuilder: "Planera golfdagen",
     experiences: 'Upplevelser',
     pwap: 'Spela med ett proffs',
-    day: 'Så Här Är Det Att Spela Med Ett Proffs',
+    pwapGuide: 'Så Här Är Det Att Spela Med Ett Proffs',
     guide: 'Golfguide',
     about: 'Om Andy',
     allCourses: 'Alla banor',
@@ -150,7 +150,7 @@ const FOOTER_COPY = {
     toolDayBuilder: "规划高尔夫行程",
     experiences: '体验',
     pwap: '与职业球手同场',
-    day: '与职业球手同场的体验',
+    pwapGuide: '与职业球手同场的体验',
     guide: '高尔夫指南',
     about: '关于 Andy',
     allCourses: '全部球场',
@@ -170,10 +170,6 @@ function getLangFromProp(lang) {
 
 function getPrefix(locale) {
   return locale === 'en' ? '' : `/${locale}`
-}
-
-function getADayPath(locale) {
-  return locale === 'en' ? '/guides/play-with-a-pro-explained' : `/${locale}/play-with-a-pro`
 }
 
 // Tools are English-only except course-selector (en/de/es/fr/nl/sv). Link to the
@@ -211,7 +207,7 @@ export default function Footer({ lang }) {
         <ul>
           {copy.itinerary ? <li><Link href={`${prefix}/plan-your-trip`} prefetch={false}>{copy.itinerary}</Link></li> : null}
           <li><Link href={`${prefix}/play-with-a-pro`} prefetch={false}>{copy.pwap}</Link></li>
-          <li><Link href={getADayPath(locale)} prefetch={false}>{copy.day}</Link></li>
+          <li><Link href={buildLocalePath('/guides/play-with-a-pro-explained', locale)} prefetch={false}>{copy.pwapGuide}</Link></li>
           {copy.enquire ? <li><Link href={`${prefix}/contact`} prefetch={false}>{copy.enquire}</Link></li> : null}
         </ul>
       </div>

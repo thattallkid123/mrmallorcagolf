@@ -135,15 +135,15 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
       <JsonLd data={buildArticleSchema(content, locale)} />
       <JsonLd data={buildBreadcrumbSchema(locale)} />
       {/* HERO */}
-      <section className="hero a-day-hero">
+      <section className="hero pwap-explained-hero">
         <div className="hero__content">
           <p className="hero__eyebrow">{content.hero.eyebrow}</p>
-          <h1 className="serif-display hero__title a-day-hero__title">
+          <h1 className="serif-display hero__title pwap-explained-hero__title">
             {content.hero.titleLine1}
             <br />
             <em>{content.hero.titleLine2}</em>
           </h1>
-          <p className="a-day-hero__lead">{content.hero.lead}</p>
+          <p className="pwap-explained-hero__lead">{content.hero.lead}</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.5rem' }}>
             <Link href={`${pre}/play-with-a-pro#packages`} className="btn btn--gold">
               {content.hero.primaryCta}
@@ -156,36 +156,36 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
       </section>
 
       {/* PULL QUOTE */}
-      <section className="a-day-quote">
-        <div className="a-day-quote__inner">
-          <p className="serif-display a-day-quote__text">&ldquo;{content.quote1.text}&rdquo;</p>
-          <p className="a-day-quote__credit">{content.quote1.credit}</p>
+      <section className="pwap-explained-quote">
+        <div className="pwap-explained-quote__inner">
+          <p className="serif-display pwap-explained-quote__text">&ldquo;{content.quote1.text}&rdquo;</p>
+          <p className="pwap-explained-quote__credit">{content.quote1.credit}</p>
         </div>
       </section>
 
       {/* NARRATIVE */}
-      <article className="a-day-article">
+      <article className="pwap-explained-article">
 
         {/* WHY PLAY WITH A PRO */}
-        <section className="a-day-section a-day-section--white">
-          <div className="a-day-section__inner">
+        <section className="pwap-explained-section pwap-explained-section--white">
+          <div className="pwap-explained-section__inner">
             <p className="eyebrow">{content.whyPlay.eyebrow}</p>
-            <div className="a-day-rule" />
-            <h2 className="serif-display a-day-section__title">{content.whyPlay.title}</h2>
+            <div className="pwap-explained-rule" />
+            <h2 className="serif-display pwap-explained-section__title">{content.whyPlay.title}</h2>
             {content.whyPlay.paragraphs.map((paragraph, index) => (
-              <p className="a-day-section__copy" key={`why-play-${index}`}>{paragraph}</p>
+              <p className="pwap-explained-section__copy" key={`why-play-${index}`}>{paragraph}</p>
             ))}
           </div>
         </section>
 
         {/* QUESTIONS BEFORE YOU COME */}
-        <section className="a-day-section a-day-section--cream">
-          <div className="a-day-section__inner">
+        <section className="pwap-explained-section pwap-explained-section--cream">
+          <div className="pwap-explained-section__inner">
             <p className="eyebrow">{content.beforeDay.eyebrow}</p>
-            <div className="a-day-rule" />
-            <h2 className="serif-display a-day-section__title">{content.beforeDay.title}</h2>
+            <div className="pwap-explained-rule" />
+            <h2 className="serif-display pwap-explained-section__title">{content.beforeDay.title}</h2>
             {content.beforeDay.paragraphs.map((paragraph, index) => (
-              <p className="a-day-section__copy" key={`before-day-${index}`}>{paragraph}</p>
+              <p className="pwap-explained-section__copy" key={`before-day-${index}`}>{paragraph}</p>
             ))}
           </div>
         </section>
@@ -211,47 +211,47 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
         </div>
 
         {/* THE COURSE AND DECISIONS */}
-        <section className="a-day-section a-day-section--white">
-          <div className="a-day-section__inner">
+        <section className="pwap-explained-section pwap-explained-section--white">
+          <div className="pwap-explained-section__inner">
             <p className="eyebrow">{content.duringRound.eyebrow}</p>
-            <div className="a-day-rule" />
-            <h2 className="serif-display a-day-section__title">{content.duringRound.title}</h2>
+            <div className="pwap-explained-rule" />
+            <h2 className="serif-display pwap-explained-section__title">{content.duringRound.title}</h2>
             {content.duringRound.paragraphs.map((paragraph, index) => (
-              <p className="a-day-section__copy" key={`during-round-${index}`}>{paragraph}</p>
+              <p className="pwap-explained-section__copy" key={`during-round-${index}`}>{paragraph}</p>
             ))}
           </div>
         </section>
 
         {/* MIDDLE PULL QUOTE */}
-        <div className="a-day-midquote">
-          <div className="a-day-quote__inner">
-            <p className="serif-display a-day-quote__text">&ldquo;{content.quote2.text}&rdquo;</p>
-            <p className="a-day-quote__credit">{content.quote2.credit}</p>
+        <div className="pwap-explained-midquote">
+          <div className="pwap-explained-quote__inner">
+            <p className="serif-display pwap-explained-quote__text">&ldquo;{content.quote2.text}&rdquo;</p>
+            <p className="pwap-explained-quote__credit">{content.quote2.credit}</p>
           </div>
         </div>
 
         {/* AFTER THE ROUND */}
-        <section className="a-day-section a-day-section--cream">
-          <div className="a-day-section__inner">
+        <section className="pwap-explained-section pwap-explained-section--cream">
+          <div className="pwap-explained-section__inner">
             <p className="eyebrow">{content.afterRound.eyebrow}</p>
-            <div className="a-day-rule" />
-            <h2 className="serif-display a-day-section__title">{content.afterRound.title}</h2>
-            <p className="a-day-section__copy">{content.afterRound.paragraph}</p>
+            <div className="pwap-explained-rule" />
+            <h2 className="serif-display pwap-explained-section__title">{content.afterRound.title}</h2>
+            <p className="pwap-explained-section__copy">{content.afterRound.paragraph}</p>
             <blockquote style={{ borderLeft: '3px solid var(--gold)', paddingLeft: '1.25rem', margin: '1.75rem 0 0', fontStyle: 'italic' }}>
-              <p className="a-day-section__copy" style={{ margin: 0 }}>&ldquo;{content.afterRound.quoteText}&rdquo;</p>
+              <p className="pwap-explained-section__copy" style={{ margin: 0 }}>&ldquo;{content.afterRound.quoteText}&rdquo;</p>
               <cite style={{ display: 'block', marginTop: '0.5rem', fontStyle: 'normal', fontSize: '0.875rem', opacity: 0.7 }}>{content.afterRound.quoteCredit}</cite>
             </blockquote>
           </div>
         </section>
 
         {/* WHAT CHANGES */}
-        <section className="a-day-section a-day-section--white">
-          <div className="a-day-section__inner">
+        <section className="pwap-explained-section pwap-explained-section--white">
+          <div className="pwap-explained-section__inner">
             <p className="eyebrow">{content.whatChanges.eyebrow}</p>
-            <div className="a-day-rule" />
-            <h2 className="serif-display a-day-section__title">{content.whatChanges.title}</h2>
+            <div className="pwap-explained-rule" />
+            <h2 className="serif-display pwap-explained-section__title">{content.whatChanges.title}</h2>
             {content.whatChanges.paragraphs.map((paragraph, index) => (
-              <p className="a-day-section__copy" key={`what-changes-${index}`}>{paragraph}</p>
+              <p className="pwap-explained-section__copy" key={`what-changes-${index}`}>{paragraph}</p>
             ))}
           </div>
         </section>
@@ -259,8 +259,8 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
       </article>
 
       {/* WHAT'S INCLUDED */}
-      <div className="a-day-facts">
-        <div className="a-day-facts__grid">
+      <div className="pwap-explained-facts">
+        <div className="pwap-explained-facts__grid">
           {[
             { label: content.facts.format.label, value: content.facts.format.value },
             { label: content.facts.courseSelection.label, value: content.facts.courseSelection.value },
@@ -272,8 +272,8 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
             },
           ].map(({ label, value }) => (
             <div key={label}>
-              <p className="a-day-facts__label">{label}</p>
-              <p className="serif-display a-day-facts__value">{value}</p>
+              <p className="pwap-explained-facts__label">{label}</p>
+              <p className="serif-display pwap-explained-facts__value">{value}</p>
             </div>
           ))}
         </div>

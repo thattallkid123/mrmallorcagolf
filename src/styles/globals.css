@@ -3047,7 +3047,7 @@ select.form-control { cursor: pointer; }
 .guide-cta__actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; justify-content: flex-end; min-width: 240px; }
 .guide-cta__primary { font-size: 10px; padding: 14px 32px; }
 
-.a-day-hero {
+.pwap-explained-hero {
   background-image:
     linear-gradient(160deg, rgba(10,9,7,.35) 0%, rgba(10,9,7,.72) 70%),
     url(/images/son-gual.jpg);
@@ -3055,38 +3055,38 @@ select.form-control { cursor: pointer; }
   background-position: center 35%;
   min-height: 80vh;
 }
-.a-day-hero__title em {
+.pwap-explained-hero__title em {
   font-style: italic;
   font-weight: 400;
   opacity: 0.85;
 }
-.a-day-hero__lead {
+.pwap-explained-hero__lead {
   color: rgba(255,255,255,0.8);
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 480px;
   margin-bottom: 2rem;
 }
-.a-day-quote,
-.a-day-midquote {
+.pwap-explained-quote,
+.pwap-explained-midquote {
   text-align: center;
 }
-.a-day-quote {
+.pwap-explained-quote {
   background: linear-gradient(135deg, #224034 0%, #2b4a3d 52%, #35584a 100%);
   padding: clamp(40px,6vw,72px) clamp(20px,5vw,60px);
 }
-.a-day-midquote {
+.pwap-explained-midquote {
   background: linear-gradient(135deg, #171613 0%, #201d19 58%, #171512 100%);
   padding: clamp(40px,5vw,64px) clamp(20px,5vw,60px);
 }
-.a-day-quote__inner {
+.pwap-explained-quote__inner {
   max-width: 680px;
   margin: 0 auto;
 }
-.a-day-midquote .a-day-quote__inner {
+.pwap-explained-midquote .pwap-explained-quote__inner {
   max-width: 620px;
 }
-.a-day-quote__text {
+.pwap-explained-quote__text {
   font-style: italic;
   font-size: clamp(1.25rem,2.5vw,1.85rem);
   color: rgba(255,255,255,0.88);
@@ -3094,80 +3094,64 @@ select.form-control { cursor: pointer; }
   margin-bottom: 1.25rem;
   font-weight: 400;
 }
-.a-day-midquote .a-day-quote__text {
+.pwap-explained-midquote .pwap-explained-quote__text {
   font-size: clamp(1.1rem,2.2vw,1.6rem);
   color: rgba(255,255,255,0.85);
   line-height: 1.6;
 }
-.a-day-quote__credit {
+.pwap-explained-quote__credit {
   font-size: 9px;
   letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--gold-light);
   font-family: var(--font-sans);
 }
-.a-day-article {
+.pwap-explained-article {
   background: linear-gradient(180deg, rgba(249,245,238,0.95), rgba(255,255,255,0.95));
 }
-.a-day-section {
+.pwap-explained-section {
   padding: clamp(56px,8vw,96px) clamp(20px,5vw,60px);
 }
-.a-day-section--white { background: rgba(255,255,255,0.96); }
-.a-day-section--cream { background: transparent; }
-.a-day-section__inner {
+.pwap-explained-section--white { background: rgba(255,255,255,0.96); }
+.pwap-explained-section--cream { background: transparent; }
+.pwap-explained-section__inner {
   max-width: 700px;
   margin: 0 auto;
 }
-.a-day-rule {
+.pwap-explained-rule {
   width: 36px;
   height: 1px;
   background: var(--gold);
   margin: 1.25rem 0;
 }
-.a-day-section__title {
+.pwap-explained-section__title {
   font-size: clamp(1.4rem,2.4vw,2rem);
   margin-bottom: 24px;
   color: var(--deep);
 }
-.a-day-section__copy {
+.pwap-explained-section__copy {
   line-height: 1.9;
   color: var(--text);
   font-family: var(--font-sans);
   font-weight: 300;
   margin-bottom: 20px;
 }
-.a-day-section__copy:last-child {
+.pwap-explained-section__copy:last-child {
   margin-bottom: 0;
 }
-.a-day-image-break {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2px;
-  height: 420px;
-}
-.a-day-image-break__panel {
-  background-size: cover;
-  background-position: center;
-}
-.a-day-image-break__panel--walk {
-  background-image: url(/images/walking-to-flag.jpg);
-}
-.a-day-image-break__panel--chip {
-  background-image: url(/images/chipping.jpg);
-}
-.a-day-facts {
+.pwap-explained-facts {
   background: linear-gradient(180deg, rgba(248,244,236,0.98), rgba(242,235,225,0.95));
   border-top: 1px solid rgba(0,0,0,0.07);
   padding: clamp(32px,4vw,48px) clamp(20px,5vw,60px);
 }
-.a-day-facts__grid {
+.pwap-explained-facts__grid {
   max-width: 700px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
   gap: 28px 40px;
 }
-.a-day-facts__label {
+.pwap-explained-facts__label {
   font-size: 9px;
   font-weight: 500;
   letter-spacing: .18em;
@@ -3176,7 +3160,7 @@ select.form-control { cursor: pointer; }
   margin-bottom: 6px;
   font-family: var(--font-sans);
 }
-.a-day-facts__value {
+.pwap-explained-facts__value {
   font-size: 1.05rem;
   color: var(--deep);
   font-weight: 500;
@@ -3372,8 +3356,6 @@ select.form-control { cursor: pointer; }
   .course__detail-grid { margin-left: 20px; margin-right: 20px; }
   .legal-page__inner { padding: 28px 22px; }
   .legal-page__hero { margin-bottom: 32px; padding-bottom: 26px; }
-  .a-day-image-break { grid-template-columns: 1fr; height: auto; }
-  .a-day-image-break__panel { min-height: 240px; }
 }
 
 /* ── Guides carousel & article cards — responsive ────────────── */
