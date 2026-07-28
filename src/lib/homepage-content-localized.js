@@ -167,7 +167,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "quote": {
       "text": "Después de solo 18 hoyos juntos, sentí que mi techo estaba más arriba de lo que pensaba.",
-      "attribution": "Jo, después de un día en Son Gual"
+      "attribution": "Jo, después de un día de Play With A Pro"
     },
     "winners": {
       "eyebrow": "Resultados",
@@ -467,7 +467,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "quote": {
       "text": "Nach nur 18 Löchern zusammen habe ich eine neue Grenze meines Potenzials entdeckt.",
-      "attribution": "Jo, nach einem Tag in Son Gual"
+      "attribution": "Jo, nach einem Play With A Pro Tag"
     },
     "winners": {
       "eyebrow": "Belege der Arbeit",
@@ -767,7 +767,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "quote": {
       "text": "Après seulement 18 trous ensemble, j'ai découvert un nouveau plafond à mon potentiel.",
-      "attribution": "Jo, après une journée à Son Gual"
+      "attribution": "Jo, après une journée Play With A Pro"
     },
     "winners": {
       "eyebrow": "Preuves sur le terrain",
@@ -1066,7 +1066,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "quote": {
       "text": "Na slechts 18 holes samen heb ik een nieuw plafond in mijn potentieel ontdekt.",
-      "attribution": "Jo, na een dag op Son Gual"
+      "attribution": "Jo, na een Play With A Pro dag"
     },
     "winners": {
       "eyebrow": "Bewijs op de baan",
@@ -1365,7 +1365,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "quote": {
       "text": "Efter bara 18 hål tillsammans har jag upptäckt ett nytt tak för min potential.",
-      "attribution": "Jo, efter en dag på Son Gual"
+      "attribution": "Jo, efter en Play With A Pro-dag"
     },
     "winners": {
       "eyebrow": "Bevis i verkligheten",
@@ -1687,7 +1687,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "quote": {
       "text": "只打了 18 洞，我就发现自己的潜力还能再往上走一层。",
-      "attribution": "Jo，在 Son Gual 打球后"
+      "attribution": "Jo，体验 Play With A Pro 之后"
     },
     "winners": {
       "eyebrow": "真正的成绩",

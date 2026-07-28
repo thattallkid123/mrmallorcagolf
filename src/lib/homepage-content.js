@@ -277,7 +277,7 @@ export const HOME_CONTENT = {
   },
   "quote": {
     "text": "After just 18 holes together, I've discovered a new ceiling to my potential.",
-    "attribution": "Jo, after a day at Son Gual"
+    "attribution": "Jo, after a Play With A Pro day"
   },
   "winners": {
     "eyebrow": "Proof of work",
