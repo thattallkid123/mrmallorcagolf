@@ -5,6 +5,12 @@
 - **Cowork tasks:** Handled by separate weekly scheduled pull → no manual entries needed
 - **Format:** Entries grouped by date, tagged by type ([site] [admin] [automation] etc.)
 
+## 2026-07-27
+
+### Mr Mallorca Golf
+- [seo] Drafted Bing-focused metadata rewrite for /play-with-a-pro (title, keywords, meta description, hero body) adding missing "Majorca" spelling and literal keyword phrasing; applied as uncommitted local edit only
+- [seo] Diagnosed Bing Webmaster Tools CSV showing near-zero impressions for 3 months — flagged as crawl/indexing issue, not a keyword problem; wrote handoff brief for Claude Code covering the meta fix, sitemap/crawl check, and a stale pricing note in the nextjs skill file (€595/€1,195 doc vs €695/€950 actual)
+
 ## 2026-06-15
 
 ### Mr Mallorca Golf

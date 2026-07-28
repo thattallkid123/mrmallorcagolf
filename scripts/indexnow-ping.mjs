@@ -13,7 +13,6 @@ const INDEXNOW_GUIDES = [
   'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
   'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
   'https://www.mrmallorcagolf.com/guides/on-course-coaching-mallorca',
-  'https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained',
   'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
   'https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
   'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',

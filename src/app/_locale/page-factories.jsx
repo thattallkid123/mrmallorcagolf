@@ -9,12 +9,14 @@ import GolfCoursesView from '../(en)/golf-courses/GolfCoursesView'
 import GuidesIndexView from '../(en)/guides/GuidesIndexView'
 import PlanYourTripView from '../(en)/plan-your-trip/PlanYourTripView'
 import PlayWithAProView from '../(en)/play-with-a-pro/PlayWithAProView'
+import PlayWithAProExplainedView from '../(en)/guides/play-with-a-pro-explained/PlayWithAProExplainedView'
 
 import { getAboutContent } from '../../lib/about-content'
 import { getGolfCoursesContent } from '../../lib/golf-courses-content'
 import { getGuidesContent } from '../../lib/guides-content'
 import { getPlanYourTripContent } from '../../lib/plan-your-trip-content'
 import { getPlayWithAProContent } from '../../lib/play-with-a-pro-content'
+import { getPlayWithAProExplainedContent } from '../../lib/play-with-a-pro-explained-content'
 import {
   buildAboutMetadata,
   buildContactMetadata,
@@ -23,6 +25,7 @@ import {
   buildHomeMetadata,
   buildPlanYourTripMetadata,
   buildPlayWithAProMetadata,
+  buildPlayWithAProExplainedMetadata,
 } from '../../lib/page-metadata'
 
 export const noIndexMetadata = { robots: { index: false, follow: false } }
@@ -106,6 +109,16 @@ export function createPlayWithAProMetadata(locale) {
 export function createPlayWithAProPage(locale) {
   return function LocalePlayWithAProPage() {
     return <PlayWithAProView content={getPlayWithAProContent(locale)} locale={locale} />
+  }
+}
+
+export function createPlayWithAProExplainedMetadata(locale) {
+  return buildPlayWithAProExplainedMetadata(locale)
+}
+
+export function createPlayWithAProExplainedPage(locale) {
+  return function LocalePlayWithAProExplainedPage() {
+    return <PlayWithAProExplainedView content={getPlayWithAProExplainedContent(locale)} locale={locale} />
   }
 }
 

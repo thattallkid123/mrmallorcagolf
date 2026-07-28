@@ -87,6 +87,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Montaña · Par 70 · €80-100 · 20 min desde Palma"
       },
       {
+        "slug": "play-with-a-pro-explained",
+        "badge": "La Experiencia",
+        "title": "Así es en realidad un día \"Play With A Pro\"",
+        "intro": "Un día completo en el campo con un profesional PGA. Qué ocurre, qué cambia y qué se lleva la gente sin esperarlo.",
+        "readTime": "5 min de lectura",
+        "keywords": "Play With A Pro · Día completo · Coaching en el campo"
+      },
+      {
         "slug": "best-golf-courses-mallorca",
         "badge": "Guía",
         "title": "Los mejores campos de golf de Mallorca - ranking honesto de un Profesional PGA",
@@ -231,6 +239,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergplatz · Par 70 · €80-100 · 20 Min. von Palma"
       },
       {
+        "slug": "play-with-a-pro-explained",
+        "badge": "Das Erlebnis",
+        "title": "Das steckt wirklich hinter „Play With A Pro“",
+        "intro": "Ein kompletter Tag auf dem Platz mit einem PGA-Profi. Was passiert, was sich verändert, und was Sie am Ende mitnehmen, ohne es erwartet zu haben.",
+        "readTime": "5 Min. Lesezeit",
+        "keywords": "Play With A Pro · Ganzer Tag · Coaching auf dem Platz"
+      },
+      {
         "slug": "best-golf-courses-mallorca",
         "badge": "Ratgeber",
         "title": "Die besten Golfplätze auf Mallorca - ehrliches Ranking eines PGA-Professionals",
@@ -372,6 +388,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
         "readTime": "5 min de lecture",
         "keywords": "Montagne · Par 70 · €80-100 · 20 min de Palma"
+      },
+      {
+        "slug": "play-with-a-pro-explained",
+        "badge": "L'Expérience",
+        "title": "Ce à quoi ressemble vraiment « Play With A Pro »",
+        "intro": "Une journée complète sur le parcours avec un professionnel PGA. Ce qui se passe, ce que cela change, et ce que les golfeurs en retirent sans s'y attendre.",
+        "readTime": "5 min de lecture",
+        "keywords": "Play With A Pro · Journée complète · Coaching sur parcours"
       },
       {
         "slug": "best-golf-courses-mallorca",
@@ -518,6 +542,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergbaan · Par 70 · €80-100 · 20 min van Palma"
       },
       {
+        "slug": "play-with-a-pro-explained",
+        "badge": "De Ervaring",
+        "title": "Dit is hoe \"Play With A Pro\" er in de praktijk uitziet",
+        "intro": "Een volledige dag op de baan met een PGA-professional. Wat er gebeurt, wat het verandert, en wat mensen ervan meenemen zonder het te verwachten.",
+        "readTime": "5 min leestijd",
+        "keywords": "Play With A Pro · Hele dag · Coaching op de baan"
+      },
+      {
         "slug": "best-golf-courses-mallorca",
         "badge": "Gids",
         "title": "De beste golfbanen van Mallorca - eerlijke ranking van een PGA Professional",
@@ -662,6 +694,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergsbana · Par 70 · €80-100 · 20 min från Palma"
       },
       {
+        "slug": "play-with-a-pro-explained",
+        "badge": "Upplevelsen",
+        "title": "Så här ser \"Play With A Pro\" verkligen ut",
+        "intro": "En hel dag på banan med ett PGA-proffs. Vad som händer, vad som förändras, och vad folk tar med sig hem utan att ha väntat sig det.",
+        "readTime": "5 min läsning",
+        "keywords": "Play With A Pro · Hel dag · Coaching på banan"
+      },
+      {
         "slug": "best-golf-courses-mallorca",
         "badge": "Guide",
         "title": "De bästa golfbanorna på Mallorca - en PGA-professionells ärliga ranking",
@@ -804,6 +844,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。",
         "readTime": "5分钟",
         "keywords": "山地球场 · 标准杆70 · EUR 80-100 · 距帕尔马20分钟"
+      },
+      {
+        "slug": "play-with-a-pro-explained",
+        "badge": "体验项目",
+        "title": "「Play With A Pro」真实体验详解",
+        "intro": "与PGA职业教练共度完整的一天球场时光。会发生什么、会改变什么，以及球手们收获的、事先没想到的东西。",
+        "readTime": "5 分钟阅读",
+        "keywords": "Play With A Pro · 完整一天 · 球场教学"
       },
       {
         "slug": "best-golf-courses-mallorca",

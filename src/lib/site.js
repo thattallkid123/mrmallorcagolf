@@ -16,6 +16,7 @@ const SHARED_BASE_PATHS = new Set([
   '/golf-courses',
   '/contact',
   '/guides',
+  '/guides/play-with-a-pro-explained',
 ])
 
 const EN_ONLY_BASE_PATHS = new Set(['/a-day', '/itinerary', '/course-selector'])
@@ -46,7 +47,6 @@ export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
 ])
 
 export const ARTICLE_SLUGS = new Set([
-  'play-with-a-pro-explained',
   'best-golf-courses-mallorca',
   'best-time-play-golf-mallorca',
   'golf-club-hire-mallorca',
@@ -56,9 +56,7 @@ export const ARTICLE_SLUGS = new Set([
   'mallorca-course-map',
 ])
 
-export const EN_ONLY_ARTICLE_SLUGS = new Set([
-  'play-with-a-pro-explained',
-])
+export const EN_ONLY_ARTICLE_SLUGS = new Set([])
 
 export function normalizePath(pathname = '/') {
   if (!pathname) return '/'

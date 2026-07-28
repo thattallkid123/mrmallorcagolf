@@ -222,6 +222,52 @@ const COACHING_METADATA = {
   },
 }
 
+const PLAY_WITH_A_PRO_EXPLAINED_METADATA = {
+  en: {
+    title: 'What "Play With A Pro" Actually Looks Like',
+    description:
+      'A PGA pro joins your group for a full round: reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like.',
+  },
+  de: {
+    title: 'Das steckt wirklich hinter „Play With A Pro“',
+    description:
+      'Ein PGA-Profi begleitet Ihre Gruppe eine ganze Runde: Grünlesen, Windeinschätzung und bessere Entscheidungen in Echtzeit. So sieht der Tag konkret aus.',
+  },
+  es: {
+    title: 'Así es en realidad un día "Play With A Pro"',
+    description:
+      'Un profesional PGA juega con su grupo una vuelta completa: lectura de greens, gestión del viento y mejores decisiones en tiempo real. Así es exactamente el día.',
+  },
+  fr: {
+    title: 'Ce à quoi ressemble vraiment « Play With A Pro »',
+    description:
+      "Un professionnel PGA rejoint votre groupe pour un parcours complet : lecture des greens, gestion du vent et de meilleures décisions en temps réel. Voici exactement à quoi ressemble la journée.",
+  },
+  nl: {
+    title: 'Dit is hoe "Play With A Pro" er in de praktijk uitziet',
+    description:
+      'Een PGA-professional speelt een volledige ronde met uw groep: greens lezen, wind inschatten en betere beslissingen in real time. Zo ziet de dag er precies uit.',
+  },
+  sv: {
+    title: 'Så här ser "Play With A Pro" verkligen ut',
+    description:
+      'Ett PGA-proffs följer med din grupp under en hel runda: läser greener, hanterar vind och förbättrar dina beslut i realtid. Så här ser dagen ut i praktiken.',
+  },
+  zh: {
+    title: '「Play With A Pro」真实体验详解',
+    description:
+      'PGA职业教练全程陪同您的团队完成一整场比赛：读果岭、判断风向，实时提升您的决策能力。这就是这一天的真实样子。',
+  },
+}
+
+export function buildPlayWithAProExplainedMetadata(locale = 'en') {
+  return buildPageMetadata(
+    locale === 'en' ? '/guides/play-with-a-pro-explained' : `/${locale}/guides/play-with-a-pro-explained`,
+    locale,
+    PLAY_WITH_A_PRO_EXPLAINED_METADATA[locale] || PLAY_WITH_A_PRO_EXPLAINED_METADATA.en,
+  )
+}
+
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
     title: 'Play With A Pro - Golf Day in Mallorca',
