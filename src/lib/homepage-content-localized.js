@@ -1506,7 +1506,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "打马略卡最好的",
         "高尔夫球场。"
       ],
-      "emphasis": "由 Andy 教练全程陪同。",
+      "emphasis": "由我全程陪同。",
       "primaryCta": "预订这一天",
       "secondaryCta": "查看球场",
       "trust": [

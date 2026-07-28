@@ -126,8 +126,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
     locale === 'zh'
       ? {
           heroImageAlt: 'Andy Griffiths 在马略卡球场上指导球手',
-          stripLabel: '与 Andy 同场照片',
-          featuredLabel: '与 Andy 同场特色图片',
+          stripLabel: '与我同场照片',
+          featuredLabel: '与我同场特色图片',
           featuredImageAlt: '马略卡私人高尔夫体验，海景与球道背景',
           photos: [
             'Alcanada 上与球手同场',
