@@ -46,33 +46,22 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           <h1 className="pyt-hero__title">{content.heroTitle}</h1>
           <p className="pyt-hero__body">{content.heroBody}</p>
           <div className="pyt-option-strip" aria-label={content.heroEyebrow}>
-            <a href="#free-course-finder" className="pyt-option-card">
-              <span>{content.options.basicLabel}</span>
-              <strong>{content.options.basicTitle}</strong>
-              <em>{content.options.basicNote}</em>
+            <a href="#sample-itinerary" className="pyt-option-card">
+              <span>{content.options.itineraryLabel}</span>
+              <strong>{content.options.itineraryTitle}</strong>
+              <em>{content.options.itineraryNote}</em>
             </a>
             <a href="#professional-planning" className="pyt-option-card pyt-option-card--gold">
               <span>{content.options.proLabel}</span>
               <strong>{content.options.proTitle}</strong>
               <em>{content.options.proNote}</em>
             </a>
+            <a href="#free-course-finder" className="pyt-option-card">
+              <span>{content.options.basicLabel}</span>
+              <strong>{content.options.basicTitle}</strong>
+              <em>{content.options.basicNote}</em>
+            </a>
           </div>
-        </div>
-      </section>
-
-      <section className="pyt-section pyt-section--light" id="free-course-finder">
-        <div className="pyt-section__inner pyt-section__inner--wide">
-          <div className="pyt-tier-header">
-            <span className="pyt-tier-badge">{content.free.eyebrow}</span>
-            <h2 className="pyt-tier-title">{content.free.title}</h2>
-            <p className="pyt-tier-body">{content.free.body}</p>
-            <p className="pyt-tier-body" style={{ marginTop: '1.15rem' }}>
-              <Link href={golfCoursesHref} style={{ color: 'var(--gold)', textDecoration: 'none', borderBottom: '1px solid currentColor', paddingBottom: 3 }}>
-                {courseLinkLabel}
-              </Link>
-            </p>
-          </div>
-          <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} />
         </div>
       </section>
 
@@ -95,24 +84,24 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               </button>
             </div>
 
+            {content.sampleItinerary.whyThisShape ? (
+              <div className="pyt-itin-why">
+                <h3 className="pyt-itin-why__title">{content.sampleItinerary.whyThisShape.title}</h3>
+                <p className="pyt-itin-why__lead">{content.sampleItinerary.whyThisShape.lead}</p>
+                <ul className="pyt-itin-why__list">
+                  {content.sampleItinerary.whyThisShape.points.map((point) => (
+                    <li key={point.title} className="pyt-itin-why__item">
+                      <strong className="pyt-itin-why__item-title">{point.title}</strong>
+                      <span className="pyt-itin-why__item-body">{point.body}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
             {itineraryOpen && (
               <div className="pyt-itin" id="sample-itinerary-body">
                 <p className="pyt-itin__intro">{content.sampleItinerary.intro}</p>
-
-                {content.sampleItinerary.whyThisShape ? (
-                  <div className="pyt-itin-why">
-                    <h3 className="pyt-itin-why__title">{content.sampleItinerary.whyThisShape.title}</h3>
-                    <p className="pyt-itin-why__lead">{content.sampleItinerary.whyThisShape.lead}</p>
-                    <ul className="pyt-itin-why__list">
-                      {content.sampleItinerary.whyThisShape.points.map((point) => (
-                        <li key={point.title} className="pyt-itin-why__item">
-                          <strong className="pyt-itin-why__item-title">{point.title}</strong>
-                          <span className="pyt-itin-why__item-body">{point.body}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : null}
 
                 {content.sampleItinerary.days.map((day, i) => (
                   <article
@@ -224,6 +213,17 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               {content.professional.cta}
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="pyt-section pyt-section--light" id="free-course-finder">
+        <div className="pyt-section__inner pyt-section__inner--wide">
+          <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} />
+          <p className="pyt-tier-body pyt-free__browse">
+            <Link href={golfCoursesHref} className="pyt-free__browse-link">
+              {courseLinkLabel}
+            </Link>
+          </p>
         </div>
       </section>
 

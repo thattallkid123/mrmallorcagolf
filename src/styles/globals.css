@@ -149,6 +149,19 @@
   padding-bottom: 0 !important;
 }
 
+/* "View all courses" fallback link, sits under the embedded selector */
+.pyt-free__browse {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.pyt-free__browse-link {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+}
+
 /* Mobile: tighten spacing around Sample Trip */
 @media (max-width: 640px) {
   .pyt-section {

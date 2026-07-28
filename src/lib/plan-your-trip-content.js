@@ -9,6 +9,9 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   "heroTitle": "The right Mallorca courses, in the right order.",
   "heroBody": "I choose the courses that suit your group, put them in the right order, and handle the tee times, buggies, rentals, and golf-side logistics before you arrive.",
   "options": {
+    "itineraryLabel": "Sample trip",
+    "itineraryTitle": "See a real 5-day week",
+    "itineraryNote": "Five courses, and why they run in that order.",
     "basicLabel": "Free",
     "basicTitle": "Course finder",
     "basicNote": "Shortlist courses first.",
