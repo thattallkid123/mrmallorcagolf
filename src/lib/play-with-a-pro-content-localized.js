@@ -43,7 +43,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Qué esperar del campo y en qué conviene fijarse"
         ],
         [
-          "18 hoyos junto a Andy",
+          "18 hoyos conmigo",
           "No solo caminar al lado - jugar de verdad como su compañero"
         ],
         [
@@ -110,13 +110,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "tiers": [
         {
           "eyebrow": "Solo",
-          "name": "Un día con Andy",
+          "name": "Un día conmigo",
           "note": "La tarifa del día de Andy. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, Andy puede ayudar a organizar.",
           "features": [
             "Campo elegido según su juego y su hándicap",
             "Hora de salida asegurada y completamente gestionada",
             "Plan de juego y calentamiento antes de la vuelta",
-            "18 hoyos junto a Andy",
+            "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta"
           ],
           "button": "Consultar →",
@@ -124,14 +124,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "eyebrow": "Grupo",
-          "name": "Un día con Andy",
+          "name": "Un día conmigo",
           "price": "€950 en total",
           "features": [
             "Hasta 3 jugadores, una tarifa fija por el día de Andy",
             "Campo elegido según el nivel y los hándicaps del grupo",
             "Hora de salida asegurada y completamente gestionada",
             "Plan de juego y calentamiento antes de la vuelta",
-            "18 hoyos junto a Andy"
+            "18 hoyos conmigo"
           ],
           "button": "Consultar →",
           "href": "/es/contact",
@@ -282,7 +282,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Was Sie vom Platz erwarten können und worauf Sie achten sollten"
         ],
         [
-          "18 Löcher an Andys Seite",
+          "18 Löcher mit mir",
           "Nicht nur mitlaufen - wirklich gemeinsam spielen"
         ],
         [
@@ -349,13 +349,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "tiers": [
         {
           "eyebrow": "Solo",
-          "name": "Ein Tag mit Andy",
+          "name": "Ein Tag mit mir",
           "note": "Andys Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger als optionale Zusatzleistungen buchbar, Andy hilft gern bei der Organisation.",
           "features": [
             "Platz passend zu Ihrem Spiel und Handicap",
             "Startzeit gesichert und komplett organisiert",
             "Spielplan und Warm-up vor der Runde",
-            "18 Löcher an Andys Seite",
+            "18 Löcher mit mir",
             "On-course-Coaching während der Runde"
           ],
           "button": "Anfragen →",
@@ -363,14 +363,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "eyebrow": "Gruppe",
-          "name": "Ein Tag mit Andy",
+          "name": "Ein Tag mit mir",
           "price": "€950 insgesamt",
           "features": [
             "Bis zu 3 Spieler, ein fester Tagessatz für Andy",
             "Platz passend zu Ihrer Gruppe und den Handicaps",
             "Startzeit gesichert und komplett organisiert",
             "Spielplan und Warm-up vor der Runde",
-            "18 Löcher an Andys Seite"
+            "18 Löcher mit mir"
           ],
           "button": "Anfragen →",
           "href": "/de/contact",
@@ -521,7 +521,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Ce qu'il faut attendre du parcours et ce qu'il faudra regarder"
         ],
         [
-          "18 trous aux côtés d'Andy",
+          "18 trous avec moi",
           "Pas seulement marcher à côté - vraiment jouer ensemble"
         ],
         [
@@ -588,13 +588,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "tiers": [
         {
           "eyebrow": "Solo",
-          "name": "Une journée avec Andy",
+          "name": "Une journée avec moi",
           "note": "Le tarif journée d'Andy. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, Andy peut aider à organiser.",
           "features": [
             "Parcours choisi selon votre jeu et votre index",
             "Heure de départ sécurisée et entièrement gérée",
             "Plan de jeu et échauffement avant la partie",
-            "18 trous aux côtés d'Andy",
+            "18 trous avec moi",
             "Coaching sur le parcours pendant la partie"
           ],
           "button": "Demander →",
@@ -602,14 +602,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "eyebrow": "Groupe",
-          "name": "Une journée avec Andy",
+          "name": "Une journée avec moi",
           "price": "€950 au total",
           "features": [
             "Jusqu'à 3 joueurs, un tarif fixe pour la journée d'Andy",
             "Parcours choisi selon le niveau et les index du groupe",
             "Heure de départ sécurisée et entièrement gérée",
             "Plan de jeu et échauffement avant la partie",
-            "18 trous aux côtés d'Andy"
+            "18 trous avec moi"
           ],
           "button": "Demander →",
           "href": "/fr/contact",
@@ -758,7 +758,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Wat u van de baan kunt verwachten en waar u op moet letten"
         ],
         [
-          "18 holes naast Andy",
+          "18 holes met mij",
           "Niet alleen meelopen - echt samen spelen"
         ],
         [
@@ -825,13 +825,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "tiers": [
         {
           "eyebrow": "Solo",
-          "name": "Een dag met Andy",
+          "name": "Een dag met mij",
           "note": "Andy's dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, Andy helpt graag bij de organisatie.",
           "features": [
             "Baan gekozen op basis van uw spel en handicap",
             "Starttijd vastgelegd en volledig geregeld",
             "Spelplan en warming-up voor de ronde",
-            "18 holes naast Andy",
+            "18 holes met mij",
             "Coaching op de baan tijdens de ronde"
           ],
           "button": "Aanvragen →",
@@ -839,14 +839,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "eyebrow": "Groep",
-          "name": "Een dag met Andy",
+          "name": "Een dag met mij",
           "price": "€950 totaal",
           "features": [
             "Tot 3 spelers, één vaste dagprijs voor Andy",
             "Baan gekozen op basis van het niveau en de handicaps van de groep",
             "Starttijd vastgelegd en volledig geregeld",
             "Spelplan en warming-up voor de ronde",
-            "18 holes naast Andy"
+            "18 holes met mij"
           ],
           "button": "Aanvragen →",
           "href": "/nl/contact",
@@ -997,7 +997,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Vad du kan förvänta dig av banan och vad du bör hålla utkik efter"
         ],
         [
-          "18 hål vid Andys sida",
+          "18 hål med mig",
           "Inte bara gå bredvid - faktiskt spela tillsammans"
         ],
         [
@@ -1064,13 +1064,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "tiers": [
         {
           "eyebrow": "Solo",
-          "name": "En dag med Andy",
+          "name": "En dag med mig",
           "note": "Andys dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, Andy hjälper gärna till att ordna.",
           "features": [
             "Bana vald efter ditt spel och handicap",
             "Starttid säkrad och helt ordnad",
             "Spelplan och uppvärmning före rundan",
-            "18 hål vid Andys sida",
+            "18 hål med mig",
             "Coaching på banan under rundan"
           ],
           "button": "Förfrågan →",
@@ -1078,14 +1078,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "eyebrow": "Grupp",
-          "name": "En dag med Andy",
+          "name": "En dag med mig",
           "price": "€950 totalt",
           "features": [
             "Upp till 3 spelare, ett fast dagspris för Andy",
             "Bana vald efter gruppens nivå och handicap",
             "Starttid säkrad och helt ordnad",
             "Spelplan och uppvärmning före rundan",
-            "18 hål vid Andys sida"
+            "18 hål med mig"
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact",
@@ -1236,7 +1236,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "提前了解球场特点以及当天该注意的重点"
         ],
         [
-          "与 Andy 同打 18 洞",
+          "与我同打 18 洞",
           "不只是陪着走，而是真正一起下场"
         ],
         [
@@ -1303,13 +1303,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "tiers": [
         {
           "eyebrow": "单人",
-          "name": "与 Andy 共度一天",
+          "name": "与我共度一天",
           "note": "Andy 的单人日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，Andy 可以帮助安排。",
           "features": [
             "按照您的球技与差点匹配球场",
             "开球时间已预订并安排妥当",
             "赛前计划与热身",
-            "与 Andy 同打 18 洞",
+            "与我同打 18 洞",
             "球场实战指导贯穿全程"
           ],
           "button": "立即咨询 →",
@@ -1317,14 +1317,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "eyebrow": "小组",
-          "name": "与 Andy 共度一天",
+          "name": "与我共度一天",
           "price": "€950 总计",
           "features": [
             "最多 3 位球手，Andy 收取固定日费",
             "按照小组水平与差点匹配球场",
             "开球时间已预订并安排妥当",
             "赛前计划与热身",
-            "与 Andy 同打 18 洞"
+            "与我同打 18 洞"
           ],
           "button": "立即咨询 →",
           "href": "/zh/contact",

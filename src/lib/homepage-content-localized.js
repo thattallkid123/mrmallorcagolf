@@ -42,7 +42,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Empieza donde estás en el proceso de planificación.",
       "items": [
         {
-          "title": "Jugar una vuelta con Andy",
+          "title": "Jugar una vuelta conmigo",
           "text": "Reserve un día conmigo: un campo, 18 hoyos, gestión del campo y coaching integrado en la vuelta. Solo o en grupo.",
           "cta": "Play With A Pro"
         },
@@ -185,7 +185,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Campo elegido según su juego",
             "Hora de salida asegurada",
             "Plan de juego y calentamiento",
-            "18 hoyos con Andy",
+            "18 hoyos conmigo",
             "Coaching durante la vuelta"
           ],
           "note": "Green fee y opcionales se confirman al hablar.",
@@ -200,7 +200,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Campo elegido según el grupo",
             "Hora de salida asegurada",
             "Plan de juego y calentamiento",
-            "18 hoyos con Andy"
+            "18 hoyos conmigo"
           ],
           "note": "Green fees se confirman al hablar.",
           "cta": "Ver precios",
@@ -342,7 +342,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Beginnen Sie dort, wo Sie gerade stehen.",
       "items": [
         {
-          "title": "Eine Runde mit Andy spielen",
+          "title": "Eine Runde mit mir spielen",
           "text": "Buchen Sie einen Golftag mit mir: ein Platz, 18 Löcher, Platzmanagement und Coaching direkt in die Runde eingebaut. Solo oder in der Gruppe.",
           "cta": "Play With A Pro"
         },
@@ -485,7 +485,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Platz passend zu Ihrem Spiel",
             "Startzeit gesichert",
             "Spielplan und Warm-up vor der Runde",
-            "18 Löcher mit Andy",
+            "18 Löcher mit mir",
             "Coaching auf dem Platz"
           ],
           "note": "Greenfee und optionale Extras werden im Gespräch bestätigt.",
@@ -500,7 +500,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Platz passend zur Gruppe",
             "Startzeit gesichert",
             "Spielplan und Warm-up vor der Runde",
-            "18 Löcher mit Andy"
+            "18 Löcher mit mir"
           ],
           "note": "Greenfees werden gemeinsam im Gespräch bestätigt.",
           "cta": "Preise ansehen",
@@ -642,7 +642,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Commencez là où vous en êtes dans votre processus de planification.",
       "items": [
         {
-          "title": "Jouer une partie avec Andy",
+          "title": "Jouer une partie avec moi",
           "text": "Réservez une journée avec moi : un parcours, 18 trous, gestion de parcours et coaching intégré dans la partie. En solo ou en groupe.",
           "cta": "Play With A Pro"
         },
@@ -785,7 +785,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Parcours choisi selon votre jeu",
             "Heure de départ sécurisée",
             "Plan de jeu et échauffement",
-            "18 trous avec Andy",
+            "18 trous avec moi",
             "Coaching pendant la partie"
           ],
           "note": "Green fee et options confirmés lors de notre échange.",
@@ -800,7 +800,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Parcours choisi selon le groupe",
             "Heure de départ sécurisée",
             "Plan de jeu et échauffement",
-            "18 trous avec Andy"
+            "18 trous avec moi"
           ],
           "note": "Green fees confirmés lors de notre échange.",
           "cta": "Voir les tarifs",
@@ -941,7 +941,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Begin waar u nu staat in het planningsproces.",
       "items": [
         {
-          "title": "Een ronde spelen met Andy",
+          "title": "Een ronde met mij spelen",
           "text": "Boek een dag met mij: één baan, 18 holes, lokaal baanmanagement en coaching verweven in de ronde. Solo of in een groep.",
           "cta": "Play With A Pro"
         },
@@ -1084,7 +1084,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Baan gekozen op basis van uw spel",
             "Starttijd vastgelegd",
             "Spelplan en warming-up",
-            "18 holes met Andy",
+            "18 holes met mij",
             "Coaching tijdens de ronde"
           ],
           "note": "Greenfee en optionele extras worden bevestigd wanneer we spreken.",
@@ -1099,7 +1099,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Baan gekozen voor uw groep",
             "Starttijd vastgelegd",
             "Spelplan en warming-up",
-            "18 holes met Andy"
+            "18 holes met mij"
           ],
           "note": "Greenfees bevestigd wanneer we spreken.",
           "cta": "Bekijk prijzen",
@@ -1240,7 +1240,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Börja där du befinner dig i planeringsprocessen.",
       "items": [
         {
-          "title": "Spela en runda med Andy",
+          "title": "Spela en runda med mig",
           "text": "Boka en dag med mig: en bana, 18 hål, lokalt banhanterande och coaching inbyggd i rundan. Solo eller i grupp.",
           "cta": "Play With A Pro"
         },
@@ -1383,7 +1383,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Bana vald efter ditt spel",
             "Starttid säkrad",
             "Spelplan och uppvärmning",
-            "18 hål med Andy",
+            "18 hål med mig",
             "Coaching under rundan"
           ],
           "note": "Green fee och tillval bekräftas när vi pratar.",
@@ -1398,7 +1398,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Bana vald för din grupp",
             "Starttid säkrad",
             "Spelplan och uppvärmning",
-            "18 hål med Andy"
+            "18 hål med mig"
           ],
           "note": "Green fees bekräftas när vi pratar.",
           "cta": "Se priser",
@@ -1525,7 +1525,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "services": [
         {
-          "title": "与 Andy 同场",
+          "title": "与我同场",
           "text": "一整天的私人陪打：一座球场、18 洞、球场管理指导贯穿全程。单人或小组均可。",
           "cta": "了解陪打服务"
         },
@@ -1556,7 +1556,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "从你现在所在的位置开始。",
       "items": [
         {
-          "title": "和 Andy 一起打一轮",
+          "title": "和我一起打一轮",
           "text": "预订与我共度的私人一天：一座球场、18 洞、球场管理指导贯穿全程。单人或小组均可。",
           "cta": "了解陪打服务"
         },
@@ -1702,13 +1702,13 @@ export const HOME_LOCALIZED_CONTENT = {
       "items": [
         {
           "tier": "单人",
-          "eyebrow": "与 Andy 同场",
+          "eyebrow": "与我同场",
           "name": "单人",
           "features": [
             "根据您的球技匹配球场",
             "开球时间已预订",
             "赛前计划与热身",
-            "与 Andy 同打 18 洞",
+            "与我同打 18 洞",
             "球场上的实时指导"
           ],
           "note": "果岭费及可选项目在沟通后确认。",
@@ -1717,14 +1717,14 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "小组",
-          "eyebrow": "与 Andy 同场",
+          "eyebrow": "与我同场",
           "name": "小组",
           "features": [
             "最多 3 位球手，Andy 收取固定日费",
             "根据小组情况匹配球场",
             "开球时间已预订",
             "赛前计划与热身",
-            "与 Andy 同打 18 洞"
+            "与我同打 18 洞"
           ],
           "note": "果岭费在沟通后单独确认。",
           "cta": "查看价格",

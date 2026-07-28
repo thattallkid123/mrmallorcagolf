@@ -25,15 +25,15 @@ export const HOME_CONTENT = {
   },
   "intro": {
     "eyebrow": "What I do",
-    "title": "An 18-hole day with Andy. Or let me build the trip around it.",
+    "title": "An 18-hole day with me. Or a whole trip built around it.",
     "paragraphs": [
-      "Play With A Pro is the on-course day with Andy. One course, 18 holes, with me alongside you: course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.",
+      "Play With A Pro is my on-course day with you: one course, 18 holes, course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.",
       "Plan Your Trip is the route-planning service. If you want me to handle the courses, base, routing, tee times, buggies, and bookings before you arrive, I do that too."
     ],
     "services": [
       {
         "title": "Play With A Pro",
-        "text": "An 18-hole day with Andy. Standalone, or the anchor for a wider Mallorca trip.",
+        "text": "An 18-hole day with me. Standalone, or the anchor for a wider Mallorca trip.",
         "cta": "See Play With A Pro",
         "href": "/play-with-a-pro"
       },
@@ -70,7 +70,7 @@ export const HOME_CONTENT = {
     "items": [
       {
         "title": "Play With A Pro",
-        "text": "An 18-hole day with Andy: one course, on-course coaching, course management, and local knowledge woven into the round. Solo or group.",
+        "text": "An 18-hole day with me: one course, on-course coaching, course management, and local knowledge woven into the round. Solo or group.",
         "cta": "See Play With A Pro",
         "href": "/play-with-a-pro"
       },
@@ -289,7 +289,7 @@ export const HOME_CONTENT = {
   "packages": {
     "eyebrow": "What I offer",
     "title": "A day on the course with me. Or the whole trip, built around it.",
-    "body": "The core service is Play With A Pro, an 18-hole day with Andy. Solo and group are the core day rates. I always try to secure the most personal tee time possible, but golf courses may pair bookings when busy. A guaranteed private tee time can usually be arranged as an add-on, and is included as standard with Signature Day. If you want the whole trip planned around it, that is available too.",
+    "body": "The core service is Play With A Pro, an 18-hole day with me. Solo and group are the core day rates. I always try to secure the most personal tee time possible, but golf courses may pair bookings when busy. A guaranteed private tee time can usually be arranged as an add-on, and is included as standard with Signature Day. If you want the whole trip planned around it, that is available too.",
     "items": [
       {
         "tier": "Solo",
@@ -298,7 +298,7 @@ export const HOME_CONTENT = {
         "features": [
           "Course matched to your game and handicap",
           "Tee time secured and fully handled",
-          "18 holes with Andy",
+          "18 holes with me",
           "On-course coaching during the round",
           "Post-round debrief"
         ],
@@ -316,7 +316,7 @@ export const HOME_CONTENT = {
           "Up to 3 players, one fixed day rate for Andy",
           "Course matched to your group",
           "Tee time secured and fully handled",
-          "18 holes with Andy",
+          "18 holes with me",
           "On-course coaching during the round"
         ],
         "note": "Andy's fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
@@ -363,7 +363,7 @@ export const HOME_CONTENT = {
     ],
     "multiDay": {
       "eyebrow": "Want the full picture?",
-      "title": "Build the whole trip around your day with Andy.",
+      "title": "Build the whole trip around your day with me.",
       "body": "Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.",
       "cta": "Plan the trip",
       "href": "/plan-your-trip"

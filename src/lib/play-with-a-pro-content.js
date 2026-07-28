@@ -11,7 +11,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "breadcrumbHome": "Home",
     "breadcrumbCurrent": "Play With A Pro",
     "eyebrow": "Play With A Pro | Mallorca | PGA Professional",
-    "title": "An 18-hole day with Andy.",
+    "title": "An 18-hole day with me.",
     "body": "Play With A Pro: on-course coaching, course strategy, and real game improvement on the right Mallorca course for you.",
     "price": null,
     "primaryCta": "Enquire about the day",
@@ -28,7 +28,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       },
       {
         "label": "Format",
-        "text": "One course, 18 holes, chosen for your game, with Andy alongside you throughout the round."
+        "text": "One course, 18 holes, chosen for your game, with me alongside you throughout the round."
       },
       {
         "label": "Pricing",
@@ -68,7 +68,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "The pre-round questionnaire mentioned earlier, so I understand your game, expectations, and current form."
       ],
       [
-        "18 holes with Andy",
+        "18 holes with me",
         "We play together as a group. Same tee, same conversation, same round."
       ],
       [
@@ -150,7 +150,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "features": [
           "Course matched to your game and handicap",
           "Tee time secured and fully handled",
-          "18 holes with Andy",
+          "18 holes with me",
           "On-course coaching during the round",
           "Post-round debrief and next steps"
         ],
@@ -172,7 +172,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Up to 3 players, one fixed day rate for Andy",
           "Course matched to your group",
           "Tee time secured and fully handled",
-          "18 holes with Andy",
+          "18 holes with me",
           "On-course coaching during the round"
         ],
         "button": "Enquire →",
@@ -186,7 +186,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "price": "€3,000+",
         "note": "Everything arranged. All details confirmed before the day.",
         "features": [
-          "Course, private tee time, and a fully arranged day with Andy",
+          "Course, private tee time, and a fully arranged day with me",
           "Golf physio with The Golf Doctor to work on the body and the swing issues we saw",
           "Private transfers to and from the course",
           "Evening dinner at a partner hotel"
