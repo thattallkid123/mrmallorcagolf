@@ -71,7 +71,7 @@
     },
     {
       "source": "/:locale(de|es|fr|nl|sv|zh)/guides/a-day-at-son-gual",
-      "destination": "/:locale/play-with-a-pro",
+      "destination": "/:locale/guides/play-with-a-pro-explained",
       "permanent": true
     },
     {
