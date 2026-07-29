@@ -2,6 +2,14 @@
 
 Use this as the exact map when a price changes. Status column updated 2026-06-18 after €495 → €695 pass.
 
+**Scope note (added 2026-07-29):** this file covers two distinct pricing domains. Most of
+it — the sections below down to "Docs that mention pricing" — is **MMG service pricing**
+(Play With A Pro, Signature Day, trip planning). The **"Course pricing and golf-cost
+reference layers"** section is the one exception: it tracks golf-course green-fee pricing,
+a completely separate system (Google Sheet → Hermes → calculator/tools/site). That
+system's full architecture lives in `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1 — go there for
+how the pieces fit together; this file only tracks which surface has which status.
+
 **Current pricing:** Solo €695 · Group €950 total · Signature Day €3,000+ · Trip planning: enquiry only
 
 ---
@@ -45,16 +53,25 @@ Use this as the exact map when a price changes. Status column updated 2026-06-18
 
 ## Course pricing and golf-cost reference layers
 
+Green-fee/course pricing is a separate system from the service pricing this file otherwise
+tracks (Play With A Pro, Signature Day). Its full architecture — the Sheet, TO contracts,
+Hermes, the pricing-model categories, the sync pipeline — is documented in
+`mmg-tools/SOURCE-OF-TRUTH-MAP.md` section 1. This table is the surface-by-surface status
+only; go there for how the pieces fit together.
+
 | File | Status |
 |---|---|
-| Pricing master Google Sheet (via mmg-tools control panel) | Source of truth for green fees — edit here first, then `.\mmg.ps1 pricing` |
-| `src/lib/golf-courses-data.js` | Pills text (e.g. `Peak 22 / Low 14`) — manual update |
-| `src/lib/golf-courses-content.js` | Course content data |
-| `src/lib/guide-post-content.js` | Blog post pricing references |
-| `mmg-tools/day-cost/` | ✅ Updated in Jun 2026 pass |
-| `mmg-tools/guide/` | Check |
-| `mmg-tools/internal/` | ✅ Updated in Jun 2026 pass |
-| `standalone-apps/mallorca-hub/index.html` | ✅ Updated in Jun 2026 pass |
+| Pricing master Google Sheet (Pricing + Contract Terms 2026 tabs) | Source of truth for green fees, 9H, twilight, early-bird, pricing model, rate/booking URLs — edit here, then `.\mmg.ps1 pricing`. See `SOURCE-OF-TRUTH-MAP.md` §1. |
+| `src/lib/golf-courses-data.js` | ✅ Verified 2026-07-29 — pills unaffected by twilight/9H additions (pills only ever show the 18H green-fee range) |
+| `src/lib/golf-courses-content.js` | Course content data — not touched 2026-07-29, no known issue |
+| `src/lib/guide-post-content.js` | Blog post pricing references — not touched 2026-07-29, no known issue |
+| `mmg-tools/day-cost/` | ✅ Verified 2026-07-29 — confirmed it does not render twilight/earlybird (not a gap, just not used there); low/peak/buggy/clubs sync correctly |
+| `mmg-tools/guide/course-sync.js` | Flows through the same auto-sync as day-cost (`sync-course-logistics.js`) — not specifically re-verified 2026-07-29, no known issue |
+| `mmg-tools/internal/` | ❌ Confirmed 2026-07-29: none of the new price-source fields (pricingModel, sourceType, officialRatesUrl, bookingUrl, rentalTOTerms) have reached `internal/course-sync.js` yet. Deliberately deferred — Andy's call, not a bug. See memory `internal-tool-trolley-extras-deferred`. |
+| `mmg-tools/calculator/` | ✅ Fixed 2026-07-29 — twilight/earlybird now sync live (were frozen/wrong for several courses, e.g. Canyamel showed a twilight price for a product that doesn't exist). Verified in a real browser, not just generated JSON. The old file-rewrite sync path (`syncCalculator()`) was dead code silently matching zero courses; removed. |
+| `mmg-tools/control-panel/` | ✅ Extended 2026-07-29 — Course Hub now shows pricing model, rate/booking URLs, 9H, twilight, early-bird per course, plus a live "Data still needed" checklist computed from the current master (not a written list — can't go stale). |
+| MMG Encyclopaedia (`MMG_ENCYCLOPAEDIA_DATA_MASTER.md`) | ✅ Checked 2026-07-29 — its price line only reads `low`/`peak`/`dynamic`/`licenceFee`, none of which changed this session, so it's accurate though unrefreshed. Does not reflect 9H/twilight/pricing-model detail (not built to). |
+| `standalone-apps/mallorca-hub/index.html` | Stale reference (Jun 2026 pass) — not checked 2026-07-29 |
 
 ## Docs that mention pricing
 
@@ -62,7 +79,8 @@ Use this as the exact map when a price changes. Status column updated 2026-06-18
 |---|---|
 | `docs/pricing-change-checklist.md` | ✅ Current |
 | `docs/archive/pricing-handover-2026-06-18.md` | Archived — records the Jun 2026 decision |
-| `docs/pricing-surfaces-inventory.md` | ✅ This file — updated 2026-06-18 |
+| `docs/pricing-surfaces-inventory.md` | ✅ This file — course pricing section updated 2026-07-29 |
+| `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1 | ✅ Course pricing architecture (Sheet/contracts/Hermes model, pricing-model categories) — updated 2026-07-29 |
 | `docs/content-architecture.md` | Check for hardcoded price references |
 | `CLAUDE.md` | No hardcoded price (pricing rules link out to checklist) |
 

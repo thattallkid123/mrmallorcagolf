@@ -128,7 +128,7 @@ Next newsletter step: do not build a heavy programme yet — the system is mostl
 
 Edit the pricing master Google Sheet (mmg-tools control panel) → run sync → JSON + readable MD regenerate. The generated `MMG_COURSE_PRICING_MASTER_*` files in Drive `Reference/` are script-output only — never edit them. After editing the Sheet, run from mmg-tools: `.\mmg.ps1 pricing` then `.\mmg.ps1 site`.
 
-For any price change use the `/pricing-change` skill (full surface sweep). Reference maps: `docs/content-architecture.md`, `docs/pricing-change-checklist.md`, `docs/pricing-surfaces-inventory.md`. Santa Ponsa 2 and 3 can stay in private reference notes even when not bookable.
+For any price change use the `/pricing-change` skill (full surface sweep). Reference maps: `docs/content-architecture.md`, `docs/pricing-change-checklist.md`, `docs/pricing-surfaces-inventory.md` (its "Course pricing and golf-cost reference layers" section — the rest of that file is MMG *service* pricing, a different domain; the full course-pricing architecture is `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1). Santa Ponsa 2 and 3 can stay in private reference notes even when not bookable.
 
 **Auto-synced when you run `.\mmg.ps1 pricing`:**
 - Course-listing pills in `src/lib/golf-courses-data.js` (e.g., `Peak €165 / Low €115`)

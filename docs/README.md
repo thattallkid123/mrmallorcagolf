@@ -19,7 +19,7 @@ Anything added here should be a **live reference**, not a session log. Dated che
 | `guide-content-rules.md` | Rules for guide/review `blocks`, notes, and locale parity |
 | `course-guide-standards.md` | Content standards + verified course-facts table for reviews |
 | `ROUTING_AND_CONTENT_SYSTEM.md` | App Router routing conventions |
-| `pricing-surfaces-inventory.md` | Full inventory of where prices live |
+| `pricing-surfaces-inventory.md` | MMG *service* pricing (PWAP, Signature Day) surface inventory. Course/green-fee pricing is a separate system — see its one section here plus `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1 |
 | `pricing-change-checklist.md` | Checklist companion to the `/pricing-change` skill |
 | `seo-reference.md` | Sitemap, robots, RSS, llms.txt, structured data, hreflang, OG images, IndexNow, CTR tracking table |
 | `SEARCH_CONSOLE_INDEXING_WORKFLOW.md` | Search Console submission/indexing steps |
