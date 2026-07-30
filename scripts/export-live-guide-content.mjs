@@ -1,5 +1,4 @@
 import fs from 'node:fs'
-import os from 'node:os'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -7,13 +6,8 @@ import { ARTICLE_SLUGS, REVIEW_POST_SLUGS, SITE_ORIGIN } from '../src/lib/site.j
 import { getGuideArticleContent } from '../src/lib/guide-article-content.js'
 import { getGuidePostContent } from '../src/lib/guide-post-content.js'
 
-const DEFAULT_OUTPUT_DIR = path.join(
-  os.homedir(),
-  'My Drive',
-  'Mr Mallorca Golf',
-  'Content',
-  'Blog Content',
-)
+const DEFAULT_DRIVE_ROOT = process.env.MMG_DRIVE_ROOT || 'G:\\My Drive\\Mr Mallorca Golf'
+const DEFAULT_OUTPUT_DIR = path.join(DEFAULT_DRIVE_ROOT, 'Content', 'Blog Content')
 
 const OUTPUT_DIR = process.env.MMG_BLOG_EXPORT_DIR || DEFAULT_OUTPUT_DIR
 const EXPORT_STARTED_AT = new Date()

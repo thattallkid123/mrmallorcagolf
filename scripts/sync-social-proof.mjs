@@ -3,8 +3,8 @@ import path from 'node:path'
 
 const repoRoot = process.cwd()
 const socialProofPath = path.join(repoRoot, 'src', 'data', 'site-social-proof.json')
-const defaultMasterPath =
-  'C:\\Users\\andyg\\My Drive\\Mr Mallorca Golf\\Reference\\MMG_TESTIMONIALS_AND_FEEDBACK.md'
+const driveRoot = process.env.MMG_DRIVE_ROOT || 'G:\\My Drive\\Mr Mallorca Golf'
+const defaultMasterPath = path.join(driveRoot, 'Reference', 'MMG_TESTIMONIALS_AND_FEEDBACK.md')
 
 function readUtf8(filePath) {
   return fs.readFileSync(filePath, 'utf8')
