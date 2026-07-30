@@ -17,7 +17,7 @@ from urllib.parse import quote, urlparse
 from google.auth.transport.requests import AuthorizedSession
 
 ROOT = Path(__file__).resolve().parents[2]
-DOWNLOADS_DIR = Path(r"C:\Users\andyg\Downloads\MMG Reports")
+DOWNLOADS_DIR = Path.home() / "Downloads" / "MMG Reports"
 OUTPUT_DIR = ROOT / "outputs" / "site-ops" / "monthly"
 GA4_PROPERTY_ID = "529404785"
 API_ROOT = "https://www.googleapis.com/webmasters/v3"
