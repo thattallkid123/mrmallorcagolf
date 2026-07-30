@@ -59,7 +59,7 @@ const COURSES = [
   {
     name: 'Golf Son Gual',
     location: 'Palma',
-    fees: 'Peak €165 / Low €110',
+    fees: 'Peak €165 / Low €115',
     href: '/guides/son-gual-review',
     bestFor: ['advanced', 'difficulty', 'premium', 'one', 'week'],
     take: 'The serious anchor course. Fast raised greens, a strong closing stretch, and enough wind variation to make course management matter.',
@@ -75,7 +75,7 @@ const COURSES = [
   {
     name: 'T Golf Calvia',
     location: 'Calvia',
-    fees: 'Peak €210 / Low €170',
+    fees: 'Peak €210 / Low €80 (dynamic)',
     href: '/guides/t-golf-calvia-review',
     bestFor: ['intermediate', 'advanced', 'scenery', 'premium', 'weekend'],
     take: 'A polished southwest option with strong conditioning, wide driving lines, and enough water to keep the round honest.',
@@ -83,7 +83,7 @@ const COURSES = [
   {
     name: 'Son Muntaner',
     location: 'Son Vida, Palma',
-    fees: 'Peak €250 / Low €125',
+    fees: 'Peak €260 / Low €110 (dynamic)',
     href: '/guides/son-muntaner-review',
     bestFor: ['intermediate', 'advanced', 'premium', 'scenery', 'weekend'],
     take: 'Top-end Palma golf with excellent conditioning and a strong setting. Good when you want a premium round close to the city.',
@@ -91,7 +91,7 @@ const COURSES = [
   {
     name: 'Golf de Andratx',
     location: 'Camp de Mar',
-    fees: 'Peak €140 / Low €95',
+    fees: 'Peak €140 / Low €90 (dynamic)',
     href: '/guides/golf-andratx-review',
     bestFor: ['advanced', 'difficulty', 'weekend'],
     take: 'The hardest recommendation on the list. Bring extra balls and no ego, especially if this is your first Mallorca round.',
@@ -99,7 +99,7 @@ const COURSES = [
   {
     name: 'Golf Son Termes',
     location: 'Bunyola',
-    fees: 'Peak €110 / Low €85',
+    fees: 'Peak €100 / Low €80',
     href: '/guides/son-termes-review',
     bestFor: ['intermediate', 'scenery', 'value', 'week'],
     take: 'Shorter and more rugged, with Tramuntana mountain context on every hole. Buggy recommended, but the setting does a lot of work.',
@@ -107,7 +107,7 @@ const COURSES = [
   {
     name: 'Golf Son Quint',
     location: 'Son Vida, Palma',
-    fees: 'Peak €140 / Low €70',
+    fees: 'Peak €172 / Low €70 (dynamic)',
     href: '/golf-courses',
     bestFor: ['beginner', 'walkability', 'value', 'one'],
     take: 'One of the more approachable full courses near Palma. A sensible first round for newer golfers or mixed-ability groups.',
@@ -115,7 +115,7 @@ const COURSES = [
   {
     name: 'Golf Pollensa',
     location: 'Pollensa',
-    fees: 'Peak €65 / Low €55',
+    fees: 'Peak €65 / Low €55 (9 holes)',
     href: '/golf-courses',
     bestFor: ['beginner', 'value', 'walkability', 'one'],
     take: 'Nine holes, lighter commitment, and good value. Useful when you want golf without building the whole day around it.',
