@@ -1,5 +1,5 @@
 $ErrorActionPreference = "Stop"
-$repo = "C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real"
+$repo = if ($env:MMG_SITE_REPO_ROOT) { $env:MMG_SITE_REPO_ROOT } else { (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path }
 Set-Location $repo
 
 node scripts/site-ops/run-monthly-technical-audit.mjs

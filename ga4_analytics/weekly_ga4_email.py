@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = ROOT / "ga4_analytics" / "reports"
-DOWNLOADS_COPY = Path(r"C:\Users\andyg\Downloads\MMG Reports\MMG GA4 Weekly Latest.txt")
+DOWNLOADS_COPY = Path.home() / "Downloads" / "MMG Reports" / "MMG GA4 Weekly Latest.txt"
 
 
 def run_report(days: int) -> str:

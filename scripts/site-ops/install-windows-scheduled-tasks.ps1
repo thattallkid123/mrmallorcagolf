@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$repo = "C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real"
+$repo = if ($env:MMG_SITE_REPO_ROOT) { $env:MMG_SITE_REPO_ROOT } else { (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path }
 $dailyScript = Join-Path $repo "scripts\site-ops\run-all-daily.ps1"
 $weeklyScript = Join-Path $repo "scripts\site-ops\run-all-weekly.ps1"
 $monthlyScript = Join-Path $repo "scripts\site-ops\run-all-monthly.ps1"

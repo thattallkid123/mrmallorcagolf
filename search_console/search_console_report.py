@@ -17,8 +17,8 @@ from search_console_auth import get_credentials  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = ROOT / "search_console" / "reports"
-DOWNLOADS_TXT = Path(r"C:\Users\andyg\Downloads\MMG Reports\MMG Search Console Latest.txt")
-DOWNLOADS_CSV = Path(r"C:\Users\andyg\Downloads\MMG Reports\MMG Search Console Latest.csv")
+DOWNLOADS_TXT = Path.home() / "Downloads" / "MMG Reports" / "MMG Search Console Latest.txt"
+DOWNLOADS_CSV = Path.home() / "Downloads" / "MMG Reports" / "MMG Search Console Latest.csv"
 API_ROOT = "https://www.googleapis.com/webmasters/v3"
 DEFAULT_SITE_CANDIDATES = [
     "sc-domain:mrmallorcagolf.com",

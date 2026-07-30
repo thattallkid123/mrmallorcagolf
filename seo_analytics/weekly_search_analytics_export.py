@@ -25,7 +25,7 @@ SITE_CANDIDATES = [
     "sc-domain:mrmallorcagolf.com",
     "https://www.mrmallorcagolf.com/",
 ]
-DOWNLOADS_ROOT = Path(r"C:\Users\andyg\Downloads\MMG Reports\Weekly SEO")
+DOWNLOADS_ROOT = Path.home() / "Downloads" / "MMG Reports" / "Weekly SEO"
 
 
 def daterange(days: int) -> tuple[str, str]:

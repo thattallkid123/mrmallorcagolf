@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$Root = "C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real"
+$Root = if ($env:MMG_SITE_REPO_ROOT) { $env:MMG_SITE_REPO_ROOT } else { (Resolve-Path (Join-Path $PSScriptRoot "..")).Path }
 Set-Location $Root
 
 python -m pip install --quiet google-api-python-client

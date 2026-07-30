@@ -9,6 +9,8 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 
 - Edit the pricing master Google Sheet (the single source of truth)
 - Run `.\mmg.ps1 pricing` then `.\mmg.ps1 site` from mmg-tools
+- Edit the live Pricing Google Sheet, then run `.\mmg.ps1 pricing` from `C:\OneDrive\Desktop\cursor\mmg-tools`.
+- Run `.\mmg.ps1 site` from `C:\OneDrive\Desktop\cursor\mmg-tools` to update website outputs.
 - Treat the generated JSON and readable MD as outputs, not edit targets
 
 ## 2. Update the main site
