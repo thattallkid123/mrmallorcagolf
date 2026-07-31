@@ -27,9 +27,9 @@ I will NEVER work around missing access. I will NEVER assume a folder exists. I 
 
 ## Two-Machine Setup (Old PC + New PC)
 
-Both machines are active. Neither is canonical — GitHub is the source of truth for code, Google Drive for business docs.
+The new PC is primary as of 30 July 2026; the old PC is secondary and its scheduled MMG tasks are disabled. GitHub is the source of truth for code, Google Drive for business docs.
 
-**Old PC (andyg)**
+**Old PC (andyg) — secondary**
 ```
 REPO_ROOT=C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
 GOOGLE_DRIVE=C:\Users\andyg\My Drive
@@ -37,7 +37,7 @@ DOCUMENTS=C:\Users\andyg\Documents
 PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 ```
 
-**New PC (Andy)** — Desktop is inside OneDrive folder on this machine
+**New PC (Andy) — primary** — Desktop is inside OneDrive folder on this machine
 - REPO_ROOT: `C:\OneDrive\Desktop\cursor\mrmallorcagolf-real`
 - GOOGLE_DRIVE: `C:\Users\Andy\My Drive`
 - DOCUMENTS: `C:\Users\Andy\Documents`
@@ -48,6 +48,11 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 **Secrets (not in git — must exist on both machines):** `.env` and `.env.local` (API keys — Resend etc.); `.github-token`; `ga4_analytics/ga4_oauth_client.json`, `ga4_token.json`; `search_console/search_console_token.json`; `seo_analytics/google_token.json`; `zoho_mail/zoho_config.json`.
 
 **Claude/Codex config** lives at `~/.claude/` and `~/.codex/` on each machine. Sign in fresh on each — do not copy credentials between machines. Skills, agents, and memory folders should match.
+
+**Machine-portability gotchas** (all three caused real data loss or blind sessions in the July 2026 move):
+- **Claude memory is keyed by absolute path.** It lives in `~/.claude/projects/<mangled-path>/memory/` — this repo is `C--OneDrive-Desktop-cursor-mrmallorcagolf-real` on the new PC and `C--Users-andyg-Desktop-cursor-mrmallorcagolf-real` on the old one. Copying a backup verbatim puts it under a key nothing reads. Restore into the key that already exists on that machine.
+- **The workspace root repo (`cursor`) has no git remote.** Its `CLAUDE.md`, `AGENTS.md`, `PROJECTS.md`, `WHERE_THINGS_LIVE.md`, and the `WORKING_PREFERENCES.md` under its own docs folder only move by hand. Nothing warns you if they're stale on a machine.
+- **Never put a credential in `~/.claude/settings.json` or Codex approval rules.** Both are synced to the backup repo. Use an env var or a gitignored file. `Run-ClaudeBackup.ps1` now blocks the commit if it finds a secret-shaped string.
 
 ---
 
