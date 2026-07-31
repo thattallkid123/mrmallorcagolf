@@ -39,9 +39,11 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 **New PC (Andy) — primary** — Desktop is inside OneDrive folder on this machine
 - REPO_ROOT: `C:\OneDrive\Desktop\cursor\mrmallorcagolf-real`
-- GOOGLE_DRIVE: `C:\Users\Andy\My Drive`
+- GOOGLE_DRIVE: `G:\My Drive` (Drive is a mapped letter on this machine, not a folder under the user profile)
 - DOCUMENTS: `C:\Users\Andy\Documents`
 - PROJECTS_FILE: `C:\OneDrive\Desktop\cursor\PROJECTS.md`
+
+**`MMG_DRIVE_ROOT` is authoritative over any path written here.** Scripts read it and fall back to a hardcoded default that is only right on one machine — `scripts/export-live-guide-content.mjs` defaults to `G:\My Drive\Mr Mallorca Golf`, which fails the pre-push hook on the old PC. Set the env var per machine and the fallback never matters.
 
 **Two-PC daily rule:** before leaving a machine `git push` and let Drive sync finish; before starting on the other `git pull`; only edit on one machine at a time. Run `Start-Session.ps1` (workspace root, works from either repo) at the start of a session — it fetches, reports ahead/behind vs origin, and lists uncommitted changes so a stale pull or an accidental overwrite doesn't happen.
 
