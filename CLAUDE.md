@@ -53,7 +53,7 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 
 **Machine-portability gotchas** (all three caused real data loss or blind sessions in the July 2026 move):
 - **Claude memory is keyed by absolute path.** It lives in `~/.claude/projects/<mangled-path>/memory/` — this repo is `C--OneDrive-Desktop-cursor-mrmallorcagolf-real` on the new PC and `C--Users-andyg-Desktop-cursor-mrmallorcagolf-real` on the old one. Copying a backup verbatim puts it under a key nothing reads. Restore into the key that already exists on that machine.
-- **The workspace root repo (`cursor`) has no git remote.** Its `CLAUDE.md`, `AGENTS.md`, `PROJECTS.md`, `WHERE_THINGS_LIVE.md`, and the `WORKING_PREFERENCES.md` under its own docs folder only move by hand. Nothing warns you if they're stale on a machine.
+- **The workspace root repo (`cursor`) now has its own private GitHub remote.** Its `CLAUDE.md`, `AGENTS.md`, `PROJECTS.md`, `WHERE_THINGS_LIVE.md`, and the `WORKING_PREFERENCES.md` under its own docs folder live in `thattallkid123/mmg-workspace-root`; pull it like any other repo before cross-workspace work.
 - **Never put a credential in `~/.claude/settings.json` or Codex approval rules.** Both are synced to the backup repo. Use an env var or a gitignored file. `Run-ClaudeBackup.ps1` now blocks the commit if it finds a secret-shaped string.
 
 ---
@@ -94,7 +94,7 @@ PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
 | GA4 report | `python ga4_analytics/ga4_report.py` |
 | Update Google rating | Edit `REVIEW_RATING` and `REVIEW_COUNT` at the top of `src/components/ReviewBadge.jsx` — those two constants drive the badge on every page + the `aria-label`. Then commit and push. |
 
-**Local path:** `C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real`. PowerShell does not support `&&` — use separate lines or `;`.
+**Local path:** `C:\OneDrive\Desktop\cursor\mrmallorcagolf-real`. PowerShell does not support `&&` — use separate lines or `;`.
 
 ## Completion Gate (MANDATORY — READ EVERY SESSION)
 
@@ -150,7 +150,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 
 ## Sources of Truth
 
-**Google Drive (`C:\Users\andyg\My Drive\Mr Mallorca Golf`):**
+**Google Drive (`G:\My Drive\Mr Mallorca Golf`):**
 - **Master control:** `MMG_MASTER_CONTROL_CENTER.md` — start here for business questions
 - **Business Brief:** `MMG_BUSINESS_BRIEF.md` (root) — AI coaching context, business story, status
 - **Stable course facts:** `mmg-tools/pricing/edit/confirmed/course-facts-master.json`, edited through the MMG Control Panel and published with `.\mmg.ps1 course-facts`. Website access/coordinate/fact helpers are generated outputs.
