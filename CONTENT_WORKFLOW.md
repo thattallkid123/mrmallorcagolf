@@ -14,13 +14,13 @@ Read these first:
 For workspace/project selection, read:
 
 ```text
-C:\Users\andyg\Desktop\cursor\PROJECTS.md
+$env:MMG_WORKSPACE_ROOT\PROJECTS.md
 ```
 
 Use this repo:
 
 ```text
-C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
+$env:MMG_WORKSPACE_ROOT\mrmallorcagolf-real
 ```
 
 ## Course Guide Checklist

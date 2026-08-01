@@ -66,9 +66,9 @@ The live review posts and the upcoming guide articles now use shared renderers.
 
 Key files:
 
-- [GuideArticleView.jsx](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/app/guides/GuideArticleView.jsx)
-- [GuidePostView.jsx](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/app/guides/GuidePostView.jsx)
-- [PostLayout.jsx](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/app/guides/PostLayout.jsx)
+- [GuideArticleView.jsx](../src/app/guides/GuideArticleView.jsx)
+- [GuidePostView.jsx](../src/app/guides/GuidePostView.jsx)
+- [PostLayout.jsx](../src/app/guides/PostLayout.jsx)
 
 This made it possible to:
 
@@ -81,19 +81,19 @@ This made it possible to:
 
 Main shared content/data files now include:
 
-- [homepage-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/homepage-content.js)
-- [about-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/about-content.js)
-- [coaching-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/coaching-content.js)
-- [contact-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/contact-content.js)
-- [play-with-a-pro-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/play-with-a-pro-content.js)
-- [guides-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/guides-content.js)
-- [guide-article-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/guide-article-content.js)
-- [guide-article-content-localized.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/guide-article-content-localized.js)
-- [guide-post-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/guide-post-content.js)
-- [guide-post-content-localized.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/guide-post-content-localized.js)
-- [golf-courses-data.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/golf-courses-data.js)
-- [golf-courses-content.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/golf-courses-content.js)
-- [golf-courses-translations.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/src/lib/golf-courses-translations.js)
+- [homepage-content.js](../src/lib/homepage-content.js)
+- [about-content.js](../src/lib/about-content.js)
+- [coaching-content.js](../src/lib/coaching-content.js)
+- [contact-content.js](../src/lib/contact-content.js)
+- [play-with-a-pro-content.js](../src/lib/play-with-a-pro-content.js)
+- [guides-content.js](../src/lib/guides-content.js)
+- [guide-article-content.js](../src/lib/guide-article-content.js)
+- [guide-article-content-localized.js](../src/lib/guide-article-content-localized.js)
+- [guide-post-content.js](../src/lib/guide-post-content.js)
+- [guide-post-content-localized.js](../src/lib/guide-post-content-localized.js)
+- [golf-courses-data.js](../src/lib/golf-courses-data.js)
+- [golf-courses-content.js](../src/lib/golf-courses-content.js)
+- [golf-courses-translations.js](../src/lib/golf-courses-translations.js)
 
 ### 5. Locale hygiene and release checks
 
@@ -101,9 +101,9 @@ Several checks were added or tightened so the site can be validated before relea
 
 Important scripts:
 
-- [check-text-corruption.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/scripts/check-text-corruption.js)
-- [check-shared-locale-fallbacks.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/scripts/check-shared-locale-fallbacks.js)
-- [locale-release-check.js](c:/Users/andyg/Desktop/cursor/mrmallorcagolf-real/scripts/locale-release-check.js)
+- [check-text-corruption.js](../scripts/check-text-corruption.js)
+- [check-shared-locale-fallbacks.js](../scripts/check-shared-locale-fallbacks.js)
+- [locale-release-check.js](../scripts/locale-release-check.js)
 
 Important npm commands:
 

@@ -6,8 +6,8 @@ The old version had outdated repo paths and duplicate workflow guidance, which m
 
 ## Use These Files Instead
 
-- [site-quickstart.md](c:/Users/andyg/Desktop/cursor/mrmallorca-audit/docs/site-quickstart.md)
-- [translation-workflow.md](c:/Users/andyg/Desktop/cursor/mrmallorca-audit/docs/translation-workflow.md)
+- [site-quickstart.md](./site-quickstart.md)
+- [translation-workflow.md](./translation-workflow.md)
 
 ## Current Rule
 

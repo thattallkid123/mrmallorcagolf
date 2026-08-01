@@ -21,7 +21,7 @@ pip install google-analytics-data google-auth google-auth-oauthlib
 ### 3. Authenticate (once)
 
 ```
-cd C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
+cd $env:MMG_WORKSPACE_ROOT\mrmallorcagolf-real
 python ga4_analytics/ga4_auth.py
 ```
 
@@ -31,7 +31,7 @@ Token is saved to `ga4_analytics/ga4_token.json` — no login needed after this.
 ## Usage
 
 ```
-cd C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
+cd $env:MMG_WORKSPACE_ROOT\mrmallorcagolf-real
 
 # Full report — last 30 days
 python ga4_analytics/ga4_report.py

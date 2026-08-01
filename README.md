@@ -52,7 +52,7 @@ For Santa Ponsa 2 and 3, keep the pricing recorded in the master/reference layer
 Workspace selection lives one level up:
 
 ```text
-C:\Users\andyg\Desktop\cursor\PROJECTS.md
+$env:MMG_WORKSPACE_ROOT\PROJECTS.md
 ```
 
 ## Checks

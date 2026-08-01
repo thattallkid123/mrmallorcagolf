@@ -29,13 +29,10 @@ I will NEVER work around missing access. I will NEVER assume a folder exists. I 
 
 The new PC is primary as of 30 July 2026; the old PC is secondary and its scheduled MMG tasks are disabled. GitHub is the source of truth for code, Google Drive for business docs.
 
-**Old PC (andyg) — secondary**
-```
-REPO_ROOT=C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
-GOOGLE_DRIVE=C:\Users\andyg\My Drive
-DOCUMENTS=C:\Users\andyg\Documents
-PROJECTS_FILE=C:\Users\andyg\Desktop\cursor\PROJECTS.md
-```
+**Old PC — secondary**
+- Manual worker root: `C:\MMG-Worker\cursor`.
+- Old retired workspace `C:\Users\andyg\Desktop\cursor` must not be used for new work.
+- Use `$env:MMG_WORKSPACE_ROOT` and `$env:MMG_DRIVE_ROOT` instead of hardcoded paths when possible.
 
 **New PC (Andy) — primary** — Desktop is inside OneDrive folder on this machine
 - REPO_ROOT: `C:\OneDrive\Desktop\cursor\mrmallorcagolf-real`

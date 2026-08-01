@@ -123,7 +123,7 @@ npm run build
 All must pass. Then give Andy:
 
 ```
-cd C:\Users\andyg\Desktop\cursor\mrmallorcagolf-real
+cd $env:MMG_WORKSPACE_ROOT\mrmallorcagolf-real
 git add -A
 git commit -m "Add [Course Name] review (English, hidden from index)"
 git push
