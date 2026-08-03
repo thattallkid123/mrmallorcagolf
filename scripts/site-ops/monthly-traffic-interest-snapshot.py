@@ -99,7 +99,7 @@ def ga4_client():
     from google.analytics.data_v1beta import BetaAnalyticsDataClient
     from ga4_auth import get_credentials
 
-    return BetaAnalyticsDataClient(credentials=get_credentials())
+    return BetaAnalyticsDataClient(credentials=get_credentials(), transport="rest")
 
 
 def ga4_run(client, dimensions, metrics, start, end, limit=50):

@@ -40,7 +40,7 @@ def get_client():
     from ga4_auth import get_credentials
 
     credentials = get_credentials()
-    return BetaAnalyticsDataClient(credentials=credentials)
+    return BetaAnalyticsDataClient(credentials=credentials, transport="rest")
 
 
 def date_range(days):
