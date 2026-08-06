@@ -2,6 +2,8 @@
 
 This document outlines infrastructure improvements made to prevent bugs and reduce friction when editing website content.
 
+**2026-08-06 update:** Section 2's `check:content-validation` script was retired (see that section, marked Removed, for why) — the content architecture moved to the English-canonical-plus-locale-overlay pattern (`docs/multilingual-content-architecture.md`) after this doc was written, and the old script was never updated for it, so it had been failing on a false positive (checking for `de:`/`es:` keys directly in `play-with-a-pro-content.js`, which no longer exist there — that content now lives in a separate localized overlay file). Its job is already covered correctly by section 3's `check:locale-parity`, which was wired into `check:content` at the same time. Section 5's "Next Steps" recommendation to wire content-validation into CI is superseded by this — `check:locale-parity` is what's actually in the gate now.
+
 ---
 
 ## 1. Tier Definitions (Single Source of Truth)
@@ -19,11 +21,13 @@ Instead of tier flags being defined in three separate places (PWAP content, home
 
 ---
 
-## 2. Content Validation Schema
+## 2. Content Validation Schema (Removed 2026-08-06)
 
-**Files:** 
-- `scripts/validate-content.mjs` (active CLI runner)
-- `scripts/validate-content.js` (legacy CLI runner retained in repo)
+**Files (deleted):**
+- `scripts/validate-content.mjs`
+- `scripts/validate-content.js`
+
+See the update note above — retired in favour of `check:locale-parity`, which does the same job correctly against the current content architecture. Original description follows, for historical context only:
 
 Catches structural errors before deploy:
 - Missing tier fields
@@ -204,10 +208,8 @@ None of these changes affect what users see or how the site runs.
 | Improvement | File | Purpose |
 |---|---|---|
 | Tier definitions | `src/lib/content/tier-definitions.js` | Single source of truth for tier flags |
-| Content validation | `scripts/validate-content.mjs` | Structural error detection |
-| Parity checker | `scripts/check-locale-parity.js` | Verify 6-language consistency |
+| Parity checker | `scripts/check-locale-parity.js` | Verify 6-language consistency (now wired into `check:content`) |
 | Import aliases | `jsconfig.json` | Same paths in all language versions |
-| Validation script | `scripts/validate-content.js` | Run validation from CLI |
 
 All work together to catch errors early and make content editing clearer.
 

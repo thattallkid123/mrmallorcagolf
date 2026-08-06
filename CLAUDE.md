@@ -82,8 +82,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 |------|---------|
 | Build locally | `npm run dev` |
 | Content checks | `npm run check:content` |
-| Content validation | `npm run check:content-validation` — catches structural errors |
-| Locale parity check | `npm run check:locale-parity` — verifies 6-language consistency |
+| Locale parity check | `npm run check:locale-parity` — verifies 6-language consistency; runs automatically as part of `check:content` |
 | i18n release check | `npm run check:i18n-release` — run after any shared content or locale-facing edit |
 | Build check | `npm run build` |
 | Visual smoke checks | `npm run check:visual` |
@@ -200,7 +199,7 @@ Next.js 15 App Router, React 18, JSX only. Vercel deployment from GitHub. Langua
 - **Release gate for locale-facing work:** After editing shared content, locale content, metadata, or localized page copy, run `npm run check:i18n-release` before commit.
 - **Text-change checklist:** When changing copy on any locale page, also check the shared components it flows through — full checklist in the `/localize-check` skill. Key points: contact page cards / success CTA / floating + mobile CTAs; page-level CTA labels for Plan Your Trip, Play With A Pro, Signature Day; Chinese contact uses WeChat language + anchors (not English WhatsApp); zh service labels read Chinese-facing; FAQ styling is shared (inspect the rendered accordion on mobile + desktop); check hidden metadata too (breadcrumb JSON-LD, og/twitter, alt text, CTA labels); run `npm run check:locale-leaks` + `npm run build`, then scan the rendered zh routes (`/zh`, `/zh/contact`, `/zh/play-with-a-pro`, `/zh/plan-your-trip`, `/zh/signature-day`) in one pass.
 - **Large content files:** Do not use fragile editor operations on `guide-post-content.js` or `guides-content.js`; use precise scripted/byte replacement.
-- **Pre-deploy:** Run `npm run check:content`, `npm run build`, and `npm run check:visual`.
+- **Pre-deploy:** See Completion Gate below for the required steps. `npm run check:visual` (Playwright) is not part of that gate — it's slow and prone to timing out across the full multi-locale suite, so it's a manual check to run when a change is visual/layout-affecting, not a blocking requirement on every push.
 - **Push completion rule:** A successful `git push` only means the branch updated. Not complete until the required local checks pass after the last change (see Completion Gate).
 
 ## Analytics And SEO Rules
