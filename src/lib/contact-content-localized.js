@@ -6,8 +6,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "locale": "es",
     "hero": {
       "eyebrow": "Ponerse en contacto",
-      "title": "Dígame qué busca. Yo me encargo del resto.",
-      "intro": "Sin sistemas de reserva. Dígame sus fechas, su hándicap y lo que quiere del día. Le responderé personalmente, normalmente en unas horas y siempre dentro de 24."
+      "title": "Cuénteme sus planes de golf en Mallorca.",
+      "intro": "Play With A Pro, planificación del viaje, o ambos. Si ya tiene fechas, campos o un plan aproximado, envíemelo. Si todavía está decidiendo, le ayudaré a encontrar el siguiente paso adecuado."
     },
     "cards": {
       "emailLabel": "Correo electrónico",
@@ -23,8 +23,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "form": {
       "eyebrow": "Formulario de consulta",
-      "title": "Empiece a planificar su día.",
-      "intro": "Cuantos más detalles me dé, mejor podré adaptar el día a usted.",
+      "title": "Empecemos la conversación.",
+      "intro": "Elija en qué necesita ayuda y envíeme los detalles que ya tenga.",
       "labels": {
         "fname": "Nombre",
         "lname": "Apellido",
@@ -108,7 +108,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "whatNext": {
       "heading": "Qué ocurre a continuación",
-      "body": "Leo cada consulta personalmente. Le responderé en 24 horas con una recomendación de campo y los próximos pasos - normalmente antes. Si prefiere hablar directamente, WhatsApp es la vía más rápida."
+      "body": "Leo cada consulta personalmente. En 24 horas le responderé con el siguiente paso más claro y cualquier pregunta que necesite antes de recomendar o reservar nada."
     },
     "stayInTouch": {
       "heading": "Mantenerse en contacto",
@@ -125,8 +125,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "locale": "de",
     "hero": {
       "eyebrow": "Kontakt",
-      "title": "Sagen Sie mir, was Sie suchen. Ich kümmere mich um den Rest.",
-      "intro": "Kein Buchungssystem. Sagen Sie mir Ihre Daten, Ihr Handicap und was Sie sich von dem Tag erhoffen. Ich melde mich persönlich bei Ihnen, meist innerhalb weniger Stunden und immer innerhalb von 24 Stunden."
+      "title": "Erzählen Sie mir von Ihren Mallorca-Golfplänen.",
+      "intro": "Play With A Pro, Reiseplanung oder beides. Wenn Sie schon Daten, Plätze oder einen groben Plan haben, schicken Sie ihn mir. Wenn Sie noch unentschlossen sind, helfe ich Ihnen, den richtigen nächsten Schritt zu finden."
     },
     "cards": {
       "emailLabel": "E-Mail",
@@ -142,8 +142,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "form": {
       "eyebrow": "Anfrageformular",
-      "title": "Beginnen Sie mit der Planung Ihres Tages.",
-      "intro": "Je mehr Details Sie mir geben, desto besser kann ich den Tag auf Sie abstimmen.",
+      "title": "Beginnen wir das Gespräch.",
+      "intro": "Wählen Sie, wobei Sie Hilfe brauchen, und schicken Sie mir dann, was Sie schon wissen.",
       "labels": {
         "fname": "Vorname",
         "lname": "Nachname",
@@ -227,7 +227,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "whatNext": {
       "heading": "Was passiert als Nächstes?",
-      "body": "Ich lese jede Anfrage persönlich. Sie hören von mir innerhalb von 24 Stunden mit einer Kursempfehlung und den nächsten Schritten - normalerweise früher. Wenn Sie lieber direkt sprechen möchten, ist WhatsApp am schnellsten."
+      "body": "Ich lese jede Anfrage persönlich. Innerhalb von 24 Stunden antworte ich mit dem klarsten nächsten Schritt und allen Fragen, die ich noch brauche, bevor ich etwas empfehle oder buche."
     },
     "stayInTouch": {
       "heading": "In Kontakt bleiben",
@@ -244,8 +244,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "locale": "fr",
     "hero": {
       "eyebrow": "Prendre contact",
-      "title": "Dites-moi ce que vous cherchez. Je m'occupe du reste.",
-      "intro": "Pas de système de réservation. Donnez-moi vos dates, votre handicap et ce que vous attendez de la journée. Je vous répondrai personnellement, souvent en quelques heures et toujours sous 24 heures."
+      "title": "Parlez-moi de vos projets de golf à Majorque.",
+      "intro": "Play With A Pro, planification du voyage, ou les deux. Si vous avez déjà des dates, des parcours ou un plan approximatif, envoyez-le-moi. Si vous êtes encore en train de décider, je vous aiderai à trouver la bonne prochaine étape."
     },
     "cards": {
       "emailLabel": "E-mail",
@@ -261,8 +261,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "form": {
       "eyebrow": "Formulaire de contact",
-      "title": "Commencez à planifier votre journée.",
-      "intro": "Plus vous me donnez de détails, mieux je pourrai adapter la journée à vous.",
+      "title": "Commençons la conversation.",
+      "intro": "Choisissez ce pour quoi vous avez besoin d'aide, puis envoyez-moi les détails que vous connaissez déjà.",
       "labels": {
         "fname": "Prénom",
         "lname": "Nom",
@@ -346,7 +346,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "whatNext": {
       "heading": "Que se passe-t-il ensuite ?",
-      "body": "Je lis chaque demande personnellement. Vous aurez de mes nouvelles sous 24 heures avec une recommandation de parcours et les prochaines étapes - souvent plus tôt. Si vous préférez parler directement, WhatsApp est le plus rapide."
+      "body": "Je lis chaque demande personnellement. Sous 24 heures, je vous répondrai avec l'étape suivante la plus claire et les questions nécessaires avant de recommander ou réserver quoi que ce soit."
     },
     "stayInTouch": {
       "heading": "Rester en contact",
@@ -363,8 +363,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "locale": "nl",
     "hero": {
       "eyebrow": "Neem contact op",
-      "title": "Vertel me wat u zoekt. Ik regel de rest.",
-      "intro": "Geen boekingssysteem. Vertel me uw data, uw handicap en wat u van de dag wilt. Ik reageer persoonlijk, meestal binnen een paar uur en altijd binnen 24 uur."
+      "title": "Vertel me over uw golfplannen voor Mallorca.",
+      "intro": "Play With A Pro, reisplanning, of allebei. Als u al data, banen of een ruw plan heeft, stuur het gerust. Bent u nog aan het beslissen, dan help ik u de juiste volgende stap te vinden."
     },
     "cards": {
       "emailLabel": "E-mail",
@@ -380,8 +380,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "form": {
       "eyebrow": "Aanvraagformulier",
-      "title": "Begin met het plannen van uw dag.",
-      "intro": "Hoe meer details u me geeft, hoe beter ik de dag op u kan afstemmen.",
+      "title": "Laten we het gesprek beginnen.",
+      "intro": "Kies waarmee u hulp wilt, en stuur dan de details die u al weet.",
       "labels": {
         "fname": "Voornaam",
         "lname": "Achternaam",
@@ -418,7 +418,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         {
           "label": "Kies groepsgrootte"
         },
-        null,
+        {
+          "label": "1 - solo"
+        },
         {
           "label": "2 - tweetal"
         },
@@ -463,7 +465,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "whatNext": {
       "heading": "Wat gebeurt er daarna?",
-      "body": "Ik lees elke aanvraag persoonlijk. U hoort binnen 24 uur van mij met een baanaanbeveling en de volgende stappen - meestal eerder. Als u liever direct spreekt, is WhatsApp de snelste route."
+      "body": "Ik lees elke aanvraag persoonlijk. Binnen 24 uur reageer ik met de duidelijkste volgende stap en eventuele vragen die ik nog nodig heb voordat ik iets aanbeveel of boek."
     },
     "stayInTouch": {
       "heading": "Blijf op de hoogte",
@@ -480,8 +482,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "locale": "sv",
     "hero": {
       "eyebrow": "Hör av dig",
-      "title": "Berätta vad du söker. Jag ordnar resten.",
-      "intro": "Inga bokningssystem. Berätta om dina datum, ditt handicap och vad du vill få ut av dagen. Jag svarar personligen, oftast inom några timmar och alltid inom 24 timmar."
+      "title": "Berätta om dina golfplaner för Mallorca.",
+      "intro": "Play With A Pro, reseplanering eller båda. Har du redan datum, banor eller en grov plan, skicka den till mig. Är du fortfarande osäker hjälper jag dig hitta rätt nästa steg."
     },
     "cards": {
       "emailLabel": "E-post",
@@ -497,8 +499,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "form": {
       "eyebrow": "Förfrågan",
-      "title": "Börja planera din dag.",
-      "intro": "Ju mer detaljer du ger mig, desto bättre kan jag anpassa dagen efter dig.",
+      "title": "Låt oss börja samtalet.",
+      "intro": "Välj vad du behöver hjälp med och skicka sedan de detaljer du redan har.",
       "labels": {
         "fname": "Förnamn",
         "lname": "Efternamn",
@@ -535,7 +537,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         {
           "label": "Välj gruppstorlek"
         },
-        null,
+        {
+          "label": "1 - solo"
+        },
         {
           "label": "2 - par"
         },
@@ -580,7 +584,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "whatNext": {
       "heading": "Vad händer härnäst?",
-      "body": "Jag läser varje förfrågan personligen. Du hör av mig inom 24 timmar med en banrekommendation och nästa steg - oftast snabbare. Om du föredrar att prata direkt är WhatsApp snabbast."
+      "body": "Jag läser varje förfrågan personligen. Inom 24 timmar svarar jag med det tydligaste nästa steget och eventuella frågor jag behöver innan jag rekommenderar eller bokar något."
     },
     "stayInTouch": {
       "heading": "Håll kontakten",
@@ -597,8 +601,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "locale": "zh",
     "hero": {
       "eyebrow": "联系我",
-      "title": "告诉我您想要怎样的一天。其余的我来安排。",
-      "intro": "这里没有自动预订系统。告诉我您的日期、差点以及您希望这一天达到什么效果。我会亲自回复您，通常几小时内，最晚不超过 24 小时。"
+      "title": "告诉我您在马略卡的高尔夫计划。",
+      "intro": "陪打体验、行程规划，或两者都要。如果您已经有日期、球场或大致的计划，直接发给我。如果您还在考虑，我会帮您理清合适的下一步。"
     },
     "cards": {
       "emailLabel": "电子邮箱",
@@ -612,12 +616,12 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "success": {
       "title": "已收到您的咨询。",
-      "body": "我会在 24 小时内亲自回复您。如果您希望更快沟通，WhatsApp 是最直接的方式。"
+      "body": "我会在 24 小时内亲自回复您。如果您希望更快沟通，请用微信联系我。"
     },
     "form": {
       "eyebrow": "咨询表单",
-      "title": "开始安排您的这一天。",
-      "intro": "您提供的信息越详细，我就越能把这一天安排得更贴合您的球和您的需求。",
+      "title": "开始这段沟通。",
+      "intro": "先选择您需要哪方面的帮助，再把您已经知道的信息发给我。",
       "sendPromptLabel": "建议提供",
       "handicapOptional": "（可选）",
       "labels": {
@@ -703,7 +707,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "whatNext": {
       "heading": "接下来会发生什么",
-      "body": "我会亲自阅读每一条咨询。24 小时内您将收到我的回复，包括球场推荐和后续步骤 - 通常更快。如果您希望直接沟通，请用微信联系我。"
+      "body": "我会亲自阅读每一条咨询。24 小时内，我会给您最清晰的下一步建议，以及在推荐或预订任何内容之前需要确认的问题。如果您希望直接沟通，请用微信联系我。"
     },
     "stayInTouch": {
       "heading": "保持联系",

@@ -12,7 +12,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "emphasis": "Con un profesional a tu lado.",
       "primaryCta": "Reserva tu día",
-      "secondaryCta": "Explorar campos",
+      "secondaryCta": "Planifica tu viaje",
       "trust": [
         "PGA Advanced Professional",
         "Certificado Trackman Master",
@@ -34,8 +34,27 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "label": "días para uno o grupos pequeños"
         },
-        null
-      ]
+        {
+          "value": "PGA",
+          "label": "Advanced Professional"
+        }
+      ],
+      "services": [
+        {
+          "title": "Play With A Pro",
+          "text": "Un día de 18 hoyos conmigo. Independiente, o como eje de un viaje más amplio por Mallorca.",
+          "cta": "Ver Play With A Pro"
+        },
+        {
+          "title": "Planificación del viaje",
+          "text": "Campos, base, rutas, horas de salida, buggies, palos de alquiler y sugerencias de restaurantes.",
+          "cta": "Planifica tu viaje"
+        }
+      ],
+      "coursesBlurb": "Juego y reviso todos los campos de la isla: Son Gual, Alcanada, T Golf Calvià, Son Muntaner y el resto. Si quiere comparar campos antes de reservar,",
+      "coursesBlurbLink": "vea la lista completa",
+      "guideBlurb": "Para ver el ranking completo de los 24 campos de Mallorca, con green fees y a quién le conviene cada uno,",
+      "guideBlurbLink": "lea la guía de campos"
     },
     "journey": {
       "eyebrow": "Elige tu punto de partida",
@@ -178,17 +197,20 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Experiencias y paquetes",
       "title": "Elige tu día",
-      "body": "Solo y Grupo son las tarifas base de Play With A Pro. Siempre intento conseguir la salida más personal posible, pero en días de mucha demanda el campo puede agrupar partidas. Una salida privada garantizada normalmente puede organizarse como extra, y viene incluida de serie en Signature Day.",
+      "body": "Solo y Grupo son las tarifas base de Play With A Pro. Siempre intento conseguir la salida más personal posible, pero en días de mucha demanda el campo puede agrupar partidas. Una salida privada garantizada normalmente puede organizarse como extra, y viene incluida de serie en Signature Day. Si quiere que planifiquemos todo el viaje alrededor, eso también está disponible.",
       "items": [
         {
+          "tier": "Solo",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "features": [
-            "Campo elegido según su juego",
-            "Hora de salida asegurada",
-            "Plan de juego y calentamiento",
+            "Campo elegido según su juego y su hándicap",
+            "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
-            "Coaching durante la vuelta"
+            "Coaching en el campo durante la vuelta",
+            "Resumen tras la vuelta"
           ],
-          "note": "Green fee y opcionales se confirman al hablar.",
+          "note": "La tarifa del día de Andy. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, Andy puede ayudar a organizar.",
           "cta": "Ver precios",
           "href": "/es/contact"
         },
@@ -199,8 +221,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Hasta 3 jugadores, tarifa fija por el día de Andy",
             "Campo elegido según el grupo",
             "Hora de salida asegurada",
-            "Plan de juego y calentamiento",
-            "18 hoyos conmigo"
+            "18 hoyos conmigo",
+            "Coaching en el campo durante la vuelta"
           ],
           "note": "Green fees se confirman al hablar.",
           "cta": "Ver precios",
@@ -208,16 +230,16 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "€950 en total"
         },
         {
-          "tier": "La Experiencia Signature",
-          "eyebrow": "The Signature Experience",
-          "name": "Full Day",
+          "tier": "Signature Day",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "features": [
-            "Todo organizado de antemano",
-            "Campo, hora de salida y coaching",
-            "Caddie, videógrafo o equipo premium disponibles",
-            "Almuerzo Michelin y traslados privados disponibles",
-            "Andy coordina todo y confirma el itinerario",
-            "Reserva prioritaria: sus fechas se apartan primero"
+            "Campo, hora de salida privada y un día de golf guiado",
+            "Almuerzo, chef privado o reserva en restaurante",
+            "Traslados privados y tiempo de recuperación",
+            "Caddie, videógrafo y alquiler de palos premium opcionales",
+            "Análisis de vídeo tras la vuelta incluido",
+            "Reserva prioritaria. Sus fechas se apartan primero."
           ],
           "note": "Precio bajo consulta.",
           "cta": "Ver precios",
@@ -267,7 +289,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cómo se reserva?",
-          "a": "Escríbame. Dígame sus fechas y lo que busca, y le contestaré personalmente en 24 horas. Sin plataforma de reservas. Sin esperas."
+          "a": "Empiece con el planificador de itinerarios si todavía está planeando. Si ya sabe sus fechas y quiere que participe, envíe una consulta y le responderé personalmente en 24 horas."
         },
         {
           "q": "¿Sirve para grupos?",
@@ -275,7 +297,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cuál es la mejor época del año?",
-          "a": "Octubre, noviembre, marzo y abril. Es la mejor combinación de estado del campo, clima, precio y ritmo de juego. La isla se juega todo el año: en enero los fairways aquí están mejor que muchos fairways ingleses en agosto."
+          "a": "Para las mejores condiciones, mire la primavera tardía y el otoño. Para mejor valor, junio a agosto y diciembre a febrero suelen ser más baratos. La isla se puede jugar todo el año, pero la primavera y el otoño ya no son la temporada económica."
         },
         {
           "q": "¿Puedo reservar una sesión única durante unas vacaciones de golf?",
@@ -311,7 +333,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "emphasis": "Mit einem Profi an Ihrer Seite.",
       "primaryCta": "Tag buchen",
-      "secondaryCta": "Plätze ansehen",
+      "secondaryCta": "Reise planen",
       "trust": [
         "PGA Advanced Professional",
         "Trackman Master zertifiziert",
@@ -334,8 +356,27 @@ export const HOME_LOCALIZED_CONTENT = {
           "value": "Persönlich",
           "label": "Solo- und Kleingruppentage"
         },
-        null
-      ]
+        {
+          "value": "PGA",
+          "label": "Advanced Professional"
+        }
+      ],
+      "services": [
+        {
+          "title": "Play With A Pro",
+          "text": "Ein 18-Loch-Tag mit mir. Eigenständig oder als Anker für eine größere Mallorca-Reise.",
+          "cta": "Play With A Pro ansehen"
+        },
+        {
+          "title": "Reiseplanung",
+          "text": "Plätze, Standort, Routenplanung, Startzeiten, Buggys, Leihschläger und Restaurant-Empfehlungen.",
+          "cta": "Reise planen"
+        }
+      ],
+      "coursesBlurb": "Ich spiele und bewerte jeden Platz auf der Insel: Son Gual, Alcanada, T Golf Calvià, Son Muntaner und den Rest. Wenn Sie Plätze vor der Buchung vergleichen möchten,",
+      "coursesBlurbLink": "die vollständige Liste ansehen",
+      "guideBlurb": "Für die vollständige Rangliste aller 24 Mallorca-Plätze mit Greenfees und wem sie jeweils liegen,",
+      "guideBlurbLink": "den Platzführer lesen"
     },
     "journey": {
       "eyebrow": "Wählen Sie Ihren Weg",
@@ -478,17 +519,20 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Erlebnisse und Pakete",
       "title": "Wähle deinen Tag",
-      "body": "Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Ich versuche immer, die persönlichste Startzeit für Sie zu sichern, aber an vollen Tagen kann der Golfplatz Flights zusammenlegen. Eine garantierte private Startzeit lässt sich in der Regel als Zusatz buchen und ist beim Signature Day standardmäßig enthalten.",
+      "body": "Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Ich versuche immer, die persönlichste Startzeit für Sie zu sichern, aber an vollen Tagen kann der Golfplatz Flights zusammenlegen. Eine garantierte private Startzeit lässt sich in der Regel als Zusatz buchen und ist beim Signature Day standardmäßig enthalten. Wenn Sie die ganze Reise darum herum geplant haben möchten, ist das ebenfalls möglich.",
       "items": [
         {
+          "tier": "Solo",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "features": [
-            "Platz passend zu Ihrem Spiel",
-            "Startzeit gesichert",
-            "Spielplan und Warm-up vor der Runde",
+            "Platz passend zu Ihrem Spiel und Handicap",
+            "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
-            "Coaching auf dem Platz"
+            "On-course-Coaching während der Runde",
+            "Nachbesprechung nach der Runde"
           ],
-          "note": "Greenfee und optionale Extras werden im Gespräch bestätigt.",
+          "note": "Andys Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, Andy hilft gern bei der Organisation.",
           "cta": "Preise ansehen",
           "href": "/de/contact"
         },
@@ -499,8 +543,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Bis zu 3 Spieler, ein fester Tagessatz für Andy",
             "Platz passend zur Gruppe",
             "Startzeit gesichert",
-            "Spielplan und Warm-up vor der Runde",
-            "18 Löcher mit mir"
+            "18 Löcher mit mir",
+            "On-course-Coaching während der Runde"
           ],
           "note": "Greenfees werden gemeinsam im Gespräch bestätigt.",
           "cta": "Preise ansehen",
@@ -508,16 +552,16 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "€950 insgesamt"
         },
         {
-          "tier": "Das Signature-Erlebnis",
-          "eyebrow": "The Signature Experience",
-          "name": "Full Day",
+          "tier": "Signature Day",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "features": [
-            "Alles im Voraus organisiert",
-            "Platz, Startzeit und Coaching",
-            "Caddie, Videograf oder Premium-Leihausrüstung möglich",
-            "Michelin-Lunch und private Transfers verfügbar",
-            "Andy koordiniert alles und bestätigt das Programm",
-            "Vorrangige Buchung: Ihre Termine werden zuerst reserviert"
+            "Platz, private Startzeit und ein geführter Golftag",
+            "Mittagessen, Privatkoch oder Restaurantbuchung",
+            "Private Transfers und Erholungszeit",
+            "Caddie, Videograf und Premium-Schlägerverleih optional",
+            "Videoanalyse nach der Runde inklusive",
+            "Vorrangige Buchung. Ihre Termine werden zuerst reserviert."
           ],
           "note": "Preis auf Anfrage.",
           "cta": "Preise ansehen",
@@ -567,7 +611,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Wie buche ich?",
-          "a": "Schreiben Sie mir einfach. Keine Buchungsplattformen. Keine Warteschleife."
+          "a": "Fangen Sie mit dem Reiseplaner an, wenn Sie noch planen. Wenn Sie Ihre Daten schon kennen und mich einbeziehen möchten, schicken Sie eine Anfrage, und ich melde mich persönlich innerhalb von 24 Stunden."
         },
         {
           "q": "Ist das für Gruppen geeignet?",
@@ -575,7 +619,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Wann ist die beste Jahreszeit?",
-          "a": "Oktober, November, März und April. Die beste Mischung aus Platzbedingungen, Wetter, Wert und Spielfluss."
+          "a": "Für die besten Bedingungen schauen Sie auf Spätfrühling und Herbst. Für den besseren Gegenwert sind Juni bis August und Dezember bis Februar meist günstiger. Die Insel ist ganzjährig bespielbar, aber Frühling und Herbst sind nicht mehr die Budget-Saison."
         },
         {
           "q": "Kann ich eine Einzelsession während meines Golfurlaubs buchen?",
@@ -611,7 +655,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "emphasis": "Avec un pro à vos côtés.",
       "primaryCta": "Réserver votre journée",
-      "secondaryCta": "Voir les parcours",
+      "secondaryCta": "Planifiez votre voyage",
       "trust": [
         "Professionnel PGA confirmé",
         "Certifié Trackman Master",
@@ -634,8 +678,27 @@ export const HOME_LOCALIZED_CONTENT = {
           "value": "Sur mesure",
           "label": "journées solo et petits groupes"
         },
-        null
-      ]
+        {
+          "value": "PGA",
+          "label": "Advanced Professional"
+        }
+      ],
+      "services": [
+        {
+          "title": "Play With A Pro",
+          "text": "Une journée de 18 trous avec moi. Autonome, ou comme point d'ancrage d'un voyage plus large à Majorque.",
+          "cta": "Voir Play With A Pro"
+        },
+        {
+          "title": "Planification du voyage",
+          "text": "Parcours, base, itinéraire, heures de départ, voiturettes, location de clubs et suggestions de restaurants.",
+          "cta": "Planifiez votre voyage"
+        }
+      ],
+      "coursesBlurb": "Je joue et évalue chaque parcours de l'île : Son Gual, Alcanada, T Golf Calvià, Son Muntaner et les autres. Si vous voulez comparer les parcours avant de réserver,",
+      "coursesBlurbLink": "voir la liste complète",
+      "guideBlurb": "Pour le classement complet des 24 parcours de Majorque, avec les green fees et à qui chacun convient,",
+      "guideBlurbLink": "lire le guide des parcours"
     },
     "journey": {
       "eyebrow": "Choisissez votre point de départ",
@@ -778,17 +841,20 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Expériences et forfaits",
       "title": "Choisissez votre jour",
-      "body": "Solo et Groupe sont les tarifs de base de Play With A Pro. Je cherche toujours à obtenir le départ le plus personnel possible, mais les jours de forte affluence le golf peut regrouper les réservations. Un départ privé garanti peut généralement être organisé en option, et il est inclus d'office avec le Signature Day.",
+      "body": "Solo et Groupe sont les tarifs de base de Play With A Pro. Je cherche toujours à obtenir le départ le plus personnel possible, mais les jours de forte affluence le golf peut regrouper les réservations. Un départ privé garanti peut généralement être organisé en option, et il est inclus d'office avec le Signature Day. Si vous voulez que tout le voyage soit organisé autour, c'est aussi possible.",
       "items": [
         {
+          "tier": "Solo",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "features": [
-            "Parcours choisi selon votre jeu",
-            "Heure de départ sécurisée",
-            "Plan de jeu et échauffement",
+            "Parcours choisi selon votre jeu et votre index",
+            "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
-            "Coaching pendant la partie"
+            "Coaching sur le parcours pendant la partie",
+            "Bilan après la partie"
           ],
-          "note": "Green fee et options confirmés lors de notre échange.",
+          "note": "Le tarif journée d'Andy. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, Andy peut aider à organiser.",
           "cta": "Voir les tarifs",
           "href": "/fr/contact"
         },
@@ -799,8 +865,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Jusqu'à 3 joueurs, tarif fixe pour la journée d'Andy",
             "Parcours choisi selon le groupe",
             "Heure de départ sécurisée",
-            "Plan de jeu et échauffement",
-            "18 trous avec moi"
+            "18 trous avec moi",
+            "Coaching sur le parcours pendant la partie"
           ],
           "note": "Green fees confirmés lors de notre échange.",
           "cta": "Voir les tarifs",
@@ -808,16 +874,16 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "€950 au total"
         },
         {
-          "tier": "The Signature Experience",
-          "eyebrow": "The Signature Experience",
-          "name": "Full Day",
+          "tier": "Signature Day",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "features": [
-            "Tout organisé en amont",
-            "Parcours, départ et coaching",
-            "Caddie, vidéaste ou équipement premium disponibles",
-            "Déjeuner Michelin et transferts privés disponibles",
-            "Andy coordonne tout et confirme le programme",
-            "Réservation prioritaire: vos dates réservées en premier"
+            "Parcours, départ privé et journée de golf accompagnée",
+            "Déjeuner, chef privé ou réservation au restaurant",
+            "Transferts privés et temps de récupération",
+            "Caddie, vidéaste et location de clubs premium en option",
+            "Analyse vidéo après la partie incluse",
+            "Réservation prioritaire. Vos dates réservées en premier."
           ],
           "note": "Tarif sur demande.",
           "cta": "Voir les tarifs",
@@ -867,7 +933,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Comment réserver ?",
-          "a": "Écrivez-moi simplement. Donnez-moi vos dates et ce que vous cherchez, et je vous répondrai personnellement sous 24 heures. Pas de plateforme de réservation. Pas d'attente."
+          "a": "Commencez par le planificateur d'itinéraire si vous êtes encore en train de planifier. Si vous connaissez déjà vos dates et voulez m'impliquer, envoyez une demande et je vous répondrai personnellement sous 24 heures."
         },
         {
           "q": "Est-ce adapté aux groupes ?",
@@ -875,7 +941,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Quelle est la meilleure période ?",
-          "a": "Octobre, novembre, mars et avril. C'est le meilleur mélange de conditions, météo, valeur et rythme de jeu."
+          "a": "Pour les meilleures conditions, regardez la fin du printemps et l'automne. Pour un meilleur rapport qualité-prix, juin à août et décembre à février sont généralement moins chers. L'île se joue toute l'année, mais le printemps et l'automne ne sont plus la saison économique."
         },
         {
           "q": "Puis-je réserver une session unique pendant des vacances golf ?",
@@ -910,7 +976,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "emphasis": "Met een professional aan uw zijde.",
       "primaryCta": "Boek uw dag",
-      "secondaryCta": "Bekijk de banen",
+      "secondaryCta": "Plan uw reis",
       "trust": [
         "PGA Advanced Professional",
         "Trackman Master gecertificeerd",
@@ -933,8 +999,27 @@ export const HOME_LOCALIZED_CONTENT = {
           "value": "Persoonlijk",
           "label": "dagen voor solo en kleine groepen"
         },
-        null
-      ]
+        {
+          "value": "PGA",
+          "label": "Advanced Professional"
+        }
+      ],
+      "services": [
+        {
+          "title": "Play With A Pro",
+          "text": "Een 18-holes dag met mij. Op zichzelf staand, of als anker voor een bredere Mallorca-reis.",
+          "cta": "Bekijk Play With A Pro"
+        },
+        {
+          "title": "Reisplanning",
+          "text": "Banen, basis, route, starttijden, buggy's, huurclubs en restaurantsuggesties.",
+          "cta": "Plan uw reis"
+        }
+      ],
+      "coursesBlurb": "Ik speel en beoordeel elke baan op het eiland: Son Gual, Alcanada, T Golf Calvià, Son Muntaner en de rest. Wilt u banen vergelijken voordat u boekt,",
+      "coursesBlurbLink": "bekijk de volledige lijst",
+      "guideBlurb": "Voor het volledige gerangschikte overzicht van alle 24 Mallorca-banen, met greenfees en voor wie elke baan geschikt is,",
+      "guideBlurbLink": "lees de baangids"
     },
     "journey": {
       "eyebrow": "Kies uw startpunt",
@@ -1077,17 +1162,20 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Ervaringen en pakketten",
       "title": "Kies je dag",
-      "body": "Solo en groep zijn de standaard Play With A Pro dagtarieven. Ik probeer altijd de meest persoonlijke starttijd mogelijk te regelen, maar op drukke dagen kan de golfbaan flights samenvoegen. Een gegarandeerd privé starttijdslot kan meestal als extra worden geregeld, en is standaard inbegrepen bij Signature Day.",
+      "body": "Solo en groep zijn de standaard Play With A Pro dagtarieven. Ik probeer altijd de meest persoonlijke starttijd mogelijk te regelen, maar op drukke dagen kan de golfbaan flights samenvoegen. Een gegarandeerd privé starttijdslot kan meestal als extra worden geregeld, en is standaard inbegrepen bij Signature Day. Wilt u de hele reis eromheen laten plannen, dan kan dat ook.",
       "items": [
         {
+          "tier": "Solo",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "features": [
-            "Baan gekozen op basis van uw spel",
-            "Starttijd vastgelegd",
-            "Spelplan en warming-up",
+            "Baan gekozen op basis van uw spel en handicap",
+            "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
-            "Coaching tijdens de ronde"
+            "Coaching op de baan tijdens de ronde",
+            "Nabespreking na de ronde"
           ],
-          "note": "Greenfee en optionele extras worden bevestigd wanneer we spreken.",
+          "note": "Andy's dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, Andy helpt graag bij de organisatie.",
           "cta": "Bekijk prijzen",
           "href": "/nl/contact"
         },
@@ -1098,8 +1186,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Tot 3 spelers, vaste dagprijs voor Andy",
             "Baan gekozen voor uw groep",
             "Starttijd vastgelegd",
-            "Spelplan en warming-up",
-            "18 holes met mij"
+            "18 holes met mij",
+            "Coaching op de baan tijdens de ronde"
           ],
           "note": "Greenfees bevestigd wanneer we spreken.",
           "cta": "Bekijk prijzen",
@@ -1107,16 +1195,16 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "€950 totaal"
         },
         {
-          "tier": "The Signature Experience",
-          "eyebrow": "The Signature Experience",
-          "name": "Full Day",
+          "tier": "Signature Day",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "features": [
-            "Alles vooraf geregeld",
-            "Baan, starttijd en coaching",
-            "Caddie, videograaf of premium uitrusting mogelijk",
-            "Michelin-lunch en privétransfer beschikbaar",
-            "Andy coördineert alles en bevestigt het programma",
-            "Prioriteitsboeking: uw data als eerste vastgelegd"
+            "Baan, prive starttijd en een begeleide golfdag",
+            "Lunch, privéchef of restaurantreservering",
+            "Prive transfers en hersteltijd",
+            "Caddie, videograaf en premium clubverhuur optioneel",
+            "Video-analyse na de ronde inbegrepen",
+            "Prioriteitsboeking. Uw data worden als eerste vastgelegd."
           ],
           "note": "Prijs op aanvraag.",
           "cta": "Bekijk prijzen",
@@ -1166,7 +1254,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Hoe boek ik?",
-          "a": "Neem gewoon contact op. Vertel me uw data en wat u zoekt, en ik kom persoonlijk binnen 24 uur bij u terug. Geen boekingsplatform. Geen wachtrij."
+          "a": "Begin met de reisplanner als u nog aan het plannen bent. Weet u uw data al en wilt u mij erbij betrekken, stuur dan een aanvraag en ik kom persoonlijk binnen 24 uur bij u terug."
         },
         {
           "q": "Is dit geschikt voor groepen?",
@@ -1174,7 +1262,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Wat is de beste tijd van het jaar?",
-          "a": "Oktober, november, maart en april. De beste mix van baancondities, weer, waarde en speeltempo."
+          "a": "Voor de beste omstandigheden kijkt u naar laat voorjaar en herfst. Voor betere waarde zijn juni tot augustus en december tot februari meestal goedkoper. Het eiland is het hele jaar door speelbaar, maar voorjaar en herfst zijn niet langer het budgetseizoen."
         },
         {
           "q": "Kan ik een losse sessie boeken tijdens een golfvakantie?",
@@ -1209,7 +1297,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "emphasis": "Med ett proffs vid din sida.",
       "primaryCta": "Boka din dag",
-      "secondaryCta": "Se banorna",
+      "secondaryCta": "Planera din resa",
       "trust": [
         "PGA Advanced Professional",
         "Trackman Master-certifierad",
@@ -1232,8 +1320,27 @@ export const HOME_LOCALIZED_CONTENT = {
           "value": "Personligt",
           "label": "dagar för solo och små grupper"
         },
-        null
-      ]
+        {
+          "value": "PGA",
+          "label": "Advanced Professional"
+        }
+      ],
+      "services": [
+        {
+          "title": "Play With A Pro",
+          "text": "En 18-håls dag med mig. Fristående, eller som ankare för en större Mallorcaresa.",
+          "cta": "Se Play With A Pro"
+        },
+        {
+          "title": "Reseplanering",
+          "text": "Banor, bas, rutt, starttider, golfbilar, hyrklubbor och restaurangförslag.",
+          "cta": "Planera din resa"
+        }
+      ],
+      "coursesBlurb": "Jag spelar och recenserar varje bana på ön: Son Gual, Alcanada, T Golf Calvià, Son Muntaner och resten. Vill du jämföra banor innan du bokar,",
+      "coursesBlurbLink": "se hela listan",
+      "guideBlurb": "För den fullständiga rankade genomgången av alla 24 Mallorcabanor, med green fees och vem varje bana passar,",
+      "guideBlurbLink": "läs bankguiden"
     },
     "journey": {
       "eyebrow": "Välj din utgångspunkt",
@@ -1376,17 +1483,20 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Upplevelser och paket",
       "title": "Välj din dag",
-      "body": "Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Jag försöker alltid ordna den mest personliga starttiden som är möjlig, men under fullbokade dagar kan golfbanan slå ihop bokningar. En garanterad privat starttid kan oftast ordnas som tillval och ingår som standard i Signature Day.",
+      "body": "Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Jag försöker alltid ordna den mest personliga starttiden som är möjlig, men under fullbokade dagar kan golfbanan slå ihop bokningar. En garanterad privat starttid kan oftast ordnas som tillval och ingår som standard i Signature Day. Vill du att hela resan planeras runt detta går det också att ordna.",
       "items": [
         {
+          "tier": "Solo",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "features": [
-            "Bana vald efter ditt spel",
-            "Starttid säkrad",
-            "Spelplan och uppvärmning",
+            "Bana vald efter ditt spel och handicap",
+            "Starttid säkrad och helt ordnad",
             "18 hål med mig",
-            "Coaching under rundan"
+            "Coaching på banan under rundan",
+            "Genomgång efter rundan"
           ],
-          "note": "Green fee och tillval bekräftas när vi pratar.",
+          "note": "Andys dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, Andy hjälper gärna till att ordna.",
           "cta": "Se priser",
           "href": "/sv/contact"
         },
@@ -1397,8 +1507,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Upp till 3 spelare, ett fast dagspris för Andy",
             "Bana vald för din grupp",
             "Starttid säkrad",
-            "Spelplan och uppvärmning",
-            "18 hål med mig"
+            "18 hål med mig",
+            "Coaching på banan under rundan"
           ],
           "note": "Green fees bekräftas när vi pratar.",
           "cta": "Se priser",
@@ -1406,16 +1516,16 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "€950 totalt"
         },
         {
-          "tier": "The Signature Experience",
-          "eyebrow": "The Signature Experience",
-          "name": "Full Day",
+          "tier": "Signature Day",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "features": [
-            "Allt ordnat i förväg",
-            "Bana, starttid och coaching",
-            "Caddie, videograf eller premiumutrustning möjlig",
-            "Michelin-lunch och privata transfers tillgängliga",
-            "Andy koordinerar allt och bekräftar programmet",
-            "Prioritetsbokning: dina datum reserveras först"
+            "Bana, privat starttid och en guidad golfdag",
+            "Lunch, privat kock eller restaurangbokning",
+            "Privata transfers och återhämtningstid",
+            "Caddie, videograf och premium klubbuthyrning valfritt",
+            "Videoanalys efter rundan ingår",
+            "Prioritetsbokning. Dina datum reserveras först."
           ],
           "note": "Pris på förfrågan.",
           "cta": "Se priser",
@@ -1465,7 +1575,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Hur bokar jag?",
-          "a": "Hör bara av dig. Berätta dina datum och vad du söker, så återkommer jag personligen inom 24 timmar. Ingen bokningsplattform. Ingen väntan."
+          "a": "Börja med reseplaneraren om du fortfarande planerar. Vet du redan dina datum och vill ha mig involverad, skicka en förfrågan så återkommer jag personligen inom 24 timmar."
         },
         {
           "q": "Passar det här grupper?",
@@ -1473,7 +1583,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "När är bästa tiden på året?",
-          "a": "Oktober, november, mars och april. Den bästa kombinationen av banförhållanden, väder, värde och speltempo."
+          "a": "För bästa förhållanden, titta på sen vår och höst. För bättre värde är juni till augusti och december till februari oftast billigare. Ön går att spela året runt, men vår och höst är inte längre lågprissäsongen."
         },
         {
           "q": "Kan jag boka en enskild session under en golfsemester?",
@@ -1508,7 +1618,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "emphasis": "由我全程陪同。",
       "primaryCta": "预订这一天",
-      "secondaryCta": "查看球场",
+      "secondaryCta": "规划行程",
       "trust": [
         "英国职业高尔夫协会高级职业教练",
         "Trackman Master 认证",
@@ -1547,7 +1657,10 @@ export const HOME_LOCALIZED_CONTENT = {
           "value": "私人",
           "label": "单人或小团体安排"
         },
-        null
+        {
+          "value": "PGA",
+          "label": "Advanced Professional"
+        }
       ]
     },
     "socialProof": "上海 11 年 · 普通话流利 · 抖音数亿次观看 · 中国国家队 · Trackman 大师认证",
@@ -1698,18 +1811,18 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "体验与套餐",
       "title": "选择你的那一天",
-      "body": "单人和小组是 Play With A Pro 的基础日费方案。我都会尽量安排最具私密感的开球时间，但在球场繁忙时，球场可能会将不同预订拼组。如需保证私密开球时间，通常可以作为加购安排，而 Signature Day 则已默认包含。",
+      "body": "单人和小组是 Play With A Pro 的基础日费方案。我都会尽量安排最具私密感的开球时间，但在球场繁忙时，球场可能会将不同预订拼组。如需保证私密开球时间，通常可以作为加购安排，而 Signature Day 则已默认包含。如果您希望围绕这一天规划整趟行程，这项服务同样可以安排。",
       "items": [
         {
           "tier": "单人",
           "eyebrow": "与我同场",
           "name": "单人",
           "features": [
-            "根据您的球技匹配球场",
-            "开球时间已预订",
-            "赛前计划与热身",
+            "按照您的球技与差点匹配球场",
+            "开球时间已预订并安排妥当",
             "与我同打 18 洞",
-            "球场上的实时指导"
+            "球场实战指导贯穿全程",
+            "赛后总结"
           ],
           "note": "果岭费及可选项目在沟通后确认。",
           "cta": "查看价格",
@@ -1723,8 +1836,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "最多 3 位球手，Andy 收取固定日费",
             "根据小组情况匹配球场",
             "开球时间已预订",
-            "赛前计划与热身",
-            "与我同打 18 洞"
+            "与我同打 18 洞",
+            "球场实战指导贯穿全程"
           ],
           "note": "果岭费在沟通后单独确认。",
           "cta": "查看价格",
@@ -1732,16 +1845,16 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "€950 总计"
         },
         {
-          "tier": "签名体验",
-          "eyebrow": "签名体验",
-          "name": "全天体验",
+          "tier": "Signature Day",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "features": [
-            "所有安排提前落实",
-            "球场、开球时间与指导",
-            "球童、摄影师或高级球具租赁均可安排",
-            "米其林级午餐和私人接送可选",
-            "Andy 统筹安排并提前与您确认行程",
-            "优先预订：您的日期优先锁定"
+            "球场、私人开球时段与全程陪同的高尔夫日",
+            "午餐、私人厨师或餐厅预订",
+            "私人接送与恢复时间",
+            "球童、摄影师与高端球具租赁可选",
+            "含赛后视频分析",
+            "优先预订，您的日期优先锁定。"
           ],
           "note": "价格面议。",
           "cta": "查看价格",
@@ -1791,7 +1904,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "怎么预订？",
-          "a": "直接联系我就行。把你的日期和想要的体验告诉我，我会在 24 小时内亲自回复。没有预订平台，也不用排队等。"
+          "a": "如果还在规划中，可以先使用行程规划工具。如果您已经确定日期并希望我参与，直接发来咨询，我会在 24 小时内亲自回复。"
         },
         {
           "q": "适合团体吗？",
@@ -1799,7 +1912,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "一年里什么时候最好？",
-          "a": "十月、十一月、三月和四月。球场状态、天气、性价比和节奏，这几个月的平衡最好。"
+          "a": "论最佳条件，可以看暮春和秋季。论性价比，6月到8月以及12月到2月通常更便宜。这座岛屿全年都适合打球，但春秋两季已经不再是预算季节。"
         },
         {
           "q": "度假期间可以单独预订一次指导吗？",

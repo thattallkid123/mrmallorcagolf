@@ -44,7 +44,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "paragraphs": [
           "Me mudé a Mallorca en marzo de 2025 con mi mujer Yina. Más cerca de la familia en el Reino Unido, sol todo el año y una isla de golf realmente excepcional a la que la mayoría de la gente no da suficiente crédito.",
           "Volví a jugar en serio. Recorriendo todos los campos de la isla. Redescubriendo lo que se siente al estar en el primer tee y realmente importarte el resultado. Ese instinto competitivo, dormido durante años de coaching a tiempo completo, volvió muy rápido.",
-          "Un PGA Professional que pasó más de una década enseñando en Asia y que ahora organiza días de golf en una de las mejores islas de golf de Europa. Si eso suena como el tipo de día que está buscando, póngase en contacto."
+          "Soy PGA Professional y pasé más de una década enseñando en Asia. Ahora ayudo a los golfistas que visitan Mallorca a jugarla como se debe: ya sea como un día en el campo conmigo, o como un viaje completo planificado alrededor de eso. La experiencia en coaching importa, pero la tarea más grande es elegir los campos, el ritmo y los extras adecuados para el día o la semana."
         ],
         "quote": "La filosofía de coaching que ha surgido de volver a jugar es sencilla: las mejoras más rápidas ocurren en el campo, no en la zona de prácticas. Condiciones reales, decisiones reales. Ese progreso suele quedarse."
       }
@@ -155,7 +155,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "paragraphs": [
           "Im März 2025 zog ich mit meiner Frau Yina nach Mallorca. Näher an der Familie im Vereinigten Königreich, ganzjähriger Sonnenschein und eine wirklich außergewöhnliche Golfinsel, die weit mehr Anerkennung verdient.",
           "Ich begann wieder ernsthaft zu spielen. Ich arbeite mich durch jeden Platz der Insel. Ich erinnere mich wieder daran, wie es sich anfühlt, am ersten Abschlag zu stehen und sich wirklich für das Ergebnis zu interessieren. Dieser Wettkampfinstinkt, der während Jahren im Vollzeit-Coaching geschlafen hatte, war schnell wieder da.",
-          "Ein PGA Professional, der über ein Jahrzehnt in Asien gecoacht hat und jetzt Golftage auf einer der besten Golfinseln Europas veranstaltet. Wenn das nach dem Tag klingt, den Sie suchen, dann melden Sie sich gern."
+          "Ich bin PGA Professional und habe über ein Jahrzehnt in Asien gecoacht. Heute helfe ich Golfern dabei, Mallorca richtig zu spielen: entweder als Tag auf dem Platz mit mir, oder als komplett geplante Reise darum herum. Der Coaching-Hintergrund zählt, aber die größere Aufgabe ist es, die richtigen Plätze, den richtigen Rhythmus und die richtigen Extras für den Tag oder die Woche zu wählen."
         ],
         "quote": "Die Coaching-Philosophie, die daraus entstanden ist, wieder selbst zu spielen, ist einfach: Die schnellsten Verbesserungen passieren auf dem Platz, nicht auf der Range. Echte Bedingungen, echte Entscheidungen. Genau dieser Fortschritt bleibt."
       }
@@ -266,7 +266,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "paragraphs": [
           "Je me suis installé à Majorque en mars 2025 avec ma femme Yina. Plus près de ma famille au Royaume-Uni, du soleil toute l'année et une île de golf vraiment exceptionnelle à laquelle la plupart des gens ne rendent pas assez justice.",
           "J'ai recommencé à jouer sérieusement. En découvrant chaque parcours de l'île. En retrouvant cette sensation d'être sur le premier tee et de vraiment se soucier du score. Cet instinct compétitif, endormi pendant des années de coaching à plein temps, est revenu très vite.",
-          "Un professionnel PGA qui a passé plus d'une décennie à coacher en Asie et qui organise désormais des journées de golf sur l'une des meilleures îles de golf d'Europe. Si cela ressemble au type de journée que vous recherchez, prenez contact."
+          "Je suis un professionnel PGA qui a passé plus d'une décennie à coacher en Asie. Aujourd'hui, j'aide les golfeurs de passage à jouer Majorque comme il faut : soit comme une journée sur le parcours avec moi, soit comme un voyage complet organisé autour de cela. L'expérience de coaching compte, mais la tâche la plus importante est de choisir les bons parcours, le bon rythme et les bons extras pour la journée ou la semaine."
         ],
         "quote": "La philosophie de coaching née du fait de rejouer est simple : les progrès les plus rapides se font sur le parcours, pas au practice. De vraies conditions, de vraies décisions. Les progrès obtenus ainsi ont tendance à durer."
       }
@@ -378,7 +378,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "paragraphs": [
           "In maart 2025 verhuisde ik met mijn vrouw Yina naar Mallorca. Dichter bij familie in het VK, zon het hele jaar door en een werkelijk uitzonderlijk golfeiland dat de meeste mensen te weinig waarderen.",
           "Ik begon weer serieus te spelen. Ik werk me door elke baan op het eiland heen. Ik ontdekte opnieuw hoe het voelt om op de eerste tee te staan en echt om de score te geven. Dat competitieve instinct, jarenlang slapend door fulltime coaching, kwam snel terug.",
-          "Een PGA Professional die meer dan tien jaar in Azië coachte en nu golfdagen organiseert op een van de beste golfeilanden van Europa. Als dat klinkt als de dag die u zoekt, neem dan contact op."
+          "Ik ben PGA Professional en heb meer dan tien jaar in Azië gecoacht. Nu help ik bezoekende golfers Mallorca goed te spelen: hetzij als een dag op de baan met mij, hetzij als een volledige reis eromheen gepland. De coachingervaring telt, maar de grotere taak is het kiezen van de juiste banen, het juiste ritme en de juiste extra's voor de dag of de week."
         ],
         "quote": "De coachingsfilosofie die voortkwam uit weer spelen is eenvoudig: de snelste verbeteringen gebeuren op de baan, niet op de range. Echte omstandigheden, echte beslissingen. Vooruitgang die zo ontstaat, blijft hangen."
       }
@@ -486,7 +486,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "paragraphs": [
           "Jag flyttade till Mallorca i mars 2025 med min fru Yina. Närmare familjen i Storbritannien, solsken året runt och en verkligt exceptionell golfö som de flesta inte ger tillräckligt erkännande.",
           "Jag började spela ordentligt igen. Jag arbetade mig genom varje bana på ön. Jag återupptäckte hur det känns att stå på första tee och faktiskt bry sig om resultatet. Den tävlingsinstinkt som varit vilande under år av heltidscoaching kom snabbt tillbaka.",
-          "En PGA Professional som tillbringade mer än ett decennium med att coacha i Asien och som nu arrangerar golfdagar på en av Europas bästa golföar. Om det låter som den typ av dag du letar efter, hör av dig."
+          "Jag är PGA Professional och tillbringade mer än ett decennium med att coacha i Asien. Nu hjälper jag besökande golfare att spela Mallorca på rätt sätt: antingen som en dag på banan med mig, eller som en hel resa planerad runt det. Coachingbakgrunden spelar roll, men det större jobbet är att välja rätt banor, rätt rytm och rätt tillägg för dagen eller veckan."
         ],
         "quote": "Coachingfilosofin som kom ur att spela igen är enkel: de snabbaste förbättringarna sker på banan, inte på rangen. Verkliga förhållanden, verkliga beslut. Framsteg som skapas där brukar stanna kvar."
       }
@@ -588,7 +588,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "paragraphs": [
           "2025 年 3 月，我和妻子 Yina 搬到了马略卡。这里离英国的家人更近，全年阳光充足，而且是一座真正出色、却常常被低估的高尔夫岛屿。",
           "我也重新开始认真打球，走遍岛上的每一座球场。重新找回站在第一洞发球台上、真正关心成绩的感觉。那个在多年全职教学中沉睡下来的竞争本能，很快就回来了。",
-          "一位在亚洲执教超过十年的 PGA Professional，如今在欧洲最好的高尔夫岛屿之一举办高尔夫日。如果这听起来正是你想要的一天，欢迎联系我。"
+          "我是一位在亚洲执教超过十年的PGA Professional。现在，我帮助来马略卡的球手真正打好这座岛：可以是和我一起下场的一天，也可以是围绕它安排的一整趟行程。教学背景很重要，但更大的工作是为这一天或这一周选对球场、节奏和附加安排。"
         ],
         "quote": "重新开始认真打球后，我的教学理念变得很简单：最快的进步发生在球场上，而不是练习场。真实条件，真实决策。这样得到的进步，往往更能保持。"
       }

@@ -101,7 +101,7 @@ const OPTIONAL_EXTRAS = [
 ]
 
 const HOTEL_PARTNERS = [
-  { name: 'Mandarin Oriental Punta Negra', note: 'Opening June 2026, Calvià. Matsuhisa, Leña by Dani García.' },
+  { name: 'Mandarin Oriental Punta Negra', note: 'Calvià. Matsuhisa, Leña by Dani García.' },
   { name: 'Four Seasons Resort at Formentor', note: 'Cap de Formentor. Llum i Sal, Mel. Alcanada 35 minutes.' },
   { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular by Ramón Freixa. Alcanada 20 minutes.' },
   { name: 'Aethos Mallorca', note: 'Peguera. ONDA seafood terrace. Golf de Andratx 10 minutes.' },

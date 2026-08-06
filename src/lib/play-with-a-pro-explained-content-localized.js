@@ -82,8 +82,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     sticky: {
       primaryLabel: 'Kontakt aufnehmen',
-      secondaryLabel: 'Die Plätze entdecken',
-      secondaryHref: '/de/golf-courses',
+      secondaryLabel: 'Per WhatsApp schreiben',
+      secondaryHref: 'https://wa.me/34624466702',
     },
   },
   es: {
@@ -167,8 +167,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     sticky: {
       primaryLabel: 'Ponerse en contacto',
-      secondaryLabel: 'Explorar los campos',
-      secondaryHref: '/es/golf-courses',
+      secondaryLabel: 'Escribir por WhatsApp',
+      secondaryHref: 'https://wa.me/34624466702',
     },
   },
   fr: {
@@ -252,8 +252,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     sticky: {
       primaryLabel: 'Prendre contact',
-      secondaryLabel: 'Explorer les parcours',
-      secondaryHref: '/fr/golf-courses',
+      secondaryLabel: 'Écrire sur WhatsApp',
+      secondaryHref: 'https://wa.me/34624466702',
     },
   },
   nl: {
@@ -337,8 +337,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     sticky: {
       primaryLabel: 'Neem contact op',
-      secondaryLabel: 'Ontdek de banen',
-      secondaryHref: '/nl/golf-courses',
+      secondaryLabel: 'Bericht via WhatsApp',
+      secondaryHref: 'https://wa.me/34624466702',
     },
   },
   sv: {
@@ -422,8 +422,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     sticky: {
       primaryLabel: 'Hör av dig',
-      secondaryLabel: 'Utforska banorna',
-      secondaryHref: '/sv/golf-courses',
+      secondaryLabel: 'Skriv på WhatsApp',
+      secondaryHref: 'https://wa.me/34624466702',
     },
   },
   zh: {
@@ -507,8 +507,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     sticky: {
       primaryLabel: '联系我们',
-      secondaryLabel: '查看球场',
-      secondaryHref: '/zh/golf-courses',
+      secondaryLabel: '通过 WhatsApp 联系',
+      secondaryHref: 'https://wa.me/34624466702',
     },
   },
 }

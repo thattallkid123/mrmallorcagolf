@@ -14,7 +14,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Selbst gespielt oder sauber recherchiert",
         "PGA Professional"
       ],
-      "lead": "Wenn Sie zuerst entscheiden muessen, wo Sie spielen sollen, beginnen Sie hier. Nutzen Sie den Explorer, um die Insel nach Region, Preis und Schwierigkeit einzugrenzen. Schicken Sie mir dann Ihre Daten, Ihr Handicap und Ihre Hotelregion, und ich nenne Ihnen die richtige Shortlist."
+      "lead": "Alle 24 Plaetze nach Region durchsuchen. Fuer eine intelligentere Shortlist - gefiltert nach Handicap, Budget und Reisestil - nutzen Sie den Platzauswahl-Assistenten. Schicken Sie mir dann Ihre Daten, Ihr Handicap und Ihre Hotelregion, und ich verfeinere die Empfehlung."
     },
     "regionHeaders": {
       "palma": {
@@ -57,7 +57,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Was kostet eine Runde Golf auf Mallorca?",
-          "a": "Die Greenfees reichen von rund 55 € im guenstigen Bereich bis rund 250 € an der Spitze in der Hochsaison. Die meisten Gaesterunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 30 € bis 40 € zusaetzlich."
+          "a": "Die Greenfees reichen von rund 55 € im guenstigen Bereich bis rund 250 € an der Spitze in der Hochsaison. Palma Pitch & Putt ist guenstiger, aber das ist eine separate Kurzplatz-Option und keine typische Gaesterunde. Die meisten Gaesterunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 30 € bis 40 € zusaetzlich."
         },
         {
           "q": "Braucht man fuer Mallorca ein Handicap-Zertifikat?",
@@ -72,11 +72,11 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "note": "Sie brauchen keine E-Mail, um das Tool zu nutzen. Geben Sie sie nur ein, wenn Sie das Ergebnis zugeschickt haben moechten."
       },
       "allCourses": "Alle Plaetze",
-      "ctaEyebrow": "Einen dieser Plaetze spielen?",
-      "ctaH2": "Golftag, alles arrangiert, UK PGA Professional dabei.",
-      "ctaP": "Teilen Sie mir mit, welcher Platz Sie interessiert, Ihre Daten und Ihr Handicap. Ich melde mich innerhalb von 24 Stunden mit einer Empfehlung.",
-      "seeExperiences": "Golf-Tage ansehen ->",
-      "getInTouch": "Kontakt aufnehmen"
+      "ctaEyebrow": "Shortlist fertig?",
+      "ctaH2": "Aus der Shortlist die richtige Reise machen.",
+      "ctaP": "Schicken Sie mir Ihre Daten, Ihr Handicap, Ihre Hotelregion und die zwei oder drei Plaetze, die Sie in Betracht ziehen. Ich sage Ihnen, welche in die Reise gehoeren, in welcher Reihenfolge, und wie der klarste Plan aussieht.",
+      "seeExperiences": "Reise planen",
+      "getInTouch": "Play With A Pro"
     }
   },
   "es": {
@@ -91,7 +91,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Jugados o investigados a fondo",
         "Profesional PGA"
       ],
-      "lead": "Si esta decidiendo por donde empezar a jugar, empiece aqui. Use el explorador para reducir la isla por zona, precio y dificultad, y despues envieme sus fechas, handicap y zona de hotel para que le devuelva la mejor lista corta."
+      "lead": "Explore los 24 campos por region. Para una lista mas inteligente - filtrada por su handicap, presupuesto y estilo de viaje - use el selector de campos. Despues envieme sus fechas, handicap y zona de hotel, y afinare la recomendacion."
     },
     "regionHeaders": {
       "palma": {
@@ -135,7 +135,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cuanto cuesta jugar al golf en Mallorca?",
-          "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 250 € en lo mas alto en temporada alta. La mayoria de las rondas de visitante se situan entre 85 € y 165 €. El buggy suele costar de 30 € a 40 € aparte."
+          "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 250 € en lo mas alto en temporada alta. Palma Pitch & Putt es mas barato, pero es una opcion de campo corto independiente, no una vuelta de visitante tipica. La mayoria de las rondas de visitante se situan entre 85 € y 165 €. El buggy suele costar de 30 € a 40 € aparte."
         },
         {
           "q": "¿Hace falta certificado de handicap para jugar en Mallorca?",
@@ -150,11 +150,11 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "note": "No necesita email para usar la herramienta. Solo introduzcalo si quiere que le envien el resultado."
       },
       "allCourses": "Todos los campos",
-      "ctaEyebrow": "Quiere jugar uno de estos campos?",
-      "ctaH2": "Dia de golf, todo organizado, UK PGA profesional durante toda la jornada.",
-      "ctaP": "Digame que campo le interesa, sus fechas y su handicap. Le respondere con una recomendacion en 24 horas.",
-      "seeExperiences": "Ver las experiencias ->",
-      "getInTouch": "Contactar"
+      "ctaEyebrow": "Ya tiene su lista corta?",
+      "ctaH2": "Convierta la lista corta en el viaje correcto.",
+      "ctaP": "Envieme sus fechas, handicap, zona de hotel y los dos o tres campos que esta considerando. Le dire cuales encajan en el viaje, en que orden, y como es el plan mas claro.",
+      "seeExperiences": "Planifica tu viaje",
+      "getInTouch": "Play With A Pro"
     }
   },
   "fr": {
@@ -169,7 +169,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Joues ou etudies serieusement",
         "Professionnel PGA"
       ],
-      "lead": "Si vous cherchez par ou commencer, commencez ici. Utilisez l explorateur pour reduire l ile par zone, prix et difficulte, puis envoyez-moi vos dates, votre index et la zone de votre hotel pour que je vous renvoie la bonne short-list."
+      "lead": "Parcourez les 24 parcours par region. Pour une short-list plus intelligente - filtree selon votre index, votre budget et votre style de voyage - utilisez le selecteur de parcours. Envoyez-moi ensuite vos dates, votre index et la zone de votre hotel, et j'affinerai la recommandation."
     },
     "regionHeaders": {
       "palma": {
@@ -198,6 +198,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
     },
     "ui": {
       "explorerIntro": "Commencez par la region, le prix et la difficulte pour reduire rapidement les choix. Chaque fiche montre le prix, la difficulte, la note et tout tarif dynamique ou exigence de handicap avant de reserver.",
+      "faqEyebrow": "Questions",
       "faqTitle": "Questions frequentes",
       "faqIntro": "Quelques reponses rapides avant de faire votre short-list ou de reserver.",
       "faq": [
@@ -211,7 +212,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Combien coute une partie de golf a Majorque ?",
-          "a": "Les green fees vont d environ 55 € dans la gamme accessible jusqu a environ 250 € au sommet en haute saison. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coute generalement de 30 € a 40 € en plus."
+          "a": "Les green fees vont d environ 55 € dans la gamme accessible jusqu a environ 250 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c est une option de parcours court a part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coute generalement de 30 € a 40 € en plus."
         },
         {
           "q": "Faut-il un certificat de handicap pour jouer a Majorque ?",
@@ -226,11 +227,11 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "note": "Aucun email n est necessaire pour utiliser l outil. Saisissez-le seulement si vous voulez recevoir le resultat."
       },
       "allCourses": "Tous les parcours",
-      "ctaEyebrow": "Vous souhaitez jouer l'un de ces parcours ?",
-      "ctaH2": "Journee de golf, tout organise, UK PGA professionnel tout au long de la journee.",
-      "ctaP": "Dites-moi quel parcours vous interesse, vos dates et votre handicap. Je reviendrai avec une recommandation dans les 24 heures.",
-      "seeExperiences": "Voir les experiences ->",
-      "getInTouch": "Prendre contact"
+      "ctaEyebrow": "Vous avez votre short-list ?",
+      "ctaH2": "Transformez la short-list en le bon voyage.",
+      "ctaP": "Envoyez-moi vos dates, votre index, la zone de votre hotel et les deux ou trois parcours que vous envisagez. Je vous dirai lesquels ont leur place dans le voyage, dans quel ordre, et a quoi ressemble le plan le plus clair.",
+      "seeExperiences": "Planifiez votre voyage",
+      "getInTouch": "Play With A Pro"
     }
   },
   "nl": {
@@ -244,7 +245,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Gespeeld of grondig onderzocht",
         "PGA Professional"
       ],
-      "lead": "Als u nog moet bepalen waar u het best begint te spelen, begin dan hier. Gebruik de verkenner om het eiland te verfijnen op regio, prijs en moeilijkheid, en stuur me daarna uw data, handicap en hotelregio zodat ik de juiste shortlist kan teruggeven."
+      "lead": "Blader door alle 24 banen per regio. Voor een slimmere shortlist - gefilterd op handicap, budget en reisstijl - gebruikt u de baanselector. Stuur me daarna uw data, handicap en hotelregio, en ik verfijn de aanbeveling."
     },
     "regionHeaders": {
       "palma": {
@@ -287,7 +288,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Wat kost een rondje golf op Mallorca?",
-          "a": "De greenfees lopen van rond 55 € in het voordelige segment tot rond 250 € aan de top in het hoogseizoen. De meeste bezoekersrondes liggen tussen 85 € en 165 €. Een buggy kost meestal 30 € tot 40 € extra."
+          "a": "De greenfees lopen van rond 55 € in het voordelige segment tot rond 250 € aan de top in het hoogseizoen. Palma Pitch & Putt is goedkoper, maar het is een aparte kortebaanoptie in plaats van een typische bezoekersronde. De meeste bezoekersrondes liggen tussen 85 € en 165 €. Een buggy kost meestal 30 € tot 40 € extra."
         },
         {
           "q": "Heeft u een handicapbewijs nodig om op Mallorca te spelen?",
@@ -302,11 +303,11 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "note": "U hebt geen e-mail nodig om de tool te gebruiken. Vul die alleen in als u het resultaat toegestuurd wilt krijgen."
       },
       "allCourses": "Alle banen",
-      "ctaEyebrow": "Wilt u een van deze banen spelen?",
-      "ctaH2": "Golfdag, alles geregeld, UK PGA professional de hele dag aanwezig.",
-      "ctaP": "Vertel me welke baan u interesseert, uw data en uw handicap. Ik kom binnen 24 uur terug met een aanbeveling.",
-      "seeExperiences": "Bekijk de ervaringen ->",
-      "getInTouch": "Neem contact op"
+      "ctaEyebrow": "Shortlist rond?",
+      "ctaH2": "Maak van de shortlist de juiste reis.",
+      "ctaP": "Stuur me uw data, handicap, hotelregio en de twee of drie banen die u overweegt. Ik vertel u welke in de reis passen, in welke volgorde, en hoe het duidelijkste plan eruitziet.",
+      "seeExperiences": "Plan uw reis",
+      "getInTouch": "Play With A Pro"
     }
   },
   "sv": {
@@ -321,7 +322,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Spelade eller ordentligt granskade",
         "PGA Professional"
       ],
-      "lead": "Om du forsoker avgora var du ska borja spela, borja har. Anvand utforskaren for att smalna av on efter omrade, pris och svarighetsgrad, och skicka sedan dina datum, ditt handicap och hotellomrade sa pekar jag ut ratt kortlista."
+      "lead": "Bladdra bland alla 24 banor efter region. For en smartare kortlista - filtrerad efter handicap, budget och resestil - anvand banvaljaren. Skicka sedan dina datum, ditt handicap och ditt hotellomrade, sa forfinar jag rekommendationen."
     },
     "regionHeaders": {
       "palma": {
@@ -364,7 +365,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Vad kostar det att spela golf pa Mallorca?",
-          "a": "Greenfees gar fran runt 55 € i den prisvarda delen upp till runt 250 € i toppen under hogsasong. De flesta besoksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 30 € till 40 € extra."
+          "a": "Greenfees gar fran runt 55 € i den prisvarda delen upp till runt 250 € i toppen under hogsasong. Palma Pitch & Putt ar billigare, men det ar ett separat kortbanealternativ snarare an en typisk besoksrunda. De flesta besoksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 30 € till 40 € extra."
         },
         {
           "q": "Behover man ett handicapintyg for att spela pa Mallorca?",
@@ -379,11 +380,11 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "note": "Du behover ingen e-post for att anvanda verktyget. Fyll bara i den om du vill fa resultatet skickat till dig."
       },
       "allCourses": "Alla banor",
-      "ctaEyebrow": "Vill du spela en av dessa banor?",
-      "ctaH2": "Golfdag, allt ordnat, UK PGA-professionell under hela dagen.",
-      "ctaP": "Beratta vilken bana som intresserar dig, dina datum och ditt handicap. Jag aterkommer med en rekommendation inom 24 timmar.",
-      "seeExperiences": "Se upplevelserna ->",
-      "getInTouch": "Ta kontakt"
+      "ctaEyebrow": "Har du en kortlista?",
+      "ctaH2": "Gor om kortlistan till ratt resa.",
+      "ctaP": "Skicka dina datum, ditt handicap, ditt hotellomrade och de tva eller tre banor du overvager. Jag talar om vilka som hor hemma i resan, i vilken ordning, och hur den tydligaste planen ser ut.",
+      "seeExperiences": "Planera din resa",
+      "getInTouch": "Play With A Pro"
     }
   },
   "zh": {
@@ -398,7 +399,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "亲自下场或认真调研",
         "PGA 职业教练"
       ],
-      "lead": "如果您还在决定先打哪座球场，就从这里开始。使用筛选器按地区、价格和难度缩小范围，然后把您的日期、差点和酒店区域发给我，我会帮您锁定最合适的几个选项。"
+      "lead": "按地区浏览全部24座球场。想要更智能的候选清单——按差点、预算和行程风格筛选——请使用球场选择工具。然后把您的日期、差点和酒店区域发给我，我会进一步细化推荐。"
     },
     "regionHeaders": {
       "palma": {
@@ -443,7 +444,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "在马略卡打一场高尔夫要多少钱？",
-          "a": "果岭费从性价比端的约 55 欧元，到旺季高端的约 250 欧元不等。大多数访客单场在 85 到 165 欧元之间，球车通常另加 30 到 40 欧元。"
+          "a": "果岭费从性价比端的约 55 欧元，到旺季高端的约 250 欧元不等。Palma Pitch & Putt 更便宜，但它是一个独立的短洞球场选项，并非典型的访客球场。大多数访客单场在 85 到 165 欧元之间，球车通常另加 30 到 40 欧元。"
         },
         {
           "q": "在马略卡打球需要差点证明吗？",
@@ -458,11 +459,11 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "note": "使用这个工具不需要填写邮箱。只有当您希望把结果发送给自己时才需要填写。"
       },
       "allCourses": "全部球场",
-      "ctaEyebrow": "想体验这些球场？",
-      "ctaH2": "高尔夫一日体验，全程安排，英国PGA职业教练全程陪伴。",
-      "ctaP": "告诉我您感兴趣的球场、出行日期和差点，我将在24小时内给您回复并提供建议。",
-      "seeExperiences": "查看体验项目 ->",
-      "getInTouch": "立即联系"
+      "ctaEyebrow": "已经缩小范围了？",
+      "ctaH2": "把候选清单变成合适的行程。",
+      "ctaP": "把您的日期、差点、酒店区域，以及正在考虑的两三座球场发给我。我会告诉您哪些适合安排进这趟行程、先后顺序如何，以及最清晰的方案是什么样的。",
+      "seeExperiences": "规划行程",
+      "getInTouch": "陪打体验"
     }
   }
 }

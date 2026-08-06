@@ -4,6 +4,16 @@
 export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
   "es": {
     "locale": "es",
+    "offerSummary": {
+      "eyebrow": "De un vistazo",
+      "title": "Entienda la oferta antes de consultar.",
+      "items": [
+        { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
+        { "label": "Formato", "text": "Un campo, 18 hoyos, elegido segun su juego, conmigo a su lado durante toda la vuelta." },
+        { "label": "Precios", "text": "Solo desde 695 EUR. Grupo desde 950 EUR en total. Los green fees van aparte y se confirman antes de reservar." },
+        { "label": "Siguiente paso", "text": "Envie sus fechas, tamano del grupo y rango de handicap. Andy responde personalmente en 24 horas." }
+      ]
+    },
     "hero": {
       "homeHref": "/es",
       "breadcrumbHome": "Inicio",
@@ -11,7 +21,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Día de golf · Mallorca",
       "title": "Un día de golf en Mallorca.",
       "body": "Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.",
-      "primaryCta": "Reserve su día →",
+      "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
       "secondaryCta": "Ver paquetes"
     },
@@ -20,7 +30,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Antes de que llegue, ya sé en qué tengo que fijarme.",
       "paragraphs": [
         "Antes de llegar, rellena un cuestionario breve. Me cuenta qué le frustra, dónde está la distancia entre su juego de prácticas y sus resultados, y cómo sería para usted un gran día. Cuando llegamos al primer tee, yo ya sé en qué tengo que fijarme.",
-        "Durante la vuelta, el coaching se integra de forma natural. No como un comentario constante. Más bien como la observación adecuada en el momento en el que todavía puede cambiar el hoyo, el resultado o la decisión que tiene delante."
+        "Soy PGA Advanced Professional, he entrenado a cientos de ganadores de torneos, tengo más de 15.000 horas de coaching y la certificación Trackman Master. El día se apoya en eso, pero no se convierte en una sesión puramente técnica. Una vuelta de golf, jugada como se debe."
       ],
       "quote": "La mayoría de los golfistas se van jugando mejor, con más claridad y entendiendo por qué. Esa última parte es la que suele quedarse.",
       "questionnaireEyebrow": "¿Ya ha reservado?",
@@ -90,7 +100,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Lo que más disfruté fue lo cómodo que me hizo sentir en el campo. Entender qué cálculos hay detrás de cada golpe mejoró muchísimo mi toma de decisiones. Recomendaría este día a grupos de amigos, a gente de vacaciones o incluso a familias que quieran iniciarse juntas en el golf."
         },
         {
-          "text": "Andy cambió por completo mi forma de entender la gestión del campo. Llevaba años jugando sin comprender de verdad las decisiones que hay detrás de cada golpe. Después de 18 hoyos con él en Son Gual, hice allí mi mejor resultado y por fin entendí por qué. Desde el briefing hasta la comida, todo el día fue exactamente lo que debería ser una gran jornada de golf."
+          "text": "Juego al golf desde los cinco años. Pensaba que tenía los fundamentos claros y que solo necesitaba más repeticiones, no un entrenador. Entonces alguien me regaló una clase con Andy y decidí probar. Me alegro de haberlo hecho. Trabajamos los detalles finos de mi swing: contacto sólido con la bola, mejor transferencia de peso y mecánica. Incluso los ajustes más pequeños dieron resultados consistentes, y estoy convencido de que me quitarán entre 5 y 10 golpes con solo una sesión. Andy fue un auténtico profesional. No puedo agradecérselo lo suficiente."
         },
         {
           "text": "Una experiencia increíble. Andy evaluó todos los aspectos de mi juego — el swing, la gestión del campo y la parte mental — haciendo ajustes a medida que avanzábamos. Me fui con muchas cosas concretas en las que trabajar."
@@ -115,9 +125,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Campo elegido según su juego y su hándicap",
             "Hora de salida asegurada y completamente gestionada",
-            "Plan de juego y calentamiento antes de la vuelta",
             "18 hoyos conmigo",
-            "Coaching en el campo durante la vuelta"
+            "Coaching en el campo durante la vuelta",
+            "Resumen final y próximos pasos"
           ],
           "button": "Consultar →",
           "href": "/es/contact"
@@ -128,10 +138,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "€950 en total",
           "features": [
             "Hasta 3 jugadores, una tarifa fija por el día de Andy",
-            "Campo elegido según el nivel y los hándicaps del grupo",
+            "Campo elegido según su grupo",
             "Hora de salida asegurada y completamente gestionada",
-            "Plan de juego y calentamiento antes de la vuelta",
-            "18 hoyos conmigo"
+            "18 hoyos conmigo",
+            "Coaching en el campo durante la vuelta"
           ],
           "button": "Consultar →",
           "href": "/es/contact",
@@ -142,15 +152,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           ]
         },
         {
-          "eyebrow": "La Experiencia Signature",
-          "name": "Día completo",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "price": "€3.000+",
-          "note": "Todo incluido. Andy confirma el itinerario completo con usted de antemano.",
+          "note": "Todo organizado. Todos los detalles se confirman antes del día.",
           "features": [
-            "Campo, hora de salida y coaching",
-            "Almuerzo en restaurante con estrella Michelin o reserva de chef privado",
-            "Posibilidad de una segunda sesión de coaching después de la vuelta",
-            "Caddie y opciones de alquiler premium de palos"
+            "Campo, hora de salida privada y un día completamente organizado conmigo",
+            "Fisio de golf con The Golf Doctor para trabajar el cuerpo y los problemas de swing detectados",
+            "Traslados privados de ida y vuelta al campo",
+            "Cena en un hotel asociado"
           ],
           "button": "Consultar →",
           "href": "/es/contact",
@@ -233,16 +243,26 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "¿Listo para jugar Mallorca como se debe?",
       "title": "Escríbame y le ayudaré a elegir la versión adecuada del día.",
       "body": "Dígame sus fechas, su hándicap y qué quiere sacar de la jornada. Le responderé personalmente en menos de 24 horas con una recomendación clara.",
-      "primaryCta": "Reserve su día →",
+      "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
-      "secondaryCta": "Explorar los campos",
-      "secondaryHref": "/es/golf-courses",
-      "tertiaryCta": "Cuestionario pre-ronda →",
+      "secondaryCta": "Escribir por WhatsApp",
+      "secondaryHref": "https://wa.me/34624466702",
+      "tertiaryCta": "Explorar los campos →",
       "tertiaryHref": "/es/golf-courses"
     }
   },
   "de": {
     "locale": "de",
+    "offerSummary": {
+      "eyebrow": "Auf einen Blick",
+      "title": "Das Angebot verstehen, bevor Sie anfragen.",
+      "items": [
+        { "label": "Am besten fuer", "text": "Einzelspieler, Paare und kleine Gruppen, die einen richtigen Golftag auf Mallorca wollen." },
+        { "label": "Format", "text": "Ein Platz, 18 Loecher, passend zu Ihrem Spiel, mit mir an Ihrer Seite waehrend der ganzen Runde." },
+        { "label": "Preise", "text": "Solo ab 695 EUR. Gruppe ab 950 EUR insgesamt. Greenfees sind getrennt und werden vor der Buchung bestaetigt." },
+        { "label": "Naechster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengroesse und Handicap-Bereich. Andy antwortet persoenlich innerhalb von 24 Stunden." }
+      ]
+    },
     "hero": {
       "homeHref": "/de",
       "breadcrumbHome": "Start",
@@ -250,7 +270,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Golftag · Mallorca",
       "title": "Ein Golftag auf Mallorca.",
       "body": "Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.",
-      "primaryCta": "Ihren Tag buchen →",
+      "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
       "secondaryCta": "Pakete ansehen"
     },
@@ -259,7 +279,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Bevor Sie ankommen, weiß ich bereits, worauf ich achten muss.",
       "paragraphs": [
         "Vor Ihrer Ankunft füllen Sie einen kurzen Fragebogen aus. Er zeigt mir, was Sie gerade frustriert, wo die Lücke zwischen Ihrem Range-Spiel und Ihren Scores liegt und wie ein guter Tag für Sie konkret aussehen würde. Wenn wir am ersten Abschlag stehen, weiß ich bereits, worauf ich achten muss.",
-        "Während der Runde wird das Coaching ganz natürlich eingewoben. Kein Dauerkommentar. Eher die richtige Beobachtung an dem Punkt, an dem sie noch das Loch, den Score oder die Entscheidung vor Ihnen verändern kann."
+        "Ich bin PGA Advanced Professional, habe Hunderte von Turniersiegern trainiert, verfüge über mehr als 15.000 Coaching-Stunden und die Trackman Master-Zertifizierung. Der Tag profitiert davon, wird aber nicht zu einer rein technischen Session. Eine Runde Golf, richtig gespielt."
       ],
       "quote": "Die meisten Golfer gehen mit besserem Spiel, mehr Klarheit und einem klareren Verständnis nach Hause, warum es besser lief. Genau dieser Teil bleibt.",
       "questionnaireEyebrow": "Schon gebucht?",
@@ -329,7 +349,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Am meisten hat mir gefallen, wie wohl ich mich mit ihm auf dem Platz gefühlt habe. Zu verstehen, welche Überlegungen hinter jedem Schlag stehen, hat meine Entscheidungen enorm verbessert. Ich würde den Tag Freundesgruppen, Urlaubern und auch Familien empfehlen, die Golf gemeinsam entdecken möchten."
         },
         {
-          "text": "Andy hat komplett verändert, wie ich über Platzmanagement denke. Ich habe jahrelang gespielt, ohne die Entscheidungen hinter jedem Schlag wirklich zu verstehen. Nach 18 Löchern mit ihm in Son Gual spielte ich dort mein bestes Ergebnis und verstand endlich auch warum. Vom Briefing bis zum Mittagessen war der ganze Tag genau so, wie ein großartiger Golftag sein sollte."
+          "text": "Ich spiele Golf, seit ich fünf war. Ich dachte, die Grundlagen sitzen und ich brauche einfach mehr Wiederholungen, keinen Coach. Dann schenkte mir jemand eine Stunde bei Andy, und ich dachte, ich probiere es. Gut, dass ich es getan habe. Wir haben die Feinheiten meines Schwungs durchgearbeitet: sauberer Ballkontakt, besserer Gewichtstransfer und Mechanik. Selbst die kleinsten Anpassungen brachten konstante Ergebnisse, und ich bin überzeugt, dass sie mir 5-10 Schläge von einer einzigen Session abnehmen werden. Andy war absolut professionell. Kann ihm gar nicht genug danken."
         },
         {
           "text": "Eine tolle Erfahrung. Andy hat alle Aspekte meines Spiels bewertet — Schwungtechnik, Platzmanagement und die mentale Seite — und dabei laufend Anpassungen vorgenommen. Ich habe eine Menge Verbesserungspunkte mitgenommen."
@@ -354,9 +374,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Platz passend zu Ihrem Spiel und Handicap",
             "Startzeit gesichert und komplett organisiert",
-            "Spielplan und Warm-up vor der Runde",
             "18 Löcher mit mir",
-            "On-course-Coaching während der Runde"
+            "On-course-Coaching während der Runde",
+            "Nachbesprechung und nächste Schritte"
           ],
           "button": "Anfragen →",
           "href": "/de/contact"
@@ -367,10 +387,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "€950 insgesamt",
           "features": [
             "Bis zu 3 Spieler, ein fester Tagessatz für Andy",
-            "Platz passend zu Ihrer Gruppe und den Handicaps",
+            "Platz passend zu Ihrer Gruppe",
             "Startzeit gesichert und komplett organisiert",
-            "Spielplan und Warm-up vor der Runde",
-            "18 Löcher mit mir"
+            "18 Löcher mit mir",
+            "On-course-Coaching während der Runde"
           ],
           "button": "Anfragen →",
           "href": "/de/contact",
@@ -381,15 +401,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           ]
         },
         {
-          "eyebrow": "Das Signature-Erlebnis",
-          "name": "Voller Tag",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "price": "€3.000+",
-          "note": "Alles inklusive. Andy bestätigt den vollständigen Tagesplan im Voraus mit Ihnen.",
+          "note": "Alles arrangiert. Alle Details werden vor dem Tag bestätigt.",
           "features": [
-            "Platz, Startzeit und Coaching",
-            "Michelin-Mittagessen oder Buchung eines Privatkochs",
-            "Eine zweite Coaching-Session nach der Runde ist möglich",
-            "Caddie und Premium-Schlägerverleih"
+            "Platz, private Startzeit und ein vollständig organisierter Tag mit mir",
+            "Golf-Physio mit The Golf Doctor, um an Körper und den gesehenen Schwungproblemen zu arbeiten",
+            "Private Transfers zum und vom Platz",
+            "Abendessen im Partnerhotel"
           ],
           "button": "Anfragen →",
           "href": "/de/contact",
@@ -472,16 +492,26 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Bereit, Mallorca richtig zu spielen?",
       "title": "Melden Sie sich, und ich helfe Ihnen, die passende Version des Tages zu wählen.",
       "body": "Nennen Sie mir Ihre Reisedaten, Ihr Handicap und was Sie sich von dem Tag wünschen. Ich melde mich persönlich innerhalb von 24 Stunden mit einer klaren Empfehlung zurück.",
-      "primaryCta": "Ihren Tag buchen →",
+      "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
-      "secondaryCta": "Die Plätze entdecken",
-      "secondaryHref": "/de/golf-courses",
-      "tertiaryCta": "Vor-Runden-Fragebogen →",
+      "secondaryCta": "Per WhatsApp schreiben",
+      "secondaryHref": "https://wa.me/34624466702",
+      "tertiaryCta": "Die Plätze entdecken →",
       "tertiaryHref": "/de/golf-courses"
     }
   },
   "fr": {
     "locale": "fr",
+    "offerSummary": {
+      "eyebrow": "En un coup d'oeil",
+      "title": "Comprendre l'offre avant de nous contacter.",
+      "items": [
+        { "label": "Ideal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journee de golf a Majorque." },
+        { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi a vos cotes pendant toute la partie." },
+        { "label": "Tarifs", "text": "Solo a partir de 695 EUR. Groupe a partir de 950 EUR au total. Les green fees restent a part et sont confirmes avant la reservation." },
+        { "label": "Etape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Andy repond personnellement sous 24 heures." }
+      ]
+    },
     "hero": {
       "homeHref": "/fr",
       "breadcrumbHome": "Accueil",
@@ -489,7 +519,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Journée de golf · Majorque",
       "title": "Une journée de golf à Majorque.",
       "body": "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. En solo à partir de 695 EUR. Groupes à partir de 950 EUR au total. Green fees additionnels, confirmés lors de notre conversation.",
-      "primaryCta": "Réserver votre journée →",
+      "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
       "secondaryCta": "Voir les formules"
     },
@@ -498,7 +528,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Avant votre arrivée, je sais déjà ce que je dois observer.",
       "paragraphs": [
         "Avant votre arrivée, vous remplissez un court questionnaire. Il me dit ce qui vous frustre, où se situe l'écart entre votre jeu au practice et vos scores, et ce qu'une bonne journée représenterait vraiment pour vous. Quand nous arrivons au premier départ, je sais déjà ce que je dois observer.",
-        "Pendant la ronde, le coaching s'intègre naturellement. Pas comme un commentaire permanent. Plutôt comme la bonne observation au moment où elle peut encore changer le trou, le score ou la décision que vous avez devant vous."
+        "Je suis PGA Advanced Professional, j'ai entraîné des centaines de vainqueurs de tournois, plus de 15 000 heures de coaching et la certification Trackman Master. La journée s'appuie sur cela, sans devenir une session purement technique. Une partie de golf, jouée comme il faut."
       ],
       "quote": "La plupart des golfeurs repartent en jouant mieux, avec plus de clarté et en comprenant pourquoi. C'est généralement cette dernière partie qui reste.",
       "questionnaireEyebrow": "Déjà réservé ?",
@@ -568,7 +598,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Ce que j'ai le plus apprécié, c'est le confort qu'il m'a donné sur le parcours. Comprendre les calculs derrière chaque coup a énormément amélioré ma prise de décision. Je recommanderais cette journée à des groupes d'amis, à des golfeurs en vacances et même à des familles qui veulent découvrir le golf ensemble."
         },
         {
-          "text": "Andy a complètement changé ma manière de penser la gestion du parcours. J'avais joué pendant des années sans vraiment comprendre les décisions derrière chaque coup. Après 18 trous avec lui à Son Gual, j'y ai signé mon meilleur score et j'ai enfin compris pourquoi. Du briefing jusqu'au déjeuner, la journée entière correspondait exactement à ce qu'un grand jour de golf devrait être."
+          "text": "Je joue au golf depuis l'âge de cinq ans. Je pensais avoir les fondamentaux et n'avoir besoin que de plus de répétitions, pas d'un coach. Puis quelqu'un m'a offert une leçon avec Andy, et j'ai décidé de tenter. J'ai bien fait. Nous avons travaillé les détails fins de mon swing : contact de balle solide, meilleur transfert de poids et mécanique. Même les plus petits ajustements ont donné des résultats constants, et je suis convaincu qu'ils me feront gagner 5 à 10 coups dès une seule session. Andy était un vrai professionnel. Je ne le remercierai jamais assez."
         },
         {
           "text": "Une expérience formidable. Andy a évalué tous les aspects de mon jeu — le swing, la gestion du parcours et le mental — en faisant des ajustements au fil de la partie. Je suis reparti avec beaucoup de points concrets à travailler."
@@ -593,9 +623,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Parcours choisi selon votre jeu et votre index",
             "Heure de départ sécurisée et entièrement gérée",
-            "Plan de jeu et échauffement avant la partie",
             "18 trous avec moi",
-            "Coaching sur le parcours pendant la partie"
+            "Coaching sur le parcours pendant la partie",
+            "Bilan final et prochaines étapes"
           ],
           "button": "Demander →",
           "href": "/fr/contact"
@@ -606,10 +636,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "€950 au total",
           "features": [
             "Jusqu'à 3 joueurs, un tarif fixe pour la journée d'Andy",
-            "Parcours choisi selon le niveau et les index du groupe",
+            "Parcours choisi selon votre groupe",
             "Heure de départ sécurisée et entièrement gérée",
-            "Plan de jeu et échauffement avant la partie",
-            "18 trous avec moi"
+            "18 trous avec moi",
+            "Coaching sur le parcours pendant la partie"
           ],
           "button": "Demander →",
           "href": "/fr/contact",
@@ -620,15 +650,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           ]
         },
         {
-          "eyebrow": "L'Expérience Signature",
-          "name": "Journée complète",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "price": "€3 000+",
-          "note": "Tout compris. Andy confirme le programme complet avec vous à l'avance.",
+          "note": "Tout est organisé. Tous les détails sont confirmés avant la journée.",
           "features": [
-            "Parcours, heure de départ et coaching",
-            "Déjeuner dans un restaurant étoilé Michelin ou réservation avec chef privé",
-            "Une deuxième session de coaching après la partie est possible",
-            "Caddie et options de location de clubs premium"
+            "Parcours, départ privé et une journée entièrement organisée avec moi",
+            "Physio golf avec The Golf Doctor pour travailler le corps et les soucis de swing observés",
+            "Transferts privés aller-retour au parcours",
+            "Dîner dans un hôtel partenaire"
           ],
           "button": "Demander →",
           "href": "/fr/contact",
@@ -661,6 +691,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       }
     },
     "faq": {
+      "eyebrow": "Questions",
       "title": "Questions fréquentes.",
       "intro": "Ce qui n'est pas couvert ici se pose directement. Je réponds personnellement.",
       "items": [
@@ -710,23 +741,33 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Prêt à jouer Majorque comme il faut ?",
       "title": "Prenez contact et je vous aiderai à choisir la bonne version de la journée.",
       "body": "Dites-moi vos dates, votre index et ce que vous attendez de cette journée. Je vous répondrai personnellement sous 24 heures avec une recommandation claire.",
-      "primaryCta": "Réserver votre journée →",
+      "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
-      "secondaryCta": "Explorer les parcours",
-      "secondaryHref": "/fr/golf-courses",
-      "tertiaryCta": "Questionnaire pré-parcours →",
+      "secondaryCta": "Écrire sur WhatsApp",
+      "secondaryHref": "https://wa.me/34624466702",
+      "tertiaryCta": "Explorer les parcours →",
       "tertiaryHref": "/fr/golf-courses"
     }
   },
   "nl": {
     "locale": "nl",
+    "offerSummary": {
+      "eyebrow": "In het kort",
+      "title": "Begrijp het aanbod voordat u contact opneemt.",
+      "items": [
+        { "label": "Geschikt voor", "text": "Solospelers, koppels en kleine groepen die een echte golfdag op Mallorca willen." },
+        { "label": "Formaat", "text": "Een baan, 18 holes, gekozen voor uw spel, met mij naast u gedurende de hele ronde." },
+        { "label": "Prijzen", "text": "Solo vanaf 695 EUR. Groep vanaf 950 EUR totaal. Greenfees zijn apart en worden voor de boeking bevestigd." },
+        { "label": "Volgende stap", "text": "Stuur uw data, groepsgrootte en handicaprange. Andy reageert persoonlijk binnen 24 uur." }
+      ]
+    },
     "hero": {
       "homeHref": "/nl",
       "breadcrumbCurrent": "Spelen met een pro",
       "eyebrow": "Golfdag · Mallorca",
       "title": "Een golfdag op Mallorca.",
       "body": "Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.",
-      "primaryCta": "Reserveer uw dag →",
+      "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
       "secondaryCta": "Bekijk pakketten"
     },
@@ -735,7 +776,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Voordat u arriveert, weet ik al waar ik op moet letten.",
       "paragraphs": [
         "Voor uw aankomst vult u een korte vragenlijst in. Die laat me zien wat u op dit moment frustreert, waar de kloof zit tussen uw rangespel en uw scores, en hoe een echt goede dag er voor u uit zou zien. Tegen de tijd dat we bij de eerste tee staan, weet ik al waar ik op moet letten.",
-        "Tijdens de ronde wordt de coaching op een natuurlijke manier verweven. Geen doorlopend commentaar, maar de juiste observatie op het moment waarop die nog de hole, de score of de beslissing voor u kan veranderen."
+        "Ik ben PGA Advanced Professional, heb honderden toernooiwinnaars gecoacht, heb meer dan 15.000 coachinguren en de Trackman Master-certificering. De dag bouwt daarop voort, maar wordt geen puur technische sessie. Een ronde golf, zoals het hoort gespeeld."
       ],
       "quote": "De meeste golfers vertrekken met beter spel, meer duidelijkheid en een beter begrip van waarom. Dat laatste is meestal het deel dat blijft hangen.",
       "questionnaireEyebrow": "Al geboekt?",
@@ -805,7 +846,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Wat ik het meest waardeerde, was hoe comfortabel hij me op de baan liet voelen. Inzicht krijgen in de berekeningen achter elke slag heeft mijn besluitvorming enorm verbeterd. Ik zou deze dag aanbevelen aan vriendengroepen, vakantiegangers en zelfs gezinnen die samen golf willen ontdekken."
         },
         {
-          "text": "Andy heeft volledig veranderd hoe ik over baanmanagement denk. Ik speelde al jaren zonder echt te begrijpen welke beslissingen achter elke slag zitten. Na 18 holes met hem op Son Gual liep ik daar weg met mijn beste score ooit en begreep ik eindelijk waarom. Van briefing tot lunch voelde de hele dag precies zoals een geweldige golfdag zou moeten voelen."
+          "text": "Ik golf al sinds mijn vijfde. Ik dacht dat ik de basis onder de knie had en gewoon meer herhaling nodig had, geen coach. Toen kreeg ik een les bij Andy cadeau en besloot het te proberen. Goed dat ik dat deed. We werkten de fijnere details van mijn swing uit: solide balcontact, betere gewichtsverplaatsing en mechaniek. Zelfs de kleinste aanpassingen leverden consistente resultaten op, en ik ben ervan overtuigd dat ze me 5 tot 10 slagen gaan schelen na maar één sessie. Andy was een echte professional. Kan hem niet genoeg bedanken."
         },
         {
           "text": "Een geweldige ervaring. Andy beoordeelde alle aspecten van mijn spel — swing, baamanagement en het mentale deel — en paste onderweg dingen aan. Ik ging weg met veel concrete punten om aan te werken."
@@ -830,9 +871,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Baan gekozen op basis van uw spel en handicap",
             "Starttijd vastgelegd en volledig geregeld",
-            "Spelplan en warming-up voor de ronde",
             "18 holes met mij",
-            "Coaching op de baan tijdens de ronde"
+            "Coaching op de baan tijdens de ronde",
+            "Nabespreking en vervolgstappen"
           ],
           "button": "Aanvragen →",
           "href": "/nl/contact"
@@ -843,10 +884,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "€950 totaal",
           "features": [
             "Tot 3 spelers, één vaste dagprijs voor Andy",
-            "Baan gekozen op basis van het niveau en de handicaps van de groep",
+            "Baan gekozen op basis van uw groep",
             "Starttijd vastgelegd en volledig geregeld",
-            "Spelplan en warming-up voor de ronde",
-            "18 holes met mij"
+            "18 holes met mij",
+            "Coaching op de baan tijdens de ronde"
           ],
           "button": "Aanvragen →",
           "href": "/nl/contact",
@@ -857,15 +898,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           ]
         },
         {
-          "eyebrow": "De Signature Experience",
-          "name": "Volledige dag",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "price": "€3.000+",
-          "note": "Alles inbegrepen. Andy bevestigt het volledige programma vooraf met u.",
+          "note": "Alles geregeld. Alle details worden voor de dag bevestigd.",
           "features": [
-            "Baan, starttijd en coaching",
-            "Lunch in een Michelin-restaurant of reservering met privéchef",
-            "Een tweede coachingsessie na de ronde is mogelijk",
-            "Caddie en premium clubverhuuropties"
+            "Baan, prive starttijd en een volledig georganiseerde dag met mij",
+            "Golffysio met The Golf Doctor om aan het lichaam en de geziene swingproblemen te werken",
+            "Prive transfers van en naar de baan",
+            "Diner bij een partnerhotel"
           ],
           "button": "Aanvragen →",
           "href": "/nl/contact",
@@ -948,16 +989,26 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Klaar om Mallorca goed te spelen?",
       "title": "Neem contact op en ik help u de juiste versie van de dag te kiezen.",
       "body": "Laat me uw data, handicap en wensen voor de dag weten. Ik kom persoonlijk binnen 24 uur bij u terug met een duidelijke aanbeveling.",
-      "primaryCta": "Reserveer uw dag →",
+      "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
-      "secondaryCta": "Ontdek de banen",
-      "secondaryHref": "/nl/golf-courses",
-      "tertiaryCta": "Pre-ronde vragenlijst →",
+      "secondaryCta": "Bericht via WhatsApp",
+      "secondaryHref": "https://wa.me/34624466702",
+      "tertiaryCta": "Ontdek de banen →",
       "tertiaryHref": "/nl/golf-courses"
     }
   },
   "sv": {
     "locale": "sv",
+    "offerSummary": {
+      "eyebrow": "I korthet",
+      "title": "Forsta erbjudandet innan du hor av dig.",
+      "items": [
+        { "label": "Bast for", "text": "Ensamspelare, par och sma sallskap som vill ha en riktig golfdag pa Mallorca." },
+        { "label": "Format", "text": "En bana, 18 hal, vald efter ditt spel, med mig vid din sida under hela rundan." },
+        { "label": "Priser", "text": "Solo fran 695 EUR. Grupp fran 950 EUR totalt. Green fees ar separata och bekraftas innan bokning." },
+        { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Andy svarar personligen inom 24 timmar." }
+      ]
+    },
     "hero": {
       "homeHref": "/sv",
       "breadcrumbHome": "Hem",
@@ -965,7 +1016,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Golfdag · Mallorca",
       "title": "En golfdag på Mallorca.",
       "body": "En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.",
-      "primaryCta": "Boka din dag →",
+      "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
       "secondaryCta": "Se paket"
     },
@@ -974,7 +1025,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Innan du anländer vet jag redan vad jag ska titta efter.",
       "paragraphs": [
         "Innan du kommer fyller du i ett kort frågeformulär. Det visar vad som frustrerar dig, var glappet finns mellan ditt rangespel och dina scorer, och hur en riktigt bra dag skulle se ut för dig. När vi står på första tee vet jag redan vad jag ska titta efter.",
-        "Under rundan vävs coachingen in på ett naturligt sätt. Inte som en ständig kommentar. Mer som rätt observation i det ögonblick när den fortfarande kan förändra hålet, scoren eller beslutet framför dig."
+        "Jag är PGA Advanced Professional, har coachat hundratals tävlingsvinnare, har över 15 000 coachingtimmar och Trackman Master-certifiering. Dagen bygger på det, men blir inte en rent teknisk session. En golfrunda, spelad som den ska."
       ],
       "quote": "De flesta golfare går därifrån och spelar bättre, känner sig klarare och förstår varför. Just den sista delen är oftast det som stannar kvar.",
       "questionnaireEyebrow": "Redan bokat?",
@@ -1044,7 +1095,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Det jag uppskattade mest var hur bekväm han fick mig att känna mig ute på banan. Att förstå vilka beräkningar som ligger bakom varje slag förbättrade mitt beslutsfattande enormt. Jag skulle rekommendera den här dagen till kompisgäng, semester-golfare och till och med familjer som vill upptäcka golf tillsammans."
         },
         {
-          "text": "Andy förändrade helt hur jag tänker kring banstrategi. Jag hade spelat i åratal utan att verkligen förstå besluten bakom varje slag. Efter 18 hål med honom på Son Gual gick jag därifrån med mitt bästa resultat där och förstod äntligen varför. Från briefing till lunch kändes hela dagen precis som en riktigt stor golfdag ska göra."
+          "text": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna klara och bara behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att prova. Bra att jag gjorde det. Vi jobbade igenom de finare detaljerna i min sving: fast bollkontakt, bättre viktöverföring och mekanik. Även de minsta justeringarna gav konsekventa resultat, och jag är övertygad om att de kommer ta bort 5-10 slag från mitt spel efter bara en session. Andy var helt professionell. Kan inte tacka honom nog."
         },
         {
           "text": "En fantastisk upplevelse. Andy utvärderade alla delar av mitt spel — swingen, banstrategin och det mentala — och justerade längs vägen. Jag åkte hem med massor av konkreta saker att jobba med."
@@ -1069,9 +1120,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Bana vald efter ditt spel och handicap",
             "Starttid säkrad och helt ordnad",
-            "Spelplan och uppvärmning före rundan",
             "18 hål med mig",
-            "Coaching på banan under rundan"
+            "Coaching på banan under rundan",
+            "Genomgång och nästa steg"
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact"
@@ -1082,10 +1133,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "€950 totalt",
           "features": [
             "Upp till 3 spelare, ett fast dagspris för Andy",
-            "Bana vald efter gruppens nivå och handicap",
+            "Bana vald efter ert sällskap",
             "Starttid säkrad och helt ordnad",
-            "Spelplan och uppvärmning före rundan",
-            "18 hål med mig"
+            "18 hål med mig",
+            "Coaching på banan under rundan"
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact",
@@ -1096,15 +1147,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           ]
         },
         {
-          "eyebrow": "Signature-upplevelsen",
-          "name": "Hel dag",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
           "price": "€3 000+",
-          "note": "Allt ingår. Andy bekräftar hela programmet med dig i förväg.",
+          "note": "Allt är ordnat. Alla detaljer bekräftas före dagen.",
           "features": [
-            "Bana, starttid och coaching",
-            "Lunch på Michelin-restaurang eller bokning med privat kock",
-            "En andra coachingtimme efter rundan är möjlig",
-            "Caddie och premium hyrklubbsalternativ"
+            "Bana, privat starttid och en helt organiserad dag med mig",
+            "Golf-fysio med The Golf Doctor för att jobba med kroppen och de svingproblem vi såg",
+            "Privata transfers till och från banan",
+            "Middag på ett partnerhotell"
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact",
@@ -1187,16 +1238,26 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Redo att spela Mallorca på rätt sätt?",
       "title": "Hör av dig så hjälper jag dig att välja rätt version av dagen.",
       "body": "Berätta vilka datum du har, vilket handicap du spelar på och vad du vill få ut av dagen. Jag återkommer personligen inom 24 timmar med en tydlig rekommendation.",
-      "primaryCta": "Boka din dag →",
+      "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
-      "secondaryCta": "Utforska banorna",
-      "secondaryHref": "/sv/golf-courses",
-      "tertiaryCta": "Frågeformulär inför rundan →",
+      "secondaryCta": "Skriv på WhatsApp",
+      "secondaryHref": "https://wa.me/34624466702",
+      "tertiaryCta": "Utforska banorna →",
       "tertiaryHref": "/sv/golf-courses"
     }
   },
   "zh": {
     "locale": "zh",
+    "offerSummary": {
+      "eyebrow": "一览",
+      "title": "在咨询前先了解这个项目。",
+      "items": [
+        { "label": "适合人群", "text": "希望在马略卡有一次真正高尔夫体验的单人球手、双人搭档或小型团体。" },
+        { "label": "形式", "text": "一座根据您的球技选定的球场，18洞，全程由我陪同。" },
+        { "label": "价格", "text": "单人695欧元起，小组950欧元总计起。果岭费另计，预订前确认。" },
+        { "label": "下一步", "text": "发送您的日期、人数与差点范围，Andy会在24小时内亲自回复。" }
+      ]
+    },
     "hero": {
       "homeHref": "/zh",
       "breadcrumbHome": "首页",
@@ -1204,7 +1265,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "私人高尔夫体验 · 马略卡",
       "title": "在马略卡的一天私人高尔夫体验。",
       "body": "一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €695。小组从 €950 总计起，果岭费另计。",
-      "primaryCta": "预订您的高尔夫日 →",
+      "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
       "secondaryCta": "查看方案"
     },
@@ -1213,7 +1274,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "在您到达之前，我就已经知道该留意什么。",
       "paragraphs": [
         "在您到达之前，您会先填写一份简短问卷。它会告诉我，最近什么最让您困扰，您的练习场表现和实际成绩之间的差距在哪里，以及怎样的一天才算真正对您有意义。等我们走到第一洞发球台时，我已经知道该留意什么。",
-        "整轮球里，指导会自然地融入其中。不是不停地点评，而是在还能够改变这一洞、这一杆或您眼前那个决定的时刻，给出最准确的观察。"
+        "我是PGA高级职业教练，指导过数百位赛事冠军，拥有超过15,000小时的教学经验，并持有Trackman Master认证。这一天会借助这些经验，但不会变成一堂纯技术课，而是一轮真正打得像样的高尔夫。"
       ],
       "quote": "大多数球手离开时都会打得更好、思路更清楚，也更明白为什么会这样。通常最能留下来的，就是这一点。",
       "questionnaireEyebrow": "已经预订？",
@@ -1283,7 +1344,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "我最喜欢的是，他让我在球场上始终感觉很自在。理解每一杆背后的计算和思路，极大提升了我的决策能力。我会把这一天推荐给朋友团体、度假球手，甚至想一起体验高尔夫的家庭。"
         },
         {
-          "text": "Andy 彻底改变了我对球场管理的理解。过去我打了很多年球，却并没有真正明白每一杆背后的决定。和他在 Son Gual 打完 18 洞后，我在那里打出了自己的最好成绩，也终于明白了原因。从赛前简报到午餐复盘，整整一天都像一场真正高水平的高尔夫体验该有的样子。"
+          "text": "我从五岁就开始打高尔夫。原以为自己基本功已经扎实，只需要多练习，不需要教练。后来有人送了我一节Andy的课程，我决定试一试。很庆幸我去了。我们细致打磨了挥杆的细节：扎实的击球、更好的重心转移，以及动作机制。即使是最小的调整也带来了稳定的效果，我相信仅这一节课就能帮我在成绩上减少5到10杆。Andy非常专业，怎么感谢都不为过。"
         },
         {
           "text": "非常棒的体验。Andy 对我高尔夫的各个方面进行了评估——挥杆技术、球场管理和心理状态——并在过程中不断调整。我带走了很多具体可以改进的地方。"
@@ -1308,9 +1369,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "按照您的球技与差点匹配球场",
             "开球时间已预订并安排妥当",
-            "赛前计划与热身",
             "与我同打 18 洞",
-            "球场实战指导贯穿全程"
+            "球场实战指导贯穿全程",
+            "赛后总结与后续建议"
           ],
           "button": "立即咨询 →",
           "href": "/zh/contact"
@@ -1321,10 +1382,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "€950 总计",
           "features": [
             "最多 3 位球手，Andy 收取固定日费",
-            "按照小组水平与差点匹配球场",
+            "按照您的小组匹配球场",
             "开球时间已预订并安排妥当",
-            "赛前计划与热身",
-            "与我同打 18 洞"
+            "与我同打 18 洞",
+            "球场实战指导贯穿全程"
           ],
           "button": "立即咨询 →",
           "href": "/zh/contact",
@@ -1335,14 +1396,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           ]
         },
         {
-          "eyebrow": "尊享体验",
-          "name": "全天尊享",
-          "note": "全部包含。Andy 提前与您确认完整行程安排。",
+          "eyebrow": "Signature Day",
+          "name": "Signature Day",
+          "note": "全部安排妥当。所有细节会在活动当天前确认。",
           "features": [
-            "球场、开球时间与全程指导",
-            "米其林餐厅午餐或私人厨师预订",
-            "下场后可安排第二次指导课",
-            "球童与高端租借球具选项"
+            "球场、私人开球时段，以及与我一起完全安排好的一天",
+            "与The Golf Doctor进行高尔夫理疗，针对身体状况与观察到的挥杆问题进行调整",
+            "往返球场的私人接送",
+            "在合作酒店享用晚餐"
           ],
           "button": "立即咨询 →",
           "href": "/zh/contact",
@@ -1425,11 +1486,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "准备好用正确的方式打马略卡了吗？",
       "title": "联系我，我会帮您选出最适合的那一种安排。",
       "body": "告诉我您的日期、差点，以及您希望这一天得到什么。我会在 24 小时内亲自回复，并给出清楚的建议。",
-      "primaryCta": "预订您的高尔夫日 →",
+      "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
-      "secondaryCta": "查看球场",
-      "secondaryHref": "/zh/golf-courses",
-      "tertiaryCta": "赛前问卷 →",
+      "secondaryCta": "通过 WhatsApp 联系",
+      "secondaryHref": "https://wa.me/34624466702",
+      "tertiaryCta": "查看球场 →",
       "tertiaryHref": "/zh/golf-courses"
     }
   }

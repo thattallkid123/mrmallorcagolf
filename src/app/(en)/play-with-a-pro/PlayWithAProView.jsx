@@ -283,7 +283,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           </div>
         </section>
 
-        {locale === 'en' && content.offerSummary ? (
+        {content.offerSummary ? (
           <section className="pwap-summary">
             <div className="pwap-summary__inner reveal">
               <div className="pwap-summary__header">

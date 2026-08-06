@@ -39,7 +39,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià Análisis - La Opinión Honesta de un Profesional PGA (2026)",
         "intro": "Quince lagos, molinos de viento por todo el campo y algunos de los greens más puros que he jugado en Mallorca. Uno de los campos mejor cuidados de la isla. Un 9 sobre 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €80-210 · Suroeste de Mallorca"
+        "keywords": "Par 72 · €80-210 · Suroeste de Mallorca · 15 lagos"
       },
       {
         "slug": "son-muntaner-review",
@@ -191,7 +191,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
         "intro": "Fünfzehn Seen, Windmühlen auf dem gesamten Platz und einige der reinsten Grüns, die ich in Mallorca gespielt habe. Einer der bestgepflegten Plätze der Insel. 9 von 10.",
         "readTime": "6 Min.",
-        "keywords": "Par 72 · €80-210 · Südwesten Mallorcas"
+        "keywords": "Par 72 · €80-210 · Südwesten Mallorcas · 15 Seen"
       },
       {
         "slug": "son-muntaner-review",
@@ -342,7 +342,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià Avis - L'Avis Honnête d'un Professionnel PGA (2026)",
         "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. L'un des parcours les mieux entretenus de l'île. Un 9 sur 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €80-210 · Sud-ouest de Majorque"
+        "keywords": "Par 72 · €80-210 · Sud-ouest de Majorque · 15 lacs"
       },
       {
         "slug": "son-muntaner-review",
@@ -494,7 +494,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià Review - De Eerlijke Mening van een PGA Professional (2026)",
         "intro": "Vijftien meren, windmolens door de hele baan en enkele van de zuiverste greens die ik op Mallorca heb gespeeld. Een van de best onderhouden banen op het eiland. Een 9 uit 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €80-210 · Zuidwest Mallorca"
+        "keywords": "Par 72 · €80-210 · Zuidwest Mallorca · 15 meren"
       },
       {
         "slug": "son-muntaner-review",
@@ -646,7 +646,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià Recension - En PGA-Professionals Ärliga Omdöme (2026)",
         "intro": "Femton sjöar, väderkvarnar på hela banan och några av de renaste greenerna jag spelat på Mallorca. En av de bäst skötta banorna på ön. En 9 av 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €80-210 · Sydvästra Mallorca"
+        "keywords": "Par 72 · €80-210 · Sydvästra Mallorca · 15 sjöar"
       },
       {
         "slug": "son-muntaner-review",
@@ -798,7 +798,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià 评测 — PGA职业球员的真实评价（2026）",
         "intro": "十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。岛上维护最佳的球场之一。综合评分9/10。",
         "readTime": "6分钟",
-        "keywords": "标准杆72 · 最高210欧元 · 马略卡岛西南部"
+        "keywords": "标准杆72 · EUR 80-210 · 马略卡岛西南部 · 15座湖泊"
       },
       {
         "slug": "son-muntaner-review",

@@ -5,9 +5,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "best-golf-courses-mallorca": {
     "es": {
       "metadata": {
-        "title": "Los mejores campos de golf de Mallorca 2026",
-        "description": "Mi clasificación honesta de los mejores campos de golf de Mallorca según tipo de jugador, nivel, presupuesto y objetivo del viaje.",
-        "imageAlt": "Los mejores campos de golf de Mallorca 2026"
+        "title": "Todos los 24 campos de golf en Mallorca 2026",
+        "description": "Los 24 campos de golf en Mallorca clasificados por un profesional PGA. Greenfees €55–€260, dificultad y veredictos honestos. Actualizado 2026."
       },
       "meta": {
         "badge": "Guía",
@@ -411,9 +410,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Die besten Golfplätze auf Mallorca 2026",
-        "description": "Mein ehrliches Ranking der besten Golfplätze auf Mallorca - je nach Spielertyp, Anspruch, Budget und Reisezeit.",
-        "imageAlt": "Die besten Golfplaetze auf Mallorca 2026"
+        "title": "Alle 24 Golfplätze auf Mallorca 2026",
+        "description": "Alle 24 Golfplätze auf Mallorca von einem PGA-Profi bewertet. Greenfees €55–€260, Schwierigkeitsgrade und ehrliche Bewertungen. Aktualisiert 2026."
       },
       "meta": {
         "badge": "Ratgeber",
@@ -817,9 +815,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Les meilleurs parcours de golf à Majorque 2026",
-        "description": "Mon classement honnête des meilleurs parcours de golf à Majorque selon le niveau, le type de voyage, le budget et l'objectif de jeu.",
-        "imageAlt": "Les meilleurs parcours de golf à Majorque 2026"
+        "title": "Les 24 parcours de golf à Majorque 2026",
+        "description": "Les 24 parcours de golf à Majorque classés par un professionnel PGA. Greenfees €55–€260, évaluations de difficulté et verdicts honnêtes. Mis à jour 2026."
       },
       "meta": {
         "badge": "Guide",
@@ -1223,9 +1220,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "De beste golfbanen van Mallorca 2026",
-        "description": "Mijn eerlijke rangschikking van de beste golfbanen van Mallorca per type speler, budget, reisdoel en gewenste ervaring.",
-        "imageAlt": "De beste golfbanen van Mallorca 2026"
+        "title": "Alle 24 golfbanen op Mallorca 2026",
+        "description": "Alle 24 golfbanen op Mallorca geclassificeerd door een PGA-professional. Greenfees €55–€260, moeilijkheidsgraden en eerlijke beoordelingen. Bijgewerkt 2026."
       },
       "meta": {
         "badge": "Gids",
@@ -1629,9 +1625,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "De bästa golfbanorna på Mallorca 2026",
-        "description": "Min ärliga rangordning av Mallorcas bästa golfbanor utifrån speltyp, budget, resmål och vilken typ av upplevelse man vill ha.",
-        "imageAlt": "De bästa golfbanorna på Mallorca 2026"
+        "title": "Alla 24 golfbanor på Mallorca 2026",
+        "description": "Alla 24 golfbanor på Mallorca klassificerade av en PGA-proffs. Greenfees €55–€260, svårighetsgrader och ärlika omdömen. Uppdaterad 2026."
       },
       "meta": {
         "badge": "Guide",
@@ -2035,16 +2030,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "zh": {
       "metadata": {
-        "title": "马略卡最佳高尔夫球场 2026",
-        "description": "从职业教练视角出发，按球手类型、预算、时间和体验目标，诚实排序马略卡最值得打的球场。",
-        "imageAlt": "马略卡最佳高尔夫球场 2026"
+        "title": "马略卡全部24座高尔夫球场 2026",
+        "description": "由PGA职业教练排名的马略卡全部24座高尔夫球场。绿费€55-€260、难度和诚实评价。2026年更新。"
       },
       "meta": {
         "badge": "指南",
         "readTime": "8分钟阅读",
         "updated": "2026年3月",
         "title": "马略卡最佳高尔夫球场：职业视角的诚实排序",
-        "intro": "岛上有22座球场。如果你来这里时间有限、标准不低，我会这样排优先级。",
+        "intro": "岛上有24座球场。如果你来这里时间有限、标准不低，我会这样排优先级。",
         "related": [
           {
             "slug": "son-gual-review",
@@ -2452,7 +2446,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "6 min de lectura",
         "updated": "Marzo 2026",
         "title": "La mejor época para jugar al golf en Mallorca: mes a mes",
-        "intro": "La respuesta corta: de septiembre a noviembre y de febrero a mayo. Aquí está la versión honesta, mes por mes.",
+        "intro": "La respuesta corta: para las mejores condiciones, primavera tardía y otoño. Para el mejor valor, mañanas de verano, el crepúsculo y el invierno.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2521,7 +2515,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Julio-agosto"
         },
         {
-          "text": "Caluroso, caro y lleno. Los 30-38 grados son reales. Las salidas de 7-8 de la mañana no son un capricho, sino la forma correcta de jugar. Para un viaje centrado solo en golf, no son los meses que yo pondría primero."
+          "text": "Caluroso (30-38 grados), y las salidas tempranas son imprescindibles. Pero aquí es donde la vieja lógica de precios de Mallorca deja de funcionar: muchos campos bajan de verdad los precios en verano, a menudo un 30-50% respecto a la temporada alta de primavera y otoño. Si el presupuesto le importa más que la temperatura perfecta, el verano puede tener mucho sentido."
         },
         {
           "text": "En enero, cuando muchos campos de Inglaterra y de gran parte de Europa están cerrados, encharcados o helados, aquí los fairways pueden estar impecables."
@@ -2549,7 +2543,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Veredicto"
         },
         {
-          "text": "Octubre, noviembre, marzo y abril son mi recomendación. Es la mejor mezcla de clima, estado del campo y valor general. Si quiere gastar menos, mire enero y febrero. Si quiere ver Mallorca en su mejor versión golfística, yo elegiría octubre."
+          "text": "Para las mejores condiciones, sigo recomendando primavera tardía y otoño. Para mejor valor, ahora miraría mucho más en serio junio-agosto y diciembre-febrero. Si busca golf tranquilo y precios más bajos, el invierno y los atardeceres de verano son más interesantes de lo que sugieren los consejos antiguos sobre Mallorca."
         },
         {
           "text": "¿Está planeando el viaje? Dígame sus fechas y le ayudo a elegir el momento correcto y los campos adecuados.",
@@ -2568,7 +2562,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "6 Min. Lesezeit",
         "updated": "März 2026",
         "title": "Die beste Zeit für Golf auf Mallorca - Monat für Monat",
-        "intro": "Die kurze Antwort: September bis November und Februar bis Mai. Hier ist die ehrliche Version nach Monaten.",
+        "intro": "Die kurze Antwort: für beste Bedingungen Spätfrühling und Herbst. Für den besten Gegenwert Sommervormittage, die Dämmerungszeiten und der Winter.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2637,7 +2631,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Juli-August"
         },
         {
-          "text": "Heiß, voll und teuer. 30-38 Grad sind real. Frühe Startzeiten zwischen 7 und 8 Uhr sind dann keine Option, sondern die richtige Entscheidung. Für einen reinen Golftrip würde ich diese Monate nicht zuerst empfehlen."
+          "text": "Heiß (30-38 Grad), frühe Startzeiten sind Pflicht. Aber genau hier kippt die alte Mallorca-Preislogik: Viele Plätze senken im Sommer tatsächlich die Preise, oft um 30-50 % gegenüber der Hochsaison im Frühjahr und Herbst. Wenn Ihnen das Budget wichtiger ist als perfekte Temperaturen, kann der Sommer wirklich Sinn ergeben."
         },
         {
           "text": "Im Januar, wenn Plätze in England und weiten Teilen Europas geschlossen, durchnässt oder gefroren sind, sind die Fairways hier oft makellos."
@@ -2665,7 +2659,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Fazit"
         },
         {
-          "text": "Oktober, November, März und April sind meine Empfehlung. Das ist die beste Kombination aus Platzqualität, Wetter und Gegenwert. Wenn Sie günstiger reisen wollen, schauen Sie auf Januar und Februar. Wenn Sie die Insel bei ihrer besten Golfversion sehen wollen, ist Oktober mein Monat."
+          "text": "Für die besten Bedingungen schicke ich Gäste weiterhin in den Spätfrühling und Herbst. Für den besseren Gegenwert würde ich inzwischen viel stärker auf Juni bis August und Dezember bis Februar schauen. Wer ruhiges Golf und niedrigere Preise sucht, findet Winter und Sommer-Dämmerung beide interessanter, als die alten Mallorca-Ratschläge vermuten lassen."
         },
         {
           "text": "Sie planen eine Reise? Sagen Sie mir Ihre Daten, und ich helfe Ihnen bei der richtigen Zeit und den richtigen Plätzen.",
@@ -2684,7 +2678,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "6 min de lecture",
         "updated": "Mars 2026",
         "title": "Meilleure période - Mois par mois",
-        "intro": "La réponse courte : septembre à novembre et février à mai. Voici la version honnête, mois par mois.",
+        "intro": "La réponse courte : pour les meilleures conditions, fin de printemps et automne. Pour le meilleur rapport qualité-prix, les matinées d'été, le crépuscule et l'hiver.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2753,7 +2747,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Juillet-août"
         },
         {
-          "text": "Chaud, cher et dense. Les 30-38 degrés sont réels. Les départs à 7h ou 8h ne sont pas un luxe, c'est simplement la bonne décision. Pour un voyage uniquement golf, ce ne sont pas les mois que je recommanderais en premier."
+          "text": "Chaud (30-38 degrés), les départs tôt le matin sont indispensables. Mais c'est là que l'ancienne logique tarifaire de Majorque ne tient plus : de nombreux parcours baissent réellement leurs prix en été, souvent de 30 à 50 % par rapport à la haute saison du printemps et de l'automne. Si le budget compte plus que la température parfaite, l'été peut vraiment avoir du sens."
         },
         {
           "text": "En janvier, quand beaucoup de parcours en Angleterre et dans une grande partie de l'Europe sont fermés, détrempés ou gelés, les fairways ici peuvent être impeccables."
@@ -2781,7 +2775,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Verdict"
         },
         {
-          "text": "Octobre, novembre, mars et avril sont ma recommandation. C'est le meilleur mélange entre météo, qualité du parcours et valeur générale. Si vous voulez dépenser moins, regardez janvier et février. Si vous voulez voir Majorque dans sa meilleure version golf, je choisirais octobre."
+          "text": "Pour les meilleures conditions, je continue de recommander la fin du printemps et l'automne. Pour un meilleur rapport qualité-prix, je regarderais désormais bien plus sérieusement juin-août et décembre-février. Si vous cherchez un golf tranquille et des tarifs plus bas, l'hiver et les crépuscules d'été sont tous deux plus intéressants que ne le suggèrent les anciens conseils sur Majorque."
         },
         {
           "text": "Vous préparez un voyage ? Donnez-moi vos dates et je vous aide à choisir la bonne période et les bons parcours.",
@@ -2800,7 +2794,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "6 min leestijd",
         "updated": "Maart 2026",
         "title": "Beste tijd - Maand voor maand",
-        "intro": "Het korte antwoord: september tot november en februari tot mei. Dit is de eerlijke versie, maand voor maand.",
+        "intro": "Het korte antwoord: voor de beste omstandigheden, laat voorjaar en herfst. Voor de beste waarde, zomerochtenden, de schemering en de winter.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2869,7 +2863,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Juli-augustus"
         },
         {
-          "text": "Heet, duur en druk. 30-38 graden is reeel. Tee times van 7 of 8 uur zijn geen luxe maar gewoon de juiste keuze. Voor een puur golfgerichte reis zou ik deze maanden niet als eerste adviseren."
+          "text": "Heet (30-38 graden), vroege tee times zijn essentieel. Maar hier klopt de oude Mallorca-prijslogica niet meer: veel banen verlagen hun tarieven in de zomer echt, vaak met 30-50% ten opzichte van het hoogseizoen in voorjaar en herfst. Als budget belangrijker is dan de perfecte temperatuur, kan de zomer echt de moeite waard zijn."
         },
         {
           "text": "In januari, wanneer banen in Engeland en grote delen van Europa gesloten, drassig of bevroren zijn, kunnen de fairways hier er onberispelijk bij liggen."
@@ -2897,7 +2891,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Oordeel"
         },
         {
-          "text": "Oktober, november, maart en april zijn mijn professionele aanbeveling. Dat is de beste combinatie van weer, baanconditie en algemene waarde. Wilt u goedkoper reizen, kijk dan naar januari en februari. Wilt u Mallorca op zijn beste golfniveau zien, dan kies ik oktober."
+          "text": "Voor de beste omstandigheden stuur ik mensen nog steeds naar laat voorjaar en herfst. Voor betere waarde zou ik nu veel serieuzer kijken naar juni-augustus en december-februari. Wilt u rustig golf en lagere tarieven, dan zijn winter en zomerschemering allebei interessanter dan het oude Mallorca-advies doet vermoeden."
         },
         {
           "text": "Plant u een reis? Stuur me uw data en ik help u kiezen welke periode en welke banen het beste passen.",
@@ -2916,7 +2910,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "6 min läsning",
         "updated": "Mars 2026",
         "title": "Bästa tiden att spela golf på Mallorca - månad för månad",
-        "intro": "Det korta svaret: september till november och februari till maj. Här är den raka versionen, månad för månad.",
+        "intro": "Det korta svaret: för bästa förhållanden, sen vår och höst. För bäst värde, sommarmorgnar, skymningstid och vintern.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2985,7 +2979,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Juli-augusti"
         },
         {
-          "text": "Varmt, dyrt och fullt. 30-38 grader är reellt. Tee times klockan 7 eller 8 är inte lyx utan bara rätt beslut. För en ren golfresa är det inte de månader jag skulle rekommendera först."
+          "text": "Varmt (30-38 grader), tidiga tee times är ett måste. Men det är just här den gamla Mallorca-prislogiken faller: många banor sänker faktiskt priserna på sommaren, ofta med 30-50 % jämfört med högsäsong under vår och höst. Om budget spelar större roll än perfekt temperatur kan sommaren verkligen vara värd att överväga."
         },
         {
           "text": "I januari, när banor i England och stora delar av Europa är stängda, vattensjuka eller frusna, kan fairways här vara i närmast perfekta skick."
@@ -3013,7 +3007,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Omdöme"
         },
         {
-          "text": "Oktober, november, mars och april är min professionella rekommendation. Det är den bästa kombinationen av väder, banförhållanden och totalvärde. Vill du resa billigare, titta på januari och februari. Vill du se Mallorca i sin bästa golfversion, väljer jag oktober."
+          "text": "För bästa förhållanden pekar jag fortfarande på sen vår och höst. För bättre värde skulle jag nu titta mycket mer på juni-augusti och december-februari. Vill du ha lugnt golf och lägre priser är både vintern och sommarens skymningstid mer intressanta än äldre Mallorca-råd antyder."
         },
         {
           "text": "Planerar du en resa? Skicka dina datum så hjälper jag dig att välja rätt period och rätt banor.",
@@ -3032,7 +3026,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "6分钟阅读",
         "updated": "2026年3月",
         "title": "马略卡打高尔夫的最佳时间：按月来看",
-        "intro": "短答案是：9月到11月，以及2月到5月。下面是更实在的逐月版本。",
+        "intro": "短答案是：论条件最好，是暮春和秋季。论性价比最高，是夏季清晨、黄昏时段和冬季。",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -3101,7 +3095,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "7月-8月"
         },
         {
-          "text": "热、贵、人多。30-38摄氏度并不夸张。早上7点到8点的开球时间不是讲究，而是正确的做法。如果是专门为了高尔夫来的，我不会把这两个月排在最前面。"
+          "text": "炎热（30-38摄氏度），早开球时间是必须的。但这正是马略卡老式定价逻辑失效的地方：不少球场夏天真的会降价，通常比春秋旺季低30-50%。如果预算比完美气温更重要，夏天其实很值得考虑。"
         },
         {
           "text": "1月时，当英格兰和欧洲很多地方的球场不是关门就是积水、结霜，这里的球道却常常已经很好。"
@@ -3129,7 +3123,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "结论"
         },
         {
-          "text": "10月、11月、3月和4月，是我作为职业教练给出的推荐。这是天气、球场状态和整体价值最均衡的组合。如果你更看重预算，去看1月和2月。如果你想看到马略卡最好的高尔夫版本，我选10月。"
+          "text": "论最佳条件，我依然会推荐暮春和秋季。论性价比，现在我会更认真地考虑6月到8月，以及12月到2月。如果你想要清静的球场和更低的价格，冬季和夏季黄昏时段都比过去的马略卡建议更值得关注。"
         },
         {
           "text": "如果您正在规划行程，把日期发给我，我可以帮您判断最适合的时间和球场。也可以直接加微信：andygriffiths1。",
@@ -3141,9 +3135,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "golf-club-hire-mallorca": {
     "es": {
       "metadata": {
-        "title": "Alquiler de palos - Qué merece la pena",
-        "description": "Alquiler de palos en Mallorca explicado con honestidad: traer los propios palos o alquilar, qué empresas funcionan y dónde merece la pena gastar.",
-        "imageAlt": "Alquiler de palos en Mallorca"
+        "title": "Alquiler de palos de golf en Mallorca 2026",
+        "description": "El alquiler de palos de golf en Mallorca cuesta €25–€65 por día. Mejores empresas, calidad y dónde obtener el mejor precio en 2026."
       },
       "meta": {
         "badge": "Alquiler",
@@ -3261,9 +3254,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Leihschläger auf Mallorca: was sich wirklich lohnt",
-        "description": "Leihschläger auf Mallorca ehrlich erklärt: eigene Schläger mitbringen oder leihen, welche Anbieter taugen und wo sich Geld sparen lässt.",
-        "imageAlt": "Leihschläger auf Mallorca"
+        "title": "Golfschlägerverleih auf Mallorca 2026",
+        "description": "Golfschlägerverleih auf Mallorca kostet €25–€65 pro Tag. Beste Unternehmen, Qualität und wie man 2026 das beste Angebot bekommt."
       },
       "meta": {
         "badge": "Leihschläger",
@@ -3381,9 +3373,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Location de clubs a Majorque : ce qui vaut vraiment le coup",
-        "description": "Location de clubs a Majorque expliquee honnetement : apporter ses propres clubs ou louer, quels prestataires sont fiables et ou il vaut la peine de depenser.",
-        "imageAlt": "Location de clubs a Majorque"
+        "title": "Location de clubs de golf à Majorque 2026",
+        "description": "La location de clubs de golf à Majorque coûte €25–€65 par jour. Meilleures entreprises, qualité et où obtenir la meilleure affaire en 2026."
       },
       "meta": {
         "badge": "Location",
@@ -3501,9 +3492,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Clubhuur op Mallorca: wat echt de moeite waard is",
-        "description": "Clubhuur op Mallorca eerlijk uitgelegd: eigen clubs meenemen of huren, welke aanbieders betrouwbaar zijn en waar u beter wel of niet geld aan uitgeeft.",
-        "imageAlt": "Clubhuur op Mallorca"
+        "title": "Golfspelenset verhuur op Mallorca 2026",
+        "description": "Golfspelenset verhuur op Mallorca kost €25–€65 per dag. Beste bedrijven, kwaliteit en waar je de beste deal in 2026 krijgt."
       },
       "meta": {
         "badge": "Clubhuur",
@@ -3621,9 +3611,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Klubbhyra pa Mallorca: vad som faktiskt ar vart det",
-        "description": "Klubbhyra pa Mallorca forklarad utan fluff: ta med egna klubbor eller hyra, vilka foretag som fungerar och var pengarna gor mest nytta.",
-        "imageAlt": "Klubbhyra pa Mallorca"
+        "title": "Golfklubbuthyrning på Mallorca 2026",
+        "description": "Golfklubbuthyrning på Mallorca kostar €25–€65 per dag. Bästa företag, kvalitet och var man får det bästa erbjudandet 2026."
       },
       "meta": {
         "badge": "Klubbhyra",
@@ -3741,9 +3730,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "zh": {
       "metadata": {
-        "title": "马略卡租杆指南：哪些选择真正值得",
-        "description": "马略卡租杆怎么选？是带自己的杆，还是当地租？哪些公司靠谱，哪些钱值得花，这里讲清楚。",
-        "imageAlt": "马略卡租杆指南"
+        "title": "马略卡高尔夫球具租赁 2026",
+        "description": "马略卡高尔夫球具租赁每天€25-€65。最好的租赁公司、质量和如何在2026年获得最佳价格。"
       },
       "meta": {
         "badge": "租杆指南",
@@ -3863,16 +3851,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "golf-cost-mallorca": {
     "es": {
       "metadata": {
-        "title": "Cuánto cuesta golf - Desglose 2026",
-        "description": "¿Cuánto cuesta jugar al golf en Mallorca en 2026? Greenfees, alquiler de palos, buggies y comida, explicado con claridad por un profesional PGA en la isla.",
-        "imageAlt": "¿Cuánto cuesta jugar al golf en Mallorca? Desglose completo 2026"
+        "title": "¿Cuánto cuesta golf en Mallorca? 2026",
+        "description": "Golf en Mallorca cuesta €55–€260, mayoría €90–€150. Más barato Pollença (€55), más caro Son Muntaner (€260). Alquiler desde €30."
       },
       "meta": {
         "badge": "Greenfees",
         "readTime": "5 min de lectura",
         "updated": "Marzo 2026",
         "title": "Cuánto cuesta golf - Desglose 2026",
-        "intro": "Una vuelta puede costar 20 € o 220 € según dónde juegue y en qué época venga. Este es el desglose honesto para 2026 de alguien que juega aquí casi cada semana.",
+        "intro": "Una vuelta puede costar desde unos 55 € en el segmento más económico hasta unos 260 € en temporada alta. Este es el desglose honesto para 2026 de alguien que juega aquí casi cada semana.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4004,16 +3991,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Golf Kosten - Preisüberblick 2026",
-        "description": "Was kostet Golf auf Mallorca 2026? Greenfees, Leihschläger, Buggies und Essen - der ehrliche Preisüberblick von einem PGA-Professional vor Ort.",
-        "imageAlt": "Was kostet Golf auf Mallorca? Der komplette Preisüberblick 2026"
+        "title": "Was kostet Golf auf Mallorca? 2026",
+        "description": "Golf auf Mallorca kostet €55–€260, meist €90–€150. Günstigste Pollença (€55), teuerste Son Muntaner (€260). Verleih ab €30."
       },
       "meta": {
         "badge": "Greenfees",
         "readTime": "5 Min. Lesezeit",
         "updated": "März 2026",
         "title": "Golf Kosten - Preisüberblick 2026",
-        "intro": "Eine Runde kann je nach Platz und Saison 20 € oder 220 € kosten. Hier ist der ehrliche Preisüberblick für 2026 von jemandem, der hier fast jede Woche spielt.",
+        "intro": "Eine Runde kostet zwischen rund 55 € im günstigeren Segment und bis zu etwa 260 € in der Hochsaison. Hier ist der ehrliche Preisüberblick für 2026 von jemandem, der hier fast jede Woche spielt.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4145,9 +4131,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Combien coûte le golf à Majorque ? Le vrai détail 2026",
-        "description": "Combien coûte le golf à Majorque en 2026 ? Green fees, location de clubs, voiturette et déjeuner, expliqués clairement par un professionnel PGA sur place.",
-        "imageAlt": "Combien coûte le golf à Majorque ? Le vrai détail 2026"
+        "title": "Combien coûte le golf à Majorque? 2026",
+        "description": "Le golf à Majorque coûte €55–€260, la plupart €90–€150. Le moins cher Pollença (€55), le plus cher Son Muntaner (€260). Location dès €30."
       },
       "meta": {
         "badge": "Green fees",
@@ -4286,9 +4271,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Wat kost golf op Mallorca? Het complete overzicht voor 2026",
-        "description": "Wat kost golf op Mallorca in 2026? Greenfees, clubhuur, buggys en lunch - het eerlijke kostenoverzicht van een PGA-professional op het eiland.",
-        "imageAlt": "Wat kost golf op Mallorca? Het complete overzicht voor 2026"
+        "title": "Wat kost golf op Mallorca? 2026",
+        "description": "Golf op Mallorca kost €55–€260, meestal €90–€150. Goedkoopste Pollença (€55), duurste Son Muntaner (€260). Verhuur vanaf €30."
       },
       "meta": {
         "badge": "Greenfees",
@@ -4427,9 +4411,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Golfkostnader - Översikt 2026",
-        "description": "Vad kostar golf på Mallorca 2026? Greenfee, klubbhyror, buggy och lunch - en rak kostnadsbild från ett PGA-proffs på ön.",
-        "imageAlt": "Vad kostar golf på Mallorca? Den fullständiga översikten 2026"
+        "title": "Hur mycket kostar golf på Mallorca? 2026",
+        "description": "Golf på Mallorca kostar €55–€260, mest €90–€150. Billigaste Pollença (€55), dyraste Son Muntaner (€260). Uthyrning från €30."
       },
       "meta": {
         "badge": "Greenfee",
@@ -4568,9 +4551,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "zh": {
       "metadata": {
-        "title": "马略卡打高尔夫要花多少钱？2026完整费用解析",
-        "description": "2026年马略卡高尔夫真实费用解析：果岭费、租杆、球车、午餐，以及哪些地方值得花钱，哪些地方可以省。",
-        "imageAlt": "马略卡打高尔夫要花多少钱？2026完整费用解析"
+        "title": "马略卡高尔夫要花多少钱 2026",
+        "description": "马略卡高尔夫€55-€260，多数€90-€150。最便宜Pollença（€55），最贵Son Muntaner（€260）。租赁€30起。"
       },
       "meta": {
         "badge": "费用指南",
@@ -4711,9 +4693,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "golf-trip-planning-mallorca": {
     "es": {
       "metadata": {
-        "title": "Cómo planificar un viaje de golf a Mallorca",
-        "description": "Viaje de golf a Mallorca: cuándo venir, qué campos priorizar, cuántos días jugar, cómo moverse y qué hacer fuera del golf.",
-        "imageAlt": "Cómo planificar un viaje de golf a Mallorca"
+        "title": "Planificación de un viaje de golf a Mallorca",
+        "description": "¿Planificar un viaje de golf a Mallorca? Campos, tiempo, rondas, transporte, equipos y actividades. Por un profesional PGA en la isla."
       },
       "meta": {
         "badge": "Planificación",
@@ -4837,9 +4818,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Golfreise nach Mallorca planen: der praktische Guide",
-        "description": "Mallorca-Golfreise planen? Hier ist die ehrliche Anleitung zu Reisezeit, Plätzen, Transport, Ausrüstung und allem abseits des Platzes.",
-        "imageAlt": "Golfreise nach Mallorca planen"
+        "title": "Planung einer Golftrip nach Mallorca",
+        "description": "Eine Golftrip nach Mallorca planen? Plätze, Zeit, Runden, Transport, Ausrüstung und Aktivitäten. Von einem PGA-Professional auf der Insel."
       },
       "meta": {
         "badge": "Reiseplanung",
@@ -4962,9 +4942,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Planifier un voyage de golf à Majorque",
-        "description": "Quand venir, quels parcours prioriser, combien de parties jouer, comment se deplacer et quoi faire hors du golf.",
-        "imageAlt": "Planifier un voyage de golf à Majorque"
+        "title": "Planification d'un voyage golf à Majorque",
+        "description": "Planifier un voyage golf à Majorque ? Parcours, dates, rondes, transport, équipement et activités. Par un professionnel PGA sur l'île."
       },
       "meta": {
         "badge": "Planification",
@@ -5084,9 +5063,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Een golfreis naar Mallorca plannen",
-        "description": "Wanneer komen, welke banen prioriteit geven, hoeveel rondes spelen, hoe u zich verplaatst en wat u buiten golf doet.",
-        "imageAlt": "Een golfreis naar Mallorca plannen"
+        "title": "Planning van een golfreis naar Mallorca",
+        "description": "Een golfreis naar Mallorca plannen? Banen, dates, rondes, transport, uitrusting en activiteiten. Door een PGA-professional op het eiland."
       },
       "meta": {
         "badge": "Reisplanning",
@@ -5206,9 +5184,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Planera en golfresa till Mallorca",
-        "description": "När man ska åka, vilka banor man ska prioritera, hur många rundor som är rimliga och hur man rör sig runt på ön.",
-        "imageAlt": "Planera en golfresa till Mallorca"
+        "title": "Planering av en golfresa till Mallorca",
+        "description": "Planera en golfresa till Mallorca? Banor, datum, omgångar, transport, utrustning och aktiviteter. Av en PGA-proffs på ön."
       },
       "meta": {
         "badge": "Reseplanering",
@@ -5331,8 +5308,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "zh": {
       "metadata": {
         "title": "如何规划马略卡高尔夫之旅",
-        "description": "什么时候来、先打哪些球场、打几轮最合理、怎么出行，以及不打球的时候该做什么。",
-        "imageAlt": "如何规划马略卡高尔夫之旅"
+        "description": "计划马略卡高尔夫之旅？球场、日期、轮次、交通、设备和活动。由岛上的PGA职业教练编写。"
       },
       "meta": {
         "badge": "行程规划",
@@ -6129,10 +6105,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "一年大约300个晴天。1月时，当欧洲很多地方的球场不是关就是很难打，这里的球道却可能已经非常漂亮。这是我从上海搬来以后，最早明确感受到的优势之一。"
         },
         {
-          "text": "22座球场，集中在一座并不大的岛上"
+          "text": "24座球场，集中在一座并不大的岛上"
         },
         {
-          "text": "我来自上海：2700万人口，只有12座球场。这里是22座球场，而且岛并不大，开车一小时已经可以覆盖很多选择。对游客来说，这种密度非常有价值。"
+          "text": "我来自上海：2700万人口，只有12座球场。这里是24座球场，而且岛并不大，开车一小时已经可以覆盖很多选择。对游客来说，这种密度非常有价值。"
         },
         {
           "items": [
@@ -6201,1128 +6177,6 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "如果您想真正看看马略卡最好的高尔夫是什么样子，也欢迎直接加微信：andygriffiths1。",
           "linkLabel": "查看与职业球手同场体验 →"
         }
-      ]
-    }
-  },
-  "golf-club-hire-mallorca": {
-    "de": {
-      "metadata": {
-        "title": "Golfschlägerverleih auf Mallorca 2026",
-        "description": "Golfschlägerverleih auf Mallorca kostet €25–€65 pro Tag. Beste Unternehmen, Qualität und wie man 2026 das beste Angebot bekommt."
-      },
-      "blocks": []
-    },
-    "es": {
-      "metadata": {
-        "title": "Alquiler de palos de golf en Mallorca 2026",
-        "description": "El alquiler de palos de golf en Mallorca cuesta €25–€65 por día. Mejores empresas, calidad y dónde obtener el mejor precio en 2026."
-      },
-      "blocks": []
-    },
-    "fr": {
-      "metadata": {
-        "title": "Location de clubs de golf à Majorque 2026",
-        "description": "La location de clubs de golf à Majorque coûte €25–€65 par jour. Meilleures entreprises, qualité et où obtenir la meilleure affaire en 2026."
-      },
-      "blocks": []
-    },
-    "nl": {
-      "metadata": {
-        "title": "Golfspelenset verhuur op Mallorca 2026",
-        "description": "Golfspelenset verhuur op Mallorca kost €25–€65 per dag. Beste bedrijven, kwaliteit en waar je de beste deal in 2026 krijgt."
-      },
-      "blocks": []
-    },
-    "sv": {
-      "metadata": {
-        "title": "Golfklubbuthyrning på Mallorca 2026",
-        "description": "Golfklubbuthyrning på Mallorca kostar €25–€65 per dag. Bästa företag, kvalitet och var man får det bästa erbjudandet 2026."
-      },
-      "blocks": []
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡高尔夫球具租赁 2026",
-        "description": "马略卡高尔夫球具租赁每天€25-€65。最好的租赁公司、质量和如何在2026年获得最佳价格。"
-      },
-      "blocks": []
-    }
-  },
-  "best-golf-courses-mallorca": {
-    "de": {
-      "metadata": {
-        "title": "Alle 24 Golfplätze auf Mallorca 2026",
-        "description": "Alle 24 Golfplätze auf Mallorca von einem PGA-Profi bewertet. Greenfees €55–€260, Schwierigkeitsgrade und ehrliche Bewertungen. Aktualisiert 2026."
-      },
-      "blocks": []
-    },
-    "es": {
-      "metadata": {
-        "title": "Todos los 24 campos de golf en Mallorca 2026",
-        "description": "Los 24 campos de golf en Mallorca clasificados por un profesional PGA. Greenfees €55–€260, dificultad y veredictos honestos. Actualizado 2026."
-      },
-      "blocks": []
-    },
-    "fr": {
-      "metadata": {
-        "title": "Les 24 parcours de golf à Majorque 2026",
-        "description": "Les 24 parcours de golf à Majorque classés par un professionnel PGA. Greenfees €55–€260, évaluations de difficulté et verdicts honnêtes. Mis à jour 2026."
-      },
-      "blocks": []
-    },
-    "nl": {
-      "metadata": {
-        "title": "Alle 24 golfbanen op Mallorca 2026",
-        "description": "Alle 24 golfbanen op Mallorca geclassificeerd door een PGA-professional. Greenfees €55–€260, moeilijkheidsgraden en eerlijke beoordelingen. Bijgewerkt 2026."
-      },
-      "blocks": []
-    },
-    "sv": {
-      "metadata": {
-        "title": "Alla 24 golfbanor på Mallorca 2026",
-        "description": "Alla 24 golfbanor på Mallorca klassificerade av en PGA-proffs. Greenfees €55–€260, svårighetsgrader och ärlika omdömen. Uppdaterad 2026."
-      },
-      "blocks": []
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡全部24座高尔夫球场 2026",
-        "description": "由PGA职业教练排名的马略卡全部24座高尔夫球场。绿费€55-€260、难度和诚实评价。2026年更新。"
-      },
-      "blocks": []
-    }
-  },
-  "golf-trip-planning-mallorca": {
-    "de": {
-      "metadata": {
-        "title": "Planung einer Golftrip nach Mallorca",
-        "description": "Eine Golftrip nach Mallorca planen? Plätze, Zeit, Runden, Transport, Ausrüstung und Aktivitäten. Von einem PGA-Professional auf der Insel."
-      },
-      "blocks": []
-    },
-    "es": {
-      "metadata": {
-        "title": "Planificación de un viaje de golf a Mallorca",
-        "description": "¿Planificar un viaje de golf a Mallorca? Campos, tiempo, rondas, transporte, equipos y actividades. Por un profesional PGA en la isla."
-      },
-      "blocks": []
-    },
-    "fr": {
-      "metadata": {
-        "title": "Planification d'un voyage golf à Majorque",
-        "description": "Planifier un voyage golf à Majorque ? Parcours, dates, rondes, transport, équipement et activités. Par un professionnel PGA sur l'île."
-      },
-      "blocks": []
-    },
-    "nl": {
-      "metadata": {
-        "title": "Planning van een golfreis naar Mallorca",
-        "description": "Een golfreis naar Mallorca plannen? Banen, dates, rondes, transport, uitrusting en activiteiten. Door een PGA-professional op het eiland."
-      },
-      "blocks": []
-    },
-    "sv": {
-      "metadata": {
-        "title": "Planering av en golfresa till Mallorca",
-        "description": "Planera en golfresa till Mallorca? Banor, datum, omgångar, transport, utrustning och aktiviteter. Av en PGA-proffs på ön."
-      },
-      "blocks": []
-    },
-    "zh": {
-      "metadata": {
-        "title": "如何规划马略卡高尔夫之旅",
-        "description": "计划马略卡高尔夫之旅？球场、日期、轮次、交通、设备和活动。由岛上的PGA职业教练编写。"
-      },
-      "blocks": []
-    }
-  },
-  "golf-cost-mallorca": {
-    "de": {
-      "metadata": {
-        "title": "Was kostet Golf auf Mallorca? 2026",
-        "description": "Golf auf Mallorca kostet €55–€260, meist €90–€150. Günstigste Pollença (€55), teuerste Son Muntaner (€260). Verleih ab €30."
-      },
-      "blocks": []
-    },
-    "es": {
-      "metadata": {
-        "title": "¿Cuánto cuesta golf en Mallorca? 2026",
-        "description": "Golf en Mallorca cuesta €55–€260, mayoría €90–€150. Más barato Pollença (€55), más caro Son Muntaner (€260). Alquiler desde €30."
-      },
-      "blocks": []
-    },
-    "fr": {
-      "metadata": {
-        "title": "Combien coûte le golf à Majorque? 2026",
-        "description": "Le golf à Majorque coûte €55–€260, la plupart €90–€150. Le moins cher Pollença (€55), le plus cher Son Muntaner (€260). Location dès €30."
-      },
-      "blocks": []
-    },
-    "nl": {
-      "metadata": {
-        "title": "Wat kost golf op Mallorca? 2026",
-        "description": "Golf op Mallorca kost €55–€260, meestal €90–€150. Goedkoopste Pollença (€55), duurste Son Muntaner (€260). Verhuur vanaf €30."
-      },
-      "blocks": []
-    },
-    "sv": {
-      "metadata": {
-        "title": "Hur mycket kostar golf på Mallorca? 2026",
-        "description": "Golf på Mallorca kostar €55–€260, mest €90–€150. Billigaste Pollença (€55), dyraste Son Muntaner (€260). Uthyrning från €30."
-      },
-      "blocks": []
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡高尔夫要花多少钱 2026",
-        "description": "马略卡高尔夫€55-€260，多数€90-€150。最便宜Pollença（€55），最贵Son Muntaner（€260）。租赁€30起。"
-      },
-      "blocks": []
-    }
-  }
-,
-  "golf-club-hire-mallorca": {
-    "de": {
-      "blocks": []
-    },
-    "es": {
-      "blocks": []
-    },
-    "fr": {
-      "blocks": []
-    },
-    "nl": {
-      "blocks": []
-    },
-    "sv": {
-      "blocks": []
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡高尔夫用品租赁指南",
-        "description": "如何在马略卡租赁高尔夫球杆、高尔夫鞋和其他用品。当地租赁店、价格和建议。",
-        "imageAlt": "马略卡高尔夫用品租赁"
-      },
-      "blocks": []
-    }
-  },
-  "best-golf-courses-mallorca": {
-    "de": {
-      "blocks": []
-    },
-    "es": {
-      "blocks": []
-    },
-    "fr": {
-      "blocks": []
-    },
-    "nl": {
-      "blocks": []
-    },
-    "sv": {
-      "blocks": []
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡最佳高尔夫球场 2026",
-        "description": "马略卡24个高尔夫球场的完整指南。排名、设计师、难度等级和专业建议。",
-        "imageAlt": "马略卡高尔夫球场"
-      },
-      "blocks": []
-    }
-  },
-  "golf-trip-planning-mallorca": {
-    "de": {
-      "blocks": []
-    },
-    "es": {
-      "blocks": []
-    },
-    "fr": {
-      "blocks": []
-    },
-    "nl": {
-      "blocks": []
-    },
-    "sv": {
-      "blocks": []
-    },
-    "zh": {
-      "metadata": {
-        "title": "如何规划马略卡高尔夫旅行",
-        "description": "马略卡高尔夫度假的完整规划指南。球场选择、餐饮、住宿和日程安排。",
-        "imageAlt": "马略卡高尔夫旅行规划"
-      },
-      "blocks": []
-    }
-  },
-  "golf-cost-mallorca": {
-    "de": {
-      "blocks": []
-    },
-    "es": {
-      "blocks": []
-    },
-    "fr": {
-      "blocks": []
-    },
-    "nl": {
-      "blocks": []
-    },
-    "sv": {
-      "blocks": []
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡高尔夫费用详解",
-        "description": "在马略卡打高尔夫的真实成本。球场费用、用品租赁、餐饮和出行费用。",
-        "imageAlt": "马略卡高尔夫费用"
-      },
-      "blocks": []
-    }
-  }
-,
-  "golf-club-hire-mallorca": {
-    "de": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "es": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "fr": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "nl": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "sv": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡高尔夫用品租赁指南",
-        "description": "如何在马略卡租赁高尔夫球杆、高尔夫鞋和其他用品。当地租赁店、价格和建议。",
-        "imageAlt": "马略卡高尔夫用品租赁"
-      },
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    }
-  },
-  "best-golf-courses-mallorca": {
-    "de": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "es": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "fr": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "nl": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "sv": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡最佳高尔夫球场 2026",
-        "description": "马略卡24个高尔夫球场的完整指南。排名、设计师、难度等级和专业建议。",
-        "imageAlt": "马略卡高尔夫球场"
-      },
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    }
-  },
-  "golf-trip-planning-mallorca": {
-    "de": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "es": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "fr": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "nl": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "sv": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "zh": {
-      "metadata": {
-        "title": "如何规划马略卡高尔夫旅行",
-        "description": "马略卡高尔夫度假的完整规划指南。球场选择、餐饮、住宿和日程安排。",
-        "imageAlt": "马略卡高尔夫旅行规划"
-      },
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    }
-  },
-  "golf-cost-mallorca": {
-    "de": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "es": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "fr": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "nl": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "sv": {
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    },
-    "zh": {
-      "metadata": {
-        "title": "马略卡高尔夫费用详解",
-        "description": "在马略卡打高尔夫的真实成本。球场费用、用品租赁、餐饮和出行费用。",
-        "imageAlt": "马略卡高尔夫费用"
-      },
-      "blocks": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
       ]
     }
   },

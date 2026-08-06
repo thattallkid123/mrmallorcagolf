@@ -106,6 +106,8 @@ Steps in order — do not skip, do not report done early:
 
 **If any step is blocked** (hook failure, build error, Vercel error) — fix it. Do not close out the task or leave the repo broken. **Before starting new work each session, run `git status`;** if there are complete-looking uncommitted changes, ask whether to commit them first.
 
+**Build gotcha:** if `npm run build` compiles successfully but then fails at "Collecting page data" with `ENOENT ... .next\server\middleware-manifest.json`, it's a stale/corrupted `.next` cache (a known Windows Next.js issue), not a real regression from the change just made. Delete `.next` and rebuild before assuming the code broke.
+
 ## Start Here
 
 **Operations & monitoring:** `MMG Analytics Dashboard.gsheet` (Drive / Systems & Planning) — live GA4/Search Console; `MMG_MASTER_CONTROL_CENTER.md` (Drive root) — business ops & financial tracking.
