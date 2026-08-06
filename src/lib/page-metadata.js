@@ -46,7 +46,7 @@ const HOME_METADATA = {
   es: {
     title: 'Clases de Golf en Mallorca | PGA Pro',
     description:
-      'Clases de golf en Mallorca con Andy Griffiths, PGA Advanced Professional. Coaching en campo, consejos de recorrido, itinerarios y recomendaciones locales para su visita.',
+      'Clases de golf en Mallorca con Andy Griffiths, PGA Advanced Professional. Coaching en campo, itinerarios y recomendaciones locales para su visita.',
   },
   fr: {
     title: 'Golf a Majorque avec PGA Pro',
@@ -224,29 +224,29 @@ const COACHING_METADATA = {
 
 const PLAY_WITH_A_PRO_EXPLAINED_METADATA = {
   en: {
-    title: 'What "Play With A Pro" Actually Looks Like',
+    title: 'What "Play With A Pro" Looks Like',
     description:
-      'A PGA pro joins your group for a full round: reading greens, managing wind, and improving your decisions in real time. Here is exactly what the day looks like.',
+      'A PGA pro joins your group for a full round: reading greens, managing wind, and improving your decisions in real time.',
   },
   de: {
-    title: 'Das steckt wirklich hinter „Play With A Pro“',
+    title: 'Das steckt hinter „Play With A Pro“',
     description:
       'Ein PGA-Profi begleitet Ihre Gruppe eine ganze Runde: Grünlesen, Windeinschätzung und bessere Entscheidungen in Echtzeit. So sieht der Tag konkret aus.',
   },
   es: {
-    title: 'Así es en realidad un día "Play With A Pro"',
+    title: 'Así es un día "Play With A Pro"',
     description:
-      'Un profesional PGA juega con su grupo una vuelta completa: lectura de greens, gestión del viento y mejores decisiones en tiempo real. Así es exactamente el día.',
+      'Un profesional PGA juega con su grupo una vuelta completa: lectura de greens, gestión del viento y mejores decisiones en tiempo real.',
   },
   fr: {
-    title: 'Ce à quoi ressemble vraiment « Play With A Pro »',
+    title: 'À quoi ressemble « Play With A Pro »',
     description:
-      "Un professionnel PGA rejoint votre groupe pour un parcours complet : lecture des greens, gestion du vent et de meilleures décisions en temps réel. Voici exactement à quoi ressemble la journée.",
+      'Un professionnel PGA rejoint votre groupe pour un parcours complet : lecture des greens, gestion du vent et meilleures décisions en temps réel.',
   },
   nl: {
-    title: 'Dit is hoe "Play With A Pro" er in de praktijk uitziet',
+    title: 'Zo werkt "Play With A Pro" in de praktijk',
     description:
-      'Een PGA-professional speelt een volledige ronde met uw groep: greens lezen, wind inschatten en betere beslissingen in real time. Zo ziet de dag er precies uit.',
+      'Een PGA-professional speelt een volledige ronde met uw groep: greens lezen, wind inschatten en betere beslissingen in real time.',
   },
   sv: {
     title: 'Så här ser "Play With A Pro" verkligen ut',
@@ -354,7 +354,7 @@ const ITINERARY_METADATA = {
 
 const PLAN_YOUR_TRIP_METADATA = {
   en: {
-    title: 'Plan Your Golf Trip - Courses, Base & Tee Times',
+    title: 'Plan Your Golf Trip - Courses & Tee Times',
     description:
       'Use our course finder or ask Andy to plan your Mallorca trip: courses, base, routing, tee times, buggies, rentals, dining.',
   },

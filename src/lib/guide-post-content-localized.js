@@ -1363,7 +1363,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Club de Golf Alcanada - Avis honnête d'un professionnel PGA",
+        "title": "Alcanada Golf - Avis honnête 2026",
         "description": "Alcanada à Majorque, vu par un professionnel PGA qui y joue régulièrement. Le phare, les greens, la terrasse et les green fees 2026."
       },
       "meta": {
@@ -1526,7 +1526,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Club de Golf Alcanada - eerlijke review van een PGA-professional",
+        "title": "Alcanada Golf - Eerlijke review 2026",
         "description": "Alcanada op Mallorca, bekeken door een PGA-professional die er regelmatig speelt. De vuurtoren, de greens, het terras en de greenfees voor 2026."
       },
       "meta": {
@@ -1691,7 +1691,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Club de Golf Alcanada - ärlig recension från ett PGA-proffs",
+        "title": "Alcanada Golf - Ärlig recension 2026",
         "description": "Alcanada på Mallorca, sett genom ögonen på ett PGA-proffs som spelar där regelbundet. Fyren, greenerna, terrassen och greenfeen 2026."
       },
       "meta": {
@@ -3822,8 +3822,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "son-muntaner-review": {
     "es": {
       "metadata": {
-        "title": "Golf Son Muntaner, Mallorca - análisis honesto de un Profesional PGA (2026)",
-        "description": "Son Muntaner, el campo de golf de Mallorca analizado por un Profesional PGA. Mejor campo de España 2025. Green fees, condiciones del campo y para quién es recomendable.",
+        "title": "Golf Son Muntaner - Análisis honesto 2026",
+        "description": "Son Muntaner, Mejor Campo de España 2025. Green fees desde €110, a 5 min de Palma. Veredicto honesto de un Profesional PGA.",
         "imagePath": "/images/son-muntaner-blog/sm-8.webp"
       },
       "meta": {
@@ -4950,7 +4950,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "zh": {
       "metadata": {
-        "title": "Son Muntaner 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
+        "title": "Son Muntaner 高尔夫 - 诚实评测（2026）",
         "description": "Son Muntaner马略卡高尔夫球场由PGA职业教练评测。2025年西班牙最佳高尔夫球场。果岭费、球场状况及适合人群全解析。",
         "imagePath": "/images/son-muntaner-blog/sm-8.webp"
       },
@@ -6157,8 +6157,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "golf-andratx-review": {
     "es": {
       "metadata": {
-        "title": "Golf de Andratx - análisis honesto de un Profesional PGA (2026)",
-        "description": "Golf de Andratx analizado por un Profesional PGA que lo jugó en mayo de 2026. Entorno de montaña, el par 5 más largo de España, hoyos tácticos y qué esperar de uno de los campos más exigentes de Mallorca."
+        "title": "Golf de Andratx - Análisis honesto 2026",
+        "description": "Golf de Andratx por un Profesional PGA: entorno de montaña, el par 5 más largo de España, €125. Uno de los campos más exigentes de Mallorca."
       },
       "meta": {
         "badge": "Análisis del campo",
@@ -6309,8 +6309,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Golf de Andratx Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
-        "description": "Golf de Andratx bewertet von einem PGA-Professional, der den Platz im Mai 2026 gespielt hat. Bergkulisse, das längste Par 5 Spaniens, taktische Löcher durchgehend und was man von einem der anspruchsvolleren Plätze Mallorcas erwarten kann."
+        "title": "Golf de Andratx - Ehrliche Bewertung 2026",
+        "description": "Golf de Andratx bewertet von einem PGA-Professional: Bergkulisse, das längste Par 5 Spaniens, €125. Einer der anspruchsvollsten Plätze Mallorcas."
       },
       "meta": {
         "badge": "Platz-Bewertung",
@@ -6461,8 +6461,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Golf de Andratx - l'avis honnête d'un Professionnel PGA (2026)",
-        "description": "Golf de Andratx analysé par un Professionnel PGA qui l'a joué en mai 2026. Cadre montagneux, le par 5 le plus long d'Espagne, des trous tactiques tout au long du parcours et ce qu'il faut attendre de l'un des parcours les plus exigeants de Majorque."
+        "title": "Golf de Andratx - Avis honnête 2026",
+        "description": "Golf de Andratx par un Professionnel PGA : cadre montagneux, le par 5 le plus long d'Espagne, €125. L'un des parcours les plus exigeants de Majorque."
       },
       "meta": {
         "badge": "Avis parcours",
@@ -6611,8 +6611,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Golf de Andratx Review - De eerlijke kijk van een PGA Professional (2026)",
-        "description": "Golf de Andratx beoordeeld door een PGA Professional die er in mei 2026 speelde. Bergomgeving, de langste par 5 van Spanje, tactische holes door het hele parcours en wat je kunt verwachten van een van de uitdagendere banen op Mallorca."
+        "title": "Golf de Andratx - Eerlijke review 2026",
+        "description": "Golf de Andratx beoordeeld door een PGA Professional: bergomgeving, de langste par 5 van Spanje, €125. Een van de uitdagendere banen op Mallorca."
       },
       "meta": {
         "badge": "Baan Review",
@@ -6763,8 +6763,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Golf de Andratx Recension - En PGA-professionals ärliga syn (2026)",
-        "description": "Golf de Andratx recenserad av en PGA-professional som spelade banan i maj 2026. Bergslandskap, längsta par 5 i Spanien, taktiska hål genomgående och vad man kan förvänta sig av en av Mallorcas mer utmanande banor."
+        "title": "Golf de Andratx - Ärlig recension 2026",
+        "description": "Golf de Andratx recenserad av en PGA-professional: bergslandskap, längsta par 5 i Spanien, €125. En av Mallorcas mer utmanande banor."
       },
       "meta": {
         "badge": "Banrecension",
@@ -6915,7 +6915,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "zh": {
       "metadata": {
-        "title": "Golf de Andratx 球场评测 - PGA 职业教练的真实体验（2026）",
+        "title": "Golf de Andratx 球场 - PGA教练真实评测（2026）",
         "description": "Golf de Andratx 由一位 2026 年 5 月亲自上场的 PGA 职业教练评测。山地环境、西班牙最长的五杆洞、全程战术性洞位，以及对马略卡（Mallorca）最具挑战性球场之一的真实评价。"
       },
       "meta": {
@@ -7069,8 +7069,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   "son-antem-west-review": {
     "es": {
       "metadata": {
-        "title": "Son Antem West Golf Club, Mallorca - analisis honesto de un Profesional PGA (2026)",
-        "description": "Son Antem West: green fees desde 109 €, par 72, 6.293 m. Un campo de resort a 15-20 minutos de Palma, bien mantenido y facil de jugar. Asi se juega de verdad y a quien le conviene."
+        "title": "Son Antem West - Análisis del resort 2026",
+        "description": "Son Antem West: green fees desde 109 €, par 72, 6.293 m. Campo de resort a 15-20 min de Palma, bien mantenido y fácil de jugar."
       },
       "meta": {
         "badge": "Analisis del campo",
@@ -7237,8 +7237,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Son Antem West Golf Club, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
-        "description": "Son Antem West: Greenfees ab 109 €, Par 72, 6.293 m. Ein Resortplatz 15-20 Minuten von Palma entfernt, gut gepflegt und entspannt spielbar. So spielt er sich wirklich und fuer wen er passt."
+        "title": "Son Antem West - Resort-Bewertung 2026",
+        "description": "Son Antem West: Greenfees ab 109 €, Par 72, 6.293 m. Resortplatz 15-20 Minuten von Palma, gut gepflegt und entspannt zu spielen."
       },
       "meta": {
         "badge": "Platz-Bewertung",
@@ -7405,8 +7405,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Son Antem West Golf Club, Majorque - avis honnete d'un professionnel PGA (2026)",
-        "description": "Son Antem West : green fees a partir de 109 €, par 72, 6 293 m. Un parcours de resort a 15-20 minutes de Palma, bien entretenu et facile a jouer. Voici comment il se joue vraiment et a qui il convient."
+        "title": "Son Antem West - Avis du resort 2026",
+        "description": "Son Antem West : green fees à partir de 109 €, par 72, 6 293 m. Parcours de resort à 15-20 min de Palma, bien entretenu et facile à jouer."
       },
       "meta": {
         "badge": "Avis parcours",
@@ -7571,8 +7571,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Son Antem West Golf Club, Mallorca - eerlijke review van een PGA Professional (2026)",
-        "description": "Son Antem West: greenfees vanaf 109 euro, par 72, 6.293 m. Een resortbaan op 15-20 minuten van Palma, goed onderhouden en ontspannen speelbaar. Zo speelt hij echt en voor wie past hij."
+        "title": "Son Antem West - Eerlijke review 2026",
+        "description": "Son Antem West: greenfees vanaf €109, par 72, 6.293 m. Resortbaan op 15-20 minuten van Palma, goed onderhouden en ontspannen speelbaar."
       },
       "meta": {
         "badge": "Baanbeoordeling",
@@ -7739,8 +7739,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Son Antem West Golf Club, Mallorca - arlig recension av en PGA Professional (2026)",
-        "description": "Son Antem West: greenfee fran 109 euro, par 72, 6 293 m. En resortbana 15-20 minuter fran Palma med bra skick och en avslappnad, spelbar layout. Sa spelar den egentligen och vilka passar den for."
+        "title": "Son Antem West - Ärlig recension 2026",
+        "description": "Son Antem West: greenfee från €109, par 72, 6 293 m. Resortbana 15-20 minuter från Palma med bra skick och avslappnad layout."
       },
       "meta": {
         "badge": "Banrecension",
@@ -7907,7 +7907,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     },
     "zh": {
       "metadata": {
-        "title": "Son Antem West 高尔夫俱乐部，马略卡 - PGA 职业教练真实评测（2026）",
+        "title": "Son Antem West 度假村球场 - PGA教练真实评测（2026）",
         "description": "Son Antem West：果岭费109欧起，标准杆72，6,293米。距离帕尔马15-20分钟的度假村球场，养护不错，打法轻松。这里是它真实的下场体验，以及适合的人群。"
       },
       "meta": {

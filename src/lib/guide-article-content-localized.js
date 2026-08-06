@@ -5,7 +5,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "best-golf-courses-mallorca": {
     "es": {
       "metadata": {
-        "title": "Todos los 24 campos de golf en Mallorca 2026",
+        "title": "Los 24 campos de golf en Mallorca 2026",
         "description": "Los 24 campos de golf en Mallorca clasificados por un profesional PGA. Greenfees €55–€260, dificultad y veredictos honestos. Actualizado 2026."
       },
       "meta": {
@@ -1221,7 +1221,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "nl": {
       "metadata": {
         "title": "Alle 24 golfbanen op Mallorca 2026",
-        "description": "Alle 24 golfbanen op Mallorca geclassificeerd door een PGA-professional. Greenfees €55–€260, moeilijkheidsgraden en eerlijke beoordelingen. Bijgewerkt 2026."
+        "description": "Alle 24 golfbanen op Mallorca geclassificeerd door een PGA-pro. Greenfees €55–€260, moeilijkheidsgraden en eerlijke reviews. Bijgewerkt 2026."
       },
       "meta": {
         "badge": "Gids",
@@ -2437,7 +2437,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "best-time-play-golf-mallorca": {
     "es": {
       "metadata": {
-        "title": "La mejor época para jugar al golf en Mallorca",
+        "title": "Cuándo jugar al golf en Mallorca (2026)",
         "description": "Mes a mes: clima, precios, estado de los campos y cuándo Mallorca ofrece su mejor versión para el golf.",
         "imageAlt": "La mejor época para jugar al golf en Mallorca"
       },
@@ -2669,7 +2669,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "La meilleure période pour jouer au golf à Majorque",
+        "title": "Quand jouer au golf à Majorque (2026)",
         "description": "Mois par mois : météo, tarifs, état des parcours et quand Majorque offre sa meilleure version pour le golf.",
         "imageAlt": "La meilleure période pour jouer au golf à Majorque"
       },
@@ -2785,7 +2785,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "De beste tijd om golf te spelen op Mallorca",
+        "title": "Beste tijd voor golf op Mallorca (2026)",
         "description": "Maand voor maand: weer, prijzen, baancondities en wanneer Mallorca op zijn best is voor golf.",
         "imageAlt": "De beste tijd om golf te spelen op Mallorca"
       },
@@ -3135,7 +3135,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "golf-club-hire-mallorca": {
     "es": {
       "metadata": {
-        "title": "Alquiler de palos de golf en Mallorca 2026",
+        "title": "Alquiler de palos de golf en Mallorca",
         "description": "El alquiler de palos de golf en Mallorca cuesta €25–€65 por día. Mejores empresas, calidad y dónde obtener el mejor precio en 2026."
       },
       "meta": {
@@ -4693,7 +4693,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "golf-trip-planning-mallorca": {
     "es": {
       "metadata": {
-        "title": "Planificación de un viaje de golf a Mallorca",
+        "title": "Planificar tu viaje de golf a Mallorca",
         "description": "¿Planificar un viaje de golf a Mallorca? Campos, tiempo, rondas, transporte, equipos y actividades. Por un profesional PGA en la isla."
       },
       "meta": {
@@ -5432,7 +5432,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "is-mallorca-good-for-golf": {
     "es": {
       "metadata": {
-        "title": "¿Es Mallorca buena para el golf? La respuesta honesta",
+        "title": "¿Mallorca es buena para el golf? Sí",
         "description": "Una respuesta honesta sobre si Mallorca merece la pena como destino de golf: calidad de campos, clima, desplazamientos y para quien encaja mejor.",
         "imageAlt": "¿Es Mallorca buena para el golf?"
       },
@@ -5557,7 +5557,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Ist Mallorca gut für Golf? Die ehrliche Antwort",
+        "title": "Ist Mallorca gut für Golf? Ja",
         "description": "Ist Mallorca wirklich ein gutes Golfziel? Die ehrliche Antwort zu Platzqualität, Klima, Reisewegen und dafür, für wen die Insel am meisten Sinn ergibt.",
         "imageAlt": "Ist Mallorca gut für Golf?"
       },
@@ -5682,7 +5682,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Majorque est-elle bonne pour le golf ? La réponse honnête",
+        "title": "Majorque, bonne pour le golf ? Oui",
         "description": "Une réponse honnête sur Majorque comme destination golf : qualité des parcours, climat, trajets et pour quels joueurs l'île fonctionne le mieux.",
         "imageAlt": "Majorque est-elle bonne pour le golf ?"
       },
@@ -5805,7 +5805,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Is Mallorca goed voor golf? Het eerlijke antwoord",
+        "title": "Is Mallorca goed voor golf? Ja",
         "description": "Een eerlijk antwoord op de vraag of Mallorca een sterke golfbestemming is: baankwaliteit, klimaat, reistijd en voor wie het eiland het meest logisch is.",
         "imageAlt": "Is Mallorca goed voor golf?"
       },
@@ -5930,7 +5930,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Ar Mallorca bra for golf? Det arliga svaret",
+        "title": "Är Mallorca bra för golf? Ja",
         "description": "Ett arligt svar pa om Mallorca ar en stark golfdestination: banstandard, klimat, restider och for vilka spelare on fungerar bast.",
         "imageAlt": "Ar Mallorca bra for golf?"
       },
@@ -6183,7 +6183,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "mallorca-course-map": {
     "de": {
       "metadata": {
-        "title": "Interaktive Karte aller 24 Golfplätze auf Mallorca",
+        "title": "Karte: 24 Golfplätze auf Mallorca",
         "description": "Interaktive Karte aller 24 Golfplätze auf Mallorca. Finden Sie Plätze nach Region und Entfernung von Palma.",
         "imageAlt": "Karte der Golfplätze auf Mallorca"
       },
@@ -6200,7 +6200,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "es": {
       "metadata": {
-        "title": "Mapa Interactivo de los 24 Campos de Golf en Mallorca",
+        "title": "Mapa: 24 Campos de Golf en Mallorca",
         "description": "Mapa interactivo de todos los campos de golf en Mallorca. Encuentra campos por región y distancia de Palma.",
         "imageAlt": "Mapa de campos de golf en Mallorca"
       },
@@ -6217,7 +6217,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Carte interactive des 24 terrains de golf à Majorque",
+        "title": "Carte : 24 Golfs à Majorque",
         "description": "Carte interactive de tous les terrains de golf à Majorque. Trouvez les parcours par région et distance de Palma.",
         "imageAlt": "Carte des terrains de golf de Majorque"
       },
@@ -6234,7 +6234,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Interactieve kaart van alle 24 golfbanen op Mallorca",
+        "title": "Kaart: 24 Golfbanen op Mallorca",
         "description": "Interactieve kaart van alle golfbanen op Mallorca. Vind banen op locatie en afstand van Palma.",
         "imageAlt": "Kaart van golfbanen op Mallorca"
       },
@@ -6251,7 +6251,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "sv": {
       "metadata": {
-        "title": "Interaktiv karta över alla 24 golfbanor på Mallorca",
+        "title": "Karta: 24 Golfbanor på Mallorca",
         "description": "Interaktiv karta över alla golfbanor på Mallorca. Hitta banor efter region och avstånd från Palma.",
         "imageAlt": "Karta över golfbanor på Mallorca"
       },

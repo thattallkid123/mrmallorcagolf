@@ -44,3 +44,7 @@ Prior round's changes didn't move the needle (some went backwards) — this roun
 | Best Golf Courses guide | 2,356 | 1.5% | Description now includes "Majorca" alongside "Mallorca" to catch the "majorca golf courses" query cluster (18–28 impressions/query, position 19–29) |
 
 Also shipped this round (not CTR-focused, judge via enquiry events instead): every course review (8) and the Best Golf Courses guide now link to `/plan-your-trip`, mirrored across all 6 non-English locales. Homepage intro section gained a second link to the Best Golf Courses guide.
+
+### 2026-08-06 length-compliance backlog clearance (not a CTR round)
+
+`npm run check:meta-length` had a 56-issue backlog (mostly non-English `metadata.title`/`.description` values that had never been checked against the brand-suffix-aware SERP budget). Fixed all 56 in one pass and wired the check into `check:content`/`predeploy` so it can't recur silently. This was a batch technical-debt clearance, not a targeted CTR experiment — most of the touched strings are locale variants of lower-traffic pages (e.g. Golf de Andratx and Son Antem West reviews in de/es/fr/nl/sv), not pulled from a Search Console impressions/CTR review. Do not read CTR movement on these pages as validating the specific wording; if a high-impression page's CTR moves, that's coincidental to this pass, not the point of it. Full page/locale change list is in that day's git commit, not duplicated here.
