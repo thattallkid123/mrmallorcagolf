@@ -11,6 +11,10 @@ English is master — never add localized content that doesn't exist in English,
 
 If you added a new key to shared content used across locales, add it for **de/es/fr/nl/sv/zh in the same edit** or provide an explicit getter fallback. Locale content files typically hold all 7 locales in one file (e.g. `homepage-content.js`) — edit them together.
 
+**Array length must match exactly.** `mergeLocalizedContent`/`mergeGuideContent` do NOT fall back per-item when a locale array's length differs from English's — they either return the raw (stale) locale array wholesale, or the item silently vanishes from non-English listings (e.g. a guides-index card that never renders on `/de/guides` etc., with no error anywhere). If you add or remove an item from an English content array that's synced this way (`liveGuides`, testimonials, package tiers, features, FAQ items…), update all 6 locale arrays to the same length in the same change — don't rely on the merge to gracefully degrade.
+
+**Check for English-only routes before "fixing" a gap.** Some guides are deliberately English-only with no localized page at all (`EN_ONLY_REVIEW_POST_SLUGS` / `EN_ONLY_ARTICLE_SLUGS` in `src/lib/site.js`). If a guide's slug is in one of those sets, do not add it to locale `liveGuides` arrays or write translated content for it — there's no route to serve it, so it'll be dead content and any index-card link to it 404s. Confirm with `hasLocaleRoute()` if unsure.
+
 ## 2. Shared components the copy flows through
 
 Changed copy rarely lives on one page. Check:

@@ -7,7 +7,7 @@
 > - **`SOURCE-OF-TRUTH-MAP.md`** — canonical source for each data type
 > - **`CLAUDE.md`** — operating contract and rules
 
-> **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update`, `/health-check` — over re-deriving these from this file.
+> **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update`, `/health-check`, `/email-newsletter` — over re-deriving these from this file.
 
 ---
 

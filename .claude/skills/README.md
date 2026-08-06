@@ -18,6 +18,7 @@ These are **separate from the Drive-mastered `MMG_SKILL_*` docs** synced by `SKI
 | `expand-guide` | Adding Common Questions / new facts to a live guide |
 | `scorecard-update` | Par/SI/distance changes — the manual four-step chain |
 | `health-check` | Read-only recon sweep for drift/cleanup candidates across repo, tools, and Drive |
+| `email-newsletter` | Launching a newsletter programme, drafting an issue, or wiring a new lead-magnet email sequence |
 
 ## Using these skills in other tools
 
