@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - main
+  # Lets a run be re-triggered by hand (gh workflow run "Verify Content And Build" --ref main).
+  # Added 2026-08-06 after a GitHub Actions incident left runs stuck in "queued" with no jobs
+  # ever starting, and no way to retry because push was the only trigger.
+  workflow_dispatch:
 
 jobs:
   verify:
