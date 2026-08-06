@@ -16,6 +16,8 @@ Anything added here should be a **live reference**, not a session log. Dated che
 | `TRANSLATION_BOUNDARIES.md` | What must vs. must not be translated |
 | `translation-workflow.md` | Single source of truth for multilingual release readiness |
 | `LOCALE_PARITY_CHECKLIST.md` | 7-language structure checklist |
+| `STALE_ENGLISH_PREVENTION.md` | How to ensure de/es/fr/nl/sv/zh pages have no hardcoded English text |
+| `FONT_LOADING_RULE.md` | Why fonts must use `var(--font-sans)`/`var(--font-serif)`, never a hardcoded font-family name |
 | `guide-content-rules.md` | Rules for guide/review `blocks`, notes, and locale parity |
 | `course-guide-standards.md` | Content standards + verified course-facts table for reviews |
 | `ROUTING_AND_CONTENT_SYSTEM.md` | App Router routing conventions |
