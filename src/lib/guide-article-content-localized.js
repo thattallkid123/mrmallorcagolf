@@ -67,7 +67,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Club de Golf Alcanada",
               "Port d'Alcudia",
               "72",
-              "EUR115-220",
+              "EUR115-230",
               "7/10",
               "5.0",
               "Vistas espectaculares y calidad de torneo"
@@ -166,7 +166,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "EUR80-100",
+              "EUR90-110",
               "6/10",
               "3.5",
               "Entorno Tramuntana"
@@ -247,7 +247,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Pollensa",
               "Pollensa",
               "35 (9H)",
-              "EUR55-65",
+              "EUR65-75",
               "4/10",
               "3.5",
               "Ronda facil para entrar en calor"
@@ -472,7 +472,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Club de Golf Alcanada",
               "Port d'Alcudia",
               "72",
-              "EUR115-220",
+              "EUR115-230",
               "7/10",
               "5.0",
               "Spektakulaere Aussichten, Turnierqualitaet"
@@ -571,7 +571,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "EUR80-100",
+              "EUR90-110",
               "6/10",
               "3.5",
               "Tramuntana-Bergkulisse"
@@ -652,7 +652,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Pollensa",
               "Pollensa",
               "35 (9H)",
-              "EUR55-65",
+              "EUR65-75",
               "4/10",
               "3.5",
               "Einfache Aufwaermrunde, Tramuntana-Blicke"
@@ -877,7 +877,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Club de Golf Alcanada",
               "Port d'Alcudia",
               "72",
-              "EUR115-220",
+              "EUR115-230",
               "7/10",
               "5.0",
               "Vues spectaculaires et qualite tournoi"
@@ -976,7 +976,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "EUR80-100",
+              "EUR90-110",
               "6/10",
               "3.5",
               "Cadre Tramuntana"
@@ -1057,7 +1057,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Pollensa",
               "Pollensa",
               "35 (9H)",
-              "EUR55-65",
+              "EUR65-75",
               "4/10",
               "3.5",
               "Parfait pour se chauffer, vues Tramuntana"
@@ -1282,7 +1282,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Club de Golf Alcanada",
               "Port d'Alcudia",
               "72",
-              "EUR115-220",
+              "EUR115-230",
               "7/10",
               "5.0",
               "Spectaculair uitzicht en toernooikwaliteit"
@@ -1381,7 +1381,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "EUR80-100",
+              "EUR90-110",
               "6/10",
               "3.5",
               "Tramuntana-bergsetting"
@@ -1462,7 +1462,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Pollensa",
               "Pollensa",
               "35 (9H)",
-              "EUR55-65",
+              "EUR65-75",
               "4/10",
               "3.5",
               "Makkelijke opwarmer met Tramuntana-zicht"
@@ -1687,7 +1687,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Club de Golf Alcanada",
               "Port d'Alcudia",
               "72",
-              "EUR115-220",
+              "EUR115-230",
               "7/10",
               "5.0",
               "Spektakulara vyer och tournament-kvalitet"
@@ -1786,7 +1786,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "EUR80-100",
+              "EUR90-110",
               "6/10",
               "3.5",
               "Tramuntana-miljo"
@@ -1867,7 +1867,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Pollensa",
               "Pollensa",
               "35 (9H)",
-              "EUR55-65",
+              "EUR65-75",
               "4/10",
               "3.5",
               "Enkel uppvarmning med Tramuntana-vyer"
@@ -2092,7 +2092,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Club de Golf Alcanada",
               "Port d'Alcudia",
               "72",
-              "EUR115-220",
+              "EUR115-230",
               "7/10",
               "5.0",
               "风景最强且具比赛品质"
@@ -2191,7 +2191,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "EUR80-100",
+              "EUR90-110",
               "6/10",
               "3.5",
               "Tramuntana山景环境"
@@ -2272,7 +2272,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Pollensa",
               "Pollensa",
               "35 (9H)",
-              "EUR55-65",
+              "EUR65-75",
               "4/10",
               "3.5",
               "轻松热身，Tramuntana风景"

@@ -38,7 +38,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '€20 for 9 holes or €30 for 18 holes at Palma Pitch & Putt (club hire extra), or around €55-65 if you want the cheapest full-size options such as Golf Pollença in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
+          '€20 for 9 holes or €30 for 18 holes at Palma Pitch & Putt (club hire extra), or around €65-75 if you want the cheapest full-size options such as Golf Pollença in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
       },
       {
         type: 'image',
@@ -57,7 +57,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Son Gual sits around €115-165. Alcanada runs roughly €115-220. Son Muntaner reaches around €260 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €210, and Son Vida to around €190. The top end in Mallorca is higher than many older guides suggest.',
+          'Son Gual sits around €115-165. Alcanada runs roughly €115-230. Son Muntaner reaches around €260 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €210, and Son Vida to around €190. The top end in Mallorca is higher than many older guides suggest.',
       },
       {
         type: 'paragraph',
@@ -447,7 +447,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         headers: ['Course', 'Location', 'Par', 'Green Fee', 'Difficulty', 'Stars', 'Best For'],
         rows: [
           ['Son Gual', 'Palma', '72', '\u20AC115-165', '9/10', '5.0', 'Serious championship round'],
-          ['Club de Golf Alcanada', "Port d'Alcudia", '72', '\u20AC115-220', '7/10', '5.0', 'Spectacular views, championship quality'],
+          ['Club de Golf Alcanada', "Port d'Alcudia", '72', '\u20AC115-230', '7/10', '5.0', 'Spectacular views, championship quality'],
           ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-260', '7/10', '4.5', 'Best-conditioned, close to Palma'],
           ['T Golf Calvia', 'Calvia', '72', '\u20AC170-210', '7/10', '5.0', 'Premium all-round experience'],
           ['Golf de Andratx', 'Camp de Mar', '72', '\u20AC90-140', '9/10', '4.0', 'Hardest test on the island'],
@@ -458,7 +458,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Golf Santa Ponsa 3', 'Santa Ponsa', '30 (9H)', 'Members only · guest with member', '4/10', '3.0', 'Beginners, approach practice'],
           ['Golf Son Quint', 'Son Vida - Palma', '71', '\u20AC70-140', '5/10', '4.0', 'All levels, Tiger Woods played here'],
           ['Real Golf de Bendinat', 'Bendinat', '70', '\u20AC74-123', '6/10', '3.5', 'Wooded valley, bay views'],
-          ['Golf Son Termes', 'Bunyola', '70', '\u20AC80-100', '6/10', '3.5', 'Tramuntana mountain setting'],
+          ['Golf Son Termes', 'Bunyola', '70', '\u20AC90-110', '6/10', '3.5', 'Tramuntana mountain setting'],
           ['Golf Son Antem West', 'Llucmajor', '72', '\u20AC90-135', '7/10', '4.0', 'Resort course, tougher than Son Antem East'],
           ['Golf Son Antem East', 'Llucmajor', '72', '\u20AC90-140', '6/10', '3.5', 'Wide fairways, resort golf'],
           ['Golf Maioris', 'Llucmajor', '72', '\u20AC91-110', '7/10', '3.5', 'Underrated, quieter option'],
@@ -467,7 +467,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ["Vall d'Or Golf", "S'Horta", '71', '\u20AC99-132', '6/10', '3.5', 'East coast views, strong back nine'],
           ['Capdepera Golf', 'Arta', '72', '\u20AC85-135', '7/10', '3.5', 'Strong back nine and standout mountain hole'],
           ['Canyamel Golf', 'Capdepera', '73', '\u20AC85-145', '6/10', '4.0', 'Most photographed, east coast'],
-          ['Golf Pollensa', 'Pollensa', '35 (9H)', '\u20AC55-65', '4/10', '3.5', 'Easy warm-up, Tramuntana views'],
+          ['Golf Pollensa', 'Pollensa', '35 (9H)', '\u20AC65-75', '4/10', '3.5', 'Easy warm-up, Tramuntana views'],
           ['Palma Pitch & Putt', 'Central Palma', '27 (9H)', '\u20AC20-30', '2/10', '3.0', 'Beginners, approach practice'],
           ['Reserva Rotana', 'Manacor', '36 (9H)', 'Hotel guests only', '6/10', '3.5', 'Stay-and-play, private estate'],
         ],

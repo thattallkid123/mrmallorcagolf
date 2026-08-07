@@ -1125,7 +1125,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "€115-220",
+              "€115-230",
               "Green fees 2026"
             ],
             [
@@ -1290,7 +1290,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "€115-220",
+              "€115-230",
               "Greenfee 2026"
             ],
             [
@@ -1455,7 +1455,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "€115-220",
+              "€115-230",
               "Green fees 2026"
             ],
             [
@@ -1618,7 +1618,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "EUR 115-220",
+              "EUR 115-230",
               "Greenfees 2026"
             ],
             [
@@ -1783,7 +1783,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "EUR 115-220",
+              "EUR 115-230",
               "Greenfees 2026"
             ],
             [
@@ -1948,7 +1948,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "EUR 115-220",
+              "EUR 115-230",
               "2026年果岭费"
             ],
             [

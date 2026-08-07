@@ -285,7 +285,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['Peak €220 / Low €115', '2026 price guide'],
+            ['Peak €230 / Low €115', '2026 price guide'],
             ['7/10', 'Difficulty'],
             ['58', 'Bunkers'],
             ['55 km', 'From Palma'],

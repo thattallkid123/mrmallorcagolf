@@ -27,7 +27,7 @@ export const GUIDES_CONTENT = {
       "title": "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)",
       "intro": "The course I take people to when I want them to come home with a story. The lighthouse changes everything.",
       "readTime": "7 min read",
-      "keywords": "Coastal · Par 72 · €115-220 · Rolex Challenge Tour Grand Final"
+      "keywords": "Coastal · Par 72 · €115-230 · Rolex Challenge Tour Grand Final"
     },
     {
       "slug": "son-gual-review",
@@ -101,7 +101,7 @@ export const GUIDES_CONTENT = {
       "title": "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
       "intro": "Mountain views above Palma, tighter driving lines than people expect, and one of the most distinctive layouts at this price point on the island.",
       "readTime": "5 min read",
-      "keywords": "Mountain course - Par 70 - €80-100 - 20 min from Palma"
+      "keywords": "Mountain course - Par 70 - €90-110 - 20 min from Palma"
     },
     {
       "slug": "play-with-a-pro-explained",

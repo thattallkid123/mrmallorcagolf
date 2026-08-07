@@ -157,7 +157,7 @@ export const HOME_CONTENT = {
         "meta": [
           "Coastal",
           "Par 72 · 61 Yellow 6,193m",
-          "€115-220"
+          "€115-230"
         ],
         "stars": "★★★★★",
         "difficulty": "7/10 Difficulty",

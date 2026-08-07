@@ -22,7 +22,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Club de Golf Alcanada - análisis honesto de un Profesional PGA (2026)",
         "intro": "El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia. El faro lo cambia todo.",
         "readTime": "7 min",
-        "keywords": "Costa · Par 72 · €115-220 · Rolex Challenge Tour Grand Final"
+        "keywords": "Costa · Par 72 · €115-230 · Rolex Challenge Tour Grand Final"
       },
       {
         "slug": "son-gual-review",
@@ -84,7 +84,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)",
         "intro": "Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.",
         "readTime": "5 min de lectura",
-        "keywords": "Montaña · Par 70 · €80-100 · 20 min desde Palma"
+        "keywords": "Montaña · Par 70 · €90-110 · 20 min desde Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -174,7 +174,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Der Platz, zu dem ich Leute bringe, wenn ich möchte, dass sie mit einer Geschichte nach Hause kommen. Der Leuchtturm verändert alles.",
         "readTime": "7 Min.",
-        "keywords": "Küste · Par 72 · €115-220 · Rolex Challenge Tour Grand Final"
+        "keywords": "Küste · Par 72 · €115-230 · Rolex Challenge Tour Grand Final"
       },
       {
         "slug": "son-gual-review",
@@ -236,7 +236,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Bergblicke über Palma, engere Abschlagslinien als man erwartet und eines der eigenständigsten Layouts der Insel in dieser Preisklasse.",
         "readTime": "5 Min. Lesezeit",
-        "keywords": "Bergplatz · Par 70 · €80-100 · 20 Min. von Palma"
+        "keywords": "Bergplatz · Par 70 · €90-110 · 20 Min. von Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -325,7 +325,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Club de Golf Alcanada - avis honnête d'un Professionnel PGA (2026)",
         "intro": "Le parcours où j'emmène les gens quand je veux qu'ils rentrent avec une histoire. Le phare change tout.",
         "readTime": "7 min",
-        "keywords": "Côtier · Par 72 · €115-220 · Rolex Challenge Tour Grand Final"
+        "keywords": "Côtier · Par 72 · €115-230 · Rolex Challenge Tour Grand Final"
       },
       {
         "slug": "son-gual-review",
@@ -387,7 +387,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
         "intro": "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
         "readTime": "5 min de lecture",
-        "keywords": "Montagne · Par 70 · €80-100 · 20 min de Palma"
+        "keywords": "Montagne · Par 70 · €90-110 · 20 min de Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -477,7 +477,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Club de Golf Alcanada - eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "De baan waar ik mensen naartoe breng als ik wil dat ze met een verhaal thuiskomen. De vuurtoren verandert alles.",
         "readTime": "7 min",
-        "keywords": "Kustbaan · Par 72 · €115-220 · Rolex Challenge Tour Grand Final"
+        "keywords": "Kustbaan · Par 72 · €115-230 · Rolex Challenge Tour Grand Final"
       },
       {
         "slug": "son-gual-review",
@@ -539,7 +539,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)",
         "intro": "Bergzichten boven Palma, strakkere drivinglijnen dan je verwacht en een van de meest karaktervolle layouts op het eiland in deze prijsklasse.",
         "readTime": "5 min leestijd",
-        "keywords": "Bergbaan · Par 70 · €80-100 · 20 min van Palma"
+        "keywords": "Bergbaan · Par 70 · €90-110 · 20 min van Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -629,7 +629,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Club de Golf Alcanada - ärlig recension av en PGA Professional (2026)",
         "intro": "Banan jag tar folk till när jag vill att de ska åka hem med en historia. Fyren förändrar allt.",
         "readTime": "7 min",
-        "keywords": "Kustbana · Par 72 · €115-220 · Rolex Challenge Tour Grand Final"
+        "keywords": "Kustbana · Par 72 · €115-230 · Rolex Challenge Tour Grand Final"
       },
       {
         "slug": "son-gual-review",
@@ -691,7 +691,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: en ärlig recension av en PGA-proffs (2026)",
         "intro": "Bergsvyer ovanför Palma, tajtare utslagslinjer än man tror och en av öns mest personliga banlayouter i den här prisklassen.",
         "readTime": "5 min läsning",
-        "keywords": "Bergsbana · Par 70 · €80-100 · 20 min från Palma"
+        "keywords": "Bergsbana · Par 70 · €90-110 · 20 min från Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -781,7 +781,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "阿尔卡纳达高尔夫球场 - PGA 职业教练诚实评测（2026）",
         "intro": "我带客人来打球时，最希望他们能带着故事回家的球场。灯塔改变了一切。",
         "readTime": "7分钟",
-        "keywords": "海滨球场 · 标准杆72 · EUR 115-220 · 劳力士挑战巡回赛总决赛"
+        "keywords": "海滨球场 · 标准杆72 · EUR 115-230 · 劳力士挑战巡回赛总决赛"
       },
       {
         "slug": "son-gual-review",
@@ -843,7 +843,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）",
         "intro": "帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。",
         "readTime": "5分钟",
-        "keywords": "山地球场 · 标准杆70 · EUR 80-100 · 距帕尔马20分钟"
+        "keywords": "山地球场 · 标准杆70 · EUR 90-110 · 距帕尔马20分钟"
       },
       {
         "slug": "play-with-a-pro-explained",

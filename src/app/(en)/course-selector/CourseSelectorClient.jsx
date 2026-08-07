@@ -67,7 +67,7 @@ const COURSES = [
   {
     name: 'Club de Golf Alcanada',
     location: "Port d'Alcudia",
-    fees: 'Peak €220 / Low €115',
+    fees: 'Peak €230 / Low €115',
     href: '/guides/alcanada-review',
     bestFor: ['advanced', 'intermediate', 'scenery', 'premium', 'one', 'week'],
     take: 'The scenic anchor course. The lighthouse is visible for most of the round, but the bunkering and greens still need proper attention.',
@@ -99,7 +99,7 @@ const COURSES = [
   {
     name: 'Golf Son Termes',
     location: 'Bunyola',
-    fees: 'Peak €100 / Low €80',
+    fees: 'Peak €110 / Low €90',
     href: '/guides/son-termes-review',
     bestFor: ['intermediate', 'scenery', 'value', 'week'],
     take: 'Shorter and more rugged, with Tramuntana mountain context on every hole. Buggy recommended, but the setting does a lot of work.',
@@ -115,7 +115,7 @@ const COURSES = [
   {
     name: 'Golf Pollensa',
     location: 'Pollensa',
-    fees: 'Peak €65 / Low €55 (9 holes)',
+    fees: 'Peak €75 / Low €65 (9 holes)',
     href: '/golf-courses',
     bestFor: ['beginner', 'value', 'walkability', 'one'],
     take: 'Nine holes, lighter commitment, and good value. Useful when you want golf without building the whole day around it.',
