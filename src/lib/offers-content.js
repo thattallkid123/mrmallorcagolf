@@ -39,9 +39,9 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'Signature Day',
-        contactPrice: 'From €3,000+',
+        contactPrice: 'On request',
         structuredName: 'Signature Day',
-        structuredDescription: 'Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons planned around you before the day. From €3,000+ on enquiry.',
+        structuredDescription: 'A privately arranged golf day with Andy Griffiths, a post-round recovery and sports-performance session with John Brazier, private transfers, and a coordinated evening. Pricing confirmed after the first conversation.',
       },
     },
   },
