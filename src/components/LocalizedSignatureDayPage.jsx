@@ -31,13 +31,13 @@ export default function LocalizedSignatureDayPage({ locale, content }) {
               <p className="pwap-hero__price">{content.price}</p>
               <div className="pwap-hero__actions">
                 <Link href={contactHref} className="btn btn--gold">{content.primaryCta}</Link>
-                <a href="#signature-day-included" className="btn btn--outline-white">{content.secondaryCta}</a>
+                <a href="#the-day" className="btn btn--outline-white">{content.secondaryCta}</a>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="pwap-day" id="signature-day-included">
+        <section className="pwap-day" id="the-day">
           <div className="pwap-day__left reveal">
             <p className="eyebrow">{s.introEyebrow}</p>
             <h2 className="serif-display pwap-section-title">{s.introTitle}</h2>

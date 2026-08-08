@@ -340,7 +340,9 @@ export const HOME_CONTENT = {
         ],
         "note": "Personalised from the ground up. Transfers, caddy, golf physio, private chef, videographer, and other add-ons can be planned around you before the day.",
         "cta": "Enquire",
-        "href": "/contact"
+        "href": "/contact",
+        "detailHref": "/signature-day",
+        "detailLabel": "See full details"
       },
       {
         "tier": "Trip Planning",

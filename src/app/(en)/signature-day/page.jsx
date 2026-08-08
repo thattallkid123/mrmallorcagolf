@@ -1,4 +1,5 @@
 import SignatureDayView from '../signature-day/SignatureDayView'
+import PageLayout from '../../../components/PageLayout'
 import { buildPageMetadata } from '../../../lib/page-metadata'
 
 export const metadata = buildPageMetadata('/signature-day', 'en', {
@@ -9,5 +10,9 @@ export const metadata = buildPageMetadata('/signature-day', 'en', {
 })
 
 export default function SignatureDay() {
-  return <SignatureDayView />
+  return (
+    <PageLayout lang="en">
+      <SignatureDayView />
+    </PageLayout>
+  )
 }

@@ -243,7 +243,9 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Precio bajo consulta.",
           "cta": "Ver precios",
-          "href": "/es/contact"
+          "href": "/es/contact",
+          "detailHref": "/signature-day",
+          "detailLabel": "Ver todos los detalles"
         },
         {
           "tier": "Planificación del viaje",
@@ -565,7 +567,9 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Preis auf Anfrage.",
           "cta": "Preise ansehen",
-          "href": "/de/contact"
+          "href": "/de/contact",
+          "detailHref": "/signature-day",
+          "detailLabel": "Alle Details ansehen"
         },
         {
           "tier": "Reiseplanung",
@@ -887,7 +891,9 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Tarif sur demande.",
           "cta": "Voir les tarifs",
-          "href": "/fr/contact"
+          "href": "/fr/contact",
+          "detailHref": "/signature-day",
+          "detailLabel": "Voir tous les details"
         },
         {
           "tier": "Planification du séjour",
@@ -1208,7 +1214,9 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Prijs op aanvraag.",
           "cta": "Bekijk prijzen",
-          "href": "/nl/contact"
+          "href": "/nl/contact",
+          "detailHref": "/signature-day",
+          "detailLabel": "Alle details bekijken"
         },
         {
           "tier": "Reisplanning",
@@ -1529,7 +1537,9 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Pris på förfrågan.",
           "cta": "Se priser",
-          "href": "/sv/contact"
+          "href": "/sv/contact",
+          "detailHref": "/signature-day",
+          "detailLabel": "Se alla detaljer"
         },
         {
           "tier": "Reseplanering",
@@ -1858,7 +1868,9 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "价格面议。",
           "cta": "查看价格",
-          "href": "/zh/contact"
+          "href": "/zh/contact",
+          "detailHref": "/signature-day",
+          "detailLabel": "\u67e5\u770b\u5b8c\u6574\u8be6\u60c5"
         },
         {
           "tier": "行程规划",
