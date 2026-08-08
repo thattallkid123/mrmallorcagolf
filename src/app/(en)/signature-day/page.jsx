@@ -3,9 +3,9 @@ import PageLayout from '../../../components/PageLayout'
 import { buildPageMetadata } from '../../../lib/page-metadata'
 
 export const metadata = buildPageMetadata('/signature-day', 'en', {
-  title: 'Signature Day Mallorca | Premium Golf Day with Physio, Transfers & Dinner',
+  title: 'Signature Day Mallorca | Private Golf, Recovery & Dinner',
   description:
-    'A premium Mallorca golf day built around the round, the body, and the evening. Private golf with Andy Griffiths, golf physio with John Brazier, private transfers, and dinner. From €3,000.',
+    'A privately arranged Mallorca golf day with Andy Griffiths, a post-round recovery and sports-performance session with John Brazier, private transfers, and a coordinated evening.',
   robots: { index: true, follow: true },
 })
 

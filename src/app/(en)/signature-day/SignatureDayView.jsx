@@ -1,14 +1,16 @@
 'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import StickyMobileCta from '../../../components/StickyMobileCta'
 import ScrollDepthTracker from '../../../components/ScrollDepthTracker'
+import StickyMobileCta from '../../../components/StickyMobileCta'
 
 const SIGNATURE_DAY_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Signature Day Mallorca',
-  description: 'A premium Mallorca golf day with 18 holes alongside Andy Griffiths (PGA Advanced Professional), post-round golf physio with John Brazier, private transfers, and private dinner at your hotel.',
+  description:
+    'A privately arranged Mallorca golf day with 18 holes alongside Andy Griffiths, a post-round recovery and sports-performance session with John Brazier, private transfers, and a coordinated evening.',
   url: 'https://www.mrmallorcagolf.com/signature-day',
   provider: {
     '@type': 'Organization',
@@ -17,403 +19,315 @@ const SIGNATURE_DAY_SCHEMA = {
   },
   areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
   serviceType: 'Premium private golf day',
-  offers: {
-    '@type': 'Offer',
-    price: '3000',
-    priceCurrency: 'EUR',
-    priceSpecification: {
-      '@type': 'PriceSpecification',
-      price: 3000,
-      priceCurrency: 'EUR',
-      description: 'From €3,000 per day. Exact price depends on course selection, group size, and add-ons.',
-      minPrice: 3000,
-    },
-    url: 'https://www.mrmallorcagolf.com/contact',
-    availability: 'https://schema.org/InStock',
-  },
 }
+
+const DAY_STAGES = [
+  {
+    time: 'Before the day',
+    title: 'Plan and confirm',
+    body: 'I select the course with you, arrange the tee time and transfers, and coordinate the evening. You receive one clear proposal before anything is booked.',
+  },
+  {
+    time: 'The round',
+    title: '18 holes together',
+    body: 'I play alongside you for the full round, watching the decisions, patterns, and movement that only show up under real playing conditions. I take notes throughout.',
+  },
+  {
+    time: 'After the round',
+    title: 'Session with John Brazier',
+    body: 'John works in complementary and alternative medicine, recovery, and sports performance. He uses the observations from the round to examine the physical patterns behind what we saw.',
+  },
+  {
+    time: 'The debrief',
+    title: 'One connected plan',
+    body: 'We bring the golf and physical observations together. You leave knowing what happened, what may be contributing to it, and what to work on first.',
+  },
+  {
+    time: 'The evening',
+    title: 'A properly arranged finish',
+    body: 'The day finishes with dinner at a recommended hotel or restaurant, or with a private-chef arrangement where suitable. The plan is built around your group and where you are staying.',
+  },
+]
+
+const INCLUDED = [
+  'Course and day planning',
+  'Private tee time',
+  '18 holes with Andy',
+  'Session with John Brazier',
+  'Connected debrief and priorities',
+  'Private transfers',
+  'Evening coordination',
+]
+
+const OPTIONAL_EXTRAS = [
+  {
+    title: 'Caddy',
+    text: 'A suitable caddy can be requested where the course, date, and availability allow.',
+  },
+  {
+    title: 'Videography and photography',
+    text: 'Professional coverage can be added if you want the day documented.',
+  },
+  {
+    title: 'Premium club hire',
+    text: 'The best suitable equipment available at the course can be arranged before you arrive.',
+  },
+  {
+    title: 'Multi-day planning',
+    text: 'The Signature Day can sit inside a wider Mallorca itinerary with other courses, hotels, and island experiences.',
+  },
+]
+
+const RECOMMENDED_HOTELS = [
+  { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa opens September 2026.' },
+  { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel and Llum i Sal.' },
+  { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular, with its fire-led Mediterranean cooking.' },
+  { name: 'Aethos Mallorca', note: 'Peguera. ONDA and its sea-facing setting.' },
+  { name: 'La Residencia, A Belmond Hotel', note: 'Deia. El Olivo and Restaurante Miro.' },
+]
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
 }
 
-const DAY_ARC = [
-  {
-    time: 'Before the round',
-    title: 'Transfer and course briefing',
-    body: 'Private transfer from your hotel to the course. I meet you on arrival. Before we play, I want to understand how your game works, what you have been working on, and what you want from the day. The briefing is short and specific. No generic welcome pack.',
-    img: '/images/andy-on-course-smile.webp',
-    imgAlt: 'Andy Griffiths at the course',
-  },
-  {
-    time: 'The round',
-    title: '18 holes with me',
-    body: 'One course, chosen for your game and the occasion. I play alongside you for the full 18. Course management, shot selection, and the patterns in your game that only show up in a real round. I keep notes throughout on what I am seeing, the decisions you are making, and where the scoring opportunities are being missed.',
-    img: '/images/andy-coaching-client.webp',
-    imgAlt: 'Andy coaching a client on the green',
-  },
-  {
-    time: 'After the round',
-    title: 'Physio with John Brazier',
-    body: 'John Brazier, The Golf Doctor, picks up exactly where the round left off. I hand him my notes from the 18 holes: the movement patterns I saw, the compensations that showed up under pressure, the swing tendencies that became scoring problems. John adds the physical picture. Together we give you a specific, connected prescription, not two separate opinions.',
-    img: '/images/coaching-action.webp',
-    imgAlt: 'Golf coaching in action',
-  },
-  {
-    time: 'The debrief',
-    title: 'What you take home',
-    body: 'Before the evening, we sit down together. You leave with a clear picture of what happened on the course, why it happened physically, and what to work on. Not a generic feedback sheet. A set of specific, connected observations from a round you actually played.',
-    img: '/images/client-son-gual.webp',
-    imgAlt: 'Client at Son Gual after the round',
-  },
-  {
-    time: 'The evening',
-    title: 'Dinner at your hotel',
-    body: 'The day ends at your hotel. I coordinate directly with your concierge team to arrange the evening around what your property does well: a chef\'s table, a private terrace, or a dedicated dining arrangement. The food photos on this page are from restaurants and experiences I have eaten at and can recommend on the island.',
-    img: '/images/client-group-alcanada.webp',
-    imgAlt: 'Group day at Alcanada',
-  },
-  {
-    time: 'Optional',
-    title: 'Welcome and extras',
-    body: 'A small welcome from the course on arrival where available. Caddy can be arranged where the course and date allow and will be confirmed at booking. Videography and photo capture can be added if you want the day documented. Premium club hire can be pre-arranged at the course if needed.',
-    img: '/images/alcanada.webp',
-    imgAlt: 'Alcanada golf course Mallorca',
-  },
-]
-
-const WHAT_IS_INCLUDED = [
-  ['Course selection', 'Personally chosen for your game, your group, and the occasion. Members-only courses available where appropriate.'],
-  ['Private tee time', 'Booked and handled before you arrive, with the spare slots reserved and priced in, so the round is kept for your party only.'],
-  ['18 holes with Andy', 'PGA Advanced Professional, Trackman Master, TPI Level 3. I keep notes throughout on what I am seeing in your game.'],
-  ['Combined prescription from Andy and John', 'My on-course observations and John\'s physical findings are connected into one specific set of recommendations. Not two separate sessions.'],
-  ['Golf physio with John Brazier', 'Post-round session with The Golf Doctor. Movement screening, recovery, and personalised take-home recommendations.'],
-  ['Private transfers', 'To and from the course, coordinated with your hotel.'],
-  ['Evening dinner', 'Private dining arrangement at your hotel, coordinated between me and your concierge team.'],
-]
-
-const OPTIONAL_EXTRAS = [
-  { title: 'Caddy', text: 'I am working to include a caddy as standard. Will be confirmed at booking. Local knowledge, club selection, and course reads for the full round.' },
-  { title: 'Videographer', text: 'A dedicated videographer for the day. Swing footage, course highlights, and content you can keep and use.' },
-  { title: 'Premium club hire', text: 'The best available equipment at the course, pre-arranged before you arrive.' },
-  { title: 'Welcome pack', text: 'A small selection from the course or island on arrival where available. Not always possible but included where it can be.' },
-  { title: 'Multi-day package', text: 'The Signature Day as one part of a planned trip. I can build the full itinerary around it, including other courses and days on the island.' },
-]
-
-const HOTEL_PARTNERS = [
-  { name: 'Mandarin Oriental Punta Negra', note: 'Calvià. Matsuhisa, Leña by Dani García.' },
-  { name: 'Four Seasons Resort at Formentor', note: 'Cap de Formentor. Llum i Sal, Mel. Alcanada 35 minutes.' },
-  { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular by Ramón Freixa. Alcanada 20 minutes.' },
-  { name: 'Aethos Mallorca', note: 'Peguera. ONDA seafood terrace. Golf de Andratx 10 minutes.' },
-  { name: 'Belmond La Residencia', note: 'Deià. Son Marroig. Alcanada 40 minutes.' },
-]
-
 export default function SignatureDayView() {
   return (
     <>
-    <JsonLd data={SIGNATURE_DAY_SCHEMA} />
-    <ScrollDepthTracker />
-    <main>
-      <section className="pwap-hero pwap-hero--tall">
-        <div className="pwap-hero__bg" aria-hidden="true">
-          <Image
-            src="/images/andy-walking-course.webp"
-            alt="Andy Griffiths on the golf course in Mallorca at golden hour"
-            fill
-            priority
-            quality={88}
-            sizes="100vw"
-            className="pwap-hero__image"
-          />
-          <div className="pwap-hero__overlay" />
-        </div>
-        <div className="pwap-hero__inner">
-          <div className="pwap-hero__content">
-            <p className="breadcrumb">
-              <Link href="/" className="breadcrumb__link">Home</Link>
-              &nbsp;/&nbsp;
-              <Link href="/play-with-a-pro" className="breadcrumb__link">Play With A Pro</Link>
-              &nbsp;/&nbsp;
-              <span>Signature Day</span>
-            </p>
-            <p className="eyebrow eyebrow--gold pwap-hero__eyebrow">The Complete Experience, Mallorca</p>
-            <h1 className="serif-display pwap-hero__title">
-              A private golf day<br />
-              built around the round, the body, and the evening.
-            </h1>
-            <p className="pwap-hero__body">
-              Golf with me, a physio session with John Brazier, private transfers, and dinner at a partner hotel. Every part is coordinated in advance so the day feels deliberate, personal, and worth the premium. Videography and photo capture can be added if you want the day documented.
-            </p>
-            <p className="pwap-hero__price">From €3,000</p>
-            <div className="pwap-hero__actions">
-              <Link href="/contact" className="btn btn--gold">Enquire</Link>
-              <a href="#the-day" className="btn btn--outline-white">See what is included</a>
+      <JsonLd data={SIGNATURE_DAY_SCHEMA} />
+      <ScrollDepthTracker />
+      <main className="signature-page">
+        <section className="pwap-hero pwap-hero--tall">
+          <div className="pwap-hero__bg" aria-hidden="true">
+            <Image
+              src="/images/andy-walking-course.webp"
+              alt="Andy Griffiths on the golf course in Mallorca at golden hour"
+              fill
+              priority
+              quality={88}
+              sizes="100vw"
+              className="pwap-hero__image"
+            />
+            <div className="pwap-hero__overlay" />
+          </div>
+          <div className="pwap-hero__inner signature-hero__inner">
+            <div className="pwap-hero__content">
+              <p className="breadcrumb">
+                <Link href="/" className="breadcrumb__link">Home</Link>
+                &nbsp;/&nbsp;
+                <Link href="/play-with-a-pro" className="breadcrumb__link">Play With A Pro</Link>
+                &nbsp;/&nbsp;
+                <span>Signature Day</span>
+              </p>
+              <p className="eyebrow eyebrow--gold pwap-hero__eyebrow">The complete experience, Mallorca</p>
+              <h1 className="serif-display pwap-hero__title">
+                A private golf day<br />
+                built around the round, the body, and the evening.
+              </h1>
+              <p className="pwap-hero__body">
+                Eighteen holes with me, a post-round session with John Brazier, private transfers, and an evening arranged around your group. One person coordinates the whole day from the first conversation.
+              </p>
+              <p className="pwap-hero__price">Pricing tailored to the day</p>
+              <div className="pwap-hero__actions">
+                <Link href="/contact" className="btn btn--gold">Enquire</Link>
+                <a href="#the-day" className="btn btn--outline-white">Explore the day</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="pwap-day" id="the-day">
-        <div className="pwap-day__left reveal">
-          <p className="eyebrow">What this is</p>
-          <h2 className="serif-display pwap-section-title">
-            A premium golf day, not just a longer round.
-          </h2>
-          <p>
-            I play 18 holes with you, watch how your game behaves under real conditions, and take notes throughout. After the round, John Brazier examines the physical side of what I observed. Between us, you leave with one connected picture of your game: what happened on the course, why it is happening in your body, and what to do about it.
-          </p>
-          <p>
-            The day also includes private transfers, a welcome from the course on arrival where possible, and dinner at a partner hotel that evening. I coordinate the whole thing directly so you do not have to.
-          </p>
-          <p>
-            It is a more complete version of the on-course day. The round is the same. The difference is everything around it.
-          </p>
-          <div className="pull-quote">
-            <p>&ldquo;The fastest improvements happen on the course, not the range. Real conditions, real decisions, that kind of progress tends to stick.&rdquo;</p>
+        <section className="signature-section" id="the-day">
+          <div className="signature-inner signature-split signature-split--overview">
+            <div className="signature-copy reveal">
+              <p className="eyebrow">What this is</p>
+              <h2 className="serif-display signature-title">A complete day, not a collection of add-ons.</h2>
+              <p>
+                I play the full 18 holes with you and watch how your game behaves under real conditions. After the round, John examines the recovery and physical-performance side of what we observed. We then bring both views together into a practical set of priorities.
+              </p>
+              <p>
+                Around the golf, I coordinate the tee time, private transfers, and an evening at a recommended hotel or restaurant, or with a private chef where that suits the occasion better.
+              </p>
+              <p className="signature-principle">
+                The fastest improvements often happen on the course, where the decisions and movement are real. The rest of the day is designed to make those observations useful.
+              </p>
+            </div>
+
+            <div className="signature-inclusions reveal">
+              <div className="signature-media signature-media--overview">
+                <Image
+                  src="/images/andy-coaching-swing.webp"
+                  alt="Andy Griffiths coaching a golfer in Mallorca"
+                  fill
+                  quality={88}
+                  sizes="(max-width: 768px) 100vw, 520px"
+                />
+              </div>
+              <div className="signature-inclusions__body">
+                <h3 className="serif-display">What the core day covers</h3>
+                <ul className="signature-checklist">
+                  {INCLUDED.map((title) => (
+                    <li key={title}>
+                      <span aria-hidden="true" />
+                      <p><strong>{title}</strong></p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="pwap-day__right reveal">
-          <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '2rem' }}>
-            <Image
-              src="/images/andy-coaching-swing.webp"
-              alt="Andy Griffiths coaching a golfer in Mallorca"
-              fill
-              quality={88}
-              sizes="(max-width: 768px) 100vw, 560px"
-              style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
-            />
-          </div>
-          <div className="included">
-            <h3>What is included</h3>
-            <ul className="included-list">
-              {WHAT_IS_INCLUDED.map(([title, detail]) => (
-                <li key={title} className="included-item">
-                  <span className="included-dot"></span>
-                  <p><strong>{title}</strong><br /><span style={{ fontWeight: 400 }}>{detail}</span></p>
+        </section>
+
+        <section className="signature-section signature-section--warm">
+          <div className="signature-inner">
+            <div className="signature-heading reveal">
+              <p className="eyebrow">How the day runs</p>
+              <h2 className="serif-display signature-title">Five stages. One connected experience.</h2>
+              <p>Each stage has a clear purpose, and the observations from the round carry through the rest of the day.</p>
+            </div>
+            <ol className="signature-timeline">
+              {DAY_STAGES.map((stage, index) => (
+                <li key={stage.title} className="reveal">
+                  <span className="signature-timeline__number">{String(index + 1).padStart(2, '0')}</span>
+                  <p className="eyebrow">{stage.time}</p>
+                  <h3 className="serif-display">{stage.title}</h3>
+                  <p>{stage.body}</p>
                 </li>
               ))}
-            </ul>
+            </ol>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-        <div className="pwap-day__left reveal">
-          <p className="eyebrow">Who this is for</p>
-          <h2 className="serif-display pwap-section-title">High-touch, premium, and built for a proper occasion.</h2>
-          <div className="included" style={{ marginTop: '1.25rem' }}>
-            <h3>Ideal for</h3>
-            <ul className="included-list">
-              <li className="included-item"><span className="included-dot"></span><p><strong>Golfers who want the day to feel special</strong><br /><span style={{ fontWeight: 400 }}>A serious private booking, not a standard tee time with a few extras bolted on.</span></p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>Players who want a clear takeaway</strong><br /><span style={{ fontWeight: 400 }}>You get a connected read on the round, the body, and the priorities afterward.</span></p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>Groups marking an occasion</strong><br /><span style={{ fontWeight: 400 }}>Ideal for a trip that should feel thoughtful, memorable, and well handled.</span></p></li>
-            </ul>
-          </div>
-          <div className="included" style={{ marginTop: '1rem' }}>
-            <h3>Not ideal for</h3>
-            <ul className="included-list">
-              <li className="included-item"><span className="included-dot"></span><p><strong>Lowest-price shoppers</strong><br /><span style={{ fontWeight: 400 }}>This is a premium day and is priced accordingly.</span></p></li>
-              <li className="included-item"><span className="included-dot"></span><p><strong>Anyone looking for a quick add-on</strong><br /><span style={{ fontWeight: 400 }}>If you just want a tee time, the standard Play With A Pro route is the better fit.</span></p></li>
-            </ul>
-          </div>
-          <p style={{ marginTop: '1.25rem', fontSize: '0.92rem', lineHeight: 1.7, color: 'var(--charcoal)' }}>
-            The premium price reflects the full coordination: golf, physio, transfers, dinner, and the level of attention around the day. It is meant to feel like a properly built experience, not a standard round with a few expensive extras attached.
-          </p>
-        </div>
-        <div className="pwap-day__right reveal">
-          <div className="pull-quote">
-            <p>&ldquo;After just 18 holes together, I&rsquo;ve discovered a new ceiling to my potential.&rdquo;</p>
-          </div>
-          <div className="pwap-course-note">
-            <p className="eyebrow">Why people book it</p>
-            <p>
-              The value here is not just the round. It is the coordination, the physical follow-through, the dinner, and the feeling that the whole day has been built around the guest rather than assembled from separate services.
-            </p>
-            <p style={{ marginBottom: 0 }}>
-              That is what makes the price feel premium instead of arbitrary.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="how">
-        <div className="how__header reveal">
-          <p className="eyebrow">How the day runs</p>
-          <h2 className="serif-display">Six parts. All connected.</h2>
-          <p>Every element feeds the next. The notes from the round go into the physio session. The physio findings come back to me. You leave with one prescription, not six separate experiences.</p>
-        </div>
-        <div className="how__steps">
-          {DAY_ARC.map((step, i) => (
-            <div key={step.title} className={`how__step reveal${i > 0 ? ` reveal-delay-${i % 3}` : ''}`}>
-              <span className="how__num">{String(i + 1).padStart(2, '0')}</span>
-              <p className="eyebrow" style={{ marginBottom: '0.25rem', marginTop: '0.5rem' }}>{step.time}</p>
-              <h3 className="serif-display" style={{ fontSize: '1.2rem', fontWeight: 400, marginBottom: '0.75rem' }}>{step.title}</h3>
-              <p style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>{step.body}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-        <div className="pwap-day__left reveal">
-          <p className="eyebrow">Why this is different</p>
-          <h2 className="serif-display pwap-section-title">One prescription. Two sets of eyes.</h2>
-          <p>
-            Most golfers who get a coaching session and a physio session get two separate opinions that never meet. On the Signature Day, they do.
-          </p>
-          <p>
-            During the round I watch everything: which compensations appear under pressure, where the decision-making breaks down, which patterns cause the scoring problems. After the round, I hand those notes directly to John. He examines the physical side of what I saw. A tight hip that explains the swing path. A shoulder restriction that makes the follow-through uncomfortable. A movement pattern that looks like a technical problem but is actually a flexibility issue.
-          </p>
-          <p>
-            By the time we debrief, you have one picture. What I saw on the course, what John found in the body, and what to work on in order of importance.
-          </p>
-        </div>
-        <div className="pwap-day__right reveal">
-          <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '2rem' }}>
-            <Image
-              src="/images/client-son-gual2.webp"
-              alt="Client round at Son Gual Mallorca"
-              fill
-              quality={88}
-              sizes="(max-width: 768px) 100vw, 560px"
-              style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
-            />
-          </div>
-          <div className="pwap-course-note">
-            <p className="eyebrow">John Brazier, The Golf Doctor</p>
-            <p>John is based in Mallorca and works with golfers across all levels. He is known for connecting physical findings to what actually shows up on the course. The combination of his work and mine means the recommendations you take home are specific, connected, and grounded in a round you actually played.</p>
-            <p style={{ marginTop: '0.75rem', fontSize: '0.9rem' }}>John can also work with clients outside the Signature Day. Ask when you enquire if you want to add a session to a standard Play With A Pro booking.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-        <div className="pwap-day__left reveal">
-          <p className="eyebrow">The course</p>
-          <h2 className="serif-display pwap-section-title">Chosen for the occasion.</h2>
-          <p>
-            Son Gual and Alcanada are my primary venues for a serious full day. Son Gual is my favourite course in Mallorca: Thomas Himmel's 2007 design, the closing stretch from 15 through 18 is among the best in European golf. Alcanada is Robert Trent Jones Jr. at his most scenic, with the lighthouse visible for most of the round.
-          </p>
-          <p>
-            The right course depends on you, your group, and what you want from the day. I will recommend honestly and explain why.
-          </p>
-          <Link href="/golf-courses" className="pwap-course-note__link" style={{ marginTop: '1rem', display: 'inline-block' }}>See all 24 courses on the island</Link>
-        </div>
-        <div className="pwap-day__right reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-            <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '3/4' }}>
-              <Image src="/images/son-gual.jpg" alt="Son Gual golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover' }} />
-            </div>
-            <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '3/4' }}>
-              <Image src="/images/alcanada.jpg" alt="Alcanada golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover' }} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-        <div className="pwap-day__left reveal">
-          <p className="eyebrow">The evening</p>
-          <h2 className="serif-display pwap-section-title">Dinner at your hotel.</h2>
-          <p>
-            The Signature Day is designed to end at your hotel. I work directly with your concierge team to coordinate the evening around what your property does well: a private terrace booking, a chef's table, or a dedicated dining arrangement.
-          </p>
-          <p>
-            The photos below are from restaurants and food experiences I have had on the island. The specific arrangement depends on your hotel and what they can offer on your dates, but this is the standard to expect.
-          </p>
-          <p>
-            If you are staying at a property not on the list below, contact me. Most five-star hotels on the island can accommodate this with enough notice.
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', marginTop: '1.5rem' }}>
-            {HOTEL_PARTNERS.map(h => (
-              <div key={h.name} style={{ borderLeft: '2px solid var(--gold, #b8975a)', paddingLeft: '1rem' }}>
-                <p className="serif-display" style={{ fontSize: '1rem', fontWeight: 400, marginBottom: '0.15rem' }}>{h.name}</p>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted, #888)' }}>{h.note}</p>
+        <section className="signature-section">
+          <div className="signature-inner signature-split signature-split--feature">
+            <div className="signature-copy reveal">
+              <p className="eyebrow">Why this is different</p>
+              <h2 className="serif-display signature-title">The round and the body are considered together.</h2>
+              <p>
+                During the round I note the movement, decisions, and recurring patterns that affect your scoring. John then considers the recovery and sports-performance side of those observations, including physical restrictions or compensations that may be contributing to what appeared on the course.
+              </p>
+              <p>
+                The value is in joining those observations together. You leave with one clear order of priorities rather than separate sessions that never meet.
+              </p>
+              <div className="signature-john-note">
+                <p className="eyebrow">John Brazier</p>
+                <p>John works in complementary and alternative medicine and specialises in recovery and sports performance.</p>
+                <a href="https://drjohnbrazier.com/" target="_blank" rel="noreferrer" className="pwap-course-note__link">Read about John&apos;s work</a>
               </div>
-            ))}
+            </div>
+            <div className="signature-media signature-media--feature reveal">
+              <Image
+                src="/images/client-son-gual2.webp"
+                alt="Client round at Son Gual Mallorca"
+                fill
+                quality={88}
+                sizes="(max-width: 768px) 100vw, 520px"
+              />
+            </div>
           </div>
-        </div>
-        <div className="pwap-day__right reveal">
-          <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '4/3', marginBottom: '0.75rem' }}>
-            <Image src="/images/food/mallorca-orchard-dining.jpg" alt="Private outdoor dining in Mallorca" fill unoptimized sizes="(max-width: 768px) 100vw, 560px" style={{ objectFit: 'cover', objectPosition: 'center 40%' }} />
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
-            {[
-              { src: '/images/food/mallorca-restaurant-interior.jpg', alt: 'Mallorca restaurant interior' },
-              { src: '/images/food/mallorca-fine-dining-service.jpg', alt: 'Fine dining tableside service Mallorca' },
-              { src: '/images/food/mallorca-red-mullet.jpg', alt: 'Red mullet dish Mallorca' },
-              { src: '/images/food/mallorca-paella.jpg', alt: 'Mallorca paella' },
-            ].map((img, i) => (
-              <div key={i} style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '1/1' }}>
-                <Image src={img.src} alt={img.alt} fill unoptimized style={{ objectFit: 'cover' }} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-        <div className="pwap-day__left reveal">
-          <p className="eyebrow">Optional and additional</p>
-          <h2 className="serif-display pwap-section-title">Add what makes sense for your day.</h2>
-          <p>Not everything needs adding. These are available if you want them.</p>
-        </div>
-        <div className="pwap-day__right reveal">
-          <div className="included">
-            <ul className="included-list">
+        <section className="signature-section signature-section--soft">
+          <div className="signature-inner signature-split signature-split--feature signature-split--media-first">
+            <div className="signature-course-media reveal">
+              <div className="signature-media">
+                <Image src="/images/son-gual.jpg" alt="Son Gual golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
+              </div>
+              <div className="signature-media">
+                <Image src="/images/alcanada.jpg" alt="Alcanada golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
+              </div>
+            </div>
+            <div className="signature-copy reveal">
+              <p className="eyebrow">The course</p>
+              <h2 className="serif-display signature-title">Chosen for your game and the occasion.</h2>
+              <p>
+                Son Gual and Alcanada are my primary choices for a serious full day. Son Gual is my favourite course in Mallorca, with a particularly strong closing stretch. Alcanada is Robert Trent Jones Jr. at his most scenic, with its lighthouse visible through much of the round.
+              </p>
+              <p>
+                The right course depends on your group, your game, and what you want the day to feel like. I will recommend honestly and explain why.
+              </p>
+              <Link href="/golf-courses" className="pwap-course-note__link">Explore Mallorca&apos;s golf courses</Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="signature-section">
+          <div className="signature-inner signature-split signature-split--evening">
+            <div className="signature-copy reveal">
+              <p className="eyebrow">The evening</p>
+              <h2 className="serif-display signature-title">Dinner fitted to where you are staying.</h2>
+              <p>
+                The evening can be arranged at a recommended hotel or restaurant, or around a private chef where the property and occasion suit it. I coordinate the plan directly so it feels like the final part of the day rather than a separate reservation.
+              </p>
+              <p>
+                These are recommendations, not formal partners. The final choice depends on your hotel, your dates, and the experience you want.
+              </p>
+              <div className="signature-hotels">
+                {RECOMMENDED_HOTELS.map((hotel) => (
+                  <div key={hotel.name}>
+                    <h3 className="serif-display">{hotel.name}</h3>
+                    <p>{hotel.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="signature-dining-grid reveal">
+              {[
+                { src: '/images/food/mallorca-orchard-dining.jpg', alt: 'Private outdoor dining in Mallorca', featured: true },
+                { src: '/images/food/mallorca-restaurant-interior.jpg', alt: 'Mallorca restaurant interior' },
+                { src: '/images/food/mallorca-fine-dining-service.jpg', alt: 'Fine dining tableside service Mallorca' },
+                { src: '/images/food/mallorca-red-mullet.jpg', alt: 'Red mullet dish Mallorca' },
+                { src: '/images/food/mallorca-paella.jpg', alt: 'Mallorca paella' },
+              ].map((item) => (
+                <div key={item.src} className={'signature-media' + (item.featured ? ' signature-media--dining-feature' : '')}>
+                  <Image src={item.src} alt={item.alt} fill unoptimized sizes="(max-width: 768px) 100vw, 520px" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="signature-section signature-section--warm">
+          <div className="signature-inner">
+            <div className="signature-heading reveal">
+              <p className="eyebrow">Optional additions</p>
+              <h2 className="serif-display signature-title">Add only what improves the day.</h2>
+              <p>These can be included in the proposal where they suit the group, course, and date.</p>
+            </div>
+            <div className="signature-extras">
               {OPTIONAL_EXTRAS.map((item) => (
-                <li key={item.title} className="included-item">
-                  <span className="included-dot"></span>
-                  <p><strong>{item.title}</strong><br /><span style={{ fontWeight: 400 }}>{item.text}</span></p>
-                </li>
+                <article key={item.title} className="reveal">
+                  <h3 className="serif-display">{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
               ))}
-            </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="pwap-packages" id="pricing" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-        <div className="pwap-packages__header reveal">
-          <p className="eyebrow">Pricing</p>
-          <h2 className="serif-display pwap-section-title">Confirmed after the first conversation.</h2>
-          <p>The Signature Day starts at €3,000. The final figure depends on the course, the hotel, the number of people, and which extras you want. Everything is confirmed before you commit to anything.</p>
-          <p style={{ maxWidth: 760, margin: '0.75rem auto 0', lineHeight: 1.8, color: 'var(--charcoal)' }}>
-            What is included is the day itself: course choice, tee time, the full round, John Brazier&apos;s session, private transfers, and dinner coordination. What is separate is the green fee, lunch, and any optional extras. That split keeps the offer clear and makes the premium part of the day easy to understand.
-          </p>
-        </div>
-        <div style={{ maxWidth: 640, margin: '2rem auto 0' }} className="pwap-course-note">
-          <p className="eyebrow">Always included</p>
-          <ul style={{ listStyle: 'none', padding: 0, margin: '1rem 0 1.5rem' }}>
-            {WHAT_IS_INCLUDED.map(([title]) => (
-              <li key={title} style={{ display: 'flex', gap: '0.75rem', marginBottom: '0.5rem', fontSize: '0.95rem' }}>
-                <span style={{ color: 'var(--gold, #b8975a)', fontWeight: 500, flexShrink: 0 }}>—</span>
-                {title}
-              </li>
-            ))}
-          </ul>
-          <p style={{ fontSize: '0.875rem', color: 'var(--text-muted, #888)', marginBottom: '1.5rem' }}>Green fee, lunch, and optional extras are separate and confirmed with you before the day.</p>
-          <Link href="/contact" className="btn btn--gold">Enquire about the Signature Day</Link>
-        </div>
-      </section>
+        <section className="signature-section signature-section--pricing" id="pricing">
+          <div className="signature-inner signature-pricing reveal">
+            <div>
+              <p className="eyebrow eyebrow--gold">Pricing</p>
+              <h2 className="serif-display signature-title">Confirmed once the day has a shape.</h2>
+            </div>
+            <div>
+              <p>
+                Each Signature Day is priced after the first conversation because the course, group size, transfers, John&apos;s availability, and evening plan all affect the scope. Most days are built around a €3,000 core experience.
+              </p>
+              <p>
+                Your proposal will show exactly what is included, what is subject to availability, and any third-party costs before you commit to anything.
+              </p>
+              <Link href="/contact" className="btn btn--gold">Enquire about the Signature Day</Link>
+            </div>
+          </div>
+        </section>
 
-      <section className="pwap-final-cta reveal" style={{ borderTop: '1px solid var(--border, #e8e4dc)', textAlign: 'center', padding: '5rem 1.5rem' }}>
-        <p className="eyebrow">Ready to book</p>
-        <h2 className="serif-display" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', maxWidth: 560, margin: '0 auto 1.5rem', fontWeight: 400 }}>
-          Tell me your dates and I will come back personally.
-        </h2>
-        <p style={{ maxWidth: 480, margin: '0 auto 2rem', lineHeight: 1.75 }}>
-          Every Signature Day starts with a conversation. No automated booking. Just a direct reply within 24 hours.
-        </p>
-        <Link href="/contact" className="btn btn--gold">Get in touch</Link>
-      </section>
-
-      <StickyMobileCta
-        primaryHref="/contact"
-        primaryLabel="Enquire"
-        secondaryHref="https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20the%20Signature%20Day."
-        secondaryLabel="Message on WhatsApp"
-      />
-    </main>
+        <StickyMobileCta
+          primaryHref="/contact"
+          primaryLabel="Enquire"
+          secondaryHref="https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20the%20Signature%20Day."
+          secondaryLabel="Message on WhatsApp"
+        />
+      </main>
     </>
   )
 }

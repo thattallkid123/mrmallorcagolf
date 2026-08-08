@@ -183,13 +183,13 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       {
         "eyebrow": "Signature Day",
         "name": "Signature Day",
-        "price": "€3,000+",
+        "price": "On request",
         "note": "Everything arranged. All details confirmed before the day.",
         "features": [
           "Course, private tee time, and a fully arranged day with me",
-          "Golf physio with The Golf Doctor to work on the body and the swing issues we saw",
+          "Post-round recovery and sports-performance session with John Brazier",
           "Private transfers to and from the course",
-          "Evening dinner at a partner hotel"
+          "Dinner planning at a recommended hotel or restaurant, or with a private chef"
         ],
         "button": "Enquire →",
         "href": "/contact",
