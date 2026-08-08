@@ -2392,7 +2392,11 @@ body {
 .pwap-summary__label { margin: 0 0 0.65rem; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-family: var(--font-sans); }
 .pwap-summary__text { margin: 0; font-size: 1rem; line-height: 1.72; color: var(--charcoal); }
 
-.pwap-day { background: linear-gradient(180deg, #f7f3eb 0%, #fbfaf7 100%); padding: 104px 40px; width: min(1200px, 100%); margin: 0 auto; border-left: 1px solid var(--linen); border-right: 1px solid var(--linen); }
+.pwap-day { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.78fr); gap: clamp(48px, 7vw, 84px); align-items: start; background: linear-gradient(180deg, #f7f3eb 0%, #fbfaf7 100%); padding: 104px 40px; width: min(1200px, 100%); margin: 0 auto; border-left: 1px solid var(--linen); border-right: 1px solid var(--linen); }
+.pwap-day__left { max-width: 640px; min-width: 0; }
+.pwap-day__right { min-width: 0; }
+.pwap-day__left > p:not(.eyebrow) { font-size: 1rem; font-weight: 300; color: var(--charcoal); line-height: 1.78; margin-bottom: 1rem; text-wrap: pretty; }
+.pwap-day__left .eyebrow { margin-bottom: 0.9rem; }
 .pwap-day__lead { max-width: none; width: 100%; margin: 0; }
 .pwap-day__details { max-width: 860px; margin: 34px auto 0; }
 .pwap-day__lead > p:not(.eyebrow) { max-width: 100%; font-size: 1.02rem; font-weight: 300; color: var(--charcoal); line-height: 1.86; margin-bottom: 1.18rem; text-wrap: pretty; }
@@ -2519,7 +2523,9 @@ body {
 .tier--feature .tier__features li { color: rgba(255,255,255,0.75); }
 .tier__features li::before { content: ''; position: absolute; left: 0; top: 8px; width: 5px; height: 1px; background: var(--gold); }
 .tier--feature .tier__features li::before { background: var(--gold-light); }
+.tier__actions { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; min-height: 102px; margin-top: auto; padding-top: 28px; }
 .tier__btn { display: inline-flex; align-items: center; justify-content: center; align-self: stretch; box-sizing: border-box; min-height: 46px; font-size: 11px; font-weight: 500; letter-spacing: 0.13em; line-height: 1.25; text-align: center; text-transform: uppercase; padding: 14px 22px; background: transparent; border: 1px solid currentColor; color: var(--deep); text-decoration: none; font-family: var(--font-sans); transition: background-color 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury), color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury), box-shadow 0.35s var(--ease-luxury); margin-top: 28px; border-radius: 999px; }
+.tier__actions .tier__btn { margin-top: 0; }
 .tier--feature .tier__btn { color: var(--white); }
 .tier__btn:hover { background: var(--deep); color: var(--white); border-color: var(--deep); transform: translateY(-1px); }
 .tier--feature .tier__btn:hover { background: rgba(255,255,255,0.15); transform: translateY(-1px); }
@@ -3278,7 +3284,8 @@ select.form-control { cursor: pointer; }
   .pwap-summary { padding: 24px 20px 0; }
   .pwap-summary__inner { padding: 24px 18px; }
   .pwap-summary__grid { grid-template-columns: 1fr; gap: 10px; }
-  .pwap-day { padding: 60px 20px; }
+  .pwap-day { grid-template-columns: 1fr; gap: 34px; padding: 60px 20px; }
+  .pwap-day__left { max-width: 100%; }
   .pwap-day__details { margin-top: 28px; }
   .pwap-day__lead > p:not(.eyebrow) { max-width: 100%; font-size: 1rem; line-height: 1.84; }
   .pwap-section-title { max-width: 100%; }
@@ -3343,7 +3350,9 @@ select.form-control { cursor: pointer; }
   .tier__rule { margin-bottom: 22px; }
   .tier__features { gap: 12px; }
   .tier__features li { font-size: 0.86rem; line-height: 1.56; }
+  .tier__actions { min-height: 88px; padding-top: 20px; }
   .tier__btn { margin-top: 20px; padding: 12px 16px; font-size: 10px; }
+  .tier__actions .tier__btn { margin-top: 0; }
   .who-section { padding: 60px 20px; }
   /* Course cards: image band flush on top (vertical card is now the default) */
   .course__img-mobile { height: 200px; margin: 0; }

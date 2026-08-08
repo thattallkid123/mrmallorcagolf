@@ -317,14 +317,16 @@ export default function HomePageInner({ locale = 'en' }) {
               </ul>
               {pkg.note && <p className={`tier__note${pkg.featured ? ' tier__note--feature' : ''}`}>{pkg.note}</p>}
               {!sharedPackageCta ? (
-                <a href={pkg.href || contactHref} className="tier__btn">
-                  {pkg.cta}
-                </a>
-              ) : null}
-              {pkg.detailHref ? (
-                <a href={localizePath(pkg.detailHref, locale)} className="tier__detail-link">
-                  {pkg.detailLabel || 'See full details'}
-                </a>
+                <div className="tier__actions">
+                  <a href={pkg.href || contactHref} className="tier__btn">
+                    {pkg.cta}
+                  </a>
+                  {pkg.detailHref ? (
+                    <a href={localizePath(pkg.detailHref, locale)} className="tier__detail-link">
+                      {pkg.detailLabel || 'See full details'}
+                    </a>
+                  ) : null}
+                </div>
               ) : null}
             </div>
           ))}
