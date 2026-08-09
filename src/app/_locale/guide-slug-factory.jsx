@@ -13,8 +13,8 @@ export function createGuideSlugStaticParams() {
   return GUIDE_SLUGS.map((slug) => ({ slug }))
 }
 
-export function createGuideSlugMetadata(locale, params) {
-  const slug = params.slug
+export async function createGuideSlugMetadata(locale, params) {
+  const { slug } = await params
   if (!isPublishedGuideSlug(slug)) return {}
   if (!hasLocaleRoute(`/guides/${slug}`, locale)) return {}
 
@@ -34,8 +34,8 @@ export function createGuideSlugMetadata(locale, params) {
   })
 }
 
-export function createGuideSlugPage(locale, params) {
-  const slug = params.slug
+export async function createGuideSlugPage(locale, params) {
+  const { slug } = await params
   if (!isPublishedGuideSlug(slug)) notFound()
   if (!hasLocaleRoute(`/guides/${slug}`, locale)) notFound()
 

@@ -10,10 +10,10 @@ export function generateStaticParams() {
   return createGuideSlugStaticParams()
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
   return createGuideSlugMetadata(LOCALE, params)
 }
 
-export default function Post({ params }) {
+export default async function Post({ params }) {
   return createGuideSlugPage(LOCALE, params)
 }
