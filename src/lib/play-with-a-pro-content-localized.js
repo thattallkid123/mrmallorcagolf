@@ -154,13 +154,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
-          "price": "€3.000+",
+          "price": "Auf Anfrage",
           "note": "Todo organizado. Todos los detalles se confirman antes del día.",
           "features": [
             "Campo, hora de salida privada y un día completamente organizado conmigo",
-            "Fisio de golf con The Golf Doctor para trabajar el cuerpo y los problemas de swing detectados",
+            "Sesion de recuperacion y rendimiento deportivo con John Brazier",
             "Traslados privados de ida y vuelta al campo",
-            "Cena en un hotel asociado"
+            "Cena en hotel o restaurante recomendado, o chef privado si encaja"
           ],
           "button": "Consultar →",
           "href": "/es/contact",
@@ -187,7 +187,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "¿Busca algo más grande?",
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
         "body": "Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
-        "detail": "El Día Andy Completo. Un día, un campo, todo está organizado. Desde €3,000+. Sin logística, sin decisiones, nada que organizar a tu llegada. Dependiendo de lo que quieras del día, esto puede incluir un caddie, un videógrafo, almuerzo Michelin, traslados privados, acceso a spa, equipo de alquiler premium. Andy coordina todo por adelantado y confirma el itinerario completo contigo antes de tu llegada.",
+        "detail": "Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma despues de la primera conversacion, cuando el dia tiene forma.",
         "button": "Consultar un viaje de varios días →",
         "href": "/es/contact"
       }
@@ -403,13 +403,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
-          "price": "€3.000+",
+          "price": "Auf Anfrage",
           "note": "Alles arrangiert. Alle Details werden vor dem Tag bestätigt.",
           "features": [
             "Platz, private Startzeit und ein vollständig organisierter Tag mit mir",
-            "Golf-Physio mit The Golf Doctor, um an Körper und den gesehenen Schwungproblemen zu arbeiten",
+            "Recovery- und Sports-Performance-Session mit John Brazier",
             "Private Transfers zum und vom Platz",
-            "Abendessen im Partnerhotel"
+            "Dinner in einem empfohlenen Hotel oder Restaurant, oder mit Private Chef"
           ],
           "button": "Anfragen →",
           "href": "/de/contact",
@@ -436,7 +436,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Suchen Sie nach etwas Größerem?",
         "title": "Ein mehrtägiges Erlebnis, um Sie herum arrangiert.",
         "body": "Zwei oder drei aufeinanderfolgende Tage über Son Gual, Alcanada und weitere Plätze hinweg - mit privaten Transfers, sorgfältig ausgewählter Gastronomie und Zugang zu Plätzen, die die meisten Besucher nicht buchen können.",
-        "detail": "Der volle Andy Tag. Ein Tag, ein Platz, alles ist arrangiert. Ab €3,000+. Keine Logistik, keine Entscheidungen, nichts zum Organisieren bei der Ankunft. Je nachdem, was Sie vom Tag erwarten, kann dies einen Caddie, einen Videografen, Michelin-Lunch, private Transfers, Spa-Zugang, ein Premium-Leih-Set beinhalten. Andy koordiniert alles im Voraus und bestätigt das vollständige Programm mit Ihnen vor Ihrer Ankunft.",
+        "detail": "Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespraech bestaetigt, sobald der Tag Form hat.",
         "button": "Mehrtägige Reise anfragen →",
         "href": "/de/contact"
       }
@@ -652,11 +652,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
-          "price": "€3 000+",
+          "price": "Sur demande",
           "note": "Tout est organisé. Tous les détails sont confirmés avant la journée.",
           "features": [
             "Parcours, départ privé et une journée entièrement organisée avec moi",
-            "Physio golf avec The Golf Doctor pour travailler le corps et les soucis de swing observés",
+            "Session recuperation et performance sportive avec John Brazier",
             "Transferts privés aller-retour au parcours",
             "Dîner dans un hôtel partenaire"
           ],
@@ -685,7 +685,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Vous cherchez quelque chose de plus ambitieux ?",
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
         "body": "Deux ou trois jours consécutifs entre Son Gual, Alcanada et au-delà, avec transferts privés, bonnes tables soigneusement choisies et accès à des parcours que la plupart des visiteurs ne peuvent pas réserver.",
-        "detail": "La Journée Andy Complète. Un jour, un parcours, tout est organisé. À partir de 3 000 EUR. Pas de logistique, pas de décisions, rien à organiser à votre arrivée. Selon ce que vous souhaitez de cette journée, cela peut inclure un caddie, un vidéographe, un déjeuner Michelin, des transferts privés, accès au spa, un équipement de location premium. Andy coordonne tout à l'avance et confirme l'itinéraire complet avec vous avant votre arrivée.",
+        "detail": "Signature Day. Une journee de golf privee avec Andy, une session avec John Brazier, des transferts prives et une soiree coordonnee. Le tarif est confirme apres le premier echange, lorsque la journee a pris forme.",
         "button": "Demander un séjour sur plusieurs jours →",
         "href": "/fr/contact"
       }
@@ -900,11 +900,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
-          "price": "€3.000+",
+          "price": "Auf Anfrage",
           "note": "Alles geregeld. Alle details worden voor de dag bevestigd.",
           "features": [
             "Baan, prive starttijd en een volledig georganiseerde dag met mij",
-            "Golffysio met The Golf Doctor om aan het lichaam en de geziene swingproblemen te werken",
+            "Herstel- en sportprestatiesessie met John Brazier",
             "Prive transfers van en naar de baan",
             "Diner bij een partnerhotel"
           ],
@@ -933,7 +933,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Zoekt u iets groters?",
         "title": "Een meerdaagse ervaring, volledig om u heen opgebouwd.",
         "body": "Twee of drie opeenvolgende dagen langs Son Gual, Alcanada en meer, met privétransfers, zorgvuldig gekozen restaurants en toegang tot banen die de meeste bezoekers niet kunnen boeken.",
-        "detail": "De Volledige Andy Dag. Eén dag, één baan, alles is geregeld. Vanaf €3,000+. Geen logistiek, geen beslissingen, niets om te organiseren bij aankomst. Afhankelijk van wat je van de dag wilt, kan dit een caddie, videograaf, Michelin-lunch, privévervoer, spavergoeding, premium verhuurapparatuur omvatten. Andy coördineert alles vooraf en bevestigt het volledige programma met je vóór je aankomst.",
+        "detail": "Signature Day. Een prive golfdag met Andy, een sessie met John Brazier, prive transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.",
         "button": "Meerdaagse trip aanvragen →",
         "href": "/nl/contact"
       }
@@ -1149,11 +1149,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
-          "price": "€3 000+",
+          "price": "Sur demande",
           "note": "Allt är ordnat. Alla detaljer bekräftas före dagen.",
           "features": [
             "Bana, privat starttid och en helt organiserad dag med mig",
-            "Golf-fysio med The Golf Doctor för att jobba med kroppen och de svingproblem vi såg",
+            "Aterhamtnings- och sportprestationssession med John Brazier",
             "Privata transfers till och från banan",
             "Middag på ett partnerhotell"
           ],
@@ -1182,7 +1182,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Letar du efter något större?",
         "title": "En flerdagarsupplevelse, planerad runt dig.",
         "body": "Två eller tre dagar i följd över Son Gual, Alcanada och vidare, med privata transfers, noggrant utvalda restauranger och tillgång till banor som de flesta besökare inte kan boka.",
-        "detail": "Den Fullständiga Andy-dagen. En dag, en bana, allt är ordnat. Från €3.000. Ingen logistik, inga beslut, inget att organisera vid ankomst. Beroende på vad du vill från dagen kan detta innefatta en caddie, en videograf, Michelin-lunch, privata transfers, spa-tillgång, premiumklubbor för uthyrning. Andy koordinerar allt på förhand och bekräftar det fullständiga programmet med dig innan du anländer.",
+        "detail": "Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kvall. Priset bekraftas efter forsta samtalet, nar dagen har form.",
         "button": "Fråga om en flerdagarsresa →",
         "href": "/sv/contact"
       }
@@ -1401,9 +1401,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "全部安排妥当。所有细节会在活动当天前确认。",
           "features": [
             "球场、私人开球时段，以及与我一起完全安排好的一天",
-            "与The Golf Doctor进行高尔夫理疗，针对身体状况与观察到的挥杆问题进行调整",
+            "与 John Brazier 进行恢复与运动表现环节",
             "往返球场的私人接送",
-            "在合作酒店享用晚餐"
+            "推荐酒店或餐厅晚餐，合适时可安排私人厨师"
           ],
           "button": "立即咨询 →",
           "href": "/zh/contact",
@@ -1430,7 +1430,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "想要更完整的行程？",
         "title": "一款围绕您定制的多日体验。",
         "body": "连续两到三天，安排 Son Gual、Alcanada 及更多球场，包含私人接送、精心挑选的餐饮，以及多数访客订不到的球场机会。",
-        "detail": "完整的 Andy 日：一个球场，所有安排妥当。€3,000 起。没有物流，没有决定，到达时无需组织任何事务。根据您对这一天的期望，可以包括球童、摄影师、米其林级午餐、私人接送、水疗礼遇、高级球具租赁。Andy 提前协调一切，并在您到达前与您确认完整的行程安排。",
+        "detail": "Signature Day：与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。",
         "button": "咨询多日行程 →",
         "href": "/zh/contact"
       }

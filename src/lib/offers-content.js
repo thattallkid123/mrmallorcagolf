@@ -52,9 +52,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.',
     playMultiDayDetail:
-      'Der volle Andy Tag. Ein Tag, ein Platz, alles ist arrangiert. Ab €3,000+. Keine Logistik, keine Entscheidungen, nichts zum Organisieren bei der Ankunft. Je nachdem, was Sie vom Tag erwarten, kann dies einen Caddie, einen Videografen, Michelin-Lunch, private Transfers, Spa-Zugang, ein Premium-Leih-Set beinhalten. Andy koordiniert alles im Voraus und bestätigt das vollständige Programm mit Ihnen vor Ihrer Ankunft.',
+      'Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespraech bestaetigt, sobald der Tag Form hat.',
     homeMultiDayBody:
-      'Der volle Andy Tag -ein Platz, alles ist arrangiert. Keine Logistik, keine Entscheidungen, nichts zum Organisieren. Ab €3,000+.',
+      'Signature Day - ein privater Golftag mit Andy, John Brazier, Transfers und einem koordinierten Abend. Preis nach Umfang des Tages.',
     contactUnknown: 'Noch unsicher - beraten Sie mich',
     offers: {
       [OFFER_IDS.solo]: {
@@ -73,7 +73,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'Der volle Andy Tag',
-        contactPrice: 'Ab €3,000+',
+        contactPrice: 'Auf Anfrage',
       },
     },
   },
@@ -84,9 +84,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.',
     playMultiDayDetail:
-      'El Día Andy Completo. Un día, un campo, todo está organizado. Desde €3,000+. Sin logística, sin decisiones, nada que organizar a tu llegada. Dependiendo de lo que quieras del día, esto puede incluir un caddie, un videógrafo, almuerzo Michelin, traslados privados, acceso a spa, equipo de alquiler premium. Andy coordina todo por adelantado y confirma el itinerario completo contigo antes de tu llegada.',
+      'Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma despues de la primera conversacion, cuando el dia tiene forma.',
     homeMultiDayBody:
-      'El Día Andy Completo -un campo, todo está organizado. Sin logística, sin decisiones, nada que organizar. Desde €3,000+.',
+      'Signature Day - un dia privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio segun el dia.',
     contactUnknown: 'Aún no lo sé - aconséjeme',
     offers: {
       [OFFER_IDS.solo]: {
@@ -105,7 +105,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'El Día Andy Completo',
-        contactPrice: 'Desde €3,000+',
+        contactPrice: 'Bajo consulta',
       },
     },
   },
@@ -116,9 +116,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Un parcours. Une journée complète aux côtés d\'un PGA Advanced Professional qui a tout organisé. En solo à partir de €695. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.',
     playMultiDayDetail:
-      'La Journée Andy Complète. Un jour, un parcours, tout est organisé. À partir de 3 000 EUR. Pas de logistique, pas de décisions, rien à organiser à votre arrivée. Selon ce que vous souhaitez de cette journée, cela peut inclure un caddie, un vidéographe, un déjeuner Michelin, des transferts privés, accès au spa, un équipement de location premium. Andy coordonne tout à l\'avance et confirme l\'itinéraire complet avec vous avant votre arrivée.',
+      'La Journée Andy Complète. Un jour, un parcours, tout est organisé. Sur demande. Pas de logistique, pas de décisions, rien à organiser à votre arrivée. Selon ce que vous souhaitez de cette journée, cela peut inclure un caddie, un vidéographe, un déjeuner Michelin, des transferts privés, accès au spa, un équipement de location premium. Andy coordonne tout à l\'avance et confirme l\'itinéraire complet avec vous avant votre arrivée.',
     homeMultiDayBody:
-      'La Journée Andy Complète -un parcours, tout est organisé. Pas de logistique, pas de décisions, rien à organiser. À partir de 3 000 EUR.',
+      'Signature Day - une journee de golf privee avec Andy, John Brazier, des transferts prives et une soiree coordonnee. Tarif adapte a la journee.',
     contactUnknown: 'Je ne suis pas encore certain(e) - conseillez-moi',
     offers: {
       [OFFER_IDS.solo]: {
@@ -137,7 +137,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'La Journee Andy Complete',
-        contactPrice: 'A partir de 3 000 EUR',
+        contactPrice: 'Sur demande',
       },
     },
   },
@@ -148,9 +148,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
     playMultiDayDetail:
-      'De Volledige Andy Dag. Eén dag, één baan, alles is geregeld. Vanaf €3,000+. Geen logistiek, geen beslissingen, niets om te organiseren bij aankomst. Afhankelijk van wat je van de dag wilt, kan dit een caddie, videograaf, Michelin-lunch, privévervoer, spavergoeding, premium verhuurapparatuur omvatten. Andy coördineert alles vooraf en bevestigt het volledige programma met je vóór je aankomst.',
+      'Signature Day. Een prive golfdag met Andy, een sessie met John Brazier, prive transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.',
     homeMultiDayBody:
-      'De Volledige Andy Dag -eén baan, alles is geregeld. Geen logistiek, geen beslissingen, niets om te organiseren. Vanaf €3,000+.',
+      'Signature Day - een prive golfdag met Andy, John Brazier, transfers en een georganiseerde avond. Prijs afgestemd op de dag.',
     contactUnknown: 'Nog niet zeker - adviseer me',
     offers: {
       [OFFER_IDS.solo]: {
@@ -169,7 +169,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'De Volledige Andy Dag',
-        contactPrice: 'Vanaf €3,000+',
+        contactPrice: 'Op aanvraag',
       },
     },
   },
@@ -180,9 +180,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.',
     playMultiDayDetail:
-      'Den Fullständiga Andy-dagen. En dag, en bana, allt är ordnat. Från €3.000. Ingen logistik, inga beslut, inget att organisera vid ankomst. Beroende på vad du vill från dagen kan detta innefatta en caddie, en videograf, Michelin-lunch, privata transfers, spa-tillgång, premiumklubbor för uthyrning. Andy koordinerar allt på förhand och bekräftar det fullständiga programmet med dig innan du anländer.',
+      'Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kvall. Priset bekraftas efter forsta samtalet, nar dagen har form.',
     homeMultiDayBody:
-      'Den Fullständiga Andy-dagen -en bana, allt är ordnat. Ingen logistik, inga beslut, inget att organisera. Från €3.000.',
+      'Signature Day - en privat golfdag med Andy, John Brazier, transfers och en koordinerad kvall. Pris anpassat efter dagen.',
     contactUnknown: 'Inte säker ännu - ge mig råd',
     offers: {
       [OFFER_IDS.solo]: {
@@ -201,7 +201,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'Den Fullständiga Andy-dagen',
-        contactPrice: 'Från €3,000+',
+        contactPrice: 'Pa forfragan',
       },
     },
   },
@@ -212,9 +212,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       '一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €695。小组从 €950 总计起，果岭费另计。',
     playMultiDayDetail:
-      '完整的 Andy 日：一个球场，所有安排妥当。€3,000 起。没有物流，没有决定，到达时无需组织任何事务。根据您对这一天的期望，可以包括球童、摄影师、米其林级午餐、私人接送、水疗礼遇、高级球具租赁。Andy 提前协调一切，并在您到达前与您确认完整的行程安排。',
+      'Signature Day：与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。',
     homeMultiDayBody:
-      '完整的 Andy 日 -一个球场，所有安排妥当。没有物流，没有决定，无需组织。€3,000 起。',
+      'Signature Day - 与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。按当天范围报价。',
     contactUnknown: '暂时不确定 - 请给我建议',
     offers: {
       [OFFER_IDS.solo]: {
@@ -233,7 +233,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: '完整的 Andy 日',
-        contactPrice: '€3,000 起',
+        contactPrice: '按需报价',
       },
     },
   },

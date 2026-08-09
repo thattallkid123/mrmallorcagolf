@@ -88,7 +88,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "signature-day",
           "El Día Andy Completo",
-          "Desde €3,000+"
+          "Bajo consulta"
         ],
         [
           "not-sure",
@@ -207,7 +207,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "signature-day",
           "Der volle Andy Tag",
-          "Ab €3,000+"
+          "Auf Anfrage"
         ],
         [
           "not-sure",
@@ -326,7 +326,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "signature-day",
           "La Journee Andy Complete",
-          "A partir de 3 000 EUR"
+          "Sur demande"
         ],
         [
           "not-sure",
@@ -445,7 +445,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "signature-day",
           "De Volledige Andy Dag",
-          "Vanaf €3,000+"
+          "Op aanvraag"
         ],
         [
           "not-sure",
@@ -564,7 +564,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "signature-day",
           "Den Fullständiga Andy-dagen",
-          "Från €3,000+"
+          "Pa forfragan"
         ],
         [
           "not-sure",
@@ -687,7 +687,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "signature-day",
           "完整的 Andy 日",
-          "€3,000 起"
+          "按需报价"
         ],
         [
           "not-sure",

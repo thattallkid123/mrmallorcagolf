@@ -67,13 +67,13 @@ export const CONTACT_CONTENT = {
       experiences: [
         ['pwap-solo', 'Solo', '€695'],
         ['pwap-group', 'Group', '€950 total'],
-        ['signature-day', 'Signature Day', 'From €3,000+'],
+        ['signature-day', 'Signature Day', 'On request'],
         ['pwap-not-sure', 'Not sure yet', ''],
       ],
       pwapFormats: [
         ['pwap-solo', 'Solo', '€695'],
         ['pwap-group', 'Group', '€950 total'],
-        ['signature-day', 'Signature Day', 'From €3,000+'],
+        ['signature-day', 'Signature Day', 'On request'],
         ['pwap-not-sure', 'Not sure yet', ''],
       ],
       submit: 'Send enquiry →',

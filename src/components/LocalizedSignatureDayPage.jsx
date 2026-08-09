@@ -7,17 +7,35 @@ import { buildLocalePath } from '../lib/site'
 export default function LocalizedSignatureDayPage({ locale, content }) {
   const contactHref = buildLocalePath('/contact', locale)
   const coursesHref = buildLocalePath('/golf-courses', locale)
+  const playHref = buildLocalePath('/play-with-a-pro', locale)
+  const homeHref = buildLocalePath('/', locale)
   const s = content.sections
 
   return (
     <PageLayout lang={locale}>
-      <main>
+      <main className="signature-page">
         <section className="pwap-hero pwap-hero--tall">
           <div className="pwap-hero__bg" aria-hidden="true">
+            <Image
+              src="/images/andy-walking-course.webp"
+              alt={content.heroImageAlt}
+              fill
+              priority
+              quality={88}
+              sizes="100vw"
+              className="pwap-hero__image"
+            />
             <div className="pwap-hero__overlay" />
           </div>
-          <div className="pwap-hero__inner">
+          <div className="pwap-hero__inner signature-hero__inner">
             <div className="pwap-hero__content">
+              <p className="breadcrumb">
+                <Link href={homeHref} className="breadcrumb__link">{content.breadcrumbHome}</Link>
+                &nbsp;/&nbsp;
+                <Link href={playHref} className="breadcrumb__link">Play With A Pro</Link>
+                &nbsp;/&nbsp;
+                <span>Signature Day</span>
+              </p>
               <p className="eyebrow eyebrow--gold pwap-hero__eyebrow">{content.heroEyebrow}</p>
               <h1 className="serif-display pwap-hero__title">
                 {String(content.heroTitle).split('\n').map((line, index, lines) => (
@@ -37,189 +55,171 @@ export default function LocalizedSignatureDayPage({ locale, content }) {
           </div>
         </section>
 
-        <section className="pwap-day" id="the-day">
-          <div className="pwap-day__left reveal">
-            <p className="eyebrow">{s.introEyebrow}</p>
-            <h2 className="serif-display pwap-section-title">{s.introTitle}</h2>
-            <p>{s.introBody}</p>
-            <p>{s.introBody2}</p>
-          </div>
-          <div className="pwap-day__right reveal">
-            <div className="included">
-              <h3>{s.includedTitle}</h3>
-              <ul className="included-list">
-                {s.included.map(([title, detail]) => (
-                  <li key={title} className="included-item">
-                    <span className="included-dot"></span>
-                    <p><strong>{title}</strong><br /><span style={{ fontWeight: 400 }}>{detail}</span></p>
-                  </li>
-                ))}
-              </ul>
+        <section className="signature-section" id="the-day">
+          <div className="signature-inner signature-split signature-split--overview">
+            <div className="signature-copy reveal">
+              <p className="eyebrow">{s.overviewEyebrow}</p>
+              <h2 className="serif-display signature-title">{s.overviewTitle}</h2>
+              <p>{s.overviewBody}</p>
+              <p>{s.overviewBody2}</p>
+              <p className="signature-principle">{s.overviewPrinciple}</p>
             </div>
-          </div>
-        </section>
 
-        <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-          <div className="pwap-day__left reveal">
-            <p className="eyebrow">{s.whoForEyebrow}</p>
-            <h2 className="serif-display pwap-section-title">{s.whoForHeadline}</h2>
-            <div className="included" style={{ marginTop: '1.25rem' }}>
-              <h3>{s.whoForTitle}</h3>
-              <ul className="included-list">
-                {s.whoForIdeal.map(([title, detail]) => (
-                  <li key={title} className="included-item">
-                    <span className="included-dot"></span>
-                    <p><strong>{title}</strong><br /><span style={{ fontWeight: 400 }}>{detail}</span></p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="included" style={{ marginTop: '1rem' }}>
-              <h3>{s.whoForNotIdealTitle}</h3>
-              <ul className="included-list">
-                {s.whoForNotIdeal.map(([title, detail]) => (
-                  <li key={title} className="included-item">
-                    <span className="included-dot"></span>
-                    <p><strong>{title}</strong><br /><span style={{ fontWeight: 400 }}>{detail}</span></p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <p style={{ marginTop: '1.25rem', fontSize: '0.92rem', lineHeight: 1.7, color: 'var(--charcoal)' }}>{s.whoForNote}</p>
-          </div>
-          <div className="pwap-day__right reveal" />
-        </section>
-
-        <section className="how">
-          <div className="how__header reveal">
-            <p className="eyebrow">{s.howEyebrow}</p>
-            <h2 className="serif-display">{s.howTitle}</h2>
-            <p>{s.howBody}</p>
-          </div>
-          <div className="how__steps">
-            {s.dayArc.map((step, i) => (
-              <div key={step.title} className={`how__step reveal${i > 0 ? ` reveal-delay-${i % 3}` : ''}`}>
-                <span className="how__num">{String(i + 1).padStart(2, '0')}</span>
-                <p className="eyebrow" style={{ marginBottom: '0.25rem', marginTop: '0.5rem' }}>{step.time}</p>
-                <h3 className="serif-display" style={{ fontSize: '1.2rem', fontWeight: 400, marginBottom: '0.75rem' }}>{step.title}</h3>
-                <p style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>{step.body}</p>
+            <div className="signature-inclusions reveal">
+              <div className="signature-media signature-media--overview">
+                <Image
+                  src="/images/andy-coaching-swing.webp"
+                  alt={s.overviewImageAlt}
+                  fill
+                  quality={88}
+                  sizes="(max-width: 768px) 100vw, 520px"
+                />
               </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-          <div className="pwap-day__left reveal">
-            <p className="eyebrow">{s.whyEyebrow}</p>
-            <h2 className="serif-display pwap-section-title">{s.whyHeading}</h2>
-            <p>{s.whyBody}</p>
-            <p>{s.whyBody2}</p>
-            <p>{s.whyBody3}</p>
-          </div>
-          <div className="pwap-day__right reveal">
-            <div className="pwap-course-note">
-              <p className="eyebrow">{s.johnEyebrow}</p>
-              <p>{s.johnBody}</p>
-              <p style={{ marginTop: '0.75rem', fontSize: '0.9rem' }}>{s.johnBody2}</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-          <div className="pwap-day__left reveal">
-            <p className="eyebrow">{s.courseEyebrow}</p>
-            <h2 className="serif-display pwap-section-title">{s.courseTitle}</h2>
-            <p>{s.courseBody}</p>
-            <p>{s.courseBody2}</p>
-            <Link href={coursesHref} className="pwap-course-note__link" style={{ marginTop: '1rem', display: 'inline-block' }}>{content.coursesCta}</Link>
-          </div>
-          <div className="pwap-day__right reveal">
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-              <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '3/4' }}>
-                <Image src="/images/son-gual.jpg" alt="Son Gual golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover' }} />
-              </div>
-              <div style={{ position: 'relative', borderRadius: 2, overflow: 'hidden', aspectRatio: '3/4' }}>
-                <Image src="/images/alcanada.jpg" alt="Alcanada golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 280px" style={{ objectFit: 'cover' }} />
+              <div className="signature-inclusions__body">
+                <h3 className="serif-display">{s.includedTitle}</h3>
+                <ul className="signature-checklist">
+                  {content.included.map((title) => (
+                    <li key={title}>
+                      <span aria-hidden="true" />
+                      <p><strong>{title}</strong></p>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-          <div className="pwap-day__left reveal">
-            <p className="eyebrow">{s.eveningEyebrow}</p>
-            <h2 className="serif-display pwap-section-title">{s.eveningTitle}</h2>
-            <p>{s.eveningBody}</p>
-            <p>{s.eveningBody2}</p>
-            <p>{s.eveningBody3}</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', marginTop: '1.5rem' }}>
-              {content.hotelPartners.map((h) => (
-                <div key={h.name} style={{ borderLeft: '2px solid var(--gold, #b8975a)', paddingLeft: '1rem' }}>
-                  <p className="serif-display" style={{ fontSize: '1rem', fontWeight: 400, marginBottom: '0.15rem' }}>{h.name}</p>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted, #888)' }}>{h.note}</p>
+        <section className="signature-section signature-section--warm">
+          <div className="signature-inner">
+            <div className="signature-heading reveal">
+              <p className="eyebrow">{s.howEyebrow}</p>
+              <h2 className="serif-display signature-title">{s.howTitle}</h2>
+              <p>{s.howBody}</p>
+            </div>
+            <ol className="signature-timeline">
+              {content.dayStages.map((stage, index) => (
+                <li key={stage.title} className="reveal">
+                  <span className="signature-timeline__number">{String(index + 1).padStart(2, '0')}</span>
+                  <p className="eyebrow">{stage.time}</p>
+                  <h3 className="serif-display">{stage.title}</h3>
+                  <p>{stage.body}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        <section className="signature-section">
+          <div className="signature-inner signature-split signature-split--feature">
+            <div className="signature-copy reveal">
+              <p className="eyebrow">{s.whyEyebrow}</p>
+              <h2 className="serif-display signature-title">{s.whyTitle}</h2>
+              <p>{s.whyBody}</p>
+              <p>{s.whyBody2}</p>
+              <div className="signature-john-note">
+                <p className="eyebrow">John Brazier</p>
+                <p>{s.johnBody}</p>
+                <a href="https://drjohnbrazier.com/" target="_blank" rel="noreferrer" className="pwap-course-note__link">{s.johnLink}</a>
+              </div>
+            </div>
+            <div className="signature-media signature-media--feature reveal">
+              <Image
+                src="/images/client-son-gual2.webp"
+                alt={s.whyImageAlt}
+                fill
+                quality={88}
+                sizes="(max-width: 768px) 100vw, 520px"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="signature-section signature-section--soft">
+          <div className="signature-inner signature-split signature-split--feature signature-split--media-first">
+            <div className="signature-course-media reveal">
+              <div className="signature-media">
+                <Image src="/images/son-gual.jpg" alt="Son Gual golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
+              </div>
+              <div className="signature-media">
+                <Image src="/images/alcanada.jpg" alt="Alcanada golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
+              </div>
+            </div>
+            <div className="signature-copy reveal">
+              <p className="eyebrow">{s.courseEyebrow}</p>
+              <h2 className="serif-display signature-title">{s.courseTitle}</h2>
+              <p>{s.courseBody}</p>
+              <p>{s.courseBody2}</p>
+              <Link href={coursesHref} className="pwap-course-note__link">{content.coursesCta}</Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="signature-section">
+          <div className="signature-inner signature-split signature-split--evening">
+            <div className="signature-copy reveal">
+              <p className="eyebrow">{s.eveningEyebrow}</p>
+              <h2 className="serif-display signature-title">{s.eveningTitle}</h2>
+              <p>{s.eveningBody}</p>
+              <p>{s.eveningBody2}</p>
+              <div className="signature-hotels">
+                {content.hotelPartners.map((hotel) => (
+                  <div key={hotel.name}>
+                    <h3 className="serif-display">{hotel.name}</h3>
+                    <p>{hotel.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="signature-dining-grid reveal">
+              {content.diningImages.map((item) => (
+                <div key={item.src} className={'signature-media' + (item.featured ? ' signature-media--dining-feature' : '')}>
+                  <Image src={item.src} alt={item.alt} fill unoptimized sizes="(max-width: 768px) 100vw, 520px" />
                 </div>
               ))}
             </div>
           </div>
-          <div className="pwap-day__right reveal" />
         </section>
 
-        <section className="pwap-day" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-          <div className="pwap-day__left reveal">
-            <p className="eyebrow">{s.extrasEyebrow}</p>
-            <h2 className="serif-display pwap-section-title">{s.extrasTitle}</h2>
-            <p>{s.extrasBody}</p>
-          </div>
-          <div className="pwap-day__right reveal">
-            <div className="included">
-              <ul className="included-list">
-                {s.extras.map(([title, text]) => (
-                  <li key={title} className="included-item">
-                    <span className="included-dot"></span>
-                    <p><strong>{title}</strong><br /><span style={{ fontWeight: 400 }}>{text}</span></p>
-                  </li>
-                ))}
-              </ul>
+        <section className="signature-section signature-section--warm">
+          <div className="signature-inner">
+            <div className="signature-heading reveal">
+              <p className="eyebrow">{s.extrasEyebrow}</p>
+              <h2 className="serif-display signature-title">{s.extrasTitle}</h2>
+              <p>{s.extrasBody}</p>
+            </div>
+            <div className="signature-extras">
+              {content.optionalExtras.map((item) => (
+                <article key={item.title} className="reveal">
+                  <h3 className="serif-display">{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
 
-        <section className="pwap-packages" id="pricing" style={{ borderTop: '1px solid var(--border, #e8e4dc)' }}>
-          <div className="pwap-packages__header reveal">
-            <p className="eyebrow">{s.pricingEyebrow}</p>
-            <h2 className="serif-display pwap-section-title">{s.pricingTitle}</h2>
-            <p>{s.pricingBody}</p>
-            <p style={{ maxWidth: 760, margin: '0.75rem auto 0', lineHeight: 1.8, color: 'var(--charcoal)' }}>{s.pricingBody2}</p>
-          </div>
-          <div style={{ maxWidth: 640, margin: '2rem auto 0' }} className="pwap-course-note">
-            <p className="eyebrow">{s.alwaysIncludedLabel}</p>
-            <ul style={{ listStyle: 'none', padding: 0, margin: '1rem 0 1.5rem' }}>
-              {s.included.map(([title]) => (
-                <li key={title} style={{ display: 'flex', gap: '0.75rem', marginBottom: '0.5rem', fontSize: '0.95rem' }}>
-                  <span style={{ color: 'var(--gold, #b8975a)', fontWeight: 500, flexShrink: 0 }}>—</span>
-                  {title}
-                </li>
-              ))}
-            </ul>
-            <p style={{ fontSize: '0.875rem', color: 'var(--text-muted, #888)', marginBottom: '1.5rem' }}>{s.separateNote}</p>
-            <Link href={contactHref} className="btn btn--gold">{s.pricingCta}</Link>
+        <section className="signature-section signature-section--pricing" id="pricing">
+          <div className="signature-inner signature-pricing reveal">
+            <div>
+              <p className="eyebrow eyebrow--gold">{s.pricingEyebrow}</p>
+              <h2 className="serif-display signature-title">{s.pricingTitle}</h2>
+            </div>
+            <div>
+              <p>{s.pricingBody}</p>
+              <p>{s.pricingBody2}</p>
+              <Link href={contactHref} className="btn btn--gold">{s.pricingCta}</Link>
+            </div>
           </div>
         </section>
 
-        <section className="pwap-final-cta reveal" style={{ borderTop: '1px solid var(--border, #e8e4dc)', textAlign: 'center', padding: '5rem 1.5rem' }}>
-          <p className="eyebrow">{s.finalEyebrow}</p>
-          <h2 className="serif-display" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', maxWidth: 560, margin: '0 auto 1.5rem', fontWeight: 400 }}>{s.finalTitle}</h2>
-          <p style={{ maxWidth: 480, margin: '0 auto 2rem', lineHeight: 1.75 }}>{s.finalBody}</p>
-          <Link href={contactHref} className="btn btn--gold">{s.finalCta}</Link>
-        </section>
+        <StickyMobileCta
+          primaryHref={contactHref}
+          primaryLabel={content.primaryCta}
+          secondaryHref={content.whatsappHref}
+          secondaryLabel={content.whatsappLabel}
+        />
       </main>
-
-      <StickyMobileCta
-        primaryHref={contactHref}
-        primaryLabel={content.primaryCta}
-        secondaryHref="https://wa.me/34624466702"
-        secondaryLabel={content.whatsappLabel}
-      />
     </PageLayout>
   )
 }
