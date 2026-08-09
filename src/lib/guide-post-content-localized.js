@@ -109,7 +109,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "115-165 EUR",
+              "€115-165",
               "green fee 2026"
             ],
             [
@@ -280,7 +280,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "115-165 EUR",
+              "€115-165",
               "Greenfee 2026"
             ],
             [
@@ -451,7 +451,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "115-165 EUR",
+              "€115-165",
               "green fee 2026"
             ],
             [
@@ -622,7 +622,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "115-165 EUR",
+              "€115-165",
               "greenfee 2026"
             ],
             [
@@ -793,7 +793,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "115-165 EUR",
+              "€115-165",
               "greenfee 2026"
             ],
             [
@@ -964,7 +964,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "115-165 EUR",
+              "€115-165",
               "2026 果岭费"
             ],
             [
@@ -1618,7 +1618,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "EUR 115-230",
+              "€115-230",
               "Greenfees 2026"
             ],
             [
@@ -1639,10 +1639,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Praktische info"
         },
         {
-          "text": "Greenfees 2026: EUR 115 in het laagseizoen en tot EUR 220 in de piekperiodes van maart tot mei en van september tot oktober. Het volledige seizoensoverzicht staat op golf-alcanada.com. Voor spelers zonder Spaanse federatielicentie geldt een dagelijkse golftoeslag van EUR 3 per persoon."
+          "text": "Greenfees 2026: €115 in het laagseizoen en tot €220 in de piekperiodes van maart tot mei en van september tot oktober. Het volledige seizoensoverzicht staat op golf-alcanada.com. Voor spelers zonder Spaanse federatielicentie geldt een dagelijkse golftoeslag van €3 per persoon."
         },
         {
-          "text": "Clubhuur: TaylorMade-sets voor EUR 38 per 18 holes. Buggy EUR 48, elektrische trolley EUR 20. De Toptracer-range is uitstekend voor een serieuze warming-up - gebruik hem."
+          "text": "Clubhuur: TaylorMade-sets voor €38 per 18 holes. Buggy €48, elektrische trolley €20. De Toptracer-range is uitstekend voor een serieuze warming-up - gebruik hem."
         },
         {
           "text": "Locatie: Port d'Alcúdia, ongeveer 50 minuten ten noorden van Palma. Neem de tijd en ga na de ronde niet meteen weer weg."
@@ -1672,7 +1672,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Het restaurantterras"
         },
         {
-          "text": "Een van de beste plekken op het eiland voor lunch na je ronde. Het restaurant wordt gerund door Grupo Babuxa, de groep achter de goed aangeschreven Casa Gallega-restaurants in Palma. Mediterrane keuken, een terras aan zee en direct uitzicht op de vuurtoren van Alcanada. Hun lunchmenu ligt rond de EUR 30 per persoon. Plan het mee in - dit is geen plek om haastig te verlaten."
+          "text": "Een van de beste plekken op het eiland voor lunch na je ronde. Het restaurant wordt gerund door Grupo Babuxa, de groep achter de goed aangeschreven Casa Gallega-restaurants in Palma. Mediterrane keuken, een terras aan zee en direct uitzicht op de vuurtoren van Alcanada. Hun lunchmenu ligt rond de €30 per persoon. Plan het mee in - dit is geen plek om haastig te verlaten."
         },
         {
           "caption": "Het clubhusterras."
@@ -1783,7 +1783,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "EUR 115-230",
+              "€115-230",
               "Greenfees 2026"
             ],
             [
@@ -1804,10 +1804,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Praktisk information"
         },
         {
-          "text": "Greenfees 2026: EUR 115 i lågsäsong och upp till EUR 220 under toppperioderna mars till maj samt september till oktober. Hela översikten finns på golf-alcanada.com. För spelare utan spansk federationslicens tillkommer en daglig golflicens på EUR 3 per person."
+          "text": "Greenfees 2026: €115 i lågsäsong och upp till €220 under toppperioderna mars till maj samt september till oktober. Hela översikten finns på golf-alcanada.com. För spelare utan spansk federationslicens tillkommer en daglig golflicens på €3 per person."
         },
         {
-          "text": "Klubbhyra: TaylorMade-set för EUR 38 per 18 hål. Buggy EUR 48, elektrisk trolley EUR 20. Toptracer-rangen är utmärkt för en ordentlig uppvärmning - använd den."
+          "text": "Klubbhyra: TaylorMade-set för €38 per 18 hål. Buggy €48, elektrisk trolley €20. Toptracer-rangen är utmärkt för en ordentlig uppvärmning - använd den."
         },
         {
           "text": "Läge: Port d'Alcúdia, cirka 50 minuter norr om Palma. Avsätt tid och stressa inte direkt därifrån efter rundan."
@@ -1837,7 +1837,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Restaurangterrassen"
         },
         {
-          "text": "En av de bästa platserna på ön för lunch efter rundan. Restaurangen drivs av Grupo Babuxa, gruppen bakom de välrenommerade Casa Gallega-restaurangerna i Palma. Medelhavsmat, terrass mot havet och direkt utsikt mot fyren i Alcanada. Deras lunchmeny ligger runt EUR 30 per person. Räkna med det - det här är ingen plats man vill lämna i hast."
+          "text": "En av de bästa platserna på ön för lunch efter rundan. Restaurangen drivs av Grupo Babuxa, gruppen bakom de välrenommerade Casa Gallega-restaurangerna i Palma. Medelhavsmat, terrass mot havet och direkt utsikt mot fyren i Alcanada. Deras lunchmeny ligger runt €30 per person. Räkna med det - det här är ingen plats man vill lämna i hast."
         },
         {
           "caption": "Klubbhusterrassen."
@@ -1948,7 +1948,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         {
           "items": [
             [
-              "EUR 115-230",
+              "€115-230",
               "2026年果岭费"
             ],
             [
@@ -1969,10 +1969,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "实用信息"
         },
         {
-          "text": "2026年果岭费：淡季为EUR 115，高峰期三月至五月及九月至十月最高为EUR 220。完整价格表见golf-alcanada.com。没有西班牙高协会员资格的球手需额外支付每日EUR 3的高尔夫许可证费用。"
+          "text": "2026年果岭费：淡季为€115，高峰期三月至五月及九月至十月最高为€220。完整价格表见golf-alcanada.com。没有西班牙高协会员资格的球手需额外支付每日€3的高尔夫许可证费用。"
         },
         {
-          "text": "球杆租赁：TaylorMade套杆18洞EUR 38。球车EUR 48，电动手推车EUR 20。这里的Toptracer练习场非常适合认真热身 - 值得利用。"
+          "text": "球杆租赁：TaylorMade套杆18洞€38。球车€48，电动手推车€20。这里的Toptracer练习场非常适合认真热身 - 值得利用。"
         },
         {
           "text": "位置：位于Port d'Alcúdia，距帕尔马以北约50分钟车程。建议留出充足时间，不要打完就匆匆离开。"
@@ -2002,7 +2002,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "餐厅露台"
         },
         {
-          "text": "这是岛上最适合打完球后吃午餐的地方之一。餐厅由Grupo Babuxa经营，也就是帕尔马知名Casa Gallega餐厅背后的团队。地中海料理、海景露台、正对Alcanada灯塔。午间套餐大约每人EUR 30。把它算进你的一天里 - 这里不是该匆忙离开的地方。"
+          "text": "这是岛上最适合打完球后吃午餐的地方之一。餐厅由Grupo Babuxa经营，也就是帕尔马知名Casa Gallega餐厅背后的团队。地中海料理、海景露台、正对Alcanada灯塔。午间套餐大约每人€30。把它算进你的一天里 - 这里不是该匆忙离开的地方。"
         },
         {
           "caption": "会所露台。"
@@ -2536,7 +2536,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Hoogseizoen van half maart tot begin juni en van half september tot begin november: €126. Laagseizoen: €77. De volledige details staan op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
         },
         {
-          "text": "Buggy: EUR 43 voor 18 holes. Clubhuur: EUR 40. De baan is publiek en vrij boekbaar - er is geen ledenstatus nodig. Boek in het hoogseizoen ruim op tijd; de European Tour-geschiedenis trekt spelers die precies weten waarom ze hier willen spelen."
+          "text": "Buggy: €43 voor 18 holes. Clubhuur: €40. De baan is publiek en vrij boekbaar - er is geen ledenstatus nodig. Boek in het hoogseizoen ruim op tijd; de European Tour-geschiedenis trekt spelers die precies weten waarom ze hier willen spelen."
         },
         {
           "text": "Oordeel"
@@ -2674,7 +2674,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Högsäsong från mitten av mars till början av juni och från mitten av september till början av november: €126. Lågsäsong: €77. Fullständig prislista finns på golf-santaponsa.com. Giltigt WHS-handicapintyg krävs."
         },
         {
-          "text": "Buggy: EUR 43 för 18 hål. Klubbhyra: EUR 40. Banan är publik och fritt bokningsbar - inget medlemskap krävs. Boka i god tid under högsäsong; European Tour-historien lockar spelare som vet exakt varför de vill spela här."
+          "text": "Buggy: €43 för 18 hål. Klubbhyra: €40. Banan är publik och fritt bokningsbar - inget medlemskap krävs. Boka i god tid under högsäsong; European Tour-historien lockar spelare som vet exakt varför de vill spela här."
         },
         {
           "text": "Omdöme"
@@ -2812,7 +2812,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "旺季为3月中旬至6月初，以及9月中旬至11月初，价格约为€126。淡季约€77。完整信息见golf-santaponsa.com。需要提供有效的WHS差点证明。"
         },
         {
-          "text": "球车：18洞EUR 43。球杆租赁：EUR 40。球场对公众开放，可直接预订，不需要会员资格。旺季建议尽早订位；它的欧洲巡回赛背景会吸引那些真正懂这座球场价值的访客。"
+          "text": "球车：18洞€43。球杆租赁：€40。球场对公众开放，可直接预订，不需要会员资格。旺季建议尽早订位；它的欧洲巡回赛背景会吸引那些真正懂这座球场价值的访客。"
         },
         {
           "text": "结论"

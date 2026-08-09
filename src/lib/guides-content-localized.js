@@ -781,7 +781,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "阿尔卡纳达高尔夫球场 - PGA 职业教练诚实评测（2026）",
         "intro": "我带客人来打球时，最希望他们能带着故事回家的球场。灯塔改变了一切。",
         "readTime": "7分钟",
-        "keywords": "海滨球场 · 标准杆72 · EUR 115-230 · 劳力士挑战巡回赛总决赛"
+        "keywords": "海滨球场 · 标准杆72 · €115-230 · 劳力士挑战巡回赛总决赛"
       },
       {
         "slug": "son-gual-review",
@@ -789,7 +789,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Gual 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
         "intro": "我在岛上打得最多的球场。风、果岭、收官几洞，以及奥巴马和纳达尔一再回来的原因。",
         "readTime": "7分钟",
-        "keywords": "锦标赛级 · 标准杆72 · EUR 115-165 · 需要差点证明"
+        "keywords": "锦标赛级 · 标准杆72 · €115-165 · 需要差点证明"
       },
       {
         "slug": "t-golf-calvia-review",
@@ -798,7 +798,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià 评测 — PGA职业球员的真实评价（2026）",
         "intro": "十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。岛上维护最佳的球场之一。综合评分9/10。",
         "readTime": "6分钟",
-        "keywords": "标准杆72 · EUR 80-210 · 马略卡岛西南部 · 15座湖泊"
+        "keywords": "标准杆72 · €80-210 · 马略卡岛西南部 · 15座湖泊"
       },
       {
         "slug": "son-muntaner-review",
@@ -807,7 +807,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Muntaner 高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）",
         "intro": "2025年世界高尔夫奖西班牙最佳球场。距巴尔马市中心五分钟。我在满员开球表的周六早晨打了一轮——以下是我的真实体验。",
         "readTime": "6分钟",
-        "keywords": "锦标赛级 · 标准杆72 · EUR 110-260 · 含球车"
+        "keywords": "锦标赛级 · 标准杆72 · €110-260 · 含球车"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -815,7 +815,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "圣蓬萨1号高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
         "intro": "欧洲最长的球场之一，拥有真正的 European Tour 历史，也是真正能帮球手找回一号木信心的球场。",
         "readTime": "6分钟",
-        "keywords": "锦标赛级 · 标准杆72 · EUR 77-126 · 对外开放"
+        "keywords": "锦标赛级 · 标准杆72 · €77-126 · 对外开放"
       },
       {
         "slug": "golf-andratx-review",
@@ -824,7 +824,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf de Andratx 高尔夫球场 - PGA 职业教练诚实评测（2026）",
         "intro": "西班牙最长的标准杆5洞，俯瞰西南部的山景，以及一个更考验球场管理能力而非距离的球场。评分7.5/10。",
         "readTime": "6分钟",
-        "keywords": "山地球场 · 标准杆72 · EUR 90-140 · 马略卡西南部"
+        "keywords": "山地球场 · 标准杆72 · €90-140 · 马略卡西南部"
       },
       {
         "slug": "son-antem-west-review",
@@ -835,7 +835,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Antem West 高尔夫俱乐部，马略卡 - PGA 职业教练真实评测（2026）",
         "intro": "距离帕尔马15-20分钟的度假村球场。养护好，环境开阔，球场设计适合很多类型的球手。",
         "readTime": "6分钟",
-        "keywords": "度假村球场 - 标准杆72 - EUR 109-135 - 距帕尔马15-20分钟"
+        "keywords": "度假村球场 - 标准杆72 - €109-135 - 距帕尔马15-20分钟"
       },
       {
         "slug": "son-termes-review",
@@ -843,7 +843,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）",
         "intro": "帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。",
         "readTime": "5分钟",
-        "keywords": "山地球场 · 标准杆70 · EUR 90-110 · 距帕尔马20分钟"
+        "keywords": "山地球场 · 标准杆70 · €90-110 · 距帕尔马20分钟"
       },
       {
         "slug": "play-with-a-pro-explained",

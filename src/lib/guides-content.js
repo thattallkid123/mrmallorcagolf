@@ -211,7 +211,7 @@ const COURSE_REVIEW_SLUGS = new Set([
 ])
 
 const GUIDE_PRICE_LABELS = {
-  zh: { currency: 'EUR ' },
+  zh: { currency: '\u20ac' },
   default: { currency: '\u20ac' },
 }
 

@@ -10,7 +10,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
         { "label": "Formato", "text": "Un campo, 18 hoyos, elegido segun su juego, conmigo a su lado durante toda la vuelta." },
-        { "label": "Precios", "text": "Solo desde 695 EUR. Grupo desde 950 EUR en total. Los green fees van aparte y se confirman antes de reservar." },
+        { "label": "Precios", "text": "Solo desde €695. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
         { "label": "Siguiente paso", "text": "Envie sus fechas, tamano del grupo y rango de handicap. Andy responde personalmente en 24 horas." }
       ]
     },
@@ -259,7 +259,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Am besten fuer", "text": "Einzelspieler, Paare und kleine Gruppen, die einen richtigen Golftag auf Mallorca wollen." },
         { "label": "Format", "text": "Ein Platz, 18 Loecher, passend zu Ihrem Spiel, mit mir an Ihrer Seite waehrend der ganzen Runde." },
-        { "label": "Preise", "text": "Solo ab 695 EUR. Gruppe ab 950 EUR insgesamt. Greenfees sind getrennt und werden vor der Buchung bestaetigt." },
+        { "label": "Preise", "text": "Solo ab €695. Gruppe ab €950 insgesamt. Greenfees sind getrennt und werden vor der Buchung bestaetigt." },
         { "label": "Naechster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengroesse und Handicap-Bereich. Andy antwortet persoenlich innerhalb von 24 Stunden." }
       ]
     },
@@ -508,7 +508,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Ideal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journee de golf a Majorque." },
         { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi a vos cotes pendant toute la partie." },
-        { "label": "Tarifs", "text": "Solo a partir de 695 EUR. Groupe a partir de 950 EUR au total. Les green fees restent a part et sont confirmes avant la reservation." },
+        { "label": "Tarifs", "text": "Solo a partir de €695. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la reservation." },
         { "label": "Etape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Andy repond personnellement sous 24 heures." }
       ]
     },
@@ -518,7 +518,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jouer avec un pro",
       "eyebrow": "Journée de golf · Majorque",
       "title": "Une journée de golf à Majorque.",
-      "body": "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. En solo à partir de 695 EUR. Groupes à partir de 950 EUR au total. Green fees additionnels, confirmés lors de notre conversation.",
+      "body": "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. En solo à partir de €695. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.",
       "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
       "secondaryCta": "Voir les formules"
@@ -757,7 +757,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Geschikt voor", "text": "Solospelers, koppels en kleine groepen die een echte golfdag op Mallorca willen." },
         { "label": "Formaat", "text": "Een baan, 18 holes, gekozen voor uw spel, met mij naast u gedurende de hele ronde." },
-        { "label": "Prijzen", "text": "Solo vanaf 695 EUR. Groep vanaf 950 EUR totaal. Greenfees zijn apart en worden voor de boeking bevestigd." },
+        { "label": "Prijzen", "text": "Solo vanaf €695. Groep vanaf €950 totaal. Greenfees zijn apart en worden voor de boeking bevestigd." },
         { "label": "Volgende stap", "text": "Stuur uw data, groepsgrootte en handicaprange. Andy reageert persoonlijk binnen 24 uur." }
       ]
     },
@@ -1005,7 +1005,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Bast for", "text": "Ensamspelare, par och sma sallskap som vill ha en riktig golfdag pa Mallorca." },
         { "label": "Format", "text": "En bana, 18 hal, vald efter ditt spel, med mig vid din sida under hela rundan." },
-        { "label": "Priser", "text": "Solo fran 695 EUR. Grupp fran 950 EUR totalt. Green fees ar separata och bekraftas innan bokning." },
+        { "label": "Priser", "text": "Solo fran €695. Grupp fran €950 totalt. Green fees ar separata och bekraftas innan bokning." },
         { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Andy svarar personligen inom 24 timmar." }
       ]
     },
