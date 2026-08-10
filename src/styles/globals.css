@@ -70,9 +70,9 @@
 
 .pyt-option-strip {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  max-width: 860px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 1080px;
   margin-top: 34px;
 }
 
@@ -86,6 +86,7 @@
   background: rgba(255,255,255,0.055);
   color: var(--cream);
   text-decoration: none;
+  min-width: 0;
   box-shadow: 0 18px 40px rgba(8, 7, 5, 0.14);
   transition: transform 0.3s var(--ease-luxury), border-color 0.3s var(--ease-luxury), background 0.3s var(--ease-luxury), box-shadow 0.3s var(--ease-luxury);
 }
@@ -1309,9 +1310,17 @@
   margin-top: 18px;
 }
 
+@media (max-width: 1180px) {
+  .pyt-option-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 860px;
+  }
+}
+
 @media (max-width: 900px) {
   .pyt-option-strip {
     grid-template-columns: 1fr;
+    max-width: 640px;
   }
 
   .itinerary-tool {
@@ -1346,6 +1355,15 @@
   .pyt-option-card {
     min-height: 0;
     padding: 20px;
+  }
+
+  .pyt-pro-cta__btn {
+    display: inline-flex;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   .pyt-option-strip {

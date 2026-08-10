@@ -127,7 +127,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
             ))}
           </ul>
 
-          {locale === 'en' && content.professional.possibilities ? (
+          {content.professional.possibilities ? (
             <div className="pyt-possibilities">
               <div className="pyt-possibilities__intro">
                 <h3>{content.professional.possibilities.title}</h3>

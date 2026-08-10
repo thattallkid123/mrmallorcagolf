@@ -20,7 +20,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proNote": "El servicio real: ruta, reservas, base y extras.",
       "itineraryLabel": "Viaje de ejemplo",
       "itineraryTitle": "Vea una semana real de 5 días",
-      "itineraryNote": "Cinco campos, y por qué van en ese orden."
+      "itineraryNote": "Una ruta con base en Palma y la razón del orden."
     },
     "free": {
       "eyebrow": "Básico",
@@ -42,7 +42,17 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       ],
       "note": "Sin compromiso al consultar. Le respondo personalmente en 24 horas con el siguiente paso recomendado y un presupuesto claro antes de reservar nada.",
       "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, handicap, zona de hotel y los campos que ya tenga pensados.",
-      "cta": "Consultar sobre la planificación"
+      "cta": "Consultar sobre la planificación",
+      "possibilities": {
+        "title": "Un viaje de golf puede ser sencillo o algo más completo.",
+        "body": "Según el grupo, puedo construir los días alrededor del hotel, restaurantes, spa, rutas por la costa, bodegas, chef privado, clases extra o tiempo tranquilo entre rondas.",
+        "items": [
+          "Hotel en Palma, resort o finca más tranquila",
+          "Restaurante con estrella Michelin, favorito local o chef privado",
+          "Spa, recuperación o tiempo sin golf entre rondas",
+          "Ruta costera, visita a una bodega o una cena más memorable"
+        ]
+      }
     },
     "addon": {
       "eyebrow": "Añadido disponible en cualquier nivel",
@@ -59,31 +69,31 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "Usar el recomendador de hoteles",
       "eyebrow": "Viaje de ejemplo",
       "title": "Cinco campos, cinco días. Base en Palma.",
-      "intro": "Una semana real para un grupo de jugadores de club alojados en Palma. Cinco vueltas, un trayecto largo y un motivo detrás del orden.",
+      "intro": "Un ejemplo con base en Palma para un grupo de jugadores de club: cinco rondas, un día más largo hacia el norte y una razón clara para el orden.",
       "whyThisShape": {
         "title": "Por qué la semana va en este orden",
-        "lead": "La mayoría elige cinco campos que le gustan y los juega en el orden que permitan las salidas. Así es como se acaba conduciendo una hora hacia el norte la mañana siguiente a un vuelo, o jugando el campo más difícil de la isla con las piernas cansadas. El orden importa tanto como los campos.",
+        "lead": "Muchos viajes fallan en los huecos entre tee times: la primera mañana, el trayecto largo, el campo duro, el vuelo de vuelta. Este es el tipo de ruta que revisaría antes de reservar nada.",
         "points": [
           {
             "title": "El día de llegada se mantiene fácil",
-            "body": "Han volado, recogido un coche y probablemente no han cogido un palo en semanas. El día uno es un campo abierto a quince minutos del hotel, saliendo de la ciudad en vez de entrar en ella, así que tampoco hay tráfico. Nadie necesita arruinar una tarjeta antes de que empiece el viaje."
+            "body": "Después de un vuelo y la cola del coche de alquiler, la primera ronda debería ser cercana, abierta y tranquila. Nadie necesita la tarjeta más dura de la semana el primer día."
           },
           {
             "title": "La dificultad sube a mitad de semana",
-            "body": "Son Gual el día tres, no el día uno. Para entonces han jugado dos vueltas, saben qué hace la bola con el viento, y el coaching vale mucho más de lo que habría valido al llegar."
+            "body": "Son Gual tiene más sentido cuando el grupo ya se ha asentado. Para entonces el viento, el ritmo y los fallos están más claros, y cualquier coaching tiene más con lo que trabajar."
           },
           {
             "title": "Un solo trayecto largo, a mitad de semana",
-            "body": "Alcanada está a cincuenta minutos al norte y merece cada uno de ellos, pero es un día completo. Va el día cuatro, cuando el grupo ya está asentado, no al llegar ni la mañana del vuelo de vuelta."
+            "body": "Alcanada merece el viaje, pero es un día completo. No lo pondría el día de llegada ni cerca del vuelo de vuelta."
           },
           {
             "title": "Terminar corto y cerca del aeropuerto",
-            "body": "El día cinco está a treinta minutos de Palma y a poco más de veinte de la terminal por autopista. Cualquier imprevisto les cuesta la comida, no una vuelta."
+            "body": "La última ronda debería simplificar el aeropuerto. Un pequeño retraso debería costar la comida, no el vuelo."
           }
         ]
       },
-      "summary": "Cuatro vueltas a menos de treinta minutos de Palma y un día completo al norte. El mismo hotel toda la semana, sin hacer y deshacer maletas, y un solo trayecto largo el día que tiene sentido.",
-      "feesNote": "Los green fees varían según la temporada.",
+      "summary": "La idea es sencilla: mismo hotel, trayectos sensatos y el golf más duro colocado donde corresponde.",
+      "feesNote": "Los green fees varían según la temporada."
     }
   },
   "de": {
@@ -99,7 +109,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proNote": "Der eigentliche Service: Route, Buchungen, Basis und Extras.",
       "itineraryLabel": "Beispielreise",
       "itineraryTitle": "Eine echte Woche mit 5 Tagen",
-      "itineraryNote": "Fünf Plätze, und warum sie in dieser Reihenfolge liegen."
+      "itineraryNote": "Eine Route mit Standort Palma und der Grund dahinter."
     },
     "free": {
       "eyebrow": "Basis",
@@ -121,7 +131,17 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       ],
       "note": "Keine Verpflichtung bei der Anfrage. Ich antworte persönlich innerhalb von 24 Stunden mit dem empfohlenen nächsten Schritt und einem klaren Angebot, bevor irgendetwas gebucht wird.",
       "sendPrompt": "Am besten senden: Daten, Gruppengröße, Handicap, Hotelregion und alle Plätze, die schon auf Ihrer Liste stehen.",
-      "cta": "Reiseplanung anfragen"
+      "cta": "Reiseplanung anfragen",
+      "possibilities": {
+        "title": "Ein Golftrip kann einfach bleiben oder deutlich vollständiger werden.",
+        "body": "Je nach Gruppe kann ich die Tage rund um Hotelwahl, Restaurants, Spa-Zeit, Küstenfahrten, Weinprobe, privaten Koch, zusätzliche Stunden oder ruhigere Erholung zwischen den Runden planen.",
+        "items": [
+          "Hotel in Palma, Resort oder ruhigere Finca",
+          "Michelin-Restaurant, lokaler Favorit oder privater Koch",
+          "Spa, Erholung oder ruhigere Zeit ohne Golf zwischen den Runden",
+          "Küstenfahrt, Besuch eines Weinguts oder ein besonderer Abendplan"
+        ]
+      }
     },
     "addon": {
       "eyebrow": "Zusatzoption auf jeder Stufe",
@@ -138,31 +158,31 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "Hotel-Empfehlung nutzen",
       "eyebrow": "Beispielreise",
       "title": "Fünf Plätze, fünf Tage. Standort Palma.",
-      "intro": "Eine echte Woche für eine Gruppe Clubgolfer mit Standort Palma. Fünf Runden, eine lange Fahrt und ein Grund hinter der Reihenfolge.",
+      "intro": "Ein Beispiel mit Standort Palma für eine Gruppe Clubgolfer: fünf Runden, ein längerer Tag im Norden und ein klarer Grund für die Reihenfolge.",
       "whyThisShape": {
         "title": "Warum die Woche in dieser Reihenfolge läuft",
-        "lead": "Die meisten suchen sich fünf Plätze aus, die ihnen gefallen, und spielen sie in der Reihenfolge, die die Startzeiten hergeben. So landet man am Morgen nach dem Flug auf einer Stunde Fahrt Richtung Norden oder spielt den schwersten Platz der Insel mit müden Beinen. Die Reihenfolge zählt genauso viel wie die Plätze.",
+        "lead": "Viele Reisen scheitern in den Lücken zwischen den Startzeiten: am ersten Morgen, bei der langen Fahrt, am schweren Platz, beim Rückflug. Genau diese Route würde ich prüfen, bevor ich etwas buche.",
         "points": [
           {
-            "title": "Der Anreisetag bleibt entspannt",
-            "body": "Sie sind geflogen, haben einen Mietwagen abgeholt und vermutlich seit Wochen keinen Schläger in der Hand gehabt. Tag eins ist ein offener Platz fünfzehn Minuten vom Hotel, aus der Stadt heraus statt hinein, also auch ohne Verkehr. Niemand braucht eine ruinierte Karte, bevor die Reise überhaupt angefangen hat."
+            "title": "Der Anreisetag bleibt leicht",
+            "body": "Nach Flug und Mietwagenschlange sollte die erste Runde nah, offen und ruhig sein. Niemand braucht am ersten Tag die schwerste Scorekarte der Woche."
           },
           {
             "title": "Die Schwierigkeit steigt zur Wochenmitte",
-            "body": "Son Gual an Tag drei, nicht an Tag eins. Bis dahin haben Sie zwei Runden gespielt, wissen, was der Ball im Wind macht, und das Coaching ist deutlich mehr wert als es bei der Ankunft gewesen wäre."
+            "body": "Son Gual ergibt mehr Sinn, wenn die Gruppe angekommen ist. Dann sind Wind, Tempo und Fehlschläge klarer, und jedes Coaching hat mehr Grundlage."
           },
           {
             "title": "Eine lange Fahrt, mitten in der Woche",
-            "body": "Alcanada liegt fünfzig Minuten nördlich und ist jede einzelne davon wert, aber es ist ein Ganztagesausflug. Er kommt an Tag vier, wenn die Gruppe angekommen ist, nicht am Anreisetag und nicht am Morgen des Rückflugs."
+            "body": "Alcanada ist die Fahrt wert, aber es ist ein ganzer Tag. Ich würde es nicht auf den Anreisetag legen und nicht in die Nähe des Rückflugs."
           },
           {
-            "title": "Zum Schluss kurz und flughafennah",
-            "body": "Tag fünf liegt dreißig Minuten von Palma und gut zwanzig Minuten vom Terminal entfernt, über die Autobahn. Wenn etwas dazwischenkommt, kostet es das Mittagessen, nicht die Runde."
+            "title": "Kurz und flughafennah abschließen",
+            "body": "Die letzte Runde sollte den Flughafen einfach halten. Eine kleine Verzögerung sollte das Mittagessen kosten, nicht den Flug."
           }
         ]
       },
-      "summary": "Vier Runden innerhalb von dreißig Minuten um Palma, ein voller Tag im Norden. Dasselbe Hotel die ganze Woche, kein ständiges Ein- und Auspacken, und die eine lange Fahrt an dem Tag, an dem sie Sinn ergibt.",
-      "feesNote": "Die Greenfees schwanken je nach Saison.",
+      "summary": "Der Punkt ist einfach: dasselbe Hotel, sinnvolle Fahrten und das schwerste Golf dort, wo es hingehört.",
+      "feesNote": "Die Greenfees schwanken je nach Saison."
     }
   },
   "fr": {
@@ -178,7 +198,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proNote": "Le vrai service : itinéraire, réservations, base et options.",
       "itineraryLabel": "Séjour type",
       "itineraryTitle": "Voir une vraie semaine de 5 jours",
-      "itineraryNote": "Cinq parcours, et pourquoi cet ordre."
+      "itineraryNote": "Un itinéraire basé à Palma et la raison de cet ordre."
     },
     "free": {
       "eyebrow": "Basique",
@@ -200,7 +220,17 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       ],
       "note": "Aucun engagement au stade de la demande. Je réponds personnellement sous 24 heures avec la prochaine étape recommandée et un devis clair avant toute réservation.",
       "sendPrompt": "Idéalement : dates, taille du groupe, niveau, zone d’hotel et parcours déjà envisagés.",
-      "cta": "Demander la planification"
+      "cta": "Demander la planification",
+      "possibilities": {
+        "title": "Un séjour golf peut rester simple ou devenir plus complet.",
+        "body": "Selon le groupe, je peux organiser les journées autour du choix de l’hôtel, des restaurants, du spa, de trajets côtiers, d’une dégustation de vin, d’un chef privé, de leçons supplémentaires ou de temps plus calme entre les parties.",
+        "items": [
+          "Hôtel à Palma, resort ou finca plus calme",
+          "Restaurant étoilé Michelin, adresse locale ou chef privé",
+          "Spa, récupération ou temps sans golf entre les parties",
+          "Route côtière, visite d’un domaine ou soirée plus marquante"
+        ]
+      }
     },
     "addon": {
       "eyebrow": "Option disponible à tout niveau",
@@ -217,31 +247,31 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "Utiliser le recommandeur d'hôtels",
       "eyebrow": "Séjour type",
       "title": "Cinq parcours, cinq jours. Basé à Palma.",
-      "intro": "Une vraie semaine pour un groupe de golfeurs de club logés à Palma. Cinq parties, un long trajet, et une raison derrière l’ordre.",
+      "intro": "Un exemple basé à Palma pour un groupe de golfeurs de club : cinq parties, une journée plus longue vers le nord et une raison claire pour l’ordre.",
       "whyThisShape": {
         "title": "Pourquoi la semaine suit cet ordre",
-        "lead": "La plupart des gens choisissent cinq parcours qui leur plaisent et les jouent dans l’ordre que permettent les départs. C’est comme ça qu’on se retrouve à faire une heure de route vers le nord le lendemain d’un vol, ou à jouer le parcours le plus dur de l’île avec les jambes lourdes. L’ordre compte autant que les parcours.",
+        "lead": "Beaucoup de séjours se compliquent dans les espaces entre les départs : le premier matin, le long trajet, le parcours difficile, le vol retour. C’est le type d’itinéraire que je vérifierais avant de réserver quoi que ce soit.",
         "points": [
           {
             "title": "Le jour d’arrivée reste facile",
-            "body": "Vous avez pris l’avion, récupéré une voiture et sans doute pas touché un club depuis des semaines. Le premier jour, c’est un parcours ouvert à quinze minutes de l’hôtel, en sortant de la ville plutôt qu’en y entrant, donc sans circulation. Personne n’a besoin de gâcher une carte avant même que le séjour ait commencé."
+            "body": "Après un vol et l’attente pour la voiture de location, la première partie devrait être proche, ouverte et calme. Personne n’a besoin de la carte la plus dure de la semaine le premier jour."
           },
           {
-            "title": "La difficulté monte en milieu de semaine",
-            "body": "Son Gual le jour trois, pas le jour un. À ce moment-là vous avez joué deux parties, vous savez ce que fait la balle dans le vent, et le coaching vaut bien plus qu’il n’aurait valu à l’arrivée."
+            "title": "La difficulté monte au milieu",
+            "body": "Son Gual a plus de sens une fois le groupe installé. À ce moment-là, le vent, le rythme et les erreurs sont plus clairs, et le coaching a plus de matière."
           },
           {
             "title": "Un seul long trajet, en milieu de semaine",
-            "body": "Alcanada est à cinquante minutes au nord et les vaut toutes, mais c’est une journée entière. Il se place le jour quatre, quand le groupe a pris ses marques, pas à l’arrivée ni le matin du vol retour."
+            "body": "Alcanada vaut le trajet, mais c’est une journée complète. Je ne le mettrais ni le jour d’arrivée, ni près du vol retour."
           },
           {
             "title": "Finir court et près de l’aéroport",
-            "body": "Le jour cinq est à trente minutes de Palma et à un peu plus de vingt du terminal par l’autoroute. Le moindre imprévu vous coûte le déjeuner, pas une partie."
+            "body": "La dernière partie doit simplifier l’aéroport. Un petit retard devrait coûter le déjeuner, pas le vol."
           }
         ]
       },
-      "summary": "Quatre parties à moins de trente minutes de Palma, une journée complète dans le nord. Le même hôtel toute la semaine, pas de valises à refaire, et un seul long trajet, le jour où il a du sens.",
-      "feesNote": "Les green fees varient selon la saison.",
+      "summary": "L’idée est simple : même hôtel, trajets sensés, et le golf le plus difficile placé au bon moment.",
+      "feesNote": "Les green fees varient selon la saison."
     }
   },
   "nl": {
@@ -257,7 +287,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proNote": "De echte dienst: route, boekingen, basis en extra’s.",
       "itineraryLabel": "Voorbeeldreis",
       "itineraryTitle": "Bekijk een echte week van 5 dagen",
-      "itineraryNote": "Vijf banen, en waarom ze in die volgorde liggen."
+      "itineraryNote": "Een route vanuit Palma en de gedachte erachter."
     },
     "free": {
       "eyebrow": "Basis",
@@ -279,7 +309,17 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       ],
       "note": "Geen verplichting bij aanvraag. Ik reageer persoonlijk binnen 24 uur met de aanbevolen volgende stap en een duidelijke prijsopgave voordat er iets wordt geboekt.",
       "sendPrompt": "Graag meesturen: data, groepsgrootte, handicap, hotelregio en banen die al op uw shortlist staan.",
-      "cta": "Reisplanning aanvragen"
+      "cta": "Reisplanning aanvragen",
+      "possibilities": {
+        "title": "Een golfreis kan eenvoudig blijven, of vollediger worden.",
+        "body": "Afhankelijk van de groep kan ik de dagen bouwen rond hotelkeuze, restaurants, spa, kustritten, wijnproeven, een privékok, extra lessen of rustigere hersteltijd tussen rondes.",
+        "items": [
+          "Hotel in Palma, resort of rustigere finca",
+          "Michelinrestaurant, lokale favoriet of privékok",
+          "Spa, herstel of rustige tijd zonder golf tussen rondes",
+          "Kustrit, wijngaardbezoek of een sterkere avondplanning"
+        ]
+      }
     },
     "addon": {
       "eyebrow": "Extra optie op elk niveau",
@@ -296,31 +336,31 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "Gebruik de hotelzoeker",
       "eyebrow": "Voorbeeldreis",
       "title": "Vijf banen, vijf dagen. Basis in Palma.",
-      "intro": "Een echte week voor een groep clubgolfers met Palma als uitvalsbasis. Vijf rondes, één lange rit, en een reden achter de volgorde.",
+      "intro": "Een voorbeeld met Palma als basis voor een groep clubgolfers: vijf rondes, één langere dag naar het noorden en een duidelijke reden voor de volgorde.",
       "whyThisShape": {
         "title": "Waarom de week in deze volgorde loopt",
-        "lead": "De meeste mensen kiezen vijf banen die er goed uitzien en spelen ze in de volgorde die de starttijden toelaten. Zo rijd je de ochtend na een vlucht een uur naar het noorden, of speel je de zwaarste baan van het eiland op vermoeide benen. De volgorde telt net zo zwaar als de banen.",
+        "lead": "Veel reizen gaan mis in de gaten tussen starttijden: de eerste ochtend, de lange rit, de zware baan, de vlucht naar huis. Dit is het soort route dat ik zou controleren voordat ik iets boek.",
         "points": [
           {
-            "title": "De aankomstdag blijft rustig",
-            "body": "U hebt gevlogen, een auto opgehaald en waarschijnlijk weken geen club vastgehad. Dag één is een open baan op vijftien minuten van het hotel, de stad uit in plaats van erin, dus ook geen verkeer. Niemand wil een verpeste kaart voordat de reis goed en wel begonnen is."
+            "title": "De aankomstdag blijft makkelijk",
+            "body": "Na een vlucht en de rij bij de huurauto moet de eerste ronde dichtbij, open en rustig zijn. Niemand heeft op dag één de zwaarste scorekaart van de week nodig."
           },
           {
-            "title": "De moeilijkheid loopt op richting het midden",
-            "body": "Son Gual op dag drie, niet op dag één. Tegen die tijd hebt u twee rondes gespeeld, weet u wat de bal doet in de wind, en is de coaching veel meer waard dan bij aankomst."
+            "title": "De moeilijkheid loopt op in het midden",
+            "body": "Son Gual heeft meer zin zodra de groep geland is. Dan zijn wind, tempo en missers duidelijker, en heeft coaching meer om mee te werken."
           },
           {
             "title": "Eén lange rit, midden in de week",
-            "body": "Alcanada ligt vijftig minuten naar het noorden en is elke minuut waard, maar het is een hele dag. Die gaat op dag vier, als de groep gesetteld is, niet op de aankomstdag en niet op de ochtend van de terugvlucht."
+            "body": "Alcanada is de rit waard, maar het is een volledige dag. Ik zou het niet op de aankomstdag zetten en ook niet dicht bij de terugvlucht."
           },
           {
-            "title": "Eindig kort en dicht bij het vliegveld",
-            "body": "Dag vijf ligt dertig minuten van Palma en ruim twintig minuten van de terminal via de snelweg. Loopt er iets mis, dan kost dat de lunch, niet de ronde."
+            "title": "Eindig kort en dicht bij de luchthaven",
+            "body": "De laatste ronde moet de luchthaven eenvoudig houden. Een kleine vertraging mag lunch kosten, niet de vlucht."
           }
         ]
       },
-      "summary": "Vier rondes binnen dertig minuten van Palma, één volle dag naar het noorden. Dezelfde hotelkamer de hele week, geen koffers in en uit, en die ene lange rit op de dag dat hij logisch is.",
-      "feesNote": "Greenfees verschillen per seizoen.",
+      "summary": "Het punt is eenvoudig: hetzelfde hotel, logische ritten en de zwaarste golf op de plek waar die hoort.",
+      "feesNote": "Greenfees verschillen per seizoen."
     }
   },
   "sv": {
@@ -336,7 +376,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proNote": "Den riktiga tjänsten: rutt, bokningar, bas och tillägg.",
       "itineraryLabel": "Exempelresa",
       "itineraryTitle": "Se en riktig vecka på 5 dagar",
-      "itineraryNote": "Fem banor, och varför de ligger i den ordningen."
+      "itineraryNote": "En Palma-baserad rutt och tanken bakom den."
     },
     "free": {
       "eyebrow": "Grund",
@@ -358,7 +398,17 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       ],
       "note": "Inget åtagande vid förfrågan. Jag svarar personligen inom 24 timmar med rekommenderat nästa steg och en tydlig offert innan något bokas.",
       "sendPrompt": "Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor ni redan funderar på.",
-      "cta": "Fråga om reseplanering"
+      "cta": "Fråga om reseplanering",
+      "possibilities": {
+        "title": "En golfresa kan vara enkel eller bli mer komplett.",
+        "body": "Beroende på gruppen kan jag forma dagarna runt hotellval, restauranger, spa, kustvägar, vinprovning, privat kock, extra lektioner eller lugnare återhämtning mellan ronderna.",
+        "items": [
+          "Hotell i Palma, resort eller lugnare finca",
+          "Michelinrestaurang, lokal favorit eller privat kock",
+          "Spa, återhämtning eller lugnare tid utan golf mellan ronderna",
+          "Kustväg, vingårdsbesök eller en mer minnesvärd kvällsplan"
+        ]
+      }
     },
     "addon": {
       "eyebrow": "Tillägg på alla nivåer",
@@ -375,31 +425,31 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "Använd hotellrekommendationen",
       "eyebrow": "Exempelresa",
       "title": "Fem banor, fem dagar. Bas i Palma.",
-      "intro": "En riktig vecka för ett gäng klubbgolfare med Palma som bas. Fem ronder, en lång körning, och en tanke bakom ordningen.",
+      "intro": "Ett Palma-baserat exempel för en grupp klubbgolfare: fem ronder, en längre dag norrut och en tydlig anledning till ordningen.",
       "whyThisShape": {
         "title": "Varför veckan ligger i den här ordningen",
-        "lead": "De flesta väljer fem banor som ser bra ut och spelar dem i den ordning starttiderna tillåter. Det är så man hamnar i en timmes körning norrut morgonen efter flyget, eller spelar öns svåraste bana med trötta ben. Ordningen betyder lika mycket som banorna.",
+        "lead": "Många resor faller i luckorna mellan starttiderna: första morgonen, den långa körningen, den svåra banan, flyget hem. Det här är den typ av rutt jag skulle kontrollera innan något bokas.",
         "points": [
           {
-            "title": "Ankomstdagen får vara lätt",
-            "body": "Ni har flugit, hämtat hyrbil och förmodligen inte svingat en klubba på veckor. Dag ett är en öppen bana femton minuter från hotellet, ut ur staden i stället för in, så ingen trafik heller. Ingen behöver förstöra ett scorekort innan resan ens har börjat."
+            "title": "Ankomstdagen hålls enkel",
+            "body": "Efter flyg och hyrbilskö ska första ronden vara nära, öppen och lugn. Ingen behöver veckans svåraste scorekort dag ett."
           },
           {
-            "title": "Svårigheten stiger mot mitten",
-            "body": "Son Gual dag tre, inte dag ett. Då har ni spelat två ronder, vet vad bollen gör i vinden, och coachingen är värd betydligt mer än den hade varit vid ankomst."
+            "title": "Svårigheten byggs upp i mitten",
+            "body": "Son Gual passar bättre när gruppen har landat. Då är vind, tempo och missar tydligare, och eventuell coaching har mer att arbeta med."
           },
           {
             "title": "En lång körning, mitt i veckan",
-            "body": "Alcanada ligger femtio minuter norrut och är värd varenda en, men det är en heldag. Den läggs dag fyra när gruppen har landat, inte på ankomstdagen och inte på morgonen före hemflyget."
+            "body": "Alcanada är värd resan, men det är en hel dag. Jag skulle inte lägga den på ankomstdagen eller nära hemflyget."
           },
           {
             "title": "Avsluta kort och nära flygplatsen",
-            "body": "Dag fem ligger trettio minuter från Palma och drygt tjugo från terminalen via motorvägen. Går något snett kostar det lunchen, inte ronden."
+            "body": "Sista ronden ska göra flygplatsen enkel. En liten försening ska kosta lunch, inte flyget."
           }
         ]
       },
-      "summary": "Fyra ronder inom trettio minuter från Palma, en hel dag i norr. Samma hotell hela veckan, ingen ompackning, och den enda långa körningen den dag då den är värd det.",
-      "feesNote": "Greenfeerna varierar med säsong.",
+      "summary": "Poängen är enkel: samma hotell, rimliga körningar och den svåraste golfen placerad där den hör hemma.",
+      "feesNote": "Greenfeerna varierar med säsong."
     }
   },
   "zh": {
@@ -415,7 +465,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proNote": "真正的服务：路线、预订、住宿与附加项目。",
       "itineraryLabel": "行程范例",
       "itineraryTitle": "看一份真实的五天行程",
-      "itineraryNote": "五座球场，以及为什么这样排。"
+      "itineraryNote": "以帕尔马为基地的路线，以及背后的安排逻辑。"
     },
     "free": {
       "eyebrow": "基础",
@@ -437,7 +487,17 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       ],
       "note": "咨询阶段不涉及任何承诺。我会在24小时内亲自回复，给出建议的下一步和明确报价，之后才会预订任何内容。",
       "sendPrompt": "最好一并发送：日期、人数、差点、酒店区域，以及已经看中的球场。",
-      "cta": "咨询行程规划"
+      "cta": "咨询行程规划",
+      "possibilities": {
+        "title": "一趟高尔夫旅行可以很简单，也可以安排得更完整。",
+        "body": "根据同行的人，我可以把行程围绕酒店选择、餐厅、spa、海岸线自驾、酒庄品酒、私人厨师、额外课程，或两轮之间更安静的恢复时间来安排。",
+        "items": [
+          "帕尔马酒店、度假村，或更安静的 finca",
+          "米其林餐厅、本地常去的餐厅，或私人厨师",
+          "两轮之间的 spa、恢复时间，或非高尔夫安排",
+          "海岸线自驾、酒庄参观，或更有记忆点的晚餐计划"
+        ]
+      }
     },
     "addon": {
       "eyebrow": "任何级别都可加购",
@@ -455,31 +515,31 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "使用酒店推荐工具",
       "eyebrow": "行程范例",
       "title": "五座球场，五天。以帕尔马为基地。",
-      "intro": "一份真实的一周安排，适合住在帕尔马的一群俱乐部球友。五场球，一趟远程，以及这个顺序背后的理由。",
+      "intro": "一个以帕尔马为基地的例子，适合一组俱乐部球友：五轮球，其中一天去北部，顺序背后有清楚的理由。",
       "whyThisShape": {
-        "title": "这一周为什么这样排",
-        "lead": "大多数人挑五座看着不错的球场，然后按开球时间排得开的顺序去打。结果就是下飞机第二天早上要往北开一个小时，或者拖着疲惫的双腿去打岛上最难的球场。顺序和选场同样重要。",
+        "title": "为什么这一周这样安排",
+        "lead": "很多行程出问题，不是在 tee time 本身，而是在中间的空隙：第一天早上、长途车程、难度大的球场、返程航班。这是我在预订前会先检查的路线。",
         "points": [
           {
-            "title": "抵达当天保持轻松",
-            "body": "刚下飞机、取了车，而且大概已经好几周没碰球杆了。第一天安排一座离酒店十五分钟的开阔球场，方向是出城而不是进城，也就避开了车流。没人希望旅程还没开始，成绩单就先毁了。"
+            "title": "抵达当天保持简单",
+            "body": "下飞机、排队取车之后，第一轮应该近、开阔、轻松。没人需要在第一天就面对全周最难的记分卡。"
           },
           {
-            "title": "难度安排在周中",
-            "body": "Son Gual 放在第三天，而不是第一天。到那时您已经打了两场，知道球在风里是什么表现，教练指导的价值远高于刚到时。"
+            "title": "难度放在中段",
+            "body": "Son Gual 更适合等大家进入状态后再打。到那时，风、节奏和常见失误都更清楚，任何场上指导也更有针对性。"
           },
           {
-            "title": "只安排一趟远程，放在周中",
-            "body": "Alcanada 在北边五十分钟车程，值得这趟路，但它是一整天的行程。所以放在第四天，等大家都安顿下来之后，而不是抵达当天或返程航班的早上。"
+            "title": "只安排一次长途，放在周中",
+            "body": "Alcanada 值得这趟车程，但它是一整天。我不会把它放在抵达日，也不会放在返程航班附近。"
           },
           {
-            "title": "收尾选短球场，靠近机场",
-            "body": "第五天离帕尔马三十分钟，走高速到航站楼二十分钟出头。当天万一出点状况，损失的是午饭，不是一场球。"
+            "title": "最后一轮短一些，靠近机场",
+            "body": "最后一轮应该让去机场这件事简单。小延误最多影响午餐，不应该影响航班。"
           }
         ]
       },
-      "summary": "四场球都在帕尔马三十分钟车程内，一整天在北部。整周住同一家酒店，不用反复收拾行李，唯一一趟远程也安排在最合适的那天。",
-      "feesNote": "果岭费随季节浮动。",
+      "summary": "重点很简单：同一家酒店，合理车程，最难的高尔夫放在最合适的位置。",
+      "feesNote": "果岭费随季节浮动。"
     }
   }
 }
