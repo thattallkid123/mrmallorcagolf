@@ -119,6 +119,17 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Clima · Green fees por temporada · Afluencia"
       },
       {
+        "slug": "5-day-mallorca-golf-itinerary",
+        "badge": "Itinerario",
+        "badgeGold": true,
+        "img": "/images/blog-trip-planning/Son Gual.webp",
+        "imgPosition": "center 48%",
+        "title": "Itinerario de golf en Mallorca: 5 días desde Palma",
+        "intro": "Una ruta concreta de cinco días con Son Quint, Santa Ponsa 1, Son Gual, Alcanada y T Golf Calvià, más cómo encajan cenas y desplazamientos.",
+        "readTime": "8 min",
+        "keywords": "5 días · Base Palma · Son Gual · Alcanada"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Guía",
         "title": "¿Cuánto cuesta el golf en Mallorca? Green fees, alquiler y costes ocultos",
@@ -271,6 +282,17 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Wetter · Greenfees nach Saison · Besucheraufkommen"
       },
       {
+        "slug": "5-day-mallorca-golf-itinerary",
+        "badge": "Route",
+        "badgeGold": true,
+        "img": "/images/blog-trip-planning/Son Gual.webp",
+        "imgPosition": "center 48%",
+        "title": "5 Tage Golf auf Mallorca: fünf Runden ab Palma",
+        "intro": "Eine konkrete Fünf-Tage-Route mit Son Quint, Santa Ponsa 1, Son Gual, Alcanada und T Golf Calvià, plus Abende und Fahrten.",
+        "readTime": "8 Min.",
+        "keywords": "5 Tage · Standort Palma · Son Gual · Alcanada"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Ratgeber",
         "title": "Was kostet Golf auf Mallorca? Greenfees, Leihausrüstung und versteckte Kosten",
@@ -420,6 +442,17 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Octobre est le mois que je choisirais. Voici pourquoi, et ce que chaque mois offre réellement en termes de météo, de prix et de fréquentation.",
         "readTime": "6 min",
         "keywords": "Météo · Green fees par saison · Fréquentation"
+      },
+      {
+        "slug": "5-day-mallorca-golf-itinerary",
+        "badge": "Itinéraire",
+        "badgeGold": true,
+        "img": "/images/blog-trip-planning/Son Gual.webp",
+        "imgPosition": "center 48%",
+        "title": "Itinéraire golf à Mallorca: 5 jours depuis Palma",
+        "intro": "Une route précise de cinq jours avec Son Quint, Santa Ponsa 1, Son Gual, Alcanada et T Golf Calvià, plus les dîners et trajets.",
+        "readTime": "8 min",
+        "keywords": "5 jours · Base Palma · Son Gual · Alcanada"
       },
       {
         "slug": "golf-cost-mallorca",
@@ -574,6 +607,17 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Weer · Greenfees per seizoen · Drukte"
       },
       {
+        "slug": "5-day-mallorca-golf-itinerary",
+        "badge": "Route",
+        "badgeGold": true,
+        "img": "/images/blog-trip-planning/Son Gual.webp",
+        "imgPosition": "center 48%",
+        "title": "5 dagen golf op Mallorca: vijf rondes vanuit Palma",
+        "intro": "Een concrete vijfdaagse route met Son Quint, Santa Ponsa 1, Son Gual, Alcanada en T Golf Calvià, plus hoe diners en reisdagen passen.",
+        "readTime": "8 min",
+        "keywords": "5 dagen · Palma-basis · Son Gual · Alcanada"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Gids",
         "title": "Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten",
@@ -726,6 +770,17 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Väder · Greenfees per säsong · Trängsel"
       },
       {
+        "slug": "5-day-mallorca-golf-itinerary",
+        "badge": "Rutt",
+        "badgeGold": true,
+        "img": "/images/blog-trip-planning/Son Gual.webp",
+        "imgPosition": "center 48%",
+        "title": "5 dagar golf på Mallorca: fem ronder från Palma",
+        "intro": "En konkret femdagarsrutt med Son Quint, Santa Ponsa 1, Son Gual, Alcanada och T Golf Calvià, plus hur middagar och resdagar passar.",
+        "readTime": "8 min",
+        "keywords": "5 dagar · Palma-bas · Son Gual · Alcanada"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Guide",
         "title": "Vad kostar golf på Mallorca? Greenfees, uthyrning och dolda kostnader",
@@ -876,6 +931,17 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "如果只能选一个月，我会选十月。原因在此，以及每个月在天气、价格和人流方面的真实表现。",
         "readTime": "6分钟",
         "keywords": "天气 · 按季节果岭费 · 人流量"
+      },
+      {
+        "slug": "5-day-mallorca-golf-itinerary",
+        "badge": "行程",
+        "badgeGold": true,
+        "img": "/images/blog-trip-planning/Son Gual.webp",
+        "imgPosition": "center 48%",
+        "title": "马略卡5天高尔夫行程：从帕尔马出发",
+        "intro": "一条具体的五天路线，包括 Son Quint、Santa Ponsa 1、Son Gual、Alcanada 和 T Golf Calvià，也说明晚餐和车程怎样安排。",
+        "readTime": "8分钟",
+        "keywords": "5天 · 帕尔马基地 · Son Gual · Alcanada"
       },
       {
         "slug": "golf-cost-mallorca",
