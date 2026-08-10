@@ -160,6 +160,13 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
 
                 <div className="pyt-itin__footer">
                   <p className="pyt-itin__summary">{content.sampleItinerary.summary}</p>
+                  {locale === 'en' && content.sampleItinerary.fullGuideLink ? (
+                    <p>
+                      <Link href={content.sampleItinerary.fullGuideLink} className="pyt-itin__hotel-link">
+                        {content.sampleItinerary.fullGuideLabel}
+                      </Link>
+                    </p>
+                  ) : null}
                   <p>
                     {content.sampleItinerary.feesNote}{' '}
                     <Link href={buildLocalePath(content.sampleItinerary.feesLink, locale)} className="pyt-itin__hotel-link">
@@ -201,6 +208,20 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               <li key={item}>{item}</li>
             ))}
           </ul>
+
+          {locale === 'en' && content.professional.possibilities ? (
+            <div className="pyt-possibilities">
+              <div className="pyt-possibilities__intro">
+                <h3>{content.professional.possibilities.title}</h3>
+                <p>{content.professional.possibilities.body}</p>
+              </div>
+              <ul className="pyt-possibilities__list">
+                {content.professional.possibilities.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
 
           <div className="pyt-pro-cta">
             <p className="pyt-pro-cta__note">{content.professional.note}</p>

@@ -37,6 +37,16 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       "Dining suggestions built around the schedule",
       "Play With A Pro available as an add-on at any stage"
     ],
+    "possibilities": {
+      "title": "A golf trip can stay simple, or become something more complete.",
+      "body": "Depending on the group, I can shape the days around hotel choice, restaurants, spa time, coastal drives, wine tasting, private chef evenings, extra lessons, or quieter recovery time between rounds.",
+      "items": [
+        "Palma hotel, resort or quieter finca base",
+        "Michelin-starred restaurant, local favourite or private chef",
+        "Spa, recovery or quieter non-golf time between rounds",
+        "Coastal drive, vineyard visit or a more memorable evening plan"
+      ]
+    },
     "note": "No commitment at enquiry stage. I reply personally within 24 hours with the recommended next step and a clear quote before anything is booked.",
     "sendPrompt": "Best details to send: dates, group size, handicap range, hotel area, and any courses already on your shortlist.",
     "cta": "Enquire about trip planning"
@@ -153,6 +163,8 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "feesNote": "Green fees vary by season.",
     "feesCta": "Check current rates in the green fee tool",
     "feesLink": "/tools/green-fees",
+    "fullGuideLabel": "Read the full 5-day itinerary",
+    "fullGuideLink": "/guides/5-day-mallorca-golf-itinerary",
     "hotelEyebrow": "Where to stay",
     "hotelCta": "Use the hotel recommender",
     "hotelLink": "/tools/hotel-recommender",

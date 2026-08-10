@@ -116,7 +116,7 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Un parcours. Une journée complète aux côtés d\'un PGA Advanced Professional qui a tout organisé. En solo à partir de €695. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.',
     playMultiDayDetail:
-      'La Journée Andy Complète. Un jour, un parcours, tout est organisé. Sur demande. Pas de logistique, pas de décisions, rien à organiser à votre arrivée. Selon ce que vous souhaitez de cette journée, cela peut inclure un caddie, un vidéographe, un déjeuner Michelin, des transferts privés, accès au spa, un équipement de location premium. Andy coordonne tout à l\'avance et confirme l\'itinéraire complet avec vous avant votre arrivée.',
+      'Signature Day. Une journee de golf privee avec Andy, une session avec John Brazier, des transferts prives et une soiree coordonnee. Le tarif est confirme apres la premiere conversation, lorsque le cadre de la journee est clair.',
     homeMultiDayBody:
       'Signature Day - une journee de golf privee avec Andy, John Brazier, des transferts prives et une soiree coordonnee. Tarif adapte a la journee.',
     contactUnknown: 'Je ne suis pas encore certain(e) - conseillez-moi',

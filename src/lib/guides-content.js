@@ -155,6 +155,17 @@ export const GUIDES_CONTENT = {
       "keywords": "Weather · Green fees by season · Crowds"
     },
     {
+      "slug": "5-day-mallorca-golf-itinerary",
+      "badge": "Itinerary",
+      "badgeGold": true,
+      "img": "/images/blog-trip-planning/Son Gual.webp",
+      "imgPosition": "center 48%",
+      "title": "5-Day Mallorca Golf Trip Itinerary - Five Rounds from a Palma Base",
+      "intro": "A specific five-day route with Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvia, plus where the dinners and travel days fit.",
+      "readTime": "8 min read",
+      "keywords": "5 days · Palma base · Son Gual · Alcanada"
+    },
+    {
       "slug": "golf-cost-mallorca",
       "badge": "Guide",
       "img": "/images/blog-golf-cost/Alcanada.webp",

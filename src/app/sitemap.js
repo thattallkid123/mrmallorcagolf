@@ -13,6 +13,7 @@ const LAST_MODIFIED_BY_PATH = {
   '/golf-courses': '2026-06-01',
   '/guides': '2026-06-01',
   '/guides/best-golf-courses-mallorca': '2026-06-01',
+  '/guides/5-day-mallorca-golf-itinerary': '2026-08-10',
   '/guides/golf-cost-mallorca': '2026-05-01',
   '/guides/golf-club-hire-mallorca': '2026-05-01',
   '/guides/best-time-play-golf-mallorca': '2026-05-01',

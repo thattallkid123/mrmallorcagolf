@@ -258,6 +258,68 @@
   background: var(--gold);
 }
 
+.pyt-possibilities {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: clamp(24px, 4vw, 46px);
+  align-items: start;
+  margin: 0 0 40px;
+  padding: clamp(26px, 4vw, 38px);
+  border: 1px solid rgba(26,25,22,0.1);
+  border-left: 3px solid var(--gold);
+  border-radius: 3px;
+  background: rgba(255,255,255,0.62);
+}
+
+.pyt-possibilities__intro h3 {
+  margin: 0 0 12px;
+  color: var(--deep);
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 2.6vw, 2rem);
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+.pyt-possibilities__intro p {
+  margin: 0;
+  color: var(--charcoal);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.pyt-possibilities__list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.pyt-possibilities__list li {
+  position: relative;
+  padding: 0 0 12px 18px;
+  border-bottom: 1px solid rgba(26,25,22,0.08);
+  color: var(--charcoal);
+  font-size: 0.92rem;
+  line-height: 1.62;
+}
+
+.pyt-possibilities__list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pyt-possibilities__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
 .pyt-pro-cta {
   background: var(--cream);
   border-radius: 8px;
@@ -686,6 +748,9 @@
 }
 
 @media (max-width: 860px) {
+  .pyt-possibilities {
+    grid-template-columns: 1fr;
+  }
   .pyt-itin-why__list {
     grid-template-columns: 1fr;
     gap: 16px;

@@ -16,6 +16,7 @@ const INDEXNOW_GUIDES = [
   '/guides/son-muntaner-review',
   '/guides/son-termes-review',
   '/guides/t-golf-calvia-review',
+  '/guides/5-day-mallorca-golf-itinerary',
 ]
 
 export async function POST(request) {

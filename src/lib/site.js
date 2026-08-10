@@ -49,6 +49,7 @@ export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
 export const ARTICLE_SLUGS = new Set([
   'best-golf-courses-mallorca',
   'best-time-play-golf-mallorca',
+  '5-day-mallorca-golf-itinerary',
   'golf-club-hire-mallorca',
   'golf-cost-mallorca',
   'golf-trip-planning-mallorca',
@@ -56,7 +57,9 @@ export const ARTICLE_SLUGS = new Set([
   'mallorca-course-map',
 ])
 
-export const EN_ONLY_ARTICLE_SLUGS = new Set([])
+export const EN_ONLY_ARTICLE_SLUGS = new Set([
+  '5-day-mallorca-golf-itinerary',
+])
 
 export function normalizePath(pathname = '/') {
   if (!pathname) return '/'

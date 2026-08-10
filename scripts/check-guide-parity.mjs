@@ -98,8 +98,8 @@ async function main() {
   const locales = site.ALL_LOCALES.filter((locale) => locale !== 'en')
 
   const articleSlugs = new Set([
-    ...site.ARTICLE_SLUGS,
-    ...Object.keys(articlesEn.GUIDE_ARTICLE_CONTENT),
+    ...[...site.ARTICLE_SLUGS].filter((slug) => !site.EN_ONLY_ARTICLE_SLUGS?.has(slug)),
+    ...Object.keys(articlesEn.GUIDE_ARTICLE_CONTENT).filter((slug) => !site.EN_ONLY_ARTICLE_SLUGS?.has(slug)),
     ...Object.keys(articlesLoc.LOCALIZED_GUIDE_ARTICLE_CONTENT),
   ])
   const postSlugs = new Set([

@@ -89,7 +89,7 @@ function walkStrings(value, visit, trail = []) {
 
 async function main() {
   const siteModule = await import(pathToFileURL(path.join(__dirname, '..', 'src', 'lib', 'site.js')).href)
-  const guideArticleSlugs = [...siteModule.ARTICLE_SLUGS]
+  const guideArticleSlugs = [...siteModule.ARTICLE_SLUGS].filter((slug) => !siteModule.EN_ONLY_ARTICLE_SLUGS?.has(slug))
   const guidePostSlugs = [...siteModule.REVIEW_POST_SLUGS]
   const findings = []
 
