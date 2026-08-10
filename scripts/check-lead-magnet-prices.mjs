@@ -11,7 +11,7 @@
  * Two shapes are checked:
  *   1. COURSE_COST_ROWS — the structured [name, peak, low, ...] table that
  *      drives the cost-guide PDF's price table.
- *   2. Inline "<Course> - EUR NNN peak" mentions in the trip-planner PDF's
+ *   2. Inline "<Course> - €NNN peak" mentions in the trip-planner PDF's
  *      day-by-day itinerary prose.
  *
  * Courses flagged `dynamic:true` in the pricing master are exempt, matching
@@ -75,8 +75,8 @@ function record(lineNo, quotedName, kind, low, peak) {
   const pricing = COURSE_PRICING_BY_NAME[canonical]
   if (pricing.dynamic) return
   const problems = []
-  if (low != null && low !== pricing.low) problems.push(`low EUR ${low} ≠ €${pricing.low}`)
-  if (peak != null && peak !== pricing.peak) problems.push(`peak EUR ${peak} ≠ €${pricing.peak}`)
+  if (low != null && low !== pricing.low) problems.push(`low €${low} ≠ €${pricing.low}`)
+  if (peak != null && peak !== pricing.peak) problems.push(`peak €${peak} ≠ €${pricing.peak}`)
   if (!problems.length) return
   findings.push({
     line: lineNo,
@@ -85,7 +85,8 @@ function record(lineNo, quotedName, kind, low, peak) {
 }
 
 // ── 1. COURSE_COST_ROWS table ────────────────────────────────────────────
-const ROW_RE = /^\s*\["([^"]+)",\s*"EUR\s*(\d+)",\s*"EUR\s*(\d+)",/
+const CURRENCY = '(?:€|EUR)'
+const ROW_RE = new RegExp(`^\\s*\\["([^"]+)",\\s*"${CURRENCY}\\s*(\\d+)",\\s*"${CURRENCY}\\s*(\\d+)",`)
 lines.forEach((line, idx) => {
   const m = line.match(ROW_RE)
   if (!m) return
@@ -96,7 +97,7 @@ lines.forEach((line, idx) => {
 // ── 2. Itinerary prose: "<Course> - EUR NNN peak" ───────────────────────
 // Course names can carry digits (e.g. "Santa Ponsa 3"), so 0-9 must stay in
 // the name class — excluding it would silently skip those mentions.
-const ITIN_RE = /([A-Za-z][A-Za-z0-9 .'&]*?)\s*-\s*EUR\s*(\d+)\s*peak/g
+const ITIN_RE = new RegExp(`([A-Za-z][A-Za-z0-9 .'&]*?)\\s*-\\s*${CURRENCY}\\s*(\\d+)\\s*peak`, 'g')
 lines.forEach((line, idx) => {
   for (const m of line.matchAll(ITIN_RE)) {
     const [, rawName, peak] = m
@@ -110,8 +111,8 @@ lines.forEach((line, idx) => {
 // unlike the two structural shapes above, an unresolved name here is treated
 // as "not a course mention" rather than an error — free-form prose has
 // non-course parentheticals (e.g. a bare aggregate total) this could catch.
-const BOLD_BAND_RE = /<b>([A-Za-z][A-Za-z0-9 .'&]*?)<\/b>\s*-\s*EUR\s*(\d+)-(?:EUR\s*)?(\d+)/g
-const PAREN_BAND_RE = /([A-Za-z][A-Za-z0-9 .'&]*?)\s*\(EUR\s*(\d+)-(?:EUR\s*)?(\d+)\)/g
+const BOLD_BAND_RE = new RegExp(`<b>([A-Za-z][A-Za-z0-9 .'&]*?)<\\/b>\\s*-\\s*${CURRENCY}\\s*(\\d+)-(?:${CURRENCY}\\s*)?(\\d+)`, 'g')
+const PAREN_BAND_RE = new RegExp(`([A-Za-z][A-Za-z0-9 .'&]*?)\\s*\\(${CURRENCY}\\s*(\\d+)-(?:${CURRENCY}\\s*)?(\\d+)\\)`, 'g')
 function recordBandIfResolvable(lineNo, rawName, low, peak, kind) {
   const name = rawName.trim()
   if (toCanonical(name)) record(lineNo, name, kind, +low, +peak)
@@ -140,7 +141,7 @@ for (const f of findings) {
   console.error('')
 }
 console.error(
-  'Update the hardcoded EUR figures in generate-lead-magnet-pdfs.py to the canonical\n' +
+  'Update the hardcoded € figures in generate-lead-magnet-pdfs.py to the canonical\n' +
     'green fee (src/lib/course-pricing-data.js), then regenerate the PDFs:\n' +
     '  python scripts/generate-lead-magnet-pdfs.py',
 )
