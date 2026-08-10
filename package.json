@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "node scripts/convert-og-images.mjs",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "prepare": "node scripts/setup-git-hooks.js",
     "lint": "next lint",
