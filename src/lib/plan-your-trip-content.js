@@ -11,7 +11,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   "options": {
     "itineraryLabel": "Sample trip",
     "itineraryTitle": "See a real 5-day week",
-    "itineraryNote": "Five courses, and why they run in that order.",
+    "itineraryNote": "A Palma-based route and the thinking behind it.",
     "basicLabel": "Free",
     "basicTitle": "Course finder",
     "basicNote": "Shortlist courses first.",
@@ -65,26 +65,26 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   "sampleItinerary": {
     "eyebrow": "Sample Trip",
     "title": "Five courses, five days. Based in Palma.",
-    "intro": "A real week for a group of club golfers staying in Palma. Five rounds, one long drive, and a reason behind the order.",
+    "intro": "A Palma-based example for a group of club golfers: five rounds, one longer day north, and a clear reason for the order.",
     "whyThisShape": {
       "title": "Why the week runs in this order",
-      "lead": "Most people pick five courses they like the look of and play them in whatever order the tee sheets allow. That is how you end up driving an hour north the morning after a flight, or playing the hardest course on the island on tired legs. The order matters as much as the courses.",
+      "lead": "Most trips go wrong in the gaps between tee times: the first morning, the long drive, the hard course, the flight home. This is the sort of routing I would check before I booked anything.",
       "points": [
         {
           "title": "Arrival day stays easy",
-          "body": "You have flown, picked up a car, and probably not swung a club in a while. Day one is an open course fifteen minutes from the hotel, heading out of the city rather than into it, so no traffic either. Nobody needs a card wrecked before the trip has started."
+          "body": "After a flight and a hire-car queue, the first round should be close, open and calm. Nobody needs the hardest scorecard of the week on day one."
         },
         {
           "title": "Difficulty builds in the middle",
-          "body": "Son Gual on day three, not day one. By then you have played two rounds, you know what the ball is doing in the wind, and the coaching is worth far more than it would have been on arrival."
+          "body": "Son Gual makes more sense once the group has settled. By then the wind, pace and misses are clearer, and any coaching has more to work with."
         },
         {
           "title": "One long drive, mid-week",
-          "body": "Alcanada is fifty minutes north and worth every one of them, but it is a full day out. It goes on day four when the group has settled, not on arrival or the morning of a flight home."
+          "body": "Alcanada is worth the drive, but it is a full day. I would not put it on arrival day or anywhere near a flight home."
         },
         {
           "title": "Finish short and near the airport",
-          "body": "Day five is thirty minutes from Palma and just over twenty from the terminal on the motorway. Any issue on the day costs you lunch, not a round."
+          "body": "The final round should keep the airport simple. A small delay should cost lunch, not the flight."
         }
       ]
     },
@@ -144,7 +144,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "fromPalma": "30 min",
         "courseType": "Resort championship",
         "role": "Short travel to the airport",
-        "body": "Rebuilt after a €10 million renovation and it shows from the car park onwards. Fifteen lakes, wide driving lines, some tree-lined fairways and big undulating greens, so it is playable without being bland. No houses in view from much of the course, and you feel like you are in your own little world with stunning views all over. Thirty minutes from Palma centre, but just over twenty to the airport on the motorway, which is the point on a departure day.",
+        "body": "Rebuilt after a €10 million renovation and it shows from the car park onwards. Fifteen lakes, wide driving lines, some tree-lined fairways and big undulating greens, so it is playable without being bland. No houses in view from much of the course, and you feel like you are in your own little world with clear views across the property. Thirty minutes from Palma centre, but just over twenty to the airport on the motorway, which is the point on a departure day.",
         "teeTime": "First slot you can get. Round, lunch, and still time to drop the car.",
         "swap": "Flying out early? Golf Son Termes instead. Par 70, 5,285 metres, with a lot of character up in the mountains alongside the goats. Ten minutes from Palma with views all the way to the cathedral and beyond. Short, scenic, done by lunch.",
         "guide": "/guides/t-golf-calvia-review",
@@ -159,11 +159,11 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "swapLabel": "Swap",
     "planningNoteLabel": "Worth knowing",
     "diningLabel": "Dinner",
-    "summary": "Four rounds within thirty minutes of Palma, one full day north. Same hotel all week, no packing and repacking, and just the one long drive on the day it makes sense.",
+    "summary": "The point is simple: same hotel, sensible drives, and the hardest golf placed where it belongs.",
     "feesNote": "Green fees vary by season.",
     "feesCta": "Check current rates in the green fee tool",
     "feesLink": "/tools/green-fees",
-    "fullGuideLabel": "Read the full 5-day itinerary",
+    "fullGuideLabel": "Read the 5-day guide",
     "fullGuideLink": "/guides/5-day-mallorca-golf-itinerary",
     "hotelEyebrow": "Where to stay",
     "hotelCta": "Use the hotel recommender",

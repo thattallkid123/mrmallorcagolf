@@ -1,4 +1,4 @@
-import { SITE_ORIGIN, buildLocalePath, getHreflangCode } from './site.js'
+import { EN_ONLY_ARTICLE_SLUGS, SITE_ORIGIN, buildLocalePath, getHreflangCode } from './site.js'
 import { getLocalizedGuideArticleContent } from './guide-article-content-localized.js'
 import { mergeGuideContent } from './guide-content-localization.js'
 
@@ -307,9 +307,9 @@ export const GUIDE_ARTICLE_CONTENT = {
       badgeGold: true,
       readTime: '8 min read',
       updated: 'August 2026',
-      title: '5-Day Mallorca Golf Trip Itinerary - Five Rounds from a Palma Base',
+      title: '5-Day Mallorca Golf Trip Itinerary from Palma',
       intro:
-        'A specific five-day route for golfers staying in Palma: one easy opener, two stronger tests, one full day north, and a final round that keeps the airport day sensible.',
+        'A Palma-based week for club golfers: Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvià, with the long drive kept to one day.',
       related: [
         { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
         { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
@@ -321,12 +321,12 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'This is a realistic five-day Mallorca golf itinerary for a group staying in Palma. It is not the only good route, but it shows the logic that matters: where you sleep, when you drive, which course should be the serious test, and which day should stay easier because travel is involved.',
+          'This is the route I would start with for a group staying in Palma. Five rounds, one longer day north, and no hotel move halfway through the week. It keeps the golf strong without turning the trip into a driving schedule.',
       },
       {
         type: 'paragraph',
         text:
-          'The route uses five courses: Golf Son Quint, Golf Santa Ponsa 1, Golf Son Gual, Club de Golf Alcanada and T Golf Calvia. Four sit within roughly thirty minutes of Palma. Alcanada is the one longer day north, and it earns the drive.',
+          'The five courses are Golf Son Quint, Golf Santa Ponsa 1, Golf Son Gual, Club de Golf Alcanada and T Golf Calvià. Four are close to Palma. Alcanada is the outlier, so it gets its own day.',
       },
       {
         type: 'facts',
@@ -341,29 +341,29 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'For a first Mallorca golf trip, Palma is usually the cleanest base. You have strong restaurant choice, easy airport access, and short drives to Son Quint, Santa Ponsa, Son Gual, Son Muntaner, Son Vida, Bendinat and T Golf Calvia. It also means the non-golfers in the group are not stranded at a golf resort all week.',
+          'For a first Mallorca golf trip, Palma is usually the easiest base to make work. The airport is close, the restaurant choice is strong, and you have Son Quint, Santa Ponsa, Son Gual, Son Muntaner, Son Vida, Bendinat and T Golf Calvià within sensible reach. If anyone in the group is not playing every day, Palma also gives them a proper trip.',
       },
       {
         type: 'image',
         src: '/images/blog-trip-planning/Old Town Palma.webp',
         alt: 'Old Town Palma for a Mallorca golf trip base',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'Palma works well as a base because the golf, airport and evenings stay connected.',
+        caption: 'Palma keeps the airport, golf and evenings close enough to make the week simple.',
       },
       { type: 'heading', text: 'Day 1 - Golf Son Quint' },
       { type: 'subheading', text: 'Role in the trip: warm-up round' },
       {
         type: 'paragraph',
         text:
-          'Start with Son Quint because it is forgiving, close to Palma and still properly presented. Wide fairways and multiple tee options let the group settle in after the flight without feeling that the week has started with an exam. From the eighth, you also get one of the best city views in Mallorca golf, looking back towards Palma Cathedral.',
+          'I would start at Son Quint. It is close to Palma, the fairways give you room, and the different tee options help a mixed group settle in after travelling. It is still a proper course, with a good view back towards Palma Cathedral from the eighth.',
       },
       {
         type: 'list',
         items: [
           { label: 'Drive from Palma:', text: 'around 15 minutes.' },
-          { label: 'Best tee time:', text: 'mid-morning is fine on arrival day.' },
-          { label: 'Dinner idea:', text: 'El Camino in Palma for polished tapas and a strong first evening.' },
-          { label: 'Easy swap:', text: 'Palma Pitch and Putt if someone in the party barely plays.' },
+          { label: 'Best tee time:', text: 'mid-morning. No need for a dawn start after a flight.' },
+          { label: 'Dinner idea:', text: 'El Camino in Palma if you want a lively first evening.' },
+          { label: 'Easy swap:', text: 'Palma Pitch and Putt if one player is very new to the game.' },
         ],
       },
       { type: 'heading', text: 'Day 2 - Golf Santa Ponsa 1' },
@@ -371,21 +371,21 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Santa Ponsa 1 gives the trip more scale without jumping straight to the hardest courses. It has European Tour history, open driving lines and a huge par 5 tenth, but it is friendlier than Son Gual if you choose sensible tees. It also fits neatly from Palma, especially if you take an early slot before the course fills.',
+          'Santa Ponsa 1 is a sensible second round. It has more scale than Son Quint, with European Tour history and a 590-metre par 5 tenth, but it is manageable if you choose the right tees. A few tee shots are partly blind, so it helps to know the lines.',
       },
       {
         type: 'image',
         src: '/images/courses/santa-ponsa-1.webp',
         alt: 'Golf Santa Ponsa 1 in Mallorca',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'Santa Ponsa 1 - a useful second-day step up without making the week too severe too early.',
+        caption: 'Santa Ponsa 1 works well as the second-day step up.',
       },
       {
         type: 'list',
         items: [
           { label: 'Drive from Palma:', text: 'around 25 minutes.' },
           { label: 'Best tee time:', text: 'early, especially in busy months.' },
-          { label: 'Dinner idea:', text: 'Meson Can Pedro for traditional Mallorcan food and a busy local room.' },
+          { label: 'Dinner idea:', text: 'Mesón Can Pedro for traditional Mallorcan food. Book ahead.' },
           { label: 'Read more:', text: '<a href="/guides/santa-ponsa-1-review">Golf Santa Ponsa 1 review</a>.' },
         ],
       },
@@ -394,19 +394,19 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Son Gual belongs in the middle of the trip, not on the first morning. By day three, the group knows what the ball is doing in the wind, the travel is out of the body, and a proper championship test makes more sense. Raised greens, clever bunkering and changing wind mean course management matters as much as swing quality.',
+          'Son Gual belongs in the middle of the trip. By day three, the group has settled, the travel is out of the body, and a serious championship course makes more sense. The raised greens, bunkering and wind make course management as important as ball-striking.',
       },
       {
         type: 'image',
         src: '/images/blog-trip-planning/Son Gual.webp',
         alt: 'Son Gual Golf Course in Mallorca',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'Son Gual - the day where local strategy and on-course coaching can save the most shots.',
+        caption: 'Son Gual is the round where local strategy can save the most shots.',
       },
       {
         type: 'paragraph',
         text:
-          'If you want to include <a href="/play-with-a-pro">Play With A Pro</a> in the trip, this is often the day I would choose. The course asks enough questions that having a PGA professional alongside you is genuinely useful, especially around targets, misses, wind and short-game decisions.',
+          'If you want to include <a href="/play-with-a-pro">Play With A Pro</a> in the trip, this is often the day I would choose. The course asks enough questions for the advice to matter: targets, misses, wind, club choice and short-game decisions.',
       },
       {
         type: 'list',
@@ -422,21 +422,21 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Alcanada is the one longer drive in this itinerary, so make it a full day rather than squeezing it between travel jobs. The lighthouse is visible from most of the course, the greens are quick and sloping, and the setting feels different from the Palma-area rounds. It is one of the best golf days in Mallorca when the weather is kind.',
+          'Alcanada is the longer drive, so treat it as a full day. The lighthouse is visible from most holes, the greens are quick and sloping, and the course feels different from the Palma-area rounds. The drawback is simple: if the weather is poor, you have driven fifty minutes for it.',
       },
       {
         type: 'image',
         src: '/images/blog-trip-planning/Alcanada.webp',
         alt: 'Club de Golf Alcanada in Mallorca',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'Alcanada - worth making a whole day of, not just another tee time in the schedule.',
+        caption: 'Alcanada deserves a full day, not a rushed slot between other plans.',
       },
       {
         type: 'list',
         items: [
           { label: 'Drive from Palma:', text: 'around 50 minutes.' },
           { label: 'Best tee time:', text: 'early for light, pace and calmer wind.' },
-          { label: 'Dinner idea:', text: 'Maca de Castro in Port d\'Alcudia, or return to Palma if the group wants a simpler evening.' },
+          { label: 'Dinner idea:', text: 'Maca de Castro in Port d\'Alcúdia, or return to Palma if the group wants a simpler evening.' },
           { label: 'Read more:', text: '<a href="/guides/alcanada-review">Club de Golf Alcanada review</a>.' },
         ],
       },
@@ -445,20 +445,20 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The final day should not be the longest drive of the week. T Golf Calvia gives you a premium finish while keeping the airport logistics under control. It is around thirty minutes from Palma and a little over twenty minutes from the airport on the motorway, so a small delay costs lunch, not the flight.',
+          'The final day should keep the airport simple. T Golf Calvià gives you a strong finish without sending the group across the island. It is around thirty minutes from Palma and a little over twenty minutes from the airport on the motorway.',
       },
       {
         type: 'image',
         src: '/images/courses/t-golf-calvia.webp',
         alt: 'T Golf Calvia in Mallorca',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'T Golf Calvia - a polished final round that still keeps departure-day logistics sensible.',
+        caption: 'T Golf Calvià keeps the final round strong and the airport day sensible.',
       },
       {
         type: 'list',
         items: [
           { label: 'Drive from Palma:', text: 'around 30 minutes.' },
-          { label: 'Best tee time:', text: 'first slot you can get if flying later that day.' },
+          { label: 'Best tee time:', text: 'the first slot you can get if flying later that day.' },
           { label: 'Early flight swap:', text: 'Son Termes for a shorter, scenic round close to Palma.' },
           { label: 'Read more:', text: '<a href="/guides/t-golf-calvia-review">T Golf Calvia review</a>.' },
         ],
@@ -467,29 +467,29 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The golf is the spine of the trip, but the best weeks are not only tee times. You can build around spa time, a private chef evening, a proper Palma dinner, a vineyard visit, a coastal drive through the Tramuntana, or a quieter recovery afternoon between the harder rounds. That belongs in the trip plan, not forced into every golf day.',
+          'The golf is the spine of the trip. Around it, you can add a private chef evening, a proper Palma dinner, a vineyard visit, spa time, a coastal drive through Tramuntana, or a quiet afternoon between the harder rounds. I would add those where they help the rhythm of the week.',
       },
       {
         type: 'image',
         src: '/images/blog-is-mallorca-good/Marc Fosh MichelinRestaurant.webp',
         alt: 'High-end dining in Palma during a Mallorca golf trip',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'The right evening plan should support the golf rhythm, not fight it.',
+        caption: 'Evening plans should fit the golf, not fight it.',
       },
       { type: 'heading', text: 'What I Would Change for Different Groups' },
       {
         type: 'list',
         items: [
-          { label: 'Very strong golfers:', text: 'add Son Muntaner or Andratx and make the trip more demanding.' },
-          { label: 'Mixed handicaps:', text: 'keep Son Quint, consider Son Antem East or Bendinat, and avoid making every day a test.' },
-          { label: 'North-based trip:', text: 'build around Alcanada, Pollensa, Pula, Canyamel and Capdepera instead of Palma.' },
+          { label: 'Very strong golfers:', text: 'add Son Muntaner or Andratx and make the golf tougher.' },
+          { label: 'Mixed handicaps:', text: 'keep Son Quint, consider Son Antem East or Bendinat, and avoid five hard days in a row.' },
+          { label: 'North-based trip:', text: 'build around Alcanada, Pollença, Pula, Canyamel and Capdepera.' },
           { label: 'Four-day long weekend:', text: 'drop either Santa Ponsa 1 or T Golf Calvia depending on flight times.' },
         ],
       },
       {
         type: 'pull',
         text:
-          'The best itinerary is not the five biggest names. It is the right five courses in the right order for your group.',
+          'The right itinerary is not just the five biggest names. It is the five courses that fit your group, in an order that makes sense.',
       },
       {
         type: 'cta',
@@ -1235,8 +1235,9 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
   if (!content) return {}
 
   const canonical = `${SITE_ORIGIN}${buildLocalePath(`/guides/${slug}`, locale)}`
+  const articleLocales = EN_ONLY_ARTICLE_SLUGS.has(slug) ? ['en'] : GUIDE_ARTICLE_LOCALES
   const languages = Object.fromEntries(
-    GUIDE_ARTICLE_LOCALES.map((lang) => [
+    articleLocales.map((lang) => [
       getHreflangCode(lang),
       `${SITE_ORIGIN}${buildLocalePath(`/guides/${slug}`, lang)}`,
     ])

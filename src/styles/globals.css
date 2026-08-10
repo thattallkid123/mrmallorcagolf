@@ -450,6 +450,14 @@
   margin: 10px 0 0;
 }
 
+.pyt-itin-invite__body {
+  max-width: 620px;
+  margin: 12px 0 0;
+  color: #6B6862;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
 .pyt-itin-invite__btn {
   flex-shrink: 0;
   background: var(--pine);
@@ -545,6 +553,10 @@
   font-size: 14.5px;
   line-height: 1.7;
   color: #6B6862;
+}
+
+.pyt-itin-why--teaser {
+  margin-top: clamp(24px, 4vw, 42px);
 }
 
 .pyt-itin-row {
@@ -694,6 +706,10 @@
 .pyt-itin__summary {
   color: var(--deep);
   font-weight: 500;
+}
+
+.pyt-itin__footer--teaser {
+  margin-top: clamp(22px, 3vw, 34px);
 }
 
 .pyt-itin__hotel-link {

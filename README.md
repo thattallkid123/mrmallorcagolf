@@ -34,7 +34,7 @@ Before substantial work, read:
 - `CONTENT_WORKFLOW.md` - content checklist and shared branch rules
 - `docs/ROUTING_AND_CONTENT_SYSTEM.md` - locale routes, guide slug system, and parity checks
 - `COURSE_BLOG_PIPELINE.md` - full course review publishing process
-- `MMG_BRAND_VOICE_GUIDELINES.md` - writing rules and brand voice
+- `G:\My Drive\Mr Mallorca Golf\Systems & Planning\MMG_BRAND_VOICE_GUIDELINES.md` - canonical writing rules and brand voice
 - `CLAUDE.md` - project context and recurring commands
 
 ## Pricing Workflow

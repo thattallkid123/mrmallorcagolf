@@ -25,6 +25,18 @@ I will NEVER work around missing access. I will NEVER assume a folder exists. I 
 
 ---
 
+## PUBLIC COPY PREFLIGHT (MANDATORY)
+
+Before drafting or editing any public Mr Mallorca Golf copy, read the canonical Drive voice guide:
+
+```text
+G:\My Drive\Mr Mallorca Golf\Systems & Planning\MMG_BRAND_VOICE_GUIDELINES.md
+```
+
+This applies to guides, service pages, offer copy, metadata, CTAs, translations, email/newsletter copy, and any visible marketing text. `npm run check:voice` is only a safety net for hard bans; it does not replace the by-eye voice-guide check. If the Drive file is not mounted or cannot be read, stop and ask Andy to mount it before writing public copy.
+
+---
+
 ## Two-Machine Setup (Old PC + New PC)
 
 The new PC is primary as of 30 July 2026; the old PC is secondary and its scheduled MMG tasks are disabled. GitHub is the source of truth for code, Google Drive for business docs.
