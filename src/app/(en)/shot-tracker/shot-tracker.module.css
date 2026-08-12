@@ -520,7 +520,7 @@
 .svgText {
   font-size: 5px;
   fill: #1a1916;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-sans);
 }
 
 .greenMapStrip {
