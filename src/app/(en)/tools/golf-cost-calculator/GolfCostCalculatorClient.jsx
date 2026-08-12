@@ -463,6 +463,18 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-sheet-success__icon { width:54px; height:54px; border-radius:50%; background:#15392b; color:#cdb98a; display:flex; align-items:center; justify-content:center; font-size:24px; margin:0 auto 16px; }
         .gcc-sheet-success__title { font-family:var(--font-serif); font-size:24px; color:#15392b; margin-bottom:8px; line-height:1.08; }
         .gcc-sheet-success__body { font-family:var(--font-sans); font-size:15px; color:#2c2a27; max-width:320px; margin:0 auto 18px; line-height:1.65; }
+        @media (max-width:600px) {
+          .gcc-nav {
+            flex-direction:column;
+            align-items:stretch;
+          }
+          .gcc-nav .gcc-btn,
+          .gcc-quote-cta .gcc-btn,
+          .gcc-tools-panel__link {
+            width:100%;
+            min-height:46px;
+          }
+        }
       `}</style>
 
       {/* HERO */}

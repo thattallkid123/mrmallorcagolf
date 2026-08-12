@@ -5025,6 +5025,25 @@ select.form-control { cursor: pointer; }
   }
 }
 
+@media (max-width: 520px) {
+  .gdb-nav-row,
+  .gdb-cta-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .gdb-nav-row .gdb-btn-ghost,
+  .gdb-nav-row .gdb-btn-pine,
+  .gdb-cta-grid .gdb-btn-gold,
+  .gdb-cta-grid .gdb-btn-pine,
+  .gdb-cta-secondary .gdb-btn-secondary,
+  .gdb-restart {
+    width: 100%;
+    min-height: 46px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
