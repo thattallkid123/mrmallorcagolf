@@ -200,10 +200,10 @@ export default function CourseMapView({ lang = 'en' }) {
 
   return (
     <div>
-      <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: 'clamp(1.5rem, 3.5vw, 2rem)', color: '#1A1916', marginBottom: 8 }}>
+      <h2 style={{ fontFamily: "var(--font-serif)", fontWeight: 500, fontSize: 'clamp(1.5rem, 3.5vw, 2rem)', color: '#1A1916', marginBottom: 8 }}>
         {labels.title}
       </h2>
-      <p style={{ fontFamily: "'Jost', sans-serif", fontSize: '0.85rem', color: '#6B6862', margin: '0 0 16px' }}>{labels.hint}</p>
+      <p style={{ fontFamily: "var(--font-sans)", fontSize: '0.85rem', color: '#6B6862', margin: '0 0 16px' }}>{labels.hint}</p>
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
         {regions.map(region => {
           const active = selectedRegion === region.id
@@ -215,7 +215,7 @@ export default function CourseMapView({ lang = 'en' }) {
               style={{
                 padding: '8px 16px',
                 fontSize: '0.78rem',
-                fontFamily: "'Jost', sans-serif",
+                fontFamily: "var(--font-sans)",
                 letterSpacing: '0.04em',
                 border: active ? '1px solid #2D4A3E' : '1px solid rgba(26,25,22,0.14)',
                 background: active ? '#2D4A3E' : '#fff',
@@ -254,7 +254,7 @@ export default function CourseMapView({ lang = 'en' }) {
               <button
                 type="button"
                 onClick={() => focusPin(item)}
-                style={{ display: 'flex', alignItems: 'center', gap: 9, width: '100%', textAlign: 'left', background: 'none', border: 'none', padding: '5px 0', cursor: 'pointer', fontFamily: "'Jost', sans-serif", fontSize: '0.83rem', color: '#3A342C', lineHeight: 1.3 }}
+                style={{ display: 'flex', alignItems: 'center', gap: 9, width: '100%', textAlign: 'left', background: 'none', border: 'none', padding: '5px 0', cursor: 'pointer', fontFamily: "var(--font-sans)", fontSize: '0.83rem', color: '#3A342C', lineHeight: 1.3 }}
               >
                 <span style={{ flexShrink: 0, width: 22, height: 22, borderRadius: '50%', background: '#B8973C', border: '1.5px solid #2D4A3E', color: '#20362C', fontSize: 11, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.num}</span>
                 {item.label}

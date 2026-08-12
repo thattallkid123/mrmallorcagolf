@@ -72,7 +72,7 @@ export default function EmailSignup({
   if (status === 'success') {
     return (
       <p style={{
-        fontFamily: "'Jost', sans-serif",
+        fontFamily: "var(--font-sans)",
         fontSize: '0.85rem',
         color: 'var(--pine)',
         fontWeight: 500,
@@ -109,7 +109,7 @@ export default function EmailSignup({
               flex: 1,
               minWidth: 0,
               padding: '13px 16px',
-              fontFamily: "'Jost', sans-serif",
+              fontFamily: "var(--font-sans)",
               fontSize: '0.88rem',
               fontWeight: 300,
               color: 'var(--deep)',
@@ -124,7 +124,7 @@ export default function EmailSignup({
             style={{
               flexShrink: 0,
               padding: '13px 22px',
-              fontFamily: "'Jost', sans-serif",
+              fontFamily: "var(--font-sans)",
               fontSize: '0.78rem',
               fontWeight: 500,
               letterSpacing: '0.1em',
@@ -142,7 +142,7 @@ export default function EmailSignup({
         </form>
         {status === 'error' ? (
           <p style={{
-            fontFamily: "'Jost', sans-serif",
+            fontFamily: "var(--font-sans)",
             fontSize: '0.8rem',
             color: '#8b2f2f',
             fontWeight: 400,

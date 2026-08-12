@@ -319,7 +319,7 @@ export default function ZhCourseSelectorClient() {
         .cc-label { flex: 0 0 76px; padding-top: 1px; font-size: 9px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #B8973C; }
         .cc-val { flex: 1; color: #2C2A27; }
         .cc-andy { background: #F4EDD8; border-left: 2px solid #B8973C; padding: 22px 24px; margin: 26px 0; font-family: var(--font-serif); font-style: italic; font-size: 1.05rem; line-height: 1.55; color: #2D4A3E; }
-        .cc-andy strong { font-style: normal; font-weight: 500; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; display: block; margin-bottom: 8px; color: #B8973C; font-family: sans-serif; }
+        .cc-andy strong { font-style: normal; font-weight: 500; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; display: block; margin-bottom: 8px; color: #B8973C; font-family: var(--font-sans); }
         .cc-links { display: flex; gap: 10px; flex-wrap: wrap; padding-top: 4px; }
         .cc-btn { flex: 1; min-width: 140px; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; padding: 14px 20px; border-radius: 999px; cursor: pointer; transition: background 0.3s, color 0.3s, transform 0.3s; font-family: inherit; border: 1px solid currentColor; }
         .cc-btn-outline { color: #1A1916; border-color: rgba(26,25,22,0.24); background: transparent; }

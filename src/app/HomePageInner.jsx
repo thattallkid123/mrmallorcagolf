@@ -343,10 +343,10 @@ export default function HomePageInner({ locale = 'en' }) {
       {/* Jo's quote - social proof after packages, before final CTA */}
       <section style={{ background: 'var(--pine)', padding: 'clamp(48px,6vw,72px) clamp(20px,5vw,60px)' }}>
         <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(1.3rem,2.5vw,1.9rem)', fontStyle: 'italic', fontWeight: 400, color: '#fff', lineHeight: 1.45, marginBottom: '1.25rem' }}>
+          <p style={{ fontFamily: "var(--font-serif)", fontSize: 'clamp(1.3rem,2.5vw,1.9rem)', fontStyle: 'italic', fontWeight: 400, color: '#fff', lineHeight: 1.45, marginBottom: '1.25rem' }}>
             &ldquo;{home.quote.text}&rdquo;
           </p>
-          <p style={{ fontSize: '9px', letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--gold-light)', fontFamily: "'Jost',sans-serif" }}>- {home.quote.attribution}</p>
+          <p style={{ fontSize: '9px', letterSpacing: '.18em', textTransform: 'uppercase', color: 'var(--gold-light)', fontFamily: "var(--font-sans)" }}>- {home.quote.attribution}</p>
         </div>
       </section>
 

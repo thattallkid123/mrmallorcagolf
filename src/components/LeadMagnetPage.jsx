@@ -103,7 +103,7 @@ export default function LeadMagnetPage({ guide }) {
       <div style={{ maxWidth: 520, width: '100%' }}>
         <p
           style={{
-            fontFamily: "'Jost', sans-serif",
+            fontFamily: "var(--font-sans)",
             fontSize: '0.7rem',
             fontWeight: 500,
             letterSpacing: '0.15em',
@@ -117,7 +117,7 @@ export default function LeadMagnetPage({ guide }) {
 
         <h1
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "var(--font-serif)",
             fontSize: 'clamp(2rem, 5vw, 2.8rem)',
             fontWeight: 600,
             lineHeight: 1.15,
@@ -130,7 +130,7 @@ export default function LeadMagnetPage({ guide }) {
 
         <p
           style={{
-            fontFamily: "'Jost', sans-serif",
+            fontFamily: "var(--font-sans)",
             fontSize: '0.95rem',
             fontWeight: 300,
             lineHeight: 1.7,
@@ -155,7 +155,7 @@ export default function LeadMagnetPage({ guide }) {
             <li
               key={bullet}
               style={{
-                fontFamily: "'Jost', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: '0.88rem',
                 fontWeight: 300,
                 color: 'var(--charcoal, #2C2A27)',
@@ -211,7 +211,7 @@ export default function LeadMagnetPage({ guide }) {
           >
             <p
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--font-serif)",
                 fontSize: '1.4rem',
                 fontWeight: 600,
                 color: 'var(--cream, #F7F4EF)',
@@ -222,7 +222,7 @@ export default function LeadMagnetPage({ guide }) {
             </p>
             <p
               style={{
-                fontFamily: "'Jost', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: '0.85rem',
                 fontWeight: 300,
                 color: 'rgba(247,244,239,0.8)',
@@ -238,7 +238,7 @@ export default function LeadMagnetPage({ guide }) {
               style={{
                 display: 'inline-block',
                 padding: '12px 28px',
-                fontFamily: "'Jost', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: '0.78rem',
                 fontWeight: 500,
                 letterSpacing: '0.1em',
@@ -255,7 +255,7 @@ export default function LeadMagnetPage({ guide }) {
               <div style={{ marginTop: 22, paddingTop: 20, borderTop: '1px solid rgba(247,244,239,0.18)' }}>
                 <p
                   style={{
-                    fontFamily: "'Jost', sans-serif",
+                    fontFamily: "var(--font-sans)",
                     fontSize: '0.78rem',
                     fontWeight: 300,
                     color: 'rgba(247,244,239,0.72)',
@@ -268,7 +268,7 @@ export default function LeadMagnetPage({ guide }) {
                   href={nextTool.href}
                   style={{
                     display: 'inline-block',
-                    fontFamily: "'Jost', sans-serif",
+                    fontFamily: "var(--font-sans)",
                     fontSize: '0.7rem',
                     fontWeight: 500,
                     letterSpacing: '0.1em',
@@ -309,7 +309,7 @@ export default function LeadMagnetPage({ guide }) {
                   flex: 1,
                   minWidth: 0,
                   padding: '14px 16px',
-                  fontFamily: "'Jost', sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: '0.88rem',
                   fontWeight: 300,
                   color: 'var(--deep, #1A1916)',
@@ -325,7 +325,7 @@ export default function LeadMagnetPage({ guide }) {
                 style={{
                   flexShrink: 0,
                   padding: '14px 22px',
-                  fontFamily: "'Jost', sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: '0.75rem',
                   fontWeight: 500,
                   letterSpacing: '0.1em',
@@ -345,7 +345,7 @@ export default function LeadMagnetPage({ guide }) {
                 display: 'flex',
                 alignItems: 'center',
                 gap: 8,
-                fontFamily: "'Jost', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: '0.78rem',
                 fontWeight: 300,
                 color: 'rgba(44,42,39,0.62)',
@@ -364,7 +364,7 @@ export default function LeadMagnetPage({ guide }) {
             {status === 'error' ? (
               <p
                 style={{
-                  fontFamily: "'Jost', sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: '0.8rem',
                   color: '#8b2f2f',
                   fontWeight: 400,
@@ -376,7 +376,7 @@ export default function LeadMagnetPage({ guide }) {
             ) : null}
             <p
               style={{
-                fontFamily: "'Jost', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: '0.72rem',
                 fontWeight: 300,
                 color: 'rgba(44,42,39,0.5)',
