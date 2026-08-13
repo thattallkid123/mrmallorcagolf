@@ -6,7 +6,7 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: 'Son Gual Golf - Honest Review & Fees',
+        title: 'Son Gual Golf Mallorca - Reviews & Fees',
         description:
           "Son Gual €115–€165, handicap certificate required. Course conditions, wind notes, and honest verdict on booking.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
@@ -187,7 +187,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Alcanada Golf - Honest Review 2026",
         description:
-          'Alcanada reviewed by a PGA Professional. Lighthouse, greens, restaurant terrace, green fees.',
+          "Alcanada: 9/10, €115-€220, 58 bunkers. Andy's honest verdict, including why it's worth the 50-minute drive.",
         imagePath: '/images/alcanada-blog/alc-7.webp',
       },
       meta: {
@@ -286,7 +286,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'facts',
           items: [
             ['Peak €230 / Low €115', '2026 price guide'],
-            ['7/10', 'Difficulty'],
+            ['9/10', "Andy's rating"],
             ['58', 'Bunkers'],
             ['55 km', 'From Palma'],
           ],
@@ -328,7 +328,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "Alcanada is the course I'd use if I wanted someone to understand why people come back to golf in Mallorca. The greens will test you, the drive north is worth it, and you should leave enough time for lunch afterwards. Browse all 24 courses and green fees on the <a href='/golf-courses'>Mallorca golf courses page</a>. Planning more than one round on the trip? Start with the <a href='/plan-your-trip'>trip planning guide</a>.",
+          text: "9/10. Alcanada is the course I'd use if I wanted someone to understand why people come back to golf in Mallorca. The greens will test you, the drive north is worth it, and you should leave enough time for lunch afterwards. Two honest limits: it gets busy in peak season, so book your tee time well ahead, and if you are staying in Palma or the southwest, it is a proper drive, around 50 minutes each way, not a quick round between other plans. Browse all 24 courses and green fees on the <a href='/golf-courses'>Mallorca golf courses page</a>. Planning more than one round on the trip? Start with the <a href='/plan-your-trip'>trip planning guide</a>.",
         },
         {
           type: 'cta',
@@ -342,7 +342,7 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Review 2026: Worth It?",
+        title: "Son Muntaner Golf Mallorca - Review",
         description:
           "Spain's Best Golf Course 2025 (World Golf Awards). Green fees €110–€260 with buggy, 5 minutes from Palma. A PGA professional's honest verdict.",
         imagePath: '/images/son-muntaner-blog/sm-4.webp',
@@ -426,7 +426,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Santa Ponsa 1 - Long Course Review",
         description:
-          "One of Europe's longest, DP World Tour history. Confidence-builder for driver lovers.",
+          "Santa Ponsa 1: €77-€126, par 72, one of the longest in Europe. Hosted the DP World Tour in 2021.",
         imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
       },
       meta: {
@@ -720,7 +720,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Termes Golf - Review 2026",
         description:
-          'Mountain views, honest course notes, green fees, who it suits. Reviewed by PGA pro.',
+          'Son Termes green fee around €100-110, par 72, 20 minutes from Palma. Mountain views, honest 6/10 verdict.',
         imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
@@ -1049,7 +1049,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'notes',
-          title: 'Four things I would know before booking T Golf Calvia',
+          title: 'Four things I would know before booking T Golf Calvià',
           items: [
             ['Best tee time', 'Midweek twilight is a very good play here. You get the course in beautiful light, quieter rhythm, very reasonable twilight rates as an added benefit.'],
             ['Wind tip', 'Work from your number, not what your eye tells you. The semi-blind approaches and exposed water carries punish anyone who guesses rather than commits.'],
@@ -1269,9 +1269,9 @@ export const GUIDE_POST_CONTENT = {
   'on-course-coaching-mallorca': {
     en: {
       metadata: {
-        title: 'Golf Coaching Mallorca - Real Improvement',
+        title: 'On-Course Golf Coaching in Mallorca',
         description:
-          'On-course coaching with PGA Professional. Real feedback, real improvement. A round that makes you better as you play.',
+          'On-course coaching with a UK PGA Advanced Professional, 11 years in Shanghai. Real feedback, mid-round.',
         imagePath: '/images/son-gual-blog/sg-swing.webp',
       },
       meta: {

@@ -150,7 +150,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'golf-trip-planning-mallorca': {
     metadata: {
-      title: 'Plan Your Golf Trip (2026)',
+      title: 'Plan Your Mallorca Golf Trip (2026)',
       description:
         'Plan your Mallorca golf trip: courses, when to go, transport, clubs, off-course activities. By a PGA pro on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
@@ -295,9 +295,9 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   '5-day-mallorca-golf-itinerary': {
     metadata: {
-      title: '5-Day Mallorca Golf Trip Itinerary (2026)',
+      title: '5-Day Mallorca Golf Itinerary (2026)',
       description:
-        'A practical 5-day Mallorca golf itinerary from Palma: Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvia, with routing and dining notes.',
+        'A practical 5-day Mallorca golf itinerary from Palma: Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvià, with routing and dining notes.',
       canonical: 'https://www.mrmallorcagolf.com/guides/5-day-mallorca-golf-itinerary',
       image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
       imageAlt: '5-day Mallorca golf trip itinerary from a Palma base',
@@ -440,7 +440,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           { label: 'Read more:', text: '<a href="/guides/alcanada-review">Club de Golf Alcanada review</a>.' },
         ],
       },
-      { type: 'heading', text: 'Day 5 - T Golf Calvia' },
+      { type: 'heading', text: 'Day 5 - T Golf Calvià' },
       { type: 'subheading', text: 'Role in the trip: strong finish, sensible airport day' },
       {
         type: 'paragraph',
@@ -450,7 +450,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'image',
         src: '/images/courses/t-golf-calvia.webp',
-        alt: 'T Golf Calvia in Mallorca',
+        alt: 'T Golf Calvià in Mallorca',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
         caption: 'T Golf Calvià keeps the final round strong and the airport day sensible.',
       },
@@ -460,7 +460,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           { label: 'Drive from Palma:', text: 'around 30 minutes.' },
           { label: 'Best tee time:', text: 'the first slot you can get if flying later that day.' },
           { label: 'Early flight swap:', text: 'Son Termes for a shorter, scenic round close to Palma.' },
-          { label: 'Read more:', text: '<a href="/guides/t-golf-calvia-review">T Golf Calvia review</a>.' },
+          { label: 'Read more:', text: '<a href="/guides/t-golf-calvia-review">T Golf Calvià review</a>.' },
         ],
       },
       { type: 'heading', text: 'Where the Luxury Part Fits' },
@@ -483,7 +483,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           { label: 'Very strong golfers:', text: 'add Son Muntaner or Andratx and make the golf tougher.' },
           { label: 'Mixed handicaps:', text: 'keep Son Quint, consider Son Antem East or Bendinat, and avoid five hard days in a row.' },
           { label: 'North-based trip:', text: 'build around Alcanada, Pollença, Pula, Canyamel and Capdepera.' },
-          { label: 'Four-day long weekend:', text: 'drop either Santa Ponsa 1 or T Golf Calvia depending on flight times.' },
+          { label: 'Four-day long weekend:', text: 'drop either Santa Ponsa 1 or T Golf Calvià depending on flight times.' },
         ],
       },
       {
@@ -501,7 +501,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'best-time-play-golf-mallorca': {
     metadata: {
-      title: 'Best Time to Play Golf (2026)',
+      title: 'Best Time to Play Golf in Mallorca',
       description:
         'Month-by-month Mallorca golf guide: weather, green fees, conditions, crowds. From a PGA pro on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-time-play-golf-mallorca',
@@ -655,7 +655,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Son Gual', 'Palma', '72', '\u20AC115-165', '9/10', '5.0', 'Serious championship round'],
           ['Club de Golf Alcanada', "Port d'Alcudia", '72', '\u20AC115-230', '7/10', '5.0', 'Spectacular views, championship quality'],
           ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-260', '7/10', '4.5', 'Best-conditioned, close to Palma'],
-          ['T Golf Calvia', 'Calvia', '72', '\u20AC170-210', '7/10', '5.0', 'Premium all-round experience'],
+          ['T Golf Calvi\u00E0', 'Calvi\u00E0', '72', '\u20AC170-210', '7/10', '5.0', 'Premium all-round experience'],
           ['Golf de Andratx', 'Camp de Mar', '72', '\u20AC90-140', '9/10', '4.0', 'Hardest test on the island'],
           ['Golf Son Vida', 'Son Vida - Palma', '70', '\u20AC80-190', '8/10', '4.5', 'Historic course, Seve won here'],
           ['T Golf Palma (Puntiro)', 'Palma', '71', '\u20AC100-140', '7/10', '4.5', 'Only Nicklaus design on island'],
@@ -1019,7 +1019,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Coming from Shanghai - 27 million people with just 12 courses - the density of quality golf within a maximum one-hour drive here is remarkable. A week on the island can include four or five genuinely different, genuinely excellent rounds. Southwest, east coast, north, central Palma: each area has its own character and not just a samey resort track. The full list of every course with green fees and honest ratings is on the <a href="/golf-courses">Mallorca golf courses page</a>.',
+          'Coming from Shanghai - 27 million people with just 12 courses - the density of quality golf within a maximum one-hour drive here is remarkable. A week on the island can include four or five genuinely different, excellent rounds. Southwest, east coast, north, central Palma: each area has its own character and not just a samey resort track. The full list of every course with green fees and honest ratings is on the <a href="/golf-courses">Mallorca golf courses page</a>.',
       },
       {
         type: 'facts',

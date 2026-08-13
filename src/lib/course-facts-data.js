@@ -342,7 +342,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 25,
     "designer": "José Gancedo",
     "opened": "1991",
-    "signatureHole": "18th (par 3) - island green shaped like the island of Mallorca, played over water [unconfirmed - published-review candidate, Andy has not played this course]",
+    "signatureHole": "18th (par 3) - island green shaped like the island of Mallorca, played over water [Andy has played this course; review not yet published]",
     "practiceFacilities": "Shared Santa Ponsa practice complex | Long driving range | Large putting green | Pitching and chipping areas, including bunker practice"
   },
   "santa_ponsa3": {

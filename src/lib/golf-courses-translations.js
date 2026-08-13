@@ -94,7 +94,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Pula Golf': {
       location: 'Son Servera',
-      text: 'Von Olazábal zwischen 2004 und 2006 vollständig neu gestaltet, danach Gastgeber von acht European-Tour-Events. Hervorragende Übungsanlagen inklusive Trackman-Range-Technologie. Federer und Nadal spielten hier im Juli 2025 eine Runde. Pep Guardiola ist regelmäßiger Gast.',
+      text: 'Von Olazábal zwischen 2004 und 2006 vollständig neu gestaltet, danach Gastgeber von acht European-Tour-Events. Hervorragende Übungsanlagen inklusive Trackman-Range-Technologie. Federer und Nadal spielten hier im Juli 2025 eine Runde.',
       footer: 'Olazábal-Design · Gastgeber European Tour',
     },
     'Golf Club Son Servera': {
@@ -210,7 +210,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Pula Golf': {
       location: 'Son Servera',
-      text: 'Completamente rediseñado por Olazábal entre 2004 y 2006, posteriormente acogiendo ocho eventos del European Tour. Excelentes instalaciones de práctica incluyendo tecnología Trackman Range. Federer y Nadal jugaron una ronda aquí en julio de 2025. Pep Guardiola es habitual.',
+      text: 'Completamente rediseñado por Olazábal entre 2004 y 2006, posteriormente acogiendo ocho eventos del European Tour. Excelentes instalaciones de práctica incluyendo tecnología Trackman Range. Federer y Nadal jugaron una ronda aquí en julio de 2025.',
       footer: 'Diseño de Olazábal · Sede del European Tour',
     },
     'Golf Club Son Servera': {
@@ -326,7 +326,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Pula Golf': {
       location: 'Son Servera',
-      text: 'Entièrement redessiné par Olazábal entre 2004 et 2006, accueillant ensuite huit événements du European Tour. Excellentes installations d\'entraînement incluant la technologie Trackman Range. Federer et Nadal ont joué une partie ici en juillet 2025. Pep Guardiola est un habitué.',
+      text: 'Entièrement redessiné par Olazábal entre 2004 et 2006, accueillant ensuite huit événements du European Tour. Excellentes installations d\'entraînement incluant la technologie Trackman Range. Federer et Nadal ont joué une partie ici en juillet 2025.',
       footer: 'Design Olazábal · Hôte du European Tour',
     },
     'Golf Club Son Servera': {
@@ -442,7 +442,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Pula Golf': {
       location: '松塞尔韦拉 · 距帕尔马55公里',
-      text: '由奥拉萨巴尔在2004至2006年间全面重新设计，此后举办了八场欧巡赛赛事。优秀的练习设施，包括Trackman Range技术。费德勒和纳达尔于2025年7月在此打了一轮球。瓜迪奥拉是常客。',
+      text: '由奥拉萨巴尔在2004至2006年间全面重新设计，此后举办了八场欧巡赛赛事。优秀的练习设施，包括Trackman Range技术。费德勒和纳达尔于2025年7月在此打了一轮球。',
       footer: '奥拉萨巴尔设计 · 欧巡赛举办地',
     },
     'Golf Club Son Servera': {
@@ -558,7 +558,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Pula Golf': {
       location: 'Son Servera',
-      text: 'Volledig herontworpen door Olazábal tussen 2004 en 2006, daarna gastheer van acht European Tour-evenementen. Uitstekende oefenfaciliteiten inclusief Trackman Range-technologie. Federer en Nadal speelden hier in juli 2025 een ronde. Pep Guardiola is een vaste gast.',
+      text: 'Volledig herontworpen door Olazábal tussen 2004 en 2006, daarna gastheer van acht European Tour-evenementen. Uitstekende oefenfaciliteiten inclusief Trackman Range-technologie. Federer en Nadal speelden hier in juli 2025 een ronde.',
       footer: 'Olazábal-ontwerp · Gastheer European Tour',
     },
     'Golf Club Son Servera': {
@@ -674,7 +674,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Pula Golf': {
       location: 'Son Servera',
-      text: 'Helt omdesignad av Olazábal mellan 2004 och 2006, som sedan arrangerade åtta European Tour-evenemang. Utmärkta träningsanläggningar inklusive Trackman Range-teknologi. Federer och Nadal spelade en runda här i juli 2025. Pep Guardiola är en regelbunden gäst.',
+      text: 'Helt omdesignad av Olazábal mellan 2004 och 2006, som sedan arrangerade åtta European Tour-evenemang. Utmärkta träningsanläggningar inklusive Trackman Range-teknologi. Federer och Nadal spelade en runda här i juli 2025.',
       footer: 'Olazábal-design · Värd för European Tour',
     },
     'Golf Club Son Servera': {

@@ -14,7 +14,7 @@ export const GOLF_COURSES_CONTENT = {
         "Played and Researched Properly",
         "PGA Professional"
       ],
-      "lead": "Browse all 24 courses by region. For a smarter shortlist — filtered by your handicap, budget, and trip style — use the course selector. Then send me your dates, handicap, and hotel area and I'll refine the recommendation."
+      "lead": "Browse all 24 courses by region. For a smarter shortlist, filtered by your handicap, budget, and trip style, use the course selector. Then send me your dates, handicap, and hotel area and I'll refine the recommendation."
     },
     "regionHeaders": {
       "palma": {

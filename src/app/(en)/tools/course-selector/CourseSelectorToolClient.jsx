@@ -236,7 +236,7 @@ const COURSES = [
     greenFee:'Peak €145 / Low €69 (dynamic)',
     buggyNote:'Walkable with a trolley; buggies available',
     bestFor:'Tour pedigree without tour-venue crowds',
-    why:'Completely redesigned by Olazábal between 2004 and 2006, then host to eight European Tour events. The practice facilities are excellent and include a Trackman Range. Federer and Nadal played a round here in July 2025, and Pep Guardiola is a regular. Quieter than the big-name courses around Palma.',
+    why:'Completely redesigned by Olazábal between 2004 and 2006, then host to eight European Tour events. The practice facilities are excellent and include a Trackman Range. Federer and Nadal played a round here in July 2025. Quieter than the big-name courses around Palma.',
     andy:'Andy\'s view: a course manager\'s course. The Olazábal redesign rewards thinking your way round rather than overpowering it.',
     played:false,
     bestPlayer:'Casual to low handicap',

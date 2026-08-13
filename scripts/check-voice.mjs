@@ -6,12 +6,11 @@
  * + section 6). check:text catches encoding corruption; this catches voice
  * drift: em dashes and banned filler words in English copy.
  *
- * SCOPE (v1): the two English-only master content files, where every string is
- * English so there is zero false-positive risk. The page/section content files
- * (homepage-content.js, contact-content.js, etc.) embed all locales inline —
- * enforcing English-only rules there needs locale-aware traversal of each
- * module's `en` subtree, which is a planned v2. Chinese uses `——` legitimately,
- * so a naive whole-file scan there would be pure noise.
+ * SCOPE (v2): FULL_FILES are English-only master content files, scanned whole
+ * — zero false-positive risk. EN_SCOPED_FILES are page/section content files
+ * that embed all locales inline under a top-level `en: {`/`"en": {` key; for
+ * these, only that key's subtree is scanned (brace-depth walk, quote-aware),
+ * so Chinese's legitimate `——` and other locale copy never false-flag.
  *
  * Run: npm run check:voice   (standalone — not wired into pre-commit yet)
  */
@@ -23,9 +22,28 @@ import { dirname, join, resolve } from 'node:path'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = resolve(__dirname, '..')
 
-// English-only master content files. Extend deliberately — only add files
-// whose strings are all English, or a v2 that scopes to an `en` subtree.
-const FILES = ['src/lib/guide-article-content.js', 'src/lib/guide-post-content.js']
+// English-only master content files — scanned in full.
+const FULL_FILES = [
+  'src/lib/guide-article-content.js',
+  'src/lib/guide-post-content.js',
+  'src/lib/golf-courses-data.js',
+]
+
+// Page/section content files with all locales inline under a top-level
+// `en:` key. Only that subtree is scanned. Extend deliberately — only add
+// files that follow the `en: { ... }, de: { ... }, ...` top-level shape.
+const EN_SCOPED_FILES = [
+  'src/lib/golf-courses-content.js',
+  'src/lib/homepage-content.js',
+  'src/lib/about-content.js',
+  'src/lib/guides-content.js',
+  'src/lib/offers-content.js',
+  'src/lib/plan-your-trip-content.js',
+  'src/lib/coaching-content.js',
+  'src/lib/contact-content.js',
+]
+
+const FILES = [...FULL_FILES, ...EN_SCOPED_FILES]
 
 const EM_DASH = '—'
 
@@ -46,7 +64,10 @@ const BANNED_TRANSITIONS = [
 // Legitimate phrases that contain a banned word but are not the banned filler
 // use (e.g. "dynamic pricing" is an industry term, not the vague adjective
 // "dynamic"). These are blanked out before the banned-word scan.
-const ALLOWED_PHRASES = ['dynamic pricing']
+// "World-class venues" (homepage credentials heading) is an explicit Andy
+// exception to the banned-word list: factually true (Pebble Beach, Doral,
+// Evian, The Open), not filler, approved 2026-08-13.
+const ALLOWED_PHRASES = ['dynamic pricing', 'pricing is dynamic', 'world-class venues']
 
 function wordRegex(word) {
   // escape regex metachars, allow the hyphenated entries, match on word edges
@@ -57,15 +78,55 @@ function wordRegex(word) {
 const BANNED_WORD_RES = BANNED_WORDS.map((w) => ({ word: w, re: wordRegex(w) }))
 const BANNED_TRANSITION_RES = BANNED_TRANSITIONS.map((w) => ({ word: w, re: wordRegex(w) }))
 
+// Finds the top-level `en: {` / `"en": {` key and walks forward (quote-aware
+// brace counting) to its matching close. Returns [startIndex, endIndex)
+// character offsets into `text`, or null if no such key is found.
+function findEnSubtreeRange(text) {
+  const keyMatch = text.match(/^\s*"?en"?:\s*\{/m)
+  if (!keyMatch) return null
+
+  const braceOpenIdx = keyMatch.index + keyMatch[0].length - 1
+  let depth = 0
+  let inString = null // active quote char, or null
+  for (let i = braceOpenIdx; i < text.length; i++) {
+    const ch = text[i]
+    if (inString) {
+      if (ch === '\\') { i++; continue }
+      if (ch === inString) inString = null
+      continue
+    }
+    if (ch === "'" || ch === '"' || ch === '`') { inString = ch; continue }
+    if (ch === '{') depth++
+    else if (ch === '}') {
+      depth--
+      if (depth === 0) return [braceOpenIdx, i + 1]
+    }
+  }
+  return null
+}
+
 function checkFile(rel) {
   const abs = join(REPO_ROOT, rel)
   if (!existsSync(abs)) return { rel, findings: [], missing: true }
 
-  const lines = readFileSync(abs, 'utf8').split('\n')
+  const fullText = readFileSync(abs, 'utf8')
+  let text = fullText
+  let lineOffset = 0
+
+  if (EN_SCOPED_FILES.includes(rel)) {
+    const range = findEnSubtreeRange(fullText)
+    if (!range) {
+      return { rel, findings: [], missing: false, scopeError: true }
+    }
+    lineOffset = fullText.slice(0, range[0]).split('\n').length - 1
+    text = fullText.slice(range[0], range[1])
+  }
+
+  const lines = text.split('\n')
   const findings = []
 
   lines.forEach((line, idx) => {
-    const lineNo = idx + 1
+    const lineNo = idx + 1 + lineOffset
     if (line.includes(EM_DASH)) {
       findings.push({ lineNo, rule: 'em dash', detail: excerpt(line, EM_DASH) })
     }
@@ -100,6 +161,12 @@ function main() {
   const missing = results.filter((r) => r.missing).map((r) => r.rel)
   if (missing.length) {
     console.error(`⚠️  check:voice — file(s) not found (update FILES): ${missing.join(', ')}`)
+  }
+
+  const scopeErrors = results.filter((r) => r.scopeError).map((r) => r.rel)
+  if (scopeErrors.length) {
+    console.error(`⚠️  check:voice — could not find top-level "en:" key (update FILES or findEnSubtreeRange): ${scopeErrors.join(', ')}`)
+    process.exitCode = 1
   }
 
   const withFindings = results.filter((r) => r.findings.length > 0)
