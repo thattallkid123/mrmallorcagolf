@@ -1,0 +1,45 @@
+# Python dependencies for the MMG analytics / reporting / PDF tooling.
+#
+# Why this file exists: the July 2026 PC migration silently lost
+# google-analytics-data. Nothing recorded that it was needed, so nobody
+# noticed until 2026-08-14 - by which point every weekly business check had
+# been running for weeks with "GA4 unavailable: ModuleNotFoundError" buried in
+# the log, and the scheduled task quietly exiting 1. The reports still arrived;
+# they just had no GA4 data in them.
+#
+# Install everything on a new machine (or after any Python reinstall):
+#   python -m pip install -r requirements.txt
+#
+# Verify GA4 specifically actually works, not just that pip succeeded:
+#   python ga4_analytics/ga4_report.py
+#
+# Versions are the ones confirmed working on the primary PC 2026-08-14.
+# Pinned with >= rather than == so a fresh install gets security fixes; if a
+# future upgrade breaks a report, pin the exact version here and note why.
+
+# --- Google auth, shared by every Google-facing script ---
+google-auth>=2.56.2
+google-auth-oauthlib>=1.4.0
+google-api-python-client>=2.198.0
+
+# --- GA4 reporting (ga4_analytics/) ---
+# This is the one that went missing. Weekly business check depends on it.
+google-analytics-data>=0.23.0
+
+# --- Search Console (search_console/, seo_analytics/) ---
+# Uses google-api-python-client above; no extra package needed.
+
+# --- HTTP, used across scraping/reporting helpers ---
+requests>=2.34.2
+
+# --- PDF generation (scripts/generate-lead-magnet-pdfs.py, invoice builder) ---
+reportlab>=5.0.0
+
+# --- Spreadsheet reading (pricing/courtesy Excel fallbacks) ---
+openpyxl>=3.1.5
+
+# --- Optional, NOT required for any scheduled job ---
+# Only needed to re-run the one-off GA4 key-events setup script
+# (scripts/site-ops/ga4-key-events-setup.py). Deliberately left uninstalled on
+# the primary PC; install on demand if you need to reconfigure GA4 key events.
+# google-analytics-admin>=0.22.0

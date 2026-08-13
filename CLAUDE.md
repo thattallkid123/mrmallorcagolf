@@ -58,6 +58,8 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 
 **Secrets (not in git — must exist on both machines):** `.env` and `.env.local` (API keys — Resend etc.); `.github-token`; `ga4_analytics/ga4_oauth_client.json`, `ga4_token.json`; `search_console/search_console_token.json`; `seo_analytics/google_token.json`; `zoho_mail/zoho_config.json`.
 
+**Python dependencies (not automatic — a migration will silently lose these):** run `python -m pip install -r requirements.txt` on any new machine or after a Python reinstall, then confirm GA4 actually works with `python ga4_analytics/ga4_report.py`. The July 2026 migration lost `google-analytics-data` with nothing recording that it was needed; every weekly business check ran without GA4 data for weeks, logging "GA4 unavailable" where nobody was looking. `pip install` succeeding is not proof — run the report.
+
 **Claude/Codex config** lives at `~/.claude/` and `~/.codex/` on each machine. Sign in fresh on each — do not copy credentials between machines. Skills, agents, and memory folders should match.
 
 **Machine-portability gotchas** (all three caused real data loss or blind sessions in the July 2026 move):
