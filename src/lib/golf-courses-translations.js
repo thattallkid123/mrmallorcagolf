@@ -54,8 +54,8 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat',
-      text: 'Sieben Kilometer von Palma in einem bewaldeten Tal: wirklich ruhig für einen Platz so nah an der Stadt. Blick auf die Bucht von Palma, die Insel Cabrera und das alte Schloss Bendinat. Hinweis: Das Hauptclubhaus wird derzeit renoviert, Wiedereröffnung geplant für Mai/Juni 2026. Begrenzte Besucherstartkarten pro Tag: im Voraus buchen.',
-      footer: 'Clubhaus-Renovierung bis Mai/Juni 2026',
+      text: 'Sieben Kilometer von Palma in einem bewaldeten Tal: wirklich ruhig für einen Platz so nah an der Stadt. Blick auf die Bucht von Palma, die Insel Cabrera und das alte Schloss Bendinat. Begrenzte Besucherstartkarten pro Tag: im Voraus buchen.',
+      footer: 'Blick auf die Bucht von Palma und Schloss Bendinat',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià',
@@ -170,8 +170,8 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat',
-      text: 'Siete kilómetros de Palma en un valle arbolado: genuinamente tranquilo para un campo tan cercano a la ciudad. Vistas sobre la Bahía de Palma, la isla de Cabrera y el antiguo Castillo de Bendinat. Nota: el clubhouse principal está en obras, con reapertura prevista para mayo/junio 2026. Tarjetas de visitante limitadas por día: reservar con antelación.',
-      footer: 'Renovación del clubhouse hasta mayo/junio 2026',
+      text: 'Siete kilómetros de Palma en un valle arbolado: genuinamente tranquilo para un campo tan cercano a la ciudad. Vistas sobre la Bahía de Palma, la isla de Cabrera y el antiguo Castillo de Bendinat. Tarjetas de visitante limitadas por día: reservar con antelación.',
+      footer: 'Vistas a la Bahía de Palma y el Castillo de Bendinat',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià',
@@ -286,8 +286,8 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat',
-      text: 'Sept kilomètres de Palma dans une vallée boisée: vraiment paisible pour un parcours si proche de la ville. Vues sur la Baie de Palma, l\'île de Cabrera et le vieux Château de Bendinat. Note : le clubhouse principal est en travaux, avec une réouverture prévue en mai/juin 2026. Green fees visiteurs limités par jour: réserver à l\'avance.',
-      footer: 'Rénovation du clubhouse jusqu\'en mai/juin 2026',
+      text: 'Sept kilomètres de Palma dans une vallée boisée: vraiment paisible pour un parcours si proche de la ville. Vues sur la Baie de Palma, l\'île de Cabrera et le vieux Château de Bendinat. Green fees visiteurs limités par jour: réserver à l\'avance.',
+      footer: 'Vues sur la Baie de Palma et le Château de Bendinat',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià',
@@ -402,8 +402,8 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Real Golf de Bendinat': {
       location: '本迪纳特 · 距帕尔马7公里',
-      text: '距帕尔马7公里，坐落在林木茂密的山谷中:对于如此靠近城市的球场而言，环境格外宁静。可俯瞰帕尔马湾、卡布雷拉岛和古老的本迪纳特城堡。注意：主会所目前正在翻修，预计于2026年5月/6月重新开放。每日游客开球资格有限:提前预订。',
-      footer: '会所翻修至2026年5月/6月',
+      text: '距帕尔马7公里，坐落在林木茂密的山谷中:对于如此靠近城市的球场而言，环境格外宁静。可俯瞰帕尔马湾、卡布雷拉岛和古老的本迪纳特城堡。每日游客开球资格有限:提前预订。',
+      footer: '可俯瞰帕尔马湾与本迪纳特古堡',
     },
     'T Golf Calvià (Poniente)': {
       location: '卡尔维亚 · 距帕尔马12公里',
@@ -518,8 +518,8 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat',
-      text: 'Zeven kilometer van Palma in een bebost dal: echt rustig voor een baan zo dicht bij de stad. Uitzichten over de Baai van Palma, het eiland Cabrera en het oude Kasteel van Bendinat. Opmerking: het hoofdclubhouse is momenteel in renovatie, met volledige heropening gepland voor mei/juni 2026. Beperkte bezoekers-greenfees per dag: van tevoren boeken.',
-      footer: 'Clubhouse-renovatie tot mei/juni 2026',
+      text: 'Zeven kilometer van Palma in een bebost dal: echt rustig voor een baan zo dicht bij de stad. Uitzichten over de Baai van Palma, het eiland Cabrera en het oude Kasteel van Bendinat. Beperkte bezoekers-greenfees per dag: van tevoren boeken.',
+      footer: 'Uitzicht op de Baai van Palma en Kasteel Bendinat',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià',
@@ -634,8 +634,8 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Real Golf de Bendinat': {
       location: 'Bendinat',
-      text: 'Sju kilometer från Palma i en skogsdal: genuint fridfull för en bana så nära staden. Utsikt över Palmas bukt, ön Cabrera och det gamla Bendinat-slottet. Obs: huvudklubhuset renoveras just nu, med full återöppning planerad till maj/juni 2026. Begränsade besökargreenfeeavgifter per dag: boka i förväg.',
-      footer: 'Klubbhusrenovering till maj/juni 2026',
+      text: 'Sju kilometer från Palma i en skogsdal: genuint fridfull för en bana så nära staden. Utsikt över Palmas bukt, ön Cabrera och det gamla Bendinat-slottet. Begränsade besökargreenfeeavgifter per dag: boka i förväg.',
+      footer: 'Utsikt över Palmas bukt och Bendinat-slottet',
     },
     'T Golf Calvià (Poniente)': {
       location: 'Calvià',

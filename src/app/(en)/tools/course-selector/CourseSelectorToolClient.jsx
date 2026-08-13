@@ -204,7 +204,7 @@ const COURSES = [
     greenFee:'Peak €123 / Low €74',
     buggyNote:'Walkable with a trolley; some climbs',
     bestFor:'A peaceful wooded round near Portals',
-    why:'A Martin Hawtree wooded valley course from 1986 that feels peaceful despite its built-up surroundings, with views of the Bay of Palma, Cabrera Island and Bendinat Castle. Two things to know: the main clubhouse is under renovation until May/June 2026, and visitor green fees are limited per day, so book ahead.',
+    why:'A Martin Hawtree wooded valley course from 1986 that feels peaceful despite its built-up surroundings, with views of the Bay of Palma, Cabrera Island and Bendinat Castle. One thing to know: visitor green fees are limited per day, so book ahead.',
     andy:'Andy\'s view: the scorecard says short, the trees say accurate. A good half-day round with Puerto Portals ten minutes away for lunch after.',
     played:false,
     bestPlayer:'Casual to confident',
