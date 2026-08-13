@@ -400,6 +400,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <div className="testimonials__header reveal">
               <p className="eyebrow eyebrow--gold">{content.testimonials.eyebrow}</p>
               <h2 className="serif-display" style={{ color: '#fff' }}>{content.testimonials.title}</h2>
+              <p className="guides-carousel-section__hint" style={{ color: 'rgba(255,255,255,0.4)' }}>{'<- scroll ->'}</p>
             </div>
             <div className="testimonials__grid">
               {content.testimonials.items.map((item) => (
