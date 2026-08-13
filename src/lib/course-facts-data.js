@@ -81,7 +81,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 15,
     "designer": "Martin Hawtree",
     "opened": "1986 (9 holes; extended to 18 in 1995)",
-    "signatureHole": null,
+    "signatureHole": "12th (par 3) - raised tee over a lake to a wide green [unconfirmed - published-review candidate, Andy has not played this course]",
     "practiceFacilities": "Driving range | Putting green | Chipping area"
   },
   "canyamel": {
@@ -109,7 +109,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 75,
     "designer": "José Gancedo",
     "opened": "1988",
-    "signatureHole": null,
+    "signatureHole": "9th - a centuries-old stone house sits in the middle of the fairway [unconfirmed - published-review candidate, Andy has not played this course]",
     "practiceFacilities": "Driving range | Putting green | Pitching green | Chipping green | Practice bunker"
   },
   "capdepera": {
@@ -165,7 +165,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 25,
     "designer": "Dieter Cabus",
     "opened": "2006",
-    "signatureHole": null,
+    "signatureHole": "4th (par 5) - dogleg left to an island green [unconfirmed - published-review candidate, Andy has not played this course]",
     "practiceFacilities": "Driving range with grass and mats | Large putting green | All-grass chipping/pitching area with slopes | Bunker work area"
   },
   "palma_pp": {
@@ -224,7 +224,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 45,
     "designer": "José Gancedo (original) | Michael Pinner, Nicklaus Group (2000 redesign)",
     "opened": "1986",
-    "signatureHole": null,
+    "signatureHole": "9th - finishing hole with views over the surrounding landscape [unconfirmed - published-review candidate, Andy has not played this course]",
     "practiceFacilities": "Driving range | Practice bunker | Pitching & putting greens | Golf school"
   },
   "pula": {
@@ -280,9 +280,9 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Built on a hill.",
     "buggyGuidance": "Generally recommended to take a buggy.",
     "travelFromPalmaMinutes": 60,
-    "designer": null,
-    "opened": null,
-    "signatureHole": null,
+    "designer": "Francisco López Segalés",
+    "opened": "1996",
+    "signatureHole": "9th (par 5, finishing hole) - approach shot over a stream [unconfirmed - published-review candidate, Andy has not played this course]",
     "practiceFacilities": "Driving range | Chipping green | Practice bunkers | Par-3 training area | Academy"
   },
   "santa_ponsa": {
@@ -342,7 +342,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 25,
     "designer": "José Gancedo",
     "opened": "1991",
-    "signatureHole": null,
+    "signatureHole": "18th (par 3) - island green shaped like the island of Mallorca, played over water [unconfirmed - published-review candidate, Andy has not played this course]",
     "practiceFacilities": "Shared Santa Ponsa practice complex | Long driving range | Large putting green | Pitching and chipping areas, including bunker practice"
   },
   "santa_ponsa3": {
@@ -401,7 +401,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 25,
     "designer": "Francisco Lopez-Segalés",
     "opened": "1994",
-    "signatureHole": null,
+    "signatureHole": "15th - green guarded by two stretches of water, reached over a bridge [unconfirmed - published-review candidate, Andy has not played this course]",
     "practiceFacilities": "Circular driving range (200+ capacity) | Approach green with bunkers | ~1,000m² putting green | One of Europe's largest golf academies | 5 PGA pros: Ramon Mestre (head), Pablo Saldaña, John Verhappen, Daniela Modrok, Juan Luis Martínez"
   },
   "son_antem_w": {
@@ -661,7 +661,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 25,
     "designer": "Jack Nicklaus",
     "opened": "2006",
-    "signatureHole": null,
+    "signatureHole": "12th - island green, widely cited as one of Mallorca's most photographed golf holes [unconfirmed - published-review candidate, Andy has not played this course]",
     "practiceFacilities": "42-bay driving range (14 covered bays) | 250-metre distance | Putting greens | Generous short game training area | PGA-certified coaches available (multiple languages) | Academy coaches: Coque Insua, Marc Urpi, Moritz Beyer"
   },
   "vall_dor": {
@@ -688,7 +688,7 @@ export const COURSE_FACTS = Object.freeze({
     "walk": "Hilly and recommended with a buggy, but if fit can walk.",
     "buggyGuidance": "Buggy recommended.",
     "travelFromPalmaMinutes": 55,
-    "designer": null,
+    "designer": "Bradford Benz (1993 redesign/expansion to 18 holes)",
     "opened": "1986",
     "signatureHole": "Two nines built at different times",
     "practiceFacilities": "Driving range 200-metre distance | 18 teeing areas | Sand bunkers | Putting greens | Chipping green | Ball dispenser"
