@@ -121,6 +121,14 @@ function buildBreadcrumbSchema(locale, content) {
 export default function PlayWithAProView({ content, locale = 'en' }) {
   const stripViewportRef = useRef(null)
   const stripTrackRef = useRef(null)
+  const testimonialsGridRef = useRef(null)
+  const scrollTestimonials = () => {
+    const grid = testimonialsGridRef.current
+    if (!grid) return
+    const cardWidth = grid.querySelector('.testimonial')?.offsetWidth || 360
+    const atEnd = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 4
+    grid.scrollTo({ left: atEnd ? 0 : grid.scrollLeft + cardWidth + 2, behavior: 'smooth' })
+  }
   const links = PAGE_LINKS[locale] || PAGE_LINKS.en
   const copy =
     locale === 'zh'
@@ -400,15 +408,24 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <div className="testimonials__header reveal">
               <p className="eyebrow eyebrow--gold">{content.testimonials.eyebrow}</p>
               <h2 className="serif-display" style={{ color: '#fff' }}>{content.testimonials.title}</h2>
-              <p className="guides-carousel-section__hint" style={{ color: 'rgba(255,255,255,0.4)' }}>{'<- scroll ->'}</p>
             </div>
-            <div className="testimonials__grid">
-              {content.testimonials.items.map((item) => (
-                <div key={item.author} className="testimonial">
-                  <p>{item.text}</p>
-                  <p className="testimonial__author">{item.author}</p>
-                </div>
-              ))}
+            <div className="testimonials__grid-wrap">
+              <div className="testimonials__grid" ref={testimonialsGridRef}>
+                {content.testimonials.items.map((item) => (
+                  <div key={item.author} className="testimonial">
+                    <p>{item.text}</p>
+                    <p className="testimonial__author">{item.author}</p>
+                  </div>
+                ))}
+              </div>
+              <button
+                type="button"
+                className="testimonials__scroll-btn"
+                onClick={scrollTestimonials}
+                aria-label={locale === 'zh' ? '查看更多评价' : 'Scroll for more reviews'}
+              >
+                →
+              </button>
             </div>
           </section>
         ) : null}
