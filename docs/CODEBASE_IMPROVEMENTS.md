@@ -35,9 +35,10 @@ Catches structural errors before deploy:
 - Incorrect featured/signature flag patterns
 - Missing required sections (hero, day, packages, etc.)
 
-**Run it:**
+**Run it:** — **RETIRED, do not use.** `check:content-validation` no longer exists in `package.json`; see the 2026-08-06 note at the top of this file. Its job is covered by:
+
 ```bash
-npm run check:content-validation
+npm run check:locale-parity
 ```
 
 **What it validates:**
@@ -103,11 +104,10 @@ Added to `package.json`:
 
 ```json
 "check:locale-parity": "node scripts/check-locale-parity.js",
-"check:content-validation": "node scripts/validate-content.mjs"
+"check:content-validation": "node scripts/validate-content.mjs"   // RETIRED - no longer in package.json
 ```
 
-**Update your CI/CD:**
-Consider adding `check:content-validation` to your `check:content` or `check:ready` script if you want automated checks on every build.
+**Update your CI/CD:** — already done, and not via `check:content-validation`. That script was retired (see the 2026-08-06 note at the top); `check:locale-parity` is what's actually wired into `check:content` now, so every build already runs it.
 
 ---
 
@@ -196,7 +196,7 @@ None of these changes affect what users see or how the site runs.
 
 ## Next Steps
 
-1. **Run validation:** `npm run check:content-validation` to verify no existing issues
+1. **Run validation:** `npm run check:content` (the full gate) — not `check:content-validation`, which was retired; see the 2026-08-06 note at the top
 2. **Test import aliases:** Edit one page to use `@lib/` and `@components/` imports, verify it works
 3. **Check parity:** `npm run check:locale-parity` to verify all 6 languages are consistent
 4. **Consider:** Adding validation checks to your pre-deploy script
