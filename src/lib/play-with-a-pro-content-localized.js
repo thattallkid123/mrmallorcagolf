@@ -110,6 +110,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "text": "Jugué 18 hoyos con Andy esta mañana. Después de unos 4 hoyos Andy llegó con su valoración y a partir de ahí todo se volvió más disfrutable y la mejora fue enorme. Un tipo con los pies en la tierra que explicó todo con facilidad y me hizo sentir muy relajado. No puedo esperar a mi próxima ronda el domingo."
+        },
+        {
+          "text": "Andy es un verdadero profesional del golf. Aprendí más en medio día con él que en un año jugando solo. Si quiere mejorar de verdad su juego, vaya con Andy."
+        },
+        {
+          "text": "Andy es excepcional en lo que hace. Una ronda divertida, muy buena compañía y consejos realmente valiosos que mejoraron mi juego al final. Aprender de un profesional como él sobre el campo, en situaciones reales, supera cualquier clase en el driving range."
+        },
+        {
+          "text": "Mi esposa y yo pasamos dos días magníficos con Andy. Nos dio consejos sencillos que pudimos aplicar de inmediato en el campo y nos enseñó a pensar mejor durante los 18 hoyos. Genial verlo jugar también — volveremos a reservar el año que viene."
         }
       ]
     },
@@ -359,6 +368,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "text": "Heute Morgen habe ich 18 Löcher mit Andy gespielt. Nach ungefähr 4 Löchern kam er mit seiner Einschätzung und von da an wurde alles angenehmer und die Verbesserung war enorm. Ein bodenständiger Typ, der alles mit Leichtigkeit erklärt und mich so entspannt hat. Kann es kaum erwarten bis zu meiner nächsten Runde am Sonntag."
+        },
+        {
+          "text": "Andy ist ein echter Golfprofi. Ich habe in einem halben Tag mit ihm mehr gelernt als in einem Jahr allein. Wer sein Spiel wirklich verbessern will, sollte zu Andy gehen."
+        },
+        {
+          "text": "Andy ist herausragend in dem, was er tut. Eine unterhaltsame Runde in großartiger Gesellschaft mit wirklich wertvollen Tipps, die mein Spiel bis zum Ende verbessert haben. Von einem Pro wie ihm direkt auf dem Platz zu lernen, in echten Situationen, schlägt jede Lektion auf der Range."
+        },
+        {
+          "text": "Meine Frau und ich haben zwei großartige Tage mit Andy verbracht. Er gab uns einfache Tipps, die wir sofort auf dem Platz umsetzen konnten, und brachte uns bei, strategischer über 18 Löcher nachzudenken. Toll, ihn auch spielen zu sehen — wir werden nächstes Jahr wieder buchen."
         }
       ]
     },
@@ -608,6 +626,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "text": "J'ai joué 18 trous avec Andy ce matin. Après environ 4 trous Andy est arrivé avec son analyse et à partir de là tout est devenu agréable et la progression a été immense. Un gars accessible qui a tout expliqué avec facilité et m'a mis très à l'aise. Vivement ma prochaine partie dimanche."
+        },
+        {
+          "text": "Andy est un vrai professionnel du golf. J'ai appris plus en une demi-journée avec lui qu'en un an à jouer seul. Si vous voulez vraiment progresser, allez voir Andy."
+        },
+        {
+          "text": "Andy est exceptionnel dans ce qu'il fait. Une partie agréable, une excellente compagnie et des conseils vraiment précieux qui ont amélioré mon jeu à la fin. Apprendre avec un pro comme lui sur le parcours, dans des situations réelles, vaut bien mieux qu'une leçon au practice."
+        },
+        {
+          "text": "Ma femme et moi avons passé deux jours formidables avec Andy. Il nous a donné des conseils simples à appliquer immédiatement sur le parcours et nous a appris à mieux réfléchir sur 18 trous. C'était aussi très sympa de le voir jouer — nous réserverons à nouveau l'année prochaine."
         }
       ]
     },
@@ -856,6 +883,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "text": "Ik speelde vanochtend 18 holes met Andy. Na een hole of 4 kwam Andy met zijn beoordeling en vanaf dat moment werd alles leuker en was de verbetering enorm. Een nuchter persoon die alles gemakkelijk uitlegde en me zo ontspannen liet voelen. Kan niet wachten op mijn volgende ronde op zondag."
+        },
+        {
+          "text": "Andy is een echte golfprofessional. Ik leerde meer in een halve dag met hem dan in een jaar alleen spelen. Wil je je spel serieus verbeteren, ga dan met Andy."
+        },
+        {
+          "text": "Andy is uitzonderlijk goed in wat hij doet. Een leuke ronde, fijn gezelschap en echt waardevolle tips die mijn spel tegen het einde verbeterden. Leren van een pro zoals hij op de baan, in echte situaties, is beter dan elke les op de driving range."
+        },
+        {
+          "text": "Mijn vrouw en ik brachten twee geweldige dagen door met Andy. Hij gaf ons eenvoudige tips die we meteen op de baan konden toepassen en leerde ons beter na te denken over 18 holes. Ook leuk om hem zelf te zien spelen — we boeken volgend jaar weer."
         }
       ]
     },
@@ -1105,6 +1141,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "text": "Jag spelade 18 hål med Andy i morse. Efter ungefär 4 hål kom Andy med sin bedömning och från och med då blev allt roligare och förbättringen var enorm. En jordnära kille som förklarade allt med lätthet och fick mig att känna mig helt avslappnad. Ser fram emot min nästa runda på söndag."
+        },
+        {
+          "text": "Andy är en riktig golfproffs. Jag lärde mig mer på en halv dag med honom än på ett år av att spela själv. Vill du verkligen förbättra ditt spel, gå med Andy."
+        },
+        {
+          "text": "Andy är exceptionellt duktig på det han gör. En rolig runda, härligt sällskap och riktigt värdefulla tips som förbättrade mitt spel mot slutet. Att lära sig av ett proffs som han ute på banan, i verkliga situationer, slår alla lektioner på rangen."
+        },
+        {
+          "text": "Min fru och jag tillbringade två fantastiska dagar med Andy. Han gav oss enkla tips som vi kunde använda direkt på banan och lärde oss att tänka bättre över 18 hål. Kul att se honom spela också — vi bokar igen nästa år."
         }
       ]
     },
@@ -1354,6 +1399,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "text": "今天早上我和 Andy 打了 18 洞。大约打了 4 洞后，Andy 分享了他的评估，从那以后一切都变得愉快起来，进步也非常显著。他是个很接地气的人，用轻松的方式解释了一切，让我完全放松下来。迫不及待想打周日的下一场。"
+        },
+        {
+          "text": "Andy 是一位真正的高尔夫专业人士。跟他打半天球学到的东西，比我自己打一年球学到的还多。如果你真的想认真提升球技，就去找 Andy。"
+        },
+        {
+          "text": "Andy 在他所做的事情上非常出色。愉快的一轮球，很棒的陪伴，还有真正有价值的建议，让我的球技在这一天结束时有了提升。在球场上、在真实情况中向他这样的职业选手学习，比任何练习场课程都更有效。"
+        },
+        {
+          "text": "我和妻子与 Andy 一起度过了两天非常棒的时光。他给了我们一些简单实用的建议，在球场上马上就能用上，也教会了我们如何更好地规划 18 洞的思路。看他打球也很精彩——明年我们还会再预订。"
         }
       ]
     },

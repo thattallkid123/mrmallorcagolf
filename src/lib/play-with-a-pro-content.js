@@ -134,6 +134,18 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       {
         "text": "Played 18 holes with Andy this morning. After 4 holes or so Andy came in with his assessment and from then everything became enjoyable and the improvement was immense. Down to earth guy explained everything with ease and made me feel so relaxed. Can't wait for my next round on Sunday.",
         "author": "Mark"
+      },
+      {
+        "text": "Andy is a true golf professional. I learned more in half a day with him than a year playing solo. If you want to seriously improve your game, go with Andy.",
+        "author": "Julien"
+      },
+      {
+        "text": "Andy is amazing at what he does. A fun round with great company and genuinely valuable tips that improved my game by the end. Learning from a pro like him out on the course, in real situations, beats a driving range lesson every time.",
+        "author": "Amanda"
+      },
+      {
+        "text": "My wife and I spent two brilliant days with Andy. He gave us easy tips to put into action on the course straight away and taught us how to think our way around 18 holes. Great to watch him play too — we'll be booking again next year.",
+        "author": "Sam"
       }
     ]
   },
