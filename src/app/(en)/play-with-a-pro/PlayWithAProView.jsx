@@ -395,6 +395,23 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           </section>
         ) : null}
 
+        {content.testimonials?.items?.length ? (
+          <section className="testimonials">
+            <div className="testimonials__header reveal">
+              <p className="eyebrow eyebrow--gold">{content.testimonials.eyebrow}</p>
+              <h2 className="serif-display" style={{ color: '#fff' }}>{content.testimonials.title}</h2>
+            </div>
+            <div className="testimonials__grid">
+              {content.testimonials.items.map((item) => (
+                <div key={item.author} className="testimonial">
+                  <p>{item.text}</p>
+                  <p className="testimonial__author">{item.author}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         <section className="pwap-packages" id="packages">
           <div className="pwap-packages__header reveal">
             <p className="eyebrow">{content.packages.eyebrow}</p>
