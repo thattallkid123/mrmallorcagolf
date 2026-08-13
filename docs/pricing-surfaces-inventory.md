@@ -59,6 +59,13 @@ Hermes, the pricing-model categories, the sync pipeline — is documented in
 `mmg-tools/SOURCE-OF-TRUTH-MAP.md` section 1. This table is the surface-by-surface status
 only; go there for how the pieces fit together.
 
+For the routine seasonal sweep — how to find out whether a course's price has changed at all —
+use `mmg-tools/PRICING.md` > **Annual / Seasonal Price Check** (added 2026-08-13), and its
+**Editable Workbook Columns** table for what each of the Sheet's 42 columns means. Deals,
+vouchers and multi-round packs are a separate source (`deal-products.json`), covered by
+`mmg-tools/DATA-FLOWS.md` > Deal Products Flow — they are not in the Pricing Sheet and are not
+tracked in the table below.
+
 | File | Status |
 |---|---|
 | Pricing master Google Sheet (Pricing + Contract Terms 2026 tabs) | Source of truth for green fees, 9H, twilight, early-bird, pricing model, rate/booking URLs — edit here, then `.\mmg.ps1 pricing`. See `SOURCE-OF-TRUTH-MAP.md` §1. |
@@ -77,7 +84,10 @@ only; go there for how the pieces fit together.
 
 | File | Status |
 |---|---|
-| `docs/pricing-change-checklist.md` | ✅ Current |
+| `docs/pricing-change-checklist.md` | ✅ Current — re-checked 2026-08-13 against the rewritten `mmg-tools/PRICING.md`; every path it names still exists. Step 1 deduplicated, annual-check and deal-products entry points added, live-page verification added to step 6. |
+| `mmg-tools/PRICING.md` | ✅ Rewritten 2026-08-13 — full 42-column table, Annual / Seasonal Price Check runbook, documented direct cell-write endpoint |
+| `mmg-tools/DATA-FLOWS.md` | ✅ Contacts And Courtesy Flow + Course Key Alias Flow brought to the same standard 2026-08-13 |
+| `mmg-tools/COURSE-DATA-SYSTEM.md` | ✅ Course Master field table (30 fields) + periodic-staleness section added 2026-08-13 |
 | `docs/archive/pricing-handover-2026-06-18.md` | Archived — records the Jun 2026 decision |
 | `docs/pricing-surfaces-inventory.md` | ✅ This file — course pricing section updated 2026-07-29 |
 | `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1 | ✅ Course pricing architecture (Sheet/contracts/Hermes model, pricing-model categories) — updated 2026-07-29 |

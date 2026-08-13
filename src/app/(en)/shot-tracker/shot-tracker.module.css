@@ -281,24 +281,6 @@
   gap: 10px;
 }
 
-.trackingActionRow,
-.roundActionRow {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
-}
-
-.trackingActionRow .primaryButton,
-.roundActionRow .primaryButton {
-  grid-column: 1 / -1;
-}
-
-.trackingActionRow > *,
-.roundActionRow > *,
-.shotActionRow > * {
-  width: 100%;
-}
-
 .primaryButton,
 .secondaryButton,
 .ghostButton,
@@ -804,14 +786,12 @@
   }
 
   .buttonRow {
-    width: 100%;
-  }
-
-  .buttonRow:not(.trackingActionRow):not(.roundActionRow) {
     flex-direction: column;
   }
 
-  .buttonRow:not(.trackingActionRow):not(.roundActionRow) > *,
+  .primaryButton,
+  .secondaryButton,
+  .ghostButton,
   .holeNavButton {
     width: 100%;
   }

@@ -20,40 +20,7 @@ function assertRegex(source, pattern, label) {
   assert(pattern.test(source), `${label} is missing expected pattern: ${pattern}`);
 }
 
-const shotTrackerJs = read('src/app/(en)/shot-tracker/shot-tracker-prototype.jsx');
-const shotTrackerCss = read('src/app/(en)/shot-tracker/shot-tracker.module.css');
 const globalsCss = read('src/styles/globals.css');
-
-assertIncludes(
-  shotTrackerJs,
-  '`${styles.buttonRow} ${styles.trackingActionRow}`',
-  'Shot Tracker tracking action group',
-);
-assertIncludes(
-  shotTrackerJs,
-  '`${styles.buttonRow} ${styles.roundActionRow}`',
-  'Shot Tracker round action group',
-);
-assertIncludes(
-  shotTrackerJs,
-  '`${styles.buttonRow} ${styles.shotActionRow}`',
-  'Shot Tracker single-shot action group',
-);
-assertRegex(
-  shotTrackerCss,
-  /\.trackingActionRow,\s*\.roundActionRow\s*\{[\s\S]*?display:\s*grid;[\s\S]*?grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\);/m,
-  'Shot Tracker peer action rows',
-);
-assertRegex(
-  shotTrackerCss,
-  /\.trackingActionRow \.primaryButton,\s*\.roundActionRow \.primaryButton\s*\{[\s\S]*?grid-column:\s*1 \/ -1;/m,
-  'Shot Tracker primary action span',
-);
-assertRegex(
-  shotTrackerCss,
-  /\.buttonRow:not\(\.trackingActionRow\):not\(\.roundActionRow\)\s*\{[\s\S]*?flex-direction:\s*column;/m,
-  'Shot Tracker intentional single-action stacks',
-);
 
 assertRegex(
   globalsCss,

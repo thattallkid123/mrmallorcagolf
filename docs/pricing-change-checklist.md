@@ -5,13 +5,15 @@ Use this when any golf pricing changes, including Santa Ponsa 2 and 3.
 For the full list of surfaces to check, see `docs/pricing-surfaces-inventory.md`.
 For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subject "Course or offer" --old OLD --new NEW`.
 
+**This file starts from "a price has changed."** If you are instead going looking for what changed — the routine seasonal sweep — start on the mmg-tools side at `mmg-tools/PRICING.md` > **Annual / Seasonal Price Check**. That runbook covers finding the correct new figure (Hermes review queue → `officialRatesUrl` → `deal-products.json` > `annualSourceChecklist` for vouchers/packs) and hands back here once you have a confirmed number. Do not re-derive that process from this file.
+
 ## 1. Update the source of truth
 
-- Edit the pricing master Google Sheet (the single source of truth)
-- Run `.\mmg.ps1 pricing` then `.\mmg.ps1 site` from mmg-tools
-- Edit the live Pricing Google Sheet, then run `.\mmg.ps1 pricing` from `C:\OneDrive\Desktop\cursor\mmg-tools`.
-- Run `.\mmg.ps1 site` from `C:\OneDrive\Desktop\cursor\mmg-tools` to update website outputs.
-- Treat the generated JSON and readable MD as outputs, not edit targets
+- Edit the live Pricing Google Sheet — the single source of truth. Column reference: `mmg-tools/PRICING.md` > Editable Workbook Columns.
+- Run `.\mmg.ps1 pricing` from `C:\OneDrive\Desktop\cursor\mmg-tools` to regenerate tool data.
+- Run `.\mmg.ps1 site` from the same folder to update the website outputs (course price pills).
+- Treat the generated JSON and readable MD as outputs, not edit targets.
+- **Deals, vouchers and multi-round packs are a separate system** — they live in `mmg-tools/pricing/edit/confirmed/deal-products.json` and sync with `node scripts/sync-deal-products.js`, not through the Pricing Sheet or `.\mmg.ps1 pricing`. See `mmg-tools/DATA-FLOWS.md` > Deal Products Flow.
 
 ## 2. Update the main site
 
@@ -70,3 +72,4 @@ Manual surfaces to remember in the same pass:
 - Regenerate the lead magnet PDFs if any PDF-visible price changed
 - Run `npm run check:content` and fix any failures before commit or push
 - Commit and push the repo(s) that changed
+- **Verify on the live page, not just the generated JSON.** A generator can hold the right value while a downstream build step never reads it, leaving the old figure on screen. Load the actual page or tool for a course/date that exercises the change before calling it done.
