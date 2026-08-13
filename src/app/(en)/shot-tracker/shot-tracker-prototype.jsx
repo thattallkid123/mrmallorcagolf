@@ -892,7 +892,7 @@ export default function ShotTrackerPrototype() {
               ))}
             </div>
 
-            <div className={styles.buttonRow}>
+            <div className={`${styles.buttonRow} ${styles.trackingActionRow}`}>
               <button className={styles.primaryButton} onClick={() => captureCurrentLocation('start')} disabled={isLocating}>
                 {isLocating && !trackingStart ? 'Locating...' : 'Start tracking'}
               </button>
@@ -985,7 +985,7 @@ export default function ShotTrackerPrototype() {
               </label>
               <div className={styles.field}>
                 <span>Round actions</span>
-                <div className={styles.buttonRow}>
+                <div className={`${styles.buttonRow} ${styles.roundActionRow}`}>
                   <button className={styles.primaryButton} onClick={saveRound}>Save round</button>
                   <button className={styles.ghostButton} onClick={goToNextHole}>Continue round</button>
                   <button className={styles.ghostButton} onClick={startFreshRound}>Fresh round</button>
@@ -1056,7 +1056,7 @@ export default function ShotTrackerPrototype() {
                       </label>
                     </div>
 
-                    <div className={styles.buttonRow}>
+                    <div className={`${styles.buttonRow} ${styles.shotActionRow}`}>
                       <button type="button" className={styles.ghostButton} onClick={() => deleteShot(shot.id)}>
                         Delete shot
                       </button>

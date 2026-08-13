@@ -5026,21 +5026,45 @@ select.form-control { cursor: pointer; }
 }
 
 @media (max-width: 520px) {
-  .gdb-nav-row,
-  .gdb-cta-secondary {
-    display: flex;
-    flex-direction: column;
+  .gdb-nav-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: stretch;
   }
 
   .gdb-nav-row .gdb-btn-ghost,
-  .gdb-nav-row .gdb-btn-pine,
+  .gdb-nav-row .gdb-btn-pine {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .gdb-cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  .gdb-cta-grid > * {
+    grid-column: 1 / -1;
+  }
+
   .gdb-cta-grid .gdb-btn-gold,
   .gdb-cta-grid .gdb-btn-pine,
   .gdb-cta-secondary .gdb-btn-secondary,
   .gdb-restart {
     width: 100%;
     min-height: 46px;
+  }
+
+  .gdb-cta-grid > .gdb-btn-gold,
+  .gdb-cta-grid > .gdb-btn-pine {
+    grid-column: auto;
+  }
+
+  .gdb-cta-secondary {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
   }
 }
 

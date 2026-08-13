@@ -41,6 +41,7 @@
     "check:i18n-release": "node --no-warnings scripts/locale-release-check.js",
     "check:lighthouse": "node scripts/lighthouse-scorecard.mjs",
     "check:visual": "playwright test",
+    "check:action-layout": "node scripts/check-action-layout.mjs",
     "check:responsive": "node scripts/responsive-audit.js",
     "check:responsive:live": "node scripts/responsive-audit.js --base-url https://www.mrmallorcagolf.com",
     "sync:strokes-gained-course-data": "npm run check:course-data && node --no-warnings scripts/export-strokes-gained-course-data.mjs && node --no-warnings scripts/check-strokes-gained-export.js",
