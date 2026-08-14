@@ -1,5 +1,4 @@
 import { getOfferById, getPlayHeroBody, getPlayMultiDayDetail, OFFER_IDS } from './offers-content.js'
-import { normalizeMojibakeDeep } from './text-normalization.js'
 import { mergeLocalizedContent } from './guide-content-localization.js'
 import { getLocalizedPlayWithAProContent } from './play-with-a-pro-content-localized.js'
 
@@ -311,7 +310,7 @@ function getMergedPlayWithAProContent(locale = 'en') {
 }
 
 export function getPlayWithAProContent(locale = 'en') {
-  const content = normalizeMojibakeDeep(getMergedPlayWithAProContent(locale))
+  const content = getMergedPlayWithAProContent(locale)
   const soloOffer = getOfferById(OFFER_IDS.solo, locale)
   const groupOffer = getOfferById(OFFER_IDS.group, locale)
   const packages = content?.packages

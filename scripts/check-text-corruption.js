@@ -48,6 +48,35 @@ const DIRECT_PATTERNS = [
 const MOJIBAKE_MARKERS = ['Ã', '\u0080', '\u0082', '\u0083', '\u009d']
 const SUSPICIOUS_CIRCUMFLEX_A_PATTERN = /Â(?=[^A-Za-zÀ-ÿ])/g
 
+// Irreversible data loss: a literal '?' sitting where an accented letter used
+// to be (e.g. "ca?da" for "caída", "zus?tzlich" for "zusätzlich"). Found live
+// in guide-article-content-localized.js, untouched since 2026-04-17 (729be34)
+// through four later commits that edited those same lines — nothing catches
+// this shape because it's valid ASCII, not mojibake. Unlike the mojibake
+// patterns above, there is no repair: the original character is gone and a
+// human has to retype the word. Excludes URL query strings (?title=) and
+// regex/code fragments that leak in via QUOTED_STRING_PATTERN's multiline
+// string-boundary matching (e.g. an apostrophe in a comment before code).
+const INWORD_QUESTION_MARK_PATTERN = /[A-Za-zÀ-ÿ]\?[a-zà-ÿ]+/g
+const QUESTION_MARK_URL_EXCLUSION = /:\/\/|\?[a-z][a-zA-Z0-9_]*=/
+const QUESTION_MARK_CODE_EXCLUSION = /\.test\(|RegExp|=>|\bfunction\b|\bconst\b|require\(|\/[gimsuy]?\.test/
+
+// ASCII-folded accented words: a translation pass wrote German words with
+// their pre-1996-orthography ASCII digraphs (ä→ae, ö→oe, ü→ue, ß→ss) instead
+// of the accented characters — e.g. "Haeufige Fragen" for "Häufige Fragen".
+// This produces perfectly valid ASCII, so no pattern-based check can catch it
+// generically without a dictionary; this is a denylist of specific words
+// found live in the repo (2026-08-14 audit). Append new words here as found
+// rather than trying to generalize the regex — a broad ae/oe/ue pattern would
+// false-positive on legitimate loanwords.
+const ASCII_FOLDED_GERMAN_WORDS = [
+  'Haeufige', 'Haeufigsten', 'Gaeste', 'Gaesterunde', 'Gaesterunden',
+  'zugaenglich', 'fuenf', 'Voegel', 'Haeuser', 'Wohnhaeuser',
+  'zusaetzlich', 'regelmaessig', 'Oeffentlich', 'oeffnet', 'geniessen',
+  'ungestoertes', 'ungestoert', 'staendig', 'frueh', 'Qualitaet', 'nervoes',
+]
+const ASCII_FOLDED_GERMAN_PATTERN = new RegExp(`\\b(${ASCII_FOLDED_GERMAN_WORDS.join('|')})\\b`, 'g')
+
 function walk(dir, files = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (IGNORE_DIRS.has(entry.name)) continue
@@ -185,6 +214,31 @@ function collectDirectMatches(content) {
   return [...new Set(hits)]
 }
 
+function collectUnrepairableLosses(content) {
+  const hits = []
+
+  for (const match of content.matchAll(QUOTED_STRING_PATTERN)) {
+    const inner = match[0].slice(1, -1)
+    if (QUESTION_MARK_URL_EXCLUSION.test(inner) || QUESTION_MARK_CODE_EXCLUSION.test(inner)) continue
+
+    const questionMarkHits = inner.match(INWORD_QUESTION_MARK_PATTERN)
+    if (questionMarkHits) {
+      for (const hit of questionMarkHits) {
+        hits.push({ word: hit, context: inner.slice(0, 120) })
+      }
+    }
+
+    const foldedHits = inner.match(ASCII_FOLDED_GERMAN_PATTERN)
+    if (foldedHits) {
+      for (const hit of foldedHits) {
+        hits.push({ word: hit, context: inner.slice(0, 120) })
+      }
+    }
+  }
+
+  return hits
+}
+
 const findings = []
 
 for (const file of walk(ROOT)) {
@@ -195,14 +249,16 @@ for (const file of walk(ROOT)) {
   const content = raw.toString('utf8')
   const quotedFixes = collectQuotedStringFixes(content)
   const directMatches = collectDirectMatches(content)
+  const unrepairableLosses = collectUnrepairableLosses(content)
   const hasUtf8Bom = raw.length >= 3 && raw[0] === 0xef && raw[1] === 0xbb && raw[2] === 0xbf
 
-  if (quotedFixes.length === 0 && directMatches.length === 0 && !hasUtf8Bom) continue
+  if (quotedFixes.length === 0 && directMatches.length === 0 && unrepairableLosses.length === 0 && !hasUtf8Bom) continue
 
   findings.push({
     file: path.relative(ROOT, file),
     quotedFixes: quotedFixes.slice(0, 4),
     directMatches: directMatches.slice(0, 6),
+    unrepairableLosses: unrepairableLosses.slice(0, 6),
     hasUtf8Bom,
   })
 }
@@ -221,6 +277,12 @@ if (findings.length > 0) {
 
     if (finding.directMatches.length > 0) {
       console.error(`  direct: ${finding.directMatches.join(', ')}`)
+    }
+
+    if (finding.unrepairableLosses.length > 0) {
+      for (const loss of finding.unrepairableLosses) {
+        console.error(`  UNREPAIRABLE (retype by hand): "${loss.word}" in: ${JSON.stringify(loss.context)}`)
+      }
     }
 
     if (finding.hasUtf8Bom) {

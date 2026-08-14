@@ -1,5 +1,4 @@
 import { getOfferById, getHomeMultiDayBody, OFFER_IDS } from './offers-content.js'
-import { normalizeMojibakeDeep } from './text-normalization.js'
 import { mergeLocalizedContent } from './guide-content-localization.js'
 import { getLocalizedHomeContent } from './homepage-content-localized.js'
 
@@ -437,7 +436,7 @@ function getMergedHomeContent(locale = 'en') {
 
 function cleanHomeVisibleText(value) {
   if (typeof value === 'string') {
-    return normalizeMojibakeDeep(value)
+    return value
       .replaceAll('\u00C2\u00B7', '\u00B7')
       .replaceAll('\u00C2', '')
       .replaceAll('\u00E2\u201A\u00AC', '\u20AC')

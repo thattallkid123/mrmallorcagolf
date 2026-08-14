@@ -27,6 +27,7 @@ const repoRoot = path.join(__dirname, '..')
 
 const CHECKS = [
   { name: 'check:text', script: 'check-text-corruption.js' },
+  { name: 'check:js-parse', script: 'check-js-parse.mjs' },
   { name: 'check:fonts', script: 'check-font-usage.mjs' },
   { name: 'check:social-proof', script: 'sync-social-proof.mjs', args: ['--check'] },
   { name: 'check:offers', script: 'check-offers-consistency.js' },

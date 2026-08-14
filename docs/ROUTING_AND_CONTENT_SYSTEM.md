@@ -61,6 +61,4 @@ This file describes the current route/content architecture for the multilingual 
 
 ## Notes
 
-- Guide text output passes through mojibake normalization in:
-  - `src/lib/text-normalization.js`
-- This is a safety layer for corrupted encoding artifacts without changing URL behavior.
+- Text corruption is caught at commit time by `npm run check:text` (`scripts/check-text-corruption.js`) and `npm run check:js-parse`, not patched at render time. A prior runtime mojibake-repair module (formerly src/lib/text-normalization.js) was removed 2026-08-14 after auditing found it a no-op — 0 of 2,226 strings across the content modules it wrapped would ever change, because the corruption forms actually occurring in this repo (irreversible `?` substitution, ASCII-folded accents) are not the reversible Latin-1/UTF-8 mojibake shape it detected.

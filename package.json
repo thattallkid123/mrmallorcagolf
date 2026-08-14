@@ -13,6 +13,7 @@
     "prepare": "node scripts/setup-git-hooks.js",
     "lint": "eslint src scripts --ext .js,.jsx,.mjs",
     "check:text": "node scripts/check-text-corruption.js",
+    "check:js-parse": "node --no-warnings scripts/check-js-parse.mjs",
     "check:social-proof": "node --no-warnings scripts/sync-social-proof.mjs --check",
     "check:fonts": "node --no-warnings scripts/check-font-usage.mjs",
     "check:offers": "node --no-warnings scripts/check-offers-consistency.js",

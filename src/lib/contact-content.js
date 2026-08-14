@@ -1,4 +1,3 @@
-import { normalizeMojibakeDeep } from './text-normalization.js'
 import { mergeLocalizedContent } from './guide-content-localization.js'
 import { getLocalizedContactContent } from './contact-content-localized.js'
 import { getOfferById, OFFER_IDS } from './offers-content.js'
@@ -118,7 +117,7 @@ export function getContactContent(locale = 'en') {
   const groupOffer = getOfferById(OFFER_IDS.group, locale)
   const premiumOffer = getOfferById(OFFER_IDS.premium, locale)
 
-  return normalizeMojibakeDeep({
+  return {
     ...content,
     form: {
       ...content.form,
@@ -129,5 +128,5 @@ export function getContactContent(locale = 'en') {
         ['pwap-not-sure', content.form?.pwapFormats?.[3]?.[1] || 'Not sure yet', ''],
       ],
     },
-  })
+  }
 }

@@ -3923,7 +3923,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Meses con mejor relación calidad-precio"
         },
         {
-          "text": "Enero, febrero y en parte noviembre pueden dar buen valor, pero la ca?da t?pica respecto al pico hoy suele acercarse m?s al 30-50 %. Los periodos fuertes siguen siendo mediados de marzo a principios de junio y mediados de septiembre a mediados de noviembre."
+          "text": "Enero, febrero y en parte noviembre pueden dar buen valor, pero la caída típica respecto al pico hoy suele acercarse más al 30-50 %. Los periodos fuertes siguen siendo mediados de marzo a principios de junio y mediados de septiembre a mediados de noviembre."
         },
         {
           "text": "Alquiler de palos"
@@ -3932,7 +3932,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Los juegos del propio campo suelen costar entre 35 y 50 € en la tienda profesional. La calidad varía bastante."
         },
         {
-          "text": "Las empresas especializadas entregan en hotel, aeropuerto o campo. Los sets b?sicos empiezan alrededor de €25 por d?a. Las opciones premium de temporada actual arrancan en unos €55 por dos d?as, y despu?s mejoran bastante en estancias largas, hasta rondar €140 por diez d?as. Las tarifas semanales suelen ahorrar un 20-30 %. Reserve al menos con una semana de margen para encontrar el set adecuado y aprovechar descuentos por antelaci?n."
+          "text": "Las empresas especializadas entregan en hotel, aeropuerto o campo. Los sets básicos empiezan alrededor de €25 por día. Las opciones premium de temporada actual arrancan en unos €55 por dos días, y después mejoran bastante en estancias largas, hasta rondar €140 por diez días. Las tarifas semanales suelen ahorrar un 20-30 %. Reserve al menos con una semana de margen para encontrar el set adecuado y aprovechar descuentos por antelación."
         },
         {
           "text": "Buggies y trolleys"

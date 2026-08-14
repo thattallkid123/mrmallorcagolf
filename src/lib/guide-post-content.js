@@ -1,6 +1,5 @@
 import { getLocalizedGuidePostContent } from './guide-post-content-localized.js'
 import { mergeGuideContent } from './guide-content-localization.js'
-import { normalizeMojibakeDeep } from './text-normalization.js'
 
 export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
@@ -1359,12 +1358,12 @@ export function getGuidePostContent(slug, locale = 'en') {
   if (!guide) return null
 
   const baseContent = guide.en
-  if (locale === 'en') return withGuidePostSlug(normalizeMojibakeDeep(baseContent), slug)
+  if (locale === 'en') return withGuidePostSlug(baseContent, slug)
 
   const localizedContent = getLocalizedGuidePostContent(slug, locale) || guide[locale]
-  if (!localizedContent) return withGuidePostSlug(normalizeMojibakeDeep(baseContent), slug)
+  if (!localizedContent) return withGuidePostSlug(baseContent, slug)
 
-  return withGuidePostSlug(normalizeMojibakeDeep(mergeGuideContent(baseContent, localizedContent)), slug)
+  return withGuidePostSlug(mergeGuideContent(baseContent, localizedContent), slug)
 }
 
 function withGuidePostSlug(content, slug) {

@@ -252,6 +252,10 @@ Run this before shipping any feature that accepts a visitor keystroke or fires a
 
 **Why this is a standing rule:** audited 2026-08-14 and the policy was last edited 7 June 2026 while five data-collecting routes landed 14 June – 4 July. Nothing was malicious — each feature just shipped without anyone re-reading the policy, so it silently stopped describing the site. Nothing automated catches this: `check:content` and the locale checks validate structure and copy, never whether a stated data practice is still true.
 
+**Two more rules from the same 2026-08-14 audit:**
+- **Verify vendor compliance claims live before writing them into policy text.** If a policy update names a processor's data location or certification (EU-US Data Privacy Framework, EU hosting, etc.), check it with a live search rather than from memory — a vendor's compliance status changes over time and training knowledge goes stale. Confirmed live during the audit: MailerLite is Lithuania/EU-based (no transfer clause needed), Google/Resend/Vercel hold DPF certification, Upstash doesn't (named under Standard Contractual Clauses instead).
+- **Keep compliance-driven UI additions minimal.** When a fix needs a privacy-policy link or similar notice at the point of data collection, reuse existing small-print styling already on that page (e.g. the `ToolTrustLine` / "No spam. Unsubscribe any time." pattern) rather than introducing a new prominent element. Andy has explicitly said no cookie banner, matching peer sites his size — compliance UI on this site should stay quiet, not become its own feature.
+
 ## Analytics And SEO Rules
 
 ### Canonical Domain — ALWAYS www
@@ -269,7 +273,7 @@ Full inventory (sitemap, robots, RSS, llms.txt, structured data, hreflang, OG im
 
 ### Meta Descriptions — CTR Approach
 
-CTR on high-impression pages is the primary SEO lever. Rules + the key-pages tracking table live in the `/meta-ctr` skill and `docs/seo-reference.md`. In short: lead with the specific number/fact, answer the real question, under 155 chars, no filler endings. **Code gotcha:** use double quotes for JS strings containing apostrophes — the SWC compiler treats curly apostrophes (U+2019) as string terminators in single-quoted strings.
+CTR on high-impression pages is the primary SEO lever. Rules + the key-pages tracking table live in the `/meta-ctr` skill and `docs/seo-reference.md`. In short: lead with the specific number/fact, answer the real question, under 155 chars, no filler endings. **Code gotcha (corrected 2026-08-14 — the old note here was wrong):** a curly apostrophe *inside* string content parses fine in single quotes (`'Andy's verdict'` — sic, that one's still a real syntax error, but `'Andy's verdict'` with a *typographic* apostrophe is not). The actual bug, seen in 16 separate fix commits, is a typographic quote used as the string *delimiter itself* — `title: 'Golfreise planen'` where the opening/closing `'`/`"` got typed as `'`/`'`/`"`/`"` (U+2018/2019/201C/201D), which is a real syntax error in any quote style. This usually comes from pasting from Word/Docs/Sheets with smart quotes on, or a find/replace that touched delimiters, not just content. `npm run check:js-parse` (wired into `check:content` and pre-commit) now catches this directly — it parses every changed file and fails on any syntax error, this class included — so it's caught at commit time regardless of cause.
 
 ### Analytics Workflow
 

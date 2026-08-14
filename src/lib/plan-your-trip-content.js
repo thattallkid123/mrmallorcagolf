@@ -1,5 +1,4 @@
 import { getOfferById, OFFER_IDS } from './offers-content.js'
-import { normalizeMojibakeDeep } from './text-normalization.js'
 import { mergeLocalizedContent } from './guide-content-localization.js'
 import { getLocalizedPlanYourTripContent } from './plan-your-trip-content-localized.js'
 
@@ -110,7 +109,7 @@ function getMergedPlanYourTripContent(locale = 'en') {
 }
 
 export function getPlanYourTripContent(locale = 'en') {
-  const content = normalizeMojibakeDeep(getMergedPlanYourTripContent(locale))
+  const content = getMergedPlanYourTripContent(locale)
   const soloOffer = getOfferById(OFFER_IDS.solo, locale)
   const groupOffer = getOfferById(OFFER_IDS.group, locale)
   return content.addon

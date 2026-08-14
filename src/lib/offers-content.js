@@ -1,5 +1,3 @@
-import { normalizeMojibakeDeep } from './text-normalization.js'
-
 const OFFER_IDS = {
   solo: 'pwap-solo',
   group: 'pwap-group',
@@ -240,7 +238,7 @@ const OFFER_CONTENT = {
 }
 
 function getOfferLocale(locale = 'en') {
-  return normalizeMojibakeDeep(OFFER_CONTENT[locale] || OFFER_CONTENT.en)
+  return OFFER_CONTENT[locale] || OFFER_CONTENT.en
 }
 
 function getOfferCopy(locale = 'en') {

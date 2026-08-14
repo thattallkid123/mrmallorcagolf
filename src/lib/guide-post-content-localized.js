@@ -2280,7 +2280,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Wo Besucher Schläge verlieren",
-              "Viele Besucher geniessen die breiten Fairways, werden mit dem Driver zu selbstsicher und verlieren dann Schläge, weil sie die kleinen Ziele aus guten Positionen zu aggressiv angreifen und sich schwierige Chips lassen."
+              "Viele Besucher genießen die breiten Fairways, werden mit dem Driver zu selbstsicher und verlieren dann Schläge, weil sie die kleinen Ziele aus guten Positionen zu aggressiv angreifen und sich schwierige Chips lassen."
             ],
             [
               "Clubhaus-Tipp",
@@ -7274,7 +7274,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Drei oder vier Flights warteten bereits am ersten Abschlag, als wir an einem Sonntagmorgen um 7:50 ankamen. Wir hatten früh gebucht, um dem Tempo-Problem, das Resortplätze manchmal haben, zuvorzukommen. Das gelang nicht."
         },
         {
-          "text": "Das ist gut zu wissen, bevor man auf Son Antem West den ersten Schlag macht. Es ist ein beliebter, gut organisierter Resortplatz nahe Palma. Wer genau das erwartet, wird die Runde geniessen. Wer Ruhe und ein ungestörtes Tempo erwartet, vielleicht weniger."
+          "text": "Das ist gut zu wissen, bevor man auf Son Antem West den ersten Schlag macht. Es ist ein beliebter, gut organisierter Resortplatz nahe Palma. Wer genau das erwartet, wird die Runde genießen. Wer Ruhe und ein ungestörtes Tempo erwartet, vielleicht weniger."
         },
         {
           "text": "Erster Eindruck"
