@@ -27,9 +27,9 @@ const BOOKING_POLICY_COPY = {
       'Weniger als 7 Tage vorher: der gesamte Buchungswert wird einbehalten.',
       'Bei Unwetter, Blitzschlag oder Platzsperrung bieten wir nach unserem Ermessen eine Umbuchung oder Rückerstattung an.',
     ],
-    pairingNote: 'Hinweis zur Startzeit: An stark gebuchten Tagen kann der Golfplatz kleine Gruppen mit anderen Spielern zusammenlegen. Wenn die Startzeit nur für Ihre Gruppe reserviert sein soll, kann ich die freien Plätze vorab gegen Aufpreis mitbuchen. Beim Signature Day ist das standardmaessig enthalten.',
-    footnote: 'Greenfees und Kosten externer Anbieter können zusaetzlich den Richtlinien des jeweiligen Golfplatzes unterliegen.',
-    linkLabel: 'Vollstaendige Bedingungen lesen',
+    pairingNote: 'Hinweis zur Startzeit: An stark gebuchten Tagen kann der Golfplatz kleine Gruppen mit anderen Spielern zusammenlegen. Wenn die Startzeit nur für Ihre Gruppe reserviert sein soll, kann ich die freien Plätze vorab gegen Aufpreis mitbuchen. Beim Signature Day ist das standardmäßig enthalten.',
+    footnote: 'Greenfees und Kosten externer Anbieter können zusätzlich den Richtlinien des jeweiligen Golfplatzes unterliegen.',
+    linkLabel: 'Vollständige Bedingungen lesen',
   },
   es: {
     eyebrow: 'Reserva con confianza',

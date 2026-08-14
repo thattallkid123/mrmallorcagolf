@@ -268,8 +268,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Am besten für", "text": "Einzelspieler, Paare und kleine Gruppen, die einen richtigen Golftag auf Mallorca wollen." },
         { "label": "Format", "text": "Ein Platz, 18 Löcher, passend zu Ihrem Spiel, mit mir an Ihrer Seite während der ganzen Runde." },
-        { "label": "Preise", "text": "Solo ab €695. Gruppe ab €950 insgesamt. Greenfees sind getrennt und werden vor der Buchung bestaetigt." },
-        { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Andy antwortet persoenlich innerhalb von 24 Stunden." }
+        { "label": "Preise", "text": "Solo ab €695. Gruppe ab €950 insgesamt. Greenfees sind getrennt und werden vor der Buchung bestätigt." },
+        { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Andy antwortet persönlich innerhalb von 24 Stunden." }
       ]
     },
     "hero": {
@@ -454,7 +454,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Suchen Sie nach etwas Größerem?",
         "title": "Ein mehrtägiges Erlebnis, um Sie herum arrangiert.",
         "body": "Zwei oder drei aufeinanderfolgende Tage über Son Gual, Alcanada und weitere Plätze hinweg - mit privaten Transfers, sorgfältig ausgewählter Gastronomie und Zugang zu Plätzen, die die meisten Besucher nicht buchen können.",
-        "detail": "Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespraech bestaetigt, sobald der Tag Form hat.",
+        "detail": "Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.",
         "button": "Mehrtägige Reise anfragen →",
         "href": "/de/contact"
       }

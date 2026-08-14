@@ -442,10 +442,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Mallorca ist als Golfziel deutlich besser, als viele Menschen vermuten. Wer nur auf die grossen Namen in Portugal oder an der Costa del Sol schaut, übersieht, wie gut die Kombination aus Platzqualitaet, Klima und Landschaft hier wirklich ist."
+          "text": "Mallorca ist als Golfziel deutlich besser, als viele Menschen vermuten. Wer nur auf die grossen Namen in Portugal oder an der Costa del Sol schaut, übersieht, wie gut die Kombination aus Platzqualität, Klima und Landschaft hier wirklich ist."
         },
         {
-          "text": "Ich bin UK PGA Advanced Professional - eine der hoeheren Berufsqualifikationen im britischen Golf - und arbeite mich durch jeden Platz auf der Insel. Nicht als Blogger von der Terrasse aus, sondern spielend, vergleichend und mit klaren Meinungen dazu, wohin ich Kunden wirklich schicken wuerde."
+          "text": "Ich bin UK PGA Advanced Professional - eine der höheren Berufsqualifikationen im britischen Golf - und arbeite mich durch jeden Platz auf der Insel. Nicht als Blogger von der Terrasse aus, sondern spielend, vergleichend und mit klaren Meinungen dazu, wohin ich Kunden wirklich schicken würde."
         },
         {
           "text": "Die Top-Plätze - je nach Zweck"
@@ -477,7 +477,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-230",
               "7/10",
               "5.0",
-              "Spektakulaere Aussichten, Turnierqualitaet"
+              "Spektakuläre Aussichten, Turnierqualität"
             ],
             [
               "Son Muntaner",
@@ -504,7 +504,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "9/10",
               "4.0",
-              "Haertester Test auf der Insel"
+              "Härtester Test auf der Insel"
             ],
             [
               "Golf Son Vida",
@@ -531,7 +531,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€77-126",
               "8/10",
               "4.0",
-              "European-Tour-Standort, oeffentlich spielbar"
+              "European-Tour-Standort, öffentlich spielbar"
             ],
             [
               "Golf Santa Ponsa 2",
@@ -585,7 +585,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-135",
               "7/10",
               "4.0",
-              "Resortplatz, haerter als Son Antem East"
+              "Resortplatz, härter als Son Antem East"
             ],
             [
               "Golf Son Antem East",
@@ -603,7 +603,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€91-110",
               "7/10",
               "3.5",
-              "Unterschaetzt, ruhigere Option"
+              "Unterschätzt, ruhigere Option"
             ],
             [
               "Pula Golf",
@@ -630,7 +630,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€99-132",
               "6/10",
               "3.5",
-              "Ostkuestenblicke, starke Back Nine"
+              "Ostküstenblicke, starke Back Nine"
             ],
             [
               "Capdepera Golf",
@@ -648,7 +648,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-145",
               "6/10",
               "4.0",
-              "Meistfotografierter Platz der Ostkueste"
+              "Meistfotografierter Platz der Ostküste"
             ],
             [
               "Golf Pollensa",
@@ -657,7 +657,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€65-75",
               "4/10",
               "3.5",
-              "Einfache Aufwaermrunde, Tramuntana-Blicke"
+              "Einfache Aufwärmrunde, Tramuntana-Blicke"
             ],
             [
               "Palma Pitch & Putt",
@@ -690,10 +690,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Für eine ernsthafte Championship-Runde: Son Gual"
         },
         {
-          "caption": "Son Gual - der vollstaendigste Test auf der Insel"
+          "caption": "Son Gual - der vollständigste Test auf der Insel"
         },
         {
-          "text": "Mein meistgespielter Platz auf Mallorca und der, den ich am konsequentesten empfehle, wenn jemand eine richtige Prüfung will. Das Design von Thomas Himmel nutzt Wind, Hoehenunterschiede und Positionierung sehr intelligent. Wenn Ihr Spiel halbwegs in Ordnung ist und Sie einen Platz wollen, der ernst genommen werden will, ist das hier die erste Adresse."
+          "text": "Mein meistgespielter Platz auf Mallorca und der, den ich am konsequentesten empfehle, wenn jemand eine richtige Prüfung will. Das Design von Thomas Himmel nutzt Wind, Höhenunterschiede und Positionierung sehr intelligent. Wenn Ihr Spiel halbwegs in Ordnung ist und Sie einen Platz wollen, der ernst genommen werden will, ist das hier die erste Adresse."
         },
         {
           "text": "Rafa Nadal nennt ihn seinen Lieblingsplatz der Insel. Barack Obama spielte hier im November 2024. Greenfees liegen je nach Saison bei etwa €115-165."
@@ -706,16 +706,16 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Alcanada - Leuchtturm, Meer und ein echter Turnierplatz"
         },
         {
-          "text": "Robert Trent Jones Jr. im Norden der Insel, mit dem Leuchtturm auf seiner kleinen Insel als permanentem Fixpunkt. Von den hinteren Abschlaegen und an klaren Morgen ist das eine der eindrucksvollsten Golfkulissen Europas. Dazu kommt ein Platz, der mehr ist als nur schön - die Grüns und die Platzierung verlangen gutes Spiel."
+          "text": "Robert Trent Jones Jr. im Norden der Insel, mit dem Leuchtturm auf seiner kleinen Insel als permanentem Fixpunkt. Von den hinteren Abschlägen und an klaren Morgen ist das eine der eindrucksvollsten Golfkulissen Europas. Dazu kommt ein Platz, der mehr ist als nur schön - die Grüns und die Platzierung verlangen gutes Spiel."
         },
         {
-          "text": "Auf den erhoehten hinteren Abschlaegen zu stehen, ist ein Erlebnis für sich. Man fühlt sich weit weg von allem, der Leuchtturm steht vor einem, die Bucht zieht sich auf, und der Driver verschwindet gefühlt ins Leere. Genau so fühlt es sich an."
+          "text": "Auf den erhöhten hinteren Abschlägen zu stehen, ist ein Erlebnis für sich. Man fühlt sich weit weg von allem, der Leuchtturm steht vor einem, die Bucht zieht sich auf, und der Driver verschwindet gefühlt ins Leere. Genau so fühlt es sich an."
         },
         {
           "text": "Für ein DP-World-Tour-Gefühl: Son Muntaner"
         },
         {
-          "text": "Capdepera ist besser, als viele Besucher erwarten. Die Front Nine ist offen und gut spielbar, dann steigt die Back Nine in die Huegel und wird deutlich taktischer. Das Par-3 an der 15 ist eines der besten Löcher der Insel, mit erhoehten Bergblicken, die die Anfahrt schon vor dem letzten Putt lohnend machen."
+          "text": "Capdepera ist besser, als viele Besucher erwarten. Die Front Nine ist offen und gut spielbar, dann steigt die Back Nine in die Hügel und wird deutlich taktischer. Das Par-3 an der 15 ist eines der besten Löcher der Insel, mit erhöhten Bergblicken, die die Anfahrt schon vor dem letzten Putt lohnend machen."
         },
         {
           "text": "Für ein DP-World-Tour-Erlebnis: Son Muntaner"
@@ -728,16 +728,16 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "2025 als bester Golfplatz Spaniens ausgezeichnet, technisch stark, in sehr gutem Zustand und für Besucher leicht erreichbar. Wenn jemand etwas Hochwertiges will, aber nicht weit fahren möchte, ist Son Muntaner sehr logisch."
         },
         {
-          "text": "Für den haertesten Test: Golf de Andratx"
+          "text": "Für den härtesten Test: Golf de Andratx"
         },
         {
-          "caption": "Andratx - schwer, anspruchsvoll und nichts für Nachlaessigkeit"
+          "caption": "Andratx - schwer, anspruchsvoll und nichts für Nachlässigkeit"
         },
         {
-          "text": "Weitlaeufig als einer der schwierigsten Plätze der Insel angesehen. Anspruchsvolles Championship-Layout im Südwesten mit teuren Fehlern, wenn man den Platz nicht respektiert. Wer Golf als Test sucht, bekommt ihn hier."
+          "text": "Weitläufig als einer der schwierigsten Plätze der Insel angesehen. Anspruchsvolles Championship-Layout im Südwesten mit teuren Fehlern, wenn man den Platz nicht respektiert. Wer Golf als Test sucht, bekommt ihn hier."
         },
         {
-          "text": "Sie denken über Andratx nach? Ich erkläre Layout, Wind, passende Abschlaege und ob der Platz wirklich zu Ihrem Spiel passt.",
+          "text": "Sie denken über Andratx nach? Ich erkläre Layout, Wind, passende Abschläge und ob der Platz wirklich zu Ihrem Spiel passt.",
           "linkLabel": "Zur Golf-de-Andratx-Bewertung →"
         },
         {
@@ -745,7 +745,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "alt": "Canyamel Golf",
-          "caption": "Canyamel - Ostkueste, Naturpark und starke visuelle Wirkung"
+          "caption": "Canyamel - Ostküste, Naturpark und starke visuelle Wirkung"
         },
         {
           "text": "Am Rand des Llevant-Naturparks mit Meerblick, viel Landschaft und einem Platz, der mehr Charakter hat, als viele ausserhalb Mallorcas wissen. Die Fahrt von Palma lohnt sich, wenn man den Tag nicht nur nach Score beurteilt."
@@ -758,7 +758,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Santa Ponsa 1 - European-Tour-Geschichte und viel Driver"
         },
         {
-          "text": "Der einzige oeffentliche Platz in der Santa-Ponsa-Gruppe, mit echter European-Tour-Historie. Breite Fairways, lange Löcher, und für viele Spieler ein Platz, auf dem sie wieder selbstbewusst zum Driver greifen. Ganz anderer Charakter als Son Gual oder Alcanada, aber eindeutig relevant."
+          "text": "Der einzige öffentliche Platz in der Santa-Ponsa-Gruppe, mit echter European-Tour-Historie. Breite Fairways, lange Löcher, und für viele Spieler ein Platz, auf dem sie wieder selbstbewusst zum Driver greifen. Ganz anderer Charakter als Son Gual oder Alcanada, aber eindeutig relevant."
         },
         {
           "text": "Für Anfänger oder gemischte Gruppen: Son Quint oder Son Antem East"
@@ -786,7 +786,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "12 Mon.",
-              "Ganzjaehrig Golf"
+              "Ganzjährig Golf"
             ]
           ]
         },
@@ -794,16 +794,16 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Prominente Verbindungen, die man kennen sollte"
         },
         {
-          "text": "Son Gual: Obama spielte dort im November 2024, Nadal regelmaessig. Son Quint: Tiger Woods und Charlie spielten dort im Juli 2022. Solche Details sind nicht alles - aber sie sagen etwas über die Qualitaet und Sichtbarkeit der Plätze aus."
+          "text": "Son Gual: Obama spielte dort im November 2024, Nadal regelmäßig. Son Quint: Tiger Woods und Charlie spielten dort im Juli 2022. Solche Details sind nicht alles - aber sie sagen etwas über die Qualität und Sichtbarkeit der Plätze aus."
         },
         {
           "text": "Die ehrliche Zusammenfassung"
         },
         {
-          "text": "Wenn ich für eine einzige Woche auf Mallorca nur zwei Plätze empfehlen duerfte, wären es Son Gual und Alcanada. Son Muntaner für Turnierstandard nahe Palma. Andratx für die haerteste Prüfung. Canyamel für Landschaft. Santa Ponsa 1 für Weite, Driver und Tour-Historie. Für Einsteiger oder gemischte Gruppen wuerde ich deutlich eher Son Quint oder Son Antem East nennen."
+          "text": "Wenn ich für eine einzige Woche auf Mallorca nur zwei Plätze empfehlen dürfte, wären es Son Gual und Alcanada. Son Muntaner für Turnierstandard nahe Palma. Andratx für die härteste Prüfung. Canyamel für Landschaft. Santa Ponsa 1 für Weite, Driver und Tour-Historie. Für Einsteiger oder gemischte Gruppen würde ich deutlich eher Son Quint oder Son Antem East nennen."
         },
         {
-          "text": "Die Insel ist eines der bestgehueteten Golfgeheimnisse Europas. Als ich aus Shanghai kam und die Bedingungen hier im Januar sah, während weite Teile Nordeuropas geschlossen waren, war das für mich sofort klar."
+          "text": "Die Insel ist eines der bestgehüteten Golfgeheimnisse Europas. Als ich aus Shanghai kam und die Bedingungen hier im Januar sah, während weite Teile Nordeuropas geschlossen waren, war das für mich sofort klar."
         },
         {
           "text": "Wollen Sie einen dieser Plätze mit einem PGA-Professional an Ihrer Seite spielen?",
@@ -3355,7 +3355,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             },
             {
               "label": "Woche statt Einzeltage buchen:",
-              "text": "Ab langeren Zeitraeumen wird der Tagespreis deutlich besser."
+              "text": "Ab langeren Zeiträumen wird der Tagespreis deutlich besser."
             },
             {
               "label": "Sinnvoll bleiben:",
@@ -3363,7 +3363,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             },
             {
               "label": "Lieferung mitdenken:",
-              "text": "Hotel- oder Platzlieferung spart Zeit und oft auch Aerger."
+              "text": "Hotel- oder Platzlieferung spart Zeit und oft auch Ärger."
             }
           ]
         },
@@ -4063,7 +4063,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Monate mit dem besten Gegenwert"
         },
         {
-          "text": "Januar, Februar und teils November können gute Value-Monate sein, aber der typische Rückgang gegenüber den Peak-Zeiten liegt heute eher bei 30-50 %. Die Hauptphasen bleiben Mitte Maerz bis Anfang Juni sowie Mitte September bis Mitte November."
+          "text": "Januar, Februar und teils November können gute Value-Monate sein, aber der typische Rückgang gegenüber den Peak-Zeiten liegt heute eher bei 30-50 %. Die Hauptphasen bleiben Mitte März bis Anfang Juni sowie Mitte September bis Mitte November."
         },
         {
           "text": "Leihschläger"
@@ -4072,7 +4072,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Leihsets direkt am Platz kosten meist 35-50 € im Pro Shop. Die Qualität schwankt."
         },
         {
-          "text": "Spezialisierte Verleiher liefern ins Hotel, zum Flughafen oder direkt an den Platz. Einfache Sets beginnen bei etwa €25 pro Tag. Premiumsets des aktuellen Modelljahres liegen ab etwa €55 für zwei Tage, danach wird es bei langeren Reisen günstiger und landet bei rund €140 für zehn Tage. Wochenpreise sparen oft 20-30 %. Mindestens eine Woche vorher buchen - dann sind passende Schläger und Fruehbucherrabatte am ehesten verfuegbar."
+          "text": "Spezialisierte Verleiher liefern ins Hotel, zum Flughafen oder direkt an den Platz. Einfache Sets beginnen bei etwa €25 pro Tag. Premiumsets des aktuellen Modelljahres liegen ab etwa €55 für zwei Tage, danach wird es bei langeren Reisen günstiger und landet bei rund €140 für zehn Tage. Wochenpreise sparen oft 20-30 %. Mindestens eine Woche vorher buchen - dann sind passende Schläger und Frühbucherrabatte am ehesten verfügbar."
         },
         {
           "text": "Buggies und Trolleys"
@@ -4126,7 +4126,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "linkLabel": "Golf-Tag mit Pro ansehen →"
         },
         {
-          "text": "Möchten Sie einen kompletten Golftag organisiert haben, mit Platz, Tee Time, Coaching und allem vor Ihrer Ankunft geklaert?",
+          "text": "Möchten Sie einen kompletten Golftag organisiert haben, mit Platz, Tee Time, Coaching und allem vor Ihrer Ankunft geklärt?",
           "linkLabel": "Play With A Pro Tag auf Mallorca buchen →"
         }
       ]

@@ -44,24 +44,24 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
     "ui": {
       "explorerIntro": "Beginnen Sie mit Region, Preis und Schwierigkeit, um die passenden Plätze schnell einzugrenzen. Jede Karte zeigt Preis, Schwierigkeit, Bewertung und eventuelle dynamische Preise oder Handicap-Vorgaben vor der Buchung.",
       "faqEyebrow": "Fragen",
-      "faqTitle": "Haeufige Fragen",
+      "faqTitle": "Häufige Fragen",
       "faqIntro": "Ein paar schnelle Antworten, bevor Sie Ihre Auswahl treffen oder buchen.",
       "faq": [
         {
           "q": "Wie viele Golfplätze gibt es auf Mallorca?",
-          "a": "Mallorca hat insgesamt 24 Golfplätze. Davon sind 21 ohne Mitgliedschaft für Greenfee-Gaeste zugaenglich. Die Insel gliedert sich in fuenf Hauptregionen: Palma, Südwesten, Süden, Osten und Norden."
+          "a": "Mallorca hat insgesamt 24 Golfplätze. Davon sind 21 ohne Mitgliedschaft für Greenfee-Gäste zugänglich. Die Insel gliedert sich in fünf Hauptregionen: Palma, Südwesten, Süden, Osten und Norden."
         },
         {
           "q": "Welcher ist der beste Golfplatz auf Mallorca?",
-          "a": "Es gibt nicht den einen besten Platz. Es kommt darauf an, was Sie von der Runde erwarten. Für einen echten Championship-Test schauen Sie auf die schwierigsten Plätze. Für Landschaft filtern Sie nach den Kuesten- und Bergkulissen. Für Pflege auf Tour-Niveau sortieren Sie nach meiner Bewertung. Schicken Sie mir Ihr Handicap und was Ihnen am wichtigsten ist, und ich nenne Ihnen die richtige Auswahl."
+          "a": "Es gibt nicht den einen besten Platz. Es kommt darauf an, was Sie von der Runde erwarten. Für einen echten Championship-Test schauen Sie auf die schwierigsten Plätze. Für Landschaft filtern Sie nach den Küsten- und Bergkulissen. Für Pflege auf Tour-Niveau sortieren Sie nach meiner Bewertung. Schicken Sie mir Ihr Handicap und was Ihnen am wichtigsten ist, und ich nenne Ihnen die richtige Auswahl."
         },
         {
           "q": "Was kostet eine Runde Golf auf Mallorca?",
-          "a": "Die Greenfees reichen von rund 55 € im günstigen Bereich bis rund 250 € an der Spitze in der Hochsaison. Palma Pitch & Putt ist günstiger, aber das ist eine separate Kurzplatz-Option und keine typische Gaesterunde. Die meisten Gaesterunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 30 € bis 40 € zusaetzlich."
+          "a": "Die Greenfees reichen von rund 55 € im günstigen Bereich bis rund 250 € an der Spitze in der Hochsaison. Palma Pitch & Putt ist günstiger, aber das ist eine separate Kurzplatz-Option und keine typische Gästerunde. Die meisten Gästerunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 30 € bis 40 € zusätzlich."
         },
         {
           "q": "Braucht man für Mallorca ein Handicap-Zertifikat?",
-          "a": "Die meisten Plätze heissen alle Spielstärken willkommen, einige verlangen jedoch ein gueltiges Handicap-Zertifikat oder setzen ein maximales Handicap. Auf den Platzkarten oben habe ich die Plätze mit Handicap-Vorgabe und dem jeweiligen Limit markiert, damit Sie es vor der Buchung sehen. Wenn Sie bei Ihrem Zertifikat unsicher sind, nennen Sie mir die Plätze, die Sie in Betracht ziehen, und ich prüfe es für Sie."
+          "a": "Die meisten Plätze heissen alle Spielstärken willkommen, einige verlangen jedoch ein gültiges Handicap-Zertifikat oder setzen ein maximales Handicap. Auf den Platzkarten oben habe ich die Plätze mit Handicap-Vorgabe und dem jeweiligen Limit markiert, damit Sie es vor der Buchung sehen. Wenn Sie bei Ihrem Zertifikat unsicher sind, nennen Sie mir die Plätze, die Sie in Betracht ziehen, und ich prüfe es für Sie."
         }
       ],
       "toolCta": {

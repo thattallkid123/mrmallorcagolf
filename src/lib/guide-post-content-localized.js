@@ -209,7 +209,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Son Gual. 11 km von Palma entfernt. Sobald am ersten Abschlag Wind aufkommt, fühlt es sich deutlich weiter an."
         },
         {
-          "text": "Son Gual ist mein meistgespielter Platz auf Mallorca und der Platz, den ich am haeufigsten empfehle, wenn Kunden fragen, wo sie spielen sollen. Ich will ehrlich sagen, warum, und genauso ehrlich sagen, was ihn schwer macht. Wer einen entspannten Ferientag erwartet, wird hier überrascht. Wenn Sie auch Alcanada oder Son Muntaner in Betracht ziehen, lesen Sie diese Bewertungen ebenfalls vor der Entscheidung."
+          "text": "Son Gual ist mein meistgespielter Platz auf Mallorca und der Platz, den ich am häufigsten empfehle, wenn Kunden fragen, wo sie spielen sollen. Ich will ehrlich sagen, warum, und genauso ehrlich sagen, was ihn schwer macht. Wer einen entspannten Ferientag erwartet, wird hier überrascht. Wenn Sie auch Alcanada oder Son Muntaner in Betracht ziehen, lesen Sie diese Bewertungen ebenfalls vor der Entscheidung."
         },
         {
           "text": "Kurzantwort: Sollten Sie Son Gual buchen?"
@@ -224,19 +224,19 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Der erste Abschlag"
         },
         {
-          "text": "Das erste Mal, als ich Son Gual spielte, stand ich auf den schwarzen Abschlaegen. Der Wind kam hart von links, ich spielte mit einem befreundeten PGA Professional, der richtig gut scort. Die Kamera lief für einen Vlog mit. Das setzt einen zusaetzlich unter Druck. Ich war ein wenig nervoes."
+          "text": "Das erste Mal, als ich Son Gual spielte, stand ich auf den schwarzen Abschlägen. Der Wind kam hart von links, ich spielte mit einem befreundeten PGA Professional, der richtig gut scort. Die Kamera lief für einen Vlog mit. Das setzt einen zusätzlich unter Druck. Ich war ein wenig nervös."
         },
         {
-          "text": "Der Drive kam leicht an der Ferse. Er flog trotzdem weiter als erwartet und blieb knapp vor den Bunkern. Auf Son Gual gibt es viele Bunker, genau dort platziert, wo leicht getroffene Fehlschlaege landen. Wind, Hoehenunterschiede und wechselnde Ballstrikes spielen mit. Je langer man darüber nachdenkt, desto größer wirken die Bunker."
+          "text": "Der Drive kam leicht an der Ferse. Er flog trotzdem weiter als erwartet und blieb knapp vor den Bunkern. Auf Son Gual gibt es viele Bunker, genau dort platziert, wo leicht getroffene Fehlschläge landen. Wind, Höhenunterschiede und wechselnde Ballstrikes spielen mit. Je langer man darüber nachdenkt, desto größer wirken die Bunker."
         },
         {
-          "caption": "Son Gual hat viele Bunker. Sie liegen genau dort, wo leicht misslungene Schlaege landen."
+          "caption": "Son Gual hat viele Bunker. Sie liegen genau dort, wo leicht misslungene Schläge landen."
         },
         {
           "text": "Der Wind"
         },
         {
-          "text": "Son Gual scheint in seinem eigenen kleinen Oekosystem zu leben. Ich verlasse mein Haus im Südwesten der Insel an einem ruhigen Morgen und stehe am ersten Abschlag plötzlich in richtigem Wind. Und der bleibt vier Stunden. Mit Rückenwind ist es ein Vergnuegen. Gegenwind auf einem langen Par 4, das dadurch sehr lang wird, ist etwas anderes."
+          "text": "Son Gual scheint in seinem eigenen kleinen Ökosystem zu leben. Ich verlasse mein Haus im Südwesten der Insel an einem ruhigen Morgen und stehe am ersten Abschlag plötzlich in richtigem Wind. Und der bleibt vier Stunden. Mit Rückenwind ist es ein Vergnügen. Gegenwind auf einem langen Par 4, das dadurch sehr lang wird, ist etwas anderes."
         },
         {
           "caption": "Es gibt genug Löcher, bei denen der Driver rauskommt. Mit Rückenwind ist es so gut wie es geht. Gegen den Wind plant man anders."
@@ -245,10 +245,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Die Greens"
         },
         {
-          "text": "Schnell, erhoeht und gnadenlos bei schwachen Annäherungen. Im Januar waren Greens und Vorgrün so kurz gemaeht, dass es für diese Jahreszeit bemerkenswert war. Gut für Spin, unbequem bei einem engen Chip mit kleiner Landezone."
+          "text": "Schnell, erhöht und gnadenlos bei schwachen Annäherungen. Im Januar waren Greens und Vorgrün so kurz gemäht, dass es für diese Jahreszeit bemerkenswert war. Gut für Spin, unbequem bei einem engen Chip mit kleiner Landezone."
         },
         {
-          "text": "Einer meiner Mitspieler an diesem Tag, ein Schueler aus Shanghai, schlug einen kleinen Draw ins 4. Green. Der Ball landete nur wenige Meter von der Fahne entfernt und rollte trotzdem über die Rückseite. Das passiert hier oft. Ein ordentlicher Schlag ist nicht automatisch ein guter Score."
+          "text": "Einer meiner Mitspieler an diesem Tag, ein Schüler aus Shanghai, schlug einen kleinen Draw ins 4. Green. Der Ball landete nur wenige Meter von der Fahne entfernt und rollte trotzdem über die Rückseite. Das passiert hier oft. Ein ordentlicher Schlag ist nicht automatisch ein guter Score."
         },
         {
           "caption": "Das 4. Grün. Der Ball rollt nach der Landung weiter."
@@ -257,7 +257,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Der Platz"
         },
         {
-          "text": "Thomas Himmels Design von 2007 nutzt die Hoehenunterschiede intelligent. Das 2. Loch hat einen der größten Bunker Europas. Die Schlusslöcher von 15 bis 18 gehören zu den besten Finishes, die ich auf Mallorca gespielt habe."
+          "text": "Thomas Himmels Design von 2007 nutzt die Höhenunterschiede intelligent. Das 2. Loch hat einen der größten Bunker Europas. Die Schlusslöcher von 15 bis 18 gehören zu den besten Finishes, die ich auf Mallorca gespielt habe."
         },
         {
           "caption": "Die Schlusslöcher. Hier verlangt der Platz Konzentration bis zum Ende."
@@ -266,13 +266,13 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Die Bucht von Palma von den höher gelegenen Löchern. Löcher 8 bis 12 bieten die besten Ausblicke."
         },
         {
-          "caption": "Der Blick zurück Richtung Palma vom hoeheren Teil des Platzes."
+          "caption": "Der Blick zurück Richtung Palma vom höheren Teil des Platzes."
         },
         {
           "text": "Bekannte Besucher"
         },
         {
-          "text": "Rafa Nadal spielt hier regelmaessig und hat gesagt, dass es sein Lieblingsplatz auf Mallorca ist. Barack Obama spielte hier im November 2024. Normalerweise interessieren mich solche Namen nicht besonders, aber sie zeigen, welche Stellung Son Gual auf der Insel hat."
+          "text": "Rafa Nadal spielt hier regelmäßig und hat gesagt, dass es sein Lieblingsplatz auf Mallorca ist. Barack Obama spielte hier im November 2024. Normalerweise interessieren mich solche Namen nicht besonders, aber sie zeigen, welche Stellung Son Gual auf der Insel hat."
         },
         {
           "caption": "Der 10. Abschlag, direkt vor dem Clubhaus. Das Par 4 liegt komplett vor Ihnen."
@@ -301,25 +301,25 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Greenfees 2026"
         },
         {
-          "text": "Die oeffentlichen 18-Loch-Preise liegen normalerweise zwischen 115 € und 165 €. Wartungsfenster im Januar können günstiger sein, sollten aber nicht als ehrlicher Vergleichspreis gelten. Frühjahr und Herbst erreichen zur Spitzenzeit 165 €, und der normale Sommerpreis liegt meist deutlich über dem alten Wartungspreis."
+          "text": "Die öffentlichen 18-Loch-Preise liegen normalerweise zwischen 115 € und 165 €. Wartungsfenster im Januar können günstiger sein, sollten aber nicht als ehrlicher Vergleichspreis gelten. Frühjahr und Herbst erreichen zur Spitzenzeit 165 €, und der normale Sommerpreis liegt meist deutlich über dem alten Wartungspreis."
         },
         {
-          "text": "Leihschläger im Proshop: Callaway 35 €, Titleist 45 € pro Runde. Buggy 45 €, Elektrotrolley ab 15 €. Ein gueltiger WHS-Handicapnachweis ist erforderlich."
+          "text": "Leihschläger im Proshop: Callaway 35 €, Titleist 45 € pro Runde. Buggy 45 €, Elektrotrolley ab 15 €. Ein gültiger WHS-Handicapnachweis ist erforderlich."
         },
         {
-          "title": "Vier Dinge, die ich vor der Buchung von Son Gual wissen wuerde",
+          "title": "Vier Dinge, die ich vor der Buchung von Son Gual wissen würde",
           "items": [
             [
               "Beste Startzeit",
-              "Früher Morgen oder später Nachmittag. Son Gual fühlt sich ruhig an, wenn man über Palma blicken kann und der Platz leiser ist. Dann ist auch das Licht auf dem Gelaende am besten."
+              "Früher Morgen oder später Nachmittag. Son Gual fühlt sich ruhig an, wenn man über Palma blicken kann und der Platz leiser ist. Dann ist auch das Licht auf dem Gelände am besten."
             ],
             [
               "Wind-Tipp",
               "Wenn nur ein Hauch von Wind da ist, achten Sie auf die offene Mittelstrecke. Das ist einer der wenigen Plätze auf Mallorca, auf denen ein halber Schläger zu wenig Sie genau auf den falschen Teil des Grüns bringen kann, und von dort sind zwei Putts schwer."
             ],
             [
-              "Wo Besucher Schlaege verlieren",
-              "Die meisten Schlagverluste beginnen mit einer leicht schlechten Position vom Tee, einem Ball in einem der grossen Bunker und danach einem kurzen Spiel von der falschen Seite rund um diese erhoehten Grüns."
+              "Wo Besucher Schläge verlieren",
+              "Die meisten Schlagverluste beginnen mit einer leicht schlechten Position vom Tee, einem Ball in einem der grossen Bunker und danach einem kurzen Spiel von der falschen Seite rund um diese erhöhten Grüns."
             ],
             [
               "Clubhaus-Tipp",
@@ -331,16 +331,16 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Fazit"
         },
         {
-          "text": "Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich wuerde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen. Wenn Son Gual Teil einer langeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Tee Times, Logistik und die Kombination mit anderen Plätzen ab."
+          "text": "Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich würde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen. Wenn Son Gual Teil einer langeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Tee Times, Logistik und die Kombination mit anderen Plätzen ab."
         },
         {
-          "text": "Haeufige Fragen"
+          "text": "Häufige Fragen"
         },
         {
-          "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie frueh, wählen Sie die Abschlaege realistisch und lassen Sie nach der Runde genug Zeit."
+          "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
         },
         {
-          "text": "Ich nehme regelmaessig Gaeste mit nach Son Gual. Möchten Sie den Platz mit jemandem spielen, der jedes Loch kennt?",
+          "text": "Ich nehme regelmäßig Gäste mit nach Son Gual. Möchten Sie den Platz mit jemandem spielen, der jedes Loch kennt?",
           "linkLabel": "Golftag mit Pro ansehen"
         }
       ]
@@ -1320,19 +1320,19 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Lage: Port d'Alcúdia, etwa 50 Minuten nördlich von Palma. Planen Sie Zeit ein und hetzen Sie nach der Runde nicht sofort zurück."
         },
         {
-          "title": "Vier Dinge, die ich vor der Buchung von Alcanada wissen wuerde",
+          "title": "Vier Dinge, die ich vor der Buchung von Alcanada wissen würde",
           "items": [
             [
               "Beste Startzeit",
-              "Am besten am Morgen. Dann ist das Licht am schönsten und die Kuestenbrise meist am sanftesten."
+              "Am besten am Morgen. Dann ist das Licht am schönsten und die Küstenbrise meist am sanftesten."
             ],
             [
               "Wind-Tipp",
               "Behandeln Sie die offenen Löcher mit Respekt. Die Seeluft kann eine bequeme Distanz plötzlich wie einen Schläger langer spielen lassen, besonders wenn Sie auf den Back Nine gegen den Wind spielen."
             ],
             [
-              "Wo Besucher Schlaege verlieren",
-              "Die Aussicht kann den Abschlag einfacher wirken lassen, als er ist. Wählen Sie zuerst die Linie, besonders von den erhoehten Abschlaegen, und stellen Sie sich dann auf schnelle Grüns mit sehr wenigen einfachen Putts ein."
+              "Wo Besucher Schläge verlieren",
+              "Die Aussicht kann den Abschlag einfacher wirken lassen, als er ist. Wählen Sie zuerst die Linie, besonders von den erhöhten Abschlägen, und stellen Sie sich dann auf schnelle Grüns mit sehr wenigen einfachen Putts ein."
             ],
             [
               "Clubhaus-Tipp",
@@ -2268,23 +2268,23 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Fazit"
         },
         {
-          "title": "Vier Dinge, die ich vor der Buchung von Santa Ponsa 1 wissen wuerde",
+          "title": "Vier Dinge, die ich vor der Buchung von Santa Ponsa 1 wissen würde",
           "items": [
             [
               "Beste Startzeit",
-              "Je früher, desto besser, wenn Sie es bekommen können. Der Platz ist angenehmer, bevor die uebliche Brise einsetzt, und die langen Löcher spielen sich am Morgen freundlicher."
+              "Je früher, desto besser, wenn Sie es bekommen können. Der Platz ist angenehmer, bevor die übliche Brise einsetzt, und die langen Löcher spielen sich am Morgen freundlicher."
             ],
             [
               "Wind-Tipp",
-              "Wenn der Wind kommt, trifft er die langen Par 3s und das 10. Loch am haertesten. Nehmen Sie genug Schläger und sehen Sie die Yardage auf der Scorekarte eher als Ausgangspunkt als als Antwort."
+              "Wenn der Wind kommt, trifft er die langen Par 3s und das 10. Loch am härtesten. Nehmen Sie genug Schläger und sehen Sie die Yardage auf der Scorekarte eher als Ausgangspunkt als als Antwort."
             ],
             [
-              "Wo Besucher Schlaege verlieren",
-              "Viele Besucher geniessen die breiten Fairways, werden mit dem Driver zu selbstsicher und verlieren dann Schlaege, weil sie die kleinen Ziele aus guten Positionen zu aggressiv angreifen und sich schwierige Chips lassen."
+              "Wo Besucher Schläge verlieren",
+              "Viele Besucher geniessen die breiten Fairways, werden mit dem Driver zu selbstsicher und verlieren dann Schläge, weil sie die kleinen Ziele aus guten Positionen zu aggressiv angreifen und sich schwierige Chips lassen."
             ],
             [
               "Clubhaus-Tipp",
-              "Das ist ein guter Selbstvertrauensplatz, wenn Ihr Driver gut ist, bevor später ein haerterer Test kommt. Wenn Ihre Reise Son Gual oder Andratx enthält, passt Santa Ponsa 1 früher in der Woche gut."
+              "Das ist ein guter Selbstvertrauensplatz, wenn Ihr Driver gut ist, bevor später ein härterer Test kommt. Wenn Ihre Reise Son Gual oder Andratx enthält, passt Santa Ponsa 1 früher in der Woche gut."
             ]
           ]
         },
@@ -3143,23 +3143,23 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Fazit"
         },
         {
-          "title": "Vier Dinge, die ich vor der Buchung von Son Termes wissen wuerde",
+          "title": "Vier Dinge, die ich vor der Buchung von Son Termes wissen würde",
           "items": [
             [
               "Beste Startzeit",
-              "Ein früherer Start ist die sicherere Wahl, besonders wenn Sie in den wärmeren Monaten zu Fuss gehen wollen. Die Back Nine steigen an, der Wind baut sich auf, und je später Sie starten, desto haerter wird der Platz."
+              "Ein früherer Start ist die sicherere Wahl, besonders wenn Sie in den wärmeren Monaten zu Fuss gehen wollen. Die Back Nine steigen an, der Wind baut sich auf, und je später Sie starten, desto härter wird der Platz."
             ],
             [
               "Wind-Tipp",
-              "Auf den offenen kurzen Löchern im oberen Teil des Platzes lieber einen Schläger mehr nehmen. Die Yardage sieht harmlos aus, aber die Bergbrise aendert den Schlag schnell."
+              "Auf den offenen kurzen Löchern im oberen Teil des Platzes lieber einen Schläger mehr nehmen. Die Yardage sieht harmlos aus, aber die Bergbrise ändert den Schlag schnell."
             ],
             [
-              "Wo Besucher Schlaege verlieren",
+              "Wo Besucher Schläge verlieren",
               "Die meisten Schlagverluste kommen daher, dass ein kurzer Platz automatisch einfach wirkt. Blinde Doglegs, einschneidendes Wasser, klebriges Rough und versteckte Ziele bestrafen jeden, der kurz abschaltet."
             ],
             [
               "Clubhaus-Tipp",
-              "Wenn Sie Plätze mit Persoenlichkeit lieber moegen als perfekte Politur, ist das hier eine gute Palma-Alternative zu den Premiumnamen. Der Abschluss auf der Terrasse mit Bergblick ist ein sehr guter Ausklang."
+              "Wenn Sie Plätze mit Persönlichkeit lieber mögen als perfekte Politur, ist das hier eine gute Palma-Alternative zu den Premiumnamen. Der Abschluss auf der Terrasse mit Bergblick ist ein sehr guter Ausklang."
             ]
           ]
         },
@@ -4107,18 +4107,18 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Tip",
-              "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie frueh, wählen Sie die Abschlaege realistisch und lassen Sie nach der Runde genug Zeit."
+              "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
             ]
           ]
         },
         {
-          "text": "Haeufige Fragen"
+          "text": "Häufige Fragen"
         },
         {
           "text": "Der Service vom Empfang bis zum Abschlag war reibungslos. Das Team ist aufmerksam, ohne aufdringlich zu sein. Bälle für die Range, Übungsanlage und der gesamte Betrieb entsprechen dem Niveau, das der Ruf des Platzes erwarten lässt."
         },
         {
-          "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie frueh, wählen Sie die Abschlaege realistisch und lassen Sie nach der Runde genug Zeit."
+          "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
         },
         {
           "alt": "Son Muntaner Golfplatz Mallorca – Blick das 17. Loch hinunter mit der Bucht von Palma im Hintergrund",
@@ -4229,28 +4229,28 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Dynamische Preisgestaltung über das Buchungssystem von Arabella Golf Mallorca. Der aktuelle Spitzenpreis liegt bei 260 € für 18 Löcher, und die niedrigsten verfügbaren Zeiten liegen bei etwa 110 €. Der Niedrigpreis ist in der Regel saison- oder spätere-Startzeit-bedingt, nicht dauerhaft verfügbar. Aktuelle Preise auf arabellagolfmallorca.com. Handicap-Ausweis erforderlich."
         },
         {
-          "text": "Haeufige Fragen"
+          "text": "Häufige Fragen"
         },
         {
           "text": "Son Muntaner gehört zur Arabella Golf Mallorca Gruppe, zusammen mit Son Vida und Son Quint. Alle drei Plätze sind vom selben Resort-Komplex aus zugänglich."
         },
         {
-          "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie frueh, wählen Sie die Abschlaege realistisch und lassen Sie nach der Runde genug Zeit."
+          "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
         },
         {
-          "title": "Vier Dinge, die ich vor der Buchung von Son Muntaner wissen wuerde",
+          "title": "Vier Dinge, die ich vor der Buchung von Son Muntaner wissen würde",
           "items": [
             [
               "Beste Startzeit",
-              "Wenn Sie in Palma wohnen, nutzen Sie die Nähe und gehen Sie frueh raus. Sie haben die einfache Anfahrt, frischere Grüns und einen etwas ruhigeren Start, bevor sich das Tee Sheet füllt."
+              "Wenn Sie in Palma wohnen, nutzen Sie die Nähe und gehen Sie früh raus. Sie haben die einfache Anfahrt, frischere Grüns und einen etwas ruhigeren Start, bevor sich das Tee Sheet füllt."
             ],
             [
               "Wind-Tipp",
               "Das ist zuerst ein Positionsplatz. Wählen Sie Ihre Landezone, nicht die heroische Linie, und lassen Sie den Buggy Ihre Beine für den späteren Teil der Runde sparen."
             ],
             [
-              "Wo Besucher Schlaege verlieren",
-              "Viele greifen die Grüns aus dem falschen Winkel an, bleiben an den erhoehten Par 3s zu kurz oder unterschaetzen, wie klein die echten Ziele aus der Distanz sind."
+              "Wo Besucher Schläge verlieren",
+              "Viele greifen die Grüns aus dem falschen Winkel an, bleiben an den erhöhten Par 3s zu kurz oder unterschätzen, wie klein die echten Ziele aus der Distanz sind."
             ],
             [
               "Clubhaus-Tipp",
@@ -5458,10 +5458,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Eines ist zu beachten: Die Beschilderung rund um gesperrte Buggy-Bereiche könnte klarer sein. Ein paarmal bin ich in Bereiche geraten, die nicht offensichtlich als gesperrt markiert waren und musste zurücksetzen. Kein Problem, wenn man den Platz kennt."
         },
         {
-          "text": "Haeufige Fragen"
+          "text": "Häufige Fragen"
         },
         {
-          "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie frueh, wählen Sie die Abschlaege realistisch und lassen Sie nach der Runde genug Zeit."
+          "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
         },
         {
           "alt": "Pinien, die das Fairway auf dem T Golf Calvià einrahmen, mit Wasser und Bergen dahinter",
@@ -5474,23 +5474,23 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "9/10. T Golf Calvià ist einer der bestgepflegten Plätze, die ich in Mallorca gespielt habe. Die Grüns sind ausgezeichnet, die Fairways in sehr gutem Zustand, und das Layout testet einen ernsthaft, besonders bei der Distanzbeurteilung und im Umgang mit Wasser, ohne dabei ungerecht zu sein."
         },
         {
-          "title": "Vier Dinge, die ich vor der Buchung von T Golf Calvia wissen wuerde",
+          "title": "Vier Dinge, die ich vor der Buchung von T Golf Calvia wissen würde",
           "items": [
             [
               "Beste Startzeit",
-              "Twilight unter der Woche ist hier ein sehr guter Zug. Sie bekommen den Platz in schönem Licht, einen ruhigeren Rhythmus und dazu sehr vernuenftige Twilight-Raten."
+              "Twilight unter der Woche ist hier ein sehr guter Zug. Sie bekommen den Platz in schönem Licht, einen ruhigeren Rhythmus und dazu sehr vernünftige Twilight-Raten."
             ],
             [
               "Wind-Tipp",
-              "Arbeiten Sie von Ihrer Zahl aus, nicht von dem, was das Auge sagt. Die halbblinden Annäherungen und freien Wassertraeger bestrafen jeden, der raet statt sich festzulegen."
+              "Arbeiten Sie von Ihrer Zahl aus, nicht von dem, was das Auge sagt. Die halbblinden Annäherungen und freien Wasserträger bestrafen jeden, der rät statt sich festzulegen."
             ],
             [
-              "Wo Besucher Schlaege verlieren",
-              "Der uebliche Fehler ist, auf die Löcher, die freundlicher aussehen, zu wenig Schläger zu nehmen und danach zu aggressiv zu werden, wodurch mehr Wasser ins Spiel kommt."
+              "Wo Besucher Schläge verlieren",
+              "Der übliche Fehler ist, auf die Löcher, die freundlicher aussehen, zu wenig Schläger zu nehmen und danach zu aggressiv zu werden, wodurch mehr Wasser ins Spiel kommt."
             ],
             [
               "Clubhaus-Tipp",
-              "Nutzen Sie die Gras-Range vor der Runde und lassen Sie sich danach noch Zeit für ein Getraenk. Die gesamte Anlage fühlt sich kompletter an, wenn man sie nicht wie eine gehetzte Runde behandelt."
+              "Nutzen Sie die Gras-Range vor der Runde und lassen Sie sich danach noch Zeit für ein Getränk. Die gesamte Anlage fühlt sich kompletter an, wenn man sie nicht wie eine gehetzte Runde behandelt."
             ]
           ]
         },
@@ -6430,23 +6430,23 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Fazit"
         },
         {
-          "title": "Vier Dinge, die ich vor der Buchung von Golf de Andratx wissen wuerde",
+          "title": "Vier Dinge, die ich vor der Buchung von Golf de Andratx wissen würde",
           "items": [
             [
               "Beste Startzeit",
-              "Gehen Sie so frueh raus, wie es sinnvoll möglich ist. Der Platz ist gefragt, das Berglicht ist morgens am besten, und so haben Sie die beste Chance, dem stärkeren Wind zuvorzukommen."
+              "Gehen Sie so früh raus, wie es sinnvoll möglich ist. Der Platz ist gefragt, das Berglicht ist morgens am besten, und so haben Sie die beste Chance, dem stärkeren Wind zuvorzukommen."
             ],
             [
               "Wind-Tipp",
               "Nutzen Sie ein GPS oder einen ordentlichen Platzführer und vertrauen Sie ihm. Dieser Platz bestraft halbe Entscheidungen bei Carries und offenen Par 3s viel mehr als eine bewusst konservative Wahl."
             ],
             [
-              "Wo Besucher Schlaege verlieren",
-              "Der haeufigste Fehler ist zu denken, die Herausforderung sei nur die Lange. Die grossen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Hoehenunterschieden auf kurzen Löchern und Problemen, die Sie vom Tee nicht voll sehen."
+              "Wo Besucher Schläge verlieren",
+              "Der häufigste Fehler ist zu denken, die Herausforderung sei nur die Lange. Die grossen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Höhenunterschieden auf kurzen Löchern und Problemen, die Sie vom Tee nicht voll sehen."
             ],
             [
               "Clubhaus-Tipp",
-              "Der Uebungsbereich ist etwas ungewoehnlich. Kommen Sie frueh genug, um den Kurzspielbereich zu nutzen und sich vor dem ersten Abschlag in Ruhe einzufinden."
+              "Der Übungsbereich ist etwas ungewöhnlich. Kommen Sie früh genug, um den Kurzspielbereich zu nutzen und sich vor dem ersten Abschlag in Ruhe einzufinden."
             ]
           ]
         },
@@ -7268,13 +7268,13 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       "blocks": [
         {
           "alt": "Wasserhindernis auf Son Antem West, Llucmajor, Mallorca",
-          "caption": "Eines der Wasserlöcher auf dem West Course. Der Platz liegt in Llucmajor, etwa 15-20 Minuten von Palma, offen in der Landschaft und ohne sichtbare Wohnhaeuser."
+          "caption": "Eines der Wasserlöcher auf dem West Course. Der Platz liegt in Llucmajor, etwa 15-20 Minuten von Palma, offen in der Landschaft und ohne sichtbare Wohnhäuser."
         },
         {
-          "text": "Drei oder vier Flights warteten bereits am ersten Abschlag, als wir an einem Sonntagmorgen um 7:50 ankamen. Wir hatten frueh gebucht, um dem Tempo-Problem, das Resortplätze manchmal haben, zuvorzukommen. Das gelang nicht."
+          "text": "Drei oder vier Flights warteten bereits am ersten Abschlag, als wir an einem Sonntagmorgen um 7:50 ankamen. Wir hatten früh gebucht, um dem Tempo-Problem, das Resortplätze manchmal haben, zuvorzukommen. Das gelang nicht."
         },
         {
-          "text": "Das ist gut zu wissen, bevor man auf Son Antem West den ersten Schlag macht. Es ist ein beliebter, gut organisierter Resortplatz nahe Palma. Wer genau das erwartet, wird die Runde geniessen. Wer Ruhe und ein ungestoertes Tempo erwartet, vielleicht weniger."
+          "text": "Das ist gut zu wissen, bevor man auf Son Antem West den ersten Schlag macht. Es ist ein beliebter, gut organisierter Resortplatz nahe Palma. Wer genau das erwartet, wird die Runde geniessen. Wer Ruhe und ein ungestörtes Tempo erwartet, vielleicht weniger."
         },
         {
           "text": "Erster Eindruck"
@@ -7283,23 +7283,23 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Schon bei der Einfahrt in das Resort wird die Größe klar. Wohnanlagen, viel Grün, Golfakademie, Padelplätze und Hotel. Es wirkt wie ein komplettes Golfziel. Der Check-in war organisiert, das Team hilfreich, und ein kleiner Shop am Eingang machte Kaffee und Snack vor der Runde einfach. Um 7:45 Uhr ist das ein echtes Detail."
         },
         {
-          "text": "Auf dem Platz oeffnet sich die Umgebung. Der West Course liegt in der mallorquinischen Landschaft bei Llucmajor, 15 bis 20 Minuten von Palma. Von den Fairways sieht man keine Haeuser, der Randa-Berg steht auf den zweiten Neun im Hintergrund, und Tiere sind staendig präsent. Kaninchen laufen regelmaessig über die Fairways. Reiher und andere Voegel sind rund um die Wasserlöcher zu sehen. Es fühlt sich nicht wie ein Vorstadtplatz an, und das hilft."
+          "text": "Auf dem Platz öffnet sich die Umgebung. Der West Course liegt in der mallorquinischen Landschaft bei Llucmajor, 15 bis 20 Minuten von Palma. Von den Fairways sieht man keine Häuser, der Randa-Berg steht auf den zweiten Neun im Hintergrund, und Tiere sind ständig präsent. Kaninchen laufen regelmäßig über die Fairways. Reiher und andere Vögel sind rund um die Wasserlöcher zu sehen. Es fühlt sich nicht wie ein Vorstadtplatz an, und das hilft."
         },
         {
-          "alt": "Voegel auf dem Fairway von Son Antem West mit Wasser und Green dahinter, Mallorca",
-          "caption": "Tiere gehören besonders auf den zweiten Neun dazu: Kaninchen, Reiher und verschiedene Voegel, vor allem an den Wasserlöchern."
+          "alt": "Vögel auf dem Fairway von Son Antem West mit Wasser und Green dahinter, Mallorca",
+          "caption": "Tiere gehören besonders auf den zweiten Neun dazu: Kaninchen, Reiher und verschiedene Vögel, vor allem an den Wasserlöchern."
         },
         {
           "text": "Der Platz"
         },
         {
-          "text": "Francisco Lopez Segales entwarf Son Antem West, der 1995 eroeffnet wurde. Der Platz spielt als Par 72 und misst 6.293 Meter von den hinteren Abschlaegen. Das Layout ist insgesamt offen, die Fairways sind grosszuegig, und viele Abschlaege bestrafen einen leicht verzogenen Ball nicht sofort. Das macht ihn für gemischte Gruppen und Urlaubsgolfer zugaenglich. Genau dafür wurde er offensichtlich gebaut."
+          "text": "Francisco Lopez Segales entwarf Son Antem West, der 1995 eröffnet wurde. Der Platz spielt als Par 72 und misst 6.293 Meter von den hinteren Abschlägen. Das Layout ist insgesamt offen, die Fairways sind großzügig, und viele Abschläge bestrafen einen leicht verzogenen Ball nicht sofort. Das macht ihn für gemischte Gruppen und Urlaubsgolfer zugänglich. Genau dafür wurde er offensichtlich gebaut."
         },
         {
-          "text": "Die Löcher, die auffallen, sind die baumgesaeumten. Dort ist der Abschlag enger, die Linie wichtiger, und der Winkel ins Green veraendert sich je nachdem, auf welcher Fairwayseite der Ball liegt. Die offeneren Abschnitte sind angenehm, verlangen vom Tee aber weniger Denken. Ziel wählen und schwingen."
+          "text": "Die Löcher, die auffallen, sind die baumgesäumten. Dort ist der Abschlag enger, die Linie wichtiger, und der Winkel ins Green verändert sich je nachdem, auf welcher Fairwayseite der Ball liegt. Die offeneren Abschnitte sind angenehm, verlangen vom Tee aber weniger Denken. Ziel wählen und schwingen."
         },
         {
-          "alt": "Andy Griffiths beobachtet einen Eisenschlag eines Kunden auf einem baumgesaeumten Loch von Son Antem West",
+          "alt": "Andy Griffiths beobachtet einen Eisenschlag eines Kunden auf einem baumgesäumten Loch von Son Antem West",
           "caption": "Driver auf einem der Back-Nine-Löcher. Der Platz war durchgehend in gutem Zustand."
         },
         {
@@ -7307,7 +7307,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           "alt": "Approach am 16. Loch von Son Antem West, Par 5 durch die Bäume, Mallorca",
-          "caption": "Auf dem Weg zur 16. Ein bergauf spielendes Par 5, das sich durch die Bäume windet und an einem kleinen, geschuetzten Green endet."
+          "caption": "Auf dem Weg zur 16. Ein bergauf spielendes Par 5, das sich durch die Bäume windet und an einem kleinen, geschützten Green endet."
         },
         {
           "alt": "18. Loch auf Son Antem West mit Wasser links vom Fairway, Mallorca",
@@ -7317,29 +7317,29 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Die Greens"
         },
         {
-          "text": "Klein, wellig und sie rollen sehr sauber. Die Geschwindigkeit war gut, nicht besonders schnell, aber konstant und ehrlich. Für einen Platz mit so viel Verkehr an einem Sonntag waren die Oberflaechen gut. Mehrere Greens sind erhoeht oder fallen vom Spieler weg. Das sollte man vor dem Chip wissen: Der Ball laeuft nach der Landung deutlich weiter als es aussieht. Ein flacher, rollender Schlag ist oft besser als der Versuch, etwas Weiches auf die Kante zu setzen."
+          "text": "Klein, wellig und sie rollen sehr sauber. Die Geschwindigkeit war gut, nicht besonders schnell, aber konstant und ehrlich. Für einen Platz mit so viel Verkehr an einem Sonntag waren die Oberflächen gut. Mehrere Greens sind erhöht oder fallen vom Spieler weg. Das sollte man vor dem Chip wissen: Der Ball läuft nach der Landung deutlich weiter als es aussieht. Ein flacher, rollender Schlag ist oft besser als der Versuch, etwas Weiches auf die Kante zu setzen."
         },
         {
           "text": "Pflegezustand"
         },
         {
-          "text": "Sehr gut für die Menge an Spielbetrieb. Die Fairways waren solide, die Greens rollten konstant, und die Präsentation hielt die Runde über gut. Es gab kaum Wind, also waren die Bedingungen so einfach wie sie hier werden. Von den hinteren Abschlaegen fühlte sich der Platz bei ruhiger Luft nicht besonders lang an."
+          "text": "Sehr gut für die Menge an Spielbetrieb. Die Fairways waren solide, die Greens rollten konstant, und die Präsentation hielt die Runde über gut. Es gab kaum Wind, also waren die Bedingungen so einfach wie sie hier werden. Von den hinteren Abschlägen fühlte sich der Platz bei ruhiger Luft nicht besonders lang an."
         },
         {
           "text": "Zu Fuss spielbar"
         },
         {
-          "text": "Absolut. Die Wegeführung ist unkompliziert und das Gelaende flach. Zwischen ein paar Löchern war der Fussweg nicht ganz eindeutig, aber nichts Ernstes. Wer lieber laeuft als einen Buggy zu nehmen, kann diesen Platz problemlos gehen."
+          "text": "Absolut. Die Wegeführung ist unkompliziert und das Gelände flach. Zwischen ein paar Löchern war der Fussweg nicht ganz eindeutig, aber nichts Ernstes. Wer lieber läuft als einen Buggy zu nehmen, kann diesen Platz problemlos gehen."
         },
         {
           "alt": "Andy Griffiths mit Kunden bei einer begleiteten Golfrunde auf Son Antem West, Mallorca",
-          "caption": "Ein begleiteter Golftag auf Son Antem West. Das Layout verzeiht genug, damit Gaeste frei spielen können."
+          "caption": "Ein begleiteter Golftag auf Son Antem West. Das Layout verzeiht genug, damit Gäste frei spielen können."
         },
         {
           "text": "Der ehrliche Teil"
         },
         {
-          "text": "Ein großer Teil von Son Antem West ist strategisch flach. Die offenen Löcher geben breite Landezonen, einen unkomplizierten Approach und ein kleines Green als Ziel. Man kann diese Löcher fast im Autopilot spielen. Im Vergleich zu Son Gual, Alcanada oder Andratx fordert der Platz mental weniger. Bei Greenfees in einer aehnlichen Spanne konkurriert er preislich mit diesen Plätzen, bleibt vom Layout her aber weniger haengen."
+          "text": "Ein großer Teil von Son Antem West ist strategisch flach. Die offenen Löcher geben breite Landezonen, einen unkomplizierten Approach und ein kleines Green als Ziel. Man kann diese Löcher fast im Autopilot spielen. Im Vergleich zu Son Gual, Alcanada oder Andratx fordert der Platz mental weniger. Bei Greenfees in einer ähnlichen Spanne konkurriert er preislich mit diesen Plätzen, bleibt vom Layout her aber weniger hängen."
         },
         {
           "items": [
@@ -7365,7 +7365,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Praktische Informationen"
         },
         {
-          "text": "Greenfee: 105 € an dem Tag, an dem wir spielten. Das Resort ist vor und nach der Runde gut aufgestellt. Es gibt einen kleinen Shop nahe dem Check-in für Kaffee, Wasser und Snacks, was bei einer frühen Startzeit wirklich nützlich ist. Buggys sind verfuegbar. Zu Fuss ist der Platz problemlos."
+          "text": "Greenfee: 105 € an dem Tag, an dem wir spielten. Das Resort ist vor und nach der Runde gut aufgestellt. Es gibt einen kleinen Shop nahe dem Check-in für Kaffee, Wasser und Snacks, was bei einer frühen Startzeit wirklich nützlich ist. Buggys sind verfügbar. Zu Fuss ist der Platz problemlos."
         },
         {
           "text": "Lage: Llucmajor, etwa 15 bis 20 Minuten südlich von Palma. Leicht zu erreichen und gut mit einem Tag oder zwei in der Stadt zu verbinden."
@@ -7374,19 +7374,19 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Fazit"
         },
         {
-          "title": "Vier Dinge, die ich vor der Buchung von Son Antem West wissen wuerde",
+          "title": "Vier Dinge, die ich vor der Buchung von Son Antem West wissen würde",
           "items": [
             [
               "Beste Startzeit",
-              "Wochentags am Morgen ist hier der Sweet Spot, wenn Sie es einrichten können. Sonntage können schon in der ersten Welle stocken, weil der Platz bei Resort-Gaesten so beliebt ist."
+              "Wochentags am Morgen ist hier der Sweet Spot, wenn Sie es einrichten können. Sonntage können schon in der ersten Welle stocken, weil der Platz bei Resort-Gästen so beliebt ist."
             ],
             [
               "Wind-Tipp",
               "An einem ruhigen Tag ist der Platz sehr spielbar, und genau deshalb funktioniert er gut für gemischte Gruppen. Wenn die Brise aufkommt, konzentrieren Sie sich auf Landezonen und bleiben Sie geduldig."
             ],
             [
-              "Wo Besucher Schlaege verlieren",
-              "Der grosse Fehler ist, in den Autopilot zu gehen, weil die Fairways grosszuegig wirken. Die falsche Fairway-Seite zaehlt trotzdem, einige der kleineren Grüns verlangen praezise Schlägerwahl, und Chips rollen weiter aus."
+              "Wo Besucher Schläge verlieren",
+              "Der grosse Fehler ist, in den Autopilot zu gehen, weil die Fairways großzügig wirken. Die falsche Fairway-Seite zählt trotzdem, einige der kleineren Grüns verlangen präzise Schlägerwahl, und Chips rollen weiter aus."
             ],
             [
               "Clubhaus-Tipp",
@@ -7395,7 +7395,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "7/10. Son Antem West ist ein gut geführter Resortplatz mit guter Pflege, verlaesslichem Service und einem Layout, das vielen Spielern passt. Die 16 ist das beste Loch, die baumgesaeumten Abschnitte sind am interessantesten, und Tiere plus offene Landschaft machen die Umgebung besser als der Platz allein. Er passt zu Urlaubsgolfern, gemischten Gruppen und allen, die eine angenehme, zugaengliche Runde nahe Palma suchen. Er ist nicht die richtige Wahl, wenn man einen Platz sucht, der von Anfang bis Ende prüft. Auf der <a href=\"/golf-courses\">vollstaendigen Mallorca-Golfplatzseite</a> sieht man, wie er im Vergleich einzuordnen ist. Wenn Sie mehrere Runden rund um diesen Platz planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
+          "text": "7/10. Son Antem West ist ein gut geführter Resortplatz mit guter Pflege, verlässlichem Service und einem Layout, das vielen Spielern passt. Die 16 ist das beste Loch, die baumgesäumten Abschnitte sind am interessantesten, und Tiere plus offene Landschaft machen die Umgebung besser als der Platz allein. Er passt zu Urlaubsgolfern, gemischten Gruppen und allen, die eine angenehme, zugängliche Runde nahe Palma suchen. Er ist nicht die richtige Wahl, wenn man einen Platz sucht, der von Anfang bis Ende prüft. Auf der <a href=\"/golf-courses\">vollständigen Mallorca-Golfplatzseite</a> sieht man, wie er im Vergleich einzuordnen ist. Wenn Sie mehrere Runden rund um diesen Platz planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
         },
         {
           "text": "Ich bringe Kunden an begleiteten Golftagen nach Son Antem West. Möchten Sie ihn mit jemandem an Ihrer Seite spielen?",
