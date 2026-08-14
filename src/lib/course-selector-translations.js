@@ -527,7 +527,7 @@ export const COURSE_SELECTOR_T = {
     },
     intro: {
       h2: '¿Qué campos se adaptan a tu juego?',
-      p: 'Un campo de campeonato exigente y una vuelta de vacaciones relajada están disponibles en esta isla. Elegir el incorrecto desperdicia un día de tu viaje. Tarda menos de un minuto.',
+      p: 'Un campo de campeonato exigente y una vuelta de vacaciones relajada están disponibles en está isla. Elegir el incorrecto desperdicia un día de tu viaje. Tarda menos de un minuto.',
       cta: 'Iniciar el selector de campos',
     },
     progress: {

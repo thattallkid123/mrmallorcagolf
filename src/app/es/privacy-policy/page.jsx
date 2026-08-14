@@ -15,7 +15,7 @@ export default function PrivacyPolicyES() {
           </p>
 
           <h1 style={{ marginBottom: '0.5rem' }}>Politica de Privacidad</h1>
-          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Ultima actualizacion: junio de 2026</p>
+          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualizacion: junio de 2026</p>
 
           <section className="legal-section">
             <h2>1. Responsable del tratamiento</h2>
@@ -27,16 +27,16 @@ export default function PrivacyPolicyES() {
             <h2>2. Datos que recopilamos</h2>
             <p>Recopilamos datos personales unicamente cuando tu los facilitas voluntariamente o cuando visitas nuestro sitio web. Estos datos incluyen:</p>
             <ul>
-              <li><strong>Formulario de contacto:</strong> tu nombre, direccion de correo electronico, numero de telefono y el mensaje que nos envies</li>
+              <li><strong>Formulario de contacto:</strong> tu nombre, dirección de correo electronico, número de telefono y el mensaje que nos envíes</li>
               <li><strong>Consultas por correo electronico y WhatsApp:</strong> tu nombre y datos de contacto cuando te comunicas con nosotros directamente</li>
-              <li><strong>Course Selector y formularios de email:</strong> tu direccion de correo y cualquier dato opcional que facilites al pedir resultados o notas de planificacion</li>
-              <li><strong>Datos analiticos:</strong> datos de uso anonimos recopilados por Google Analytics (vease la seccion 5)</li>
+              <li><strong>Course Selector y formularios de email:</strong> tu dirección de correo y cualquier dato opcional que facilites al pedir resultados o notas de planificación</li>
+              <li><strong>Datos analiticos:</strong> datos de uso anónimos recopilados por Google Analytics (vease la seccion 5)</li>
             </ul>
             <p>No recopilamos datos de tarjetas de pago. Todos los pagos se gestionan de forma presencial mediante transferencia bancaria.</p>
           </section>
 
           <section className="legal-section">
-            <h2>3. Como utilizamos tus datos</h2>
+            <h2>3. Cómo utilizamos tus datos</h2>
             <p>Utilizamos los datos que nos facilitas para:</p>
             <ul>
               <li>Responder a tu consulta y organizar tu experiencia de golf</li>
@@ -59,13 +59,13 @@ export default function PrivacyPolicyES() {
 
           <section className="legal-section">
             <h2>5. Google Analytics</h2>
-            <p>Este sitio web utiliza Google Analytics para comprender como los visitantes usan el sitio. Google Analytics recopila datos anonimos como las paginas visitadas, el tiempo de permanencia y la ubicacion geografica aproximada (a nivel de pais o region). No te identifica personalmente.</p>
-            <p>Los datos de Google Analytics son tratados por Google LLC de conformidad con su politica de privacidad. La anonimizacion de IP esta activada en este sitio. Puedes desactivar el seguimiento de Google Analytics instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">complemento de inhabilitacion de Google Analytics</a>.</p>
+            <p>Este sitio web utiliza Google Analytics para comprender cómo los visitantes usan el sitio. Google Analytics recopila datos anónimos cómo las páginas visitadas, el tiempo de permanencia y la ubicación geográfica aproximada (a nivel de país o región). No te identifica personalmente.</p>
+            <p>Los datos de Google Analytics son tratados por Google LLC de conformidad con su politica de privacidad. La anonimizacion de IP está activada en este sitio. Puedes desactivar el seguimiento de Google Analytics instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">complemento de inhabilitacion de Google Analytics</a>.</p>
           </section>
 
           <section className="legal-section">
             <h2>6. Cookies</h2>
-            <p>Este sitio web utiliza cookies exclusivamente con fines de Google Analytics. Son cookies analiticas que nos ayudan a entender como se usa el sitio. No se utilizan cookies publicitarias ni pixeles de seguimiento.</p>
+            <p>Este sitio web utiliza cookies exclusivamente con fines de Google Analytics. Son cookies analiticas que nos ayudan a entender cómo se usa el sitio. No se utilizan cookies publicitarias ni pixeles de seguimiento.</p>
             <p>La mayoria de los navegadores te permiten rechazar o eliminar las cookies. Hacerlo no impedira que uses este sitio web, pero desactivara el seguimiento analitico.</p>
           </section>
 
@@ -73,16 +73,16 @@ export default function PrivacyPolicyES() {
             <h2>7. Cesion de datos</h2>
             <p>No vendemos ni cedemos tus datos personales a terceros. Podemos compartir datos en las siguientes circunstancias limitadas:</p>
             <ul>
-              <li><strong>Google Analytics:</strong> datos de uso anonimos segun lo descrito anteriormente</li>
-              <li><strong>MailerLite:</strong> direccion de correo y datos relacionados con el alta para enviar resultados y emails de seguimiento</li>
+              <li><strong>Google Analytics:</strong> datos de uso anónimos según lo descrito anteriormente</li>
+              <li><strong>MailerLite:</strong> dirección de correo y datos relacionados con el alta para enviar resultados y emails de seguimiento</li>
               <li><strong>Obligacion legal:</strong> cuando lo exija la ley o una autoridad competente</li>
             </ul>
-            <p>Podemos compartir informacion necesaria (tu nombre y datos de contacto) con campos de golf u otros prestadores de servicios en Mallorca al organizar tu experiencia, pero solo en la medida necesaria para ejecutar tu reserva.</p>
+            <p>Podemos compartir información necesaria (tu nombre y datos de contacto) con campos de golf u otros prestadores de servicios en Mallorca al organizar tu experiencia, pero solo en la medida necesaria para ejecutar tu reserva.</p>
           </section>
 
           <section className="legal-section">
             <h2>8. Conservacion de datos</h2>
-            <p>Conservamos tus datos de contacto durante el tiempo necesario para prestar nuestros servicios y por un periodo razonable posterior a efectos de registro. Los datos analiticos se conservan de acuerdo con las politicas de retencion estandar de Google.</p>
+            <p>Conservamos tus datos de contacto durante el tiempo necesario para prestar nuestros servicios y por un período razonable posterior a efectos de registro. Los datos analiticos se conservan de acuerdo con las politicas de retencion estandar de Google.</p>
             <p>Puedes solicitar la eliminacion de tus datos personales en cualquier momento (vease la seccion 9).</p>
           </section>
 
@@ -105,17 +105,17 @@ export default function PrivacyPolicyES() {
             <p>Si consideras que tus derechos en materia de proteccion de datos no han sido respetados, tienes derecho a presentar una reclamacion ante la autoridad de control espanola:</p>
             <p><strong>Agencia Espanola de Proteccion de Datos (AEPD)</strong><br />
             Sitio web: <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a><br />
-            Direccion: C/ Jorge Juan, 6, 28001 Madrid, Espana</p>
+            Dirección: C/ Jorge Juan, 6, 28001 Madrid, Espana</p>
           </section>
 
           <section className="legal-section">
-            <h2>11. Cambios en esta politica</h2>
-            <p>Podemos actualizar esta politica de privacidad periodicamente. La fecha que figura al inicio de esta pagina refleja la ultima revision. Te recomendamos que consultes esta pagina de forma periodica.</p>
+            <h2>11. Cambios en está politica</h2>
+            <p>Podemos actualizar está politica de privacidad periodicamente. La fecha que figura al inicio de está pagina refleja la última revision. Te recomendamos que consultes está pagina de forma periodica.</p>
           </section>
 
           <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
             <p style={{ color: 'rgba(255,255,255,0.62)', fontSize: '0.85rem' }}>
-              Tambien disponible en: <Link href="/privacy-policy" style={{ color: 'var(--gold-light)' }}>English</Link>
+              También disponible en: <Link href="/privacy-policy" style={{ color: 'var(--gold-light)' }}>English</Link>
             </p>
           </div>
 

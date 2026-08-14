@@ -551,7 +551,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Baanbeoordeling",
         "badgeGold": true,
         "title": "Golf de Andratx - eerlijke beoordeling van een PGA Professional (2026)",
-        "intro": "De langste par 5 van Spanje, bergzichten över het zuidwesten en een layout die baanmanagement veel meer beloont dan lengte. Een 7,5 op 10.",
+        "intro": "De langste par 5 van Spanje, bergzichten over het zuidwesten en een layout die baanmanagement veel meer beloont dan lengte. Een 7,5 op 10.",
         "readTime": "6 min",
         "keywords": "Bergbaan · Par 72 · €90-140 · Zuidwest-Mallorca"
       },
@@ -705,7 +705,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "santa-ponsa-1-review",
         "badge": "Banomdöme",
         "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension av en PGA Professional (2026)",
-        "intro": "En av Europas längsta banor, riktig European-Tour-historia och en bana som verkligen återger självförtroendet med drivern.",
+        "intro": "En av Europas laengsta banor, riktig European-Tour-historia och en bana som verkligen återger självförtroendet med drivern.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €77-126 · Öppen för besökare"
       },
@@ -714,7 +714,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Banomdöme",
         "badgeGold": true,
         "title": "Golf de Andratx - ärlig recension av en PGA Professional (2026)",
-        "intro": "Spaniens längsta par 5, bergsvyer över sydväst och en layout som belönar bankhantering mycket mer än längd. En 7,5 av 10.",
+        "intro": "Spaniens laengsta par 5, bergsvyer över sydväst och en layout som belönar bankhantering mycket mer än laengd. En 7,5 av 10.",
         "readTime": "6 min",
         "keywords": "Bergsbana · Par 72 · €90-140 · Sydvästra Mallorca"
       },
@@ -751,7 +751,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "De bästa golfbanorna på Mallorca - en PGA-professionells ärliga ranking",
         "intro": "Tjugofyra banor på ön. Så här skulle jag rangordna dem för en besökare med begränsad tid och höga krav.",
         "readTime": "8 min",
-        "keywords": "Allá nivåer · Greenfees jämfört · Uppdaterad 2026"
+        "keywords": "Alla nivåer · Greenfees jämfört · Uppdaterad 2026"
       },
       {
         "slug": "is-mallorca-good-for-golf",
@@ -759,7 +759,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Är Mallorca bra för golf? Ett ärligt svar från någon som bor här",
         "intro": "Den ofiltrerade versionen: vad ön gör bättre än Portugal, var den faller kort och vem den passar.",
         "readTime": "5 min",
-        "keywords": "Mallorca vs Portugal · Banornas kvalitet · Allá nivåer"
+        "keywords": "Mallorca vs Portugal · Banornas kvalitet · Alla nivåer"
       },
       {
         "slug": "best-time-play-golf-mallorca",

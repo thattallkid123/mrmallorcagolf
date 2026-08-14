@@ -62,7 +62,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "items": [
         {
           "title": "Jugar una vuelta conmigo",
-          "text": "Réservé un día conmigo: un campo, 18 hoyos, gestión del campo y coaching integrado en la vuelta. Solo o en grupo.",
+          "text": "Reserve un día conmigo: un campo, 18 hoyos, gestión del campo y coaching integrado en la vuelta. Solo o en grupo.",
           "cta": "Play With A Pro"
         },
         {
@@ -79,7 +79,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "how": {
       "eyebrow": "Cómo funciona",
-      "title": "Très pasos sencillos.",
+      "title": "Tres pasos sencillos.",
       "steps": [
         {
           "title": "Escríbame",
@@ -1043,7 +1043,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "title": "Ik vergelijk banen",
-          "text": "Lees mijn baangidsen voor eerlijke, eigen notities över greenfees, moeilijkheidsgraad, conditie, landschap en voor wie elke baan echt geschikt is.",
+          "text": "Lees mijn baangidsen voor eerlijke, eigen notities over greenfees, moeilijkheidsgraad, conditie, landschap en voor wie elke baan echt geschikt is.",
           "cta": "Alle banen vergelijken"
         }
       ]
@@ -1112,7 +1112,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "badge": "Beste van Spanje 2025",
           "difficulty": "7/10 moeilijkheid",
-          "excerpt": "Uitgeroepen tot beste golfbaan van Spanje bij de World Golf Awards 2025, met uitzicht över de baai van Palma en een duizend jaar oude olijfboom bij hole 15."
+          "excerpt": "Uitgeroepen tot beste golfbaan van Spanje bij de World Golf Awards 2025, met uitzicht over de baai van Palma en een duizend jaar oude olijfboom bij hole 15."
         },
         {
           "region": "Santa Ponsa · zuidwesten",
@@ -1347,7 +1347,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "coursesBlurb": "Jag spelar och recenserar varje bana på ön: Son Gual, Alcanada, T Golf Calvià, Son Muntaner och resten. Vill du jämföra banor innan du bokar,",
       "coursesBlurbLink": "se hela listan",
-      "guideBlurb": "För den fullständiga rankade genomgången av allá 24 Mallorcabanor, med green fees och vem varje bana passar,",
+      "guideBlurb": "För den fullständiga rankade genomgången av alla 24 Mallorcabanor, med green fees och vem varje bana passar,",
       "guideBlurbLink": "läs bankguiden"
     },
     "journey": {
@@ -1367,7 +1367,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "title": "Jag jämför banor",
           "text": "Läs mina banguider för ärliga, egna anteckningar om greenfees, svårighetsgrad, skick, omgivning och vem varje bana egentligen passar.",
-          "cta": "Jämför allá banor"
+          "cta": "Jämför alla banor"
         }
       ]
     },
@@ -1376,7 +1376,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Tre enkla steg.",
       "steps": [
         {
-          "title": "Hör av dig",
+          "title": "Hoer av dig",
           "text": "Berätta dina datum, ditt handicap och vad du letar efter. Jag svarar personligen inom 24 timmar."
         },
         {
@@ -1418,19 +1418,19 @@ export const HOME_LOCALIZED_CONTENT = {
     "courses": {
       "eyebrow": "Utvalda banor",
       "title": "Mallorcas bästa banor, spelade och ärligt recenserade.",
-      "viewAll": "Se allá 24 banor →",
+      "viewAll": "Se alla 24 banor →",
       "items": [
         {
           "badge": "Expertval",
           "region": "Palma · 11 km från stan",
           "difficulty": "9/10 svårighet",
-          "excerpt": "Thomas Himmels bana från 2007 lever i sitt eget vindsystem. Slutsträckan från hål 15 till 18 hör till det bästa i europeisk golf."
+          "excerpt": "Thomas Himmels bana från 2007 lever i sitt eget vindsystem. Slutsträckan från hål 15 till 18 hoer till det bästa i europeisk golf."
         },
         {
           "badge": "Expertval",
           "region": "Alcúdia · norra Mallorca",
           "difficulty": "7/10 svårighet",
-          "excerpt": "Robert Trent Jones Jr. när han är som mest naturskön. Fyren syns under större delen av rundan och miljön hör till det vackraste i Spanien."
+          "excerpt": "Robert Trent Jones Jr. när han är som mest naturskön. Fyren syns under större delen av rundan och miljön hoer till det vackraste i Spanien."
         },
         {
           "badge": "Bäst i Spanien 2025",
@@ -1445,7 +1445,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "region": "Camp de Mar · sydväst",
           "difficulty": "9/10 svårighet",
-          "excerpt": "Hål 6 är Spaniens längsta par 5 på 609 meter. Inritad i kustkullarna utan kompromisser. Ta med extra bollar och lämna egot hemma."
+          "excerpt": "Hål 6 är Spaniens laengsta par 5 på 609 meter. Inritad i kustkullarna utan kompromisser. Ta med extra bollar och lämna egot hemma."
         }
       ]
     },
@@ -1486,7 +1486,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "Bevis i verkligheten",
       "title": "Tävlingsvinnare, ambitiösa golfare och många däremellan.",
       "intro": "Jag har coachat elitjuniorer, klubbgolfare och många som bara ville sluta kasta bort slag. Den gemensamma nämnaren brukar vara densamma: tydligare beslut, bättre mönster och en utveckling som fortfarande syns när scorekortet faktiskt räknas.",
-      "testimonial": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna och mest behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att ge det en chans. Det är jag glad för. Vi jobbade igenom de finare detaljerna i svingen, bättre bollträff, viktförflyttning och mekanik. Även små justeringar gav stabila resultat direkt, och jag är övertygad om att de kan spara fem till tio slag för mig efter bara en session. Andy var oerhört professionell hela vägen. Jag kan inte tacka honom nog."
+      "testimonial": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna och mest behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att ge det en chans. Det är jag glad för. Vi jobbade igenom de finare detaljerna i svingen, bättre bollträff, viktförflyttning och mekanik. Även små justeringar gav stabila resultat direkt, och jag är övertygad om att de kan spara fem till tio slag för mig efter bara en session. Andy var oerhoert professionell hela vägen. Jag kan inte tacka honom nog."
     },
     "packages": {
       "eyebrow": "Upplevelser och paket",
@@ -1539,7 +1539,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "cta": "Se priser",
           "href": "/sv/contact",
           "detailHref": "/signature-day",
-          "detailLabel": "Se allá detaljer"
+          "detailLabel": "Se alla detaljer"
         },
         {
           "tier": "Reseplanering",
@@ -1572,7 +1572,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "faq": {
       "eyebrow": "Frågor",
-      "title": "Det folk brukar fråga innan de hör av sig.",
+      "title": "Det folk brukar fråga innan de hoer av sig.",
       "intro": "Berätta dina datum, ditt handicap och vad du letar efter. Jag svarar personligen inom 24 timmar.",
       "items": [
         {
@@ -1593,7 +1593,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "När är bästa tiden på året?",
-          "a": "För bästa förhållanden, titta på sen vår och höst. För bättre värde är juni till augusti och december till februari oftast billigare. Ön går att spela året runt, men vår och höst är inte längre lågprissäsongen."
+          "a": "För bästa förhållanden, titta på sen vår och höst. För bättre värde är juni till augusti och december till februari oftast billigare. Ön går att spela året runt, men vår och höst är inte laengre lågprissäsongen."
         },
         {
           "q": "Kan jag boka en enskild session under en golfsemester?",
@@ -1607,7 +1607,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "Redo att spela Mallorca på riktigt?",
-      "title": "Hör av dig. Jag ordnar resten.",
+      "title": "Hoer av dig. Jag ordnar resten.",
       "body": "Berätta dina datum, ditt handicap och vad du vill få ut av dagen. Jag återkommer personligen inom 24 timmar.",
       "primaryCta": "Boka din dag"
     },

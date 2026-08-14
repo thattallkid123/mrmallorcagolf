@@ -32,7 +32,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       },
       "east": {
         "title": "Osten",
-        "subtitle": "Idéal als Basis",
+        "subtitle": "Ideal als Basis",
         "count": "6 Plätze"
       },
       "north": {
@@ -152,7 +152,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "allCourses": "Todos los campos",
       "ctaEyebrow": "Ya tiene su lista corta?",
       "ctaH2": "Convierta la lista corta en el viaje correcto.",
-      "ctaP": "Envíeme sus fechas, handicap, zona de hotel y los dos o très campos que está considerando. Le dire cuales encajan en el viaje, en que orden, y como es el plan más claro.",
+      "ctaP": "Envíeme sus fechas, handicap, zona de hotel y los dos o tres campos que está considerando. Le dire cuales encajan en el viaje, en que orden, y como es el plan más claro.",
       "seeExperiences": "Planifica tu viaje",
       "getInTouch": "Play With A Pro"
     }
@@ -292,7 +292,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Heeft u een handicapbewijs nodig om op Mallorca te spelen?",
-          "a": "De meeste banen verwelkomen alle niveaus, maar sommige vragen een geldig handicapbewijs of stellen een maximale handicap. Op de baankaarten hierboven heb ik de banen met een handicapeis en de geldende limiet gemarkeerd, zodat u het voor het boeken ziet. Twijfelt u över uw bewijs, noem me dan de banen die u overweegt en ik zoek het voor u uit."
+          "a": "De meeste banen verwelkomen alle niveaus, maar sommige vragen een geldig handicapbewijs of stellen een maximale handicap. Op de baankaarten hierboven heb ik de banen met een handicapeis en de geldende limiet gemarkeerd, zodat u het voor het boeken ziet. Twijfelt u over uw bewijs, noem me dan de banen die u overweegt en ik zoek het voor u uit."
         }
       ],
       "toolCta": {
@@ -322,7 +322,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Spelade eller ordentligt granskade",
         "PGA Professional"
       ],
-      "lead": "Bladdra bland allá 24 banor efter region. For en smartare kortlista - filtrerad efter handicap, budget och resestil - använd banvaljaren. Skicka sedan dina datum, ditt handicap och ditt hotellomrade, sa forfinar jag rekommendationen."
+      "lead": "Bladdra bland alla 24 banor efter region. For en smartare kortlista - filtrerad efter handicap, budget och resestil - använd banvaljaren. Skicka sedan dina datum, ditt handicap och ditt hotellomrade, sa forfinar jag rekommendationen."
     },
     "regionHeaders": {
       "palma": {
@@ -369,17 +369,17 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Behover man ett handicapintyg for att spela pa Mallorca?",
-          "a": "De flesta banor valkomnar allá nivaer, men vissa kraver ett giltigt handicapintyg eller satter ett maxhandicap. Pa bankorten ovan har jag markerat banorna med handicapkrav och gransen som galler, sa att du ser det före bokning. Om du ar osaker pa ditt intyg, sag vilka banor du overvager sa kollar jag at dig."
+          "a": "De flesta banor valkomnar alla nivaer, men vissa kraver ett giltigt handicapintyg eller satter ett maxhandicap. Pa bankorten ovan har jag markerat banorna med handicapkrav och gransen som galler, sa att du ser det före bokning. Om du ar osaker pa ditt intyg, sag vilka banor du overvager sa kollar jag at dig."
         }
       ],
       "toolCta": {
         "eyebrow": "Genvag",
-        "title": "Vill du hellre ha en kortlista an lasa allá 24 recensioner?",
+        "title": "Vill du hellre ha en kortlista an lasa alla 24 recensioner?",
         "body": "Använd course selector om du redan vet handicap, budget, bas och resstil. Den smalnar av on innan du borjar jamfora starttider.",
         "cta": "Hitta mina banor",
         "note": "Du behover ingen e-post for att anvanda verktyget. Fyll bara i den om du vill fa resultatet skickat till dig."
       },
-      "allCourses": "Allá banor",
+      "allCourses": "Alla banor",
       "ctaEyebrow": "Har du en kortlista?",
       "ctaH2": "Gor om kortlistan till rätt resa.",
       "ctaP": "Skicka dina datum, ditt handicap, ditt hotellomrade och de två eller tre banor du overvager. Jag talar om vilka som hor hemma i resan, i vilken ordning, och hur den tydligaste planen ser ut.",

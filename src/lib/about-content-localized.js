@@ -342,7 +342,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "locale": "nl",
     "hero": {
       "homeHref": "/nl",
-      "breadcrumbCurrent": "Över Andy",
+      "breadcrumbCurrent": "Over Andy",
       "title": [
         "De Professional",
         "achter de Ervaring."
@@ -356,10 +356,10 @@ export const ABOUT_LOCALIZED_CONTENT = {
     },
     "chapters": [
       {
-        "label": "Vroege carrière",
+        "label": "Vroege carriere",
         "title": "De beste coaches op twee continenten volgen.",
         "paragraphs": [
-          "Ik groeide op met golf, bereikte een handicap van +1 en wist al vroeg dat coaching mijn richting zou worden. Na mijn studie Applied Golf Management aan de University of Birmingham en mijn kwalificatie als PGA Professional begon ik een carrière op te bouwen door de meest ervaren coaches in Europa en Noord-Amerika te volgen.",
+          "Ik groeide op met golf, bereikte een handicap van +1 en wist al vroeg dat coaching mijn richting zou worden. Na mijn studie Applied Golf Management aan de University of Birmingham en mijn kwalificatie als PGA Professional begon ik een carriere op te bouwen door de meest ervaren coaches in Europa en Noord-Amerika te volgen.",
           "Die vroege jaren brachten me naar bijzondere plekken. Ik coachte op Pebble Beach, Doral, Évian tijdens het dames-major en op The Open Championship. Ik bracht ook een seizoen door als coach op een cruiseschip tijdens een wereldreis - meer dan veertig landen, golf op plekken waar de meeste professionals nooit komen."
         ],
         "quote": "Elke omgeving was anders. Elke golfer was anders. Die variatie in de beginjaren heeft alles gevormd wat daarna kwam."
@@ -383,7 +383,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "quote": "De coachingsfilosofie die voortkwam uit weer spelen is eenvoudig: de snelste verbeteringen gebeuren op de baan, niet op de range. Echte omstandigheden, echte beslissingen. Vooruitgang die zo ontstaat, blijft hangen."
       }
     ],
-    "summary": "Ik ben een UK PGA Advanced Professional. Elf jaar coaching in China - nationale teamspelers, Chinas eerste Trackman Master en honderden miljoenen weergaven op Douyin. Daarvoor: Pebble Beach, The Open Championship en Evian. In maart 2025 verhuisde ik naar Mallorca om iets van mezelf op te bouwen. Ik speel bijna elke week de beste banen van het eiland en heb över allemaal een uitgesproken mening.",
+    "summary": "Ik ben een UK PGA Advanced Professional. Elf jaar coaching in China - nationale teamspelers, Chinas eerste Trackman Master en honderden miljoenen weergaven op Douyin. Daarvoor: Pebble Beach, The Open Championship en Evian. In maart 2025 verhuisde ik naar Mallorca om iets van mezelf op te bouwen. Ik speel bijna elke week de beste banen van het eiland en heb over allemaal een uitgesproken mening.",
     "credentialsLabel": "Kwalificaties",
     "credentials": [
       {

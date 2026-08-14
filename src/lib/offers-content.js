@@ -84,9 +84,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.',
     playMultiDayDetail:
-      'Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma despues de la primera conversacion, cuando el dia tiene forma.',
+      'Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversacion, cuando el dia tiene forma.',
     homeMultiDayBody:
-      'Signature Day - un dia privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio segun el dia.',
+      'Signature Day - un dia privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio según el dia.',
     contactUnknown: 'Aún no lo sé - aconséjeme',
     offers: {
       [OFFER_IDS.solo]: {
@@ -116,9 +116,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Un parcours. Une journée complète aux côtés d\'un PGA Advanced Professional qui a tout organisé. En solo à partir de €695. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.',
     playMultiDayDetail:
-      'Signature Day. Une journee de golf privee avec Andy, une session avec John Brazier, des transferts prives et une soiree coordonnee. Le tarif est confirme apres la premiere conversation, lorsque le cadre de la journee est clair.',
+      'Signature Day. Une journée de golf privee avec Andy, une session avec John Brazier, des transferts prives et une soiree coordonnee. Le tarif est confirme après la première conversation, lorsque le cadre de la journée est clair.',
     homeMultiDayBody:
-      'Signature Day - une journee de golf privee avec Andy, John Brazier, des transferts prives et une soiree coordonnee. Tarif adapte a la journee.',
+      'Signature Day - une journée de golf privee avec Andy, John Brazier, des transferts prives et une soiree coordonnee. Tarif adapte a la journée.',
     contactUnknown: 'Je ne suis pas encore certain(e) - conseillez-moi',
     offers: {
       [OFFER_IDS.solo]: {
@@ -136,7 +136,7 @@ const OFFER_CONTENT = {
         contactPrice: '€950 au total',
       },
       [OFFER_IDS.premium]: {
-        fullLabel: 'La Journee Andy Complete',
+        fullLabel: 'La Journée Andy Complète',
         contactPrice: 'Sur demande',
       },
     },
@@ -180,7 +180,7 @@ const OFFER_CONTENT = {
     playHeroBody:
       'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.',
     playMultiDayDetail:
-      'Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kvall. Priset bekraftas efter forsta samtalet, nar dagen har form.',
+      'Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kvall. Priset bekraftas efter första samtalet, när dagen har form.',
     homeMultiDayBody:
       'Signature Day - en privat golfdag med Andy, John Brazier, transfers och en koordinerad kvall. Pris anpassat efter dagen.',
     contactUnknown: 'Inte säker ännu - ge mig råd',

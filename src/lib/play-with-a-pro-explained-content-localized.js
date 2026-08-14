@@ -25,7 +25,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     beforeDay: {
       eyebrow: 'Vor dem Tag',
-      title: 'Was, wenn ich schlecht spiele. Ich habe länge nicht mehr gespielt.',
+      title: 'Was, wenn ich schlecht spiele. Ich habe lange nicht mehr gespielt.',
       paragraphs: [
         'Das höre ich häufiger als alles andere. Die Sorge ist verständlich. Sie buchen einen Tag, kommen an, und Ihr Schwung fühlt sich fremd an. Ihr kurzes Spiel ist eingerostet. Sie lesen das Fairway falsch. Nichts davon ist der Punkt.',
         'Ein Tag wie dieser wird nicht an Ihrem Handicap oder Ihrer besten Runde gemessen. Er wird daran gemessen, was sich in Ihrem Blick auf das Spiel verändert. Adam spielt seit seinem fünften Lebensjahr und dachte, die Grundlagen sitzen längst. Ein Tag auf dem Platz hat seine gesamte Herangehensweise an die Schlagauswahl verändert. Jo hatte jahrelang nicht gespielt. Der Tag hat etwas bei ihm geöffnet, das eine Woche auf der Range nicht geschafft hätte.',
@@ -52,7 +52,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         'Wenn die Runde vorbei ist, nehmen wir uns Zeit, das Erlebte durchzugehen. Was gut lief, was nicht, woran Sie weiter arbeiten sollten. Manchmal passiert das bei einem Mittagessen am Platz, manchmal in einem kürzeren Gespräch am 18. Grün. Danach schicke ich Ihnen zusätzlich eine Zusammenfassung, damit die Details des Tages nicht verloren gehen. Sie gehen mit einem klaren Bild nach Hause, nicht mit einer langen Liste - nur mit den Dingen, die wirklich einen Unterschied machen.',
       quoteText:
-        'Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon länge kämpfe, hat sich stark verbessert.',
+        'Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon lange kämpfe, hat sich stark verbessert.',
       quoteCredit: 'Synøve',
     },
     whatChanges: {
@@ -144,7 +144,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Después',
       title: 'La diferencia entre lo que esperaba y lo que obtuvo.',
       paragraphs: [
-        'La mayoría del coaching produce una lista. Cosas que practicar, posiciones que encontrar, hábitos que romper. Un día como este produce algo distinto. Como las decisiones füron reales y los golpes tuvieron consecuencias, lo que aprendió se guarda de otra forma. Se queda.',
+        'La mayoría del coaching produce una lista. Cosas que practicar, posiciones que encontrar, hábitos que romper. Un día como este produce algo distinto. Como las decisiones fueron reales y los golpes tuvieron consecuencias, lo que aprendió se guarda de otra forma. Se queda.',
         'La tarjeta de resultados mostrará lo que muestre. El verdadero resultado es el cambio en cómo aborda la siguiente vuelta: las preguntas que se hace antes de jugar, las lecturas en las que confía, las decisiones que toma con más claridad porque las tomó en un campo donde importaban.',
       ],
     },
@@ -274,8 +274,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       title: 'Uw beslissingen zien. Uw fouten zien. De juiste vragen stellen.',
       paragraphs: [
         'Als u alleen speelt, kan u missen wat er werkelijk gebeurt. Een slag die goed aanvoelde maar net iets anders van de club kwam. Een beslissing die uitpakte, maar gebaseerd was op onvolledige informatie. Een gewoonte die u zich in weken hebt aangeleerd en die u zelf niet ziet omdat u er middenin zit.',
-        'Als ik erbij ben, zie ik die dingen wel. Niet om te bekritiseren. Om te laten zien wat er echt mogelijk is als de beslissing verandert. Dat is het product: duidelijkheid över wat u doet en waarom het ertoe doet.',
-        'Veel coaching draait om swingposities en mechaniek. Deze dag is anders. Het gaat om het laaghangend fruit. Wat is dat ene ding in uw slagkeuze of course management dat, als het verandert, het grootste verschil maakt. Oefenvormen die echt passen bij hoe u leert. Vragen över uw eigen spel die een driving range niet kan beantwoorden. Geen complète make-över. Alleen de duidelijkheid om te weten waaraan u moet werken en hoe.',
+        'Als ik erbij ben, zie ik die dingen wel. Niet om te bekritiseren. Om te laten zien wat er echt mogelijk is als de beslissing verandert. Dat is het product: duidelijkheid over wat u doet en waarom het ertoe doet.',
+        'Veel coaching draait om swingposities en mechaniek. Deze dag is anders. Het gaat om het laaghangend fruit. Wat is dat ene ding in uw slagkeuze of course management dat, als het verandert, het grootste verschil maakt. Oefenvormen die echt passen bij hoe u leert. Vragen over uw eigen spel die een driving range niet kan beantwoorden. Geen complete make-over. Alleen de duidelijkheid om te weten waaraan u moet werken en hoe.',
       ],
     },
     beforeDay: {
@@ -285,7 +285,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         'Dit hoor ik vaker dan wat dan ook. De zorg is reëel. U boekt een dag, u komt aan, en uw swing voelt onbekend aan. Uw korte spel is roestig. U leest de fairway verkeerd. Niets daarvan is het punt.',
         'Een dag als deze wordt niet afgemeten aan uw handicap of uw beste ronde. Hij wordt afgemeten aan wat er verandert in hoe u het spel ziet. Adam speelt al sinds zijn vijfde en dacht dat zijn fundamenten in orde waren. Eén dag op de baan veranderde zijn hele benadering van slagkeuze. Jo had jarenlang niet gespeeld. De dag opende iets bij hem dat een week op de driving range niet had gekund.',
         'De score doet er minder toe dan de vragen die hij oproept. Wat was daar de juiste club. Waar moet ik thuis echt aan werken. Dat zijn de dingen die blijven hangen.',
-        'Voordat we ook maar in de buurt van de eerste afslag komen, gaan we zitten en praten. Över uw spel, waar u aan hebt gewerkt, wat u heeft gefrustreerd, hoe een goede dag er voor u uitziet. Dit gesprek bepaalt alles wat daarna gebeurt. Het is geen vragenlijst. Het is hoe ik begrijp wat u werkelijk nodig heeft.',
+        'Voordat we ook maar in de buurt van de eerste afslag komen, gaan we zitten en praten. Over uw spel, waar u aan hebt gewerkt, wat u heeft gefrustreerd, hoe een goede dag er voor u uitziet. Dit gesprek bepaalt alles wat daarna gebeurt. Het is geen vragenlijst. Het is hoe ik begrijp wat u werkelijk nodig heeft.',
       ],
     },
     duringRound: {
@@ -293,7 +293,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       title: 'Hier zijn de beslissingen echt.',
       paragraphs: [
         'De baan wordt gekozen passend bij uw spel. Een eerlijke, maar echte uitdaging. Wind, omstandigheden, smalle fairways, water: de beslissingen die u neemt veranderen met wat er voor u ligt, en of u ze goed of fout neemt, doet ertoe. Daarom maakt het uit om samen met iemand te spelen.',
-        'Op de driving range is een tip över clubkeuze of uitlijning abstract. U hoort het, u onthoudt het vaag, en u gaat verder naar de volgende slag. Op de baan, wanneer de wind duwt, de fairway smal is en de score echt telt, wordt dezelfde informatie concreet. U voelt het. Dat verschil is wat ervoor zorgt dat het blijft hangen.',
+        'Op de driving range is een tip over clubkeuze of uitlijning abstract. U hoort het, u onthoudt het vaag, en u gaat verder naar de volgende slag. Op de baan, wanneer de wind duwt, de fairway smal is en de score echt telt, wordt dezelfde informatie concreet. U voelt het. Dat verschil is wat ervoor zorgt dat het blijft hangen.',
         'De coaching komt op het juiste moment: bij de afslag tegen de wind, waar de beslissing wordt betwist, bij de approach, waar de clubkeuze de hole verandert, bij de putt, waar het lezen van de break vanaf de juiste kant een slag minder mogelijk maakt. Geen doorlopend commentaar. Alleen de observatie die de hole verandert.',
       ],
     },
@@ -305,7 +305,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Na de ronde',
       title: 'Wat u van de dag meeneemt.',
       paragraph:
-        'Als de ronde erop zit, nemen we de tijd om door te nemen wat er is gebeurd. Wat goed ging, wat niet, waar u verder aan moet werken. Dit gebeurt soms tijdens de lunch op de baan, soms tijdens een kortere debrief bij de 18e. Ik stuur u daarna ook een samenvatting, zodat u de details van de dag niet vergeet. U sluit af met een helder beeld, geen länge lijst, alleen de dingen die echt verschil maken.',
+        'Als de ronde erop zit, nemen we de tijd om door te nemen wat er is gebeurd. Wat goed ging, wat niet, waar u verder aan moet werken. Dit gebeurt soms tijdens de lunch op de baan, soms tijdens een kortere debrief bij de 18e. Ik stuur u daarna ook een samenvatting, zodat u de details van de dag niet vergeet. U sluit af met een helder beeld, geen lange lijst, alleen de dingen die echt verschil maken.',
       quoteText:
         'Hij gaf me duidelijke en specifieke feedback waarmee ik meerdere fouten kon corrigeren. Vooral mijn putting, waar ik altijd mee worstelde, is sterk verbeterd.',
       quoteCredit: 'Synøve',
@@ -365,9 +365,9 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     beforeDay: {
       eyebrow: 'Inför dagen',
-      title: 'Tänk om jag spelar dåligt. Jag har inte spelat på länge.',
+      title: 'Tänk om jag spelar dåligt. Jag har inte spelat på laenge.',
       paragraphs: [
-        'Det här hör jag oftare än något annat. Oron är verklig. Du bokar en dag, dyker upp, och din sving känns främmande. Ditt korta spel är rostigt. Du läser fairwayn fel. Inget av det är poängen.',
+        'Det här hoer jag oftare än något annat. Oron är verklig. Du bokar en dag, dyker upp, och din sving känns främmande. Ditt korta spel är rostigt. Du läser fairwayn fel. Inget av det är poängen.',
         'En sådan här dag mäts inte mot ditt handicap eller din bästa runda. Den mäts mot vad som förändras i hur du ser på spelet. Adam har spelat sedan han var fem och trodde att grunderna satt. En dag på banan förändrade helt hans sätt att tänka kring slagval. Jo hade inte spelat på flera år. Dagen öppnade något hos honom som en vecka på range aldrig hade kunnat göra.',
         'Resultatet spelar mindre roll än de frågor det väcker. Vilken klubba var rätt där. Vad behöver jag faktiskt jobba på när jag kommer hem. Det är sådant som stannar kvar.',
         "Innan vi ens är i närheten av det första tee'et sätter vi oss ner och pratar. Ditt spel, vad du har jobbat på, vad som har frustrerat dig, hur en bra dag ser ut från där du står. Det samtalet formar allt som händer sedan. Det är inget frågeformulär. Det är så jag förstår vad du faktiskt behöver.",
@@ -378,7 +378,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       title: 'Här är besluten verkliga.',
       paragraphs: [
         'Banan väljs för att matcha ditt spel. Ett riktigt test, men inte orättvist. Vind, förhållanden, smala fairways, vatten: besluten du fattar förändras med det som ligger framför dig, och att få dem rätt eller fel spelar roll. Det är därför det gör skillnad att spela med någon.',
-        'På en range är ett tips om klubbval eller inriktning abstrakt. Du hör det, lägger det på minnet och går vidare till nästa slag. Ute på banan, när vinden trycker på, fairwayn är smal och resultatet är på riktigt, blir samma information konkret. Du känner den. Den skillnaden är det som gör att säker fastnar.',
+        'På en range är ett tips om klubbval eller inriktning abstrakt. Du hoer det, lägger det på minnet och går vidare till nästa slag. Ute på banan, när vinden trycker på, fairwayn är smal och resultatet är på riktigt, blir samma information konkret. Du känner den. Den skillnaden är det som gör att säker fastnar.',
         "Coachingen kommer i rätt ögonblick: vid tee'et mot vinden där beslutet är svårt, vid inspelet där klubbvalet förändrar hålet, vid putten där att läsa breaket från rätt sida gör ett slag mindre möjligt. Ingen ständig kommentar. Bara observationen som förändrar hålet.",
       ],
     },
@@ -392,7 +392,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         'När rundan är klar tar vi oss tid att gå igenom vad som hände. Vad som fungerade bra, vad som inte gjorde det, vad du bör fortsätta jobba på. Det sker ibland över en lunch på banan, ibland under en kortare genomgång vid hål 18. Jag skickar också en sammanfattning efteråt så att du inte glömmer detaljerna från dagen. Du går därifrån med en tydlig bild, inte en lång lista - bara det som faktiskt gör skillnad.',
       quoteText:
-        'Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag länge kämpat med, har förbättrats mycket.',
+        'Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag laenge kämpat med, har förbättrats mycket.',
       quoteCredit: 'Synøve',
     },
     whatChanges: {
@@ -407,7 +407,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       format: { label: 'Format', value: '18 hål, hel dag' },
       courseSelection: { label: 'Val av bana', value: 'Anpassad efter ditt spel och handicap' },
       included: { label: 'Vad som ingår', value: 'Bana, starttid, coaching, strategi' },
-      duration: { label: 'Längd', value: 'Vanligtvis 5-6 timmar' },
+      duration: { label: 'Laengd', value: 'Vanligtvis 5-6 timmar' },
       dayRateLabel: 'Dagtaxa',
       soloLabel: 'solo',
       groupSuffix: 'för 2-3 golfare (greenfee och lunch tillkommer)',
@@ -417,11 +417,11 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Redo att spela',
       title: 'Berätta när du kommer.',
       body: 'Berätta dina datum, hur många ni är och vad du är ute efter. Jag återkommer personligen inom 24 timmar.',
-      primaryCta: 'Hör av dig',
+      primaryCta: 'Hoer av dig',
       secondaryCta: 'Se priser →',
     },
     sticky: {
-      primaryLabel: 'Hör av dig',
+      primaryLabel: 'Hoer av dig',
       secondaryLabel: 'Skriv på WhatsApp',
       secondaryHref: 'https://wa.me/34624466702?text=Hej%20Andy%2C%20jag%20%C3%A4r%20intresserad%20av%20en%20golfdag%20p%C3%A5%20Mallorca.',
     },

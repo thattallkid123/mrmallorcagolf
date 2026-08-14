@@ -53,7 +53,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "El primer tee"
         },
         {
-          "text": "La primera vez que jugue Son Gual estaba en los tees negros, con viento fürte desde la izquierda, junto a un amigo Profesional PGA que juega y puntua muy bien. También habia una camara grabando para un vlog. Eso anade presion. Estaba algo nervioso."
+          "text": "La primera vez que jugue Son Gual estaba en los tees negros, con viento fuerte desde la izquierda, junto a un amigo Profesional PGA que juega y puntua muy bien. También habia una camara grabando para un vlog. Eso anade presion. Estaba algo nervioso."
         },
         {
           "text": "El drive salio un poco de talon. Aun asi volo más de lo esperado y evito los bunkers, por poco. En Son Gual hay muchos bunkers, colocados justo donde acaban los golpes un poco mal pegados. Tienes que tener en cuenta viento, desniveles, contacto irregular y esos bunkers parecen crecer cuanto más los miras."
@@ -160,13 +160,13 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Veredicto"
         },
         {
-          "text": "Son Gual es mi campo favorito en Mallorca. El mantenimiento es fürte, el diseno está bien pensado y el campo obliga a tomar buenas decisiones desde el primer tee. No lo venderia como una ronda fácil de vacaciones. Si quiere buenas condiciones, greens serios y un campo que le examine de verdad, debería jugarlo. Si Son Gual forma parte de un viaje más largo, la <a href=\"/plan-your-trip\">guia de planificación del viaje</a> cubre horarios de salida, logistica y como encajar otros campos."
+          "text": "Son Gual es mi campo favorito en Mallorca. El mantenimiento es fuerte, el diseno está bien pensado y el campo obliga a tomar buenas decisiones desde el primer tee. No lo venderia como una ronda fácil de vacaciones. Si quiere buenas condiciones, greens serios y un campo que le examine de verdad, debería jugarlo. Si Son Gual forma parte de un viaje más largo, la <a href=\"/plan-your-trip\">guia de planificación del viaje</a> cubre horarios de salida, logistica y como encajar otros campos."
         },
         {
           "text": "Preguntas frecuentes"
         },
         {
-          "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Réservé pronto, elija tees realistas y deje tiempo después de la ronda."
+          "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
         },
         {
           "text": "Llevo clientes a Son Gual con regularidad. Quiere jugarlo con alguien que conoce cada hoyo?",
@@ -227,7 +227,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Das erste Mal, als ich Son Gual spielte, stand ich auf den schwarzen Abschlaegen. Der Wind kam hart von links, ich spielte mit einem befreundeten PGA Professional, der richtig gut scort. Die Kamera lief für einen Vlog mit. Das setzt einen zusaetzlich unter Druck. Ich war ein wenig nervoes."
         },
         {
-          "text": "Der Drive kam leicht an der Ferse. Er flog trotzdem weiter als erwartet und blieb knapp vor den Bunkern. Auf Son Gual gibt es viele Bunker, genau dort platziert, wo leicht getroffene Fehlschlaege landen. Wind, Hoehenunterschiede und wechselnde Ballstrikes spielen mit. Je länger man darüber nachdenkt, desto größer wirken die Bunker."
+          "text": "Der Drive kam leicht an der Ferse. Er flog trotzdem weiter als erwartet und blieb knapp vor den Bunkern. Auf Son Gual gibt es viele Bunker, genau dort platziert, wo leicht getroffene Fehlschlaege landen. Wind, Hoehenunterschiede und wechselnde Ballstrikes spielen mit. Je langer man darüber nachdenkt, desto größer wirken die Bunker."
         },
         {
           "caption": "Son Gual hat viele Bunker. Sie liegen genau dort, wo leicht misslungene Schlaege landen."
@@ -331,7 +331,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Fazit"
         },
         {
-          "text": "Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich wuerde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen. Wenn Son Gual Teil einer längeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Tee Times, Logistik und die Kombination mit anderen Plätzen ab."
+          "text": "Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich wuerde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen. Wenn Son Gual Teil einer langeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Tee Times, Logistik und die Kombination mit anderen Plätzen ab."
         },
         {
           "text": "Haeufige Fragen"
@@ -551,7 +551,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Son Gual. 11 km van Palma. Het voelt duidelijk verder zodra de wind op de eerste tee opsteekt."
         },
         {
-          "text": "Son Gual is de baan die ik het meest speel op Mallorca en de baan die ik het vaakst aanbeveel wanneer klanten vragen waar ze moeten spelen. Ik wil eerlijk zijn över waarom, en ook över wat hem lastig maakt. Wie een ontspannen vakantieronde verwacht, wordt verrast. Overweegt u ook Alcanada of Son Muntaner, lees die reviews dan ook eerst."
+          "text": "Son Gual is de baan die ik het meest speel op Mallorca en de baan die ik het vaakst aanbeveel wanneer klanten vragen waar ze moeten spelen. Ik wil eerlijk zijn over waarom, en ook over wat hem lastig maakt. Wie een ontspannen vakantieronde verwacht, wordt verrast. Overweegt u ook Alcanada of Son Muntaner, lees die reviews dan ook eerst."
         },
         {
           "text": "Snel antwoord: moet u Son Gual boeken?"
@@ -578,7 +578,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "De wind"
         },
         {
-          "text": "Son Gual lijkt in zijn eigen ecosysteem te leven. Ik vertrek op een rustige ochtend uit het zuidwesten van het eiland en kom op de eerste tee aan met echte wind. En die blijft vier uur. Met wind mee is het heerlijk. Tegenwind op een länge par 4 die ineens heel lang wordt, is iets anders."
+          "text": "Son Gual lijkt in zijn eigen ecosysteem te leven. Ik vertrek op een rustige ochtend uit het zuidwesten van het eiland en kom op de eerste tee aan met echte wind. En die blijft vier uur. Met wind mee is het heerlijk. Tegenwind op een lange par 4 die ineens heel lang wordt, is iets anders."
         },
         {
           "caption": "Er zijn genoeg holes waar de driver tevoorschijn komt. Met de wind mee is het zo goed als het wordt. Ertegen plan je anders."
@@ -590,7 +590,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Snel, verhoogd en hard voor slechte approaches. In januari waren de greens en fringes zo kort gemaaid dat het opviel voor die tijd van het jaar. Goed voor spin, ongemakkelijk bij een strakke chip met weinig landingsruimte."
         },
         {
-          "text": "Een van mijn speelpartners die dag, een student uit Shanghai, sloeg een kleine draw naar de 4e green. De bal landde maar een paar meter van de vlag en rolde toch över de achterkant. Dat gebeurt hier vaak. Een redelijke slag betekent niet automatisch een goede score."
+          "text": "Een van mijn speelpartners die dag, een student uit Shanghai, sloeg een kleine draw naar de 4e green. De bal landde maar een paar meter van de vlag en rolde toch over de achterkant. Dat gebeurt hier vaak. Een redelijke slag betekent niet automatisch een goede score."
         },
         {
           "caption": "De 4e green. De bal blijft bewegen nadat hij landt."
@@ -614,7 +614,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Bekende bezoekers"
         },
         {
-          "text": "Rafa Nadal speelt hier regelmatig en heeft gezegd dat het zijn favoriete baan op Mallorca is. Barack Obama speelde hier in november 2024. Zulke namen doen mij normaal weinig, maar ze zeggen wel iets över de positie van Son Gual op het eiland."
+          "text": "Rafa Nadal speelt hier regelmatig en heeft gezegd dat het zijn favoriete baan op Mallorca is. Barack Obama speelde hier in november 2024. Zulke namen doen mij normaal weinig, maar ze zeggen wel iets over de positie van Son Gual op het eiland."
         },
         {
           "caption": "De 10e tee, direct voor het clubhuis. De par 4 strekt zich voor u uit."
@@ -653,7 +653,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "items": [
             [
               "Beste starttijd",
-              "Vroeg in de ochtend of laat in de middag. Son Gual voelt rustig aan wanneer je över Palma kunt kijken en de baan stil is. Op die twee momenten is het licht op het terrein ook op zijn best."
+              "Vroeg in de ochtend of laat in de middag. Son Gual voelt rustig aan wanneer je over Palma kunt kijken en de baan stil is. Op die twee momenten is het licht op het terrein ook op zijn best."
             ],
             [
               "Windtip",
@@ -719,7 +719,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       },
       "blocks": [
         {
-          "caption": "Son Gual. 11 km från Palma. Det kanns betydligt längre bort när vinden tar tag pa första tee."
+          "caption": "Son Gual. 11 km från Palma. Det kanns betydligt laengre bort när vinden tar tag pa första tee."
         },
         {
           "text": "Son Gual ar den bana jag spelar mest pa Mallorca och den jag oftast rekommenderar när kunder fragar var de ska spela. Jag vill vara arlig med varför, och lika arlig med vad som gor den svar. Den som bokar och forvantar sig en lugn semesterrunda kan bli overaskad. Om du ocksa funderar pa Alcanada eller Son Muntaner, las de recensionerna innan du bestammer dig."
@@ -740,7 +740,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Första gangen jag spelade Son Gual stöd jag pa svart tee. Vinden kom hart från vanster, jag spelade med en PGA Professional-van som spelar och scorar bra, och kameran rullade for en vlogg. Det lagger till sin egen press. Jag var lite nervos."
         },
         {
-          "text": "Driven kom lite ur halen. Den flog anda längre an vantat och undvek bunkrarna, precis. Det finns många bunkrar pa Son Gual, placerade där latt missade slag hamnar. Du raknar med vind, hojdskillnader och ojamt bolltraff, och bunkrarna verkar vaxa ju längre du tittar pa dem."
+          "text": "Driven kom lite ur halen. Den flog anda laengre an vantat och undvek bunkrarna, precis. Det finns många bunkrar pa Son Gual, placerade där latt missade slag hamnar. Du raknar med vind, hojdskillnader och ojamt bolltraff, och bunkrarna verkar vaxa ju laengre du tittar pa dem."
         },
         {
           "caption": "Son Gual har många bunkrar. De ligger precis där sma missar brukar hamna."
@@ -844,7 +844,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Omdome"
         },
         {
-          "text": "Son Gual ar min favoritbana pa Mallorca. Skicket ar starkt, designen ar smart, och banan kraver bra beslut från första tee. Jag skulle inte salja den som en enkel semesterrunda. Vill du ha bra forhallanden, seriösa greener och en bana som verkligen testar dig, ska du spela den. Om Son Gual ar en del av en längre resa tacker <a href=\"/plan-your-trip\">reseplaneringsguiden</a> starttider, logistik och hur du kombinerar andra banor."
+          "text": "Son Gual ar min favoritbana pa Mallorca. Skicket ar starkt, designen ar smart, och banan kraver bra beslut från första tee. Jag skulle inte salja den som en enkel semesterrunda. Vill du ha bra forhallanden, seriösa greener och en bana som verkligen testar dig, ska du spela den. Om Son Gual ar en del av en laengre resa tacker <a href=\"/plan-your-trip\">reseplaneringsguiden</a> starttider, logistik och hur du kombinerar andra banor."
         },
         {
           "text": "Vanliga frågor"
@@ -1146,7 +1146,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Información práctica"
         },
         {
-          "text": "Green fees 2026: €115 en temporada baja y hasta €220 en los periodos fürtes de marzo a mayo y de septiembre a octubre. El desglose completo está en golf-alcanada.com. Los jugadores no federados en España deben pagar una licencia diaria de golf de €3 por persona."
+          "text": "Green fees 2026: €115 en temporada baja y hasta €220 en los periodos fuertes de marzo a mayo y de septiembre a octubre. El desglose completo está en golf-alcanada.com. Los jugadores no federados en España deben pagar una licencia diaria de golf de €3 por persona."
         },
         {
           "text": "Alquiler de palos: juegos TaylorMade por €38 para 18 hoyos. Buggy €48, trolley eléctrico €20. El campo de prácticas con Toptracer es excelente para hacer un buen calentamiento - úsalo."
@@ -1159,7 +1159,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "items": [
             [
               "Mejor hora de salida",
-              "La manana es idéal aquí. La luz es mejor y normalmente tiene la version más suave de la brisa costera."
+              "La manana es ideal aquí. La luz es mejor y normalmente tiene la version más suave de la brisa costera."
             ],
             [
               "Consejo con el viento",
@@ -1328,7 +1328,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Wind-Tipp",
-              "Behandeln Sie die offenen Löcher mit Respekt. Die Seeluft kann eine bequeme Distanz plötzlich wie einen Schläger länger spielen lassen, besonders wenn Sie auf den Back Nine gegen den Wind spielen."
+              "Behandeln Sie die offenen Löcher mit Respekt. Die Seeluft kann eine bequeme Distanz plötzlich wie einen Schläger langer spielen lassen, besonders wenn Sie auf den Back Nine gegen den Wind spielen."
             ],
             [
               "Wo Besucher Schlaege verlieren",
@@ -1336,7 +1336,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Clubhaus-Tipp",
-              "Planen Sie Zeit für ein Mittagessen auf der Terrasse ein. Das Essen ist sehr gut, die grosse Terrasse schaut auf den Leuchtturm, und sie verlängert einen ohnehin guten Golftag."
+              "Planen Sie Zeit für ein Mittagessen auf der Terrasse ein. Das Essen ist sehr gut, die grosse Terrasse schaut auf den Leuchtturm, und sie verlangert einen ohnehin guten Golftag."
             ]
           ]
         },
@@ -1568,7 +1568,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Robert Trent Jones Jr. ontwierp Alcanada, en wat hij met deze kuststrook heeft gedaan is bijzonder. Als je op de achterste tees staat, met de vuurtoren achter je en de Middellandse Zee rondom, heb je zo'n zeldzaam golfmoment waarop de omgeving je bijna je score laat vergeten."
         },
         {
-          "text": "De vuurtoren van Alcanada staat op een klein eilandje vlak voor de kust en is zichtbaar vanaf 16 van de 18 holes. Op een heldere ochtend, met rustig water en licht över de baai, is dit een van de mooiste golfsettings die ik ooit heb meegemaakt."
+          "text": "De vuurtoren van Alcanada staat op een klein eilandje vlak voor de kust en is zichtbaar vanaf 16 van de 18 holes. Op een heldere ochtend, met rustig water en licht over de baai, is dit een van de mooiste golfsettings die ik ooit heb meegemaakt."
         },
         {
           "caption": "De vuurtoren achter ons, de zee links, de fairway die naar voren daalt."
@@ -1601,7 +1601,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Rolex Challenge Tour Grand Final"
         },
         {
-          "text": "Alcanada is gastheer van de Rolex Challenge Tour Grand Final, die in oktober 2026 voor de zesde keer terugkeert. Dit is geen baan die zich alleen voor een toernooi oppoetst. Het is een baan die altijd al dat niveau had. Als je op de tee staat, voel je dat dezelfde holes hier beslissen över professionele carrières."
+          "text": "Alcanada is gastheer van de Rolex Challenge Tour Grand Final, die in oktober 2026 voor de zesde keer terugkeert. Dit is geen baan die zich alleen voor een toernooi oppoetst. Het is een baan die altijd al dat niveau had. Als je op de tee staat, voel je dat dezelfde holes hier beslissen over professionele carrieres."
         },
         {
           "caption": "De Rolex Challenge Tour Grand Final op Alcanada. Het keert voor de zesde keer terug in oktober 2026."
@@ -1610,7 +1610,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Ontwerpafkomst"
         },
         {
-          "text": "De väder van Robert Trent Jones Jr. ontwierp Valderrama - locatie van de Ryder Cup van 1997 - en Spyglass Hill in Pebble Beach. RTJ Jr. ontwierp ook Spring City Golf in Kunming, door Golf Digest uitgeroepen tot nummer één van China. Die lijn voel je in Alcanada: niets lijkt willekeurig, alles gebruikt het landschap slim."
+          "text": "De vader van Robert Trent Jones Jr. ontwierp Valderrama - locatie van de Ryder Cup van 1997 - en Spyglass Hill in Pebble Beach. RTJ Jr. ontwierp ook Spring City Golf in Kunming, door Golf Digest uitgeroepen tot nummer één van China. Die lijn voel je in Alcanada: niets lijkt willekeurig, alles gebruikt het landschap slim."
         },
         {
           "caption": "Een zomeravondronde. Het licht op Alcanada in juli is bijzonder."
@@ -1664,7 +1664,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Clubhuistip",
-              "Laat tijd över voor lunch op het terras. Het eten is erg goed, het grote terras kijkt uit op de vuurtoren en verlengt een toch al mooie dag."
+              "Laat tijd over voor lunch op het terras. Het eten is erg goed, het grote terras kijkt uit op de vuurtoren en verlengt een toch al mooie dag."
             ]
           ]
         },
@@ -1745,7 +1745,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Att stå på de upphöjda back tees är en upplevelse i sig. Man känner sig nästan oberörbar, så långt från allt annat att människorna där nere ser ut som små prickar. Fyren bakom dig, bukten framför dig och så en driver som ska skickas ut i tomrummet. Det är känslan."
         },
         {
-          "text": "Att stå på de bakre tees på Alcanada är otroligt. Man känner sig oberörbar. Så långt bort från resten av världen. Allá ser ut som små prickar och du står där uppe, redo att slå en driver ut i intet."
+          "text": "Att stå på de bakre tees på Alcanada är otroligt. Man känner sig oberörbar. Så långt bort från resten av världen. Alla ser ut som små prickar och du står där uppe, redo att slå en driver ut i intet."
         },
         {
           "caption": "En klar morgon kan man se Tramuntana-bergen tvärs över viken."
@@ -1821,7 +1821,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Vindtips",
-              "Respektera de öppna halen. Havsluften kan fa ett bekvamt avstand att plotsligt spela en klubba längre, särskilt när du spelar i motvind pa back nine."
+              "Respektera de öppna halen. Havsluften kan fa ett bekvamt avstand att plotsligt spela en klubba laengre, särskilt när du spelar i motvind pa back nine."
             ],
             [
               "Där besokare tappar slag",
@@ -2074,7 +2074,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "El hoyo 10"
         },
         {
-          "text": "Con 590 metros, el 10 es uno de los pares 5 más largos de Europa. Jugado contra el viento se siente todavía más largo. Hay una versión muy satisfactoria de este hoyo - driver, híbrido, wedge - y otra bastante menos agradable si uno de esos très golpes falla. Los pares 3 son el extremo opuesto: largos y con greens pequeños. Aquí se trata más de limitar daños que de buscar birdies."
+          "text": "Con 590 metros, el 10 es uno de los pares 5 más largos de Europa. Jugado contra el viento se siente todavía más largo. Hay una versión muy satisfactoria de este hoyo - driver, híbrido, wedge - y otra bastante menos agradable si uno de esos tres golpes falla. Los pares 3 son el extremo opuesto: largos y con greens pequeños. Aquí se trata más de limitar daños que de buscar birdies."
         },
         {
           "caption": "El trazado. En un día tranquilo, este campo te halaga. Añade viento y se gana cada metro de su longitud."
@@ -2203,7 +2203,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Etwas ganz direkt: Dieser Platz hat mir geholfen, mit dem Driver wieder Selbstvertrauen zu finden. Nach Runden auf Son Gual oder Alcanada, wo gutes Course Management oft bedeutet, den Driver im Bag zu lassen, ist Santa Ponsa 1 ein völlig anderes Gespräch. Die Fairways sind breit, die ersten Löcher großzügig, und der Platz belohnt einen mutigen Ansatz vom Tee."
         },
         {
-          "text": "Mit meiner Länge habe ich nach einem guten Abschlag oft nur noch ein Pitching Wedge ins Grün eines Par 4. Für Spieler mit normalerer Länge wird der Platz bei Wind zu einer echten Prüfung - aber auf die Art, die Vertrauen aufbaut, statt es kleinzumahlen."
+          "text": "Mit meiner Lange habe ich nach einem guten Abschlag oft nur noch ein Pitching Wedge ins Grün eines Par 4. Für Spieler mit normalerer Lange wird der Platz bei Wind zu einer echten Prüfung - aber auf die Art, die Vertrauen aufbaut, statt es kleinzumahlen."
         },
         {
           "caption": "Die Fairways sind breit. Das ist ein Platz, der den Driver einlädt."
@@ -2212,7 +2212,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Das 10. Loch"
         },
         {
-          "text": "Mit 590 Metern ist die 10 eines der längsten Par 5 Europas. Gegen den Wind spielt es sich noch länger. Es gibt eine sehr befriedigende Version dieses Lochs - Driver, Hybrid, Wedge - und eine deutlich weniger befriedigende Version, bei der einer dieser drei Schläge misslingt. Die Par 3s sind das andere Extrem: lang und mit kleinen Grüns. Hier geht es eher um Schadensbegrenzung als um Birdiechancen."
+          "text": "Mit 590 Metern ist die 10 eines der längsten Par 5 Europas. Gegen den Wind spielt es sich noch langer. Es gibt eine sehr befriedigende Version dieses Lochs - Driver, Hybrid, Wedge - und eine deutlich weniger befriedigende Version, bei der einer dieser drei Schläge misslingt. Die Par 3s sind das andere Extrem: lang und mit kleinen Grüns. Hier geht es eher um Schadensbegrenzung als um Birdiechancen."
         },
         {
           "caption": "Das Layout. An einem ruhigen Tag schmeichelt dieser Platz. Mit Wind verdient er jeden seiner Meter."
@@ -2474,10 +2474,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Waarom deze baan bij mijn spel past - en waarschijnlijk ook bij dat van jou"
         },
         {
-          "text": "Laat ik ergens direct över zijn: deze baan heeft mij geholpen om weer vertrouwen te krijgen met de driver. Na rondes op Son Gual of Alcanada, waar goed course management vaak betekent dat je de driver in de tas laat, is Santa Ponsa 1 een heel ander verhaal. De fairways zijn breed, de openingsholes royaal, en de baan beloont een agressieve aanpak vanaf de tee echt."
+          "text": "Laat ik ergens direct over zijn: deze baan heeft mij geholpen om weer vertrouwen te krijgen met de driver. Na rondes op Son Gual of Alcanada, waar goed course management vaak betekent dat je de driver in de tas laat, is Santa Ponsa 1 een heel ander verhaal. De fairways zijn breed, de openingsholes royaal, en de baan beloont een agressieve aanpak vanaf de tee echt."
         },
         {
-          "text": "Met mijn lengte houd ik na een goede drive vaak nog maar een wedge över naar een par-4-green. Voor spelers met een normalere lengte wordt het een serieuze test zodra de wind opsteekt, maar wel het soort test dat vertrouwen opbouwt in plaats van afbreekt."
+          "text": "Met mijn lengte houd ik na een goede drive vaak nog maar een wedge over naar een par-4-green. Voor spelers met een normalere lengte wordt het een serieuze test zodra de wind opsteekt, maar wel het soort test dat vertrouwen opbouwt in plaats van afbreekt."
         },
         {
           "caption": "De fairways zijn breed. Dit is een baan die de driver uitnodigt."
@@ -2495,7 +2495,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "De band met de European Tour"
         },
         {
-          "text": "Het hosten van het Mallorca Golf Open 2021 was belangrijk voor het eiland. Het was het eerste European Tour-événement hier in tien jaar, en Santa Ponsa 1 hield prima stand. De conditie van de baan tijdens de toernooiweek, de routing onder druk en de scores die mogelijk waren zonder dat de baan zich overgaf - het werkte allemaal. Dat niveau is echt, en je voelt het als bezoeker meteen."
+          "text": "Het hosten van het Mallorca Golf Open 2021 was belangrijk voor het eiland. Het was het eerste European Tour-evenement hier in tien jaar, en Santa Ponsa 1 hield prima stand. De conditie van de baan tijdens de toernooiweek, de routing onder druk en de scores die mogelijk waren zonder dat de baan zich overgaf - het werkte allemaal. Dat niveau is echt, en je voelt het als bezoeker meteen."
         },
         {
           "caption": "De Tramuntana-bergen op de achtergrond. Holes 5, 6 en 7 hebben de beste bergzichten."
@@ -2546,15 +2546,15 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "items": [
             [
               "Beste starttijd",
-              "Hoe vroeger hoe beter, als je die tijd kunt krijgen. De baan speelt comfortabeler voordat de gebruikelijke bries opkomt, en de länge holes voelen vroeg op de dag vriendelijker aan."
+              "Hoe vroeger hoe beter, als je die tijd kunt krijgen. De baan speelt comfortabeler voordat de gebruikelijke bries opkomt, en de lange holes voelen vroeg op de dag vriendelijker aan."
             ],
             [
               "Windtip",
-              "Wanneer de wind opkomt, raakt die vooral de länge par 3 holes en hole 10. Neem genoeg club en zie de afstand op de scorekaart als vertrekpunt, niet als definitief antwoord."
+              "Wanneer de wind opkomt, raakt die vooral de lange par 3 holes en hole 10. Neem genoeg club en zie de afstand op de scorekaart als vertrekpunt, niet als definitief antwoord."
             ],
             [
               "Waar bezoekers slagen verliezen",
-              "Veel bezoekers genieten van de brede fairways, krijgen te veel vertrouwen met de driver en verliezen daarna slagen door kleine doelen te agressief aan te vallen vanuit goede posities en lastige chips över te houden."
+              "Veel bezoekers genieten van de brede fairways, krijgen te veel vertrouwen met de driver en verliezen daarna slagen door kleine doelen te agressief aan te vallen vanuit goede posities en lastige chips over te houden."
             ],
             [
               "Clubhuistip",
@@ -2581,7 +2581,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         "readTime": "6 min läsning",
         "updated": "Mars 2026",
         "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension från ett PGA-proffs",
-        "intro": "En av öns längsta banor. Riktig European Tour-historia. Och fairways som är breda nog för drivern.",
+        "intro": "En av öns laengsta banor. Riktig European Tour-historia. Och fairways som är breda nog för drivern.",
         "related": [
           {
             "slug": "son-gual-review",
@@ -2615,7 +2615,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Jag kan säga det rakt ut: den här banan har hjälpt mig att hitta tillbaka till självförtroendet med drivern. Efter rundor på Son Gual eller Alcanada, där bra banstrategi ofta betyder att lämna drivern i bagen, är Santa Ponsa 1 något helt annat. Fairways är breda, de första hålen generösa, och banan belönar verkligen ett offensivt spel från tee."
         },
         {
-          "text": "Med min längd har jag ofta bara en wedge kvar in på par 4-greener efter en bra drive. För spelare med mer normal längd blir det en ordentlig utmaning när vinden kommer in, men det är den sortens utmaning som bygger självförtroende snarare än bryter ner det."
+          "text": "Med min laengd har jag ofta bara en wedge kvar in på par 4-greener efter en bra drive. För spelare med mer normal laengd blir det en ordentlig utmaning när vinden kommer in, men det är den sortens utmaning som bygger självförtroende snarare än bryter ner det."
         },
         {
           "caption": "Fairways är breda. Det här är en bana som bjuder in drivern."
@@ -2624,10 +2624,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Hål 10"
         },
         {
-          "text": "Med sina 590 meter är 10:e ett av Europas längsta par 5-hål. Spelat rakt in i vinden känns det ännu längre. Det finns en mycket tillfredsställande version av hålet - driver, hybrid, wedge - och en betydligt mindre trevlig version där ett av de tre slagen går fel. Par 3-hålen är den andra ytterligheten: långa, med små greener. Här handlar det mer om att begränsa skadan än att jaga birdies."
+          "text": "Med sina 590 meter är 10:e ett av Europas laengsta par 5-hål. Spelat rakt in i vinden känns det ännu laengre. Det finns en mycket tillfredsställande version av hålet - driver, hybrid, wedge - och en betydligt mindre trevlig version där ett av de tre slagen går fel. Par 3-hålen är den andra ytterligheten: långa, med små greener. Här handlar det mer om att begränsa skadan än att jaga birdies."
         },
         {
-          "caption": "Banlayouten. En lugn dag smickrar den här banan dig. Lägg till vind och den förtjänar varje meter av sin längd."
+          "caption": "Banlayouten. En lugn dag smickrar den här banan dig. Lägg till vind och den förtjänar varje meter av sin laengd."
         },
         {
           "text": "Kopplingen till European Tour"
@@ -2936,7 +2936,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Las cabras"
         },
         {
-          "text": "Había cabras en varios hoyos durante toda la vuelta. Se movían por el campo como si füra suyo, que en justicia seguramente lo era antes de que alguien construyera aquí un club de golf. El rebaño entero vino a vernos terminar en el 17. Una de ellas seguía la acción desde un bunker sin el menor interés por el concepto de rastrillarlo. Un animal genuinamente peligroso que, en nuestra opinión, debería figurar en la tarjeta."
+          "text": "Había cabras en varios hoyos durante toda la vuelta. Se movían por el campo como si fuera suyo, que en justicia seguramente lo era antes de que alguien construyera aquí un club de golf. El rebaño entero vino a vernos terminar en el 17. Una de ellas seguía la acción desde un bunker sin el menor interés por el concepto de rastrillarlo. Un animal genuinamente peligroso que, en nuestra opinión, debería figurar en la tarjeta."
         },
         {
           "text": "Los greens"
@@ -3046,7 +3046,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Der Ball gehört mir. Die Ziege war nicht eingeladen. Back Nine, Son Termes."
         },
         {
-          "text": "Ich habe Son Termes an einem Freitagvormittag mit einem Freund gespielt, der Hcp 20 hat. Auf den Back Nine gingen ihm långsam die Bälle aus. Das Rough ist dicht, bei mehreren Abschlägen ist der Korridor sehr eng, und der Platz sammelt Fehlschläge auf eine Weise ein, die man von der Karte aus nicht sofort erkennt. Das fasst Son Termes ziemlich gut zusammen."
+          "text": "Ich habe Son Termes an einem Freitagvormittag mit einem Freund gespielt, der Hcp 20 hat. Auf den Back Nine gingen ihm langsam die Bälle aus. Das Rough ist dicht, bei mehreren Abschlägen ist der Korridor sehr eng, und der Platz sammelt Fehlschläge auf eine Weise ein, die man von der Karte aus nicht sofort erkennt. Das fasst Son Termes ziemlich gut zusammen."
         },
         {
           "text": "Son Termes liegt in den Na-Burguesa-Bergen oberhalb von Palma. Zwanzig Minuten vom Stadtzentrum entfernt und doch eine andere Welt. An klaren Tagen sieht man von den höher gelegenen Abschlägen aus Castell de Bellver und die Kathedrale in der Skyline von Palma, dahinter das Mittelmeer. Wenn man aus Shanghai kommt, wo ein so gut erreichbarer und landschaftlich so starker Platz eine Warteliste von fünf Jahren für Mitgliedschaften hätte, bleibt das bemerkenswert."
@@ -3065,10 +3065,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "So spielt sich der Platz"
         },
         {
-          "text": "Son Termes ist kein langer Platz. Mehrere Par 4 sind drivebar oder knapp davor, sodass für den Schlag ins Grün nur kurze Eisen oder Wedges bleiben. Für Single-Handicapper, die vor allem einen Längentest suchen, sollte man das vorab wissen."
+          "text": "Son Termes ist kein langer Platz. Mehrere Par 4 sind drivebar oder knapp davor, sodass für den Schlag ins Grün nur kurze Eisen oder Wedges bleiben. Für Single-Handicapper, die vor allem einen Langentest suchen, sollte man das vorab wissen."
         },
         {
-          "text": "Was dem Platz an Länge fehlt, macht er mit Charakter wett. Blinde Abschläge, scharfe Doglegs, künstlich angelegte Wasserhindernisse genau dort, wo viele Golfer instinktiv hinspielen würden. Auf mehreren Löchern muss man sich auf ein Ziel festlegen, das man nicht vollständig sehen kann. Das hält die Runde von Anfang bis Ende interessant, und es bedeutet auch, dass ein zweiter Besuch fast immer einen besseren Score bringt."
+          "text": "Was dem Platz an Lange fehlt, macht er mit Charakter wett. Blinde Abschläge, scharfe Doglegs, künstlich angelegte Wasserhindernisse genau dort, wo viele Golfer instinktiv hinspielen würden. Auf mehreren Löchern muss man sich auf ein Ziel festlegen, das man nicht vollständig sehen kann. Das hält die Runde von Anfang bis Ende interessant, und es bedeutet auch, dass ein zweiter Besuch fast immer einen besseren Score bringt."
         },
         {
           "alt": "Golfplatz Son Termes auf Mallorca in den Na-Burguesa-Bergen",
@@ -3387,7 +3387,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Hoe de baan speelt"
         },
         {
-          "text": "Son Termes is geen länge baan. Meerdere par 4's zijn drivable of komen daar dichtbij, waardoor je vaak een kort ijzer of wedge overhoudt naar de green. Voor lage handicappers die vooral op zoek zijn naar een lengteproef is dat goed om vooraf te weten."
+          "text": "Son Termes is geen lange baan. Meerdere par 4's zijn drivable of komen daar dichtbij, waardoor je vaak een kort ijzer of wedge overhoudt naar de green. Voor lage handicappers die vooral op zoek zijn naar een lengteproef is dat goed om vooraf te weten."
         },
         {
           "text": "Wat de baan aan lengte mist, maakt ze goed met karakter. Blinde afslagen, scherpe doglegs, kunstmatig water dat precies ligt om de slag te vangen die veel golfers instinctief willen spelen. Op meerdere holes moet je je vastleggen op een target dat je niet volledig kunt zien. Dat houdt de ronde van begin tot eind interessant, en het betekent ook dat een tweede ronde hier bijna altijd een betere score oplevert."
@@ -3403,14 +3403,14 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Hole 6 gaf persoonlijk veel voldoening. Driver bijna tot aan de green op de par 5, wedge erin, eaglekans net gemist. De par 5's zijn hier haalbaar en de baan geeft je echte birdiekansen met een kort ijzer in de hand."
         },
         {
-          "text": "Hole 12 is de korte par 3 över bebost terrein met het beste uitzicht van de baan. De vlag is vanaf de tee moeilijker te vinden dan je zou verwachten, en de bomen omlijsten de hole op zo'n manier dat het een van de meest memorabele korte holes in de buurt van Palma is."
+          "text": "Hole 12 is de korte par 3 over bebost terrein met het beste uitzicht van de baan. De vlag is vanaf de tee moeilijker te vinden dan je zou verwachten, en de bomen omlijsten de hole op zo'n manier dat het een van de meest memorabele korte holes in de buurt van Palma is."
         },
         {
           "alt": "Par-3-green van hole 12 op Son Termes op Mallorca met bomen erachter",
           "caption": "De 12e. De vlag was moeilijker te vinden dan dit beeld doet vermoeden."
         },
         {
-          "text": "Hole 13 speelt anders dan de kaart doet vermoeden. Scherpe dogleg, ijzer 9 vanaf de tee om de bal in het spel te houden, daarna bijna 175 meter över naar de green met beperkt zicht op de vlag. Ik lag midden in de fairway en had alsnog een grotendeels blinde approach. Goede hole. De baan heeft er meer van dit soort, waar je je vastlegt op een afstand en pas daarna ontdekt of je gelijk had."
+          "text": "Hole 13 speelt anders dan de kaart doet vermoeden. Scherpe dogleg, ijzer 9 vanaf de tee om de bal in het spel te houden, daarna bijna 175 meter over naar de green met beperkt zicht op de vlag. Ik lag midden in de fairway en had alsnog een grotendeels blinde approach. Goede hole. De baan heeft er meer van dit soort, waar je je vastlegt op een afstand en pas daarna ontdekt of je gelijk had."
         },
         {
           "text": "Hole 18 sluit af langs een dogleg naar links, terug naar het clubhuis. Een goede slothole. Daarna op het terras zitten en anderen die klimmetjes zien overleven is een mooie manier om de ronde af te sluiten."
@@ -3428,7 +3428,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Het eerlijke antwoord: ze halen het niveau van Son Gual of Alcanada niet. De oppervlakken waren goed en de snelheid was degelijk, maar als je onlangs de topbanen van het eiland hebt gespeeld, merk je het verschil. Voor deze prijs en voor wat de rest van de ronde biedt, is dat een prima afweging."
         },
         {
-          "alt": "Panoramisch uitzicht op golfbaan Son Termes op Mallorca över het Na Burguesa-gebergte en de vlakte van Palma",
+          "alt": "Panoramisch uitzicht op golfbaan Son Termes op Mallorca over het Na Burguesa-gebergte en de vlakte van Palma",
           "caption": "Het uitzicht vanaf de bovenste holes. Op een heldere ochtend waren Castell de Bellver en de kathedraal zichtbaar aan de horizon."
         },
         {
@@ -3489,7 +3489,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Son Termes biedt meer karakter dan de meeste banen in deze prijsklasse. De uitzichten op de back nine zijn het beste wat je zo dicht bij Palma kunt krijgen. De lay-out blijft je de hele ronde aan het denken zetten, en een tweede bezoek zou vrijwel zeker een betere score opleveren. Voor een bezoekende golfer die iets anders wil dan de premiumbanen, of voor een local die een baan met echte persoonlijkheid zoekt voor een redelijke prijs, verdient Son Termes zijn plek op de lijst. Ben je de rest van je reisschema nog aan het uitwerken? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt logistiek en timing."
         },
         {
-          "text": "Denk je eraan om Son Termes te spelen, of wil je advies över welke baan het best bij jouw spel past?",
+          "text": "Denk je eraan om Son Termes te spelen, of wil je advies over welke baan het best bij jouw spel past?",
           "linkLabel": "Neem contact op →"
         }
       ]
@@ -3539,7 +3539,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Att gå banan"
         },
         {
-          "text": "Jag försöker alltid gå. På front nine på Son Termes är det enkelt. På back nine blir det ett ärligt samtal med dig själv. Flera stigningar är branta nog att få upp pulsen, och när du når de övre hålen har två säker hänt: utsikten har blivit betydligt bättre och vinden har tilltagit så pass att längdkontrollen på par 3-hålen blir svårare än yardaget antyder. De flesta tar buggy. En varm dag är det rätt beslut."
+          "text": "Jag försöker alltid gå. På front nine på Son Termes är det enkelt. På back nine blir det ett ärligt samtal med dig själv. Flera stigningar är branta nog att få upp pulsen, och när du når de övre hålen har två säker hänt: utsikten har blivit betydligt bättre och vinden har tilltagit så pass att laengdkontrollen på par 3-hålen blir svårare än yardaget antyder. De flesta tar buggy. En varm dag är det rätt beslut."
         },
         {
           "alt": "Utslag på Son Termes golfbana på Mallorca med berg i bakgrunden",
@@ -3549,10 +3549,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Så spelar banan"
         },
         {
-          "text": "Son Termes är ingen lång bana. Flera par 4-hål är drivbara eller nästan, vilket lämnar korta järn eller wedgar in mot green. För en låghandicappare som söker ett längdtest är det bra att veta i förväg."
+          "text": "Son Termes är ingen lång bana. Flera par 4-hål är drivbara eller nästan, vilket lämnar korta järn eller wedgar in mot green. För en låghandicappare som söker ett laengdtest är det bra att veta i förväg."
         },
         {
-          "text": "Det den saknar i längd tar den igen i karaktär. Blinda utslag, skarpa doglegs, konstgjorda vattenhinder placerade för att fånga slaget som de flesta golfare instinktivt vill slå. Flera hål kräver att du bestämmer dig för ett mål du inte ser fullt ut. Det håller rundan intressant från början till slut, och det gör att ett andra besök nästan alltid ger ett bättre resultat."
+          "text": "Det den saknar i laengd tar den igen i karaktär. Blinda utslag, skarpa doglegs, konstgjorda vattenhinder placerade för att fånga slaget som de flesta golfare instinktivt vill slå. Flera hål kräver att du bestämmer dig för ett mål du inte ser fullt ut. Det håller rundan intressant från början till slut, och det gör att ett andra besök nästan alltid ger ett bättre resultat."
         },
         {
           "alt": "Son Termes golfbana på Mallorca i Na Burguesa-bergen",
@@ -3652,7 +3652,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           "text": "Funderar du på att spela Son Termes eller vill du ha en rekommendation om vilken bana som passar ditt spel?",
-          "linkLabel": "Hör av dig →"
+          "linkLabel": "Hoer av dig →"
         }
       ]
     },
@@ -3881,7 +3881,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Tip",
-              "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Réservé pronto, elija tees realistas y deje tiempo después de la ronda."
+              "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
             ]
           ]
         },
@@ -3889,10 +3889,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Preguntas frecuentes"
         },
         {
-          "text": "El servicio desde la llegada hasta la ronda fue impecable. El equipo es atento sin resultar intrusivo. Las pelotas para el campo de prácticas, las instalaciones de entrenamiento y el funcionamiento général están al nivel que cabe esperar con la reputación del campo."
+          "text": "El servicio desde la llegada hasta la ronda fue impecable. El equipo es atento sin resultar intrusivo. Las pelotas para el campo de prácticas, las instalaciones de entrenamiento y el funcionamiento general están al nivel que cabe esperar con la reputación del campo."
         },
         {
-          "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Réservé pronto, elija tees realistas y deje tiempo después de la ronda."
+          "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
         },
         {
           "alt": "Campo de golf Son Muntaner Mallorca mirando por el fairway del hoyo 17 con la Bahía de Palma al fondo",
@@ -3915,7 +3915,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Mi tramo inicial fue errático. Elegí salidas conservadoras y aun así no logré leer bien el trazado desde el principio. No es una crítica. Es lo que hace el diseño. Son Muntaner no te lo muestra todo desde el tee. El campo se descubre durante el juego de aproximación."
         },
         {
-          "text": "Es difícil sostener los greens desde el ángulo equivocado. Hay tramos estrechos y objetivos sutiles que exigen una posición precisa, no solo acercar la bola a la bandera. Las zonas de aterrizaje definen el campo. Los golpes de salida y los layups requieren compromiso con zonas estrechas que no resultan evidentes hasta llegar a ellas. Una vez que lo entiendes, el diseño empieza a parecer justo. Los golpes fürtes se recompensan claramente."
+          "text": "Es difícil sostener los greens desde el ángulo equivocado. Hay tramos estrechos y objetivos sutiles que exigen una posición precisa, no solo acercar la bola a la bandera. Las zonas de aterrizaje definen el campo. Los golpes de salida y los layups requieren compromiso con zonas estrechas que no resultan evidentes hasta llegar a ellas. Una vez que lo entiendes, el diseño empieza a parecer justo. Los golpes fuertes se recompensan claramente."
         },
         {
           "alt": "Hoyo de golf Son Muntaner Mallorca par 3 estrecho con muro de piedra y búnker",
@@ -4006,10 +4006,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Preguntas frecuentes"
         },
         {
-          "text": "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a Son Vida y Son Quint. Los très campos son accesibles desde el mismo complejo resort."
+          "text": "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a Son Vida y Son Quint. Los tres campos son accesibles desde el mismo complejo resort."
         },
         {
-          "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Réservé pronto, elija tees realistas y deje tiempo después de la ronda."
+          "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
         },
         {
           "title": "Cuatro cosas que yo sabria antes de reservar Son Muntaner",
@@ -4128,11 +4128,11 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Zu Fuß oder per Buggy und warum der Buggy inklusive ist"
         },
         {
-          "text": "Der Platz ist zu Fuß eine echte körperliche Herausforderung. Mehrere länge Anstiege zu den Abschlagsbereichen. Der Buggy ist im Greenfee inbegriffen – die richtige Entscheidung des Clubs. Die meisten Spieler werden ihn wollen, und ihn als Aufpreis zu berechnen, wäre auf diesem Niveau unangemessen. Nach Jahren mit Caddies in China gehe ich lieber zu Fuß, verstehe aber, warum die meisten Besucher hier den Buggy nehmen."
+          "text": "Der Platz ist zu Fuß eine echte körperliche Herausforderung. Mehrere lange Anstiege zu den Abschlagsbereichen. Der Buggy ist im Greenfee inbegriffen – die richtige Entscheidung des Clubs. Die meisten Spieler werden ihn wollen, und ihn als Aufpreis zu berechnen, wäre auf diesem Niveau unangemessen. Nach Jahren mit Caddies in China gehe ich lieber zu Fuß, verstehe aber, warum die meisten Besucher hier den Buggy nehmen."
         },
         {
           "alt": "Son Muntaner Golfplatz Mallorca – Ausblick auf die Fairways durch die Na-Burguesa-Berge",
-          "caption": "Rückblick nach einem der längeren Anstiege. Die Streckenführung durch die Na-Burguesa-Berge macht diesen Platz zu etwas völlig anderem als alles, was sonst in der Nähe von Palma zu finden ist."
+          "caption": "Rückblick nach einem der langeren Anstiege. Die Streckenführung durch die Na-Burguesa-Berge macht diesen Platz zu etwas völlig anderem als alles, was sonst in der Nähe von Palma zu finden ist."
         },
         {
           "text": "Wie der Platz sich erschließt"
@@ -4151,7 +4151,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Die Par-3-Löcher"
         },
         {
-          "text": "Elevation wird auf der gesamten Runde gut eingesetzt. Der Schutz entsteht durch Form und Winkel des Lochs, nicht nur durch Länge – wobei die längeren Löcher von den hinteren Abschlägen über 180 Meter haben und eine ordentliche Schlägerwahl erfordern. Das 13. war an diesem Tag ein seltener Moment der Klarheit."
+          "text": "Elevation wird auf der gesamten Runde gut eingesetzt. Der Schutz entsteht durch Form und Winkel des Lochs, nicht nur durch Lange – wobei die langeren Löcher von den hinteren Abschlägen über 180 Meter haben und eine ordentliche Schlägerwahl erfordern. Das 13. war an diesem Tag ein seltener Moment der Klarheit."
         },
         {
           "alt": "Andy Griffiths beim Abschlag am 13. Par-3-Loch auf Son Muntaner Mallorca",
@@ -4265,7 +4265,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Der Titel Bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und Klarheit in der Entscheidungsfindung vom ersten bis zum letzten Loch fordert. Er belohnt Kontrolle mehr als Kraft und schafft Scoring-Chancen durch Präzision. Fünf Minuten von Palma machen die Anreise unkompliziert. Allein die Greens rechtfertigen den Besuch."
         },
         {
-          "text": "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte. Wenn Son Muntaner der Mittelpunkt einer längeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
+          "text": "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte. Wenn Son Muntaner der Mittelpunkt einer langeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
         },
         {
           "text": "Möchten Sie Son Muntaner mit einem PGA-Professional an Ihrer Seite spielen?",
@@ -4572,17 +4572,17 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Denk voor het boeken aan starttijd, wind, tempo en of de baan bij de groep past. Boek vroeg, kies realistische tees en houd tijd vrij na de ronde."
         },
         {
-          "alt": "Golfbaan Son Muntaner Mallorca kijkend över het 17e hole met de Baai van Palma op de achtergrond",
-          "caption": "Kijkend över hole 17. Vijf minuten van het centrum van Palma en het voelt als een andere wereld."
+          "alt": "Golfbaan Son Muntaner Mallorca kijkend over het 17e hole met de Baai van Palma op de achtergrond",
+          "caption": "Kijkend over hole 17. Vijf minuten van het centrum van Palma en het voelt als een andere wereld."
         },
         {
           "text": "Het lopen en waarom de buggy is inbegrepen"
         },
         {
-          "text": "De baan is een echte fysieke uitdaging te voet. Meerdere länge klimmen naar de afslagplaatsen. De buggy is inbegrepen in de greenfee, wat de juiste keuze van de club is. De meeste spelers zullen hem willen, en hem apart in rekening brengen zou op dit niveau niet kloppen. Na jaren in China met caddies loop ik liever, maar ik begrijp waarom de meeste bezoekers hier voor de buggy kiezen."
+          "text": "De baan is een echte fysieke uitdaging te voet. Meerdere lange klimmen naar de afslagplaatsen. De buggy is inbegrepen in de greenfee, wat de juiste keuze van de club is. De meeste spelers zullen hem willen, en hem apart in rekening brengen zou op dit niveau niet kloppen. Na jaren in China met caddies loop ik liever, maar ik begrijp waarom de meeste bezoekers hier voor de buggy kiezen."
         },
         {
-          "alt": "Golfbaan Son Muntaner Mallorca verhoogd uitzicht över het fairway door de Na Burguesa bergen",
+          "alt": "Golfbaan Son Muntaner Mallorca verhoogd uitzicht over het fairway door de Na Burguesa bergen",
           "caption": "Terugkijkend na een van de langere klimmen. De routing door de Na Burguesa bergen is wat deze baan anders maakt dan alles wat dicht bij Palma te vinden is."
         },
         {
@@ -4755,7 +4755,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       "blocks": [
         {
           "alt": "Andy Griffiths på golfbanan Son Muntaner, Mallorca",
-          "caption": "Bästa golfbana i Spanien 2025. Lyckades le trots allá missade fairways."
+          "caption": "Bästa golfbana i Spanien 2025. Lyckades le trots alla missade fairways."
         },
         {
           "text": "Son Muntaner utsågs till Bästa Golfbana i Spanien vid World Golf Awards 2025. Jag spelade den en lördagsmorgon förra veckan, med fullbokat starttider och blandade handicap i gruppen. Här är vad jag hittade."
@@ -4790,13 +4790,13 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Vanliga frågor"
         },
         {
-          "text": "Servicen från ankomst till runda var smidig. Teamet är uppmärksamt utan att vara påträngande. Räckviddsbollar, träningsanläggningar och den övergripande driften ligger allá på den nivå som banans rykte leder dig att förvänta dig."
+          "text": "Servicen från ankomst till runda var smidig. Teamet är uppmärksamt utan att vara påträngande. Räckviddsbollar, träningsanläggningar och den övergripande driften ligger alla på den nivå som banans rykte leder dig att förvänta dig."
         },
         {
           "text": "Innan du bokar, tank pa starttid, vind, tempo och om banan passar gruppen. Boka tidigt, valj rimliga tees och lamna tid efter ronden."
         },
         {
-          "alt": "Golfbanan Son Muntaner Mallorca med utsikt ned längs hål 17 med Palma-bukten i bakgrunden",
+          "alt": "Golfbanan Son Muntaner Mallorca med utsikt ned laengs hål 17 med Palma-bukten i bakgrunden",
           "caption": "Vy ned över hål 17. Fem minuter från centrala Palma och det känns som en annan värld."
         },
         {
@@ -4807,7 +4807,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           "alt": "Golfbanan Son Muntaner Mallorca förhöjd utsikt över fairway genom Na Burguesa-bergen",
-          "caption": "Tillbaka från en av de längre klättringarna. Layouten genom Na Burguesa-bergen är det som gör den här banan annorlunda än allt annat nära Palma."
+          "caption": "Tillbaka från en av de laengre klättringarna. Layouten genom Na Burguesa-bergen är det som gör den här banan annorlunda än allt annat nära Palma."
         },
         {
           "text": "Hur banan avslöjar sig"
@@ -4826,7 +4826,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Par 3-hålen"
         },
         {
-          "text": "De använder höjdskillnader väl genomgående. Skyddet kommer från hålens form och vinkel snarare än bara längd, även om de längre från bakre utslag är över 180 meter och kräver ordentlig klubbval. Hål 13 var ett sällsynt ögonblick av klarhet den dagen."
+          "text": "De använder höjdskillnader väl genomgående. Skyddet kommer från hålens form och vinkel snarare än bara laengd, även om de laengre från bakre utslag är över 180 meter och kräver ordentlig klubbval. Hål 13 var ett sällsynt ögonblick av klarhet den dagen."
         },
         {
           "alt": "Andy Griffiths slår av på par 3 hål 13 på Son Muntaner Mallorca",
@@ -4907,7 +4907,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Vanliga frågor"
         },
         {
-          "text": "Son Muntaner är en del av Arabella Golf Mallorca-gruppen tillsammans med Son Vida och Son Quint. Allá tre banorna är tillgängliga från samma resortanläggning."
+          "text": "Son Muntaner är en del av Arabella Golf Mallorca-gruppen tillsammans med Son Vida och Son Quint. Alla tre banorna är tillgängliga från samma resortanläggning."
         },
         {
           "text": "Innan du bokar, tank pa starttid, vind, tempo och om banan passar gruppen. Boka tidigt, valj rimliga tees och lamna tid efter ronden."
@@ -4940,7 +4940,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Titeln Bästa Golfbana i Spanien är inte marknadsföring. Son Muntaner levererar en bana som testar positionering, disciplin och beslutsfattande klarhet från första till sista hål. Det belönar kontroll över kraft och skapar poängmöjligheter genom precision. Fem minuter från Palma gör logistiken enkel. Greenerna ensamma motiverar resan."
         },
         {
-          "text": "Ett återbesök med fler hittade fairways skulle låsa upp en djupare läsning av layouten. Det är tecknet på en bana värd att komma tillbaka till. Om Son Muntaner är mittpunkten i en längre resa tar <a href=\"/plan-your-trip\">reseplaneringsguiden</a> upp timing och logistik."
+          "text": "Ett återbesök med fler hittade fairways skulle låsa upp en djupare läsning av layouten. Det är tecknet på en bana värd att komma tillbaka till. Om Son Muntaner är mittpunkten i en laengre resa tar <a href=\"/plan-your-trip\">reseplaneringsguiden</a> upp timing och logistik."
         },
         {
           "text": "Vill du spela Son Muntaner med en PGA Professional vid din sida?",
@@ -5260,7 +5260,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           "alt": "Dos golfistas en el campo de T Golf Calvià con la calle y las montañas al fondo",
-          "caption": "Jugando T Golf Calvià con un invitado. El campo es idéal para jugadores que buscan una prueba seria en buenas condiciones."
+          "caption": "Jugando T Golf Calvià con un invitado. El campo es ideal para jugadores que buscan una prueba seria en buenas condiciones."
         },
         {
           "text": "Información Práctica"
@@ -5292,13 +5292,13 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "El servicio fue bueno en todo momento. Tees y agua disponibles, personal del caddy master amable. El club house y las zonas exteriores están bien cuidados y son un buen lugar para pasar tiempo antes o después de la vuelta. El campo de prácticas es de hierba, algo que no está garantizado en todos los clubs de Mallorca."
         },
         {
-          "text": "Un punto a tener en cuenta: la señalización en las zonas restringidas para buggy podría ser más clara. En un par de ocasiones acabé en zonas que no estaban claramente señalizadas como restringidas y tuve que där marcha atrás. No es un problema una vez que conoces el campo."
+          "text": "Un punto a tener en cuenta: la señalización en las zonas restringidas para buggy podría ser más clara. En un par de ocasiones acabé en zonas que no estaban claramente señalizadas como restringidas y tuve que dar marcha atrás. No es un problema una vez que conoces el campo."
         },
         {
           "text": "Preguntas frecuentes"
         },
         {
-          "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Réservé pronto, elija tees realistas y deje tiempo después de la ronda."
+          "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
         },
         {
           "alt": "Pinos enmarcando la calle en T Golf Calvià con agua y montañas al fondo",
@@ -5332,7 +5332,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Es idéal para jugadores que buscan una vuelta seria en buenas condiciones. No llevaría aquí a un jugador de hándicap alto como primer campo en un viaje de vacaciones, pero para cualquiera en una visita dedicada al golf pertenece al itinerario. La tarifa twilight y las ofertas entre semana lo convierten en una buena opción en el momento adecuado. ¿Lo vas a encajar en un viaje más largo? La <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre la secuencia y los horarios."
+          "text": "Es ideal para jugadores que buscan una vuelta seria en buenas condiciones. No llevaría aquí a un jugador de hándicap alto como primer campo en un viaje de vacaciones, pero para cualquiera en una visita dedicada al golf pertenece al itinerario. La tarifa twilight y las ofertas entre semana lo convierten en una buena opción en el momento adecuado. ¿Lo vas a encajar en un viaje más largo? La <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre la secuencia y los horarios."
         },
         {
           "text": "¿Quieres jugar T Golf Calvià con un profesional PGA que conoce cada hoyo?",
@@ -5399,7 +5399,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Löcher, die man kennen sollte"
         },
         {
-          "text": "Loch 7 ist ein Dogleg durch die Bäume. Kurz auf der Karte, aber die Anspiellänge ist schwerer einzuschätzen als es aussieht, und Spieler neigen dazu, zu kurz zu schlagen."
+          "text": "Loch 7 ist ein Dogleg durch die Bäume. Kurz auf der Karte, aber die Anspiellange ist schwerer einzuschätzen als es aussieht, und Spieler neigen dazu, zu kurz zu schlagen."
         },
         {
           "text": "Loch 8 ist ein bergabführendes Par 4 mit einem engen Landebereich vom Abschlag. Das Anspiel ist ein handhabbares Wedge, wenn man das Fairway trifft, aber verfehlt man es, wird eine vordere Fahne schnell kompliziert. Das Gefälle macht es schwierig, den Ball zu stoppen."
@@ -5495,7 +5495,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Er eignet sich für Spieler, die eine ernsthafte Runde in guten Bedingungen suchen. Einen Hochhandicapper würde ich hier nicht als ersten Platz eines Urlaubsaufenthalts empfehlen, aber für jeden auf einem dedizierten Golftrip gehört er auf die Liste. Die Twilight-Rate und die Wochentagesangebote machen ihn zum richtigen Zeitpunkt zu einem guten Preis-Leistungs-Verhältnis. Passt das in eine längere Reise? Der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> deckt Reihenfolge und Timing ab."
+          "text": "Er eignet sich für Spieler, die eine ernsthafte Runde in guten Bedingungen suchen. Einen Hochhandicapper würde ich hier nicht als ersten Platz eines Urlaubsaufenthalts empfehlen, aber für jeden auf einem dedizierten Golftrip gehört er auf die Liste. Die Twilight-Rate und die Wochentagesangebote machen ihn zum richtigen Zeitpunkt zu einem guten Preis-Leistungs-Verhältnis. Passt das in eine langere Reise? Der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> deckt Reihenfolge und Timing ab."
         },
         {
           "text": "T Golf Calvià mit einem PGA-Professional spielen, der jeden Abschlag kennt?",
@@ -5713,7 +5713,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "De greens zijn groot en waren op de dag dat ik speelde vlekkeloos. Geen excuses voor gemiste putts. Op meerdere holes moet je ook volledig vertrouwen op je afstand omdat je de onderkant van de vlag niet kunt zien vanaf de approach. Spelers die op de vlagpositie vertrouwen voor afstandsbepaling in plaats van op yards te werken, worden verrast."
         },
         {
-          "text": "De baan meet iets minder dan 6.500 meter vanaf de achterste tees waar ik speelde, met 15 meren en carries vanaf de tee op meerdere holes. Windmolens staan verspreid över de hele baan, wat ongebruikelijk is en de baan een eigen karakter geeft. De mediterrane pijnbomen en de Tramuntana-bergen zijn constant aanwezig van de voornegen tot de terugweg."
+          "text": "De baan meet iets minder dan 6.500 meter vanaf de achterste tees waar ik speelde, met 15 meren en carries vanaf de tee op meerdere holes. Windmolens staan verspreid over de hele baan, wat ongebruikelijk is en de baan een eigen karakter geeft. De mediterrane pijnbomen en de Tramuntana-bergen zijn constant aanwezig van de voornegen tot de terugweg."
         },
         {
           "alt": "Fairway op T Golf Calvià met windmolen en Tramuntana-bergen op de achtergrond",
@@ -5733,7 +5733,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Hole 8. Een goed decor, maar de approach vraagt meer dan het lijkt."
         },
         {
-          "text": "Hole 10 is de duidelijkste beslissing op de baan. Dogleg rechts met een windmolen links en water rechts. Je kunt afstand afsnijden över het water afhankelijk van hoeveel risico je wilt nemen. Het is het soort hole dat anders speelt afhankelijk van waar je bent in de ronde."
+          "text": "Hole 10 is de duidelijkste beslissing op de baan. Dogleg rechts met een windmolen links en water rechts. Je kunt afstand afsnijden over het water afhankelijk van hoeveel risico je wilt nemen. Het is het soort hole dat anders speelt afhankelijk van waar je bent in de ronde."
         },
         {
           "alt": "Fairway en bunkers op T Golf Calvià met de Tramuntana-bergen op de achtergrond",
@@ -5863,7 +5863,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Väderkvarnarna är ett utmärkande inslag på T Golf Calvià."
         },
         {
-          "text": "Jag teed off klockan 15:20 en tisdagseftermiddag och banan var tillräckligt lugn för att höra vinden röra sig genom tallarna mellan slagen. Från de flesta fairways syns varken väg eller byggnad, bara tallar, vatten och berg. För en bana i sydvästra hörnet av Mallorca förvånade det mig."
+          "text": "Jag teed off klockan 15:20 en tisdagseftermiddag och banan var tillräckligt lugn för att hoera vinden röra sig genom tallarna mellan slagen. Från de flesta fairways syns varken väg eller byggnad, bara tallar, vatten och berg. För en bana i sydvästra hoernet av Mallorca förvånade det mig."
         },
         {
           "text": "Skicket är lika bra som något jag spelat på ön. Mycket tätt klippta fairways och fringe, perfekt räfsade bunkrar, och en enkel men ovanlig räfsdesign som gör att bollen sällan hamnar mot räfsan. Det är en liten detalj, men en som verkligen uppskattas."
@@ -5906,7 +5906,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Hål 16 är ett par 4 med ett uppförsbackigt slag från tee inramat av klippor och träd. Ett av de visuellt mest distinkta hålen på banan och det spelar svårare än kortet antyder."
         },
         {
-          "text": "Hål 18 är ett trångt par 5 som öppnar upp sig längre ner på fairway. Det är ett riktigt avslutningshål. Det kräver att man bestämmer sig från tee som ser smal ut, och belönar en om man gör det."
+          "text": "Hål 18 är ett trångt par 5 som öppnar upp sig laengre ner på fairway. Det är ett riktigt avslutningshål. Det kräver att man bestämmer sig från tee som ser smal ut, och belönar en om man gör det."
         },
         {
           "alt": "Två golfare på banan vid T Golf Calvià med fairway och berg bakom",
@@ -5939,7 +5939,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "T Golf Calvià har regelbundet veckodags- och flerbesökserbjudanden. Värt att kolla innan du bokar: t-golf.club/calvia/offers."
         },
         {
-          "text": "Servicen var bra genomgående. Tees och vatten tillhandahölls, vänlig caddy master-personal. Klubbhuset och utomhusytorna är välgjorda och ett bra ställe att tillbringa tid på före eller efter rundan. Driving rangen är på gräs, vilket inte är självklart på allá Mallorca-klubbar."
+          "text": "Servicen var bra genomgående. Tees och vatten tillhandahölls, vänlig caddy master-personal. Klubbhuset och utomhusytorna är välgjorda och ett bra ställe att tillbringa tid på före eller efter rundan. Driving rangen är på gräs, vilket inte är självklart på alla Mallorca-klubbar."
         },
         {
           "text": "En sak att notera: skyltningen kring begränsade buggyområden kunde vara tydligare. Ett par gånger hamnade jag på ställen som inte var tydligt markerade som förbjudna och fick backa ut. Inget problem när man väl känner banan."
@@ -5969,7 +5969,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Vindtips",
-              "Utga från ditt nummer, inte från vad ogat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar allá som gissar i stallet for att bestamma sig."
+              "Utga från ditt nummer, inte från vad ogat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar alla som gissar i stallet for att bestamma sig."
             ],
             [
               "Där besokare tappar slag",
@@ -5982,7 +5982,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Det passar spelare som vill ha en seriös runda i bra skick. Jag skulle inte skicka en högt handicappare hit som första bana på en semesterresa, men för allá på ett dedikerat golfbesök hör det hemma på programmet. Twilight-priset och veckodagserbjudandena gör det till ett bra värde vid rätt tidpunkt. Passar det in i en längre resa? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp ordningsföljd och timing."
+          "text": "Det passar spelare som vill ha en seriös runda i bra skick. Jag skulle inte skicka en högt handicappare hit som första bana på en semesterresa, men för alla på ett dedikerat golfbesök hoer det hemma på programmet. Twilight-priset och veckodagserbjudandena gör det till ett bra värde vid rätt tidpunkt. Passar det in i en laengre resa? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp ordningsföljd och timing."
         },
         {
           "text": "Vill du spela T Golf Calvià med en PGA-professional som känner varje hål?",
@@ -6191,7 +6191,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Hoyo 8, A Love of Mallorca. Desde uno de los puntos más altos del campo, con vistas sobre todo el suroeste de Mallorca."
         },
         {
-          "text": "Salimos poco después de las 8 de la mañana como uno de los primeros grupos. Un comienzo algo particular: el mantenimiento tenía los dos primeros hoyos füra de juego, así que empezamos en el 3. Las instalaciones de entrenamiento están al otro lado de la carretera del club house, lo que hace el calentamiento un poco inusual, pero hay una zona muy buena para practicar cualquier golpe de juego corto que uno pueda imaginar en excelentes condiciones, y un campo de prácticas en una pendiente pronunciada que cumple bien la función de soltar el cuerpo antes de la ronda."
+          "text": "Salimos poco después de las 8 de la mañana como uno de los primeros grupos. Un comienzo algo particular: el mantenimiento tenía los dos primeros hoyos fuera de juego, así que empezamos en el 3. Las instalaciones de entrenamiento están al otro lado de la carretera del club house, lo que hace el calentamiento un poco inusual, pero hay una zona muy buena para practicar cualquier golpe de juego corto que uno pueda imaginar en excelentes condiciones, y un campo de prácticas en una pendiente pronunciada que cumple bien la función de soltar el cuerpo antes de la ronda."
         },
         {
           "text": "Los buggies son obligatorios antes de las 14:00 y el campo estaba concurrido desde primeras horas. El ritmo de juego fue aceptable, pero la mañana tuvo un toque de cierta prisa en algunos momentos. Al entrar en temporada esto es habitual en todas partes, sobre todo en uno de los mejores y más demandados campos del suroeste, y se notó. Fue una buena mañana, aunque algunas cosas podrían haber ido con más fluidez."
@@ -6200,7 +6200,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Cómo juega el campo"
         },
         {
-          "text": "Golf Andratx merece su reputación como uno de los campos más difíciles de la isla. Varios pares 4 cortos parecen sencillos hasta que se ve dónde están colocados los obstáculos. Los arroyos y el agua cruzan los fairways en lugar de correr en paralelo, así que el control de la distancia desde el tee importa más que la potencia. Quedarse ligeramente füra de metraje suele significar acabar en el agua o en problemas."
+          "text": "Golf Andratx merece su reputación como uno de los campos más difíciles de la isla. Varios pares 4 cortos parecen sencillos hasta que se ve dónde están colocados los obstáculos. Los arroyos y el agua cruzan los fairways en lugar de correr en paralelo, así que el control de la distancia desde el tee importa más que la potencia. Quedarse ligeramente fuera de metraje suele significar acabar en el agua o en problemas."
         },
         {
           "text": "El desnivel es constante. Salidas en las que la bola desaparece de la vista, aproximaciones en las que uno se compromete con un número sin poder ver la bandera. Los pares 3 en particular juegan de forma muy diferente a lo que marca la tarjeta, debido a los desniveles implicados. Un GPS o un plano del campo son aquí genuinamente útiles."
@@ -6240,10 +6240,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Greens y condiciones"
         },
         {
-          "text": "Los greens estaban bien mantenidos y a buen ritmo. Bastante pendiente en varios de los hoyos más cortos, algo que se convertirá en un reto mayor a medida que los greens se aceleren en verano. Los búnkeres estaban en excelentes condiciones. Arena uniforme, bien rastrillada. El equipo de mantenimiento trabajaba en varias zonas durante la ronda, y los búnkeres mostraban dónde había estado el esfürzo."
+          "text": "Los greens estaban bien mantenidos y a buen ritmo. Bastante pendiente en varios de los hoyos más cortos, algo que se convertirá en un reto mayor a medida que los greens se aceleren en verano. Los búnkeres estaban en excelentes condiciones. Arena uniforme, bien rastrillada. El equipo de mantenimiento trabajaba en varias zonas durante la ronda, y los búnkeres mostraban dónde había estado el esfuerzo."
         },
         {
-          "text": "Los buggies son modernos y están bien equipados. Vale la pena mencionarlo: alrededor del hoyo 16 noté que la pantalla del buggy parecía mostrar dónde había quedado nuestra bola en el green. No estoy del todo seguro de que eso füra exactamente lo que hacía, pero a partir de ese momento pareció seguir la posición de la bola con cierta precisión. Un detalle pequeño, pero útil."
+          "text": "Los buggies son modernos y están bien equipados. Vale la pena mencionarlo: alrededor del hoyo 16 noté que la pantalla del buggy parecía mostrar dónde había quedado nuestra bola en el green. No estoy del todo seguro de que eso fuera exactamente lo que hacía, pero a partir de ese momento pareció seguir la posición de la bola con cierta precisión. Un detalle pequeño, pero útil."
         },
         {
           "items": [
@@ -6282,7 +6282,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "items": [
             [
               "Mejor hora de salida",
-              "Salga tan temprano como le resulte razonable. El campo tiene demanda, la luz de montana es mejor por la manana, y asi tiene la mejor opción de evitar el viento más fürte."
+              "Salga tan temprano como le resulte razonable. El campo tiene demanda, la luz de montana es mejor por la manana, y asi tiene la mejor opción de evitar el viento más fuerte."
             ],
             [
               "Consejo con el viento",
@@ -6375,7 +6375,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Loch 7. Die Steinmauern verdecken vom Abschlag aus den Blick auf das Green. Man wählt eine Linie und zieht durch, ohne zu sehen, wo man landet."
         },
         {
-          "text": "Loch 12 hat einen scharfen Dogleg rechts und bietet die gesamte Spiellänge hindurch Ausblicke über Camp del Mar. Eines der einprägsamsten auf dem Platz. Loch 15, Hello Mrs Robinson, spielt dank des stark erhöhten Abschlags rund 20 Meter kürzer, was sich erst nützlich anhört, bis man erkennt, dass das Green gut geschützt ist und die richtige Schlagweite in dieser Situation schwieriger ist als sie aussieht."
+          "text": "Loch 12 hat einen scharfen Dogleg rechts und bietet die gesamte Spiellange hindurch Ausblicke über Camp del Mar. Eines der einprägsamsten auf dem Platz. Loch 15, Hello Mrs Robinson, spielt dank des stark erhöhten Abschlags rund 20 Meter kürzer, was sich erst nützlich anhört, bis man erkennt, dass das Green gut geschützt ist und die richtige Schlagweite in dieser Situation schwieriger ist als sie aussieht."
         },
         {
           "alt": "Erhöhter Abschlag an Loch 15, Hello Mrs Robinson, auf dem Golf de Andratx",
@@ -6442,7 +6442,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Wo Besucher Schlaege verlieren",
-              "Der haeufigste Fehler ist zu denken, die Herausforderung sei nur die Länge. Die grossen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Hoehenunterschieden auf kurzen Löchern und Problemen, die Sie vom Tee nicht voll sehen."
+              "Der haeufigste Fehler ist zu denken, die Herausforderung sei nur die Lange. Die grossen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Hoehenunterschieden auf kurzen Löchern und Problemen, die Sie vom Tee nicht voll sehen."
             ],
             [
               "Clubhaus-Tipp",
@@ -6619,7 +6619,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         "readTime": "6 min",
         "updated": "Mei 2026",
         "title": "Golf de Andratx Review - De eerlijke kijk van een PGA Professional (2026)",
-        "intro": "We begonnen op hole 3, robots maaiden de Green Monster, en bij hole 8 keken we uit över heel het zuidwesten van Mallorca. Een 7,5 uit 10 en de rit waard.",
+        "intro": "We begonnen op hole 3, robots maaiden de Green Monster, en bij hole 8 keken we uit over heel het zuidwesten van Mallorca. Een 7,5 uit 10 en de rit waard.",
         "related": [
           {
             "slug": "son-gual-review",
@@ -6641,8 +6641,8 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       },
       "blocks": [
         {
-          "alt": "Uitzicht vanaf hole 8 bij Golf de Andratx över het zuidwesten van Mallorca",
-          "caption": "Hole 8, A Love of Mallorca. Vanaf een van de hoogste punten van de baan, met uitzicht över heel het zuidwesten van Mallorca."
+          "alt": "Uitzicht vanaf hole 8 bij Golf de Andratx over het zuidwesten van Mallorca",
+          "caption": "Hole 8, A Love of Mallorca. Vanaf een van de hoogste punten van de baan, met uitzicht over heel het zuidwesten van Mallorca."
         },
         {
           "text": "We sloegen kort na 8 uur af als een van de eerste groepen. Een wat apart begin: het onderhoud had de eerste twee holes uit spel genomen, dus begonnen we op de 3e. De oefenfaciliteiten liggen aan de overkant van de weg ten opzichte van het clubhuis, wat het inslaan iets ongebruikelijk maakt, maar er is een heel goed gedeelte waar je elk kort-spelschot kunt oefenen in uitstekende conditie, en een driving range op een steile helling die prima zijn werk doet om je los te slaan voor de ronde."
@@ -6677,7 +6677,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Hole 7. De stenen muren blokkeren het zicht op het green vanaf de afslagplaats. Je kiest een lijn en slaat blind, zonder te zien waar je naartoe gaat."
         },
         {
-          "text": "Hole 12 heeft een scherpe dogleg rechts en biedt över de gehele lengte van het hole uitzicht op Camp del Mar. Een van de meest memorabele op de baan. Hole 15, Hello Mrs Robinson, speelt door de sterk verhoogde afslagplaats zo'n 20 meter korter, wat handig klinkt totdat je beseft dat het green goed beschermd is en het juiste metrage vinden in die situatie moeilijker is dan het lijkt."
+          "text": "Hole 12 heeft een scherpe dogleg rechts en biedt over de gehele lengte van het hole uitzicht op Camp del Mar. Een van de meest memorabele op de baan. Hole 15, Hello Mrs Robinson, speelt door de sterk verhoogde afslagplaats zo'n 20 meter korter, wat handig klinkt totdat je beseft dat het green goed beschermd is en het juiste metrage vinden in die situatie moeilijker is dan het lijkt."
         },
         {
           "alt": "Verhoogde afslag op hole 15, Hello Mrs Robinson, bij Golf de Andratx",
@@ -6764,7 +6764,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
     "sv": {
       "metadata": {
         "title": "Golf de Andratx - Ärlig recension 2026",
-        "description": "Golf de Andratx recenserad av en PGA-professional: bergslandskap, längsta par 5 i Spanien, €125. En av Mallorcas mer utmanande banor."
+        "description": "Golf de Andratx recenserad av en PGA-professional: bergslandskap, laengsta par 5 i Spanien, €125. En av Mallorcas mer utmanande banor."
       },
       "meta": {
         "badge": "Banrecension",
@@ -6797,7 +6797,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Hål 8, A Love of Mallorca. Från en av banans högsta punkter, med utsikt över hela sydvästra Mallorca."
         },
         {
-          "text": "Vi slog av strax efter klockan 8 som ett av de första sällskapen. En lite ovanlig start: underhållet hade stängt de två första hålen, så vi började på det tredje. Träningsanläggningen ligger på andra sidan vägen från klubbhuset, vilket gör uppvärmningen lite annorlunda, men det finns ett riktigt bra område för allá tänkbara kortspelsslag i utmärkt skick och en driving range på en brant sluttning som gör sitt jobb att lösa upp kroppen inför en runda."
+          "text": "Vi slog av strax efter klockan 8 som ett av de första sällskapen. En lite ovanlig start: underhållet hade stängt de två första hålen, så vi började på det tredje. Träningsanläggningen ligger på andra sidan vägen från klubbhuset, vilket gör uppvärmningen lite annorlunda, men det finns ett riktigt bra område för alla tänkbara kortspelsslag i utmärkt skick och en driving range på en brant sluttning som gör sitt jobb att lösa upp kroppen inför en runda."
         },
         {
           "text": "Golfbilar är obligatoriska före klockan 14 och banan var välbesökt tidigt på morgonen. Speltempot var bra, men morgonen hade tidvis en lite stressad känsla. Under högsäsong är det vanligt överallt, särskilt på en av de bästa och mest efterfrågade banorna i sydväst, och det märktes. Det var en bra morgon ute, även om ett par säker kunde ha flutit lite smidigare."
@@ -6806,7 +6806,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Hur banan spelar"
         },
         {
-          "text": "Golf Andratx förtjänar sitt rykte som en av de svårare banorna på ön. Flera kortare par 4 ser enkla ut tills man ser var hindren är placerade. Bäckar och vatten korsar fairways i stället för att löpa längs dem, så distanskontrollen från avslagsplatsen väger tyngre än längden. Att vara lite fel på yardaget innebär ofta vatten eller problem."
+          "text": "Golf Andratx förtjänar sitt rykte som en av de svårare banorna på ön. Flera kortare par 4 ser enkla ut tills man ser var hindren är placerade. Bäckar och vatten korsar fairways i stället för att löpa laengs dem, så distanskontrollen från avslagsplatsen väger tyngre än laengden. Att vara lite fel på yardaget innebär ofta vatten eller problem."
         },
         {
           "text": "Höjdskillnaderna är ständigt närvarande. Avslag där bollen försvinner ur sikte, inslag där man förbinder sig till en siffra utan att se flaggan. Par 3-hålen spelar i synnerhet väldigt annorlunda mot vad som står på scorekortet, på grund av de fall som är inblandade. En GPS eller banplan är verkligt värdefull här."
@@ -6822,7 +6822,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Några hål värda att spela två gånger"
         },
         {
-          "text": "Hål 6, Green Monster, är det längsta par 5-hålet i Spanien. När vi spelade sköttes fairway av greenkeeperrobotar som klippte gräset, och man kunde verkligen se hur jämnt ytorna är på den skalan. Vi hade vinden i ryggen på det här hålet och det tog ändå allt vi hade."
+          "text": "Hål 6, Green Monster, är det laengsta par 5-hålet i Spanien. När vi spelade sköttes fairway av greenkeeperrobotar som klippte gräset, och man kunde verkligen se hur jämnt ytorna är på den skalan. Vi hade vinden i ryggen på det här hålet och det tog ändå allt vi hade."
         },
         {
           "alt": "Avslag på hål 7 vid Golf de Andratx med stenväggar framför greenen",
@@ -6878,7 +6878,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Greenfee i maj 2026 var ungefär €125 per person. Golfbilar är obligatoriska före klockan 14 och debiteras separat. Golfförsäkring på €3 krävs vid incheckning. Gula tees är rätt val för de flesta besökande golfspelare. Banan ligger i sydväst på ön, ungefär 20 minuter från Palma beroende på var man bor. Andratx stad är bara några minuter bort."
         },
         {
-          "text": "Banan spelar svårare än yardaget antyder, särskilt en blåsig dag. Ett andra besök skulle ge ett bättre resultat. Layouten belönar lokalkännedom och banmanagement mycket mer än längd."
+          "text": "Banan spelar svårare än yardaget antyder, särskilt en blåsig dag. Ett andra besök skulle ge ett bättre resultat. Layouten belönar lokalkännedom och banmanagement mycket mer än laengd."
         },
         {
           "text": "Omdöme"
@@ -6905,7 +6905,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Monster är det längsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen. Behöver du hjälp att sekvensera det med andra banor? Se <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
+          "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Monster är det laengsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen. Behöver du hjälp att sekvensera det med andra banor? Se <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
         },
         {
           "text": "Vill du spela Golf Andratx med en PGA-professional som kan hjälpa dig att planera din väg runt banan?",
@@ -7103,7 +7103,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Uno de los hoyos con agua del West Course. El campo está en Llucmajor, a unos 15-20 minutos de Palma, en campo abierto y sin casas visibles."
         },
         {
-          "text": "Ya habia très o cuatro partidos esperando en el tee del 1 cuando llegamos a las 7:50 de un domingo. Habia reservado temprano precisamente para evitar el ritmo lento que puede aparecer en los campos de resort. No lo evitamos."
+          "text": "Ya habia tres o cuatro partidos esperando en el tee del 1 cuando llegamos a las 7:50 de un domingo. Habia reservado temprano precisamente para evitar el ritmo lento que puede aparecer en los campos de resort. No lo evitamos."
         },
         {
           "text": "Eso conviene saberlo antes de pegar el primer golpe en Son Antem West. Es un campo de resort popular, bien gestionado y cerca de Palma. Si vas con esa expectativa, disfrutaras la ronda. Si esperas una experiencia tranquila y sin espera, puede que no."
@@ -7155,7 +7155,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Mantenimiento"
         },
         {
-          "text": "Muy bueno para la cantidad de juego que soportaba. Las calles estaban firmes, los greens rodaban de forma consistente y la presentacion aguanto bien toda la vuelta. Casi no habia viento, asi que las condiciones füron de las más sencillas que se pueden tener aquí. Desde las barras de atrás, el campo no se sintio especialmente largo con aire en calma."
+          "text": "Muy bueno para la cantidad de juego que soportaba. Las calles estaban firmes, los greens rodaban de forma consistente y la presentacion aguanto bien toda la vuelta. Casi no habia viento, asi que las condiciones fueron de las más sencillas que se pueden tener aquí. Desde las barras de atrás, el campo no se sintio especialmente largo con aire en calma."
         },
         {
           "text": "Se puede caminar?"
@@ -7471,7 +7471,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Driver sur un trou du retour. Le parcours etait en bon état du debut a la fin."
         },
         {
-          "text": "Quelques trous sont a connaitre. Le 10 est un dogleg droite avec de l eau courte du green. L approche impose une decisión : prendre l eau en jeu ou se placer, selon la mise en jeu. Le 12 est un par 4 assez ouvert, mais la montagne de Randa en fond en fait un des plus beaux trous du retour. Le 16 est le meilleur trou du parcours : un par 5 en montee, dogleg droite, entre les arbres, qui finit sur un petit green protege. Le 18 a de l eau sur une grande partie du côté gauche depuis le tee."
+          "text": "Quelques trous sont a connaitre. Le 10 est un dogleg droite avec de l eau courte du green. L approche impose une decision : prendre l eau en jeu ou se placer, selon la mise en jeu. Le 12 est un par 4 assez ouvert, mais la montagne de Randa en fond en fait un des plus beaux trous du retour. Le 16 est le meilleur trou du parcours : un par 5 en montee, dogleg droite, entre les arbres, qui finit sur un petit green protege. Le 18 a de l eau sur une grande partie du côté gauche depuis le tee."
         },
         {
           "alt": "Approche du trou 16 de Son Antem West, par 5 entre les arbres, Majorque",
@@ -7637,7 +7637,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "caption": "Driver op een van de holes van de back nine. De baan was de hele ronde in goede conditie."
         },
         {
-          "text": "Een paar holes zijn goed om te kennen. De 10e is een dogleg naar rechts met water kort voor de green. De approach vraagt een keuze: över het water spelen of opleggen, afhankelijk van de drive. De 12e is een vrij open par 4, maar met de Randa-berg op de achtergrond een van de mooiere holes van de back nine. De 16e is de beste hole van de baan: een uphill dogleg rechts par 5 door de bomen naar een kleine, beschermde green. De 18e heeft water över een groot deel van de linkerkant vanaf de tee."
+          "text": "Een paar holes zijn goed om te kennen. De 10e is een dogleg naar rechts met water kort voor de green. De approach vraagt een keuze: over het water spelen of opleggen, afhankelijk van de drive. De 12e is een vrij open par 4, maar met de Randa-berg op de achtergrond een van de mooiere holes van de back nine. De 16e is de beste hole van de baan: een uphill dogleg rechts par 5 door de bomen naar een kleine, beschermde green. De 18e heeft water over een groot deel van de linkerkant vanaf de tee."
         },
         {
           "alt": "Approach naar hole 16 van Son Antem West, par 5 door de bomen, Mallorca",
@@ -7819,7 +7819,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Greenerna"
         },
         {
-          "text": "Sma och ondulerade, och de rullar rent. Hastigheten var bra, inte särskilt snabb, men jamn och arlig. Ytorna var i bra skick for en bana med sa mycket trafik en sondag. Flera greener ar upphojda eller lutar bort från spelaren. Bra att veta före chippen: bollen rullar betydligt längre efter landning an det ser ut. Ett lagre rullande slag ar ofta bättre an att försöka landa något mjukt pa kanten."
+          "text": "Sma och ondulerade, och de rullar rent. Hastigheten var bra, inte särskilt snabb, men jamn och arlig. Ytorna var i bra skick for en bana med sa mycket trafik en sondag. Flera greener ar upphojda eller lutar bort från spelaren. Bra att veta före chippen: bollen rullar betydligt laengre efter landning an det ser ut. Ett lagre rullande slag ar ofta bättre an att försöka landa något mjukt pa kanten."
         },
         {
           "text": "Skick"
@@ -7897,7 +7897,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           ]
         },
         {
-          "text": "7/10. Son Antem West ar en valskott resortbana med bra skick, palitlig service och en layout som passar många spelare. 16 ar basta halet, de tradkantade partierna ar mest engagerande, och djurlivet tillsammans med det öppna landskapet gor miljon bättre an banan ensam. Den passar semestergolfare, blandade grupper och allá som vill ha en trevlig, tillgänglig runda nara Palma. Den ar inte rätt val om du soker en bana som testar dig från borjan till slut. Se hur den passar in bland de andra pa <a href=\"/golf-courses\">hela sidan om Mallorcas golfbanor</a>. Planerar du flera rundor kring den här banan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp timing och logistik."
+          "text": "7/10. Son Antem West ar en valskott resortbana med bra skick, palitlig service och en layout som passar många spelare. 16 ar basta halet, de tradkantade partierna ar mest engagerande, och djurlivet tillsammans med det öppna landskapet gor miljon bättre an banan ensam. Den passar semestergolfare, blandade grupper och alla som vill ha en trevlig, tillgänglig runda nara Palma. Den ar inte rätt val om du soker en bana som testar dig från borjan till slut. Se hur den passar in bland de andra pa <a href=\"/golf-courses\">hela sidan om Mallorcas golfbanor</a>. Planerar du flera rundor kring den här banan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp timing och logistik."
         },
         {
           "text": "Jag tar klienter till Son Antem West pa play-with-a-pro-dagar. Vill du spela den med någon vid din sida?",
@@ -8083,18 +8083,18 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       },
       "blocks": [
         { "caption": "Coaching en el campo en Son Gual. El campo de prácticas le muestra una cosa. El campo de juego muestra algo distinto." },
-        { "text": "Las clases en el campo de prácticas resuelven problemas de campo de prácticas. El coaching en el campo resuelve problemas de golf real. La diferencia importa más de lo que la mayoría créé hasta que ha probado ambas cosas." },
+        { "text": "Las clases en el campo de prácticas resuelven problemas de campo de prácticas. El coaching en el campo resuelve problemas de golf real. La diferencia importa más de lo que la mayoría cree hasta que ha probado ambas cosas." },
         { "text": "Soy PGA Advanced Professional y llevo más de una década enseñando a todos los niveles. Las sesiones que encuentro más efectivas, y de las que los clientes hablan durante más tiempo después, son las que ocurren en el propio campo, en situaciones reales, en condiciones que no se pueden replicar en un campo de prácticas." },
         { "text": "Qué implica realmente el coaching en el campo" },
         { "text": "Jugamos una vuelta juntos. Esa es la estructura. Pero en lugar de solo jugar, trabajamos cada punto de decisión a medida que ocurre: elección de palo con viento cruzado, dónde fallar un green, cómo leer una tirada en pendiente, cuándo arriesgar un carry sobre agua y cuándo quedarse corto. Rutina previa al golpe. Gestión del campo. El juego mental bajo presión." },
-        { "text": "También observo su swing en las condiciones que realmente lo afectan: firmeza del terreno, pendiente, rough, viento. No una base plana de prácticas. Veo cosas en el campo que no vería en el campo de prácticas, y el feedback es inmediatamente relevante porque está a punto de där el siguiente golpe." },
+        { "text": "También observo su swing en las condiciones que realmente lo afectan: firmeza del terreno, pendiente, rough, viento. No una base plana de prácticas. Veo cosas en el campo que no vería en el campo de prácticas, y el feedback es inmediatamente relevante porque está a punto de dar el siguiente golpe." },
         { "text": "A quién le conviene" },
         { "text": "El coaching en el campo funciona bien para una amplia variedad de jugadores. Si juega a un nivel razonable pero siente que su gestión del campo le está frenando, una vuelta conmigo lo abordará directamente. Si está visitando Mallorca y quiere sacar el máximo partido a jugar Son Gual, Alcanada o cualquiera de los otros campos de aquí, es la forma más rápida de mejorar tanto el disfrute como el resultado." },
-        { "text": "También es una muy buena opción para parejas o grupos pequeños. Dos o très jugadores que quieren recibir coaching juntos, en un formato relajado, en un campo que quieren jugar. Así es exactamente como están estructurados los días de Play With A Pro." },
+        { "text": "También es una muy buena opción para parejas o grupos pequeños. Dos o tres jugadores que quieren recibir coaching juntos, en un formato relajado, en un campo que quieren jugar. Así es exactamente como están estructurados los días de Play With A Pro." },
         { "text": "Los campos que usamos" },
         { "text": "La mayoría de los días de Play With A Pro tienen lugar en <a href=\"/guides/son-gual-review\">Son Gual</a>, mi campo más jugado de la isla y una de las mejores pruebas de gestión de campo disponibles aquí. También usamos <a href=\"/guides/alcanada-review\">Alcanada</a> para grupos que quieren la vuelta más espectacular, y otros campos según el nivel del grupo y en qué quieran trabajar." },
         { "text": "Qué se lleva de la experiencia" },
-        { "text": "La mayoría de los jugadores se van con très o cuatro cosas concretas en las que trabajar. No una lista de veinte fallos de swing, sino el puñado de cosas que realmente les cuestan golpes en vueltas reales. También entenderá mejor cómo gestionar un campo de golf: dónde arriesgar, dónde ser conservador, y cómo tomar decisiones bajo presión." },
+        { "text": "La mayoría de los jugadores se van con tres o cuatro cosas concretas en las que trabajar. No una lista de veinte fallos de swing, sino el puñado de cosas que realmente les cuestan golpes en vueltas reales. También entenderá mejor cómo gestionar un campo de golf: dónde arriesgar, dónde ser conservador, y cómo tomar decisiones bajo presión." },
         { "text": "Más allá del coaching, obtiene una vuelta en Mallorca en uno de los campos más destacados de la isla, con alguien que conoce cada hoyo y puede hacer que el día sea genuinamente disfrutable. Esa combinación es la base de la <a href=\"/play-with-a-pro\">experiencia Play With A Pro</a>." },
         { "text": "Una nota sobre las clases en el campo de prácticas" },
         { "text": "También ofrezco sesiones en el campo de prácticas para jugadores que quieren trabajar en elementos técnicos concretos antes de llevarlos al campo. Los dos enfoques funcionan bien juntos. Pero si tiene poco tiempo en Mallorca y quiere la mejora más rápida y práctica en su juego real, el campo es el sitio por donde empezar." },
@@ -8109,7 +8109,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       },
       "blocks": [
         { "caption": "On-Course-Coaching in Son Gual. Die Range zeigt Ihnen eine Sache. Der Platz zeigt etwas anderes." },
-        { "text": "Range-Lektionen lösen Range-Problème. On-Course-Coaching löst Golf-Problème. Der Unterschied ist größer, als die meisten denken, bis sie beides erlebt haben." },
+        { "text": "Range-Lektionen lösen Range-Probleme. On-Course-Coaching löst Golf-Probleme. Der Unterschied ist größer, als die meisten denken, bis sie beides erlebt haben." },
         { "text": "Ich bin PGA Advanced Professional und coache seit über einem Jahrzehnt auf allen Spielstärken. Die Sessions, die ich am effektivsten finde und über die Kunden am längsten sprechen, sind die, die direkt auf dem Platz stattfinden, in echten Situationen, unter Bedingungen, die sich auf der Range nicht nachbilden lassen." },
         { "text": "Was On-Course-Coaching wirklich bedeutet" },
         { "text": "Wir spielen zusammen eine Runde. Das ist der Rahmen. Aber statt nur zu spielen, arbeiten wir jeden Entscheidungspunkt durch, sobald er auftritt: Schlägerwahl bei Seitenwind, wo man das Grün besser verfehlt, wie man eine Hanglage liest, wann man einen Carry über Wasser wagt und wann man kurz spielt. Pre-Shot-Routine. Platzmanagement. Das mentale Spiel unter Druck." },
@@ -8162,9 +8162,9 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       "blocks": [
         { "caption": "On-course coaching bij Son Gual. De driving range laat u het ene zien. De baan laat iets anders zien." },
         { "text": "Lessen op de driving range lossen driving-range-problemen op. On-course coaching lost golfproblemen op. Het verschil is groter dan de meeste mensen beseffen tot ze beide hebben meegemaakt." },
-        { "text": "Ik ben PGA Advanced Professional en coach al meer dan tien jaar op elk niveau. De sessies die ik het meest effectief vind, en waar clienten achteraf het langst över praten, zijn de sessies die op de baan zelf plaatsvinden, in echte situaties, onder omstandigheden die op een oefenveld niet na te bootsen zijn." },
+        { "text": "Ik ben PGA Advanced Professional en coach al meer dan tien jaar op elk niveau. De sessies die ik het meest effectief vind, en waar clienten achteraf het langst over praten, zijn de sessies die op de baan zelf plaatsvinden, in echte situaties, onder omstandigheden die op een oefenveld niet na te bootsen zijn." },
         { "text": "Wat on-course coaching echt inhoudt" },
-        { "text": "We spelen samen een ronde. Dat is de structuur. Maar in plaats van gewoon te spelen, werken we elk beslismoment door zodra het zich voordoet: clubkeuze bij zijwind, waar u een green het beste kunt missen, hoe u een hellende ligging leest, wanneer u een carry över water aandurft en wanneer u kort speelt. Pre-shot routine. Baanmanagement. Het mentale spel onder druk." },
+        { "text": "We spelen samen een ronde. Dat is de structuur. Maar in plaats van gewoon te spelen, werken we elk beslismoment door zodra het zich voordoet: clubkeuze bij zijwind, waar u een green het beste kunt missen, hoe u een hellende ligging leest, wanneer u een carry over water aandurft en wanneer u kort speelt. Pre-shot routine. Baanmanagement. Het mentale spel onder druk." },
         { "text": "Ik kijk ook naar uw swing onder de omstandigheden die hem daadwerkelijk beïnvloeden: bodemhardheid, helling, rough, wind. Geen vlakke oefenmat. Ik zie dingen op de baan die ik op de driving range niet zou zien, en de feedback is direct relevant omdat u zo de volgende slag speelt." },
         { "text": "Voor wie dit geschikt is" },
         { "text": "On-course coaching werkt goed voor een breed scala aan spelers. Als u op een redelijk niveau speelt maar het gevoel heeft dat uw baanmanagement u tegenhoudt, pakt een ronde met mij dat direct aan. Als u Mallorca bezoekt en het meeste uit het spelen van Son Gual, Alcanada of een van de andere banen hier wilt halen, is dit de snelste manier om zowel uw plezier als uw score te verbeteren." },
@@ -8174,7 +8174,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         { "text": "Wat u eraan overhoudt" },
         { "text": "De meeste spelers gaan naar huis met drie of vier concrete punten om aan te werken. Geen lijst van twintig swingfouten, maar de handvol dingen die hen in echte rondes daadwerkelijk slagen kosten. U begrijpt ook beter hoe u een golfbaan managet: waar u risico neemt, waar u voorzichtig bent, en hoe u onder druk beslissingen neemt." },
         { "text": "Naast de coaching krijgt u een ronde op Mallorca op een van de uitstekende banen van het eiland, met iemand die elke hole kent en de dag echt aangenaam kan maken. Die combinatie is waar de <a href=\"/play-with-a-pro\">Play With A Pro ervaring</a> om draait." },
-        { "text": "Een woord över lessen op de driving range" },
+        { "text": "Een woord over lessen op de driving range" },
         { "text": "Ik bied ook sessies op de driving range en oefenfaciliteiten aan voor spelers die aan specifieke technische elementen willen werken voordat ze de baan op gaan. De twee benaderingen werken goed samen. Maar als u weinig tijd heeft op Mallorca en de snelste, meest praktische verbetering van uw echte spel wilt, is on-course de plek om te beginnen." },
         { "text": "Geinteresseerd in een Play With A Pro dag? On-course coaching op een van de beste banen van Mallorca.", "linkLabel": "Bekijk hoe het werkt →" }
       ]
@@ -8188,7 +8188,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
       "blocks": [
         { "caption": "On-course coaching vid Son Gual. Rangen visar dig en sak. Banan visar något annat." },
         { "text": "Lektioner på rangen löser rangeproblem. On-course coaching löser golfproblem. Skillnaden betyder mer än de flesta inser förrän de har provat båda." },
-        { "text": "Jag är PGA Advanced Professional och har coachat i över ett decennium på allá nivåer. De sessioner jag tycker är mest effektiva, och de som klienter pratar om längst efteråt, är de som sker på banan själv, i verkliga situationer, under förhållanden som inte går att återskapa på en övningsbana." },
+        { "text": "Jag är PGA Advanced Professional och har coachat i över ett decennium på alla nivåer. De sessioner jag tycker är mest effektiva, och de som klienter pratar om laengst efteråt, är de som sker på banan själv, i verkliga situationer, under förhållanden som inte går att återskapa på en övningsbana." },
         { "text": "Vad on-course coaching faktiskt innebär" },
         { "text": "Vi spelar en runda tillsammans. Det är strukturen. Men i stället för att bara spela går vi igenom varje beslutspunkt när den uppstår: klubbval i sidvind, var man ska missa en green, hur man läser ett sluttande läge, när man ska ta en carry över vatten och när man ska lägga upp kort. Pre-shot-rutin. Banstrategi. Det mentala spelet under press." },
         { "text": "Jag observerar också din sving under de förhållanden som faktiskt påverkar den: markens hårdhet, lutning, rough, vind. Inte en platt övningsmatta. Jag ser säker på banan som jag inte skulle se på rangen, och feedbacken är direkt relevant eftersom du strax ska slå nästa slag." },

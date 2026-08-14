@@ -8,7 +8,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "De un vistazo",
       "title": "Entienda la oferta antes de consultar.",
       "items": [
-        { "label": "Idéal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
+        { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
         { "label": "Formato", "text": "Un campo, 18 hoyos, elegido según su juego, conmigo a su lado durante toda la vuelta." },
         { "label": "Precios", "text": "Solo desde €695. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
         { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Andy responde personalmente en 24 horas." }
@@ -34,7 +34,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ],
       "quote": "La mayoría de los golfistas se van jugando mejor, con más claridad y entendiendo por qué. Esa última parte es la que suele quedarse.",
       "questionnaireEyebrow": "¿Ya ha reservado?",
-      "questionnaireTitle": "Complète su cuestionario pre-ronda →",
+      "questionnaireTitle": "Complete su cuestionario pre-ronda →",
       "questionnaireBody": "Solo lleva 3 minutos. Me ayuda a adaptar el día a usted antes de llegar al primer tee."
     },
     "included": {
@@ -124,8 +124,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "packages": {
       "eyebrow": "Experiencias y paquetes",
-      "title": "Très maneras de vivir el día.",
-      "body": "Las très son privadas, me tienen a mí como anfitrión y se juegan en uno de los mejores campos de la isla. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte, salvo en la Experiencia Signature, donde todo está incluido.",
+      "title": "Tres maneras de vivir el día.",
+      "body": "Las tres son privadas, me tienen a mí como anfitrión y se juegan en uno de los mejores campos de la isla. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte, salvo en la Experiencia Signature, donde todo está incluido.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -195,7 +195,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "¿Busca algo más grande?",
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
-        "body": "Dos o très días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
+        "body": "Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
         "detail": "Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversacion, cuando el dia tiene forma.",
         "button": "Consultar un viaje de varios días →",
         "href": "/es/contact"
@@ -224,7 +224,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cuál es la diferencia entre los paquetes Solo y Grupo?",
-          "a": "Solo es una sesión privada para un golfista. Los paquetes Grupo son para 2 o 3 golfistas, lo suficientemente pequeño como para poder jugar junto a todos y där atención real a lo largo de la vuelta."
+          "a": "Solo es una sesión privada para un golfista. Los paquetes Grupo son para 2 o 3 golfistas, lo suficientemente pequeño como para poder jugar junto a todos y dar atención real a lo largo de la vuelta."
         },
         {
           "q": "¿Trabaja con juniors?",
@@ -364,7 +364,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Eine tolle Erfahrung. Andy hat alle Aspekte meines Spiels bewertet — Schwungtechnik, Platzmanagement und die mentale Seite — und dabei laufend Anpassungen vorgenommen. Ich habe eine Menge Verbesserungspunkte mitgenommen."
         },
         {
-          "text": "Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon länge kämpfe, hat sich stark verbessert. Ich werde Andy weiterhin als meinen Pro nutzen."
+          "text": "Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon lange kämpfe, hat sich stark verbessert. Ich werde Andy weiterhin als meinen Pro nutzen."
         },
         {
           "text": "Heute Morgen habe ich 18 Löcher mit Andy gespielt. Nach ungefähr 4 Löchern kam er mit seiner Einschätzung und von da an wurde alles angenehmer und die Verbesserung war enorm. Ein bodenständiger Typ, der alles mit Leichtigkeit erklärt und mich so entspannt hat. Kann es kaum erwarten bis zu meiner nächsten Runde am Sonntag."
@@ -600,7 +600,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Couples, amis et petits groupes d'entreprise qui veulent jouer Majorque comme il faut, sans gérer eux-mêmes tee times, transferts ou déjeuner."
         },
         {
-          "title": "Un cadeau qui será vraiment utilise",
+          "title": "Un cadeau qui sera vraiment utilise",
           "text": "La journée fonctionne bien pour un anniversaire important, un départ a la retraite ou une recompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les details prives jusqu au bon moment."
         }
       ]
@@ -891,7 +891,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Andy is uitzonderlijk goed in wat hij doet. Een leuke ronde, fijn gezelschap en echt waardevolle tips die mijn spel tegen het einde verbeterden. Leren van een pro zoals hij op de baan, in echte situaties, is beter dan elke les op de driving range."
         },
         {
-          "text": "Mijn vrouw en ik brachten twee geweldige dagen door met Andy. Hij gaf ons eenvoudige tips die we meteen op de baan konden toepassen en leerde ons beter na te denken över 18 holes. Ook leuk om hem zelf te zien spelen — we boeken volgend jaar weer."
+          "text": "Mijn vrouw en ik brachten twee geweldige dagen door met Andy. Hij gaf ons eenvoudige tips die we meteen op de baan konden toepassen en leerde ons beter na te denken over 18 holes. Ook leuk om hem zelf te zien spelen — we boeken volgend jaar weer."
         }
       ]
     },
@@ -1005,7 +1005,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Welke kwalificaties heeft Andy?",
-          "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon putting-certificering. Mike Adams. US Kids Top 50 Worldwide Instructor. Alle details op de över-pagina."
+          "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon putting-certificering. Mike Adams. US Kids Top 50 Worldwide Instructor. Alle details op de over-pagina."
         },
         {
           "q": "Hoe ver van tevoren moet ik boeken?",
@@ -1134,10 +1134,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna klara och bara behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att prova. Bra att jag gjorde det. Vi jobbade igenom de finare detaljerna i min sving: fast bollkontakt, bättre viktöverföring och mekanik. Även de minsta justeringarna gav konsekventa resultat, och jag är övertygad om att de kommer ta bort 5-10 slag från mitt spel efter bara en session. Andy var helt professionell. Kan inte tacka honom nog."
         },
         {
-          "text": "En fantastisk upplevelse. Andy utvärderade allá delar av mitt spel — swingen, banstrategin och det mentala — och justerade längs vägen. Jag åkte hem med massor av konkreta säker att jobba med."
+          "text": "En fantastisk upplevelse. Andy utvärderade alla delar av mitt spel — swingen, banstrategin och det mentala — och justerade laengs vägen. Jag åkte hem med massor av konkreta säker att jobba med."
         },
         {
-          "text": "Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag länge kämpat med, har förbättrats mycket. Jag kommer fortsätta använda Andy som min pro."
+          "text": "Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag laenge kämpat med, har förbättrats mycket. Jag kommer fortsätta använda Andy som min pro."
         },
         {
           "text": "Jag spelade 18 hål med Andy i morse. Efter ungefär 4 hål kom Andy med sin bedömning och från och med då blev allt roligare och förbättringen var enorm. En jordnära kille som förklarade allt med lätthet och fick mig att känna mig helt avslappnad. Ser fram emot min nästa runda på söndag."
@@ -1146,7 +1146,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Andy är en riktig golfproffs. Jag lärde mig mer på en halv dag med honom än på ett år av att spela själv. Vill du verkligen förbättra ditt spel, gå med Andy."
         },
         {
-          "text": "Andy är exceptionellt duktig på det han gör. En rolig runda, härligt sällskap och riktigt värdefulla tips som förbättrade mitt spel mot slutet. Att lära sig av ett proffs som han ute på banan, i verkliga situationer, slår allá lektioner på rangen."
+          "text": "Andy är exceptionellt duktig på det han gör. En rolig runda, härligt sällskap och riktigt värdefulla tips som förbättrade mitt spel mot slutet. Att lära sig av ett proffs som han ute på banan, i verkliga situationer, slår alla lektioner på rangen."
         },
         {
           "text": "Min fru och jag tillbringade två fantastiska dagar med Andy. Han gav oss enkla tips som vi kunde använda direkt på banan och lärde oss att tänka bättre över 18 hål. Kul att se honom spela också — vi bokar igen nästa år."
@@ -1156,7 +1156,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Upplevelser och paket",
       "title": "Tre sätt att lägga upp dagen.",
-      "body": "Allá tre alternativen är privata, leds av mig och spelas på en av öns bästa banor. Bana, starttid och coaching ingår. Green fees och lunch tillkommer, utom för Signature-upplevelsen där allt ingår.",
+      "body": "Alla tre alternativen är privata, leds av mig och spelas på en av öns bästa banor. Bana, starttid och coaching ingår. Green fees och lunch tillkommer, utom för Signature-upplevelsen där allt ingår.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -1195,7 +1195,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
           "price": "Sur demande",
-          "note": "Allt är ordnat. Allá detaljer bekräftas före dagen.",
+          "note": "Allt är ordnat. Alla detaljer bekräftas före dagen.",
           "features": [
             "Bana, privat starttid och en helt organiserad dag med mig",
             "Aterhamtnings- och sportprestationssession med John Brazier",
@@ -1204,7 +1204,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact",
-          "detailLabel": "Se allá detaljer →"
+          "detailLabel": "Se alla detaljer →"
         },
         {
           "eyebrow": "Reseplanering",
@@ -1239,7 +1239,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         {
           "q": "Ger du lektioner för totala nybörjare?",
-          "a": "Ja. Allá mina sessioner sker på golfbanan, inte på rangen. Med några bra par 3-banor och kortbanor här på Mallorca kan nybörjare börja spela riktigt golf direkt och se vilka färdigheter de behöver utveckla."
+          "a": "Ja. Alla mina sessioner sker på golfbanan, inte på rangen. Med några bra par 3-banor och kortbanor här på Mallorca kan nybörjare börja spela riktigt golf direkt och se vilka färdigheter de behöver utveckla."
         },
         {
           "q": "Behöver jag ta med egna klubbor?",
@@ -1247,7 +1247,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Var exakt äger sessionerna rum på Mallorca?",
-          "a": "På banor runt om på ön, valda utifrån ditt spel. När du hör av dig väljer vi tillsammans det bästa alternativet för din nivå och dina mål."
+          "a": "På banor runt om på ön, valda utifrån ditt spel. När du hoer av dig väljer vi tillsammans det bästa alternativet för din nivå och dina mål."
         },
         {
           "q": "På vilka språk undervisar du?",
@@ -1255,11 +1255,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Vad är skillnaden mellan Solo och Gruppaket?",
-          "a": "Solo är en privat session för en golfare. Gruppaket är för 2 till 3 golfare, litet nog för att jag fortfarande ska kunna spela bredvid allá och ge verklig uppmärksamhet under rundan."
+          "a": "Solo är en privat session för en golfare. Gruppaket är för 2 till 3 golfare, litet nog för att jag fortfarande ska kunna spela bredvid alla och ge verklig uppmärksamhet under rundan."
         },
         {
           "q": "Arbetar du med juniorer?",
-          "a": "Ja. Jag arbetar med juniorer på allá nivåer, inklusive totala nybörjare. Vi anpassar svårighetsgraden på banan så att de lär sig i en riktig golfmiljö utan att bli överväldigade."
+          "a": "Ja. Jag arbetar med juniorer på alla nivåer, inklusive totala nybörjare. Vi anpassar svårighetsgraden på banan så att de lär sig i en riktig golfmiljö utan att bli överväldigade."
         },
         {
           "q": "Vilka kvalifikationer har Andy?",
@@ -1267,7 +1267,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Hur långt i förväg måste jag boka?",
-          "a": "3 till 4 veckor är typiskt, men det finns flexibilitet. Hör av dig så hittar vi något som passar."
+          "a": "3 till 4 veckor är typiskt, men det finns flexibilitet. Hoer av dig så hittar vi något som passar."
         },
         {
           "q": "Är vi ensamma på banan?",
@@ -1281,7 +1281,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "Redo att spela Mallorca på rätt sätt?",
-      "title": "Hör av dig så hjälper jag dig att välja rätt version av dagen.",
+      "title": "Hoer av dig så hjälper jag dig att välja rätt version av dagen.",
       "body": "Berätta vilka datum du har, vilket handicap du spelar på och vad du vill få ut av dagen. Jag återkommer personligen inom 24 timmar med en tydlig rekommendation.",
       "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",

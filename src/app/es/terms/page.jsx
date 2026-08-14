@@ -52,7 +52,7 @@ export default function TermsES() {
               <li>Con menos de 7 días de antelación: se retiene el importe total de la reserva</li>
             </ul>
             <p>Las cancelaciones deben comunicarse por escrito al correo <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a>.</p>
-            <p><strong>Cancelación por nuestra parte:</strong> En el improbable caso de que debamos cancelar (por ejemplo, por enfermedad, condiciones meteorológicas extremas o circunstancias de fuerza mayor), te ofreceremos un reembolso íntegro o una fecha alternativa. No nos hacemos responsables de los gastos adicionales en los que puedas haber incurrido, como vuelos o alojamiento.</p>
+            <p><strong>Cancelación por nuestra parte:</strong> En el improbable caso de que debamos cancelar (por ejemplo, por enfermedad, condiciones meteorológicas extremas o circunstancias de fuerza mayor), te ofreceremos un reembolso íntegro o una fecha alternativa. No nos hacemos responsables de los gastos adicionales en los que puedas haber incurrido, cómo vuelos o alojamiento.</p>
             <p><strong>Condiciones meteorológicas:</strong> El golf es una actividad al aire libre. No cancelamos por lluvia ligera. En caso de tormenta eléctrica, condiciones climatológicas severas o cierre del campo, reprogramaremos la actividad o emitiremos un reembolso según nuestro criterio.</p>
           </section>
 
@@ -72,7 +72,7 @@ export default function TermsES() {
             <h2>6. Normas del campo y green fees</h2>
             <p>Todos los participantes deben cumplir las normas y el código de vestimenta de cada campo visitado. Nos reservamos el derecho de dar por finalizada la experiencia sin reembolso en caso de que un participante sea invitado a abandonar el campo por su conducta.</p>
             <p>Las green fees y demás tasas del campo son adicionales, salvo que se indique expresamente lo contrario en la confirmación de tu reserva. El alquiler de material, el buggy y cualquier comida o bebida personal corren a cargo del participante.</p>
-            <p>En días de mucha afluencia, el campo puede juntar a tu grupo con otros jugadores en la misma hora de salida. Esta decisión corresponde al club y queda fuera de nuestro control. Siempre intentamos reservar una hora de salida que haga la vuelta lo más personal posible. Si prefieres que la salida quede reservada solo para tu grupo, podemos gestionar las plazas restantes con un coste adicional, confirmado antes de reservar. Las reservas de Signature Day incluyen una hora de salida privada de forma estándar.</p>
+            <p>En días de mucha afluencia, el campo puede juntar a tu grupo con otros jugadores en la misma hora de salida. Está decisión corresponde al club y queda fuera de nuestro control. Siempre intentamos reservar una hora de salida que haga la vuelta lo más personal posible. Si prefieres que la salida quede reservada solo para tu grupo, podemos gestionar las plazas restantes con un coste adicional, confirmado antes de reservar. Las reservas de Signature Day incluyen una hora de salida privada de forma estándar.</p>
           </section>
 
           <section className="legal-section">
@@ -105,7 +105,7 @@ export default function TermsES() {
 
           <section className="legal-section">
             <h2>11. Modificaciones de estos términos</h2>
-            <p>Podemos actualizar estos términos periódicamente. La fecha que figura al inicio de esta página refleja la última revisión. Las reservas confirmadas antes de cualquier modificación se regirán por los términos vigentes en el momento de la reserva.</p>
+            <p>Podemos actualizar estos términos periódicamente. La fecha que figura al inicio de está página refleja la última revisión. Las reservas confirmadas antes de cualquier modificación se regirán por los términos vigentes en el momento de la reserva.</p>
           </section>
 
           <section className="legal-section">

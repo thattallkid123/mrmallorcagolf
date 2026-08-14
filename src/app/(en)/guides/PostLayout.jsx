@@ -3,7 +3,7 @@ import { getGuidePath, isPublishedGuideSlug } from '../../../lib/site'
 const SIDEBAR_COPY = {
   en: { experience: 'Plan Your Trip', h3: 'Want this course in a Mallorca golf itinerary that actually makes sense?', guidesTitle: 'Want this course in a Mallorca golf itinerary that actually makes sense?', p: 'Start with the itinerary planner, then add a Play With A Pro day if it improves the trip.', guidesBody: 'Start with the itinerary planner, then add a Play With A Pro day if it improves the trip.', seeExp: 'Play With A Pro', guidesPrimaryCta: 'Play With A Pro', contact: 'Plan Your Trip', guidesSecondaryCta: 'Plan Your Trip', moreGuides: 'More Guides', allGuides: 'All guides', home: 'Home', guidesLabel: 'Guides' },
   de: { experience: 'Das Erlebnis', h3: 'Spielen Sie einen dieser Plätze mit einem PGA Professional an Ihrer Seite.', guidesTitle: 'Spielen Sie einen dieser Plätze mit einem PGA Professional an Ihrer Seite.', p: 'Golftage auf Son Gual, Alcanada und mehr. Alles arrangiert. Coaching auf dem Platz.', guidesBody: 'Golftage auf Son Gual, Alcanada und mehr. Alles arrangiert. Coaching auf dem Platz.', seeExp: 'Erlebnisse entdecken', guidesPrimaryCta: 'Erlebnisse entdecken', contact: 'Kontakt aufnehmen', guidesSecondaryCta: 'Kontakt aufnehmen', moreGuides: 'Weitere Ratgeber', allGuides: 'Alle Ratgeber', home: 'Startseite', guidesLabel: 'Ratgeber' },
-  fr: { experience: "L'Expérience", h3: "Jouez l'un de ces parcours avec un professionnel PGA à vos côtés.", guidesTitle: "Jouez l'un de ces parcours avec un professionnel PGA à vos côtés.", p: 'Journées de golf sur Son Gual, Alcanada et ailleurs. Tout organisé. Coaching sur le parcours.', guidesBody: 'Journées de golf sur Son Gual, Alcanada et ailleurs. Tout organisé. Coaching sur le parcours.', seeExp: 'Voir les expériences', guidesPrimaryCta: 'Voir les expériences', contact: 'Prendre contact', guidesSecondaryCta: 'Prendre contact', moreGuides: 'Plus de guides', allGuides: 'Tous les guides', home: 'Accueil', guidesLabel: 'Guides' },
+  fr: { expérience: "L'Expérience", h3: "Jouez l'un de ces parcours avec un professionnel PGA à vos côtés.", guidesTitle: "Jouez l'un de ces parcours avec un professionnel PGA à vos côtés.", p: 'Journées de golf sur Son Gual, Alcanada et ailleurs. Tout organisé. Coaching sur le parcours.', guidesBody: 'Journées de golf sur Son Gual, Alcanada et ailleurs. Tout organisé. Coaching sur le parcours.', seeExp: 'Voir les expériences', guidesPrimaryCta: 'Voir les expériences', contact: 'Prendre contact', guidesSecondaryCta: 'Prendre contact', moreGuides: 'Plus de guides', allGuides: 'Tous les guides', home: 'Accueil', guidesLabel: 'Guides' },
   es: { experience: 'La Experiencia', h3: 'Juegue uno de estos campos con un profesional PGA a su lado.', guidesTitle: 'Juegue uno de estos campos con un profesional PGA a su lado.', p: 'Días de golf en Son Gual, Alcanada y más. Todo organizado. Coaching en el campo.', guidesBody: 'Días de golf en Son Gual, Alcanada y más. Todo organizado. Coaching en el campo.', seeExp: 'Ver las experiencias', guidesPrimaryCta: 'Ver las experiencias', contact: 'Ponerse en contacto', guidesSecondaryCta: 'Ponerse en contacto', moreGuides: 'Más guías', allGuides: 'Todas las guías', home: 'Inicio', guidesLabel: 'Guías' },
   zh: { experience: '体验项目', h3: '与 PGA 职业球手同场竞技，在这些球场享受高尔夫的一天。', guidesTitle: '与 PGA 职业球手同场竞技，在这些球场享受高尔夫的一天。', p: '在 Son Gual、Alcanada 等球场享受高尔夫的一天。全程安排，球场实地指导。', guidesBody: '在 Son Gual、Alcanada 等球场享受高尔夫的一天。全程安排，球场实地指导。', seeExp: '了解体验项目', guidesPrimaryCta: '了解体验项目', contact: '联系我们', guidesSecondaryCta: '联系我们', moreGuides: '更多指南', allGuides: '所有指南', home: '首页', guidesLabel: '指南' },
   sv: { experience: 'Upplevelsen', h3: 'Spela en av dessa banor med ett PGA-proffs vid din sida.', guidesTitle: 'Spela en av dessa banor med ett PGA-proffs vid din sida.', p: 'Golfdagar på Son Gual, Alcanada och mer. Allt arrangerat. Coaching på banan.', guidesBody: 'Golfdagar på Son Gual, Alcanada och mer. Allt arrangerat. Coaching på banan.', seeExp: 'Se upplevelserna', guidesPrimaryCta: 'Se upplevelserna', contact: 'Hör av dig', guidesSecondaryCta: 'Hör av dig', moreGuides: 'Fler guider', allGuides: 'Alla guider', home: 'Hem', guidesLabel: 'Guider' },
@@ -35,7 +35,7 @@ const SIDEBAR_PLANNING = {
   },
   es: {
     title: 'Convierta este campo en un viaje que tenga sentido.',
-    body: 'Envieme sus fechas, handicap, zona de hotel y lista corta. Le dire donde encaja este campo y que deberia acompanar esa decision.',
+    body: 'Envíeme sus fechas, handicap, zona de hotel y lista corta. Le dire donde encaja este campo y que debería acompanar esa decisión.',
     primary: 'Planificar viaje',
     secondary: 'Play With A Pro',
   },
@@ -53,7 +53,7 @@ const SIDEBAR_PLANNING = {
   },
   sv: {
     title: 'Gor den har banan till en resa som hanger ihop.',
-    body: 'Skicka dina datum, ditt handicap, hotellomrade och din kortlista. Jag visar var den har banan passar in bast.',
+    body: 'Skicka dina datum, ditt handicap, hotellomrade och din kortlista. Jag visar var den har banan passar in bäst.',
     primary: 'Planera resan',
     secondary: 'Play With A Pro',
   },

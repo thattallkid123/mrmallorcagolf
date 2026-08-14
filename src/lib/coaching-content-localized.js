@@ -60,7 +60,7 @@ export const COACHING_LOCALIZED_CONTENT = {
     },
     "how": {
       "eyebrow": "Cómo funciona",
-      "title": "Très fases. Una sesión construida alrededor de los golpes que sí cuentan.",
+      "title": "Tres fases. Una sesión construida alrededor de los golpes que sí cuentan.",
       "body": "Jugamos juntos en el campo. El coaching sucede en tiempo real y el feedback es práctico, honesto y específico a lo que tiene delante.",
       "steps": [
         {
@@ -368,7 +368,7 @@ export const COACHING_LOCALIZED_CONTENT = {
         },
         {
           "title": "De snelste winst vinden",
-          "text": "De meeste golfers verbeteren sneller via één of twee kleine doorbraken dan via een complète rebuild."
+          "text": "De meeste golfers verbeteren sneller via één of twee kleine doorbraken dan via een complete rebuild."
         }
       ]
     },
@@ -461,7 +461,7 @@ export const COACHING_LOCALIZED_CONTENT = {
         },
         {
           "title": "Läsa greener och lutningar",
-          "text": "Att putta och chippa på en riktig green är något helt annat än på en övningsgreen. Fart, lutning, grain och press spelar allá in."
+          "text": "Att putta och chippa på en riktig green är något helt annat än på en övningsgreen. Fart, lutning, grain och press spelar alla in."
         },
         {
           "title": "Spela i vind",
@@ -520,10 +520,10 @@ export const COACHING_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "Redo att spela bättre?",
-      "title": "Hör av dig om du vill prata om en session.",
+      "title": "Hoer av dig om du vill prata om en session.",
       "body": "Berätta var ditt spel står i dag och vad du vill få ut av det. Jag bygger sessionen runt det.",
       "primaryCta": "Kontakta mig →",
-      "secondaryCta": "Se allá upplevelser"
+      "secondaryCta": "Se alla upplevelser"
     }
   },
   "zh": {

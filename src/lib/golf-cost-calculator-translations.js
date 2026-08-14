@@ -286,7 +286,7 @@ export const GOLF_COST_CALCULATOR_T = {
     quote: {
       cta: 'Constructor de cotización de viaje',
       title: 'Obtén una cotización real de Andy',
-      body: 'Tus respuestas ya están completas. Agrega tu correo electrónico y fechas, y Andy convertirá esta estimación en una cotización real y reservable.',
+      body: 'Tus respuestas ya están completas. Agrega tu correo electrónico y fechas, y Andy convertirá está estimación en una cotización real y reservable.',
       button: 'Obtén mi cotización personal',
       note: 'Sin obligación. Un correo electrónico de Andy personalmente.',
       prefMessage: '¿Prefieres mensajes? WhatsApp a Andy',

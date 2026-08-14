@@ -262,7 +262,7 @@ export const GOLF_DAY_BUILDER_T = {
       tabs: {
         efficient: 'Journée de golf efficace',
         lunch: 'Golf et long déjeuner',
-        experience: 'Expérience complète',
+        expérience: 'Expérience complète',
       },
     },
     timeline: {
