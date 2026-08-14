@@ -1,6 +1,13 @@
 # MMG Skills Sync Script
 # Syncs Drive-mastered MMG_SKILL_* knowledge skills to Claude when matching
 # folders exist. Repo code-workflow skills remain git-mastered separately.
+#
+# Naming rule: every Claude target below must carry an unambiguous "mmg-"
+# (or clearly MMG-branded) prefix. On 2026-08-14 the generic target
+# "seo-content" collided with an unrelated pre-existing SEO-plugin skill of
+# the same name and silently overwrote it — this script only checks whether
+# a target folder exists, not whether it's the right one. Never add a bare
+# generic name (e.g. "seo-content", "repurpose", "content-pipeline") here.
 
 $ErrorActionPreference = "Stop"
 
@@ -18,19 +25,19 @@ $claude = Join-Path $env:USERPROFILE ".claude\skills"
 $claudeMdPath = Join-Path $PSScriptRoot "CLAUDE.md"
 
 $skills = @(
-    @{Drive="MMG_SKILL_BLOG_WRITING.md"; Claude="blog-writing"},
-    @{Drive="MMG_SKILL_SEO_CONTENT.md"; Claude="seo-content"},
+    @{Drive="MMG_SKILL_BLOG_WRITING.md"; Claude="mmg-blog-writing"},
+    @{Drive="MMG_SKILL_SEO_CONTENT.md"; Claude="mmg-seo-content"},
     @{Drive="MMG_SKILL_SOCIAL_MEDIA.md"; Claude="social-media-mmg"},
     @{Drive="MMG_SKILL_CAROUSEL.md"; Claude="mr-mallorca-golf-carousel"},
-    @{Drive="MMG_SKILL_CHINESE_CONTENT.md"; Claude="chinese-content"},
-    @{Drive="MMG_SKILL_CONTENT_PIPELINE.md"; Claude="content-pipeline"},
+    @{Drive="MMG_SKILL_CHINESE_CONTENT.md"; Claude="mmg-chinese-content"},
+    @{Drive="MMG_SKILL_CONTENT_PIPELINE.md"; Claude="mmg-content-pipeline"},
     @{Drive="MMG_SKILL_FRONTEND_DESIGN.md"; Claude="frontend-design-mmg"},
     @{Drive="MMG_SKILL_NEXTJS.md"; Claude="nextjs-mrmallorcagolf"},
     @{Drive="MMG_SKILL_BUSINESS_OPERATIONS.md"; Claude="mmg-business-operations"},
     @{Drive="MMG_SKILL_PARTNERSHIPS.md"; Claude="mmg-partnerships"},
-    @{Drive="MMG_SKILL_REPURPOSE.md"; Claude="repurpose"},
-    @{Drive="MMG_SKILL_CHINESE_BACKLOG.md"; Claude="chinese-backlog"},
-    @{Drive="MMG_SKILL_EMAIL_MANAGEMENT.md"; Claude="email-management"},
+    @{Drive="MMG_SKILL_REPURPOSE.md"; Claude="mmg-repurpose"},
+    @{Drive="MMG_SKILL_CHINESE_BACKLOG.md"; Claude="mmg-chinese-backlog"},
+    @{Drive="MMG_SKILL_EMAIL_MANAGEMENT.md"; Claude="mmg-email-management"},
     @{Drive="MMG_SKILL_SITE_OPERATIONS_MMG.md"; Claude="site-operations-mmg"},
     @{Drive="MMG_SKILL_AUTONOMO_FILING.md"; Claude="mmg-autonomo-filing"},
     @{Drive="MMG_SKILL_CLIENT_DOCS.md"; Claude="mmg-client-docs"},
