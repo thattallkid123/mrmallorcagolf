@@ -5,6 +5,12 @@ description: Process and add photos to the site — client photos (Andy with cli
 
 # Adding Photos To The Site
 
+## Before processing: check it isn't already live
+
+The same source photo can already be on the site under a generic filename/caption that doesn't mention the client by name (e.g. a group shot got added early on as `son-antem-west-4.webp` with alt text "Andy with two guests..." — a session later almost re-processed and re-added the identical photo as a new file because nothing in the filename said whose photo it was). Before processing a new client photo:
+1. Compare the source file's size against everything in `public/images/` (`ls -la` both, look for exact/near matches) — reprocessing changes bytes slightly, so also visually check any same-course same-era candidates.
+2. If it's already there, just fix the alt text/caption to name the client — don't add a duplicate file.
+
 ## Processing rules (no exceptions)
 
 - **`ImageOps.exif_transpose(img)` (Pillow) on EVERY photo first.** Applies pixel rotation from the EXIF tag. Skipping it ships sideways photos.

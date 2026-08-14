@@ -10,10 +10,11 @@ export async function GET(request) {
   const imageParam = searchParams.get('image') || ''
 
   const requestOrigin = new URL(request.url).origin
-  const isJpegOrPng = /\.(jpe?g|png)$/i.test(imageParam)
-  const bgImageUrl = imageParam && isJpegOrPng
-    ? imageParam.startsWith('http') ? imageParam : `${requestOrigin}${imageParam}`
-    : null
+  // Only ever fetch same-origin image assets — image was previously allowed to be
+  // any absolute http(s) URL, which let a caller make this endpoint fetch arbitrary
+  // hosts (SSRF) and dress up a phishing card with the site's real OG domain.
+  const isSameOriginImagePath = /^\/[^/].*\.(jpe?g|png)$/i.test(imageParam)
+  const bgImageUrl = isSameOriginImagePath ? `${requestOrigin}${imageParam}` : null
 
   const logoUrl = `${requestOrigin}/MMG_Logo_White_Transparent.png`
 

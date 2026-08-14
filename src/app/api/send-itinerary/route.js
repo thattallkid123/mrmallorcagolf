@@ -182,7 +182,9 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Payload too large' }, { status: 413 })
   }
 
-  if (!await checkRateLimit(getClientKey(request, 'send-itinerary'), 10, 10 * 60 * 1000)) {
+  // Lower than the other tool endpoints: this one sends mail from andy@mrmallorcagolf.com
+  // to a caller-supplied address, so it's the one most worth throttling hard.
+  if (!await checkRateLimit(getClientKey(request, 'send-itinerary'), 5, 10 * 60 * 1000)) {
     return NextResponse.json({ error: 'Too many requests. Please wait a few minutes and try again.' }, { status: 429 })
   }
 

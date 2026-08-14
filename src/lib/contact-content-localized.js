@@ -25,6 +25,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "eyebrow": "Formulario de consulta",
       "title": "Empecemos la conversación.",
       "intro": "Elija en qué necesita ayuda y envíeme los detalles que ya tenga.",
+      "sendPromptLabel": "Qué enviar",
       "labels": {
         "fname": "Nombre",
         "lname": "Apellido",
@@ -98,9 +99,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
       ],
       "submit": "Enviar consulta →",
       "note": "Respondo personalmente a cada consulta en 24 horas. Sus datos se usan solo para organizar su jornada.",
-      "experienceHelpTitle": "Que opcion le encaja?",
-      "experienceHelp": "Elija la opcion mas cercana y yo afinare el resto con usted. Planificacion de viaje significa que organizo la ruta, los campos y la logica alrededor de sus fechas y su grupo. Play With A Pro significa que Andy estara con usted en el campo. Si todavia no lo tiene claro, elija la opcion de duda y yo le orientare.",
-      "sendPrompt": "Mejor enviar: fechas, tamano del grupo, zona de hotel, handicap y los campos que ya tenga en mente."
+      "experienceHelpTitle": "¿Qué opción le encaja?",
+      "experienceHelp": "Elija la opción más cercana y yo afinaré el resto con usted. Planificación de viaje significa que organizo la ruta, los campos y la lógica alrededor de sus fechas y su grupo. Play With A Pro significa que Andy estará con usted en el campo. Si todavía no lo tiene claro, elija la opción de duda y yo le orientaré.",
+      "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, zona de hotel, hándicap y los campos que ya tenga en mente."
     },
     "gift": {
       "heading": "¿Es un regalo?",
@@ -116,8 +117,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "dateCta": "Dígame sus fechas",
     "trust": {
-      "eyebrow": "Por que la gente consulta",
-      "quote": "Despues de solo 18 hoyos juntos, he descubierto un nuevo techo para mi potencial.",
+      "eyebrow": "Por qué la gente consulta",
+      "quote": "Después de solo 18 hoyos juntos, he descubierto un nuevo techo para mi potencial.",
       "credit": "Jo, cliente de Play With A Pro"
     }
   },
@@ -144,6 +145,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "eyebrow": "Anfrageformular",
       "title": "Beginnen wir das Gespräch.",
       "intro": "Wählen Sie, wobei Sie Hilfe brauchen, und schicken Sie mir dann, was Sie schon wissen.",
+      "sendPromptLabel": "Was Sie senden sollten",
       "labels": {
         "fname": "Vorname",
         "lname": "Nachname",
@@ -218,8 +220,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "submit": "Anfrage senden →",
       "note": "Ich beantworte jede Anfrage persönlich innerhalb von 24 Stunden. Ihre Angaben nutze ich nur, um Ihren Tag zu planen.",
       "experienceHelpTitle": "Welche Option passt?",
-      "experienceHelp": "Waehlen Sie die naechste passende Option und ich verfeinere den Rest mit Ihnen. Reiseplanung bedeutet, dass ich Ablauf, Plaetze und Logik rund um Ihre Daten und Gruppe aufbaue. Play With A Pro bedeutet, dass Andy mit Ihnen auf dem Platz ist. Wenn Sie noch unsicher sind, waehlen Sie die unsichere Option und ich leite Sie in die richtige Richtung.",
-      "sendPrompt": "Am besten senden: Daten, Gruppengroesse, Hotelregion, Handicap und alle Plaetze, die schon auf Ihrer Liste stehen."
+      "experienceHelp": "Wählen Sie die nächste passende Option und ich verfeinere den Rest mit Ihnen. Reiseplanung bedeutet, dass ich Ablauf, Plätze und Logik rund um Ihre Daten und Gruppe aufbaue. Play With A Pro bedeutet, dass Andy mit Ihnen auf dem Platz ist. Wenn Sie noch unsicher sind, wählen Sie die unsichere Option und ich leite Sie in die richtige Richtung.",
+      "sendPrompt": "Am besten senden: Daten, Gruppengröße, Hotelregion, Handicap und alle Plätze, die schon auf Ihrer Liste stehen."
     },
     "gift": {
       "heading": "Schenken Sie diesen Tag?",
@@ -236,7 +238,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "dateCta": "Meine Daten mitteilen",
     "trust": {
       "eyebrow": "Warum Menschen anfragen",
-      "quote": "Nach nur 18 Loechern zusammen habe ich eine neue Grenze meines Potenzials entdeckt.",
+      "quote": "Nach nur 18 Löchern zusammen habe ich eine neue Grenze meines Potenzials entdeckt.",
       "credit": "Jo, Play With A Pro Kunde"
     }
   },
@@ -263,6 +265,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "eyebrow": "Formulaire de contact",
       "title": "Commençons la conversation.",
       "intro": "Choisissez ce pour quoi vous avez besoin d'aide, puis envoyez-moi les détails que vous connaissez déjà.",
+      "sendPromptLabel": "Ce qu'il faut envoyer",
       "labels": {
         "fname": "Prénom",
         "lname": "Nom",
@@ -325,7 +328,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ],
         [
           "signature-day",
-          "La Journee Andy Complete",
+          "La Journée Andy Complète",
           "Sur demande"
         ],
         [
@@ -337,8 +340,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "submit": "Envoyer la demande →",
       "note": "Je réponds personnellement à chaque demande sous 24 heures. Vos coordonnées servent uniquement à organiser votre journée.",
       "experienceHelpTitle": "Quelle option vous correspond ?",
-      "experienceHelp": "Choisissez l option la plus proche et j affine le reste avec vous. La planification de voyage signifie que je construis le parcours, la logique et le rythme autour de vos dates et de votre groupe. Play With A Pro signifie qu Andy sera sur le parcours avec vous. Si vous n etes pas encore certain, choisissez l option d hesitation et je vous orienterai.",
-      "sendPrompt": "Idealement : dates, taille du groupe, zone d hotel, niveau et parcours deja envisages."
+      "experienceHelp": "Choisissez l'option la plus proche et j'affine le reste avec vous. La planification de voyage signifie que je construis le parcours, la logique et le rythme autour de vos dates et de votre groupe. Play With A Pro signifie qu'Andy sera sur le parcours avec vous. Si vous n'êtes pas encore certain, choisissez l'option d'hésitation et je vous orienterai.",
+      "sendPrompt": "Idéalement : dates, taille du groupe, zone d'hôtel, niveau et parcours déjà envisagés."
     },
     "gift": {
       "heading": "Vous offrez cette journée ?",
@@ -355,7 +358,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "dateCta": "Dites-moi vos dates",
     "trust": {
       "eyebrow": "Pourquoi les gens prennent contact",
-      "quote": "Apres seulement 18 trous ensemble, j ai decouvert un nouveau plafond a mon potentiel.",
+      "quote": "Après seulement 18 trous ensemble, j'ai découvert un nouveau plafond à mon potentiel.",
       "credit": "Jo, client Play With A Pro"
     }
   },
@@ -382,6 +385,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "eyebrow": "Aanvraagformulier",
       "title": "Laten we het gesprek beginnen.",
       "intro": "Kies waarmee u hulp wilt, en stuur dan de details die u al weet.",
+      "sendPromptLabel": "Wat te sturen",
       "labels": {
         "fname": "Voornaam",
         "lname": "Achternaam",
@@ -501,6 +505,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "eyebrow": "Förfrågan",
       "title": "Låt oss börja samtalet.",
       "intro": "Välj vad du behöver hjälp med och skicka sedan de detaljer du redan har.",
+      "sendPromptLabel": "Vad du bör skicka",
       "labels": {
         "fname": "Förnamn",
         "lname": "Efternamn",
@@ -564,7 +569,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "signature-day",
           "Den Fullständiga Andy-dagen",
-          "Pa forfragan"
+          "På förfrågan"
         ],
         [
           "not-sure",
@@ -574,9 +579,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
       ],
       "submit": "Skicka förfrågan →",
       "note": "Jag svarar personligen på varje förfrågan inom 24 timmar. Dina uppgifter används bara för att planera din dag.",
-      "experienceHelpTitle": "Vilket upplagg passar bast?",
-      "experienceHelp": "Valj det alternativ som ligger narmast och sa finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplagget runt dina datum och din grupp. Play With A Pro betyder att Andy ar med dig ute pa banan. Om du inte ar saker annu, valj det osakra alternativet sa pekar jag dig ratt.",
-      "sendPrompt": "Skicka garna: datum, gruppstorlek, hotellomrade, handicap och banor ni redan funderar pa."
+      "experienceHelpTitle": "Vilket upplägg passar bäst?",
+      "experienceHelp": "Välj det alternativ som ligger närmast så finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplägget runt dina datum och din grupp. Play With A Pro betyder att Andy är med dig ute på banan. Om du inte är säker ännu, välj det osäkra alternativet så pekar jag dig rätt.",
+      "sendPrompt": "Skicka gärna: datum, gruppstorlek, hotellområde, handicap och banor ni redan funderar på."
     },
     "gift": {
       "heading": "Köper du detta som en present?",
@@ -592,8 +597,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "dateCta": "Berätta dina datum",
     "trust": {
-      "eyebrow": "Varfor folk hor av sig",
-      "quote": "Efter bara 18 hal tillsammans upptackte jag ett nytt tak for min potential.",
+      "eyebrow": "Varför folk hör av sig",
+      "quote": "Efter bara 18 hål tillsammans upptäckte jag ett nytt tak för min potential.",
       "credit": "Jo, Play With A Pro-kund"
     }
   },

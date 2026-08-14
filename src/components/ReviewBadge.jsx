@@ -11,7 +11,8 @@ const REVIEW_BADGE_TEXT = {
     ratedByGolfers: 'Rated by golfers on Google',
     ratedByGolfersAriaLabel: 'Rated {rating} out of 5 by golfers on Google, {count} reviews',
     ratedAriaLabel: 'Rated {rating} out of 5 on Google, {count} reviews',
-    ratedLine: 'Rated {rating} by golfers on Google {count} reviews',
+    ratedLineBefore: 'Rated ',
+    ratedLineAfter: ' by golfers on Google',
     onGoogle: 'on Google',
     reviews: 'reviews',
   },
@@ -19,7 +20,8 @@ const REVIEW_BADGE_TEXT = {
     ratedByGolfers: 'Von Golfern auf Google bewertet',
     ratedByGolfersAriaLabel: 'Mit {rating} von 5 Sternen von Golfern auf Google bewertet, {count} Bewertungen',
     ratedAriaLabel: 'Mit {rating} von 5 Sternen auf Google bewertet, {count} Bewertungen',
-    ratedLine: 'Mit {rating} Sternen von Golfern auf Google bewertet {count} Bewertungen',
+    ratedLineBefore: 'Mit ',
+    ratedLineAfter: ' Sternen von Golfern auf Google bewertet',
     onGoogle: 'auf Google',
     reviews: 'Bewertungen',
   },
@@ -27,7 +29,8 @@ const REVIEW_BADGE_TEXT = {
     ratedByGolfers: 'Puntuado por golfistas en Google',
     ratedByGolfersAriaLabel: 'Puntuado con {rating} de 5 estrellas por golfistas en Google, {count} reseñas',
     ratedAriaLabel: 'Puntuado con {rating} de 5 estrellas en Google, {count} reseñas',
-    ratedLine: 'Puntuado con {rating} estrellas por golfistas en Google {count} reseñas',
+    ratedLineBefore: 'Puntuado con ',
+    ratedLineAfter: ' estrellas por golfistas en Google',
     onGoogle: 'en Google',
     reviews: 'reseñas',
   },
@@ -35,7 +38,8 @@ const REVIEW_BADGE_TEXT = {
     ratedByGolfers: 'Noté par les golfeurs sur Google',
     ratedByGolfersAriaLabel: 'Noté {rating} sur 5 par les golfeurs sur Google, {count} avis',
     ratedAriaLabel: 'Noté {rating} sur 5 sur Google, {count} avis',
-    ratedLine: 'Noté {rating} par les golfeurs sur Google {count} avis',
+    ratedLineBefore: 'Noté ',
+    ratedLineAfter: ' sur 5 par les golfeurs sur Google',
     onGoogle: 'sur Google',
     reviews: 'avis',
   },
@@ -43,7 +47,8 @@ const REVIEW_BADGE_TEXT = {
     ratedByGolfers: 'Beoordeeld door golfspelers op Google',
     ratedByGolfersAriaLabel: 'Beoordeeld met {rating} van 5 sterren door golfspelers op Google, {count} recensies',
     ratedAriaLabel: 'Beoordeeld met {rating} van 5 sterren op Google, {count} recensies',
-    ratedLine: 'Beoordeeld met {rating} sterren door golfspelers op Google {count} recensies',
+    ratedLineBefore: 'Beoordeeld met ',
+    ratedLineAfter: ' sterren door golfspelers op Google',
     onGoogle: 'op Google',
     reviews: 'recensies',
   },
@@ -51,7 +56,8 @@ const REVIEW_BADGE_TEXT = {
     ratedByGolfers: 'Betygsatt av golfspelare på Google',
     ratedByGolfersAriaLabel: 'Betygsatt {rating} av 5 stjärnor av golfspelare på Google, {count} recensioner',
     ratedAriaLabel: 'Betygsatt {rating} av 5 stjärnor på Google, {count} recensioner',
-    ratedLine: 'Betygsatt {rating} stjärnor av golfspelare på Google {count} recensioner',
+    ratedLineBefore: 'Betygsatt ',
+    ratedLineAfter: ' av 5 stjärnor av golfspelare på Google',
     onGoogle: 'på Google',
     reviews: 'recensioner',
   },
@@ -59,7 +65,8 @@ const REVIEW_BADGE_TEXT = {
     ratedByGolfers: '高尔夫球手在 Google 上的评分',
     ratedByGolfersAriaLabel: '在 Google 上获得{rating}颗星（满分5颗），共{count}条高尔夫球手的评价',
     ratedAriaLabel: '在 Google 上获得{rating}颗星（满分5颗），共{count}条评价',
-    ratedLine: '在 Google 上获得{rating}颗星{count}条高尔夫球手的评价',
+    ratedLineBefore: '',
+    ratedLineAfter: '，高尔夫球手在 Google 上的评分',
     onGoogle: '在 Google 上',
     reviews: '评价',
   },
@@ -167,8 +174,7 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark', local
       >
         <Stars rating={REVIEW_RATING} size={15} />
         <span className="review-text__line">
-          Rated <span className="review-text__score">{ratingLabel}</span> by golfers on{' '}
-          <span className="review-text__brand">Google</span>
+          {text.ratedLineBefore}<span className="review-text__score">{ratingLabel}</span>{text.ratedLineAfter}
           <span className="review-text__count"> · {REVIEW_COUNT} {text.reviews}</span>
         </span>
       </a>

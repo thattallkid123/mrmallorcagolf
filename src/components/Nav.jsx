@@ -164,6 +164,8 @@ export default function Nav({ transparent = false, lang }) {
           </li>
         </ul>
 
+        <Link href={config.cta.href} prefetch={false} className="nav__cta nav__cta--mobile"><span>{config.cta.label}</span></Link>
+
         <button
           className={`nav__hamburger${menuOpen ? ' open' : ''}`}
           onClick={() => setMenuOpen((m) => !m)}

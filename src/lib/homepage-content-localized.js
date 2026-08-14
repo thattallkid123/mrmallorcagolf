@@ -62,7 +62,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "items": [
         {
           "title": "Jugar una vuelta conmigo",
-          "text": "Reserve un día conmigo: un campo, 18 hoyos, gestión del campo y coaching integrado en la vuelta. Solo o en grupo.",
+          "text": "Réservé un día conmigo: un campo, 18 hoyos, gestión del campo y coaching integrado en la vuelta. Solo o en grupo.",
           "cta": "Play With A Pro"
         },
         {
@@ -79,7 +79,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "how": {
       "eyebrow": "Cómo funciona",
-      "title": "Tres pasos sencillos.",
+      "title": "Très pasos sencillos.",
       "steps": [
         {
           "title": "Escríbame",
@@ -268,7 +268,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "¿Busca algo más grande?",
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
-        "body": "Signature Day - un dia privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio segun el dia.",
+        "body": "Signature Day - un dia privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio según el dia.",
         "cta": "Consultar un viaje de varios días",
         "href": "/es/contact",
         "detail": "Desde €2.000. Escríbame con sus fechas y le propondré una opción a su medida.",
@@ -611,7 +611,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Bieten Sie Golfunterricht oder Coaching auf Mallorca an?",
-          "a": "Ja. Am sinnvollsten ist Coaching direkt auf dem Platz statt einer isolierten Range-Stunde: Schlaegerwahl, Strategie, Entscheidungen und die Schwungmuster, die waehrend einer echten Runde auftauchen."
+          "a": "Ja. Am sinnvollsten ist Coaching direkt auf dem Platz statt einer isolierten Range-Stunde: Schlägerwahl, Strategie, Entscheidungen und die Schwungmuster, die während einer echten Runde auftauchen."
         },
         {
           "q": "Wie buche ich?",
@@ -916,7 +916,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "Vous cherchez quelque chose de plus ambitieux ?",
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
-        "body": "Signature Day - une journee de golf privee avec Andy, John Brazier, des transferts prives et une soiree coordonnee. Tarif adapte a la journee.",
+        "body": "Signature Day - une journée de golf privee avec Andy, John Brazier, des transferts prives et une soiree coordonnee. Tarif adapte a la journée.",
         "cta": "Demander un séjour sur plusieurs jours",
         "href": "/fr/contact",
         "detail": "À partir de 2 000 €. Envoyez-moi vos dates et je vous proposerai une version adaptée.",
@@ -1043,7 +1043,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "title": "Ik vergelijk banen",
-          "text": "Lees mijn baangidsen voor eerlijke, eigen notities over greenfees, moeilijkheidsgraad, conditie, landschap en voor wie elke baan echt geschikt is.",
+          "text": "Lees mijn baangidsen voor eerlijke, eigen notities över greenfees, moeilijkheidsgraad, conditie, landschap en voor wie elke baan echt geschikt is.",
           "cta": "Alle banen vergelijken"
         }
       ]
@@ -1112,7 +1112,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "badge": "Beste van Spanje 2025",
           "difficulty": "7/10 moeilijkheid",
-          "excerpt": "Uitgeroepen tot beste golfbaan van Spanje bij de World Golf Awards 2025, met uitzicht over de baai van Palma en een duizend jaar oude olijfboom bij hole 15."
+          "excerpt": "Uitgeroepen tot beste golfbaan van Spanje bij de World Golf Awards 2025, met uitzicht över de baai van Palma en een duizend jaar oude olijfboom bij hole 15."
         },
         {
           "region": "Santa Ponsa · zuidwesten",
@@ -1347,7 +1347,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ],
       "coursesBlurb": "Jag spelar och recenserar varje bana på ön: Son Gual, Alcanada, T Golf Calvià, Son Muntaner och resten. Vill du jämföra banor innan du bokar,",
       "coursesBlurbLink": "se hela listan",
-      "guideBlurb": "För den fullständiga rankade genomgången av alla 24 Mallorcabanor, med green fees och vem varje bana passar,",
+      "guideBlurb": "För den fullständiga rankade genomgången av allá 24 Mallorcabanor, med green fees och vem varje bana passar,",
       "guideBlurbLink": "läs bankguiden"
     },
     "journey": {
@@ -1367,7 +1367,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "title": "Jag jämför banor",
           "text": "Läs mina banguider för ärliga, egna anteckningar om greenfees, svårighetsgrad, skick, omgivning och vem varje bana egentligen passar.",
-          "cta": "Jämför alla banor"
+          "cta": "Jämför allá banor"
         }
       ]
     },
@@ -1418,7 +1418,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "courses": {
       "eyebrow": "Utvalda banor",
       "title": "Mallorcas bästa banor, spelade och ärligt recenserade.",
-      "viewAll": "Se alla 24 banor →",
+      "viewAll": "Se allá 24 banor →",
       "items": [
         {
           "badge": "Expertval",
@@ -1539,7 +1539,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "cta": "Se priser",
           "href": "/sv/contact",
           "detailHref": "/signature-day",
-          "detailLabel": "Se alla detaljer"
+          "detailLabel": "Se allá detaljer"
         },
         {
           "tier": "Reseplanering",

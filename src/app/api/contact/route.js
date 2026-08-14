@@ -12,6 +12,7 @@ import {
   sanitizeText,
 } from '../../../lib/request-safety'
 import { getExperienceLabel, OFFER_IDS } from '../../../lib/offers-content.js'
+import { getContactContent } from '../../../lib/contact-content.js'
 
 const SERVICE_TYPE_LABELS = {
   pwap: 'Play With A Pro',
@@ -117,6 +118,29 @@ export async function POST(request) {
     if (error) {
       console.error('Resend contact error:', error)
       return Response.json({ ok: false, error: 'Failed to send' }, { status: 500 })
+    }
+
+    const localeKey = lang.toLowerCase()
+    const whatsappHref = localeKey === 'zh' ? 'https://www.mrmallorcagolf.com/zh/contact#wechat' : 'https://wa.me/34624466702'
+    try {
+      const confirmContent = getContactContent(localeKey)
+      await resend.emails.send({
+        from: 'Andy Griffiths <andy@mrmallorcagolf.com>',
+        to: email,
+        subject: confirmContent.success.title,
+        html: `
+          <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
+            <h2 style="color:#2D4A3E;margin-bottom:16px">${escapeHtml(confirmContent.success.title)}</h2>
+            <p style="color:#333;line-height:1.6">${escapeHtml(confirmContent.success.body)}</p>
+            <p style="margin-top:28px">
+              <a href="${whatsappHref}" style="display:inline-block;padding:12px 22px;background:#25D366;border-radius:3px;font-family:sans-serif;font-size:13px;font-weight:600;color:#fff;text-decoration:none">${escapeHtml(confirmContent.cards.whatsappValue)}</a>
+            </p>
+            <p style="margin-top:28px;color:#999;font-size:12px">Mr Mallorca Golf &middot; Andy Griffiths, PGA Advanced Professional</p>
+          </div>
+        `,
+      })
+    } catch (confirmError) {
+      console.error('Resend confirmation email error:', confirmError)
     }
 
     return Response.json({ ok: true })

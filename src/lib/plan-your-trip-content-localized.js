@@ -4,7 +4,7 @@
 // sampleItinerary overlays carry translated PROSE only. Day objects must omit
 // day-structure fields that English owns (course, fromPalma, image, guide):
 // mergeLocalizedContent merges arrays per index, so any key present here wins
-// over English. Keep localized day objects to prose keys.
+// över English. Keep localized day objects to prose keys.
 
 export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "es": {
@@ -172,7 +172,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "body": "Son Gual ergibt mehr Sinn, wenn die Gruppe angekommen ist. Dann sind Wind, Tempo und Fehlschläge klarer, und jedes Coaching hat mehr Grundlage."
           },
           {
-            "title": "Eine lange Fahrt, mitten in der Woche",
+            "title": "Eine länge Fahrt, mitten in der Woche",
             "body": "Alcanada ist die Fahrt wert, aber es ist ein ganzer Tag. Ich würde es nicht auf den Anreisetag legen und nicht in die Nähe des Rückflugs."
           },
           {
@@ -339,7 +339,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "intro": "Een voorbeeld met Palma als basis voor een groep clubgolfers: vijf rondes, één langere dag naar het noorden en een duidelijke reden voor de volgorde.",
       "whyThisShape": {
         "title": "Waarom de week in deze volgorde loopt",
-        "lead": "Veel reizen gaan mis in de gaten tussen starttijden: de eerste ochtend, de lange rit, de zware baan, de vlucht naar huis. Dit is het soort route dat ik zou controleren voordat ik iets boek.",
+        "lead": "Veel reizen gaan mis in de gaten tussen starttijden: de eerste ochtend, de länge rit, de zware baan, de vlucht naar huis. Dit is het soort route dat ik zou controleren voordat ik iets boek.",
         "points": [
           {
             "title": "De aankomstdag blijft makkelijk",
@@ -350,7 +350,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "body": "Son Gual heeft meer zin zodra de groep geland is. Dan zijn wind, tempo en missers duidelijker, en heeft coaching meer om mee te werken."
           },
           {
-            "title": "Eén lange rit, midden in de week",
+            "title": "Eén länge rit, midden in de week",
             "body": "Alcanada is de rit waard, maar het is een volledige dag. Ik zou het niet op de aankomstdag zetten en ook niet dicht bij de terugvlucht."
           },
           {
@@ -411,8 +411,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       }
     },
     "addon": {
-      "eyebrow": "Tillägg på alla nivåer",
-      "body": "En privat dag på banan med mig bredvid er under alla 18 hål. Fungerar som en fristående bokning eller som del av en planerad resa. En bana vald för ert spel, med lokal banstrategi och coaching invävd i rundan.",
+      "eyebrow": "Tillägg på allá nivåer",
+      "body": "En privat dag på banan med mig bredvid er under allá 18 hål. Fungerar som en fristående bokning eller som del av en planerad resa. En bana vald för ert spel, med lokal banstrategi och coaching invävd i rundan.",
       "price": "Solo från",
       "groupLabel": "Grupper från",
       "groupValue": "€950 totalt",

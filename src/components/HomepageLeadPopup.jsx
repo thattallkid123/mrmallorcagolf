@@ -85,7 +85,12 @@ export default function HomepageLeadPopup() {
             Compare all 24 courses
           </Link>
         </div>
-        <p className="lead-popup__note">Andy reads every message and replies personally.</p>
+        <p className="lead-popup__note">
+          Andy reads every message and replies personally. Already know what you want?{' '}
+          <Link href="/contact" className="lead-popup__contact-link" onClick={closePopup}>
+            Send a quick message instead
+          </Link>.
+        </p>
       </div>
     </div>
   )

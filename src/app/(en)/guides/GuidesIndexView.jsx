@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
+import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import GuidesFilterSection from './GuidesFilterSection'
@@ -62,8 +63,8 @@ function buildGuidesBreadcrumbSchema(locale, content) {
 const HERO_ACTIONS = {
   en: { experience: 'See the Experience', reviews: 'Course Reviews', articles: 'Guides & Articles' },
   de: { experience: 'Erlebnis ansehen', reviews: 'Platzbewertungen', articles: 'Ratgeber & Artikel' },
-  es: { experience: 'Ver la experiencia', reviews: 'Analisis de campos', articles: 'Guias y articulos' },
-  fr: { experience: "Voir l'experience", reviews: 'Avis parcours', articles: 'Guides & articles' },
+  es: { experience: 'Ver la experiencia', reviews: 'Análisis de campos', articles: 'Guías y artículos' },
+  fr: { experience: "Voir l'expérience", reviews: 'Avis parcours', articles: 'Guides & articles' },
   nl: { experience: 'Bekijk de ervaring', reviews: 'Baanbeoordelingen', articles: 'Gidsen & artikelen' },
   sv: { experience: 'Se upplevelsen', reviews: 'Banrecensioner', articles: 'Guider & artiklar' },
   zh: { experience: '了解体验项目', reviews: '球场评测', articles: '指南与文章' },
@@ -103,13 +104,30 @@ function getLocalePrefix(locale) {
   return locale === 'en' ? '' : `/${locale}`
 }
 
+const INDEX_CTA_LABELS = {
+  en: { plan: 'Plan Your Trip', play: 'Play With A Pro' },
+  de: { plan: 'Reise planen', play: 'Mit Andy spielen' },
+  es: { plan: 'Planifica tu viaje', play: 'Jugar con Andy' },
+  fr: { plan: 'Planifier', play: 'Jouer avec Andy' },
+  nl: { plan: 'Reis plannen', play: 'Spelen met Andy' },
+  sv: { plan: 'Planera resan', play: 'Spela med Andy' },
+  zh: { plan: '规划行程', play: '与 Andy 同场' },
+}
+
 export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const prefix = getLocalePrefix(locale)
   const pageLayoutLang = pageLang || locale
   const heroActions = HERO_ACTIONS[locale] || HERO_ACTIONS.en
+  const stickyLabels = INDEX_CTA_LABELS[locale] || INDEX_CTA_LABELS.en
 
   return (
     <PageLayout lang={pageLayoutLang} navTransparent={false} showWhatsAppButton={false}>
+      <StickyMobileCta
+        primaryHref={`${prefix}/plan-your-trip`}
+        primaryLabel={stickyLabels.plan}
+        secondaryHref={`${prefix}/play-with-a-pro`}
+        secondaryLabel={stickyLabels.play}
+      />
       <JsonLd data={buildGuidesIndexSchema(locale, content)} />
       <JsonLd data={buildGuidesBreadcrumbSchema(locale, content)} />
       <header className="page-hero page-hero--guides">

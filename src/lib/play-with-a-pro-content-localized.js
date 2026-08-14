@@ -8,10 +8,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "De un vistazo",
       "title": "Entienda la oferta antes de consultar.",
       "items": [
-        { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
-        { "label": "Formato", "text": "Un campo, 18 hoyos, elegido segun su juego, conmigo a su lado durante toda la vuelta." },
+        { "label": "Idéal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
+        { "label": "Formato", "text": "Un campo, 18 hoyos, elegido según su juego, conmigo a su lado durante toda la vuelta." },
         { "label": "Precios", "text": "Solo desde €695. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
-        { "label": "Siguiente paso", "text": "Envie sus fechas, tamano del grupo y rango de handicap. Andy responde personalmente en 24 horas." }
+        { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Andy responde personalmente en 24 horas." }
       ]
     },
     "hero": {
@@ -34,7 +34,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ],
       "quote": "La mayoría de los golfistas se van jugando mejor, con más claridad y entendiendo por qué. Esa última parte es la que suele quedarse.",
       "questionnaireEyebrow": "¿Ya ha reservado?",
-      "questionnaireTitle": "Complete su cuestionario pre-ronda →",
+      "questionnaireTitle": "Complète su cuestionario pre-ronda →",
       "questionnaireBody": "Solo lleva 3 minutos. Me ayuda a adaptar el día a usted antes de llegar al primer tee."
     },
     "included": {
@@ -109,7 +109,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Me dio un feedback claro y específico que me ayudó a corregir varios errores. Especialmente el putting, con el que siempre he tenido dificultades, ha mejorado mucho. Seguiré contando con Andy como mi pro."
         },
         {
-          "text": "Jugué 18 hoyos con Andy esta mañana. Después de unos 4 hoyos Andy llegó con su valoración y a partir de ahí todo se volvió más disfrutable y la mejora fue enorme. Un tipo con los pies en la tierra que explicó todo con facilidad y me hizo sentir muy relajado. No puedo esperar a mi próxima ronda el domingo."
+          "text": "Jugué 18 hoyos con Andy está mañana. Después de unos 4 hoyos Andy llegó con su valoración y a partir de ahí todo se volvió más disfrutable y la mejora fue enorme. Un tipo con los pies en la tierra que explicó todo con facilidad y me hizo sentir muy relajado. No puedo esperar a mi próxima ronda el domingo."
         },
         {
           "text": "Andy es un verdadero profesional del golf. Aprendí más en medio día con él que en un año jugando solo. Si quiere mejorar de verdad su juego, vaya con Andy."
@@ -124,8 +124,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "packages": {
       "eyebrow": "Experiencias y paquetes",
-      "title": "Tres maneras de vivir el día.",
-      "body": "Las tres son privadas, me tienen a mí como anfitrión y se juegan en uno de los mejores campos de la isla. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte, salvo en la Experiencia Signature, donde todo está incluido.",
+      "title": "Très maneras de vivir el día.",
+      "body": "Las très son privadas, me tienen a mí como anfitrión y se juegan en uno de los mejores campos de la isla. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte, salvo en la Experiencia Signature, donde todo está incluido.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -195,8 +195,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "¿Busca algo más grande?",
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
-        "body": "Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
-        "detail": "Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma despues de la primera conversacion, cuando el dia tiene forma.",
+        "body": "Dos o très días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
+        "detail": "Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversacion, cuando el dia tiene forma.",
         "button": "Consultar un viaje de varios días →",
         "href": "/es/contact"
       }
@@ -224,7 +224,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cuál es la diferencia entre los paquetes Solo y Grupo?",
-          "a": "Solo es una sesión privada para un golfista. Los paquetes Grupo son para 2 o 3 golfistas, lo suficientemente pequeño como para poder jugar junto a todos y dar atención real a lo largo de la vuelta."
+          "a": "Solo es una sesión privada para un golfista. Los paquetes Grupo son para 2 o 3 golfistas, lo suficientemente pequeño como para poder jugar junto a todos y där atención real a lo largo de la vuelta."
         },
         {
           "q": "¿Trabaja con juniors?",
@@ -255,7 +255,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
       "secondaryCta": "Escribir por WhatsApp",
-      "secondaryHref": "https://wa.me/34624466702",
+      "secondaryHref": "https://wa.me/34624466702?text=Hola%20Andy%2C%20me%20interesa%20un%20d%C3%ADa%20de%20golf%20en%20Mallorca.",
       "tertiaryCta": "Explorar los campos →",
       "tertiaryHref": "/es/golf-courses"
     }
@@ -266,10 +266,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Auf einen Blick",
       "title": "Das Angebot verstehen, bevor Sie anfragen.",
       "items": [
-        { "label": "Am besten fuer", "text": "Einzelspieler, Paare und kleine Gruppen, die einen richtigen Golftag auf Mallorca wollen." },
-        { "label": "Format", "text": "Ein Platz, 18 Loecher, passend zu Ihrem Spiel, mit mir an Ihrer Seite waehrend der ganzen Runde." },
+        { "label": "Am besten für", "text": "Einzelspieler, Paare und kleine Gruppen, die einen richtigen Golftag auf Mallorca wollen." },
+        { "label": "Format", "text": "Ein Platz, 18 Löcher, passend zu Ihrem Spiel, mit mir an Ihrer Seite während der ganzen Runde." },
         { "label": "Preise", "text": "Solo ab €695. Gruppe ab €950 insgesamt. Greenfees sind getrennt und werden vor der Buchung bestaetigt." },
-        { "label": "Naechster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengroesse und Handicap-Bereich. Andy antwortet persoenlich innerhalb von 24 Stunden." }
+        { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Andy antwortet persoenlich innerhalb von 24 Stunden." }
       ]
     },
     "hero": {
@@ -343,7 +343,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Ein Geschenk, das wirklich genutzt wird",
-          "text": "Der Tag passt gut fuer runde Geburtstage, Ruhestand und Firmen-Dankeschoen. Wenn Sie fuer jemand anderen buchen, halte ich die Details diskret, bis alles bereit ist."
+          "text": "Der Tag passt gut für runde Geburtstage, Ruhestand und Firmen-Dankeschön. Wenn Sie für jemand anderen buchen, halte ich die Details diskret, bis alles bereit ist."
         }
       ]
     },
@@ -364,7 +364,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Eine tolle Erfahrung. Andy hat alle Aspekte meines Spiels bewertet — Schwungtechnik, Platzmanagement und die mentale Seite — und dabei laufend Anpassungen vorgenommen. Ich habe eine Menge Verbesserungspunkte mitgenommen."
         },
         {
-          "text": "Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon lange kämpfe, hat sich stark verbessert. Ich werde Andy weiterhin als meinen Pro nutzen."
+          "text": "Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon länge kämpfe, hat sich stark verbessert. Ich werde Andy weiterhin als meinen Pro nutzen."
         },
         {
           "text": "Heute Morgen habe ich 18 Löcher mit Andy gespielt. Nach ungefähr 4 Löchern kam er mit seiner Einschätzung und von da an wurde alles angenehmer und die Verbesserung war enorm. Ein bodenständiger Typ, der alles mit Leichtigkeit erklärt und mich so entspannt hat. Kann es kaum erwarten bis zu meiner nächsten Runde am Sonntag."
@@ -513,7 +513,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
       "secondaryCta": "Per WhatsApp schreiben",
-      "secondaryHref": "https://wa.me/34624466702",
+      "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20Golftag%20in%20Mallorca.",
       "tertiaryCta": "Die Plätze entdecken →",
       "tertiaryHref": "/de/golf-courses"
     }
@@ -524,10 +524,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "En un coup d'oeil",
       "title": "Comprendre l'offre avant de nous contacter.",
       "items": [
-        { "label": "Ideal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journee de golf a Majorque." },
+        { "label": "Idéal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journée de golf a Majorque." },
         { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi a vos cotes pendant toute la partie." },
         { "label": "Tarifs", "text": "Solo a partir de €695. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la reservation." },
-        { "label": "Etape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Andy repond personnellement sous 24 heures." }
+        { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Andy repond personnellement sous 24 heures." }
       ]
     },
     "hero": {
@@ -600,8 +600,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Couples, amis et petits groupes d'entreprise qui veulent jouer Majorque comme il faut, sans gérer eux-mêmes tee times, transferts ou déjeuner."
         },
         {
-          "title": "Un cadeau qui sera vraiment utilise",
-          "text": "La journee fonctionne bien pour un anniversaire important, un depart a la retraite ou une recompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les details prives jusqu au bon moment."
+          "title": "Un cadeau qui será vraiment utilise",
+          "text": "La journée fonctionne bien pour un anniversaire important, un départ a la retraite ou une recompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les details prives jusqu au bon moment."
         }
       ]
     },
@@ -712,7 +712,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Vous cherchez quelque chose de plus ambitieux ?",
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
         "body": "Deux ou trois jours consécutifs entre Son Gual, Alcanada et au-delà, avec transferts privés, bonnes tables soigneusement choisies et accès à des parcours que la plupart des visiteurs ne peuvent pas réserver.",
-        "detail": "Signature Day. Une journee de golf privee avec Andy, une session avec John Brazier, des transferts prives et une soiree coordonnee. Le tarif est confirme apres le premier echange, lorsque la journee a pris forme.",
+        "detail": "Signature Day. Une journée de golf privee avec Andy, une session avec John Brazier, des transferts prives et une soiree coordonnee. Le tarif est confirme après le premier echange, lorsque la journée a pris forme.",
         "button": "Demander un séjour sur plusieurs jours →",
         "href": "/fr/contact"
       }
@@ -771,7 +771,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
       "secondaryCta": "Écrire sur WhatsApp",
-      "secondaryHref": "https://wa.me/34624466702",
+      "secondaryHref": "https://wa.me/34624466702?text=Bonjour%20Andy%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20une%20journ%C3%A9e%20de%20golf%20%C3%A0%20Majorque.",
       "tertiaryCta": "Explorer les parcours →",
       "tertiaryHref": "/fr/golf-courses"
     }
@@ -891,14 +891,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Andy is uitzonderlijk goed in wat hij doet. Een leuke ronde, fijn gezelschap en echt waardevolle tips die mijn spel tegen het einde verbeterden. Leren van een pro zoals hij op de baan, in echte situaties, is beter dan elke les op de driving range."
         },
         {
-          "text": "Mijn vrouw en ik brachten twee geweldige dagen door met Andy. Hij gaf ons eenvoudige tips die we meteen op de baan konden toepassen en leerde ons beter na te denken over 18 holes. Ook leuk om hem zelf te zien spelen — we boeken volgend jaar weer."
+          "text": "Mijn vrouw en ik brachten twee geweldige dagen door met Andy. Hij gaf ons eenvoudige tips die we meteen op de baan konden toepassen en leerde ons beter na te denken över 18 holes. Ook leuk om hem zelf te zien spelen — we boeken volgend jaar weer."
         }
       ]
     },
     "packages": {
       "eyebrow": "Ervaringen en pakketten",
       "title": "Drie manieren om de dag te beleven.",
-      "body": "Alle drie zijn privé, worden door mij begeleid en gespeeld op een van de beste banen van het eiland. Baan, starttijd en coaching inbegrepen. Greenfees en lunch apart, behalve bij de Signature Experience waar alles is inbegrepen.",
+      "body": "Alle drie zijn privé, worden door mij begeleid en gespeeld op een van de beste banen van het eiland. Baan, starttijd en coaching inbegrepen. Greenfees en lunch apart, behalve bij de Signature Expérience waar alles is inbegrepen.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -1005,7 +1005,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Welke kwalificaties heeft Andy?",
-          "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon putting-certificering. Mike Adams. US Kids Top 50 Worldwide Instructor. Alle details op de over-pagina."
+          "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon putting-certificering. Mike Adams. US Kids Top 50 Worldwide Instructor. Alle details op de över-pagina."
         },
         {
           "q": "Hoe ver van tevoren moet ik boeken?",
@@ -1028,7 +1028,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
       "secondaryCta": "Bericht via WhatsApp",
-      "secondaryHref": "https://wa.me/34624466702",
+      "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ik%20heb%20interesse%20in%20een%20golfdag%20in%20Mallorca.",
       "tertiaryCta": "Ontdek de banen →",
       "tertiaryHref": "/nl/golf-courses"
     }
@@ -1037,11 +1037,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "locale": "sv",
     "offerSummary": {
       "eyebrow": "I korthet",
-      "title": "Forsta erbjudandet innan du hor av dig.",
+      "title": "Första erbjudandet innan du hor av dig.",
       "items": [
-        { "label": "Bast for", "text": "Ensamspelare, par och sma sallskap som vill ha en riktig golfdag pa Mallorca." },
-        { "label": "Format", "text": "En bana, 18 hal, vald efter ditt spel, med mig vid din sida under hela rundan." },
-        { "label": "Priser", "text": "Solo fran €695. Grupp fran €950 totalt. Green fees ar separata och bekraftas innan bokning." },
+        { "label": "Bäst for", "text": "Ensamspelare, par och sma sallskap som vill ha en riktig golfdag pa Mallorca." },
+        { "label": "Format", "text": "En bana, 18 hål, vald efter ditt spel, med mig vid din sida under hela rundan." },
+        { "label": "Priser", "text": "Solo från €695. Grupp från €950 totalt. Green fees ar separata och bekraftas innan bokning." },
         { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Andy svarar personligen inom 24 timmar." }
       ]
     },
@@ -1115,8 +1115,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Par, vänner och mindre företagsgrupper som vill spela Mallorca på rätt sätt utan att själva behöva ordna starttider, transfers eller lunch."
         },
         {
-          "title": "En present som faktiskt blir anvand",
-          "text": "Dagarna passar bra for stora fodelsedagar, pension och foretagsbeloningar. Om du koper till nagon annan haller jag detaljerna privata tills du ar redo."
+          "title": "En present som faktiskt blir använd",
+          "text": "Dagarna passar bra for stora fodelsedagar, pension och foretagsbeloningar. Om du koper till någon annan haller jag detaljerna privata tills du ar redo."
         }
       ]
     },
@@ -1134,7 +1134,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna klara och bara behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att prova. Bra att jag gjorde det. Vi jobbade igenom de finare detaljerna i min sving: fast bollkontakt, bättre viktöverföring och mekanik. Även de minsta justeringarna gav konsekventa resultat, och jag är övertygad om att de kommer ta bort 5-10 slag från mitt spel efter bara en session. Andy var helt professionell. Kan inte tacka honom nog."
         },
         {
-          "text": "En fantastisk upplevelse. Andy utvärderade alla delar av mitt spel — swingen, banstrategin och det mentala — och justerade längs vägen. Jag åkte hem med massor av konkreta saker att jobba med."
+          "text": "En fantastisk upplevelse. Andy utvärderade allá delar av mitt spel — swingen, banstrategin och det mentala — och justerade längs vägen. Jag åkte hem med massor av konkreta säker att jobba med."
         },
         {
           "text": "Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag länge kämpat med, har förbättrats mycket. Jag kommer fortsätta använda Andy som min pro."
@@ -1146,7 +1146,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Andy är en riktig golfproffs. Jag lärde mig mer på en halv dag med honom än på ett år av att spela själv. Vill du verkligen förbättra ditt spel, gå med Andy."
         },
         {
-          "text": "Andy är exceptionellt duktig på det han gör. En rolig runda, härligt sällskap och riktigt värdefulla tips som förbättrade mitt spel mot slutet. Att lära sig av ett proffs som han ute på banan, i verkliga situationer, slår alla lektioner på rangen."
+          "text": "Andy är exceptionellt duktig på det han gör. En rolig runda, härligt sällskap och riktigt värdefulla tips som förbättrade mitt spel mot slutet. Att lära sig av ett proffs som han ute på banan, i verkliga situationer, slår allá lektioner på rangen."
         },
         {
           "text": "Min fru och jag tillbringade två fantastiska dagar med Andy. Han gav oss enkla tips som vi kunde använda direkt på banan och lärde oss att tänka bättre över 18 hål. Kul att se honom spela också — vi bokar igen nästa år."
@@ -1156,7 +1156,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Upplevelser och paket",
       "title": "Tre sätt att lägga upp dagen.",
-      "body": "Alla tre alternativen är privata, leds av mig och spelas på en av öns bästa banor. Bana, starttid och coaching ingår. Green fees och lunch tillkommer, utom för Signature-upplevelsen där allt ingår.",
+      "body": "Allá tre alternativen är privata, leds av mig och spelas på en av öns bästa banor. Bana, starttid och coaching ingår. Green fees och lunch tillkommer, utom för Signature-upplevelsen där allt ingår.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -1195,7 +1195,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
           "price": "Sur demande",
-          "note": "Allt är ordnat. Alla detaljer bekräftas före dagen.",
+          "note": "Allt är ordnat. Allá detaljer bekräftas före dagen.",
           "features": [
             "Bana, privat starttid och en helt organiserad dag med mig",
             "Aterhamtnings- och sportprestationssession med John Brazier",
@@ -1204,7 +1204,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact",
-          "detailLabel": "Se alla detaljer →"
+          "detailLabel": "Se allá detaljer →"
         },
         {
           "eyebrow": "Reseplanering",
@@ -1227,7 +1227,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Letar du efter något större?",
         "title": "En flerdagarsupplevelse, planerad runt dig.",
         "body": "Två eller tre dagar i följd över Son Gual, Alcanada och vidare, med privata transfers, noggrant utvalda restauranger och tillgång till banor som de flesta besökare inte kan boka.",
-        "detail": "Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kvall. Priset bekraftas efter forsta samtalet, nar dagen har form.",
+        "detail": "Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kvall. Priset bekraftas efter första samtalet, när dagen har form.",
         "button": "Fråga om en flerdagarsresa →",
         "href": "/sv/contact"
       }
@@ -1239,7 +1239,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         {
           "q": "Ger du lektioner för totala nybörjare?",
-          "a": "Ja. Alla mina sessioner sker på golfbanan, inte på rangen. Med några bra par 3-banor och kortbanor här på Mallorca kan nybörjare börja spela riktigt golf direkt och se vilka färdigheter de behöver utveckla."
+          "a": "Ja. Allá mina sessioner sker på golfbanan, inte på rangen. Med några bra par 3-banor och kortbanor här på Mallorca kan nybörjare börja spela riktigt golf direkt och se vilka färdigheter de behöver utveckla."
         },
         {
           "q": "Behöver jag ta med egna klubbor?",
@@ -1255,11 +1255,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Vad är skillnaden mellan Solo och Gruppaket?",
-          "a": "Solo är en privat session för en golfare. Gruppaket är för 2 till 3 golfare, litet nog för att jag fortfarande ska kunna spela bredvid alla och ge verklig uppmärksamhet under rundan."
+          "a": "Solo är en privat session för en golfare. Gruppaket är för 2 till 3 golfare, litet nog för att jag fortfarande ska kunna spela bredvid allá och ge verklig uppmärksamhet under rundan."
         },
         {
           "q": "Arbetar du med juniorer?",
-          "a": "Ja. Jag arbetar med juniorer på alla nivåer, inklusive totala nybörjare. Vi anpassar svårighetsgraden på banan så att de lär sig i en riktig golfmiljö utan att bli överväldigade."
+          "a": "Ja. Jag arbetar med juniorer på allá nivåer, inklusive totala nybörjare. Vi anpassar svårighetsgraden på banan så att de lär sig i en riktig golfmiljö utan att bli överväldigade."
         },
         {
           "q": "Vilka kvalifikationer har Andy?",
@@ -1286,7 +1286,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
       "secondaryCta": "Skriv på WhatsApp",
-      "secondaryHref": "https://wa.me/34624466702",
+      "secondaryHref": "https://wa.me/34624466702?text=Hej%20Andy%2C%20jag%20%C3%A4r%20intresserad%20av%20en%20golfdag%20p%C3%A5%20Mallorca.",
       "tertiaryCta": "Utforska banorna →",
       "tertiaryHref": "/sv/golf-courses"
     }
@@ -1543,7 +1543,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
       "secondaryCta": "通过 WhatsApp 联系",
-      "secondaryHref": "https://wa.me/34624466702",
+      "secondaryHref": "https://wa.me/34624466702?text=%E6%82%A8%E5%A5%BD%20Andy%EF%BC%8C%E6%88%91%E5%AF%B9%E9%A9%AC%E7%95%A5%E5%8D%A1%E9%AB%98%E5%B0%94%E5%A4%AB%E4%B9%8B%E6%97%85%E6%84%9F%E5%85%B4%E8%B6%A3%E3%80%82",
       "tertiaryCta": "查看球场 →",
       "tertiaryHref": "/zh/golf-courses"
     }

@@ -1,9 +1,32 @@
 import { execSync } from 'child_process'
+import { readFileSync } from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const repoRoot = path.resolve(__dirname, '..')
+
+// Plain node scripts don't auto-load .env.local (only Next.js does), so pull
+// CRON_SECRET from there directly if it's not already in the environment.
+function loadCronSecret() {
+  if (process.env.CRON_SECRET) return process.env.CRON_SECRET
+  for (const file of ['.env.local', '.env']) {
+    try {
+      const contents = readFileSync(path.join(repoRoot, file), 'utf-8')
+      const match = contents.match(/^CRON_SECRET=["']?([^"'\n]+)["']?$/m)
+      if (match) return match[1]
+    } catch {
+      // file doesn't exist — try the next one
+    }
+  }
+  return null
+}
+
+const cronSecret = loadCronSecret()
+if (!cronSecret) {
+  console.error('❌ CRON_SECRET not found in environment or .env.local — cannot authenticate to /api/cron/indexnow.')
+  process.exit(1)
+}
 
 // Tracked guides for IndexNow submission (kept in sync by sync-discovery.mjs)
 const INDEXNOW_GUIDES = [
@@ -81,7 +104,10 @@ console.log(`🔔 Pinging Bing IndexNow for ${urlsToSubmit.length} URL(s)...`)
 try {
   const response = await fetch(endpoint, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${cronSecret}`,
+    },
     body: JSON.stringify({ urls: urlsToSubmit }),
   })
 

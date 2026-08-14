@@ -1,0 +1,12 @@
+node_modules
+.next
+.next-stale-*
+out
+build
+coverage
+public
+outputs
+prototypes
+docs
+carousels
+MMG-Fonts

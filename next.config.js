@@ -23,31 +23,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/fr/privacy-policy',
-        destination: '/privacy-policy',
-        permanent: true,
-      },
-      {
-        source: '/golf-courses/alcanada',
-        destination: '/guides/alcanada-review',
-        permanent: true,
-      },
-      {
-        source: '/golf-courses/alcanada-review',
-        destination: '/guides/alcanada-review',
-        permanent: true,
-      },
-      {
-        source: '/golf-courses-391',
-        destination: '/golf-courses',
-        permanent: true,
-      },
-      {
-        source: '/golf-courses/son-gual',
-        destination: '/guides/son-gual-review',
-        permanent: true,
-      },
-      {
         source: '/golf-trip-calculator',
         destination: '/tools/golf-cost-calculator',
         permanent: true,

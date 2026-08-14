@@ -149,7 +149,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-club-hire-mallorca",
         "badge": "Guía práctica",
         "title": "Alquiler de palos en Mallorca: todo lo que necesitas saber (2026)",
-        "intro": "¿Traer sus propios palos o alquilar en la isla? Esta es la respuesta honesta y útil.",
+        "intro": "¿Traer sus propios palos o alquilar en la isla? Está es la respuesta honesta y útil.",
         "readTime": "6 min",
         "keywords": "Alquiler · Traer palos · Precios · Empresas"
       }
@@ -237,7 +237,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "img": "/images/courses/son-antem-west.webp",
         "imgPosition": "center 45%",
         "title": "Son Antem West Golf Club, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
-        "intro": "Ein Resortplatz 15-20 Minuten von Palma entfernt. Gute Pflege, offene Landschaft und ein Layout, das vielen Spielstaerken entgegenkommt.",
+        "intro": "Ein Resortplatz 15-20 Minuten von Palma entfernt. Gute Pflege, offene Landschaft und ein Layout, das vielen Spielstärken entgegenkommt.",
         "readTime": "6 Min.",
         "keywords": "Resortplatz - Par 72 - €109-135 - 15-20 Min. von Palma"
       },
@@ -551,7 +551,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Baanbeoordeling",
         "badgeGold": true,
         "title": "Golf de Andratx - eerlijke beoordeling van een PGA Professional (2026)",
-        "intro": "De langste par 5 van Spanje, bergzichten over het zuidwesten en een layout die baanmanagement veel meer beloont dan lengte. Een 7,5 op 10.",
+        "intro": "De langste par 5 van Spanje, bergzichten över het zuidwesten en een layout die baanmanagement veel meer beloont dan lengte. Een 7,5 op 10.",
         "readTime": "6 min",
         "keywords": "Bergbaan · Par 72 · €90-140 · Zuidwest-Mallorca"
       },
@@ -725,9 +725,9 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "img": "/images/courses/son-antem-west.webp",
         "imgPosition": "center 45%",
         "title": "Son Antem West Golf Club, Mallorca - arlig recension av en PGA Professional (2026)",
-        "intro": "En resortbana 15-20 minuter fran Palma. Bra skick, oppet landskap och en layout som passar manga olika spelare.",
+        "intro": "En resortbana 15-20 minuter från Palma. Bra skick, oppet landskap och en layout som passar många olika spelare.",
         "readTime": "6 min",
-        "keywords": "Resortbana - Par 72 - €109-135 - 15-20 min fran Palma"
+        "keywords": "Resortbana - Par 72 - €109-135 - 15-20 min från Palma"
       },
       {
         "slug": "son-termes-review",
@@ -751,7 +751,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "De bästa golfbanorna på Mallorca - en PGA-professionells ärliga ranking",
         "intro": "Tjugofyra banor på ön. Så här skulle jag rangordna dem för en besökare med begränsad tid och höga krav.",
         "readTime": "8 min",
-        "keywords": "Alla nivåer · Greenfees jämfört · Uppdaterad 2026"
+        "keywords": "Allá nivåer · Greenfees jämfört · Uppdaterad 2026"
       },
       {
         "slug": "is-mallorca-good-for-golf",
@@ -759,7 +759,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Är Mallorca bra för golf? Ett ärligt svar från någon som bor här",
         "intro": "Den ofiltrerade versionen: vad ön gör bättre än Portugal, var den faller kort och vem den passar.",
         "readTime": "5 min",
-        "keywords": "Mallorca vs Portugal · Banornas kvalitet · Alla nivåer"
+        "keywords": "Mallorca vs Portugal · Banornas kvalitet · Allá nivåer"
       },
       {
         "slug": "best-time-play-golf-mallorca",

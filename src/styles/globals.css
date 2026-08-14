@@ -1632,6 +1632,7 @@ body {
 .nav.scrolled .nav__links a.active,
 .nav.solid .nav__links a.active { color: var(--deep); border-bottom-color: var(--pine); font-weight: 500; }
 
+.nav__cta--mobile { display: none; }
 .nav__cta {
   font-family: var(--font-sans);
   font-size: 11px;
@@ -1966,6 +1967,7 @@ body {
 @media (max-width: 1180px) {
   .nav__links, .nav__lang { display: none; }
   .nav__hamburger { display: flex; }
+  .nav__cta--mobile { display: inline-flex; min-width: 0; height: 34px; padding: 0 14px; font-size: 10px; margin-right: 12px; }
   .home-nav__details { display: block; }
   .nav__mobile { padding: 24px 24px 28px; }
 }
@@ -2109,6 +2111,9 @@ body {
 .hero__title-line { display: inline; }
 .hero__title-emphasis { font-style: italic; font-weight: 400; opacity: 0.9; color: rgba(255,255,255,0.92); }
 .hero__sub { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 2.25rem; max-width: 480px; }
+.hero__reviews { margin-bottom: 1.75rem; }
+.hero__reviews .review-text { align-items: flex-start; }
+.hero__reviews .review-text__line { text-align: left; }
 .hero__cta-stack { display: inline-flex; flex-direction: column; align-items: center; gap: 14px; }
 .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: center; }
 .hero__pwap-link {
@@ -2819,6 +2824,8 @@ select.form-control { cursor: pointer; }
 .form-success__icon { font-size: 2.5rem; margin-bottom: 16px; color: var(--pine); }
 .form-success h3 { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 500; color: var(--deep); margin-bottom: 10px; }
 .form-success p { font-size: 0.9rem; color: var(--taupe); line-height: 1.7; }
+.form-success__whatsapp { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; padding: 12px 24px; background: #25D366; color: #fff; font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; text-decoration: none; border-radius: 3px; transition: opacity 0.2s ease; }
+.form-success__whatsapp:hover { opacity: 0.88; }
 
 /* ─── GOLF COURSES PAGE ──────────────────────────────────── */
 .geography { background: linear-gradient(180deg, rgba(248,244,236,0.98), rgba(242,235,225,0.96)); padding: 82px 40px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 60px; text-align: left; }
@@ -3296,7 +3303,7 @@ select.form-control { cursor: pointer; }
   .story__sidebar { position: static; border-left: none; border-top: 1px solid var(--linen); min-height: auto; }
 }
 @media (max-width: 768px) {
-  .hero { height: 100svh; min-height: 640px; padding: 0 20px 30px; }
+  .hero { height: 100svh; min-height: 640px; padding: 0 20px 96px; }
   .hero__content { width: 100%; max-width: 31rem; min-width: 0; }
   .hero__eyebrow { max-width: 100%; flex-wrap: wrap; gap: 8px; font-size: 8px; letter-spacing: 0.14em; line-height: 1.6; }
   .hero__eyebrow::before { width: 24px; }
@@ -4795,6 +4802,11 @@ select.form-control { cursor: pointer; }
   font-family: var(--font-sans);
   font-size: 0.75rem;
   line-height: 1.5;
+}
+.lead-popup__contact-link {
+  color: var(--deep, #2D4A3E);
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .lead-status__hero {

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
 import DeferredHydrate from '../../../components/DeferredHydrate'
+import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import GolfCoursesClient from '../golf-courses/GolfCoursesClient'
@@ -104,11 +105,29 @@ function joinHref(locale, path) {
   return `/${locale}${path === '/' ? '' : path}`
 }
 
+const COURSES_CTA_LABELS = {
+  en: { plan: 'Plan Your Trip', play: 'Play With A Pro' },
+  de: { plan: 'Reise planen', play: 'Mit Andy spielen' },
+  es: { plan: 'Planifica tu viaje', play: 'Jugar con Andy' },
+  fr: { plan: 'Planifier', play: 'Jouer avec Andy' },
+  nl: { plan: 'Reis plannen', play: 'Spelen met Andy' },
+  sv: { plan: 'Planera resan', play: 'Spela med Andy' },
+  zh: { plan: '规划行程', play: '与 Andy 同场' },
+}
+
 export default function GolfCoursesView({ locale = 'en', content }) {
+  const stickyLabels = COURSES_CTA_LABELS[locale] || COURSES_CTA_LABELS.en
+
   return (
     <>
       <link rel="preload" as="image" href="/images/golf-courses.webp" />
       <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false} showScrollReset={true}>
+        <StickyMobileCta
+          primaryHref={joinHref(locale, '/plan-your-trip')}
+          primaryLabel={stickyLabels.plan}
+          secondaryHref={joinHref(locale, '/play-with-a-pro')}
+          secondaryLabel={stickyLabels.play}
+        />
         <JsonLd data={buildGolfCoursesSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale, content)} />
         {buildFaqSchema(locale, content) && <JsonLd data={buildFaqSchema(locale, content)} />}

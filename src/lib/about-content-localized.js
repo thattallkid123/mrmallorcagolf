@@ -34,7 +34,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "title": "Once años en la cima del golf en China.",
         "paragraphs": [
           "En 2014 me mudé a Shanghái. Fui con objetivos concretos - poner en marcha el programa de enseñanza de la mejor academia de China - y me quedé once años con grandes resultados.",
-          "China, en ese periodo, fue un entorno extraordinario para enseñar. Las clases rondaban los 500 € por hora. Los clientes esperaban mejoras reales y medibles. Ese era el estándar. El nivel profesional exigido era tan alto como en cualquier otro lugar donde había trabajado.",
+          "China, en ese período, fue un entorno extraordinario para enseñar. Las clases rondaban los 500 € por hora. Los clientes esperaban mejoras reales y medibles. Ese era el estándar. El nivel profesional exigido era tan alto como en cualquier otro lugar donde había trabajado.",
           "Me convertí en el primer Trackman Master del país, entrené a jugadores de la selección nacional china y construí una presencia de coaching en Douyin que alcanzó cientos de millones de visualizaciones. También llegué a hablar mandarín con fluidez, lo que cambió la profundidad de las relaciones que podía construir con jugadores y familias.",
           "Después de once años, había logrado lo que fui a hacer. Mi primera hija nació en 2023. El deseo de estar más cerca de casa y la oportunidad de construir algo propio se volvieron imposibles de ignorar."
         ]
@@ -342,7 +342,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "locale": "nl",
     "hero": {
       "homeHref": "/nl",
-      "breadcrumbCurrent": "Over Andy",
+      "breadcrumbCurrent": "Över Andy",
       "title": [
         "De Professional",
         "achter de Ervaring."
@@ -383,7 +383,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "quote": "De coachingsfilosofie die voortkwam uit weer spelen is eenvoudig: de snelste verbeteringen gebeuren op de baan, niet op de range. Echte omstandigheden, echte beslissingen. Vooruitgang die zo ontstaat, blijft hangen."
       }
     ],
-    "summary": "Ik ben een UK PGA Advanced Professional. Elf jaar coaching in China - nationale teamspelers, Chinas eerste Trackman Master en honderden miljoenen weergaven op Douyin. Daarvoor: Pebble Beach, The Open Championship en Evian. In maart 2025 verhuisde ik naar Mallorca om iets van mezelf op te bouwen. Ik speel bijna elke week de beste banen van het eiland en heb over allemaal een uitgesproken mening.",
+    "summary": "Ik ben een UK PGA Advanced Professional. Elf jaar coaching in China - nationale teamspelers, Chinas eerste Trackman Master en honderden miljoenen weergaven op Douyin. Daarvoor: Pebble Beach, The Open Championship en Evian. In maart 2025 verhuisde ik naar Mallorca om iets van mezelf op te bouwen. Ik speel bijna elke week de beste banen van het eiland en heb över allemaal een uitgesproken mening.",
     "credentialsLabel": "Kwalificaties",
     "credentials": [
       {

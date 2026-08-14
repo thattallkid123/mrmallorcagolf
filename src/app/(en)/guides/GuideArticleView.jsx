@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
+import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import InlineRichText from '../guides/InlineRichText'
@@ -366,12 +367,31 @@ const ARTICLE_TOOL_PLACEMENTS = {
   'play-with-a-pro-explained': 'dayBuilder',
 }
 
+const ARTICLE_CTA_LABELS = {
+  en: { plan: 'Plan Your Trip', play: 'Play With A Pro' },
+  de: { plan: 'Reise planen', play: 'Mit Andy spielen' },
+  es: { plan: 'Planifica tu viaje', play: 'Jugar con Andy' },
+  fr: { plan: 'Planifier', play: 'Jouer avec Andy' },
+  nl: { plan: 'Reis plannen', play: 'Spelen met Andy' },
+  sv: { plan: 'Planera resan', play: 'Spela med Andy' },
+  zh: { plan: '规划行程', play: '与 Andy 同场' },
+}
+
 export default function GuideArticleView({ meta, blocks, locale = 'en', children = null }) {
   let imageOrdinal = 0
   const contextualTool = ARTICLE_TOOL_PLACEMENTS[meta.slug] || 'courseSelector'
+  const stickyLabels = ARTICLE_CTA_LABELS[locale] || ARTICLE_CTA_LABELS.en
+  const stickyPlanHref = joinHref(locale, '/plan-your-trip')
+  const stickyPlayHref = joinHref(locale, '/play-with-a-pro')
 
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
+      <StickyMobileCta
+        primaryHref={stickyPlanHref}
+        primaryLabel={stickyLabels.plan}
+        secondaryHref={stickyPlayHref}
+        secondaryLabel={stickyLabels.play}
+      />
       <JsonLd data={buildBlogPostingSchema(meta, blocks, locale)} />
       <JsonLd data={buildBreadcrumbSchema(meta, locale)} />
       <>

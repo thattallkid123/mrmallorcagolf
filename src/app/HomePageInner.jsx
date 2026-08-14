@@ -3,6 +3,7 @@ import { getHomeContent } from '../lib/homepage-content'
 import { SITE_ORIGIN, buildLocalePath } from '../lib/site'
 import HomeToolsStrip from '../components/HomeToolsStrip'
 import HomepageLeadPopup from '../components/HomepageLeadPopup'
+import ReviewBadge from '../components/ReviewBadge'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -117,6 +118,9 @@ export default function HomePageInner({ locale = 'en' }) {
               </>
             ) : null}
           </h1>
+          <div className="hero__reviews">
+            <ReviewBadge variant="text" theme="dark" locale={locale} />
+          </div>
           <div className="hero__cta-stack">
             <div className="hero__actions">
               <a href={itineraryHref} className="btn btn--gold">

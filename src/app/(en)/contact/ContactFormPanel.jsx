@@ -42,12 +42,22 @@ export default function ContactFormPanel({ locale = 'en', content }) {
     lineHeight: 1.7,
   }
 
+  const whatsappHref = locale === 'zh' ? '#wechat' : 'https://wa.me/34624466702'
+
   if (submitted) {
     return (
       <div className="form-success visible">
         <div className="form-success__icon">&#10003;</div>
         <h3>{content.success.title}</h3>
         <p>{content.success.body}</p>
+        <a
+          href={whatsappHref}
+          className="form-success__whatsapp"
+          target={locale === 'zh' ? undefined : '_blank'}
+          rel={locale === 'zh' ? undefined : 'noopener noreferrer'}
+        >
+          {content.cards.whatsappValue}
+        </a>
       </div>
     )
   }
@@ -106,38 +116,6 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           </div>
         </fieldset>
 
-        {showPwapFormats ? (
-          <fieldset className="form-group" style={{ border: 'none', padding: 0, margin: 0, marginBottom: '20px' }}>
-            <legend style={{ display: 'block', fontSize: '10px', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--taupe)', marginBottom: '8px', padding: 0 }}>
-              {content.form.labels.pwapFormat || 'If Play With A Pro is part of it, which format sounds closest?'}
-            </legend>
-            <div className="radio-group">
-              {pwapFormats.map(([val, label, price]) => (
-                <label
-                  key={val}
-                  className={`radio-option${form.pwapFormat === val ? ' radio-option--selected' : ''}`}
-                >
-                  <input
-                    type="radio"
-                    name="pwapFormat"
-                    value={val}
-                    checked={form.pwapFormat === val}
-                    onChange={(event) => {
-                      handleChange(event)
-                      setForm((current) => ({ ...current, pwapFormat: val, experience: val }))
-                    }}
-                    required
-                  />
-                  <span className={`radio-option-label${form.pwapFormat === val ? ' radio-option-label--selected' : ''}`}>
-                    {label}
-                  </span>
-                  {price && <span className="radio-option-price">{price}</span>}
-                </label>
-              ))}
-            </div>
-          </fieldset>
-        ) : null}
-
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="fname">{content.form.labels.fname}</label>
@@ -179,6 +157,38 @@ export default function ContactFormPanel({ locale = 'en', content }) {
             onChange={handleChange}
           />
         </div>
+
+        {showPwapFormats ? (
+          <fieldset className="form-group" style={{ border: 'none', padding: 0, margin: 0, marginBottom: '20px' }}>
+            <legend style={{ display: 'block', fontSize: '10px', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--taupe)', marginBottom: '8px', padding: 0 }}>
+              {content.form.labels.pwapFormat || 'If Play With A Pro is part of it, which format sounds closest?'}
+            </legend>
+            <div className="radio-group">
+              {pwapFormats.map(([val, label, price]) => (
+                <label
+                  key={val}
+                  className={`radio-option${form.pwapFormat === val ? ' radio-option--selected' : ''}`}
+                >
+                  <input
+                    type="radio"
+                    name="pwapFormat"
+                    value={val}
+                    checked={form.pwapFormat === val}
+                    onChange={(event) => {
+                      handleChange(event)
+                      setForm((current) => ({ ...current, pwapFormat: val, experience: val }))
+                    }}
+                    required
+                  />
+                  <span className={`radio-option-label${form.pwapFormat === val ? ' radio-option-label--selected' : ''}`}>
+                    {label}
+                  </span>
+                  {price && <span className="radio-option-price">{price}</span>}
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        ) : null}
 
         <div className="form-group">
           <label htmlFor="dates">{content.form.labels.dates}</label>

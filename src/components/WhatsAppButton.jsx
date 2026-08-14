@@ -2,9 +2,21 @@
 import { buildLocalePath } from '../lib/site'
 import { currentPagePath, trackEvent, trackLead } from '../lib/analytics'
 
+const WA_PREFILL = {
+  en: 'Hi Andy, I have a question about a Mallorca golf trip.',
+  de: 'Hallo Andy, ich habe eine Frage zu einer Mallorca-Golfreise.',
+  es: 'Hola Andy, tengo una pregunta sobre un viaje de golf a Mallorca.',
+  fr: "Bonjour Andy, j'ai une question sur un séjour de golf à Majorque.",
+  nl: 'Hallo Andy, ik heb een vraag over een golfreis naar Mallorca.',
+  sv: 'Hej Andy, jag har en fråga om en golfresa till Mallorca.',
+}
+
 export default function WhatsAppButton({ lang }) {
   const isChinese = lang === 'zh'
-  const href = isChinese ? `${buildLocalePath('/contact', 'zh')}#wechat` : 'https://wa.me/34624466702'
+  const prefill = WA_PREFILL[lang] || WA_PREFILL.en
+  const href = isChinese
+    ? `${buildLocalePath('/contact', 'zh')}#wechat`
+    : `https://wa.me/34624466702?text=${encodeURIComponent(prefill)}`
   const label = isChinese ? '联系微信' : 'Message on WhatsApp'
 
   function handleClick() {

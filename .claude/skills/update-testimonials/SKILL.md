@@ -18,6 +18,12 @@ description: Add or update client testimonials, the Google reviews rating badge,
 
 Before editing, grep `testimonial` across `src/` — surfaces may have been added since this list was written.
 
+**`src/data/testimonials.json` is dead — never edit it.** It's an orphaned extraction from an old refactor, not imported anywhere in `src/`. The real data lives in the files above.
+
+**Data existing is not proof it renders.** As of Aug 2026 the Play With A Pro `testimonials` object sat in `play-with-a-pro-content.js`/`-localized.js` but `PlayWithAProView.jsx` never consumed it — 9 client quotes (6 original + 3 added that session) were completely invisible on the live page despite passing every content/locale/build check, because those checks validate data shape, not that a component renders it. After editing testimonial data, grep the page component (`PlayWithAProView.jsx` etc.) for the matching key and confirm it's actually referenced in JSX — then verify on the built/live page, not just via `npm run build` succeeding. (The CSS for a dark-card `.testimonials`/`.testimonial`/`.testimonial__author` layout already exists in `globals.css`, ready to wire in if a surface is missing its render.)
+
+**Convention: first name only, no surnames**, matching the existing set (Jo, Finlay, Adam, John, Synøve, Mark, Julien, Amanda, Sam).
+
 ## Adding or replacing a testimonial
 
 1. **Get the exact wording from Andy** — real client words, real first name (or initial) for attribution. Never invent, embellish, or "improve" a client quote. Trim only with Andy's approval.

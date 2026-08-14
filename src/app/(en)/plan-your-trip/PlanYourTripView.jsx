@@ -9,12 +9,30 @@ import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
 
 const COURSE_LINK_LABELS = {
   en: 'View all Mallorca golf courses',
-  de: 'Alle Golfplaetze ansehen',
+  de: 'Alle Golfplätze ansehen',
   es: 'Ver todos los campos',
   fr: 'Voir tous les parcours',
   nl: 'Bekijk alle banen',
   sv: 'Se alla banor',
   zh: '查看所有马略卡球场',
+}
+
+const WA_TRIP_LABELS = {
+  en: 'Message on WhatsApp',
+  de: 'Per WhatsApp schreiben',
+  es: 'Escribir por WhatsApp',
+  fr: 'Écrire sur WhatsApp',
+  nl: 'Bericht via WhatsApp',
+  sv: 'Skriv på WhatsApp',
+}
+
+const WA_TRIP_MESSAGES = {
+  en: "Hi Andy, I'm interested in planning a golf trip to Mallorca.",
+  de: 'Hallo Andy, ich möchte eine Golfreise nach Mallorca planen.',
+  es: 'Hola Andy, quiero planificar un viaje de golf a Mallorca.',
+  fr: 'Bonjour Andy, je souhaite planifier un séjour de golf à Majorque.',
+  nl: 'Hallo Andy, ik wil een golfreis naar Mallorca plannen.',
+  sv: 'Hej Andy, jag vill planera en golfresa till Mallorca.',
 }
 
 export default function PlanYourTripView({ locale = 'en', content: rawContent }) {
@@ -189,8 +207,8 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
       <StickyMobileCta
         primaryHref={contactHref}
         primaryLabel={content.professional.cta}
-        secondaryHref={locale === 'zh' ? `${contactHref}#wechat` : 'https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20planning%20a%20golf%20trip%20to%20Mallorca.'}
-        secondaryLabel={locale === 'zh' ? '微信联系' : 'Message on WhatsApp'}
+        secondaryHref={locale === 'zh' ? `${contactHref}#wechat` : `https://wa.me/34624466702?text=${encodeURIComponent(WA_TRIP_MESSAGES[locale] || WA_TRIP_MESSAGES.en)}`}
+        secondaryLabel={locale === 'zh' ? '微信联系' : (WA_TRIP_LABELS[locale] || WA_TRIP_LABELS.en)}
       />
     </main>
   )

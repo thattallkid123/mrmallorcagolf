@@ -30,6 +30,7 @@ export const CONTACT_CONTENT = {
       intro: 'Choose what you need help with, then send whatever details you already know.',
       experienceHelpTitle: 'How this works',
       experienceHelp: 'Start with the main thing you want help with. If Play With A Pro is part of it, I will ask which format sounds closest so I can reply with the right next step.',
+      sendPromptLabel: 'What to send',
       sendPrompt: 'Dates, group size, hotel area, handicap range, and any courses already on your shortlist are useful. If you are still deciding, send what you know and I will narrow it down with you.',
       labels: {
         fname: 'First name',
