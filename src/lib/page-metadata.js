@@ -92,7 +92,7 @@ const GOLF_COURSES_METADATA = {
       '24 parcours à Majorque: green fees €55–€250, difficulté, régions, lequel vous convient.',
   },
   nl: {
-    title: '24 Banen - Gids & Gebühren',
+    title: '24 Banen - Gids & Greenfees',
     description:
       '24 banen op Mallorca: greenfees €55–€250, moeilijkheid, regio\'s, welke past bij u.',
   },
