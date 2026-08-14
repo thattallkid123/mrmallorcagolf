@@ -1193,7 +1193,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                       onChange={e => setSubscribeNewsletter(e.target.checked)}
                       style={{ accentColor:'#D4B068' }}
                     />
-                    Also send me Andy's occasional Mallorca golf planning notes
+                    Also send me Andy&apos;s occasional Mallorca golf planning notes
                   </label>
                   {emailError && <p style={{ color:'#e8b4a8', fontSize:'.88rem', marginBottom:'14px' }}>{t.results.email.error}</p>}
                 </>

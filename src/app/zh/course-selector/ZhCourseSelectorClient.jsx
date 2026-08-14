@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { ZH_COURSE_EDITORIAL, getZhGuideHref } from '@lib/zh-course-editorial'
 import { COURSE_PRICING_BY_NAME } from '@lib/course-pricing-data'
 
@@ -524,7 +525,7 @@ export default function ZhCourseSelectorClient() {
                 )}
                 <a className="btn-action btn-gold-solid" href="/zh/contact">联系 Andy 教练规划行程</a>
                 <a className="btn-action btn-outline-light" href="/zh/play-with-a-pro">预约陪打 / 下场指导体验</a>
-                <a className="btn-action btn-outline-light" href="/zh/guides">查看中文球场攻略</a>
+                <Link className="btn-action btn-outline-light" href="/zh/guides">查看中文球场攻略</Link>
               </div>
 
               <p className="whatsapp-row">

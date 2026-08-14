@@ -87,6 +87,18 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 - After a task: consolidate into existing docs or ask if it needs keeping. **Default: delete working docs** (recycle bin, not permanent). Keep only final outputs, decision records, reference docs.
 - **Build scripts and intermediate files** (helper scripts, extracted text, intermediate outputs): delete automatically before reporting the task done. Only the final deliverable remains.
 
+## Dev Tooling Hygiene
+
+Habits from the 2026-08-14 code-quality audit (dead `lint`, duplicate redirects, a 20-script `&&` chain, no push-time validation):
+
+- **A gate that can be skipped isn't a gate.** Keep required checks in `pre-push`, not only `pre-commit` — `--amend` and `--no-verify` bypass pre-commit routinely, and a red CI run on `main` is the result. `.githooks/pre-push` runs `check:content` before the Drive export for this reason.
+- **Every `npm run` script must be executed by something automated (a check, CI, a skill) or it rots silently.** `npm run lint` was broken for an entire Next.js major version before anyone noticed, because nothing ran it and no doc referenced it. It's wired into `.github/workflows/verify-content.yml` now.
+- **Redirects live in exactly one file: `vercel.json`.** Vercel's edge layer evaluates first, so a duplicate in `next.config.js` silently never fires — it's dead config that looks live.
+- **`.gitignore` does not untrack already-committed files.** After adding an ignore rule, `git ls-files | grep <pattern>` and `git rm --cached` any strays in the same commit.
+- **New `check:*` scripts go in `scripts/run-content-checks.mjs`'s array, not chained onto `check:content` with another `&&`.** Each `npm run` in a chain pays its own process-startup cost (~1.3s on Windows) on top of the check itself — the old 20-script chain took 26s for work that runs in ~5s in parallel.
+- **When bumping a major dependency (Next, React, etc.), grep this file for stale version claims.** The "Next.js 15 App Router" line under Tech Stack survived a bump to 16 unnoticed for weeks.
+- **When a file's status changes (dead, banked-for-later, generated-only), put a one-line comment saying so in the file itself.** Relying on this doc or a skill file alone to carry that fact invites contradiction — `mallorca-tracker-courses.js` was called "live data" here and "placeholder, never source from it" in two skill files at the same time.
+
 ---
 
 ## Quick Commands

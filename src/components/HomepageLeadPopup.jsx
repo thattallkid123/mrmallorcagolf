@@ -75,7 +75,7 @@ export default function HomepageLeadPopup() {
         <p className="lead-popup__eyebrow">Plan your Mallorca trip</p>
         <h2 id="lead-popup-title">Choose the right courses before you book.</h2>
         <p className="lead-popup__body">
-          Answer a few quick questions to get a shortlist matched to your game. I'll send course recommendations that fit your dates, group size, and budget.
+          Answer a few quick questions to get a shortlist matched to your game. I&apos;ll send course recommendations that fit your dates, group size, and budget.
         </p>
         <div className="lead-popup__actions">
           <Link href="/tools/course-selector" className="btn btn--gold" onClick={closePopup}>

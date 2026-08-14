@@ -214,7 +214,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
   if (block.type === 'pull') {
     return (
       <div key={`${block.text}-${index}`} className="post-pull">
-        <p>"{block.text}"</p>
+        <p>&ldquo;{block.text}&rdquo;</p>
       </div>
     )
   }

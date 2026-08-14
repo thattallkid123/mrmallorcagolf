@@ -94,8 +94,8 @@ async function main() {
   const findings = []
 
   for (const check of CHECKS) {
-    const module = require(check.modulePath)
-    const getter = module[check.getterName]
+    const checkModule = require(check.modulePath)
+    const getter = checkModule[check.getterName]
     if (typeof getter !== 'function') continue
 
     for (const locale of LOCALES) {
