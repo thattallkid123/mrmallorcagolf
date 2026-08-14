@@ -7,7 +7,7 @@
 > - **`SOURCE-OF-TRUTH-MAP.md`** — canonical source for each data type
 > - **`CLAUDE.md`** — operating contract and rules
 
-> **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update`, `/health-check`, `/email-newsletter` — over re-deriving these from this file.
+> **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update`, `/health-check`, `/email-newsletter`, `/api-route-safety` — over re-deriving these from this file.
 
 ---
 
@@ -74,30 +74,24 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 
 **Drive structure, naming conventions, and privacy rules** → see `cursor/CLAUDE.md` (workspace file, always loaded).
 
-## Repo Hygiene Rules
+## Hygiene Rules
 
-- **Outputs are ephemeral.** Logs, screenshots, Lighthouse reports, and visual audits go to `outputs/` (gitignored). Delete after a task — never move to `docs/` or anywhere tracked.
-- **No Drive duplicates in `docs/`.** If a doc lives in Google Drive, note the Drive path in `docs/README.md` rather than keeping a copy here.
-- **Session notes go straight to `docs/archive/`.** Checklists, handover prompts, session summaries, `*_JUNE_*`-style files belong there immediately. `docs/` root is for live reference only.
-- **Sensitive data never in the repo.** Full privacy rules live in `cursor/CLAUDE.md` (canonical — do not duplicate here). Repo-specific note: this repo reads contact/courtesy data from generated JSON (gitignored) only.
+**Files and outputs**
+- **Outputs are ephemeral.** Logs, screenshots, Lighthouse reports, visual audits → `outputs/` (gitignored). Delete after a task, never move to `docs/` or anywhere tracked.
+- **Working docs are temporary.** Default is delete when the task ends (recycle bin). Keep only final outputs, decision records, reference docs. Helper scripts and intermediate files get deleted before reporting the task done.
+- **Session notes go straight to `docs/archive/`** — checklists, handover prompts, session summaries. `docs/` root is live reference only.
+- **No Drive duplicates in `docs/`.** Note the Drive path in `docs/README.md` instead.
+- **Sensitive data never in the repo.** Canonical rules in `cursor/CLAUDE.md`. Repo-specific: contact/courtesy data is read from generated JSON (gitignored) only.
 
-## File Hygiene Rule
-
-- While planning: create working docs with clear names (e.g. `AUDIT_PLAN.md`).
-- After a task: consolidate into existing docs or ask if it needs keeping. **Default: delete working docs** (recycle bin, not permanent). Keep only final outputs, decision records, reference docs.
-- **Build scripts and intermediate files** (helper scripts, extracted text, intermediate outputs): delete automatically before reporting the task done. Only the final deliverable remains.
-
-## Dev Tooling Hygiene
-
-Habits from the 2026-08-14 code-quality audit (dead `lint`, duplicate redirects, a 20-script `&&` chain, no push-time validation):
-
-- **A gate that can be skipped isn't a gate.** Keep required checks in `pre-push`, not only `pre-commit` — `--amend` and `--no-verify` bypass pre-commit routinely, and a red CI run on `main` is the result. `.githooks/pre-push` runs `check:content` before the Drive export for this reason.
-- **Every `npm run` script must be executed by something automated (a check, CI, a skill) or it rots silently.** `npm run lint` was broken for an entire Next.js major version before anyone noticed, because nothing ran it and no doc referenced it. It's wired into `.github/workflows/verify-content.yml` now.
-- **Redirects live in exactly one file: `vercel.json`.** Vercel's edge layer evaluates first, so a duplicate in `next.config.js` silently never fires — it's dead config that looks live.
-- **`.gitignore` does not untrack already-committed files.** After adding an ignore rule, `git ls-files | grep <pattern>` and `git rm --cached` any strays in the same commit.
-- **New `check:*` scripts go in `scripts/run-content-checks.mjs`'s array, not chained onto `check:content` with another `&&`.** Each `npm run` in a chain pays its own process-startup cost (~1.3s on Windows) on top of the check itself — the old 20-script chain took 26s for work that runs in ~5s in parallel.
-- **When bumping a major dependency (Next, React, etc.), grep this file for stale version claims.** The "Next.js 15 App Router" line under Tech Stack survived a bump to 16 unnoticed for weeks.
-- **When a file's status changes (dead, banked-for-later, generated-only), put a one-line comment saying so in the file itself.** Relying on this doc or a skill file alone to carry that fact invites contradiction — `mallorca-tracker-courses.js` was called "live data" here and "placeholder, never source from it" in two skill files at the same time.
+**Tooling** (from the 2026-08-14 code-quality audit: dead `lint`, duplicate redirects, a 20-script `&&` chain, no push-time validation)
+- **A gate that can be skipped isn't a gate.** Required checks belong in `pre-push`, not only `pre-commit` — `--amend` and `--no-verify` bypass pre-commit routinely. `.githooks/pre-push` runs `check:content` before the Drive export.
+- **Every `npm run` script must be executed by something automated, or it rots silently.** `lint` was broken for a whole Next major before anyone noticed. Now in `.github/workflows/verify-content.yml`.
+- **A rule in prose is not a rule that holds.** Prefer a `check:*` script over a paragraph whenever the thing is mechanically checkable — and verify a new check actually *fails* on a violation before trusting it. `check:api-safety` replaced ~40 lines of security prose; `SKILLS_SYNC.ps1` reported success while copying zero files for weeks.
+- **New `check:*` scripts go in `scripts/run-content-checks.mjs`'s array**, not chained onto `check:content` with `&&`. Each chained `npm run` pays ~1.3s startup on Windows; the old chain took 26s for ~5s of parallel work.
+- **Redirects live in exactly one file: `vercel.json`.** Vercel's edge layer evaluates first, so a duplicate in `next.config.js` never fires — dead config that looks live.
+- **`.gitignore` does not untrack already-committed files.** After adding a rule, `git ls-files | grep <pattern>` and `git rm --cached` strays in the same commit.
+- **When bumping a major dependency, grep this file for stale version claims.** The Tech Stack line said "Next.js 15" for weeks after the 16 bump — including for the whole time this very rule sat four lines away from it.
+- **When a file's status changes** (dead, banked, generated-only), put a one-line comment saying so *in the file*. Relying on this doc or a skill alone invites contradiction — `mallorca-tracker-courses.js` was "live data" here and "placeholder, never source from it" in two skills simultaneously.
 
 ---
 
@@ -138,7 +132,7 @@ Steps in order — do not skip, do not report done early:
 
 **AI coaching / strategic context:** `MMG_BUSINESS_BRIEF.md` (Drive root) — complete business context, refresh monthly. `Systems & Planning/AI Coach/` — business-coach OS files (Hormozi, Priestley, Blair/Enns, China, Western social) plus `MMG_AI_COACH_HOW_TO_USE_THIS_SYSTEM.md` (which files to combine per question type). For strategic sessions on claude.ai, not code work.
 
-**Code/website work:** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md` (content structure), `COURSE_BLOG_PIPELINE.md` (course reviews), `BUGS.md` (resolved bugs and recurring pitfalls — read before any deploy), `MMG_BRAND_VOICE_GUIDELINES.md` (writing voice, in Drive/Systems & Planning).
+**Code/website work:** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md` (content structure), `COURSE_BLOG_PIPELINE.md` (course reviews), `BUGS.md` (resolved bugs and recurring pitfalls — read before any deploy). Voice guide: see Public Copy Preflight above.
 
 **Current priorities/status:** use the current conversation, handover, and live Drive masters. Do not assume Google Tasks is canonical unless Andy explicitly says it is.
 
@@ -169,7 +163,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 - Any `guide-post-content.js` entries mentioning specific prices
 - `scripts/generate-lead-magnet-pdfs.py` — downloadable PDF prices, validated by `npm run check:lead-magnet-prices`; after fixing figures, regenerate with `npm run generate:lead-magnet-pdfs`
 
-`src/lib/mallorca-tracker-courses.js` holds live course data for the strokes-gained tool, not placeholder content — its scorecard facts (par/tees) are refreshed by `.\mmg.ps1 scorecards` and checked against the scorecard master by `npm run check:course-data` (`check-tracker-course-pack.js`, `check-strokes-gained-export.js`). Writing guardrails: `MMG_BRAND_VOICE_GUIDELINES.md` (NOT the superseded `MMG_AI_MISTAKES_AND_STYLE_GUARDRAILS.md`).
+`src/lib/mallorca-tracker-courses.js` holds live course data for the strokes-gained tool, not placeholder content — its scorecard facts (par/tees) are refreshed by `.\mmg.ps1 scorecards` and checked against the scorecard master by `npm run check:course-data` (`check-tracker-course-pack.js`, `check-strokes-gained-export.js`).
 
 ## Sources of Truth
 
@@ -188,7 +182,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 - **Knowledge skills:** `Skills/MMG_SKILL_*.md` — 0 currently synced (no matching folders exist under `~/.claude/skills/`; see `SKILLS_SYNC.ps1` output). Separate from the repo code-workflow skills in `.claude/skills/`.
 - **Tasks:** no settled canonical task system at the moment — see Task Management below.
 
-**Repo (code & development only):** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md`, `COURSE_BLOG_PIPELINE.md`, `MMG_BRAND_VOICE_GUIDELINES.md` (in Drive/Systems & Planning), `SKILLS_SYNC.ps1` (Drive → Cowork knowledge-skill sync).
+**Repo docs:** listed under Start Here above. Plus `SKILLS_SYNC.ps1` (Drive → Cowork knowledge-skill sync).
 
 Never reference private contact details in public content.
 
@@ -203,14 +197,13 @@ Never reference private contact details in public content.
 
 ## Tech Stack
 
-Next.js 15 App Router, React 18, JSX only. Vercel deployment from GitHub. Languages: EN default + DE, ES, FR, NL, SV, ZH. No database, no auth, no payment gateway.
+Next.js 16 App Router, React 18, JSX only. Vercel deployment from GitHub. Languages: EN default + DE, ES, FR, NL, SV, ZH. No database, no auth, no payment gateway.
 
 **NL and SV are SEO-only, unlinked from navigation on purpose** (`NAV_LOCALES` in `src/lib/site.js` deliberately excludes them; `ALL_LOCALES` has all 7). Pages exist and are maintained at full parity for organic search, but there is no nav link, language switcher entry, or other on-site path to them. This is intentional, not a gap — do not add them to nav links or flag their absence as a bug.
 
 ## Critical Rules
 
 - **Fonts:** Never hardcode `font-family: 'Jost'` or `font-family: 'Cormorant Garamond'`. Always use CSS variables: `font-family: var(--font-sans)` and `font-family: var(--font-serif)`. Hardcoding causes fallback fonts (Arial, Georgia) to render before the webfont loads. Read `docs/FONT_LOADING_RULE.md` for full context and audit status.
-- **Writing:** Read `MMG_BRAND_VOICE_GUIDELINES.md` before any draft. Mandatory self-check before shipping.
 - **Course reviews:** Read `COURSE_BLOG_PIPELINE.md` before starting.
 - **Course photos:** Always `ImageOps.exif_transpose()` from original source files. Never crop blog images. Max 1600px, WebP quality 82. (Full workflow: `/add-site-photos`.)
 - **Prototype images:** Use `/images/*-card.webp` for guide card images, `/images/courses/*.webp` for full course detail images. No external stock photos (Unsplash etc.) — all from `public/images/`. See `docs/prototype-guide.md`.
@@ -224,49 +217,13 @@ Next.js 15 App Router, React 18, JSX only. Vercel deployment from GitHub. Langua
 - **Release gate for locale-facing work:** After editing shared content, locale content, metadata, or localized page copy, run `npm run check:i18n-release` before commit.
 - **Text-change checklist:** When changing copy on any locale page, also check the shared components it flows through — full checklist in the `/localize-check` skill. Key points: contact page cards / success CTA / floating + mobile CTAs; page-level CTA labels for Plan Your Trip, Play With A Pro, Signature Day; Chinese contact uses WeChat language + anchors (not English WhatsApp); zh service labels read Chinese-facing; FAQ styling is shared (inspect the rendered accordion on mobile + desktop); for localized button/card labels, verify rendered desktop and mobile widths across all locales because longer translations can overflow even when English is clean; check hidden metadata too (breadcrumb JSON-LD, og/twitter, alt text, CTA labels); run `npm run check:locale-leaks` + `npm run build`, then scan the rendered zh routes (`/zh`, `/zh/contact`, `/zh/play-with-a-pro`, `/zh/plan-your-trip`, `/zh/signature-day`) in one pass.
 - **Large content files:** Do not use fragile editor operations on `guide-post-content.js` or `guides-content.js`; use precise scripted/byte replacement.
-- **Pre-deploy:** See Completion Gate below for the required steps. `npm run check:visual` (Playwright) is not part of that gate — it's slow and prone to timing out across the full multi-locale suite, so it's a manual check to run when a change is visual/layout-affecting, not a blocking requirement on every push.
-- **Push completion rule:** A successful `git push` only means the branch updated. Not complete until the required local checks pass after the last change (see Completion Gate).
+- **Pre-deploy:** required steps are in the Completion Gate above. `npm run check:visual` (Playwright) is deliberately *not* part of it — slow and prone to timing out across the full multi-locale suite, so run it by hand when a change is visual/layout-affecting.
 
-## API Route & Integration Security (check before shipping either)
+## API Routes & Data Collection
 
-Full audit: 2026-08-14 security review (contact form, Resend, OAuth handling, API routes, `npm audit`, CSP). No committed secrets, no injection paths found. Fixed then: unauthenticated `/api/cron/indexnow` (now `CRON_SECRET`-gated, plus a missing `GET` handler — Vercel cron sends GET, not POST), an SSRF in `/api/og`'s `image` param (now same-origin-only), and a lowered rate limit on `/api/send-itinerary` (sends mail to a caller-supplied address).
+**Adding or editing anything under `src/app/api/`, or any new form/tool/integration? Load the `/api-route-safety` skill first.** It carries the four-guard request contract, the cron-route exception, and the privacy-policy re-check.
 
-**Every new route under `src/app/api/` must open with the four guards from `src/lib/request-safety.js`, in this order** — copy an existing route (`contact/route.js` is the reference) rather than writing them fresh:
-
-1. `isAllowedOrigin(request)` → 403
-2. `isJsonRequest(request)` → 415
-3. `isPayloadTooLarge(request, <cap>)` → 413
-4. `await checkRateLimit(getClientKey(request, '<scope>'), <n>, <windowMs>)` → 429
-
-Then: every user string through `sanitizeText`/`sanitizeMultilineText` with a length cap; every value reaching email HTML through `escapeHtml`; every `tool`/`guide`/type discriminator checked against an allow-list object, never used to build a path, URL, or template name. Add a `website` honeypot to any route a form posts to. Never return a raw `error.message` to the caller.
-
-**Cron routes are the exception:** they get no `Origin` header, so they need `Authorization: Bearer ${process.env.CRON_SECRET}` instead (Vercel injects this automatically once `CRON_SECRET` is set as a Vercel env var — must match `.env.local`). Vercel cron sends **GET**, not POST.
-
-**Never** interpolate a request value into a `fetch()` host, a filesystem path, or a `dangerouslySetInnerHTML` payload. Server-side `fetch`/image targets must be same-origin (a path, not an absolute URL) or a hardcoded third-party host.
-
-**New third-party integration?** Key goes in `.env.local` + Vercel env vars — never a source file, never a log line. Confirm the vendor's outbound domain is in the `connect-src` CSP directive in `next.config.js`.
-
-**Periodically (roughly quarterly, or before a batch of new routes/integrations):** run `npm audit` (DoS-only advisories in build-time deps are low-priority, don't chase them) and confirm `UPSTASH_REDIS_REST_URL`/`_TOKEN` are still set in Vercel — without them the rate limiter silently degrades to per-instance in-memory and the configured limits stop meaning much.
-
-### Privacy surface — re-check when ANY new data-collecting feature ships
-
-A new form, tool, quiz, integration, or API route means the privacy policy is now **presumed stale until checked**. This is a code task, not a legal one: the job is keeping `src/app/(en)/privacy-policy/page.jsx` + `src/app/es/privacy-policy/page.jsx` factually matched to what the code does. Andy makes the legal calls; you keep the description honest.
-
-Run this before shipping any feature that accepts a visitor keystroke or fires a third-party request:
-
-1. **New field collected?** If it reaches a third party, it must be named in Data Sharing (§7). "Email address and related signup data" does not cover handicap, trip dates, budget band, group size, or free-text notes — list what actually leaves the site.
-2. **New processor?** Any new vendor receiving personal data (email sender, list host, storage, rate-limit backend, analytics) goes in §7 *by name*, with where it processes. Adding a key to `.env.local` and adding a vendor to §7 are the same task — do both or neither.
-3. **New cookie, localStorage key, or third-party script?** §6 currently claims cookies are analytics-only. If that stops being true, §6 is wrong. Functional/UI state (e.g. `HomepageLeadPopup` dismissal) is consent-exempt and fine — advertising or cross-site anything is not.
-4. **Does it enrol anyone in email that isn't what they asked for?** §3 promises "no unsolicited marketing without explicit consent". A form whose stated purpose is a PDF/result but which also adds the address to a nurture group breaks that promise in code. Keep the marketing opt-in a separate, unchecked, clearly-labelled box (the `subscribeNewsletter` pattern in `LeadMagnetPage.jsx` is the reference — copy it).
-5. **Point-of-collection notice.** GDPR Art. 13 wants the notice where data is entered, not only in the footer. New forms get a privacy-policy link next to the submit button.
-6. **Bump `Last updated:`** on both EN and ES policy pages in the same commit, and mirror any wording change into ES — they drift silently because only EN gets edited.
-7. **New locale-facing legal need?** `LEGAL_LOCALES` in `src/lib/site.js` is `{en, es}`; every other locale falls back to English via `getLegalPath` (graceful, not a 404 — don't "fix" it by adding broken routes).
-
-**Why this is a standing rule:** audited 2026-08-14 and the policy was last edited 7 June 2026 while five data-collecting routes landed 14 June – 4 July. Nothing was malicious — each feature just shipped without anyone re-reading the policy, so it silently stopped describing the site. Nothing automated catches this: `check:content` and the locale checks validate structure and copy, never whether a stated data practice is still true.
-
-**Two more rules from the same 2026-08-14 audit:**
-- **Verify vendor compliance claims live before writing them into policy text.** If a policy update names a processor's data location or certification (EU-US Data Privacy Framework, EU hosting, etc.), check it with a live search rather than from memory — a vendor's compliance status changes over time and training knowledge goes stale. Confirmed live during the audit: MailerLite is Lithuania/EU-based (no transfer clause needed), Google/Resend/Vercel hold DPF certification, Upstash doesn't (named under Standard Contractual Clauses instead).
-- **Keep compliance-driven UI additions minimal.** When a fix needs a privacy-policy link or similar notice at the point of data collection, reuse existing small-print styling already on that page (e.g. the `ToolTrustLine` / "No spam. Unsubscribe any time." pattern) rather than introducing a new prominent element. Andy has explicitly said no cookie banner, matching peer sites his size — compliance UI on this site should stay quiet, not become its own feature.
+`npm run check:api-safety` (in `check:content`) enforces the route guards automatically and fails the build on a route that is missing them. **It cannot check the privacy surface** — a new form, tool, or integration means the privacy policy is presumed stale until someone re-reads it against what the code now does. That step is human, and it is the one that has actually slipped before.
 
 ## Analytics And SEO Rules
 
@@ -285,7 +242,9 @@ Full inventory (sitemap, robots, RSS, llms.txt, structured data, hreflang, OG im
 
 ### Meta Descriptions — CTR Approach
 
-CTR on high-impression pages is the primary SEO lever. Rules + the key-pages tracking table live in the `/meta-ctr` skill and `docs/seo-reference.md`. In short: lead with the specific number/fact, answer the real question, under 155 chars, no filler endings. **Code gotcha (corrected 2026-08-14 — the old note here was wrong):** a curly apostrophe *inside* string content parses fine in single quotes (`'Andy's verdict'` — sic, that one's still a real syntax error, but `'Andy's verdict'` with a *typographic* apostrophe is not). The actual bug, seen in 16 separate fix commits, is a typographic quote used as the string *delimiter itself* — `title: 'Golfreise planen'` where the opening/closing `'`/`"` got typed as `'`/`'`/`"`/`"` (U+2018/2019/201C/201D), which is a real syntax error in any quote style. This usually comes from pasting from Word/Docs/Sheets with smart quotes on, or a find/replace that touched delimiters, not just content. `npm run check:js-parse` (wired into `check:content` and pre-commit) now catches this directly — it parses every changed file and fails on any syntax error, this class included — so it's caught at commit time regardless of cause.
+CTR on high-impression pages is the primary SEO lever. Rules + the key-pages tracking table live in the `/meta-ctr` skill and `docs/seo-reference.md`. In short: lead with the specific number/fact, answer the real question, under 155 chars, no filler endings.
+
+**Smart-quote gotcha (seen in 16 separate fix commits):** the bug is a typographic quote used as a string *delimiter* — U+2018/2019/201C/201D where a plain `'` or `"` belongs. Typographic characters *inside* string content are fine. Usual cause: pasting from Word/Docs/Sheets with smart quotes on, or a find/replace that touched delimiters as well as content. `npm run check:js-parse` (in `check:content` and pre-commit) parses every changed file and fails on any syntax error, so this is caught at commit time regardless of cause.
 
 ### Analytics Workflow
 

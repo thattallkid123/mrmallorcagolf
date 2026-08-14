@@ -28,6 +28,7 @@
     "check:doc-commands": "node --no-warnings scripts/check-doc-commands.mjs",
     "check:links": "node --no-warnings scripts/check-internal-links.mjs",
     "check:voice": "node scripts/check-voice.mjs",
+    "check:api-safety": "node --no-warnings scripts/check-api-safety.mjs",
     "check:tool-prices": "node scripts/check-tool-price-sync.mjs",
     "check:tool-green-fees": "node --no-warnings scripts/check-tool-green-fees.mjs",
     "check:pricing-narrative": "node --no-warnings scripts/check-pricing-narrative.mjs",

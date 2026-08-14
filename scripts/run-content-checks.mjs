@@ -46,6 +46,7 @@ const CHECKS = [
   { name: 'check:doc-commands', script: 'check-doc-commands.mjs' },
   { name: 'check:links', script: 'check-internal-links.mjs' },
   { name: 'check:voice', script: 'check-voice.mjs' },
+  { name: 'check:api-safety', script: 'check-api-safety.mjs' },
   { name: 'check:tool-prices', script: 'check-tool-price-sync.mjs' },
   { name: 'check:tool-green-fees', script: 'check-tool-green-fees.mjs' },
   { name: 'check:pricing-narrative', script: 'check-pricing-narrative.mjs' },
