@@ -118,7 +118,7 @@ Steps in order — do not skip, do not report done early:
 
 **If any step is blocked** (hook failure, build error, Vercel error) — fix it. Do not close out the task or leave the repo broken. **Before starting new work each session, run `git status`;** if there are complete-looking uncommitted changes, ask whether to commit them first.
 
-**Build gotcha:** if `npm run build` compiles successfully but then fails at "Collecting page data" with `ENOENT ... .next\server\middleware-manifest.json`, it's a stale/corrupted `.next` cache (a known Windows Next.js issue), not a real regression from the change just made. Delete `.next` and rebuild before assuming the code broke.
+**Build gotcha:** if `npm run build` compiles and prerenders all pages successfully but then fails with `ENOENT` on a freshly-written `.next` file — `middleware-manifest.json`, `proxy.js.nft.json`, a page's `.js` module, `_ssgManifest.js`, or similar, the specific file varies — that's OneDrive's real-time sync racing Next's own output writer during "Collecting build traces" / "Finalizing page optimization," not a real regression from the change just made. Fix: delete `.next` and rebuild. On Windows, `rm -rf .next` can itself fail with "Directory not empty" (a lingering locked handle); use `Remove-Item -Recurse -Force -Confirm:$false .next` in PowerShell instead. A single clean rebuild doesn't always clear it — retry (sometimes 2-3x) before suspecting the code. CI (GitHub Actions, no OneDrive) is unaffected and is the authoritative build check either way per the Completion Gate above.
 
 ## Start Here
 
