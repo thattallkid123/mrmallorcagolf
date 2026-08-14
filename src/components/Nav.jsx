@@ -131,6 +131,7 @@ export default function Nav({ transparent = false, lang }) {
             height={38}
             sizes="38px"
             quality={88}
+            priority
           />
           <span className="sr-only">Mr Mallorca Golf home</span>
         </Link>
