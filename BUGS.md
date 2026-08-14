@@ -7,11 +7,7 @@ When a new bug is fixed, add it here so it never comes back.
 
 ## Import paths (most common build failure)
 **Pattern:** Wrong relative depth for component imports.
-**Rule:**
-- English pages (`src/app/[page]/`): use `../../components/ComponentName`
-- Language pages (`src/app/[lang]/[page]/`): use `../../../components/ComponentName`
-- `GolfCoursesClient` from a language page: `../../golf-courses/GolfCoursesClient`
-- Never use `./GolfCoursesClient` or `../../components/GolfCoursesClient`
+**Rule:** English pages live under the `(en)` route group (`src/app/(en)/[page]/`), so English and language pages sit at the same filesystem depth from `src/components` — both use `../../../components/ComponentName`. Count directory levels rather than assuming a fixed depth; deeper nesting adds another `../`. Full detail: `CLAUDE.md` → Critical Rules → Import paths.
 
 ## Deleted files leaving broken imports
 **Pattern:** Deleting a component, for example `FillImageFrame.jsx` or experience-copy, without updating every import.

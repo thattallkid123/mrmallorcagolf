@@ -31,7 +31,10 @@ $skills = @(
     @{Drive="MMG_SKILL_REPURPOSE.md"; Claude="repurpose"},
     @{Drive="MMG_SKILL_CHINESE_BACKLOG.md"; Claude="chinese-backlog"},
     @{Drive="MMG_SKILL_EMAIL_MANAGEMENT.md"; Claude="email-management"},
-    @{Drive="MMG_SKILL_SITE_OPERATIONS_MMG.md"; Claude="site-operations-mmg"}
+    @{Drive="MMG_SKILL_SITE_OPERATIONS_MMG.md"; Claude="site-operations-mmg"},
+    @{Drive="MMG_SKILL_AUTONOMO_FILING.md"; Claude="mmg-autonomo-filing"},
+    @{Drive="MMG_SKILL_CLIENT_DOCS.md"; Claude="mmg-client-docs"},
+    @{Drive="MMG_SKILL_HERMES_OPS.md"; Claude="mmg-hermes-ops"}
 )
 
 Write-Host "MMG Skills Sync Script" -ForegroundColor Green
@@ -42,7 +45,9 @@ Write-Host "Target (Claude): $claude"
 Write-Host ""
 
 $syncCount = 0
+$skippedCount = 0
 $errorCount = 0
+$syncedFolders = @()
 
 if (-not (Test-Path $gdrive)) {
     Write-Host "Drive source folder not found: $gdrive" -ForegroundColor Red
@@ -65,26 +70,44 @@ foreach ($skill in $skills) {
         try {
             Copy-Item $driveFile $claudeFile -Force
             Write-Host "  Copied to Claude" -ForegroundColor Green
+            $syncCount++
+            $syncedFolders += $skill.Claude
         } catch {
             Write-Host "  Failed to copy to Claude: $_" -ForegroundColor Red
             $errorCount++
-            continue
         }
     } else {
-        Write-Host "  Claude target not found, skipping: $claudeFile" -ForegroundColor Yellow
+        Write-Host "  Claude target folder not found, skipping: $claudeFile" -ForegroundColor Yellow
+        $skippedCount++
     }
+}
 
-    $syncCount++
+# Warn about Drive skill files not in the mapping table above - this is the
+# only "discovery" this script does; a new file still needs a manual line
+# added to $skills before it will ever be copied.
+$mappedDriveNames = $skills | ForEach-Object { $_.Drive }
+$unmapped = Get-ChildItem -Path $gdrive -Filter "MMG_SKILL_*.md" -File -ErrorAction SilentlyContinue |
+    Where-Object { $mappedDriveNames -notcontains $_.Name }
+foreach ($u in $unmapped) {
+    Write-Host "  Found unmapped Drive skill file: $($u.Name) - add it to `$skills in SKILLS_SYNC.ps1 to sync it" -ForegroundColor Yellow
 }
 
 Write-Host ""
 Write-Host "Sync Complete" -ForegroundColor Green
-Write-Host "  Synced: $syncCount"
+Write-Host "  Copied: $syncCount"
+Write-Host "  Skipped (no matching Claude folder): $skippedCount"
 Write-Host "  Errors: $errorCount"
+if ($unmapped.Count -gt 0) {
+    Write-Host "  Unmapped Drive files: $($unmapped.Count)" -ForegroundColor Yellow
+}
 
-if ((Test-Path $claudeMdPath) -and $syncCount -gt 0) {
-    $folderNames = $skills | ForEach-Object { $_.Claude } | Sort-Object -Unique
-    $newLine = '- **Knowledge skills:** `Skills/MMG_SKILL_*.md` (' + $folderNames.Count + ' skills - ' + ($folderNames -join ', ') + '). Synced to Claude by `SKILLS_SYNC.ps1`. Separate from repo code-workflow skills in `.claude/skills/`.'
+if (Test-Path $claudeMdPath) {
+    $folderNames = $syncedFolders | Sort-Object -Unique
+    $newLine = if ($folderNames.Count -gt 0) {
+        '- **Knowledge skills:** `Skills/MMG_SKILL_*.md` (' + $folderNames.Count + ' skills currently synced - ' + ($folderNames -join ', ') + '). Synced to Claude by `SKILLS_SYNC.ps1`. Separate from repo code-workflow skills in `.claude/skills/`.'
+    } else {
+        '- **Knowledge skills:** `Skills/MMG_SKILL_*.md` - 0 currently synced (no matching folders exist under `~/.claude/skills/`; see `SKILLS_SYNC.ps1` output). Separate from repo code-workflow skills in `.claude/skills/`.'
+    }
     $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
     $claudeMdContent = [System.IO.File]::ReadAllText($claudeMdPath, $utf8NoBom)
     $pattern = '(?m)^- \*\*Knowledge skills:\*\*.*$'
@@ -102,4 +125,8 @@ if ($errorCount -ne 0) {
     exit 1
 }
 
-Write-Host "All available skills synced successfully." -ForegroundColor Green
+if ($skippedCount -gt 0) {
+    Write-Host "$skippedCount skill(s) skipped - no matching folder under $claude. Create the folder (with an empty SKILL.md) for any you want this script to populate, then re-run." -ForegroundColor Yellow
+}
+
+Write-Host "Done. $syncCount skill(s) copied, $skippedCount skipped." -ForegroundColor Green

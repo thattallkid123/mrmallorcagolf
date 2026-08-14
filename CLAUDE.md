@@ -42,8 +42,7 @@ This applies to guides, service pages, offer copy, metadata, CTAs, translations,
 The new PC is primary as of 30 July 2026; the old PC is secondary and its scheduled MMG tasks are disabled. GitHub is the source of truth for code, Google Drive for business docs.
 
 **Old PC — secondary**
-- Manual worker root: `C:\MMG-Worker\cursor`.
-- Old retired workspace `C:\Users\andyg\Desktop\cursor` must not be used for new work.
+- Manual worker root and retired-workspace path: see `cursor\CLAUDE.md` (canonical — do not duplicate here, the two have drifted apart before).
 - Use `$env:MMG_WORKSPACE_ROOT` and `$env:MMG_DRIVE_ROOT` instead of hardcoded paths when possible.
 
 **New PC (Andy) — primary** — Desktop is inside OneDrive folder on this machine
@@ -80,7 +79,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 - **Outputs are ephemeral.** Logs, screenshots, Lighthouse reports, and visual audits go to `outputs/` (gitignored). Delete after a task — never move to `docs/` or anywhere tracked.
 - **No Drive duplicates in `docs/`.** If a doc lives in Google Drive, note the Drive path in `docs/README.md` rather than keeping a copy here.
 - **Session notes go straight to `docs/archive/`.** Checklists, handover prompts, session summaries, `*_JUNE_*`-style files belong there immediately. `docs/` root is for live reference only.
-- **Sensitive data never in the repo.** Course contacts, courtesy terms, TO rates, emails, phone numbers stay in `Private/Workbooks/` on Drive. The repo reads from generated JSON (gitignored). If AI help is needed for a specific contact, share just that row in chat.
+- **Sensitive data never in the repo.** Full privacy rules live in `cursor/CLAUDE.md` (canonical — do not duplicate here). Repo-specific note: this repo reads contact/courtesy data from generated JSON (gitignored) only.
 
 ## File Hygiene Rule
 
@@ -123,11 +122,11 @@ Steps in order — do not skip, do not report done early:
 
 ## Start Here
 
-**Operations & monitoring:** `MMG Analytics Dashboard.gsheet` (Drive / Systems & Planning) — live GA4/Search Console; `MMG_MASTER_CONTROL_CENTER.md` (Drive root) — business ops & financial tracking.
+**Operations & monitoring:** `MMG_ANALYTICS_DASHBOARD.gsheet` (Drive / Systems & Planning) — live GA4/Search Console; `MMG_MASTER_CONTROL_CENTER.md` (Drive root) — business ops & financial tracking.
 
-**AI coaching / strategic context:** `MMG_BUSINESS_BRIEF.md` (Drive root) — complete business context, refresh monthly. `Systems & Planning/AI Coach/` — business-coach OS files (Hormozi, Priestley, Blair/Enns, China, Western social) plus `HOW_TO_USE_THIS_SYSTEM.md` (which files to combine per question type). For strategic sessions on claude.ai, not code work.
+**AI coaching / strategic context:** `MMG_BUSINESS_BRIEF.md` (Drive root) — complete business context, refresh monthly. `Systems & Planning/AI Coach/` — business-coach OS files (Hormozi, Priestley, Blair/Enns, China, Western social) plus `MMG_AI_COACH_HOW_TO_USE_THIS_SYSTEM.md` (which files to combine per question type). For strategic sessions on claude.ai, not code work.
 
-**Code/website work:** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md` (content structure), `COURSE_BLOG_PIPELINE.md` (course reviews), `MMG_BRAND_VOICE_GUIDELINES.md` (writing voice, in Drive/Systems & Planning).
+**Code/website work:** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md` (content structure), `COURSE_BLOG_PIPELINE.md` (course reviews), `BUGS.md` (resolved bugs and recurring pitfalls — read before any deploy), `MMG_BRAND_VOICE_GUIDELINES.md` (writing voice, in Drive/Systems & Planning).
 
 **Current priorities/status:** use the current conversation, handover, and live Drive masters. Do not assume Google Tasks is canonical unless Andy explicitly says it is.
 
@@ -141,18 +140,18 @@ Next newsletter step: do not build a heavy programme yet — the system is mostl
 
 ## Course scorecard data (par / SI / distances)
 
-**Par / SI / tee data now sync from the MMG tools scorecard pipeline.** Ultimate truth is the official club PDFs in Drive `Reference/Scorecards/Scorecard PDFs/`. The editable machine master is `mmg-tools\pricing\edit\confirmed\scorecards.json`; run `.\mmg.ps1 scorecards` from mmg-tools to refresh `src/lib/scorecard-data.js` (plus the scoring apps) from it. `Reference/SCORECARD_MASTER.md` is a human-readable legacy reference only — do not edit it as a sync source. Validation commands: `.\mmg.ps1 scorecard-audit` (PDF vs master) and `.\mmg.ps1 scorecard-sources` (PDF vs central JSON vs strokes-gained). Course-listing par pills are checked against the scorecard master by `npm run check:course-data` (`check-scorecard-data.js`); editorial/blog copy that mentions par or length is still a manual surface and should be checked separately. For the full manual chain (PDF → `scorecards.json` → generated scorecard data → `src/lib/golf-courses-data.js` pills text → any blog content mentioning that par), use the `/scorecard-update` skill.
+**Par / SI / tee data now sync from the MMG tools scorecard pipeline.** Ultimate truth is the official club PDFs in Drive `Reference/Scorecards/Scorecard PDFs/`. The editable machine master is `mmg-tools\pricing\edit\confirmed\scorecards.json`; run `.\mmg.ps1 scorecards` from mmg-tools to refresh `src/lib/scorecard-data.js` (plus the scoring apps) from it. `Reference/MMG_SCORECARD_MASTER.md` is a human-readable legacy reference only — do not edit it as a sync source. Validation commands: `.\mmg.ps1 scorecard-audit` (PDF vs master) and `.\mmg.ps1 scorecard-sources` (PDF vs central JSON vs strokes-gained). Course-listing par pills are checked against the scorecard master by `npm run check:course-data` (`check-scorecard-data.js`); editorial/blog copy that mentions par or length is still a manual surface and should be checked separately. For the full manual chain (PDF → `scorecards.json` → generated scorecard data → `src/lib/golf-courses-data.js` pills text → any blog content mentioning that par), use the `/scorecard-update` skill.
 
 ## Course pricing data — sync chain
 
-Edit the pricing master Google Sheet (mmg-tools control panel) → run sync → JSON + readable MD regenerate. The generated `MMG_COURSE_PRICING_MASTER_*` files in Drive `Reference/` are script-output only — never edit them. After editing the Sheet, run from mmg-tools: `.\mmg.ps1 pricing` then `.\mmg.ps1 site`.
+Edit the pricing master Google Sheet, then from mmg-tools run `.\mmg.ps1 pricing-publish` (or double-click `UPDATE MMG PRICING.cmd` on the Desktop) — the one guarded pass that publishes both the MMG tool outputs and the public website price pills/tool fallbacks in one step. (The older two-step `.\mmg.ps1 pricing` then `.\mmg.ps1 site` still works but is superseded — `pricing-publish` is the current canonical route and also runs automatically every Monday 7am.) The generated `MMG_COURSE_PRICING_MASTER_*` files in Drive `Reference/` are script-output only — never edit them.
 
 For any price change use the `/pricing-change` skill (full surface sweep). Reference maps: `docs/content-architecture.md`, `docs/pricing-change-checklist.md`, `docs/pricing-surfaces-inventory.md` (its "Course pricing and golf-cost reference layers" section — the rest of that file is MMG *service* pricing, a different domain; the full course-pricing architecture is `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1). Santa Ponsa 2 and 3 can stay in private reference notes even when not bookable.
 
-**Auto-synced when you run `.\mmg.ps1 pricing`:**
+**Auto-synced when you run `.\mmg.ps1 pricing-publish` (or the older `.\mmg.ps1 site` step):**
 - Course-listing pills in `src/lib/golf-courses-data.js` (e.g., `Peak €165 / Low €115`)
 
-**Manual edits required when pricing changes** (narrative context, not auto-synced by `.\mmg.ps1 pricing` — but validated against canonical by `npm run check:pricing-narrative`):
+**Manual edits required when pricing changes** (narrative context, not auto-synced by the pricing publish — but validated against canonical by `npm run check:pricing-narrative`):
 - `src/lib/guide-article-content.js` — EN blog post pricing references
 - `src/lib/guide-article-content-localized.js` — all 6 language versions
 - Any `guide-post-content.js` entries mentioning specific prices
@@ -167,14 +166,14 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 - **Business Brief:** `MMG_BUSINESS_BRIEF.md` (root) — AI coaching context, business story, status
 - **Stable course facts:** `mmg-tools/pricing/edit/confirmed/course-facts-master.json`, edited through the MMG Control Panel and published with `.\mmg.ps1 course-facts`. Website access/coordinate/fact helpers are generated outputs.
 - **Course Encyclopaedia:** Drive `MMG_ENCYCLOPAEDIA_DATA_MASTER.md` — editorial voice, firsthand experience, rankings, restaurants and content angles. It is not the authority for pricing, access or other synced operational facts.
-- **Financial:** `Business Operations & Financial/MMG_Income_and_Expenses_2026.xlsx` + `Business Operations & Financial/MMG_Extra_Coaching_2026.xlsx`
+- **Financial:** `Business Operations & Financial/MMG_INCOME_AND_EXPENSES_2026.xlsx` + `Business Operations & Financial/MMG_EXTRA_COACHING_2026.xlsx`
 - **Systems & planning:** `Systems & Planning/`
 - **Course contacts & courtesy:** Courtesy master Google Sheet (Golf Courses tab — 24 courses, contacts, booking, courtesy; plus Affiliates and China Operators tabs). The old `MMG_CONTACTS_COURSES_AND_COURTESY.xlsx` is retired/archived.
 - **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx`
 - **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
 - **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/`
 - **Reference:** `Reference/` (scorecard PDFs, pricing research)
-- **Knowledge skills:** `Skills/MMG_SKILL_*.md` (17 skills - autonomo-filing, blog-writing, chinese-backlog, chinese-content, client-docs, content-pipeline, email-management, frontend-design-mmg, hermes-ops, mmg-business-operations, mmg-partnerships, mr-mallorca-golf-carousel, nextjs-mrmallorcagolf, repurpose, seo-content, site-operations-mmg, social-media-mmg). Synced to Cowork by `SKILLS_SYNC.ps1`. Separate from the repo code-workflow skills in `.claude/skills/`.
+- **Knowledge skills:** `Skills/MMG_SKILL_*.md` — 0 currently synced (no matching folders exist under `~/.claude/skills/`; see `SKILLS_SYNC.ps1` output). Separate from the repo code-workflow skills in `.claude/skills/`.
 - **Tasks:** no settled canonical task system at the moment — see Task Management below.
 
 **Repo (code & development only):** `BRANCHES.md` (git rules), `CONTENT_WORKFLOW.md`, `COURSE_BLOG_PIPELINE.md`, `MMG_BRAND_VOICE_GUIDELINES.md` (in Drive/Systems & Planning), `SKILLS_SYNC.ps1` (Drive → Cowork knowledge-skill sync).
@@ -215,6 +214,27 @@ Next.js 15 App Router, React 18, JSX only. Vercel deployment from GitHub. Langua
 - **Large content files:** Do not use fragile editor operations on `guide-post-content.js` or `guides-content.js`; use precise scripted/byte replacement.
 - **Pre-deploy:** See Completion Gate below for the required steps. `npm run check:visual` (Playwright) is not part of that gate — it's slow and prone to timing out across the full multi-locale suite, so it's a manual check to run when a change is visual/layout-affecting, not a blocking requirement on every push.
 - **Push completion rule:** A successful `git push` only means the branch updated. Not complete until the required local checks pass after the last change (see Completion Gate).
+
+## API Route & Integration Security (check before shipping either)
+
+Full audit: 2026-08-14 security review (contact form, Resend, OAuth handling, API routes, `npm audit`, CSP). No committed secrets, no injection paths found. Fixed then: unauthenticated `/api/cron/indexnow` (now `CRON_SECRET`-gated, plus a missing `GET` handler — Vercel cron sends GET, not POST), an SSRF in `/api/og`'s `image` param (now same-origin-only), and a lowered rate limit on `/api/send-itinerary` (sends mail to a caller-supplied address).
+
+**Every new route under `src/app/api/` must open with the four guards from `src/lib/request-safety.js`, in this order** — copy an existing route (`contact/route.js` is the reference) rather than writing them fresh:
+
+1. `isAllowedOrigin(request)` → 403
+2. `isJsonRequest(request)` → 415
+3. `isPayloadTooLarge(request, <cap>)` → 413
+4. `await checkRateLimit(getClientKey(request, '<scope>'), <n>, <windowMs>)` → 429
+
+Then: every user string through `sanitizeText`/`sanitizeMultilineText` with a length cap; every value reaching email HTML through `escapeHtml`; every `tool`/`guide`/type discriminator checked against an allow-list object, never used to build a path, URL, or template name. Add a `website` honeypot to any route a form posts to. Never return a raw `error.message` to the caller.
+
+**Cron routes are the exception:** they get no `Origin` header, so they need `Authorization: Bearer ${process.env.CRON_SECRET}` instead (Vercel injects this automatically once `CRON_SECRET` is set as a Vercel env var — must match `.env.local`). Vercel cron sends **GET**, not POST.
+
+**Never** interpolate a request value into a `fetch()` host, a filesystem path, or a `dangerouslySetInnerHTML` payload. Server-side `fetch`/image targets must be same-origin (a path, not an absolute URL) or a hardcoded third-party host.
+
+**New third-party integration?** Key goes in `.env.local` + Vercel env vars — never a source file, never a log line. Confirm the vendor's outbound domain is in the `connect-src` CSP directive in `next.config.js`.
+
+**Periodically (roughly quarterly, or before a batch of new routes/integrations):** run `npm audit` (DoS-only advisories in build-time deps are low-priority, don't chase them) and confirm `UPSTASH_REDIS_REST_URL`/`_TOKEN` are still set in Vercel — without them the rate limiter silently degrades to per-instance in-memory and the configured limits stop meaning much.
 
 ## Analytics And SEO Rules
 
