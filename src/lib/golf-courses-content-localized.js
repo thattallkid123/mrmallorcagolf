@@ -340,7 +340,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       },
       "east": {
         "title": "Ost",
-        "subtitle": "Bra omrade att bo i",
+        "subtitle": "Bra område att bo i",
         "count": "6 banor"
       },
       "north": {

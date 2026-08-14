@@ -101,7 +101,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Visitantes conocidos"
         },
         {
-          "text": "Rafa Nadal juega aquí con frecuencia y ha dicho que es su campo favorito en Mallorca. Barack Obama jugo aquí en noviembre de 2024. Normalmente esos nombres no me importan demasiado, pero dicen algo sobre la posicion de Son Gual en la isla."
+          "text": "Rafa Nadal juega aquí con frecuencia y ha dicho que es su campo favorito en Mallorca. Barack Obama jugo aquí en noviembre de 2024. Normalmente esos nombres no me importan demasiado, pero dicen algo sobre la posición de Son Gual en la isla."
         },
         {
           "caption": "El tee del 10, justo delante de la casa club. El par 4 se abre delante de usted."
@@ -148,7 +148,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Donde suelen perder golpes los visitantes",
-              "La mayoria de golpes perdidos empiezan con una mala posicion ligera desde el tee, una bola en uno de los bunkers grandes y luego un juego corto muy incomodo alrededor de esos greens elevados."
+              "La mayoria de golpes perdidos empiezan con una mala posición ligera desde el tee, una bola en uno de los bunkers grandes y luego un juego corto muy incomodo alrededor de esos greens elevados."
             ],
             [
               "Consejo de casa club",
@@ -301,7 +301,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Greenfees 2026"
         },
         {
-          "text": "Die oeffentlichen 18-Loch-Preise liegen normalerweise zwischen 115 € und 165 €. Wartungsfenster im Januar können günstiger sein, sollten aber nicht als ehrlicher Vergleichspreis gelten. Fruehjahr und Herbst erreichen zur Spitzenzeit 165 €, und der normale Sommerpreis liegt meist deutlich über dem alten Wartungspreis."
+          "text": "Die oeffentlichen 18-Loch-Preise liegen normalerweise zwischen 115 € und 165 €. Wartungsfenster im Januar können günstiger sein, sollten aber nicht als ehrlicher Vergleichspreis gelten. Frühjahr und Herbst erreichen zur Spitzenzeit 165 €, und der normale Sommerpreis liegt meist deutlich über dem alten Wartungspreis."
         },
         {
           "text": "Leihschläger im Proshop: Callaway 35 €, Titleist 45 € pro Runde. Buggy 45 €, Elektrotrolley ab 15 €. Ein gueltiger WHS-Handicapnachweis ist erforderlich."
@@ -398,7 +398,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "La première fois que j'ai joue Son Gual, j'etais sur les departs noirs. Le vent venait fort de la gauche, je jouais avec un ami professionnel PGA qui score très bien, et la camera tournait pour un vlog. Cela ajoute sa propre pression. J'etais un peu nerveux."
         },
         {
-          "text": "Le drive est parti légèrement du talon. Il a quand même vole plus loin que prevu et a evite les bunkers, de peu. A Son Gual, les bunkers sont nombreux, places exactement la ou les coups légèrement manques finissent. Vous devez gerer le vent, les deniveles, les contacts irreguliers, et plus vous les regardez, plus les bunkers semblent grands."
+          "text": "Le drive est parti légèrement du talon. Il a quand même vole plus loin que prevu et a evite les bunkers, de peu. A Son Gual, les bunkers sont nombreux, places exactement la ou les coups légèrement manques finissent. Vous devez gérer le vent, les deniveles, les contacts irreguliers, et plus vous les regardez, plus les bunkers semblent grands."
         },
         {
           "caption": "Son Gual compte beaucoup de bunkers. Ils sont places exactement la ou finissent les coups un peu rates."
@@ -761,7 +761,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Snabba, upphojda och harda mot daliga inspel. I januari var greener och foregreens sa kortklippta att det stack ut for arstiden. Bra for spinn, obekvamt när man star med en tajt chip och liten landningsyta."
         },
         {
-          "text": "En av mina spelpartners den dagen, en elev från Shanghai, slog en liten draw in mot green pa hål 4. Bollen landade bara nagra meter från flaggan och rullade anda över bakkanten. Det hander ofta har. Ett okej slag betyder inte automatiskt ett bra resultat."
+          "text": "En av mina spelpartners den dagen, en elev från Shanghai, slog en liten draw in mot green pa hål 4. Bollen landade bara nagra meter från flaggan och rullade anda över bakkanten. Det händer ofta har. Ett okej slag betyder inte automatiskt ett bra resultat."
         },
         {
           "caption": "Fjarde greenen. Bollen fortsatter rulla efter landningen."
@@ -814,7 +814,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Greenfee 2026"
         },
         {
-          "text": "Publikt pris for 18 hål ligger normalt mellan 115 € och 165 €. Underhallsfonster i januari kan vara billigare, men det bor inte anvandas som en arlig jamforelseprissattning. Var och host när som hogst 165 €, och det vanliga sommarpriset ligger oftast en bit över det gamla underhallspriset."
+          "text": "Publikt pris for 18 hål ligger normalt mellan 115 € och 165 €. Underhallsfonster i januari kan vara billigare, men det bor inte anvandas som en arlig jamforelseprissattning. Var och host när som högst 165 €, och det vanliga sommarpriset ligger oftast en bit över det gamla underhallspriset."
         },
         {
           "text": "Klubbhyra i proshoppen: Callaway 35 €, Titleist 45 € per rond. Buggy 45 €, elvagn från 15 €. Giltigt WHS-handicapbevis kravs."
@@ -1159,7 +1159,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "items": [
             [
               "Mejor hora de salida",
-              "La manana es ideal aquí. La luz es mejor y normalmente tiene la version más suave de la brisa costera."
+              "La manana es ideal aquí. La luz es mejor y normalmente tiene la versión más suave de la brisa costera."
             ],
             [
               "Consejo con el viento",
@@ -2688,7 +2688,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Vindtips",
-              "När vinden kommer slar den framfor allt mot de langa par 3-halen och hål 10. Ta tillrackligt med klubba och se yardaget pa scorekortet som en startpunkt, inte som hela svaret."
+              "När vinden kommer slar den framfor allt mot de langa par 3-halen och hål 10. Ta tillräckligt med klubba och se yardaget pa scorekortet som en startpunkt, inte som hela svaret."
             ],
             [
               "Där besokare tappar slag",
@@ -4020,7 +4020,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Consejo con el viento",
-              "Este es un campo de posicion antes que nada. Elija su zona de aterrizaje, no la linea heroica, y deje que el buggy le guarde las piernas para más adelante en la vuelta."
+              "Este es un campo de posición antes que nada. Elija su zona de aterrizaje, no la linea heroica, y deje que el buggy le guarde las piernas para más adelante en la vuelta."
             ],
             [
               "Donde suelen perder golpes los visitantes",
@@ -6900,7 +6900,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Klubbhustips",
-              "Ovningsupplagget ar lite ovanligt. Kom tillrackligt tidigt for att anvanda kortspelsomradet och landa i rundan innan du gar till första tee."
+              "Ovningsupplagget ar lite ovanligt. Kom tillräckligt tidigt for att anvanda kortspelsomradet och landa i rundan innan du gar till första tee."
             ]
           ]
         },
@@ -7109,10 +7109,10 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Eso conviene saberlo antes de pegar el primer golpe en Son Antem West. Es un campo de resort popular, bien gestionado y cerca de Palma. Si vas con esa expectativa, disfrutaras la ronda. Si esperas una experiencia tranquila y sin espera, puede que no."
         },
         {
-          "text": "Primera impresion"
+          "text": "Primera impresión"
         },
         {
-          "text": "Al entrar en el resort, la escala se ve enseguida. Residencias, mucho espacio verde, academia de golf, pistas de padel y hotel. Funciona como un destino de golf completo. El check-in fue ordenado, el personal atento y una pequena tienda junto a la entrada permitia comprar cafe y algo de comer antes de salir. Detalle util a las 7:45 de la manana."
+          "text": "Al entrar en el resort, la escala se ve enseguida. Residencias, mucho espacio verde, academia de golf, pistas de padel y hotel. Funciona como un destino de golf completo. El check-in fue ordenado, el personal atento y una pequena tienda junto a la entrada permitia comprar cafe y algo de comer antes de salir. Detalle útil a las 7:45 de la manana."
         },
         {
           "text": "En el campo, el entorno se abre. El West Course está en la campina mallorquina cerca de Llucmajor, a 15 o 20 minutos de Palma. No hay casas visibles desde las calles, la montana de Randa aparece al fondo en la segunda vuelta y la fauna está presente durante toda la ronda. Conejos cruzan las calles con frecuencia. Garzas y otros pajaros aparecen en los hoyos con agua. No se siente como un campo suburbano, y eso ayuda."
@@ -7197,7 +7197,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Información practica"
         },
         {
-          "text": "Green fee: 105 € el dia que jugamos. El resort está bien preparado antes y después de la ronda. Hay una pequena tienda cerca del check-in para cafe, agua y snacks, algo realmente util si tienes una salida temprana. Hay buggy disponible. Caminar es sencillo en todo el recorrido."
+          "text": "Green fee: 105 € el dia que jugamos. El resort está bien preparado antes y después de la ronda. Hay una pequena tienda cerca del check-in para cafe, agua y snacks, algo realmente útil si tienes una salida temprana. Hay buggy disponible. Caminar es sencillo en todo el recorrido."
         },
         {
           "text": "Ubicación: Llucmajor, a unos 15 o 20 minutos al sur de Palma. Fácil de llegar y fácil de combinar con uno o dos dias en la ciudad."
@@ -7222,7 +7222,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
             ],
             [
               "Consejo de casa club",
-              "La pequena tienda junto al check-in es realmente util si sale temprano. Un cafe, agua y algo de comer ahi hacen mucho más fácil el inicio de la vuelta."
+              "La pequena tienda junto al check-in es realmente útil si sale temprano. Un cafe, agua y algo de comer ahi hacen mucho más fácil el inicio de la vuelta."
             ]
           ]
         },
@@ -7339,7 +7339,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Der ehrliche Teil"
         },
         {
-          "text": "Ein grosser Teil von Son Antem West ist strategisch flach. Die offenen Löcher geben breite Landezonen, einen unkomplizierten Approach und ein kleines Green als Ziel. Man kann diese Löcher fast im Autopilot spielen. Im Vergleich zu Son Gual, Alcanada oder Andratx fordert der Platz mental weniger. Bei Greenfees in einer aehnlichen Spanne konkurriert er preislich mit diesen Plätzen, bleibt vom Layout her aber weniger haengen."
+          "text": "Ein großer Teil von Son Antem West ist strategisch flach. Die offenen Löcher geben breite Landezonen, einen unkomplizierten Approach und ein kleines Green als Ziel. Man kann diese Löcher fast im Autopilot spielen. Im Vergleich zu Son Gual, Alcanada oder Andratx fordert der Platz mental weniger. Bei Greenfees in einer aehnlichen Spanne konkurriert er preislich mit diesen Plätzen, bleibt vom Layout her aber weniger haengen."
         },
         {
           "items": [
@@ -7448,7 +7448,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Première impression"
         },
         {
-          "text": "En arrivant dans le resort, l echelle est evidente. Residences, grands espaces verts, academie de golf, terrains de padel, hotel. Cela ressemble a une destination golf complète. L accueil etait organise, le personnel serviable, et une petite boutique pres de l entree permettait de prendre cafe et snack avant la partie. Detail utile a 7 h 45."
+          "text": "En arrivant dans le resort, l echelle est evidente. Residences, grands espaces verts, academie de golf, terrains de padel, hotel. Cela ressemble a une destination golf complète. L accueil etait organise, le personnel serviable, et une petite boutique pres de l entrée permettait de prendre cafe et snack avant la partie. Detail utile a 7 h 45."
         },
         {
           "text": "Sur le parcours, le cadre s ouvre. Le West Course se trouve dans la campagne majorquine pres de Llucmajor, a 15 ou 20 minutes de Palma. Aucune maison n est visible depuis les fairways, la montagne de Randa apparait en arrière-plan sur le retour, et la faune est presente tout au long de la partie. Des lapins traversent regulierement les fairways. Herons et autres oiseaux sont autour des trous avec eau. Cela ne ressemble pas a un parcours de banlieue, et c est un vrai plus."
@@ -7536,7 +7536,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Green fee : 105 € le jour ou nous avons joue. Le resort est bien organise avant et après la partie. Il y a une petite boutique pres du check-in pour cafe, eau et snacks, vraiment utile avec un départ matinal. Les voiturettes sont disponibles. Marcher reste simple partout."
         },
         {
-          "text": "Lieu : Llucmajor, a environ 15 a 20 minutes au sud de Palma. Facile d acces et facile a combiner avec une journée ou deux en ville."
+          "text": "Lieu : Llucmajor, a environ 15 a 20 minutes au sud de Palma. Facile d accès et facile a combiner avec une journée ou deux en ville."
         },
         {},
         {
@@ -7785,7 +7785,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "När man kor in i resorten marks skalan direkt. Bostader, stora gronytor, golfakademi, padelbanor och hotell. Det kanns som en komplett golfdestination. Incheckningen var organiserad, personalen hjalpsam, och en liten butik nara ingang gjorde kaffe och snack före rundan enkelt. En bra detalj 7:45 pa morgonen."
         },
         {
-          "text": "Ute pa banan oppnar landskapet sig. West Course ligger i mallorkinsk landsbygd nara Llucmajor, 15 till 20 minuter från Palma. Inga hus syns från fairways, Randa-berget ligger i bakgrunden pa back nine, och djurlivet finns där hela rundan. Kaniner korsar fairways regelbundet. Hagrar och andra faglar syns runt vattenhalen. Det kanns inte som en forortsbana, och det hjalper."
+          "text": "Ute pa banan öppnar landskapet sig. West Course ligger i mallorkinsk landsbygd nara Llucmajor, 15 till 20 minuter från Palma. Inga hus syns från fairways, Randa-berget ligger i bakgrunden pa back nine, och djurlivet finns där hela rundan. Kaniner korsar fairways regelbundet. Hagrar och andra faglar syns runt vattenhalen. Det kanns inte som en forortsbana, och det hjalper."
         },
         {
           "alt": "Faglar pa fairway pa Son Antem West med vatten och green bakom, Mallorca",
@@ -7825,7 +7825,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
           "text": "Skick"
         },
         {
-          "text": "Mycket bra med tanke pa trafiken. Fairways var fasta, greenerna rullade jamnt och presentationen holl hela rundan. Det var nastan ingen vind, vilket gjorde forhallandena sa enkla som de blir har. Från bakre tee kandes banan inte särskilt lang i lugn luft."
+          "text": "Mycket bra med tanke pa trafiken. Fairways var fasta, greenerna rullade jamnt och presentationen holl hela rundan. Det var nästan ingen vind, vilket gjorde forhallandena sa enkla som de blir har. Från bakre tee kandes banan inte särskilt lang i lugn luft."
         },
         {
           "text": "Att ga banan"
@@ -7835,13 +7835,13 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
         },
         {
           "alt": "Andy Griffiths med klienter pa en play-with-a-pro-dag pa Son Antem West, Mallorca",
-          "caption": "En play-with-a-pro-dag pa Son Antem West. Layouten ar tillrackligt forlatande for att gaster ska kunna spela fritt."
+          "caption": "En play-with-a-pro-dag pa Son Antem West. Layouten ar tillräckligt forlatande for att gaster ska kunna spela fritt."
         },
         {
           "text": "Den arliga delen"
         },
         {
-          "text": "En stor del av Son Antem West ar strategiskt platt. De öppna halen ger breda landningsytor, ett enkelt inspel och en liten green att sikta pa. Du kan spela de halen nastan pa autopilot. Jamfort med Son Gual, Alcanada eller Andratx kraver banan mindre mentalt. Med greenfee i samma spann konkurrerar den prismassigt, men layouten stannar inte kvar lika starkt."
+          "text": "En stor del av Son Antem West ar strategiskt platt. De öppna halen ger breda landningsytor, ett enkelt inspel och en liten green att sikta pa. Du kan spela de halen nästan pa autopilot. Jamfort med Son Gual, Alcanada eller Andratx kraver banan mindre mentalt. Med greenfee i samma spann konkurrerar den prismassigt, men layouten stannar inte kvar lika starkt."
         },
         {
           "items": [

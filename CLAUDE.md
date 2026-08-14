@@ -236,6 +236,22 @@ Then: every user string through `sanitizeText`/`sanitizeMultilineText` with a le
 
 **Periodically (roughly quarterly, or before a batch of new routes/integrations):** run `npm audit` (DoS-only advisories in build-time deps are low-priority, don't chase them) and confirm `UPSTASH_REDIS_REST_URL`/`_TOKEN` are still set in Vercel — without them the rate limiter silently degrades to per-instance in-memory and the configured limits stop meaning much.
 
+### Privacy surface — re-check when ANY new data-collecting feature ships
+
+A new form, tool, quiz, integration, or API route means the privacy policy is now **presumed stale until checked**. This is a code task, not a legal one: the job is keeping `src/app/(en)/privacy-policy/page.jsx` + `src/app/es/privacy-policy/page.jsx` factually matched to what the code does. Andy makes the legal calls; you keep the description honest.
+
+Run this before shipping any feature that accepts a visitor keystroke or fires a third-party request:
+
+1. **New field collected?** If it reaches a third party, it must be named in Data Sharing (§7). "Email address and related signup data" does not cover handicap, trip dates, budget band, group size, or free-text notes — list what actually leaves the site.
+2. **New processor?** Any new vendor receiving personal data (email sender, list host, storage, rate-limit backend, analytics) goes in §7 *by name*, with where it processes. Adding a key to `.env.local` and adding a vendor to §7 are the same task — do both or neither.
+3. **New cookie, localStorage key, or third-party script?** §6 currently claims cookies are analytics-only. If that stops being true, §6 is wrong. Functional/UI state (e.g. `HomepageLeadPopup` dismissal) is consent-exempt and fine — advertising or cross-site anything is not.
+4. **Does it enrol anyone in email that isn't what they asked for?** §3 promises "no unsolicited marketing without explicit consent". A form whose stated purpose is a PDF/result but which also adds the address to a nurture group breaks that promise in code. Keep the marketing opt-in a separate, unchecked, clearly-labelled box (the `subscribeNewsletter` pattern in `LeadMagnetPage.jsx` is the reference — copy it).
+5. **Point-of-collection notice.** GDPR Art. 13 wants the notice where data is entered, not only in the footer. New forms get a privacy-policy link next to the submit button.
+6. **Bump `Last updated:`** on both EN and ES policy pages in the same commit, and mirror any wording change into ES — they drift silently because only EN gets edited.
+7. **New locale-facing legal need?** `LEGAL_LOCALES` in `src/lib/site.js` is `{en, es}`; every other locale falls back to English via `getLegalPath` (graceful, not a 404 — don't "fix" it by adding broken routes).
+
+**Why this is a standing rule:** audited 2026-08-14 and the policy was last edited 7 June 2026 while five data-collecting routes landed 14 June – 4 July. Nothing was malicious — each feature just shipped without anyone re-reading the policy, so it silently stopped describing the site. Nothing automated catches this: `check:content` and the locale checks validate structure and copy, never whether a stated data practice is still true.
+
 ## Analytics And SEO Rules
 
 ### Canonical Domain — ALWAYS www

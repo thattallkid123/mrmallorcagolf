@@ -800,7 +800,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Die ehrliche Zusammenfassung"
         },
         {
-          "text": "Wenn ich für eine einzige Woche auf Mallorca nur zwei Plätze empfehlen duerfte, waeren es Son Gual und Alcanada. Son Muntaner für Turnierstandard nahe Palma. Andratx für die haerteste Prüfung. Canyamel für Landschaft. Santa Ponsa 1 für Weite, Driver und Tour-Historie. Für Einsteiger oder gemischte Gruppen wuerde ich deutlich eher Son Quint oder Son Antem East nennen."
+          "text": "Wenn ich für eine einzige Woche auf Mallorca nur zwei Plätze empfehlen duerfte, wären es Son Gual und Alcanada. Son Muntaner für Turnierstandard nahe Palma. Andratx für die haerteste Prüfung. Canyamel für Landschaft. Santa Ponsa 1 für Weite, Driver und Tour-Historie. Für Einsteiger oder gemischte Gruppen wuerde ich deutlich eher Son Quint oder Son Antem East nennen."
         },
         {
           "text": "Die Insel ist eines der bestgehueteten Golfgeheimnisse Europas. Als ich aus Shanghai kam und die Bedingungen hier im Januar sah, während weite Teile Nordeuropas geschlossen waren, war das für mich sofort klar."
@@ -1924,7 +1924,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Robert Trent Jones Jr. i norra delen av on, med fyren som konstant riktpunkt. Från back tees och under en klar morgon ar detta en av Europas mest minnesvarda golfmiljoer. Och den ar inte bara vacker: greenerna och placeringen kraver riktigt spel."
         },
         {
-          "text": "Att sta pa de upphojda bakre tees ar en upplevelse i sig. Man kanner sig langt ifran allt, med fyren framfor sig, bukten som oppnar upp sig och en driver som forsvinner ut i tomheten. Det ar precis den kanslan."
+          "text": "Att sta pa de upphojda bakre tees ar en upplevelse i sig. Man känner sig langt ifran allt, med fyren framfor sig, bukten som öppnar upp sig och en driver som forsvinner ut i tomheten. Det ar precis den kanslan."
         },
         {
           "text": "For DP World Tour-kansla: Son Muntaner"
@@ -3214,7 +3214,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "Cancelacion flexible, reserva online sencilla y especialmente util si viene una semana entera o más. Cuanto más largo es el alquiler, más sentido suele tener."
+          "text": "Cancelacion flexible, reserva online sencilla y especialmente útil si viene una semana entera o más. Cuanto más largo es el alquiler, más sentido suele tener."
         },
         {
           "text": "La decisión real casi nunca es propios palos o cualquier alquiler. Suele ser más bien material actual de un especialista o lo que casualmente haya en el pro shop."
@@ -3686,7 +3686,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "alt": "Cobra Fly XL",
-          "caption": "Cobra Fly XL - billigare och fullt tillrackligt for många fritidsgolfare"
+          "caption": "Cobra Fly XL - billigare och fullt tillräckligt for många fritidsgolfare"
         },
         {},
         {
@@ -3699,7 +3699,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Hyresset direkt från banan"
         },
         {
-          "text": "De flesta banor har set i pro shopen, vanligtvis for €35-50. For en avslappnad rond pa en mellanbana kan det vara fullt tillrackligt. For Son Gual, Alcanada eller en premiumdag skulle jag hellre ta ett ordentligt set från en specialist."
+          "text": "De flesta banor har set i pro shopen, vanligtvis for €35-50. For en avslappnad rond pa en mellanbana kan det vara fullt tillräckligt. For Son Gual, Alcanada eller en premiumdag skulle jag hellre ta ett ordentligt set från en specialist."
         },
         {
           "text": "Tips for att spara pengar"
@@ -5975,7 +5975,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - europeisk standard, inte bara stark lokalt"
         },
         {
-          "text": "Forhallandena ar starka nastan hela aret"
+          "text": "Forhallandena ar starka nästan hela aret"
         },
         {
           "text": "300 soldagar per ar. I januari, när stora delar av Europa har stangda eller mycket begransade banor, kan fairways har vara i riktigt fint skick. Det var en av de första sakerna jag reagerade pa när jag kom hit från Shanghai."
@@ -5984,7 +5984,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "24 banor pa en relativt kompakt o"
         },
         {
-          "text": "Jag kommer från Shanghai: 27 miljoner manniskor och 12 banor. Har finns 24 banor pa en o där en timmes bilresa redan oppnar många val. For besokare ar den tatheten en riktig fordel."
+          "text": "Jag kommer från Shanghai: 27 miljoner manniskor och 12 banor. Har finns 24 banor pa en o där en timmes bilresa redan öppnar många val. For besokare ar den tatheten en riktig fordel."
         },
         {
           "items": [

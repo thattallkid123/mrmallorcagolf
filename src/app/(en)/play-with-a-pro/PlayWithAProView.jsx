@@ -15,7 +15,7 @@ const PAGE_LINKS = {
     courses: 'See all Mallorca courses',
   },
   de: {
-    courses: 'Alle Golfplaetze ansehen',
+    courses: 'Alle Golfplätze ansehen',
   },
   es: {
     courses: 'Ver todos los campos',

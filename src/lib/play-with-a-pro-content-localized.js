@@ -167,7 +167,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "Todo organizado. Todos los detalles se confirman antes del día.",
           "features": [
             "Campo, hora de salida privada y un día completamente organizado conmigo",
-            "Sesion de recuperacion y rendimiento deportivo con John Brazier",
+            "Sesión de recuperacion y rendimiento deportivo con John Brazier",
             "Traslados privados de ida y vuelta al campo",
             "Cena en hotel o restaurante recomendado, o chef privado si encaja"
           ],
@@ -196,7 +196,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "¿Busca algo más grande?",
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
         "body": "Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
-        "detail": "Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversacion, cuando el dia tiene forma.",
+        "detail": "Signature Day. Un dia privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversacion, cuando el dia tiene forma.",
         "button": "Consultar un viaje de varios días →",
         "href": "/es/contact"
       }

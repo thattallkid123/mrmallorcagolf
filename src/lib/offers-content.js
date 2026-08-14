@@ -84,7 +84,7 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.',
     playMultiDayDetail:
-      'Signature Day. Un dia privado de golf con Andy, una sesion con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversacion, cuando el dia tiene forma.',
+      'Signature Day. Un dia privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversacion, cuando el dia tiene forma.',
     homeMultiDayBody:
       'Signature Day - un dia privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio según el dia.',
     contactUnknown: 'Aún no lo sé - aconséjeme',
