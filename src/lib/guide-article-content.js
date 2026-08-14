@@ -853,7 +853,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       badge: 'Practical Guide',
       badgeGold: false,
       readTime: '6 min read',
-      updated: 'March 2026',
+      updated: 'August 2026',
       title: 'Golf Club Hire in Mallorca (2026)',
       intro: 'Should you bring your own clubs? Which hire companies are worth using? What should you pay? Answered honestly.',
       related: [
@@ -895,7 +895,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Personal delivery and collection to hotels, courses, and villas all over the island. Current season models include right and left-handed TaylorMade Qi4D, Callaway Rogue ST Max and TaylorMade Kalea for ladies. Graphite regular-flex sets start from €55 for 2 days and drop heavily for longer hires, while steel regular or stiff sets start from €70 for 2 days. Prices include delivery, collection, and advice on what is best for you. Premium end of the market, and east-coast golfers can even use a free golf shuttle service from hotel to course and back again for groups of up to 8.',
+          'Personal delivery and collection to hotels, courses, and villas all over the island. Current season models include right and left-handed TaylorMade Qi4D, Callaway Rogue ST Max and TaylorMade Kalea for ladies. Graphite regular-flex sets start from €55 for 2 days and drop heavily for longer hires, while steel regular or stiff sets start from €70 for 2 days. Prices include delivery, collection, and advice on what is best for you. Premium end of the market, and east-coast golfers can even use a free golf shuttle service from hotel to course and back again for groups of up to 8. They are a particularly strong choice if you value personal service and straightforward delivery; quote ANDYGOLF10 by WhatsApp or email when booking for priority delivery to your course or hotel, plus a small discount on any golf balls added to the booking.',
       },
       {
         type: 'image',

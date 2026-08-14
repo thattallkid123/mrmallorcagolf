@@ -5,7 +5,7 @@ import { GUIDE_ARTICLE_CONTENT } from '../../lib/guide-article-content.js'
 const GUIDE_DATES = {
   'best-golf-courses-mallorca': '2026-06-01',
   'golf-cost-mallorca': '2026-05-01',
-  'golf-club-hire-mallorca': '2026-05-01',
+  'golf-club-hire-mallorca': '2026-08-14',
   'best-time-play-golf-mallorca': '2026-05-01',
   'golf-trip-planning-mallorca': '2026-05-01',
   'son-gual-review': '2026-05-01',

@@ -15,7 +15,7 @@ const LAST_MODIFIED_BY_PATH = {
   '/guides/best-golf-courses-mallorca': '2026-08-14',
   '/guides/5-day-mallorca-golf-itinerary': '2026-08-14',
   '/guides/golf-cost-mallorca': '2026-08-14',
-  '/guides/golf-club-hire-mallorca': '2026-05-01',
+  '/guides/golf-club-hire-mallorca': '2026-08-14',
   '/guides/best-time-play-golf-mallorca': '2026-05-01',
   '/guides/golf-trip-planning-mallorca': '2026-08-14',
   '/guides/son-gual-review': '2026-08-14',
