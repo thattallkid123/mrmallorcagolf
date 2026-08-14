@@ -95,6 +95,15 @@ function buggyDisplay(data, t) {
   return data.tagKey ? `€${data.price} · ${t.buggyLabels[data.tagKey]}` : `€${data.price}`
 }
 
+// findCourseByName is fuzzy but can't bridge Roman-vs-Arabic numerals or the
+// Pollensa/Pollença spelling. Map those few to their canonical data names.
+const COMPARE_NAME_FIX = {
+  'Santa Ponsa I': 'Golf Santa Ponsa 1',
+  'Santa Ponsa II': 'Golf Santa Ponsa 2',
+  'Santa Ponsa III': 'Golf Santa Ponsa 3',
+  Pollensa: 'Golf Pollença',
+}
+
 const AREA_KEY_MAP = { Southwest: 'southwest', Palma: 'palma', North: 'north', East: 'east' }
 function areaDisplay(area, t) {
   const key = AREA_KEY_MAP[area]
@@ -207,15 +216,6 @@ export default function GreenFeesClient({ lang = 'en' }) {
   const [dir, setDir] = useState(1)
   const [mode, setMode] = useState('table')
   const [cmp, setCmp] = useState(['Son Gual', 'Alcanada', '', '', ''])
-
-  // findCourseByName is fuzzy but can't bridge Roman-vs-Arabic numerals or the
-  // Pollensa/Pollença spelling. Map those few to their canonical data names.
-  const COMPARE_NAME_FIX = {
-    'Santa Ponsa I': 'Golf Santa Ponsa 1',
-    'Santa Ponsa II': 'Golf Santa Ponsa 2',
-    'Santa Ponsa III': 'Golf Santa Ponsa 3',
-    Pollensa: 'Golf Pollença',
-  }
 
   const compareData = useMemo(() => {
     const byName = {}
