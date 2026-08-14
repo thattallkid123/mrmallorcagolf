@@ -517,6 +517,9 @@ export default function ZhCourseSelectorClient() {
                       </button>
                     </div>
                     {emailError && <p className="email-error">发送失败，请检查邮箱后重试</p>}
+                    <p className="email-privacy-note" style={{ fontSize:'11px', color:'rgba(247,244,239,0.55)', marginTop:'8px' }}>
+                      <a href="/privacy-policy" style={{ color:'inherit' }}>隐私政策</a>
+                    </p>
                   </>
                 )}
                 <a className="btn-action btn-gold-solid" href="/zh/contact">联系 Andy 教练规划行程</a>

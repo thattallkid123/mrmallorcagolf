@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Privacy Policy</h1>
-            <p className="legal-page__updated">Last updated: June 2026</p>
+            <p className="legal-page__updated">Last updated: August 2026</p>
           </div>
 
           <section className="legal-section">
@@ -61,8 +61,8 @@ export default function PrivacyPolicy() {
 
           <section className="legal-section">
             <h2>5. Google Analytics</h2>
-            <p>This website uses Google Analytics to understand how visitors use our site. Google Analytics collects anonymised data including pages visited, time spent, and approximate geographic location (country/region level). It does not identify you personally.</p>
-            <p>Google Analytics data is processed by Google LLC in accordance with their privacy policy. IP anonymisation is enabled on this site. You can opt out of Google Analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</p>
+            <p>This website uses Google Analytics to understand how visitors use our site. Google Analytics collects usage data including pages visited, time spent, and approximate geographic location (country/region level), tied to a randomly generated identifier stored in your browser. This identifier is pseudonymous &mdash; it does not include your name or contact details &mdash; but it is not fully anonymous data.</p>
+            <p>Google Analytics data is processed by Google LLC, certified under the EU-US Data Privacy Framework, in accordance with their privacy policy. You can opt out of Google Analytics tracking at any time by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</p>
           </section>
 
           <section className="legal-section">
@@ -73,18 +73,22 @@ export default function PrivacyPolicy() {
 
           <section className="legal-section">
             <h2>7. Data Sharing</h2>
-            <p>We do not sell or rent your personal data to third parties. We may share data in the following limited circumstances:</p>
+            <p>We do not sell or rent your personal data to third parties. We share data with the following processors, only to the extent necessary to run this website and provide our services:</p>
             <ul>
-              <li><strong>Google Analytics:</strong> anonymised usage data as described above</li>
-              <li><strong>MailerLite:</strong> email address and related signup data for Course Selector results and follow-up emails</li>
+              <li><strong>Google Analytics:</strong> pseudonymised usage data, as described in Section 5</li>
+              <li><strong>MailerLite:</strong> your email address and, depending on which form you use, trip details you provide (such as dates, group size, budget, or handicap) and any notes, to deliver results and &mdash; only if you opt in &mdash; our occasional planning-notes emails. MailerLite processes data within the EU.</li>
+              <li><strong>Resend:</strong> the content of any contact or enquiry form you submit, to deliver it to us and send you a confirmation email. Resend is based in the United States.</li>
+              <li><strong>Upstash:</strong> your IP address, held briefly, to prevent abuse of our forms (rate limiting). Upstash is based in the United States.</li>
+              <li><strong>Vercel:</strong> hosts this website and, as part of that, processes standard web request data such as your IP address and browser information. Vercel is based in the United States.</li>
               <li><strong>Legal requirement:</strong> where required by law or a competent authority</li>
             </ul>
-            <p>We may share necessary information (your name and contact details) with golf courses or service providers in Mallorca when arranging your experience, but only to the extent required to fulfil your booking.</p>
+            <p>Some of these processors are based outside the EU/EEA, in the United States. Where this happens, the transfer is made under the safeguards required by GDPR &mdash; the EU-US Data Privacy Framework, for processors certified under it (currently Google, Resend, and Vercel), or Standard Contractual Clauses otherwise (currently Upstash).</p>
+            <p>We may also share necessary information (your name and contact details) with golf courses or service providers in Mallorca when arranging your experience, but only to the extent required to fulfil your booking.</p>
           </section>
 
           <section className="legal-section">
             <h2>8. Data Retention</h2>
-            <p>We keep your contact data for as long as necessary to provide our services and for a reasonable period thereafter for record-keeping purposes. Analytics data is retained in accordance with Google&apos;s standard retention policies.</p>
+            <p>We keep your contact data for as long as necessary to provide our services. Where an enquiry becomes a booking, invoicing and accounting records are kept for the period required under Spanish commercial law, which generally sets a six-year retention period for business records. Analytics data is retained in accordance with Google&apos;s standard retention policies.</p>
             <p>You may request deletion of your personal data at any time (see Section 9).</p>
           </section>
 
@@ -117,7 +121,9 @@ export default function PrivacyPolicy() {
 
           <div className="legal-page__language-note">
             <p>
-              Also available in: <Link href="/es/privacy-policy" style={{color:'var(--gold-light)'}}>Español</Link>
+              Also available in: <Link href="/es/privacy-policy" style={{color:'var(--gold-light)'}}>Español</Link>{' '}&middot;{' '}
+              <Link href="/de/privacy-policy" style={{color:'var(--gold-light)'}}>Deutsch</Link>{' '}&middot;{' '}
+              <Link href="/fr/privacy-policy" style={{color:'var(--gold-light)'}}>Français</Link>
             </p>
           </div>
 

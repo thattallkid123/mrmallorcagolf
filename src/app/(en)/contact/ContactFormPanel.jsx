@@ -1,6 +1,8 @@
 'use client'
 
 import { useContactFormSubmission } from '../../../lib/contact-form'
+import { getLegalPath } from '../../../lib/site'
+import { getPrivacyLinkLabel } from '../../../lib/legal-note-content'
 
 export default function ContactFormPanel({ locale = 'en', content }) {
   const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission(locale)
@@ -259,6 +261,9 @@ export default function ContactFormPanel({ locale = 'en', content }) {
             {content.form.submit}
           </button>
           {error && <p className="form-error" role="alert">{error}</p>}
+          <p style={{ margin: '0.6rem 0 0', fontSize: '0.72rem', color: 'var(--taupe)' }}>
+            <a href={getLegalPath('privacy-policy', locale)} style={{ color: 'inherit' }}>{getPrivacyLinkLabel(locale)}</a>
+          </p>
         </div>
 
         <div style={{ ...formNoteStyle, marginTop: '1.75rem' }}>

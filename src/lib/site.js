@@ -29,7 +29,7 @@ const LOCALES_FOR_GOLF_COST_CALCULATOR = new Set(['en', 'de', 'es', 'fr', 'nl', 
 const LOCALES_FOR_HOTEL_RECOMMENDER = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
 const LOCALES_FOR_HANDICAP_CHECKER = new Set(['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh'])
 const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
-const LEGAL_LOCALES = new Set(['en', 'es'])
+const LEGAL_LOCALES = new Set(['en', 'es', 'de', 'fr'])
 
 export const REVIEW_POST_SLUGS = new Set([
   'son-gual-review',

@@ -440,6 +440,16 @@ const LEGAL_METADATA = {
       description:
         'Política de privacidad: cómo recopilamos, usamos y protegemos tus datos conforme a RGPD.',
     },
+    de: {
+      title: 'Datenschutzerklärung',
+      description:
+        'Datenschutzerklärung von Mr Mallorca Golf: wie wir Ihre Daten gemäß DSGVO erheben, nutzen und schützen.',
+    },
+    fr: {
+      title: 'Politique de confidentialité',
+      description:
+        'Politique de confidentialité de Mr Mallorca Golf : comment nous collectons, utilisons et protégeons vos données conformément au RGPD.',
+    },
   },
   terms: {
     en: {
@@ -451,6 +461,16 @@ const LEGAL_METADATA = {
       title: 'Términos y Condiciones',
       description:
         'Términos y condiciones de servicios de Mr Mallorca Golf en Mallorca.',
+    },
+    de: {
+      title: 'Allgemeine Geschäftsbedingungen',
+      description:
+        'Allgemeine Geschäftsbedingungen für Mr Mallorca Golf Erlebnisse und Leistungen auf Mallorca, Spanien.',
+    },
+    fr: {
+      title: 'Conditions générales',
+      description:
+        'Conditions générales des expériences et services Mr Mallorca Golf à Majorque, Espagne.',
     },
   },
 }

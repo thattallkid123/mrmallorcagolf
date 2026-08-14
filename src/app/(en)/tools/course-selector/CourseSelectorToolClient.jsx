@@ -5,6 +5,8 @@ import { getCanonicalCourseDataByName } from '@lib/course-catalog'
 import { resolveCourseAccessName } from '@lib/course-access-data'
 import { formatCourseFeeLabel, getCoursePricingByName } from '@lib/course-pricing-data'
 import { COURSE_SELECTOR_T } from '@lib/course-selector-translations'
+import { getLegalPath } from '@lib/site'
+import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 
@@ -1197,7 +1199,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                 </>
               )}
 
-              <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.55)', marginTop:'8px', textAlign:'center' }}>{t.results.email.spam}</p>
+              <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.55)', marginTop:'8px', textAlign:'center' }}>{t.results.email.spam} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
             </div>
 
             <div style={{ background:'#fff', border:'1px solid #EDE9E1', borderRadius:'20px', padding:'32px 24px', textAlign:'center', marginTop:'16px' }}>

@@ -4,6 +4,8 @@ import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
 import { getHotelRecommenderT } from '../../../lib/hotel-recommender-translations'
+import { getLegalPath } from '@lib/site'
+import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 
 const WA_HOTEL_MESSAGE = 'Hi Andy, I used the hotel recommender on your site and I’d like help matching where I stay to the courses I want to play.'
 const WA_HOTEL_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_HOTEL_MESSAGE)}`
@@ -547,7 +549,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
                     <input type="checkbox" checked={newsletter} onChange={e => setNewsletter(e.target.checked)} style={{ accentColor:'#B8973C' }} />
                     {t.email.newsletter}
                   </label>
-                  <p style={{ fontSize:'11px', color:'#8A7F74', marginTop:'8px' }}>{t.email.disclaimer}</p>
+                  <p style={{ fontSize:'11px', color:'#8A7F74', marginTop:'8px' }}>{t.email.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
                   {emailError && <p className="hr-email-success">{t.email.error}</p>}
                 </>
               )}

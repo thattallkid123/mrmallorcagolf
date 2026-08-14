@@ -4,6 +4,8 @@ import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { getGolfCostCalculatorT } from '../../../../lib/golf-cost-calculator-translations'
+import { getLegalPath } from '@lib/site'
+import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 
 const WA_MESSAGE = 'Hi Andy, I used the trip cost calculator on your site and I’d like a real quote for my Mallorca golf trip.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -755,7 +757,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                   </>
                 )}
 
-                <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.45)', marginBottom:'12px' }}>{t.email.disclaimer}</p>
+                <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.45)', marginBottom:'12px' }}>{t.email.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
                 <a
                   className="gcc-btn primary"
                   style={{ background:'#3D6455' }}
@@ -949,7 +951,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       {quoteSubmitting ? t.quoteForm.sending : t.quoteForm.button}
                     </button>
 
-                    <p style={{ fontSize:12, color:'#8a7f74', textAlign:'center', marginTop:12, fontStyle:'italic' }}>{t.quoteForm.disclaimer}</p>
+                    <p style={{ fontSize:12, color:'#8a7f74', textAlign:'center', marginTop:12, fontStyle:'italic' }}>{t.quoteForm.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
                   </form>
                 </>
               ) : (

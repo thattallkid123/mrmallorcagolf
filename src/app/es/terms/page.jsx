@@ -115,7 +115,9 @@ export default function TermsES() {
 
           <div style={{marginTop:'3rem', paddingTop:'2rem', borderTop:'1px solid rgba(255,255,255,0.1)'}}>
             <p style={{color:'rgba(255,255,255,0.62)', fontSize:'0.85rem'}}>
-              Also available in: <Link href="/terms" style={{color:'var(--gold-light)'}}>English</Link>
+              También disponible en: <Link href="/terms" style={{color:'var(--gold-light)'}}>English</Link>{' '}&middot;{' '}
+              <Link href="/de/terms" style={{color:'var(--gold-light)'}}>Deutsch</Link>{' '}&middot;{' '}
+              <Link href="/fr/terms" style={{color:'var(--gold-light)'}}>Français</Link>
             </p>
           </div>
 

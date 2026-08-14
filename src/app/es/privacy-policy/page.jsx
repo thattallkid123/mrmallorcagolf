@@ -11,11 +11,11 @@ export default function PrivacyPolicyES() {
         <div className="legal-page__inner">
 
           <p className="breadcrumb" style={{ marginBottom: '2rem' }}>
-            <Link href="/es">Inicio</Link> &nbsp;/&nbsp; <span style={{ color: 'var(--gold-light)' }}>Politica de Privacidad</span>
+            <Link href="/es">Inicio</Link> &nbsp;/&nbsp; <span style={{ color: 'var(--gold-light)' }}>Política de Privacidad</span>
           </p>
 
-          <h1 style={{ marginBottom: '0.5rem' }}>Politica de Privacidad</h1>
-          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualizacion: junio de 2026</p>
+          <h1 style={{ marginBottom: '0.5rem' }}>Política de Privacidad</h1>
+          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualización: agosto de 2026</p>
 
           <section className="legal-section">
             <h2>1. Responsable del tratamiento</h2>
@@ -59,8 +59,8 @@ export default function PrivacyPolicyES() {
 
           <section className="legal-section">
             <h2>5. Google Analytics</h2>
-            <p>Este sitio web utiliza Google Analytics para comprender cómo los visitantes usan el sitio. Google Analytics recopila datos anónimos cómo las páginas visitadas, el tiempo de permanencia y la ubicación geográfica aproximada (a nivel de país o región). No te identifica personalmente.</p>
-            <p>Los datos de Google Analytics son tratados por Google LLC de conformidad con su politica de privacidad. La anonimizacion de IP está activada en este sitio. Puedes desactivar el seguimiento de Google Analytics instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">complemento de inhabilitacion de Google Analytics</a>.</p>
+            <p>Este sitio web utiliza Google Analytics para comprender cómo los visitantes usan el sitio. Google Analytics recopila datos de uso cómo las páginas visitadas, el tiempo de permanencia y la ubicación geográfica aproximada (a nivel de país o región), vinculados a un identificador generado aleatoriamente y almacenado en tu navegador. Este identificador es seudónimo &mdash; no incluye tu nombre ni tus datos de contacto &mdash; pero no son datos completamente anónimos.</p>
+            <p>Los datos de Google Analytics son tratados por Google LLC, certificada bajo el Marco de Privacidad de Datos UE-EE. UU., de conformidad con su política de privacidad. Puedes desactivar el seguimiento de Google Analytics en cualquier momento instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">complemento de inhabilitación de Google Analytics</a>.</p>
           </section>
 
           <section className="legal-section">
@@ -70,20 +70,24 @@ export default function PrivacyPolicyES() {
           </section>
 
           <section className="legal-section">
-            <h2>7. Cesion de datos</h2>
-            <p>No vendemos ni cedemos tus datos personales a terceros. Podemos compartir datos en las siguientes circunstancias limitadas:</p>
+            <h2>7. Cesión de datos</h2>
+            <p>No vendemos ni cedemos tus datos personales a terceros. Compartimos datos con los siguientes encargados del tratamiento, solo en la medida necesaria para gestionar este sitio web y prestar nuestros servicios:</p>
             <ul>
-              <li><strong>Google Analytics:</strong> datos de uso anónimos según lo descrito anteriormente</li>
-              <li><strong>MailerLite:</strong> dirección de correo y datos relacionados con el alta para enviar resultados y emails de seguimiento</li>
-              <li><strong>Obligacion legal:</strong> cuando lo exija la ley o una autoridad competente</li>
+              <li><strong>Google Analytics:</strong> datos de uso seudonimizados, según lo descrito en la sección 5</li>
+              <li><strong>MailerLite:</strong> tu dirección de correo y, según el formulario que utilices, los datos del viaje que nos facilites (fechas, tamaño del grupo, presupuesto o hándicap) y cualquier nota, para enviarte resultados y &mdash; solo si te suscribes &mdash; nuestras notas de planificación ocasionales. MailerLite trata los datos dentro de la UE.</li>
+              <li><strong>Resend:</strong> el contenido de cualquier formulario de contacto o consulta que envíes, para hacérnoslo llegar y enviarte un correo de confirmación. Resend tiene su sede en Estados Unidos.</li>
+              <li><strong>Upstash:</strong> tu dirección IP, retenida brevemente, para evitar el uso abusivo de nuestros formularios (limitación de solicitudes). Upstash tiene su sede en Estados Unidos.</li>
+              <li><strong>Vercel:</strong> aloja este sitio web y, como parte de ello, trata datos estándar de las solicitudes web, cómo tu dirección IP e información del navegador. Vercel tiene su sede en Estados Unidos.</li>
+              <li><strong>Obligación legal:</strong> cuando lo exija la ley o una autoridad competente</li>
             </ul>
-            <p>Podemos compartir información necesaria (tu nombre y datos de contacto) con campos de golf u otros prestadores de servicios en Mallorca al organizar tu experiencia, pero solo en la medida necesaria para ejecutar tu reserva.</p>
+            <p>Algunos de estos encargados del tratamiento tienen su sede fuera de la UE/EEE, en Estados Unidos. Cuando esto ocurre, la transferencia se realiza con las garantías exigidas por el RGPD: el Marco de Privacidad de Datos UE-EE. UU., para los encargados certificados bajo este marco (actualmente Google, Resend y Vercel), o cláusulas contractuales tipo en los demás casos (actualmente Upstash).</p>
+            <p>También podemos compartir información necesaria (tu nombre y datos de contacto) con campos de golf u otros prestadores de servicios en Mallorca al organizar tu experiencia, pero solo en la medida necesaria para ejecutar tu reserva.</p>
           </section>
 
           <section className="legal-section">
-            <h2>8. Conservacion de datos</h2>
-            <p>Conservamos tus datos de contacto durante el tiempo necesario para prestar nuestros servicios y por un período razonable posterior a efectos de registro. Los datos analiticos se conservan de acuerdo con las politicas de retencion estandar de Google.</p>
-            <p>Puedes solicitar la eliminacion de tus datos personales en cualquier momento (vease la seccion 9).</p>
+            <h2>8. Conservación de datos</h2>
+            <p>Conservamos tus datos de contacto durante el tiempo necesario para prestar nuestros servicios. Cuando una consulta se convierte en una reserva, los registros de facturación y contabilidad se conservan durante el plazo exigido por la legislación mercantil española, que en general establece un periodo de conservación de seis años para los registros empresariales. Los datos analíticos se conservan de acuerdo con las políticas de retención estándar de Google.</p>
+            <p>Puedes solicitar la eliminación de tus datos personales en cualquier momento (véase la sección 9).</p>
           </section>
 
           <section className="legal-section">
@@ -115,7 +119,9 @@ export default function PrivacyPolicyES() {
 
           <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
             <p style={{ color: 'rgba(255,255,255,0.62)', fontSize: '0.85rem' }}>
-              También disponible en: <Link href="/privacy-policy" style={{ color: 'var(--gold-light)' }}>English</Link>
+              También disponible en: <Link href="/privacy-policy" style={{ color: 'var(--gold-light)' }}>English</Link>{' '}&middot;{' '}
+              <Link href="/de/privacy-policy" style={{ color: 'var(--gold-light)' }}>Deutsch</Link>{' '}&middot;{' '}
+              <Link href="/fr/privacy-policy" style={{ color: 'var(--gold-light)' }}>Français</Link>
             </p>
           </div>
 

@@ -117,7 +117,9 @@ export default function Terms() {
 
           <div className="legal-page__language-note">
             <p>
-              Also available in: <Link href="/es/terms" style={{color:'var(--gold-light)'}}>Español</Link>
+              Also available in: <Link href="/es/terms" style={{color:'var(--gold-light)'}}>Español</Link>{' '}&middot;{' '}
+              <Link href="/de/terms" style={{color:'var(--gold-light)'}}>Deutsch</Link>{' '}&middot;{' '}
+              <Link href="/fr/terms" style={{color:'var(--gold-light)'}}>Français</Link>
             </p>
           </div>
 

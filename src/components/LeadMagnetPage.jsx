@@ -383,7 +383,7 @@ export default function LeadMagnetPage({ guide }) {
                 margin: '10px 0 0',
               }}
             >
-              No spam. Unsubscribe any time.
+              No spam. Unsubscribe any time. <a href="/privacy-policy" style={{ color: 'inherit', textDecoration: 'underline' }}>Privacy Policy</a>
             </p>
           </>
         )}

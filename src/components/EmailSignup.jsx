@@ -151,6 +151,15 @@ export default function EmailSignup({
             {errorMessage}
           </p>
         ) : null}
+        <p style={{
+          fontFamily: "var(--font-sans)",
+          fontSize: '0.72rem',
+          fontWeight: 300,
+          color: 'rgba(44,42,39,0.5)',
+          margin: '0.6rem 0 0 0',
+        }}>
+          <a href="/privacy-policy" style={{ color: 'inherit' }}>Privacy Policy</a>
+        </p>
       </>
     )
   }

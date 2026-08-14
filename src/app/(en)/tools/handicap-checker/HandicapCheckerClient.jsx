@@ -7,6 +7,8 @@ import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytic
 import { COURSE_ACCESS_LIST } from '../../../../lib/course-access-data'
 import { getCourseShortName } from '../../../../lib/golf-courses-helpers'
 import { getHandicapCheckerT } from '../../../../lib/handicap-checker-translations'
+import { getLegalPath } from '@lib/site'
+import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 
 const WA_MESSAGE = 'Hi Andy, I used the handicap checker on your site and I’d like help planning which Mallorca courses I can play.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -518,7 +520,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
 
             <p className="hc-selector">{t.selector} <Link href="/tools/course-selector">{t.selectorLink}</Link></p>
 
-            <p className="hc-foot">{t.disclaimer}</p>
+            <p className="hc-foot">{t.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
           </section>
         )}
       </main>
