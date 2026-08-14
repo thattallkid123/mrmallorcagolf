@@ -30,14 +30,14 @@ function isAuthorized(request) {
   return authHeader === `Bearer ${cronSecret}`
 }
 
-async function submitToBing(urls) {
+async function submitToIndexNow(urls) {
   const key = process.env.INDEXNOW_KEY
   if (!key) {
     return Response.json({ error: 'IndexNow key not configured' }, { status: 500 })
   }
 
   try {
-    const response = await fetch('https://api.indexnow.microsoft.com/indexnow', {
+    const response = await fetch('https://api.indexnow.org/indexnow', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -49,7 +49,7 @@ async function submitToBing(urls) {
     })
 
     if (!response.ok) {
-      throw new Error(`Bing IndexNow API error: ${response.status}`)
+      throw new Error(`IndexNow API error: ${response.status}`)
     }
 
     return Response.json({ success: true, urlCount: urls.length })
@@ -66,7 +66,7 @@ export async function GET(request) {
     return Response.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  return submitToBing(INDEXNOW_GUIDES.map((path) => `${SITE_ORIGIN}${path}`))
+  return submitToIndexNow(INDEXNOW_GUIDES.map((path) => `${SITE_ORIGIN}${path}`))
 }
 
 // Manual/ad-hoc submissions (scripts/indexnow-ping.mjs) POST a specific URL
@@ -91,7 +91,7 @@ export async function POST(request) {
       return Response.json({ error: `All URLs must start with ${SITE_ORIGIN}` }, { status: 400 })
     }
 
-    return submitToBing(urls)
+    return submitToIndexNow(urls)
   } catch (error) {
     console.error('IndexNow request parsing failed:', error)
     return Response.json({ error: 'Invalid request' }, { status: 400 })
