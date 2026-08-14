@@ -547,7 +547,7 @@ export const GUIDE_POST_CONTENT = {
   'golf-andratx-review': {
     en: {
       metadata: {
-        title: "Golf Andratx - Review & Fees",
+        title: "Golf Andratx Mallorca - Review & Fees",
         description:
           "€125, par 72, longest par 5 in Spain. Mountain setting, tactical layout, patience over length.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
@@ -1072,7 +1072,7 @@ export const GUIDE_POST_CONTENT = {
   'son-antem-west-review': {
     en: {
       metadata: {
-        title: "Son Antem West - Resort Review",
+        title: "Son Antem West Mallorca - Review",
         description:
           'Green fees from €109, par 72, 6,293m. Resort course near Palma, relaxed layout, good conditioning.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',

@@ -4,6 +4,7 @@ b64imgs.txt
 !scripts/generate-lead-magnet-pdfs.py
 !scripts/site-ops/monthly-traffic-interest-snapshot.py
 !scripts/site-ops/ga4-key-events-setup.py
+!search_console/check_ctr_watch.py
 
 # Ephemeral outputs and Python caches — never commit
 outputs/

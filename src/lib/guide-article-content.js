@@ -614,7 +614,7 @@ export const GUIDE_ARTICLE_CONTENT = {
   },
   'best-golf-courses-mallorca': {
     metadata: {
-      title: "Best Golf Courses - 24 Ranked & Reviewed",
+      title: "24 Best Golf Courses in Mallorca, Ranked",
       description:
         'All 24 Mallorca courses ranked by a PGA pro. Green fees €55–€260, difficulty, who each suits.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
