@@ -3190,7 +3190,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {},
         {},
         {
-          "text": "Entrega y recogida personal en hoteles, villas y campos por toda la isla. Sets actuales de Callaway Rogue ST Max y una opción seria para el visitante que quiere cero friccion. Es una opción especialmente recomendable si valora el trato personal y una entrega sencilla; indique ANDYGOLF10 por WhatsApp o email al reservar para obtener entrega prioritaria en su campo u hotel, además de un pequeño descuento en las bolas de golf que añada a la reserva."
+          "text": "Entrega y recogida personal en hoteles, villas y campos por toda la isla. Sets actuales de Callaway Rogue ST Max y una opción seria para el visitante que quiere cero friccion. Es una opción especialmente recomendable si valora el trato personal y una entrega sencilla; indique ANDYGOLF10 por <a href=\"https://wa.me/34722691766\">WhatsApp</a> o <a href=\"mailto:info@clubrentalsmallorca.com\">email</a> al reservar para obtener entrega prioritaria en su campo u hotel, además de un pequeño descuento en las bolas de golf que añada a la reserva."
         },
         {
           "alt": "Callaway Rogue ST Max",
@@ -3309,7 +3309,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {},
         {},
         {
-          "text": "Persönliche Lieferung und Abholung an Hotels, Villen und Plätzen auf der ganzen Insel. Aktuelle Callaway-Rogue-ST-Max-Sets und insgesamt eine saubere, seriöse Option für Besucher, die keinen Aufwand wollen. Besonders empfehlenswert, wenn Sie persönlichen Service und eine unkomplizierte Lieferung schätzen; nennen Sie bei der Buchung per WhatsApp oder E-Mail ANDYGOLF10, um eine bevorzugte Lieferung an Ihren Golfplatz oder Ihr Hotel sowie einen kleinen Rabatt auf mitgebuchte Golfbälle zu erhalten."
+          "text": "Persönliche Lieferung und Abholung an Hotels, Villen und Plätzen auf der ganzen Insel. Aktuelle Callaway-Rogue-ST-Max-Sets und insgesamt eine saubere, seriöse Option für Besucher, die keinen Aufwand wollen. Besonders empfehlenswert, wenn Sie persönlichen Service und eine unkomplizierte Lieferung schätzen; nennen Sie bei der Buchung per <a href=\"https://wa.me/34722691766\">WhatsApp</a> oder <a href=\"mailto:info@clubrentalsmallorca.com\">E-Mail</a> ANDYGOLF10, um eine bevorzugte Lieferung an Ihren Golfplatz oder Ihr Hotel sowie einen kleinen Rabatt auf mitgebuchte Golfbälle zu erhalten."
         },
         {
           "alt": "Callaway Rogue ST Max",
@@ -3428,7 +3428,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {},
         {},
         {
-          "text": "Livraison et reprise personnelles dans les hotels, villas et parcours sur toute l'île. Sets Callaway Rogue ST Max recents et une option très propre pour le visiteur qui veut zero friction. C'est un choix particulièrement recommandé si vous appréciez le service personnel et une livraison simple ; indiquez ANDYGOLF10 par WhatsApp ou par e-mail lors de la réservation pour bénéficier d'une livraison prioritaire à votre parcours ou à votre hôtel, ainsi que d'une petite remise sur les balles de golf ajoutées à la réservation."
+          "text": "Livraison et reprise personnelles dans les hotels, villas et parcours sur toute l'île. Sets Callaway Rogue ST Max recents et une option très propre pour le visiteur qui veut zero friction. C'est un choix particulièrement recommandé si vous appréciez le service personnel et une livraison simple ; indiquez ANDYGOLF10 par <a href=\"https://wa.me/34722691766\">WhatsApp</a> ou par <a href=\"mailto:info@clubrentalsmallorca.com\">e-mail</a> lors de la réservation pour bénéficier d'une livraison prioritaire à votre parcours ou à votre hôtel, ainsi que d'une petite remise sur les balles de golf ajoutées à la réservation."
         },
         {
           "alt": "Callaway Rogue ST Max",
@@ -3547,7 +3547,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {},
         {},
         {
-          "text": "Persoonlijke levering en ophalen bij hotels, villa's en banen over het hele eiland. Recente Callaway Rogue ST Max-sets en een nette optie voor bezoekers die geen gedoe willen. Een bijzonder sterke keuze als u persoonlijke service en eenvoudige levering waardeert; vermeld ANDYGOLF10 bij uw boeking via WhatsApp of e-mail voor prioriteitslevering aan uw golfbaan of hotel, plus een kleine korting op golfballen die u aan de boeking toevoegt."
+          "text": "Persoonlijke levering en ophalen bij hotels, villa's en banen over het hele eiland. Recente Callaway Rogue ST Max-sets en een nette optie voor bezoekers die geen gedoe willen. Een bijzonder sterke keuze als u persoonlijke service en eenvoudige levering waardeert; vermeld ANDYGOLF10 bij uw boeking via <a href=\"https://wa.me/34722691766\">WhatsApp</a> of <a href=\"mailto:info@clubrentalsmallorca.com\">e-mail</a> voor prioriteitslevering aan uw golfbaan of hotel, plus een kleine korting op golfballen die u aan de boeking toevoegt."
         },
         {
           "alt": "Callaway Rogue ST Max",
@@ -3666,7 +3666,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {},
         {},
         {
-          "text": "Personlig leverans och upphämtning vid hotell, villor och banor över hela ön. Nyare Callaway Rogue ST Max-set och ett stabilt val för besökaren som vill ha minimalt strul. Ett särskilt bra val om du uppskattar personlig service och enkel leverans; ange ANDYGOLF10 när du bokar via WhatsApp eller e-post för prioriterad leverans till golfbanan eller hotellet, plus en mindre rabatt på golfbollar som läggs till i bokningen."
+          "text": "Personlig leverans och upphämtning vid hotell, villor och banor över hela ön. Nyare Callaway Rogue ST Max-set och ett stabilt val för besökaren som vill ha minimalt strul. Ett särskilt bra val om du uppskattar personlig service och enkel leverans; ange ANDYGOLF10 när du bokar via <a href=\"https://wa.me/34722691766\">WhatsApp</a> eller <a href=\"mailto:info@clubrentalsmallorca.com\">e-post</a> för prioriterad leverans till golfbanan eller hotellet, plus en mindre rabatt på golfbollar som läggs till i bokningen."
         },
         {
           "alt": "Callaway Rogue ST Max",
@@ -3785,7 +3785,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {},
         {},
         {
-          "text": "能送到酒店、别墅和球场，覆盖全岛。主打较新的Callaway Rogue ST Max套杆，是那种想省心、不想踩坑的人会选的公司。如果你看重一对一服务和省心的配送，这家很值得考虑；通过WhatsApp或电子邮件预订时报代码ANDYGOLF10，可优先送到球场或酒店，加购高尔夫球也可享受小额优惠。"
+          "text": "能送到酒店、别墅和球场，覆盖全岛。主打较新的Callaway Rogue ST Max套杆，是那种想省心、不想踩坑的人会选的公司。如果你看重一对一服务和省心的配送，这家很值得考虑；通过<a href=\"https://wa.me/34722691766\">WhatsApp</a>或<a href=\"mailto:info@clubrentalsmallorca.com\">电子邮件</a>预订时报代码ANDYGOLF10，可优先送到球场或酒店，加购高尔夫球也可享受小额优惠。"
         },
         {
           "alt": "Callaway Rogue ST Max",
