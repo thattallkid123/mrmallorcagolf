@@ -59,8 +59,11 @@ test.describe('visual smoke checks', () => {
           }
         })
         expect(widths, `Missing PWAP day layout nodes on ${route}`).not.toBeNull()
+        // .pwap-day is a two-column grid (lead + .pwap-day__details sidebar), roughly 0.92fr : 0.78fr.
+        // Bounds catch a real regression (column collapsed or overlapping) without pinning the exact split.
         const ratio = widths.lead / widths.section
-        expect(ratio, `PWAP day lead too narrow on ${route}; expected near full-width on desktop`).toBeGreaterThan(0.9)
+        expect(ratio, `PWAP day lead column outside expected range on ${route}`).toBeGreaterThan(0.35)
+        expect(ratio, `PWAP day lead column outside expected range on ${route}`).toBeLessThan(0.7)
       }
 
       if (route === '/about') {

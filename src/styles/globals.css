@@ -3396,7 +3396,7 @@ select.form-control { cursor: pointer; }
   .pwap-summary { padding: 24px 20px 0; }
   .pwap-summary__inner { padding: 24px 18px; }
   .pwap-summary__grid { grid-template-columns: 1fr; gap: 10px; }
-  .pwap-day { grid-template-columns: 1fr; gap: 34px; padding: 60px 20px; }
+  .pwap-day { grid-template-columns: minmax(0, 1fr); gap: 34px; padding: 60px 20px; }
   .pwap-day__left { max-width: 100%; }
   .pwap-day__details { margin-top: 28px; }
   .pwap-day__lead > p:not(.eyebrow) { max-width: 100%; font-size: 1rem; line-height: 1.84; }
