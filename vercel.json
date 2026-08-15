@@ -70,6 +70,16 @@
       "permanent": true
     },
     {
+      "source": "/go/club-rentals-mallorca-wa",
+      "destination": "https://www.clubrentalsmallorca.com/?utm_source=whatsapp&utm_medium=catalog&utm_campaign=club-hire",
+      "permanent": true
+    },
+    {
+      "source": "/go/rent2play-wa",
+      "destination": "https://rent2play.golf/?utm_source=whatsapp&utm_medium=catalog&utm_campaign=club-hire",
+      "permanent": true
+    },
+    {
       "source": "/:locale(de|es|fr|nl|sv|zh)/guides/a-day-at-son-gual",
       "destination": "/:locale/guides/play-with-a-pro-explained",
       "permanent": true
