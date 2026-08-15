@@ -186,7 +186,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Alcanada Golf - Honest Review 2026",
         description:
-          "Alcanada: 9/10, €115-€220, 58 bunkers. Andy's honest verdict, including why it's worth the 50-minute drive.",
+          "Alcanada: 9/10, €115-€230, 58 bunkers. Andy's honest verdict, including why it's worth the 50-minute drive.",
         imagePath: '/images/alcanada-blog/alc-7.webp',
       },
       meta: {
@@ -293,7 +293,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Practical Information' },
         {
           type: 'paragraph',
-          text: 'Green fees 2026: €115 low season (January, December) to €220 peak (March-May, September-October). Full seasonal breakdown at golf-alcanada.com. A daily golf licence (€3 per person) is required for non-Spanish Federation members.',
+          text: 'Green fees 2026: €115 low season (January, December) to €230 peak (March-May, September-October). Full seasonal breakdown at golf-alcanada.com. A daily golf licence (€3 per person) is required for non-Spanish Federation members.',
         },
         {
           type: 'paragraph',
