@@ -118,6 +118,15 @@ const STANDALONE_BAND = /^\s*(?:€|EUR)\s?(\d{2,3})\s*[-–—]\s*(?:€|EUR)?\
 // (so "Members … · €65-88" is safe to read). Localized table cells spell the
 // currency as literal "EUR" instead of the € symbol, so both are accepted.
 const ANY_BAND = /(?:€|EUR)\s?(\d{2,3})\s*[-–—]\s*(?:€|EUR)?\s?(\d{2,3})/
+// Natural-language season sentence, e.g. "€115 low season (January, December)
+// to €230 peak (March-May, September-October)". Self-labelling like the
+// Peak/Low pair above (the words "low season"/"peak" remove the ambiguity a
+// bare embedded range would have), so — unlike STANDALONE_BAND — it is safe
+// to match anywhere inside a longer sentence, not just a whole-string value.
+// English-only: this is prose, and localized mirrors phrase seasons in each
+// language's own words, which this does not attempt to cover.
+const SEASON_LOW_FIRST = /€\s?(\d{2,3})\s+low season\b[\s\S]*?€\s?(\d{2,3})\s+peak\b/i
+const SEASON_PEAK_FIRST = /€\s?(\d{2,3})\s+peak\b[\s\S]*?€\s?(\d{2,3})\s+low season\b/i
 
 // Returns {low, peak, kind} for a string, or null if it carries no checkable
 // green-fee shape.
@@ -126,6 +135,10 @@ function extractBand(str) {
   if (m) return { peak: +m[1], low: +m[2], kind: 'labelled Peak/Low' }
   m = str.match(LABELLED_LOW_FIRST)
   if (m) return { low: +m[1], peak: +m[2], kind: 'labelled Low/Peak' }
+  m = str.match(SEASON_LOW_FIRST)
+  if (m) return { low: +m[1], peak: +m[2], kind: 'season sentence (low first)' }
+  m = str.match(SEASON_PEAK_FIRST)
+  if (m) return { peak: +m[1], low: +m[2], kind: 'season sentence (peak first)' }
   m = str.match(STANDALONE_BAND)
   if (m) return { low: +m[1], peak: +m[2], kind: 'price band' }
   return null
@@ -169,6 +182,19 @@ function checkString(value, ctx, file) {
   if (!band) return
   if (!ctx) return // no resolvable course — never guess
   record(file, ctx, value.trim(), band.kind, band.low, band.peak)
+}
+
+// A `description:` field (metadata.description / meta.description) is a
+// known, structurally-trusted summary field in this content schema — the
+// same reasoning that lets a table's Green Fee column use ANY_BAND rather
+// than the anchored STANDALONE_BAND. A "€115-€230" embedded mid-sentence
+// there ("Alcanada: 9/10, €115-€230, 58 bunkers...") is safe to read as a
+// green fee because this field's job IS to summarize the course facts.
+function checkDescriptionField(value, ctx, file) {
+  if (!ctx) return
+  const m = value.match(ANY_BAND)
+  if (!m) return
+  record(file, ctx, value.trim(), 'description field', +m[1], +m[2])
 }
 
 // A `type: 'table'` block with a Course column and a Green Fee column attributes
@@ -230,6 +256,7 @@ function walk(node, ctx, file) {
     for (const [key, val] of Object.entries(node)) {
       if (typeof val === 'string') {
         checkString(val, objCtx, file)
+        if (key === 'description') checkDescriptionField(val, objCtx, file)
       } else {
         // A slug-keyed entry (guide content) sets context for its subtree.
         const keyCtx = toCanonical(key) || objCtx

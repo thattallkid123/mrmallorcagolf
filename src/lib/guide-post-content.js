@@ -719,7 +719,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Termes Golf - Review 2026",
         description:
-          'Son Termes green fee around €100-110, par 72, 20 minutes from Palma. Mountain views, honest 6/10 verdict.',
+          'Son Termes green fee around €90-110, par 72, 20 minutes from Palma. Mountain views, honest 6/10 verdict.',
         imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
