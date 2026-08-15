@@ -2,9 +2,11 @@
 
 ## The Problem
 
-Next.js loads fonts via `next/font/google` in `src/app/root-layout-shared.jsx`, which exposes them as CSS variables:
+Next.js loads self-hosted local font files from `MMG-Fonts/` via `next/font/local` in `src/app/root-layout-shared.jsx`, which exposes them as CSS variables:
 - `--font-sans` → Jost
 - `--font-serif` → Cormorant Garamond
+
+The approved brand pairing is still the same: Jost for body/navigation/UI text and Cormorant Garamond for headings/editorial display text. Self-hosting avoids build-time or runtime dependency on Google Fonts while preserving the approved typography.
 
 Hardcoding `font-family: 'Jost'` or `font-family: 'Cormorant Garamond'` in components/styles causes fallbacks (Arial, Georgia) to render when the font isn't yet loaded, creating a "flash of wrong font" and a disconnect from the design system.
 
@@ -77,6 +79,7 @@ The component itself doesn't need changes — just the style block.
 
 ## References
 
-- Font loading: `src/app/root-layout-shared.jsx` (lines 13–26)
-- CSS variables root: `src/styles/globals.css` (lines 1215–1230, `:root { --font-sans, --font-serif, ... }`)
+- Font loading: `src/app/root-layout-shared.jsx`
+- CSS variables root: `src/styles/globals.css` (`:root { --font-sans, --font-serif, ... }`)
+- Local font files: `MMG-Fonts/`
 - Design reference: `docs/CODEBASE_IMPROVEMENTS.md` (if updated with font strategy)
