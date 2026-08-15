@@ -105,6 +105,7 @@ Only surfaces that actually show a price are listed. Confirmed 2026-06-18.
 | Trustpilot business profile | Yes | ❌ Manual update needed |
 | WhatsApp business profile/about text | Yes | ❌ Manual update needed |
 | WhatsApp saved replies | Yes | ❌ Manual update needed |
+| WhatsApp Business Catalog (5 products: PWAP Solo/Group/Signature Day, Club Rentals Mallorca, Rent2Play Golf hire) | Yes | ❌ Manual update needed — added 2026-08-15, not synced by any script |
 | Brochures, PDFs, rate cards shared externally | Yes | ❌ Check and update manually |
 | MailerLite live form copy | No price | ✅ No action needed |
 | MailerLite nurture email sequence | No price | ✅ No action needed |
