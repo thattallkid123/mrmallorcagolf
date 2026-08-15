@@ -908,7 +908,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Callaway Rogue and TaylorMade Qi4D options as well as some previous-season sets at a lower price. You can add tees, balls and the little extras too, so you are properly set. A 2-day TaylorMade Qi4D rental runs around €62, with airport, hotel, and course delivery possible, and longer trips drop to around €142 for 10 days. A great all-rounder with a growing amount of very happy customers in their Google reviews.',
+          'Callaway Rogue and TaylorMade Qi4D options as well as some previous-season sets at a lower price. You can add tees, balls and the little extras too, so you are properly set. A 2-day TaylorMade Qi4D rental runs around €62, with airport, hotel, and course delivery possible, and longer trips drop to around €142 for 10 days. A great all-rounder with a growing amount of very happy customers in their Google reviews. Bonus for Mr Mallorca Golf readers: use code MRMALLORCAGOLF for a small complimentary gift, depending on which promotional items are available, or add MRMALLORCAGOLFBALLS for 10% off any purchase of new golf balls with the clubs. Both codes can be used together at checkout.',
       },
       {
         type: 'image',
