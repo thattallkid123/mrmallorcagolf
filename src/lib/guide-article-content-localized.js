@@ -3902,7 +3902,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Campos de 18 hoyos de gama media"
         },
         {
-          "text": "Aproximadamente 80-145 € según la temporada. Son Termes desde 85 €, Bendinat 75-125 €, Capdepera 85-135 €, Canyamel 65-145 €, Son Servera 80-145 €, Vall d'Or 85-130 €. Son campos de verdad y en buenas condiciones, no una opción secundaria. Revise siempre la web del campo porque las tarifas cambian por temporada."
+          "text": "Aproximadamente 80-145 € según la temporada. Son Termes desde 90 €, Bendinat 74-123 €, Capdepera 85-135 €, Canyamel 85-145 €, Son Servera 80-145 €, Vall d'Or 99-132 €. Son campos de verdad y en buenas condiciones, no una opción secundaria. Revise siempre la web del campo porque las tarifas cambian por temporada."
         },
         {
           "text": "Campos premium"
@@ -4042,7 +4042,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "18-Loch-Plätze im mittleren Segment"
         },
         {
-          "text": "Etwa 80-145 € je nach Saison. Son Termes ab 85 €, Bendinat 75-125 €, Capdepera 85-135 €, Canyamel 65-145 €, Son Servera 80-145 €, Vall d'Or 85-130 €. Das sind vollwertige Plätze in guten Bedingungen, nicht nur zweite Wahl. Prüfen Sie immer die Platz-Website, weil sich Preise saisonal ändern."
+          "text": "Etwa 80-145 € je nach Saison. Son Termes ab 90 €, Bendinat 74-123 €, Capdepera 85-135 €, Canyamel 85-145 €, Son Servera 80-145 €, Vall d'Or 99-132 €. Das sind vollwertige Plätze in guten Bedingungen, nicht nur zweite Wahl. Prüfen Sie immer die Platz-Website, weil sich Preise saisonal ändern."
         },
         {
           "text": "Premiumplätze"
@@ -4182,7 +4182,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Parcours 18 trous de milieu de gamme"
         },
         {
-          "text": "Environ €80-145 selon la saison. Son Termes à partir de €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145, Vall d'Or €85-130. Ce sont de vrais parcours, en bon état, pas des options secondaires. Vérifiez toujours le site du club, car les tarifs évoluent selon la saison."
+          "text": "Environ €80-145 selon la saison. Son Termes à partir de €90, Bendinat €74-123, Capdepera €85-135, Canyamel €85-145, Son Servera €80-145, Vall d'Or €99-132. Ce sont de vrais parcours, en bon état, pas des options secondaires. Vérifiez toujours le site du club, car les tarifs évoluent selon la saison."
         },
         {
           "text": "Parcours premium"
@@ -4322,7 +4322,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "18-holesbanen in het middensegment"
         },
         {
-          "text": "Ongeveer €80-145 afhankelijk van het seizoen. Son Termes vanaf €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145 en Vall d'Or €85-130. Dit zijn serieuze golfbanen in goede staat, geen bijzaak. Controleer altijd de website van de baan, want prijzen veranderen per seizoen."
+          "text": "Ongeveer €80-145 afhankelijk van het seizoen. Son Termes vanaf €90, Bendinat €74-123, Capdepera €85-135, Canyamel €85-145, Son Servera €80-145 en Vall d'Or €99-132. Dit zijn serieuze golfbanen in goede staat, geen bijzaak. Controleer altijd de website van de baan, want prijzen veranderen per seizoen."
         },
         {
           "text": "Premiumbanen"
@@ -4462,7 +4462,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "18-halsbanor i mellansegmentet"
         },
         {
-          "text": "Cirka €80-145 beroende på säsong. Son Termes från €85, Bendinat €75-125, Capdepera €85-135, Canyamel €65-145, Son Servera €80-145 och Vall d'Or €85-130. Det här är riktiga golfbanor i bra skick, inte bara reservval. Kontrollera alltid banans webbplats eftersom priserna ändras med säsongen."
+          "text": "Cirka €80-145 beroende på säsong. Son Termes från €90, Bendinat €74-123, Capdepera €85-135, Canyamel €85-145, Son Servera €80-145 och Vall d'Or €99-132. Det här är riktiga golfbanor i bra skick, inte bara reservval. Kontrollera alltid banans webbplats eftersom priserna ändras med säsongen."
         },
         {
           "text": "Premiumbanor"
@@ -4602,7 +4602,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "中档18洞球场"
         },
         {
-          "text": "大约€80-145（约¥620-1,130），具体取决于季节。Son Termes从€85起，Bendinat €75-125，Capdepera €85-135，Canyamel €65-145，Son Servera €80-145，Vall d'Or €85-130。这些都是真正值得打的球场，不是随便凑数的选择。价格会按季节变化，最好直接看球场官网。"
+          "text": "大约€80-145（约¥620-1,130），具体取决于季节。Son Termes从€90起，Bendinat €74-123，Capdepera €85-135，Canyamel €85-145，Son Servera €80-145，Vall d'Or €99-132。这些都是真正值得打的球场，不是随便凑数的选择。价格会按季节变化，最好直接看球场官网。"
         },
         {
           "text": "高端球场"
