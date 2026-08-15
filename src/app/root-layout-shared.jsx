@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { Cormorant_Garamond, Jost } from 'next/font/google'
+import localFont from 'next/font/local'
 import Script from 'next/script'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
@@ -10,17 +10,25 @@ import PageViewTracker from '../components/PageViewTracker.jsx'
 import ScrollDepthTracker from '../components/ScrollDepthTracker.jsx'
 import ScrollToTop from './scroll-to-top.jsx'
 
-const jost = Jost({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
+const jost = localFont({
+  src: [
+    { path: '../../MMG-Fonts/Jost-300.ttf', weight: '300', style: 'normal' },
+    { path: '../../MMG-Fonts/Jost-400.ttf', weight: '400', style: 'normal' },
+    { path: '../../MMG-Fonts/Jost-500.ttf', weight: '500', style: 'normal' },
+  ],
   variable: '--font-sans',
   display: 'swap',
 })
 
-const cormorantGaramond = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  style: ['normal', 'italic'],
+const cormorantGaramond = localFont({
+  src: [
+    { path: '../../MMG-Fonts/CormorantGaramond-Regular-400.ttf', weight: '400', style: 'normal' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Regular-500.ttf', weight: '500', style: 'normal' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Regular-600.ttf', weight: '600', style: 'normal' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Italic-400.ttf', weight: '400', style: 'italic' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Italic-500.ttf', weight: '500', style: 'italic' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Italic-600.ttf', weight: '600', style: 'italic' },
+  ],
   variable: '--font-serif',
   display: 'swap',
 })
