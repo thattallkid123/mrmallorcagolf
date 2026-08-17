@@ -35,6 +35,7 @@ export function getSocialImage(locale = 'en') {
 const HOME_METADATA = {
   en: {
     title: 'Mallorca Golf - Pro & Trip Planning',
+    socialTitle: 'Mr Mallorca Golf - Play With A Pro & Golf Trip Planning',
     description:
       '24 Mallorca golf courses reviewed by a PGA pro on the island. Green fees, verdicts, and trip planning help.',
   },
@@ -476,15 +477,21 @@ const LEGAL_METADATA = {
 }
 
 export function buildPageMetadata(pathname, locale, overrides = {}) {
+  // `socialTitle` is an optional override for the og/twitter title only. The SEO
+  // `title` is capped by the 60-char SERP budget (raw title + ' | Mr Mallorca Golf');
+  // social cards have no such limit, so a page can read fuller there. Consumed
+  // here, never forwarded to Next's metadata object.
+  const { socialTitle, ...pageOverrides } = overrides
   const localePath = buildLocalePath(stripLocaleFromPath(pathname), locale)
   const alternates = getAlternates(localePath)
-  const title = typeof overrides.title === 'string' ? overrides.title : undefined
-  const description = typeof overrides.description === 'string' ? overrides.description : undefined
+  const seoTitle = typeof pageOverrides.title === 'string' ? pageOverrides.title : undefined
+  const title = typeof socialTitle === 'string' ? socialTitle : seoTitle
+  const description = typeof pageOverrides.description === 'string' ? pageOverrides.description : undefined
   const pageUrl = `${SITE_ORIGIN}${localePath}`
   const openGraphLocale = OPEN_GRAPH_LOCALES[locale] || OPEN_GRAPH_LOCALES.en
   const openGraphAltLocales = OPEN_GRAPH_ALT_LOCALES.filter((candidate) => candidate !== openGraphLocale)
   const socialImage = getSocialImage(locale)
-  const openGraph = overrides.openGraph || (title || description
+  const openGraph = pageOverrides.openGraph || (title || description
     ? {
         type: 'website',
         url: pageUrl,
@@ -496,7 +503,7 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
         ...(description ? { description } : {}),
       }
     : undefined)
-  const twitter = overrides.twitter || (title || description
+  const twitter = pageOverrides.twitter || (title || description
     ? {
         card: 'summary_large_image',
         images: [socialImage.url],
@@ -506,7 +513,7 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
     : undefined)
 
   return {
-    ...overrides,
+    ...pageOverrides,
     alternates,
     ...(openGraph ? { openGraph } : {}),
     ...(twitter ? { twitter } : {}),
