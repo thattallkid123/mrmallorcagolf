@@ -5,7 +5,7 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: 'Son Gual Golf Mallorca - Reviews & Fees',
+        title: 'Son Gual Golf - Honest Review 2026',
         description:
           "Son Gual €115–€165, handicap certificate required. Course conditions, wind notes, and honest verdict on booking.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
@@ -341,7 +341,7 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf Mallorca - Review",
+        title: "Son Muntaner Golf - Honest Review 2026",
         description:
           "Spain's Best Golf Course 2025 (World Golf Awards). Green fees €110–€260 with buggy, 5 minutes from Palma. A PGA professional's honest verdict.",
         imagePath: '/images/son-muntaner-blog/sm-4.webp',
@@ -423,7 +423,7 @@ export const GUIDE_POST_CONTENT = {
   'santa-ponsa-1-review': {
     en: {
       metadata: {
-        title: "Santa Ponsa 1 - Long Course Review",
+        title: "Santa Ponsa 1 - Honest Review 2026",
         description:
           "Santa Ponsa 1: €77-€126, par 72, one of the longest in Europe. Hosted the DP World Tour in 2021.",
         imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
@@ -547,7 +547,7 @@ export const GUIDE_POST_CONTENT = {
   'golf-andratx-review': {
     en: {
       metadata: {
-        title: "Golf Andratx Mallorca - Review & Fees",
+        title: "Golf Andratx - Honest Review 2026",
         description:
           "€125, par 72, longest par 5 in Spain. Mountain setting, tactical layout, patience over length.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
@@ -717,7 +717,7 @@ export const GUIDE_POST_CONTENT = {
   'son-termes-review': {
     en: {
       metadata: {
-        title: "Son Termes Golf - Review 2026",
+        title: "Son Termes Golf - Honest Review 2026",
         description:
           'Son Termes green fee around €90-110, par 72, 20 minutes from Palma. Mountain views, honest 6/10 verdict.',
         imagePath: '/images/son-termes-blog/st-2.webp',
@@ -883,7 +883,7 @@ export const GUIDE_POST_CONTENT = {
   't-golf-calvia-review': {
     en: {
       metadata: {
-        title: 'T Golf Calvià - Review & Fees',
+        title: 'T Golf Calvià - Honest Review 2026',
         description:
           'Peak €210, twilight €150. 15 lakes, 6,500m back tees, 9/10 conditioning.',
         imagePath: '/images/t-golf-calvia-social.jpg',
@@ -1072,7 +1072,7 @@ export const GUIDE_POST_CONTENT = {
   'son-antem-west-review': {
     en: {
       metadata: {
-        title: "Son Antem West Mallorca - Review",
+        title: "Son Antem West - Honest Review 2026",
         description:
           'Green fees from €109, par 72, 6,293m. Resort course near Palma, relaxed layout, good conditioning.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',

@@ -1242,10 +1242,11 @@ export function buildGuideArticleMetadata(slug, locale = 'en') {
       `${SITE_ORIGIN}${buildLocalePath(`/guides/${slug}`, lang)}`,
     ])
   )
-  const badge = content.meta?.badge || 'Golf Guide'
+  // Social platforms already render the title below the image, so the card
+  // uses the plain course photo here - same treatment as every other page -
+  // rather than a duplicate text-on-image overlay.
   const rawImageUrl = content.metadata.image?.replace('https://www.mrmallorcagolf.com', SITE_ORIGIN) || ''
-  const imagePath = rawImageUrl.replace(SITE_ORIGIN, '').replace(/\.webp$/i, '.jpg')
-  const ogImageUrl = `${SITE_ORIGIN}/api/og?title=${encodeURIComponent(content.metadata.title)}&badge=${encodeURIComponent(badge)}&image=${encodeURIComponent(imagePath)}`
+  const ogImageUrl = rawImageUrl.replace(/\.webp$/i, '.jpg')
 
   return {
     title: content.metadata.title,

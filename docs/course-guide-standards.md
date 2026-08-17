@@ -4,6 +4,16 @@ Every course review guide should cover all of the following. If any item is miss
 
 Used by the `/publish-course-guide` and `/expand-guide` skills.
 
+## Metadata title convention (og:title / SEO title)
+
+Every course review's `metadata.title` in `guide-post-content.js` should follow:
+
+```
+[Course Name] - Honest Review 2026
+```
+
+Standardized 2026-08-17 — prior pages had drifted into "Review & Fees", "Reviews & Fees", "Review" (bare), and "Review 2026" variants across the 8 live reviews. Keep the year current going forward (e.g. bump to 2027 content refreshes as they happen, matching the site's yearly content-freshness pattern elsewhere). Related-guide link labels elsewhere in the file already mostly used this pattern before the standardization — that's what it was matched to.
+
 ## Required facts for every course guide
 
 **Pricing & access**

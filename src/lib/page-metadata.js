@@ -151,6 +151,7 @@ const GUIDES_INDEX_METADATA = {
 const ABOUT_METADATA = {
   en: {
     title: 'Andy Griffiths - PGA Pro, Mallorca',
+    socialTitle: 'About Andy Griffiths - PGA Pro, Mallorca',
     socialImage: '/images/about-andy-colour.jpg',
     description:
       'PGA Pro based in Mallorca. Experience: Pebble Beach, Evian, 11 years coaching in China.',
