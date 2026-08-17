@@ -5,6 +5,7 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools', 'en', {
   title: 'Free Mallorca Golf Planning Tools',
+  socialImage: '/images/home-hero-mandarin.jpg',
   description: 'Free tools to plan your Mallorca golf trip: course finder, handicap checker, course comparison, cost calculator, hotel recommender, and day builder.',
   robots: { index: true, follow: true },
 })

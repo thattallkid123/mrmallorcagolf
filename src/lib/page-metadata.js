@@ -74,6 +74,7 @@ const HOME_METADATA = {
 const GOLF_COURSES_METADATA = {
   en: {
     title: 'Mallorca Courses - Reviews & Fees',
+    socialImage: '/images/golf-courses.jpg',
     description:
       'All 24 Mallorca golf courses: green fees €55–€250, difficulty, regions, and which fits your trip.',
   },
@@ -150,6 +151,7 @@ const GUIDES_INDEX_METADATA = {
 const ABOUT_METADATA = {
   en: {
     title: 'Andy Griffiths - PGA Pro, Mallorca',
+    socialImage: '/images/about-andy-colour.jpg',
     description:
       'PGA Pro based in Mallorca. Experience: Pebble Beach, Evian, 11 years coaching in China.',
   },
@@ -226,6 +228,7 @@ const COACHING_METADATA = {
 const PLAY_WITH_A_PRO_EXPLAINED_METADATA = {
   en: {
     title: 'What "Play With A Pro" Looks Like',
+    socialImage: '/images/client-son-gual-banner.jpg',
     description:
       'A PGA pro joins your group for a full round: reading greens, managing wind, and improving your decisions in real time.',
   },
@@ -272,6 +275,7 @@ export function buildPlayWithAProExplainedMetadata(locale = 'en') {
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
     title: 'Play With A Pro - Golf Day in Mallorca',
+    socialImage: '/images/andy-coaching-client.jpg',
     description: getPlayWithAProMetadataDescription('en'),
     keywords: [
       'golf pro Mallorca',
@@ -356,6 +360,7 @@ const ITINERARY_METADATA = {
 const PLAN_YOUR_TRIP_METADATA = {
   en: {
     title: 'Plan Your Golf Trip - Courses & Tee Times',
+    socialImage: '/images/plan-your-trip-hero.jpg',
     description:
       'Use our course finder or ask Andy to plan your Mallorca trip: courses, base, routing, tee times, buggies, rentals, dining.',
   },
@@ -479,9 +484,11 @@ const LEGAL_METADATA = {
 export function buildPageMetadata(pathname, locale, overrides = {}) {
   // `socialTitle` is an optional override for the og/twitter title only. The SEO
   // `title` is capped by the 60-char SERP budget (raw title + ' | Mr Mallorca Golf');
-  // social cards have no such limit, so a page can read fuller there. Consumed
-  // here, never forwarded to Next's metadata object.
-  const { socialTitle, ...pageOverrides } = overrides
+  // social cards have no such limit, so a page can read fuller there. `socialImage`
+  // is an optional /images/... path override for the same cards, replacing the
+  // generic default with a photo specific to the page. Both are consumed here,
+  // never forwarded to Next's metadata object.
+  const { socialTitle, socialImage: socialImagePath, ...pageOverrides } = overrides
   const localePath = buildLocalePath(stripLocaleFromPath(pathname), locale)
   const alternates = getAlternates(localePath)
   const seoTitle = typeof pageOverrides.title === 'string' ? pageOverrides.title : undefined
@@ -490,7 +497,10 @@ export function buildPageMetadata(pathname, locale, overrides = {}) {
   const pageUrl = `${SITE_ORIGIN}${localePath}`
   const openGraphLocale = OPEN_GRAPH_LOCALES[locale] || OPEN_GRAPH_LOCALES.en
   const openGraphAltLocales = OPEN_GRAPH_ALT_LOCALES.filter((candidate) => candidate !== openGraphLocale)
-  const socialImage = getSocialImage(locale)
+  const defaultSocialImage = getSocialImage(locale)
+  const socialImage = typeof socialImagePath === 'string'
+    ? { ...defaultSocialImage, url: `${SITE_ORIGIN}${socialImagePath}` }
+    : defaultSocialImage
   const openGraph = pageOverrides.openGraph || (title || description
     ? {
         type: 'website',

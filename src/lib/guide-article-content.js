@@ -154,7 +154,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Plan your Mallorca golf trip: courses, when to go, transport, clubs, off-course activities. By a PGA pro on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
-      image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+      image: 'https://www.mrmallorcagolf.com/images/courses/bendinat.webp',
       imageAlt: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
     },
     meta: {
@@ -299,7 +299,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'A practical 5-day Mallorca golf itinerary from Palma: Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvià, with routing and dining notes.',
       canonical: 'https://www.mrmallorcagolf.com/guides/5-day-mallorca-golf-itinerary',
-      image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Son Gual.webp',
+      image: 'https://www.mrmallorcagolf.com/images/courses/son-quint.webp',
       imageAlt: '5-day Mallorca golf trip itinerary from a Palma base',
     },
     meta: {
@@ -846,7 +846,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         'Golf club hire €25–€65/day. Best companies, quality levels, best deals for 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
-      image: `${SITE_ORIGIN}/images/social-preview.webp`,
+      image: `${SITE_ORIGIN}/images/courses/vall-dor.webp`,
       imageAlt: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
     },
     meta: {
@@ -971,7 +971,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       description:
         "24 courses, year-round sunshine, €55–€260. PGA pro's honest answer: courses, conditions, expectations.",
       canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
-      image: 'https://www.mrmallorcagolf.com/images/blog-is-mallorca-good/Son Gual.webp',
+      image: 'https://www.mrmallorcagolf.com/images/courses/pollensa.webp',
       imageAlt: "Is Mallorca Good for Golf? A PGA Professional's Answer",
     },
     meta: {
@@ -1099,7 +1099,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       title: 'Map - 24 Golf Courses Mallorca',
       description: 'Interactive map showing the locations of all 24 golf courses in Mallorca. Find courses by region and distance from Palma.',
       canonical: 'https://www.mrmallorcagolf.com/guides/mallorca-course-map',
-      image: 'https://www.mrmallorcagolf.com/images/courses/mallorca-map.webp',
+      image: `${SITE_ORIGIN}/images/courses/pula.webp`,
       imageAlt: 'Map of Mallorca Golf Courses',
     },
     meta: {
