@@ -180,7 +180,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). Refer
 - **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
 - **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/`
 - **Reference:** `Reference/` (scorecard PDFs, pricing research)
-- **Knowledge skills:** `Skills/MMG_SKILL_*.md` — 0 currently synced (no matching folders exist under `~/.claude/skills/`; see `SKILLS_SYNC.ps1` output). Separate from the repo code-workflow skills in `.claude/skills/`.
+- **Knowledge skills:** `Skills/MMG_SKILL_*.md` (17 skills currently synced - frontend-design-mmg, mmg-autonomo-filing, mmg-blog-writing, mmg-business-operations, mmg-chinese-backlog, mmg-chinese-content, mmg-client-docs, mmg-content-pipeline, mmg-email-management, mmg-hermes-ops, mmg-partnerships, mmg-repurpose, mmg-seo-content, mr-mallorca-golf-carousel, nextjs-mrmallorcagolf, site-operations-mmg, social-media-mmg). Synced to Claude by `SKILLS_SYNC.ps1`. Separate from repo code-workflow skills in `.claude/skills/`.
 - **Tasks:** no settled canonical task system at the moment — see Task Management below.
 
 **Repo docs:** listed under Start Here above. Plus `SKILLS_SYNC.ps1` (Drive → Cowork knowledge-skill sync).
