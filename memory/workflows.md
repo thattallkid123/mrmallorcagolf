@@ -132,6 +132,10 @@ Edit locally → push to GitHub → auto-deploys. Or edit on GitHub.com directly
 
 ## Syncing docs folder
 
-The `docs/` folder in the MMG repo has copies of key files from Google Drive.
+The `docs/` folder in the MMG repo can hold copies of key files from Google Drive.
 To sync after updating a source file, tell Claude: "sync docs"
-Current synced files: `docs/MMG_BEEHIIV_SETUP.md`, `docs/MMG_CONTACTS_PUBLIC.xlsx`
+**Corrected 2026-08-18:** this used to list `docs/MMG_BEEHIIV_SETUP.md` and `docs/MMG_CONTACTS_PUBLIC.xlsx`
+as the currently-synced files — neither exists in `docs/`, and the Drive source of the second
+(`Private/Workbooks/MMG_CONTACTS_PUBLIC.xlsx`) was itself deleted the same day, being a stale
+duplicate of pricing data properly mastered in the Pricing Google Sheet. Nothing is currently synced
+to `docs/` via this mechanism.

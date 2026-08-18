@@ -27,6 +27,7 @@ Anything added here should be a **live reference**, not a session log. Dated che
 | `SEARCH_CONSOLE_INDEXING_WORKFLOW.md` | Search Console submission/indexing steps |
 | `site-ops-automation.md` | `ops:daily` / `ops:weekly` / `ops:monthly` automation reference |
 | `prototype-guide.md` | Image sourcing rules and `/images/` paths for tools/prototypes |
+| `PARTNER_REFERRAL_CODES.md` | Partner referral/reader-bonus codes — internal-only, keeps public copy reader-facing |
 | `growth-roadmap.md` | Live course-review backlog and content-priority tracking |
 | `site-quickstart.md` | One-command readiness check pointer |
 | `site-handover-guide.md` | Short handover orientation |

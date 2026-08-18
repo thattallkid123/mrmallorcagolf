@@ -10,14 +10,14 @@ description: Manual update chain for course scorecard data — par, stroke index
 ## Source of truth
 
 Official club PDFs in Drive: `Mr Mallorca Golf/Reference/Scorecards/Scorecard PDFs/` (all 24 courses).
-Human-readable master: `Mr Mallorca Golf/Reference/SCORECARD_MASTER.md` — **read this before touching any par/SI data.**
+Human-readable master: `Mr Mallorca Golf/Reference/MMG_SCORECARD_MASTER.md` — **read this before touching any par/SI data.**
 
 Only accept new data from an official club scorecard (PDF or photo from Andy). Never update par/SI from third-party golf sites.
 
 ## Update chain — all four steps, in order
 
 1. **Drive PDF:** new official scorecard into `Reference/Scorecards/Scorecard PDFs/` (Drive is on Andy's machines — if working in a remote/cloud session without Drive access, tell Andy exactly what to file and where; don't skip silently)
-2. **Drive master:** update the course's entry in `Reference/SCORECARD_MASTER.md` (same access caveat)
+2. **Drive master:** update the course's entry in `Reference/MMG_SCORECARD_MASTER.md` (same access caveat)
 3. **Repo:** `src/lib/golf-courses-data.js` — the par value appears in `pills` text only (e.g. `'Par 72 · Championship'`). Change the pill string; nothing else in that entry encodes par.
 4. **Repo content:** any blog/guide content mentioning that course's par or hole data — grep the old value (e.g. `Par 72`, `par-5 18th`, specific hole yardages) across:
    - `src/lib/guide-post-content.js`
