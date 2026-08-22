@@ -48,7 +48,7 @@
     "check:responsive": "node scripts/responsive-audit.js",
     "check:responsive:live": "node scripts/responsive-audit.js --base-url https://www.mrmallorcagolf.com",
     "sync:strokes-gained-course-data": "npm run check:course-data && node --no-warnings scripts/export-strokes-gained-course-data.mjs && node --no-warnings scripts/check-strokes-gained-export.js",
-    "check:ready": "npm run check:content && npm run check:i18n-release && npm run build",
+    "check:ready": "npm run check:content && npm test && npm run check:i18n-release && npm run build",
     "predeploy": "npm run check:ready",
     "ops:daily": "node scripts/site-ops/run-daily-health-check.mjs && node scripts/site-ops/generate-master-priority-report.mjs",
     "ops:weekly": "node scripts/site-ops/run-weekly-seo-performance.mjs && node scripts/site-ops/generate-master-priority-report.mjs",
@@ -57,7 +57,9 @@
     "ops:install-tasks": "powershell -ExecutionPolicy Bypass -File scripts/site-ops/install-windows-scheduled-tasks.ps1",
     "indexnow": "node scripts/indexnow-ping.mjs",
     "skills:sync": "node scripts/sync-agent-skills.mjs",
-    "convert-og-images": "node scripts/convert-og-images.mjs"
+    "convert-og-images": "node scripts/convert-og-images.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@upstash/redis": "^1.38.0",
@@ -75,6 +77,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "^15.5.18",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.3",
+    "vitest": "^4.1.11"
   }
 }

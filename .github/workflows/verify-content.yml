@@ -33,6 +33,9 @@ jobs:
       - name: Run content checks
         run: npm run check:content
 
+      - name: Run unit tests
+        run: npm test
+
       - name: Run release checks
         run: npm run check:i18n-release
 

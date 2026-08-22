@@ -102,10 +102,11 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 | Build locally | `npm run dev` |
 | Content checks | `npm run check:content` |
 | Locale parity check | `npm run check:locale-parity` — verifies 6-language consistency; runs automatically as part of `check:content` |
+| Unit tests | `npm test` — Vitest, currently covers the golf-cost-calculator pricing logic in `src/lib/`; runs in CI |
 | i18n release check | `npm run check:i18n-release` — run after any shared content or locale-facing edit |
 | Build check | `npm run build` |
 | Visual smoke checks | `npm run check:visual` |
-| Pre-deploy check (full bundle) | `npm run check:ready` (alias: `npm run predeploy`) — runs `check:content` + `check:i18n-release` + `build` |
+| Pre-deploy check (full bundle) | `npm run check:ready` (alias: `npm run predeploy`) — runs `check:content` + `test` + `check:i18n-release` + `build` |
 | GA4 report | `python ga4_analytics/ga4_report.py` |
 | CTR watchdog (roughly monthly) | `python search_console/check_ctr_watch.py` — flags ranked pages clicking far below expected CTR; tells apart a real copy fix from "near me" local-intent queries losing the click to Google's Local Pack (a Local SEO / GBP gap, not a metadata one) |
 | Update Google rating | Edit `REVIEW_RATING` and `REVIEW_COUNT` at the top of `src/components/ReviewBadge.jsx` — those two constants drive the badge on every page + the `aria-label`. Then commit and push. |
