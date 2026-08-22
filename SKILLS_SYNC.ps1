@@ -2,14 +2,12 @@
 # Syncs Drive-mastered MMG_SKILL_* knowledge skills to Claude when matching
 # folders exist. Repo code-workflow skills remain git-mastered separately.
 #
-# Naming rule: every Claude target below must carry an unambiguous "mmg-"
-# (or clearly MMG-branded) prefix. On 2026-08-14 the generic target
-# "seo-content" collided with an unrelated pre-existing SEO-plugin skill of
-# the same name and silently overwrote it — this script only checks whether
-# a target folder exists, not whether it's the right one. Never add a bare
-# generic name (e.g. "seo-content", "repurpose", "content-pipeline") here.
+# The Drive -> target mapping lives in Skills-Map.ps1, shared with
+# CODEX_SKILLS_SYNC.ps1, so the two sync scripts cannot drift apart.
 
 $ErrorActionPreference = "Stop"
+
+. (Join-Path $PSScriptRoot "Skills-Map.ps1")
 
 $driveRoot = if ($env:MMG_DRIVE_ROOT) { $env:MMG_DRIVE_ROOT } else { "G:\My Drive\Mr Mallorca Golf" }
 $gdriveCandidates = @(
@@ -24,23 +22,7 @@ if (-not $gdrive) {
 $claude = Join-Path $env:USERPROFILE ".claude\skills"
 $claudeMdPath = Join-Path $PSScriptRoot "CLAUDE.md"
 
-$skills = @(
-    @{Drive="MMG_SKILL_BLOG_WRITING.md"; Claude="mmg-blog-writing"},
-    @{Drive="MMG_SKILL_SEO_CONTENT.md"; Claude="mmg-seo-content"},
-    @{Drive="MMG_SKILL_SOCIAL_MEDIA.md"; Claude="social-media-mmg"},
-    @{Drive="MMG_SKILL_CAROUSEL.md"; Claude="mr-mallorca-golf-carousel"},
-    @{Drive="MMG_SKILL_CHINESE_CONTENT.md"; Claude="mmg-chinese-content"},
-    @{Drive="MMG_SKILL_FRONTEND_DESIGN.md"; Claude="frontend-design-mmg"},
-    @{Drive="MMG_SKILL_NEXTJS.md"; Claude="nextjs-mrmallorcagolf"},
-    @{Drive="MMG_SKILL_PARTNERSHIPS.md"; Claude="mmg-partnerships"},
-    @{Drive="MMG_SKILL_REPURPOSE.md"; Claude="mmg-repurpose"},
-    @{Drive="MMG_SKILL_CHINESE_BACKLOG.md"; Claude="mmg-chinese-backlog"},
-    @{Drive="MMG_SKILL_EMAIL_MANAGEMENT.md"; Claude="mmg-email-management"},
-    @{Drive="MMG_SKILL_SITE_OPERATIONS_MMG.md"; Claude="site-operations-mmg"},
-    @{Drive="MMG_SKILL_AUTONOMO_FILING.md"; Claude="mmg-autonomo-filing"},
-    @{Drive="MMG_SKILL_CLIENT_DOCS.md"; Claude="mmg-client-docs"},
-    @{Drive="MMG_SKILL_HERMES_OPS.md"; Claude="mmg-hermes-ops"}
-)
+$skills = $MmgSkillsMap
 
 Write-Host "MMG Skills Sync Script" -ForegroundColor Green
 Write-Host "======================" -ForegroundColor Green
@@ -63,7 +45,7 @@ foreach ($skill in $skills) {
     Write-Host "Syncing: $($skill.Drive)" -ForegroundColor Cyan
 
     $driveFile = Join-Path $gdrive $skill.Drive
-    $claudeFile = Join-Path (Join-Path $claude $skill.Claude) "SKILL.md"
+    $claudeFile = Join-Path (Join-Path $claude $skill.Target) "SKILL.md"
 
     if (-not (Test-Path $driveFile)) {
         Write-Host "  Source not found: $driveFile" -ForegroundColor Red
@@ -76,7 +58,7 @@ foreach ($skill in $skills) {
             Copy-Item $driveFile $claudeFile -Force
             Write-Host "  Copied to Claude" -ForegroundColor Green
             $syncCount++
-            $syncedFolders += $skill.Claude
+            $syncedFolders += $skill.Target
         } catch {
             Write-Host "  Failed to copy to Claude: $_" -ForegroundColor Red
             $errorCount++
