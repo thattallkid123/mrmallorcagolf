@@ -24,6 +24,7 @@ Anything added here should be a **live reference**, not a session log. Dated che
 | `pricing-surfaces-inventory.md` | MMG *service* pricing (PWAP, Signature Day) surface inventory. Course/green-fee pricing is a separate system — see its one section here plus `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1 |
 | `pricing-change-checklist.md` | Checklist companion to the `/pricing-change` skill |
 | `seo-reference.md` | Sitemap, robots, RSS, llms.txt, structured data, hreflang, OG images, IndexNow, CTR tracking table |
+| `lighthouse-baseline.md` | Live-site Lighthouse scorecard (perf/a11y/best-practices/SEO, LCP/CLS/TBT) — re-run `npm run check:lighthouse` and update after changes likely to move it |
 | `SEARCH_CONSOLE_INDEXING_WORKFLOW.md` | Search Console submission/indexing steps |
 | `site-ops-automation.md` | `ops:daily` / `ops:weekly` / `ops:monthly` automation reference |
 | `prototype-guide.md` | Image sourcing rules and `/images/` paths for tools/prototypes |
