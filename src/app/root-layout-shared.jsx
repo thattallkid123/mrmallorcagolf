@@ -10,11 +10,16 @@ import PageViewTracker from '../components/PageViewTracker.jsx'
 import ScrollDepthTracker from '../components/ScrollDepthTracker.jsx'
 import ScrollToTop from './scroll-to-top.jsx'
 
+// Source .ttf files stay in MMG-Fonts/ for editing/reference, but next/font/local
+// is pointed at .woff2 (generated via fontTools, `flavor = 'woff2'`) since it
+// serves whatever format it's given rather than re-encoding it — .woff2's
+// built-in Brotli compression cuts these files by ~70-78% with zero visual
+// change (confirmed 2026-08-22 during a Lighthouse mobile-LCP investigation).
 const jost = localFont({
   src: [
-    { path: '../../MMG-Fonts/Jost-300.ttf', weight: '300', style: 'normal' },
-    { path: '../../MMG-Fonts/Jost-400.ttf', weight: '400', style: 'normal' },
-    { path: '../../MMG-Fonts/Jost-500.ttf', weight: '500', style: 'normal' },
+    { path: '../../MMG-Fonts/Jost-300.woff2', weight: '300', style: 'normal' },
+    { path: '../../MMG-Fonts/Jost-400.woff2', weight: '400', style: 'normal' },
+    { path: '../../MMG-Fonts/Jost-500.woff2', weight: '500', style: 'normal' },
   ],
   variable: '--font-sans',
   display: 'swap',
@@ -22,11 +27,11 @@ const jost = localFont({
 
 const cormorantGaramond = localFont({
   src: [
-    { path: '../../MMG-Fonts/CormorantGaramond-Regular-400.ttf', weight: '400', style: 'normal' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Regular-500.ttf', weight: '500', style: 'normal' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Regular-600.ttf', weight: '600', style: 'normal' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Italic-400.ttf', weight: '400', style: 'italic' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Italic-500.ttf', weight: '500', style: 'italic' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Regular-400.woff2', weight: '400', style: 'normal' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Regular-500.woff2', weight: '500', style: 'normal' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Regular-600.woff2', weight: '600', style: 'normal' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Italic-400.woff2', weight: '400', style: 'italic' },
+    { path: '../../MMG-Fonts/CormorantGaramond-Italic-500.woff2', weight: '500', style: 'italic' },
   ],
   variable: '--font-serif',
   display: 'swap',

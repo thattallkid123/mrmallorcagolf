@@ -48,9 +48,41 @@ disabling Google Signals / ad personalization in the GA4 property settings — n
 
 ## The real lever: mobile performance
 
-Not investigated in this pass — that's a separate, larger piece of work (likely image loading: the
-CI build already flags several `<img>` tags not using `next/image` on `ContactForm.jsx` and
-`ZhCourseSelectorClient.jsx`, and TBT in the 500–1200ms range on every route suggests heavy
-client-side JS execution before interactivity). Worth a dedicated pass given LCP is nearly 3x the
-"good" threshold on mobile across the board — that's the single biggest lever available for organic
-conversion, ahead of any copy or metadata change.
+### Fixed 2026-08-22: fonts served as uncompressed .ttf
+
+Pulled the LCP breakdown for every route's mobile run to find the actual bottleneck. On most pages
+the LCP element is a *text* node (`page-hero__lead`, `pwap-hero__body`, a `::before` pseudo-element)
+with zero network dependency, meaning the delay is render-blocking, not image loading — and the
+biggest render-blocking cost turned out to be fonts. `next/font/local` (`src/app/root-layout-shared.jsx`)
+was pointed at raw `.ttf` source files in `MMG-Fonts/`; `next/font/local` self-hosts and sets
+`font-display` correctly but serves whatever format it's given rather than re-encoding it, so every
+page was shipping ~1.6MB of uncompressed font data (8 files, Jost + Cormorant Garamond, several
+weights/styles).
+
+Converted all 8 active files to `.woff2` via `fontTools` (`flavor = 'woff2'`, already available for
+the Python GA4 tooling) and repointed the loader — same self-hosting, same `font-display: swap`, same
+weights/styles, zero visual change (verified: all 9 declared @font-face entries register with
+`status: "loaded"` at the correct weight/style, H1/body resolve to the real font family, not a
+fallback). Result: **70–78% smaller per file** (Cormorant ~290KB → ~65KB, Jost ~59KB → ~18KB) — roughly
+1.1MB saved on every single page load. Also removed `CormorantGaramond-Italic-600.ttf`, a stale
+unused file a previous cleanup commit ("Fix Jost fake-bold font-weight bug, drop unused Cormorant
+italic-600 font file") missed deleting from disk despite already dropping it from the loader array.
+
+Source `.ttf` files stay in `MMG-Fonts/` for editing/reference; only the loader's `path` entries
+changed. Re-run `check:lighthouse` after this ships to confirm the LCP/TBT improvement and update the
+table above.
+
+### Not changed: GTM's gtag.js (608ms, 174KB — the single biggest script cost on the page)
+
+`googletagmanager.com/gtag/js` already loads via Next's recommended non-blocking pattern
+(`<Script strategy="afterInteractive">` + `async` in `root-layout-shared.jsx`) — this isn't a loading
+bug, it's the real cost of the library once it runs. `strategy="lazyOnload"` would defer it further
+and likely help LCP/TBT more, but trades off analytics completeness: a visitor who leaves before the
+page goes fully idle wouldn't get tracked. That's a real product tradeoff (accuracy of GA4 numbers vs.
+raw page speed), not a pure technical fix — left as a documented option rather than changed here.
+
+### Not investigated further
+
+Image loading: CI already flags a few `<img>` tags not using `next/image` (`ContactForm.jsx`,
+`ZhCourseSelectorClient.jsx`). Worth a look but wasn't the dominant LCP cost on the routes measured
+here (only the `son-gual-review` guide's LCP element was an actual image).
