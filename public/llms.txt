@@ -2,7 +2,7 @@
 
 > Mallorca golf trip planning with PGA Advanced Professional Andy Griffiths. Course guidance, itinerary logic, and premium Play With A Pro add-ons for visiting golfers.
 
-Last updated: 2026-07-18
+Last updated: 2026-08-22
 Canonical domain: https://www.mrmallorcagolf.com
 
 ## Core Pages
@@ -39,6 +39,8 @@ Planning and destination guides:
 - [Golf Trip Planning in Mallorca](https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca): How to structure a Mallorca golf trip — course mix, regions, timing, and logistics.
 - [Is Mallorca Good for Golf](https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf): Yes. 24 courses, year-round playable conditions, and short drive times from Palma.
 - [Play With A Pro Explained](https://www.mrmallorcagolf.com/guides/play-with-a-pro-explained): What a private golf day with Andy involves — one course, 18 holes, coaching woven through the round.
+- [5-Day Mallorca Golf Itinerary](https://www.mrmallorcagolf.com/guides/5-day-mallorca-golf-itinerary): A practical 5-day trip from Palma covering Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvià, with routing and dining notes.
+- [Map of All 24 Golf Courses in Mallorca](https://www.mrmallorcagolf.com/guides/mallorca-course-map): Interactive map of all 24 Mallorca golf courses, filterable by region.
 
 ## Offer
 
