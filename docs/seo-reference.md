@@ -44,6 +44,18 @@ Prior round's changes didn't move the needle (some went backwards) — this roun
 
 Also shipped this round (not CTR-focused, judge via enquiry events instead): every course review (8) and the Best Golf Courses guide now link to `/plan-your-trip`, mirrored across all 6 non-English locales. Homepage intro section gained a second link to the Best Golf Courses guide.
 
+**Judged 2026-08-22** (5.5 weeks in — before: 2026-06-19 to 07-16, after: 2026-07-18 to 08-20, Search Console + GA4, non-brand-filtered for the homepage row to match how it was originally measured):
+
+| Page | CTR before → after | Position before → after | Verdict |
+|------|---------------------|--------------------------|---------|
+| Golf Cost Mallorca | 0.31% → 0.74% (2.4x) | 6.4 → 7.7 (worse) | **Worked** — CTR more than doubled despite ranking slipping, so the copy is doing real work, not riding a position gain |
+| Son Muntaner review | 0.43% → 1.15% (2.7x) | 8.5 → 8.1 (flat) | **Worked** — impressions were flat too (703→607), so this isn't a volume-growth artifact either |
+| Homepage (non-brand queries only) | 0.00% → 0.92% | 12.4 → 13.0 (flat/worse) | **Worked** — went from zero clicks on non-brand impressions to a real, nonzero rate, with no position help |
+| /golf-courses hub | 0.48% → 0.54% | 10.2 → 11.6 (worse) | **No signal** — 2 clicks before, 3 after; too little volume to call it either way, don't rewrite again without more data |
+| Best Golf Courses guide, "majorca golf courses" query specifically | 0.00% → 0.00% (30→65 impr, still 0 clicks both periods) | 32.1 → 25.3 (better, still page 3) | **Didn't work, and can't yet** — the query still ranks position 25, where near-nobody clicks regardless of snippet quality. This is a ranking problem, not a copy problem; rewriting the description again won't fix it. (The guide's overall page CTR did rise, 1.54%→2.00%, but that's carried by its *other* queries' position improving 14.6→10.2, not by this specific edit.) |
+
+Net: 3 of 5 clean wins, one true miss with a known cause (ranking, not copy), one inconclusive on volume. A real improvement on the prior round, which went backwards on some pages. Don't draft a third round of copy for the hub or the majorca-query line yet — the hub needs more data, and the majorca query needs to rank higher before any snippet change would show up in the numbers.
+
 ### 2026-08-06 length-compliance backlog clearance (not a CTR round)
 
 `npm run check:meta-length` had a 56-issue backlog (mostly non-English `metadata.title`/`.description` values that had never been checked against the brand-suffix-aware SERP budget). Fixed all 56 in one pass and wired the check into `check:content`/`predeploy` so it can't recur silently. This was a batch technical-debt clearance, not a targeted CTR experiment — most of the touched strings are locale variants of lower-traffic pages (e.g. Golf de Andratx and Son Antem West reviews in de/es/fr/nl/sv), not pulled from a Search Console impressions/CTR review. Do not read CTR movement on these pages as validating the specific wording; if a high-impression page's CTR moves, that's coincidental to this pass, not the point of it. Full page/locale change list is in that day's git commit, not duplicated here.

@@ -45,7 +45,7 @@ Suggested cadence: ~2 course reviews/month → full set complete by early 2027. 
 - [x] Homepage intro section links to the Best Golf Courses guide (EN + zh copy; other locales fall back to EN text gracefully)
 - [x] Best Golf Courses guide meta description includes "Majorca" spelling variant
 - [x] Meta rewrites: homepage, /golf-courses hub, Golf Cost guide, Son Muntaner review title
-- See `docs/seo-reference.md` → "2026-07-17 CTR round" for the full before/after table — judge in ~4 weeks of Search Console data
+- [x] Judged 2026-08-22 — see `docs/seo-reference.md` → "2026-07-17 CTR round" for the full before/after table. 3 of 5 clean wins (Golf Cost Mallorca, Son Muntaner review, homepage non-brand CTR); /golf-courses hub inconclusive (too little click volume); the "majorca golf courses" query still ranks position 25 so its 0% CTR is a ranking problem, not a copy one — don't rewrite it again until it ranks higher.
 
 ## Open items for Andy (not code — decisions or manual steps)
 
