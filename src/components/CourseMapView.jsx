@@ -256,7 +256,7 @@ export default function CourseMapView({ lang = 'en' }) {
                 onClick={() => focusPin(item)}
                 style={{ display: 'flex', alignItems: 'center', gap: 9, width: '100%', textAlign: 'left', background: 'none', border: 'none', padding: '5px 0', cursor: 'pointer', fontFamily: "var(--font-sans)", fontSize: '0.83rem', color: '#3A342C', lineHeight: 1.3 }}
               >
-                <span style={{ flexShrink: 0, width: 22, height: 22, borderRadius: '50%', background: '#B8973C', border: '1.5px solid #2D4A3E', color: '#20362C', fontSize: 11, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.num}</span>
+                <span style={{ flexShrink: 0, width: 22, height: 22, borderRadius: '50%', background: '#B8973C', border: '1.5px solid #2D4A3E', color: '#20362C', fontSize: 11, fontWeight: 500, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.num}</span>
                 {item.label}
               </button>
             </li>

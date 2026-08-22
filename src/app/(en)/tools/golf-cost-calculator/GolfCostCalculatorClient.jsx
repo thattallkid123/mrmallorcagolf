@@ -206,7 +206,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   }
 
   const fieldStyle = { marginBottom: 18 }
-  const labelStyle = { display:'block', fontFamily:'var(--font-sans)', fontSize:11, letterSpacing:'.08em', textTransform:'uppercase', color:'#2D4A3E', marginBottom:12, fontWeight:600 }
+  const labelStyle = { display:'block', fontFamily:'var(--font-sans)', fontSize:11, letterSpacing:'.08em', textTransform:'uppercase', color:'#2D4A3E', marginBottom:12, fontWeight:500 }
   const circleBtn = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center' }
 
   function Stepper({ label, stateKey, min, max, unit }) {
@@ -721,27 +721,27 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                     <ul style={{ listStyle:'none', margin:0, padding:0 }}>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>{t.quoteForm.summaryLabels.golfers}</span>
-                        <b style={{ color:'#15392b', fontWeight:600 }}>{state.golfers}</b>
+                        <b style={{ color:'#15392b', fontWeight:500 }}>{state.golfers}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>{t.quoteForm.summaryLabels.tripLength}</span>
-                        <b style={{ color:'#15392b', fontWeight:600 }}>{state.days} day{state.days > 1 ? 's' : ''}</b>
+                        <b style={{ color:'#15392b', fontWeight:500 }}>{state.days} day{state.days > 1 ? 's' : ''}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>{t.quoteForm.summaryLabels.rounds}</span>
-                        <b style={{ color:'#15392b', fontWeight:600 }}>{state.rounds}</b>
+                        <b style={{ color:'#15392b', fontWeight:500 }}>{state.rounds}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>{t.quoteForm.summaryLabels.budget}</span>
-                        <b style={{ color:'#15392b', fontWeight:600, textTransform:'capitalize' }}>{state.budget}</b>
+                        <b style={{ color:'#15392b', fontWeight:500, textTransform:'capitalize' }}>{state.budget}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>{t.quoteForm.summaryLabels.courses}</span>
-                        <b style={{ color:'#15392b', fontWeight:600, textAlign:'right' }}>{getSuggestedCourses(state).slice(0, Math.min(state.rounds, getSuggestedCourses(state).length)).join(', ')}</b>
+                        <b style={{ color:'#15392b', fontWeight:500, textAlign:'right' }}>{getSuggestedCourses(state).slice(0, Math.min(state.rounds, getSuggestedCourses(state).length)).join(', ')}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0' }}>
                         <span>{t.quoteForm.summaryLabels.total}</span>
-                        <b style={{ color:'#15392b', fontWeight:600 }}>{results ? fmtR(results.total) : '—'}</b>
+                        <b style={{ color:'#15392b', fontWeight:500 }}>{results ? fmtR(results.total) : '—'}</b>
                       </li>
                     </ul>
                   </div>

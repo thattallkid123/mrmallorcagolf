@@ -27,7 +27,6 @@ const cormorantGaramond = localFont({
     { path: '../../MMG-Fonts/CormorantGaramond-Regular-600.ttf', weight: '600', style: 'normal' },
     { path: '../../MMG-Fonts/CormorantGaramond-Italic-400.ttf', weight: '400', style: 'italic' },
     { path: '../../MMG-Fonts/CormorantGaramond-Italic-500.ttf', weight: '500', style: 'italic' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Italic-600.ttf', weight: '600', style: 'italic' },
   ],
   variable: '--font-serif',
   display: 'swap',
