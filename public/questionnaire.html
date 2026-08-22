@@ -638,6 +638,8 @@
       <p class="section-desc">The basics. Helps me match the day to you before we reach the first tee.</p>
     </div>
 
+    <input type="text" id="q-website" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;">
+
     <div class="two-col">
       <div class="question">
         <label class="question-label" for="q-name">Your name</label>
@@ -1322,10 +1324,11 @@
     ];
 
     // Send to server
+    const website = getVal('q-website');
     fetch('/api/questionnaire', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ summaryData }),
+      body: JSON.stringify({ summaryData, website }),
     }).catch(() => {}); // fire-and-forget; don't block the thank-you screen
 
     const container = document.getElementById('summary-items');

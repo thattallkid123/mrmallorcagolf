@@ -37,7 +37,12 @@ export async function POST(request) {
   }
 
   try {
-    const { summaryData } = await request.json()
+    const { summaryData, website } = await request.json()
+
+    if (website) {
+      return Response.json({ ok: true })
+    }
+
     const safeSummary = Array.isArray(summaryData) ? summaryData : []
 
     const name = sanitizeText(safeSummary.find((item) => item.q === 'Name')?.a, 120) || 'Guest'
