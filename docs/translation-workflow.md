@@ -53,7 +53,7 @@ That means there is no safe “English only” release for translated pages.
 - `src/lib/guide-article-content.js`
 - `src/lib/guide-article-content-localized.js`
 - `src/lib/guide-post-content.js`
-- `src/lib/guide-post-content-localized.js`
+- `src/lib/guide-post-content-localized.js` (assembler; per-guide overlays live in `src/lib/guide-post-content-localized/<slug>.js`)
 
 ### Shared renderers
 

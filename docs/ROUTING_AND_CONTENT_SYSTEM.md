@@ -33,7 +33,7 @@ This file describes the current route/content architecture for the multilingual 
 - Main guide content lives in:
   - `src/lib/guide-post-content.js`
 - Localized guide content overrides live in:
-  - `src/lib/guide-post-content-localized.js`
+  - `src/lib/guide-post-content-localized/<slug>.js` (one file per guide; `guide-post-content-localized.js` assembles + exports the lookup)
 
 ## Safety Checks
 
@@ -54,7 +54,7 @@ This file describes the current route/content architecture for the multilingual 
 
 1. Add slug to `REVIEW_POST_SLUGS` or `ARTICLE_SLUGS` in `src/lib/site.js`.
 2. Add English content in `src/lib/guide-post-content.js`.
-3. Add localized overrides in `src/lib/guide-post-content-localized.js` (if available).
+3. Add localized overrides in `src/lib/guide-post-content-localized/<slug>.js` (if available) — `guide-post-content-localized.js` itself is just the assembler/lookup, split per-guide since 2026-08-22.
 4. Run:
    - `npm run check:content`
    - `npm run build`
