@@ -59,3 +59,18 @@ Net: 3 of 5 clean wins, one true miss with a known cause (ranking, not copy), on
 ### 2026-08-06 length-compliance backlog clearance (not a CTR round)
 
 `npm run check:meta-length` had a 56-issue backlog (mostly non-English `metadata.title`/`.description` values that had never been checked against the brand-suffix-aware SERP budget). Fixed all 56 in one pass and wired the check into `check:content`/`predeploy` so it can't recur silently. This was a batch technical-debt clearance, not a targeted CTR experiment — most of the touched strings are locale variants of lower-traffic pages (e.g. Golf de Andratx and Son Antem West reviews in de/es/fr/nl/sv), not pulled from a Search Console impressions/CTR review. Do not read CTR movement on these pages as validating the specific wording; if a high-impression page's CTR moves, that's coincidental to this pass, not the point of it. Full page/locale change list is in that day's git commit, not duplicated here.
+
+### 2026-08-22 CTR round (round 3)
+
+Round 2 (above) judged the same day: 3 of 5 pages improved. This round pulled fresh candidates from the last 33 days of Search Console (2026-07-18 to 2026-08-20), diagnosing before rewriting per the meta-ctr skill — checked each candidate's real published verdict/rating against its metadata rather than assuming the copy was the problem:
+
+| Page | Impressions (33d) | CTR before | Position | Change made |
+|------|--------------------|------------|----------|-------------|
+| Son Gual review | 729 | 0.41% | 8.2 | Description was price-first; the page's actual differentiator ("Son Gual is my favourite course in Mallorca", Andy's own words in the verdict) wasn't in the description at all. Rewrote to lead with it. Note: the `9/10` in this page's facts block is labelled "Difficulty", not a quality score — not used as a rating claim. |
+| Golf Andratx review | 684 | 0.73% | 8.9 | Description had no rating. Andy's actual verified score (7.5/10, "Andy's rating" in the facts block) added, leading. |
+
+Candidates considered and skipped, with reasons:
+- **Son Termes review** (290 impr, 1.38% CTR, pos 8.7) — description already leads with a real number ("honest 6/10 verdict"). Already follows the rules; rewriting a description that isn't broken risks the exact "churned without signal" mistake this file already documents from earlier rounds.
+- **Santa Ponsa 1** (150 impr) / **Son Antem West** (113 impr) — lower impression volume, and Santa Ponsa 1's only nearby number (`8/10`) is also labelled "Difficulty", not a verdict — didn't draft copy without a verified fact to lead with.
+
+Judge in ~4 weeks (target: ~2026-09-19), same before/after methodology as round 2 above.
