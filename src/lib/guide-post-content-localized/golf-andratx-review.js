@@ -120,6 +120,12 @@ const content = {
         "text": "El campo juega más difícil de lo que sugieren los metros, sobre todo en un día de viento. Una segunda visita produciría un mejor resultado. El trazado premia el conocimiento del campo y la gestión del juego bastante más que la potencia."
       },
       {
+        "text": "Preguntas frecuentes"
+      },
+      {
+        "text": "El límite de hándicap es 28 para hombres y 36 para damas, comprobado al reservar. Los buggies son obligatorios antes de las 14:00; caminar está permitido después. Se aplica una licencia federativa diaria (3 €) si no es federado. Este campo es ideal para golfistas con confianza que disfrutan de una prueba estratégica más que de la distancia: el control de la distancia desde el tee importa más que la potencia. Lo que sorprende a los primerizos: a pesar de pasar la mayor parte de la vuelta en lo alto de las montañas, la vista al mar sobre Camp de Mar solo es visible desde el hoyo 2, así que no construya sus expectativas alrededor de las vistas al agua. Consejo local: lleve un GPS o un plano del campo, ya que varias aproximaciones son semiciegas."
+      },
+      {
         "text": "Veredicto"
       },
       {
@@ -270,6 +276,12 @@ const content = {
       },
       {
         "text": "Der Platz spielt schwieriger als die Meterzahl vermuten lässt, besonders an windigen Tagen. Ein zweiter Besuch würde ein besseres Ergebnis bringen. Das Layout belohnt Ortskenntnisse und Spielmanagement weitaus mehr als Weite."
+      },
+      {
+        "text": "Häufige Fragen"
+      },
+      {
+        "text": "Das Handicap-Limit liegt bei 28 für Herren und 36 für Damen und wird bei der Buchung geprüft. Buggys sind vor 14 Uhr Pflicht; danach ist Zu-Fuß-Gehen erlaubt. Eine tägliche Verbandsgebühr (3 €) gilt, wenn man kein Mitglied des spanischen Verbands ist. Dieser Platz eignet sich für selbstbewusste Golfer, die eine strategische Herausforderung mehr schätzen als Länge: Die Distanzkontrolle vom Abschlag zählt mehr als Kraft. Was Erstbesucher überrascht: Obwohl der Großteil der Runde hoch in den Bergen verläuft, ist der Meerblick über Camp de Mar nur von Loch 2 aus sichtbar, also sollte man seine Erwartungen nicht um Wasserblicke aufbauen. Lokaler Tipp: GPS oder Platzplan mitbringen, da mehrere Anspiele halbblind sind."
       },
       {
         "text": "Fazit"
@@ -423,6 +435,12 @@ const content = {
       {
         "text": "Le parcours joue plus difficile que le métrage ne le laisse supposer, surtout par jour de vent. Une deuxième visite produirait un meilleur score. Le tracé récompense la connaissance locale et la gestion du jeu bien plus que la longueur."
       },
+      {
+        "text": "Questions frequentes"
+      },
+      {
+        "text": "La limite de handicap est de 28 pour les hommes et 36 pour les dames, vérifiée à la réservation. Les voiturettes sont obligatoires avant 14h ; la marche est autorisée après. Une licence fédérale journalière (3 €) s'applique si vous n'êtes pas membre de la fédération espagnole. Ce parcours convient aux golfeurs confiants qui apprécient un test stratégique plus que la longueur : le contrôle de distance au tee compte plus que la puissance. Ce qui surprend les visiteurs pour la première fois : bien que la majeure partie du parcours se déroule en altitude dans les montagnes, la vue sur la mer à Camp de Mar n'est visible que depuis le trou 2, donc ne construisez pas vos attentes autour de la vue sur l'eau. Conseil local : apportez un GPS ou un plan du parcours, car plusieurs approches sont semi-aveugles."
+      },
       {},
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Golf de Andratx",
@@ -572,6 +590,12 @@ const content = {
       },
       {
         "text": "De baan speelt moeilijker dan het metrage doet vermoeden, met name op een winderige dag. Een tweede bezoek zou een beter resultaat opleveren. De indeling beloont lokale kennis en baanmanagement veel meer dan lengte."
+      },
+      {
+        "text": "Veelgestelde vragen"
+      },
+      {
+        "text": "De handicaplimiet is 28 voor heren en 36 voor dames, gecontroleerd bij het boeken. Buggy's zijn verplicht voor 14:00 uur; lopen is daarna toegestaan. Een dagelijkse federatielicentie (€3) geldt als u geen lid bent van de Spaanse federatie. Deze baan is geschikt voor zelfverzekerde golfers die een strategische uitdaging meer waarderen dan lengte: afstandscontrole vanaf de tee telt meer dan kracht. Wat beginners verrast: hoewel het grootste deel van de ronde hoog in de bergen speelt, is het zeezicht over Camp de Mar alleen zichtbaar vanaf hole 2, bouw uw verwachtingen dus niet op rond het waterzicht. Lokale tip: neem een GPS of baanplanner mee, want verschillende aanspelen zijn deels blind."
       },
       {
         "text": "Oordeel"
@@ -726,6 +750,12 @@ const content = {
         "text": "Banan spelar svårare än yardaget antyder, särskilt en blåsig dag. Ett andra besök skulle ge ett bättre resultat. Layouten belönar lokalkännedom och banmanagement mycket mer än laengd."
       },
       {
+        "text": "Vanliga frågor"
+      },
+      {
+        "text": "Handicapgränsen är 28 för herrar och 36 för damer, kontrolleras vid bokning. Buggy är obligatoriskt före klockan 14; att gå är tillåtet efter det. En daglig förbundsavgift (3 €) gäller om du inte är medlem i det spanska förbundet. Denna bana passar självsäkra golfare som uppskattar en strategisk utmaning mer än längd: avståndskontroll från tee betyder mer än kraft. Vad som överraskar förstagångsbesökare: trots att större delen av rundan spelas högt uppe i bergen syns havsutsikten över Camp de Mar bara från hål 2, så bygg inte dina förväntningar kring vattenutsikt. Lokalt tips: ta med GPS eller en banplan, eftersom flera inspel är delvis blinda."
+      },
+      {
         "text": "Omdöme"
       },
       {
@@ -876,6 +906,12 @@ const content = {
       },
       {
         "text": "这个球场打起来比数字上看起来难，尤其在有风的天气。第二次来打，成绩一定会更好。这片场地奖励的是对球场的熟悉和打法管理，而不是距离。"
+      },
+      {
+        "text": "常见问题"
+      },
+      {
+        "text": "差点限制为男子 28、女子 36，预订时会核实。下午 2 点前必须使用球车，之后可以步行。若非西班牙高协会员，需缴纳每日会籍费（3 €）。这座球场适合喜欢策略性考验多于比拼距离的自信球手：发球的落点控制比力量更重要。让第一次来访者意外的一点：尽管大部分时间都在山间高处打球，只有在第 2 洞才能看到 Camp de Mar 的海景，所以不要对海景抱太高期待。当地建议：带上 GPS 或球场导览图，因为好几个攻果岭的角度是半盲打。"
       },
       {
         "text": "总评"

@@ -324,6 +324,11 @@ export const GUIDE_POST_CONTENT = {
           alt: 'Alcanada clubhouse terrace',
           caption: 'The clubhouse terrace.',
         },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: 'Walking is available with an electric trolley (€20) alongside the buggy (€48), and a daily Federation licence (€3) applies for non-members. Alcanada suits confident golfers wanting a proper, memorable test rather than an easy round: the greens are severely undulating and fast despite the spectacular setting. One thing that surprises first-timers: the views can make the tee shot feel easier than it is, so pick your line before you enjoy the scenery. Best tee time is the morning, for the calmest breeze and best light, and it is worth building in time afterwards for lunch on the terrace facing the lighthouse.',
+        },
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
@@ -519,6 +524,11 @@ export const GUIDE_POST_CONTENT = {
           type: 'paragraph',
           text: 'Buggy €43 for 18 holes. Club hire €40. The course is public and openly bookable - no member access required. Book in advance in peak season; the DP World Tour history draws visitors who know what they are coming for.',
         },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: 'A valid WHS handicap certificate is required at booking; buggy hire is €43 for 18 holes. Santa Ponsa 1 suits confident golfers who want to enjoy hitting driver on wide fairways, and works well as an easier round earlier in a trip before a tougher course like Son Gual or Golf Andratx. One thing that surprises visitors: on a calm day the course flatters you, but add wind and the long par 3s and the 590m 10th hole earn every metre of their length. Best tee time is early, before the usual mid-morning breeze arrives.',
+        },
         { type: 'heading', text: 'Verdict' },
         {
           type: 'notes',
@@ -689,6 +699,14 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'heading',
+          text: 'Common Questions',
+        },
+        {
+          type: 'paragraph',
+          text: 'Handicap limit is 28 for men, 36 for ladies, checked at booking. Buggies are mandatory before 2pm; walking is allowed after that. A daily Federation licence (€3) applies if you are not a member of the Spanish Federation. This suits confident golfers who enjoy a strategic test more than length: distance control off the tee matters more than power. One thing that surprises first-timers: despite spending most of the round high in the mountains, the sea view over Camp de Mar is visible only from hole 2, so do not build your expectations around water views. Local tip: bring a GPS or course planner, since several approaches are semi-blind.',
+        },
+        {
+          type: 'heading',
           text: 'Verdict',
         },
         {
@@ -855,6 +873,11 @@ export const GUIDE_POST_CONTENT = {
           presentation: 'natural',
           naturalWidth: 5120,
           naturalHeight: 1198,
+        },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: "Most players take a buggy, especially on warmer days, though walking the front nine is straightforward (the back nine's climbs are the tougher call). Son Termes suits golfers who want character and mountain views over outright length: several par 4s are driveable, and it makes a good, less expensive alternative to the premium courses close to Palma. One thing that surprises first-timers: despite being short, the course collects misses in ways that are not obvious from the card, and you will likely share a few holes with the resident goats. Best tee time is an early start, before the wind builds on the exposed upper holes.",
         },
         { type: 'heading', text: 'Verdict' },
         {
@@ -1238,6 +1261,14 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'heading',
+          text: 'Common Questions',
+        },
+        {
+          type: 'paragraph',
+          text: 'Walking is straightforward here: the routing is flat and easy on foot, with buggy hire also available. Son Antem West suits holiday golfers and mixed-ability groups who want an enjoyable, accessible round close to Palma; it is not the course to pick if you specifically want a layout that tests you from start to finish. One thing that surprises visitors: several greens are raised or slope away from the player, and the ball releases considerably further after landing than it looks like it will, so a lower running chip is often the safer play. Best tee time is a weekday morning; Sundays can back up early because the course is popular with resort golfers.',
+        },
+        {
+          type: 'heading',
           text: 'Verdict',
         },
         {
@@ -1334,6 +1365,11 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text: 'Beyond the coaching, you are getting a round in Mallorca on one of the island outstanding courses, with someone who knows every hole and can make the day genuinely enjoyable. That combination is what the <a href="/play-with-a-pro">Play With A Pro experience</a> is built around.',
+        },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: "On-course coaching works well for a wide range of players, from those whose course management is holding back a reasonable standard of golf to visitors who want to get more out of playing courses like Son Gual or Alcanada. It is also a good option for pairs or small groups coached together. Sessions mostly take place at Son Gual, Andy's most-played course on the island, or Alcanada for groups who want the most scenic round; other courses are used depending on the group and what they want to work on. Most players leave with three or four specific things to work on, rather than a long list of swing faults, plus a clearer sense of course management: where to take risk and where to play safe.",
         },
         { type: 'heading', text: 'A Note on Range Lessons' },
         {

@@ -136,6 +136,12 @@ const content = {
         "text": "Ubicación: Llucmajor, a unos 15 o 20 minutos al sur de Palma. Fácil de llegar y fácil de combinar con uno o dos dias en la ciudad."
       },
       {
+        "text": "Preguntas frecuentes"
+      },
+      {
+        "text": "Caminar es sencillo aquí: el recorrido es llano y fácil a pie, y también hay buggy disponible. Son Antem West es ideal para golfistas de vacaciones y grupos de nivel mixto que buscan una vuelta agradable y accesible cerca de Palma; no es el campo a elegir si busca específicamente un trazado que le ponga a prueba de principio a fin. Lo que sorprende a los visitantes: varios greens están elevados o inclinados en contra del jugador, y la bola se desliza bastante más después de aterrizar de lo que parece, así que un golpe bajo y rodado suele ser la opción más segura. La mejor hora de salida es entre semana por la mañana; los domingos pueden llenarse pronto porque el campo es popular entre los golfistas del resort."
+      },
+      {
         "text": "Veredicto"
       },
       {
@@ -302,6 +308,12 @@ const content = {
       },
       {
         "text": "Lage: Llucmajor, etwa 15 bis 20 Minuten südlich von Palma. Leicht zu erreichen und gut mit einem Tag oder zwei in der Stadt zu verbinden."
+      },
+      {
+        "text": "Häufige Fragen"
+      },
+      {
+        "text": "Zu Fuß gehen ist hier unkompliziert: Die Routenführung ist flach und leicht zu Fuß zu bewältigen, ein Buggy ist ebenfalls verfügbar. Son Antem West eignet sich für Urlaubsgolfer und Gruppen mit gemischtem Niveau, die eine angenehme, zugängliche Runde nahe Palma suchen; es ist nicht der richtige Platz, wenn man gezielt ein Layout sucht, das von Anfang bis Ende fordert. Was Besucher überrascht: Mehrere Greens sind erhöht oder neigen sich vom Spieler weg, und der Ball rollt nach der Landung deutlich weiter, als es aussieht, sodass ein niedriger, rollender Chip oft die sicherere Wahl ist. Die beste Startzeit ist ein Wochentagmorgen; sonntags kann es früh voll werden, weil der Platz bei Resort-Golfern beliebt ist."
       },
       {
         "text": "Fazit"
@@ -471,6 +483,12 @@ const content = {
       {
         "text": "Lieu : Llucmajor, a environ 15 a 20 minutes au sud de Palma. Facile d accès et facile a combiner avec une journée ou deux en ville."
       },
+      {
+        "text": "Questions frequentes"
+      },
+      {
+        "text": "Marcher est simple ici : le tracé est plat et facile à pied, et la location de voiturette est aussi disponible. Son Antem West convient aux golfeurs en vacances et aux groupes de niveaux mixtes qui recherchent un parcours agréable et accessible près de Palma ; ce n'est pas le parcours à choisir si vous cherchez spécifiquement un tracé qui vous teste du début à la fin. Ce qui surprend les visiteurs : plusieurs greens sont surélevés ou inclinés à l'opposé du joueur, et la balle roule nettement plus loin après l'atterrissage qu'il n'y paraît, donc un chip bas et roulé est souvent le choix le plus sûr. La meilleure heure de départ est en semaine le matin ; le dimanche, le parcours peut se remplir tôt car il est populaire auprès des golfeurs du resort."
+      },
       {},
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Son Antem West",
@@ -636,6 +654,12 @@ const content = {
       },
       {
         "text": "Locatie: Llucmajor, ongeveer 15 tot 20 minuten ten zuiden van Palma. Makkelijk te bereiken en goed te combineren met een dag of twee in de stad."
+      },
+      {
+        "text": "Veelgestelde vragen"
+      },
+      {
+        "text": "Lopen is hier eenvoudig: de routing is vlak en makkelijk te voet, buggyverhuur is ook beschikbaar. Son Antem West is geschikt voor vakantiegolfers en groepen met gemengd niveau die een aangename, toegankelijke ronde dicht bij Palma zoeken; het is niet de baan om te kiezen als u specifiek een lay-out zoekt die u van begin tot eind test. Wat bezoekers verrast: verschillende greens liggen verhoogd of hellen van de speler af, en de bal rolt na landing aanzienlijk verder door dan het lijkt, dus een lage, rollende chip is vaak de veiligere keuze. De beste starttijd is een doordeweekse ochtend; op zondag kan het vroeg druk worden omdat de baan populair is bij resortgolfers."
       },
       {
         "text": "Oordeel"
@@ -806,6 +830,12 @@ const content = {
         "text": "Plats: Llucmajor, cirka 15 till 20 minuter soder om Palma. Latt att na och latt att kombinera med en dag eller två i staden."
       },
       {
+        "text": "Vanliga frågor"
+      },
+      {
+        "text": "Att gå är enkelt här: sträckningen är flack och lätt att gå, buggyhyra finns också. Son Antem West passar semestergolfare och grupper med blandad nivå som vill ha en trevlig, tillgänglig runda nära Palma; det är inte banan att välja om du specifikt vill ha en layout som testar dig från början till slut. Vad som överraskar besökare: flera greener är upphöjda eller lutar bort från spelaren, och bollen rullar betydligt längre efter landning än det ser ut, så en låg, rullande chip är ofta det säkrare valet. Bästa starttiden är en vardagsmorgon; söndagar kan bli fulla tidigt eftersom banan är populär bland resortgolfare."
+      },
+      {
         "text": "Omdome"
       },
       {
@@ -972,6 +1002,12 @@ const content = {
       },
       {
         "text": "位置：Llucmajor，帕尔马以南约15到20分钟。很容易到达，也容易和在帕尔马住一两天组合起来。"
+      },
+      {
+        "text": "常见问题"
+      },
+      {
+        "text": "这里步行很轻松：球道走线平坦，步行毫无压力，也提供球车租赁。Son Antem West 适合度假球手和水平参差的团体，他们想要在帕尔马附近打一场愉快、易上手的球；如果你特别想找一座从头到尾都考验你的球场，这里不是首选。让访客意外的一点：好几个果岭是高台或朝反方向倾斜，落地后球的滚动距离比看起来要远得多，所以低平的推击式切球往往更保险。最佳开球时间是工作日的早上；周日球场因受度假球手欢迎，很早就可能约满。"
       },
       {
         "text": "结论"

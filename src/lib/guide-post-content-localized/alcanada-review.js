@@ -154,6 +154,12 @@ const content = {
         "caption": "La terraza del club."
       },
       {
+        "text": "Preguntas frecuentes"
+      },
+      {
+        "text": "Caminar es posible con carrito de mano eléctrico (20 €) además del buggy (48 €), y se aplica una licencia federativa diaria (3 €) para no federados. Alcanada es ideal para golfistas con confianza que buscan una prueba seria y memorable, no una vuelta fácil: los greens son muy ondulados y rápidos pese al entorno espectacular. Lo que sorprende a los primerizos: las vistas pueden hacer que el golpe de salida parezca más fácil de lo que es, así que elija su línea antes de disfrutar del paisaje. La mejor hora de salida es por la mañana, con la brisa más suave y mejor luz, y merece la pena reservar tiempo después para comer en la terraza frente al faro."
+      },
+      {
         "text": "Veredicto"
       },
       {
@@ -317,6 +323,12 @@ const content = {
       },
       {
         "caption": "Die Terrasse des Clubhauses."
+      },
+      {
+        "text": "Häufige Fragen"
+      },
+      {
+        "text": "Zu Fuß ist mit Elektrotrolley (20 €) neben dem Buggy (48 €) möglich, und für Nicht-Mitglieder gilt eine Tagesgebühr des Verbands (3 €). Alcanada eignet sich für selbstbewusste Golfer, die eine echte, unvergessliche Herausforderung suchen statt einer leichten Runde: Die Greens sind trotz der spektakulären Kulisse stark gewellt und schnell. Was Erstbesucher überrascht: Die Aussicht kann den Abschlag leichter erscheinen lassen, als er ist, also die Linie wählen, bevor man die Landschaft genießt. Die beste Startzeit ist der Morgen, für die ruhigste Brise und das beste Licht, und es lohnt sich, danach Zeit für ein Mittagessen auf der Terrasse mit Blick auf den Leuchtturm einzuplanen."
       },
       {
         "text": "Fazit"
@@ -483,6 +495,12 @@ const content = {
       {
         "caption": "La terrasse du club."
       },
+      {
+        "text": "Questions frequentes"
+      },
+      {
+        "text": "La marche est possible avec un chariot électrique (20 €) en plus de la voiturette (48 €), et une licence fédérale journalière (3 €) s'applique pour les non-fédérés. Alcanada convient aux golfeurs confiants qui recherchent un vrai test mémorable plutôt qu'un parcours facile : les greens sont très ondulés et rapides malgré le cadre spectaculaire. Ce qui surprend les visiteurs pour la première fois : la vue peut donner l'impression que le coup de départ est plus facile qu'il ne l'est, donc choisissez votre ligne avant de profiter du paysage. La meilleure heure de départ est le matin, pour la brise la plus calme et la meilleure lumière, et il vaut la peine de prévoir du temps ensuite pour déjeuner sur la terrasse face au phare."
+      },
       {},
       {
         "text": "Alcanada est le parcours que je choisirais pour faire tomber quelqu'un amoureux du golf à Majorque. Les greens vont vous tester. Le trajet vers le nord en vaut la peine. Et le déjeuner après la partie n'est pas négociable. Vous prévoyez plusieurs parcours pendant le voyage ? Commencez par le <a href=\"/plan-your-trip\">guide de planification du voyage</a>."
@@ -645,6 +663,12 @@ const content = {
       },
       {
         "caption": "Het clubhusterras."
+      },
+      {
+        "text": "Veelgestelde vragen"
+      },
+      {
+        "text": "Lopen kan met een elektrische trolley (€20) naast de buggy (€48), en er geldt een dagelijkse federatielicentie (€3) voor niet-leden. Alcanada is geschikt voor zelfverzekerde golfers die een echte, gedenkwaardige uitdaging zoeken in plaats van een makkelijke ronde: de greens zijn ondanks de spectaculaire omgeving sterk glooiend en snel. Wat beginners verrast: het uitzicht kan de afslag makkelijker doen lijken dan hij is, kies dus uw lijn voordat u van het landschap geniet. De beste starttijd is de ochtend, voor de rustigste bries en het beste licht, en het is de moeite waard om daarna tijd in te plannen voor lunch op het terras met uitzicht op de vuurtoren."
       },
       {
         "text": "Oordeel"
@@ -812,6 +836,12 @@ const content = {
         "caption": "Klubbhusterrassen."
       },
       {
+        "text": "Vanliga frågor"
+      },
+      {
+        "text": "Att gå är möjligt med elektrisk trolley (20 €) utöver buggyn (48 €), och en daglig förbundsavgift (3 €) gäller för icke-medlemmar. Alcanada passar självsäkra golfare som vill ha en riktig, minnesvärd utmaning snarare än en lätt runda: greenerna är kraftigt kuperade och snabba trots den spektakulära miljön. Vad som överraskar förstagångsbesökare: utsikten kan få utslaget att kännas lättare än det är, så välj din linje innan du njuter av landskapet. Bästa starttiden är morgonen, för den lugnaste brisen och bästa ljuset, och det är värt att planera in tid efteråt för lunch på terrassen mot fyren."
+      },
+      {
         "text": "Omdöme"
       },
       {
@@ -975,6 +1005,12 @@ const content = {
       },
       {
         "caption": "会所露台。"
+      },
+      {
+        "text": "常见问题"
+      },
+      {
+        "text": "步行可选（电动手推车 20 €），也可以选择球车（48 €）；非西班牙高协会员需缴纳每日会籍费（3 €）。Alcanada 适合有信心、想要一场真正难忘考验的球手，而不是轻松的一轮：尽管环境壮观，果岭却起伏剧烈、速度很快。第一次来访者容易忽略的一点：美景会让开球看起来比实际更简单，所以先选好落点线路，再欣赏风景。最佳开球时间是早上，风最轻、光线最好，打完后也值得留出时间在面向灯塔的露台上享用午餐。"
       },
       {
         "text": "结论"

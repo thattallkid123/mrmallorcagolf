@@ -130,6 +130,12 @@ const content = {
         "caption": "El campo desde arriba. El trazado entre las montañas es lo que hace que Son Termes sea distinto de cualquier otra opción en la isla en este rango de precio."
       },
       {
+        "text": "Preguntas frecuentes"
+      },
+      {
+        "text": "La mayoría de los jugadores usa buggy, sobre todo en días calurosos, aunque caminar la vuelta de ida es sencillo (las subidas de la vuelta de vuelta son lo más exigente). Son Termes es ideal para golfistas que buscan carácter y vistas a la montaña más que longitud pura: varios pares 4 son alcanzables desde el tee, y es una alternativa buena y más económica a los campos premium cerca de Palma. Lo que sorprende a los primerizos: a pesar de ser corto, el campo penaliza los golpes fallados de formas que no son evidentes en la tarjeta, y probablemente comparta algún hoyo con las cabras que viven allí. La mejor hora de salida es temprano, antes de que el viento se levante en los hoyos altos y expuestos."
+      },
+      {
         "text": "Veredicto"
       },
       {
@@ -289,6 +295,12 @@ const content = {
       {
         "alt": "Luftaufnahme des Golfplatzes Son Termes auf Mallorca mit Bergen rund um das Layout",
         "caption": "Der Platz aus der Vogelperspektive. Das Routing durch die Berge macht Son Termes auf dieser Preisstufe auf der Insel besonders."
+      },
+      {
+        "text": "Häufige Fragen"
+      },
+      {
+        "text": "Die meisten Spieler nehmen einen Buggy, besonders an wärmeren Tagen, auch wenn das Gehen auf der ersten Neun unkompliziert ist (die Anstiege auf der zweiten Neun sind die größere Herausforderung). Son Termes eignet sich für Golfer, die Charakter und Bergblicke statt reiner Länge suchen: Mehrere Par 4 sind fast erreichbar vom Abschlag, und es ist eine gute, günstigere Alternative zu den Premium-Plätzen nahe Palma. Was Erstbesucher überrascht: Trotz der kurzen Länge sammelt der Platz Fehlschläge auf eine Weise, die von der Scorekarte nicht ersichtlich ist, und man teilt sich vermutlich einige Löcher mit den ansässigen Ziegen. Die beste Startzeit ist früh, bevor der Wind auf den exponierten oberen Löchern zunimmt."
       },
       {
         "text": "Fazit"
@@ -452,6 +464,12 @@ const content = {
         "alt": "Vue aérienne du golf Son Termes à Majorque sur le tracé avec les montagnes",
         "caption": "Le parcours vu du ciel. Son tracé dans les montagnes est ce qui distingue Son Termes de tout le reste sur l'île à ce niveau de prix."
       },
+      {
+        "text": "Questions frequentes"
+      },
+      {
+        "text": "La plupart des joueurs prennent une voiturette, surtout par temps chaud, même si marcher l'aller est simple (les montées du retour sont plus exigeantes). Son Termes convient aux golfeurs qui recherchent du caractère et des vues sur la montagne plutôt que la longueur pure : plusieurs pars 4 sont driveables, et c'est une bonne alternative, moins chère, aux parcours premium proches de Palma. Ce qui surprend les visiteurs pour la première fois : malgré sa courtesse, le parcours pénalise les coups manqués de façons qui ne sont pas évidentes sur la carte, et vous partagerez probablement quelques trous avec les chèvres qui y vivent. La meilleure heure de départ est tôt, avant que le vent ne se lève sur les trous exposés du haut du parcours."
+      },
       {},
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Son Termes",
@@ -611,6 +629,12 @@ const content = {
       {
         "alt": "Luchtfoto van golfbaan Son Termes op Mallorca met het banenverloop in de bergen",
         "caption": "De baan van bovenaf. De routing door de bergen maakt Son Termes anders dan alles in deze prijsklasse op het eiland."
+      },
+      {
+        "text": "Veelgestelde vragen"
+      },
+      {
+        "text": "De meeste spelers nemen een buggy, vooral op warmere dagen, hoewel lopen op de eerste negen eenvoudig is (de klimmen op de tweede negen zijn de zwaardere opgave). Son Termes is geschikt voor golfers die karakter en bergzicht zoeken boven pure lengte: verschillende par 4's zijn bijna te drivenen, en het is een goed, goedkoper alternatief voor de premium banen bij Palma. Wat beginners verrast: ondanks de korte lengte verzamelt de baan gemiste slagen op manieren die niet duidelijk zijn op de scorekaart, en u deelt waarschijnlijk enkele holes met de geiten die er wonen. De beste starttijd is een vroege start, voordat de wind opsteekt op de blootgestelde hogere holes."
       },
       {
         "text": "Eindoordeel"
@@ -775,6 +799,12 @@ const content = {
         "caption": "Banan ovanifrån. Dragningen genom bergen är det som gör Son Termes annorlunda än allt annat i samma prisklass på ön."
       },
       {
+        "text": "Vanliga frågor"
+      },
+      {
+        "text": "De flesta spelare tar en buggy, särskilt på varmare dagar, även om det är enkelt att gå den första nian (uppförsbackarna på den andra nian är den tuffare biten). Son Termes passar golfare som söker karaktär och bergsutsikt snarare än ren längd: flera par 4-hål är nästan drivebara, och det är ett bra, billigare alternativ till premiumbanorna nära Palma. Vad som överraskar förstagångsbesökare: trots att banan är kort samlar den in missade slag på sätt som inte syns på scorekortet, och du delar troligen några hål med de bofasta getterna. Bästa starttiden är en tidig start, innan vinden tilltar på de exponerade övre hålen."
+      },
+      {
         "text": "Omdöme"
       },
       {
@@ -935,6 +965,12 @@ const content = {
       {
         "alt": "马略卡 Son Termes 高尔夫球场航拍，可见球道穿行于群山之间",
         "caption": "从空中看球场。穿山而行的球道布局，正是 Son Termes 与岛上同价位其他球场拉开差异的地方。"
+      },
+      {
+        "text": "常见问题"
+      },
+      {
+        "text": "大多数球手会选择球车，尤其是天热的时候，不过前九洞步行相对轻松（后九洞的爬坡才是真正的考验）。Son Termes 适合看重特色和山景、而非单纯比拼距离的球手：几个四杆洞几乎可以一杆上果岭，而且相比帕尔马附近的高端球场，它是个不错又实惠的选择。让第一次来访者意外的一点：球场虽短，却会以记分卡上看不出来的方式惩罚失误球，而且大概率会在球道上遇到几只常驻的山羊。最佳开球时间是清早，趁风还没在暴露的高处球洞变强。"
       },
       {
         "text": "结论"

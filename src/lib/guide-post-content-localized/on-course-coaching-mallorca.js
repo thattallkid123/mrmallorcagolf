@@ -50,6 +50,12 @@ const content = {
         "text": "Más allá del coaching, obtiene una vuelta en Mallorca en uno de los campos más destacados de la isla, con alguien que conoce cada hoyo y puede hacer que el día sea genuinamente disfrutable. Esa combinación es la base de la <a href=\"/play-with-a-pro\">experiencia Play With A Pro</a>."
       },
       {
+        "text": "Preguntas frecuentes"
+      },
+      {
+        "text": "El coaching en el campo funciona bien para una amplia gama de jugadores, desde quienes tienen un nivel razonable pero su gestión del campo les frena, hasta visitantes que quieren aprovechar más su vuelta en campos como Son Gual o Alcanada. También es una buena opción para parejas o grupos pequeños que reciben clases juntos. Las sesiones se realizan principalmente en Son Gual, el campo donde Andy juega con más frecuencia en la isla, o en Alcanada para grupos que buscan la vuelta más espectacular; se usan otros campos según el grupo y lo que quieran trabajar. La mayoría de los jugadores terminan con tres o cuatro aspectos concretos en los que trabajar, en lugar de una larga lista de defectos de swing, además de una idea más clara de la gestión del campo: cuándo arriesgar y cuándo jugar seguro."
+      },
+      {
         "text": "Una nota sobre las clases en el campo de prácticas"
       },
       {
@@ -109,6 +115,12 @@ const content = {
       },
       {
         "text": "Über das Coaching hinaus bekommen Sie eine Runde auf Mallorca auf einem der herausragenden Plätze der Insel, mit jemandem, der jedes Loch kennt und den Tag wirklich genussvoll gestalten kann. Genau diese Kombination steht im Zentrum des <a href=\"/play-with-a-pro\">Play With A Pro Erlebnisses</a>."
+      },
+      {
+        "text": "Häufige Fragen"
+      },
+      {
+        "text": "On-Course-Coaching eignet sich für ein breites Spektrum an Spielern, von jenen mit solidem Niveau, deren Platzmanagement sie zurückhält, bis zu Besuchern, die mehr aus Runden auf Plätzen wie Son Gual oder Alcanada herausholen wollen. Es ist auch eine gute Option für Paare oder kleine Gruppen, die gemeinsam gecoacht werden. Die Sessions finden meist auf Son Gual statt, dem Platz, den Andy auf der Insel am häufigsten spielt, oder auf Alcanada für Gruppen, die die landschaftlich schönste Runde wollen; andere Plätze werden je nach Gruppe und Trainingsziel genutzt. Die meisten Spieler verlassen die Runde mit drei oder vier konkreten Punkten zum Arbeiten, statt einer langen Liste von Schwungfehlern, plus einem klareren Gefühl für Platzmanagement: wann man Risiko eingeht und wann man sicher spielt."
       },
       {
         "text": "Ein Hinweis zu Range-Lektionen"
@@ -172,6 +184,12 @@ const content = {
         "text": "Au-delà du coaching, vous obtenez une partie à Majorque sur l'un des parcours remarquables de l'île, avec quelqu'un qui connaît chaque trou et peut rendre la journée réellement agréable. C'est cette combinaison qui est au cœur de l'<a href=\"/play-with-a-pro\">expérience Play With A Pro</a>."
       },
       {
+        "text": "Questions frequentes"
+      },
+      {
+        "text": "Le coaching sur le parcours convient à un large éventail de joueurs, de ceux dont la gestion de parcours freine un niveau de jeu raisonnable, aux visiteurs qui veulent tirer davantage de parcours comme Son Gual ou Alcanada. C'est aussi une bonne option pour des duos ou petits groupes coachés ensemble. Les sessions ont lieu principalement à Son Gual, le parcours qu'Andy joue le plus sur l'île, ou à Alcanada pour les groupes qui veulent le parcours le plus spectaculaire ; d'autres parcours sont utilisés selon le groupe et ce qu'il souhaite travailler. La plupart des joueurs repartent avec trois ou quatre points précis à travailler, plutôt qu'une longue liste de défauts de swing, ainsi qu'une compréhension plus claire de la gestion de parcours : quand prendre des risques et quand jouer la sécurité."
+      },
+      {
         "text": "Un mot sur les leçons au practice"
       },
       {
@@ -231,6 +249,12 @@ const content = {
       },
       {
         "text": "Naast de coaching krijgt u een ronde op Mallorca op een van de uitstekende banen van het eiland, met iemand die elke hole kent en de dag echt aangenaam kan maken. Die combinatie is waar de <a href=\"/play-with-a-pro\">Play With A Pro ervaring</a> om draait."
+      },
+      {
+        "text": "Veelgestelde vragen"
+      },
+      {
+        "text": "On-course coaching werkt goed voor een breed scala aan spelers, van spelers met een redelijk niveau wiens baanmanagement hen tegenhoudt, tot bezoekers die meer uit banen als Son Gual of Alcanada willen halen. Het is ook een goede optie voor duo's of kleine groepen die samen begeleid worden. Sessies vinden meestal plaats op Son Gual, de baan die Andy het vaakst speelt op het eiland, of op Alcanada voor groepen die de meest schilderachtige ronde willen; andere banen worden gebruikt afhankelijk van de groep en waar ze aan willen werken. De meeste spelers gaan naar huis met drie of vier concrete verbeterpunten, in plaats van een lange lijst swingfouten, plus een duidelijker beeld van baanmanagement: wanneer risico nemen en wanneer veilig spelen."
       },
       {
         "text": "Een woord over lessen op de driving range"
@@ -294,6 +318,12 @@ const content = {
         "text": "Utöver coachingen får du en runda på Mallorca på en av öns bästa banor, med någon som känner varje hål och kan göra dagen genuint njutbar. Den kombinationen är vad <a href=\"/play-with-a-pro\">Play With A Pro-upplevelsen</a> bygger på."
       },
       {
+        "text": "Vanliga frågor"
+      },
+      {
+        "text": "On-course-coaching fungerar bra för ett brett spann av spelare, från dem med en rimlig nivå vars banhantering håller dem tillbaka, till besökare som vill få ut mer av att spela banor som Son Gual eller Alcanada. Det är också ett bra alternativ för par eller små grupper som coachas tillsammans. Sessionerna sker mestadels på Son Gual, banan Andy spelar mest på ön, eller på Alcanada för grupper som vill ha den mest natursköna rundan; andra banor används beroende på gruppen och vad de vill jobba med. De flesta spelare går därifrån med tre eller fyra konkreta saker att jobba på, snarare än en lång lista med svingfel, plus en tydligare känsla för banhantering: när man ska ta risker och när man ska spela säkert."
+      },
+      {
         "text": "Ett ord om lektioner på rangen"
       },
       {
@@ -353,6 +383,12 @@ const content = {
       },
       {
         "text": "除了指导本身，您还能在马略卡岛上一座出色的球场打上一轮球，身边是熟悉每一个洞的人，让这一天真正令人享受。这种组合正是<a href=\"/play-with-a-pro\">陪打体验（Play With A Pro）</a>的核心。"
+      },
+      {
+        "text": "常见问题"
+      },
+      {
+        "text": "随场教学适合各种水平的球手，无论是水平尚可但球场管理拖了后腿的球手，还是想在 Son Gual 或 Alcanada 这样的球场打出更好表现的访客。它也很适合两人或小团体一起接受指导。课程大多安排在 Son Gual（Andy 在岛上打得最多的球场）或 Alcanada（适合想要最美风景的团体）；也会根据团体情况和想练习的内容选择其他球场。大多数球手离开时都会带走三四个具体的改进点，而不是一长串挥杆问题清单，同时也会对球场管理有更清晰的认识：什么时候该冒险，什么时候该稳妥求安。"
       },
       {
         "text": "关于练习场课程的说明"

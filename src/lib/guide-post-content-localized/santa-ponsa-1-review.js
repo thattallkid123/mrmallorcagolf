@@ -106,6 +106,12 @@ const content = {
         "text": "Buggy: €43 por 18 hoyos. Alquiler de palos: €40. El campo es público y se puede reservar libremente, sin necesidad de acceso de socio. Conviene reservar con antelación en temporada alta; su historial de Tour europeo atrae a jugadores que saben exactamente a qué vienen."
       },
       {
+        "text": "Preguntas frecuentes"
+      },
+      {
+        "text": "Se requiere un handicap WHS válido al reservar; el alquiler de buggy cuesta 43 € por 18 hoyos. Santa Ponsa 1 es ideal para golfistas con confianza que quieren disfrutar del driver en calles anchas, y funciona bien como vuelta más fácil al principio de un viaje antes de un campo más exigente como Son Gual o Golf de Andratx. Lo que sorprende a los visitantes: en un día tranquilo el campo favorece el juego, pero con viento los pares 3 largos y el hoyo 10 de 590 metros hacen valer cada metro de su longitud. La mejor hora de salida es temprano, antes de que llegue la habitual brisa de media mañana."
+      },
+      {
         "text": "Veredicto"
       },
       {
@@ -242,6 +248,12 @@ const content = {
       },
       {
         "text": "Buggy: €43 für 18 Löcher. Leihschläger: €40. Der Platz ist öffentlich und frei buchbar - ohne Mitgliederzugang. In der Hochsaison lohnt sich frühes Buchen; die DP-World-Tour-Vergangenheit zieht Besucher an, die genau wissen, warum sie hier spielen wollen."
+      },
+      {
+        "text": "Häufige Fragen"
+      },
+      {
+        "text": "Ein gültiger WHS-Handicapnachweis ist bei der Buchung erforderlich; die Buggy-Miete kostet 43 € für 18 Löcher. Santa Ponsa 1 eignet sich für selbstbewusste Golfer, die den Driver auf breiten Fairways genießen wollen, und funktioniert gut als leichtere Runde früh in einer Reise vor einem anspruchsvolleren Platz wie Son Gual oder Golf Andratx. Was Besucher überrascht: An einem ruhigen Tag schmeichelt der Platz, aber bei Wind fordern die langen Par 3 und das 590-Meter-Loch 10 jeden Meter ihrer Länge ein. Die beste Startzeit ist früh, bevor die übliche Brise am späten Vormittag aufkommt."
       },
       {
         "text": "Fazit"
@@ -381,6 +393,12 @@ const content = {
       {
         "text": "Buggy : €43 pour 18 trous. Location de clubs : €40. Le parcours est public et se réserve librement - aucun accès membre n'est nécessaire. Réservez tôt en haute saison ; son histoire sur le Tour européen attire les joueurs qui savent exactement ce qu'ils viennent chercher."
       },
+      {
+        "text": "Questions frequentes"
+      },
+      {
+        "text": "Un justificatif WHS valide est requis à la réservation ; la location de voiturette coûte 43 € pour 18 trous. Santa Ponsa 1 convient aux golfeurs confiants qui veulent profiter du driver sur des fairways larges, et fonctionne bien comme parcours plus facile en début de séjour avant un parcours plus exigeant comme Son Gual ou Golf de Andratx. Ce qui surprend les visiteurs : par temps calme, le parcours est flatteur, mais avec du vent, les longs pars 3 et le trou 10 de 590 mètres font sentir chaque mètre de leur longueur. La meilleure heure de départ est tôt, avant l'arrivée habituelle de la brise en milieu de matinée."
+      },
       {},
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Santa Ponsa 1",
@@ -516,6 +534,12 @@ const content = {
       },
       {
         "text": "Buggy: €43 voor 18 holes. Clubhuur: €40. De baan is publiek en vrij boekbaar - er is geen ledenstatus nodig. Boek in het hoogseizoen ruim op tijd; de European Tour-geschiedenis trekt spelers die precies weten waarom ze hier willen spelen."
+      },
+      {
+        "text": "Veelgestelde vragen"
+      },
+      {
+        "text": "Een geldig WHS-handicapbewijs is vereist bij het boeken; buggyverhuur kost €43 voor 18 holes. Santa Ponsa 1 is geschikt voor zelfverzekerde golfers die willen genieten van de driver op brede fairways, en werkt goed als makkelijkere ronde vroeg in een reis, voor een zwaarder parcours zoals Son Gual of Golf Andratx. Wat bezoekers verrast: op een rustige dag vleit de baan u, maar met wind eisen de lange par 3's en de 590 meter lange hole 10 elke meter van hun lengte op. De beste starttijd is vroeg, voordat de gebruikelijke bries later in de ochtend opsteekt."
       },
       {
         "text": "Oordeel"
@@ -656,6 +680,12 @@ const content = {
         "text": "Buggy: €43 för 18 hål. Klubbhyra: €40. Banan är publik och fritt bokningsbar - inget medlemskap krävs. Boka i god tid under högsäsong; European Tour-historien lockar spelare som vet exakt varför de vill spela här."
       },
       {
+        "text": "Vanliga frågor"
+      },
+      {
+        "text": "Ett giltigt WHS-handicapbevis krävs vid bokning; buggyhyra kostar 43 € för 18 hål. Santa Ponsa 1 passar självsäkra golfare som vill njuta av drivern på breda fairways, och fungerar bra som en lättare runda tidigt i en resa innan en tuffare bana som Son Gual eller Golf Andratx. Vad som överraskar besökare: på en lugn dag smickrar banan dig, men med vind kräver de långa par 3-hålen och det 590 meter långa hål 10 varje meter av sin längd. Bästa starttiden är tidigt, innan den vanliga förmiddagsbrisen kommer."
+      },
+      {
         "text": "Omdöme"
       },
       {
@@ -792,6 +822,12 @@ const content = {
       },
       {
         "text": "球车：18洞€43。球杆租赁：€40。球场对公众开放，可直接预订，不需要会员资格。旺季建议尽早订位；它的欧洲巡回赛背景会吸引那些真正懂这座球场价值的访客。"
+      },
+      {
+        "text": "常见问题"
+      },
+      {
+        "text": "预订时需要有效的 WHS 差点证明；球车租赁 18 洞收费 43 €。Santa Ponsa 1 适合想在宽阔球道上尽情开球的自信球手，也适合作为行程前期较轻松的一轮，为之后更具挑战性的球场（如 Son Gual 或 Golf de Andratx）做准备。让访客意外的一点：风平浪静时球场很友好，但一旦起风，长三杆洞和 590 米的第 10 洞会让你切身感受到每一米的长度。最佳开球时间是清早，趁上午常见的风还没起来。"
       },
       {
         "text": "结论"
