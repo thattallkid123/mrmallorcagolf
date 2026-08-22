@@ -85,12 +85,15 @@ function main() {
   const errors = []
   const selectorText = read('src/app/(en)/tools/course-selector/CourseSelectorToolClient.jsx')
   const greenFeesText = read('src/app/(en)/tools/green-fees/GreenFeesClient.jsx')
-  const dayBuilderText = read('src/app/(en)/golf-day-builder/GolfDayBuilderClient.jsx')
+  const dayBuilderComponentText = read('src/app/(en)/golf-day-builder/GolfDayBuilderClient.jsx')
+  const dayBuilderLogicText = read('src/lib/golf-day-builder-logic.js')
+  const dayBuilderText = [dayBuilderComponentText, dayBuilderLogicText].filter(Boolean).join('\n')
   const greenFeesPrototypeText = read('prototypes/green-fees.html')
 
   if (!selectorText) errors.push('course-selector file not found')
   if (!greenFeesText) errors.push('green-fees file not found')
-  if (!dayBuilderText) errors.push('golf-day-builder file not found')
+  if (!dayBuilderComponentText) errors.push('golf-day-builder file not found')
+  if (!dayBuilderLogicText) errors.push('golf-day-builder-logic file not found')
   if (errors.length) {
     for (const error of errors) console.error(`  - ${error}`)
     process.exitCode = 1
