@@ -3,7 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 const SITE_ORIGIN = 'https://www.mrmallorcagolf.com'
-const ROUTES = ['/', '/itinerary', '/guides', '/guides/son-gual-review', '/golf-courses', '/contact']
+const ROUTES = ['/', '/play-with-a-pro', '/guides', '/guides/son-gual-review', '/golf-courses', '/contact']
 const OUTPUT_DIR = path.resolve('outputs', 'lighthouse-live')
 const RUNS_PER_ROUTE = Number(process.env.LH_RUNS || 2)
 const TMP_ROOT = path.resolve('outputs', '.lh-temp')
