@@ -1,9 +1,11 @@
 # Lighthouse baseline — 2026-08-22
 
-First committed baseline. Run against the **live production site** (`scripts/lighthouse-scorecard.mjs`
-hits `https://www.mrmallorcagolf.com` directly — no local build needed), 6 routes × mobile/desktop,
-median of 2 runs each. Re-run with `npm run check:lighthouse` after any change likely to move these
-numbers, and update this table so drift is visible.
+Run against the **live production site** (`scripts/lighthouse-scorecard.mjs` hits
+`https://www.mrmallorcagolf.com` directly — no local build needed), 6 routes × mobile/desktop, median
+of 2 runs each. Re-run with `npm run check:lighthouse` after any change likely to move these numbers,
+and update the table below so drift is visible.
+
+## Original baseline (before the font fix, same day)
 
 | Route | Mode | Perf | A11y | Best | SEO | LCP(ms) | CLS | TBT(ms) |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -19,6 +21,44 @@ numbers, and update this table so drift is visible.
 | /golf-courses | desktop | 92 | 93 | 92 | 100 | 1448 | 0 | 123 |
 | /contact | mobile | 58 | 95 | 92 | 100 | 5649 | 0 | 819 |
 | /contact | desktop | 85 | 92 | 92 | 100 | 2119 | 0 | 32 |
+
+## Current (after the .woff2 font fix, same day)
+
+| Route | Mode | Perf | A11y | Best | SEO | LCP(ms) | CLS | TBT(ms) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| / | mobile | 50 | 100 | 92 | 100 | 5085 | 0 | 1486 |
+| / | desktop | 87 | 100 | 92 | 100 | 1806 | 0.001 | 141 |
+| /play-with-a-pro | mobile | 54 | 100 | 92 | 100 | 4893 | 0 | 1160 |
+| /play-with-a-pro | desktop | 86 | 100 | 92 | 100 | 1337 | 0.001 | 204 |
+| /guides | mobile | 53 | 95 | 92 | 100 | 5122 | 0 | 1440 |
+| /guides | desktop | 87 | 95 | 92 | 100 | 1434 | 0 | 172 |
+| /guides/son-gual-review | mobile | 57 | 96 | 92 | 100 | 4717 | 0 | 1266 |
+| /guides/son-gual-review | desktop | 94 | 96 | 92 | 100 | 1413 | 0 | 111 |
+| /golf-courses | mobile | 51 | 93 | 92 | 100 | 5348 | 0 | 2051 |
+| /golf-courses | desktop | 90 | 93 | 92 | 100 | 1229 | 0 | 106 |
+| /contact | mobile | 68 | 95 | 92 | 100 | 6446 | 0 | 404 |
+| /contact | desktop | 93 | 92 | 92 | 100 | 1678 | 0 | 6 |
+
+### Reading the before/after honestly
+
+**LCP improved on 5 of 6 mobile routes** — 420ms to 1.1s faster (son-gual-review: 5846ms → 4717ms,
+the single biggest win). That's consistent with the fix: fonts were the dominant render-blocking cost
+on text-based LCP elements, so faster font load = faster paint. `/contact` mobile was the outlier
+(LCP got 797ms *worse*) while its desktop LCP and TBT both improved sharply — no clean story ties that
+regression to a font-loading change (fonts don't execute JS or affect one route differently from
+another), so it's most likely live-site run-to-run noise (real network conditions, Vercel edge cache
+state) rather than a real regression. Worth a re-run with more samples before drawing a conclusion
+about `/contact` specifically.
+
+**TBT got noisier and mostly worse** across mobile routes despite LCP improving — again no clean
+causal link to the font change (static assets, no script execution), so treating this as live-traffic
+variance rather than a regression, but flagging honestly rather than only reporting the numbers that
+moved the right way. A controlled re-run (more samples, ideally against a local production build
+rather than the noisier live site) would give a cleaner signal than a single 2-run median can.
+
+**Bottom line:** the font fix delivered its intended effect (meaningfully faster mobile LCP on most
+routes, real bytes saved on every page), but this single before/after pair isn't precise enough to
+close the book on mobile performance — TBT is still high everywhere and worth another look.
 
 Full JSON per run is in `outputs/lighthouse-live/` (gitignored, regenerated each run — this table is
 the durable record).
