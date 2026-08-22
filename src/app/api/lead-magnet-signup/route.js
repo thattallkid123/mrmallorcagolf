@@ -125,10 +125,10 @@ export async function POST(request) {
       }),
     })
 
-    const mlData = await mlResponse.json()
     if (!mlResponse.ok && mlResponse.status !== 200 && mlResponse.status !== 201) {
-      const message = mlData?.message || 'Subscription failed'
-      return NextResponse.json({ error: message }, { status: mlResponse.status })
+      const mlData = await mlResponse.json().catch(() => null)
+      console.error('[lead-magnet-signup] MailerLite error:', mlResponse.status, mlData)
+      return NextResponse.json({ error: 'Subscription failed' }, { status: 502 })
     }
 
     // Optional newsletter/planning-notes opt-in

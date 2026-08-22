@@ -35,13 +35,11 @@ const REQUIRED_JSON_GUARDS = [
 // Public routes that deliberately take no JSON guards, with the reason and
 // the property that IS required instead. Adding an entry here is a security
 // decision — it should be rare and obvious in review.
-const PUBLIC_GET_ROUTES = {
-  'src/app/api/og/route.js': {
-    reason: 'public OG image endpoint — must be fetchable by crawlers and social scrapers',
-    mustContain: 'isSameOriginImagePath',
-    mustContainWhy: 'the image param is an SSRF vector unless constrained to same-origin paths',
-  },
-}
+// No routes currently need this — /api/og was deleted (see "Drop redundant
+// text-on-image OG cards" in git log) when og:image switched to plain course
+// photos. Add an entry here only for a route that genuinely must be public
+// GET (crawlers/scrapers), with a stated reason and a required-property check.
+const PUBLIC_GET_ROUTES = {}
 
 // Word-boundary match, NOT substring: a plain `includes('checkRateLimit')`
 // also matches `checkRateLimitXX`, so a renamed/typo'd guard would pass
