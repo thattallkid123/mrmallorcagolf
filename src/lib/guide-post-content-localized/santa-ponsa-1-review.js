@@ -1,5 +1,5 @@
 // Localized copy for the "santa-ponsa-1-review" guide. See src/lib/guide-post-content-localized.js for the assembly and lookup API.
-export default {
+const content = {
   "es": {
     "metadata": {
       "title": "Santa Ponsa 1 - Reseña & Tarifas",
@@ -827,3 +827,5 @@ export default {
     ]
   }
 }
+
+export default content

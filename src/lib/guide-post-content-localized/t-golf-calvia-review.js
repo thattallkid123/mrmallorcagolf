@@ -1,5 +1,5 @@
 // Localized copy for the "t-golf-calvia-review" guide. See src/lib/guide-post-content-localized.js for the assembly and lookup API.
-export default {
+const content = {
   "es": {
     "metadata": {
       "title": "T Golf Calvià - Análisis & Tarifas",
@@ -977,3 +977,5 @@ export default {
     ]
   }
 }
+
+export default content

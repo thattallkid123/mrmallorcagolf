@@ -1,5 +1,5 @@
 // Localized copy for the "son-muntaner-review" guide. See src/lib/guide-post-content-localized.js for the assembly and lookup API.
-export default {
+const content = {
   "es": {
     "metadata": {
       "title": "Golf Son Muntaner - Análisis honesto 2026",
@@ -1356,3 +1356,5 @@ export default {
     ]
   }
 }
+
+export default content

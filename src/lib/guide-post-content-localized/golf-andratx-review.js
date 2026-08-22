@@ -1,5 +1,5 @@
 // Localized copy for the "golf-andratx-review" guide. See src/lib/guide-post-content-localized.js for the assembly and lookup API.
-export default {
+const content = {
   "es": {
     "metadata": {
       "title": "Golf de Andratx - Análisis honesto 2026",
@@ -911,3 +911,5 @@ export default {
     ]
   }
 }
+
+export default content

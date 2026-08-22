@@ -1,5 +1,5 @@
 // Localized copy for the "alcanada-review" guide. See src/lib/guide-post-content-localized.js for the assembly and lookup API.
-export default {
+const content = {
   "es": {
     "metadata": {
       "title": "Alcanada - Reseña & Tarifas",
@@ -989,3 +989,5 @@ export default {
     ]
   }
 }
+
+export default content

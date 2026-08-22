@@ -1,5 +1,5 @@
 // Localized copy for the "son-antem-west-review" guide. See src/lib/guide-post-content-localized.js for the assembly and lookup API.
-export default {
+const content = {
   "es": {
     "metadata": {
       "title": "Son Antem West - Análisis del resort 2026",
@@ -1007,3 +1007,5 @@ export default {
     ]
   }
 }
+
+export default content

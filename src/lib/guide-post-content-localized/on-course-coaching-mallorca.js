@@ -1,5 +1,5 @@
 // Localized copy for the "on-course-coaching-mallorca" guide. See src/lib/guide-post-content-localized.js for the assembly and lookup API.
-export default {
+const content = {
   "es": {
     "meta": {
       "badge": "Guía de Coaching",
@@ -367,3 +367,5 @@ export default {
     ]
   }
 }
+
+export default content
