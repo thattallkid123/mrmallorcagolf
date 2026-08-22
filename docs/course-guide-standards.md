@@ -64,3 +64,5 @@ When lengthening a guide, add a `{ type: 'heading', text: 'Common Questions' }` 
 3. Who the course suits best (level of golfer)
 4. One thing that surprises first-time visitors
 5. Any local knowledge tip (first tee, wind timing, post-round lunch)
+
+**Backlog cleared 2026-08-22:** all 9 course/coaching guides now have this section (was 3 of 9). Skip any topic above with no verified fact behind it rather than guessing — the 2026-08-22 pass omitted the handicap-limit question for Alcanada, Santa Ponsa 1, Son Termes, and Son Antem West since the facts table above is still blank for those four. When adding a Common Questions block, insert it at the same array index in all 6 locale overlay files (`guide-post-content-localized/<slug>.js`) — the merge in `guide-content-localization.js` is positional, so a missing translation there silently breaks `check:guide-parity` or misaligns later blocks.
