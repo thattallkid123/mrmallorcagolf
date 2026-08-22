@@ -92,6 +92,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 - **`.gitignore` does not untrack already-committed files.** After adding a rule, `git ls-files | grep <pattern>` and `git rm --cached` strays in the same commit.
 - **When bumping a major dependency, grep this file for stale version claims.** The Tech Stack line has gone stale like this before (said "Next.js 15" for weeks after the 16 bump, sitting four lines from this very rule).
 - **When a file's status changes** (dead, banked, generated-only), put a one-line comment saying so *in the file*. Relying on this doc or a skill alone invites contradiction — `mallorca-tracker-courses.js` was "live data" here and "placeholder, never source from it" in two skills simultaneously.
+- **Moving code out of a file can silently break a checker that text-scans that file by path**, even though the checker's own file list looks fine and every test passes. `scripts/check-tool-green-fees.mjs` grepped `GolfDayBuilderClient.jsx` directly for a specific fact (Santa Ponsa 3's par); extracting that fact into `src/lib/golf-day-builder-logic.js` made the checker blind to it (confirmed 2026-08-22: passed before the extraction, failed after, with no other change). Before or after moving code out of any component file, `grep -rl <old-filename> scripts/` and update any hit to read the new location too.
 
 ---
 
