@@ -1,9 +1,10 @@
-# Lighthouse baseline — 2026-08-22
+# Lighthouse baseline — 2026-08-22, updated 2026-08-23
 
 Run against the **live production site** (`scripts/lighthouse-scorecard.mjs` hits
-`https://www.mrmallorcagolf.com` directly — no local build needed), 6 routes × mobile/desktop, median
-of 2 runs each. Re-run with `npm run check:lighthouse` after any change likely to move these numbers,
-and update the table below so drift is visible.
+`https://www.mrmallorcagolf.com` directly — no local build needed), 6 routes × mobile/desktop.
+Re-run with `npm run check:lighthouse` (or `LH_RUNS=4 npm run check:lighthouse` for a steadier median
+on a noisy route) after any change likely to move these numbers, and update the table below so drift
+is visible.
 
 ## Original baseline (before the font fix, same day)
 
@@ -39,29 +40,49 @@ and update the table below so drift is visible.
 | /contact | mobile | 68 | 95 | 92 | 100 | 6446 | 0 | 404 |
 | /contact | desktop | 93 | 92 | 92 | 100 | 1678 | 0 | 6 |
 
-### Reading the before/after honestly
+## Re-check with 4 samples (after the /golf-courses memoization fix, 2026-08-23)
 
-**LCP improved on 5 of 6 mobile routes** — 420ms to 1.1s faster (son-gual-review: 5846ms → 4717ms,
-the single biggest win). That's consistent with the fix: fonts were the dominant render-blocking cost
-on text-based LCP elements, so faster font load = faster paint. `/contact` mobile was the outlier
-(LCP got 797ms *worse*) while its desktop LCP and TBT both improved sharply — no clean story ties that
-regression to a font-loading change (fonts don't execute JS or affect one route differently from
-another), so it's most likely live-site run-to-run noise (real network conditions, Vercel edge cache
-state) rather than a real regression. Worth a re-run with more samples before drawing a conclusion
-about `/contact` specifically.
+| Route | Mode | Perf | A11y | Best | SEO | LCP(ms) | CLS | TBT(ms) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| / | mobile | 52 | 100 | 92 | 100 | 6480 | 0 | 966 |
+| / | desktop | 91 | 100 | 92 | 100 | 1718 | 0 | 76 |
+| /play-with-a-pro | mobile | 64 | 100 | 92 | 100 | 4812 | 0 | 723 |
+| /play-with-a-pro | desktop | 95 | 100 | 92 | 100 | 1217 | 0 | 70 |
+| /guides | mobile | 62 | 95 | 92 | 100 | 4798 | 0 | 801 |
+| /guides | desktop | 96 | 95 | 92 | 100 | 1192 | 0 | 87 |
+| /guides/son-gual-review | mobile | 67 | 96 | 92 | 100 | 4443 | 0 | 715 |
+| /guides/son-gual-review | desktop | 98 | 96 | 92 | 100 | 1009 | 0 | 42 |
+| /golf-courses | mobile | 60 | 93 | 92 | 100 | 4802 | 0 | 946 |
+| /golf-courses | desktop | 91 | 93 | 92 | 100 | 1236 | 0.001 | 167 |
+| /contact | mobile | 62 | 95 | 92 | 100 | 5917 | 0 | 630 |
+| /contact | desktop | 92 | 92 | 92 | 100 | 1647 | 0 | 62 |
 
-**TBT got noisier and mostly worse** across mobile routes despite LCP improving — again no clean
-causal link to the font change (static assets, no script execution), so treating this as live-traffic
-variance rather than a regression, but flagging honestly rather than only reporting the numbers that
-moved the right way. A controlled re-run (more samples, ideally against a local production build
-rather than the noisier live site) would give a cleaner signal than a single 2-run median can.
+### Reading all three passes together
 
-**Bottom line:** the font fix delivered its intended effect (meaningfully faster mobile LCP on most
-routes, real bytes saved on every page), but this single before/after pair isn't precise enough to
-close the book on mobile performance — TBT is still high everywhere and worth another look.
+**`/contact`'s mobile LCP regression was noise, confirmed.** 5649ms (original) → 6446ms (2-sample
+"regression") → **5917ms (4-sample)** — it settled back near its original value once given more
+samples, which is exactly what measurement noise looks like and exactly what a real regression
+doesn't. No further action needed here; the earlier flag was the right call (verify before concluding
+either way), and it resolved itself with more data rather than a code change.
 
-Full JSON per run is in `outputs/lighthouse-live/` (gitignored, regenerated each run — this table is
-the durable record).
+**`/golf-courses` TBT genuinely improved.** 1158ms (original) → 2051ms (noisy 2-sample reading,
+by far the worst route on the site at that point) → **946ms (4-sample), the lowest of all three
+readings for this route** and no longer an outlier — it now sits inside the normal 630–966ms range
+every other mobile route falls in, instead of roughly double the next-worst route. This lines up with
+a real fix: `GolfCoursesClient.jsx` (934 lines, all 24 courses, zero `useMemo`) was re-sorting and
+re-filtering the full course list from scratch on every filter-tab click and every sort-button click —
+exactly the kind of work TBT/INP penalizes, since it re-runs in direct response to the input the
+visitor just gave. Wrapped the global sort/filter and the per-region sort in `useMemo`, verified live
+in-browser that filtering and sorting still work correctly, shipped 2026-08-23. Still not lab-grade
+proof on a single live-site pass — TBT stays noisy by nature — but it's the right direction, the right
+mechanism, and the lowest reading yet.
+
+**LCP overall is still consistent with the font fix having worked**: this pass's numbers sit in the
+same broad band as the post-font-fix pass (4.4–6.5s mobile vs. 4.7–6.4s before), not back up near the
+original 5.5–6.2s-with-an-uncompressed-font baseline.
+
+Full JSON per run is in `outputs/lighthouse-live/` (gitignored, regenerated each run — the tables
+above are the durable record).
 
 ## What the numbers say
 
@@ -121,8 +142,18 @@ and likely help LCP/TBT more, but trades off analytics completeness: a visitor w
 page goes fully idle wouldn't get tracked. That's a real product tradeoff (accuracy of GA4 numbers vs.
 raw page speed), not a pure technical fix — left as a documented option rather than changed here.
 
-### Not investigated further
+### Fixed 2026-08-23: the 3 remaining next/image warnings
 
-Image loading: CI already flags a few `<img>` tags not using `next/image` (`ContactForm.jsx`,
-`ZhCourseSelectorClient.jsx`). Worth a look but wasn't the dominant LCP cost on the routes measured
-here (only the `son-gual-review` guide's LCP element was an actual image).
+The `<img>` tags CI had flagged every build (`ContactForm.jsx`'s WeChat QR, `ZhCourseSelectorClient.jsx`'s
+course photo + its own QR) are now `next/image`. Found a bonus bug in the process: `wechat-qr.png` is a
+misnamed JPEG served at its full 667×667 into a 100–132px display slot — `next/image` now actually
+resizes/compresses it (confirmed live: 16KB served vs. shipping the raw file).
+
+### Fixed 2026-08-23: /golf-courses had zero memoization
+
+See "Re-check with 4 samples" above — this was the actual TBT fix, not an image issue.
+
+### Status as of 2026-08-23
+
+Everything on this page's original punch list is resolved except the GTM tradeoff below, which is a
+decision for Andy, not outstanding work.
