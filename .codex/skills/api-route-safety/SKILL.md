@@ -33,7 +33,7 @@ Cron routes get no `Origin` header, so the four guards don't apply. They need `A
 
 ## 3. Public GET routes
 
-Rare and deliberate. `/api/og` is the only one: it must stay fetchable by crawlers and social scrapers, so its guard is the same-origin constraint on the `image` param instead. Adding another means allowlisting it in `scripts/check-api-safety.mjs` with a stated reason and a required-property check — that friction is intentional.
+Rare and deliberate. None currently exist — `/api/og` was the one example (deleted when og:image switched to plain course photos; see "Drop redundant text-on-image OG cards" in git log). A route that must stay fetchable by crawlers or scrapers needs allowlisting in `scripts/check-api-safety.mjs` with a stated reason and a required-property check (e.g. a same-origin constraint on any param that builds a fetch/image target) — that friction is intentional.
 
 ## 4. Privacy surface — no script catches this
 
