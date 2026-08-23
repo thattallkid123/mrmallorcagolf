@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { getContactContent } from '../../../lib/contact-content'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import ReviewBadge from '../../../components/ReviewBadge'
@@ -159,9 +160,11 @@ export default function ContactForm({ locale = 'en' }) {
                   <p className="contact-card__label">{content.cards.wechatLabel}</p>
                   {locale === 'zh' ? (
                     <div className="contact-card__qr-container">
-                      <img
+                      <Image
                         src="/images/wechat-qr.png"
                         alt={locale === 'zh' ? '\u5fae\u4fe1\u4e8c\u7ef4\u7801\uff0c\u8d26\u53f7 andygriffiths1' : 'WeChat QR code for andygriffiths1'}
+                        width={100}
+                        height={100}
                         className="contact-card__qr-image"
                       />
                       <p className="contact-card__qr-label">{'\u626b\u4e00\u626b\u6dfb\u52a0\u5fae\u4fe1'}</p>

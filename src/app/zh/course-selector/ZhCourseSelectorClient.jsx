@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ZH_COURSE_EDITORIAL, getZhGuideHref } from '@lib/zh-course-editorial'
 import { COURSE_PRICING_BY_NAME } from '@lib/course-pricing-data'
 
@@ -449,7 +450,7 @@ export default function ZhCourseSelectorClient() {
                   <article key={c.id} className="result-card">
                     <div className="cc-photo">
                       <span className="cc-photo-label">{c.en}</span>
-                      <img src={COURSE_IMGS[c.id] || c.photoUrl} alt={c.photoAlt} loading="lazy" onError={e => { e.target.style.display = 'none' }} />
+                      <Image src={COURSE_IMGS[c.id]} alt={c.en} fill sizes="(max-width: 640px) 100vw, 33vw" onError={e => { e.target.style.display = 'none' }} />
                     </div>
                     <div className="cc-head">
                       <div className="cc-head-inner">
@@ -492,7 +493,7 @@ export default function ZhCourseSelectorClient() {
 
               <div className="wechat-box">
                 <div className="qr-wrap">
-                  <img src="/images/wechat-qr.png" alt="Andy 教练微信二维码" onError={e => { e.target.style.display = 'none' }} />
+                  <Image src="/images/wechat-qr.png" alt="Andy 教练微信二维码" width={132} height={132} onError={e => { e.target.style.display = 'none' }} />
                 </div>
                 <p className="qr-label">微信扫码，直接和 Andy 教练沟通</p>
                 <p className="wechat-id">微信号：andygriffiths1</p>

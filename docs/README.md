@@ -13,7 +13,6 @@ Anything added here should be a **live reference**, not a session log. Dated che
 | `CONTENT_STRUCTURE.md` | Which file controls what content — the map to check before editing |
 | `content-architecture.md` | How content flows through the site's shared components |
 | `multilingual-content-architecture.md` | English-canonical-plus-locale-overlay pattern for site-wide (non-guide) content |
-| `TRANSLATION_BOUNDARIES.md` | What must vs. must not be translated |
 | `translation-workflow.md` | Single source of truth for multilingual release readiness |
 | `LOCALE_PARITY_CHECKLIST.md` | 7-language structure checklist |
 | `STALE_ENGLISH_PREVENTION.md` | How to ensure de/es/fr/nl/sv/zh pages have no hardcoded English text |
