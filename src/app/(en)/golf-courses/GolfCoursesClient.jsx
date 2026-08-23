@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
@@ -738,19 +738,24 @@ export default function GolfCoursesClient({ lang = 'en' }) {
     }
   }, [])
 
-  const visibleRegions = GOLF_COURSE_DATA.filter((region) => {
-    if (activeFilter === 'all') return true
-    return region.region === activeFilter
-  })
-
-  const allCourses = GOLF_COURSE_DATA.flatMap((region) => region.courses)
-  const activeSortDirection = sortDirections[activeSort]
-  const globallySortedCourses = sortCourses(
-    allCourses,
-    activeSort,
-    activeSortDirection,
-    userLocation
+  const visibleRegions = useMemo(
+    () => GOLF_COURSE_DATA.filter((region) => activeFilter === 'all' || region.region === activeFilter),
+    [activeFilter]
   )
+
+  const activeSortDirection = sortDirections[activeSort]
+  const globallySortedCourses = useMemo(() => {
+    const allCourses = GOLF_COURSE_DATA.flatMap((region) => region.courses)
+    return sortCourses(allCourses, activeSort, activeSortDirection, userLocation)
+  }, [activeSort, activeSortDirection, userLocation])
+
+  const regionSortedCourses = useMemo(() => {
+    const byRegion = new Map()
+    for (const regionData of visibleRegions) {
+      byRegion.set(regionData.region, sortCourses(regionData.courses, activeSort, activeSortDirection, userLocation))
+    }
+    return byRegion
+  }, [visibleRegions, activeSort, activeSortDirection, userLocation])
 
   const handleSortChange = (sortKey) => {
     if (sortKey === 'nearest') {
@@ -885,13 +890,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
             </section>
           ) : visibleRegions.map((regionData, i) => {
             const header = regionHeaders[regionData.region]
-            const coursesToShow = regionData.courses
-            const sortedCourses = sortCourses(
-              coursesToShow,
-              activeSort,
-              activeSortDirection,
-              userLocation
-            )
+            const sortedCourses = regionSortedCourses.get(regionData.region) || regionData.courses
             return (
               <div key={regionData.region + activeFilter}>
                 {i > 0 && <div className="divider" />}
