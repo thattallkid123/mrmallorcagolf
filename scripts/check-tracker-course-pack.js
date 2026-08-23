@@ -1,6 +1,14 @@
 const { pathToFileURL } = require('url')
 const path = require('path')
 
+// NOTE (2026-08-23 check audit): MALLORCA_TRACKER_COURSES is built at import
+// time FROM SCORECARD_DATA (via course-catalog.js's CANONICAL_COURSE_DATA),
+// not hand-typed separately — so the assertions below can't catch the two
+// sources independently drifting apart, there's nothing left to drift. They
+// still catch the derivation chain itself breaking (confirmed: corrupting
+// the scorecard reference passed into buildHolePack() makes this fail/crash
+// rather than silently pass). Read a pass here as "the derivation still
+// works," not "two independent authors agree."
 async function main() {
   const repoRoot = path.join(__dirname, '..')
   const [{ MALLORCA_TRACKER_COURSES }, { SCORECARD_DATA }] = await Promise.all([

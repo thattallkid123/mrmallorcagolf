@@ -53,6 +53,9 @@ const BANNED_WORDS = [
   'hidden gem', 'curated', 'bespoke', 'vibrant', 'bustling', 'exceptional',
   'world-class', 'unparalleled', 'boasting', 'holistic', 'robust', 'dynamic',
   'cutting-edge', 'game-changer',
+  // cursor/CLAUDE.md's brand-voice section names these two by name as banned
+  // AI clichés — this check had no coverage for them until 2026-08-23.
+  'delve into', 'embark on',
 ]
 
 // Section 3 "Banned transitions" — use plain English instead.

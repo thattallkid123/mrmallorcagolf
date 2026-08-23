@@ -48,6 +48,16 @@ async function main() {
     // So we only check that packages section exists with title/intro
     assert(homeContent.packages?.title, `Homepage packages missing title for locale ${locale}`)
 
+    // NOTE (2026-08-23 check audit): play-with-a-pro-content.js and
+    // contact-content.js derive their solo/group price fields FROM
+    // soloOffer/groupOffer at import time (they no longer hand-type these
+    // prices) — so the four assertions below can't catch independent value
+    // drift, that failure mode doesn't exist anymore. They still catch a real
+    // class of bug: the derivation itself breaking (wrong field referenced,
+    // wrong tier index, a broken merge) — confirmed by deliberately breaking
+    // the price-lookup reference in play-with-a-pro-content.js and seeing
+    // this fail. Keep them; just don't read a pass here as "prices agree
+    // independently," read it as "the plumbing between the two files works."
     const playPackagePrices = (playContent.packages?.tiers || []).map((tier) => tier.price).filter(Boolean)
     assert(
       playPackagePrices.includes(soloOffer.priceDisplay),
