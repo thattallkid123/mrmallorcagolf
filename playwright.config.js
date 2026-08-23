@@ -4,6 +4,11 @@ const baseURL = `http://127.0.0.1:${port}`
 
 module.exports = defineConfig({
   testDir: './tests',
+  // tests/unit/*.test.js are Vitest specs (npm test), not Playwright - without
+  // this, `playwright test` tries to load them too and crashes on Vitest's
+  // ESM-only import before running a single real visual check (found
+  // 2026-08-23 via the Monthly Visual Regression Check Hermes job).
+  testIgnore: '**/unit/**',
   timeout: 60 * 1000,
   expect: {
     timeout: 10 * 1000,
