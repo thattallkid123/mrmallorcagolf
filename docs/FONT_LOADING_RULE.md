@@ -48,6 +48,14 @@ Hard to audit. When inline styling is necessary, prefer `className` + globals in
 /* in globals.css: .my-label { font-family: var(--font-sans); } */
 ```
 
+## Font Weight Must Match a Loaded Weight
+
+`next/font/local` (in `src/app/root-layout-shared.jsx`) only loads specific weights per family — check that file for the current list before writing a new `font-weight` declaration (as of 2026-08-22: Jost 300/400/500 normal only; Cormorant Garamond 400/500/600 normal, 400/500 italic). Setting `font-weight`/`fontWeight` to a value **not** in that loaded set doesn't error — the browser silently synthesizes a fake-bold render instead. Two real bugs from this exact gap in one session (2026-08-22):
+- A table header set `fontWeight: 600` on Jost text (only 300/400/500 loaded), causing a font-swap CLS regression (0.145, "Needs Improvement") on the Best Golf Courses guide — fixed by changing it to `500`.
+- ~21 more elements sitewide (`.breadcrumb` on every page hero, `.badge`, `.sticky-mobile-cta__primary/__secondary`, etc.) had the same `600`/`700`-on-Jost mismatch. All fixed to `500`, then verified live via computed-style checks (`getComputedStyle(el).fontWeight`) before shipping — matching the CSS declaration is not proof of matching render (see `verify-before-claiming-done` memory).
+
+**Before removing a font file as "unused":** a source claiming zero usage (a grep, an audit, a subagent) can miss inline JSX `style={{ fontFamily: "var(--font-serif)", fontWeight: 600 }}` object literals that a text-only search pattern doesn't match. Confirmed 2026-08-22: an audit reported Cormorant Garamond 600 (normal) as unused anywhere in `src/`; `LeadMagnetPage.jsx`'s H1 and lead paragraph (rendered on 4 live lead-magnet pages) actually used it. Re-verify independently — a second, differently-shaped grep (`fontWeight:\s*600` in `.jsx`, not just `font-weight:\s*600` in `.css`) — before deleting any font file, and render a page that's supposed to use the weight you're keeping/dropping to confirm live.
+
 ## Files to Audit
 
 The following files still have hardcoded fonts (103 instances as of this write). Refactor them as you touch them:
