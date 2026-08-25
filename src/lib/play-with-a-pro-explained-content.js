@@ -32,7 +32,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
         "I hear this more than anything else. The concern is real. You book a day, you show up, and your swing feels unfamiliar. Your short game is rusty. You're reading the fairway wrong. None of that is the point.",
         "A day like this isn't measured against your handicap or your best round. It's measured against what changes in how you see the game. Adam played since he was five, figured he had the fundamentals down. One day on course shifted his whole approach to shot selection. Jo hadn't played in years. The day opened something up for him that a week at a practice range could not.",
         'The score matters less than the questions it provokes. What was the right club there. What do I actually need to work on when I get home. Those are the things that stay.',
-        "Before we go anywhere near the first tee, we sit down and talk. Your game, what you've been working on, what's been frustrating you, what a good day looks like from where you're standing. This conversation shapes everything that happens next. It's not a questionnaire. It's how I understand what you actually need.",
+        "Before the day, I review your pre-round questionnaire and we speak about your game: what you've been working on, what's been frustrating you, and what a good day looks like from where you're standing. By the time we reach the first tee, I already know what to look for. That context shapes everything that happens next.",
       ],
     },
     duringRound: {
@@ -52,7 +52,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
       eyebrow: 'After the round',
       title: 'What you take from the day.',
       paragraph:
-        'When the round is done, we take some time to go through what happened. What worked well, what did not, what things to keep working on. This sometimes happens over lunch at the course, sometimes a shorter debrief at the 18th. I will also send you a summary afterwards so you do not forget the detail from the day. You finish with a clear picture, not a long list, just the things that will actually make a difference.',
+        'When the round is done, you will already have had clear feedback on what worked well, what did not, and what to keep working on. I also send you a written summary afterwards so you do not forget the detail from the day. You finish with a clear picture, not a long list, just the things that will actually make a difference.',
       quoteText:
         'He gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot.',
       quoteCredit: 'Synøve',
@@ -72,7 +72,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
       duration: { label: 'Duration', value: 'Typically 5–6 hours' },
       dayRateLabel: 'Day rate',
       soloLabel: 'solo',
-      groupSuffix: 'for 2-3 golfers (course fee and lunch additional)',
+      groupSuffix: 'for 2-3 golfers (course fee additional)',
       seeCoursesCta: 'See which courses work for you',
     },
     finalCta: {

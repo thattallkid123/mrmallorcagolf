@@ -30,7 +30,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         'Das höre ich häufiger als alles andere. Die Sorge ist verständlich. Sie buchen einen Tag, kommen an, und Ihr Schwung fühlt sich fremd an. Ihr kurzes Spiel ist eingerostet. Sie lesen das Fairway falsch. Nichts davon ist der Punkt.',
         'Ein Tag wie dieser wird nicht an Ihrem Handicap oder Ihrer besten Runde gemessen. Er wird daran gemessen, was sich in Ihrem Blick auf das Spiel verändert. Adam spielt seit seinem fünften Lebensjahr und dachte, die Grundlagen sitzen längst. Ein Tag auf dem Platz hat seine gesamte Herangehensweise an die Schlagauswahl verändert. Jo hatte jahrelang nicht gespielt. Der Tag hat etwas bei ihm geöffnet, das eine Woche auf der Range nicht geschafft hätte.',
         'Das Ergebnis zählt weniger als die Fragen, die es aufwirft. Welcher Schläger wäre dort richtig gewesen. Woran muss ich zuhause wirklich arbeiten. Das sind die Dinge, die bleiben.',
-        'Bevor wir überhaupt in die Nähe des ersten Abschlags kommen, setzen wir uns zusammen und sprechen. Über Ihr Spiel, woran Sie gearbeitet haben, was Sie frustriert hat, wie ein guter Tag für Sie aussieht. Dieses Gespräch prägt alles, was danach passiert. Es ist kein Fragebogen. Es ist die Art, wie ich verstehe, was Sie wirklich brauchen.',
+        'Vor dem Tag sehe ich mir Ihren Fragebogen zur Vorbereitung an, und wir sprechen über Ihr Spiel: woran Sie gearbeitet haben, was Sie frustriert und wie ein guter Tag für Sie aussieht. Wenn wir den ersten Abschlag erreichen, weiß ich bereits, worauf ich achten muss. Dieser Hintergrund prägt alles, was danach passiert.',
       ],
     },
     duringRound: {
@@ -50,7 +50,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Nach der Runde',
       title: 'Was Sie von diesem Tag mitnehmen.',
       paragraph:
-        'Wenn die Runde vorbei ist, nehmen wir uns Zeit, das Erlebte durchzugehen. Was gut lief, was nicht, woran Sie weiter arbeiten sollten. Manchmal passiert das bei einem Mittagessen am Platz, manchmal in einem kürzeren Gespräch am 18. Grün. Danach schicke ich Ihnen zusätzlich eine Zusammenfassung, damit die Details des Tages nicht verloren gehen. Sie gehen mit einem klaren Bild nach Hause, nicht mit einer langen Liste - nur mit den Dingen, die wirklich einen Unterschied machen.',
+        'Wenn die Runde vorbei ist, haben Sie bereits klares Feedback dazu erhalten, was gut lief, was nicht und woran Sie weiterarbeiten sollten. Danach schicke ich Ihnen außerdem eine schriftliche Zusammenfassung, damit die Details des Tages nicht verloren gehen. Sie gehen mit einem klaren Bild nach Hause, nicht mit einer langen Liste, sondern mit den Dingen, die wirklich einen Unterschied machen.',
       quoteText:
         'Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon lange kämpfe, hat sich stark verbessert.',
       quoteCredit: 'Synøve',
@@ -70,7 +70,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       duration: { label: 'Dauer', value: 'Meist 5-6 Stunden' },
       dayRateLabel: 'Tagessatz',
       soloLabel: 'solo',
-      groupSuffix: 'für 2-3 Golfer (Greenfee und Mittagessen zusätzlich)',
+      groupSuffix: 'für 2-3 Golfer (Greenfee zusätzlich)',
       seeCoursesCta: 'Welche Plätze zu Ihnen passen',
     },
     finalCta: {
@@ -115,7 +115,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         'Esto lo escucho más que ninguna otra cosa. La preocupación es real. Reserva un día, se presenta, y su swing se siente desconocido. Su juego corto está oxidado. Está leyendo mal la calle. Nada de eso es lo importante.',
         'Un día como este no se mide contra su hándicap ni contra su mejor ronda. Se mide contra lo que cambia en su forma de ver el juego. Adam lleva jugando desde los cinco años y pensaba que tenía los fundamentos resueltos. Un día en el campo cambió por completo su forma de abordar la elección de golpe. Jo llevaba años sin jugar. El día le abrió algo que una semana en el campo de prácticas no podría haber logrado.',
         'El resultado importa menos que las preguntas que provoca. Cuál era el palo correcto ahí. En qué necesito trabajar de verdad cuando llegue a casa. Esas son las cosas que se quedan.',
-        'Antes de acercarnos siquiera al primer tee, nos sentamos a hablar. Su juego, en qué ha estado trabajando, qué le ha estado frustrando, cómo se ve un buen día desde donde usted está. Está conversación define todo lo que ocurre después. No es un cuestionario. Es cómo entiendo lo que realmente necesita.',
+        'Antes del día, reviso su cuestionario previo a la vuelta y hablamos sobre su juego: en qué ha estado trabajando, qué le ha frustrado y cómo sería un buen día para usted. Cuando llegamos al primer tee, ya sé en qué debo fijarme. Ese contexto define todo lo que ocurre después.',
       ],
     },
     duringRound: {
@@ -135,7 +135,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Después de la vuelta',
       title: 'Lo que se lleva del día.',
       paragraph:
-        'Cuando termina la vuelta, dedicamos un momento a repasar lo ocurrido. Qué funcionó bien, qué no, en qué seguir trabajando. A veces esto ocurre durante el almuerzo en el campo, a veces en un repaso más breve en el hoyo 18. Después también le enviaré un resumen para que no se le olviden los detalles del día. Termina con una imagen clara, no con una lista larga, solo con lo que realmente marcará la diferencia.',
+        'Al terminar la vuelta, ya habrá recibido comentarios claros sobre qué funcionó bien, qué no y en qué debe seguir trabajando. Después también le envío un resumen por escrito para que no se le olviden los detalles del día. Termina con una imagen clara, no con una lista larga, solo con lo que realmente marcará la diferencia.',
       quoteText:
         'Me dio un feedback claro y específico que me ayudó a corregir varios errores. Especialmente el putting, con el que siempre he tenido dificultades, ha mejorado mucho.',
       quoteCredit: 'Synøve',
@@ -155,7 +155,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       duration: { label: 'Duración', value: 'Normalmente 5-6 horas' },
       dayRateLabel: 'Tarifa del día',
       soloLabel: 'solo',
-      groupSuffix: 'para 2-3 golfistas (green fee y almuerzo aparte)',
+      groupSuffix: 'para 2-3 golfistas (green fee aparte)',
       seeCoursesCta: 'Vea qué campos encajan con usted',
     },
     finalCta: {
@@ -200,7 +200,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         "C'est ce que j'entends le plus souvent. L'inquiétude est réelle. Vous réservez une journée, vous arrivez, et votre swing vous semble étranger. Votre petit jeu est rouillé. Vous lisez mal le fairway. Rien de tout cela n'est le sujet.",
         "Une journée comme celle-ci ne se mesure pas à votre index ou à votre meilleur score. Elle se mesure à ce qui change dans votre façon de voir le jeu. Adam joue depuis l'âge de cinq ans et pensait maîtriser les fondamentaux. Une journée sur le parcours a complètement changé son approche du choix de coup. Jo n'avait pas joué depuis des années. Cette journée a ouvert quelque chose qu'une semaine de practice n'aurait pas pu apporter.",
         "Le score compte moins que les questions qu'il soulève. Quel était le bon club à cet endroit. Sur quoi dois-je vraiment travailler en rentrant. Ce sont ces choses-là qui restent.",
-        "Avant même de nous approcher du premier départ, nous nous asseyons et discutons. Votre jeu, sur quoi vous avez travaillé, ce qui vous a frustré, à quoi ressemble une bonne journée de votre point de vue. Cette conversation façonne tout ce qui suit. Ce n'est pas un questionnaire. C'est ainsi que je comprends ce dont vous avez vraiment besoin.",
+        "Avant la journée, je consulte votre questionnaire préalable et nous parlons de votre jeu : ce que vous avez travaillé, ce qui vous frustre et ce qui représenterait une bonne journée pour vous. Lorsque nous arrivons au premier départ, je sais déjà ce que je dois observer. Ce contexte guide tout ce qui suit.",
       ],
     },
     duringRound: {
@@ -220,7 +220,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Après le parcours',
       title: 'Ce que vous retirez de cette journée.',
       paragraph:
-        "Une fois le parcours terminé, nous prenons un moment pour revenir sur ce qui s'est passé. Ce qui a bien fonctionné, ce qui n'a pas marché, sur quoi continuer à travailler. Cela se passe parfois autour d'un déjeuner sur le parcours, parfois lors d'un debriefing plus court au 18. Je vous envoie ensuite un résumé pour que les détails de la journée ne s'effacent pas. Vous repartez avec une vision claire, pas une longue liste, juste ce qui fera vraiment la différence.",
+        "À la fin du parcours, vous avez déjà reçu des retours clairs sur ce qui a bien fonctionné, ce qui n'a pas marché et ce que vous devez continuer à travailler. Je vous envoie ensuite un compte rendu écrit pour que les détails de la journée ne s'effacent pas. Vous repartez avec une vision claire, pas une longue liste, juste ce qui fera vraiment la différence.",
       quoteText:
         "Il m'a donné un retour clair et précis qui m'a aidée à corriger plusieurs erreurs. Mon putting en particulier, avec lequel j'ai toujours eu du mal, s'est vraiment amélioré.",
       quoteCredit: 'Synøve',
@@ -240,7 +240,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       duration: { label: 'Durée', value: 'Généralement 5 à 6 heures' },
       dayRateLabel: 'Tarif journalier',
       soloLabel: 'solo',
-      groupSuffix: 'pour 2 à 3 golfeurs (green fee et déjeuner en plus)',
+      groupSuffix: 'pour 2 à 3 golfeurs (green fee en plus)',
       seeCoursesCta: 'Voir quels parcours vous conviennent',
     },
     finalCta: {
@@ -285,7 +285,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         'Dit hoor ik vaker dan wat dan ook. De zorg is reëel. U boekt een dag, u komt aan, en uw swing voelt onbekend aan. Uw korte spel is roestig. U leest de fairway verkeerd. Niets daarvan is het punt.',
         'Een dag als deze wordt niet afgemeten aan uw handicap of uw beste ronde. Hij wordt afgemeten aan wat er verandert in hoe u het spel ziet. Adam speelt al sinds zijn vijfde en dacht dat zijn fundamenten in orde waren. Eén dag op de baan veranderde zijn hele benadering van slagkeuze. Jo had jarenlang niet gespeeld. De dag opende iets bij hem dat een week op de driving range niet had gekund.',
         'De score doet er minder toe dan de vragen die hij oproept. Wat was daar de juiste club. Waar moet ik thuis echt aan werken. Dat zijn de dingen die blijven hangen.',
-        'Voordat we ook maar in de buurt van de eerste afslag komen, gaan we zitten en praten. Over uw spel, waar u aan hebt gewerkt, wat u heeft gefrustreerd, hoe een goede dag er voor u uitziet. Dit gesprek bepaalt alles wat daarna gebeurt. Het is geen vragenlijst. Het is hoe ik begrijp wat u werkelijk nodig heeft.',
+        'Voorafgaand aan de dag bekijk ik uw vragenlijst en spreken we over uw spel: waaraan u hebt gewerkt, wat u frustreert en hoe een goede dag er voor u uitziet. Tegen de tijd dat we bij de eerste afslag zijn, weet ik al waarop ik moet letten. Die context bepaalt alles wat daarna gebeurt.',
       ],
     },
     duringRound: {
@@ -305,7 +305,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Na de ronde',
       title: 'Wat u van de dag meeneemt.',
       paragraph:
-        'Als de ronde erop zit, nemen we de tijd om door te nemen wat er is gebeurd. Wat goed ging, wat niet, waar u verder aan moet werken. Dit gebeurt soms tijdens de lunch op de baan, soms tijdens een kortere debrief bij de 18e. Ik stuur u daarna ook een samenvatting, zodat u de details van de dag niet vergeet. U sluit af met een helder beeld, geen lange lijst, alleen de dingen die echt verschil maken.',
+        'Wanneer de ronde voorbij is, hebt u al duidelijke feedback gekregen over wat goed ging, wat niet en waaraan u verder moet werken. Daarna stuur ik u ook een schriftelijke samenvatting, zodat de details van de dag niet verloren gaan. U sluit af met een helder beeld, geen lange lijst, alleen de dingen die echt verschil maken.',
       quoteText:
         'Hij gaf me duidelijke en specifieke feedback waarmee ik meerdere fouten kon corrigeren. Vooral mijn putting, waar ik altijd mee worstelde, is sterk verbeterd.',
       quoteCredit: 'Synøve',
@@ -325,7 +325,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       duration: { label: 'Duur', value: 'Meestal 5-6 uur' },
       dayRateLabel: 'Dagtarief',
       soloLabel: 'solo',
-      groupSuffix: 'voor 2-3 golfers (greenfee en lunch apart)',
+      groupSuffix: 'voor 2-3 golfers (greenfee apart)',
       seeCoursesCta: 'Bekijk welke banen bij u passen',
     },
     finalCta: {
@@ -370,7 +370,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         'Det här hoer jag oftare än något annat. Oron är verklig. Du bokar en dag, dyker upp, och din sving känns främmande. Ditt korta spel är rostigt. Du läser fairwayn fel. Inget av det är poängen.',
         'En sådan här dag mäts inte mot ditt handicap eller din bästa runda. Den mäts mot vad som förändras i hur du ser på spelet. Adam har spelat sedan han var fem och trodde att grunderna satt. En dag på banan förändrade helt hans sätt att tänka kring slagval. Jo hade inte spelat på flera år. Dagen öppnade något hos honom som en vecka på range aldrig hade kunnat göra.',
         'Resultatet spelar mindre roll än de frågor det väcker. Vilken klubba var rätt där. Vad behöver jag faktiskt jobba på när jag kommer hem. Det är sådant som stannar kvar.',
-        "Innan vi ens är i närheten av det första tee'et sätter vi oss ner och pratar. Ditt spel, vad du har jobbat på, vad som har frustrerat dig, hur en bra dag ser ut från där du står. Det samtalet formar allt som händer sedan. Det är inget frågeformulär. Det är så jag förstår vad du faktiskt behöver.",
+        'Inför dagen går jag igenom ditt frågeformulär och vi pratar om ditt spel: vad du har arbetat med, vad som har frustrerat dig och hur en bra dag ser ut för dig. När vi når första tee vet jag redan vad jag ska hålla utkik efter. Den bakgrunden formar allt som händer sedan.',
       ],
     },
     duringRound: {
@@ -390,7 +390,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Efter rundan',
       title: 'Vad du tar med dig från dagen.',
       paragraph:
-        'När rundan är klar tar vi oss tid att gå igenom vad som hände. Vad som fungerade bra, vad som inte gjorde det, vad du bör fortsätta jobba på. Det sker ibland över en lunch på banan, ibland under en kortare genomgång vid hål 18. Jag skickar också en sammanfattning efteråt så att du inte glömmer detaljerna från dagen. Du går därifrån med en tydlig bild, inte en lång lista - bara det som faktiskt gör skillnad.',
+        'När rundan är klar har du redan fått tydlig återkoppling om vad som fungerade bra, vad som inte gjorde det och vad du bör fortsätta arbeta med. Efteråt skickar jag också en skriftlig sammanfattning så att du inte glömmer detaljerna från dagen. Du går därifrån med en tydlig bild, inte en lång lista, bara det som faktiskt gör skillnad.',
       quoteText:
         'Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag laenge kämpat med, har förbättrats mycket.',
       quoteCredit: 'Synøve',
@@ -410,7 +410,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       duration: { label: 'Laengd', value: 'Vanligtvis 5-6 timmar' },
       dayRateLabel: 'Dagtaxa',
       soloLabel: 'solo',
-      groupSuffix: 'för 2-3 golfare (greenfee och lunch tillkommer)',
+      groupSuffix: 'för 2-3 golfare (greenfee tillkommer)',
       seeCoursesCta: 'Se vilka banor som passar dig',
     },
     finalCta: {
@@ -455,7 +455,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         '这是我听到最多的顾虑，而且是真实的顾虑。您预订了这一天，到了球场，却发现挥杆感觉陌生，短杆生疏，读果岭或球道也判断不准。但这些都不是重点。',
         '这样的一天，衡量标准不是您的差点或最好成绩，而是您看待这项运动的方式发生了怎样的变化。Adam 从五岁起就打球，一直以为基本功早已扎实，但球场上的这一天彻底改变了他选杆的思路。Jo 已经多年没打球，这一天为他打开了一些练习场一周都做不到的东西。',
         '比分本身没那么重要，重要的是它引发的问题：那一杆本该用哪支球杆，回家后真正该练什么。这些才是留下来的东西。',
-        '在走到第一发球台之前，我们会先坐下来聊一聊 —— 您的球技、最近在练什么、有什么让您困扰的地方、在您看来怎样才算是美好的一天。这次谈话决定了接下来的一切。这不是一份问卷，而是我了解您真正需要什么的方式。',
+        '在打球之前，我会先查看您填写的赛前问卷，并提前和您聊聊您的球技、最近在练什么、哪些方面让您困扰，以及您希望这一天达到什么效果。等我们走到第一发球台时，我已经知道该重点观察什么。这些背景信息会贯穿接下来的一整天。',
       ],
     },
     duringRound: {
@@ -475,7 +475,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: '比赛结束后',
       title: '您从这一天带走的东西。',
       paragraph:
-        '比赛结束后，我们会花点时间回顾整场比赛：哪些发挥得好，哪些不够理想，接下来该继续练什么。这有时会在球场的午餐时间进行，有时会在第18洞后做一个更简短的总结。之后我还会给您发一份总结，让这一天的细节不至于遗忘。您带走的是一幅清晰的画面，而不是一长串清单 —— 只有真正能带来改变的重点。',
+        '比赛结束时，您已经清楚知道哪些方面做得好、哪些需要改进，以及接下来该继续练什么。之后我还会给您发一份书面总结，让这一天的重要细节不至于遗忘。您带走的是清晰的方向，不是一长串清单，而是真正能带来改变的重点。',
       quoteText:
         '他给了我清晰具体的反馈，帮我纠正了好几个问题。尤其是推杆——我一直在这方面挣扎——进步很大。',
       quoteCredit: 'Synøve',
@@ -495,7 +495,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       duration: { label: '时长', value: '通常 5-6 小时' },
       dayRateLabel: '单日费用',
       soloLabel: '单人',
-      groupSuffix: '2-3 人（球场果岭费和午餐另计）',
+      groupSuffix: '2-3 人（球场果岭费另计）',
       seeCoursesCta: '查看适合您的球场',
     },
     finalCta: {
