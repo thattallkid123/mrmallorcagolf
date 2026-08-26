@@ -1,6 +1,6 @@
 # Pricing Surfaces Inventory
 
-Use this as the exact map when a price changes. Service-pricing sync coverage tightened 2026-08-26 before the Solo €695 → €795 change.
+Use this as the exact map when a price changes. Service-pricing sync coverage tightened 2026-08-26 before the Solo €695 → €795 change, then the Solo change was applied the same day.
 
 **Scope note (added 2026-07-29):** this file covers two distinct pricing domains. Most of
 it — the sections below down to "Docs that mention pricing" — is **MMG service pricing**
@@ -10,7 +10,9 @@ a completely separate system (Google Sheet → Hermes → calculator/tools/site)
 system's full architecture lives in `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1 — go there for
 how the pieces fit together; this file only tracks which surface has which status.
 
-**Current pricing before the August 26 change is applied:** Solo €695 · Group €950 total · Signature Day €3,000+ · Trip planning: enquiry only
+**Current pricing from 2026-08-26:** Solo €795 · Group €950 total · Signature Day €3,000+ · Trip planning: enquiry only
+
+**Solo price history:** earlier pre-€495 versions existed; then €495; then €695 from 2026-06-18; now €795 from 2026-08-26. The machine-readable history lives in `mmg-tools/pricing/edit/confirmed/service-pricing.json`.
 
 ---
 
@@ -18,11 +20,11 @@ how the pieces fit together; this file only tracks which surface has which statu
 
 | File | Status |
 |---|---|
-| `src/lib/offers-content.js` | ✅ Verified €695 / €950 |
-| `src/lib/play-with-a-pro-content.js` | ✅ Verified €695 / €950 (all 7 locales) |
+| `src/lib/offers-content.js` | ✅ Verified €795 / €950 |
+| `src/lib/play-with-a-pro-content.js` | ✅ Verified €795 / €950 (all 7 locales) |
 | `src/lib/play-with-a-pro-content-localized.js` | ✅ Guarded by `.\mmg.ps1 site` and `npm run check:service-pricing` |
-| `src/lib/plan-your-trip-content.js` | ✅ Verified €695 / €950 (all 7 locales) |
-| `src/lib/homepage-content.js` | ✅ Verified €695 / €950 (all 7 locales) |
+| `src/lib/plan-your-trip-content.js` | ✅ Verified €795 / €950 (all 7 locales) |
+| `src/lib/homepage-content.js` | ✅ Verified €795 / €950 (all 7 locales) |
 | `src/lib/contact-content.js` | ✅ Guarded fallback + derived values |
 | `src/lib/contact-content-localized.js` | ✅ Guarded localized fallback values |
 | `src/app/(en)/contact/ContactFormPanel.jsx` | ✅ Guarded fallback values |
@@ -49,7 +51,7 @@ how the pieces fit together; this file only tracks which surface has which statu
 | File | Status |
 |---|---|
 | `prototypes/index.html` | ✅ No hardcoded price |
-| `prototypes/golf-cost-calculator/index.html` | ✅ Guarded €695 / €950 fallback note |
+| `prototypes/golf-cost-calculator/index.html` | ✅ Guarded €795 / €950 fallback note |
 | `prototypes/course-selector-simple/index.html` | Check — no price found in last scan |
 | `prototypes/hotel-recommender/index.html` | Check — no price found in last scan |
 | `src/lib/golf-cost-calculator-translations.js` | ✅ Guarded by `.\mmg.ps1 site` and `npm run check:service-pricing` |
@@ -96,7 +98,8 @@ tracked in the table below.
 | `mmg-tools/DATA-FLOWS.md` | ✅ Contacts And Courtesy Flow + Course Key Alias Flow brought to the same standard 2026-08-13 |
 | `mmg-tools/COURSE-DATA-SYSTEM.md` | ✅ Course Master field table (30 fields) + periodic-staleness section added 2026-08-13 |
 | `docs/archive/pricing-handover-2026-06-18.md` | Archived — records the Jun 2026 decision |
-| `docs/pricing-surfaces-inventory.md` | ✅ This file — course pricing section updated 2026-07-29 |
+| `docs/archive/pricing-handover-2026-08-26.md` | Archived — records the Aug 2026 Solo €695 → €795 decision |
+| `docs/pricing-surfaces-inventory.md` | ✅ This file — service pricing section updated 2026-08-26 |
 | `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1 | ✅ Course pricing architecture (Sheet/contracts/Hermes model, pricing-model categories) — updated 2026-07-29 |
 | `docs/content-architecture.md` | Check for hardcoded price references |
 | `CLAUDE.md` | No hardcoded price (pricing rules link out to checklist) |
