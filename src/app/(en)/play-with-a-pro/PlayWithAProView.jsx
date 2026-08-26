@@ -452,13 +452,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                     <li key={feature}>{feature}</li>
                   ))}
                 </ul>
-                {tier.noteLines ? (
-                  <div className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`} style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                    {tier.noteLines.map((line) => <span key={line}>{line}</span>)}
-                  </div>
-                ) : tier.note ? (
-                  <p className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`}>{tier.note}</p>
-                ) : null}
+                {/* Always rendered, even when empty: the desktop grid gives every card
+                    the same seven rows so the notes and buttons line up across all four. */}
+                <div className={`tier__note${tier.featured ? ' tier__note--feature' : ''}${tier.noteLines ? ' tier__note--stacked' : ''}`}>
+                  {tier.noteLines
+                    ? tier.noteLines.map((line) => <span key={line}>{line}</span>)
+                    : tier.note || null}
+                </div>
                 <div className="tier__actions tier__actions--button-last">
                   {tier.detailHref ? (
                     <Link href={buildLocalePath(tier.detailHref, locale)} className="tier__detail-link">
