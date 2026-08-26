@@ -18,21 +18,23 @@ Optional reminder packet: `node scripts/pricing-change-reminder.js --subject "Co
 
 Green fees: edit the pricing master Google Sheet (the single source of truth), then run `.\mmg.ps1 pricing-publish` from mmg-tools (or double-click `UPDATE MMG PRICING.cmd` on the Desktop) — the one guarded pass that publishes both mmg-tools outputs and the public website price pills/tool fallbacks together. The generated JSON/MD are outputs — never edit them directly. (The old Excel workbook, the legacy `sync-pricing.py`, and the older two-step `.\mmg.ps1 pricing` then `.\mmg.ps1 site` chain are all superseded.)
 
+MMG service prices: edit Control Panel > Service Prices, backed by `mmg-tools/pricing/edit/confirmed/service-pricing.json`, run `node scripts/sync-site-pricing.js --dry-run` first, then run `.\mmg.ps1 site`. This updates the website service-price data, offer/content files, tool service-price snapshots, static calculator copy, `llms.txt`, and Mallorca Hub service-price fallbacks. Saved Internal proposals retain their original price snapshot.
+
 **Auto-synced by `.\mmg.ps1 pricing-publish` — do NOT hand-edit (regenerated from the master):**
 - `src/lib/golf-courses-data.js` — course-listing pills (e.g. `Peak €165 / Low €115`). Editing these by hand is overwritten on the next sync and breaks the data-flow rule; fix the master and re-run instead.
 
 **The sync does NOT cover these — always manual:**
-- `src/lib/guide-article-content.js` (EN) and `src/lib/guide-article-content-localized.js` (all 6 languages). Includes the "All 24 Courses" quick-reference `type: 'table'` — a per-course **Green Fee** column that has drifted from canonical before.
-- Any `guide-post-content.js` entry mentioning the price
-- `src/lib/homepage-content.js` — narrative bands (note: the `courses.items` featured-card block is legacy/unrendered; its `meta` price bands don't appear on any live page)
+- Green-fee narrative: `src/lib/guide-article-content.js` (EN) and `src/lib/guide-article-content-localized.js` (all 6 languages). Includes the "All 24 Courses" quick-reference `type: 'table'` — a per-course **Green Fee** column that has drifted from canonical before.
+- Any `guide-post-content.js` entry mentioning the changed price
+- Any Drive, PDF, partner, social, MailerLite, Google Business Profile, WhatsApp, about.me, Trustpilot, or sent proposal surface listed in `docs/pricing-surfaces-inventory.md`
 - `src/lib/mallorca-tracker-courses.js` is prototype placeholder data — do NOT update it
 
 ## 3. Grep-driven sweep
 
 Run `node scripts/price-sweep.mjs --old <old> --new <new> --label "<what changed>"` — greps the OLD price (as a standalone number, avoiding false hits on longer numbers) across every surface group in the inventory below, prints the rendered locale phrase variants to eyeball by hand, confirms the NEW price's hit count, and lists the external/manual surfaces to report. It does not understand context (a match may be a stroke index or a year) — read each hit before editing, and it doesn't replace the sweep in this order:
 
-1. **Core offers:** `offers-content.js`, `play-with-a-pro-content.js`, `plan-your-trip-content.js`, `homepage-content.js` (all 7 locales live in each file), `page-metadata.js` (meta descriptions can carry prices)
-2. **Tools/prototypes:** `prototypes/golf-cost-calculator/`, `course-selector-simple/`, `hotel-recommender/`, `golf-day-builder/`, `prototypes/index.html` — plus `mmg-tools/` and `standalone-apps/mallorca-hub/` if that repo is available (if not mounted/available, list them as pending in the report)
+1. **Core offers:** `offers-content.js`, `play-with-a-pro-content.js`, `play-with-a-pro-content-localized.js`, `plan-your-trip-content.js`, `homepage-content.js`, `contact-content.js`, their localized variants, `page-metadata.js`, `public/llms.txt`, and the Play With A Pro/contact component fallbacks.
+2. **Tools/prototypes:** `src/lib/golf-cost-calculator-translations.js`, `prototypes/golf-cost-calculator/`, `course-selector-simple/`, `hotel-recommender/`, `golf-day-builder/`, `prototypes/index.html` — plus `mmg-tools/` and `standalone-apps/mallorca-hub/` if that repo is available (if not mounted/available, list them as pending in the report)
 3. **Lead magnets:** `src/lib/signup-config.js`, `src/app/api/lead-magnet-signup/route.js`; if any PDF-visible price changed, regenerate via `npm run generate:lead-magnet-pdfs`
 4. **Docs:** `docs/content-architecture.md`, `docs/CONTENT_STRUCTURE.md`, `CLAUDE.md`, `README.md`, and the inventory itself
 
@@ -40,6 +42,7 @@ Run `node scripts/price-sweep.mjs --old <old> --new <new> --label "<what changed
 
 - Grep for the OLD price again — zero hits expected in live surfaces (historical handover docs may legitimately keep it).
 - Grep for the NEW price — confirm it appears everywhere expected, all 7 locales.
+- `npm run check:service-pricing` for MMG service-price changes.
 - `npm run check:content`; add `npm run check:i18n-release` if localized content changed.
 - `check:pricing-narrative` (runs inside `check:content`) cross-checks every labelled `Peak/Low` pair, `€low-high` band, and table Green-Fee cell across the content files against canonical `course-pricing-data.js`. **It does not catch two things — eyeball them:** dynamic-priced courses are exempt (observed rates vary), and freeform prose ranges inside a sentence ("charges €115–€165", "from €90") are not parsed.
 

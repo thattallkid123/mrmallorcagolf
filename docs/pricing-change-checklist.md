@@ -1,6 +1,6 @@
 # Pricing Change Checklist
 
-Use this when any golf pricing changes, including Santa Ponsa 2 and 3.
+Use this when any golf pricing or MMG service pricing changes, including Santa Ponsa 2 and 3.
 
 For the full list of surfaces to check, see `docs/pricing-surfaces-inventory.md`.
 For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subject "Course or offer" --old OLD --new NEW`.
@@ -9,9 +9,10 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 
 ## 1. Update the source of truth
 
-- Edit the live Pricing Google Sheet — the single source of truth. Column reference: `mmg-tools/PRICING.md` > Editable Workbook Columns.
-- Run `.\mmg.ps1 pricing` from `C:\OneDrive\Desktop\cursor\mmg-tools` to regenerate tool data.
-- Run `.\mmg.ps1 site` from the same folder to update the website outputs (course price pills).
+- For course green fees, edit the live Pricing Google Sheet — the single source of truth. Column reference: `mmg-tools/PRICING.md` > Editable Workbook Columns.
+- For MMG service prices (Play With A Pro, Signature Day), edit Control Panel > Service Prices, backed by `mmg-tools/pricing/edit/confirmed/service-pricing.json`.
+- For course pricing, run `.\mmg.ps1 pricing-publish` from `C:\OneDrive\Desktop\cursor\mmg-tools` to regenerate tool data and website outputs in one guarded pass.
+- For service pricing only, run `node scripts/sync-site-pricing.js --dry-run` first, then `.\mmg.ps1 site`.
 - Treat the generated JSON and readable MD as outputs, not edit targets.
 - **Deals, vouchers and multi-round packs are a separate system** — they live in `mmg-tools/pricing/edit/confirmed/deal-products.json` and sync with `node scripts/sync-deal-products.js`, not through the Pricing Sheet or `.\mmg.ps1 pricing`. See `mmg-tools/DATA-FLOWS.md` > Deal Products Flow.
 
@@ -19,6 +20,19 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 
 - `src/lib/golf-courses-data.js`
 - `src/lib/golf-courses-content.js`
+- `src/lib/offers-content.js`
+- `src/lib/play-with-a-pro-content.js`
+- `src/lib/play-with-a-pro-content-localized.js`
+- `src/lib/contact-content.js`
+- `src/lib/contact-content-localized.js`
+- `src/lib/homepage-content.js`
+- `src/lib/homepage-content-localized.js`
+- `src/lib/plan-your-trip-content.js`
+- `src/lib/plan-your-trip-content-localized.js`
+- `src/lib/golf-cost-calculator-translations.js`
+- `src/app/(en)/play-with-a-pro/PlayWithAProView.jsx`
+- `src/app/(en)/contact/ContactFormPanel.jsx`
+- `public/llms.txt`
 - `src/lib/guide-article-content.js`
 - `src/lib/guide-article-content-localized.js`
 - Any page component or metadata that renders the changed pricing
@@ -67,6 +81,7 @@ Manual surfaces to remember in the same pass:
 ## 6. Verify before pushing
 
 - Search for the old and new price strings
+- Run `npm run check:service-pricing` when an MMG service price changed
 - Check the course pages, guide cards, and pricing tools
 - Run `npm run check:tool-green-fees` if any public green-fee number changed
 - Regenerate the lead magnet PDFs if any PDF-visible price changed

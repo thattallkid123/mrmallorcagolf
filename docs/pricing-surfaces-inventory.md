@@ -1,6 +1,6 @@
 # Pricing Surfaces Inventory
 
-Use this as the exact map when a price changes. Status column updated 2026-06-18 after €495 → €695 pass.
+Use this as the exact map when a price changes. Service-pricing sync coverage tightened 2026-08-26 before the Solo €695 → €795 change.
 
 **Scope note (added 2026-07-29):** this file covers two distinct pricing domains. Most of
 it — the sections below down to "Docs that mention pricing" — is **MMG service pricing**
@@ -10,7 +10,7 @@ a completely separate system (Google Sheet → Hermes → calculator/tools/site)
 system's full architecture lives in `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1 — go there for
 how the pieces fit together; this file only tracks which surface has which status.
 
-**Current pricing:** Solo €695 · Group €950 total · Signature Day €3,000+ · Trip planning: enquiry only
+**Current pricing before the August 26 change is applied:** Solo €695 · Group €950 total · Signature Day €3,000+ · Trip planning: enquiry only
 
 ---
 
@@ -20,11 +20,16 @@ how the pieces fit together; this file only tracks which surface has which statu
 |---|---|
 | `src/lib/offers-content.js` | ✅ Verified €695 / €950 |
 | `src/lib/play-with-a-pro-content.js` | ✅ Verified €695 / €950 (all 7 locales) |
+| `src/lib/play-with-a-pro-content-localized.js` | ✅ Guarded by `.\mmg.ps1 site` and `npm run check:service-pricing` |
 | `src/lib/plan-your-trip-content.js` | ✅ Verified €695 / €950 (all 7 locales) |
 | `src/lib/homepage-content.js` | ✅ Verified €695 / €950 (all 7 locales) |
-| `src/lib/contact-content.js` | ✅ Verified (no hardcoded price — form labels only) |
+| `src/lib/contact-content.js` | ✅ Guarded fallback + derived values |
+| `src/lib/contact-content-localized.js` | ✅ Guarded localized fallback values |
+| `src/app/(en)/contact/ContactFormPanel.jsx` | ✅ Guarded fallback values |
+| `src/app/(en)/play-with-a-pro/PlayWithAProView.jsx` | ✅ Guarded JSON-LD `lowPrice` |
 | `src/lib/page-metadata.js` | Check if price appears in meta descriptions |
 | `src/lib/signup-config.js` | ✅ No hardcoded price |
+| `public/llms.txt` | ✅ Guarded by `.\mmg.ps1 site` and `npm run check:service-pricing` |
 
 ## Lead magnet and MailerLite surfaces
 
@@ -44,9 +49,10 @@ how the pieces fit together; this file only tracks which surface has which statu
 | File | Status |
 |---|---|
 | `prototypes/index.html` | ✅ No hardcoded price |
-| `prototypes/golf-cost-calculator/index.html` | ✅ Verified €695 / €950 |
+| `prototypes/golf-cost-calculator/index.html` | ✅ Guarded €695 / €950 fallback note |
 | `prototypes/course-selector-simple/index.html` | Check — no price found in last scan |
 | `prototypes/hotel-recommender/index.html` | Check — no price found in last scan |
+| `src/lib/golf-cost-calculator-translations.js` | ✅ Guarded by `.\mmg.ps1 site` and `npm run check:service-pricing` |
 | `src/app/(en)/tools/course-selector/CourseSelectorToolClient.jsx` | Manual fallback fee strings present; verified by `npm run check:tool-green-fees` |
 | `src/app/(en)/tools/green-fees/GreenFeesClient.jsx` | Base comparison rows present; verified by `npm run check:tool-green-fees` |
 | `src/app/(en)/tools/golf-day-builder/` | Live route — pulls prices dynamically from canonical course data, no manual update needed |
@@ -78,13 +84,14 @@ tracked in the table below.
 | `mmg-tools/calculator/` | ✅ Fixed 2026-07-29 — twilight/earlybird now sync live (were frozen/wrong for several courses, e.g. Canyamel showed a twilight price for a product that doesn't exist). Verified in a real browser, not just generated JSON. The old file-rewrite sync path (`syncCalculator()`) was dead code silently matching zero courses; removed. |
 | `mmg-tools/control-panel/` | ✅ Extended 2026-07-29 — Course Hub now shows pricing model, rate/booking URLs, 9H, twilight, early-bird per course, plus a live "Data still needed" checklist computed from the current master (not a written list — can't go stale). |
 | MMG Encyclopaedia (`MMG_ENCYCLOPAEDIA_DATA_MASTER.md`) | ✅ Checked 2026-07-29 — its price line only reads `low`/`peak`/`dynamic`/`licenceFee`, none of which changed this session, so it's accurate though unrefreshed. Does not reflect 9H/twilight/pricing-model detail (not built to). |
-| `standalone-apps/mallorca-hub/index.html` | Stale reference (Jun 2026 pass) — not checked 2026-07-29 |
+| `standalone-apps/mallorca-hub/course-facts.js` | ✅ Generated service-price snapshot from `pricing/edit/confirmed/service-pricing.json` |
+| `standalone-apps/mallorca-hub/index.html` | ✅ Guarded service-price fallback; course/hospitality euro signs may also appear and are separate content |
 
 ## Docs that mention pricing
 
 | File | Status |
 |---|---|
-| `docs/pricing-change-checklist.md` | ✅ Current — re-checked 2026-08-13 against the rewritten `mmg-tools/PRICING.md`; every path it names still exists. Step 1 deduplicated, annual-check and deal-products entry points added, live-page verification added to step 6. |
+| `docs/pricing-change-checklist.md` | ✅ Current — re-checked 2026-08-26 for service-pricing surfaces and automated guard coverage. |
 | `mmg-tools/PRICING.md` | ✅ Rewritten 2026-08-13 — full 42-column table, Annual / Seasonal Price Check runbook, documented direct cell-write endpoint |
 | `mmg-tools/DATA-FLOWS.md` | ✅ Contacts And Courtesy Flow + Course Key Alias Flow brought to the same standard 2026-08-13 |
 | `mmg-tools/COURSE-DATA-SYSTEM.md` | ✅ Course Master field table (30 fields) + periodic-staleness section added 2026-08-13 |
@@ -122,7 +129,7 @@ Old pricing being replaced:
 - Whatever the previous price was (check `docs/pricing-handover-*.md` for history)
 
 New pricing to confirm:
-- `695`
+- the new Solo price (for August 26: `795`)
 - `950`
 - `3000` / `3,000`
 
@@ -144,6 +151,7 @@ Encoding failures:
 
 ```bash
 # Repo content checks
+npm run check:service-pricing
 npm run check:content
 
 # Rebuild lead magnet PDFs after PDF text changes

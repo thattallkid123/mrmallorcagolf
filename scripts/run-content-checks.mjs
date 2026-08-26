@@ -31,6 +31,7 @@ const CHECKS = [
   { name: 'check:fonts', script: 'check-font-usage.mjs' },
   { name: 'check:social-proof', script: 'sync-social-proof.mjs', args: ['--check'] },
   { name: 'check:offers', script: 'check-offers-consistency.js' },
+  { name: 'check:service-pricing', script: 'check-service-pricing-surfaces.mjs' },
   { name: 'check:locale', script: 'check-locale-content.js' },
   { name: 'check:shared-locale (fallbacks)', script: 'check-shared-locale-fallbacks.js' },
   { name: 'check:shared-locale (overlay)', script: 'check-localized-overlay-integrity.js' },
