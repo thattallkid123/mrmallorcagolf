@@ -459,15 +459,15 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 ) : tier.note ? (
                   <p className={`tier__note${tier.featured ? ' tier__note--feature' : ''}`}>{tier.note}</p>
                 ) : null}
-                <div className="tier__actions">
-                  <Link href={tier.href} className="tier__btn">
-                    {tier.button}
-                  </Link>
+                <div className="tier__actions tier__actions--button-last">
                   {tier.detailHref ? (
                     <Link href={buildLocalePath(tier.detailHref, locale)} className="tier__detail-link">
                       {tier.detailLabel || 'See full details →'}
                     </Link>
                   ) : null}
+                  <Link href={tier.href} className="tier__btn">
+                    {tier.button}
+                  </Link>
                 </div>
               </div>
             ))}

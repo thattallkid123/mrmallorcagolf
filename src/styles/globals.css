@@ -2632,6 +2632,8 @@ body {
 .tier__features li::before { content: ''; position: absolute; left: 0; top: 8px; width: 5px; height: 1px; background: var(--gold); }
 .tier--feature .tier__features li::before { background: var(--gold-light); }
 .tier__actions { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; min-height: 102px; margin-top: auto; padding-top: 28px; }
+.tier__actions--button-last { justify-content: flex-end; }
+.tier__actions--button-last .tier__detail-link { margin-top: 0; margin-bottom: 12px; }
 .tier__btn { display: inline-flex; align-items: center; justify-content: center; align-self: stretch; box-sizing: border-box; min-height: 46px; font-size: 11px; font-weight: 500; letter-spacing: 0.13em; line-height: 1.25; text-align: center; text-transform: uppercase; padding: 14px 22px; background: transparent; border: 1px solid currentColor; color: var(--deep); text-decoration: none; font-family: var(--font-sans); transition: background-color 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury), color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury), box-shadow 0.35s var(--ease-luxury); margin-top: 28px; border-radius: 999px; }
 .tier__actions .tier__btn { margin-top: 0; }
 .tier--feature .tier__btn { color: var(--white); }
