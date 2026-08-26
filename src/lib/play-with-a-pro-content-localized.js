@@ -10,7 +10,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
         { "label": "Formato", "text": "Un campo, 18 hoyos, elegido según su juego, conmigo a su lado durante toda la vuelta." },
-        { "label": "Precios", "text": "Solo desde €695. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
+        { "label": "Precios", "text": "Solo desde €795. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
         { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Andy responde personalmente en 24 horas." }
       ]
     },
@@ -20,7 +20,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jugar con un Pro",
       "eyebrow": "Día de golf · Mallorca",
       "title": "Un día de golf en Mallorca.",
-      "body": "Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €695. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.",
+      "body": "Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €795. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.",
       "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
       "secondaryCta": "Ver paquetes"
@@ -268,7 +268,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Am besten für", "text": "Einzelspieler, Paare und kleine Gruppen, die einen richtigen Golftag auf Mallorca wollen." },
         { "label": "Format", "text": "Ein Platz, 18 Löcher, passend zu Ihrem Spiel, mit mir an Ihrer Seite während der ganzen Runde." },
-        { "label": "Preise", "text": "Solo ab €695. Gruppe ab €950 insgesamt. Greenfees sind getrennt und werden vor der Buchung bestätigt." },
+        { "label": "Preise", "text": "Solo ab €795. Gruppe ab €950 insgesamt. Greenfees sind getrennt und werden vor der Buchung bestätigt." },
         { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Andy antwortet persönlich innerhalb von 24 Stunden." }
       ]
     },
@@ -278,7 +278,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Mit einem Pro spielen",
       "eyebrow": "Golftag · Mallorca",
       "title": "Ein Golftag auf Mallorca.",
-      "body": "Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €695. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.",
+      "body": "Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €795. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.",
       "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
       "secondaryCta": "Pakete ansehen"
@@ -526,7 +526,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Idéal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journée de golf a Majorque." },
         { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi a vos cotes pendant toute la partie." },
-        { "label": "Tarifs", "text": "Solo a partir de €695. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la reservation." },
+        { "label": "Tarifs", "text": "Solo a partir de €795. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la reservation." },
         { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Andy repond personnellement sous 24 heures." }
       ]
     },
@@ -536,7 +536,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jouer avec un pro",
       "eyebrow": "Journée de golf · Majorque",
       "title": "Une journée de golf à Majorque.",
-      "body": "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. En solo à partir de €695. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.",
+      "body": "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. En solo à partir de €795. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.",
       "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
       "secondaryCta": "Voir les formules"
@@ -784,7 +784,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Geschikt voor", "text": "Solospelers, koppels en kleine groepen die een echte golfdag op Mallorca willen." },
         { "label": "Formaat", "text": "Een baan, 18 holes, gekozen voor uw spel, met mij naast u gedurende de hele ronde." },
-        { "label": "Prijzen", "text": "Solo vanaf €695. Groep vanaf €950 totaal. Greenfees zijn apart en worden voor de boeking bevestigd." },
+        { "label": "Prijzen", "text": "Solo vanaf €795. Groep vanaf €950 totaal. Greenfees zijn apart en worden voor de boeking bevestigd." },
         { "label": "Volgende stap", "text": "Stuur uw data, groepsgrootte en handicaprange. Andy reageert persoonlijk binnen 24 uur." }
       ]
     },
@@ -793,7 +793,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spelen met een pro",
       "eyebrow": "Golfdag · Mallorca",
       "title": "Een golfdag op Mallorca.",
-      "body": "Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €695. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.",
+      "body": "Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €795. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.",
       "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
       "secondaryCta": "Bekijk pakketten"
@@ -1041,7 +1041,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Bäst for", "text": "Ensamspelare, par och sma sallskap som vill ha en riktig golfdag pa Mallorca." },
         { "label": "Format", "text": "En bana, 18 hål, vald efter ditt spel, med mig vid din sida under hela rundan." },
-        { "label": "Priser", "text": "Solo från €695. Grupp från €950 totalt. Green fees ar separata och bekraftas innan bokning." },
+        { "label": "Priser", "text": "Solo från €795. Grupp från €950 totalt. Green fees ar separata och bekraftas innan bokning." },
         { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Andy svarar personligen inom 24 timmar." }
       ]
     },
@@ -1051,7 +1051,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spela med ett proffs",
       "eyebrow": "Golfdag · Mallorca",
       "title": "En golfdag på Mallorca.",
-      "body": "En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €695. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.",
+      "body": "En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €795. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.",
       "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
       "secondaryCta": "Se paket"
@@ -1309,7 +1309,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "与职业球手同场",
       "eyebrow": "私人高尔夫体验 · 马略卡",
       "title": "在马略卡的一天私人高尔夫体验。",
-      "body": "一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €695。小组从 €950 总计起，果岭费另计。",
+      "body": "一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €795。小组从 €950 总计起，果岭费另计。",
       "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
       "secondaryCta": "查看方案"

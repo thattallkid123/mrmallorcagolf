@@ -304,7 +304,7 @@ export const HOME_CONTENT = {
         "note": "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
         "cta": "Enquire",
         "href": "/contact",
-        "price": "€695"
+        "price": "€795"
       },
       {
         "tier": "Group",

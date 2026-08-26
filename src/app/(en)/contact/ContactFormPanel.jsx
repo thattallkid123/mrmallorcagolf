@@ -13,7 +13,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
     ['not-sure', 'Not sure yet'],
   ]
   const pwapFormats = content.form.pwapFormats || [
-    ['pwap-solo', 'Solo', '€695'],
+    ['pwap-solo', 'Solo', '€795'],
     ['pwap-group', 'Group', '€950 total'],
     ['signature-day', 'Signature Day', 'On request'],
     ['pwap-not-sure', 'Not sure yet', ''],

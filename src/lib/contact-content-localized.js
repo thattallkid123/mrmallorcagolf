@@ -79,7 +79,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "pwap-solo",
           "Un día con Andy - Solo",
-          "€695"
+          "€795"
         ],
         [
           "pwap-group",
@@ -199,7 +199,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "pwap-solo",
           "Ein Tag mit Andy - Solo",
-          "€695"
+          "€795"
         ],
         [
           "pwap-group",
@@ -319,7 +319,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "pwap-solo",
           "Une journée avec Andy - Solo",
-          "€695"
+          "€795"
         ],
         [
           "pwap-group",
@@ -439,7 +439,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "pwap-solo",
           "Een dag met Andy - Solo",
-          "€695"
+          "€795"
         ],
         [
           "pwap-group",
@@ -559,7 +559,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "pwap-solo",
           "En dag med Andy - Solo",
-          "€695"
+          "€795"
         ],
         [
           "pwap-group",
@@ -682,7 +682,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         [
           "pwap-solo",
           "与 Andy 共度一天 - 单人",
-          "€695"
+          "€795"
         ],
         [
           "pwap-group",

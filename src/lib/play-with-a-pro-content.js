@@ -31,7 +31,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       },
       {
         "label": "Pricing",
-        "text": "Solo from €695. Group from €950 total. Green fees stay separate and are confirmed before booking."
+        "text": "Solo from €795. Group from €950 total. Green fees stay separate and are confirmed before booking."
       },
       {
         "label": "Next step",
@@ -156,7 +156,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       {
         "eyebrow": "A Day With Andy",
         "name": "Solo",
-        "price": "€695",
+        "price": "€795",
         "note": "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
         "features": [
           "Course matched to your game and handicap",

@@ -55,7 +55,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "title": "Play With A Pro",
     "body": "A full day on course with me alongside you for all 18 holes. Works as a standalone booking or as part of a planned trip. One course, chosen for your game, with local course management and coaching woven into the round.",
     "price": "Solo from",
-    "priceValue": "€695",
+    "priceValue": "€795",
     "groupLabel": "Groups from",
     "groupValue": "€950 total",
     "priceSuffix": "Green fees additional",
