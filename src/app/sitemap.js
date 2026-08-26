@@ -9,7 +9,7 @@ import {
 } from '../lib/site'
 
 const LAST_MODIFIED_BY_PATH = {
-  '/': '2026-06-01',
+  '/': '2026-08-26',
   '/golf-courses': '2026-06-01',
   '/guides': '2026-06-01',
   '/guides/best-golf-courses-mallorca': '2026-08-14',
@@ -29,11 +29,11 @@ const LAST_MODIFIED_BY_PATH = {
   '/guides/mallorca-course-map': '2026-07-23',
   '/guides/is-mallorca-good-for-golf': '2026-08-14',
   '/guides/on-course-coaching-mallorca': '2026-08-22',
-  '/play-with-a-pro': '2026-06-25',
+  '/play-with-a-pro': '2026-08-26',
   '/signature-day': '2026-06-25',
   '/about': '2026-04-01',
-  '/contact': '2026-04-01',
-  '/plan-your-trip': '2026-05-01',
+  '/contact': '2026-08-26',
+  '/plan-your-trip': '2026-08-26',
   '/course-selector': '2026-06-01',
   '/tools': '2026-07-25',
   '/tools/golf-cost-calculator': '2026-07-25',
