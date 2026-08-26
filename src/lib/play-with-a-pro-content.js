@@ -180,7 +180,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Buggy and rental clubs available as optional add-ons, happy to help arrange."
         ],
         "features": [
-          "Up to 3 players, one fixed day rate for Andy",
+          "Up to 3 players, one fixed day rate for me",
           "Course matched to your group",
           "Tee time secured and fully handled",
           "18 holes with me",

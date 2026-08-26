@@ -290,6 +290,7 @@ export default function GolfTripCalculatorClient() {
           border: 1.5px solid var(--gold);
           background: var(--bg);
           color: var(--text);
+          font-family: var(--font-sans);
           font-size: 22px;
           cursor: pointer;
           transition: all 0.2s;

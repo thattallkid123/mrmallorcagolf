@@ -218,7 +218,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "tier": "Grupo",
           "name": "Grupo",
           "features": [
-            "Hasta 3 jugadores, tarifa fija por el día de Andy",
+            "Hasta 3 jugadores, mi tarifa fija por el día",
             "Campo elegido según el grupo",
             "Hora de salida asegurada",
             "18 hoyos conmigo",
@@ -542,7 +542,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "tier": "Gruppe",
           "name": "Gruppe",
           "features": [
-            "Bis zu 3 Spieler, ein fester Tagessatz für Andy",
+            "Bis zu 3 Spieler, ein fester Tagessatz für mich",
             "Platz passend zur Gruppe",
             "Startzeit gesichert",
             "18 Löcher mit mir",
@@ -866,7 +866,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "tier": "Groupe",
           "name": "Groupe",
           "features": [
-            "Jusqu'à 3 joueurs, tarif fixe pour la journée d'Andy",
+            "Jusqu'à 3 joueurs, mon tarif fixe pour la journée",
             "Parcours choisi selon le groupe",
             "Heure de départ sécurisée",
             "18 trous avec moi",
@@ -1189,7 +1189,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "tier": "Groep",
           "name": "Groep",
           "features": [
-            "Tot 3 spelers, vaste dagprijs voor Andy",
+            "Tot 3 spelers, mijn vaste dagprijs",
             "Baan gekozen voor uw groep",
             "Starttijd vastgelegd",
             "18 holes met mij",
@@ -1512,7 +1512,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "tier": "Grupp",
           "name": "Grupp",
           "features": [
-            "Upp till 3 spelare, ett fast dagspris för Andy",
+            "Upp till 3 spelare, mitt fasta dagspris",
             "Bana vald för din grupp",
             "Starttid säkrad",
             "18 hål med mig",
@@ -1843,7 +1843,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "eyebrow": "与我同场",
           "name": "小组",
           "features": [
-            "最多 3 位球手，Andy 收取固定日费",
+            "最多 3 位球手，我收取固定日费",
             "根据小组情况匹配球场",
             "开球时间已预订",
             "与我同打 18 洞",

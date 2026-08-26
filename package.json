@@ -16,6 +16,7 @@
     "check:js-parse": "node --no-warnings scripts/check-js-parse.mjs",
     "check:social-proof": "node --no-warnings scripts/sync-social-proof.mjs --check",
     "check:fonts": "node --no-warnings scripts/check-font-usage.mjs",
+    "check:font-consistency": "node --no-warnings scripts/check-font-consistency.mjs",
     "check:offers": "node --no-warnings scripts/check-offers-consistency.js",
     "check:service-pricing": "node --no-warnings scripts/check-service-pricing-surfaces.mjs",
     "check:content": "node --no-warnings scripts/run-content-checks.mjs",

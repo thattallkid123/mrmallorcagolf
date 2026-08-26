@@ -312,7 +312,7 @@ export const HOME_CONTENT = {
         "name": "Group",
         "featured": true,
         "features": [
-          "Up to 3 players, one fixed day rate for Andy",
+          "Up to 3 players, one fixed day rate for me",
           "Course matched to your group",
           "Tee time secured and fully handled",
           "18 holes with me",

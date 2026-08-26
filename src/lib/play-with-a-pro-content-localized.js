@@ -146,7 +146,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "name": "Un día conmigo",
           "price": "€950 en total",
           "features": [
-            "Hasta 3 jugadores, una tarifa fija por el día de Andy",
+            "Hasta 3 jugadores, mi tarifa fija por el día",
             "Campo elegido según su grupo",
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
@@ -404,7 +404,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "name": "Ein Tag mit mir",
           "price": "€950 insgesamt",
           "features": [
-            "Bis zu 3 Spieler, ein fester Tagessatz für Andy",
+            "Bis zu 3 Spieler, ein fester Tagessatz für mich",
             "Platz passend zu Ihrer Gruppe",
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
@@ -662,7 +662,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "name": "Une journée avec moi",
           "price": "€950 au total",
           "features": [
-            "Jusqu'à 3 joueurs, un tarif fixe pour la journée d'Andy",
+            "Jusqu'à 3 joueurs, mon tarif fixe pour la journée",
             "Parcours choisi selon votre groupe",
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
@@ -919,7 +919,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "name": "Een dag met mij",
           "price": "€950 totaal",
           "features": [
-            "Tot 3 spelers, één vaste dagprijs voor Andy",
+            "Tot 3 spelers, mijn vaste dagprijs",
             "Baan gekozen op basis van uw groep",
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
@@ -1177,7 +1177,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "name": "En dag med mig",
           "price": "€950 totalt",
           "features": [
-            "Upp till 3 spelare, ett fast dagspris för Andy",
+            "Upp till 3 spelare, mitt fasta dagspris",
             "Bana vald efter ert sällskap",
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
@@ -1435,7 +1435,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "name": "与我共度一天",
           "price": "€950 总计",
           "features": [
-            "最多 3 位球手，Andy 收取固定日费",
+            "最多 3 位球手，我收取固定日费",
             "按照您的小组匹配球场",
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
