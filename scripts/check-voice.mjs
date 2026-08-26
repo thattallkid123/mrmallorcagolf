@@ -6,53 +6,80 @@
  * + section 6). check:text catches encoding corruption; this catches voice
  * drift: em dashes and banned filler words in English copy.
  *
- * SCOPE (v2): FULL_FILES are English-only master content files, scanned whole
- * — zero false-positive risk. EN_SCOPED_FILES are page/section content files
- * that embed all locales inline under a top-level `en: {`/`"en": {` key; for
- * these, only that key's subtree is scanned (brace-depth walk, quote-aware),
- * so Chinese's legitimate `——` and other locale copy never false-flag.
+ * SCOPE (v3): opt-OUT. Every `*-content.js` / `*-translations.js` in src/lib
+ * is discovered automatically (see EXCLUDED_FILES to exempt one). Each file is
+ * then auto-classified: if it embeds all locales inline under a top-level
+ * `en: {`/`"en": {` key, only that subtree is scanned (quote-aware brace-depth
+ * walk) so Chinese's legitimate `——` and other locale copy never false-flag;
+ * otherwise it is an English-only master and is scanned whole. Verbatim client
+ * testimonials are blanked before scanning (EXCLUDED_SUBTREE_KEYS).
  *
- * Run: npm run check:voice   (standalone — not wired into pre-commit yet)
+ * Run: npm run check:voice   (also runs inside check:content)
  */
 
-import { readFileSync, existsSync } from 'node:fs'
+import { readFileSync, existsSync, readdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join, resolve } from 'node:path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = resolve(__dirname, '..')
 
-// English-only master content files — scanned in full.
-const FULL_FILES = [
-  'src/lib/guide-article-content.js',
-  'src/lib/guide-post-content.js',
+// SCOPE (v3, 2026-08-27): this used to be a hand-maintained allowlist of 11
+// files. That made it opt-in, so every content file added after it was written
+// silently escaped the check forever — which is exactly how 14 em dashes
+// reached live customer-facing tool copy (handicap-checker, golf-cost-
+// calculator, green-fees) and went unnoticed. It is now opt-OUT: every
+// `*-content.js` / `*-translations.js` file in src/lib is discovered
+// automatically, and anything that should not be scanned must be listed in
+// EXCLUDED_FILES with a stated reason.
+const LIB_DIR = 'src/lib'
+const DISCOVER_RE = /-(content|translations)\.js$/
+// `*-localized.js` mirrors are excluded by name: they hold the six translated
+// locales, and the em-dash ban is an English-only convention (German, Dutch and
+// Swedish want an en dash with spaces; French and Spanish use the em dash
+// natively), so scanning them would flag correct typography as an error.
+const LOCALIZED_RE = /-localized\.js$/
+
+// Files matching DISCOVER_RE that should still not be scanned. Add a reason.
+const EXCLUDED_FILES = new Set([
+  // (none currently — keep this list short and justified)
+])
+
+// Additional English-only masters that do not match the naming pattern above.
+const EXTRA_FILES = [
   'src/lib/golf-courses-data.js',
 ]
 
-// Page/section content files with all locales inline under a top-level
-// `en:` key. Only that subtree is scanned. Extend deliberately — only add
-// files that follow the `en: { ... }, de: { ... }, ...` top-level shape.
-const EN_SCOPED_FILES = [
-  'src/lib/golf-courses-content.js',
-  'src/lib/homepage-content.js',
-  'src/lib/about-content.js',
-  'src/lib/guides-content.js',
-  'src/lib/offers-content.js',
-  'src/lib/plan-your-trip-content.js',
-  'src/lib/coaching-content.js',
-  'src/lib/contact-content.js',
-]
+// Subtrees blanked before scanning, anywhere they appear. Testimonials are
+// verbatim client quotes: the voice guide says they "stay word for word unless
+// Andy explicitly approves a change", so a banned word inside one is not a
+// defect to fix. Without this, adding play-with-a-pro-content.js to the check
+// would fail on Jo's "unparalleled level of insight" and an em dash in
+// Synøve's quote — both of which must stay exactly as written.
+const EXCLUDED_SUBTREE_KEYS = ['testimonials']
 
-const FILES = [...FULL_FILES, ...EN_SCOPED_FILES]
+function discoverFiles() {
+  const dir = join(REPO_ROOT, LIB_DIR)
+  const found = readdirSync(dir)
+    .filter((name) => DISCOVER_RE.test(name) && !LOCALIZED_RE.test(name))
+    .map((name) => `${LIB_DIR}/${name}`)
+    .filter((rel) => !EXCLUDED_FILES.has(rel))
+  return [...found, ...EXTRA_FILES].sort()
+}
+
+const FILES = discoverFiles()
 
 const EM_DASH = '—'
 
 // Section 3 "Banned words" — filler that reads as brochure/AI copy.
 const BANNED_WORDS = [
   'stunning', 'breathtaking', 'nestled', 'seamless', 'elevate', 'unforgettable',
-  'hidden gem', 'curated', 'bespoke', 'vibrant', 'bustling', 'exceptional',
+  'hidden gem', 'curated', 'vibrant', 'bustling', 'exceptional',
   'world-class', 'unparalleled', 'boasting', 'holistic', 'robust', 'dynamic',
   'cutting-edge', 'game-changer',
+  // 'bespoke' was removed 2026-08-27 on Andy's explicit call: he uses it
+  // deliberately for the Signature Experience. It has also been removed from
+  // the banned list in the canonical Drive voice guide, so the two agree.
   // cursor/CLAUDE.md's brand-voice section names these two by name as banned
   // AI clichés — this check had no coverage for them until 2026-08-23.
   'delve into', 'embark on',
@@ -85,7 +112,13 @@ const BANNED_TRANSITION_RES = BANNED_TRANSITIONS.map((w) => ({ word: w, re: word
 // brace counting) to its matching close. Returns [startIndex, endIndex)
 // character offsets into `text`, or null if no such key is found.
 function findEnSubtreeRange(text) {
-  const keyMatch = text.match(/^\s*"?en"?:\s*\{/m)
+  return findSubtreeRange(text, /^\s*"?en"?:\s*\{/m)
+}
+
+// Generalised brace walk: given a regex that matches a `key: {` opener,
+// returns [start, end) offsets of that key's full subtree.
+function findSubtreeRange(text, keyRe) {
+  const keyMatch = text.match(keyRe)
   if (!keyMatch) return null
 
   const braceOpenIdx = keyMatch.index + keyMatch[0].length - 1
@@ -116,13 +149,24 @@ function checkFile(rel) {
   let text = fullText
   let lineOffset = 0
 
-  if (EN_SCOPED_FILES.includes(rel)) {
-    const range = findEnSubtreeRange(fullText)
-    if (!range) {
-      return { rel, findings: [], missing: false, scopeError: true }
-    }
+  // Auto-classify rather than relying on a hand-maintained list: if the file
+  // carries all locales inline under a top-level `en:` key, scan only that
+  // subtree; otherwise it is an English-only master and is scanned whole.
+  const range = findEnSubtreeRange(fullText)
+  if (range) {
     lineOffset = fullText.slice(0, range[0]).split('\n').length - 1
     text = fullText.slice(range[0], range[1])
+  }
+
+  // Blank excluded subtrees (keeping newlines so reported line numbers stay
+  // accurate) so verbatim client quotes never false-flag.
+  for (const key of EXCLUDED_SUBTREE_KEYS) {
+    for (;;) {
+      const sub = findSubtreeRange(text, new RegExp(`"?${key}"?:\\s*\\{`))
+      if (!sub) break
+      const blanked = text.slice(sub[0], sub[1]).replace(/[^\n]/g, ' ')
+      text = text.slice(0, sub[0]) + blanked + text.slice(sub[1])
+    }
   }
 
   const lines = text.split('\n')
