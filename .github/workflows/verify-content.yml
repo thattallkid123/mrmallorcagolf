@@ -41,3 +41,38 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+      # Runtime regression guard for the 2026-08-26 Arial-fallback button bug
+      # (tests/font-consistency.spec.js) - can't be checked reliably as static
+      # text/regex (see scripts/check-font-consistency.mjs's comment for why),
+      # so it renders real pages against a real production build and reads
+      # real computed font-family. Chromium-only and one spec file, not the
+      # full check:visual suite, to keep this fast - see docs/ship notes for
+      # running the full visual suite by hand.
+      - name: Cache Playwright browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}-1.60.0
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run font consistency check (runtime)
+        run: |
+          npx next start -p 3000 &
+          SERVER_PID=$!
+          for i in $(seq 1 30); do
+            curl -s -o /dev/null http://127.0.0.1:3000 && break
+            sleep 2
+          done
+          # --retries=1: absorbs a real, found-and-fixed-2026-08-26 timing race
+          # (CSS/stylesheet not yet active when computed styles are read, more
+          # likely under this step's concurrent-worker load) without masking a
+          # genuine regression - an actual Arial-fallback bug reproduces
+          # identically on every retry, since the underlying CSS doesn't change
+          # between attempts, so it still fails the run either way.
+          npx playwright test tests/font-consistency.spec.js --project=desktop-chrome --retries=1
+          TEST_EXIT=$?
+          kill $SERVER_PID 2>/dev/null || true
+          exit $TEST_EXIT

@@ -51,6 +51,12 @@ const LOCALE_SPOT_CHECKS = ['de', 'zh'].flatMap((locale) =>
 const ROUTES = [...EN_ROUTES, ...LOCALE_SPOT_CHECKS]
 
 async function findFontViolations(page) {
+  // Wait for webfonts to finish loading before reading computed styles.
+  // Without this, a page checked while the custom font is still downloading
+  // (more likely under parallel load) reads as "wrong font" even though it
+  // resolves correctly a moment later - a real flake seen while wiring this
+  // into CI (2026-08-26), not a real bug.
+  await page.evaluate(() => document.fonts.ready)
   return page.evaluate(() => {
     const bodyStyle = getComputedStyle(document.body)
     const sans = bodyStyle.getPropertyValue('--font-sans').trim()
@@ -102,6 +108,21 @@ test.describe('font consistency - no element silently falls back off-brand', () 
     test(`${route} has no elements rendering in a non-brand font`, async ({ page }) => {
       await page.goto(route, { waitUntil: 'domcontentloaded' })
       await page.waitForLoadState('load', { timeout: 15000 }).catch(() => {})
+      // Explicitly poll until the stylesheet is actually active (not just
+      // loaded event fired) before reading computed styles. Under
+      // concurrent Playwright load (multiple projects/routes hitting one
+      // dev/prod server at once) `waitForLoadState('load')` can time out
+      // and its .catch above silently swallows that, so without this the
+      // check can run against a page whose CSS hasn't finished applying
+      // yet (a real FOUC race, found while wiring this into CI 2026-08-26 -
+      // flaked only under multi-project concurrency, never in isolation).
+      await page.waitForFunction(
+        () => {
+          const ff = getComputedStyle(document.body).fontFamily.toLowerCase()
+          return ff.includes('jost') || ff.includes('cormorant')
+        },
+        { timeout: 20000 }
+      )
       const violations = await findFontViolations(page)
       expect(violations, JSON.stringify(violations, null, 2)).toEqual([])
     })
