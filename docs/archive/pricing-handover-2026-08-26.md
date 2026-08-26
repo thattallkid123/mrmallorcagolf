@@ -59,14 +59,15 @@ MMG tools and standalone apps:
 - `mmg-tools/calculator/index.html`
 - `mmg-tools/day-cost/index.html`
 - `mmg-tools/guide/index.html`
+- `mmg-tools/internal/index.html`
 - `standalone-apps/mallorca-hub/course-facts.js`
 - `standalone-apps/mallorca-hub/index.html`
 
 Infrastructure tightened during the change:
 
-- `mmg-tools/scripts/sync-site-pricing.js` now updates the public tool app shell fallbacks for calculator, day-cost, and guide when service pricing changes.
+- `mmg-tools/scripts/sync-site-pricing.js` now updates the app shell fallbacks for calculator, day-cost, guide, and internal when service pricing changes.
 - The public tool PWA cache versions were bumped so installed apps are not pinned to stale `EUR 695` shell copy.
-- `internal/index.html` was not committed from this handover because Andy said the internal app is being worked on separately in another chat. Its generated `internal/service-pricing.js` has the current `EUR 795` data.
+- `internal/index.html` was reconciled after the parallel internal-app chat finished. Its generated `internal/service-pricing.js` and shell fallbacks both use the current `EUR 795` data.
 
 ## Protected Historical / Non-current References
 
@@ -113,4 +114,4 @@ Required checks for this change:
 - Vercel production deployment for `mrmallorcagolf-live`
 - Live URL smoke checks for current offer pages and tool surfaces
 
-After the change, active public offer surfaces should show `EUR 795` for Solo and should not show `EUR 695` except in explicitly historical or separately owned internal surfaces.
+After the change, active offer surfaces should show `EUR 795` for Solo and should not show `EUR 695` except in explicitly historical records, archived audits, or unrelated numeric data such as coordinates.
