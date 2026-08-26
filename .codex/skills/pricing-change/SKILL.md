@@ -42,9 +42,18 @@ Run `node scripts/price-sweep.mjs --old <old> --new <new> --label "<what changed
 
 - Grep for the OLD price again — zero hits expected in live surfaces (historical handover docs may legitimately keep it).
 - Grep for the NEW price — confirm it appears everywhere expected, all 7 locales.
+- Live-fetch the public URLs that Google is likely to show snippets for: homepage, Play With A Pro, Plan Your Trip, the Play With A Pro guide, all affected locale routes, and each public tool/app domain. Treat live HTML as the source check; Google snippets can lag after a correct deploy.
 - `npm run check:service-pricing` for MMG service-price changes.
 - `npm run check:content`; add `npm run check:i18n-release` if localized content changed.
 - `check:pricing-narrative` (runs inside `check:content`) cross-checks every labelled `Peak/Low` pair, `€low-high` band, and table Green-Fee cell across the content files against canonical `course-pricing-data.js`. **It does not catch two things — eyeball them:** dynamic-priced courses are exempt (observed rates vary), and freeform prose ranges inside a sentence ("charges €115–€165", "from €90") are not parsed.
+
+## 4b. Search result / recrawl follow-up
+
+- Search Google for `mrmallorcagolf OLD`, `"Mr Mallorca Golf" "OLD"`, `site:mrmallorcagolf.com "OLD"`, `site:day-cost.mrmallorcagolf.com "OLD"`, `site:guide.mrmallorcagolf.com "OLD"`, `site:deals.mrmallorcagolf.com "OLD"`, `site:instagram.com/mrmallorcagolf "OLD"`, `site:facebook.com "mrmallorcagolf" "OLD"`, and `site:trustpilot.com "Mr Mallorca Golf" "OLD"`.
+- For owned website URLs, do not use Google's public Refresh Outdated Content tool. Use Search Console URL Inspection > Request indexing for exact `https://www.mrmallorcagolf.com/...` URLs and resubmit `https://www.mrmallorcagolf.com/sitemap.xml`. If the quota is hit, continue when it resets; repeated submissions for the same URL do not speed the crawl.
+- For subdomain tools (`day-cost`, `guide`, `deals`, etc.), submit/request indexing only if that exact URL-prefix or domain property is verified in Search Console. If it is not verified, note that as a manual setup task.
+- For third-party pages (Trustpilot, Instagram, Facebook, Google Business Profile, about.me), first edit or verify the live source. If the live third-party page no longer contains the old price but Google still shows it, then the public Refresh Outdated Content tool is appropriate because Andy does not own that third-party URL.
+- Do not mistake a stale Google snippet for a source leak. If clicking through or fetching the live page shows only the new price, report it as pending Google recrawl/snippet refresh.
 
 ## 5. Record and report
 

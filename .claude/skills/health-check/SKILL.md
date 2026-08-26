@@ -20,14 +20,17 @@ Report any failure verbatim — a red check is a ready-made candidate.
 - Guide slug structure parity across all 7 locales — `check:guide-parity`
 - mmg-tools doc-pointer / dead-reference check — `scripts/check-doc-pointers.mjs` in that repo (`node scripts/check-doc-pointers.mjs`)
 - Discovery surfaces (sitemap/feed/IndexNow×2) agreeing on the same guide slug set — `check:discovery`
-- Meta description length + curly-apostrophe compiler trap — `check:meta-length` (standalone, not yet in `check:content` — there's a known backlog of 32 over-length descriptions, re-check whether that's been worked down)
+- Meta description length + curly-apostrophe compiler trap — `check:meta-length` (now wired into `check:content` and passing clean; the old backlog of 32 over-length descriptions was worked down. Verified 2026-08-27.)
+- Brand-voice drift (em dashes, banned words) in **both** repos — `check:voice` here (opt-out: auto-discovers every `src/lib/*-content.js` / `*-translations.js`) and `check:voice-copy` in `mmg-tools`. Do not re-propose a manual em-dash sweep; check for uncovered *surfaces* instead.
+- Font-weight on label/eyebrow classes, and Arial-fallback on non-inheriting elements — `check:font-consistency` + `tests/font-consistency.spec.js` here, `check:font-weight` + `check:font-arial-fallback` in `mmg-tools`.
+- `.claude/skills/` vs `.codex/skills/` mirror drift — `check:skills-mirror` (a real check now, not just the `skills:sync` fixer)
 
 ## Then sweep for what the checks do NOT cover
 1. **Tools hardcoding canonical values** — `grep -rlE "€[0-9]" "src/app/(en)/tools"` and confirm each hit is either dynamic (`getCanonicalCourseData` / `course-catalog`) or covered by `check:tool-prices`. New hardcoded price = candidate.
 2. **Repo TODO/FIXME/deprecated backlog** — `grep -rnE "\b(TODO|FIXME|HACK)\b" src/` (case-SENSITIVE — a case-insensitive grep matches the Spanish word "todo" all over the localized content and reports a fake backlog). As of Jul 2026 there are zero real markers. Triage any new ones into still-valid / already-done / delete.
 3. **Drive organisation** — loose working docs at the Drive root, duplicates of generated files, and `WHERE_THINGS_LIVE.md` accuracy. Lower priority.
 4. **docs/ root drift** — any file added to `docs/` root since the last pass that should be in `docs/archive/` per the hygiene rule (dated/session files), and whether `docs/README.md`'s index still matches what's actually there.
-5. **Skill mirror drift** — `.claude/skills/` vs `.codex/skills/` (run `npm run skills:sync` and see if anything changes) and whether the skills README / CLAUDE.md skill list still names every skill that exists.
+5. **Skill list accuracy** — whether the skills README / CLAUDE.md skill list still names every skill that exists. (The `.claude/` vs `.codex/` *mirror* itself is now covered by `check:skills-mirror` in `check:content`, so do not re-propose that.)
 
 ## Output
 A single ranked list: each item = what, where (file:line), why it matters, and whether the fix is mechanical or judgement. Recommend an order (things that compound first: fix a surface, then the check that locks it). Do not edit anything.
