@@ -106,16 +106,16 @@ tracked in the table below.
 
 ## External / manual surfaces
 
-Only surfaces that actually show a price are listed. Confirmed 2026-06-18.
+Only surfaces that actually show a price are listed. Updated 2026-08-26 after the Solo €695 → €795 change and stale-Google-snippet follow-up.
 
 | Surface | Contains price? | Status |
 |---|---|---|
-| Google Business Profile (description, services, Q&A) | Yes | ❌ Manual update needed |
-| about.me profile | Yes | ❌ Manual update needed |
-| Trustpilot business profile | Yes | ❌ Manual update needed |
-| WhatsApp business profile/about text | Yes | ❌ Manual update needed |
-| WhatsApp saved replies | Yes | ❌ Manual update needed |
-| WhatsApp Business Catalog (5 products: PWAP Solo/Group/Signature Day, Club Rentals Mallorca, Rent2Play Golf hire) | Yes | ❌ Manual update needed — added 2026-08-15, not synced by any script |
+| Google Business Profile (description, services, Q&A) | Yes | ✅ Andy confirmed updated 2026-08-26 |
+| about.me profile | No price found | ✅ Andy confirmed no pricing 2026-08-26 |
+| Trustpilot business profile | Yes | ✅ Andy confirmed updated 2026-08-26; if Google still shows €695, use Refresh Outdated Content only after verifying the live Trustpilot page is corrected |
+| WhatsApp business profile/about text | Yes | ✅ Andy confirmed updated 2026-08-26 |
+| WhatsApp saved replies | Yes | ✅ Andy confirmed updated 2026-08-26 |
+| WhatsApp Business Catalog (5 products: PWAP Solo/Group/Signature Day, Club Rentals Mallorca, Rent2Play Golf hire) | Yes | ✅ Andy confirmed updated 2026-08-26; added 2026-08-15, not synced by any script |
 | Brochures, PDFs, rate cards shared externally | Yes | ❌ Check and update manually |
 | MailerLite live form copy | No price | ✅ No action needed |
 | MailerLite nurture email sequence | No price | ✅ No action needed |
@@ -123,6 +123,9 @@ Only surfaces that actually show a price are listed. Confirmed 2026-06-18.
 | Email signature and autoresponder | No price | ✅ No action needed |
 | Google Reviews request copy | No price | ✅ No action needed |
 | Social bios, pinned posts, highlights | No price | ✅ No action needed |
+| Old Instagram/Facebook posts, reels, captions, and snippets | Possible historical price text | ⚠️ Manual/source-owned by social platforms — edit/delete only if the live post still contains the old price; otherwise request stale-snippet refresh for the third-party result URL |
+| Google search snippets for owned website pages | Not source content | ⚠️ Recrawl follow-up — use Search Console URL Inspection/request indexing and sitemap submission; do not use Refresh Outdated Content for owned URLs |
+| Google search snippets for third-party pages | Not source content | ⚠️ If the live third-party page no longer contains the old price, use Google's Refresh Outdated Content tool for that exact result URL |
 
 ---
 

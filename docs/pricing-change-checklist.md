@@ -83,8 +83,17 @@ Manual surfaces to remember in the same pass:
 - Search for the old and new price strings
 - Run `npm run check:service-pricing` when an MMG service price changed
 - Check the course pages, guide cards, and pricing tools
+- Live-fetch the public pages/tool domains that Google can show snippets for; old Google snippets can lag even after the live HTML is correct
 - Run `npm run check:tool-green-fees` if any public green-fee number changed
 - Regenerate the lead magnet PDFs if any PDF-visible price changed
 - Run `npm run check:content` and fix any failures before commit or push
 - Commit and push the repo(s) that changed
 - **Verify on the live page, not just the generated JSON.** A generator can hold the right value while a downstream build step never reads it, leaving the old figure on screen. Load the actual page or tool for a course/date that exercises the change before calling it done.
+
+## 7. Google recrawl / stale snippet follow-up
+
+- For owned `www.mrmallorcagolf.com` URLs, use Search Console URL Inspection > Request indexing and submit `https://www.mrmallorcagolf.com/sitemap.xml`. Do not use Google's public Refresh Outdated Content tool for URLs Andy owns.
+- If Search Console quota is exhausted, continue when it resets. Prioritise exact URLs that appeared in Google with the old price, then their alternate-language equivalents.
+- For subdomains such as `day-cost.mrmallorcagolf.com`, `guide.mrmallorcagolf.com`, and `deals.mrmallorcagolf.com`, request indexing from their own verified URL-prefix/domain properties. If a property is not verified yet, add it before the next pricing change.
+- For third-party results such as Trustpilot, Instagram, Facebook, Google Business Profile, and about.me, edit/verify the live third-party page first. If Google still shows the old snippet after the live page is corrected, use Google's Refresh Outdated Content tool for that third-party result URL.
+- Standard post-change searches: `mrmallorcagolf OLD`, `"Mr Mallorca Golf" "OLD"`, `site:mrmallorcagolf.com "OLD"`, `site:day-cost.mrmallorcagolf.com "OLD"`, `site:guide.mrmallorcagolf.com "OLD"`, `site:deals.mrmallorcagolf.com "OLD"`, `site:trustpilot.com "Mr Mallorca Golf" "OLD"`, `site:instagram.com/mrmallorcagolf "OLD"`, `site:facebook.com "mrmallorcagolf" "OLD"`.
