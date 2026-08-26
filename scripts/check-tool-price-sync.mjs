@@ -3,7 +3,7 @@
  *
  * Standing guardrail for the one place a canonical price is hardcoded inside a
  * TOOL rather than pulled from data: the golf-cost-calculator states the Play
- * With A Pro price ("€695 solo or €950 total") as literal text. If PWAP pricing
+ * With A Pro Solo/Group prices as literal text. If PWAP pricing
  * changes in the content files but this tool copy is missed, it silently goes
  * stale. This asserts the tool's stated PWAP figures still exist in the
  * canonical PWAP content file.

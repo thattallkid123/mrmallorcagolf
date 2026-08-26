@@ -45,7 +45,7 @@ const sections = [
   '- old price',
   '- new price',
   '- course name variants',
-  '- recurring offer values like €695 and €950',
+  '- recurring offer values like the current Solo and Group service prices',
   '',
   'Example:',
   'node scripts/pricing-change-reminder.js --subject "Santa Ponsa 2" --old 88 --new 65',
