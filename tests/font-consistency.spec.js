@@ -11,10 +11,45 @@ const { expect, test } = require('@playwright/test')
 // reads real computed styles instead, the same way the bug was originally
 // found by hand.
 //
-// One route sample per unique page template is enough: font rules live in
-// shared component/global CSS, not per-page content, so a bug in a shared
-// button class shows up wherever that class is used. Route list mirrors the
-// representative sweep done 2026-08-26.
+// One route sample per unique *page template* is enough for shared
+// component/global CSS bugs (a bug in a shared button class shows up
+// wherever that class is used, regardless of which page renders it). But
+// guide articles each carry their own hand-written body content, which can
+// contain a page-specific inline style or one-off markup a template sample
+// would never catch - so every guide slug is listed explicitly rather than
+// sampled, for real full-site coverage (added 2026-08-26 in response to an
+// explicit "sweep the whole site" ask, expanding on the initial
+// representative sweep).
+
+const ALL_GUIDE_SLUGS = [
+  '5-day-mallorca-golf-itinerary',
+  // 'a-day-at-son-gual' intentionally excluded: the folder exists under
+  // src/app/(en)/guides/ but is empty (no page.jsx), 404s, and nothing in
+  // the codebase references the slug - orphaned scaffolding, not a live
+  // route. Found via this spec 2026-08-26; flagged to Andy rather than
+  // deleted, since removing a directory wasn't part of the font-audit ask.
+  'alcanada-review',
+  'beginners-guide',
+  'best-golf-courses-mallorca',
+  'best-time-play-golf-mallorca',
+  'cost-guide',
+  'course-comparison',
+  'golf-andratx-review',
+  'golf-club-hire-mallorca',
+  'golf-cost-mallorca',
+  'golf-trip-planning-mallorca',
+  'is-mallorca-good-for-golf',
+  'mallorca-course-map',
+  'on-course-coaching-mallorca',
+  'play-with-a-pro-explained',
+  'santa-ponsa-1-review',
+  'son-antem-west-review',
+  'son-gual-review',
+  'son-muntaner-review',
+  'son-termes-review',
+  't-golf-calvia-review',
+  'trip-planner',
+]
 
 const EN_ROUTES = [
   '/',
@@ -24,8 +59,7 @@ const EN_ROUTES = [
   '/play-with-a-pro',
   '/golf-courses',
   '/guides',
-  '/guides/best-golf-courses-mallorca',
-  '/guides/alcanada-review',
+  ...ALL_GUIDE_SLUGS.map((slug) => `/guides/${slug}`),
   '/tools',
   '/tools/course-selector',
   '/tools/golf-cost-calculator',
@@ -44,8 +78,15 @@ const EN_ROUTES = [
 // on the routes most likely to carry locale-specific tier/note copy (where
 // the original bug surfaced) is enough to catch a locale-only regression
 // (e.g. a locale override reintroducing a hardcoded style).
-const LOCALE_SPOT_CHECKS = ['de', 'zh'].flatMap((locale) =>
-  ['/', '/play-with-a-pro', '/contact', '/golf-courses'].map((p) => `/${locale}${p}`)
+// All 6 translated locales (EN is master, NL/SV are unlinked-but-live SEO
+// pages - see nl-sv-locales-seo-only), covering both shared-CSS routes and
+// one guide article per locale, since translated guide body content is a
+// separate data source (guide-post-content-localized.js) from English and
+// could carry its own one-off markup issue a CSS-only argument wouldn't rule out.
+const LOCALE_SPOT_CHECKS = ['de', 'es', 'fr', 'nl', 'sv', 'zh'].flatMap((locale) =>
+  ['/', '/play-with-a-pro', '/contact', '/golf-courses', '/guides/alcanada-review'].map(
+    (p) => `/${locale}${p}`
+  )
 )
 
 const ROUTES = [...EN_ROUTES, ...LOCALE_SPOT_CHECKS]
