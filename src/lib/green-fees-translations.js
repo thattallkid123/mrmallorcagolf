@@ -116,7 +116,7 @@ export const GREEN_FEES_T = {
       },
       contact: {
         title: 'Want Andy to sort the tee times?',
-        desc: "Confirmed rates change by season and day. Tell me your dates and group and I'll get you real prices and book it around your golf — or just message me if that's easier.",
+        desc: "Confirmed rates change by season and day. Tell me your dates and group and I'll get you real prices and book it around your golf, or just message me if that's easier.",
         enquire: 'Enquire',
         whatsapp: 'Message Andy on WhatsApp',
       },
