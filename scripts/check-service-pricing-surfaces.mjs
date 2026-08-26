@@ -56,6 +56,10 @@ const exactChecks = [
     label: 'llms.txt solo offer',
     regex: new RegExp(`Solo[^\\n]*€${solo}`, 'i'),
   },
+]
+
+const mallorcaHubRoot = join(WORKSPACE_ROOT, 'standalone-apps/mallorca-hub')
+const mallorcaHubChecks = [
   {
     file: join(WORKSPACE_ROOT, 'standalone-apps/mallorca-hub/course-facts.js'),
     label: 'Mallorca Hub generated solo service price',
@@ -78,6 +82,7 @@ function read(file) {
 }
 
 const errors = []
+let skippedMallorcaHubChecks = 0
 
 for (const check of exactChecks) {
   const text = read(check.file)
@@ -88,6 +93,21 @@ for (const check of exactChecks) {
   if (!check.regex.test(text)) {
     errors.push(`${check.label}: expected current service price in ${rel(check.file)}`)
   }
+}
+
+if (existsSync(mallorcaHubRoot)) {
+  for (const check of mallorcaHubChecks) {
+    const text = read(check.file)
+    if (text === null) {
+      errors.push(`${check.label}: missing ${rel(check.file)}`)
+      continue
+    }
+    if (!check.regex.test(text)) {
+      errors.push(`${check.label}: expected current service price in ${rel(check.file)}`)
+    }
+  }
+} else {
+  skippedMallorcaHubChecks = mallorcaHubChecks.length
 }
 
 for (const relative of activeWebsiteFiles) {
@@ -103,6 +123,10 @@ for (const relative of activeWebsiteFiles) {
       errors.push(`${relative}: contains legacy solo service price ${oldPrice}`)
     }
   }
+}
+
+if (skippedMallorcaHubChecks) {
+  console.log(`Skipped ${skippedMallorcaHubChecks} Mallorca Hub sibling-repo check(s) because standalone-apps is not checked out here.`)
 }
 
 if (errors.length) {
