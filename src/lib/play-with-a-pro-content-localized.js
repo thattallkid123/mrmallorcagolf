@@ -130,7 +130,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Solo",
           "name": "Un día conmigo",
-          "note": "La tarifa del día de Andy. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, Andy puede ayudar a organizar.",
+          "note": "Mi tarifa del día. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
           "features": [
             "Campo elegido según su juego y su hándicap",
             "Hora de salida asegurada y completamente gestionada",
@@ -155,9 +155,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "button": "Consultar →",
           "href": "/es/contact",
           "noteLines": [
-            "La tarifa fija del día de Andy para 2 o 3 golfistas",
+            "Mi tarifa fija del día para 2 o 3 golfistas",
             "El green fee y el almuerzo son aparte",
-            "Buggy y palos de alquiler disponibles como extras opcionales, Andy puede ayudar a organizar"
+            "Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo"
           ]
         },
         {
@@ -388,7 +388,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Solo",
           "name": "Ein Tag mit mir",
-          "note": "Andys Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger als optionale Zusatzleistungen buchbar, Andy hilft gern bei der Organisation.",
+          "note": "Mein Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
           "features": [
             "Platz passend zu Ihrem Spiel und Handicap",
             "Startzeit gesichert und komplett organisiert",
@@ -413,9 +413,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "button": "Anfragen →",
           "href": "/de/contact",
           "noteLines": [
-            "Andys fester Tagessatz für 2 oder 3 Golfer",
+            "Mein fester Tagessatz für 2 oder 3 Golfer",
             "Greenfee und Mittagessen sind separat",
-            "Buggy und Leihschläger als optionale Zusatzleistungen buchbar, Andy hilft gern bei der Organisation"
+            "Buggy und Leihschläger als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation"
           ]
         },
         {
@@ -646,7 +646,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Solo",
           "name": "Une journée avec moi",
-          "note": "Le tarif journée d'Andy. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, Andy peut aider à organiser.",
+          "note": "Mon tarif journée. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, je peux vous aider à organiser.",
           "features": [
             "Parcours choisi selon votre jeu et votre index",
             "Heure de départ sécurisée et entièrement gérée",
@@ -671,9 +671,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "button": "Demander →",
           "href": "/fr/contact",
           "noteLines": [
-            "Le tarif fixe d'Andy pour 2 ou 3 golfeurs",
+            "Mon tarif fixe pour 2 ou 3 golfeurs",
             "Le green fee et le déjeuner sont en sus",
-            "Buggy et clubs de location disponibles en option, Andy peut aider à organiser"
+            "Buggy et clubs de location disponibles en option, je peux vous aider à organiser"
           ]
         },
         {
@@ -903,7 +903,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Solo",
           "name": "Een dag met mij",
-          "note": "Andy's dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, Andy helpt graag bij de organisatie.",
+          "note": "Mijn dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie.",
           "features": [
             "Baan gekozen op basis van uw spel en handicap",
             "Starttijd vastgelegd en volledig geregeld",
@@ -928,9 +928,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "button": "Aanvragen →",
           "href": "/nl/contact",
           "noteLines": [
-            "Andy's vaste dagtarief voor 2 of 3 golfers",
+            "Mijn vaste dagtarief voor 2 of 3 golfers",
             "Greenfees en lunch zijn apart",
-            "Buggy en huurclubs beschikbaar als optionele extra's, Andy helpt graag bij de organisatie"
+            "Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie"
           ]
         },
         {
@@ -1161,7 +1161,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Solo",
           "name": "En dag med mig",
-          "note": "Andys dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, Andy hjälper gärna till att ordna.",
+          "note": "Mitt dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna.",
           "features": [
             "Bana vald efter ditt spel och handicap",
             "Starttid säkrad och helt ordnad",
@@ -1186,9 +1186,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "button": "Förfrågan →",
           "href": "/sv/contact",
           "noteLines": [
-            "Andys fasta dagspris för 2 eller 3 golfare",
+            "Mitt fasta dagspris för 2 eller 3 golfare",
             "Green fee och lunch är separat",
-            "Golfbil och hyrklubbor tillgängliga som tillval, Andy hjälper gärna till att ordna"
+            "Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna"
           ]
         },
         {
@@ -1419,7 +1419,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "单人",
           "name": "与我共度一天",
-          "note": "Andy 的单人日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，Andy 可以帮助安排。",
+          "note": "我的单人日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我可以帮忙安排。",
           "features": [
             "按照您的球技与差点匹配球场",
             "开球时间已预订并安排妥当",
@@ -1444,9 +1444,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "button": "立即咨询 →",
           "href": "/zh/contact",
           "noteLines": [
-            "Andy 针对 2 或 3 位球手的固定日费",
+            "我针对 2 或 3 位球手的固定日费",
             "果岭费和午餐另计",
-            "球车和租借球具可作为可选附加项，Andy 可以帮助安排"
+            "球车和租借球具可作为可选附加项，我可以帮忙安排"
           ]
         },
         {

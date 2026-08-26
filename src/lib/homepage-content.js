@@ -301,7 +301,7 @@ export const HOME_CONTENT = {
           "On-course coaching during the round",
           "Post-round debrief"
         ],
-        "note": "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+        "note": "My day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
         "cta": "Enquire",
         "href": "/contact",
         "price": "€795"
@@ -318,7 +318,7 @@ export const HOME_CONTENT = {
           "18 holes with me",
           "On-course coaching during the round"
         ],
-        "note": "Andy's fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+        "note": "My fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
         "cta": "Enquire",
         "href": "/contact",
         "price": "€950 total"

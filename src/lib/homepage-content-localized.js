@@ -210,7 +210,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Coaching en el campo durante la vuelta",
             "Resumen tras la vuelta"
           ],
-          "note": "La tarifa del día de Andy. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, Andy puede ayudar a organizar.",
+          "note": "Mi tarifa del día. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
           "cta": "Ver precios",
           "href": "/es/contact"
         },
@@ -534,7 +534,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "On-course-Coaching während der Runde",
             "Nachbesprechung nach der Runde"
           ],
-          "note": "Andys Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, Andy hilft gern bei der Organisation.",
+          "note": "Mein Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
           "cta": "Preise ansehen",
           "href": "/de/contact"
         },
@@ -858,7 +858,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Coaching sur le parcours pendant la partie",
             "Bilan après la partie"
           ],
-          "note": "Le tarif journée d'Andy. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, Andy peut aider à organiser.",
+          "note": "Mon tarif journée. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, je peux vous aider à organiser.",
           "cta": "Voir les tarifs",
           "href": "/fr/contact"
         },
@@ -1181,7 +1181,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Coaching op de baan tijdens de ronde",
             "Nabespreking na de ronde"
           ],
-          "note": "Andy's dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, Andy helpt graag bij de organisatie.",
+          "note": "Mijn dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie.",
           "cta": "Bekijk prijzen",
           "href": "/nl/contact"
         },
@@ -1504,7 +1504,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Coaching på banan under rundan",
             "Genomgång efter rundan"
           ],
-          "note": "Andys dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, Andy hjälper gärna till att ordna.",
+          "note": "Mitt dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna.",
           "cta": "Se priser",
           "href": "/sv/contact"
         },

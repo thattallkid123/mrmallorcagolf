@@ -157,7 +157,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "eyebrow": "A Day With Andy",
         "name": "Solo",
         "price": "€795",
-        "note": "Andy's day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, Andy can help arrange.",
+        "note": "My day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
         "features": [
           "Course matched to your game and handicap",
           "Tee time secured and fully handled",
@@ -175,9 +175,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "name": "Group",
         "price": "€950 total",
         "noteLines": [
-          "Andy's fixed day rate for 2 or 3 golfers.",
+          "My fixed day rate for 2 or 3 golfers.",
           "Golf course green fee and lunch are separate.",
-          "Buggy and rental clubs available as optional add-ons, Andy can help arrange."
+          "Buggy and rental clubs available as optional add-ons, happy to help arrange."
         ],
         "features": [
           "Up to 3 players, one fixed day rate for Andy",
