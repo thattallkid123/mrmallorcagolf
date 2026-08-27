@@ -18,6 +18,7 @@
     "check:fonts": "node --no-warnings scripts/check-font-usage.mjs",
     "check:font-consistency": "node --no-warnings scripts/check-font-consistency.mjs",
     "check:skills-mirror": "node --no-warnings scripts/check-skills-mirror.mjs",
+    "check:privacy-surface": "node --no-warnings scripts/check-privacy-surface.mjs",
     "check:offers": "node --no-warnings scripts/check-offers-consistency.js",
     "check:service-pricing": "node --no-warnings scripts/check-service-pricing-surfaces.mjs",
     "check:content": "node --no-warnings scripts/run-content-checks.mjs",
