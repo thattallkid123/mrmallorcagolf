@@ -3496,7 +3496,7 @@ select.form-control { cursor: pointer; }
   .guide-cta__actions { min-width: 0; width: 100%; flex-direction: column; }
   .guide-cta__actions .btn { width: 100%; text-align: center; justify-content: center; }
   .pwap-hero__inner { padding: 0 20px 68px; }
-  .packages { padding: 56px 20px 44px; }
+  .packages { padding: 56px 20px; }
   .packages__header { margin-bottom: 28px; }
   .packages__header p { font-size: 0.94rem; line-height: 1.72; }
   .packages__grid { gap: 14px; }
