@@ -325,7 +325,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
-            <div className="pwap-day-strip" aria-label={copy.stripLabel} ref={stripViewportRef}>
+            <div className="pwap-day-strip" aria-label={copy.stripLabel} ref={stripViewportRef} tabIndex={0}>
               <div className="pwap-day-strip__track" ref={stripTrackRef}>
                 {dayPhotosLoop.map((photo, index) => (
                   <figure
@@ -410,7 +410,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <h2 className="serif-display" style={{ color: '#fff' }}>{content.testimonials.title}</h2>
             </div>
             <div className="testimonials__grid-wrap">
-              <div className="testimonials__grid" ref={testimonialsGridRef}>
+              <div className="testimonials__grid" ref={testimonialsGridRef} aria-label={content.testimonials.title} tabIndex={0}>
                 {content.testimonials.items.map((item) => (
                   <div key={item.author} className="testimonial">
                     <p>{item.text}</p>

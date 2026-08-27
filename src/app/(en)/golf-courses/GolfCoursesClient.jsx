@@ -632,7 +632,7 @@ function CourseCard({ c, lang = 'en' }) {
             {displayName}
           </h3>
           <p className="course__location">{locationText}</p>
-          <div className="course__rating-row" aria-label={`Rated ${ratingValue} out of 5`}>
+          <div className="course__rating-row" role="img" aria-label={`Rated ${ratingValue} out of 5`}>
             <span className="course__review-stars">{renderRatingStars(ratingValue)}</span>
           </div>
           <div className="course__stats">

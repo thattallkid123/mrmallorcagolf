@@ -81,6 +81,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           className="form-control--hidden-honeypot"
           tabIndex={-1}
           autoComplete="off"
+          aria-hidden="true"
           value={form.website}
           onChange={handleChange}
         />

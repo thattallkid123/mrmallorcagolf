@@ -47,6 +47,7 @@ export default function WinnersProofStrip({ images }) {
       ref={viewportRef}
       className="winners-proof"
       aria-label="Competition winners coached by Andy over the years"
+      tabIndex={0}
     >
       <div ref={trackRef} className="winners-proof__track">
         {allImages.map((image, index) => (

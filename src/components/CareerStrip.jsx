@@ -59,7 +59,7 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
         <p className="career-strip__label">{label}</p>
         <h2 className="serif-display career-strip__title">{heading}</h2>
       </div>
-      <div ref={viewportRef} className="career-strip__viewport" aria-label="Career venues carousel">
+      <div ref={viewportRef} className="career-strip__viewport" aria-label="Career venues carousel" tabIndex={0}>
         <div ref={trackRef} className="career-strip__track">
           {allVenues.map((v, i) => (
             <div key={i} className={`career-strip__card${v.variant ? ` career-strip__card--${v.variant}` : ''}`}>
