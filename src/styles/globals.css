@@ -2522,17 +2522,21 @@ body {
 .booking-policy__link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 .booking-policy__toggle { all: unset; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; width: 100%; padding: 0; background: none; border: none; font-family: inherit; }
 .booking-policy__toggle:hover { opacity: 0.8; }
+/* The toggle is an `all: unset` wrapper with padding: 0 around bare text, so
+   ANY ring drawn around the button itself reads as a cramped input box no
+   matter how the offset is tuned (tried flush box-shadow and outline+offset
+   2026-08-27; both looked wrong). Instead light up the card, which already
+   has its own faint gold border and padding - its border simply goes solid
+   gold. Nothing boxes the text, and the focused state looks deliberate.
+   The @supports guard keeps a real indicator on browsers without :has(). */
 .booking-policy__toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
-/* booking-policy__toggle deliberately keeps outline+offset rather than the
-   flush box-shadow used below (reverted 2026-08-27, same day it was
-   "unified" away - a flush ring looked cramped here: the toggle has
-   padding: 0, so box-shadow's 0-offset ring rammed straight into the text
-   and half-overlapped the + icon. outline-offset's breathing room is what
-   this bare-text control actually needs, and this card's plain near-white
-   background carries none of the amber-fringe risk that outline-offset
-   caused on career-strip's warm-dark gradient - that risk is specific to
-   dark/tinted backgrounds, not a reason to ban outline-offset everywhere.
-   Match technique to background + content, don't force one rule sitewide. */
+@supports selector(:has(*)) {
+  .booking-policy__toggle:focus-visible { outline: none; }
+  .booking-policy:has(.booking-policy__toggle:focus-visible) {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px var(--gold), var(--shadow-soft);
+  }
+}
 .career-strip__viewport:focus-visible,
 .winners-proof:focus-visible,
 .pwap-day-strip:focus-visible,
@@ -4456,7 +4460,13 @@ select.form-control { cursor: pointer; }
 .pwap-collage--scroll::-webkit-scrollbar { display: none; }
 .pwap-collage--scroll .pwap-collage__item { position: relative; flex-shrink: 0; width: 260px; height: 200px; overflow: hidden; border-radius: 0; }
 
-.career-strip { background: linear-gradient(180deg, #171613 0%, #1d1a17 100%); padding: clamp(48px,6vw,72px) 0; overflow: hidden; }
+/* 2px horizontal padding exists so the viewport's keyboard focus ring has room
+   to draw. Without it the strip sits flush against this section's own
+   overflow: hidden (which creates the left/right photo fades), and the ring's
+   left and right edges get clipped away - leaving a gold line above and below
+   the photos only, which reads as a rendering bug rather than a focus state.
+   2px is imperceptible on a full-bleed strip; do not "tidy" it back to 0. */
+.career-strip { background: linear-gradient(180deg, #171613 0%, #1d1a17 100%); padding: clamp(48px,6vw,72px) 2px; overflow: hidden; }
 .career-strip__header { max-width: 1200px; margin: 0 auto 2.5rem; padding: 0 clamp(20px,5vw,60px); }
 .career-strip__label { font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.58); margin-bottom: .75rem; }
 .career-strip__title { color: #fff; font-size: clamp(1.8rem,3vw,2.6rem); }
