@@ -32,6 +32,7 @@ const CHECKS = [
   { name: 'check:font-consistency', script: 'check-font-consistency.mjs' },
   { name: 'check:skills-mirror', script: 'check-skills-mirror.mjs' },
   { name: 'check:privacy-surface', script: 'check-privacy-surface.mjs' },
+  { name: 'check:testimonial-integrity', script: 'check-testimonial-integrity.mjs' },
   { name: 'check:social-proof', script: 'sync-social-proof.mjs', args: ['--check'] },
   { name: 'check:offers', script: 'check-offers-consistency.js' },
   { name: 'check:service-pricing', script: 'check-service-pricing-surfaces.mjs' },
