@@ -2533,7 +2533,7 @@ body {
 .career-strip__viewport:focus-visible,
 .winners-proof:focus-visible,
 .pwap-day-strip:focus-visible,
-.testimonials__grid:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.testimonials__grid:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--gold); }
 .booking-policy__toggle .booking-policy__title { flex: 1 1 auto; }
 .booking-policy__icon { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin-top: -2px; border: 1px solid rgba(184,151,60,0.4); border-radius: 999px; font-size: 1.15rem; color: var(--gold); font-weight: 300; line-height: 1; }
 .sticky-mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px; padding-bottom: calc(12px + env(safe-area-inset-bottom)); background: var(--deep); box-shadow: 0 -2px 12px rgba(0,0,0,0.15); z-index: 100; }
