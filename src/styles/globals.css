@@ -2315,6 +2315,14 @@ body {
 .home-credential p { color: var(--taupe); font-size: 0.9rem; line-height: 1.78; }
 
 .testimonials { background: var(--deep); padding: 84px 24px; }
+/* Collapse the doubled gap where two sections with visually identical
+   backgrounds stack. Each section pads independently, so the boundary costs
+   two full section gaps - and because these two backgrounds differ by only a
+   few RGB points the seam is invisible, so it reads as one block with
+   lopsided spacing rather than as two sections. Scoped with the adjacent
+   sibling so .testimonials keeps its normal padding everywhere else (it is
+   also used on the homepage, where the section above it looks different). */
+.career-strip + .testimonials { padding-top: clamp(20px, 3vw, 36px); }
 .testimonials__header { text-align: center; margin-bottom: 56px; }
 .testimonials__grid { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; max-width: 1100px; margin: 0 auto; }
 .testimonials__grid::-webkit-scrollbar { display: none; }
@@ -2541,6 +2549,12 @@ body {
 .winners-proof:focus-visible,
 .pwap-day-strip:focus-visible,
 .testimonials__grid:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--gold); }
+/* career-strip is the one strip whose photos carry permanent 1px gold borders,
+   so the shared 1px gold ring above would be invisible against them - the
+   focused state would look identical to the resting state. It gets the
+   brighter --gold-light at 2px instead: still the same technique and palette,
+   but unmistakably a state change rather than more of the same hairline. */
+.career-strip__viewport:focus-visible { box-shadow: 0 0 0 2px var(--gold-light); }
 .booking-policy__toggle .booking-policy__title { flex: 1 1 auto; }
 .booking-policy__icon { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin-top: -2px; border: 1px solid rgba(184,151,60,0.4); border-radius: 999px; font-size: 1.15rem; color: var(--gold); font-weight: 300; line-height: 1; }
 .sticky-mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px; padding-bottom: calc(12px + env(safe-area-inset-bottom)); background: var(--deep); box-shadow: 0 -2px 12px rgba(0,0,0,0.15); z-index: 100; }
@@ -2597,6 +2611,11 @@ body {
 .course-choice p { font-size: 0.9rem; font-weight: 300; color: rgba(255,255,255,0.72); line-height: 1.8; }
 
 .pwap-who { background: linear-gradient(180deg, #f0ebe2 0%, #f7f3eb 100%); padding: 92px 40px; }
+/* Same invisible-boundary case as .career-strip + .testimonials above:
+   pwap-feature-photo ends on #f4efe5 and pwap-who opens on #f0ebe2, a
+   difference of ~4 RGB points, so their two stacked section gaps read as one
+   oversized one. Adjacent-sibling scoped so .pwap-who is untouched elsewhere. */
+.pwap-feature-photo + .pwap-who { padding-top: clamp(16px, 2.5vw, 32px); }
 .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 0; }
 .who-grid .who-card:last-child:nth-child(odd) { grid-column: auto; }
 .who-card { background: rgba(255,255,255,0.88); padding: 32px 28px; border: 1px solid rgba(26,25,22,0.06); box-shadow: var(--shadow-soft); }
@@ -4465,16 +4484,31 @@ select.form-control { cursor: pointer; }
    overflow: hidden (which creates the left/right photo fades), and the ring's
    left and right edges get clipped away - leaving a gold line above and below
    the photos only, which reads as a rendering bug rather than a focus state.
-   2px is imperceptible on a full-bleed strip; do not "tidy" it back to 0. */
-.career-strip { background: linear-gradient(180deg, #171613 0%, #1d1a17 100%); padding: clamp(48px,6vw,72px) 2px; overflow: hidden; }
-.career-strip__header { max-width: 1200px; margin: 0 auto 2.5rem; padding: 0 clamp(20px,5vw,60px); }
+   4px is imperceptible on a full-bleed strip; do not "tidy" it back to 0.
+   4 specifically (not 2): it must be a multiple of 4 so the strip's left edge
+   lands on a whole device pixel at DPR 1.25 - at 2px the edge sat on a half
+   pixel, so the ring's left/right sides rounded up to 2 device px while its
+   top rounded down to 1, which read as "thicker at the sides than the top". */
+.career-strip { background: linear-gradient(180deg, #171613 0%, #1d1a17 100%); padding: clamp(48px,6vw,72px) 4px; overflow: hidden; }
+.career-strip__header { max-width: 1200px; margin: 0 auto 3.5rem; padding: 0 clamp(20px,5vw,60px); }
 .career-strip__label { font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.58); margin-bottom: .75rem; }
 .career-strip__title { color: #fff; font-size: clamp(1.8rem,3vw,2.6rem); }
 .career-strip__viewport { position: relative; overflow-x: auto; overflow-y: hidden; -ms-overflow-style: none; scrollbar-width: none; overscroll-behavior-x: contain; touch-action: pan-x; cursor: grab; }
 .career-strip__viewport:active { cursor: grabbing; }
 .career-strip__viewport::-webkit-scrollbar { display: none; }
-.career-strip__track { display: flex; gap: 1px; width: max-content; background: var(--gold); }
-.career-strip__card { position: relative; flex-shrink: 0; width: 260px; height: 200px; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: var(--shadow-soft); }
+/* The gold seam is a border on the card, NOT a gap with the track's background
+   showing through. At fractional device-pixel ratios (Windows 125% scaling =
+   DPR 1.25, where 1 CSS px = 1.25 device px) the browser rounds each hairline
+   to a whole device pixel, and which way it rounds depends on where the line
+   sits on the physical grid. With the old `gap: 1px`, card pitch was 261px,
+   which never divides evenly into the device grid - the error accumulated and
+   every 4th seam rendered 2 device px while the rest rendered 1 (measured
+   2026-08-27). As a border with gap: 0, pitch is the card width itself: 260
+   and 360, both multiples of 4, so every card edge lands on a whole device
+   pixel and all seams render identically. Keep card widths multiples of 4. */
+.career-strip__track { display: flex; gap: 0; width: max-content; }
+.career-strip__card { position: relative; flex-shrink: 0; width: 260px; height: 200px; overflow: hidden; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); box-shadow: var(--shadow-soft); }
+.career-strip__card + .career-strip__card { border-left: 1px solid var(--gold); }
 .career-strip__card-img { position: absolute; inset: 0; }
 .career-strip__card-scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,9,7,0.88) 0%, rgba(10,9,7,0.3) 60%, transparent 100%); }
 .career-strip__card-text { position: relative; z-index: 1; position: absolute; bottom: 0; left: 0; right: 0; padding: 16px 20px; }
