@@ -2522,14 +2522,18 @@ body {
 .booking-policy__link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 .booking-policy__toggle { all: unset; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; width: 100%; padding: 0; background: none; border: none; font-family: inherit; }
 .booking-policy__toggle:hover { opacity: 0.8; }
-.booking-policy__toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
-/* Explicit focus-visible for the scrollable regions made keyboard-focusable
-   2026-08-27 (tabIndex={0} added so a keyboard user can arrow-scroll them).
-   Without this they fall back to the browser's default outline, which
-   measured at only 0.8px wide in this build - too thin to trust as visible
-   against either the dark testimonials background or the light career/
-   winners strips. Same gold treatment as the one existing focus-visible
-   rule above, for consistency. */
+.booking-policy__toggle:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--gold); border-radius: 2px; }
+/* One shared focus-visible treatment for every custom gold focus ring on the
+   site: outline: none + box-shadow: 0 0 0 1px var(--gold). Kept identical
+   deliberately (2026-08-27) - an earlier version of the strip rules below
+   used outline + outline-offset instead, which rendered visibly different
+   from this one: the offset gap anti-aliases against whatever's behind it
+   (amber/red fringe on career-strip's warm-brown background) and reads
+   thinner than a flush box-shadow. Never reintroduce outline-offset for a
+   gold focus ring; add new elements to this same box-shadow pattern instead.
+   Explicit rule needed at all because the browser default outline measured
+   only 0.8px wide in this build - too thin to trust against either the dark
+   testimonials background or the light career/winners strips. */
 .career-strip__viewport:focus-visible,
 .winners-proof:focus-visible,
 .pwap-day-strip:focus-visible,
