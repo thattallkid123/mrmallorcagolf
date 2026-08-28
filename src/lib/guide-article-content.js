@@ -674,7 +674,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Capdepera Golf', 'Arta', '72', '\u20AC85-135', '7/10', '3.5', 'Strong back nine and standout mountain hole'],
           ['Canyamel Golf', 'Capdepera', '73', '\u20AC85-145', '6/10', '4.0', 'Most photographed, east coast'],
           ['Golf Pollensa', 'Pollensa', '35 (9H)', '\u20AC65-75', '4/10', '3.5', 'Easy warm-up, Tramuntana views'],
-          ['Palma Pitch & Putt', 'Central Palma', '27 (9H)', '\u20AC20-30', '2/10', '3.0', 'Beginners, approach practice'],
+          ['Palma Pitch & Putt', 'Central Palma', '27 (9H)', '\u20AC27-30', '2/10', '3.0', 'Beginners, approach practice'],
           ['Reserva Rotana', 'Manacor', '36 (9H)', 'Hotel guests only', '6/10', '3.5', 'Stay-and-play, private estate'],
         ],
       },
