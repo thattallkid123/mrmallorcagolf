@@ -107,7 +107,7 @@ const COURSES = [
   {
     name: 'Golf Son Quint',
     location: 'Son Vida, Palma',
-    fees: 'Peak €172 / Low €70 (dynamic)',
+    fees: 'Peak €172 / Low €76 (dynamic)',
     href: '/golf-courses',
     bestFor: ['beginner', 'walkability', 'value', 'one'],
     take: 'One of the more approachable full courses near Palma. A sensible first round for newer golfers or mixed-ability groups.',
