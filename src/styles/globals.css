@@ -4561,18 +4561,6 @@ select.form-control { cursor: pointer; }
 .career-strip__card { position: relative; flex-shrink: 0; width: 260px; height: 200px; overflow: hidden; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); box-shadow: var(--shadow-soft); }
 .career-strip__card + .career-strip__card { border-left: 1px solid var(--gold); }
 .career-strip__card-img { position: absolute; inset: 0; }
-/* Andy noticed a card look briefly hazy/washed-out mid-scroll, then settle
-   to normal a moment later, on this and the other two continuously
-   auto-scrolling strips (winners-proof, pwap-day-strip - all three mutate
-   scrollLeft every animation frame). Confirmed the source image itself and
-   its raw decoded pixel data are fine (sampled via canvas), so this is a
-   rendering-quality dip WebKit/mobile browsers can apply to continuously
-   scrolling content to hold frame rate, not a real asset problem. Promoting
-   the image to its own compositor layer is the standard mitigation so it
-   isn't dynamically re-rasterized while the strip is moving (2026-08-28). */
-.career-strip__card-img img,
-.winners-proof__img,
-.pwap-day-strip__card img { will-change: transform; }
 .career-strip__card-scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,9,7,0.88) 0%, rgba(10,9,7,0.3) 60%, transparent 100%); }
 .career-strip__card-text { position: relative; z-index: 1; position: absolute; bottom: 0; left: 0; right: 0; padding: 16px 20px; }
 .career-strip__card-name { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 500; color: #fff; margin-bottom: 3px; }
