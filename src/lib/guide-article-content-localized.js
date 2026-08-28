@@ -258,7 +258,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Palma Pitch & Putt",
               "Central Palma",
               "27 (9H)",
-              "€27-30",
+              "€20-30",
               "2/10",
               "3.0",
               "Principiantes y practicas de approach"
@@ -663,7 +663,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Palma Pitch & Putt",
               "Central Palma",
               "27 (9H)",
-              "€27-30",
+              "€20-30",
               "2/10",
               "3.0",
               "Anfänger, kurzes Spiel trainieren"
@@ -1068,7 +1068,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Palma Pitch & Putt",
               "Central Palma",
               "27 (9H)",
-              "€27-30",
+              "€20-30",
               "2/10",
               "3.0",
               "Debutants et travail d approches"
@@ -1473,7 +1473,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Palma Pitch & Putt",
               "Central Palma",
               "27 (9H)",
-              "€27-30",
+              "€20-30",
               "2/10",
               "3.0",
               "Beginners en approach-oefening"
@@ -1878,7 +1878,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Palma Pitch & Putt",
               "Central Palma",
               "27 (9H)",
-              "€27-30",
+              "€20-30",
               "2/10",
               "3.0",
               "Nybörjare och inspelstraning"
@@ -2283,7 +2283,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Palma Pitch & Putt",
               "Central Palma",
               "27 (9H)",
-              "€27-30",
+              "€20-30",
               "2/10",
               "3.0",
               "初学者和切推练习"

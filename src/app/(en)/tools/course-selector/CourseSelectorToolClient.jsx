@@ -118,7 +118,7 @@ const COURSES = [
     id:'t-golf-palma', name:'T Golf Palma (Puntiró)',
     area:'Palma', areaLabel:'Palma',
     diff10:7, scenery:4, prestige:4, value:3, walkability:3,
-    greenFee:'Peak €150 / Low €80 (dynamic)',
+    greenFee:'Peak €150 / Low €105 (dynamic)',
     buggyNote:'Walkable; buggies available',
     bestFor:'Natural-terrain golf with no buildings in sight',
     why:'The only Jack Nicklaus-designed course in Mallorca, opened 2006 and completely renovated in 2022. Nicklaus followed the existing land without modification, so there are no artificially flattened fairways. Native pines, wild olives and carob trees form the rough, and no buildings are visible from any hole. Pricing is dynamic, so the rate you see depends on when you book.',
