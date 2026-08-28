@@ -20,13 +20,13 @@ export const COURSE_PRICING_BY_NAME = {
   "Golf Son Quint": {"low":70,"peak":172,"dynamic":true,"licenceFee":3},
   "Golf Son Termes": {"low":90,"peak":110,"dynamic":false,"licenceFee":0},
   "Golf Son Vida": {"low":85,"peak":190,"dynamic":true,"licenceFee":3},
-  "Palma Pitch & Putt": {"low":20,"peak":30,"dynamic":false,"licenceFee":2,"holes":9,"feeMode":"pitch_putt"},
+  "Palma Pitch & Putt": {"low":27,"peak":30,"dynamic":false,"licenceFee":2,"holes":9,"feeMode":"pitch_putt"},
   "Pula Golf": {"low":69,"peak":145,"dynamic":true,"licenceFee":0},
   "Real Golf de Bendinat": {"low":74,"peak":123,"dynamic":false,"licenceFee":0},
   "Reserva Rotana": {"low":85,"peak":130,"dynamic":false,"licenceFee":0,"holes":9,"feeMode":"hotel_only"},
   "Son Muntaner": {"low":110,"peak":260,"dynamic":true,"licenceFee":3},
   "T Golf Calvià (Poniente)": {"low":80,"peak":210,"dynamic":true,"licenceFee":3},
-  "T Golf Palma (Puntiró)": {"low":105,"peak":150,"dynamic":true,"licenceFee":3},
+  "T Golf Palma (Puntiró)": {"low":80,"peak":150,"dynamic":true,"licenceFee":3},
   "Vall d'Or Golf": {"low":99,"peak":132,"dynamic":false,"licenceFee":0},
 }
 
