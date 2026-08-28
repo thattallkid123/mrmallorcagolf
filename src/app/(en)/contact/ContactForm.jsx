@@ -204,7 +204,7 @@ export default function ContactForm({ locale = 'en' }) {
               href={locale === 'zh'
                 ? 'https://map.baidu.com/?q=Mallorca,Spain'
                 : 'https://maps.google.com/?q=Mallorca,Spain'}
-              className="contact-card"
+              className="contact-card contact-card--location"
               target="_blank"
               rel="noopener noreferrer"
             >
