@@ -182,6 +182,9 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
     if (prefersReducedMotion) return
 
     let pausedUntil = 0
+    const dprStepCache = { dpr: 0, step: 1 }
+    let target = 0
+    let lastCommitted = 0
     let raf
     let halfWidth = 0
 
@@ -201,17 +204,46 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
 
     const tick = () => {
       if (performance.now() > pausedUntil) {
-        // Snap to whole DEVICE pixels, not whole CSS pixels. Math.round() alone
-        // lands on an integer CSS pixel, which at fractional display scaling
-        // (Windows 125% => dpr 1.25) is a fractional device pixel, so the
-        // compositor resamples this scrolling layer every frame and card edges
-        // land mid-pixel - seen as a soft image and a hard seam inside a card.
-        // Reproduced at dpr 1.25 and never at dpr 1 or 2, which is exactly the
-        // signature of CSS-pixel rounding. Read dpr per frame so browser zoom
-        // is handled too. (2026-08-28)
+        // scrollLeft is a whole-CSS-pixel-only API - Chromium rounds any
+        // fractional value on write (verified directly: assigning 308.8 reads
+        // back as 309). At fractional display scaling (Windows 125% => dpr
+        // 1.25) a whole CSS pixel is a whole DEVICE pixel only when the CSS
+        // value is a multiple of 4 (since 4*1.25=5) - the other 3 out of 4
+        // values land on a fractional device pixel, which is what produced
+        // the dark seam Andy could reproduce at will by changing zoom
+        // (confirmed: persisted even while the strip was paused/static,
+        // ruling out an animation-timing cause and pointing at the committed
+        // position itself). A first attempt at this fix (multiply by dpr,
+        // divide back down before writing) did nothing, because Chromium
+        // discards that fractional value on write anyway. This version
+        // tracks the intended continuous position in `target` (never read
+        // back from the rounded scrollLeft, which would lose all sub-step
+        // progress every frame - an earlier version of this fix got stuck
+        // permanently at 0 for exactly that reason) and only WRITES
+        // scrollLeft when target crosses the next safe multiple. Resyncs
+        // target from the live scrollLeft whenever it no longer matches what
+        // was last committed, so a manual drag-scroll can't desync it.
+        // normalizeLoopPosition()'s own +-halfWidth wraparound can land on a
+        // non-safe value for a single frame at the loop boundary - accepted
+        // as a rare, one-off imperfection rather than engineering around it,
+        // since the per-frame case (most of the time) is what mattered.
+        // (2026-08-28)
+        if (viewport.scrollLeft !== lastCommitted) target = viewport.scrollLeft
+        target += 1
         const dpr = window.devicePixelRatio || 1
-        viewport.scrollLeft = Math.round((viewport.scrollLeft + 1) * dpr) / dpr
+        if (dpr !== dprStepCache.dpr) {
+          dprStepCache.dpr = dpr
+          dprStepCache.step = 1
+          for (let n = 1; n <= 200; n++) {
+            if (Math.abs(n * dpr - Math.round(n * dpr)) < 0.02) { dprStepCache.step = n; break }
+          }
+        }
+        const step = dprStepCache.step
+        const committed = Math.round(target / step) * step
+        viewport.scrollLeft = committed
         normalizeLoopPosition()
+        lastCommitted = viewport.scrollLeft
+        target = lastCommitted
       }
       raf = requestAnimationFrame(tick)
     }
