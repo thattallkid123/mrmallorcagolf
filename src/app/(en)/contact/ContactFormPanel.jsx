@@ -8,15 +8,15 @@ export default function ContactFormPanel({ locale = 'en', content }) {
   const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission(locale)
   const serviceTypes = content.form.serviceTypes || [
     ['pwap', 'Play With A Pro'],
-    ['trip-planning', 'Plan my golf trip'],
+    ['trip-planning', 'Plan My Golf Trip'],
     ['both', 'Both'],
-    ['not-sure', 'Not sure yet'],
+    ['not-sure', 'Not Sure Yet'],
   ]
   const pwapFormats = content.form.pwapFormats || [
     ['pwap-solo', 'Solo', '€795'],
     ['pwap-group', 'Group', '€950 total'],
     ['signature-day', 'Signature Day', 'On request'],
-    ['pwap-not-sure', 'Not sure yet', ''],
+    ['pwap-not-sure', 'Not Sure Yet', ''],
   ]
   const showPwapFormats = form.serviceType === 'pwap' || form.serviceType === 'both'
 

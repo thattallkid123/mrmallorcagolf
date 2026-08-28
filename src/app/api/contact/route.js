@@ -16,9 +16,9 @@ import { getContactContent } from '../../../lib/contact-content.js'
 
 const SERVICE_TYPE_LABELS = {
   pwap: 'Play With A Pro',
-  'trip-planning': 'Plan my golf trip',
+  'trip-planning': 'Plan My Golf Trip',
   both: 'Both',
-  'not-sure': 'Not sure yet',
+  'not-sure': 'Not Sure Yet',
 }
 
 const EXPERIENCE_LABELS = {

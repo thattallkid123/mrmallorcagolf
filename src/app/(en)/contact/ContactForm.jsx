@@ -127,7 +127,12 @@ export default function ContactForm({ locale = 'en' }) {
               href="mailto:andy@mrmallorcagolf.com"
               className="contact-card"
             >
-              <span className="contact-card__icon">&#9993;</span>
+              <span className="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="M3.5 7l8.5 6 8.5-6" />
+                </svg>
+              </span>
               <div>
                 <p className="contact-card__label">{content.cards.emailLabel}</p>
                 <p className="contact-card__value">andy@mrmallorcagolf.com</p>
@@ -184,7 +189,12 @@ export default function ContactForm({ locale = 'en' }) {
               </div>
             ) : null}
             <div className="contact-card contact-card--info">
-              <span className="contact-card__icon">&#9201;</span>
+              <span className="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7.5V12l3.2 1.9" />
+                </svg>
+              </span>
               <div>
                 <p className="contact-card__label">{content.cards.responseLabel}</p>
                 <p className="contact-card__value">{content.cards.responseValue}</p>
@@ -198,7 +208,12 @@ export default function ContactForm({ locale = 'en' }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="contact-card__icon">&#128205;</span>
+              <span className="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
+                  <path d="M12 21s7-7.6 7-12.5A7 7 0 0 0 5 8.5C5 13.4 12 21 12 21z" />
+                  <circle cx="12" cy="8.5" r="2.5" />
+                </svg>
+              </span>
               <div>
                 <p className="contact-card__label">{content.cards.basedLabel}</p>
                 <p className="contact-card__value">{content.cards.basedValue}</p>
