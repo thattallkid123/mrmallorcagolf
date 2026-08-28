@@ -156,6 +156,10 @@ Next newsletter step: do not build a heavy programme yet — the system is mostl
 
 Edit the pricing master Google Sheet, then from mmg-tools run `.\mmg.ps1 pricing-publish` (or double-click `UPDATE MMG PRICING.cmd` on the Desktop) — the one guarded pass that publishes both the MMG tool outputs and the public website price pills/tool fallbacks in one step. (The older two-step `.\mmg.ps1 pricing` then `.\mmg.ps1 site` still works but is superseded — `pricing-publish` is the current canonical route and also runs automatically every Monday 7am.) The generated `MMG_COURSE_PRICING_MASTER_*` files in Drive `Reference/` are script-output only — never edit them.
 
+**Finding what pricing data is missing.** Two read-only reports in mmg-tools, both also on the Desktop as `.cmd` files and in the control panel's "Safe checks":
+- `.\mmg.ps1 pricing-gaps` — every course where a pricing field is missing or set to a placeholder zero, cross-referenced against Hermes' review queue. A `0` in this data has repeatedly meant "unconfirmed", not "free" (found 2026-08-27 in `toDiscount` and `buggyMax`), so treat zeros as suspect until this says otherwise.
+- `.\mmg.ps1 live-extras` — fetches the ~10 club sites with a static rate card and compares their live buggy/club/trolley prices against MMG data. Excludes the Golfmanager courses (Arabella x4, T-Golf x2, Son Antem): their prices are JavaScript-rendered, so those stay a manual check.
+
 For any price change use the `/pricing-change` skill (full surface sweep). Reference maps: `docs/content-architecture.md`, `docs/pricing-change-checklist.md`, `docs/pricing-surfaces-inventory.md` (its "Course pricing and golf-cost reference layers" section — the rest of that file is MMG *service* pricing, a different domain; the full course-pricing architecture is `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1). Santa Ponsa 2 and 3 can stay in private reference notes even when not bookable.
 
 **Auto-synced when you run `.\mmg.ps1 pricing-publish` (or the older `.\mmg.ps1 site` step):**
