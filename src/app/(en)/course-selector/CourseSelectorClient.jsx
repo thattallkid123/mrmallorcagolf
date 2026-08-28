@@ -83,7 +83,7 @@ const COURSES = [
   {
     name: 'Son Muntaner',
     location: 'Son Vida, Palma',
-    fees: 'Peak €260 / Low €110 (dynamic)',
+    fees: 'Peak €260 / Low €99 (dynamic)',
     href: '/guides/son-muntaner-review',
     bestFor: ['intermediate', 'advanced', 'premium', 'scenery', 'weekend'],
     take: 'Top-end Palma golf with excellent conditioning and a strong setting. Good when you want a premium round close to the city.',

@@ -24,7 +24,7 @@ export const COURSE_PRICING_BY_NAME = {
   "Pula Golf": {"low":69,"peak":145,"dynamic":true,"licenceFee":0},
   "Real Golf de Bendinat": {"low":74,"peak":123,"dynamic":false,"licenceFee":0},
   "Reserva Rotana": {"low":85,"peak":130,"dynamic":false,"licenceFee":0,"holes":9,"feeMode":"hotel_only"},
-  "Son Muntaner": {"low":110,"peak":260,"dynamic":true,"licenceFee":3},
+  "Son Muntaner": {"low":99,"peak":260,"dynamic":true,"licenceFee":3},
   "T Golf Calvià (Poniente)": {"low":80,"peak":210,"dynamic":true,"licenceFee":3},
   "T Golf Palma (Puntiró)": {"low":80,"peak":150,"dynamic":true,"licenceFee":3},
   "Vall d'Or Golf": {"low":99,"peak":132,"dynamic":false,"licenceFee":0},
