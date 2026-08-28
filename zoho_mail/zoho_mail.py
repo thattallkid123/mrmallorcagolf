@@ -79,9 +79,9 @@ mrmallorcagolf.com"""
     {
         "id": "arabella",
         "to": "golf.mallorca@arabellagolf.com",
-        "contact": "Inés Sanchez",
+        "contact": "Heribert Rubiano",
         "subject": "Tour Operator Rate Enquiry — PGA Professional",
-        "body": """Dear Inés,
+        "body": """Dear Heribert,
 
 My name is Andy Griffiths. I am a UK PGA Advanced Professional based in Mallorca, operating as an autónomo, and I bring small groups of guests to play the island's courses as part of a private golf experience service.
 
