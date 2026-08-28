@@ -128,7 +128,7 @@ export default function ContactForm({ locale = 'en' }) {
               className="contact-card"
             >
               <span className="contact-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
                   <rect x="3" y="5" width="18" height="14" rx="2" />
                   <path d="M3.5 7l8.5 6 8.5-6" />
                 </svg>
@@ -190,7 +190,7 @@ export default function ContactForm({ locale = 'en' }) {
             ) : null}
             <div className="contact-card contact-card--info">
               <span className="contact-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7.5V12l3.2 1.9" />
                 </svg>
@@ -209,7 +209,7 @@ export default function ContactForm({ locale = 'en' }) {
               rel="noopener noreferrer"
             >
               <span className="contact-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="contact-card__icon-svg">
                   <path d="M12 21s7-7.6 7-12.5A7 7 0 0 0 5 8.5C5 13.4 12 21 12 21z" />
                   <circle cx="12" cy="8.5" r="2.5" />
                 </svg>

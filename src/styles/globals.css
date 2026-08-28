@@ -2380,7 +2380,14 @@ body {
 .package--featured .package__tier { color: rgba(255,255,255,0.78); }
 .package__name { font-family: var(--font-serif); font-size: 1.65rem; font-weight: 500; color: var(--deep); margin-bottom: 14px; line-height: 1.12; }
 .package--featured .package__name { color: var(--white); }
-.package__price { font-family: var(--font-serif); font-size: 1.1rem; color: var(--gold-text); margin-bottom: 24px; }
+/* 1.1rem/no explicit weight read as an afterthought next to .package__name
+   at 1.65rem/500 right above it - Andy asked for the price to be clearer
+   without turning glaring. Matched the tier name's own weight (500) rather
+   than inventing a heavier one, and raised size enough to read as
+   confident, while staying well under the name's size so it stays visually
+   secondary to it (2026-08-28). Same change applied to .tier__price below,
+   the identical component on the Play With A Pro page. */
+.package__price { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; color: var(--gold-text); margin-bottom: 24px; }
 .package--featured .package__price { color: var(--gold-light); }
 .package__divider { height: 1px; background: rgba(26,25,22,0.08); margin-bottom: 28px; }
 .package--featured .package__divider { background: rgba(255,255,255,0.15); }
@@ -2678,7 +2685,7 @@ body {
 .tier--feature .tier__name-small { color: rgba(255,255,255,0.7); }
 .tier__name { font-family: var(--font-serif); font-size: 1.65rem; font-weight: 500; color: var(--deep); margin-bottom: 14px; line-height: 1.12; }
 .tier--feature .tier__name { color: var(--white); }
-.tier__price { font-family: var(--font-serif); font-size: 1.1rem; color: var(--gold-text); margin-bottom: 24px; }
+.tier__price { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; color: var(--gold-text); margin-bottom: 24px; }
 .tier--feature .tier__price { color: var(--gold-light); }
 .tier__note { font-size: 0.75rem; color: var(--taupe-text); margin-top: 24px; margin-bottom: 0; line-height: 1.55; }
 .tier__note--feature { color: rgba(255,255,255,0.68); }
@@ -2849,7 +2856,7 @@ body {
    they were replaced with stroke="currentColor" SVGs. WhatsApp/WeChat below
    already override this with their own brand colours. */
 .contact-card__icon { font-size: 1.4rem; flex-shrink: 0; width: 32px; text-align: center; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.82); }
-.contact-card__icon-svg { width: 22px; height: 22px; }
+.contact-card__icon-svg { width: 24px; height: 24px; }
 .contact-card__label { font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.74); margin-bottom: 4px; font-family: var(--font-sans); }
 .contact-card__value { font-size: 1rem; font-weight: 400; color: #fff; line-height: 1.4; font-family: var(--font-sans); }
 .contact-card__value-select { user-select: all; }
@@ -2857,14 +2864,15 @@ body {
 .contact-card--wechat .contact-card__icon { color: #09B700; }
 /* Response time and Based in were plain neutral icons alongside WhatsApp/
    WeChat's brand green - Andy asked for colour on all of them (2026-08-28):
-   the clock in the existing brand gold, the pin in a new warm terracotta
-   (no red exists anywhere else in the palette, so picked one that fits the
-   site's earthy tone rather than a stock red). Both are decorative icon
-   fills, not body text, so WCAG's 3:1 non-text threshold applies rather
-   than the 4.5:1 text threshold - gold clears it at 6.30:1 and terracotta
-   at 3.99:1 against this card's dark background. Email stays neutral, per
-   Andy's explicit "email as is". */
-.contact-card--info .contact-card__icon { color: var(--gold); }
+   the clock in gold, the pin in a new warm terracotta (no red exists
+   anywhere else in the palette, so picked one that fits the site's earthy
+   tone rather than a stock red). Both are decorative icon fills, not body
+   text, so WCAG's 3:1 non-text threshold applies rather than the 4.5:1 text
+   threshold. Clock uses --gold-light rather than plain --gold (8.55:1 vs
+   6.30:1 against this card's dark background) - Andy found the plain gold
+   too easily lost against the busy photo behind these cards; terracotta
+   clears 3.99:1. Email stays neutral, per Andy's explicit "email as is". */
+.contact-card--info .contact-card__icon { color: var(--gold-light); }
 .contact-card--location .contact-card__icon { color: var(--terracotta); }
 .contact-card__qr-container { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .contact-card__qr-image { width: 100px; height: 100px; border-radius: 8px; border: 2px solid rgba(255,255,255,0.2); }
@@ -3541,7 +3549,7 @@ select.form-control { cursor: pointer; }
   .packages__grid { gap: 14px; }
   .package { padding: 28px 20px; }
   .package__name { font-size: 1.38rem; }
-  .package__price { font-size: 1rem; margin-bottom: 18px; }
+  .package__price { font-size: 1.2rem; margin-bottom: 18px; }
   .package__divider { margin-bottom: 22px; }
   .package__features { gap: 12px; margin-bottom: 20px; }
   .package__features li { font-size: 0.86rem; line-height: 1.56; }
@@ -3549,7 +3557,7 @@ select.form-control { cursor: pointer; }
   .packages__shared-cta { margin-top: 26px; }
   .tier__name-small { font-size: 9px; }
   .tier__name { font-size: 1.35rem; margin-bottom: 10px; }
-  .tier__price { font-size: 1rem; margin-bottom: 18px; }
+  .tier__price { font-size: 1.2rem; margin-bottom: 18px; }
   .tier__rule { margin-bottom: 22px; }
   .tier__features { gap: 12px; }
   .tier__features li { font-size: 0.86rem; line-height: 1.56; }
