@@ -137,8 +137,6 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark', local
         <Stars rating={REVIEW_RATING} size={11} />
         <span className="review-badge__score">{ratingLabel}</span>
         <span className="review-badge__brand">Google</span>
-        <span className="review-badge__divider">·</span>
-        <span className="review-badge__count">{REVIEW_COUNT} {text.reviews}</span>
       </a>
     )
   }
@@ -158,7 +156,6 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark', local
           <span className="review-footer-block__score">{ratingLabel}</span>
           <span className="review-footer-block__out-of">/ 5</span>
         </div>
-        <p className="review-footer-block__count">{REVIEW_COUNT} {text.reviews}</p>
       </a>
     )
   }
@@ -175,7 +172,6 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark', local
         <Stars rating={REVIEW_RATING} size={15} />
         <span className="review-text__line">
           {text.ratedLineBefore}<span className="review-text__score">{ratingLabel}</span>{text.ratedLineAfter}
-          <span className="review-text__count"> · {REVIEW_COUNT} {text.reviews}</span>
         </span>
       </a>
     )
@@ -192,8 +188,6 @@ export default function ReviewBadge({ variant = 'compact', theme = 'dark', local
       <Stars rating={REVIEW_RATING} size={14} />
       <span className="review-badge__score">{ratingLabel}</span>
       <span className="review-badge__brand">{text.onGoogle}</span>
-      <span className="review-badge__divider">·</span>
-      <span className="review-badge__count">{REVIEW_COUNT} {text.reviews}</span>
     </a>
   )
 }
