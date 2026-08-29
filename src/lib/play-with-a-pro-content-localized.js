@@ -230,7 +230,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Nos emparejarán con otros golfistas?",
-          "a": "A veces, salvo que reservemos la salida en privado. Siempre intento reservar la hora de salida más personal posible, pero en días de mucha afluencia el campo puede añadir uno o dos jugadores a un partido de uno o dos. Esa decisión es del club, no mía. Si prefiere que sea solo su grupo, puedo reservar también las plazas libres y la hora de salida es suya. El campo fija ese cargo, varía según el campo y la hora del día, y yo se lo traslado al coste y se lo confirmo antes de que reserve. Con tres jugadores la salida ya está completa, así que no hay nada extra que pagar. En cualquier caso, el coaching, el cuestionario previo, el vídeo con el feedback y las notas por escrito después son solo para usted ese día."
+          "a": "Es posible, y en temporada alta ocurre a menudo. Reservo la hora de salida más tranquila que puedo, pero hasta que salimos cualquiera puede apuntarse a ese hueco, por internet o directamente con el campo. Esa decisión es del club, no mía. Si prefiere dejarlo cerrado, reservo las plazas libres y la hora de salida es suya. El campo fija ese cargo, varía según el campo y la hora del día, y yo se lo traslado al coste y se lo confirmo antes de que reserve. Con tres jugadores la salida ya está completa, así que no hay nada extra que pagar."
+        },
+        {
+          "q": "¿Cómo es si nos juntan con otros?",
+          "a": "Normalmente bien, y a veces se hace buena compañía. El coste real es el ritmo: se espera en algunos tees y la vuelta se alarga. Seguimos en el mismo buggy, o caminando juntos si no lo llevamos, así que la conversación y el coaching duran toda la vuelta igualmente. El resumen, el vídeo y las notas por escrito después son suyos, esté quien esté en el campo."
         },
         {
           "q": "¿Trabaja con juniors?",
@@ -490,7 +494,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Werden wir mit anderen Golfern zusammengelegt?",
-          "a": "Manchmal, es sei denn, wir halten die Startzeit privat. Ich versuche immer, die persönlichste verfügbare Startzeit zu buchen, aber an vollen Tagen kann der Platz einem Einzel- oder Zweiball ein oder zwei Spieler hinzufügen. Diese Entscheidung liegt beim Club, nicht bei mir. Wenn Sie lieber unter sich bleiben, reserviere ich die freien Plätze mit und die Startzeit gehört Ihnen. Der Platz legt diesen Betrag fest, er hängt von Platz und Uhrzeit ab, und ich gebe ihn zum Selbstkostenpreis weiter und bestätige ihn vor Ihrer Buchung. Bei drei Spielern ist die Startzeit bereits voll, es fällt also nichts zusätzlich an. So oder so gelten das Coaching, der Fragebogen vor der Runde, das Feedback-Video und die schriftlichen Notizen danach an diesem Tag nur Ihnen."
+          "a": "Möglich, und in der Hochsaison passiert es oft. Ich buche die ruhigste Startzeit, die ich bekomme, aber bis zum Abschlag kann sich jeder auf diesen Slot buchen, online oder direkt beim Platz. Diese Entscheidung liegt beim Club, nicht bei mir. Wenn Sie es geklärt haben möchten, reserviere ich die freien Plätze und die Startzeit gehört Ihnen. Der Platz legt diesen Betrag fest, er hängt von Platz und Uhrzeit ab, und ich gebe ihn zum Selbstkostenpreis weiter und bestätige ihn vor Ihrer Buchung. Bei drei Spielern ist die Startzeit bereits voll, es fällt also nichts zusätzlich an."
+        },
+        {
+          "q": "Wie ist es, wenn wir zusammengelegt werden?",
+          "a": "Meistens unproblematisch, manchmal sogar gute Gesellschaft. Der ehrliche Nachteil ist das Tempo: Sie warten an einigen Abschlägen und die Runde dauert länger. Wir sitzen weiterhin im selben Buggy, oder gehen zusammen, wenn wir keinen nehmen, das Gespräch und das Coaching laufen also ohnehin über die ganze Runde. Die Nachbesprechung, das Video und die schriftlichen Notizen danach gehören Ihnen, egal wer sonst dabei ist."
         },
         {
           "q": "Arbeiten Sie auch mit Junioren?",
@@ -750,7 +758,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Serons-nous regroupés avec d'autres golfeurs ?",
-          "a": "Parfois, sauf si nous privatisons le départ. Je cherche toujours à réserver le départ le plus personnel possible, mais les jours de forte affluence le parcours peut ajouter un ou deux joueurs à une partie d'un ou deux. Cette décision revient au club, pas à moi. Si vous préférez rester entre vous, je réserve les places restantes et le départ est à vous. Le parcours fixe ce montant, il varie selon le parcours et l'heure de la journée, et je vous le répercute au prix coûtant en vous le confirmant avant la réservation. À trois joueurs le départ est déjà complet, il n'y a donc rien de plus à payer. Dans tous les cas, le coaching, le questionnaire d'avant-partie, la vidéo de retour et les notes écrites ensuite vous sont réservés ce jour-là."
+          "a": "C'est possible, et en haute saison cela arrive souvent. Je réserve le départ le plus calme possible, mais jusqu'au départ n'importe qui peut s'inscrire sur ce créneau, en ligne ou directement auprès du parcours. Cette décision revient au club, pas à moi. Si vous préférez que ce soit réglé, je réserve les places restantes et le départ est à vous. Le parcours fixe ce montant, il varie selon le parcours et l'heure de la journée, et je vous le répercute au prix coûtant en vous le confirmant avant la réservation. À trois joueurs le départ est déjà complet, il n'y a donc rien de plus à payer."
+        },
+        {
+          "q": "Comment cela se passe si nous sommes regroupés ?",
+          "a": "En général bien, et parfois c'est de bonne compagnie. Le vrai inconvénient est le rythme: on attend sur quelques départs et la partie dure plus longtemps. Nous restons dans la même voiturette, ou nous marchons ensemble si nous n'en prenons pas, la conversation et le coaching durent donc toute la partie dans tous les cas. Le bilan, la vidéo et les notes écrites ensuite vous appartiennent, quels que soient les autres joueurs."
         },
         {
           "q": "Travaillez-vous avec des juniors ?",
@@ -1009,7 +1021,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Worden we ingedeeld bij andere golfers?",
-          "a": "Soms, tenzij we de starttijd privé houden. Ik probeer altijd de meest persoonlijke starttijd te boeken, maar op drukke dagen kan de baan een of twee spelers toevoegen aan een een- of tweebal. Die beslissing ligt bij de club, niet bij mij. Wilt u liever alleen met uw eigen groep spelen, dan reserveer ik de vrije plekken en is de starttijd van u. De baan bepaalt dat bedrag, het verschilt per baan en tijdstip, en ik reken het door tegen kostprijs en bevestig het voordat u boekt. Met drie spelers is de starttijd al vol, dus dan betaalt u niets extra. Hoe dan ook zijn de coaching, de vragenlijst vooraf, de feedbackvideo en de schriftelijke notities achteraf die dag alleen op u gericht."
+          "a": "Mogelijk, en in het hoogseizoen gebeurt het vaak. Ik boek de rustigste starttijd die ik kan krijgen, maar tot we afslaan kan iedereen zich op die plek inschrijven, online of rechtstreeks bij de baan. Die beslissing ligt bij de club, niet bij mij. Wilt u het zeker weten, dan reserveer ik de vrije plekken en is de starttijd van u. De baan bepaalt dat bedrag, het verschilt per baan en tijdstip, en ik reken het door tegen kostprijs en bevestig het voordat u boekt. Met drie spelers is de starttijd al vol, dus dan betaalt u niets extra."
+        },
+        {
+          "q": "Hoe is het als we wel worden ingedeeld?",
+          "a": "Meestal prima, en soms is het goed gezelschap. Het echte nadeel is het tempo: u wacht op een paar tees en de ronde duurt langer. We zitten nog steeds in dezelfde buggy, of we lopen samen als we er geen nemen, dus het gesprek en de coaching lopen hoe dan ook de hele ronde door. De nabespreking, de video en de schriftelijke notities achteraf zijn van u, wie er verder ook op de baan is."
         },
         {
           "q": "Werkt u ook met junioren?",
@@ -1269,7 +1285,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Blir vi ihopslagna med andra golfare?",
-          "a": "Ibland, om vi inte håller starttiden privat. Jag försöker alltid boka den mest personliga starttid som finns, men på fullbokade dagar kan banan lägga till en eller två spelare till en en- eller tvåboll. Det beslutet ligger hos klubben, inte hos mig. Vill ni hellre spela bara ni, bokar jag de lediga platserna och starttiden är er. Banan sätter den avgiften, den varierar med bana och tid på dagen, och jag för den vidare till självkostnadspris och bekräftar den innan du bokar. Med tre spelare är starttiden redan full, så då tillkommer ingenting. Oavsett vilket är coachingen, frågeformuläret innan, feedbackvideon och de skriftliga anteckningarna efteråt helt inriktade på dig den dagen."
+          "a": "Möjligt, och under högsäsong händer det ofta. Jag bokar den lugnaste starttid jag kan få, men fram till att vi slår ut kan vem som helst boka in sig på den tiden, online eller direkt hos banan. Det beslutet ligger hos klubben, inte hos mig. Vill ni ha det avgjort bokar jag de lediga platserna och starttiden är er. Banan sätter den avgiften, den varierar med bana och tid på dagen, och jag för den vidare till självkostnadspris och bekräftar den innan du bokar. Med tre spelare är starttiden redan full, så då tillkommer ingenting."
+        },
+        {
+          "q": "Hur är det om vi blir ihopslagna?",
+          "a": "Oftast bra, och ibland trevligt sällskap. Den ärliga nackdelen är tempot: ni väntar på några tees och rundan tar längre tid. Vi sitter fortfarande i samma buggy, eller går tillsammans om vi inte tar någon, så samtalet och coachingen pågår hela rundan ändå. Genomgången, videon och de skriftliga anteckningarna efteråt är dina oavsett vilka andra som är ute på banan."
         },
         {
           "q": "Arbetar du med juniorer?",
@@ -1528,7 +1548,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "我们会被和其他球手拼组吗？",
-          "a": "有可能，除非我们把整个开球时段订下来。我总会尽量预订最私人的开球时段，但在球场繁忙的日子，球会可能会往一人或两人的组里再加一到两位球手。这个决定权在球会，而不在我。如果您希望只有自己这一行人，我可以把空出的名额一并预订，这个时段就完全属于您。费用由球会设定，会因球场和时间段而不同，我按成本价原样转给您，并在您预订前先确认清楚。如果是三位球手，这个开球时段本来就已满，不需要额外付费。无论如何，当天的教学、赛前问卷、赛后反馈视频以及书面记录，都只针对您一个人。"
+          "a": "有可能，尤其在旺季相当常见。我会尽量订最安静的开球时段，但在我们开球之前，任何人都可以通过网络或直接联系球会订上这个时段。这个决定权在球会，而不在我。如果您希望把这件事定下来，我可以把空出的名额一并预订，这个时段就完全属于您。费用由球会设定，会因球场和时间段而不同，我按成本价原样转给您，并在您预订前先确认清楚。如果是三位球手，这个开球时段本来就已满，不需要额外付费。"
+        },
+        {
+          "q": "如果真的和别人拼组，体验会怎样？",
+          "a": "通常没什么问题，有时还能遇到不错的球友。真正的代价是节奏：有几个发球台需要等待，整轮时间会拉长。我们仍然同坐一辆球车，如果不用球车就一起步行，所以交流和教学照样贯穿全程。赛后总结、反馈视频和书面记录，无论场上还有谁，都仍然只属于您。"
         },
         {
           "q": "您接受青少年学员吗？",
