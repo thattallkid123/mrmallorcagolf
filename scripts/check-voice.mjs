@@ -91,6 +91,28 @@ const BANNED_TRANSITIONS = [
   'Subsequently', 'Consequently',
 ]
 
+// Claims the site must not make, as opposed to words it must not use.
+//
+// Added 2026-08-29 after the homepage was found still promising a "guaranteed
+// private tee time" and that Andy "always tries to secure the most personal
+// tee time possible", hours after the Play With A Pro page had been corrected.
+// Neither is true: courses pair bookings, and anyone can book onto the slot
+// online or directly with the club right up until the group tees off. Andy
+// can reserve the spare slots at cost, which is a purchase, not a promise.
+//
+// Deliberately targets the guarantee framing, not the phrase "private tee
+// time" — Signature Day includes one as standard, so that claim is accurate.
+const BANNED_CLAIMS = [
+  {
+    label: 'guaranteed private tee time (courses can fill the slot until tee-off)',
+    re: /(guarantee\w*[^.!?]{0,40}private tee.?time|private tee.?time[^.!?]{0,40}guarantee\w*)/i,
+  },
+  {
+    label: 'always secures the tee time (overclaims control Andy does not have)',
+    re: /\balways\b[^.!?]{0,40}\b(secure|secures|securing|book|books|booking|get|gets|getting)\b[^.!?]{0,40}tee.?time/i,
+  },
+]
+
 // Legitimate phrases that contain a banned word but are not the banned filler
 // use (e.g. "dynamic pricing" is an industry term, not the vague adjective
 // "dynamic"). These are blanked out before the banned-word scan.
@@ -190,6 +212,10 @@ function checkFile(rel) {
     for (const { word, re } of BANNED_TRANSITION_RES) {
       re.lastIndex = 0
       if (re.test(scan)) findings.push({ lineNo, rule: 'banned transition', detail: word })
+    }
+    for (const { label, re } of BANNED_CLAIMS) {
+      re.lastIndex = 0
+      if (re.test(scan)) findings.push({ lineNo, rule: 'banned claim', detail: label })
     }
   })
 
