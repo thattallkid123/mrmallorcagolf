@@ -151,7 +151,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
   "packages": {
     "eyebrow": "Pricing",
     "title": "Solo, group, or Signature Day.",
-    "body": "Solo and group are the core Play With A Pro day rates. I always try to secure the most personal tee time possible, but golf courses may pair bookings when busy. A guaranteed private tee time can usually be arranged as an add-on, and is included as standard with Signature Day.",
+    "body": "Solo and group are the core Play With A Pro day rates. Golf courses pair bookings when they are busy, so a one or two ball can end up sharing the tee time with strangers. If you would rather it was just your party, I can reserve the spare slots and the tee time is yours. The course sets that charge and I pass it through at cost. Green fees and lunch are separate. A private tee time is included as standard with Signature Day.",
     "tiers": [
       {
         "eyebrow": "A Day With Andy",
@@ -163,7 +163,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
-          "Post-round debrief and next steps"
+          "Post-round debrief and next steps",
+          "Private tee time available at cost"
         ],
         "button": "Enquire →",
         "href": "/contact",
@@ -184,7 +185,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Course matched to your group",
           "Tee time secured and fully handled",
           "18 holes with me",
-          "On-course coaching during the round"
+          "On-course coaching during the round",
+          "Private tee time available at cost"
         ],
         "button": "Enquire →",
         "href": "/contact",
@@ -263,6 +265,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "a": "Solo is a private session for one golfer. Group packages are for 2 to 3 golfers, small enough that I can still play alongside everyone and give real attention throughout the round."
       },
       {
+        "q": "Will we be paired with other golfers?",
+        "a": "Sometimes, unless we keep the tee time private. I always aim to book the most personal tee time available, but on busy days the course may add another player or two to a one or two ball. That decision sits with the club, not me. If you would rather it was just your party, I can reserve the spare slots so the tee time is yours. The course sets that charge, it varies by course and time of day, and I pass it through at cost and confirm it with you before you book. Three golfers already fill a tee time, so there is nothing extra to pay. Either way, the coaching, the pre-round questionnaire, the round-feedback video, and the written notes afterwards are focused on you alone."
+      },
+      {
         "q": "Do you work with juniors?",
         "a": "Yes. I work with juniors at all levels, including complete beginners. We adapt the difficulty of the course so they are learning from a real golf environment without being overwhelmed. Same approach, scaled to where they are."
       },
@@ -273,10 +279,6 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       {
         "q": "How far in advance do I need to book?",
         "a": "3 to 4 weeks is typical, but there is flexibility. Get in touch and we will find something that works."
-      },
-      {
-        "q": "Will it just be us on the course?",
-        "a": "I always aim to book a tee time that gives us the most personal round possible. On busy days the course itself may pair a one or two ball with another player or two. That decision sits with the club, not me. If you'd like the tee time kept for your party only, I can reserve the spare slots too (the course charges extra for those, confirmed before you book). Either way, the coaching, the buggy or walk round, the pre-round questionnaire, the round-feedback video, and the written notes afterwards are all focused on just you on the day."
       },
       {
         "q": "What happens if it rains?",

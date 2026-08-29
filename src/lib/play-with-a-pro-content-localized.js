@@ -125,7 +125,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Experiencias y paquetes",
       "title": "Tres maneras de vivir el día.",
-      "body": "Las tres son privadas, me tienen a mí como anfitrión y se juegan en uno de los mejores campos de la isla. Campo, hora de salida y coaching incluidos. Green fees y almuerzo aparte, salvo en la Experiencia Signature, donde todo está incluido.",
+      "body": "Solo y Grupo son las tarifas base del día de Play With A Pro. Los campos juntan reservas cuando hay mucha afluencia, así que un partido de uno o dos jugadores puede acabar compartiendo la salida con desconocidos. Si prefiere que sea solo su grupo, puedo reservar las plazas libres y la hora de salida es suya. El campo fija ese cargo y yo se lo traslado al coste. Los green fees y el almuerzo van aparte. La hora de salida privada está incluida de serie en el Signature Day.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -136,7 +136,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
-            "Resumen final y próximos pasos"
+            "Resumen final y próximos pasos",
+            "Hora de salida privada disponible, al coste"
           ],
           "button": "Consultar →",
           "href": "/es/contact"
@@ -150,7 +151,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Campo elegido según su grupo",
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
-            "Coaching en el campo durante la vuelta"
+            "Coaching en el campo durante la vuelta",
+            "Hora de salida privada disponible, al coste"
           ],
           "button": "Consultar →",
           "href": "/es/contact",
@@ -227,6 +229,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Solo es una sesión privada para un golfista. Los paquetes Grupo son para 2 o 3 golfistas, lo suficientemente pequeño como para poder jugar junto a todos y dar atención real a lo largo de la vuelta."
         },
         {
+          "q": "¿Nos emparejarán con otros golfistas?",
+          "a": "A veces, salvo que reservemos la salida en privado. Siempre intento reservar la hora de salida más personal posible, pero en días de mucha afluencia el campo puede añadir uno o dos jugadores a un partido de uno o dos. Esa decisión es del club, no mía. Si prefiere que sea solo su grupo, puedo reservar también las plazas libres y la hora de salida es suya. El campo fija ese cargo, varía según el campo y la hora del día, y yo se lo traslado al coste y se lo confirmo antes de que reserve. Con tres jugadores la salida ya está completa, así que no hay nada extra que pagar. En cualquier caso, el coaching, el cuestionario previo, el vídeo con el feedback y las notas por escrito después son solo para usted ese día."
+        },
+        {
           "q": "¿Trabaja con juniors?",
           "a": "Sí. Trabajo con juniors de todos los niveles, incluidos principiantes absolutos. Adaptamos la dificultad del campo para que aprendan en un entorno de golf real sin sentirse superados."
         },
@@ -237,10 +243,6 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "q": "¿Con cuánta antelación hay que reservar?",
           "a": "3 o 4 semanas es lo habitual, pero hay flexibilidad. Contácteme y buscamos algo que funcione."
-        },
-        {
-          "q": "¿Estaremos solos en el campo?",
-          "a": "Siempre intento reservar una hora de salida que nos dé la vuelta más personal posible. En días de mucha afluencia, el propio campo puede juntar un partido de dos con uno o dos jugadores más. Esa decisión es del club, no mía. Si prefiere que la salida sea solo para su grupo, puedo reservar también las plazas libres (el campo cobra un extra por ellas, confirmado antes de reservar). En cualquier caso, el coaching, la vuelta en buggy o a pie, el cuestionario previo, el vídeo con el feedback y las notas por escrito después son solo para usted ese día."
         },
         {
           "q": "¿Qué pasa si llueve?",
@@ -383,7 +385,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Erlebnisse & Pakete",
       "title": "Drei Wege, den Tag zu gestalten.",
-      "body": "Alle drei sind privat, werden von mir persönlich begleitet und auf einem der besten Plätze der Insel gespielt. Platz, Startzeit und Coaching sind inklusive. Greenfees und Mittagessen werden separat abgerechnet (außer beim Signature-Erlebnis, das alles beinhaltet).",
+      "body": "Solo und Gruppe sind die Kern-Tagessätze für Play With A Pro. Plätze legen Buchungen an vollen Tagen zusammen, ein Einzel- oder Zweiball kann die Startzeit also mit Fremden teilen. Wenn Sie lieber unter sich bleiben, reserviere ich die freien Plätze mit und die Startzeit gehört Ihnen. Der Platz legt diesen Betrag fest und ich gebe ihn zum Selbstkostenpreis weiter. Greenfees und Mittagessen sind separat. Beim Signature Day ist die private Startzeit standardmäßig enthalten.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -394,7 +396,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
-            "Nachbesprechung und nächste Schritte"
+            "Nachbesprechung und nächste Schritte",
+            "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "button": "Anfragen →",
           "href": "/de/contact"
@@ -408,7 +411,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Platz passend zu Ihrer Gruppe",
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
-            "On-course-Coaching während der Runde"
+            "On-course-Coaching während der Runde",
+            "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "button": "Anfragen →",
           "href": "/de/contact",
@@ -485,6 +489,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Solo ist eine private Session für einen Golfer. Gruppenpakete sind für 2 bis 3 Golfer, klein genug, damit ich weiterhin neben allen mitspielen und jedem echte Aufmerksamkeit schenken kann."
         },
         {
+          "q": "Werden wir mit anderen Golfern zusammengelegt?",
+          "a": "Manchmal, es sei denn, wir halten die Startzeit privat. Ich versuche immer, die persönlichste verfügbare Startzeit zu buchen, aber an vollen Tagen kann der Platz einem Einzel- oder Zweiball ein oder zwei Spieler hinzufügen. Diese Entscheidung liegt beim Club, nicht bei mir. Wenn Sie lieber unter sich bleiben, reserviere ich die freien Plätze mit und die Startzeit gehört Ihnen. Der Platz legt diesen Betrag fest, er hängt von Platz und Uhrzeit ab, und ich gebe ihn zum Selbstkostenpreis weiter und bestätige ihn vor Ihrer Buchung. Bei drei Spielern ist die Startzeit bereits voll, es fällt also nichts zusätzlich an. So oder so gelten das Coaching, der Fragebogen vor der Runde, das Feedback-Video und die schriftlichen Notizen danach an diesem Tag nur Ihnen."
+        },
+        {
           "q": "Arbeiten Sie auch mit Junioren?",
           "a": "Ja. Ich arbeite mit Junioren auf allen Niveaus, auch mit absoluten Anfängern. Wir passen den Schwierigkeitsgrad des Platzes an, damit sie in einem echten Golfumfeld lernen, ohne überfordert zu werden."
         },
@@ -495,10 +503,6 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "q": "Wie weit im Voraus muss ich buchen?",
           "a": "3 bis 4 Wochen sind üblich, aber es gibt Spielraum. Melden Sie sich und wir finden etwas, das passt."
-        },
-        {
-          "q": "Sind wir allein auf dem Platz?",
-          "a": "Ich versuche immer, eine Startzeit zu buchen, die uns die persönlichste Runde ermöglicht. An vollen Tagen kann der Platz selbst einen Zweiball mit ein oder zwei weiteren Spielern zusammenlegen. Diese Entscheidung liegt beim Club, nicht bei mir. Wenn Sie die Startzeit ganz für sich behalten möchten, kann ich die freien Plätze mitreservieren (der Platz berechnet dafür extra, bestätigt vor der Buchung). So oder so gelten das Coaching, die Runde im Buggy oder zu Fuß, der Fragebogen vor der Runde, das Feedback-Video und die schriftlichen Notizen danach an diesem Tag nur Ihnen."
         },
         {
           "q": "Was passiert bei Regen?",
@@ -641,7 +645,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Expériences et formules",
       "title": "Trois façons de vivre la journée.",
-      "body": "Les trois formats sont construits autour de vous, organisés avec moi et joués sur l'un des plus beaux parcours de l'île. Parcours, heure de départ et coaching inclus. Green fees et déjeuner en sus, sauf pour l'Expérience Signature où tout est compris.",
+      "body": "Solo et Groupe sont les tarifs journée de base de Play With A Pro. Les parcours regroupent les réservations les jours chargés, une partie d'un ou deux joueurs peut donc partager le départ avec des inconnus. Si vous préférez rester entre vous, je réserve les places restantes et le départ est à vous. Le parcours fixe ce montant et je vous le répercute au prix coûtant. Green fees et déjeuner en sus. Le départ privatisé est inclus d'office dans le Signature Day.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -652,7 +656,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
-            "Bilan final et prochaines étapes"
+            "Bilan final et prochaines étapes",
+            "Départ privatisé possible, au prix coûtant"
           ],
           "button": "Demander →",
           "href": "/fr/contact"
@@ -666,7 +671,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Parcours choisi selon votre groupe",
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
-            "Coaching sur le parcours pendant la partie"
+            "Coaching sur le parcours pendant la partie",
+            "Départ privatisé possible, au prix coûtant"
           ],
           "button": "Demander →",
           "href": "/fr/contact",
@@ -743,6 +749,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Solo est une session privée pour un seul golfeur. Les formules Groupe sont pour 2 à 3 golfeurs, suffisamment petit pour que je puisse jouer aux côtés de tous et donner une attention réelle tout au long du parcours."
         },
         {
+          "q": "Serons-nous regroupés avec d'autres golfeurs ?",
+          "a": "Parfois, sauf si nous privatisons le départ. Je cherche toujours à réserver le départ le plus personnel possible, mais les jours de forte affluence le parcours peut ajouter un ou deux joueurs à une partie d'un ou deux. Cette décision revient au club, pas à moi. Si vous préférez rester entre vous, je réserve les places restantes et le départ est à vous. Le parcours fixe ce montant, il varie selon le parcours et l'heure de la journée, et je vous le répercute au prix coûtant en vous le confirmant avant la réservation. À trois joueurs le départ est déjà complet, il n'y a donc rien de plus à payer. Dans tous les cas, le coaching, le questionnaire d'avant-partie, la vidéo de retour et les notes écrites ensuite vous sont réservés ce jour-là."
+        },
+        {
           "q": "Travaillez-vous avec des juniors ?",
           "a": "Oui. Je travaille avec des juniors de tous niveaux, y compris les grands débutants. Nous adaptons la difficulté du parcours pour qu'ils apprennent dans un vrai environnement de golf sans être dépassés."
         },
@@ -753,10 +763,6 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "q": "Combien de temps à l'avance faut-il réserver ?",
           "a": "3 à 4 semaines est habituel, mais il y a de la flexibilité. Prenez contact et nous trouverons quelque chose qui convient."
-        },
-        {
-          "q": "Serons-nous seuls sur le parcours ?",
-          "a": "Je cherche toujours à réserver un départ qui nous offre la partie la plus personnelle possible. Les jours de forte affluence, le parcours peut lui-même regrouper une partie de deux avec un ou deux autres joueurs. Cette décision revient au club, pas à moi. Si vous souhaitez garder le départ pour votre seul groupe, je peux réserver aussi les places restantes (le parcours facture un supplément, confirmé avant la réservation). Dans tous les cas, le coaching, la partie en voiturette ou à pied, le questionnaire d'avant-partie, la vidéo de retour et les notes écrites ensuite vous sont réservés ce jour-là."
         },
         {
           "q": "Que se passe-t-il s'il pleut ?",
@@ -898,7 +904,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Ervaringen en pakketten",
       "title": "Drie manieren om de dag te beleven.",
-      "body": "Alle drie zijn privé, worden door mij begeleid en gespeeld op een van de beste banen van het eiland. Baan, starttijd en coaching inbegrepen. Greenfees en lunch apart, behalve bij de Signature Expérience waar alles is inbegrepen.",
+      "body": "Solo en Groep zijn de kerntarieven per dag voor Play With A Pro. Banen voegen boekingen samen als het druk is, dus een een- of tweebal kan de starttijd met onbekenden delen. Wilt u liever alleen met uw eigen groep spelen, dan reserveer ik de vrije plekken en is de starttijd van u. De baan bepaalt dat bedrag en ik reken het door tegen kostprijs. Greenfees en lunch zijn apart. Bij de Signature Day is de privé starttijd standaard inbegrepen.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -909,7 +915,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
-            "Nabespreking en vervolgstappen"
+            "Nabespreking en vervolgstappen",
+            "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "button": "Aanvragen →",
           "href": "/nl/contact"
@@ -923,7 +930,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Baan gekozen op basis van uw groep",
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
-            "Coaching op de baan tijdens de ronde"
+            "Coaching op de baan tijdens de ronde",
+            "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "button": "Aanvragen →",
           "href": "/nl/contact",
@@ -1000,6 +1008,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Solo is een privésessie voor één golfer. Groepspakketten zijn voor 2 tot 3 golfers, klein genoeg om nog steeds naast iedereen mee te spelen en echte aandacht te geven tijdens de ronde."
         },
         {
+          "q": "Worden we ingedeeld bij andere golfers?",
+          "a": "Soms, tenzij we de starttijd privé houden. Ik probeer altijd de meest persoonlijke starttijd te boeken, maar op drukke dagen kan de baan een of twee spelers toevoegen aan een een- of tweebal. Die beslissing ligt bij de club, niet bij mij. Wilt u liever alleen met uw eigen groep spelen, dan reserveer ik de vrije plekken en is de starttijd van u. De baan bepaalt dat bedrag, het verschilt per baan en tijdstip, en ik reken het door tegen kostprijs en bevestig het voordat u boekt. Met drie spelers is de starttijd al vol, dus dan betaalt u niets extra. Hoe dan ook zijn de coaching, de vragenlijst vooraf, de feedbackvideo en de schriftelijke notities achteraf die dag alleen op u gericht."
+        },
+        {
           "q": "Werkt u ook met junioren?",
           "a": "Ja. Ik werk met junioren op alle niveaus, ook absolute beginners. We passen de moeilijkheidsgraad van de baan aan zodat ze leren in een echte golfomgeving zonder overweldigd te worden."
         },
@@ -1010,10 +1022,6 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "q": "Hoe ver van tevoren moet ik boeken?",
           "a": "3 tot 4 weken is gebruikelijk, maar er is flexibiliteit. Neem contact op en we vinden iets wat werkt."
-        },
-        {
-          "q": "Zijn we samen alleen op de baan?",
-          "a": "Ik probeer altijd een starttijd te boeken die ons de meest persoonlijke ronde geeft. Op drukke dagen kan de baan zelf een tweebal samenvoegen met een of twee andere spelers. Die beslissing ligt bij de club, niet bij mij. Als u de starttijd alleen voor uw groep wilt houden, kan ik de vrije plekken mee reserveren (de baan rekent daar extra voor, bevestigd vóór het boeken). Hoe dan ook zijn de coaching, de ronde in de buggy of lopend, de vragenlijst vooraf, de feedbackvideo en de schriftelijke notities achteraf die dag alleen op u gericht."
         },
         {
           "q": "Wat gebeurt er als het regent?",
@@ -1156,7 +1164,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Upplevelser och paket",
       "title": "Tre sätt att lägga upp dagen.",
-      "body": "Alla tre alternativen är privata, leds av mig och spelas på en av öns bästa banor. Bana, starttid och coaching ingår. Green fees och lunch tillkommer, utom för Signature-upplevelsen där allt ingår.",
+      "body": "Solo och Grupp är grunddagspriserna för Play With A Pro. Banor slår ihop bokningar när det är fullt, så en en- eller tvåboll kan få dela starttid med okända. Vill ni hellre spela bara ni, bokar jag de lediga platserna och starttiden är er. Banan sätter den avgiften och jag för den vidare till självkostnadspris. Green fees och lunch tillkommer. Privat starttid ingår som standard i Signature Day.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -1167,7 +1175,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
-            "Genomgång och nästa steg"
+            "Genomgång och nästa steg",
+            "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact"
@@ -1181,7 +1190,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Bana vald efter ert sällskap",
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
-            "Coaching på banan under rundan"
+            "Coaching på banan under rundan",
+            "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact",
@@ -1258,6 +1268,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Solo är en privat session för en golfare. Gruppaket är för 2 till 3 golfare, litet nog för att jag fortfarande ska kunna spela bredvid alla och ge verklig uppmärksamhet under rundan."
         },
         {
+          "q": "Blir vi ihopslagna med andra golfare?",
+          "a": "Ibland, om vi inte håller starttiden privat. Jag försöker alltid boka den mest personliga starttid som finns, men på fullbokade dagar kan banan lägga till en eller två spelare till en en- eller tvåboll. Det beslutet ligger hos klubben, inte hos mig. Vill ni hellre spela bara ni, bokar jag de lediga platserna och starttiden är er. Banan sätter den avgiften, den varierar med bana och tid på dagen, och jag för den vidare till självkostnadspris och bekräftar den innan du bokar. Med tre spelare är starttiden redan full, så då tillkommer ingenting. Oavsett vilket är coachingen, frågeformuläret innan, feedbackvideon och de skriftliga anteckningarna efteråt helt inriktade på dig den dagen."
+        },
+        {
           "q": "Arbetar du med juniorer?",
           "a": "Ja. Jag arbetar med juniorer på alla nivåer, inklusive totala nybörjare. Vi anpassar svårighetsgraden på banan så att de lär sig i en riktig golfmiljö utan att bli överväldigade."
         },
@@ -1268,10 +1282,6 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "q": "Hur långt i förväg måste jag boka?",
           "a": "3 till 4 veckor är typiskt, men det finns flexibilitet. Hoer av dig så hittar vi något som passar."
-        },
-        {
-          "q": "Är vi ensamma på banan?",
-          "a": "Jag försöker alltid boka en starttid som ger oss den mest personliga rundan. På fullbokade dagar kan banan själv slå ihop en tvåboll med en eller två andra spelare. Det beslutet ligger hos klubben, inte hos mig. Om du vill att starttiden bara ska vara för ert sällskap kan jag boka de lediga platserna också (banan tar extra betalt för dem, bekräftat innan du bokar). Oavsett vilket är coachingen, rundan i buggy eller till fots, frågeformuläret innan, feedbackvideon och de skriftliga anteckningarna efteråt helt inriktade på dig den dagen."
         },
         {
           "q": "Vad händer om det regnar?",
@@ -1414,7 +1424,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "体验方案",
       "title": "三种安排这一天的方式。",
-      "body": "三种方案都是私人的，也都由我亲自陪同，地点会是岛上最好的球场之一。球场、开球时间和指导已包含。果岭费和午餐另计（尊享体验除外，为全包）。",
+      "body": "单人与小组是 Play With A Pro 的基础日费方案。球场繁忙时会把预订拼组，因此一人或两人的组合可能要和陌生球手共享同一个开球时段。如果您希望只有自己这一行人，我可以把空出的名额一并预订下来，这个开球时段就完全属于您。费用由球会设定，我按成本价原样转给您。果岭费与午餐另计。Signature Day 已标准包含私人开球时段。",
       "tiers": [
         {
           "eyebrow": "单人",
@@ -1425,7 +1435,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
-            "赛后总结与后续建议"
+            "赛后总结与后续建议",
+            "可加订私人开球时段，按成本价收取"
           ],
           "button": "立即咨询 →",
           "href": "/zh/contact"
@@ -1439,7 +1450,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "按照您的小组匹配球场",
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
-            "球场实战指导贯穿全程"
+            "球场实战指导贯穿全程",
+            "可加订私人开球时段，按成本价收取"
           ],
           "button": "立即咨询 →",
           "href": "/zh/contact",
@@ -1515,6 +1527,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "单人套餐是一位球手的私人课程。团体套餐适合 2 到 3 位球手，人数少到我仍然可以与所有人同场竞技，在整轮球中给每个人真正的关注。"
         },
         {
+          "q": "我们会被和其他球手拼组吗？",
+          "a": "有可能，除非我们把整个开球时段订下来。我总会尽量预订最私人的开球时段，但在球场繁忙的日子，球会可能会往一人或两人的组里再加一到两位球手。这个决定权在球会，而不在我。如果您希望只有自己这一行人，我可以把空出的名额一并预订，这个时段就完全属于您。费用由球会设定，会因球场和时间段而不同，我按成本价原样转给您，并在您预订前先确认清楚。如果是三位球手，这个开球时段本来就已满，不需要额外付费。无论如何，当天的教学、赛前问卷、赛后反馈视频以及书面记录，都只针对您一个人。"
+        },
+        {
           "q": "您接受青少年学员吗？",
           "a": "接受。我与各个水平的青少年合作，包括完全的初学者。我们会根据情况调整球场的难度，让他们在真实的高尔夫环境中学习，而不会感到不知所措。"
         },
@@ -1525,10 +1541,6 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "q": "需要提前多久预订？",
           "a": "通常需要提前 3 到 4 周，但也有弹性空间。联系我，我们一起找出合适的安排。"
-        },
-        {
-          "q": "当天球场上只有我们吗？",
-          "a": "我总会尽量预订一个让我们拥有最私人体验的开球时段。在球场繁忙的日子，球场本身可能会把一个两人组和另外一两位球手拼在一起下场。这个决定权在球会，而不在我。如果您希望这个开球时段只属于您这一行人，我也可以把空出的名额一并预订下来（球会会为这些名额额外收费，会在预订前先跟您确认）。无论如何，当天的教学、无论是坐球车还是步行的这一轮、赛前问卷、赛后反馈视频以及书面记录，都只针对您一个人。"
         },
         {
           "q": "下雨怎么办？",
