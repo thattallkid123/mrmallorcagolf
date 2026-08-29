@@ -230,11 +230,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Nos emparejarán con otros golfistas?",
-          "a": "Es posible, y en temporada alta ocurre a menudo. Reservo la hora de salida más tranquila que puedo, pero hasta que salimos cualquiera puede apuntarse a ese hueco, por internet o directamente con el campo. Esa decisión es del club, no mía. Si prefiere dejarlo cerrado, reservo las plazas libres y la hora de salida es suya. El campo fija ese cargo, varía según el campo y la hora del día, y yo se lo traslado al coste y se lo confirmo antes de que reserve. Con tres jugadores la salida ya está completa, así que no hay nada extra que pagar."
+          "a": "Es posible, y en temporada alta pasa seguro. Reservo las horas de salida más tranquilas que puedo, pero hasta que salimos cualquiera puede apuntarse a ese hueco, por internet o directamente con el campo. Esa decisión es del club, no mía. Si quiere privatizarla, puedo reservar las plazas libres y la hora de salida es enteramente suya. El campo fija el cargo y varía según el campo y la hora del día, y yo se lo traslado al coste y se lo confirmo antes de que reserve. Con tres jugadores la salida ya está completa, así que no hay nada extra que pagar."
         },
         {
           "q": "¿Cómo es si nos juntan con otros?",
-          "a": "Normalmente bien, y a veces se hace buena compañía. El coste real es el ritmo: se espera en algunos tees y la vuelta se alarga. Seguimos en el mismo buggy, o caminando juntos si no lo llevamos, así que la conversación y el coaching duran toda la vuelta igualmente. El resumen, el vídeo y las notas por escrito después son suyos, esté quien esté en el campo."
+          "a": "Normalmente va perfectamente bien y se hace buena compañía. El inconveniente honesto puede ser el ritmo de juego, alguna espera en varios tees y una vuelta más larga. Para nosotros, en cambio, seguimos en el mismo buggy, o caminando juntos si no lo llevamos, así que la conversación y el coaching son los mismos. El resumen, el vídeo y las notas por escrito después son suyos, esté quien esté en el campo."
         },
         {
           "q": "¿Trabaja con juniors?",
@@ -494,11 +494,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Werden wir mit anderen Golfern zusammengelegt?",
-          "a": "Möglich, und in der Hochsaison passiert es oft. Ich buche die ruhigste Startzeit, die ich bekomme, aber bis zum Abschlag kann sich jeder auf diesen Slot buchen, online oder direkt beim Platz. Diese Entscheidung liegt beim Club, nicht bei mir. Wenn Sie es geklärt haben möchten, reserviere ich die freien Plätze und die Startzeit gehört Ihnen. Der Platz legt diesen Betrag fest, er hängt von Platz und Uhrzeit ab, und ich gebe ihn zum Selbstkostenpreis weiter und bestätige ihn vor Ihrer Buchung. Bei drei Spielern ist die Startzeit bereits voll, es fällt also nichts zusätzlich an."
+          "a": "Möglich, und in der Hochsaison passiert es definitiv. Ich buche die ruhigsten Startzeiten, die ich bekomme, aber bis zum Abschlag kann sich jeder auf diesen Slot buchen, online oder direkt beim Platz. Diese Entscheidung liegt beim Club, nicht bei mir. Wenn Sie die Startzeit privat möchten, reserviere ich die freien Plätze und sie gehört ganz Ihnen. Der Platz legt den Betrag fest und er hängt von Platz und Uhrzeit ab, und ich gebe ihn zum Selbstkostenpreis weiter und bestätige ihn vor Ihrer Buchung. Bei drei Spielern ist die Startzeit bereits voll, es fällt also nichts zusätzlich an."
         },
         {
           "q": "Wie ist es, wenn wir zusammengelegt werden?",
-          "a": "Meistens unproblematisch, manchmal sogar gute Gesellschaft. Der ehrliche Nachteil ist das Tempo: Sie warten an einigen Abschlägen und die Runde dauert länger. Wir sitzen weiterhin im selben Buggy, oder gehen zusammen, wenn wir keinen nehmen, das Gespräch und das Coaching laufen also ohnehin über die ganze Runde. Die Nachbesprechung, das Video und die schriftlichen Notizen danach gehören Ihnen, egal wer sonst dabei ist."
+          "a": "Normalerweise völlig unproblematisch und gute Gesellschaft. Der ehrliche Nachteil kann das Tempo sein, etwas Warten an einigen Abschlägen und eine längere Runde. Für uns ändert sich dagegen nichts: Wir sitzen weiterhin im selben Buggy, oder gehen zusammen, wenn wir keinen nehmen, das Gespräch und das Coaching bleiben also gleich. Die Nachbesprechung, das Video und die schriftlichen Notizen danach gehören Ihnen, egal wer sonst dabei ist."
         },
         {
           "q": "Arbeiten Sie auch mit Junioren?",
@@ -758,11 +758,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Serons-nous regroupés avec d'autres golfeurs ?",
-          "a": "C'est possible, et en haute saison cela arrive souvent. Je réserve le départ le plus calme possible, mais jusqu'au départ n'importe qui peut s'inscrire sur ce créneau, en ligne ou directement auprès du parcours. Cette décision revient au club, pas à moi. Si vous préférez que ce soit réglé, je réserve les places restantes et le départ est à vous. Le parcours fixe ce montant, il varie selon le parcours et l'heure de la journée, et je vous le répercute au prix coûtant en vous le confirmant avant la réservation. À trois joueurs le départ est déjà complet, il n'y a donc rien de plus à payer."
+          "a": "C'est possible, et en haute saison cela arrive à coup sûr. Je réserve les départs les plus calmes possible, mais jusqu'au départ n'importe qui peut s'inscrire sur ce créneau, en ligne ou directement auprès du parcours. Cette décision revient au club, pas à moi. Si vous voulez le privatiser, je peux réserver les places restantes et le départ est entièrement à vous. Le parcours fixe le montant et il varie selon le parcours et l'heure de la journée, et je vous le répercute au prix coûtant en vous le confirmant avant la réservation. À trois joueurs le départ est déjà complet, il n'y a donc rien de plus à payer."
         },
         {
           "q": "Comment cela se passe si nous sommes regroupés ?",
-          "a": "En général bien, et parfois c'est de bonne compagnie. Le vrai inconvénient est le rythme: on attend sur quelques départs et la partie dure plus longtemps. Nous restons dans la même voiturette, ou nous marchons ensemble si nous n'en prenons pas, la conversation et le coaching durent donc toute la partie dans tous les cas. Le bilan, la vidéo et les notes écrites ensuite vous appartiennent, quels que soient les autres joueurs."
+          "a": "Normalement cela se passe très bien et la compagnie est agréable. L'inconvénient honnête peut être le rythme de jeu, quelques attentes sur certains départs et une partie plus longue. Pour nous, en revanche, nous restons dans la même voiturette, ou nous marchons ensemble si nous n'en prenons pas, la conversation et le coaching sont donc les mêmes. Le bilan, la vidéo et les notes écrites ensuite vous appartiennent, quels que soient les autres joueurs."
         },
         {
           "q": "Travaillez-vous avec des juniors ?",
@@ -1021,11 +1021,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Worden we ingedeeld bij andere golfers?",
-          "a": "Mogelijk, en in het hoogseizoen gebeurt het vaak. Ik boek de rustigste starttijd die ik kan krijgen, maar tot we afslaan kan iedereen zich op die plek inschrijven, online of rechtstreeks bij de baan. Die beslissing ligt bij de club, niet bij mij. Wilt u het zeker weten, dan reserveer ik de vrije plekken en is de starttijd van u. De baan bepaalt dat bedrag, het verschilt per baan en tijdstip, en ik reken het door tegen kostprijs en bevestig het voordat u boekt. Met drie spelers is de starttijd al vol, dus dan betaalt u niets extra."
+          "a": "Mogelijk, en in het hoogseizoen gebeurt het zeker. Ik boek de rustigste starttijden die ik kan krijgen, maar tot we afslaan kan iedereen zich op die plek inschrijven, online of rechtstreeks bij de baan. Die beslissing ligt bij de club, niet bij mij. Wilt u het privé, dan reserveer ik de vrije plekken en is de starttijd helemaal van u. De baan bepaalt het bedrag en het verschilt per baan en tijdstip, en ik reken het door tegen kostprijs en bevestig het voordat u boekt. Met drie spelers is de starttijd al vol, dus dan betaalt u niets extra."
         },
         {
           "q": "Hoe is het als we wel worden ingedeeld?",
-          "a": "Meestal prima, en soms is het goed gezelschap. Het echte nadeel is het tempo: u wacht op een paar tees en de ronde duurt langer. We zitten nog steeds in dezelfde buggy, of we lopen samen als we er geen nemen, dus het gesprek en de coaching lopen hoe dan ook de hele ronde door. De nabespreking, de video en de schriftelijke notities achteraf zijn van u, wie er verder ook op de baan is."
+          "a": "Normaal gesproken helemaal prima en goed gezelschap. Het eerlijke nadeel kan het speeltempo zijn, wat wachten op een paar tees en een langere ronde. Voor ons verandert er echter niets: we zitten nog steeds in dezelfde buggy, of we lopen samen als we er geen nemen, dus het gesprek en de coaching blijven hetzelfde. De nabespreking, de video en de schriftelijke notities achteraf zijn van u, wie er verder ook op de baan is."
         },
         {
           "q": "Werkt u ook met junioren?",
@@ -1285,11 +1285,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Blir vi ihopslagna med andra golfare?",
-          "a": "Möjligt, och under högsäsong händer det ofta. Jag bokar den lugnaste starttid jag kan få, men fram till att vi slår ut kan vem som helst boka in sig på den tiden, online eller direkt hos banan. Det beslutet ligger hos klubben, inte hos mig. Vill ni ha det avgjort bokar jag de lediga platserna och starttiden är er. Banan sätter den avgiften, den varierar med bana och tid på dagen, och jag för den vidare till självkostnadspris och bekräftar den innan du bokar. Med tre spelare är starttiden redan full, så då tillkommer ingenting."
+          "a": "Möjligt, och under högsäsong händer det garanterat. Jag bokar de lugnaste starttider jag kan få, men fram till att vi slår ut kan vem som helst boka in sig på den tiden, online eller direkt hos banan. Det beslutet ligger hos klubben, inte hos mig. Vill ni ha den privat bokar jag de lediga platserna och starttiden är helt er. Banan sätter avgiften och den varierar med bana och tid på dagen, och jag för den vidare till självkostnadspris och bekräftar den innan du bokar. Med tre spelare är starttiden redan full, så då tillkommer ingenting."
         },
         {
           "q": "Hur är det om vi blir ihopslagna?",
-          "a": "Oftast bra, och ibland trevligt sällskap. Den ärliga nackdelen är tempot: ni väntar på några tees och rundan tar längre tid. Vi sitter fortfarande i samma buggy, eller går tillsammans om vi inte tar någon, så samtalet och coachingen pågår hela rundan ändå. Genomgången, videon och de skriftliga anteckningarna efteråt är dina oavsett vilka andra som är ute på banan."
+          "a": "Oftast går det alldeles utmärkt och sällskapet är trevligt. Den ärliga nackdelen kan vara speltempot, en del väntan på några tees och en längre runda. För oss är det däremot samma sak: vi sitter fortfarande i samma buggy, eller går tillsammans om vi inte tar någon, så samtalet och coachingen är desamma. Genomgången, videon och de skriftliga anteckningarna efteråt är dina oavsett vilka andra som är ute på banan."
         },
         {
           "q": "Arbetar du med juniorer?",
@@ -1548,11 +1548,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "我们会被和其他球手拼组吗？",
-          "a": "有可能，尤其在旺季相当常见。我会尽量订最安静的开球时段，但在我们开球之前，任何人都可以通过网络或直接联系球会订上这个时段。这个决定权在球会，而不在我。如果您希望把这件事定下来，我可以把空出的名额一并预订，这个时段就完全属于您。费用由球会设定，会因球场和时间段而不同，我按成本价原样转给您，并在您预订前先确认清楚。如果是三位球手，这个开球时段本来就已满，不需要额外付费。"
+          "a": "有可能，旺季基本上一定会遇到。我会尽量订最安静的开球时段，但在我们开球之前，任何人都可以通过网络或直接联系球会订上这个时段。这个决定权在球会，而不在我。如果您希望独享这个时段，我可以把空出的名额一并预订，这个开球时段就完全属于您。费用由球会设定，会因球场和时间段而不同，我按成本价原样转给您，并在您预订前先确认清楚。如果是三位球手，这个开球时段本来就已满，不需要额外付费。"
         },
         {
           "q": "如果真的和别人拼组，体验会怎样？",
-          "a": "通常没什么问题，有时还能遇到不错的球友。真正的代价是节奏：有几个发球台需要等待，整轮时间会拉长。我们仍然同坐一辆球车，如果不用球车就一起步行，所以交流和教学照样贯穿全程。赛后总结、反馈视频和书面记录，无论场上还有谁，都仍然只属于您。"
+          "a": "通常完全没问题，而且往往是很好的球友。要说真实的代价，主要是打球节奏：有几个发球台需要等待，整轮时间可能会拉长。但对我们两个人来说，我们仍然同坐一辆球车，如果不用球车就一起步行，所以交流和教学完全一样。赛后总结、反馈视频和书面记录，无论场上还有谁，都仍然只属于您。"
         },
         {
           "q": "您接受青少年学员吗？",

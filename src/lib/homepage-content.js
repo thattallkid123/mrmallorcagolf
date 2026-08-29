@@ -288,7 +288,7 @@ export const HOME_CONTENT = {
   "packages": {
     "eyebrow": "What I offer",
     "title": "A day on the course with me. Or the whole trip, built around it.",
-    "body": "The core service is Play With A Pro, an 18-hole day with me. Solo and group are the core day rates. I always try to secure the most personal tee time possible, but golf courses may pair bookings when busy. A guaranteed private tee time can usually be arranged as an add-on, and is included as standard with Signature Day. If you want the whole trip planned around it, that is available too.",
+    "body": "The core service is Play With A Pro, an 18-hole day with me. Solo and group are the core day rates. Courses can pair bookings when they are busy, and in peak season that happens. If you want the tee time privatised, I reserve the spare slots and pass the course's charge through at cost. It is included as standard with Signature Day. If you want the whole trip planned around it, that is available too.",
     "items": [
       {
         "tier": "Solo",
@@ -299,7 +299,8 @@ export const HOME_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
-          "Post-round debrief"
+          "Post-round debrief",
+          "Private tee time available at cost"
         ],
         "note": "My day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
         "cta": "Enquire",
@@ -316,7 +317,8 @@ export const HOME_CONTENT = {
           "Course matched to your group",
           "Tee time secured and fully handled",
           "18 holes with me",
-          "On-course coaching during the round"
+          "On-course coaching during the round",
+          "Private tee time available at cost"
         ],
         "note": "My fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
         "cta": "Enquire",

@@ -197,7 +197,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Experiencias y paquetes",
       "title": "Elige tu día",
-      "body": "Solo y Grupo son las tarifas base de Play With A Pro. Siempre intento conseguir la salida más personal posible, pero en días de mucha demanda el campo puede agrupar partidas. Una salida privada garantizada normalmente puede organizarse como extra, y viene incluida de serie en Signature Day. Si quiere que planifiquemos todo el viaje alrededor, eso también está disponible.",
+      "body": "Solo y Grupo son las tarifas base de Play With A Pro. Los campos pueden juntar reservas cuando hay mucha afluencia, y en temporada alta pasa. Si quiere privatizar la hora de salida, reservo las plazas libres y le traslado el cargo del campo al coste. Está incluida de serie en el Signature Day. Y si quiere que planifiquemos todo el viaje alrededor, eso también está disponible.",
       "items": [
         {
           "tier": "Solo",
@@ -208,7 +208,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
-            "Resumen tras la vuelta"
+            "Resumen tras la vuelta",
+            "Hora de salida privada disponible, al coste"
           ],
           "note": "Mi tarifa del día. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
           "cta": "Ver precios",
@@ -222,7 +223,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Campo elegido según el grupo",
             "Hora de salida asegurada",
             "18 hoyos conmigo",
-            "Coaching en el campo durante la vuelta"
+            "Coaching en el campo durante la vuelta",
+            "Hora de salida privada disponible, al coste"
           ],
           "note": "Green fees se confirman al hablar.",
           "cta": "Ver precios",
@@ -521,7 +523,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Erlebnisse und Pakete",
       "title": "Wähle deinen Tag",
-      "body": "Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Ich versuche immer, die persönlichste Startzeit für Sie zu sichern, aber an vollen Tagen kann der Golfplatz Flights zusammenlegen. Eine garantierte private Startzeit lässt sich in der Regel als Zusatz buchen und ist beim Signature Day standardmäßig enthalten. Wenn Sie die ganze Reise darum herum geplant haben möchten, ist das ebenfalls möglich.",
+      "body": "Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Plätze können Buchungen an vollen Tagen zusammenlegen, und in der Hochsaison passiert das. Wenn Sie die Startzeit privat möchten, reserviere ich die freien Plätze und gebe den Betrag des Platzes zum Selbstkostenpreis weiter. Beim Signature Day ist sie standardmäßig enthalten. Wenn Sie die ganze Reise darum herum geplant haben möchten, ist das ebenfalls möglich.",
       "items": [
         {
           "tier": "Solo",
@@ -532,7 +534,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
-            "Nachbesprechung nach der Runde"
+            "Nachbesprechung nach der Runde",
+            "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "note": "Mein Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
           "cta": "Preise ansehen",
@@ -546,7 +549,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Platz passend zur Gruppe",
             "Startzeit gesichert",
             "18 Löcher mit mir",
-            "On-course-Coaching während der Runde"
+            "On-course-Coaching während der Runde",
+            "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "note": "Greenfees werden gemeinsam im Gespräch bestätigt.",
           "cta": "Preise ansehen",
@@ -845,7 +849,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Expériences et forfaits",
       "title": "Choisissez votre jour",
-      "body": "Solo et Groupe sont les tarifs de base de Play With A Pro. Je cherche toujours à obtenir le départ le plus personnel possible, mais les jours de forte affluence le golf peut regrouper les réservations. Un départ privé garanti peut généralement être organisé en option, et il est inclus d'office avec le Signature Day. Si vous voulez que tout le voyage soit organisé autour, c'est aussi possible.",
+      "body": "Solo et Groupe sont les tarifs de base de Play With A Pro. Les parcours peuvent regrouper les réservations les jours chargés, et en haute saison cela arrive. Si vous voulez privatiser le départ, je réserve les places restantes et je vous répercute le montant du parcours au prix coûtant. Il est inclus d'office avec le Signature Day. Si vous voulez que tout le voyage soit organisé autour, c'est aussi possible.",
       "items": [
         {
           "tier": "Solo",
@@ -856,7 +860,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
-            "Bilan après la partie"
+            "Bilan après la partie",
+            "Départ privatisé possible, au prix coûtant"
           ],
           "note": "Mon tarif journée. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, je peux vous aider à organiser.",
           "cta": "Voir les tarifs",
@@ -870,7 +875,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Parcours choisi selon le groupe",
             "Heure de départ sécurisée",
             "18 trous avec moi",
-            "Coaching sur le parcours pendant la partie"
+            "Coaching sur le parcours pendant la partie",
+            "Départ privatisé possible, au prix coûtant"
           ],
           "note": "Green fees confirmés lors de notre échange.",
           "cta": "Voir les tarifs",
@@ -1168,7 +1174,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Ervaringen en pakketten",
       "title": "Kies je dag",
-      "body": "Solo en groep zijn de standaard Play With A Pro dagtarieven. Ik probeer altijd de meest persoonlijke starttijd mogelijk te regelen, maar op drukke dagen kan de golfbaan flights samenvoegen. Een gegarandeerd privé starttijdslot kan meestal als extra worden geregeld, en is standaard inbegrepen bij Signature Day. Wilt u de hele reis eromheen laten plannen, dan kan dat ook.",
+      "body": "Solo en groep zijn de standaard Play With A Pro dagtarieven. Banen kunnen boekingen samenvoegen als het druk is, en in het hoogseizoen gebeurt dat. Wilt u de starttijd privé, dan reserveer ik de vrije plekken en reken ik het bedrag van de baan door tegen kostprijs. Bij de Signature Day is het standaard inbegrepen. Wilt u de hele reis eromheen laten plannen, dan kan dat ook.",
       "items": [
         {
           "tier": "Solo",
@@ -1179,7 +1185,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
-            "Nabespreking na de ronde"
+            "Nabespreking na de ronde",
+            "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "note": "Mijn dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie.",
           "cta": "Bekijk prijzen",
@@ -1193,7 +1200,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Baan gekozen voor uw groep",
             "Starttijd vastgelegd",
             "18 holes met mij",
-            "Coaching op de baan tijdens de ronde"
+            "Coaching op de baan tijdens de ronde",
+            "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "note": "Greenfees bevestigd wanneer we spreken.",
           "cta": "Bekijk prijzen",
@@ -1491,7 +1499,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Upplevelser och paket",
       "title": "Välj din dag",
-      "body": "Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Jag försöker alltid ordna den mest personliga starttiden som är möjlig, men under fullbokade dagar kan golfbanan slå ihop bokningar. En garanterad privat starttid kan oftast ordnas som tillval och ingår som standard i Signature Day. Vill du att hela resan planeras runt detta går det också att ordna.",
+      "body": "Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Banor kan slå ihop bokningar när det är fullt, och under högsäsong händer det. Vill ni ha starttiden privat bokar jag de lediga platserna och för banans avgift vidare till självkostnadspris. I Signature Day ingår den som standard. Vill du att hela resan planeras runt detta går det också att ordna.",
       "items": [
         {
           "tier": "Solo",
@@ -1502,7 +1510,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
-            "Genomgång efter rundan"
+            "Genomgång efter rundan",
+            "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "note": "Mitt dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna.",
           "cta": "Se priser",
@@ -1516,7 +1525,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "Bana vald för din grupp",
             "Starttid säkrad",
             "18 hål med mig",
-            "Coaching på banan under rundan"
+            "Coaching på banan under rundan",
+            "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "note": "Green fees bekräftas när vi pratar.",
           "cta": "Se priser",
@@ -1821,7 +1831,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "体验与套餐",
       "title": "选择你的那一天",
-      "body": "单人和小组是 Play With A Pro 的基础日费方案。我都会尽量安排最具私密感的开球时间，但在球场繁忙时，球场可能会将不同预订拼组。如需保证私密开球时间，通常可以作为加购安排，而 Signature Day 则已默认包含。如果您希望围绕这一天规划整趟行程，这项服务同样可以安排。",
+      "body": "单人和小组是 Play With A Pro 的基础日费方案。球场繁忙时可能会把预订拼组，旺季尤其如此。如果您希望独享这个开球时段，我会把空出的名额预订下来，并按成本价把球会的费用转给您。Signature Day 已默认包含这一项。如果您希望围绕这一天规划整趟行程，这项服务同样可以安排。",
       "items": [
         {
           "tier": "单人",
@@ -1832,7 +1842,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
-            "赛后总结"
+            "赛后总结",
+            "可加订私人开球时段，按成本价收取"
           ],
           "note": "果岭费及可选项目在沟通后确认。",
           "cta": "查看价格",
@@ -1847,7 +1858,8 @@ export const HOME_LOCALIZED_CONTENT = {
             "根据小组情况匹配球场",
             "开球时间已预订",
             "与我同打 18 洞",
-            "球场实战指导贯穿全程"
+            "球场实战指导贯穿全程",
+            "可加订私人开球时段，按成本价收取"
           ],
           "note": "果岭费在沟通后单独确认。",
           "cta": "查看价格",

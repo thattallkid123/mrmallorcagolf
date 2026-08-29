@@ -266,11 +266,11 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       },
       {
         "q": "Will we be paired with other golfers?",
-        "a": "Possibly, and in peak season it happens often. I book the quietest tee time I can, but right up until we tee off anyone can book onto the slot, online or directly with the course. That decision sits with the club, not me. If you want it settled, I reserve the spare slots and the tee time is yours. The course sets that charge, it varies by course and time of day, and I pass it through at cost and confirm it before you book. Three golfers already fill a tee time, so there is nothing extra to pay."
+        "a": "Possibly, and in peak season it definitely happens. I book the quietest tee times I can, but right up until we tee off anyone can book onto the slot, online or directly with the course. That decision sits with the club, not me. If you want it privatised, I can reserve the spare slots and the tee time is fully yours. The course sets the charge and it varies by course and time of day, and I pass it through at cost and confirm it before you book. Three golfers already fill a tee time, so there is nothing extra to pay."
       },
       {
         "q": "What is it like if we do get paired?",
-        "a": "Usually fine, and occasionally good company. The honest cost is pace: you wait on a few tees and the round runs longer. We are still in the same buggy, or walking together if we are not taking one, so the conversation and the coaching run the whole round either way. The debrief, the video and the written notes afterwards are yours regardless of who else is out there."
+        "a": "Normally completely fine and great company. The honest downside can be the pace of play, some waits on a few tees and the round can be longer. For us though, we are still in the same buggy, or walking together if we are not taking one, so the conversation and the coaching is the same. The debrief, video and the written notes afterwards are yours regardless of who else is out there."
       },
       {
         "q": "Do you work with juniors?",
