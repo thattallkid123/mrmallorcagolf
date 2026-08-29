@@ -100,36 +100,54 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
         <p className="career-strip__label">{label}</p>
         <h2 className="serif-display career-strip__title">{heading}</h2>
       </div>
-      <div ref={viewportRef} className="career-strip__viewport" aria-label="Career venues carousel" tabIndex={0}>
-        <div ref={trackRef} className="career-strip__track">
-          {allVenues.map((v, i) => (
-            <div key={i} className={`career-strip__card${v.variant ? ` career-strip__card--${v.variant}` : ''}`}>
-              {v.img ? (
-                <>
-                  <div className="career-strip__card-img">
-                    <Image
-                      src={v.img}
-                      alt={v.name}
-                      fill
-                      sizes="(max-width: 700px) 72vw, 320px"
-                      style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
-                    />
-                    <div className="career-strip__card-scrim" />
-                  </div>
-                  <div className="career-strip__card-text">
+      <div className="career-strip__viewport-wrap">
+        <div ref={viewportRef} className="career-strip__viewport" aria-label="Career venues carousel" tabIndex={0}>
+          <div ref={trackRef} className="career-strip__track">
+            {allVenues.map((v, i) => (
+              <div key={i} className={`career-strip__card${v.variant ? ` career-strip__card--${v.variant}` : ''}`}>
+                {v.img ? (
+                  <>
+                    <div className="career-strip__card-img">
+                      <Image
+                        src={v.img}
+                        alt={v.name}
+                        fill
+                        sizes="(max-width: 700px) 72vw, 320px"
+                        style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+                      />
+                      <div className="career-strip__card-scrim" />
+                    </div>
+                    <div className="career-strip__card-text">
+                      <p className="career-strip__card-name">{v.name}</p>
+                      <p className="career-strip__card-detail">{v.detail}</p>
+                    </div>
+                  </>
+                ) : (
+                  <>
                     <p className="career-strip__card-name">{v.name}</p>
                     <p className="career-strip__card-detail">{v.detail}</p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <p className="career-strip__card-name">{v.name}</p>
-                  <p className="career-strip__card-detail">{v.detail}</p>
-                </>
-              )}
-            </div>
-          ))}
+                  </>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
+        {/* Fades live OUTSIDE .career-strip__viewport (the scrolling element)
+            deliberately - as children of it, position:absolute + left:0/right:0
+            only set their starting position within the scrollable content, not
+            a pin to the visible edge. Overflow scrolling shifts ALL of a
+            scroll container's content uniformly, absolutely-positioned
+            descendants included, so the fades drifted left across the visible
+            cards as scrollLeft advanced, momentarily overlaying whatever card
+            was there with a dark gradient stripe - measured directly: at
+            scrollLeft 1200 the "right" fade was rendering at viewport x
+            [117,237], nowhere near the right edge. This is what Andy saw as a
+            vertical line that moved around and didn't correlate with any real
+            zoom/DPR cause, confirmed by disabling .career-strip__fade
+            entirely on his machine (2026-08-28). Moving them to this
+            non-scrolling wrapper (a sibling of .career-strip__viewport, not a
+            descendant) fixes it: they position against a box that never
+            scrolls, so they stay genuinely pinned to the edges. */}
         <div className="career-strip__fade career-strip__fade--left" />
         <div className="career-strip__fade career-strip__fade--right" />
       </div>
