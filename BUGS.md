@@ -74,6 +74,12 @@ When a new bug is fixed, add it here so it never comes back.
 - Refuse to commit any 0-byte image. Add a pre-deploy check if recurring.
 - Card and og:image are intentionally cropped landscape (900×386 and 1200×630). Never use a portrait photo as the og:image.
 
+## Auto-scrolling strip: fade overlay drifted across the visible cards
+**Pattern (career-strip, Aug 2026):** A dark vertical line intermittently appeared across the "Where I've been" photo strip, showing up between different card pairs and seeming to correlate with browser zoom. Two rounds of wrong fixes first (GPU-compositing, scroll-pixel rounding) before finding the real cause.
+**Real cause:** `.career-strip__fade--left/right` (the edge vignette overlays) were direct children of `.career-strip__viewport`, the scrolling element itself. `position:absolute; left:0/right:0` on a descendant of an `overflow-x:auto` container only sets its position *within* the scrollable content — it does not pin it to the visible edge. As the strip auto-scrolled, the fades scrolled along with the cards, drifting across the visible strip and painting a dark gradient over whichever card happened to be underneath at that scroll position.
+**Rule:** Any decorative overlay meant to stay pinned to a scrolling container's edge (fade, vignette, scroll-hint arrow) must live in a non-scrolling wrapper *outside* the element with `overflow-x`/`overflow-y:auto` — never as its direct child. Check this first if a fade/vignette effect on any of the three auto-scrolling strips (CareerStrip, WinnersProofStrip, PWAP day strip) ever looks like it's in the wrong place.
+**Also confirmed while investigating:** `Element.scrollLeft` always rounds to a whole CSS pixel on write in Chromium (assigning `308.8` reads back as `309`). A JS-driven auto-scroll needing whole-*device*-pixel precision at fractional display scaling (e.g. Windows 125%) must only ever advance to a CSS value whose product with `devicePixelRatio` is itself whole — recompute per frame, since browser zoom changes `devicePixelRatio` too.
+
 ## Course blog written in multiple painful passes
 **Pattern:** T Golf Calvià blog took several sessions across photo rotation, copy revisions, metadata fixes, deploy errors. Process was not documented.
 **Fix (May 2026):** `COURSE_BLOG_PIPELINE.md` in repo root. One-pass workflow: Andy hands over transcript + numbered photo links, Claude does everything else in order. Pipeline references `MMG_BRAND_VOICE_GUIDELINES.md` as the only voice guide.
