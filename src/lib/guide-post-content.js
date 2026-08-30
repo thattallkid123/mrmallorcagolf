@@ -149,7 +149,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            "Club hire at the pro shop: Callaway €35, Titleist €45 per round. Buggy €45, electric trolley from €15. Handicap limit: 33 for men, 35 for ladies. A valid WHS certificate is required at booking. Walking is permitted. A €3 daily Spanish Golf Federation licence is payable at check-in.",
+            "Club hire at the pro shop: Callaway €35, Titleist €45 per round. Buggy €45, electric trolley from €15. Handicap limit: 33 for men, 35 for ladies. A valid WHS certificate is required at booking. Walking is permitted.",
         },
         {
           type: 'notes',
