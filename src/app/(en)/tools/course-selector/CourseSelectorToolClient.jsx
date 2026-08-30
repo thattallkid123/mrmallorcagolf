@@ -436,7 +436,7 @@ const COURSES = [
     id:'palma-pitch-putt', name:'Palma Pitch & Putt',
     area:'Palma', areaLabel:'Central Palma',
     diff10:2, scenery:2, prestige:1, value:5, walkability:5,
-    greenFee:'9 holes €27 · 18 holes €30',
+    greenFee:'9 holes €27 · 18 holes €30 (dynamic)',
     buggyNote:'Walking only (compact par-3 layout)',
     bestFor:'Beginners, juniors, and anyone who wants a quick accurate round in the city',
     why:'The only official pitch & putt in Mallorca. Nine holes, par 27, all par 3s ranging from 50–100m. Demands accuracy rather than power. A genuinely useful test for anyone working on their short game or new to the game entirely. Club hire available. Central Palma location.',

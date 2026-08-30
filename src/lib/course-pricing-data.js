@@ -20,7 +20,7 @@ export const COURSE_PRICING_BY_NAME = {
   "Golf Son Quint": {"low":76,"peak":172,"dynamic":true,"licenceFee":3},
   "Golf Son Termes": {"low":90,"peak":110,"dynamic":false,"licenceFee":0},
   "Golf Son Vida": {"low":84,"peak":190,"dynamic":true,"licenceFee":3},
-  "Palma Pitch & Putt": {"low":27,"peak":30,"dynamic":false,"licenceFee":2,"holes":9,"feeMode":"pitch_putt"},
+  "Palma Pitch & Putt": {"low":27,"peak":30,"dynamic":true,"licenceFee":2,"holes":9,"feeMode":"pitch_putt"},
   "Pula Golf": {"low":69,"peak":145,"dynamic":true,"licenceFee":0},
   "Real Golf de Bendinat": {"low":74,"peak":123,"dynamic":false,"licenceFee":0},
   "Reserva Rotana": {"low":85,"peak":130,"dynamic":false,"licenceFee":0,"holes":9,"feeMode":"hotel_only"},
@@ -47,7 +47,8 @@ export function formatCourseFeeLabel(name, options = {}) {
   if (!pricing) return options.fallback || 'Pricing on request'
 
   if (pricing.feeMode === 'pitch_putt') {
-    return `9 holes ${formatEuro(pricing.low)} · 18 holes ${formatEuro(pricing.peak)}`
+    const label = `9 holes ${formatEuro(pricing.low)} · 18 holes ${formatEuro(pricing.peak)}`
+    return pricing.dynamic ? `${label} (dynamic)` : label
   }
 
   if (pricing.feeMode === 'hotel_only') {
