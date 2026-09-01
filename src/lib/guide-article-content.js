@@ -38,7 +38,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          '€20 for 9 holes or €30 for 18 holes at Palma Pitch & Putt (club hire extra), or around €65-75 if you want the cheapest full-size options such as Golf Pollença in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
+          'From €17 for 9 holes or €27-30 for 18 holes at Palma Pitch & Putt (club hire extra), or around €65-75 if you want the cheapest full-size options such as Golf Pollença in the quieter months. Palma Pitch & Putt is a proper short-course option: great for beginners, good fun for families or mixed groups, and a low-pressure way to get clubs in hand without committing to a full round.',
       },
       {
         type: 'image',

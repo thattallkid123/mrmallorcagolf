@@ -182,7 +182,7 @@ export const COURSE_FACTS = Object.freeze({
     "low": 27,
     "mid": null,
     "peak": 30,
-    "dynamic": false,
+    "dynamic": true,
     "accessType": "public",
     "handicapMen": null,
     "handicapWomen": null,

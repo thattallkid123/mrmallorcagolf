@@ -190,11 +190,13 @@ function feeDisplay(c, season, t) {
   if (hidesPublicPricing(c)) {
     return { text: t.accessLabels.memberArrangement, note: t.accessLabels.notPublic }
   }
-  if (c.feeMode === 'pitch_putt') {
-    return season === 'peak'
-      ? { text: fmtFee(c.peak), note: t.feeNotes.holes18NotSeasonal }
-      : { text: fmtFee(c.low), note: t.feeNotes.holes9NotSeasonal }
-  }
+  // The pitch_putt branch removed here (2026-09-01) showed c.low as the 9-hole
+  // price and c.peak as the 18-hole price, and told the reader neither was
+  // seasonal. Both claims were wrong: low/peak are the seasonal low and peak of
+  // the *18-hole* fee (EUR27 in September, EUR30 in March), and EUR27 is not a
+  // 9-hole price at any date. Palma Pitch & Putt now uses the standard seasonal
+  // path below, same as Pollenca, which is also a 9-hole course. The 9-hole
+  // figure lives in the pricing source (nineHoleLow) and is not shown here.
   if (c.feeMode === 'hotel_only') return { text: t.buggyLabels.included, note: t.accessLabels.hotelGuests }
   return {
     text: fmtFee(c[season], Number.isFinite(c[season]) ? null : (season === 'peak' ? c.peakText : c.lowText)),

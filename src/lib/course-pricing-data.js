@@ -46,11 +46,6 @@ export function formatCourseFeeLabel(name, options = {}) {
   const pricing = options.pricing || getCoursePricingByName(name)
   if (!pricing) return options.fallback || 'Pricing on request'
 
-  if (pricing.feeMode === 'pitch_putt') {
-    const label = `9 holes ${formatEuro(pricing.low)} · 18 holes ${formatEuro(pricing.peak)}`
-    return pricing.dynamic ? `${label} (dynamic)` : label
-  }
-
   if (pricing.feeMode === 'hotel_only') {
     return 'Included for hotel guests · Not available to the public'
   }

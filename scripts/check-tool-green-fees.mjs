@@ -21,12 +21,15 @@ const { getCoursePricingByName } = await import(
 
 // Reserva Rotana genuinely has no public numeric fee ("Included for hotel
 // guests"), so there is nothing this script can check - skip entirely.
-// Palma Pitch & Putt has a real fee, just in "9 holes / 18 holes" format
-// instead of "Peak / Low" - it gets its own parse path below rather than a
-// blanket skip. It used to be skipped entirely, which is exactly how its
-// missing "(dynamic)" marker went unnoticed after the course was
-// reclassified 2026-08-30 (see PRICING.md "Known Gotchas") - a check that
-// silently exempts a course is a check that can't catch drift on it.
+// Palma Pitch & Putt used to need its own "9 holes / 18 holes" parse path.
+// It doesn't any more: that label format was removed 2026-09-01 because
+// low/peak are both 18-hole figures, so it printed the 18-hole low labelled
+// as a 9-hole price. The course now uses the same "Peak / Low" label as
+// every other course, Pollenca included (also 9 holes), so the standard
+// parser covers it. Do not re-add a per-course exemption here: it used to be
+// skipped entirely, which is exactly how its missing "(dynamic)" marker went
+// unnoticed after the 2026-08-30 reclassification - a check that silently
+// exempts a course is a check that can't catch drift on it.
 const SELECTOR_SPECIAL_IDS = new Set([
   'reserva-rotana',
 ])
@@ -88,19 +91,6 @@ function feeNumbers(fee) {
   }
 }
 
-// Palma Pitch & Putt's fallback reads "9 holes €X · 18 holes €Y" instead of
-// "Peak €X / Low €Y" - low/peak map onto 9-hole/18-hole here, matching how
-// mmg-tools/scripts/sync-pricing.js's formatCourseFeeLabel() treats the same
-// feeMode. Keep both in sync if either changes.
-function feeNumbersPitchPutt(fee) {
-  const match = fee.match(/9 holes\s*€(\d+)\s*·\s*18 holes\s*€(\d+)/)
-  if (!match) return null
-  return {
-    low: Number(match[1]),
-    peak: Number(match[2]),
-  }
-}
-
 function main() {
   const errors = []
   const selectorText = read('src/app/(en)/tools/course-selector/CourseSelectorToolClient.jsx')
@@ -126,7 +116,7 @@ function main() {
     const pricing = getCoursePricingByName(course.name)
     if (!pricing) continue
 
-    const fee = pricing.feeMode === 'pitch_putt' ? feeNumbersPitchPutt(course.fee) : feeNumbers(course.fee)
+    const fee = feeNumbers(course.fee)
     if (!fee) continue
     selectorChecked += 1
 

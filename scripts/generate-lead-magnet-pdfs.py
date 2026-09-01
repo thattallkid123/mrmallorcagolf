@@ -161,7 +161,7 @@ def generate_trip_planner():
             PageBreak(),
             Paragraph("MR MALLORCA GOLF", SMALL),
             Paragraph("Days 4-7: Northeast and Rest", SECTION),
-            Paragraph("<b>Day 4: Travel / Rest Day</b><br/>Optional: Palma Pitch & Putt (9 holes, €27-30) - recovery day. Explore Palma or rest.", BODY),
+            Paragraph("<b>Day 4: Travel / Rest Day</b><br/>Optional: Palma Pitch & Putt (9-hole course, €27-30 for 18 holes) - recovery day. Explore Palma or rest.", BODY),
             Paragraph("<b>Day 5: Northeast Adventure</b><br/>Club de Golf Alcanada - €230 peak | Lighthouse views | 50 mins from Palma", BODY),
             Paragraph("<b>Day 6: Value and Local Gem</b><br/>Pollenca - €75 peak | Scenic | Less crowded", BODY),
             Paragraph("<b>Day 7: Grand Finale</b><br/>Son Muntaner - €260 peak | Premium finish near Palma", BODY),

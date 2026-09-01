@@ -3892,11 +3892,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Presupuesto (nueve hoyos, pitch and putt)"
         },
         {
-          "text": "€20 por 9 hoyos o €30 por 18 hoyos (alquiler de palos aparte). El Arabella Pitch & Putt de Palma es un recorrido corto de verdad dentro del tramo más económico. Muy bueno para principiantes, con poco estrés y además muy cerca de sus campos grandes del mismo complejo."
+          "text": "Desde €17 por 9 hoyos o €27-30 por 18 hoyos (alquiler de palos aparte). El Palma Pitch & Putt es un recorrido corto de verdad dentro del tramo más económico. Muy bueno para principiantes, con poco estrés y además muy cerca de sus campos grandes del mismo complejo."
         },
         {
-          "alt": "Arabella Pitch and Putt",
-          "caption": "Arabella Pitch & Putt - perfecto para empezar"
+          "alt": "Palma Pitch and Putt",
+          "caption": "Palma Pitch & Putt - perfecto para empezar"
         },
         {
           "text": "Campos de 18 hoyos de gama media"
@@ -4032,11 +4032,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Budget (9 Löcher, Pitch & Putt)"
         },
         {
-          "text": "€20 für 9 Löcher oder €30 für 18 Löcher (Schlägermiete extra). Das Arabella Pitch & Putt in Palma ist ein richtiges Kurzplatz-Setup am unteren Ende der Skala. Sehr gut für Anfänger, entspannt und ohne Druck, dazu praktisch direkt neben den größeren Arabella-Plätzen."
+          "text": "Ab €17 für 9 Löcher oder €27-30 für 18 Löcher (Schlägermiete extra). Das Palma Pitch & Putt ist ein richtiges Kurzplatz-Setup am unteren Ende der Skala. Sehr gut für Anfänger, entspannt und ohne Druck, dazu praktisch direkt neben den größeren Arabella-Plätzen."
         },
         {
-          "alt": "Arabella Pitch and Putt",
-          "caption": "Arabella Pitch & Putt - ideal für Anfänger"
+          "alt": "Palma Pitch and Putt",
+          "caption": "Palma Pitch & Putt - ideal für Anfänger"
         },
         {
           "text": "18-Loch-Plätze im mittleren Segment"
@@ -4172,11 +4172,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Budget (9 trous, pitch and putt)"
         },
         {
-          "text": "€20 pour 9 trous ou €30 pour 18 trous (location de clubs en supplément). L'Arabella Pitch & Putt à Palma est un vrai petit parcours dans le bas de l'échelle tarifaire. Très bien pour les débutants, avec une ambiance détendue et sans pression, juste à côté des grands parcours Arabella."
+          "text": "À partir de €17 pour 9 trous ou €27-30 pour 18 trous (location de clubs en supplément). Le Palma Pitch & Putt est un vrai petit parcours dans le bas de l'échelle tarifaire. Très bien pour les débutants, avec une ambiance détendue et sans pression, juste à côté des grands parcours Arabella."
         },
         {
-          "alt": "Arabella Pitch and Putt",
-          "caption": "Arabella Pitch & Putt - parfait pour débuter"
+          "alt": "Palma Pitch and Putt",
+          "caption": "Palma Pitch & Putt - parfait pour débuter"
         },
         {
           "text": "Parcours 18 trous de milieu de gamme"
@@ -4312,11 +4312,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Budget (negen holes, pitch and putt)"
         },
         {
-          "text": "€20 voor 9 holes of €30 voor 18 holes (clubs huren is apart). De Arabella Pitch & Putt in Palma is een echte korte baan aan de onderkant van de prijsschaal. Prima voor beginners, ontspannen van sfeer en handig dicht bij de grotere Arabella-banen."
+          "text": "Vanaf €17 voor 9 holes of €27-30 voor 18 holes (clubs huren is apart). De Palma Pitch & Putt is een echte korte baan aan de onderkant van de prijsschaal. Prima voor beginners, ontspannen van sfeer en handig dicht bij de grotere Arabella-banen."
         },
         {
-          "alt": "Arabella Pitch and Putt",
-          "caption": "Arabella Pitch & Putt - ideaal voor beginners"
+          "alt": "Palma Pitch and Putt",
+          "caption": "Palma Pitch & Putt - ideaal voor beginners"
         },
         {
           "text": "18-holesbanen in het middensegment"
@@ -4452,11 +4452,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Budget (nio hål, pitch and putt)"
         },
         {
-          "text": "€20 för 9 hål eller €30 för 18 hål (klubbhyra tillkommer). Arabella Pitch & Putt i Palma är en riktig kortbana i den lägre prisnivån. Bra för nybörjare, med låg press och dessutom praktiskt nära de större Arabella-banorna i samma område."
+          "text": "Från €17 för 9 hål eller €27-30 för 18 hål (klubbhyra tillkommer). Palma Pitch & Putt är en riktig kortbana i den lägre prisnivån. Bra för nybörjare, med låg press och dessutom praktiskt nära de större Arabella-banorna i samma område."
         },
         {
-          "alt": "Arabella Pitch and Putt",
-          "caption": "Arabella Pitch & Putt - perfekt för nybörjare"
+          "alt": "Palma Pitch and Putt",
+          "caption": "Palma Pitch & Putt - perfekt för nybörjare"
         },
         {
           "text": "18-halsbanor i mellansegmentet"
@@ -4592,11 +4592,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "预算级选择：9洞短杆场 / Pitch & Putt"
         },
         {
-          "text": "9洞€20，18洞€30（球杆租借另计）。Palma的Arabella Pitch & Putt是真正意义上的短杆场，价格位于最低区间。对初学者很友好，压力小，而且离Arabella那几座大场很近。"
+          "text": "9洞€17起，18洞€27-30（球杆租借另计）。Palma Pitch & Putt是真正意义上的短杆场，价格位于最低区间。对初学者很友好，压力小，而且离Arabella那几座大场很近。"
         },
         {
-          "alt": "Arabella Pitch and Putt",
-          "caption": "Arabella Pitch & Putt，适合刚开始打球的人"
+          "alt": "Palma Pitch and Putt",
+          "caption": "Palma Pitch & Putt，适合刚开始打球的人"
         },
         {
           "text": "中档18洞球场"
