@@ -152,10 +152,15 @@ const seen = new Set()
 
 // Compare one attributed band against canonical and record a finding.
 // course must already be a resolved canonical name.
-function record(file, course, quoted, kind, low, peak) {
+function record(file, course, quoted, kind, low, peak, { strict = false } = {}) {
   const pricing = COURSE_PRICING_BY_NAME[course]
   if (!pricing) return
-  if (pricing.dynamic) return // observed rates vary — exempt
+  // Hand-written prose about a dynamic course may legitimately quote an
+  // observed rate that sits outside the canonical band, so those are exempt.
+  // Generated surfaces are not: a course-listing pill is produced FROM
+  // low/peak, so it must equal them exactly whether or not the course is
+  // dynamic. Passing strict:true says "this surface is generated".
+  if (pricing.dynamic && !strict) return
 
   const problems = []
   if (low !== pricing.low) problems.push(`low €${low} ≠ €${pricing.low}`)
@@ -195,6 +200,69 @@ function checkDescriptionField(value, ctx, file) {
   const m = value.match(ANY_BAND)
   if (!m) return
   record(file, ctx, value.trim(), 'description field', +m[1], +m[2])
+}
+
+// The course-listing price pill (pills[0] in golf-courses-data.js) is GENERATED
+// from canonical low/peak by mmg-tools, so it gets stricter treatment than prose:
+// it must use the standard shape, must equal canonical exactly even when the
+// course is dynamic, and its leading "* " dynamic marker must agree with the
+// canonical `dynamic` flag.
+//
+// Added 2026-09-01, after Palma Pitch & Putt shipped a pill reading
+// "9H EUR27 - 18H EUR30" that this check passed clean. It was invisible twice
+// over: the string matched none of the known price shapes so extractBand()
+// returned null and checkString() skipped it silently, and the course is
+// dynamic so record() would have exempted it anyway. EUR27 is the 18-hole low,
+// not a 9-hole price, and it was live on /golf-courses for weeks.
+//
+// So: never silently skip a pill that carries a price. A shape this cannot
+// parse is reported, not ignored - an unrecognised format is exactly where
+// drift hides, and every one of the 23 pills uses the standard shape today.
+// This mirrors the warning already standing in check-tool-green-fees.mjs:
+// a check that silently exempts a course cannot catch drift on that course.
+function checkPricePill(node, ctx, file) {
+  if (file !== 'src/lib/golf-courses-data.js') return
+  if (!Array.isArray(node.pills) || !node.pills.length) return
+  const course = ctx || toCanonical(String(node.name || ''))
+  if (!course) return
+  const pricing = COURSE_PRICING_BY_NAME[course]
+  if (!pricing) return
+
+  const raw = String(node.pills[0] || '')
+  if (!raw.includes('€')) return // non-price lead pill: nothing to verify
+  const marked = raw.trimStart().startsWith('*')
+  const body = raw.replace(/^\s*\*\s*/, '')
+
+  const m = body.match(LABELLED_PEAK_FIRST)
+  if (!m) {
+    findings.push({
+      file,
+      course,
+      quoted: raw.trim(),
+      kind: 'price pill in an unrecognised shape',
+      expected: `Peak €${pricing.peak} / Low €${pricing.low}`,
+      problems: ['cannot be parsed, so it is not being checked against canonical'],
+    })
+    return
+  }
+
+  record(file, course, raw.trim(), 'course-listing price pill', +m[2], +m[1], { strict: true })
+
+  const shouldBeMarked = Boolean(pricing.dynamic)
+  if (marked !== shouldBeMarked) {
+    findings.push({
+      file,
+      course,
+      quoted: raw.trim(),
+      kind: 'dynamic marker',
+      expected: shouldBeMarked ? 'a leading "* "' : 'no leading "* "',
+      problems: [
+        shouldBeMarked
+          ? 'course is dynamic but the pill has no "* " marker'
+          : 'course is not dynamic but the pill is marked "* "',
+      ],
+    })
+  }
 }
 
 // A `type: 'table'` block with a Course column and a Green Fee column attributes
@@ -241,6 +309,9 @@ function walk(node, ctx, file) {
     // the same table omit it, so also detect the shape structurally.
     if (node.type === 'table' || (Array.isArray(node.headers) && Array.isArray(node.rows))) {
       checkTable(node, file)
+    }
+    if (Array.isArray(node.pills)) {
+      checkPricePill(node, ctx, file)
     }
     // Does this object itself declare a course? (card name/href pattern)
     let objCtx = ctx
@@ -296,7 +367,7 @@ for (const file of CONTENT_FILES) {
 // ── Report ──────────────────────────────────────────────────────────────────
 if (findings.length === 0) {
   console.log(
-    `✅ Pricing narrative check passed — scanned ${CONTENT_FILES.length} content file(s); every labelled/banded/tabulated green fee matches canonical.`,
+    `✅ Pricing narrative check passed — scanned ${CONTENT_FILES.length} content file(s); every labelled/banded/tabulated green fee matches canonical, and every course-listing price pill parses, matches canonical exactly, and carries the right dynamic marker.`,
   )
   process.exit(0)
 }
