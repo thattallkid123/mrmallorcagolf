@@ -346,7 +346,7 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf - Honest Review 2026",
+        title: "Son Muntaner Review: Spain's Best 2025",
         description:
           "Spain's Best Golf Course 2025 (World Golf Awards). Green fees €110–€260 with buggy, 5 minutes from Palma. A PGA professional's honest verdict.",
         imagePath: '/images/son-muntaner-blog/sm-4.webp',
