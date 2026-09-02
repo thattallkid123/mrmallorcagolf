@@ -496,7 +496,7 @@ export const SCORECARD_DATA = {
       {
         "name": "yellow",
         "label": "Yellow",
-        "totalLengthMeters": 5538,
+        "totalLengthMeters": 5470,
         "totalLengthYards": 6056,
         "courseRating": 70.2,
         "slope": 138,
@@ -506,7 +506,7 @@ export const SCORECARD_DATA = {
         "inLengthYards": 3281,
         "holeLengthsMeters": [
           258,
-          259,
+          191,
           332,
           139,
           362,
@@ -549,7 +549,7 @@ export const SCORECARD_DATA = {
       {
         "name": "red",
         "label": "Red",
-        "totalLengthMeters": 4708,
+        "totalLengthMeters": 4636,
         "totalLengthYards": 5149,
         "courseRating": 66.3,
         "slope": 116,
@@ -559,7 +559,7 @@ export const SCORECARD_DATA = {
         "inLengthYards": 2732,
         "holeLengthsMeters": [
           237,
-          233,
+          158,
           295,
           116,
           332,
@@ -567,7 +567,7 @@ export const SCORECARD_DATA = {
           230,
           107,
           256,
-          162,
+          165,
           389,
           109,
           412,
@@ -689,7 +689,7 @@ export const SCORECARD_DATA = {
         "totalLengthMeters": 6305,
         "totalLengthYards": 6895,
         "courseRating": 74.1,
-        "slope": 137,
+        "slope": 133,
         "outLengthMeters": 3259,
         "outLengthYards": 3564,
         "inLengthMeters": 3046,
@@ -1281,8 +1281,8 @@ export const SCORECARD_DATA = {
         "label": "White",
         "totalLengthMeters": 6027,
         "totalLengthYards": 6591,
-        "courseRating": 72.5,
-        "slope": 135,
+        "courseRating": 71.7,
+        "slope": 128,
         "outLengthMeters": 3042,
         "outLengthYards": 3327,
         "inLengthMeters": 2985,
@@ -1334,8 +1334,8 @@ export const SCORECARD_DATA = {
         "label": "Yellow",
         "totalLengthMeters": 5546,
         "totalLengthYards": 6065,
-        "courseRating": 69.7,
-        "slope": 134,
+        "courseRating": 69.1,
+        "slope": 127,
         "outLengthMeters": 2851,
         "outLengthYards": 3118,
         "inLengthMeters": 2695,
@@ -1385,10 +1385,10 @@ export const SCORECARD_DATA = {
       {
         "name": "blue",
         "label": "Blue",
-        "totalLengthMeters": 5065,
+        "totalLengthMeters": 5074,
         "totalLengthYards": 5539,
-        "courseRating": 67.4,
-        "slope": 123,
+        "courseRating": 72.2,
+        "slope": 131,
         "outLengthMeters": 2546,
         "outLengthYards": 2784,
         "inLengthMeters": 2519,
@@ -1401,7 +1401,7 @@ export const SCORECARD_DATA = {
           307,
           139,
           255,
-          280,
+          289,
           274,
           288,
           421,
@@ -1440,8 +1440,8 @@ export const SCORECARD_DATA = {
         "label": "Red",
         "totalLengthMeters": 4530,
         "totalLengthYards": 4954,
-        "courseRating": 64.6,
-        "slope": 111,
+        "courseRating": 68.7,
+        "slope": 126,
         "outLengthMeters": 2387,
         "outLengthYards": 2610,
         "inLengthMeters": 2143,
@@ -1894,7 +1894,7 @@ export const SCORECARD_DATA = {
         "totalLengthMeters": 6543,
         "totalLengthYards": 7155,
         "courseRating": 74.6,
-        "slope": 134,
+        "slope": 133,
         "outLengthMeters": 3223,
         "outLengthYards": 3525,
         "inLengthMeters": 3320,
@@ -2000,7 +2000,7 @@ export const SCORECARD_DATA = {
         "totalLengthMeters": 5617,
         "totalLengthYards": 6143,
         "courseRating": 69.8,
-        "slope": 124,
+        "slope": 138,
         "outLengthMeters": 2723,
         "outLengthYards": 2978,
         "inLengthMeters": 2894,
@@ -2053,7 +2053,7 @@ export const SCORECARD_DATA = {
         "totalLengthMeters": 5250,
         "totalLengthYards": 5741,
         "courseRating": 68.1,
-        "slope": 123,
+        "slope": 132,
         "outLengthMeters": 2604,
         "outLengthYards": 2848,
         "inLengthMeters": 2646,
@@ -2296,7 +2296,7 @@ export const SCORECARD_DATA = {
         "totalLengthMeters": 5128,
         "totalLengthYards": 5608,
         "courseRating": 67.5,
-        "slope": 117,
+        "slope": 134,
         "outLengthMeters": 2565,
         "outLengthYards": 2805,
         "inLengthMeters": 2563,
@@ -2349,7 +2349,7 @@ export const SCORECARD_DATA = {
         "totalLengthMeters": 4872,
         "totalLengthYards": 5328,
         "courseRating": 66.2,
-        "slope": 115,
+        "slope": 131,
         "outLengthMeters": 2457,
         "outLengthYards": 2687,
         "inLengthMeters": 2415,
@@ -2711,55 +2711,31 @@ export const SCORECARD_DATA = {
     "holes": [
       [
         4,
-        4
+        17
       ],
       [
         5,
-        6
+        7
       ],
       [
         4,
-        2
+        1
       ],
       [
         4,
-        16
+        5
       ],
       [
         5,
-        18
+        13
       ],
       [
         3,
-        12
-      ],
-      [
-        4,
-        10
-      ],
-      [
-        4,
-        14
-      ],
-      [
-        3,
-        8
+        15
       ],
       [
         4,
         3
-      ],
-      [
-        5,
-        1
-      ],
-      [
-        3,
-        17
-      ],
-      [
-        4,
-        15
       ],
       [
         4,
@@ -2771,15 +2747,39 @@ export const SCORECARD_DATA = {
       ],
       [
         4,
-        7
-      ],
-      [
-        4,
-        13
+        2
       ],
       [
         5,
-        5
+        6
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        12
       ]
     ],
     "teeVerification": "verified_pdf_manual",
