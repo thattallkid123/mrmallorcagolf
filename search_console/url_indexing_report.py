@@ -23,7 +23,9 @@ from search_console_report import choose_site  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = ROOT / "search_console" / "reports"
 DOWNLOADS_TXT = Path.home() / "Downloads" / "MMG Reports" / "MMG URL Indexing Latest.txt"
-DOWNLOADS_CSV = Path.home() / "Downloads" / "MMG Reports" / "MMG URL Indexing Latest.csv"
+# Reference/ subfolder (2026-09-02): raw CSV is for Claude/Excel use, not a
+# casual read - physically separated from the human-facing .txt above.
+DOWNLOADS_CSV = Path.home() / "Downloads" / "MMG Reports" / "Reference" / "MMG URL Indexing Latest.csv"
 SITEMAP_URL = "https://www.mrmallorcagolf.com/sitemap.xml"
 INSPECTION_ENDPOINT = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
 
@@ -143,6 +145,7 @@ def build_report(limit=None, delay=0.25):
 def save_report(result):
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     DOWNLOADS_TXT.parent.mkdir(parents=True, exist_ok=True)
+    DOWNLOADS_CSV.parent.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime("%Y-%m-%d")
     archive_txt = REPORTS_DIR / f"url-indexing-{stamp}.txt"
     archive_csv = REPORTS_DIR / f"url-indexing-{stamp}.csv"

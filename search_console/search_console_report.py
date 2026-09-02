@@ -18,7 +18,9 @@ from search_console_auth import get_credentials  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = ROOT / "search_console" / "reports"
 DOWNLOADS_TXT = Path.home() / "Downloads" / "MMG Reports" / "MMG Search Console Latest.txt"
-DOWNLOADS_CSV = Path.home() / "Downloads" / "MMG Reports" / "MMG Search Console Latest.csv"
+# Reference/ subfolder (2026-09-02): raw CSV is for Claude/Excel use, not a
+# casual read - physically separated from the human-facing .txt above.
+DOWNLOADS_CSV = Path.home() / "Downloads" / "MMG Reports" / "Reference" / "MMG Search Console Latest.csv"
 API_ROOT = "https://www.googleapis.com/webmasters/v3"
 DEFAULT_SITE_CANDIDATES = [
     "sc-domain:mrmallorcagolf.com",
@@ -299,6 +301,7 @@ def build_report(days, site=None):
 def save_report(result):
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     DOWNLOADS_TXT.parent.mkdir(parents=True, exist_ok=True)
+    DOWNLOADS_CSV.parent.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime("%Y-%m-%d")
     archive_txt = REPORTS_DIR / f"search-console-{stamp}.txt"
     archive_csv = REPORTS_DIR / f"search-console-{stamp}.csv"
