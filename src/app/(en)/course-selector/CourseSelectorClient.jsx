@@ -91,7 +91,7 @@ const COURSES = [
   {
     name: 'Golf de Andratx',
     location: 'Camp de Mar',
-    fees: 'Peak €140 / Low €115 (dynamic)',
+    fees: 'Peak €170 / Low €95 (dynamic)',
     href: '/guides/golf-andratx-review',
     bestFor: ['advanced', 'difficulty', 'weekend'],
     take: 'The hardest recommendation on the list. Bring extra balls and no ego, especially if this is your first Mallorca round.',

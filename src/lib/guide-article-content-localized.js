@@ -213,7 +213,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Club Son Servera",
               "Son Servera",
               "72",
-              "€80-145",
+              "€80-165",
               "6/10",
               "4.0",
               "Parkland relajado e historico"
@@ -618,7 +618,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Club Son Servera",
               "Son Servera",
               "72",
-              "€80-145",
+              "€80-165",
               "6/10",
               "4.0",
               "Entspannter Parklandkurs, historisch"
@@ -1023,7 +1023,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Club Son Servera",
               "Son Servera",
               "72",
-              "€80-145",
+              "€80-165",
               "6/10",
               "4.0",
               "Parkland detendu, historique"
@@ -1428,7 +1428,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Club Son Servera",
               "Son Servera",
               "72",
-              "€80-145",
+              "€80-165",
               "6/10",
               "4.0",
               "Ontspannen parkland, historisch"
@@ -1833,7 +1833,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Club Son Servera",
               "Son Servera",
               "72",
-              "€80-145",
+              "€80-165",
               "6/10",
               "4.0",
               "Avslappnad parkland, historisk"
@@ -2238,7 +2238,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Club Son Servera",
               "Son Servera",
               "72",
-              "€80-145",
+              "€80-165",
               "6/10",
               "4.0",
               "放松型parkland，也有历史"

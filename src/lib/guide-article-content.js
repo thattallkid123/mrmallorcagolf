@@ -669,7 +669,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Golf Son Antem East', 'Llucmajor', '72', '\u20AC90-140', '6/10', '3.5', 'Wide fairways, resort golf'],
           ['Golf Maioris', 'Llucmajor', '72', '\u20AC91-110', '7/10', '3.5', 'Underrated, quieter option'],
           ['Pula Golf', 'Son Servera', '72', '\u20AC80-145', '7/10', '4.0', 'Olazabal redesign, 8 Tour events'],
-          ['Golf Club Son Servera', 'Son Servera', '72', '\u20AC80-145', '6/10', '4.0', 'Relaxed parkland, historic'],
+          ['Golf Club Son Servera', 'Son Servera', '72', '\u20AC80-165', '6/10', '4.0', 'Relaxed parkland, historic'],
           ["Vall d'Or Golf", "S'Horta", '71', '\u20AC99-132', '6/10', '3.5', 'East coast views, strong back nine'],
           ['Capdepera Golf', 'Arta', '72', '\u20AC85-135', '7/10', '3.5', 'Strong back nine and standout mountain hole'],
           ['Canyamel Golf', 'Capdepera', '73', '\u20AC85-145', '6/10', '4.0', 'Most photographed, east coast'],
