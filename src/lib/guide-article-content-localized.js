@@ -256,7 +256,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Palma Pitch & Putt",
-              "Central Palma",
+              "Son Vida - Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
@@ -661,7 +661,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Palma Pitch & Putt",
-              "Central Palma",
+              "Son Vida - Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
@@ -1066,7 +1066,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Palma Pitch & Putt",
-              "Central Palma",
+              "Son Vida - Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
@@ -1471,7 +1471,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Palma Pitch & Putt",
-              "Central Palma",
+              "Son Vida - Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
@@ -1876,7 +1876,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Palma Pitch & Putt",
-              "Central Palma",
+              "Son Vida - Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
@@ -2281,7 +2281,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Palma Pitch & Putt",
-              "Central Palma",
+              "Son Vida - Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
