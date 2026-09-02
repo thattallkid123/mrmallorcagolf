@@ -40,7 +40,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Mallorca es mucho mejor destino de golf de lo que mucha gente piensa. Si uno solo mira los nombres grandes de Portugal o la Costa del Sol, se pierde lo buena que es aquí la combinación de calidad de campos, clima y paisaje."
         },
         {
-          "text": "Soy UK PGA Advanced Professional, una de las titulaciones profesionales senior en el golf británico, y estoy recorriendo todos los campos de la isla. No desde una terraza como un bloguero, sino jugando, comparando y teniendo claro a cuáles enviaría de verdad a mis clientes."
+          "text": "Soy UK PGA Advanced Professional, una de las titulaciones profesionales senior en el golf británico, y estoy recorriendo todos los campos de la isla. No desde una terraza como un bloguero, sino jugando, comparando y teniendo claro a cuáles enviaría de verdad a mis clientes. Puede ver los 24 campos con green fees y filtros en la <a href='/golf-courses'>página de campos de golf de Mallorca</a>."
         },
         {
           "text": "Los mejores campos según el objetivo"
@@ -445,7 +445,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Mallorca ist als Golfziel deutlich besser, als viele Menschen vermuten. Wer nur auf die grossen Namen in Portugal oder an der Costa del Sol schaut, übersieht, wie gut die Kombination aus Platzqualität, Klima und Landschaft hier wirklich ist."
         },
         {
-          "text": "Ich bin UK PGA Advanced Professional - eine der höheren Berufsqualifikationen im britischen Golf - und arbeite mich durch jeden Platz auf der Insel. Nicht als Blogger von der Terrasse aus, sondern spielend, vergleichend und mit klaren Meinungen dazu, wohin ich Kunden wirklich schicken würde."
+          "text": "Ich bin UK PGA Advanced Professional - eine der höheren Berufsqualifikationen im britischen Golf - und arbeite mich durch jeden Platz auf der Insel. Nicht als Blogger von der Terrasse aus, sondern spielend, vergleichend und mit klaren Meinungen dazu, wohin ich Kunden wirklich schicken würde. Alle 24 Plätze mit Greenfees und Filtern finden Sie auf der <a href='/golf-courses'>Mallorca Golfplätze-Seite</a>."
         },
         {
           "text": "Die Top-Plätze - je nach Zweck"
@@ -850,7 +850,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Majorque est un bien meilleur destination golf que ce que beaucoup imaginent. Si l'on ne regarde que les grands noms du Portugal ou de la Costa del Sol, on passe a côté de la qualite reelle de l'equilibre entre parcours, climat et paysage ici."
         },
         {
-          "text": "Je suis UK PGA Advanced Professional - l'une des qualifications professionnelles senior dans le golf britannique - et je fais le tour de tous les parcours de l'île. Pas depuis une terrasse comme un blogueur, mais en les jouant, en les comparant et en sachant lesquels je recommanderais vraiment a mes clients."
+          "text": "Je suis UK PGA Advanced Professional - l'une des qualifications professionnelles senior dans le golf britannique - et je fais le tour de tous les parcours de l'île. Pas depuis une terrasse comme un blogueur, mais en les jouant, en les comparant et en sachant lesquels je recommanderais vraiment a mes clients. Retrouvez les 24 parcours avec les green fees et les filtres sur la <a href='/golf-courses'>page des parcours de golf de Majorque</a>."
         },
         {
           "text": "Les meilleurs parcours selon l'objectif"
@@ -1255,7 +1255,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Mallorca is een veel betere golfbestemming dan veel mensen denken. Wie alleen naar de grote namen in Portugal of aan de Costa del Sol kijkt, mist hoe sterk de combinatie van baankwaliteit, klimaat en landschap hier werkelijk is."
         },
         {
-          "text": "Ik ben UK PGA Advanced Professional - een van de hogere professionele kwalificaties in het Britse golf - en ik werk me door elke baan op het eiland heen. Niet vanaf een terras als blogger, maar spelend, vergelijkend en met duidelijke meningen over waar ik klanten echt naartoe zou sturen."
+          "text": "Ik ben UK PGA Advanced Professional - een van de hogere professionele kwalificaties in het Britse golf - en ik werk me door elke baan op het eiland heen. Niet vanaf een terras als blogger, maar spelend, vergelijkend en met duidelijke meningen over waar ik klanten echt naartoe zou sturen. Bekijk alle 24 banen met greenfees en filters op de <a href='/golf-courses'>Mallorca golfbanen-pagina</a>."
         },
         {
           "text": "De topbanen per doel"
@@ -1660,7 +1660,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Mallorca ar en mycket bättre golfdestination an många tror. Om man bara tittar pa de stora namnen i Portugal eller pa Costa del Sol missar man hur stark kombinationen av banstandard, klimat och landskap faktiskt ar har."
         },
         {
-          "text": "Jag ar UK PGA Advanced Professional - en av de högre professionella kvalifikationerna inom brittisk golf - och jag arbetar mig igenom varje bana pa on. Inte från en terrass som någon bloggare, utan genom att spela dem, jamfora dem och ha tydliga uppfattningar om vart jag verkligen skulle skicka mina klienter."
+          "text": "Jag ar UK PGA Advanced Professional - en av de högre professionella kvalifikationerna inom brittisk golf - och jag arbetar mig igenom varje bana pa on. Inte från en terrass som någon bloggare, utan genom att spela dem, jamfora dem och ha tydliga uppfattningar om vart jag verkligen skulle skicka mina klienter. Se alla 24 banor med greenavgifter och filter på <a href='/golf-courses'>Mallorca golfbanor-sidan</a>."
         },
         {
           "text": "Toppbanorna utifran syfte"
@@ -2065,7 +2065,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "马略卡作为高尔夫目的地，比很多人想象中更强。如果你只盯着葡萄牙或太阳海岸那些更知名的名字，就会低估这里在球场质量、气候和景观之间的整体平衡。"
         },
         {
-          "text": "我叫安迪教练，在上海执教了11年，现在长期在马略卡生活和下场。我也是UK PGA Advanced Professional（英国高尔夫较高等级的职业资格之一）。我看这些球场，不是站在会所露台上写旅游感想，而是真正去打、去比较、去判断哪些场我愿意推荐给客户。"
+          "text": "我叫安迪教练，在上海执教了11年，现在长期在马略卡生活和下场。我也是UK PGA Advanced Professional（英国高尔夫较高等级的职业资格之一）。我看这些球场，不是站在会所露台上写旅游感想，而是真正去打、去比较、去判断哪些场我愿意推荐给客户。全部24个球场的球场费和筛选功能，可以在<a href='/golf-courses'>马略卡高尔夫球场页面</a>查看。"
         },
         {
           "text": "按目的来排的顶级球场"

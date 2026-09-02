@@ -25,41 +25,37 @@ function JsonLd({ data }) {
 
 function buildGolfCoursesSchema(locale, content) {
   const pagePath = buildLocalePath('/golf-courses', locale)
+  const allCourses = GOLF_COURSE_DATA.flatMap((region) => region.courses)
+  const hubUrl = `${SITE_ORIGIN}${pagePath}`
 
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: content.hero.title,
     description: content.ui?.intro1 || content.hero.title,
-    url: `${SITE_ORIGIN}${pagePath}`,
+    url: hubUrl,
     about: {
       '@type': 'Thing',
       name: 'Golf courses in Mallorca',
     },
     mainEntity: {
       '@type': 'ItemList',
-      itemListOrder: 'https://schema.org/ItemListOrderAscending',
-      numberOfItems: 24,
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Son Gual',
-          url: `${SITE_ORIGIN}${buildLocalePath('/guides/son-gual-review', locale)}`,
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Alcanada',
-          url: `${SITE_ORIGIN}${buildLocalePath('/guides/alcanada-review', locale)}`,
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Son Muntaner',
-          url: `${SITE_ORIGIN}${buildLocalePath('/guides/son-muntaner-review', locale)}`,
-        },
-      ],
+      itemListOrder: 'https://schema.org/ItemListUnordered',
+      numberOfItems: allCourses.length,
+      // Every one of the 24 courses is listed; a course without its own
+      // review guide links back to this hub rather than being dropped,
+      // so numberOfItems and itemListElement.length always match - a
+      // mismatch here (previously: 24 claimed, 3 listed) is exactly the
+      // kind of structured-data inconsistency that can cost rich-result
+      // eligibility.
+      itemListElement: allCourses.map((course, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: course.name,
+        url: course.reviewSlug
+          ? `${SITE_ORIGIN}${buildLocalePath(`/guides/${course.reviewSlug}`, locale)}`
+          : hubUrl,
+      })),
     },
   }
 }
