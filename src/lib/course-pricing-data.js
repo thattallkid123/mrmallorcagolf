@@ -8,7 +8,7 @@ export const COURSE_PRICING_BY_NAME = {
   "Capdepera Golf": {"low":79,"peak":125,"dynamic":true,"licenceFee":0},
   "Club de Golf Alcanada": {"low":115,"peak":230,"dynamic":false,"licenceFee":3},
   "Golf Club Son Servera": {"low":80,"peak":145,"dynamic":false,"licenceFee":0},
-  "Golf de Andratx": {"low":90,"peak":140,"dynamic":true,"licenceFee":3},
+  "Golf de Andratx": {"low":115,"peak":140,"dynamic":true,"licenceFee":3},
   "Golf Maioris": {"low":91,"peak":110,"dynamic":false,"licenceFee":0},
   "Golf Pollença": {"low":65,"peak":75,"dynamic":false,"licenceFee":0,"holes":9},
   "Golf Santa Ponsa 1": {"low":77,"peak":126,"dynamic":false,"licenceFee":0},

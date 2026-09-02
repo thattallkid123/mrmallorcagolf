@@ -5,7 +5,7 @@ export const GUIDE_POST_CONTENT = {
   'son-gual-review': {
     en: {
       metadata: {
-        title: 'Son Gual Golf - Honest Review 2026',
+        title: 'Son Gual Golf Review: €115-€165 (2026)',
         description:
           "Andy's favourite course in Mallorca: €115-€165, handicap certificate required. Full breakdown and honest verdict.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
@@ -557,7 +557,7 @@ export const GUIDE_POST_CONTENT = {
   'golf-andratx-review': {
     en: {
       metadata: {
-        title: "Golf Andratx - Honest Review 2026",
+        title: "Golf Andratx Review: €115-€140 (2026)",
         description:
           "7.5/10: €125, longest par 5 in Spain, mountain setting. Andy's honest verdict on Golf de Andratx.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',

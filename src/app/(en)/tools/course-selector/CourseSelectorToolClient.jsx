@@ -164,7 +164,7 @@ const COURSES = [
     id:'andratx', name:'Golf de Andratx',
     area:'Southwest', areaLabel:'Camp de Mar · Southwest',
     diff10:9, scenery:5, prestige:4, value:3, walkability:1,
-    greenFee:'Peak €140 / Low €90 (dynamic)',
+    greenFee:'Peak €140 / Low €115 (dynamic)',
     buggyNote:'Buggy essential; serious elevation throughout',
     bestFor:'The hardest, most dramatic round on the island',
     why:'Built into the hills above Camp de Mar without compromise. The 6th is the longest par 5 in Spain at 609 metres. The rough is genuine and the fairways narrow, so bring extra balls and no ego. It is not suitable for beginners, and the views and difficulty together make it one of the most memorable rounds in Mallorca.',

@@ -83,6 +83,40 @@ def table(client, dimensions, metrics, start_date, end_date, limit=10):
     return rows
 
 
+def dedupe_pages_table(rows, limit=10):
+    """Re-aggregate a single-dimension (pagePath) top-pages table by path,
+    combining views/users and taking a views-weighted average session
+    duration, then re-sort and truncate. Defensive belt-and-braces in case
+    GA4 ever returns >1 row for the same path for a reason other than the
+    pageTitle split this was written to fix."""
+    totals = {}
+    order = []
+    for row in rows:
+        path = row["dimensions"][0]
+        views = float(row["metrics"][0] or 0)
+        users = float(row["metrics"][1] or 0)
+        duration = float(row["metrics"][2] or 0) if len(row["metrics"]) > 2 else 0.0
+        if path not in totals:
+            totals[path] = {"views": 0.0, "users": 0.0, "duration_x_views": 0.0}
+            order.append(path)
+        entry = totals[path]
+        entry["views"] += views
+        entry["users"] += users
+        entry["duration_x_views"] += duration * views
+
+    merged = []
+    for path in order:
+        entry = totals[path]
+        views = entry["views"]
+        avg_duration = entry["duration_x_views"] / views if views else 0.0
+        merged.append({
+            "dimensions": [path],
+            "metrics": [str(int(views)), str(int(entry["users"])), str(avg_duration)],
+        })
+    merged.sort(key=lambda r: float(r["metrics"][0]), reverse=True)
+    return merged[:limit]
+
+
 def build():
     client = get_client()
     period_ranges = ranges()
@@ -97,14 +131,19 @@ def build():
             for name, (start, end) in period_ranges.items()
         },
         "week": {
-            "topPages": table(
+            "topPages": dedupe_pages_table(table(
                 client,
-                ["pagePath", "pageTitle"],
+                # pagePath only - pageTitle is never read downstream (see
+                # weekly-business-check.js), and including it here split a
+                # single URL into duplicate rows whenever GA4 recorded more
+                # than one title for it (e.g. /play-with-a-pro and /about
+                # each showing up twice, one with a near-zero avg time).
+                ["pagePath"],
                 ["screenPageViews", "activeUsers", "averageSessionDuration"],
                 week_start,
                 week_end,
-                limit=20,
-            ),
+                limit=40,
+            ), limit=20),
             "sources": table(
                 client,
                 ["sessionDefaultChannelGroup"],
@@ -131,14 +170,19 @@ def build():
             ),
         },
         "month": {
-            "topPages": table(
+            "topPages": dedupe_pages_table(table(
                 client,
-                ["pagePath", "pageTitle"],
+                # pagePath only - pageTitle is never read downstream (see
+                # weekly-business-check.js), and including it here split a
+                # single URL into duplicate rows whenever GA4 recorded more
+                # than one title for it (e.g. /play-with-a-pro and /about
+                # each showing up twice, one with a near-zero avg time).
+                ["pagePath"],
                 ["screenPageViews", "activeUsers", "averageSessionDuration"],
                 month_start,
                 month_end,
-                limit=20,
-            )
+                limit=40,
+            ), limit=20)
         },
     }
     return data

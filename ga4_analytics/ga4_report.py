@@ -115,20 +115,38 @@ def report_top_pages(client, start_date, end_date):
     print_section("TOP PAGES")
     response = run_report(
         client,
-        dimensions=["pagePath", "pageTitle"],
+        # pagePath only - adding pageTitle here previously split one URL into
+        # multiple rows whenever GA4 recorded more than one title for it (a
+        # redirect/HMR artifact), even though the title was never printed.
+        dimensions=["pagePath"],
         metrics=["screenPageViews", "activeUsers", "averageSessionDuration"],
         start_date=start_date,
         end_date=end_date,
-        limit=15,
+        limit=100,
     )
 
-    print(f"  {'Views':>6}  {'Users':>5}  {'Avg time':>8}  Page")
-    print(f"  {'-'*6}  {'-'*5}  {'-'*8}  {'-'*40}")
+    # Re-aggregate by path (GA4 can still return >1 row per path from other
+    # dimension interactions) and take a views-weighted average session time
+    # so one path always prints once with a genuinely combined figure.
+    totals = {}
     for row in response.rows:
         path = row.dimension_values[0].value
         views = int(row.metric_values[0].value)
         users = int(row.metric_values[1].value)
         duration = float(row.metric_values[2].value)
+        entry = totals.setdefault(path, {"views": 0, "users": 0, "duration_x_views": 0.0})
+        entry["views"] += views
+        entry["users"] += users
+        entry["duration_x_views"] += duration * views
+
+    ranked = sorted(totals.items(), key=lambda item: item[1]["views"], reverse=True)[:15]
+
+    print(f"  {'Views':>6}  {'Users':>5}  {'Avg time':>8}  Page")
+    print(f"  {'-'*6}  {'-'*5}  {'-'*8}  {'-'*40}")
+    for path, entry in ranked:
+        views = entry["views"]
+        users = entry["users"]
+        duration = entry["duration_x_views"] / views if views else 0.0
         mins = int(duration // 60)
         secs = int(duration % 60)
         print(f"  {views:>6,}  {users:>5,}  {mins}m {secs:02d}s    {path}")
