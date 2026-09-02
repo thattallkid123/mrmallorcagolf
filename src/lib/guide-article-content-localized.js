@@ -1628,22 +1628,22 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "sv": {
       "metadata": {
         "title": "Alla 24 golfbanor på Mallorca 2026",
-        "description": "Alla 24 golfbanor på Mallorca klassificerade av en PGA-proffs. Greenfees €55–€260, svårighetsgrader och ärlika omdömen. Uppdaterad 2026."
+        "description": "Alla 24 golfbanor på Mallorca klassificerade av en PGA-proffs. Greenfees €55–€260, svårighetsgrader och ärliga omdömen. Uppdaterad 2026."
       },
       "meta": {
         "badge": "Guide",
-        "readTime": "8 min lasning",
+        "readTime": "8 min läsning",
         "updated": "Mars 2026",
         "title": "De bästa golfbanorna på Mallorca - ärlig rangordning",
         "intro": "Tjugofyra banor på ön. Så skulle jag prioritera dem för en besökare med begränsad tid och höga krav.",
         "related": [
           {
             "slug": "son-gual-review",
-            "title": "Son Gual Golf: arlig recension 2026"
+            "title": "Son Gual Golf: ärlig recension 2026"
           },
           {
             "slug": "alcanada-review",
-            "title": "Alcanada Golf: arlig recension 2026"
+            "title": "Alcanada Golf: ärlig recension 2026"
           },
           {
             "slug": "golf-trip-planning-mallorca",
@@ -1651,19 +1651,19 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           },
           {
             "slug": "best-time-play-golf-mallorca",
-            "title": "Basta tiden att spela golf pa Mallorca"
+            "title": "Bästa tiden att spela golf på Mallorca"
           }
         ]
       },
       "blocks": [
         {
-          "text": "Mallorca ar en mycket bättre golfdestination an många tror. Om man bara tittar pa de stora namnen i Portugal eller pa Costa del Sol missar man hur stark kombinationen av banstandard, klimat och landskap faktiskt ar har."
+          "text": "Mallorca är en mycket bättre golfdestination än många tror. Om man bara tittar på de stora namnen i Portugal eller på Costa del Sol missar man hur stark kombinationen av banstandard, klimat och landskap faktiskt är här."
         },
         {
-          "text": "Jag ar UK PGA Advanced Professional - en av de högre professionella kvalifikationerna inom brittisk golf - och jag arbetar mig igenom varje bana pa on. Inte från en terrass som någon bloggare, utan genom att spela dem, jamfora dem och ha tydliga uppfattningar om vart jag verkligen skulle skicka mina klienter. Se alla 24 banor med greenavgifter och filter på <a href='/golf-courses'>Mallorca golfbanor-sidan</a>."
+          "text": "Jag är UK PGA Advanced Professional - en av de högre professionella kvalifikationerna inom brittisk golf - och jag arbetar mig igenom varje bana på ön. Inte från en terrass som någon bloggare, utan genom att spela dem, jämföra dem och ha tydliga uppfattningar om vart jag verkligen skulle skicka mina klienter. Se alla 24 banor med greenavgifter och filter på <a href='/golf-courses'>Mallorca golfbanor-sidan</a>."
         },
         {
-          "text": "Toppbanorna utifran syfte"
+          "text": "Toppbanorna utifrån syfte"
         },
         {
           "headers": [
@@ -1671,9 +1671,9 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             "Plats",
             "Par",
             "Greenfee",
-            "Svarighet",
-            "Stjarnor",
-            "Bäst for"
+            "Svårighet",
+            "Stjärnor",
+            "Bäst för"
           ],
           "rows": [
             [
@@ -1683,7 +1683,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-165",
               "9/10",
               "5.0",
-              "Serios championship-rond"
+              "Seriös championship-rond"
             ],
             [
               "Club de Golf Alcanada",
@@ -1692,7 +1692,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-230",
               "7/10",
               "5.0",
-              "Spektakulara vyer och tournament-kvalitet"
+              "Spektakulära vyer och tournament-kvalitet"
             ],
             [
               "Son Muntaner",
@@ -1701,7 +1701,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€125-260",
               "7/10",
               "4.5",
-              "Bäst skick, nara Palma"
+              "Bäst skick, nära Palma"
             ],
             [
               "T Golf Calvia",
@@ -1719,7 +1719,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "9/10",
               "4.0",
-              "Den tuffaste testen pa on"
+              "Den tuffaste testen på ön"
             ],
             [
               "Golf Son Vida",
@@ -1728,7 +1728,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-190",
               "8/10",
               "4.5",
-              "Historisk bana, Seve vann har"
+              "Historisk bana, Seve vann här"
             ],
             [
               "T Golf Palma (Puntiro)",
@@ -1737,7 +1737,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€100-140",
               "7/10",
               "4.5",
-              "Ons enda Nicklaus-design"
+              "Öns enda Nicklaus-design"
             ],
             [
               "Golf Santa Ponsa 1",
@@ -1755,7 +1755,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Private access",
               "7/10",
               "3.5",
-              "Lugn, medlemsbetonad kansla"
+              "Lugn, medlemsbetonad känsla"
             ],
             [
               "Golf Santa Ponsa 3",
@@ -1764,7 +1764,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Private access",
               "4/10",
               "3.0",
-              "Nybörjare och narspel"
+              "Nybörjare och närspel"
             ],
             [
               "Golf Son Quint",
@@ -1773,7 +1773,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€70-140",
               "5/10",
               "4.0",
-              "Alla nivaer, Tiger spelade har"
+              "Alla nivåer, Tiger spelade här"
             ],
             [
               "Real Golf de Bendinat",
@@ -1791,7 +1791,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-110",
               "6/10",
               "3.5",
-              "Tramuntana-miljo"
+              "Tramuntana-miljö"
             ],
             [
               "Golf Son Antem West",
@@ -1800,7 +1800,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-135",
               "7/10",
               "4.0",
-              "Resortbana, tuffare an Son Antem East"
+              "Resortbana, tuffare än Son Antem East"
             ],
             [
               "Golf Son Antem East",
@@ -1827,7 +1827,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-145",
               "7/10",
               "4.0",
-              "Olazabal-ombyggnad, 8 Tour-event"
+              "Olazábal-ombyggnad, 8 Tour-event"
             ],
             [
               "Golf Club Son Servera",
@@ -1863,7 +1863,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-145",
               "6/10",
               "4.0",
-              "Mest fotograferad pa ostkusten"
+              "Mest fotograferad på östkusten"
             ],
             [
               "Golf Pollensa",
@@ -1872,7 +1872,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€65-75",
               "4/10",
               "3.5",
-              "Enkel uppvarmning med Tramuntana-vyer"
+              "Enkel uppvärmning med Tramuntana-vyer"
             ],
             [
               "Palma Pitch & Putt",
@@ -1881,7 +1881,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€27-30",
               "2/10",
               "3.0",
-              "Nybörjare och inspelstraning"
+              "Nybörjare och inspelsträning"
             ],
             [
               "Reserva Rotana",
@@ -1890,106 +1890,106 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Hotel only",
               "6/10",
               "3.5",
-              "Bo-och-spela pa privat egendom"
+              "Bo-och-spela på privat egendom"
             ]
           ]
         },
         {
-          "text": "Vill du jamfora alla 24 banor sida vid sida pa en sida? Ladda ner den kostnadsfria jamforelseguiden.",
-          "linkLabel": "Hamta den kostnadsfria jamforelsen →"
+          "text": "Vill du jämföra alla 24 banor sida vid sida på en sida? Ladda ner den kostnadsfria jämförelseguiden.",
+          "linkLabel": "Hämta den kostnadsfria jämförelsen →"
         },
         {
           "text": "Toppbanorna efter syfte"
         },
         {
-          "text": "For en seriost championship-rond: Son Gual"
+          "text": "För en seriös championship-rond: Son Gual"
         },
         {
-          "caption": "Son Gual - det mest kompletta testet pa on"
+          "caption": "Son Gual - det mest kompletta testet på ön"
         },
         {
           "text": "Det är den bana jag spelar mest på Mallorca och den jag oftast rekommenderar när någon vill ha ett riktigt test. Thomas Himmels design använder vind, höjdskillnader och positionering på ett mycket smart sätt. Om ditt spel är i hyggligt skick och du vill ha en bana som måste respekteras är det här första svaret."
         },
         {
-          "text": "Rafa Nadal har kallat den sin favorit pa on. Barack Obama spelade har i november 2024. Greenfeen ligger ungefarligen mellan €115 och €165 beroende pa sasong."
+          "text": "Rafa Nadal har kallat den sin favorit på ön. Barack Obama spelade här i november 2024. Greenfeen ligger ungefärligen mellan €115 och €165 beroende på säsong."
         },
         {
-          "text": "For den mest scenic ronden: Alcanada"
+          "text": "För den mest natursköna ronden: Alcanada"
         },
         {
           "alt": "Alcanada lighthouse view",
           "caption": "Alcanada - fyr, hav och en riktig tournament-bana"
         },
         {
-          "text": "Robert Trent Jones Jr. i norra delen av on, med fyren som konstant riktpunkt. Från back tees och under en klar morgon ar detta en av Europas mest minnesvarda golfmiljoer. Och den ar inte bara vacker: greenerna och placeringen kraver riktigt spel."
+          "text": "Robert Trent Jones Jr. i norra delen av ön, med fyren som konstant riktpunkt. Från back tees och under en klar morgon är detta en av Europas mest minnesvärda golfmiljöer. Och den är inte bara vacker: greenerna och placeringen kräver riktigt spel."
         },
         {
-          "text": "Att sta pa de upphojda bakre tees ar en upplevelse i sig. Man känner sig langt ifran allt, med fyren framfor sig, bukten som öppnar upp sig och en driver som forsvinner ut i tomheten. Det ar precis den kanslan."
+          "text": "Att stå på de upphöjda bakre tees är en upplevelse i sig. Man känner sig långt ifrån allt, med fyren framför sig, bukten som öppnar upp sig och en driver som försvinner ut i tomheten. Det är precis den känslan."
         },
         {
-          "text": "For DP World Tour-kansla: Son Muntaner"
+          "text": "För en östkustöverraskning: Capdepera"
         },
         {
-          "text": "Capdepera ar bättre an många besokare forvantar sig. De första nio ar öppna och spelbara, sedan klattrar back nine upp i kullarna och blir mer taktisk. Par-3-halet nummer 15 ar ett av de basta pa on, med upphojda bergsvyer som gor bilturen vard det redan innan sista putten."
+          "text": "Capdepera är bättre än många besökare förväntar sig. De första nio är öppna och spelbara, sedan klättrar back nine upp i kullarna och blir mer taktisk. Par-3-hålet nummer 15 är ett av de bästa på ön, med upphöjda bergsvyer som gör bilturen värd det redan innan sista putten."
         },
         {
-          "text": "For en DP World Tour-upplevelse: Son Muntaner"
+          "text": "För en DP World Tour-upplevelse: Son Muntaner"
         },
         {
           "alt": "Son Muntaner",
-          "caption": "Son Muntaner - tournament-standard nara Palma"
+          "caption": "Son Muntaner - tournament-standard nära Palma"
         },
         {
-          "text": "Utsedd till Spaniens basta golfbana 2025, tekniskt stark, alltid mycket val presenterad och enkel att lagga in i en vistelse i Palma. Om någon vill ha hog kvalitet utan lang resa ar Son Muntaner ett mycket logiskt val."
+          "text": "Utsedd till Spaniens bästa golfbana 2025, tekniskt stark, alltid mycket väl presenterad och enkel att lägga in i en vistelse i Palma. Om någon vill ha hög kvalitet utan lång resa är Son Muntaner ett mycket logiskt val."
         },
         {
-          "text": "For den tuffaste testen: Golf de Andratx"
+          "text": "För den tuffaste testen: Golf de Andratx"
         },
         {
-          "caption": "Andratx - svart, krävande och inte det minsta forlatande"
+          "caption": "Andratx - svårt, krävande och inte det minsta förlåtande"
         },
         {
-          "text": "Allmant betraktad som en av de svaraste banorna pa on. En riktig championship-layout i sydvast där misstag kostar mycket. Vill man ha golf som test far man det har."
+          "text": "Allmänt betraktad som en av de svåraste banorna på ön. En riktig championship-layout i sydväst där misstag kostar mycket. Vill man ha golf som test får man det här."
         },
         {
-          "text": "Funderar du pa Andratx? Jag gar igenom layouten, vinden, vilken tee som passar och om banan faktiskt passar ditt spel.",
-          "linkLabel": "Las Golf de Andratx-recensionen →"
+          "text": "Funderar du på Andratx? Jag går igenom layouten, vinden, vilken tee som passar och om banan faktiskt passar ditt spel.",
+          "linkLabel": "Läs Golf de Andratx-recensionen →"
         },
         {
-          "text": "For den vackraste miljoen: Canyamel"
+          "text": "För den vackraste miljön: Canyamel"
         },
         {
           "alt": "Canyamel Golf",
           "caption": "Canyamel - ostkust, naturpark och tydlig identitet"
         },
         {
-          "text": "Vid kanten av Llevant naturpark, med havsutsikt och mycket narvaro. Bilturen från Palma ar vard det om man varderar en golfdag pa mer an bara scoren."
+          "text": "Vid kanten av Llevant naturpark, med havsutsikt och mycket närvaro. Bilturen från Palma är värd det om man värderar en golfdag på mer än bara scoren."
         },
         {
-          "text": "Ocksa tydligt vard att spela: Golf Santa Ponsa 1"
+          "text": "Också tydligt värt att spela: Golf Santa Ponsa 1"
         },
         {
           "alt": "Santa Ponsa 1",
           "caption": "Santa Ponsa 1 - Tourhistoria och mycket driver"
         },
         {
-          "text": "Den enda offentliga banan i Santa Ponsa-gruppen, med riktig European Tour-historia. Breda fairways, langd och for många spelare en bana som ger tillbaka sjalvfortroendet med driver. Helt annan karaktar an Son Gual och Alcanada, men klart relevant."
+          "text": "Den enda offentliga banan i Santa Ponsa-gruppen, med riktig European Tour-historia. Breda fairways, längd och för många spelare en bana som ger tillbaka självförtroendet med driver. Helt annan karaktär än Son Gual och Alcanada, men klart relevant."
         },
         {
-          "text": "For nyborjare eller blandade grupper: Son Quint eller Son Antem East"
+          "text": "För nybörjare eller blandade grupper: Son Quint eller Son Antem East"
         },
         {
           "alt": "Son Quint Golf",
-          "caption": "Son Quint - oppnare, vanligare och mycket mer forlatande"
+          "caption": "Son Quint - öppnare, vänligare och mycket mer förlåtande"
         },
         {
-          "text": "Om man inte vill ha ett rent test utan en bra dag for olika nivaer passar de har banorna bättre. Son Quint ar oppnare och snallare. Son Antem East fungerar ocksa bra for grupper som inte vill att allt ska vara maximalt."
+          "text": "Om man inte vill ha ett rent test utan en bra dag för olika nivåer passar de här banorna bättre. Son Quint är öppnare och snällare. Son Antem East fungerar också bra för grupper som inte vill att allt ska vara maximalt."
         },
         {
           "items": [
             [
               "24",
-              "Banor pa on"
+              "Banor på ön"
             ],
             [
               "€55-260",
@@ -1997,35 +1997,35 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "300",
-              "Soldagar per ar"
+              "Soldagar per år"
             ],
             [
               "12 man",
-              "Spelbart aret runt"
+              "Spelbart året runt"
             ]
           ]
         },
         {
-          "text": "Kanda kopplingar vart att kanna till"
+          "text": "Kända kopplingar värt att känna till"
         },
         {
-          "text": "Son Gual: Obama spelade där i november 2024 och Nadal spelar där regelbundet. Son Quint: Tiger Woods och Charlie spelade där i juli 2022. Det ar inte allt, men det sager något om synligheten och kvaliteten hos de banorna."
+          "text": "Son Gual: Obama spelade där i november 2024 och Nadal spelar där regelbundet. Son Quint: Tiger Woods och Charlie spelade där i juli 2022. Det är inte allt, men det säger något om synligheten och kvaliteten hos de banorna."
         },
         {
-          "text": "Arlig sammanfattning"
+          "text": "Ärlig sammanfattning"
         },
         {
           "text": "Om jag bara fick rekommendera två banor för en vecka på Mallorca skulle det vara Son Gual och Alcanada. Son Muntaner för tävlingskänsla nära Palma. Andratx för det tuffaste testet. Canyamel för landskapet. Santa Ponsa 1 för bredd, driver och historia. För nybörjare eller blandade grupper skulle jag hellre nämna Son Quint eller Son Antem East."
         },
         {
-          "text": "On ar en av Europas bäst bevarade golfhemligheter. När jag kom från Shanghai och sag hur forhallandena har var i januari medan stora delar av Nordeuropa var stangt blev det omedelbart tydligt for mig."
+          "text": "Ön är en av Europas bäst bevarade golfhemligheter. När jag kom från Shanghai och såg hur förhållandena här var i januari medan stora delar av Nordeuropa var stängt blev det omedelbart tydligt för mig."
         },
         {
           "text": "Vill du spela en av dessa banor med ett PGA-proffs vid din sida?",
           "linkLabel": "Se play-with-a-pro upplevelsen →"
         },
         {
-          "text": "Vill du gora detta till en tydligt planerad golfdag?",
+          "text": "Vill du göra detta till en tydligt planerad golfdag?",
           "linkLabel": "Se Play With A Pro-dagen"
         }
       ]
