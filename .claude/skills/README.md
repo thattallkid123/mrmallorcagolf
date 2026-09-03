@@ -8,6 +8,7 @@ These are **separate from the Drive-mastered `MMG_SKILL_*` docs** synced by `SKI
 |---|---|
 | `publish-course-guide` | Publishing a new course review end-to-end |
 | `pricing-change` | Any price changes anywhere |
+| `verify-course-pricing` | Checking whether recorded course pricing is still true (annual check) — distinct from applying a known change |
 | `ship` | Deploying any change — the mandatory completion gate |
 | `localize-check` | Any copy change touching locales or shared content |
 | `meta-ctr` | Writing/rewriting meta descriptions and titles |
