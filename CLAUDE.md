@@ -7,7 +7,7 @@
 > - **`SOURCE-OF-TRUTH-MAP.md`** — canonical source for each data type
 > - **`CLAUDE.md`** — operating contract and rules
 
-> **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update`, `/health-check`, `/email-newsletter`, `/api-route-safety` — over re-deriving these from this file.
+> **Skills:** Recurring workflows are encoded as skills in `.claude/skills/` (see `.claude/skills/README.md`). Prefer invoking the relevant skill — `/publish-course-guide`, `/pricing-change`, `/verify-course-pricing`, `/ship`, `/localize-check`, `/meta-ctr`, `/update-testimonials`, `/add-site-photos`, `/seo-review`, `/new-prototype`, `/expand-guide`, `/scorecard-update`, `/health-check`, `/email-newsletter`, `/api-route-safety` — over re-deriving these from this file.
 
 ---
 
@@ -160,7 +160,7 @@ Edit the pricing master Google Sheet, then from mmg-tools run `.\mmg.ps1 pricing
 - `.\mmg.ps1 pricing-gaps` — every course where a pricing field is missing or set to a placeholder zero, cross-referenced against Hermes' review queue. A `0` in this data has repeatedly meant "unconfirmed", not "free" (found 2026-08-27 in `toDiscount` and `buggyMax`), so treat zeros as suspect until this says otherwise.
 - `.\mmg.ps1 live-extras` — fetches the ~10 club sites with a static rate card and compares their live buggy/club/trolley prices against MMG data. Excludes the Golfmanager courses (Arabella x4, T-Golf x2, Son Antem): their prices are JavaScript-rendered, so those stay a manual check.
 
-For any price change use the `/pricing-change` skill (full surface sweep). Reference maps: `docs/content-architecture.md`, `docs/pricing-change-checklist.md`, `docs/pricing-surfaces-inventory.md` (its "Course pricing and golf-cost reference layers" section — the rest of that file is MMG *service* pricing, a different domain; the full course-pricing architecture is `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1). Santa Ponsa 2 and 3 can stay in private reference notes even when not bookable.
+For any price change use the `/pricing-change` skill (full surface sweep). To **check whether recorded prices are still true** (the annual verification, a different job) use `/verify-course-pricing` — it points at `mmg-tools/pricing/archive/live-price-checks/PRICING-SOURCES-MASTER-2026-09-02.md`, which holds every course's real rates URL and per-platform method, and it says to read Hermes' Telegram alerts and the Pricing Review Queue *before* any manual sweep. Reference maps: `docs/content-architecture.md`, `docs/pricing-change-checklist.md`, `docs/pricing-surfaces-inventory.md` (its "Course pricing and golf-cost reference layers" section — the rest of that file is MMG *service* pricing, a different domain; the full course-pricing architecture is `mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1). Santa Ponsa 2 and 3 can stay in private reference notes even when not bookable.
 
 **Auto-synced when you run `.\mmg.ps1 pricing-publish` (or the older `.\mmg.ps1 site` step):**
 - Course-listing pills in `src/lib/golf-courses-data.js` (e.g., `Peak €165 / Low €115`)
