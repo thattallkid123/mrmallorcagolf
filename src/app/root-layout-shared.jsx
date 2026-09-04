@@ -271,6 +271,14 @@ export default function SiteRootLayout({ lang, children }) {
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
+        {/* Keep strategy="afterInteractive" (loads on page load, not gated on user
+            interaction). A 2026-05-25 Lighthouse-driven change deferred this until
+            a click/tap/keydown or a 3s timeout, which silently undercounted real
+            visitors who bounced before either fired - GA4 organic sessions dropped
+            to a fraction of Search Console's click count for ~9 weeks before being
+            caught and reverted on 2026-07-27 (commit 1c5e259). Don't re-gate this
+            behind interaction for a Lighthouse score again without re-checking GA4
+            vs Search Console afterward. */}
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             (function () {
