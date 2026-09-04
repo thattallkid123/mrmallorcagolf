@@ -53,7 +53,7 @@
       "edits": [
         {
           "date": "2026-09-05",
-          "commit": "PENDING",
+          "commit": "74abf19",
           "summary": "First real CTR attempt: added Balearic Islands framing to meta description + opening paragraph (top 2 queries by volume, ranking pos 17-18, were previously unaddressed anywhere on the page)"
         }
       ]
