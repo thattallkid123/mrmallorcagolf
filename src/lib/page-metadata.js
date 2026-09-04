@@ -275,7 +275,7 @@ export function buildPlayWithAProExplainedMetadata(locale = 'en') {
 
 const PLAY_WITH_A_PRO_METADATA = {
   en: {
-    title: 'Play With A Pro - Golf Day in Mallorca',
+    title: 'Golf Coaching Mallorca - Play With A Pro',
     socialImage: '/images/andy-coaching-client.jpg',
     description: getPlayWithAProMetadataDescription('en'),
     keywords: [
@@ -284,14 +284,16 @@ const PLAY_WITH_A_PRO_METADATA = {
       'play golf with a pro Majorca',
       'Mallorca golf pro',
       'PGA golf pro Mallorca',
+      'golf lessons Mallorca',
+      'golf coaching Mallorca',
     ],
   },
   de: {
-    title: 'Mit Pro spielen - Mallorca Golf',
+    title: 'Golfunterricht Mallorca - Mit Pro spielen',
     description: getPlayWithAProMetadataDescription('de'),
   },
   es: {
-    title: 'Jugar con Pro - Golf Mallorca',
+    title: 'Clases de Golf Mallorca - Jugar con Pro',
     description: getPlayWithAProMetadataDescription('es'),
   },
   fr: {

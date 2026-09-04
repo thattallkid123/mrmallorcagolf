@@ -245,6 +245,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "intro": "Anything not covered here is best asked directly. I reply personally.",
     "items": [
       {
+        "q": "Do you offer regular golf lessons, like a half-hour session?",
+        "a": "No - I don't run short, stand-alone lessons on the range. Everything I do is built around Play With A Pro: a full day playing 18 holes together, with coaching built into real golf rather than isolated drills. It's a bigger investment than a normal half-hour lesson, but the change tends to stick, because you're applying it under real pressure, on a real course, not on a mat."
+      },
+      {
         "q": "Do you offer lessons for complete beginners?",
         "a": "Yes. All my sessions take place on the golf course, not the driving range. With some great par 3s and short courses here in Mallorca, beginners can start playing real golf straight away and see the skills they need to develop. Range-only sessions are not something I offer, but I am happy to point you toward someone who does."
       },

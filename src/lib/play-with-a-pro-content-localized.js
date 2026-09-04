@@ -209,6 +209,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "intro": "Lo que no esté aquí, mejor pregúntelo directamente. Respondo personalmente.",
       "items": [
         {
+          "q": "¿Ofrece clases de golf normales, de media hora por ejemplo?",
+          "a": "No - no doy clases cortas e individuales en el range. Todo gira en torno a Play With A Pro: un día completo jugando 18 hoyos juntos, con coaching integrado en golf real, no en ejercicios aislados. Es una inversión mayor que una clase normal de media hora, pero el cambio suele quedarse, porque lo aplica bajo presión real, en un campo real, no sobre una esterilla."
+        },
+        {
           "q": "¿Ofrece clases para principiantes absolutos?",
           "a": "Sí. Todas mis sesiones se hacen en el campo, no en el range. Con algunos buenos campos de par 3 y recorridos cortos aquí en Mallorca, los principiantes pueden empezar a jugar golf de verdad desde el principio y ver las habilidades que necesitan desarrollar."
         },
@@ -472,6 +476,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Häufige Fragen.",
       "intro": "Was hier nicht beantwortet wird, fragen Sie am besten direkt. Ich antworte persönlich.",
       "items": [
+        {
+          "q": "Bieten Sie normalen Golfunterricht an, z. B. eine halbe Stunde?",
+          "a": "Nein - ich gebe keine kurzen Einzelstunden auf der Range. Alles ist auf Play With A Pro ausgerichtet: ein ganzer Tag, an dem wir gemeinsam 18 Löcher spielen, mit Coaching, das in echtes Golf eingebettet ist, nicht in isolierte Übungen. Das ist eine größere Investition als eine normale halbe Stunde Unterricht, aber die Veränderung bleibt eher bestehen, weil Sie sie unter echtem Druck auf dem echten Platz anwenden, nicht auf der Matte."
+        },
         {
           "q": "Bieten Sie Stunden für absolute Anfänger an?",
           "a": "Ja. Alle meine Sessions finden auf dem Golfplatz statt, nicht auf der Range. Mit einigen guten Par-3-Plätzen und Kurzplätzen hier auf Mallorca können Anfänger sofort echtes Golf spielen und sehen, welche Fähigkeiten sie entwickeln müssen."
@@ -737,6 +745,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "intro": "Ce qui n'est pas couvert ici se pose directement. Je réponds personnellement.",
       "items": [
         {
+          "q": "Proposez-vous des cours de golf classiques, par exemple d'une demi-heure ?",
+          "a": "Non - je ne donne pas de cours courts et individuels sur le practice. Tout est construit autour de Play With A Pro : une journée complète à jouer 18 trous ensemble, avec un coaching intégré au golf réel, pas à des exercices isolés. C'est un investissement plus important qu'un cours classique d'une demi-heure, mais le changement a tendance à durer, car vous l'appliquez sous pression réelle, sur un vrai parcours, pas sur un tapis."
+        },
+        {
           "q": "Proposez-vous des cours pour grands débutants ?",
           "a": "Oui. Toutes mes sessions se déroulent sur le parcours, pas sur le practice. Avec de bons par 3 et des parcours courts à Majorque, les débutants peuvent jouer au vrai golf dès le départ et voir les compétences qu'ils doivent développer."
         },
@@ -999,6 +1011,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Veelgestelde vragen.",
       "intro": "Wat hier niet staat, kunt u het beste direct vragen. Ik reageer persoonlijk.",
       "items": [
+        {
+          "q": "Geeft u gewone golflessen, bijvoorbeeld van een half uur?",
+          "a": "Nee - ik geef geen korte, individuele lessen op de driving range. Alles draait om Play With A Pro: een volledige dag samen 18 holes spelen, met coaching die is ingebed in echt golf, niet in losse oefeningen. Het is een grotere investering dan een gewone les van een half uur, maar de verandering blijft vaker hangen, omdat u het toepast onder echte druk, op een echte baan, niet op een matje."
+        },
         {
           "q": "Geeft u lessen aan absolute beginners?",
           "a": "Ja. Al mijn sessies vinden plaats op de golfbaan, niet op de driving range. Met een aantal goede par 3-banen en korte banen hier op Mallorca kunnen beginners meteen echt golf spelen en zien welke vaardigheden ze nodig hebben."
@@ -1264,6 +1280,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "intro": "Det som inte täcks här ställer du bäst direkt. Jag svarar personligen.",
       "items": [
         {
+          "q": "Erbjuder du vanliga golflektioner, till exempel en halvtimme?",
+          "a": "Nej - jag ger inga korta, enskilda lektioner på rangen. Allt bygger på Play With A Pro: en hel dag då vi spelar 18 hål tillsammans, med coaching inbyggd i riktig golf, inte isolerade övningar. Det är en större investering än en vanlig halvtimmeslektion, men förändringen brukar sitta kvar, eftersom du använder den under verkligt tryck, på en riktig bana, inte på en matta."
+        },
+        {
           "q": "Ger du lektioner för totala nybörjare?",
           "a": "Ja. Alla mina sessioner sker på golfbanan, inte på rangen. Med några bra par 3-banor och kortbanor här på Mallorca kan nybörjare börja spela riktigt golf direkt och se vilka färdigheter de behöver utveckla."
         },
@@ -1526,6 +1546,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "常见问题。",
       "intro": "这里没有涵盖的内容，直接问我就好。我会亲自回复。",
       "items": [
+        {
+          "q": "你们提供普通的高尔夫课程吗？比如半小时那种？",
+          "a": "不提供。我不开设短时、单独的练习场课程。我所有的内容都围绕Play With A Pro展开：一整天与你一起打18洞，教学融入真实的比赛场景，而不是孤立的练习。这比普通半小时课程投入更大，但效果往往更持久，因为你是在真实球场、真实压力下运用所学，而不是在练习垫上。"
+        },
         {
           "q": "您接受完全零基础的初学者吗？",
           "a": "接受。我所有的课程都在球场上进行，不在练习场。马略卡有不少不错的三杆洞球场和短球场，初学者可以一上来就打真正的高尔夫，直接看到自己需要发展哪些技能。"
