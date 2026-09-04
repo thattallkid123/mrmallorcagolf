@@ -17,9 +17,22 @@ These are **separate from the Drive-mastered `MMG_SKILL_*` docs** synced by `SKI
 | `seo-review` | GA4/Search Console review → page-level actions |
 | `new-prototype` | New interactive tool/quiz/selector, incl. zh deployment checklist |
 | `expand-guide` | Adding Common Questions / new facts to a live guide |
-| `scorecard-update` | Par/SI/distance changes — the manual four-step chain |
+| `scorecard-update` | Par/SI/distance changes and the periodic "is what's recorded still true" check — mostly automated now (one command + two genuinely-manual steps), not a hand chain |
 | `health-check` | Read-only recon sweep for drift/cleanup candidates across repo, tools, and Drive |
 | `email-newsletter` | Launching a newsletter programme, drafting an issue, or wiring a new lead-magnet email sequence |
+| `api-route-safety` | Adding or editing anything under `src/app/api/`, or any new form/tool/integration that collects data |
+
+**This table is a quick-scan aid, not the source of truth for what a skill
+does or which skills exist** — each skill's own frontmatter `description` is
+authoritative, and Claude Code's live skill list (shown at the top of every
+session) is generated from those files directly, so it can't go stale the
+way a hand-copied table can. Confirmed drifting 2026-09-05: this table still
+called `scorecard-update` "the manual four-step chain" after that skill was
+rewritten to describe a mostly-automated one, and `api-route-safety` was
+missing entirely despite existing since before this table's last edit — the
+table update didn't happen in the same commit as either skill change,
+despite the rule below already saying it should. If this table and a
+skill's own file ever disagree, the skill file is correct.
 
 ## Using these skills in other tools
 
@@ -33,3 +46,4 @@ These are **separate from the Drive-mastered `MMG_SKILL_*` docs** synced by `SKI
 - Keep each skill procedural: ordered steps, exact file paths, verification commands.
 - **Edit only in `.claude/skills/`** (master). Then run `npm run skills:sync` to refresh `.codex/skills/` and commit both directories together.
 - When a workflow changes (new file in the publish chain, new pricing surface), update the skill in the same commit as the change — stale skills are worse than no skills.
+- **When you add, remove, or meaningfully change what a skill does, update this table's row in the same commit.** This is a separate step from updating the skill file itself - the two drifted apart in practice (see the note above the table) despite this rule already existing, precisely because it's easy to fix the skill and forget the summary lives in a second place too.
