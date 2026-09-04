@@ -1,5 +1,7 @@
 # Mr Mallorca Golf Backlink Action Plan
 
+**Superseded 2026-09-05 — see `docs/BACKLINK_ACTION_PLAN.md` for the live, current plan.** This version never left the planning stage (no outreach, no tracker, no media kit were ever created); kept here as historical reference only.
+
 Last updated: 2026-05-24
 
 ## Goal

@@ -35,7 +35,7 @@ Suggested cadence: ~2 course reviews/month → full set complete by early 2027. 
 
 ## Article/guide ideas surfaced by query data (2026-07-17 Search Console pull)
 
-- **Localized coaching page (ES/DE)** — "clases de golf mallorca" (56 impr, position 10.9), "golfschule mallorca" (21 impr, position 7.4), "golfunterricht mallorca" (11 impr, position 20.9) are all landing on the homepage with no dedicated page to answer them. A proper ES/DE coaching-intent page (not just a translated homepage) would likely convert this into ranked, enquiry-generating traffic.
+- ~~**Localized coaching page (ES/DE)**~~ — **Addressed 2026-09-05.** `/coaching` in all 7 locales is a deliberate noindex redirect to `/play-with-a-pro` (Andy doesn't offer standalone lessons, only Play With A Pro/Signature Day), so the fix was making `/play-with-a-pro` itself target this query cluster rather than building a new page. EN/DE/ES titles now lead with the coaching/lesson term, plus a new FAQ item live in all 7 locales explaining PWAP vs. a normal lesson. FR/NL/SV/ZH title work was checked and skipped - zero query volume for lesson-intent terms in those locales as of 2026-09-05, revisit if that changes.
 - **"Mallorca golf card 2026"** — appeared organically in Search Console with a real click at 100% CTR (1/1). Worth a short FAQ answer somewhere (Golf Cost guide is the natural home) once the actual product/scheme is confirmed with Andy.
 - Keep an eye on **"son muntaner golf"** ranking on `/es/guides/son-muntaner-review` at position ~29-32 — reasonable near-term promotion candidate once other work is done (more internal links, or an ES-specific FAQ expansion).
 

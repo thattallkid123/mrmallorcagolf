@@ -29,6 +29,7 @@ Anything added here should be a **live reference**, not a session log. Dated che
 | `prototype-guide.md` | Image sourcing rules and `/images/` paths for tools/prototypes |
 | `PARTNER_REFERRAL_CODES.md` | Partner referral/reader-bonus codes — internal-only, keeps public copy reader-facing |
 | `growth-roadmap.md` | Live course-review backlog and content-priority tracking |
+| `BACKLINK_ACTION_PLAN.md` | Live backlink/outreach plan — target tiers, lead assets, outreach tracker/media-kit status |
 | `site-quickstart.md` | One-command readiness check pointer |
 | `site-handover-guide.md` | Short handover orientation |
 | `site-rebuild-guide.md` | History/context of the multilingual rebuild |
