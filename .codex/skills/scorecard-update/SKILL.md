@@ -39,9 +39,41 @@ The **editable machine master** is `mmg-tools/pricing/edit/confirmed/scorecards.
 - Grep the repo for the old value scoped to that course (steps 4-5) — zero live hits.
 - `npm run check:content`; add `npm run check:i18n-release` if localized guide content changed.
 
+**An audit reporting a course "OK" is not proof the PDF was actually read.**
+Confirmed 2026-09-02: the OCR pipeline behind `scorecard-audit` failed on
+17 of 24 course PDFs, and one failure mode compared two *derived* copies
+against each other rather than the source PDF at all — a course can show as
+verified while nobody, human or script, ever actually read its scorecard.
+If a course's audit result looks suspicious, or it's been a while since
+anyone opened the actual PDF, read it directly instead of trusting the
+report:
+
+- The `Read` tool (vision) on the PDF/PNG in
+  `mmg-tools/pricing/archive/scorecard-pdf-audit-images/` works far better
+  than the OCR pipeline for most of these 24 courses — legible by eye where
+  OCR fails.
+- For dense or rotated tables (confirmed on T Golf Calvià, T Golf Palma,
+  Son Vida), crop and rotate first with PIL
+  (`im.crop(...).rotate(90, expand=True)`) rather than trust a glance-read —
+  two courses' ratings were misread on the first pass and only caught by
+  re-cropping.
+- **Cross-check against the card's own printed totals** — sum the
+  transcribed hole values and compare to the printed OUT/TOTAL. A real
+  transcription error shows up as a total that doesn't add up.
+- If a single number is genuinely ambiguous on the card itself (e.g. one
+  course's card printed a single "SLOPE" column where the master needs
+  separate rating and slope fields), check the club's own website before
+  guessing — it may state explicitly what the card alone doesn't.
+- If a PDF read via a fetch tool comes back "corrupted" or unreadable, it
+  usually isn't - the file is typically already saved locally regardless;
+  extract it with `pypdf` (`PdfReader(path)`, join `page.extract_text()`)
+  before concluding the source is genuinely unreadable.
+
 ## Annual/periodic check (not applying a known change)
 
 `.\mmg.ps1 scorecard-audit` and `.\mmg.ps1 scorecard-sources` (same two commands as above) are also the whole "is what's recorded still true" check for scorecard data — the equivalent role `/verify-course-pricing` plays for green fees, but there's no separate skill wrapping these two, because there isn't more to the process than running them and fixing whatever they flag via the update chain above.
+
+**Unlike green-fee pricing, nothing scrapes or alerts on this data** — Hermes checks pricing 4x/week automatically; scorecards have no cron at all, because par/SI/distances are static reference data that only changes when a club actually revises its course. Run these two commands occasionally (annually is enough) or when triggered by a specific signal - a club visibly updating its printed card, or a discrepancy someone spots while playing - not on a schedule.
 
 ## Ship
 
