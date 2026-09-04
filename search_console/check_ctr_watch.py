@@ -39,8 +39,40 @@ from search_console_report import get_session, choose_site, date_range, query  #
 
 MIN_IMPRESSIONS = 40  # below this, CTR is too noisy to act on
 MAX_POSITION = 15  # below this rank, low CTR is a position problem, not a copy problem
-EXPECTED_CTR_AT_GOOD_POSITION = 0.05  # rough benchmark for position <= 10
 LOCAL_INTENT_MARKERS = ["near me", "in de buurt", "cerca de mi", "cerca", "in der nähe"]
+
+# Rough published organic CTR-by-position benchmarks (industry aggregate
+# studies, e.g. Backlinko/Advanced Web Ranking). Position-adjusted rather
+# than a single flat rate - a flat 5% (this script's number through
+# 2026-09-05, calibrated for position <=10 per its own since-removed
+# comment) overstated the "expected" clicks for anything ranking below
+# ~10 by 3-4x. Confirmed 2026-09-05: /golf-courses at position 14.6 was
+# flagged "6 clicks vs ~38 expected" under the flat benchmark; the
+# realistic expected figure at that position is ~10 clicks - a real but
+# much smaller gap, and one where climbing rank (not another copy
+# rewrite) is the actual lever. Interpolated linearly between the nearest
+# two anchor points; positions beyond 20 use the pos-20 floor.
+EXPECTED_CTR_BY_POSITION = {
+    1: 0.28, 2: 0.15, 3: 0.11, 4: 0.08, 5: 0.07, 6: 0.05, 7: 0.04, 8: 0.03,
+    9: 0.028, 10: 0.025, 11: 0.02, 12: 0.018, 13: 0.016, 14: 0.014, 15: 0.013,
+    20: 0.007,
+}
+
+
+def expected_ctr_for_position(position):
+    anchors = sorted(EXPECTED_CTR_BY_POSITION)
+    if position <= anchors[0]:
+        return EXPECTED_CTR_BY_POSITION[anchors[0]]
+    if position >= anchors[-1]:
+        return EXPECTED_CTR_BY_POSITION[anchors[-1]]
+    for lo, hi in zip(anchors, anchors[1:]):
+        if lo <= position <= hi:
+            span = hi - lo
+            frac = (position - lo) / span if span else 0
+            return EXPECTED_CTR_BY_POSITION[lo] + (EXPECTED_CTR_BY_POSITION[hi] - EXPECTED_CTR_BY_POSITION[lo]) * frac
+    return EXPECTED_CTR_BY_POSITION[anchors[-1]]
+
+
 EDIT_LOG_PATH = Path(__file__).resolve().parent / "ctr-edit-log.json"
 TOO_SOON_DAYS = 21  # GSC needs real accumulated impressions before a CTR change is trustworthy
 
@@ -87,7 +119,7 @@ def main():
 
     flagged = []
     for r in page_rows:
-        expected = r["impressions"] * EXPECTED_CTR_AT_GOOD_POSITION
+        expected = r["impressions"] * expected_ctr_for_position(r["position"])
         if r["clicks"] < expected * args.threshold:
             flagged.append(r)
 
@@ -104,7 +136,7 @@ def main():
     too_soon = []
     for r in flagged:
         page = r["keys"][0].replace("https://www.mrmallorcagolf.com", "").replace("https://mrmallorcagolf.com", "")
-        expected = r["impressions"] * EXPECTED_CTR_AT_GOOD_POSITION
+        expected = r["impressions"] * expected_ctr_for_position(r["position"])
         ctr = r["clicks"] / r["impressions"] * 100
         print(f"  {page}")
         print(f"    impr={r['impressions']}  clicks={r['clicks']}  pos={r['position']:.1f}  CTR={ctr:.1f}%  (expected ~{expected:.0f} clicks)")
