@@ -89,9 +89,9 @@ Unchanged from May. Be useful first, mention the relevant guide/tool only when i
 
 ## Missing Assets To Create (revised)
 
-1. **One-page media kit** — still needed. Andy bio, PGA credential, headshot, logo, 3 expert topics (Mallorca golf courses, golf trip planning, on-course coaching), contact details. Not built yet.
+1. ~~One-page media kit~~ — **done 2026-09-05.** `Partnerships/MMG_MEDIA_KIT.md` (Drive) - general-market version for editorial/hotel/golf-club outreach, tool-led per the lead-assets table above. `Partnerships/MMG_PARTNER_ONE_PAGER.md` remains the separate China/DMC-specific version, don't merge the two - different audience, different framing.
 2. ~~Linkable data asset ("Mallorca Golf Cost Index 2026")~~ — **done, it's `/tools/green-fees`.** Removed from this list.
-3. **Partner outreach tracker** — still needed. Columns: target, contact, category, relationship, best asset to pitch (tool or guide), first contact date, follow-up date, result, link URL, notes.
+3. ~~Partner outreach tracker~~ — **done 2026-09-05.** `Partnerships/MMG_BACKLINK_PROSPECT_LIST.csv` (Drive), same column pattern as the existing `MMG_DMC_PROSPECT_LIST.csv`. Tier 1 (editorial) and Tier 2 (golf clubs) have real named targets; Tiers 3-5 are placeholder rows marked "To Research" - real hotel/villa/concierge/practical-partner names still need filling in before outreach on those tiers can start.
 4. **Press image folder** — still needed. 5 approved photos: Andy headshot, Andy on course with guest, a premium course image, a casual coaching image, logo file.
 5. ~~More Instagram carousels~~ — **dropped.** IG runs under its own plan now.
 6. **Partner/resource page** — still optional, only once real partners exist to list.
@@ -188,4 +188,4 @@ Andy
 
 ## Best Next Move
 
-Create the media kit and outreach tracker first, then send the first 10 pitches using the tools above as the headline asset per tier - no new content needs to be built before outreach can start this time.
+Media kit and tracker are built (see above). Tier 1 (editorial) and Tier 2 (golf clubs) already have real named targets in the tracker - start sending those pitches now using the tools as the headline asset. In parallel, research and fill in real names for Tiers 3-5 (hotels, practical partners, communities) in the tracker before outreach can start on those.
