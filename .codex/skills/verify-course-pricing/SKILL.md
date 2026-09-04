@@ -68,6 +68,22 @@ Known limits: it does not hold day-of-week constant (hysteresis smooths this,
 but a boundary near a weekend can wobble by a day or two), and it refuses to
 emit bands for a course whose annual range is too narrow to have real seasons.
 
+**If a boundary actually needs fixing** (not just measuring), use the
+`mmg-tools` `/season-boundary-check` skill instead of hand-rolling the write —
+it covers the band-name-vs-rack mislabelling trap in full, the exact Sheets
+write-back mechanics (endpoint, the `€` corruption gotcha, before/after
+verification), and the `confidenceGap` re-check-timing convention this file
+only summarizes above. It also has a section on reading a Golfmanager booking
+page for extras (buggy/clubs/trolley) and 9H/18H pricing specifically — the
+same booking engines, a related but separate kind of "is this still true"
+question from green-fee season dates.
+
+**Scorecard data (par/SI/distances) is a separate annual check, not part of
+this skill's scope.** Run `.\mmg.ps1 scorecard-audit` and
+`.\mmg.ps1 scorecard-sources` (from `mmg-tools`) the same way this skill
+covers green fees; see the `scorecard-update` skill for the full chain if
+either flags something to fix.
+
 ## Recording what you find
 
 - Numbers go in the **Pricing Sheet** (the master), then `.\mmg.ps1 pricing-publish`.
