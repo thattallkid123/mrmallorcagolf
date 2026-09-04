@@ -3,28 +3,78 @@
   "pages": {
     "/guides/son-gual-review": {
       "edits": [
-        { "date": "2026-05-11", "commit": "ee3559b", "summary": "sharpened title/description (batch of 6 pages)" },
-        { "date": "2026-05-15", "commit": "c5dee17", "summary": "meta title rewrite + internal linking to /golf-courses" },
-        { "date": "2026-07-27", "commit": "266e1ef", "summary": "SERP title/description fixed to 60-char budget" },
-        { "date": "2026-08-13", "commit": "25c9fea", "summary": "CTR metadata fixed in content/voice review pass" },
-        { "date": "2026-08-15", "commit": "1e03d82", "summary": "title was missing \"Mallorca\"" },
-        { "date": "2026-08-22", "commit": "02820d6", "summary": "CTR round 3: led with the real hook instead of generic template" }
+        {
+          "date": "2026-05-11",
+          "commit": "ee3559b",
+          "summary": "sharpened title/description (batch of 6 pages)"
+        },
+        {
+          "date": "2026-05-15",
+          "commit": "c5dee17",
+          "summary": "meta title rewrite + internal linking to /golf-courses"
+        },
+        {
+          "date": "2026-07-27",
+          "commit": "266e1ef",
+          "summary": "SERP title/description fixed to 60-char budget"
+        },
+        {
+          "date": "2026-08-13",
+          "commit": "25c9fea",
+          "summary": "CTR metadata fixed in content/voice review pass"
+        },
+        {
+          "date": "2026-08-15",
+          "commit": "1e03d82",
+          "summary": "title was missing \"Mallorca\""
+        },
+        {
+          "date": "2026-08-22",
+          "commit": "02820d6",
+          "summary": "CTR round 3: led with the real hook instead of generic template"
+        }
       ]
     },
     "/guides/golf-andratx-review": {
       "edits": [
-        { "date": "2026-08-22", "commit": "02820d6", "summary": "CTR round 3: led with the real hook instead of generic template" },
-        { "date": "2026-09-02", "commit": "33492bb", "summary": "differentiated title from the other Andratx-adjacent review (had near-duplicate titles)" }
+        {
+          "date": "2026-08-22",
+          "commit": "02820d6",
+          "summary": "CTR round 3: led with the real hook instead of generic template"
+        },
+        {
+          "date": "2026-09-02",
+          "commit": "33492bb",
+          "summary": "differentiated title from the other Andratx-adjacent review (had near-duplicate titles)"
+        }
       ]
     },
     "/guides/golf-cost-mallorca": {
-      "edits": []
+      "edits": [
+        {
+          "date": "2026-09-05",
+          "commit": "PENDING",
+          "summary": "First real CTR attempt: added Balearic Islands framing to meta description + opening paragraph (top 2 queries by volume, ranking pos 17-18, were previously unaddressed anywhere on the page)"
+        }
+      ]
     },
     "/golf-courses": {
       "edits": [
-        { "date": "2026-05-11", "commit": "ee3559b", "summary": "sharpened title/description (batch of 6 pages)" },
-        { "date": "2026-05-15", "commit": "c5dee17", "summary": "meta title rewrite + internal linking" },
-        { "date": "2026-06-05", "commit": "4bc58fc", "summary": "SSR fix so meta title/description actually render server-side (was likely client-only before this)" }
+        {
+          "date": "2026-05-11",
+          "commit": "ee3559b",
+          "summary": "sharpened title/description (batch of 6 pages)"
+        },
+        {
+          "date": "2026-05-15",
+          "commit": "c5dee17",
+          "summary": "meta title rewrite + internal linking"
+        },
+        {
+          "date": "2026-06-05",
+          "commit": "4bc58fc",
+          "summary": "SSR fix so meta title/description actually render server-side (was likely client-only before this)"
+        }
       ]
     },
     "/de/golf-courses": {

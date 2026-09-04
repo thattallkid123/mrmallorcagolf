@@ -7,7 +7,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'Mallorca Golf Green Fees 2026 (€55–€260)',
       description:
-        'A round in Mallorca costs €55–€260, most €90–€150. Cheapest Pollença (€55), priciest Son Muntaner (€260). Club hire from €30, buggy €20.',
+        'A round in the Balearic Islands (Mallorca) costs €55–€260, most €90–€150. Cheapest Pollença (€55), priciest Son Muntaner (€260). Buggy €20.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€260, Club Hire & What to Budget',
@@ -31,7 +31,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Golf in Mallorca ranges from genuinely affordable to seriously expensive - the gap between them is bigger than most visitors expect. Here's an honest breakdown for 2026, from someone who plays here most weeks. For a full rundown of every course on the island, see the <a href='/golf-courses'>Mallorca golf courses guide</a>. Incredible value compared to the prices of golf in Shanghai where I spent 11 years, but costs can creep up if you don't plan well.",
+          "Golf in Mallorca, the largest of Spain's Balearic Islands, ranges from genuinely affordable to seriously expensive - the gap between them is bigger than most visitors expect. Here's an honest breakdown for 2026, from someone who plays here most weeks. For a full rundown of every course on the island, see the <a href='/golf-courses'>Mallorca golf courses guide</a>. Incredible value compared to the prices of golf in Shanghai where I spent 11 years, but costs can creep up if you don't plan well.",
       },
       { type: 'heading', text: 'Green Fees' },
       { type: 'subheading', text: 'Budget (nine-hole, pitch and putt)' },
