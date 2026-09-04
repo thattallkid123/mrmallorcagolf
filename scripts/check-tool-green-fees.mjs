@@ -111,13 +111,20 @@ function main() {
   }
 
   let selectorChecked = 0
+  const selectorSkipped = []
   for (const course of parseSelectorBlocks(selectorText)) {
     if (SELECTOR_SPECIAL_IDS.has(course.id)) continue
     const pricing = getCoursePricingByName(course.name)
-    if (!pricing) continue
+    if (!pricing) {
+      selectorSkipped.push(`"${course.name}" — no canonical pricing match for this name`)
+      continue
+    }
 
     const fee = feeNumbers(course.fee)
-    if (!fee) continue
+    if (!fee) {
+      selectorSkipped.push(`"${course.name}" — fallback fee string "${course.fee}" doesn't match the expected "Peak €X / Low €Y" shape`)
+      continue
+    }
     selectorChecked += 1
 
     if (fee.peak !== pricing.peak || fee.low !== pricing.low) {
@@ -134,9 +141,13 @@ function main() {
   }
 
   let greenFeesChecked = 0
+  const greenFeesSkipped = []
   for (const row of parseGreenFeesRows(greenFeesText)) {
     const pricing = getCoursePricingByName(row.name)
-    if (!pricing) continue
+    if (!pricing) {
+      greenFeesSkipped.push(`"${row.name}" — no canonical pricing match for this name`)
+      continue
+    }
     greenFeesChecked += 1
 
     if (row.peak !== pricing.peak || row.low !== pricing.low) {
@@ -166,16 +177,27 @@ function main() {
     errors.push('golf-day-builder must describe Santa Ponsa 2/3 as members only; guests must play with a member')
   }
 
+  const totalSkipped = selectorSkipped.length + greenFeesSkipped.length
+  const skipNote = () => {
+    if (!totalSkipped) return
+    console.log(`\n⚠️  ${totalSkipped} entrie(s) skipped, NOT verified against canonical pricing:`)
+    for (const s of selectorSkipped) console.log(`  - course-selector ${s}`)
+    for (const s of greenFeesSkipped) console.log(`  - green-fees ${s}`)
+    console.log('  A skip here means price drift on that course would go undetected. Fix the name match or the fee-string parser, or confirm it is a legitimately unparseable dynamic price.')
+  }
+
   if (errors.length === 0) {
     console.log(
       `✅ Tool green-fee check passed — ${selectorChecked} selector fallback(s) and ${greenFeesChecked} green-fees row(s) match canonical pricing.`,
     )
+    skipNote()
     return
   }
 
   console.error(`❌ Tool green-fee check FAILED — ${errors.length} issue(s):\n`)
   for (const error of errors) console.error(`  - ${error}`)
   console.error('\nUpdate tool prices to match src/lib/course-pricing-data.js.')
+  skipNote()
   process.exitCode = 1
 }
 

@@ -16,6 +16,7 @@ import { execFileSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { createRequire } from 'node:module'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const repoRoot = path.join(__dirname, '..')
@@ -61,7 +62,21 @@ if (targets.length === 0) {
 // Invoke ESLint's JS entry point directly with `node` rather than the
 // node_modules/.bin wrapper — on Windows the .bin wrapper is a .cmd file,
 // which execFileSync cannot spawn without shell:true (EINVAL).
-const eslintEntry = path.join(repoRoot, 'node_modules', 'eslint', 'bin', 'eslint.js')
+//
+// Resolve via require() rather than a hardcoded `repoRoot/node_modules` path:
+// a git worktree (this repo's own pattern for background agents) is a real
+// directory nested under the main checkout but has no node_modules of its
+// own, so the hardcoded join silently pointed at a path that doesn't exist.
+// require.resolve walks up ancestor directories the way Node normally
+// resolves packages, so it finds the main checkout's node_modules from a
+// nested worktree without needing a separate install there.
+const require = createRequire(import.meta.url)
+let eslintEntry
+try {
+  eslintEntry = require.resolve('eslint/bin/eslint.js', { paths: [repoRoot] })
+} catch {
+  eslintEntry = path.join(repoRoot, 'node_modules', 'eslint', 'bin', 'eslint.js')
+}
 
 try {
   execFileSync(
