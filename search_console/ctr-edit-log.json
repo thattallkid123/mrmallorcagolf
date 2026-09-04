@@ -89,7 +89,7 @@
         },
         {
           "date": "2026-09-05",
-          "commit": "PENDING",
+          "commit": "e4b4fec",
           "summary": "SERP title was missing the word \"Golf\" entirely - top query 'son muntaner golf' (283 impr, pos 9.4) had 0.4% CTR. Added \"Golf\" to title and description; trimmed both back under the char budget."
         }
       ]
