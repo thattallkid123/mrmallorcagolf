@@ -32,6 +32,11 @@
           "date": "2026-08-22",
           "commit": "02820d6",
           "summary": "CTR round 3: led with the real hook instead of generic template"
+        },
+        {
+          "date": "2026-09-05",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Root cause found via live Google SERP screenshot (query: 'golf son gual mallorca reviews'): every competitor around our result (Leading Courses, Golfshake, Top 100 Golf Courses, Golf in Spain) shows a star-rating/review-count rich snippet; ours shows plain text. URL Inspection confirms our Review schema is technically valid and eligible, but Google's guidelines explicitly withhold star-snippet display for a business's own self-authored review of itself (vs. genuine third-party aggregator reviews, which is what every competitor here is). This is not a title/meta problem and cannot be fixed by rewriting copy - do not attempt another title round on this basis. Only real fix would be getting listed/reviewed on a third-party aggregator, which is outside site code."
         }
       ]
     },
