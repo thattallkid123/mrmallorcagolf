@@ -22,6 +22,8 @@ Run: python search_console/check_ctr_watch.py [--days 28] [--threshold 0.4]
 """
 
 import argparse
+import datetime
+import json
 import sys
 from pathlib import Path
 
@@ -39,6 +41,25 @@ MIN_IMPRESSIONS = 40  # below this, CTR is too noisy to act on
 MAX_POSITION = 15  # below this rank, low CTR is a position problem, not a copy problem
 EXPECTED_CTR_AT_GOOD_POSITION = 0.05  # rough benchmark for position <= 10
 LOCAL_INTENT_MARKERS = ["near me", "in de buurt", "cerca de mi", "cerca", "in der nähe"]
+EDIT_LOG_PATH = Path(__file__).resolve().parent / "ctr-edit-log.json"
+TOO_SOON_DAYS = 21  # GSC needs real accumulated impressions before a CTR change is trustworthy
+
+
+def load_edit_log():
+    if not EDIT_LOG_PATH.exists():
+        return {}
+    return json.loads(EDIT_LOG_PATH.read_text(encoding="utf-8")).get("pages", {})
+
+
+def edit_history_for(page, edit_log):
+    """Return (days_since_last_edit, sorted edits list) for a page, or (None, []) if never logged."""
+    entry = edit_log.get(page)
+    if not entry or not entry.get("edits"):
+        return None, []
+    edits = sorted(entry["edits"], key=lambda e: e["date"])
+    last = datetime.date.fromisoformat(edits[-1]["date"])
+    days_since = (datetime.date.today() - last).days
+    return days_since, edits
 
 
 def is_local_intent(q):
@@ -77,14 +98,29 @@ def main():
     flagged.sort(key=lambda r: r["impressions"], reverse=True)
 
     query_rows = query(session, site, start, end, ["page", "query"], row_limit=1000)
+    edit_log = load_edit_log()
 
     print(f"⚠️  check:ctr-watch — {len(flagged)} page(s) with real impression volume clicking far below expectation:\n")
+    too_soon = []
     for r in flagged:
         page = r["keys"][0].replace("https://www.mrmallorcagolf.com", "").replace("https://mrmallorcagolf.com", "")
         expected = r["impressions"] * EXPECTED_CTR_AT_GOOD_POSITION
         ctr = r["clicks"] / r["impressions"] * 100
         print(f"  {page}")
         print(f"    impr={r['impressions']}  clicks={r['clicks']}  pos={r['position']:.1f}  CTR={ctr:.1f}%  (expected ~{expected:.0f} clicks)")
+
+        days_since, edits = edit_history_for(page, edit_log)
+        if edits:
+            print(f"    Edit history ({len(edits)} prior change(s)):")
+            for e in edits:
+                print(f"      {e['date']} ({e['commit']}): {e['summary']}")
+            if days_since is not None and days_since < TOO_SOON_DAYS:
+                print(f"    ⏳ TOO SOON TO JUDGE — last edited {days_since}d ago (needs {TOO_SOON_DAYS}d+ of impressions before CTR here means anything). Don't re-edit yet.")
+                too_soon.append(page)
+            else:
+                print(f"    Last edited {days_since}d ago — old enough to judge. Still below expectation, so pick a genuinely different angle from the ones above, not a variant of one already tried.")
+        else:
+            print("    No logged prior edits — first real attempt on this page.")
 
         top_queries = sorted(
             [q for q in query_rows if q["keys"][0].replace("https://www.mrmallorcagolf.com", "").replace("https://mrmallorcagolf.com", "") == page],
@@ -95,8 +131,11 @@ def main():
             print(f"      \"{q['keys'][1]}\" impr={q['impressions']} pos={q['position']:.1f}{tag}")
         print()
 
+    if too_soon:
+        print(f"{len(too_soon)} page(s) flagged above are too recently edited to act on — listed for visibility only, not as new action items.")
     print("Not auto-fixed: title/description rewrites are public copy, read the voice guide first (CLAUDE.md Public Copy Preflight).")
     print("If every top query on a page is local-intent, this is a Local SEO / Google Business Profile gap, not a metadata gap.")
+    print(f"After making a CTR-motivated title/meta edit, log it in {EDIT_LOG_PATH.name} (date, commit, one-line summary) so future runs know it's been tried.")
 
 
 if __name__ == "__main__":

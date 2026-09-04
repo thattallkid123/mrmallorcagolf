@@ -28,7 +28,7 @@ Low CTR on high-impression pages is the primary SEO lever. Every description is 
 3. Draft the new title/description; verify with `npm run check:meta-length` (scans `page-metadata.js` + guide metadata + their `-localized.js` overlay files — titles and descriptions, all 7 locales). As of 2026-08-06 it's wired into `check:content`/`predeploy`, so any new over-length title or description now blocks the commit/deploy gate directly — the backlog that existed before that date (56 pre-existing findings, cleared 2026-08-06) is what made this a "work through page by page" job; a single new violation from here on is a normal one-page fix.
 4. Update the key-pages tracking table in `docs/seo-reference.md` so the next session knows what changed and why.
 5. Ship via the `ship` skill (`check:content`; add `check:i18n-release` if localized metadata changed).
-6. Note the change date — CTR effects need ~4 weeks of Search Console data before judging.
+6. **Log the edit in `search_console/ctr-edit-log.json`** (date, commit, one-line summary of what changed) under that page's path. `check_ctr_watch.py` reads this log and will flag a page as "too soon to judge" for 21 days after its last logged edit instead of re-listing it as a fresh problem — and shows the full edit history so a repeat run doesn't re-propose a wording already tried and shown not to work. This log only helps if it's kept current — an edit that isn't logged looks unlogged forever.
 
 ## Titles (same lever, same length trap as descriptions)
 

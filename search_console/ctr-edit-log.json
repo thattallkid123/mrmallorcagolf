@@ -1,0 +1,34 @@
+{
+  "_note": "Manual log of title/meta-description CTR edits, keyed by page path. Purpose: stop check_ctr_watch.py from re-flagging a page as broken before an edit has had time to register in Search Console (needs ~21+ days of real impression volume), and stop us from re-trying a wording that already failed. Append a new entry to a page's 'edits' array every time you commit a CTR-motivated title/meta change - date, commit, and a one-line summary of what changed. Seeded 2026-09-04 from git history; keep it current by hand, same discipline as WORKING_PREFERENCES.md.",
+  "pages": {
+    "/guides/son-gual-review": {
+      "edits": [
+        { "date": "2026-05-11", "commit": "ee3559b", "summary": "sharpened title/description (batch of 6 pages)" },
+        { "date": "2026-05-15", "commit": "c5dee17", "summary": "meta title rewrite + internal linking to /golf-courses" },
+        { "date": "2026-07-27", "commit": "266e1ef", "summary": "SERP title/description fixed to 60-char budget" },
+        { "date": "2026-08-13", "commit": "25c9fea", "summary": "CTR metadata fixed in content/voice review pass" },
+        { "date": "2026-08-15", "commit": "1e03d82", "summary": "title was missing \"Mallorca\"" },
+        { "date": "2026-08-22", "commit": "02820d6", "summary": "CTR round 3: led with the real hook instead of generic template" }
+      ]
+    },
+    "/guides/golf-andratx-review": {
+      "edits": [
+        { "date": "2026-08-22", "commit": "02820d6", "summary": "CTR round 3: led with the real hook instead of generic template" },
+        { "date": "2026-09-02", "commit": "33492bb", "summary": "differentiated title from the other Andratx-adjacent review (had near-duplicate titles)" }
+      ]
+    },
+    "/guides/golf-cost-mallorca": {
+      "edits": []
+    },
+    "/golf-courses": {
+      "edits": [
+        { "date": "2026-05-11", "commit": "ee3559b", "summary": "sharpened title/description (batch of 6 pages)" },
+        { "date": "2026-05-15", "commit": "c5dee17", "summary": "meta title rewrite + internal linking" },
+        { "date": "2026-06-05", "commit": "4bc58fc", "summary": "SSR fix so meta title/description actually render server-side (was likely client-only before this)" }
+      ]
+    },
+    "/de/golf-courses": {
+      "edits": []
+    }
+  }
+}
