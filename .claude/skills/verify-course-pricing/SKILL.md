@@ -30,6 +30,26 @@ most of a day on 2026-09-03, and most of it was avoidable:
    is not optional politeness — it is the difference between a short job and a
    long one.
 
+## Read these two mmg-tools files too - don't stop at this skill
+
+This skill covers the *workflow* (what order to check things in, what to read
+first). It does not repeat two reference docs in the sibling `mmg-tools` repo
+that carry more ground-level detail and are kept current independently:
+
+- **`mmg-tools/PRICING.md`** - "Known Gotchas" section has the full 9-hole
+  blend bug history (which courses, why `getBuggyRate()`/`getClubsRate()`
+  make it real client money, and three genuine-not-a-blend counter-examples
+  so you don't over-correct), plus two quoting rules with no home elsewhere:
+  record the **top of each band** on a tiered/ladder price card, and always
+  quote the **non-member rate** outward-facing even when a lower member rate
+  is known. "Editable Workbook Columns" is the field-by-field reference for
+  every Pricing Sheet column.
+- **`mmg-tools/SOURCE-OF-TRUTH-MAP.md` §1** - the full `pricingModel`
+  classification (`fixed`/`dynamic-floor`/`dynamic`/`guest-only`/`private`)
+  with the course-by-course list and the specific history behind each
+  exception (Palma P&P's mislabelling, T Golf's stale URL, T Golf's rentals
+  being genuinely dynamic too).
+
 ## The traps that produce wrong conclusions
 
 Every one of these caused a real error on 2026-09-03.
