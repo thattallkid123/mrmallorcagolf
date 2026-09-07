@@ -104,6 +104,16 @@ this skill's scope.** Run `.\mmg.ps1 scorecard-audit` and
 covers green fees; see the `scorecard-update` skill for the full chain if
 either flags something to fix.
 
+**Club membership fees & benefits are a separate sweep, done in the same
+sitting.** `PRICING-SOURCES-MASTER-2026-09-02.md` has a "Membership — annual
+fees & benefits per course" section with each club's source link (most clubs
+send the price list by email rather than publishing it). Most clubs revise
+membership rates for the new year at the same time as green fees. Update
+`mmg-tools/pricing/edit/confirmed/membership.json` (then
+`node scripts/build-internal-membership.js`, commit) **and** the Encyclopaedia's
+"Membership & Access" section together. This is internal reference only — never
+publish membership terms flagged `doNotPublish` (Santa Ponsa I/II/III).
+
 ## Recording what you find
 
 - Numbers go in the **Pricing Sheet** (the master), then `.\mmg.ps1 pricing-publish`.
