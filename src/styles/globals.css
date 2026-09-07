@@ -1499,6 +1499,18 @@
   --white:        #FFFFFF;
   --nav-h:        64px;
   --max-w:        1200px;
+  /* Spacing scale (8px base). Use these for margin / padding / gap instead
+     of ad-hoc pixel values or inline style hacks. Vertical rhythm between
+     sibling blocks comes from the parent's `gap`, never a negative margin
+     on a child. See scripts/check-css-hygiene.mjs. */
+  --space-1:      4px;
+  --space-2:      8px;
+  --space-3:      12px;
+  --space-4:      16px;
+  --space-5:      24px;
+  --space-6:      32px;
+  --space-7:      48px;
+  --space-8:      64px;
   --shadow-soft:  0 22px 60px rgba(18, 17, 15, 0.08);
   --shadow-deep:  0 30px 80px rgba(18, 17, 15, 0.16);
   --surface-line: rgba(26,25,22,0.08);

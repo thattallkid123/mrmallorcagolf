@@ -809,7 +809,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       />
                     </div>
 
-                    {quoteError && <p style={{ fontSize:13, color:'#a4432f', margin:'-8px 0 12px' }}>{t.quoteForm.error}</p>}
+                    {quoteError && <p style={{ fontSize:13, color:'#a4432f', margin:'0 0 12px' }}>{t.quoteForm.error}</p>}
 
                     <button
                       type="submit"

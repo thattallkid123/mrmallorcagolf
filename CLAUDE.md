@@ -88,6 +88,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 - **Every `npm run` script must be executed by something automated, or it rots silently.** `lint` was broken for a whole Next major before anyone noticed. Now in `.github/workflows/verify-content.yml`.
 - **A rule in prose is not a rule that holds.** Prefer a `check:*` script over a paragraph whenever the thing is mechanically checkable — and verify a new check actually *fails* on a violation before trusting it. `check:api-safety` replaced ~40 lines of security prose; `SKILLS_SYNC.ps1` reported success while copying zero files for weeks.
 - **New `check:*` scripts go in `scripts/run-content-checks.mjs`'s array**, not chained onto `check:content` with `&&`. Each chained `npm run` pays ~1.3s startup on Windows; the old chain took 26s for ~5s of parallel work.
+- **Layout spacing comes from a class + the `--space-*` tokens, never an inline `style={{}}` or a negative margin.** The "uneven gaps / not aligned" bug on the plan-your-trip strip (fixed 2026-09-08) was a flex row with `align-items:center` over unequal-height children plus two inline `marginTop:-0.35rem` hacks. `check:css-hygiene` is a ratchet against that whole class: it freezes the current counts of inline layout styles, `!important`, and `@media` breakpoints and fails on any growth or any inline negative margin. It does **not** force-clean the existing ~270 inline styles — migrating a component onto tokens and running `--update` ratchets the baseline down.
 - **Redirects live in exactly one file: `vercel.json`.** Vercel's edge layer evaluates first, so a duplicate in `next.config.js` never fires — dead config that looks live.
 - **`.gitignore` does not untrack already-committed files.** After adding a rule, `git ls-files | grep <pattern>` and `git rm --cached` strays in the same commit.
 - **When bumping a major dependency, grep this file for stale version claims.** The Tech Stack line has gone stale like this before (said "Next.js 15" for weeks after the 16 bump, sitting four lines from this very rule).
@@ -102,6 +103,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 |------|---------|
 | Build locally | `npm run dev` |
 | Content checks | `npm run check:content` |
+| CSS hygiene ratchet | `npm run check:css-hygiene` — freezes the count of inline layout `style={{}}`, `!important`, and `@media` breakpoints (baseline in `scripts/css-hygiene-baseline.json`); fails on any increase and on any inline negative margin. Runs inside `check:content`. When you legitimately reduce a number, `node scripts/check-css-hygiene.mjs --update` to lock the win in. |
 | Locale parity check | `npm run check:locale-parity` — verifies 6-language consistency; runs automatically as part of `check:content` |
 | Unit tests | `npm test` — Vitest, currently covers the golf-cost-calculator pricing logic in `src/lib/`; runs in CI |
 | i18n release check | `npm run check:i18n-release` — run after any shared content or locale-facing edit |
