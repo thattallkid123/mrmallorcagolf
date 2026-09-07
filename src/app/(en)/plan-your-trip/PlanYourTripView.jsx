@@ -162,12 +162,12 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           <div className="pyt-pro-cta">
             <p className="pyt-pro-cta__note">{content.professional.note}</p>
             {content.professional.feeNote ? (
-              <p className="pyt-pro-cta__note" style={{ marginTop: '-0.35rem', opacity: 0.85 }}>
+              <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
                 {content.professional.feeNote}
               </p>
             ) : null}
             {content.professional.sendPrompt ? (
-              <p className="pyt-pro-cta__note" style={{ marginTop: '-0.35rem', opacity: 0.85 }}>
+              <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
                 {content.professional.sendPrompt}
               </p>
             ) : null}

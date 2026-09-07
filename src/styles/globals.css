@@ -326,8 +326,8 @@
   border-radius: 8px;
   padding: 32px 36px;
   display: flex;
-  align-items: center;
-  gap: 32px;
+  align-items: flex-start;
+  gap: 24px 32px;
   flex-wrap: wrap;
   border: 1px solid var(--sand);
 }
@@ -336,8 +336,12 @@
   font-size: 1rem;
   color: var(--charcoal);
   line-height: 1.6;
-  flex: 1;
-  min-width: 220px;
+  margin: 0;
+  flex: 1 1 240px;
+}
+
+.pyt-pro-cta__note--muted {
+  opacity: 0.85;
 }
 
 .pyt-pro-cta__btn {
