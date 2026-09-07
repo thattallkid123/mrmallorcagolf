@@ -65,7 +65,9 @@
     "skills:sync": "node scripts/sync-agent-skills.mjs",
     "convert-og-images": "node scripts/convert-og-images.mjs",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "export:hotel-reference": "node scripts/export-hotel-reference.mjs",
+    "check:hotel-reference": "node scripts/export-hotel-reference.mjs --check"
   },
   "dependencies": {
     "@upstash/redis": "^1.38.0",

@@ -1,3 +1,9 @@
+// This HOTELS array is the master for hotel data — the Hotel Recommender tool
+// scores from it, and `scripts/export-hotel-reference.mjs` regenerates the
+// Drive doc `Reference/MMG_HOTEL_REFERENCE.md` from it (that doc is read-only;
+// it had drifted to ~26 stale prose entries while this list had 64). After
+// editing a hotel here, run `npm run export:hotel-reference`. `check:content`
+// runs `check:hotel-reference` to catch a forgotten regen.
 export const HOTELS = [
   /* ===================== SOUTHWEST ===================== */
   { id:'arabella-son-vida', name:'Arabella Golf Hotel Son Vida', subname:'Sheraton Collection', area:'southwest', luxury:4, type:'hotel', vibes:['resort','golf-focused'], styles:['resort','classic'], groups:['friends','couple','solo','corporate'], sizes:['1-2','3-5','6-9','10+'], beach:false, spa:true, golfProximity:3, priority:['golf-focused','spa'], pills:['On course','Spa','Michelin dining'], budgets:['ultra','flexible'], why:'Son Vida, Son Quint, and Son Muntaner (Best Golf Course in Spain 2025) are all on the estate. T Golf Calvià is 10 minutes. Wake up, play, eat, recover.', andy:'The default answer for a golf-first group who want everything managed. Es Fum holds one Michelin star in the hotel. Puerto Portals is walkable for evenings.', golf:'On the estate: Son Vida, Son Quint, Son Muntaner (Best in Spain 2025). T Golf Calvià 10 min. Real Golf de Bendinat 15 min. Santa Ponsa cluster 20 min.', travelTime:'15 min from Palma airport' },
