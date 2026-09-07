@@ -41,6 +41,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro disponible como añadido en cualquier momento"
       ],
       "note": "Sin compromiso al consultar. Le respondo personalmente en 24 horas con el siguiente paso recomendado y un presupuesto claro antes de reservar nada.",
+      "feeNote": "Se aplica una comisión de gestión del 5 % sobre green fees y reservas. Se confirma tras la primera conversación.",
       "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, handicap, zona de hotel y los campos que ya tenga pensados.",
       "cta": "Consultar sobre la planificación",
       "possibilities": {
@@ -130,6 +131,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro jederzeit als Zusatz möglich"
       ],
       "note": "Keine Verpflichtung bei der Anfrage. Ich antworte persönlich innerhalb von 24 Stunden mit dem empfohlenen nächsten Schritt und einem klaren Angebot, bevor irgendetwas gebucht wird.",
+      "feeNote": "5 % Verwaltungsgebühr auf Greenfees und Buchungen. Wird nach dem ersten Gespräch bestätigt.",
       "sendPrompt": "Am besten senden: Daten, Gruppengröße, Handicap, Hotelregion und alle Plätze, die schon auf Ihrer Liste stehen.",
       "cta": "Reiseplanung anfragen",
       "possibilities": {
@@ -219,6 +221,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro disponible en option à tout moment"
       ],
       "note": "Aucun engagement au stade de la demande. Je réponds personnellement sous 24 heures avec la prochaine étape recommandée et un devis clair avant toute réservation.",
+      "feeNote": "Frais de gestion de 5 % sur les green fees et les réservations. Confirmé après votre premier échange.",
       "sendPrompt": "Idéalement : dates, taille du groupe, niveau, zone d’hotel et parcours déjà envisagés.",
       "cta": "Demander la planification",
       "possibilities": {
@@ -308,6 +311,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro als extra optie op elk moment"
       ],
       "note": "Geen verplichting bij aanvraag. Ik reageer persoonlijk binnen 24 uur met de aanbevolen volgende stap en een duidelijke prijsopgave voordat er iets wordt geboekt.",
+      "feeNote": "Er geldt een beheersfee van 5 % op greenfees en boekingen. Bevestigd na het eerste gesprek.",
       "sendPrompt": "Graag meesturen: data, groepsgrootte, handicap, hotelregio en banen die al op uw shortlist staan.",
       "cta": "Reisplanning aanvragen",
       "possibilities": {
@@ -397,6 +401,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro som tillägg när som helst"
       ],
       "note": "Inget åtagande vid förfrågan. Jag svarar personligen inom 24 timmar med rekommenderat nästa steg och en tydlig offert innan något bokas.",
+      "feeNote": "5 % administrationsavgift tillkommer på greenfee och bokningar. Bekräftas efter ert första samtal.",
       "sendPrompt": "Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor ni redan funderar på.",
       "cta": "Fråga om reseplanering",
       "possibilities": {
@@ -486,6 +491,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "任何时候都可加购同场陪打服务"
       ],
       "note": "咨询阶段不涉及任何承诺。我会在24小时内亲自回复，给出建议的下一步和明确报价，之后才会预订任何内容。",
+      "feeNote": "果岭费和预订需收取 5% 管理费。第一次沟通后确认。",
       "sendPrompt": "最好一并发送：日期、人数、差点、酒店区域，以及已经看中的球场。",
       "cta": "咨询行程规划",
       "possibilities": {
