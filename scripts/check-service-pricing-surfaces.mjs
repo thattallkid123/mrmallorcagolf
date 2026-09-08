@@ -118,7 +118,9 @@ for (const relative of activeWebsiteFiles) {
     continue
   }
   for (const oldPrice of legacySoloPrices) {
-    const oldPricePattern = new RegExp(`(?:€\\s*${oldPrice}\\b|\\b${oldPrice}\\s*EUR\\b|\\b${oldPrice}\\s*欧元\\b)`)
+    // Note: no trailing \b after 欧元 — CJK characters are not \w, so a word
+    // boundary never matches there and the check would silently miss "695欧元".
+    const oldPricePattern = new RegExp(`(?:€\\s*${oldPrice}\\b|\\b${oldPrice}\\s*EUR\\b|\\b${oldPrice}\\s*欧元)`)
     if (oldPricePattern.test(text)) {
       errors.push(`${relative}: contains legacy solo service price ${oldPrice}`)
     }
