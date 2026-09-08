@@ -109,7 +109,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/de/tools/handicap-checker',
         eyebrow: 'Zugang Prüfen',
-        title: 'Überprüfen Sie Ihren Handicap',
+        title: 'Überprüfen Sie Ihr Handicap',
         desc: 'Gib dein Handicap und deine Gruppengröße ein. Sieh sofort, welche Mallorca-Golfplätze du buchen kannst, wo du ein Zertifikat benötigst und wo Andy Zugang arrangieren kann.',
         time: '< 1 Min',
         cta: 'Überprüfe meinen Zugang',

@@ -29,7 +29,7 @@ const DAY_STAGES = [
   },
   {
     time: 'The round',
-    title: '18 holes together',
+    title: '18 Holes Together',
     body: 'I play alongside you for the full round, watching the decisions, patterns, and movement that only show up under real playing conditions. I take notes throughout.',
   },
   {

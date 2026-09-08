@@ -30,6 +30,7 @@ const CHECKS = [
   { name: 'check:js-parse', script: 'check-js-parse.mjs' },
   { name: 'check:fonts', script: 'check-font-usage.mjs' },
   { name: 'check:font-consistency', script: 'check-font-consistency.mjs' },
+  { name: 'check:title-casing', script: 'check-title-casing.mjs' },
   { name: 'check:skills-mirror', script: 'check-skills-mirror.mjs' },
   { name: 'check:skills-readme', script: 'check-skills-readme.mjs' },
   { name: 'check:privacy-surface', script: 'check-privacy-surface.mjs' },

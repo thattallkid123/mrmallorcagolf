@@ -208,6 +208,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   const fieldStyle = { marginBottom: 18 }
   const labelStyle = { display:'block', fontFamily:'var(--font-sans)', fontSize:11, letterSpacing:'.08em', textTransform:'uppercase', color:'#2D4A3E', marginBottom:12, fontWeight:500 }
   const circleBtn = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center' }
+  const budgetLabel = t.inputs.budgetOpts.find((opt) => opt.val === state.budget)?.label || state.budget
 
   function Stepper({ label, stateKey, min, max, unit }) {
     return (
@@ -733,7 +734,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>{t.quoteForm.summaryLabels.budget}</span>
-                        <b style={{ color:'#15392b', fontWeight:500, textTransform:'capitalize' }}>{state.budget}</b>
+                        <b style={{ color:'#15392b', fontWeight:500 }}>{budgetLabel}</b>
                       </li>
                       <li style={{ display:'flex', justifyContent:'space-between', gap:12, fontSize:14, padding:'5px 0', borderBottom:'1px solid #f1ead9' }}>
                         <span>{t.quoteForm.summaryLabels.courses}</span>

@@ -17,6 +17,7 @@
     "check:social-proof": "node --no-warnings scripts/sync-social-proof.mjs --check",
     "check:fonts": "node --no-warnings scripts/check-font-usage.mjs",
     "check:font-consistency": "node --no-warnings scripts/check-font-consistency.mjs",
+    "check:title-casing": "node --no-warnings scripts/check-title-casing.mjs",
     "check:skills-mirror": "node --no-warnings scripts/check-skills-mirror.mjs",
     "check:skills-readme": "node --no-warnings scripts/check-skills-readme.mjs",
     "check:privacy-surface": "node --no-warnings scripts/check-privacy-surface.mjs",
