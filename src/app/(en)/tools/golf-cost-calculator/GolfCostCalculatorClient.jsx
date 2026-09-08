@@ -208,7 +208,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   const fieldStyle = { marginBottom: 18 }
   const labelStyle = { display:'block', fontFamily:'var(--font-sans)', fontSize:11, letterSpacing:'.08em', textTransform:'uppercase', color:'#2D4A3E', marginBottom:12, fontWeight:500 }
   const circleBtn = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center' }
-  const budgetLabel = t.inputs.budgetOpts.find((opt) => opt.val === state.budget)?.label || state.budget
+  const budgetLabel = t.step2Fields.budgetOpts.find((opt) => opt.val === state.budget)?.label || state.budget
 
   function Stepper({ label, stateKey, min, max, unit }) {
     return (

@@ -159,8 +159,10 @@ test.describe('font consistency - no element silently falls back off-brand', () 
       // flaked only under multi-project concurrency, never in isolation).
       await page.waitForFunction(
         () => {
-          const ff = getComputedStyle(document.body).fontFamily.toLowerCase()
-          return ff.includes('jost') || ff.includes('cormorant')
+          const bodyStyle = getComputedStyle(document.body)
+          const sans = bodyStyle.getPropertyValue('--font-sans').toLowerCase()
+          const serif = bodyStyle.getPropertyValue('--font-serif').toLowerCase()
+          return sans.includes('jost') && serif.includes('cormorant')
         },
         { timeout: 20000 }
       )
