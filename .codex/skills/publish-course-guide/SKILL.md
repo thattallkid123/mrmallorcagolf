@@ -34,6 +34,7 @@ Cross-check known facts against the table in `docs/course-guide-standards.md` ("
 - Set `imagePath` to the WebP hero (e.g. `'/images/{slug}-blog/{slug}-1.webp'`) — OG converts `.webp` → `.jpg` automatically.
 - Include a `{ type: 'heading', text: 'Common Questions' }` block + paragraphs covering: handicap limit/certificate, walking vs buggy, who it suits, the surprise detail, one local-knowledge tip.
 - Meta description: follow the `meta-ctr` skill rules (lead with the number/fact, <155 chars, double quotes if the string contains apostrophes).
+- Course/hole lengths: use metres, not yards — every existing review and the course-listing pills use metres exclusively (confirmed 2026-09-09 by grepping the whole content tree; only two "yards" hits existed anywhere and both were added that same day). Yards only belongs in first-person shot-distance mentions ("I had 120 yards left for my second"), never as the course or hole length unit.
 
 ## Step 3 — Routing
 
@@ -55,7 +56,17 @@ There is no `/api/og` route — it was removed in favour of a direct static JPG 
 2. `npm run dev`, then `curl -s http://localhost:3000/guides/{slug} | grep 'og:image'` — confirm it resolves to `https://www.mrmallorcagolf.com/images/{slug}-blog/{slug}-1.jpg`, not a route.
 3. Open that JPG directly and confirm it's a real course photo, right way up, landscape enough to read at thumbnail size (this file is the direct source photo, not a branded overlay — there is no logo/badge/title rendered onto it).
 
-## Step 6 — Ship
+## Step 6 — Go live in the carousel (after Andy approves)
+
+Steps 1-5 make the page reachable and indexable, but it stays out of the public guides index/carousel until this step — that gap is intentional, it's what lets Andy review the real page at its live preview URL before anyone finds it organically. Do NOT do this step until he has approved the content.
+
+Three registrations, none handled by any script (found 2026-09-09, the same day as the `REVIEW_POST_SLUGS` gap in Step 3 — the same class of miss: `check:content` and `npm run build` both stay green with all three missing):
+
+1. Add `reviewSlug: '{slug}'` to the course's own entry in `src/lib/golf-courses-data.js` (the course-listing pill data) — links the course-listing card to the review in both directions.
+2. Add `'{slug}'` to `COURSE_REVIEW_SLUGS` in `src/lib/guides-content.js` — without this, `syncGuideKeywordFacts()` can't find the course via `reviewSlug`, and the card's Par/€ keywords never sync to live pricing/scorecard data; they just sit frozen as whatever static text you typed.
+3. Add a card entry to `liveGuides` in `src/lib/guides-content.js` (en): `slug`, `badge`, `badgeGold` (true for the higher-rated/premium-tier reviews — follow the pattern of the existing gold-badged entries), `img` (the Step 1 card image), `imgPosition`, `title`, `intro`, `readTime`, `keywords`. Then add a matching overlay to all 6 locale blocks in `src/lib/guides-content-localized.js` — same fields except `img`/`imgPosition`, which inherit from English.
+
+## Step 7 — Ship
 
 Use the `ship` skill: `npm run check:content` → `npm run build` → commit → push → confirm Vercel deployment READY. Then, after deploy is live: `npm run indexnow`.
 
