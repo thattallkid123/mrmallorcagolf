@@ -26,6 +26,8 @@ Cross-check known facts against the table in `docs/course-guide-standards.md` ("
 - Card image: prefer a centre crop of `public/images/courses/{slug}.webp` → 900×386 → `public/images/{slug}-card.webp`. Never a close-up or people shot.
 - WebP→JPEG conversion for OG is automatic on `npm run build` (prebuild). To run alone: `npm run convert-og-images`.
 
+**Typical length, for calibration:** across the 9 live/in-progress course reviews, 5-9 images (avg ~7) and 800-1,250 words of body copy (avg ~1,000), 28-34 content blocks total. A post well outside that range on either axis is worth a second look — too short usually means a thin round with not enough distinct holes covered, too long usually means padding rather than more first-hand detail.
+
 ## Step 2 — Content entry
 
 - Add the entry to `src/lib/guide-post-content.js` following the existing pattern. **This file is large — use scripted/precise byte replacement, never fragile editor operations.**
