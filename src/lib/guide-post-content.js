@@ -918,7 +918,7 @@ export const GUIDE_POST_CONTENT = {
         updated: 'September 2026',
         title: 'T Golf Palma - Review (2026)',
         intro:
-          "Water in play on more holes than the scorecard lets on, small fast greens, and a layout that rewards thinking off the tee. A 9 out of 10, and a course that deserves to be judged on its own rather than on sharing a name with T Golf Calvià.",
+          "Small fast greens and a handful of risk-reward holes that make you think from the tee. A 9 out of 10, and a course that deserves to be judged on its own rather than on sharing a name with T Golf Calvià.",
         related: [
           { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Honest Review 2026' },
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },

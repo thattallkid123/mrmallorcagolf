@@ -27,6 +27,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = resolve(__dirname, '..')
 
 const GUIDE_VIEW_PATH = join(REPO_ROOT, 'src/app/(en)/guides/GuidePostView.jsx')
+const SITE_LIB_PATH = join(REPO_ROOT, 'src/lib/site.js')
 
 function importLib(rel) {
   return import(pathToFileURL(join(REPO_ROOT, rel)).href)
@@ -101,6 +102,24 @@ async function main() {
     viewText = viewText.replace(marker, (m) => m + entry)
     writeFileSync(GUIDE_VIEW_PATH, viewText)
     console.log(`+ GuidePostView.jsx: COURSE_REVIEW_DETAILS entry added`)
+  }
+
+  // 3. REVIEW_POST_SLUGS entry in site.js — without this, convert-og-images.mjs
+  // and locale route generation silently skip the new review (confirmed
+  // 2026-09-09: a guide shipped without it built fine but had no OG jpg and
+  // was invisible to the locale route list).
+  let siteText = readFileSync(SITE_LIB_PATH, 'utf8')
+  if (new RegExp(`^\\s*'${slug}',\\s*$`, 'm').test(siteText)) {
+    console.log(`= site.js: REVIEW_POST_SLUGS entry already exists, skipped`)
+  } else {
+    const slugsMarker = /export const REVIEW_POST_SLUGS = new Set\(\[\n/
+    if (!slugsMarker.test(siteText)) {
+      console.error('Could not find "export const REVIEW_POST_SLUGS = new Set([" in site.js — add the slug by hand.')
+      process.exit(1)
+    }
+    siteText = siteText.replace(slugsMarker, (m) => m + `  '${slug}',\n`)
+    writeFileSync(SITE_LIB_PATH, siteText)
+    console.log(`+ site.js: REVIEW_POST_SLUGS entry added`)
   }
 
   console.log('\nStill manual: discovery surfaces (run `node scripts/sync-discovery.mjs --add ' + slug + '`), photos, and the OG verify step.')

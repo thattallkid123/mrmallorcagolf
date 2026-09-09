@@ -35,10 +35,11 @@ Cross-check known facts against the table in `docs/course-guide-standards.md` ("
 
 ## Step 3 — Routing
 
-Run `node scripts/scaffold-guide.mjs --slug {slug} --name "<official course name>" --locality "<town>" --rating <1-5>` (requires step 2 done first — it reads the title from `guide-post-content.js`). This creates `src/app/(en)/guides/{slug}/page.jsx` and adds the `COURSE_REVIEW_DETAILS` entry in `src/app/(en)/guides/GuidePostView.jsx` in one command, skipping either half if it already exists.
+Run `node scripts/scaffold-guide.mjs --slug {slug} --name "<official course name>" --locality "<town>" --rating <1-5>` (requires step 2 done first — it reads the title from `guide-post-content.js`). This creates `src/app/(en)/guides/{slug}/page.jsx`, adds the `COURSE_REVIEW_DETAILS` entry in `src/app/(en)/guides/GuidePostView.jsx`, and adds the slug to `REVIEW_POST_SLUGS` in `src/lib/site.js`, skipping any part that already exists.
 
-- Course reviews do NOT go in `ARTICLE_SLUGS` in `src/lib/site.js` (that's article guides only).
+- Course reviews do NOT go in `ARTICLE_SLUGS` in `src/lib/site.js` (that's article guides only) — `REVIEW_POST_SLUGS` is the correct list and the script now maintains it for you.
 - `COURSE_REVIEW_DETAILS` powers two things: the Review schema (structured data) and the inline funnel CTA that appears just before the booking CTA on every course review. Without this entry, neither feature activates.
+- `REVIEW_POST_SLUGS` drives locale route generation and `convert-og-images.mjs`'s scan for social JPGs to generate. Missing it doesn't fail the build — it just silently skips the new guide's locale routes and OG image (found 2026-09-09 shipping the T Golf Palma review: `check:content` was green, `npm run build` succeeded, and only a direct look at the OG jpg and locale routes caught the gap). If you ever add an entry to this list by hand instead of via the script, re-run `npm run convert-og-images` afterwards.
 
 ## Step 4 — Discovery surfaces
 
@@ -46,10 +47,11 @@ Run `node scripts/sync-discovery.mjs --add {slug}` — adds the slug to all four
 
 ## Step 5 — Verify OG before deploying
 
-Run `npm run dev`, open:
-`http://localhost:3000/api/og?title=YOUR+TITLE&badge=Course+Review&image=%2Fimages%2F{slug}-blog%2F{slug}-1.jpg`
+There is no `/api/og` route — it was removed in favour of a direct static JPG (see `BUGS.md`, "og:image not showing on WhatsApp/social previews": WhatsApp and some crawlers don't follow redirects, so `og:image`/`twitter:image` point straight at the same-stem `.jpg`). Verify the real thing instead:
 
-Confirm the course photo fills the frame (NOT the pine-gradient fallback), logo top-left, badge top-right, title readable. If the gradient shows, run `npm run convert-og-images` and retry.
+1. `npm run convert-og-images` (also runs automatically as part of `npm run build`) — confirm it reports the new `{slug}-1.jpg` converted, not skipped. Requires the slug to be in `REVIEW_POST_SLUGS` (Step 3) or it won't be scanned at all.
+2. `npm run dev`, then `curl -s http://localhost:3000/guides/{slug} | grep 'og:image'` — confirm it resolves to `https://www.mrmallorcagolf.com/images/{slug}-blog/{slug}-1.jpg`, not a route.
+3. Open that JPG directly and confirm it's a real course photo, right way up, landscape enough to read at thumbnail size (this file is the direct source photo, not a branded overlay — there is no logo/badge/title rendered onto it).
 
 ## Step 6 — Ship
 
