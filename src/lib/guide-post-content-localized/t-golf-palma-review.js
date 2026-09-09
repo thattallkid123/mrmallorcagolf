@@ -71,10 +71,6 @@ const content = {
         "caption": "El approach al 15. Agua a la derecha y otro carry sobre el agua hacia el green."
       },
       {
-        "alt": "El green del hoyo 15 en T Golf Palma protegido por agua, con la bandera visible",
-        "caption": "El green del 15, protegido por agua en el lado del approach."
-      },
-      {
         "text": "El hoyo 18 fue el tee shot más difícil de encarar de todo el día, jugado desde los tees traseros a 379 m. Pegué lo que creí que era un buen drive en posición A y nunca encontramos la bola. Eso me costó la opción de terminar bajo par, y cerré con un bogey para un 72."
       },
       {
@@ -167,8 +163,7 @@ const content = {
         "text": "Es una buena opción para quien juegue varias vueltas por la zona de Palma y quiera una prueba seria sin necesitar un día entero. Si estás organizando un viaje más amplio, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> explica cómo encajar campos como este junto a <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
       },
       {
-        "alt": "Andy Griffiths con su compañero de juego antes de la vuelta en T Golf Palma",
-        "caption": "Con mi compañero de juego antes de la vuelta."
+        "alt": "Andy Griffiths con su compañero de juego antes de la vuelta en T Golf Palma"
       },
       {
         "text": "¿Quieres jugar T Golf Palma con un profesional PGA que conoce cada hoyo?",
@@ -245,10 +240,6 @@ const content = {
       {
         "alt": "Golfer spielt den Annäherungsschlag über Wasser auf dem 15. Loch bei T Golf Palma",
         "caption": "Das Anspiel auf Loch 15. Wasser rechts und ein weiterer Carry aufs Grün."
-      },
-      {
-        "alt": "Das 15. Grün bei T Golf Palma, von Wasser umgeben, mit sichtbarer Fahne",
-        "caption": "Das Grün auf 15, auf der Anspielseite von Wasser geschützt."
       },
       {
         "text": "Loch 18 war der schwierigste Abschlag des ganzen Tages, gespielt von den hinteren Abschlägen bei 379 m. Ich schlug, was ich für einen guten Drive in Position A hielt, und wir fanden den Ball nie wieder. Das kostete mich die Chance, unter Par abzuschließen, und ich beendete die Runde mit einem Bogey für eine 72."
@@ -343,8 +334,7 @@ const content = {
         "text": "Er passt gut zu allen, die mehrere Runden im Raum Palma spielen und einen richtigen Test wollen, ohne einen ganzen Tag zu brauchen. Wenn du eine größere Reise planst, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> ab, wie man Plätze wie diesen neben <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a> einplant."
       },
       {
-        "alt": "Andy Griffiths mit seinem Mitspieler vor der Runde bei T Golf Palma",
-        "caption": "Mit meinem Mitspieler vor der Runde."
+        "alt": "Andy Griffiths mit seinem Mitspieler vor der Runde bei T Golf Palma"
       },
       {
         "text": "T Golf Palma mit einem PGA-Professional spielen, der jedes Loch kennt?",
@@ -421,10 +411,6 @@ const content = {
       {
         "alt": "Golfeur jouant le coup d'approche au-dessus de l'eau sur le trou 15 à T Golf Palma",
         "caption": "L'approche sur le 15. De l'eau à droite et un nouveau carry vers le green."
-      },
-      {
-        "alt": "Le green du trou 15 à T Golf Palma protégé par l'eau, avec le drapeau visible",
-        "caption": "Le green du 15, protégé par l'eau côté approche."
       },
       {
         "text": "Le trou 18 a été le départ le plus difficile à cadrer de toute la journée, joué depuis les départs arrière à 379 m. J'ai frappé ce que je pensais être un bon drive en position A et nous n'avons jamais retrouvé la balle. Cela m'a coûté la chance de finir sous le par, et j'ai terminé avec un bogey pour un 72."
@@ -519,8 +505,7 @@ const content = {
         "text": "C'est un bon choix pour qui joue plusieurs parcours dans la région de Palma et veut un vrai test sans avoir besoin d'une journée entière. Si vous organisez un voyage plus large, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> explique comment enchaîner des parcours comme celui-ci avec <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
       },
       {
-        "alt": "Andy Griffiths avec son partenaire de jeu avant la partie à T Golf Palma",
-        "caption": "Avec mon partenaire de jeu avant la partie."
+        "alt": "Andy Griffiths avec son partenaire de jeu avant la partie à T Golf Palma"
       },
       {
         "text": "Envie de jouer T Golf Palma avec un professionnel PGA qui connaît chaque trou ?",
@@ -597,10 +582,6 @@ const content = {
       {
         "alt": "Golfer speelt de approach-slag over water op hole 15 bij T Golf Palma",
         "caption": "De approach op hole 15. Water rechts en nog een carry naar de green."
-      },
-      {
-        "alt": "De green van hole 15 bij T Golf Palma omgeven door water, met de vlag zichtbaar",
-        "caption": "De green op 15, beschermd door water aan de approach-kant."
       },
       {
         "text": "Hole 18 was de lastigste tee shot om te richten van de hele dag, gespeeld vanaf de achterste tees op 379m. Ik sloeg wat ik dacht dat een goede drive in positie A was en we hebben de bal nooit teruggevonden. Dat kostte me de kans om onder par te eindigen, en ik sloot af met een bogey voor een 72."
@@ -695,8 +676,7 @@ const content = {
         "text": "Het is een goede optie voor wie meerdere ronden in de omgeving van Palma speelt en een serieuze test wil zonder een hele dag nodig te hebben. Ben je een grotere reis aan het plannen, dan behandelt de <a href=\"/plan-your-trip\">reisplanningsgids</a> hoe je banen als deze combineert met <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
       },
       {
-        "alt": "Andy Griffiths met zijn speelpartner voor de ronde bij T Golf Palma",
-        "caption": "Met mijn speelpartner voor de ronde."
+        "alt": "Andy Griffiths met zijn speelpartner voor de ronde bij T Golf Palma"
       },
       {
         "text": "Wil je T Golf Palma spelen met een PGA professional die elke hole kent?",
@@ -773,10 +753,6 @@ const content = {
       {
         "alt": "Golfare spelar inspelet över vatten på hål 15 hos T Golf Palma",
         "caption": "Inspelet på hål 15. Vatten till höger och ännu en carry mot greenen."
-      },
-      {
-        "alt": "Greenen på hål 15 hos T Golf Palma omgiven av vatten, med flaggan synlig",
-        "caption": "Greenen på 15, skyddad av vatten på inspelssidan."
       },
       {
         "text": "Hål 18 var dagens svåraste utslag att sikta, spelat från de bakre tee på 379 m. Jag slog vad jag trodde var ett bra utslag i position A och vi hittade aldrig bollen. Det kostade mig chansen att avsluta under par, och jag stängde med en bogey för en 72."
@@ -871,8 +847,7 @@ const content = {
         "text": "Den passar bra för den som spelar flera rundor i Palma-området och vill ha ett rejält test utan att behöva en hel dag. Om du planerar en större resa täcker <a href=\"/plan-your-trip\">reseplaneringsguiden</a> hur man lägger in banor som denna tillsammans med <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
       },
       {
-        "alt": "Andy Griffiths med sin spelpartner före rundan hos T Golf Palma",
-        "caption": "Med min spelpartner före rundan."
+        "alt": "Andy Griffiths med sin spelpartner före rundan hos T Golf Palma"
       },
       {
         "text": "Vill du spela T Golf Palma med en PGA-professional som känner varje hål?",
@@ -949,10 +924,6 @@ const content = {
       {
         "alt": "球手在T Golf Palma第15洞越过水面打进攻杆",
         "caption": "第15洞的进攻杆。右侧是水,第二杆还要再越过一次水面上果岭。"
-      },
-      {
-        "alt": "T Golf Palma第15洞果岭被水环绕,可见旗杆",
-        "caption": "第15洞的果岭,进攻方向被水障碍守护着。"
       },
       {
         "text": "第18洞是全天最难瞄准方向的发球台,从后发球台出发,379米。我打出了一杆自认为落在理想位置A的球,结果始终没找到。这让我失去了打出低于标准杆成绩的机会,最终以柏忌收尾,全场72杆。"
@@ -1047,8 +1018,7 @@ const content = {
         "text": "如果你打算在帕尔马地区打几轮球,又想要一次真正的考验而不需要花上一整天,这座球场是不错的选择。如果你在规划更长的行程,<a href=\"/plan-your-trip\">行程规划指南</a>介绍了如何把这样的球场和<a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>安排在一起。"
       },
       {
-        "alt": "Andy Griffiths在T Golf Palma与球伴合影,赛前拍摄",
-        "caption": "赛前和我的球伴合影。"
+        "alt": "Andy Griffiths在T Golf Palma与球伴合影,赛前拍摄"
       },
       {
         "text": "想与熟悉每一个洞的PGA职业球员同打T Golf Palma？",
