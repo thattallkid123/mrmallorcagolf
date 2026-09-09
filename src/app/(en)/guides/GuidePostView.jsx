@@ -80,6 +80,11 @@ function FunnelCtaBlock({ locale, courseName }) {
 }
 
 const COURSE_REVIEW_DETAILS = {
+  't-golf-palma-review': {
+    name: 'T Golf Palma',
+    ratingValue: 5,
+    addressLocality: 'Palma',
+  },
   'son-gual-review': {
     name: 'Golf Son Gual',
     ratingValue: 5,

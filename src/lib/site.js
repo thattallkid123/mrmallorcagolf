@@ -38,6 +38,7 @@ export const REVIEW_POST_SLUGS = new Set([
   'son-termes-review',
   'son-muntaner-review',
   't-golf-calvia-review',
+  't-golf-palma-review',
   'golf-andratx-review',
   'son-antem-west-review',
 ])

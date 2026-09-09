@@ -903,6 +903,195 @@ export const GUIDE_POST_CONTENT = {
       ],
     },
   },
+  't-golf-palma-review': {
+    en: {
+      metadata: {
+        title: 'T Golf Palma - Honest Review 2026',
+        description:
+          'Peak €150, low €80. Jack Nicklaus design, 6,027m from the white tees, 9/10 conditioning.',
+        imagePath: '/images/t-golf-palma-blog/t-golf-palma-1.webp',
+      },
+      meta: {
+        badge: 'Course Review',
+        badgeGold: true,
+        readTime: '6 min read',
+        updated: 'September 2026',
+        title: 'T Golf Palma - Review (2026)',
+        intro:
+          "Water in play on more holes than the scorecard lets on, small fast greens, and a layout that rewards thinking off the tee. A 9 out of 10, and a course that deserves to be judged on its own rather than on sharing a name with T Golf Calvià.",
+        related: [
+          { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Honest Review 2026' },
+          { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
+          { slug: 'son-muntaner-review', title: 'Son Muntaner Golf: Honest Review 2026' },
+          { slug: 'son-antem-west-review', title: 'Son Antem West - Honest Review 2026' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/t-golf-palma-blog/t-golf-palma-1.webp',
+          alt: 'The water-guarded green on the back nine at T Golf Palma, framed by pine trees',
+          caption: 'Water and bunkers guard the green on one of the back-nine par 4s at T Golf Palma.',
+          priority: true,
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'paragraph',
+          text: "I had the first tee time of the day at T Golf Palma, 7:30am, nobody in front of us. The greenkeepers were still out working the course and stopped to compliment a couple of shots as we went past. That kind of quiet is rare this close to Palma.",
+        },
+        { type: 'heading', text: 'The Setting' },
+        {
+          type: 'paragraph',
+          text: "T Golf Palma changed hands recently and picked up a lot of its reputation from sharing a name with T Golf Calvià. I went in wondering if that was doing some of the work. It isn't. Jack Nicklaus designed the course, the only one of his in Mallorca, and it opened in 2006 before a full renovation in 2022.",
+        },
+        {
+          type: 'paragraph',
+          text: "It sits away from almost everything else on the island. Planes go over from Palma airport, but for most of the round there isn't a house in view. Isolated but under a flight path is an odd combination, and it was the biggest surprise of the day.",
+        },
+        { type: 'heading', text: 'Holes Worth Knowing' },
+        {
+          type: 'paragraph',
+          text: "Hole 5 is the hardest hole on the card, a 364m par 4 with a tight tee shot and a narrow green to finish. There isn't much room for error at either end.",
+        },
+        {
+          type: 'paragraph',
+          text: "Hole 8, 334m, is the best example of the course's personality. Water runs down the entire right side and the tee shot tempts you into taking on driver. I played it safe with a 4-iron left, which still left a wedge into a narrow sliver of green that wasn't easy to hit. Laying up doesn't mean the trouble is over.",
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-palma-blog/t-golf-palma-4.webp',
+          alt: 'The water hazard down the right of the 8th hole at T Golf Palma under a cloudy sky',
+          caption: 'The water down the right on 8. Even the safe route off the tee leaves a demanding second shot into a narrow green.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'paragraph',
+          text: "Hole 12 is 392m with a sloping green, the toughest par 4 on the back nine on paper. It plays every bit as hard as the length suggests.",
+        },
+        {
+          type: 'paragraph',
+          text: "Hole 15 was the best-looking hole on the course. Water runs the entire right side and trees line the left, so it's tight before you even reach the second shot, which has to carry the water again to find the green. I got mine close and made a birdie there, the highlight of the round.",
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-palma-blog/t-golf-palma-5.webp',
+          alt: 'Golfer playing the approach shot over water on the 15th hole at T Golf Palma',
+          caption: 'The approach at 15. Water down the right and a second carry into the green.',
+          presentation: 'natural',
+          naturalWidth: 1110,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-palma-blog/t-golf-palma-6.webp',
+          alt: 'The 15th green at T Golf Palma guarded by water with the flag visible',
+          caption: 'The green at 15, guarded by water on the approach side.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'paragraph',
+          text: "Hole 18 was the hardest tee shot to line up all day, playing from the back tees at 379m. I hit what I thought was a good drive in position A and never found the ball. That cost me the chance to finish under par, and I closed with a bogey for a 72.",
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-palma-blog/t-golf-palma-7.webp',
+          alt: 'The fairway on the 18th hole at T Golf Palma curving toward the clubhouse',
+          caption: 'Looking down 18. The tee shot is harder to line up than it looks from here.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        { type: 'heading', text: 'Conditioning' },
+        {
+          type: 'paragraph',
+          text: "Conditioning was excellent throughout, on a par with Calvià. Greens were fast and small, and the rough grabs the club enough that missing one usually means a difficult chip rather than an easy one. We played on a soft day because the sprinklers had been running heavily; when it firms up, some of those chips will get harder still.",
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-palma-blog/t-golf-palma-3.webp',
+          alt: 'A plane flying over the fairway and bunkers at T Golf Palma with pine trees behind',
+          caption: "Quiet fairways with a plane overhead. The course sits away from almost everything else on the island, so despite the flight path it never feels built up.",
+        },
+        { type: 'heading', text: 'Service And Facilities' },
+        {
+          type: 'paragraph',
+          text: "Service was a strong point. Someone comes round the course with drinks, and the same member of staff was waiting at the 18th green to say hello as we finished. We arrived before most of the staff for the first tee time, so I can't speak to the chipping green, putting green or driving range from personal experience, but the pro shop was well stocked. The practice facilities on file are a 42-bay range with 14 covered bays and PGA coaches on site. The terrace overlooking the 18th is a good spot to finish, with a clear view down the closing hole.",
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-palma-blog/t-golf-palma-2.webp',
+          alt: 'The entrance and pro shop at T Golf Palma in the evening light',
+          caption: 'The pro shop at T Golf Palma, well stocked, with the course\'s resident cat making an appearance.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        { type: 'heading', text: 'Practical Information' },
+        {
+          type: 'facts',
+          items: [
+            ['€75', 'Green fee on the day we played'],
+            ['9/10', "Andy's rating"],
+            ['6,027m', 'White tees (Par 71)'],
+            ['Buggy optional', 'Course is walkable, not too hilly'],
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: "Green fees run from €80 low season up to €150 peak in 2026, plus a compulsory €3 daily golf licence. We paid around €75 on the day we played. Buggies are available and I took one, but the course is walkable and not particularly hilly if you would rather carry or pull a trolley.",
+        },
+        {
+          type: 'paragraph',
+          text: "One thing to be ready for: the rough grabs the club enough that a missed green usually means a harder chip than expected, and on a firmer day than we had it will only get tougher.",
+        },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: "Handicap limit is 28 for men and 34 for ladies, with a certificate required at booking. Walking is fine here, gently rolling rather than hilly, though most visitors still take a buggy. Singles can book but are usually paired with another group in season. There is a slight breeze through most of the round, nothing that dictates club selection the way it does on more exposed courses. The surprise is how isolated it feels this close to Palma airport: planes go over, but there is almost no other sign of anything beyond the course itself.",
+        },
+        { type: 'heading', text: 'Verdict' },
+        {
+          type: 'paragraph',
+          text: "9/10. T Golf Palma got some of its early reputation from sharing a name with T Golf Calvià, and I went in wondering if that was doing some of the work. It isn't. The conditioning, the risk-reward holes and the finish at 15 and 18 make it every bit as good a round. It suits a player who wants to think through the tee shot rather than just swing hard, with several holes where distance control matters more than distance.",
+        },
+        {
+          type: 'notes',
+          title: 'Four things I would know before booking T Golf Palma',
+          items: [
+            ['Best tee time', 'We had the first slot at 7:30am and had the course to ourselves. If you can get an early tee time, take it.'],
+            ['Club selection', 'Distance control matters more than raw length here, especially into 8 and 15. Bring your full range of wedges.'],
+            ['Where visitors miss', 'The tee shot on 18 looks more straightforward than it plays. Take a proper look at the line before committing to driver.'],
+            ['Terrace tip', 'The terrace looks straight down the 18th, a good spot to watch a group finish while you wait for a table.'],
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: 'It is a good fit for anyone playing multiple rounds in the Palma area who wants a proper test without needing a full day. If you are building out a wider trip, the <a href="/plan-your-trip">trip planning guide</a> covers how to sequence courses like this alongside <a href="/guides/t-golf-calvia-review">T Golf Calvià</a>.',
+        },
+        {
+          type: 'image',
+          src: '/images/t-golf-palma-blog/t-golf-palma-8.webp',
+          alt: 'Andy Griffiths with his playing partner before their round at T Golf Palma',
+          caption: 'With my playing partner before the round.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'cta',
+          text: 'Playing T Golf Palma? I can help you plan the tee times, work through the risk-reward holes, and get the most from the round.',
+          linkLabel: 'Book a Play With A Pro day in Mallorca →',
+          href: '/play-with-a-pro',
+        },
+      ],
+    },
+  },
   't-golf-calvia-review': {
     en: {
       metadata: {

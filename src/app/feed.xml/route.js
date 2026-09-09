@@ -20,6 +20,7 @@ const GUIDE_DATES = {
   'is-mallorca-good-for-golf': '2026-04-01',
   'mallorca-course-map': '2026-07-23',
   '5-day-mallorca-golf-itinerary': '2026-08-10',
+  't-golf-palma-review': '2026-09-09',
 }
 
 function escapeXml(str) {

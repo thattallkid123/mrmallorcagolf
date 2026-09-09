@@ -6,6 +6,7 @@ import santaPonsa1Review from './guide-post-content-localized/santa-ponsa-1-revi
 import sonTermesReview from './guide-post-content-localized/son-termes-review.js'
 import sonMuntanerReview from './guide-post-content-localized/son-muntaner-review.js'
 import tGolfCalviaReview from './guide-post-content-localized/t-golf-calvia-review.js'
+import tGolfPalmaReview from './guide-post-content-localized/t-golf-palma-review.js'
 import golfAndratxReview from './guide-post-content-localized/golf-andratx-review.js'
 import sonAntemWestReview from './guide-post-content-localized/son-antem-west-review.js'
 import onCourseCoachingMallorca from './guide-post-content-localized/on-course-coaching-mallorca.js'
@@ -17,6 +18,7 @@ export const LOCALIZED_GUIDE_POST_CONTENT = {
   'son-termes-review': sonTermesReview,
   'son-muntaner-review': sonMuntanerReview,
   't-golf-calvia-review': tGolfCalviaReview,
+  't-golf-palma-review': tGolfPalmaReview,
   'golf-andratx-review': golfAndratxReview,
   'son-antem-west-review': sonAntemWestReview,
   'on-course-coaching-mallorca': onCourseCoachingMallorca,
