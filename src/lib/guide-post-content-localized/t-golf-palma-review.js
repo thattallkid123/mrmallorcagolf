@@ -10,7 +10,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Septiembre 2026",
       "title": "T Golf Palma - Análisis y Tarifas",
-      "intro": "Agua en juego en más hoyos de los que sugiere la tarjeta, greenes pequeños y rápidos, y un trazado que premia pensar desde el tee. Un 9 sobre 10, un campo que merece valorarse por sí mismo y no solo por compartir nombre con T Golf Calvià.",
+      "intro": "Greenes rápidos, a menudo pequeños y con ondulaciones, y más de un hoyo de riesgo y recompensa que te hacen pensar desde el tee. Un 9 sobre 10, un campo que merece juzgarse por sí mismo y no solo por compartir nombre con su campo hermano, T Golf Calvià.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -36,16 +36,16 @@ const content = {
         "caption": "Agua y búnkeres protegen el green en uno de los par 4 del noveno de vuelta en T Golf Palma."
       },
       {
-        "text": "Tuve la primera salida del día en T Golf Palma, las 7:30, sin nadie por delante. Los jardineros seguían trabajando en el campo y pararon para felicitarnos por un par de golpes al pasar. Esa tranquilidad es poco común tan cerca de Palma."
+        "text": "Tuvimos la primera salida del día en T Golf Palma, las 7:30, sin nadie por delante. Los jardineros estaban trabajando en el campo y pararon para felicitarnos por un par de golpes al pasar. Un campo tan cerca de Palma rara vez está así de tranquilo."
       },
       {
         "text": "El Entorno"
       },
       {
-        "text": "T Golf Palma cambió de manos recientemente y parte de su reputación viene de compartir nombre con T Golf Calvià. Fui pensando que eso podía estar haciendo parte del trabajo. No es así. Jack Nicklaus diseñó el campo, el único suyo en Mallorca, que abrió en 2006 antes de una renovación completa en 2022."
+        "text": "T Golf Palma cambió de manos en marzo de 2022, cuando T Club compró el campo y lo rebautizó, y parte de su reputación viene de compartir nombre con T Golf Calvià. Fui pensando que eso podía estar haciendo parte del trabajo. No es así. Jack Nicklaus diseñó el campo, el único suyo en Mallorca, que abrió en 2006 antes de una renovación completa en 2022."
       },
       {
-        "text": "Está apartado de casi todo lo demás en la isla. Pasan aviones desde el aeropuerto de Palma, pero durante casi toda la vuelta no se ve ninguna casa. Aislado pero bajo una ruta de vuelo es una combinación curiosa, y fue la mayor sorpresa del día."
+        "text": "Está apartado de casi todo lo demás en la isla. Pasan aviones desde el aeropuerto de Palma, pero durante casi toda la vuelta no se ve ningún edificio. Aislado pero bajo una ruta de vuelo es una combinación curiosa."
       },
       {
         "text": "Hoyos que conviene conocer"
@@ -64,7 +64,7 @@ const content = {
         "text": "El hoyo 12 mide 392 m con un green inclinado, el par 4 más difícil del noveno de vuelta sobre el papel. Juega tan difícil como sugiere la distancia."
       },
       {
-        "text": "El hoyo 15 fue el más bonito del campo. El agua recorre todo el lado derecho y hay árboles a la izquierda, así que ya es estrecho antes de llegar al segundo golpe, que tiene que volver a cruzar el agua para alcanzar el green. Dejé el mío cerca de la bandera e hice birdie ahí, lo mejor del día."
+        "text": "El hoyo 15 fue el más bonito del campo. El agua recorre todo el lado derecho y hay árboles a la izquierda, así que ya es estrecho antes de llegar al segundo golpe, que tiene que volver a cruzar el agua para alcanzar el green. Dejé el mío cerca de la bandera en la zona de aterrizaje estrecha e hice el birdie también, así que sí es posible."
       },
       {
         "alt": "Golfista jugando el golpe de approach sobre el agua en el hoyo 15 de T Golf Palma",
@@ -81,7 +81,7 @@ const content = {
         "text": "Estado del Campo"
       },
       {
-        "text": "El estado del campo fue excelente en todo momento, a la altura de Calvià. Los greenes estaban rápidos y pequeños, y el rough agarra el palo lo suficiente como para que fallar un green suela significar un chip complicado en lugar de uno fácil. Jugamos en un día blando porque habían regado mucho con los aspersores; cuando el terreno se endurezca, algunos de esos chips serán aún más difíciles."
+        "text": "El estado del campo fue excelente en todo momento, a la altura de Calvià. Los greenes estaban rápidos y pequeños, y el rough agarra el palo lo suficiente como para que fallar la calle se penalice, y cerca del green un chip difícil se complica aún más por lo mucho que ondulan los greenes. Jugamos en un día blando porque habían regado mucho con los aspersores; cuando el terreno se endurezca, algunos de esos chips serán aún más difíciles."
       },
       {
         "alt": "Un avión sobrevolando la calle y los búnkeres en T Golf Palma con pinos detrás",
@@ -136,7 +136,7 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "text": "9/10. T Golf Palma consiguió parte de su reputación inicial por compartir nombre con T Golf Calvià, y fui pensando que eso podía estar haciendo parte del trabajo. No es así. El estado del campo, los hoyos de riesgo y recompensa y el cierre en el 15 y el 18 lo convierten en una vuelta igual de buena. Le va bien a un jugador que quiera pensar el tee shot en lugar de solo pegarle fuerte, con varios hoyos donde el control de distancia importa más que la distancia."
+        "text": "9/10. T Golf Palma, en mi opinión, consiguió parte de su reputación inicial por compartir nombre con T Golf Calvià. Jugarlo confirmó lo contrario: el estado del campo, los hoyos de riesgo y recompensa y el cierre en el 15 y el 18 lo convierten en una vuelta igual de buena por mérito propio. Le va bien a un jugador que quiera pensar el tee shot en lugar de solo pegarle fuerte, con varios hoyos donde el control de distancia importa más que la distancia."
       },
       {
         "title": "Cuatro cosas que sabría antes de reservar T Golf Palma",
@@ -147,7 +147,7 @@ const content = {
           ],
           [
             "Elección de palo",
-            "El control de distancia importa más que la distancia bruta aquí, sobre todo en el 8 y el 15. Lleva toda tu gama de wedges."
+            "El control de distancia importa más que la distancia bruta aquí. A menudo me quedaban 80-120 yardas y necesitaba mucha precisión para puntuar bien. Un jugador de hándicap medio jugará el campo más corto que yo, pero los hierros largos hacia zonas de aterrizaje pequeñas seguirán siendo exigentes."
           ],
           [
             "Donde suelen perder golpes los visitantes",
@@ -181,7 +181,7 @@ const content = {
       "readTime": "6 Min.",
       "updated": "September 2026",
       "title": "T Golf Palma - Bewertung & Gebühren",
-      "intro": "Wasser kommt auf mehr Löchern ins Spiel, als die Karte vermuten lässt, kleine schnelle Grüns, und ein Layout, das Nachdenken vom Abschlag belohnt. 9 von 10, und ein Platz, der für sich selbst beurteilt werden sollte, nicht nur dafür, dass er sich den Namen mit T Golf Calvià teilt.",
+      "intro": "Schnelle Grüns, oft klein und wellig, und mehr als nur ein paar Risiko-Belohnung-Löcher, die einen vom Abschlag aus zum Nachdenken bringen. 9 von 10, und ein Platz, der für sich selbst beurteilt werden sollte, nicht nur dafür, dass er sich den Namen mit seinem Schwesterplatz T Golf Calvià teilt.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -207,16 +207,16 @@ const content = {
         "caption": "Wasser und Bunker schützen das Grün auf einem der Par-4-Löcher der Hinterneun bei T Golf Palma."
       },
       {
-        "text": "Ich hatte die erste Startzeit des Tages bei T Golf Palma, 7:30 Uhr, niemand vor uns. Die Greenkeeper waren noch auf dem Platz und hielten an, um ein paar Schläge zu loben, als wir vorbeikamen. Diese Ruhe ist selten, so nah an Palma."
+        "text": "Wir hatten die erste Startzeit des Tages bei T Golf Palma, 7:30 Uhr, niemand vor uns. Die Greenkeeper arbeiteten auf dem Platz und hielten an, um ein paar Schläge zu loben, als wir vorbeikamen. Ein Platz so nah an Palma ist selten so ruhig."
       },
       {
         "text": "Die Lage"
       },
       {
-        "text": "T Golf Palma hat kürzlich den Besitzer gewechselt und einen Teil seines Rufs davon, dass er sich den Namen mit T Golf Calvià teilt. Ich bin mit der Frage hingefahren, ob das einen Teil der Arbeit übernimmt. Das ist nicht der Fall. Jack Nicklaus hat den Platz entworfen, der einzige von ihm auf Mallorca, eröffnet 2006 vor einer kompletten Renovierung 2022."
+        "text": "T Golf Palma hat im März 2022 den Besitzer gewechselt, als T Club den Platz kaufte und umbenannte, und einen Teil seines Rufs davon, dass er sich den Namen mit T Golf Calvià teilt. Ich bin mit der Frage hingefahren, ob das einen Teil der Arbeit übernimmt. Das ist nicht der Fall. Jack Nicklaus hat den Platz entworfen, der einzige von ihm auf Mallorca, eröffnet 2006 vor einer kompletten Renovierung 2022."
       },
       {
-        "text": "Er liegt abseits von fast allem anderen auf der Insel. Flugzeuge fliegen vom Flughafen Palma aus darüber, aber auf fast der gesamten Runde ist kein Haus zu sehen. Isoliert, aber unter einer Einflugschneise, war die größte Überraschung des Tages."
+        "text": "Er liegt abseits von fast allem anderen auf der Insel. Flugzeuge fliegen vom Flughafen Palma aus darüber, aber auf fast der gesamten Runde ist kein Gebäude zu sehen. Isoliert, aber unter einer Einflugschneise, ist eine merkwürdige Kombination."
       },
       {
         "text": "Löcher, die man kennen sollte"
@@ -235,7 +235,7 @@ const content = {
         "text": "Loch 12 misst 392 m mit einem geneigten Grün, auf dem Papier das schwerste Par 4 der Hinterneun. Es spielt genauso schwer, wie die Länge vermuten lässt."
       },
       {
-        "text": "Loch 15 war das schönste Loch auf dem Platz. Wasser verläuft die gesamte rechte Seite entlang, links stehen Bäume, sodass es schon eng ist, bevor überhaupt der zweite Schlag kommt, der erneut über das Wasser tragen muss, um das Grün zu erreichen. Ich brachte meinen nah an die Fahne und machte dort ein Birdie, das Highlight der Runde."
+        "text": "Loch 15 war das schönste Loch auf dem Platz. Wasser verläuft die gesamte rechte Seite entlang, links stehen Bäume, sodass es schon eng ist, bevor überhaupt der zweite Schlag kommt, der erneut über das Wasser tragen muss, um das Grün zu erreichen. Ich brachte meinen auf der schmalen Landezone nah an die Fahne und machte auch das Birdie, es geht also."
       },
       {
         "alt": "Golfer spielt den Annäherungsschlag über Wasser auf dem 15. Loch bei T Golf Palma",
@@ -252,7 +252,7 @@ const content = {
         "text": "Platzzustand"
       },
       {
-        "text": "Der Platzzustand war durchgehend ausgezeichnet, auf Augenhöhe mit Calvià. Die Grüns waren schnell und klein, und der Rough hält den Schläger fest genug, dass ein verfehltes Grün meist einen schwierigen statt einen einfachen Chip bedeutet. Wir spielten an einem weichen Tag, weil viel beregnet worden war; wenn der Boden fester wird, werden einige dieser Chips noch schwerer."
+        "text": "Der Platzzustand war durchgehend ausgezeichnet, auf Augenhöhe mit Calvià. Die Grüns waren schnell und klein, und der Rough hält den Schläger fest genug, dass ein verfehltes Fairway bestraft wird, und in der Nähe des Grüns wird ein schwieriger Chip durch die welligen Grüns noch schwerer. Wir spielten an einem weichen Tag, weil viel beregnet worden war; wenn der Boden fester wird, werden einige dieser Chips noch schwerer."
       },
       {
         "alt": "Ein Flugzeug fliegt über das Fairway und die Bunker bei T Golf Palma, Pinien im Hintergrund",
@@ -307,7 +307,7 @@ const content = {
         "text": "Fazit"
       },
       {
-        "text": "9/10. T Golf Palma verdankte einen Teil seines frühen Rufs dem geteilten Namen mit T Golf Calvià, und ich bin mit der Frage hingefahren, ob das einen Teil der Arbeit übernimmt. Das ist nicht der Fall. Der Platzzustand, die Risiko-Belohnung-Löcher und der Schluss auf 15 und 18 machen ihn zu einer genauso guten Runde. Er passt zu einem Spieler, der vom Abschlag aus mitdenken will, statt nur fest zu schwingen, mit mehreren Löchern, bei denen Distanzkontrolle wichtiger ist als Distanz."
+        "text": "9/10. T Golf Palma verdankte, wie ich finde, einen Teil seines frühen Rufs dem geteilten Namen mit T Golf Calvià. Die Runde selbst bewies das Gegenteil: Der Platzzustand, die Risiko-Belohnung-Löcher und der Schluss auf 15 und 18 machen ihn aus eigener Kraft zu einer genauso guten Runde. Er passt zu einem Spieler, der vom Abschlag aus mitdenken will, statt nur fest zu schwingen, mit mehreren Löchern, bei denen Distanzkontrolle wichtiger ist als Distanz."
       },
       {
         "title": "Vier Dinge, die ich vor der Buchung von T Golf Palma wissen würde",
@@ -318,7 +318,7 @@ const content = {
           ],
           [
             "Schlägerwahl",
-            "Distanzkontrolle ist hier wichtiger als reine Länge, besonders auf 8 und 15. Nimm dein volles Wedge-Sortiment mit."
+            "Distanzkontrolle ist hier wichtiger als reine Länge. Ich hatte oft noch 80-120 Yards und brauchte echte Präzision, um zu punkten. Ein Spieler mit mittlerem Handicap wird den Platz kürzer spielen als ich, aber lange Eisen auf kleine Landezonen bleiben trotzdem anspruchsvoll."
           ],
           [
             "Wo Besucher Schläge verlieren",
@@ -352,7 +352,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Septembre 2026",
       "title": "T Golf Palma - Avis & Tarifs",
-      "intro": "L'eau entre en jeu sur plus de trous que la carte ne le laisse penser, des greens petits et rapides, et un tracé qui récompense la réflexion depuis le départ. Un 9 sur 10, un parcours qui mérite d'être jugé pour lui-même, pas seulement parce qu'il partage son nom avec T Golf Calvià.",
+      "intro": "Des greens rapides, souvent petits et ondulés, et plus d'un trou à risque-récompense qui vous font réfléchir dès le départ. Un 9 sur 10, un parcours qui mérite d'être jugé pour lui-même, pas seulement parce qu'il partage son nom avec son parcours frère, T Golf Calvià.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -378,16 +378,16 @@ const content = {
         "caption": "L'eau et les bunkers protègent le green sur l'un des par 4 du retour à T Golf Palma."
       },
       {
-        "text": "J'ai eu le premier départ de la journée à T Golf Palma, 7h30, personne devant nous. Les greenkeepers étaient encore sur le parcours et se sont arrêtés pour féliciter quelques coups à notre passage. Ce calme est rare, si près de Palma."
+        "text": "Nous avons eu le premier départ de la journée à T Golf Palma, 7h30, personne devant nous. Les greenkeepers travaillaient sur le parcours et se sont arrêtés pour féliciter quelques coups à notre passage. Un parcours aussi proche de Palma est rarement aussi calme."
       },
       {
         "text": "Le Cadre"
       },
       {
-        "text": "T Golf Palma a récemment changé de propriétaire et doit une partie de sa réputation au fait de partager son nom avec T Golf Calvià. J'y suis allé en me demandant si cela faisait une partie du travail. Ce n'est pas le cas. Jack Nicklaus a dessiné le parcours, le seul des siens à Majorque, ouvert en 2006 avant une rénovation complète en 2022."
+        "text": "T Golf Palma a changé de propriétaire en mars 2022, quand T Club a acheté le parcours et l'a rebaptisé, et doit une partie de sa réputation au fait de partager son nom avec T Golf Calvià. J'y suis allé en me demandant si cela faisait une partie du travail. Ce n'est pas le cas. Jack Nicklaus a dessiné le parcours, le seul des siens à Majorque, ouvert en 2006 avant une rénovation complète en 2022."
       },
       {
-        "text": "Il est à l'écart de presque tout le reste de l'île. Des avions passent depuis l'aéroport de Palma, mais sur presque tout le parcours, on ne voit aucune maison. Isolé mais sous un couloir aérien, c'est une combinaison curieuse, et ce fut la plus grande surprise de la journée."
+        "text": "Il est à l'écart de presque tout le reste de l'île. Des avions passent depuis l'aéroport de Palma, mais sur presque tout le parcours, on ne voit aucun bâtiment. Isolé mais sous un couloir aérien, c'est une combinaison curieuse."
       },
       {
         "text": "Trous à connaître"
@@ -406,7 +406,7 @@ const content = {
         "text": "Le trou 12 fait 392 m avec un green en pente, le par 4 le plus difficile du retour sur le papier. Il joue aussi difficile que la distance le suggère."
       },
       {
-        "text": "Le trou 15 était le plus beau du parcours. L'eau longe tout le côté droit et des arbres bordent la gauche, donc c'est déjà étroit avant même le deuxième coup, qui doit à nouveau traverser l'eau pour atteindre le green. J'ai amené le mien près du drapeau et j'y ai fait un birdie, le moment fort de la journée."
+        "text": "Le trou 15 était le plus beau du parcours. L'eau longe tout le côté droit et des arbres bordent la gauche, donc c'est déjà étroit avant même le deuxième coup, qui doit à nouveau traverser l'eau pour atteindre le green. J'ai amené le mien près du drapeau sur la zone d'arrivée étroite et j'y ai aussi fait le birdie, donc c'est possible."
       },
       {
         "alt": "Golfeur jouant le coup d'approche au-dessus de l'eau sur le trou 15 à T Golf Palma",
@@ -423,7 +423,7 @@ const content = {
         "text": "État Du Parcours"
       },
       {
-        "text": "L'état du parcours était excellent tout au long de la journée, au niveau de Calvià. Les greens étaient rapides et petits, et le rough retient le club assez pour qu'un green manqué signifie souvent un chip difficile plutôt qu'un chip facile. Nous avons joué un jour souple car les arroseurs avaient beaucoup tourné ; quand le terrain durcira, certains de ces chips seront encore plus difficiles."
+        "text": "L'état du parcours était excellent tout au long de la journée, au niveau de Calvià. Les greens étaient rapides et petits, et le rough retient le club assez pour qu'un fairway manqué soit pénalisé, et près du green un chip difficile devient encore plus dur à cause de l'ondulation des greens. Nous avons joué un jour souple car les arroseurs avaient beaucoup tourné ; quand le terrain durcira, certains de ces chips seront encore plus difficiles."
       },
       {
         "alt": "Un avion survolant le fairway et les bunkers à T Golf Palma, pins en arrière-plan",
@@ -478,7 +478,7 @@ const content = {
         "text": "Verdict"
       },
       {
-        "text": "9/10. T Golf Palma a bâti une partie de sa réputation initiale en partageant son nom avec T Golf Calvià, et j'y suis allé en me demandant si cela faisait une partie du travail. Ce n'est pas le cas. L'état du parcours, les trous de risque-récompense et la fin sur le 15 et le 18 en font une partie tout aussi bonne. Il convient à un joueur qui veut réfléchir son départ plutôt que juste frapper fort, avec plusieurs trous où le contrôle de distance compte plus que la distance."
+        "text": "9/10. T Golf Palma devait, à mon avis, une partie de sa réputation initiale au fait de partager son nom avec T Golf Calvià. La partie elle-même a prouvé le contraire : l'état du parcours, les trous de risque-récompense et la fin sur le 15 et le 18 en font une partie tout aussi bonne par ses propres mérites. Il convient à un joueur qui veut réfléchir son départ plutôt que juste frapper fort, avec plusieurs trous où le contrôle de distance compte plus que la distance."
       },
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver T Golf Palma",
@@ -489,7 +489,7 @@ const content = {
           ],
           [
             "Choix de club",
-            "Le contrôle de distance compte plus que la longueur brute ici, surtout sur le 8 et le 15. Apportez toute votre gamme de wedges."
+            "Le contrôle de distance compte plus que la longueur brute ici. Il me restait souvent 80-120 yards et il fallait une vraie précision pour scorer. Un joueur au handicap moyen jouera le parcours plus court que moi, mais les longs fers vers de petites zones d'arrivée resteront exigeants."
           ],
           [
             "Où les visiteurs perdent des coups",
@@ -523,7 +523,7 @@ const content = {
       "readTime": "6 min",
       "updated": "September 2026",
       "title": "T Golf Palma - Review & Tarief",
-      "intro": "Water komt op meer holes in het spel dan de kaart doet vermoeden, kleine snelle greens, en een indeling die nadenken vanaf de tee beloont. Een 9 uit 10, en een baan die op eigen merites beoordeeld moet worden, niet alleen omdat hij de naam deelt met T Golf Calvià.",
+      "intro": "Snelle greens, vaak klein en glooiend, en meer dan een paar risk-reward holes die je vanaf de tee aan het denken zetten. Een 9 uit 10, en een baan die op eigen merites beoordeeld moet worden, niet alleen omdat hij de naam deelt met zusterbaan T Golf Calvià.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -549,16 +549,16 @@ const content = {
         "caption": "Water en bunkers beschermen de green op een van de par 4's op de terugweg bij T Golf Palma."
       },
       {
-        "text": "Ik had de eerste starttijd van de dag bij T Golf Palma, 7:30 uur, niemand voor ons. De greenkeepers waren nog op de baan aan het werk en stopten om een paar slagen te complimenteren toen we voorbijkwamen. Die rust is zeldzaam, zo dicht bij Palma."
+        "text": "Wij hadden de eerste starttijd van de dag bij T Golf Palma, 7:30 uur, niemand voor ons. De greenkeepers waren aan het werk op de baan en stopten om een paar slagen te complimenteren toen we voorbijkwamen. Een baan zo dicht bij Palma is zelden zo stil."
       },
       {
         "text": "De Ligging"
       },
       {
-        "text": "T Golf Palma is recent van eigenaar gewisseld en dankt een deel van zijn reputatie aan het delen van de naam met T Golf Calvià. Ik ging erheen met de vraag of dat een deel van het werk deed. Dat is niet zo. Jack Nicklaus ontwierp de baan, de enige van hem op Mallorca, geopend in 2006 vóór een volledige renovatie in 2022."
+        "text": "T Golf Palma wisselde in maart 2022 van eigenaar, toen T Club de baan kocht en hernoemde, en dankt een deel van zijn reputatie aan het delen van de naam met T Golf Calvià. Ik ging erheen met de vraag of dat een deel van het werk deed. Dat is niet zo. Jack Nicklaus ontwierp de baan, de enige van hem op Mallorca, geopend in 2006 vóór een volledige renovatie in 2022."
       },
       {
-        "text": "De baan ligt afgelegen van bijna al het andere op het eiland. Er vliegen vliegtuigen over vanaf Palma airport, maar op bijna de hele ronde is geen huis te zien. Afgelegen maar onder een aanvliegroute is een vreemde combinatie, en dat was de grootste verrassing van de dag."
+        "text": "De baan ligt afgelegen van bijna al het andere op het eiland. Er vliegen vliegtuigen over vanaf Palma airport, maar op bijna de hele ronde is geen gebouw te zien. Afgelegen maar onder een aanvliegroute is een vreemde combinatie."
       },
       {
         "text": "Holes om te kennen"
@@ -577,7 +577,7 @@ const content = {
         "text": "Hole 12 meet 392m met een hellende green, op papier de zwaarste par 4 van de terugweg. Hij speelt net zo zwaar als de lengte doet vermoeden."
       },
       {
-        "text": "Hole 15 was de mooiste hole op de baan. Water loopt de hele rechterkant langs en links staan bomen, dus het is al smal voordat je bij de tweede slag bent, die opnieuw over het water moet om de green te bereiken. Ik bracht de mijne dicht bij de vlag en maakte daar een birdie, het hoogtepunt van de dag."
+        "text": "Hole 15 was de mooiste hole op de baan. Water loopt de hele rechterkant langs en links staan bomen, dus het is al smal voordat je bij de tweede slag bent, die opnieuw over het water moet om de green te bereiken. Ik bracht de mijne dicht bij de vlag op de smalle landingszone en maakte ook de birdie, dus het kan."
       },
       {
         "alt": "Golfer speelt de approach-slag over water op hole 15 bij T Golf Palma",
@@ -594,7 +594,7 @@ const content = {
         "text": "Conditie"
       },
       {
-        "text": "De conditie was doorgaans uitstekend, op hetzelfde niveau als Calvià. De greens waren snel en klein, en de rough houdt de club voldoende vast dat een gemiste green meestal een lastige chip betekent in plaats van een makkelijke. We speelden op een zachte dag omdat de sproeiers veel hadden gedraaid; als de grond harder wordt, worden sommige van die chips nog lastiger."
+        "text": "De conditie was doorgaans uitstekend, op hetzelfde niveau als Calvià. De greens waren snel en klein, en de rough houdt de club voldoende vast dat een gemiste fairway wordt afgestraft, en bij de green wordt een lastige chip nog lastiger door hoeveel de greens glooien. We speelden op een zachte dag omdat de sproeiers veel hadden gedraaid; als de grond harder wordt, worden sommige van die chips nog lastiger."
       },
       {
         "alt": "Een vliegtuig vliegt over de fairway en bunkers bij T Golf Palma, pijnbomen op de achtergrond",
@@ -649,7 +649,7 @@ const content = {
         "text": "Conclusie"
       },
       {
-        "text": "9/10. T Golf Palma dankte een deel van zijn vroege reputatie aan het delen van de naam met T Golf Calvià, en ik ging erheen met de vraag of dat een deel van het werk deed. Dat is niet zo. De conditie, de risk-reward holes en de afsluiting op 15 en 18 maken het een even goede ronde. Hij past bij een speler die vanaf de tee wil nadenken in plaats van gewoon hard te slaan, met meerdere holes waar afstandscontrole belangrijker is dan afstand."
+        "text": "9/10. T Golf Palma dankte, in mijn ogen, een deel van zijn vroege reputatie aan het delen van de naam met T Golf Calvià. De ronde zelf bewees het tegendeel: de conditie, de risk-reward holes en de afsluiting op 15 en 18 maken het op eigen kracht een even goede ronde. Hij past bij een speler die vanaf de tee wil nadenken in plaats van gewoon hard te slaan, met meerdere holes waar afstandscontrole belangrijker is dan afstand."
       },
       {
         "title": "Vier dingen die ik zou willen weten voor ik T Golf Palma boek",
@@ -660,7 +660,7 @@ const content = {
           ],
           [
             "Clubkeuze",
-            "Afstandscontrole is hier belangrijker dan pure lengte, vooral op 8 en 15. Neem je volledige reeks wedges mee."
+            "Afstandscontrole is hier belangrijker dan pure lengte. Ik had vaak nog 80-120 yards en had echte precisie nodig om te scoren. Een speler met een gemiddeld handicap speelt de baan korter dan ik, maar lange ijzers naar kleine landingszones blijven veeleisend."
           ],
           [
             "Waar bezoekers slagen verliezen",
@@ -694,7 +694,7 @@ const content = {
       "readTime": "6 min",
       "updated": "September 2026",
       "title": "T Golf Palma - Recension & Avgifter",
-      "intro": "Vatten kommer in på fler hål än scorekortet antyder, små snabba greener, och en layout som belönar att tänka från tee. En 9 av 10, och en bana som förtjänar att bedömas på egna meriter, inte bara för att den delar namn med T Golf Calvià.",
+      "intro": "Snabba greener, ofta små och kuperade, och fler än ett par risk-reward-hål som får en att tänka från tee. En 9 av 10, och en bana som förtjänar att bedömas på egna meriter, inte bara för att den delar namn med sin systerbana T Golf Calvià.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -720,16 +720,16 @@ const content = {
         "caption": "Vatten och bunkrar skyddar greenen på ett av par 4-hålen på baksidan nio hos T Golf Palma."
       },
       {
-        "text": "Jag hade dagens första starttid hos T Golf Palma, 7:30, ingen framför oss. Greenkeeperna var fortfarande ute och arbetade på banan och stannade för att berömma några slag när vi gick förbi. Den tystnaden är ovanlig så nära Palma."
+        "text": "Vi hade dagens första starttid hos T Golf Palma, 7:30, ingen framför oss. Greenkeeperna arbetade på banan och stannade för att berömma några slag när vi gick förbi. En bana så nära Palma är sällan så här tyst."
       },
       {
         "text": "Läget"
       },
       {
-        "text": "T Golf Palma har nyligen bytt ägare och fick en del av sitt rykte från att dela namn med T Golf Calvià. Jag åkte dit och undrade om det gjorde en del av jobbet. Det gör det inte. Jack Nicklaus designade banan, den enda av hans på Mallorca, som öppnade 2006 innan en fullständig renovering 2022."
+        "text": "T Golf Palma bytte ägare i mars 2022, då T Club köpte banan och döpte om den, och fick en del av sitt rykte från att dela namn med T Golf Calvià. Jag åkte dit och undrade om det gjorde en del av jobbet. Det gör det inte. Jack Nicklaus designade banan, den enda av hans på Mallorca, som öppnade 2006 innan en fullständig renovering 2022."
       },
       {
-        "text": "Den ligger avskild från nästan allt annat på ön. Flygplan passerar från Palma flygplats, men under nästan hela rundan syns inget hus. Isolerad men under en inflygningsrutt är en märklig kombination, och det var dagens största överraskning."
+        "text": "Den ligger avskild från nästan allt annat på ön. Flygplan passerar från Palma flygplats, men under nästan hela rundan syns ingen byggnad. Isolerad men under en inflygningsrutt är en märklig kombination."
       },
       {
         "text": "Hål värda att känna till"
@@ -748,7 +748,7 @@ const content = {
         "text": "Hål 12 mäter 392 m med en sluttande green, på pappret det svåraste par 4-hålet på baksidan nio. Det spelar lika svårt som längden antyder."
       },
       {
-        "text": "Hål 15 var det snyggaste hålet på banan. Vatten löper längs hela högersidan och träd kantar vänstersidan, så det är trångt redan innan andraslaget, som återigen måste ta sig över vattnet för att nå greenen. Jag fick min nära flaggan och gjorde birdie där, dagens höjdpunkt."
+        "text": "Hål 15 var det snyggaste hålet på banan. Vatten löper längs hela högersidan och träd kantar vänstersidan, så det är trångt redan innan andraslaget, som återigen måste ta sig över vattnet för att nå greenen. Jag fick min nära flaggan på det smala landningsområdet och gjorde birdien också, så det går."
       },
       {
         "alt": "Golfare spelar inspelet över vatten på hål 15 hos T Golf Palma",
@@ -765,7 +765,7 @@ const content = {
         "text": "Banans Skick"
       },
       {
-        "text": "Skicket var genomgående utmärkt, i klass med Calvià. Greenerna var snabba och små, och roughen håller fast klubban tillräckligt för att en missad green oftast betyder en svår chip snarare än en enkel. Vi spelade en mjuk dag eftersom sprinklerna hade kört mycket; när marken hårdnar blir några av de där chiparna ännu svårare."
+        "text": "Skicket var genomgående utmärkt, i klass med Calvià. Greenerna var snabba och små, och roughen håller fast klubban tillräckligt för att en missad fairway straffas, och nära greenen blir en svår chip ännu svårare av hur mycket greenerna kuperar sig. Vi spelade en mjuk dag eftersom sprinklerna hade kört mycket; när marken hårdnar blir några av de där chiparna ännu svårare."
       },
       {
         "alt": "Ett flygplan flyger över fairwayn och bunkrarna hos T Golf Palma, tallar i bakgrunden",
@@ -820,7 +820,7 @@ const content = {
         "text": "Slutsats"
       },
       {
-        "text": "9/10. T Golf Palma fick en del av sitt tidiga rykte från att dela namn med T Golf Calvià, och jag åkte dit och undrade om det gjorde en del av jobbet. Det gör det inte. Skicket, risk-reward-hålen och avslutningen på 15 och 18 gör det till en lika bra runda. Den passar en spelare som vill tänka igenom utslaget snarare än att bara svinga hårt, med flera hål där distanskontroll betyder mer än distans."
+        "text": "9/10. T Golf Palma fick, som jag ser det, en del av sitt tidiga rykte från att dela namn med T Golf Calvià. Själva rundan bevisade motsatsen: skicket, risk-reward-hålen och avslutningen på 15 och 18 gör det på egna meriter till en lika bra runda. Den passar en spelare som vill tänka igenom utslaget snarare än att bara svinga hårt, med flera hål där distanskontroll betyder mer än distans."
       },
       {
         "title": "Fyra saker jag skulle vilja veta innan jag bokar T Golf Palma",
@@ -831,7 +831,7 @@ const content = {
           ],
           [
             "Klubbval",
-            "Distanskontroll betyder mer än ren längd här, särskilt in mot 8 och 15. Ta med hela ditt sortiment av wedgar."
+            "Distanskontroll betyder mer än ren längd här. Jag hade ofta 80-120 yards kvar och behövde verklig precision för att göra poäng. En spelare med medelhandicap spelar banan kortare än jag gjorde, men långa järn mot små landningsytor är fortfarande krävande."
           ],
           [
             "Där besökare tappar slag",
@@ -865,7 +865,7 @@ const content = {
       "readTime": "6分钟",
       "updated": "2026年9月",
       "title": "T Golf Palma 评测 — PGA职业球员的真实评价（2026）",
-      "intro": "水障碍在场上出现的洞比记分卡显示的还要多,果岭又小又快,球场设计奖励在发球台上多思考的球手。综合评分9/10,这座球场值得凭自身实力被评价,而不只是因为和T Golf Calvià同名。",
+      "intro": "果岭又快又小,还常常有起伏,好几个洞都是风险与回报并存,逼你在发球台上多想一步。综合评分9/10,这座球场值得凭自身实力被评价,而不只是因为和姐妹球场T Golf Calvià同名。",
       "related": [
         {
           "slug": "son-gual-review",
@@ -891,16 +891,16 @@ const content = {
         "caption": "水障碍和沙坑守护着T Golf Palma后九洞其中一个四杆洞的果岭。"
       },
       {
-        "text": "我打了当天T Golf Palma的第一个开球时间,早上7点30分,前面没有人。球场维护人员还在场上工作,我们经过时停下来称赞了几杆好球。这么近帕尔马还能有这样的安静,很难得。"
+        "text": "我们打了当天T Golf Palma的第一个开球时间,早上7点30分,前面没有人。球场维护人员正在场上工作,我们经过时停下来称赞了几杆好球。这么近帕尔马的球场,很少能这么安静。"
       },
       {
         "text": "球场环境"
       },
       {
-        "text": "T Golf Palma最近换了业主,名气有一部分来自和T Golf Calvià同名。我出发前还在想,这个名字是不是替它省了不少力气。事实并非如此。球场由杰克·尼克劳斯设计,是他在马略卡岛唯一的作品,2006年开业,2022年经过全面翻新。"
+        "text": "T Golf Palma在2022年3月易主,T Club买下球场并为其改名,球场的名气也有一部分来自和T Golf Calvià同名。我出发前还在想,这个名字是不是替它省了不少力气。事实并非如此。球场由杰克·尼克劳斯设计,是他在马略卡岛唯一的作品,2006年开业,2022年经过全面翻新。"
       },
       {
-        "text": "球场几乎与岛上其他一切都隔绝开来。飞机会从帕尔马机场方向飞过,但几乎整轮球都看不到一栋房子。既孤立又处在航线之下,是个奇怪的组合,也是这一天最大的意外。"
+        "text": "球场几乎与岛上其他一切都隔绝开来。飞机会从帕尔马机场方向飞过,但几乎整轮球都看不到一栋建筑。既孤立又处在航线之下,是个奇怪的组合。"
       },
       {
         "text": "值得了解的关键洞"
@@ -919,7 +919,7 @@ const content = {
         "text": "第12洞392米,果岭有坡度,纸面上是后九洞最难的四杆洞。实际难度和距离显示的一样。"
       },
       {
-        "text": "第15洞是全场最好看的一洞。水障碍贯穿整个右侧,左侧有树木,第二杆还没打之前就已经很紧张,而第二杆还得再次越过水面才能上果岭。我把球打得很靠近旗杆,抓到一只小鸟球,是这一天的最高光时刻。"
+        "text": "第15洞是全场最好看的一洞。水障碍贯穿整个右侧,左侧有树木,第二杆还没打之前就已经很紧张,而第二杆还得再次越过水面才能上果岭。我在狭窄的落球区把球打得很靠近旗杆,也抓到了小鸟球,说明这是能做到的。"
       },
       {
         "alt": "球手在T Golf Palma第15洞越过水面打进攻杆",
@@ -936,7 +936,7 @@ const content = {
         "text": "球场状态"
       },
       {
-        "text": "全程球场状态出色,和Calvià不相上下。果岭又快又小,长草区抓杆能力很强,打丢果岭往往意味着一次困难的切杆,而不是简单的一次。我们打球那天因为喷灌用得多,场地偏软;等地面变硬之后,有些切杆会更难。"
+        "text": "全程球场状态出色,和Calvià不相上下。果岭又快又小,长草区抓杆能力很强,打丢球道会受到惩罚,靠近果岭时,起伏的果岭又让本就困难的切杆更难。我们打球那天因为喷灌用得多,场地偏软;等地面变硬之后,有些切杆会更难。"
       },
       {
         "alt": "一架飞机飞过T Golf Palma的球道和沙坑,背景是松树",
@@ -991,7 +991,7 @@ const content = {
         "text": "总结"
       },
       {
-        "text": "9/10。T Golf Palma早期的名气有一部分来自和T Golf Calvià同名,我出发前还在想这个名字是不是替它省了不少力气。事实并非如此。球场状态、风险与回报并存的球洞设计,加上第15洞和第18洞的收尾,让这轮球同样精彩。这座球场适合愿意在发球台多动脑筋而不是一味用力挥杆的球手,有好几个洞距离控制比距离本身更重要。"
+        "text": "9/10。在我看来,T Golf Palma早期的名气有一部分来自和T Golf Calvià同名。而这一轮球本身证明并非如此:球场状态、风险与回报并存的球洞设计,加上第15洞和第18洞的收尾,凭自身实力就让这轮球同样精彩。这座球场适合愿意在发球台多动脑筋而不是一味用力挥杆的球手,有好几个洞距离控制比距离本身更重要。"
       },
       {
         "title": "预订T Golf Palma前我会先知道的四件事",
@@ -1002,7 +1002,7 @@ const content = {
           ],
           [
             "选杆建议",
-            "这里距离控制比单纯的击球距离更重要,尤其是打向第8洞和第15洞时。带上你全套的挖起杆。"
+            "这里距离控制比单纯的击球距离更重要。我经常剩下80-120码,需要非常精准才能拿到好成绩。中差点球手打这座球场会比我打得短,但长铁杆打向狭窄落球区依然很有挑战性。"
           ],
           [
             "游客通常在哪里丢杆",
