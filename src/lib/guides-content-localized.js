@@ -42,6 +42,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Par 72 · €80-210 · Suroeste de Mallorca · 15 lagos"
       },
       {
+        "slug": "t-golf-palma-review",
+        "badge": "Análisis de Campo",
+        "badgeGold": true,
+        "title": "T Golf Palma Análisis - La Opinión Honesta de un Profesional PGA (2026)",
+        "intro": "Greenes rápidos y pequeños y hoyos de riesgo y recompensa que te hacen pensar desde el tee. Un 9 sobre 10 que merece su propia reputación, no solo la de T Golf Calvià.",
+        "readTime": "6 min",
+        "keywords": "Par 71 · €80-150 · Palma · Diseño de Jack Nicklaus"
+      },
+      {
         "slug": "son-muntaner-review",
         "badge": "Análisis del campo",
         "badgeGold": true,
@@ -205,6 +214,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Par 72 · €80-210 · Südwesten Mallorcas · 15 Seen"
       },
       {
+        "slug": "t-golf-palma-review",
+        "badge": "Platz-Bewertung",
+        "badgeGold": true,
+        "title": "T Golf Palma Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
+        "intro": "Schnelle, kleine Grüns und Risiko-Belohnung-Löcher, die einen vom Abschlag aus zum Nachdenken bringen. 9 von 10 - ein eigener Ruf, nicht nur der von T Golf Calvià.",
+        "readTime": "6 Min.",
+        "keywords": "Par 71 · €80-150 · Palma · Jack-Nicklaus-Design"
+      },
+      {
         "slug": "son-muntaner-review",
         "badge": "Platz-Bewertung",
         "badgeGold": true,
@@ -365,6 +383,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. L'un des parcours les mieux entretenus de l'île. Un 9 sur 10.",
         "readTime": "6 min",
         "keywords": "Par 72 · €80-210 · Sud-ouest de Majorque · 15 lacs"
+      },
+      {
+        "slug": "t-golf-palma-review",
+        "badge": "Avis Parcours",
+        "badgeGold": true,
+        "title": "T Golf Palma Avis - L'Avis Honnête d'un Professionnel PGA (2026)",
+        "intro": "Des greens rapides et petits et des trous à risque-récompense qui vous font réfléchir dès le départ. Un 9 sur 10 qui mérite sa propre réputation, pas seulement celle de T Golf Calvià.",
+        "readTime": "6 min",
+        "keywords": "Par 71 · €80-150 · Palma · Design Jack Nicklaus"
       },
       {
         "slug": "son-muntaner-review",
@@ -530,6 +557,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Par 72 · €80-210 · Zuidwest Mallorca · 15 meren"
       },
       {
+        "slug": "t-golf-palma-review",
+        "badge": "Baanreview",
+        "badgeGold": true,
+        "title": "T Golf Palma Review - De Eerlijke Mening van een PGA Professional (2026)",
+        "intro": "Snelle, kleine greens en risk-reward holes die je vanaf de tee aan het denken zetten. Een 9 uit 10 die zijn eigen reputatie verdient, niet alleen die van T Golf Calvià.",
+        "readTime": "6 min",
+        "keywords": "Par 71 · €80-150 · Palma · Jack Nicklaus-ontwerp"
+      },
+      {
         "slug": "son-muntaner-review",
         "badge": "Baanbeoordeling",
         "badgeGold": true,
@@ -693,6 +729,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Par 72 · €80-210 · Sydvästra Mallorca · 15 sjöar"
       },
       {
+        "slug": "t-golf-palma-review",
+        "badge": "Banrecension",
+        "badgeGold": true,
+        "title": "T Golf Palma Recension - En PGA-Professionals Ärliga Omdöme (2026)",
+        "intro": "Snabba, små greener och risk-reward-hål som får en att tänka från tee. En 9 av 10 som förtjänar sitt eget rykte, inte bara T Golf Calviàs.",
+        "readTime": "6 min",
+        "keywords": "Par 71 · €80-150 · Palma · Jack Nicklaus-design"
+      },
+      {
         "slug": "son-muntaner-review",
         "badge": "Banomdöme",
         "badgeGold": true,
@@ -854,6 +899,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。岛上维护最佳的球场之一。综合评分9/10。",
         "readTime": "6分钟",
         "keywords": "标准杆72 · €80-210 · 马略卡岛西南部 · 15座湖泊"
+      },
+      {
+        "slug": "t-golf-palma-review",
+        "badge": "球场评测",
+        "badgeGold": true,
+        "title": "T Golf Palma 评测 — PGA职业球员的真实评价（2026）",
+        "intro": "果岭快而小,风险与回报并存的球洞逼你在发球台上多想一步。综合评分9/10,靠自身实力赢得的口碑,而不只是沾了T Golf Calvià的光。",
+        "readTime": "6分钟",
+        "keywords": "标准杆71 · €80-150 · 帕尔马 · 杰克·尼克劳斯设计"
       },
       {
         "slug": "son-muntaner-review",

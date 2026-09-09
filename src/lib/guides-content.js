@@ -51,6 +51,17 @@ export const GUIDES_CONTENT = {
       "keywords": "Par 72 · €80-210 · Southwest Mallorca · 15 lakes"
     },
     {
+      "slug": "t-golf-palma-review",
+      "badge": "Course Review",
+      "badgeGold": true,
+      "img": "/images/t-golf-palma-card.webp",
+      "imgPosition": "center 45%",
+      "title": "T Golf Palma Review - A PGA Professional's Honest Take (2026)",
+      "intro": "Fast, small greens and risk-reward holes that make you think from the tee. A 9 out of 10 that deserves its own reputation, not just T Golf Calvià's.",
+      "readTime": "6 min read",
+      "keywords": "Par 71 · €80-150 · Palma · Jack Nicklaus design"
+    },
+    {
       "slug": "son-muntaner-review",
       "badge": "Course Review",
       "badgeGold": true,
@@ -214,6 +225,7 @@ const COURSE_REVIEW_SLUGS = new Set([
   'alcanada-review',
   'son-gual-review',
   't-golf-calvia-review',
+  't-golf-palma-review',
   'son-muntaner-review',
   'santa-ponsa-1-review',
   'golf-andratx-review',
