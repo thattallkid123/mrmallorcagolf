@@ -944,7 +944,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'The Setting' },
         {
           type: 'paragraph',
-          text: "T Golf Palma changed hands recently and picked up a lot of its reputation from sharing a name with T Golf Calvià. I went in wondering if that was doing some of the work. It isn't. Jack Nicklaus designed the course, the only one of his in Mallorca, and it opened in 2006 before a full renovation in 2022.",
+          text: "T Golf Palma changed hands in March 2022, when T Club bought the course and renamed it, and picked up a lot of its reputation from sharing a name with T Golf Calvià. I went in wondering if that was doing some of the work. It isn't. Jack Nicklaus designed the course, the only one of his in Mallorca, and it opened in 2006 before a full renovation in 2022.",
         },
         {
           type: 'paragraph',
