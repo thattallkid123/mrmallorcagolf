@@ -918,7 +918,7 @@ export const GUIDE_POST_CONTENT = {
         updated: 'September 2026',
         title: 'T Golf Palma - Review (2026)',
         intro:
-          "Small fast greens and a handful of risk-reward holes that make you think from the tee. A 9 out of 10, and a course that deserves to be judged on its own rather than on sharing a name with T Golf Calvià.",
+          "Fast greens, often small and undulating, and more than a few risk-reward holes that make you think from the tee. A 9 out of 10, and a course that deserves to be judged on its own rather than on sharing a name with its partner course, T Golf Calvià.",
         related: [
           { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Honest Review 2026' },
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
@@ -939,7 +939,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "I had the first tee time of the day at T Golf Palma, 7:30am, nobody in front of us. The greenkeepers were still out working the course and stopped to compliment a couple of shots as we went past. That kind of quiet is rare this close to Palma.",
+          text: "We had the first tee time of the day at T Golf Palma, 7:30am, nobody in front of us. The greenkeepers were out working the course and stopped to compliment a couple of shots as we went past. A course this close to Palma is rarely this quiet.",
         },
         { type: 'heading', text: 'The Setting' },
         {
@@ -948,7 +948,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "It sits away from almost everything else on the island. Planes go over from Palma airport, but for most of the round there isn't a house in view. Isolated but under a flight path is an odd combination, and it was the biggest surprise of the day.",
+          text: "It sits away from almost everything else on the island. Planes go over from Palma airport, but for most of the round there isn't a building in view. Isolated but under a flight path is an odd combination.",
         },
         { type: 'heading', text: 'Holes Worth Knowing' },
         {
@@ -974,7 +974,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "Hole 15 was the best-looking hole on the course. Water runs the entire right side and trees line the left, so it's tight before you even reach the second shot, which has to carry the water again to find the green. I got mine close and made a birdie there, the highlight of the round.",
+          text: "Hole 15 was the best-looking hole on the course. Water runs the entire right side and trees line the left, so it's tight before you even reach the second shot, which has to carry the water again to find the green. I got mine close on the thin landing area and made the birdie too, so it is possible!",
         },
         {
           type: 'image',
@@ -1010,7 +1010,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Conditioning' },
         {
           type: 'paragraph',
-          text: "Conditioning was excellent throughout, on a par with Calvià. Greens were fast and small, and the rough grabs the club enough that missing one usually means a difficult chip rather than an easy one. We played on a soft day because the sprinklers had been running heavily; when it firms up, some of those chips will get harder still.",
+          text: "Conditioning was excellent throughout, on a par with Calvià. Greens were fast and small, and the rough grabs the club enough that missing a fairway is penalised, and around the green a difficult chip is made harder again by how much the greens undulate. We played on a soft day because the sprinklers had been running heavily; when it firms up, some of those chips will get harder still.",
         },
         {
           type: 'image',
@@ -1058,14 +1058,14 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "9/10. T Golf Palma got some of its early reputation from sharing a name with T Golf Calvià, and I went in wondering if that was doing some of the work. It isn't. The conditioning, the risk-reward holes and the finish at 15 and 18 make it every bit as good a round. It suits a player who wants to think through the tee shot rather than just swing hard, with several holes where distance control matters more than distance.",
+          text: "9/10. T Golf Palma, in my mind, got some of its early reputation from sharing a name with T Golf Calvià. Playing it settled that: the conditioning, the risk-reward holes and the finish at 15 and 18 make it every bit as good a round on its own merits. It suits a player who wants to think through the tee shot rather than just swing hard, with several holes where distance control matters more than distance.",
         },
         {
           type: 'notes',
           title: 'Four things I would know before booking T Golf Palma',
           items: [
             ['Best tee time', 'We had the first slot at 7:30am and had the course to ourselves. If you can get an early tee time, take it.'],
-            ['Club selection', 'Distance control matters more than raw length here, especially into 8 and 15. Bring your full range of wedges.'],
+            ['Club selection', 'Distance control matters more than raw length here. I often had 80-120 yards left and needed real precision to score. A mid-handicap golfer will play the course shorter than I did, but longer irons into small landing areas will still be demanding.'],
             ['Where visitors miss', 'The tee shot on 18 looks more straightforward than it plays. Take a proper look at the line before committing to driver.'],
             ['Terrace tip', 'The terrace looks straight down the 18th, a good spot to watch a group finish while you wait for a table.'],
           ],
