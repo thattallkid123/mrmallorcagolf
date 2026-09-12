@@ -36,6 +36,10 @@ Cross-check known facts against the table in `docs/course-guide-standards.md` ("
 - Meta description: follow the `meta-ctr` skill rules (lead with the number/fact, <155 chars, double quotes if the string contains apostrophes).
 - Course/hole lengths: use metres, not yards — every existing review and the course-listing pills use metres exclusively (confirmed 2026-09-09 by grepping the whole content tree; only two "yards" hits existed anywhere and both were added that same day). Yards only belongs in first-person shot-distance mentions ("I had 120 yards left for my second"), never as the course or hole length unit.
 
+## Step 2.5 — Listing placement
+
+Ask Andy where the course should sit in its region block in `src/lib/golf-courses-data.js` (e.g. "keep it where alphabetical/entry order would put it, or next to a specific course?"). This file is not touched by `scaffold-guide.mjs` — adding the course-listing card entry (name, img, location, pills, difficulty, text, footer, reviewSlug) here is a separate manual step, easy to skip since nothing else in this workflow fails if it's missed. Group by rough difficulty/tier within the region where Andy has a preference, rather than defaulting to end-of-region.
+
 ## Step 3 — Routing
 
 Run `node scripts/scaffold-guide.mjs --slug {slug} --name "<official course name>" --locality "<town>" --rating <1-5>` (requires step 2 done first — it reads the title from `guide-post-content.js`). This creates `src/app/(en)/guides/{slug}/page.jsx`, adds the `COURSE_REVIEW_DETAILS` entry in `src/app/(en)/guides/GuidePostView.jsx`, and adds the slug to `REVIEW_POST_SLUGS` in `src/lib/site.js`, skipping any part that already exists.
