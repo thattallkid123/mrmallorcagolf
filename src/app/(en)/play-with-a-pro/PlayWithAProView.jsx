@@ -228,6 +228,18 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         // as a rare, one-off imperfection rather than engineering around it,
         // since the per-frame case (most of the time) is what mattered.
         // (2026-08-28)
+        //
+        // 2026-09-13: this strip never actually scrolled on real devices
+        // (Andy confirmed static on both mobile and desktop) because a line
+        // below reset `target = lastCommitted` at the end of every frame -
+        // exactly the "gets stuck permanently" failure mode described above,
+        // reintroduced by accident. Whenever `step` > 1 (any dpr that isn't
+        // a whole number, which is most phones and any scaled Windows
+        // display), `target`'s fractional accumulation between frames was
+        // wiped before it could cross the next `step` multiple, so
+        // `committed` never advanced past its starting value. Removed;
+        // `target` now free-runs every frame exactly like the proven-working
+        // WinnersProofStrip.jsx version, which never had this line.
         if (viewport.scrollLeft !== lastCommitted) target = viewport.scrollLeft
         target += 1
         const dpr = window.devicePixelRatio || 1
@@ -243,7 +255,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         viewport.scrollLeft = committed
         normalizeLoopPosition()
         lastCommitted = viewport.scrollLeft
-        target = lastCommitted
       }
       raf = requestAnimationFrame(tick)
     }

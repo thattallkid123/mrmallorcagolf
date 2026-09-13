@@ -2640,7 +2640,7 @@ body {
 .pwap-feature-photo__inner { width: min(1200px, 100%); margin: 0 auto; border: 1px solid rgba(26,25,22,0.08); box-shadow: var(--shadow-soft); overflow: hidden; background: rgba(255,255,255,0.8); }
 .pwap-feature-photo__img { width: 100%; height: auto; display: block; }
 
-.pwap-day .pull-quote { margin: 1.55rem 0 1.35rem; max-width: 100%; }
+.pwap-day .pull-quote { margin: 1.55rem 0 1.35rem; max-width: 100%; padding-left: 0; }
 .pwap-day .pull-quote p { font-size: 1.15rem; line-height: 1.62; }
 
 .pwap-courses { background: linear-gradient(180deg, #171613 0%, #1a1916 100%); padding: 92px 40px; }
