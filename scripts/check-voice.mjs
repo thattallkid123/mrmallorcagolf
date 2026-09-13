@@ -56,7 +56,7 @@ const EXTRA_FILES = [
 // defect to fix. Without this, adding play-with-a-pro-content.js to the check
 // would fail on Jo's "unparalleled level of insight" and an em dash in
 // Synøve's quote — both of which must stay exactly as written.
-const EXCLUDED_SUBTREE_KEYS = ['testimonials']
+const EXCLUDED_SUBTREE_KEYS = ['testimonials', 'quote1', 'quote2', 'quoteText']
 
 function discoverFiles() {
   const dir = join(REPO_ROOT, LIB_DIR)

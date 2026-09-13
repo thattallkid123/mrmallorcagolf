@@ -45,8 +45,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'The insight into what calculations go into each shot has helped me improve my decision making immensely.',
-      credit: 'Finlay',
+      text: "Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s. I'm still learning, but now I'm thinking my way around the course, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
+      credit: 'Jannie',
     },
     afterRound: {
       eyebrow: 'After the round',
