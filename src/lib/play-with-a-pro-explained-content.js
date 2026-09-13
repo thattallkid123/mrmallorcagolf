@@ -45,7 +45,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
       ],
     },
     quote2: {
-      text: "Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s. I'm still learning, but now I'm thinking my way around the course, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
+      text: "Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
       credit: 'Jannie',
     },
     afterRound: {

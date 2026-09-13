@@ -115,7 +115,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Jo"
       },
       {
-        "text": "After years of playing only once or twice a year — with more mishits and ringers than I care to count — I decided it was time to get back to the game I loved growing up in South Africa. I chose an on-course lesson with Andy because hitting the same shot over and over at a driving range wasn't teaching me how to play golf. Every course is different, and every shot asks a new question. Andy watched me play — or hack — my way through the first three holes before he started coaching. As we went along, he helped me understand both the shots and the decisions behind them. My biggest lightbulb moment was realizing I didn't have to force every shot: I could let the club do the job it was designed to do. He followed up with clear notes that I could actually use when playing on my own. Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s. I'm still learning, but now I'm thinking my way around the course, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
+        "text": "After years of playing only once or twice a year, I decided it was time to get back to the game I loved growing up in South Africa. Andy's on-course lesson taught me what a driving range never could. Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
         "author": "Jannie"
       },
       {

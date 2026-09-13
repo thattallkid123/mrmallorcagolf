@@ -43,7 +43,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Drei Wochen später hatte ich es von gelegentlichem Herumschlagen zu Runden in den niedrigen 90ern geschafft. Ich lerne noch, aber jetzt denke ich mich über den Platz, spiele mit Selbstvertrauen und liebe Golf wieder. Ich kann Andy nicht genug empfehlen — besonders wenn Sie nicht nur Ihren Schwung, sondern Ihr ganzes Spiel verbessern wollen.',
+      text: 'Drei Wochen später hatte ich es von gelegentlichem Herumschlagen zu Runden in den niedrigen 90ern geschafft, spiele mit Selbstvertrauen und liebe Golf wieder. Ich kann Andy nicht genug empfehlen — besonders wenn Sie nicht nur Ihren Schwung, sondern Ihr ganzes Spiel verbessern wollen.',
       credit: 'Jannie',
     },
     afterRound: {
@@ -128,7 +128,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Tres semanas más tarde, había pasado de jugar de vez en cuando a hacer rondas en los noventa bajos. Todavía estoy aprendiendo, pero ahora pienso mi recorrido por el campo, juego con confianza y he vuelto a disfrutar del golf. No puedo recomendar a Andy lo suficiente — sobre todo si quiere mejorar su juego, no solo su swing.',
+      text: 'Tres semanas más tarde, había pasado de jugar de vez en cuando a hacer rondas en los noventa bajos, jugando con confianza y disfrutando de nuevo del golf. No puedo recomendar a Andy lo suficiente — sobre todo si quiere mejorar su juego, no solo su swing.',
       credit: 'Jannie',
     },
     afterRound: {
@@ -213,7 +213,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: "Trois semaines plus tard, j'étais passé de parties occasionnelles à des scores dans les 90 petits. J'apprends encore, mais je réfléchis maintenant mon chemin sur le parcours, je joue avec confiance et j'ai retrouvé le plaisir du golf. Je ne peux que recommander Andy — surtout si vous voulez améliorer votre jeu, pas seulement votre swing.",
+      text: "Trois semaines plus tard, j'étais passé de parties occasionnelles à des scores dans les 90 petits, jouant avec confiance et retrouvant le plaisir du golf. Je ne peux que recommander Andy — surtout si vous voulez améliorer votre jeu, pas seulement votre swing.",
       credit: 'Jannie',
     },
     afterRound: {
@@ -298,7 +298,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Drie weken later was ik gegaan van af en toe wat rondjes hakken naar scores in de lage negentig. Ik leer nog steeds, maar nu denk ik mijn weg over de baan, speel ik met vertrouwen en geniet ik weer volop van golf. Ik kan Andy niet genoeg aanbevelen — zeker als u niet alleen uw swing, maar uw hele spel wilt verbeteren.',
+      text: 'Drie weken later was ik gegaan van af en toe wat rondjes hakken naar scores in de lage negentig, speel ik met vertrouwen en geniet ik weer volop van golf. Ik kan Andy niet genoeg aanbevelen — zeker als u niet alleen uw swing, maar uw hele spel wilt verbeteren.',
       credit: 'Jannie',
     },
     afterRound: {
@@ -383,7 +383,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Tre veckor senare hade jag gått från att hacka mig runt banan då och då till att slå ronder i låga nittiotalet. Jag lär mig fortfarande, men nu tänker jag mig runt banan, spelar med självförtroende och älskar golf igen. Jag kan inte rekommendera Andy nog — särskilt om du vill förbättra ditt spel, inte bara din swing.',
+      text: 'Tre veckor senare hade jag gått från att hacka mig runt banan då och då till att slå ronder i låga nittiotalet, spelar med självförtroende och älskar golf igen. Jag kan inte rekommendera Andy nog — särskilt om du vill förbättra ditt spel, inte bara din swing.',
       credit: 'Jannie',
     },
     afterRound: {
@@ -468,7 +468,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: '三周之后，我从偶尔打几次、状态混乱，进步到能打出接近 90 杆的成绩。我还在学习，但现在我会在球场上动脑子思考路线，打球更自信，也重新爱上了高尔夫。我极力推荐 Andy——尤其是如果你想提升的不只是挥杆，而是整体球技。',
+      text: '三周之后，我从偶尔打几次，进步到能打出接近 90 杆的成绩，打球更自信，也重新爱上了高尔夫。我极力推荐 Andy——尤其是如果你想提升的不只是挥杆，而是整体球技。',
       credit: 'Jannie',
     },
     afterRound: {
