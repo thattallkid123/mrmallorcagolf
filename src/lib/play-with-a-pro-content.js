@@ -115,40 +115,40 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Jo"
       },
       {
-        "text": "The thing I most enjoyed was how comfortable he made me feel on the course. The insight into what calculations go into each shot has helped me improve my decision making immensely. I would recommend the day to groups of friends, groups on holiday looking for an entertaining day out, or even a family looking to get involved in golf together.",
-        "author": "Finlay"
+        "text": "After years of playing only once or twice a year — with more mishits and ringers than I care to count — I decided it was time to get back to the game I loved growing up in South Africa. I chose an on-course lesson with Andy because hitting the same shot over and over at a driving range wasn't teaching me how to play golf. Every course is different, and every shot asks a new question. Andy watched me play — or hack — my way through the first three holes before he started coaching. As we went along, he helped me understand both the shots and the decisions behind them. My biggest lightbulb moment was realizing I didn't have to force every shot: I could let the club do the job it was designed to do. He followed up with clear notes that I could actually use when playing on my own. Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s. I'm still learning, but now I'm thinking my way around the course, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
+        "author": "Jannie"
       },
       {
         "text": "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough.",
         "author": "Adam"
       },
       {
-        "text": "An amazing experience. Andy evaluated all aspects of my golf game — physical swing, course management, and the mental side — adjusting as we went. I left with a big variety of things to work on.",
-        "author": "John"
-      },
-      {
-        "text": "He gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot. I will continue to use Andy as my pro.",
-        "author": "Synøve"
-      },
-      {
-        "text": "Played 18 holes with Andy this morning. After 4 holes or so Andy came in with his assessment and from then everything became enjoyable and the improvement was immense. Down to earth guy explained everything with ease and made me feel so relaxed. Can't wait for my next round on Sunday.",
-        "author": "Mark"
-      },
-      {
-        "text": "Andy is a true golf professional. I learned more in half a day with him than a year playing solo. If you want to seriously improve your game, go with Andy.",
-        "author": "Julien"
+        "text": "The thing I most enjoyed was how comfortable he made me feel on the course. The insight into what calculations go into each shot has helped me improve my decision making immensely. I would recommend the day to groups of friends, groups on holiday looking for an entertaining day out, or even a family looking to get involved in golf together.",
+        "author": "Finlay"
       },
       {
         "text": "Andy is amazing at what he does. A fun round with great company and genuinely valuable tips that improved my game by the end. Learning from a pro like him out on the course, in real situations, beats a driving range lesson every time.",
         "author": "Amanda"
       },
       {
+        "text": "Andy is a true golf professional. I learned more in half a day with him than a year playing solo. If you want to seriously improve your game, go with Andy.",
+        "author": "Julien"
+      },
+      {
+        "text": "He gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot. I will continue to use Andy as my pro.",
+        "author": "Synøve"
+      },
+      {
         "text": "My wife and I spent two brilliant days with Andy. He gave us easy tips to put into action on the course straight away and taught us how to think our way around 18 holes. Great to watch him play too — we'll be booking again next year.",
         "author": "Sam"
       },
       {
-        "text": "After years of playing only once or twice a year — with more mishits and ringers than I care to count — I decided it was time to get back to the game I loved growing up in South Africa. I chose an on-course lesson with Andy because hitting the same shot over and over at a driving range wasn't teaching me how to play golf. Every course is different, and every shot asks a new question. Andy watched me play — or hack — my way through the first three holes before he started coaching. As we went along, he helped me understand both the shots and the decisions behind them. My biggest lightbulb moment was realizing I didn't have to force every shot: I could let the club do the job it was designed to do. He followed up with clear notes that I could actually use when playing on my own. Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s. I'm still learning, but now I'm thinking my way around the course, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
-        "author": "Jannie"
+        "text": "An amazing experience. Andy evaluated all aspects of my golf game — physical swing, course management, and the mental side — adjusting as we went. I left with a big variety of things to work on.",
+        "author": "John"
+      },
+      {
+        "text": "Played 18 holes with Andy this morning. After 4 holes or so Andy came in with his assessment and from then everything became enjoyable and the improvement was immense. Down to earth guy explained everything with ease and made me feel so relaxed. Can't wait for my next round on Sunday.",
+        "author": "Mark"
       }
     ]
   },
