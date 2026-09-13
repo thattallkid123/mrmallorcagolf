@@ -40,7 +40,7 @@ Example: Course Selector sends results → immediate email with shortlist → 2 
 
 - **Resend:** Immediate delivery for website-side lead magnet emails (no delay)
 - **MailerLite:** Nurture sequences, automation, group management, broadcast emails
-- **Google Forms / opt-in:** Course Selector, PWAP booking enquiry, other tools
+- **Opt-in capture:** the site's own `src/app/api/*` routes (e.g. `lead-magnet-signup`, `questionnaire`, `trip-quote-submit`, `handicap-checker-submit`, `zh-selector-email`), not Google Forms — every data-collecting route follows the four-guard contract in the `api-route-safety` skill
 - **Variables in emails:** Course names, shortlist, answers (wired up per tool)
 - **Unsubscribe tracking:** Syncs back to MailerLite so bounces don't re-mail
 

@@ -37,7 +37,7 @@ Rare and deliberate. None currently exist — `/api/og` was the one example (del
 
 ## 4. Privacy surface — no script catches this
 
-**Any new form, tool, quiz, integration, or API route means the privacy policy is presumed stale until checked.** This is a code task, not a legal one: keep `src/app/(en)/privacy-policy/page.jsx` and `src/app/es/privacy-policy/page.jsx` factually matched to what the code does. Andy makes the legal calls; you keep the description honest.
+**Any new form, tool, quiz, integration, or API route means the privacy policy is presumed stale until checked.** This is a code task, not a legal one: keep `src/app/(en)/privacy-policy/page.jsx`, `src/app/es/privacy-policy/page.jsx`, `src/app/de/privacy-policy/page.jsx`, and `src/app/fr/privacy-policy/page.jsx` factually matched to what the code does. Andy makes the legal calls; you keep the description honest.
 
 Before shipping anything that accepts a visitor keystroke or fires a third-party request:
 
@@ -46,8 +46,8 @@ Before shipping anything that accepts a visitor keystroke or fires a third-party
 3. **New cookie, localStorage key, or third-party script?** §6 claims cookies are analytics-only. Functional/UI state (e.g. `HomepageLeadPopup` dismissal) is consent-exempt and fine; advertising or cross-site anything is not.
 4. **Does it enrol anyone in email they didn't ask for?** §3 promises no unsolicited marketing without explicit consent. A form whose stated purpose is a PDF but which also adds the address to a nurture group breaks that promise in code. Keep the marketing opt-in a separate, unchecked, clearly-labelled box — the `subscribeNewsletter` pattern in `LeadMagnetPage.jsx` is the reference.
 5. **Point-of-collection notice.** GDPR Art. 13 wants it where data is entered, not only in the footer. New forms get a privacy-policy link next to the submit button.
-6. **Bump `Last updated:`** on both EN and ES policy pages in the same commit, and mirror wording changes into ES — they drift because only EN gets edited.
-7. **New locale-facing legal need?** `LEGAL_LOCALES` in `src/lib/site.js` is `{en, es}`; other locales fall back to English via `getLegalPath`. That's graceful, not a 404 — don't "fix" it by adding broken routes.
+6. **Bump `Last updated:`** on all four localized policy pages (EN, ES, DE, FR) in the same commit, and mirror wording changes into ES/DE/FR — they drift because only EN gets edited.
+7. **New locale-facing legal need?** `LEGAL_LOCALES` in `src/lib/site.js` is `{en, es, de, fr}` (grew from `{en, es}` — DE and FR privacy-policy pages were added since); the other 3 locales (nl, sv, zh) fall back to English via `getLegalPath`. That's graceful, not a 404 — don't "fix" it by adding broken routes. Check the current `LEGAL_LOCALES` set before assuming which locales have their own page.
 
 **Why this is a standing rule:** audited 2026-08-14 — the policy was last edited 7 June 2026 while five data-collecting routes landed 14 June – 4 July. Nothing malicious; each feature just shipped without anyone re-reading the policy, so it silently stopped describing the site. `check:content` validates structure and copy, never whether a stated data practice is still true.
 
