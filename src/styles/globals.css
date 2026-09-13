@@ -3313,7 +3313,7 @@ select.form-control { cursor: pointer; }
   padding: clamp(40px,5vw,64px) clamp(20px,5vw,60px);
 }
 .pwap-explained-quote__inner {
-  max-width: 680px;
+  max-width: 920px;
   margin: 0 auto;
 }
 .pwap-explained-midquote .pwap-explained-quote__inner {
