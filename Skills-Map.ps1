@@ -13,6 +13,7 @@
 # Never add a bare generic name (e.g. "seo-content", "repurpose") here.
 
 $MmgSkillsMap = @(
+    @{Drive="MMG_SKILL_VOICE_CHECK.md"; Target="mmg-voice-check"},
     @{Drive="MMG_SKILL_BLOG_WRITING.md"; Target="mmg-blog-writing"},
     @{Drive="MMG_SKILL_SEO_CONTENT.md"; Target="mmg-seo-content"},
     @{Drive="MMG_SKILL_SOCIAL_MEDIA.md"; Target="social-media-mmg"},
