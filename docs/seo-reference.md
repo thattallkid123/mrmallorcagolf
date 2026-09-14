@@ -74,3 +74,21 @@ Candidates considered and skipped, with reasons:
 - **Santa Ponsa 1** (150 impr) / **Son Antem West** (113 impr) — lower impression volume, and Santa Ponsa 1's only nearby number (`8/10`) is also labelled "Difficulty", not a verdict — didn't draft copy without a verified fact to lead with.
 
 Judge in ~4 weeks (target: ~2026-09-19), same before/after methodology as round 2 above.
+
+### 2026-09-14 CTR sweep
+
+Pulled the 10 `check_ctr_watch.py` flags. 3 (golf-cost-mallorca, son-muntaner-review, son-gual-review) were edited 2026-09-05 and are still inside the 21-day judgement window — skipped, not re-touched. Of the remaining 7 "first real attempt" flags, diagnosed each against its Search Console query/position data before drafting anything (full reasoning logged in `search_console/ctr-edit-log.json`):
+
+| Page | Finding |
+|------|---------|
+| `/es/guides/golf-club-hire-mallorca` | Title/description already within budget and specific. The flagged query, "club rentals mallorca", is an English commercial query ranking on the /es/ URL — a language-mismatch case, not a copy defect. Not fixable by rewording the Spanish copy. |
+| `/guides/son-termes-review` (en) | Already good (price/par/distance/verdict in 57-char title). All top queries sit at pos 9.1–13.2 — page-1-bottom/page-2, where near-zero CTR is normal regardless of snippet quality. |
+| `/guides/alcanada-review` | Already strong (9/10, price range, 58 bunkers). Zero clicks driven entirely by position (pos 18–26 on the flagged queries). |
+| `/de/tools/green-fees` | Title/description fine. All flagged queries sit at pos 14.3–21.8 (page 2). Not a metadata problem. |
+| `/guides/is-mallorca-good-for-golf` | Already specific. Flagged queries are 1–5 impressions each, too low a sample to judge, or pos 29.2 (page 3) where volume is real but position isn't. |
+| `/play-with-a-pro` | Flagged query is the brand term "mr mallorca golf" at pos 1.4, 0 clicks on this subpage — branded search traffic normally lands on the homepage instead, not a CTR defect on this page. |
+| `/sv/guides/son-termes-review` | **Real defect, fixed.** Description was generic ("mountain views, honest notes, fees" — no numbers), unlike the EN version. Rewrote to lead with the same facts EN uses: green fee ~€90–110, par 72, 20 min from Palma, 6/10 verdict. |
+
+Only one page out of seven had an actual metadata gap; the other six already follow the meta-ctr rules and their low CTR is a ranking/position/volume issue outside what a title or description rewrite can move. Judge the Swedish Son Termes edit in ~4 weeks (target: ~2026-10-12).
+
+Separately, from the same Search Console pull: `/de/golf-courses` ranks pos 50.5 (vs ~15 for the English hub) despite being indexed cleanly — this looks like a content-depth/authority gap for that locale, not a metadata issue, and isn't fixable by a copy edit. The URL-indexing sweep the same day found 64 of 232 checked URLs flagged for review, spread fairly evenly across all 6 non-English locales (nl highest at 17, expected since nl is deliberately unlinked from nav; fr next at 11) — this reads as normal selective indexing of lower-traffic locale/tool pages under the existing English-canonical-plus-overlay architecture, not a technical bug. Two English-locale pages were flagged too (`/guides/t-golf-palma-review`, `/guides/mallorca-course-map`) and are worth a second look since EN should index cleanly; not investigated further this round.

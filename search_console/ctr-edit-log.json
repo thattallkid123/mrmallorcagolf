@@ -98,6 +98,69 @@
           "summary": "SERP title was missing the word \"Golf\" entirely - top query 'son muntaner golf' (283 impr, pos 9.4) had 0.4% CTR. Added \"Golf\" to title and description; trimmed both back under the char budget."
         }
       ]
+    },
+    "/es/guides/golf-club-hire-mallorca": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Title/description already within budget (57/131 chars) and already specific (price, empresas, 2026). The flagged query \"club rentals mallorca\" is an English-language commercial query ranking on the /es/ URL at pos 4.7, not the /en/ or /de/ equivalent. This is a language-mismatch case, not a copy-quality one: an English searcher sees Spanish title/description in the SERP and does not click. Rewriting the Spanish copy again will not fix an English-query-on-Spanish-URL mismatch. Not actionable via title/meta edit."
+        }
+      ]
+    },
+    "/guides/son-termes-review": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Title/description already good (57 char title with price+par+distance+verdict). All three top queries sit at pos 9.1-13.2, the bottom of page 1 / top of page 2, where 0-2 clicks on 20-50 impressions is normal CTR behaviour, not a copy defect. Ranking position is the lever here, not metadata."
+        }
+      ]
+    },
+    "/guides/alcanada-review": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Title/description already strong (9/10, price range, 58 bunkers, 50-minute drive framing). Zero clicks driven by position: \"al canada\" pos 26.3 (page 3), \"alcanada\" pos 18 on 1 impression. Not a metadata problem."
+        }
+      ]
+    },
+    "/de/tools/green-fees": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Title/description within budget and specific (24 courses, season/handicap/buggy). All flagged queries sit at pos 14.3-21.8 (page 2), where zero clicks is expected regardless of snippet quality. Not a metadata problem."
+        }
+      ]
+    },
+    "/guides/is-mallorca-good-for-golf": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Title/description already specific (24 courses, price range, PGA framing). Flagged queries are very low volume (1-5 impressions each) and/or poor position (pos 29.2 for the one real-volume query). Sample too small and position too weak for a metadata edit to be judged; not actionable now."
+        }
+      ]
+    },
+    "/play-with-a-pro": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Flagged query is the brand term \"mr mallorca golf\" at pos 1.4 with 0 clicks on this specific subpage. Branded searches overwhelmingly land on the homepage rather than a deep page even when Google ranks the deep page; this is expected brand-query behaviour, not a CTR defect on this page. Not actionable via title/meta edit."
+        }
+      ]
+    },
+    "/sv/guides/son-termes-review": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "PENDING",
+          "summary": "Description was generic (mountain views, honest notes, fees - no numbers) unlike the EN version which leads with price/par/distance. Rewrote to match: green fee ~SEK-equivalent EUR90-110, par 72, 20 min from Palma, 6/10 verdict."
+        }
+      ]
     }
   }
 }

@@ -672,7 +672,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Termes - Recension & Avgifter",
-      "description": "Son Termes Golf på Mallorca: bergsvyer, ärliga anteckningar, avgifter."
+      "description": "Green fee cirka €90-110, par 72, 20 minuter från Palma. Bergsvyer och ärligt betyg 6/10."
     },
     "meta": {
       "badge": "Banrecension",
