@@ -104,6 +104,16 @@ const REVIEW_LINK_LABELS = {
   zh: '阅读我的完整评测',
 }
 
+const ASK_ABOUT_LABELS = {
+  en: 'Ask me about this course',
+  de: 'Fragen Sie mich zu diesem Platz',
+  es: 'Pregúntame sobre este campo',
+  fr: 'Demandez-moi à propos de ce parcours',
+  nl: 'Vraag me over deze baan',
+  sv: 'Fråga mig om denna bana',
+  zh: '咨询我关于这个球场',
+}
+
 const DISPLAY_TEXT_REPLACEMENTS = []
 
 const COURSE_GEO_META = {
@@ -665,9 +675,13 @@ function CourseCard({ c, lang = 'en' }) {
       </div>
       <div className="course__footer">
         <span className="course__footer-info">{footerText}</span>
-        {c.reviewSlug && (
+        {c.reviewSlug ? (
           <Link href={buildLocalePath(`/guides/${c.reviewSlug}`, lang)} className="course__review-link">
             {REVIEW_LINK_LABELS[lang] || REVIEW_LINK_LABELS.en} &rarr;
+          </Link>
+        ) : (
+          <Link href={buildLocalePath('/contact', lang)} className="course__review-link">
+            {ASK_ABOUT_LABELS[lang] || ASK_ABOUT_LABELS.en} &rarr;
           </Link>
         )}
       </div>
