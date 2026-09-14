@@ -166,7 +166,7 @@
       "edits": [
         {
           "date": "2026-09-14",
-          "commit": "PENDING",
+          "commit": "d99e1fc",
           "summary": "Title was 77 chars in the SERP (58 raw + suffix), 17 over budget, invisible to check:meta-length until its coverage gap was closed today. Shortened to 57 chars."
         }
       ]
@@ -175,7 +175,7 @@
       "edits": [
         {
           "date": "2026-09-14",
-          "commit": "PENDING",
+          "commit": "d99e1fc",
           "summary": "Title 75 chars, description 177 chars, both over budget and invisible to the old checker. Rewrote: title to 59 chars, description now leads with the real price (from EUR3,000) instead of a feature list."
         }
       ]
@@ -184,7 +184,7 @@
       "edits": [
         {
           "date": "2026-09-14",
-          "commit": "PENDING",
+          "commit": "d99e1fc",
           "summary": "Description 184 chars, over budget. Trimmed to 112 chars, same facts."
         }
       ]
