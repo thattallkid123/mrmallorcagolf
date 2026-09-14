@@ -2380,7 +2380,7 @@ body {
 .winners-proof:active { cursor: grabbing; }
 .winners-proof::-webkit-scrollbar { display: none; }
 .winners-proof__track { display: flex; gap: 10px; width: max-content; align-items: center; }
-.winners-proof__card { position: relative; flex: 0 0 262px; height: 188px; margin: 0; overflow: hidden; background: linear-gradient(165deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.12); box-shadow: var(--shadow-soft); }
+.winners-proof__card { position: relative; flex: 0 0 262px; height: 188px; margin: 0; overflow: hidden; background: linear-gradient(165deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid var(--gold); box-shadow: var(--shadow-soft); }
 .winners-proof__card--landscape { flex-basis: 292px; }
 .winners-proof__card--portrait { flex-basis: 210px; height: 228px; }
 .winners-proof__media { position: absolute; inset: 4px; overflow: hidden; background: #11100e; }
@@ -2589,16 +2589,16 @@ body {
     box-shadow: 0 0 0 1px var(--gold), var(--shadow-soft);
   }
 }
+.testimonials__grid:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--gold); }
+/* career-strip, winners-proof and pwap-day-strip all carry permanent gold
+   photo borders, so the shared 1px gold ring above would be invisible
+   against them - the focused state would look identical to the resting
+   state. They get the brighter --gold-light at 2px instead: still the same
+   technique and palette, but unmistakably a state change rather than more
+   of the same hairline. */
 .career-strip__viewport:focus-visible,
 .winners-proof:focus-visible,
-.pwap-day-strip:focus-visible,
-.testimonials__grid:focus-visible { outline: none; box-shadow: 0 0 0 1px var(--gold); }
-/* career-strip is the one strip whose photos carry permanent 1px gold borders,
-   so the shared 1px gold ring above would be invisible against them - the
-   focused state would look identical to the resting state. It gets the
-   brighter --gold-light at 2px instead: still the same technique and palette,
-   but unmistakably a state change rather than more of the same hairline. */
-.career-strip__viewport:focus-visible { box-shadow: 0 0 0 2px var(--gold-light); }
+.pwap-day-strip:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--gold-light); }
 .booking-policy__toggle .booking-policy__title { flex: 1 1 auto; }
 .booking-policy__icon { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin-top: -2px; border: 1px solid rgba(184,151,60,0.4); border-radius: 999px; font-size: 1.15rem; color: var(--gold-text); font-weight: 300; line-height: 1; }
 .sticky-mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px; padding-bottom: calc(12px + env(safe-area-inset-bottom)); background: var(--deep); box-shadow: 0 -2px 12px rgba(0,0,0,0.15); z-index: 100; }
@@ -2633,7 +2633,7 @@ body {
 .pwap-day-strip:active { cursor: grabbing; }
 .pwap-day-strip::-webkit-scrollbar { display: none; }
 .pwap-day-strip__track { display: flex; gap: 10px; width: max-content; padding: 10px; }
-.pwap-day-strip__card { position: relative; flex: 0 0 352px; height: 248px; margin: 0; overflow: hidden; background: #111; border: 1px solid rgba(26,25,22,0.08); }
+.pwap-day-strip__card { position: relative; flex: 0 0 352px; height: 248px; margin: 0; overflow: hidden; background: #111; border: 1px solid var(--gold); }
 .pwap-day-strip__card--portrait { flex-basis: 228px; }
 
 .pwap-feature-photo { background: linear-gradient(180deg, #f7f3eb 0%, #f4efe5 100%); padding: 8px 40px 82px; }
