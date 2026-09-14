@@ -111,3 +111,15 @@ Audited every `page.jsx` calling `buildPageMetadata()` with a literal inline tit
 | 4 lead-magnet pages (`signup-config.js`: cost-guide, trip-planner, beginners-guide, course-comparison) | titles 64–72 chars total, one 156-char description | all under budget; `title` (on-page heading) untouched, only the SEO `metaTitle`/`metaDescription` fields changed |
 
 Closed the gap in the checker itself rather than just fixing the instances: `scripts/check-meta-length.mjs` now dynamically discovers every `page.jsx` with an inline `buildPageMetadata()` call via `git ls-files`, plus scans `signup-config.js`'s `metaTitle`/`metaDescription` fields. File count scanned went from 5 to 61. Verified the new check actually fails on a violation (temporarily lengthened one title, confirmed it flagged and exited non-zero, reverted) before trusting it.
+
+### 2026-09-14 `/golf-courses` hub CTA audit ("make the first-choice path clearer")
+
+Search Console had flagged this page (852 impr, pos 15.6, 0.8% CTR) with the generic suggestion "make the first-choice path clearer and keep the enquiry CTA visible." Checked it against `frontend-design-mmg`'s own conversion principles rather than guessing at a redesign:
+
+- Top-nav Enquire button: always visible regardless of scroll — already satisfies "keep enquiry CTA visible."
+- Mid-page "Find My Courses" shortcut and end-of-page Plan Your Trip / Play With A Pro pair: already correctly styled with primary/secondary hierarchy (`btn--gold` vs `btn--outline-white`), matching the design system's "one primary CTA, subordinate secondary" rule.
+- Mobile sticky CTA bar (`StickyMobileCta`, ≤640px only): already correctly differentiates primary (solid gold) from secondary (gold outline).
+
+The one real gap: `CourseCard` in `GolfCoursesClient.jsx` only rendered a footer CTA (`Read my full review →`) when the course had a `reviewSlug`. 16 of the 24 courses don't have a published review guide yet, so those cards rendered **no CTA at all** — a genuine dead end, not a styling issue. Fixed by adding a fallback `Ask me about this course →` link to `/contact` for cards without a review, reusing the existing `course__review-link` CSS class so it reads as the same pattern rather than a bolted-on addition. `GolfCoursesClient.jsx` is shared across all locale routes, so the fix and its 7 localized labels apply everywhere from one file.
+
+No redesign, no CTA count reduction, no change to the buttons that were already correct — this was one missing link on 16 cards, not a "make it all look nicer" pass.
