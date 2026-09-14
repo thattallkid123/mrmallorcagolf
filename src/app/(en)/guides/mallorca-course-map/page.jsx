@@ -3,7 +3,7 @@ import CourseMapView from '../../../../components/CourseMapView'
 import { buildPageMetadata } from '../../../../lib/page-metadata'
 
 export const metadata = buildPageMetadata('/guides/mallorca-course-map', 'en', {
-  title: 'Map of All 24 Golf Courses in Mallorca | Interactive Guide',
+  title: 'Map of All 24 Golf Courses in Mallorca',
   description: 'Interactive map of all 24 Mallorca golf courses. Filter by region (Palma, Southwest, South, East, North) and click to locate each course.',
   socialImage: '/images/courses/pula.jpg',
   robots: { index: true, follow: true },

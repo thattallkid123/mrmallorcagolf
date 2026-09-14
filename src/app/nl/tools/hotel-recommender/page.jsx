@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools/hotel-recommender', 'nl', {
 
-  title: 'Waar zou je moeten verblijven voor je golftrip?',
+  title: 'Mallorca Golfhotel Aanbevolen',
   description: 'Zes vragen. Een gepersonaliseerde shortlist die aansluit bij je golfroute.',
   robots: { index: true, follow: true },
 })

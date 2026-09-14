@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools/hotel-recommender', 'fr', {
 
-  title: 'Où devriez-vous rester pour votre voyage au golf?',
+  title: 'Recommandation Hôtel Golf Mallorca',
   description: 'Six questions. Une liste personnalisée adaptée à votre itinéraire de golf.',
   robots: { index: true, follow: true },
 })

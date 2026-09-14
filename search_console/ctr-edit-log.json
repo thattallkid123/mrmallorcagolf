@@ -161,6 +161,33 @@
           "summary": "Description was generic (mountain views, honest notes, fees - no numbers) unlike the EN version which leads with price/par/distance. Rewrote to match: green fee ~SEK-equivalent EUR90-110, par 72, 20 min from Palma, 6/10 verdict."
         }
       ]
+    },
+    "/guides/mallorca-course-map": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "PENDING",
+          "summary": "Title was 77 chars in the SERP (58 raw + suffix), 17 over budget, invisible to check:meta-length until its coverage gap was closed today. Shortened to 57 chars."
+        }
+      ]
+    },
+    "/signature-day": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "PENDING",
+          "summary": "Title 75 chars, description 177 chars, both over budget and invisible to the old checker. Rewrote: title to 59 chars, description now leads with the real price (from EUR3,000) instead of a feature list."
+        }
+      ]
+    },
+    "/tools/green-fees": {
+      "edits": [
+        {
+          "date": "2026-09-14",
+          "commit": "PENDING",
+          "summary": "Description 184 chars, over budget. Trimmed to 112 chars, same facts."
+        }
+      ]
     }
   }
 }

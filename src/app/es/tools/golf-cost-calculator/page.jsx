@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools/golf-cost-calculator', 'es', {
 
-  title: 'Calculadora de costos de viaje de golf Mallorca',
+  title: 'Calculadora de Costos de Golf Mallorca',
   description: 'Tres pasos. Una estimación de costos para tu viaje con una mezcla de campos sugerida.',
   robots: { index: true, follow: true },
 })

@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/green-fees', 'en', {
 
   title: 'Compare 24 Courses - Fees & Difficulty',
-  description: 'Compare all 24 Mallorca golf courses: green fees, buggy costs, walking rules, par, difficulty and handicap limits. Browse every course or build a head-to-head comparison of up to five.',
+  description: 'Compare all 24 Mallorca golf courses: green fees, buggy costs, par, difficulty and handicap limits side by side.',
   robots: { index: true, follow: true },
 })
 

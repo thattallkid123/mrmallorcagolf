@@ -91,4 +91,23 @@ Pulled the 10 `check_ctr_watch.py` flags. 3 (golf-cost-mallorca, son-muntaner-re
 
 Only one page out of seven had an actual metadata gap; the other six already follow the meta-ctr rules and their low CTR is a ranking/position/volume issue outside what a title or description rewrite can move. Judge the Swedish Son Termes edit in ~4 weeks (target: ~2026-10-12).
 
-Separately, from the same Search Console pull: `/de/golf-courses` ranks pos 50.5 (vs ~15 for the English hub) despite being indexed cleanly — this looks like a content-depth/authority gap for that locale, not a metadata issue, and isn't fixable by a copy edit. The URL-indexing sweep the same day found 64 of 232 checked URLs flagged for review, spread fairly evenly across all 6 non-English locales (nl highest at 17, expected since nl is deliberately unlinked from nav; fr next at 11) — this reads as normal selective indexing of lower-traffic locale/tool pages under the existing English-canonical-plus-overlay architecture, not a technical bug. Two English-locale pages were flagged too (`/guides/t-golf-palma-review`, `/guides/mallorca-course-map`) and are worth a second look since EN should index cleanly; not investigated further this round.
+Separately, from the same Search Console pull: `/de/golf-courses` ranks pos 50.5 (vs ~15 for the English hub) despite being indexed cleanly — this looks like a content-depth/authority gap for that locale, not a metadata issue, and isn't fixable by a copy edit. The URL-indexing sweep the same day found 64 of 232 checked URLs flagged for review, spread fairly evenly across all 6 non-English locales (nl highest at 17, expected since nl is deliberately unlinked from nav; fr next at 11) — this reads as normal selective indexing of lower-traffic locale/tool pages under the existing English-canonical-plus-overlay architecture, not a technical bug. Two English-locale pages were flagged too (`/guides/t-golf-palma-review`, `/guides/mallorca-course-map`) — checked their sitemap dates: T Golf Palma was published 2026-09-09 (5 days old at check time, normal "Discovered — not indexed" for a brand-new page); Mallorca Course Map was published 2026-07-23 (~2 months old, still undiscovered on EN — worth a content-depth/internal-linking look if it's still unindexed by mid-October, not urgent now).
+
+### 2026-09-14 meta-length checker coverage gap (found while investigating the pages above)
+
+While checking `/guides/mallorca-course-map`'s metadata for the indexing investigation above, found its title was 77 characters in the SERP (58 raw + 19-char brand suffix) — 17 over budget — despite `check:meta-length` passing clean. Root cause: the checker only ever scanned a fixed list of 5 files (`page-metadata.js` + the 4 guide-content files); any page defining its metadata inline in its own `page.jsx` (the pattern used by every `/tools/*` route and a few standalone pages like `/signature-day`) was invisible to it.
+
+Audited every `page.jsx` calling `buildPageMetadata()` with a literal inline title/description (51 files) plus `src/lib/signup-config.js`'s `metaTitle`/`metaDescription` fields (used by the 4 lead-magnet pages). Found and fixed 10 titles and 6 descriptions over budget:
+
+| Page | Was | Fixed to |
+|------|-----|----------|
+| `/guides/mallorca-course-map` (en) | 77-char title | 57-char title, dropped the redundant "\| Interactive Guide" tail |
+| `/signature-day` (en) | 75-char title, 177-char description | 59/122 chars; description now leads with the real price (€3,000) instead of a feature list |
+| `/tools/green-fees` (en) | 184-char description | 112 chars, same facts, tighter |
+| `/de/tools` | 161-char description | 122 chars |
+| `/es/tools`, `/es/tools/golf-cost-calculator`, `/es/tools/hotel-recommender` | 66–78-char titles, one 205-char description | all under budget, matching the shorter EN/DE naming pattern |
+| `/fr/tools`, `/fr/tools/course-selector`, `/fr/tools/golf-cost-calculator`, `/fr/tools/hotel-recommender` | 61–70-char titles, two descriptions 156/211 chars | all under budget |
+| `/nl/tools/hotel-recommender` | 66-char title | 48 chars |
+| 4 lead-magnet pages (`signup-config.js`: cost-guide, trip-planner, beginners-guide, course-comparison) | titles 64–72 chars total, one 156-char description | all under budget; `title` (on-page heading) untouched, only the SEO `metaTitle`/`metaDescription` fields changed |
+
+Closed the gap in the checker itself rather than just fixing the instances: `scripts/check-meta-length.mjs` now dynamically discovers every `page.jsx` with an inline `buildPageMetadata()` call via `git ls-files`, plus scans `signup-config.js`'s `metaTitle`/`metaDescription` fields. File count scanned went from 5 to 61. Verified the new check actually fails on a violation (temporarily lengthened one title, confirmed it flagged and exited non-zero, reverted) before trusting it.

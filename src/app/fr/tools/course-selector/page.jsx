@@ -2,8 +2,8 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools/course-selector', 'fr', {
 
-  title: 'Sélecteur de parcours à Majorque | Gratuit',
-  description: 'Huit questions. Une sélection personnalisée de parcours de golf à Majorque adaptée à votre handicap, budget et style. Gratuit, instantané, sans inscription.',
+  title: 'Sélecteur de Parcours à Majorque',
+  description: 'Huit questions. Une sélection de parcours de golf à Majorque adaptée à votre handicap et budget. Gratuit et instantané.',
   robots: { index: true, follow: true },
 })
 

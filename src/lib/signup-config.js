@@ -29,7 +29,7 @@ export const LEAD_MAGNETS = {
     ],
     downloadUrl: 'https://www.mrmallorcagolf.com/downloads/cost-guide.pdf',
     buttonLabel: 'Send me the breakdown',
-    metaTitle: 'Mallorca Golf Cost Breakdown 2026 - Free Guide',
+    metaTitle: 'Mallorca Golf Cost Guide 2026',
     metaDescription:
       'Download the free Mallorca golf cost breakdown. Real green fees, buggy hire, and hidden costs - course by course.',
   },
@@ -46,7 +46,7 @@ export const LEAD_MAGNETS = {
     ],
     downloadUrl: 'https://www.mrmallorcagolf.com/downloads/trip-planner.pdf',
     buttonLabel: 'Send me the itinerary',
-    metaTitle: '7-Day Mallorca Golf Itinerary - Free Download',
+    metaTitle: '7-Day Mallorca Golf Itinerary',
     metaDescription:
       'A free 7-day Mallorca golf itinerary from a local PGA pro. Courses in order, logistics sorted, no wasted days.',
   },
@@ -63,7 +63,7 @@ export const LEAD_MAGNETS = {
     ],
     downloadUrl: 'https://www.mrmallorcagolf.com/downloads/beginners-guide.pdf',
     buttonLabel: 'Send me the guide',
-    metaTitle: "Beginner's Guide to Golf in Mallorca - Free Download",
+    metaTitle: "Beginner's Guide to Mallorca Golf",
     metaDescription:
       'New to golf in Mallorca? Download the free beginner guide - which courses to play, what to expect, and how to enjoy every round.',
   },
@@ -80,8 +80,8 @@ export const LEAD_MAGNETS = {
     ],
     downloadUrl: 'https://www.mrmallorcagolf.com/downloads/course-comparison.pdf',
     buttonLabel: 'Send me the chart',
-    metaTitle: 'Mallorca Golf Course Comparison Chart - Free Download',
+    metaTitle: 'Mallorca Golf Course Comparison',
     metaDescription:
-      "Compare all 24 Mallorca golf courses side by side. Download the free chart - green fees, difficulty, and a PGA pro's honest rating for every type of golfer.",
+      "Compare all 24 Mallorca golf courses side by side. Free chart: green fees, difficulty, and a PGA pro's honest rating.",
   },
 }

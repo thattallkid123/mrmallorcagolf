@@ -4,8 +4,8 @@ import { buildPageMetadata } from '../../../lib/page-metadata'
 export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools', 'fr', {
-  title: 'Outils gratuits de planification de golf à Majorque',
-  description: "Outils gratuits pour planifier votre séjour de golf à Majorque : sélecteur de parcours, vérificateur de handicap, comparateur de parcours, calculatrice de coûts, recommandeur d'hôtel et planificateur de journée.",
+  title: 'Outils Gratuits de Golf à Majorque',
+  description: "Outils gratuits pour planifier votre golf à Majorque : sélecteur de parcours, calculatrice de coûts et recommandeur d'hôtel.",
   robots: { index: true, follow: true },
 })
 

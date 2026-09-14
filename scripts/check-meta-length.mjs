@@ -24,6 +24,7 @@
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join, resolve } from 'node:path'
+import { execSync } from 'node:child_process'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = resolve(__dirname, '..')
@@ -43,6 +44,30 @@ const DESCRIPTION_FILES = [
   'src/lib/guide-article-content.js',
   'src/lib/guide-article-content-localized.js',
 ]
+
+// Every page.jsx that calls buildPageMetadata with an inline literal
+// title/description (as opposed to pulling `guide.metaTitle` from a shared
+// config object, which SIGNUP_CONFIG_FILES covers separately) — found
+// dynamically so a newly added page.jsx is covered without editing this
+// list. Confirmed 2026-09-14: this coverage gap let 10 titles and 6
+// descriptions ship over the SERP budget across /tools and two EN pages,
+// invisible to this check because it only ever scanned the fixed list below.
+function findInlineMetadataPageFiles() {
+  const out = execSync('git ls-files -- "src/app/**/page.jsx"', { cwd: REPO_ROOT, encoding: 'utf8' })
+  return out
+    .split('\n')
+    .filter(Boolean)
+    .filter((relPath) => readFileSync(join(REPO_ROOT, relPath), 'utf8').includes('buildPageMetadata('))
+}
+
+const INLINE_METADATA_PAGE_FILES = findInlineMetadataPageFiles()
+
+// signup-config.js carries lead-magnet SEO fields under different property
+// names (metaTitle/metaDescription, not title/description) since `title` is
+// already used there for the on-page heading.
+const SIGNUP_CONFIG_FILE = 'src/lib/signup-config.js'
+const SIGNUP_TITLE_RE = /metaTitle:\s*\n?\s*(['"])((?:\\.|(?!\1)[^\\])*)\1/g
+const SIGNUP_DESCRIPTION_RE = /metaDescription:\s*\n?\s*(['"])((?:\\.|(?!\1)[^\\])*)\1/g
 
 const UNSCOPED_TITLE_FILES = ['src/lib/page-metadata.js']
 
@@ -103,12 +128,20 @@ function checkFile(relPath) {
   if (SCOPED_TITLE_FILES.includes(relPath)) {
     findings.push(...checkStrings(text, SCOPED_TITLE_RE, { label: 'title', maxLength: MAX_TITLE_DISPLAY_LENGTH, suffixLength: TITLE_SUFFIX.length }))
   }
+  if (INLINE_METADATA_PAGE_FILES.includes(relPath)) {
+    findings.push(...checkStrings(text, UNSCOPED_TITLE_RE, { label: 'title', maxLength: MAX_TITLE_DISPLAY_LENGTH, suffixLength: TITLE_SUFFIX.length }))
+    findings.push(...checkStrings(text, DESCRIPTION_RE, { label: 'description', maxLength: MAX_DESCRIPTION_LENGTH }))
+  }
+  if (relPath === SIGNUP_CONFIG_FILE) {
+    findings.push(...checkStrings(text, SIGNUP_TITLE_RE, { label: 'metaTitle', maxLength: MAX_TITLE_DISPLAY_LENGTH, suffixLength: TITLE_SUFFIX.length }))
+    findings.push(...checkStrings(text, SIGNUP_DESCRIPTION_RE, { label: 'metaDescription', maxLength: MAX_DESCRIPTION_LENGTH }))
+  }
 
   findings.sort((a, b) => a.line - b.line)
   return findings
 }
 
-const ALL_FILES = [...new Set([...DESCRIPTION_FILES, ...UNSCOPED_TITLE_FILES, ...SCOPED_TITLE_FILES])]
+const ALL_FILES = [...new Set([...DESCRIPTION_FILES, ...UNSCOPED_TITLE_FILES, ...SCOPED_TITLE_FILES, ...INLINE_METADATA_PAGE_FILES, SIGNUP_CONFIG_FILE])]
 
 let totalFindings = 0
 for (const relPath of ALL_FILES) {
