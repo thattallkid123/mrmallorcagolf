@@ -86,6 +86,9 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
     if (prefersReducedMotion) return
 
     let pausedUntil = 0
+    const dprStepCache = { dpr: 0, step: 1 }
+    let target = 0
+    let lastCommitted = 0
     let raf
     let halfWidth = 0
 
@@ -103,10 +106,27 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
       if (viewport.scrollLeft < 0) viewport.scrollLeft += halfWidth
     }
 
+    // Same dpr-safe stepping as the Play With A Pro page's own version of this
+    // strip (PlayWithAProView.jsx) - see the comment there for why a naive
+    // Math.round(scrollLeft + 1) produces a dark seam at fractional display
+    // scaling. This copy had drifted out of sync with that fix. (2026-09-14)
     const tick = () => {
       if (performance.now() > pausedUntil) {
-        viewport.scrollLeft = Math.round(viewport.scrollLeft + 1)
+        if (viewport.scrollLeft !== lastCommitted) target = viewport.scrollLeft
+        target += 1
+        const dpr = window.devicePixelRatio || 1
+        if (dpr !== dprStepCache.dpr) {
+          dprStepCache.dpr = dpr
+          dprStepCache.step = 1
+          for (let n = 1; n <= 200; n++) {
+            if (Math.abs(n * dpr - Math.round(n * dpr)) < 0.02) { dprStepCache.step = n; break }
+          }
+        }
+        const step = dprStepCache.step
+        const committed = Math.round(target / step) * step
+        viewport.scrollLeft = committed
         normalizeLoopPosition()
+        lastCommitted = viewport.scrollLeft
       }
       raf = requestAnimationFrame(tick)
     }
@@ -191,7 +211,7 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
         </section>
 
         {/* GOLFER CAROUSEL */}
-        <div className="pwap-day-strip" aria-label="Play With A Pro round photos" ref={stripViewportRef}>
+        <div className="pwap-day-strip" aria-label="Play With A Pro round photos" ref={stripViewportRef} tabIndex={0}>
           <div className="pwap-day-strip__track" ref={stripTrackRef}>
             {dayPhotosLoop.map((photo, index) => (
               <figure
