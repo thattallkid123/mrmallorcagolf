@@ -50,6 +50,24 @@ export const ABOUT_CONTENT = {
       "quote": "Playing properly again has only confirmed what I already believed: the quickest improvements usually happen on the course, not on the range."
     }
   ],
+  "clients": {
+    "label": "In their words",
+    "title": "What clients say about the day.",
+    "quotes": [
+      {
+        "text": "Zero judgement and a wealth of knowledge with clear goals meant the lesson was really effective and enjoyable.",
+        "credit": "Matt"
+      },
+      {
+        "text": "The thing I most enjoyed was how comfortable he made me feel on the course.",
+        "credit": "Finlay"
+      },
+      {
+        "text": "Down to earth guy explained everything with ease and made me feel so relaxed.",
+        "credit": "Mark"
+      }
+    ]
+  },
   "imageAlt": "Andy Griffiths - UK PGA Advanced Professional, Mallorca",
   "summary": "I'm a UK PGA Advanced Professional. Eleven years coaching in China - national team players, the country's first Trackman Master, hundreds of millions of views on Douyin. Before that: Pebble Beach, The Open Championship, Evian. I moved to Mallorca in March 2025 to build something of my own. I play the island's best courses most weeks and have strong opinions about all of them.",
   "credentialsLabel": "Credentials",

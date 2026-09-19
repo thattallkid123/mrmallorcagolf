@@ -118,8 +118,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "dateCta": "Dígame sus fechas",
     "trust": {
       "eyebrow": "Por qué la gente consulta",
-      "quote": "Después de solo 18 hoyos juntos, he descubierto un nuevo techo para mi potencial.",
-      "credit": "Jo, cliente de Play With A Pro"
+      "quote": "Un tipo con los pies en la tierra que explicó todo con facilidad y me hizo sentir muy relajado.",
+      "credit": "Mark, cliente de Play With A Pro"
     }
   },
   "de": {
@@ -238,8 +238,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "dateCta": "Meine Daten mitteilen",
     "trust": {
       "eyebrow": "Warum Menschen anfragen",
-      "quote": "Nach nur 18 Löchern zusammen habe ich eine neue Grenze meines Potenzials entdeckt.",
-      "credit": "Jo, Play With A Pro Kunde"
+      "quote": "Ein bodenständiger Typ, der alles mit Leichtigkeit erklärt und mich so entspannt hat.",
+      "credit": "Mark, Play With A Pro Kunde"
     }
   },
   "fr": {
@@ -358,8 +358,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "dateCta": "Dites-moi vos dates",
     "trust": {
       "eyebrow": "Pourquoi les gens prennent contact",
-      "quote": "Après seulement 18 trous ensemble, j'ai découvert un nouveau plafond à mon potentiel.",
-      "credit": "Jo, client Play With A Pro"
+      "quote": "Un gars accessible qui a tout expliqué avec facilité et m'a mis très à l'aise.",
+      "credit": "Mark, client Play With A Pro"
     }
   },
   "nl": {
@@ -478,8 +478,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "dateCta": "Vertel me uw data",
     "trust": {
       "eyebrow": "Waarom mensen aanvragen",
-      "quote": "Na slechts 18 holes samen heb ik een nieuw plafond in mijn potentieel ontdekt.",
-      "credit": "Jo, Play With A Pro klant"
+      "quote": "Een nuchter persoon die alles gemakkelijk uitlegde en me zo ontspannen liet voelen.",
+      "credit": "Mark, Play With A Pro klant"
     }
   },
   "sv": {
@@ -598,8 +598,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "dateCta": "Berätta dina datum",
     "trust": {
       "eyebrow": "Varför folk hör av sig",
-      "quote": "Efter bara 18 hål tillsammans upptäckte jag ett nytt tak för min potential.",
-      "credit": "Jo, Play With A Pro-kund"
+      "quote": "En jordnära kille som förklarade allt med lätthet och fick mig att känna mig helt avslappnad.",
+      "credit": "Mark, Play With A Pro-kund"
     }
   },
   "zh": {
@@ -721,8 +721,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "dateCta": "告诉我您的日期",
     "trust": {
       "eyebrow": "为什么大家会来咨询",
-      "quote": "只打了 18 洞，我就发现自己的潜力还能再往上走一层。",
-      "credit": "Jo，Play With A Pro 客户"
+      "quote": "他是个很接地气的人，用轻松的方式解释了一切，让我完全放松下来。",
+      "credit": "Mark，Play With A Pro 客户"
     }
   }
 }

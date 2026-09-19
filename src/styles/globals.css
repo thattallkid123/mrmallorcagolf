@@ -2481,6 +2481,7 @@ body {
 .chapter p { font-size: 1rem; font-weight: 300; color: var(--charcoal); line-height: 1.78; margin-bottom: 1rem; max-width: 86ch; }
 .pull-quote { border-left: 2px solid var(--gold); padding: 14px 20px; margin: 1.35rem 0; background: var(--gold-pale); max-width: 86ch; }
 .pull-quote p { font-family: var(--font-serif); font-style: italic; font-size: 1.15rem; color: var(--pine); line-height: 1.6; }
+.pull-quote cite { display: block; margin-top: 8px; font-family: var(--font-sans); font-size: 10px; font-style: normal; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--gold-text); }
 .creds { padding: 40px 32px; }
 .creds__label { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--taupe-text); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--linen); }
 .cred-list { list-style: none; display: flex; flex-direction: column; }

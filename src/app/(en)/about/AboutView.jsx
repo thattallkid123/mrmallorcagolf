@@ -223,6 +223,18 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
                 {chapter.quote ? <p>{chapter.paragraphs[chapter.paragraphs.length - 1]}</p> : null}
               </div>
             ))}
+            {content.clients ? (
+              <div className="chapter reveal">
+                <p className="chapter__label">{content.clients.label}</p>
+                <h2>{content.clients.title}</h2>
+                {content.clients.quotes.map((item) => (
+                  <div className="pull-quote" key={item.credit}>
+                    <p>&ldquo;{item.text}&rdquo;</p>
+                    <cite>{item.credit}</cite>
+                  </div>
+                ))}
+              </div>
+            ) : null}
           </main>
 
           <aside className="story__sidebar">

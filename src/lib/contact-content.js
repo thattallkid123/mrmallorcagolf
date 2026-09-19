@@ -85,8 +85,8 @@ export const CONTACT_CONTENT = {
     },
     trust: {
       eyebrow: 'Why people enquire',
-      quote: "After just 18 holes together, I've discovered a new ceiling to my potential.",
-      credit: 'Jo, Play With A Pro client',
+      quote: "Down to earth guy explained everything with ease and made me feel so relaxed.",
+      credit: "Mark, Play With A Pro client",
     },
     whatNext: {
       heading: 'What happens next',

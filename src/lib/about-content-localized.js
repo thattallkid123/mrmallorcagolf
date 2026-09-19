@@ -51,6 +51,21 @@ export const ABOUT_LOCALIZED_CONTENT = {
     ],
     "imageAlt": "Andy Griffiths - profesional PGA en Mallorca",
     "summary": "Soy un UK PGA Advanced Professional. Once años entrenando en China - jugadores de la selección nacional, el primer Trackman Master del país y cientos de millones de visualizaciones en Douyin. Antes de eso: Pebble Beach, The Open Championship y Evian. Me mudé a Mallorca en marzo de 2025 para construir algo propio. Juego los mejores campos de la isla casi cada semana y tengo opiniones muy claras sobre todos ellos.",
+    "clients": {
+      "label": "Con sus palabras",
+      "title": "Lo que dicen los clientes sobre el día.",
+      "quotes": [
+        {
+          "text": "Cero juicios, muchísimo conocimiento y objetivos claros hicieron que la clase fuera realmente eficaz y agradable."
+        },
+        {
+          "text": "Lo que más disfruté fue lo cómodo que me hizo sentir en el campo."
+        },
+        {
+          "text": "Un tipo con los pies en la tierra que explicó todo con facilidad y me hizo sentir muy relajado."
+        }
+      ]
+    },
     "credentialsLabel": "Credenciales",
     "credentials": [
       {
@@ -161,6 +176,21 @@ export const ABOUT_LOCALIZED_CONTENT = {
       }
     ],
     "summary": "Ich bin ein UK PGA Advanced Professional. Elf Jahre Coaching in China - Nationalmannschaftsspieler, Chinas erster Trackman Master und Hunderte Millionen Aufrufe auf Douyin. Davor: Pebble Beach, The Open Championship, Evian. Im März 2025 bin ich nach Mallorca gezogen, um etwas Eigenes aufzubauen. Ich spiele die besten Plätze der Insel fast jede Woche und habe zu jedem eine klare Meinung.",
+    "clients": {
+      "label": "In ihren Worten",
+      "title": "Was Kunden über den Tag sagen.",
+      "quotes": [
+        {
+          "text": "Keinerlei Bewertung, viel Wissen und klare Ziele machten die Stunde wirklich effektiv und angenehm."
+        },
+        {
+          "text": "Am meisten hat mir gefallen, wie wohl ich mich mit ihm auf dem Platz gefühlt habe."
+        },
+        {
+          "text": "Ein bodenständiger Typ, der alles mit Leichtigkeit erklärt und mich so entspannt hat."
+        }
+      ]
+    },
     "credentialsLabel": "Qualifikationen",
     "credentials": [
       {
@@ -273,6 +303,21 @@ export const ABOUT_LOCALIZED_CONTENT = {
     ],
     "imageAlt": "Andy Griffiths - Professionnel PGA avancé, Majorque",
     "summary": "Je suis un UK PGA Advanced Professional. Onze ans à coacher en Chine - des joueurs de l'équipe nationale, le premier Trackman Master du pays et des centaines de millions de vues sur Douyin. Avant cela : Pebble Beach, The Open Championship, Evian. Je me suis installé à Majorque en mars 2025 pour construire quelque chose à moi. Je joue presque chaque semaine les meilleurs parcours de l'île et j'ai un avis tranché sur chacun d'eux.",
+    "clients": {
+      "label": "Dans leurs mots",
+      "title": "Ce que disent les clients de la journée.",
+      "quotes": [
+        {
+          "text": "Aucun jugement, beaucoup de connaissances et des objectifs clairs ont rendu la leçon vraiment efficace et agréable."
+        },
+        {
+          "text": "Ce que j'ai le plus apprécié, c'est le confort qu'il m'a donné sur le parcours."
+        },
+        {
+          "text": "Un gars accessible qui a tout expliqué avec facilité et m'a mis très à l'aise."
+        }
+      ]
+    },
     "credentialsLabel": "Références",
     "credentials": [
       {
@@ -384,6 +429,21 @@ export const ABOUT_LOCALIZED_CONTENT = {
       }
     ],
     "summary": "Ik ben een UK PGA Advanced Professional. Elf jaar coaching in China - nationale teamspelers, Chinas eerste Trackman Master en honderden miljoenen weergaven op Douyin. Daarvoor: Pebble Beach, The Open Championship en Evian. In maart 2025 verhuisde ik naar Mallorca om iets van mezelf op te bouwen. Ik speel bijna elke week de beste banen van het eiland en heb over allemaal een uitgesproken mening.",
+    "clients": {
+      "label": "In hun woorden",
+      "title": "Wat klanten over de dag zeggen.",
+      "quotes": [
+        {
+          "text": "Geen oordeel, veel kennis en duidelijke doelen maakten de les echt effectief en plezierig."
+        },
+        {
+          "text": "Wat ik het meest waardeerde, was hoe comfortabel hij me op de baan liet voelen."
+        },
+        {
+          "text": "Een nuchter persoon die alles gemakkelijk uitlegde en me zo ontspannen liet voelen."
+        }
+      ]
+    },
     "credentialsLabel": "Kwalificaties",
     "credentials": [
       {
@@ -492,6 +552,21 @@ export const ABOUT_LOCALIZED_CONTENT = {
       }
     ],
     "summary": "Jag är en UK PGA Advanced Professional. Elva år som coach i Kina - landslagsspelare, landets första Trackman Master och hundratals miljoner visningar på Douyin. Innan dess: Pebble Beach, The Open Championship och Evian. I mars 2025 flyttade jag till Mallorca för att bygga något eget. Jag spelar öns bästa banor nästan varje vecka och har starka åsikter om varenda en.",
+    "clients": {
+      "label": "Med egna ord",
+      "title": "Vad kunder säger om dagen.",
+      "quotes": [
+        {
+          "text": "Noll dömande, mycket kunskap och tydliga mål gjorde lektionen riktigt effektiv och rolig."
+        },
+        {
+          "text": "Det jag uppskattade mest var hur bekväm han fick mig att känna mig ute på banan."
+        },
+        {
+          "text": "En jordnära kille som förklarade allt med lätthet och fick mig att känna mig helt avslappnad."
+        }
+      ]
+    },
     "credentialsLabel": "Meriter",
     "credentials": [
       {
@@ -595,6 +670,21 @@ export const ABOUT_LOCALIZED_CONTENT = {
     ],
     "imageAlt": "Andy Griffiths - 英国 PGA 高级职业教练，马略卡",
     "summary": "我是英国 PGA 高级职业教练。曾在中国执教十一年，带过国家队球员，成为中国第一位 Trackman Master，并在抖音上获得数亿次观看。更早之前，我在 Pebble Beach、The Open Championship 和 Evian 执教。2025 年 3 月，我搬到马略卡，开始建立属于自己的事业。我几乎每周都会打岛上最好的球场，对每一座球场都有很明确的看法。",
+    "clients": {
+      "label": "他们的原话",
+      "title": "客户如何评价这一天。",
+      "quotes": [
+        {
+          "text": "没有任何评判，知识渊博、目标清晰，让这堂课既高效又愉快。"
+        },
+        {
+          "text": "我最喜欢的是，他让我在球场上始终感觉很自在。"
+        },
+        {
+          "text": "他是个很接地气的人，用轻松的方式解释了一切，让我完全放松下来。"
+        }
+      ]
+    },
     "credentialsLabel": "资历",
     "credentials": [
       {
