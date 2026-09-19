@@ -21,7 +21,7 @@ function resolveMasterPath() {
 }
 
 function countPublicReadyGoogleReviews(text) {
-  const sectionRegex = /^###\s+(.+)\r?\n([\s\S]*?)(?=^###\s+|^##\s+|\Z)/gm
+  const sectionRegex = /^###\s+(.+)\r?\n([\s\S]*?)(?=^###\s+|^##\s+|(?![\s\S]))/gm
   let count = 0
 
   for (const match of text.matchAll(sectionRegex)) {

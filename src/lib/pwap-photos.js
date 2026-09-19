@@ -14,4 +14,5 @@ export const PWAP_PHOTOS = [
   { src: '/images/client-santa-ponsa-mark.jpg', alt: 'Andy with Mark at Santa Ponsa during a Play With A Pro day', position: 'center 40%' },
   { src: '/images/client-tgolf-calvia-amanda.jpg', alt: 'Andy with Amanda at T Golf Calvia during a Play With A Pro day', position: 'center 35%', variant: 'portrait' },
   { src: '/images/client-son-gual-jannie.webp', alt: 'Andy with Jannie at Son Gual during a Play With A Pro day', position: 'center 30%', variant: 'portrait' },
+  { src: '/images/client-son-termes-paul.webp', alt: 'Andy with Paul at Son Termes during a Play With A Pro day', position: 'center 45%', variant: 'portrait' },
 ]
