@@ -119,8 +119,16 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Jannie"
       },
       {
+        "text": "I recently spent two days with Andy at Santa Ponsa 1 and Alcanada. From a pure ball striking perspective, Andy's tuition was brilliant. Come the back 9 of the first round I was already hitting cleaner shots with better accuracy. We talked a lot about the mental approach to a real round of golf from a professional's perspective - this is something a session at a driving range cannot deliver. I would highly recommend spending a full day (or more) with Andy. Thank you again, Andy - I'll be back for more!",
+        "author": "Mark P."
+      },
+      {
         "text": "I've been playing golf since I was five. I figured I had the fundamentals down and just needed more reps, not a coach. Then someone gifted me a lesson with Andy, and I decided to give it a shot. I'm glad I did. We worked through the finer details of my swing, focused on solid ball contact, better weight transfer, and mechanics. Even the smallest tweaks produced consistent results, and I'm confident they'll shave 5-10 strokes off my game from just one session. Andy was a total pro. Can't thank him enough.",
         "author": "Adam"
+      },
+      {
+        "text": "I had a successful, productive coaching session with Andy, that was well worth the time, energy and financial investment. It was my first session on the course and was much better received than a typical range based approach. I would not hesitate in recommending him to all golfers, across all levels. I felt immediate improvement across all elements of my golf game.",
+        "author": "Paul"
       },
       {
         "text": "The thing I most enjoyed was how comfortable he made me feel on the course. The insight into what calculations go into each shot has helped me improve my decision making immensely. I would recommend the day to groups of friends, groups on holiday looking for an entertaining day out, or even a family looking to get involved in golf together.",
@@ -129,6 +137,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       {
         "text": "Andy is amazing at what he does. A fun round with great company and genuinely valuable tips that improved my game by the end. Learning from a pro like him out on the course, in real situations, beats a driving range lesson every time.",
         "author": "Amanda"
+      },
+      {
+        "text": "Andy's professionalism and personable nature create a coaching environment that is super easy to learn within. Zero judgement and a wealth of knowledge with clear goals meant the lesson was really effective and enjoyable.",
+        "author": "Matt"
       },
       {
         "text": "Andy is a true golf professional. I learned more in half a day with him than a year playing solo. If you want to seriously improve your game, go with Andy.",
