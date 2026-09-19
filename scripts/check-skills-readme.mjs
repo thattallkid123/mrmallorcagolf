@@ -59,7 +59,7 @@ const staleInTable = [...listedSkills].filter((s) => !actualSkills.has(s));
 
 if (missingFromTable.length === 0 && staleInTable.length === 0) {
   console.log(
-    `Skills README check passed - all ${actualSkills.size} skill(s) have a table row, no stale rows.`,
+    `Skills README check passed - all ${actualSkills.size} repo code-workflow skill(s) in .claude/skills/ have a table row, no stale rows. (Drive MMG_SKILL_* knowledge skills are a separate set with its own count - see Skills-Map.ps1.)`,
   );
   process.exit(0);
 }

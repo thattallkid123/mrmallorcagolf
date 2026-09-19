@@ -65,4 +65,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Skills mirror check passed - .codex/skills/ matches .claude/skills/ (${srcFiles.size} file(s)).`);
+console.log(`Skills mirror check passed - this repo's .codex/skills/ matches .claude/skills/ (${srcFiles.size} file(s)).`);
