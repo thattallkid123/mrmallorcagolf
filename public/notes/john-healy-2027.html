@@ -93,9 +93,8 @@
     overflow: hidden;
     border-radius: 2px;
     background: #e9eef0;
-    height: 62vh;
-    min-height: 380px;
-    max-height: 640px;
+    height: 400px;
+    max-height: 90vh;
     touch-action: none;
     cursor: grab;
   }
@@ -228,6 +227,11 @@
         }
         function fitInitial() {
           scale = 1; x = 0; y = 0;
+          if (img.naturalWidth && img.naturalHeight) {
+            var aspect = img.naturalHeight / img.naturalWidth;
+            var h = Math.round(viewer.clientWidth * aspect);
+            viewer.style.height = h + 'px';
+          }
           apply();
         }
 
