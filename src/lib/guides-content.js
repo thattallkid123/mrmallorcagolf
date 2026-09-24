@@ -22,6 +22,7 @@ export const GUIDES_CONTENT = {
     {
       "slug": "alcanada-review",
       "badge": "Course Review",
+      "badgeGold": true,
       "img": "/images/alcanada-card.webp",
       "imgPosition": "center 50%",
       "title": "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)",
@@ -32,6 +33,7 @@ export const GUIDES_CONTENT = {
     {
       "slug": "son-gual-review",
       "badge": "Course Review",
+      "badgeGold": true,
       "img": "/images/son-gual-card.webp",
       "imgPosition": "center 40%",
       "title": "Son Gual Golf Mallorca - A PGA Professional's Honest Review (2026)",
@@ -75,6 +77,7 @@ export const GUIDES_CONTENT = {
     {
       "slug": "santa-ponsa-1-review",
       "badge": "Course Review",
+      "badgeGold": true,
       "img": "/images/santa-ponsa-card.webp",
       "imgPosition": "center 40%",
       "title": "Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026)",
@@ -118,6 +121,7 @@ export const GUIDES_CONTENT = {
     {
       "slug": "son-termes-review",
       "badge": "Course Review",
+      "badgeGold": true,
       "img": "/images/courses/son-termes.webp",
       "imgPosition": "center 40%",
       "title": "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",

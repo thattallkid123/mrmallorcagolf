@@ -19,6 +19,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "alcanada-review",
         "badge": "Análisis del campo",
+        "badgeGold": true,
         "title": "Club de Golf Alcanada - análisis honesto de un Profesional PGA (2026)",
         "intro": "El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia. El faro lo cambia todo.",
         "readTime": "7 min",
@@ -27,6 +28,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-gual-review",
         "badge": "Análisis del campo",
+        "badgeGold": true,
         "title": "Son Gual Golf Mallorca - análisis honesto de un Profesional PGA (2026)",
         "intro": "Mi campo más jugado en la isla. El viento, los greens, el tramo final y por qué Obama y Nadal siguen volviendo.",
         "readTime": "7 min",
@@ -62,6 +64,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "santa-ponsa-1-review",
         "badge": "Análisis del campo",
+        "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - análisis honesto de un Profesional PGA (2026)",
         "intro": "Uno de los campos más largos de Europa, historia real en el European Tour y uno de los lugares más fáciles de la isla para disfrutar pegando driver.",
         "readTime": "6 min",
@@ -99,6 +102,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-termes-review",
         "badge": "Reseña de campo",
+        "badgeGold": true,
         "title": "Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)",
         "intro": "Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.",
         "readTime": "5 min de lectura",
@@ -200,6 +204,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "alcanada-review",
         "badge": "Platz-Bewertung",
+        "badgeGold": true,
         "title": "Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Der Platz, zu dem ich Leute bringe, wenn ich möchte, dass sie mit einer Geschichte nach Hause kommen. Der Leuchtturm verändert alles.",
         "readTime": "7 Min.",
@@ -208,6 +213,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-gual-review",
         "badge": "Platz-Bewertung",
+        "badgeGold": true,
         "title": "Son Gual Golf Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Mein meistgespielter Platz auf der Insel. Der Wind, die Greens, die Schlusslöcher und warum Obama und Nadal immer wiederkommen.",
         "readTime": "7 Min.",
@@ -243,6 +249,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "santa-ponsa-1-review",
         "badge": "Platz-Bewertung",
+        "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Einer der längsten Plätze Europas, echte European-Tour-Geschichte und ein Platz, der das Vertrauen mit dem Driver wirklich zurückgibt.",
         "readTime": "6 Min.",
@@ -280,6 +287,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-termes-review",
         "badge": "Platz-Bewertung",
+        "badgeGold": true,
         "title": "Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Bergblicke über Palma, engere Abschlagslinien als man erwartet und eines der eigenständigsten Layouts der Insel in dieser Preisklasse.",
         "readTime": "5 Min. Lesezeit",
@@ -380,6 +388,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "alcanada-review",
         "badge": "Avis parcours",
+        "badgeGold": true,
         "title": "Club de Golf Alcanada - avis honnête d'un Professionnel PGA (2026)",
         "intro": "Le parcours où j'emmène les gens quand je veux qu'ils rentrent avec une histoire. Le phare change tout.",
         "readTime": "7 min",
@@ -388,6 +397,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-gual-review",
         "badge": "Avis parcours",
+        "badgeGold": true,
         "title": "Son Gual Golf Majorque - avis honnête d'un Professionnel PGA (2026)",
         "intro": "Mon parcours le plus joué sur l'île. Le vent, les greens, la fin de parcours et pourquoi Obama et Nadal reviennent toujours.",
         "readTime": "7 min",
@@ -423,6 +433,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "santa-ponsa-1-review",
         "badge": "Avis parcours",
+        "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Majorque - avis honnête d'un Professionnel PGA (2026)",
         "intro": "L'un des parcours les plus longs d'Europe, une vraie histoire sur l'European Tour et un parcours qui redonne vraiment confiance avec le driver.",
         "readTime": "6 min",
@@ -460,6 +471,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-termes-review",
         "badge": "Test de parcours",
+        "badgeGold": true,
         "title": "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
         "intro": "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
         "readTime": "5 min de lecture",
@@ -561,6 +573,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "alcanada-review",
         "badge": "Baanbeoordeling",
+        "badgeGold": true,
         "title": "Club de Golf Alcanada - eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "De baan waar ik mensen naartoe breng als ik wil dat ze met een verhaal thuiskomen. De vuurtoren verandert alles.",
         "readTime": "7 min",
@@ -569,6 +582,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-gual-review",
         "badge": "Baanbeoordeling",
+        "badgeGold": true,
         "title": "Son Gual Golf Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes en waarom Obama en Nadal blijven terugkomen.",
         "readTime": "7 min",
@@ -604,6 +618,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "santa-ponsa-1-review",
         "badge": "Baanbeoordeling",
+        "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "Een van de langste banen in Europa, echte European-Tour-geschiedenis en een baan die je vertrouwen met de driver echt teruggeeft.",
         "readTime": "6 min",
@@ -641,6 +656,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-termes-review",
         "badge": "Baanreview",
+        "badgeGold": true,
         "title": "Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)",
         "intro": "Bergzichten boven Palma, strakkere drivinglijnen dan je verwacht en een van de meest karaktervolle layouts op het eiland in deze prijsklasse.",
         "readTime": "5 min leestijd",
@@ -742,6 +758,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "alcanada-review",
         "badge": "Banomdöme",
+        "badgeGold": true,
         "title": "Club de Golf Alcanada - ärlig recension av en PGA Professional (2026)",
         "intro": "Banan jag tar folk till när jag vill att de ska åka hem med en historia. Fyren förändrar allt.",
         "readTime": "7 min",
@@ -750,6 +767,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-gual-review",
         "badge": "Banomdöme",
+        "badgeGold": true,
         "title": "Son Gual Golf Mallorca - ärlig recension av en PGA Professional (2026)",
         "intro": "Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen och varför Obama och Nadal alltid kommer tillbaka.",
         "readTime": "7 min",
@@ -785,6 +803,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "santa-ponsa-1-review",
         "badge": "Banomdöme",
+        "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension av en PGA Professional (2026)",
         "intro": "En av Europas laengsta banor, riktig European-Tour-historia och en bana som verkligen återger självförtroendet med drivern.",
         "readTime": "6 min",
@@ -822,6 +841,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-termes-review",
         "badge": "Banrecension",
+        "badgeGold": true,
         "title": "Son Termes Golf, Mallorca: en ärlig recension av en PGA-proffs (2026)",
         "intro": "Bergsvyer ovanför Palma, tajtare utslagslinjer än man tror och en av öns mest personliga banlayouter i den här prisklassen.",
         "readTime": "5 min läsning",
@@ -923,6 +943,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "alcanada-review",
         "badge": "球场评测",
+        "badgeGold": true,
         "title": "阿尔卡纳达高尔夫球场 - PGA 职业教练诚实评测（2026）",
         "intro": "我带客人来打球时，最希望他们能带着故事回家的球场。灯塔改变了一切。",
         "readTime": "7分钟",
@@ -931,6 +952,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-gual-review",
         "badge": "球场评测",
+        "badgeGold": true,
         "title": "Son Gual 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
         "intro": "我在岛上打得最多的球场。风、果岭、收官几洞，以及奥巴马和纳达尔一再回来的原因。",
         "readTime": "7分钟",
@@ -966,6 +988,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "santa-ponsa-1-review",
         "badge": "球场评测",
+        "badgeGold": true,
         "title": "圣蓬萨1号高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
         "intro": "欧洲最长的球场之一，拥有真正的 European Tour 历史，也是真正能帮球手找回一号木信心的球场。",
         "readTime": "6分钟",
@@ -1003,6 +1026,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       {
         "slug": "son-termes-review",
         "badge": "球场评测",
+        "badgeGold": true,
         "title": "马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）",
         "intro": "帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。",
         "readTime": "5分钟",
