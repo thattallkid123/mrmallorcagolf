@@ -94,6 +94,17 @@ export const GUIDES_CONTENT = {
       "keywords": "Mountain course · Par 72 · €90-140 · Southwest Mallorca"
     },
     {
+      "slug": "son-quint-review",
+      "badge": "Course Review",
+      "badgeGold": true,
+      "img": "/images/son-quint-card.webp",
+      "imgPosition": "center 45%",
+      "title": "Son Quint Golf, Mallorca: A PGA Professional's Honest Review (2026)",
+      "intro": "The newest course in the Arabella Golf group and the friendliest. Firm, well-defended greens make sure it is not an easy one. An 8 out of 10.",
+      "readTime": "6 min read",
+      "keywords": "Accessible course · Par 71 · €76-172 · Son Vida, Palma"
+    },
+    {
       "slug": "son-antem-west-review",
       "badge": "Course Review",
       "badgeGold": true,
@@ -231,6 +242,7 @@ const COURSE_REVIEW_SLUGS = new Set([
   'golf-andratx-review',
   'son-termes-review',
   'son-antem-west-review',
+  'son-quint-review',
 ])
 
 const GUIDE_PRICE_LABELS = {

@@ -77,6 +77,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Campo de montaña · Par 72 · €90-140 · Suroeste de Mallorca"
       },
       {
+        "slug": "son-quint-review",
+        "badge": "Análisis del campo",
+        "badgeGold": true,
+        "title": "Son Quint Golf, Mallorca - análisis honesto de un Profesional PGA (2026)",
+        "intro": "El campo más nuevo del grupo Arabella Golf y el más amable. Sus greens firmes y bien defendidos hacen que no sea nada fácil. Un 8 sobre 10.",
+        "readTime": "6 min",
+        "keywords": "Campo accesible · Par 71 · €76-172 · Son Vida, Palma"
+      },
+      {
         "slug": "son-antem-west-review",
         "badge": "Analisis del campo",
         "badgeGold": true,
@@ -249,6 +258,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergplatz · Par 72 · €90-140 · Südwesten Mallorcas"
       },
       {
+        "slug": "son-quint-review",
+        "badge": "Platz-Bewertung",
+        "badgeGold": true,
+        "title": "Son Quint Golf, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
+        "intro": "Der neueste Platz der Arabella Golf Gruppe und der freundlichste. Feste, gut verteidigte Greens sorgen dafür, dass er nicht leicht ist. Eine 8 von 10.",
+        "readTime": "6 Min.",
+        "keywords": "Zugänglicher Platz · Par 71 · €76-172 · Son Vida, Palma"
+      },
+      {
         "slug": "son-antem-west-review",
         "badge": "Platz-Bewertung",
         "badgeGold": true,
@@ -418,6 +436,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Le par 5 le plus long d'Espagne, des vues de montagne sur le sud-ouest et un tracé qui récompense la gestion du jeu bien plus que la distance. Un 7,5 sur 10.",
         "readTime": "6 min",
         "keywords": "Parcours de montagne · Par 72 · €90-140 · Sud-ouest de Majorque"
+      },
+      {
+        "slug": "son-quint-review",
+        "badge": "Avis parcours",
+        "badgeGold": true,
+        "title": "Son Quint Golf, Majorque - avis honnête d'un Professionnel PGA (2026)",
+        "intro": "Le parcours le plus récent du groupe Arabella Golf et le plus accueillant. Des greens fermes et bien défendus font qu'il n'est pas facile. Un 8 sur 10.",
+        "readTime": "6 min",
+        "keywords": "Parcours accessible · Par 71 · €76-172 · Son Vida, Palma"
       },
       {
         "slug": "son-antem-west-review",
@@ -592,6 +619,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergbaan · Par 72 · €90-140 · Zuidwest-Mallorca"
       },
       {
+        "slug": "son-quint-review",
+        "badge": "Baanbeoordeling",
+        "badgeGold": true,
+        "title": "Son Quint Golf, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
+        "intro": "De nieuwste baan van de Arabella Golf-groep en de vriendelijkste. Stevige, goed verdedigde greens zorgen ervoor dat hij niet makkelijk is. Een 8 op 10.",
+        "readTime": "6 min",
+        "keywords": "Toegankelijke baan · Par 71 · €76-172 · Son Vida, Palma"
+      },
+      {
         "slug": "son-antem-west-review",
         "badge": "Baanbeoordeling",
         "badgeGold": true,
@@ -764,6 +800,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergsbana · Par 72 · €90-140 · Sydvästra Mallorca"
       },
       {
+        "slug": "son-quint-review",
+        "badge": "Banomdöme",
+        "badgeGold": true,
+        "title": "Son Quint Golf, Mallorca - ärlig recension av en PGA Professional (2026)",
+        "intro": "Den nyaste banan i Arabella Golf-gruppen och den vänligaste. Fasta, väl försvarade greener gör att den inte är lätt. En 8 av 10.",
+        "readTime": "6 min",
+        "keywords": "Lättillgänglig bana · Par 71 · €76-172 · Son Vida, Palma"
+      },
+      {
         "slug": "son-antem-west-review",
         "badge": "Banrecension",
         "badgeGold": true,
@@ -934,6 +979,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "西班牙最长的标准杆5洞，俯瞰西南部的山景，以及一个更考验球场管理能力而非距离的球场。评分7.5/10。",
         "readTime": "6分钟",
         "keywords": "山地球场 · 标准杆72 · €90-140 · 马略卡西南部"
+      },
+      {
+        "slug": "son-quint-review",
+        "badge": "球场评测",
+        "badgeGold": true,
+        "title": "Son Quint 高尔夫球场 - PGA 职业教练诚实评测（2026）",
+        "intro": "Arabella Golf 集团旗下最新也是最友好的球场。偏硬、防守到位的果岭让它并不简单。评分8/10。",
+        "readTime": "6分钟",
+        "keywords": "易上手球场 · 标准杆71 · €76-172 · Son Vida，帕尔马"
       },
       {
         "slug": "son-antem-west-review",

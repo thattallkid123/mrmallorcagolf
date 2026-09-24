@@ -1087,7 +1087,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Quint - Honest Review 2026",
         description:
-          'Son Quint green fee \u20ac76-\u20ac172 (dynamic), par 71, 15 minutes from Palma. Accessible for all levels, tougher than it looks from the back tees.',
+          'Son Quint green fee \u20ac76-\u20ac172 (dynamic), par 71, 15 minutes from Palma. Accessible for all levels, tougher than it looks even from the white tees.',
         imagePath: '/images/son-quint-blog/son-quint-5.webp',
       },
       meta: {
@@ -1123,7 +1123,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'How The Course Plays' },
         {
           type: 'paragraph',
-          text: "We walked all 18. The front nine is much flatter and an easy walk. I was hitting a lot of irons off the tee to keep the round sociable with my client, but even then, playing the back tees at around 230 yards with an iron, there was still plenty to think about. Son Quint is the newest course in the Arabella Golf group and generally considered the friendliest of the four. That reputation should not be mistaken for easy.",
+          text: "We walked all 18. The front nine is much flatter and an easy walk. I was hitting a lot of irons off the tee to keep the round sociable with my client, but even then, playing the white tees and hitting an iron off the tee around 230 yards, there was still plenty to think about. Son Quint is the newest course in the Arabella Golf group and generally considered the friendliest of the four. That reputation should not be mistaken for easy.",
         },
         {
           type: 'paragraph',
@@ -1149,7 +1149,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The 12th is the standout: a par 3 of around 200m played almost entirely over water. Bunkers cover most of the ground that is not water, and the green is fast. Take your par and get off it without complaint.",
+          text: "The 12th is the standout: a par 3 of 195m played almost entirely over water. Bunkers cover most of the ground that is not water, and the green is fast. Take your par and get off it without complaint.",
         },
         {
           type: 'image',
@@ -1218,7 +1218,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['\u20ac120', 'Guest green fee on the day we played'],
             ['8/10', "Andy's rating"],
-            ['6,021m', 'Tips (Par 71)'],
+            ['6,021m', 'White tees (Par 71)'],
             ['Buggy optional', 'We walked all 18'],
           ],
         },
@@ -1261,7 +1261,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'I really enjoyed Son Quint and will be back before long. It suits a group with mixed handicaps who still want a proper test from the tips, and it is a good option if you are staying in the Son Vida area alongside <a href="/guides/son-muntaner-review">Son Muntaner</a> or <a href="/guides/t-golf-palma-review">T Golf Palma</a>. If you are building out the wider trip, the <a href="/plan-your-trip">trip planning guide</a> covers how to sequence rounds like this.',
+          text: 'I really enjoyed Son Quint and will be back before long. It suits a group with mixed handicaps who still want a proper test, and it is a good option if you are staying in the Son Vida area alongside <a href="/guides/son-muntaner-review">Son Muntaner</a> or <a href="/guides/t-golf-palma-review">T Golf Palma</a>. If you are building out the wider trip, the <a href="/plan-your-trip">trip planning guide</a> covers how to sequence rounds like this.',
         },
         {
           type: 'cta',

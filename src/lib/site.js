@@ -41,11 +41,11 @@ export const REVIEW_POST_SLUGS = new Set([
   't-golf-palma-review',
   'golf-andratx-review',
   'son-antem-west-review',
+  'son-quint-review',
 ])
 
 export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
   'on-course-coaching-mallorca',
-  'son-quint-review',
 ])
 
 export const ARTICLE_SLUGS = new Set([
