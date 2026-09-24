@@ -1088,7 +1088,7 @@ export const GUIDE_POST_CONTENT = {
         title: "Son Quint - Honest Review 2026",
         description:
           'Son Quint green fee \u20ac76-\u20ac172 (dynamic), par 71, 15 minutes from Palma. Accessible for all levels, tougher than it looks from the back tees.',
-        imagePath: '/images/son-quint-blog/son-quint-3.webp',
+        imagePath: '/images/son-quint-blog/son-quint-5.webp',
       },
       meta: {
         badge: 'Course Review',
