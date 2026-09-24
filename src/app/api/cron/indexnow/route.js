@@ -20,6 +20,7 @@ const INDEXNOW_GUIDES = [
   '/guides/t-golf-calvia-review',
   '/guides/5-day-mallorca-golf-itinerary',
   '/guides/t-golf-palma-review',
+  '/guides/son-quint-review',
 ]
 
 const MAX_URLS_PER_REQUEST = 50

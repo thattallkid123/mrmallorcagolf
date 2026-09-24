@@ -21,6 +21,7 @@ const GUIDE_DATES = {
   'mallorca-course-map': '2026-07-23',
   '5-day-mallorca-golf-itinerary': '2026-08-10',
   't-golf-palma-review': '2026-09-09',
+  'son-quint-review': '2026-09-24',
 }
 
 function escapeXml(str) {

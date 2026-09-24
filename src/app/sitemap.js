@@ -30,6 +30,7 @@ const LAST_MODIFIED_BY_PATH = {
   '/guides/is-mallorca-good-for-golf': '2026-08-14',
   '/guides/on-course-coaching-mallorca': '2026-08-22',
   '/guides/t-golf-palma-review': '2026-09-09',
+  '/guides/son-quint-review': '2026-09-24',
   '/play-with-a-pro': '2026-08-26',
   '/signature-day': '2026-06-25',
   '/about': '2026-04-01',
