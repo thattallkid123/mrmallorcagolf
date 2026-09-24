@@ -1108,35 +1108,26 @@ export const GUIDE_POST_CONTENT = {
       blocks: [
         {
           type: 'image',
-          src: '/images/son-quint-blog/son-quint-3.webp',
-          alt: 'The par 3 12th hole at Son Quint golf course Mallorca playing almost entirely over water',
-          caption: 'The 12th, almost entirely over water. Take your par and move on.',
+          src: '/images/son-quint-blog/son-quint-1.webp',
+          alt: 'Stone entrance sign for Son Quint golf course Mallorca surrounded by cacti',
+          caption: 'The entrance at Son Quint, part of the Arabella Golf group.',
           priority: true,
           presentation: 'natural',
-          naturalWidth: 1304,
+          naturalWidth: 1200,
           naturalHeight: 1600,
         },
         {
           type: 'paragraph',
           text: "We had the first tee time of the day at Son Quint, out at 7:40am. Cold enough for the first few holes that I kept a jacket on, with dew still down and some of the greens not yet cut. My client was chatting away with the reception staff before we had even started, and the caddie master was cracking jokes with us on the way to the 1st tee.",
         },
-        {
-          type: 'image',
-          src: '/images/son-quint-blog/son-quint-1.webp',
-          alt: 'Stone entrance sign for Son Quint golf course Mallorca surrounded by cacti',
-          caption: 'The entrance at Son Quint, part of the Arabella Golf group.',
-          presentation: 'natural',
-          naturalWidth: 1200,
-          naturalHeight: 1600,
-        },
         { type: 'heading', text: 'How The Course Plays' },
         {
           type: 'paragraph',
-          text: "We walked all 18. The front nine is much flatter and an easy walk. I was hitting a lot of irons off the tee to keep the round sociable with my client, but even then, playing the back tees at around 230m with an iron, there was still plenty to think about. Son Quint is the newest course in the Arabella Golf group and generally considered the friendliest of the four. That reputation should not be mistaken for easy.",
+          text: "We walked all 18. The front nine is much flatter and an easy walk. I was hitting a lot of irons off the tee to keep the round sociable with my client, but even then, playing the back tees at around 230 yards with an iron, there was still plenty to think about. Son Quint is the newest course in the Arabella Golf group and generally considered the friendliest of the four. That reputation should not be mistaken for easy.",
         },
         {
           type: 'paragraph',
-          text: "Several greens sit above the fairway, so chipping needs to be accurate. That matters more than usual here because the greens are firm and quite a few of today's pins were tight to the edges. The greens themselves were noticeably slower for the first couple of holes with the dew still down, and properly quick once the crew had been through and cut them.",
+          text: "Several greens sit above the fairway, so chipping needs to be accurate. That matters more than usual here because the greens are firm and quite a few of today's pins were close to the edges. The greens themselves were noticeably slower for the first couple of holes with the dew still down, and properly quick once the crew had been through and cut them.",
         },
         {
           type: 'image',
@@ -1150,7 +1141,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Holes Worth Mentioning' },
         {
           type: 'paragraph',
-          text: "The 9th was one of my favourites, a par 3 that sits directly in front of the clubhouse next to the driving range. We had the first tee time of the day, so there was no time to use the range beforehand, which made standing on that tee a bit of a leap into the unknown.",
+          text: "The 9th was one of my favourites, a par 3 that sits directly in front of the clubhouse next to the driving range. We had the first tee time of the day, so there had been no chance to use that range before we teed off. Standing on the 9th looking straight at it was the closest we got all morning.",
         },
         {
           type: 'paragraph',
@@ -1158,11 +1149,20 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The 12th, above, is the standout: a par 3 of around 200m played almost entirely over water. Bunkers cover most of the ground that is not water, and the green is fast. Take your par and get off it without complaint.",
+          text: "The 12th is the standout: a par 3 of around 200m played almost entirely over water. Bunkers cover most of the ground that is not water, and the green is fast. Take your par and get off it without complaint.",
+        },
+        {
+          type: 'image',
+          src: '/images/son-quint-blog/son-quint-3.webp',
+          alt: 'The par 3 12th hole at Son Quint golf course Mallorca playing almost entirely over water',
+          caption: 'The 12th, almost entirely over water. Take your par and move on.',
+          presentation: 'natural',
+          naturalWidth: 1304,
+          naturalHeight: 1600,
         },
         {
           type: 'paragraph',
-          text: "The 13th was another favourite, a dogleg-left par 5 with a genuinely tight tee shot. The second shot is tighter than it first looks too, and the mountain backdrop behind it was one of the best moments of the round.",
+          text: "The 13th was another favourite, a dogleg-left par 5 with a narrow tee shot. The second shot is tighter than it first looks too, with the mountains rising directly behind the green.",
         },
         {
           type: 'image',
@@ -1175,7 +1175,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The front nine is flat and straightforward by comparison. By the back nine it almost feels like a different course: more blind shots, more technical holes, tighter in places. The further you go, the more the mountains close in, with proper views along the way. If I had to choose, the back nine is the more interesting nine.",
+          text: "The front nine is flat and straightforward by comparison. By the back nine it almost feels like a different course: more blind shots, more technical holes, and tighter lines off several tees. The further you go, the closer the mountains get. If I had to choose, the back nine is the more interesting nine.",
         },
         {
           type: 'image',
@@ -1197,7 +1197,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Conditioning And Service' },
         {
           type: 'paragraph',
-          text: "Conditioning throughout was very good. The bunkers were in excellent shape, and as we went round there were still staff out cutting bunker edges by hand and working on smaller details. For September, that is a well-maintained golf course.",
+          text: "Conditioning throughout was very good. The bunkers were in excellent shape, and as we went round there were still staff out cutting bunker edges by hand and working on smaller details. For September, that is a very well-maintained golf course.",
         },
         {
           type: 'paragraph',
@@ -1242,12 +1242,12 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Common Questions' },
         {
           type: 'paragraph',
-          text: "Handicap limit is 54 for men and women, with a certificate required at booking. The course is walkable all round; the front nine is flat and the back nine has more climbing, but nothing that should trouble a reasonably fit player. Son Quint suits golfers of any level: the fairways are wide and there are four tee positions, but firm, undulating greens and several back-of-green pins mean a better player will still have plenty to think about. The surprise for most first-timers is how much the back nine changes character, with more blind shots and tighter lines than the flat front nine suggests. Local tip: take an early tee time if you can. The greens were noticeably faster once the morning dew had gone and the crew had cut them.",
+          text: "Handicap limit is 54 for men and women, with a certificate required at booking. The course is walkable all round; the front nine is flat and the back nine has more climbing, but nothing that should trouble a reasonably fit player. Son Quint suits golfers of any level: the fairways are wide and there are four tee positions, but firm, undulating greens and several back-of-green pins keep a stronger player honest. The surprise for most first-timers is how much the back nine changes character, with more blind shots and less room off the tee than the flat front nine suggests. Local tip: take an early tee time if you can. The greens were noticeably faster once the morning dew had gone and the crew had cut them.",
         },
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "8/10. Son Quint is the most accessible course in the Arabella Golf group without being an easy one. Wide fairways, four tee positions and a warm, sociable atmosphere make it a good fit for golfers of any level, while firm, well-defended greens and a genuinely testing back nine give a better player plenty to think about too. Conditioning was excellent for September, and the welcome, from reception through to the caddie master and the waiting staff, was some of the best I have had in Mallorca.",
+          text: "8/10. Son Quint is the most accessible course in the Arabella Golf group without being an easy one. Wide fairways, four tee positions and a warm, sociable atmosphere make it a good fit for golfers of any level, while firm, well-defended greens and a testing back nine ask real questions of a better player too. Conditioning was excellent for September, and the welcome, from reception through to the caddie master and the waiting staff, was some of the best I have had in Mallorca.",
         },
         {
           type: 'notes',
@@ -1255,13 +1255,13 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Best tee time', 'An early start meant a quiet course and first-cut greens, though they were noticeably slower before the crew had been through. Worth knowing either way.'],
             ['Signage', 'Follow the buggy path rather than walking toward where the next hole appears to be. We lost time twice heading the wrong way between holes.'],
-            ['Club selection into the back nine', 'Several greens sit above the fairway and several pins were tight to the back edge. Take one more club than you think on the approach.'],
+            ['Club selection into the back nine', 'Several greens sit above the fairway and several pins were close to the back edge. Take one more club than you think on the approach.'],
             ['Clubhouse tip', 'Stay for food if you can. Service was excellent and the Andalusian squid was good at \u20ac15.'],
           ],
         },
         {
           type: 'paragraph',
-          text: 'I really enjoyed Son Quint and will be back before long. It is a good fit for a group with mixed handicaps who still want a proper test from the tips, and a good option if you are staying in the Son Vida area alongside <a href="/guides/son-muntaner-review">Son Muntaner</a> or <a href="/guides/t-golf-palma-review">T Golf Palma</a>. If you are building out the wider trip, the <a href="/plan-your-trip">trip planning guide</a> covers how to sequence rounds like this.',
+          text: 'I really enjoyed Son Quint and will be back before long. It suits a group with mixed handicaps who still want a proper test from the tips, and it is a good option if you are staying in the Son Vida area alongside <a href="/guides/son-muntaner-review">Son Muntaner</a> or <a href="/guides/t-golf-palma-review">T Golf Palma</a>. If you are building out the wider trip, the <a href="/plan-your-trip">trip planning guide</a> covers how to sequence rounds like this.',
         },
         {
           type: 'cta',
