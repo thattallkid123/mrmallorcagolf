@@ -359,7 +359,7 @@ export const HOME_CONTENT = {
           "Restaurant and dining suggestions included",
           "One person to contact for the whole trip"
         ],
-        "note": "5% management fee applies to green fees and bookings. Confirmed after your first conversation.",
+        "note": "5% management fee applies to green fees only. Confirmed after your first conversation.",
         "cta": "Enquire",
         "href": "/contact"
       }

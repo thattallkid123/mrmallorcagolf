@@ -235,7 +235,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "eyebrow": "Trip Planning",
         "name": "Plan Your Trip",
         "price": "Price on enquiry",
-        "note": "5% management fee applies to green fees and bookings. Confirmed after your first conversation.",
+        "note": "5% management fee applies to green fees only. Confirmed after your first conversation.",
         "features": [
           "No searching apps or websites: tee times handled for you",
           "Courses picked to match your group, level, and budget",

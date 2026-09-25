@@ -1897,7 +1897,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "附带餐厅与用餐建议",
             "整个行程只联系一个人"
           ],
-          "note": "果岭费和预订需收取 5% 管理费。第一次沟通后确认。",
+          "note": "管理费仅按果岭费的 5% 收取。第一次沟通后确认。",
           "cta": "咨询",
           "href": "/zh/contact"
         }

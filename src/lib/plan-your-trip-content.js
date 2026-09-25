@@ -47,7 +47,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       ]
     },
     "note": "No commitment at enquiry stage. I reply personally within 24 hours with the recommended next step and a clear quote before anything is booked.",
-    "feeNote": "The management fee is 5% of green fees and agreed extras. I show the full cost and booking terms before you commit.",
+    "feeNote": "The management fee is 5% of the green fees. I show the full cost and booking terms before you commit.",
     "sendPrompt": "Best details to send: dates, group size, handicap range, hotel area, and any courses already on your shortlist.",
     "cta": "Enquire about trip planning",
     "bookingOnly": {

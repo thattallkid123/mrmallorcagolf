@@ -197,7 +197,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Planificación de viajes",
           "name": "Planifica tu viaje",
           "price": "Precio bajo demanda",
-          "note": "Se aplica una comisión de gestión del 5% a los green fees y las reservas. Se confirma después de su primer evento.",
+          "note": "Se aplica una comisión de gestión del 5% solo a los green fees. Se confirma después de su primer evento.",
           "features": [
             "Sin búsqueda en aplicaciones o sitios web: nosotros gestionamos las horas de salida",
             "Campos elegidos para adaptarse a su grupo, nivel y presupuesto",
@@ -481,7 +481,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Reiseplanung",
           "name": "Reise planen",
           "price": "Preis auf Anfrage",
-          "note": "5% Verwaltungsgebühr auf Greenfees und Buchungen. Nach Ihrem ersten Gespräch bestätigt.",
+          "note": "5% Verwaltungsgebühr nur auf Greenfees. Nach Ihrem ersten Gespräch bestätigt.",
           "features": [
             "Keine App-Recherche: Wir handhaben die Startzeiten für Sie",
             "Plätze, die zu Ihrer Gruppe, Ihrem Level und Budget passen",
@@ -765,7 +765,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Planification de voyage",
           "name": "Planifiez votre voyage",
           "price": "Prix sur demande",
-          "note": "Des frais de gestion de 5% s'appliquent aux greens fees et aux réservations. Confirmés après votre première conversation.",
+          "note": "Des frais de gestion de 5% s'appliquent uniquement aux greens fees. Confirmés après votre première conversation.",
           "features": [
             "Pas de recherche sur des apps ou des sites: heures de départ gérées par nous",
             "Parcours choisis pour correspondre à votre groupe, votre niveau et votre budget",
@@ -1048,7 +1048,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Reisplanning",
           "name": "Plan uw reis",
           "price": "Prijs op aanvraag",
-          "note": "Er geldt een beheersgebeur van 5% op greenfees en boekingen. Bevestigd na uw eerste gesprek.",
+          "note": "Er geldt een beheersvergoeding van 5% alleen op greenfees. Bevestigd na uw eerste gesprek.",
           "features": [
             "Geen zoeken in apps of websites: starttijden geregeld door ons",
             "Banen gekozen om aan uw groep, niveau en budget te voldoen",
@@ -1332,7 +1332,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Reseplanering",
           "name": "Planera din resa",
           "price": "Pris på förfrågan",
-          "note": "5% administrationsavgift gäller för greenfees och bokningar. Bekräftas efter ditt första samtal.",
+          "note": "5% administrationsavgift gäller endast för greenfees. Bekräftas efter ditt första samtal.",
           "features": [
             "Ingen sökning i appar eller webbplatser: starttider arrangerade av oss",
             "Banor valda för att matcha din grupp, nivå och budget",
@@ -1615,7 +1615,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "行程规划",
           "name": "规划你的行程",
           "price": "按需询价",
-          "note": "果岭费及订单费用另行收取5%管理费。首次沟通后确认。",
+          "note": "管理费仅按果岭费的 5% 收取。首次沟通后确认。",
           "features": [
             "无需在应用或网站上搜索：我们为您安排开球时间",
             "精选球场以适配您的小组、水平及预算",
