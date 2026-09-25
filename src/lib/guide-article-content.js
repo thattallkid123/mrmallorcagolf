@@ -844,7 +844,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'Golf Club Hire Mallorca - Prices',
       description:
-        'Golf club hire €25–€65/day. Best companies, quality levels, best deals for 2026.',
+        'Golf club rentals in Mallorca cost €25–€65 a day. Companies compared, club quality, and where to get the best price in 2026.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-club-hire-mallorca',
       image: `${SITE_ORIGIN}/images/courses/vall-dor.webp`,
       imageAlt: 'Golf Club Hire in Mallorca - Everything You Need to Know (2026)',
