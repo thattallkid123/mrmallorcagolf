@@ -229,7 +229,7 @@ const COURSES = [
     id:'capdepera', name:'Capdepera Golf',
     area:'East', areaLabel:'Artà · East',
     diff10:7, scenery:4, prestige:3, value:4, walkability:3,
-    greenFee:'Peak €125 / Low €79 (dynamic)',
+    greenFee:'Peak €149 / Low €79 (dynamic)',
     buggyNote:'Buggy advised for the hillier back nine',
     bestFor:'Two courses in one out east',
     why:'Dan Maples designed this to follow the existing landscape. The front half runs through a wide valley: open and relatively gentle. The back nine climbs into the Levant hills and becomes a much more technical test. Hole 15, up in the mountains with views across the valley to the coast, was chosen as the best hole on the island by Mallorca Magazin.',

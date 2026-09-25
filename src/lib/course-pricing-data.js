@@ -5,7 +5,7 @@ import { resolveCourseAccessName } from './course-access-data.js'
 
 export const COURSE_PRICING_BY_NAME = {
   "Canyamel Golf": {"low":85,"peak":145,"dynamic":false,"licenceFee":3,"junior18HLow":50,"junior18HPeak":85,"junior9H":55,"juniorAgeMax":16,"juniorAgeNote":"Seasonal HS/MS/LS: 18H 85/60/50, 9H 55/39/33."},
-  "Capdepera Golf": {"low":79,"peak":125,"dynamic":true,"licenceFee":0,"juniorAgeNote":"No junior green fee (junior membership only)."},
+  "Capdepera Golf": {"low":79,"peak":149,"dynamic":true,"licenceFee":0,"juniorAgeNote":"No junior green fee (junior membership only)."},
   "Club de Golf Alcanada": {"low":115,"peak":230,"dynamic":false,"licenceFee":3,"junior18HLow":60,"junior18HPeak":60,"junior9H":36,"juniorAgeMax":18,"juniorAgeNote":"Flat year-round, age-banded. 13-18 = 60/36; also 5-12 = 45/27, 19-24 = 100/60."},
   "Golf Club Son Servera": {"low":80,"peak":165,"dynamic":false,"licenceFee":0,"junior18HLow":65,"junior18HPeak":65,"juniorAgeMax":18,"juniorAgeNote":"Flat 65 every slot, every season. No 9H junior on the online engine."},
   "Golf de Andratx": {"low":95,"peak":170,"dynamic":true,"licenceFee":3,"juniorAgeNote":"No junior green fee (junior membership + range rate only)."},
