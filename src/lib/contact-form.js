@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { currentPagePath, trackEvent, trackLead } from './analytics'
+import { getLeadAttribution } from './lead-attribution'
 
 const INITIAL_FORM = {
   fname: '',
@@ -23,6 +24,13 @@ export function useContactFormSubmission(lang = 'en') {
   const [error, setError] = useState('')
   const [form, setForm] = useState(INITIAL_FORM)
   const [started, setStarted] = useState(false)
+
+  useEffect(() => {
+    const requestedService = new URLSearchParams(window.location.search).get('service')
+    if (['pwap', 'trip-planning', 'tee-time-booking', 'both'].includes(requestedService)) {
+      setForm((current) => ({ ...current, serviceType: requestedService, experience: requestedService }))
+    }
+  }, [])
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -48,10 +56,11 @@ export function useContactFormSubmission(lang = 'en') {
     setSubmitting(true)
 
     try {
+      const attribution = getLeadAttribution()
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, lang }),
+        body: JSON.stringify({ ...form, lang, attribution }),
       })
 
       const data = await response.json().catch(() => ({}))
@@ -68,6 +77,7 @@ export function useContactFormSubmission(lang = 'en') {
         experience: form.experience || form.pwapFormat || form.serviceType || 'not_specified',
         group_size: form.groupsize || 'not_specified',
         page_path: currentPagePath(),
+        ...attribution,
       })
       trackLead('contact_form', {
         form_name: 'contact',
@@ -77,6 +87,7 @@ export function useContactFormSubmission(lang = 'en') {
         experience: form.experience || form.pwapFormat || form.serviceType || 'not_specified',
         group_size: form.groupsize || 'not_specified',
         page_path: currentPagePath(),
+        ...attribution,
       })
       setSubmitted(true)
       setForm(INITIAL_FORM)

@@ -30,6 +30,16 @@ const EXPERIENCE_LABELS = {
   'pwap-not-sure': 'Play With A Pro - Not sure yet',
 }
 
+function cleanTrackingPath(value) {
+  const path = sanitizeText(value, 160)
+  return /^\/[a-z0-9/_-]*$/i.test(path) ? path : ''
+}
+
+function cleanTrackingValue(value, max = 80) {
+  const cleaned = sanitizeText(value, max)
+  return /^[\w .-]*$/.test(cleaned) ? cleaned : ''
+}
+
 function renderRow(label, value) {
   return `<tr><td style="padding:8px 0;border-bottom:1px solid #eee;color:#666;width:140px">${escapeHtml(label)}</td><td style="padding:8px 0;border-bottom:1px solid #eee">${escapeHtml(value)}</td></tr>`
 }
@@ -72,6 +82,13 @@ export async function POST(request) {
     const experience = sanitizeText(payload?.experience, 80)
     const message = sanitizeMultilineText(payload?.message, 4000)
     const lang = sanitizeText(payload?.lang, 12).toUpperCase() || 'EN'
+    const attribution = payload?.attribution || {}
+    const entryPage = cleanTrackingPath(attribution.entry_page)
+    const enquirySourcePage = cleanTrackingPath(attribution.enquiry_source_page)
+    const utmSource = cleanTrackingValue(attribution.utm_source)
+    const utmMedium = cleanTrackingValue(attribution.utm_medium)
+    const utmCampaign = cleanTrackingValue(attribution.utm_campaign)
+    const referrerHost = cleanTrackingValue(attribution.referrer_host, 120)
 
     if (!fname || !isValidEmail(email)) {
       return Response.json(
@@ -109,6 +126,12 @@ export async function POST(request) {
             ${renderRow('Play With A Pro format', (serviceType === 'pwap' || serviceType === 'both') ? pwapFormatLabel : 'Not applicable')}
             ${renderRow('Experience', experienceLabel)}
             ${renderRow('Language', lang)}
+            ${renderRow('Entry page', entryPage || 'Not recorded')}
+            ${renderRow('Page before enquiry', enquirySourcePage || 'Not recorded')}
+            ${renderRow('Campaign source', utmSource || 'Not recorded')}
+            ${renderRow('Campaign medium', utmMedium || 'Not recorded')}
+            ${renderRow('Campaign name', utmCampaign || 'Not recorded')}
+            ${renderRow('Referrer site', referrerHost || 'Not recorded')}
           </table>
           ${message ? `<div style="margin-top:24px"><p style="color:#666;margin-bottom:8px">Message:</p><p style="white-space:pre-wrap;background:#f7f4ef;padding:16px;border-radius:4px">${escapeHtml(message)}</p></div>` : ''}
           <p style="margin-top:32px;color:#999;font-size:12px">Reply directly to this email to respond to ${escapeHtml(fname)}.</p>

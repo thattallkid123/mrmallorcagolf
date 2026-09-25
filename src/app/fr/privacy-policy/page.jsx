@@ -29,7 +29,7 @@ export default function PrivacyPolicyFR() {
             <h2>2. Les données que nous collectons</h2>
             <p>Nous collectons des données personnelles uniquement lorsque vous nous les fournissez volontairement ou lorsque vous visitez notre site. Cela inclut :</p>
             <ul>
-              <li><strong>Formulaire de contact :</strong> votre nom, votre adresse e-mail, votre numéro de téléphone et tout message que vous nous envoyez</li>
+              <li><strong>Formulaire de contact :</strong> votre nom, votre adresse e-mail, le service choisi et, si vous les fournissez, les dates, la taille du groupe, le handicap et votre message. Nous enregistrons aussi la page du site et la campagne qui vous ont mené au formulaire, lorsqu&rsquo;elles sont disponibles.</li>
               <li><strong>Demandes par e-mail et WhatsApp :</strong> votre nom et vos coordonnées lorsque vous nous contactez directement</li>
               <li><strong>Course Selector et formulaires d&rsquo;inscription par e-mail :</strong> votre adresse e-mail et toute information facultative que vous choisissez de fournir en demandant des notes de planification ou un suivi de votre sélection</li>
               <li><strong>Données analytiques :</strong> données d&rsquo;usage anonymes collectées par Google Analytics (voir la section 5)</li>
@@ -68,6 +68,7 @@ export default function PrivacyPolicyFR() {
           <section className="legal-section">
             <h2>6. Cookies</h2>
             <p>Ce site utilise des cookies uniquement à des fins Google Analytics. Il s&rsquo;agit de cookies analytiques qui nous aident à comprendre l&rsquo;usage du site. Aucun cookie publicitaire ni pixel de suivi n&rsquo;est utilisé.</p>
+            <p>Pendant votre visite, le stockage de session conserve la page et la campagne qui vous ont conduit au formulaire. Ces données sont effacées à la fin de la session de l&rsquo;onglet du navigateur.</p>
             <p>La plupart des navigateurs vous permettent de refuser ou de supprimer les cookies. Cela ne vous empêchera pas d&rsquo;utiliser ce site, mais désactivera le suivi analytique.</p>
           </section>
 

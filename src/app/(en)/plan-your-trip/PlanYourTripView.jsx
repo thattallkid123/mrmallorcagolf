@@ -159,6 +159,18 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
             </div>
           ) : null}
 
+          {content.professional.bookingOnly ? (
+            <div className="pyt-booking-only">
+              <div>
+                <h3>{content.professional.bookingOnly.title}</h3>
+                <p>{content.professional.bookingOnly.body}</p>
+              </div>
+              <Link href={`${contactHref}?service=tee-time-booking`} className="pyt-booking-only__link">
+                {content.professional.bookingOnly.cta}
+              </Link>
+            </div>
+          ) : null}
+
           <div className="pyt-pro-cta">
             <p className="pyt-pro-cta__note">{content.professional.note}</p>
             {content.professional.feeNote ? (
@@ -171,7 +183,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                 {content.professional.sendPrompt}
               </p>
             ) : null}
-            <Link href={contactHref} className="pyt-pro-cta__btn">
+            <Link href={`${contactHref}?service=trip-planning`} className="pyt-pro-cta__btn">
               {content.professional.cta}
             </Link>
           </div>

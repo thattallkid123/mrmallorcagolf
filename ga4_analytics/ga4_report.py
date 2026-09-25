@@ -277,10 +277,66 @@ def report_contact_events(client, start_date, end_date):
         print(f"  {count:>6,}  {name}")
 
 
+def report_lead_funnel(client, start_date, end_date):
+    """Keep confirmed form enquiries separate from clicks and other intent signals."""
+    from google.analytics.data_v1beta.types import GetMetadataRequest
+
+    print_section("ENQUIRY FUNNEL")
+    response = run_report(
+        client,
+        dimensions=["eventName"],
+        metrics=["eventCount"],
+        start_date=start_date,
+        end_date=end_date,
+        limit=200,
+    )
+    counts = {r.dimension_values[0].value: int(r.metric_values[0].value) for r in response.rows}
+    for label, event in [
+        ("Contact forms started", "contact_form_start"),
+        ("Contact forms submitted", "contact_form_submit"),
+        ("Contact form errors", "contact_form_error"),
+        ("WhatsApp clicks (intent only)", "whatsapp_click"),
+        ("Email clicks (intent only)", "email_click"),
+    ]:
+        print(f"  {label}: {counts.get(event, 0):,}")
+    print("  A click is not a confirmed conversation or booking. Record those outcomes in the private Enquiry Tracker.")
+
+    metadata = client.get_metadata(GetMetadataRequest(name=f"properties/{PROPERTY_ID}/metadata"))
+    available = {dimension.api_name for dimension in metadata.dimensions}
+    needed = {"customEvent:service_type", "customEvent:entry_page", "customEvent:enquiry_source_page"}
+    missing = sorted(needed - available)
+    if missing:
+        print("  Service and page breakdown awaits GA4 event-scoped custom dimensions:")
+        for item in missing:
+            print(f"    {item.removeprefix('customEvent:')}")
+        return
+
+    for title, dimension in [
+        ("Submitted forms by service", "customEvent:service_type"),
+        ("Submitted forms by entry page", "customEvent:entry_page"),
+        ("Submitted forms by page before enquiry", "customEvent:enquiry_source_page"),
+        ("Submitted forms by session source", "sessionSourceMedium"),
+    ]:
+        grouped = run_report(
+            client,
+            dimensions=["eventName", dimension],
+            metrics=["eventCount"],
+            start_date=start_date,
+            end_date=end_date,
+            limit=500,
+        )
+        rows = [r for r in grouped.rows if r.dimension_values[0].value == "contact_form_submit"]
+        print(f"  {title}:")
+        for row in rows:
+            print(f"    {row.dimension_values[1].value}: {int(row.metric_values[0].value)}")
+        if not rows:
+            print("    No submitted forms with this dimension yet.")
+
+
 def main():
     parser = argparse.ArgumentParser(description="GA4 report for Mr Mallorca Golf")
     parser.add_argument("--days", type=int, default=30, help="Number of days to report on (default: 30)")
-    parser.add_argument("--report", choices=["all", "pages", "sources", "countries", "events", "search"],
+    parser.add_argument("--report", choices=["all", "pages", "sources", "countries", "events", "leads", "search"],
                         default="all", help="Which report to run")
     args = parser.parse_args()
 
@@ -309,6 +365,8 @@ def main():
         report_countries(client, start_date, end_date)
     if args.report in ("all", "events"):
         report_contact_events(client, start_date, end_date)
+    if args.report in ("all", "leads"):
+        report_lead_funnel(client, start_date, end_date)
     if args.report in ("all", "search"):
         report_search_terms(client, start_date, end_date)
 

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import { currentPageLocation, trackPageView } from '../lib/analytics'
+import { rememberPageVisit } from '../lib/lead-attribution'
 
 export default function PageViewTracker() {
   const pathname = usePathname()
@@ -10,6 +11,8 @@ export default function PageViewTracker() {
 
   useEffect(() => {
     if (!pathname) return
+
+    rememberPageVisit(pathname)
 
     if (isFirstRender.current) {
       isFirstRender.current = false

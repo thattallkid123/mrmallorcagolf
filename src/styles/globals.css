@@ -348,6 +348,44 @@
   opacity: 0.85;
 }
 
+.pyt-booking-only {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  margin-top: var(--space-8);
+  padding: var(--space-6);
+  border: 1px solid var(--sand);
+  background: var(--cream);
+}
+
+.pyt-booking-only > div {
+  flex: 1 1 340px;
+}
+
+.pyt-booking-only h3 {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+  color: var(--pine);
+}
+
+.pyt-booking-only p {
+  margin: 0;
+  max-width: 660px;
+  line-height: 1.6;
+  color: var(--charcoal);
+}
+
+.pyt-booking-only__link {
+  align-self: center;
+  color: var(--pine);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .pyt-pro-cta__btn {
   display: inline-block;
   background: var(--pine);

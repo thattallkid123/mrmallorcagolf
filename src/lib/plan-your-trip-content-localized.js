@@ -41,9 +41,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro disponible como añadido en cualquier momento"
       ],
       "note": "Sin compromiso al consultar. Le respondo personalmente en 24 horas con el siguiente paso recomendado y un presupuesto claro antes de reservar nada.",
-      "feeNote": "Se aplica una comisión de gestión del 5 % sobre green fees y reservas. Se confirma tras la primera conversación.",
+      "feeNote": "La gestión cuesta el 5 % de los green fees y extras acordados. Le mostraré el coste total y las condiciones antes de confirmar.",
       "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, handicap, zona de hotel y los campos que ya tenga pensados.",
       "cta": "Consultar sobre la planificación",
+      "bookingOnly": {
+        "title": "¿Solo necesita reservar el golf?",
+        "body": "Envíeme fechas, número de jugadores, handicap y zona del hotel. Recomendaré campos adecuados, comprobaré los tee times y le daré un presupuesto claro antes de reservar. Su grupo juega por su cuenta; no tengo que acompañarlos.",
+        "cta": "Consultar reservas de tee times"
+      },
       "possibilities": {
         "title": "Un viaje de golf puede ser sencillo o algo más completo.",
         "body": "Según el grupo, puedo construir los días alrededor del hotel, restaurantes, spa, rutas por la costa, bodegas, chef privado, clases extra o tiempo tranquilo entre rondas.",
@@ -131,9 +136,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro jederzeit als Zusatz möglich"
       ],
       "note": "Keine Verpflichtung bei der Anfrage. Ich antworte persönlich innerhalb von 24 Stunden mit dem empfohlenen nächsten Schritt und einem klaren Angebot, bevor irgendetwas gebucht wird.",
-      "feeNote": "5 % Verwaltungsgebühr auf Greenfees und Buchungen. Wird nach dem ersten Gespräch bestätigt.",
+      "feeNote": "Die Verwaltungsgebühr beträgt 5 % der Greenfees und vereinbarten Extras. Gesamtkosten und Buchungsbedingungen erhalten Sie vor der Zusage.",
       "sendPrompt": "Am besten senden: Daten, Gruppengröße, Handicap, Hotelregion und alle Plätze, die schon auf Ihrer Liste stehen.",
       "cta": "Reiseplanung anfragen",
+      "bookingOnly": {
+        "title": "Sie brauchen nur gebuchte Startzeiten?",
+        "body": "Senden Sie mir Reisedaten, Gruppengröße, Handicap und Hotelregion. Ich empfehle passende Plätze, prüfe verfügbare Startzeiten und sende ein klares Angebot, bevor ich buche. Ihre Gruppe spielt ohne mich.",
+        "cta": "Startzeiten anfragen"
+      },
       "possibilities": {
         "title": "Ein Golftrip kann einfach bleiben oder deutlich vollständiger werden.",
         "body": "Je nach Gruppe kann ich die Tage rund um Hotelwahl, Restaurants, Spa-Zeit, Küstenfahrten, Weinprobe, privaten Koch, zusätzliche Stunden oder ruhigere Erholung zwischen den Runden planen.",
@@ -221,9 +231,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro disponible en option à tout moment"
       ],
       "note": "Aucun engagement au stade de la demande. Je réponds personnellement sous 24 heures avec la prochaine étape recommandée et un devis clair avant toute réservation.",
-      "feeNote": "Frais de gestion de 5 % sur les green fees et les réservations. Confirmé après votre premier échange.",
+      "feeNote": "Les frais de gestion représentent 5 % des green fees et des suppléments convenus. Le coût total et les conditions sont indiqués avant confirmation.",
       "sendPrompt": "Idéalement : dates, taille du groupe, niveau, zone d’hotel et parcours déjà envisagés.",
       "cta": "Demander la planification",
+      "bookingOnly": {
+        "title": "Besoin seulement de réserver vos départs ?",
+        "body": "Envoyez-moi vos dates, le nombre de joueurs, les handicaps et la zone de votre hôtel. Je recommande les parcours adaptés, vérifie les départs et vous remets un devis clair avant toute réservation. Votre groupe joue sans moi.",
+        "cta": "Demander des départs"
+      },
       "possibilities": {
         "title": "Un séjour golf peut rester simple ou devenir plus complet.",
         "body": "Selon le groupe, je peux organiser les journées autour du choix de l’hôtel, des restaurants, du spa, de trajets côtiers, d’une dégustation de vin, d’un chef privé, de leçons supplémentaires ou de temps plus calme entre les parties.",
@@ -311,9 +326,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro als extra optie op elk moment"
       ],
       "note": "Geen verplichting bij aanvraag. Ik reageer persoonlijk binnen 24 uur met de aanbevolen volgende stap en een duidelijke prijsopgave voordat er iets wordt geboekt.",
-      "feeNote": "Er geldt een beheersfee van 5 % op greenfees en boekingen. Bevestigd na het eerste gesprek.",
+      "feeNote": "De beheervergoeding is 5 % van greenfees en afgesproken extra's. U krijgt de totale kosten en boekingsvoorwaarden voordat u akkoord gaat.",
       "sendPrompt": "Graag meesturen: data, groepsgrootte, handicap, hotelregio en banen die al op uw shortlist staan.",
       "cta": "Reisplanning aanvragen",
+      "bookingOnly": {
+        "title": "Alleen starttijden nodig?",
+        "body": "Stuur uw data, groepsgrootte, handicaps en hotelregio. Ik adviseer passende banen, controleer starttijden en stuur een duidelijke offerte voordat ik boek. Uw groep speelt zonder mij.",
+        "cta": "Starttijden aanvragen"
+      },
       "possibilities": {
         "title": "Een golfreis kan eenvoudig blijven, of vollediger worden.",
         "body": "Afhankelijk van de groep kan ik de dagen bouwen rond hotelkeuze, restaurants, spa, kustritten, wijnproeven, een privékok, extra lessen of rustigere hersteltijd tussen rondes.",
@@ -401,9 +421,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro som tillägg när som helst"
       ],
       "note": "Inget åtagande vid förfrågan. Jag svarar personligen inom 24 timmar med rekommenderat nästa steg och en tydlig offert innan något bokas.",
-      "feeNote": "5 % administrationsavgift tillkommer på greenfee och bokningar. Bekräftas efter ert första samtal.",
+      "feeNote": "Administrationsavgiften är 5 % av greenfee och överenskomna tillval. Ni får hela kostnaden och bokningsvillkoren innan ni bestämmer er.",
       "sendPrompt": "Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor ni redan funderar på.",
       "cta": "Fråga om reseplanering",
+      "bookingOnly": {
+        "title": "Behöver ni bara bokade starttider?",
+        "body": "Skicka datum, antal spelare, handicap och hotellområde. Jag föreslår lämpliga banor, kontrollerar lediga starttider och ger en tydlig offert före bokning. Gruppen spelar utan mig.",
+        "cta": "Fråga om starttider"
+      },
       "possibilities": {
         "title": "En golfresa kan vara enkel eller bli mer komplett.",
         "body": "Beroende på gruppen kan jag forma dagarna runt hotellval, restauranger, spa, kustvägar, vinprovning, privat kock, extra lektioner eller lugnare återhämtning mellan ronderna.",
@@ -491,9 +516,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "任何时候都可加购同场陪打服务"
       ],
       "note": "咨询阶段不涉及任何承诺。我会在24小时内亲自回复，给出建议的下一步和明确报价，之后才会预订任何内容。",
-      "feeNote": "果岭费和预订需收取 5% 管理费。第一次沟通后确认。",
+      "feeNote": "管理费为果岭费及约定附加项目的 5%。确认预订前，我会列明总费用和预订条款。",
       "sendPrompt": "最好一并发送：日期、人数、差点、酒店区域，以及已经看中的球场。",
       "cta": "咨询行程规划",
+      "bookingOnly": {
+        "title": "只需要我帮您订球场？",
+        "body": "告诉我日期、人数、差点和酒店区域。我会推荐合适的球场，查询开球时间，并在预订前给您清楚的报价。您和同伴自行下场，我无需陪同。",
+        "cta": "咨询开球时间预订"
+      },
       "possibilities": {
         "title": "一趟高尔夫旅行可以很简单，也可以安排得更完整。",
         "body": "根据同行的人，我可以把行程围绕酒店选择、餐厅、spa、海岸线自驾、酒庄品酒、私人厨师、额外课程，或两轮之间更安静的恢复时间来安排。",

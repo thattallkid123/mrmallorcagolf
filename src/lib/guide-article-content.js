@@ -7,7 +7,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'Mallorca Golf Green Fees 2026 (€55–€260)',
       description:
-        'A round in the Balearic Islands (Mallorca) costs €55–€260, most €90–€150. Cheapest Pollença (€55), priciest Son Muntaner (€260). Buggy €20.',
+        'Mallorca golf green fees run €55–€260 for full-size rounds; buggies cost €35–€48 extra. See the 2026 course-by-course budget.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€260, Club Hire & What to Budget',

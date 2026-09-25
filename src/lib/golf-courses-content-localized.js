@@ -57,7 +57,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Was kostet eine Runde Golf auf Mallorca?",
-          "a": "Die Greenfees reichen von rund 55 € im günstigen Bereich bis rund 250 € an der Spitze in der Hochsaison. Palma Pitch & Putt ist günstiger, aber das ist eine separate Kurzplatz-Option und keine typische Gästerunde. Die meisten Gästerunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 30 € bis 40 € zusätzlich."
+          "a": "Die Greenfees reichen von rund 55 € im günstigen Bereich bis rund 260 € an der Spitze in der Hochsaison. Palma Pitch & Putt ist günstiger, aber das ist eine separate Kurzplatz-Option und keine typische Gästerunde. Die meisten Gästerunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 35 € bis 48 € zusätzlich."
         },
         {
           "q": "Braucht man für Mallorca ein Handicap-Zertifikat?",
@@ -135,7 +135,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cuanto cuesta jugar al golf en Mallorca?",
-          "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 250 € en lo más alto en temporada alta. Palma Pitch & Putt es más barato, pero es una opción de campo corto independiente, no una vuelta de visitante tipica. La mayoria de las rondas de visitante se situan entre 85 € y 165 €. El buggy suele costar de 30 € a 40 € aparte."
+          "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 260 € en lo más alto en temporada alta. Palma Pitch & Putt es más barato, pero es una opción de campo corto independiente, no una vuelta de visitante tipica. La mayoria de las rondas de visitante se situan entre 85 € y 165 €. El buggy suele costar de 35 € a 48 € aparte."
         },
         {
           "q": "¿Hace falta certificado de handicap para jugar en Mallorca?",
@@ -212,7 +212,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Combien coute une partie de golf a Majorque ?",
-          "a": "Les green fees vont d environ 55 € dans la gamme accessible jusqu a environ 250 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c est une option de parcours court a part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coute generalement de 30 € a 40 € en plus."
+          "a": "Les green fees vont d environ 55 € dans la gamme accessible jusqu a environ 260 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c est une option de parcours court a part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coute generalement de 35 € a 48 € en plus."
         },
         {
           "q": "Faut-il un certificat de handicap pour jouer a Majorque ?",
@@ -288,7 +288,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Wat kost een rondje golf op Mallorca?",
-          "a": "De greenfees lopen van rond 55 € in het voordelige segment tot rond 250 € aan de top in het hoogseizoen. Palma Pitch & Putt is goedkoper, maar het is een aparte kortebaanoptie in plaats van een typische bezoekersronde. De meeste bezoekersrondes liggen tussen 85 € en 165 €. Een buggy kost meestal 30 € tot 40 € extra."
+          "a": "De greenfees lopen van rond 55 € in het voordelige segment tot rond 260 € aan de top in het hoogseizoen. Palma Pitch & Putt is goedkoper, maar het is een aparte kortebaanoptie in plaats van een typische bezoekersronde. De meeste bezoekersrondes liggen tussen 85 € en 165 €. Een buggy kost meestal 35 € tot 48 € extra."
         },
         {
           "q": "Heeft u een handicapbewijs nodig om op Mallorca te spelen?",
@@ -365,7 +365,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Vad kostar det att spela golf pa Mallorca?",
-          "a": "Greenfees gar från runt 55 € i den prisvarda delen upp till runt 250 € i toppen under hogsasong. Palma Pitch & Putt ar billigare, men det ar ett separat kortbanealternativ snarare an en typisk besoksrunda. De flesta besoksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 30 € till 40 € extra."
+          "a": "Greenfees gar från runt 55 € i den prisvarda delen upp till runt 260 € i toppen under hogsasong. Palma Pitch & Putt ar billigare, men det ar ett separat kortbanealternativ snarare an en typisk besoksrunda. De flesta besoksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 35 € till 48 € extra."
         },
         {
           "q": "Behover man ett handicapintyg for att spela pa Mallorca?",
@@ -444,7 +444,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "在马略卡打一场高尔夫要多少钱？",
-          "a": "果岭费从性价比端的约 55 欧元，到旺季高端的约 250 欧元不等。Palma Pitch & Putt 更便宜，但它是一个独立的短洞球场选项，并非典型的访客球场。大多数访客单场在 85 到 165 欧元之间，球车通常另加 30 到 40 欧元。"
+          "a": "果岭费从性价比端的约 55 欧元，到旺季高端的约 260 欧元不等。Palma Pitch & Putt 更便宜，但它是一个独立的短洞球场选项，并非典型的访客球场。大多数访客单场在 85 到 165 欧元之间，球车通常另加 35 到 48 欧元。"
         },
         {
           "q": "在马略卡打球需要差点证明吗？",

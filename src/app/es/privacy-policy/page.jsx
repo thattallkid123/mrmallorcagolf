@@ -27,7 +27,7 @@ export default function PrivacyPolicyES() {
             <h2>2. Datos que recopilamos</h2>
             <p>Recopilamos datos personales únicamente cuando tú los facilitas voluntariamente o cuando visitas nuestro sitio web. Estos datos incluyen:</p>
             <ul>
-              <li><strong>Formulario de contacto:</strong> tu nombre, dirección de correo electrónico, número de teléfono y el mensaje que nos envíes</li>
+              <li><strong>Formulario de contacto:</strong> tu nombre, correo electrónico, servicio elegido y, si los facilitas, fechas, tamaño del grupo, hándicap y mensaje. También registramos la página y campaña que te llevaron al formulario, cuando estén disponibles.</li>
               <li><strong>Consultas por correo electrónico y WhatsApp:</strong> tu nombre y datos de contacto cuando te comunicas con nosotros directamente</li>
               <li><strong>Course Selector y formularios de email:</strong> tu dirección de correo y cualquier dato opcional que facilites al pedir resultados o notas de planificación</li>
               <li><strong>Datos analíticos:</strong> datos de uso anónimos recopilados por Google Analytics (véase la sección 5)</li>
@@ -66,6 +66,7 @@ export default function PrivacyPolicyES() {
           <section className="legal-section">
             <h2>6. Cookies</h2>
             <p>Este sitio web utiliza cookies exclusivamente con fines de Google Analytics. Son cookies analíticas que nos ayudan a entender cómo se usa el sitio. No se utilizan cookies publicitarias ni pixeles de seguimiento.</p>
+            <p>Durante la visita, el almacenamiento de sesión recuerda la página y campaña que te llevaron a la consulta. Estos datos se borran al terminar la sesión de la pestaña del navegador.</p>
             <p>La mayoría de los navegadores te permiten rechazar o eliminar las cookies. Hacerlo no impedirá que uses este sitio web, pero desactivará el seguimiento analítico.</p>
           </section>
 

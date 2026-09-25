@@ -29,7 +29,7 @@ export default function PrivacyPolicyDE() {
             <h2>2. Welche Daten wir erheben</h2>
             <p>Wir erheben personenbezogene Daten nur, wenn Sie sie uns freiwillig zur Verfügung stellen oder wenn Sie unsere Website besuchen. Dazu gehören:</p>
             <ul>
-              <li><strong>Kontaktformular:</strong> Ihr Name, Ihre E-Mail-Adresse, Ihre Telefonnummer und jede Nachricht, die Sie uns senden</li>
+              <li><strong>Kontaktformular:</strong> Ihr Name, Ihre E-Mail-Adresse, gewählter Service sowie gegebenenfalls Reisedaten, Gruppengröße, Handicap und Nachricht. Soweit verfügbar erfassen wir auch die Website-Seite und Kampagne, über die Sie zum Formular kamen.</li>
               <li><strong>Anfragen per E-Mail und WhatsApp:</strong> Ihr Name und Ihre Kontaktdaten, wenn Sie sich direkt an uns wenden</li>
               <li><strong>Course Selector und E-Mail-Anmeldeformulare:</strong> Ihre E-Mail-Adresse und alle optionalen Angaben, die Sie beim Anfordern von Planungsnotizen oder Ergebnis-Follow-ups machen</li>
               <li><strong>Analysedaten:</strong> anonyme Nutzungsdaten, die von Google Analytics erhoben werden (siehe Abschnitt 5)</li>
@@ -68,6 +68,7 @@ export default function PrivacyPolicyDE() {
           <section className="legal-section">
             <h2>6. Cookies</h2>
             <p>Diese Website verwendet Cookies ausschließlich für Google-Analytics-Zwecke. Es handelt sich um Analyse-Cookies, die uns helfen zu verstehen, wie die Website genutzt wird. Es werden keine Werbe-Cookies oder Tracking-Pixel eingesetzt.</p>
+            <p>Während Ihres Besuchs merkt sich der Sitzungsspeicher die Seite und Kampagne, die zu Ihrer Anfrage geführt haben. Diese Daten werden beim Ende der Browser-Tab-Sitzung gelöscht.</p>
             <p>Die meisten Browser erlauben es Ihnen, Cookies abzulehnen oder zu löschen. Dies hindert Sie nicht an der Nutzung dieser Website, deaktiviert aber die Analyse-Erfassung.</p>
           </section>
 

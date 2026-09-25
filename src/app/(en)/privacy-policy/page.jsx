@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
             <h2>2. What Data We Collect</h2>
             <p>We collect personal data only when you voluntarily provide it or when you visit our website. This includes:</p>
             <ul>
-              <li><strong>Contact form submissions:</strong> your name, email address, phone number, and any message you send us</li>
+              <li><strong>Contact form submissions:</strong> your name, email address, chosen service, dates, group size, handicap and message where provided. We also record the site page and campaign that led to the form, when available.</li>
               <li><strong>Email and WhatsApp enquiries:</strong> your name and contact details when you reach out directly</li>
               <li><strong>Course Selector and email signup forms:</strong> your email address, and any optional information you choose to provide when requesting planning notes or shortlist follow-ups</li>
               <li><strong>Analytics data:</strong> anonymous usage data collected by Google Analytics (see Section 5)</li>
@@ -68,6 +68,7 @@ export default function PrivacyPolicy() {
           <section className="legal-section">
             <h2>6. Cookies</h2>
             <p>This website uses cookies solely for Google Analytics purposes. These are analytics cookies that help us understand how the site is used. No advertising cookies or tracking pixels are used.</p>
+            <p>During your visit, session storage remembers the page and campaign that led you to an enquiry. It clears when the browser tab session ends.</p>
             <p>Most browsers allow you to refuse or delete cookies. Doing so will not prevent you from using this website, but will disable analytics tracking.</p>
           </section>
 

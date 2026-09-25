@@ -95,7 +95,7 @@ function renderStars(value) {
   )
 }
 
-function renderBlock(block, index, locale, imageOrdinal) {
+function renderBlock(block, index, locale, imageOrdinal, articleSlug) {
   if (block.type === 'paragraph') {
     return <p key={`${index}-${block.text.slice(0, 24)}`}><InlineRichText text={block.text} locale={locale} /></p>
   }
@@ -248,7 +248,11 @@ function renderBlock(block, index, locale, imageOrdinal) {
             <a href={href} className="post-cta__button">{block.linkLabel}</a>
           )}
         </div>
-        {locale === 'en' && block.href === '/play-with-a-pro' ? (
+        {locale === 'en' && block.href === '/play-with-a-pro' && ['best-golf-courses-mallorca', 'golf-cost-mallorca'].includes(articleSlug) ? (
+          <p className="post-cta__secondary">
+            Playing with your own group? <Link href="/contact?service=tee-time-booking" className="post-cta__secondary-link">Ask me to choose and book the tee times</Link>. I will quote before confirming anything.
+          </p>
+        ) : locale === 'en' && block.href === '/play-with-a-pro' ? (
           <p className="post-cta__secondary">
             If you are still choosing courses or trying to shape the trip first, <Link href={buildLocalePath('/contact', locale)} className="post-cta__secondary-link">send Andy the details</Link> and he will narrow it down for you.
           </p>
@@ -398,7 +402,7 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
         <PostLayout meta={meta} lang={locale}>
           {blocks.map((block, index) => {
             const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
-            const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal)
+            const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal, meta.slug)
 
             if (locale === 'en' && index === 4) {
               return (

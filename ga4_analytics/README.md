@@ -44,7 +44,23 @@ python ga4_analytics/ga4_report.py --report pages
 python ga4_analytics/ga4_report.py --report sources
 python ga4_analytics/ga4_report.py --report countries
 python ga4_analytics/ga4_report.py --report events
+python ga4_analytics/ga4_report.py --report leads
 ```
+
+`--report leads` separates confirmed contact form submissions from WhatsApp and
+email clicks. Its service, entry-page and pre-enquiry-page breakdowns need three
+event-scoped custom dimensions in GA4. A user with Analytics edit access can
+register them once:
+
+```
+python ga4_analytics/ga4_register_dimensions.py --authorize
+# Open the printed Google link on this computer and approve access.
+python ga4_analytics/ga4_register_dimensions.py --register
+```
+
+The setup is safe to rerun: existing dimensions are left in place. The edit
+token is saved separately from the reporting token. Custom dimensions report
+new events after registration; they do not restore past parameter values.
 
 ## What it reports
 
@@ -53,9 +69,11 @@ python ga4_analytics/ga4_report.py --report events
 - **Traffic sources** — organic, direct, referral, social breakdown
 - **Countries** — where visitors are coming from
 - **Contact events** — form submits and conversion events
+- **Enquiry funnel** — confirmed form submissions, click intent, and offer/source breakdown
 
 ## Files (none committed to git)
 
 - `ga4_oauth_client.json` — OAuth client secret from Google Cloud
 - `ga4_token.json` — saved login token (auto-refreshes)
+- `ga4_admin_token.json` — separate Analytics edit token for dimension setup
 - `ga4_credentials.json` — old service account key, can be deleted
