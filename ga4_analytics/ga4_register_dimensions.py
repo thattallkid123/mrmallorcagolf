@@ -29,6 +29,7 @@ def authorize():
     credentials = flow.run_local_server(
         host="127.0.0.1",
         port=9187,
+        timeout_seconds=3600,
         open_browser=False,
         authorization_prompt_message="Open this Google authorization URL on this computer:\n{url}\n",
         success_message="Analytics access granted. You can close this tab.",
