@@ -10,7 +10,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "es": {
     "heroEyebrow": "Planifique su viaje de golf en Mallorca",
     "heroTitle": "Empiece por los campos. Yo me encargo de construir el viaje bien.",
-    "heroBody": "La herramienta gratuita es un punto de partida sencillo. Le ayuda a ver qué campos de Mallorca podrían encajar con su grupo. El servicio profesional es donde se construye el viaje de verdad: base, ruta, número de vueltas, tee times, buggies, alquiler de palos y todo lo demás alrededor del golf.",
+    "heroBody": "Elijo y reservo los campos y tee times para su grupo, y organizo buggies y palos antes de su llegada. Ustedes juegan sin que yo tenga que acompañarlos. Si quieren pasar un día conmigo en el campo, pueden añadir Play With A Pro.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Buscador gratuito de campos",
@@ -100,7 +100,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "de": {
     "heroEyebrow": "Planen Sie Ihren Mallorca-Golftrip",
     "heroTitle": "Starten Sie mit den Plätzen. Ich plane den Trip sauber zu Ende.",
-    "heroBody": "Das kostenlose Tool ist ein einfacher Startpunkt. Es zeigt Ihnen, welche Plätze zu Ihrer Gruppe passen könnten. Der professionelle Planungsservice ist der Teil, in dem der eigentliche Trip entsteht: Basis, Route, Rundenzahl, Startzeiten, Buggys, Leihschläger und alles rund um das Golfen.",
+    "heroBody": "Ich wähle die passenden Plätze und buche die Startzeiten für Ihre Gruppe. Buggys und Leihschläger organisiere ich vor Ihrer Anreise. Sie spielen Ihre Runden ohne mich; wenn Sie einen Tag gemeinsam spielen möchten, können Sie Play With A Pro hinzufügen.",
     "options": {
       "basicLabel": "Kostenlos",
       "basicTitle": "Kostenloser Platzfinder",
@@ -190,7 +190,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "fr": {
     "heroEyebrow": "Planifiez votre séjour golf à Majorque",
     "heroTitle": "Commencez par les parcours. Je construis le voyage correctement.",
-    "heroBody": "L’outil gratuit est un point de départ simple. Il vous aide à voir quels parcours de Majorque pourraient convenir à votre groupe. Le service de planification professionnel est l’endroit où le vrai voyage se construit : base, itinéraire, nombre de parties, heures de départ, buggys, location de clubs et tout ce qui entoure le golf.",
+    "heroBody": "Je choisis et réserve les parcours et les départs pour votre groupe, avec voiturettes et clubs de location organisés avant votre arrivée. Vous jouez vos parties sans que je vous accompagne. Si vous souhaitez une journée ensemble sur le parcours, ajoutez Play With A Pro.",
     "options": {
       "basicLabel": "Gratuit",
       "basicTitle": "Sélection gratuite de parcours",
@@ -280,7 +280,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "nl": {
     "heroEyebrow": "Plan uw golfreis naar Mallorca",
     "heroTitle": "Begin bij de banen. Ik bouw de reis netjes voor u op.",
-    "heroBody": "De gratis tool is een eenvoudig startpunt. U ziet welke banen op Mallorca mogelijk passen bij uw groep. De professionele planningsdienst is waar de echte reis wordt gebouwd: basis, route, aantal rondes, starttijden, buggy’s, clubhuur en alles rondom de golf.",
+    "heroBody": "Ik kies en boek de banen en starttijden voor uw groep en regel buggy's en huurclubs vóór uw aankomst. U speelt de rondes zonder dat ik meega. Wilt u een dag samen op de baan spelen, dan kunt u Play With A Pro toevoegen.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banenzoeker",
@@ -370,7 +370,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "sv": {
     "heroEyebrow": "Planera din golfresa till Mallorca",
     "heroTitle": "Börja med banorna. Jag bygger resan ordentligt.",
-    "heroBody": "Det fria verktyget är en enkel startpunkt. Det hjälper dig att se vilka banor på Mallorca som kan passa din grupp. Den professionella planeringstjänsten är där den riktiga resan byggs: bas, rutt, antal rundor, starttider, golfbilar, klubbor och allt runt golfen.",
+    "heroBody": "Jag väljer och bokar banor och starttider för din grupp och ordnar golfbilar och hyrklubbor före ankomst. Ni spelar rundorna utan att jag följer med. Vill ni spela en dag tillsammans med mig kan ni lägga till Play With A Pro.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banfinder",
@@ -460,7 +460,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "zh": {
     "heroEyebrow": "规划您的马略卡高尔夫之旅",
     "heroTitle": "先从球场开始。我来把行程认真搭好。",
-    "heroBody": "免费工具只是一个简单起点。它能帮助您看看马略卡哪些球场可能适合您的团队。专业行程规划服务才是把真正的旅程搭起来的地方：住宿基点、路线、轮次数量、开球时间、球车、球杆租赁，以及所有与高尔夫相关的细节。",
+    "heroBody": "我会为您的团队挑选并预订球场和开球时间，提前安排球车和租赁球杆。您可以自行下场，我不需要陪同。如果想和我一起打一整天，可以加上 Play With A Pro。",
     "options": {
       "basicLabel": "免费",
       "basicTitle": "免费球场筛选",

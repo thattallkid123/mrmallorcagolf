@@ -106,11 +106,11 @@ export const COURSE_SELECTOR_T = {
     },
     results: {
       eyebrow: 'Your Matches',
-      h2: 'Your three courses',
+      h2: 'Your course shortlist',
       intro: (style, area) => {
         const styleMap = { luxury: 'luxury', scenic: 'scenic', relaxed: 'relaxed', serious: 'serious golf', family: 'family-friendly', 'bucket-list': 'bucket list' }
         const areaStr = area === 'flexible' ? 'anywhere on the island' : `the ${area === 'North' ? 'north and east' : area} area`
-        return `Three courses matched to your game, a ${styleMap[style] || ''} trip, and ${areaStr}. Green fees are peak/low season indications. Andy confirms exact rates when booking.`
+        return `Courses matched to your game, a ${styleMap[style] || ''} trip, and ${areaStr}. The shortlist only shows publicly bookable courses, and beginner results do not require a handicap certificate. Green fees are seasonal indications; Andy confirms exact rates when booking.`
       },
       ranks: ['#1 Match', '#2 Match', '#3 Match'],
       bestFor: 'Best for:',
@@ -127,11 +127,11 @@ export const COURSE_SELECTOR_T = {
       coachingCta: 'Explore Play With A Pro with Andy',
       email: {
         eyebrow: 'Keep your shortlist',
-        h2: 'Email yourself these three courses',
+        h2: 'Email yourself this shortlist',
         p: "We'll send the full breakdown: difficulty, green fees, walkability and Andy's note on each, so you can compare with your group before committing to anything.",
-        button: 'Send me my 3 courses',
+        button: 'Send me my shortlist',
         sending: 'Sending…',
-        sent: 'Done. Your three courses are on their way.',
+        sent: 'Done. Your shortlist is on its way.',
         pdfLabel: 'Also free: the Course Comparison PDF.',
         pdfDesc: 'All 24 courses on the island, rated side by side for green fees, difficulty and best-for.',
         pdfButton: 'Download free PDF',
@@ -278,11 +278,11 @@ export const COURSE_SELECTOR_T = {
     },
     results: {
       eyebrow: 'Ihre Empfehlungen',
-      h2: 'Ihre drei Plätze',
+      h2: 'Ihre Platzauswahl',
       intro: (style, area) => {
         const styleMap = { luxury: 'Luxus', scenic: 'landschaftliche', relaxed: 'entspannte', serious: 'ernsthaften Golf', family: 'familienfreundliche', 'bucket-list': 'Bucket-List' }
         const areaStr = area === 'flexible' ? 'überall auf der Insel' : `der ${area === 'North' ? 'Nord- und Ostregion' : area === 'Southwest' ? 'Südwestregion' : area === 'Palma' ? 'Region Palma' : 'Südregion'}`
-        return `Drei Plätze passend zu Ihrem Spiel, einer ${styleMap[style] || ''}-Reise und ${areaStr}. Green Fees sind Saisonhinweise. Andy bestätigt genaue Preise beim Buchen.`
+        return `Plätze passend zu Ihrem Spiel, einer ${styleMap[style] || ''}-Reise und ${areaStr}. Die Auswahl enthält nur öffentlich buchbare Plätze; für Anfänger ist kein Handicap-Ausweis nötig. Green Fees sind Saisonhinweise. Andy bestätigt genaue Preise beim Buchen.`
       },
       ranks: ['#1 Empfehlung', '#2 Empfehlung', '#3 Empfehlung'],
       bestFor: 'Am besten für:',
@@ -299,11 +299,11 @@ export const COURSE_SELECTOR_T = {
       coachingCta: 'Play With A Pro mit Andy entdecken',
       email: {
         eyebrow: 'Ihre Auswahl sichern',
-        h2: 'Senden Sie sich diese drei Plätze per E-Mail',
+        h2: 'Senden Sie sich Ihre Platzauswahl per E-Mail',
         p: 'Wir schicken Ihnen die vollständige Übersicht: Schwierigkeit, Green Fees, Begehbarkeit und Andys Anmerkung zu jedem Platz.',
-        button: 'Meine 3 Plätze senden',
+        button: 'Meine Auswahl senden',
         sending: 'Wird gesendet…',
-        sent: 'Erledigt. Ihre drei Plätze sind unterwegs.',
+        sent: 'Erledigt. Ihre Auswahl ist unterwegs.',
         pdfLabel: 'Auch kostenlos: das Platzvergleichs-PDF.',
         pdfDesc: 'Alle 24 Plätze der Insel, direkt verglichen nach Greenfee, Schwierigkeit und Eignung.',
         pdfButton: 'PDF kostenlos herunterladen',
@@ -450,11 +450,11 @@ export const COURSE_SELECTOR_T = {
     },
     results: {
       eyebrow: 'Vos correspondances',
-      h2: 'Vos trois parcours',
+      h2: 'Votre sélection de parcours',
       intro: (style, area) => {
         const styleMap = { luxury: 'de luxe', scenic: 'panoramique', relaxed: 'détendu', serious: 'sérieux', family: 'familial', 'bucket-list': 'bucket list' }
         const areaStr = area === 'flexible' ? "partout sur l'île" : `la région ${area === 'North' ? 'nord et est' : area === 'Southwest' ? 'sud-ouest' : area === 'Palma' ? 'de Palma' : 'sud'}`
-        return `Trois parcours adaptés à votre jeu, un voyage ${styleMap[style] || ''} et ${areaStr}. Les green fees sont des indications saisonnières. Andy confirme les tarifs exacts à la réservation.`
+        return `Des parcours adaptés à votre jeu, un voyage ${styleMap[style] || ''} et ${areaStr}. La sélection ne montre que les parcours ouverts à la réservation; les résultats pour débutants ne demandent pas de certificat de handicap. Andy confirme les tarifs exacts à la réservation.`
       },
       ranks: ['#1 Correspondance', '#2 Correspondance', '#3 Correspondance'],
       bestFor: 'Idéal pour:',
@@ -471,11 +471,11 @@ export const COURSE_SELECTOR_T = {
       coachingCta: 'Découvrir Play With A Pro avec Andy',
       email: {
         eyebrow: 'Gardez votre sélection',
-        h2: 'Envoyez-vous ces trois parcours par e-mail',
+        h2: 'Recevez votre sélection par e-mail',
         p: "Nous vous enverrons le détail complet: difficulté, green fees, praticabilité à pied et la note d'Andy sur chacun.",
-        button: 'Envoyez-moi mes 3 parcours',
+        button: 'Envoyer ma sélection',
         sending: 'Envoi en cours…',
-        sent: 'Fait. Vos trois parcours sont en route.',
+        sent: 'Fait. Votre sélection est en route.',
         pdfLabel: 'Aussi gratuit: le PDF de comparaison des parcours.',
         pdfDesc: "Les 24 parcours de l'île, comparés côte à côte selon le green fee, la difficulté et le profil de joueur.",
         pdfButton: 'Télécharger le PDF gratuit',
@@ -622,11 +622,11 @@ export const COURSE_SELECTOR_T = {
     },
     results: {
       eyebrow: 'Tus coincidencias',
-      h2: 'Tus tres campos',
+      h2: 'Tu selección de campos',
       intro: (style, area) => {
         const styleMap = { luxury: 'de lujo', scenic: 'paisajístico', relaxed: 'relajado', serious: 'de golf serio', family: 'familiar', 'bucket-list': 'de lista de deseos' }
         const areaStr = area === 'flexible' ? 'en cualquier lugar de la isla' : `la zona ${area === 'North' ? 'norte y este' : area === 'Southwest' ? 'suroeste' : area === 'Palma' ? 'de Palma' : 'sur'}`
-        return `Tres campos adaptados a tu juego, un viaje ${styleMap[style] || ''} y ${areaStr}. Las green fees son indicaciones de temporada. Andy confirma las tarifas exactas al reservar.`
+        return `Campos adaptados a tu juego, un viaje ${styleMap[style] || ''} y ${areaStr}. La selección solo muestra campos con reserva pública; para principiantes no exige certificado de hándicap. Las green fees son orientativas y Andy confirma la tarifa al reservar.`
       },
       ranks: ['#1 Coincidencia', '#2 Coincidencia', '#3 Coincidencia'],
       bestFor: 'Ideal para:',
@@ -643,11 +643,11 @@ export const COURSE_SELECTOR_T = {
       coachingCta: 'Descubrir Play With A Pro con Andy',
       email: {
         eyebrow: 'Guarda tu selección',
-        h2: 'Envíate estos tres campos por correo',
+        h2: 'Recibe tu selección por correo',
         p: 'Te enviaremos el desglose completo: dificultad, green fees, transitabilidad y la nota de Andy sobre cada uno.',
-        button: 'Enviarme mis 3 campos',
+        button: 'Enviarme mi selección',
         sending: 'Enviando…',
-        sent: 'Listo. Tus tres campos están en camino.',
+        sent: 'Listo. Tu selección está en camino.',
         pdfLabel: 'También gratis: el PDF de comparación de campos.',
         pdfDesc: 'Los 24 campos de la isla, comparados uno al lado del otro por green fee, dificultad y para quién es cada uno.',
         pdfButton: 'Descargar PDF gratis',
@@ -794,11 +794,11 @@ export const COURSE_SELECTOR_T = {
     },
     results: {
       eyebrow: 'Jouw matches',
-      h2: 'Jouw drie banen',
+      h2: 'Jouw selectie van banen',
       intro: (style, area) => {
         const styleMap = { luxury: 'luxe', scenic: 'schilderachtige', relaxed: 'ontspannen', serious: 'serieuze golf', family: 'gezinsvriendelijke', 'bucket-list': 'bucket list' }
         const areaStr = area === 'flexible' ? 'overal op het eiland' : `de ${area === 'North' ? 'noord- en oostregio' : area === 'Southwest' ? 'zuidwestregio' : area === 'Palma' ? 'regio Palma' : 'zuidregio'}`
-        return `Drie banen afgestemd op jouw spel, een ${styleMap[style] || ''} reis en ${areaStr}. Greenfees zijn seizoensaanduidingen. Andy bevestigt exacte tarieven bij boeking.`
+        return `Banen afgestemd op jouw spel, een ${styleMap[style] || ''} reis en ${areaStr}. De selectie bevat alleen openbaar te boeken banen; beginners hebben voor deze resultaten geen handicapcertificaat nodig. Greenfees zijn seizoensaanduidingen. Andy bevestigt de tarieven bij boeking.`
       },
       ranks: ['#1 Match', '#2 Match', '#3 Match'],
       bestFor: 'Ideaal voor:',
@@ -815,11 +815,11 @@ export const COURSE_SELECTOR_T = {
       coachingCta: 'Play With A Pro met Andy ontdekken',
       email: {
         eyebrow: 'Bewaar jouw selectie',
-        h2: 'Stuur jezelf deze drie banen per e-mail',
+        h2: 'Mail jezelf deze selectie',
         p: "We sturen je de volledige uitsplitsing: moeilijkheid, greenfees, loopbaarheid en Andy's opmerking over elke baan.",
-        button: 'Stuur me mijn 3 banen',
+        button: 'Stuur mijn selectie',
         sending: 'Verzenden…',
-        sent: 'Klaar. Jouw drie banen zijn onderweg.',
+        sent: 'Klaar. Jouw selectie is onderweg.',
         pdfLabel: 'Ook gratis: de baan-vergelijkings-PDF.',
         pdfDesc: 'Alle 24 banen van het eiland, naast elkaar beoordeeld op greenfee, moeilijkheid en voor wie ze geschikt zijn.',
         pdfButton: 'Gratis PDF downloaden',
@@ -966,11 +966,11 @@ export const COURSE_SELECTOR_T = {
     },
     results: {
       eyebrow: 'Dina träffar',
-      h2: 'Dina tre banor',
+      h2: 'Ditt urval av banor',
       intro: (style, area) => {
         const styleMap = { luxury: 'lyx', scenic: 'naturskön', relaxed: 'avslappnad', serious: 'seriöst golf', family: 'familjevänlig', 'bucket-list': 'bucket list' }
         const areaStr = area === 'flexible' ? 'var som helst på ön' : `${area === 'North' ? 'norr och öst' : area === 'Southwest' ? 'sydväst' : area === 'Palma' ? 'Palma' : 'söder'}-regionen`
-        return `Tre banor anpassade till ditt spel, en ${styleMap[style] || ''} resa och ${areaStr}. Green fees är säsongsindikationer. Andy bekräftar exakta priser vid bokning.`
+        return `Banor anpassade till ditt spel, en ${styleMap[style] || ''} resa och ${areaStr}. Urvalet visar bara banor som kan bokas offentligt; nybörjare behöver inget handicapintyg för dessa resultat. Green fees är säsongsindikationer. Andy bekräftar priserna vid bokning.`
       },
       ranks: ['#1 Träff', '#2 Träff', '#3 Träff'],
       bestFor: 'Bäst för:',
@@ -987,11 +987,11 @@ export const COURSE_SELECTOR_T = {
       coachingCta: 'Upptäck Play With A Pro med Andy',
       email: {
         eyebrow: 'Spara din lista',
-        h2: 'Skicka dessa tre banor till dig via e-post',
+        h2: 'Skicka urvalet till din e-post',
         p: 'Vi skickar den fullständiga genomgången: svårighet, green fees, gångbarhet och Andys notering om varje bana.',
-        button: 'Skicka mina 3 banor',
+        button: 'Skicka mitt urval',
         sending: 'Skickar…',
-        sent: 'Klart. Dina tre banor är på väg.',
+        sent: 'Klart. Ditt urval är på väg.',
         pdfLabel: 'Också gratis: jämförelse-PDF:en.',
         pdfDesc: 'Alla 24 banor på ön, jämförda sida vid sida på greenfee, svårighet och vem de passar.',
         pdfButton: 'Ladda ner gratis PDF',

@@ -7,7 +7,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "hero": {
       "eyebrow": "Ponerse en contacto",
       "title": "Cuénteme sus planes de golf en Mallorca.",
-      "intro": "Play With A Pro, planificación del viaje, o ambos. Si ya tiene fechas, campos o un plan aproximado, envíemelo. Si todavía está decidiendo, le ayudaré a encontrar el siguiente paso adecuado."
+      "intro": "Play With A Pro, planificación del viaje o reserva de tee times. Si ya tiene fechas, campos o un plan aproximado, envíemelo. Le ayudaré a encontrar el siguiente paso adecuado."
     },
     "cards": {
       "emailLabel": "Correo electrónico",
@@ -41,6 +41,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Planificar mi viaje de golf"],
+        ["tee-time-booking", "Reservar tee times para mi grupo"],
         ["both", "Ambos"],
         ["not-sure", "Aún no lo sé"]
       ],
@@ -127,7 +128,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "hero": {
       "eyebrow": "Kontakt",
       "title": "Erzählen Sie mir von Ihren Mallorca-Golfplänen.",
-      "intro": "Play With A Pro, Reiseplanung oder beides. Wenn Sie schon Daten, Plätze oder einen groben Plan haben, schicken Sie ihn mir. Wenn Sie noch unentschlossen sind, helfe ich Ihnen, den richtigen nächsten Schritt zu finden."
+      "intro": "Play With A Pro, Reiseplanung oder die Buchung von Startzeiten. Wenn Sie schon Daten, Plätze oder einen groben Plan haben, schicken Sie ihn mir. Ich helfe Ihnen beim nächsten Schritt."
     },
     "cards": {
       "emailLabel": "E-Mail",
@@ -161,6 +162,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Meine Golfreise planen"],
+        ["tee-time-booking", "Startzeiten für meine Gruppe buchen"],
         ["both", "Beides"],
         ["not-sure", "Noch nicht sicher"]
       ],
@@ -247,7 +249,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "hero": {
       "eyebrow": "Prendre contact",
       "title": "Parlez-moi de vos projets de golf à Majorque.",
-      "intro": "Play With A Pro, planification du voyage, ou les deux. Si vous avez déjà des dates, des parcours ou un plan approximatif, envoyez-le-moi. Si vous êtes encore en train de décider, je vous aiderai à trouver la bonne prochaine étape."
+      "intro": "Play With A Pro, planification du voyage ou réservation des départs. Si vous avez déjà des dates, des parcours ou un plan approximatif, envoyez-le-moi. Je vous aiderai à choisir la prochaine étape."
     },
     "cards": {
       "emailLabel": "E-mail",
@@ -281,6 +283,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Planifier mon voyage de golf"],
+        ["tee-time-booking", "Réserver des départs pour mon groupe"],
         ["both", "Les deux"],
         ["not-sure", "Je ne suis pas sûr"]
       ],
@@ -367,7 +370,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "hero": {
       "eyebrow": "Neem contact op",
       "title": "Vertel me over uw golfplannen voor Mallorca.",
-      "intro": "Play With A Pro, reisplanning, of allebei. Als u al data, banen of een ruw plan heeft, stuur het gerust. Bent u nog aan het beslissen, dan help ik u de juiste volgende stap te vinden."
+      "intro": "Play With A Pro, reisplanning of het boeken van starttijden. Heeft u al data, banen of een ruw plan, stuur het gerust. Ik help u met de volgende stap."
     },
     "cards": {
       "emailLabel": "E-mail",
@@ -401,6 +404,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Mijn golfreis plannen"],
+        ["tee-time-booking", "Starttijden voor mijn groep boeken"],
         ["both", "Beide"],
         ["not-sure", "Ik weet het nog niet"]
       ],
@@ -487,7 +491,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "hero": {
       "eyebrow": "Hör av dig",
       "title": "Berätta om dina golfplaner för Mallorca.",
-      "intro": "Play With A Pro, reseplanering eller båda. Har du redan datum, banor eller en grov plan, skicka den till mig. Är du fortfarande osäker hjälper jag dig hitta rätt nästa steg."
+      "intro": "Play With A Pro, reseplanering eller bokning av starttider. Har du redan datum, banor eller en grov plan, skicka den till mig. Jag hjälper dig med nästa steg."
     },
     "cards": {
       "emailLabel": "E-post",
@@ -521,6 +525,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Planera min golfresa"],
+        ["tee-time-booking", "Boka starttider för min grupp"],
         ["both", "Båda"],
         ["not-sure", "Jag är osäker"]
       ],
@@ -607,7 +612,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     "hero": {
       "eyebrow": "联系我",
       "title": "告诉我您在马略卡的高尔夫计划。",
-      "intro": "陪打体验、行程规划，或两者都要。如果您已经有日期、球场或大致的计划，直接发给我。如果您还在考虑，我会帮您理清合适的下一步。"
+      "intro": "您可以咨询 Play With A Pro、行程规划或开球时间预订。如果已有日期、球场或大致计划，直接发给我。我会帮您确定下一步。"
     },
     "cards": {
       "emailLabel": "电子邮箱",
@@ -644,6 +649,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "规划我的高尔夫之旅"],
+        ["tee-time-booking", "为我的团队预订开球时间"],
         ["both", "两种都想"],
         ["not-sure", "还没有决定"]
       ],

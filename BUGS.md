@@ -5,6 +5,20 @@ When a new bug is fixed, add it here so it never comes back.
 
 ---
 
+## Navigation CTA overflow and duplicate button
+**Pattern:** `.nav__cta--mobile { display: none; }` appeared before the general `.nav__cta { display: inline-flex; }`, so the mobile-only button also appeared on desktop and contributed to contact-page overflow on narrow screens.
+**Fix (Sep 2026):** Keep the mobile hide rule after the base CTA rule, with the responsive show rule later. The offer-funnel browser check asserts one visible nav enquiry button and no contact-page overflow on desktop and mobile.
+
+## Course Selector recommended inaccessible courses
+**Pattern:** Ranking by preference score alone put handicap-required and members-only courses in a beginner's shortlist.
+**Fix (Sep 2026):** Apply public-access and beginner handicap eligibility before scoring. A shortlist may have fewer than three courses; its heading and email copy must not promise three. The beginner browser journey and unit tests cover this.
+
+## Play With A Pro visual check expected an old layout
+**Pattern:** The visual test still required a two-column day section after the September single-column layout change.
+**Fix (Sep 2026):** Check the wide lead and that the details appear below it, rather than forcing the retired column ratio.
+
+---
+
 ## Import paths (most common build failure)
 **Pattern:** Wrong relative depth for component imports.
 **Rule:** English pages live under the `(en)` route group (`src/app/(en)/[page]/`), so English and language pages sit at the same filesystem depth from `src/components` — both use `../../../components/ComponentName`. Count directory levels rather than assuming a fixed depth; deeper nesting adds another `../`. Full detail: `CLAUDE.md` → Critical Rules → Import paths.

@@ -15,7 +15,7 @@ import {
   selectorAnswerSummary,
   selectorShortlistSummary,
   selectorShortlistNames,
-  scoreCourse,
+  rankCourses,
   DIFF_LABEL,
   personalMatchLine,
   getCourseFactsLine,
@@ -494,6 +494,7 @@ const SELECTOR_COURSES = COURSES.map((course) => {
     holeCount: canonical?.holeCount ?? null,
     accessRequirement: canonical?.access?.requirementLabel || null,
     accessType: canonical?.access?.accessTypeLabel || null,
+    accessTypeCode: canonical?.access?.accessType || null,
     handicapRequired: canonical?.access?.handicapRequired ?? !!course.handicapReq,
     designer: canonical?.facts?.designer
       ? `${canonical.facts.designer}${canonical.facts.opened ? `, ${canonical.facts.opened}` : ''}`
@@ -596,11 +597,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         finalAns[ques.id] = ques.autoValue
       }
     })
-    const ranked = SELECTOR_COURSES
-      .map(c => ({ c, s: scoreCourse(c, finalAns) }))
-      .sort((a, b) => b.s - a.s)
-      .slice(0, 3)
-      .map(x => x.c)
+    const ranked = rankCourses(SELECTOR_COURSES, finalAns)
     setTopCourses(ranked)
     setAnswers(finalAns)
     setPhase('results')

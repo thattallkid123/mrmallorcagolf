@@ -147,6 +147,19 @@ export function scoreCourse(c, answers) {
   return s
 }
 
+export function rankCourses(courses, answers, limit = 3) {
+  return courses
+    .filter(course => {
+      if (course.membersOnly || (course.accessTypeCode && course.accessTypeCode !== 'public')) return false
+      if (answers.ability === 'beginner' && course.handicapRequired) return false
+      return true
+    })
+    .map(course => ({ course, score: scoreCourse(course, answers) }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ course }) => course)
+}
+
 export const DIFF_LABEL = d => d >= 9 ? `Hard · ${d}/10` : d >= 7 ? `Testing · ${d}/10` : d >= 5 ? `Fair · ${d}/10` : `Gentle · ${d}/10`
 
 export function personalMatchLine(c, rank, answers, t) {

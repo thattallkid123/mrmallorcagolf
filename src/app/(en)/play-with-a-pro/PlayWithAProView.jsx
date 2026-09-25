@@ -360,6 +360,12 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                   </article>
                 ))}
               </div>
+              {content.offerSummary.signatureRoute ? (
+                <div className="pwap-summary__signature">
+                  <p>{content.offerSummary.signatureRoute.text}</p>
+                  <Link href={buildLocalePath('/signature-day', locale)}>{content.offerSummary.signatureRoute.cta}</Link>
+                </div>
+              ) : null}
             </div>
           </section>
         ) : null}

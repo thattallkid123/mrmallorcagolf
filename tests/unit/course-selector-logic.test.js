@@ -6,6 +6,7 @@ import {
   selectorShortlistSummary,
   selectorShortlistNames,
   scoreCourse,
+  rankCourses,
   DIFF_LABEL,
   getCourseFactsLine,
 } from '../../src/lib/course-selector-logic'
@@ -181,5 +182,27 @@ describe('scoreCourse', () => {
     const noAreaBonus = scoreCourse(allStyles, answers)
     // 14 + 4*8 = 46 uncapped, but capped at 22 - so the 4-style course shouldn't wildly outscore fewer matches
     expect(noAreaBonus - scoreCourse(twoStyles, answers)).toBeLessThanOrEqual(8)
+  })
+})
+
+describe('rankCourses', () => {
+  const answers = { ability: 'beginner', style: ['relaxed'], area: 'Southwest', budget: 'premium', difficulty: 'forgiving', walking: 'walk', group: 'solo' }
+
+  test('does not recommend courses a beginner cannot book without a handicap or member access', () => {
+    const publicNoHandicap = makeCourse({ name: 'Palma Pitch & Putt', handicapRequired: false, accessTypeCode: 'public' })
+    const handicapRequired = makeCourse({ name: 'Bendinat', handicapRequired: true, accessTypeCode: 'public' })
+    const membersOnly = makeCourse({ name: 'Santa Ponsa 3', membersOnly: true, handicapRequired: false, accessTypeCode: 'members_arranged' })
+
+    expect(rankCourses([handicapRequired, membersOnly, publicNoHandicap], answers).map(course => course.name))
+      .toEqual(['Palma Pitch & Putt'])
+  })
+
+  test('excludes member and hotel guest courses from public shortlists', () => {
+    const publicCourse = makeCourse({ name: 'Public course', accessTypeCode: 'public' })
+    const membersOnly = makeCourse({ name: 'Member course', accessTypeCode: 'members_arranged' })
+    const hotelGuests = makeCourse({ name: 'Hotel course', accessTypeCode: 'hotel_guests' })
+
+    expect(rankCourses([membersOnly, hotelGuests, publicCourse], { ...answers, ability: 'casual' }).map(course => course.name))
+      .toEqual(['Public course'])
   })
 })

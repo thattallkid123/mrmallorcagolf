@@ -51,19 +51,22 @@ test.describe('visual smoke checks', () => {
         await daySection.scrollIntoViewIfNeeded()
         const widths = await page.evaluate(() => {
           const section = document.querySelector('.pwap-day')
-          const lead = document.querySelector('.pwap-day__lead')
-          if (!section || !lead) return null
-          return {
-            section: section.getBoundingClientRect().width,
-            lead: lead.getBoundingClientRect().width,
-          }
-        })
-        expect(widths, `Missing PWAP day layout nodes on ${route}`).not.toBeNull()
-        // .pwap-day is a two-column grid (lead + .pwap-day__details sidebar), roughly 0.92fr : 0.78fr.
-        // Bounds catch a real regression (column collapsed or overlapping) without pinning the exact split.
-        const ratio = widths.lead / widths.section
-        expect(ratio, `PWAP day lead column outside expected range on ${route}`).toBeGreaterThan(0.35)
-        expect(ratio, `PWAP day lead column outside expected range on ${route}`).toBeLessThan(0.7)
+        const lead = document.querySelector('.pwap-day__lead')
+        const details = document.querySelector('.pwap-day__details')
+        if (!section || !lead || !details) return null
+        return {
+          section: section.getBoundingClientRect().width,
+          lead: lead.getBoundingClientRect().width,
+          leadBottom: lead.getBoundingClientRect().bottom,
+          detailsTop: details.getBoundingClientRect().top,
+        }
+      })
+      expect(widths, `Missing PWAP day layout nodes on ${route}`).not.toBeNull()
+      // The September layout stacks a wide lead above the details.
+      const ratio = widths.lead / widths.section
+      expect(ratio, `PWAP day lead width outside expected range on ${route}`).toBeGreaterThan(0.85)
+      expect(ratio, `PWAP day lead width outside expected range on ${route}`).toBeLessThan(0.97)
+      expect(widths.detailsTop, `PWAP details overlap the lead on ${route}`).toBeGreaterThanOrEqual(widths.leadBottom)
       }
 
       if (route === '/about') {

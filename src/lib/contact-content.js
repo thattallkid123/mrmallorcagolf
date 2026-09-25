@@ -8,7 +8,7 @@ export const CONTACT_CONTENT = {
     hero: {
       eyebrow: 'Get in touch',
       title: 'Tell me about your Mallorca golf plans.',
-      intro: 'Play With A Pro, golf trip planning, or both. If you already have dates, courses, or a rough plan, send it over. If you are still deciding, I will help narrow down the right next step.',
+      intro: 'Play With A Pro, golf trip planning, or tee-time bookings. If you already have dates, courses, or a rough plan, send it over. I will help narrow down the right next step.',
     },
     cards: {
       emailLabel: 'Email',
@@ -61,6 +61,7 @@ export const CONTACT_CONTENT = {
       serviceTypes: [
         ['pwap', 'Play With A Pro'],
         ['trip-planning', 'Plan My Golf Trip'],
+        ['tee-time-booking', 'Book tee times for my group'],
         ['both', 'Both'],
         ['not-sure', 'Not Sure Yet'],
       ],

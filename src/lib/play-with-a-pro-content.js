@@ -37,7 +37,11 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "label": "Next step",
         "text": "Send your dates, group size, and handicap range. Andy replies personally within 24 hours."
       }
-    ]
+    ],
+    "signatureRoute": {
+      "text": "For a private tee time, a session with John Brazier after the round, transfers and an evening arranged around your group, see Signature Day.",
+      "cta": "Explore Signature Day →"
+    }
   },
   "day": {
     "eyebrow": "What the day looks like",

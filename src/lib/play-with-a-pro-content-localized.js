@@ -12,7 +12,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Formato", "text": "Un campo, 18 hoyos, elegido según su juego, conmigo a su lado durante toda la vuelta." },
         { "label": "Precios", "text": "Solo desde €795. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
         { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Andy responde personalmente en 24 horas." }
-      ]
+      ],
+      "signatureRoute": {
+        "text": "Si quiere un tee time privado, una sesión con John Brazier después de la vuelta, traslados y una velada organizada para su grupo, vea Signature Day.",
+        "cta": "Explorar Signature Day →"
+      }
     },
     "hero": {
       "homeHref": "/es",
@@ -292,7 +296,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Format", "text": "Ein Platz, 18 Löcher, passend zu Ihrem Spiel, mit mir an Ihrer Seite während der ganzen Runde." },
         { "label": "Preise", "text": "Solo ab €795. Gruppe ab €950 insgesamt. Greenfees sind getrennt und werden vor der Buchung bestätigt." },
         { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Andy antwortet persönlich innerhalb von 24 Stunden." }
-      ]
+      ],
+      "signatureRoute": {
+        "text": "Für eine private Startzeit, eine Einheit mit John Brazier nach der Runde, Transfers und einen Abend für Ihre Gruppe gibt es den Signature Day.",
+        "cta": "Signature Day ansehen →"
+      }
     },
     "hero": {
       "homeHref": "/de",
@@ -572,7 +580,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi a vos cotes pendant toute la partie." },
         { "label": "Tarifs", "text": "Solo a partir de €795. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la reservation." },
         { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Andy repond personnellement sous 24 heures." }
-      ]
+      ],
+      "signatureRoute": {
+        "text": "Pour un départ privé, une séance avec John Brazier après la partie, les transferts et une soirée organisée pour votre groupe, découvrez Signature Day.",
+        "cta": "Découvrir Signature Day →"
+      }
     },
     "hero": {
       "homeHref": "/fr",
@@ -852,7 +864,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Formaat", "text": "Een baan, 18 holes, gekozen voor uw spel, met mij naast u gedurende de hele ronde." },
         { "label": "Prijzen", "text": "Solo vanaf €795. Groep vanaf €950 totaal. Greenfees zijn apart en worden voor de boeking bevestigd." },
         { "label": "Volgende stap", "text": "Stuur uw data, groepsgrootte en handicaprange. Andy reageert persoonlijk binnen 24 uur." }
-      ]
+      ],
+      "signatureRoute": {
+        "text": "Voor een privéstarttijd, een sessie met John Brazier na de ronde, transfers en een avond voor uw groep is er Signature Day.",
+        "cta": "Bekijk Signature Day →"
+      }
     },
     "hero": {
       "homeHref": "/nl",
@@ -1131,7 +1147,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Format", "text": "En bana, 18 hål, vald efter ditt spel, med mig vid din sida under hela rundan." },
         { "label": "Priser", "text": "Solo från €795. Grupp från €950 totalt. Green fees ar separata och bekraftas innan bokning." },
         { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Andy svarar personligen inom 24 timmar." }
-      ]
+      ],
+      "signatureRoute": {
+        "text": "För en privat starttid, ett pass med John Brazier efter rundan, transfer och en kväll ordnad för gruppen finns Signature Day.",
+        "cta": "Se Signature Day →"
+      }
     },
     "hero": {
       "homeHref": "/sv",
@@ -1411,7 +1431,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "形式", "text": "一座根据您的球技选定的球场，18洞，全程由我陪同。" },
         { "label": "价格", "text": "单人795欧元起，小组950欧元总计起。果岭费另计，预订前确认。" },
         { "label": "下一步", "text": "发送您的日期、人数与差点范围，Andy会在24小时内亲自回复。" }
-      ]
+      ],
+      "signatureRoute": {
+        "text": "如果希望安排私人开球时间、赛后与 John Brazier 的训练恢复环节、接送和适合团队的晚间活动，可以了解 Signature Day。",
+        "cta": "了解 Signature Day →"
+      }
     },
     "hero": {
       "homeHref": "/zh",
