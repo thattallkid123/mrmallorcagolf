@@ -116,12 +116,11 @@ try {
   const result = await response.json()
   if (response.ok) {
     console.log(`✅ Success: ${result.urlCount} URL(s) submitted to Bing IndexNow`)
-    process.exit(0)
   } else {
     console.error(`❌ Error: ${result.error}`)
-    process.exit(1)
+    process.exitCode = 1
   }
 } catch (error) {
   console.error(`❌ Request failed: ${error.message}`)
-  process.exit(1)
+  process.exitCode = 1
 }
