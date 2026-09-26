@@ -4813,8 +4813,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "¿Quiere que el viaje quede bien organizado, con campos, salidas, restaurantes, transporte y acompañamiento profesional?",
-          "linkLabel": "Ver la experiencia play-with-a-pro →"
+          "text": "¿Quiere que la parte de golf quede bien organizada, con campos, orden de juego, salidas, buggies, alquileres y un presupuesto claro antes de reservar?",
+          "linkLabel": "Pedir a Andy que planifique el golf →"
         }
       ]
     },
@@ -4937,8 +4937,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "Wollen Sie die Reise sauber arrangiert haben - mit Plätzen, Tee Times, Restaurants, Transport und einem PGA-Professional an Ihrer Seite?",
-          "linkLabel": "Golf-Tag mit Pro ansehen →"
+          "text": "Wollen Sie den Golfteil sauber organisiert haben, mit Plätzen, Reihenfolge, Tee Times, Buggys, Leihschlägern und einem klaren Angebot vor der Buchung?",
+          "linkLabel": "Andy um Golfplanung bitten →"
         }
       ]
     },
@@ -5058,8 +5058,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "Vous voulez que le voyage soit monte proprement - parcours, departs, restaurants, transport et accompagnement PGA ?",
-          "linkLabel": "Voir l'expérience play-with-a-pro →"
+          "text": "Vous voulez que la partie golf soit organisée correctement, avec parcours, ordre des parties, départs, voiturettes, locations et un devis clair avant toute réservation ?",
+          "linkLabel": "Demander à Andy de planifier le golf →"
         }
       ]
     },
@@ -5179,8 +5179,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "Wilt u dat de reis goed wordt geregeld - banen, tee times, restaurants, vervoer en professionele begeleiding?",
-          "linkLabel": "Bekijk de play-with-a-pro ervaring →"
+          "text": "Wilt u dat het golfdeel goed wordt geregeld, met banen, volgorde, tee times, buggies, huurclubs en een duidelijke prijs voordat er iets wordt geboekt?",
+          "linkLabel": "Vraag Andy om de golfplanning →"
         }
       ]
     },
@@ -5302,8 +5302,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "Vill du att resan ska sitta ihop ordentligt - banor, tee times, restauranger, transport och professionell guidning?",
-          "linkLabel": "Se play-with-a-pro-upplevelsen →"
+          "text": "Vill du att golfdelen ska bli ordentligt planerad, med banor, ordning, tee times, golfbilar, hyrklubbor och en tydlig offert innan något bokas?",
+          "linkLabel": "Be Andy planera golfen →"
         }
       ]
     },
@@ -5425,8 +5425,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "如果您想把球场、开球时间、餐厅、交通和全程安排一起做好，也可以直接加微信咨询：andygriffiths1。",
-          "linkLabel": "查看与职业球手同场体验 →"
+          "text": "如果您想把高尔夫部分安排清楚，包括球场、顺序、开球时间、球车、租杆和预订前的清晰报价，也可以直接咨询。",
+          "linkLabel": "请 Andy 规划高尔夫行程 →"
         }
       ]
     }

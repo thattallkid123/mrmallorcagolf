@@ -152,7 +152,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'Plan Your Mallorca Golf Trip (2026)',
       description:
-        'Plan your Mallorca golf trip: courses, when to go, transport, clubs, off-course activities. By a PGA pro on the island.',
+        'Plan your Mallorca golf trip: courses, tee times, where to stay, how many rounds to play, and when to book. Advice from a PGA pro on the island.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-trip-planning-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/bendinat.webp',
       imageAlt: 'How to Plan the Perfect Golf Trip to Mallorca (From Someone Who Lives There)',
@@ -161,10 +161,10 @@ export const GUIDE_ARTICLE_CONTENT = {
       badge: 'Trip Planning',
       badgeGold: false,
       readTime: '7 min read',
-      updated: 'March 2026',
-      title: 'How to Plan the Perfect Golf Trip to Mallorca | Courses, Base & Tee Times',
+      updated: 'September 2026',
+      title: 'How to Plan a Mallorca Golf Trip | Courses, Base & Tee Times',
       intro:
-        "No tourism copy, no padding. Which courses, when to go, how many rounds, getting around, and what to do when you're not on the course.",
+        "Which courses to play, where to base yourself, when to book tee times, and how to avoid the obvious mistakes in the gaps between rounds.",
       related: [
         { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
         { slug: 'best-time-play-golf-mallorca', title: 'Best Time of Year to Play Golf in Mallorca' },
@@ -176,11 +176,11 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "I moved to Mallorca in March 2025 and have been playing golf here every week since. Before that, eleven years in Shanghai, a city where golfers often think nothing of spending up to €500 on a single hour long lesson, where access to a course often means a membership costing more than most people's annual salary. Moving here felt like arriving somewhere that had quietly been one of Europe's best-kept golf secrets.",
+          "I moved to Mallorca in March 2025 and have been playing golf here every week since. Before that, eleven years in Shanghai, a city where golfers often think nothing of spending up to €500 on a single hour long lesson, where access to a course often means a membership costing more than most people's annual salary. Mallorca is a different golf problem: better access, more choice, and more ways to get the order wrong.",
       },
       {
         type: 'paragraph',
-        text: "This is what I'd tell a friend planning a trip without tourism copy and extra fluff.",
+        text: "This is what I'd tell a friend planning the golf before flights and hotels start forcing the decisions.",
       },
       { type: 'heading', text: 'When to Go' },
       {
@@ -197,7 +197,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'One round per day is comfortable for most golfers - the courses are demanding, and summer heat is real. In cooler times, 36 holes a day is possible if you are that keen, but most golf-only visitors on a 5-7-day trip play 4-5 rounds.',
+          'One round per day is comfortable for most golfers. The courses ask enough questions, and summer heat is real. In cooler months, 36 holes in a day is possible if you are that keen, but most golf-only visitors on a 5-7-day trip play 4-5 rounds. The order matters: one easy arrival round, one serious test in the middle, one longer drive when the group has time, and a final round close enough to keep the airport simple.',
       },
       { type: 'heading', text: 'Which Courses to Prioritise' },
       {
@@ -213,7 +213,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'DP World Tour experience: Son Muntaner (Arabella). Best in Spain 2025.',
+        text: 'DP World Tour experience near Palma: Son Muntaner. Five minutes from the city, strong conditioning, and named Best Golf Course in Spain 2025.',
       },
       {
         type: 'paragraph',
@@ -227,13 +227,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'pull',
         text:
-          'With a week on the island, the quality runs deeper than most visitors expect.',
+          'With a week on the island, the mistake is usually not finding good courses. It is putting them in the wrong order.',
       },
       { type: 'heading', text: 'Getting Around' },
       {
         type: 'paragraph',
         text:
-          "A hire car is the most practical option. Public transport doesn't serve many of the best courses well. Roads are good; traffic is manageable outside peak summer.",
+          "A hire car is the most practical option. Public transport doesn't serve many of the best courses well. Roads are good, but the east coast still needs honest time in the day. Palma to Alcanada is a proper drive, not a casual add-on before dinner. If nobody in the group wants to drive, plan that before choosing courses.",
       },
       {
         type: 'image',
@@ -248,13 +248,13 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Bring your own for three rounds or more. Hire for a mixed holiday with one or two rounds planned. See the club hire guide for recommendations on the best companies, what they charge, and which setups are worth using. There are some great options that deliver to your hotel or course and make life easier than lugging a travel bag through an airport and praying for no snapped shafts.',
+          'Bring your own clubs for three rounds or more. Hire for a mixed holiday with one or two rounds planned. The club hire guide covers the companies I would look at, what they charge, and which setups are worth using. Book tee times early for March-May and September-October. If you only need the golf booked, that can be arranged without me attending.',
       },
       { type: 'heading', text: 'What Else to Do' },
       {
         type: 'paragraph',
         text:
-          'Old town Palma is genuinely beautiful. The northwest coast (Valldemossa, Deià, and Sóller) is some of the most dramatic scenery on the island. The northeast is quieter and wilder. The food - local seafood and island wine - is excellent.',
+          'Old town Palma is worth a full afternoon. The northwest coast, especially Valldemossa, Deià, and Sóller, is the obvious non-golf day. The northeast is quieter and wilder. Local seafood and island wine can do more for the trip than another rushed nine holes.',
       },
       {
         type: 'image',
@@ -268,7 +268,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "A golf trip that doesn't include at least one long lunch somewhere unexpected is only doing half the job. Build in at least one afternoon where you don't have a tee time and explore. The golf might be the reason to come but the rest will make you want to come back soon.",
+          "A golf trip that doesn't include at least one long lunch somewhere unexpected is only doing half the job. Build in at least one afternoon with no tee time. The golf is the reason to come. The rest is why the trip still feels good when the scorecard does not.",
       },
       {
         type: 'splitImages',
@@ -287,8 +287,8 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'cta',
-        text: 'Want the trip arranged properly - courses, tee times, restaurants, transport, PGA professional throughout?',
-        linkLabel: 'Plan your trip →',
+        text: 'Want the golf side arranged properly: courses, routing, tee times, buggies, rentals, and a clear quote before anything is booked?',
+        linkLabel: 'Ask Andy to plan the golf →',
         href: '/plan-your-trip',
       },
     ],
