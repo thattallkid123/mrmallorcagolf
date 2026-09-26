@@ -51,7 +51,7 @@ export const GOLF_COURSES_CONTENT = {
       "explorerIntro": "Browse by region. Each card shows price, difficulty rating, Andy's rating, and any dynamic pricing or handicap requirement before booking.",
       "ctaEyebrow": "Narrowed it down?",
       "ctaH2": "Turn the shortlist into the right trip.",
-      "ctaP": "Send your dates, handicap, hotel area, and the two or three courses you are considering. I'll tell you which ones belong in the trip, in what order, and what the cleanest plan looks like.",
+      "ctaP": "Send your dates, handicap, hotel area, and the two or three courses you are considering. I can tell you which ones belong in the trip, what order makes sense, and what to book first.",
       "seeExperiences": "Plan Your Trip",
       "getInTouch": "Play With A Pro",
       "courseNote": "",

@@ -346,9 +346,9 @@ export const GUIDE_POST_CONTENT = {
   'son-muntaner-review': {
     en: {
       metadata: {
-        title: "Son Muntaner Golf: Spain's Best 2025",
+        title: 'Son Muntaner Golf Review 2026',
         description:
-          "Son Muntaner golf review: Spain's Best Golf Course 2025 (World Golf Awards). Green fees €110–€260 with buggy, 5 mins from Palma. A PGA pro's verdict.",
+          "Son Muntaner is 5 mins from Palma, €110–€260 with buggy included, and Best Golf Course in Spain 2025. PGA pro review.",
         imagePath: '/images/son-muntaner-blog/sm-4.webp',
       },
       meta: {
@@ -357,7 +357,7 @@ export const GUIDE_POST_CONTENT = {
         readTime: '6 min read',
         updated: 'April 2026',
         title: "Son Muntaner Golf - Best in Spain? (2026)",
-        intro: "Best Golf Course in Spain at the 2025 World Golf Awards. Five minutes from Palma. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
+        intro: "Five minutes from Palma. Buggy included for most of the season. Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },

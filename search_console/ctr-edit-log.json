@@ -60,6 +60,11 @@
           "date": "2026-09-05",
           "commit": "74abf19",
           "summary": "First real CTR attempt: added Balearic Islands framing to meta description + opening paragraph (top 2 queries by volume, ranking pos 17-18, were previously unaddressed anywhere on the page)"
+        },
+        {
+          "date": "2026-09-26",
+          "commit": "same commit",
+          "summary": "CTR attempt: description shifted to dynamic pricing and booking timing; cost paragraph now links to trip planning for course choice and tee times."
         }
       ]
     },
@@ -79,6 +84,11 @@
           "date": "2026-06-05",
           "commit": "4bc58fc",
           "summary": "SSR fix so meta title/description actually render server-side (was likely client-only before this)"
+        },
+        {
+          "date": "2026-09-26",
+          "commit": "same commit",
+          "summary": "CTR attempt: title now targets Mallorca golf courses and green fees; metadata price corrected to €260; CTA copy clarifies what to book first."
         }
       ]
     },
@@ -96,6 +106,11 @@
           "date": "2026-09-05",
           "commit": "e4b4fec",
           "summary": "SERP title was missing the word \"Golf\" entirely - top query 'son muntaner golf' (283 impr, pos 9.4) had 0.4% CTR. Added \"Golf\" to title and description; trimmed both back under the char budget."
+        },
+        {
+          "date": "2026-09-26",
+          "commit": "same commit",
+          "summary": "CTR attempt: title simplified to direct review query; description now leads with 5 mins from Palma, €110–€260, buggy included, and Best Golf Course in Spain 2025."
         }
       ]
     },

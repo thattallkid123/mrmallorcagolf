@@ -7,7 +7,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: 'Mallorca Golf Green Fees 2026 (€55–€260)',
       description:
-        'Mallorca golf green fees run €55–€260 for full-size rounds; buggies cost €35–€48 extra. See the 2026 course-by-course budget.',
+        'Mallorca green fees are €55–€260. See buggy costs, value months, dynamic pricing and when to book early for each course.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
       imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€260, Club Hire & What to Budget',
@@ -62,7 +62,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Around half the island now uses dynamic pricing, including the Arabella courses, both T Golf venues, Pula, Capdepera, and Son Antem East and West. The practical rule is simple: the earlier you book, the better your chance of locking in the lower end of the range. Black Friday, winter, and multi-round partner offers can still save real money if you time them well.",
+          "Around half the island now uses dynamic pricing, including the Arabella courses, both T Golf venues, Pula, Capdepera, and Son Antem East and West. The practical rule is simple: the earlier you book, the better your chance of locking in the lower end of the range. Black Friday, winter, and multi-round partner offers can still save real money if you time them well. If you want the course choice and tee times handled before you arrive, start with <a href='/plan-your-trip'>trip planning</a>.",
       },
       {
         type: 'image',
