@@ -145,7 +145,7 @@ export default function GuidesFilterSection({
     <>
       <section className="guides-filter-shell" id="guides-filter">
         <div className="guides-filter-shell__inner">
-          <div className="guides-filter-tabs" role="tablist" aria-label="Guide category filters">
+          <div className="guides-filter-tabs" role="group" aria-label="Guide category filters">
             {tabs.map((tab) => (
               <button
                 key={tab.id}

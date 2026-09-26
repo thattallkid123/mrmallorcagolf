@@ -63,7 +63,7 @@ const FUNNEL_CTA_STRINGS = {
 
 function FunnelCtaBlock({ locale, courseName }) {
   const t = FUNNEL_CTA_STRINGS[locale] || FUNNEL_CTA_STRINGS.en
-  const toolsHref = joinHref(locale, '/tools')
+  const toolsHref = joinHref(locale, '/tools/course-selector')
   const contactHref = joinHref(locale, '/contact')
   return (
     <div className="post-funnel-cta">

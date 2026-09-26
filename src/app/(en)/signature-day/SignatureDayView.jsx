@@ -79,7 +79,7 @@ const OPTIONAL_EXTRAS = [
 ]
 
 const RECOMMENDED_HOTELS = [
-  { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa opens September 2026.' },
+  { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa opens October 2026.' },
   { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel and Llum i Sal.' },
   { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular, with its fire-led Mediterranean cooking.' },
   { name: 'Aethos Mallorca', note: 'Peguera. ONDA and its sea-facing setting.' },

@@ -118,6 +118,18 @@ function buildBreadcrumbSchema(locale, content) {
   }
 }
 
+function playWithAProContactHref(locale) {
+  return `${buildLocalePath('/contact', locale)}?service=pwap`
+}
+
+function packageCtaHref(tier, index, locale) {
+  if (index === 0 || index === 1) return playWithAProContactHref(locale)
+  if (index === 3) return buildLocalePath('/plan-your-trip', locale)
+  if (!tier.href || tier.href.startsWith('http')) return tier.href
+  if (locale !== 'en' && tier.href.startsWith(`/${locale}/`)) return tier.href
+  return buildLocalePath(tier.href, locale)
+}
+
 export default function PlayWithAProView({ content, locale = 'en' }) {
   const stripViewportRef = useRef(null)
   const stripTrackRef = useRef(null)
@@ -325,7 +337,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 <p className="pwap-hero__price">{content.hero.price}</p>
               ) : null}
               <div className="pwap-hero__actions">
-                <Link href={content.hero.primaryHref} className="btn btn--gold">
+                <Link href={playWithAProContactHref(locale)} className="btn btn--gold">
                   {content.hero.primaryCta}
                 </Link>
                 <a href="#packages" className="btn btn--outline-white">
@@ -523,7 +535,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                       {tier.detailLabel || 'See full details →'}
                     </Link>
                   ) : null}
-                  <Link href={tier.href} className="tier__btn">
+                  <Link href={packageCtaHref(tier, index, locale)} className="tier__btn">
                     {tier.button}
                   </Link>
                 </div>
@@ -572,7 +584,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <p>{content.finalCta.body}</p>
           </div>
           <div className="cta-final__right reveal">
-            <Link href={content.finalCta.primaryHref} className="btn btn--gold cta-final__primary-lg">
+            <Link href={playWithAProContactHref(locale)} className="btn btn--gold cta-final__primary-lg">
               {content.finalCta.primaryCta}
             </Link>
             <a href={content.finalCta.secondaryHref} className="btn btn--outline-white" target="_blank" rel="noopener noreferrer">
@@ -587,7 +599,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         </section>
 
         <StickyMobileCta
-          primaryHref={content.finalCta.primaryHref}
+          primaryHref={playWithAProContactHref(locale)}
           primaryLabel={content.finalCta.primaryCta}
           secondaryHref={content.finalCta.secondaryHref}
           secondaryLabel={content.finalCta.secondaryCta}

@@ -1701,7 +1701,7 @@
   --ease-luxury:  cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 
 body {
   font-family: var(--font-sans);
@@ -3073,7 +3073,7 @@ select.form-control { cursor: pointer; }
 .btn-submit:disabled { opacity: .65; cursor: not-allowed; }
 .form-note { font-size: 9px; color: var(--stone); margin-top: 12px; text-align: center; line-height: 1.5; }
 .form-error { margin-top: 12px; color: #9f2f2f; font-size: 12px; line-height: 1.5; text-align: center; }
-.form-control--hidden-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.form-control--hidden-honeypot { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; opacity: 0; pointer-events: none; }
 .form-success { display: none; text-align: center; padding: 60px 20px; }
 .form-success.visible { display: block; }
 .form-success__icon { font-size: 2.5rem; margin-bottom: 16px; color: var(--pine); }
@@ -3651,6 +3651,7 @@ select.form-control { cursor: pointer; }
   .improvements { padding: 60px 20px; }
   .contact-wrap { grid-template-columns: 1fr; display: flex; flex-direction: column; background: var(--deep); }
   .contact-left { display: contents; }
+  .contact-left::before { display: none; }
   .contact-left > div:first-child { order: 1; padding: 50px 24px; background-image: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.58) 60%, rgba(26,25,22,0.82) 100%), url(/images/contact.webp); background-position: center 30%; background-size: cover; margin: 0; }
   .contact-right { order: 2; padding: 40px 24px 50px; }
   /* Keep inner padding here: the block carries a 2px gold border-left, and at
@@ -3878,8 +3879,8 @@ select.form-control { cursor: pointer; }
 .post-funnel-cta__item { display: flex; flex-direction: column; gap: 4px; }
 .post-funnel-cta__item + .post-funnel-cta__item { padding-top: 12px; border-top: 1px solid rgba(26,25,22,0.08); }
 .post-funnel-cta__question { margin: 0; font-family: var(--font-sans); font-size: 0.88rem; color: var(--charcoal); line-height: 1.5; }
-.post-funnel-cta__link { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 500; color: var(--pine); text-decoration: none; letter-spacing: 0.01em; transition: color 0.2s; }
-.post-funnel-cta__link:hover { color: var(--gold-text); }
+.post-funnel-cta__link { display: inline-flex; align-items: center; gap: 5px; width: fit-content; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 500; color: var(--pine); text-decoration: underline; text-decoration-color: rgba(45,74,62,0.34); text-underline-offset: 4px; letter-spacing: 0.01em; transition: color 0.2s, text-decoration-color 0.2s; }
+.post-funnel-cta__link:hover { color: var(--deep); text-decoration-color: var(--gold); }
 @media (max-width: 640px) {
   .post-funnel-cta { padding: 20px 18px; }
 }

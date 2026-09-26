@@ -10,42 +10,42 @@ const diningImages = [
 
 const hotels = {
   de: [
-    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa eroeffnet im September 2026.' },
+    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa eroeffnet im Oktober 2026.' },
     { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel und Llum i Sal.' },
     { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular, mediterrane Kueche mit Feuer und Grill.' },
     { name: 'Aethos Mallorca', note: 'Peguera. ONDA mit Blick aufs Meer.' },
     { name: 'La Residencia, A Belmond Hotel', note: 'Deia. El Olivo und Restaurante Miro.' },
   ],
   es: [
-    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa abre en septiembre de 2026.' },
+    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa abre en octubre de 2026.' },
     { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel y Llum i Sal.' },
     { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular, cocina mediterranea con fuego.' },
     { name: 'Aethos Mallorca', note: 'Peguera. ONDA y su entorno frente al mar.' },
     { name: 'La Residencia, A Belmond Hotel', note: 'Deia. El Olivo y Restaurante Miro.' },
   ],
   fr: [
-    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa ouvre en septembre 2026.' },
+    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa ouvre en octobre 2026.' },
     { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel et Llum i Sal.' },
     { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular, cuisine mediterraneenne autour du feu.' },
     { name: 'Aethos Mallorca', note: 'Peguera. ONDA et son cadre face a la mer.' },
     { name: 'La Residencia, A Belmond Hotel', note: 'Deia. El Olivo et Restaurante Miro.' },
   ],
   nl: [
-    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa opent in september 2026.' },
+    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa opent in oktober 2026.' },
     { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel en Llum i Sal.' },
     { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular, mediterrane keuken rond vuur.' },
     { name: 'Aethos Mallorca', note: 'Peguera. ONDA met uitzicht op zee.' },
     { name: 'La Residencia, A Belmond Hotel', note: 'Deia. El Olivo en Restaurante Miro.' },
   ],
   sv: [
-    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa oppnar i september 2026.' },
+    { name: 'Mandarin Oriental Punta Negra', note: 'Calvia. Lena by Dani Garcia; Matsuhisa oppnar i oktober 2026.' },
     { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel och Llum i Sal.' },
     { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular, medelhavsmat runt eld.' },
     { name: 'Aethos Mallorca', note: 'Peguera. ONDA med lage mot havet.' },
     { name: 'La Residencia, A Belmond Hotel', note: 'Deia. El Olivo och Restaurante Miro.' },
   ],
   zh: [
-    { name: 'Mandarin Oriental Punta Negra', note: '卡尔维亚。Lena by Dani Garcia；Matsuhisa 将于 2026 年 9 月开业。' },
+    { name: 'Mandarin Oriental Punta Negra', note: '卡尔维亚。Lena by Dani Garcia；Matsuhisa 将于 2026 年 10 月开业。' },
     { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor。Mel 和 Llum i Sal。' },
     { name: 'The Lodge Mallorca', note: 'Sa Pobla。Singular，火烹地中海风格。' },
     { name: 'Aethos Mallorca', note: 'Peguera。ONDA，面向大海的餐饮环境。' },
