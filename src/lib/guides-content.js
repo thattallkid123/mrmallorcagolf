@@ -236,19 +236,6 @@ export const GUIDES_CONTENT = {
 }
 }
 
-const COURSE_REVIEW_SLUGS = new Set([
-  'alcanada-review',
-  'son-gual-review',
-  't-golf-calvia-review',
-  't-golf-palma-review',
-  'son-muntaner-review',
-  'santa-ponsa-1-review',
-  'golf-andratx-review',
-  'son-termes-review',
-  'son-antem-west-review',
-  'son-quint-review',
-])
-
 const GUIDE_PRICE_LABELS = {
   zh: { currency: '\u20ac' },
   default: { currency: '\u20ac' },
@@ -271,7 +258,6 @@ function formatGuideParSegment(locale, par) {
 }
 
 function syncGuideKeywordFacts(locale, guide) {
-  if (!COURSE_REVIEW_SLUGS.has(guide.slug)) return guide
   const course = getGuideCourseBySlug(guide.slug)
   if (!course) return guide
   const par = getScorecardByCourseName(course.name)?.par

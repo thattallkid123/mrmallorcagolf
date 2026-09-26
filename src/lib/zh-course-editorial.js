@@ -10,8 +10,12 @@
 // hardcoded green fees and drifted badly (Son Quint peak read EUR115 against a
 // canonical EUR172).
 //
-// guideSlug is null where no Chinese guide exists yet; callers must not render a
-// link in that case.
+// Guide links are NOT typed per course. getZhGuideHref derives them from the
+// reviewSlug in golf-courses-data.js (a review only gets one once its Chinese
+// translation is live), and returns null where there is no review, so callers
+// must not render a link in that case.
+
+import { getCourseReviewSlug } from './golf-courses-helpers.js'
 
 export const ZH_COURSE_EDITORIAL = {
   "Canyamel Golf": {
@@ -27,7 +31,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 1,
     tags: ["scenic", "value", "easy", "photo"],
-    guideSlug: null,
   },
   "Capdepera Golf": {
     id: "capdepera",
@@ -42,7 +45,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["scenic", "photo", "value"],
-    guideSlug: null,
   },
   "Club de Golf Alcanada": {
     id: "alcanada",
@@ -57,7 +59,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 3,
     tags: ["famous", "scenic", "photo", "luxury", "firsttime"],
-    guideSlug: "alcanada-review",
   },
   "Golf Club Son Servera": {
     id: "son-servera",
@@ -72,7 +73,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 1,
     budget: 1,
     tags: ["easy", "family", "value", "scenic"],
-    guideSlug: null,
   },
   "Golf Maioris": {
     id: "maioris",
@@ -87,7 +87,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 1,
     tags: ["value", "easy"],
-    guideSlug: null,
   },
   "Golf Pollença": {
     id: "pollensa",
@@ -102,7 +101,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 1,
     budget: 1,
     tags: ["easy", "value", "scenic"],
-    guideSlug: null,
   },
   "Golf Santa Ponsa 1": {
     id: "santa-ponsa",
@@ -117,7 +115,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["famous", "challenge", "value"],
-    guideSlug: "santa-ponsa-1-review",
   },
   "Golf Santa Ponsa 2": {
     id: "santa-ponsa-2",
@@ -132,7 +129,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["famous", "challenge", "business"],
-    guideSlug: null,
   },
   "Golf Santa Ponsa 3": {
     id: "santa-ponsa-3",
@@ -147,7 +143,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 1,
     budget: 1,
     tags: ["easy", "family", "value"],
-    guideSlug: null,
   },
   "Golf Son Antem East": {
     id: "son-antem-east",
@@ -162,7 +157,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 1,
     budget: 2,
     tags: ["easy", "family", "value"],
-    guideSlug: null,
   },
   "Golf Son Antem West": {
     id: "son-antem-west",
@@ -177,7 +171,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["challenge", "business"],
-    guideSlug: "son-antem-west-review",
   },
   "Golf Son Gual": {
     id: "son-gual",
@@ -192,7 +185,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 3,
     budget: 3,
     tags: ["famous", "challenge", "luxury", "business"],
-    guideSlug: "son-gual-review",
   },
   "Golf Son Quint": {
     id: "son-quint",
@@ -207,7 +199,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 1,
     budget: 1,
     tags: ["easy", "family", "value", "firsttime", "photo"],
-    guideSlug: null,
   },
   "Golf Son Termes": {
     id: "son-termes",
@@ -222,7 +213,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["scenic", "value", "photo"],
-    guideSlug: "son-termes-review",
   },
   "Golf Son Vida": {
     id: "son-vida",
@@ -237,7 +227,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["famous", "luxury", "business"],
-    guideSlug: null,
   },
   "Golf de Andratx": {
     id: "andratx",
@@ -252,7 +241,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 4,
     budget: 2,
     tags: ["challenge", "scenic", "photo"],
-    guideSlug: "golf-andratx-review",
   },
   "Palma Pitch & Putt": {
     id: "palma-pitch-putt",
@@ -267,7 +255,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 1,
     budget: 1,
     tags: ["easy", "family", "firsttime"],
-    guideSlug: null,
   },
   "Pula Golf": {
     id: "pula",
@@ -282,7 +269,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["famous", "challenge", "business"],
-    guideSlug: null,
   },
   "Real Golf de Bendinat": {
     id: "bendinat",
@@ -297,7 +283,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["scenic", "easy", "photo"],
-    guideSlug: null,
   },
   "Reserva Rotana": {
     id: "rotana",
@@ -312,7 +297,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 3,
     tags: ["luxury", "easy"],
-    guideSlug: null,
   },
   "Son Muntaner": {
     id: "son-muntaner",
@@ -327,7 +311,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 3,
     tags: ["famous", "luxury", "business", "photo"],
-    guideSlug: "son-muntaner-review",
   },
   "T Golf Calvià (Poniente)": {
     id: "t-golf-calvia",
@@ -342,7 +325,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 3,
     tags: ["famous", "luxury", "business"],
-    guideSlug: "t-golf-calvia-review",
   },
   "T Golf Palma (Puntiró)": {
     id: "t-golf-palma",
@@ -357,7 +339,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 2,
     tags: ["famous", "scenic", "challenge"],
-    guideSlug: null,
   },
   "Vall d'Or Golf": {
     id: "vall-dor",
@@ -372,7 +353,6 @@ export const ZH_COURSE_EDITORIAL = {
     level: 2,
     budget: 1,
     tags: ["scenic", "photo", "value"],
-    guideSlug: null,
   },
 }
 
@@ -381,6 +361,6 @@ export function getZhCourseEditorial(canonicalName) {
 }
 
 export function getZhGuideHref(canonicalName) {
-  const entry = ZH_COURSE_EDITORIAL[canonicalName]
-  return entry && entry.guideSlug ? `/zh/guides/${entry.guideSlug}` : null
+  const slug = ZH_COURSE_EDITORIAL[canonicalName] ? getCourseReviewSlug(canonicalName) : null
+  return slug ? `/zh/guides/${slug}` : null
 }

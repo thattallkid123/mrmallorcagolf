@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import EmailSignup from '../../../components/EmailSignup'
 import { formatCourseFeeLabel, getCoursePricingByName } from '../../../lib/course-pricing-data'
+import { getCourseReviewSlug } from '../../../lib/golf-courses-helpers'
 import { COURSE_SELECTOR_MAILERLITE_ACTION } from '../../../lib/signup-config'
 
 const QUESTIONS = [
@@ -60,7 +61,7 @@ const COURSES = [
     name: 'Golf Son Gual',
     location: 'Palma',
     fees: 'Peak €165 / Low €115',
-    href: '/guides/son-gual-review',
+    href: '/golf-courses',
     bestFor: ['advanced', 'difficulty', 'premium', 'one', 'week'],
     take: 'The serious anchor course. Fast raised greens, a strong closing stretch, and enough wind variation to make course management matter.',
   },
@@ -68,7 +69,7 @@ const COURSES = [
     name: 'Club de Golf Alcanada',
     location: "Port d'Alcudia",
     fees: 'Peak €230 / Low €115',
-    href: '/guides/alcanada-review',
+    href: '/golf-courses',
     bestFor: ['advanced', 'intermediate', 'scenery', 'premium', 'one', 'week'],
     take: 'The scenic anchor course. The lighthouse is visible for most of the round, but the bunkering and greens still need proper attention.',
   },
@@ -76,7 +77,7 @@ const COURSES = [
     name: 'T Golf Calvia',
     location: 'Calvia',
     fees: 'Peak €210 / Low €80 (dynamic)',
-    href: '/guides/t-golf-calvia-review',
+    href: '/golf-courses',
     bestFor: ['intermediate', 'advanced', 'scenery', 'premium', 'weekend'],
     take: 'A polished southwest option with strong conditioning, wide driving lines, and enough water to keep the round honest.',
   },
@@ -84,7 +85,7 @@ const COURSES = [
     name: 'Son Muntaner',
     location: 'Son Vida, Palma',
     fees: 'Peak €260 / Low €99 (dynamic)',
-    href: '/guides/son-muntaner-review',
+    href: '/golf-courses',
     bestFor: ['intermediate', 'advanced', 'premium', 'scenery', 'weekend'],
     take: 'Top-end Palma golf with excellent conditioning and a strong setting. Good when you want a premium round close to the city.',
   },
@@ -92,7 +93,7 @@ const COURSES = [
     name: 'Golf de Andratx',
     location: 'Camp de Mar',
     fees: 'Peak €170 / Low €95 (dynamic)',
-    href: '/guides/golf-andratx-review',
+    href: '/golf-courses',
     bestFor: ['advanced', 'difficulty', 'weekend'],
     take: 'The hardest recommendation on the list. Bring extra balls and no ego, especially if this is your first Mallorca round.',
   },
@@ -100,7 +101,7 @@ const COURSES = [
     name: 'Golf Son Termes',
     location: 'Bunyola',
     fees: 'Peak €110 / Low €90',
-    href: '/guides/son-termes-review',
+    href: '/golf-courses',
     bestFor: ['intermediate', 'scenery', 'value', 'week'],
     take: 'Shorter and more rugged, with Tramuntana mountain context on every hole. Buggy recommended, but the setting does a lot of work.',
   },
@@ -124,8 +125,10 @@ const COURSES = [
 
 const SELECTOR_COURSES = COURSES.map((course) => {
   const pricing = getCoursePricingByName(course.name)
+  const reviewSlug = getCourseReviewSlug(course.name)
   return {
     ...course,
+    href: reviewSlug ? `/guides/${reviewSlug}` : course.href,
     fees: pricing ? formatCourseFeeLabel(course.name, { pricing, fallback: course.fees }) : course.fees,
   }
 })

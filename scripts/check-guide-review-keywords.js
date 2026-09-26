@@ -1,17 +1,6 @@
 const { pathToFileURL } = require('url')
 const path = require('path')
 
-const REVIEW_SLUG_TO_COURSE = {
-  'alcanada-review': 'Club de Golf Alcanada',
-  'golf-andratx-review': 'Golf de Andratx',
-  'santa-ponsa-1-review': 'Golf Santa Ponsa 1',
-  'son-antem-west-review': 'Golf Son Antem West',
-  'son-gual-review': 'Golf Son Gual',
-  'son-muntaner-review': 'Son Muntaner',
-  'son-termes-review': 'Golf Son Termes',
-  't-golf-calvia-review': 'T Golf Calvi\u00e0 (Poniente)',
-}
-
 function extractParValue(text) {
   const match = text.match(/(?:Par|标准杆)\s*([0-9]+)/i)
   return match ? Number(match[1]) : null
@@ -19,10 +8,19 @@ function extractParValue(text) {
 
 async function main() {
   const repoRoot = path.join(__dirname, '..')
-  const [{ GUIDES_CONTENT }, { SCORECARD_DATA }] = await Promise.all([
+  const [{ GUIDES_CONTENT }, { SCORECARD_DATA }, { GOLF_COURSE_DATA }] = await Promise.all([
     import(pathToFileURL(path.join(repoRoot, 'src', 'lib', 'guides-content.js')).href),
     import(pathToFileURL(path.join(repoRoot, 'src', 'lib', 'scorecard-data.js')).href),
+    import(pathToFileURL(path.join(repoRoot, 'src', 'lib', 'golf-courses-data.js')).href),
   ])
+
+  // Derived, not typed: a review's course is whichever course entry carries its reviewSlug.
+  const REVIEW_SLUG_TO_COURSE = {}
+  for (const region of GOLF_COURSE_DATA) {
+    for (const course of region.courses) {
+      if (course.reviewSlug) REVIEW_SLUG_TO_COURSE[course.reviewSlug] = course.name
+    }
+  }
 
   const issues = []
 
@@ -32,7 +30,10 @@ async function main() {
       if (!courseName) continue
 
       const expectedPar = SCORECARD_DATA[courseName]?.par
-      if (!Number.isFinite(expectedPar)) continue
+      if (!Number.isFinite(expectedPar)) {
+        issues.push(`${locale}:${guide.slug} has no par in scorecard data for "${courseName}", so its keywords cannot be verified`)
+        continue
+      }
 
       const keywordPar = extractParValue(guide.keywords || '')
       if (keywordPar != null && keywordPar !== expectedPar) {

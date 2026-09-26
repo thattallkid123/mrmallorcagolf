@@ -1,4 +1,5 @@
 const { expect, test } = require('@playwright/test')
+const { REVIEW_POST_SLUGS } = require('../src/lib/site.js')
 
 // Runtime regression guard for a font bug found and fixed 2026-08-26:
 // a class applied to a raw <button> (or other non-inheriting element) with
@@ -21,20 +22,20 @@ const { expect, test } = require('@playwright/test')
 // explicit "sweep the whole site" ask, expanding on the initial
 // representative sweep).
 
-const ALL_GUIDE_SLUGS = [
+// Course reviews are NOT listed here: REVIEW_POST_SLUGS is the single list, so a
+// newly published review is covered without touching this file.
+const HAND_LISTED_GUIDE_SLUGS = [
   '5-day-mallorca-golf-itinerary',
   // 'a-day-at-son-gual' intentionally excluded: the folder exists under
   // src/app/(en)/guides/ but is empty (no page.jsx), 404s, and nothing in
   // the codebase references the slug - orphaned scaffolding, not a live
   // route. Found via this spec 2026-08-26; flagged to Andy rather than
   // deleted, since removing a directory wasn't part of the font-audit ask.
-  'alcanada-review',
   'beginners-guide',
   'best-golf-courses-mallorca',
   'best-time-play-golf-mallorca',
   'cost-guide',
   'course-comparison',
-  'golf-andratx-review',
   'golf-club-hire-mallorca',
   'golf-cost-mallorca',
   'golf-trip-planning-mallorca',
@@ -42,14 +43,10 @@ const ALL_GUIDE_SLUGS = [
   'mallorca-course-map',
   'on-course-coaching-mallorca',
   'play-with-a-pro-explained',
-  'santa-ponsa-1-review',
-  'son-antem-west-review',
-  'son-gual-review',
-  'son-muntaner-review',
-  'son-termes-review',
-  't-golf-calvia-review',
   'trip-planner',
 ]
+
+const ALL_GUIDE_SLUGS = [...new Set([...HAND_LISTED_GUIDE_SLUGS, ...REVIEW_POST_SLUGS])].sort()
 
 const EN_ROUTES = [
   '/',

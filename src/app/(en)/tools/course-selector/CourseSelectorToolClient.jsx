@@ -5,6 +5,7 @@ import { getCanonicalCourseDataByName } from '@lib/course-catalog'
 import { resolveCourseAccessName } from '@lib/course-access-data'
 import { formatCourseFeeLabel, getCoursePricingByName } from '@lib/course-pricing-data'
 import { COURSE_SELECTOR_T } from '@lib/course-selector-translations'
+import { getCourseReviewSlug } from '@lib/golf-courses-helpers'
 import { getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
@@ -47,7 +48,8 @@ const COURSE_COMPARISON_PDF_URL = '/downloads/course-comparison.pdf'
    Facts verified from src/lib/golf-courses-data.js. Green fees are
    peak/low season indications, not live rates.
    walkability (1–5) is a placeholder estimate (verify before launch).
-   played: true only where Andy has a published review.
+   reviewSlug is NOT typed per course: SELECTOR_COURSES below derives it from
+   golf-courses-data.js, so a new review needs no edit here.
 ===================================================================== */
 const SITE = 'https://www.mrmallorcagolf.com'
 
@@ -88,7 +90,7 @@ const COURSES = [
     bestFor:'A serious round on the island\'s most complete test',
     why:'Thomas Himmel\'s 2007 design sits in its own wind ecosystem: the elevated position means the wind behaves differently on every hole. Greens are fast and raised, so where you miss matters more than how you swing. The closing stretch from 15 to 18 is among the finest four holes in European golf. It is priced accordingly.',
     andy:'The wind on 16 is a different challenge to the wind on 7. That is what makes the course so replayable.',
-    played:true, reviewSlug:'son-gual-review',
+    played:true,
     bestPlayer:'Confident to low handicap',
     handicapReq:true,
     designer:'Thomas Himmel, 2007',
@@ -106,7 +108,7 @@ const COURSES = [
     bestFor:'The most scenic championship round in Mallorca',
     why:'Robert Trent Jones Jr. design, host of the Rolex Challenge Tour Grand Final. The Alcanada lighthouse is visible from 16 of the 18 holes and the 58 bunkers demand attention on every approach. The greens are severely undulating and extremely fast, which catches out holiday golfers who have not putted on anything similar. The restaurant terrace after the round is one of the best on the island.',
     andy:'One of the most beautiful rounds you\'ll play anywhere in Europe. The lighthouse view on 17 stays with you long after the scorecard is binned.',
-    played:true, reviewSlug:'alcanada-review',
+    played:true,
     bestPlayer:'Casual to low handicap',
     designer:'Robert Trent Jones Jr., 2003',
     signatureHole:'Holes 7 and 13 frame the Alcanada lighthouse (visible from 16 of 18 holes). Host of the Rolex Challenge Tour Grand Final.',
@@ -138,7 +140,7 @@ const COURSES = [
     bestFor:'The best-conditioned course in Spain, officially',
     why:'Named Best Golf Course in Spain at the 2025 World Golf Awards. Designed by Kurt Rossknecht against the Na Burguesa hills with views over Palma Bay, and a thousand-year-old olive tree beside the 15th. Conditioning is consistently at the top end on the island. Two things to know before booking: pricing is dynamic, and a daily licence applies on top of the green fee.',
     andy:'Conditioning here is as good as anywhere on the island. Budget for the daily licence on top of the green fee.',
-    played:true, reviewSlug:'son-muntaner-review',
+    played:true,
     bestPlayer:'Casual to low handicap',
     designer:'Kurt Rossknecht, 2000',
     signatureHole:'Hole 15: Sa Capitana (a thousand-year-old olive tree declared a natural monument stands beside the fairway). Course record 63 by Marcus Armitage.',
@@ -154,7 +156,7 @@ const COURSES = [
     bestFor:'European Tour golf at a public-access price',
     why:'Host of the 2021 European Tour Mallorca Golf Open and the only public course in the Santa Ponsa group. One of the longest courses on the island: the 10th at 590m is one of Europe\'s longest par 5s. Holes 5, 6 and 7 offer some of the best Tramuntana views on the island. Several tee shots are partially blind, so a course planner earns its keep here.',
     andy:'Long hitters get to open the shoulders here, and the green fee is fair for a course with this pedigree. Expect to lose a ball or two on the blind tee shots first time round.',
-    played:true, reviewSlug:'santa-ponsa-1-review',
+    played:true,
     bestPlayer:'Casual to low handicap',
     designer:'Folco Nardi & Pepe Gancedo, 1977',
     signatureHole:'Hole 10: 590m par-5, one of the longest individual holes in Europe. Holes 5–7 have the best Tramuntana mountain views on the island.',
@@ -169,7 +171,7 @@ const COURSES = [
     bestFor:'The hardest, most dramatic round on the island',
     why:'Built into the hills above Camp de Mar without compromise. The 6th is the longest par 5 in Spain at 609 metres. The rough is genuine and the fairways narrow, so bring extra balls and no ego. It is not suitable for beginners, and the views and difficulty together make it one of the most memorable rounds in Mallorca.',
     andy:'Bring double the balls you think you need. The course will take some of them, and the views are the compensation.',
-    played:true, reviewSlug:'golf-andratx-review',
+    played:true,
     bestPlayer:'Confident to low handicap',
     handicapReq:true,
     designer:'David Kidd, 1999',
@@ -327,7 +329,7 @@ const COURSES = [
     bestFor:'A well-run resort course close to Palma with forgiving fairways and one memorable hole',
     why:'An open countryside layout near Llucmajor, 15 minutes from Palma and 25 from the airport. Generous fairways and light rough make it accessible for most abilities. The tree-lined holes are where the round comes alive. Hole 16, an uphill dogleg-right par-5 finishing at a protected green, is the standout. Flat terrain suits walking.',
     andy:'The 16th is worth the round alone. Book early to manage pace, and use a running chip on the raised greens rather than trying to land it soft.',
-    played:true, reviewSlug:null,
+    played:true,
     bestPlayer:'Beginner to confident',
     designer:'Francisco Lopez Segales, 1995',
     signatureHole:'Hole 16: uphill dogleg-right par-5 through trees, finishing at a protected green. One of the most satisfying holes near Palma.',
@@ -344,7 +346,7 @@ const COURSES = [
     bestFor:'The best views closest to Palma, at a sensible price',
     why:'Located in the Na Burguesa mountains, 20 minutes from Palma but feeling entirely removed from the city. On a clear day the Castell de Bellver and Palma Cathedral are visible from the upper holes, with the Mediterranean behind. Not a long course, but blind tee shots, sharp doglegs, and elevation swings keep every hole interesting.',
     andy:'More character than most courses at this price level. The views from the back nine are the best available this close to Palma. Walk the front nine and take the buggy for the back if you value your knees.',
-    played:true, reviewSlug:null,
+    played:true,
     bestPlayer:'Casual to confident',
     designer:'Grupo Harris, 1998',
     signatureHole:'Hole 12: a short par-3 from an elevated tee with the best views on the course. Hole 13 plays differently than the card suggests. A 9-iron tee shot is the correct play.',
@@ -361,7 +363,7 @@ const COURSES = [
     bestFor:'One of the strongest all-round golf experiences on the island',
     why:'Originally designed by John Harris in 1978 and completely rebuilt after a €10 million renovation, T Golf Calvià now feels polished from arrival to finish. Fifteen lakes, wide driving lines, and large undulating greens make it playable without being bland. The sea sits on one side, the Tramuntana on the other. Host of the Mallorca Open.',
     andy:'Conditioning and service are both at the very top here. The lake system means you need to think on about half the holes. But the lines are generous enough that it plays fair for most levels. One of the courses I recommend most in the Southwest.',
-    played:true, reviewSlug:'t-golf-calvia-review',
+    played:true,
     bestPlayer:'Casual to low handicap',
     designer:'John Harris (1978); completely rebuilt, €10m renovation. Host of the Mallorca Open.',
     signatureHole:'Fifteen lakes throughout the layout, several coming into play on approach shots. Views of the Mediterranean and Tramuntana mountains visible simultaneously from the course.',
@@ -411,7 +413,7 @@ const COURSES = [
     bestFor:'A quiet members-quality round in Santa Ponsa (access arrangeable for Andy\'s clients)',
     why:'Members-only and usually the least-crowded course in the Southwest cluster. Many tee shots reward a hybrid over a driver: tree-lining is heavy and a ball in the wrong place means chipping back to the fairway. The 18th green is shaped like the island of Mallorca. A detail worth knowing before you play.',
     andy:'The 18th green is shaped like Mallorca itself. One of those details you want to know before you arrive. I arrange access for clients. Mention it when you enquire.',
-    played:true, reviewSlug:null,
+    played:true,
     bestPlayer:'Casual to confident',
     designer:'Opened 1991 · Members and arranged-access only',
     signatureHole:'Hole 18: par-3 with a green shaped like the island of Mallorca. Unique in Mallorca. The 2nd hole rewards a hybrid off the tee.',
@@ -427,7 +429,7 @@ const COURSES = [
     bestFor:'A quick nine for beginners or as an affordable add-on round',
     why:'Nine holes winding through the Santa Ponsa residential community. Most holes are short and well-suited to beginners, juniors, or anyone wanting to practise approach play without the commitment of a full round. Access is members-only, with guests playing alongside a member.',
     andy:'A good choice for the beginner in the group who wants to try the game without pressure. It is not public access: guests play with a member.',
-    played:true, reviewSlug:null,
+    played:true,
     bestPlayer:'Beginner to casual',
     designer:'Nine holes · Residential estate · Members and arranged-access only',
     tags:{ability:['beginner','casual'],style:['relaxed','family'],budget:['value'],group:['family','couple','friends','solo']}
@@ -488,6 +490,7 @@ const SELECTOR_COURSES = COURSES.map((course) => {
 
   return {
     ...course,
+    reviewSlug: getCourseReviewSlug(course.name),
     canonicalName: canonical?.canonicalName || course.name,
     displayName: canonical?.publicName || course.name,
     coursePar: canonical?.par ?? null,

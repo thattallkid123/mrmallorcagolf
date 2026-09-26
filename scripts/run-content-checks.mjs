@@ -64,6 +64,7 @@ const CHECKS = [
   { name: 'check:meta-length', script: 'check-meta-length.mjs' },
   { name: 'check:css-hygiene', script: 'check-css-hygiene.mjs' },
   { name: 'check:guide-review-keywords', script: 'check-guide-review-keywords.js' },
+  { name: 'check:guide-surfaces', script: 'check-guide-surfaces.mjs' },
   { name: 'check:hotel-reference', script: 'export-hotel-reference.mjs', args: ['--check'] },
 ]
 

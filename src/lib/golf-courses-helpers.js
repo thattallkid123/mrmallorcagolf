@@ -151,6 +151,24 @@ export function findCourseByName(name) {
   return null
 }
 
+// Roman numerals, the Pollensa spelling and a bracket-less T Golf Palma defeat
+// findCourseByName's fuzzy match.
+const REVIEW_LOOKUP_NAME_FIX = {
+  'T Golf Palma Puntiró': 'T Golf Palma (Puntiró)',
+  'Santa Ponsa I': 'Golf Santa Ponsa 1',
+  'Santa Ponsa II': 'Golf Santa Ponsa 2',
+  'Santa Ponsa III': 'Golf Santa Ponsa 3',
+  Pollensa: 'Golf Pollença',
+}
+
+// The single derivation of "which review does this course have". `reviewSlug`
+// on the course entry in golf-courses-data.js is the only place it is typed;
+// every tool and selector calls this instead of keeping its own link.
+export function getCourseReviewSlug(name) {
+  const course = findCourseByName(REVIEW_LOOKUP_NAME_FIX[name] || name)
+  return course?.reviewSlug || null
+}
+
 function getCourseDistanceKm(course) {
   const match = course?.location?.match(/(\d+)\s*km/i)
   return match ? Number(match[1]) : Number.POSITIVE_INFINITY
