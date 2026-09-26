@@ -1087,7 +1087,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Quint - Honest Review 2026",
         description:
-          'Son Quint green fee \u20ac76-\u20ac172 (dynamic), par 71, 15 minutes from Palma. Friendly for all levels, but the white tees are a proper test.',
+          'Son Quint green fee \u20ac76-\u20ac172 (dynamic), par 71, 15 minutes from Palma. Friendly for all levels and a good test from the white tees and back pins.',
         imagePath: '/images/son-quint-blog/son-quint-5.webp',
       },
       meta: {
