@@ -159,14 +159,18 @@ const REVIEW_LOOKUP_NAME_FIX = {
   'Santa Ponsa II': 'Golf Santa Ponsa 2',
   'Santa Ponsa III': 'Golf Santa Ponsa 3',
   Pollensa: 'Golf Pollença',
+  'Golf Pollensa': 'Golf Pollença',
 }
 
 // The single derivation of "which review does this course have". `reviewSlug`
 // on the course entry in golf-courses-data.js is the only place it is typed;
 // every tool and selector calls this instead of keeping its own link.
+export function findCourseForReview(name) {
+  return findCourseByName(REVIEW_LOOKUP_NAME_FIX[name] || name)
+}
+
 export function getCourseReviewSlug(name) {
-  const course = findCourseByName(REVIEW_LOOKUP_NAME_FIX[name] || name)
-  return course?.reviewSlug || null
+  return findCourseForReview(name)?.reviewSlug || null
 }
 
 function getCourseDistanceKm(course) {
