@@ -68,6 +68,51 @@
   max-width: 640px;
 }
 
+.pyt-hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.pyt-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 14px 28px;
+  border: 1px solid var(--gold-light);
+  border-radius: 2px;
+  background: var(--gold-light);
+  color: var(--deep);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.pyt-hero__btn:hover {
+  background: transparent;
+  color: var(--cream);
+}
+
+.pyt-hero__btn--secondary {
+  background: transparent;
+  color: var(--cream);
+  border-color: rgba(247,244,239,0.5);
+}
+
+.pyt-hero__btn--secondary:hover {
+  border-color: var(--cream);
+  background: rgba(247,244,239,0.08);
+}
+
 .pyt-option-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -87,15 +132,13 @@
   color: var(--cream);
   text-decoration: none;
   min-width: 0;
-  box-shadow: 0 18px 40px rgba(8, 7, 5, 0.14);
-  transition: transform 0.3s var(--ease-luxury), border-color 0.3s var(--ease-luxury), background 0.3s var(--ease-luxury), box-shadow 0.3s var(--ease-luxury);
+  transition: transform 0.3s var(--ease-luxury), border-color 0.3s var(--ease-luxury), background 0.3s var(--ease-luxury);
 }
 
 .pyt-option-card:hover {
   transform: translateY(-3px);
   border-color: rgba(212,176,104,0.5);
   background: rgba(255,255,255,0.08);
-  box-shadow: 0 24px 56px rgba(8, 7, 5, 0.2);
 }
 
 .pyt-option-card span {
@@ -140,11 +183,6 @@
   background: var(--cream);
 }
 
-/* Two light sections read as one block - don't stack both sets of padding */
-.pyt-section--light + .pyt-section--light {
-  padding-top: 0;
-}
-
 /* The embedded course selector carries its own bottom padding */
 #free-course-finder .cst-wrap {
   padding-bottom: 0 !important;
@@ -161,6 +199,31 @@
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 3px;
+}
+
+.pyt-tool-shell .cst-wrap {
+  background: transparent;
+}
+
+.pyt-tool-shell .cst-hero {
+  min-height: 0;
+  padding-top: 0;
+}
+
+.pyt-tool-shell .cst-btn {
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.pyt-tool-shell .cst-btn:hover {
+  box-shadow: none;
+}
+
+.pyt-tool-shell .cst-card,
+.pyt-tool-shell .cst-result-card,
+.pyt-tool-shell .cst-course-card {
+  border-radius: 3px;
+  box-shadow: none;
 }
 
 /* Mobile: tighten spacing around Sample Trip */
@@ -232,12 +295,28 @@
   color: var(--charcoal);
 }
 
+.pyt-planning-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: clamp(30px, 5vw, 64px);
+  align-items: start;
+}
+
+.pyt-planning-main {
+  min-width: 0;
+}
+
+.pyt-planning-aside {
+  position: sticky;
+  top: calc(var(--nav-h) + 28px);
+}
+
 .pyt-includes {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 10px 32px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .pyt-includes li {
@@ -264,12 +343,11 @@
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
   gap: clamp(24px, 4vw, 46px);
   align-items: start;
-  margin: 0 0 40px;
-  padding: clamp(26px, 4vw, 38px);
-  border: 1px solid rgba(26,25,22,0.1);
+  margin: clamp(34px, 5vw, 52px) 0 0;
+  padding: clamp(22px, 3vw, 30px) 0 clamp(22px, 3vw, 30px) clamp(24px, 3vw, 34px);
   border-left: 3px solid var(--gold);
   border-radius: 3px;
-  background: rgba(255,255,255,0.62);
+  background: transparent;
 }
 
 .pyt-possibilities__intro h3 {
@@ -323,25 +401,16 @@
 
 .pyt-pro-cta {
   background: var(--cream);
-  border-radius: 8px;
-  padding: 32px 36px;
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  flex-wrap: wrap;
+  border-radius: 3px;
+  padding: clamp(24px, 3vw, 32px);
   border: 1px solid var(--sand);
 }
 
-/* Notes pin to the top of the row so their first lines align; the button
-   keeps the row's `align-items: center` so its size and position are
-   unchanged from the original layout. */
 .pyt-pro-cta__note {
   font-size: 1rem;
   color: var(--charcoal);
   line-height: 1.6;
-  flex: 1;
-  min-width: 220px;
-  align-self: flex-start;
+  margin: 0 0 14px;
 }
 
 .pyt-pro-cta__note--muted {
@@ -349,61 +418,51 @@
 }
 
 .pyt-booking-only {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--space-6);
-  flex-wrap: wrap;
-  margin-top: var(--space-8);
-  padding: var(--space-6);
-  border: 1px solid var(--sand);
-  background: var(--cream);
-}
-
-.pyt-booking-only > div {
-  flex: 1 1 340px;
+  margin-top: 18px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(26,25,22,0.12);
 }
 
 .pyt-booking-only h3 {
   margin: 0 0 var(--space-2);
   font-family: var(--font-serif);
-  font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+  font-size: clamp(1.28rem, 2vw, 1.58rem);
+  font-weight: 400;
   color: var(--pine);
 }
 
 .pyt-booking-only p {
   margin: 0;
-  max-width: 660px;
   line-height: 1.6;
   color: var(--charcoal);
+  font-size: 0.96rem;
 }
 
 .pyt-booking-only__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: center;
   min-height: 44px;
-  padding: 13px 26px;
+  margin-top: 18px;
+  padding: 12px 22px;
   border: 1px solid var(--pine);
   border-radius: 2px;
-  background: var(--pine);
-  color: var(--cream);
+  background: transparent;
+  color: var(--pine);
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: background 0.2s, color 0.2s;
-  white-space: nowrap;
 }
 
 .pyt-booking-only__link:hover {
-  background: transparent;
-  color: var(--pine);
+  background: var(--pine);
+  color: var(--cream);
 }
 
 .pyt-pro-cta__btn {
@@ -411,14 +470,13 @@
   background: var(--pine);
   color: var(--cream);
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 14px 32px;
+  padding: 14px 24px;
   border-radius: 2px;
-  white-space: nowrap;
   transition: background 0.2s;
 }
 
@@ -495,6 +553,13 @@
 }
 
 /* ── Sample itinerary ────────────────────────────────────── */
+.pyt-sample-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.58fr);
+  gap: clamp(28px, 5vw, 58px);
+  align-items: stretch;
+}
+
 .pyt-itin-invite {
   display: flex;
   align-items: center;
@@ -506,6 +571,44 @@
   border-left: 3px solid var(--gold);
   background: #fff;
   border-radius: 3px;
+}
+
+.pyt-route-line {
+  margin-top: 18px;
+  padding: 18px 0 0;
+  border-top: 1px solid rgba(26,25,22,0.12);
+}
+
+.pyt-route-line span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--gold-text);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.pyt-route-line strong {
+  display: block;
+  color: var(--deep);
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.pyt-sample-media {
+  position: relative;
+  min-height: 340px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--sand);
+}
+
+.pyt-sample-media__img {
+  object-fit: cover;
 }
 
 .pyt-itin-invite__title {
@@ -536,6 +639,7 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-decoration: none;
   padding: 13px 30px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
@@ -831,8 +935,19 @@
 }
 
 @media (max-width: 860px) {
+  .pyt-planning-layout,
+  .pyt-sample-layout {
+    grid-template-columns: 1fr;
+  }
+  .pyt-planning-aside {
+    position: static;
+  }
   .pyt-possibilities {
     grid-template-columns: 1fr;
+    padding-left: 22px;
+  }
+  .pyt-sample-media {
+    min-height: 260px;
   }
   .pyt-itin-why__list {
     grid-template-columns: 1fr;

@@ -71,6 +71,8 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "eyebrow": "Sample Trip",
     "title": "Five courses, five days. Based in Palma.",
     "intro": "A Palma-based example for a group of club golfers: five rounds, one longer day north, and a clear reason for the order.",
+    "routeLabel": "Route preview",
+    "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
     "whyThisShape": {
       "title": "Why the week runs in this order",
       "lead": "Most trips go wrong in the gaps between tee times: the first morning, the long drive, the hard course, the flight home. This is the sort of routing I would check before I booked anything.",

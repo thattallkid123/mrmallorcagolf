@@ -35,6 +35,16 @@ const WA_TRIP_MESSAGES = {
   sv: 'Hej Andy, jag vill planera en golfresa till Mallorca.',
 }
 
+const SAMPLE_IMAGE_ALTS = {
+  en: 'Alcanada golf course during a Mallorca golf trip',
+  de: 'Alcanada Golfplatz während einer Mallorca-Golfreise',
+  es: 'Campo de golf Alcanada durante un viaje de golf en Mallorca',
+  fr: 'Parcours de golf Alcanada pendant un séjour golf à Majorque',
+  nl: 'Alcanada golfbaan tijdens een golfreis naar Mallorca',
+  sv: 'Alcanada golfbana under en golfresa till Mallorca',
+  zh: '马略卡高尔夫行程中的 Alcanada 球场',
+}
+
 export default function PlanYourTripView({ locale = 'en', content: rawContent }) {
   const content = rawContent || getPlanYourTripContent(locale)
   const courseLinkLabel = COURSE_LINK_LABELS[locale] || COURSE_LINK_LABELS.en
@@ -42,6 +52,12 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
   const contactHref = buildLocalePath('/contact', locale)
   const pwapHref = buildLocalePath('/play-with-a-pro', locale)
   const hotelRecommenderHref = buildLocalePath('/tools/hotel-recommender', locale)
+  const tripPlanningHref = `${contactHref}?service=trip-planning`
+  const teeTimeHref = `${contactHref}?service=tee-time-booking`
+  const messageHref = locale === 'zh'
+    ? `${contactHref}#wechat`
+    : `https://wa.me/34624466702?text=${encodeURIComponent(WA_TRIP_MESSAGES[locale] || WA_TRIP_MESSAGES.en)}`
+  const messageLabel = locale === 'zh' ? '微信联系' : (WA_TRIP_LABELS[locale] || WA_TRIP_LABELS.en)
 
   return (
     <main>
@@ -61,16 +77,29 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           <p className="pyt-eyebrow">{content.heroEyebrow}</p>
           <h1 className="pyt-hero__title">{content.heroTitle}</h1>
           <p className="pyt-hero__body">{content.heroBody}</p>
-          <div className="pyt-option-strip" aria-label={content.heroEyebrow}>
-            <a href="#sample-itinerary" className="pyt-option-card">
-              <span>{content.options.itineraryLabel}</span>
-              <strong>{content.options.itineraryTitle}</strong>
-              <em>{content.options.itineraryNote}</em>
+          <div className="pyt-hero__actions">
+            <Link href={tripPlanningHref} className="pyt-hero__btn">
+              {content.professional.cta}
+            </Link>
+            <a
+              href={messageHref}
+              className="pyt-hero__btn pyt-hero__btn--secondary"
+              target={locale === 'zh' ? undefined : '_blank'}
+              rel={locale === 'zh' ? undefined : 'noopener noreferrer'}
+            >
+              {messageLabel}
             </a>
+          </div>
+          <div className="pyt-option-strip" aria-label={content.heroEyebrow}>
             <a href="#professional-planning" className="pyt-option-card pyt-option-card--gold">
               <span>{content.options.proLabel}</span>
               <strong>{content.options.proTitle}</strong>
               <em>{content.options.proNote}</em>
+            </a>
+            <a href="#sample-itinerary" className="pyt-option-card">
+              <span>{content.options.itineraryLabel}</span>
+              <strong>{content.options.itineraryTitle}</strong>
+              <em>{content.options.itineraryNote}</em>
             </a>
             <a href="#free-course-finder" className="pyt-option-card">
               <span>{content.options.basicLabel}</span>
@@ -81,20 +110,105 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
         </div>
       </section>
 
+      <section className="pyt-section pyt-section--dark" id="professional-planning">
+        <div className="pyt-section__inner">
+          <div className="pyt-tier-header">
+            <span className="pyt-tier-badge pyt-tier-badge--gold">{content.professional.eyebrow}</span>
+            <h2 className="pyt-tier-title">{content.professional.title}</h2>
+            <p className="pyt-tier-body">{content.professional.body}</p>
+          </div>
+
+          <div className="pyt-planning-layout">
+            <div className="pyt-planning-main">
+              <ul className="pyt-includes">
+                {content.professional.includes.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+
+              {content.professional.possibilities ? (
+                <div className="pyt-possibilities">
+                  <div className="pyt-possibilities__intro">
+                    <h3>{content.professional.possibilities.title}</h3>
+                    <p>{content.professional.possibilities.body}</p>
+                  </div>
+                  <ul className="pyt-possibilities__list">
+                    {content.professional.possibilities.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </div>
+
+            <aside className="pyt-planning-aside" aria-label={content.professional.cta}>
+              <div className="pyt-pro-cta">
+                <p className="pyt-pro-cta__note">{content.professional.note}</p>
+                {content.professional.feeNote ? (
+                  <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
+                    {content.professional.feeNote}
+                  </p>
+                ) : null}
+                {content.professional.sendPrompt ? (
+                  <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
+                    {content.professional.sendPrompt}
+                  </p>
+                ) : null}
+                <Link href={tripPlanningHref} className="pyt-pro-cta__btn">
+                  {content.professional.cta}
+                </Link>
+              </div>
+
+              {content.professional.bookingOnly ? (
+                <div className="pyt-booking-only">
+                  <div>
+                    <h3>{content.professional.bookingOnly.title}</h3>
+                    <p>{content.professional.bookingOnly.body}</p>
+                  </div>
+                  <Link href={teeTimeHref} className="pyt-booking-only__link">
+                    {content.professional.bookingOnly.cta}
+                  </Link>
+                </div>
+              ) : null}
+            </aside>
+          </div>
+        </div>
+      </section>
+
       {content.sampleItinerary && (
         <section className="pyt-section pyt-section--light" id="sample-itinerary">
           <div className="pyt-section__inner pyt-section__inner--wide">
-            <div className="pyt-itin-invite">
-              <div className="pyt-itin-invite__text">
-                <span className="pyt-tier-badge">{content.sampleItinerary.eyebrow}</span>
-                <h2 className="pyt-itin-invite__title">{content.sampleItinerary.title}</h2>
-                <p className="pyt-itin-invite__body">{content.sampleItinerary.intro}</p>
+            <div className="pyt-sample-layout">
+              <div>
+                <div className="pyt-itin-invite">
+                  <div className="pyt-itin-invite__text">
+                    <span className="pyt-tier-badge">{content.sampleItinerary.eyebrow}</span>
+                    <h2 className="pyt-itin-invite__title">{content.sampleItinerary.title}</h2>
+                    <p className="pyt-itin-invite__body">{content.sampleItinerary.intro}</p>
+                  </div>
+                  {locale === 'en' && content.sampleItinerary.fullGuideLink ? (
+                    <Link href={content.sampleItinerary.fullGuideLink} className="pyt-itin-invite__btn">
+                      {content.sampleItinerary.fullGuideLabel}
+                    </Link>
+                  ) : null}
+                </div>
+
+                {content.sampleItinerary.route ? (
+                  <div className="pyt-route-line">
+                    <span>{content.sampleItinerary.routeLabel}</span>
+                    <strong>{content.sampleItinerary.route}</strong>
+                  </div>
+                ) : null}
               </div>
-              {locale === 'en' && content.sampleItinerary.fullGuideLink ? (
-                <Link href={content.sampleItinerary.fullGuideLink} className="pyt-itin-invite__btn">
-                  {content.sampleItinerary.fullGuideLabel}
-                </Link>
-              ) : null}
+              <div className="pyt-sample-media">
+                <Image
+                  src="/images/blog-trip-planning/Alcanada.webp"
+                  alt={SAMPLE_IMAGE_ALTS[locale] || SAMPLE_IMAGE_ALTS.en}
+                  fill
+                  sizes="(max-width: 860px) 100vw, 38vw"
+                  className="pyt-sample-media__img"
+                />
+              </div>
             </div>
 
             {content.sampleItinerary.whyThisShape ? (
@@ -131,76 +245,6 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
         </section>
       )}
 
-      <section className="pyt-section pyt-section--dark" id="professional-planning">
-        <div className="pyt-section__inner">
-          <div className="pyt-tier-header">
-            <span className="pyt-tier-badge pyt-tier-badge--gold">{content.professional.eyebrow}</span>
-            <h2 className="pyt-tier-title">{content.professional.title}</h2>
-            <p className="pyt-tier-body">{content.professional.body}</p>
-          </div>
-
-          <ul className="pyt-includes">
-            {content.professional.includes.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-
-          {content.professional.possibilities ? (
-            <div className="pyt-possibilities">
-              <div className="pyt-possibilities__intro">
-                <h3>{content.professional.possibilities.title}</h3>
-                <p>{content.professional.possibilities.body}</p>
-              </div>
-              <ul className="pyt-possibilities__list">
-                {content.professional.possibilities.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
-
-          {content.professional.bookingOnly ? (
-            <div className="pyt-booking-only">
-              <div>
-                <h3>{content.professional.bookingOnly.title}</h3>
-                <p>{content.professional.bookingOnly.body}</p>
-              </div>
-              <Link href={`${contactHref}?service=tee-time-booking`} className="pyt-booking-only__link">
-                {content.professional.bookingOnly.cta}
-              </Link>
-            </div>
-          ) : null}
-
-          <div className="pyt-pro-cta">
-            <p className="pyt-pro-cta__note">{content.professional.note}</p>
-            {content.professional.feeNote ? (
-              <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
-                {content.professional.feeNote}
-              </p>
-            ) : null}
-            {content.professional.sendPrompt ? (
-              <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
-                {content.professional.sendPrompt}
-              </p>
-            ) : null}
-            <Link href={`${contactHref}?service=trip-planning`} className="pyt-pro-cta__btn">
-              {content.professional.cta}
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="pyt-section pyt-section--light" id="free-course-finder">
-        <div className="pyt-section__inner pyt-section__inner--wide">
-          <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} />
-          <p className="pyt-tier-body pyt-free__browse">
-            <Link href={golfCoursesHref} className="pyt-free__browse-link">
-              {courseLinkLabel}
-            </Link>
-          </p>
-        </div>
-      </section>
-
       <section className="pyt-section pyt-section--pine">
         <div className="pyt-section__inner pyt-addon">
           <div className="pyt-addon__text">
@@ -221,11 +265,22 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
         </div>
       </section>
 
+      <section className="pyt-section pyt-section--light" id="free-course-finder">
+        <div className="pyt-section__inner pyt-section__inner--wide pyt-tool-shell">
+          <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} />
+          <p className="pyt-tier-body pyt-free__browse">
+            <Link href={golfCoursesHref} className="pyt-free__browse-link">
+              {courseLinkLabel}
+            </Link>
+          </p>
+        </div>
+      </section>
+
       <StickyMobileCta
-        primaryHref={contactHref}
+        primaryHref={tripPlanningHref}
         primaryLabel={content.professional.cta}
-        secondaryHref={locale === 'zh' ? `${contactHref}#wechat` : `https://wa.me/34624466702?text=${encodeURIComponent(WA_TRIP_MESSAGES[locale] || WA_TRIP_MESSAGES.en)}`}
-        secondaryLabel={locale === 'zh' ? '微信联系' : (WA_TRIP_LABELS[locale] || WA_TRIP_LABELS.en)}
+        secondaryHref={messageHref}
+        secondaryLabel={messageLabel}
       />
     </main>
   )

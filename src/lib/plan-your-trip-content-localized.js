@@ -76,6 +76,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "eyebrow": "Viaje de ejemplo",
       "title": "Cinco campos, cinco días. Base en Palma.",
       "intro": "Un ejemplo con base en Palma para un grupo de jugadores de club: cinco rondas, un día más largo hacia el norte y una razón clara para el orden.",
+      "routeLabel": "Vista previa de la ruta",
+      "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
         "title": "Por qué la semana va en este orden",
         "lead": "Muchos viajes fallan en los huecos entre tee times: la primera mañana, el trayecto largo, el campo duro, el vuelo de vuelta. Este es el tipo de ruta que revisaría antes de reservar nada.",
@@ -171,6 +173,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "eyebrow": "Beispielreise",
       "title": "Fünf Plätze, fünf Tage. Standort Palma.",
       "intro": "Ein Beispiel mit Standort Palma für eine Gruppe Clubgolfer: fünf Runden, ein langerer Tag im Norden und ein klarer Grund für die Reihenfolge.",
+      "routeLabel": "Routenvorschau",
+      "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
         "title": "Warum die Woche in dieser Reihenfolge läuft",
         "lead": "Viele Reisen scheitern in den Lücken zwischen den Startzeiten: am ersten Morgen, bei der langen Fahrt, am schweren Platz, beim Rückflug. Genau diese Route würde ich prüfen, bevor ich etwas buche.",
@@ -266,6 +270,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "eyebrow": "Séjour type",
       "title": "Cinq parcours, cinq jours. Basé à Palma.",
       "intro": "Un exemple basé à Palma pour un groupe de golfeurs de club : cinq parties, une journée plus longue vers le nord et une raison claire pour l’ordre.",
+      "routeLabel": "Aperçu de l'itinéraire",
+      "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
         "title": "Pourquoi la semaine suit cet ordre",
         "lead": "Beaucoup de séjours se compliquent dans les espaces entre les départs : le premier matin, le long trajet, le parcours difficile, le vol retour. C’est le type d’itinéraire que je vérifierais avant de réserver quoi que ce soit.",
@@ -361,6 +367,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "eyebrow": "Voorbeeldreis",
       "title": "Vijf banen, vijf dagen. Basis in Palma.",
       "intro": "Een voorbeeld met Palma als basis voor een groep clubgolfers: vijf rondes, één langere dag naar het noorden en een duidelijke reden voor de volgorde.",
+      "routeLabel": "Routevoorbeeld",
+      "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
         "title": "Waarom de week in deze volgorde loopt",
         "lead": "Veel reizen gaan mis in de gaten tussen starttijden: de eerste ochtend, de lange rit, de zware baan, de vlucht naar huis. Dit is het soort route dat ik zou controleren voordat ik iets boek.",
@@ -456,6 +464,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "eyebrow": "Exempelresa",
       "title": "Fem banor, fem dagar. Bas i Palma.",
       "intro": "Ett Palma-baserat exempel för en grupp klubbgolfare: fem ronder, en laengre dag norrut och en tydlig anledning till ordningen.",
+      "routeLabel": "Ruttförhandsvisning",
+      "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
         "title": "Varför veckan ligger i den här ordningen",
         "lead": "Många resor faller i luckorna mellan starttiderna: första morgonen, den långa körningen, den svåra banan, flyget hem. Det här är den typ av rutt jag skulle kontrollera innan något bokas.",
@@ -552,6 +562,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "eyebrow": "行程范例",
       "title": "五座球场，五天。以帕尔马为基地。",
       "intro": "一个以帕尔马为基地的例子，适合一组俱乐部球友：五轮球，其中一天去北部，顺序背后有清楚的理由。",
+      "routeLabel": "路线预览",
+      "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
         "title": "为什么这一周这样安排",
         "lead": "很多行程出问题，不是在 tee time 本身，而是在中间的空隙：第一天早上、长途车程、难度大的球场、返程航班。这是我在预订前会先检查的路线。",
