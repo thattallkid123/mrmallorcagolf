@@ -1,6 +1,6 @@
 # Course Blog Pipeline
 
-**Read this file completely before doing anything. Then read `MMG_BRAND_VOICE_GUIDELINES.md`. Then start.**
+**Read this file, then `MMG_BRAND_VOICE_GUIDELINES.md`, then start.** The step-by-step mechanics (files to edit, scripts to run, checks, deploy, go-live) live in the `publish-course-guide` skill (`.claude/skills/publish-course-guide/SKILL.md`), which is kept current. This file holds what the skill points back to: what Andy hands over, the photo rules, how to write the review, and the translation quality rules. If the two ever disagree, the skill wins. (Rewritten 2026-09-24: the old steps for wiring, deploy, carousel order and the translation file layout had drifted from the live code.)
 
 For branch decisions and shared content rules, also read `BRANCHES.md` and `CONTENT_WORKFLOW.md`.
 
@@ -8,235 +8,114 @@ For branch decisions and shared content rules, also read `BRANCHES.md` and `CONT
 
 ## What Andy hands over
 
-1. Voice memo transcript (paste raw — no cleanup needed)
-2. Photos — drag into chat, or give file paths with a one-line description each
+1. Voice memo transcript (paste raw, no cleanup needed)
+2. Photos: Drive links or files, with a one-line description each
 
 That is all that is needed to begin.
 
 ---
 
-## Step 1 — Ask gap questions (one batch, before anything else)
+## Step 1 - Ask gap questions (one batch, before anything else)
 
-After reading the transcript, ask Andy ONE message containing only what is genuinely missing:
+Ask ONE message containing only what is genuinely missing. The full list is in the skill's Step 0. The ones that get missed most:
 
-- Green fee (peak / twilight / midweek if different)
-- Rating out of 10
-- Tees played (back/white/yellow + approximate yardage)
-- Walked or buggy
-- The honest negative (required — one per post, specific not vague)
-- Anything about who he played with, if relevant to the story
+- Green fee on the day, rating out of 10, tees played, walked or buggy, singles policy, food and price, wind
+- The honest negative (required, one per post, specific)
+- **Which photo leads the article and which is the social/OG preview image** (two separate choices)
+- **Where the review goes in the guides carousel** (never default to the end)
 
-Never ask more than once. Never drip-feed. If the transcript answers something, do not re-ask it.
+Never ask more than once and never drip-feed. If the transcript answers something, do not re-ask it. Check tees and hole lengths against `src/lib/scorecard-data.js` before writing them.
 
 ---
 
-## Step 2 — Process photos
+## Step 2 - Process photos
 
-**Rules — no exceptions:**
+- Use `ImageOps.exif_transpose(img)` from Pillow on EVERY photo first. Never skip this.
+- Always read from the **original source file**. Never re-process an already-processed WebP (double rotation).
+- **No cropping of blog post images.** Andy's composition is intentional.
+- Max 1600px on the longest edge, Lanczos, WebP quality 82. Each file under 600 KB, folder under 4 MB.
+- Save as `public/images/[slug]-blog/[slug]-1.webp`, `-2.webp`, ...
 
-- Use `ImageOps.exif_transpose(img)` from Pillow on EVERY photo before anything else. This applies pixel rotation from the EXIF tag. Never skip this step.
-- Always read from the **original source file** (Drive JPG or uploaded file). Never re-process an already-processed WebP — double rotation breaks everything.
-- **No cropping of blog post images.** Save the full rotated image. Andy's composition is intentional. The site displays images full-width; nothing is cut off.
-- Resize to max 1600px on the longest edge, Lanczos, WebP quality 82.
-- Target: each file under 600 KB. Total blog folder under 4 MB.
-- Rename in order: `[slug]-1.webp`, `[slug]-2.webp`, etc.
-- Save to `public/images/[slug]-blog/`
+**Card image (guides carousel):** centre-crop `public/images/courses/[slug].webp` to 900x386 and save as `public/images/[slug]-card.webp`. Never a close-up or a people shot. If there is no courses/ image, ask Andy.
 
-**Card image (guides carousel):**
-- Check `public/images/courses/[slug].webp` first. If it exists and is an aerial/wide course shot, use it — crop to 900×386 from centre, resize, save as `public/images/[slug]-card.webp`. This will always look better than a phone photo.
-- If no courses/ image exists, ask Andy to pick from the blog photos, or source from the course's press pack.
-- Never use a close-up or people shot as the card.
+**Social preview:** it is the same-stem JPG of `metadata.imagePath`, generated automatically by `npm run convert-og-images` (also part of the build). There is no separate 1200x630 file. Use the photo Andy picks, and delete a stale JPG if the pick changes.
 
-**Social preview:**
-- 1200×630 JPG from the strongest landscape composition
-- Save as `public/images/[slug]-social.jpg` (JPG not WebP — WhatsApp requires it)
-
-**Verify before moving on:**
-- Open each saved WebP and confirm it is the right way up and shows the full image
-- Confirm card and social are landscape and look good at thumbnail size
+**Verify before moving on:** open each saved WebP and confirm it is the right way up and shows the whole image.
 
 ---
 
-## Step 3 — Write the post
+## Step 3 - Write the post
 
-Read `MMG_BRAND_VOICE_GUIDELINES.md` before writing the first word. The self-check at the end of that doc is mandatory.
+Read `MMG_BRAND_VOICE_GUIDELINES.md` before writing the first word. Then do the skill's pre-review self-read (banned words, repetition, vague claims, internal consistency) **before** Andy sees a draft. A green `check:voice` does not mean the draft is good.
 
-**Title format — mandatory, no exceptions:**
-`[Course Name], Mallorca - A PGA Professional's Honest Review (2026)`
-Examples: "Club de Golf Alcanada - A PGA Professional's Honest Review (2026)", "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)"
+**Titles:** `metadata.title` is `[Course Name] - Honest Review 2026` (under 40 characters before the site suffix). `meta.title` is `[Course Name], Mallorca: A PGA Professional's Honest Review (2026)`.
 
-**Green fee — never say "peak" unless you know it was peak.** Use the range from `golf-courses-data.js` (e.g. "€90-135") or say "€X on the day we played" if only one price is known.
+**Green fee:** never say "peak" unless you know it was peak. Use the range from `golf-courses-data.js` or say "€X on the day we played" if only one price is known.
 
-**Image captions — must describe what is actually in the photo.** Never use a caption that describes something not visible in the image (e.g. don't caption a non-tree-lined hole with text about tree-lined holes).
+**Image captions and alt text** must describe what is actually in the photo. Never caption something that is not visible.
 
 Structure every review the same way:
-1. Opening hook — a specific moment from the round (not "I visited X course")
+1. Opening hook, a specific moment from the round
 2. First impression / setting
-3. The course itself — layout, key holes, what makes it distinctive
-4. Conditioning (greens, bunkers, fairways)
-5. Practical info block (green fee, par, yardage, facilities)
-6. The honest negative — specific, not softened
-7. Verdict — rating out of 10, one sentence on who it suits
-8. Play with a Pro CTA
+3. The course itself: layout, key holes, what makes it distinctive
+4. Conditioning (greens, bunkers, fairways) and service
+5. Practical information block (green fee, par, length, facilities)
+6. The honest negative, specific and not softened
+7. Common Questions
+8. Verdict: rating out of 10, who it suits
+9. Play with a Pro CTA
 
 Hard rules (search for every one before finishing):
-- No em dashes (—). Use a comma, full stop, or rewrite the sentence.
-- No banned words: stunning, breathtaking, nestled, seamless, elevate, unforgettable, hidden gem, curated, bespoke, vibrant, bustling, exceptional
-- No banned phrases: "The best part?", "More than just", "Whether you're", "From X to Y", "In the heart of", "It's not X it's Y"
-- "Mallorca" not "Majorca"
-- "€" not "euros"
-- Place names with correct accents: Calvià, Andratx, etc.
-- First person only for courses Andy has personally played
+- No em dashes. Use a comma, full stop, or rewrite.
+- No banned words (full list in the voice guide, section 3; do not rely on a copy of it here). "genuinely" as filler is one of them.
+- No banned constructions or dead metaphors (voice guide sections 3 and 4).
+- "Mallorca" not "Majorca". "€" not "euros". Correct accents (Calvià).
+- First person only for courses Andy has personally played.
+- Course and hole lengths in metres; yards only for his own shot distances.
 
-Andy's voice patterns (from published posts):
-- Short declarative sentences. Subject, verb, done.
-- Specific numbers and details over adjectives
-- One honest negative stated plainly, not hedged
-- Dry understatement rather than enthusiasm
-- No AI-style openings, no travel-brochure warmth
+Andy's voice: short declarative sentences, specific numbers over adjectives, one honest negative stated plainly, dry understatement, no brochure warmth.
 
 ---
 
-## Step 4 — Wire into the site
+## Step 4 - Wire it in, check, deploy
 
-Technical reference is in the `nextjs-mrmallorcagolf` skill. Summary:
+Follow the skill (Steps 2 to 5.5 and 7). Ship the English version first, English-only, and **wait for Andy to read it** before any translation, carousel registration or ping.
 
-**Critical: never use the Edit tool on `guide-post-content.js` or `guides-content.js`.** These files are large (40KB+) and the Edit tool truncates them silently. Always use Python byte-level replacement.
+## Step 5 - After Andy approves
 
-Steps:
-1. Add entry to `src/lib/guide-post-content.js` (English only)
-2. Add to `COURSE_REVIEW_DETAILS` in `GuidePostView.jsx`
-3. Add to `GUIDE_IMAGES` in `GuidesIndexView.jsx`
-4. Create `src/app/guides/[slug]-review/page.jsx`
-5. Do NOT add to `guides-content.js` until Andy approves at the live URL
+Follow the skill's Step 5.5 (translations) and Step 6 (carousel, listing link, guide app, played-courses list). `CHANGELOG.md` is filled by the chatbackup process, so do not add a line by hand.
 
 ---
 
-## Step 5 — Checks and deploy
+## Translation quality rules
 
-```
-npm run check:text
-npm run check:i18n-release
-npm run build
-```
+**English is always the master. Never add content to a language that is not in English.** The file layout and registration are in the skill (Step 5.5); write all six locales from one generator script and let `json.dumps` handle quoting.
 
-All must pass. Then give Andy:
-
-```
-cd $env:MMG_WORKSPACE_ROOT\mrmallorcagolf-real
-git add -A
-git commit -m "Add [Course Name] review (English, hidden from index)"
-git push
-```
-
-Live within ~2 minutes at `mrmallorcagolf.com/guides/[slug]-review`.
-
----
-
-## Step 6 — After Andy approves
-
-1. Add to `guides-content.js` English `liveGuides` array (correct position in carousel order — see below)
-2. Add English entry to `guides-content.js` with `img` and `imgPosition` fields
-3. Add all 6 language translations (see Step 7 below)
-4. Run all checks again, push
-5. Append one line to `CHANGELOG.md`
-
----
-
-## Carousel order (guides page)
-
-Alcanada → Son Gual → T Golf Calvià → Son Muntaner → Santa Ponsa 1 → Andratx → Son Termes
-
-New reviews go at the end unless Andy specifies otherwise.
-
-All non-English locales must match this order exactly. Run the order-verification check after any change.
-
----
-
-## Step 7 — Translations
-
-**Rule: English is always the master. Never add content to language pages not present in English.**
-
-### What needs translating for each new review
-
-Four things, all via Python text replacement on the relevant file (never Edit tool):
-
-1. `guide-post-content-localized.js` — the full post content (all blocks) for de/es/fr/nl/sv/zh
-2. `guides-content.js` — the card entry (badge, title, intro, keywords) for each locale's `liveGuides`
-3. `src/app/[locale]/guides/[slug]-review/page.jsx` — one JSX file per locale (boilerplate, no translation needed)
-4. Order in each locale's `liveGuides` must match English
-
-### How to do translations efficiently (low token cost, high accuracy)
-
-**Write all 6 translations in one Python script, run once.** Do not do them one locale at a time in chat — that wastes tokens and risks inconsistency.
-
-Structure the script as a single Python file that:
-- Opens the target file in text mode (`open(path, 'r', encoding='utf-8')`)
-- Finds the correct insertion point using `content.find('specific unique marker')` — never `rfind` on a generic string like `'\n}'`
-- Contains all 6 locale blocks as a single string literal
-- Writes back in one pass
-
-**Critical encoding rule:** Never use bytes mode (`rb`/`wb`) when the content contains non-ASCII characters (accents, Chinese). Always use `open(path, 'r', encoding='utf-8')` and `open(path, 'w', encoding='utf-8')`. Bytes mode causes `SyntaxError` on Chinese characters in string literals.
-
-### Translation quality rules
-
-- **Golf terminology**: translate naturally for each market — German golfers say "Fairway", "Bunker", "Green" (no translation needed); French say "fairway", "bunker", "green"; Spanish say "calle", "búnker", "green"
-- **Tone**: match Andy's voice — short declarative sentences, specific numbers, dry and direct. No travel-brochure warmth in any language.
-- **Banned words apply in every language**: no equivalents of stunning/breathtaking/nestled etc.
-- **Prices**: always `€` symbol, never spell out "euros" in any language
-- **Course name**: always `T Golf Calvià` — never translate place names
-- **Accents**: Calvià (not Calvia), Mallorca (not Majorca/Mallorque etc.)
-- **CTA links**: keep `linkLabel` short and action-oriented per language
-- **Facts block**: translate the label string, keep the value (e.g. `['Bis 210 €', 'Peak-Greenfee']`)
-
-### Locale-specific notes
+- **Golf terms:** translate naturally per market. German, French, Dutch and Swedish keep "fairway", "bunker", "green"; Spanish uses "calle", "bunker", "green".
+- **Tone:** match Andy's voice, short and specific. No travel-brochure warmth in any language.
+- **Banned words apply in every language** (no equivalents of stunning, breathtaking, nestled, and so on).
+- **Prices and numbers follow the locale:** ES/DE/FR/SV put the euro sign after the number (`76 €`); NL puts it before (`€76`); ZH writes `76欧元`. Thousands: `6.021 m` (ES/DE), `6 021 m` (FR/SV), `6.021m` (NL), `6021米` (ZH).
+- **Place names:** never translate course names. Accents stay (Calvià). French uses "Majorque"; Chinese uses 马略卡（Mallorca）and 帕尔马 for Palma.
+- **Distances Andy gives in feet** are converted to metres in translation.
+- **CTA links:** short and action-oriented per language. Facts blocks: translate labels, keep numeric values.
 
 | Locale | Key differences |
 |--------|----------------|
-| de | "Green" not "Grün"; "Fairway" unchanged; formal "Sie" not used — Andy's blog voice is informal |
-| es | "calle" for fairway, "búnker" for bunker; "green" unchanged; tú form |
-| fr | "fairway"/"bunker"/"green" all unchanged; vouvoiement not needed in blog context |
+| de | "Green", "Fairway" unchanged; informal voice, no formal "Sie" |
+| es | "calle" for fairway, "bunker" for bunker; "green" unchanged; tu form |
+| fr | "fairway"/"bunker"/"green" unchanged; no need for formal vouvoiement in blog copy |
 | nl | "fairway"/"bunker"/"green" unchanged; informal "je/jij" |
 | sv | "fairway"/"bunker"/"green" unchanged; informal "du" |
-| zh | Simplified Chinese only; golf terms: 球道 (fairway), 沙坑 (bunker), 果岭 (green), 标准杆 (par), 发球台 (tee); keep course names in English |
+| zh | Simplified Chinese; 球道 (fairway), 沙坑 (bunker), 果岭 (green), 标准杆 (par), 发球台 (tee); keep course names in English |
 
-### Verification after translations
-
-```python
-# Quick check — run in sandbox after script
-import re
-path = 'src/lib/guides-content.js'
-with open(path, 'r', encoding='utf-8') as f:
-    content = f.read()
-locale_positions = [(m.start(), m.group(1)) for m in re.finditer(r"locale: '(\w+)'", content)]
-for i, (start, locale) in enumerate(locale_positions):
-    end = locale_positions[i+1][0] if i+1 < len(locale_positions) else len(content)
-    section = content[start:end]
-    live_start = section.find('liveGuides:')
-    archived_start = section.find('archivedGuides:')
-    live_section = section[live_start:archived_start if archived_start != -1 else live_start+8000]
-    slugs = re.findall(r"slug: '([^']+)'", live_section)
-    print(f"{locale}: {slugs[:8]}")
-# All locales must show identical slug order
-```
-
-Also check `guide-post-content-localized.js` has the new slug:
-```python
-with open('src/lib/guide-post-content-localized.js', 'r', encoding='utf-8') as f:
-    content = f.read()
-for locale in ['de', 'es', 'fr', 'nl', 'sv', 'zh']:
-    idx = content.find("'[slug]-review'")
-    block = content[idx:idx+50000]
-    print(f"{locale}: {'OK' if f'{locale}:' in block[:40000] else 'MISSING'}")
-```
+Translations are AI-written: say so when handing over and offer a native-speaker skim for ZH, SV and NL.
 
 ---
 
 ## What done looks like
 
-- Live URL renders correctly, all photos right-way up, full image visible (no cropping)
-- Card (900×386) looks good at thumbnail size — aerial/wide shot, not a phone close-up
-- Social preview (1200×630) shows correctly when pasted into WhatsApp
-- Brand voice self-check passed
-- Build green, Vercel deployed
-- CHANGELOG updated
+- Live URL renders correctly in all seven locales, photos right way up, full image visible
+- Card looks right at thumbnail size and sits where Andy asked in every locale
+- The social preview JPG is the photo Andy picked and returns 200
+- Voice self-read done, build green, CI green, Vercel READY
+- Played-courses list updated in Drive (`MMG_ENCYCLOPAEDIA_DATA_MASTER.md`)

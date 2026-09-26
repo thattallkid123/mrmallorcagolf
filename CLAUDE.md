@@ -189,7 +189,7 @@ For any price change use the `/pricing-change` skill (full surface sweep). To **
 - **Systems & planning:** `Systems & Planning/`
 - **Course contacts & courtesy:** private native Courtesy master Google Sheet (Golf Courses tab — 24 courses with structured primary, second and former contacts plus courtesy/booking fields; China Golf Operators is the second tab). Affiliates live in `Partnerships/MMG_MALLORCA_PARTNER_CONTACTS.xlsx`. The old `.xlsx` contact/courtesy workbooks are retired archive or historical-snapshot files.
 - **Client bookings & revenue:** `Private/Workbooks/MMG_CLIENT_BOOKINGS_AND_REVENUE.xlsx`
-- **Courses:** `Courses/[CourseName]/` (reviews, scorecards, assets)
+- **Course photos:** Drive `Media/My Photos/`, named `<Course Name>.jpg`, `<Course Name> (2).jpg`, and so on. There are no per-course Drive folders. Course facts come from the generated data; scorecard PDFs are in `Reference/Scorecards/`.
 - **Tax & compliance:** `Business Operations & Financial/Tax & Compliance/2026/`
 - **Reference:** `Reference/` (scorecard PDFs, pricing research)
 - **Knowledge skills:** `Skills/MMG_SKILL_*.md` (16 skills currently synced - frontend-design-mmg, mmg-autonomo-filing, mmg-blog-writing, mmg-chinese-backlog, mmg-chinese-content, mmg-client-docs, mmg-email-management, mmg-hermes-ops, mmg-partnerships, mmg-repurpose, mmg-seo-content, mmg-voice-check, mr-mallorca-golf-carousel, nextjs-mrmallorcagolf, site-operations-mmg, social-media-mmg). Synced to Claude by `SKILLS_SYNC.ps1`. Separate from repo code-workflow skills in `.claude/skills/`.
@@ -217,7 +217,7 @@ Next.js 16 App Router, React 18, JSX only. Vercel deployment from GitHub. Langua
 ## Critical Rules
 
 - **Fonts:** Never hardcode `font-family: 'Jost'` or `font-family: 'Cormorant Garamond'`. Always use CSS variables: `font-family: var(--font-sans)` and `font-family: var(--font-serif)`. Hardcoding causes fallback fonts (Arial, Georgia) to render before the webfont loads. Read `docs/FONT_LOADING_RULE.md` for full context and audit status.
-- **Course reviews:** Read `COURSE_BLOG_PIPELINE.md` before starting.
+- **Course reviews:** Use the `/publish-course-guide` skill for the steps and read `COURSE_BLOG_PIPELINE.md` for the photo, writing and translation rules before starting.
 - **Course photos:** Always `ImageOps.exif_transpose()` from original source files. Never crop blog images. Max 1600px, WebP quality 82. (Full workflow: `/add-site-photos`.)
 - **Prototype images:** Use `/images/*-card.webp` for guide card images, `/images/courses/*.webp` for full course detail images. No external stock photos (Unsplash etc.) — all from `public/images/`. See `docs/prototype-guide.md`.
 - **Import paths:** Section pages live under a locale directory — `src/app/(en)/…` for English (route group) and `src/app/<lang>/…` for other locales — so both sit the same depth from `src/components`. A page such as `src/app/(en)/golf-courses/GolfCoursesView.jsx` imports via `../../../components/`. Count directory levels rather than assuming a fixed depth; deeper nesting adds another `../`.

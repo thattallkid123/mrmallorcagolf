@@ -1,6 +1,6 @@
 # Content Workflow
 
-This file is the quick map. For course review work, `COURSE_BLOG_PIPELINE.md` is the full source of truth.
+This file is the quick map. For course review work, the `publish-course-guide` skill has the current step-by-step mechanics and `COURSE_BLOG_PIPELINE.md` holds the photo rules, writing rules and translation quality rules.
 
 ## Before Any Content Work
 

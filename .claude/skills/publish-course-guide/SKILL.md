@@ -85,7 +85,7 @@ To ship an English-only draft without it needing all 6 locale entries (which `ch
 3. Give Andy the live URL. Iterate on his feedback in English only — this is the cheap phase to catch wording, ordering, and fact issues in.
 4. **Only once he explicitly approves:** move the slug from `EN_ONLY_REVIEW_POST_SLUGS` back to `REVIEW_POST_SLUGS`, write the 6 locale translations, then proceed to Step 6 below.
 
-**How the translations are actually wired today** (`COURSE_BLOG_PIPELINE.md` Step 7 still describes an older single-file layout, so follow this list, not that section; its golf-terminology table and quality rules still apply):
+**How the translations are actually wired today** (`COURSE_BLOG_PIPELINE.md` was rewritten on 2026-09-24 to match; its "Translation quality rules" section holds the terminology table and locale conventions):
 
 - Translations live in **one file per guide**: `src/lib/guide-post-content-localized/{slug}.js`, exporting `{ es, de, fr, nl, sv, zh }`. Each locale has `metadata {title, description}`, `meta {badge, readTime, updated, title, intro, related[]}` and a `blocks[]` that is **positional**: one entry per English block, carrying only the translatable fields (image: `alt`+`caption`; paragraph/heading: `text`; facts/notes: `items` (+`title`); cta: `text`+`linkLabel`). `check:guide-parity` fails if the count differs from English.
 - Generate the file from a Python script that builds the dicts and writes with `json.dumps(..., ensure_ascii=False, indent=2)` so quoting and escaping can't break the syntax (the inline `<a href=\"...\">` links are the usual trap). Assert 33-ish block counts and that every `metadata.description` is under 155 characters per locale (the ES and DE drafts both went over on the first try).

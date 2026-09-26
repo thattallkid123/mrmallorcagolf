@@ -53,6 +53,7 @@ Standardized 2026-08-17 — prior pages had drifted into "Review & Fees", "Revie
 | Santa Ponsa 1 | — | — | — | — | — |
 | Son Termes | — | — | — | — | — |
 | Son Antem West | — | — | — | — | — |
+| Son Quint | 54M / 54L, certificate required | €55, optional | Yes (walked all 18, 2026-09-24) | €3 | Yes, paired with another group unless the tee time is privatised |
 
 Fill in blanks when verified. Never guess or copy from external sites without checking.
 
