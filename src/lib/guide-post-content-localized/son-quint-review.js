@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Son Quint - Análisis honesto 2026",
-      "description": "Son Quint: green fee 76-172 € (dinámico), par 71, a 15 minutos de Palma. Apto para todos los niveles y exigente incluso desde los tees blancos."
+      "description": "Son Quint: green fee 76-172 € (dinámico), par 71, a 15 minutos de Palma. Amable para todos, pero los tees blancos son una prueba de verdad."
     },
     "meta": {
       "badge": "Análisis del campo",
@@ -42,7 +42,7 @@ const content = {
         "text": "Cómo se juega el campo"
       },
       {
-        "text": "Hicimos los 18 hoyos andando. Los primeros nueve son mucho más llanos y se caminan con facilidad. Yo pegaba muchos hierros desde el tee para que la vuelta fuera sociable con mi cliente, pero incluso así, jugando desde los tees blancos y pegando un hierro de salida a unas 230 yardas, había mucho en lo que pensar. Son Quint es el campo más nuevo del grupo Arabella Golf y en general se considera el más amable de los cuatro. Esa fama no debe confundirse con que sea fácil."
+        "text": "Hicimos los 18 hoyos andando. Los primeros nueve son mucho más llanos y se caminan con facilidad. Yo pegaba muchos hierros desde el tee para que la vuelta fuera sociable con mi cliente, pero incluso así, jugando desde los tees blancos (los de atrás) y pegando un hierro de salida a unas 230 yardas, había mucho en lo que pensar. Son Quint es el campo más nuevo del grupo Arabella Golf y en general se considera el más amable de los cuatro. Esa fama no debe confundirse con que sea fácil."
       },
       {
         "text": "Varios greens están elevados sobre la calle, así que el juego corto tiene que ser preciso. Eso importa más de lo normal aquí porque los greens son duros y bastantes banderas de hoy estaban cerca de los bordes. Los greens en sí estaban notablemente más lentos en los primeros hoyos, con el rocío todavía puesto, y muy rápidos en cuanto el equipo de mantenimiento pasó a cortarlos."
@@ -178,7 +178,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Quint - Ehrliche Bewertung 2026",
-      "description": "Son Quint: Greenfee 76-172 € (dynamisch), Par 71, 15 Minuten von Palma. Für alle Niveaus, anspruchsvoller als gedacht, auch von den weißen Tees."
+      "description": "Son Quint: Greenfee 76-172 € (dynamisch), Par 71, 15 Minuten von Palma. Freundlich für alle Niveaus, aber die weißen Tees sind ein echter Test."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -217,7 +217,7 @@ const content = {
         "text": "So spielt sich der Platz"
       },
       {
-        "text": "Wir sind alle 18 Löcher gelaufen. Die Front Nine sind deutlich flacher und leicht zu gehen. Ich habe viele Eisen vom Abschlag gespielt, damit die Runde mit meinem Kunden gesellig blieb, aber selbst dann gab es von den weißen Abschlägen aus, mit einem Eisen um die 230 Yards vom Tee, noch genug zu bedenken. Der Son Quint ist der neueste Platz der Arabella Golf Gruppe und gilt allgemein als der freundlichste der vier. Dieser Ruf sollte nicht mit leicht verwechselt werden."
+        "text": "Wir sind alle 18 Löcher gelaufen. Die Front Nine sind deutlich flacher und leicht zu gehen. Ich habe viele Eisen vom Abschlag gespielt, damit die Runde mit meinem Kunden gesellig blieb, aber selbst dann gab es von den weißen (hinteren) Abschlägen aus, mit einem Eisen um die 230 Yards vom Tee, noch genug zu bedenken. Der Son Quint ist der neueste Platz der Arabella Golf Gruppe und gilt allgemein als der freundlichste der vier. Dieser Ruf sollte nicht mit leicht verwechselt werden."
       },
       {
         "text": "Mehrere Greens liegen über dem Fairway, deshalb muss das kurze Spiel präzise sein. Das zählt hier mehr als sonst, weil die Greens fest sind und ziemlich viele der heutigen Fahnen nah am Rand steckten. Die Greens selbst waren auf den ersten Löchern spürbar langsamer, mit dem Tau noch darauf, und wurden richtig schnell, sobald das Greenkeeping-Team durch war und gemäht hatte."
@@ -353,7 +353,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Quint - Avis honnête 2026",
-      "description": "Son Quint : green fee 76-172 € (dynamique), par 71, à 15 minutes de Palma. Accessible à tous, plus exigeant qu'il n'y paraît, même des départs blancs."
+      "description": "Son Quint : green fee 76-172 € (dynamique), par 71, à 15 minutes de Palma. Accueillant pour tous, mais les départs blancs sont un vrai test."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -392,7 +392,7 @@ const content = {
         "text": "Comment le parcours se joue"
       },
       {
-        "text": "Nous avons fait les 18 trous à pied. Les neuf premiers sont bien plus plats et se marchent facilement. Je jouais beaucoup de fers depuis le départ pour garder la partie conviviale avec mon client, mais même ainsi, depuis les départs blancs et avec un fer d'environ 230 yards au départ, il y avait largement de quoi réfléchir. Son Quint est le parcours le plus récent du groupe Arabella Golf et il est généralement considéré comme le plus accueillant des quatre. Cette réputation ne doit pas être confondue avec facile."
+        "text": "Nous avons fait les 18 trous à pied. Les neuf premiers sont bien plus plats et se marchent facilement. Je jouais beaucoup de fers depuis le départ pour garder la partie conviviale avec mon client, mais même ainsi, depuis les départs blancs (ceux du fond) et avec un fer d'environ 230 yards au départ, il y avait largement de quoi réfléchir. Son Quint est le parcours le plus récent du groupe Arabella Golf et il est généralement considéré comme le plus accueillant des quatre. Cette réputation ne doit pas être confondue avec facile."
       },
       {
         "text": "Plusieurs greens sont surélevés par rapport au fairway, le petit jeu doit donc être précis. Cela compte plus qu'ailleurs ici parce que les greens sont fermes et que pas mal de drapeaux du jour étaient proches des bords. Les greens étaient nettement plus lents sur les premiers trous, avec la rosée encore présente, puis vraiment rapides une fois que l'équipe était passée les tondre."
@@ -528,7 +528,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Quint - Eerlijke review 2026",
-      "description": "Son Quint: greenfee €76-€172 (dynamisch), par 71, 15 minuten van Palma. Toegankelijk voor elk niveau, lastiger dan het lijkt, zelfs vanaf de witte tees."
+      "description": "Son Quint: greenfee €76-€172 (dynamisch), par 71, 15 minuten van Palma. Vriendelijk voor elk niveau, maar de witte tees zijn een echte test."
     },
     "meta": {
       "badge": "Baanreview",
@@ -567,7 +567,7 @@ const content = {
         "text": "Hoe de baan speelt"
       },
       {
-        "text": "We hebben alle 18 holes gelopen. De front nine zijn veel vlakker en makkelijk te lopen. Ik sloeg veel ijzers vanaf de tee om de ronde gezellig te houden met mijn klant, maar zelfs dan, vanaf de witte tees en met een ijzer van zo'n 230 yards van de tee, was er nog genoeg om over na te denken. Son Quint is de nieuwste baan van de Arabella Golf-groep en wordt over het algemeen gezien als de vriendelijkste van de vier. Die reputatie moet niet verward worden met makkelijk."
+        "text": "We hebben alle 18 holes gelopen. De front nine zijn veel vlakker en makkelijk te lopen. Ik sloeg veel ijzers vanaf de tee om de ronde gezellig te houden met mijn klant, maar zelfs dan, vanaf de witte (achterste) tees en met een ijzer van zo'n 230 yards van de tee, was er nog genoeg om over na te denken. Son Quint is de nieuwste baan van de Arabella Golf-groep en wordt over het algemeen gezien als de vriendelijkste van de vier. Die reputatie moet niet verward worden met makkelijk."
       },
       {
         "text": "Meerdere greens liggen boven de fairway, dus het korte spel moet nauwkeurig zijn. Dat telt hier zwaarder dan normaal omdat de greens hard zijn en nogal wat van de vlaggen van vandaag dicht bij de randen stonden. De greens zelf waren de eerste holes merkbaar langzamer met de dauw er nog op, en echt snel zodra het team was langsgeweest om te maaien."
@@ -703,7 +703,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Quint - Ärlig recension 2026",
-      "description": "Son Quint: greenfee 76-172 € (dynamisk), par 71, 15 minuter från Palma. Lättillgänglig för alla nivåer, svårare än den ser ut, även från de vita tee."
+      "description": "Son Quint: greenfee 76-172 € (dynamisk), par 71, 15 minuter från Palma. Vänlig för alla nivåer, men de vita tee är ett riktigt test."
     },
     "meta": {
       "badge": "Banrecension",
@@ -742,7 +742,7 @@ const content = {
         "text": "Så spelar sig banan"
       },
       {
-        "text": "Vi gick alla 18 hål. Front nine är mycket plattare och lätt att gå. Jag slog många järn från tee för att hålla rundan sällskaplig med min kund, men även då, från de vita tee och med ett järn på ungefär 230 yards från tee, fanns det gott om att tänka på. Son Quint är den nyaste banan i Arabella Golf-gruppen och anses allmänt vara den vänligaste av de fyra. Det ryktet ska inte förväxlas med lätt."
+        "text": "Vi gick alla 18 hål. Front nine är mycket plattare och lätt att gå. Jag slog många järn från tee för att hålla rundan sällskaplig med min kund, men även då, från de vita (bakre) tee och med ett järn på ungefär 230 yards från tee, fanns det gott om att tänka på. Son Quint är den nyaste banan i Arabella Golf-gruppen och anses allmänt vara den vänligaste av de fyra. Det ryktet ska inte förväxlas med lätt."
       },
       {
         "text": "Flera greener ligger högre än fairway, så det korta spelet måste vara exakt. Det spelar större roll här än vanligt eftersom greenerna är hårda och ganska många av dagens flaggor stod nära kanterna. Greenerna själva var märkbart långsammare de första hålen med daggen kvar, och riktigt snabba när banpersonalen hade varit förbi och klippt dem."
@@ -878,7 +878,7 @@ const content = {
   "zh": {
     "metadata": {
       "title": "Son Quint 球场 - PGA教练真实评测（2026）",
-      "description": "Son Quint 果岭费 76-172欧元（动态定价），标准杆71，距帕尔马15分钟。适合各种水平，即使从白色发球台打也比看上去更有挑战。"
+      "description": "Son Quint 果岭费 76-172欧元（动态定价），标准杆71，距帕尔马15分钟。适合各种水平，但白色发球台是一场真正的考验。"
     },
     "meta": {
       "badge": "球场评测",
@@ -917,7 +917,7 @@ const content = {
         "text": "球场打起来怎么样"
       },
       {
-        "text": "我们走完了全部18洞。前九洞平坦得多，走起来很轻松。为了让这一轮和客人打得轻松愉快，我开球用了很多铁杆，但即使这样，从白色发球台出发、开球用一支铁杆打大约230码，仍然有不少需要动脑的地方。Son Quint 是 Arabella Golf 集团里最新的球场，一般被认为是四座球场里最友好的一座。这个口碑不该被理解成简单。"
+        "text": "我们走完了全部18洞。前九洞平坦得多，走起来很轻松。为了让这一轮和客人打得轻松愉快，我开球用了很多铁杆，但即使这样，从白色（最后方）发球台出发、开球用一支铁杆打大约230码，仍然有不少需要动脑的地方。Son Quint 是 Arabella Golf 集团里最新的球场，一般被认为是四座球场里最友好的一座。这个口碑不该被理解成简单。"
       },
       {
         "text": "好几个果岭高于球道，所以近距离球技必须准确。这里这一点比平时更重要，因为果岭偏硬，今天不少旗杆位置都靠近果岭边缘。果岭本身在前几个洞明显更慢，露水还在，等球场工作人员修剪完之后就变得非常快。"

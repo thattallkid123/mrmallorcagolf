@@ -1087,7 +1087,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Quint - Honest Review 2026",
         description:
-          'Son Quint green fee \u20ac76-\u20ac172 (dynamic), par 71, 15 minutes from Palma. Accessible for all levels, tougher than it looks even from the white tees.',
+          'Son Quint green fee \u20ac76-\u20ac172 (dynamic), par 71, 15 minutes from Palma. Friendly for all levels, but the white tees are a proper test.',
         imagePath: '/images/son-quint-blog/son-quint-5.webp',
       },
       meta: {
@@ -1123,7 +1123,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'How The Course Plays' },
         {
           type: 'paragraph',
-          text: "We walked all 18. The front nine is much flatter and an easy walk. I was hitting a lot of irons off the tee to keep the round sociable with my client, but even then, playing the white tees and hitting an iron off the tee around 230 yards, there was still plenty to think about. Son Quint is the newest course in the Arabella Golf group and generally considered the friendliest of the four. That reputation should not be mistaken for easy.",
+          text: "We walked all 18. The front nine is much flatter and an easy walk. I was hitting a lot of irons off the tee to keep the round sociable with my client, but even then, playing the white (back) tees and hitting an iron off the tee around 230 yards, there was still plenty to think about. Son Quint is the newest course in the Arabella Golf group and generally considered the friendliest of the four. That reputation should not be mistaken for easy.",
         },
         {
           type: 'paragraph',
