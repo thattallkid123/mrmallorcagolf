@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { getGolfCostCalculatorT } from '../../../../lib/golf-cost-calculator-translations'
-import { getLegalPath } from '@lib/site'
+import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 import { calculate, getSuggestedCourses, fmt, fmtR, mid, DEFAULT_STATE } from '../../../../lib/golf-cost-calculator-logic'
 
@@ -631,7 +631,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                 <a
                   className="gcc-btn primary"
                   style={{ background:'#3D6455' }}
-                  href="https://www.mrmallorcagolf.com/contact"
+                  href={`https://www.mrmallorcagolf.com${buildLocalePath('/plan-your-trip', lang)}`}
                   target="_blank"
                   rel="noopener"
                 >{t.email.refine}</a>

@@ -102,7 +102,7 @@ export default function PostLayout({ children, meta, lang }) {
             <p className="post-sidebar__label">{c.experience}</p>
             <h3>{planning.title}</h3>
             <p>{planning.body}</p>
-            <a href={`${pre}/contact`} className="btn btn--gold post-sidebar__cta">{planning.primary}</a>
+            <a href={`${pre}/plan-your-trip`} className="btn btn--gold post-sidebar__cta">{planning.primary}</a>
             <a href={`${pre}/play-with-a-pro`} className="btn btn--outline-white post-sidebar__cta post-sidebar__cta--secondary">{planning.secondary}</a>
           </div>
           <div className="post-sidebar__block" style={{ marginTop: '2px' }}>
