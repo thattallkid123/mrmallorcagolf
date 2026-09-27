@@ -254,7 +254,7 @@ function renderBlock(block, index, locale, imageOrdinal, articleSlug) {
           </p>
         ) : locale === 'en' && block.href === '/play-with-a-pro' ? (
           <p className="post-cta__secondary">
-            If you are still choosing courses or trying to shape the trip first, <Link href={buildLocalePath('/contact', locale)} className="post-cta__secondary-link">send Andy the details</Link> and he will narrow it down for you.
+            Still shaping the trip? Start with <Link href={buildLocalePath('/plan-your-trip', locale)} className="post-cta__secondary-link">Plan Your Trip</Link> and I will narrow the courses down with you.
           </p>
         ) : null}
       </div>

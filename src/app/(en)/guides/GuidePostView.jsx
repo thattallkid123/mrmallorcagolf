@@ -64,7 +64,7 @@ const FUNNEL_CTA_STRINGS = {
 function FunnelCtaBlock({ locale, courseName }) {
   const t = FUNNEL_CTA_STRINGS[locale] || FUNNEL_CTA_STRINGS.en
   const toolsHref = joinHref(locale, '/tools/course-selector')
-  const contactHref = joinHref(locale, '/contact')
+  const planHref = joinHref(locale, '/plan-your-trip')
   return (
     <div className="post-funnel-cta">
       <div className="post-funnel-cta__item">
@@ -73,7 +73,7 @@ function FunnelCtaBlock({ locale, courseName }) {
       </div>
       <div className="post-funnel-cta__item">
         <p className="post-funnel-cta__question">{t.q2}</p>
-        <Link href={contactHref} className="post-funnel-cta__link">{t.l2}</Link>
+        <Link href={planHref} className="post-funnel-cta__link">{t.l2}</Link>
       </div>
     </div>
   )
@@ -263,7 +263,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
 
   if (block.type === 'cta') {
     const href = joinHref(locale, block.href)
-    const contactHref = buildLocalePath('/contact', locale)
+    const planHref = buildLocalePath('/plan-your-trip', locale)
     return (
       <div key={`cta-${index}`} className="post-cta">
         <p className="post-cta__text"><InlineRichText text={block.text} locale={locale} /></p>
@@ -272,7 +272,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
         </div>
         {locale === 'en' && block.href === '/play-with-a-pro' ? (
           <p className="post-cta__secondary">
-            Still narrowing down the trip? Use the <Link href={contactHref} className="post-cta__secondary-link">contact page</Link> and send Andy your dates, hotel area, handicap, and shortlist.
+            Still narrowing down the trip? Start with <Link href={planHref} className="post-cta__secondary-link">Plan Your Trip</Link> and send Andy your dates, hotel area, handicap, and shortlist.
           </p>
         ) : null}
       </div>
