@@ -26,7 +26,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   "professional": {
     "eyebrow": "Personal",
     "title": "Let me plan and book the golf side of your trip",
-    "body": "Send me your dates, group size, and what you want from the trip. I will recommend the right courses for your group, work out the routing and number of rounds, book and confirm the tee times, arrange buggies and club rentals, and shape the golf days so the trip runs cleanly from start to finish. If you are arranging golf for guests, the same details are enough for me to reply with a clear first plan.",
+    "body": "Send me your dates, group size, and what you want from the trip. I will recommend the right courses for your group, work out the routing and number of rounds, book and confirm the tee times, arrange buggies and club rentals, and shape the golf days so the trip runs cleanly from start to finish.",
     "includes": [
       "Course recommendations matched to your game, group, and budget",
       "Where to base yourself and why",
@@ -38,7 +38,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     ],
     "workingModes": {
       "title": "Choose the level of help you need.",
-      "body": "Some groups only need tee times checked and booked. Others need the full golf plan built around flights, hotel area, handicap range and budget. Hotels and concierges can use the same route for guests.",
+      "body": "Some groups only need tee times checked and booked. Others need the full golf plan built around flights, hotel area, handicap range and budget.",
       "items": [
         {
           "title": "Tee times only",
@@ -52,12 +52,6 @@ export const PLAN_YOUR_TRIP_CONTENT = {
           "cta": "Enquire about trip planning",
           "target": "trip-planning"
         },
-        {
-          "title": "Hotel or concierge request",
-          "body": "If you are arranging golf for a guest, send the same basic details. I will reply with a clear first plan that you can pass back to them.",
-          "cta": "Help a guest with golf",
-          "target": "tee-time-booking"
-        }
       ]
     },
     "possibilities": {
@@ -76,7 +70,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "cta": "Enquire about trip planning",
     "bookingOnly": {
       "title": "Just need the golf booked?",
-      "body": "Send your dates, group size, handicap range and hotel area. I will recommend suitable courses, check tee-time availability, and give you a clear quote before confirming the rounds. You play with your own group; I do not need to attend. Hotels and concierges can use this route for guests who only need the golf arranged.",
+      "body": "Send your dates, group size, handicap range and hotel area. I will recommend suitable courses, check tee-time availability, and give you a clear quote before confirming the rounds. You play with your own group; I do not need to attend.",
       "cta": "Ask me to book tee times"
     }
   },

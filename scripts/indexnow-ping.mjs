@@ -49,6 +49,7 @@ const INDEXNOW_GUIDES = [
   'https://www.mrmallorcagolf.com/guides/5-day-mallorca-golf-itinerary',
   'https://www.mrmallorcagolf.com/guides/t-golf-palma-review',
   'https://www.mrmallorcagolf.com/guides/son-quint-review',
+  'https://www.mrmallorcagolf.com/guides/where-to-stay-mallorca-golf',
 ]
 
 // Get guide slugs that changed since last push

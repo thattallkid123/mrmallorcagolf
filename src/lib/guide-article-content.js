@@ -148,6 +148,157 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
     ],
   },
+  'where-to-stay-mallorca-golf': {
+    metadata: {
+      title: 'Where to Stay for Mallorca Golf',
+      description:
+        'Where to stay for a Mallorca golf trip: Palma, southwest, north or east. Choose your base by drive time, course order and tee times.',
+      canonical: 'https://www.mrmallorcagolf.com/guides/where-to-stay-mallorca-golf',
+      image: 'https://www.mrmallorcagolf.com/images/blog-trip-planning/Old Town Palma.webp',
+      imageAlt: 'Where to stay in Mallorca for golf: choosing the right base for your trip',
+    },
+    meta: {
+      badge: 'Trip Planning',
+      badgeGold: false,
+      readTime: '6 min read',
+      updated: 'September 2026',
+      title: 'Where to Stay in Mallorca for Golf',
+      intro:
+        'The best base depends on the courses you want to play, not just the hotel brochure. Palma, the southwest, the north and the east all work for different golf trips.',
+      sidebarPlanning: {
+        title: 'Turn this guide into a trip that works.',
+        body: 'Send your dates, handicap, hotel area and shortlist. I will tell you which base works, where the courses fit and what order makes sense.',
+        primary: 'Plan Your Trip',
+        secondary: 'Play With A Pro',
+      },
+      related: [
+        { slug: 'golf-trip-planning-mallorca', title: 'How to Plan a Mallorca Golf Trip' },
+        { slug: '5-day-mallorca-golf-itinerary', title: '5-Day Mallorca Golf Trip Itinerary' },
+        { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+        { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+      ],
+    },
+    blocks: [
+      {
+        type: 'paragraph',
+        text:
+          'The hotel is not the first golf decision. The course order is. Once you know which rounds matter most, the right base becomes much easier to choose.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Mallorca looks small on a map, but golf days do not only happen on the map. They happen after breakfast, in rental cars, with tee times, buggies, club hire, traffic around Palma, and one person in the group who always wants a slower morning.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          "I would choose the base by asking one question first: which course do you not want to compromise? If that answer is Son Gual, Alcanada, T Golf Calvià or Son Muntaner, the hotel decision starts there.",
+      },
+      { type: 'heading', text: 'Palma: the easiest base for most golf trips' },
+      {
+        type: 'paragraph',
+        text:
+          'Palma is the simplest answer for many groups. You have restaurants, airport access, short drives to the Arabella courses, and workable access to Son Gual, T Golf Palma, Son Antem, Santa Ponsa 1 and T Golf Calvià.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'The honest limit: Palma is not next door to everything. Alcanada is still a proper day out, and the eastern courses become less attractive if the group dislikes driving. For a first Mallorca golf trip, though, Palma gives the fewest bad compromises.',
+      },
+      {
+        type: 'image',
+        src: '/images/blog-trip-planning/Old Town Palma.webp',
+        alt: 'Palma old town, a practical base for a Mallorca golf trip',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        caption: 'Palma works well when the group wants golf, restaurants and simple airport access.',
+      },
+      { type: 'heading', text: 'Southwest Mallorca: best for Santa Ponsa, Andratx and Calvià' },
+      {
+        type: 'paragraph',
+        text:
+          'The southwest makes sense if the trip is built around Santa Ponsa 1, T Golf Calvià, Golf de Andratx, Bendinat or Son Vida. It also works for groups staying around Portals, Santa Ponsa, Camp de Mar or the Calvià coast.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'This is a good base when the golf is part of a wider holiday, because the drives stay sensible and the non-golf parts of the trip still work. The trade-off is that Alcanada becomes a long day and the east of the island starts to feel detached from the plan.',
+      },
+      { type: 'heading', text: 'North Mallorca: choose it for Alcanada, not by accident' },
+      {
+        type: 'paragraph',
+        text:
+          'The north is the base to consider if Alcanada is the course you care about most. Staying around Alcúdia, Port de Pollença or the north coast makes the Alcanada day much calmer and opens up Golf Pollença as a lower-pressure option.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'The negative is clear: if you also want Son Gual, T Golf Calvià and the Palma courses, the north adds driving. I like Alcanada enough to build a trip around it, but I would not stay north just because one round there appears on the itinerary.',
+      },
+      {
+        type: 'image',
+        src: '/images/blog-trip-planning/Alcanada.webp',
+        alt: 'Alcanada golf course in north Mallorca',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        caption: 'Alcanada is worth planning around. It is not a quick round from every base.',
+      },
+      { type: 'heading', text: 'East Mallorca: useful for a quieter golf trip' },
+      {
+        type: 'paragraph',
+        text:
+          'The east suits groups who want a quieter rhythm and are happy to play courses like Pula, Capdepera, Canyamel, Son Servera and Vall d’Or. The towns around Artà, Capdepera and the east coast can make a good trip if the golf is planned locally.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'I would not base a first-time, high-end golf trip in the east if the group mostly wants Son Gual, Alcanada and the southwest. Too many drives start to dictate the week.',
+      },
+      { type: 'heading', text: 'What about staying at a golf resort?' },
+      {
+        type: 'paragraph',
+        text:
+          'A golf resort can work if convenience matters more than variety. Son Antem is useful for an easy resort rhythm. The Arabella area works well for Son Muntaner, Son Quint and Son Vida. The decision is not only hotel quality, it is whether the nearby courses suit the group.',
+      },
+      {
+        type: 'paragraph',
+        text:
+          'Local tip: do not let the hotel location choose every course for you. A strong trip can include one convenient round, one serious test, one scenic day, and one easier final round near the airport.',
+      },
+      { type: 'heading', text: 'My default advice' },
+      {
+        type: 'paragraph',
+        text:
+          'For most visiting golfers, start with Palma or the southwest. Add Alcanada as one planned longer day if the group wants the north. Move the base only if the trip is clearly built around that area.',
+      },
+      {
+        type: 'list',
+        items: [
+          { label: 'Best all-round base:', text: 'Palma, especially for a first trip with restaurants and mixed course choices.' },
+          { label: 'Best southwest base:', text: 'Portals, Santa Ponsa, Camp de Mar or nearby if Calvià, Andratx and Santa Ponsa are central.' },
+          { label: 'Best north base:', text: 'Alcúdia or Port de Pollença if Alcanada is the anchor round.' },
+          { label: 'Best east base:', text: 'Artà, Capdepera or the east coast if the trip is deliberately quieter and more local.' },
+        ],
+      },
+      {
+        type: 'paragraph',
+        text:
+          'The right answer changes with tee times. An 8:00 start at Alcanada from Palma is a different day from an 11:30 start. A final-round tee time near the airport is often worth more than a course ranking.',
+      },
+      {
+        type: 'cta',
+        text: 'Want the base, course order and tee times checked before you book the hotel?',
+        linkLabel: 'Plan your Mallorca golf trip →',
+        href: '/plan-your-trip',
+        internal: true,
+      },
+      {
+        type: 'cta',
+        text: 'Already know where you are staying? Send dates, group size, handicap range and hotel area. I will tell you which courses make sense.',
+        linkLabel: 'Ask me to book tee times →',
+        href: '/contact?service=tee-time-booking',
+        internal: true,
+      },
+    ],
+  },
   'golf-trip-planning-mallorca': {
     metadata: {
       title: 'Plan Your Mallorca Golf Trip (2026)',

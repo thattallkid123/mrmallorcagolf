@@ -68,7 +68,7 @@ const SIDEBAR_PLANNING = {
 export default function PostLayout({ children, meta, lang }) {
   const l = lang || meta.lang || 'en'
   const c = SIDEBAR_COPY[l] || SIDEBAR_COPY.en
-  const planning = SIDEBAR_PLANNING[l] || SIDEBAR_PLANNING.en
+  const planning = meta.sidebarPlanning || SIDEBAR_PLANNING[l] || SIDEBAR_PLANNING.en
   const updatedLabel = UPDATED_LABELS[l] || UPDATED_LABELS.en
   const pre = l === 'en' ? '' : `/${l}`
   const relatedGuides = meta.related.filter((guide) => isPublishedGuideSlug(guide.slug))

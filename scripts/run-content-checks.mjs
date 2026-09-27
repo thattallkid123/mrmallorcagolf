@@ -59,6 +59,7 @@ const CHECKS = [
   { name: 'check:pricing-narrative', script: 'check-pricing-narrative.mjs' },
   { name: 'check:lead-magnet-prices', script: 'check-lead-magnet-prices.mjs' },
   { name: 'check:guide-parity', script: 'check-guide-parity.mjs' },
+  { name: 'check:guide-pill-labels', script: 'check-guide-pill-labels.mjs' },
   { name: 'check:locale-parity', script: 'check-locale-parity.js' },
   { name: 'check:discovery', script: 'sync-discovery.mjs', args: ['--check'] },
   { name: 'check:meta-length', script: 'check-meta-length.mjs' },

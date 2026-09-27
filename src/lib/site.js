@@ -57,9 +57,12 @@ export const ARTICLE_SLUGS = new Set([
   'golf-trip-planning-mallorca',
   'is-mallorca-good-for-golf',
   'mallorca-course-map',
+  'where-to-stay-mallorca-golf',
 ])
 
-export const EN_ONLY_ARTICLE_SLUGS = new Set([])
+export const EN_ONLY_ARTICLE_SLUGS = new Set([
+  'where-to-stay-mallorca-golf',
+])
 
 export function normalizePath(pathname = '/') {
   if (!pathname) return '/'

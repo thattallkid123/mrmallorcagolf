@@ -22,6 +22,7 @@ const GUIDE_DATES = {
   '5-day-mallorca-golf-itinerary': '2026-08-10',
   't-golf-palma-review': '2026-09-09',
   'son-quint-review': '2026-09-24',
+  'where-to-stay-mallorca-golf': '2026-09-27',
 }
 
 function escapeXml(str) {

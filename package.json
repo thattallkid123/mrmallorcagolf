@@ -41,6 +41,7 @@
     "check:pricing-narrative": "node --no-warnings scripts/check-pricing-narrative.mjs",
     "check:lead-magnet-prices": "node --no-warnings scripts/check-lead-magnet-prices.mjs",
     "check:guide-parity": "node --no-warnings scripts/check-guide-parity.mjs",
+    "check:guide-pill-labels": "node --no-warnings scripts/check-guide-pill-labels.mjs",
     "check:discovery": "node --no-warnings scripts/sync-discovery.mjs --check",
     "check:guide-surfaces": "node --no-warnings scripts/check-guide-surfaces.mjs",
     "check:meta-length": "node --no-warnings scripts/check-meta-length.mjs",

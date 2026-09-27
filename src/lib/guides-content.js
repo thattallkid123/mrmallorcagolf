@@ -212,6 +212,16 @@ export const GUIDES_CONTENT = {
       "keywords": "Trip planning · Where to stay · Getting around"
     },
     {
+      "slug": "where-to-stay-mallorca-golf",
+      "badge": "Trip Planning",
+      "img": "/images/blog-trip-planning/Old Town Palma.webp",
+      "imgPosition": "center 50%",
+      "title": "Where to Stay in Mallorca for Golf",
+      "intro": "Palma, the southwest, the north or the east. Choose the base by course order, drive time and tee times.",
+      "readTime": "6 min read",
+      "keywords": "Where to stay · Golf base · Trip planning"
+    },
+    {
       "slug": "golf-club-hire-mallorca",
       "badge": "Practical Guide",
       "img": "/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
