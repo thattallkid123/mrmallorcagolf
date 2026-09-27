@@ -8,7 +8,7 @@ import { getCourseAccessByName } from '../../../../lib/course-access-data'
 import { getCoursePricingByName } from '../../../../lib/course-pricing-data'
 import { getCourseLogisticsByName } from '../../../../lib/course-logistics-data'
 import { getCourseShortName, findCourseByName, getCourseReviewSlug } from '../../../../lib/golf-courses-helpers'
-import { getGuidePath } from '../../../../lib/site'
+import { buildLocalePath, getGuidePath } from '../../../../lib/site'
 import { getScorecardByCourseName } from '../../../../lib/scorecard-data'
 import { getGreenFeesT } from '../../../../lib/green-fees-translations'
 
@@ -578,13 +578,13 @@ export default function GreenFeesClient({ lang = 'en' }) {
           <h2>{t.cta.contact.title}</h2>
           <p>{t.cta.contact.desc}</p>
           <div className="gf-cta-btns">
-            <Link className="btn-gold" href="/contact">{t.cta.contact.enquire}</Link>
+            <Link className="btn-gold" href={buildLocalePath('/plan-your-trip', lang)}>{t.cta.contact.enquire}</Link>
             <WhatsAppCta label={t.cta.contact.whatsapp} />
           </div>
         </div>
 
         <footer className="gf-foot">
-          {t.footer.text} <Link href="/contact">{t.footer.linkText}</Link>.
+          {t.footer.text} <Link href={buildLocalePath('/plan-your-trip', lang)}>{t.footer.linkText}</Link>.
         </footer>
       </main>
     </div>

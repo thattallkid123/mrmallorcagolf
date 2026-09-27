@@ -7,7 +7,7 @@ import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytic
 import { COURSE_ACCESS_LIST } from '../../../../lib/course-access-data'
 import { getCourseShortName } from '../../../../lib/golf-courses-helpers'
 import { getHandicapCheckerT } from '../../../../lib/handicap-checker-translations'
-import { getLegalPath } from '@lib/site'
+import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 
 const WA_MESSAGE = 'Hi Andy, I used the handicap checker on your site and I’d like help planning which Mallorca courses I can play.'
@@ -466,7 +466,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
                         <div className="name">{course.name}</div>
                         <span className={`hc-badge ${r.status}`}>{r.label}</span>
                         <div className="detail">{r.detail}</div>
-                        {r.borderline && <Link className="enquire" href="/contact">{t.results.askIfPossible}</Link>}
+                        {r.borderline && <Link className="enquire" href={buildLocalePath('/plan-your-trip', lang)}>{t.results.askIfPossible}</Link>}
                       </div>
                     ))}
                   </div>
@@ -491,7 +491,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
                 <h3>{t.cta.borderline}</h3>
                 <p>{t.cta.borderlineDesc}</p>
                 <div className="hc-cta-btns">
-                  <Link className="btn" href="/contact">{t.cta.enquireAccess}</Link>
+                  <Link className="btn" href={buildLocalePath('/plan-your-trip', lang)}>{t.cta.enquireAccess}</Link>
                   <WhatsAppCta label={t.cta.whatsappShort} />
                 </div>
               </div>
@@ -512,7 +512,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
                 <h3>{t.cta.ready}</h3>
                 <p>{t.cta.readyDesc}</p>
                 <div className="hc-cta-btns">
-                  <Link className="btn" href="/contact">{t.cta.enquire}</Link>
+                  <Link className="btn" href={buildLocalePath('/plan-your-trip', lang)}>{t.cta.enquire}</Link>
                   <WhatsAppCta label={t.cta.whatsapp} />
                 </div>
               </div>

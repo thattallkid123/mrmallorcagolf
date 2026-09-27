@@ -6,7 +6,7 @@ import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
 import { getCanonicalCourseDataByName } from '../../../lib/course-catalog'
 import { getCourseShortName } from '../../../lib/golf-courses-helpers'
 import { getGolfDayBuilderT } from '../../../lib/golf-day-builder-translations'
-import { getLegalPath } from '@lib/site'
+import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 import {
   COURSES,
@@ -642,7 +642,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                 <div style={{ borderTop:'1px solid rgba(255,255,255,.14)', margin:'6px 0 2px' }} />
                 <p style={{ fontFamily:'var(--font-sans)', fontSize:'.82rem', color:'rgba(255,255,255,.7)', margin:'2px 0 4px', lineHeight:'1.6' }}>{t.cta.footer}</p>
                 <p style={{ fontFamily:'var(--font-sans)', fontSize:'.72rem', color:'rgba(255,255,255,.5)', margin:'0 0 4px' }}><a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
-                <button className="gdb-btn-gold" onClick={() => window.open('https://www.mrmallorcagolf.com/contact', '_blank', 'noopener')}>{t.cta.askAndy}</button>
+                <button className="gdb-btn-gold" onClick={() => window.open(`https://www.mrmallorcagolf.com${buildLocalePath('/plan-your-trip', lang)}`, '_blank', 'noopener')}>{t.cta.askAndy}</button>
                 <button className="gdb-btn-pine" style={{ borderRadius:'999px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>{t.cta.explorePro}</button>
                 <div className="gdb-cta-secondary">
                   <button className="gdb-btn-secondary" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>{t.cta.whatsapp}</button>

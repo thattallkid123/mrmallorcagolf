@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
 import { getHotelRecommenderT } from '../../../lib/hotel-recommender-translations'
-import { getLegalPath } from '@lib/site'
+import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 import { HOTELS, QUESTIONS_DATA, scoreHotel, pillClass } from '../../../lib/hotel-recommender-logic'
 
@@ -401,7 +401,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
               <h3>{t.cta.title}</h3>
               <p>{t.cta.body}</p>
               <div className="hr-cta-links">
-                <a href="https://www.mrmallorcagolf.com/contact" className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
+                <a href={`https://www.mrmallorcagolf.com${buildLocalePath('/plan-your-trip', lang)}`} className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
                 <a href={WA_HOTEL_HREF} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>{t.cta.whatsapp}</a>
               </div>
             </div>
