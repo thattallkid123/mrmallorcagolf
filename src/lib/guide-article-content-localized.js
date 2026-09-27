@@ -3198,11 +3198,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "Opciones Callaway Rogue y TaylorMade Qi10, además de algunos sets más economicos de temporadas anteriores. Buena opción intermedia para quien quiere calidad seria sin pagar de más. Ventaja para lectores de Mr Mallorca Golf: use el código MRMALLORCAGOLF para recibir un pequeño regalo de cortesía, según los artículos promocionales disponibles, o añada MRMALLORCAGOLFBALLS para un 10% de descuento en cualquier compra de bolas nuevas con los palos. Ambos códigos pueden usarse juntos al pagar."
+          "text": "Opciones Callaway Rogue y TaylorMade Qi4D, además de algunos sets más economicos de temporadas anteriores. Buena opción intermedia para quien quiere calidad seria sin pagar de más. Ventaja para lectores de Mr Mallorca Golf: use el código MRMALLORCAGOLF para recibir un pequeño regalo de cortesía, según los artículos promocionales disponibles, o añada MRMALLORCAGOLFBALLS para un 10% de descuento en cualquier compra de bolas nuevas con los palos. Ambos códigos pueden usarse juntos al pagar."
         },
         {
-          "alt": "TaylorMade Qi10",
-          "caption": "TaylorMade Qi10 - opción premium para viajar sin su propia bolsa"
+          "alt": "TaylorMade Qi4D",
+          "caption": "TaylorMade Qi4D - opción premium para viajar sin su propia bolsa"
         },
         {},
         {
@@ -3317,11 +3317,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "Callaway-Rogue- und TaylorMade-Qi10-Optionen, dazu einige günstigere Sets aus der Vorsaison. Eine gute Allround-Option mit Flughafenlieferung und sinnvoll für Spieler, die solide Qualität ohne Theater wollen. Bonus für Leser von Mr Mallorca Golf: Verwenden Sie den Code MRMALLORCAGOLF für ein kleines Gratisgeschenk, je nachdem welche Werbeartikel verfügbar sind, oder fügen Sie MRMALLORCAGOLFBALLS hinzu, um 10% Rabatt auf neue Golfbälle zu erhalten, die Sie mit den Schlägern kaufen. Beide Codes können zusammen beim Checkout verwendet werden."
+          "text": "Callaway-Rogue- und TaylorMade-Qi4D-Optionen, dazu einige günstigere Sets aus der Vorsaison. Eine gute Allround-Option mit Flughafenlieferung und sinnvoll für Spieler, die solide Qualität ohne Theater wollen. Bonus für Leser von Mr Mallorca Golf: Verwenden Sie den Code MRMALLORCAGOLF für ein kleines Gratisgeschenk, je nachdem welche Werbeartikel verfügbar sind, oder fügen Sie MRMALLORCAGOLFBALLS hinzu, um 10% Rabatt auf neue Golfbälle zu erhalten, die Sie mit den Schlägern kaufen. Beide Codes können zusammen beim Checkout verwendet werden."
         },
         {
-          "alt": "TaylorMade Qi10",
-          "caption": "TaylorMade Qi10 - Premiumoption für Reisende ohne eigenes Bag"
+          "alt": "TaylorMade Qi4D",
+          "caption": "TaylorMade Qi4D - Premiumoption für Reisende ohne eigenes Bag"
         },
         {},
         {
@@ -3436,11 +3436,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "Des options Callaway Rogue et TaylorMade Qi10, avec aussi quelques sets plus economiques des saisons precedentes. Bon compromis pour qui veut une vraie qualite sans payer n'importe quoi. Bonus pour les lecteurs de Mr Mallorca Golf : utilisez le code MRMALLORCAGOLF pour recevoir un petit cadeau offert, selon les articles promotionnels disponibles, ou ajoutez MRMALLORCAGOLFBALLS pour obtenir 10% de remise sur tout achat de balles neuves avec les clubs. Les deux codes peuvent être utilisés ensemble au moment du paiement."
+          "text": "Des options Callaway Rogue et TaylorMade Qi4D, avec aussi quelques sets plus economiques des saisons precedentes. Bon compromis pour qui veut une vraie qualite sans payer n'importe quoi. Bonus pour les lecteurs de Mr Mallorca Golf : utilisez le code MRMALLORCAGOLF pour recevoir un petit cadeau offert, selon les articles promotionnels disponibles, ou ajoutez MRMALLORCAGOLFBALLS pour obtenir 10% de remise sur tout achat de balles neuves avec les clubs. Les deux codes peuvent être utilisés ensemble au moment du paiement."
         },
         {
-          "alt": "TaylorMade Qi10",
-          "caption": "TaylorMade Qi10 - option premium pour voyager sans son propre sac"
+          "alt": "TaylorMade Qi4D",
+          "caption": "TaylorMade Qi4D - option premium pour voyager sans son propre sac"
         },
         {},
         {
@@ -3555,11 +3555,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "Callaway Rogue- en TaylorMade Qi10-opties, plus wat goedkopere sets uit eerdere seizoenen. Sterke middenweg voor wie serieuze kwaliteit wil zonder onnodig veel te betalen. Bonus voor lezers van Mr Mallorca Golf: gebruik code MRMALLORCAGOLF voor een klein gratis extraatje, afhankelijk van welke promotieartikelen beschikbaar zijn, of voeg MRMALLORCAGOLFBALLS toe voor 10% korting op nieuwe golfballen die u samen met de clubs koopt. Beide codes kunnen samen worden gebruikt bij het afrekenen."
+          "text": "Callaway Rogue- en TaylorMade Qi4D-opties, plus wat goedkopere sets uit eerdere seizoenen. Sterke middenweg voor wie serieuze kwaliteit wil zonder onnodig veel te betalen. Bonus voor lezers van Mr Mallorca Golf: gebruik code MRMALLORCAGOLF voor een klein gratis extraatje, afhankelijk van welke promotieartikelen beschikbaar zijn, of voeg MRMALLORCAGOLFBALLS toe voor 10% korting op nieuwe golfballen die u samen met de clubs koopt. Beide codes kunnen samen worden gebruikt bij het afrekenen."
         },
         {
-          "alt": "TaylorMade Qi10",
-          "caption": "TaylorMade Qi10 - premiumkeuze als u zonder eigen tas reist"
+          "alt": "TaylorMade Qi4D",
+          "caption": "TaylorMade Qi4D - premiumkeuze als u zonder eigen tas reist"
         },
         {},
         {
@@ -3674,11 +3674,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "Callaway Rogue- och TaylorMade Qi10-alternativ, plus lite billigare set från tidigare sasonger. Ett bra mellanalternativ for den som vill ha riktig kvalitet utan att overbetala. Bonus för läsare av Mr Mallorca Golf: använd koden MRMALLORCAGOLF för en liten kostnadsfri gåva, beroende på vilka kampanjartiklar som finns tillgängliga, eller lägg till MRMALLORCAGOLFBALLS för 10% rabatt på nya golfbollar som köps tillsammans med klubborna. Båda koderna kan användas samtidigt i kassan."
+          "text": "Callaway Rogue- och TaylorMade Qi4D-alternativ, plus lite billigare set från tidigare sasonger. Ett bra mellanalternativ for den som vill ha riktig kvalitet utan att overbetala. Bonus för läsare av Mr Mallorca Golf: använd koden MRMALLORCAGOLF för en liten kostnadsfri gåva, beroende på vilka kampanjartiklar som finns tillgängliga, eller lägg till MRMALLORCAGOLFBALLS för 10% rabatt på nya golfbollar som köps tillsammans med klubborna. Båda koderna kan användas samtidigt i kassan."
         },
         {
-          "alt": "TaylorMade Qi10",
-          "caption": "TaylorMade Qi10 - premiumval for resenarer utan eget bag"
+          "alt": "TaylorMade Qi4D",
+          "caption": "TaylorMade Qi4D - premiumval for resenarer utan eget bag"
         },
         {},
         {
@@ -3793,11 +3793,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "有Callaway Rogue和TaylorMade Qi10，也有一些上一季的更便宜版本。适合想要靠谱质量，但不一定非要最贵最新的人。Mr Mallorca Golf读者福利：使用代码MRMALLORCAGOLF可获赠一份小礼品，具体取决于当时可提供的推广物品；如果随球杆一起购买新高尔夫球，可再添加MRMALLORCAGOLFBALLS享受10%折扣。两个代码可以在结账时一起使用。"
+          "text": "有Callaway Rogue和TaylorMade Qi4D，也有一些上一季的更便宜版本。适合想要靠谱质量，但不一定非要最贵最新的人。Mr Mallorca Golf读者福利：使用代码MRMALLORCAGOLF可获赠一份小礼品，具体取决于当时可提供的推广物品；如果随球杆一起购买新高尔夫球，可再添加MRMALLORCAGOLFBALLS享受10%折扣。两个代码可以在结账时一起使用。"
         },
         {
-          "alt": "TaylorMade Qi10",
-          "caption": "TaylorMade Qi10，适合不带自己球包但又不想降配置的人"
+          "alt": "TaylorMade Qi4D",
+          "caption": "TaylorMade Qi4D，适合不带自己球包但又不想降配置的人"
         },
         {},
         {
