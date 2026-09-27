@@ -23,6 +23,7 @@ const jost = localFont({
   ],
   variable: '--font-sans',
   display: 'swap',
+  preload: true,
 })
 
 const cormorantGaramond = localFont({
@@ -35,6 +36,11 @@ const cormorantGaramond = localFont({
   ],
   variable: '--font-serif',
   display: 'swap',
+  // Keep Cormorant available for brand headings and editorial italic text, but
+  // avoid forcing every display-font variant into the critical route head.
+  // Jost stays explicitly configured as the body/UI font; Cormorant can load
+  // on demand when heading and editorial styles need it.
+  preload: false,
 })
 
 export const viewport = {

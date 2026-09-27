@@ -1716,6 +1716,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.cst-opt,
+.cst-opt-label,
+.cst-opt-desc,
+.cst-btn-ghost,
+.gcc-btn {
+  font-family: var(--font-sans);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
