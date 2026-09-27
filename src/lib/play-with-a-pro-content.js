@@ -244,8 +244,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Restaurant and dining suggestions included",
           "One person to contact for the whole trip"
         ],
-        "button": "Enquire →",
-        "href": "/contact",
+        "button": "Plan Your Trip →",
+        "href": "/plan-your-trip",
         "featured": false,
         "signature": false
       }
