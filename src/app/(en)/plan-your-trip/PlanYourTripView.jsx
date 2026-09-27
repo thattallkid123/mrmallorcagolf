@@ -58,6 +58,10 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
     ? `${contactHref}#wechat`
     : `https://wa.me/34624466702?text=${encodeURIComponent(WA_TRIP_MESSAGES[locale] || WA_TRIP_MESSAGES.en)}`
   const messageLabel = locale === 'zh' ? '微信联系' : (WA_TRIP_LABELS[locale] || WA_TRIP_LABELS.en)
+  const getWorkingModeHref = (target) => {
+    if (target === 'tee-time-booking') return teeTimeHref
+    return tripPlanningHref
+  }
 
   return (
     <main>
@@ -125,6 +129,26 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                   <li key={item}>{item}</li>
                 ))}
               </ul>
+
+              {locale === 'en' && content.professional.workingModes ? (
+                <div className="pyt-working-modes">
+                  <div className="pyt-working-modes__intro">
+                    <h3>{content.professional.workingModes.title}</h3>
+                    <p>{content.professional.workingModes.body}</p>
+                  </div>
+                  <div className="pyt-working-modes__grid">
+                    {content.professional.workingModes.items.map((item) => (
+                      <article key={item.title} className="pyt-working-mode">
+                        <h4>{item.title}</h4>
+                        <p>{item.body}</p>
+                        <Link href={getWorkingModeHref(item.target)} className="pyt-working-mode__link">
+                          {item.cta}
+                        </Link>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
 
               {content.professional.possibilities ? (
                 <div className="pyt-possibilities">

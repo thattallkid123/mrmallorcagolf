@@ -36,6 +36,30 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       "Dining suggestions built around the schedule",
       "Play With A Pro available as an add-on at any stage"
     ],
+    "workingModes": {
+      "title": "Choose the level of help you need.",
+      "body": "Some groups only need tee times checked and booked. Others need the full golf plan built around flights, hotel area, handicap range and budget. Hotels and concierges can use the same route for guests.",
+      "items": [
+        {
+          "title": "Tee times only",
+          "body": "Send dates, group size, handicap range and hotel area. I will suggest suitable courses, check availability and confirm the price before anything is booked.",
+          "cta": "Ask me to book tee times",
+          "target": "tee-time-booking"
+        },
+        {
+          "title": "Full golf plan",
+          "body": "For groups playing several rounds, I put the courses in the right order, plan the drives, and handle buggies, rentals and useful dining suggestions.",
+          "cta": "Enquire about trip planning",
+          "target": "trip-planning"
+        },
+        {
+          "title": "Hotel or concierge request",
+          "body": "If you are arranging golf for a guest, send the same basic details. I will reply with a clear first plan that you can pass back to them.",
+          "cta": "Help a guest with golf",
+          "target": "tee-time-booking"
+        }
+      ]
+    },
     "possibilities": {
       "title": "A golf trip can stay simple, or become something more complete.",
       "body": "Depending on the group, I can shape the days around hotel choice, restaurants, spa time, coastal drives, wine tasting, private chef evenings, extra lessons, or quieter recovery time between rounds.",

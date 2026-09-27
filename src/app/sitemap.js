@@ -35,7 +35,7 @@ const LAST_MODIFIED_BY_PATH = {
   '/signature-day': '2026-09-26',
   '/about': '2026-04-01',
   '/contact': '2026-08-26',
-  '/plan-your-trip': '2026-09-26',
+  '/plan-your-trip': '2026-09-27',
   '/course-selector': '2026-06-01',
   '/tools': '2026-07-25',
   '/tools/golf-cost-calculator': '2026-07-25',
