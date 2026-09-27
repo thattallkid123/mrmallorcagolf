@@ -98,8 +98,8 @@ const content = {
             "Green fees 2026"
           ],
           [
-            "7/10",
-            "Dificultad"
+            "9/10",
+            "Valoración de Andy"
           ],
           [
             "58",
@@ -115,7 +115,7 @@ const content = {
         "text": "Información práctica"
       },
       {
-        "text": "Green fees 2026: €115 en temporada baja y hasta €220 en los periodos fuertes de marzo a mayo y de septiembre a octubre. El desglose completo está en golf-alcanada.com. Los jugadores no federados en España deben pagar una licencia diaria de golf de €3 por persona."
+        "text": "Green fees 2026: €115 en temporada baja y hasta €230 en los periodos fuertes de marzo a mayo y de septiembre a octubre. El desglose completo está en golf-alcanada.com. Los jugadores no federados en España deben pagar una licencia diaria de golf de €3 por persona."
       },
       {
         "text": "Alquiler de palos: juegos TaylorMade por €38 para 18 hoyos. Buggy €48, trolley eléctrico €20. El campo de prácticas con Toptracer es excelente para hacer un buen calentamiento - úsalo."
@@ -269,8 +269,8 @@ const content = {
             "Greenfee 2026"
           ],
           [
-            "7/10",
-            "Schwierigkeit"
+            "9/10",
+            "Andys Bewertung"
           ],
           [
             "58",
@@ -286,7 +286,7 @@ const content = {
         "text": "Praktische Informationen"
       },
       {
-        "text": "Greenfees 2026: €115 in der Nebensaison von Januar bis Dezember und bis zu €220 in den Spitzenzeiten März bis Mai sowie September bis Oktober. Die vollständige Saisonübersicht steht auf golf-alcanada.com. Für Spieler ohne spanische Föderationslizenz fällt zusätzlich eine tägliche Golflizenz von €3 pro Person an."
+        "text": "Greenfees 2026: €115 in der Nebensaison von Januar bis Dezember und bis zu €230 in den Spitzenzeiten März bis Mai sowie September bis Oktober. Die vollständige Saisonübersicht steht auf golf-alcanada.com. Für Spieler ohne spanische Föderationslizenz fällt zusätzlich eine tägliche Golflizenz von €3 pro Person an."
       },
       {
         "text": "Leihschläger: TaylorMade-Sets für €38 pro 18 Löcher. Buggy €48, Elektrotrolley €20. Die Toptracer-Range ist hervorragend für ein richtiges Warm-up - nutzen Sie sie."
@@ -440,8 +440,8 @@ const content = {
             "Green fees 2026"
           ],
           [
-            "7/10",
-            "Difficulté"
+            "9/10",
+            "Note d'Andy"
           ],
           [
             "58",
@@ -457,7 +457,7 @@ const content = {
         "text": "Infos pratiques"
       },
       {
-        "text": "Green fees 2026 : €115 en basse saison et jusqu'à €220 pendant les périodes fortes de mars à mai puis de septembre à octobre. Le détail complet est disponible sur golf-alcanada.com. Une licence journalière de golf de €3 par personne s'applique aux joueurs non affiliés à la fédération espagnole."
+        "text": "Green fees 2026 : €115 en basse saison et jusqu'à €230 pendant les périodes fortes de mars à mai puis de septembre à octobre. Le détail complet est disponible sur golf-alcanada.com. Une licence journalière de golf de €3 par personne s'applique aux joueurs non affiliés à la fédération espagnole."
       },
       {
         "text": "Location de clubs : ensembles TaylorMade à €38 pour 18 trous. Buggy €48, chariot électrique €20. Le practice Toptracer est excellent pour bien se mettre en route - profitez-en."
@@ -609,8 +609,8 @@ const content = {
             "Greenfees 2026"
           ],
           [
-            "7/10",
-            "Moeilijkheid"
+            "9/10",
+            "Andy's beoordeling"
           ],
           [
             "58",
@@ -626,7 +626,7 @@ const content = {
         "text": "Praktische info"
       },
       {
-        "text": "Greenfees 2026: €115 in het laagseizoen en tot €220 in de piekperiodes van maart tot mei en van september tot oktober. Het volledige seizoensoverzicht staat op golf-alcanada.com. Voor spelers zonder Spaanse federatielicentie geldt een dagelijkse golftoeslag van €3 per persoon."
+        "text": "Greenfees 2026: €115 in het laagseizoen en tot €230 in de piekperiodes van maart tot mei en van september tot oktober. Het volledige seizoensoverzicht staat op golf-alcanada.com. Voor spelers zonder Spaanse federatielicentie geldt een dagelijkse golftoeslag van €3 per persoon."
       },
       {
         "text": "Clubhuur: TaylorMade-sets voor €38 per 18 holes. Buggy €48, elektrische trolley €20. De Toptracer-range is uitstekend voor een serieuze warming-up - gebruik hem."
@@ -780,8 +780,8 @@ const content = {
             "Greenfees 2026"
           ],
           [
-            "7/10",
-            "Svårighet"
+            "9/10",
+            "Andys betyg"
           ],
           [
             "58",
@@ -797,7 +797,7 @@ const content = {
         "text": "Praktisk information"
       },
       {
-        "text": "Greenfees 2026: €115 i lågsäsong och upp till €220 under toppperioderna mars till maj samt september till oktober. Hela översikten finns på golf-alcanada.com. För spelare utan spansk federationslicens tillkommer en daglig golflicens på €3 per person."
+        "text": "Greenfees 2026: €115 i lågsäsong och upp till €230 under toppperioderna mars till maj samt september till oktober. Hela översikten finns på golf-alcanada.com. För spelare utan spansk federationslicens tillkommer en daglig golflicens på €3 per person."
       },
       {
         "text": "Klubbhyra: TaylorMade-set för €38 per 18 hål. Buggy €48, elektrisk trolley €20. Toptracer-rangen är utmärkt för en ordentlig uppvärmning - använd den."
@@ -951,8 +951,8 @@ const content = {
             "2026年果岭费"
           ],
           [
-            "7/10",
-            "难度"
+            "9/10",
+            "Andy 的评分"
           ],
           [
             "58",
@@ -968,7 +968,7 @@ const content = {
         "text": "实用信息"
       },
       {
-        "text": "2026年果岭费：淡季为€115，高峰期三月至五月及九月至十月最高为€220。完整价格表见golf-alcanada.com。没有西班牙高协会员资格的球手需额外支付每日€3的高尔夫许可证费用。"
+        "text": "2026年果岭费：淡季为€115，高峰期三月至五月及九月至十月最高为€230。完整价格表见golf-alcanada.com。没有西班牙高协会员资格的球手需额外支付每日€3的高尔夫许可证费用。"
       },
       {
         "text": "球杆租赁：TaylorMade套杆18洞€38。球车€48，电动手推车€20。这里的Toptracer练习场非常适合认真热身 - 值得利用。"
