@@ -40,39 +40,39 @@ const content = {
         "text": "Son Muntaner fue elegido Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué el sábado pasado con el tee sheet completo y hándicaps variados en el grupo. Esto es lo que encontré."
       },
       {
+        "text": "Respuesta rápida: ¿quién debería reservar Son Muntaner?"
+      },
+      {
+        "text": "Reserva Son Muntaner si buscas un mantenimiento de primer nivel cerca de Palma, con el buggy incluido y un trazado que premia el juego de posición por encima de la pura potencia. Si tu grupo prefiere una experiencia más visual, compárala con <a href=\"/guides/alcanada-review\">Alcanada</a>; si buscas la prueba de campeonato más exigente, compárala con <a href=\"/guides/son-gual-review\">Son Gual</a>."
+      },
+      {
+        "items": [
+          [
+            "€110–260",
+            "Green fee 2026"
+          ],
+          [
+            "Incluido",
+            "Buggy"
+          ],
+          [
+            "5 min",
+            "Desde el centro de Palma"
+          ],
+          [
+            "7/10",
+            "Dificultad"
+          ]
+        ]
+      },
+      {
         "text": "Cómo llegar"
       },
       {
         "text": "A cinco minutos del centro de Palma. Eso solo ya lo sitúa en una categoría diferente a la mayoría de los campos que merecen la pena en la isla. Son Gual está a veinte minutos, Alcanada a cincuenta. Si tienes la base en la ciudad y quieres una ronda seria sin organizar media jornada en torno al trayecto, Son Muntaner es la respuesta."
       },
       {
-        "items": [
-          [
-            "2026",
-            "Son Muntaner"
-          ],
-          [
-            "Info",
-            "Respuesta rápida: merece la pena reservar Son Muntaner?"
-          ],
-          [
-            "Plan",
-            "Son Muntaner encaja si el campo se ajusta a su grupo, su nivel y el tipo de dia de golf que busca. Los detalles de abajo explican donde destaca y donde conviene tener cuidado."
-          ],
-          [
-            "Tip",
-            "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
-          ]
-        ]
-      },
-      {
-        "text": "Preguntas frecuentes"
-      },
-      {
         "text": "El servicio desde la llegada hasta la ronda fue impecable. El equipo es atento sin resultar intrusivo. Las pelotas para el campo de prácticas, las instalaciones de entrenamiento y el funcionamiento general están al nivel que cabe esperar con la reputación del campo."
-      },
-      {
-        "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
       },
       {
         "alt": "Campo de golf Son Muntaner Mallorca mirando por el fairway del hoyo 17 con la Bahía de Palma al fondo",
@@ -186,10 +186,10 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a Son Vida y Son Quint. Los tres campos son accesibles desde el mismo complejo resort."
+        "text": "¿Es tu primera vez en este campo? Camina hasta el frente del primer tee y échale un buen vistazo antes de jugar. El campo de prácticas queda justo fuera de la vista a la derecha, y es fácil desviarse hacia él desde el tee si no has visto bien el panorama completo. La mayoría de los visitantes que se van a la derecha en el hoyo de salida simplemente no han tenido una vista clara de hacia dónde iban."
       },
       {
-        "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
+        "text": "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a Son Vida y Son Quint. Los tres campos son accesibles desde el mismo complejo resort."
       },
       {
         "title": "Cuatro cosas que yo sabria antes de reservar Son Muntaner",
@@ -266,39 +266,39 @@ const content = {
         "text": "Son Muntaner wurde bei den World Golf Awards 2025 zum besten Golfplatz Spaniens gekürt. Ich spielte ihn vergangenen Samstag mit einem vollen Abschlagskalender und gemischten Handicaps in der Gruppe. Das sind meine Eindrücke."
       },
       {
+        "text": "Kurzantwort: Für wen lohnt sich Son Muntaner?"
+      },
+      {
+        "text": "Buchen Sie Son Muntaner, wenn Sie erstklassige Platzpflege nahe Palma wollen, mit inklusive Buggy und einem Layout, das Positionsgolf mehr belohnt als reine Länge. Wenn Ihre Gruppe ein optisch beeindruckenderes Erlebnis bevorzugt, vergleichen Sie mit <a href=\"/guides/alcanada-review\">Alcanada</a>; wenn Sie die anspruchsvollste Championship-Prüfung suchen, vergleichen Sie mit <a href=\"/guides/son-gual-review\">Son Gual</a>."
+      },
+      {
+        "items": [
+          [
+            "€110–260",
+            "Greenfee-Spanne 2026"
+          ],
+          [
+            "Inklusive",
+            "Buggy"
+          ],
+          [
+            "5 Min.",
+            "Vom Zentrum Palmas"
+          ],
+          [
+            "7/10",
+            "Schwierigkeit"
+          ]
+        ]
+      },
+      {
         "text": "Anreise"
       },
       {
         "text": "Fünf Minuten vom Zentrum Palmas. Das allein hebt ihn in eine andere Kategorie als die meisten empfehlenswerten Plätze der Insel. Son Gual braucht zwanzig Minuten, Alcanada fünfzig. Wer in der Stadt wohnt und eine ernsthafte Runde spielen möchte, ohne dafür einen halben Tag einzuplanen, findet in Son Muntaner die Antwort."
       },
       {
-        "items": [
-          [
-            "2026",
-            "Son Muntaner"
-          ],
-          [
-            "Info",
-            "Kurzantwort: Sollten Sie Son Muntaner buchen?"
-          ],
-          [
-            "Plan",
-            "Son Muntaner passt, wenn der Platz zu Ihrer Gruppe, Ihrem Spielniveau und der Art von Golftag passt, die Sie suchen. Die Details darunter zeigen, wo er stark ist und wo Besucher vorsichtig sein sollten."
-          ],
-          [
-            "Tip",
-            "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
-          ]
-        ]
-      },
-      {
-        "text": "Häufige Fragen"
-      },
-      {
         "text": "Der Service vom Empfang bis zum Abschlag war reibungslos. Das Team ist aufmerksam, ohne aufdringlich zu sein. Bälle für die Range, Übungsanlage und der gesamte Betrieb entsprechen dem Niveau, das der Ruf des Platzes erwarten lässt."
-      },
-      {
-        "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
       },
       {
         "alt": "Son Muntaner Golfplatz Mallorca – Blick das 17. Loch hinunter mit der Bucht von Palma im Hintergrund",
@@ -412,10 +412,10 @@ const content = {
         "text": "Häufige Fragen"
       },
       {
-        "text": "Son Muntaner gehört zur Arabella Golf Mallorca Gruppe, zusammen mit Son Vida und Son Quint. Alle drei Plätze sind vom selben Resort-Komplex aus zugänglich."
+        "text": "Zum ersten Mal auf diesem Platz? Gehen Sie vor den ersten Abschlag und schauen Sie sich in Ruhe um, bevor Sie spielen. Die Driving Range liegt knapp außer Sichtweite rechts und es ist leicht, vom Abschlag aus dorthin abzudriften, wenn Sie das ganze Bild noch nicht gesehen haben. Die meisten Besucher, die auf dem Eröffnungsloch nach rechts geraten, hatten einfach keinen klaren Blick darauf, wohin sie spielen."
       },
       {
-        "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
+        "text": "Son Muntaner gehört zur Arabella Golf Mallorca Gruppe, zusammen mit Son Vida und Son Quint. Alle drei Plätze sind vom selben Resort-Komplex aus zugänglich."
       },
       {
         "title": "Vier Dinge, die ich vor der Buchung von Son Muntaner wissen würde",
@@ -493,39 +493,39 @@ const content = {
         "text": "Son Muntaner a été nommé Meilleur Parcours de Golf d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin la semaine dernière, avec un départ complet et des handicaps variés dans le groupe. Voici ce que j'y ai trouvé."
       },
       {
+        "text": "Réponse rapide : qui devrait réserver Son Muntaner ?"
+      },
+      {
+        "text": "Réservez Son Muntaner si vous voulez un entretien haut de gamme près de Palma, avec le buggy inclus et un tracé qui récompense le jeu de position plutôt que la seule puissance. Si votre groupe préfère une expérience plus spectaculaire visuellement, comparez avec <a href=\"/guides/alcanada-review\">Alcanada</a> ; si vous cherchez le test championship le plus exigeant, comparez avec <a href=\"/guides/son-gual-review\">Son Gual</a>."
+      },
+      {
+        "items": [
+          [
+            "€110–260",
+            "Green fees 2026"
+          ],
+          [
+            "Inclus",
+            "Buggy"
+          ],
+          [
+            "5 min",
+            "Depuis le centre de Palma"
+          ],
+          [
+            "7/10",
+            "Difficulté"
+          ]
+        ]
+      },
+      {
         "text": "Comment s'y rendre"
       },
       {
         "text": "À cinq minutes du centre de Palma. Cela seul le place dans une catégorie différente de la plupart des parcours de l'île qui méritent le détour. Son Gual est à vingt minutes, Alcanada à cinquante. Si vous êtes basé en ville et souhaitez faire un bon parcours sans organiser une demi-journée autour du trajet, Son Muntaner est la réponse."
       },
       {
-        "items": [
-          [
-            "2026",
-            "Son Muntaner"
-          ],
-          [
-            "Info",
-            "Reponse rapide : faut-il réserver Son Muntaner ?"
-          ],
-          [
-            "Plan",
-            "Son Muntaner convient si le parcours correspond a votre groupe, a votre niveau et au type de journée de golf recherche. Les details ci-dessous montrent ses forces et les points de vigilance."
-          ],
-          [
-            "Tip",
-            "Avant de réserver, pensez a l'heure de départ, au vent, au rythme et au niveau du groupe. Reservez tot, choisissez les bons departs et gardez du temps après la partie."
-          ]
-        ]
-      },
-      {
-        "text": "Questions frequentes"
-      },
-      {
         "text": "Le service, de l'arrivée à la partie, était irréprochable. L'équipe est attentive sans être intrusive. Les balles pour le practice, les installations d'entraînement et l'organisation générale sont au niveau que la réputation du parcours laissait présager."
-      },
-      {
-        "text": "Avant de réserver, pensez a l'heure de départ, au vent, au rythme et au niveau du groupe. Reservez tot, choisissez les bons departs et gardez du temps après la partie."
       },
       {
         "alt": "Parcours de golf Son Muntaner Majorque vue sur le 17ème trou avec la Baie de Palma en arrière-plan",
@@ -639,10 +639,10 @@ const content = {
         "text": "Questions frequentes"
       },
       {
-        "text": "Son Muntaner fait partie du groupe Arabella Golf Mallorca, aux côtés de Son Vida et Son Quint. Les trois parcours sont accessibles depuis le même complexe resort."
+        "text": "C'est votre première fois sur ce parcours ? Avancez jusqu'à l'avant du premier départ et observez bien avant de jouer. Le practice se trouve juste hors de vue sur la droite, et il est facile de dériver dans cette direction depuis le départ si vous n'avez pas vu l'ensemble du tableau. La plupart des visiteurs qui partent à droite sur le trou d'ouverture n'ont tout simplement pas eu une vue claire de leur trajectoire."
       },
       {
-        "text": "Avant de réserver, pensez a l'heure de départ, au vent, au rythme et au niveau du groupe. Reservez tot, choisissez les bons departs et gardez du temps après la partie."
+        "text": "Son Muntaner fait partie du groupe Arabella Golf Mallorca, aux côtés de Son Vida et Son Quint. Les trois parcours sont accessibles depuis le même complexe resort."
       },
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Son Muntaner",
@@ -665,7 +665,9 @@ const content = {
           ]
         ]
       },
-      {},
+      {
+        "text": "Verdict"
+      },
       {
         "text": "Le titre de Meilleur Parcours de Golf d'Espagne n'est pas du marketing. Son Muntaner propose un parcours qui teste le positionnement, la discipline et la clarté dans la prise de décision du premier au dernier trou. Il récompense le contrôle plus que la puissance et crée des opportunités de score grâce à la précision. À cinq minutes de Palma, la logistique est simple. Les greens seuls justifient le déplacement."
       },
@@ -717,39 +719,39 @@ const content = {
         "text": "Son Muntaner werd uitgeroepen tot Beste Golfbaan van Spanje bij de World Golf Awards 2025. Ik speelde hem vorige week op een zaterdagochtend, met een vol tee sheet en gemengde handicaps in de groep. Dit zijn mijn bevindingen."
       },
       {
+        "text": "Kort antwoord: voor wie is Son Muntaner geschikt?"
+      },
+      {
+        "text": "Boek Son Muntaner als je top onderhoud dicht bij Palma wilt, met de buggy inbegrepen en een lay-out die positioneel golfen beloont boven pure kracht. Als je groep een meer visuele ervaring wil, vergelijk dan met <a href=\"/guides/alcanada-review\">Alcanada</a>; wil je de zwaarste championship-test, vergelijk dan met <a href=\"/guides/son-gual-review\">Son Gual</a>."
+      },
+      {
+        "items": [
+          [
+            "€110–260",
+            "Greenfee 2026"
+          ],
+          [
+            "Inbegrepen",
+            "Buggy"
+          ],
+          [
+            "5 min",
+            "Vanaf het centrum van Palma"
+          ],
+          [
+            "7/10",
+            "Moeilijkheidsgraad"
+          ]
+        ]
+      },
+      {
         "text": "Hoe je er komt"
       },
       {
         "text": "Vijf minuten van het centrum van Palma. Dat alleen al plaatst hem in een andere categorie dan de meeste banen op het eiland die de moeite waard zijn. Son Gual kost twintig minuten, Alcanada vijftig. Als je in de stad verblijft en een serieuze ronde wilt spelen zonder een halve dag rond de rit te plannen, is Son Muntaner het antwoord."
       },
       {
-        "items": [
-          [
-            "2026",
-            "Son Muntaner"
-          ],
-          [
-            "Info",
-            "Snel antwoord: moet u Son Muntaner boeken?"
-          ],
-          [
-            "Plan",
-            "Son Muntaner past als de baan aansluit bij uw groep, uw niveau en het soort golfdag dat u zoekt. Hieronder staat waar de baan sterk is en waar bezoekers moeten opletten."
-          ],
-          [
-            "Tip",
-            "Denk voor het boeken aan starttijd, wind, tempo en of de baan bij de groep past. Boek vroeg, kies realistische tees en houd tijd vrij na de ronde."
-          ]
-        ]
-      },
-      {
-        "text": "Veelgestelde vragen"
-      },
-      {
         "text": "De service van aankomst tot de ronde was soepel. Het team is attent zonder opdringerig te zijn. Oefenballen, oefenfaciliteiten en de algehele organisatie zitten op het niveau dat de reputatie van de baan doet verwachten."
-      },
-      {
-        "text": "Denk voor het boeken aan starttijd, wind, tempo en of de baan bij de groep past. Boek vroeg, kies realistische tees en houd tijd vrij na de ronde."
       },
       {
         "alt": "Golfbaan Son Muntaner Mallorca kijkend over het 17e hole met de Baai van Palma op de achtergrond",
@@ -811,7 +813,9 @@ const content = {
         "alt": "Son Muntaner 9e green Mallorca met clubhuis erachter",
         "caption": "De 9e green, clubhuis erachter. Halverwege al duidelijk: deze baan beloont geduld boven kracht."
       },
-      {},
+      {
+        "text": "Bunkers"
+      },
       {
         "text": "Een eerlijk negatief punt: het bunkerszand was inconsistent. Sommige liggen strakker, andere zachter, wat de uitvoering bemoeilijkt van slagen die je op dezelfde manier had gepland. Gering voor een baan van dit niveau, maar de moeite waard om te weten als bunkersspel rondom de greens onderdeel van je spel is."
       },
@@ -861,10 +865,10 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "Son Muntaner maakt deel uit van de Arabella Golf Mallorca groep, samen met Son Vida en Son Quint. Alle drie de banen zijn bereikbaar vanuit hetzelfde resortcomplex."
+        "text": "Voor het eerst op deze baan? Loop naar de voorkant van de eerste afslagplaats en bekijk het geheel goed voordat je speelt. De driving range ligt net buiten het zicht aan de rechterkant en het is makkelijk om daar vanaf de tee naartoe af te drijven als je niet het volledige beeld hebt gezien. De meeste bezoekers die op de openingshole naar rechts gaan, hebben simpelweg geen duidelijk zicht gehad op waar ze naartoe speelden."
       },
       {
-        "text": "Denk voor het boeken aan starttijd, wind, tempo en of de baan bij de groep past. Boek vroeg, kies realistische tees en houd tijd vrij na de ronde."
+        "text": "Son Muntaner maakt deel uit van de Arabella Golf Mallorca groep, samen met Son Vida en Son Quint. Alle drie de banen zijn bereikbaar vanuit hetzelfde resortcomplex."
       },
       {
         "title": "Vier dingen die ik zou willen weten voor ik Son Muntaner boek",
@@ -941,39 +945,39 @@ const content = {
         "text": "Son Muntaner utsågs till Bästa Golfbana i Spanien vid World Golf Awards 2025. Jag spelade den en lördagsmorgon förra veckan, med fullbokat starttider och blandade handicap i gruppen. Här är vad jag hittade."
       },
       {
+        "text": "Snabbt svar: vem bör boka Son Muntaner?"
+      },
+      {
+        "text": "Boka Son Muntaner om du vill ha förstklassig banskötsel nära Palma, med buggy ingår och en layout som belönar positionsgolf framför ren kraft. Om din grupp föredrar en mer visuell upplevelse, jämför med <a href=\"/guides/alcanada-review\">Alcanada</a>; vill ni ha det tuffaste championship-testet, jämför med <a href=\"/guides/son-gual-review\">Son Gual</a>."
+      },
+      {
+        "items": [
+          [
+            "€110–260",
+            "Greenfee 2026"
+          ],
+          [
+            "Ingår",
+            "Buggy"
+          ],
+          [
+            "5 min",
+            "Från centrala Palma"
+          ],
+          [
+            "7/10",
+            "Svårighetsgrad"
+          ]
+        ]
+      },
+      {
         "text": "Hur man tar sig dit"
       },
       {
         "text": "Fem minuter från centrala Palma. Det ensamt placerar den i en annan kategori än de flesta banor på ön värda att nämna. Son Gual tar tjugo minuter, Alcanada femtio. Om du är baserad i staden och vill ha en seriös runda utan att planera en halvdag kring körningen, är Son Muntaner svaret."
       },
       {
-        "items": [
-          [
-            "2026",
-            "Son Muntaner"
-          ],
-          [
-            "Info",
-            "Snabbt svar: ska du boka Son Muntaner?"
-          ],
-          [
-            "Plan",
-            "Son Muntaner passar om banan matchar gruppen, spelstyrkan och den typ av golfdag du vill ha. Detaljerna nedan visar var den ar stark och var besokare bor vara forsiktiga."
-          ],
-          [
-            "Tip",
-            "Innan du bokar, tank pa starttid, vind, tempo och om banan passar gruppen. Boka tidigt, valj rimliga tees och lamna tid efter ronden."
-          ]
-        ]
-      },
-      {
-        "text": "Vanliga frågor"
-      },
-      {
         "text": "Servicen från ankomst till runda var smidig. Teamet är uppmärksamt utan att vara påträngande. Räckviddsbollar, träningsanläggningar och den övergripande driften ligger alla på den nivå som banans rykte leder dig att förvänta dig."
-      },
-      {
-        "text": "Innan du bokar, tank pa starttid, vind, tempo och om banan passar gruppen. Boka tidigt, valj rimliga tees och lamna tid efter ronden."
       },
       {
         "alt": "Golfbanan Son Muntaner Mallorca med utsikt ned laengs hål 17 med Palma-bukten i bakgrunden",
@@ -1087,10 +1091,10 @@ const content = {
         "text": "Vanliga frågor"
       },
       {
-        "text": "Son Muntaner är en del av Arabella Golf Mallorca-gruppen tillsammans med Son Vida och Son Quint. Alla tre banorna är tillgängliga från samma resortanläggning."
+        "text": "Första gången på den här banan? Gå fram till framkanten av det första utslaget och ta en ordentlig titt innan du spelar. Drivingrangen ligger precis utom synhåll till höger och det är lätt att driva åt det hållet från tee om du inte har sett hela bilden. De flesta besökare som går åt höger på öppningshålet har helt enkelt inte haft en tydlig bild av vart de var på väg."
       },
       {
-        "text": "Innan du bokar, tank pa starttid, vind, tempo och om banan passar gruppen. Boka tidigt, valj rimliga tees och lamna tid efter ronden."
+        "text": "Son Muntaner är en del av Arabella Golf Mallorca-gruppen tillsammans med Son Vida och Son Quint. Alla tre banorna är tillgängliga från samma resortanläggning."
       },
       {
         "title": "Fyra säker jag skulle vilja veta innan jag bokar Son Muntaner",
@@ -1168,39 +1172,39 @@ const content = {
         "text": "Son Muntaner在2025年世界高尔夫奖中荣获西班牙最佳高尔夫球场称号。上周六早晨，我在满员开球表和各类差点组合的情况下打了一轮。以下是我的真实体验。"
       },
       {
+        "text": "快速结论：谁适合预订 Son Muntaner？"
+      },
+      {
+        "text": "如果你想要靠近巴尔马市中心的顶级场地维护水准，球车费用已包含在内，而且球场设计更看重落点选择而非单纯力量，那么 Son Muntaner 值得预订。如果你的团队更看重视觉体验，可以对比 <a href=\"/guides/alcanada-review\">Alcanada</a>；如果你想要最严苛的锦标赛级考验，可以对比 <a href=\"/guides/son-gual-review\">Son Gual</a>。"
+      },
+      {
+        "items": [
+          [
+            "€110–260",
+            "2026年果岭费区间"
+          ],
+          [
+            "含在内",
+            "球车"
+          ],
+          [
+            "5分钟",
+            "距巴尔马市中心"
+          ],
+          [
+            "7/10",
+            "难度"
+          ]
+        ]
+      },
+      {
         "text": "前往方式"
       },
       {
         "text": "距巴尔马市中心仅五分钟。仅凭这一点，它就已跻身岛上最值得一去的球场中的另一个层次。Son Gual需要二十分钟，Alcanada五十分钟。如果你住在市区，想要打一场认真的球而不必为往返花上半天时间，Son Muntaner就是答案。"
       },
       {
-        "items": [
-          [
-            "2026",
-            "Son Muntaner"
-          ],
-          [
-            "Info",
-            "快速结论：要不要预订 Son Muntaner？"
-          ],
-          [
-            "Plan",
-            "Son Muntaner 适合想让球场难度、团队水平和当天体验相匹配的球手。下面的细节会说明它的优势，以及游客最需要注意的地方。"
-          ],
-          [
-            "Tip",
-            "预订前重点考虑开球时间、风、打球节奏，以及球场是否适合同行球手。尽早预订，选择合适发球台，并给赛后留出时间。"
-          ]
-        ]
-      },
-      {
-        "text": "常见问题"
-      },
-      {
         "text": "从抵达到开球，整个服务流程顺畅自然。工作人员体贴而不失分寸。练习场用球、训练设施以及整体运营水准，都与这个球场的声誉相符。"
-      },
-      {
-        "text": "预订前重点考虑开球时间、风、打球节奏，以及球场是否适合同行球手。尽早预订，选择合适发球台，并给赛后留出时间。"
       },
       {
         "alt": "马略卡Son Muntaner高尔夫球场俯视第17洞球道，背景为巴尔马湾",
@@ -1314,10 +1318,10 @@ const content = {
         "text": "常见问题"
       },
       {
-        "text": "Son Muntaner隶属于Arabella高尔夫马略卡集团，与Son Vida和Son Quint同属一家。三个球场均可从同一度假村建筑群进入。"
+        "text": "第一次来这个球场？开球前先走到第一发球台前方，好好观察一下场地。练习场就在右侧视线之外的地方，如果你没看清全貌，很容易从发球台不自觉地偏向那个方向。大多数在首洞打偏右的球手，只是没能清楚看到自己该往哪里打。"
       },
       {
-        "text": "预订前重点考虑开球时间、风、打球节奏，以及球场是否适合同行球手。尽早预订，选择合适发球台，并给赛后留出时间。"
+        "text": "Son Muntaner隶属于Arabella高尔夫马略卡集团，与Son Vida和Son Quint同属一家。三个球场均可从同一度假村建筑群进入。"
       },
       {
         "title": "预订 Son Muntaner 前我会先知道的四件事",
