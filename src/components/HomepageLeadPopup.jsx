@@ -27,6 +27,10 @@ export default function HomepageLeadPopup() {
       document.removeEventListener('mouseleave', onMouseLeave)
     }
 
+    let idleId = null
+    let timerId = null
+    let active = false
+
     // Trigger 1: scroll past 80% of page
     function onScroll() {
       const scrolled = window.scrollY + window.innerHeight
@@ -39,12 +43,26 @@ export default function HomepageLeadPopup() {
       if (e.clientY <= 0) show()
     }
 
-    window.addEventListener('scroll', onScroll, { passive: true })
-    document.addEventListener('mouseleave', onMouseLeave)
+    function start() {
+      active = true
+      window.addEventListener('scroll', onScroll, { passive: true })
+      document.addEventListener('mouseleave', onMouseLeave)
+      onScroll()
+    }
+
+    if ('requestIdleCallback' in window) {
+      idleId = window.requestIdleCallback(start, { timeout: 2500 })
+    } else {
+      timerId = window.setTimeout(start, 1400)
+    }
 
     return () => {
-      window.removeEventListener('scroll', onScroll)
-      document.removeEventListener('mouseleave', onMouseLeave)
+      if (idleId !== null) window.cancelIdleCallback(idleId)
+      if (timerId !== null) window.clearTimeout(timerId)
+      if (active) {
+        window.removeEventListener('scroll', onScroll)
+        document.removeEventListener('mouseleave', onMouseLeave)
+      }
     }
   }, [])
 
