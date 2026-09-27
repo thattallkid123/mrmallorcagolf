@@ -112,7 +112,6 @@ export default function GuidesFilterSection({
           guides={reviewGuides}
           prefix={prefix}
           imageBySlug={imageBySlug}
-          priorityFirst
         />
         {articleGuides.length > 0 ? (
           <GuideCarousel
@@ -168,7 +167,6 @@ export default function GuidesFilterSection({
           guides={reviewGuides}
           prefix={prefix}
           imageBySlug={imageBySlug}
-          priorityFirst
         />
       ) : null}
 

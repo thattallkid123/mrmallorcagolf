@@ -116,7 +116,6 @@ export default function GolfCoursesView({ locale = 'en', content }) {
 
   return (
     <>
-      <link rel="preload" as="image" href="/images/golf-courses.webp" />
       <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false} showScrollReset={true}>
         <StickyMobileCta
           primaryHref={joinHref(locale, '/plan-your-trip')}
