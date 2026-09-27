@@ -733,7 +733,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         .cst-nav-row { display:flex; justify-content:space-between; max-width:560px; margin:26px auto 0; }
         .cst-btn-ghost { background:none; border:none; color:#8A7F74; cursor:pointer; font-size:.85rem; padding:10px 14px; font-family:inherit; letter-spacing:.04em; }
         .cst-btn-ghost:hover { color:#2D4A3E; }
-        .cst-btn { display:inline-block; background:#2D4A3E; color:#F7F4EF; border:1px solid #2D4A3E; cursor:pointer; padding:14px 30px; border-radius:99px; font-weight:500; font-size:.8rem; font-family:var(--font-sans); letter-spacing:.18em; text-transform:uppercase; transition:all .3s; text-decoration:none; text-align:center; }
+        .cst-btn { display:inline-block; background:#2D4A3E; color:#F7F4EF; border:1px solid #2D4A3E; cursor:pointer; padding:14px 30px; border-radius:2px; font-weight:500; font-size:.8rem; font-family:var(--font-sans); letter-spacing:.18em; text-transform:uppercase; transition:all .3s; text-decoration:none; text-align:center; }
         .cst-btn:hover { background:#3D6455; border-color:#3D6455; transform:translateY(-2px); box-shadow:0 14px 30px rgba(45,74,62,0.22); }
         .cst-btn.gold { background:#B8973C; border-color:#B8973C; color:#fff; }
         .cst-btn.gold:hover { background:#D4B068; border-color:#D4B068; }

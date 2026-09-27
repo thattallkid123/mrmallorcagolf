@@ -278,7 +278,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-val { font-family:var(--font-sans); font-size:26px; color:#2D4A3E; min-width:48px; text-align:center; font-weight:400; }
         .gcc-unit { font-family:var(--font-sans); font-size:12px; color:#8A7F74; font-weight:300; }
         .gcc-nav { display:flex; gap:10px; margin-top:22px; }
-        .gcc-btn { border:none; border-radius:999px; padding:16px 24px; font-size:11px; cursor:pointer; font-family:var(--font-sans); font-weight:500; letter-spacing:.16em; line-height:1.25; text-transform:uppercase; transition:opacity .15s, transform .15s; }
+        .gcc-btn { border:none; border-radius:2px; padding:16px 24px; font-size:11px; cursor:pointer; font-family:var(--font-sans); font-weight:500; letter-spacing:.16em; line-height:1.25; text-transform:uppercase; transition:opacity .15s, transform .15s; }
         .gcc-btn:hover { transform:translateY(-1px); }
         .gcc-btn.primary { background:#2D4A3E; color:#F7F4EF; flex:1; }
         .gcc-btn.primary:hover { background:#3D6455; }
@@ -317,7 +317,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-cta-box { background:#1A1916; color:#F7F4EF; border-radius:14px; padding:24px 20px; margin-top:8px; }
         .gcc-cta-box h3 { font-family:var(--font-serif); font-size:24px; margin-bottom:8px; color:#fff; font-weight:500; line-height:1.2; }
         .gcc-cta-box p { font-family:var(--font-sans); font-size:13px; color:#cfdad2; margin-bottom:18px; font-weight:300; line-height:1.6; }
-        .gcc-cta-box a { display:block; text-align:center; text-decoration:none; width:100%; margin-bottom:10px; padding:14px 20px; border:none; border-radius:10px; font-size:15px; font-family:inherit; cursor:pointer; }
+        .gcc-cta-box a { display:block; text-align:center; text-decoration:none; width:100%; margin-bottom:10px; padding:14px 20px; border:none; border-radius:2px; font-size:15px; font-family:inherit; cursor:pointer; }
         .gcc-email-capture { display:flex; flex-direction:column; gap:8px; margin-bottom:6px; align-items:center; }
         .gcc-email-capture input { width:100%; border:none; border-radius:10px; padding:14px 16px; font-size:15px; font-family:inherit; text-align:center; }
         .gcc-email-capture button { width:100%; }
@@ -325,7 +325,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-tools-panel { background:#f4f1eb; border:1px solid #e0d8cb; border-radius:14px; padding:18px 20px; margin:20px 0; text-align:center; }
         .gcc-tools-panel__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#8a7f74; margin-bottom:12px; }
         .gcc-tools-panel__links { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
-        .gcc-tools-panel__link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 18px; font-size:10px; font-family:var(--font-sans); font-weight:500; letter-spacing:.14em; text-transform:uppercase; border:1px solid rgba(45,74,62,.18); color:#2d4a3e; text-decoration:none; border-radius:999px; background:#fff; transition:border-color .2s, color .2s, transform .2s; }
+        .gcc-tools-panel__link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 18px; font-size:10px; font-family:var(--font-sans); font-weight:500; letter-spacing:.14em; text-transform:uppercase; border:1px solid rgba(45,74,62,.18); color:#2d4a3e; text-decoration:none; border-radius:2px; background:#fff; transition:border-color .2s, color .2s, transform .2s; }
         .gcc-tools-panel__link:hover { border-color:#B8973C; color:#1A1916; transform:translateY(-1px); }
         .gcc-sheet-head { background:#15392b; color:#f7f2e7; padding:20px 22px 18px; position:sticky; top:0; border-radius:18px 18px 0 0; z-index:2; }
         .gcc-sheet-head__eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#cdb98a; margin-bottom:4px; }

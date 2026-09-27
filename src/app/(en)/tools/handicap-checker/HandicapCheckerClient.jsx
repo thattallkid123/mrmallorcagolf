@@ -307,13 +307,13 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         .hc-field input:focus, .hc-field select:focus { outline:2px solid var(--gold); outline-offset:1px; }
         .hc-seg { display:flex; flex-wrap:wrap; gap:8px; }
         .hc-seg button { font-family:var(--font-sans); font-size:.82rem; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; padding:9px 16px;
-          border:1px solid rgba(45,74,62,.3); border-radius:999px; background:#fff; color:var(--deep); transition:all .15s; }
+          border:1px solid rgba(45,74,62,.3); border-radius:2px; background:#fff; color:var(--deep); transition:all .15s; }
         .hc-seg button.active { background:var(--pine); color:#fff; border-color:var(--pine); }
         .hc-nohcp { display:flex; align-items:center; gap:8px; margin-top:9px; font-size:.85rem; color:var(--muted); cursor:pointer; }
         .hc-nohcp input { accent-color:var(--pine); width:16px; height:16px; cursor:pointer; }
         .hc-field-full { grid-column:1 / -1; }
         .hc-check { margin-top:22px; width:100%; background:var(--gold); color:#fff; border:none; cursor:pointer;
-          font-family:var(--font-sans); font-size:.82rem; letter-spacing:.18em; text-transform:uppercase; padding:14px 20px; border-radius:999px; transition:background .2s; }
+          font-family:var(--font-sans); font-size:.82rem; letter-spacing:.18em; text-transform:uppercase; padding:14px 20px; border-radius:2px; transition:background .2s; }
         .hc-check:hover { background:#a5862f; }
         .hc-summary { background:var(--pine); color:#fff; border-radius:6px; padding:20px 24px; margin-bottom:22px; line-height:1.6; font-size:.95rem; }
         .hc-summary strong { color:var(--gold); font-weight:500; }
@@ -342,20 +342,20 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         .hc-cta h3 { font-family:var(--font-serif); font-weight:400; font-size:1.4rem; margin-bottom:8px; }
         .hc-cta p { font-size:.9rem; color:rgba(255,255,255,.85); margin-bottom:16px; line-height:1.6; }
         .hc-cta a.btn { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem;
-          letter-spacing:.06em; text-transform:uppercase; padding:12px 24px; border-radius:4px; transition:background .2s; }
+          letter-spacing:.06em; text-transform:uppercase; padding:12px 24px; border-radius:2px; transition:background .2s; }
         .hc-cta a.btn:hover { background:#a5862f; }
         .hc-cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
         .btn-wa { display:inline-flex; align-items:center; gap:9px; background:#25D366; color:#fff; text-decoration:none;
-          font-family:var(--font-sans); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:12px 22px; border-radius:999px; transition:background .2s; }
+          font-family:var(--font-sans); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:12px 22px; border-radius:2px; transition:background .2s; }
         .btn-wa:hover { background:#1eb858; }
         .hc-email { background:#fff; border-radius:6px; padding:24px; box-shadow:0 2px 12px rgba(45,74,62,.08); margin-top:26px; }
         .hc-email h3 { font-family:var(--font-serif); font-weight:500; color:var(--pine); font-size:1.3rem; margin-bottom:6px; }
         .hc-email p { font-size:.86rem; color:var(--muted); margin-bottom:14px; line-height:1.55; }
         .hc-email-row { display:flex; gap:10px; flex-wrap:wrap; }
-        .hc-email-row input { flex:1; min-width:220px; font-family:var(--font-sans); font-size:.95rem; padding:11px 14px; border:1px solid rgba(45,74,62,.3); border-radius:999px; }
+        .hc-email-row input { flex:1; min-width:220px; font-family:var(--font-sans); font-size:.95rem; padding:11px 14px; border:1px solid rgba(45,74,62,.3); border-radius:2px; }
         .hc-email-row input:focus { outline:2px solid var(--gold); outline-offset:1px; }
         .hc-email-row button { background:var(--pine); color:#fff; border:none; cursor:pointer; font-family:var(--font-sans);
-          font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:11px 20px; border-radius:999px; transition:background .2s; }
+          font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:11px 20px; border-radius:2px; transition:background .2s; }
         .hc-email-row button:hover { background:var(--pine-dark); }
         .hc-email-row button:disabled { opacity:.6; cursor:default; }
         .hc-email-msg { font-size:.85rem; margin-top:10px; }

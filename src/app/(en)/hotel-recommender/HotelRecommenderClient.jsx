@@ -187,7 +187,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
         .hr-opt-label { font-weight:500; font-size:0.98rem; color:#1A1916; margin-bottom:6px; line-height:1.25; }
         .hr-opt-desc { font-size:0.84rem; color:#8A7F74; line-height:1.65; max-width:54ch; }
         .hr-nav { display:flex; gap:12px; margin-top:28px; align-items:center; }
-        .hr-btn-next { background:#2D4A3E; color:#F7F4EF; border:none; padding:13px 32px; font-family:var(--font-sans); font-size:0.8rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; border-radius:999px; transition:background 0.18s, transform 0.18s; }
+        .hr-btn-next { background:#2D4A3E; color:#F7F4EF; border:none; padding:13px 32px; font-family:var(--font-sans); font-size:0.8rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; border-radius:2px; transition:background 0.18s, transform 0.18s; }
         .hr-btn-next:hover { background:#3a5f50; transform:translateY(-1px); }
         .hr-btn-next:disabled { opacity:0.4; cursor:default; }
         .hr-btn-back { background:none; border:none; color:#8A7F74; font-family:var(--font-sans); font-size:0.8rem; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; padding:8px 0; transition:color 0.18s; }
@@ -229,7 +229,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
         .hr-email-input { width:100%; padding:11px 14px; border:1px solid rgba(247,244,239,0.3); background:rgba(247,244,239,0.1); color:#F7F4EF; font-family:var(--font-sans); font-size:0.88rem; border-radius:999px; outline:none; text-align:center; }
         .hr-email-input::placeholder { color:rgba(247,244,239,0.4); }
         .hr-email-input:focus { border-color:#B8973C; }
-        .hr-btn-email { background:#B8973C; color:#1A1916; border:none; padding:11px 22px; font-family:var(--font-sans); font-size:0.8rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; border-radius:999px; white-space:nowrap; transition:background 0.18s, transform 0.18s; }
+        .hr-btn-email { background:#B8973C; color:#1A1916; border:none; padding:11px 22px; font-family:var(--font-sans); font-size:0.8rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; border-radius:2px; white-space:nowrap; transition:background 0.18s, transform 0.18s; }
         .hr-btn-email:hover { background:#c9a84c; transform:translateY(-1px); }
         .hr-newsletter-opt { display:flex; align-items:center; justify-content:center; gap:8px; font-size:0.78rem; color:rgba(247,244,239,0.55); cursor:pointer; }
         .hr-email-success { font-size:0.88rem; color:#B8973C; padding:8px 0; }
@@ -242,7 +242,7 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
         .hr-cta-link-primary:hover { background:#3a5f50; }
         .hr-cta-link-secondary { background:transparent; border:1.5px solid #2D4A3E; color:#2D4A3E; }
         .hr-cta-link-secondary:hover { background:rgba(45,74,62,0.06); }
-        .hr-btn-retry { background:none; border:1.5px solid rgba(247,244,239,0.3); color:rgba(247,244,239,0.7); padding:10px 24px; font-family:var(--font-sans); font-size:0.78rem; font-weight:500; cursor:pointer; border-radius:999px; margin-top:20px; letter-spacing:.16em; text-transform:uppercase; transition:border-color 0.18s, color 0.18s; }
+        .hr-btn-retry { background:none; border:1.5px solid rgba(247,244,239,0.3); color:rgba(247,244,239,0.7); padding:10px 24px; font-family:var(--font-sans); font-size:0.78rem; font-weight:500; cursor:pointer; border-radius:2px; margin-top:20px; letter-spacing:.16em; text-transform:uppercase; transition:border-color 0.18s, color 0.18s; }
         .hr-btn-retry:hover { border-color:rgba(247,244,239,0.6); color:#F7F4EF; }
         .hr-retry-wrap { text-align:center; padding-bottom:40px; display:flex; flex-direction:column; align-items:center; gap:10px; }
         @media (max-width:520px) {

@@ -120,7 +120,7 @@ export default function HomeToolsStrip({ locale = 'en' }) {
           font-size: .84rem;
           letter-spacing: .06em;
           padding: 12px 28px;
-          border-radius: 99px;
+          border-radius: 2px;
           text-decoration: none;
           transition: background .2s;
         }

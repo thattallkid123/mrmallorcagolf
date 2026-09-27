@@ -369,7 +369,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
         /* Intro */
         .gdb-intro { text-align:center; padding-top:40px; }
         .gdb-lead { font-size:1rem; max-width:440px; margin:0 auto 30px; color:#2C2A27; line-height:1.85; }
-        .gdb-btn-gold { background:#B8973C; color:#1A1916; border:none; padding:16px 34px; font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; border-radius:999px; transition:opacity .25s, transform .25s; }
+        .gdb-btn-gold { background:#B8973C; color:#1A1916; border:none; padding:16px 34px; font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; border-radius:2px; transition:opacity .25s, transform .25s; }
         .gdb-btn-gold:hover { opacity:.9; }
         .gdb-btn-gold:hover, .gdb-btn-pine:hover, .gdb-btn-ghost:hover, .gdb-cta-secondary .gdb-btn-secondary:hover, .gdb-tool-link:hover { transform:translateY(-1px); }
         /* Progress */
@@ -392,10 +392,10 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
         .gdb-opt .t { font-family:var(--font-serif); font-size:1.18rem; font-weight:500; color:#1A1916; line-height:1.2; }
         .gdb-opt .d { font-size:.78rem; font-weight:400; color:#8A7F74; margin-top:2px; line-height:1.5; display:block; }
         .gdb-nav-row { display:flex; justify-content:space-between; margin-top:28px; gap:12px; }
-        .gdb-btn-pine { background:#2D4A3E; color:#fff; border:none; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:background .25s, transform .25s; border-radius:999px; }
+        .gdb-btn-pine { background:#2D4A3E; color:#fff; border:none; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:background .25s, transform .25s; border-radius:2px; }
         .gdb-btn-pine:hover { background:#3D6455; }
         .gdb-btn-pine:disabled { opacity:.35; cursor:not-allowed; }
-        .gdb-btn-ghost { background:transparent; color:#8A7F74; border:1px solid #E0D8CB; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:border-color .25s, color .25s, transform .25s; border-radius:999px; }
+        .gdb-btn-ghost { background:transparent; color:#8A7F74; border:1px solid #E0D8CB; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:border-color .25s, color .25s, transform .25s; border-radius:2px; }
         .gdb-btn-ghost:hover { border-color:#B8973C; color:#2C2A27; }
         /* Results */
         .gdb-result-head { text-align:center; padding-top:40px; margin-bottom:8px; }
@@ -444,14 +444,14 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
         .gdb-email-success { font-size:13px; color:#D4B068; margin:0; }
         .gdb-newsletter-label { display:flex; align-items:center; gap:8px; font-family:var(--font-sans); font-size:12px; color:rgba(255,255,255,.6); cursor:pointer; margin-top:4px; }
         .gdb-cta-secondary { display:flex; gap:8px; margin-top:6px; }
-        .gdb-cta-secondary .gdb-btn-secondary { flex:1; background:transparent; color:rgba(255,255,255,0.85); border:1px solid rgba(255,255,255,.22); padding:13px 6px; font-family:var(--font-sans); font-size:9px; font-weight:500; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; border-radius:999px; transition:border-color .25s, color .25s, transform .25s; }
+        .gdb-cta-secondary .gdb-btn-secondary { flex:1; background:transparent; color:rgba(255,255,255,0.85); border:1px solid rgba(255,255,255,.22); padding:13px 6px; font-family:var(--font-sans); font-size:9px; font-weight:500; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; border-radius:2px; transition:border-color .25s, color .25s, transform .25s; }
         .gdb-cta-secondary .gdb-btn-secondary:hover { border-color:#D4B068; color:#D4B068; }
         .gdb-restart { display:block; margin:18px auto 0; background:none; border:none; cursor:pointer; font-family:var(--font-sans); font-weight:400; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding:14px 12px 2px; color:#8A7F74; border-bottom:1px solid #C4BAA9; }
         .gdb-restart:hover { color:#2C2A27; border-color:#B8973C; }
         .gdb-more-tools { background:#f4f1eb; border:1px solid #e0d8cb; border-radius:14px; padding:18px 20px; margin-top:20px; text-align:center; }
         .gdb-more-tools-label { font-family:var(--font-sans); font-size:10px; text-transform:uppercase; letter-spacing:.18em; color:#8A7F74; margin-bottom:12px; font-weight:500; }
         .gdb-tool-links { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
-        .gdb-tool-link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 18px; font-size:10px; font-family:var(--font-sans); font-weight:500; letter-spacing:.14em; text-transform:uppercase; border:1px solid rgba(45,74,62,.18); background:#fff; color:#2d4a3e; text-decoration:none; border-radius:999px; transition:border-color .25s, color .25s, transform .25s; }
+        .gdb-tool-link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 18px; font-size:10px; font-family:var(--font-sans); font-weight:500; letter-spacing:.14em; text-transform:uppercase; border:1px solid rgba(45,74,62,.18); background:#fff; color:#2d4a3e; text-decoration:none; border-radius:2px; transition:border-color .25s, color .25s, transform .25s; }
         .gdb-tool-link:hover { border-color:#B8973C; color:#1A1916; }
         .gdb-toast { position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(90px); background:#1A1916; color:#F7F4EF; padding:13px 26px; font-size:.8rem; font-weight:400; letter-spacing:.02em; box-shadow:0 22px 60px rgba(18,17,15,0.08); transition:transform .35s; z-index:50; max-width:88vw; text-align:center; border-radius:999px; }
         .gdb-toast.show { transform:translateX(-50%) translateY(0); }
@@ -606,7 +606,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                           target="_blank"
                           rel="noopener"
                           className="gdb-btn-gold"
-                          style={{ fontSize:'13px', display:'inline-block', textDecoration:'none', padding:'10px 20px', borderRadius:'99px' }}
+                          style={{ fontSize:'13px', display:'inline-block', textDecoration:'none', padding:'10px 20px', borderRadius:'2px' }}
                           onClick={requestTripPdf}
                         >{t.cta.pdfButton}</a>
                       </div>
@@ -643,7 +643,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
                 <p style={{ fontFamily:'var(--font-sans)', fontSize:'.82rem', color:'rgba(255,255,255,.7)', margin:'2px 0 4px', lineHeight:'1.6' }}>{t.cta.footer}</p>
                 <p style={{ fontFamily:'var(--font-sans)', fontSize:'.72rem', color:'rgba(255,255,255,.5)', margin:'0 0 4px' }}><a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
                 <button className="gdb-btn-gold" onClick={() => window.open(`https://www.mrmallorcagolf.com${buildLocalePath('/plan-your-trip', lang)}`, '_blank', 'noopener')}>{t.cta.askAndy}</button>
-                <button className="gdb-btn-pine" style={{ borderRadius:'999px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>{t.cta.explorePro}</button>
+                <button className="gdb-btn-pine" style={{ borderRadius:'2px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>{t.cta.explorePro}</button>
                 <div className="gdb-cta-secondary">
                   <button className="gdb-btn-secondary" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>{t.cta.whatsapp}</button>
                 </div>

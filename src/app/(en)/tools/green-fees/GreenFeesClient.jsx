@@ -345,7 +345,7 @@ export default function GreenFeesClient({ lang = 'en' }) {
         .gf-pill.no { background:rgba(160,60,40,.1); color:#8a3a26; }
         .gf-pill.gold { background:rgba(184,151,60,.15); color:#8a6f26; }
         .gf-footnote { font-size:.76rem; color:var(--muted); line-height:1.5; margin:12px 2px 0; }
-        .gf-reset { min-height:40px; border:1px solid rgba(45,74,62,.18); border-radius:999px; background:transparent; color:var(--pine); padding:10px 16px; font-family:var(--font-sans); font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; }
+        .gf-reset { min-height:40px; border:1px solid rgba(45,74,62,.18); border-radius:2px; background:transparent; color:var(--pine); padding:10px 16px; font-family:var(--font-sans); font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; }
         .gf-reset:hover { background:#fff; }
         .gf-cards { display:none; }
         .gf-card { background:#fff; border-radius:6px; padding:18px 18px 16px; margin-bottom:14px; box-shadow:0 2px 8px rgba(45,74,62,.08); border-top:3px solid var(--pine); }
@@ -358,15 +358,15 @@ export default function GreenFeesClient({ lang = 'en' }) {
         .gf-selcta { margin-top:40px; background:var(--pine); color:#fff; border-radius:6px; padding:32px 28px; text-align:center; }
         .gf-selcta h2 { font-family:var(--font-serif); font-weight:400; font-size:1.6rem; margin-bottom:8px; }
         .gf-selcta p { font-size:.9rem; color:rgba(255,255,255,.8); margin-bottom:18px; }
-        .gf-selcta a { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:11px 22px; border-radius:4px; transition:background .2s; }
+        .gf-selcta a { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:11px 22px; border-radius:2px; transition:background .2s; }
         .gf-selcta a:hover { background:#a5862f; }
         .gf-contact { margin-top:16px; background:var(--pine-dark); color:#fff; border-radius:6px; padding:28px; text-align:center; }
         .gf-contact h2 { font-family:var(--font-serif); font-weight:400; font-size:1.5rem; margin-bottom:8px; }
         .gf-contact p { font-size:.9rem; color:rgba(255,255,255,.82); margin-bottom:18px; line-height:1.6; }
         .gf-cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
-        .gf-contact a.btn-gold { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:12px 22px; border-radius:4px; transition:background .2s; }
+        .gf-contact a.btn-gold { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:12px 22px; border-radius:2px; transition:background .2s; }
         .gf-contact a.btn-gold:hover { background:#a5862f; }
-        .btn-wa { display:inline-flex; align-items:center; gap:9px; background:#25D366; color:#fff; text-decoration:none; font-family:var(--font-sans); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:12px 22px; border-radius:999px; transition:background .2s, transform .2s; }
+        .btn-wa { display:inline-flex; align-items:center; gap:9px; background:#25D366; color:#fff; text-decoration:none; font-family:var(--font-sans); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:12px 22px; border-radius:2px; transition:background .2s, transform .2s; }
         .btn-wa:hover { background:#1eb858; }
         .gf-foot { text-align:center; font-size:.78rem; color:var(--muted); margin-top:36px; line-height:1.6; }
         .gf-foot a { color:var(--gold); text-decoration:none; }

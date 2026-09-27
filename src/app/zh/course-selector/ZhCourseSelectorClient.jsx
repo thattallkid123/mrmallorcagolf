@@ -323,7 +323,7 @@ export default function ZhCourseSelectorClient() {
         .cc-andy { background: #F4EDD8; border-left: 2px solid #B8973C; padding: 22px 24px; margin: 26px 0; font-family: var(--font-serif); font-style: italic; font-size: 1.05rem; line-height: 1.55; color: #2D4A3E; }
         .cc-andy strong { font-style: normal; font-weight: 500; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; display: block; margin-bottom: 8px; color: #B8973C; font-family: var(--font-sans); }
         .cc-links { display: flex; gap: 10px; flex-wrap: wrap; padding-top: 4px; }
-        .cc-btn { flex: 1; min-width: 140px; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; padding: 14px 20px; border-radius: 999px; cursor: pointer; transition: background 0.3s, color 0.3s, transform 0.3s; font-family: inherit; border: 1px solid currentColor; }
+        .cc-btn { flex: 1; min-width: 140px; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; padding: 14px 20px; border-radius: 2px; cursor: pointer; transition: background 0.3s, color 0.3s, transform 0.3s; font-family: inherit; border: 1px solid currentColor; }
         .cc-btn-outline { color: #1A1916; border-color: rgba(26,25,22,0.24); background: transparent; }
         .cc-btn-outline:hover { background: #1A1916; color: #F7F4EF; transform: translateY(-2px); }
         .cc-btn-gold { color: #1A1916; background: #B8973C; border-color: #B8973C; }
@@ -346,7 +346,7 @@ export default function ZhCourseSelectorClient() {
         .email-input:focus { outline: none; border-color: rgba(212,176,104,0.7); }
         .email-success { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #D4B068; text-align: center; padding: 4px 0; }
         .email-error { font-size: 12px; color: #D4B068; text-align: center; }
-        .btn-action { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; padding: 14px 30px; min-height: 46px; border: 1px solid currentColor; border-radius: 999px; cursor: pointer; transition: background 0.3s, color 0.3s, transform 0.3s; font-family: inherit; }
+        .btn-action { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; padding: 14px 30px; min-height: 46px; border: 1px solid currentColor; border-radius: 2px; cursor: pointer; transition: background 0.3s, color 0.3s, transform 0.3s; font-family: inherit; }
         .btn-gold-solid { color: #1A1916; background: #B8973C; border-color: #B8973C; }
         .btn-gold-solid:hover { background: #D4B068; }
         .btn-outline-light { color: #fff; border-color: rgba(255,255,255,0.34); background: transparent; }
