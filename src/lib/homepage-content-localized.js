@@ -110,14 +110,6 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "value": "24",
           "label": "campos en la isla"
-        },
-        {
-          "value": "21",
-          "label": "abiertos a visitantes"
-        },
-        {
-          "value": "3",
-          "label": "privados o restringidos"
         }
       ]
     },
@@ -436,14 +428,6 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "value": "24",
           "label": "Plätze auf der Insel"
-        },
-        {
-          "value": "21",
-          "label": "für Greenfee-Spieler offen"
-        },
-        {
-          "value": "3",
-          "label": "privat oder eingeschränkt"
         }
       ]
     },
@@ -762,14 +746,6 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "value": "24",
           "label": "parcours sur l'île"
-        },
-        {
-          "value": "21",
-          "label": "ouverts aux green fees"
-        },
-        {
-          "value": "3",
-          "label": "privés ou restreints"
         }
       ]
     },
@@ -1087,14 +1063,6 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "value": "24",
           "label": "banen op het eiland"
-        },
-        {
-          "value": "21",
-          "label": "open voor green fee"
-        },
-        {
-          "value": "3",
-          "label": "privé of beperkt"
         }
       ]
     },
@@ -1412,14 +1380,6 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "value": "24",
           "label": "banor på ön"
-        },
-        {
-          "value": "21",
-          "label": "öppna för green fee"
-        },
-        {
-          "value": "3",
-          "label": "privata eller begränsade"
         }
       ]
     },
@@ -1738,14 +1698,6 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "value": "24",
           "label": "岛上球场总数"
-        },
-        {
-          "value": "21",
-          "label": "向散客开放"
-        },
-        {
-          "value": "3",
-          "label": "私人或受限"
         }
       ]
     },
