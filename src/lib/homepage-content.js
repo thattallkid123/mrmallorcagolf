@@ -360,8 +360,8 @@ export const HOME_CONTENT = {
           "One person to contact for the whole trip"
         ],
         "note": "5% management fee applies to green fees only. Confirmed after your first conversation.",
-        "cta": "Enquire",
-        "href": "/contact"
+        "cta": "Plan Your Trip",
+        "href": "/plan-your-trip"
       }
     ],
     "multiDay": {

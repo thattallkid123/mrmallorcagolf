@@ -122,6 +122,12 @@ function playWithAProContactHref(locale) {
   return `${buildLocalePath('/contact', locale)}?service=pwap`
 }
 
+function localizedHref(href, locale) {
+  if (!href || href.startsWith('http')) return href
+  if (locale !== 'en' && href.startsWith(`/${locale}/`)) return href
+  return buildLocalePath(href, locale)
+}
+
 function packageCtaHref(tier, index, locale) {
   if (index === 0 || index === 1) return playWithAProContactHref(locale)
   if (index === 3) return buildLocalePath('/plan-your-trip', locale)
@@ -179,6 +185,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
   }
+  const finalPrimaryHref = localizedHref(content.finalCta.primaryHref, locale) || playWithAProContactHref(locale)
   const wechatHref = locale === 'zh' ? buildLocalePath('/contact#wechat', locale) : null
   const dayPhotos = [
     ...PWAP_PHOTOS.map((photo, i) => ({ ...photo, alt: copy.photos[i] ?? photo.alt })),
@@ -584,7 +591,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             <p>{content.finalCta.body}</p>
           </div>
           <div className="cta-final__right reveal">
-            <Link href={playWithAProContactHref(locale)} className="btn btn--gold cta-final__primary-lg">
+            <Link href={finalPrimaryHref} className="btn btn--gold cta-final__primary-lg">
               {content.finalCta.primaryCta}
             </Link>
             <a href={content.finalCta.secondaryHref} className="btn btn--outline-white" target="_blank" rel="noopener noreferrer">
@@ -599,7 +606,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         </section>
 
         <StickyMobileCta
-          primaryHref={playWithAProContactHref(locale)}
+          primaryHref={finalPrimaryHref}
           primaryLabel={content.finalCta.primaryCta}
           secondaryHref={content.finalCta.secondaryHref}
           secondaryLabel={content.finalCta.secondaryCta}
