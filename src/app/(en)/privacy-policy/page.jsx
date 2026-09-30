@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Privacy Policy</h1>
-            <p className="legal-page__updated">Last updated: August 2026</p>
+            <p className="legal-page__updated">Last updated: September 2026</p>
           </div>
 
           <section className="legal-section">
@@ -30,6 +30,7 @@ export default function PrivacyPolicy() {
             <p>We collect personal data only when you voluntarily provide it or when you visit our website. This includes:</p>
             <ul>
               <li><strong>Contact form submissions:</strong> your name, email address, chosen service, dates, group size, handicap and message where provided. We also record the site page and campaign that led to the form, when available.</li>
+              <li><strong>Pre-round questionnaire:</strong> your name, email address, handicap and your answers about your game, practice and goals. Age range and where you live are optional. The answers are emailed to us and used to plan your session.</li>
               <li><strong>Email and WhatsApp enquiries:</strong> your name and contact details when you reach out directly</li>
               <li><strong>Course Selector and email signup forms:</strong> your email address, and any optional information you choose to provide when requesting planning notes or shortlist follow-ups</li>
               <li><strong>Analytics data:</strong> anonymous usage data collected by Google Analytics (see Section 5)</li>
@@ -78,7 +79,7 @@ export default function PrivacyPolicy() {
             <ul>
               <li><strong>Google Analytics:</strong> pseudonymised usage data, as described in Section 5</li>
               <li><strong>MailerLite:</strong> your email address and, depending on which form you use, trip details you provide (such as dates, group size, budget, or handicap) and any notes, to deliver results and &mdash; only if you opt in &mdash; our occasional planning-notes emails. MailerLite processes data within the EU.</li>
-              <li><strong>Resend:</strong> the content of any contact or enquiry form you submit, to deliver it to us and send you a confirmation email. Resend is based in the United States.</li>
+              <li><strong>Resend:</strong> the content of any contact, enquiry or questionnaire form you submit, to deliver it to us and, where applicable, send you a confirmation email. Resend is based in the United States.</li>
               <li><strong>Upstash:</strong> your IP address, held briefly, to prevent abuse of our forms (rate limiting). Upstash is based in the United States.</li>
               <li><strong>Vercel:</strong> hosts this website and, as part of that, processes standard web request data such as your IP address and browser information. Vercel is based in the United States.</li>
               <li><strong>Legal requirement:</strong> where required by law or a competent authority</li>

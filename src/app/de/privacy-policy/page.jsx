@@ -16,7 +16,7 @@ export default function PrivacyPolicyDE() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Datenschutzerklärung</h1>
-            <p className="legal-page__updated">Zuletzt aktualisiert: August 2026</p>
+            <p className="legal-page__updated">Zuletzt aktualisiert: September 2026</p>
           </div>
 
           <section className="legal-section">
@@ -30,6 +30,7 @@ export default function PrivacyPolicyDE() {
             <p>Wir erheben personenbezogene Daten nur, wenn Sie sie uns freiwillig zur Verfügung stellen oder wenn Sie unsere Website besuchen. Dazu gehören:</p>
             <ul>
               <li><strong>Kontaktformular:</strong> Ihr Name, Ihre E-Mail-Adresse, gewählter Service sowie gegebenenfalls Reisedaten, Gruppengröße, Handicap und Nachricht. Soweit verfügbar erfassen wir auch die Website-Seite und Kampagne, über die Sie zum Formular kamen.</li>
+              <li><strong>Fragebogen vor der Runde:</strong> Ihr Name, Ihre E-Mail-Adresse, Ihr Handicap und Ihre Antworten zu Ihrem Spiel, Ihrem Training und Ihren Zielen. Altersgruppe und Wohnort sind freiwillig. Die Antworten werden uns per E-Mail zugestellt und dienen der Planung Ihres Termins.</li>
               <li><strong>Anfragen per E-Mail und WhatsApp:</strong> Ihr Name und Ihre Kontaktdaten, wenn Sie sich direkt an uns wenden</li>
               <li><strong>Course Selector und E-Mail-Anmeldeformulare:</strong> Ihre E-Mail-Adresse und alle optionalen Angaben, die Sie beim Anfordern von Planungsnotizen oder Ergebnis-Follow-ups machen</li>
               <li><strong>Analysedaten:</strong> anonyme Nutzungsdaten, die von Google Analytics erhoben werden (siehe Abschnitt 5)</li>
@@ -78,7 +79,7 @@ export default function PrivacyPolicyDE() {
             <ul>
               <li><strong>Google Analytics:</strong> pseudonymisierte Nutzungsdaten, wie in Abschnitt 5 beschrieben</li>
               <li><strong>MailerLite:</strong> Ihre E-Mail-Adresse und, je nach verwendetem Formular, die von Ihnen angegebenen Reisedetails (z. B. Termine, Gruppengröße, Budget oder Handicap) sowie etwaige Notizen, um Ihnen Ergebnisse zuzusenden und &mdash; nur wenn Sie sich dafür entscheiden &mdash; unsere gelegentlichen Planungs-E-Mails. MailerLite verarbeitet Daten innerhalb der EU.</li>
-              <li><strong>Resend:</strong> den Inhalt jedes von Ihnen abgesendeten Kontakt- oder Anfrageformulars, um es an uns zuzustellen und Ihnen eine Bestätigungs-E-Mail zu senden. Resend hat seinen Sitz in den USA.</li>
+              <li><strong>Resend:</strong> den Inhalt jedes von Ihnen abgesendeten Kontakt-, Anfrage- oder Fragebogenformulars, um es an uns zuzustellen und Ihnen gegebenenfalls eine Bestätigungs-E-Mail zu senden. Resend hat seinen Sitz in den USA.</li>
               <li><strong>Upstash:</strong> Ihre IP-Adresse, kurzzeitig gespeichert, um Missbrauch unserer Formulare zu verhindern (Rate Limiting). Upstash hat seinen Sitz in den USA.</li>
               <li><strong>Vercel:</strong> hostet diese Website und verarbeitet dabei Standard-Webanfragedaten wie Ihre IP-Adresse und Browserinformationen. Vercel hat seinen Sitz in den USA.</li>
               <li><strong>Gesetzliche Verpflichtung:</strong> sofern gesetzlich oder von einer zuständigen Behörde gefordert</li>
