@@ -674,6 +674,12 @@
     </div>
 
     <div class="question">
+      <label class="question-label" for="q-location">Where do you live? (optional)</label>
+      <p class="question-hint">Town and country is enough.</p>
+      <input type="text" id="q-location" placeholder="e.g. Leeds, England">
+    </div>
+
+    <div class="question">
       <label class="question-label">How long have you been playing golf?</label>
       <div class="options-grid radio-type">
         <label class="option-item" onclick="selectOption(this,'radio', event)">
@@ -1299,6 +1305,7 @@
       { q: 'Email', a: getVal('q-email') || '—' },
       { q: 'Handicap', a: getVal('q-handicap') || '—' },
       { q: 'Age range', a: document.getElementById('q-age').value || '—' },
+      { q: 'Lives in', a: getVal('q-location') || '—' },
       { q: 'Years playing', a: getRadio('years-playing') },
       { q: 'Plays how often', a: getRadio('freq-play') },
       { q: 'Game state right now', a: getRadio('game-state') },
