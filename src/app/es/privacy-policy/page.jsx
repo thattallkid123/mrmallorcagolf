@@ -42,6 +42,7 @@ export default function PrivacyPolicyES() {
             <ul>
               <li>Responder a tu consulta y organizar tu experiencia de golf</li>
               <li>Comunicarnos contigo en relación con tu reserva o visita prevista</li>
+              <li>Llevar un registro privado de consultas y sesiones anteriores, para poder hacer seguimiento y planificar futuras visitas</li>
               <li>Enviar resultados del Course Selector y emails de seguimiento cuando te hayas suscrito expresamente</li>
               <li>Mejorar nuestros servicios a partir de patrones de uso generales (solo analítica)</li>
             </ul>
@@ -80,6 +81,8 @@ export default function PrivacyPolicyES() {
               <li><strong>Resend:</strong> el contenido de cualquier formulario de contacto, consulta o cuestionario que envíes, para hacérnoslo llegar y, cuando corresponda, enviarte un correo de confirmación. Resend tiene su sede en Estados Unidos.</li>
               <li><strong>Upstash:</strong> tu dirección IP, retenida brevemente, para evitar el uso abusivo de nuestros formularios (limitación de solicitudes). Upstash tiene su sede en Estados Unidos.</li>
               <li><strong>Vercel:</strong> aloja este sitio web y, como parte de ello, trata datos estándar de las solicitudes web, como tu dirección IP e información del navegador. Vercel tiene su sede en Estados Unidos.</li>
+              <li><strong>Zoho Mail:</strong> los correos que nos envías y nuestras respuestas. Nuestro buzón está alojado en el centro de datos de Zoho en la UE.</li>
+              <li><strong>Google (Drive y Hojas de cálculo):</strong> nuestros registros privados de consultas y sesiones, que incluyen nombres, datos de contacto, hándicap y notas. Google tiene su sede en Estados Unidos.</li>
               <li><strong>Obligación legal:</strong> cuando lo exija la ley o una autoridad competente</li>
             </ul>
             <p>Algunos de estos encargados del tratamiento tienen su sede fuera de la UE/EEE, en Estados Unidos. Cuando esto ocurre, la transferencia se realiza con las garantías exigidas por el RGPD: el Marco de Privacidad de Datos UE-EE. UU., para los encargados certificados bajo este marco (actualmente Google, Resend y Vercel), o cláusulas contractuales tipo en los demás casos (actualmente Upstash).</p>

@@ -44,6 +44,7 @@ export default function PrivacyPolicyFR() {
             <ul>
               <li>répondre à votre demande et organiser votre expérience de golf</li>
               <li>communiquer avec vous au sujet de votre réservation ou de votre visite prévue</li>
+              <li>tenir un registre privé des demandes et des séances passées, afin de vous recontacter et de préparer de futures visites</li>
               <li>envoyer les résultats du Course Selector et, si vous avez choisi de vous y inscrire, nos notes occasionnelles de planification golf à Majorque</li>
               <li>améliorer nos services à partir de tendances d&rsquo;usage générales (analytique uniquement)</li>
             </ul>
@@ -82,6 +83,8 @@ export default function PrivacyPolicyFR() {
               <li><strong>Resend :</strong> le contenu de tout formulaire de contact, de demande ou de questionnaire que vous soumettez, afin de nous le transmettre et, le cas échéant, de vous envoyer un e-mail de confirmation. Resend est basé aux États-Unis.</li>
               <li><strong>Upstash :</strong> votre adresse IP, conservée brièvement, afin de prévenir les abus sur nos formulaires (limitation de débit). Upstash est basé aux États-Unis.</li>
               <li><strong>Vercel :</strong> héberge ce site et, à ce titre, traite des données standard de requête web telles que votre adresse IP et les informations de votre navigateur. Vercel est basé aux États-Unis.</li>
+              <li><strong>Zoho Mail :</strong> les e-mails que vous nous envoyez et nos réponses. Notre boîte mail est hébergée dans le centre de données européen de Zoho.</li>
+              <li><strong>Google (Drive et Sheets) :</strong> nos registres privés des demandes et des séances, qui contiennent des noms, des coordonnées, le handicap et des notes. Google est basé aux États-Unis.</li>
               <li><strong>Obligation légale :</strong> lorsque la loi ou une autorité compétente l&rsquo;exige</li>
             </ul>
             <p>Certains de ces sous-traitants sont basés en dehors de l&rsquo;UE/EEE, aux États-Unis. Le cas échéant, le transfert est effectué avec les garanties requises par le RGPD &mdash; le Data Privacy Framework UE-États-Unis, pour les sous-traitants certifiés à ce titre (actuellement Google, Resend et Vercel), ou des clauses contractuelles types dans les autres cas (actuellement Upstash).</p>

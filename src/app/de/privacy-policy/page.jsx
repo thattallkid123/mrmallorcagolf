@@ -44,6 +44,7 @@ export default function PrivacyPolicyDE() {
             <ul>
               <li>auf Ihre Anfrage zu antworten und Ihr Golferlebnis zu organisieren</li>
               <li>mit Ihnen über Ihre Buchung oder den geplanten Besuch zu kommunizieren</li>
+              <li>ein privates Verzeichnis von Anfragen und früheren Terminen zu führen, um nachzufassen und künftige Besuche zu planen</li>
               <li>Ergebnisse des Course Selector und, sofern Sie sich dafür entschieden haben, unsere gelegentlichen Mallorca-Golfplanungsnotizen zu versenden</li>
               <li>unsere Leistungen anhand allgemeiner Nutzungsmuster zu verbessern (nur Analyse)</li>
             </ul>
@@ -82,6 +83,8 @@ export default function PrivacyPolicyDE() {
               <li><strong>Resend:</strong> den Inhalt jedes von Ihnen abgesendeten Kontakt-, Anfrage- oder Fragebogenformulars, um es an uns zuzustellen und Ihnen gegebenenfalls eine Bestätigungs-E-Mail zu senden. Resend hat seinen Sitz in den USA.</li>
               <li><strong>Upstash:</strong> Ihre IP-Adresse, kurzzeitig gespeichert, um Missbrauch unserer Formulare zu verhindern (Rate Limiting). Upstash hat seinen Sitz in den USA.</li>
               <li><strong>Vercel:</strong> hostet diese Website und verarbeitet dabei Standard-Webanfragedaten wie Ihre IP-Adresse und Browserinformationen. Vercel hat seinen Sitz in den USA.</li>
+              <li><strong>Zoho Mail:</strong> die E-Mails, die Sie uns senden, und unsere Antworten. Unser Postfach wird im EU-Rechenzentrum von Zoho betrieben.</li>
+              <li><strong>Google (Drive und Tabellen):</strong> unsere privaten Aufzeichnungen zu Anfragen und Terminen mit Namen, Kontaktdaten, Handicap und Notizen. Google hat seinen Sitz in den USA.</li>
               <li><strong>Gesetzliche Verpflichtung:</strong> sofern gesetzlich oder von einer zuständigen Behörde gefordert</li>
             </ul>
             <p>Einige dieser Auftragsverarbeiter haben ihren Sitz außerhalb der EU/des EWR, in den USA. In diesem Fall erfolgt die Übermittlung unter den nach der DSGVO erforderlichen Garantien &mdash; dem EU-US Data Privacy Framework, sofern der Empfänger danach zertifiziert ist (derzeit Google, Resend und Vercel), oder andernfalls Standardvertragsklauseln (derzeit Upstash).</p>

@@ -289,6 +289,14 @@
     margin-bottom: 10px;
     font-weight: 300;
   }
+  .form-note {
+    font-size: 0.75rem;
+    color: var(--taupe);
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 16px;
+  }
+  .form-note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
 
   /* Text inputs */
   input[type="text"],
@@ -1145,6 +1153,7 @@
       <button class="btn btn-secondary" onclick="prevSection()">← Back</button>
       <button class="btn btn-gold" onclick="submitForm()">Submit questionnaire →</button>
     </div>
+    <p class="form-note">Your answers are emailed to me and used to plan your day. <a href="/privacy-policy" target="_blank" rel="noopener">Privacy policy</a></p>
   </div>
 
   <!-- THANK YOU -->

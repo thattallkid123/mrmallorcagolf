@@ -44,6 +44,7 @@ export default function PrivacyPolicy() {
             <ul>
               <li>Respond to your enquiry and arrange your golf experience</li>
               <li>Communicate with you about your booking or planned visit</li>
+              <li>Keep a private record of enquiries and past sessions, so we can follow up and plan future visits</li>
               <li>Send Course Selector follow-up emails and Mallorca golf planning notes where you have chosen to opt in</li>
               <li>Improve our services based on general usage patterns (analytics only)</li>
             </ul>
@@ -82,6 +83,8 @@ export default function PrivacyPolicy() {
               <li><strong>Resend:</strong> the content of any contact, enquiry or questionnaire form you submit, to deliver it to us and, where applicable, send you a confirmation email. Resend is based in the United States.</li>
               <li><strong>Upstash:</strong> your IP address, held briefly, to prevent abuse of our forms (rate limiting). Upstash is based in the United States.</li>
               <li><strong>Vercel:</strong> hosts this website and, as part of that, processes standard web request data such as your IP address and browser information. Vercel is based in the United States.</li>
+              <li><strong>Zoho Mail:</strong> the emails you send us and our replies. Our mailbox is hosted in Zoho&apos;s EU data centre.</li>
+              <li><strong>Google (Drive and Sheets):</strong> our private records of enquiries and sessions, which hold names, contact details, handicap and notes. Google is based in the United States.</li>
               <li><strong>Legal requirement:</strong> where required by law or a competent authority</li>
             </ul>
             <p>Some of these processors are based outside the EU/EEA, in the United States. Where this happens, the transfer is made under the safeguards required by GDPR &mdash; the EU-US Data Privacy Framework, for processors certified under it (currently Google, Resend, and Vercel), or Standard Contractual Clauses otherwise (currently Upstash).</p>
