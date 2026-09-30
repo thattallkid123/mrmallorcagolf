@@ -28,5 +28,6 @@ $MmgSkillsMap = @(
     @{Drive="MMG_SKILL_SITE_OPERATIONS_MMG.md"; Target="site-operations-mmg"},
     @{Drive="MMG_SKILL_AUTONOMO_FILING.md"; Target="mmg-autonomo-filing"},
     @{Drive="MMG_SKILL_CLIENT_DOCS.md"; Target="mmg-client-docs"},
-    @{Drive="MMG_SKILL_HERMES_OPS.md"; Target="mmg-hermes-ops"}
+    @{Drive="MMG_SKILL_HERMES_OPS.md"; Target="mmg-hermes-ops"},
+    @{Drive="MMG_SKILL_REPLY_LIBRARY.md"; Target="mmg-reply-library"}
 )
