@@ -219,7 +219,7 @@ export const GOLF_COST_CALCULATOR_T = {
       luxury: 'Vollständiger Concierge-Trip. Jede Runde, Transfer, Tisch und Abschlagzeit organisiert, mit mir als Gastgeber Ihres wichtigsten Golftages.',
     },
     prefNotes: {
-      scenic: 'Sie wünschten sich malerische Plätze. Ich werde die Mischung zu den Plätzen mit den schönsten Lagen hin gewichten.',
+      scenic: 'Sie wünschten sich malerische Plätze. Ich gewichte die Mischung zugunsten von Plätzen mit den schönsten Lagen.',
       famous: 'Sie wünschten sich berühmte Namen. Ich werde die bekanntesten Plätze der Insel in dieser Kategorie priorisieren.',
       challenging: 'Sie wünschten sich eine Herausforderung. Ich werde die Plätze in dieser Kategorie wählen, die Ihr Spiel am meisten fordern.',
       relaxed: 'Sie wünschten sich entspanntes Golf. Ich werde ein gemächlicheres Spieltempo bevorzugen.',
@@ -330,12 +330,12 @@ export const GOLF_COST_CALCULATOR_T = {
     disclaimer: 'Las tarifas de green fee, los precios de hoteles y los precios de comida en Mallorca varían según la temporada y disponibilidad. Todas las cifras aquí son rangos aproximados solo para planificación.',
     packages: {
       value: 'Selección de campos y ayuda de reserva. Confirmo tu combinación de campos, reservo horarios de salida a las tarifas correctas y comparto mis notas de campo para cada ronda.',
-      balanced: 'Planificación del viaje + una ronda con clase conmigo. Planifico el viaje de principio a fin y me uno a ti para una ronda Play With A Pro en uno de tus campos.',
+      balanced: 'Planificación del viaje + una ronda con coaching conmigo. Planifico el viaje de principio a fin y me uno a ti para una ronda Play With A Pro en uno de tus campos.',
       premium: 'Día de golf Signature + planificación completa del viaje. Un día Signature conmigo como anfitrión más planificación completa de campos, horarios de salida y transporte.',
       luxury: 'Viaje concierge completo. Cada ronda, traslado, mesa y horario de salida organizado, conmigo como anfitrión de tu día de golf más importante.',
     },
     prefNotes: {
-      scenic: 'Pediste campos pintorescos. Ponderaré la combinación hacia los campos con las mejores vistas y entornos.',
+      scenic: 'Pediste campos pintorescos. Inclinaré la combinación hacia los campos con las mejores vistas y entornos.',
       famous: 'Pediste nombres famosos. Priorizaré los campos más conocidos de la isla en este nivel.',
       challenging: 'Pediste un desafío. Seleccionaré los campos en este nivel que más exigen a tu juego.',
       relaxed: 'Pediste golf relajado. Favoreceré diseños más amigables y ritmo más pausado.',
@@ -397,7 +397,7 @@ export const GOLF_COST_CALCULATOR_T = {
       upgradeBuggy: "Plusieurs parcours de Majorque sont tr\u00e8s vallonn\u00e9s. Une voiturette ces jours-l\u00e0 prot\u00e8ge votre \u00e9nergie et votre score.",
       upgradeTransport: "Avec {golfers} golfeur{plural} et des clubs, un transport organis\u00e9 co\u00fbte souvent \u00e0 peine plus que des taxis et enl\u00e8ve toute friction.",
       upgradePro: "Une partie Play With A Pro avec moi transforme une partie en strat\u00e9gie de parcours utile tout le voyage.",
-      upgradeDinner: "Un d\u00eener premium fait un beau dernier soir. Je conna\u00eds les tables qui valent la r\u00e9servation.",
+      upgradeDinner: "Un d\u00eener premium fait un beau dernier soir. Je connais les tables qui valent la r\u00e9servation.",
     },
     quote: {
       cta: 'Générateur de devis de voyage',
@@ -447,8 +447,8 @@ export const GOLF_COST_CALCULATOR_T = {
     packages: {
       value: 'Sélection de parcours et aide de réservation. Je confirme votre sélection de parcours, réserve les heures de départ aux bons tarifs et partage mes notes de parcours pour chaque partie.',
       balanced: 'Planification du voyage + une partie encadrée par un pro. Je planifie le voyage de bout en bout et vous rejoins pour une partie Play With A Pro sur l\'un de vos parcours.',
-      premium: 'Journée Signature + planification complète du voyage. Une journée Signature animée par moi plus planification complète des parcours, des heures de départ et du transport.',
-      luxury: 'Voyage de conciergerie complet. Chaque partie, transfert, table et heure de départ arrangés, avec moi pour animer votre journée de golf phare.',
+      premium: 'Journée Signature + planification complète du voyage. Une journée Signature animée par mes soins, plus planification complète des parcours, des heures de départ et du transport.',
+      luxury: 'Voyage de conciergerie complet. Chaque partie, transfert, table et heure de départ arrangés, avec moi comme hôte de votre journée de golf phare.',
     },
     prefNotes: {
       scenic: 'Vous avez demandé des parcours pittoresques. Je pondérerai la sélection vers les parcours avec les plus beaux cadres.',
@@ -492,7 +492,7 @@ export const GOLF_COST_CALCULATOR_T = {
       saveMoney: 'Manieren om kosten te besparen',
       upgrade: 'Wanneer upgraden de moeite waard is',
       package: 'Mijn aanbevolen pakket',
-      packageNote: 'Play With A Pro kost €795 solo of €950 totaal voor 2-3 golfers. Reisplanning wordt apart aangeboden zodra ik uw gegevens zie.',
+      packageNote: 'Play With A Pro kost €795 solo of €950 totaal voor 2-3 golfers. Reisplanning wordt apart aangeboden zodra ik uw gegevens heb.',
       areaFallback: "uw gekozen gebied",
       areaNote: "Omdat u rond {area} verblijft, pas ik de rijtijden daarop aan.",
       budgetLineGreenFees: "Greenfees",
@@ -562,12 +562,12 @@ export const GOLF_COST_CALCULATOR_T = {
     disclaimer: 'Greenfees, hotelprijs en eetprijzen op Mallorca variëren per seizoen en beschikbaarheid. Alle cijfers zijn geschatte bereiken alleen voor planning.',
     packages: {
       value: 'Baankeuze & Boekingshulp. Ik bevestig uw baanmix, boek starttijden tegen de juiste tarieven en deel mijn baanopmerkingen voor elke ronde.',
-      balanced: 'Reisplanning + Een Trainingsvlucht. Ik plan de reis van begin tot eind en sluit bij u aan voor een Play With A Pro-ronde op een van uw banen.',
+      balanced: 'Reisplanning + Eén begeleide ronde. Ik plan de reis van begin tot eind en sluit bij u aan voor een Play With A Pro-ronde op een van uw banen.',
       premium: 'Signature Golfdag + Volledige Reisplanning. Een gehoste Signature Day met mij plus volledige planning van banen, starttijden en vervoer.',
       luxury: 'Volledige Concierge-reis. Elke ronde, transfer, tafel en starttijd geregeld, met mij als gastheer van uw belangrijkste golfdag.',
     },
     prefNotes: {
-      scenic: 'U vroeg om pittoreske banen. Ik laat de mix meer richting banen met de beste uitzichten en omgevingen gaan.',
+      scenic: 'U vroeg om pittoreske banen. Ik stem de mix af op banen met de mooiste uitzichten en omgevingen.',
       famous: 'U vroeg om beroemde namen. Ik geef de meest bekende banen van het eiland op dit niveau prioriteit.',
       challenging: 'U vroeg om een uitdaging. Ik selecteer de banen op dit niveau die het meest van uw spel vragen.',
       relaxed: 'U vroeg om ontspannen golf. Ik geef de voorkeur aan vriendelijkere layouts en een rustiger tempo.',
@@ -608,7 +608,7 @@ export const GOLF_COST_CALCULATOR_T = {
       saveMoney: 'Sätt att spara pengar',
       upgrade: 'När det lönar sig att uppgradera',
       package: 'Mitt rekommenderade paket',
-      packageNote: 'Play With A Pro kostar €795 solo eller €950 totalt för 2-3 golfspelare. Reseplaneringen citeras separat när jag ser dina datum och din grupp.',
+      packageNote: 'Play With A Pro kostar €795 solo eller €950 totalt för 2-3 golfspelare. Reseplaneringen prissätts separat när jag ser dina datum och din grupp.',
       areaFallback: "ditt valda omr\u00e5de",
       areaNote: "Eftersom du bor runt {area} justerar jag f\u00f6r k\u00f6rtider.",
       budgetLineGreenFees: "Greenfees",
@@ -636,12 +636,12 @@ export const GOLF_COST_CALCULATOR_T = {
       title: 'Få en riktig offert från mig',
       body: 'Dina svar är redan ifyllda. Lägg till din e-post och datum, och jag förvandlar denna uppskattning till en riktig, bokningsbar reseoffert.',
       button: 'Få mitt personliga citat',
-      note: 'Ingen förpliktelse. Ett e-postmeddelande från mig personligen.',
+      note: 'Inga förpliktelser. Ett e-postmeddelande från mig personligen.',
       prefMessage: 'Föredrar du att meddela? Skriv till mig på WhatsApp',
     },
     email: {
       title: 'Skicka denna uppdelning till dig själv via e-post',
-      sub: 'Vi skickar dig den fullständiga kostnadsuppdelningen och föreslagen banmix. Praktiskt för att dela med gruppen eller ange ett budget. Sedan kan jag finjustera de verkliga siffrorna baserat på dina datum.',
+      sub: 'Vi skickar dig den fullständiga kostnadsuppdelningen och föreslagen banmix. Praktiskt för att dela med gruppen eller ange en budget. Sedan kan jag finjustera de verkliga siffrorna baserat på dina datum.',
       placeholder: 'du@email.com',
       button: 'Skicka mig uppdelningen',
       sending: 'Skickar…',
@@ -678,12 +678,12 @@ export const GOLF_COST_CALCULATOR_T = {
     disclaimer: 'Green fees, hotelpriser och matpriser på Mallorca varierar beroende på säsong och tillgänglighet. Alla siffror här är ungefärliga intervall endast för planering.',
     packages: {
       value: 'Banval & Bokningshjälp. Jag bekräftar din banmix, bokar avslagningstider till rätt priser och delar mina bananteckningar för varje rond.',
-      balanced: 'Reseplanering + En Tränad Rond. Jag planerar resan från början till slut och ansluter till dig för en Play With A Pro-rond på en av dina banor.',
-      premium: 'Signature Golfdag + Fullständig Reseplanering. En värdad Signature Day med mig plus fullständig planering av banor, avslagningstider och transport.',
+      balanced: 'Reseplanering + En rond med coaching. Jag planerar resan från början till slut och ansluter till dig för en Play With A Pro-rond på en av dina banor.',
+      premium: 'Signature Golfdag + Fullständig Reseplanering. En Signature Day med mig som värd, plus fullständig planering av banor, avslagningstider och transport.',
       luxury: 'Fullständig Concierge-resa. Varje rond, transfer, bord och avslagningstid arrangerad, med mig som värd för din mest framträdande golfdag.',
     },
     prefNotes: {
-      scenic: 'Du frågade efter vackra banor. Jag väger blandningen mot banor med de bästa vyerna och inställningarna.',
+      scenic: 'Du frågade efter vackra banor. Jag viktar blandningen mot banor med de bästa vyerna och miljöerna.',
       famous: 'Du frågade efter berömda namn. Jag prioriterar de mest kända banorna på ön på denna nivå.',
       challenging: 'Du frågade efter en utmaning. Jag väljer banorna på denna nivå som ställer mest frågor till ditt spel.',
       relaxed: 'Du frågade efter avslappnad golf. Jag gynnar vänligare banor och lugnare tempo.',
@@ -752,7 +752,7 @@ export const GOLF_COST_CALCULATOR_T = {
       title: '向我获取真实报价',
       body: '您的答案已填写。添加您的电子邮件和日期，我会将此估计转变为真实的、可预订的旅行报价。',
       button: '获取我的个人报价',
-      note: '无义务。我会亲自发送一封电子邮件。',
+      note: '无需承担任何义务。我会亲自发送一封电子邮件。',
       prefMessage: '喜欢发消息？可以 WhatsApp 联系我',
     },
     email: {
@@ -794,9 +794,9 @@ export const GOLF_COST_CALCULATOR_T = {
     disclaimer: '马略卡的果岭费、酒店价格和用餐价格因季节和可用性而异。此处的所有数字仅为规划目的的近似范围。',
     packages: {
       value: '球场选择与预订帮助。我会确认您的球场组合，以合适的费率预订开球时间，并分享每一轮的球场笔记。',
-      balanced: '行程规划 + 一次指导轮次。我从头到尾规划整个行程，并加入您在其中一个球场进行一轮 Play With A Pro。',
+      balanced: '行程规划 + 一轮教练陪打。我从头到尾规划整个行程，并在您选定的其中一个球场陪您打一轮 Play With A Pro。',
       premium: '标志性高尔夫日 + 完整行程规划。由我主持的标志性日加上球场、开球时间和交通的完整规划。',
-      luxury: '完整礼宾旅行。每一轮、转接、餐桌和开球时间都已安排，由我主持您最重要的高尔夫日。',
+      luxury: '完整礼宾旅行。每一轮、接送、餐桌和开球时间都已安排，由我主持您最重要的高尔夫日。',
     },
     prefNotes: {
       scenic: '您要求风景优美。我会将组合偏向景色和环境最优美的球场。',
@@ -804,7 +804,7 @@ export const GOLF_COST_CALCULATOR_T = {
       challenging: '您要求挑战。我会选择该级别中对您比赛要求最高的球场。',
       relaxed: '您要求放松高尔夫。我会倾向选择更友好的球道和更悠闲的节奏。',
       near: '您希望球场靠近您的酒店。我知道您的住处后，会围绕它调整组合。',
-      none: '该级别的平衡混合物。我一旦了解您的团队就会调整。',
+      none: '该级别的均衡组合。我一旦了解您的团队就会调整。',
     },
     areaNames: {
       southwest: '西南地区',
