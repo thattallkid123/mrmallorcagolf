@@ -39,7 +39,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       }
     ],
     "signatureRoute": {
-      "text": "For a private tee time, a session with John Brazier after the round, transfers and an evening arranged around your group, see Signature Day.",
+      "text": "For a private tee time, a session with John Brazier (The Golf Doctor) after the round, transfers and an evening arranged around your group, see Signature Day.",
       "cta": "Explore Signature Day →"
     }
   },

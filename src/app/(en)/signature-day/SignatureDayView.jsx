@@ -124,7 +124,7 @@ export default function SignatureDayView() {
                 built around the round, the body, and the evening.
               </h1>
               <p className="pwap-hero__body">
-                Eighteen holes with me, a post-round session with John Brazier, private transfers, and an evening arranged around your group. One person coordinates the whole day from the first conversation.
+                Eighteen holes with me, a post-round session with John Brazier (The Golf Doctor), private transfers, and an evening arranged around your group. One person coordinates the whole day from the first conversation.
               </p>
               <p className="pwap-hero__price">Pricing tailored to the day</p>
               <div className="pwap-hero__actions">

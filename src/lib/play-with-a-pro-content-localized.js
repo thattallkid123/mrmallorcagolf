@@ -14,7 +14,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Le respondo personalmente en 24 horas." }
       ],
       "signatureRoute": {
-        "text": "Si quiere un tee time privado, una sesión con John Brazier después de la vuelta, traslados y una velada organizada para su grupo, vea Signature Day.",
+        "text": "Si quiere un tee time privado, una sesión con John Brazier (The Golf Doctor) después de la vuelta, traslados y una velada organizada para su grupo, vea Signature Day.",
         "cta": "Explorar Signature Day →"
       }
     },
@@ -298,7 +298,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Ich antworte persönlich innerhalb von 24 Stunden." }
       ],
       "signatureRoute": {
-        "text": "Für eine private Startzeit, eine Einheit mit John Brazier nach der Runde, Transfers und einen Abend für Ihre Gruppe gibt es den Signature Day.",
+        "text": "Für eine private Startzeit, eine Einheit mit John Brazier (The Golf Doctor) nach der Runde, Transfers und einen Abend für Ihre Gruppe gibt es den Signature Day.",
         "cta": "Signature Day ansehen →"
       }
     },
@@ -582,7 +582,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Je réponds personnellement sous 24 heures." }
       ],
       "signatureRoute": {
-        "text": "Pour un départ privé, une séance avec John Brazier après la partie, les transferts et une soirée organisée pour votre groupe, découvrez Signature Day.",
+        "text": "Pour un départ privé, une séance avec John Brazier (The Golf Doctor) après la partie, les transferts et une soirée organisée pour votre groupe, découvrez Signature Day.",
         "cta": "Découvrir Signature Day →"
       }
     },
@@ -866,7 +866,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Volgende stap", "text": "Stuur uw data, groepsgrootte en handicaprange. Ik reageer persoonlijk binnen 24 uur." }
       ],
       "signatureRoute": {
-        "text": "Voor een privéstarttijd, een sessie met John Brazier na de ronde, transfers en een avond voor uw groep is er Signature Day.",
+        "text": "Voor een privéstarttijd, een sessie met John Brazier (The Golf Doctor) na de ronde, transfers en een avond voor uw groep is er Signature Day.",
         "cta": "Bekijk Signature Day →"
       }
     },
@@ -1149,7 +1149,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Jag svarar personligen inom 24 timmar." }
       ],
       "signatureRoute": {
-        "text": "För en privat starttid, ett pass med John Brazier efter rundan, transfer och en kväll ordnad för gruppen finns Signature Day.",
+        "text": "För en privat starttid, ett pass med John Brazier (The Golf Doctor) efter rundan, transfer och en kväll ordnad för gruppen finns Signature Day.",
         "cta": "Se Signature Day →"
       }
     },
@@ -1433,7 +1433,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "下一步", "text": "发送您的日期、人数与差点范围，我会在24小时内亲自回复。" }
       ],
       "signatureRoute": {
-        "text": "如果希望安排私人开球时间、赛后与 John Brazier 的训练恢复环节、接送和适合团队的晚间活动，可以了解 Signature Day。",
+        "text": "如果希望安排私人开球时间、赛后与 John Brazier（The Golf Doctor）的训练恢复环节、接送和适合团队的晚间活动，可以了解 Signature Day。",
         "cta": "了解 Signature Day →"
       }
     },
