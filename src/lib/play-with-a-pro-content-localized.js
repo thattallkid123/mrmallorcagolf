@@ -11,7 +11,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
         { "label": "Formato", "text": "Un campo, 18 hoyos, elegido según su juego, conmigo a su lado durante toda la vuelta." },
         { "label": "Precios", "text": "Solo desde €795. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
-        { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Andy responde personalmente en 24 horas." }
+        { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Le respondo personalmente en 24 horas." }
       ],
       "signatureRoute": {
         "text": "Si quiere un tee time privado, una sesión con John Brazier después de la vuelta, traslados y una velada organizada para su grupo, vea Signature Day.",
@@ -261,7 +261,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Sí. Trabajo con juniors de todos los niveles, incluidos principiantes absolutos. Adaptamos la dificultad del campo para que aprendan en un entorno de golf real sin sentirse superados."
         },
         {
-          "q": "¿Qué titulaciones tiene Andy?",
+          "q": "¿Qué titulaciones tiene?",
           "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Certificación de putting Phil Kenyon. Mike Adams. US Kids Top 50 Worldwide Instructor. Todos los detalles en la página de presentación."
         },
         {
@@ -295,7 +295,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Am besten für", "text": "Einzelspieler, Paare und kleine Gruppen, die einen richtigen Golftag auf Mallorca wollen." },
         { "label": "Format", "text": "Ein Platz, 18 Löcher, passend zu Ihrem Spiel, mit mir an Ihrer Seite während der ganzen Runde." },
         { "label": "Preise", "text": "Solo ab €795. Gruppe ab €950 insgesamt. Greenfees sind getrennt und werden vor der Buchung bestätigt." },
-        { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Andy antwortet persönlich innerhalb von 24 Stunden." }
+        { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Ich antworte persönlich innerhalb von 24 Stunden." }
       ],
       "signatureRoute": {
         "text": "Für eine private Startzeit, eine Einheit mit John Brazier nach der Runde, Transfers und einen Abend für Ihre Gruppe gibt es den Signature Day.",
@@ -545,7 +545,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Ja. Ich arbeite mit Junioren auf allen Niveaus, auch mit absoluten Anfängern. Wir passen den Schwierigkeitsgrad des Platzes an, damit sie in einem echten Golfumfeld lernen, ohne überfordert zu werden."
         },
         {
-          "q": "Welche Qualifikationen hat Andy?",
+          "q": "Welche Qualifikationen haben Sie?",
           "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon Putting-Zertifizierung. Mike Adams. US Kids Top 50 Worldwide Instructor. Alle Details auf der About-Seite."
         },
         {
@@ -579,7 +579,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Idéal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journée de golf a Majorque." },
         { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi a vos cotes pendant toute la partie." },
         { "label": "Tarifs", "text": "Solo a partir de €795. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la reservation." },
-        { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Andy repond personnellement sous 24 heures." }
+        { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Je réponds personnellement sous 24 heures." }
       ],
       "signatureRoute": {
         "text": "Pour un départ privé, une séance avec John Brazier après la partie, les transferts et une soirée organisée pour votre groupe, découvrez Signature Day.",
@@ -829,7 +829,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Oui. Je travaille avec des juniors de tous niveaux, y compris les grands débutants. Nous adaptons la difficulté du parcours pour qu'ils apprennent dans un vrai environnement de golf sans être dépassés."
         },
         {
-          "q": "Quelles sont les qualifications d'Andy ?",
+          "q": "Quelles sont vos qualifications ?",
           "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Certification putting Phil Kenyon. Mike Adams. US Kids Top 50 Worldwide Instructor. Tous les détails sur la page à propos."
         },
         {
@@ -863,7 +863,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Geschikt voor", "text": "Solospelers, koppels en kleine groepen die een echte golfdag op Mallorca willen." },
         { "label": "Formaat", "text": "Een baan, 18 holes, gekozen voor uw spel, met mij naast u gedurende de hele ronde." },
         { "label": "Prijzen", "text": "Solo vanaf €795. Groep vanaf €950 totaal. Greenfees zijn apart en worden voor de boeking bevestigd." },
-        { "label": "Volgende stap", "text": "Stuur uw data, groepsgrootte en handicaprange. Andy reageert persoonlijk binnen 24 uur." }
+        { "label": "Volgende stap", "text": "Stuur uw data, groepsgrootte en handicaprange. Ik reageer persoonlijk binnen 24 uur." }
       ],
       "signatureRoute": {
         "text": "Voor een privéstarttijd, een sessie met John Brazier na de ronde, transfers en een avond voor uw groep is er Signature Day.",
@@ -1112,7 +1112,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Ja. Ik werk met junioren op alle niveaus, ook absolute beginners. We passen de moeilijkheidsgraad van de baan aan zodat ze leren in een echte golfomgeving zonder overweldigd te worden."
         },
         {
-          "q": "Welke kwalificaties heeft Andy?",
+          "q": "Welke kwalificaties heeft u?",
           "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon putting-certificering. Mike Adams. US Kids Top 50 Worldwide Instructor. Alle details op de over-pagina."
         },
         {
@@ -1146,7 +1146,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Bäst for", "text": "Ensamspelare, par och sma sallskap som vill ha en riktig golfdag pa Mallorca." },
         { "label": "Format", "text": "En bana, 18 hål, vald efter ditt spel, med mig vid din sida under hela rundan." },
         { "label": "Priser", "text": "Solo från €795. Grupp från €950 totalt. Green fees ar separata och bekraftas innan bokning." },
-        { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Andy svarar personligen inom 24 timmar." }
+        { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Jag svarar personligen inom 24 timmar." }
       ],
       "signatureRoute": {
         "text": "För en privat starttid, ett pass med John Brazier efter rundan, transfer och en kväll ordnad för gruppen finns Signature Day.",
@@ -1396,7 +1396,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "Ja. Jag arbetar med juniorer på alla nivåer, inklusive totala nybörjare. Vi anpassar svårighetsgraden på banan så att de lär sig i en riktig golfmiljö utan att bli överväldigade."
         },
         {
-          "q": "Vilka kvalifikationer har Andy?",
+          "q": "Vilka kvalifikationer har du?",
           "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon putting-certifiering. Mike Adams. US Kids Top 50 Worldwide Instructor. Fullständiga uppgifter på om-sidan."
         },
         {
@@ -1430,7 +1430,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "适合人群", "text": "希望在马略卡有一次真正高尔夫体验的单人球手、双人搭档或小型团体。" },
         { "label": "形式", "text": "一座根据您的球技选定的球场，18洞，全程由我陪同。" },
         { "label": "价格", "text": "单人795欧元起，小组950欧元总计起。果岭费另计，预订前确认。" },
-        { "label": "下一步", "text": "发送您的日期、人数与差点范围，Andy会在24小时内亲自回复。" }
+        { "label": "下一步", "text": "发送您的日期、人数与差点范围，我会在24小时内亲自回复。" }
       ],
       "signatureRoute": {
         "text": "如果希望安排私人开球时间、赛后与 John Brazier 的训练恢复环节、接送和适合团队的晚间活动，可以了解 Signature Day。",
@@ -1679,7 +1679,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "a": "接受。我与各个水平的青少年合作，包括完全的初学者。我们会根据情况调整球场的难度，让他们在真实的高尔夫环境中学习，而不会感到不知所措。"
         },
         {
-          "q": "Andy 有哪些资质证书？",
+          "q": "您有哪些资质证书？",
           "a": "英国 PGA 高级职业教练。TPI Level 3 认证。Trackman Master。Swing Catalyst。SAM PuttLab。GCQuad。Phil Kenyon 推杆认证。Mike Adams。US Kids 全球前 50 教练。详情请见关于页面。"
         },
         {

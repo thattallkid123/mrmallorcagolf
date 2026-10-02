@@ -35,7 +35,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       },
       {
         "label": "Next step",
-        "text": "Send your dates, group size, and handicap range. Andy replies personally within 24 hours."
+        "text": "Send your dates, group size, and handicap range. I reply personally within 24 hours."
       }
     ],
     "signatureRoute": {
@@ -301,7 +301,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "a": "Yes. I work with juniors at all levels, including complete beginners. We adapt the difficulty of the course so they are learning from a real golf environment without being overwhelmed. Same approach, scaled to where they are."
       },
       {
-        "q": "What qualifications does Andy have?",
+        "q": "What qualifications do you have?",
         "a": "PGA Advanced Professional. TPI Level 3. Trackman Master. Swing Catalyst. SAM PuttLab. GCQuad. Phil Kenyon putting certification. Mike Adams. US Kids Top 50 Worldwide instructor. Full details on the about page."
       },
       {

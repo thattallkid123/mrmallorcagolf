@@ -52,7 +52,7 @@ const DAY_STAGES = [
 const INCLUDED = [
   'Course and day planning',
   'Private tee time',
-  '18 holes with Andy',
+  '18 holes with me',
   'Session with John Brazier',
   'Connected debrief and priorities',
   'Private transfers',

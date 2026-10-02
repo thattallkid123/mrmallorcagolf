@@ -57,7 +57,7 @@ const content = {
   de: {
     metadata: { title: 'Signature Day Mallorca | Privater Golf-, Recovery- und Dinner-Tag', description: 'Ein privat arrangierter Golftag auf Mallorca mit 18 Löchern mit Andy, einer Recovery- und Sports-Performance-Session mit John Brazier, Transfers und koordiniertem Abend.' },
     breadcrumbHome: 'Startseite', heroImageAlt: 'Andy Griffiths auf einem Golfplatz auf Mallorca im Abendlicht', heroEyebrow: 'Das komplette Erlebnis, Mallorca', heroTitle: 'Ein privater Golftag\nrund um Runde, Körper und Abend.', heroBody: '18 Löcher mit mir, eine Session nach der Runde mit John Brazier, private Transfers und ein Abend, der für Ihre Gruppe arrangiert wird. Eine Person koordiniert den ganzen Tag ab dem ersten Gespräch.', price: 'Preis nach Umfang des Tages', primaryCta: 'Anfragen', secondaryCta: 'Den Tag ansehen', coursesCta: 'Mallorcas Golfplätze entdecken', whatsappLabel: 'WhatsApp schreiben', whatsappHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20ich%20interessiere%20mich%20für%20den%20Signature%20Day.',
-    included: ['Platz- und Tagesplanung', 'Private Startzeit', '18 Löcher mit Andy', 'Session mit John Brazier', 'Verbundenes Debrief und Prioritäten', 'Private Transfers', 'Abendkoordination'],
+    included: ['Platz- und Tagesplanung', 'Private Startzeit', '18 Löcher mit mir', 'Session mit John Brazier', 'Verbundenes Debrief und Prioritäten', 'Private Transfers', 'Abendkoordination'],
     dayStages: [
       { time: 'Vor dem Tag', title: 'Planen und bestätigen', body: 'Ich wähle den Platz mit Ihnen aus, organisiere Startzeit und Transfers und koordiniere den Abend. Sie erhalten ein klares Angebot, bevor etwas gebucht wird.' },
       { time: 'Die Runde', title: '18 Löcher zusammen', body: 'Ich spiele die volle Runde mit Ihnen und beobachte Entscheidungen, Muster und Bewegungen, die nur unter echten Spielbedingungen sichtbar werden. Ich mache währenddessen Notizen.' },
@@ -82,7 +82,7 @@ const content = {
   es: {
     metadata: { title: 'Signature Day Mallorca | Golf privado, recuperacion y cena', description: 'Un dia de golf privado en Mallorca con 18 hoyos con Andy, una sesión de recuperacion y rendimiento deportivo con John Brazier, traslados y noche coordinada.' },
     breadcrumbHome: 'Inicio', heroImageAlt: 'Andy Griffiths en un campo de golf en Mallorca al atardecer', heroEyebrow: 'La experiencia completa, Mallorca', heroTitle: 'Un dia privado de golf\nalrededor de la vuelta, el cuerpo y la noche.', heroBody: '18 hoyos conmigo, una sesión después de la vuelta con John Brazier, traslados privados y una noche organizada para su grupo. Una sola persona coordina todo desde la primera conversacion.', price: 'Precio según el dia', primaryCta: 'Consultar', secondaryCta: 'Explorar el dia', coursesCta: 'Explorar los campos de golf de Mallorca', whatsappLabel: 'Mensaje por WhatsApp', whatsappHref: 'https://wa.me/34624466702?text=Hola%20Andy%2C%20me%20interesa%20el%20Signature%20Day.',
-    included: ['Planificación del campo y del dia', 'Hora de salida privada', '18 hoyos con Andy', 'Sesión con John Brazier', 'Debrief conectado y prioridades', 'Traslados privados', 'Coordinacion de la noche'],
+    included: ['Planificación del campo y del dia', 'Hora de salida privada', '18 hoyos conmigo', 'Sesión con John Brazier', 'Debrief conectado y prioridades', 'Traslados privados', 'Coordinacion de la noche'],
     dayStages: [
       { time: 'Antes del dia', title: 'Planificar y confirmar', body: 'Elijo el campo con usted, organizo la hora de salida y los traslados, y coordino la noche. Recibe una propuesta clara antes de reservar nada.' },
       { time: 'La vuelta', title: '18 hoyos juntos', body: 'Juego toda la vuelta con usted y observo decisiones, patrones y movimiento que solo aparecen en condiciones reales. Tomo notas durante el recorrido.' },
@@ -105,7 +105,7 @@ const content = {
   fr: {
     metadata: { title: 'Signature Day Majorque | Golf prive, recuperation et diner', description: 'Une journée de golf privee a Majorque avec 18 trous avec Andy, une session recuperation et performance sportive avec John Brazier, transferts et soiree coordonnee.' },
     breadcrumbHome: 'Accueil', heroImageAlt: 'Andy Griffiths sur un parcours de golf a Majorque au coucher du soleil', heroEyebrow: 'L experience complète, Majorque', heroTitle: 'Une journée de golf privee\nautour du parcours, du corps et du soir.', heroBody: '18 trous avec moi, une session après la partie avec John Brazier, des transferts prives et une soiree organisee pour votre groupe. Une seule personne coordonne toute la journée des le premier echange.', price: 'Tarif adapte a la journée', primaryCta: 'Demander', secondaryCta: 'Explorer la journée', coursesCta: 'Explorer les parcours de golf de Majorque', whatsappLabel: 'Message WhatsApp', whatsappHref: 'https://wa.me/34624466702?text=Bonjour%20Andy%2C%20je%20suis%20interesse%20par%20le%20Signature%20Day.',
-    included: ['Planification du parcours et de la journée', 'Départ prive', '18 trous avec Andy', 'Session avec John Brazier', 'Debrief connecte et priorites', 'Transferts prives', 'Coordination de la soiree'],
+    included: ['Planification du parcours et de la journée', 'Départ prive', '18 trous avec moi', 'Session avec John Brazier', 'Debrief connecte et priorites', 'Transferts prives', 'Coordination de la soiree'],
     dayStages: [
       { time: 'Avant la journée', title: 'Planifier et confirmer', body: 'Je choisis le parcours avec vous, organise le départ et les transferts, puis coordonne la soiree. Vous recevez une proposition claire avant toute reservation.' },
       { time: 'La partie', title: '18 trous ensemble', body: 'Je joue toute la partie avec vous et observe les decisions, schemas et mouvements qui n apparaissent qu en conditions reelles. Je prends des notes tout au long du parcours.' },
@@ -126,7 +126,7 @@ const content = {
   nl: {
     metadata: { title: 'Signature Day Mallorca | Prive golf, herstel en diner', description: 'Een prive geregelde golfdag op Mallorca met 18 holes met Andy, een herstel- en sportprestatiesessie met John Brazier, transfers en een georganiseerde avond.' },
     breadcrumbHome: 'Home', heroImageAlt: 'Andy Griffiths op een golfbaan in Mallorca bij avondlicht', heroEyebrow: 'De complete ervaring, Mallorca', heroTitle: 'Een prive golfdag\nrond de ronde, het lichaam en de avond.', heroBody: '18 holes met mij, een sessie na de ronde met John Brazier, prive transfers en een avond geregeld voor uw groep. Een persoon coordineert de hele dag vanaf het eerste gesprek.', price: 'Prijs afgestemd op de dag', primaryCta: 'Aanvragen', secondaryCta: 'Bekijk de dag', coursesCta: 'Ontdek de golfbanen van Mallorca', whatsappLabel: 'WhatsApp sturen', whatsappHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20ik%20ben%20geinteresseerd%20in%20de%20Signature%20Day.',
-    included: ['Baan- en dagplanning', 'Prive starttijd', '18 holes met Andy', 'Sessie met John Brazier', 'Verbonden debrief en prioriteiten', 'Prive transfers', 'Avondcoordinatie'],
+    included: ['Baan- en dagplanning', 'Prive starttijd', '18 holes met mij', 'Sessie met John Brazier', 'Verbonden debrief en prioriteiten', 'Prive transfers', 'Avondcoordinatie'],
     dayStages: [
       { time: 'Voor de dag', title: 'Plannen en bevestigen', body: 'Ik kies de baan met u, regel de starttijd en transfers en coordineer de avond. U ontvangt een helder voorstel voordat iets wordt geboekt.' },
       { time: 'De ronde', title: '18 holes samen', body: 'Ik speel de volledige ronde met u en let op beslissingen, patronen en bewegingen die alleen in echte speelomstandigheden zichtbaar worden. Ik maak onderweg notities.' },
@@ -147,7 +147,7 @@ const content = {
   sv: {
     metadata: { title: 'Signature Day Mallorca | Privat golf, aterhamtning och middag', description: 'En privat arrangerad golfdag pa Mallorca med 18 hål med Andy, en aterhamtnings- och sportprestationssession med John Brazier, transfers och koordinerad kvall.' },
     breadcrumbHome: 'Hem', heroImageAlt: 'Andy Griffiths pa en golfbana pa Mallorca i kvallsljus', heroEyebrow: 'Den kompletta upplevelsen, Mallorca', heroTitle: 'En privat golfdag\nrunt rundan, kroppen och kvallen.', heroBody: '18 hål med mig, en session efter rundan med John Brazier, privata transfers och en kvall arrangerad for din grupp. En person koordinerar hela dagen från första samtalet.', price: 'Pris anpassat efter dagen', primaryCta: 'Forfragan', secondaryCta: 'Utforska dagen', coursesCta: 'Utforska Mallorcas golfbanor', whatsappLabel: 'Meddela pa WhatsApp', whatsappHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20jag%20ar%20intresserad%20av%20Signature%20Day.',
-    included: ['Bana och dagsplanering', 'Privat starttid', '18 hål med Andy', 'Session med John Brazier', 'Sammanhangande debrief och prioriteringar', 'Privata transfers', 'Kvallskoordinering'],
+    included: ['Bana och dagsplanering', 'Privat starttid', '18 hål med mig', 'Session med John Brazier', 'Sammanhangande debrief och prioriteringar', 'Privata transfers', 'Kvallskoordinering'],
     dayStages: [
       { time: 'Före dagen', title: 'Planera och bekrafta', body: 'Jag valjer banan med dig, ordnar starttid och transfers och koordinerar kvallen. Du far ett tydligt forslag innan något bokas.' },
       { time: 'Rundan', title: '18 hål tillsammans', body: 'Jag spelar hela rundan med dig och ser beslut, monster och rorelse som bara syns under riktiga spelforhallanden. Jag antecknar under rundan.' },
@@ -168,7 +168,7 @@ const content = {
   zh: {
     metadata: { title: 'Signature Day Mallorca | 私人高尔夫、恢复与晚餐', description: '在马略卡私人安排的一天高尔夫体验：与 Andy 同打 18 洞，John Brazier 进行恢复与运动表现环节，私人接送，并安排晚间体验。' },
     breadcrumbHome: '首页', heroImageAlt: 'Andy Griffiths 在马略卡高尔夫球场的黄昏', heroEyebrow: '完整体验，马略卡', heroTitle: '私人高尔夫日\n围绕球局、身体和夜晚安排。', heroBody: '与我同打 18 洞，球后与 John Brazier 进行一节恢复与运动表现环节，私人接送，并为您的同行人员安排晚间体验。从第一次沟通开始，由一个人协调整天。', price: '按当天范围报价', primaryCta: '咨询', secondaryCta: '了解这一天', coursesCta: '探索马略卡高尔夫球场', whatsappLabel: 'WhatsApp 联系', whatsappHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20the%20Signature%20Day.',
-    included: ['球场与当天规划', '私人开球时段', '与 Andy 同打 18 洞', 'John Brazier 环节', '连贯复盘与优先事项', '私人接送', '晚间安排协调'],
+    included: ['球场与当天规划', '私人开球时段', '与我同打 18 洞', 'John Brazier 环节', '连贯复盘与优先事项', '私人接送', '晚间安排协调'],
     dayStages: [
       { time: '活动前', title: '规划并确认', body: '我会与您一起选择球场，安排开球时间和接送，并协调晚间计划。任何预订前，您都会收到清楚的方案。' },
       { time: '球局', title: '一起打 18 洞', body: '我会全程与您同组，观察真实球局中才会出现的决策、模式和动作，并在过程中记录。' },
