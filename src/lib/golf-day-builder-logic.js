@@ -19,9 +19,9 @@ export const COURSES = [
   { id:"maioris", name:"Golf Maioris", region:"south", tags:["relaxed","forgiving","close"], facts:["Par 72 · Opened 2006","One of few public grass driving ranges in Mallorca"], blurb:"Front nine Scottish and bumpy, back nine more American and flatter: two personalities in one round. Less crowded than the Palma courses.", level:"beginner+", driveMins:{southwest:30, palma:20, north:55, east:55, south:10} },
   { id:"vall-dor", name:"Vall d'Or Golf", region:"east", tags:["scenic","relaxed","family"], facts:["Par 71 · 1986","Cliffside finish with east coast sea views"], blurb:"A round that improves as it goes: tight traditional front nine, then the back nine opens toward the coast with sea views and a cliffside finish.", level:"casual+", driveMins:{southwest:75, palma:60, north:45, east:15, south:65} },
   { id:"golf-pollenca", name:"Golf Pollença", region:"north", tags:["scenic","relaxed","family","forgiving"], facts:["Par 35 · 9 holes · José Gancedo, 1986","Views of Tramuntana, Bay of Pollença and Bay of Alcúdia"], blurb:"Nine holes integrated into the hillside above Pollença town: views of the Tramuntana, two bays, and the sea. The right afternoon complement to an Alcanada morning. Completable in 90 minutes.", level:"beginner+", driveMins:{southwest:65, palma:55, north:10, east:50, south:65} },
-  { id:"santa-ponsa-2", name:"Golf Santa Ponsa 2", region:"southwest", tags:["relaxed","serious"], facts:["Par 72 · Members only","Guests must play with a member"], blurb:"Usually the quietest course in the Southwest cluster. Tree-lined fairways reward placement over power. Andy can host clients as his guests when he is playing.", level:"casual+", driveMins:{southwest:10, palma:25, north:60, east:65, south:35} },
+  { id:"santa-ponsa-2", name:"Golf Santa Ponsa 2", region:"southwest", tags:["relaxed","serious"], facts:["Par 72 · Members only","Guests must play with a member"], blurb:"Usually the quietest course in the Southwest cluster. Tree-lined fairways reward placement over power. I can host clients as my guests when I am playing.", level:"casual+", driveMins:{southwest:10, palma:25, north:60, east:65, south:35} },
   { id:"santa-ponsa-3", name:"Golf Santa Ponsa 3 (9 holes)", region:"southwest", tags:["forgiving","relaxed","family"], facts:["Par 30 · 9 holes · Members only","Guests must play with a member"], blurb:"Nine holes through the Santa Ponsa residential estate: short, accurate, and well-suited to beginners, juniors, or anyone wanting a quick round.", level:"beginner+", driveMins:{southwest:10, palma:25, north:60, east:65, south:35}, note:"9 holes. Build this as an afternoon add-on alongside a full round at Santa Ponsa 1 or 2" },
-  { id:"palma-pitch-putt", name:"Palma Pitch & Putt", region:"palma", tags:["forgiving","relaxed","family"], facts:["Par 27 · 9 holes all par-3s · from €17","The only pitch & putt in Mallorca"], blurb:"The only pitch-and-putt in Mallorca, and the course Andy uses for coaching introductions. All par 3s between 50 and 100m.", level:"beginner+", driveMins:{southwest:25, palma:5, north:55, east:60, south:25}, note:"9 holes. Works as a half-day plan, a pre-round warm-up, or an introduction to the game" },
+  { id:"palma-pitch-putt", name:"Palma Pitch & Putt", region:"palma", tags:["forgiving","relaxed","family"], facts:["Par 27 · 9 holes all par-3s · from €17","The only pitch & putt in Mallorca"], blurb:"The only pitch-and-putt in Mallorca, and the course I use for coaching introductions. All par 3s between 50 and 100m.", level:"beginner+", driveMins:{southwest:25, palma:5, north:55, east:60, south:25}, note:"9 holes. Works as a half-day plan, a pre-round warm-up, or an introduction to the game" },
   { id:"reserva-rotana", name:"Rotana Greens (Reserva Rotana)", region:"east", hotelOnly:true, tags:["relaxed","scenic","luxury"], facts:["9 holes · Hotel guests only · Estate course","Capdepera and Pula within 25 minutes"], blurb:"A private 9-hole estate course at Reserva Rotana near Manacor, available exclusively for hotel guests.", level:"beginner+", driveMins:{southwest:80, palma:60, north:35, east:15, south:70}, note:"Hotel guests only. This option only applies if your group is staying at Reserva Rotana" },
 ]
 
@@ -29,17 +29,17 @@ export const RESTAURANTS = {
   southwest: {
     casual: "Campino Restaurant at Golf de Andratx: Italian and Mediterranean on the terrace, booked around your round finish time",
     premium: "Sa Clastra (1 Michelin star) at Castell Son Claret, Es Capdellà (around 15 minutes from most Southwest courses). One of the best lunch tables on the island",
-    village: "Lunch in Calvià village: a quiet hilltop town with local restaurants that rarely see tourists. Andy books the right table",
+    village: "Lunch in Calvià village: a quiet hilltop town with local restaurants that rarely see tourists. I book the right table",
     michelin: "Sa Clastra (1★) at Castell Son Claret, Es Capdellà, or Es Fum (1★) at the St. Regis Mardavall: two of the island's finest tables, both in the Southwest"
   },
   palma: {
     casual: "Na Capitana at Son Muntaner: reliable Mediterranean lunch on the terrace overlooking the course, or a short drive to Santa Catalina market for tapas",
-    premium: "DINS Santi Taura (1 Michelin star) in central Palma, or Marc Fosh (1 Michelin star) in the old town. Andy times the booking around your round",
-    village: "Santa Catalina market: the best food neighbourhood in Palma, 10 minutes from most courses. Andy picks the right spot for the group",
+    premium: "DINS Santi Taura (1 Michelin star) in central Palma, or Marc Fosh (1 Michelin star) in the old town. I time the booking around your round",
+    village: "Santa Catalina market: the best food neighbourhood in Palma, 10 minutes from most courses. I pick the right spot for the group",
     michelin: "DINS Santi Taura (1★), Marc Fosh (1★) and Zaranda (1★) are all in Palma: the strongest Michelin cluster on the island, all within 15 minutes of the Palma courses"
   },
   north: {
-    casual: "Beachfront lunch in Port de Pollença: the promenade has several good fish and seafood options. Andy books ahead in high season",
+    casual: "Beachfront lunch in Port de Pollença: the promenade has several good fish and seafood options. I book ahead in high season",
     premium: "Maca de Castro (1 Michelin star + Green Star) in Port d'Alcúdia: seasonal tasting menus built on local produce. Around 10 minutes from Alcanada",
     village: "Pollença old town: a quiet hilltop town with a good market square, reliable local restaurants, and a Sunday market. Worth the short detour",
     michelin: "Maca de Castro (1★ + Green Star) in Port d'Alcúdia: one of the island's most interesting chef-driven restaurants, close to Alcanada golf"
@@ -60,11 +60,11 @@ export const RESTAURANTS = {
 
 export const ADDONS = {
   beach:    { title:'Beach hour',           desc:'A nearby cove for a swim and a slow hour in the shade. Beach chosen by region when the plan is confirmed.' },
-  spa:      { title:'Spa and recovery',     desc:'A post-round session at a resort spa in the area. Options include Arabella Son Vida, Secrets Paguera, and Bendinat. Andy confirms the venue when you book.' },
+  spa:      { title:'Spa and recovery',     desc:'A post-round session at a resort spa in the area. Options include Arabella Son Vida, Secrets Paguera, and Bendinat. I confirm the venue when you book.' },
   village:  { title:'Local village hour',   desc:"An hour in one of the island's historic towns: coffee, side streets, and a viewpoint or two." },
-  wine:     { title:'Wine tasting',         desc:"A guided tasting at a local bodega. Mallorca has a small but serious wine scene: José L. Ferrer in Binissalem and Macià Batle are both worth the detour. Andy times this around the round." },
+  wine:     { title:'Wine tasting',         desc:"A guided tasting at a local bodega. Mallorca has a small but serious wine scene: José L. Ferrer in Binissalem and Macià Batle are both worth the detour. I time this around the round." },
   family:   { title:'Family activity',      desc:'A boat trip, the caves, or a waterpark depending on the region and ages. Confirmed with the booking.' },
-  coaching: { title:'Coaching with Andy',   desc:'A focused session with Andy Griffiths, UK PGA Advanced Professional: warm-up, technique, or on-course strategy.' },
+  coaching: { title:'Coaching with me',   desc:'A focused session with me, a UK PGA Advanced Professional: warm-up, technique, or on-course strategy.' },
   lunch:    { title:'Long lunch',           desc:'A proper Mallorcan table, booked and timed around your round.' },
 }
 
@@ -116,7 +116,7 @@ export const QUESTIONS = [
     {v:'village',  t:'Local village',     d:'An hour in a historic town'},
     {v:'wine',     t:'Wine',              d:'A bodega visit or tasting'},
     {v:'family',   t:'Family activity',   d:'Something for the non-golfers'},
-    {v:'coaching', t:'Coaching with Andy', d:'PGA Advanced Professional session'},
+    {v:'coaching', t:'Coaching with me', d:'PGA Advanced Professional session'},
   ]},
   { key:'transport', label:'Step 7 of 8 · Transport', title:'Do you need transport arranged?', sub:'', multi:false, opts:[
     {v:'yes', t:'Yes, arrange it', d:'Driver or transfers, door to door'},

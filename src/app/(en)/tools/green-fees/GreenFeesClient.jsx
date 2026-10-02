@@ -15,7 +15,7 @@ import { getGreenFeesT } from '../../../../lib/green-fees-translations'
 const WA_MESSAGE = 'Hi Andy, I was comparing green fees on your site and I’d like help planning a Mallorca golf trip and tee times.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
 
-function WhatsAppCta({ label = 'Message Andy on WhatsApp' }) {
+function WhatsAppCta({ label = 'Message me on WhatsApp' }) {
   function handleClick() {
     trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'green-fees' })
     trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'green-fees' })

@@ -9,7 +9,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: 'Free tool',
       title: 'Compare Mallorca Golf Courses',
-      sub: 'All 24 courses on the island: green fees, buggy costs, walking rules, access, difficulty and handicap limits, plus a one-line verdict from Andy, a UK PGA Advanced Professional based in Mallorca. Browse the full guide or compare up to five courses side by side.',
+      sub: 'All 24 courses on the island: green fees, buggy costs, walking rules, access, difficulty and handicap limits, plus my one-line verdict on each, as a UK PGA Advanced Professional based in Mallorca. Browse the full guide or compare up to five courses side by side.',
       updated: 'Last updated: July 2026',
     },
     modebar: {
@@ -106,7 +106,7 @@ export const GREEN_FEES_T = {
     },
     footer: {
       text: 'Green fee ranges are indicative only and are updated periodically from course rate cards. For confirmed rates, tee time availability, or help planning a full golf trip,',
-      linkText: 'get in touch with Andy',
+      linkText: 'get in touch with me',
     },
     cta: {
       courseSelector: {
@@ -115,10 +115,10 @@ export const GREEN_FEES_T = {
         link: 'Try the course selector →',
       },
       contact: {
-        title: 'Want Andy to sort the tee times?',
+        title: 'Want me to sort the tee times?',
         desc: "Confirmed rates change by season and day. Tell me your dates and group and I'll get you real prices and book it around your golf, or just message me if that's easier.",
         enquire: 'Enquire',
-        whatsapp: 'Message Andy on WhatsApp',
+        whatsapp: 'Message me on WhatsApp',
       },
     },
   },
@@ -128,7 +128,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: 'Kostenloses Werkzeug',
       title: 'Mallorca-Greenfee-Vergleich',
-      sub: 'Alle 24 Plätze der Insel: Greenfees, Buggykosten, Gehen-Regeln, Zugang, Schwierigkeit und Vorgabe-Limits, plus ein-Zeilen-Urteil von Andy, UK PGA Advanced Professional mit Sitz auf Mallorca. Durchsuchen Sie den vollständigen Leitfaden oder vergleichen Sie bis zu fünf Plätze nebeneinander.',
+      sub: 'Alle 24 Plätze der Insel: Greenfees, Buggykosten, Gehen-Regeln, Zugang, Schwierigkeit und Vorgabe-Limits, plus mein Ein-Zeilen-Urteil zu jedem Platz als UK PGA Advanced Professional mit Sitz auf Mallorca. Durchsuchen Sie den vollständigen Leitfaden oder vergleichen Sie bis zu fünf Plätze nebeneinander.',
       updated: 'Zuletzt aktualisiert: Juli 2026',
     },
     modebar: {
@@ -225,7 +225,7 @@ export const GREEN_FEES_T = {
     },
     footer: {
       text: 'Greenfee-Bereiche sind nur zur Orientierung und werden regelmäßig aus Platz-Preislisten aktualisiert. Für bestätigte Tarife, Abschlag-Verfügbarkeit oder Hilfe bei der Planung einer vollständigen Golfreise,',
-      linkText: 'nehmen Sie Kontakt mit Andy auf',
+      linkText: 'nehmen Sie Kontakt mit mir auf',
     },
     cta: {
       courseSelector: {
@@ -234,10 +234,10 @@ export const GREEN_FEES_T = {
         link: 'Versuchen Sie den Platz-Auswähler →',
       },
       contact: {
-        title: 'Möchten Sie, dass Andy die Abschlagzeiten regelt?',
+        title: 'Möchten Sie, dass ich die Abschlagzeiten regle?',
         desc: 'Bestätigte Tarife ändern sich je nach Saison und Tag. Sagen Sie mir Ihre Termine und Gruppe, und ich bekomme Ihnen echte Preise und buche es um Ihren Golf — oder schreiben Sie mir einfach eine Nachricht, wenn das einfacher ist.',
         enquire: 'Anfragen',
-        whatsapp: 'Schreiben Sie Andy auf WhatsApp',
+        whatsapp: 'Schreiben Sie mir auf WhatsApp',
       },
     },
   },
@@ -247,7 +247,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: 'Herramienta gratuita',
       title: 'Comparar campos de golf en Mallorca',
-      sub: 'Los 24 campos de la isla: green fees, costes de carrito, reglas de caminar, acceso, dificultad y límites de handicap, más un veredicto de una línea de Andy, profesional avanzado de la PGA británica con base en Mallorca. Explora la guía completa o compara hasta cinco campos uno al lado del otro.',
+      sub: 'Los 24 campos de la isla: green fees, costes de carrito, reglas de caminar, acceso, dificultad y límites de handicap, más mi veredicto de una línea sobre cada uno, como profesional avanzado de la PGA británica con base en Mallorca. Explora la guía completa o compara hasta cinco campos uno al lado del otro.',
       updated: 'Última actualización: Julio 2026',
     },
     modebar: {
@@ -344,7 +344,7 @@ export const GREEN_FEES_T = {
     },
     footer: {
       text: 'Los rangos de green fees son solo indicativos y se actualizan periódicamente desde las listas de precios de los campos. Para tarifas confirmadas, disponibilidad de salidas o ayuda para planificar un viaje de golf completo,',
-      linkText: 'ponte en contacto con Andy',
+      linkText: 'ponte en contacto conmigo',
     },
     cta: {
       courseSelector: {
@@ -353,10 +353,10 @@ export const GREEN_FEES_T = {
         link: 'Prueba el selector de campos →',
       },
       contact: {
-        title: '¿Quieres que Andy organice los horarios de salida?',
+        title: '¿Quieres que organice yo los horarios de salida?',
         desc: 'Las tarifas confirmadas cambian según la temporada y el día. Dime tus fechas y grupo y te obtendré precios reales e lo reservaré alrededor de tu golf — o simplemente envíame un mensaje si es más fácil.',
         enquire: 'Consultar',
-        whatsapp: 'Mensajea a Andy por WhatsApp',
+        whatsapp: 'Escríbeme por WhatsApp',
       },
     },
   },
@@ -366,7 +366,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: 'Outil gratuit',
       title: 'Comparer les parcours de golf à Majorque',
-      sub: 'Les 24 parcours de l\'île : green fees, coûts de buggy, règles de marche, accès, difficulté et limites de handicap, plus un verdict d\'une ligne d\'Andy, professionnel avancé de la PGA britannique basé à Majorque. Parcourez le guide complet ou comparez jusqu\'à cinq parcours côte à côte.',
+      sub: 'Les 24 parcours de l\'île : green fees, coûts de buggy, règles de marche, accès, difficulté et limites de handicap, plus mon verdict en une ligne sur chacun, en tant que professionnel avancé de la PGA britannique basé à Majorque. Parcourez le guide complet ou comparez jusqu\'à cinq parcours côte à côte.',
       updated: 'Dernière mise à jour : juillet 2026',
     },
     modebar: {
@@ -463,7 +463,7 @@ export const GREEN_FEES_T = {
     },
     footer: {
       text: 'Les gammes de green fees sont indicatives uniquement et mises à jour périodiquement à partir des cartes tarifaires des parcours. Pour les tarifs confirmés, la disponibilité des horaires de départ ou l\'aide pour planifier un voyage de golf complet,',
-      linkText: 'contactez Andy',
+      linkText: 'contactez-moi',
     },
     cta: {
       courseSelector: {
@@ -472,10 +472,10 @@ export const GREEN_FEES_T = {
         link: 'Essayez le sélecteur de parcours →',
       },
       contact: {
-        title: 'Voulez-vous qu\'Andy organise les horaires de départ ?',
+        title: 'Voulez-vous que j\'organise les horaires de départ ?',
         desc: 'Les tarifs confirmés changent selon la saison et le jour. Dites-moi vos dates et votre groupe et je vous obtiendrai les vrais prix et réserverai autour de votre golf — ou envoyez-moi juste un message si c\'est plus facile.',
         enquire: 'Demander',
-        whatsapp: 'Envoyez un message à Andy sur WhatsApp',
+        whatsapp: 'Écrivez-moi sur WhatsApp',
       },
     },
   },
@@ -485,7 +485,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: 'Gratis hulpmiddel',
       title: 'Vergelijk Mallorca-golfbanen',
-      sub: 'Alle 24 banen op het eiland: green fees, buggykosten, walkingregels, toegang, moeilijkheidsgraad en handicaplimieten, plus een eenregeligoordeel van Andy, een Britse PGA Advanced Professional gebaseerd op Mallorca. Bekijk de volledige gids of vergelijk tot vijf banen naast elkaar.',
+      sub: 'Alle 24 banen op het eiland: green fees, buggykosten, walkingregels, toegang, moeilijkheidsgraad en handicaplimieten, plus mijn oordeel in één regel, als Britse PGA Advanced Professional gebaseerd op Mallorca. Bekijk de volledige gids of vergelijk tot vijf banen naast elkaar.',
       updated: 'Laatst bijgewerkt: juli 2026',
     },
     modebar: {
@@ -582,7 +582,7 @@ export const GREEN_FEES_T = {
     },
     footer: {
       text: 'Green fee-bereiken zijn alleen indicatief en worden periodiek bijgewerkt op basis van baantarievenkaarten. Voor bevestigde tarieven, beschikbaarheid van starttijden of hulp bij het plannen van een volledige golfreis,',
-      linkText: 'neem contact op met Andy',
+      linkText: 'neem contact met mij op',
     },
     cta: {
       courseSelector: {
@@ -591,10 +591,10 @@ export const GREEN_FEES_T = {
         link: 'Probeer de baankiezer →',
       },
       contact: {
-        title: 'Wil je dat Andy de starttijden regelt?',
+        title: 'Wil je dat ik de starttijden regel?',
         desc: 'Bevestigde tarieven veranderen per seizoen en dag. Zeg me je data en groep en ik zal je echte prijzen krijgen en het rond je golf boeken — of stuur me gewoon een bericht als dat makkelijker is.',
         enquire: 'Informatie aanvragen',
-        whatsapp: 'Stuur Andy een bericht via WhatsApp',
+        whatsapp: 'Stuur mij een bericht via WhatsApp',
       },
     },
   },
@@ -604,7 +604,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: 'Gratis verktyg',
       title: 'Jämför Mallorcas golfbanor',
-      sub: 'Alla 24 banor på ön: golfavgifter, golfbilskostnader, gångregler, åtkomst, svårighetsgrad och handicapgränser, plus ett ettradiga omdöme från Andy, en brittisk PGA Advanced Professional bosatt på Mallorca. Bläddra i hela guiden eller jämför upp till fem banor sida vid sida.',
+      sub: 'Alla 24 banor på ön: golfavgifter, golfbilskostnader, gångregler, åtkomst, svårighetsgrad och handicapgränser, plus mitt omdöme i en rad om varje bana, som brittisk PGA Advanced Professional bosatt på Mallorca. Bläddra i hela guiden eller jämför upp till fem banor sida vid sida.',
       updated: 'Senast uppdaterad: juli 2026',
     },
     modebar: {
@@ -701,7 +701,7 @@ export const GREEN_FEES_T = {
     },
     footer: {
       text: 'Golfavgiftsintervall är endast vägledande och uppdateras regelbundet från banors prislista. För bekräftade avgifter, tillgänglighet för starttider eller hjälp med att planera en fullständig golfresa,',
-      linkText: 'kontakta Andy',
+      linkText: 'kontakta mig',
     },
     cta: {
       courseSelector: {
@@ -710,10 +710,10 @@ export const GREEN_FEES_T = {
         link: 'Prova banaväljaren →',
       },
       contact: {
-        title: 'Vill du att Andy organiserar starttiderna?',
+        title: 'Vill du att jag organiserar starttiderna?',
         desc: 'Bekräftade avgifter ändras beroende på säsong och dag. Berätta för mig dina datum och grupp så får jag dig verkliga priser och bokar det omkring din golf — eller bara skicka mig ett meddelande om det är lättare.',
         enquire: 'Förfråga',
-        whatsapp: 'Skicka Andy ett meddelande på WhatsApp',
+        whatsapp: 'Skicka mig ett meddelande på WhatsApp',
       },
     },
   },
@@ -723,7 +723,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: '免费工具',
       title: '比较马略卡高尔夫球场',
-      sub: '岛上所有 24 个球场：果岭费、球车费用、步行规则、入场、难度和差点限制，加上来自 Andy（常驻马略卡的英国 PGA 高级职业教练）的单行评价。浏览完整指南或并排比较多达五个球场。',
+      sub: '岛上所有 24 个球场：果岭费、球车费用、步行规则、入场、难度和差点限制，加上我（常驻马略卡的英国 PGA 高级职业教练）对每个球场的单行评价。浏览完整指南或并排比较多达五个球场。',
       updated: '最后更新：2026 年 7 月',
     },
     modebar: {
@@ -820,7 +820,7 @@ export const GREEN_FEES_T = {
     },
     footer: {
       text: '果岭费范围仅供参考，定期从球场价格表更新。如需确认费率、开球时间可用性或帮助规划完整的高尔夫旅行，',
-      linkText: '请与 Andy 联系',
+      linkText: '请与我联系',
     },
     cta: {
       courseSelector: {
@@ -829,10 +829,10 @@ export const GREEN_FEES_T = {
         link: '试试球场选择器 →',
       },
       contact: {
-        title: '希望 Andy 安排开球时间？',
+        title: '希望我来安排开球时间？',
         desc: '确认的费率因季节和日期而异。告诉我您的日期和团队，我会为您获取真实价格并围绕您的高尔夫安排——或者如果更容易的话，直接给我发消息。',
         enquire: '咨询',
-        whatsapp: '通过 WhatsApp 给 Andy 发消息',
+        whatsapp: '通过 WhatsApp 给我发消息',
       },
     },
   },

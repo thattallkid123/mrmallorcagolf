@@ -72,7 +72,7 @@ export async function POST(request) {
       ${recHtml}
       <table width="100%" cellpadding="0" cellspacing="0" style="margin:18px 0 24px;">${listHtml}</table>
       <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Handicap limits in Mallorca are sometimes more flexible than the published numbers, especially midweek and outside peak season. If you're a few shots over a limit I'm happy to enquire on your behalf — I can't promise it, as access is always the club's call. Tell me your dates and group and I'll build the round order and tee times around your golf.</p>
-      <p style="margin:0 0 24px;"><a href="https://www.mrmallorcagolf.com/contact" style="display:inline-block;background:#B8973C;color:#fff;text-decoration:none;font-family:'Jost',Arial,sans-serif;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:12px 24px;border-radius:3px;">Plan my trip with Andy</a></p>
+      <p style="margin:0 0 24px;"><a href="https://www.mrmallorcagolf.com/contact" style="display:inline-block;background:#B8973C;color:#fff;text-decoration:none;font-family:'Jost',Arial,sans-serif;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:12px 24px;border-radius:3px;">Plan your trip with me</a></p>
       <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8a8784;line-height:1.6;">Handicap and certificate rules are set by each club and can change without notice — always confirmed at booking. A daily Spanish Golf Federation licence (&euro;3) applies at most member clubs for non-federated visitors.</p>
     `
 

@@ -81,7 +81,7 @@ export const QUESTIONS = [
     id:'extras', title:'Anything else Andy should arrange?',
     sub:'Choose any that apply. This shapes the trip plan, not the course match.', cols:true, multi:true,
     options:[
-      {value:'coaching',label:'Coaching with Andy',desc:'Lessons or a Play With A Pro round'},
+      {value:'coaching',label:'Coaching with me',desc:'Lessons or a Play With A Pro round'},
       {value:'dining',label:'Restaurants',desc:'Where to eat near your courses'},
       {value:'hotel',label:'Hotel',desc:'Stay matched to your courses'},
       {value:'transport',label:'Transport',desc:'Transfers and logistics'},

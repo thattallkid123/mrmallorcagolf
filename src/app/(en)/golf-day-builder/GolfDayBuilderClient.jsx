@@ -128,7 +128,7 @@ function buildItineraries(answers) {
       ? `A private transfer collects you from your accommodation. Around ${drive} minutes to the course (estimate).`
       : `Self-drive to the course, around ${drive} minutes (estimate). Parking notes come with the confirmed plan.`
     const warmup = wantsCoaching
-      ? { time:'Before the round', title:'Coaching warm-up with Andy', desc:'A 45-minute session with Andy Griffiths: range warm-up, short game, and a plan for the holes ahead.' }
+      ? { time:'Before the round', title:'Coaching warm-up with me', desc:'A 45-minute session with me: range warm-up, short game, and a plan for the holes ahead.' }
       : { time:'Before the round', title:'Warm-up and coffee', desc:'Range balls, the putting green, and a coffee on the terrace. Arrive 45 minutes before your tee time.' }
     return {
       name: planName,
@@ -174,7 +174,7 @@ function buildItineraries(answers) {
           { time:`${sw.depart} (estimate)`, title:'Depart your accommodation', desc:travelDesc },
           { time:'On arrival', title:warmup.title, desc:warmup.desc },
           { time:`Tee time window ${sw.tee} (estimate)`, title:holesLabel, desc:p3.c.blurb + holeNote },
-          { time:'Lunch', title:'Lunch, booked and timed', desc:`${lunchFor(region, answers, answers.dayStyle === 'luxury')}. Andy books the right table for your group.` },
+          { time:'Lunch', title:'Lunch, booked and timed', desc:`${lunchFor(region, answers, answers.dayStyle === 'luxury')}. I book the right table for your group.` },
         ]
         if (firstAddon) steps.push({ time:'Afternoon', title:firstAddon.title, desc:firstAddon.desc })
         else steps.push({ time:'Afternoon', title:'Beach or village hour', desc:'A nearby cove or a historic town, chosen by region when the plan is confirmed.' })
@@ -354,7 +354,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
     'Restaurant table booked and timed around your round',
     answers.transport === 'yes' ? 'Door-to-door transport arranged' : 'Route and parking guidance for your drive',
     'Buggies, clubs, and rentals organised if needed',
-    answers.addons?.includes('coaching') ? 'Your coaching session with Andy confirmed' : 'Optional warm-up or on-course coaching with Andy',
+    answers.addons?.includes('coaching') ? 'Your coaching session with me confirmed' : 'Optional warm-up or on-course coaching with me',
     'One WhatsApp contact for the whole day',
   ] : []
 

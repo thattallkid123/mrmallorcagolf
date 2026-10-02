@@ -68,19 +68,19 @@ export const AREA_COURSE_MIX = {
 }
 
 export const PREF_NOTES = {
-  scenic:      'You asked for scenic. Andy will weight the mix toward courses with the best views and settings.',
-  famous:      'You asked for famous names. Andy will prioritise the island\'s best-known courses in this tier.',
-  challenging: 'You asked for a challenge. Andy will pick the courses in this tier that ask the most questions of your game.',
-  relaxed:     'You asked for relaxed golf. Andy will favour friendlier layouts and gentler pacing.',
-  near:        'You want courses near your hotel. Once Andy knows where you\'re staying, he\'ll tighten the mix around it.',
-  none:        'A balanced mix from this tier. Andy will tailor it once he knows your group.',
+  scenic:      'You asked for scenic. I will weight the mix toward courses with the best views and settings.',
+  famous:      'You asked for famous names. I will prioritise the island\'s best-known courses in this tier.',
+  challenging: 'You asked for a challenge. I will pick the courses in this tier that ask the most questions of your game.',
+  relaxed:     'You asked for relaxed golf. I will favour friendlier layouts and gentler pacing.',
+  near:        'You want courses near your hotel. Once I know where you\'re staying, I\'ll tighten the mix around it.',
+  none:        'A balanced mix from this tier. I will tailor it once I know your group.',
 }
 
 export const PACKAGES = {
-  value:    'Course Picks &amp; Booking Help. Andy confirms your course mix, books tee times at the right rates, and shares his course notes for each round.',
-  balanced: 'Trip Planning + One Coached Round. Andy plans the trip end to end and joins you for a Play With A Pro round at one of your courses.',
-  premium:  'Signature Golf Day + Full Trip Planning. A hosted Signature Day with Andy plus full planning of courses, tee times, and transport.',
-  luxury:   'Full Concierge Trip. Every round, transfer, table, and tee time arranged, with Andy hosting your marquee golf day.',
+  value:    'Course Picks &amp; Booking Help. I confirm your course mix, book tee times at the right rates, and share my course notes for each round.',
+  balanced: 'Trip Planning + One Coached Round. I plan the trip end to end and join you for a Play With A Pro round at one of your courses.',
+  premium:  'Signature Golf Day + Full Trip Planning. A hosted Signature Day with me plus full planning of courses, tee times, and transport.',
+  luxury:   'Full Concierge Trip. Every round, transfer, table, and tee time arranged, with me hosting your marquee golf day.',
 }
 
 export const AREA_NAMES = {

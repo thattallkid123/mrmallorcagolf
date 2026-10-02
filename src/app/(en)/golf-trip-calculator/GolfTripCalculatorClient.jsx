@@ -35,19 +35,19 @@ const COURSE_MIX = {
 }
 
 const PREF_NOTES = {
-  scenic: 'You asked for scenic. Andy will weight the mix toward courses with the best views and settings.',
-  famous: "You asked for famous names. Andy will prioritise the island's best-known courses in this tier.",
-  challenging: 'You asked for a challenge. Andy will pick the courses in this tier that ask the most questions of your game.',
-  relaxed: 'You asked for relaxed golf. Andy will favour friendlier layouts and gentler pacing.',
-  near: "You want courses near your hotel. Once Andy knows where you're staying, he'll tighten the mix around it.",
-  none: 'A balanced mix from this tier. Andy will tailor it once he knows your group.',
+  scenic: 'You asked for scenic. I will weight the mix toward courses with the best views and settings.',
+  famous: "You asked for famous names. I will prioritise the island's best-known courses in this tier.",
+  challenging: 'You asked for a challenge. I will pick the courses in this tier that ask the most questions of your game.',
+  relaxed: 'You asked for relaxed golf. I will favour friendlier layouts and gentler pacing.',
+  near: "You want courses near your hotel. Once I know where you're staying, I'll tighten the mix around it.",
+  none: 'A balanced mix from this tier. I will tailor it once I know your group.',
 }
 
 const PACKAGES = {
-  value: 'Course Picks & Booking Help: Andy confirms your course mix, books tee times at the right rates, and shares his course notes for each round.',
-  balanced: 'Trip Planning + One Coached Round: Andy plans the trip end to end and joins you for a Play With A Pro round at one of your courses.',
-  premium: 'Signature Golf Day + Full Trip Planning: a hosted Signature Day with Andy plus full planning of courses, tee times, and transport.',
-  luxury: 'Full Concierge Trip: every round, transfer, table, and tee time arranged, with Andy hosting your marquee golf day.',
+  value: 'Course Picks & Booking Help: I confirm your course mix, book tee times at the right rates, and share my course notes for each round.',
+  balanced: 'Trip Planning + One Coached Round: I plan the trip end to end and join you for a Play With A Pro round at one of your courses.',
+  premium: 'Signature Golf Day + Full Trip Planning: a hosted Signature Day with me plus full planning of courses, tee times, and transport.',
+  luxury: 'Full Concierge Trip: every round, transfer, table, and tee time arranged, with me hosting your marquee golf day.',
 }
 
 function range(perUnit, units) {
@@ -723,7 +723,7 @@ export default function GolfTripCalculatorClient() {
             </h3>
             <p style={{ marginBottom: '12px', fontSize: '14px', color: 'var(--text-mute)' }}>
               {PREF_NOTES[state.preference]}
-              {state.area !== 'flexible' && ` Since you're based around the ${state.area === 'southwest' ? 'Southwest' : state.area === 'palma' ? 'Palma area' : 'North'}, Andy will adjust for drive times.`}
+              {state.area !== 'flexible' && ` Since you're based around the ${state.area === 'southwest' ? 'Southwest' : state.area === 'palma' ? 'Palma area' : 'North'}, I will adjust for drive times.`}
             </p>
             <div className="calc-tags">
               {COURSE_MIX[state.budget]
@@ -789,14 +789,14 @@ export default function GolfTripCalculatorClient() {
           <div className="calc-rcard">
             <h3>
               <span className="calc-rcard__dot" />
-              Recommended Andy package
+              My recommended package
             </h3>
             <p>{PACKAGES[state.budget]}</p>
           </div>
 
           <div className="calc-cta-box">
             <h3>Make this estimate real</h3>
-            <p>This is a planning estimate. Andy can refine the courses, timing, transport, and bookings around your group.</p>
+            <p>This is a planning estimate. I can refine the courses, timing, transport, and bookings around your group.</p>
             <button
               onClick={() => track('email_estimate')}
               className="calc-btn calc-btn-primary"
@@ -808,14 +808,14 @@ export default function GolfTripCalculatorClient() {
               className="calc-btn calc-btn-primary"
               style={{ backgroundColor: 'var(--text-mute)', color: 'var(--bg)' }}
             >
-              Ask Andy to refine this trip
+              Ask me to refine this trip
             </button>
             <button
               onClick={() => track('booking_enquiry_click')}
               className="calc-btn calc-btn-primary"
               style={{ backgroundColor: 'var(--text-mute)', color: 'var(--bg)' }}
             >
-              Book a golf day with Andy
+              Book a golf day with me
             </button>
             <a href="#" className="calc-cta-link">
               Read the full Mallorca golf cost guide →

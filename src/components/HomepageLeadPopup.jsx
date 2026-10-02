@@ -104,7 +104,7 @@ export default function HomepageLeadPopup() {
           </Link>
         </div>
         <p className="lead-popup__note">
-          Andy reads every message and replies personally. Already know what you want?{' '}
+          I read every message and reply personally. Already know what you want?{' '}
           <Link href="/contact" className="lead-popup__contact-link" onClick={closePopup}>
             Send a quick message instead
           </Link>.
