@@ -8,6 +8,26 @@ import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import GolfCoursesClient from '../golf-courses/GolfCoursesClient'
 import { GOLF_COURSE_DATA } from '../../../lib/golf-courses-data'
 
+const LOADING_LABELS = {
+  en: ['Loading course explorer', 'Preparing filters and full course data...'],
+  de: ['Platzübersicht wird geladen', 'Filter und vollständige Platzdaten werden vorbereitet ...'],
+  es: ['Cargando el explorador de campos', 'Preparando los filtros y los datos completos de los campos...'],
+  fr: ["Chargement de l'explorateur de parcours", 'Préparation des filtres et des données complètes des parcours...'],
+  nl: ['Banenverkenner wordt geladen', 'Filters en volledige baangegevens worden voorbereid...'],
+  sv: ['Banutforskaren laddas', 'Förbereder filter och fullständiga bandata...'],
+  zh: ['正在加载球场浏览器', '正在准备筛选器和完整球场数据...'],
+}
+
+const COURSE_INDEX_SUFFIX = {
+  en: 'Mallorca golf course',
+  de: 'Golfplatz auf Mallorca',
+  es: 'campo de golf en Mallorca',
+  fr: 'parcours de golf à Majorque',
+  nl: 'golfbaan op Mallorca',
+  sv: 'golfbana på Mallorca',
+  zh: '马略卡高尔夫球场',
+}
+
 const MAP_BUTTON_LABELS = {
   en: 'Map of All Courses →',
   de: 'Karte aller Plätze →',
@@ -193,12 +213,12 @@ export default function GolfCoursesView({ locale = 'en', content }) {
           timeoutMs={1600}
           fallback={(
             <section style={{ padding: '64px 20px', maxWidth: 1100, margin: '0 auto' }}>
-              <p className="eyebrow">Loading course explorer</p>
-              <h2 className="serif-display" style={{ marginTop: 8 }}>Preparing filters and full course data...</h2>
+              <p className="eyebrow">{(LOADING_LABELS[locale] || LOADING_LABELS.en)[0]}</p>
+              <h2 className="serif-display" style={{ marginTop: 8 }}>{(LOADING_LABELS[locale] || LOADING_LABELS.en)[1]}</h2>
               {/* Server-rendered course index for search engines */}
               <ul aria-hidden="true" style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
                 {GOLF_COURSE_DATA.flatMap(region => region.courses).map(course => (
-                  <li key={course.name}>{course.name}, Mallorca golf course</li>
+                  <li key={course.name}>{course.name}, {COURSE_INDEX_SUFFIX[locale] || COURSE_INDEX_SUFFIX.en}</li>
                 ))}
               </ul>
             </section>

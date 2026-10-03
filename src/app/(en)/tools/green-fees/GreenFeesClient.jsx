@@ -218,7 +218,7 @@ function FeeCell({ course, season, t }) {
 
 export default function GreenFeesClient({ lang = 'en', localData = null }) {
   const t = getGreenFeesT(lang)
-  const COURSES = ALL_COURSES.map((c) => localizeGreenFeesCourse(c, localData))
+  const COURSES = useMemo(() => ALL_COURSES.map((c) => localizeGreenFeesCourse(c, localData)), [localData])
   const [area, setArea] = useState('')
   const [budget, setBudget] = useState('')
   const [walking, setWalking] = useState('')
@@ -240,7 +240,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
       }
     })
     return byName
-  }, [])
+  }, [COURSES])
 
   const compared = useMemo(
     () => cmp.map((n) => compareData[n]).filter(Boolean),
@@ -292,7 +292,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
       return r * dir
     })
     return list
-  }, [area, budget, walking, sort, dir])
+  }, [COURSES, area, budget, walking, sort, dir])
 
   function headerSort(key) {
     if (sort === key) setDir((d) => d * -1)

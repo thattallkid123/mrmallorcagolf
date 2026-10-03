@@ -76,3 +76,21 @@ jobs:
           TEST_EXIT=$?
           kill $SERVER_PID 2>/dev/null || true
           exit $TEST_EXIT
+
+      # Fails on English sentences that appear word for word on a translated
+      # page: text hard-coded in a component, tool data, or an overlay key that is
+      # missing and silently falls back to English. The content checks read the
+      # translation files and cannot see any of that. Added 2026-10-04 after a
+      # page-by-page comparison found the homepage and Play With A Pro drifting
+      # from the English in all six languages.
+      - name: Check translated pages for English
+        run: |
+          npx next start -p 3001 &
+          SERVER_PID=$!
+          for i in $(seq 1 30); do
+            curl -s -o /dev/null http://127.0.0.1:3001 && break
+            sleep 2
+          done
+          node scripts/check-rendered-english.mjs --base http://127.0.0.1:3001 && CHECK_EXIT=0 || CHECK_EXIT=$?
+          kill $SERVER_PID 2>/dev/null || true
+          exit $CHECK_EXIT

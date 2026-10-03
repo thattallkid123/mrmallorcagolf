@@ -1,0 +1,270 @@
+#!/usr/bin/env node
+// Locale sync: is each translation still a translation of the CURRENT English?
+//
+// Why this exists: translations live in overlay files that store only the
+// translated text. Nothing recorded which English sentence a translation was
+// made from, so when English changed the old translation stayed live and every
+// existing check (same keys, same array lengths) still passed. By Oct 2026 the
+// homepage English had been edited 81 times since May with the translation file
+// touched in 9 of them, and a German card still promised something the English
+// offer no longer made.
+//
+// How it works: scripts/locale-sync-manifest.json records, for every translated
+// string that has been checked against the English, a fingerprint of that
+// English and of the translation. The check then fails when
+//   - STALE: the English changed after the translation was confirmed, or
+//   - UNVERIFIED: more translated strings than the recorded baseline have never
+//     been confirmed (a new translation, or one that was never audited).
+// The unverified baseline is a ratchet: it can only go down as pages are audited.
+//
+// Workflow when you change English copy:
+//   1. npm run check:locale-sync     -> lists the stale keys, per language
+//   2. update those translations in the overlay files
+//   3. node scripts/check-locale-sync.mjs --confirm <LABEL> --prefix <path>
+//      (refuses a key whose translation text is untouched since the English
+//       changed; pass --allow-unchanged only when the English edit did not
+//       change the meaning, e.g. a punctuation fix)
+//
+// Audit a page against its English:
+//   node scripts/check-locale-sync.mjs --report HOME --locale de [--prefix hero] [--unverified|--stale]
+//   node scripts/check-locale-sync.mjs --facts HOME            (numbers/prices that differ)
+//
+// Other commands: --baseline (set the unverified baseline), --ratchet (lower it),
+// --confirm ... --paths-file file.json (a list of paths).
+
+import crypto from 'node:crypto'
+import fs from 'node:fs'
+import path from 'node:path'
+import { createRequire } from 'node:module'
+import { fileURLToPath, pathToFileURL } from 'node:url'
+
+const require = createRequire(import.meta.url)
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..')
+const MANIFEST = path.join(root, 'scripts', 'locale-sync-manifest.json')
+const { LOCALES, OVERLAY_CONFIGS } = require('./lib/overlay-configs.cjs')
+const importLib = (rel) => import(pathToFileURL(path.join(root, rel)).href)
+
+const norm = (s) => s.normalize('NFC').replace(/\s+/g, ' ').trim()
+const h = (s, n) => crypto.createHash('sha1').update(norm(s)).digest('hex').slice(0, n)
+const enHash = (s) => h(s, 8)
+const trHash = (s) => h(s, 5)
+
+function leaves(o, trail, out) {
+  if (typeof o === 'string') out.push([trail, o])
+  else if (Array.isArray(o)) o.forEach((v, i) => leaves(v, `${trail}[${i}]`, out))
+  else if (o && typeof o === 'object') for (const k of Object.keys(o)) leaves(o[k], trail ? `${trail}.${k}` : k, out)
+  return out
+}
+function getPath(o, trail) {
+  for (const p of trail.match(/[^.[\]]+/g) || []) { if (o == null) return undefined; o = o[p] }
+  return o
+}
+
+// ---- sources: every English content object with the translations that mirror it
+async function loadSources() {
+  const sources = []
+  for (const c of OVERLAY_CONFIGS) {
+    const [b, o] = await Promise.all([importLib(c.baseModulePath), importLib(c.overlayModulePath)])
+    const english = b[c.baseGetterName]('en')
+    const raw = o[c.overlayExportName]
+    sources.push({ label: c.label, english, overlay: (lc) => raw[lc] })
+  }
+  const [ga, gal, gp, gpl] = await Promise.all([
+    importLib('src/lib/guide-article-content.js'), importLib('src/lib/guide-article-content-localized.js'),
+    importLib('src/lib/guide-post-content.js'), importLib('src/lib/guide-post-content-localized.js'),
+  ])
+  for (const slug of Object.keys(gal.LOCALIZED_GUIDE_ARTICLE_CONTENT)) {
+    if (!ga.GUIDE_ARTICLE_CONTENT[slug]) continue
+    sources.push({ label: `GUIDE_ARTICLE:${slug}`, english: ga.GUIDE_ARTICLE_CONTENT[slug], overlay: (lc) => gal.LOCALIZED_GUIDE_ARTICLE_CONTENT[slug][lc] })
+  }
+  for (const slug of Object.keys(gpl.LOCALIZED_GUIDE_POST_CONTENT)) {
+    const en = gp.GUIDE_POST_CONTENT[slug]?.en
+    if (!en) continue
+    sources.push({ label: `GUIDE_POST:${slug}`, english: en, overlay: (lc) => gpl.LOCALIZED_GUIDE_POST_CONTENT[slug][lc] })
+  }
+  return sources
+}
+
+// every translated string that has an English string at the same path
+function collect(source) {
+  const rows = [] // { path, locale, en, tr }
+  for (const lc of LOCALES) {
+    const ov = source.overlay(lc)
+    if (!ov) continue
+    for (const [p, tr] of leaves(ov, '', [])) {
+      const en = getPath(source.english, p)
+      if (typeof en === 'string') rows.push({ path: p, locale: lc, en, tr })
+    }
+  }
+  return rows
+}
+
+function readManifest() {
+  if (!fs.existsSync(MANIFEST)) return { version: 1, baseline: {}, entries: {} }
+  return JSON.parse(fs.readFileSync(MANIFEST, 'utf8'))
+}
+function writeManifest(m) {
+  const sorted = { version: 1, baseline: Object.fromEntries(Object.entries(m.baseline).sort()), entries: {} }
+  for (const label of Object.keys(m.entries).sort()) {
+    sorted.entries[label] = {}
+    for (const p of Object.keys(m.entries[label])) sorted.entries[label][p] = m.entries[label][p]
+  }
+  fs.writeFileSync(MANIFEST, JSON.stringify(sorted) + '\n')
+}
+
+function classify(rows, entries) {
+  const stale = [], unverified = [], ok = []
+  for (const r of rows) {
+    const e = entries?.[r.path]
+    if (e && e[r.locale]) (e.en === enHash(r.en) ? ok : stale).push(r)
+    else unverified.push(r)
+  }
+  return { stale, unverified, ok }
+}
+
+const seen = new Set()
+function markSeen(l, p, lc) { seen.add(`${l}|${p}|${lc}`) }
+function chosenSeen(l, p, lc) { return seen.has(`${l}|${p}|${lc}`) }
+
+// ---- args
+const args = process.argv.slice(2)
+const flag = (n) => args.includes(n)
+const opt = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : undefined }
+const label = opt('--confirm') || opt('--report') || opt('--facts')
+const prefix = opt('--prefix')
+const localeArg = opt('--locale')
+const wantLocales = localeArg && localeArg !== 'all' ? localeArg.split(',') : LOCALES
+const matchesPrefix = (p) => !prefix || p === prefix || p.startsWith(prefix + '.') || p.startsWith(prefix + '[')
+
+const manifest = readManifest()
+const sources = await loadSources()
+const bySource = new Map(sources.map((s) => [s.label, s]))
+const pick = (lab) => (lab === 'ALL' ? sources : sources.filter((s) => s.label === lab || s.label.startsWith(lab + ':')))
+
+// ---- --report
+if (opt('--report')) {
+  const chosen = pick(label)
+  if (!chosen.length) { console.error('Unknown label ' + label); process.exit(2) }
+  const limit = Number(opt('--limit') || 200)
+  let shown = 0
+  for (const s of chosen) {
+    const { stale, unverified, ok } = classify(collect(s), manifest.entries[s.label])
+    const pool = flag('--stale') ? stale : flag('--all') ? [...stale, ...unverified, ...ok] : unverified
+    for (const r of pool) {
+      if (!wantLocales.includes(r.locale) || !matchesPrefix(r.path) || shown >= limit) continue
+      shown++
+      const state = stale.includes(r) ? 'STALE' : unverified.includes(r) ? 'unverified' : 'ok'
+      console.log(`[${s.label} ${r.locale}] ${r.path} (${state})\n  EN: ${r.en}\n  ${r.locale.toUpperCase()}: ${r.tr}`)
+    }
+  }
+  console.log(`\n${shown} shown (limit ${limit}).`)
+  process.exit(0)
+}
+
+// ---- --facts: numbers, prices and URLs that differ between English and the translation
+if (opt('--facts')) {
+  const tokens = (s) => (s.match(/€\s?\d[\d.,]*|\d[\d.,]*\s?(?:€|%)|\d+(?:[.,]\d+)?/g) || []).map((t) => t.replace(/[€%\s]/g, '').replace(/,/g, '.')).sort().join('|')
+  const urls = (s) => (s.match(/\/[a-z0-9-]+(?:\/[a-z0-9-]+)*/gi) || []).join('|')
+  let n = 0
+  for (const s of pick(label)) {
+    for (const r of collect(s)) {
+      if (!wantLocales.includes(r.locale) || !matchesPrefix(r.path)) continue
+      if (tokens(r.en) !== tokens(r.tr) && !(r.locale === 'zh' && tokens(r.en).split('|').length < 3)) {
+        n++
+        console.log(`[${s.label} ${r.locale}] ${r.path}\n  EN: ${r.en}\n  ${r.locale.toUpperCase()}: ${r.tr}`)
+      }
+    }
+  }
+  console.log(`\n${n} string(s) where the numbers differ.`)
+  process.exit(0)
+}
+
+// ---- --confirm
+if (opt('--confirm')) {
+  const chosen = pick(label)
+  if (!chosen.length) { console.error('Unknown label ' + label); process.exit(2) }
+  let pathFilter = null
+  const pf = opt('--paths-file')
+  if (pf) pathFilter = JSON.parse(fs.readFileSync(pf, 'utf8'))
+  const refused = []
+  let confirmed = 0
+  for (const s of chosen) {
+    manifest.entries[s.label] ||= {}
+    for (const r of collect(s)) {
+      if (!wantLocales.includes(r.locale)) continue
+      if (pathFilter) {
+        const list = Array.isArray(pathFilter) ? pathFilter : (pathFilter[s.label] || pathFilter[r.locale] || [])
+        if (!list.includes(r.path)) continue
+      } else if (!matchesPrefix(r.path)) continue
+      const e = (manifest.entries[s.label][r.path] ||= {})
+      const prior = e[r.locale]
+      if (prior && e.en !== enHash(r.en) && prior === trHash(r.tr) && !flag('--allow-unchanged')) {
+        refused.push(`${s.label} ${r.locale} ${r.path}`)
+        continue
+      }
+      // a different English than the one other locales were confirmed against: those are now stale, drop them
+      if (e.en && e.en !== enHash(r.en)) for (const lc of LOCALES) if (lc !== r.locale && e[lc] && !chosenSeen(s.label, r.path, lc)) delete e[lc]
+      e.en = enHash(r.en)
+      e[r.locale] = trHash(r.tr)
+      markSeen(s.label, r.path, r.locale)
+      confirmed++
+    }
+  }
+  if (refused.length) {
+    console.error(`Refused ${refused.length} key(s): the English changed but the translation text is exactly what it was when last confirmed.`)
+    console.error('Update the translation first (or pass --allow-unchanged if the English edit did not change the meaning):')
+    refused.slice(0, 20).forEach((x) => console.error('  - ' + x))
+    if (refused.length > 20) console.error(`  ...and ${refused.length - 20} more`)
+    process.exit(1)
+  }
+  writeManifest(manifest)
+  console.log(`Confirmed ${confirmed} translated string(s) against the current English.`)
+  process.exit(0)
+}
+// ---- check / baseline / ratchet
+const totals = {}
+const staleAll = []
+for (const s of sources) {
+  const { stale, unverified, ok } = classify(collect(s), manifest.entries[s.label])
+  totals[s.label] = { stale: stale.length, unverified: unverified.length, ok: ok.length, unverifiedByLocale: Object.fromEntries(LOCALES.map((lc) => [lc, unverified.filter((r) => r.locale === lc).length])) }
+  staleAll.push(...stale.map((r) => ({ label: s.label, ...r })))
+}
+
+if (flag('--baseline') || flag('--ratchet')) {
+  for (const [lab, t] of Object.entries(totals)) {
+    const prev = manifest.baseline[lab]
+    if (flag('--ratchet') && prev !== undefined && t.unverified > prev) { console.error(`${lab}: unverified ${t.unverified} is above the baseline ${prev}; confirm or fix before ratcheting`); process.exit(1) }
+    manifest.baseline[lab] = flag('--ratchet') && prev !== undefined ? Math.min(prev, t.unverified) : t.unverified
+  }
+  writeManifest(manifest)
+  console.log('Baseline written:', JSON.stringify(manifest.baseline))
+  process.exit(0)
+}
+
+const failures = []
+if (staleAll.length) {
+  failures.push(`${staleAll.length} translated string(s) are STALE: the English changed after they were confirmed.`)
+  const byLabel = {}
+  for (const r of staleAll) (byLabel[r.label] ||= []).push(r)
+  for (const [lab, rows] of Object.entries(byLabel)) {
+    const paths = [...new Set(rows.map((r) => r.path))]
+    failures.push(`  ${lab}: ${paths.length} key(s) x ${[...new Set(rows.map((r) => r.locale))].join('/')}`)
+    for (const p of paths.slice(0, 6)) failures.push(`    - ${p}  (now: "${rows.find((r) => r.path === p).en.slice(0, 70)}")`)
+    if (paths.length > 6) failures.push(`    ...and ${paths.length - 6} more (node scripts/check-locale-sync.mjs --report ${lab} --stale)`)
+  }
+}
+for (const [lab, t] of Object.entries(totals)) {
+  const base = manifest.baseline[lab] ?? 0
+  if (t.unverified > base) failures.push(`${lab}: ${t.unverified} unverified translated string(s), baseline is ${base}. New or changed translations must be confirmed (--confirm ${lab} --prefix <path>).`)
+}
+
+const sumUnv = Object.values(totals).reduce((a, t) => a + t.unverified, 0)
+const sumOk = Object.values(totals).reduce((a, t) => a + t.ok, 0)
+if (failures.length) {
+  console.error('Locale sync check failed:\n' + failures.join('\n'))
+  process.exit(1)
+}
+console.log(`Locale sync check passed — ${sumOk} translated string(s) confirmed against the current English, ${sumUnv} still unverified (audit backlog, baseline ${Object.values(manifest.baseline).reduce((a, b) => a + b, 0)}).`)
+if (flag('--summary')) {
+  for (const [lab, t] of Object.entries(totals)) console.log(`  ${lab.padEnd(44)} confirmed ${String(t.ok).padStart(5)}  unverified ${String(t.unverified).padStart(5)}`)
+}
