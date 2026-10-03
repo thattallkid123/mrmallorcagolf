@@ -42,15 +42,15 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       ],
       "note": "Sin compromiso al consultar. Le respondo personalmente en 24 horas con el siguiente paso recomendado y un presupuesto claro antes de reservar nada.",
       "feeNote": "La gestión cuesta el 5 % de los green fees y extras acordados. Le mostraré el coste total y las condiciones antes de confirmar.",
-      "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, handicap, zona de hotel y los campos que ya tenga pensados.",
+      "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, hándicap, zona de hotel y los campos que ya tenga pensados.",
       "cta": "Consultar sobre la planificación",
       "workingModes": {
         "title": "Elija el nivel de ayuda que necesita.",
-        "body": "Algunos grupos solo necesitan que se comprueben y reserven los tee times. Otros necesitan el plan de golf completo, construido según los vuelos, la zona del hotel, el handicap y el presupuesto.",
+        "body": "Algunos grupos solo necesitan que se comprueben y reserven los tee times. Otros necesitan el plan de golf completo, construido según los vuelos, la zona del hotel, el hándicap y el presupuesto.",
         "items": [
           {
             "title": "Solo tee times",
-            "body": "Envíeme fechas, número de jugadores, handicap y zona del hotel. Le sugeriré campos adecuados, comprobaré la disponibilidad y le confirmaré el precio antes de reservar nada.",
+            "body": "Envíeme fechas, número de jugadores, hándicap y zona del hotel. Le sugeriré campos adecuados, comprobaré la disponibilidad y le confirmaré el precio antes de reservar nada.",
             "cta": "Reservar tee times"
           },
           {
@@ -194,7 +194,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "Hotel-Empfehlung nutzen",
       "eyebrow": "Beispielreise",
       "title": "Fünf Plätze, fünf Tage. Standort Palma.",
-      "intro": "Ein Beispiel mit Standort Palma für eine Gruppe Clubgolfer: fünf Runden, ein langerer Tag im Norden und ein klarer Grund für die Reihenfolge.",
+      "intro": "Ein Beispiel mit Standort Palma für eine Gruppe Clubgolfer: fünf Runden, ein längerer Tag im Norden und ein klarer Grund für die Reihenfolge.",
       "routeLabel": "Routenvorschau",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {

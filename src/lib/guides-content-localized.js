@@ -464,7 +464,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "img": "/images/courses/son-antem-west.webp",
         "imgPosition": "center 45%",
         "title": "Son Antem West Golf Club, Majorque - avis honnête d'un professionnel PGA (2026)",
-        "intro": "Un parcours de resort a 15-20 minutes de Palma. Bon entretien, campagne ouverte et un trace qui convient a beaucoup de joueurs.",
+        "intro": "Un parcours de resort à 15-20 minutes de Palma. Bon entretien, campagne ouverte et un trace qui convient à beaucoup de joueurs.",
         "readTime": "6 min",
         "keywords": "Resort - Par 72 - €109-135 - 15-20 min de Palma"
       },
@@ -834,7 +834,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "img": "/images/courses/son-antem-west.webp",
         "imgPosition": "center 45%",
         "title": "Son Antem West Golf Club, Mallorca - ärlig recension av en PGA Professional (2026)",
-        "intro": "En resortbana 15-20 minuter från Palma. Bra skick, oppet landskap och en layout som passar många olika spelare.",
+        "intro": "En resortbana 15-20 minuter från Palma. Bra skick, öppet landskap och en layout som passar många olika spelare.",
         "readTime": "6 min",
         "keywords": "Resortbana - Par 72 - €109-135 - 15-20 min från Palma"
       },

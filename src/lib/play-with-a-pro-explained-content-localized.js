@@ -200,7 +200,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         "C'est ce que j'entends le plus souvent. L'inquiétude est réelle. Vous réservez une journée, vous arrivez, et votre swing vous semble étranger. Votre petit jeu est rouillé. Vous lisez mal le fairway. Rien de tout cela n'est le sujet.",
         "Une journée comme celle-ci ne se mesure pas à votre index ou à votre meilleur score. Elle se mesure à ce qui change dans votre façon de voir le jeu. Adam joue depuis l'âge de cinq ans et pensait maîtriser les fondamentaux. Une journée sur le parcours a complètement changé son approche du choix de coup. Jo n'avait pas joué depuis des années. Cette journée a ouvert quelque chose qu'une semaine de practice n'aurait pas pu apporter.",
         "Le score compte moins que les questions qu'il soulève. Quel était le bon club à cet endroit. Sur quoi dois-je vraiment travailler en rentrant. Ce sont ces choses-là qui restent.",
-        "Avant la journée, je consulte votre questionnaire préalable et nous parlons de votre jeu : ce que vous avez travaillé, ce qui vous frustre et ce qui représenterait une bonne journée pour vous. Lorsque nous arrivons au premier départ, je sais déjà ce que je dois observer. Ce contexte guide tout ce qui suit.",
+        "Avant la journée, je consulte votre questionnaire préalable et nous parlons de votre jeu : ce que vous avez travaillé, ce qui vous frustré et ce qui représenterait une bonne journée pour vous. Lorsque nous arrivons au premier départ, je sais déjà ce que je dois observer. Ce contexte guide tout ce qui suit.",
       ],
     },
     duringRound: {

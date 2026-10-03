@@ -11,7 +11,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un día de golf de verdad en Mallorca." },
         { "label": "Formato", "text": "Un campo, 18 hoyos, elegido según su juego, conmigo a su lado durante toda la vuelta." },
         { "label": "Precios", "text": "Solo desde €795. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
-        { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Le respondo personalmente en 24 horas." }
+        { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de hándicap. Le respondo personalmente en 24 horas." }
       ],
       "signatureRoute": {
         "text": "Si quiere un tee time privado, una sesión con John Brazier (The Golf Doctor) después de la vuelta, traslados y una velada organizada para su grupo, vea Signature Day.",
@@ -33,7 +33,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Qué incluye el día",
       "title": "Antes de que llegue, ya sé en qué tengo que fijarme.",
       "paragraphs": [
-        "Antes de llegar, rellena un cuestionario breve. Me cuenta qué le frustra, dónde está la distancia entre su juego de prácticas y sus resultados, y cómo sería para usted un gran día. Cuando llegamos al primer tee, yo ya sé en qué tengo que fijarme.",
+        "Antes de llegar, rellene un cuestionario breve. Me cuenta qué le frustra, dónde está la distancia entre su juego de prácticas y sus resultados, y cómo sería para usted un gran día. Cuando llegamos al primer tee, yo ya sé en qué tengo que fijarme.",
         "Soy PGA Advanced Professional, he entrenado a cientos de ganadores de torneos, tengo más de 15.000 horas de coaching y la certificación Trackman Master. El día se apoya en eso, pero no se convierte en una sesión puramente técnica. Una vuelta de golf, jugada como se debe."
       ],
       "quote": "La mayoría de los golfistas se van jugando mejor, con más claridad y entendiendo por qué. Esa última parte es la que suele quedarse.",
@@ -89,7 +89,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Un regalo que se va a usar de verdad",
-          "text": "Funciona bien para cumpleanos importantes, jubilaciones y premios de empresa. Si lo compra para otra persona, mantengo los detalles en privado hasta que usted quiera."
+          "text": "Funciona bien para cumpleaños importantes, jubilaciones y premios de empresa. Si lo compra para otra persona, mantengo los detalles en privado hasta que usted quiera."
         }
       ]
     },
@@ -576,9 +576,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "En un coup d'oeil",
       "title": "Comprendre l'offre avant de nous contacter.",
       "items": [
-        { "label": "Idéal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journée de golf a Majorque." },
-        { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi a vos cotes pendant toute la partie." },
-        { "label": "Tarifs", "text": "Solo a partir de €795. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la réservation." },
+        { "label": "Idéal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journée de golf à Majorque." },
+        { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi à vos côtés pendant toute la partie." },
+        { "label": "Tarifs", "text": "Solo à partir de €795. Groupe à partir de €950 au total. Les green fees restent à part et sont confirmes avant la réservation." },
         { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Je réponds personnellement sous 24 heures." }
       ],
       "signatureRoute": {
@@ -601,7 +601,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Ce que la journée comprend",
       "title": "Avant votre arrivée, je sais déjà ce que je dois observer.",
       "paragraphs": [
-        "Avant votre arrivée, vous remplissez un court questionnaire. Il me dit ce qui vous frustre, où se situe l'écart entre votre jeu au practice et vos scores, et ce qu'une bonne journée représenterait vraiment pour vous. Quand nous arrivons au premier départ, je sais déjà ce que je dois observer.",
+        "Avant votre arrivée, vous remplissez un court questionnaire. Il me dit ce qui vous frustré, où se situe l'écart entre votre jeu au practice et vos scores, et ce qu'une bonne journée représenterait vraiment pour vous. Quand nous arrivons au premier départ, je sais déjà ce que je dois observer.",
         "Je suis PGA Advanced Professional, j'ai entraîné des centaines de vainqueurs de tournois, plus de 15 000 heures de coaching et la certification Trackman Master. La journée s'appuie sur cela, sans devenir une session purement technique. Une partie de golf, jouée comme il faut."
       ],
       "quote": "La plupart des golfeurs repartent en jouant mieux, avec plus de clarté et en comprenant pourquoi. C'est généralement cette dernière partie qui reste.",
@@ -656,8 +656,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Couples, amis et petits groupes d'entreprise qui veulent jouer Majorque comme il faut, sans gérer eux-mêmes tee times, transferts ou déjeuner."
         },
         {
-          "title": "Un cadeau qui sera vraiment utilise",
-          "text": "La journée fonctionne bien pour un anniversaire important, un départ a la retraite ou une récompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les détails privés jusqu au bon moment."
+          "title": "Un cadeau qui sera vraiment utilisé",
+          "text": "La journée fonctionne bien pour un anniversaire important, un départ à la retraite ou une récompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les détails privés jusqu au bon moment."
         }
       ]
     },
@@ -782,7 +782,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Vous cherchez quelque chose de plus ambitieux ?",
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
         "body": "Deux ou trois jours consécutifs entre Son Gual, Alcanada et au-delà, avec transferts privés, bonnes tables soigneusement choisies et accès à des parcours que la plupart des visiteurs ne peuvent pas réserver.",
-        "detail": "Signature Day. Une journée de golf privée avec Andy, une session avec John Brazier, des transferts privés et une soirée coordonnée. Le tarif est confirme après le premier echange, lorsque la journée a pris forme.",
+        "detail": "Signature Day. Une journée de golf privée avec Andy, une session avec John Brazier, des transferts privés et une soirée coordonnée. Le tarif est confirmé après le premier échange, lorsque la journée a pris forme.",
         "button": "Demander un séjour sur plusieurs jours →",
         "href": "/fr/contact"
       }
@@ -1143,7 +1143,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "I korthet",
       "title": "Första erbjudandet innan du hör av dig.",
       "items": [
-        { "label": "Bäst för", "text": "Ensamspelare, par och små sallskap som vill ha en riktig golfdag på Mallorca." },
+        { "label": "Bäst för", "text": "Ensamspelare, par och små sällskap som vill ha en riktig golfdag på Mallorca." },
         { "label": "Format", "text": "En bana, 18 hål, vald efter ditt spel, med mig vid din sida under hela rundan." },
         { "label": "Priser", "text": "Solo från €795. Grupp från €950 totalt. Green fees är separata och bekräftas innan bokning." },
         { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Jag svarar personligen inom 24 timmar." }
@@ -1224,7 +1224,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "En present som faktiskt blir använd",
-          "text": "Dagarna passar bra för stora fodelsedagar, pension och foretagsbeloningar. Om du koper till någon annan haller jag detaljerna privata tills du är redo."
+          "text": "Dagarna passar bra för stora födelsedagar, pension och foretagsbeloningar. Om du köper till någon annan håller jag detaljerna privata tills du är redo."
         }
       ]
     },

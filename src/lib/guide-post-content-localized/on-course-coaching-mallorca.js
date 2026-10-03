@@ -215,7 +215,7 @@ const content = {
         "text": "Lessen op de driving range lossen driving-range-problemen op. On-course coaching lost golfproblemen op. Het verschil is groter dan de meeste mensen beseffen tot ze beide hebben meegemaakt."
       },
       {
-        "text": "Ik ben PGA Advanced Professional en coach al meer dan tien jaar op elk niveau. De sessies die ik het meest effectief vind, en waar clienten achteraf het langst over praten, zijn de sessies die op de baan zelf plaatsvinden, in echte situaties, onder omstandigheden die op een oefenveld niet na te bootsen zijn."
+        "text": "Ik ben PGA Advanced Professional en coach al meer dan tien jaar op elk niveau. De sessies die ik het meest effectief vind, en waar cliënten achteraf het langst over praten, zijn de sessies die op de baan zelf plaatsvinden, in echte situaties, onder omstandigheden die op een oefenveld niet na te bootsen zijn."
       },
       {
         "text": "Wat on-course coaching echt inhoudt"

@@ -61,13 +61,13 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Braucht man für Mallorca ein Handicap-Zertifikat?",
-          "a": "Die meisten Plätze heissen alle Spielstärken willkommen, einige verlangen jedoch ein gültiges Handicap-Zertifikat oder setzen ein maximales Handicap. Auf den Platzkarten oben habe ich die Plätze mit Handicap-Vorgabe und dem jeweiligen Limit markiert, damit Sie es vor der Buchung sehen. Wenn Sie bei Ihrem Zertifikat unsicher sind, nennen Sie mir die Plätze, die Sie in Betracht ziehen, und ich prüfe es für Sie."
+          "a": "Die meisten Plätze heißen alle Spielstärken willkommen, einige verlangen jedoch ein gültiges Handicap-Zertifikat oder setzen ein maximales Handicap. Auf den Platzkarten oben habe ich die Plätze mit Handicap-Vorgabe und dem jeweiligen Limit markiert, damit Sie es vor der Buchung sehen. Wenn Sie bei Ihrem Zertifikat unsicher sind, nennen Sie mir die Plätze, die Sie in Betracht ziehen, und ich prüfe es für Sie."
         }
       ],
       "toolCta": {
         "eyebrow": "Kurzweg",
         "title": "Lieber erst eine Shortlist statt alle 24 Platzreviews zu lesen?",
-        "body": "Nutzen Sie den Course Selector, wenn Sie Handicap, Budget, Basis und Reisestil schon kennen. Er grenzt die Insel ein, bevor Sie Tee Times vergleichen.",
+        "body": "Nutzen Sie den Platzauswahl-Assistenten, wenn Sie Handicap, Budget, Basis und Reisestil schon kennen. Er grenzt die Insel ein, bevor Sie Tee Times vergleichen.",
         "cta": "Meine Plätze finden",
         "note": "Sie brauchen keine E-Mail, um das Tool zu nutzen. Geben Sie sie nur ein, wenn Sie das Ergebnis zugeschickt haben möchten."
       },
@@ -91,7 +91,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Jugados o investigados a fondo",
         "Profesional PGA"
       ],
-      "lead": "Explore los 24 campos por región. Para una lista más inteligente - filtrada por su handicap, presupuesto y estilo de viaje - use el selector de campos. Después envíeme sus fechas, handicap y zona de hotel, y afinaré la recomendación."
+      "lead": "Explore los 24 campos por región. Para una lista más inteligente - filtrada por su hándicap, presupuesto y estilo de viaje - use el selector de campos. Después envíeme sus fechas, hándicap y zona de hotel, y afinaré la recomendación."
     },
     "regionHeaders": {
       "palma": {
@@ -120,7 +120,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Empiece por zona, precio y dificultad para reducir los campos rápidamente. Cada ficha muestra precio, dificultad, valoración y cualquier tarifa dinámica o requisito de handicap antes de reservar.",
+      "explorerIntro": "Empiece por zona, precio y dificultad para reducir los campos rápidamente. Cada ficha muestra precio, dificultad, valoración y cualquier tarifa dinámica o requisito de hándicap antes de reservar.",
       "faqEyebrow": "Preguntas",
       "faqTitle": "Preguntas frecuentes",
       "faqIntro": "Respuestas rápidas antes de hacer su lista corta o reservar.",
@@ -131,28 +131,28 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cuál es el mejor campo de golf de Mallorca?",
-          "a": "No hay un único mejor campo. Depende de lo que busque en la ronda. Para una prueba de nivel campeonato, mire los campos más difíciles. Para paisaje, filtre por los entornos de costa y montaña. Para un mantenimiento de nivel Tour, ordene por mi valoración. Envíeme su handicap y lo que más le importa y le indicaré la mejor lista corta."
+          "a": "No hay un único mejor campo. Depende de lo que busque en la ronda. Para una prueba de nivel campeonato, mire los campos más difíciles. Para paisaje, filtre por los entornos de costa y montaña. Para un mantenimiento de nivel Tour, ordene por mi valoración. Envíeme su hándicap y lo que más le importa y le indicaré la mejor lista corta."
         },
         {
           "q": "¿Cuánto cuesta jugar al golf en Mallorca?",
           "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 260 € en lo más alto en temporada alta. Palma Pitch & Putt es más barato, pero es una opción de campo corto independiente, no una vuelta de visitante típica. La mayoría de las rondas de visitante se sitúan entre 85 € y 165 €. El buggy suele costar de 35 € a 48 € aparte."
         },
         {
-          "q": "¿Hace falta certificado de handicap para jugar en Mallorca?",
-          "a": "La mayoría de los campos admiten todos los niveles, pero algunos exigen un certificado de handicap válido o fijan un handicap máximo. En las fichas de arriba he señalado los campos con requisito de handicap y el límite que aplica, para que lo vea antes de reservar. Si tiene dudas con su certificado, dígame los campos que está considerando y lo compruebo por usted."
+          "q": "¿Hace falta certificado de hándicap para jugar en Mallorca?",
+          "a": "La mayoría de los campos admiten todos los niveles, pero algunos exigen un certificado de hándicap válido o fijan un hándicap máximo. En las fichas de arriba he señalado los campos con requisito de hándicap y el límite que aplica, para que lo vea antes de reservar. Si tiene dudas con su certificado, dígame los campos que está considerando y lo compruebo por usted."
         }
       ],
       "toolCta": {
         "eyebrow": "Atajo",
         "title": "¿Prefiere una lista corta antes de leer las 24 reseñas?",
-        "body": "Use el selector de campos si ya conoce su handicap, presupuesto, base y estilo de viaje. Reducirá la isla antes de empezar a comparar salidas.",
+        "body": "Use el selector de campos si ya conoce su hándicap, presupuesto, base y estilo de viaje. Reducirá la isla antes de empezar a comparar salidas.",
         "cta": "Encontrar mis campos",
         "note": "No necesita email para usar la herramienta. Solo introdúzcalo si quiere que le envíen el resultado."
       },
       "allCourses": "Todos los campos",
       "ctaEyebrow": "¿¿Ya tiene su lista corta?",
       "ctaH2": "Convierta la lista corta en el viaje correcto.",
-      "ctaP": "Envíeme sus fechas, handicap, zona de hotel y los dos o tres campos que está considerando. Le diré cuáles encajan en el viaje, en qué orden, y como es el plan más claro.",
+      "ctaP": "Envíeme sus fechas, hándicap, zona de hotel y los dos o tres campos que está considerando. Le diré cuáles encajan en el viaje, en qué orden, y como es el plan más claro.",
       "seeExperiences": "Planifique su viaje",
       "getInTouch": "Play With A Pro"
     }
@@ -212,7 +212,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Combien coûte une partie de golf à Majorque ?",
-          "a": "Les green fees vont d\'environ 55 € dans la gamme accessible jusqu\'à environ 260 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c\'est une option de parcours court a part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coûte généralement de 35 € a 48 € en plus."
+          "a": "Les green fees vont d\'environ 55 € dans la gamme accessible jusqu\'à environ 260 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c\'est une option de parcours court à part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coûte généralement de 35 € a 48 € en plus."
         },
         {
           "q": "Faut-il un certificat de handicap pour jouer à Majorque ?",
@@ -298,7 +298,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "toolCta": {
         "eyebrow": "Snelkoppeling",
         "title": "Liever eerst een shortlist dan alle 24 reviews lezen?",
-        "body": "Gebruik de course selector als u uw handicap, budget, uitvalsbasis en tripstijl al weet. Daarmee verkleint u de keuze voordat u starttijden gaat vergelijken.",
+        "body": "Gebruik de baankiezer als u uw handicap, budget, uitvalsbasis en tripstijl al weet. Daarmee verkleint u de keuze voordat u starttijden gaat vergelijken.",
         "cta": "Mijn banen vinden",
         "note": "U hebt geen e-mail nodig om de tool te gebruiken. Vul die alleen in als u het resultaat toegestuurd wilt krijgen."
       },

@@ -192,11 +192,11 @@ const content = {
         "text": "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a Son Vida y Son Quint. Los tres campos son accesibles desde el mismo complejo resort."
       },
       {
-        "title": "Cuatro cosas que yo sabria antes de reservar Son Muntaner",
+        "title": "Cuatro cosas que yo sabría antes de reservar Son Muntaner",
         "items": [
           [
             "Mejor hora de salida",
-            "Si se aloja en Palma, aproveche la cercania y salga temprano. Tiene el traslado fácil, greens más frescos y un inicio algo más calmado antes de que se llene el tee sheet."
+            "Si se aloja en Palma, aproveche la cercanía y salga temprano. Tiene el traslado fácil, greens más frescos y un inicio algo más calmado antes de que se llene el tee sheet."
           ],
           [
             "Consejo con el viento",
@@ -208,7 +208,7 @@ const content = {
           ],
           [
             "Consejo de casa club",
-            "Quedese a comer después. El restaurante es mejor que una parada rápida de casa club y tiene sentido si Son Muntaner es su día en Palma."
+            "Quédese a comer después. El restaurante es mejor que una parada rápida de casa club y tiene sentido si Son Muntaner es su día en Palma."
           ]
         ]
       },
@@ -312,7 +312,7 @@ const content = {
       },
       {
         "alt": "Son Muntaner Golfplatz Mallorca – Ausblick auf die Fairways durch die Na-Burguesa-Berge",
-        "caption": "Rückblick nach einem der langeren Anstiege. Die Streckenführung durch die Na-Burguesa-Berge macht diesen Platz zu etwas völlig anderem als alles, was sonst in der Nähe von Palma zu finden ist."
+        "caption": "Rückblick nach einem der längeren Anstiege. Die Streckenführung durch die Na-Burguesa-Berge macht diesen Platz zu etwas völlig anderem als alles, was sonst in der Nähe von Palma zu finden ist."
       },
       {
         "text": "Wie der Platz sich erschließt"
@@ -331,7 +331,7 @@ const content = {
         "text": "Die Par-3-Löcher"
       },
       {
-        "text": "Elevation wird auf der gesamten Runde gut eingesetzt. Der Schutz entsteht durch Form und Winkel des Lochs, nicht nur durch Lange – wobei die langeren Löcher von den hinteren Abschlägen über 180 Meter haben und eine ordentliche Schlägerwahl erfordern. Das 13. war an diesem Tag ein seltener Moment der Klarheit."
+        "text": "Elevation wird auf der gesamten Runde gut eingesetzt. Der Schutz entsteht durch Form und Winkel des Lochs, nicht nur durch Lange – wobei die längeren Löcher von den hinteren Abschlägen über 180 Meter haben und eine ordentliche Schlägerwahl erfordern. Das 13. war an diesem Tag ein seltener Moment der Klarheit."
       },
       {
         "alt": "Andy Griffiths beim Abschlag am 13. Par-3-Loch auf Son Muntaner Mallorca",
@@ -445,7 +445,7 @@ const content = {
         "text": "Der Titel Bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und Klarheit in der Entscheidungsfindung vom ersten bis zum letzten Loch fordert. Er belohnt Kontrolle mehr als Kraft und schafft Scoring-Chancen durch Präzision. Fünf Minuten von Palma machen die Anreise unkompliziert. Allein die Greens rechtfertigen den Besuch."
       },
       {
-        "text": "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte. Wenn Son Muntaner der Mittelpunkt einer langeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
+        "text": "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte. Wenn Son Muntaner der Mittelpunkt einer längeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
       },
       {
         "text": "Möchten Sie Son Muntaner mit einem PGA-Professional an Ihrer Seite spielen?",
@@ -649,11 +649,11 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Si vous logez a Palma, profitez de la proximité et partez tôt. Vous aurez le trajet facile, des greens plus frais et un début un peu plus calme avant que le tee sheet se remplisse."
+            "Si vous logez à Palma, profitez de la proximité et partez tôt. Vous aurez le trajet facile, des greens plus frais et un début un peu plus calme avant que le tee sheet se remplisse."
           ],
           [
             "Conseil vent",
-            "C est d abord un parcours de placement. Choisissez votre zone d atterrissage, pas la ligne heroique, et laissez le buggy garder vos jambes pour plus tard dans la partie."
+            "C est d abord un parcours de placement. Choisissez votre zone d atterrissage, pas la ligne héroïque, et laissez le buggy garder vos jambes pour plus tard dans la partie."
           ],
           [
             "Ou les visiteurs perdent des coups",
@@ -1101,11 +1101,11 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Om du bor i Palma, utnyttja narheten och gå ut tidigt. Du får enkel transfer, fraschare greener och en lite lugnare start innan tee sheet fylls upp."
+            "Om du bor i Palma, utnyttja närheten och gå ut tidigt. Du får enkel transfer, fraschare greener och en lite lugnare start innan tee sheet fylls upp."
           ],
           [
             "Vindtips",
-            "Det har är först och framst en positionsbana. Välj landningsyta, inte den heroiska linjen, och lat buggyn spara benen till senare i rundan."
+            "Det har är först och främst en positionsbana. Välj landningsyta, inte den heroiska linjen, och lat buggyn spara benen till senare i rundan."
           ],
           [
             "Där besökare tappar slag",

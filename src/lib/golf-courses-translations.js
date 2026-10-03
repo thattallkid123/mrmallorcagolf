@@ -180,7 +180,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf de Andratx': {
       location: 'Camp de Mar',
-      text: 'El hoyo 6 es el par 5 más largo de España con 609 metros. Construido en las colinas sobre Camp de Mar sin compromisos. Traer pelotas extra y humildad: el rough es real y las calles estrechas. No apto para principiantes sin handicap. La experiencia, las vistas y la dificultad lo convierten en una de las rondas más memorables de la isla.',
+      text: 'El hoyo 6 es el par 5 más largo de España con 609 metros. Construido en las colinas sobre Camp de Mar sin compromisos. Traer pelotas extra y humildad: el rough es real y las calles estrechas. No apto para principiantes sin hándicap. La experiencia, las vistas y la dificultad lo convierten en una de las rondas más memorables de la isla.',
       footer: 'El campo más difícil de la isla',
     },
     'Golf Maioris': {

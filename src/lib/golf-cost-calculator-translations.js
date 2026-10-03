@@ -317,7 +317,7 @@ export const GOLF_COST_CALCULATOR_T = {
       dates: 'Fechas preferidas (opcional)',
       datesPlaceholder: 'p. ej. Primera semana de octubre, flexible',
       notes: '¿Hay algo más que deba saber sobre su viaje?',
-      notesPlaceholder: 'Handicaps, ocasiones, no golfistas en el grupo, campos imprescindibles…',
+      notesPlaceholder: 'Hándicaps, ocasiones, no golfistas en el grupo, campos imprescindibles…',
       button: 'Enviar mi consulta',
       sending: 'Enviando…',
       disclaimer: 'Sus datos llegan directamente a mí — sin listas, sin spam.',

@@ -247,7 +247,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: 'Herramienta gratuita',
       title: 'Comparar campos de golf en Mallorca',
-      sub: 'Los 24 campos de la isla: green fees, costes de carrito, reglas de caminar, acceso, dificultad y límites de handicap, más mi veredicto de una línea sobre cada uno, como profesional avanzado de la PGA británica con base en Mallorca. Explore la guía completa o compare hasta cinco campos uno al lado del otro.',
+      sub: 'Los 24 campos de la isla: green fees, costes de carrito, reglas de caminar, acceso, dificultad y límites de hándicap, más mi veredicto de una línea sobre cada uno, como profesional avanzado de la PGA británica con base en Mallorca. Explore la guía completa o compare hasta cinco campos uno al lado del otro.',
       updated: 'Última actualización: Julio 2026',
     },
     modebar: {
@@ -294,12 +294,12 @@ export const GREEN_FEES_T = {
       access: 'Acceso',
       buggy: 'Carrito',
       walkable: 'A pie',
-      handicapLimit: 'Límite de handicap',
+      handicapLimit: 'Límite de hándicap',
       andyVerdic: 'Veredicto de Andy',
       nineHoleCourse: 'Campo de 9 hoyos',
       viewFullGuide: 'Ver guía completa →',
       guideComing: 'Próximamente',
-      certificateNote: '* Se requiere certificado de handicap válido.',
+      certificateNote: '* Se requiere certificado de hándicap válido.',
     },
     feeNotes: {
       variableRate: 'Tarifa variable',
@@ -317,7 +317,7 @@ export const GREEN_FEES_T = {
       difficulty: 'Dificultad',
       holes: 'Hoyos',
       courseGuide: 'Guía del campo',
-      certificateNote: '* Se requiere certificado de handicap válido.',
+      certificateNote: '* Se requiere certificado de hándicap válido.',
     },
     accessLabels: {
       public: 'Público',
@@ -332,8 +332,8 @@ export const GREEN_FEES_T = {
       restricted: 'Restringido',
     },
     handicapLabels: {
-      noHandicapLimit: 'Sin límite de handicap',
-      handicapRequired: 'Handicap requerido',
+      noHandicapLimit: 'Sin límite de hándicap',
+      handicapRequired: 'Hándicap requerido',
     },
     buggyLabels: {
       essential: 'Esencial',
@@ -349,7 +349,7 @@ export const GREEN_FEES_T = {
     cta: {
       courseSelector: {
         title: '¿No está seguro de qué campo es adecuado para su grupo?',
-        desc: 'Responda algunas preguntas rápidas y obtenga una lista que se ajuste a su handicap, presupuesto y planes de viaje.',
+        desc: 'Responda algunas preguntas rápidas y obtenga una lista que se ajuste a su hándicap, presupuesto y planes de viaje.',
         link: 'Pruebe el selector de campos →',
       },
       contact: {

@@ -199,7 +199,7 @@ const OFFER_CONTENT = {
       },
       [OFFER_IDS.premium]: {
         fullLabel: 'Den Fullständiga Andy-dagen',
-        contactPrice: 'På forfragan',
+        contactPrice: 'På förfrågan',
       },
     },
   },

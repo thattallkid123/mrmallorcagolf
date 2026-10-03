@@ -231,7 +231,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "quote": "Frapper les pattes d’ours, ce n’est pas faire du sparring. On peut avoir l’air propre sur les pattes d’ours et découvrir très vite ce qui tient vraiment quand on a quelqu’un en face. Au golf, c’est pareil. Le practice compte, mais le parcours dit la vérité.",
       "questionnaireEyebrow": "Le questionnaire",
       "questionnaireParagraphs": [
-        "Un court questionnaire donne la forme de la journée avant même de commencer : ce qui vous frustre, où sont les écarts et à quoi ressemblerait une bonne journée pour vous.",
+        "Un court questionnaire donne la forme de la journée avant même de commencer : ce qui vous frustré, où sont les écarts et à quoi ressemblerait une bonne journée pour vous.",
         "Au premier départ, je sais déjà ce que je dois observer. Le retour est situé et honnête, pas générique.",
         "Les sessions ont lieu à Son Gual, Alcanada ou sur un parcours adapté à votre niveau et à vos objectifs."
       ],

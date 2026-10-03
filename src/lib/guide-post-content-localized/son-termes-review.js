@@ -139,7 +139,7 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "title": "Cuatro cosas que yo sabria antes de reservar Son Termes",
+        "title": "Cuatro cosas que yo sabría antes de reservar Son Termes",
         "items": [
           [
             "Mejor hora de salida",
@@ -310,7 +310,7 @@ const content = {
         "items": [
           [
             "Beste Startzeit",
-            "Ein früherer Start ist die sicherere Wahl, besonders wenn Sie in den wärmeren Monaten zu Fuss gehen wollen. Die Back Nine steigen an, der Wind baut sich auf, und je später Sie starten, desto härter wird der Platz."
+            "Ein früherer Start ist die sicherere Wahl, besonders wenn Sie in den wärmeren Monaten zu Fuß gehen wollen. Die Back Nine steigen an, der Wind baut sich auf, und je später Sie starten, desto härter wird der Platz."
           ],
           [
             "Wind-Tipp",
@@ -371,7 +371,7 @@ const content = {
         "caption": "La balle est à moi. La chèvre n'était pas invitée. Retour, Son Termes."
       },
       {
-        "text": "J'ai joué Son Termes un vendredi matin avec un ami classé 20 de handicap. Au retour, il commençait à manquer de balles. Le rough attrape vite, plusieurs mises en jeu laissent très peu de marge et le parcours sanctionne les erreurs d'une façon qui ne saute pas aux yeux sur la carte. C'est un résumé assez juste de ce qu'est Son Termes."
+        "text": "J'ai joué Son Termes un vendredi matin avec un ami classé 20 de handicap. Au retour, il commençait à manquer de balles. Le rough attrape vite, plusieurs mises en jeu laissent très peu de marge et le parcours sanctionné les erreurs d'une façon qui ne saute pas aux yeux sur la carte. C'est un résumé assez juste de ce qu'est Son Termes."
       },
       {
         "text": "Son Termes se trouve dans les montagnes de Na Burguesa au-dessus de Palma. À vingt minutes du centre-ville, et pourtant dans un autre monde. Par temps clair, depuis les départs les plus hauts, on aperçoit le Castell de Bellver et la cathédrale sur l'horizon de Palma, avec la Méditerranée derrière. En venant de Shanghai, où un parcours aussi accessible et aussi spectaculaire aurait une liste d'attente de cinq ans pour devenir membre, cela reste marquant."
@@ -484,11 +484,11 @@ const content = {
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "Beaucoup de coups perdus viennent de l idee qu un parcours court doit forcement être simple. Doglegs aveugles, eau qui rentre en jeu, rough collant et cibles cachees punissent ceux qui deconnectent."
+            "Beaucoup de coups perdus viennent de l idée qu un parcours court doit forcément être simple. Doglegs aveugles, eau qui rentre en jeu, rough collant et cibles cachées punissent ceux qui deconnectent."
           ],
           [
             "Conseil clubhouse",
-            "Si vous aimez davantage les parcours de caractere que les parcours polis, c est une bonne alternative près de Palma face aux noms premium. Finir sur la terrasse avec la vue sur les montagnes est une très bonne façon de terminer."
+            "Si vous aimez davantage les parcours de caractère que les parcours polis, c est une bonne alternative près de Palma face aux noms premium. Finir sur la terrasse avec la vue sur les montagnes est une très bonne façon de terminer."
           ]
         ]
       },
@@ -812,19 +812,19 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "En tidigare start är det sakrare valet, särskilt om du vill gå under de varmare manaderna. Back nine klattrar, vinden bygger ofta upp, och ju senare du går ut desto tuffare blir banan."
+            "En tidigare start är det säkrare valet, särskilt om du vill gå under de varmare månaderna. Back nine klättrar, vinden bygger ofta upp, och ju senare du går ut desto tuffare blir banan."
           ],
           [
             "Vindtips",
-            "Ta en klubba mer på de öppna korta hålen på den ovre delen av banan. Yardaget ser beskedligt ut, men bergsbrisen andrar slaget snabbt."
+            "Ta en klubba mer på de öppna korta hålen på den övre delen av banan. Yardaget ser beskedligt ut, men bergsbrisen ändrar slaget snabbt."
           ],
           [
             "Där besökare tappar slag",
-            "Många tappade slag kommer från antagandet att en kort bana måste vara enkel. Blinda doglegs, vatten som skar in, seg ruff och dolda mål straffar den som stanger av."
+            "Många tappade slag kommer från antagandet att en kort bana måste vara enkel. Blinda doglegs, vatten som skar in, seg ruff och dolda mål straffar den som stänger av."
           ],
           [
             "Klubbhustips",
-            "Om du foredrar banor med personlighet framför perfekt putsade banor är det har ett bra Palma-nara alternativ till premiumnamnen. Att avsluta på terrassen med bergsutsikt är ett mycket bra satt att runda av."
+            "Om du föredrar banor med personlighet framför perfekt putsade banor är det har ett bra Palma-nara alternativ till premiumnamnen. Att avsluta på terrassen med bergsutsikt är ett mycket bra sätt att runda av."
           ]
         ]
       },

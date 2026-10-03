@@ -129,7 +129,7 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "title": "Cuatro cosas que yo sabria antes de reservar Golf de Andratx",
+        "title": "Cuatro cosas que yo sabría antes de reservar Golf de Andratx",
         "items": [
           [
             "Mejor hora de salida",
@@ -145,7 +145,7 @@ const content = {
           ],
           [
             "Consejo de casa club",
-            "La zona de prácticas es un poco peculiar. Llegue con tiempo suficiente para usar el area de juego corto y asentarse bien antes del primer tee."
+            "La zona de prácticas es un poco peculiar. Llegue con tiempo suficiente para usar el área de juego corto y asentarse bien antes del primer tee."
           ]
         ]
       },
@@ -299,7 +299,7 @@ const content = {
           ],
           [
             "Wo Besucher Schläge verlieren",
-            "Der häufigste Fehler ist zu denken, die Herausforderung sei nur die Lange. Die grossen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Höhenunterschieden auf kurzen Löchern und Problemen, die Sie vom Tee nicht voll sehen."
+            "Der häufigste Fehler ist zu denken, die Herausforderung sei nur die Lange. Die großen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Höhenunterschieden auf kurzen Löchern und Problemen, die Sie vom Tee nicht voll sehen."
           ],
           [
             "Clubhaus-Tipp",
@@ -447,7 +447,7 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Partez aussi tôt que raisonnablement possible. Le parcours est demande, la lumière de montagne est la meilleure le matin, et c est ainsi que vous avez la meilleure chance d eviter le vent plus fort."
+            "Partez aussi tôt que raisonnablement possible. Le parcours est demandé, la lumière de montagne est la meilleure le matin, et c est ainsi que vous avez la meilleure chance d éviter le vent plus fort."
           ],
           [
             "Conseil vent",
@@ -455,11 +455,11 @@ const content = {
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "L erreur la plus courante est de croire que le defi n est qu une question de longueur. Les gros scores viennent ici bien plus d un mauvais controle de distance vers des obstacles en travers, de gros changements de denivele sur les trous courts, et de problèmes que l on ne voit pas totalement depuis le tee."
+            "L erreur la plus courante est de croire que le défi n est qu une question de longueur. Les gros scores viennent ici bien plus d un mauvais contrôle de distance vers des obstacles en travers, de gros changements de denivele sur les trous courts, et de problèmes que l on ne voit pas totalement depuis le tee."
           ],
           [
             "Conseil clubhouse",
-            "La zone d entrainement est un peu particuliere. Arrivez assez tôt pour utiliser l espace de petit jeu et vous installer tranquillement avant le premier départ."
+            "La zone d entrainement est un peu particulière. Arrivez assez tôt pour utiliser l espace de petit jeu et vous installer tranquillement avant le premier départ."
           ]
         ]
       },
@@ -763,7 +763,7 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Ga ut så tidigt som det rimligen går. Banan är efterfragad, bergsljuset är som bäst på morgonen, och då har du bäst chans att slippa den starkare vinden."
+            "Ga ut så tidigt som det rimligen går. Banan är efterfrågad, bergsljuset är som bäst på morgonen, och då har du bäst chans att slippa den starkare vinden."
           ],
           [
             "Vindtips",
@@ -771,11 +771,11 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Det vanligaste misstaget är att tro att utmaningen bara handlar om langd. De stora siffrorna kommer har mycket oftare från dalig distanskontroll in i tvarliggande hinder, stora höjdskillnader på korta hål och problem som du inte ser fullt ut från tee."
+            "Det vanligaste misstaget är att tro att utmaningen bara handlar om längd. De stora siffrorna kommer har mycket oftare från dålig distanskontroll in i tvarliggande hinder, stora höjdskillnader på korta hål och problem som du inte ser fullt ut från tee."
           ],
           [
             "Klubbhustips",
-            "Ovningsupplagget är lite ovanligt. Kom tillräckligt tidigt för att anvanda kortspelsomradet och landa i rundan innan du går till första tee."
+            "Ovningsupplagget är lite ovanligt. Kom tillräckligt tidigt för att använda kortspelsomradet och landa i rundan innan du går till första tee."
           ]
         ]
       },

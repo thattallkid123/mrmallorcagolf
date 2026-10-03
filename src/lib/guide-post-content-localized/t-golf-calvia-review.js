@@ -134,7 +134,7 @@ const content = {
         "text": "9/10. T Golf Calvià es uno de los campos mejor cuidados que he jugado en Mallorca. Los greens son excelentes, las calles están en gran forma, y el diseño te pone a prueba de verdad, especialmente en el cálculo de distancias y con el agua, sin ser injusto."
       },
       {
-        "title": "Cuatro cosas que yo sabria antes de reservar T Golf Calvià",
+        "title": "Cuatro cosas que yo sabría antes de reservar T Golf Calvià",
         "items": [
           [
             "Mejor hora de salida",
@@ -318,7 +318,7 @@ const content = {
         ]
       },
       {
-        "text": "Er eignet sich für Spieler, die eine ernsthafte Runde in guten Bedingungen suchen. Einen Hochhandicapper würde ich hier nicht als ersten Platz eines Urlaubsaufenthalts empfehlen, aber für jeden auf einem dedizierten Golftrip gehört er auf die Liste. Die Twilight-Rate und die Wochentagesangebote machen ihn zum richtigen Zeitpunkt zu einem guten Preis-Leistungs-Verhältnis. Passt das in eine langere Reise? Der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> deckt Reihenfolge und Timing ab."
+        "text": "Er eignet sich für Spieler, die eine ernsthafte Runde in guten Bedingungen suchen. Einen Hochhandicapper würde ich hier nicht als ersten Platz eines Urlaubsaufenthalts empfehlen, aber für jeden auf einem dedizierten Golftrip gehört er auf die Liste. Die Twilight-Rate und die Wochentagesangebote machen ihn zum richtigen Zeitpunkt zu einem guten Preis-Leistungs-Verhältnis. Passt das in eine längere Reise? Der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> deckt Reihenfolge und Timing ab."
       },
       {
         "text": "T Golf Calvià mit einem PGA-Professional spielen, der jeden Abschlag kennt?",
@@ -447,7 +447,7 @@ const content = {
         "text": "Questions fréquentes"
       },
       {
-        "text": "Avant de réserver, pensez a l'heure de départ, au vent, au rythme et au niveau du groupe. Reservez tôt, choisissez les bons départs et gardez du temps après la partie."
+        "text": "Avant de réserver, pensez à l'heure de départ, au vent, au rythme et au niveau du groupe. Réservez tôt, choisissez les bons départs et gardez du temps après la partie."
       },
       {
         "alt": "Pins encadrant le fairway sur le T Golf Calvià avec de l'eau et des montagnes visibles au-delà",
@@ -466,11 +466,11 @@ const content = {
           ],
           [
             "Conseil vent",
-            "Travaillez a partir de votre nombre, pas de ce que l oeil vous raconte. Les approches semi-aveugles et les carries d eau exposes punissent ceux qui devinent au lieu de s engager."
+            "Travaillez à partir de votre nombre, pas de ce que l oeil vous raconte. Les approches semi-aveugles et les carries d eau exposes punissent ceux qui devinent au lieu de s engager."
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "L erreur classique consiste a prendre trop peu de club sur les trous qui paraissent plus aimables, puis a devenir trop agressif et a ramener encore plus d eau dans le jeu."
+            "L erreur classique consiste à prendre trop peu de club sur les trous qui paraissent plus aimables, puis à devenir trop agressif et à ramener encore plus d eau dans le jeu."
           ],
           [
             "Conseil clubhouse",
@@ -771,7 +771,7 @@ const content = {
         "text": "Vanliga frågor"
       },
       {
-        "text": "Innan du bokar, tank på starttid, vind, tempo och om banan passar gruppen. Boka tidigt, välj rimliga tees och lämna tid efter ronden."
+        "text": "Innan du bokar, tänk på starttid, vind, tempo och om banan passar gruppen. Boka tidigt, välj rimliga tees och lämna tid efter ronden."
       },
       {
         "alt": "Tallar som ramar in fairway på T Golf Calvià med vatten och berg synliga bortom",
@@ -792,15 +792,15 @@ const content = {
           ],
           [
             "Vindtips",
-            "Utga från ditt nummer, inte från vad ogat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar alla som gissar i stället för att bestamma sig."
+            "Utga från ditt nummer, inte från vad ögat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar alla som gissar i stället för att bestämma sig."
           ],
           [
             "Där besökare tappar slag",
-            "Det vanliga misstaget är att ta för lite klubba på hålen som ser snallare ut an de är, och sedan bli aggressiv så att annu mer vatten kommer in i spelet."
+            "Det vanliga misstaget är att ta för lite klubba på hålen som ser snällare ut an de är, och sedan bli aggressiv så att ännu mer vatten kommer in i spelet."
           ],
           [
             "Klubbhustips",
-            "Använd grasrangen innan du går ut och lämna sedan tid för en drink efterat. Helheten känns mer komplett om du inte behandlar rundan som något du bara ska skynda igenom."
+            "Använd grasrangen innan du går ut och lämna sedan tid för en drink efteråt. Helheten känns mer komplett om du inte behandlar rundan som något du bara ska skynda igenom."
           ]
         ]
       },

@@ -623,9 +623,9 @@ export const COURSE_SELECTOR_T = {
     results: {
       eyebrow: 'Sus coincidencias',
       h2: 'Su selección de campos',
-      intro: (style, area) => {
+      intro: (style, área) => {
         const styleMap = { luxury: 'de lujo', scenic: 'paisajístico', relaxed: 'relajado', serious: 'de golf serio', family: 'familiar', 'bucket-list': 'de lista de deseos' }
-        const areaStr = area === 'flexible' ? 'en cualquier lugar de la isla' : `la zona ${area === 'North' ? 'norte y este' : area === 'Southwest' ? 'suroeste' : area === 'Palma' ? 'de Palma' : 'sur'}`
+        const areaStr = área === 'flexible' ? 'en cualquier lugar de la isla' : `la zona ${area === 'North' ? 'norte y este' : área === 'Southwest' ? 'suroeste' : área === 'Palma' ? 'de Palma' : 'sur'}`
         return `Campos adaptados a su juego, un viaje ${styleMap[style] || ''} y ${areaStr}. La selección solo muestra campos con reserva pública; para principiantes no exige certificado de hándicap. Las green fees son orientativas y yo confirmo la tarifa al reservar.`
       },
       ranks: ['#1 Coincidencia', '#2 Coincidencia', '#3 Coincidencia'],
@@ -652,7 +652,7 @@ export const COURSE_SELECTOR_T = {
         pdfDesc: 'Los 24 campos de la isla, comparados uno al lado del otro por green fee, dificultad y para quién es cada uno.',
         pdfButton: 'Descargar PDF gratis',
         pdfSent: 'PDF en camino.',
-        error: 'No funcionó. Comprueba la dirección y vuelve a intentarlo.',
+        error: 'No funcionó. Verifique la dirección e inténtelo de nuevo.',
         spam: 'Sin spam. Leo cada mensaje y respondo personalmente.',
         planText: '¿Listo para hacerlo realidad? Confirmo los horarios de salida, organizo acceso a campos de socios y construyo el viaje alrededor de su golf.',
         planCta: 'Pedirme que planifique este viaje',

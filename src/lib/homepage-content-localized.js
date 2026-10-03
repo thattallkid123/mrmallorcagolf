@@ -68,7 +68,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "title": "Estoy organizando un viaje de golf",
           "text": "Déjeme gestionar la planificación: campos según su grupo, base, rutas, tee times, buggies y reservas, todo resuelto antes de que llegue.",
-          "cta": "Plan Your Trip"
+          "cta": "Planifique su viaje"
         },
         {
           "title": "Estoy comparando campos",
@@ -704,7 +704,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "title": "Je prépare un voyage de golf",
           "text": "Laissez-moi gérer la planification : parcours adaptés à votre groupe, base, itinéraire, heures de départ, voiturettes et réservations, tout est prêt avant votre arrivée.",
-          "cta": "Plan Your Trip"
+          "cta": "Planifiez votre voyage"
         },
         {
           "title": "Je compare les parcours",
@@ -898,7 +898,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "Vous cherchez quelque chose de plus ambitieux ?",
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
-        "body": "Signature Day - une journée de golf privée avec Andy, John Brazier, des transferts privés et une soirée coordonnée. Tarif adapte a la journée.",
+        "body": "Signature Day - une journée de golf privée avec Andy, John Brazier, des transferts privés et une soirée coordonnée. Tarif adapté à la journée.",
         "cta": "Demander un séjour sur plusieurs jours",
         "href": "/fr/contact",
         "detail": "À partir de 2 000 €. Envoyez-moi vos dates et je vous proposerai une version adaptée.",
@@ -1021,7 +1021,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "title": "Ik plan een golfreis",
           "text": "Laat mij de planning overnemen: banen passend bij uw groep, accommodatielocatie, routing, starttijden, buggies en boekingen, alles geregeld voordat u aankomt.",
-          "cta": "Plan Your Trip"
+          "cta": "Plan uw reis"
         },
         {
           "title": "Ik vergelijk banen",
@@ -1338,7 +1338,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "title": "Jag planerar en golfresa",
           "text": "Låt mig sköta planeringen: banor matchade efter din grupp, boendeplats, rutt, starttider, vagnar och bokningar, allt ordnat innan du anländer.",
-          "cta": "Plan Your Trip"
+          "cta": "Planera din resa"
         },
         {
           "title": "Jag jämför banor",

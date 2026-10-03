@@ -35,7 +35,7 @@ const content = {
         "caption": "Son Gual. A 11 km de Palma. Se siente bastante más lejos cuando entra el viento en el primer tee."
       },
       {
-        "text": "Son Gual es el campo que más juego en Mallorca y el que recomiendo con más frecuencia cuando los clientes me preguntan donde jugar. Quiero ser honesto sobre por que, y también sobre lo que lo hace difícil. Si reserva esperando un día relajado, le puede sorprender. Si también valora Alcanada o Son Muntaner, lea esas reseñas antes de decidir."
+        "text": "Son Gual es el campo que más juego en Mallorca y el que recomiendo con más frecuencia cuando los clientes me preguntan dónde jugar. Quiero ser honesto sobre por que, y también sobre lo que lo hace difícil. Si reserva esperando un día relajado, le puede sorprender. Si también valora Alcanada o Son Muntaner, lea esas reseñas antes de decidir."
       },
       {
         "text": "Respuesta rápida: merece la pena reservar Son Gual?"
@@ -50,10 +50,10 @@ const content = {
         "text": "El primer tee"
       },
       {
-        "text": "La primera vez que jugué Son Gual estaba en los tees negros, con viento fuerte desde la izquierda, junto a un amigo Profesional PGA que juega y puntua muy bien. También había una camara grabando para un vlog. Eso añade presión. Estaba algo nervioso."
+        "text": "La primera vez que jugué Son Gual estaba en los tees negros, con viento fuerte desde la izquierda, junto a un amigo Profesional PGA que juega y puntua muy bien. También había una cámara grabando para un vlog. Eso añade presión. Estaba algo nervioso."
       },
       {
-        "text": "El drive salió un poco de talon. Aun así volo más de lo esperado y evito los bunkers, por poco. En Son Gual hay muchos bunkers, colocados justo donde acaban los golpes un poco mal pegados. Tienes que tener en cuenta viento, desniveles, contacto irregular y esos bunkers parecen crecer cuanto más los miras."
+        "text": "El drive salió un poco de talon. Aun así voló más de lo esperado y evito los bunkers, por poco. En Son Gual hay muchos bunkers, colocados justo donde acaban los golpes un poco mal pegados. Tienes que tener en cuenta viento, desniveles, contacto irregular y esos bunkers parecen crecer cuanto más los miras."
       },
       {
         "caption": "Son Gual tiene muchos bunkers. Están justo donde acaban los golpes ligeramente fallados."
@@ -71,13 +71,13 @@ const content = {
         "text": "Los greens"
       },
       {
-        "text": "Rápidos, elevados e implacables con las malas aproximaciones. En enero, los greens y antegreens estaban tan rapados que llamaban la atención para esa época del ano. Bueno para generar spin, incomodo cuando tienes un chip tenso con poca zona de aterrizaje."
+        "text": "Rápidos, elevados e implacables con las malas aproximaciones. En enero, los greens y antegreens estaban tan rapados que llamaban la atención para esa época del año. Bueno para generar spin, incomodo cuando tienes un chip tenso con poca zona de aterrizaje."
       },
       {
-        "text": "Uno de mis companeros ese día, un alumno de Shanghai, pego un pequeño draw al green del 4. La bola cayo a pocos metros de la bandera y aun así rodo por detrás. Eso pasa mucho aquí. Un golpe decente no siempre significa un buen resultado."
+        "text": "Uno de mis compañeros ese día, un alumno de Shanghai, pego un pequeño draw al green del 4. La bola cayo a pocos metros de la bandera y aun así rodó por detrás. Eso pasa mucho aquí. Un golpe decente no siempre significa un buen resultado."
       },
       {
-        "caption": "El green del 4. La bola sigue moviendose después de aterrizar."
+        "caption": "El green del 4. La bola sigue moviéndose después de aterrizar."
       },
       {
         "text": "El campo"
@@ -127,13 +127,13 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "El precio público de 18 hoyos suele moverse entre 115 € y 165 €. Las ventanas de mantenimiento de enero pueden bajar más, pero no deberian tomarse como referencia honesta de precio. Primavera y otoño, en su punto más alto, llegan a 165 €, y el precio estandar de verano suele quedar bien por encima de esa antigua tarifa de mantenimiento."
+        "text": "El precio público de 18 hoyos suele moverse entre 115 € y 165 €. Las ventanas de mantenimiento de enero pueden bajar más, pero no deberían tomarse como referencia honesta de precio. Primavera y otoño, en su punto más alto, llegan a 165 €, y el precio estándar de verano suele quedar bien por encima de esa antigua tarifa de mantenimiento."
       },
       {
-        "text": "Alquiler de palos en la tienda: Callaway 35 €, Titleist 45 € por vuelta. Buggy 45 €, trolley eléctrico desde 15 €. Se requiere handicap WHS válido."
+        "text": "Alquiler de palos en la tienda: Callaway 35 €, Titleist 45 € por vuelta. Buggy 45 €, trolley eléctrico desde 15 €. Se requiere hándicap WHS válido."
       },
       {
-        "title": "Cuatro cosas que yo sabria antes de reservar Son Gual",
+        "title": "Cuatro cosas que yo sabría antes de reservar Son Gual",
         "items": [
           [
             "Mejor hora de salida",
@@ -141,7 +141,7 @@ const content = {
           ],
           [
             "Consejo con el viento",
-            "Si hay aunque sea un poco de brisa, preste atención al tramo expuesto del medio. Es uno de los pocos campos de Mallorca donde fallar medio palo puede dejarle justo en la parte equivocada del green, y desde ahi dos putts son duros."
+            "Si hay aunque sea un poco de brisa, preste atención al tramo expuesto del medio. Es uno de los pocos campos de Mallorca donde fallar medio palo puede dejarle justo en la parte equivocada del green, y desde ahí dos putts son duros."
           ],
           [
             "Donde suelen perder golpes los visitantes",
@@ -157,7 +157,7 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "text": "Son Gual es mi campo favorito en Mallorca. El mantenimiento es fuerte, el diseño está bien pensado y el campo obliga a tomar buenas decisiones desde el primer tee. No lo venderia como una ronda fácil de vacaciones. Si quiere buenas condiciones, greens serios y un campo que le examine de verdad, debería jugarlo. Si Son Gual forma parte de un viaje más largo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios de salida, logística y como encajar otros campos."
+        "text": "Son Gual es mi campo favorito en Mallorca. El mantenimiento es fuerte, el diseño está bien pensado y el campo obliga a tomar buenas decisiones desde el primer tee. No lo vendería como una ronda fácil de vacaciones. Si quiere buenas condiciones, greens serios y un campo que le examine de verdad, debería jugarlo. Si Son Gual forma parte de un viaje más largo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios de salida, logística y como encajar otros campos."
       },
       {
         "text": "Preguntas frecuentes"
@@ -316,7 +316,7 @@ const content = {
           ],
           [
             "Wo Besucher Schläge verlieren",
-            "Die meisten Schlagverluste beginnen mit einer leicht schlechten Position vom Tee, einem Ball in einem der grossen Bunker und danach einem kurzen Spiel von der falschen Seite rund um diese erhöhten Grüns."
+            "Die meisten Schlagverluste beginnen mit einer leicht schlechten Position vom Tee, einem Ball in einem der großen Bunker und danach einem kurzen Spiel von der falschen Seite rund um diese erhöhten Grüns."
           ],
           [
             "Clubhaus-Tipp",
@@ -328,7 +328,7 @@ const content = {
         "text": "Fazit"
       },
       {
-        "text": "Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich würde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen. Wenn Son Gual Teil einer langeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Tee Times, Logistik und die Kombination mit anderen Plätzen ab."
+        "text": "Son Gual ist mein Lieblingsplatz auf Mallorca. Der Pflegezustand ist stark, das Design ist klug, und der Platz verlangt vom ersten Abschlag an saubere Entscheidungen. Ich würde ihn nicht als einfache Urlaubsrunde verkaufen. Wer gute Konditionen, starke Greens und einen Platz will, der einen wirklich testet, sollte ihn spielen. Wenn Son Gual Teil einer längeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Tee Times, Logistik und die Kombination mit anderen Plätzen ab."
       },
       {
         "text": "Häufige Fragen"
@@ -360,15 +360,15 @@ const content = {
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Combien coûte le golf a Majorque ?"
+          "title": "Combien coûte le golf à Majorque ?"
         },
         {
           "slug": "best-time-play-golf-mallorca",
-          "title": "La meilleure période pour jouer au golf a Majorque"
+          "title": "La meilleure période pour jouer au golf à Majorque"
         },
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "Les meilleurs parcours de golf a Majorque 2026"
+          "title": "Les meilleurs parcours de golf à Majorque 2026"
         }
       ]
     },
@@ -377,13 +377,13 @@ const content = {
         "caption": "Son Gual. A 11 km de Palma. Il paraît beaucoup plus loin quand le vent se leve au départ du 1."
       },
       {
-        "text": "Son Gual est le parcours que je joue le plus a Majorque et celui que je recommande le plus souvent quand les clients me demandent ou jouer. Je veux expliquer pourquoi, mais aussi dire clairement ce qui le rend difficile. Si vous reservez en pensant passer une journée tranquille, vous pouvez être surpris. Si vous hesitez aussi avec Alcanada ou Son Muntaner, lisez ces avis avant de choisir."
+        "text": "Son Gual est le parcours que je joue le plus à Majorque et celui que je recommande le plus souvent quand les clients me demandent ou jouer. Je veux expliquer pourquoi, mais aussi dire clairement ce qui le rend difficile. Si vous réservez en pensant passer une journée tranquille, vous pouvez être surpris. Si vous hésitez aussi avec Alcanada ou Son Muntaner, lisez ces avis avant de choisir."
       },
       {
         "text": "Réponse rapide : faut-il réserver Son Gual ?"
       },
       {
-        "text": "Son Gual convient si le parcours correspond a votre groupe, a votre niveau et au type de journée de golf recherche. Les détails ci-dessous montrent ses forces et les points de vigilance."
+        "text": "Son Gual convient si le parcours correspond à votre groupe, à votre niveau et au type de journée de golf recherche. Les détails ci-dessous montrent ses forces et les points de vigilance."
       },
       {
         "caption": "Une journée en groupe en janvier. En Angleterre, les parcours sont fermés. Ici, les fairways ressemblent à ça."
@@ -392,10 +392,10 @@ const content = {
         "text": "Le premier tee"
       },
       {
-        "text": "La première fois que j'ai joue Son Gual, j'étais sur les départs noirs. Le vent venait fort de la gauche, je jouais avec un ami professionnel PGA qui score très bien, et la camera tournait pour un vlog. Cela ajoute sa propre pression. J'étais un peu nerveux."
+        "text": "La première fois que j'ai joue Son Gual, j'étais sur les départs noirs. Le vent venait fort de la gauche, je jouais avec un ami professionnel PGA qui score très bien, et la caméra tournait pour un vlog. Cela ajoute sa propre pression. J'étais un peu nerveux."
       },
       {
-        "text": "Le drive est parti légèrement du talon. Il a quand même vole plus loin que prévu et a evite les bunkers, de peu. A Son Gual, les bunkers sont nombreux, places exactement la ou les coups légèrement manques finissent. Vous devez gérer le vent, les deniveles, les contacts irreguliers, et plus vous les regardez, plus les bunkers semblent grands."
+        "text": "Le drive est parti légèrement du talon. Il a quand même vole plus loin que prévu et a évite les bunkers, de peu. A Son Gual, les bunkers sont nombreux, places exactement la ou les coups légèrement manques finissent. Vous devez gérer le vent, les deniveles, les contacts irréguliers, et plus vous les regardez, plus les bunkers semblent grands."
       },
       {
         "caption": "Son Gual compte beaucoup de bunkers. Ils sont places exactement la ou finissent les coups un peu rates."
@@ -404,7 +404,7 @@ const content = {
         "text": "Le vent"
       },
       {
-        "text": "Son Gual semble avoir son propre ecosysteme. Je pars de chez moi dans le sud-ouest de l'île par un matin calme et j'arrive au premier tee avec un vrai vent. Et il reste quatre heures. Vent dans le dos, c'est un plaisir. Face au vent, sur un long par 4 qui devient soudain très long, c'est autre chose."
+        "text": "Son Gual semble avoir son propre écosystème. Je pars de chez moi dans le sud-ouest de l'île par un matin calme et j'arrive au premier tee avec un vrai vent. Et il reste quatre heures. Vent dans le dos, c'est un plaisir. Face au vent, sur un long par 4 qui devient soudain très long, c'est autre chose."
       },
       {
         "caption": "Il y a suffisamment de trous où le driver sort. Avec le vent dans le dos, c'est aussi bien que ça peut être. Sans lui, on planifie autrement."
@@ -416,7 +416,7 @@ const content = {
         "text": "Rapides, surélevés et sans pardon pour les mauvaises attaques. En janvier, les greens et les avant-greens étaient tondus très court, remarquable pour la saison. Bon pour produire du spin, moins confortable quand il faut jouer un chip serre avec une petite zone de réception."
       },
       {
-        "text": "Un de mes partenaires ce jour-la, un élevé venu de Shanghai, a joue un petit draw vers le green du 4. La balle est tombee a quelques mètres du drapeau et a quand même roule derrière. Cela arrive souvent ici. Un coup correct ne donne pas toujours un bon score."
+        "text": "Un de mes partenaires ce jour-la, un élevé venu de Shanghai, a joue un petit draw vers le green du 4. La balle est tombée à quelques mètres du drapeau et a quand même roule derrière. Cela arrive souvent ici. Un coup correct ne donne pas toujours un bon score."
       },
       {
         "caption": "Le green du 4. La balle continue de rouler après avoir atterri."
@@ -425,7 +425,7 @@ const content = {
         "text": "Le parcours"
       },
       {
-        "text": "Le dessin de Thomas Himmel en 2007 utilise intelligemment les deniveles. Le trou 2 possède l'un des plus grands bunkers d'Europe. La sequence finale du 15 au 18 fait partie des meilleurs finishs que j'ai joues a Majorque."
+        "text": "Le dessin de Thomas Himmel en 2007 utilise intelligemment les deniveles. Le trou 2 possède l'un des plus grands bunkers d'Europe. La séquence finale du 15 au 18 fait partie des meilleurs finishs que j'ai joues à Majorque."
       },
       {
         "caption": "Le final. Ici, le parcours demande de rester concentre jusqu au bout."
@@ -440,7 +440,7 @@ const content = {
         "text": "Visiteurs connus"
       },
       {
-        "text": "Rafa Nadal joue ici régulièrement et a dit que c'était son parcours prefere a Majorque. Barack Obama y a joue en novembre 2024. D'habitude, ces noms ne changent pas grand-chose pour moi, mais ils disent quelque chose sur la place de Son Gual sur l'île."
+        "text": "Rafa Nadal joue ici régulièrement et a dit que c'était son parcours préfère à Majorque. Barack Obama y a joue en novembre 2024. D'habitude, ces noms ne changent pas grand-chose pour moi, mais ils disent quelque chose sur la place de Son Gual sur l'île."
       },
       {
         "caption": "Le départ du 10, juste devant le clubhouse. Le par 4 s ouvre devant vous."
@@ -469,25 +469,25 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "Le tarif public 18 trous se situe généralement entre 115 € et 165 €. Les fenetres d'entretien de janvier peuvent être moins chères, mais ce n'est pas un tarif de comparaison honnête. Le printemps et l'automne atteignent 165 € au plus haut, et le tarif d'été standard reste généralement bien au-dessus de cet ancien tarif d'entretien."
+        "text": "Le tarif public 18 trous se situe généralement entre 115 € et 165 €. Les fenêtres d'entretien de janvier peuvent être moins chères, mais ce n'est pas un tarif de comparaison honnête. Le printemps et l'automne atteignent 165 € au plus haut, et le tarif d'été standard reste généralement bien au-dessus de cet ancien tarif d'entretien."
       },
       {
-        "text": "Location de clubs au proshop : Callaway 35 €, Titleist 45 € par partie. Buggy 45 €, chariot electrique a partir de 15 €. Un justificatif WHS valide est demande."
+        "text": "Location de clubs au proshop : Callaway 35 €, Titleist 45 € par partie. Buggy 45 €, chariot électrique à partir de 15 €. Un justificatif WHS valide est demandé."
       },
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Son Gual",
         "items": [
           [
             "Meilleur départ",
-            "Tot le matin ou en fin d après-midi. Son Gual paraît plus calme quand on voit Palma au loin et que le parcours est tranquille. C est aussi la que la lumière est la meilleure sur toute la propriété."
+            "Tôt le matin ou en fin d après-midi. Son Gual paraît plus calme quand on voit Palma au loin et que le parcours est tranquille. C est aussi la que la lumière est la meilleure sur toute la propriété."
           ],
           [
             "Conseil vent",
-            "S il y a même un peu de vent, faites attention a la partie exposee du milieu. C est l un des rares parcours de Majorque ou une demi-can ne de moins peut vous laisser exactement sur la mauvaise partie du green, et de la deux putts deviennent difficiles."
+            "S il y a même un peu de vent, faites attention à la partie exposée du milieu. C est l un des rares parcours de Majorque ou une demi-can ne de moins peut vous laisser exactement sur la mauvaise partie du green, et de la deux putts deviennent difficiles."
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "La plupart des coups perdus commencent par une position légèrement mauvaise au départ, une balle dans un des grands bunkers, puis un petit jeu très delicat autour de ces greens surélevés."
+            "La plupart des coups perdus commencent par une position légèrement mauvaise au départ, une balle dans un des grands bunkers, puis un petit jeu très délicat autour de ces greens surélevés."
           ],
           [
             "Conseil clubhouse",
@@ -499,16 +499,16 @@ const content = {
         "text": "Verdict"
       },
       {
-        "text": "Son Gual est mon parcours prefere a Majorque. L'entretien est fort, le dessin est intelligent, et le parcours oblige a prendre de bonnes décisions des le premier tee. Je ne le presenterais pas comme une partie de vacances facile. Si vous voulez de bonnes conditions, des greens sérieux et un parcours qui vous teste vraiment, jouez-le. Si Son Gual s'intégré dans un voyage plus long, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre les heures de départ, la logistique et comment combiner d'autres parcours."
+        "text": "Son Gual est mon parcours préfère à Majorque. L'entretien est fort, le dessin est intelligent, et le parcours oblige à prendre de bonnes décisions des le premier tee. Je ne le présenterais pas comme une partie de vacances facile. Si vous voulez de bonnes conditions, des greens sérieux et un parcours qui vous teste vraiment, jouez-le. Si Son Gual s'intégré dans un voyage plus long, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre les heures de départ, la logistique et comment combiner d'autres parcours."
       },
       {
         "text": "Questions fréquentes"
       },
       {
-        "text": "Avant de réserver, pensez a l'heure de départ, au vent, au rythme et au niveau du groupe. Reservez tôt, choisissez les bons départs et gardez du temps après la partie."
+        "text": "Avant de réserver, pensez à l'heure de départ, au vent, au rythme et au niveau du groupe. Réservez tôt, choisissez les bons départs et gardez du temps après la partie."
       },
       {
-        "text": "J'emmène régulièrement des clients a Son Gual. Voulez-vous le jouer avec quelqu'un qui connait chaque trou ?",
+        "text": "J'emmène régulièrement des clients à Son Gual. Voulez-vous le jouer avec quelqu'un qui connait chaque trou ?",
         "linkLabel": "Voir le jour de golf avec Pro"
       }
     ]
@@ -719,13 +719,13 @@ const content = {
         "caption": "Son Gual. 11 km från Palma. Det känns betydligt laengre bort när vinden tar tag på första tee."
       },
       {
-        "text": "Son Gual är den bana jag spelar mest på Mallorca och den jag oftast rekommenderar när kunder fragar var de ska spela. Jag vill vara ärlig med varför, och lika ärlig med vad som gör den svar. Den som bokar och forvantar sig en lugn semesterrunda kan bli overaskad. Om du också funderar på Alcanada eller Son Muntaner, las de recensionerna innan du bestammer dig."
+        "text": "Son Gual är den bana jag spelar mest på Mallorca och den jag oftast rekommenderar när kunder frågar var de ska spela. Jag vill vara ärlig med varför, och lika ärlig med vad som gör den svår. Den som bokar och förväntar sig en lugn semesterrunda kan bli overaskad. Om du också funderar på Alcanada eller Son Muntaner, las de recensionerna innan du bestämmer dig."
       },
       {
         "text": "Snabbt svar: ska du boka Son Gual?"
       },
       {
-        "text": "Son Gual passar om banan matchar gruppen, spelstyrkan och den typ av golfdag du vill ha. Detaljerna nedan visar var den är stark och var besökare bor vara forsiktiga."
+        "text": "Son Gual passar om banan matchar gruppen, spelstyrkan och den typ av golfdag du vill ha. Detaljerna nedan visar var den är stark och var besökare bor vara försiktiga."
       },
       {
         "caption": "En gruppdag i januari. I England är banorna stängda. Här ser fairways ut så här."
@@ -734,10 +734,10 @@ const content = {
         "text": "Första tee"
       },
       {
-        "text": "Första gangen jag spelade Son Gual stöd jag på svart tee. Vinden kom hårt från vänster, jag spelade med en PGA Professional-van som spelar och scorar bra, och kameran rullade för en vlogg. Det lagger till sin egen press. Jag var lite nervos."
+        "text": "Första gången jag spelade Son Gual stöd jag på svart tee. Vinden kom hårt från vänster, jag spelade med en PGA Professional-van som spelar och scorar bra, och kameran rullade för en vlogg. Det lägger till sin egen press. Jag var lite nervös."
       },
       {
-        "text": "Driven kom lite ur hålen. Den flog ändå laengre an väntat och undvek bunkrarna, precis. Det finns många bunkrar på Son Gual, placerade där lätt missade slag hamnar. Du räknar med vind, höjdskillnader och ojamt bolltraff, och bunkrarna verkar vaxa ju laengre du tittar på dem."
+        "text": "Driven kom lite ur hålen. Den flog ändå laengre an väntat och undvek bunkrarna, precis. Det finns många bunkrar på Son Gual, placerade där lätt missade slag hamnar. Du räknar med vind, höjdskillnader och ojamt bolltraff, och bunkrarna verkar växa ju laengre du tittar på dem."
       },
       {
         "caption": "Son Gual har många bunkrar. De ligger precis där små missar brukar hamna."
@@ -746,7 +746,7 @@ const content = {
         "text": "Vinden"
       },
       {
-        "text": "Son Gual verkar leva i sitt eget ekosystem. Jag lamnar huset i sydväst en lugn morgon och kommer till första tee där det blaser ordentligt. Och det fortsätter i fyra timmar. Medvind är en njutning. Motvind på en lång par 4 som plotsligt blir väldigt lång är något annat."
+        "text": "Son Gual verkar leva i sitt eget ekosystem. Jag lämnar huset i sydväst en lugn morgon och kommer till första tee där det blåser ordentligt. Och det fortsätter i fyra timmar. Medvind är en njutning. Motvind på en lång par 4 som plötsligt blir väldigt lång är något annat."
       },
       {
         "caption": "Det finns tillräckligt med hål där drivern kommer fram. Med vinden i ryggen är det så bra det kan bli. Utan den planerar man annorlunda."
@@ -755,7 +755,7 @@ const content = {
         "text": "Greenerna"
       },
       {
-        "text": "Snabba, upphöjda och harda mot daliga inspel. I januari var greener och foregreens så kortklippta att det stack ut för arstiden. Bra för spinn, obekvamt när man star med en tajt chip och liten landningsyta."
+        "text": "Snabba, upphöjda och hårda mot dåliga inspel. I januari var greener och foregreens så kortklippta att det stack ut för årstiden. Bra för spinn, obekvämt när man står med en tajt chip och liten landningsyta."
       },
       {
         "text": "En av mina spelpartners den dagen, en elev från Shanghai, slog en liten draw in mot green på hål 4. Bollen landade bara några meter från flaggan och rullade ändå över bakkanten. Det händer ofta har. Ett okej slag betyder inte automatiskt ett bra resultat."
@@ -767,7 +767,7 @@ const content = {
         "text": "Banan"
       },
       {
-        "text": "Thomas Himmels design från 2007 använder hojdskillnaderna smart. Hål 2 har en av Europas storsta bunkrar. Avslutningen från 15 till 18 är en av de bästa jag har spelat på Mallorca."
+        "text": "Thomas Himmels design från 2007 använder hojdskillnaderna smart. Hål 2 har en av Europas största bunkrar. Avslutningen från 15 till 18 är en av de bästa jag har spelat på Mallorca."
       },
       {
         "caption": "Avslutningen. Har kräver banan fokus hela vägen in."
@@ -782,7 +782,7 @@ const content = {
         "text": "Kanda besökare"
       },
       {
-        "text": "Rafa Nadal spelar har regelbundet och har sagt att det är hans favoritbana på Mallorca. Barack Obama spelade har i november 2024. Sadana namn är normalt inte avgorande för mig, men de sager något om Son Guals position på ön."
+        "text": "Rafa Nadal spelar har regelbundet och har sagt att det är hans favoritbana på Mallorca. Barack Obama spelade har i november 2024. Sadana namn är normalt inte avgörande för mig, men de säger något om Son Guals position på ön."
       },
       {
         "caption": "Tee på hål 10, precis framför klubbhuset. Par 4:an ligger framför dig."
@@ -811,7 +811,7 @@ const content = {
         "text": "Greenfee 2026"
       },
       {
-        "text": "Publikt pris för 18 hål ligger normalt mellan 115 € och 165 €. Underhallsfonster i januari kan vara billigare, men det bor inte anvandas som en ärlig jamforelseprissattning. Var och host när som högst 165 €, och det vanliga sommarpriset ligger oftast en bit över det gamla underhallspriset."
+        "text": "Publikt pris för 18 hål ligger normalt mellan 115 € och 165 €. Underhallsfonster i januari kan vara billigare, men det bor inte användas som en ärlig jamforelseprissattning. Var och höst när som högst 165 €, och det vanliga sommarpriset ligger oftast en bit över det gamla underhallspriset."
       },
       {
         "text": "Klubbhyra i proshoppen: Callaway 35 €, Titleist 45 € per rond. Buggy 45 €, elvagn från 15 €. Giltigt WHS-handicapbevis krävs."
@@ -821,15 +821,15 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Tidigt på morgonen eller sent på eftermiddagen. Son Gual känns lugnt när man ser ut över Palma och banan är stilla. Ljuset över anlaggningen är också som bäst då."
+            "Tidigt på morgonen eller sent på eftermiddagen. Son Gual känns lugnt när man ser ut över Palma och banan är stilla. Ljuset över anläggningen är också som bäst då."
           ],
           [
             "Vindtips",
-            "Om det ens finns en liten bris, hall koll på den öppna mittdelen. Det har är en av få banor på Mallorca där en halv klubba fel kan lämna dig exakt på fel del av greenen, och darifran är två puttar svara."
+            "Om det ens finns en liten bris, håll koll på den öppna mittdelen. Det har är en av få banor på Mallorca där en halv klubba fel kan lämna dig exakt på fel del av greenen, och därifrån är två puttar svåra."
           ],
           [
             "Där besökare tappar slag",
-            "De flesta tappade slagen borjar med en lite dalig position från tee, en boll i en av de stora bunkrarna och sedan ett riktigt knepigt narspel runt de upphöjda greenerna."
+            "De flesta tappade slagen börjar med en lite dålig position från tee, en boll i en av de stora bunkrarna och sedan ett riktigt knepigt narspel runt de upphöjda greenerna."
           ],
           [
             "Klubbhustips",
@@ -841,13 +841,13 @@ const content = {
         "text": "Omdöme"
       },
       {
-        "text": "Son Gual är min favoritbana på Mallorca. Skicket är starkt, designen är smart, och banan kräver bra beslut från första tee. Jag skulle inte salja den som en enkel semesterrunda. Vill du ha bra forhallanden, seriösa greener och en bana som verkligen testar dig, ska du spela den. Om Son Gual är en del av en laengre resa täcker <a href=\"/plan-your-trip\">reseplaneringsguiden</a> starttider, logistik och hur du kombinerar andra banor."
+        "text": "Son Gual är min favoritbana på Mallorca. Skicket är starkt, designen är smart, och banan kräver bra beslut från första tee. Jag skulle inte sälja den som en enkel semesterrunda. Vill du ha bra förhållanden, seriösa greener och en bana som verkligen testar dig, ska du spela den. Om Son Gual är en del av en laengre resa täcker <a href=\"/plan-your-trip\">reseplaneringsguiden</a> starttider, logistik och hur du kombinerar andra banor."
       },
       {
         "text": "Vanliga frågor"
       },
       {
-        "text": "Innan du bokar, tank på starttid, vind, tempo och om banan passar gruppen. Boka tidigt, välj rimliga tees och lämna tid efter ronden."
+        "text": "Innan du bokar, tänk på starttid, vind, tempo och om banan passar gruppen. Boka tidigt, välj rimliga tees och lämna tid efter ronden."
       },
       {
         "text": "Jag tar regelbundet klienter till Son Gual. Vill du spela den med någon som kan varje hål?",

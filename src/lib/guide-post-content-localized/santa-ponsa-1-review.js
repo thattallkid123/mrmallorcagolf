@@ -109,13 +109,13 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "Se requiere un handicap WHS válido al reservar; el alquiler de buggy cuesta 43 € por 18 hoyos. Santa Ponsa 1 es ideal para golfistas con confianza que quieren disfrutar del driver en calles anchas, y funciona bien como vuelta más fácil al principio de un viaje antes de un campo más exigente como Son Gual o Golf de Andratx. Lo que sorprende a los visitantes: en un día tranquilo el campo favorece el juego, pero con viento los pares 3 largos y el hoyo 10 de 590 metros hacen valer cada metro de su longitud. La mejor hora de salida es temprano, antes de que llegue la habitual brisa de media mañana."
+        "text": "Se requiere un hándicap WHS válido al reservar; el alquiler de buggy cuesta 43 € por 18 hoyos. Santa Ponsa 1 es ideal para golfistas con confianza que quieren disfrutar del driver en calles anchas, y funciona bien como vuelta más fácil al principio de un viaje antes de un campo más exigente como Son Gual o Golf de Andratx. Lo que sorprende a los visitantes: en un día tranquilo el campo favorece el juego, pero con viento los pares 3 largos y el hoyo 10 de 590 metros hacen valer cada metro de su longitud. La mejor hora de salida es temprano, antes de que llegue la habitual brisa de media mañana."
       },
       {
         "text": "Veredicto"
       },
       {
-        "title": "Cuatro cosas que yo sabria antes de reservar Santa Ponsa 1",
+        "title": "Cuatro cosas que yo sabría antes de reservar Santa Ponsa 1",
         "items": [
           [
             "Mejor hora de salida",
@@ -127,7 +127,7 @@ const content = {
           ],
           [
             "Donde suelen perder golpes los visitantes",
-            "Muchos visitantes disfrutan de las calles anchas, se confian con el driver y luego pierden golpes por atacar objetivos pequeños con demasiada agresividad desde buenas posiciones y dejarse chips incómodos."
+            "Muchos visitantes disfrutan de las calles anchas, se confían con el driver y luego pierden golpes por atacar objetivos pequeños con demasiada agresividad desde buenas posiciones y dejarse chips incómodos."
           ],
           [
             "Consejo de casa club",
@@ -310,11 +310,11 @@ const content = {
         },
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "Les meilleurs parcours de golf a Majorque 2026"
+          "title": "Les meilleurs parcours de golf à Majorque 2026"
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Combien coûte le golf a Majorque ?"
+          "title": "Combien coûte le golf à Majorque ?"
         }
       ]
     },
@@ -409,11 +409,11 @@ const content = {
           ],
           [
             "Conseil vent",
-            "Quand le vent arrive, il touche surtout les longs par 3 et le trou 10. Prenez assez de club et considerez le yardage de la carte comme un point de départ, pas comme la réponse definitive."
+            "Quand le vent arrive, il touche surtout les longs par 3 et le trou 10. Prenez assez de club et considérez le yardage de la carte comme un point de départ, pas comme la réponse définitive."
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "Beaucoup de visiteurs profitent des fairways larges, prennent trop confiance avec le driver, puis perdent des coups en attaquant des cibles petites trop agressivement depuis de bonnes positions et en se laissant des chips delicats."
+            "Beaucoup de visiteurs profitent des fairways larges, prennent trop confiance avec le driver, puis perdent des coups en attaquant des cibles petites trop agressivement depuis de bonnes positions et en se laissant des chips délicats."
           ],
           [
             "Conseil clubhouse",
@@ -693,7 +693,7 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Ju tidigare desto bättre om du kan få en tid. Banan är bekvamare innan den vanliga brisen kommer, och de långa hålen känns betydligt snallare tidigt på dagen."
+            "Ju tidigare desto bättre om du kan få en tid. Banan är bekvämare innan den vanliga brisen kommer, och de långa hålen känns betydligt snällare tidigt på dagen."
           ],
           [
             "Vindtips",
@@ -701,11 +701,11 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Många besökare gillar de breda fairwaysen, blir för sjalvsakra med drivern och tappar sedan slag genom att attackera små mål för aggressivt från bra lagen och lämna sig knepiga chippar."
+            "Många besökare gillar de breda fairwaysen, blir för självsäkra med drivern och tappar sedan slag genom att attackera små mål för aggressivt från bra lagen och lämna sig knepiga chippar."
           ],
           [
             "Klubbhustips",
-            "Det har är en bra sjalvfortroendebana, om drivern fungerar, innan ett tuffare test senare. Om resan också innehaller Son Gual eller Andratx passar Santa Ponsa 1 bra tidigare i veckan."
+            "Det har är en bra sjalvfortroendebana, om drivern fungerar, innan ett tuffare test senare. Om resan också innehåller Son Gual eller Andratx passar Santa Ponsa 1 bra tidigare i veckan."
           ]
         ]
       },

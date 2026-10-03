@@ -179,7 +179,7 @@ export const GOLF_DAY_BUILDER_T = {
       eyebrow: 'Su plan personalizado',
       title: 'Su día de golf, de tres formas',
       builtFor: 'Diseñado para',
-      staying: 'alojándote',
+      staying: 'alojándose',
       courseChosen: 'Campo elegido:',
       whyCard: 'Por qué este día le conviene',
       andyCard: 'Lo que gestiono yo cuando reserva a través de Mr Mallorca Golf',

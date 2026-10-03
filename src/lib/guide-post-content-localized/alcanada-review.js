@@ -124,7 +124,7 @@ const content = {
         "text": "Ubicación: Port d'Alcúdia, a unos 50 minutos al norte de Palma. Merece la pena ir con tiempo y no salir corriendo al acabar."
       },
       {
-        "title": "Cuatro cosas que yo sabria antes de reservar Alcanada",
+        "title": "Cuatro cosas que yo sabría antes de reservar Alcanada",
         "items": [
           [
             "Mejor hora de salida",
@@ -311,7 +311,7 @@ const content = {
           ],
           [
             "Clubhaus-Tipp",
-            "Planen Sie Zeit für ein Mittagessen auf der Terrasse ein. Das Essen ist sehr gut, die grosse Terrasse schaut auf den Leuchtturm, und sie verlangert einen ohnehin guten Golftag."
+            "Planen Sie Zeit für ein Mittagessen auf der Terrasse ein. Das Essen ist sehr gut, die große Terrasse schaut auf den Leuchtturm, und sie verlängert einen ohnehin guten Golftag."
           ]
         ]
       },
@@ -356,7 +356,7 @@ const content = {
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "Les meilleurs parcours de golf a Majorque 2026"
+          "title": "Les meilleurs parcours de golf à Majorque 2026"
         },
         {
           "slug": "son-gual-review",
@@ -364,11 +364,11 @@ const content = {
         },
         {
           "slug": "golf-trip-planning-mallorca",
-          "title": "Planifier un voyage de golf a Majorque"
+          "title": "Planifier un voyage de golf à Majorque"
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Combien coûte le golf a Majorque ?"
+          "title": "Combien coûte le golf à Majorque ?"
         }
       ]
     },
@@ -470,7 +470,7 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Le matin est idéal ici. La lumière est la meilleure et la brise cotiere est en général la plus douce."
+            "Le matin est idéal ici. La lumière est la meilleure et la brise côtière est en général la plus douce."
           ],
           [
             "Conseil vent",
@@ -478,11 +478,11 @@ const content = {
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "La vue peut faire paraitre le départ plus simple qu il ne l est. Choisissez d abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous a des greens rapides avec très peu de putts faciles."
+            "La vue peut faire paraître le départ plus simple qu il ne l est. Choisissez d abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous a des greens rapides avec très peu de putts faciles."
           ],
           [
             "Conseil clubhouse",
-            "Gardez du temps pour dejeuner sur la terrasse. La cuisine est très bonne, la grande terrasse regarde le phare, et elle prolonge une très bonne journée."
+            "Gardez du temps pour déjeuner sur la terrasse. La cuisine est très bonne, la grande terrasse regarde le phare, et elle prolonge une très bonne journée."
           ]
         ]
       },
@@ -814,15 +814,15 @@ const content = {
           ],
           [
             "Vindtips",
-            "Respektera de öppna hålen. Havsluften kan få ett bekvamt avstand att plotsligt spela en klubba laengre, särskilt när du spelar i motvind på back nine."
+            "Respektera de öppna hålen. Havsluften kan få ett bekvämt avstånd att plötsligt spela en klubba laengre, särskilt när du spelar i motvind på back nine."
           ],
           [
             "Där besökare tappar slag",
-            "Utsikten kan få utslaget att kannas enklare an det är. Välj linjen först, särskilt från de upphöjda tees, och var sedan redo för snabba greener med väldigt få enkla puttar."
+            "Utsikten kan få utslaget att kännas enklare an det är. Välj linjen först, särskilt från de upphöjda tees, och var sedan redo för snabba greener med väldigt få enkla puttar."
           ],
           [
             "Klubbhustips",
-            "Lämna tid för lunch på terrassen. Maten är riktigt bra, den stora terrassen vetter mot fyren och forlanger en redan fin dag."
+            "Lämna tid för lunch på terrassen. Maten är riktigt bra, den stora terrassen vetter mot fyren och förlänger en redan fin dag."
           ]
         ]
       },
