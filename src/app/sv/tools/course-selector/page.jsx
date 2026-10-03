@@ -10,11 +10,12 @@ export const metadata = buildPageMetadata('/tools/course-selector', 'sv', {
 import { buildPageMetadata } from '../../../../lib/page-metadata'
 import PageLayout from '../../../../components/PageLayout'
 import CourseSelectorToolClient from '../../../(en)/tools/course-selector/CourseSelectorToolClient'
+import courseData from '../../../../lib/tool-data/course-selector.sv'
 
 export default function CourseSelectorSv() {
   return (
     <PageLayout lang="sv" navTransparent={false} showWhatsAppButton={false}>
-      <CourseSelectorToolClient lang="sv" />
+      <CourseSelectorToolClient lang="sv" localData={courseData} />
     </PageLayout>
   )
 }

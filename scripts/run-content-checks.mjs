@@ -56,6 +56,7 @@ const CHECKS = [
   { name: 'check:api-safety', script: 'check-api-safety.mjs' },
   { name: 'check:tool-prices', script: 'check-tool-price-sync.mjs' },
   { name: 'check:tool-green-fees', script: 'check-tool-green-fees.mjs' },
+  { name: 'check:tool-data', script: 'check-tool-data-localized.mjs' },
   { name: 'check:pricing-narrative', script: 'check-pricing-narrative.mjs' },
   { name: 'check:lead-magnet-prices', script: 'check-lead-magnet-prices.mjs' },
   { name: 'check:guide-parity', script: 'check-guide-parity.mjs' },

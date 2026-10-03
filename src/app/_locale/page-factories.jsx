@@ -11,6 +11,7 @@ import PlanYourTripView from '../(en)/plan-your-trip/PlanYourTripView'
 import PlayWithAProView from '../(en)/play-with-a-pro/PlayWithAProView'
 import PlayWithAProExplainedView from '../(en)/guides/play-with-a-pro-explained/PlayWithAProExplainedView'
 
+import { loadCourseSelectorData } from '../../lib/tool-data/loaders'
 import { getAboutContent } from '../../lib/about-content'
 import { getGolfCoursesContent } from '../../lib/golf-courses-content'
 import { getGuidesContent } from '../../lib/guides-content'
@@ -93,10 +94,11 @@ export function createPlanYourTripMetadata(locale) {
 }
 
 export function createPlanYourTripPage(locale) {
-  return function LocalePlanYourTripPage() {
+  return async function LocalePlanYourTripPage() {
+    const courseSelectorData = await loadCourseSelectorData(locale)
     return (
       <PageLayout lang={locale} navTransparent={false}>
-        <PlanYourTripView locale={locale} content={getPlanYourTripContent(locale)} />
+        <PlanYourTripView locale={locale} content={getPlanYourTripContent(locale)} courseSelectorData={courseSelectorData} />
       </PageLayout>
     )
   }

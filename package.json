@@ -38,6 +38,7 @@
     "check:api-safety": "node --no-warnings scripts/check-api-safety.mjs",
     "check:tool-prices": "node scripts/check-tool-price-sync.mjs",
     "check:tool-green-fees": "node --no-warnings scripts/check-tool-green-fees.mjs",
+    "check:tool-data": "node --no-warnings scripts/check-tool-data-localized.mjs",
     "check:pricing-narrative": "node --no-warnings scripts/check-pricing-narrative.mjs",
     "check:lead-magnet-prices": "node --no-warnings scripts/check-lead-magnet-prices.mjs",
     "check:guide-parity": "node --no-warnings scripts/check-guide-parity.mjs",

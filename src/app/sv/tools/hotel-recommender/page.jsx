@@ -10,11 +10,12 @@ export const metadata = buildPageMetadata('/tools/hotel-recommender', 'sv', {
 import { buildPageMetadata } from '../../../../lib/page-metadata'
 import PageLayout from '../../../../components/PageLayout'
 import HotelRecommenderClient from '../../../(en)/hotel-recommender/HotelRecommenderClient'
+import hotelData from '../../../../lib/tool-data/hotel-recommender.sv'
 
 export default function HotelRecommenderToolSV() {
   return (
     <PageLayout lang="sv" navTransparent={false} showWhatsAppButton={false}>
-      <HotelRecommenderClient lang="sv" />
+      <HotelRecommenderClient lang="sv" localData={hotelData} />
     </PageLayout>
   )
 }

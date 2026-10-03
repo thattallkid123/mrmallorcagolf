@@ -5,6 +5,7 @@ import { getCanonicalCourseDataByName } from '@lib/course-catalog'
 import { resolveCourseAccessName } from '@lib/course-access-data'
 import { formatCourseFeeLabel, getCoursePricingByName } from '@lib/course-pricing-data'
 import { COURSE_SELECTOR_T } from '@lib/course-selector-translations'
+import { localizeCourse } from '@lib/course-selector-localize'
 import { getCourseReviewSlug } from '@lib/golf-courses-helpers'
 import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
@@ -509,8 +510,10 @@ const SELECTOR_COURSES = COURSES.map((course) => {
   }
 })
 
-export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel = 1 }) {
+export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel = 1, localData = null }) {
   const t = COURSE_SELECTOR_T[lang] || COURSE_SELECTOR_T.en
+  const L = localData?.labels
+  const loc = c => (c ? localizeCourse(c, localData) : c)
   const HeroHeading = heroHeadingLevel === 2 ? 'h2' : 'h1'
   const [phase, setPhase] = useState('quiz')
   const [qIndex, setQIndex] = useState(0)
@@ -700,8 +703,8 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
     scrollToTop()
   }
 
-  const compareA = compareSelection.length >= 1 ? SELECTOR_COURSES.find(c => c.id === compareSelection[0]) : null
-  const compareB = compareSelection.length >= 2 ? SELECTOR_COURSES.find(c => c.id === compareSelection[1]) : null
+  const compareA = compareSelection.length >= 1 ? loc(SELECTOR_COURSES.find(c => c.id === compareSelection[0])) : null
+  const compareB = compareSelection.length >= 2 ? loc(SELECTOR_COURSES.find(c => c.id === compareSelection[1])) : null
 
   return (
     <div ref={containerRef}>
@@ -872,7 +875,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
               <p>{t.results.intro(answers.style, answers.area)}</p>
             </div>
 
-            {topCourses.map((c, i) => (
+            {topCourses.map(loc).map((c, i) => (
               <div key={c.id} className="cst-course-card">
                 <div className="cst-cc-banner" style={COURSE_IMGS[c.id] ? { backgroundImage: `linear-gradient(120deg, rgba(26,25,22,0.82), rgba(45,74,62,0.75)), url(${COURSE_IMGS[c.id]})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}>
                   <div className="cst-cc-rank">{t.results.ranks[i]}</div>
@@ -882,17 +885,17 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                 <div className="cst-cc-body">
                   <div className="cst-cc-bestfor">{t.results.bestFor} {c.bestFor}</div>
                   <p className="cst-cc-why">{c.why}</p>
-                  {getCourseFactsLine(c) && (
-                    <div className="cst-cc-facts">{getCourseFactsLine(c)}</div>
+                  {getCourseFactsLine(c, L?.facts) && (
+                    <div className="cst-cc-facts">{getCourseFactsLine(c, L?.facts)}</div>
                   )}
                   <div className="cst-cc-grid">
-                    <div className="cst-cc-stat"><div className="k">{t.results.stats.difficulty}</div><div className="v">{DIFF_LABEL(c.diff10)}</div></div>
+                    <div className="cst-cc-stat"><div className="k">{t.results.stats.difficulty}</div><div className="v">{DIFF_LABEL(c.diff10, L?.diff)}</div></div>
                     <div className="cst-cc-stat"><div className="k">{t.results.stats.location}</div><div className="v">{c.areaLabel}</div></div>
                     <div className="cst-cc-stat"><div className="k">{t.results.stats.greenFee}</div><div className="v">{c.greenFee}</div></div>
                     <div className="cst-cc-stat"><div className="k">{t.results.stats.walkRide}</div><div className="v">{c.buggyNote}</div></div>
                   </div>
                   {c.membersOnly && (
-                    <div className="cst-cc-members">Members-only course. Andy arranges access for clients — mention it when you enquire.</div>
+                    <div className="cst-cc-members">{L?.members || 'Members-only course. I arrange access for clients: mention it when you enquire.'}</div>
                   )}
                   {c.handicapRequired && (
                     <div className="cst-cc-hcap">
@@ -941,13 +944,13 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                   <table className="cst-compare">
                     <tbody>
                       <tr><th></th><th>{compareA.displayName || compareA.name}</th><th>{compareB.displayName || compareB.name}</th></tr>
-                      <tr><td>{t.results.stats.difficulty}</td><td>{DIFF_LABEL(compareA.diff10)}</td><td>{DIFF_LABEL(compareB.diff10)}</td></tr>
+                      <tr><td>{t.results.stats.difficulty}</td><td>{DIFF_LABEL(compareA.diff10, L?.diff)}</td><td>{DIFF_LABEL(compareB.diff10, L?.diff)}</td></tr>
                       <tr><td>{t.results.stats.location}</td><td>{compareA.areaLabel}</td><td>{compareB.areaLabel}</td></tr>
-                      <tr><td>Holes</td><td>{compareA.holeCount || '–'}</td><td>{compareB.holeCount || '–'}</td></tr>
-                      <tr><td>Par</td><td>{compareA.coursePar || '–'}</td><td>{compareB.coursePar || '–'}</td></tr>
-                      <tr><td>Access</td><td>{compareA.accessRequirement || compareA.accessType || '–'}</td><td>{compareB.accessRequirement || compareB.accessType || '–'}</td></tr>
+                      <tr><td>{L?.compare.holes || 'Holes'}</td><td>{compareA.holeCount || '–'}</td><td>{compareB.holeCount || '–'}</td></tr>
+                      <tr><td>{L?.compare.par || 'Par'}</td><td>{compareA.coursePar || '–'}</td><td>{compareB.coursePar || '–'}</td></tr>
+                      <tr><td>{L?.compare.access || 'Access'}</td><td>{compareA.accessRequirement || compareA.accessType || '–'}</td><td>{compareB.accessRequirement || compareB.accessType || '–'}</td></tr>
                       <tr><td>{t.results.stats.greenFee}</td><td>{compareA.greenFee}</td><td>{compareB.greenFee}</td></tr>
-                      <tr><td>Designer</td><td>{compareA.designer || '–'}</td><td>{compareB.designer || '–'}</td></tr>
+                      <tr><td>{L?.compare.designer || 'Designer'}</td><td>{compareA.designer || '–'}</td><td>{compareB.designer || '–'}</td></tr>
                       <tr><td>{t.results.compareSection.bestPlayer}</td><td>{compareA.bestPlayer}</td><td>{compareB.bestPlayer}</td></tr>
                     </tbody>
                   </table>

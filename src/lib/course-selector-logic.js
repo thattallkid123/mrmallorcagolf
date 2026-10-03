@@ -160,7 +160,8 @@ export function rankCourses(courses, answers, limit = 3) {
     .map(({ course }) => course)
 }
 
-export const DIFF_LABEL = d => d >= 9 ? `Hard · ${d}/10` : d >= 7 ? `Testing · ${d}/10` : d >= 5 ? `Fair · ${d}/10` : `Gentle · ${d}/10`
+export const DIFF_LABEL = (d, labels = { hard: 'Hard', testing: 'Testing', fair: 'Fair', gentle: 'Gentle' }) =>
+  d >= 9 ? `${labels.hard} · ${d}/10` : d >= 7 ? `${labels.testing} · ${d}/10` : d >= 5 ? `${labels.fair} · ${d}/10` : `${labels.gentle} · ${d}/10`
 
 export function personalMatchLine(c, rank, answers, t) {
   const ml = t.matchLines
@@ -183,10 +184,10 @@ export function personalMatchLine(c, rank, answers, t) {
   return `${prefix}: ${reasons.join(', ')}.`
 }
 
-export function getCourseFactsLine(course) {
+export function getCourseFactsLine(course, labels = { par: 'Par', holes: 'holes' }) {
   const facts = []
-  if (Number.isFinite(course.coursePar)) facts.push(`Par ${course.coursePar}`)
-  if (Number.isFinite(course.holeCount)) facts.push(`${course.holeCount} holes`)
+  if (Number.isFinite(course.coursePar)) facts.push(`${labels.par} ${course.coursePar}`)
+  if (Number.isFinite(course.holeCount)) facts.push(`${course.holeCount} ${labels.holes}`)
   if (course.accessRequirement) facts.push(course.accessRequirement)
   if (course.accessType) facts.push(course.accessType)
   return facts.join(' · ')

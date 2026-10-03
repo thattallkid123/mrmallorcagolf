@@ -45,7 +45,7 @@ const SAMPLE_IMAGE_ALTS = {
   zh: '马略卡 Son Gual 球场开球的球手',
 }
 
-export default function PlanYourTripView({ locale = 'en', content: rawContent }) {
+export default function PlanYourTripView({ locale = 'en', content: rawContent, courseSelectorData = null }) {
   const content = rawContent || getPlanYourTripContent(locale)
   const courseLinkLabel = COURSE_LINK_LABELS[locale] || COURSE_LINK_LABELS.en
   const golfCoursesHref = buildLocalePath('/golf-courses', locale)
@@ -276,7 +276,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
 
       <section className="pyt-section pyt-section--light" id="free-course-finder">
         <div className="pyt-section__inner pyt-section__inner--wide pyt-tool-shell">
-          <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} />
+          <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} localData={courseSelectorData} />
           <p className="pyt-tier-body pyt-free__browse">
             <Link href={golfCoursesHref} className="pyt-free__browse-link">
               {courseLinkLabel}

@@ -7,6 +7,7 @@ import { getHotelRecommenderT } from '../../../lib/hotel-recommender-translation
 import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 import { HOTELS, QUESTIONS_DATA, scoreHotel, pillClass } from '../../../lib/hotel-recommender-logic'
+import { localizeHotel, localizeQuestions } from '../../../lib/hotel-recommender-localize'
 
 const WA_HOTEL_MESSAGE = 'Hi Andy, I used the hotel recommender on your site and I’d like help matching where I stay to the courses I want to play.'
 const WA_HOTEL_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_HOTEL_MESSAGE)}`
@@ -19,7 +20,7 @@ function trackHotelWhatsApp() {
 
 // Note: AREA_LABELS, GROUP_LABEL, PRIORITY_LABEL, TIER_LABELS, AREA_SHORT now come from translations
 
-export default function HotelRecommenderClient({ lang = 'en' }) {
+export default function HotelRecommenderClient({ lang = 'en', localData = null }) {
   const t = getHotelRecommenderT(lang)
   const [step, setStep] = useState(1)
   const [answers, setAnswers] = useState({})
@@ -36,8 +37,9 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
     window.scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + window.scrollY - 70), behavior: 'smooth' })
   }
 
-  const TOTAL = QUESTIONS_DATA.length
-  const currentQ = QUESTIONS_DATA[step - 1]
+  const QUESTIONS = localizeQuestions(QUESTIONS_DATA, localData)
+  const TOTAL = QUESTIONS.length
+  const currentQ = QUESTIONS[step - 1]
   const progress = ((step - 1) / TOTAL) * 100
 
   function selectAnswer(key, val) {
@@ -331,9 +333,9 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
               <p style={{ color:'#8A7F74', lineHeight:'1.7', fontSize:'0.9rem' }}>{t.results.noMatches}</p>
             ) : (
               results.map((x, i) => {
-                const h = x.hotel
+                const h = localizeHotel(x.hotel, localData)
                 const rankLabels = t.results.rankLabels
-                const typeLabel = h.type === 'villa' ? 'Private villa' : (t.tierLabels[h.luxury] || '')
+                const typeLabel = h.type === 'villa' ? (t.villaLabel || 'Private villa') : (t.tierLabels[h.luxury] || '')
                 return (
                   <div key={h.id} className={`hr-hotel-card${i === 0 ? ' top' : ''}`}>
                     <div className={`hr-card-rank${i === 0 ? ' gold' : ''}`}>{rankLabels[i]}</div>
@@ -352,8 +354,8 @@ export default function HotelRecommenderClient({ lang = 'en' }) {
                       <h3>{h.name}</h3>
                       {h.subname && <p style={{ fontSize:'0.8rem', color:'#8A7F74', marginBottom:'10px' }}>{h.subname}</p>}
                       <div className="hr-pills">
-                        {h.pills.map(p => (
-                          <span key={p} className={`pill ${pillClass(p)}`}>{p}</span>
+                        {h.pills.map((p, pi) => (
+                          <span key={p} className={`pill ${pillClass((h.pillKeys || h.pills)[pi])}`}>{p}</span>
                         ))}
                       </div>
                       <p className="hr-card-why">{h.why}</p>
