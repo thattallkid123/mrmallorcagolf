@@ -16,7 +16,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "basicNote": "Shortlist courses first.",
     "proLabel": "Personal",
     "proTitle": "Trip planning",
-    "proNote": "Courses, routing, tee times, and bookings handled."
+    "proNote": "Courses, routing and bookings handled."
   },
   "free": {
     "eyebrow": "Free",
@@ -43,13 +43,13 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         {
           "title": "Tee times only",
           "body": "Send dates, group size, handicap range and hotel area. I will suggest suitable courses, check availability and confirm the price before anything is booked.",
-          "cta": "Ask me to book tee times",
+          "cta": "Book tee times",
           "target": "tee-time-booking"
         },
         {
           "title": "Full golf plan",
           "body": "For groups playing several rounds, I put the courses in the right order, plan the drives, and handle buggies, rentals and useful dining suggestions.",
-          "cta": "Enquire about trip planning",
+          "cta": "Plan my golf trip",
           "target": "trip-planning"
         },
       ]

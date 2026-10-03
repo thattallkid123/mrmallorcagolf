@@ -36,13 +36,13 @@ const WA_TRIP_MESSAGES = {
 }
 
 const SAMPLE_IMAGE_ALTS = {
-  en: 'Alcanada golf course during a Mallorca golf trip',
-  de: 'Alcanada Golfplatz während einer Mallorca-Golfreise',
-  es: 'Campo de golf Alcanada durante un viaje de golf en Mallorca',
-  fr: 'Parcours de golf Alcanada pendant un séjour golf à Majorque',
-  nl: 'Alcanada golfbaan tijdens een golfreis naar Mallorca',
-  sv: 'Alcanada golfbana under en golfresa till Mallorca',
-  zh: '马略卡高尔夫行程中的 Alcanada 球场',
+  en: 'A golfer teeing off at Son Gual golf course, Mallorca',
+  de: 'Golfer beim Abschlag auf dem Golfplatz Son Gual, Mallorca',
+  es: 'Golfista en el tee de salida del campo de golf Son Gual, Mallorca',
+  fr: 'Golfeur au départ sur le parcours de Son Gual, Majorque',
+  nl: 'Golfer slaat af op golfbaan Son Gual, Mallorca',
+  sv: 'Golfspelare slår ut på golfbanan Son Gual, Mallorca',
+  zh: '马略卡 Son Gual 球场开球的球手',
 }
 
 export default function PlanYourTripView({ locale = 'en', content: rawContent }) {
@@ -183,7 +183,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                 </Link>
               </div>
 
-              {content.professional.bookingOnly ? (
+              {locale !== 'en' && content.professional.bookingOnly ? (
                 <div className="pyt-booking-only">
                   <div>
                     <h3>{content.professional.bookingOnly.title}</h3>
@@ -226,7 +226,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               </div>
               <div className="pyt-sample-media">
                 <Image
-                  src="/images/blog-trip-planning/Alcanada.webp"
+                  src="/images/plan-your-trip-sample-son-gual.webp"
                   alt={SAMPLE_IMAGE_ALTS[locale] || SAMPLE_IMAGE_ALTS.en}
                   fill
                   sizes="(max-width: 860px) 100vw, 38vw"
