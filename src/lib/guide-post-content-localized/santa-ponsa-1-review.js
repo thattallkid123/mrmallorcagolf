@@ -14,11 +14,11 @@ const content = {
       "related": [
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf: analisis honesto 2026"
+          "title": "Son Gual Golf: análisis honesto 2026"
         },
         {
           "slug": "alcanada-review",
-          "title": "Alcanada Golf: analisis honesto 2026"
+          "title": "Alcanada Golf: análisis honesto 2026"
         },
         {
           "slug": "best-golf-courses-mallorca",
@@ -119,7 +119,7 @@ const content = {
         "items": [
           [
             "Mejor hora de salida",
-            "Cuanto antes, mejor, si puede conseguirla. El campo se juega más comodo antes de que entre la brisa habitual, y los hoyos largos se sienten bastante más amables a primera hora."
+            "Cuanto antes, mejor, si puede conseguirla. El campo se juega más cómodo antes de que entre la brisa habitual, y los hoyos largos se sienten bastante más amables a primera hora."
           ],
           [
             "Consejo con el viento",
@@ -127,7 +127,7 @@ const content = {
           ],
           [
             "Donde suelen perder golpes los visitantes",
-            "Muchos visitantes disfrutan de las calles anchas, se confian con el driver y luego pierden golpes por atacar objetivos pequenos con demasiada agresividad desde buenas posiciones y dejarse chips incomodos."
+            "Muchos visitantes disfrutan de las calles anchas, se confian con el driver y luego pierden golpes por atacar objetivos pequeños con demasiada agresividad desde buenas posiciones y dejarse chips incómodos."
           ],
           [
             "Consejo de casa club",
@@ -302,11 +302,11 @@ const content = {
       "related": [
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf : avis honnete 2026"
+          "title": "Son Gual Golf : avis honnête 2026"
         },
         {
           "slug": "alcanada-review",
-          "title": "Alcanada Golf : avis honnete 2026"
+          "title": "Alcanada Golf : avis honnête 2026"
         },
         {
           "slug": "best-golf-courses-mallorca",
@@ -314,7 +314,7 @@ const content = {
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Combien coute le golf a Majorque ?"
+          "title": "Combien coûte le golf a Majorque ?"
         }
       ]
     },
@@ -394,7 +394,7 @@ const content = {
         "text": "Buggy : €43 pour 18 trous. Location de clubs : €40. Le parcours est public et se réserve librement - aucun accès membre n'est nécessaire. Réservez tôt en haute saison ; son histoire sur le Tour européen attire les joueurs qui savent exactement ce qu'ils viennent chercher."
       },
       {
-        "text": "Questions frequentes"
+        "text": "Questions fréquentes"
       },
       {
         "text": "Un justificatif WHS valide est requis à la réservation ; la location de voiturette coûte 43 € pour 18 trous. Santa Ponsa 1 convient aux golfeurs confiants qui veulent profiter du driver sur des fairways larges, et fonctionne bien comme parcours plus facile en début de séjour avant un parcours plus exigeant comme Son Gual ou Golf de Andratx. Ce qui surprend les visiteurs : par temps calme, le parcours est flatteur, mais avec du vent, les longs pars 3 et le trou 10 de 590 mètres font sentir chaque mètre de leur longueur. La meilleure heure de départ est tôt, avant l'arrivée habituelle de la brise en milieu de matinée."
@@ -405,11 +405,11 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Le plus tot possible, si vous pouvez l avoir. Le parcours est plus agreable avant que la brise habituelle ne monte, et les longs trous paraissent bien plus abordables tot le matin."
+            "Le plus tôt possible, si vous pouvez l avoir. Le parcours est plus agréable avant que la brise habituelle ne monte, et les longs trous paraissent bien plus abordables tôt le matin."
           ],
           [
             "Conseil vent",
-            "Quand le vent arrive, il touche surtout les longs par 3 et le trou 10. Prenez assez de club et considerez le yardage de la carte comme un point de départ, pas comme la reponse definitive."
+            "Quand le vent arrive, il touche surtout les longs par 3 et le trou 10. Prenez assez de club et considerez le yardage de la carte comme un point de départ, pas comme la réponse definitive."
           ],
           [
             "Ou les visiteurs perdent des coups",
@@ -417,7 +417,7 @@ const content = {
           ],
           [
             "Conseil clubhouse",
-            "C est un bon parcours de confiance, si votre driver est en place, avant un test plus serieux. Si votre voyage comprend Son Gual ou Andratx, Santa Ponsa 1 se place bien plus tot dans la semaine."
+            "C est un bon parcours de confiance, si votre driver est en place, avant un test plus sérieux. Si votre voyage comprend Son Gual ou Andratx, Santa Ponsa 1 se place bien plus tôt dans la semaine."
           ]
         ]
       },
@@ -588,19 +588,19 @@ const content = {
       "related": [
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf: arlig recension 2026"
+          "title": "Son Gual Golf: ärlig recension 2026"
         },
         {
           "slug": "alcanada-review",
-          "title": "Alcanada Golf: arlig recension 2026"
+          "title": "Alcanada Golf: ärlig recension 2026"
         },
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "De basta golfbanorna pa Mallorca 2026"
+          "title": "De bästa golfbanorna på Mallorca 2026"
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Vad kostar golf pa Mallorca?"
+          "title": "Vad kostar golf på Mallorca?"
         }
       ]
     },
@@ -692,20 +692,20 @@ const content = {
         "title": "Fyra säker jag skulle vilja veta innan jag bokar Santa Ponsa 1",
         "items": [
           [
-            "Basta starttid",
-            "Ju tidigare desto bättre om du kan fa en tid. Banan ar bekvamare innan den vanliga brisen kommer, och de langa halen kanns betydligt snallare tidigt pa dagen."
+            "Bästa starttid",
+            "Ju tidigare desto bättre om du kan få en tid. Banan är bekvamare innan den vanliga brisen kommer, och de långa hålen känns betydligt snallare tidigt på dagen."
           ],
           [
             "Vindtips",
-            "När vinden kommer slar den framfor allt mot de langa par 3-halen och hål 10. Ta tillräckligt med klubba och se yardaget pa scorekortet som en startpunkt, inte som hela svaret."
+            "När vinden kommer slår den framför allt mot de långa par 3-halen och hål 10. Ta tillräckligt med klubba och se yardaget på scorekortet som en startpunkt, inte som hela svaret."
           ],
           [
-            "Där besokare tappar slag",
-            "Många besokare gillar de breda fairwaysen, blir for sjalvsakra med drivern och tappar sedan slag genom att attackera sma mal for aggressivt från bra lagen och lamna sig knepiga chippar."
+            "Där besökare tappar slag",
+            "Många besökare gillar de breda fairwaysen, blir för sjalvsakra med drivern och tappar sedan slag genom att attackera små mål för aggressivt från bra lagen och lämna sig knepiga chippar."
           ],
           [
             "Klubbhustips",
-            "Det har ar en bra sjalvfortroendebana, om drivern fungerar, innan ett tuffare test senare. Om resan ocksa innehaller Son Gual eller Andratx passar Santa Ponsa 1 bra tidigare i veckan."
+            "Det har är en bra sjalvfortroendebana, om drivern fungerar, innan ett tuffare test senare. Om resan också innehaller Son Gual eller Andratx passar Santa Ponsa 1 bra tidigare i veckan."
           ]
         ]
       },

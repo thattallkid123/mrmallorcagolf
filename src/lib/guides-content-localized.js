@@ -90,11 +90,11 @@ export const GUIDES_LOCALIZED_CONTENT = {
       },
       {
         "slug": "son-antem-west-review",
-        "badge": "Analisis del campo",
+        "badge": "Análisis del campo",
         "badgeGold": true,
         "img": "/images/courses/son-antem-west.webp",
         "imgPosition": "center 45%",
-        "title": "Son Antem West Golf Club, Mallorca - analisis honesto de un Profesional PGA (2026)",
+        "title": "Son Antem West Golf Club, Mallorca - análisis honesto de un Profesional PGA (2026)",
         "intro": "Un campo de resort a 15-20 minutos de Palma. Buen mantenimiento, campo abierto y un recorrido que sirve para muchos tipos de jugador.",
         "readTime": "6 min",
         "keywords": "Resort - Par 72 - €109-135 - 15-20 min desde Palma"
@@ -463,7 +463,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badgeGold": true,
         "img": "/images/courses/son-antem-west.webp",
         "imgPosition": "center 45%",
-        "title": "Son Antem West Golf Club, Majorque - avis honnete d'un professionnel PGA (2026)",
+        "title": "Son Antem West Golf Club, Majorque - avis honnête d'un professionnel PGA (2026)",
         "intro": "Un parcours de resort a 15-20 minutes de Palma. Bon entretien, campagne ouverte et un trace qui convient a beaucoup de joueurs.",
         "readTime": "6 min",
         "keywords": "Resort - Par 72 - €109-135 - 15-20 min de Palma"
@@ -833,7 +833,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badgeGold": true,
         "img": "/images/courses/son-antem-west.webp",
         "imgPosition": "center 45%",
-        "title": "Son Antem West Golf Club, Mallorca - arlig recension av en PGA Professional (2026)",
+        "title": "Son Antem West Golf Club, Mallorca - ärlig recension av en PGA Professional (2026)",
         "intro": "En resortbana 15-20 minuter från Palma. Bra skick, oppet landskap och en layout som passar många olika spelare.",
         "readTime": "6 min",
         "keywords": "Resortbana - Par 72 - €109-135 - 15-20 min från Palma"

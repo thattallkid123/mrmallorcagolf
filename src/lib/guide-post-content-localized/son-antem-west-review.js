@@ -6,10 +6,10 @@ const content = {
       "description": "Son Antem West: green fees desde 109 €, par 72, 6.293 m. Campo de resort a 15-20 min de Palma, bien mantenido y fácil de jugar."
     },
     "meta": {
-      "badge": "Analisis del campo",
+      "badge": "Análisis del campo",
       "readTime": "6 min",
       "updated": "Mayo 2026",
-      "title": "Son Antem West Golf Club, Mallorca - analisis honesto de un Profesional PGA (2026)",
+      "title": "Son Antem West Golf Club, Mallorca - análisis honesto de un Profesional PGA (2026)",
       "intro": "Un campo de resort a 15-20 minutos de Palma. Buen mantenimiento, campo abierto y un recorrido que sirve para muchos tipos de jugador.",
       "related": [
         {
@@ -18,11 +18,11 @@ const content = {
         },
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf: analisis honesto 2026"
+          "title": "Son Gual Golf: análisis honesto 2026"
         },
         {
           "slug": "alcanada-review",
-          "title": "Alcanada Golf: analisis honesto 2026"
+          "title": "Alcanada Golf: análisis honesto 2026"
         },
         {
           "slug": "golf-cost-mallorca",
@@ -32,11 +32,11 @@ const content = {
     },
     "blocks": [
       {
-        "alt": "Obstaculo de agua en Son Antem West, Llucmajor, Mallorca",
+        "alt": "Obstáculo de agua en Son Antem West, Llucmajor, Mallorca",
         "caption": "Uno de los hoyos con agua del West Course. El campo está en Llucmajor, a unos 15-20 minutos de Palma, en campo abierto y sin casas visibles."
       },
       {
-        "text": "Ya habia tres o cuatro partidos esperando en el tee del 1 cuando llegamos a las 7:50 de un domingo. Habia reservado temprano precisamente para evitar el ritmo lento que puede aparecer en los campos de resort. No lo evitamos."
+        "text": "Ya había tres o cuatro partidos esperando en el tee del 1 cuando llegamos a las 7:50 de un domingo. Había reservado temprano precisamente para evitar el ritmo lento que puede aparecer en los campos de resort. No lo evitamos."
       },
       {
         "text": "Eso conviene saberlo antes de pegar el primer golpe en Son Antem West. Es un campo de resort popular, bien gestionado y cerca de Palma. Si vas con esa expectativa, disfrutaras la ronda. Si esperas una experiencia tranquila y sin espera, puede que no."
@@ -45,50 +45,50 @@ const content = {
         "text": "Primera impresión"
       },
       {
-        "text": "Al entrar en el resort, la escala se ve enseguida. Residencias, mucho espacio verde, academia de golf, pistas de padel y hotel. Funciona como un destino de golf completo. El check-in fue ordenado, el personal atento y una pequena tienda junto a la entrada permitia comprar cafe y algo de comer antes de salir. Detalle útil a las 7:45 de la manana."
+        "text": "Al entrar en el resort, la escala se ve enseguida. Residencias, mucho espacio verde, academia de golf, pistas de padel y hotel. Funciona como un destino de golf completo. El check-in fue ordenado, el personal atento y una pequena tienda junto a la entrada permitia comprar cafe y algo de comer antes de salir. Detalle útil a las 7:45 de la mañana."
       },
       {
-        "text": "En el campo, el entorno se abre. El West Course está en la campina mallorquina cerca de Llucmajor, a 15 o 20 minutos de Palma. No hay casas visibles desde las calles, la montana de Randa aparece al fondo en la segunda vuelta y la fauna está presente durante toda la ronda. Conejos cruzan las calles con frecuencia. Garzas y otros pajaros aparecen en los hoyos con agua. No se siente como un campo suburbano, y eso ayuda."
+        "text": "En el campo, el entorno se abre. El West Course está en la campina mallorquina cerca de Llucmajor, a 15 o 20 minutos de Palma. No hay casas visibles desde las calles, la montaña de Randa aparece al fondo en la segunda vuelta y la fauna está presente durante toda la ronda. Conejos cruzan las calles con frecuencia. Garzas y otros pajaros aparecen en los hoyos con agua. No se siente como un campo suburbano, y eso ayuda."
       },
       {
-        "alt": "Pajaros en la calle de Son Antem West con agua y green detras, Mallorca",
+        "alt": "Pajaros en la calle de Son Antem West con agua y green detrás, Mallorca",
         "caption": "La fauna aparece mucho en la segunda vuelta: conejos, garzas y varios pajaros, sobre todo alrededor de los hoyos con agua."
       },
       {
         "text": "El campo"
       },
       {
-        "text": "Francisco Lopez Segales diseno Son Antem West, que abrio en 1995. Es par 72 y mide 6.293 metros desde las barras de atrás. El diseno es abierto, las calles son generosas y muchos golpes de salida no castigan demasiado si te sales un poco de linea. Eso lo hace accesible para grupos de nivel mixto y golfistas de vacaciones. Claramente fue pensado para eso."
+        "text": "Francisco Lopez Segales diseño Son Antem West, que abrió en 1995. Es par 72 y mide 6.293 metros desde las barras de atrás. El diseño es abierto, las calles son generosas y muchos golpes de salida no castigan demasiado si te sales un poco de línea. Eso lo hace accesible para grupos de nivel mixto y golfistas de vacaciones. Claramente fue pensado para eso."
       },
       {
-        "text": "Los hoyos que más destacan son los que van entre arboles. En esos, el golpe de salida es más estrecho, la linea importa más y el approach cambia según el lado de la calle en el que acabes. Las zonas más abiertas son agradables, pero no te obligan a pensar mucho desde el tee. Escoges un objetivo y pegas."
+        "text": "Los hoyos que más destacan son los que van entre árboles. En esos, el golpe de salida es más estrecho, la línea importa más y el approach cambia según el lado de la calle en el que acabes. Las zonas más abiertas son agradables, pero no te obligan a pensar mucho desde el tee. Escoges un objetivo y pegas."
       },
       {
         "alt": "Andy Griffiths observando a un cliente pegar un hierro en un hoyo arbolado de Son Antem West",
         "caption": "Driver en uno de los hoyos de la segunda vuelta. El campo estuvo en buen estado durante toda la ronda."
       },
       {
-        "text": "Hay algunos hoyos que merece conocer. El 10 es un dogleg a la derecha con agua corta del green. El approach exige decisión: jugar por encima del agua o colocar, según como haya salido el drive. El 12 es un par 4 bastante abierto, pero la montana de Randa al fondo lo convierte en uno de los hoyos más bonitos de la segunda vuelta. El 16 es el mejor hoyo del campo: un par 5 cuesta arriba, dogleg a la derecha, entre arboles y con un green pequeno y protegido. El 18 tiene agua cubriendo gran parte del lado izquierdo desde el tee."
+        "text": "Hay algunos hoyos que merece conocer. El 10 es un dogleg a la derecha con agua corta del green. El approach exige decisión: jugar por encima del agua o colocar, según como haya salido el drive. El 12 es un par 4 bastante abierto, pero la montaña de Randa al fondo lo convierte en uno de los hoyos más bonitos de la segunda vuelta. El 16 es el mejor hoyo del campo: un par 5 cuesta arriba, dogleg a la derecha, entre árboles y con un green pequeño y protegido. El 18 tiene agua cubriendo gran parte del lado izquierdo desde el tee."
       },
       {
-        "alt": "Approach del hoyo 16 de Son Antem West, par 5 entre arboles, Mallorca",
-        "caption": "Camino al 16. Un par 5 cuesta arriba que serpentea entre arboles antes de terminar en un green pequeno y protegido."
+        "alt": "Approach del hoyo 16 de Son Antem West, par 5 entre árboles, Mallorca",
+        "caption": "Camino al 16. Un par 5 cuesta arriba que serpentea entre árboles antes de terminar en un green pequeño y protegido."
       },
       {
-        "alt": "Hoyo 18 de Son Antem West con obstaculo de agua a la izquierda de la calle, Mallorca",
+        "alt": "Hoyo 18 de Son Antem West con obstáculo de agua a la izquierda de la calle, Mallorca",
         "caption": "Mirando hacia atrás en el 18. El agua cubre buena parte del lado izquierdo desde el tee."
       },
       {
         "text": "Los greens"
       },
       {
-        "text": "Son pequenos, ondulados y ruedan muy puros. La velocidad era buena, no especialmente rápida, pero si constante y honesta. Las superficies estaban en buen estado para un campo con tanto trafico un domingo. Varios greens están elevados o se alejan del jugador. Conviene saberlo antes de chipear: la bola corre bastante más después de aterrizar de lo que parece. Muchas veces funciona mejor un golpe bajo y rodado que intentar dejar algo blando en el borde."
+        "text": "Son pequeños, ondulados y ruedan muy puros. La velocidad era buena, no especialmente rápida, pero si constante y honesta. Las superficies estaban en buen estado para un campo con tanto tráfico un domingo. Varios greens están elevados o se alejan del jugador. Conviene saberlo antes de chipear: la bola corre bastante más después de aterrizar de lo que parece. Muchas veces funciona mejor un golpe bajo y rodado que intentar dejar algo blando en el borde."
       },
       {
         "text": "Mantenimiento"
       },
       {
-        "text": "Muy bueno para la cantidad de juego que soportaba. Las calles estaban firmes, los greens rodaban de forma consistente y la presentacion aguanto bien toda la vuelta. Casi no habia viento, asi que las condiciones fueron de las más sencillas que se pueden tener aquí. Desde las barras de atrás, el campo no se sintio especialmente largo con aire en calma."
+        "text": "Muy bueno para la cantidad de juego que soportaba. Las calles estaban firmes, los greens rodaban de forma consistente y la presentación aguanto bien toda la vuelta. Casi no había viento, así que las condiciones fueron de las más sencillas que se pueden tener aquí. Desde las barras de atrás, el campo no se sintio especialmente largo con aire en calma."
       },
       {
         "text": "Se puede caminar?"
@@ -97,14 +97,14 @@ const content = {
         "text": "Si. Caminarlo es totalmente razonable. El trazado es claro y el terreno es llano. Hubo un par de momentos entre hoyos donde el camino a pie no estaba del todo claro, pero nada importante. Para quien prefiera caminar en vez de buggy, es un campo fácil para hacerlo."
       },
       {
-        "alt": "Andy Griffiths con clientes en un dia play-with-a-pro en Son Antem West, Mallorca",
-        "caption": "Un dia play-with-a-pro en Son Antem West. El recorrido perdona lo suficiente para que los invitados puedan jugar con libertad."
+        "alt": "Andy Griffiths con clientes en un día play-with-a-pro en Son Antem West, Mallorca",
+        "caption": "Un día play-with-a-pro en Son Antem West. El recorrido perdona lo suficiente para que los invitados puedan jugar con libertad."
       },
       {
         "text": "La parte honesta"
       },
       {
-        "text": "Una parte grande de Son Antem West es estrategicamente plana. Los hoyos abiertos dan una zona de caida amplia, un approach sencillo y un green pequeno como objetivo. Puedes jugar esos hoyos casi en piloto automático. Comparado con Son Gual, Alcanada o Andratx, el campo ocupa menos espacio mental. Con green fees en un rango parecido, compite en precio con esos campos, pero ofrece menos en cuanto a recuerdo del diseno."
+        "text": "Una parte grande de Son Antem West es estratégicamente plana. Los hoyos abiertos dan una zona de caída amplia, un approach sencillo y un green pequeño como objetivo. Puedes jugar esos hoyos casi en piloto automático. Comparado con Son Gual, Alcanada o Andratx, el campo ocupa menos espacio mental. Con green fees en un rango parecido, compite en precio con esos campos, pero ofrece menos en cuanto a recuerdo del diseño."
       },
       {
         "items": [
@@ -114,7 +114,7 @@ const content = {
           ],
           [
             "7/10",
-            "Mi valoracion"
+            "Mi valoración"
           ],
           [
             "Par 72",
@@ -130,10 +130,10 @@ const content = {
         "text": "Información practica"
       },
       {
-        "text": "Green fee: 105 € el dia que jugamos. El resort está bien preparado antes y después de la ronda. Hay una pequena tienda cerca del check-in para cafe, agua y snacks, algo realmente útil si tienes una salida temprana. Hay buggy disponible. Caminar es sencillo en todo el recorrido."
+        "text": "Green fee: 105 € el día que jugamos. El resort está bien preparado antes y después de la ronda. Hay una pequena tienda cerca del check-in para cafe, agua y snacks, algo realmente útil si tienes una salida temprana. Hay buggy disponible. Caminar es sencillo en todo el recorrido."
       },
       {
-        "text": "Ubicación: Llucmajor, a unos 15 o 20 minutos al sur de Palma. Fácil de llegar y fácil de combinar con uno o dos dias en la ciudad."
+        "text": "Ubicación: Llucmajor, a unos 15 o 20 minutos al sur de Palma. Fácil de llegar y fácil de combinar con uno o dos días en la ciudad."
       },
       {
         "text": "Preguntas frecuentes"
@@ -149,15 +149,15 @@ const content = {
         "items": [
           [
             "Mejor hora de salida",
-            "Entre semana por la manana está el punto dulce, si puede organizarlo. Los domingos se puede atascar pronto, incluso en la primera ola, porque el campo gusta mucho a los jugadores del resort."
+            "Entre semana por la mañana está el punto dulce, si puede organizarlo. Los domingos se puede atascar pronto, incluso en la primera ola, porque el campo gusta mucho a los jugadores del resort."
           ],
           [
             "Consejo con el viento",
-            "En un dia calmado es un campo muy jugable, y justo por eso funciona bien para grupos mezclados. Si se levanta la brisa, concéntrate en las zonas de aterrizaje y ten paciencia."
+            "En un día calmado es un campo muy jugable, y justo por eso funciona bien para grupos mezclados. Si se levanta la brisa, concéntrate en las zonas de aterrizaje y ten paciencia."
           ],
           [
             "Donde suelen perder golpes los visitantes",
-            "El gran error es ponerse en piloto automático porque las calles parecen generosas. Seguir en el lado equivocado de la calle sigue importando, algunos greens pequenos exigen una eleccion de palo muy precisa y los chips siguen rodando."
+            "El gran error es ponerse en piloto automático porque las calles parecen generosas. Seguir en el lado equivocado de la calle sigue importando, algunos greens pequeños exigen una elección de palo muy precisa y los chips siguen rodando."
           ],
           [
             "Consejo de casa club",
@@ -166,10 +166,10 @@ const content = {
         ]
       },
       {
-        "text": "7/10. Son Antem West es un campo de resort bien gestionado, con buen mantenimiento, servicio fiable y un trazado que sirve para muchos jugadores. El 16 es el mejor hoyo, las zonas entre arboles son las más interesantes, y la fauna junto al campo abierto mejora el entorno. Conviene a golfistas de vacaciones, grupos mixtos y cualquiera que quiera una ronda agradable y accesible cerca de Palma. No es la mejor eleccion si buscas un campo que te examine de principio a fin. Puedes ver como encaja con el resto en la <a href=\"/golf-courses\">pagina completa de campos de golf de Mallorca</a>. Si estás planeando varias vueltas alrededor de este campo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios y logística."
+        "text": "7/10. Son Antem West es un campo de resort bien gestionado, con buen mantenimiento, servicio fiable y un trazado que sirve para muchos jugadores. El 16 es el mejor hoyo, las zonas entre árboles son las más interesantes, y la fauna junto al campo abierto mejora el entorno. Conviene a golfistas de vacaciones, grupos mixtos y cualquiera que quiera una ronda agradable y accesible cerca de Palma. No es la mejor elección si buscas un campo que te examine de principio a fin. Puedes ver como encaja con el resto en la <a href=\"/golf-courses\">página completa de campos de golf de Mallorca</a>. Si estás planeando varias vueltas alrededor de este campo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios y logística."
       },
       {
-        "text": "Llevo clientes a Son Antem West en dias play-with-a-pro. Quieres jugarlo con alguien a tu lado?",
+        "text": "Llevo clientes a Son Antem West en días play-with-a-pro. Quieres jugarlo con alguien a tu lado?",
         "linkLabel": "Ver la experiencia play-with-a-pro"
       }
     ]
@@ -357,7 +357,7 @@ const content = {
       "badge": "Avis parcours",
       "readTime": "6 min",
       "updated": "Mai 2026",
-      "title": "Son Antem West Golf Club, Majorque - avis honnete d'un professionnel PGA (2026)",
+      "title": "Son Antem West Golf Club, Majorque - avis honnête d'un professionnel PGA (2026)",
       "intro": "Un parcours de resort a 15-20 minutes de Palma. Bon entretien, campagne ouverte et un trace qui convient a beaucoup de joueurs.",
       "related": [
         {
@@ -366,15 +366,15 @@ const content = {
         },
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf : avis honnete 2026"
+          "title": "Son Gual Golf : avis honnête 2026"
         },
         {
           "slug": "alcanada-review",
-          "title": "Alcanada Golf : avis honnete 2026"
+          "title": "Alcanada Golf : avis honnête 2026"
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Combien coute le golf a Majorque ?"
+          "title": "Combien coûte le golf a Majorque ?"
         }
       ]
     },
@@ -384,7 +384,7 @@ const content = {
         "caption": "Un des trous avec eau sur le West Course. Le parcours se trouve a Llucmajor, a environ 15-20 minutes de Palma, en pleine campagne et sans maisons visibles."
       },
       {
-        "text": "Trois ou quatre parties attendaient déjà au départ du 1 lorsque nous sommes arrives a 7 h 50 un dimanche matin. Nous avions réservé tot pour eviter le rythme lent que les parcours de resort peuvent parfois avoir. Nous ne l avons pas evite."
+        "text": "Trois ou quatre parties attendaient déjà au départ du 1 lorsque nous sommes arrives a 7 h 50 un dimanche matin. Nous avions réservé tôt pour eviter le rythme lent que les parcours de resort peuvent parfois avoir. Nous ne l avons pas evite."
       },
       {
         "text": "C est utile a savoir avant même de taper un coup a Son Antem West. C est un parcours de resort populaire, bien gere et proche de Palma. Si vous venez avec cette attente, vous profiterez de la partie. Si vous cherchez une expérience calme et sans attente, peut-être moins."
@@ -393,34 +393,34 @@ const content = {
         "text": "Première impression"
       },
       {
-        "text": "En arrivant dans le resort, l echelle est evidente. Residences, grands espaces verts, academie de golf, terrains de padel, hotel. Cela ressemble a une destination golf complète. L accueil etait organise, le personnel serviable, et une petite boutique pres de l entrée permettait de prendre cafe et snack avant la partie. Detail utile a 7 h 45."
+        "text": "En arrivant dans le resort, l echelle est evidente. Residences, grands espaces verts, académie de golf, terrains de padel, hôtel. Cela ressemble a une destination golf complète. L accueil était organise, le personnel serviable, et une petite boutique près de l entrée permettait de prendre cafe et snack avant la partie. Détail utile a 7 h 45."
       },
       {
-        "text": "Sur le parcours, le cadre s ouvre. Le West Course se trouve dans la campagne majorquine pres de Llucmajor, a 15 ou 20 minutes de Palma. Aucune maison n est visible depuis les fairways, la montagne de Randa apparait en arrière-plan sur le retour, et la faune est presente tout au long de la partie. Des lapins traversent regulierement les fairways. Herons et autres oiseaux sont autour des trous avec eau. Cela ne ressemble pas a un parcours de banlieue, et c est un vrai plus."
+        "text": "Sur le parcours, le cadre s ouvre. Le West Course se trouve dans la campagne majorquine près de Llucmajor, a 15 ou 20 minutes de Palma. Aucune maison n est visible depuis les fairways, la montagne de Randa apparait en arrière-plan sur le retour, et la faune est presente tout au long de la partie. Des lapins traversent régulièrement les fairways. Herons et autres oiseaux sont autour des trous avec eau. Cela ne ressemble pas a un parcours de banlieue, et c est un vrai plus."
       },
       {
         "alt": "Oiseaux sur le fairway de Son Antem West avec eau et green derrière, Majorque",
-        "caption": "La faune est reguliere sur le retour : lapins, herons et differents oiseaux, surtout autour des trous avec eau."
+        "caption": "La faune est régulière sur le retour : lapins, herons et differents oiseaux, surtout autour des trous avec eau."
       },
       {
         "text": "Le parcours"
       },
       {
-        "text": "Francisco Lopez Segales a dessine Son Antem West, ouvert en 1995. Il se joue en par 72 et mesure 6 293 metres des departs arrière. Le trace est globalement ouvert, les fairways sont genereux, et beaucoup de mises en jeu pardonnent une legere erreur de ligne. Cela le rend accessible aux groupes de niveaux mixtes et aux golfeurs en vacances. C est clairement son role."
+        "text": "Francisco Lopez Segales a dessine Son Antem West, ouvert en 1995. Il se joue en par 72 et mesure 6 293 mètres des départs arrière. Le trace est globalement ouvert, les fairways sont genereux, et beaucoup de mises en jeu pardonnent une legere erreur de ligne. Cela le rend accessible aux groupes de niveaux mixtes et aux golfeurs en vacances. C est clairement son role."
       },
       {
-        "text": "Les trous qui ressortent sont ceux bordes d arbres. La mise en jeu y est plus serree, la ligne compte davantage, et l angle d attaque change selon le côté du fairway trouve. Les sections plus ouvertes sont agreables, mais demandent moins de reflexion au départ. On choisit une cible et on swingue."
+        "text": "Les trous qui ressortent sont ceux bordes d arbres. La mise en jeu y est plus serree, la ligne compte davantage, et l angle d attaque change selon le côté du fairway trouve. Les sections plus ouvertes sont agréables, mais demandent moins de réflexion au départ. On choisit une cible et on swingue."
       },
       {
         "alt": "Andy Griffiths regarde un client taper un fer sur un trou borde d arbres a Son Antem West",
-        "caption": "Driver sur un trou du retour. Le parcours etait en bon état du debut a la fin."
+        "caption": "Driver sur un trou du retour. Le parcours était en bon état du début a la fin."
       },
       {
-        "text": "Quelques trous sont a connaitre. Le 10 est un dogleg droite avec de l eau courte du green. L approche impose une decision : prendre l eau en jeu ou se placer, selon la mise en jeu. Le 12 est un par 4 assez ouvert, mais la montagne de Randa en fond en fait un des plus beaux trous du retour. Le 16 est le meilleur trou du parcours : un par 5 en montee, dogleg droite, entre les arbres, qui finit sur un petit green protege. Le 18 a de l eau sur une grande partie du côté gauche depuis le tee."
+        "text": "Quelques trous sont a connaitre. Le 10 est un dogleg droite avec de l eau courte du green. L approche impose une decision : prendre l eau en jeu ou se placer, selon la mise en jeu. Le 12 est un par 4 assez ouvert, mais la montagne de Randa en fond en fait un des plus beaux trous du retour. Le 16 est le meilleur trou du parcours : un par 5 en montée, dogleg droite, entre les arbres, qui finit sur un petit green protege. Le 18 a de l eau sur une grande partie du côté gauche depuis le tee."
       },
       {
         "alt": "Approche du trou 16 de Son Antem West, par 5 entre les arbres, Majorque",
-        "caption": "En approchant du 16. Un par 5 en montee qui serpente entre les arbres avant un petit green bien protege."
+        "caption": "En approchant du 16. Un par 5 en montée qui serpente entre les arbres avant un petit green bien protege."
       },
       {
         "alt": "Trou 18 de Son Antem West avec obstacle d eau a gauche du fairway, Majorque",
@@ -430,29 +430,29 @@ const content = {
         "text": "Les greens"
       },
       {
-        "text": "Petits, ondules, et ils roulent très proprement. La vitesse etait bonne, pas particulièrement rapide, mais reguliere et franche. Les surfaces etaient en bon état pour un parcours qui recevait autant de monde un dimanche. Plusieurs greens sont sureleves ou fuient le joueur. A savoir avant de chipper : la balle roule beaucoup plus après l atterrissage qu on ne l imagine. Un coup bas et roule est souvent meilleur qu une tentative de balle souple posee au bord."
+        "text": "Petits, ondules, et ils roulent très proprement. La vitesse était bonne, pas particulièrement rapide, mais régulière et franche. Les surfaces étaient en bon état pour un parcours qui recevait autant de monde un dimanche. Plusieurs greens sont surélevés ou fuient le joueur. A savoir avant de chipper : la balle roule beaucoup plus après l atterrissage qu on ne l imagine. Un coup bas et roule est souvent meilleur qu une tentative de balle souple posee au bord."
       },
       {
         "text": "Condition"
       },
       {
-        "text": "Très bonne compte tenu du trafic. Les fairways etaient solides, les greens reguliers, et la presentation a bien tenu toute la partie. Il y avait très peu de vent, donc les conditions etaient aussi simples que possible ici. Des departs arrière, le parcours ne semblait pas spécialement long par air calme."
+        "text": "Très bonne compte tenu du trafic. Les fairways étaient solides, les greens réguliers, et la presentation a bien tenu toute la partie. Il y avait très peu de vent, donc les conditions étaient aussi simples que possible ici. Des départs arrière, le parcours ne semblait pas spécialement long par air calme."
       },
       {
         "text": "A pied"
       },
       {
-        "text": "C est tout a fait faisable. Le trace est simple et le terrain plat. Il y a eu deux moments entre les trous ou le chemin a pied n etait pas parfaitement clair, mais rien d important. Pour ceux qui preferent marcher plutot que prendre une voiturette, c est un parcours facile."
+        "text": "C est tout a fait faisable. Le trace est simple et le terrain plat. Il y a eu deux moments entre les trous ou le chemin a pied n était pas parfaitement clair, mais rien d important. Pour ceux qui preferent marcher plutôt que prendre une voiturette, c est un parcours facile."
       },
       {
         "alt": "Andy Griffiths avec des clients lors d une journée play-with-a-pro a Son Antem West, Majorque",
         "caption": "Une journée play-with-a-pro a Son Antem West. Le trace pardonne assez pour permettre aux invites de jouer librement."
       },
       {
-        "text": "La partie honnete"
+        "text": "La partie honnête"
       },
       {
-        "text": "Une grande partie de Son Antem West est strategiquement plate. Les trous ouverts donnent une large zone de reception, une approche simple et un petit green comme cible. On peut jouer ces trous presque en pilote automatique. Par rapport a Son Gual, Alcanada ou Andratx, le parcours prend moins de place mentalement. Avec des green fees dans une fourchette proche, il rivalise sur le prix, mais laisse moins de trace par son dessin."
+        "text": "Une grande partie de Son Antem West est stratégiquement plate. Les trous ouverts donnent une large zone de réception, une approche simple et un petit green comme cible. On peut jouer ces trous presque en pilote automatique. Par rapport a Son Gual, Alcanada ou Andratx, le parcours prend moins de place mentalement. Avec des green fees dans une fourchette proche, il rivalise sur le prix, mais laisse moins de trace par son dessin."
       },
       {
         "items": [
@@ -478,13 +478,13 @@ const content = {
         "text": "Informations pratiques"
       },
       {
-        "text": "Green fee : 105 € le jour ou nous avons joue. Le resort est bien organise avant et après la partie. Il y a une petite boutique pres du check-in pour cafe, eau et snacks, vraiment utile avec un départ matinal. Les voiturettes sont disponibles. Marcher reste simple partout."
+        "text": "Green fee : 105 € le jour ou nous avons joue. Le resort est bien organise avant et après la partie. Il y a une petite boutique près du check-in pour cafe, eau et snacks, vraiment utile avec un départ matinal. Les voiturettes sont disponibles. Marcher reste simple partout."
       },
       {
         "text": "Lieu : Llucmajor, a environ 15 a 20 minutes au sud de Palma. Facile d accès et facile a combiner avec une journée ou deux en ville."
       },
       {
-        "text": "Questions frequentes"
+        "text": "Questions fréquentes"
       },
       {
         "text": "Marcher est simple ici : le tracé est plat et facile à pied, et la location de voiturette est aussi disponible. Son Antem West convient aux golfeurs en vacances et aux groupes de niveaux mixtes qui recherchent un parcours agréable et accessible près de Palma ; ce n'est pas le parcours à choisir si vous cherchez spécifiquement un tracé qui vous teste du début à la fin. Ce qui surprend les visiteurs : plusieurs greens sont surélevés ou inclinés à l'opposé du joueur, et la balle roule nettement plus loin après l'atterrissage qu'il n'y paraît, donc un chip bas et roulé est souvent le choix le plus sûr. La meilleure heure de départ est en semaine le matin ; le dimanche, le parcours peut se remplir tôt car il est populaire auprès des golfeurs du resort."
@@ -503,19 +503,19 @@ const content = {
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "La grosse erreur consiste a passer en pilote automatique parce que les fairways paraissent larges. Le mauvais côté du fairway compte toujours, certains petits greens exigent un choix de club très precis, et les chips continuent de rouler."
+            "La grosse erreur consiste a passer en pilote automatique parce que les fairways paraissent larges. Le mauvais côté du fairway compte toujours, certains petits greens exigent un choix de club très précis, et les chips continuent de rouler."
           ],
           [
             "Conseil clubhouse",
-            "La petite boutique a côté du check-in est vraiment utile pour un départ matinal. Un cafe, de l eau et un snack la-bas rendent le debut de partie beaucoup plus simple."
+            "La petite boutique a côté du check-in est vraiment utile pour un départ matinal. Un cafe, de l eau et un snack la-bas rendent le début de partie beaucoup plus simple."
           ]
         ]
       },
       {
-        "text": "7/10. Son Antem West est un parcours de resort bien gere, bien entretenu, avec un service fiable et un trace qui convient a beaucoup de joueurs. Le 16 est le meilleur trou, les sections bordees d arbres sont les plus interessantes, et la faune avec la campagne ouverte rendent le cadre meilleur que le parcours seul. Il convient aux golfeurs en vacances, aux groupes mixtes et a ceux qui veulent une partie agreable et accessible pres de Palma. Ce n est pas le bon choix si vous cherchez un parcours qui teste du premier au dernier trou. Vous pouvez voir comment il se compare aux autres sur la <a href=\"/golf-courses\">page complète des parcours de golf a Majorque</a>. Si vous prévoyez plusieurs parcours autour de celui-ci, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre le timing et la logistique."
+        "text": "7/10. Son Antem West est un parcours de resort bien gere, bien entretenu, avec un service fiable et un trace qui convient a beaucoup de joueurs. Le 16 est le meilleur trou, les sections bordees d arbres sont les plus interessantes, et la faune avec la campagne ouverte rendent le cadre meilleur que le parcours seul. Il convient aux golfeurs en vacances, aux groupes mixtes et a ceux qui veulent une partie agréable et accessible près de Palma. Ce n est pas le bon choix si vous cherchez un parcours qui teste du premier au dernier trou. Vous pouvez voir comment il se compare aux autres sur la <a href=\"/golf-courses\">page complète des parcours de golf a Majorque</a>. Si vous prévoyez plusieurs parcours autour de celui-ci, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre le timing et la logistique."
       },
       {
-        "text": "J emmene des clients a Son Antem West lors de journees play-with-a-pro. Envie de le jouer avec quelqu un a vos cotes ?",
+        "text": "J emmène des clients a Son Antem West lors de journées play-with-a-pro. Envie de le jouer avec quelqu un a vos cotes ?",
         "linkLabel": "Voir l expérience play-with-a-pro"
       }
     ]
@@ -703,102 +703,102 @@ const content = {
       "badge": "Banrecension",
       "readTime": "6 min",
       "updated": "Maj 2026",
-      "title": "Son Antem West Golf Club, Mallorca - arlig recension av en PGA Professional (2026)",
+      "title": "Son Antem West Golf Club, Mallorca - ärlig recension av en PGA Professional (2026)",
       "intro": "En resortbana 15-20 minuter från Palma. Bra skick, oppet landskap och en layout som passar många olika spelare.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "Basta golfbanorna pa Mallorca 2026"
+          "title": "Bästa golfbanorna på Mallorca 2026"
         },
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf: arlig recension 2026"
+          "title": "Son Gual Golf: ärlig recension 2026"
         },
         {
           "slug": "alcanada-review",
-          "title": "Alcanada Golf: arlig recension 2026"
+          "title": "Alcanada Golf: ärlig recension 2026"
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Vad kostar golf pa Mallorca?"
+          "title": "Vad kostar golf på Mallorca?"
         }
       ]
     },
     "blocks": [
       {
-        "alt": "Vattenhinder pa Son Antem West, Llucmajor, Mallorca",
-        "caption": "Ett av vattenhalen pa West Course. Banan ligger i Llucmajor, cirka 15-20 minuter från Palma, i oppet landskap utan synliga hus."
+        "alt": "Vattenhinder på Son Antem West, Llucmajor, Mallorca",
+        "caption": "Ett av vattenhalen på West Course. Banan ligger i Llucmajor, cirka 15-20 minuter från Palma, i oppet landskap utan synliga hus."
       },
       {
-        "text": "Tre eller fyra bollar koade redan pa första tee när vi kom 7:50 en sondagsmorgon. Vi hade bokat tidigt for att komma före det tempo som resortbanor ibland kan fa. Det gjorde vi inte."
+        "text": "Tre eller fyra bollar koade redan på första tee när vi kom 7:50 en sondagsmorgon. Vi hade bokat tidigt för att komma före det tempo som resortbanor ibland kan få. Det gjorde vi inte."
       },
       {
-        "text": "Det ar bra att veta innan du slar ett slag pa Son Antem West. Det ar en popular resortbana i en valorganiserad anlaggning nara Palma. Gar du in med den forvantningen blir rundan trevlig. Vantar du dig en tyst, ostord upplevelse kanske inte."
+        "text": "Det är bra att veta innan du slår ett slag på Son Antem West. Det är en popular resortbana i en valorganiserad anlaggning nära Palma. Går du in med den forvantningen blir rundan trevlig. Väntar du dig en tyst, ostord upplevelse kanske inte."
       },
       {
         "text": "Första intrycket"
       },
       {
-        "text": "När man kor in i resorten marks skalan direkt. Bostader, stora gronytor, golfakademi, padelbanor och hotell. Det kanns som en komplett golfdestination. Incheckningen var organiserad, personalen hjalpsam, och en liten butik nara ingang gjorde kaffe och snack före rundan enkelt. En bra detalj 7:45 pa morgonen."
+        "text": "När man kor in i resorten marks skalan direkt. Bostader, stora gronytor, golfakademi, padelbanor och hotell. Det känns som en komplett golfdestination. Incheckningen var organiserad, personalen hjalpsam, och en liten butik nära ingang gjorde kaffe och snack före rundan enkelt. En bra detalj 7:45 på morgonen."
       },
       {
-        "text": "Ute pa banan öppnar landskapet sig. West Course ligger i mallorkinsk landsbygd nara Llucmajor, 15 till 20 minuter från Palma. Inga hus syns från fairways, Randa-berget ligger i bakgrunden pa back nine, och djurlivet finns där hela rundan. Kaniner korsar fairways regelbundet. Hagrar och andra faglar syns runt vattenhalen. Det kanns inte som en forortsbana, och det hjalper."
+        "text": "Ute på banan öppnar landskapet sig. West Course ligger i mallorkinsk landsbygd nära Llucmajor, 15 till 20 minuter från Palma. Inga hus syns från fairways, Randa-berget ligger i bakgrunden på back nine, och djurlivet finns där hela rundan. Kaniner korsar fairways regelbundet. Hagrar och andra faglar syns runt vattenhalen. Det känns inte som en forortsbana, och det hjalper."
       },
       {
-        "alt": "Faglar pa fairway pa Son Antem West med vatten och green bakom, Mallorca",
-        "caption": "Djurlivet ar tydligt pa back nine: kaniner, hagrar och olika faglar, framfor allt runt vattenhalen."
+        "alt": "Faglar på fairway på Son Antem West med vatten och green bakom, Mallorca",
+        "caption": "Djurlivet är tydligt på back nine: kaniner, hagrar och olika faglar, framför allt runt vattenhalen."
       },
       {
         "text": "Banan"
       },
       {
-        "text": "Francisco Lopez Segales designade Son Antem West, som oppnade 1995. Den spelar som par 72 och mater 6 293 meter från bakre tee. Layouten ar generellt öppen, fairways ar generosa, och de flesta utslag straffar inte en liten miss for hart. Det gor den tillgänglig for blandade grupper och semestergolfare. Det ar tydligt vad den ar byggd for."
+        "text": "Francisco Lopez Segales designade Son Antem West, som oppnade 1995. Den spelar som par 72 och mater 6 293 meter från bakre tee. Layouten är generellt öppen, fairways är generösa, och de flesta utslag straffar inte en liten miss för hårt. Det gör den tillgänglig för blandade grupper och semestergolfare. Det är tydligt vad den är byggd för."
       },
       {
-        "text": "Halen som sticker ut ar de tradkantade. Där ar utslaget smalare, linjen viktigare och inspelet andras beroende pa vilken sida av fairway du hittar. De oppnare partierna ar trevliga men ger mindre att tanka pa från tee. Valj ett mal och swing."
+        "text": "Hålen som sticker ut är de tradkantade. Där är utslaget smalare, linjen viktigare och inspelet andras beroende på vilken sida av fairway du hittar. De oppnare partierna är trevliga men ger mindre att tanka på från tee. Välj ett mål och swing."
       },
       {
-        "alt": "Andy Griffiths tittar pa en klients jarnslag pa ett tradkantat hål pa Son Antem West",
-        "caption": "Driver pa ett av back-nine-halen. Banan var i gott skick hela rundan."
+        "alt": "Andy Griffiths tittar på en klients jarnslag på ett tradkantat hål på Son Antem West",
+        "caption": "Driver på ett av back-nine-halen. Banan var i gott skick hela rundan."
       },
       {
-        "text": "Nagra hål ar vard att kanna till. 10 ar en dogleg hoger med vatten kort om green. Inspelsslaget ger ett beslut: ta vattenhindret eller lagga upp, beroende pa utslaget. 12 ar en ganska öppen par 4, men Randa-berget i bakgrunden gor den till ett av de snyggare halen pa back nine. 16 ar banans basta hål: en uppfors dogleg hoger par 5 genom traden till en liten, skyddad green. 18 har vatten langs en stor del av vanstersidan från tee."
+        "text": "Några hål är värd att kanna till. 10 är en dogleg höger med vatten kort om green. Inspelsslaget ger ett beslut: ta vattenhindret eller lagga upp, beroende på utslaget. 12 är en ganska öppen par 4, men Randa-berget i bakgrunden gör den till ett av de snyggare hålen på back nine. 16 är banans bästa hål: en uppfors dogleg höger par 5 genom träden till en liten, skyddad green. 18 har vatten langs en stor del av vänstersidan från tee."
       },
       {
-        "alt": "Inspel mot hål 16 pa Son Antem West, par 5 genom traden, Mallorca",
-        "caption": "In mot 16. En uppfors par 5 som slingrar sig genom traden innan den slutar vid en liten, skyddad green."
+        "alt": "Inspel mot hål 16 på Son Antem West, par 5 genom träden, Mallorca",
+        "caption": "In mot 16. En uppfors par 5 som slingrar sig genom träden innan den slutar vid en liten, skyddad green."
       },
       {
-        "alt": "Hål 18 pa Son Antem West med vatten till vanster om fairway, Mallorca",
-        "caption": "Tillbaka nedfor 18. Vattnet tacker en stor del av vanstersidan från tee."
+        "alt": "Hål 18 på Son Antem West med vatten till vänster om fairway, Mallorca",
+        "caption": "Tillbaka nedfor 18. Vattnet täcker en stor del av vänstersidan från tee."
       },
       {
         "text": "Greenerna"
       },
       {
-        "text": "Sma och ondulerade, och de rullar rent. Hastigheten var bra, inte särskilt snabb, men jamn och arlig. Ytorna var i bra skick for en bana med sa mycket trafik en sondag. Flera greener ar upphojda eller lutar bort från spelaren. Bra att veta före chippen: bollen rullar betydligt laengre efter landning an det ser ut. Ett lagre rullande slag ar ofta bättre an att försöka landa något mjukt pa kanten."
+        "text": "Små och ondulerade, och de rullar rent. Hastigheten var bra, inte särskilt snabb, men jamn och ärlig. Ytorna var i bra skick för en bana med så mycket trafik en sondag. Flera greener är upphöjda eller lutar bort från spelaren. Bra att veta före chippen: bollen rullar betydligt laengre efter landning an det ser ut. Ett lagre rullande slag är ofta bättre an att försöka landa något mjukt på kanten."
       },
       {
         "text": "Skick"
       },
       {
-        "text": "Mycket bra med tanke pa trafiken. Fairways var fasta, greenerna rullade jamnt och presentationen holl hela rundan. Det var nästan ingen vind, vilket gjorde forhallandena sa enkla som de blir har. Från bakre tee kandes banan inte särskilt lang i lugn luft."
+        "text": "Mycket bra med tanke på trafiken. Fairways var fasta, greenerna rullade jamnt och presentationen holl hela rundan. Det var nästan ingen vind, vilket gjorde förhållandena så enkla som de blir har. Från bakre tee kandes banan inte särskilt lång i lugn luft."
       },
       {
-        "text": "Att ga banan"
+        "text": "Att gå banan"
       },
       {
-        "text": "Det gar alldeles utmärkt. Routingen ar enkel och terrangen platt. Det fanns ett par stallen mellan hål där gangvagen inte var helt tydlig, men inget viktigt. For den som hellre gar an tar buggy ar detta en enkel bana att ga."
+        "text": "Det går alldeles utmärkt. Routingen är enkel och terrangen platt. Det fanns ett par stallen mellan hål där gangvagen inte var helt tydlig, men inget viktigt. För den som hellre går an tar buggy är detta en enkel bana att gå."
       },
       {
-        "alt": "Andy Griffiths med klienter pa en play-with-a-pro-dag pa Son Antem West, Mallorca",
-        "caption": "En play-with-a-pro-dag pa Son Antem West. Layouten ar tillräckligt forlatande for att gaster ska kunna spela fritt."
+        "alt": "Andy Griffiths med klienter på en play-with-a-pro-dag på Son Antem West, Mallorca",
+        "caption": "En play-with-a-pro-dag på Son Antem West. Layouten är tillräckligt forlatande för att gaster ska kunna spela fritt."
       },
       {
-        "text": "Den arliga delen"
+        "text": "Den ärliga delen"
       },
       {
-        "text": "En stor del av Son Antem West ar strategiskt platt. De öppna halen ger breda landningsytor, ett enkelt inspel och en liten green att sikta pa. Du kan spela de halen nästan pa autopilot. Jamfort med Son Gual, Alcanada eller Andratx kraver banan mindre mentalt. Med greenfee i samma spann konkurrerar den prismassigt, men layouten stannar inte kvar lika starkt."
+        "text": "En stor del av Son Antem West är strategiskt platt. De öppna hålen ger breda landningsytor, ett enkelt inspel och en liten green att sikta på. Du kan spela de hålen nästan på autopilot. Jamfort med Son Gual, Alcanada eller Andratx kräver banan mindre mentalt. Med greenfee i samma spann konkurrerar den prismassigt, men layouten stannar inte kvar lika starkt."
       },
       {
         "items": [
@@ -824,10 +824,10 @@ const content = {
         "text": "Praktisk information"
       },
       {
-        "text": "Greenfee: 105 euro den dag vi spelade. Resorten fungerar bra före och efter rundan. Det finns en liten butik vid incheckningen for kaffe, vatten och snacks, vilket ar verkligt anvandbart vid tidig starttid. Buggy finns. Att ga ar enkelt hela vagen."
+        "text": "Greenfee: 105 euro den dag vi spelade. Resorten fungerar bra före och efter rundan. Det finns en liten butik vid incheckningen för kaffe, vatten och snacks, vilket är verkligt anvandbart vid tidig starttid. Buggy finns. Att gå är enkelt hela vägen."
       },
       {
-        "text": "Plats: Llucmajor, cirka 15 till 20 minuter soder om Palma. Latt att na och latt att kombinera med en dag eller två i staden."
+        "text": "Plats: Llucmajor, cirka 15 till 20 minuter soder om Palma. Lätt att na och lätt att kombinera med en dag eller två i staden."
       },
       {
         "text": "Vanliga frågor"
@@ -836,34 +836,34 @@ const content = {
         "text": "Att gå är enkelt här: sträckningen är flack och lätt att gå, buggyhyra finns också. Son Antem West passar semestergolfare och grupper med blandad nivå som vill ha en trevlig, tillgänglig runda nära Palma; det är inte banan att välja om du specifikt vill ha en layout som testar dig från början till slut. Vad som överraskar besökare: flera greener är upphöjda eller lutar bort från spelaren, och bollen rullar betydligt längre efter landning än det ser ut, så en låg, rullande chip är ofta det säkrare valet. Bästa starttiden är en vardagsmorgon; söndagar kan bli fulla tidigt eftersom banan är populär bland resortgolfare."
       },
       {
-        "text": "Omdome"
+        "text": "Omdöme"
       },
       {
         "title": "Fyra säker jag skulle vilja veta innan jag bokar Son Antem West",
         "items": [
           [
-            "Basta starttid",
-            "Vardagsmorgnar ar sweet spot har om du kan fa till det. Sonderdagar kan korka igen tidigt, till och med i första vagen, eftersom banan ar sa populart bland resortgaster."
+            "Bästa starttid",
+            "Vardagsmorgnar är sweet spot har om du kan få till det. Sonderdagar kan korka igen tidigt, till och med i första vägen, eftersom banan är så populart bland resortgaster."
           ],
           [
             "Vindtips",
-            "En lugn dag ar banan mycket spelbar, och det ar precis darfor den fungerar bra for blandade grupper. Om brisen kommer upp, fokusera pa landningsytor och hall talamodet uppe."
+            "En lugn dag är banan mycket spelbar, och det är precis därför den fungerar bra för blandade grupper. Om brisen kommer upp, fokusera på landningsytor och hall talamodet uppe."
           ],
           [
-            "Där besokare tappar slag",
-            "Det stora misstaget ar att ga pa autopilot eftersom fairways ser generosa ut. Fel sida av fairway spelar fortfarande roll, vissa av de mindre greenerna kravs noggrant klubbval och chipparna fortsatter rulla."
+            "Där besökare tappar slag",
+            "Det stora misstaget är att gå på autopilot eftersom fairways ser generösa ut. Fel sida av fairway spelar fortfarande roll, vissa av de mindre greenerna krävs noggrant klubbval och chipparna fortsätter rulla."
           ],
           [
             "Klubbhustips",
-            "Den lilla butiken vid check-in ar verkligen anvandbar vid en tidig start. Kaffe, vatten och ett snack där gor oppningen av rundan mycket enklare."
+            "Den lilla butiken vid check-in är verkligen anvandbar vid en tidig start. Kaffe, vatten och ett snack där gör oppningen av rundan mycket enklare."
           ]
         ]
       },
       {
-        "text": "7/10. Son Antem West ar en valskott resortbana med bra skick, palitlig service och en layout som passar många spelare. 16 ar basta halet, de tradkantade partierna ar mest engagerande, och djurlivet tillsammans med det öppna landskapet gor miljon bättre an banan ensam. Den passar semestergolfare, blandade grupper och alla som vill ha en trevlig, tillgänglig runda nara Palma. Den ar inte rätt val om du soker en bana som testar dig från borjan till slut. Se hur den passar in bland de andra pa <a href=\"/golf-courses\">hela sidan om Mallorcas golfbanor</a>. Planerar du flera rundor kring den här banan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp timing och logistik."
+        "text": "7/10. Son Antem West är en välskött resortbana med bra skick, palitlig service och en layout som passar många spelare. 16 är bästa halet, de tradkantade partierna är mest engagerande, och djurlivet tillsammans med det öppna landskapet gör miljon bättre an banan ensam. Den passar semestergolfare, blandade grupper och alla som vill ha en trevlig, tillgänglig runda nära Palma. Den är inte rätt val om du soker en bana som testar dig från borjan till slut. Se hur den passar in bland de andra på <a href=\"/golf-courses\">hela sidan om Mallorcas golfbanor</a>. Planerar du flera rundor kring den här banan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp timing och logistik."
       },
       {
-        "text": "Jag tar klienter till Son Antem West pa play-with-a-pro-dagar. Vill du spela den med någon vid din sida?",
+        "text": "Jag tar klienter till Son Antem West på play-with-a-pro-dagar. Vill du spela den med någon vid din sida?",
         "linkLabel": "Se play-with-a-pro-upplevelsen"
       }
     ]

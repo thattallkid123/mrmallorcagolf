@@ -18,7 +18,7 @@ const content = {
         },
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf: analisis honesto 2026"
+          "title": "Son Gual Golf: análisis honesto 2026"
         },
         {
           "slug": "golf-trip-planning-mallorca",
@@ -128,11 +128,11 @@ const content = {
         "items": [
           [
             "Mejor hora de salida",
-            "La manana es ideal aquí. La luz es mejor y normalmente tiene la versión más suave de la brisa costera."
+            "La mañana es ideal aquí. La luz es mejor y normalmente tiene la versión más suave de la brisa costera."
           ],
           [
             "Consejo con el viento",
-            "Trate los hoyos expuestos con respeto. El aire del mar puede hacer que una distancia comoda juegue de repente un palo más, sobre todo cuando va contra el viento en la segunda vuelta."
+            "Trate los hoyos expuestos con respeto. El aire del mar puede hacer que una distancia cómoda juegue de repente un palo más, sobre todo cuando va contra el viento en la segunda vuelta."
           ],
           [
             "Donde suelen perder golpes los visitantes",
@@ -140,7 +140,7 @@ const content = {
           ],
           [
             "Consejo de casa club",
-            "Deje tiempo para almorzar en la terraza. La comida es muy buena, la terraza grande mira al faro y alarga un gran dia."
+            "Deje tiempo para almorzar en la terraza. La comida es muy buena, la terraza grande mira al faro y alarga un gran día."
           ]
         ]
       },
@@ -360,7 +360,7 @@ const content = {
         },
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf : avis honnete 2026"
+          "title": "Son Gual Golf : avis honnête 2026"
         },
         {
           "slug": "golf-trip-planning-mallorca",
@@ -368,7 +368,7 @@ const content = {
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Combien coute le golf a Majorque ?"
+          "title": "Combien coûte le golf a Majorque ?"
         }
       ]
     },
@@ -470,7 +470,7 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Le matin est idéal ici. La lumiere est la meilleure et la brise cotiere est en général la plus douce."
+            "Le matin est idéal ici. La lumière est la meilleure et la brise cotiere est en général la plus douce."
           ],
           [
             "Conseil vent",
@@ -478,7 +478,7 @@ const content = {
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "La vue peut faire paraitre le départ plus simple qu il ne l est. Choisissez d abord votre ligne, surtout depuis les tees sureleves, puis attendez-vous a des greens rapides avec très peu de putts faciles."
+            "La vue peut faire paraitre le départ plus simple qu il ne l est. Choisissez d abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous a des greens rapides avec très peu de putts faciles."
           ],
           [
             "Conseil clubhouse",
@@ -496,7 +496,7 @@ const content = {
         "caption": "La terrasse du club."
       },
       {
-        "text": "Questions frequentes"
+        "text": "Questions fréquentes"
       },
       {
         "text": "La marche est possible avec un chariot électrique (20 €) en plus de la voiturette (48 €), et une licence fédérale journalière (3 €) s'applique pour les non-fédérés. Alcanada convient aux golfeurs confiants qui recherchent un vrai test mémorable plutôt qu'un parcours facile : les greens sont très ondulés et rapides malgré le cadre spectaculaire. Ce qui surprend les visiteurs pour la première fois : la vue peut donner l'impression que le coup de départ est plus facile qu'il ne l'est, donc choisissez votre ligne avant de profiter du paysage. La meilleure heure de départ est le matin, pour la brise la plus calme et la meilleure lumière, et il vaut la peine de prévoir du temps ensuite pour déjeuner sur la terrasse face au phare."
@@ -696,11 +696,11 @@ const content = {
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "De basta golfbanorna pa Mallorca 2026"
+          "title": "De bästa golfbanorna på Mallorca 2026"
         },
         {
           "slug": "son-gual-review",
-          "title": "Son Gual Golf: arlig recension 2026"
+          "title": "Son Gual Golf: ärlig recension 2026"
         },
         {
           "slug": "golf-trip-planning-mallorca",
@@ -708,7 +708,7 @@ const content = {
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Vad kostar golf pa Mallorca?"
+          "title": "Vad kostar golf på Mallorca?"
         }
       ]
     },
@@ -768,7 +768,7 @@ const content = {
         "text": "Designarvet"
       },
       {
-        "text": "Robert Trent Jones Jr:s far ritade Valderrama - värd för Ryder Cup 1997 - och Spyglass Hill i Pebble Beach. RTJ Jr. ritade också Spring City Golf i Kunming, rankad som Kinas bästa bana av Golf Digest. Den linjen känns i Alcanada: inget verkar slumpmässigt, allt använder marken smart."
+        "text": "Robert Trent Jones Jr:s får ritade Valderrama - värd för Ryder Cup 1997 - och Spyglass Hill i Pebble Beach. RTJ Jr. ritade också Spring City Golf i Kunming, rankad som Kinas bästa bana av Golf Digest. Den linjen känns i Alcanada: inget verkar slumpmässigt, allt använder marken smart."
       },
       {
         "caption": "En sommarkväll runda. Ljuset på Alcanada i juli är något speciellt."
@@ -809,20 +809,20 @@ const content = {
         "title": "Fyra säker jag skulle vilja veta innan jag bokar Alcanada",
         "items": [
           [
-            "Basta starttid",
-            "Morgonen ar idealisk har. Ljuset ar som bäst och kustbrisen ar oftast som mildast."
+            "Bästa starttid",
+            "Morgonen är idealisk har. Ljuset är som bäst och kustbrisen är oftast som mildast."
           ],
           [
             "Vindtips",
-            "Respektera de öppna halen. Havsluften kan fa ett bekvamt avstand att plotsligt spela en klubba laengre, särskilt när du spelar i motvind pa back nine."
+            "Respektera de öppna hålen. Havsluften kan få ett bekvamt avstand att plotsligt spela en klubba laengre, särskilt när du spelar i motvind på back nine."
           ],
           [
-            "Där besokare tappar slag",
-            "Utsikten kan fa utslaget att kannas enklare an det ar. Valj linjen forst, särskilt från de upphojda tees, och var sedan redo for snabba greener med valdigt fa enkla puttar."
+            "Där besökare tappar slag",
+            "Utsikten kan få utslaget att kannas enklare an det är. Välj linjen först, särskilt från de upphöjda tees, och var sedan redo för snabba greener med väldigt få enkla puttar."
           ],
           [
             "Klubbhustips",
-            "Lamna tid for lunch pa terrassen. Maten ar riktigt bra, den stora terrassen vetter mot fyren och forlanger en redan fin dag."
+            "Lämna tid för lunch på terrassen. Maten är riktigt bra, den stora terrassen vetter mot fyren och forlanger en redan fin dag."
           ]
         ]
       },

@@ -184,7 +184,7 @@ const content = {
         "text": "Au-delà du coaching, vous obtenez une partie à Majorque sur l'un des parcours remarquables de l'île, avec quelqu'un qui connaît chaque trou et peut rendre la journée réellement agréable. C'est cette combinaison qui est au cœur de l'<a href=\"/play-with-a-pro\">expérience Play With A Pro</a>."
       },
       {
-        "text": "Questions frequentes"
+        "text": "Questions fréquentes"
       },
       {
         "text": "Le coaching sur le parcours convient à un large éventail de joueurs, de ceux dont la gestion de parcours freine un niveau de jeu raisonnable, aux visiteurs qui veulent tirer davantage de parcours comme Son Gual ou Alcanada. C'est aussi une bonne option pour des duos ou petits groupes coachés ensemble. Les sessions ont lieu principalement à Son Gual, le parcours qu'Andy joue le plus sur l'île, ou à Alcanada pour les groupes qui veulent le parcours le plus spectaculaire ; d'autres parcours sont utilisés selon le groupe et ce qu'il souhaite travailler. La plupart des joueurs repartent avec trois ou quatre points précis à travailler, plutôt qu'une longue liste de défauts de swing, ainsi qu'une compréhension plus claire de la gestion de parcours : quand prendre des risques et quand jouer la sécurité."
@@ -263,7 +263,7 @@ const content = {
         "text": "Ik bied ook sessies op de driving range en oefenfaciliteiten aan voor spelers die aan specifieke technische elementen willen werken voordat ze de baan op gaan. De twee benaderingen werken goed samen. Maar als je weinig tijd heeft op Mallorca en de snelste, meest praktische verbetering van je echte spel wilt, is on-course de plek om te beginnen."
       },
       {
-        "text": "Geinteresseerd in een Play With A Pro dag? On-course coaching op een van de beste banen van Mallorca.",
+        "text": "Geïnteresseerd in een Play With A Pro dag? On-course coaching op een van de beste banen van Mallorca.",
         "linkLabel": "Bekijk hoe het werkt →"
       }
     ]

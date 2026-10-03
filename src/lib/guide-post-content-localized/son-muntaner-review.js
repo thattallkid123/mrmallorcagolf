@@ -204,11 +204,11 @@ const content = {
           ],
           [
             "Donde suelen perder golpes los visitantes",
-            "Mucha gente ataca los greens desde el angulo equivocado, se queda corta en los pares 3 elevados o subestima lo pequenos que son los objetivos reales desde lejos."
+            "Mucha gente ataca los greens desde el ángulo equivocado, se queda corta en los pares 3 elevados o subestima lo pequeños que son los objetivos reales desde lejos."
           ],
           [
             "Consejo de casa club",
-            "Quedese a comer después. El restaurante es mejor que una parada rápida de casa club y tiene sentido si Son Muntaner es su dia en Palma."
+            "Quedese a comer después. El restaurante es mejor que una parada rápida de casa club y tiene sentido si Son Muntaner es su día en Palma."
           ]
         ]
       },
@@ -636,7 +636,7 @@ const content = {
         "text": "Tarification dynamique via le système de réservation d'Arabella Golf Mallorca. Le tarif de pointe actuel est de 260 € pour 18 trous, et les créneaux les plus bas tournent autour de 110 €. Ce prix bas dépend généralement de la saison ou d'horaires plus tardifs, et il n'est pas disponible en continu. Consultez les tarifs actuels sur arabellagolfmallorca.com. Certificat de handicap requis."
       },
       {
-        "text": "Questions frequentes"
+        "text": "Questions fréquentes"
       },
       {
         "text": "C'est votre première fois sur ce parcours ? Avancez jusqu'à l'avant du premier départ et observez bien avant de jouer. Le practice se trouve juste hors de vue sur la droite, et il est facile de dériver dans cette direction depuis le départ si vous n'avez pas vu l'ensemble du tableau. La plupart des visiteurs qui partent à droite sur le trou d'ouverture n'ont tout simplement pas eu une vue claire de leur trajectoire."
@@ -649,7 +649,7 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Si vous logez a Palma, profitez de la proximite et partez tot. Vous aurez le trajet facile, des greens plus frais et un debut un peu plus calme avant que le tee sheet se remplisse."
+            "Si vous logez a Palma, profitez de la proximité et partez tôt. Vous aurez le trajet facile, des greens plus frais et un début un peu plus calme avant que le tee sheet se remplisse."
           ],
           [
             "Conseil vent",
@@ -657,11 +657,11 @@ const content = {
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "Beaucoup attaquent les greens depuis le mauvais angle, restent courts sur les par 3 sureleves ou sous-estiment la petite taille des vraies cibles vues de loin."
+            "Beaucoup attaquent les greens depuis le mauvais angle, restent courts sur les par 3 surélevés ou sous-estiment la petite taille des vraies cibles vues de loin."
           ],
           [
             "Conseil clubhouse",
-            "Restez manger après la partie. Le restaurant vaut mieux qu un simple arret au clubhouse et fonctionne bien si Son Muntaner est votre journée Palma."
+            "Restez manger après la partie. Le restaurant vaut mieux qu un simple arrêt au clubhouse et fonctionne bien si Son Muntaner est votre journée Palma."
           ]
         ]
       },
@@ -1100,20 +1100,20 @@ const content = {
         "title": "Fyra säker jag skulle vilja veta innan jag bokar Son Muntaner",
         "items": [
           [
-            "Basta starttid",
-            "Om du bor i Palma, utnyttja narheten och ga ut tidigt. Du far enkel transfer, fraschare greener och en lite lugnare start innan tee sheet fylls upp."
+            "Bästa starttid",
+            "Om du bor i Palma, utnyttja narheten och gå ut tidigt. Du får enkel transfer, fraschare greener och en lite lugnare start innan tee sheet fylls upp."
           ],
           [
             "Vindtips",
-            "Det har ar forst och framst en positionsbana. Valj landningsyta, inte den heroiska linjen, och lat buggyn spara benen till senare i rundan."
+            "Det har är först och framst en positionsbana. Välj landningsyta, inte den heroiska linjen, och lat buggyn spara benen till senare i rundan."
           ],
           [
-            "Där besokare tappar slag",
-            "Många attackerar greener från fel vinkel, kommer kort pa de upphojda par 3-halen eller underskattar hur sma de verkliga malen ar pa distans."
+            "Där besökare tappar slag",
+            "Många attackerar greener från fel vinkel, kommer kort på de upphöjda par 3-halen eller underskattar hur små de verkliga malen är på distans."
           ],
           [
             "Klubbhustips",
-            "Stanna och at efter rundan. Restaurangen ar bättre an ett snabbt klubbhusstopp och passar bra om Son Muntaner ar din Palma-dag."
+            "Stanna och åt efter rundan. Restaurangen är bättre an ett snabbt klubbhusstopp och passar bra om Son Muntaner är din Palma-dag."
           ]
         ]
       },

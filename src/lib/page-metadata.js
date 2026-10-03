@@ -50,9 +50,9 @@ const HOME_METADATA = {
       'Clases de golf en Mallorca con Andy Griffiths, PGA Advanced Professional. Coaching en campo, itinerarios y recomendaciones locales para su visita.',
   },
   fr: {
-    title: 'Golf a Majorque avec PGA Pro',
+    title: 'Golf à Majorque avec PGA Pro',
     description:
-      'Journees golf a Majorque avec Andy Griffiths, PGA Advanced Professional. Jouez Son Gual, Alcanada et plus, avec tous les details organises.',
+      'Journées golf à Majorque avec Andy Griffiths, PGA Advanced Professional. Jouez Son Gual, Alcanada et plus, avec tous les détails organisés.',
   },
   nl: {
     title: 'Golf op Mallorca met PGA Pro',
@@ -60,9 +60,9 @@ const HOME_METADATA = {
       'Golfdagen op Mallorca met Andy Griffiths, PGA Advanced Professional. Speel Son Gual, Alcanada en meer, met alles geregeld.',
   },
   sv: {
-    title: 'Golf pa Mallorca med PGA-proffs',
+    title: 'Golf på Mallorca med PGA-proffs',
     description:
-      'Golfdagar pa Mallorca med Andy Griffiths, PGA Advanced Professional. Spela Son Gual, Alcanada och mer, med allt ordnat.',
+      'Golfdagar på Mallorca med Andy Griffiths, PGA Advanced Professional. Spela Son Gual, Alcanada och mer, med allt ordnat.',
   },
   zh: {
     title: '马略卡高尔夫｜上海 11 年经验 · 普通话 · 抖音',

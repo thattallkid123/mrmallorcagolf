@@ -134,7 +134,7 @@ const content = {
         "text": "9/10. T Golf Calvià es uno de los campos mejor cuidados que he jugado en Mallorca. Los greens son excelentes, las calles están en gran forma, y el diseño te pone a prueba de verdad, especialmente en el cálculo de distancias y con el agua, sin ser injusto."
       },
       {
-        "title": "Cuatro cosas que yo sabria antes de reservar T Golf Calvia",
+        "title": "Cuatro cosas que yo sabria antes de reservar T Golf Calvià",
         "items": [
           [
             "Mejor hora de salida",
@@ -444,10 +444,10 @@ const content = {
         "text": "Un point à noter : la signalisation autour des zones buggy restreintes pourrait être plus claire. À deux reprises, je me suis retrouvé dans des zones qui n'étaient pas clairement indiquées comme interdites et j'ai dû faire demi-tour. Ce n'est pas un problème une fois qu'on connaît le parcours."
       },
       {
-        "text": "Questions frequentes"
+        "text": "Questions fréquentes"
       },
       {
-        "text": "Avant de réserver, pensez a l'heure de départ, au vent, au rythme et au niveau du groupe. Reservez tot, choisissez les bons departs et gardez du temps après la partie."
+        "text": "Avant de réserver, pensez a l'heure de départ, au vent, au rythme et au niveau du groupe. Reservez tôt, choisissez les bons départs et gardez du temps après la partie."
       },
       {
         "alt": "Pins encadrant le fairway sur le T Golf Calvià avec de l'eau et des montagnes visibles au-delà",
@@ -458,11 +458,11 @@ const content = {
         "text": "9/10. T Golf Calvià est l'un des parcours les mieux entretenus que j'aie joués à Majorque. Les greens sont excellents, les fairways en très bon état, et le dessin du parcours vous teste sérieusement, notamment sur l'évaluation des distances et avec l'eau, sans être injuste."
       },
       {
-        "title": "Quatre choses que je voudrais savoir avant de réserver T Golf Calvia",
+        "title": "Quatre choses que je voudrais savoir avant de réserver T Golf Calvià",
         "items": [
           [
             "Meilleur départ",
-            "Le twilight en semaine est un très bon plan ici. Vous avez le parcours dans une belle lumiere, un rythme plus calme et des tarifs twilight très raisonnables en plus."
+            "Le twilight en semaine est un très bon plan ici. Vous avez le parcours dans une belle lumière, un rythme plus calme et des tarifs twilight très raisonnables en plus."
           ],
           [
             "Conseil vent",
@@ -474,7 +474,7 @@ const content = {
           ],
           [
             "Conseil clubhouse",
-            "Utilisez le practice sur herbe avant de partir et gardez du temps pour boire quelque chose après. L ensemble parait plus complet quand on ne traite pas la partie comme une course."
+            "Utilisez le practice sur herbe avant de partir et gardez du temps pour boire quelque chose après. L ensemble paraît plus complet quand on ne traite pas la partie comme une course."
           ]
         ]
       },
@@ -621,7 +621,7 @@ const content = {
         "text": "9/10. T Golf Calvià is een van de best onderhouden banen die ik op Mallorca heb gespeeld. De greens zijn uitstekend, de fairways in goede conditie, en de indeling test je serieus, met name rond afstandsbeoordeling en water, zonder oneerlijk te zijn."
       },
       {
-        "title": "Vier dingen die ik zou willen weten voor ik T Golf Calvia boek",
+        "title": "Vier dingen die ik zou willen weten voor ik T Golf Calvià boek",
         "items": [
           [
             "Beste starttijd",
@@ -771,7 +771,7 @@ const content = {
         "text": "Vanliga frågor"
       },
       {
-        "text": "Innan du bokar, tank pa starttid, vind, tempo och om banan passar gruppen. Boka tidigt, valj rimliga tees och lamna tid efter ronden."
+        "text": "Innan du bokar, tank på starttid, vind, tempo och om banan passar gruppen. Boka tidigt, välj rimliga tees och lämna tid efter ronden."
       },
       {
         "alt": "Tallar som ramar in fairway på T Golf Calvià med vatten och berg synliga bortom",
@@ -784,23 +784,23 @@ const content = {
         "text": "9/10. T Golf Calvià är en av de bäst skötta banor jag spelat på Mallorca. Greenerna är utmärkta, fairways i bra skick, och layouten testar en ordentligt, särskilt kring avståndsbedömning och vatten, utan att vara orättvis."
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar T Golf Calvia",
+        "title": "Fyra säker jag skulle vilja veta innan jag bokar T Golf Calvià",
         "items": [
           [
-            "Basta starttid",
-            "Twilight mitt i veckan ar ett mycket bra spel har. Du far banan i vackert ljus, ett lugnare tempo och dessutom mycket rimliga twilight-priser."
+            "Bästa starttid",
+            "Twilight mitt i veckan är ett mycket bra spel har. Du får banan i vackert ljus, ett lugnare tempo och dessutom mycket rimliga twilight-priser."
           ],
           [
             "Vindtips",
-            "Utga från ditt nummer, inte från vad ogat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar alla som gissar i stallet for att bestamma sig."
+            "Utga från ditt nummer, inte från vad ogat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar alla som gissar i stället för att bestamma sig."
           ],
           [
-            "Där besokare tappar slag",
-            "Det vanliga misstaget ar att ta for lite klubba pa halen som ser snallare ut an de ar, och sedan bli aggressiv sa att annu mer vatten kommer in i spelet."
+            "Där besökare tappar slag",
+            "Det vanliga misstaget är att ta för lite klubba på hålen som ser snallare ut an de är, och sedan bli aggressiv så att annu mer vatten kommer in i spelet."
           ],
           [
             "Klubbhustips",
-            "Använd grasrangen innan du gar ut och lamna sedan tid for en drink efterat. Helheten kanns mer komplett om du inte behandlar rundan som något du bara ska skynda igenom."
+            "Använd grasrangen innan du går ut och lämna sedan tid för en drink efterat. Helheten känns mer komplett om du inte behandlar rundan som något du bara ska skynda igenom."
           ]
         ]
       },

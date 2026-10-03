@@ -8,7 +8,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "De un vistazo",
       "title": "Entienda la oferta antes de consultar.",
       "items": [
-        { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un dia de golf de verdad en Mallorca." },
+        { "label": "Ideal para", "text": "Golfistas solos, parejas y grupos pequeños que quieren un día de golf de verdad en Mallorca." },
         { "label": "Formato", "text": "Un campo, 18 hoyos, elegido según su juego, conmigo a su lado durante toda la vuelta." },
         { "label": "Precios", "text": "Solo desde €795. Grupo desde €950 en total. Los green fees van aparte y se confirman antes de reservar." },
         { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de handicap. Le respondo personalmente en 24 horas." }
@@ -185,7 +185,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "Todo organizado. Todos los detalles se confirman antes del día.",
           "features": [
             "Campo, hora de salida privada y un día completamente organizado conmigo",
-            "Sesión de recuperacion y rendimiento deportivo con John Brazier",
+            "Sesión de recuperación y rendimiento deportivo con John Brazier",
             "Traslados privados de ida y vuelta al campo",
             "Cena en hotel o restaurante recomendado, o chef privado si encaja"
           ],
@@ -214,7 +214,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "¿Busca algo más grande?",
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
         "body": "Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
-        "detail": "Signature Day. Un dia privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversacion, cuando el dia tiene forma.",
+        "detail": "Signature Day. Un día privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.",
         "button": "Consultar un viaje de varios días →",
         "href": "/es/contact"
       }
@@ -578,7 +578,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Idéal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journée de golf a Majorque." },
         { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi a vos cotes pendant toute la partie." },
-        { "label": "Tarifs", "text": "Solo a partir de €795. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la reservation." },
+        { "label": "Tarifs", "text": "Solo a partir de €795. Groupe a partir de €950 au total. Les green fees restent a part et sont confirmes avant la réservation." },
         { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Je réponds personnellement sous 24 heures." }
       ],
       "signatureRoute": {
@@ -657,7 +657,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Un cadeau qui sera vraiment utilise",
-          "text": "La journée fonctionne bien pour un anniversaire important, un départ a la retraite ou une recompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les details prives jusqu au bon moment."
+          "text": "La journée fonctionne bien pour un anniversaire important, un départ a la retraite ou une récompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les détails privés jusqu au bon moment."
         }
       ]
     },
@@ -753,7 +753,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "Tout est organisé. Tous les détails sont confirmés avant la journée.",
           "features": [
             "Parcours, départ privé et une journée entièrement organisée avec moi",
-            "Session recuperation et performance sportive avec John Brazier",
+            "Session récupération et performance sportive avec John Brazier",
             "Transferts privés aller-retour au parcours",
             "Dîner dans un hôtel partenaire"
           ],
@@ -782,7 +782,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Vous cherchez quelque chose de plus ambitieux ?",
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
         "body": "Deux ou trois jours consécutifs entre Son Gual, Alcanada et au-delà, avec transferts privés, bonnes tables soigneusement choisies et accès à des parcours que la plupart des visiteurs ne peuvent pas réserver.",
-        "detail": "Signature Day. Une journée de golf privee avec Andy, une session avec John Brazier, des transferts prives et une soiree coordonnee. Le tarif est confirme après le premier echange, lorsque la journée a pris forme.",
+        "detail": "Signature Day. Une journée de golf privée avec Andy, une session avec John Brazier, des transferts privés et une soirée coordonnée. Le tarif est confirme après le premier echange, lorsque la journée a pris forme.",
         "button": "Demander un séjour sur plusieurs jours →",
         "href": "/fr/contact"
       }
@@ -940,7 +940,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Een cadeau dat echt gebruikt wordt",
-          "text": "Deze dagen werken goed voor mijlpaalverjaardagen, pensioen en zakelijke beloningen. Als u voor iemand anders boekt, houd ik de details prive tot u klaar bent."
+          "text": "Deze dagen werken goed voor mijlpaalverjaardagen, pensioen en zakelijke beloningen. Als u voor iemand anders boekt, houd ik de details privé tot u klaar bent."
         }
       ]
     },
@@ -1035,9 +1035,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "Auf Anfrage",
           "note": "Alles geregeld. Alle details worden voor de dag bevestigd.",
           "features": [
-            "Baan, prive starttijd en een volledig georganiseerde dag met mij",
+            "Baan, privé starttijd en een volledig georganiseerde dag met mij",
             "Herstel- en sportprestatiesessie met John Brazier",
-            "Prive transfers van en naar de baan",
+            "Privé transfers van en naar de baan",
             "Diner bij een partnerhotel"
           ],
           "button": "Aanvragen →",
@@ -1065,7 +1065,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Zoekt u iets groters?",
         "title": "Een meerdaagse ervaring, volledig om u heen opgebouwd.",
         "body": "Twee of drie opeenvolgende dagen langs Son Gual, Alcanada en meer, met privétransfers, zorgvuldig gekozen restaurants en toegang tot banen die de meeste bezoekers niet kunnen boeken.",
-        "detail": "Signature Day. Een prive golfdag met Andy, een sessie met John Brazier, prive transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.",
+        "detail": "Signature Day. Een privé golfdag met Andy, een sessie met John Brazier, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.",
         "button": "Meerdaagse trip aanvragen →",
         "href": "/nl/contact"
       }
@@ -1141,11 +1141,11 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "locale": "sv",
     "offerSummary": {
       "eyebrow": "I korthet",
-      "title": "Första erbjudandet innan du hor av dig.",
+      "title": "Första erbjudandet innan du hör av dig.",
       "items": [
-        { "label": "Bäst for", "text": "Ensamspelare, par och sma sallskap som vill ha en riktig golfdag pa Mallorca." },
+        { "label": "Bäst för", "text": "Ensamspelare, par och små sallskap som vill ha en riktig golfdag på Mallorca." },
         { "label": "Format", "text": "En bana, 18 hål, vald efter ditt spel, med mig vid din sida under hela rundan." },
-        { "label": "Priser", "text": "Solo från €795. Grupp från €950 totalt. Green fees ar separata och bekraftas innan bokning." },
+        { "label": "Priser", "text": "Solo från €795. Grupp från €950 totalt. Green fees är separata och bekräftas innan bokning." },
         { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Jag svarar personligen inom 24 timmar." }
       ],
       "signatureRoute": {
@@ -1224,7 +1224,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "En present som faktiskt blir använd",
-          "text": "Dagarna passar bra for stora fodelsedagar, pension och foretagsbeloningar. Om du koper till någon annan haller jag detaljerna privata tills du ar redo."
+          "text": "Dagarna passar bra för stora fodelsedagar, pension och foretagsbeloningar. Om du koper till någon annan haller jag detaljerna privata tills du är redo."
         }
       ]
     },
@@ -1349,7 +1349,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Letar du efter något större?",
         "title": "En flerdagarsupplevelse, planerad runt dig.",
         "body": "Två eller tre dagar i följd över Son Gual, Alcanada och vidare, med privata transfers, noggrant utvalda restauranger och tillgång till banor som de flesta besökare inte kan boka.",
-        "detail": "Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kvall. Priset bekraftas efter första samtalet, när dagen har form.",
+        "detail": "Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kväll. Priset bekräftas efter första samtalet, när dagen har form.",
         "button": "Fråga om en flerdagarsresa →",
         "href": "/sv/contact"
       }

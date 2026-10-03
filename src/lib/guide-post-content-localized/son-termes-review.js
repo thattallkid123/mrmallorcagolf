@@ -87,7 +87,7 @@ const content = {
         "text": "Las cabras"
       },
       {
-        "text": "Había cabras en varios hoyos durante toda la vuelta. Se movían por el campo como si fuera suyo, que en justicia seguramente lo era antes de que alguien construyera aquí un club de golf. El rebaño entero vino a vernos terminar en el 17. Una de ellas seguía la acción desde un bunker sin el menor interés por el concepto de rastrillarlo. Un animal genuinamente peligroso que, en nuestra opinión, debería figurar en la tarjeta."
+        "text": "Había cabras en varios hoyos durante toda la vuelta. Se movían por el campo como si fuera suyo, que en justicia seguramente lo era antes de que alguien construyera aquí un club de golf. El rebaño entero vino a vernos terminar en el 17. Una de ellas seguía la acción desde un búnker sin el menor interés por el concepto de rastrillarlo. Un animal genuinamente peligroso que, en nuestra opinión, debería figurar en la tarjeta."
       },
       {
         "text": "Los greens"
@@ -147,7 +147,7 @@ const content = {
           ],
           [
             "Consejo con el viento",
-            "En los hoyos cortos expuestos de la parte alta del recorrido, suba un palo. La distancia parece modesta, pero la brisa de montana cambia el golpe muy rápido."
+            "En los hoyos cortos expuestos de la parte alta del recorrido, suba un palo. La distancia parece modesta, pero la brisa de montaña cambia el golpe muy rápido."
           ],
           [
             "Donde suelen perder golpes los visitantes",
@@ -155,7 +155,7 @@ const content = {
           ],
           [
             "Consejo de casa club",
-            "Si prefiere los campos con personalidad antes que los más pulidos, está es una buena alternativa cerca de Palma frente a los nombres premium. Terminar en la terraza con vistas a la montana es una muy buena forma de acabar."
+            "Si prefiere los campos con personalidad antes que los más pulidos, está es una buena alternativa cerca de Palma frente a los nombres premium. Terminar en la terraza con vistas a la montaña es una muy buena forma de acabar."
           ]
         ]
       },
@@ -465,7 +465,7 @@ const content = {
         "caption": "Le parcours vu du ciel. Son tracé dans les montagnes est ce qui distingue Son Termes de tout le reste sur l'île à ce niveau de prix."
       },
       {
-        "text": "Questions frequentes"
+        "text": "Questions fréquentes"
       },
       {
         "text": "La plupart des joueurs prennent une voiturette, surtout par temps chaud, même si marcher l'aller est simple (les montées du retour sont plus exigeantes). Son Termes convient aux golfeurs qui recherchent du caractère et des vues sur la montagne plutôt que la longueur pure : plusieurs pars 4 sont driveables, et c'est une bonne alternative, moins chère, aux parcours premium proches de Palma. Ce qui surprend les visiteurs pour la première fois : malgré sa courtesse, le parcours pénalise les coups manqués de façons qui ne sont pas évidentes sur la carte, et vous partagerez probablement quelques trous avec les chèvres qui y vivent. La meilleure heure de départ est tôt, avant que le vent ne se lève sur les trous exposés du haut du parcours."
@@ -476,11 +476,11 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Partir plus tot est l option la plus sure, surtout si vous voulez marcher pendant les mois chauds. Le retour monte, le vent prend souvent de la force, et plus vous laissez trainer le départ, plus le parcours devient exigeant."
+            "Partir plus tôt est l option la plus sure, surtout si vous voulez marcher pendant les mois chauds. Le retour monte, le vent prend souvent de la force, et plus vous laissez trainer le départ, plus le parcours devient exigeant."
           ],
           [
             "Conseil vent",
-            "Sur les trous courts exposes de la partie haute, prenez un club de plus. Le yardage parait modeste, mais la brise de montagne change vite le coup."
+            "Sur les trous courts exposes de la partie haute, prenez un club de plus. Le yardage paraît modeste, mais la brise de montagne change vite le coup."
           ],
           [
             "Ou les visiteurs perdent des coups",
@@ -488,7 +488,7 @@ const content = {
           ],
           [
             "Conseil clubhouse",
-            "Si vous aimez davantage les parcours de caractere que les parcours polis, c est une bonne alternative pres de Palma face aux noms premium. Finir sur la terrasse avec la vue sur les montagnes est une très bonne facon de terminer."
+            "Si vous aimez davantage les parcours de caractere que les parcours polis, c est une bonne alternative près de Palma face aux noms premium. Finir sur la terrasse avec la vue sur les montagnes est une très bonne façon de terminer."
           ]
         ]
       },
@@ -811,20 +811,20 @@ const content = {
         "title": "Fyra säker jag skulle vilja veta innan jag bokar Son Termes",
         "items": [
           [
-            "Basta starttid",
-            "En tidigare start ar det sakrare valet, särskilt om du vill ga under de varmare manaderna. Back nine klattrar, vinden bygger ofta upp, och ju senare du gar ut desto tuffare blir banan."
+            "Bästa starttid",
+            "En tidigare start är det sakrare valet, särskilt om du vill gå under de varmare manaderna. Back nine klattrar, vinden bygger ofta upp, och ju senare du går ut desto tuffare blir banan."
           ],
           [
             "Vindtips",
-            "Ta en klubba mer pa de öppna korta halen pa den ovre delen av banan. Yardaget ser beskedligt ut, men bergsbrisen andrar slaget snabbt."
+            "Ta en klubba mer på de öppna korta hålen på den ovre delen av banan. Yardaget ser beskedligt ut, men bergsbrisen andrar slaget snabbt."
           ],
           [
-            "Där besokare tappar slag",
-            "Många tappade slag kommer från antagandet att en kort bana måste vara enkel. Blinda doglegs, vatten som skar in, seg ruff och dolda mal straffar den som stanger av."
+            "Där besökare tappar slag",
+            "Många tappade slag kommer från antagandet att en kort bana måste vara enkel. Blinda doglegs, vatten som skar in, seg ruff och dolda mål straffar den som stanger av."
           ],
           [
             "Klubbhustips",
-            "Om du foredrar banor med personlighet framfor perfekt putsade banor ar det har ett bra Palma-nara alternativ till premiumnamnen. Att avsluta pa terrassen med bergsutsikt ar ett mycket bra satt att runda av."
+            "Om du foredrar banor med personlighet framför perfekt putsade banor är det har ett bra Palma-nara alternativ till premiumnamnen. Att avsluta på terrassen med bergsutsikt är ett mycket bra satt att runda av."
           ]
         ]
       },

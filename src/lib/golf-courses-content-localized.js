@@ -84,14 +84,14 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
     "hero": {
       "breadcrumbHome": "Inicio",
       "breadcrumbCurrent": "Campos de golf en Mallorca",
-      "title": "Campos de golf en Mallorca: mi guia 2026",
+      "title": "Campos de golf en Mallorca: mi guía 2026",
       "tags": [
         "24 campos revisados",
         "Green fees actualizados 2026",
         "Jugados o investigados a fondo",
         "Profesional PGA"
       ],
-      "lead": "Explore los 24 campos por region. Para una lista más inteligente - filtrada por su handicap, presupuesto y estilo de viaje - use el selector de campos. Después envíeme sus fechas, handicap y zona de hotel, y afinaré la recomendación."
+      "lead": "Explore los 24 campos por región. Para una lista más inteligente - filtrada por su handicap, presupuesto y estilo de viaje - use el selector de campos. Después envíeme sus fechas, handicap y zona de hotel, y afinaré la recomendación."
     },
     "regionHeaders": {
       "palma": {
@@ -120,39 +120,39 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Empiece por zona, precio y dificultad para reducir los campos rapidamente. Cada ficha muestra precio, dificultad, valoracion y cualquier tarifa dinamica o requisito de handicap antes de reservar.",
+      "explorerIntro": "Empiece por zona, precio y dificultad para reducir los campos rápidamente. Cada ficha muestra precio, dificultad, valoración y cualquier tarifa dinámica o requisito de handicap antes de reservar.",
       "faqEyebrow": "Preguntas",
       "faqTitle": "Preguntas frecuentes",
-      "faqIntro": "Respuestas rapidas antes de hacer su lista corta o reservar.",
+      "faqIntro": "Respuestas rápidas antes de hacer su lista corta o reservar.",
       "faq": [
         {
-          "q": "¿Cuantos campos de golf hay en Mallorca?",
+          "q": "¿Cuántos campos de golf hay en Mallorca?",
           "a": "Mallorca tiene 24 campos de golf en total. De ellos, 21 están abiertos a visitantes con green fee sin necesidad de ser socio. La isla se divide en cinco regiones principales: Palma, Suroeste, Sur, Este y Norte."
         },
         {
-          "q": "¿Cual es el mejor campo de golf de Mallorca?",
-          "a": "No hay un único mejor campo. Depende de lo que busque en la ronda. Para una prueba de nivel campeonato, mire los campos más dificiles. Para paisaje, filtre por los entornos de costa y montaña. Para un mantenimiento de nivel Tour, ordene por mi valoracion. Envíeme su handicap y lo que más le importa y le indicare la mejor lista corta."
+          "q": "¿Cuál es el mejor campo de golf de Mallorca?",
+          "a": "No hay un único mejor campo. Depende de lo que busque en la ronda. Para una prueba de nivel campeonato, mire los campos más difíciles. Para paisaje, filtre por los entornos de costa y montaña. Para un mantenimiento de nivel Tour, ordene por mi valoración. Envíeme su handicap y lo que más le importa y le indicaré la mejor lista corta."
         },
         {
-          "q": "¿Cuanto cuesta jugar al golf en Mallorca?",
-          "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 260 € en lo más alto en temporada alta. Palma Pitch & Putt es más barato, pero es una opción de campo corto independiente, no una vuelta de visitante tipica. La mayoria de las rondas de visitante se situan entre 85 € y 165 €. El buggy suele costar de 35 € a 48 € aparte."
+          "q": "¿Cuánto cuesta jugar al golf en Mallorca?",
+          "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 260 € en lo más alto en temporada alta. Palma Pitch & Putt es más barato, pero es una opción de campo corto independiente, no una vuelta de visitante típica. La mayoría de las rondas de visitante se sitúan entre 85 € y 165 €. El buggy suele costar de 35 € a 48 € aparte."
         },
         {
           "q": "¿Hace falta certificado de handicap para jugar en Mallorca?",
-          "a": "La mayoria de los campos admiten todos los niveles, pero algunos exigen un certificado de handicap valido o fijan un handicap máximo. En las fichas de arriba he señalado los campos con requisito de handicap y el limite que aplica, para que lo vea antes de reservar. Si tiene dudas con su certificado, digame los campos que está considerando y lo compruebo por usted."
+          "a": "La mayoría de los campos admiten todos los niveles, pero algunos exigen un certificado de handicap válido o fijan un handicap máximo. En las fichas de arriba he señalado los campos con requisito de handicap y el límite que aplica, para que lo vea antes de reservar. Si tiene dudas con su certificado, dígame los campos que está considerando y lo compruebo por usted."
         }
       ],
       "toolCta": {
         "eyebrow": "Atajo",
-        "title": "Prefiere una lista corta antes de leer las 24 reseñas?",
-        "body": "Use el selector de campos si ya conoce su handicap, presupuesto, base y estilo de viaje. Reducira la isla antes de empezar a comparar salidas.",
+        "title": "¿Prefiere una lista corta antes de leer las 24 reseñas?",
+        "body": "Use el selector de campos si ya conoce su handicap, presupuesto, base y estilo de viaje. Reducirá la isla antes de empezar a comparar salidas.",
         "cta": "Encontrar mis campos",
-        "note": "No necesita email para usar la herramienta. Solo introduzcalo si quiere que le envien el resultado."
+        "note": "No necesita email para usar la herramienta. Solo introdúzcalo si quiere que le envíen el resultado."
       },
       "allCourses": "Todos los campos",
-      "ctaEyebrow": "Ya tiene su lista corta?",
+      "ctaEyebrow": "¿¿Ya tiene su lista corta?",
       "ctaH2": "Convierta la lista corta en el viaje correcto.",
-      "ctaP": "Envíeme sus fechas, handicap, zona de hotel y los dos o tres campos que está considerando. Le dire cuales encajan en el viaje, en que orden, y como es el plan más claro.",
+      "ctaP": "Envíeme sus fechas, handicap, zona de hotel y los dos o tres campos que está considerando. Le diré cuáles encajan en el viaje, en qué orden, y como es el plan más claro.",
       "seeExperiences": "Planifique su viaje",
       "getInTouch": "Play With A Pro"
     }
@@ -161,15 +161,15 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
     "locale": "fr",
     "hero": {
       "breadcrumbHome": "Accueil",
-      "breadcrumbCurrent": "Parcours de golf a Majorque",
-      "title": "Parcours de golf a Majorque : mon guide 2026",
+      "breadcrumbCurrent": "Parcours de golf à Majorque",
+      "title": "Parcours de golf à Majorque : mon guide 2026",
       "tags": [
         "24 parcours couverts",
-        "Green fees mis a jour 2026",
-        "Joues ou etudies serieusement",
+        "Green fees mis à jour 2026",
+        "Joués ou étudiés sérieusement",
         "Professionnel PGA"
       ],
-      "lead": "Parcourez les 24 parcours par region. Pour une short-list plus intelligente - filtree selon votre index, votre budget et votre style de voyage - utilisez le selecteur de parcours. Envoyez-moi ensuite vos dates, votre index et la zone de votre hotel, et j'affinerai la recommandation."
+      "lead": "Parcourez les 24 parcours par région. Pour une short-list plus intelligente - filtrée selon votre index, votre budget et votre style de voyage - utilisez le sélecteur de parcours. Envoyez-moi ensuite vos dates, votre index et la zone de votre hôtel, et j'affinerai la recommandation."
     },
     "regionHeaders": {
       "palma": {
@@ -187,49 +187,49 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       },
       "east": {
         "title": "Est",
-        "subtitle": "Bon secteur ou sejourner",
+        "subtitle": "Bon secteur ou séjourner",
         "count": "6 parcours"
       },
       "north": {
         "title": "Nord",
-        "subtitle": "Alcanada vaut le trajet a lui seul",
+        "subtitle": "Alcanada vaut le trajet à lui seul",
         "count": "2 parcours"
       }
     },
     "ui": {
-      "explorerIntro": "Commencez par la region, le prix et la difficulte pour reduire rapidement les choix. Chaque fiche montre le prix, la difficulte, la note et tout tarif dynamique ou exigence de handicap avant de réserver.",
+      "explorerIntro": "Commencez par la région, le prix et la difficulté pour réduire rapidement les choix. Chaque fiche montre le prix, la difficulté, la note et tout tarif dynamique ou exigence de handicap avant de réserver.",
       "faqEyebrow": "Questions",
-      "faqTitle": "Questions frequentes",
-      "faqIntro": "Quelques reponses rapides avant de faire votre short-list ou de réserver.",
+      "faqTitle": "Questions fréquentes",
+      "faqIntro": "Quelques réponses rapides avant de faire votre short-list ou de réserver.",
       "faq": [
         {
-          "q": "Combien y a-t-il de parcours de golf a Majorque ?",
-          "a": "Majorque compte 24 parcours de golf au total. Parmi eux, 21 sont ouverts aux visiteurs en green fee sans adhesion. L île se divise en cinq grandes regions : Palma, Sud-ouest, Sud, Est et Nord."
+          "q": "Combien y a-t-il de parcours de golf à Majorque ?",
+          "a": "Majorque compte 24 parcours de golf au total. Parmi eux, 21 sont ouverts aux visiteurs en green fee sans adhésion. L\'île se divise en cinq grandes régions : Palma, Sud-ouest, Sud, Est et Nord."
         },
         {
           "q": "Quel est le meilleur parcours de golf de Majorque ?",
-          "a": "Il n y a pas un seul meilleur parcours. Cela depend de ce que vous attendez de la partie. Pour un vrai test de niveau championnat, regardez les parcours les plus difficiles. Pour le paysage, filtrez par les cadres de côté et de montagne. Pour un entretien de niveau Tour, triez par ma note. Envoyez-moi votre index et ce qui compte le plus pour vous et je vous indiquerai la bonne selection."
+          "a": "Il n\'y a pas un seul meilleur parcours. Cela dépend de ce que vous attendez de la partie. Pour un vrai test de niveau championnat, regardez les parcours les plus difficiles. Pour le paysage, filtrez par les cadres de côté et de montagne. Pour un entretien de niveau Tour, triez par ma note. Envoyez-moi votre index et ce qui compte le plus pour vous et je vous indiquerai la bonne sélection."
         },
         {
-          "q": "Combien coute une partie de golf a Majorque ?",
-          "a": "Les green fees vont d environ 55 € dans la gamme accessible jusqu a environ 260 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c est une option de parcours court a part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coute generalement de 35 € a 48 € en plus."
+          "q": "Combien coûte une partie de golf à Majorque ?",
+          "a": "Les green fees vont d\'environ 55 € dans la gamme accessible jusqu\'à environ 260 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c\'est une option de parcours court a part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coûte généralement de 35 € a 48 € en plus."
         },
         {
-          "q": "Faut-il un certificat de handicap pour jouer a Majorque ?",
-          "a": "La plupart des parcours accueillent tous les niveaux, mais certains exigent un certificat de handicap valide ou fixent un handicap maximum. Sur les fiches ci-dessus, j ai signale les parcours avec une exigence de handicap et la limite qui s applique, pour que vous le voyiez avant de réserver. Si vous avez un doute sur votre certificat, indiquez-moi les parcours que vous envisagez et je verifie pour vous."
+          "q": "Faut-il un certificat de handicap pour jouer à Majorque ?",
+          "a": "La plupart des parcours accueillent tous les niveaux, mais certains exigent un certificat de handicap valide ou fixent un handicap maximum. Sur les fiches ci-dessus, j\'ai signalé les parcours avec une exigence de handicap et la limite qui s\'applique, pour que vous le voyiez avant de réserver. Si vous avez un doute sur votre certificat, indiquez-moi les parcours que vous envisagez et je vérifie pour vous."
         }
       ],
       "toolCta": {
         "eyebrow": "Raccourci",
         "title": "Vous préférez une short-list avant de lire les 24 avis ?",
-        "body": "Utilisez le selecteur de parcours si vous connaissez déjà votre index, budget, base et style de sejour. Il reduira l île avant même de comparer les departs.",
+        "body": "Utilisez le sélecteur de parcours si vous connaissez déjà votre index, budget, base et style de séjour. Il réduira l\'île avant même de comparer les départs.",
         "cta": "Trouver mes parcours",
-        "note": "Aucun email n est nécessaire pour utiliser l outil. Saisissez-le seulement si vous voulez recevoir le resultat."
+        "note": "Aucun email n\'est nécessaire pour utiliser l\'outil. Saisissez-le seulement si vous voulez recevoir le résultat."
       },
       "allCourses": "Tous les parcours",
       "ctaEyebrow": "Vous avez votre short-list ?",
       "ctaH2": "Transformez la short-list en le bon voyage.",
-      "ctaP": "Envoyez-moi vos dates, votre index, la zone de votre hotel et les deux ou trois parcours que vous envisagez. Je vous dirai lesquels ont leur place dans le voyage, dans quel ordre, et a quoi ressemble le plan le plus clair.",
+      "ctaP": "Envoyez-moi vos dates, votre index, la zone de votre hôtel et les deux ou trois parcours que vous envisagez. Je vous dirai lesquels ont leur place dans le voyage, dans quel ordre, et à quoi ressemble le plan le plus clair.",
       "seeExperiences": "Planifiez votre voyage",
       "getInTouch": "Play With A Pro"
     }
@@ -314,15 +314,15 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
     "locale": "sv",
     "hero": {
       "breadcrumbHome": "Hem",
-      "breadcrumbCurrent": "Golfbanor pa Mallorca",
-      "title": "Golfbanor pa Mallorca: min guide 2026",
+      "breadcrumbCurrent": "Golfbanor på Mallorca",
+      "title": "Golfbanor på Mallorca: min guide 2026",
       "tags": [
-        "24 banor genomgangna",
+        "24 banor genomgångna",
         "Greenfee uppdaterad 2026",
         "Spelade eller ordentligt granskade",
         "PGA Professional"
       ],
-      "lead": "Bladdra bland alla 24 banor efter region. For en smartare kortlista - filtrerad efter handicap, budget och resestil - använd banvaljaren. Skicka sedan dina datum, ditt handicap och ditt hotellomrade, sa forfinar jag rekommendationen."
+      "lead": "Bläddra bland alla 24 banor efter region. För en smartare kortlista - filtrerad efter handicap, budget och resestil - använd banväljaren. Skicka sedan dina datum, ditt handicap och ditt hotellområde, så förfinar jag rekommendationen."
     },
     "regionHeaders": {
       "palma": {
@@ -330,59 +330,59 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "count": "8 banor"
       },
       "southwest": {
-        "title": "Sydvast",
+        "title": "Sydväst",
         "count": "6 banor"
       },
       "south": {
-        "title": "Soder",
-        "subtitle": "Llucmajor-omradet",
+        "title": "Söder",
+        "subtitle": "Llucmajor-området",
         "count": "3 banor"
       },
       "east": {
-        "title": "Ost",
+        "title": "Öst",
         "subtitle": "Bra område att bo i",
         "count": "6 banor"
       },
       "north": {
         "title": "Norr",
-        "subtitle": "Bara Alcanada gor resan vard det",
+        "subtitle": "Bara Alcanada gör resan värd det",
         "count": "2 banor"
       }
     },
     "ui": {
-      "explorerIntro": "Börja med region, pris och svarighetsgrad for att smalna av banorna snabbt. Varje kort visar pris, svarighetsgrad, betyg och eventuell dynamisk prissattning eller handicapkrav före bokning.",
+      "explorerIntro": "Börja med region, pris och svårighetsgrad för att smalna av banorna snabbt. Varje kort visar pris, svårighetsgrad, betyg och eventuell dynamisk prissättning eller handicapkrav före bokning.",
       "faqEyebrow": "Frågor",
       "faqTitle": "Vanliga frågor",
-      "faqIntro": "Nagra snabba svar innan du gor din kortlista eller bokar.",
+      "faqIntro": "Några snabba svar innan du gör din kortlista eller bokar.",
       "faq": [
         {
-          "q": "Hur många golfbanor finns det pa Mallorca?",
-          "a": "Mallorca har totalt 24 golfbanor. Av dem ar 21 öppna for greenfee-besokare utan medlemskap. On delas in i fem huvudregioner: Palma, Sydvast, Soder, Ost och Norr."
+          "q": "Hur många golfbanor finns det på Mallorca?",
+          "a": "Mallorca har totalt 24 golfbanor. Av dem är 21 öppna för greenfee-besökare utan medlemskap. Ön delas in i fem huvudregioner: Palma, Sydväst, Söder, Öst och Norr."
         },
         {
-          "q": "Vilken ar den basta golfbanan pa Mallorca?",
-          "a": "Det finns ingen enskild basta bana. Det beror pa vad du vill ha ut av rundan. For ett riktigt masterskapstest, titta pa de svaraste banorna. For landskap, filtrera pa kust- och bergsmiljoerna. For skotsel pa tour-niva, sortera pa mitt betyg. Skicka mig ditt handicap och vad som betyder mest for dig sa pekar jag ut rätt kortlista."
+          "q": "Vilken är den bästa golfbanan på Mallorca?",
+          "a": "Det finns ingen enskild bästa bana. Det beror på vad du vill ha ut av rundan. För ett riktigt mästerskapstest, titta på de svåraste banorna. För landskap, filtrera på kust- och bergsmiljöerna. För skötsel på tour-nivå, sortera på mitt betyg. Skicka mig ditt handicap och vad som betyder mest för dig så pekar jag ut rätt kortlista."
         },
         {
-          "q": "Vad kostar det att spela golf pa Mallorca?",
-          "a": "Greenfees gar från runt 55 € i den prisvarda delen upp till runt 260 € i toppen under hogsasong. Palma Pitch & Putt ar billigare, men det ar ett separat kortbanealternativ snarare an en typisk besoksrunda. De flesta besoksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 35 € till 48 € extra."
+          "q": "Vad kostar det att spela golf på Mallorca?",
+          "a": "Greenfees går från runt 55 € i den prisvärda delen upp till runt 260 € i toppen under högsäsong. Palma Pitch & Putt är billigare, men det är ett separat kortbanealternativ snarare än en typisk besöksrunda. De flesta besöksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 35 € till 48 € extra."
         },
         {
-          "q": "Behover man ett handicapintyg for att spela pa Mallorca?",
-          "a": "De flesta banor valkomnar alla nivaer, men vissa kraver ett giltigt handicapintyg eller satter ett maxhandicap. Pa bankorten ovan har jag markerat banorna med handicapkrav och gransen som galler, sa att du ser det före bokning. Om du ar osaker pa ditt intyg, sag vilka banor du overvager sa kollar jag at dig."
+          "q": "Behöver man ett handicapintyg för att spela på Mallorca?",
+          "a": "De flesta banor välkomnar alla nivåer, men vissa kräver ett giltigt handicapintyg eller sätter ett maxhandicap. På bankorten ovan har jag markerat banorna med handicapkrav och gränsen som gäller, så att du ser det före bokning. Om du är osäker på ditt intyg, säg vilka banor du överväger så kollar jag åt dig."
         }
       ],
       "toolCta": {
         "eyebrow": "Genvag",
-        "title": "Vill du hellre ha en kortlista an lasa alla 24 recensioner?",
-        "body": "Använd course selector om du redan vet handicap, budget, bas och resstil. Den smalnar av on innan du borjar jamfora starttider.",
+        "title": "Vill du hellre ha en kortlista än läsa alla 24 recensioner?",
+        "body": "Använd banväljaren om du redan vet handicap, budget, bas och resestil. Den smalnar av ön innan du börjar jämföra starttider.",
         "cta": "Hitta mina banor",
-        "note": "Du behover ingen e-post for att anvanda verktyget. Fyll bara i den om du vill fa resultatet skickat till dig."
+        "note": "Du behöver ingen e-post för att använda verktyget. Fyll bara i den om du vill få resultatet skickat till dig."
       },
       "allCourses": "Alla banor",
       "ctaEyebrow": "Har du en kortlista?",
-      "ctaH2": "Gor om kortlistan till rätt resa.",
-      "ctaP": "Skicka dina datum, ditt handicap, ditt hotellomrade och de två eller tre banor du overvager. Jag talar om vilka som hor hemma i resan, i vilken ordning, och hur den tydligaste planen ser ut.",
+      "ctaH2": "Gör om kortlistan till rätt resa.",
+      "ctaP": "Skicka dina datum, ditt handicap, ditt hotellområde och de två eller tre banor du överväger. Jag talar om vilka som hör hemma i resan, i vilken ordning, och hur den tydligaste planen ser ut.",
       "seeExperiences": "Planera din resa",
       "getInTouch": "Play With A Pro"
     }
