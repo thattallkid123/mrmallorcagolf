@@ -1600,6 +1600,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
+          "price": "按需询价",
           "note": "全部安排妥当。所有细节会在活动当天前确认。",
           "features": [
             "球场、私人开球时段，以及与我一起完全安排好的一天",

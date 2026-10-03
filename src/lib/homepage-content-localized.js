@@ -229,13 +229,14 @@ export const HOME_LOCALIZED_CONTENT = {
           "name": "Signature Day",
           "features": [
             "Campo, hora de salida privada y un día de golf guiado",
-            "Almuerzo, chef privado o reserva en restaurante",
+            "Planificación de la cena en un hotel o restaurante recomendado, o con chef privado",
             "Traslados privados y tiempo de recuperación",
             "Caddie, videógrafo y alquiler de palos premium opcionales",
-            "Análisis de vídeo tras la vuelta incluido",
+            "Debrief conectado y prioridades",
             "Reserva prioritaria. Sus fechas se apartan primero."
           ],
-          "note": "Precio bajo consulta.",
+          "price": "Bajo consulta",
+          "note": "Personalizado desde cero. Los traslados privados y una sesión de recuperación y rendimiento deportivo después de la vuelta forman parte del plan central; se pueden añadir caddy, chef privado y cobertura profesional cuando encaje.",
           "cta": "Ver precios",
           "href": "/es/contact",
           "detailHref": "/signature-day",
@@ -547,13 +548,14 @@ export const HOME_LOCALIZED_CONTENT = {
           "name": "Signature Day",
           "features": [
             "Platz, private Startzeit und ein geführter Golftag",
-            "Mittagessen, Privatkoch oder Restaurantbuchung",
+            "Planung eines Abendessens in einem empfohlenen Hotel oder Restaurant, oder mit einem Privatkoch",
             "Private Transfers und Erholungszeit",
             "Caddie, Videograf und Premium-Schlägerverleih optional",
-            "Videoanalyse nach der Runde inklusive",
+            "Verbundenes Debrief und Prioritäten",
             "Vorrangige Buchung. Ihre Termine werden zuerst reserviert."
           ],
-          "note": "Preis auf Anfrage.",
+          "price": "Auf Anfrage",
+          "note": "Von Grund auf individuell gestaltet. Private Transfers und eine Recovery- und Sports-Performance-Session nach der Runde gehören zum Kernplan; Caddie, Privatkoch und professionelle Begleitung können ergänzt werden, wo es passt.",
           "cta": "Preise ansehen",
           "href": "/de/contact",
           "detailHref": "/signature-day",
@@ -865,13 +867,14 @@ export const HOME_LOCALIZED_CONTENT = {
           "name": "Signature Day",
           "features": [
             "Parcours, départ privé et journée de golf accompagnée",
-            "Déjeuner, chef privé ou réservation au restaurant",
+            "Organisation du dîner dans un hôtel ou restaurant recommandé, ou avec un chef privé",
             "Transferts privés et temps de récupération",
             "Caddie, vidéaste et location de clubs premium en option",
-            "Analyse vidéo après la partie incluse",
+            "Débrief connecté et priorités",
             "Réservation prioritaire. Vos dates réservées en premier."
           ],
-          "note": "Tarif sur demande.",
+          "price": "Sur demande",
+          "note": "Personnalisé de A à Z. Les transferts privés et une session de récupération et de performance sportive après la partie font partie du plan de base ; caddie, chef privé et couverture professionnelle peuvent être ajoutés si cela convient.",
           "cta": "Voir les tarifs",
           "href": "/fr/contact",
           "detailHref": "/signature-day",
@@ -942,6 +945,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
+      "quote": "Le bon parcours le bon jour vaut mieux qu'un nom célèbre au mauvais créneau.",
       "eyebrow": "Prêt à jouer Majorque comme il faut ?",
       "title": "Contactez-moi. Je m'occupe du reste.",
       "body": "Donnez-moi vos dates, votre handicap et ce que vous attendez de la journée. Je reviens vers vous personnellement sous 24 heures.",
@@ -1182,13 +1186,14 @@ export const HOME_LOCALIZED_CONTENT = {
           "name": "Signature Day",
           "features": [
             "Baan, privé starttijd en een begeleide golfdag",
-            "Lunch, privéchef of restaurantreservering",
+            "Planning van het diner in een aanbevolen hotel of restaurant, of met een privéchef",
             "Privé transfers en hersteltijd",
             "Caddie, videograaf en premium clubverhuur optioneel",
-            "Video-analyse na de ronde inbegrepen",
+            "Verbonden debrief en prioriteiten",
             "Prioriteitsboeking. Uw data worden als eerste vastgelegd."
           ],
-          "note": "Prijs op aanvraag.",
+          "price": "Op aanvraag",
+          "note": "Volledig op maat. Privé transfers en een herstel- en sportprestatiesessie na de ronde horen bij het kernplan; caddie, privéchef en professionele vastlegging kunnen worden toegevoegd waar passend.",
           "cta": "Bekijk prijzen",
           "href": "/nl/contact",
           "detailHref": "/signature-day",
@@ -1259,6 +1264,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
+      "quote": "De juiste baan op de juiste dag verslaat een beroemde naam op het verkeerde tijdstip.",
       "eyebrow": "Klaar om Mallorca goed te spelen?",
       "title": "Neem contact op. Ik regel de rest.",
       "body": "Vertel me uw data, handicap en wat u uit de dag wilt halen. Ik kom persoonlijk binnen 24 uur bij u terug.",
@@ -1499,13 +1505,14 @@ export const HOME_LOCALIZED_CONTENT = {
           "name": "Signature Day",
           "features": [
             "Bana, privat starttid och en guidad golfdag",
-            "Lunch, privat kock eller restaurangbokning",
+            "Planering av middag på ett rekommenderat hotell eller en restaurang, eller med privat kock",
             "Privata transfers och återhämtningstid",
             "Caddie, videograf och premium klubbuthyrning valfritt",
-            "Videoanalys efter rundan ingår",
+            "Sammanhängande debrief och prioriteringar",
             "Prioritetsbokning. Dina datum reserveras först."
           ],
-          "note": "Pris på förfrågan.",
+          "price": "På förfrågan",
+          "note": "Skräddarsytt från grunden. Privata transfers och en återhämtnings- och sportprestationssession efter rundan ingår i kärnplanen; caddie, privat kock och professionell dokumentation kan läggas till där det passar.",
           "cta": "Se priser",
           "href": "/sv/contact",
           "detailHref": "/signature-day",
@@ -1576,6 +1583,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
+      "quote": "Rätt bana på rätt dag slår ett känt namn på fel tid.",
       "eyebrow": "Redo att spela Mallorca på riktigt?",
       "title": "Hoer av dig. Jag ordnar resten.",
       "body": "Berätta dina datum, ditt handicap och vad du vill få ut av dagen. Jag återkommer personligen inom 24 timmar.",
@@ -1824,13 +1832,14 @@ export const HOME_LOCALIZED_CONTENT = {
           "name": "Signature Day",
           "features": [
             "球场、私人开球时段与全程陪同的高尔夫日",
-            "午餐、私人厨师或餐厅预订",
+            "推荐酒店、餐厅或私人厨师晚餐的安排",
             "私人接送与恢复时间",
             "球童、摄影师与高端球具租赁可选",
-            "含赛后视频分析",
+            "连贯复盘与优先事项",
             "优先预订，您的日期优先锁定。"
           ],
-          "note": "价格面议。",
+          "price": "按需询价",
+          "note": "从头开始为您量身定制。私人接送以及球后的恢复与运动表现环节属于核心方案；球童、私人厨师和专业拍摄可在合适时加入。",
           "cta": "查看价格",
           "href": "/zh/contact",
           "detailHref": "/signature-day",
@@ -1901,6 +1910,7 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
+      "quote": "对的球场遇上对的日子，胜过在错误时段打一个响亮的名字。",
       "eyebrow": "准备好真正打懂马略卡了吗？",
       "title": "联系我，剩下的我来安排。",
       "body": "告诉我您的日期、差点和您希望这一天达到什么效果。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。",
