@@ -1276,7 +1276,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Upplevelser och paket",
       "title": "Tre sätt att lägga upp dagen.",
-      "body": "Solo och Grupp är grunddagspriserna för Play With A Pro. Banor slår ihop bokningar när det är fullt, så en en- eller tvåboll kan få dela starttid med okända. Vill ni hellre spela bara ni, bokar jag de lediga platserna och starttiden är er. Banan sätter den avgiften och jag för den vidare till självkostnadspris. Green fees och lunch tillkommer. Privat starttid ingår som standard i Signature Day.",
+      "body": "Solo och Grupp är grunddagspriserna för Play With A Pro. Banor slår ihop bokningar när det är fullt, så en en- eller tvåboll kan få dela starttid med okända. Vill du hellre spela bara med ditt sällskap, bokar jag de lediga platserna och starttiden är din. Banan sätter den avgiften och jag för den vidare till självkostnadspris. Green fees och lunch tillkommer. Privat starttid ingår som standard i Signature Day.",
       "tiers": [
         {
           "eyebrow": "Solo",
@@ -1299,7 +1299,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "€950 totalt",
           "features": [
             "Upp till 3 spelare, mitt fasta dagspris",
-            "Bana vald efter ert sällskap",
+            "Bana vald efter ditt sällskap",
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
@@ -1385,7 +1385,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Blir vi ihopslagna med andra golfare?",
-          "a": "Möjligt, och under högsäsong händer det garanterat. Jag bokar de lugnaste starttider jag kan få, men fram till att vi slår ut kan vem som helst boka in sig på den tiden, online eller direkt hos banan. Det beslutet ligger hos klubben, inte hos mig. Vill ni ha den privat bokar jag de lediga platserna och starttiden är helt er. Banan sätter avgiften och den varierar med bana och tid på dagen, och jag för den vidare till självkostnadspris och bekräftar den innan du bokar. Med tre spelare är starttiden redan full, så då tillkommer ingenting."
+          "a": "Möjligt, och under högsäsong händer det garanterat. Jag bokar de lugnaste starttider jag kan få, men fram till att vi slår ut kan vem som helst boka in sig på den tiden, online eller direkt hos banan. Det beslutet ligger hos klubben, inte hos mig. Vill du ha den privat bokar jag de lediga platserna och starttiden är helt din. Banan sätter avgiften och den varierar med bana och tid på dagen, och jag för den vidare till självkostnadspris och bekräftar den innan du bokar. Med tre spelare är starttiden redan full, så då tillkommer ingenting."
         },
         {
           "q": "Hur är det om vi blir ihopslagna?",

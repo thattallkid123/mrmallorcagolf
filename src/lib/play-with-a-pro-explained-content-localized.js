@@ -416,7 +416,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     finalCta: {
       eyebrow: 'Redo att spela',
       title: 'Berätta när du kommer.',
-      body: 'Berätta dina datum, hur många ni är och vad du är ute efter. Jag återkommer personligen inom 24 timmar.',
+      body: 'Berätta dina datum, hur många som ska spela och vad du är ute efter. Jag återkommer personligen inom 24 timmar.',
       primaryCta: 'Hoer av dig',
       secondaryCta: 'Se priser →',
     },

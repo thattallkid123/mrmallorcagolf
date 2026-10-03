@@ -442,7 +442,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "sv": {
     "heroEyebrow": "Planera din golfresa till Mallorca",
     "heroTitle": "Börja med banorna. Jag bygger resan ordentligt.",
-    "heroBody": "Jag väljer och bokar banor och starttider för din grupp och ordnar golfbilar och hyrklubbor före ankomst. Ni spelar rundorna utan att jag följer med. Vill ni spela en dag tillsammans med mig kan ni lägga till Play With A Pro.",
+    "heroBody": "Jag väljer och bokar banor och starttider för din grupp och ordnar golfbilar och hyrklubbor före ankomst. Du spelar rundorna utan att jag följer med. Vill du spela en dag tillsammans med mig kan du lägga till Play With A Pro.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banfinder",
@@ -462,10 +462,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "professional": {
       "eyebrow": "Personlig",
       "title": "Låt mig planera det ordentligt",
-      "body": "Skicka dina datum, gruppstorlek och vad ni vill ha. Jag rekommenderar rätt banor för ert spel, förklarar var ni bör bo och varför, lägger upp rutten och antalet rundor, bokar starttider, ordnar golfbilar och hyrklubbor och föreslår bra matställen. Pris på förfrågan.",
+      "body": "Skicka dina datum, gruppstorlek och vad du vill ha. Jag rekommenderar rätt banor för ditt spel, förklarar var du bör bo och varför, lägger upp rutten och antalet rundor, bokar starttider, ordnar golfbilar och hyrklubbor och föreslår bra matställen. Pris på förfrågan.",
       "includes": [
         "Banrekommendationer anpassade efter spel, grupp och budget",
-        "Var ni bör bo och varför",
+        "Var du bör bo och varför",
         "Resrutt och antal rundor",
         "Starttider bokade och bekräftade",
         "Golfbilar och klubbor ordnade",
@@ -473,11 +473,11 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro som tillägg när som helst"
       ],
       "note": "Inget åtagande vid förfrågan. Jag svarar personligen inom 24 timmar med rekommenderat nästa steg och en tydlig offert innan något bokas.",
-      "feeNote": "Administrationsavgiften är 5 % av greenfee och överenskomna tillval. Ni får hela kostnaden och bokningsvillkoren innan ni bestämmer er.",
-      "sendPrompt": "Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor ni redan funderar på.",
+      "feeNote": "Administrationsavgiften är 5 % av greenfee och överenskomna tillval. Du får hela kostnaden och bokningsvillkoren innan du bestämmer dig.",
+      "sendPrompt": "Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor du redan funderar på.",
       "cta": "Fråga om reseplanering",
       "workingModes": {
-        "title": "Välj hur mycket hjälp ni behöver.",
+        "title": "Välj hur mycket hjälp du behöver.",
         "body": "Vissa grupper behöver bara få starttider kontrollerade och bokade. Andra behöver hela golfplanen, byggd kring flyg, hotellområde, handicapnivå och budget.",
         "items": [
           {
@@ -505,7 +505,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     },
     "addon": {
       "eyebrow": "Tillägg på alla nivåer",
-      "body": "En privat dag på banan med mig bredvid er under alla 18 hål. Fungerar som en fristående bokning eller som del av en planerad resa. En bana vald för ert spel, med lokal banstrategi och coaching invävd i rundan.",
+      "body": "En privat dag på banan med mig bredvid dig under alla 18 hål. Fungerar som en fristående bokning eller som del av en planerad resa. En bana vald för ditt spel, med lokal banstrategi och coaching invävd i rundan.",
       "price": "Solo från",
       "groupLabel": "Grupper från",
       "groupValue": "€950 totalt",

@@ -586,7 +586,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "note": "Jag svarar personligen på varje förfrågan inom 24 timmar. Dina uppgifter används bara för att planera din dag.",
       "experienceHelpTitle": "Vilket upplägg passar bäst?",
       "experienceHelp": "Välj det alternativ som ligger närmast så finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplägget runt dina datum och din grupp. Play With A Pro betyder att Andy är med dig ute på banan. Om du inte är säker ännu, välj det osäkra alternativet så pekar jag dig rätt.",
-      "sendPrompt": "Skicka gärna: datum, gruppstorlek, hotellområde, handicap och banor ni redan funderar på."
+      "sendPrompt": "Skicka gärna: datum, gruppstorlek, hotellområde, handicap och banor du redan funderar på."
     },
     "gift": {
       "heading": "Köper du detta som en present?",

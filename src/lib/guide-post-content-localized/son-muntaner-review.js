@@ -948,7 +948,7 @@ const content = {
         "text": "Snabbt svar: vem bör boka Son Muntaner?"
       },
       {
-        "text": "Boka Son Muntaner om du vill ha förstklassig banskötsel nära Palma, med buggy ingår och en layout som belönar positionsgolf framför ren kraft. Om din grupp föredrar en mer visuell upplevelse, jämför med <a href=\"/guides/alcanada-review\">Alcanada</a>; vill ni ha det tuffaste championship-testet, jämför med <a href=\"/guides/son-gual-review\">Son Gual</a>."
+        "text": "Boka Son Muntaner om du vill ha förstklassig banskötsel nära Palma, med buggy ingår och en layout som belönar positionsgolf framför ren kraft. Om din grupp föredrar en mer visuell upplevelse, jämför med <a href=\"/guides/alcanada-review\">Alcanada</a>; vill du ha det tuffaste championship-testet, jämför med <a href=\"/guides/son-gual-review\">Son Gual</a>."
       },
       {
         "items": [

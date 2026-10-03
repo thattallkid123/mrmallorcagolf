@@ -1459,7 +1459,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "packages": {
       "eyebrow": "Upplevelser och paket",
       "title": "Välj din dag",
-      "body": "Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Banor kan slå ihop bokningar när det är fullt, och under högsäsong händer det. Vill ni ha starttiden privat bokar jag de lediga platserna och för banans avgift vidare till självkostnadspris. I Signature Day ingår den som standard. Vill du att hela resan planeras runt detta går det också att ordna.",
+      "body": "Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Banor kan slå ihop bokningar när det är fullt, och under högsäsong händer det. Vill du ha starttiden privat bokar jag de lediga platserna och för banans avgift vidare till självkostnadspris. I Signature Day ingår den som standard. Vill du att hela resan planeras runt detta går det också att ordna.",
       "items": [
         {
           "tier": "Solo",
@@ -1524,7 +1524,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Restaurang- och matförslag ingår",
             "En person att kontakta för hela resan"
           ],
-          "note": "5 % administrationsavgift tillkommer på greenfee och bokningar. Bekräftas efter ert första samtal.",
+          "note": "5 % administrationsavgift tillkommer på greenfee och bokningar. Bekräftas efter ditt första samtal.",
           "cta": "Förfrågan",
           "href": "/sv/contact"
         }
