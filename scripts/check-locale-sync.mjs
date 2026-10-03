@@ -49,14 +49,26 @@ const h = (s, n) => crypto.createHash('sha1').update(norm(s)).digest('hex').slic
 const enHash = (s) => h(s, 8)
 const trHash = (s) => h(s, 5)
 
+// Arrays of objects that carry a slug (the guide lists) are matched by slug, not
+// by position: the German guides index is a different list from the English one
+// (other order, two guides missing), so index-based paths would compare the wrong
+// pairs. Everything else is matched by position, as the overlay merge does.
+const idKey = (arr) => (arr.length && arr.every((x) => x && typeof x === 'object' && typeof x.slug === 'string') ? 'slug' : null)
 function leaves(o, trail, out) {
   if (typeof o === 'string') out.push([trail, o])
-  else if (Array.isArray(o)) o.forEach((v, i) => leaves(v, `${trail}[${i}]`, out))
+  else if (Array.isArray(o)) {
+    const key = idKey(o)
+    o.forEach((v, i) => leaves(v, key ? `${trail}[${key}=${v[key]}]` : `${trail}[${i}]`, out))
+  }
   else if (o && typeof o === 'object') for (const k of Object.keys(o)) leaves(o[k], trail ? `${trail}.${k}` : k, out)
   return out
 }
 function getPath(o, trail) {
-  for (const p of trail.match(/[^.[\]]+/g) || []) { if (o == null) return undefined; o = o[p] }
+  for (const p of trail.match(/[^.[\]]+/g) || []) {
+    if (o == null) return undefined
+    const eq = p.indexOf('=')
+    o = eq > 0 && Array.isArray(o) ? o.find((x) => x && String(x[p.slice(0, eq)]) === p.slice(eq + 1)) : o[p]
+  }
   return o
 }
 
@@ -130,7 +142,7 @@ function chosenSeen(l, p, lc) { return seen.has(`${l}|${p}|${lc}`) }
 const args = process.argv.slice(2)
 const flag = (n) => args.includes(n)
 const opt = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : undefined }
-const label = opt('--confirm') || opt('--report') || opt('--facts')
+const label = opt('--confirm') || opt('--report') || opt('--facts') || opt('--outliers')
 const prefix = opt('--prefix')
 const localeArg = opt('--locale')
 const wantLocales = localeArg && localeArg !== 'all' ? localeArg.split(',') : LOCALES
@@ -163,19 +175,73 @@ if (opt('--report')) {
 
 // ---- --facts: numbers, prices and URLs that differ between English and the translation
 if (opt('--facts')) {
-  const tokens = (s) => (s.match(/€\s?\d[\d.,]*|\d[\d.,]*\s?(?:€|%)|\d+(?:[.,]\d+)?/g) || []).map((t) => t.replace(/[€%\s]/g, '').replace(/,/g, '.')).sort().join('|')
-  const urls = (s) => (s.match(/\/[a-z0-9-]+(?:\/[a-z0-9-]+)*/gi) || []).join('|')
+  const STRICT = flag('--strict')
+  // strict: only numbers of two or more digits, thousands separators removed, compared as sets
+  const strictTokens = (s) => [...new Set((s.replace(/(\d)[.,  ](\d{3})(?!\d)/g, '$1$2').match(/\d{2,}(?:[.,]\d+)?/g) || []).map((t) => t.replace(',', '.')))].sort().join('|')
+  const looseTokens = (s) => (s.match(/€\s?\d[\d.,]*|\d[\d.,]*\s?(?:€|%)|\d+(?:[.,]\d+)?/g) || []).map((t) => t.replace(/[€%\s]/g, '').replace(/,/g, '.')).sort().join('|')
+  const tokens = STRICT ? strictTokens : looseTokens
   let n = 0
   for (const s of pick(label)) {
     for (const r of collect(s)) {
       if (!wantLocales.includes(r.locale) || !matchesPrefix(r.path)) continue
-      if (tokens(r.en) !== tokens(r.tr) && !(r.locale === 'zh' && tokens(r.en).split('|').length < 3)) {
+      if (tokens(r.en) !== tokens(r.tr) && !(r.locale === 'zh' && !STRICT && tokens(r.en).split('|').length < 3)) {
         n++
         console.log(`[${s.label} ${r.locale}] ${r.path}\n  EN: ${r.en}\n  ${r.locale.toUpperCase()}: ${r.tr}`)
       }
     }
   }
   console.log(`\n${n} string(s) where the numbers differ.`)
+  process.exit(0)
+}
+
+// ---- --hrefs: internal links must point at the same page as the English, in the same language
+// "/contact" in English must be "/de/contact" in German, "/" must be "/de". A link that
+// points somewhere else is drift too (the German Plan Your Trip button went to /contact
+// after the English link moved to /plan-your-trip).
+function hrefFindings() {
+  const out = []
+  for (const s of sources) {
+    for (const r of collect(s)) {
+      if (!/^\/[a-z0-9\-/]*(?:[#?][^\s]*)?$/i.test(r.en) || /^\/(?:[a-z]{2})\//.test(r.en)) continue
+      const expected = r.en === '/' ? `/${r.locale}` : `/${r.locale}${r.en}`
+      if (r.tr !== expected && r.tr !== r.en) out.push({ label: s.label, ...r, expected })
+    }
+  }
+  return out
+}
+if (flag('--hrefs')) {
+  const f = hrefFindings()
+  for (const r of f) console.log(`[${r.label} ${r.locale}] ${r.path}\n  EN: ${r.en}   ${r.locale.toUpperCase()}: ${r.tr}   expected: ${r.expected}`)
+  console.log(`\n${f.length} internal link(s) that do not match the English.`)
+  process.exit(0)
+}
+
+// ---- --outliers: a translation whose length is far out of line with the same string in the
+// other languages is usually not a translation of the same sentence. Uniform drift (all
+// languages stale together) is not caught this way; read one language against the English
+// for that (--report).
+if (opt('--outliers')) {
+  const chosen = pick(label)
+  const rows = chosen.flatMap((s) => collect(s).map((r) => ({ ...r, label: s.label }))).filter((r) => r.en.length >= 40)
+  const scale = {}
+  for (const lc of LOCALES) {
+    const ratios = rows.filter((r) => r.locale === lc).map((r) => r.tr.length / r.en.length).sort((a, b) => a - b)
+    scale[lc] = ratios[Math.floor(ratios.length / 2)] || 1
+  }
+  const lo = Number(opt('--low') ?? 0.6), hi = Number(opt('--high') ?? 1.55)
+  let n = 0
+  for (const r of rows) {
+    if (!wantLocales.includes(r.locale) || !matchesPrefix(r.path)) continue
+    const norm = r.tr.length / r.en.length / scale[r.locale]
+    const sentences = (t) => (t.replace(/https?:\S+/g, '').match(/[.!?]+(?:\s|$)|[。！？]+/g) || []).length
+    const se = sentences(r.en), st = sentences(r.tr)
+    const sentenceGap = r.en.length >= 60 && se >= 2 && Math.abs(se - st) >= 1
+    if (norm < lo || norm > hi || sentenceGap) {
+      n++
+      console.log(`[${r.label} ${r.locale}] ${r.path}  length x${norm.toFixed(2)} of typical${sentenceGap ? `, sentences ${se} -> ${st}` : ''}\n  EN: ${r.en}\n  ${r.locale.toUpperCase()}: ${r.tr}`)
+    }
+  }
+  console.log(`\n${n} string(s) whose length is out of line (below x${lo} or above x${hi} of the language's typical ratio).`)
   process.exit(0)
 }
 
@@ -242,6 +308,12 @@ if (flag('--baseline') || flag('--ratchet')) {
 }
 
 const failures = []
+const badHrefs = hrefFindings()
+if (badHrefs.length) {
+  failures.push(`${badHrefs.length} translated link(s) point somewhere other than the English link (node scripts/check-locale-sync.mjs --hrefs):`)
+  for (const r of badHrefs.slice(0, 8)) failures.push(`  - ${r.label} ${r.locale} ${r.path}: ${r.tr} (expected ${r.expected})`)
+  if (badHrefs.length > 8) failures.push(`  ...and ${badHrefs.length - 8} more`)
+}
 if (staleAll.length) {
   failures.push(`${staleAll.length} translated string(s) are STALE: the English changed after they were confirmed.`)
   const byLabel = {}

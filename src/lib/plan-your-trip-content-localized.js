@@ -9,28 +9,28 @@
 export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "es": {
     "heroEyebrow": "Planifique su viaje de golf en Mallorca",
-    "heroTitle": "Empiece por los campos. Yo me encargo de construir el viaje bien.",
-    "heroBody": "Elijo y reservo los campos y tee times para su grupo, y organizo buggies y palos antes de su llegada. Ustedes juegan sin que yo tenga que acompañarlos. Si quieren pasar un día conmigo en el campo, pueden añadir Play With A Pro.",
+    "heroTitle": "Los campos adecuados de Mallorca, en el orden adecuado.",
+    "heroBody": "Elijo y reservo los campos y las horas de salida para su grupo, con buggies y alquileres organizados antes de su llegada. Usted juega las rondas a su propio ritmo. Si quiere que le acompañe un día, añada Play With A Pro.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Buscador de campos",
-      "basicNote": "Herramienta en la web. Solo una lista corta.",
+      "basicNote": "Primero, una lista corta de campos.",
       "proLabel": "Personal",
       "proTitle": "Planificación del viaje",
       "proNote": "Campos, ruta y reservas resueltos.",
       "itineraryLabel": "Viaje de ejemplo",
-      "itineraryTitle": "Una semana real de 5 días",
+      "itineraryTitle": "Vea una semana real de 5 días",
       "itineraryNote": "Una ruta desde Palma y su lógica."
     },
     "free": {
-      "eyebrow": "Básico",
+      "eyebrow": "Gratis",
       "title": "Use el buscador gratuito de campos",
-      "body": "Responda a unas pocas preguntas y la herramienta le sugerirá campos a considerar según su grupo, nivel, zona y presupuesto. No es una ruta, ni un plan de reservas, ni un itinerario día a día. Úselo como orientación antes de pedirme que planifique el viaje de forma correcta."
+      "body": "Responda unas preguntas y la herramienta le sugerirá campos a considerar según su grupo, nivel, zona y presupuesto. Es un primer paso útil, no una ruta, un plan de reservas ni un itinerario día a día."
     },
     "professional": {
       "eyebrow": "Personal",
-      "title": "Déjeme planificarlo bien",
-      "body": "Envíeme sus fechas, el tamaño del grupo y lo que busca. Le recomendaré los campos adecuados para su juego, le diré dónde alojarse y por qué, organizaré la ruta y el número de vueltas, reservaré los tee times, gestionaré buggies y alquiler de palos, y propondré opciones para comer. Precio bajo consulta.",
+      "title": "Déjeme planificar y reservar la parte de golf de su viaje",
+      "body": "Envíeme sus fechas, el tamaño del grupo y lo que quiere del viaje. Recomendaré los campos adecuados para su grupo, calcularé la ruta y el número de rondas, reservaré y confirmaré las horas de salida, organizaré buggies y alquiler de palos, y daré forma a los días de golf para que el viaje salga redondo de principio a fin.",
       "includes": [
         "Campos recomendados según su juego, grupo y presupuesto",
         "Dónde alojarse y por qué",
@@ -41,7 +41,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro disponible como añadido en cualquier momento"
       ],
       "note": "Sin compromiso al consultar. Le respondo personalmente en 24 horas con el siguiente paso recomendado y un presupuesto claro antes de reservar nada.",
-      "feeNote": "La gestión cuesta el 5 % de los green fees y extras acordados. Le mostraré el coste total y las condiciones antes de confirmar.",
+      "feeNote": "La comisión de gestión es el 5 % de los green fees. Le muestro el coste total y las condiciones de reserva antes de que se comprometa.",
       "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, hándicap, zona de hotel y los campos que ya tenga pensados.",
       "cta": "Consultar sobre la planificación",
       "workingModes": {
@@ -117,28 +117,28 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   },
   "de": {
     "heroEyebrow": "Planen Sie Ihren Mallorca-Golftrip",
-    "heroTitle": "Starten Sie mit den Plätzen. Ich plane den Trip sauber zu Ende.",
-    "heroBody": "Ich wähle die passenden Plätze und buche die Startzeiten für Ihre Gruppe. Buggys und Leihschläger organisiere ich vor Ihrer Anreise. Sie spielen Ihre Runden ohne mich; wenn Sie einen Tag gemeinsam spielen möchten, können Sie Play With A Pro hinzufügen.",
+    "heroTitle": "Die richtigen Plätze Mallorcas, in der richtigen Reihenfolge.",
+    "heroBody": "Ich wähle die Plätze und Startzeiten für Ihre Gruppe aus und buche sie, Buggys und Leihschläger organisiere ich vor Ihrer Anreise. Sie spielen die Runden nach Ihrem eigenen Zeitplan. Wenn Sie mich für einen Tag an Ihrer Seite möchten, fügen Sie Play With A Pro hinzu.",
     "options": {
       "basicLabel": "Kostenlos",
       "basicTitle": "Kostenloser Platzfinder",
-      "basicNote": "Vor Ort, nur als Shortlist.",
+      "basicNote": "Erst eine Platzauswahl treffen.",
       "proLabel": "Persönlich",
-      "proTitle": "Bezahlte Reiseplanung",
+      "proTitle": "Reiseplanung",
       "proNote": "Plätze, Route und Buchungen erledigt.",
       "itineraryLabel": "Beispielreise",
-      "itineraryTitle": "Echte 5-Tage-Woche",
+      "itineraryTitle": "Eine echte 5-Tage-Woche ansehen",
       "itineraryNote": "Eine Palma-Route und der Gedanke dahinter."
     },
     "free": {
-      "eyebrow": "Basis",
+      "eyebrow": "Kostenlos",
       "title": "Nutzen Sie den kostenlosen Platzfinder",
-      "body": "Beantworten Sie ein paar Fragen und das Tool schlägt Plätze vor, die zu Ihrer Gruppe, Ihrem Niveau, der Region und dem Budget passen könnten. Das ist noch keine Route, kein Buchungsplan und kein Tagesprogramm. Nutzen Sie es als Orientierung, bevor ich die Reise richtig plane."
+      "body": "Beantworten Sie ein paar Fragen und das Tool schlägt Plätze vor, die zu Ihrer Gruppe, Ihrem Niveau, der Region und dem Budget passen könnten. Es ist ein nützlicher erster Schritt, aber keine Route, kein Buchungsplan und kein Tagesprogramm."
     },
     "professional": {
       "eyebrow": "Persönlich",
-      "title": "Ich plane das sauber für Sie",
-      "body": "Schicken Sie mir Ihre Daten, die Gruppengröße und was Sie sich wünschen. Ich empfehle die passenden Plätze für Ihr Spiel, sage Ihnen, wo Sie am besten wohnen und warum, plane Route und Rundenzahl, buche die Startzeiten, organisiere Buggys und Leihschläger und schlage passende Restaurants vor. Preis auf Anfrage.",
+      "title": "Lassen Sie mich die Golfseite Ihrer Reise planen und buchen",
+      "body": "Schicken Sie mir Ihre Daten, die Gruppengröße und was Sie sich von der Reise wünschen. Ich empfehle die passenden Plätze für Ihre Gruppe, erarbeite Route und Rundenzahl, buche und bestätige die Startzeiten, organisiere Buggys und Leihschläger und gestalte die Golftage so, dass die Reise von Anfang bis Ende reibungslos läuft.",
       "includes": [
         "Platzempfehlungen passend zu Spiel, Gruppe und Budget",
         "Wo Sie wohnen sollten und warum",
@@ -149,7 +149,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro jederzeit als Zusatz möglich"
       ],
       "note": "Keine Verpflichtung bei der Anfrage. Ich antworte persönlich innerhalb von 24 Stunden mit dem empfohlenen nächsten Schritt und einem klaren Angebot, bevor irgendetwas gebucht wird.",
-      "feeNote": "Die Verwaltungsgebühr beträgt 5 % der Greenfees und vereinbarten Extras. Gesamtkosten und Buchungsbedingungen erhalten Sie vor der Zusage.",
+      "feeNote": "Die Verwaltungsgebühr beträgt 5 % der Greenfees. Gesamtkosten und Buchungsbedingungen zeige ich Ihnen, bevor Sie sich festlegen.",
       "sendPrompt": "Am besten senden: Daten, Gruppengröße, Handicap, Hotelregion und alle Plätze, die schon auf Ihrer Liste stehen.",
       "cta": "Reiseplanung anfragen",
       "workingModes": {
@@ -225,28 +225,28 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   },
   "fr": {
     "heroEyebrow": "Planifiez votre séjour golf à Majorque",
-    "heroTitle": "Commencez par les parcours. Je construis le voyage correctement.",
-    "heroBody": "Je choisis et réserve les parcours et les départs pour votre groupe, avec voiturettes et clubs de location organisés avant votre arrivée. Vous jouez vos parties sans que je vous accompagne. Si vous souhaitez une journée ensemble sur le parcours, ajoutez Play With A Pro.",
+    "heroTitle": "Les bons parcours de Majorque, dans le bon ordre.",
+    "heroBody": "Je choisis et je réserve les parcours et les heures de départ pour votre groupe, avec voiturettes et locations organisées avant votre arrivée. Vous jouez les parties à votre rythme. Si vous voulez que je sois à vos côtés pendant une journée, ajoutez Play With A Pro.",
     "options": {
       "basicLabel": "Gratuit",
       "basicTitle": "Sélecteur de parcours",
-      "basicNote": "Outil sur le site. Une simple shortlist.",
+      "basicNote": "D'abord, une présélection de parcours.",
       "proLabel": "Personnel",
-      "proTitle": "Planification payante",
+      "proTitle": "Planification du séjour",
       "proNote": "Parcours, itinéraire et réservations.",
       "itineraryLabel": "Séjour type",
-      "itineraryTitle": "Une semaine de 5 jours",
+      "itineraryTitle": "Découvrez une vraie semaine de 5 jours",
       "itineraryNote": "Un itinéraire depuis Palma et sa logique."
     },
     "free": {
-      "eyebrow": "Basique",
+      "eyebrow": "Gratuit",
       "title": "Utilisez la sélection gratuite de parcours",
-      "body": "Répondez à quelques questions et l’outil vous proposera des parcours à envisager selon votre groupe, votre niveau, la région et le budget. Ce n’est ni un itinéraire, ni un plan de réservation, ni un programme jour par jour. Servez-vous-en pour vous orienter avant de me demander de planifier le voyage correctement."
+      "body": "Répondez à quelques questions et l'outil vous suggérera des parcours à envisager selon votre groupe, votre niveau, la région et le budget. C'est une première étape utile, pas un itinéraire, un plan de réservation ni un programme jour par jour."
     },
     "professional": {
       "eyebrow": "Personnel",
-      "title": "Laissez-moi le planifier correctement",
-      "body": "Envoyez-moi vos dates, la taille du groupe et ce que vous recherchez. Je vous recommanderai les bons parcours pour votre jeu, vous dirai où loger et pourquoi, j’organiserai l’itinéraire et le nombre de parties, réserverai les départs, gérerai les buggys et les clubs de location, et proposerai des options de repas adaptées. Prix sur demande.",
+      "title": "Laissez-moi planifier et réserver le volet golf de votre séjour",
+      "body": "Envoyez-moi vos dates, la taille du groupe et ce que vous attendez du séjour. Je vous recommande les bons parcours pour votre groupe, j'établis l'itinéraire et le nombre de parties, je réserve et je confirme les heures de départ, j'organise voiturettes et location de clubs, et je construis les journées de golf pour que le séjour se déroule sans accroc du début à la fin.",
       "includes": [
         "Parcours recommandés selon votre jeu, votre groupe et votre budget",
         "Où loger et pourquoi",
@@ -257,7 +257,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro disponible en option à tout moment"
       ],
       "note": "Aucun engagement au stade de la demande. Je réponds personnellement sous 24 heures avec la prochaine étape recommandée et un devis clair avant toute réservation.",
-      "feeNote": "Les frais de gestion représentent 5 % des green fees et des suppléments convenus. Le coût total et les conditions sont indiqués avant confirmation.",
+      "feeNote": "Les frais de gestion représentent 5 % des green fees. Je vous indique le coût total et les conditions de réservation avant que vous vous engagiez.",
       "sendPrompt": "Idéalement : dates, taille du groupe, niveau, zone d’hôtel et parcours déjà envisagés.",
       "cta": "Demander la planification",
       "workingModes": {
@@ -333,28 +333,28 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   },
   "nl": {
     "heroEyebrow": "Plan uw golfreis naar Mallorca",
-    "heroTitle": "Begin bij de banen. Ik bouw de reis netjes voor u op.",
-    "heroBody": "Ik kies en boek de banen en starttijden voor uw groep en regel buggy's en huurclubs vóór uw aankomst. U speelt de rondes zonder dat ik meega. Wilt u een dag samen op de baan spelen, dan kunt u Play With A Pro toevoegen.",
+    "heroTitle": "De juiste banen op Mallorca, in de juiste volgorde.",
+    "heroBody": "Ik kies en boek de banen en starttijden voor uw groep, met buggy's en huurmateriaal geregeld voordat u aankomt. U speelt de rondes in uw eigen tempo. Wilt u dat ik een dag aan uw zijde sta, voeg dan Play With A Pro toe.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banenzoeker",
-      "basicNote": "Tool op de site. Alleen een shortlist.",
+      "basicNote": "Eerst een shortlist van banen.",
       "proLabel": "Persoonlijk",
-      "proTitle": "Betaalde reisplanning",
+      "proTitle": "Reisplanning",
       "proNote": "Banen, route en boekingen geregeld.",
       "itineraryLabel": "Voorbeeldreis",
-      "itineraryTitle": "Een week van 5 dagen",
+      "itineraryTitle": "Bekijk een echte week van 5 dagen",
       "itineraryNote": "Een route vanuit Palma en de logica."
     },
     "free": {
-      "eyebrow": "Basis",
+      "eyebrow": "Gratis",
       "title": "Gebruik de gratis banenzoeker",
-      "body": "Beantwoord een paar vragen en de tool stelt banen voor om te overwegen op basis van uw groep, niveau, regio en budget. Dit is nog geen route, geen boekingsplan en geen dag-tot-dag itinerary. Gebruik het als vertrekpunt voordat ik de reis echt ga plannen."
+      "body": "Beantwoord een paar vragen en de tool stelt banen voor die u kunt overwegen, op basis van uw groep, niveau, regio en budget. Het is een nuttige eerste stap, geen route, boekingsplan of dag-voor-dag-programma."
     },
     "professional": {
       "eyebrow": "Persoonlijk",
-      "title": "Laat mij het goed plannen",
-      "body": "Stuur mij uw data, groepsgrootte en wat u zoekt. Ik adviseer de juiste banen voor uw spel, leg uit waar u het best kunt verblijven en waarom, werk de route en het aantal rondes uit, boek de starttijden, regel buggy’s en clubhuur en stel eetopties voor. Prijs op aanvraag.",
+      "title": "Laat mij de golfkant van uw reis plannen en boeken",
+      "body": "Stuur me uw data, groepsgrootte en wat u van de reis wilt. Ik adviseer de juiste banen voor uw groep, werk de route en het aantal rondes uit, boek en bevestig de starttijden, regel buggy's en huurclubs en geef de golfdagen vorm zodat de reis van begin tot eind soepel verloopt.",
       "includes": [
         "Baanaanbevelingen afgestemd op uw spel, groep en budget",
         "Waar u het best kunt verblijven en waarom",
@@ -365,7 +365,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro als extra optie op elk moment"
       ],
       "note": "Geen verplichting bij aanvraag. Ik reageer persoonlijk binnen 24 uur met de aanbevolen volgende stap en een duidelijke prijsopgave voordat er iets wordt geboekt.",
-      "feeNote": "De beheervergoeding is 5 % van greenfees en afgesproken extra's. U krijgt de totale kosten en boekingsvoorwaarden voordat u akkoord gaat.",
+      "feeNote": "De beheersfee is 5 % van de greenfees. Ik toon u de totale kosten en boekingsvoorwaarden voordat u zich verbindt.",
       "sendPrompt": "Graag meesturen: data, groepsgrootte, handicap, hotelregio en banen die al op uw shortlist staan.",
       "cta": "Reisplanning aanvragen",
       "workingModes": {
@@ -441,28 +441,28 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   },
   "sv": {
     "heroEyebrow": "Planera din golfresa till Mallorca",
-    "heroTitle": "Börja med banorna. Jag bygger resan ordentligt.",
-    "heroBody": "Jag väljer och bokar banor och starttider för din grupp och ordnar golfbilar och hyrklubbor före ankomst. Du spelar rundorna utan att jag följer med. Vill du spela en dag tillsammans med mig kan du lägga till Play With A Pro.",
+    "heroTitle": "Rätt banor på Mallorca, i rätt ordning.",
+    "heroBody": "Jag väljer och bokar banorna och starttiderna åt din grupp, med golfbilar och uthyrning ordnat innan du kommer. Du spelar rundorna i din egen takt. Vill du ha mig vid din sida en dag, lägg till Play With A Pro.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banfinder",
-      "basicNote": "Verktyg på sajten. Bara en shortlist.",
+      "basicNote": "Börja med en kortlista över banor.",
       "proLabel": "Personlig",
-      "proTitle": "Betald reseplanering",
+      "proTitle": "Reseplanering",
       "proNote": "Banor, rutt och bokningar ordnas.",
       "itineraryLabel": "Exempelresa",
-      "itineraryTitle": "En vecka på 5 dagar",
+      "itineraryTitle": "Se en riktig vecka på 5 dagar",
       "itineraryNote": "En Palma-baserad rutt och tanken bakom den."
     },
     "free": {
-      "eyebrow": "Grund",
+      "eyebrow": "Gratis",
       "title": "Använd den gratis banfindern",
-      "body": "Svara på några frågor så föreslår verktyget banor att överväga utifrån grupp, nivå, region och budget. Det är ingen rutt, ingen bokningsplan och inget dagsprogram. Använd det som utgångspunkt innan jag planerar resan ordentligt."
+      "body": "Svara på några frågor så föreslår verktyget banor att överväga utifrån din grupp, nivå, region och budget. Det är ett användbart första steg, inte en rutt, en bokningsplan eller ett dag-för-dag-program."
     },
     "professional": {
       "eyebrow": "Personlig",
-      "title": "Låt mig planera det ordentligt",
-      "body": "Skicka dina datum, gruppstorlek och vad du vill ha. Jag rekommenderar rätt banor för ditt spel, förklarar var du bör bo och varför, lägger upp rutten och antalet rundor, bokar starttider, ordnar golfbilar och hyrklubbor och föreslår bra matställen. Pris på förfrågan.",
+      "title": "Låt mig planera och boka golfdelen av din resa",
+      "body": "Skicka mig dina datum, gruppstorlek och vad du vill ha ut av resan. Jag rekommenderar rätt banor för din grupp, räknar ut rutten och antalet rundor, bokar och bekräftar starttiderna, ordnar golfbilar och klubbhyra och formar golfdagarna så att resan löper smidigt från start till mål.",
       "includes": [
         "Banrekommendationer anpassade efter spel, grupp och budget",
         "Var du bör bo och varför",
@@ -473,7 +473,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro som tillägg när som helst"
       ],
       "note": "Inget åtagande vid förfrågan. Jag svarar personligen inom 24 timmar med rekommenderat nästa steg och en tydlig offert innan något bokas.",
-      "feeNote": "Administrationsavgiften är 5 % av greenfee och överenskomna tillval. Du får hela kostnaden och bokningsvillkoren innan du bestämmer dig.",
+      "feeNote": "Administrationsavgiften är 5 % av greenfeen. Jag visar hela kostnaden och bokningsvillkoren innan du förbinder dig.",
       "sendPrompt": "Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor du redan funderar på.",
       "cta": "Fråga om reseplanering",
       "workingModes": {
@@ -549,28 +549,28 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   },
   "zh": {
     "heroEyebrow": "规划您的马略卡高尔夫之旅",
-    "heroTitle": "先从球场开始。我来把行程认真搭好。",
-    "heroBody": "我会为您的团队挑选并预订球场和开球时间，提前安排球车和租赁球杆。您可以自行下场，我不需要陪同。如果想和我一起打一整天，可以加上 Play With A Pro。",
+    "heroTitle": "合适的马略卡球场，按合适的顺序。",
+    "heroBody": "我为您的团队挑选并预订球场和开球时间，并在您抵达前安排好球车和租借球具。您按自己的时间安排打球。如果您想让我陪您打一天，可以加选 Play With A Pro。",
     "options": {
       "basicLabel": "免费",
       "basicTitle": "免费球场筛选",
-      "basicNote": "网站内工具，只给您一份短名单。",
+      "basicNote": "先列出球场短名单。",
       "proLabel": "专属",
-      "proTitle": "付费行程规划",
+      "proTitle": "行程规划",
       "proNote": "球场、路线与预订，一并安排。",
       "itineraryLabel": "行程范例",
       "itineraryTitle": "看一份真实的五天行程",
       "itineraryNote": "帕尔马路线及其安排逻辑。"
     },
     "free": {
-      "eyebrow": "基础",
+      "eyebrow": "免费",
       "title": "使用免费的球场筛选器",
-      "body": "回答几个问题后，工具会根据您的团队、水平、区域和预算，推荐一些值得考虑的球场。它不是路线，不是预订方案，也不是逐日行程。先用它摸清方向，再来找我认真规划旅程。"
+      "body": "回答几个问题，工具会根据您的团队、水平、区域和预算，推荐可以考虑的球场。这是一个有用的初步筛选，而不是路线、预订计划或逐日行程。"
     },
     "professional": {
       "eyebrow": "专属",
-      "title": "让我帮您认真规划",
-      "body": "把您的日期、人数和期待发给我。我会根据您的水平推荐合适的球场，建议住在哪里以及原因，安排路线和轮次，预订开球时间，代办球车和球杆租赁，并推荐合适的餐饮安排。价格面议。",
+      "title": "让我来规划并预订您行程中的高尔夫部分",
+      "body": "请发给我您的日期、人数以及您对这次行程的期望。我会为您的团队推荐合适的球场，安排路线和打球轮数，预订并确认开球时间，安排球车和球具租借，并设计好每个高尔夫日，让整趟行程从头到尾顺畅进行。",
       "includes": [
         "根据您的水平、团队和预算推荐球场",
         "建议住在哪里以及原因",

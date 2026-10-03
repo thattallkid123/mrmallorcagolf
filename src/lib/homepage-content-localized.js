@@ -5,7 +5,7 @@ export const HOME_LOCALIZED_CONTENT = {
   "es": {
     "locale": "es",
     "hero": {
-      "eyebrow": "PGA Advanced Professional en Mallorca",
+      "eyebrow": "UK PGA Advanced Professional en Mallorca",
       "titleLines": [
         "Juega los mejores",
         "campos de Mallorca."
@@ -257,9 +257,9 @@ export const HOME_LOCALIZED_CONTENT = {
             "Sugerencias de restaurantes y comidas incluidas",
             "Una sola persona para todo el viaje"
           ],
-          "note": "Se aplica una comisión de gestión del 5 % sobre green fees y reservas. Se confirma tras la primera conversación.",
+          "note": "La comisión de gestión del 5 % se aplica solo a los green fees. Se confirma tras la primera conversación.",
           "cta": "Planifique su viaje",
-          "href": "/es/contact"
+          "href": "/es/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -267,7 +267,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
         "body": "Signature Day - un día privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio según el día.",
         "cta": "Consultar un viaje de varios días",
-        "href": "/es/contact",
+        "href": "/es/plan-your-trip",
         "detail": "Desde €2.000. Escríbame con sus fechas y le propondré una opción a su medida.",
         "button": "Consultar un viaje de varios días →"
       },
@@ -325,7 +325,7 @@ export const HOME_LOCALIZED_CONTENT = {
   "de": {
     "locale": "de",
     "hero": {
-      "eyebrow": "PGA Advanced Professional auf Mallorca",
+      "eyebrow": "UK PGA Advanced Professional auf Mallorca",
       "titleLines": [
         "Spielen Sie Mallorcas",
         "beste Plätze."
@@ -578,9 +578,9 @@ export const HOME_LOCALIZED_CONTENT = {
             "Restaurant- und Essensvorschläge inklusive",
             "Eine feste Ansprechperson für die gesamte Reise"
           ],
-          "note": "5 % Verwaltungsgebühr auf Greenfees und Buchungen. Wird nach dem ersten Gespräch bestätigt.",
+          "note": "5 % Verwaltungsgebühr, nur auf Greenfees. Wird nach dem ersten Gespräch bestätigt.",
           "cta": "Reise planen",
-          "href": "/de/contact"
+          "href": "/de/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -588,7 +588,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "title": "Ein mehrtägiges Erlebnis, um Sie herum arrangiert.",
         "body": "Signature Day - ein privater Golftag mit Andy, John Brazier, Transfers und einem koordinierten Abend. Preis nach Umfang des Tages.",
         "cta": "Mehrtägige Reise anfragen",
-        "href": "/de/contact",
+        "href": "/de/plan-your-trip",
         "detail": "Ab €2.000. Schreiben Sie mir mit Ihren Reisedaten, und ich schicke Ihnen einen passenden Vorschlag.",
         "button": "Mehrtägige Reise anfragen →"
       },
@@ -646,7 +646,7 @@ export const HOME_LOCALIZED_CONTENT = {
   "fr": {
     "locale": "fr",
     "hero": {
-      "eyebrow": "Professionnel PGA confirmé à Majorque",
+      "eyebrow": "UK PGA Advanced Professional à Majorque",
       "titleLines": [
         "Jouez les plus beaux",
         "parcours de Majorque."
@@ -899,9 +899,9 @@ export const HOME_LOCALIZED_CONTENT = {
             "Suggestions de restaurants et de repas incluses",
             "Une seule personne à contacter pour tout le voyage"
           ],
-          "note": "Frais de gestion de 5 % sur les green fees et les réservations. Confirmé après votre premier échange.",
+          "note": "Frais de gestion de 5 %, uniquement sur les green fees. Confirmé après votre premier échange.",
           "cta": "Planifiez votre voyage",
-          "href": "/fr/contact"
+          "href": "/fr/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -909,7 +909,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
         "body": "Signature Day - une journée de golf privée avec Andy, John Brazier, des transferts privés et une soirée coordonnée. Tarif adapté à la journée.",
         "cta": "Demander un séjour sur plusieurs jours",
-        "href": "/fr/contact",
+        "href": "/fr/plan-your-trip",
         "detail": "À partir de 2 000 €. Envoyez-moi vos dates et je vous proposerai une version adaptée.",
         "button": "Demander un séjour sur plusieurs jours →"
       },
@@ -967,7 +967,7 @@ export const HOME_LOCALIZED_CONTENT = {
   "nl": {
     "locale": "nl",
     "hero": {
-      "eyebrow": "PGA Advanced Professional op Mallorca",
+      "eyebrow": "UK PGA Advanced Professional op Mallorca",
       "titleLines": [
         "Speel de beste",
         "banen van Mallorca."
@@ -1220,9 +1220,9 @@ export const HOME_LOCALIZED_CONTENT = {
             "Restaurant- en diningtips inbegrepen",
             "Eén aanspreekpunt voor de hele reis"
           ],
-          "note": "Er geldt een beheersfee van 5 % op greenfees en boekingen. Bevestigd na het eerste gesprek.",
+          "note": "Er geldt een beheersfee van 5 %, alleen op greenfees. Bevestigd na het eerste gesprek.",
           "cta": "Plan uw reis",
-          "href": "/nl/contact"
+          "href": "/nl/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -1230,7 +1230,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "title": "Een meerdaagse ervaring, volledig om u heen opgebouwd.",
         "body": "Signature Day - een privé golfdag met Andy, John Brazier, transfers en een georganiseerde avond. Prijs afgestemd op de dag.",
         "cta": "Meerdaagse trip aanvragen",
-        "href": "/nl/contact",
+        "href": "/nl/plan-your-trip",
         "detail": "Vanaf €2.000. Stuur me uw data en ik werk een passend voorstel uit.",
         "button": "Meerdaagse trip aanvragen →"
       },
@@ -1288,7 +1288,7 @@ export const HOME_LOCALIZED_CONTENT = {
   "sv": {
     "locale": "sv",
     "hero": {
-      "eyebrow": "PGA Advanced Professional på Mallorca",
+      "eyebrow": "UK PGA Advanced Professional på Mallorca",
       "titleLines": [
         "Spela Mallorcas",
         "bästa banor."
@@ -1541,9 +1541,9 @@ export const HOME_LOCALIZED_CONTENT = {
             "Restaurang- och matförslag ingår",
             "En person att kontakta för hela resan"
           ],
-          "note": "5 % administrationsavgift tillkommer på greenfee och bokningar. Bekräftas efter ditt första samtal.",
+          "note": "5 % administrationsavgift gäller endast greenfee. Bekräftas efter ditt första samtal.",
           "cta": "Planera din resa",
-          "href": "/sv/contact"
+          "href": "/sv/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -1551,7 +1551,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "title": "En flerdagarsupplevelse, planerad runt dig.",
         "body": "Signature Day - en privat golfdag med Andy, John Brazier, transfers och en koordinerad kväll. Pris anpassat efter dagen.",
         "cta": "Fråga om en flerdagarsresa",
-        "href": "/sv/contact",
+        "href": "/sv/plan-your-trip",
         "detail": "Från €2.000. Skicka dina datum så sätter jag ihop ett förslag som passar.",
         "button": "Fråga om en flerdagarsresa →"
       },
@@ -1816,7 +1816,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "赛后总结",
             "可加订私人开球时段，按成本价收取"
           ],
-          "note": "果岭费及可选项目在沟通后确认。",
+          "note": "我的日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我很乐意帮您安排。",
           "cta": "立即咨询",
           "href": "/zh/contact"
         },
@@ -1871,7 +1871,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "管理费仅按果岭费的 5% 收取。第一次沟通后确认。",
           "cta": "了解行程规划",
-          "href": "/zh/contact"
+          "href": "/zh/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -1879,7 +1879,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "title": "一款围绕您定制的多日体验。",
         "body": "Signature Day - 与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。按当天范围报价。",
         "cta": "咨询多日行程",
-        "href": "/zh/contact",
+        "href": "/zh/plan-your-trip",
         "detail": "€2,000 起。把您的日期发给我，我会为您准备合适的方案。",
         "button": "咨询多日行程 →"
       },

@@ -19,7 +19,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "success": {
       "title": "Consulta recibida.",
-      "body": "Le responderé personalmente dentro de 24 horas. Si quiere hablar directamente, WhatsApp es la vía más rápida."
+      "body": "Le responderé personalmente, normalmente en pocas horas y siempre dentro de 24. Si prefiere hablar directamente, WhatsApp es la vía más rápida."
     },
     "form": {
       "eyebrow": "Formulario de consulta",
@@ -28,7 +28,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "sendPromptLabel": "Qué enviar",
       "labels": {
         "fname": "Nombre",
-        "lname": "Apellido",
+        "lname": "Apellido (opcional)",
         "email": "Correo electrónico",
         "dates": "Fechas preferidas",
         "handicap": "Su hándicap",
@@ -46,9 +46,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ["not-sure", "Aún no lo sé"]
       ],
       "pwapFormats": [
-        ["pwap-solo", "Solo", ""],
-        ["pwap-group", "Grupo", ""],
-        ["signature-day", "El Día Andy Completo", ""],
+        ["pwap-solo", "Solo", "€795"],
+        ["pwap-group", "Grupo", "€950 en total"],
+        ["signature-day", "Signature Day", "Bajo consulta"],
         ["pwap-not-sure", "Aún no lo sé", ""]
       ],
       "placeholders": {
@@ -57,7 +57,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "juan@ejemplo.com",
         "dates": "p. ej. 15-22 octubre 2026",
         "handicap": "p. ej. 14 o \"principiante\"",
-        "message": "Objetivos para el día, campos que ha visto, grupo mixto, peticiones específicas: cualquier detalle ayuda."
+        "message": "Zona del hotel, campos de los que haya oído hablar, presupuesto, composición del grupo o cualquier otra cosa que me ayude a entender el viaje."
       },
       "groupsizeOptions": [
         {
@@ -99,10 +99,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ]
       ],
       "submit": "Enviar consulta →",
-      "note": "Respondo personalmente a cada consulta en 24 horas. Sus datos se usan solo para organizar su jornada.",
+      "note": "Respondo personalmente a cada consulta en 24 horas. Sus datos se usan solo para responder y organizar el servicio que elija.",
       "experienceHelpTitle": "¿Qué opción le encaja?",
       "experienceHelp": "Elija la opción más cercana y yo afinaré el resto con usted. Planificación de viaje significa que organizo la ruta, los campos y la lógica alrededor de sus fechas y su grupo. Play With A Pro significa que Andy estará con usted en el campo. Si todavía no lo tiene claro, elija la opción de duda y yo le orientaré.",
-      "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, zona de hotel, hándicap y los campos que ya tenga en mente."
+      "sendPrompt": "Son útiles las fechas, el tamaño del grupo, la zona del hotel, el rango de hándicap y los campos que ya tenga en su lista. Si aún está decidiendo, envíeme lo que sepa y lo iremos acotando juntos."
     },
     "gift": {
       "heading": "¿Es un regalo?",
@@ -140,7 +140,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "success": {
       "title": "Anfrage erhalten.",
-      "body": "Ich melde mich persönlich innerhalb von 24 Stunden. Wenn es schneller gehen soll, ist WhatsApp der einfachste Weg."
+      "body": "Ich melde mich persönlich bei Ihnen, meist innerhalb weniger Stunden, spätestens innerhalb von 24. Wenn Sie lieber direkt sprechen möchten, ist WhatsApp der schnellste Weg."
     },
     "form": {
       "eyebrow": "Anfrageformular",
@@ -149,7 +149,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "sendPromptLabel": "Was Sie senden sollten",
       "labels": {
         "fname": "Vorname",
-        "lname": "Nachname",
+        "lname": "Nachname (optional)",
         "email": "E-Mail-Adresse",
         "dates": "Bevorzugte Termine",
         "handicap": "Ihr Handicap",
@@ -167,9 +167,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ["not-sure", "Noch nicht sicher"]
       ],
       "pwapFormats": [
-        ["pwap-solo", "Solo", ""],
-        ["pwap-group", "Gruppe", ""],
-        ["signature-day", "Der Andy-Tag", ""],
+        ["pwap-solo", "Solo", "€795"],
+        ["pwap-group", "Gruppe", "€950 insgesamt"],
+        ["signature-day", "Signature Day", "Auf Anfrage"],
         ["pwap-not-sure", "Noch nicht sicher", ""]
       ],
       "placeholders": {
@@ -178,7 +178,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "max@beispiel.de",
         "dates": "z. B. 15.-22. Oktober 2026",
         "handicap": "z. B. 14 oder 'Anfänger'",
-        "message": "Ziele für den Tag, Wunschplätze, gemischte Gruppe, besondere Wünsche - alles hilft mir, den richtigen Tag für Sie zu planen."
+        "message": "Hotelregion, Plätze, die Sie schon kennen, Budget, Gruppenzusammensetzung oder alles andere, was mir hilft, die Reise zu verstehen."
       },
       "groupsizeOptions": [
         {
@@ -220,14 +220,14 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ]
       ],
       "submit": "Anfrage senden →",
-      "note": "Ich beantworte jede Anfrage persönlich innerhalb von 24 Stunden. Ihre Angaben nutze ich nur, um Ihren Tag zu planen.",
+      "note": "Ich beantworte jede Anfrage persönlich innerhalb von 24 Stunden. Ihre Angaben nutze ich nur, um zu antworten und die von Ihnen gewählte Leistung zu organisieren.",
       "experienceHelpTitle": "Welche Option passt?",
       "experienceHelp": "Wählen Sie die nächste passende Option und ich verfeinere den Rest mit Ihnen. Reiseplanung bedeutet, dass ich Ablauf, Plätze und Logik rund um Ihre Daten und Gruppe aufbaue. Play With A Pro bedeutet, dass Andy mit Ihnen auf dem Platz ist. Wenn Sie noch unsicher sind, wählen Sie die unsichere Option und ich leite Sie in die richtige Richtung.",
-      "sendPrompt": "Am besten senden: Daten, Gruppengröße, Hotelregion, Handicap und alle Plätze, die schon auf Ihrer Liste stehen."
+      "sendPrompt": "Hilfreich sind Daten, Gruppengröße, Hotelregion, Handicap-Bereich und alle Plätze, die schon auf Ihrer Liste stehen. Wenn Sie sich noch entscheiden, schicken Sie mir, was Sie wissen, und wir grenzen es gemeinsam ein."
     },
     "gift": {
       "heading": "Schenken Sie diesen Tag?",
-      "body": "Teilen Sie mir das bitte in der Nachricht oben mit. Ich bereite dann ein Zertifikat vor und halte die Details zur Erfahrung zurück, bis Sie bereit sind, sie zu teilen."
+      "body": "Teilen Sie mir das bitte in der Nachricht oben mit. Ich bereite dann ein Zertifikat vor und halte die Details des Tages zurück, bis Sie bereit sind, sie zu teilen."
     },
     "whatNext": {
       "heading": "Was passiert als Nächstes?",
@@ -261,7 +261,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "success": {
       "title": "Demande reçue.",
-      "body": "Je vous répondrai personnellement sous 24 heures. Si vous préférez parler directement, WhatsApp est le plus rapide."
+      "body": "Je reviendrai vers vous personnellement, en général sous quelques heures, toujours sous 24 heures. Si vous préférez parler directement, WhatsApp est le plus rapide."
     },
     "form": {
       "eyebrow": "Formulaire de contact",
@@ -270,7 +270,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "sendPromptLabel": "Ce qu'il faut envoyer",
       "labels": {
         "fname": "Prénom",
-        "lname": "Nom",
+        "lname": "Nom (facultatif)",
         "email": "Adresse e-mail",
         "dates": "Dates souhaitées",
         "handicap": "Votre handicap",
@@ -288,9 +288,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ["not-sure", "Je ne suis pas sûr"]
       ],
       "pwapFormats": [
-        ["pwap-solo", "Solo", ""],
-        ["pwap-group", "Groupe", ""],
-        ["signature-day", "La Journée Andy", ""],
+        ["pwap-solo", "Solo", "€795"],
+        ["pwap-group", "Groupe", "€950 au total"],
+        ["signature-day", "Signature Day", "Sur demande"],
         ["pwap-not-sure", "Je ne suis pas sûr", ""]
       ],
       "placeholders": {
@@ -299,7 +299,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "jean@exemple.com",
         "dates": "ex. 15-22 octobre 2026",
         "handicap": "ex. 14 ou 'débutant'",
-        "message": "Vos objectifs, les parcours que vous regardez, un groupe mixte, des demandes spécifiques : tout m’aide à préparer la bonne journée."
+        "message": "Zone d'hôtel, parcours dont vous avez entendu parler, budget, composition du groupe ou tout ce qui m'aide à comprendre le séjour."
       },
       "groupsizeOptions": [
         {
@@ -341,10 +341,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ]
       ],
       "submit": "Envoyer la demande →",
-      "note": "Je réponds personnellement à chaque demande sous 24 heures. Vos coordonnées servent uniquement à organiser votre journée.",
+      "note": "Je réponds personnellement à chaque demande sous 24 heures. Vos coordonnées servent uniquement à vous répondre et à organiser la prestation que vous choisissez.",
       "experienceHelpTitle": "Quelle option vous correspond ?",
       "experienceHelp": "Choisissez l'option la plus proche et j'affine le reste avec vous. La planification de voyage signifie que je construis le parcours, la logique et le rythme autour de vos dates et de votre groupe. Play With A Pro signifie qu'Andy sera sur le parcours avec vous. Si vous n'êtes pas encore certain, choisissez l'option d'hésitation et je vous orienterai.",
-      "sendPrompt": "Idéalement : dates, taille du groupe, zone d'hôtel, niveau et parcours déjà envisagés."
+      "sendPrompt": "Les dates, la taille du groupe, la zone d'hôtel, la fourchette de handicap et les parcours déjà sur votre liste sont utiles. Si vous hésitez encore, envoyez-moi ce que vous savez et nous affinerons ensemble."
     },
     "gift": {
       "heading": "Vous offrez cette journée ?",
@@ -382,7 +382,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "success": {
       "title": "Aanvraag ontvangen.",
-      "body": "Ik reageer persoonlijk binnen 24 uur. Als u liever direct spreekt, is WhatsApp de snelste route."
+      "body": "Ik kom persoonlijk bij u terug, meestal binnen een paar uur, altijd binnen 24. Als u liever direct spreekt, is WhatsApp de snelste route."
     },
     "form": {
       "eyebrow": "Aanvraagformulier",
@@ -391,7 +391,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "sendPromptLabel": "Wat te sturen",
       "labels": {
         "fname": "Voornaam",
-        "lname": "Achternaam",
+        "lname": "Achternaam (optioneel)",
         "email": "E-mailadres",
         "dates": "Gewenste data",
         "handicap": "Uw handicap",
@@ -409,9 +409,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ["not-sure", "Ik weet het nog niet"]
       ],
       "pwapFormats": [
-        ["pwap-solo", "Solo", ""],
-        ["pwap-group", "Groep", ""],
-        ["signature-day", "De Andy-dag", ""],
+        ["pwap-solo", "Solo", "€795"],
+        ["pwap-group", "Groep", "€950 totaal"],
+        ["signature-day", "Signature Day", "Op aanvraag"],
         ["pwap-not-sure", "Ik weet het nog niet", ""]
       ],
       "placeholders": {
@@ -420,7 +420,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "jan@voorbeeld.com",
         "dates": "bijv. 15-22 oktober 2026",
         "handicap": "bijv. 14 of 'beginner'",
-        "message": "Doelen voor de dag, banen die u op het oog heeft, gemengde groep, speciale wensen - elk detail helpt."
+        "message": "Hotelregio, banen waarvan u gehoord heeft, budget, groepssamenstelling of alles wat me helpt de reis te begrijpen."
       },
       "groupsizeOptions": [
         {
@@ -462,10 +462,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ]
       ],
       "submit": "Aanvraag versturen →",
-      "note": "Ik reageer persoonlijk op elke aanvraag binnen 24 uur. Uw gegevens worden alleen gebruikt om uw dag te organiseren.",
+      "note": "Ik reageer persoonlijk op elke aanvraag binnen 24 uur. Uw gegevens worden alleen gebruikt om te antwoorden en de dienst te regelen die u kiest.",
       "experienceHelpTitle": "Welke optie past het best?",
       "experienceHelp": "Kies de optie die het dichtst in de buurt komt en ik werk de rest met u uit. Reisplanning betekent dat ik route, banen en timing opbouw rond uw data en uw groep. Play With A Pro betekent dat Andy met u op de baan is. Twijfelt u nog, kies dan de onzekere optie en ik help u de juiste richting op.",
-      "sendPrompt": "Graag meesturen: data, groepsgrootte, hotelregio, handicap en banen die al op uw shortlist staan."
+      "sendPrompt": "Handig zijn de data, groepsgrootte, hotelregio, handicapbereik en banen die al op uw shortlist staan. Twijfelt u nog, stuur dan wat u weet en we scherpen het samen aan."
     },
     "gift": {
       "heading": "Is dit een cadeau?",
@@ -503,7 +503,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "success": {
       "title": "Förfrågan mottagen.",
-      "body": "Jag återkommer personligen inom 24 timmar. Om du vill prata direkt är WhatsApp den snabbaste vägen."
+      "body": "Jag återkommer personligen, oftast inom några timmar, alltid inom 24. Om du hellre vill prata direkt är WhatsApp den snabbaste vägen."
     },
     "form": {
       "eyebrow": "Förfrågan",
@@ -512,7 +512,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "sendPromptLabel": "Vad du bör skicka",
       "labels": {
         "fname": "Förnamn",
-        "lname": "Efternamn",
+        "lname": "Efternamn (valfritt)",
         "email": "E-postadress",
         "dates": "Önskade datum",
         "handicap": "Ditt handicap",
@@ -530,9 +530,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ["not-sure", "Jag är osäker"]
       ],
       "pwapFormats": [
-        ["pwap-solo", "Solo", ""],
-        ["pwap-group", "Grupp", ""],
-        ["signature-day", "Andys dag", ""],
+        ["pwap-solo", "Solo", "€795"],
+        ["pwap-group", "Grupp", "€950 totalt"],
+        ["signature-day", "Signature Day", "På förfrågan"],
         ["pwap-not-sure", "Jag är osäker", ""]
       ],
       "placeholders": {
@@ -541,7 +541,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "erik@exempel.se",
         "dates": "t.ex. 15-22 oktober 2026",
         "handicap": "t.ex. 14 eller 'nybörjare'",
-        "message": "Mål för dagen, banor du tittar på, blandad grupp, särskilda önskemål - allt hjälper mig att skapa rätt dag."
+        "message": "Hotellområde, banor du har hört talas om, budget, gruppens sammansättning eller något annat som hjälper mig förstå resan."
       },
       "groupsizeOptions": [
         {
@@ -583,10 +583,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ]
       ],
       "submit": "Skicka förfrågan →",
-      "note": "Jag svarar personligen på varje förfrågan inom 24 timmar. Dina uppgifter används bara för att planera din dag.",
+      "note": "Jag svarar personligen på varje förfrågan inom 24 timmar. Dina uppgifter används bara för att svara och ordna den tjänst du väljer.",
       "experienceHelpTitle": "Vilket upplägg passar bäst?",
       "experienceHelp": "Välj det alternativ som ligger närmast så finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplägget runt dina datum och din grupp. Play With A Pro betyder att Andy är med dig ute på banan. Om du inte är säker ännu, välj det osäkra alternativet så pekar jag dig rätt.",
-      "sendPrompt": "Skicka gärna: datum, gruppstorlek, hotellområde, handicap och banor du redan funderar på."
+      "sendPrompt": "Datum, gruppstorlek, hotellområde, handicapintervall och banor som redan finns på din lista är användbart. Är du fortfarande osäker, skicka det du vet så avgränsar vi det tillsammans."
     },
     "gift": {
       "heading": "Köper du detta som en present?",
@@ -626,7 +626,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "success": {
       "title": "已收到您的咨询。",
-      "body": "我会在 24 小时内亲自回复您。如果您希望更快沟通，请用微信联系我。"
+      "body": "我会亲自回复您，通常在几小时内，最迟 24 小时内。如果您希望更快沟通，请用微信联系我。"
     },
     "form": {
       "eyebrow": "咨询表单",
@@ -636,7 +636,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "handicapOptional": "（可选）",
       "labels": {
         "fname": "名字",
-        "lname": "姓氏",
+        "lname": "姓氏（选填）",
         "email": "电子邮箱",
         "dates": "希望的日期",
         "handicap": "您的差点",
@@ -654,9 +654,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ["not-sure", "还没有决定"]
       ],
       "pwapFormats": [
-        ["pwap-solo", "单人", ""],
-        ["pwap-group", "小组", ""],
-        ["signature-day", "安迪之日", ""],
+        ["pwap-solo", "单人", "€795"],
+        ["pwap-group", "小组", "€950 总计"],
+        ["signature-day", "Signature Day", "按需询价"],
         ["pwap-not-sure", "还没有决定", ""]
       ],
       "placeholders": {
@@ -665,7 +665,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "zhang@example.com",
         "dates": "例如 2026 年 10 月 15-22 日",
         "handicap": "例如 14 或 '初学者'",
-        "message": "这一天的目标、您在考虑的球场、是否为混合水平小组、特别要求等，任何信息都能帮助我安排得更准确。"
+        "message": "住宿区域、您听说过的球场、预算、团队构成，或任何能帮助我了解行程的信息。"
       },
       "groupsizeOptions": [
         {
@@ -707,10 +707,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
         ]
       ],
       "submit": "发送咨询 →",
-      "note": "我会在 24 小时内亲自回复每一条咨询。您的信息只会用于安排您的这一天。",
+      "note": "我会在 24 小时内亲自回复每一条咨询。您的信息只会用于回复，以及安排您所选择的服务。",
       "experienceHelpTitle": "哪一种安排更合适？",
       "experienceHelp": "请选择最接近的选项，我会在此基础上帮您细化。行程规划意味着我会围绕您的日期和同行人安排球场、路线和节奏。Play With A Pro 意味着 Andy 会和您一起下场。如果还不确定，就选择不确定的选项，我会帮您判断。",
-      "sendPrompt": "建议一并告知：出行日期、人数、住宿区域、差点范围，以及您已考虑的球场。"
+      "sendPrompt": "日期、人数、住宿区域、差点范围，以及您清单上已有的球场都很有帮助。如果还在犹豫，把您已知的信息发给我，我们一起缩小范围。"
     },
     "gift": {
       "heading": "这是一份礼物？",

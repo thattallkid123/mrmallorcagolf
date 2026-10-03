@@ -24,7 +24,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jugar con un Pro",
       "eyebrow": "Play With A Pro | Mallorca | Profesional PGA",
       "title": "Un día de 18 hoyos conmigo.",
-      "body": "Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €795. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.",
+      "body": "Play With A Pro: coaching en el campo, estrategia de campo y una mejora real de su juego en el campo de Mallorca que más le conviene.",
       "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
       "secondaryCta": "Ver paquetes"
@@ -207,7 +207,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Una persona a contactar para todo el viaje"
           ],
           "button": "Planifique su viaje →",
-          "href": "/es/contact"
+          "href": "/es/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -216,7 +216,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "body": "Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
         "detail": "Signature Day. Un día privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.",
         "button": "Consultar un viaje de varios días →",
-        "href": "/es/contact"
+        "href": "/es/plan-your-trip"
       }
     },
     "faq": {
@@ -258,7 +258,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Trabaja con juniors?",
-          "a": "Sí. Trabajo con juniors de todos los niveles, incluidos principiantes absolutos. Adaptamos la dificultad del campo para que aprendan en un entorno de golf real sin sentirse superados."
+          "a": "Sí. Trabajo con juniors de todos los niveles, incluidos principiantes absolutos. Adaptamos la dificultad del campo para que aprendan en un entorno de golf real sin sentirse superados. El mismo enfoque, ajustado al punto en el que están."
         },
         {
           "q": "¿Qué titulaciones tiene?",
@@ -279,7 +279,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Dígame sus fechas y le recomendaré el formato adecuado.",
       "body": "Envíeme las fechas, el tamaño del grupo, el rango de hándicap y los campos que está considerando. Le diré si Play With A Pro funciona mejor como día independiente o como parte de un viaje planificado.",
       "primaryCta": "Planifique su viaje →",
-      "primaryHref": "/es/contact",
+      "primaryHref": "/es/plan-your-trip",
       "secondaryCta": "Escribir por WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hola%20Andy%2C%20me%20interesa%20un%20d%C3%ADa%20de%20golf%20en%20Mallorca.",
       "tertiaryCta": "Explorar los campos →",
@@ -308,7 +308,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Mit einem Pro spielen",
       "eyebrow": "Play With A Pro | Mallorca | PGA-Profi",
       "title": "Ein 18-Loch-Tag mit mir.",
-      "body": "Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €795. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.",
+      "body": "Play With A Pro: Coaching auf dem Platz, Platzstrategie und echte Spielverbesserung auf dem für Sie richtigen Platz auf Mallorca.",
       "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
       "secondaryCta": "Pakete ansehen"
@@ -491,7 +491,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Eine Ansprechperson für die gesamte Reise"
           ],
           "button": "Reise planen →",
-          "href": "/de/contact"
+          "href": "/de/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -500,7 +500,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "body": "Zwei oder drei aufeinanderfolgende Tage über Son Gual, Alcanada und weitere Plätze hinweg - mit privaten Transfers, sorgfältig ausgewählter Gastronomie und Zugang zu Plätzen, die die meisten Besucher nicht buchen können.",
         "detail": "Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.",
         "button": "Mehrtägige Reise anfragen →",
-        "href": "/de/contact"
+        "href": "/de/plan-your-trip"
       }
     },
     "faq": {
@@ -542,7 +542,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Arbeiten Sie auch mit Junioren?",
-          "a": "Ja. Ich arbeite mit Junioren auf allen Niveaus, auch mit absoluten Anfängern. Wir passen den Schwierigkeitsgrad des Platzes an, damit sie in einem echten Golfumfeld lernen, ohne überfordert zu werden."
+          "a": "Ja. Ich arbeite mit Junioren auf allen Niveaus, auch mit absoluten Anfängern. Wir passen den Schwierigkeitsgrad des Platzes an, damit sie in einem echten Golfumfeld lernen, ohne überfordert zu werden. Derselbe Ansatz, abgestimmt auf ihr jeweiliges Niveau."
         },
         {
           "q": "Welche Qualifikationen haben Sie?",
@@ -563,7 +563,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Nennen Sie mir Ihre Reisedaten, und ich empfehle das passende Format.",
       "body": "Senden Sie mir Daten, Gruppengröße, Handicap-Bereich und alle Plätze, die Sie in Erwägung ziehen. Ich sage Ihnen, ob Play With A Pro als eigenständiger Tag oder als Teil einer geplanten Reise am besten funktioniert.",
       "primaryCta": "Reise planen →",
-      "primaryHref": "/de/contact",
+      "primaryHref": "/de/plan-your-trip",
       "secondaryCta": "Per WhatsApp schreiben",
       "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20Golftag%20in%20Mallorca.",
       "tertiaryCta": "Die Plätze entdecken →",
@@ -592,7 +592,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jouer avec un pro",
       "eyebrow": "Play With A Pro | Majorque | Professionnel PGA",
       "title": "Une journée de 18 trous avec moi.",
-      "body": "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. En solo à partir de €795. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.",
+      "body": "Play With A Pro : du coaching sur le parcours, de la stratégie de parcours et une vraie progression de votre jeu, sur le parcours de Majorque qui vous convient.",
       "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
       "secondaryCta": "Voir les formules"
@@ -755,7 +755,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Parcours, départ privé et une journée entièrement organisée avec moi",
             "Session récupération et performance sportive avec John Brazier",
             "Transferts privés aller-retour au parcours",
-            "Dîner dans un hôtel partenaire"
+            "Planification du dîner dans un hôtel ou restaurant recommandé, ou avec un chef privé"
           ],
           "button": "Demander →",
           "href": "/fr/contact",
@@ -775,7 +775,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Une personne à contacter pour tout le voyage"
           ],
           "button": "Planifiez votre voyage →",
-          "href": "/fr/contact"
+          "href": "/fr/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -784,7 +784,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "body": "Deux ou trois jours consécutifs entre Son Gual, Alcanada et au-delà, avec transferts privés, bonnes tables soigneusement choisies et accès à des parcours que la plupart des visiteurs ne peuvent pas réserver.",
         "detail": "Signature Day. Une journée de golf privée avec Andy, une session avec John Brazier, des transferts privés et une soirée coordonnée. Le tarif est confirmé après le premier échange, lorsque la journée a pris forme.",
         "button": "Demander un séjour sur plusieurs jours →",
-        "href": "/fr/contact"
+        "href": "/fr/plan-your-trip"
       }
     },
     "faq": {
@@ -826,7 +826,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Travaillez-vous avec des juniors ?",
-          "a": "Oui. Je travaille avec des juniors de tous niveaux, y compris les grands débutants. Nous adaptons la difficulté du parcours pour qu'ils apprennent dans un vrai environnement de golf sans être dépassés."
+          "a": "Oui. Je travaille avec des juniors de tous niveaux, y compris les grands débutants. Nous adaptons la difficulté du parcours pour qu'ils apprennent dans un vrai environnement de golf sans être dépassés. La même approche, adaptée à leur niveau."
         },
         {
           "q": "Quelles sont vos qualifications ?",
@@ -847,7 +847,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Donnez-moi vos dates et je vous recommanderai le bon format.",
       "body": "Envoyez-moi les dates, la taille du groupe, la fourchette de handicap et les parcours que vous envisagez. Je vous dirai si Play With A Pro fonctionne mieux comme journée à part ou intégré à un séjour planifié.",
       "primaryCta": "Planifiez votre voyage →",
-      "primaryHref": "/fr/contact",
+      "primaryHref": "/fr/plan-your-trip",
       "secondaryCta": "Écrire sur WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Bonjour%20Andy%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20une%20journ%C3%A9e%20de%20golf%20%C3%A0%20Majorque.",
       "tertiaryCta": "Explorer les parcours →",
@@ -875,7 +875,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spelen met een pro",
       "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
       "title": "Een dag van 18 holes met mij.",
-      "body": "Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €795. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.",
+      "body": "Play With A Pro: coaching op de baan, baanstrategie en echte verbetering van uw spel op de juiste baan op Mallorca voor u.",
       "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
       "secondaryCta": "Bekijk pakketten"
@@ -1038,7 +1038,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Baan, privé starttijd en een volledig georganiseerde dag met mij",
             "Herstel- en sportprestatiesessie met John Brazier",
             "Privé transfers van en naar de baan",
-            "Diner bij een partnerhotel"
+            "Dinerplanning in een aanbevolen hotel of restaurant, of met een privéchef"
           ],
           "button": "Aanvragen →",
           "href": "/nl/contact",
@@ -1058,7 +1058,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Eén contactpersoon voor de hele reis"
           ],
           "button": "Plan uw reis →",
-          "href": "/nl/contact"
+          "href": "/nl/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -1067,7 +1067,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "body": "Twee of drie opeenvolgende dagen langs Son Gual, Alcanada en meer, met privétransfers, zorgvuldig gekozen restaurants en toegang tot banen die de meeste bezoekers niet kunnen boeken.",
         "detail": "Signature Day. Een privé golfdag met Andy, een sessie met John Brazier, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.",
         "button": "Meerdaagse trip aanvragen →",
-        "href": "/nl/contact"
+        "href": "/nl/plan-your-trip"
       }
     },
     "faq": {
@@ -1109,7 +1109,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Werkt u ook met junioren?",
-          "a": "Ja. Ik werk met junioren op alle niveaus, ook absolute beginners. We passen de moeilijkheidsgraad van de baan aan zodat ze leren in een echte golfomgeving zonder overweldigd te worden."
+          "a": "Ja. Ik werk met junioren op alle niveaus, ook absolute beginners. We passen de moeilijkheidsgraad van de baan aan zodat ze leren in een echte golfomgeving zonder overweldigd te worden. Dezelfde aanpak, afgestemd op waar ze staan."
         },
         {
           "q": "Welke kwalificaties heeft u?",
@@ -1130,7 +1130,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Geef me uw data en ik adviseer u het juiste format.",
       "body": "Stuur me de data, de groepsgrootte, het handicapbereik en de banen die u overweegt. Ik vertel u of Play With A Pro het best werkt als losse dag of als onderdeel van een geplande reis.",
       "primaryCta": "Plan uw reis →",
-      "primaryHref": "/nl/contact",
+      "primaryHref": "/nl/plan-your-trip",
       "secondaryCta": "Bericht via WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ik%20heb%20interesse%20in%20een%20golfdag%20in%20Mallorca.",
       "tertiaryCta": "Ontdek de banen →",
@@ -1159,7 +1159,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spela med ett proffs",
       "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
       "title": "En dag med 18 hål tillsammans med mig.",
-      "body": "En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €795. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.",
+      "body": "Play With A Pro: coaching på banan, banstrategi och verklig förbättring av ditt spel på rätt bana på Mallorca för dig.",
       "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
       "secondaryCta": "Se paket"
@@ -1322,7 +1322,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Bana, privat starttid och en helt organiserad dag med mig",
             "Aterhamtnings- och sportprestationssession med John Brazier",
             "Privata transfers till och från banan",
-            "Middag på ett partnerhotell"
+            "Middagsplanering på ett rekommenderat hotell eller en restaurang, eller med privatkock"
           ],
           "button": "Förfrågan →",
           "href": "/sv/contact",
@@ -1342,7 +1342,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "En kontaktperson för hela resan"
           ],
           "button": "Planera din resa →",
-          "href": "/sv/contact"
+          "href": "/sv/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -1351,7 +1351,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "body": "Två eller tre dagar i följd över Son Gual, Alcanada och vidare, med privata transfers, noggrant utvalda restauranger och tillgång till banor som de flesta besökare inte kan boka.",
         "detail": "Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kväll. Priset bekräftas efter första samtalet, när dagen har form.",
         "button": "Fråga om en flerdagarsresa →",
-        "href": "/sv/contact"
+        "href": "/sv/plan-your-trip"
       }
     },
     "faq": {
@@ -1393,7 +1393,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Arbetar du med juniorer?",
-          "a": "Ja. Jag arbetar med juniorer på alla nivåer, inklusive totala nybörjare. Vi anpassar svårighetsgraden på banan så att de lär sig i en riktig golfmiljö utan att bli överväldigade."
+          "a": "Ja. Jag arbetar med juniorer på alla nivåer, inklusive totala nybörjare. Vi anpassar svårighetsgraden på banan så att de lär sig i en riktig golfmiljö utan att bli överväldigade. Samma upplägg, anpassat efter var de befinner sig."
         },
         {
           "q": "Vilka kvalifikationer har du?",
@@ -1414,7 +1414,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Berätta dina datum så rekommenderar jag rätt upplägg.",
       "body": "Skicka datum, gruppstorlek, handicapintervall och de banor du överväger. Jag berättar om Play With A Pro fungerar bäst som en fristående dag eller som en del av en planerad resa.",
       "primaryCta": "Planera din resa →",
-      "primaryHref": "/sv/contact",
+      "primaryHref": "/sv/plan-your-trip",
       "secondaryCta": "Skriv på WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hej%20Andy%2C%20jag%20%C3%A4r%20intresserad%20av%20en%20golfdag%20p%C3%A5%20Mallorca.",
       "tertiaryCta": "Utforska banorna →",
@@ -1443,7 +1443,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "与职业球手同场",
       "eyebrow": "Play With A Pro | 马略卡 | PGA 职业教练",
       "title": "与我同打 18 洞的一天。",
-      "body": "一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €795。小组从 €950 总计起，果岭费另计。",
+      "body": "Play With A Pro：球场实战指导、球场策略，以及在适合您的马略卡球场上真正提升您的球技。",
       "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
       "secondaryCta": "查看方案"
@@ -1626,7 +1626,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "全程一位联系人服务您的整个行程"
           ],
           "button": "了解行程规划 →",
-          "href": "/zh/contact"
+          "href": "/zh/plan-your-trip"
         }
       ],
       "multiDay": {
@@ -1635,7 +1635,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "body": "连续两到三天，安排 Son Gual、Alcanada 及更多球场，包含私人接送、精心挑选的餐饮，以及多数访客订不到的球场机会。",
         "detail": "Signature Day：与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。",
         "button": "咨询多日行程 →",
-        "href": "/zh/contact"
+        "href": "/zh/plan-your-trip"
       }
     },
     "faq": {
@@ -1677,7 +1677,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "您接受青少年学员吗？",
-          "a": "接受。我与各个水平的青少年合作，包括完全的初学者。我们会根据情况调整球场的难度，让他们在真实的高尔夫环境中学习，而不会感到不知所措。"
+          "a": "可以。我与各个水平的青少年合作，包括完全的初学者。我们会根据情况调整球场的难度，让他们在真实的高尔夫环境中学习，而不会感到不知所措。同样的方法，按他们当前的水平来调整。"
         },
         {
           "q": "您有哪些资质证书？",
@@ -1698,7 +1698,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "告诉我您的日期，我会推荐合适的形式。",
       "body": "请发给我日期、人数、差点范围，以及您在考虑的球场。我会告诉您，Play With A Pro 更适合作为单独的一天，还是作为规划行程的一部分。",
       "primaryCta": "了解行程规划 →",
-      "primaryHref": "/zh/contact",
+      "primaryHref": "/zh/plan-your-trip",
       "secondaryCta": "通过 WhatsApp 联系",
       "secondaryHref": "https://wa.me/34624466702?text=%E6%82%A8%E5%A5%BD%20Andy%EF%BC%8C%E6%88%91%E5%AF%B9%E9%A9%AC%E7%95%A5%E5%8D%A1%E9%AB%98%E5%B0%94%E5%A4%AB%E4%B9%8B%E6%97%85%E6%84%9F%E5%85%B4%E8%B6%A3%E3%80%82",
       "tertiaryCta": "查看球场 →",
