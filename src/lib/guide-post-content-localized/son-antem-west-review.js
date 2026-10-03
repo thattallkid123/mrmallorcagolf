@@ -153,7 +153,7 @@ const content = {
           ],
           [
             "Consejo con el viento",
-            "En un dia calmado es un campo muy jugable, y justo por eso funciona bien para grupos mezclados. Si se levanta la brisa, concentrese en las zonas de aterrizaje y tenga paciencia."
+            "En un dia calmado es un campo muy jugable, y justo por eso funciona bien para grupos mezclados. Si se levanta la brisa, concéntrate en las zonas de aterrizaje y ten paciencia."
           ],
           [
             "Donde suelen perder golpes los visitantes",
@@ -659,7 +659,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "Lopen is hier eenvoudig: de routing is vlak en makkelijk te voet, buggyverhuur is ook beschikbaar. Son Antem West is geschikt voor vakantiegolfers en groepen met gemengd niveau die een aangename, toegankelijke ronde dicht bij Palma zoeken; het is niet de baan om te kiezen als u specifiek een lay-out zoekt die u van begin tot eind test. Wat bezoekers verrast: verschillende greens liggen verhoogd of hellen van de speler af, en de bal rolt na landing aanzienlijk verder door dan het lijkt, dus een lage, rollende chip is vaak de veiligere keuze. De beste starttijd is een doordeweekse ochtend; op zondag kan het vroeg druk worden omdat de baan populair is bij resortgolfers."
+        "text": "Lopen is hier eenvoudig: de routing is vlak en makkelijk te voet, buggyverhuur is ook beschikbaar. Son Antem West is geschikt voor vakantiegolfers en groepen met gemengd niveau die een aangename, toegankelijke ronde dicht bij Palma zoeken; het is niet de baan om te kiezen als je specifiek een lay-out zoekt die je van begin tot eind test. Wat bezoekers verrast: verschillende greens liggen verhoogd of hellen van de speler af, en de bal rolt na landing aanzienlijk verder door dan het lijkt, dus een lage, rollende chip is vaak de veiligere keuze. De beste starttijd is een doordeweekse ochtend; op zondag kan het vroeg druk worden omdat de baan populair is bij resortgolfers."
       },
       {
         "text": "Oordeel"

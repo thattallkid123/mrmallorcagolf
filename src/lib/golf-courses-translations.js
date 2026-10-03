@@ -118,7 +118,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
   es: {
     'Golf Son Gual': {
       location: 'Palma · 11 km del centro',
-      text: 'El diseño de Thomas Himmel de 2007 tiene su propio ecosistema de viento: su posición elevada y la cobertura arbórea hacen que el viento se comporte de manera diferente en cada hoyo. Los greens son rápidos y elevados; donde fallas importa más que cómo golpeas. El tramo final (hoyos 15 a 18) está entre los cuatro mejores hoyos consecutivos del golf europeo. Rafa Nadal ha dicho que es su campo favorito en la isla.',
+      text: 'El diseño de Thomas Himmel de 2007 tiene su propio ecosistema de viento: su posición elevada y la cobertura arbórea hacen que el viento se comporte de manera diferente en cada hoyo. Los greens son rápidos y elevados; dónde se falla importa más que cómo se golpea. El tramo final (hoyos 15 a 18) está entre los cuatro mejores hoyos consecutivos del golf europeo. Rafa Nadal ha dicho que es su campo favorito en la isla.',
       note: '"El viento en el 16 es un desafío diferente al del 7. Eso es lo que hace que el campo sea tan rejugable."',
       footer: 'Favorito de Rafa · Campo obligatorio',
     },
@@ -466,7 +466,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
   nl: {
     'Golf Son Gual': {
       location: 'Palma · 11 km van het stadscentrum',
-      text: 'Thomas Himmels ontwerp uit 2007 heeft zijn eigen wind-ecosysteem: de verhoogde ligging en boomkap zorgen ervoor dat de wind op elke hole anders kan gedragen. De greens zijn snel en verhoogd; waar je mist telt meer dan hoe je slaat. Het slot (holes 15 tot 18) behoort tot de vier beste opeenvolgende holes in het Europese golf. Rafa Nadal heeft gezegd dat dit zijn favoriete baan op het eiland is.',
+      text: 'Thomas Himmels ontwerp uit 2007 heeft zijn eigen wind-ecosysteem: de verhoogde ligging en boomkap zorgen ervoor dat de wind op elke hole anders kan gedragen. De greens zijn snel en verhoogd; waar u mist telt meer dan hoe u slaat. Het slot (holes 15 tot 18) behoort tot de vier beste opeenvolgende holes in het Europese golf. Rafa Nadal heeft gezegd dat dit zijn favoriete baan op het eiland is.',
       note: '"De wind op 16 is een andere uitdaging dan de wind op 7. Dat maakt de baan zo herspelbaar."',
       footer: 'Rafa\'s favoriet · Must-play',
     },
@@ -482,7 +482,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Son Quint': {
       location: 'Arabella · Son Vida, Palma',
-      text: 'De meest toegankelijke van de Arabella-banen. Lange, open fairways en vier verschillende teeposities maken het echt geschikt voor elk niveau. Vanaf hole 8, het hoogste punt van de baan, sla je direct in de richting van de Kathedraal van Palma. Tiger Woods speelde hier in juli 2022 met zijn zoon Charlie. De stenen muren zijn in spel: niet alleen decoratief.',
+      text: 'De meest toegankelijke van de Arabella-banen. Lange, open fairways en vier verschillende teeposities maken het echt geschikt voor elk niveau. Vanaf hole 8, het hoogste punt van de baan, slaat u direct in de richting van de Kathedraal van Palma. Tiger Woods speelde hier in juli 2022 met zijn zoon Charlie. De stenen muren zijn in spel: niet alleen decoratief.',
       footer: 'Ideaal voor beginners · Tiger Woods speelde hier',
     },
     'T Golf Palma Puntiró': {
@@ -507,8 +507,8 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Santa Ponsa 2': {
       location: 'Santa Ponsa',
-      text: 'Alleen voor leden en meestal rustig. Veel teeshots maken de driver een slechte keuze: een hybrid om de positie te controleren is vaak de slimmere beslissing. De bomenrijen zijn dicht en een bal op de verkeerde plek betekent meestal terug chippen. Hole 18: een par 3 met een green in de vorm van het eiland Mallorca zelf: een detail dat het waard is te weten voor je begint.',
-      note: '"De green van hole 18 heeft de vorm van Mallorca zelf. Eén van die details die je wilt weten voor je er bent."',
+      text: 'Alleen voor leden en meestal rustig. Veel teeshots maken de driver een slechte keuze: een hybrid om de positie te controleren is vaak de slimmere beslissing. De bomenrijen zijn dicht en een bal op de verkeerde plek betekent meestal terug chippen. Hole 18: een par 3 met een green in de vorm van het eiland Mallorca zelf: een detail dat het waard is te weten voor u begint.',
+      note: '"De green van hole 18 heeft de vorm van Mallorca zelf. Eén van die details die u wilt weten voordat u er bent."',
       footer: 'Toegang organiseerbaar voor cliënten',
     },
     'Golf Santa Ponsa 3': {
@@ -570,12 +570,12 @@ export const GOLF_COURSE_TRANSLATIONS = {
       location: 'Port d\'Alcúdia',
       text: 'Mijn tweede ankerbaan en waarschijnlijk het meest schilderachtige van Mallorca. Ontwerp van Robert Trent Jones Jr. De vuurtoren van Alcanada, zichtbaar vanaf 16 van de 18 holes, is een van de meest gefotografeerde golffaçades in Europa. Achtenvijftig bunkers zijn strategisch over het parcours verdeeld: ze vereisen aandacht bij elke benadering.',
       text2: 'De baan is gastheer van de Rolex Challenge Tour Grand Final, die in oktober 2026 voor de zesde keer terugkeert. De greens zijn sterk golvend en extreem snel. Het restaurantterras na de ronde is een van de mooiste plekken op het eiland. Reken 50 minuten vanaf Palma: elke minuut is het waard.',
-      note: '"Een van de mooiste ronden die je ergens in Europa kunt spelen. De vuurtoren op 17 is onvergetelijk."',
+      note: '"Een van de mooiste ronden die u ergens in Europa kunt spelen. De vuurtoren op 17 is onvergetelijk."',
       footer: 'Rolex Challenge Tour Grand Final okt. 2026 · 50 min van Palma',
     },
     'Golf Pollença': {
       location: 'Pollença',
-      text: 'Negen holes aan de ingang van de stad Pollença, geïntegreerd in de heuvel met uitzicht op de Tramuntana en de baaien van Pollença en Alcúdia. Ontworpen door José Gancedo in 1986. Een ronde duurt ongeveer 90 minuten: een gemakkelijke warming-up of een goede optie voor een dag waarop je golf wilt zonder volledige inzet.',
+      text: 'Negen holes aan de ingang van de stad Pollença, geïntegreerd in de heuvel met uitzicht op de Tramuntana en de baaien van Pollença en Alcúdia. Ontworpen door José Gancedo in 1986. Een ronde duurt ongeveer 90 minuten: een gemakkelijke warming-up of een goede optie voor een dag waarop u golf wilt zonder volledige inzet.',
       footer: 'Snelle ronde · 90 minuten',
     },
   },

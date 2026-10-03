@@ -338,7 +338,7 @@ const CONTACT_METADATA = {
   nl: {
     title: 'Contact - Golfverzoek',
     description:
-      'Deel je data, handicap en doelen. Persoonlijk antwoord binnen 24 uur.',
+      'Deel uw data, handicap en doelen. Persoonlijk antwoord binnen 24 uur.',
   },
   sv: {
     title: 'Kontakt - Golfförfrågan',
@@ -439,7 +439,7 @@ const LEGAL_METADATA = {
     es: {
       title: 'Privacidad',
       description:
-        'Política de privacidad: cómo recopilamos, usamos y protegemos tus datos conforme a RGPD.',
+        'Política de privacidad: cómo recopilamos, usamos y protegemos sus datos conforme a RGPD.',
     },
     de: {
       title: 'Datenschutzerklärung',

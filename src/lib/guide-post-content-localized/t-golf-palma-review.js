@@ -314,7 +314,7 @@ const content = {
         "items": [
           [
             "Beste Startzeit",
-            "Wir hatten die erste Startzeit um 7:30 Uhr und den Platz für uns allein. Wenn du eine frühe Startzeit bekommen kannst, nimm sie."
+            "Wir hatten die erste Startzeit um 7:30 Uhr und den Platz für uns allein. Wenn Sie eine frühe Startzeit bekommen können, nehmen Sie sie."
           ],
           [
             "Schlägerwahl",
@@ -322,7 +322,7 @@ const content = {
           ],
           [
             "Wo Besucher Schläge verlieren",
-            "Der Abschlag auf 18 sieht einfacher aus, als er spielt. Schau dir die Linie genau an, bevor du dich für den Driver entscheidest."
+            "Der Abschlag auf 18 sieht einfacher aus, als er spielt. Schauen Sie sich die Linie genau an, bevor Sie sich für den Driver entscheiden."
           ],
           [
             "Terrassen-Tipp",
@@ -331,7 +331,7 @@ const content = {
         ]
       },
       {
-        "text": "Er passt gut zu allen, die mehrere Runden im Raum Palma spielen und einen richtigen Test wollen, ohne einen ganzen Tag zu brauchen. Wenn du eine größere Reise planst, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> ab, wie man Plätze wie diesen neben <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a> einplant."
+        "text": "Er passt gut zu allen, die mehrere Runden im Raum Palma spielen und einen richtigen Test wollen, ohne einen ganzen Tag zu brauchen. Wenn Sie eine größere Reise planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> ab, wie man Plätze wie diesen neben <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a> einplant."
       },
       {
         "alt": "Andy Griffiths mit seinem Mitspieler vor der Runde bei T Golf Palma"

@@ -136,7 +136,7 @@ const content = {
           ],
           [
             "Donde suelen perder golpes los visitantes",
-            "Las vistas pueden hacer que el tee parezca más fácil de lo que es. Elija primero la linea, sobre todo desde los tees elevados, y luego este listo para greens rapidos con muy pocos putts sencillos."
+            "Las vistas pueden hacer que el tee parezca más fácil de lo que es. Elige primero la línea, sobre todo desde los tees elevados, y luego prepárate para greens rápidos con muy pocos putts sencillos."
           ],
           [
             "Consejo de casa club",
@@ -157,7 +157,7 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "Caminar es posible con carrito de mano eléctrico (20 €) además del buggy (48 €), y se aplica una licencia federativa diaria (3 €) para no federados. Alcanada es ideal para golfistas con confianza que buscan una prueba seria y memorable, no una vuelta fácil: los greens son muy ondulados y rápidos pese al entorno espectacular. Lo que sorprende a los primerizos: las vistas pueden hacer que el golpe de salida parezca más fácil de lo que es, así que elija su línea antes de disfrutar del paisaje. La mejor hora de salida es por la mañana, con la brisa más suave y mejor luz, y merece la pena reservar tiempo después para comer en la terraza frente al faro."
+        "text": "Caminar es posible con carrito de mano eléctrico (20 €) además del buggy (48 €), y se aplica una licencia federativa diaria (3 €) para no federados. Alcanada es ideal para golfistas con confianza que buscan una prueba seria y memorable, no una vuelta fácil: los greens son muy ondulados y rápidos pese al entorno espectacular. Lo que sorprende a los primerizos: las vistas pueden hacer que el golpe de salida parezca más fácil de lo que es, así que elige tu línea antes de disfrutar del paisaje. La mejor hora de salida es por la mañana, con la brisa más suave y mejor luz, y merece la pena reservar tiempo después para comer en la terraza frente al faro."
       },
       {
         "text": "Veredicto"
@@ -239,7 +239,7 @@ const content = {
         "text": "Hier verdient sich Alcanada sein Recht, Spitzenevents auszurichten. Nach einem anspruchsvollen Loch kommt man zu Grüns, die stark onduliert, sehr schnell und voller unangenehmer Putts sind. Die 58 Bunker im Layout erzwingen auf fast jedem Loch präzise Annäherungen."
       },
       {
-        "text": "Die Mischung aus Neigung, Tempo und subtilen Breaks auf den Grüns hebt den Platz von einem nur schönen Küstenplatz zu einem Kurs, der starke Spieler wirklich prüft."
+        "text": "Die Mischung aus Neigung, Tempo und subtilen Breaks auf den Grüns hebt den Platz von einem nur schönen Küstenplatz zu einem Platz, der starke Spieler wirklich prüft."
       },
       {
         "caption": "Die hinteren Abschläge von Alcanada liegen weit über dem Fairway. Der Weg hinauf lohnt sich jedes Mal."
@@ -668,7 +668,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "Lopen kan met een elektrische trolley (€20) naast de buggy (€48), en er geldt een dagelijkse federatielicentie (€3) voor niet-leden. Alcanada is geschikt voor zelfverzekerde golfers die een echte, gedenkwaardige uitdaging zoeken in plaats van een makkelijke ronde: de greens zijn ondanks de spectaculaire omgeving sterk glooiend en snel. Wat beginners verrast: het uitzicht kan de afslag makkelijker doen lijken dan hij is, kies dus uw lijn voordat u van het landschap geniet. De beste starttijd is de ochtend, voor de rustigste bries en het beste licht, en het is de moeite waard om daarna tijd in te plannen voor lunch op het terras met uitzicht op de vuurtoren."
+        "text": "Lopen kan met een elektrische trolley (€20) naast de buggy (€48), en er geldt een dagelijkse federatielicentie (€3) voor niet-leden. Alcanada is geschikt voor zelfverzekerde golfers die een echte, gedenkwaardige uitdaging zoeken in plaats van een makkelijke ronde: de greens zijn ondanks de spectaculaire omgeving sterk glooiend en snel. Wat beginners verrast: het uitzicht kan de afslag makkelijker doen lijken dan hij is, kies dus je lijn voordat je van het landschap geniet. De beste starttijd is de ochtend, voor de rustigste bries en het beste licht, en het is de moeite waard om daarna tijd in te plannen voor lunch op het terras met uitzicht op de vuurtoren."
       },
       {
         "text": "Oordeel"

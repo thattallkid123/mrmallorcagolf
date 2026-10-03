@@ -333,7 +333,7 @@ const content = {
           ],
           [
             "Schlägerwahl auf den Back Nine",
-            "Mehrere Greens liegen über dem Fairway und mehrere Fahnen steckten nah am hinteren Rand. Nimm beim Anspiel einen Schläger mehr, als du denkst."
+            "Mehrere Greens liegen über dem Fairway und mehrere Fahnen steckten nah am hinteren Rand. Nehmen Sie beim Anspiel einen Schläger mehr, als Sie denken."
           ],
           [
             "Clubhaus-Tipp",
@@ -342,10 +342,10 @@ const content = {
         ]
       },
       {
-        "text": "Mir hat der Son Quint sehr gut gefallen und ich komme bald wieder. Er passt zu einer Gruppe mit gemischten Handicaps, die trotzdem eine echte Herausforderung will, und ist eine gute Option, wenn du im Gebiet Son Vida wohnst, zusammen mit <a href=\"/guides/son-muntaner-review\">Son Muntaner</a> oder <a href=\"/guides/t-golf-palma-review\">T Golf Palma</a>. Wenn du die gesamte Reise planst, zeigt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a>, wie sich solche Runden aneinanderreihen lassen."
+        "text": "Mir hat der Son Quint sehr gut gefallen und ich komme bald wieder. Er passt zu einer Gruppe mit gemischten Handicaps, die trotzdem eine echte Herausforderung will, und ist eine gute Option, wenn Sie im Gebiet Son Vida wohnen, zusammen mit <a href=\"/guides/son-muntaner-review\">Son Muntaner</a> oder <a href=\"/guides/t-golf-palma-review\">T Golf Palma</a>. Wenn Sie die gesamte Reise planen, zeigt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a>, wie sich solche Runden aneinanderreihen lassen."
       },
       {
-        "text": "Du überlegst, den Son Quint zu spielen? Ich kann dir sagen, ob er zu deiner Reise passt und ob er die Runde im Raum Palma sein sollte, um die du alles andere herum planst.",
+        "text": "Überlegen Sie, den Son Quint zu spielen? Ich kann Ihnen sagen, ob er zu Ihrer Reise passt und ob er die Runde im Raum Palma sein sollte, um die Sie alles andere herum planen.",
         "linkLabel": "Kontakt aufnehmen →"
       }
     ]

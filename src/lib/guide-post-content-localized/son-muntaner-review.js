@@ -200,7 +200,7 @@ const content = {
           ],
           [
             "Consejo con el viento",
-            "Este es un campo de posición antes que nada. Elija su zona de aterrizaje, no la linea heroica, y deje que el buggy le guarde las piernas para más adelante en la vuelta."
+            "Este es un campo de posición antes que nada. Elige tu zona de aterrizaje, no la línea heroica, y deja que el buggy te guarde las piernas para más adelante en la vuelta."
           ],
           [
             "Donde suelen perder golpes los visitantes",

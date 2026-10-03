@@ -634,7 +634,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "De meeste spelers nemen een buggy, vooral op warmere dagen, hoewel lopen op de eerste negen eenvoudig is (de klimmen op de tweede negen zijn de zwaardere opgave). Son Termes is geschikt voor golfers die karakter en bergzicht zoeken boven pure lengte: verschillende par 4's zijn bijna te drivenen, en het is een goed, goedkoper alternatief voor de premium banen bij Palma. Wat beginners verrast: ondanks de korte lengte verzamelt de baan gemiste slagen op manieren die niet duidelijk zijn op de scorekaart, en u deelt waarschijnlijk enkele holes met de geiten die er wonen. De beste starttijd is een vroege start, voordat de wind opsteekt op de blootgestelde hogere holes."
+        "text": "De meeste spelers nemen een buggy, vooral op warmere dagen, hoewel lopen op de eerste negen eenvoudig is (de klimmen op de tweede negen zijn de zwaardere opgave). Son Termes is geschikt voor golfers die karakter en bergzicht zoeken boven pure lengte: verschillende par 4's zijn bijna te drivenen, en het is een goed, goedkoper alternatief voor de premium banen bij Palma. Wat beginners verrast: ondanks de korte lengte verzamelt de baan gemiste slagen op manieren die niet duidelijk zijn op de scorekaart, en je deelt waarschijnlijk enkele holes met de geiten die er wonen. De beste starttijd is een vroege start, voordat de wind opsteekt op de blootgestelde hogere holes."
       },
       {
         "text": "Eindoordeel"

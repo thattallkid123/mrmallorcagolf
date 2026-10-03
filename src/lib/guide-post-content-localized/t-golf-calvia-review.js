@@ -121,7 +121,7 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
+        "text": "Antes de reservar, piensa en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserva pronto, elige tees realistas y deja tiempo después de la ronda."
       },
       {
         "alt": "Pinos enmarcando la calle en T Golf Calvià con agua y montañas al fondo",

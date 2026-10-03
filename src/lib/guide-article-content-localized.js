@@ -288,7 +288,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual: la prueba más completa de la isla"
         },
         {
-          "text": "Es el campo que más juego en Mallorca y el que recomiendo con más constancia cuando alguien quiere una prueba de verdad. El diseño de Thomas Himmel usa viento, desnivel y colocación con mucha inteligencia. Si su juego está razonablemente en orden y quiere un campo serio, está es la primera referencia."
+          "text": "Es el campo que más juego en Mallorca y el que recomiendo con más constancia cuando alguien quiere una prueba de verdad. El diseño de Thomas Himmel usa viento, desnivel y colocación con mucha inteligencia. Si tu juego está razonablemente en orden y quieres un campo serio, esta es la primera referencia."
         },
         {
           "text": "Rafa Nadal ha dicho que es su favorito de la isla. Barack Obama jugó aquí en noviembre de 2024. Los green fees se mueven aproximadamente entre €115 y €165."
@@ -332,7 +332,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Muy considerado como uno de los recorridos más duros de la isla. Un trazado championship en el suroeste donde los errores cuestan caro. Si uno quiere golf como examen, aquí lo tiene."
         },
         {
-          "text": "Pensando en Andratx? Explico el recorrido, el viento, la salida adecuada y si de verdad encaja con su juego.",
+          "text": "Pensando en Andratx? Explico el recorrido, el viento, la salida adecuada y si de verdad encaja con tu juego.",
           "linkLabel": "Leer la reseña de Golf de Andratx →"
         },
         {
@@ -1490,7 +1490,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "Wilt u alle 24 banen op een pagina naast elkaar vergelijken? Download dan de gratis vergelijkingskaart.",
+          "text": "Wil je alle 24 banen op een pagina naast elkaar vergelijken? Download dan de gratis vergelijkingskaart.",
           "linkLabel": "Gratis vergelijking downloaden →"
         },
         {
@@ -1503,7 +1503,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - de meest complete test van het eiland"
         },
         {
-          "text": "Dit is de baan die ik het meest speel op Mallorca en degene die ik het vaakst aanbeveel wanneer iemand een echte test wil. Het ontwerp van Thomas Himmel gebruikt wind, hoogteverschillen en positionering bijzonder slim. Als uw spel redelijk op orde is en u een serieuze baan zoekt, begint het gesprek hier."
+          "text": "Dit is de baan die ik het meest speel op Mallorca en degene die ik het vaakst aanbeveel wanneer iemand een echte test wil. Het ontwerp van Thomas Himmel gebruikt wind, hoogteverschillen en positionering bijzonder slim. Als je spel redelijk op orde is en je een serieuze baan zoekt, begint het gesprek hier."
         },
         {
           "text": "Rafa Nadal noemt dit zijn favoriete baan van het eiland. Barack Obama speelde hier in november 2024. Greenfees liggen grofweg tussen €115 en €165."
@@ -1519,13 +1519,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Robert Trent Jones Jr. in het noorden van het eiland, met de vuurtoren als vast referentiepunt. Vanaf de back tees en op een heldere ochtend is dit een van de meest memorabele golfsettings van Europa. En het is niet alleen mooi: de greens en plaatsing vragen echt spel."
         },
         {
-          "text": "Op de verhoogde back tees staan is een ervaring op zich. U voelt zich ver van alles, met de vuurtoren voor u, de baai die openvalt en een driver die bijna de leegte in verdwijnt. Dat is precies het gevoel."
+          "text": "Op de verhoogde back tees staan is een ervaring op zich. Je voelt zich ver van alles, met de vuurtoren voor je, de baai die openvalt en een driver die bijna de leegte in verdwijnt. Dat is precies het gevoel."
         },
         {
           "text": "Voor DP World Tour-gevoel: Son Muntaner"
         },
         {
-          "text": "Capdepera is beter dan veel bezoekers verwachten. De eerste negen zijn opener en speelbaar, daarna klimt de back nine de heuvels in en wordt de baan tactischer. De par-3 15e is een van de beste holes van het eiland, met verhoogde berguitzichten die de rit al de moeite waard maken voordat u uitputt."
+          "text": "Capdepera is beter dan veel bezoekers verwachten. De eerste negen zijn opener en speelbaar, daarna klimt de back nine de heuvels in en wordt de baan tactischer. De par-3 15e is een van de beste holes van het eiland, met verhoogde berguitzichten die de rit al de moeite waard maken voordat je uitputt."
         },
         {
           "text": "Voor een DP World Tour-gevoel: Son Muntaner"
@@ -1547,7 +1547,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Breed gezien als een van de moeilijkste banen van het eiland. Een serieus championship-layout in het zuidwesten, waar fouten duur zijn. Wie golf als test wil, krijgt die hier."
         },
         {
-          "text": "Overweegt u Andratx? Ik leg de baan uit, de wind, de beste tee-keuze en of hij echt bij uw spel past.",
+          "text": "Overweeg je Andratx? Ik leg de baan uit, de wind, de beste tee-keuze en of hij echt bij je spel past.",
           "linkLabel": "Lees de Golf de Andratx-review →"
         },
         {
@@ -1558,7 +1558,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Canyamel - oostkust, natuurpark en veel karakter"
         },
         {
-          "text": "Aan de rand van het natuurpark Llevant, met zeezicht en veel visuele kracht. De rit vanaf Palma is de moeite waard als u een golfdag niet alleen op score beoordeelt."
+          "text": "Aan de rand van het natuurpark Llevant, met zeezicht en veel visuele kracht. De rit vanaf Palma is de moeite waard als je een golfdag niet alleen op score beoordeelt."
         },
         {
           "text": "Ook duidelijk speelwaardig: Golf Santa Ponsa 1"
@@ -1616,11 +1616,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Het eiland is een van Europa's best bewaarde golfgeheimen. Toen ik uit Shanghai kwam en in januari zag hoe de banen hier erbij lagen terwijl grote delen van Noord-Europa gesloten waren, was dat direct duidelijk."
         },
         {
-          "text": "Wilt u een van deze banen spelen met een PGA professional aan uw zijde?",
+          "text": "Wil je een van deze banen spelen met een PGA professional aan je zijde?",
           "linkLabel": "Bekijk de play-with-a-pro ervaring →"
         },
         {
-          "text": "Wilt u hier een goed geregelde golfdag van maken?",
+          "text": "Wil je hier een goed geregelde golfdag van maken?",
           "linkLabel": "Bekijk de Play With A Pro dag"
         }
       ]
@@ -2426,7 +2426,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "马略卡依然是欧洲最被低估的高尔夫目的地之一。我从上海搬来以后，在1月看到这里的球场状态，而那时北欧很多地方还打不了球，这件事立刻就很清楚了。"
         },
         {
-          "text": "如果您想真正把其中一座球场打明白，而不是只是来打卡，也可以直接加微信：andygriffiths1。",
+          "text": "如果你想真正把其中一座球场打明白，而不是只是来打卡，也可以直接加微信：andygriffiths1。",
           "linkLabel": "查看与职业球手同场体验 →"
         },
         {
@@ -2548,7 +2548,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Para las mejores condiciones, sigo recomendando primavera tardía y otoño. Para mejor valor, ahora miraría mucho más en serio junio-agosto y diciembre-febrero. Si busca golf tranquilo y precios más bajos, el invierno y los atardeceres de verano son más interesantes de lo que sugieren los consejos antiguos sobre Mallorca."
         },
         {
-          "text": "¿Está planeando el viaje? Dígame sus fechas y le ayudo a elegir el momento correcto y los campos adecuados.",
+          "text": "¿Estás planeando el viaje? Dime tus fechas y te ayudo a elegir el momento correcto y los campos adecuados.",
           "linkLabel": "Ponerse en contacto →"
         }
       ]
@@ -2859,7 +2859,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Mei-juni"
         },
         {
-          "text": "Zeer goed golfweer, lange avonden en banen in uitstekende conditie. De prijzen stijgen met het toeristenseizoen mee. Als u goed weer wilt zonder de volle zomerhitte, werkt dit uitstekend."
+          "text": "Zeer goed golfweer, lange avonden en banen in uitstekende conditie. De prijzen stijgen met het toeristenseizoen mee. Als je goed weer wilt zonder de volle zomerhitte, werkt dit uitstekend."
         },
         {
           "text": "Juli-augustus"
@@ -2874,10 +2874,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "September-oktober"
         },
         {
-          "text": "Mijn favoriete venster. De temperatuur zakt, de banen herstellen van de zomer en de omstandigheden worden uitstekend. De prijzen blijven hoog, maar als u mij vraagt wanneer ik zelf zou komen spelen, dan is dit het."
+          "text": "Mijn favoriete venster. De temperatuur zakt, de banen herstellen van de zomer en de omstandigheden worden uitstekend. De prijzen blijven hoog, maar als je mij vraagt wanneer ik zelf zou komen spelen, dan is dit het."
         },
         {
-          "text": "Alcanada ontvangt in oktober 2026 de Rolex Challenge Tour Grand Final. Handig om te weten als u topgolf wilt zien of gewoon wilt begrijpen waarom dit deel van het jaar zo sterk is."
+          "text": "Alcanada ontvangt in oktober 2026 de Rolex Challenge Tour Grand Final. Handig om te weten als je topgolf wilt zien of gewoon wilt begrijpen waarom dit deel van het jaar zo sterk is."
         },
         {
           "alt": "October golf in Mallorca",
@@ -2893,10 +2893,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Oordeel"
         },
         {
-          "text": "Voor de beste omstandigheden stuur ik mensen nog steeds naar laat voorjaar en herfst. Voor betere waarde zou ik nu veel serieuzer kijken naar juni-augustus en december-februari. Wilt u rustig golf en lagere tarieven, dan zijn winter en zomerschemering allebei interessanter dan het oude Mallorca-advies doet vermoeden."
+          "text": "Voor de beste omstandigheden stuur ik mensen nog steeds naar laat voorjaar en herfst. Voor betere waarde zou ik nu veel serieuzer kijken naar juni-augustus en december-februari. Wil je rustig golf en lagere tarieven, dan zijn winter en zomerschemering allebei interessanter dan het oude Mallorca-advies doet vermoeden."
         },
         {
-          "text": "Plant u een reis? Stuur me uw data en ik help u kiezen welke periode en welke banen het beste passen.",
+          "text": "Plan je een reis? Stuur me je data en ik help je kiezen welke periode en welke banen het beste passen.",
           "linkLabel": "Neem contact op →"
         }
       ]
@@ -3128,7 +3128,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "论最佳条件，我依然会推荐暮春和秋季。论性价比，现在我会更认真地考虑6月到8月，以及12月到2月。如果你想要清静的球场和更低的价格，冬季和夏季黄昏时段都比过去的马略卡建议更值得关注。"
         },
         {
-          "text": "如果您正在规划行程，把日期发给我，我可以帮您判断最适合的时间和球场。也可以直接加微信：andygriffiths1。",
+          "text": "如果你正在规划行程，把日期发给我，我可以帮你判断最适合的时间和球场。也可以直接加微信：andygriffiths1。",
           "linkLabel": "联系我 →"
         }
       ]
@@ -3524,22 +3524,22 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Clubhuur is een van de meest voorkomende vragen voor een golfreis naar Mallorca. Loont het om de eigen clubs mee te nemen? Kunt u hier echt goede sets huren? Of eindigt u toch met een vermoeid pro-shop-setje?"
+          "text": "Clubhuur is een van de meest voorkomende vragen voor een golfreis naar Mallorca. Loont het om de eigen clubs mee te nemen? Kun je hier echt goede sets huren? Of eindig je toch met een vermoeid pro-shop-setje?"
         },
         {
-          "text": "Het eerlijke antwoord is: ja, u kunt hier goede clubs huren. Maar niet alle opties zijn gelijk. De sets van de baan zelf lopen van behoorlijk tot twijfelachtig. Voor een serieuze golfdag zou ik iets gerichter kiezen."
+          "text": "Het eerlijke antwoord is: ja, je kunt hier goede clubs huren. Maar niet alle opties zijn gelijk. De sets van de baan zelf lopen van behoorlijk tot twijfelachtig. Voor een serieuze golfdag zou ik iets gerichter kiezen."
         },
         {
-          "text": "Belangrijk: ik bied zelf geen clubhuur aan als dienst. Deze gids is puur informatief. Als u wilt, kan ik wel eerlijk aangeven welke richting het meest logisch is."
+          "text": "Belangrijk: ik bied zelf geen clubhuur aan als dienst. Deze gids is puur informatief. Als je wilt, kan ik wel eerlijk aangeven welke richting het meest logisch is."
         },
         {
           "text": "Eigen clubs meenemen of niet?"
         },
         {
-          "text": "Speelt u drie rondes of meer op een echte golfreis, neem dan uw eigen clubs mee. De airlinekosten (typisch €30–60 per traject) zijn het meestal waard voor gevoel, bekende afstanden en het vermijden van concessies."
+          "text": "Speel je drie rondes of meer op een echte golfreis, neem dan je eigen clubs mee. De airlinekosten (typisch €30–60 per traject) zijn het meestal waard voor gevoel, bekende afstanden en het vermijden van concessies."
         },
         {
-          "text": "Is het een gemengde vakantie met een of twee rondes, dan is huren vaak slimmer. Goede specialisten leveren aan hotel of baan en besparen u het hele travel-bag-circus op de luchthaven."
+          "text": "Is het een gemengde vakantie met een of twee rondes, dan is huren vaak slimmer. Goede specialisten leveren aan hotel of baan en besparen je het hele travel-bag-circus op de luchthaven."
         },
         {
           "text": "De belangrijkste verhuurders"
@@ -3547,7 +3547,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {},
         {},
         {
-          "text": "Persoonlijke levering en ophalen bij hotels, villa's en banen over het hele eiland. Recente Callaway Rogue ST Max-sets en een nette optie voor bezoekers die geen gedoe willen. Een bijzonder sterke keuze als u persoonlijke service en eenvoudige levering waardeert; vermeld ANDYGOLF10 bij uw boeking via <a href=\"https://wa.me/34722691766\">WhatsApp</a> of <a href=\"mailto:info@clubrentalsmallorca.com\">e-mail</a> voor prioriteitslevering aan uw golfbaan of hotel, plus een kleine korting op golfballen die u aan de boeking toevoegt."
+          "text": "Persoonlijke levering en ophalen bij hotels, villa's en banen over het hele eiland. Recente Callaway Rogue ST Max-sets en een nette optie voor bezoekers die geen gedoe willen. Een bijzonder sterke keuze als je persoonlijke service en eenvoudige levering waardeert; vermeld ANDYGOLF10 bij je boeking via <a href=\"https://wa.me/34722691766\">WhatsApp</a> of <a href=\"mailto:info@clubrentalsmallorca.com\">e-mail</a> voor prioriteitslevering aan je golfbaan of hotel, plus een kleine korting op golfballen die je aan de boeking toevoegt."
         },
         {
           "alt": "Callaway Rogue ST Max",
@@ -3555,11 +3555,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "Callaway Rogue- en TaylorMade Qi4D-opties, plus wat goedkopere sets uit eerdere seizoenen. Sterke middenweg voor wie serieuze kwaliteit wil zonder onnodig veel te betalen. Bonus voor lezers van Mr Mallorca Golf: gebruik code MRMALLORCAGOLF voor een klein gratis extraatje, afhankelijk van welke promotieartikelen beschikbaar zijn, of voeg MRMALLORCAGOLFBALLS toe voor 10% korting op nieuwe golfballen die u samen met de clubs koopt. Beide codes kunnen samen worden gebruikt bij het afrekenen."
+          "text": "Callaway Rogue- en TaylorMade Qi4D-opties, plus wat goedkopere sets uit eerdere seizoenen. Sterke middenweg voor wie serieuze kwaliteit wil zonder onnodig veel te betalen. Bonus voor lezers van Mr Mallorca Golf: gebruik code MRMALLORCAGOLF voor een klein gratis extraatje, afhankelijk van welke promotieartikelen beschikbaar zijn, of voeg MRMALLORCAGOLFBALLS toe voor 10% korting op nieuwe golfballen die je samen met de clubs koopt. Beide codes kunnen samen worden gebruikt bij het afrekenen."
         },
         {
           "alt": "TaylorMade Qi4D",
-          "caption": "TaylorMade Qi4D - premiumkeuze als u zonder eigen tas reist"
+          "caption": "TaylorMade Qi4D - premiumkeuze als je zonder eigen tas reist"
         },
         {},
         {
@@ -3571,7 +3571,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {},
         {
-          "text": "Flexibele annulering, eenvoudige boeking en vaak vooral interessant wanneer u een volle week of langer huurt. Hoe langer de huur, hoe logischer het vaak wordt."
+          "text": "Flexibele annulering, eenvoudige boeking en vaak vooral interessant wanneer je een volle week of langer huurt. Hoe langer de huur, hoe logischer het vaak wordt."
         },
         {
           "text": "De echte keuze is meestal niet eigen clubs versus zomaar een huurset. Het is eerder recent materiaal van een specialist versus wat er toevallig in de pro shop staat."
@@ -3597,7 +3597,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             },
             {
               "label": "Blijf realistisch:",
-              "text": "voor twee rustige rondes heeft u het duurste tourset niet nodig."
+              "text": "voor twee rustige rondes heb je het duurste tourset niet nodig."
             },
             {
               "label": "Waardeer de levering:",
@@ -3606,7 +3606,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "Wilt u clubs huren en de dag meteen goed opzetten - Son Gual, Alcanada of iets van dat niveau?",
+          "text": "Wil je clubs huren en de dag meteen goed opzetten - Son Gual, Alcanada of iets van dat niveau?",
           "linkLabel": "Bekijk de play-with-a-pro ervaring →"
         }
       ]
@@ -3844,7 +3844,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "如果您打算租杆，同时想把Son Gual、Alcanada这一类球日安排好，也可以直接加微信：andygriffiths1。",
+          "text": "如果你打算租杆，同时想把Son Gual、Alcanada这一类球日安排好，也可以直接加微信：andygriffiths1。",
           "linkLabel": "查看与职业球手同场体验 →"
         }
       ]
@@ -3911,7 +3911,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual va de 115 € en temporada baja a 165 € en los picos de marzo a mayo y de septiembre a noviembre. Alcanada va de 115 € en temporada baja a 220 € en los picos. Son tarifas publicadas para 2026. Son Muntaner, elegido Mejor Campo de Golf de España en los World Golf Awards 2025, se mueve en una franja parecida. Conviene confirmar los precios actuales de Arabella en arabellagolfmallorca.com."
         },
         {
-          "text": "Muchos campos usan precios dinámicos. Si busca una salida a última hora en un campo muy solicitado, normalmente pagará más. Planifique con margen, tenga claras sus prioridades y ahorrará dinero. También merece la pena revisar ofertas de Black Friday, Navidad y promociones de varias vueltas. Si lo hace bien, a menudo se puede ahorrar un 30-40 %."
+          "text": "Muchos campos usan precios dinámicos. Si buscas una salida a última hora en un campo muy solicitado, normalmente pagarás más. Planifica con margen, ten claras tus prioridades y ahorrarás dinero. También merece la pena revisar ofertas de Black Friday, Navidad y promociones de varias vueltas. Si lo hace bien, a menudo se puede ahorrar un 30-40 %."
         },
         {
           "caption": "Son Gual - campo premium, 115-165 €"
@@ -4331,7 +4331,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual loopt van ongeveer €115 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €260 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com."
         },
         {
-          "text": "Veel banen werken met dynamische prijzen. Wie op het laatste moment een starttijd op een populaire baan wil, betaalt meestal meer. Plan vroeg, bepaal uw prioriteiten en bespaar geld. Het loont ook om te letten op Black Friday, kerstacties en combinatiedeals. Als u dat slim doet, bespaart u vaak 30-40 procent."
+          "text": "Veel banen werken met dynamische prijzen. Wie op het laatste moment een starttijd op een populaire baan wil, betaalt meestal meer. Plan vroeg, bepaal je prioriteiten en bespaar geld. Het loont ook om te letten op Black Friday, kerstacties en combinatiedeals. Als je dat slim doet, bespaar je vaak 30-40 procent."
         },
         {
           "caption": "Son Gual - premiumbaan, €115-165"
@@ -4352,7 +4352,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Huursets van de baan kosten meestal €35-50 in de pro shop. De kwaliteit wisselt."
         },
         {
-          "text": "Gespecialiseerde verhuurders leveren op uw hotel, luchthaven of golfbaan. Basissets beginnen rond €25 per dag. Premiumsets van het huidige modeljaar starten rond €55 voor twee dagen en worden gunstiger bij langere verblijven, tot ongeveer €140 voor tien dagen. Weektarieven besparen vaak 20-30 procent. Boek minstens een week vooruit voor de beste kans op het juiste set en eventuele vroegboekkorting."
+          "text": "Gespecialiseerde verhuurders leveren op je hotel, luchthaven of golfbaan. Basissets beginnen rond €25 per dag. Premiumsets van het huidige modeljaar starten rond €55 voor twee dagen en worden gunstiger bij langere verblijven, tot ongeveer €140 voor tien dagen. Weektarieven besparen vaak 20-30 procent. Boek minstens een week vooruit voor de beste kans op het juiste set en eventuele vroegboekkorting."
         },
         {
           "text": "Buggys en trolleys"
@@ -4402,11 +4402,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Vergeleken met het Verenigd Koninkrijk: nee. Er zijn hier veel goedkopere opties dan in andere Europese golfbestemmingen. Het middensegment biedt uitstekende waarde. Vergeleken met de Algarve: bovenin vergelijkbaar, in het midden iets goedkoper. Vergeleken met de Costa del Sol: op premiumniveau grotendeels gelijk."
         },
         {
-          "text": "Wilt u een volledige premiumdag laten regelen met baan, begeleiding, lunch en alles eromheen?",
+          "text": "Wil je een volledige premiumdag laten regelen met baan, begeleiding, lunch en alles eromheen?",
           "linkLabel": "Bekijk de play-with-a-pro ervaring →"
         },
         {
-          "text": "Wilt u dat de hele golfdag al geregeld is, met baan, starttijd, coaching en alles vast voordat u aankomt?",
+          "text": "Wil je dat de hele golfdag al geregeld is, met baan, starttijd, coaching en alles vast voordat je aankomt?",
           "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
         }
       ]
@@ -4682,7 +4682,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "和英国比：不算。这里有不少比欧洲其他高尔夫目的地更友好的价格。和阿尔加维比：高端段接近，中档段略便宜一点。和太阳海岸比：高端段整体差不多。"
         },
         {
-          "text": "如果您想把球场、陪打、午餐和当天安排一起做好，我可以帮您把这一天安排得更顺。也欢迎直接加微信咨询：andygriffiths1。",
+          "text": "如果你想把球场、陪打、午餐和当天安排一起做好，我可以帮你把这一天安排得更顺。也欢迎直接加微信咨询：andygriffiths1。",
           "linkLabel": "查看与职业球手同场体验 →"
         },
         {
@@ -5073,7 +5073,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "7 min leestijd",
         "updated": "Maart 2026",
         "title": "Golftrip plannen - Essentials",
-        "intro": "Geen toeristische opvulling. Welke banen u moet spelen, wanneer u komt, hoeveel rondes logisch zijn en wat de beste aanpak buiten de baan is.",
+        "intro": "Geen toeristische opvulling. Welke banen je moet spelen, wanneer je komt, hoeveel rondes logisch zijn en wat de beste aanpak buiten de baan is.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5113,7 +5113,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Hoeveel rondes?"
         },
         {
-          "text": "Een ronde per dag is voor de meeste golfers ideaal. De banen vragen wat van u en de zomerhitte is echt. In koelere maanden zijn 36 holes op een dag mogelijk, maar de meeste golfreizigers spelen vier tot vijf rondes tijdens een trip van vijf tot zeven dagen."
+          "text": "Een ronde per dag is voor de meeste golfers ideaal. De banen vragen wat van je en de zomerhitte is echt. In koelere maanden zijn 36 holes op een dag mogelijk, maar de meeste golfreizigers spelen vier tot vijf rondes tijdens een trip van vijf tot zeven dagen."
         },
         {
           "text": "Welke banen prioriteit hebben"
@@ -5143,17 +5143,17 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Vervoer"
         },
         {
-          "text": "Een huurauto is de meest praktische keuze. De meeste topbanen liggen 20 tot 60 minuten van Palma en het openbaar vervoer brengt u er niet goed heen. De wegen zijn goed en buiten het hoogseizoen is het verkeer prima te doen."
+          "text": "Een huurauto is de meest praktische keuze. De meeste topbanen liggen 20 tot 60 minuten van Palma en het openbaar vervoer brengt je er niet goed heen. De wegen zijn goed en buiten het hoogseizoen is het verkeer prima te doen."
         },
         {
           "caption": "Een huurauto is de simpelste manier om de beste banen te bereiken"
         },
         {},
         {
-          "text": "Speelt u drie rondes of meer op een echte golfreis, neem dan uw eigen clubs mee. Voor een gemengde vakantie met een of twee rondes is huren vaak logischer. In de clubhuurgids noem ik de bedrijven die betrouwbaar leveren en u het gesjouw met een travel bag op de luchthaven besparen."
+          "text": "Speel je drie rondes of meer op een echte golfreis, neem dan je eigen clubs mee. Voor een gemengde vakantie met een of twee rondes is huren vaak logischer. In de clubhuurgids noem ik de bedrijven die betrouwbaar leveren en je het gesjouw met een travel bag op de luchthaven besparen."
         },
         {
-          "text": "Wat u verder moet doen"
+          "text": "Wat je verder moet doen"
         },
         {
           "text": "De oude stad van Palma is echt de moeite waard. De noordwestkust met Valldemossa, Deia en Soller heeft sommige van de mooiste landschappen van de Middellandse Zee. Het noordoosten is rustiger en ruiger. En qua eten, lokale vis en eilandwijnen zit Mallorca sterk in elkaar."
@@ -5179,7 +5179,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "Wilt u dat het golfdeel goed wordt geregeld, met banen, volgorde, tee times, buggies, huurclubs en een duidelijke prijs voordat er iets wordt geboekt?",
+          "text": "Wil je dat het golfdeel goed wordt geregeld, met banen, volgorde, tee times, buggies, huurclubs en een duidelijke prijs voordat er iets wordt geboekt?",
           "linkLabel": "Vraag Andy om de golfplanning →"
         }
       ]
@@ -5425,7 +5425,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "如果您想把高尔夫部分安排清楚，包括球场、顺序、开球时间、球车、租杆和预订前的清晰报价，也可以直接咨询。",
+          "text": "如果你想把高尔夫部分安排清楚，包括球场、顺序、开球时间、球车、租杆和预订前的清晰报价，也可以直接咨询。",
           "linkLabel": "请 Andy 规划高尔夫行程 →"
         }
       ]
@@ -5894,7 +5894,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "De oostkust vraagt reistijd"
         },
         {
-          "text": "Pula, Canyamel en Capdepera horen bij de mooiste banen van het eiland, maar liggen 55-65 km van Palma. Prima te doen, zolang u die reistijd eerlijk in de dag meeneemt."
+          "text": "Pula, Canyamel en Capdepera horen bij de mooiste banen van het eiland, maar liggen 55-65 km van Palma. Prima te doen, zolang je die reistijd eerlijk in de dag meeneemt."
         },
         {
           "alt": "Capdepera Golf",
@@ -5925,7 +5925,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Mallorca is een van de beste golfbestemmingen van Europa. Niet de beroemdste, maar wel een van de meest complete. Golfers die eenmaal begrijpen wat het eiland biedt, komen meestal terug, en daar is goede reden voor."
         },
         {
-          "text": "Wilt u zien hoe het beste van Mallorca-golf er werkelijk uitziet, met een PGA professional naast u?",
+          "text": "Wil je zien hoe het beste van Mallorca-golf er werkelijk uitziet, met een PGA professional naast je?",
           "linkLabel": "Bekijk de play-with-a-pro ervaring →"
         }
       ]
@@ -6176,7 +6176,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "马略卡是欧洲最好的高尔夫目的地之一。它不是最出名的那个，但一定是最完整的一类。真正懂它的人，通常都会回来，而且是有原因的。"
         },
         {
-          "text": "如果您想真正看看马略卡最好的高尔夫是什么样子，也欢迎直接加微信：andygriffiths1。",
+          "text": "如果你想真正看看马略卡最好的高尔夫是什么样子，也欢迎直接加微信：andygriffiths1。",
           "linkLabel": "查看与职业球手同场体验 →"
         }
       ]

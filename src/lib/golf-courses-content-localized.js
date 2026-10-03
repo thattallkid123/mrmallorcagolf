@@ -153,7 +153,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "ctaEyebrow": "Ya tiene su lista corta?",
       "ctaH2": "Convierta la lista corta en el viaje correcto.",
       "ctaP": "Envíeme sus fechas, handicap, zona de hotel y los dos o tres campos que está considerando. Le dire cuales encajan en el viaje, en que orden, y como es el plan más claro.",
-      "seeExperiences": "Planifica tu viaje",
+      "seeExperiences": "Planifique su viaje",
       "getInTouch": "Play With A Pro"
     }
   },

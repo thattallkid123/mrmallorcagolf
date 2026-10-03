@@ -734,8 +734,8 @@ export const ABOUT_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "准备好下场了吗？",
-      "title": "PGA高级职业教练。一座非凡的高尔夫岛屿。属于你的一轮。",
-      "body": "告诉我你的日期、差点和你想要的体验。我会围绕你来安排这一天。",
+      "title": "PGA高级职业教练。一座非凡的高尔夫岛屿。属于您的一轮。",
+      "body": "告诉我您的日期、差点和您想要的体验。我会围绕您来安排这一天。",
       "primaryCta": "查看体验 →",
       "primaryHref": "/zh/play-with-a-pro",
       "secondaryCta": "联系我",

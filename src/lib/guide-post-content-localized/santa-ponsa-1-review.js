@@ -131,7 +131,7 @@ const content = {
           ],
           [
             "Consejo de casa club",
-            "Este es un buen campo para ganar confianza, si está pegando bien el driver, antes de un examen más serio. Si su viaje incluye Son Gual o Andratx, Santa Ponsa 1 encaja bien al principio de la semana."
+            "Este es un buen campo para ganar confianza, si estás pegando bien el driver, antes de un examen más serio. Si tu viaje incluye Son Gual o Andratx, Santa Ponsa 1 encaja bien al principio de la semana."
           ]
         ]
       },
@@ -179,7 +179,7 @@ const content = {
         "caption": "Das 16. Grün. Der See kommt bei der Annäherung ins Spiel und sorgt für ordentliche Konzentration."
       },
       {
-        "text": "Santa Ponsa 1 ist der einzige öffentliche Platz der Santa-Ponsa-Gruppe und derjenige mit echter Turniergeschichte auf European-Tour-Niveau. Hier fand 2021 die Mallorca Golf Open statt. Der Platz brachte Spitzengolf nach einem Jahrzehnt Pause zurück auf die Insel. Jeff Winther gewann damals und eröffnete das Turnier gleich mit zwei 62er-Runden. Der Kurs war dafür bereit."
+        "text": "Santa Ponsa 1 ist der einzige öffentliche Platz der Santa-Ponsa-Gruppe und derjenige mit echter Turniergeschichte auf European-Tour-Niveau. Hier fand 2021 die Mallorca Golf Open statt. Der Platz brachte Spitzengolf nach einem Jahrzehnt Pause zurück auf die Insel. Jeff Winther gewann damals und eröffnete das Turnier gleich mit zwei 62er-Runden. Der Platz war dafür bereit."
       },
       {
         "text": "Warum dieser Platz zu meinem Spiel passt - und wahrscheinlich auch zu Ihrem"
@@ -539,7 +539,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "Een geldig WHS-handicapbewijs is vereist bij het boeken; buggyverhuur kost €43 voor 18 holes. Santa Ponsa 1 is geschikt voor zelfverzekerde golfers die willen genieten van de driver op brede fairways, en werkt goed als makkelijkere ronde vroeg in een reis, voor een zwaarder parcours zoals Son Gual of Golf Andratx. Wat bezoekers verrast: op een rustige dag vleit de baan u, maar met wind eisen de lange par 3's en de 590 meter lange hole 10 elke meter van hun lengte op. De beste starttijd is vroeg, voordat de gebruikelijke bries later in de ochtend opsteekt."
+        "text": "Een geldig WHS-handicapbewijs is vereist bij het boeken; buggyverhuur kost €43 voor 18 holes. Santa Ponsa 1 is geschikt voor zelfverzekerde golfers die willen genieten van de driver op brede fairways, en werkt goed als makkelijkere ronde vroeg in een reis, voor een zwaarder parcours zoals Son Gual of Golf Andratx. Wat bezoekers verrast: op een rustige dag vleit de baan je, maar met wind eisen de lange par 3's en de 590 meter lange hole 10 elke meter van hun lengte op. De beste starttijd is vroeg, voordat de gebruikelijke bries later in de ochtend opsteekt."
       },
       {
         "text": "Oordeel"

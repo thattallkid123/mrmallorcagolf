@@ -59,7 +59,7 @@ const content = {
         "text": "Una nota sobre las clases en el campo de prácticas"
       },
       {
-        "text": "También ofrezco sesiones en el campo de prácticas para jugadores que quieren trabajar en elementos técnicos concretos antes de llevarlos al campo. Los dos enfoques funcionan bien juntos. Pero si tiene poco tiempo en Mallorca y quiere la mejora más rápida y práctica en su juego real, el campo es el sitio por donde empezar."
+        "text": "También ofrezco sesiones en el campo de prácticas para jugadores que quieren trabajar en elementos técnicos concretos antes de llevarlos al campo. Los dos enfoques funcionan bien juntos. Pero si tienes poco tiempo en Mallorca y quieres la mejora más rápida y práctica en tu juego real, el campo es el sitio por donde empezar."
       },
       {
         "text": "¿Le interesa un día de Play With A Pro? Coaching en el campo en uno de los mejores campos de Mallorca.",
@@ -205,11 +205,11 @@ const content = {
     "meta": {
       "badge": "Coachinggids",
       "title": "On-course golfcoaching op Mallorca. Nu meteen beter spelen",
-      "intro": "De meeste lessen vinden plaats op de driving range. On-course coaching vindt plaats waar het spel echt gebeurt. Dit is wat het inhoudt, voor wie het geschikt is, en wat u kunt verwachten van een dag met mij."
+      "intro": "De meeste lessen vinden plaats op de driving range. On-course coaching vindt plaats waar het spel echt gebeurt. Dit is wat het inhoudt, voor wie het geschikt is, en wat je kunt verwachten van een dag met mij."
     },
     "blocks": [
       {
-        "caption": "On-course coaching bij Son Gual. De driving range laat u het ene zien. De baan laat iets anders zien."
+        "caption": "On-course coaching bij Son Gual. De driving range laat je het ene zien. De baan laat iets anders zien."
       },
       {
         "text": "Lessen op de driving range lossen driving-range-problemen op. On-course coaching lost golfproblemen op. Het verschil is groter dan de meeste mensen beseffen tot ze beide hebben meegemaakt."
@@ -221,16 +221,16 @@ const content = {
         "text": "Wat on-course coaching echt inhoudt"
       },
       {
-        "text": "We spelen samen een ronde. Dat is de structuur. Maar in plaats van gewoon te spelen, werken we elk beslismoment door zodra het zich voordoet: clubkeuze bij zijwind, waar u een green het beste kunt missen, hoe u een hellende ligging leest, wanneer u een carry over water aandurft en wanneer u kort speelt. Pre-shot routine. Baanmanagement. Het mentale spel onder druk."
+        "text": "We spelen samen een ronde. Dat is de structuur. Maar in plaats van gewoon te spelen, werken we elk beslismoment door zodra het zich voordoet: clubkeuze bij zijwind, waar je een green het beste kunt missen, hoe je een hellende ligging leest, wanneer je een carry over water aandurft en wanneer je kort speelt. Pre-shot routine. Baanmanagement. Het mentale spel onder druk."
       },
       {
-        "text": "Ik kijk ook naar uw swing onder de omstandigheden die hem daadwerkelijk beïnvloeden: bodemhardheid, helling, rough, wind. Geen vlakke oefenmat. Ik zie dingen op de baan die ik op de driving range niet zou zien, en de feedback is direct relevant omdat u zo de volgende slag speelt."
+        "text": "Ik kijk ook naar je swing onder de omstandigheden die hem daadwerkelijk beïnvloeden: bodemhardheid, helling, rough, wind. Geen vlakke oefenmat. Ik zie dingen op de baan die ik op de driving range niet zou zien, en de feedback is direct relevant omdat je zo de volgende slag speelt."
       },
       {
         "text": "Voor wie dit geschikt is"
       },
       {
-        "text": "On-course coaching werkt goed voor een breed scala aan spelers. Als u op een redelijk niveau speelt maar het gevoel heeft dat uw baanmanagement u tegenhoudt, pakt een ronde met mij dat direct aan. Als u Mallorca bezoekt en het meeste uit het spelen van Son Gual, Alcanada of een van de andere banen hier wilt halen, is dit de snelste manier om zowel uw plezier als uw score te verbeteren."
+        "text": "On-course coaching werkt goed voor een breed scala aan spelers. Als je op een redelijk niveau speelt maar het gevoel heeft dat je baanmanagement je tegenhoudt, pakt een ronde met mij dat direct aan. Als je Mallorca bezoekt en het meeste uit het spelen van Son Gual, Alcanada of een van de andere banen hier wilt halen, is dit de snelste manier om zowel je plezier als je score te verbeteren."
       },
       {
         "text": "Het is ook een heel goede optie voor koppels of kleine groepen. Twee of drie spelers die samen gecoacht willen worden, in een ontspannen vorm, op een baan die ze willen spelen. Precies zo zijn de Play With A Pro dagen opgebouwd."
@@ -242,13 +242,13 @@ const content = {
         "text": "De meeste Play With A Pro dagen vinden plaats op <a href=\"/guides/son-gual-review\">Son Gual</a>, de baan waar ik het meest speel op het eiland en een van de beste tests voor baanmanagement hier. We gebruiken ook <a href=\"/guides/alcanada-review\">Alcanada</a> voor groepen die de meest fotogenieke ronde willen, en andere banen afhankelijk van het niveau van de groep en waar ze aan willen werken."
       },
       {
-        "text": "Wat u eraan overhoudt"
+        "text": "Wat je eraan overhoudt"
       },
       {
-        "text": "De meeste spelers gaan naar huis met drie of vier concrete punten om aan te werken. Geen lijst van twintig swingfouten, maar de handvol dingen die hen in echte rondes daadwerkelijk slagen kosten. U begrijpt ook beter hoe u een golfbaan managet: waar u risico neemt, waar u voorzichtig bent, en hoe u onder druk beslissingen neemt."
+        "text": "De meeste spelers gaan naar huis met drie of vier concrete punten om aan te werken. Geen lijst van twintig swingfouten, maar de handvol dingen die hen in echte rondes daadwerkelijk slagen kosten. Je begrijpt ook beter hoe je een golfbaan managet: waar je risico neemt, waar je voorzichtig bent, en hoe je onder druk beslissingen neemt."
       },
       {
-        "text": "Naast de coaching krijgt u een ronde op Mallorca op een van de uitstekende banen van het eiland, met iemand die elke hole kent en de dag echt aangenaam kan maken. Die combinatie is waar de <a href=\"/play-with-a-pro\">Play With A Pro ervaring</a> om draait."
+        "text": "Naast de coaching krijg je een ronde op Mallorca op een van de uitstekende banen van het eiland, met iemand die elke hole kent en de dag echt aangenaam kan maken. Die combinatie is waar de <a href=\"/play-with-a-pro\">Play With A Pro ervaring</a> om draait."
       },
       {
         "text": "Veelgestelde vragen"
@@ -260,7 +260,7 @@ const content = {
         "text": "Een woord over lessen op de driving range"
       },
       {
-        "text": "Ik bied ook sessies op de driving range en oefenfaciliteiten aan voor spelers die aan specifieke technische elementen willen werken voordat ze de baan op gaan. De twee benaderingen werken goed samen. Maar als u weinig tijd heeft op Mallorca en de snelste, meest praktische verbetering van uw echte spel wilt, is on-course de plek om te beginnen."
+        "text": "Ik bied ook sessies op de driving range en oefenfaciliteiten aan voor spelers die aan specifieke technische elementen willen werken voordat ze de baan op gaan. De twee benaderingen werken goed samen. Maar als je weinig tijd heeft op Mallorca en de snelste, meest praktische verbetering van je echte spel wilt, is on-course de plek om te beginnen."
       },
       {
         "text": "Geinteresseerd in een Play With A Pro dag? On-course coaching op een van de beste banen van Mallorca.",
@@ -339,11 +339,11 @@ const content = {
     "meta": {
       "badge": "教学指南",
       "title": "马略卡球场实战指导：立刻打得更好",
-      "intro": "大多数课程都在练习场进行。球场实战指导发生在真正比赛的地方。这里是它包含的内容、适合什么样的球手，以及和我共度一天您可以期待什么。"
+      "intro": "大多数课程都在练习场进行。球场实战指导发生在真正比赛的地方。这里是它包含的内容、适合什么样的球手，以及和我共度一天你可以期待什么。"
     },
     "blocks": [
       {
-        "caption": "在Son Gual进行的球场实战指导。练习场只能告诉您一件事，球场会告诉您完全不同的东西。"
+        "caption": "在Son Gual进行的球场实战指导。练习场只能告诉你一件事，球场会告诉你完全不同的东西。"
       },
       {
         "text": "练习场的课程解决的是练习场问题，球场实战指导解决的是真正的高尔夫问题。这个差别比大多数人想象的更重要，直到他们亲身体验过两者。"
@@ -358,13 +358,13 @@ const content = {
         "text": "我们会一起打一轮球，这就是基本形式。但我们不只是打球，而是在每个决策点实时讨论：侧风时如何选杆、错失果岭时该往哪偏、如何判断坡度球位、什么时候该冒险越水攻果岭、什么时候该保守打上前区。击球前的准备流程、球场策略、以及压力下的心理博弈。"
       },
       {
-        "text": "我还会在真正影响挥杆的条件下观察您的挥杆：地面硬度、坡度、长草区、风。不是平坦的练习垫。我在球场上能看到练习场看不到的东西，而且这些反馈马上就能用上，因为您马上就要打下一杆。"
+        "text": "我还会在真正影响挥杆的条件下观察你的挥杆：地面硬度、坡度、长草区、风。不是平坦的练习垫。我在球场上能看到练习场看不到的东西，而且这些反馈马上就能用上，因为你马上就要打下一杆。"
       },
       {
         "text": "适合什么样的球手"
       },
       {
-        "text": "球场实战指导适合各种水平的球手。如果您已经打到一定水准，但感觉球场策略在拖后腿，和我打一轮球会直接解决这个问题。如果您正在马略卡游玩，想在Son Gual、Alcanada或岛上其他球场获得最好的体验，这是提升享受度和成绩最快的方式。"
+        "text": "球场实战指导适合各种水平的球手。如果你已经打到一定水准，但感觉球场策略在拖后腿，和我打一轮球会直接解决这个问题。如果你正在马略卡游玩，想在Son Gual、Alcanada或岛上其他球场获得最好的体验，这是提升享受度和成绩最快的方式。"
       },
       {
         "text": "这也非常适合两人或小型团体。两三位球手希望一起接受指导，形式轻松，选一座他们想打的球场。这正是陪打体验（Play With A Pro）的安排方式。"
@@ -376,13 +376,13 @@ const content = {
         "text": "大多数陪打体验安排在<a href=\"/guides/son-gual-review\">Son Gual</a>进行，这是我在岛上打得最多的球场，也是这里对球场策略要求最高的考验之一。对于想要最具风景感的一轮球的团体，我们也会使用<a href=\"/guides/alcanada-review\">Alcanada</a>，具体球场则视团队水平与训练重点而定。"
       },
       {
-        "text": "您能从中获得什么"
+        "text": "你能从中获得什么"
       },
       {
-        "text": "大多数球手离开时会带走三到四个具体的改进方向，而不是二十条挥杆问题清单，而是真正在实战中让他们丢杆的那几个关键点。您也会更理解如何管理一座球场：何时该冒险、何时该保守、以及如何在压力下做决定。"
+        "text": "大多数球手离开时会带走三到四个具体的改进方向，而不是二十条挥杆问题清单，而是真正在实战中让他们丢杆的那几个关键点。你也会更理解如何管理一座球场：何时该冒险、何时该保守、以及如何在压力下做决定。"
       },
       {
-        "text": "除了指导本身，您还能在马略卡岛上一座出色的球场打上一轮球，身边是熟悉每一个洞的人，让这一天真正令人享受。这种组合正是<a href=\"/play-with-a-pro\">陪打体验（Play With A Pro）</a>的核心。"
+        "text": "除了指导本身，你还能在马略卡岛上一座出色的球场打上一轮球，身边是熟悉每一个洞的人，让这一天真正令人享受。这种组合正是<a href=\"/play-with-a-pro\">陪打体验（Play With A Pro）</a>的核心。"
       },
       {
         "text": "常见问题"
@@ -394,7 +394,7 @@ const content = {
         "text": "关于练习场课程的说明"
       },
       {
-        "text": "对于希望在上场前先解决具体技术问题的球手，我也提供练习场和训练设施课程。这两种方式可以很好地结合。但如果您在马略卡时间有限，想要最快、最实用地提升您的实战水平，球场实战指导才是最好的起点。"
+        "text": "对于希望在上场前先解决具体技术问题的球手，我也提供练习场和训练设施课程。这两种方式可以很好地结合。但如果你在马略卡时间有限，想要最快、最实用地提升你的实战水平，球场实战指导才是最好的起点。"
       },
       {
         "text": "对陪打体验（Play With A Pro）感兴趣吗？在马略卡最好的球场之一进行球场实战指导。",

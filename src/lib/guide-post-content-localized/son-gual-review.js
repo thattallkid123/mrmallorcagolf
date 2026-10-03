@@ -41,7 +41,7 @@ const content = {
         "text": "Respuesta rápida: merece la pena reservar Son Gual?"
       },
       {
-        "text": "Son Gual encaja si el campo se ajusta a su grupo, su nivel y el tipo de dia de golf que busca. Los detalles de abajo explican donde destaca y donde conviene tener cuidado."
+        "text": "Son Gual encaja si el campo se ajusta a tu grupo, tu nivel y el tipo de día de golf que buscas. Los detalles de abajo explican dónde destaca y dónde conviene tener cuidado."
       },
       {
         "caption": "Un día en grupo en enero. En Inglaterra los campos están cerrados. Aquí los fairways tienen este aspecto."
@@ -101,7 +101,7 @@ const content = {
         "text": "Rafa Nadal juega aquí con frecuencia y ha dicho que es su campo favorito en Mallorca. Barack Obama jugo aquí en noviembre de 2024. Normalmente esos nombres no me importan demasiado, pero dicen algo sobre la posición de Son Gual en la isla."
       },
       {
-        "caption": "El tee del 10, justo delante de la casa club. El par 4 se abre delante de usted."
+        "caption": "El tee del 10, justo delante de la casa club. El par 4 se abre delante de ti."
       },
       {
         "items": [
@@ -163,7 +163,7 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "Antes de reservar, piense en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserve pronto, elija tees realistas y deje tiempo después de la ronda."
+        "text": "Antes de reservar, piensa en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserva pronto, elige tees realistas y deja tiempo después de la ronda."
       },
       {
         "text": "Llevo clientes a Son Gual con regularidad. Quiere jugarlo con alguien que conoce cada hoyo?",
@@ -548,13 +548,13 @@ const content = {
         "caption": "Son Gual. 11 km van Palma. Het voelt duidelijk verder zodra de wind op de eerste tee opsteekt."
       },
       {
-        "text": "Son Gual is de baan die ik het meest speel op Mallorca en de baan die ik het vaakst aanbeveel wanneer klanten vragen waar ze moeten spelen. Ik wil eerlijk zijn over waarom, en ook over wat hem lastig maakt. Wie een ontspannen vakantieronde verwacht, wordt verrast. Overweegt u ook Alcanada of Son Muntaner, lees die reviews dan ook eerst."
+        "text": "Son Gual is de baan die ik het meest speel op Mallorca en de baan die ik het vaakst aanbeveel wanneer klanten vragen waar ze moeten spelen. Ik wil eerlijk zijn over waarom, en ook over wat hem lastig maakt. Wie een ontspannen vakantieronde verwacht, wordt verrast. Overweeg je ook Alcanada of Son Muntaner, lees die reviews dan ook eerst."
       },
       {
-        "text": "Snel antwoord: moet u Son Gual boeken?"
+        "text": "Snel antwoord: moet je Son Gual boeken?"
       },
       {
-        "text": "Son Gual past als de baan aansluit bij uw groep, uw niveau en het soort golfdag dat u zoekt. Hieronder staat waar de baan sterk is en waar bezoekers moeten opletten."
+        "text": "Son Gual past als de baan aansluit bij je groep, je niveau en het soort golfdag dat je zoekt. Hieronder staat waar de baan sterk is en waar bezoekers moeten opletten."
       },
       {
         "caption": "Een groepsdag in januari. In Engeland zijn de banen gesloten. Hier zien de fairways er zo uit."
@@ -614,7 +614,7 @@ const content = {
         "text": "Rafa Nadal speelt hier regelmatig en heeft gezegd dat het zijn favoriete baan op Mallorca is. Barack Obama speelde hier in november 2024. Zulke namen doen mij normaal weinig, maar ze zeggen wel iets over de positie van Son Gual op het eiland."
       },
       {
-        "caption": "De 10e tee, direct voor het clubhuis. De par 4 strekt zich voor u uit."
+        "caption": "De 10e tee, direct voor het clubhuis. De par 4 strekt zich voor je uit."
       },
       {
         "items": [
@@ -679,7 +679,7 @@ const content = {
         "text": "Denk voor het boeken aan starttijd, wind, tempo en of de baan bij de groep past. Boek vroeg, kies realistische tees en houd tijd vrij na de ronde."
       },
       {
-        "text": "Ik neem regelmatig klanten mee naar Son Gual. Wilt u hem spelen met iemand die elke hole kent?",
+        "text": "Ik neem regelmatig klanten mee naar Son Gual. Wil je hem spelen met iemand die elke hole kent?",
         "linkLabel": "Bekijk de golfdag met Pro"
       }
     ]

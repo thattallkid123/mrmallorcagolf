@@ -10,9 +10,9 @@ export const HOME_LOCALIZED_CONTENT = {
         "Juega los mejores",
         "campos de Mallorca."
       ],
-      "emphasis": "Con un profesional a tu lado.",
-      "primaryCta": "Reserva tu día",
-      "secondaryCta": "Planifica tu viaje",
+      "emphasis": "Con un profesional a su lado.",
+      "primaryCta": "Reserve su día",
+      "secondaryCta": "Planifique su viaje",
       "trust": [
         "PGA Advanced Professional",
         "Certificado Trackman Master",
@@ -25,7 +25,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Muchos días de golf en Mallorca empiezan con una plataforma de reservas y acaban con una factura. Esto es más personal.",
       "paragraphs": [
         "Organizo días de golf en algunos de los mejores campos de la isla, con el coaching integrado en la vuelta y no como un extra al final. Se juega mejor, se toman decisiones más claras y todo el día se siente mejor llevado.",
-        "Mallorca se puede jugar todo el año. Saber qué campo encaja con tu juego, qué tee times merecen la pena y cuándo las condiciones son las correctas marca mucho de la diferencia entre un buen día y uno excepcional."
+        "Mallorca se puede jugar todo el año. Saber qué campo encaja con su juego, qué tee times merecen la pena y cuándo las condiciones son las correctas marca mucho de la diferencia entre un buen día y uno excepcional."
       ],
       "stats": [
         {
@@ -48,7 +48,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "title": "Planificación del viaje",
           "text": "Campos, base, rutas, horas de salida, buggies, palos de alquiler y sugerencias de restaurantes.",
-          "cta": "Planifica tu viaje"
+          "cta": "Planifique su viaje"
         }
       ],
       "coursesBlurb": "Juego y reviso todos los campos de la isla: Son Gual, Alcanada, T Golf Calvià, Son Muntaner y el resto. Si quiere comparar campos antes de reservar,",
@@ -57,8 +57,8 @@ export const HOME_LOCALIZED_CONTENT = {
       "guideBlurbLink": "lea la guía de campos"
     },
     "journey": {
-      "eyebrow": "Elige tu punto de partida",
-      "title": "Empieza donde estás en el proceso de planificación.",
+      "eyebrow": "Elija su punto de partida",
+      "title": "Empiece donde está en el proceso de planificación.",
       "items": [
         {
           "title": "Jugar una vuelta conmigo",
@@ -188,7 +188,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "packages": {
       "eyebrow": "Experiencias y paquetes",
-      "title": "Elige tu día",
+      "title": "Elija su día",
       "body": "Solo y Grupo son las tarifas base de Play With A Pro. Los campos pueden juntar reservas cuando hay mucha afluencia, y en temporada alta pasa. Si quiere privatizar la hora de salida, reservo las plazas libres y le traslado el cargo del campo al coste. Está incluida de serie en el Signature Day. Y si quiere que planifiquemos todo el viaje alrededor, eso también está disponible.",
       "items": [
         {
@@ -310,7 +310,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Escríbame. Yo me encargo del resto.",
       "body": "Dígame sus fechas, su hándicap y lo que quiere del día. Le responderé personalmente en 24 horas.",
       "quote": "Jugará mejor y entenderá por qué.",
-      "primaryCta": "Reserva tu día"
+      "primaryCta": "Reserve su día"
     },
     "ui": {
       "coursesHint": "Deslice o haga scroll para ver más",
@@ -506,7 +506,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "packages": {
       "eyebrow": "Erlebnisse und Pakete",
-      "title": "Wähle deinen Tag",
+      "title": "Wählen Sie Ihren Tag",
       "body": "Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Plätze können Buchungen an vollen Tagen zusammenlegen, und in der Hochsaison passiert das. Wenn Sie die Startzeit privat möchten, reserviere ich die freien Plätze und gebe den Betrag des Platzes zum Selbstkostenpreis weiter. Beim Signature Day ist sie standardmäßig enthalten. Wenn Sie die ganze Reise darum herum geplant haben möchten, ist das ebenfalls möglich.",
       "items": [
         {
@@ -1141,7 +1141,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "packages": {
       "eyebrow": "Ervaringen en pakketten",
-      "title": "Kies je dag",
+      "title": "Kies uw dag",
       "body": "Solo en groep zijn de standaard Play With A Pro dagtarieven. Banen kunnen boekingen samenvoegen als het druk is, en in het hoogseizoen gebeurt dat. Wilt u de starttijd privé, dan reserveer ik de vrije plekken en reken ik het bedrag van de baan door tegen kostprijs. Bij de Signature Day is het standaard inbegrepen. Wilt u de hele reis eromheen laten plannen, dan kan dat ook.",
       "items": [
         {
@@ -1610,7 +1610,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "真正拉开差距的地方",
       "title": "我在上海待了 11 年，也知道中国客人要的不是一场普通预订，而是清楚、专业、有人把细节都安排好的私人高尔夫一天。",
       "paragraphs": [
-        "我会在岛上最好的球场陪你打一整天，指导直接发生在球场上，而不是打完以后再补几句建议。球会打得更好，决策会更清楚，整天的体验也会更周到。",
+        "我会在岛上最好的球场陪您打一整天，指导直接发生在球场上，而不是打完以后再补几句建议。球会打得更好，决策会更清楚，整天的体验也会更周到。",
         "我在上海执教过 11 年，和中国国家队球员、高要求家庭以及真正认真看内容的球手合作过，也在抖音上做过大量高尔夫内容。普通话流利，所以沟通、判断和安排都可以更直接。"
       ],
       "services": [
@@ -1625,7 +1625,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "cta": "了解行程规划"
         }
       ],
-      "coursesBlurb": "全岛 24 座球场，我都亲自打过并认真评价过——Son Gual、Alcanada、Son Muntaner 以及其余所有球场。如果你想在预订前比较球场，",
+      "coursesBlurb": "全岛 24 座球场，我都亲自打过并认真评价过——Son Gual、Alcanada、Son Muntaner 以及其余所有球场。如果您想在预订前比较球场，",
       "coursesBlurbLink": "全部球场在这里",
       "guideBlurb": "想看马略卡（Majorca）全部 24 座球场的完整排名，包括果岭费和每座球场适合谁，",
       "guideBlurbLink": "阅读完整球场指南",
@@ -1645,8 +1645,8 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "socialProof": "上海 11 年 · 普通话流利 · 抖音数亿次观看 · 中国国家队 · Trackman 大师认证",
     "journey": {
-      "eyebrow": "选择你的方式",
-      "title": "从你现在所在的位置开始。",
+      "eyebrow": "选择您的方式",
+      "title": "从您现在所在的位置开始。",
       "items": [
         {
           "title": "和我一起打一轮",
@@ -1655,7 +1655,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "title": "我在计划一趟高尔夫旅行",
-          "text": "让我来负责所有安排：球场选择、住宿、路线规划、开球时间、球车和预订，全部在你出发前搞定。",
+          "text": "让我来负责所有安排：球场选择、住宿、路线规划、开球时间、球车和预订，全部在您出发前搞定。",
           "cta": "了解行程规划"
         },
         {
@@ -1671,15 +1671,15 @@ export const HOME_LOCALIZED_CONTENT = {
       "steps": [
         {
           "title": "联系我",
-          "text": "告诉我你的日期、差点、酒店区域和你想要什么样的一天。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。"
+          "text": "告诉我您的日期、差点、酒店区域和您想要什么样的一天。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。"
         },
         {
           "title": "我来安排这一天",
-          "text": "球场建议、开球时间和午餐都会在你到场前安排好。交通如有需要，也可以另外加上。"
+          "text": "球场建议、开球时间和午餐都会在您到场前安排好。交通如有需要，也可以另外加上。"
         },
         {
           "title": "到场开打",
-          "text": "你唯一要做的，就是享受这一轮。大多数人都会比自己预想中打得更好。"
+          "text": "您唯一要做的，就是享受这一轮。大多数人都会比自己预想中打得更好。"
         }
       ]
     },
@@ -1747,14 +1747,14 @@ export const HOME_LOCALIZED_CONTENT = {
       "paragraphs": [
         "我在中国执教了十多年，客户要的是实实在在的进步，不是空泛的鼓励。",
         "这段经历决定了我现在带每一轮球的方式。我们会一起打马略卡最好的球场，而指导会出现在真正影响成绩的地方。",
-        "在你到场之前，一切都已经安排好：球场、开球时间和午餐。你那天唯一的任务，就是好好打球。"
+        "在您到场之前，一切都已经安排好：球场、开球时间和午餐。您那天唯一的任务，就是好好打球。"
       ],
       "button": "查看体验",
       "dateCta": "告诉我您的日期",
       "features": [
         {
           "title": "一切都已安排好",
-          "text": "球场、开球时间、交通和午餐都会在你到场前安排妥当。"
+          "text": "球场、开球时间、交通和午餐都会在您到场前安排妥当。"
         },
         {
           "title": "下场指导",
@@ -1762,7 +1762,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "title": "专属关注",
-          "text": "只有你和一位英国职业高尔夫协会高级职业教练，全天都围绕你的球来安排。"
+          "text": "只有您和一位英国职业高尔夫协会高级职业教练，全天都围绕您的球来安排。"
         },
         {
           "title": "更多独家资源",
@@ -1782,7 +1782,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "packages": {
       "eyebrow": "体验与套餐",
-      "title": "选择你的那一天",
+      "title": "选择您的那一天",
       "body": "单人和小组是 Play With A Pro 的基础日费方案。球场繁忙时可能会把预订拼组，旺季尤其如此。如果您希望独享这个开球时段，我会把空出的名额预订下来，并按成本价把球会的费用转给您。Signature Day 已默认包含这一项。如果您希望围绕这一天规划整趟行程，这项服务同样可以安排。",
       "items": [
         {
@@ -1868,11 +1868,11 @@ export const HOME_LOCALIZED_CONTENT = {
     "faq": {
       "eyebrow": "常见问题",
       "title": "大家联系我之前最常问的事。",
-      "intro": "告诉我你的日期、差点和你想要什么样的一天。我会在 24 小时内亲自回复。",
+      "intro": "告诉我您的日期、差点和您想要什么样的一天。我会在 24 小时内亲自回复。",
       "items": [
         {
           "q": "一定要打得很好吗？",
-          "a": "不需要。这个体验会根据你的水平来调整。无论是初学者还是低差点球员，都能从中得到真正的帮助。"
+          "a": "不需要。这个体验会根据您的水平来调整。无论是初学者还是低差点球员，都能从中得到真正的帮助。"
         },
         {
           "q": "可以在马略卡上高尔夫课或做球场指导吗？",
@@ -1903,7 +1903,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "finalCta": {
       "eyebrow": "准备好真正打懂马略卡了吗？",
       "title": "联系我，剩下的我来安排。",
-      "body": "告诉我你的日期、差点和你希望这一天达到什么效果。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。",
+      "body": "告诉我您的日期、差点和您希望这一天达到什么效果。也可以直接加我微信：andygriffiths1。我会在 24 小时内亲自回复。",
       "primaryCta": "预订这一天",
       "secondaryCta": "微信联系"
     },

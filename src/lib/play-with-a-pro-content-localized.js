@@ -195,7 +195,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "eyebrow": "Planificación de viajes",
-          "name": "Planifica tu viaje",
+          "name": "Planifique su viaje",
           "price": "Precio bajo demanda",
           "note": "Se aplica una comisión de gestión del 5% solo a los green fees. Se confirma después de su primer evento.",
           "features": [
@@ -1613,7 +1613,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "eyebrow": "行程规划",
-          "name": "规划你的行程",
+          "name": "规划您的行程",
           "price": "按需询价",
           "note": "管理费仅按果岭费的 5% 收取。首次沟通后确认。",
           "features": [
@@ -1644,7 +1644,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         {
           "q": "你们提供普通的高尔夫课程吗？比如半小时那种？",
-          "a": "不提供。我不开设短时、单独的练习场课程。我所有的内容都围绕Play With A Pro展开：一整天与你一起打18洞，教学融入真实的比赛场景，而不是孤立的练习。这比普通半小时课程投入更大，但效果往往更持久，因为你是在真实球场、真实压力下运用所学，而不是在练习垫上。"
+          "a": "不提供。我不开设短时、单独的练习场课程。我所有的内容都围绕Play With A Pro展开：一整天与您一起打18洞，教学融入真实的比赛场景，而不是孤立的练习。这比普通半小时课程投入更大，但效果往往更持久，因为您是在真实球场、真实压力下运用所学，而不是在练习垫上。"
         },
         {
           "q": "您接受完全零基础的初学者吗？",

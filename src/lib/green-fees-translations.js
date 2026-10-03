@@ -137,7 +137,7 @@ export const GREEN_FEES_T = {
     },
     disclaimer: {
       title: 'Planungspreise:',
-      text: 'Hochsaison ist normalerweise März–Mai und September–November; Nebensaison ist normalerweise Hochsommer und Hochwinter. Variable Rate bedeutet, dass der Platz seinen Preis je nach Nachfrage, Abschlagzeit, Verfügbarkeit und wie früh Sie buchen, ändert, ähnlich wie Flüge oder Hotels. Bestätigen Sie den genauen Tarif für Ihr Datum vor der Buchung.',
+      text: 'Hochsaison ist normalerweise März–Mai und September–November; Nebensaison ist normalerweise Hochsommer und Hochwinter. Variable Rate bedeutet, dass der Platz seinen Preis je nach Nachfrage, Startzeit, Verfügbarkeit und wie früh Sie buchen, ändert, ähnlich wie Flüge oder Hotels. Bestätigen Sie den genauen Tarif für Ihr Datum vor der Buchung.',
     },
     filters: {
       area: 'Region',
@@ -234,7 +234,7 @@ export const GREEN_FEES_T = {
         link: 'Versuchen Sie den Platz-Auswähler →',
       },
       contact: {
-        title: 'Möchten Sie, dass ich die Abschlagzeiten regle?',
+        title: 'Möchten Sie, dass ich die Startzeiten regle?',
         desc: 'Bestätigte Tarife ändern sich je nach Saison und Tag. Sagen Sie mir Ihre Termine und Gruppe, und ich bekomme Ihnen echte Preise und buche es um Ihren Golf — oder schreiben Sie mir einfach eine Nachricht, wenn das einfacher ist.',
         enquire: 'Anfragen',
         whatsapp: 'Schreiben Sie mir auf WhatsApp',
@@ -247,7 +247,7 @@ export const GREEN_FEES_T = {
     hero: {
       eyebrow: 'Herramienta gratuita',
       title: 'Comparar campos de golf en Mallorca',
-      sub: 'Los 24 campos de la isla: green fees, costes de carrito, reglas de caminar, acceso, dificultad y límites de handicap, más mi veredicto de una línea sobre cada uno, como profesional avanzado de la PGA británica con base en Mallorca. Explora la guía completa o compara hasta cinco campos uno al lado del otro.',
+      sub: 'Los 24 campos de la isla: green fees, costes de carrito, reglas de caminar, acceso, dificultad y límites de handicap, más mi veredicto de una línea sobre cada uno, como profesional avanzado de la PGA británica con base en Mallorca. Explore la guía completa o compare hasta cinco campos uno al lado del otro.',
       updated: 'Última actualización: Julio 2026',
     },
     modebar: {
@@ -256,7 +256,7 @@ export const GREEN_FEES_T = {
     },
     disclaimer: {
       title: 'Precios de planificación:',
-      text: 'La temporada alta es generalmente marzo–mayo y septiembre–noviembre; la temporada baja es generalmente pleno verano e invierno. Tarifa variable significa que el campo cambia su precio según la demanda, la hora de salida, la disponibilidad y lo pronto que reserves, como los vuelos u hoteles. Confirma la tarifa exacta para tu fecha antes de reservar.',
+      text: 'La temporada alta es generalmente marzo–mayo y septiembre–noviembre; la temporada baja es generalmente pleno verano e invierno. Tarifa variable significa que el campo cambia su precio según la demanda, la hora de salida, la disponibilidad y lo pronto que reserve, como los vuelos u hoteles. Confirme la tarifa exacta para su fecha antes de reservar.',
     },
     filters: {
       area: 'Zona',
@@ -307,10 +307,10 @@ export const GREEN_FEES_T = {
       holes9NotSeasonal: '9 hoyos, sin variación estacional',
     },
     compare: {
-      intro: 'Elige dos a cinco campos para una comparación directa. En teléfono, desplázate horizontalmente; las etiquetas de fila permanecen visibles.',
+      intro: 'Elija dos a cinco campos para una comparación directa. En teléfono, desplácese horizontalmente; las etiquetas de fila permanecen visibles.',
       course: 'Campo',
       optional: '(opcional)',
-      selectCourse: 'Selecciona un campo…',
+      selectCourse: 'Seleccione un campo…',
       addCourse: 'Añadir campo',
       location: 'Ubicación',
       par: 'Par',
@@ -344,19 +344,19 @@ export const GREEN_FEES_T = {
     },
     footer: {
       text: 'Los rangos de green fees son solo indicativos y se actualizan periódicamente desde las listas de precios de los campos. Para tarifas confirmadas, disponibilidad de salidas o ayuda para planificar un viaje de golf completo,',
-      linkText: 'ponte en contacto conmigo',
+      linkText: 'póngase en contacto conmigo',
     },
     cta: {
       courseSelector: {
-        title: '¿No estás seguro de qué campo es adecuado para tu grupo?',
-        desc: 'Responde algunas preguntas rápidas y obtén una lista que se ajuste a tu handicap, presupuesto y planes de viaje.',
-        link: 'Prueba el selector de campos →',
+        title: '¿No está seguro de qué campo es adecuado para su grupo?',
+        desc: 'Responda algunas preguntas rápidas y obtenga una lista que se ajuste a su handicap, presupuesto y planes de viaje.',
+        link: 'Pruebe el selector de campos →',
       },
       contact: {
-        title: '¿Quieres que organice yo los horarios de salida?',
-        desc: 'Las tarifas confirmadas cambian según la temporada y el día. Dime tus fechas y grupo y te obtendré precios reales e lo reservaré alrededor de tu golf — o simplemente envíame un mensaje si es más fácil.',
+        title: '¿Quiere que organice yo los horarios de salida?',
+        desc: 'Las tarifas confirmadas cambian según la temporada y el día. Dígame sus fechas y grupo y le conseguiré precios reales y lo reservaré alrededor de su golf — o simplemente envíeme un mensaje si es más fácil.',
         enquire: 'Consultar',
-        whatsapp: 'Escríbeme por WhatsApp',
+        whatsapp: 'Escríbame por WhatsApp',
       },
     },
   },
@@ -494,7 +494,7 @@ export const GREEN_FEES_T = {
     },
     disclaimer: {
       title: 'Planningsprijzen:',
-      text: 'Hoogtijdseizoen is meestal maart–mei en september–november; laagtijdseizoen is meestal midden zomer en midden winter. Variabel tarief betekent dat de baan zijn prijs wijzigt op basis van vraag, starttijd, beschikbaarheid en hoe vroeg je boekt, net als vlucht of hotels. Bevestig het exacte tarief voor je datum voordat je boekt.',
+      text: 'Hoogtijdseizoen is meestal maart–mei en september–november; laagtijdseizoen is meestal midden zomer en midden winter. Variabel tarief betekent dat de baan zijn prijs wijzigt op basis van vraag, starttijd, beschikbaarheid en hoe vroeg u boekt, net als vlucht of hotels. Bevestig het exacte tarief voor uw datum voordat u boekt.',
     },
     filters: {
       area: 'Gebied',
@@ -586,13 +586,13 @@ export const GREEN_FEES_T = {
     },
     cta: {
       courseSelector: {
-        title: 'Weet je niet zeker welke baan bij je groep past?',
-        desc: 'Beantwoord een paar snelle vragen en krijg een lijst die aansluit bij je handicap, budget en reisplannen.',
+        title: 'Weet u niet zeker welke baan bij uw groep past?',
+        desc: 'Beantwoord een paar snelle vragen en krijg een lijst die aansluit bij uw handicap, budget en reisplannen.',
         link: 'Probeer de baankiezer →',
       },
       contact: {
-        title: 'Wil je dat ik de starttijden regel?',
-        desc: 'Bevestigde tarieven veranderen per seizoen en dag. Zeg me je data en groep en ik zal je echte prijzen krijgen en het rond je golf boeken — of stuur me gewoon een bericht als dat makkelijker is.',
+        title: 'Wilt u dat ik de starttijden regel?',
+        desc: 'Bevestigde tarieven veranderen per seizoen en dag. Laat mij uw data en groep weten en ik zorg voor echte prijzen en boek het rond uw golf — of stuur mij gewoon een bericht als dat makkelijker is.',
         enquire: 'Informatie aanvragen',
         whatsapp: 'Stuur mij een bericht via WhatsApp',
       },

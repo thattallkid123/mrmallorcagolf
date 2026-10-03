@@ -595,7 +595,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "De handicaplimiet is 28 voor heren en 36 voor dames, gecontroleerd bij het boeken. Buggy's zijn verplicht voor 14:00 uur; lopen is daarna toegestaan. Een dagelijkse federatielicentie (€3) geldt als u geen lid bent van de Spaanse federatie. Deze baan is geschikt voor zelfverzekerde golfers die een strategische uitdaging meer waarderen dan lengte: afstandscontrole vanaf de tee telt meer dan kracht. Wat beginners verrast: hoewel het grootste deel van de ronde hoog in de bergen speelt, is het zeezicht over Camp de Mar alleen zichtbaar vanaf hole 2, bouw uw verwachtingen dus niet op rond het waterzicht. Lokale tip: neem een GPS of baanplanner mee, want verschillende aanspelen zijn deels blind."
+        "text": "De handicaplimiet is 28 voor heren en 36 voor dames, gecontroleerd bij het boeken. Buggy's zijn verplicht voor 14:00 uur; lopen is daarna toegestaan. Een dagelijkse federatielicentie (€3) geldt als je geen lid bent van de Spaanse federatie. Deze baan is geschikt voor zelfverzekerde golfers die een strategische uitdaging meer waarderen dan lengte: afstandscontrole vanaf de tee telt meer dan kracht. Wat beginners verrast: hoewel het grootste deel van de ronde hoog in de bergen speelt, is het zeezicht over Camp de Mar alleen zichtbaar vanaf hole 2, bouw je verwachtingen dus niet op rond het waterzicht. Lokale tip: neem een GPS of baanplanner mee, want verschillende aanspelen zijn deels blind."
       },
       {
         "text": "Oordeel"

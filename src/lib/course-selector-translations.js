@@ -238,7 +238,7 @@ export const COURSE_SELECTOR_T = {
         },
       },
       budget: {
-        title: 'Wie denken Sie über Green Fees?',
+        title: 'Wie denken Sie über Greenfees?',
         sub: 'Angezeigte Preise sind Saisonhinweise, die beim Buchen bestätigt werden.',
         options: {
           value: { label: 'Bestes Preis-Leistungs-Verhältnis', desc: 'Guter Golf zu vernünftigen Preisen' },
@@ -282,7 +282,7 @@ export const COURSE_SELECTOR_T = {
       intro: (style, area) => {
         const styleMap = { luxury: 'Luxus', scenic: 'landschaftliche', relaxed: 'entspannte', serious: 'ernsthaften Golf', family: 'familienfreundliche', 'bucket-list': 'Bucket-List' }
         const areaStr = area === 'flexible' ? 'überall auf der Insel' : `der ${area === 'North' ? 'Nord- und Ostregion' : area === 'Southwest' ? 'Südwestregion' : area === 'Palma' ? 'Region Palma' : 'Südregion'}`
-        return `Plätze passend zu Ihrem Spiel, einer ${styleMap[style] || ''}-Reise und ${areaStr}. Die Auswahl enthält nur öffentlich buchbare Plätze; für Anfänger ist kein Handicap-Ausweis nötig. Green Fees sind Saisonhinweise. Ich bestätige genaue Preise beim Buchen.`
+        return `Plätze passend zu Ihrem Spiel, einer ${styleMap[style] || ''}-Reise und ${areaStr}. Die Auswahl enthält nur öffentlich buchbare Plätze; für Anfänger ist kein Handicap-Ausweis nötig. Greenfees sind Saisonhinweise. Ich bestätige genaue Preise beim Buchen.`
       },
       ranks: ['#1 Empfehlung', '#2 Empfehlung', '#3 Empfehlung'],
       bestFor: 'Am besten für:',
@@ -290,7 +290,7 @@ export const COURSE_SELECTOR_T = {
       enquire: 'Bei mir anfragen',
       readReview: 'Bewertung lesen →',
       compare: 'Vergleichen',
-      stats: { difficulty: 'Schwierigkeit', location: 'Lage', greenFee: 'Green Fee*', walkRide: 'Laufen oder Buggy' },
+      stats: { difficulty: 'Schwierigkeit', location: 'Lage', greenFee: 'Greenfee*', walkRide: 'Laufen oder Buggy' },
       handicapNote: '⚠ Für diesen Platz ist ein Handicap-Ausweis erforderlich. Ich bestätige die Berechtigung beim Anfragen.',
       feesNote: '*Saisonale Hinweise aus dem Platzführer. Einige Plätze nutzen dynamische Preisgestaltung. Genaue Preise werden beim Buchen bestätigt.',
       compareSection: { eyebrow: 'Direktvergleich', bestPlayer: 'Geeignet für' },
@@ -300,7 +300,7 @@ export const COURSE_SELECTOR_T = {
       email: {
         eyebrow: 'Ihre Auswahl sichern',
         h2: 'Senden Sie sich Ihre Platzauswahl per E-Mail',
-        p: 'Wir schicken Ihnen die vollständige Übersicht: Schwierigkeit, Green Fees, Begehbarkeit und meine Anmerkung zu jedem Platz.',
+        p: 'Wir schicken Ihnen die vollständige Übersicht: Schwierigkeit, Greenfees, Begehbarkeit und meine Anmerkung zu jedem Platz.',
         button: 'Meine Auswahl senden',
         sending: 'Wird gesendet…',
         sent: 'Erledigt. Ihre Auswahl ist unterwegs.',
@@ -310,7 +310,7 @@ export const COURSE_SELECTOR_T = {
         pdfSent: 'PDF ist unterwegs.',
         error: 'Das hat nicht funktioniert. Überprüfen Sie die Adresse und versuchen Sie es erneut.',
         spam: 'Kein Spam. Ich lese jede Nachricht und antworte persönlich.',
-        planText: 'Bereit, es zu realisieren? Ich bestätige Abschlagzeiten, organisiere Zugang zu Mitgliederplätzen und plane die Reise rund um Ihr Golf.',
+        planText: 'Bereit, es zu realisieren? Ich bestätige Startzeiten, organisiere Zugang zu Mitgliederplätzen und plane die Reise rund um Ihr Golf.',
         planCta: 'Mich um Reiseplanung bitten',
         pwapCta: 'Play With A Pro entdecken',
         whatsappCta: 'Mir auf WhatsApp schreiben',
@@ -340,7 +340,7 @@ export const COURSE_SELECTOR_T = {
       },
       location: 'nahe Ihrer Unterkunft',
       budget: {
-        value: 'zu einem fairen Green Fee',
+        value: 'zu einem fairen Greenfee',
         mid: 'zu einem vernünftigen Mittelklasse-Preis',
         premium: 'im Premium-Preissegment',
       },
@@ -522,12 +522,12 @@ export const COURSE_SELECTOR_T = {
   es: {
     hero: {
       eyebrow: 'Herramienta gratuita',
-      h1: 'Encuentra tu campo en Mallorca',
-      sub: 'Cinco preguntas. Una selección adaptada a tu hándicap, presupuesto y lo que buscas en una vuelta.',
+      h1: 'Encuentre su campo en Mallorca',
+      sub: 'Cinco preguntas. Una selección adaptada a su hándicap, presupuesto y lo que busca en una vuelta.',
     },
     intro: {
-      h2: '¿Qué campos se adaptan a tu juego?',
-      p: 'Un campo de campeonato exigente y una vuelta de vacaciones relajada están disponibles en está isla. Elegir el incorrecto desperdicia un día de tu viaje. Tarda menos de un minuto.',
+      h2: '¿Qué campos se adaptan a su juego?',
+      p: 'Un campo de campeonato exigente y una vuelta de vacaciones relajada están disponibles en esta isla. Elegir el incorrecto desperdicia un día de su viaje. Tarda menos de un minuto.',
       cta: 'Iniciar el selector de campos',
     },
     progress: {
@@ -538,7 +538,7 @@ export const COURSE_SELECTOR_T = {
     },
     questions: {
       ability: {
-        title: '¿Cómo describirías tu golf?',
+        title: '¿Cómo describiría su golf?',
         sub: 'Las respuestas honestas dan mejores recomendaciones.',
         options: {
           beginner: { label: 'Principiante', desc: 'Nuevo en el juego o juego raramente' },
@@ -560,7 +560,7 @@ export const COURSE_SELECTOR_T = {
       },
       style: {
         title: '¿Qué tipo de viaje es este?',
-        sub: 'Elige lo que más importa.',
+        sub: 'Elija lo que más importa.',
         options: {
           luxury: { label: 'Lujo', desc: 'Lo mejor de todo' },
           scenic: { label: 'Paisajístico', desc: 'Las vistas primero, el score después' },
@@ -571,7 +571,7 @@ export const COURSE_SELECTOR_T = {
         },
       },
       area: {
-        title: '¿Dónde te alojas o esperas alojarte?',
+        title: '¿Dónde se aloja o espera alojarse?',
         sub: '',
         options: {
           Southwest: { label: 'Suroeste', desc: 'Santa Ponsa, Portals, Camp de Mar' },
@@ -582,7 +582,7 @@ export const COURSE_SELECTOR_T = {
         },
       },
       budget: {
-        title: '¿Cómo piensas en las green fees?',
+        title: '¿Cómo piensa en las green fees?',
         sub: 'Las tarifas mostradas son indicaciones de temporada, confirmadas al reservar.',
         options: {
           value: { label: 'Mejor relación calidad-precio', desc: 'Buen golf a un precio razonable' },
@@ -591,7 +591,7 @@ export const COURSE_SELECTOR_T = {
         },
       },
       difficulty: {
-        title: '¿Qué tan difíciles quieres los campos?',
+        title: '¿Qué dificultad prefiere en los campos?',
         sub: '',
         options: {
           forgiving: { label: 'Permisivo', desc: 'Calles anchas, mantener la bola en juego' },
@@ -610,23 +610,23 @@ export const COURSE_SELECTOR_T = {
       },
       extras: {
         title: '¿Hay algo más que debería organizar?',
-        sub: 'Elige todo lo que aplique. Esto da forma al plan de viaje.',
+        sub: 'Elija todo lo que aplique. Esto da forma al plan de viaje.',
         options: {
           coaching: { label: 'Clases conmigo', desc: 'Lecciones o una vuelta Play With A Pro' },
-          dining: { label: 'Restaurantes', desc: 'Dónde comer cerca de tus campos' },
-          hotel: { label: 'Hotel', desc: 'Alojamiento adaptado a tus campos' },
+          dining: { label: 'Restaurantes', desc: 'Dónde comer cerca de sus campos' },
+          hotel: { label: 'Hotel', desc: 'Alojamiento adaptado a sus campos' },
           transport: { label: 'Transporte', desc: 'Traslados y logística' },
           nongolf: { label: 'Días sin golf', desc: 'Playas, pueblos, Tramuntana' },
         },
       },
     },
     results: {
-      eyebrow: 'Tus coincidencias',
-      h2: 'Tu selección de campos',
+      eyebrow: 'Sus coincidencias',
+      h2: 'Su selección de campos',
       intro: (style, area) => {
         const styleMap = { luxury: 'de lujo', scenic: 'paisajístico', relaxed: 'relajado', serious: 'de golf serio', family: 'familiar', 'bucket-list': 'de lista de deseos' }
         const areaStr = area === 'flexible' ? 'en cualquier lugar de la isla' : `la zona ${area === 'North' ? 'norte y este' : area === 'Southwest' ? 'suroeste' : area === 'Palma' ? 'de Palma' : 'sur'}`
-        return `Campos adaptados a tu juego, un viaje ${styleMap[style] || ''} y ${areaStr}. La selección solo muestra campos con reserva pública; para principiantes no exige certificado de hándicap. Las green fees son orientativas y yo confirmo la tarifa al reservar.`
+        return `Campos adaptados a su juego, un viaje ${styleMap[style] || ''} y ${areaStr}. La selección solo muestra campos con reserva pública; para principiantes no exige certificado de hándicap. Las green fees son orientativas y yo confirmo la tarifa al reservar.`
       },
       ranks: ['#1 Coincidencia', '#2 Coincidencia', '#3 Coincidencia'],
       bestFor: 'Ideal para:',
@@ -642,32 +642,32 @@ export const COURSE_SELECTOR_T = {
       hotelCta: 'Encontrar hoteles cerca de estos campos',
       coachingCta: 'Descubrir Play With A Pro conmigo',
       email: {
-        eyebrow: 'Guarda tu selección',
-        h2: 'Recibe tu selección por correo',
-        p: 'Te enviaremos el desglose completo: dificultad, green fees, transitabilidad y mi nota sobre cada uno.',
+        eyebrow: 'Guarde su selección',
+        h2: 'Reciba su selección por correo',
+        p: 'Le enviaremos el desglose completo: dificultad, green fees, transitabilidad y mi nota sobre cada uno.',
         button: 'Enviarme mi selección',
         sending: 'Enviando…',
-        sent: 'Listo. Tu selección está en camino.',
+        sent: 'Listo. Su selección está en camino.',
         pdfLabel: 'También gratis: el PDF de comparación de campos.',
         pdfDesc: 'Los 24 campos de la isla, comparados uno al lado del otro por green fee, dificultad y para quién es cada uno.',
         pdfButton: 'Descargar PDF gratis',
         pdfSent: 'PDF en camino.',
         error: 'No funcionó. Comprueba la dirección y vuelve a intentarlo.',
         spam: 'Sin spam. Leo cada mensaje y respondo personalmente.',
-        planText: '¿Listo para hacerlo realidad? Confirmo los horarios de salida, organizo acceso a campos de socios y construyo el viaje alrededor de tu golf.',
+        planText: '¿Listo para hacerlo realidad? Confirmo los horarios de salida, organizo acceso a campos de socios y construyo el viaje alrededor de su golf.',
         planCta: 'Pedirme que planifique este viaje',
         pwapCta: 'Descubrir Play With A Pro',
-        whatsappCta: 'Escríbeme por WhatsApp',
+        whatsappCta: 'Escríbame por WhatsApp',
         allCourses: 'Todas las guías de campos',
       },
       adjust: 'Ajustar mis respuestas',
       restart: 'Empezar de nuevo',
-      compare1: 'Elige un campo más para comparar',
+      compare1: 'Elija un campo más para comparar',
       compare2: 'Dos campos seleccionados. Ver tabla arriba',
     },
     matchLines: {
       prefix: ['Mejor coincidencia', 'Segunda opción', 'Vale la pena'],
-      fallback: 'se adapta a tu juego y estilo de viaje.',
+      fallback: 'se adapta a su juego y estilo de viaje.',
       ability: {
         beginner: 'el diseño se adapta a alguien nuevo en el juego',
         casual: 'bien adaptado al golfista ocasional',
@@ -678,11 +678,11 @@ export const COURSE_SELECTOR_T = {
         luxury: 'encaja con el tono de un viaje de lujo',
         scenic: 'ofrece vistas espectaculares',
         relaxed: 'se juega a un ritmo relajado',
-        serious: 'plantea preguntas reales a tu juego',
+        serious: 'plantea preguntas reales a su juego',
         family: 'funciona para un grupo mixto',
         'bucket-list': 'es uno de los nombres famosos de la isla',
       },
-      location: 'cerca de tu base',
+      location: 'cerca de su base',
       budget: {
         value: 'a una green fee justa',
         mid: 'a un precio razonable de gama media',
@@ -694,12 +694,12 @@ export const COURSE_SELECTOR_T = {
   nl: {
     hero: {
       eyebrow: 'Gratis tool',
-      h1: 'Vind jouw Mallorca golfbaan',
-      sub: 'Vijf vragen. Een selectie afgestemd op jouw handicap, budget en verwachtingen.',
+      h1: 'Vind uw Mallorca golfbaan',
+      sub: 'Vijf vragen. Een selectie afgestemd op uw handicap, budget en verwachtingen.',
     },
     intro: {
-      h2: 'Welke banen passen bij jouw spel?',
-      p: 'Een zwaar kampioenschap en een ontspannen vakantieronde zijn allebei te vinden op dit eiland. De verkeerde keuze kost een dag van je reis. Dit duurt minder dan een minuut.',
+      h2: 'Welke banen passen bij uw spel?',
+      p: 'Een zwaar kampioenschap en een ontspannen vakantieronde zijn allebei te vinden op dit eiland. De verkeerde keuze kost een dag van uw reis. Dit duurt minder dan een minuut.',
       cta: 'Baankiezer starten',
     },
     progress: {
@@ -710,7 +710,7 @@ export const COURSE_SELECTOR_T = {
     },
     questions: {
       ability: {
-        title: 'Hoe zou je jouw golf omschrijven?',
+        title: 'Hoe zou u uw golf omschrijven?',
         sub: 'Eerlijke antwoorden geven betere aanbevelingen.',
         options: {
           beginner: { label: 'Beginner', desc: 'Nieuw in het spel of speel zelden' },
@@ -743,7 +743,7 @@ export const COURSE_SELECTOR_T = {
         },
       },
       area: {
-        title: 'Waar verblijf je of hoop je te verblijven?',
+        title: 'Waar verblijft u of hoopt u te verblijven?',
         sub: '',
         options: {
           Southwest: { label: 'Zuidwest', desc: 'Santa Ponsa, Portals, Camp de Mar' },
@@ -754,7 +754,7 @@ export const COURSE_SELECTOR_T = {
         },
       },
       budget: {
-        title: 'Hoe denk je over greenfees?',
+        title: 'Hoe denkt u over greenfees?',
         sub: 'Getoonde tarieven zijn seizoensaanduidingen, bevestigd bij boeking.',
         options: {
           value: { label: 'Beste prijs-kwaliteit', desc: 'Goed golf voor een redelijke prijs' },
@@ -763,7 +763,7 @@ export const COURSE_SELECTOR_T = {
         },
       },
       difficulty: {
-        title: 'Hoe moeilijk wil je de banen?',
+        title: 'Hoe moeilijk wilt u de banen?',
         sub: '',
         options: {
           forgiving: { label: 'Vergevingsgezind', desc: 'Brede fairways, bal in het spel houden' },
@@ -785,20 +785,20 @@ export const COURSE_SELECTOR_T = {
         sub: 'Kies alles wat van toepassing is. Dit bepaalt het reisplan.',
         options: {
           coaching: { label: 'Coaching met mij', desc: 'Lessen of een Play With A Pro ronde' },
-          dining: { label: 'Restaurants', desc: 'Waar te eten bij jouw banen' },
-          hotel: { label: 'Hotel', desc: 'Verblijf passend bij jouw banen' },
+          dining: { label: 'Restaurants', desc: 'Waar te eten bij uw banen' },
+          hotel: { label: 'Hotel', desc: 'Verblijf passend bij uw banen' },
           transport: { label: 'Transport', desc: 'Transfers en logistiek' },
           nongolf: { label: 'Niet-golfdagen', desc: 'Stranden, steden, Tramuntana' },
         },
       },
     },
     results: {
-      eyebrow: 'Jouw matches',
-      h2: 'Jouw selectie van banen',
+      eyebrow: 'Uw matches',
+      h2: 'Uw selectie van banen',
       intro: (style, area) => {
         const styleMap = { luxury: 'luxe', scenic: 'schilderachtige', relaxed: 'ontspannen', serious: 'serieuze golf', family: 'gezinsvriendelijke', 'bucket-list': 'bucket list' }
         const areaStr = area === 'flexible' ? 'overal op het eiland' : `de ${area === 'North' ? 'noord- en oostregio' : area === 'Southwest' ? 'zuidwestregio' : area === 'Palma' ? 'regio Palma' : 'zuidregio'}`
-        return `Banen afgestemd op jouw spel, een ${styleMap[style] || ''} reis en ${areaStr}. De selectie bevat alleen openbaar te boeken banen; beginners hebben voor deze resultaten geen handicapcertificaat nodig. Greenfees zijn seizoensaanduidingen. Ik bevestig de tarieven bij boeking.`
+        return `Banen afgestemd op uw spel, een ${styleMap[style] || ''} reis en ${areaStr}. De selectie bevat alleen openbaar te boeken banen; beginners hebben voor deze resultaten geen handicapcertificaat nodig. Greenfees zijn seizoensaanduidingen. Ik bevestig de tarieven bij boeking.`
       },
       ranks: ['#1 Match', '#2 Match', '#3 Match'],
       bestFor: 'Ideaal voor:',
@@ -810,23 +810,23 @@ export const COURSE_SELECTOR_T = {
       handicapNote: '⚠ Voor deze baan is een handicapcertificaat vereist. Ik kan de geschiktheid bevestigen bij aanvraag.',
       feesNote: '*Seizoensaanduidingen uit de baangids. Verschillende banen gebruiken dynamische prijzen. Exacte tarieven worden bevestigd bij boeking.',
       compareSection: { eyebrow: 'Naast elkaar', bestPlayer: 'Ideaal spelerstype' },
-      extrasHeader: 'Je vroeg ook naar',
+      extrasHeader: 'U vroeg ook naar',
       hotelCta: 'Hotels bij deze banen vinden',
       coachingCta: 'Play With A Pro met mij ontdekken',
       email: {
-        eyebrow: 'Bewaar jouw selectie',
-        h2: 'Mail jezelf deze selectie',
-        p: "We sturen je de volledige uitsplitsing: moeilijkheid, greenfees, begaanbaarheid te voet en mijn opmerking over elke baan.",
+        eyebrow: 'Bewaar uw selectie',
+        h2: 'Mail uzelf deze selectie',
+        p: "We sturen u de volledige uitsplitsing: moeilijkheid, greenfees, begaanbaarheid te voet en mijn opmerking over elke baan.",
         button: 'Stuur mijn selectie',
         sending: 'Verzenden…',
-        sent: 'Klaar. Jouw selectie is onderweg.',
+        sent: 'Klaar. Uw selectie is onderweg.',
         pdfLabel: 'Ook gratis: de baan-vergelijkings-PDF.',
         pdfDesc: 'Alle 24 banen van het eiland, naast elkaar beoordeeld op greenfee, moeilijkheid en voor wie ze geschikt zijn.',
         pdfButton: 'Gratis PDF downloaden',
         pdfSent: 'PDF is onderweg.',
         error: 'Dat ging niet door. Controleer het adres en probeer opnieuw.',
         spam: 'Geen spam. Ik lees elk bericht en antwoord persoonlijk.',
-        planText: 'Klaar om het te realiseren? Ik bevestig afslagtijden, regel toegang tot ledenclubs en bouw de reis rondom jouw golf.',
+        planText: 'Klaar om het te realiseren? Ik bevestig afslagtijden, regel toegang tot ledenclubs en bouw de reis rondom uw golf.',
         planCta: 'Vraag mij deze reis te plannen',
         pwapCta: 'Play With A Pro ontdekken',
         whatsappCta: 'Stuur mij een WhatsApp',
@@ -839,7 +839,7 @@ export const COURSE_SELECTOR_T = {
     },
     matchLines: {
       prefix: ['Sterkste match', 'Tweede keuze', 'De moeite waard'],
-      fallback: 'past bij jouw spel en reisstijl.',
+      fallback: 'past bij uw spel en reisstijl.',
       ability: {
         beginner: 'het ontwerp is geschikt voor beginners',
         casual: 'goed passend voor recreatiegolfers',
@@ -850,11 +850,11 @@ export const COURSE_SELECTOR_T = {
         luxury: 'past bij een luxe reis',
         scenic: 'biedt prachtig uitzicht',
         relaxed: 'speelt in een ontspannen tempo',
-        serious: 'stelt echte vragen aan jouw spel',
+        serious: 'stelt echte vragen aan uw spel',
         family: 'werkt voor een gemengde groep',
         'bucket-list': 'is een van de beroemde namen op het eiland',
       },
-      location: 'dicht bij jouw basis',
+      location: 'dicht bij uw basis',
       budget: {
         value: 'tegen een eerlijke greenfee',
         mid: 'voor een redelijke middenprijsprijs',
