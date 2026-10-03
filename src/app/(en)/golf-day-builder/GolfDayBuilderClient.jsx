@@ -22,6 +22,17 @@ import {
   lunchFor,
   whyCourseChosen,
 } from '../../../lib/golf-day-builder-logic'
+import {
+  localizeQuestions,
+  localizeCourse,
+  getRestaurants,
+  getAddons,
+  planText,
+  fmt,
+  localizeFact,
+  builtLine,
+  applyPhrases,
+} from '../../../lib/golf-day-builder-localize'
 
 const WA_DAY_HREF = `https://wa.me/34624466702?text=${encodeURIComponent('Hi Andy, I built a golf day on your website and would like to make it real.')}`
 
@@ -57,8 +68,8 @@ const COURSE_IMGS = {
   'reserva-rotana':   '/images/courses/rotana.webp',
 }
 
-function displayCourseName(name) {
-  return getCourseShortName(name)
+function displayCourseName(name, data) {
+  return applyPhrases(getCourseShortName(name), data?.phrases)
 }
 
 function getCanonicalCourseInfo(course) {
@@ -66,12 +77,13 @@ function getCanonicalCourseInfo(course) {
 }
 
 function getCourseHoleCount(course) {
-  return getCanonicalCourseInfo(course)?.holeCount || (course.note?.includes('9 holes') ? 9 : 18)
+  return getCanonicalCourseInfo(course)?.holeCount || (course.isNine || course.note?.includes('9 holes') ? 9 : 18)
 }
 
-function getCourseFacts(course) {
+function getCourseFacts(course, data) {
   const canonical = getCanonicalCourseInfo(course)
   if (!canonical) return course.facts
+  const F = data?.factLabels
 
   const facts = []
   let primaryFact = `Par ${canonical.par}`
@@ -94,7 +106,7 @@ function getCourseFacts(course) {
     facts.push(`${canonical.facts.designer}${canonical.facts.opened ? ` · ${canonical.facts.opened}` : ''}`)
   }
 
-  if (canonical.facts?.practiceFacilities) {
+  if (canonical.facts?.practiceFacilities && !data) {
     facts.push(canonical.facts.practiceFacilities)
   }
 
@@ -102,34 +114,35 @@ function getCourseFacts(course) {
     if (!facts.includes(fact)) facts.push(fact)
   }
 
-  return facts.slice(0, 3)
+  return facts.map(f => localizeFact(f, F, data?.phrases)).slice(0, 3)
 }
 
-function buildItineraries(answers) {
+function buildItineraries(answers, data) {
   const region = answers.region === 'unbooked' ? 'southwest' : answers.region
   const ranked = scoreAllCourses(answers)
   // Use top 3 distinct courses. One per plan
-  const top3 = ranked.slice(0, 3)
-  const sw = START_WINDOWS[answers.start]
+  const top3 = ranked.slice(0, 3).map(r => ({ ...r, c: localizeCourse(r.c, data) }))
+  const P = planText(data)
+  const restaurants = getRestaurants(RESTAURANTS, data)
+  const addons = getAddons(ADDONS, data)
+  const sw = { ...START_WINDOWS[answers.start], tee: data?.teeWindows?.[answers.start] || START_WINDOWS[answers.start].tee }
   const wantsCoaching = answers.addons?.includes('coaching')
   const transport = answers.transport === 'yes'
   const addonKeys = (answers.addons || []).filter(a => !['lunch','coaching'].includes(a))
-  const firstAddon = addonKeys.length ? ADDONS[addonKeys[0]] : null
-  const secondAddon = addonKeys.length > 1 ? ADDONS[addonKeys[1]] : null
+  const firstAddon = addonKeys.length ? addons[addonKeys[0]] : null
+  const secondAddon = addonKeys.length > 1 ? addons[addonKeys[1]] : null
 
   function makePlan(picked, planName, planTagline, planStepsFn, planWhy) {
     const course = picked.c
     const drive = picked.drive
     const holeCount = getCourseHoleCount(course)
     const isNineHole = holeCount === 9
-    const holesLabel = isNineHole ? `9 holes at ${displayCourseName(course.name)}` : `18 holes at ${displayCourseName(course.name)}`
-    const holeNote = isNineHole ? ` Note: ${course.note}` : ''
-    const travelDesc = transport
-      ? `A private transfer collects you from your accommodation. Around ${drive} minutes to the course (estimate).`
-      : `Self-drive to the course, around ${drive} minutes (estimate). Parking notes come with the confirmed plan.`
+    const holesLabel = fmt(isNineHole ? P.title.holes9 : P.title.holes18, { course: displayCourseName(course.name, data) })
+    const holeNote = isNineHole ? fmt(P.desc.holeNote, { note: course.note }) : ''
+    const travelDesc = fmt(transport ? P.desc.transfer : P.desc.selfDrive, { drive })
     const warmup = wantsCoaching
-      ? { time:'Before the round', title:'Coaching warm-up with me', desc:'A 45-minute session with me: range warm-up, short game, and a plan for the holes ahead.' }
-      : { time:'Before the round', title:'Warm-up and coffee', desc:'Range balls, the putting green, and a coffee on the terrace. Arrive 45 minutes before your tee time.' }
+      ? { time: P.time.beforeRound, title: P.title.warmupCoach, desc: P.desc.warmupCoach }
+      : { time: P.time.beforeRound, title: P.title.warmupCoffee, desc: P.desc.warmupCoffee }
     return {
       name: planName,
       tagline: planTagline,
@@ -143,48 +156,46 @@ function buildItineraries(answers) {
 
   const itins = [
     makePlan(p1,
-      'Efficient golf day',
-      'The round is the day. Played well, back with the afternoon free.',
+      P.names.efficient,
+      P.taglines.efficient,
       ({ holesLabel, holeNote, travelDesc, warmup }) => [
-        { time:`${sw.depart} (estimate)`, title:'Depart your accommodation', desc:travelDesc },
-        { time:'On arrival', title:warmup.title, desc:warmup.desc },
-        { time:`Tee time window ${sw.tee} (estimate)`, title:holesLabel, desc:p1.c.blurb + holeNote },
-        { time:'After the round', title:'A drink at the clubhouse', desc:'A relaxed drink on the terrace while the scorecards are disputed.' },
-        { time:'Early afternoon', title:'Return', desc:`Back at your base with the rest of the day untouched. Around ${p1.drive} minutes (estimate).` },
+        { time: fmt(P.time.depart, { depart: sw.depart }), title: P.title.depart, desc: travelDesc },
+        { time: P.time.onArrival, title: warmup.title, desc: warmup.desc },
+        { time: fmt(P.time.teeWindow, { tee: sw.tee }), title: holesLabel, desc: p1.c.blurb + holeNote },
+        { time: P.time.afterRound, title: P.title.clubhouse, desc: P.desc.clubhouse },
+        { time: P.time.earlyAfternoon, title: P.title.return, desc: fmt(P.desc.returnEfficient, { drive: p1.drive }) },
       ],
-      (course) => `The golf comes first and the timings stay tight. ${whyCourseChosen(course, answers)} Nothing in the schedule you did not ask for.`
+      (course) => fmt(P.why.efficient, { course: whyCourseChosen(course, answers, P.whyCourse) })
     ),
     makePlan(p2,
-      'Golf & long lunch',
-      'A serious round followed by a serious table.',
+      P.names.lunch,
+      P.taglines.lunch,
       ({ holesLabel, holeNote, travelDesc, warmup }) => [
-        { time:`${sw.depart} (estimate)`, title:'An unhurried departure', desc:travelDesc },
-        { time:'On arrival', title:warmup.title, desc:warmup.desc },
-        { time:`Tee time window ${sw.tee} (estimate)`, title:holesLabel, desc:p2.c.blurb + holeNote },
-        { time:'After the round', title:'A long Mallorcan lunch', desc:`${lunchFor(region, answers, true)}. The table is booked and timed so you walk off the last hole and sit straight down.` },
-        { time:'Late afternoon', title:'A relaxed return', desc:`A slow drive back, around ${p2.drive} minutes (estimate).` },
+        { time: fmt(P.time.depart, { depart: sw.depart }), title: P.title.unhurried, desc: travelDesc },
+        { time: P.time.onArrival, title: warmup.title, desc: warmup.desc },
+        { time: fmt(P.time.teeWindow, { tee: sw.tee }), title: holesLabel, desc: p2.c.blurb + holeNote },
+        { time: P.time.afterRound, title: P.title.longLunch, desc: fmt(P.desc.longLunch, { lunch: lunchFor(region, answers, true, restaurants) }) },
+        { time: P.time.lateAfternoon, title: P.title.relaxedReturn, desc: fmt(P.desc.relaxedReturn, { drive: p2.drive }) },
       ],
-      (course) => `Good golf and good food are the two things this island does most reliably. ${whyCourseChosen(course, answers)} This day gives proper time to both.`
+      (course) => fmt(P.why.lunch, { course: whyCourseChosen(course, answers, P.whyCourse) })
     ),
     makePlan(p3,
-      'Full experience',
-      'The golf is the centrepiece. The island fills the rest of the schedule.',
+      P.names.experience,
+      P.taglines.experience,
       ({ holesLabel, holeNote, travelDesc, warmup }) => {
         const steps = [
-          { time:`${sw.depart} (estimate)`, title:'Depart your accommodation', desc:travelDesc },
-          { time:'On arrival', title:warmup.title, desc:warmup.desc },
-          { time:`Tee time window ${sw.tee} (estimate)`, title:holesLabel, desc:p3.c.blurb + holeNote },
-          { time:'Lunch', title:'Lunch, booked and timed', desc:`${lunchFor(region, answers, answers.dayStyle === 'luxury')}. I book the right table for your group.` },
+          { time: fmt(P.time.depart, { depart: sw.depart }), title: P.title.depart, desc: travelDesc },
+          { time: P.time.onArrival, title: warmup.title, desc: warmup.desc },
+          { time: fmt(P.time.teeWindow, { tee: sw.tee }), title: holesLabel, desc: p3.c.blurb + holeNote },
+          { time: P.time.lunch, title: P.title.lunchBooked, desc: fmt(P.desc.lunchBooked, { lunch: lunchFor(region, answers, answers.dayStyle === 'luxury', restaurants) }) },
         ]
-        if (firstAddon) steps.push({ time:'Afternoon', title:firstAddon.title, desc:firstAddon.desc })
-        else steps.push({ time:'Afternoon', title:'Beach or village hour', desc:'A nearby cove or a historic town, chosen by region when the plan is confirmed.' })
-        if (secondAddon) steps.push({ time:'Late afternoon', title:secondAddon.title, desc:secondAddon.desc })
-        steps.push({ time:'Evening', title:'Return in the last of the light', desc:`Back to your base, around ${p3.drive} minutes (estimate), with a full Mallorca day behind you.` })
+        if (firstAddon) steps.push({ time: P.time.afternoon, title: firstAddon.title, desc: firstAddon.desc })
+        else steps.push({ time: P.time.afternoon, title: P.title.beachOrVillage, desc: P.desc.beachOrVillage })
+        if (secondAddon) steps.push({ time: P.time.lateAfternoon, title: secondAddon.title, desc: secondAddon.desc })
+        steps.push({ time: P.time.evening, title: P.title.lastLight, desc: fmt(P.desc.lastLight, { drive: p3.drive }) })
         return steps
       },
-      (course) => answers.addons?.length
-        ? `${whyCourseChosen(course, answers)} The add-ons you chose deserve real time in the schedule, so this plan builds the full day around them.`
-        : `${whyCourseChosen(course, answers)} This plan adds the island around the round without crowding it.`
+      (course) => fmt(answers.addons?.length ? P.why.experienceAddons : P.why.experiencePlain, { course: whyCourseChosen(course, answers, P.whyCourse) })
     ),
   ]
 
@@ -194,7 +205,7 @@ function buildItineraries(answers) {
 const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
 const TRIP_PLANNER_PDF_URL = '/downloads/trip-planner.pdf'
 
-export default function GolfDayBuilderClient({ lang = 'en' }) {
+export default function GolfDayBuilderClient({ lang = 'en', localData = null }) {
   const t = getGolfDayBuilderT(lang)
   const [phase, setPhase] = useState('quiz') // 'intro' | 'quiz' | 'results'
   const [stepIdx, setStepIdx] = useState(0)
@@ -216,7 +227,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
     window.scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + window.scrollY - 70), behavior: 'smooth' })
   }
 
-  const q = QUESTIONS[stepIdx]
+  const q = localizeQuestions(QUESTIONS, localData)[stepIdx]
 
   function startBuilder() {
     setPhase('quiz')
@@ -237,7 +248,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
           setStepIdx(s => s + 1)
           scrollToTop()
         } else {
-          const built = buildItineraries(newAnswers)
+          const built = buildItineraries(newAnswers, localData)
           setItins(built)
           setActiveItin(0)
           setPhase('results')
@@ -275,7 +286,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
   }
 
   function generateItineraries() {
-    const built = buildItineraries(answers)
+    const built = buildItineraries(answers, localData)
     setItins(built)
     setActiveItin(0)
     setPhase('results')
@@ -327,7 +338,7 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: mlBody.toString(),
     }).catch(() => {})
-    const builtItins = itins || buildItineraries(answers)
+    const builtItins = buildItineraries(answers, null)
     const itineraries = builtItins.map(it => ({
       name: it.name,
       courseName: displayCourseName(it.course.name),
@@ -349,13 +360,14 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
     }
   }
 
+  const H = planText(localData).handles
   const andyHandles = itins ? [
-    'Tee time secured at the right rate',
-    'Restaurant table booked and timed around your round',
-    answers.transport === 'yes' ? 'Door-to-door transport arranged' : 'Route and parking guidance for your drive',
-    'Buggies, clubs, and rentals organised if needed',
-    answers.addons?.includes('coaching') ? 'Your coaching session with me confirmed' : 'Optional warm-up or on-course coaching with me',
-    'One WhatsApp contact for the whole day',
+    H.tee,
+    H.table,
+    answers.transport === 'yes' ? H.transportYes : H.transportNo,
+    H.buggies,
+    answers.addons?.includes('coaching') ? H.coachingYes : H.coachingNo,
+    H.whatsapp,
   ] : []
 
   return (
@@ -528,9 +540,9 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
               <span className="eyebrow">{t.results.eyebrow}</span>
               <h2>{t.results.title}</h2>
               <p>
-                {t.results.builtFor} {GROUP_LABEL[answers.group]} {t.results.staying} {REGION_LABEL[answers.region]}.
+                {builtLine(answers, localData, `${t.results.builtFor} ${GROUP_LABEL[answers.group]} ${t.results.staying} ${REGION_LABEL[answers.region]}.`)}
                 <span style={{ display:'block', marginTop:'6px', fontSize:'.82rem', color:'#8A7F74' }}>
-                  {t.results.courseChosen} {whyCourseChosen(itins[0].course, answers)}
+                  {t.results.courseChosen} {whyCourseChosen(itins[0].course, answers, planText(localData).whyCourse)}
                 </span>
               </p>
             </div>
@@ -555,11 +567,11 @@ export default function GolfDayBuilderClient({ lang = 'en' }) {
               <div key={i} className={`gdb-itin${activeItin === i ? ' active' : ''}`}>
                 <div className="gdb-course-card" style={COURSE_IMGS[it.course.id] ? { backgroundImage: `linear-gradient(165deg, rgba(45,74,62,0.88) 0%, rgba(26,25,22,0.92) 120%), url(${COURSE_IMGS[it.course.id]})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}>
                   <span className="tag">{it.name}</span>
-                  <h3>{displayCourseName(it.course.name)}</h3>
+                  <h3>{displayCourseName(it.course.name, localData)}</h3>
                   <div className="where">{t.timeline.aroundMin} {it.drive} {t.timeline.minFrom}</div>
                   <p className="blurb">{it.tagline}</p>
                   <div className="gdb-pills">
-                    {getCourseFacts(it.course).map(f => <span key={f} className="gdb-pill">{f}</span>)}
+                    {getCourseFacts(it.course, localData).map(f => <span key={f} className="gdb-pill">{f}</span>)}
                     <span className="gdb-pill">{t.startWindows[answers.start]}</span>
                   </div>
                 </div>

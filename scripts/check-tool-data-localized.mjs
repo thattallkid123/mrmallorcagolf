@@ -3,8 +3,10 @@
 // overlay under src/lib/tool-data/. The overlays fall back to English silently, so
 // without this a new hotel or course would ship half-translated.
 //
-// Covers: hotel recommender (every hotel id + every question option) and the
-// course selector (every course id). Add each tool here when it gets an overlay.
+// Covers: hotel recommender (every hotel id + every question option), the course
+// selector (every course id) and the golf day builder (courses, questions,
+// restaurants, add-ons and every plan template key). Add each tool here when it
+// gets an overlay.
 
 import fs from 'node:fs'
 import path from 'node:path'
@@ -53,10 +55,41 @@ for (const lang of ['de', 'es', 'fr', 'nl', 'sv']) {
   for (const k of ['fee', 'diff', 'facts', 'access', 'members', 'compare']) if (!data.labels?.[k]) failures.push(`course-selector.${lang}: labels.${k} missing`)
 }
 
+// ---- golf day builder
+const dayLogic = await import(pathToFileURL(path.join(lib, 'golf-day-builder-logic.js')).href)
+const dayLocalize = await import(pathToFileURL(path.join(lib, 'golf-day-builder-localize.js')).href)
+const missingKeys = (en, tr, prefix, lang) => {
+  for (const k of Object.keys(en)) {
+    if (!(k in (tr || {}))) { failures.push(`golf-day-builder.${lang}: ${prefix}${k} missing`); continue }
+    if (en[k] && typeof en[k] === 'object') missingKeys(en[k], tr[k], `${prefix}${k}.`, lang)
+    else if (typeof en[k] === 'string' && !String(tr[k]).trim()) failures.push(`golf-day-builder.${lang}: ${prefix}${k} is empty`)
+  }
+}
+for (const lang of ['de', 'es', 'fr', 'nl', 'sv', 'zh']) {
+  const data = await load(`tool-data/golf-day-builder.${lang}.js`)
+  for (const c of dayLogic.COURSES) {
+    const t = data.courses?.[c.id]
+    if (!t) { failures.push(`golf-day-builder.${lang}: no entry for course "${c.id}"`); continue }
+    if (!t.blurb) failures.push(`golf-day-builder.${lang}: "${c.id}" missing blurb`)
+    if (!Array.isArray(t.facts) || t.facts.length !== c.facts.length) failures.push(`golf-day-builder.${lang}: "${c.id}" facts do not match the English count`)
+    if (c.note && !t.note) failures.push(`golf-day-builder.${lang}: "${c.id}" missing note`)
+  }
+  for (const q of dayLogic.QUESTIONS) {
+    const t = data.questions?.[q.key]
+    if (!t || !t.title) { failures.push(`golf-day-builder.${lang}: no question "${q.key}"`); continue }
+    if (!data.sections?.[q.key]) failures.push(`golf-day-builder.${lang}: no section name for "${q.key}"`)
+    for (const o of q.opts) if (!t.opts?.[o.v]?.[0]) failures.push(`golf-day-builder.${lang}: question "${q.key}" option "${o.v}" missing`)
+  }
+  missingKeys(dayLogic.RESTAURANTS, data.restaurants, 'restaurants.', lang)
+  for (const k of Object.keys(dayLogic.ADDONS)) if (!data.addons?.[k]?.[1]) failures.push(`golf-day-builder.${lang}: add-on "${k}" missing`)
+  missingKeys(dayLocalize.EN_PLAN, data.plan, 'plan.', lang)
+  for (const k of ['stepFmt', 'teeWindows', 'factLabels', 'built']) if (!data[k]) failures.push(`golf-day-builder.${lang}: ${k} missing`)
+}
+
 if (failures.length) {
   console.error('Tool data localisation check failed:')
   for (const f of failures.slice(0, 40)) console.error('  - ' + f)
   if (failures.length > 40) console.error(`  ...and ${failures.length - 40} more`)
   process.exit(1)
 }
-console.log(`Tool data localisation check passed — ${hotelLogic.HOTELS.length} hotels x 6 languages, ${courseIds.length} courses x 5 languages.`)
+console.log(`Tool data localisation check passed — ${hotelLogic.HOTELS.length} hotels x 6 languages, ${courseIds.length} selector courses x 5 languages, ${dayLogic.COURSES.length} day-builder courses x 6 languages.`)

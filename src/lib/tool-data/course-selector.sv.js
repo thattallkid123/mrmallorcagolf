@@ -240,6 +240,19 @@ const data = {
    "access": "Tillgång",
    "designer": "Arkitekt"
   }
+ },
+ "phrases": {
+  "1993 redesign/expansion to 18 holes": "omdesign/utbyggnad till 18 hål 1993",
+  "Historic established course (1964+)": "Historisk, etablerad bana (från 1964)",
+  "(original 9 holes)": "(de ursprungliga 9 hålen)",
+  "(18-hole expansion)": "(utbyggnad till 18 hål)",
+  "(original)": "(original)",
+  "(2000 redesign)": "(omdesign 2000)",
+  "Opened in 1995": "Öppnad 1995",
+  "redesign completed in 2006": "omdesign klar 2006",
+  "9 holes; extended to 18 in 1995": "9 hål; utökad till 18 1995",
+  "renovated €10M": "renoverad för 10 milj. €",
+  "(9 holes)": "(9 hål)"
  }
 }
 

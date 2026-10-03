@@ -240,6 +240,19 @@ const data = {
    "access": "Toegang",
    "designer": "Architect"
   }
+ },
+ "phrases": {
+  "1993 redesign/expansion to 18 holes": "herontwerp/uitbreiding naar 18 holes in 1993",
+  "Historic established course (1964+)": "Historische, gevestigde baan (vanaf 1964)",
+  "(original 9 holes)": "(oorspronkelijke 9 holes)",
+  "(18-hole expansion)": "(uitbreiding naar 18 holes)",
+  "(original)": "(origineel)",
+  "(2000 redesign)": "(herontwerp 2000)",
+  "Opened in 1995": "Geopend in 1995",
+  "redesign completed in 2006": "herontwerp voltooid in 2006",
+  "9 holes; extended to 18 in 1995": "9 holes; in 1995 uitgebreid naar 18",
+  "renovated €10M": "gerenoveerd voor € 10 mln",
+  "(9 holes)": "(9 holes)"
  }
 }
 

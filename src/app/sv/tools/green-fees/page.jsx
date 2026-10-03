@@ -2,7 +2,8 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools/green-fees', 'sv', {
 
-  title: 'Mallorca green fee comparison',
+  title: 'Jämför greenfees på Mallorca',
+  description: 'Jämför greenfees för alla 24 golfbanor på Mallorca efter säsong, handicap och golfbilsalternativ.',
   robots: { index: true, follow: true },
 })
 

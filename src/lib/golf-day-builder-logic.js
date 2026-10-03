@@ -1,3 +1,6 @@
+import { EN_PLAN } from './golf-day-builder-localize.js'
+const EN_WHY = EN_PLAN.whyCourse
+
 export const COURSES = [
   { id:"son-gual", name:"Golf Son Gual", region:"palma", tags:["famous","challenging","serious","luxury"], facts:["Par 72 · Championship","Thomas Himmel, 2007"], blurb:"The strongest conditioning on the island and a layout that tests every part of your game. Wide enough to enjoy, demanding enough to remember. Note that a handicap certificate is required.", level:"confident+", driveMins:{southwest:30, palma:15, north:45, east:40, south:20} },
   { id:"alcanada", name:"Club de Golf Alcanada", region:"north", tags:["famous","scenic","luxury","serious"], facts:["Par 72 · Robert Trent Jones Jr.","58 bunkers"], blurb:"Sea views from most of the round and a Robert Trent Jones Jr. design that holds its own without them. The 58 bunkers are positioned to be in play, so expect to use your sand wedge.", level:"casual+", driveMins:{southwest:60, palma:45, north:10, east:40, south:60} },
@@ -154,25 +157,26 @@ export function scoreAllCourses(answers) {
   }).sort((a, b) => b.s - a.s)
 }
 
-export function lunchFor(region, answers, premium) {
-  const r = RESTAURANTS[region] || RESTAURANTS.palma
+export function lunchFor(region, answers, premium, restaurants = RESTAURANTS) {
+  const r = restaurants[region] || restaurants.palma
   if (answers.addons?.includes('village')) return r.village
   if (answers.dayStyle === 'luxury' || answers.dayStyle === 'food') return r.michelin || r.premium
   return premium ? r.premium : r.casual
 }
 
-export function whyCourseChosen(course, answers) {
+export function whyCourseChosen(course, answers, text = EN_WHY) {
   const reasons = []
   if (course.tags.includes(answers.courseType)) {
-    const p = { famous:"it is one of the island's best-known courses", scenic:"it has the views you asked for", challenging:"it is the most demanding course within reach of your base", forgiving:"the layout is wide and forgiving", close:"it is the closest quality course to where you are staying" }[answers.courseType]
+    const p = text.courseType[answers.courseType]
     if (p) reasons.push(p)
   }
   if (course.tags.includes(answers.dayStyle) && answers.dayStyle !== answers.courseType) {
-    const p = { serious:"it delivers a serious round", relaxed:"the pace and layout suit a relaxed day", luxury:"it is the premium option in your area", family:"it works for all abilities in the group", scenic:"the setting is the highlight", food:"it sits close to the best restaurant options in the area" }[answers.dayStyle]
+    const p = text.dayStyle[answers.dayStyle]
     if (p) reasons.push(p)
   }
   const lvl = LEVEL_RANK[answers.level]
-  if (lvl >= LEVEL_REQ[course.level]) reasons.push("it is well-matched to your game")
-  if (!reasons.length) return "The best available match for your answers in this area."
-  return reasons.map((r, i) => i === 0 ? r.charAt(0).toUpperCase() + r.slice(1) : r).join(", ") + "."
+  if (lvl >= LEVEL_REQ[course.level]) reasons.push(text.matched)
+  if (!reasons.length) return text.fallback
+  const first = text.capitalise === false ? reasons[0] : reasons[0].charAt(0).toUpperCase() + reasons[0].slice(1)
+  return [first, ...reasons.slice(1)].join(text.separator) + text.end
 }

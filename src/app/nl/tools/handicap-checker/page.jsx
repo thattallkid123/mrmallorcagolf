@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/handicap-checker', 'nl', {
 
   title: 'Kan ik het spelen?',
-  description: 'Voer je handicap in en zie onmiddellijk welke Mallorca-banen je kunt reserveren.',
+  description: 'Voer uw handicap in en zie meteen welke Mallorca-banen u kunt reserveren.',
   robots: { index: true, follow: true },
 })
 

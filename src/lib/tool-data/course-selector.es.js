@@ -240,6 +240,19 @@ const data = {
    "access": "Acceso",
    "designer": "Diseñador"
   }
+ },
+ "phrases": {
+  "1993 redesign/expansion to 18 holes": "rediseño y ampliación a 18 hoyos en 1993",
+  "Historic established course (1964+)": "Campo histórico y consolidado (desde 1964)",
+  "(original 9 holes)": "(los 9 hoyos originales)",
+  "(18-hole expansion)": "(ampliación a 18 hoyos)",
+  "(original)": "(original)",
+  "(2000 redesign)": "(rediseño de 2000)",
+  "Opened in 1995": "Inaugurado en 1995",
+  "redesign completed in 2006": "rediseño completado en 2006",
+  "9 holes; extended to 18 in 1995": "9 hoyos; ampliado a 18 en 1995",
+  "renovated €10M": "renovado por 10 M€",
+  "(9 holes)": "(9 hoyos)"
  }
 }
 

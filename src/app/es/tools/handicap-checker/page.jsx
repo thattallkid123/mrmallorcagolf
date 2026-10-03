@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/handicap-checker', 'es', {
 
   title: '¿Puedo jugar?',
-  description: 'Introduce tu handicap y ve cuáles de los campos de Mallorca puedes reservar.',
+  description: 'Introduzca su hándicap y vea qué campos de Mallorca puede reservar.',
   robots: { index: true, follow: true },
 })
 

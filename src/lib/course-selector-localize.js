@@ -7,6 +7,11 @@
 // are translated here from their known English forms rather than edited at the
 // source. An unknown form is left as English instead of being guessed.
 
+function applyPhrases(text, phrases) {
+  if (!text || !phrases) return text
+  return Object.entries(phrases).reduce((t, [en, tr]) => t.replace(en, tr), text)
+}
+
 function localizeFee(fee, L) {
   if (!fee || !L) return fee
   if (fee === 'Included for hotel guests · Not available to the public') return L.hotelOnly
@@ -44,5 +49,6 @@ export function localizeCourse(course, data) {
     greenFee: localizeFee(course.greenFee, L.fee),
     accessRequirement: localizeAccessRequirement(course.accessRequirement, L.access),
     accessType: localizeAccessType(course.accessType, L.access),
+    designer: applyPhrases(course.designer, data.phrases),
   }
 }

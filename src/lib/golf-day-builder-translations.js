@@ -191,7 +191,7 @@ export const GOLF_DAY_BUILDER_T = {
       },
     },
     timeline: {
-      aroundMin: 'Alrededor',
+      aroundMin: 'Unos',
       minFrom: 'min desde su base (estimación)',
       step: 'Paso',
     },
@@ -262,7 +262,7 @@ export const GOLF_DAY_BUILDER_T = {
       tabs: {
         efficient: 'Journée de golf efficace',
         lunch: 'Golf et long déjeuner',
-        expérience: 'Expérience complète',
+        experience: 'Expérience complète',
       },
     },
     timeline: {

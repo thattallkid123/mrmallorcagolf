@@ -2,8 +2,8 @@ export const dynamic = 'force-dynamic'
 
 export const metadata = buildPageMetadata('/tools/green-fees', 'zh', {
 
-  title: 'Mallorca green fee comparison',
-  description: '马略卡果岭费比较',
+  title: '马略卡果岭费比较',
+  description: '比较马略卡全部 24 座球场的果岭费，按季节、差点和球车选项筛选。',
   robots: { index: true, follow: true },
 })
 
