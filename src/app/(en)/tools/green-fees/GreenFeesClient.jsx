@@ -11,6 +11,7 @@ import { getCourseShortName, findCourseByName, getCourseReviewSlug } from '../..
 import { buildLocalePath, getGuidePath } from '../../../../lib/site'
 import { getScorecardByCourseName } from '../../../../lib/scorecard-data'
 import { getGreenFeesT } from '../../../../lib/green-fees-translations'
+import { localizeGreenFeesCourse } from '@lib/green-fees-localize'
 
 const WA_MESSAGE = 'Hi Andy, I was comparing green fees on your site and I’d like help planning a Mallorca golf trip and tee times.'
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
@@ -112,7 +113,7 @@ function areaDisplay(area, t) {
   return key ? t.filters[key] : area
 }
 
-const COURSES = BASE_COURSES.map((course) => {
+const ALL_COURSES = BASE_COURSES.map((course) => {
   const access = getCourseAccessByName(course.name)
   const pricing = getCoursePricingByName(course.name)
   const logistics = getCourseLogisticsByName(course.name)
@@ -161,14 +162,17 @@ function walkableLabel(c, t) {
   return { text: c.walkingNote || t.walkingLabels.restricted, cls: 'gold' }
 }
 
-function handicapDisplay(c, t) {
+function handicapDisplay(c, t, L) {
   if (!c.handicapRequired) return { text: t.handicapLabels.noHandicapLimit, certificate: false, cls: '' }
   const sameLimit = Number.isFinite(c.handicapMen) && c.handicapMen === c.handicapWomen
   let text = t.handicapLabels.handicapRequired
-  if (sameLimit) text = `Max ${c.handicapMen}`
-  else if (Number.isFinite(c.handicapMen) && Number.isFinite(c.handicapWomen)) text = `M ${c.handicapMen} / W ${c.handicapWomen}`
-  else if (Number.isFinite(c.handicapMen)) text = `M ${c.handicapMen}`
-  else if (Number.isFinite(c.handicapWomen)) text = `W ${c.handicapWomen}`
+  const max = L?.max || 'Max'
+  const men = L?.men || 'M'
+  const women = L?.women || 'W'
+  if (sameLimit) text = `${max} ${c.handicapMen}`
+  else if (Number.isFinite(c.handicapMen) && Number.isFinite(c.handicapWomen)) text = `${men} ${c.handicapMen} / ${women} ${c.handicapWomen}`
+  else if (Number.isFinite(c.handicapMen)) text = `${men} ${c.handicapMen}`
+  else if (Number.isFinite(c.handicapWomen)) text = `${women} ${c.handicapWomen}`
   return { text, certificate: c.certRequired, cls: '' }
 }
 
@@ -212,8 +216,9 @@ function FeeCell({ course, season, t }) {
   return <>{fee.text}{fee.note && <span className="approx">{fee.note}</span>}</>
 }
 
-export default function GreenFeesClient({ lang = 'en' }) {
+export default function GreenFeesClient({ lang = 'en', localData = null }) {
   const t = getGreenFeesT(lang)
+  const COURSES = ALL_COURSES.map((c) => localizeGreenFeesCourse(c, localData))
   const [area, setArea] = useState('')
   const [budget, setBudget] = useState('')
   const [walking, setWalking] = useState('')
@@ -260,7 +265,7 @@ export default function GreenFeesClient({ lang = 'en' }) {
     { label: t.table.access, get: (c) => accessDisplay(c, t).text },
     { label: t.table.buggy, get: (c) => buggyDisplay(c.buggy, t) },
     { label: t.table.walkable, get: (c) => walkableLabel(c, t).text },
-    { label: t.table.handicapLimit, get: (c) => `${handicapDisplay(c, t).text}${handicapDisplay(c, t).certificate ? '*' : ''}` },
+    { label: t.table.handicapLimit, get: (c) => `${handicapDisplay(c, t, localData?.labels).text}${handicapDisplay(c, t, localData?.labels).certificate ? '*' : ''}` },
     { label: t.table.andyVerdic, get: (c) => c.verdict || "-" },
     { label: t.compare.courseGuide, get: (c) => c.reviewSlug ? <Link className="gf-guide" href={getGuidePath(c.reviewSlug, lang)}>{t.table.viewFullGuide}</Link> : <span style={{ color: 'var(--muted)' }}>{t.table.guideComing}</span> },
   ]
@@ -476,7 +481,7 @@ export default function GreenFeesClient({ lang = 'en' }) {
             <tbody>
               {rows.map((c) => {
                 const w = walkableLabel(c, t)
-                const h = handicapDisplay(c, t)
+                const h = handicapDisplay(c, t, localData?.labels)
                 const a = accessDisplay(c, t)
                 return (
                   <tr key={c.name}>
@@ -499,7 +504,7 @@ export default function GreenFeesClient({ lang = 'en' }) {
         <div className="gf-cards">
           {rows.map((c) => {
             const w = walkableLabel(c, t)
-            const h = handicapDisplay(c, t)
+            const h = handicapDisplay(c, t, localData?.labels)
             const a = accessDisplay(c, t)
             return (
               <div className="gf-card" key={c.name}>

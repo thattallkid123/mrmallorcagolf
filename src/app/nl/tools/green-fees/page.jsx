@@ -10,12 +10,13 @@ export const metadata = buildPageMetadata('/tools/green-fees', 'nl', {
 import { buildPageMetadata } from '../../../../lib/page-metadata'
 import PageLayout from '../../../../components/PageLayout'
 import GreenFeesClient from '../../../(en)/tools/green-fees/GreenFeesClient'
+import feesData from '../../../../lib/tool-data/green-fees.nl'
 
 export default function Page() {
   const lang = 'nl'
   return (
     <PageLayout lang={lang.toLowerCase()} navTransparent={false} showWhatsAppButton={false}>
-      <GreenFeesClient lang={lang.toLowerCase()} />
+      <GreenFeesClient lang={lang.toLowerCase()} localData={feesData} />
     </PageLayout>
   )
 }

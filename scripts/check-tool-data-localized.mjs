@@ -4,7 +4,7 @@
 // without this a new hotel or course would ship half-translated.
 //
 // Covers: hotel recommender (every hotel id + every question option), the course
-// selector (every course id) and the golf day builder (courses, questions,
+// selector (every course id), green fees (every verdict) and the golf day builder (courses, questions,
 // restaurants, add-ons and every plan template key). Add each tool here when it
 // gets an overlay.
 
@@ -86,10 +86,22 @@ for (const lang of ['de', 'es', 'fr', 'nl', 'sv', 'zh']) {
   for (const k of ['stepFmt', 'teeWindows', 'factLabels', 'built']) if (!data[k]) failures.push(`golf-day-builder.${lang}: ${k} missing`)
 }
 
+// ---- green fees (rows live in the client component, so read the names from source)
+const feesSrc = fs.readFileSync(path.join(root, 'src', 'app', '(en)', 'tools', 'green-fees', 'GreenFeesClient.jsx'), 'utf8')
+const feesStart = feesSrc.indexOf('const BASE_COURSES = [')
+const feesEnd = feesSrc.indexOf('const ALL_COURSES')
+const feeNames = [...feesSrc.slice(feesStart, feesEnd).matchAll(/\{ name: (?:'([^']+)'|"([^"]+)"),/g)].map((m) => m[1] || m[2])
+if (feeNames.length < 20) failures.push(`green-fees: only found ${feeNames.length} course names in the client, the parser needs updating`)
+for (const lang of ['de', 'es', 'fr', 'nl', 'sv', 'zh']) {
+  const data = await load(`tool-data/green-fees.${lang}.js`)
+  for (const name of feeNames) if (!data.verdicts?.[name]) failures.push(`green-fees.${lang}: no verdict for "${name}"`)
+  for (const k of ['max', 'men', 'women', 'hotel', 'incl']) if (!data.labels?.[k]) failures.push(`green-fees.${lang}: labels.${k} missing`)
+}
+
 if (failures.length) {
   console.error('Tool data localisation check failed:')
   for (const f of failures.slice(0, 40)) console.error('  - ' + f)
   if (failures.length > 40) console.error(`  ...and ${failures.length - 40} more`)
   process.exit(1)
 }
-console.log(`Tool data localisation check passed — ${hotelLogic.HOTELS.length} hotels x 6 languages, ${courseIds.length} selector courses x 5 languages, ${dayLogic.COURSES.length} day-builder courses x 6 languages.`)
+console.log(`Tool data localisation check passed — ${hotelLogic.HOTELS.length} hotels x 6 languages, ${courseIds.length} selector courses x 5 languages, ${dayLogic.COURSES.length} day-builder courses x 6 languages, ${feeNames.length} green-fees verdicts x 6 languages.`)
