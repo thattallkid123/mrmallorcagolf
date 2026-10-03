@@ -1,6 +1,9 @@
 #!/bin/sh
 set -eu
 
+echo "Regenerating hotel reference from source..."
+node scripts/export-hotel-reference.mjs
+
 echo "Running content guardrails before push..."
 npm run check:content
 
