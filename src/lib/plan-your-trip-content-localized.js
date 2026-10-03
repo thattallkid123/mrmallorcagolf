@@ -13,14 +13,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "heroBody": "Elijo y reservo los campos y tee times para su grupo, y organizo buggies y palos antes de su llegada. Ustedes juegan sin que yo tenga que acompañarlos. Si quieren pasar un día conmigo en el campo, pueden añadir Play With A Pro.",
     "options": {
       "basicLabel": "Gratis",
-      "basicTitle": "Buscador gratuito de campos",
+      "basicTitle": "Buscador de campos",
       "basicNote": "Herramienta en la web. Solo una lista corta.",
       "proLabel": "Personal",
-      "proTitle": "Planificación de viaje de pago",
-      "proNote": "El servicio real: ruta, reservas, base y extras.",
+      "proTitle": "Planificación del viaje",
+      "proNote": "Campos, ruta y reservas resueltos.",
       "itineraryLabel": "Viaje de ejemplo",
-      "itineraryTitle": "Vea una semana real de 5 días",
-      "itineraryNote": "Una ruta con base en Palma y la razón del orden."
+      "itineraryTitle": "Una semana real de 5 días",
+      "itineraryNote": "Una ruta desde Palma y su lógica."
     },
     "free": {
       "eyebrow": "Básico",
@@ -32,7 +32,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "title": "Déjeme planificarlo bien",
       "body": "Envíeme sus fechas, el tamaño del grupo y lo que busca. Le recomendaré los campos adecuados para su juego, le diré dónde alojarse y por qué, organizaré la ruta y el número de vueltas, reservaré los tee times, gestionaré buggies y alquiler de palos, y propondré opciones para comer. Precio bajo consulta.",
       "includes": [
-        "Recomendaciones de campos adaptadas a su juego, grupo y presupuesto",
+        "Campos recomendados según su juego, grupo y presupuesto",
         "Dónde alojarse y por qué",
         "Ruta del viaje y número de vueltas",
         "Tee times reservados y confirmados",
@@ -44,10 +44,21 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "feeNote": "La gestión cuesta el 5 % de los green fees y extras acordados. Le mostraré el coste total y las condiciones antes de confirmar.",
       "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, handicap, zona de hotel y los campos que ya tenga pensados.",
       "cta": "Consultar sobre la planificación",
-      "bookingOnly": {
-        "title": "¿Solo necesita reservar el golf?",
-        "body": "Envíeme fechas, número de jugadores, handicap y zona del hotel. Recomendaré campos adecuados, comprobaré los tee times y le daré un presupuesto claro antes de reservar. Su grupo juega por su cuenta; no tengo que acompañarlos.",
-        "cta": "Consultar reservas de tee times"
+      "workingModes": {
+        "title": "Elija el nivel de ayuda que necesita.",
+        "body": "Algunos grupos solo necesitan que se comprueben y reserven los tee times. Otros necesitan el plan de golf completo, construido según los vuelos, la zona del hotel, el handicap y el presupuesto.",
+        "items": [
+          {
+            "title": "Solo tee times",
+            "body": "Envíeme fechas, número de jugadores, handicap y zona del hotel. Le sugeriré campos adecuados, comprobaré la disponibilidad y le confirmaré el precio antes de reservar nada.",
+            "cta": "Reservar tee times"
+          },
+          {
+            "title": "Plan de golf completo",
+            "body": "Para grupos que juegan varias rondas, ordeno los campos de la mejor manera, planifico los trayectos y me ocupo de buggies, alquileres y sugerencias para comer.",
+            "cta": "Planificar mi viaje"
+          }
+        ]
       },
       "possibilities": {
         "title": "Un viaje de golf puede ser sencillo o algo más completo.",
@@ -114,10 +125,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "basicNote": "Vor Ort, nur als Shortlist.",
       "proLabel": "Persönlich",
       "proTitle": "Bezahlte Reiseplanung",
-      "proNote": "Der eigentliche Service: Route, Buchungen, Basis und Extras.",
+      "proNote": "Plätze, Route und Buchungen erledigt.",
       "itineraryLabel": "Beispielreise",
-      "itineraryTitle": "Eine echte Woche mit 5 Tagen",
-      "itineraryNote": "Eine Route mit Standort Palma und der Grund dahinter."
+      "itineraryTitle": "Echte 5-Tage-Woche",
+      "itineraryNote": "Eine Palma-Route und der Gedanke dahinter."
     },
     "free": {
       "eyebrow": "Basis",
@@ -141,10 +152,21 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "feeNote": "Die Verwaltungsgebühr beträgt 5 % der Greenfees und vereinbarten Extras. Gesamtkosten und Buchungsbedingungen erhalten Sie vor der Zusage.",
       "sendPrompt": "Am besten senden: Daten, Gruppengröße, Handicap, Hotelregion und alle Plätze, die schon auf Ihrer Liste stehen.",
       "cta": "Reiseplanung anfragen",
-      "bookingOnly": {
-        "title": "Sie brauchen nur gebuchte Startzeiten?",
-        "body": "Senden Sie mir Reisedaten, Gruppengröße, Handicap und Hotelregion. Ich empfehle passende Plätze, prüfe verfügbare Startzeiten und sende ein klares Angebot, bevor ich buche. Ihre Gruppe spielt ohne mich.",
-        "cta": "Startzeiten anfragen"
+      "workingModes": {
+        "title": "Wählen Sie, wie viel Unterstützung Sie brauchen.",
+        "body": "Manche Gruppen brauchen nur geprüfte und gebuchte Startzeiten. Andere brauchen den vollständigen Golfplan rund um Flüge, Hotelregion, Handicap-Bereich und Budget.",
+        "items": [
+          {
+            "title": "Nur Startzeiten",
+            "body": "Senden Sie mir Daten, Gruppengröße, Handicap-Bereich und Hotelregion. Ich schlage passende Plätze vor, prüfe die Verfügbarkeit und bestätige den Preis, bevor etwas gebucht wird.",
+            "cta": "Startzeiten buchen"
+          },
+          {
+            "title": "Kompletter Golfplan",
+            "body": "Für Gruppen mit mehreren Runden bringe ich die Plätze in die richtige Reihenfolge, plane die Fahrten und kümmere mich um Buggies, Leihausrüstung und passende Restaurantvorschläge.",
+            "cta": "Reise planen"
+          }
+        ]
       },
       "possibilities": {
         "title": "Ein Golftrip kann einfach bleiben oder deutlich vollständiger werden.",
@@ -152,8 +174,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "items": [
           "Hotel in Palma, Resort oder ruhigere Finca",
           "Michelin-Restaurant, lokaler Favorit oder privater Koch",
-          "Spa, Erholung oder ruhigere Zeit ohne Golf zwischen den Runden",
-          "Küstenfahrt, Besuch eines Weinguts oder ein besonderer Abendplan"
+          "Spa und ruhige Zeit ohne Golf zwischen den Runden",
+          "Küstenfahrt, Weingut oder ein besonderer Abend"
         ]
       }
     },
@@ -207,14 +229,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "heroBody": "Je choisis et réserve les parcours et les départs pour votre groupe, avec voiturettes et clubs de location organisés avant votre arrivée. Vous jouez vos parties sans que je vous accompagne. Si vous souhaitez une journée ensemble sur le parcours, ajoutez Play With A Pro.",
     "options": {
       "basicLabel": "Gratuit",
-      "basicTitle": "Sélection gratuite de parcours",
+      "basicTitle": "Sélecteur de parcours",
       "basicNote": "Outil sur le site. Une simple shortlist.",
       "proLabel": "Personnel",
       "proTitle": "Planification payante",
-      "proNote": "Le vrai service : itinéraire, réservations, base et options.",
+      "proNote": "Parcours, itinéraire et réservations.",
       "itineraryLabel": "Séjour type",
-      "itineraryTitle": "Voir une vraie semaine de 5 jours",
-      "itineraryNote": "Un itinéraire basé à Palma et la raison de cet ordre."
+      "itineraryTitle": "Une semaine de 5 jours",
+      "itineraryNote": "Un itinéraire depuis Palma et sa logique."
     },
     "free": {
       "eyebrow": "Basique",
@@ -236,12 +258,23 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       ],
       "note": "Aucun engagement au stade de la demande. Je réponds personnellement sous 24 heures avec la prochaine étape recommandée et un devis clair avant toute réservation.",
       "feeNote": "Les frais de gestion représentent 5 % des green fees et des suppléments convenus. Le coût total et les conditions sont indiqués avant confirmation.",
-      "sendPrompt": "Idéalement : dates, taille du groupe, niveau, zone d’hotel et parcours déjà envisagés.",
+      "sendPrompt": "Idéalement : dates, taille du groupe, niveau, zone d’hôtel et parcours déjà envisagés.",
       "cta": "Demander la planification",
-      "bookingOnly": {
-        "title": "Besoin seulement de réserver vos départs ?",
-        "body": "Envoyez-moi vos dates, le nombre de joueurs, les handicaps et la zone de votre hôtel. Je recommande les parcours adaptés, vérifie les départs et vous remets un devis clair avant toute réservation. Votre groupe joue sans moi.",
-        "cta": "Demander des départs"
+      "workingModes": {
+        "title": "Choisissez le niveau d’aide dont vous avez besoin.",
+        "body": "Certains groupes ont seulement besoin que les départs soient vérifiés et réservés. D’autres veulent le plan golf complet, construit autour des vols, de la zone d’hôtel, du niveau de handicap et du budget.",
+        "items": [
+          {
+            "title": "Départs seulement",
+            "body": "Envoyez-moi les dates, la taille du groupe, le niveau de handicap et la zone d’hôtel. Je vous suggérerai des parcours adaptés, vérifierai la disponibilité et confirmerai le prix avant toute réservation.",
+            "cta": "Réserver des départs"
+          },
+          {
+            "title": "Plan golf complet",
+            "body": "Pour les groupes qui jouent plusieurs parcours, je mets les parcours dans le bon ordre, je planifie les trajets et je m’occupe des buggies, des locations et des suggestions de restaurants.",
+            "cta": "Planifier mon séjour"
+          }
+        ]
       },
       "possibilities": {
         "title": "Un séjour golf peut rester simple ou devenir plus complet.",
@@ -308,10 +341,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "basicNote": "Tool op de site. Alleen een shortlist.",
       "proLabel": "Persoonlijk",
       "proTitle": "Betaalde reisplanning",
-      "proNote": "De echte dienst: route, boekingen, basis en extra’s.",
+      "proNote": "Banen, route en boekingen geregeld.",
       "itineraryLabel": "Voorbeeldreis",
-      "itineraryTitle": "Bekijk een echte week van 5 dagen",
-      "itineraryNote": "Een route vanuit Palma en de gedachte erachter."
+      "itineraryTitle": "Een week van 5 dagen",
+      "itineraryNote": "Een route vanuit Palma en de logica."
     },
     "free": {
       "eyebrow": "Basis",
@@ -335,10 +368,21 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "feeNote": "De beheervergoeding is 5 % van greenfees en afgesproken extra's. U krijgt de totale kosten en boekingsvoorwaarden voordat u akkoord gaat.",
       "sendPrompt": "Graag meesturen: data, groepsgrootte, handicap, hotelregio en banen die al op uw shortlist staan.",
       "cta": "Reisplanning aanvragen",
-      "bookingOnly": {
-        "title": "Alleen starttijden nodig?",
-        "body": "Stuur uw data, groepsgrootte, handicaps en hotelregio. Ik adviseer passende banen, controleer starttijden en stuur een duidelijke offerte voordat ik boek. Uw groep speelt zonder mij.",
-        "cta": "Starttijden aanvragen"
+      "workingModes": {
+        "title": "Kies hoeveel hulp u nodig heeft.",
+        "body": "Sommige groepen hebben alleen starttijden nodig die gecontroleerd en geboekt worden. Andere hebben het volledige golfplan nodig, opgebouwd rond vluchten, hotelregio, handicapniveau en budget.",
+        "items": [
+          {
+            "title": "Alleen starttijden",
+            "body": "Stuur data, groepsgrootte, handicapniveau en hotelregio. Ik stel passende banen voor, controleer de beschikbaarheid en bevestig de prijs voordat er iets geboekt wordt.",
+            "cta": "Starttijden boeken"
+          },
+          {
+            "title": "Volledig golfplan",
+            "body": "Voor groepen die meerdere rondes spelen zet ik de banen in de juiste volgorde, plan ik de ritten en regel ik buggy’s, verhuur en goede eettips.",
+            "cta": "Mijn reis plannen"
+          }
+        ]
       },
       "possibilities": {
         "title": "Een golfreis kan eenvoudig blijven, of vollediger worden.",
@@ -405,9 +449,9 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "basicNote": "Verktyg på sajten. Bara en shortlist.",
       "proLabel": "Personlig",
       "proTitle": "Betald reseplanering",
-      "proNote": "Den riktiga tjänsten: rutt, bokningar, bas och tillägg.",
+      "proNote": "Banor, rutt och bokningar ordnas.",
       "itineraryLabel": "Exempelresa",
-      "itineraryTitle": "Se en riktig vecka på 5 dagar",
+      "itineraryTitle": "En vecka på 5 dagar",
       "itineraryNote": "En Palma-baserad rutt och tanken bakom den."
     },
     "free": {
@@ -432,10 +476,21 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "feeNote": "Administrationsavgiften är 5 % av greenfee och överenskomna tillval. Ni får hela kostnaden och bokningsvillkoren innan ni bestämmer er.",
       "sendPrompt": "Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor ni redan funderar på.",
       "cta": "Fråga om reseplanering",
-      "bookingOnly": {
-        "title": "Behöver ni bara bokade starttider?",
-        "body": "Skicka datum, antal spelare, handicap och hotellområde. Jag föreslår lämpliga banor, kontrollerar lediga starttider och ger en tydlig offert före bokning. Gruppen spelar utan mig.",
-        "cta": "Fråga om starttider"
+      "workingModes": {
+        "title": "Välj hur mycket hjälp ni behöver.",
+        "body": "Vissa grupper behöver bara få starttider kontrollerade och bokade. Andra behöver hela golfplanen, byggd kring flyg, hotellområde, handicapnivå och budget.",
+        "items": [
+          {
+            "title": "Endast starttider",
+            "body": "Skicka datum, gruppstorlek, handicapnivå och hotellområde. Jag föreslår lämpliga banor, kontrollerar tillgängligheten och bekräftar priset innan något bokas.",
+            "cta": "Boka starttider"
+          },
+          {
+            "title": "Hela golfplanen",
+            "body": "För grupper som spelar flera ronder lägger jag banorna i rätt ordning, planerar färderna och ordnar buggies, uthyrning och bra matförslag.",
+            "cta": "Planera min resa"
+          }
+        ]
       },
       "possibilities": {
         "title": "En golfresa kan vara enkel eller bli mer komplett.",
@@ -502,10 +557,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "basicNote": "网站内工具，只给您一份短名单。",
       "proLabel": "专属",
       "proTitle": "付费行程规划",
-      "proNote": "真正的服务：路线、预订、住宿与附加项目。",
+      "proNote": "球场、路线与预订，一并安排。",
       "itineraryLabel": "行程范例",
       "itineraryTitle": "看一份真实的五天行程",
-      "itineraryNote": "以帕尔马为基地的路线，以及背后的安排逻辑。"
+      "itineraryNote": "帕尔马路线及其安排逻辑。"
     },
     "free": {
       "eyebrow": "基础",
@@ -529,10 +584,21 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "feeNote": "管理费仅为果岭费的 5%。确认预订前，我会列明总费用和预订条款。",
       "sendPrompt": "最好一并发送：日期、人数、差点、酒店区域，以及已经看中的球场。",
       "cta": "咨询行程规划",
-      "bookingOnly": {
-        "title": "只需要我帮您订球场？",
-        "body": "告诉我日期、人数、差点和酒店区域。我会推荐合适的球场，查询开球时间，并在预订前给您清楚的报价。您和同伴自行下场，我无需陪同。",
-        "cta": "咨询开球时间预订"
+      "workingModes": {
+        "title": "选择您需要的协助程度。",
+        "body": "有些团队只需要核对并预订开球时间，有些则需要围绕航班、酒店区域、差点范围和预算做出完整的球场计划。",
+        "items": [
+          {
+            "title": "只订开球时间",
+            "body": "请发送日期、人数、差点范围和酒店区域。我会推荐合适的球场，核对可订情况，并在预订前确认价格。",
+            "cta": "预订开球时间"
+          },
+          {
+            "title": "完整球场计划",
+            "body": "如果您打多轮，我会安排球场的先后顺序、规划路程，并负责球车、租杆和用餐建议。",
+            "cta": "规划我的行程"
+          }
+        ]
       },
       "possibilities": {
         "title": "一趟高尔夫旅行可以很简单，也可以安排得更完整。",

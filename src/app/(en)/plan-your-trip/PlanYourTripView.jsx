@@ -130,7 +130,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                 ))}
               </ul>
 
-              {locale === 'en' && content.professional.workingModes ? (
+              {content.professional.workingModes ? (
                 <div className="pyt-working-modes">
                   <div className="pyt-working-modes__intro">
                     <h3>{content.professional.workingModes.title}</h3>
@@ -178,22 +178,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                     {content.professional.sendPrompt}
                   </p>
                 ) : null}
-                <Link href={tripPlanningHref} className="pyt-pro-cta__btn">
-                  {content.professional.cta}
-                </Link>
               </div>
-
-              {locale !== 'en' && content.professional.bookingOnly ? (
-                <div className="pyt-booking-only">
-                  <div>
-                    <h3>{content.professional.bookingOnly.title}</h3>
-                    <p>{content.professional.bookingOnly.body}</p>
-                  </div>
-                  <Link href={teeTimeHref} className="pyt-booking-only__link">
-                    {content.professional.bookingOnly.cta}
-                  </Link>
-                </div>
-              ) : null}
             </aside>
           </div>
         </div>

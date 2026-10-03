@@ -236,9 +236,10 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-trip-planning/Alcanada.webp',
-        alt: 'Alcanada golf course in north Mallorca',
-        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        src: '/images/blog-trip-planning/alcanada-lighthouse-view.webp',
+        alt: 'View across the Alcanada course towards the lighthouse',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '5/4' },
+        imageStyle: { objectPosition: 'center 45%' },
         caption: 'Alcanada is worth planning around. It is not a quick round from every base.',
       },
       { type: 'heading', text: 'East Mallorca: useful for a quieter golf trip' },
@@ -577,9 +578,10 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'image',
-        src: '/images/blog-trip-planning/Alcanada.webp',
-        alt: 'Club de Golf Alcanada in Mallorca',
-        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
+        src: '/images/blog-trip-planning/alcanada-flag-green.webp',
+        alt: 'A flag on the green at Alcanada with the sea and mountains behind',
+        containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '5/4' },
+        imageStyle: { objectPosition: 'center 40%' },
         caption: 'Alcanada deserves a full day, not a rushed slot between other plans.',
       },
       {

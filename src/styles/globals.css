@@ -498,29 +498,11 @@
   opacity: 0.85;
 }
 
-.pyt-booking-only {
-  margin-top: 18px;
-  padding-top: 22px;
-  border-top: 1px solid rgba(26,25,22,0.12);
+.pyt-pro-cta__note:last-child {
+  margin-bottom: 0;
 }
 
-.pyt-booking-only h3 {
-  margin: 0 0 var(--space-2);
-  font-family: var(--font-serif);
-  font-size: clamp(1.28rem, 2vw, 1.58rem);
-  font-weight: 400;
-  color: var(--pine);
-}
-
-.pyt-booking-only p {
-  margin: 0;
-  line-height: 1.6;
-  color: var(--charcoal);
-  font-size: 0.96rem;
-}
-
-.pyt-working-mode__link,
-.pyt-booking-only__link {
+.pyt-working-mode__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -542,29 +524,9 @@
   transition: background 0.2s, color 0.2s;
 }
 
-.pyt-working-mode__link:hover,
-.pyt-booking-only__link:hover {
+.pyt-working-mode__link:hover {
   background: var(--pine);
   color: var(--cream);
-}
-
-.pyt-pro-cta__btn {
-  display: inline-block;
-  background: var(--pine);
-  color: var(--cream);
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 14px 24px;
-  border-radius: 2px;
-  transition: background 0.2s;
-}
-
-.pyt-pro-cta__btn:hover {
-  background: var(--pine-mid);
 }
 
 /* PWAP add-on strip */
@@ -1620,21 +1582,6 @@
   .pyt-option-card {
     min-height: 0;
     padding: 20px;
-  }
-
-  .pyt-pro-cta__btn {
-    display: inline-flex;
-    justify-content: center;
-    max-width: 100%;
-    text-align: center;
-    white-space: normal;
-    overflow-wrap: anywhere;
-  }
-
-  .pyt-booking-only__link {
-    width: 100%;
-    white-space: normal;
-    overflow-wrap: anywhere;
   }
 
   .pyt-option-strip {
