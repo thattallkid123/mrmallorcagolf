@@ -136,7 +136,7 @@ export default function HomePageInner({ locale = 'en' }) {
               </a>
             ) : null}
             <a href={golfCoursesHref} className="hero__pwap-link" aria-label={ui.tripPrompt}>
-              <span>Explore Courses</span>
+              <span>{home.journey?.items?.[2]?.cta || 'Explore Courses'}</span>
             </a>
           </div>
         </div>

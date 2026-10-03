@@ -22,8 +22,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "homeHref": "/es",
       "breadcrumbHome": "Inicio",
       "breadcrumbCurrent": "Jugar con un Pro",
-      "eyebrow": "Día de golf · Mallorca",
-      "title": "Un día de golf en Mallorca.",
+      "eyebrow": "Play With A Pro | Mallorca | Profesional PGA",
+      "title": "Un día de 18 hoyos conmigo.",
       "body": "Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €795. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.",
       "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
@@ -31,12 +31,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "day": {
       "eyebrow": "Qué incluye el día",
-      "title": "Antes de que llegue, ya sé en qué tengo que fijarme.",
+      "title": "Un campo. 18 hoyos. Todo resuelto antes de que llegue.",
       "paragraphs": [
-        "Antes de llegar, rellene un cuestionario breve. Me cuenta qué le frustra, dónde está la distancia entre su juego de prácticas y sus resultados, y cómo sería para usted un gran día. Cuando llegamos al primer tee, yo ya sé en qué tengo que fijarme.",
+        "Usted llega al campo. Yo me ocupo de todo lo anterior: el campo adecuado para su juego, la hora de salida y un breve cuestionario para entender cómo juega y qué espera llevarse del día. Después jugamos. El coaching llega en el momento oportuno, mientras juega golf de verdad y toma decisiones de verdad. Entre golpes hay tiempo para conversar: estrategia de campo, cómo leer las condiciones e historias del golf alrededor del mundo.",
         "Soy PGA Advanced Professional, he entrenado a cientos de ganadores de torneos, tengo más de 15.000 horas de coaching y la certificación Trackman Master. El día se apoya en eso, pero no se convierte en una sesión puramente técnica. Una vuelta de golf, jugada como se debe."
       ],
-      "quote": "La mayoría de los golfistas se van jugando mejor, con más claridad y entendiendo por qué. Esa última parte es la que suele quedarse.",
+      "quote": "Las mejoras más rápidas suelen ocurrir en el campo, no en el campo de prácticas. Condiciones reales, decisiones reales: ese tipo de progreso tiende a quedarse.",
       "questionnaireEyebrow": "¿Ya ha reservado?",
       "questionnaireTitle": "Complete su cuestionario pre-ronda →",
       "questionnaireBody": "Solo lleva 3 minutos. Me ayuda a adaptar el día a usted antes de llegar al primer tee."
@@ -46,27 +46,27 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         [
           "Elección del campo",
-          "Ajustada a su juego, hándicap y a lo que quiere del día"
+          "Adapto el campo a su juego, su hándicap y lo que quiere sacar del día."
         ],
         [
           "Hora de salida",
-          "Reservada y completamente gestionada - usted solo tiene que presentarse"
+          "Asegurada y gestionada por completo antes de su llegada. Usted solo tiene que presentarse."
         ],
         [
           "Briefing previo",
-          "Qué esperar del campo y en qué conviene fijarse"
+          "El cuestionario previo a la vuelta mencionado antes, para que entienda su juego, sus expectativas y su forma actual."
         ],
         [
           "18 hoyos conmigo",
-          "No solo caminar al lado - jugar de verdad como su compañero"
+          "Jugamos juntos como grupo. Mismo tee, misma conversación, misma vuelta."
         ],
         [
           "Coaching en el campo",
-          "Gestión del campo, elección de palos y toma de decisiones"
+          "Gestión del campo, elección de golpes y toma de decisiones en los momentos que importan. No es un comentario constante, solo las observaciones adecuadas en el momento adecuado."
         ],
         [
           "Debrief después de la vuelta",
-          "Qué mejoró, en qué seguir trabajando, claro y honesto"
+          "Qué ha cambiado durante la vuelta, qué debe llevarse y en qué trabajar a continuación."
         ]
       ]
     },
@@ -81,15 +81,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "cards": [
         {
           "title": "Golfistas serios que quieren un día para recordar",
-          "text": "No se trata solo de jugar 18 hoyos. Se trata de hacerlo con un profesional que conoce el campo, lee las decisiones del juego y hace que el día fluya."
+          "text": "Jugadores con hándicap: en solitario, en pareja o con un grupo pequeño. Quiere jugar los mejores campos de Mallorca como se debe. No solo una hora de salida y un adiós con la mano, sino un día con alguien que conoce el campo, lee el viento y puede cambiar cómo piensa un hoyo en lo que se tarda en caminar hasta el siguiente tee."
         },
         {
           "title": "Grupos que quieren que todo esté organizado",
-          "text": "Parejas, amigos y grupos pequeños que quieren jugar Mallorca bien, sin tener que encargarse de horarios, traslados o la reserva del almuerzo."
+          "text": "Familias, grupos corporativos y ejecutivos que visitan la isla y quieren un día premium, totalmente organizado, en el que cada detalle esté resuelto. Una tarifa diaria fija, un ritmo más tranquilo y alguien que ya lo ha hecho antes."
         },
         {
           "title": "Un regalo que se va a usar de verdad",
-          "text": "Funciona bien para cumpleaños importantes, jubilaciones y premios de empresa. Si lo compra para otra persona, mantengo los detalles en privado hasta que usted quiera."
+          "text": "Estos días funcionan muy bien como regalo para cumpleaños importantes, jubilaciones y recompensas corporativas. Avíseme si lo compra para otra persona. Prepararé un certificado y mantendré los detalles del día en privado hasta que usted esté listo."
         }
       ]
     },
@@ -139,13 +139,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "packages": {
-      "eyebrow": "Experiencias y paquetes",
-      "title": "Tres maneras de vivir el día.",
+      "eyebrow": "Precios",
+      "title": "Individual, grupo o Signature Day.",
       "body": "Solo y Grupo son las tarifas base del día de Play With A Pro. Los campos juntan reservas cuando hay mucha afluencia, así que un partido de uno o dos jugadores puede acabar compartiendo la salida con desconocidos. Si prefiere que sea solo su grupo, puedo reservar las plazas libres y la hora de salida es suya. El campo fija ese cargo y yo se lo traslado al coste. Los green fees y el almuerzo van aparte. La hora de salida privada está incluida de serie en el Signature Day.",
       "tiers": [
         {
-          "eyebrow": "Solo",
-          "name": "Un día conmigo",
+          "eyebrow": "A Day With Andy",
+          "name": "Individual",
           "note": "Mi tarifa del día. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
           "features": [
             "Campo elegido según su juego y su hándicap",
@@ -159,8 +159,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/es/contact"
         },
         {
-          "eyebrow": "Grupo",
-          "name": "Un día conmigo",
+          "eyebrow": "A Day With Andy",
+          "name": "Grupo",
           "price": "€950 en total",
           "features": [
             "Hasta 3 jugadores, mi tarifa fija por el día",
@@ -206,7 +206,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Sugerencias de restaurantes y dining incluidas",
             "Una persona a contactar para todo el viaje"
           ],
-          "button": "Consultar →",
+          "button": "Planifique su viaje →",
           "href": "/es/contact"
         }
       ],
@@ -230,7 +230,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Ofrece clases para principiantes absolutos?",
-          "a": "Sí. Todas mis sesiones se hacen en el campo, no en el range. Con algunos buenos campos de par 3 y recorridos cortos aquí en Mallorca, los principiantes pueden empezar a jugar golf de verdad desde el principio y ver las habilidades que necesitan desarrollar."
+          "a": "Sí. Todas mis sesiones se hacen en el campo de golf, no en el campo de prácticas. Con algunos par 3 estupendos y campos cortos aquí en Mallorca, los principiantes pueden empezar a jugar golf de verdad enseguida y ver qué habilidades necesitan desarrollar. No ofrezco sesiones solo de campo de prácticas, pero con gusto le indico a alguien que sí las dé."
         },
         {
           "q": "¿Hace falta traer palos propios?",
@@ -275,10 +275,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
-      "eyebrow": "¿Listo para jugar Mallorca como se debe?",
-      "title": "Escríbame y le ayudaré a elegir la versión adecuada del día.",
-      "body": "Dígame sus fechas, su hándicap y qué quiere sacar de la jornada. Le responderé personalmente en menos de 24 horas con una recomendación clara.",
-      "primaryCta": "Consultar sobre su día →",
+      "eyebrow": "¿Quiere incluirlo en su viaje?",
+      "title": "Dígame sus fechas y le recomendaré el formato adecuado.",
+      "body": "Envíeme las fechas, el tamaño del grupo, el rango de hándicap y los campos que está considerando. Le diré si Play With A Pro funciona mejor como día independiente o como parte de un viaje planificado.",
+      "primaryCta": "Planifique su viaje →",
       "primaryHref": "/es/contact",
       "secondaryCta": "Escribir por WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hola%20Andy%2C%20me%20interesa%20un%20d%C3%ADa%20de%20golf%20en%20Mallorca.",
@@ -306,8 +306,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "homeHref": "/de",
       "breadcrumbHome": "Start",
       "breadcrumbCurrent": "Mit einem Pro spielen",
-      "eyebrow": "Golftag · Mallorca",
-      "title": "Ein Golftag auf Mallorca.",
+      "eyebrow": "Play With A Pro | Mallorca | PGA-Profi",
+      "title": "Ein 18-Loch-Tag mit mir.",
       "body": "Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €795. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.",
       "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
@@ -315,12 +315,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "day": {
       "eyebrow": "Was der Tag beinhaltet",
-      "title": "Bevor Sie ankommen, weiß ich bereits, worauf ich achten muss.",
+      "title": "Ein Platz. 18 Löcher. Alles geregelt, bevor Sie ankommen.",
       "paragraphs": [
-        "Vor Ihrer Ankunft füllen Sie einen kurzen Fragebogen aus. Er zeigt mir, was Sie gerade frustriert, wo die Lücke zwischen Ihrem Range-Spiel und Ihren Scores liegt und wie ein guter Tag für Sie konkret aussehen würde. Wenn wir am ersten Abschlag stehen, weiß ich bereits, worauf ich achten muss.",
+        "Sie kommen auf dem Platz an. Alles davor übernehme ich: den passenden Platz für Ihr Spiel, die Startzeit und einen kurzen Fragebogen, damit ich verstehe, wie Ihr Spiel funktioniert und was Sie aus dem Tag mitnehmen möchten. Dann spielen wir. Das Coaching kommt zum richtigen Zeitpunkt, während Sie echtes Golf spielen und echte Entscheidungen treffen. Zwischen den Schlägen ist Zeit zum Reden: Platzstrategie, wie man Bedingungen liest, und Geschichten aus dem Golf rund um die Welt.",
         "Ich bin PGA Advanced Professional, habe Hunderte von Turniersiegern trainiert, verfüge über mehr als 15.000 Coaching-Stunden und die Trackman Master-Zertifizierung. Der Tag profitiert davon, wird aber nicht zu einer rein technischen Session. Eine Runde Golf, richtig gespielt."
       ],
-      "quote": "Die meisten Golfer gehen mit besserem Spiel, mehr Klarheit und einem klareren Verständnis nach Hause, warum es besser lief. Genau dieser Teil bleibt.",
+      "quote": "Die schnellsten Fortschritte entstehen meist auf dem Platz, nicht auf der Range. Echte Bedingungen, echte Entscheidungen: Diese Art von Fortschritt bleibt in der Regel hängen.",
       "questionnaireEyebrow": "Schon gebucht?",
       "questionnaireTitle": "Vor-Runden-Fragebogen ausfüllen →",
       "questionnaireBody": "Dauert 3 Minuten. Hilft mir, den Tag auf Sie abzustimmen, bevor wir den ersten Abschlag erreichen."
@@ -330,27 +330,27 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         [
           "Platzauswahl",
-          "Abgestimmt auf Ihr Spiel, Ihr Handicap und Ihre Erwartungen an den Tag"
+          "Ich stimme den Platz auf Ihr Spiel, Ihr Handicap und das ab, was Sie sich vom Tag wünschen."
         ],
         [
           "Startzeit",
-          "Gesichert und komplett organisiert - Sie müssen nur erscheinen"
+          "Gesichert und komplett organisiert, bevor Sie ankommen. Sie müssen nur erscheinen."
         ],
         [
           "Briefing vor der Runde",
-          "Was Sie vom Platz erwarten können und worauf Sie achten sollten"
+          "Der oben erwähnte Fragebogen vor der Runde, damit ich Ihr Spiel, Ihre Erwartungen und Ihre aktuelle Form verstehe."
         ],
         [
           "18 Löcher mit mir",
-          "Nicht nur mitlaufen - wirklich gemeinsam spielen"
+          "Wir spielen gemeinsam als Gruppe. Gleicher Abschlag, gleiches Gespräch, gleiche Runde."
         ],
         [
           "Coaching auf dem Platz",
-          "Platzmanagement, Schlägerwahl und Entscheidungsfindung"
+          "Platzmanagement, Schlagauswahl und Entscheidungsfindung in den Momenten, in denen sie zählen. Kein Dauerkommentar, nur die richtigen Beobachtungen zur richtigen Zeit."
         ],
         [
           "Nachbesprechung",
-          "Was besser wurde, woran Sie weiterarbeiten sollten - klar und ehrlich"
+          "Was sich während der Runde verändert hat, was Sie mitnehmen und woran Sie als Nächstes arbeiten sollten."
         ]
       ]
     },
@@ -365,15 +365,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "cards": [
         {
           "title": "Ernsthafte Golfer, die einen Tag wollen, an den sie sich erinnern",
-          "text": "Sie spielen nicht nur 18 Löcher. Sie spielen mit einem Profi, der den Platz kennt, die Entscheidungen mitdenkt und den Tag richtig aufzieht."
+          "text": "Handicap-Spieler: solo, zu zweit oder in einer kleinen Gruppe. Sie wollen Mallorcas beste Plätze richtig spielen. Nicht nur eine Startzeit und ein Winken zum Abschied, sondern einen Tag mit jemandem, der den Platz kennt, den Wind liest und in der Zeit, die man zum nächsten Abschlag braucht, verändern kann, wie Sie über ein Loch denken."
         },
         {
           "title": "Gruppen, die alles organisiert haben wollen",
-          "text": "Paare, Freunde und kleine Unternehmensgruppen, die Mallorca richtig spielen möchten, ohne Tee Times, Transfers oder Mittagessen selbst koordinieren zu müssen."
+          "text": "Familien, Firmengruppen und Führungskräfte zu Besuch auf der Insel, die einen hochwertigen, komplett organisierten Tag wollen, an dem jedes Detail erledigt ist. Ein fester Tagessatz, ein ruhigerer Rhythmus und jemand, der das schon einmal gemacht hat."
         },
         {
           "title": "Ein Geschenk, das wirklich genutzt wird",
-          "text": "Der Tag passt gut für runde Geburtstage, Ruhestand und Firmen-Dankeschön. Wenn Sie für jemand anderen buchen, halte ich die Details diskret, bis alles bereit ist."
+          "text": "Diese Tage eignen sich gut als Geschenk zu runden Geburtstagen, zum Ruhestand und als Firmenbelohnung. Sagen Sie mir Bescheid, wenn Sie für jemand anderen buchen. Ich bereite ein Zertifikat vor und halte die Details des Tages privat, bis Sie so weit sind."
         }
       ]
     },
@@ -423,13 +423,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "packages": {
-      "eyebrow": "Erlebnisse & Pakete",
-      "title": "Drei Wege, den Tag zu gestalten.",
+      "eyebrow": "Preise",
+      "title": "Solo, Gruppe oder Signature Day.",
       "body": "Solo und Gruppe sind die Kern-Tagessätze für Play With A Pro. Plätze legen Buchungen an vollen Tagen zusammen, ein Einzel- oder Zweiball kann die Startzeit also mit Fremden teilen. Wenn Sie lieber unter sich bleiben, reserviere ich die freien Plätze mit und die Startzeit gehört Ihnen. Der Platz legt diesen Betrag fest und ich gebe ihn zum Selbstkostenpreis weiter. Greenfees und Mittagessen sind separat. Beim Signature Day ist die private Startzeit standardmäßig enthalten.",
       "tiers": [
         {
-          "eyebrow": "Solo",
-          "name": "Ein Tag mit mir",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "note": "Mein Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
           "features": [
             "Platz passend zu Ihrem Spiel und Handicap",
@@ -443,8 +443,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/de/contact"
         },
         {
-          "eyebrow": "Gruppe",
-          "name": "Ein Tag mit mir",
+          "eyebrow": "A Day With Andy",
+          "name": "Gruppe",
           "price": "€950 insgesamt",
           "features": [
             "Bis zu 3 Spieler, ein fester Tagessatz für mich",
@@ -490,7 +490,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Restaurantempfehlungen und Dining-Vorschläge enthalten",
             "Eine Ansprechperson für die gesamte Reise"
           ],
-          "button": "Anfragen →",
+          "button": "Reise planen →",
           "href": "/de/contact"
         }
       ],
@@ -514,7 +514,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Bieten Sie Stunden für absolute Anfänger an?",
-          "a": "Ja. Alle meine Sessions finden auf dem Golfplatz statt, nicht auf der Range. Mit einigen guten Par-3-Plätzen und Kurzplätzen hier auf Mallorca können Anfänger sofort echtes Golf spielen und sehen, welche Fähigkeiten sie entwickeln müssen."
+          "a": "Ja. Alle meine Sessions finden auf dem Golfplatz statt, nicht auf der Driving Range. Mit einigen großartigen Par 3 und kurzen Plätzen hier auf Mallorca können Anfänger sofort echtes Golf spielen und sehen, welche Fähigkeiten sie entwickeln müssen. Sessions nur auf der Range biete ich nicht an, aber ich verweise Sie gern an jemanden, der das macht."
         },
         {
           "q": "Muss ich eigene Schläger mitbringen?",
@@ -559,10 +559,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
-      "eyebrow": "Bereit, Mallorca richtig zu spielen?",
-      "title": "Melden Sie sich, und ich helfe Ihnen, die passende Version des Tages zu wählen.",
-      "body": "Nennen Sie mir Ihre Reisedaten, Ihr Handicap und was Sie sich von dem Tag wünschen. Ich melde mich persönlich innerhalb von 24 Stunden mit einer klaren Empfehlung zurück.",
-      "primaryCta": "Ihren Tag anfragen →",
+      "eyebrow": "Möchten Sie das in Ihre Reise einbauen?",
+      "title": "Nennen Sie mir Ihre Reisedaten, und ich empfehle das passende Format.",
+      "body": "Senden Sie mir Daten, Gruppengröße, Handicap-Bereich und alle Plätze, die Sie in Erwägung ziehen. Ich sage Ihnen, ob Play With A Pro als eigenständiger Tag oder als Teil einer geplanten Reise am besten funktioniert.",
+      "primaryCta": "Reise planen →",
       "primaryHref": "/de/contact",
       "secondaryCta": "Per WhatsApp schreiben",
       "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20Golftag%20in%20Mallorca.",
@@ -590,8 +590,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "homeHref": "/fr",
       "breadcrumbHome": "Accueil",
       "breadcrumbCurrent": "Jouer avec un pro",
-      "eyebrow": "Journée de golf · Majorque",
-      "title": "Une journée de golf à Majorque.",
+      "eyebrow": "Play With A Pro | Majorque | Professionnel PGA",
+      "title": "Une journée de 18 trous avec moi.",
       "body": "Un parcours. Une journée complète aux côtés d'un PGA Advanced Professional qui a tout organisé. En solo à partir de €795. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.",
       "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
@@ -599,12 +599,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "day": {
       "eyebrow": "Ce que la journée comprend",
-      "title": "Avant votre arrivée, je sais déjà ce que je dois observer.",
+      "title": "Un parcours. 18 trous. Tout est réglé avant votre arrivée.",
       "paragraphs": [
-        "Avant votre arrivée, vous remplissez un court questionnaire. Il me dit ce qui vous frustré, où se situe l'écart entre votre jeu au practice et vos scores, et ce qu'une bonne journée représenterait vraiment pour vous. Quand nous arrivons au premier départ, je sais déjà ce que je dois observer.",
+        "Vous arrivez sur le parcours. Je m'occupe de tout ce qui précède : le bon parcours pour votre jeu, l'heure de départ et un court questionnaire pour comprendre comment vous jouez et ce que vous espérez retirer de la journée. Ensuite, nous jouons. Le coaching arrive au bon moment, pendant que vous jouez du vrai golf et prenez de vraies décisions. Entre les coups, il y a le temps de discuter : stratégie de parcours, lecture des conditions et histoires de golf aux quatre coins du monde.",
         "Je suis PGA Advanced Professional, j'ai entraîné des centaines de vainqueurs de tournois, plus de 15 000 heures de coaching et la certification Trackman Master. La journée s'appuie sur cela, sans devenir une session purement technique. Une partie de golf, jouée comme il faut."
       ],
-      "quote": "La plupart des golfeurs repartent en jouant mieux, avec plus de clarté et en comprenant pourquoi. C'est généralement cette dernière partie qui reste.",
+      "quote": "Les progrès les plus rapides se font généralement sur le parcours, pas au practice. Des conditions réelles, des décisions réelles : ce genre de progrès a tendance à durer.",
       "questionnaireEyebrow": "Déjà réservé ?",
       "questionnaireTitle": "Remplissez votre questionnaire pré-parcours →",
       "questionnaireBody": "Cela prend 3 minutes. Il m'aide à adapter la journée avant même que nous arrivions au premier départ."
@@ -614,27 +614,27 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         [
           "Choix du parcours",
-          "Adapté à votre jeu, votre handicap et à ce que vous attendez de la journée"
+          "J'adapte le parcours à votre jeu, à votre handicap et à ce que vous attendez de la journée."
         ],
         [
           "Heure de départ",
-          "Réservée et entièrement gérée - vous n'avez plus qu'à arriver"
+          "Réservé et entièrement géré avant votre arrivée. Vous n'avez qu'à vous présenter."
         ],
         [
           "Briefing avant la ronde",
-          "Ce qu'il faut attendre du parcours et ce qu'il faudra regarder"
+          "Le questionnaire d'avant-partie mentionné plus haut, pour que je comprenne votre jeu, vos attentes et votre forme actuelle."
         ],
         [
           "18 trous avec moi",
-          "Pas seulement marcher à côté - vraiment jouer ensemble"
+          "Nous jouons ensemble, en groupe. Même départ, même conversation, même partie."
         ],
         [
           "Coaching sur le parcours",
-          "Gestion du parcours, choix des clubs et prise de décision"
+          "Gestion du parcours, choix des coups et prise de décision aux moments qui comptent. Pas un commentaire permanent, juste les bonnes observations au bon moment."
         ],
         [
           "Débrief après la ronde",
-          "Ce qui a progressé, ce qu'il faut travailler ensuite - clair et honnête"
+          "Ce qui a changé pendant la partie, ce qu'il faut en retenir et sur quoi travailler ensuite."
         ]
       ]
     },
@@ -649,15 +649,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "cards": [
         {
           "title": "Des golfeurs exigeants qui veulent une journée mémorable",
-          "text": "Il ne s'agit pas seulement de jouer 18 trous. Il s'agit de jouer avec un professionnel qui connaît le parcours, lit les bonnes décisions et donne au jour tout son rythme."
+          "text": "Des joueurs classés : en solo, à deux ou en petit groupe. Vous voulez jouer les meilleurs parcours de Majorque comme il se doit. Pas seulement un départ et un signe de la main, mais une journée avec quelqu'un qui connaît le parcours, lit le vent et peut changer votre façon d'aborder un trou le temps de marcher jusqu'au départ suivant."
         },
         {
           "title": "Des groupes qui veulent que tout soit pris en charge",
-          "text": "Couples, amis et petits groupes d'entreprise qui veulent jouer Majorque comme il faut, sans gérer eux-mêmes tee times, transferts ou déjeuner."
+          "text": "Familles, groupes d'entreprise et dirigeants en visite sur l'île qui veulent une journée premium, entièrement organisée, où chaque détail est réglé. Un tarif journalier fixe, un rythme plus serein et quelqu'un qui l'a déjà fait."
         },
         {
           "title": "Un cadeau qui sera vraiment utilisé",
-          "text": "La journée fonctionne bien pour un anniversaire important, un départ à la retraite ou une récompense d entreprise. Si vous achetez pour quelqu un d autre, je garde les détails privés jusqu au bon moment."
+          "text": "Ces journées font d'excellents cadeaux pour les grands anniversaires, un départ à la retraite ou une récompense d'entreprise. Dites-moi si vous offrez cette journée à quelqu'un. Je préparerai un certificat et garderai les détails de la journée confidentiels jusqu'à ce que vous soyez prêt."
         }
       ]
     },
@@ -707,13 +707,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "packages": {
-      "eyebrow": "Expériences et formules",
-      "title": "Trois façons de vivre la journée.",
+      "eyebrow": "Tarifs",
+      "title": "Solo, groupe ou Signature Day.",
       "body": "Solo et Groupe sont les tarifs journée de base de Play With A Pro. Les parcours regroupent les réservations les jours chargés, une partie d'un ou deux joueurs peut donc partager le départ avec des inconnus. Si vous préférez rester entre vous, je réserve les places restantes et le départ est à vous. Le parcours fixe ce montant et je vous le répercute au prix coûtant. Green fees et déjeuner en sus. Le départ privatisé est inclus d'office dans le Signature Day.",
       "tiers": [
         {
-          "eyebrow": "Solo",
-          "name": "Une journée avec moi",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "note": "Mon tarif journée. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, je peux vous aider à organiser.",
           "features": [
             "Parcours choisi selon votre jeu et votre index",
@@ -727,8 +727,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/fr/contact"
         },
         {
-          "eyebrow": "Groupe",
-          "name": "Une journée avec moi",
+          "eyebrow": "A Day With Andy",
+          "name": "Groupe",
           "price": "€950 au total",
           "features": [
             "Jusqu'à 3 joueurs, mon tarif fixe pour la journée",
@@ -774,7 +774,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Suggestions de restaurants et de dining incluses",
             "Une personne à contacter pour tout le voyage"
           ],
-          "button": "Demander →",
+          "button": "Planifiez votre voyage →",
           "href": "/fr/contact"
         }
       ],
@@ -798,7 +798,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Proposez-vous des cours pour grands débutants ?",
-          "a": "Oui. Toutes mes sessions se déroulent sur le parcours, pas sur le practice. Avec de bons par 3 et des parcours courts à Majorque, les débutants peuvent jouer au vrai golf dès le départ et voir les compétences qu'ils doivent développer."
+          "a": "Oui. Toutes mes séances se déroulent sur le parcours, pas au practice. Avec de superbes par 3 et des parcours courts ici à Majorque, les débutants peuvent commencer à jouer du vrai golf tout de suite et voir les compétences à développer. Je ne propose pas de séances uniquement au practice, mais je vous orienterai volontiers vers quelqu'un qui le fait."
         },
         {
           "q": "Faut-il apporter ses propres clubs ?",
@@ -843,10 +843,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
-      "eyebrow": "Prêt à jouer Majorque comme il faut ?",
-      "title": "Prenez contact et je vous aiderai à choisir la bonne version de la journée.",
-      "body": "Dites-moi vos dates, votre index et ce que vous attendez de cette journée. Je vous répondrai personnellement sous 24 heures avec une recommandation claire.",
-      "primaryCta": "Se renseigner sur la journée →",
+      "eyebrow": "Vous voulez intégrer cela à votre séjour ?",
+      "title": "Donnez-moi vos dates et je vous recommanderai le bon format.",
+      "body": "Envoyez-moi les dates, la taille du groupe, la fourchette de handicap et les parcours que vous envisagez. Je vous dirai si Play With A Pro fonctionne mieux comme journée à part ou intégré à un séjour planifié.",
+      "primaryCta": "Planifiez votre voyage →",
       "primaryHref": "/fr/contact",
       "secondaryCta": "Écrire sur WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Bonjour%20Andy%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20une%20journ%C3%A9e%20de%20golf%20%C3%A0%20Majorque.",
@@ -873,8 +873,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     "hero": {
       "homeHref": "/nl",
       "breadcrumbCurrent": "Spelen met een pro",
-      "eyebrow": "Golfdag · Mallorca",
-      "title": "Een golfdag op Mallorca.",
+      "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
+      "title": "Een dag van 18 holes met mij.",
       "body": "Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €795. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.",
       "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
@@ -882,12 +882,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "day": {
       "eyebrow": "Wat de dag inhoudt",
-      "title": "Voordat u arriveert, weet ik al waar ik op moet letten.",
+      "title": "Eén baan. 18 holes. Alles geregeld voordat u aankomt.",
       "paragraphs": [
-        "Voor uw aankomst vult u een korte vragenlijst in. Die laat me zien wat u op dit moment frustreert, waar de kloof zit tussen uw rangespel en uw scores, en hoe een echt goede dag er voor u uit zou zien. Tegen de tijd dat we bij de eerste tee staan, weet ik al waar ik op moet letten.",
+        "U komt aan op de baan. Alles daarvoor regel ik: de juiste baan voor uw spel, de starttijd en een korte vragenlijst, zodat ik begrijp hoe u speelt en wat u van de dag hoopt mee te nemen. Dan spelen we. De coaching komt op het juiste moment, terwijl u echt golf speelt en echte beslissingen neemt. Tussen de slagen door is er tijd om te praten: baanstrategie, hoe u omstandigheden leest en verhalen uit het golf over de hele wereld.",
         "Ik ben PGA Advanced Professional, heb honderden toernooiwinnaars gecoacht, heb meer dan 15.000 coachinguren en de Trackman Master-certificering. De dag bouwt daarop voort, maar wordt geen puur technische sessie. Een ronde golf, zoals het hoort gespeeld."
       ],
-      "quote": "De meeste golfers vertrekken met beter spel, meer duidelijkheid en een beter begrip van waarom. Dat laatste is meestal het deel dat blijft hangen.",
+      "quote": "De snelste verbeteringen gebeuren meestal op de baan, niet op de range. Echte omstandigheden, echte beslissingen: dat soort vooruitgang blijft meestal hangen.",
       "questionnaireEyebrow": "Al geboekt?",
       "questionnaireTitle": "Vul uw pre-ronde vragenlijst in →",
       "questionnaireBody": "Kost 3 minuten. Helpt me de dag op u af te stemmen voordat we bij de eerste tee komen."
@@ -897,27 +897,27 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         [
           "Baanselectie",
-          "Afgestemd op uw spel, handicap en wat u uit de dag wilt halen"
+          "Ik stem de baan af op uw spel, uw handicap en wat u van de dag wilt."
         ],
         [
           "Starttijd",
-          "Vastgelegd en volledig geregeld - u hoeft alleen op te dagen"
+          "Vastgelegd en volledig geregeld voordat u aankomt. U hoeft alleen maar te verschijnen."
         ],
         [
           "Briefing voor de ronde",
-          "Wat u van de baan kunt verwachten en waar u op moet letten"
+          "De eerder genoemde vragenlijst vóór de ronde, zodat ik uw spel, uw verwachtingen en uw huidige vorm begrijp."
         ],
         [
           "18 holes met mij",
-          "Niet alleen meelopen - echt samen spelen"
+          "We spelen samen als groep. Dezelfde tee, hetzelfde gesprek, dezelfde ronde."
         ],
         [
           "Coaching tijdens de ronde",
-          "Baanmanagement, shotselectie en besluitvorming"
+          "Baanmanagement, slagkeuze en besluitvorming op de momenten dat het telt. Geen doorlopend commentaar, alleen de juiste observaties op het juiste moment."
         ],
         [
           "Nabespreking",
-          "Wat beter werd, waar u aan moet werken - helder en eerlijk"
+          "Wat er tijdens de ronde veranderd is, wat u meeneemt en waaraan u hierna kunt werken."
         ]
       ]
     },
@@ -932,15 +932,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "cards": [
         {
           "title": "Serieuze golfers die een dag willen onthouden",
-          "text": "U speelt niet alleen 18 holes. U speelt met een professional die de baan kent, de juiste beslissingen aanvoelt en de dag goed laat verlopen."
+          "text": "Spelers met handicap: solo, in tweetallen of met een kleine groep. U wilt de beste banen van Mallorca goed spelen. Niet alleen een starttijd en een zwaai ten afscheid, maar een dag met iemand die de baan kent, de wind leest en in de tijd die het kost om naar de volgende tee te lopen kan veranderen hoe u over een hole denkt."
         },
         {
           "title": "Groepen die willen dat alles geregeld is",
-          "text": "Stellen, vrienden en kleine zakelijke groepen die Mallorca goed willen spelen zonder zelf starttijden, transfers of lunch te hoeven regelen."
+          "text": "Gezinnen, bedrijfsgroepen en leidinggevenden die het eiland bezoeken en een premium, volledig geregelde dag willen waarin elk detail is afgehandeld. Eén vast dagtarief, een rustiger tempo en iemand die het eerder heeft gedaan."
         },
         {
           "title": "Een cadeau dat echt gebruikt wordt",
-          "text": "Deze dagen werken goed voor mijlpaalverjaardagen, pensioen en zakelijke beloningen. Als u voor iemand anders boekt, houd ik de details privé tot u klaar bent."
+          "text": "Deze dagen werken goed als cadeau voor mijlpaalverjaardagen, pensionering en bedrijfsbeloningen. Laat het me weten als u het voor iemand anders koopt. Ik maak een certificaat en houd de details van de dag privé tot u er klaar voor bent."
         }
       ]
     },
@@ -990,13 +990,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "packages": {
-      "eyebrow": "Ervaringen en pakketten",
-      "title": "Drie manieren om de dag te beleven.",
+      "eyebrow": "Prijzen",
+      "title": "Solo, groep of Signature Day.",
       "body": "Solo en Groep zijn de kerntarieven per dag voor Play With A Pro. Banen voegen boekingen samen als het druk is, dus een een- of tweebal kan de starttijd met onbekenden delen. Wilt u liever alleen met uw eigen groep spelen, dan reserveer ik de vrije plekken en is de starttijd van u. De baan bepaalt dat bedrag en ik reken het door tegen kostprijs. Greenfees en lunch zijn apart. Bij de Signature Day is de privé starttijd standaard inbegrepen.",
       "tiers": [
         {
-          "eyebrow": "Solo",
-          "name": "Een dag met mij",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "note": "Mijn dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie.",
           "features": [
             "Baan gekozen op basis van uw spel en handicap",
@@ -1010,8 +1010,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/nl/contact"
         },
         {
-          "eyebrow": "Groep",
-          "name": "Een dag met mij",
+          "eyebrow": "A Day With Andy",
+          "name": "Groep",
           "price": "€950 totaal",
           "features": [
             "Tot 3 spelers, mijn vaste dagprijs",
@@ -1057,7 +1057,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Restaurantaanbevelingen en diningopstellingen inbegrepen",
             "Eén contactpersoon voor de hele reis"
           ],
-          "button": "Aanvragen →",
+          "button": "Plan uw reis →",
           "href": "/nl/contact"
         }
       ],
@@ -1081,7 +1081,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Geeft u lessen aan absolute beginners?",
-          "a": "Ja. Al mijn sessies vinden plaats op de golfbaan, niet op de driving range. Met een aantal goede par 3-banen en korte banen hier op Mallorca kunnen beginners meteen echt golf spelen en zien welke vaardigheden ze nodig hebben."
+          "a": "Ja. Al mijn sessies vinden plaats op de golfbaan, niet op de driving range. Met een aantal geweldige par 3's en korte banen hier op Mallorca kunnen beginners meteen echt golf spelen en zien welke vaardigheden ze moeten ontwikkelen. Sessies alleen op de range bied ik niet aan, maar ik verwijs u graag door naar iemand die dat wel doet."
         },
         {
           "q": "Moet ik eigen clubs meenemen?",
@@ -1126,10 +1126,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
-      "eyebrow": "Klaar om Mallorca goed te spelen?",
-      "title": "Neem contact op en ik help u de juiste versie van de dag te kiezen.",
-      "body": "Laat me uw data, handicap en wensen voor de dag weten. Ik kom persoonlijk binnen 24 uur bij u terug met een duidelijke aanbeveling.",
-      "primaryCta": "Informeer naar uw dag →",
+      "eyebrow": "Wilt u dit in uw reis opnemen?",
+      "title": "Geef me uw data en ik adviseer u het juiste format.",
+      "body": "Stuur me de data, de groepsgrootte, het handicapbereik en de banen die u overweegt. Ik vertel u of Play With A Pro het best werkt als losse dag of als onderdeel van een geplande reis.",
+      "primaryCta": "Plan uw reis →",
       "primaryHref": "/nl/contact",
       "secondaryCta": "Bericht via WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ik%20heb%20interesse%20in%20een%20golfdag%20in%20Mallorca.",
@@ -1157,8 +1157,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "homeHref": "/sv",
       "breadcrumbHome": "Hem",
       "breadcrumbCurrent": "Spela med ett proffs",
-      "eyebrow": "Golfdag · Mallorca",
-      "title": "En golfdag på Mallorca.",
+      "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
+      "title": "En dag med 18 hål tillsammans med mig.",
       "body": "En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €795. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.",
       "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
@@ -1166,12 +1166,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "day": {
       "eyebrow": "Vad dagen innehåller",
-      "title": "Innan du anländer vet jag redan vad jag ska titta efter.",
+      "title": "En bana. 18 hål. Allt ordnat innan du kommer.",
       "paragraphs": [
-        "Innan du kommer fyller du i ett kort frågeformulär. Det visar vad som frustrerar dig, var glappet finns mellan ditt rangespel och dina scorer, och hur en riktigt bra dag skulle se ut för dig. När vi står på första tee vet jag redan vad jag ska titta efter.",
+        "Du kommer till banan. Allt som kommer före ordnar jag: rätt bana för ditt spel, starttiden och ett kort frågeformulär så att jag förstår hur du spelar och vad du hoppas ta med dig från dagen. Sedan spelar vi. Coachningen kommer vid rätt tillfälle, medan du spelar riktig golf och fattar riktiga beslut. Mellan slagen finns tid att prata: banstrategi, hur man läser förhållandena och berättelser från golfen runt om i världen.",
         "Jag är PGA Advanced Professional, har coachat hundratals tävlingsvinnare, har över 15 000 coachingtimmar och Trackman Master-certifiering. Dagen bygger på det, men blir inte en rent teknisk session. En golfrunda, spelad som den ska."
       ],
-      "quote": "De flesta golfare går därifrån och spelar bättre, känner sig klarare och förstår varför. Just den sista delen är oftast det som stannar kvar.",
+      "quote": "De snabbaste förbättringarna sker oftast på banan, inte på rangen. Verkliga förhållanden, verkliga beslut: den sortens framsteg tenderar att sitta kvar.",
       "questionnaireEyebrow": "Redan bokat?",
       "questionnaireTitle": "Fyll i ditt frågeformulär inför rundan →",
       "questionnaireBody": "Tar 3 minuter. Hjälper mig att anpassa dagen efter dig innan vi når första tee."
@@ -1181,27 +1181,27 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         [
           "Val av bana",
-          "Matchad efter ditt spel, handicap och vad du vill få ut av dagen"
+          "Jag anpassar banan efter ditt spel, ditt handicap och vad du vill få ut av dagen."
         ],
         [
           "Starttid",
-          "Säkrad och helt ordnad - du behöver bara dyka upp"
+          "Bokad och helt ordnad innan du kommer. Du behöver bara dyka upp."
         ],
         [
           "Briefing före rundan",
-          "Vad du kan förvänta dig av banan och vad du bör hålla utkik efter"
+          "Frågeformuläret före rundan som nämndes tidigare, så att jag förstår ditt spel, dina förväntningar och din form just nu."
         ],
         [
           "18 hål med mig",
-          "Inte bara gå bredvid - faktiskt spela tillsammans"
+          "Vi spelar tillsammans som en grupp. Samma tee, samma samtal, samma runda."
         ],
         [
           "Coaching på banan",
-          "Banförvaltning, klubbval och beslutsfattande"
+          "Banstrategi, slagval och beslutsfattande i de ögonblick då det spelar roll. Ingen ständig kommentar, bara rätt iakttagelser vid rätt tillfälle."
         ],
         [
           "Genomgång efter rundan",
-          "Vad som blev bättre, vad du ska jobba vidare med - tydligt och ärligt"
+          "Vad som förändrades under rundan, vad du tar med dig och vad du bör arbeta med härnäst."
         ]
       ]
     },
@@ -1216,15 +1216,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "cards": [
         {
           "title": "Seriösa golfare som vill ha en dag att minnas",
-          "text": "Det handlar inte bara om 18 hål. Det handlar om att spela med en professionell som känner banan, läser besluten rätt och får dagen att flyta."
+          "text": "Spelare med handicap: ensamma, i par eller i en liten grupp. Du vill spela Mallorcas bästa banor på riktigt. Inte bara en starttid och en vinkning till avsked, utan en dag med någon som kan banan, läser vinden och kan förändra hur du tänker kring ett hål på den tid det tar att gå till nästa tee."
         },
         {
           "title": "Grupper som vill att allt ska vara ordnat",
-          "text": "Par, vänner och mindre företagsgrupper som vill spela Mallorca på rätt sätt utan att själva behöva ordna starttider, transfers eller lunch."
+          "text": "Familjer, företagsgrupper och chefer som besöker ön och vill ha en premiumdag där allt är ordnat och varje detalj är hanterad. Ett fast dagspris, ett lugnare tempo och någon som har gjort det förut."
         },
         {
           "title": "En present som faktiskt blir använd",
-          "text": "Dagarna passar bra för stora födelsedagar, pension och foretagsbeloningar. Om du köper till någon annan håller jag detaljerna privata tills du är redo."
+          "text": "De här dagarna fungerar bra som present vid stora födelsedagar, pensionering och företagsbelöningar. Säg till om du köper den åt någon annan. Jag förbereder ett presentkort och håller dagens detaljer privata tills du är redo."
         }
       ]
     },
@@ -1274,13 +1274,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "packages": {
-      "eyebrow": "Upplevelser och paket",
-      "title": "Tre sätt att lägga upp dagen.",
+      "eyebrow": "Priser",
+      "title": "Solo, grupp eller Signature Day.",
       "body": "Solo och Grupp är grunddagspriserna för Play With A Pro. Banor slår ihop bokningar när det är fullt, så en en- eller tvåboll kan få dela starttid med okända. Vill du hellre spela bara med ditt sällskap, bokar jag de lediga platserna och starttiden är din. Banan sätter den avgiften och jag för den vidare till självkostnadspris. Green fees och lunch tillkommer. Privat starttid ingår som standard i Signature Day.",
       "tiers": [
         {
-          "eyebrow": "Solo",
-          "name": "En dag med mig",
+          "eyebrow": "A Day With Andy",
+          "name": "Solo",
           "note": "Mitt dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna.",
           "features": [
             "Bana vald efter ditt spel och handicap",
@@ -1294,8 +1294,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/sv/contact"
         },
         {
-          "eyebrow": "Grupp",
-          "name": "En dag med mig",
+          "eyebrow": "A Day With Andy",
+          "name": "Grupp",
           "price": "€950 totalt",
           "features": [
             "Upp till 3 spelare, mitt fasta dagspris",
@@ -1341,7 +1341,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Restaurangförslag och matningsalternativ ingår",
             "En kontaktperson för hela resan"
           ],
-          "button": "Förfrågan →",
+          "button": "Planera din resa →",
           "href": "/sv/contact"
         }
       ],
@@ -1365,7 +1365,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Ger du lektioner för totala nybörjare?",
-          "a": "Ja. Alla mina sessioner sker på golfbanan, inte på rangen. Med några bra par 3-banor och kortbanor här på Mallorca kan nybörjare börja spela riktigt golf direkt och se vilka färdigheter de behöver utveckla."
+          "a": "Ja. Alla mina sessioner äger rum på golfbanan, inte på drivingrangen. Med några riktigt bra par 3-hål och korta banor här på Mallorca kan nybörjare börja spela riktig golf direkt och se vilka färdigheter de behöver utveckla. Sessioner enbart på rangen erbjuder jag inte, men jag hänvisar gärna till någon som gör det."
         },
         {
           "q": "Behöver jag ta med egna klubbor?",
@@ -1410,10 +1410,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
-      "eyebrow": "Redo att spela Mallorca på rätt sätt?",
-      "title": "Hoer av dig så hjälper jag dig att välja rätt version av dagen.",
-      "body": "Berätta vilka datum du har, vilket handicap du spelar på och vad du vill få ut av dagen. Jag återkommer personligen inom 24 timmar med en tydlig rekommendation.",
-      "primaryCta": "Fråga om din dag →",
+      "eyebrow": "Vill du ha med det här i din resa?",
+      "title": "Berätta dina datum så rekommenderar jag rätt upplägg.",
+      "body": "Skicka datum, gruppstorlek, handicapintervall och de banor du överväger. Jag berättar om Play With A Pro fungerar bäst som en fristående dag eller som en del av en planerad resa.",
+      "primaryCta": "Planera din resa →",
       "primaryHref": "/sv/contact",
       "secondaryCta": "Skriv på WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hej%20Andy%2C%20jag%20%C3%A4r%20intresserad%20av%20en%20golfdag%20p%C3%A5%20Mallorca.",
@@ -1441,8 +1441,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "homeHref": "/zh",
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "与职业球手同场",
-      "eyebrow": "私人高尔夫体验 · 马略卡",
-      "title": "在马略卡的一天私人高尔夫体验。",
+      "eyebrow": "Play With A Pro | 马略卡 | PGA 职业教练",
+      "title": "与我同打 18 洞的一天。",
       "body": "一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €795。小组从 €950 总计起，果岭费另计。",
       "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
@@ -1450,12 +1450,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
     },
     "day": {
       "eyebrow": "这一天包含什么",
-      "title": "在您到达之前，我就已经知道该留意什么。",
+      "title": "一座球场。18 洞。抵达之前，一切已安排妥当。",
       "paragraphs": [
-        "在您到达之前，您会先填写一份简短问卷。它会告诉我，最近什么最让您困扰，您的练习场表现和实际成绩之间的差距在哪里，以及怎样的一天才算真正对您有意义。等我们走到第一洞发球台时，我已经知道该留意什么。",
+        "您只需要到球场。在此之前的一切由我负责：适合您球技的球场、开球时间，以及一份简短的问卷，让我了解您的打法和您希望从这一天带走什么。然后我们开始打球。指导会在恰当的时机出现，让您在打真实的球、做真实决定的过程中受益。击球之间有时间聊天：球场策略、如何判断天气和场地状况，以及世界各地的高尔夫故事。",
         "我是PGA高级职业教练，指导过数百位赛事冠军，拥有超过15,000小时的教学经验，并持有Trackman Master认证。这一天会借助这些经验，但不会变成一堂纯技术课，而是一轮真正打得像样的高尔夫。"
       ],
-      "quote": "大多数球手离开时都会打得更好、思路更清楚，也更明白为什么会这样。通常最能留下来的，就是这一点。",
+      "quote": "最快的进步往往发生在球场上，而不是练习场。真实的条件、真实的决策，这样的进步往往更能保持下去。",
       "questionnaireEyebrow": "已经预订？",
       "questionnaireTitle": "填写赛前问卷 →",
       "questionnaireBody": "只需 3 分钟。能帮助我在到第一洞之前，就把这一天更准确地调整到适合您。"
@@ -1465,27 +1465,27 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         [
           "球场选择",
-          "根据您的球技、差点和这一天的期待来匹配"
+          "我根据您的球技、差点和您对这一天的期望来选择球场。"
         ],
         [
           "开球时间",
-          "已预订并全程安排妥当 - 您只需要准时出现"
+          "在您抵达之前已经锁定并全部安排好。您只需要到场。"
         ],
         [
           "赛前简报",
-          "提前了解球场特点以及当天该注意的重点"
+          "前面提到的赛前问卷，让我了解您的球技、期望和当前状态。"
         ],
         [
           "与我同打 18 洞",
-          "不只是陪着走，而是真正一起下场"
+          "我们作为一个小组一起打球。同一个发球台，同一场对话，同一轮球。"
         ],
         [
           "球场实战指导",
-          "球场管理、选杆与临场决策"
+          "在关键时刻给出球场管理、击球选择和决策方面的指导。不是不停地评论，只在恰当的时间给出恰当的观察。"
         ],
         [
           "赛后复盘",
-          "哪些地方变好了，接下来该练什么 - 清楚而直接"
+          "这一轮球中发生了什么变化，您应该带走什么，以及接下来该练什么。"
         ]
       ]
     },
@@ -1500,15 +1500,15 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "cards": [
         {
           "title": "想要一场值得记住的高尔夫日的认真球手",
-          "text": "这不只是打 18 洞，而是与一位真正懂球场、懂决策、也懂如何把这一天安排得顺畅的职业人士一起下场。"
+          "text": "有差点的球手：单人、结伴或小组皆可。您想真正打好马略卡最好的球场。不只是一个开球时间和一句再见，而是与一位熟悉球场、善于判断风向的人共度一天，在走向下一个发球台的时间里，就能改变您对一个球洞的思路。"
         },
         {
           "title": "希望一切都有人安排妥当的小团体",
-          "text": "适合伴侣、朋友和小型商务接待团体，在马略卡好好打一场球，而不用自己去协调开球时间、接送或午餐。"
+          "text": "来岛上游玩的家庭、企业团体和高管，想要一个高品质、全程安排好、每个细节都已处理的一天。固定日费、更从容的节奏，以及一位做过很多次的人。"
         },
         {
           "title": "一份真正会被使用的礼物",
-          "text": "适合重要生日、退休礼物和企业奖励。如果是送给别人，我会在您准备好之前保密当天细节。"
+          "text": "这样的一天很适合作为重要生日、退休和企业奖励的礼物。如果您是买给别人的，请告诉我。我会准备一份证书，并在您准备好之前对当天的细节保密。"
         }
       ]
     },
@@ -1558,13 +1558,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "packages": {
-      "eyebrow": "体验方案",
-      "title": "三种安排这一天的方式。",
+      "eyebrow": "价格",
+      "title": "单人、小组或 Signature Day。",
       "body": "单人与小组是 Play With A Pro 的基础日费方案。球场繁忙时会把预订拼组，因此一人或两人的组合可能要和陌生球手共享同一个开球时段。如果您希望只有自己这一行人，我可以把空出的名额一并预订下来，这个开球时段就完全属于您。费用由球会设定，我按成本价原样转给您。果岭费与午餐另计。Signature Day 已标准包含私人开球时段。",
       "tiers": [
         {
-          "eyebrow": "单人",
-          "name": "与我共度一天",
+          "eyebrow": "A Day With Andy",
+          "name": "单人",
           "note": "我的单人日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我可以帮忙安排。",
           "features": [
             "按照您的球技与差点匹配球场",
@@ -1578,8 +1578,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/zh/contact"
         },
         {
-          "eyebrow": "小组",
-          "name": "与我共度一天",
+          "eyebrow": "A Day With Andy",
+          "name": "小组",
           "price": "€950 总计",
           "features": [
             "最多 3 位球手，我收取固定日费",
@@ -1625,7 +1625,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "包含餐厅建议与用餐方案",
             "全程一位联系人服务您的整个行程"
           ],
-          "button": "立即咨询 →",
+          "button": "了解行程规划 →",
           "href": "/zh/contact"
         }
       ],
@@ -1649,7 +1649,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "您接受完全零基础的初学者吗？",
-          "a": "接受。我所有的课程都在球场上进行，不在练习场。马略卡有不少不错的三杆洞球场和短球场，初学者可以一上来就打真正的高尔夫，直接看到自己需要发展哪些技能。"
+          "a": "可以。我所有的课程都在球场上进行，而不是练习场。马略卡有不少出色的三杆洞和短球场，初学者可以立刻开始打真实的球，并看清自己需要发展哪些技能。我不提供仅限练习场的课程，但很乐意为您推荐提供这类课程的人。"
         },
         {
           "q": "需要自带球杆吗？",
@@ -1694,10 +1694,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
-      "eyebrow": "准备好用正确的方式打马略卡了吗？",
-      "title": "联系我，我会帮您选出最适合的那一种安排。",
-      "body": "告诉我您的日期、差点，以及您希望这一天得到什么。我会在 24 小时内亲自回复，并给出清楚的建议。",
-      "primaryCta": "咨询您的高尔夫日 →",
+      "eyebrow": "想把这一天放进您的行程吗？",
+      "title": "告诉我您的日期，我会推荐合适的形式。",
+      "body": "请发给我日期、人数、差点范围，以及您在考虑的球场。我会告诉您，Play With A Pro 更适合作为单独的一天，还是作为规划行程的一部分。",
+      "primaryCta": "了解行程规划 →",
       "primaryHref": "/zh/contact",
       "secondaryCta": "通过 WhatsApp 联系",
       "secondaryHref": "https://wa.me/34624466702?text=%E6%82%A8%E5%A5%BD%20Andy%EF%BC%8C%E6%88%91%E5%AF%B9%E9%A9%AC%E7%95%A5%E5%8D%A1%E9%AB%98%E5%B0%94%E5%A4%AB%E4%B9%8B%E6%97%85%E6%84%9F%E5%85%B4%E8%B6%A3%E3%80%82",
