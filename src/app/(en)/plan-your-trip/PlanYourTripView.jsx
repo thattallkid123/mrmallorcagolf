@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import CourseSelectorToolClient from '../tools/course-selector/CourseSelectorToolClient'
+import ZhCourseSelectorClient from '../../zh/course-selector/ZhCourseSelectorClient'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import { buildLocalePath } from '../../../lib/site'
 import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
@@ -276,7 +277,11 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
 
       <section className="pyt-section pyt-section--light" id="free-course-finder">
         <div className="pyt-section__inner pyt-section__inner--wide pyt-tool-shell">
-          <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} localData={courseSelectorData} />
+          {locale === 'zh' ? (
+            <ZhCourseSelectorClient heroHeadingLevel={2} />
+          ) : (
+            <CourseSelectorToolClient lang={locale} heroHeadingLevel={2} localData={courseSelectorData} />
+          )}
           <p className="pyt-tier-body pyt-free__browse">
             <Link href={golfCoursesHref} className="pyt-free__browse-link">
               {courseLinkLabel}

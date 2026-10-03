@@ -181,7 +181,8 @@ function recommend(answers) {
     .slice(0, 3)
 }
 
-export default function ZhCourseSelectorClient() {
+export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
+  const HeroHeading = heroHeadingLevel === 2 ? 'h2' : 'h1'
   const [phase, setPhase] = useState('quiz') // 'intro' | 'quiz' | 'results'
   const [stepIdx, setStepIdx] = useState(0)
   const [answers, setAnswers] = useState({})
@@ -267,7 +268,7 @@ export default function ZhCourseSelectorClient() {
         .zh-eyebrow-wrap { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 16px; }
         .zh-eyebrow-line { width: 28px; height: 1px; background: #B8973C; flex-shrink: 0; }
         .zh-eyebrow-text { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #CBA968; }
-        .zh-hero h1 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; color: #F7F4EF; max-width: 600px; margin: 0 auto; }
+        .zh-hero h1, .zh-hero h2 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; color: #F7F4EF; max-width: 600px; margin: 0 auto; }
         .zh-hero p { font-weight: 300; font-size: 1rem; line-height: 1.6; color: rgba(247,244,239,0.78); max-width: 480px; margin: 16px auto 0; }
         /* Intro card */
         .intro-card { background: #fff; padding: 52px 48px; margin-top: 40px; box-shadow: 0 22px 60px rgba(18,17,15,0.08); text-align: center; border-top: 3px solid #B8973C; }
@@ -379,7 +380,7 @@ export default function ZhCourseSelectorClient() {
           <span className="zh-eyebrow-line" />
           <span className="zh-eyebrow-text">免费工具 · Andy 教练</span>
         </div>
-        <h1>马略卡高尔夫球场智能推荐</h1>
+        <HeroHeading>马略卡高尔夫球场智能推荐</HeroHeading>
         <p>回答 7 个问题，根据您的球技、预算和行程，为您匹配最值得打的 3 座球场。</p>
       </section>
 
