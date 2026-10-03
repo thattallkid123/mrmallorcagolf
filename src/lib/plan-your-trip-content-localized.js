@@ -140,7 +140,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "title": "Ich plane das sauber für Sie",
       "body": "Schicken Sie mir Ihre Daten, die Gruppengröße und was Sie sich wünschen. Ich empfehle die passenden Plätze für Ihr Spiel, sage Ihnen, wo Sie am besten wohnen und warum, plane Route und Rundenzahl, buche die Startzeiten, organisiere Buggys und Leihschläger und schlage passende Restaurants vor. Preis auf Anfrage.",
       "includes": [
-        "Platzeempfehlungen passend zu Spiel, Gruppe und Budget",
+        "Platzempfehlungen passend zu Spiel, Gruppe und Budget",
         "Wo Sie wohnen sollten und warum",
         "Reiseroute und Rundenzahl",
         "Gebuchte und bestätigte Startzeiten",

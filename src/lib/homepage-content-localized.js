@@ -343,7 +343,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Die meisten Golftage auf Mallorca beginnen auf einer Buchungsplattform und enden mit einer Rechnung. Hier ist es persönlicher.",
       "paragraphs": [
         "Ich begleite Golftage auf den besten Plätzen der Insel. Das Coaching passiert während der Runde und nicht erst danach als Zusatz. Das Golf ist besser, die Entscheidungen werden klarer und der ganze Tag fühlt sich wirklich gut betreut an.",
-        "Mallorca ist das ganze Jahr bespielbahr. Zu wissen, welcher Platz zu Ihrem Spiel passt, wann die Abschlagszeiten es wert sind und wann die Bedingungen stimmen, macht oft den Unterschied zwischen einem guten und einem großartigen Tag."
+        "Mallorca ist das ganze Jahr bespielbar. Zu wissen, welcher Platz zu Ihrem Spiel passt, wann die Abschlagszeiten es wert sind und wann die Bedingungen stimmen, macht oft den Unterschied zwischen einem guten und einem großartigen Tag."
       ],
       "stats": [
         {
@@ -636,7 +636,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "coursesHint": "Wischen oder scrollen, um zu schauen",
       "newsletterEyebrow": "DER NEWSLETTER",
       "newsletterTitle": "Golf-Einblicke direkt ins Postfach.",
-      "newsletterBody": "Platzbedingungen, sobald ich sie spiele. Welche Startzeiten es wert sind, wofür die Grüns schnell laufen und was Sie vor dem Abflug wissen sollten. Alle zwei Wochen, jederzeit abbestellbar."
+      "newsletterBody": "Platzbedingungen, sobald ich sie spiele. Welche Startzeiten es wert sind, wo die Grüns schnell laufen und was Sie vor dem Abflug wissen sollten. Alle zwei Wochen, jederzeit abbestellbar."
     }
   },
   "fr": {

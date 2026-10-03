@@ -364,7 +364,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "title": "Der Tag verändert sich je nachdem, wer am ersten Abschlag steht.",
       "cards": [
         {
-          "title": "Ernsthafte Golfer, die einen unvergesslichen Tag wollen",
+          "title": "Ernsthafte Golfer, die einen Tag wollen, an den sie sich erinnern",
           "text": "Sie spielen nicht nur 18 Löcher. Sie spielen mit einem Profi, der den Platz kennt, die Entscheidungen mitdenkt und den Tag richtig aufzieht."
         },
         {
@@ -483,7 +483,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "price": "Preis auf Anfrage",
           "note": "5% Verwaltungsgebühr nur auf Greenfees. Nach Ihrem ersten Gespräch bestätigt.",
           "features": [
-            "Keine App-Recherche: Wir handhaben die Startzeiten für Sie",
+            "Keine App-Recherche: Die Startzeiten werden für Sie organisiert",
             "Plätze, die zu Ihrer Gruppe, Ihrem Level und Budget passen",
             "Routing und Rundenanzahl um Ihren Zeitplan herum geplant",
             "Buggys, Schlägerverleih und Transfers organisiert",
