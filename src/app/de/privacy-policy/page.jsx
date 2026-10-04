@@ -16,7 +16,7 @@ export default function PrivacyPolicyDE() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Datenschutzerklärung</h1>
-            <p className="legal-page__updated">Zuletzt aktualisiert: September 2026</p>
+            <p className="legal-page__updated">Zuletzt aktualisiert: Oktober 2026</p>
           </div>
 
           <section className="legal-section">
@@ -84,6 +84,7 @@ export default function PrivacyPolicyDE() {
               <li><strong>Upstash:</strong> Ihre IP-Adresse, kurzzeitig gespeichert, um Missbrauch unserer Formulare zu verhindern (Rate Limiting). Upstash hat seinen Sitz in den USA.</li>
               <li><strong>Vercel:</strong> hostet diese Website und verarbeitet dabei Standard-Webanfragedaten wie Ihre IP-Adresse und Browserinformationen. Vercel hat seinen Sitz in den USA.</li>
               <li><strong>Zoho Mail:</strong> die E-Mails, die Sie uns senden, und unsere Antworten. Unser Postfach wird im EU-Rechenzentrum von Zoho betrieben.</li>
+              <li><strong>Supabase:</strong> unsere Angebots- und Reiseplanunterlagen mit Ihrem Namen, Ihren Kontaktdaten und den Reisedaten, die Sie uns mitteilen. Sie liegen im EU-Rechenzentrum von Supabase in Irland.</li>
               <li><strong>Google (Drive und Tabellen):</strong> unsere privaten Aufzeichnungen zu Anfragen und Terminen mit Namen, Kontaktdaten, Handicap und Notizen. Google hat seinen Sitz in den USA.</li>
               <li><strong>Gesetzliche Verpflichtung:</strong> sofern gesetzlich oder von einer zuständigen Behörde gefordert</li>
             </ul>

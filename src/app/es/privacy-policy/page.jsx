@@ -15,7 +15,7 @@ export default function PrivacyPolicyES() {
           </p>
 
           <h1 style={{ marginBottom: '0.5rem' }}>Política de Privacidad</h1>
-          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualización: septiembre de 2026</p>
+          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualización: octubre de 2026</p>
 
           <section className="legal-section">
             <h2>1. Responsable del tratamiento</h2>
@@ -82,6 +82,7 @@ export default function PrivacyPolicyES() {
               <li><strong>Upstash:</strong> tu dirección IP, retenida brevemente, para evitar el uso abusivo de nuestros formularios (limitación de solicitudes). Upstash tiene su sede en Estados Unidos.</li>
               <li><strong>Vercel:</strong> aloja este sitio web y, como parte de ello, trata datos estándar de las solicitudes web, como tu dirección IP e información del navegador. Vercel tiene su sede en Estados Unidos.</li>
               <li><strong>Zoho Mail:</strong> los correos que nos envías y nuestras respuestas. Nuestro buzón está alojado en el centro de datos de Zoho en la UE.</li>
+              <li><strong>Supabase:</strong> nuestros registros de presupuestos e itinerarios, con tu nombre, tus datos de contacto y los detalles del viaje que nos facilitas. Se guardan en el centro de datos de Supabase en la UE, en Irlanda.</li>
               <li><strong>Google (Drive y Hojas de cálculo):</strong> nuestros registros privados de consultas y sesiones, que incluyen nombres, datos de contacto, hándicap y notas. Google tiene su sede en Estados Unidos.</li>
               <li><strong>Obligación legal:</strong> cuando lo exija la ley o una autoridad competente</li>
             </ul>

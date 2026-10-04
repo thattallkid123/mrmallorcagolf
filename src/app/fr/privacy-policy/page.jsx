@@ -16,7 +16,7 @@ export default function PrivacyPolicyFR() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Politique de confidentialité</h1>
-            <p className="legal-page__updated">Dernière mise à jour : septembre 2026</p>
+            <p className="legal-page__updated">Dernière mise à jour : octobre 2026</p>
           </div>
 
           <section className="legal-section">
@@ -84,6 +84,7 @@ export default function PrivacyPolicyFR() {
               <li><strong>Upstash :</strong> votre adresse IP, conservée brièvement, afin de prévenir les abus sur nos formulaires (limitation de débit). Upstash est basé aux États-Unis.</li>
               <li><strong>Vercel :</strong> héberge ce site et, à ce titre, traite des données standard de requête web telles que votre adresse IP et les informations de votre navigateur. Vercel est basé aux États-Unis.</li>
               <li><strong>Zoho Mail :</strong> les e-mails que vous nous envoyez et nos réponses. Notre boîte mail est hébergée dans le centre de données européen de Zoho.</li>
+              <li><strong>Supabase :</strong> nos devis et itinéraires, qui contiennent votre nom, vos coordonnées et les détails du voyage que vous nous communiquez. Ils sont hébergés dans le centre de données européen de Supabase, en Irlande.</li>
               <li><strong>Google (Drive et Sheets) :</strong> nos registres privés des demandes et des séances, qui contiennent des noms, des coordonnées, le handicap et des notes. Google est basé aux États-Unis.</li>
               <li><strong>Obligation légale :</strong> lorsque la loi ou une autorité compétente l&rsquo;exige</li>
             </ul>
