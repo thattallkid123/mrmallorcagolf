@@ -2440,15 +2440,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "es": {
       "metadata": {
         "title": "Cuándo jugar al golf en Mallorca (2026)",
-        "description": "Mes a mes: clima, precios, estado de los campos y cuándo Mallorca ofrece su mejor versión para el golf.",
-        "imageAlt": "La mejor época para jugar al golf en Mallorca"
+        "description": "Guía de golf en Mallorca mes a mes: clima, green fees, estado de los campos, afluencia. De un pro PGA en la isla.",
+        "imageAlt": "La mejor época del año para jugar al golf en Mallorca - mes a mes (2026)"
       },
       "meta": {
-        "badge": "Temporada",
-        "readTime": "6 min de lectura",
+        "badge": "Cuándo visitar",
+        "readTime": "4 min de lectura",
         "updated": "Marzo 2026",
         "title": "La mejor época para jugar al golf en Mallorca: mes a mes",
-        "intro": "La respuesta corta: para las mejores condiciones, primavera tardía y otoño. Para el mejor valor, mañanas de verano, el crepúsculo y el invierno.",
+        "intro": "Respuesta corta: para las mejores condiciones, finales de primavera y otoño. Para el mejor precio, las mañanas de verano, el atardecer y el invierno. La isla se juega mejor todo el año de lo que la mayoría espera.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2470,13 +2470,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "La respuesta corta es septiembre-noviembre y febrero-mayo. En Mallorca se juega bien durante todo el año, mejor de lo que mucha gente imagina, pero no todos los meses son igual de buenos para el mismo tipo de viaje."
+          "text": "Respuesta corta: septiembre-noviembre y febrero-mayo. Las condiciones son mejores todo el año de lo que la mayoría espera y, incluso en los meses más cálidos, puedes jugar temprano, y el invierno sigue siendo muy jugable. El mes equivocado para un golfista es el adecuado para otro."
         },
         {
           "items": [
             [
               "300+",
-              "D??as de sol al a??o"
+              "Días de sol al año"
             ],
             [
               "12",
@@ -2484,11 +2484,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Oct",
-              "Mi elecci??n personal"
+              "Mi mes favorito"
             ],
             [
               "30-50 %",
-              "Caída típica entre pico y ventana de valor"
+              "Bajada típica del pico a las ventanas de mejor precio"
             ]
           ]
         },
@@ -2496,75 +2496,76 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Enero-febrero"
         },
         {
-          "text": "Más tranquilo, más barato y muchas veces sorprendentemente bueno. Unos 12-16 grados. Los campos suelen estar en gran estado, y los fairways de enero aquí pueden verse mejor que muchos fairways del norte de Europa en plena temporada. Es una franja muy buena si busca valor."
+          "text": "Más tranquilo, más barato y a menudo sorprendentemente bueno. 12-16 °C. Campos en excelente estado: las calles de enero aquí igualan las de agosto en otros lugares de Europa. Hay algo de riesgo de lluvia en enero y a principios de febrero, pero a menudo vuelve el cielo azul tras un chaparrón rápido. Los green fees están en sus mínimos de temporada baja. Si quieres campos tranquilos y valor real, ven ahora."
         },
         {
           "text": "Marzo-abril"
         },
         {
-          "text": "16-20 grados, campos fuertes tras el invierno suave y menos grupos que en verano. Los green fees empiezan a subir, pero todavía no están en pico. Para muchos visitantes, está es la respuesta más segura."
+          "text": "16-20 °C, campos en muy buen estado y todavía más manejables que a finales de primavera. Los precios ya están subiendo aquí y, a mediados de marzo, muchos clubes están en la práctica en modo temporada alta. Golf estupendo, pero no la ventana de ganga que mucha gente supone."
         },
         {
-          "caption": "Marzo-abril: condiciones muy buenas y algo más de espacio"
+          "alt": "Golf de primavera en Mallorca",
+          "caption": "Marzo-abril: campos de primavera en su mejor estado, menos gente"
         },
         {
           "text": "Mayo-junio"
         },
         {
-          "text": "Muy buen clima para golf, unos 20-26 grados, tardes largas y campos en gran condición. Los precios suben con la temporada turística. Si quiere buen tiempo sin el calor duro del verano, funciona muy bien."
+          "text": "Un clima excelente para el golf y parte del mejor mantenimiento del año. Son precios de temporada alta sin lugar a dudas. Si quieres estos meses, reserva pronto y espera pagar las tarifas más altas, sobre todo en los campos más conocidos."
         },
         {
           "text": "Julio-agosto"
         },
         {
-          "text": "Caluroso (30-38 grados), y las salidas tempranas son imprescindibles. Pero aquí es donde la vieja lógica de precios de Mallorca deja de funcionar: muchos campos bajan de verdad los precios en verano, a menudo un 30-50% respecto a la temporada alta de primavera y otoño. Si el presupuesto le importa más que la temperatura perfecta, el verano puede tener mucho sentido."
+          "text": "Calor (30-38 °C) y es imprescindible salir temprano. Pero aquí es donde la vieja lógica de precios de Mallorca se rompe: muchos campos reducen las tarifas en verano, a menudo un 30-50 % respecto al pico de primavera y otoño. Si el presupuesto importa más que las temperaturas perfectas, el verano puede tener mucho sentido."
         },
         {
-          "text": "En enero, cuando muchos campos de Inglaterra y de gran parte de Europa están cerrados, encharcados o helados, aquí los fairways pueden estar impecables."
+          "text": "En enero, cuando los campos de Inglaterra y gran parte de Europa están cerrados, anegados o helados, las calles de aquí están impecables. Sigue sorprendiendo a los visitantes cada año."
         },
         {
           "text": "Septiembre-octubre"
         },
         {
-          "text": "Mi período favorito. Las temperaturas bajan a una zona muy cómoda, los campos se recuperan del verano y las condiciones son excelentes. Los precios siguen altos, pero si me pregunta cuándo vendría yo a jugar bien, está es la ventana."
+          "text": "Sigue siendo mi tramo favorito para el golf puro. Las temperaturas son agradables, los campos están en excelente estado y octubre en particular se siente brillante en la isla. Pero también es una de las ventanas más caras, así que hay que hablar de ella como golf de temporada alta, no como periodo de ganga."
         },
         {
-          "text": "Alcanada acoge en octubre de 2026 la Rolex Challenge Tour Grand Final. Si quiere ver golf de alto nivel o entender por qué esa parte de la temporada es especial, conviene saberlo."
+          "text": "Alcanada acoge la Rolex Challenge Tour Grand Final en octubre de 2026: conviene saberlo si quieres ver golf de élite mientras estás en la isla."
         },
         {
-          "alt": "October golf in Mallorca",
-          "caption": "Octubre: condiciones top y calendario potente"
+          "alt": "Rolex Challenge Tour Grand Final en Alcanada",
+          "caption": "Octubre: condiciones máximas y eventos de golf de primer nivel"
         },
         {
           "text": "Noviembre-diciembre"
         },
         {
-          "text": "Noviembre está infravalorado. Más calma, buena relación calidad-precio y todavía muchas jornadas azules. Diciembre es algo más variable, pero para el jugador flexible puede seguir siendo una gran opción."
+          "text": "Noviembre es excelente, pero la primera mitad todavía cae en esa cara ventana de otoño en muchos clubes. Diciembre es donde vuelve el mejor precio. Es más fresco y cambiante, pero a menudo mucho mejor de lo que esperan los visitantes y normalmente mucho más suave para el bolsillo."
         },
         {
-          "text": "Veredicto"
+          "text": "El veredicto"
         },
         {
-          "text": "Para las mejores condiciones, sigo recomendando primavera tardía y otoño. Para mejor valor, ahora miraría mucho más en serio junio-agosto y diciembre-febrero. Si busca golf tranquilo y precios más bajos, el invierno y los atardeceres de verano son más interesantes de lo que sugieren los consejos antiguos sobre Mallorca."
+          "text": "Para las mejores condiciones, sigo enviando a la gente a finales de primavera y otoño. Para mejor precio, ahora miraría mucho más junio-agosto y diciembre-febrero. Si quieres golf tranquilo y tarifas más bajas, el invierno y el atardecer de verano son más interesantes de lo que sugieren los consejos antiguos sobre Mallorca."
         },
         {
-          "text": "¿Estás planeando el viaje? Dime tus fechas y te ayudo a elegir el momento correcto y los campos adecuados.",
-          "linkLabel": "Ponerse en contacto →"
+          "text": "¿Planeas un viaje? Ponte en contacto: te ayudaré a elegir el momento y los campos adecuados.",
+          "linkLabel": "Planifica tu viaje →"
         }
       ]
     },
     "de": {
       "metadata": {
         "title": "Die beste Zeit für Golf auf Mallorca",
-        "description": "Monat für Monat: Wetter, Preise, Platzbedingungen und wann Mallorca als Golfziel wirklich am meisten Sinn ergibt.",
-        "imageAlt": "Die beste Zeit für Golf auf Mallorca"
+        "description": "Mallorca-Golf Monat für Monat: Wetter, Greenfees, Platzbedingungen, Andrang. Von einem PGA-Pro auf der Insel.",
+        "imageAlt": "Die beste Zeit des Jahres für Golf auf Mallorca - Monat für Monat (2026)"
       },
       "meta": {
-        "badge": "Saison",
-        "readTime": "6 Min. Lesezeit",
+        "badge": "Reisezeit",
+        "readTime": "4 Min. Lesezeit",
         "updated": "März 2026",
         "title": "Die beste Zeit für Golf auf Mallorca - Monat für Monat",
-        "intro": "Die kurze Antwort: für beste Bedingungen Spätfrühling und Herbst. Für den besten Gegenwert Sommervormittage, die Dämmerungszeiten und der Winter.",
+        "intro": "Die kurze Antwort: für reine Platzbedingungen Spätfrühling und Herbst. Für das beste Preis-Leistungs-Verhältnis Sommervormittage, die Dämmerung und der Winter. Die Insel spielt sich das ganze Jahr besser, als die meisten erwarten.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2586,7 +2587,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Die kurze Antwort: September bis November und Februar bis Mai. Mallorca spielt über das ganze Jahr besser, als viele Menschen erwarten, aber nicht jede Phase ist für jeden gleich gut."
+          "text": "Die kurze Antwort: September bis November und Februar bis Mai. Die Bedingungen sind das ganze Jahr über besser, als die meisten erwarten, und selbst in den wärmeren Monaten können Sie früh spielen, und der Winter ist weiterhin sehr gut spielbar. Der falsche Monat für den einen Golfer ist der richtige für den anderen."
         },
         {
           "items": [
@@ -2600,11 +2601,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Okt",
-              "Meine pers??nliche Wahl"
+              "Mein persönlicher Lieblingsmonat"
             ],
             [
               "30-50 %",
-              "Typischer Rückgang vom Peak ins Value-Fenster"
+              "Typischer Preisrückgang vom Peak zum Value-Fenster"
             ]
           ]
         },
@@ -2612,75 +2613,76 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Januar-Februar"
         },
         {
-          "text": "Ruhiger, günstiger und oft überraschend gut. Etwa 12 bis 16 Grad. Die Plätze sind in starkem Zustand - die Fairways hier im Januar sehen oft besser aus als in vielen nordeuropäischen Regionen mitten in der Saison. Ein sehr gutes Preis-Leistungs-Fenster."
+          "text": "Ruhiger, günstiger und oft überraschend gut. 12-16 °C. Die Plätze sind in ausgezeichnetem Zustand - die Fairways hier im Januar entsprechen den Fairways im August anderswo in Europa. Im Januar und bis in den Februar besteht etwas Regenrisiko, aber oft ist nach einem kurzen Schauer wieder blauer Himmel. Die Greenfees liegen auf ihrem Nebensaison-Tief. Wenn Sie ruhige Plätze und echten Gegenwert wollen, kommen Sie jetzt."
         },
         {
           "text": "März-April"
         },
         {
-          "text": "16-20 Grad, Plätze in sehr guter Form nach dem milden Winter, weniger Gedränge als im Sommer. Die Greenfees steigen, sind aber noch nicht auf dem Sommerniveau. Für viele Besucher ist das die sichere Antwort."
+          "text": "16-20 °C, die Plätze in sehr gutem Zustand und noch besser handhabbar als im späten Frühjahr. Die Preise steigen hier bereits, und Mitte März sind viele Clubs faktisch im Hochsaison-Modus. Großartiges Golf, aber nicht das Schnäppchenfenster, für das es viele halten."
         },
         {
-          "caption": "März-April: starke Bedingungen und noch etwas Luft auf dem Platz"
+          "alt": "Frühlingsgolf auf Mallorca",
+          "caption": "März-April: Frühlingsplätze in Bestform, weniger Andrang"
         },
         {
           "text": "Mai-Juni"
         },
         {
-          "text": "Sehr gutes Golfwetter bei etwa 20-26 Grad, lange Abende, Plätze in hervorragendem Zustand. Die Preise ziehen mit der Touristensaison an. Wenn Sie gutes Wetter wollen, aber nicht die Hitze des Hochsommers, funktioniert das gut."
+          "text": "Hervorragendes Golfwetter und einige der besten Platzbedingungen des Jahres. Das ist fest die Hochsaison-Preislage. Wenn Sie diese Monate wollen, buchen Sie früh und rechnen Sie mit den Spitzenpreisen, besonders auf den bekannteren Plätzen."
         },
         {
           "text": "Juli-August"
         },
         {
-          "text": "Heiß (30-38 Grad), frühe Startzeiten sind Pflicht. Aber genau hier kippt die alte Mallorca-Preislogik: Viele Plätze senken im Sommer tatsächlich die Preise, oft um 30-50 % gegenüber der Hochsaison im Frühjahr und Herbst. Wenn Ihnen das Budget wichtiger ist als perfekte Temperaturen, kann der Sommer wirklich Sinn ergeben."
+          "text": "Heiß (30-38 °C), frühe Startzeiten sind unverzichtbar. Aber genau hier bricht die alte Mallorca-Preislogik zusammen: Viele Plätze senken im Sommer tatsächlich die Preise, oft um 30-50 % gegenüber der Frühjahrs- und Herbstspitze. Wenn Ihnen das Budget wichtiger ist als perfekte Temperaturen, kann der Sommer wirklich Sinn ergeben."
         },
         {
-          "text": "Im Januar, wenn Plätze in England und weiten Teilen Europas geschlossen, durchnässt oder gefroren sind, sind die Fairways hier oft makellos."
+          "text": "Im Januar, wenn Plätze in England und großen Teilen Europas geschlossen, durchnässt oder gefroren sind, sind die Fairways hier makellos. Das überrascht Besucher jedes Jahr aufs Neue."
         },
         {
           "text": "September-Oktober"
         },
         {
-          "text": "Meine Lieblingsphase. Die Temperaturen sinken auf angenehme 22-26 Grad, die Plätze erholen sich vom Sommer, und die Bedingungen sind sehr stark. Die Preise bleiben hoch, aber spielerisch ist das die Phase, die ich am ehesten wählen würde."
+          "text": "Immer noch meine liebste Phase für reines Golf. Die Temperaturen sind angenehm, die Plätze in ausgezeichnetem Zustand, und besonders der Oktober fühlt sich auf der Insel großartig an. Aber das ist auch eines der teuersten Zeitfenster, also sprechen Sie davon als Hochsaison-Golf, nicht als Schnäppchenzeit."
         },
         {
-          "text": "Alcanada richtet im Oktober 2026 das Rolex Challenge Tour Grand Final aus. Für Zuschauer oder Spieler mit Anspruch ist das eine nützliche Information."
+          "text": "Alcanada richtet im Oktober 2026 das Rolex Challenge Tour Grand Final aus - gut zu wissen, wenn Sie Golf auf Elite-Niveau sehen möchten, während Sie auf der Insel sind."
         },
         {
-          "alt": "October golf in Mallorca",
-          "caption": "Oktober: Weltklasse-Bedingungen und Turniermonat"
+          "alt": "Rolex Challenge Tour Grand Final in Alcanada",
+          "caption": "Oktober: Spitzenbedingungen und Golfereignisse auf höchstem Niveau"
         },
         {
           "text": "November-Dezember"
         },
         {
-          "text": "November ist stark unterschätzt. Ruhiger, gutes Preis-Leistungs-Verhältnis und immer noch viele blaue Tage. Dezember wird variabler, kann aber für Golfer mit Flexibilität sehr gut funktionieren."
+          "text": "Der November ist hervorragend, aber die erste Hälfte liegt bei vielen Clubs noch im teuren Herbstfenster. Im Dezember kehrt das bessere Preis-Leistungs-Verhältnis zurück. Es ist kühler und wechselhafter, aber oft weit besser, als Besucher erwarten, und meist deutlich schonender fürs Portemonnaie."
         },
         {
-          "text": "Fazit"
+          "text": "Das Fazit"
         },
         {
-          "text": "Für die besten Bedingungen schicke ich Gäste weiterhin in den Spätfrühling und Herbst. Für den besseren Gegenwert würde ich inzwischen viel stärker auf Juni bis August und Dezember bis Februar schauen. Wer ruhiges Golf und niedrigere Preise sucht, findet Winter und Sommer-Dämmerung beide interessanter, als die alten Mallorca-Ratschläge vermuten lassen."
+          "text": "Für die besten Bedingungen schicke ich Leute weiterhin in den späten Frühling und den Herbst. Für besseren Gegenwert würde ich inzwischen viel genauer auf Juni-August und Dezember-Februar schauen. Wer ruhiges Golf und niedrigere Preise möchte, findet Winter und Sommerdämmerung beide interessanter, als ältere Mallorca-Ratschläge vermuten lassen."
         },
         {
-          "text": "Sie planen eine Reise? Sagen Sie mir Ihre Daten, und ich helfe Ihnen bei der richtigen Zeit und den richtigen Plätzen.",
-          "linkLabel": "Kontakt aufnehmen →"
+          "text": "Sie planen eine Reise? Melden Sie sich bei mir - ich helfe Ihnen, die richtige Zeit und die richtigen Plätze zu wählen.",
+          "linkLabel": "Ihre Reise planen →"
         }
       ]
     },
     "fr": {
       "metadata": {
         "title": "Quand jouer au golf à Majorque (2026)",
-        "description": "Mois par mois : météo, tarifs, état des parcours et quand Majorque offre sa meilleure version pour le golf.",
-        "imageAlt": "La meilleure période pour jouer au golf à Majorque"
+        "description": "Guide du golf à Majorque mois par mois : météo, green fees, état des parcours, affluence. Par un pro PGA sur l'île.",
+        "imageAlt": "La meilleure période pour jouer au golf à Majorque - mois par mois (2026)"
       },
       "meta": {
-        "badge": "Saison",
-        "readTime": "6 min de lecture",
+        "badge": "Quand venir",
+        "readTime": "4 min de lecture",
         "updated": "Mars 2026",
         "title": "Meilleure période - Mois par mois",
-        "intro": "La réponse courte : pour les meilleures conditions, fin de printemps et automne. Pour le meilleur rapport qualité-prix, les matinées d'été, le crépuscule et l'hiver.",
+        "intro": "Réponse courte : pour les meilleures conditions, la fin du printemps et l'automne. Pour le meilleur rapport qualité-prix, les matinées d'été, le crépuscule et l'hiver. L'île se joue mieux toute l'année que la plupart ne le pensent.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2702,7 +2704,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "La réponse courte est septembre-novembre et février-mai. On joue mieux à Majorque toute l'année que beaucoup l'imaginent, mais toutes les périodes ne conviennent pas au même type de voyage."
+          "text": "Réponse courte : septembre-novembre et février-mai. Les conditions sont meilleures toute l'année que la plupart ne le pensent et, même pendant les mois chauds, vous pouvez jouer tôt, et l'hiver reste très jouable. Le mauvais mois pour un golfeur est le bon pour un autre."
         },
         {
           "items": [
@@ -2716,11 +2718,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "Oct",
-              "Mon choix personnel"
+              "Mon mois préféré"
             ],
             [
               "30-50 %",
-              "Réduction de tarif en basse saison"
+              "Baisse type entre haute saison et périodes creuses"
             ]
           ]
         },
@@ -2728,75 +2730,76 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Janvier-février"
         },
         {
-          "text": "Plus calme, moins cher et souvent meilleur que prévu. Environ 12-16 degrés. Les parcours sont très solides, et les fairways de janvier ici peuvent être meilleurs que ceux de nombreuses régions d'Europe du Nord en pleine saison. Très bon moment pour le rapport qualité-prix."
+          "text": "Plus calme, moins cher et souvent étonnamment bon. 12-16 °C. Parcours en excellent état : les fairways de janvier ici valent ceux d'août ailleurs en Europe. Un peu de risque de pluie en janvier et début février, mais souvent le ciel bleu revient après une averse rapide. Les green fees sont à leur plus bas hors saison. Si vous voulez des parcours calmes et un vrai rapport qualité-prix, venez maintenant."
         },
         {
           "text": "Mars-avril"
         },
         {
-          "text": "16-20 degrés, parcours en grande forme après un hiver doux, moins de groupes qu'en été. Les green fees montent, mais pas encore au sommet. Pour beaucoup de visiteurs, c'est la réponse la plus sûre."
+          "text": "16-20 °C, parcours en très bon état et encore plus faciles à aborder qu'à la fin du printemps. Les prix montent déjà ici, et à la mi-mars beaucoup de clubs sont de fait en mode haute saison. Du golf formidable, mais pas la période d'aubaine que beaucoup imaginent."
         },
         {
-          "caption": "Mars-avril : très bonnes conditions et un peu plus d'espace"
+          "alt": "Golf de printemps à Majorque",
+          "caption": "Mars-avril : parcours de printemps en pleine forme, moins de monde"
         },
         {
           "text": "Mai-juin"
         },
         {
-          "text": "Très bonne météo pour le golf, longues soirées et parcours en excellent état. Les tarifs montent avec la saison touristique. Si vous voulez du beau temps sans la lourdeur de l'été, cela fonctionne très bien."
+          "text": "Une météo excellente pour le golf et certains des meilleurs états de parcours de l'année. Ce sont clairement des tarifs de haute saison. Si vous voulez ces mois, réservez tôt et attendez-vous à payer les tarifs les plus élevés, surtout sur les parcours les plus connus."
         },
         {
           "text": "Juillet-août"
         },
         {
-          "text": "Chaud (30-38 degrés), les départs tôt le matin sont indispensables. Mais c'est là que l'ancienne logique tarifaire de Majorque ne tient plus : de nombreux parcours baissent réellement leurs prix en été, souvent de 30 à 50 % par rapport à la haute saison du printemps et de l'automne. Si le budget compte plus que la température parfaite, l'été peut vraiment avoir du sens."
+          "text": "Chaud (30-38 °C), et les départs tôt sont indispensables. Mais c'est là que l'ancienne logique tarifaire de Majorque s'effondre : beaucoup de parcours baissent réellement leurs tarifs en été, souvent de 30-50 % par rapport à la pointe du printemps et de l'automne. Si le budget compte plus que des températures parfaites, l'été peut avoir beaucoup de sens."
         },
         {
-          "text": "En janvier, quand beaucoup de parcours en Angleterre et dans une grande partie de l'Europe sont fermés, détrempés ou gelés, les fairways ici peuvent être impeccables."
+          "text": "En janvier, quand les parcours d'Angleterre et d'une grande partie de l'Europe sont fermés, détrempés ou gelés, les fairways d'ici sont impeccables. Cela surprend encore les visiteurs chaque année."
         },
         {
           "text": "Septembre-octobre"
         },
         {
-          "text": "Ma fenêtre préférée. Les températures redescendent, les parcours se remettent de l'été et les conditions deviennent excellentes. Les prix restent élevés, mais si vous me demandez quand je viendrais moi-même jouer, c'est cette période."
+          "text": "Toujours ma période préférée pour le golf pur. Les températures sont agréables, les parcours en excellent état, et octobre en particulier est magnifique sur l'île. Mais c'est aussi l'une des périodes les plus chères : parlez-en comme de golf de haute saison, pas comme d'une période d'aubaine."
         },
         {
-          "text": "Alcanada accueille en octobre 2026 la Rolex Challenge Tour Grand Final. C'est utile à savoir si vous voulez voir du très bon golf ou comprendre pourquoi cette partie de l'année est si forte."
+          "text": "Alcanada accueille la Rolex Challenge Tour Grand Final en octobre 2026 : bon à savoir si vous voulez voir du golf de très haut niveau pendant votre séjour."
         },
         {
-          "alt": "October golf in Mallorca",
-          "caption": "Octobre : conditions haut de gamme et calendrier fort"
+          "alt": "Rolex Challenge Tour Grand Final à Alcanada",
+          "caption": "Octobre : conditions optimales et événements de golf de haut niveau"
         },
         {
           "text": "Novembre-décembre"
         },
         {
-          "text": "Novembre est sous-estimé. Plus calme, meilleur rapport qualité-prix et encore beaucoup de journées bleues. Décembre devient un peu plus variable, mais reste une très bonne option pour les joueurs flexibles."
+          "text": "Novembre est excellent, mais la première quinzaine reste dans cette coûteuse fenêtre d'automne dans beaucoup de clubs. En décembre, le meilleur rapport qualité-prix revient. C'est plus frais et plus changeant, mais souvent bien meilleur que ce que les visiteurs imaginent, et généralement bien plus doux pour le portefeuille."
         },
         {
-          "text": "Verdict"
+          "text": "Le verdict"
         },
         {
-          "text": "Pour les meilleures conditions, je continue de recommander la fin du printemps et l'automne. Pour un meilleur rapport qualité-prix, je regarderais désormais bien plus sérieusement juin-août et décembre-février. Si vous cherchez un golf tranquille et des tarifs plus bas, l'hiver et les crépuscules d'été sont tous deux plus intéressants que ne le suggèrent les anciens conseils sur Majorque."
+          "text": "Pour les meilleures conditions, j'oriente toujours les gens vers la fin du printemps et l'automne. Pour un meilleur rapport qualité-prix, je regarderais désormais bien plus juin-août et décembre-février. Si vous voulez un golf calme et des tarifs plus bas, l'hiver et le crépuscule d'été sont tous deux plus intéressants que ne le suggèrent les anciens conseils sur Majorque."
         },
         {
-          "text": "Vous préparez un voyage ? Donnez-moi vos dates et je vous aide à choisir la bonne période et les bons parcours.",
-          "linkLabel": "Prendre contact →"
+          "text": "Vous préparez un voyage ? Contactez-moi : je vous aiderai à choisir la bonne période et les bons parcours.",
+          "linkLabel": "Planifiez votre voyage →"
         }
       ]
     },
     "nl": {
       "metadata": {
         "title": "Beste tijd voor golf op Mallorca (2026)",
-        "description": "Maand voor maand: weer, prijzen, baancondities en wanneer Mallorca op zijn best is voor golf.",
-        "imageAlt": "De beste tijd om golf te spelen op Mallorca"
+        "description": "Golf op Mallorca maand voor maand: weer, greenfees, baanconditie, drukte. Van een PGA-pro op het eiland.",
+        "imageAlt": "De beste tijd van het jaar om te golfen op Mallorca - maand voor maand (2026)"
       },
       "meta": {
-        "badge": "Seizoen",
-        "readTime": "6 min leestijd",
+        "badge": "Wanneer bezoeken",
+        "readTime": "4 min leestijd",
         "updated": "Maart 2026",
         "title": "Beste tijd - Maand voor maand",
-        "intro": "Het korte antwoord: voor de beste omstandigheden, laat voorjaar en herfst. Voor de beste waarde, zomerochtenden, de schemering en de winter.",
+        "intro": "Kort antwoord: voor pure omstandigheden het late voorjaar en de herfst. Voor de beste prijs-kwaliteit zomerochtenden, de schemering en de winter. Het eiland speelt het hele jaar beter dan de meeste mensen verwachten.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2818,25 +2821,25 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Het korte antwoord is september-november en februari-mei. Mallorca speelt het hele jaar beter dan veel mensen denken, maar niet elke periode is voor hetzelfde type reis even goed."
+          "text": "Kort antwoord: september-november en februari-mei. De omstandigheden zijn het hele jaar beter dan de meeste mensen verwachten en zelfs in de warmere maanden kun je vroeg spelen, terwijl de winter nog steeds heel goed speelbaar is. De verkeerde maand voor de ene golfer is de juiste voor de andere."
         },
         {
           "items": [
             [
               "300+",
-              "Zonnedagen per jaar"
+              "Zonnige dagen per jaar"
             ],
             [
               "12",
               "Maanden speelbaar"
             ],
             [
-              "Oct",
-              "Mijn persoonlijke keuze"
+              "Okt",
+              "Mijn favoriete maand"
             ],
             [
               "30-50%",
-              "Lagere greenfees in het laagseizoen"
+              "Typische daling van piek naar voordelige periodes"
             ]
           ]
         },
@@ -2844,75 +2847,76 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Januari-februari"
         },
         {
-          "text": "Rustiger, goedkoper en vaak verrassend goed. Ongeveer 12-16 graden. De banen liggen er sterk bij, en fairways in januari zien er hier vaak beter uit dan in veel delen van Noord-Europa midden in het seizoen. Sterk waardemoment."
+          "text": "Rustiger, goedkoper en vaak verrassend goed. 12-16 °C. Banen in uitstekende staat - de fairways hier in januari doen niet onder voor die van augustus elders in Europa. Er is wat regenrisico in januari en begin februari, maar vaak is er na een snelle bui weer een blauwe lucht. De greenfees zitten op hun laagste niveau buiten het seizoen. Wil je rustige banen en echte waarde, kom dan nu."
         },
         {
           "text": "Maart-april"
         },
         {
-          "text": "16-20 graden, banen in goede vorm na een zachte winter, minder groepen dan in de zomer. Greenfees lopen op, maar zitten nog niet op hun piek. Voor veel bezoekers is dit het veilige antwoord."
+          "text": "16-20 °C, banen in zeer goede staat en nog beter te doen dan in het late voorjaar. De prijzen lopen hier al op, en half maart zitten veel clubs feitelijk al in hoogseizoenmodus. Geweldig golf, maar niet het koopjesvenster dat veel mensen denken."
         },
         {
-          "caption": "Maart-april: sterke omstandigheden en nog wat ruimte"
+          "alt": "Voorjaarsgolf op Mallorca",
+          "caption": "Maart-april: voorjaarsbanen in topconditie, minder drukte"
         },
         {
           "text": "Mei-juni"
         },
         {
-          "text": "Zeer goed golfweer, lange avonden en banen in uitstekende conditie. De prijzen stijgen met het toeristenseizoen mee. Als je goed weer wilt zonder de volle zomerhitte, werkt dit uitstekend."
+          "text": "Uitstekend golfweer en een deel van de beste baanconditie van het jaar. Dit zijn onmiskenbaar hoogseizoenprijzen. Wil je deze maanden, boek dan vroeg en reken op de topprijzen, vooral op de bekendere banen."
         },
         {
           "text": "Juli-augustus"
         },
         {
-          "text": "Heet (30-38 graden), vroege tee times zijn essentieel. Maar hier klopt de oude Mallorca-prijslogica niet meer: veel banen verlagen hun tarieven in de zomer echt, vaak met 30-50% ten opzichte van het hoogseizoen in voorjaar en herfst. Als budget belangrijker is dan de perfecte temperatuur, kan de zomer echt de moeite waard zijn."
+          "text": "Heet (30-38 °C) en vroege starttijden zijn essentieel. Maar hier valt de oude Mallorca-prijslogica uit elkaar: veel banen verlagen in de zomer juist hun tarieven, vaak met 30-50% ten opzichte van de piek in voorjaar en herfst. Als budget belangrijker is dan perfecte temperaturen, kan de zomer echt zinvol zijn."
         },
         {
-          "text": "In januari, wanneer banen in Engeland en grote delen van Europa gesloten, drassig of bevroren zijn, kunnen de fairways hier er onberispelijk bij liggen."
+          "text": "In januari, als banen in Engeland en een groot deel van Europa gesloten, drassig of bevroren zijn, liggen de fairways hier er onberispelijk bij. Dat verrast bezoekers elk jaar weer."
         },
         {
           "text": "September-oktober"
         },
         {
-          "text": "Mijn favoriete venster. De temperatuur zakt, de banen herstellen van de zomer en de omstandigheden worden uitstekend. De prijzen blijven hoog, maar als je mij vraagt wanneer ik zelf zou komen spelen, dan is dit het."
+          "text": "Nog steeds mijn favoriete periode voor puur golf. De temperaturen zijn aangenaam, de banen in uitstekende staat en vooral oktober voelt schitterend op het eiland. Maar dit is ook een van de duurste periodes, dus spreek erover als hoogseizoengolf, niet als koopjesperiode."
         },
         {
-          "text": "Alcanada ontvangt in oktober 2026 de Rolex Challenge Tour Grand Final. Handig om te weten als je topgolf wilt zien of gewoon wilt begrijpen waarom dit deel van het jaar zo sterk is."
+          "text": "Alcanada organiseert in oktober 2026 de Rolex Challenge Tour Grand Final - goed om te weten als je golf op elite-niveau wilt zien terwijl je op het eiland bent."
         },
         {
-          "alt": "October golf in Mallorca",
-          "caption": "Oktober: topcondities en een sterke golfmaand"
+          "alt": "Rolex Challenge Tour Grand Final op Alcanada",
+          "caption": "Oktober: topomstandigheden en golfevenementen op het hoogste niveau"
         },
         {
           "text": "November-december"
         },
         {
-          "text": "November wordt onderschat. Rustiger, betere waarde en nog steeds veel blauwe dagen. December wordt iets wisselvalliger, maar voor flexibele golfers kan het nog steeds heel goed werken."
+          "text": "November is uitstekend, maar de eerste helft zit bij veel clubs nog in dat dure herfstvenster. In december komt de betere prijs-kwaliteit terug. Het is koeler en wisselvalliger, maar vaak veel beter dan bezoekers verwachten en meestal een stuk milder voor de portemonnee."
         },
         {
-          "text": "Oordeel"
+          "text": "Het oordeel"
         },
         {
-          "text": "Voor de beste omstandigheden stuur ik mensen nog steeds naar laat voorjaar en herfst. Voor betere waarde zou ik nu veel serieuzer kijken naar juni-augustus en december-februari. Wil je rustig golf en lagere tarieven, dan zijn winter en zomerschemering allebei interessanter dan het oude Mallorca-advies doet vermoeden."
+          "text": "Voor de beste omstandigheden stuur ik mensen nog steeds naar het late voorjaar en de herfst. Voor betere prijs-kwaliteit zou ik nu veel beter kijken naar juni-augustus en december-februari. Wil je rustig golf en lagere tarieven, dan zijn winter en zomerse schemering allebei interessanter dan oudere Mallorca-adviezen doen vermoeden."
         },
         {
-          "text": "Plan je een reis? Stuur me je data en ik help je kiezen welke periode en welke banen het beste passen.",
-          "linkLabel": "Neem contact op →"
+          "text": "Een reis aan het plannen? Neem contact op - ik help je de juiste tijd en de juiste banen te kiezen.",
+          "linkLabel": "Plan je reis →"
         }
       ]
     },
     "sv": {
       "metadata": {
         "title": "Bästa tiden att spela golf på Mallorca",
-        "description": "Månad för månad: väder, priser, banförhållanden och när Mallorca är som bäst för golf.",
-        "imageAlt": "Bästa tiden att spela golf på Mallorca"
+        "description": "Golf på Mallorca månad för månad: väder, greenfees, banornas skick, folkmängd. Från en PGA-pro på ön.",
+        "imageAlt": "Den bästa tiden på året att spela golf på Mallorca - månad för månad (2026)"
       },
       "meta": {
-        "badge": "Säsong",
-        "readTime": "6 min läsning",
+        "badge": "När du ska åka",
+        "readTime": "4 min läsning",
         "updated": "Mars 2026",
         "title": "Bästa tiden att spela golf på Mallorca - månad för månad",
-        "intro": "Det korta svaret: för bästa förhållanden, sen vår och höst. För bäst värde, sommarmorgnar, skymningstid och vintern.",
+        "intro": "Kort svar: för rena förhållanden senvåren och hösten. För bäst valuta sommarmorgnar, skymning och vintern. Ön spelar bättre året runt än de flesta tror.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2934,7 +2938,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Det korta svaret är september-november och februari-maj. Mallorca spelar bättre över hela året än många tror, men alla perioder passar inte samma typ av resa."
+          "text": "Kort svar: september-november och februari-maj. Förhållandena är bättre året runt än de flesta tror, och även under de varmare månaderna kan du spela tidigt, medan vintern fortfarande är mycket spelbar. Fel månad för en golfare är rätt månad för en annan."
         },
         {
           "items": [
@@ -2944,15 +2948,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "12",
-              "Månader spelbara"
+              "Spelbara månader"
             ],
             [
-              "Oct",
-              "Mitt personliga val"
+              "Okt",
+              "Min favoritmånad"
             ],
             [
-              "30-50%",
-              "Lägre avgifter under lågsäsong"
+              "30-50 %",
+              "Typisk prisnedgång från topp till förmånliga perioder"
             ]
           ]
         },
@@ -2960,75 +2964,76 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Januari-februari"
         },
         {
-          "text": "Lugnare, billigare och ofta överraskande bra. Runt 12-16 grader. Banorna är i fint skick, och fairways i januari ser här ofta bättre ut än i många delar av norra Europa mitt i säsong. Stark period för värde."
+          "text": "Lugnare, billigare och ofta förvånansvärt bra. 12-16 °C. Banorna är i utmärkt skick - fairwayerna här i januari matchar augustifairwayerna på andra håll i Europa. Det finns viss regnrisk i januari och in i februari, men ofta är himlen blå igen efter en snabb skur. Greenfeen ligger på sina lägsta nivåer utanför säsong. Vill du ha lugna banor och riktig valuta, kom nu."
         },
         {
           "text": "Mars-april"
         },
         {
-          "text": "16-20 grader, banor i bra form efter en mild vinter, mindre trängsel än på sommaren. Greenfeen stiger men är inte på toppnivå. För många besökare är det här det säkra svaret."
+          "text": "16-20 °C, banorna i mycket gott skick och fortfarande lättare att hantera än på senvåren. Priserna stiger redan här, och i mitten av mars är många klubbar i praktiken i högsäsongsläge. Fantastisk golf, men inte det kuppfönster många tror."
         },
         {
-          "caption": "Mars-april: starka förhållanden och lite mer plats"
+          "alt": "Vårgolf på Mallorca",
+          "caption": "Mars-april: vårbanor i toppskick, färre människor"
         },
         {
           "text": "Maj-juni"
         },
         {
-          "text": "Mycket bra golfväder, långa kvällar och banor i toppskick. Priserna stiger med turistsäsongen. Vill du ha bra väder utan den tyngsta sommarhettan fungerar det mycket bra."
+          "text": "Utmärkt golfväder och en del av årets bästa banskötsel. Det här är tveklöst högsäsongspriser. Vill du ha de här månaderna, boka tidigt och räkna med de högsta priserna, särskilt på de mer kända banorna."
         },
         {
           "text": "Juli-augusti"
         },
         {
-          "text": "Varmt (30-38 grader), tidiga tee times är ett måste. Men det är just här den gamla Mallorca-prislogiken faller: många banor sänker faktiskt priserna på sommaren, ofta med 30-50 % jämfört med högsäsong under vår och höst. Om budget spelar större roll än perfekt temperatur kan sommaren verkligen vara värd att överväga."
+          "text": "Hett (30-38 °C) och tidiga starttider är ett måste. Men det är här den gamla Mallorca-prislogiken faller: många banor sänker faktiskt priserna på sommaren, ofta med 30-50 % jämfört med topparna på våren och hösten. Om budgeten betyder mer än perfekta temperaturer kan sommaren verkligen vara värd det."
         },
         {
-          "text": "I januari, när banor i England och stora delar av Europa är stängda, vattensjuka eller frusna, kan fairways här vara i närmast perfekta skick."
+          "text": "I januari, när banor i England och stora delar av Europa är stängda, vattensjuka eller frusna, är fairwayerna här oklanderliga. Det förvånar besökare varje år."
         },
         {
           "text": "September-oktober"
         },
         {
-          "text": "Min favoritperiod. Temperaturen sjunker, banorna återhämtar sig efter sommaren och förhållandena blir riktigt starka. Priserna är fortfarande höga, men om du frågar när jag själv skulle komma hit för att spela, är det nu."
+          "text": "Fortfarande min favoritperiod för ren golf. Temperaturerna är behagliga, banorna i utmärkt skick, och särskilt oktober känns fantastisk på ön. Men det är också ett av de dyraste fönstren, så tala om det som högsäsongsgolf, inte som en kupperiod."
         },
         {
-          "text": "Alcanada står värd för Rolex Challenge Tour Grand Final i oktober 2026. Bra att veta om du vill se toppgolf eller bara förstå varför just den delen av året är så stark."
+          "text": "Alcanada är värd för Rolex Challenge Tour Grand Final i oktober 2026 - bra att veta om du vill se golf på elitnivå medan du är på ön."
         },
         {
-          "alt": "October golf in Mallorca",
-          "caption": "Oktober: toppförhållanden och stark golfmånad"
+          "alt": "Rolex Challenge Tour Grand Final på Alcanada",
+          "caption": "Oktober: toppförhållanden och golfevenemang på högsta nivå"
         },
         {
           "text": "November-december"
         },
         {
-          "text": "November är underskattad. Lugnare, bättre värde och fortfarande många blå dagar. December blir lite mer varierande, men för flexibla spelare kan det fortfarande vara mycket bra."
+          "text": "November är utmärkt, men första halvan ligger på många klubbar fortfarande i det dyra höstfönstret. I december kommer den bättre valutan tillbaka. Det är svalare och mer växlande, men ofta mycket bättre än besökare tror och oftast betydligt skonsammare mot plånboken."
         },
         {
-          "text": "Omdöme"
+          "text": "Domen"
         },
         {
-          "text": "För bästa förhållanden pekar jag fortfarande på sen vår och höst. För bättre värde skulle jag nu titta mycket mer på juni-augusti och december-februari. Vill du ha lugnt golf och lägre priser är både vintern och sommarens skymningstid mer intressanta än äldre Mallorca-råd antyder."
+          "text": "För de bästa förhållandena pekar jag fortfarande folk mot senvåren och hösten. För bättre valuta skulle jag nu titta mycket hårdare på juni-augusti och december-februari. Vill du ha lugn golf och lägre priser är vintern och sommarskymningen båda intressantare än äldre Mallorca-råd antyder."
         },
         {
-          "text": "Planerar du en resa? Skicka dina datum så hjälper jag dig att välja rätt period och rätt banor.",
-          "linkLabel": "Hoer av dig →"
+          "text": "Planerar du en resa? Hör av dig - jag hjälper dig att välja rätt tid och rätta banor.",
+          "linkLabel": "Planera din resa →"
         }
       ]
     },
     "zh": {
       "metadata": {
         "title": "马略卡打高尔夫的最佳时间",
-        "description": "按月份看天气、价格、球场状态，以及什么时候来马略卡打球最舒服、最值得。",
-        "imageAlt": "马略卡打高尔夫的最佳时间"
+        "description": "马略卡高尔夫逐月指南：天气、果岭费、球场状态、人流。来自岛上 PGA 职业教练。",
+        "imageAlt": "马略卡打高尔夫的最佳时间 - 逐月解析（2026）"
       },
       "meta": {
-        "badge": "季节指南",
-        "readTime": "6分钟阅读",
+        "badge": "最佳时间",
+        "readTime": "4分钟阅读",
         "updated": "2026年3月",
         "title": "马略卡打高尔夫的最佳时间：按月来看",
-        "intro": "短答案是：论条件最好，是暮春和秋季。论性价比最高，是夏季清晨、黄昏时段和冬季。",
+        "intro": "简短回答：想要最好的球场状态，选晚春和秋天。想要性价比，选夏季清晨、黄昏和冬季。这座岛全年的打球体验都比大多数人想象的要好。",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -3050,86 +3055,87 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "最短的答案是：9-11月，以及2-5月。马略卡全年都能打球，而且整体状态比很多人以为的更稳定，但不是每个月都适合同一种类型的球旅。"
+          "text": "简短回答：9 月至 11 月和 2 月至 5 月。这里全年的球场状态都比大多数人想象的要好，即使在较热的月份你也可以打早场，而冬天依然非常适合打球。对一位球手来说不合适的月份，对另一位可能正好合适。"
         },
         {
           "items": [
             [
               "300+",
-              "每年晴天数"
+              "每年阳光天数"
             ],
             [
               "12",
-              "全年可打"
+              "可打球的月数"
             ],
             [
-              "10月",
-              "我的个人选择"
+              "10 月",
+              "我最喜欢的月份"
             ],
             [
               "30-50%",
-              "淡季费用下降幅度"
+              "从旺季到性价比时段的典型降幅"
             ]
           ]
         },
         {
-          "text": "1月-2月"
+          "text": "1 月至 2 月"
         },
         {
-          "text": "更安静、更便宜，而且经常比预期更好。大约12-16摄氏度。球场整体状态通常很不错，这里1月的球道，有时看起来比北欧很多地区旺季时还整齐。如果你想控制预算，这是很好的窗口。"
+          "text": "更安静、更便宜，往往出人意料地好。12-16°C。球场状态极佳，这里 1 月的球道，可以媲美欧洲其他地方 8 月的球道。1 月到 2 月有些下雨风险，但一场急雨后往往又是蓝天。果岭费处于淡季低点。如果你想要安静的球场和真正的性价比，现在就来。"
         },
         {
-          "text": "3月-4月"
+          "text": "3 月至 4 月"
         },
         {
-          "text": "16-20摄氏度，经过温和冬季后球场状态很强，场上也没有夏天那么挤。果岭费会开始往上走，但还没到顶。这对很多游客来说，是最稳妥的答案。"
+          "text": "16-20°C，球场状态很好，而且比晚春更容易应付。这里的价格已经在上涨，到 3 月中旬很多俱乐部实际上已进入旺季模式。球打得很棒，但不是很多人以为的捡便宜窗口。"
         },
         {
-          "caption": "3月-4月：球场状态强，场上也还留有空间"
+          "alt": "马略卡春季高尔夫",
+          "caption": "3 月至 4 月：春季球场状态最佳，人更少"
         },
         {
-          "text": "5月-6月"
+          "text": "5 月至 6 月"
         },
         {
-          "text": "很好的高尔夫天气，白天长，球场状态也很漂亮。价格会随着旅游季上升。如果你想要好天气，但不想碰上盛夏最硬的热，这段时间很好。"
+          "text": "绝佳的打球天气，也是一年中球场养护最好的时段之一。这里毫无疑问是旺季价格。如果你想在这几个月来，就早点订，并做好支付最高价的准备，尤其是在知名度更高的球场。"
         },
         {
-          "text": "7月-8月"
+          "text": "7 月至 8 月"
         },
         {
-          "text": "炎热（30-38摄氏度），早开球时间是必须的。但这正是马略卡老式定价逻辑失效的地方：不少球场夏天真的会降价，通常比春秋旺季低30-50%。如果预算比完美气温更重要，夏天其实很值得考虑。"
+          "text": "炎热（30-38°C），早场开球时间必不可少。但正是在这里，马略卡旧有的定价逻辑失效了：很多球场夏季反而降价，通常比春秋旺季低 30-50%。如果预算比完美的气温更重要，夏天真的可以考虑。"
         },
         {
-          "text": "1月时，当英格兰和欧洲很多地方的球场不是关门就是积水、结霜，这里的球道却常常已经很好。"
+          "text": "在 1 月，当英国和欧洲大部分地区的球场关闭、积水或结冰时，这里的球道依然无可挑剔。这每年都让游客感到惊讶。"
         },
         {
-          "text": "9月-10月"
+          "text": "9 月至 10 月"
         },
         {
-          "text": "这是我最喜欢的窗口。气温回落到舒服的区间，球场从夏天恢复过来，整体条件非常强。价格还是高，但如果你问我自己会选什么时候来打，我会选这个时间段。"
+          "text": "依然是我最喜欢的纯打球时段。气温舒适，球场状态极佳，尤其是 10 月，在岛上感觉格外美好。但这也是最贵的时段之一，所以要把它当作旺季高尔夫来谈，而不是捡便宜的时期。"
         },
         {
-          "text": "Alcanada会在2026年10月举办Rolex Challenge Tour Grand Final。如果你想看高水平比赛，或者想理解为什么这一段时间这么值得来，知道这件事会有帮助。"
+          "text": "Alcanada 将在 2026 年 10 月举办劳力士挑战巡回赛总决赛，如果你想在岛上看顶级赛事，值得留意。"
         },
         {
-          "alt": "October golf in Mallorca",
-          "caption": "10月：顶级球场状态，也是很强的比赛月份"
+          "alt": "Alcanada 劳力士挑战巡回赛总决赛",
+          "caption": "10 月：顶级球场状态和高水平赛事"
         },
         {
-          "text": "11月-12月"
+          "text": "11 月至 12 月"
         },
         {
-          "text": "11月被低估了。更安静，性价比更好，而且依然有大量蓝天。12月会稍微更不稳定一些，但如果你的行程有弹性，仍然可以很好。"
+          "text": "11 月非常好，但上半月在很多俱乐部仍处于昂贵的秋季窗口。12 月则是更好性价比回归的时候。天气更凉、更多变，但往往比游客想象的好得多，通常对钱包也友好得多。"
         },
         {
           "text": "结论"
         },
         {
-          "text": "论最佳条件，我依然会推荐暮春和秋季。论性价比，现在我会更认真地考虑6月到8月，以及12月到2月。如果你想要清静的球场和更低的价格，冬季和夏季黄昏时段都比过去的马略卡建议更值得关注。"
+          "text": "想要最好的球场状态，我仍然建议人们选晚春和秋季。想要更高的性价比，我现在会更认真地考虑 6 月至 8 月和 12 月至 2 月。如果你想要安静的球场和更低的价格，冬季和夏季黄昏，都比旧的马略卡建议所说的更有意思。"
         },
         {
-          "text": "如果你正在规划行程，把日期发给我，我可以帮你判断最适合的时间和球场。也可以直接加微信：andygriffiths1。",
-          "linkLabel": "联系我 →"
+          "text": "在规划行程？联系我，我会帮你选对时间和球场。",
+          "linkLabel": "规划你的行程 →"
         }
       ]
     }
@@ -5508,15 +5514,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "es": {
       "metadata": {
         "title": "¿Mallorca es buena para el golf? Sí",
-        "description": "Una respuesta honesta sobre si Mallorca merece la pena como destino de golf: calidad de campos, clima, desplazamientos y para quien encaja mejor.",
-        "imageAlt": "¿Es Mallorca buena para el golf?"
+        "description": "24 campos, sol todo el año, €55–€260. La respuesta honesta de un pro PGA: campos, condiciones y expectativas.",
+        "imageAlt": "¿Es Mallorca buena para el golf? La respuesta de un Profesional PGA"
       },
       "meta": {
-        "badge": "Guía",
-        "readTime": "5 min de lectura",
+        "badge": "Visión general",
+        "readTime": "6 min de lectura",
         "updated": "Marzo 2026",
         "title": "¿Mallorca buena para golf? Respuesta honesta",
-        "intro": "Sí. Pero la respuesta correcta es un poco más completa, y ahí está justamente el valor.",
+        "intro": "Sí. Pero aquí tienes la respuesta completa, porque Mallorca es buena para el golf de maneras que no resultan evidentes desde fuera.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5538,28 +5544,29 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Sí. Pero prefiero dar la respuesta correcta antes que la más fácil. Mallorca es buena para el golf de formas que no son tan obvias desde fuera, y precisamente por eso mucha gente la subestima."
+          "text": "Sí. Pero déjame darte la respuesta completa, porque Mallorca es buena para el golf de maneras que no resultan evidentes desde fuera."
         },
         {
-          "text": "Los campos son realmente de nivel alto"
+          "text": "Los campos están entre los mejores de Europa"
         },
         {
-          "text": "Son Gual está, para mí, entre los mejores campos de Europa. Alcanada es uno de los recorridos más escénicos del continente. Son Muntaner fue nombrado mejor campo de España en 2025. No es una primera fila débil, y por debajo todavía queda bastante profundidad."
+          "text": "Son Gual está entre los mejores campos de Europa. Alcanada es uno de los más espectaculares del continente. Son Muntaner fue elegido Mejor Campo de Golf de España en los World Golf Awards 2025. Andratx es uno de los campos más difíciles de España. No son recorridos de resort, sino trazados serios diseñados por arquitectos serios."
         },
         {
-          "caption": "Son Gual - un campo de nivel europeo, no solo mallorquín"
+          "alt": "Campo de golf Son Gual",
+          "caption": "Son Gual: uno de los mejores campos de Europa"
         },
         {
-          "text": "Las condiciones son fuertes casi todo el año"
+          "text": "Las condiciones son excelentes todo el año"
         },
         {
-          "text": "300 días de sol al año. En enero, cuando gran parte de Europa tiene campos cerrados o muy limitados, aquí los fairways pueden estar en gran estado. Eso fue una de las primeras cosas que me llamó la atención al llegar desde Shanghai."
+          "text": "300 días de sol. En enero, cuando los campos de gran parte de Europa están cerrados o son injugables, las calles de aquí están impecables. Me mudé desde Shanghái, pero crecí en el Reino Unido, y el estado de los campos fuera de temporada fue lo primero que me sorprendió."
         },
         {
-          "text": "24 campos en una isla relativamente compacta"
+          "text": "24 campos en una isla relativamente pequeña"
         },
         {
-          "text": "Vengo de Shanghai: 27 millones de personas y 12 campos. Aquí hay 24 campos en una isla donde, en una hora de coche, alcanza para muchísimo. Para el visitante, esa densidad es una ventaja real."
+          "text": "Viniendo de Shanghái, 27 millones de personas con solo 12 campos, la densidad de golf de calidad a un máximo de una hora en coche es notable. Una semana en la isla puede incluir cuatro o cinco rondas realmente distintas y excelentes. Suroeste, costa este, norte, el centro de Palma: cada zona tiene su propio carácter y no un recorrido de resort todo igual. La lista completa de cada campo con green fees y valoraciones honestas está en la página de <a href=\"/es/golf-courses\">campos de golf de Mallorca</a>."
         },
         {
           "items": [
@@ -5569,79 +5576,81 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "3",
-              "Sedes de European Tour"
+              "Sedes del European Tour"
             ],
             [
               "300",
-              "Días de sol al año"
+              "Días de sol"
             ],
             [
               "100 km",
-              "La isla de punta a punta"
+              "De un extremo a otro de la isla"
             ]
           ]
         },
         {
-          "text": "Las advertencias honestas"
+          "text": "Las salvedades honestas"
         },
         {
           "text": "Julio y agosto son calurosos y concurridos"
         },
         {
-          "text": "Se puede jugar, pero es más caro y hace calor. No es mi primera recomendación para un viaje centrado solo en golf. Las salidas tempranas son obligatorias, no opcionales."
+          "text": "Se puede jugar, pero con precios y temperaturas de temporada alta. No es ideal para un viaje dedicado al golf. Hacen falta salidas a primera hora, pero con la brisa marina a menudo no es tan malo."
         },
         {
-          "text": "La costa este exige coche y tiempo"
+          "text": "Los campos de la costa este conviene agruparlos"
         },
         {
-          "text": "Pula, Canyamel y Capdepera son algunos de los campos más bonitos de la isla, pero están a 55-65 km de Palma. Se puede hacer sin problema, pero hay que contarlo bien dentro del día."
+          "text": "Pula, Canyamel y Capdepera son algunos de los campos más bonitos de la isla. Tiene sentido jugarlos como grupo, y merece la pena plantearse una noche en el este para jugar varios juntos."
         },
         {
-          "alt": "Capdepera Golf",
-          "caption": "Capdepera - precioso, pero no al lado de Palma"
+          "alt": "Campo de golf Capdepera",
+          "caption": "Capdepera: merece la pena el trayecto por la costa este"
         },
         {
-          "text": "Mallorca es uno de los mejores destinos de golf de Europa. No el más ruidoso ni el más famoso, pero posiblemente la mejor combinación de campos, condiciones y paisaje."
+          "text": "Mallorca es uno de los mejores destinos de golf de Europa. No el más famoso, pero posiblemente la mejor combinación de calidad de campos, condiciones y paisaje del continente."
         },
         {
-          "text": "¿Y fuera del golf?"
+          "text": "Y cuando no estás en el campo"
         },
         {
-          "text": "Hay algo que muchos visitantes no valoran lo suficiente: Mallorca también funciona muy bien más allá del golf. Los campos son el ancla, pero el resto hace que el viaje suba de nivel."
+          "text": "Algo que los visitantes suelen subestimar: Mallorca es una isla seria más allá del golf, por eso tantos famosos, deportistas y otras personas la eligen como hogar o vuelven año tras año. Los campos son el ancla, pero los días entre rondas, o la tarde tras un final temprano, son lo que hace el viaje."
         },
         {
-          "text": "El casco antiguo de Palma tiene más nivel gastronómico del que su tamaño sugiere. La costa noroeste, con Valldemossa, Deià y Sóller, es realmente especial. El noreste es más tranquilo y más salvaje. Todo eso forma parte del argumento a favor de Mallorca, no es solo un extra bonito."
+          "text": "Los restaurantes de los clubes de muchos campos son algo más que un añadido, pero la isla ofrece muchas opciones, desde estrellas Michelin y favoritos locales hasta experiencias gastronómicas con chef privado. El casco antiguo de Palma tiene una escena gastronómica que va mucho más allá de su tamaño. La costa noroeste, con Valldemossa, Deià y Sóller, es Patrimonio de la Humanidad de la UNESCO y no se parece a nada más en el Mediterráneo. La costa noreste y el trayecto a Alcanada te llevan por algunos de los mejores paisajes de la isla. La carretera de montaña Ma-10 de Andratx a Pollença es una de las rutas más espectaculares de Europa. Reserva al menos una tarde en la que no tengas hora de salida."
         },
         {
-          "caption": "Alcanada - aquí golf y paisaje trabajan juntos"
+          "alt": "Alcanada y su faro",
+          "caption": "Alcanada: trayecto panorámico por la costa noreste"
         },
         {
-          "caption": "Sóller - un buen uso de un día sin golf"
+          "alt": "Pueblo de Sóller",
+          "caption": "Sóller: entorno Patrimonio de la Humanidad de la UNESCO en la costa noroeste"
         },
         {
           "text": "Veredicto"
         },
         {
-          "text": "Mallorca es uno de los mejores destinos de golf de Europa. No el más famoso, pero sí uno de los más completos. Los jugadores que entienden lo que ofrece la isla suelen volver, y vuelven con razón."
+          "text": "Mallorca es uno de los mejores destinos de golf de Europa. No el más famoso, pero posiblemente la mejor combinación de calidad de campos, condiciones y paisaje del continente. Los golfistas que lo saben siguen volviendo."
         },
         {
-          "text": "¿Quiere ver cómo es el mejor golf de Mallorca de verdad, con un profesional PGA a su lado?",
-          "linkLabel": "Ver la experiencia play-with-a-pro →"
+          "text": "¿Quieres ver cómo es lo mejor del golf de Mallorca, con un profesional PGA a tu lado?",
+          "linkLabel": "Reserva un día Play With A Pro en Mallorca →"
         }
       ]
     },
     "de": {
       "metadata": {
         "title": "Ist Mallorca gut für Golf? Ja",
-        "description": "Ist Mallorca wirklich ein gutes Golfziel? Die ehrliche Antwort zu Platzqualität, Klima, Reisewegen und dafür, für wen die Insel am meisten Sinn ergibt.",
-        "imageAlt": "Ist Mallorca gut für Golf?"
+        "description": "24 Plätze, Sonne das ganze Jahr, €55–€260. Die ehrliche Antwort eines PGA-Pros: Plätze, Bedingungen, Erwartungen.",
+        "imageAlt": "Ist Mallorca gut für Golf? Die Antwort eines PGA Professionals"
       },
       "meta": {
-        "badge": "Ratgeber",
-        "readTime": "5 Min. Lesezeit",
+        "badge": "Überblick",
+        "readTime": "6 Min. Lesezeit",
         "updated": "März 2026",
         "title": "Mallorca für Golf? Die ehrliche Antwort",
-        "intro": "Ja. Aber die richtige Antwort ist etwas differenzierter - und genau darin liegt der Punkt.",
+        "intro": "Ja. Aber hier ist die richtige Antwort, denn Mallorca ist auf Arten gut für Golf, die von außen nicht offensichtlich sind.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5663,28 +5672,29 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Ja. Aber ich gebe Ihnen lieber die richtige Antwort als die einfache. Mallorca ist auf eine Weise gut für Golf, die von außen nicht sofort sichtbar ist. Genau deshalb wird die Insel oft unterschätzt."
+          "text": "Ja. Aber lassen Sie mich die richtige Antwort geben, denn Mallorca ist auf Arten gut für Golf, die von außen nicht offensichtlich sind."
         },
         {
-          "text": "Die Plätze sind wirklich Weltklasse"
+          "text": "Die Plätze gehören zu den besten Europas"
         },
         {
-          "text": "Son Gual gehört für mich zu den besten Plätzen Europas. Alcanada ist einer der landschaftlich stärksten Plätze des Kontinents. Son Muntaner wurde 2025 als bester Golfplatz Spaniens ausgezeichnet. Das ist keine schwache erste Reihe - und darunter liegt noch ein breites Feld weiterer sehr spielenswerter Plätze."
+          "text": "Son Gual zählt zu den besten Plätzen Europas. Alcanada ist einer der landschaftlich schönsten des Kontinents. Son Muntaner wurde bei den World Golf Awards 2025 zum besten Golfplatz Spaniens gekürt. Andratx ist einer der schwersten Plätze Spaniens. Das sind keine Resort-Anlagen, sondern ernsthafte Layouts von ernsthaften Architekten."
         },
         {
-          "caption": "Son Gual - einer der stärksten Plätze Europas, nicht nur Spaniens"
+          "alt": "Golfplatz Son Gual",
+          "caption": "Son Gual - einer der besten Plätze Europas"
         },
         {
-          "text": "Die Bedingungen sind fast das ganze Jahr stark"
+          "text": "Die Bedingungen sind das ganze Jahr über ausgezeichnet"
         },
         {
-          "text": "300 Sonnentage pro Jahr. Im Januar, wenn in weiten Teilen Europas Plätze geschlossen oder kaum spielbar sind, können die Fairways hier in sehr gutem Zustand sein. Genau das hat mich beim Umzug aus Shanghai sofort beeindruckt."
+          "text": "300 Sonnentage. Im Januar, wenn Plätze in weiten Teilen Europas geschlossen oder unbespielbar sind, sind die Fairways hier makellos. Ich bin aus Shanghai hergezogen, bin aber in Großbritannien aufgewachsen, und der Zustand der Plätze außerhalb der Saison war das Erste, was mich überrascht hat."
         },
         {
-          "text": "24 Plätze auf relativ kleinem Raum"
+          "text": "24 Plätze auf einer relativ kleinen Insel"
         },
         {
-          "text": "Ich komme aus Shanghai - 27 Millionen Menschen und nur 12 Plätze. Hier liegen 24 Plätze auf einer Insel, auf der man in etwa einer Stunde fast alles erreichen kann. Diese Dichte an Golfqualität ist für Besucher enorm praktisch."
+          "text": "Aus Shanghai kommend - 27 Millionen Einwohner mit gerade einmal 12 Plätzen - ist die Dichte an hochwertigem Golf innerhalb von höchstens einer Stunde Fahrt hier bemerkenswert. Eine Woche auf der Insel kann vier oder fünf wirklich unterschiedliche, ausgezeichnete Runden enthalten. Südwesten, Ostküste, Norden, Zentrum um Palma: Jede Gegend hat ihren eigenen Charakter und nicht nur eine einheitliche Resort-Anlage. Die vollständige Liste aller Plätze mit Greenfees und ehrlichen Bewertungen steht auf der Seite <a href=\"/de/golf-courses\">Golfplätze auf Mallorca</a>."
         },
         {
           "items": [
@@ -5694,15 +5704,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "3",
-              "European-Tour-Austragungsorte"
+              "Austragungsorte der European Tour"
             ],
             [
               "300",
-              "Sonnentage pro Jahr"
+              "Sonnentage"
             ],
             [
               "100 km",
-              "Insel von Ende zu Ende"
+              "Von einem Ende der Insel zum anderen"
             ]
           ]
         },
@@ -5713,60 +5723,62 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Juli und August sind heiß und voll"
         },
         {
-          "text": "Spielbar, aber teuer und warm. Nicht ideal für eine reine Golfreise. Frühe Tee Times sind in diesen Monaten Pflicht, nicht Luxus."
+          "text": "Spielbar, aber Spitzenpreise und Spitzentemperaturen. Nicht ideal für eine reine Golfreise. Frühe Startzeiten sind nötig, aber mit einer Brise vom Meer ist es oft gar nicht so schlimm!"
         },
         {
-          "text": "Die Ostküste braucht Fahrzeit"
+          "text": "Die Plätze an der Ostküste lassen sich am besten bündeln"
         },
         {
-          "text": "Pula, Canyamel und Capdepera gehören zu den schönsten Plätzen der Insel, liegen aber 55 bis 65 Kilometer von Palma entfernt. Das ist machbar, sollte aber in die Tagesplanung hinein."
+          "text": "Pula, Canyamel und Capdepera gehören zu den schönsten Plätzen der Insel. Sie ergeben als Gruppe Sinn, und es lohnt sich, eine Nacht an der Ostseite einzuplanen, um mehrere davon zusammen zu spielen."
         },
         {
-          "alt": "Capdepera Golf",
-          "caption": "Capdepera - sehr schön, aber kein Platz direkt neben Palma"
+          "alt": "Golfplatz Capdepera",
+          "caption": "Capdepera - die Fahrt an der Ostküste wert"
         },
         {
-          "text": "Mallorca ist eines der besten Golfziele Europas. Nicht das lauteste, nicht das bekannteste - aber vielleicht die stärkste Kombination aus Platzqualität, Bedingungen und Landschaft."
+          "text": "Mallorca ist eines der besten Golfziele Europas. Nicht das berühmteste, aber wohl die beste Kombination aus Platzqualität, Bedingungen und Landschaft auf dem Kontinent."
         },
         {
-          "text": "Und außerhalb des Golfplatzes?"
+          "text": "Und wenn Sie nicht auf dem Platz sind"
         },
         {
-          "text": "Ein Punkt, den Besucher oft unterschätzen: Mallorca ist auch ohne Golf eine starke Insel. Die Plätze sind der Anker, aber der Rest macht die Reise runder und hochwertiger."
+          "text": "Etwas, das Besucher oft unterschätzen: Mallorca ist abseits des Golfs eine ernstzunehmende Insel, weshalb so viele Prominente, Sportstars und andere sie als Zuhause wählen oder Jahr für Jahr zurückkehren. Die Plätze sind der Anker, aber die Tage zwischen den Runden oder der Nachmittag nach einem frühen Ende machen die Reise aus."
         },
         {
-          "text": "Palmas Altstadt hat gastronomisch deutlich mehr Niveau, als ihre Größe vermuten lässt. Die Nordwestküste mit Valldemossa, Deià und Sóller ist landschaftlich außergewöhnlich. Im Nordosten wird es ruhiger und ursprünglicher. Das ist ein Teil des Arguments für Mallorca, nicht nur eine nette Zugabe."
+          "text": "Die Clubhaus-Restaurants vieler Plätze sind mehr als ein Nachgedanke, doch die Insel bietet viele Optionen, von Michelin-Sternen über Lieblingslokale der Einheimischen bis zu Privatkoch-Erlebnissen. Palmas Altstadt hat eine Gastroszene, die weit über ihre Größe hinausreicht. Die Nordwestküste - Valldemossa, Deià, Sóller - ist UNESCO-Welterbe und sieht aus wie nichts sonst im Mittelmeer. Die Nordostküste und die Fahrt nach Alcanada führen durch einige der besten Landschaften der Insel. Die Bergstraße Ma-10 von Andratx nach Pollença ist eine der dramatischsten Strecken Europas. Planen Sie mindestens einen Nachmittag ein, an dem Sie keine Startzeit haben."
         },
         {
-          "caption": "Alcanada - Golf und Landschaft greifen hier perfekt ineinander"
+          "alt": "Alcanada und Leuchtturm",
+          "caption": "Alcanada - landschaftlich schöne Fahrt an der Nordostküste"
         },
         {
-          "caption": "Sóller - wenn Sie einen golffreien Tag richtig nutzen wollen"
+          "alt": "Stadt Sóller",
+          "caption": "Sóller - UNESCO-Welterbe-Kulisse an der Nordwestküste"
         },
         {
           "text": "Fazit"
         },
         {
-          "text": "Mallorca ist eines der besten Golfziele Europas. Nicht das berühmteste, aber wahrscheinlich die beste Kombination aus Platzqualität, Klima und Umgebung auf dem Kontinent. Die Spieler, die es einmal verstanden haben, kommen sehr oft wieder."
+          "text": "Mallorca ist eines der besten Golfziele Europas. Nicht das berühmteste, aber wohl die beste Kombination aus Platzqualität, Bedingungen und Landschaft auf dem Kontinent. Die Golfer, die es wissen, kommen immer wieder."
         },
         {
-          "text": "Wollen Sie sehen, wie das Beste von Mallorcas Golf wirklich aussieht - mit einem PGA-Professional an Ihrer Seite?",
-          "linkLabel": "Golf-Tag mit Pro ansehen →"
+          "text": "Möchten Sie sehen, wie das Beste des Mallorca-Golfs aussieht, mit einem PGA Professional an Ihrer Seite?",
+          "linkLabel": "Einen Play-With-A-Pro-Tag auf Mallorca buchen →"
         }
       ]
     },
     "fr": {
       "metadata": {
         "title": "Majorque, bonne pour le golf ? Oui",
-        "description": "Une réponse honnête sur Majorque comme destination golf : qualité des parcours, climat, trajets et pour quels joueurs l'île fonctionne le mieux.",
-        "imageAlt": "Majorque est-elle bonne pour le golf ?"
+        "description": "24 parcours, du soleil toute l'année, €55–€260. La réponse honnête d'un pro PGA : parcours, conditions, attentes.",
+        "imageAlt": "Majorque est-elle bonne pour le golf ? La réponse d'un Professionnel PGA"
       },
       "meta": {
-        "badge": "Guide",
-        "readTime": "5 min de lecture",
+        "badge": "Vue d'ensemble",
+        "readTime": "6 min de lecture",
         "updated": "Mars 2026",
         "title": "Majorque pour golf? La réponse honnête",
-        "intro": "Oui. Mais la vraie réponse est un peu plus nuancée, et c'est justement là que l'île devient intéressante.",
+        "intro": "Oui. Mais voici la vraie réponse, car Majorque est bonne pour le golf de manières qui ne sont pas évidentes de l'extérieur.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5788,28 +5800,29 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Oui. Mais je préfère donner la bonne réponse plutôt que la plus simple. Majorque est bonne pour le golf d'une manière qui ne saute pas toujours aux yeux depuis l'extérieur, et c'est exactement pour cela que beaucoup la sous-estiment."
+          "text": "Oui. Mais laissez-moi vous donner la vraie réponse, car Majorque est bonne pour le golf de manières qui ne sont pas évidentes de l'extérieur."
         },
         {
-          "text": "Les parcours sont réellement de haut niveau"
+          "text": "Les parcours comptent parmi les meilleurs d'Europe"
         },
         {
-          "text": "Son Gual fait, pour moi, partie des meilleurs parcours d'Europe. Alcanada est l'un des plus beaux cadres du continent. Son Muntaner a été élu meilleur parcours d'Espagne en 2025. Ce n'est pas un petit premier rang, et il y a encore de la profondeur derrière."
+          "text": "Son Gual figure parmi les meilleurs parcours d'Europe. Alcanada est l'un des plus pittoresques du continent. Son Muntaner a été élu meilleur parcours de golf d'Espagne aux World Golf Awards 2025. Andratx est l'un des parcours les plus difficiles d'Espagne. Ce ne sont pas des parcours de resort, mais de vrais tracés dessinés par de vrais architectes."
         },
         {
-          "caption": "Son Gual - un niveau européen, pas seulement local"
+          "alt": "Parcours de golf de Son Gual",
+          "caption": "Son Gual - l'un des meilleurs parcours d'Europe"
         },
         {
-          "text": "Les conditions sont fortes presque toute l'année"
+          "text": "Les conditions sont excellentes toute l'année"
         },
         {
-          "text": "300 jours de soleil par an. En janvier, quand une grande partie de l'Europe a des parcours fermes ou très limites, les fairways ici peuvent être en excellent état. C'est l'une des premières choses qui m'a frappe en arrivant depuis Shanghai."
+          "text": "300 jours de soleil. En janvier, quand les parcours d'une grande partie de l'Europe sont fermés ou injouables, les fairways d'ici sont impeccables. Je viens de Shanghai, mais j'ai grandi au Royaume-Uni, et l'état des parcours hors saison a été la première chose qui m'a surpris."
         },
         {
-          "text": "24 parcours sur une île relativement compacte"
+          "text": "24 parcours sur une île relativement petite"
         },
         {
-          "text": "Je viens de Shanghai : 27 millions d'habitants pour 12 parcours. Ici, il y a 24 parcours sur une île ou une heure de voiture ouvre déjà beaucoup d'options. Pour le visiteur, cette densité est un vrai avantage."
+          "text": "Venant de Shanghai - 27 millions d'habitants et seulement 12 parcours - la densité de golf de qualité à une heure de route maximum est remarquable. Une semaine sur l'île peut comprendre quatre ou cinq parties vraiment différentes et excellentes. Sud-ouest, côte est, nord, centre de Palma : chaque zone a son propre caractère, et non un parcours de resort tout semblable. La liste complète de chaque parcours avec les green fees et des notes honnêtes se trouve sur la page des <a href=\"/fr/golf-courses\">parcours de golf de Majorque</a>."
         },
         {
           "items": [
@@ -5819,15 +5832,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "3",
-              "Sites European Tour"
+              "Sites du circuit européen"
             ],
             [
               "300",
-              "Jours de soleil par an"
+              "Jours de soleil"
             ],
             [
               "100 km",
-              "Île d'un bout à l'autre"
+              "D'un bout à l'autre de l'île"
             ]
           ]
         },
@@ -5835,61 +5848,65 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Les réserves honnêtes"
         },
         {
-          "text": "Juillet et août sont chauds et fréquentes"
+          "text": "Juillet et août sont chauds et fréquentés"
         },
         {
-          "text": "On peut jouer, mais c'est plus cher et plus chaud. Ce ne serait pas mon premier choix pour un voyage 100 % golf. Les départs tôt ne sont pas un luxe, ils sont nécessaires."
+          "text": "Jouable, mais avec des prix et des températures de pointe. Pas idéal pour un séjour entièrement dédié au golf. Il faut des départs tôt le matin, mais avec la brise marine ce n'est souvent pas si terrible !"
         },
         {
-          "text": "La côté est demandé du temps de route"
+          "text": "Les parcours de la côte est se regroupent mieux ensemble"
         },
         {
-          "text": "Pula, Canyamel et Capdepera comptent parmi les plus beaux parcours de l'île, mais ils se trouvent à 55-65 km de Palma. C'est très faisable, a condition de bien l'intégrer dans la journée."
+          "text": "Pula, Canyamel et Capdepera comptent parmi les plus beaux parcours de l'île. Il est logique de les jouer en groupe, et cela vaut la peine d'envisager une nuit côté est pour en jouer plusieurs d'affilée."
         },
         {
-          "alt": "Capdepera Golf",
-          "caption": "Capdepera - très beau, mais pas juste à côté de Palma"
+          "alt": "Parcours de golf de Capdepera",
+          "caption": "Capdepera - vaut le trajet sur la côte est"
         },
         {
-          "text": "Majorque est l'une des meilleures destinations golf d'Europe. Pas la plus bruyante ni la plus célèbre, mais probablement l'une des plus complètes."
+          "text": "Majorque est l'une des meilleures destinations de golf d'Europe. Pas la plus célèbre, mais sans doute la meilleure combinaison de qualité de parcours, de conditions et de paysages du continent."
         },
         {
-          "text": "Et en dehors du golf ?"
+          "text": "Et quand vous n'êtes pas sur le parcours"
         },
         {
-          "text": "Un point que les visiteurs sous-evaluent souvent : Majorque est aussi une très bonne île en dehors du golf. Les parcours sont l'ancre, mais le reste fait monter la qualité du voyage."
+          "text": "Une chose que les visiteurs sous-estiment souvent : Majorque est une vraie île au-delà du golf, c'est pourquoi tant de célébrités, de sportifs et d'autres en font leur maison ou reviennent année après année. Les parcours sont l'ancre, mais les jours entre les parties, ou l'après-midi après une fin matinale, font le voyage."
         },
         {
-          "text": "La vieille ville de Palma a un niveau gastronomique supérieur à ce que sa taille laisse penser. La côté nord-ouest avec Valldemossa, Deià et Sóller est réellement remarquable. Le nord-est est plus calme et plus sauvage. Tout cela fait partie de l'argument Majorque, ce n'est pas juste un bonus."
+          "text": "Les restaurants des clubs-houses de nombreux parcours sont bien plus qu'un à-côté, mais l'île offre beaucoup d'options, des étoiles Michelin aux adresses préférées des habitants et aux expériences avec chef privé. La vieille ville de Palma a une scène gastronomique qui dépasse largement sa taille. La côte nord-ouest - Valldemossa, Deià, Sóller - est classée au patrimoine mondial de l'UNESCO et ne ressemble à rien d'autre en Méditerranée. La côte nord-est et la route vers Alcanada traversent certains des plus beaux paysages de l'île. La route de montagne Ma-10 d'Andratx à Pollença est l'un des trajets les plus spectaculaires d'Europe. Prévoyez au moins un après-midi sans heure de départ."
         },
         {
-          "caption": "Alcanada - ici le golf et le paysage avancent ensemble"
+          "alt": "Alcanada et son phare",
+          "caption": "Alcanada - route panoramique sur la côte nord-est"
         },
         {
-          "caption": "Sóller - une bonne façon d'utiliser une journée sans golf"
-        },
-        {},
-        {
-          "text": "Majorque est l'une des meilleures destinations golf d'Europe. Pas la plus connue, mais l'une des plus solides. Les joueurs qui comprennent ce qu'offre l'île reviennent généralement, et ils ont raison."
+          "alt": "Ville de Sóller",
+          "caption": "Sóller - cadre classé à l'UNESCO sur la côte nord-ouest"
         },
         {
-          "text": "Vous voulez voir ce que le meilleur golf de Majorque donne vraiment, avec un professionnel PGA à vos côtés ?",
-          "linkLabel": "Voir l'expérience play-with-a-pro →"
+          "text": "Verdict"
+        },
+        {
+          "text": "Majorque est l'une des meilleures destinations de golf d'Europe. Pas la plus célèbre, mais sans doute la meilleure combinaison de qualité de parcours, de conditions et de paysages du continent. Les golfeurs qui savent reviennent toujours."
+        },
+        {
+          "text": "Vous voulez voir à quoi ressemble le meilleur du golf à Majorque, avec un professionnel PGA à vos côtés ?",
+          "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
         }
       ]
     },
     "nl": {
       "metadata": {
         "title": "Is Mallorca goed voor golf? Ja",
-        "description": "Een eerlijk antwoord op de vraag of Mallorca een sterke golfbestemming is: baankwaliteit, klimaat, reistijd en voor wie het eiland het meest logisch is.",
-        "imageAlt": "Is Mallorca goed voor golf?"
+        "description": "24 banen, het hele jaar zon, €55–€260. Het eerlijke antwoord van een PGA-pro: banen, omstandigheden, verwachtingen.",
+        "imageAlt": "Is Mallorca goed voor golf? Het antwoord van een PGA Professional"
       },
       "meta": {
-        "badge": "Gids",
-        "readTime": "5 min leestijd",
+        "badge": "Overzicht",
+        "readTime": "6 min leestijd",
         "updated": "Maart 2026",
         "title": "Mallorca voor golf? Het eerlijke antwoord",
-        "intro": "Ja. Maar het juiste antwoord is iets uitgebreider, en precies daar ligt de kracht van het eiland.",
+        "intro": "Ja. Maar hier is het echte antwoord, want Mallorca is goed voor golf op manieren die van buitenaf niet voor de hand liggen.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5911,28 +5928,29 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Ja. Maar ik geef liever het juiste antwoord dan het makkelijke antwoord. Mallorca is goed voor golf op een manier die van buitenaf niet altijd direct zichtbaar is, en juist daardoor wordt het eiland vaak onderschat."
+          "text": "Ja. Maar laat me je het echte antwoord geven, want Mallorca is goed voor golf op manieren die van buitenaf niet voor de hand liggen."
         },
         {
-          "text": "De banen zijn echt van hoog niveau"
+          "text": "De banen horen bij de beste van Europa"
         },
         {
-          "text": "Son Gual hoort voor mij bij de beste banen van Europa. Alcanada is een van de mooiste golfsettings van het continent. Son Muntaner werd in 2025 uitgeroepen tot beste golfbaan van Spanje. Dat is geen zwakke voorhoede, en daarachter zit nog voldoende diepte."
+          "text": "Son Gual hoort bij de beste banen van Europa. Alcanada is een van de mooiste van het continent. Son Muntaner werd bij de World Golf Awards 2025 uitgeroepen tot beste golfbaan van Spanje. Andratx is een van de zwaarste banen van Spanje. Dit zijn geen resortbanen, maar serieuze ontwerpen van serieuze architecten."
         },
         {
-          "caption": "Son Gual - Europees niveau, niet alleen lokaal sterk"
+          "alt": "Golfbaan Son Gual",
+          "caption": "Son Gual - een van de beste banen van Europa"
         },
         {
-          "text": "De omstandigheden zijn bijna het hele jaar sterk"
+          "text": "De omstandigheden zijn het hele jaar uitstekend"
         },
         {
-          "text": "300 zonnedagen per jaar. In januari, wanneer in grote delen van Europa banen gesloten of beperkt bespeelbaar zijn, kunnen de fairways hier er opvallend goed bij liggen. Dat was een van de eerste dingen die mij opviel toen ik uit Shanghai kwam."
+          "text": "300 dagen zon. In januari, als banen in een groot deel van Europa gesloten of onspeelbaar zijn, liggen de fairways hier er onberispelijk bij. Ik ben vanuit Shanghai verhuisd, maar groeide op in het VK, en de conditie van de banen buiten het seizoen was het eerste wat me verraste."
         },
         {
-          "text": "24 banen op een relatief compacte eilandkaart"
+          "text": "24 banen op een relatief klein eiland"
         },
         {
-          "text": "Ik kom uit Shanghai: 27 miljoen mensen en 12 banen. Hier zijn het er 24, op een eiland waar een uur rijden al veel opties opent. Voor bezoekers is die dichtheid een echte troef."
+          "text": "Komend uit Shanghai - 27 miljoen mensen met slechts 12 banen - is de dichtheid van kwaliteitsgolf binnen maximaal een uur rijden hier opmerkelijk. Een week op het eiland kan vier of vijf echt verschillende, uitstekende rondes bevatten. Zuidwest, oostkust, noorden, het centrum van Palma: elk gebied heeft een eigen karakter en niet alleen één en dezelfde resortbaan. De volledige lijst van alle banen met greenfees en eerlijke beoordelingen staat op de pagina <a href=\"/nl/golf-courses\">golfbanen op Mallorca</a>."
         },
         {
           "items": [
@@ -5942,15 +5960,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "3",
-              "European Tour-locaties"
+              "Locaties van de European Tour"
             ],
             [
               "300",
-              "Zonnedagen per jaar"
+              "Dagen zon"
             ],
             [
               "100 km",
-              "Eiland van punt tot punt"
+              "Van het ene uiteinde van het eiland naar het andere"
             ]
           ]
         },
@@ -5961,60 +5979,62 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Juli en augustus zijn heet en druk"
         },
         {
-          "text": "Er is te spelen, maar het is warmer en duurder. Voor een pure golfreis zou ik deze maanden niet als eerste aanbevelen. Vroege tee times zijn dan geen luxe, maar noodzakelijk."
+          "text": "Speelbaar, maar met piekprijzen en piektemperaturen. Niet ideaal voor een speciale golfreis. Vroege starttijden zijn nodig, maar met een zeebries valt het vaak mee!"
         },
         {
-          "text": "De oostkust vraagt reistijd"
+          "text": "De banen aan de oostkust kun je het best bundelen"
         },
         {
-          "text": "Pula, Canyamel en Capdepera horen bij de mooiste banen van het eiland, maar liggen 55-65 km van Palma. Prima te doen, zolang je die reistijd eerlijk in de dag meeneemt."
+          "text": "Pula, Canyamel en Capdepera zijn enkele van de mooiste banen van het eiland. Ze vormen samen een logisch cluster, en het is de moeite waard om een nacht aan de oostkant te overwegen om er een paar achter elkaar te spelen."
         },
         {
-          "alt": "Capdepera Golf",
-          "caption": "Capdepera - prachtig, maar niet naast Palma"
+          "alt": "Golfbaan Capdepera",
+          "caption": "Capdepera - de rit langs de oostkust waard"
         },
         {
-          "text": "Mallorca is een van de beste golfbestemmingen van Europa. Niet de luidste of bekendste, maar wel een van de meest complete combinaties van banen, omstandigheden en landschap."
+          "text": "Mallorca is een van de beste golfbestemmingen van Europa. Niet de beroemdste, maar aantoonbaar de beste combinatie van baankwaliteit, omstandigheden en landschap op het continent."
         },
         {
-          "text": "En buiten de golfbaan?"
+          "text": "En als je niet op de baan bent"
         },
         {
-          "text": "Iets wat bezoekers vaak onderschatten: Mallorca is ook buiten golf een sterke bestemming. De banen zijn het anker, maar de rest tilt de reis omhoog."
+          "text": "Iets wat bezoekers vaak onderschatten: Mallorca is buiten het golf een serieus eiland, en daarom noemen zoveel beroemdheden, sporters en anderen het thuis of komen ze jaar na jaar terug. De banen vormen het anker, maar de dagen tussen de rondes, of de middag na een vroeg einde, maken de reis."
         },
         {
-          "text": "De oude stad van Palma heeft gastronomisch meer niveau dan de schaal doet vermoeden. De noordwestkust met Valldemossa, Deià en Sóller is echt bijzonder. Het noordoosten is rustiger en ruiger. Dat alles hoort bij het argument voor Mallorca, niet alleen als mooie bijzaak."
+          "text": "De clubhuisrestaurants van veel banen zijn meer dan een bijzaak, maar het eiland biedt veel opties, van Michelinsterren en lokale favorieten tot dineren met een privékok. De oude stad van Palma heeft een eetscene die ver boven haar formaat uitsteekt. De noordwestkust - Valldemossa, Deià, Sóller - is UNESCO-werelderfgoed en lijkt op niets anders in de Middellandse Zee. De noordoostkust en de rit naar Alcanada voeren door een deel van het mooiste landschap van het eiland. De bergweg Ma-10 van Andratx naar Pollença is een van de spectaculairste ritten van Europa. Plan minstens één middag in waarop je geen starttijd hebt."
         },
         {
-          "caption": "Alcanada - hier versterken golf en landschap elkaar"
+          "alt": "Alcanada en de vuurtoren",
+          "caption": "Alcanada - schilderachtige rit langs de noordoostkust"
         },
         {
-          "caption": "Sóller - een goed gebruik van een dag zonder golf"
+          "alt": "Stad Sóller",
+          "caption": "Sóller - UNESCO-werelderfgoed aan de noordwestkust"
         },
         {
           "text": "Oordeel"
         },
         {
-          "text": "Mallorca is een van de beste golfbestemmingen van Europa. Niet de beroemdste, maar wel een van de meest complete. Golfers die eenmaal begrijpen wat het eiland biedt, komen meestal terug, en daar is goede reden voor."
+          "text": "Mallorca is een van de beste golfbestemmingen van Europa. Niet de beroemdste, maar aantoonbaar de beste combinatie van baankwaliteit, omstandigheden en landschap op het continent. De golfers die het weten, komen steeds terug."
         },
         {
-          "text": "Wil je zien hoe het beste van Mallorca-golf er werkelijk uitziet, met een PGA professional naast je?",
-          "linkLabel": "Bekijk de play-with-a-pro ervaring →"
+          "text": "Wil je zien hoe het beste van Mallorca-golf eruitziet, met een PGA-professional aan je zijde?",
+          "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
         }
       ]
     },
     "sv": {
       "metadata": {
         "title": "Är Mallorca bra för golf? Ja",
-        "description": "Ett ärligt svar på om Mallorca är en stark golfdestination: banstandard, klimat, restider och för vilka spelare ön fungerar bäst.",
-        "imageAlt": "Är Mallorca bra för golf?"
+        "description": "24 banor, sol året runt, €55–€260. En PGA-pros ärliga svar: banor, förhållanden, förväntningar.",
+        "imageAlt": "Är Mallorca bra för golf? Ett svar från en PGA Professional"
       },
       "meta": {
-        "badge": "Guide",
-        "readTime": "5 min läsning",
+        "badge": "Översikt",
+        "readTime": "6 min läsning",
         "updated": "Mars 2026",
         "title": "Mallorca för golf? Det ärliga svaret",
-        "intro": "Ja. Men det riktiga svaret är lite mer nyanserat, och just där ligger styrkan.",
+        "intro": "Ja. Men här är det riktiga svaret, för Mallorca är bra för golf på sätt som inte är uppenbara utifrån.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -6036,28 +6056,29 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Ja. Men jag ger hellre det riktiga svaret an det enkla. Mallorca är bra för golf på ett sätt som inte alltid syns direkt utifrån, och det är just därför många underskattar ön."
+          "text": "Ja. Men låt mig ge dig det riktiga svaret, för Mallorca är bra för golf på sätt som inte är uppenbara utifrån."
         },
         {
-          "text": "Banorna håller verkligen hög klass"
+          "text": "Banorna hör till Europas bästa"
         },
         {
-          "text": "Son Gual hoer, för mig, till Europas bästa banor. Alcanada är en av kontinentens mest natursköna golfmiljöer. Son Muntaner utsågs till Spaniens bästa golfbana 2025. Det är ingen svag toppnivå, och bakom den finns fortfarande bra bredd."
+          "text": "Son Gual hör till Europas främsta banor. Alcanada är en av de mest natursköna på kontinenten. Son Muntaner utsågs till Spaniens bästa golfbana vid World Golf Awards 2025. Andratx är en av de svåraste banorna i Spanien. Det här är inga resortbanor utan seriösa banor ritade av seriösa arkitekter."
         },
         {
-          "caption": "Son Gual - europeisk standard, inte bara stark lokalt"
+          "alt": "Golfbanan Son Gual",
+          "caption": "Son Gual - en av Europas främsta banor"
         },
         {
-          "text": "Förhållandena är starka nästan hela året"
+          "text": "Förhållandena är utmärkta året runt"
         },
         {
-          "text": "300 soldagar per är. I januari, när stora delar av Europa har stängda eller mycket begränsade banor, kan fairways har vara i riktigt fint skick. Det var en av de första sakerna jag reagerade på när jag kom hit från Shanghai."
+          "text": "300 soldagar. I januari, när banor i stora delar av Europa är stängda eller ospelbara, är fairwayerna här oklanderliga. Jag flyttade från Shanghai men växte upp i Storbritannien, och banornas skick utanför säsong var det första som förvånade mig."
         },
         {
-          "text": "24 banor på en relativt kompakt o"
+          "text": "24 banor på en relativt liten ö"
         },
         {
-          "text": "Jag kommer från Shanghai: 27 miljoner människor och 12 banor. Har finns 24 banor på en o där en timmes bilresa redan öppnar många val. För besökare är den tatheten en riktig fördel."
+          "text": "Kommer man från Shanghai - 27 miljoner människor med bara 12 banor - är tätheten av kvalitetsgolf inom högst en timmes bilresa här anmärkningsvärd. En vecka på ön kan rymma fyra eller fem verkligt olika, utmärkta rundor. Sydväst, östkusten, norr, centrala Palma: varje område har sin egen karaktär och inte bara en och samma resortbana. Hela listan över alla banor med greenfees och ärliga betyg finns på sidan om <a href=\"/sv/golf-courses\">golfbanor på Mallorca</a>."
         },
         {
           "items": [
@@ -6067,80 +6088,81 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "3",
-              "European Tour-arenor"
+              "Arenor för European Tour"
             ],
             [
               "300",
-              "Soldagar per är"
+              "Soldagar"
             ],
             [
               "100 km",
-              "Ön från ände till ände"
+              "Från ena änden av ön till den andra"
             ]
           ]
         },
         {
-          "text": "De ärliga invandningarna"
+          "text": "De ärliga förbehållen"
         },
         {
-          "text": "Juli och augusti är varma och fulla"
+          "text": "Juli och augusti är varma och fullt av folk"
         },
         {
-          "text": "Det går att spela, men det är varmare och dyrare. För en ren golfresa skulle jag inte sätta dessa månader först. Tidiga tee times är då inte lyx utan nödvändiga."
+          "text": "Spelbart, men med toppriser och toppemperaturer. Inte idealiskt för en renodlad golfresa. Tidiga starttider behövs, men med en havsbris är det ofta inte så farligt!"
         },
         {
-          "text": "Ostkusten kräver restid"
+          "text": "Banorna på östkusten är bäst att gruppera"
         },
         {
-          "text": "Pula, Canyamel och Capdepera är bland ons vackraste banor, men de ligger 55-65 km från Palma. Helt gorbart, så laenge man räknar in den restiden ordentligt i dagen."
+          "text": "Pula, Canyamel och Capdepera är några av öns vackraste banor. De fungerar bra som ett kluster, och det är värt att överväga en natt på östsidan för att spela flera tillsammans."
         },
         {
-          "alt": "Capdepera Golf",
-          "caption": "Capdepera - vacker, men inte precis bredvid Palma"
+          "alt": "Golfbanan Capdepera",
+          "caption": "Capdepera - värd resan längs östkusten"
         },
         {
-          "text": "Mallorca är en av Europas bästa golfdestinationer. Inte den mest högljudda eller mest kända, men en av de mest kompletta kombinationerna av banor, förhållanden och landskap."
+          "text": "Mallorca är en av Europas bästa golfdestinationer. Inte den mest kända, men kanske den bästa kombinationen av banornas kvalitet, förhållanden och landskap på kontinenten."
         },
         {
-          "text": "Och utanför golfen?"
+          "text": "Och när du inte är på banan"
         },
         {
-          "text": "Något som besökare ofta underskattar är att Mallorca också är mycket starkt utanför golfen. Banorna är ankaret, men resten lyfter hela resan."
+          "text": "Något som besökare ofta underskattar: Mallorca är en seriös ö även bortom golfen, och därför har så många kändisar, idrottsstjärnor och andra den som hem eller återvänder år efter år. Banorna är ankaret, men dagarna mellan rundorna, eller eftermiddagen efter ett tidigt slut, är det som gör resan."
         },
         {
-          "text": "Gamla stan i Palma har mer gastronomisk nivå än storleken antyder. Nordvästkusten med Valldemossa, Deià och Sóller är verkligen speciell. Nordost är lugnare och vildare. Allt det där är en del av argumentet för Mallorca, inte bara ett fint tillägg."
+          "text": "Klubbhusrestaurangerna på många banor är mer än en eftertanke, men ön har många alternativ, från Michelinstjärnor och lokala favoriter till middagar med privatkock. Palmas gamla stad har en matscen som slår långt över sin storlek. Nordvästkusten - Valldemossa, Deià, Sóller - är UNESCO-världsarv och ser ut som ingenting annat i Medelhavet. Nordostkusten och resan till Alcanada tar dig genom en del av öns bästa landskap. Bergsvägen Ma-10 från Andratx till Pollença är en av Europas mest dramatiska bilresor. Lägg in minst en eftermiddag då du inte har någon starttid."
         },
         {
-          "caption": "Alcanada - har arbetar golfen och landskapet tillsammans"
+          "alt": "Alcanada och fyren",
+          "caption": "Alcanada - natursköna bilresan längs nordostkusten"
         },
         {
-          "alt": "Sóller town",
-          "caption": "Sóller - ett bra sätt att använda en dag utan golf"
+          "alt": "Staden Sóller",
+          "caption": "Sóller - UNESCO-världsarv på nordvästkusten"
         },
         {
-          "text": "Omdöme"
+          "text": "Slutsats"
         },
         {
-          "text": "Mallorca är en av Europas bästa golfdestinationer. Inte den mest berömda, men en av de mest kompletta. De spelare som val förstår vad ön erbjuder kommer ofta tillbaka, och det finns goda skal till det."
+          "text": "Mallorca är en av Europas bästa golfdestinationer. Inte den mest kända, men kanske den bästa kombinationen av banornas kvalitet, förhållanden och landskap på kontinenten. De golfare som vet kommer tillbaka igen och igen."
         },
         {
-          "text": "Vill du se hur det bästa av Mallorcas golf faktiskt ser ut, med ett PGA-proffs vid din sida?",
-          "linkLabel": "Se play-with-a-pro upplevelsen →"
+          "text": "Vill du se hur det bästa av golfen på Mallorca ser ut, med en PGA-professional vid din sida?",
+          "linkLabel": "Boka en Play With A Pro-dag på Mallorca →"
         }
       ]
     },
     "zh": {
       "metadata": {
         "title": "马略卡适合打高尔夫吗？诚实答案",
-        "description": "从球场质量、天气、路程和整体体验来看，马略卡到底是不是一个真正值得来的高尔夫目的地？",
-        "imageAlt": "马略卡适合打高尔夫吗？"
+        "description": "24 座球场，全年阳光，€55–€260。PGA 职业教练的坦诚回答：球场、状态与预期。",
+        "imageAlt": "马略卡适合打高尔夫吗？PGA 职业教练的回答"
       },
       "meta": {
-        "badge": "指南",
-        "readTime": "5分钟阅读",
+        "badge": "概览",
+        "readTime": "6分钟阅读",
         "updated": "2026年3月",
         "title": "马略卡适合打高尔夫吗？住在这里的人给出的诚实答案",
-        "intro": "是的。但真正有价值的答案，不只是一个“是”字。",
+        "intro": "适合。但让我给你一个完整的答案，因为马略卡适合打高尔夫的原因，从外面看并不明显。",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -6162,95 +6184,98 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "是的。但我更愿意给出真正的答案，而不是最简单的答案。马略卡适合打高尔夫的地方，很多从外面看并不那么显眼，也正因为这样，它常常被低估。"
+          "text": "适合。但让我给你一个完整的答案，因为马略卡适合打高尔夫的原因，从外面看并不明显。"
         },
         {
-          "text": "球场质量是真的高"
+          "text": "这里的球场可以跻身欧洲最佳之列"
         },
         {
-          "text": "在我看来，Son Gual属于欧洲最强的一类球场。Alcanada是整个欧洲最漂亮的海景高尔夫体验之一。Son Muntaner在2025年被评为西班牙最佳球场。这不是一条薄弱的顶级线，而且后面还有相当深的层次。"
+          "text": "Son Gual 位列欧洲顶级球场之一。Alcanada 是欧洲大陆上风景最美的球场之一。Son Muntaner 在 2025 年世界高尔夫奖中被评为西班牙最佳高尔夫球场。Andratx 是西班牙最难的球场之一。这些都不是度假村式的球场，而是由专业建筑师设计的正经球场。"
         },
         {
-          "caption": "Son Gual，不只是岛上强，在欧洲范围内也站得住"
+          "alt": "Son Gual 高尔夫球场",
+          "caption": "Son Gual - 欧洲顶级球场之一"
         },
         {
-          "text": "全年大部分时间都能打，而且状态常常很好"
+          "text": "球场状态全年都很出色"
         },
         {
-          "text": "一年大约300个晴天。1月时，当欧洲很多地方的球场不是关就是很难打，这里的球道却可能已经非常漂亮。这是我从上海搬来以后，最早明确感受到的优势之一。"
+          "text": "300 天的阳光。1 月，欧洲大部分地区的球场关闭或无法打球时，这里的球道依然完美无瑕。我是从上海搬来的，但在英国长大，淡季球场状态是最先让我惊讶的事。"
         },
         {
-          "text": "24座球场，集中在一座并不大的岛上"
+          "text": "一座相对较小的岛上有 24 座球场"
         },
         {
-          "text": "我来自上海：2700万人口，只有12座球场。这里是24座球场，而且岛并不大，开车一小时已经可以覆盖很多选择。对游客来说，这种密度非常有价值。"
+          "text": "从上海来到这里，那是一座有 2700 万人却只有 12 座球场的城市，这里在最多一小时车程之内的优质球场密度令人惊叹。在岛上待一周，可以打到四五场真正不同的优秀球场。西南部、东海岸、北部、帕尔马中部：每个区域都有自己的特点，而不只是千篇一律的度假村球场。每座球场的完整清单，包括果岭费和坦诚的评分，都在<a href=\"/zh/golf-courses\">马略卡高尔夫球场</a>页面上。"
         },
         {
           "items": [
             [
               "24",
-              "岛上球场数量"
+              "岛上球场"
             ],
             [
               "3",
-              "European Tour承办场地"
+              "欧巡赛举办场地"
             ],
             [
               "300",
-              "每年晴天数"
+              "阳光天数"
             ],
             [
-              "100公里",
-              "岛的一端到另一端"
+              "100 公里",
+              "岛的东西两端距离"
             ]
           ]
         },
         {
-          "text": "也要把缺点说清楚"
+          "text": "坦诚的几点保留"
         },
         {
-          "text": "7月和8月很热，也更拥挤"
+          "text": "7 月和 8 月又热又拥挤"
         },
         {
-          "text": "不是不能打，但会更贵、更热。对于一趟纯高尔夫行程，这不是我优先推荐的窗口。早场开球不是讲究，而是必要。"
+          "text": "可以打，但价格和气温都在顶峰。不适合专门的高尔夫行程。需要打清晨的开球时间，不过有海风的话，往往没那么糟！"
         },
         {
-          "text": "东海岸那些漂亮球场，确实需要开车"
+          "text": "东海岸的球场最好放在一起打"
         },
         {
-          "text": "Pula、Canyamel、Capdepera都属于岛上很美的球场，但离Palma大概55到65公里。不是问题，只是要诚实地把这段路程算进一天的计划。"
+          "text": "Pula、Canyamel 和 Capdepera 是岛上最美的几座球场。把它们当成一个组合很合理，值得考虑在东边住一晚，把几座连着打。"
         },
         {
-          "alt": "Capdepera Golf",
-          "caption": "Capdepera很美，但它并不在Palma边上"
+          "alt": "Capdepera 高尔夫球场",
+          "caption": "Capdepera - 值得驱车前往东海岸"
         },
         {
-          "text": "马略卡是欧洲最好的高尔夫目的地之一。它不是最吵闹、最有名的那个，但很可能是球场、天气和环境三者结合得最完整的那个。"
+          "text": "马略卡是欧洲最好的高尔夫目的地之一。不是最有名的，但可以说是整个欧洲大陆上球场质量、球场状态和风景结合得最好的地方。"
         },
         {
-          "text": "那不打球的时候呢？"
+          "text": "不在球场的时候"
         },
         {
-          "text": "很多游客低估了一点：马略卡在高尔夫之外，本身也是非常强的旅行目的地。球场是锚点，但剩下的部分会让整个行程更完整。"
+          "text": "游客常常低估的一点：除了高尔夫，马略卡本身也是一座了不起的岛，这也是为什么有那么多名人、体育明星和其他人把这里当作家，或年复一年回来。球场是锚点，但两轮球之间的日子，或是提前打完后的那个下午，才是让整趟旅行难忘的部分。"
         },
         {
-          "text": "Palma老城的餐饮水准，往往比它的城市体量更强。西北海岸的Valldemossa、Deia、Soller都很值得看。东北部更安静，也更野一点。这些不是附加分，而是马略卡作为高尔夫目的地的组成部分。"
+          "text": "许多球场的会所餐厅不只是附带的，但岛上有很多选择，从米其林星级、本地人最爱，到私人厨师用餐体验。帕尔马老城的餐饮氛围远超它的规模。西北海岸的 Valldemossa、Deià 和 Sóller 是联合国教科文组织世界遗产，在地中海上独一无二。东北海岸以及前往 Alcanada 的路上，会经过岛上一些最美的风景。从 Andratx 到 Pollença 的 Ma-10 山路，是欧洲最惊险壮观的公路之一。至少留出一个没有开球时间的下午。"
         },
         {
-          "caption": "Alcanada，在这里高尔夫和风景是一起工作的"
+          "alt": "Alcanada 与灯塔",
+          "caption": "Alcanada - 风景优美的东北海岸之路"
         },
         {
-          "caption": "Soller，很适合放在不打球的一天里"
+          "alt": "Sóller 小镇",
+          "caption": "Sóller - 西北海岸的联合国教科文组织世界遗产环境"
         },
         {
           "text": "结论"
         },
         {
-          "text": "马略卡是欧洲最好的高尔夫目的地之一。它不是最出名的那个，但一定是最完整的一类。真正懂它的人，通常都会回来，而且是有原因的。"
+          "text": "马略卡是欧洲最好的高尔夫目的地之一。不是最有名的，但可以说是整个欧洲大陆上球场质量、球场状态和风景结合得最好的地方。懂行的球手会一次又一次回来。"
         },
         {
-          "text": "如果你想真正看看马略卡最好的高尔夫是什么样子，也欢迎直接加微信：andygriffiths1。",
-          "linkLabel": "查看与职业球手同场体验 →"
+          "text": "想看看马略卡高尔夫最好的一面是什么样，有一位 PGA 职业教练在你身边吗？",
+          "linkLabel": "预订马略卡 Play With A Pro 一天体验 →"
         }
       ]
     }
