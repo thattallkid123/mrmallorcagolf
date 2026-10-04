@@ -35,7 +35,7 @@ const content = {
         "caption": "El green del hoyo 16. El lago entra en juego en la aproximación y concentra la mente considerablemente."
       },
       {
-        "text": "Santa Ponsa 1 es el único campo público del grupo Santa Ponsa y un recorrido claramente capaz de acoger golf de nivel Tour europeo. Aquí se disputó el Mallorca Golf Open en 2021. Fue el campo que devolvió el golf profesional de primer nivel a la isla tras diez años de ausencia. El ganador, Jeff Winther, firmó dos vueltas de 62 en las rondas iniciales. El campo estaba preparado para ello."
+        "text": "Santa Ponsa 1 es el único campo público del grupo Santa Ponsa y el que fue capaz de acoger un torneo del European Tour: acogió el European Tour Mallorca Golf Open de 2021. Es el campo que devolvió el golf profesional de máximo nivel a la isla tras una década de ausencia. El ganador, Jeff Winther, hizo 62 dos veces en las primeras rondas. ¡Suerte si te acercas siquiera a eso!"
       },
       {
         "text": "Por qué encaja con mi juego - y probablemente con el tuyo"
@@ -100,7 +100,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "Temporada alta de mediados de marzo a principios de junio y de mediados de septiembre a principios de noviembre: €126. Temporada baja: €77. Los detalles completos están en golf-santaponsa.com. Se requiere certificado de hándicap WHS válido."
+        "text": "El precio máximo es de €126 y el de entrada en temporada baja es de €77. Todos los detalles en golf-santaponsa.com. Se exige un certificado de hándicap WHS válido."
       },
       {
         "text": "Buggy: €43 por 18 hoyos. Alquiler de palos: €40. El campo es público y se puede reservar libremente, sin necesidad de acceso de socio. Conviene reservar con antelación en temporada alta; su historial de Tour europeo atrae a jugadores que saben exactamente a qué vienen."
@@ -136,11 +136,11 @@ const content = {
         ]
       },
       {
-        "text": "Si estás pegando bien el driver y quieres disfrutar de esa sensación, juega Santa Ponsa 1. Si estás entre Son Gual y Alcanada para un gran día de golf y buscas algo que contraste con ambos - más abierto, más amigable para la confianza y con verdadera historia de Tour europeo - este es el campo. Los pares 3 te mantendrán honesto. El resto de la vuelta te devolverá bastante. ¿Está organizando más de una vuelta? La <a href=\"/plan-your-trip\">guía de planificación del viaje</a> explica cómo secuenciar campos y horarios de salida."
+        "text": "Si estás pegando bien la bola y quieres disfrutarlo, juega Santa Ponsa 1. Si estás eligiendo entre Son Gual y Alcanada para un día serio y quieres algo más abierto, con auténtica historia del European Tour detrás, este es el campo. Los par 3 te mantienen honesto. El resto de la ronda suele darte algo a cambio. Si estás planeando más de una ronda, la <a href='/plan-your-trip'>guía de planificación del viaje</a> explica cómo ordenar campos y salidas."
       },
       {
-        "text": "¿Quieres jugar Santa Ponsa 1 como parte de un día de golf en Mallorca? Yo puedo organizarlo.",
-        "linkLabel": "Ver la experiencia play-with-a-pro →"
+        "text": "¿Vas a jugar Santa Ponsa 1? Puedo incluirlo en un día de golf en Mallorca y ayudarte a aprovechar bien las calles anchas.",
+        "linkLabel": "Reserva un día Play With A Pro en Mallorca →"
       }
     ]
   },
@@ -179,7 +179,7 @@ const content = {
         "caption": "Das 16. Grün. Der See kommt bei der Annäherung ins Spiel und sorgt für ordentliche Konzentration."
       },
       {
-        "text": "Santa Ponsa 1 ist der einzige öffentliche Platz der Santa-Ponsa-Gruppe und derjenige mit echter Turniergeschichte auf European-Tour-Niveau. Hier fand 2021 die Mallorca Golf Open statt. Der Platz brachte Spitzengolf nach einem Jahrzehnt Pause zurück auf die Insel. Jeff Winther gewann damals und eröffnete das Turnier gleich mit zwei 62er-Runden. Der Platz war dafür bereit."
+        "text": "Santa Ponsa 1 ist der einzige öffentliche Platz der Santa-Ponsa-Gruppe und derjenige, der in der Lage war, ein European-Tour-Turnier auszurichten - hier fand 2021 die European Tour Mallorca Golf Open statt. Das ist der Platz, der Spitzengolf nach einem Jahrzehnt Pause zurück auf die Insel brachte. Der Sieger Jeff Winther spielte in den ersten Runden zweimal eine 62. Viel Glück, auch nur in die Nähe davon zu kommen!"
       },
       {
         "text": "Warum dieser Platz zu meinem Spiel passt - und wahrscheinlich auch zu Ihrem"
@@ -244,7 +244,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Hochsaison von Mitte März bis Anfang Juni sowie von Mitte September bis Anfang November: €126. Nebensaison: €77. Die vollständigen Preise stehen auf golf-santaponsa.com. Ein gültiger WHS-Handicapnachweis ist erforderlich."
+        "text": "Der Spitzenpreis liegt bei €126, der Einstiegspreis der Nebensaison bei €77. Alle Details auf golf-santaponsa.com. Ein gültiger WHS-Handicap-Nachweis ist erforderlich."
       },
       {
         "text": "Buggy: €43 für 18 Löcher. Leihschläger: €40. Der Platz ist öffentlich und frei buchbar - ohne Mitgliederzugang. In der Hochsaison lohnt sich frühes Buchen; die DP-World-Tour-Vergangenheit zieht Besucher an, die genau wissen, warum sie hier spielen wollen."
@@ -280,11 +280,11 @@ const content = {
         ]
       },
       {
-        "text": "Wenn Sie den Ball gut vom Tee schlagen und dieses Gefühl genießen wollen, spielen Sie Santa Ponsa 1. Wenn Sie zwischen Son Gual und Alcanada einen Kontrast suchen - offener, vertrauensfördernder und mit echter European-Tour-Geschichte - dann ist das hier der Platz. Die Par 3s halten Sie ehrlich. Der Rest der Runde gibt Ihnen dafür auch etwas zurück. Planen Sie mehrere Runden? Der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> erklärt, wie Sie Plätze und Tee Times sinnvoll aufeinander abstimmen."
+        "text": "Wenn Sie den Ball gut treffen und Freude daran haben wollen, spielen Sie Santa Ponsa 1. Wenn Sie zwischen Son Gual und Alcanada für einen ernsthaften Tag wählen und etwas Offeneres wollen, mit echter European-Tour-Geschichte im Rücken, dann ist das hier der Platz. Die Par 3 halten Sie ehrlich. Der Rest der Runde gibt Ihnen dafür oft etwas zurück. Wenn Sie mehr als eine Runde planen, behandelt der <a href='/plan-your-trip'>Guide zur Reiseplanung</a>, wie Sie Plätze und Startzeiten aufeinander abstimmen."
       },
       {
-        "text": "Möchten Sie Santa Ponsa 1 als Teil eines Golftags auf Mallorca spielen? Ich kann das für Sie organisieren.",
-        "linkLabel": "Zum Golf-Tag mit Pro →"
+        "text": "Sie spielen Santa Ponsa 1? Ich kann ihn in einen Golftag auf Mallorca einbauen und Ihnen helfen, die breiten Fairways richtig zu nutzen.",
+        "linkLabel": "Einen Play-With-A-Pro-Tag auf Mallorca buchen →"
       }
     ]
   },
@@ -323,7 +323,7 @@ const content = {
         "caption": "Le green du trou 16. Le lac entre en jeu à l'approche et concentre considérablement l'esprit."
       },
       {
-        "text": "Santa Ponsa 1 est le seul parcours public du groupe Santa Ponsa, et celui qui possède une vraie histoire sur le Tour européen. Il a accueilli le Mallorca Golf Open en 2021. C'est le parcours qui a ramené le golf professionnel de haut niveau sur l'île après dix ans d'absence. Le vainqueur, Jeff Winther, a signé deux cartes de 62 lors des deux premiers tours. Le parcours était prêt pour cela."
+        "text": "Santa Ponsa 1 est le seul parcours public du groupe Santa Ponsa et celui qui a pu accueillir une épreuve du circuit européen : il a accueilli l'European Tour Mallorca Golf Open 2021. C'est le parcours qui a ramené le golf professionnel de haut niveau sur l'île après une décennie d'absence. Le vainqueur, Jeff Winther, a rendu deux fois 62 lors des premiers tours. Bonne chance pour vous en approcher !"
       },
       {
         "text": "Pourquoi il convient à mon jeu - et probablement au vôtre"
@@ -388,7 +388,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "Haute saison de mi-mars à début juin puis de mi-septembre à début novembre : €126. Basse saison : €77. Les détails complets figurent sur golf-santaponsa.com. Un certificat de handicap WHS valide est requis."
+        "text": "Le tarif de pointe est de €126 et le tarif d'entrée de basse saison de €77. Tous les détails sur golf-santaponsa.com. Un certificat d'index WHS valide est exigé."
       },
       {
         "text": "Buggy : €43 pour 18 trous. Location de clubs : €40. Le parcours est public et se réserve librement - aucun accès membre n'est nécessaire. Réservez tôt en haute saison ; son histoire sur le Tour européen attire les joueurs qui savent exactement ce qu'ils viennent chercher."
@@ -422,11 +422,11 @@ const content = {
         ]
       },
       {
-        "text": "Si vous tapez bien la balle au départ et que vous voulez profiter de cette sensation, jouez Santa Ponsa 1. Si vous hésitez entre Son Gual et Alcanada pour une grande journée de golf et que vous voulez un contraste plus ouvert, plus rassurant, avec une vraie histoire de Tour européen, c'est le bon choix. Les par 3 vous garderont honnête. Le reste du parcours vous rendra quelque chose. Vous prévoyez plusieurs parcours ? Le <a href=\"/plan-your-trip\">guide de planification du voyage</a> explique comment enchaîner les parcours et les heures de départ."
+        "text": "Si vous frappez bien la balle et voulez en profiter, jouez Santa Ponsa 1. Si vous hésitez entre Son Gual et Alcanada pour une journée sérieuse et voulez quelque chose de plus ouvert, avec une vraie histoire du circuit européen derrière, c'est celui-ci. Les par 3 vous gardent honnête. Le reste de la partie vous rend généralement quelque chose. Si vous prévoyez plus d'une partie, le <a href='/plan-your-trip'>guide de planification du voyage</a> explique comment enchaîner parcours et heures de départ."
       },
       {
-        "text": "Envie de jouer Santa Ponsa 1 dans le cadre d'une journée golf à Majorque ? Je peux tout organiser.",
-        "linkLabel": "Voir l'expérience play-with-a-pro →"
+        "text": "Vous jouez Santa Ponsa 1 ? Je peux l'intégrer dans une journée de golf à Majorque et vous aider à bien exploiter les fairways larges.",
+        "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
       }
     ]
   },
@@ -465,7 +465,7 @@ const content = {
         "caption": "De green van hole 16. Het meer komt in het spel op de nadering en scherpt de aandacht aanzienlijk."
       },
       {
-        "text": "Santa Ponsa 1 is de enige publieke baan van de Santa Ponsa-groep en de baan met echte European Tour-historie. Hier werd in 2021 het Mallorca Golf Open gespeeld. Dit was de baan die topgolf terugbracht naar het eiland na tien jaar afwezigheid. Winnaar Jeff Winther opende toen met twee rondes van 62. De baan was er klaar voor."
+        "text": "Santa Ponsa 1 is de enige openbare baan van de Santa Ponsa-groep en degene die in staat was een European Tour-toernooi te organiseren - de baan was gastheer van de European Tour Mallorca Golf Open 2021. Dit is de baan die topgolf na een decennium afwezigheid terugbracht naar het eiland. De winnaar, Jeff Winther, schoot in de openingsrondes twee keer 62. Veel succes om daar ook maar in de buurt te komen!"
       },
       {
         "text": "Waarom deze baan bij mijn spel past - en waarschijnlijk ook bij dat van jou"
@@ -530,7 +530,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Hoogseizoen van half maart tot begin juni en van half september tot begin november: €126. Laagseizoen: €77. De volledige details staan op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
+        "text": "De piekprijs is €126 en het instaptarief in het laagseizoen is €77. Alle details op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
       },
       {
         "text": "Buggy: €43 voor 18 holes. Clubhuur: €40. De baan is publiek en vrij boekbaar - er is geen ledenstatus nodig. Boek in het hoogseizoen ruim op tijd; de European Tour-geschiedenis trekt spelers die precies weten waarom ze hier willen spelen."
@@ -566,11 +566,11 @@ const content = {
         ]
       },
       {
-        "text": "Als je de bal goed drijft en je dat gevoel wilt vasthouden, speel dan Santa Ponsa 1. Als je tussen Son Gual en Alcanada twijfelt voor een serieuze golfdag en iets wilt dat daarmee contrasteert - opener, zelfvertrouwen gevender en met echte European Tour-historie - dan is dit de baan. De par 3's houden je scherp. De rest van de ronde geeft je veel terug. Plan je meerdere rondes? De <a href=\"/plan-your-trip\">reisplanningsgids</a> laat zien hoe je banen en starttijden goed op elkaar afstemt."
+        "text": "Als je de bal goed slaat en daarvan wilt genieten, speel dan Santa Ponsa 1. Als je kiest tussen Son Gual en Alcanada voor een serieuze dag en iets opener wilt, met echte European Tour-geschiedenis erachter, is dit de baan. De par 3's houden je eerlijk. De rest van de ronde geeft je meestal iets terug. Als je meer dan één ronde plant, legt de <a href='/plan-your-trip'>gids voor reisplanning</a> uit hoe je banen en starttijden op elkaar afstemt."
       },
       {
-        "text": "Wil je Santa Ponsa 1 spelen als onderdeel van een golfdag op Mallorca? Ik kan dat voor je regelen.",
-        "linkLabel": "Bekijk de play-with-a-pro-ervaring →"
+        "text": "Speel je Santa Ponsa 1? Ik kan hem opnemen in een golfdag op Mallorca en je helpen de brede fairways goed te benutten.",
+        "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
       }
     ]
   },
@@ -609,7 +609,7 @@ const content = {
         "caption": "Green på hål 16. Sjön kommer in i spelet på tillslaget och skärper fokus avsevärt."
       },
       {
-        "text": "Santa Ponsa 1 är den enda publika banan i Santa Ponsa-gruppen och den med äkta European Tour-meriter. Här spelades Mallorca Golf Open 2021. Det var banan som tog toppgolf tillbaka till ön efter ett årtionde utan tourgolf. Vinnaren Jeff Winther öppnade med två rundor på 62. Banan var redo för det."
+        "text": "Santa Ponsa 1 är den enda offentliga banan i Santa Ponsa-gruppen och den som kunde arrangera en European Tour-tävling - den var värd för European Tour Mallorca Golf Open 2021. Det här är banan som tog tillbaka golf på toppnivå till ön efter ett decennium. Vinnaren, Jeff Winther, sköt 62 två gånger i de inledande rundorna. Lycka till med att komma i närheten av det!"
       },
       {
         "text": "Varför den passar mitt spel - och troligen också ditt"
@@ -674,7 +674,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Högsäsong från mitten av mars till början av juni och från mitten av september till början av november: €126. Lågsäsong: €77. Fullständig prislista finns på golf-santaponsa.com. Giltigt WHS-handicapintyg krävs."
+        "text": "Topppriset är €126 och instegspriset i lågsäsong är €77. Alla detaljer på golf-santaponsa.com. Ett giltigt WHS-handicapintyg krävs."
       },
       {
         "text": "Buggy: €43 för 18 hål. Klubbhyra: €40. Banan är publik och fritt bokningsbar - inget medlemskap krävs. Boka i god tid under högsäsong; European Tour-historien lockar spelare som vet exakt varför de vill spela här."
@@ -710,11 +710,11 @@ const content = {
         ]
       },
       {
-        "text": "Om du slår drivern bra och vill bygga vidare på den känslan ska du spela Santa Ponsa 1. Om du står mellan Son Gual och Alcanada för en större golfdag och vill ha något som kontrasterar mot båda - öppnare, mer självförtroendegivande och med riktig European Tour-historia - då är det här banan. Par 3-hålen håller dig ärlig. Resten av rundan ger dig mycket tillbaka. Planerar du fler än en runda? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> visar hur du sekvenserar banor och starttider."
+        "text": "Om du slår bollen bra och vill njuta av det, spela Santa Ponsa 1. Om du väljer mellan Son Gual och Alcanada för en seriös dag och vill ha något öppnare, med äkta European Tour-historia bakom sig, är det här banan. Par 3-hålen håller dig ärlig. Resten av rundan ger oftast något tillbaka. Om du planerar mer än en runda går <a href='/plan-your-trip'>guiden för reseplanering</a> igenom hur du ordnar banor och starttider."
       },
       {
-        "text": "Vill du spela Santa Ponsa 1 som en del av en golfdag på Mallorca? Jag kan ordna det.",
-        "linkLabel": "Se play-with-a-pro-upplevelsen →"
+        "text": "Ska du spela Santa Ponsa 1? Jag kan bygga in den i en golfdag på Mallorca och hjälpa dig att använda de breda fairwayerna rätt.",
+        "linkLabel": "Boka en Play With A Pro-dag på Mallorca →"
       }
     ]
   },
@@ -753,7 +753,7 @@ const content = {
         "caption": "第16洞果岭。进攻果岭时湖泊是障碍，大大考验注意力。"
       },
       {
-        "text": "Santa Ponsa 1是Santa Ponsa球场群中唯一对公众开放的球场，也是其中真正拥有欧洲巡回赛资历的一座。它曾举办2021年Mallorca Golf Open。这座球场在中断十年之后，把顶级职业高尔夫重新带回了马略卡。最终冠军Jeff Winther在前两轮两次打出62杆。球场完全承受住了那个级别的比赛。"
+        "text": "Santa Ponsa 1 是 Santa Ponsa 集团中唯一的公共球场，也是唯一能承办欧巡赛的那一座，它曾承办 2021 年欧巡赛马略卡高尔夫公开赛。正是这座球场，在中断十年之后把顶级职业高尔夫带回了这座岛。冠军 Jeff Winther 在前几轮两次打出 62 杆。祝你好运，能接近这个成绩！"
       },
       {
         "text": "为什么它适合我的球风 - 也大概率适合你的"
@@ -818,7 +818,7 @@ const content = {
         "text": "2026年果岭费"
       },
       {
-        "text": "旺季为3月中旬至6月初，以及9月中旬至11月初，价格约为€126。淡季约€77。完整信息见golf-santaponsa.com。需要提供有效的WHS差点证明。"
+        "text": "旺季价格为 €126，淡季起步价为 €77。完整详情见 golf-santaponsa.com。需要有效的 WHS 差点证明。"
       },
       {
         "text": "球车：18洞€43。球杆租赁：€40。球场对公众开放，可直接预订，不需要会员资格。旺季建议尽早订位；它的欧洲巡回赛背景会吸引那些真正懂这座球场价值的访客。"
@@ -854,11 +854,11 @@ const content = {
         ]
       },
       {
-        "text": "如果你最近一号木状态不错，而且想把这种感觉继续放大，那就来打Santa Ponsa 1。如果你在Son Gual和Alcanada之外，还想找一场有鲜明对比的高质量高尔夫日 - 更开阔、更能建立信心、又带着真实欧巡历史 - 那就是这里。这里的三杆洞会让你保持诚实，而其他部分会给你很多回报。计划打不止一轮？<a href=\"/plan-your-trip\">行程规划指南</a>介绍了如何安排球场顺序和开球时间。"
+        "text": "如果你开球状态好、想享受击球，就打 Santa Ponsa 1。如果你在 Son Gual 和 Alcanada 之间为认真的一天做选择，又想要更开阔、背后有真正欧巡赛历史的球场，就是它。3 杆洞会让你保持诚实。其余的球洞通常会回报你一些东西。如果你在规划不止一轮球，<a href='/plan-your-trip'>行程规划指南</a>介绍了如何安排球场和开球时间的顺序。"
       },
       {
-        "text": "想把Santa Ponsa 1安排进你在马略卡的一天高尔夫体验里吗？我可以为你安排。",
-        "linkLabel": "查看play-with-a-pro体验 →"
+        "text": "要打 Santa Ponsa 1 吗？我可以把它安排进一天的马略卡高尔夫行程，并帮你用好宽阔的球道。",
+        "linkLabel": "预订马略卡 Play With A Pro 一天体验 →"
       }
     ]
   }

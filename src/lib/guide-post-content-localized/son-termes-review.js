@@ -123,7 +123,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "La tarifa completa en temporada alta ronda los €110. Conviene consultar el precio actualizado directamente con Son Termes antes de reservar, porque varía según la temporada. Hay además una oferta multivuelta que merece la pena tener en el radar. Más detalles sobre eso, próximamente. El campo está a unos 20 minutos del centro de Palma, en la sierra de Na Burguesa."
+        "text": "El precio completo en temporada ronda los €100. Comprueba las tarifas actuales directamente con Son Termes antes de reservar, ya que varían según la temporada. Hay una oferta de varias rondas que conviene conocer. Más detalles próximamente. El campo está a unos 20 minutos del centro de Palma, en lo alto de las montañas de Na Burguesa."
       },
       {
         "alt": "Vista aérea de Son Termes Golf, Mallorca, sobre el recorrido con montañas",
@@ -163,7 +163,7 @@ const content = {
         "text": "Son Termes ofrece más personalidad que la mayoría de campos en este rango de precio. Las vistas de los nueve de vuelta son las mejores que se pueden encontrar tan cerca de Palma. El diseño te obliga a pensar todo el tiempo y una segunda vuelta probablemente sacaría una mejor tarjeta. Para el golfista visitante que quiera algo distinto de los campos premium, o para un residente que busque un recorrido con verdadera personalidad a un precio sensato, merece su sitio en la lista. Si todavía estás definiendo el itinerario completo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre la logística y los horarios."
       },
       {
-        "text": "¿Estás pensando en jugar Son Termes o quieres que te recomendemos qué campo encaja mejor con tu juego?",
+        "text": "¿Estás pensando en Son Termes? Puedo decirte si encaja en tu viaje y si debería ser la ronda de la zona de Palma en torno a la cual organices el resto.",
         "linkLabel": "Ponte en contacto →"
       }
     ]
@@ -290,7 +290,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Der volle Saisonpreis liegt bei rund €110. Prüfen Sie die aktuellen Preise vor der Buchung direkt bei Son Termes, da sie saisonal variieren. Es gibt zudem ein Mehr-Runden-Angebot, das man kennen sollte. Mehr dazu in Kürze. Der Platz liegt etwa 20 Minuten vom Zentrum Palmas entfernt, oben in den Na-Burguesa-Bergen."
+        "text": "Der volle Saisonpreis liegt bei rund €100. Prüfen Sie die aktuellen Preise vor der Buchung direkt bei Son Termes, da sie saisonal variieren. Es gibt ein Mehr-Runden-Angebot, das man kennen sollte. Mehr dazu in Kürze. Der Platz liegt etwa 20 Minuten vom Zentrum Palmas entfernt, oben in den Na-Burguesa-Bergen."
       },
       {
         "alt": "Luftaufnahme des Golfplatzes Son Termes auf Mallorca mit Bergen rund um das Layout",
@@ -330,7 +330,7 @@ const content = {
         "text": "Son Termes bietet mehr Charakter als die meisten Plätze in dieser Preisklasse. Die Ausblicke auf den Back Nine sind die besten, die man so nah an Palma bekommen kann. Das Layout fordert durchgehend Entscheidungen, und bei einem zweiten Besuch ist ein besserer Score sehr realistisch. Für Gastspieler, die etwas anderes als die Premiumplätze suchen, oder für Residenten, die einen Platz mit echter Persönlichkeit zu einem vernünftigen Preis wollen, verdient Son Termes seinen Platz auf der Liste. Wenn Sie die restliche Reiseroute noch planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Logistik und Timing ab."
       },
       {
-        "text": "Sie überlegen, Son Termes zu spielen, oder möchten eine Empfehlung, welcher Platz zu Ihrem Spiel passt?",
+        "text": "Sie überlegen, Son Termes zu spielen? Ich kann Ihnen sagen, ob er zu Ihrer Reise passt und ob er die Runde bei Palma sein sollte, um die Sie planen.",
         "linkLabel": "Kontakt aufnehmen →"
       }
     ]
@@ -458,7 +458,7 @@ const content = {
         "text": "Green-fees 2026"
       },
       {
-        "text": "Le tarif plein en haute saison tourne autour de 110 €. Mieux vaut vérifier les tarifs en cours directement auprès de Son Termes avant de réserver, car ils varient selon la saison. Il existe aussi une offre multi-tours qui mérite d'être connue. Plus de détails à venir à ce sujet. Le parcours se trouve à environ 20 minutes du centre de Palma, dans les montagnes de Na Burguesa."
+        "text": "Le tarif complet en saison est d'environ €100. Vérifiez les tarifs actuels directement auprès de Son Termes avant de réserver, car ils varient selon la saison. Il existe une offre multi-parties à connaître. Plus de détails prochainement. Le parcours se trouve à environ 20 minutes du centre de Palma, en haut des montagnes de Na Burguesa."
       },
       {
         "alt": "Vue aérienne du golf Son Termes à Majorque sur le tracé avec les montagnes",
@@ -488,7 +488,7 @@ const content = {
           ],
           [
             "Conseil clubhouse",
-            "Si vous aimez davantage les parcours de caractère que les parcours polis, c est une bonne alternative près de Palma face aux noms premium. Finir sur la terrasse avec la vue sur les montagnes est une très bonne façon de terminer."
+            "Si vous aimez davantage les parcours de caractère que les parcours polis, c'est une bonne alternative près de Palma face aux noms premium. Finir sur la terrasse avec la vue sur les montagnes est une très bonne façon de terminer."
           ]
         ]
       },
@@ -496,8 +496,8 @@ const content = {
         "text": "Son Termes offre plus de caractère que la plupart des parcours à ce niveau de prix. Les vues du retour sont les plus belles que l'on puisse avoir aussi près de Palma. Le tracé oblige à réfléchir du début à la fin, et une deuxième partie permettrait sans doute de signer une meilleure carte. Pour un golfeur de passage qui cherche autre chose que les parcours premium, ou pour un résident qui veut un parcours avec une vraie personnalité à un tarif raisonnable, il mérite sa place dans la sélection. Si vous finalisez encore l'itinéraire complet, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre la logistique et le timing."
       },
       {
-        "text": "Vous pensez jouer Son Termes ou vous voulez savoir quel parcours correspond le mieux à votre jeu ?",
-        "linkLabel": "Nous contacter →"
+        "text": "Vous pensez à Son Termes ? Je peux vous dire s'il convient à votre voyage et s'il doit être la partie autour de Palma sur laquelle vous construisez le reste.",
+        "linkLabel": "Prendre contact →"
       }
     ]
   },
@@ -624,7 +624,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "De volledige prijs in het hoogseizoen ligt rond €110. Controleer voor het boeken de actuele tarieven rechtstreeks bij Son Termes, want die verschillen per seizoen. Er is ook een meer-ronden-deal die het vermelden waard is. Daarover binnenkort meer. De baan ligt ongeveer 20 minuten van het centrum van Palma, hoog in het Na Burguesa-gebergte."
+        "text": "De volledige prijs in het seizoen ligt rond €100. Controleer de actuele tarieven rechtstreeks bij Son Termes voordat je boekt, omdat de prijzen per seizoen variëren. Er is een aanbieding voor meerdere rondes die het kennen waard is. Binnenkort meer details. De baan ligt ongeveer 20 minuten van het centrum van Palma, hoog in de Na Burguesa-bergen."
       },
       {
         "alt": "Luchtfoto van golfbaan Son Termes op Mallorca met het banenverloop in de bergen",
@@ -664,7 +664,7 @@ const content = {
         "text": "Son Termes biedt meer karakter dan de meeste banen in deze prijsklasse. De uitzichten op de back nine zijn het beste wat je zo dicht bij Palma kunt krijgen. De lay-out blijft je de hele ronde aan het denken zetten, en een tweede bezoek zou vrijwel zeker een betere score opleveren. Voor een bezoekende golfer die iets anders wil dan de premiumbanen, of voor een local die een baan met echte persoonlijkheid zoekt voor een redelijke prijs, verdient Son Termes zijn plek op de lijst. Ben je de rest van je reisschema nog aan het uitwerken? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt logistiek en timing."
       },
       {
-        "text": "Denk je eraan om Son Termes te spelen, of wil je advies over welke baan het best bij jouw spel past?",
+        "text": "Denk je aan Son Termes? Ik kan je vertellen of hij bij je reis past en of het de ronde in de buurt van Palma moet zijn waaromheen je plant.",
         "linkLabel": "Neem contact op →"
       }
     ]
@@ -792,7 +792,7 @@ const content = {
         "text": "Greenfee 2026"
       },
       {
-        "text": "Fullt pris i högsäsong ligger runt €110. Kontrollera aktuella priser direkt med Son Termes innan du bokar, eftersom priserna varierar mellan säsongerna. Det finns också ett flerrunderserbjudande som är värt att känna till. Mer om det kommer snart. Banan ligger ungefär 20 minuter från centrala Palma, uppe i Na Burguesa-bergen."
+        "text": "Fullpriset i säsong ligger runt €100. Kontrollera aktuella priser direkt med Son Termes innan du bokar, eftersom priserna varierar med säsongen. Det finns ett erbjudande för flera rundor som är värt att känna till. Mer information kommer snart. Banan ligger cirka 20 minuter från centrala Palma, uppe i Na Burguesa-bergen."
       },
       {
         "alt": "Flygvy över Son Termes golfbana på Mallorca med bansträckningen genom bergen",
@@ -832,8 +832,8 @@ const content = {
         "text": "Son Termes erbjuder mer karaktär än de flesta banor i den här prisklassen. Utsikten från back nine är den bästa du hittar så här nära Palma. Layouten får dig att tänka hela vägen runt, och ett andra besök skulle sannolikt ge ett bättre score. För en golfresenär som vill spela något annat än premiumbanorna, eller en boende som söker en bana med verklig personlighet till ett vettigt pris, förtjänar den sin plats på listan. Planerar du fortfarande resten av resan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp logistik och timing."
       },
       {
-        "text": "Funderar du på att spela Son Termes eller vill du ha en rekommendation om vilken bana som passar ditt spel?",
-        "linkLabel": "Hoer av dig →"
+        "text": "Funderar du på Son Termes? Jag kan berätta om den passar din resa och om den bör vara rundan i Palmaområdet som du bygger kring.",
+        "linkLabel": "Ta kontakt →"
       }
     ]
   },
@@ -960,7 +960,7 @@ const content = {
         "text": "2026 果岭费"
       },
       {
-        "text": "旺季全价大约为 €110。预订前请直接向 Son Termes 查询最新价格，因为不同季节的定价会有变化。这里还有一个多轮套餐，值得留意。更多细节之后会补充。球场距离帕尔马市中心大约 20 分钟车程，位于 Na Burguesa 山中。"
+        "text": "旺季的完整价格约为 €100。预订前请直接向 Son Termes 确认当前价格，因为价格会随季节变化。有一个多轮优惠值得了解，更多详情稍后公布。球场距离帕尔马市中心大约 20 分钟车程，位于 Na Burguesa 山上。"
       },
       {
         "alt": "马略卡 Son Termes 高尔夫球场航拍，可见球道穿行于群山之间",
@@ -1000,8 +1000,8 @@ const content = {
         "text": "在这个价位上，Son Termes 的个性强过大多数球场。后九的景观，是离帕尔马这么近的范围内最出色的。整座球场一路都在逼你思考打法，而第二次来打，大概率能把成绩再往下压。对来岛上打球、又想体验一点不同于高端名场风格的访客，或是想找一座价格合理、真正有性格球场的本地球手来说，它完全值得进入名单。还在规划整体行程？<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了后勤安排和时间安排。"
       },
       {
-        "text": "想打 Son Termes，或者想知道哪座球场更适合你的球风？",
-        "linkLabel": "联系我们 →"
+        "text": "在考虑 Son Termes 吗？我可以告诉你它是否适合你的行程，以及它是否应该成为你围绕安排的那场帕尔马地区球局。",
+        "linkLabel": "联系我 →"
       }
     ]
   }

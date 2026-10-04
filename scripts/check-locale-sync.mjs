@@ -205,6 +205,9 @@ function hrefFindings() {
   const out = []
   for (const s of sources) {
     for (const r of collect(s)) {
+      // inline <a href> in prose is localized at render time (InlineRichText), so a
+      // locale prefix typed into the translation becomes /de/de/... and 404s
+      if (/<a\s+href=["']\/(?:de|es|fr|nl|sv|zh)\//.test(r.tr)) out.push({ label: s.label, ...r, expected: 'unprefixed href (the renderer adds the locale)' })
       if (!/^\/[a-z0-9\-/]*(?:[#?][^\s]*)?$/i.test(r.en) || /^\/(?:[a-z]{2})\//.test(r.en)) continue
       const expected = r.en === '/' ? `/${r.locale}` : `/${r.locale}${r.en}`
       if (r.tr !== expected && r.tr !== r.en) out.push({ label: s.label, ...r, expected })

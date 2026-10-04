@@ -3,11 +3,11 @@ const content = {
   "es": {
     "metadata": {
       "title": "Alcanada - Reseña & Tarifas",
-      "description": "Alcanada en Mallorca: el faro, los greens y green fees 2026."
+      "description": "Alcanada: 9/10, €115-€230, 58 bunkers. El veredicto honesto de Andy, incluido por qué merecen la pena los 50 minutos de trayecto."
     },
     "meta": {
       "badge": "Análisis del campo",
-      "readTime": "6 min",
+      "readTime": "7 min de lectura",
       "updated": "Marzo 2026",
       "title": "Club de Golf Alcanada - Análisis honesto de un Profesional PGA",
       "intro": "El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia real. El faro cambia todo.",
@@ -35,7 +35,7 @@ const content = {
         "caption": "Alcanada a la hora dorada. El faro se encuentra en su propia isla frente a la costa y es visible desde 16 de los 18 hoyos."
       },
       {
-        "text": "Alcanada es el campo al que llevo a la gente cuando quiero que regresen a casa con una historia que contar. Puede que sea la vuelta más memorable de la isla. El faro lo cambia todo."
+        "text": "Alcanada es el campo al que llevo a la gente cuando quiero que se vaya a casa recordando una ronda en concreto. Puede que sea el día más memorable de la isla. El faro y las vistas de muchos de los hoyos ayudan, pero el campo se sostiene también por sí solo. Si lo estás comparando con <a href=\"/guides/son-gual-review\">Son Gual</a> o <a href=\"/guides/son-muntaner-review\">Son Muntaner</a>, merece la pena leer primero ambos."
       },
       {
         "text": "El entorno"
@@ -163,22 +163,22 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "text": "Alcanada es el campo que elegiría para hacer que alguien se enamore del golf en Mallorca. Los greens te van a examinar. El viaje al norte merece la pena. Y la comida después de la vuelta no es negociable. ¿Planeando más de una vuelta en el viaje? Empieza por la <a href=\"/plan-your-trip\">guía de planificación del viaje</a>."
+        "text": "9/10. Alcanada es el campo que usaría si quisiera que alguien entendiera por qué la gente vuelve al golf en Mallorca. Los greens te pondrán a prueba, el trayecto hacia el norte merece la pena y conviene dejar tiempo para comer después. Dos límites honestos: se llena en temporada alta, así que reserva tu salida con mucha antelación, y si te alojas en Palma o en el suroeste, es un trayecto de verdad, unos 50 minutos por sentido, no una ronda rápida entre otros planes. Explora los 24 campos y los green fees en la <a href='/golf-courses'>página de campos de golf de Mallorca</a>. ¿Planeas más de una ronda en el viaje? Empieza por la <a href='/plan-your-trip'>guía de planificación del viaje</a>."
       },
       {
-        "text": "Alcanada es uno de mis dos campos base para los días play-with-a-pro. ¿Quieres jugarlo de verdad como se merece?",
-        "linkLabel": "Ver la experiencia play-with-a-pro →"
+        "text": "¿Vas a jugar Alcanada? Lo uso con regularidad para días guiados y puedo ayudarte a convertir las vistas en un plan de juego real.",
+        "linkLabel": "Reserva un día Play With A Pro en Mallorca →"
       }
     ]
   },
   "de": {
     "metadata": {
       "title": "Alcanada - Review & Gebühren",
-      "description": "Alcanada auf Mallorca: Leuchtturm, Grüns und Greenfees 2026."
+      "description": "Alcanada: 9/10, €115-€230, 58 Bunker. Andys ehrliches Urteil, auch dazu, warum sich die 50 Minuten Fahrt lohnen."
     },
     "meta": {
       "badge": "Platzbewertung",
-      "readTime": "6 Min. Lesezeit",
+      "readTime": "7 Min. Lesezeit",
       "updated": "März 2026",
       "title": "Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals",
       "intro": "Der Platz, zu dem ich Menschen mitnehme, wenn sie sich nach einer Runde ganz besonders erinnern sollen. Der Leuchtturm hilft, aber der Platz steht auch allein stark da.",
@@ -206,7 +206,7 @@ const content = {
         "caption": "Alcanada zur goldenen Stunde. Der Leuchtturm steht auf einer kleinen Insel direkt vor der Küste und ist von 16 der 18 Löcher sichtbar."
       },
       {
-        "text": "Alcanada ist der Platz, zu dem ich Menschen mitnehme, wenn ich möchte, dass sie mit einer Geschichte nach Hause kommen. Es ist vielleicht die einprägsamste Runde auf der Insel. Der Leuchtturm verändert alles."
+        "text": "Alcanada ist der Platz, zu dem ich Menschen mitnehme, wenn ich möchte, dass sie eine bestimmte Runde in Erinnerung behalten. Es ist vielleicht der einprägsamste Tag auf der Insel. Der Leuchtturm und die Aussichten auf vielen Löchern helfen, aber der Platz besteht auch für sich allein. Wenn Sie ihn gegen <a href=\"/guides/son-gual-review\">Son Gual</a> oder <a href=\"/guides/son-muntaner-review\">Son Muntaner</a> abwägen, lohnt es sich, beide vorher zu lesen."
       },
       {
         "text": "Die Lage"
@@ -334,22 +334,22 @@ const content = {
         "text": "Fazit"
       },
       {
-        "text": "Alcanada ist der Platz, den ich jemandem zeigen würde, wenn ich möchte, dass er sich in Mallorca-Golf verliebt. Die Grüns prüfen Sie. Die Fahrt nach Norden lohnt sich. Und das Mittagessen danach ist nicht verhandelbar. Planen Sie mehr als eine Runde für die Reise? Starten Sie mit dem <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a>."
+        "text": "9/10. Alcanada ist der Platz, den ich nehmen würde, wenn jemand verstehen soll, warum Menschen für das Golf auf Mallorca immer wiederkommen. Die Grüns werden Sie prüfen, die Fahrt nach Norden lohnt sich, und Sie sollten danach Zeit für ein Mittagessen lassen. Zwei ehrliche Einschränkungen: In der Hochsaison wird es voll, buchen Sie Ihre Startzeit also rechtzeitig, und wenn Sie in Palma oder im Südwesten wohnen, ist es eine richtige Fahrt, etwa 50 Minuten pro Strecke, keine schnelle Runde zwischen anderen Plänen. Alle 24 Plätze und Greenfees finden Sie auf der Seite <a href='/golf-courses'>Golfplätze auf Mallorca</a>. Planen Sie mehr als eine Runde auf der Reise? Beginnen Sie mit dem <a href='/plan-your-trip'>Guide zur Reiseplanung</a>."
       },
       {
-        "text": "Alcanada ist einer meiner beiden Ankerplätze für meine Golf-Tage mit Pro. Möchten Sie den Platz richtig erleben?",
-        "linkLabel": "Zum Golf-Tag mit Pro →"
+        "text": "Sie spielen Alcanada? Ich nutze ihn regelmäßig für begleitete Tage und kann Ihnen helfen, aus den Aussichten einen echten Scoring-Plan zu machen.",
+        "linkLabel": "Einen Play-With-A-Pro-Tag auf Mallorca buchen →"
       }
     ]
   },
   "fr": {
     "metadata": {
       "title": "Alcanada Golf - Avis honnête 2026",
-      "description": "Alcanada à Majorque, vu par un professionnel PGA qui y joue régulièrement. Le phare, les greens, la terrasse et les green fees 2026."
+      "description": "Alcanada : 9/10, €115-€230, 58 bunkers. Le verdict honnête d'Andy, y compris pourquoi les 50 minutes de route valent la peine."
     },
     "meta": {
       "badge": "Avis parcours",
-      "readTime": "6 min de lecture",
+      "readTime": "7 min de lecture",
       "updated": "Mars 2026",
       "title": "Club de Golf Alcanada - Avis honnête d'un professionnel PGA",
       "intro": "Le parcours où j'emmène les gens quand je veux qu'ils repartent avec une vraie histoire. Le phare change tout.",
@@ -377,7 +377,7 @@ const content = {
         "caption": "Alcanada à l'heure dorée. Le phare se trouve sur sa propre île au large de la côte et est visible depuis 16 des 18 trous."
       },
       {
-        "text": "Alcanada est le parcours où j'emmène les gens quand je veux qu'ils rentrent chez eux en se souvenant d'une partie en particulier. C'est peut-être la journée la plus mémorable de l'île. Le phare aide, mais le parcours se défend très bien tout seul."
+        "text": "Alcanada est le parcours où j'emmène les gens quand je veux qu'ils rentrent chez eux en se souvenant d'une partie en particulier. C'est peut-être la journée la plus mémorable de l'île. Le phare et les vues sur de nombreux trous aident, mais le parcours tient aussi debout tout seul. Si vous le comparez à <a href=\"/guides/son-gual-review\">Son Gual</a> ou à <a href=\"/guides/son-muntaner-review\">Son Muntaner</a>, il vaut la peine de lire les deux d'abord."
       },
       {
         "text": "Le cadre"
@@ -478,7 +478,7 @@ const content = {
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "La vue peut faire paraître le départ plus simple qu il ne l est. Choisissez d abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous a des greens rapides avec très peu de putts faciles."
+            "La vue peut faire paraître le départ plus simple qu'il ne l est. Choisissez d abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous a des greens rapides avec très peu de putts faciles."
           ],
           [
             "Conseil clubhouse",
@@ -503,22 +503,22 @@ const content = {
       },
       {},
       {
-        "text": "Alcanada est le parcours que je choisirais pour faire tomber quelqu'un amoureux du golf à Majorque. Les greens vont vous tester. Le trajet vers le nord en vaut la peine. Et le déjeuner après la partie n'est pas négociable. Vous prévoyez plusieurs parcours pendant le voyage ? Commencez par le <a href=\"/plan-your-trip\">guide de planification du voyage</a>."
+        "text": "9/10. Alcanada est le parcours que je choisirais pour faire comprendre à quelqu'un pourquoi on revient au golf à Majorque. Les greens vous mettront à l'épreuve, la route vers le nord en vaut la peine, et il faut prévoir du temps pour déjeuner ensuite. Deux limites honnêtes : il y a du monde en haute saison, alors réservez votre départ bien à l'avance, et si vous logez à Palma ou dans le sud-ouest, c'est un vrai trajet, environ 50 minutes dans chaque sens, pas une partie rapide entre d'autres projets. Consultez les 24 parcours et les green fees sur la <a href='/golf-courses'>page des parcours de golf de Majorque</a>. Vous prévoyez plus d'une partie pendant le voyage ? Commencez par le <a href='/plan-your-trip'>guide de planification du voyage</a>."
       },
       {
-        "text": "Alcanada est l'un de mes deux parcours de référence pour les journées play-with-a-pro. Envie de le jouer comme il faut ?",
-        "linkLabel": "Voir l'expérience play-with-a-pro →"
+        "text": "Vous jouez Alcanada ? Je l'utilise régulièrement pour des journées accompagnées et je peux vous aider à transformer les vues en un vrai plan de score.",
+        "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
       }
     ]
   },
   "nl": {
     "metadata": {
       "title": "Alcanada Golf - Eerlijke review 2026",
-      "description": "Alcanada op Mallorca, bekeken door een PGA-professional die er regelmatig speelt. De vuurtoren, de greens, het terras en de greenfees voor 2026."
+      "description": "Alcanada: 9/10, €115-€230, 58 bunkers. Andy's eerlijke oordeel, inclusief waarom de rit van 50 minuten het waard is."
     },
     "meta": {
       "badge": "Baanreview",
-      "readTime": "6 min leestijd",
+      "readTime": "7 min leestijd",
       "updated": "Maart 2026",
       "title": "Club de Golf Alcanada - eerlijke review van een PGA-professional",
       "intro": "De baan waar ik mensen mee naartoe neem als ik wil dat ze met een echt verhaal naar huis gaan. De vuurtoren verandert alles.",
@@ -546,7 +546,7 @@ const content = {
         "caption": "Alcanada in het gouden uur. De vuurtoren staat op zijn eigen eilandje vlak voor de kust en is zichtbaar van 16 van de 18 holes."
       },
       {
-        "text": "Alcanada is de baan waar ik mensen mee naartoe neem als ik wil dat ze thuiskomen met een verhaal. Het is misschien wel de meest memorabele ronde op het eiland. De vuurtoren verandert alles."
+        "text": "Alcanada is de baan waar ik mensen mee naartoe neem als ik wil dat ze naar huis gaan met de herinnering aan één ronde in het bijzonder. Het is misschien wel de meest gedenkwaardige dag op het eiland. De vuurtoren en het uitzicht op veel holes helpen, maar de baan staat ook op zichzelf. Als je hem afweegt tegen <a href=\"/guides/son-gual-review\">Son Gual</a> of <a href=\"/guides/son-muntaner-review\">Son Muntaner</a>, is het de moeite waard om die eerst te lezen."
       },
       {
         "text": "De setting"
@@ -674,22 +674,22 @@ const content = {
         "text": "Oordeel"
       },
       {
-        "text": "Alcanada is de baan die ik iemand zou laten spelen als ik wil dat diegene verliefd wordt op golf op Mallorca. De greens testen je. De rit naar het noorden is het waard. En de lunch achteraf is niet onderhandelbaar. Ben je van plan meerdere rondes te spelen tijdens je reis? Begin met de <a href=\"/plan-your-trip\">reisplanningsgids</a>."
+        "text": "9/10. Alcanada is de baan die ik zou gebruiken als ik iemand wilde laten begrijpen waarom mensen terugkomen voor golf op Mallorca. De greens stellen je op de proef, de rit naar het noorden is het waard en laat na afloop tijd voor een lunch. Twee eerlijke beperkingen: het wordt druk in het hoogseizoen, dus boek je starttijd ruim van tevoren, en als je in Palma of het zuidwesten verblijft, is het een flinke rit, zo'n 50 minuten per richting, geen snelle ronde tussen andere plannen door. Bekijk alle 24 banen en greenfees op de pagina <a href='/golf-courses'>golfbanen op Mallorca</a>. Plan je meer dan één ronde op de reis? Begin dan met de <a href='/plan-your-trip'>gids voor reisplanning</a>."
       },
       {
-        "text": "Alcanada is een van mijn twee basisbanen voor play-with-a-pro-dagen. Wil je hem echt goed spelen?",
-        "linkLabel": "Bekijk de play-with-a-pro-ervaring →"
+        "text": "Speel je Alcanada? Ik gebruik hem regelmatig voor begeleide dagen en kan je helpen het uitzicht om te zetten in een echt scoreplan.",
+        "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
       }
     ]
   },
   "sv": {
     "metadata": {
       "title": "Alcanada Golf - Ärlig recension 2026",
-      "description": "Alcanada på Mallorca, sett genom ögonen på ett PGA-proffs som spelar där regelbundet. Fyren, greenerna, terrassen och greenfeen 2026."
+      "description": "Alcanada: 9/10, €115-€230, 58 bunkrar. Andys ärliga omdöme, inklusive varför den 50 minuter långa resan är värd det."
     },
     "meta": {
       "badge": "Banrecension",
-      "readTime": "6 min läsning",
+      "readTime": "7 min läsning",
       "updated": "Mars 2026",
       "title": "Club de Golf Alcanada - ärlig recension från ett PGA-proffs",
       "intro": "Banan jag tar folk till när jag vill att de ska åka hem med en riktig historia. Fyren förändrar allt.",
@@ -717,7 +717,7 @@ const content = {
         "caption": "Alcanada i det gyllene ljuset. Fyren ligger på sin egen ö strax utanför kusten och är synlig från 16 av 18 hål."
       },
       {
-        "text": "Alcanada är banan jag tar folk till när jag vill att de ska komma hem med en historia att berätta. Det kan vara den mest minnesvärda rundan på ön. Fyren förändrar allt."
+        "text": "Alcanada är banan jag tar med människor till när jag vill att de ska åka hem med minnet av en runda i synnerhet. Det kan vara den mest minnesvärda dagen på ön. Fyren och utsikten på många av hålen hjälper, men banan klarar sig också på egna meriter. Om du väger den mot <a href=\"/guides/son-gual-review\">Son Gual</a> eller <a href=\"/guides/son-muntaner-review\">Son Muntaner</a> är det värt att läsa båda först."
       },
       {
         "text": "Miljön"
@@ -845,22 +845,22 @@ const content = {
         "text": "Omdöme"
       },
       {
-        "text": "Alcanada är banan jag skulle välja om jag ville få någon att bli kär i golf på Mallorca. Greenerna kommer att testa dig. Resan norrut är värd det. Och lunchen efteråt är inte förhandlingsbar. Planerar du fler än en runda under resan? Börja med <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
+        "text": "9/10. Alcanada är banan jag skulle använda om jag ville att någon skulle förstå varför människor kommer tillbaka till golfen på Mallorca. Greenerna kommer att testa dig, resan norrut är värd det och du bör lämna tid för lunch efteråt. Två ärliga begränsningar: det blir fullt under högsäsong, så boka din starttid i god tid, och om du bor i Palma eller sydväst är det en riktig bilresa, cirka 50 minuter i vardera riktningen, inte en snabb runda mellan andra planer. Bläddra bland alla 24 banor och greenfees på sidan om <a href='/golf-courses'>golfbanor på Mallorca</a>. Planerar du mer än en runda på resan? Börja med <a href='/plan-your-trip'>guiden för reseplanering</a>."
       },
       {
-        "text": "Alcanada är en av mina två huvudbanor för play-with-a-pro-dagar. Vill du spela den på rätt sätt?",
-        "linkLabel": "Se play-with-a-pro-upplevelsen →"
+        "text": "Ska du spela Alcanada? Jag använder den regelbundet för guidade dagar och kan hjälpa dig att göra utsikten till en riktig scoreplan.",
+        "linkLabel": "Boka en Play With A Pro-dag på Mallorca →"
       }
     ]
   },
   "zh": {
     "metadata": {
       "title": "阿尔卡纳达高尔夫球场 - PGA职业教练诚实评测",
-      "description": "从一位经常下场的PGA职业教练视角看Alcanada。灯塔、果岭、餐厅露台，以及2026年果岭费。"
+      "description": "Alcanada：9/10，€115-€230，58 个沙坑。Andy 的诚实结论，包括为什么值得开 50 分钟的车。"
     },
     "meta": {
       "badge": "球场评测",
-      "readTime": "6分钟",
+      "readTime": "7分钟阅读",
       "updated": "2026年3月",
       "title": "阿尔卡纳达高尔夫球场 - PGA职业教练诚实评测",
       "intro": "这是我想让客人带着故事回家的时候会带他们去的球场。灯塔改变了一切。",
@@ -888,7 +888,7 @@ const content = {
         "caption": "黄金时刻的Alcanada球场。灯塔矗立在海岸附近的小岛上，从18个洞中的16个都能看到。"
       },
       {
-        "text": "如果我想让客人在打完球后带着一个真正的故事回家，我会带他们来Alcanada。它也许是整座岛上最令人难忘的一轮球。灯塔改变了一切。"
+        "text": "Alcanada 是我想让人带着一轮特别的回忆回家时会带他们去的球场。它也许是岛上最难忘的一天。灯塔和许多球洞的景色是加分项，但球场本身也经得起考验。如果你在拿它和<a href=\"/guides/son-gual-review\">Son Gual</a>或<a href=\"/guides/son-muntaner-review\">Son Muntaner</a>比较，建议先把这两篇也读一读。"
       },
       {
         "text": "球场环境"
@@ -1016,11 +1016,11 @@ const content = {
         "text": "结论"
       },
       {
-        "text": "如果我想让一个人爱上马略卡的高尔夫，我会带他来Alcanada。果岭会认真考验你。往北开这段路完全值得。打完后的午餐更是这一天不可分割的一部分。计划在行程中打不止一轮？从<a href=\"/plan-your-trip\">行程规划指南</a>开始。"
+        "text": "9/10。如果我想让一个人明白，为什么大家会为了马略卡的高尔夫一再回来，Alcanada 就是我会选的球场。果岭会考验你，向北的车程值得，打完之后记得留出吃午饭的时间。两个诚实的限制：旺季人很多，所以开球时间要提前很早预订；如果你住在帕尔马或西南部，这是一段真正的车程，单程大约 50 分钟，不是穿插在其他安排之间的快速一轮。想浏览全部 24 座球场和果岭费，请看<a href='/golf-courses'>马略卡高尔夫球场</a>页面。行程里要打不止一轮？先从<a href='/plan-your-trip'>行程规划指南</a>开始。"
       },
       {
-        "text": "Alcanada是我两条play-with-a-pro核心线路之一。想真正把它打明白吗？",
-        "linkLabel": "查看play-with-a-pro体验 →"
+        "text": "要打 Alcanada 吗？我经常用它来做带练日，可以帮你把景色变成真正的成绩计划。",
+        "linkLabel": "预订马略卡 Play With A Pro 一天体验 →"
       }
     ]
   }

@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Golf de Andratx - Análisis honesto 2026",
-      "description": "Golf de Andratx por un Profesional PGA: entorno de montaña, el par 5 más largo de España, €125. Uno de los campos más exigentes de Mallorca."
+      "description": "7,5/10: €125, el par 5 más largo de España, entorno de montaña. El veredicto honesto de Andy sobre Golf de Andratx."
     },
     "meta": {
       "badge": "Análisis del campo",
@@ -114,7 +114,7 @@ const content = {
         "text": "Información práctica"
       },
       {
-        "text": "El green fee en mayo de 2026 era de alrededor de 125 € por persona. Los buggies son obligatorios antes de las 14:00 y se cobran aparte. En el check-in se exige un seguro de golf de 3 €. Los tees amarillos son la opción correcta para la mayoría de los visitantes. El campo está en el suroeste de la isla, a unos 20 minutos de Palma según el lugar de alojamiento. La villa de Andratx está a pocos minutos."
+        "text": "El green fee en mayo de 2026 rondaba los €125 por persona. Los buggies son obligatorios antes de las 14:00 y se cobran aparte. A partir de las 14:00 se permite ir andando. En el check-in se exige un seguro de golf de €3. Las salidas amarillas son la elección adecuada para la mayoría de los golfistas visitantes. El campo está en el suroeste de la isla, a unos 30 minutos de Palma. El pueblo de Andratx está a pocos minutos. Aunque casi toda la ronda transcurre en lo alto de la montaña, la vista del mar sobre Camp de Mar solo se ve desde el hoyo 2, un detalle que conviene saber antes de crear expectativas sobre las vistas al agua."
       },
       {
         "text": "El campo juega más difícil de lo que sugieren los metros, sobre todo en un día de viento. Una segunda visita produciría un mejor resultado. El trazado premia el conocimiento del campo y la gestión del juego bastante más que la potencia."
@@ -153,15 +153,15 @@ const content = {
         "text": "Golf Andratx es un 7,5 sobre 10. Las vistas desde los hoyos más altos son las mejores que he visto en el suroeste de la isla. El trazado es una prueba seria, el Green Monster es el par 5 más largo de España y se juega cada metro, y el hoyo 12 sobre Camp del Mar es uno de los mejores que he jugado en Mallorca. Los buggies obligatorios antes de las 14:00 y una mañana concurrida lo hicieron sentir más organizado que relajado, pero esa es la realidad de un campo con está demanda. Merece la pena jugarlo, y merece la pena volver con un plano del campo en mano. Para ayuda con la secuencia frente a otros campos, consulta la <a href=\"/plan-your-trip\">guía de planificación del viaje</a>."
       },
       {
-        "text": "¿Le gustaría jugar Golf Andratx con un Profesional PGA que le ayude a planificar el recorrido?",
-        "linkLabel": "Ver la experiencia play-with-a-pro →"
+        "text": "¿Vas a jugar Golf Andratx? Puedo ayudarte con la estrategia, la elección de palos y las zonas de problemas que más importan en este trazado.",
+        "linkLabel": "Reserva un día Play With A Pro en Mallorca →"
       }
     ]
   },
   "de": {
     "metadata": {
       "title": "Golf de Andratx - Ehrliche Bewertung 2026",
-      "description": "Golf de Andratx bewertet von einem PGA-Professional: Bergkulisse, das längste Par 5 Spaniens, €125. Einer der anspruchsvollsten Plätze Mallorcas."
+      "description": "7,5/10: €125, längstes Par 5 Spaniens, Bergkulisse. Andys ehrliches Urteil zu Golf de Andratx."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -272,7 +272,7 @@ const content = {
         "text": "Praktische Informationen"
       },
       {
-        "text": "Das Greenfee im Mai 2026 lag bei rund 125 € pro Person. Buggys sind vor 14 Uhr Pflicht und werden separat berechnet. Eine Golfversicherung von 3 € ist beim Check-in erforderlich. Für die meisten Gastgolfer sind die gelben Abschläge die richtige Wahl. Der Platz liegt im Südwesten der Insel, etwa 20 Minuten von Palma entfernt, je nach Unterkunft. Die Stadt Andratx selbst ist nur wenige Minuten entfernt."
+        "text": "Das Greenfee lag im Mai 2026 bei rund €125 pro Person. Buggys sind vor 14 Uhr Pflicht und werden separat berechnet. Ab 14 Uhr ist Zu-Fuß-Gehen erlaubt. Beim Check-in ist eine Golfversicherung von €3 erforderlich. Für die meisten Gastgolfer sind die gelben Abschläge die richtige Wahl. Der Platz liegt im Südwesten der Insel, etwa 30 Minuten von Palma entfernt. Die Stadt Andratx selbst ist nur wenige Minuten entfernt. Obwohl man fast die gesamte Runde hoch in den Bergen verbringt, ist der Meerblick über Camp de Mar nur von Loch 2 aus sichtbar, ein Detail, das man kennen sollte, bevor man Erwartungen an den Wasserblick knüpft."
       },
       {
         "text": "Der Platz spielt schwieriger als die Meterzahl vermuten lässt, besonders an windigen Tagen. Ein zweiter Besuch würde ein besseres Ergebnis bringen. Das Layout belohnt Ortskenntnisse und Spielmanagement weitaus mehr als Weite."
@@ -311,15 +311,15 @@ const content = {
         "text": "Golf Andratx ist eine 7,5 von 10. Die Aussichten von den höheren Löchern sind die besten, die ich im Südwesten der Insel gesehen habe. Das Layout ist eine echte Prüfung, der Green Monster ist das längste Par 5 Spaniens und spielt jeden Meter davon, und Loch 12 über Camp del Mar ist eines der besten Löcher, die ich auf Mallorca gespielt habe. Die Pflichtbuggys vor 14 Uhr und ein belebter Morgen ließen es gemanagter als entspannt wirken, aber das ist die Realität eines Platzes mit dieser Nachfrage. Lohnt sich zu spielen, und es lohnt sich, mit einem Kursplaner in der Hand wiederzukommen. Für Hilfe bei der Reihenfolge mit anderen Plätzen, siehe den <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a>."
       },
       {
-        "text": "Möchten Sie Golf de Andratx mit einem PGA-Professional spielen, der Ihnen hilft, den Weg durch den Platz zu finden?",
-        "linkLabel": "Das PGA-Begleiterlebnis entdecken →"
+        "text": "Sie spielen Golf Andratx? Ich kann bei der Strategie, der Schlägerwahl und den Gefahrenzonen helfen, die auf diesem Layout am meisten zählen.",
+        "linkLabel": "Einen Play-With-A-Pro-Tag auf Mallorca buchen →"
       }
     ]
   },
   "fr": {
     "metadata": {
       "title": "Golf de Andratx - Avis honnête 2026",
-      "description": "Golf de Andratx par un Professionnel PGA : cadre montagneux, le par 5 le plus long d'Espagne, €125. L'un des parcours les plus exigeants de Majorque."
+      "description": "7,5/10 : €125, plus long par 5 d'Espagne, cadre de montagne. Le verdict honnête d'Andy sur Golf de Andratx."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -430,7 +430,7 @@ const content = {
         "text": "Informations pratiques"
       },
       {
-        "text": "Le green fee en mai 2026 était d'environ 125 € par personne. Les voiturettes sont obligatoires avant 14h et sont facturées séparément. Une assurance golf de 3 € est requise à l'accueil. Les départs jaunes sont le bon choix pour la plupart des golfeurs en visite. Le parcours se trouve dans le sud-ouest de l'île, à environ 20 minutes de Palma selon l'hébergement. La ville d'Andratx elle-même est à quelques minutes."
+        "text": "Le green fee en mai 2026 était d'environ €125 par personne. Les voiturettes sont obligatoires avant 14 h et facturées séparément. La marche est autorisée à partir de 14 h. Une assurance golf de €3 est exigée à l'accueil. Les départs jaunes sont le bon choix pour la plupart des golfeurs de passage. Le parcours se trouve dans le sud-ouest de l'île, à environ 30 minutes de Palma. La ville d'Andratx est à quelques minutes seulement. Bien que l'on passe presque toute la partie haut dans la montagne, la vue sur la mer au-dessus de Camp de Mar n'est visible que depuis le trou 2, un détail à connaître avant de bâtir ses attentes sur la vue sur l'eau."
       },
       {
         "text": "Le parcours joue plus difficile que le métrage ne le laisse supposer, surtout par jour de vent. Une deuxième visite produirait un meilleur score. Le tracé récompense la connaissance locale et la gestion du jeu bien plus que la longueur."
@@ -447,7 +447,7 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Partez aussi tôt que raisonnablement possible. Le parcours est demandé, la lumière de montagne est la meilleure le matin, et c est ainsi que vous avez la meilleure chance d éviter le vent plus fort."
+            "Partez aussi tôt que raisonnablement possible. Le parcours est demandé, la lumière de montagne est la meilleure le matin, et c'est ainsi que vous avez la meilleure chance d éviter le vent plus fort."
           ],
           [
             "Conseil vent",
@@ -455,7 +455,7 @@ const content = {
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "L erreur la plus courante est de croire que le défi n est qu une question de longueur. Les gros scores viennent ici bien plus d un mauvais contrôle de distance vers des obstacles en travers, de gros changements de denivele sur les trous courts, et de problèmes que l on ne voit pas totalement depuis le tee."
+            "L erreur la plus courante est de croire que le défi n'est qu une question de longueur. Les gros scores viennent ici bien plus d'un mauvais contrôle de distance vers des obstacles en travers, de gros changements de denivele sur les trous courts, et de problèmes que l on ne voit pas totalement depuis le tee."
           ],
           [
             "Conseil clubhouse",
@@ -467,15 +467,15 @@ const content = {
         "text": "Golf Andratx mérite un 7,5 sur 10. Les vues depuis les trous les plus élevés sont les meilleures que j'aie vues dans le sud-ouest de l'île. Le tracé est un vrai test, le Green Monster est le par 5 le plus long d'Espagne et se joue sur chaque mètre, et le trou 12 au-dessus de Camp del Mar est l'un des meilleurs trous que j'aie joués à Majorque. Les voiturettes obligatoires avant 14h et une matinée chargée lui ont donné un côté plus cadré que détendu, mais c'est la réalité d'un parcours avec cette demande. Ça vaut le détour, et ça vaut la peine d'y revenir avec un planificateur en main. Pour vous aider à l'enchaîner avec d'autres parcours, consultez le <a href=\"/plan-your-trip\">guide de planification du voyage</a>."
       },
       {
-        "text": "Vous souhaitez jouer Golf Andratx avec un Professionnel PGA qui peut vous aider à trouver votre chemin sur le parcours ?",
-        "linkLabel": "Découvrir l'accompagnement PGA →"
+        "text": "Vous jouez Golf Andratx ? Je peux vous aider pour la stratégie, le choix des clubs et les zones de danger qui comptent le plus sur ce tracé.",
+        "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
       }
     ]
   },
   "nl": {
     "metadata": {
       "title": "Golf de Andratx - Eerlijke review 2026",
-      "description": "Golf de Andratx beoordeeld door een PGA Professional: bergomgeving, de langste par 5 van Spanje, €125. Een van de uitdagendere banen op Mallorca."
+      "description": "7,5/10: €125, langste par 5 van Spanje, bergomgeving. Andy's eerlijke oordeel over Golf de Andratx."
     },
     "meta": {
       "badge": "Baan Review",
@@ -586,7 +586,7 @@ const content = {
         "text": "Praktische informatie"
       },
       {
-        "text": "Het greenfee in mei 2026 was ongeveer €125 per persoon. Buggies zijn verplicht voor 14:00 uur en worden apart in rekening gebracht. Een golfverzekering van €3 is vereist bij de incheck. Gele tees zijn de juiste keuze voor de meeste bezoekers. De baan ligt in het zuidwesten van het eiland, ongeveer 20 minuten van Palma afhankelijk van je verblijfplaats. De stad Andratx zelf is op enkele minuten rijden."
+        "text": "De greenfee in mei 2026 was ongeveer €125 per persoon. Buggy's zijn verplicht vóór 14.00 uur en worden apart in rekening gebracht. Vanaf 14.00 uur is lopen toegestaan. Bij het inchecken is een golfverzekering van €3 vereist. Gele afslagen zijn de juiste keuze voor de meeste bezoekende golfers. De baan ligt in het zuidwesten van het eiland, ongeveer 30 minuten van Palma. Het stadje Andratx zelf is slechts een paar minuten verderop. Hoewel je bijna de hele ronde hoog in de bergen speelt, is het zeezicht over Camp de Mar alleen vanaf hole 2 zichtbaar, een detail dat het waard is te weten voordat je verwachtingen over zeezicht opbouwt."
       },
       {
         "text": "De baan speelt moeilijker dan het metrage doet vermoeden, met name op een winderige dag. Een tweede bezoek zou een beter resultaat opleveren. De indeling beloont lokale kennis en baanmanagement veel meer dan lengte."
@@ -625,15 +625,15 @@ const content = {
         "text": "Golf Andratx krijgt een 7,5 uit 10. Het uitzicht vanaf de hogere holes is het beste dat ik in het zuidwesten van het eiland heb gezien. De indeling is een echte test, de Green Monster is de langste par 5 van Spanje en speelt elke meter ervan, en hole 12 boven Camp del Mar is een van de beste holes die ik op Mallorca heb gespeeld. De verplichte buggies voor 14:00 uur en een drukke ochtend gaven het een meer georganiseerd dan ontspannen gevoel, maar dat is de realiteit van een baan met deze vraag. De moeite waard om te spelen, en de moeite waard om naar terug te keren met een baanplan bij de hand. Hulp nodig bij de volgorde met andere banen? Bekijk de <a href=\"/plan-your-trip\">reisplanningsgids</a>."
       },
       {
-        "text": "Wil je Golf Andratx spelen met een PGA Professional die je helpt de weg door de baan te vinden?",
-        "linkLabel": "Bekijk de meespeel-met-een-pro ervaring →"
+        "text": "Speel je Golf Andratx? Ik kan helpen met de strategie, de clubkeuze en de probleemzones die op deze baan het meest tellen.",
+        "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
       }
     ]
   },
   "sv": {
     "metadata": {
       "title": "Golf de Andratx - Ärlig recension 2026",
-      "description": "Golf de Andratx recenserad av en PGA-professional: bergslandskap, laengsta par 5 i Spanien, €125. En av Mallorcas mer utmanande banor."
+      "description": "7,5/10: €125, Spaniens längsta par 5, bergsmiljö. Andys ärliga omdöme om Golf de Andratx."
     },
     "meta": {
       "badge": "Banrecension",
@@ -744,7 +744,7 @@ const content = {
         "text": "Praktisk information"
       },
       {
-        "text": "Greenfee i maj 2026 var ungefär €125 per person. Golfbilar är obligatoriska före klockan 14 och debiteras separat. Golfförsäkring på €3 krävs vid incheckning. Gula tees är rätt val för de flesta besökande golfspelare. Banan ligger i sydväst på ön, ungefär 20 minuter från Palma beroende på var man bor. Andratx stad är bara några minuter bort."
+        "text": "Greenfeen i maj 2026 var cirka €125 per person. Buggy är obligatoriskt före 14.00 och debiteras separat. Från 14.00 är det tillåtet att gå. En golfförsäkring på €3 krävs vid incheckning. Gula tee är rätt val för de flesta besökande golfare. Banan ligger i sydvästra delen av ön, cirka 30 minuter från Palma. Själva staden Andratx ligger bara några minuter bort. Trots att man spenderar nästan hela rundan högt uppe i bergen syns havsutsikten över Camp de Mar bara från hål 2, en detalj som är bra att känna till innan man bygger förväntningar kring vattenutsikten."
       },
       {
         "text": "Banan spelar svårare än yardaget antyder, särskilt en blåsig dag. Ett andra besök skulle ge ett bättre resultat. Layouten belönar lokalkännedom och banmanagement mycket mer än laengd."
@@ -783,15 +783,15 @@ const content = {
         "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Mönster är det laengsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen. Behöver du hjälp att sekvensera det med andra banor? Se <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
       },
       {
-        "text": "Vill du spela Golf Andratx med en PGA-professional som kan hjälpa dig att planera din väg runt banan?",
-        "linkLabel": "Se spela-med-en-pro-upplevelesen →"
+        "text": "Ska du spela Golf Andratx? Jag kan hjälpa till med strategin, klubbvalet och de problemzoner som betyder mest på den här banan.",
+        "linkLabel": "Boka en Play With A Pro-dag på Mallorca →"
       }
     ]
   },
   "zh": {
     "metadata": {
       "title": "Golf de Andratx 球场 - PGA教练真实评测（2026）",
-      "description": "Golf de Andratx 由一位 2026 年 5 月亲自上场的 PGA 职业教练评测。山地环境、西班牙最长的五杆洞、全程战术性洞位，以及对马略卡（Mallorca）最具挑战性球场之一的真实评价。"
+      "description": "7.5/10：€125，西班牙最长的 5 杆洞，山地环境。Andy 对 Golf de Andratx 的诚实结论。"
     },
     "meta": {
       "badge": "球场评测",
@@ -902,7 +902,7 @@ const content = {
         "text": "实用信息"
       },
       {
-        "text": "2026 年 5 月的果岭费约为每人 €125。下午 2 点前必须使用球车，球车费另计。办理入场手续时需缴纳 €3 的高尔夫保险。对大多数访客球手来说，黄色发球台是合适的选择。球场位于岛屿西南部，距离帕尔马（Palma）约 20 分钟，具体视住宿位置而定。Andratx 镇本身只需几分钟车程。"
+        "text": "2026 年 5 月的果岭费约为每人 €125。下午 2 点前必须使用球车，另外收费。下午 2 点以后允许步行。入场时需要购买 €3 的高尔夫保险。对大多数来访球手来说，黄色发球台是合适的选择。球场位于岛的西南部，距帕尔马约 30 分钟车程。Andratx 镇本身只有几分钟的路程。尽管几乎整轮球都在高高的山上打，但俯瞰 Camp de Mar 的海景只有第 2 洞能看到，这个细节值得在对海景抱有期待之前先了解。"
       },
       {
         "text": "这个球场打起来比数字上看起来难，尤其在有风的天气。第二次来打，成绩一定会更好。这片场地奖励的是对球场的熟悉和打法管理，而不是距离。"
@@ -941,8 +941,8 @@ const content = {
         "text": "Golf Andratx 总评 7.5 分。从高处几个洞俯瞰的景色，是我在岛屿西南部见过最好的。球场布局是正经的考验，Green Monster 是西班牙最长的五杆洞，每一米都打得出来，第 12 洞俯瞰 Camp del Mar 的视野，是我在马略卡（Mallorca）打过最好的球洞之一。下午 2 点前的强制球车规定和热闹的上午，让整个体验感觉更像是被管理着走，而不是自在地打，但这就是一个供不应求的球场的现实。值得去打，也值得带着球场导览再来一次。需要帮忙安排它和其他球场的打球顺序？参考<a href=\"/plan-your-trip\">行程规划指南</a>。"
       },
       {
-        "text": "想和 PGA 职业教练一起打 Golf Andratx，让他帮你规划每一洞的打法？",
-        "linkLabel": "了解随行职业教练体验 →"
+        "text": "要打 Golf Andratx 吗？我可以在策略、选杆和这座球场最关键的麻烦区域方面提供帮助。",
+        "linkLabel": "预订马略卡 Play With A Pro 一天体验 →"
       }
     ]
   }

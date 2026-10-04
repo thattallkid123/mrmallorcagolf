@@ -121,7 +121,7 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "Antes de reservar, piensa en la hora de salida, el viento, el ritmo y si el campo encaja con el grupo. Reserva pronto, elige tees realistas y deja tiempo después de la ronda."
+        "text": "Límite de hándicap: 28 para hombres, 34 para señoras. Aquí se puede ir andando, aunque con las distancias y la exposición al viento un buggy es la opción más cómoda para la mayoría. Los 15 lagos no son un simple decorado. Bordean calles y obligan a carries en varios hoyos. Los greens elevados y las zonas de antegreen rápidas hacen que el juego de aproximación sea el principal reto; es un campo que le va mejor al golfista con más nivel que a alguien nuevo en la isla."
       },
       {
         "alt": "Pinos enmarcando la calle en T Golf Calvià con agua y montañas al fondo",
@@ -158,8 +158,8 @@ const content = {
         "text": "Es ideal para jugadores que buscan una vuelta seria en buenas condiciones. No llevaría aquí a un jugador de hándicap alto como primer campo en un viaje de vacaciones, pero para cualquiera en una visita dedicada al golf pertenece al itinerario. La tarifa twilight y las ofertas entre semana lo convierten en una buena opción en el momento adecuado. ¿Lo vas a encajar en un viaje más largo? La <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre la secuencia y los horarios."
       },
       {
-        "text": "¿Quieres jugar T Golf Calvià con un profesional PGA que conoce cada hoyo?",
-        "linkLabel": "Ver la experiencia play-with-a-pro →"
+        "text": "¿Vas a jugar T Golf Calvià? Puedo ayudarte a gestionar los carries, los complejos de green y las decisiones de puntuación que pide este campo.",
+        "linkLabel": "Reserva un día Play With A Pro en Mallorca →"
       }
     ]
   },
@@ -284,7 +284,7 @@ const content = {
         "text": "Häufige Fragen"
       },
       {
-        "text": "Die wichtigsten Fragen vor der Buchung sind Tee Time, Wind, Tempo und ob der Platz zur Gruppe passt. Planen Sie früh, wählen Sie die Abschläge realistisch und lassen Sie nach der Runde genug Zeit."
+        "text": "Handicap-Grenze: 28 für Herren, 34 für Damen. Zu Fuß gehen ist hier möglich, doch bei den Distanzen und der Windexposition ist ein Buggy für die meisten die komfortablere Wahl. Die 15 Seen sind keine Hintergrundkulisse. Sie säumen Fairways und erzwingen auf mehreren Löchern Carries. Die erhöhten Grüns und schnellen Vorgrünbereiche machen das Annäherungsspiel zur Hauptaufgabe; das ist ein Platz, der eher zum besseren Golfer passt als zu jemandem, der neu auf der Insel ist."
       },
       {
         "alt": "Pinien, die das Fairway auf dem T Golf Calvià einrahmen, mit Wasser und Bergen dahinter",
@@ -321,8 +321,8 @@ const content = {
         "text": "Er eignet sich für Spieler, die eine ernsthafte Runde in guten Bedingungen suchen. Einen Hochhandicapper würde ich hier nicht als ersten Platz eines Urlaubsaufenthalts empfehlen, aber für jeden auf einem dedizierten Golftrip gehört er auf die Liste. Die Twilight-Rate und die Wochentagesangebote machen ihn zum richtigen Zeitpunkt zu einem guten Preis-Leistungs-Verhältnis. Passt das in eine längere Reise? Der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> deckt Reihenfolge und Timing ab."
       },
       {
-        "text": "T Golf Calvià mit einem PGA-Professional spielen, der jeden Abschlag kennt?",
-        "linkLabel": "Das PGA-Begleiterlebnis entdecken →"
+        "text": "Sie spielen T Golf Calvià? Ich kann Ihnen helfen, mit den Carries, den Grünkomplexen und den Scoring-Entscheidungen umzugehen, die dieser Platz verlangt.",
+        "linkLabel": "Einen Play-With-A-Pro-Tag auf Mallorca buchen →"
       }
     ]
   },
@@ -447,7 +447,7 @@ const content = {
         "text": "Questions fréquentes"
       },
       {
-        "text": "Avant de réserver, pensez à l'heure de départ, au vent, au rythme et au niveau du groupe. Réservez tôt, choisissez les bons départs et gardez du temps après la partie."
+        "text": "Limite d'index : 28 pour les hommes, 34 pour les dames. On peut marcher ici, mais avec les distances et l'exposition au vent, la voiturette est le choix le plus confortable pour la plupart. Les 15 lacs ne sont pas un simple décor. Ils bordent les fairways et imposent des carries sur plusieurs trous. Les greens surélevés et les franges rapides font du jeu d'approche le principal défi ; c'est un parcours qui convient plutôt au meilleur golfeur qu'à quelqu'un de nouveau sur l'île."
       },
       {
         "alt": "Pins encadrant le fairway sur le T Golf Calvià avec de l'eau et des montagnes visibles au-delà",
@@ -482,8 +482,8 @@ const content = {
         "text": "Il convient aux joueurs qui veulent une vraie partie dans de bonnes conditions. Je n'y enverrais pas un haut handicap comme premier parcours d'un séjour de vacances, mais pour quiconque est en voyage golf dédié, il mérite d'être au programme. Le tarif twilight et les offres en semaine en font un bon rapport qualité-prix au bon moment. Vous l'intégrez dans un voyage plus long ? Le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre l'enchaînement et le timing."
       },
       {
-        "text": "Envie de jouer le T Golf Calvià avec un professionnel PGA qui connaît chaque trou ?",
-        "linkLabel": "Voir l'expérience play-with-a-pro →"
+        "text": "Vous jouez T Golf Calvià ? Je peux vous aider à gérer les carries, les complexes de greens et les décisions de score que ce parcours demande.",
+        "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
       }
     ]
   },
@@ -608,7 +608,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "Denk voor het boeken aan starttijd, wind, tempo en of de baan bij de groep past. Boek vroeg, kies realistische tees en houd tijd vrij na de ronde."
+        "text": "Handicaplimiet: 28 voor heren, 34 voor dames. Lopen is hier mogelijk, maar met de afstanden en de blootstelling aan wind is een buggy voor de meeste mensen de comfortabelere keuze. De 15 meren zijn geen achtergronddecor. Ze omzomen fairways en dwingen op meerdere holes carries af. De verhoogde greens en snelle voorgreens maken het approachspel tot de belangrijkste uitdaging; dit is een baan die beter bij de betere golfer past dan bij iemand die nieuw is op het eiland."
       },
       {
         "alt": "Pijnbomen die de fairway omlijsten op T Golf Calvià met water en bergen zichtbaar daarboven",
@@ -645,8 +645,8 @@ const content = {
         "text": "Het is geschikt voor spelers die een serieuze ronde in goede conditie willen. Ik zou een hoog-handicapper hier niet naartoe sturen als eerste baan van een vakantie, maar voor iedereen op een dedicated golfbezoek hoort het op het programma. Het twilight tarief en de doordeweekse aanbiedingen maken het op het juiste moment goede waar voor het geld. Past dit in een langere reis? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt de volgorde en timing."
       },
       {
-        "text": "Wil je T Golf Calvià spelen met een PGA professional die elke hole kent?",
-        "linkLabel": "Bekijk de play-with-a-pro ervaring →"
+        "text": "Speel je T Golf Calvià? Ik kan je helpen met de carries, de greencomplexen en de scorebeslissingen die deze baan vraagt.",
+        "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
       }
     ]
   },
@@ -771,7 +771,7 @@ const content = {
         "text": "Vanliga frågor"
       },
       {
-        "text": "Innan du bokar, tänk på starttid, vind, tempo och om banan passar gruppen. Boka tidigt, välj rimliga tees och lämna tid efter ronden."
+        "text": "Handicapgräns: 28 för herrar, 34 för damer. Det går att gå här, men med avstånden och vindexponeringen är en buggy det bekvämare valet för de flesta. De 15 sjöarna är inte bakgrundsscenografi. De kantar fairways och tvingar fram carries på flera hål. De upphöjda greenerna och snabba framkanterna gör närspelet till den största utmaningen; det här är en bana som passar den bättre golfaren snarare än någon som är ny på ön."
       },
       {
         "alt": "Tallar som ramar in fairway på T Golf Calvià med vatten och berg synliga bortom",
@@ -808,8 +808,8 @@ const content = {
         "text": "Det passar spelare som vill ha en seriös runda i bra skick. Jag skulle inte skicka en högt handicappare hit som första bana på en semesterresa, men för alla på ett dedikerat golfbesök hoer det hemma på programmet. Twilight-priset och veckodagserbjudandena gör det till ett bra värde vid rätt tidpunkt. Passar det in i en laengre resa? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp ordningsföljd och timing."
       },
       {
-        "text": "Vill du spela T Golf Calvià med en PGA-professional som känner varje hål?",
-        "linkLabel": "Se play-with-a-pro-upplevelsen →"
+        "text": "Ska du spela T Golf Calvià? Jag kan hjälpa dig att hantera carries, greenkomplexen och de scoringsbeslut som banan kräver.",
+        "linkLabel": "Boka en Play With A Pro-dag på Mallorca →"
       }
     ]
   },
@@ -934,7 +934,7 @@ const content = {
         "text": "常见问题"
       },
       {
-        "text": "预订前重点考虑开球时间、风、打球节奏，以及球场是否适合同行球手。尽早预订，选择合适发球台，并给赛后留出时间。"
+        "text": "差点限制：男士 28，女士 34。这里可以步行，不过考虑到距离和风的影响，对大多数人来说球车是更舒适的选择。15 个湖不只是背景风景，它们沿着球道分布，在多个球洞上迫使你必须飞越。抬高的果岭和速度快的果岭边缘区，使进攻果岭成为主要挑战；这座球场更适合水平较好的球手，而不是刚来岛上的新手。"
       },
       {
         "alt": "T Golf Calvià松树围绕的球道，远处可见湖水和山峦",
@@ -971,8 +971,8 @@ const content = {
         "text": "适合希望在良好状态下打一场认真球的球手。我不会把高差点球手送到这里作为度假行程的第一站，但对于专程高尔夫之旅的任何人来说，这里都值得排进日程。黄昏场费率和工作日优惠让它在合适的时间段物超所值。打算把它安排进更长的行程吗？<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了顺序安排和时间安排。"
       },
       {
-        "text": "想与熟悉每一个洞的PGA职业球员同打T Golf Calvià？",
-        "linkLabel": "了解陪打体验 →"
+        "text": "要打 T Golf Calvià 吗？我可以帮你处理飞越距离、果岭区域，以及这座球场要求的成绩决策。",
+        "linkLabel": "预订马略卡 Play With A Pro 一天体验 →"
       }
     ]
   }

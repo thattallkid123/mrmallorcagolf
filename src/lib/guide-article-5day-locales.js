@@ -126,7 +126,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Mehr dazu:",
-            "text": "<a href=\"/de/guides/santa-ponsa-1-review\">Golf Santa Ponsa 1 Bewertung</a>."
+            "text": "<a href=\"/guides/santa-ponsa-1-review\">Golf Santa Ponsa 1 Bewertung</a>."
           }
         ]
       },
@@ -144,7 +144,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "caption": "Son Gual ist die Runde, bei der lokale Strategie die meisten Schläge sparen kann."
       },
       {
-        "text": "Wenn Sie <a href=\"/de/play-with-a-pro\">Play With A Pro</a> in die Reise einbauen möchten, ist das oft der Tag, den ich wählen würde. Der Platz stellt genug Fragen, damit der Rat zählt: Ziele, Fehlschläge, Wind, Schlägerwahl und Entscheidungen im kurzen Spiel."
+        "text": "Wenn Sie <a href=\"/play-with-a-pro\">Play With A Pro</a> in die Reise einbauen möchten, ist das oft der Tag, den ich wählen würde. Der Platz stellt genug Fragen, damit der Rat zählt: Ziele, Fehlschläge, Wind, Schlägerwahl und Entscheidungen im kurzen Spiel."
       },
       {
         "items": [
@@ -195,7 +195,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Mehr dazu:",
-            "text": "<a href=\"/de/guides/alcanada-review\">Club de Golf Alcanada Bewertung</a>."
+            "text": "<a href=\"/guides/alcanada-review\">Club de Golf Alcanada Bewertung</a>."
           }
         ]
       },
@@ -228,7 +228,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Mehr dazu:",
-            "text": "<a href=\"/de/guides/t-golf-calvia-review\">T Golf Calvià Bewertung</a>."
+            "text": "<a href=\"/guides/t-golf-calvia-review\">T Golf Calvià Bewertung</a>."
           }
         ]
       },
@@ -400,7 +400,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Más información:",
-            "text": "<a href=\"/es/guides/santa-ponsa-1-review\">Análisis de Golf Santa Ponsa 1</a>."
+            "text": "<a href=\"/guides/santa-ponsa-1-review\">Análisis de Golf Santa Ponsa 1</a>."
           }
         ]
       },
@@ -418,7 +418,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "caption": "Son Gual es la ronda en la que la estrategia local puede ahorrar más golpes."
       },
       {
-        "text": "Si quieres incluir <a href=\"/es/play-with-a-pro\">Play With A Pro</a> en el viaje, este suele ser el día que elegiría. El campo plantea suficientes preguntas como para que el consejo importe: objetivos, fallos, viento, elección de palo y decisiones de juego corto."
+        "text": "Si quieres incluir <a href=\"/play-with-a-pro\">Play With A Pro</a> en el viaje, este suele ser el día que elegiría. El campo plantea suficientes preguntas como para que el consejo importe: objetivos, fallos, viento, elección de palo y decisiones de juego corto."
       },
       {
         "items": [
@@ -469,7 +469,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Más información:",
-            "text": "<a href=\"/es/guides/alcanada-review\">Análisis de Club de Golf Alcanada</a>."
+            "text": "<a href=\"/guides/alcanada-review\">Análisis de Club de Golf Alcanada</a>."
           }
         ]
       },
@@ -502,7 +502,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Más información:",
-            "text": "<a href=\"/es/guides/t-golf-calvia-review\">Análisis de T Golf Calvià</a>."
+            "text": "<a href=\"/guides/t-golf-calvia-review\">Análisis de T Golf Calvià</a>."
           }
         ]
       },
@@ -674,7 +674,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Pour en savoir plus :",
-            "text": "<a href=\"/fr/guides/santa-ponsa-1-review\">Avis sur Golf Santa Ponsa 1</a>."
+            "text": "<a href=\"/guides/santa-ponsa-1-review\">Avis sur Golf Santa Ponsa 1</a>."
           }
         ]
       },
@@ -692,7 +692,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "caption": "Son Gual est la partie où la stratégie locale peut faire économiser le plus de coups."
       },
       {
-        "text": "Si vous voulez inclure <a href=\"/fr/play-with-a-pro\">Play With A Pro</a> dans le séjour, c'est souvent la journée que je choisirais. Le parcours pose assez de questions pour que les conseils comptent : cibles, ratés, vent, choix de club et décisions de petit jeu."
+        "text": "Si vous voulez inclure <a href=\"/play-with-a-pro\">Play With A Pro</a> dans le séjour, c'est souvent la journée que je choisirais. Le parcours pose assez de questions pour que les conseils comptent : cibles, ratés, vent, choix de club et décisions de petit jeu."
       },
       {
         "items": [
@@ -743,7 +743,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Pour en savoir plus :",
-            "text": "<a href=\"/fr/guides/alcanada-review\">Avis sur Club de Golf Alcanada</a>."
+            "text": "<a href=\"/guides/alcanada-review\">Avis sur Club de Golf Alcanada</a>."
           }
         ]
       },
@@ -776,7 +776,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Pour en savoir plus :",
-            "text": "<a href=\"/fr/guides/t-golf-calvia-review\">Avis sur T Golf Calvià</a>."
+            "text": "<a href=\"/guides/t-golf-calvia-review\">Avis sur T Golf Calvià</a>."
           }
         ]
       },
@@ -948,7 +948,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Meer lezen:",
-            "text": "<a href=\"/nl/guides/santa-ponsa-1-review\">Beoordeling van Golf Santa Ponsa 1</a>."
+            "text": "<a href=\"/guides/santa-ponsa-1-review\">Beoordeling van Golf Santa Ponsa 1</a>."
           }
         ]
       },
@@ -966,7 +966,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "caption": "Son Gual is de ronde waar lokale strategie de meeste slagen kan besparen."
       },
       {
-        "text": "Wil je <a href=\"/nl/play-with-a-pro\">Play With A Pro</a> in de reis opnemen, dan is dit vaak de dag die ik zou kiezen. De baan stelt genoeg vragen om het advies te laten tellen: doelen, missers, wind, clubkeuze en beslissingen in het korte spel."
+        "text": "Wil je <a href=\"/play-with-a-pro\">Play With A Pro</a> in de reis opnemen, dan is dit vaak de dag die ik zou kiezen. De baan stelt genoeg vragen om het advies te laten tellen: doelen, missers, wind, clubkeuze en beslissingen in het korte spel."
       },
       {
         "items": [
@@ -1017,7 +1017,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Meer lezen:",
-            "text": "<a href=\"/nl/guides/alcanada-review\">Beoordeling van Club de Golf Alcanada</a>."
+            "text": "<a href=\"/guides/alcanada-review\">Beoordeling van Club de Golf Alcanada</a>."
           }
         ]
       },
@@ -1050,7 +1050,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Meer lezen:",
-            "text": "<a href=\"/nl/guides/t-golf-calvia-review\">Beoordeling van T Golf Calvià</a>."
+            "text": "<a href=\"/guides/t-golf-calvia-review\">Beoordeling van T Golf Calvià</a>."
           }
         ]
       },
@@ -1222,7 +1222,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Läs mer:",
-            "text": "<a href=\"/sv/guides/santa-ponsa-1-review\">Recension av Golf Santa Ponsa 1</a>."
+            "text": "<a href=\"/guides/santa-ponsa-1-review\">Recension av Golf Santa Ponsa 1</a>."
           }
         ]
       },
@@ -1240,7 +1240,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "caption": "Son Gual är rundan där lokal strategi kan spara flest slag."
       },
       {
-        "text": "Om du vill ta med <a href=\"/sv/play-with-a-pro\">Play With A Pro</a> i resan är det ofta den dag jag skulle välja. Banan ställer tillräckligt många frågor för att råden ska spela roll: mål, missar, vind, klubbval och beslut i närspelet."
+        "text": "Om du vill ta med <a href=\"/play-with-a-pro\">Play With A Pro</a> i resan är det ofta den dag jag skulle välja. Banan ställer tillräckligt många frågor för att råden ska spela roll: mål, missar, vind, klubbval och beslut i närspelet."
       },
       {
         "items": [
@@ -1291,7 +1291,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Läs mer:",
-            "text": "<a href=\"/sv/guides/alcanada-review\">Recension av Club de Golf Alcanada</a>."
+            "text": "<a href=\"/guides/alcanada-review\">Recension av Club de Golf Alcanada</a>."
           }
         ]
       },
@@ -1324,7 +1324,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Läs mer:",
-            "text": "<a href=\"/sv/guides/t-golf-calvia-review\">Recension av T Golf Calvià</a>."
+            "text": "<a href=\"/guides/t-golf-calvia-review\">Recension av T Golf Calvià</a>."
           }
         ]
       },
@@ -1496,7 +1496,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "延伸阅读：",
-            "text": "<a href=\"/zh/guides/santa-ponsa-1-review\">Golf Santa Ponsa 1 评测</a>。"
+            "text": "<a href=\"/guides/santa-ponsa-1-review\">Golf Santa Ponsa 1 评测</a>。"
           }
         ]
       },
@@ -1514,7 +1514,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "caption": "Son Gual 是本地策略能省下最多杆数的一轮。"
       },
       {
-        "text": "如果你想在行程里加入 <a href=\"/zh/play-with-a-pro\">Play With A Pro</a>，这往往就是我会选的那一天。这座球场提出的问题足够多，建议才有意义：目标、失误、风、选杆和短杆决策。"
+        "text": "如果你想在行程里加入 <a href=\"/play-with-a-pro\">Play With A Pro</a>，这往往就是我会选的那一天。这座球场提出的问题足够多，建议才有意义：目标、失误、风、选杆和短杆决策。"
       },
       {
         "items": [
@@ -1565,7 +1565,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "延伸阅读：",
-            "text": "<a href=\"/zh/guides/alcanada-review\">Club de Golf Alcanada 评测</a>。"
+            "text": "<a href=\"/guides/alcanada-review\">Club de Golf Alcanada 评测</a>。"
           }
         ]
       },
@@ -1598,7 +1598,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "延伸阅读：",
-            "text": "<a href=\"/zh/guides/t-golf-calvia-review\">T Golf Calvià 评测</a>。"
+            "text": "<a href=\"/guides/t-golf-calvia-review\">T Golf Calvià 评测</a>。"
           }
         ]
       },

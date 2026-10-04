@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Golf Son Muntaner - Análisis honesto 2026",
-      "description": "Son Muntaner, Mejor Campo de España 2025. Green fees desde €110, a 5 min de Palma. Veredicto honesto de un Profesional PGA.",
+      "description": "Son Muntaner está a 5 minutos de Palma, €110–€260 con buggy incluido, y fue elegido Mejor Campo de Golf de España en 2025. Reseña de un pro PGA.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -11,7 +11,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Abril 2026",
       "title": "Golf Son Muntaner, Mallorca - análisis honesto de un Profesional PGA (2026)",
-      "intro": "Mejor campo de España en los World Golf Awards 2025. A cinco minutos de Palma. Lo jugué con el tee sheet completo un sábado por la mañana. Esto es lo que encontré.",
+      "intro": "A cinco minutos de Palma. Buggy incluido durante la mayor parte de la temporada. Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué con el tee sheet completo un sábado por la mañana. Esto es lo que encontré.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -105,7 +105,7 @@ const content = {
         "text": "Los hoyos de par 3"
       },
       {
-        "text": "Aprovechan bien la elevación en todo el recorrido. La protección proviene de la forma y el ángulo del hoyo más que solo de la longitud, aunque los más largos desde los tees de atrás superan los 180 metros y exigen una buena selección de palo. El 13 fue un momento de claridad poco frecuente en la jornada."
+        "text": "Aprovechan bien el desnivel en todo el recorrido. La protección viene de la forma y el ángulo del hoyo y no solo de la longitud, aunque los más largos desde las salidas traseras superan las 200 yardas y exigen una buena elección de palo. El 13 fue un raro momento de claridad ese día."
       },
       {
         "alt": "Andy Griffiths en el tee del par 3 número 13 de Son Muntaner Mallorca",
@@ -180,7 +180,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "Precios dinámicos a través del sistema de reservas de Arabella Golf Mallorca. La tarifa máxima actual es de 260 € para 18 hoyos, y las franjas más bajas rondan los 110 €. Ese precio bajo suele depender de la temporada o de horarios más tardíos, y no está disponible de forma constante. Consulta las tarifas actuales en arabellagolfmallorca.com. Se requiere certificado de hándicap."
+        "text": "Precios dinámicos a través del sistema de reservas de Arabella Golf Mallorca. La tarifa máxima actual es de €260 por 18 hoyos, con la tarifa más baja que se ve con frecuencia en horarios tardíos de unos €110. Esa diferencia es lo bastante grande como para seguirla si tienes flexibilidad de horario. Consulta las tarifas actuales en arabellagolfmallorca.com. El límite de hándicap es 36 tanto para hombres como para mujeres. El buggy está incluido en el green fee de marzo a finales de noviembre. Se paga una licencia diaria de la Federación Española de Golf de €3 en el check-in."
       },
       {
         "text": "Preguntas frecuentes"
@@ -216,28 +216,28 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "text": "El título de Mejor Campo de Golf de España no es marketing. Son Muntaner ofrece un recorrido que pone a prueba el posicionamiento, la disciplina y la claridad en la toma de decisiones desde el primer hasta el último hoyo. Premia el control sobre la potencia y crea oportunidades de scoring a través de la precisión. A cinco minutos de Palma, la logística es sencilla. Solo los greens justifican el viaje."
+        "text": "El título de Mejor Campo de Golf de España no es marketing. Son Muntaner ofrece un campo que pone a prueba el posicionamiento, la disciplina y la claridad de decisión desde el primer hoyo hasta el último. Premia el control sobre la potencia y crea oportunidades de puntuar a través de la precisión. A cinco minutos de Palma, la logística es sencilla. Solo los greens justifican el viaje. Compara todos los campos en la <a href='/golf-courses'>página de campos de golf de Mallorca</a>."
       },
       {
         "text": "Una segunda visita encontrando más fairways permitiría conocer el trazado en profundidad. Esa es la señal de un campo al que merece la pena volver. Si Son Muntaner es el punto central de un viaje más largo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios y logística."
       },
       {
-        "text": "¿Quieres jugar Son Muntaner con un Profesional PGA a tu lado?",
-        "linkLabel": "Ver la experiencia play-with-a-pro →"
+        "text": "¿Vas a jugar Son Muntaner? Puedo ayudar a que la tarifa premium se sienta justificada con el plan adecuado desde la salida hasta los greens.",
+        "linkLabel": "Reserva un día Play With A Pro en Mallorca →"
       }
     ]
   },
   "de": {
     "metadata": {
       "title": "Son Muntaner - Bewertung & Gebühren",
-      "description": "Son Muntaner Mallorca: bester Golfplatz Spaniens 2025, Gebühren.",
+      "description": "Son Muntaner liegt 5 Minuten von Palma, €110–€260 inklusive Buggy, und wurde 2025 zum besten Golfplatz Spaniens gekürt. Review eines PGA-Pros.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
       "badge": "Platz-Bewertung",
       "readTime": "6 Min.",
       "title": "Golf Son Muntaner, Mallorca - Ehrliche Bewertung eines PGA-Professionals (2026)",
-      "intro": "Bester Golfplatz Spaniens bei den World Golf Awards 2025. Fünf Minuten von Palma. Ich spielte ihn an einem Samstagmorgen mit vollem Abschlagskalender. Das sind meine Eindrücke.",
+      "intro": "Fünf Minuten von Palma. Buggy in den meisten Monaten der Saison inklusive. Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn bei vollem Abschlagskalender an einem Samstagmorgen gespielt. Das ist mir aufgefallen.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -331,7 +331,7 @@ const content = {
         "text": "Die Par-3-Löcher"
       },
       {
-        "text": "Elevation wird auf der gesamten Runde gut eingesetzt. Der Schutz entsteht durch Form und Winkel des Lochs, nicht nur durch Lange – wobei die längeren Löcher von den hinteren Abschlägen über 180 Meter haben und eine ordentliche Schlägerwahl erfordern. Das 13. war an diesem Tag ein seltener Moment der Klarheit."
+        "text": "Die Höhenunterschiede werden durchgehend gut genutzt. Der Schutz entsteht durch Form und Winkel des Lochs und nicht nur durch Länge, auch wenn die längeren von den hinteren Abschlägen über 200 Yards haben und eine ordentliche Schlägerwahl verlangen. Die 13 war an diesem Tag ein seltener Moment der Klarheit."
       },
       {
         "alt": "Andy Griffiths beim Abschlag am 13. Par-3-Loch auf Son Muntaner Mallorca",
@@ -406,7 +406,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Dynamische Preisgestaltung über das Buchungssystem von Arabella Golf Mallorca. Der aktuelle Spitzenpreis liegt bei 260 € für 18 Löcher, und die niedrigsten verfügbaren Zeiten liegen bei etwa 110 €. Der Niedrigpreis ist in der Regel saison- oder spätere-Startzeit-bedingt, nicht dauerhaft verfügbar. Aktuelle Preise auf arabellagolfmallorca.com. Handicap-Ausweis erforderlich."
+        "text": "Dynamische Preisgestaltung über das Buchungssystem von Arabella Golf Mallorca. Der Spitzenpreis liegt derzeit bei €260 für 18 Löcher, der niedrigste häufig zu sehende Preis für spätere Startzeiten bei etwa €110. Diese Spanne ist groß genug, um sie im Blick zu behalten, wenn Sie bei der Zeit flexibel sind. Aktuelle Preise auf arabellagolfmallorca.com. Die Handicap-Grenze liegt bei 36 für Herren und Damen. Der Buggy ist von März bis Ende November im Greenfee enthalten. Eine tägliche Lizenz des spanischen Golfverbands von €3 ist beim Check-in zu zahlen."
       },
       {
         "text": "Häufige Fragen"
@@ -442,21 +442,21 @@ const content = {
         "text": "Fazit"
       },
       {
-        "text": "Der Titel Bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und Klarheit in der Entscheidungsfindung vom ersten bis zum letzten Loch fordert. Er belohnt Kontrolle mehr als Kraft und schafft Scoring-Chancen durch Präzision. Fünf Minuten von Palma machen die Anreise unkompliziert. Allein die Greens rechtfertigen den Besuch."
+        "text": "Der Titel als bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und klare Entscheidungen vom ersten bis zum letzten Loch prüft. Er belohnt Kontrolle statt Kraft und schafft durch Präzision Scoring-Chancen. Fünf Minuten von Palma machen die Logistik unkompliziert. Allein die Grüns rechtfertigen die Fahrt. Vergleichen Sie alle Plätze auf der Seite <a href='/golf-courses'>Golfplätze auf Mallorca</a>."
       },
       {
         "text": "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte. Wenn Son Muntaner der Mittelpunkt einer längeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
       },
       {
-        "text": "Möchten Sie Son Muntaner mit einem PGA-Professional an Ihrer Seite spielen?",
-        "linkLabel": "Das PGA-Begleiterlebnis entdecken →"
+        "text": "Sie spielen Son Muntaner? Ich kann helfen, dass sich der Premiumpreis mit dem richtigen Plan vom Abschlag bis zu den Grüns gerechtfertigt anfühlt.",
+        "linkLabel": "Einen Play-With-A-Pro-Tag auf Mallorca buchen →"
       }
     ]
   },
   "fr": {
     "metadata": {
       "title": "Son Muntaner - Avis & Tarifs",
-      "description": "Son Muntaner à Majorque: meilleur parcours d'Espagne 2025, tarifs.",
+      "description": "Son Muntaner est à 5 minutes de Palma, €110–€260 avec voiturette incluse, et élu meilleur parcours de golf d'Espagne 2025. Avis d'un pro PGA.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -464,7 +464,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Avril 2026",
       "title": "Golf Son Muntaner, Majorque - avis honnête d'un Professionnel PGA (2026)",
-      "intro": "Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. À cinq minutes de Palma. Je l'ai joué avec un départ complet un samedi matin. Voici ce que j'y ai trouvé.",
+      "intro": "À cinq minutes de Palma. Voiturette incluse la plupart de la saison. Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. Je l'ai joué avec un départ complet un samedi matin. Voici ce que j'y ai trouvé.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -558,7 +558,7 @@ const content = {
         "text": "Les par 3"
       },
       {
-        "text": "L'élévation est bien utilisée tout au long du parcours. La protection vient de la forme et de l'angle du trou plutôt que de la seule longueur, bien que les plus longs depuis les départs arrière dépassent les 180 mètres et exigent un bon choix de club. Le 13ème a été un rare moment de clarté ce jour-là."
+        "text": "Ils exploitent bien le relief sur tout le parcours. La protection vient de la forme et de l'angle du trou plus que de la seule longueur, même si les plus longs depuis les départs arrière dépassent 200 yards et demandent un bon choix de club. Le 13 a été un rare moment de clarté ce jour-là."
       },
       {
         "alt": "Andy Griffiths au départ du par 3 numéro 13 à Son Muntaner Majorque",
@@ -633,7 +633,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "Tarification dynamique via le système de réservation d'Arabella Golf Mallorca. Le tarif de pointe actuel est de 260 € pour 18 trous, et les créneaux les plus bas tournent autour de 110 €. Ce prix bas dépend généralement de la saison ou d'horaires plus tardifs, et il n'est pas disponible en continu. Consultez les tarifs actuels sur arabellagolfmallorca.com. Certificat de handicap requis."
+        "text": "Tarification dynamique via le système de réservation d'Arabella Golf Mallorca. Le tarif de pointe est actuellement de €260 pour 18 trous, avec le tarif le plus bas couramment constaté en fin de journée autour de €110. Cet écart est assez important pour être suivi si vous avez de la flexibilité sur les horaires. Consultez les tarifs actuels sur arabellagolfmallorca.com. La limite d'index est de 36 pour les hommes comme pour les femmes. La voiturette est incluse dans le green fee de mars à fin novembre. Une licence quotidienne de la Fédération espagnole de golf de €3 est payable à l'accueil."
       },
       {
         "text": "Questions fréquentes"
@@ -669,28 +669,28 @@ const content = {
         "text": "Verdict"
       },
       {
-        "text": "Le titre de Meilleur Parcours de Golf d'Espagne n'est pas du marketing. Son Muntaner propose un parcours qui teste le positionnement, la discipline et la clarté dans la prise de décision du premier au dernier trou. Il récompense le contrôle plus que la puissance et crée des opportunités de score grâce à la précision. À cinq minutes de Palma, la logistique est simple. Les greens seuls justifient le déplacement."
+        "text": "Le titre de meilleur parcours de golf d'Espagne n'est pas du marketing. Son Muntaner offre un parcours qui met à l'épreuve le placement, la discipline et la clarté de décision du premier au dernier trou. Il récompense le contrôle plutôt que la puissance et crée des occasions de scorer grâce à la précision. À cinq minutes de Palma, la logistique est simple. Les greens à eux seuls justifient le déplacement. Comparez tous les parcours sur la <a href='/golf-courses'>page des parcours de golf de Majorque</a>."
       },
       {
         "text": "Une prochaine visite avec plus de fairways trouvés permettrait une lecture plus approfondie du tracé. C'est la marque d'un parcours sur lequel il vaut la peine de revenir. Si Son Muntaner est le point central d'un voyage plus long, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre le timing et la logistique."
       },
       {
-        "text": "Vous souhaitez jouer Son Muntaner avec un Professionnel PGA à vos côtés ?",
-        "linkLabel": "Découvrir l'expérience play-with-a-pro →"
+        "text": "Vous jouez Son Muntaner ? Je peux aider à ce que le tarif premium paraisse justifié grâce au bon plan, du départ jusqu'aux greens.",
+        "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
       }
     ]
   },
   "nl": {
     "metadata": {
       "title": "Son Muntaner - Beoordeling & Tarief",
-      "description": "Son Muntaner op Mallorca: beste baan van Spanje 2025, tarief.",
+      "description": "Son Muntaner ligt 5 minuten van Palma, €110–€260 inclusief buggy, en werd in 2025 beste golfbaan van Spanje. Review van een PGA-pro.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
       "badge": "Baanbeoordeling",
       "readTime": "6 min",
       "title": "Golf Son Muntaner, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
-      "intro": "Beste golfbaan van Spanje bij de World Golf Awards 2025. Vijf minuten van Palma. Ik speelde het op een volle zaterdagochtend. Dit zijn mijn bevindingen.",
+      "intro": "Vijf minuten van Palma. Buggy het grootste deel van het seizoen inbegrepen. Beste golfbaan van Spanje bij de World Golf Awards 2025. Ik speelde hem met een volle starttijdenlijst op een zaterdagochtend. Dit is wat ik vond.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -784,7 +784,7 @@ const content = {
         "text": "De par 3's"
       },
       {
-        "text": "De hoogte wordt goed benut door het hele parcours heen. Bescherming komt van de vorm en hoek van het hole in plaats van alleen de lengte, hoewel de langere holes vanaf de achterste tees meer dan 180 meter zijn en een goede clubkeuze vereisen. Hole 13 was een zeldzaam moment van helderheid die dag."
+        "text": "Ze benutten hoogteverschillen overal goed. De bescherming komt van de vorm en de hoek van de hole en niet alleen van de lengte, al zijn de langere vanaf de achterste afslagen meer dan 200 yards en vragen ze om een goede clubkeuze. De 13e was die dag een zeldzaam moment van helderheid."
       },
       {
         "alt": "Andy Griffiths slaat af op het par 3 hole 13 op Son Muntaner Mallorca",
@@ -859,7 +859,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Dynamische prijsstelling via het boekingssysteem van Arabella Golf Mallorca. De huidige piekprijs is €260 voor 18 holes, en de laagste beschikbare tijden liggen rond €110. Die lage prijs hangt meestal samen met het seizoen of latere starttijden en is niet voortdurend beschikbaar. Controleer de actuele tarieven op arabellagolfmallorca.com. Handicapcertificaat vereist."
+        "text": "Dynamische prijzen via het boekingssysteem van Arabella Golf Mallorca. Het piektarief is momenteel €260 voor 18 holes, met het laagste vaak geziene tarief voor latere starttijden rond €110. Dat verschil is groot genoeg om in de gaten te houden als je flexibel bent met de tijd. Controleer actuele tarieven op arabellagolfmallorca.com. De handicaplimiet is 36 voor zowel heren als dames. De buggy is van maart tot eind november inbegrepen in de greenfee. Een dagelijkse licentie van de Spaanse golfbond van €3 moet bij het inchecken worden betaald."
       },
       {
         "text": "Veelgestelde vragen"
@@ -895,28 +895,28 @@ const content = {
         "text": "Conclusie"
       },
       {
-        "text": "De titel Beste Golfbaan van Spanje is geen marketing. Son Muntaner biedt een baan die positionering, discipline en helderheid in besluitvorming test van het eerste tot het laatste hole. Het beloont controle boven kracht en creëert scoringskansen door precisie. Vijf minuten van Palma maakt de logistiek eenvoudig. Alleen al de greens rechtvaardigen de trip."
+        "text": "De titel beste golfbaan van Spanje is geen marketing. Son Muntaner levert een baan die positionering, discipline en duidelijkheid in besluitvorming test van de eerste tot de laatste hole. Hij beloont controle boven kracht en creëert scoremogelijkheden door precisie. Vijf minuten van Palma maakt de logistiek eenvoudig. De greens alleen al rechtvaardigen de reis. Vergelijk alle banen op de pagina <a href='/golf-courses'>golfbanen op Mallorca</a>."
       },
       {
         "text": "Een volgend bezoek met meer gevonden fairways zou een diepere kennis van het ontwerp ontsluiten. Dat is het kenmerk van een baan die het waard is om naar terug te keren. Als Son Muntaner het middelpunt is van een langere reis, behandelt de <a href=\"/plan-your-trip\">reisplanningsgids</a> timing en logistiek."
       },
       {
-        "text": "Wil je Son Muntaner spelen met een PGA Professional naast je?",
-        "linkLabel": "Bekijk de play-with-a-pro ervaring →"
+        "text": "Speel je Son Muntaner? Ik kan helpen dat het premiumtarief gerechtvaardigd voelt met het juiste plan van de afslag tot op de greens.",
+        "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
       }
     ]
   },
   "sv": {
     "metadata": {
       "title": "Son Muntaner - Recension & Avgifter",
-      "description": "Son Muntaner på Mallorca: bästa bana i Spanien 2025, avgifter.",
+      "description": "Son Muntaner ligger 5 minuter från Palma, €110–€260 med buggy inkluderad, och utsågs till Spaniens bästa golfbana 2025. Recension av en PGA-pro.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
       "badge": "Banomdöme",
       "readTime": "6 min",
       "title": "Golf Son Muntaner, Mallorca - ärlig recension av en PGA Professional (2026)",
-      "intro": "Bästa golfbana i Spanien vid World Golf Awards 2025. Fem minuter från Palma. Jag spelade den med fullbokat tee sheet en lördagsmorgon. Här är vad jag hittade.",
+      "intro": "Fem minuter från Palma. Buggy ingår större delen av säsongen. Spaniens bästa golfbana vid World Golf Awards 2025. Jag spelade den med fullbokat tee sheet en lördagsmorgon. Här är vad jag hittade.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -1010,7 +1010,7 @@ const content = {
         "text": "Par 3-hålen"
       },
       {
-        "text": "De använder höjdskillnader väl genomgående. Skyddet kommer från hålens form och vinkel snarare än bara laengd, även om de laengre från bakre utslag är över 180 meter och kräver ordentlig klubbval. Hål 13 var ett sällsynt ögonblick av klarhet den dagen."
+        "text": "De använder höjdskillnader väl genom hela banan. Skyddet kommer från hålets form och vinkel och inte bara längden, även om de längre från bakre tee är över 200 yards och kräver ett ordentligt klubbval. Hål 13 var ett sällsynt ögonblick av klarhet den dagen."
       },
       {
         "alt": "Andy Griffiths slår av på par 3 hål 13 på Son Muntaner Mallorca",
@@ -1085,7 +1085,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Dynamisk prissättning via Arabella Golf Mallorcas bokningssystem. Nuvarande topppris är 260 € för 18 hål, och de lägsta tillgängliga tiderna ligger runt 110 €. Det lägre priset hänger oftast ihop med säsong eller senare starttider och är inte tillgängligt hela tiden. Kontrollera aktuella priser på arabellagolfmallorca.com. Handicapcertifikat krävs."
+        "text": "Dynamisk prissättning via bokningssystemet hos Arabella Golf Mallorca. Topppriset är för närvarande €260 för 18 hål, med det lägsta ofta sedda priset för senare starttider runt €110. Skillnaden är tillräckligt stor för att vara värd att bevaka om du är flexibel med tiden. Kontrollera aktuella priser på arabellagolfmallorca.com. Handicapgränsen är 36 för både herrar och damer. Buggy ingår i greenfeen från mars till slutet av november. En daglig licens från det spanska golfförbundet på €3 betalas vid incheckning."
       },
       {
         "text": "Vanliga frågor"
@@ -1121,21 +1121,21 @@ const content = {
         "text": "Sammanfattning"
       },
       {
-        "text": "Titeln Bästa Golfbana i Spanien är inte marknadsföring. Son Muntaner levererar en bana som testar positionering, disciplin och beslutsfattande klarhet från första till sista hål. Det belönar kontroll över kraft och skapar poängmöjligheter genom precision. Fem minuter från Palma gör logistiken enkel. Greenerna ensamma motiverar resan."
+        "text": "Titeln som Spaniens bästa golfbana är ingen marknadsföring. Son Muntaner levererar en bana som testar positionering, disciplin och tydlighet i beslutsfattandet från första till sista hålet. Den belönar kontroll framför kraft och skapar scoringschanser genom precision. Fem minuter från Palma gör logistiken enkel. Greenerna ensamma motiverar resan. Jämför alla banor på sidan om <a href='/golf-courses'>golfbanor på Mallorca</a>."
       },
       {
         "text": "Ett återbesök med fler hittade fairways skulle låsa upp en djupare läsning av layouten. Det är tecknet på en bana värd att komma tillbaka till. Om Son Muntaner är mittpunkten i en laengre resa tar <a href=\"/plan-your-trip\">reseplaneringsguiden</a> upp timing och logistik."
       },
       {
-        "text": "Vill du spela Son Muntaner med en PGA Professional vid din sida?",
-        "linkLabel": "Se play-with-a-pro-upplevelsen →"
+        "text": "Ska du spela Son Muntaner? Jag kan hjälpa till så att premiumavgiften känns motiverad med rätt plan från utslaget till greenerna.",
+        "linkLabel": "Boka en Play With A Pro-dag på Mallorca →"
       }
     ]
   },
   "zh": {
     "metadata": {
       "title": "Son Muntaner 高尔夫 - 诚实评测（2026）",
-      "description": "Son Muntaner马略卡高尔夫球场由PGA职业教练评测。2025年西班牙最佳高尔夫球场。果岭费、球场状况及适合人群全解析。",
+      "description": "Son Muntaner 距帕尔马 5 分钟车程，€110–€260 含球车，并在 2025 年被评为西班牙最佳高尔夫球场。PGA 职业教练评测。",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -1143,7 +1143,7 @@ const content = {
       "readTime": "6分钟",
       "updated": "2026年4月",
       "title": "Son Muntaner 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
-      "intro": "2025年世界高尔夫奖西班牙最佳球场。距巴尔马市中心五分钟。我在满员开球表的周六早晨打了一轮。以下是我的真实体验。",
+      "intro": "距帕尔马五分钟车程。大部分季节含球车。在 2025 年世界高尔夫奖中被评为西班牙最佳高尔夫球场。我在周六早晨、开球表排满的情况下打了一轮。以下是我的发现。",
       "related": [
         {
           "slug": "son-gual-review",
@@ -1237,7 +1237,7 @@ const content = {
         "text": "标准杆3洞"
       },
       {
-        "text": "球场全程都善用了高度差。保护性主要来自球洞的形态和角度，而非单纯依赖距离:当然从后方开球台打的较长洞超过180码，需要认真选择球杆。第13洞是当天难得的清晰时刻。"
+        "text": "它们全程都很好地利用了地势起伏。防守来自球洞的形状和角度，而不只是长度，不过从后发球台打的较长球洞超过 200 码，需要认真选杆。第 13 洞是那天难得清醒的一刻。"
       },
       {
         "alt": "Andy Griffiths在马略卡Son Muntaner第13洞标准杆3洞开球",
@@ -1312,7 +1312,7 @@ const content = {
         "text": "2026年果岭费"
       },
       {
-        "text": "通过Arabella高尔夫马略卡预订系统动态定价。目前18洞的峰值收费约为260欧元，较低时段大约110欧元。低价通常与季节或较晚开球时间有关，并不是随时都能订到。请在arabellagolfmallorca.com查看最新价格。需要差点证明。"
+        "text": "通过 Arabella Golf Mallorca 的预订系统实行动态定价。目前 18 洞最高价为 €260，较晚时段常见的最低价约为 €110。如果你的时间比较灵活，这个差距大到值得关注。当前价格请查看 arabellagolfmallorca.com。差点限制男女均为 36。3 月至 11 月底，果岭费包含球车。入场时需另付每日 €3 的西班牙高尔夫联合会执照费。"
       },
       {
         "text": "常见问题"
@@ -1348,14 +1348,14 @@ const content = {
         "text": "总结"
       },
       {
-        "text": "西班牙最佳高尔夫球场的称号并非营销噱头。Son Muntaner提供了一个从第一洞到最后一洞始终考验位置选择、自律性和决策清晰度的球场。它以控制奖励胜于力量，以精准创造得分机会。距巴尔马五分钟让行程安排简便。仅凭果岭就值得专程前来。"
+        "text": "西班牙最佳高尔夫球场这个称号不是营销。Son Muntaner 提供的是一座从第一洞到最后一洞都考验站位、纪律和决策清晰度的球场。它奖励控制而非力量，通过精准创造成绩机会。距帕尔马五分钟，后勤很简单。仅果岭本身就值得这趟旅程。想比较所有球场，请看<a href='/golf-courses'>马略卡高尔夫球场</a>页面。"
       },
       {
         "text": "带着更多找到球道的经历再次造访，将解锁对球道布局更深层的理解。这正是一个值得回头再打的球场所具备的特质。如果 Son Muntaner 是更长行程的核心，<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了时间安排和后勤事项。"
       },
       {
-        "text": "希望在PGA职业教练陪同下打Son Muntaner？",
-        "linkLabel": "了解与职业球手同场体验 →"
+        "text": "要打 Son Muntaner 吗？我可以帮你从开球到果岭制定合适的计划，让高端价格物有所值。",
+        "linkLabel": "预订马略卡 Play With A Pro 一天体验 →"
       }
     ]
   }

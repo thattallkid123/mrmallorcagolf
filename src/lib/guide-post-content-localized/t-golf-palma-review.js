@@ -166,8 +166,8 @@ const content = {
         "alt": "Andy Griffiths con su compañero de juego antes de la vuelta en T Golf Palma"
       },
       {
-        "text": "¿Quieres jugar T Golf Palma con un profesional PGA que conoce cada hoyo?",
-        "linkLabel": "Ver la experiencia play-with-a-pro →"
+        "text": "¿Vas a jugar T Golf Palma? Puedo ayudarte a planificar las salidas, a resolver los hoyos de riesgo y recompensa y a sacarle el máximo a la ronda.",
+        "linkLabel": "Reserva un día Play With A Pro en Mallorca →"
       }
     ]
   },
@@ -337,8 +337,8 @@ const content = {
         "alt": "Andy Griffiths mit seinem Mitspieler vor der Runde bei T Golf Palma"
       },
       {
-        "text": "T Golf Palma mit einem PGA-Professional spielen, der jedes Loch kennt?",
-        "linkLabel": "Das PGA-Begleiterlebnis entdecken →"
+        "text": "Sie spielen T Golf Palma? Ich kann Ihnen helfen, die Startzeiten zu planen, die Risiko-Belohnung-Löcher zu durchdenken und das Meiste aus der Runde zu holen.",
+        "linkLabel": "Einen Play-With-A-Pro-Tag auf Mallorca buchen →"
       }
     ]
   },
@@ -508,8 +508,8 @@ const content = {
         "alt": "Andy Griffiths avec son partenaire de jeu avant la partie à T Golf Palma"
       },
       {
-        "text": "Envie de jouer T Golf Palma avec un professionnel PGA qui connaît chaque trou ?",
-        "linkLabel": "Voir l'expérience play-with-a-pro →"
+        "text": "Vous jouez T Golf Palma ? Je peux vous aider à planifier les heures de départ, à aborder les trous risque-récompense et à tirer le meilleur de la partie.",
+        "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
       }
     ]
   },
@@ -679,8 +679,8 @@ const content = {
         "alt": "Andy Griffiths met zijn speelpartner voor de ronde bij T Golf Palma"
       },
       {
-        "text": "Wil je T Golf Palma spelen met een PGA professional die elke hole kent?",
-        "linkLabel": "Bekijk de play-with-a-pro ervaring →"
+        "text": "Speel je T Golf Palma? Ik kan je helpen met het plannen van de starttijden, het doorlopen van de risk-reward-holes en het halen van het maximale uit de ronde.",
+        "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
       }
     ]
   },
@@ -850,8 +850,8 @@ const content = {
         "alt": "Andy Griffiths med sin spelpartner före rundan hos T Golf Palma"
       },
       {
-        "text": "Vill du spela T Golf Palma med en PGA-professional som känner varje hål?",
-        "linkLabel": "Se play-with-a-pro-upplevelsen →"
+        "text": "Ska du spela T Golf Palma? Jag kan hjälpa dig att planera starttiderna, ta dig igenom risk-och-belöning-hålen och få ut det mesta av rundan.",
+        "linkLabel": "Boka en Play With A Pro-dag på Mallorca →"
       }
     ]
   },
@@ -1021,8 +1021,8 @@ const content = {
         "alt": "Andy Griffiths在T Golf Palma与球伴合影,赛前拍摄"
       },
       {
-        "text": "想与熟悉每一个洞的PGA职业球员同打T Golf Palma？",
-        "linkLabel": "了解陪打体验 →"
+        "text": "要打 T Golf Palma 吗？我可以帮你规划开球时间、应对风险与回报并存的球洞，让这一轮发挥出最大价值。",
+        "linkLabel": "预订马略卡 Play With A Pro 一天体验 →"
       }
     ]
   }

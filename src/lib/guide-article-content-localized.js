@@ -7,15 +7,16 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "best-golf-courses-mallorca": {
     "es": {
       "metadata": {
+        "imageAlt": "Los mejores campos de golf de Mallorca - la guía honesta de un Profesional PGA (2026)",
         "title": "Los 24 campos de golf en Mallorca 2026",
-        "description": "Los 24 campos de golf en Mallorca clasificados por un profesional PGA. Greenfees €55–€260, dificultad y veredictos honestos. Actualizado 2026."
+        "description": "Los 24 campos de Mallorca, clasificados por un pro PGA. Green fees €55–€260, dificultad y a quién le conviene cada uno."
       },
       "meta": {
-        "badge": "Guía",
+        "badge": "Guía de campos",
         "readTime": "8 min de lectura",
         "updated": "Marzo 2026",
         "title": "Mejores campos - Clasificación honesta",
-        "intro": "Veinticuatro campos en la isla. Así los priorizaría para un visitante con poco tiempo y expectativas altas.",
+        "intro": "Mallorca tiene más golf sobresaliente de lo que la mayoría de los visitantes imagina. Veinticuatro campos, varios de ellos capaces de acoger torneos del European Tour. Esto es lo que sé de jugarlos.",
         "related": [
           {
             "slug": "son-gual-review",
@@ -37,13 +38,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Mallorca es mucho mejor destino de golf de lo que mucha gente piensa. Si uno solo mira los nombres grandes de Portugal o la Costa del Sol, se pierde lo buena que es aquí la combinación de calidad de campos, clima y paisaje."
+          "text": "Mallorca, o Majorca si creciste escribiéndolo así, es un destino de golf mucho mejor de lo que la mayoría cree. Me mudé aquí desde Shanghái en marzo de 2025, donde pasé once años entrenando en una ciudad de 27 millones de personas sin suficientes campos de golf para todos. La mayoría estaban construidos con estándares de campeonato porque no tenía sentido tener algo que no fuera lo mejor. Llegar a una isla con 24 campos, 21 de ellos abiertos a visitantes con green fee, en condiciones que se mantienen de calidad incluso en invierno, fue como descubrir un secreto."
         },
         {
-          "text": "Soy UK PGA Advanced Professional, una de las titulaciones profesionales senior en el golf británico, y estoy recorriendo todos los campos de la isla. No desde una terraza como un bloguero, sino jugando, comparando y teniendo claro a cuáles enviaría de verdad a mis clientes. Puede ver los 24 campos con green fees y filtros en la <a href='/es/golf-courses'>página de campos de golf de Mallorca</a>."
+          "text": "Soy PGA Advanced Professional y estoy recorriendo todos los campos de la isla: jugándolos, reseñándolos con honestidad, averiguando qué hace que cada uno merezca el viaje y llevando también a mis invitados para que aprendan. También puedes explorar los 24 campos con green fees y filtros en la página de <a href='/golf-courses'>campos de golf de Mallorca</a>. Abajo está lo que sé hasta ahora."
         },
         {
-          "text": "Los mejores campos según el objetivo"
+          "text": "Los 24 campos de golf de Mallorca: referencia rápida"
         },
         {
           "headers": [
@@ -63,16 +64,16 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-165",
               "9/10",
               "5.0",
-              "Vuelta seria de nivel championship"
+              "Una ronda de campeonato en serio"
             ],
             [
               "Club de Golf Alcanada",
-              "Port d'Alcúdia",
+              "Port d'Alcudia",
               "72",
               "€115-230",
               "7/10",
               "5.0",
-              "Vistas espectaculares y calidad de torneo"
+              "Vistas espectaculares, calidad de campeonato"
             ],
             [
               "Son Muntaner",
@@ -81,7 +82,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€125-260",
               "7/10",
               "4.5",
-              "Mejor mantenimiento, cerca de Palma"
+              "El mejor cuidado, cerca de Palma"
             ],
             [
               "T Golf Calvià",
@@ -90,7 +91,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€170-210",
               "7/10",
               "5.0",
-              "Experiencia premium muy completa"
+              "Experiencia premium completa"
             ],
             [
               "Golf de Andratx",
@@ -108,7 +109,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-190",
               "8/10",
               "4.5",
-              "Campo histórico, aquí gano Seve"
+              "Campo histórico, aquí ganó Seve"
             ],
             [
               "T Golf Palma (Puntiro)",
@@ -117,7 +118,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€100-140",
               "7/10",
               "4.5",
-              "Único diseño Nicklaus de la isla"
+              "Único diseño de Nicklaus de la isla"
             ],
             [
               "Golf Santa Ponsa 1",
@@ -126,25 +127,25 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€77-126",
               "8/10",
               "4.0",
-              "Sede de European Tour con acceso público"
+              "Sede del European Tour, acceso público"
             ],
             [
               "Golf Santa Ponsa 2",
               "Santa Ponsa",
               "72",
-              "Private access",
+              "Solo socios · invitado con socio",
               "7/10",
               "3.5",
-              "Ambiente tranquilo y más de socios"
+              "Tranquilo, ambiente de campo de socios"
             ],
             [
               "Golf Santa Ponsa 3",
               "Santa Ponsa",
               "30 (9H)",
-              "Private access",
+              "Solo socios · invitado con socio",
               "4/10",
               "3.0",
-              "Principiantes y juego corto"
+              "Principiantes, práctica de aproximación"
             ],
             [
               "Golf Son Quint",
@@ -153,7 +154,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€70-140",
               "5/10",
               "4.0",
-              "Todos los niveles, Tiger jugo aquí"
+              "Todos los niveles, aquí jugó Tiger Woods"
             ],
             [
               "Real Golf de Bendinat",
@@ -162,7 +163,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€74-123",
               "6/10",
               "3.5",
-              "Valle arbolado y vistas a la bahía"
+              "Valle arbolado, vistas a la bahía"
             ],
             [
               "Golf Son Termes",
@@ -171,7 +172,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-110",
               "6/10",
               "3.5",
-              "Entorno Tramuntana"
+              "Entorno de montaña de la Tramuntana"
             ],
             [
               "Golf Son Antem West",
@@ -180,7 +181,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-135",
               "7/10",
               "4.0",
-              "Resort, más exigente que Son Antem East"
+              "Campo de resort, más duro que Son Antem East"
             ],
             [
               "Golf Son Antem East",
@@ -189,7 +190,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "6/10",
               "3.5",
-              "Calles anchas y golf de resort"
+              "Calles anchas, golf de resort"
             ],
             [
               "Golf Maioris",
@@ -198,7 +199,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€91-110",
               "7/10",
               "3.5",
-              "Opción infravalorada y más tranquila"
+              "Infravalorado, opción más tranquila"
             ],
             [
               "Pula Golf",
@@ -207,7 +208,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-145",
               "7/10",
               "4.0",
-              "Rediseño de Olazábal y 8 eventos Tour"
+              "Rediseño de Olazábal, 8 torneos del Tour"
             ],
             [
               "Golf Club Son Servera",
@@ -216,7 +217,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-165",
               "6/10",
               "4.0",
-              "Parkland relajado e histórico"
+              "Parkland relajado, histórico"
             ],
             [
               "Vall d'Or Golf",
@@ -225,7 +226,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€99-132",
               "6/10",
               "3.5",
-              "Vistas de la costa este y gran segunda vuelta"
+              "Vistas de la costa este, buena segunda vuelta"
             ],
             [
               "Capdepera Golf",
@@ -234,7 +235,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-135",
               "7/10",
               "3.5",
-              "Gran back nine y hoyo de montaña destacado"
+              "Buena segunda vuelta y un hoyo de montaña destacado"
             ],
             [
               "Canyamel Golf",
@@ -243,7 +244,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-145",
               "6/10",
               "4.0",
-              "El más fotografiado de la costa este"
+              "El más fotografiado, costa este"
             ],
             [
               "Golf Pollensa",
@@ -252,118 +253,120 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€65-75",
               "4/10",
               "3.5",
-              "Ronda fácil para entrar en calor"
+              "Calentamiento fácil, vistas a la Tramuntana"
             ],
             [
               "Palma Pitch & Putt",
-              "Son Vida - Palma",
+              "Son Vida · Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
               "3.0",
-              "Principiantes y prácticas de approach"
+              "Principiantes, práctica de aproximación"
             ],
             [
               "Reserva Rotana",
               "Manacor",
               "36 (9H)",
-              "Hotel only",
+              "Solo clientes del hotel",
               "6/10",
               "3.5",
-              "Stay-and-play en finca privada"
+              "Estancia y juego, finca privada"
             ]
           ]
         },
         {
-          "text": "Quiere comparar los 24 campos lado a lado en una sola página? Descargue la tabla comparativa gratuita.",
-          "linkLabel": "Descargar la comparativa gratuita →"
+          "text": "¿Quieres los 24 campos comparados lado a lado en una sola página? Descarga la tabla comparativa de campos gratuita.",
+          "linkLabel": "Obtén la comparativa gratuita →"
         },
         {
-          "text": "Los mejores campos según para que los quiere"
+          "text": "Los mejores campos, según el propósito"
         },
         {
-          "text": "Para una vuelta seria de nivel championship: Son Gual"
+          "text": "Para una ronda de campeonato en serio: Son Gual"
         },
         {
-          "caption": "Son Gual: la prueba más completa de la isla"
+          "alt": "Campo de golf Son Gual",
+          "caption": "Son Gual - campo de prueba de campeonato"
         },
         {
-          "text": "Es el campo que más juego en Mallorca y el que recomiendo con más constancia cuando alguien quiere una prueba de verdad. El diseño de Thomas Himmel usa viento, desnivel y colocación con mucha inteligencia. Si tu juego está razonablemente en orden y quieres un campo serio, esta es la primera referencia."
+          "text": "Mi campo más jugado de la isla y el que más recomiendo para una prueba de verdad. El diseño de Thomas Himmel está en su propio ecosistema de viento en las colinas sobre Palma: he salido de casa, muy confiado, en una mañana en calma y he llegado al primer tee para encontrarlo soplando fuerte y seguir así toda la ronda. Los greens son rápidos, elevados e implacables. Los bunkers son agresivos y exigen un nivel muy alto de estrategia y de golpeo, y el tramo final es realmente sobresaliente."
         },
         {
-          "text": "Rafa Nadal ha dicho que es su favorito de la isla. Barack Obama jugó aquí en noviembre de 2024. Los green fees se mueven aproximadamente entre €115 y €165."
+          "text": "Rafa Nadal juega aquí con regularidad y ha dicho que es su campo favorito de la isla. Barack Obama jugó aquí en noviembre de 2024 y le gustó tanto que prometió volver. En este popular campo también se celebran muchos torneos importantes de aficionados y profesionales."
         },
         {
-          "text": "Para la vuelta más escenica: Alcanada"
+          "text": "Para la ronda más espectacular: Alcanada"
         },
         {
-          "alt": "Alcanada lighthouse view",
-          "caption": "Alcanada - faro, mar y un campo de torneo de verdad"
+          "alt": "Campo de golf Alcanada",
+          "caption": "Alcanada - el campo más espectacular"
         },
         {
-          "text": "Robert Trent Jones Jr. en el norte de la isla, con el faro como referencia visual constante. Desde los tees de atrás y en una mañana clara, es uno de los escenarios de golf más memorables de Europa. Y no es solo bonito: los greens y la colocación exigen jugar bien."
+          "text": "Alcanada es el campo que elijo cuando alguien pide un día que se le quede grabado. Las vistas son espectaculares de principio a fin, pero no es solo una ronda bonita. Es un serio trazado de campeonato de Robert Trent Jones Jr. con greens rápidos y ondulados y bunkers estratégicos que plantean buenas preguntas todo el día."
         },
         {
-          "text": "Estar en los tees elevados del fondo es una experiencia en si misma. Se siente lejos de todo, con el faro delante, la bahía abriéndose y el driver saliendo casi hacia el vacío. Esa es la sensación."
+          "text": "Estar en las salidas traseras elevadas es toda una experiencia. Te sientes intocable, tan lejos de todo que quienes están abajo parecen puntos diminutos. El faro delante de ti, la bahía extendiéndose y estás a punto de pegar el driver hacia el abismo. Esa es la sensación."
         },
         {
-          "text": "Para sensación de DP World Tour: Son Muntaner"
+          "text": "Para una sorpresa en la costa este: Capdepera"
         },
         {
-          "text": "Capdepera es mejor de lo que muchos visitantes esperan. Los primeros nueve son abiertos y jugables, y luego la segunda vuelta se mete en las colinas y se vuelve más táctica. El par 3 del 15 es uno de los mejores hoyos de la isla, con vistas elevadas de montaña que ya justifican el viaje antes incluso del último putt."
+          "text": "Capdepera es mejor de lo que esperan muchos visitantes. La primera vuelta es abierta y jugable; luego la segunda sube a las colinas y se vuelve una prueba más táctica. El par 3 del 15 es uno de los mejores hoyos de la isla, con vistas elevadas a la montaña que hacen que el trayecto merezca la pena incluso antes de embocar."
         },
         {
           "text": "Para una experiencia DP World Tour: Son Muntaner"
         },
         {
-          "alt": "Son Muntaner",
-          "caption": "Son Muntaner - estándar de torneo a pocos minutos de Palma"
+          "alt": "Campo de golf Son Muntaner",
+          "caption": "Son Muntaner - Mejor Campo de Golf de España 2025"
         },
         {
-          "text": "Elegido mejor campo de Espana en 2025, técnicamente fuerte, siempre muy bien presentado y muy fácil de encajar en una estancia en Palma. Si alguien quiere calidad alta sin una gran conducción, Son Muntaner tiene mucho sentido."
+          "text": "Elegido Mejor Campo de Golf de España en los World Golf Awards 2025, y bien merecido. Ha acogido el Mallorca Golf Open y torneos del Ladies European Tour. Calles anchas, pero con muchos obstáculos y pinos que te guían, greens técnicamente exigentes, un mantenimiento fantástico y una prueba de golf realmente buena."
         },
         {
           "text": "Para la prueba más dura: Golf de Andratx"
         },
         {
-          "caption": "Andratx - duro, exigente y nada indulgente"
+          "alt": "Golf de Andratx",
+          "caption": "Andratx - la prueba más dura de la isla"
         },
         {
-          "text": "Muy considerado como uno de los recorridos más duros de la isla. Un trazado championship en el suroeste donde los errores cuestan caro. Si uno quiere golf como examen, aquí lo tiene."
+          "text": "Considerado ampliamente uno de los campos más difíciles de la isla. Un trazado de campeonato en el suroeste con vistas costeras espectaculares y obstáculos en casi todos los hoyos. El 6 es el par 5 más largo de toda España, con 609 metros. Recomendado para jugadores con experiencia."
         },
         {
-          "text": "Pensando en Andratx? Explico el recorrido, el viento, la salida adecuada y si de verdad encaja con tu juego.",
-          "linkLabel": "Leer la reseña de Golf de Andratx →"
+          "text": "¿Te planteas Andratx? Cuento cómo es el trazado, el viento, la mejor salida y si encaja con tu juego.",
+          "linkLabel": "Lee el análisis de Golf de Andratx →"
         },
         {
-          "text": "Para el entorno más bonito: Canyamel"
+          "text": "Para el entorno más bello: Canyamel"
         },
         {
-          "alt": "Canyamel Golf",
-          "caption": "Canyamel - costa este, parque natural y mucho carácter"
+          "alt": "Campo de golf Canyamel",
+          "caption": "Canyamel - el campo más fotografiado"
         },
         {
-          "text": "En las estribaciones del parque natural de Llevant, con vistas al mar y mucha presencia visual. Merece el viaje desde Palma si valora algo más que el número en la tarjeta."
+          "text": "Descrito por muchos como el campo más fotografiado de la isla. Está en las estribaciones del Parque Natural de Llevant, en el este, con vistas al mar en todo el recorrido. Un campo realmente bueno más allá de la estética."
         },
         {
-          "text": "También merece jugarse: Golf Santa Ponsa 1"
+          "text": "También merece la pena: Golf Santa Ponsa 1"
         },
         {
-          "alt": "Santa Ponsa 1",
-          "caption": "Santa Ponsa 1 - historia de European Tour y mucho driver"
+          "alt": "Campo de golf Santa Ponsa 1",
+          "caption": "Santa Ponsa 1 - historia del European Tour"
         },
         {
-          "text": "Es el único público del grupo Santa Ponsa, con autentica historia de tour. Calles anchas, hoyos largos y para muchos jugadores un campo que devuelve confianza con el driver. Muy distinto de Son Gual o Alcanada, pero claramente importante."
+          "text": "El único campo público del grupo Santa Ponsa, con auténtica historia del European Tour: acogió el European Tour Mallorca Golf Open de 2021 y seis torneos del European Tour. Uno de los campos más largos de la isla, con calles abiertas que premian una salida agresiva y buenas oportunidades de pegar el driver."
         },
         {
           "text": "Para principiantes o grupos mixtos: Son Quint o Son Antem East"
         },
         {
-          "alt": "Son Quint Golf",
-          "caption": "Son Quint - más abierto, amable y bastante más tolerante"
+          "alt": "Campo de golf Son Quint",
+          "caption": "Son Quint - donde jugaron Tiger Woods y Charlie en 2022"
         },
         {
-          "text": "Si no se busca una prueba pura sino un buen día para niveles distintos, estos encajan mucho mejor. Son Quint es más abierto y permisivo. Son Antem East también funciona bien para grupos que no quieren una ronda maximalista."
+          "text": "Son Quint es el campo más accesible del grupo Arabella (cuatro campos en un solo complejo): relativamente llano, calles anchas, vegetación autóctona y poca intimidación. Situado en alto, tiene vistas estupendas sobre Palma. Tiger Woods y su hijo Charlie jugaron aquí en julio de 2022 tras The Open. Son Antem East, en el sur, es igual de llano y permisivo, pero con bastante agua, bunkers y árboles para ser interesante, y con un resort con hotel si quieres combinarlo con alojamiento."
         },
         {
           "items": [
@@ -373,11 +376,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "€55-260",
-              "Rango 18 hoyos"
+              "Rango de green fee de 18 hoyos"
             ],
             [
               "300",
-              "Días de sol al año"
+              "Días de sol"
             ],
             [
               "12 meses",
@@ -386,41 +389,42 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "Conexiones conocidas que merece saber"
+          "text": "Conexiones famosas que conviene conocer"
         },
         {
-          "text": "Son Gual: Obama jugo allí en noviembre de 2024 y Nadal juega con regularidad. Son Quint: Tiger Woods y Charlie jugaron allí en julio de 2022. No es lo más importante, pero dice algo del perfil y de la calidad visible de esos campos."
+          "text": "Son Gual: Obama vino y jugó en 2024. Son Quint (Arabella): Tiger Woods y su hijo Charlie jugaron en julio de 2022, la semana después de The Open en St Andrews. Pula (este): Federer y Nadal juegan juntos cuando están en la isla y Nadal va con frecuencia. Son Vida: Seve Ballesteros ganó allí el torneo del European Tour en 1990. Santa Ponsa: acogió seis torneos del European Tour y a todos los grandes nombres de la época, incluidas las leyendas españolas Seve Ballesteros y José María Olazábal junto a Ian Woosnam, Bernhard Langer y más."
         },
         {
-          "text": "Resumen honesto"
+          "text": "El resumen honesto"
         },
         {
-          "text": "Si solo pudiera recomendar dos campos para una semana en Mallorca, serían Son Gual y Alcanada. Son Muntaner para estándar tour cerca de Palma. Andratx para la prueba más dura. Canyamel por paisaje. Santa Ponsa 1 por amplitud, driver e historia. Para principiantes o grupos mezclados, yo iría antes a Son Quint o Son Antem East."
+          "text": "Si quieres la lista más sólida, empieza por Son Gual, Alcanada, Son Muntaner y T Golf Calvià. Añade Andratx si quieres la prueba más dura, Capdepera para un reto infravalorado en la costa este y Son Antem West si quieres un entorno de resort que siga exigiendo golf de verdad. La mayoría de los visitantes juega uno o dos campos y no ve lo profunda que es la calidad aquí."
         },
         {
-          "text": "La isla es uno de los secretos mejor guardados del golf europeo. Cuando llegue desde Shanghai y vi como estaban aquí las condiciones en enero, mientras gran parte del norte de Europa estaba cerrado, eso me quedo clarísimo."
+          "text": "La isla ha sido uno de los secretos de golf mejor guardados de Europa. Llegué de Shanghái y las condiciones en enero, cuando los campos de Inglaterra están cerrados, me sorprendieron de verdad."
         },
         {
-          "text": "¿Quiere jugar uno de estos campos con un profesional PGA a su lado?",
-          "linkLabel": "Ver la experiencia play-with-a-pro →"
+          "text": "Descarga la tabla comparativa de campos gratuita que compara los 24 campos de Mallorca en green fees, dificultad y a quién le conviene cada uno.",
+          "linkLabel": "Descarga la comparativa de campos →"
         },
         {
-          "text": "Quiere convertirlo en un día de golf bien organizado?",
-          "linkLabel": "Ver el día Play With A Pro"
+          "text": "¿Quieres jugar uno de estos campos con un profesional PGA a tu lado?",
+          "linkLabel": "Reserva un día Play With A Pro en Mallorca →"
         }
       ]
     },
     "de": {
       "metadata": {
+        "imageAlt": "Die besten Golfplätze auf Mallorca - der ehrliche Guide eines PGA Professionals (2026)",
         "title": "Alle 24 Golfplätze auf Mallorca 2026",
-        "description": "Alle 24 Golfplätze auf Mallorca von einem PGA-Profi bewertet. Greenfees €55–€260, Schwierigkeitsgrade und ehrliche Bewertungen. Aktualisiert 2026."
+        "description": "Alle 24 Golfplätze Mallorcas, von einem PGA-Pro gerankt. Greenfees €55–€260, Schwierigkeit, für wen sich welcher Platz eignet."
       },
       "meta": {
-        "badge": "Ratgeber",
+        "badge": "Platz-Guide",
         "readTime": "8 Min. Lesezeit",
         "updated": "März 2026",
         "title": "Die besten Golfplätze auf Mallorca - ehrlich eingeordnet",
-        "intro": "24 Plätze auf der Insel. So würde ich sie für Besucher mit wenig Zeit und hohen Ansprüchen priorisieren.",
+        "intro": "Mallorca hat mehr herausragendes Golf, als die meisten Besucher ahnen. Vierundzwanzig Plätze, mehrere davon in der Lage, European-Tour-Turniere auszurichten. Das weiß ich aus eigener Erfahrung auf den Plätzen.",
         "related": [
           {
             "slug": "son-gual-review",
@@ -442,13 +446,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Mallorca ist als Golfziel deutlich besser, als viele Menschen vermuten. Wer nur auf die großen Namen in Portugal oder an der Costa del Sol schaut, übersieht, wie gut die Kombination aus Platzqualität, Klima und Landschaft hier wirklich ist."
+          "text": "Mallorca - oder Majorca, wenn Sie es so buchstabiert haben - ist ein sehr viel besseres Golfziel, als die meisten Menschen ahnen. Im März 2025 bin ich aus Shanghai hierhergezogen, wo ich elf Jahre lang in einer Stadt mit 27 Millionen Einwohnern gecoacht habe, in der es nicht genug Golfplätze gab. Die meisten dort wurden nach Championship-Standard gebaut, weil es keinen Sinn hatte, etwas zu haben, das nicht das Beste war. Auf einer Insel mit 24 Plätzen anzukommen, von denen 21 für Greenfee-Gäste offen sind, in Bedingungen, die auch im Winter hochwertig bleiben, fühlte sich an wie die Entdeckung eines Geheimnisses."
         },
         {
-          "text": "Ich bin UK PGA Advanced Professional - eine der höheren Berufsqualifikationen im britischen Golf - und arbeite mich durch jeden Platz auf der Insel. Nicht als Blogger von der Terrasse aus, sondern spielend, vergleichend und mit klaren Meinungen dazu, wohin ich Kunden wirklich schicken würde. Alle 24 Plätze mit Greenfees und Filtern finden Sie auf der <a href='/de/golf-courses'>Mallorca Golfplätze-Seite</a>."
+          "text": "Ich bin PGA Advanced Professional und arbeite mich durch jeden Platz der Insel: Ich spiele sie, bewerte sie ehrlich, finde heraus, was jeden einzelnen die Reise wert macht, und nehme meine Gäste mit, damit sie auch lernen. Sie können außerdem alle 24 Plätze mit Greenfees und Filtern auf der Seite <a href='/golf-courses'>Golfplätze auf Mallorca</a> durchsuchen. Unten steht, was ich bisher weiß."
         },
         {
-          "text": "Die Top-Plätze - je nach Zweck"
+          "text": "Alle 24 Golfplätze auf Mallorca: Schnellübersicht"
         },
         {
           "headers": [
@@ -477,7 +481,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-230",
               "7/10",
               "5.0",
-              "Spektakuläre Aussichten, Turnierqualität"
+              "Spektakuläre Aussichten, Championship-Qualität"
             ],
             [
               "Son Muntaner",
@@ -486,16 +490,16 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€125-260",
               "7/10",
               "4.5",
-              "Beste Pflege, nah an Palma"
+              "Am besten gepflegt, nah an Palma"
             ],
             [
-              "T Golf Calvia",
-              "Calvia",
+              "T Golf Calvià",
+              "Calvià",
               "72",
               "€170-210",
               "7/10",
               "5.0",
-              "Premium-Erlebnis auf breiter Front"
+              "Rundum Premium-Erlebnis"
             ],
             [
               "Golf de Andratx",
@@ -504,7 +508,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "9/10",
               "4.0",
-              "Härtester Test auf der Insel"
+              "Härteste Prüfung der Insel"
             ],
             [
               "Golf Son Vida",
@@ -513,7 +517,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-190",
               "8/10",
               "4.5",
-              "Historischer Platz, Seve gewann hier"
+              "Historischer Platz, Seve hat hier gewonnen"
             ],
             [
               "T Golf Palma (Puntiro)",
@@ -531,25 +535,25 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€77-126",
               "8/10",
               "4.0",
-              "European-Tour-Standort, öffentlich spielbar"
+              "European-Tour-Austragungsort, öffentlich zugänglich"
             ],
             [
               "Golf Santa Ponsa 2",
               "Santa Ponsa",
               "72",
-              "Private access",
+              "Nur für Mitglieder · Gast mit Mitglied",
               "7/10",
               "3.5",
-              "Ruhig, mitgliederorientiertes Gefühl"
+              "Ruhig, Atmosphäre wie in einem Mitgliederclub"
             ],
             [
               "Golf Santa Ponsa 3",
               "Santa Ponsa",
               "30 (9H)",
-              "Private access",
+              "Nur für Mitglieder · Gast mit Mitglied",
               "4/10",
               "3.0",
-              "Anfänger, kurzes Spiel trainieren"
+              "Anfänger, Annäherungstraining"
             ],
             [
               "Golf Son Quint",
@@ -558,7 +562,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€70-140",
               "5/10",
               "4.0",
-              "Alle Spielstärken, Tiger spielte hier"
+              "Alle Spielstärken, Tiger Woods hat hier gespielt"
             ],
             [
               "Real Golf de Bendinat",
@@ -567,7 +571,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€74-123",
               "6/10",
               "3.5",
-              "Bewaldetes Tal, Blicke zur Bucht"
+              "Bewaldetes Tal, Blick auf die Bucht"
             ],
             [
               "Golf Son Termes",
@@ -576,7 +580,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-110",
               "6/10",
               "3.5",
-              "Tramuntana-Bergkulisse"
+              "Kulisse der Tramuntana-Berge"
             ],
             [
               "Golf Son Antem West",
@@ -585,7 +589,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-135",
               "7/10",
               "4.0",
-              "Resortplatz, härter als Son Antem East"
+              "Resortplatz, anspruchsvoller als Son Antem East"
             ],
             [
               "Golf Son Antem East",
@@ -603,7 +607,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€91-110",
               "7/10",
               "3.5",
-              "Unterschätzt, ruhigere Option"
+              "Unterschätzt, ruhigere Alternative"
             ],
             [
               "Pula Golf",
@@ -612,7 +616,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-145",
               "7/10",
               "4.0",
-              "Olazabal-Umbau, 8 Tour-Events"
+              "Olazabal-Umbau, 8 Tour-Turniere"
             ],
             [
               "Golf Club Son Servera",
@@ -621,7 +625,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-165",
               "6/10",
               "4.0",
-              "Entspannter Parklandkurs, historisch"
+              "Entspannter Parkland-Platz, historisch"
             ],
             [
               "Vall d'Or Golf",
@@ -630,7 +634,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€99-132",
               "6/10",
               "3.5",
-              "Ostküstenblicke, starke Back Nine"
+              "Blick auf die Ostküste, starke Back Nine"
             ],
             [
               "Capdepera Golf",
@@ -639,7 +643,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-135",
               "7/10",
               "3.5",
-              "Starke Back Nine und markantes Bergloch"
+              "Starke Back Nine und herausragendes Berg-Loch"
             ],
             [
               "Canyamel Golf",
@@ -648,7 +652,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-145",
               "6/10",
               "4.0",
-              "Meistfotografierter Platz der Ostküste"
+              "Meistfotografiert, Ostküste"
             ],
             [
               "Golf Pollensa",
@@ -657,118 +661,120 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€65-75",
               "4/10",
               "3.5",
-              "Einfache Aufwärmrunde, Tramuntana-Blicke"
+              "Leichtes Einspielen, Tramuntana-Blick"
             ],
             [
               "Palma Pitch & Putt",
-              "Son Vida - Palma",
+              "Son Vida · Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
               "3.0",
-              "Anfänger, kurzes Spiel trainieren"
+              "Anfänger, Annäherungstraining"
             ],
             [
               "Reserva Rotana",
               "Manacor",
               "36 (9H)",
-              "Hotel only",
+              "Nur für Hotelgäste",
               "6/10",
               "3.5",
-              "Stay-and-play auf privatem Landgut"
+              "Stay-and-Play, privates Anwesen"
             ]
           ]
         },
         {
-          "text": "Möchten Sie alle 24 Plätze auf einer Seite direkt vergleichen? Laden Sie die kostenlose Vergleichsübersicht herunter.",
-          "linkLabel": "Kostenlosen Platzvergleich holen →"
+          "text": "Möchten Sie alle 24 Plätze nebeneinander auf einer Seite vergleichen? Laden Sie die kostenlose Platz-Vergleichstabelle herunter.",
+          "linkLabel": "Den kostenlosen Platzvergleich holen →"
         },
         {
-          "text": "Die Top-Plätze nach Einsatzbereich"
+          "text": "Die Top-Plätze - nach Zweck"
         },
         {
           "text": "Für eine ernsthafte Championship-Runde: Son Gual"
         },
         {
-          "caption": "Son Gual - der vollständigste Test auf der Insel"
+          "alt": "Golfplatz Son Gual",
+          "caption": "Son Gual - der Championship-Testplatz"
         },
         {
-          "text": "Mein meistgespielter Platz auf Mallorca und der, den ich am konsequentesten empfehle, wenn jemand eine richtige Prüfung will. Das Design von Thomas Himmel nutzt Wind, Höhenunterschiede und Positionierung sehr intelligent. Wenn Ihr Spiel halbwegs in Ordnung ist und Sie einen Platz wollen, der ernst genommen werden will, ist das hier die erste Adresse."
+          "text": "Mein meistgespielter Platz der Insel und der, den ich am häufigsten für einen echten Test empfehle. Thomas Himmels Design liegt in seinem eigenen Windökosystem in den Hügeln über Palma - ich bin schon voller Zuversicht an einem windstillen Morgen von zu Hause losgefahren und kam am ersten Abschlag an, wo es kräftig blies und die ganze Runde über so blieb. Die Grüns sind schnell, erhöht und gnadenlos. Die Bunkerung ist aggressiv und verlangt Strategie und Ballkontrolle auf Top-Niveau, und der Schlussabschnitt ist wirklich herausragend."
         },
         {
-          "text": "Rafa Nadal nennt ihn seinen Lieblingsplatz der Insel. Barack Obama spielte hier im November 2024. Greenfees liegen je nach Saison bei etwa €115-165."
+          "text": "Rafa Nadal spielt hier regelmäßig und hat gesagt, es sei sein Lieblingsplatz auf der Insel. Barack Obama spielte im November 2024 hier und war so begeistert, dass er versprach wiederzukommen. Auch viele hochkarätige Amateur- und Profi-Turniere werden auf diesem beliebten Platz ausgetragen."
         },
         {
-          "text": "Für die landschaftlich stärkste Runde: Alcanada"
+          "text": "Für die landschaftlich schönste Runde: Alcanada"
         },
         {
-          "alt": "Alcanada lighthouse view",
-          "caption": "Alcanada - Leuchtturm, Meer und ein echter Turnierplatz"
+          "alt": "Golfplatz Alcanada",
+          "caption": "Alcanada - der landschaftlich schönste Platz"
         },
         {
-          "text": "Robert Trent Jones Jr. im Norden der Insel, mit dem Leuchtturm auf seiner kleinen Insel als permanentem Fixpunkt. Von den hinteren Abschlägen und an klaren Morgen ist das eine der eindrucksvollsten Golfkulissen Europas. Dazu kommt ein Platz, der mehr ist als nur schön - die Grüns und die Platzierung verlangen gutes Spiel."
+          "text": "Alcanada ist der Platz, den ich wähle, wenn jemand einen Tag möchte, der ihm in Erinnerung bleibt. Die Aussichten sind von Anfang bis Ende spektakulär, aber das ist nicht nur eine hübsche Runde. Es ist ein ernsthaftes Championship-Layout von Robert Trent Jones Jr. mit schnellen, konturierten Grüns und strategischer Bunkerung, die den ganzen Tag gute Fragen stellt."
         },
         {
-          "text": "Auf den erhöhten hinteren Abschlägen zu stehen, ist ein Erlebnis für sich. Man fühlt sich weit weg von allem, der Leuchtturm steht vor einem, die Bucht zieht sich auf, und der Driver verschwindet gefühlt ins Leere. Genau so fühlt es sich an."
+          "text": "Auf den erhöhten hinteren Abschlägen zu stehen, ist ein Erlebnis für sich. Man fühlt sich unantastbar - so weit weg von allem, dass alle da unten wie winzige Punkte aussehen. Der Leuchtturm vor Ihnen, die Bucht, die sich ausbreitet, und Sie sind dabei, den Driver irgendwo in den Abgrund zu schlagen. Dieses Gefühl."
         },
         {
-          "text": "Für ein DP-World-Tour-Gefühl: Son Muntaner"
+          "text": "Für eine Überraschung an der Ostküste: Capdepera"
         },
         {
-          "text": "Capdepera ist besser, als viele Besucher erwarten. Die Front Nine ist offen und gut spielbar, dann steigt die Back Nine in die Hügel und wird deutlich taktischer. Das Par-3 an der 15 ist eines der besten Löcher der Insel, mit erhöhten Bergblicken, die die Anfahrt schon vor dem letzten Putt lohnend machen."
+          "text": "Capdepera ist besser, als viele Besucher erwarten. Die Front Nine ist offen und gut spielbar, dann steigt die Back Nine in die Hügel und wird zu einem taktischeren Test. Das Par-3 der 15 ist eines der besten Löcher der Insel, mit erhöhten Bergblicken, die die Fahrt schon vor dem Einlochen lohnen."
         },
         {
           "text": "Für ein DP-World-Tour-Erlebnis: Son Muntaner"
         },
         {
-          "alt": "Son Muntaner",
-          "caption": "Son Muntaner - Turnierstandard direkt bei Palma"
+          "alt": "Golfplatz Son Muntaner",
+          "caption": "Son Muntaner - Spaniens bester Golfplatz 2025"
         },
         {
-          "text": "2025 als bester Golfplatz Spaniens ausgezeichnet, technisch stark, in sehr gutem Zustand und für Besucher leicht erreichbar. Wenn jemand etwas Hochwertiges will, aber nicht weit fahren möchte, ist Son Muntaner sehr logisch."
+          "text": "Bei den World Golf Awards 2025 zum besten Golfplatz Spaniens gekürt, und das zu Recht. Austragungsort der Mallorca Golf Open und von Turnieren der Ladies European Tour. Breite Fairways, aber viele Hindernisse und Pinien, die Sie lenken, technisch anspruchsvolle Grüns, fantastische Pflege und ein wirklich guter Golftest."
         },
         {
-          "text": "Für den härtesten Test: Golf de Andratx"
+          "text": "Für die härteste Prüfung: Golf de Andratx"
         },
         {
-          "caption": "Andratx - schwer, anspruchsvoll und nichts für Nachlässigkeit"
+          "alt": "Golf de Andratx",
+          "caption": "Andratx - die härteste Prüfung der Insel"
         },
         {
-          "text": "Weitläufig als einer der schwierigsten Plätze der Insel angesehen. Anspruchsvolles Championship-Layout im Südwesten mit teuren Fehlern, wenn man den Platz nicht respektiert. Wer Golf als Test sucht, bekommt ihn hier."
+          "text": "Weithin als einer der schwierigsten Plätze der Insel angesehen. Ein Championship-Layout im Südwesten mit dramatischen Küstenblicken und Hindernissen auf nahezu jedem Loch. Die 6 ist mit 609 Metern das längste Par 5 ganz Spaniens. Empfohlen für erfahrene Spieler."
         },
         {
-          "text": "Sie denken über Andratx nach? Ich erkläre Layout, Wind, passende Abschläge und ob der Platz wirklich zu Ihrem Spiel passt.",
-          "linkLabel": "Zur Golf-de-Andratx-Bewertung →"
+          "text": "Überlegen Sie Andratx? Ich beschreibe Layout, Wind, die beste Abschlagswahl und ob der Platz zu Ihrem Spiel passt.",
+          "linkLabel": "Die Bewertung von Golf de Andratx lesen →"
         },
         {
-          "text": "Für das schönste Setting: Canyamel"
+          "text": "Für die schönste Kulisse: Canyamel"
         },
         {
-          "alt": "Canyamel Golf",
-          "caption": "Canyamel - Ostküste, Naturpark und starke visuelle Wirkung"
+          "alt": "Golfplatz Canyamel",
+          "caption": "Canyamel - der meistfotografierte Platz"
         },
         {
-          "text": "Am Rand des Llevant-Naturparks mit Meerblick, viel Landschaft und einem Platz, der mehr Charakter hat, als viele außerhalb Mallorcas wissen. Die Fahrt von Palma lohnt sich, wenn man den Tag nicht nur nach Score beurteilt."
+          "text": "Von vielen als der meistfotografierte Platz der Insel beschrieben. Er liegt in den Ausläufern des Naturparks Llevant im Osten, mit Meerblick auf der ganzen Runde. Ein wirklich guter Platz, auch abseits der Optik."
         },
         {
-          "text": "Ebenfalls klar spielenswert: Golf Santa Ponsa 1"
+          "text": "Auch eine Runde wert: Golf Santa Ponsa 1"
         },
         {
-          "alt": "Santa Ponsa 1",
-          "caption": "Santa Ponsa 1 - European-Tour-Geschichte und viel Driver"
+          "alt": "Golfplatz Santa Ponsa 1",
+          "caption": "Santa Ponsa 1 - European-Tour-Geschichte"
         },
         {
-          "text": "Der einzige öffentliche Platz in der Santa-Ponsa-Gruppe, mit echter European-Tour-Historie. Breite Fairways, lange Löcher, und für viele Spieler ein Platz, auf dem sie wieder selbstbewusst zum Driver greifen. Ganz anderer Charakter als Son Gual oder Alcanada, aber eindeutig relevant."
+          "text": "Der einzige öffentliche Platz der Santa-Ponsa-Gruppe, mit echter European-Tour-Geschichte - hier wurde 2021 die European Tour Mallorca Golf Open gespielt, dazu sechs European-Tour-Turniere. Einer der längsten Plätze der Insel, mit offenen Fairways, die einen offensiven Abschlag belohnen, und guten Gelegenheiten, den Driver zu schlagen."
         },
         {
           "text": "Für Anfänger oder gemischte Gruppen: Son Quint oder Son Antem East"
         },
         {
-          "alt": "Son Quint Golf",
-          "caption": "Son Quint - breiter, freundlicher und deutlich verzeihender"
+          "alt": "Golfplatz Son Quint",
+          "caption": "Son Quint - hier spielten Tiger Woods und Charlie 2022"
         },
         {
-          "text": "Wer nicht eine reine Prüfung sucht, sondern einen guten Tag für verschiedene Spielstärken, ist hier besser aufgehoben. Son Quint ist offener und verzeihender. Son Antem East ist ebenfalls angenehm für Gruppen, die nicht jede Runde maximal schwer haben wollen."
+          "text": "Son Quint ist der zugänglichste Platz der Arabella-Gruppe (vier Plätze in einem Komplex) - relativ flach, breite Fairways, heimische Bepflanzung und geringer Einschüchterungsfaktor. Hoch gelegen, bietet er großartige Blicke über Palma. Tiger Woods und sein Sohn Charlie spielten hier im Juli 2022 nach The Open. Son Antem East im Süden ist ähnlich flach und verzeihend, hat aber genug Wasser, Bunker und Bäume, um interessant zu sein, und ein Hotelresort, wenn Sie es mit einer Unterkunft verbinden möchten."
         },
         {
           "items": [
@@ -778,15 +784,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "€55-260",
-              "18-Loch-Spanne"
+              "Preisspanne für 18 Löcher"
             ],
             [
               "300",
-              "Sonnentage pro Jahr"
+              "Sonnentage"
             ],
             [
               "12 Mon.",
-              "Ganzjährig Golf"
+              "Golf das ganze Jahr"
             ]
           ]
         },
@@ -794,38 +800,39 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Prominente Verbindungen, die man kennen sollte"
         },
         {
-          "text": "Son Gual: Obama spielte dort im November 2024, Nadal regelmäßig. Son Quint: Tiger Woods und Charlie spielten dort im Juli 2022. Solche Details sind nicht alles - aber sie sagen etwas über die Qualität und Sichtbarkeit der Plätze aus."
+          "text": "Son Gual: Obama kam und spielte 2024. Son Quint (Arabella): Tiger Woods und sein Sohn Charlie spielten im Juli 2022, in der Woche nach The Open in St Andrews. Pula (Osten): Federer und Nadal spielen zusammen, wenn sie auf der Insel sind, und Nadal ist häufig dort. Son Vida: Seve Ballesteros gewann dort 1990 das European-Tour-Turnier. Santa Ponsa: Austragungsort von sechs European-Tour-Turnieren und allen großen Namen der damaligen Zeit, darunter die spanischen Legenden Seve Ballesteros und José María Olazábal neben Ian Woosnam, Bernhard Langer und anderen."
         },
         {
           "text": "Die ehrliche Zusammenfassung"
         },
         {
-          "text": "Wenn ich für eine einzige Woche auf Mallorca nur zwei Plätze empfehlen dürfte, wären es Son Gual und Alcanada. Son Muntaner für Turnierstandard nahe Palma. Andratx für die härteste Prüfung. Canyamel für Landschaft. Santa Ponsa 1 für Weite, Driver und Tour-Historie. Für Einsteiger oder gemischte Gruppen würde ich deutlich eher Son Quint oder Son Antem East nennen."
+          "text": "Wenn Sie die stärkste Auswahl wollen, beginnen Sie mit Son Gual, Alcanada, Son Muntaner und T Golf Calvià. Nehmen Sie Andratx dazu, wenn Sie die härteste Prüfung wollen, Capdepera für eine unterschätzte Herausforderung an der Ostküste und Son Antem West, wenn Sie ein Resort-Umfeld wollen, das trotzdem richtiges Golf verlangt. Die meisten Besucher spielen ein oder zwei Plätze und übersehen, wie tief die Qualität hier reicht."
         },
         {
-          "text": "Die Insel ist eines der bestgehüteten Golfgeheimnisse Europas. Als ich aus Shanghai kam und die Bedingungen hier im Januar sah, während weite Teile Nordeuropas geschlossen waren, war das für mich sofort klar."
+          "text": "Die Insel war eines der bestgehüteten Golfgeheimnisse Europas. Ich kam aus Shanghai, und die Bedingungen im Januar, wenn Plätze in England geschlossen sind, haben mich wirklich überrascht."
         },
         {
-          "text": "Wollen Sie einen dieser Plätze mit einem PGA-Professional an Ihrer Seite spielen?",
-          "linkLabel": "Golf-Tag mit Pro ansehen →"
+          "text": "Laden Sie die kostenlose Platz-Vergleichstabelle herunter, die alle 24 Plätze Mallorcas nach Greenfees, Schwierigkeit und Eignung vergleicht.",
+          "linkLabel": "Den Platzvergleich herunterladen →"
         },
         {
-          "text": "Möchten Sie daraus einen klar geplanten Golftag machen?",
-          "linkLabel": "Play With A Pro Tag ansehen"
+          "text": "Möchten Sie einen dieser Plätze mit einem PGA Professional an Ihrer Seite spielen?",
+          "linkLabel": "Einen Play-With-A-Pro-Tag auf Mallorca buchen →"
         }
       ]
     },
     "fr": {
       "metadata": {
+        "imageAlt": "Les meilleurs parcours de golf de Majorque - le guide honnête d'un Professionnel PGA (2026)",
         "title": "Les 24 parcours de golf à Majorque 2026",
-        "description": "Les 24 parcours de golf à Majorque classés par un professionnel PGA. Greenfees €55–€260, évaluations de difficulté et verdicts honnêtes. Mis à jour 2026."
+        "description": "Les 24 parcours de Majorque classés par un pro PGA. Green fees €55–€260, difficulté, à qui convient chacun."
       },
       "meta": {
-        "badge": "Guide",
+        "badge": "Guide des parcours",
         "readTime": "8 min de lecture",
         "updated": "Mars 2026",
         "title": "Meilleurs parcours - Classement honnête",
-        "intro": "Vingt-quatre parcours sur l'île. Voilà comment je les prioriserais pour un visiteur avec peu de temps et des attentes élevées.",
+        "intro": "Majorque offre plus de golf d'exception que la plupart des visiteurs ne l'imaginent. Vingt-quatre parcours, plusieurs capables d'accueillir des épreuves du circuit européen. Voici ce que je sais pour les avoir joués.",
         "related": [
           {
             "slug": "son-gual-review",
@@ -847,13 +854,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Majorque est un bien meilleur destination golf que ce que beaucoup imaginent. Si l'on ne regarde que les grands noms du Portugal ou de la Costa del Sol, on passe à côté de la qualité réelle de l'équilibre entre parcours, climat et paysage ici."
+          "text": "Majorque - ou Majorca si vous l'avez toujours écrit ainsi - est une bien meilleure destination de golf que la plupart des gens ne le pensent. Je suis arrivé de Shanghai en mars 2025, où j'avais passé onze ans à coacher dans une ville de 27 millions d'habitants sans assez de parcours de golf. La plupart étaient construits aux normes du championnat, car il n'y avait aucun intérêt à avoir autre chose que le meilleur. Arriver sur une île de 24 parcours, dont 21 ouverts aux visiteurs en green fee, dans des conditions qui restent de qualité même en hiver, a été comme découvrir un secret."
         },
         {
-          "text": "Je suis UK PGA Advanced Professional - l'une des qualifications professionnelles senior dans le golf britannique - et je fais le tour de tous les parcours de l'île. Pas depuis une terrasse comme un blogueur, mais en les jouant, en les comparant et en sachant lesquels je recommanderais vraiment à mes clients. Retrouvez les 24 parcours avec les green fees et les filtres sur la <a href='/fr/golf-courses'>page des parcours de golf de Majorque</a>."
+          "text": "Je suis PGA Advanced Professional et je parcours tous les parcours de l'île : je les joue, je les évalue honnêtement, je cherche ce qui rend chacun digne du voyage et j'emmène aussi mes invités pour qu'ils apprennent. Vous pouvez également consulter les 24 parcours avec green fees et filtres sur la page des <a href='/golf-courses'>parcours de golf de Majorque</a>. Voici ce que je sais jusqu'ici."
         },
         {
-          "text": "Les meilleurs parcours selon l'objectif"
+          "text": "Les 24 parcours de golf de Majorque : référence rapide"
         },
         {
           "headers": [
@@ -873,7 +880,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-165",
               "9/10",
               "5.0",
-              "Vraie partie championship"
+              "Une vraie partie de championnat"
             ],
             [
               "Club de Golf Alcanada",
@@ -882,7 +889,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-230",
               "7/10",
               "5.0",
-              "Vues spectaculaires et qualité tournoi"
+              "Vues spectaculaires, qualité championnat"
             ],
             [
               "Son Muntaner",
@@ -891,7 +898,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€125-260",
               "7/10",
               "4.5",
-              "État de jeu exceptionnel, proche de Palma"
+              "Le mieux entretenu, proche de Palma"
             ],
             [
               "T Golf Calvià",
@@ -900,7 +907,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€170-210",
               "7/10",
               "5.0",
-              "Expérience premium très complète"
+              "Expérience premium complète"
             ],
             [
               "Golf de Andratx",
@@ -909,7 +916,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "9/10",
               "4.0",
-              "Le test le plus dur de l île"
+              "Le test le plus dur de l'île"
             ],
             [
               "Golf Son Vida",
@@ -918,7 +925,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-190",
               "8/10",
               "4.5",
-              "Parcours historique, victoire de Seve ici"
+              "Parcours historique, Seve y a gagné"
             ],
             [
               "T Golf Palma (Puntiro)",
@@ -927,7 +934,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€100-140",
               "7/10",
               "4.5",
-              "Seul dessin Nicklaus de l île"
+              "Seul tracé de Nicklaus de l'île"
             ],
             [
               "Golf Santa Ponsa 1",
@@ -936,25 +943,25 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€77-126",
               "8/10",
               "4.0",
-              "Site European Tour accessible au public"
+              "Site du circuit européen, accès public"
             ],
             [
               "Golf Santa Ponsa 2",
               "Santa Ponsa",
               "72",
-              "Private access",
+              "Membres uniquement · invité avec un membre",
               "7/10",
               "3.5",
-              "Ambiance calme, esprit membres"
+              "Calme, ambiance de club privé"
             ],
             [
               "Golf Santa Ponsa 3",
               "Santa Ponsa",
               "30 (9H)",
-              "Private access",
+              "Membres uniquement · invité avec un membre",
               "4/10",
               "3.0",
-              "Débutants et petit jeu"
+              "Débutants, entraînement aux approches"
             ],
             [
               "Golf Son Quint",
@@ -963,7 +970,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€70-140",
               "5/10",
               "4.0",
-              "Tous niveaux, Tiger y a joue"
+              "Tous niveaux, Tiger Woods y a joué"
             ],
             [
               "Real Golf de Bendinat",
@@ -972,7 +979,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€74-123",
               "6/10",
               "3.5",
-              "Vallée boisee avec vues sur la baie"
+              "Vallée boisée, vue sur la baie"
             ],
             [
               "Golf Son Termes",
@@ -981,7 +988,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-110",
               "6/10",
               "3.5",
-              "Cadre Tramuntana"
+              "Cadre de montagne de la Tramuntana"
             ],
             [
               "Golf Son Antem West",
@@ -990,7 +997,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-135",
               "7/10",
               "4.0",
-              "Resort plus exigeant que Son Antem East"
+              "Parcours de resort, plus dur que Son Antem East"
             ],
             [
               "Golf Son Antem East",
@@ -1008,7 +1015,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€91-110",
               "7/10",
               "3.5",
-              "Option sous-estimee et plus calme"
+              "Sous-estimé, option plus calme"
             ],
             [
               "Pula Golf",
@@ -1017,7 +1024,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-145",
               "7/10",
               "4.0",
-              "Redesign Olazabal, 8 événements du Tour"
+              "Redessiné par Olazábal, 8 tournois du Tour"
             ],
             [
               "Golf Club Son Servera",
@@ -1026,7 +1033,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-165",
               "6/10",
               "4.0",
-              "Parkland détendu, historique"
+              "Parkland décontracté, historique"
             ],
             [
               "Vall d'Or Golf",
@@ -1035,7 +1042,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€99-132",
               "6/10",
               "3.5",
-              "Vues côté est et très bonne back nine"
+              "Vues sur la côte est, belle seconde partie"
             ],
             [
               "Capdepera Golf",
@@ -1044,7 +1051,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-135",
               "7/10",
               "3.5",
-              "Belle back nine et trou de montagne marquant"
+              "Belle seconde partie et un trou de montagne remarquable"
             ],
             [
               "Canyamel Golf",
@@ -1053,7 +1060,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-145",
               "6/10",
               "4.0",
-              "Le plus photographie de la côté est"
+              "Le plus photographié, côte est"
             ],
             [
               "Golf Pollensa",
@@ -1062,118 +1069,120 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€65-75",
               "4/10",
               "3.5",
-              "Parfait pour se chauffer, vues Tramuntana"
+              "Échauffement facile, vues sur la Tramuntana"
             ],
             [
               "Palma Pitch & Putt",
-              "Son Vida - Palma",
+              "Son Vida · Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
               "3.0",
-              "Débutants et travail d approches"
+              "Débutants, entraînement aux approches"
             ],
             [
               "Reserva Rotana",
               "Manacor",
               "36 (9H)",
-              "Hotel only",
+              "Clients de l'hôtel uniquement",
               "6/10",
               "3.5",
-              "Séjour golf sur domaine privé"
+              "Séjour et golf, domaine privé"
             ]
           ]
         },
         {
-          "text": "Vous voulez comparer les 24 parcours côté à côté sur une seule page ? Telechargez le tableau comparatif gratuit.",
-          "linkLabel": "Obtenir le comparatif gratuit →"
+          "text": "Vous voulez les 24 parcours comparés côte à côte sur une seule page ? Téléchargez le tableau comparatif des parcours gratuit.",
+          "linkLabel": "Recevoir le comparatif gratuit →"
         },
         {
-          "text": "Les meilleurs parcours selon l usage"
+          "text": "Les meilleurs parcours, selon l'objectif"
         },
         {
-          "text": "Pour une vraie partie championship : Son Gual"
+          "text": "Pour une vraie partie de championnat : Son Gual"
         },
         {
-          "caption": "Son Gual - le test le plus complet de l'île"
+          "alt": "Parcours de golf de Son Gual",
+          "caption": "Son Gual - parcours de championnat"
         },
         {
-          "text": "C'est le parcours que je joue le plus à Majorque et celui que je recommande le plus régulièrement lorsque quelqu'un veut une vraie épreuve. Le dessin de Thomas Himmel exploite très intelligemment le vent, les deniveles et les positions. Si votre jeu tient la route et que vous voulez un parcours sérieux, c'est la première réponse."
+          "text": "Mon parcours le plus joué de l'île et celui que je recommande le plus souvent pour un vrai test. Le tracé de Thomas Himmel vit dans son propre écosystème de vent dans les collines au-dessus de Palma : je suis parti de chez moi, plein de confiance, par un matin calme et je suis arrivé au premier départ pour le trouver en train de souffler fort, et il l'est resté toute la partie. Les greens sont rapides, surélevés et sans pitié. Les bunkers sont agressifs et exigent une stratégie et un jeu de fer de très haut niveau, et la fin du parcours est vraiment remarquable."
         },
         {
-          "text": "Rafa Nadal le cite comme son préfère sur l'île. Barack Obama y a joue en novembre 2024. Les green fees tournent globalement entre 115 et €165 selon la saison."
+          "text": "Rafa Nadal y joue régulièrement et a dit que c'est son parcours préféré de l'île. Barack Obama y a joué en novembre 2024 et l'a tellement apprécié qu'il a promis d'y revenir. De nombreux grands tournois amateurs et professionnels s'y tiennent aussi."
         },
         {
-          "text": "Pour la partie la plus scenique : Alcanada"
+          "text": "Pour la partie la plus pittoresque : Alcanada"
         },
         {
-          "alt": "Alcanada lighthouse view",
-          "caption": "Alcanada - phare, mer et vrai parcours de tournoi"
+          "alt": "Parcours de golf d'Alcanada",
+          "caption": "Alcanada - le parcours le plus pittoresque"
         },
         {
-          "text": "Robert Trent Jones Jr. dans le nord de l'île, avec le phare comme repéré visuel constant. Depuis les tees arrière et par beau temps, c'est l'un des cadres de golf les plus mémorables d'Europe. Et ce n'est pas seulement beau : les greens et les placements demandent du vrai jeu."
+          "text": "Alcanada est le parcours que je choisis quand quelqu'un demande une journée qui lui restera en mémoire. Les vues sont spectaculaires du début à la fin, mais ce n'est pas seulement une jolie partie. C'est un vrai tracé de championnat de Robert Trent Jones Jr. avec des greens rapides et vallonnés et des bunkers stratégiques qui posent de bonnes questions toute la journée."
         },
         {
-          "text": "Se tenir sur les tees surélevés du fond est une expérience en soi. On se sent loin de tout, avec le phare devant, la baie qui s ouvre et un drive lance presque dans le vide. C est exactement cette sensation."
+          "text": "Se tenir sur les départs arrière surélevés est une expérience en soi. On se sent intouchable, si loin de tout que ceux d'en bas ressemblent à de minuscules points. Le phare devant vous, la baie qui s'étend, et vous êtes sur le point de frapper le driver quelque part dans le vide. C'est cette sensation."
         },
         {
-          "text": "Pour une sensation DP World Tour : Son Muntaner"
+          "text": "Pour une surprise sur la côte est : Capdepera"
         },
         {
-          "text": "Capdepera est meilleur que ce que beaucoup de visiteurs imaginent. L aller est ouvert et assez jouable, puis le retour grimpe dans les collines et devient bien plus tactique. Le par 3 du 15 compte parmi les meilleurs trous de l île, avec des vues de montagne en hauteur qui justifient le trajet avant même le dernier putt."
+          "text": "Capdepera est meilleur que ne le pensent beaucoup de visiteurs. L'aller est ouvert et jouable, puis le retour grimpe dans les collines et devient un test plus tactique. Le par 3 du 15 est l'un des meilleurs trous de l'île, avec des vues en hauteur sur la montagne qui justifient le trajet avant même de putter."
         },
         {
           "text": "Pour une expérience DP World Tour : Son Muntaner"
         },
         {
-          "alt": "Son Muntaner",
-          "caption": "Son Muntaner - standard tournoi à quelques minutes de Palma"
+          "alt": "Parcours de golf de Son Muntaner",
+          "caption": "Son Muntaner - meilleur parcours de golf d'Espagne 2025"
         },
         {
-          "text": "Élu meilleur parcours d'Espagne en 2025, techniquement solide, toujours très bien présente et très facile à intégrer dans un séjour à Palma. Si quelqu'un veut du haut niveau sans grand trajet, Son Muntaner est très logique."
+          "text": "Élu meilleur parcours de golf d'Espagne aux World Golf Awards 2025, et bien mérité. A accueilli le Mallorca Golf Open et des épreuves du Ladies European Tour. Des fairways larges, mais beaucoup d'obstacles et de pins pour vous guider, des greens techniquement exigeants, un entretien fantastique et un vrai bon test de golf."
         },
         {
           "text": "Pour le test le plus dur : Golf de Andratx"
         },
         {
-          "caption": "Andratx - dur, exigeant et sans indulgence"
+          "alt": "Golf de Andratx",
+          "caption": "Andratx - le test le plus dur de l'île"
         },
         {
-          "text": "Largement considère comme l'un des parcours les plus difficiles de l'île. Un vrai layout championship dans le sud-ouest, ou les erreurs coûtent cher. Si vous voulez que le golf soit un test, il l'est ici."
+          "text": "Largement considéré comme l'un des parcours les plus difficiles de l'île. Un tracé de championnat au sud-ouest avec des vues côtières spectaculaires et des obstacles sur presque chaque trou. Le 6 est le plus long par 5 de toute l'Espagne avec 609 mètres. Recommandé aux joueurs expérimentés."
         },
         {
-          "text": "Vous pensez à Andratx ? J y explique le trace, le vent, le bon départ et si le parcours correspond réellement à votre jeu.",
-          "linkLabel": "Lire l avis sur Golf de Andratx →"
+          "text": "Vous envisagez Andratx ? Je détaille le tracé, le vent, le meilleur choix de départs et si le parcours convient à votre jeu.",
+          "linkLabel": "Lire l'avis sur Golf de Andratx →"
         },
         {
           "text": "Pour le plus beau cadre : Canyamel"
         },
         {
-          "alt": "Canyamel Golf",
-          "caption": "Canyamel - côté est, parc naturel et vraie présence visuelle"
+          "alt": "Parcours de golf de Canyamel",
+          "caption": "Canyamel - le parcours le plus photographié"
         },
         {
-          "text": "Aux portes du parc naturel de Llevant, avec vue mer et beaucoup de personnalité. Le trajet depuis Palma vaut la peine si vous jugez une journée de golf à autre chose qu'au score."
+          "text": "Décrit par beaucoup comme le parcours le plus photographié de l'île. Situé dans les contreforts du parc naturel du Llevant, à l'est, avec des vues sur la mer tout du long. Un très bon parcours au-delà de l'esthétique."
         },
         {
-          "text": "A jouer aussi clairement : Golf Santa Ponsa 1"
+          "text": "À jouer aussi : Golf Santa Ponsa 1"
         },
         {
-          "alt": "Santa Ponsa 1",
-          "caption": "Santa Ponsa 1 - histoire du Tour et beaucoup de driver"
+          "alt": "Parcours de golf de Santa Ponsa 1",
+          "caption": "Santa Ponsa 1 - histoire du circuit européen"
         },
         {
-          "text": "Seul parcours public du groupe Santa Ponsa, avec une vraie histoire European Tour. De larges fairways, de la longueur, et pour beaucoup de joueurs un parcours qui redonne de la confiance avec le driver. Un style très différent de Son Gual ou Alcanada, mais tout à fait pertinent."
+          "text": "Le seul parcours public du groupe Santa Ponsa, avec une vraie histoire du circuit européen : il a accueilli l'European Tour Mallorca Golf Open 2021 et six épreuves du circuit européen. L'un des plus longs parcours de l'île, avec des fairways ouverts qui récompensent un départ agressif et de bonnes occasions de sortir le driver."
         },
         {
           "text": "Pour les débutants ou les groupes mixtes : Son Quint ou Son Antem East"
         },
         {
-          "alt": "Son Quint Golf",
-          "caption": "Son Quint - plus ouvert, plus simple et plus tolérant"
+          "alt": "Parcours de golf de Son Quint",
+          "caption": "Son Quint - où Tiger Woods et Charlie ont joué en 2022"
         },
         {
-          "text": "Si l'objectif n'est pas une épreuve pure mais une bonne journée pour plusieurs niveaux, ces parcours fonctionnent mieux. Son Quint est plus ouvert et plus tolérant. Son Antem East convient aussi très bien aux groupes qui ne veulent pas une partie maximaliste."
+          "text": "Son Quint est le parcours le plus accessible du groupe Arabella (quatre parcours dans un seul complexe) : relativement plat, fairways larges, plantations locales et faible effet d'intimidation. Perché en hauteur, il offre de belles vues sur Palma. Tiger Woods et son fils Charlie y ont joué en juillet 2022 après The Open. Son Antem East, au sud, est tout aussi plat et indulgent mais avec assez d'eau, de bunkers et d'arbres pour rester intéressant, et un hôtel-resort si vous voulez combiner avec un hébergement."
         },
         {
           "items": [
@@ -1183,54 +1192,55 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "€55-260",
-              "Plage de green fees"
+              "Fourchette de green fee pour 18 trous"
             ],
             [
               "300",
-              "Jours de soleil par an"
+              "Jours de soleil"
             ],
             [
               "12 mois",
-              "Jouable toute l'année"
+              "Golf toute l'année"
             ]
           ]
         },
         {
-          "text": "Connexions connues à retenir"
+          "text": "Liens avec des célébrités à connaître"
         },
         {
-          "text": "Son Gual : Obama y a joue en novembre 2024 et Nadal y joue régulièrement. Son Quint : Tiger Woods et Charlie y ont joue en juillet 2022. Ce n'est pas tout, mais cela dit quelque chose du niveau et de la visibilité de ces parcours."
+          "text": "Son Gual : Obama est venu jouer en 2024. Son Quint (Arabella) : Tiger Woods et son fils Charlie ont joué en juillet 2022, la semaine après The Open à St Andrews. Pula (est) : Federer et Nadal jouent ensemble quand ils sont sur l'île et Nadal y va souvent. Son Vida : Seve Ballesteros y a remporté l'épreuve du circuit européen en 1990. Santa Ponsa : a accueilli six épreuves du circuit européen et tous les grands noms de l'époque, dont les légendes espagnoles Seve Ballesteros et José María Olazábal aux côtés d'Ian Woosnam, Bernhard Langer et d'autres."
         },
         {
-          "text": "Resume honnête"
+          "text": "Le résumé honnête"
         },
         {
-          "text": "Si je ne pouvais recommander que deux parcours pour une semaine à Majorque, ce seraient Son Gual et Alcanada. Son Muntaner pour un standard tournoi près de Palma. Andratx pour le test le plus dur. Canyamel pour le cadre. Santa Ponsa 1 pour l'espace, le driver et l'histoire. Pour les débutants ou groupes mixtes, j'orienterais plutôt vers Son Quint ou Son Antem East."
+          "text": "Si vous voulez la présélection la plus solide, commencez par Son Gual, Alcanada, Son Muntaner et T Golf Calvià. Ajoutez Andratx pour le test le plus dur, Capdepera pour un défi sous-estimé sur la côte est et Son Antem West pour un cadre de resort qui demande tout de même du vrai golf. La plupart des visiteurs jouent un ou deux parcours et passent à côté de la profondeur de la qualité ici."
         },
         {
-          "text": "L'île reste l'un des secrets les mieux gardes du golf européen. En arrivant de Shanghai et en voyant les conditions ici au mois de janvier, alors qu'une grande partie du nord de l'Europe était fermée, cela m'a saute aux yeux."
+          "text": "L'île a été l'un des secrets de golf les mieux gardés d'Europe. Je suis arrivé de Shanghai et l'état des parcours en janvier, quand ceux d'Angleterre sont fermés, m'a vraiment surpris."
+        },
+        {
+          "text": "Téléchargez le tableau comparatif des parcours gratuit, qui compare les 24 parcours de Majorque selon les green fees, la difficulté et le public visé.",
+          "linkLabel": "Télécharger le comparatif des parcours →"
         },
         {
           "text": "Vous voulez jouer l'un de ces parcours avec un professionnel PGA à vos côtés ?",
-          "linkLabel": "Voir l'expérience play-with-a-pro →"
-        },
-        {
-          "text": "Envie de transformer cela en une vraie journée de golf organisée ?",
-          "linkLabel": "Voir la journée Play With A Pro"
+          "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
         }
       ]
     },
     "nl": {
       "metadata": {
+        "imageAlt": "De beste golfbanen op Mallorca - de eerlijke gids van een PGA Professional (2026)",
         "title": "Alle 24 golfbanen op Mallorca 2026",
-        "description": "Alle 24 golfbanen op Mallorca geclassificeerd door een PGA-pro. Greenfees €55–€260, moeilijkheidsgraden en eerlijke reviews. Bijgewerkt 2026."
+        "description": "Alle 24 banen op Mallorca gerangschikt door een PGA-pro. Greenfees €55–€260, moeilijkheid en voor wie elke baan geschikt is."
       },
       "meta": {
-        "badge": "Gids",
+        "badge": "Baangids",
         "readTime": "8 min leestijd",
         "updated": "Maart 2026",
         "title": "De beste golfbanen van Mallorca - eerlijke prioritering",
-        "intro": "Vierentwintig banen op het eiland. Zo zou ik ze prioriteren voor een bezoeker met weinig tijd en hoge verwachtingen.",
+        "intro": "Mallorca heeft meer uitstekend golf dan de meeste bezoekers beseffen. Vierentwintig banen, waarvan meerdere in staat zijn om European Tour-toernooien te organiseren. Dit is wat ik weet doordat ik ze gespeeld heb.",
         "related": [
           {
             "slug": "son-gual-review",
@@ -1252,13 +1262,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Mallorca is een veel betere golfbestemming dan veel mensen denken. Wie alleen naar de grote namen in Portugal of aan de Costa del Sol kijkt, mist hoe sterk de combinatie van baankwaliteit, klimaat en landschap hier werkelijk is."
+          "text": "Mallorca - of Majorca als je het zo hebt leren spellen - is een veel betere golfbestemming dan de meeste mensen beseffen. In maart 2025 verhuisde ik hierheen vanuit Shanghai, waar ik elf jaar had gecoacht in een stad van 27 miljoen mensen met niet genoeg golfbanen. De meeste waren gebouwd volgens kampioenschapsstandaard, omdat het geen zin had om iets te hebben dat niet het beste was. Aankomen op een eiland met 24 banen, waarvan 21 open voor greenfee-bezoekers, in omstandigheden die zelfs in de winter van kwaliteit blijven, voelde als het ontdekken van een geheim."
         },
         {
-          "text": "Ik ben UK PGA Advanced Professional - een van de hogere professionele kwalificaties in het Britse golf - en ik werk me door elke baan op het eiland heen. Niet vanaf een terras als blogger, maar spelend, vergelijkend en met duidelijke meningen over waar ik klanten echt naartoe zou sturen. Bekijk alle 24 banen met greenfees en filters op de <a href='/nl/golf-courses'>Mallorca golfbanen-pagina</a>."
+          "text": "Ik ben PGA Advanced Professional en ik werk me door elke baan op het eiland heen: ze spelen, ze eerlijk beoordelen, uitzoeken wat elke baan de reis waard maakt en mijn gasten meenemen zodat ze ook leren. Je kunt ook alle 24 banen met greenfees en filters bekijken op de pagina <a href='/golf-courses'>golfbanen op Mallorca</a>. Hieronder staat wat ik tot nu toe weet."
         },
         {
-          "text": "De topbanen per doel"
+          "text": "Alle 24 golfbanen op Mallorca: snel overzicht"
         },
         {
           "headers": [
@@ -1278,7 +1288,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-165",
               "9/10",
               "5.0",
-              "Serieuze championship-ronde"
+              "Een serieuze kampioenschapsronde"
             ],
             [
               "Club de Golf Alcanada",
@@ -1287,7 +1297,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-230",
               "7/10",
               "5.0",
-              "Spectaculair uitzicht en toernooikwaliteit"
+              "Spectaculaire uitzichten, kampioenschapskwaliteit"
             ],
             [
               "Son Muntaner",
@@ -1305,7 +1315,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€170-210",
               "7/10",
               "5.0",
-              "Complete premiumervaring"
+              "Premiumervaring voor alle doeleinden"
             ],
             [
               "Golf de Andratx",
@@ -1341,25 +1351,25 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€77-126",
               "8/10",
               "4.0",
-              "European Tour-locatie met publieke toegang"
+              "Locatie van de European Tour, openbaar toegankelijk"
             ],
             [
               "Golf Santa Ponsa 2",
               "Santa Ponsa",
               "72",
-              "Private access",
+              "Alleen leden · gast met lid",
               "7/10",
               "3.5",
-              "Rustig met meer ledengevoel"
+              "Rustig, sfeer van een ledenbaan"
             ],
             [
               "Golf Santa Ponsa 3",
               "Santa Ponsa",
               "30 (9H)",
-              "Private access",
+              "Alleen leden · gast met lid",
               "4/10",
               "3.0",
-              "Beginners en kort spel"
+              "Beginners, approachtraining"
             ],
             [
               "Golf Son Quint",
@@ -1368,7 +1378,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€70-140",
               "5/10",
               "4.0",
-              "Alle niveaus, Tiger speelde hier"
+              "Alle niveaus, Tiger Woods speelde hier"
             ],
             [
               "Real Golf de Bendinat",
@@ -1377,7 +1387,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€74-123",
               "6/10",
               "3.5",
-              "Bosrijke vallei met baaizicht"
+              "Bosrijke vallei, uitzicht op de baai"
             ],
             [
               "Golf Son Termes",
@@ -1386,7 +1396,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-110",
               "6/10",
               "3.5",
-              "Tramuntana-bergsetting"
+              "Bergomgeving van de Tramuntana"
             ],
             [
               "Golf Son Antem West",
@@ -1395,7 +1405,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-135",
               "7/10",
               "4.0",
-              "Resortbaan, taaier dan Son Antem East"
+              "Resortbaan, zwaarder dan Son Antem East"
             ],
             [
               "Golf Son Antem East",
@@ -1404,7 +1414,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "6/10",
               "3.5",
-              "Brede fairways en resortgolf"
+              "Brede fairways, resortgolf"
             ],
             [
               "Golf Maioris",
@@ -1413,7 +1423,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€91-110",
               "7/10",
               "3.5",
-              "Onderrated en rustiger alternatief"
+              "Ondergewaardeerd, rustiger alternatief"
             ],
             [
               "Pula Golf",
@@ -1422,7 +1432,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-145",
               "7/10",
               "4.0",
-              "Olazabal-redesign, 8 Tour-events"
+              "Olazábal-herontwerp, 8 Tour-toernooien"
             ],
             [
               "Golf Club Son Servera",
@@ -1431,7 +1441,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-165",
               "6/10",
               "4.0",
-              "Ontspannen parkland, historisch"
+              "Ontspannen parkbaan, historisch"
             ],
             [
               "Vall d'Or Golf",
@@ -1440,7 +1450,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€99-132",
               "6/10",
               "3.5",
-              "Oostkustuitzicht en sterke back nine"
+              "Uitzicht op de oostkust, sterke back nine"
             ],
             [
               "Capdepera Golf",
@@ -1449,7 +1459,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-135",
               "7/10",
               "3.5",
-              "Sterke back nine en opvallend berghole"
+              "Sterke back nine en een opvallend berghole"
             ],
             [
               "Canyamel Golf",
@@ -1458,7 +1468,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-145",
               "6/10",
               "4.0",
-              "Meest gefotografeerde baan van de oostkust"
+              "Meest gefotografeerd, oostkust"
             ],
             [
               "Golf Pollensa",
@@ -1467,118 +1477,120 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€65-75",
               "4/10",
               "3.5",
-              "Makkelijke opwarmer met Tramuntana-zicht"
+              "Makkelijk inspelen, uitzicht op de Tramuntana"
             ],
             [
               "Palma Pitch & Putt",
-              "Son Vida - Palma",
+              "Son Vida · Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
               "3.0",
-              "Beginners en approach-oefening"
+              "Beginners, approachtraining"
             ],
             [
               "Reserva Rotana",
               "Manacor",
               "36 (9H)",
-              "Hotel only",
+              "Alleen hotelgasten",
               "6/10",
               "3.5",
-              "Stay-and-play op privélandgoed"
+              "Stay-and-play, privélandgoed"
             ]
           ]
         },
         {
-          "text": "Wil je alle 24 banen op een pagina naast elkaar vergelijken? Download dan de gratis vergelijkingskaart.",
-          "linkLabel": "Gratis vergelijking downloaden →"
+          "text": "Wil je alle 24 banen naast elkaar vergeleken op één pagina? Download de gratis banenvergelijking.",
+          "linkLabel": "Ontvang de gratis vergelijking →"
         },
         {
-          "text": "De topbanen per type ronde"
+          "text": "De topbanen - naar doel"
         },
         {
-          "text": "Voor een serieuze championship-ronde: Son Gual"
+          "text": "Voor een serieuze kampioenschapsronde: Son Gual"
         },
         {
-          "caption": "Son Gual - de meest complete test van het eiland"
+          "alt": "Golfbaan Son Gual",
+          "caption": "Son Gual - kampioenschapstestbaan"
         },
         {
-          "text": "Dit is de baan die ik het meest speel op Mallorca en degene die ik het vaakst aanbeveel wanneer iemand een echte test wil. Het ontwerp van Thomas Himmel gebruikt wind, hoogteverschillen en positionering bijzonder slim. Als je spel redelijk op orde is en je een serieuze baan zoekt, begint het gesprek hier."
+          "text": "Mijn meestgespeelde baan op het eiland en degene die ik het vaakst aanraad voor een echte test. Het ontwerp van Thomas Himmel ligt in zijn eigen winden-ecosysteem in de heuvels boven Palma - ik ben vol vertrouwen van huis vertrokken op een windstille ochtend en kwam bij de eerste tee aan om te merken dat het hard waaide en dat de hele ronde bleef doen. De greens zijn snel, verhoogd en meedogenloos. De bunkering is agressief en vraagt om strategie en balcontact op topniveau, en het slotstuk is echt uitstekend."
         },
         {
-          "text": "Rafa Nadal noemt dit zijn favoriete baan van het eiland. Barack Obama speelde hier in november 2024. Greenfees liggen grofweg tussen €115 en €165."
+          "text": "Rafa Nadal speelt hier regelmatig en heeft gezegd dat het zijn favoriete baan op het eiland is. Barack Obama speelde hier in november 2024 en vond het zo geweldig dat hij beloofde terug te komen. Op deze populaire baan worden ook veel topevenementen voor amateurs en professionals gehouden."
         },
         {
-          "text": "Voor de meest scenic ronde: Alcanada"
+          "text": "Voor de mooiste ronde: Alcanada"
         },
         {
-          "alt": "Alcanada lighthouse view",
-          "caption": "Alcanada - vuurtoren, zee en een echte toernooibaan"
+          "alt": "Golfbaan Alcanada",
+          "caption": "Alcanada - de mooiste baan"
         },
         {
-          "text": "Robert Trent Jones Jr. in het noorden van het eiland, met de vuurtoren als vast referentiepunt. Vanaf de back tees en op een heldere ochtend is dit een van de meest memorabele golfsettings van Europa. En het is niet alleen mooi: de greens en plaatsing vragen echt spel."
+          "text": "Alcanada is de baan die ik kies als iemand om een dag vraagt die hem bijblijft. De uitzichten zijn van begin tot eind spectaculair, maar dit is niet zomaar een mooie ronde. Het is een serieuze kampioenschapsbaan van Robert Trent Jones Jr. met snelle, glooiende greens en strategische bunkering die de hele dag goede vragen stelt."
         },
         {
-          "text": "Op de verhoogde back tees staan is een ervaring op zich. Je voelt zich ver van alles, met de vuurtoren voor je, de baai die openvalt en een driver die bijna de leegte in verdwijnt. Dat is precies het gevoel."
+          "text": "Op de verhoogde achterste afslagen staan is een ervaring op zich. Je voelt je onaantastbaar - zo ver van alles dat iedereen beneden eruitziet als een klein stipje. De vuurtoren voor je, de baai die zich uitstrekt, en je staat op het punt de driver ergens de afgrond in te slaan. Dat is het gevoel."
         },
         {
-          "text": "Voor DP World Tour-gevoel: Son Muntaner"
+          "text": "Voor een verrassing aan de oostkust: Capdepera"
         },
         {
-          "text": "Capdepera is beter dan veel bezoekers verwachten. De eerste negen zijn opener en speelbaar, daarna klimt de back nine de heuvels in en wordt de baan tactischer. De par-3 15e is een van de beste holes van het eiland, met verhoogde berguitzichten die de rit al de moeite waard maken voordat je uitputt."
+          "text": "Capdepera is beter dan veel bezoekers verwachten. De front nine is open en goed speelbaar, daarna klimt de back nine de heuvels in en wordt het een tactischere test. De par 3 van de 15 is een van de beste holes van het eiland, met verhoogde bergzichten die de rit de moeite waard maken nog voordat je uitputt."
         },
         {
-          "text": "Voor een DP World Tour-gevoel: Son Muntaner"
+          "text": "Voor een DP World Tour-ervaring: Son Muntaner"
         },
         {
-          "alt": "Son Muntaner",
-          "caption": "Son Muntaner - toernooistandard vlak bij Palma"
+          "alt": "Golfbaan Son Muntaner",
+          "caption": "Son Muntaner - beste golfbaan van Spanje 2025"
         },
         {
-          "text": "In 2025 uitgeroepen tot beste golfbaan van Spanje, technisch sterk, altijd uitstekend gepresenteerd en heel makkelijk in te passen in een verblijf in Palma. Als iemand hoge kwaliteit wil zonder ver te rijden, is Son Muntaner logisch."
+          "text": "Bij de World Golf Awards 2025 uitgeroepen tot beste golfbaan van Spanje, en terecht. Gastheer van de Mallorca Golf Open en evenementen van de Ladies European Tour. Brede fairways, maar veel hindernissen en dennenbomen die je sturen, technisch veeleisende greens, fantastische conditie en een echt goede test van golf."
         },
         {
           "text": "Voor de zwaarste test: Golf de Andratx"
         },
         {
-          "caption": "Andratx - zwaar, veeleisend en niet vergevingsgezind"
+          "alt": "Golf de Andratx",
+          "caption": "Andratx - zwaarste test van het eiland"
         },
         {
-          "text": "Breed gezien als een van de moeilijkste banen van het eiland. Een serieus championship-layout in het zuidwesten, waar fouten duur zijn. Wie golf als test wil, krijgt die hier."
+          "text": "Algemeen beschouwd als een van de moeilijkste banen van het eiland. Een kampioenschapsbaan in het zuidwesten met dramatische kustuitzichten en hindernissen op bijna elke hole. De 6 is met 609 meter de langste par 5 van heel Spanje. Aanbevolen voor ervaren spelers."
         },
         {
-          "text": "Overweeg je Andratx? Ik leg de baan uit, de wind, de beste tee-keuze en of hij echt bij je spel past.",
-          "linkLabel": "Lees de Golf de Andratx-review →"
+          "text": "Overweeg je Andratx? Ik behandel de baan, de wind, de beste afslagkeuze en of het bij jouw spel past.",
+          "linkLabel": "Lees de beoordeling van Golf de Andratx →"
         },
         {
-          "text": "Voor de mooiste setting: Canyamel"
+          "text": "Voor de mooiste omgeving: Canyamel"
         },
         {
-          "alt": "Canyamel Golf",
-          "caption": "Canyamel - oostkust, natuurpark en veel karakter"
+          "alt": "Golfbaan Canyamel",
+          "caption": "Canyamel - meest gefotografeerde baan"
         },
         {
-          "text": "Aan de rand van het natuurpark Llevant, met zeezicht en veel visuele kracht. De rit vanaf Palma is de moeite waard als je een golfdag niet alleen op score beoordeelt."
+          "text": "Door velen beschreven als de meest gefotografeerde baan van het eiland. Gelegen in de uitlopers van het natuurpark Llevant in het oosten, met zeezicht over de hele ronde. Een echt goede baan, ook los van de looks."
         },
         {
-          "text": "Ook duidelijk speelwaardig: Golf Santa Ponsa 1"
+          "text": "Ook de moeite waard: Golf Santa Ponsa 1"
         },
         {
-          "alt": "Santa Ponsa 1",
-          "caption": "Santa Ponsa 1 - Tourgeschiedenis en veel driver"
+          "alt": "Golfbaan Santa Ponsa 1",
+          "caption": "Santa Ponsa 1 - European Tour-geschiedenis"
         },
         {
-          "text": "De enige openbare baan in de Santa Ponsa-groep, met echte European Tour-historie. Brede fairways, lengte, en voor veel spelers een baan waarop het vertrouwen met de driver terugkomt. Heel anders dan Son Gual of Alcanada, maar zeker relevant."
+          "text": "De enige openbare baan van de Santa Ponsa-groep, met echte European Tour-geschiedenis - de baan was gastheer van de European Tour Mallorca Golf Open 2021 en zes European Tour-evenementen. Een van de langste banen van het eiland, met open fairways die een agressieve afslag belonen en goede kansen om de driver te slaan."
         },
         {
           "text": "Voor beginners of gemengde groepen: Son Quint of Son Antem East"
         },
         {
-          "alt": "Son Quint Golf",
-          "caption": "Son Quint - opener, vriendelijker en duidelijk vergevingsgezinder"
+          "alt": "Golfbaan Son Quint",
+          "caption": "Son Quint - waar Tiger Woods en Charlie in 2022 speelden"
         },
         {
-          "text": "Als het niet om een pure test gaat maar om een goede dag voor verschillende niveaus, passen deze banen beter. Son Quint is opener en vriendelijker. Son Antem East werkt ook goed voor groepen die geen maximalistische ronde willen."
+          "text": "Son Quint is de meest toegankelijke baan van de Arabella-groep (vier banen in één complex) - relatief vlak, brede fairways, inheemse beplanting en weinig intimidatie. Hoog gelegen met geweldig uitzicht over Palma. Tiger Woods en zijn zoon Charlie speelden hier in juli 2022 na The Open. Son Antem East in het zuiden is net zo vlak en vergevingsgezind, maar met genoeg water, bunkers en bomen om interessant te blijven, en met een hotelresort als je het met accommodatie wilt combineren."
         },
         {
           "items": [
@@ -1588,54 +1600,55 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "€55-260",
-              "Range van greenfees"
+              "Greenfee-bereik voor 18 holes"
             ],
             [
               "300",
-              "Zonnedagen per jaar"
+              "Dagen zon"
             ],
             [
               "12 mnd",
-              "Het hele jaar speelbaar"
+              "Het hele jaar golf"
             ]
           ]
         },
         {
-          "text": "Bekende connecties die het vermelden waard zijn"
+          "text": "Beroemde connecties die het kennen waard zijn"
         },
         {
-          "text": "Son Gual: Obama speelde er in november 2024 en Nadal komt er regelmatig. Son Quint: Tiger Woods en Charlie speelden er in juli 2022. Dat is niet alles, maar het zegt wel iets over de zichtbaarheid en het niveau van deze banen."
+          "text": "Son Gual: Obama kwam in 2024 spelen. Son Quint (Arabella): Tiger Woods en zijn zoon Charlie speelden in juli 2022, de week na The Open in St Andrews. Pula (oost): Federer en Nadal spelen samen als ze op het eiland zijn en Nadal is er vaak. Son Vida: Seve Ballesteros won daar in 1990 het European Tour-toernooi. Santa Ponsa: gastheer van zes European Tour-toernooien en alle grote namen van die tijd, waaronder de Spaanse legendes Seve Ballesteros en José María Olazábal naast Ian Woosnam, Bernhard Langer en anderen."
         },
         {
-          "text": "Eerlijke samenvatting"
+          "text": "De eerlijke samenvatting"
         },
         {
-          "text": "Als ik voor een week Mallorca maar twee banen mocht adviseren, dan zouden dat Son Gual en Alcanada zijn. Son Muntaner voor toernooistandard dicht bij Palma. Andratx voor de zwaarste test. Canyamel voor landschap. Santa Ponsa 1 voor ruimte, driver en historie. Voor beginners of gemengde groepen zou ik eerder Son Quint of Son Antem East noemen."
+          "text": "Wil je de sterkste shortlist, begin dan met Son Gual, Alcanada, Son Muntaner en T Golf Calvià. Voeg Andratx toe voor de zwaarste test, Capdepera voor een ondergewaardeerde uitdaging aan de oostkust en Son Antem West als je een resortomgeving wilt die toch echt golf vraagt. De meeste bezoekers spelen een of twee banen en missen hoe diep de kwaliteit hier gaat."
         },
         {
-          "text": "Het eiland is een van Europa's best bewaarde golfgeheimen. Toen ik uit Shanghai kwam en in januari zag hoe de banen hier erbij lagen terwijl grote delen van Noord-Europa gesloten waren, was dat direct duidelijk."
+          "text": "Het eiland is een van de best bewaarde golfgeheimen van Europa geweest. Ik kwam uit Shanghai en de omstandigheden in januari, als banen in Engeland gesloten zijn, verrasten me echt."
         },
         {
-          "text": "Wil je een van deze banen spelen met een PGA professional aan je zijde?",
-          "linkLabel": "Bekijk de play-with-a-pro ervaring →"
+          "text": "Download de gratis banenvergelijking waarin alle 24 banen van Mallorca worden vergeleken op greenfees, moeilijkheid en voor wie elke baan geschikt is.",
+          "linkLabel": "Download de banenvergelijking →"
         },
         {
-          "text": "Wil je hier een goed geregelde golfdag van maken?",
-          "linkLabel": "Bekijk de Play With A Pro dag"
+          "text": "Wil je een van deze banen spelen met een PGA-professional aan je zijde?",
+          "linkLabel": "Boek een Play With A Pro-dag op Mallorca →"
         }
       ]
     },
     "sv": {
       "metadata": {
+        "imageAlt": "De bästa golfbanorna på Mallorca - en PGA-professionals ärliga guide (2026)",
         "title": "Alla 24 golfbanor på Mallorca 2026",
-        "description": "Alla 24 golfbanor på Mallorca klassificerade av en PGA-proffs. Greenfees €55–€260, svårighetsgrader och ärliga omdömen. Uppdaterad 2026."
+        "description": "Alla 24 banor på Mallorca rangordnade av en PGA-pro. Greenfees €55–€260, svårighet och vem varje bana passar."
       },
       "meta": {
-        "badge": "Guide",
+        "badge": "Banguide",
         "readTime": "8 min läsning",
         "updated": "Mars 2026",
         "title": "De bästa golfbanorna på Mallorca - ärlig rangordning",
-        "intro": "Tjugofyra banor på ön. Så skulle jag prioritera dem för en besökare med begränsad tid och höga krav.",
+        "intro": "Mallorca har mer enastående golf än de flesta besökare inser. Tjugofyra banor, flera av dem kapabla att arrangera European Tour-tävlingar. Det här är vad jag vet av att ha spelat dem.",
         "related": [
           {
             "slug": "son-gual-review",
@@ -1657,13 +1670,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Mallorca är en mycket bättre golfdestination än många tror. Om man bara tittar på de stora namnen i Portugal eller på Costa del Sol missar man hur stark kombinationen av banstandard, klimat och landskap faktiskt är här."
+          "text": "Mallorca - eller Majorca om du växte upp med att stava det så - är en mycket bättre golfdestination än de flesta inser. Jag flyttade hit från Shanghai i mars 2025, där jag hade tillbringat elva år med att coacha i en stad med 27 miljoner människor och för få golfbanor. De flesta byggdes efter mästerskapsstandard eftersom det inte fanns någon poäng med något som inte var det bästa. Att komma till en ö med 24 banor, 21 av dem öppna för greenfee-besökare, i förhållanden som håller hög kvalitet även genom vintern, kändes som att upptäcka en hemlighet."
         },
         {
-          "text": "Jag är UK PGA Advanced Professional - en av de högre professionella kvalifikationerna inom brittisk golf - och jag arbetar mig igenom varje bana på ön. Inte från en terrass som någon bloggare, utan genom att spela dem, jämföra dem och ha tydliga uppfattningar om vart jag verkligen skulle skicka mina klienter. Se alla 24 banor med greenavgifter och filter på <a href='/sv/golf-courses'>Mallorca golfbanor-sidan</a>."
+          "text": "Jag är PGA Advanced Professional och jobbar mig igenom varje bana på ön: spelar dem, recenserar dem ärligt, tar reda på vad som gör var och en värd resan och tar med mina gäster så att de också lär sig. Du kan också bläddra bland alla 24 banor med greenfees och filter på sidan om <a href='/golf-courses'>golfbanor på Mallorca</a>. Nedan är vad jag vet hittills."
         },
         {
-          "text": "Toppbanorna utifrån syfte"
+          "text": "Alla 24 golfbanor på Mallorca: snabbreferens"
         },
         {
           "headers": [
@@ -1683,7 +1696,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-165",
               "9/10",
               "5.0",
-              "Seriös championship-rond"
+              "Seriös mästerskapsrunda"
             ],
             [
               "Club de Golf Alcanada",
@@ -1692,7 +1705,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-230",
               "7/10",
               "5.0",
-              "Spektakulära vyer och tournament-kvalitet"
+              "Spektakulär utsikt, mästerskapskvalitet"
             ],
             [
               "Son Muntaner",
@@ -1701,7 +1714,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€125-260",
               "7/10",
               "4.5",
-              "Bäst skick, nära Palma"
+              "Bäst skötta, nära Palma"
             ],
             [
               "T Golf Calvià",
@@ -1710,7 +1723,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€170-210",
               "7/10",
               "5.0",
-              "Premiumupplevelse rakt igenom"
+              "Premiumupplevelse på alla sätt"
             ],
             [
               "Golf de Andratx",
@@ -1719,7 +1732,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "9/10",
               "4.0",
-              "Den tuffaste testen på ön"
+              "Öns tuffaste test"
             ],
             [
               "Golf Son Vida",
@@ -1746,25 +1759,25 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€77-126",
               "8/10",
               "4.0",
-              "European Tour-plats med offentlig access"
+              "European Tour-arena, öppen för allmänheten"
             ],
             [
               "Golf Santa Ponsa 2",
               "Santa Ponsa",
               "72",
-              "Private access",
+              "Endast medlemmar · gäst med medlem",
               "7/10",
               "3.5",
-              "Lugn, medlemsbetonad känsla"
+              "Lugnt, känsla av medlemsbana"
             ],
             [
               "Golf Santa Ponsa 3",
               "Santa Ponsa",
               "30 (9H)",
-              "Private access",
+              "Endast medlemmar · gäst med medlem",
               "4/10",
               "3.0",
-              "Nybörjare och närspel"
+              "Nybörjare, närspelsträning"
             ],
             [
               "Golf Son Quint",
@@ -1773,7 +1786,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€70-140",
               "5/10",
               "4.0",
-              "Alla nivåer, Tiger spelade här"
+              "Alla nivåer, Tiger Woods spelade här"
             ],
             [
               "Real Golf de Bendinat",
@@ -1782,7 +1795,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€74-123",
               "6/10",
               "3.5",
-              "Skogsdal med utsikt över bukten"
+              "Skogsklädd dal, utsikt över viken"
             ],
             [
               "Golf Son Termes",
@@ -1791,7 +1804,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-110",
               "6/10",
               "3.5",
-              "Tramuntana-miljö"
+              "Tramuntanas bergsmiljö"
             ],
             [
               "Golf Son Antem West",
@@ -1809,7 +1822,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "6/10",
               "3.5",
-              "Breda fairways och resortgolf"
+              "Breda fairways, resortgolf"
             ],
             [
               "Golf Maioris",
@@ -1818,7 +1831,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€91-110",
               "7/10",
               "3.5",
-              "Underskattat och lugnare alternativ"
+              "Underskattad, lugnare alternativ"
             ],
             [
               "Pula Golf",
@@ -1827,7 +1840,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-145",
               "7/10",
               "4.0",
-              "Olazábal-ombyggnad, 8 Tour-event"
+              "Olazábal-ombyggnad, 8 Tour-tävlingar"
             ],
             [
               "Golf Club Son Servera",
@@ -1836,7 +1849,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-165",
               "6/10",
               "4.0",
-              "Avslappnad parkland, historisk"
+              "Avslappnad parkbana, historisk"
             ],
             [
               "Vall d'Or Golf",
@@ -1845,7 +1858,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€99-132",
               "6/10",
               "3.5",
-              "Ostkustvyer och stark back nine"
+              "Utsikt över östkusten, stark back nine"
             ],
             [
               "Capdepera Golf",
@@ -1854,7 +1867,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-135",
               "7/10",
               "3.5",
-              "Stark back nine och tydligt bergshal"
+              "Stark back nine och ett enastående berghål"
             ],
             [
               "Canyamel Golf",
@@ -1863,7 +1876,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-145",
               "6/10",
               "4.0",
-              "Mest fotograferad på östkusten"
+              "Mest fotograferad, östkusten"
             ],
             [
               "Golf Pollensa",
@@ -1872,118 +1885,120 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€65-75",
               "4/10",
               "3.5",
-              "Enkel uppvärmning med Tramuntana-vyer"
+              "Enkel uppvärmning, utsikt mot Tramuntana"
             ],
             [
               "Palma Pitch & Putt",
-              "Son Vida - Palma",
+              "Son Vida · Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
               "3.0",
-              "Nybörjare och inspelsträning"
+              "Nybörjare, närspelsträning"
             ],
             [
               "Reserva Rotana",
               "Manacor",
               "36 (9H)",
-              "Hotel only",
+              "Endast hotellgäster",
               "6/10",
               "3.5",
-              "Bo-och-spela på privat egendom"
+              "Bo-och-spela, privat gods"
             ]
           ]
         },
         {
-          "text": "Vill du jämföra alla 24 banor sida vid sida på en sida? Ladda ner den kostnadsfria jämförelseguiden.",
+          "text": "Vill du ha alla 24 banor jämförda sida vid sida på en sida? Ladda ner den kostnadsfria banjämförelsen.",
           "linkLabel": "Hämta den kostnadsfria jämförelsen →"
         },
         {
-          "text": "Toppbanorna efter syfte"
+          "text": "De bästa banorna - efter syfte"
         },
         {
-          "text": "För en seriös championship-rond: Son Gual"
+          "text": "För en seriös mästerskapsrunda: Son Gual"
         },
         {
-          "caption": "Son Gual - det mest kompletta testet på ön"
+          "alt": "Golfbanan Son Gual",
+          "caption": "Son Gual - mästerskapsbana"
         },
         {
-          "text": "Det är den bana jag spelar mest på Mallorca och den jag oftast rekommenderar när någon vill ha ett riktigt test. Thomas Himmels design använder vind, höjdskillnader och positionering på ett mycket smart sätt. Om ditt spel är i hyggligt skick och du vill ha en bana som måste respekteras är det här första svaret."
+          "text": "Min mest spelade bana på ön och den jag rekommenderar oftast för ett riktigt test. Thomas Himmels design ligger i sitt eget vindekosystem i kullarna ovanför Palma - jag har åkt hemifrån, full av självförtroende, en lugn morgon och kommit till första tee och funnit att det blåser hårt och fortsätter så hela rundan. Greenerna är snabba, upphöjda och obarmhärtiga. Bunkringen är aggressiv och kräver strategi och bollträff på toppnivå, och avslutningen är verkligen enastående."
         },
         {
-          "text": "Rafa Nadal har kallat den sin favorit på ön. Barack Obama spelade här i november 2024. Greenfeen ligger ungefärligen mellan €115 och €165 beroende på säsong."
+          "text": "Rafa Nadal spelar här regelbundet och har sagt att det är hans favoritbana på ön. Barack Obama spelade här i november 2024 och gillade det så mycket att han lovade att komma tillbaka. Många stora amatör- och proffstävlingar hålls också på den populära banan."
         },
         {
-          "text": "För den mest natursköna ronden: Alcanada"
+          "text": "För den vackraste rundan: Alcanada"
         },
         {
-          "alt": "Alcanada lighthouse view",
-          "caption": "Alcanada - fyr, hav och en riktig tournament-bana"
+          "alt": "Golfbanan Alcanada",
+          "caption": "Alcanada - den vackraste banan"
         },
         {
-          "text": "Robert Trent Jones Jr. i norra delen av ön, med fyren som konstant riktpunkt. Från back tees och under en klar morgon är detta en av Europas mest minnesvärda golfmiljöer. Och den är inte bara vacker: greenerna och placeringen kräver riktigt spel."
+          "text": "Alcanada är banan jag väljer när någon ber om en dag som ska stanna kvar. Utsikten är spektakulär från start till mål, men det här är inte bara en vacker runda. Det är en seriös mästerskapsbana av Robert Trent Jones Jr. med snabba, kuperade greener och strategiska bunkrar som ställer bra frågor hela dagen."
         },
         {
-          "text": "Att stå på de upphöjda bakre tees är en upplevelse i sig. Man känner sig långt ifrån allt, med fyren framför sig, bukten som öppnar upp sig och en driver som försvinner ut i tomheten. Det är precis den känslan."
+          "text": "Att stå på de upphöjda bakre tee-platserna är en upplevelse i sig. Du känner dig oåtkomlig - så långt från allt att alla därnere ser ut som små prickar. Fyren framför dig, viken som breder ut sig, och du är på väg att slå driver någonstans ut i avgrunden. Det är känslan."
         },
         {
-          "text": "För en östkustöverraskning: Capdepera"
+          "text": "För en överraskning på östkusten: Capdepera"
         },
         {
-          "text": "Capdepera är bättre än många besökare förväntar sig. De första nio är öppna och spelbara, sedan klättrar back nine upp i kullarna och blir mer taktisk. Par-3-hålet nummer 15 är ett av de bästa på ön, med upphöjda bergsvyer som gör bilturen värd det redan innan sista putten."
+          "text": "Capdepera är bättre än många besökare väntar sig. Främre nian är öppen och spelbar, sedan klättrar bakre nian upp i kullarna och blir ett mer taktiskt test. Par 3 på 15 är ett av öns bästa hål, med upphöjd bergsutsikt som gör resan värd det redan innan du puttar ut."
         },
         {
           "text": "För en DP World Tour-upplevelse: Son Muntaner"
         },
         {
-          "alt": "Son Muntaner",
-          "caption": "Son Muntaner - tournament-standard nära Palma"
+          "alt": "Golfbanan Son Muntaner",
+          "caption": "Son Muntaner - Spaniens bästa golfbana 2025"
         },
         {
-          "text": "Utsedd till Spaniens bästa golfbana 2025, tekniskt stark, alltid mycket väl presenterad och enkel att lägga in i en vistelse i Palma. Om någon vill ha hög kvalitet utan lång resa är Son Muntaner ett mycket logiskt val."
+          "text": "Utsedd till Spaniens bästa golfbana vid World Golf Awards 2025, och välförtjänt. Har varit värd för Mallorca Golf Open och Ladies European Tour-evenemang. Breda fairways, men många hinder och tallar som guidar dig, tekniskt krävande greener, fantastiskt skick och ett riktigt bra golftest."
         },
         {
-          "text": "För den tuffaste testen: Golf de Andratx"
+          "text": "För det tuffaste testet: Golf de Andratx"
         },
         {
-          "caption": "Andratx - svårt, krävande och inte det minsta förlåtande"
+          "alt": "Golf de Andratx",
+          "caption": "Andratx - öns tuffaste test"
         },
         {
-          "text": "Allmänt betraktad som en av de svåraste banorna på ön. En riktig championship-layout i sydväst där misstag kostar mycket. Vill man ha golf som test får man det här."
+          "text": "Allmänt ansedd som en av öns svåraste banor. En mästerskapsbana i sydväst med dramatisk kustutsikt och hinder på nästan varje hål. Sexan är Spaniens längsta par 5 med 609 meter. Rekommenderas för erfarna spelare."
         },
         {
-          "text": "Funderar du på Andratx? Jag går igenom layouten, vinden, vilken tee som passar och om banan faktiskt passar ditt spel.",
-          "linkLabel": "Läs Golf de Andratx-recensionen →"
+          "text": "Funderar du på Andratx? Jag går igenom banan, vinden, bästa tee-val och om den passar ditt spel.",
+          "linkLabel": "Läs recensionen av Golf de Andratx →"
         },
         {
           "text": "För den vackraste miljön: Canyamel"
         },
         {
-          "alt": "Canyamel Golf",
-          "caption": "Canyamel - östkust, naturpark och tydlig identitet"
+          "alt": "Golfbanan Canyamel",
+          "caption": "Canyamel - mest fotograferade banan"
         },
         {
-          "text": "Vid kanten av Llevant naturpark, med havsutsikt och mycket närvaro. Bilturen från Palma är värd det om man värderar en golfdag på mer än bara scoren."
+          "text": "Beskrivs av många som öns mest fotograferade bana. Ligger i foten av Llevants naturpark i öster, med havsutsikt hela vägen. En verkligt bra bana även bortom utseendet."
         },
         {
-          "text": "Också tydligt värt att spela: Golf Santa Ponsa 1"
+          "text": "Också värd en runda: Golf Santa Ponsa 1"
         },
         {
-          "alt": "Santa Ponsa 1",
-          "caption": "Santa Ponsa 1 - Tourhistoria och mycket driver"
+          "alt": "Golfbanan Santa Ponsa 1",
+          "caption": "Santa Ponsa 1 - European Tour-historia"
         },
         {
-          "text": "Den enda offentliga banan i Santa Ponsa-gruppen, med riktig European Tour-historia. Breda fairways, längd och för många spelare en bana som ger tillbaka självförtroendet med driver. Helt annan karaktär än Son Gual och Alcanada, men klart relevant."
+          "text": "Den enda offentliga banan i Santa Ponsa-gruppen, med genuin European Tour-historia - den var värd för European Tour Mallorca Golf Open 2021 och sex European Tour-evenemang. En av öns längsta banor, med öppna fairways som belönar ett offensivt utslag och goda chanser att slå driver."
         },
         {
           "text": "För nybörjare eller blandade grupper: Son Quint eller Son Antem East"
         },
         {
-          "alt": "Son Quint Golf",
-          "caption": "Son Quint - öppnare, vänligare och mycket mer förlåtande"
+          "alt": "Golfbanan Son Quint",
+          "caption": "Son Quint - där Tiger Woods och Charlie spelade 2022"
         },
         {
-          "text": "Om man inte vill ha ett rent test utan en bra dag för olika nivåer passar de här banorna bättre. Son Quint är öppnare och snällare. Son Antem East fungerar också bra för grupper som inte vill att allt ska vara maximalt."
+          "text": "Son Quint är den mest tillgängliga banan i Arabella-gruppen (fyra banor i ett komplex) - relativt platt, breda fairways, inhemsk växtlighet och låg skrämselfaktor. Högt belägen med fin utsikt över Palma. Tiger Woods och hans son Charlie spelade här i juli 2022 efter The Open. Son Antem East i söder är lika platt och förlåtande men med lagom mycket vatten, bunkrar och träd för att vara intressant, och med ett hotellresort om du vill kombinera med boende."
         },
         {
           "items": [
@@ -1993,54 +2008,55 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
             ],
             [
               "€55-260",
-              "Greenfee-spann"
+              "Greenfee-spann för 18 hål"
             ],
             [
               "300",
-              "Soldagar per år"
+              "Soldagar"
             ],
             [
-              "12 man",
-              "Spelbart året runt"
+              "12 mån",
+              "Golf året runt"
             ]
           ]
         },
         {
-          "text": "Kända kopplingar värt att känna till"
+          "text": "Kändisanknytningar värda att känna till"
         },
         {
-          "text": "Son Gual: Obama spelade där i november 2024 och Nadal spelar där regelbundet. Son Quint: Tiger Woods och Charlie spelade där i juli 2022. Det är inte allt, men det säger något om synligheten och kvaliteten hos de banorna."
+          "text": "Son Gual: Obama kom och spelade 2024. Son Quint (Arabella): Tiger Woods och hans son Charlie spelade i juli 2022, veckan efter The Open i St Andrews. Pula (öster): Federer och Nadal spelar tillsammans när de är på ön och Nadal är där ofta. Son Vida: Seve Ballesteros vann European Tour-tävlingen där 1990. Santa Ponsa: värd för sex European Tour-tävlingar och alla stora namn från den tiden, inklusive de spanska legenderna Seve Ballesteros och José María Olazábal tillsammans med Ian Woosnam, Bernhard Langer och fler."
         },
         {
-          "text": "Ärlig sammanfattning"
+          "text": "Den ärliga sammanfattningen"
         },
         {
-          "text": "Om jag bara fick rekommendera två banor för en vecka på Mallorca skulle det vara Son Gual och Alcanada. Son Muntaner för tävlingskänsla nära Palma. Andratx för det tuffaste testet. Canyamel för landskapet. Santa Ponsa 1 för bredd, driver och historia. För nybörjare eller blandade grupper skulle jag hellre nämna Son Quint eller Son Antem East."
+          "text": "Vill du ha den starkaste kortlistan, börja med Son Gual, Alcanada, Son Muntaner och T Golf Calvià. Lägg till Andratx för det tuffaste testet, Capdepera för en underskattad utmaning på östkusten och Son Antem West om du vill ha en resortmiljö som ändå kräver riktig golf. De flesta besökare spelar en eller två banor och missar hur djup kvaliteten är här."
         },
         {
-          "text": "Ön är en av Europas bäst bevarade golfhemligheter. När jag kom från Shanghai och såg hur förhållandena här var i januari medan stora delar av Nordeuropa var stängt blev det omedelbart tydligt för mig."
+          "text": "Ön har varit en av Europas bäst bevarade golfhemligheter. Jag kom från Shanghai och förhållandena i januari, när banor i England är stängda, förvånade mig verkligen."
         },
         {
-          "text": "Vill du spela en av dessa banor med ett PGA-proffs vid din sida?",
-          "linkLabel": "Se play-with-a-pro upplevelsen →"
+          "text": "Ladda ner den kostnadsfria banjämförelsen som jämför alla 24 banor på Mallorca på greenfees, svårighet och vem var och en passar.",
+          "linkLabel": "Ladda ner banjämförelsen →"
         },
         {
-          "text": "Vill du göra detta till en tydligt planerad golfdag?",
-          "linkLabel": "Se Play With A Pro-dagen"
+          "text": "Vill du spela en av de här banorna med en PGA-professional vid din sida?",
+          "linkLabel": "Boka en Play With A Pro-dag på Mallorca →"
         }
       ]
     },
     "zh": {
       "metadata": {
+        "imageAlt": "马略卡最佳高尔夫球场 - PGA 职业教练的诚实指南（2026）",
         "title": "马略卡全部24座高尔夫球场 2026",
-        "description": "由PGA职业教练排名的马略卡全部24座高尔夫球场。绿费€55-€260、难度和诚实评价。2026年更新。"
+        "description": "PGA 职业教练为马略卡全部 24 座球场排名。果岭费 €55–€260、难度，以及每座球场适合谁。"
       },
       "meta": {
-        "badge": "指南",
+        "badge": "球场指南",
         "readTime": "8分钟阅读",
         "updated": "2026年3月",
         "title": "马略卡最佳高尔夫球场：职业视角的诚实排序",
-        "intro": "岛上有24座球场。如果你来这里时间有限、标准不低，我会这样排优先级。",
+        "intro": "马略卡拥有的杰出高尔夫，比大多数游客意识到的要多。二十四座球场，其中几座有能力承办欧巡赛。这是我亲自打过之后的了解。",
         "related": [
           {
             "slug": "son-gual-review",
@@ -2062,13 +2078,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "马略卡作为高尔夫目的地，比很多人想象中更强。如果你只盯着葡萄牙或太阳海岸那些更知名的名字，就会低估这里在球场质量、气候和景观之间的整体平衡。"
+          "text": "马略卡，或者说如果你从小就这样拼写的 Majorca，是一个比大多数人想象的好得多的高尔夫目的地。2025 年 3 月，我从上海搬到这里。在那里的十一年，我一直在一座拥有 2700 万人口、球场却不够用的城市里执教。那里的球场大多按锦标赛标准建造，因为不是最好的就没有存在的意义。来到一座有 24 座球场的岛上，其中 21 座对果岭费访客开放，球场状态即使在冬天也依然出色，感觉就像发现了一个秘密。"
         },
         {
-          "text": "我叫安迪教练，在上海执教了11年，现在长期在马略卡生活和下场。我也是UK PGA Advanced Professional（英国高尔夫较高等级的职业资格之一）。我看这些球场，不是站在会所露台上写旅游感想，而是真正去打、去比较、去判断哪些场我愿意推荐给客户。全部24个球场的球场费和筛选功能，可以在<a href='/zh/golf-courses'>马略卡高尔夫球场页面</a>查看。"
+          "text": "我是 PGA 高级职业教练，正在把岛上的每一座球场都打一遍：亲自打球、诚实评测、弄清楚每座球场为什么值得专程前往，也带着我的客人一起去学习。你也可以在<a href='/golf-courses'>马略卡高尔夫球场</a>页面浏览全部 24 座球场的果岭费并使用筛选功能。以下是我目前所了解的。"
         },
         {
-          "text": "按目的来排的顶级球场"
+          "text": "马略卡全部 24 座高尔夫球场：快速参考"
         },
         {
           "headers": [
@@ -2088,7 +2104,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-165",
               "9/10",
               "5.0",
-              "真正像样的硬仗"
+              "认真的锦标赛级一轮"
             ],
             [
               "Club de Golf Alcanada",
@@ -2097,7 +2113,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€115-230",
               "7/10",
               "5.0",
-              "风景最强且具比赛品质"
+              "壮观景色，锦标赛品质"
             ],
             [
               "Son Muntaner",
@@ -2106,16 +2122,16 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€125-260",
               "7/10",
               "4.5",
-              "保养最好，离Palma近"
+              "养护最好，靠近帕尔马"
             ],
             [
-              "T Golf Calvia",
-              "Calvia",
+              "T Golf Calvià",
+              "Calvià",
               "72",
               "€170-210",
               "7/10",
               "5.0",
-              "整体非常完整的高端体验"
+              "全面的高端体验"
             ],
             [
               "Golf de Andratx",
@@ -2124,7 +2140,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "9/10",
               "4.0",
-              "岛上最硬的测试"
+              "岛上最难的考验"
             ],
             [
               "Golf Son Vida",
@@ -2133,7 +2149,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-190",
               "8/10",
               "4.5",
-              "有历史，也有Seve赢过的故事"
+              "历史名场，塞维曾在此夺冠"
             ],
             [
               "T Golf Palma (Puntiro)",
@@ -2142,7 +2158,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€100-140",
               "7/10",
               "4.5",
-              "岛上唯一的Nicklaus设计"
+              "岛上唯一的尼克劳斯设计"
             ],
             [
               "Golf Santa Ponsa 1",
@@ -2151,25 +2167,25 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€77-126",
               "8/10",
               "4.0",
-              "公开可打的European Tour场地感"
+              "欧巡赛场地，对公众开放"
             ],
             [
               "Golf Santa Ponsa 2",
               "Santa Ponsa",
               "72",
-              "Private access",
+              "仅限会员 · 会员带客",
               "7/10",
               "3.5",
-              "安静，会员氛围更强"
+              "安静，有会员球场的氛围"
             ],
             [
               "Golf Santa Ponsa 3",
               "Santa Ponsa",
               "30 (9H)",
-              "Private access",
+              "仅限会员 · 会员带客",
               "4/10",
               "3.0",
-              "初学者和短杆练习"
+              "初学者，近距离切球练习"
             ],
             [
               "Golf Son Quint",
@@ -2178,7 +2194,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€70-140",
               "5/10",
               "4.0",
-              "各种水平都能打，Tiger来过"
+              "各水平球手，老虎伍兹曾在此打球"
             ],
             [
               "Real Golf de Bendinat",
@@ -2187,7 +2203,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€74-123",
               "6/10",
               "3.5",
-              "林地山谷，带海湾视野"
+              "树林山谷，海湾景色"
             ],
             [
               "Golf Son Termes",
@@ -2196,7 +2212,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-110",
               "6/10",
               "3.5",
-              "Tramuntana山景环境"
+              "特拉蒙塔纳山景"
             ],
             [
               "Golf Son Antem West",
@@ -2205,7 +2221,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-135",
               "7/10",
               "4.0",
-              "度假型球场，但比Son Antem East更硬"
+              "度假村球场，比 Son Antem East 更难"
             ],
             [
               "Golf Son Antem East",
@@ -2214,7 +2230,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€90-140",
               "6/10",
               "3.5",
-              "宽球道，典型resort golf"
+              "宽阔球道，度假村式高尔夫"
             ],
             [
               "Golf Maioris",
@@ -2223,7 +2239,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€91-110",
               "7/10",
               "3.5",
-              "被低估、更安静的选择"
+              "被低估，更安静的选择"
             ],
             [
               "Pula Golf",
@@ -2232,7 +2248,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-145",
               "7/10",
               "4.0",
-              "Olazabal改造，办过8场巡回赛"
+              "奥拉萨巴尔重新设计，承办过 8 场巡回赛"
             ],
             [
               "Golf Club Son Servera",
@@ -2241,7 +2257,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€80-165",
               "6/10",
               "4.0",
-              "放松型parkland，也有历史"
+              "轻松的公园式球场，历史悠久"
             ],
             [
               "Vall d'Or Golf",
@@ -2250,7 +2266,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€99-132",
               "6/10",
               "3.5",
-              "东海岸视野和很强的后九洞"
+              "东海岸景色，后九洞出色"
             ],
             [
               "Capdepera Golf",
@@ -2259,7 +2275,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-135",
               "7/10",
               "3.5",
-              "后九洞很强，还有标志性山景洞"
+              "后九洞出色，山地球洞令人难忘"
             ],
             [
               "Canyamel Golf",
@@ -2268,7 +2284,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€85-145",
               "6/10",
               "4.0",
-              "东海岸最上镜的球场"
+              "最上镜，东海岸"
             ],
             [
               "Golf Pollensa",
@@ -2277,161 +2293,163 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "€65-75",
               "4/10",
               "3.5",
-              "轻松热身，Tramuntana风景"
+              "轻松热身，特拉蒙塔纳山景"
             ],
             [
               "Palma Pitch & Putt",
-              "Son Vida - Palma",
+              "Son Vida · Palma",
               "27 (9H)",
               "€27-30",
               "2/10",
               "3.0",
-              "初学者和切推练习"
+              "初学者，近距离切球练习"
             ],
             [
               "Reserva Rotana",
               "Manacor",
               "36 (9H)",
-              "Hotel only",
+              "仅限酒店住客",
               "6/10",
               "3.5",
-              "私家庄园里的stay-and-play"
+              "住宿加打球，私人庄园"
             ]
           ]
         },
         {
-          "text": "想把24座球场放在一页里直接横向比较？可以下载免费的球场对比表。",
-          "linkLabel": "获取免费对比表 →"
+          "text": "想把 24 座球场放在一页上并排比较吗？下载免费的球场对比表。",
+          "linkLabel": "获取免费球场对比 →"
         },
         {
-          "text": "按用途来看的顶级球场"
+          "text": "各用途下的顶级球场"
         },
         {
-          "text": "如果你想打一轮真正像样的硬仗：Son Gual"
+          "text": "想打认真的锦标赛级一轮：Son Gual"
         },
         {
-          "caption": "Son Gual，是岛上最完整也最像样的测试"
+          "alt": "Son Gual 高尔夫球场",
+          "caption": "Son Gual - 锦标赛级考验球场"
         },
         {
-          "text": "这是我在马略卡打得最多的球场，也是客户问我“如果只能选一场认真打，选哪里”时，我最常给出的答案。Thomas Himmel的设计把风、地形起伏和落点位置利用得非常聪明。如果你的球技还算在线，又想打一场真正要动脑子的球，这里是第一选择。"
+          "text": "这是我在岛上打得最多的球场，也是我最常推荐给想要真正考验的人的那一座。Thomas Himmel 的设计处在帕尔马上方山丘里自成一体的风场中：我曾在一个无风的早晨信心满满地从家里出发，到了第一洞发球台才发现风刮得很大，而且整轮都是这样。果岭又快、又高、毫不留情。沙坑设置很有攻击性，要求战略和击球都要达到顶级水平，收尾几洞更是真正出色。"
         },
         {
-          "text": "Rafa Nadal说这是他在岛上最喜欢的球场。Barack Obama也在2024年11月来这里打过。果岭费通常在€115到€165之间。"
+          "text": "Rafa Nadal 经常来这里打球，并说这是他在岛上最喜欢的球场。Barack Obama 在 2024 年 11 月来这里打过球，非常喜欢，还承诺会再来。很多顶级业余和职业赛事也在这座热门球场举办。"
         },
         {
-          "text": "如果你想打一轮风景最强的球：Alcanada"
+          "text": "想打风景最美的一轮：Alcanada"
         },
         {
-          "alt": "Alcanada lighthouse view",
-          "caption": "Alcanada，灯塔、海景和真正的比赛级球场放在一起"
+          "alt": "Alcanada 高尔夫球场",
+          "caption": "Alcanada - 风景最美的球场"
         },
         {
-          "text": "Robert Trent Jones Jr.在岛北的作品，灯塔几乎像固定背景一样一直陪着你。从后发球台往外看，在天色清透的早晨，这就是欧洲最难忘的高尔夫景观之一。而且它不是只有风景，果岭和落点要求都很认真。"
+          "text": "当有人想要一天难忘的经历时，我会选择 Alcanada。从头到尾景色都壮观，但这不只是一轮好看的球。这是一座由 Robert Trent Jones Jr. 设计的严肃锦标赛球场，果岭快而有起伏，沙坑布置讲究策略，整天都在提出好问题。"
         },
         {
-          "text": "站在高起的后发球台上，本身就是一种体验。你会觉得自己离其他一切都很远，前面是灯塔，海湾在眼前铺开，而driver像是要直接打进远处的空旷里。那种感觉就是它的魅力。"
+          "text": "站在抬高的后发球台上本身就是一种体验。你会觉得自己无人能及，离一切那么远，下面的人都像小点。眼前是灯塔，海湾向远处铺开，而你正要把一号木打向深渊的某处。那就是那种感觉。"
         },
         {
-          "text": "如果你想要DP World Tour那种感觉：Son Muntaner"
+          "text": "想要东海岸的惊喜：Capdepera"
         },
         {
-          "text": "Capdepera比很多访客预想的更好。前九洞更开阔、更好上手，后九洞则爬进山里，变得更有策略性。15号洞那个三杆洞是全岛最好的洞之一，高处的山景会让你在最后一推之前就觉得这趟车程值得。"
+          "text": "Capdepera 比许多游客预期的要好。前九洞开阔好打，后九洞则爬入山丘，变成更讲究战术的考验。第 15 洞的 3 杆洞是岛上最好的球洞之一，高处的山景让这趟车程在推杆之前就已经值得。"
         },
         {
-          "text": "如果你想要DP World Tour那种比赛感：Son Muntaner"
+          "text": "想要 DP World Tour 体验：Son Muntaner"
         },
         {
-          "alt": "Son Muntaner",
-          "caption": "Son Muntaner，离Palma很近，但标准是比赛级的"
+          "alt": "Son Muntaner 高尔夫球场",
+          "caption": "Son Muntaner - 2025 年西班牙最佳高尔夫球场"
         },
         {
-          "text": "2025年拿到西班牙最佳球场，技术上扎实，维护稳定，而且离Palma很近。如果有人住在Palma、又想打高水准球场但不想跑太远，Son Muntaner非常合理。"
+          "text": "在 2025 年世界高尔夫奖中被评为西班牙最佳高尔夫球场，实至名归。曾承办马略卡高尔夫公开赛和女子欧巡赛。球道宽阔，但有很多障碍和松树为你指引，果岭技术要求高，养护出色，是一场真正出色的高尔夫考验。"
         },
         {
-          "text": "如果你想找最硬的考试：Golf de Andratx"
+          "text": "想要最难的考验：Golf de Andratx"
         },
         {
-          "caption": "Andratx，难、硬，而且不怎么原谅失误"
+          "alt": "Golf de Andratx",
+          "caption": "Andratx - 岛上最难的考验"
         },
         {
-          "text": "普遍被认为是岛上最难的球场之一。西南部的比赛级布局，失误代价很高。如果你要的是“高尔夫作为考试”，这里就是那个场。"
+          "text": "被广泛认为是岛上最难的球场之一。这是西南部的锦标赛球场，拥有壮观的海岸景色，几乎每个球洞都有障碍。第 6 洞长 609 米，是整个西班牙最长的 5 杆洞。推荐给有经验的球手。"
         },
         {
-          "text": "如果你正在考虑Andratx，我在详细评测里会讲清楚它的布局、风、该打哪组发球台，以及它到底适不适合你的球。",
+          "text": "在考虑 Andratx 吗？我会介绍球场布局、风、最佳发球台选择，以及它是否适合你的球技。",
           "linkLabel": "阅读 Golf de Andratx 评测 →"
         },
         {
-          "text": "如果你最看重球场环境：Canyamel"
+          "text": "想要最美的环境：Canyamel"
         },
         {
-          "alt": "Canyamel Golf",
-          "caption": "Canyamel，东海岸、自然公园边缘，很有气质"
+          "alt": "Canyamel 高尔夫球场",
+          "caption": "Canyamel - 最上镜的球场"
         },
         {
-          "text": "球场坐落在Llevant自然公园边上，有海景，也有很强的环境存在感。如果你评价一轮球不只看记分卡，这段从Palma开过去的路是值得的。"
+          "text": "许多人称它为岛上被拍得最多的球场。坐落在东部勒万特自然公园的山脚下，全程都有海景。除了景色之外，它本身也是一座真正好的球场。"
         },
         {
-          "text": "同样明确值得打：Golf Santa Ponsa 1"
+          "text": "同样值得打：Golf Santa Ponsa 1"
         },
         {
-          "alt": "Santa Ponsa 1",
-          "caption": "Santa Ponsa 1，有Tour历史，也让你敢拿driver"
+          "alt": "Santa Ponsa 1 高尔夫球场",
+          "caption": "Santa Ponsa 1 - 欧巡赛历史"
         },
         {
-          "text": "这是Santa Ponsa球场群里唯一公开开放的场，而且有真正的European Tour背景。球道宽、球场长，对很多球手来说，这是会把driver自信重新打出来的地方。它和Son Gual、Alcanada的气质完全不同，但非常值得排进名单。"
+          "text": "Santa Ponsa 集团中唯一的公共球场，拥有真正的欧巡赛历史，曾承办 2021 年欧巡赛马略卡高尔夫公开赛以及六场欧巡赛。它是岛上最长的球场之一，球道开阔，奖励积极的开球，也有很多挥一号木的好机会。"
         },
         {
-          "text": "如果你是初学者或同行水平混合：Son Quint 或 Son Antem East"
+          "text": "适合初学者或混合团队：Son Quint 或 Son Antem East"
         },
         {
-          "alt": "Son Quint Golf",
-          "caption": "Son Quint，更开阔、更友好，也更宽容"
+          "alt": "Son Quint 高尔夫球场",
+          "caption": "Son Quint - 2022 年老虎伍兹和查理曾在此打球"
         },
         {
-          "text": "如果你的目标不是打一场硬仗，而是让不同水平的人都能有一个好体验，那这类球场会更合适。Son Quint更开阔，也更宽容。Son Antem East对不想把一轮球搞得太重的人也很友好。"
+          "text": "Son Quint 是 Arabella 集团（一个综合体里有四座球场）里最容易上手的球场，地势相对平坦，球道宽阔，种有本地植物，让人几乎没有压力。它位置较高，可以俯瞰帕尔马的好景色。老虎伍兹和儿子查理在 2022 年 7 月英国公开赛之后来这里打过球。南部的 Son Antem East 同样平坦宽容，但有足够多的水障碍、沙坑和树木，打起来有意思，还有酒店度假村，方便你搭配住宿。"
         },
         {
           "items": [
             [
               "24",
-              "岛上球场总数"
+              "岛上球场"
             ],
             [
               "€55-260",
-              "果岭费范围"
+              "18 洞果岭费区间"
             ],
             [
               "300",
-              "每年晴天数"
+              "阳光天数"
             ],
             [
-              "12个月",
-              "全年可打"
+              "12 个月",
+              "全年可打球"
             ]
           ]
         },
         {
-          "text": "几个值得知道的名人信息"
+          "text": "值得知道的名人渊源"
         },
         {
-          "text": "Son Gual：Obama在2024年11月打过，Nadal也常来。Son Quint：Tiger Woods和Charlie在2022年7月来过。它们不是决定性的因素，但能侧面说明这些球场的能见度和等级。"
+          "text": "Son Gual：奥巴马 2024 年来这里打过球。Son Quint（Arabella）：老虎伍兹和儿子查理在 2022 年 7 月来过，就在圣安德鲁斯英国公开赛的下一周。Pula（东部）：费德勒和纳达尔在岛上时会一起打球，纳达尔经常去。Son Vida：塞维·巴列斯特罗斯 1990 年在那里赢得欧巡赛。Santa Ponsa：承办过六场欧巡赛，以及当时所有的大牌球星，包括西班牙传奇塞维·巴列斯特罗斯和何塞·玛丽亚·奥拉萨巴尔，还有伊恩·伍斯南、伯恩哈德·朗格等。"
         },
         {
-          "text": "诚实总结"
+          "text": "诚实的总结"
         },
         {
-          "text": "如果我只能为一周马略卡之旅推荐两座球场，我会选Son Gual和Alcanada。Son Muntaner适合住在Palma又想打比赛级标准的人。Andratx适合找最硬测试的人。Canyamel适合看环境。Santa Ponsa 1适合想打得开阔、敢拿driver的人。初学者或混合同行组合，我会优先推荐Son Quint或Son Antem East。"
+          "text": "如果你想要最强的候选名单，从 Son Gual、Alcanada、Son Muntaner 和 T Golf Calvià 开始。想要最难的考验就加上 Andratx，想要东海岸被低估的挑战就加上 Capdepera，想要度假村环境又依然需要认真打球的话，加上 Son Antem West。大多数游客只打一两座球场，没有发现这里的球场质量有多深。"
         },
         {
-          "text": "马略卡依然是欧洲最被低估的高尔夫目的地之一。我从上海搬来以后，在1月看到这里的球场状态，而那时北欧很多地方还打不了球，这件事立刻就很清楚了。"
+          "text": "这座岛一直是欧洲保守得最好的高尔夫秘密之一。我从上海过来，1 月英国球场关闭的时候，这里的球场状态真的让我吃惊。"
         },
         {
-          "text": "如果你想真正把其中一座球场打明白，而不是只是来打卡，也可以直接加微信：andygriffiths1。",
-          "linkLabel": "查看与职业球手同场体验 →"
+          "text": "下载免费的球场对比表，从果岭费、难度以及每座球场适合谁，比较马略卡全部 24 座球场。",
+          "linkLabel": "下载球场对比 →"
         },
         {
-          "text": "想把这安排成清晰、省心的一天高尔夫吗？",
-          "linkLabel": "查看 Play With A Pro 体验"
+          "text": "想在 PGA 职业教练的陪同下打其中一座球场吗？",
+          "linkLabel": "预订马略卡 Play With A Pro 一天体验 →"
         }
       ]
     }
@@ -3955,7 +3973,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "El golf en Mallorca, la mayor de las islas Baleares, va desde lo realmente asequible hasta lo muy caro, y la diferencia es mayor de lo que la mayoría de los visitantes espera. Este es un desglose honesto para 2026, de alguien que juega aquí casi todas las semanas. Para un repaso a todos los campos de la isla, consulta la <a href='/es/golf-courses'>guía de campos de golf de Mallorca</a>. Es un valor increíble comparado con los precios del golf en Shanghái, donde pasé 11 años, pero los costes pueden dispararse si no planificas bien."
+          "text": "El golf en Mallorca, la mayor de las islas Baleares, va desde lo realmente asequible hasta lo muy caro, y la diferencia es mayor de lo que la mayoría de los visitantes espera. Este es un desglose honesto para 2026, de alguien que juega aquí casi todas las semanas. Para un repaso a todos los campos de la isla, consulta la <a href='/golf-courses'>guía de campos de golf de Mallorca</a>. Es un valor increíble comparado con los precios del golf en Shanghái, donde pasé 11 años, pero los costes pueden dispararse si no planificas bien."
         },
         {
           "text": "Greenfees"
@@ -3983,7 +4001,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual ronda los €115-165. Alcanada va de unos €115 a €230. Son Muntaner llega a unos €260 en temporada alta y baja a unos €125 en la ventana de mejor precio. T Golf Calvià puede subir hasta unos €210 y Son Vida hasta unos €190. El extremo alto en Mallorca es más caro de lo que sugieren muchas guías antiguas."
         },
         {
-          "text": "Alrededor de la mitad de la isla usa ya precios dinámicos, incluidos los campos de Arabella, los dos T Golf, Pula, Capdepera y Son Antem East y West. La regla práctica es sencilla: cuanto antes reserves, más probabilidades tendrás de asegurar el extremo bajo del rango. El Black Friday, el invierno y las ofertas de varias rondas con socios pueden ahorrar dinero de verdad si eliges bien el momento. Si quieres que la elección de campos y las salidas estén resueltas antes de llegar, empieza por la <a href='/es/plan-your-trip'>planificación del viaje</a>."
+          "text": "Alrededor de la mitad de la isla usa ya precios dinámicos, incluidos los campos de Arabella, los dos T Golf, Pula, Capdepera y Son Antem East y West. La regla práctica es sencilla: cuanto antes reserves, más probabilidades tendrás de asegurar el extremo bajo del rango. El Black Friday, el invierno y las ofertas de varias rondas con socios pueden ahorrar dinero de verdad si eliges bien el momento. Si quieres que la elección de campos y las salidas estén resueltas antes de llegar, empieza por la <a href='/plan-your-trip'>planificación del viaje</a>."
         },
         {
           "caption": "Son Gual - campo premium, 115-165 €"
@@ -4095,7 +4113,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Golf auf Mallorca, der größten der spanischen Baleareninseln, reicht von erstaunlich günstig bis richtig teuer. Die Spanne ist größer, als die meisten Besucher erwarten. Hier ist der ehrliche Überblick für 2026 von jemandem, der hier fast jede Woche spielt. Einen Überblick über jeden Platz der Insel finden Sie im <a href='/de/golf-courses'>Guide zu den Golfplätzen auf Mallorca</a>. Im Vergleich zu den Golfpreisen in Shanghai, wo ich 11 Jahre verbracht habe, ist es ein unglaubliches Preis-Leistungs-Verhältnis, aber die Kosten können steigen, wenn Sie schlecht planen."
+          "text": "Golf auf Mallorca, der größten der spanischen Baleareninseln, reicht von erstaunlich günstig bis richtig teuer. Die Spanne ist größer, als die meisten Besucher erwarten. Hier ist der ehrliche Überblick für 2026 von jemandem, der hier fast jede Woche spielt. Einen Überblick über jeden Platz der Insel finden Sie im <a href='/golf-courses'>Guide zu den Golfplätzen auf Mallorca</a>. Im Vergleich zu den Golfpreisen in Shanghai, wo ich 11 Jahre verbracht habe, ist es ein unglaubliches Preis-Leistungs-Verhältnis, aber die Kosten können steigen, wenn Sie schlecht planen."
         },
         {
           "text": "Greenfees"
@@ -4123,7 +4141,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual liegt bei etwa €115-165. Alcanada bei grob €115-230. Son Muntaner erreicht in der Spitze rund €260 und fällt im günstigen Zeitfenster auf etwa €125. T Golf Calvià kann auf rund €210 steigen, Son Vida auf etwa €190. Das obere Ende auf Mallorca liegt höher, als viele ältere Guides vermuten lassen."
         },
         {
-          "text": "Rund die Hälfte der Insel arbeitet inzwischen mit dynamischen Preisen, darunter die Arabella-Plätze, beide T-Golf-Anlagen, Pula, Capdepera sowie Son Antem East und West. Die Faustregel ist einfach: Je früher Sie buchen, desto größer die Chance auf das untere Ende der Preisspanne. Black Friday, Winter und Mehrfachrunden-Angebote der Partner können echtes Geld sparen, wenn Sie den Zeitpunkt klug wählen. Wenn Platzauswahl und Startzeiten schon vor Ihrer Ankunft erledigt sein sollen, beginnen Sie mit der <a href='/de/plan-your-trip'>Reiseplanung</a>."
+          "text": "Rund die Hälfte der Insel arbeitet inzwischen mit dynamischen Preisen, darunter die Arabella-Plätze, beide T-Golf-Anlagen, Pula, Capdepera sowie Son Antem East und West. Die Faustregel ist einfach: Je früher Sie buchen, desto größer die Chance auf das untere Ende der Preisspanne. Black Friday, Winter und Mehrfachrunden-Angebote der Partner können echtes Geld sparen, wenn Sie den Zeitpunkt klug wählen. Wenn Platzauswahl und Startzeiten schon vor Ihrer Ankunft erledigt sein sollen, beginnen Sie mit der <a href='/plan-your-trip'>Reiseplanung</a>."
         },
         {
           "caption": "Son Gual - Premiumplatz, 115-165 €"
@@ -4235,7 +4253,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Le golf à Majorque, la plus grande des îles Baléares, va de franchement abordable à très cher, et l'écart est plus grand que ce que la plupart des visiteurs imaginent. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque toutes les semaines. Pour un tour d'horizon de chaque parcours de l'île, consultez le <a href='/fr/golf-courses'>guide des parcours de golf de Majorque</a>. Le rapport qualité-prix est incroyable comparé aux tarifs de Shanghai, où j'ai passé 11 ans, mais les coûts peuvent grimper si vous planifiez mal."
+          "text": "Le golf à Majorque, la plus grande des îles Baléares, va de franchement abordable à très cher, et l'écart est plus grand que ce que la plupart des visiteurs imaginent. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque toutes les semaines. Pour un tour d'horizon de chaque parcours de l'île, consultez le <a href='/golf-courses'>guide des parcours de golf de Majorque</a>. Le rapport qualité-prix est incroyable comparé aux tarifs de Shanghai, où j'ai passé 11 ans, mais les coûts peuvent grimper si vous planifiez mal."
         },
         {
           "text": "Green fees"
@@ -4263,7 +4281,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual tourne autour de €115-165. Alcanada va d'environ €115 à €230. Son Muntaner atteint environ €260 en pointe et descend autour de €125 pendant la période la moins chère. T Golf Calvià peut grimper jusqu'à environ €210, et Son Vida jusqu'à environ €190. Le haut de la fourchette à Majorque est plus élevé que ne le laissent penser beaucoup de guides anciens."
         },
         {
-          "text": "Environ la moitié de l'île applique désormais des tarifs dynamiques, dont les parcours Arabella, les deux T Golf, Pula, Capdepera et Son Antem East et West. La règle pratique est simple : plus vous réservez tôt, plus vous avez de chances de décrocher le bas de la fourchette. Le Black Friday, l'hiver et les offres multi-parties avec nos partenaires peuvent encore faire économiser de l'argent si vous choisissez bien le moment. Si vous voulez que le choix des parcours et les départs soient réglés avant votre arrivée, commencez par la <a href='/fr/plan-your-trip'>planification du voyage</a>."
+          "text": "Environ la moitié de l'île applique désormais des tarifs dynamiques, dont les parcours Arabella, les deux T Golf, Pula, Capdepera et Son Antem East et West. La règle pratique est simple : plus vous réservez tôt, plus vous avez de chances de décrocher le bas de la fourchette. Le Black Friday, l'hiver et les offres multi-parties avec nos partenaires peuvent encore faire économiser de l'argent si vous choisissez bien le moment. Si vous voulez que le choix des parcours et les départs soient réglés avant votre arrivée, commencez par la <a href='/plan-your-trip'>planification du voyage</a>."
         },
         {
           "caption": "Son Gual - parcours premium, €115-165"
@@ -4375,7 +4393,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Golf op Mallorca, het grootste van de Spaanse Balearen, loopt uiteen van echt betaalbaar tot flink duur, en het verschil is groter dan de meeste bezoekers verwachten. Hier is een eerlijke uitsplitsing voor 2026, van iemand die hier bijna elke week speelt. Voor een overzicht van elke baan op het eiland, zie de <a href='/nl/golf-courses'>gids met golfbanen op Mallorca</a>. Vergeleken met de golfprijzen in Shanghai, waar ik 11 jaar woonde, is het een geweldige prijs-kwaliteitverhouding, maar de kosten kunnen oplopen als je slecht plant."
+          "text": "Golf op Mallorca, het grootste van de Spaanse Balearen, loopt uiteen van echt betaalbaar tot flink duur, en het verschil is groter dan de meeste bezoekers verwachten. Hier is een eerlijke uitsplitsing voor 2026, van iemand die hier bijna elke week speelt. Voor een overzicht van elke baan op het eiland, zie de <a href='/golf-courses'>gids met golfbanen op Mallorca</a>. Vergeleken met de golfprijzen in Shanghai, waar ik 11 jaar woonde, is het een geweldige prijs-kwaliteitverhouding, maar de kosten kunnen oplopen als je slecht plant."
         },
         {
           "text": "Greenfees"
@@ -4403,7 +4421,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual zit rond €115-165. Alcanada loopt van ongeveer €115 tot €230. Son Muntaner haalt in het hoogseizoen zo'n €260 en zakt in de voordelige periode naar ongeveer €125. T Golf Calvià kan oplopen tot circa €210 en Son Vida tot circa €190. De top van de markt op Mallorca ligt hoger dan veel oudere gidsen suggereren."
         },
         {
-          "text": "Ongeveer de helft van het eiland hanteert nu dynamische prijzen, waaronder de Arabella-banen, beide T Golf-locaties, Pula, Capdepera en Son Antem East en West. De vuistregel is simpel: hoe eerder je boekt, hoe groter de kans dat je het onderste deel van de prijsrange vastlegt. Black Friday, de winter en partneraanbiedingen voor meerdere rondes kunnen nog steeds echt geld besparen als je de timing goed kiest. Wil je dat de baankeuze en starttijden geregeld zijn voordat je aankomt, begin dan met de <a href='/nl/plan-your-trip'>reisplanning</a>."
+          "text": "Ongeveer de helft van het eiland hanteert nu dynamische prijzen, waaronder de Arabella-banen, beide T Golf-locaties, Pula, Capdepera en Son Antem East en West. De vuistregel is simpel: hoe eerder je boekt, hoe groter de kans dat je het onderste deel van de prijsrange vastlegt. Black Friday, de winter en partneraanbiedingen voor meerdere rondes kunnen nog steeds echt geld besparen als je de timing goed kiest. Wil je dat de baankeuze en starttijden geregeld zijn voordat je aankomt, begin dan met de <a href='/plan-your-trip'>reisplanning</a>."
         },
         {
           "caption": "Son Gual - premiumbaan, €115-165"
@@ -4515,7 +4533,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Golf på Mallorca, den största av Spaniens Balearer, sträcker sig från riktigt prisvärt till ordentligt dyrt, och skillnaden är större än de flesta besökare väntar sig. Här är en ärlig genomgång för 2026 från någon som spelar här nästan varje vecka. För en genomgång av alla banor på ön, se <a href='/sv/golf-courses'>guiden till golfbanorna på Mallorca</a>. Det är fantastiskt prisvärt jämfört med golfpriserna i Shanghai, där jag tillbringade 11 år, men kostnaderna kan krypa uppåt om du planerar dåligt."
+          "text": "Golf på Mallorca, den största av Spaniens Balearer, sträcker sig från riktigt prisvärt till ordentligt dyrt, och skillnaden är större än de flesta besökare väntar sig. Här är en ärlig genomgång för 2026 från någon som spelar här nästan varje vecka. För en genomgång av alla banor på ön, se <a href='/golf-courses'>guiden till golfbanorna på Mallorca</a>. Det är fantastiskt prisvärt jämfört med golfpriserna i Shanghai, där jag tillbringade 11 år, men kostnaderna kan krypa uppåt om du planerar dåligt."
         },
         {
           "text": "Greenfee"
@@ -4543,7 +4561,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual ligger runt €115-165. Alcanada går från ungefär €115 till €230. Son Muntaner når omkring €260 under högsäsong och sjunker till omkring €125 under det förmånliga fönstret. T Golf Calvià kan gå upp till omkring €210 och Son Vida till omkring €190. Toppnivån på Mallorca ligger högre än många äldre guider antyder."
         },
         {
-          "text": "Ungefär hälften av öns banor använder numera dynamiska priser, bland annat Arabella-banorna, båda T Golf-anläggningarna, Pula, Capdepera samt Son Antem East och West. Den praktiska regeln är enkel: ju tidigare du bokar, desto större chans att låsa det lägre priset. Black Friday, vintern och partnererbjudanden för flera rundor kan fortfarande spara riktiga pengar om du väljer tidpunkt väl. Vill du ha banval och starttider ordnade innan du kommer, börja med <a href='/sv/plan-your-trip'>reseplaneringen</a>."
+          "text": "Ungefär hälften av öns banor använder numera dynamiska priser, bland annat Arabella-banorna, båda T Golf-anläggningarna, Pula, Capdepera samt Son Antem East och West. Den praktiska regeln är enkel: ju tidigare du bokar, desto större chans att låsa det lägre priset. Black Friday, vintern och partnererbjudanden för flera rundor kan fortfarande spara riktiga pengar om du väljer tidpunkt väl. Vill du ha banval och starttider ordnade innan du kommer, börja med <a href='/plan-your-trip'>reseplaneringen</a>."
         },
         {
           "caption": "Son Gual - premiumbana, €115-165"
@@ -4655,7 +4673,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "马略卡是西班牙巴利阿里群岛中最大的岛屿，在这里打高尔夫，从真正实惠到相当昂贵都有，差距比大多数游客想象的更大。这是一份面向 2026 年的诚实费用解析，来自一个几乎每周都在这里打球的人。想了解岛上每一座球场，请看<a href='/zh/golf-courses'>马略卡高尔夫球场指南</a>。与我生活过 11 年的上海的球价相比，这里性价比惊人，但如果你不做好规划，费用也会悄悄涨上去。"
+          "text": "马略卡是西班牙巴利阿里群岛中最大的岛屿，在这里打高尔夫，从真正实惠到相当昂贵都有，差距比大多数游客想象的更大。这是一份面向 2026 年的诚实费用解析，来自一个几乎每周都在这里打球的人。想了解岛上每一座球场，请看<a href='/golf-courses'>马略卡高尔夫球场指南</a>。与我生活过 11 年的上海的球价相比，这里性价比惊人，但如果你不做好规划，费用也会悄悄涨上去。"
         },
         {
           "text": "果岭费"
@@ -4683,7 +4701,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual 大约 €115-165。Alcanada 大约 €115-230。Son Muntaner 旺季约 €260，在性价比时段会降到约 €125。T Golf Calvià 最高可达约 €210，Son Vida 约 €190。马略卡的高端价位，比许多旧指南说的要高。"
         },
         {
-          "text": "岛上大约一半的球场现在采用动态定价，包括 Arabella 旗下球场、两家 T Golf、Pula、Capdepera 以及 Son Antem East 和 West。实用规则很简单：订得越早，越有可能锁定价格区间的低端。黑色星期五、冬季以及合作伙伴的多轮优惠，只要时机选得好，仍然能省下真金白银。如果你希望在抵达前就把球场选择和开球时间安排好，可以从<a href='/zh/plan-your-trip'>行程规划</a>开始。"
+          "text": "岛上大约一半的球场现在采用动态定价，包括 Arabella 旗下球场、两家 T Golf、Pula、Capdepera 以及 Son Antem East 和 West。实用规则很简单：订得越早，越有可能锁定价格区间的低端。黑色星期五、冬季以及合作伙伴的多轮优惠，只要时机选得好，仍然能省下真金白银。如果你希望在抵达前就把球场选择和开球时间安排好，可以从<a href='/plan-your-trip'>行程规划</a>开始。"
         },
         {
           "caption": "Son Gual，高端球场，€115-165"
@@ -5566,7 +5584,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "24 campos en una isla relativamente pequeña"
         },
         {
-          "text": "Viniendo de Shanghái, 27 millones de personas con solo 12 campos, la densidad de golf de calidad a un máximo de una hora en coche es notable. Una semana en la isla puede incluir cuatro o cinco rondas realmente distintas y excelentes. Suroeste, costa este, norte, el centro de Palma: cada zona tiene su propio carácter y no un recorrido de resort todo igual. La lista completa de cada campo con green fees y valoraciones honestas está en la página de <a href=\"/es/golf-courses\">campos de golf de Mallorca</a>."
+          "text": "Viniendo de Shanghái, 27 millones de personas con solo 12 campos, la densidad de golf de calidad a un máximo de una hora en coche es notable. Una semana en la isla puede incluir cuatro o cinco rondas realmente distintas y excelentes. Suroeste, costa este, norte, el centro de Palma: cada zona tiene su propio carácter y no un recorrido de resort todo igual. La lista completa de cada campo con green fees y valoraciones honestas está en la página de <a href=\"/golf-courses\">campos de golf de Mallorca</a>."
         },
         {
           "items": [
@@ -5694,7 +5712,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "24 Plätze auf einer relativ kleinen Insel"
         },
         {
-          "text": "Aus Shanghai kommend - 27 Millionen Einwohner mit gerade einmal 12 Plätzen - ist die Dichte an hochwertigem Golf innerhalb von höchstens einer Stunde Fahrt hier bemerkenswert. Eine Woche auf der Insel kann vier oder fünf wirklich unterschiedliche, ausgezeichnete Runden enthalten. Südwesten, Ostküste, Norden, Zentrum um Palma: Jede Gegend hat ihren eigenen Charakter und nicht nur eine einheitliche Resort-Anlage. Die vollständige Liste aller Plätze mit Greenfees und ehrlichen Bewertungen steht auf der Seite <a href=\"/de/golf-courses\">Golfplätze auf Mallorca</a>."
+          "text": "Aus Shanghai kommend - 27 Millionen Einwohner mit gerade einmal 12 Plätzen - ist die Dichte an hochwertigem Golf innerhalb von höchstens einer Stunde Fahrt hier bemerkenswert. Eine Woche auf der Insel kann vier oder fünf wirklich unterschiedliche, ausgezeichnete Runden enthalten. Südwesten, Ostküste, Norden, Zentrum um Palma: Jede Gegend hat ihren eigenen Charakter und nicht nur eine einheitliche Resort-Anlage. Die vollständige Liste aller Plätze mit Greenfees und ehrlichen Bewertungen steht auf der Seite <a href=\"/golf-courses\">Golfplätze auf Mallorca</a>."
         },
         {
           "items": [
@@ -5822,7 +5840,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "24 parcours sur une île relativement petite"
         },
         {
-          "text": "Venant de Shanghai - 27 millions d'habitants et seulement 12 parcours - la densité de golf de qualité à une heure de route maximum est remarquable. Une semaine sur l'île peut comprendre quatre ou cinq parties vraiment différentes et excellentes. Sud-ouest, côte est, nord, centre de Palma : chaque zone a son propre caractère, et non un parcours de resort tout semblable. La liste complète de chaque parcours avec les green fees et des notes honnêtes se trouve sur la page des <a href=\"/fr/golf-courses\">parcours de golf de Majorque</a>."
+          "text": "Venant de Shanghai - 27 millions d'habitants et seulement 12 parcours - la densité de golf de qualité à une heure de route maximum est remarquable. Une semaine sur l'île peut comprendre quatre ou cinq parties vraiment différentes et excellentes. Sud-ouest, côte est, nord, centre de Palma : chaque zone a son propre caractère, et non un parcours de resort tout semblable. La liste complète de chaque parcours avec les green fees et des notes honnêtes se trouve sur la page des <a href=\"/golf-courses\">parcours de golf de Majorque</a>."
         },
         {
           "items": [
@@ -5950,7 +5968,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "24 banen op een relatief klein eiland"
         },
         {
-          "text": "Komend uit Shanghai - 27 miljoen mensen met slechts 12 banen - is de dichtheid van kwaliteitsgolf binnen maximaal een uur rijden hier opmerkelijk. Een week op het eiland kan vier of vijf echt verschillende, uitstekende rondes bevatten. Zuidwest, oostkust, noorden, het centrum van Palma: elk gebied heeft een eigen karakter en niet alleen één en dezelfde resortbaan. De volledige lijst van alle banen met greenfees en eerlijke beoordelingen staat op de pagina <a href=\"/nl/golf-courses\">golfbanen op Mallorca</a>."
+          "text": "Komend uit Shanghai - 27 miljoen mensen met slechts 12 banen - is de dichtheid van kwaliteitsgolf binnen maximaal een uur rijden hier opmerkelijk. Een week op het eiland kan vier of vijf echt verschillende, uitstekende rondes bevatten. Zuidwest, oostkust, noorden, het centrum van Palma: elk gebied heeft een eigen karakter en niet alleen één en dezelfde resortbaan. De volledige lijst van alle banen met greenfees en eerlijke beoordelingen staat op de pagina <a href=\"/golf-courses\">golfbanen op Mallorca</a>."
         },
         {
           "items": [
@@ -6078,7 +6096,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "24 banor på en relativt liten ö"
         },
         {
-          "text": "Kommer man från Shanghai - 27 miljoner människor med bara 12 banor - är tätheten av kvalitetsgolf inom högst en timmes bilresa här anmärkningsvärd. En vecka på ön kan rymma fyra eller fem verkligt olika, utmärkta rundor. Sydväst, östkusten, norr, centrala Palma: varje område har sin egen karaktär och inte bara en och samma resortbana. Hela listan över alla banor med greenfees och ärliga betyg finns på sidan om <a href=\"/sv/golf-courses\">golfbanor på Mallorca</a>."
+          "text": "Kommer man från Shanghai - 27 miljoner människor med bara 12 banor - är tätheten av kvalitetsgolf inom högst en timmes bilresa här anmärkningsvärd. En vecka på ön kan rymma fyra eller fem verkligt olika, utmärkta rundor. Sydväst, östkusten, norr, centrala Palma: varje område har sin egen karaktär och inte bara en och samma resortbana. Hela listan över alla banor med greenfees och ärliga betyg finns på sidan om <a href=\"/golf-courses\">golfbanor på Mallorca</a>."
         },
         {
           "items": [
@@ -6206,7 +6224,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "一座相对较小的岛上有 24 座球场"
         },
         {
-          "text": "从上海来到这里，那是一座有 2700 万人却只有 12 座球场的城市，这里在最多一小时车程之内的优质球场密度令人惊叹。在岛上待一周，可以打到四五场真正不同的优秀球场。西南部、东海岸、北部、帕尔马中部：每个区域都有自己的特点，而不只是千篇一律的度假村球场。每座球场的完整清单，包括果岭费和坦诚的评分，都在<a href=\"/zh/golf-courses\">马略卡高尔夫球场</a>页面上。"
+          "text": "从上海来到这里，那是一座有 2700 万人却只有 12 座球场的城市，这里在最多一小时车程之内的优质球场密度令人惊叹。在岛上待一周，可以打到四五场真正不同的优秀球场。西南部、东海岸、北部、帕尔马中部：每个区域都有自己的特点，而不只是千篇一律的度假村球场。每座球场的完整清单，包括果岭费和坦诚的评分，都在<a href=\"/golf-courses\">马略卡高尔夫球场</a>页面上。"
         },
         {
           "items": [

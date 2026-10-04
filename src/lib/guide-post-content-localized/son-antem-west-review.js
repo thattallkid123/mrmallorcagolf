@@ -169,8 +169,8 @@ const content = {
         "text": "7/10. Son Antem West es un campo de resort bien gestionado, con buen mantenimiento, servicio fiable y un trazado que sirve para muchos jugadores. El 16 es el mejor hoyo, las zonas entre árboles son las más interesantes, y la fauna junto al campo abierto mejora el entorno. Conviene a golfistas de vacaciones, grupos mixtos y cualquiera que quiera una ronda agradable y accesible cerca de Palma. No es la mejor elección si buscas un campo que te examine de principio a fin. Puedes ver como encaja con el resto en la <a href=\"/golf-courses\">página completa de campos de golf de Mallorca</a>. Si estás planeando varias vueltas alrededor de este campo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios y logística."
       },
       {
-        "text": "Llevo clientes a Son Antem West en días play-with-a-pro. ¿Quieres jugarlo con alguien a tu lado?",
-        "linkLabel": "Ver la experiencia play-with-a-pro"
+        "text": "¿Vas a jugar Son Antem West? Lo uso para días guiados relajados y bien organizados, y puedo ayudarte a decidir si encaja con tu grupo mejor que los nombres más grandes.",
+        "linkLabel": "Ver la experiencia Play With A Pro"
       }
     ]
   },
@@ -343,8 +343,8 @@ const content = {
         "text": "7/10. Son Antem West ist ein gut geführter Resortplatz mit guter Pflege, verlässlichem Service und einem Layout, das vielen Spielern passt. Die 16 ist das beste Loch, die baumgesäumten Abschnitte sind am interessantesten, und Tiere plus offene Landschaft machen die Umgebung besser als der Platz allein. Er passt zu Urlaubsgolfern, gemischten Gruppen und allen, die eine angenehme, zugängliche Runde nahe Palma suchen. Er ist nicht die richtige Wahl, wenn man einen Platz sucht, der von Anfang bis Ende prüft. Auf der <a href=\"/golf-courses\">vollständigen Mallorca-Golfplatzseite</a> sieht man, wie er im Vergleich einzuordnen ist. Wenn Sie mehrere Runden rund um diesen Platz planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
       },
       {
-        "text": "Ich bringe Kunden an begleiteten Golftagen nach Son Antem West. Möchten Sie ihn mit jemandem an Ihrer Seite spielen?",
-        "linkLabel": "Golftag mit Pro ansehen"
+        "text": "Sie spielen Son Antem West? Ich nutze ihn für entspannte, gut organisierte begleitete Tage und kann Ihnen helfen zu entscheiden, ob er besser zu Ihrer Gruppe passt als die größeren Namen.",
+        "linkLabel": "Das Play-With-A-Pro-Erlebnis ansehen"
       }
     ]
   },
@@ -396,7 +396,7 @@ const content = {
         "text": "En arrivant dans le resort, l échelle est évidente. Residences, grands espaces verts, académie de golf, terrains de padel, hôtel. Cela ressemble à une destination golf complète. L accueil était organisé, le personnel serviable, et une petite boutique près de l entrée permettait de prendre café et snack avant la partie. Détail utile à 7 h 45."
       },
       {
-        "text": "Sur le parcours, le cadre s ouvre. Le West Course se trouve dans la campagne majorquine près de Llucmajor, a 15 ou 20 minutes de Palma. Aucune maison n est visible depuis les fairways, la montagne de Randa apparaît en arrière-plan sur le retour, et la faune est présente tout au long de la partie. Des lapins traversent régulièrement les fairways. Herons et autres oiseaux sont autour des trous avec eau. Cela ne ressemble pas à un parcours de banlieue, et c est un vrai plus."
+        "text": "Sur le parcours, le cadre s ouvre. Le West Course se trouve dans la campagne majorquine près de Llucmajor, a 15 ou 20 minutes de Palma. Aucune maison n'est visible depuis les fairways, la montagne de Randa apparaît en arrière-plan sur le retour, et la faune est présente tout au long de la partie. Des lapins traversent régulièrement les fairways. Herons et autres oiseaux sont autour des trous avec eau. Cela ne ressemble pas à un parcours de banlieue, et c'est un vrai plus."
       },
       {
         "alt": "Oiseaux sur le fairway de Son Antem West avec eau et green derrière, Majorque",
@@ -442,10 +442,10 @@ const content = {
         "text": "A pied"
       },
       {
-        "text": "C est tout à fait faisable. Le trace est simple et le terrain plat. Il y a eu deux moments entre les trous ou le chemin à pied n était pas parfaitement clair, mais rien d important. Pour ceux qui préfèrent marcher plutôt que prendre une voiturette, c est un parcours facile."
+        "text": "C est tout à fait faisable. Le trace est simple et le terrain plat. Il y a eu deux moments entre les trous ou le chemin à pied n était pas parfaitement clair, mais rien d important. Pour ceux qui préfèrent marcher plutôt que prendre une voiturette, c'est un parcours facile."
       },
       {
-        "alt": "Andy Griffiths avec des clients lors d une journée play-with-a-pro a Son Antem West, Majorque",
+        "alt": "Andy Griffiths avec des clients lors d'une journée play-with-a-pro a Son Antem West, Majorque",
         "caption": "Une journée play-with-a-pro a Son Antem West. Le trace pardonne assez pour permettre aux invites de jouer librement."
       },
       {
@@ -499,7 +499,7 @@ const content = {
           ],
           [
             "Conseil vent",
-            "Par jour calme, le parcours est très jouable, et c est justement pour cela qu il fonctionne bien pour des groupes mixtes. Si la brise se leve, concentrez-vous sur les zones d atterrissage et restez patient."
+            "Par jour calme, le parcours est très jouable, et c'est justement pour cela qu'il fonctionne bien pour des groupes mixtes. Si la brise se leve, concentrez-vous sur les zones d atterrissage et restez patient."
           ],
           [
             "Ou les visiteurs perdent des coups",
@@ -512,11 +512,11 @@ const content = {
         ]
       },
       {
-        "text": "7/10. Son Antem West est un parcours de resort bien gère, bien entretenu, avec un service fiable et un trace qui convient à beaucoup de joueurs. Le 16 est le meilleur trou, les sections bordees d arbres sont les plus intéressantes, et la faune avec la campagne ouverte rendent le cadre meilleur que le parcours seul. Il convient aux golfeurs en vacances, aux groupes mixtes et à ceux qui veulent une partie agréable et accessible près de Palma. Ce n est pas le bon choix si vous cherchez un parcours qui teste du premier au dernier trou. Vous pouvez voir comment il se compare aux autres sur la <a href=\"/golf-courses\">page complète des parcours de golf à Majorque</a>. Si vous prévoyez plusieurs parcours autour de celui-ci, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre le timing et la logistique."
+        "text": "7/10. Son Antem West est un parcours de resort bien gère, bien entretenu, avec un service fiable et un trace qui convient à beaucoup de joueurs. Le 16 est le meilleur trou, les sections bordees d arbres sont les plus intéressantes, et la faune avec la campagne ouverte rendent le cadre meilleur que le parcours seul. Il convient aux golfeurs en vacances, aux groupes mixtes et à ceux qui veulent une partie agréable et accessible près de Palma. Ce n'est pas le bon choix si vous cherchez un parcours qui teste du premier au dernier trou. Vous pouvez voir comment il se compare aux autres sur la <a href=\"/golf-courses\">page complète des parcours de golf à Majorque</a>. Si vous prévoyez plusieurs parcours autour de celui-ci, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre le timing et la logistique."
       },
       {
-        "text": "J emmène des clients à Son Antem West lors de journées play-with-a-pro. Envie de le jouer avec quelqu un à vos côtés ?",
-        "linkLabel": "Voir l expérience play-with-a-pro"
+        "text": "Vous jouez Son Antem West ? Je l'utilise pour des journées accompagnées détendues et bien organisées, et je peux vous aider à décider s'il convient mieux à votre groupe que les noms plus connus.",
+        "linkLabel": "Découvrir l'expérience Play With A Pro"
       }
     ]
   },
@@ -689,8 +689,8 @@ const content = {
         "text": "7/10. Son Antem West is een goed gerunde resortbaan met goede conditie, betrouwbare service en een lay-out die bij veel spelers past. De 16e is de beste hole, de stukken tussen de bomen zijn het meest interessant, en de dieren en open countryside maken de setting sterker dan de baan alleen. Hij past bij vakantiegolfers, gemengde groepen en iedereen die een prettige, toegankelijke ronde dicht bij Palma wil. Niet de juiste keuze als je een baan zoekt die je van begin tot eind test. Bekijk hoe hij past tussen de rest op de <a href=\"/golf-courses\">volledige Mallorca golfbanenpagina</a>. Plan je meerdere rondes rond deze baan? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt timing en logistiek."
       },
       {
-        "text": "Ik neem klanten mee naar Son Antem West op play-with-a-pro-dagen. Wil je hem spelen met iemand naast je?",
-        "linkLabel": "Bekijk de play-with-a-pro-ervaring"
+        "text": "Speel je Son Antem West? Ik gebruik hem voor ontspannen, goed georganiseerde begeleide dagen en kan je helpen beslissen of hij beter bij je groep past dan de grotere namen.",
+        "linkLabel": "Bekijk de Play With A Pro-ervaring"
       }
     ]
   },
@@ -863,8 +863,8 @@ const content = {
         "text": "7/10. Son Antem West är en välskött resortbana med bra skick, pålitlig service och en layout som passar många spelare. 16 är bästa hålet, de tradkantade partierna är mest engagerande, och djurlivet tillsammans med det öppna landskapet gör miljon bättre an banan ensam. Den passar semestergolfare, blandade grupper och alla som vill ha en trevlig, tillgänglig runda nära Palma. Den är inte rätt val om du söker en bana som testar dig från början till slut. Se hur den passar in bland de andra på <a href=\"/golf-courses\">hela sidan om Mallorcas golfbanor</a>. Planerar du flera rundor kring den här banan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp timing och logistik."
       },
       {
-        "text": "Jag tar klienter till Son Antem West på play-with-a-pro-dagar. Vill du spela den med någon vid din sida?",
-        "linkLabel": "Se play-with-a-pro-upplevelsen"
+        "text": "Ska du spela Son Antem West? Jag använder den för avslappnade, välorganiserade guidade dagar och kan hjälpa dig att avgöra om den passar din grupp bättre än de större namnen.",
+        "linkLabel": "Se Play With A Pro-upplevelsen"
       }
     ]
   },
@@ -1037,8 +1037,8 @@ const content = {
         "text": "7/10。Son Antem West是一座运营成熟的度假村球场，养护好，服务稳定，设计适合很多球手。16号洞是最佳洞，树木夹道的部分最有意思，野生动物和开阔乡间让环境比球场本身更好。它适合度假球手、水平混合的组合，以及任何想在帕尔马附近打一轮轻松、好进入状态的球手。如果你专门想找一座从头到尾都考验你的球场，它不是最合适的选择。你可以在<a href=\"/golf-courses\">马略卡高尔夫球场完整页面</a>看看它和其他球场如何对比。如果你打算围绕它安排多轮球，<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了时间安排和后勤事项。"
       },
       {
-        "text": "我会带客户去Son Antem West进行play-with-a-pro体验。想和有人陪你一起下场吗？",
-        "linkLabel": "查看play-with-a-pro体验"
+        "text": "要打 Son Antem West 吗？我用它来安排轻松、组织得当的带练日，可以帮你判断它是否比那些更有名的球场更适合你的团队。",
+        "linkLabel": "查看 Play With A Pro 体验"
       }
     ]
   }

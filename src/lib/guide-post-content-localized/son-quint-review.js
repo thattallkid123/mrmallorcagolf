@@ -337,7 +337,7 @@ const content = {
           ],
           [
             "Clubhaus-Tipp",
-            "Bleib nach Möglichkeit zum Essen. Der Service war ausgezeichnet und die andalusischen Calamari waren für 15 € gut."
+            "Bleiben Sie nach Möglichkeit zum Essen. Der Service war ausgezeichnet und die andalusischen Calamari waren für €15 gut."
           ]
         ]
       },
