@@ -222,7 +222,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         "À la fin du parcours, vous avez déjà reçu des retours clairs sur ce qui a bien fonctionné, ce qui n'a pas marché et ce que vous devez continuer à travailler. Je vous envoie ensuite un compte rendu écrit pour que les détails de la journée ne s'effacent pas. Vous repartez avec une vision claire, pas une longue liste, juste ce qui fera vraiment la différence.",
       quoteText:
-        "Il m'a donné un retour clair et précis qui m'a aidée à corriger plusieurs erreurs. Mon putting en particulier, avec lequel j'ai toujours eu du mal, s'est vraiment amélioré.",
+        "Il m'a donné un retour clair et précis qui m'a permis de corriger plusieurs erreurs. Mon putting en particulier, avec lequel j'ai toujours eu du mal, s'est vraiment amélioré.",
       quoteCredit: 'Synøve',
     },
     whatChanges: {
