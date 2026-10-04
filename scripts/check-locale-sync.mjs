@@ -87,6 +87,8 @@ async function loadSources() {
   for (const [label, mod, fn] of [
     ['PWAP_EXPLAINED', 'src/lib/play-with-a-pro-explained-content.js', 'getPlayWithAProExplainedContent'],
     ['TOOLS_INDEX', 'src/lib/tools-index-content.js', 'getToolsIndexContent'],
+    ['SIGNATURE_DAY', 'src/lib/signature-day-content.js', 'getSignatureDayContent'],
+    ['SIGNATURE_DAY', 'src/lib/signature-day-content.js', 'getSignatureDayContent'],
   ]) {
     const m = await importLib(mod)
     sources.push({ label, english: m[fn]('en'), overlay: (lc) => m[fn](lc), skipIdentical: true })
@@ -143,7 +145,6 @@ function writeManifest(m) {
 // hash is recorded when its translations were last brought into line; a changed hash fails the
 // check until the translation files are updated and `--ack-file <path>` is run.
 const FILE_GUARDS = [
-  { en: 'src/app/(en)/signature-day/SignatureDayView.jsx', translations: 'src/lib/signature-day-content.js' },
   { en: 'src/app/(en)/privacy-policy/page.jsx', translations: 'src/app/{de,es,fr}/privacy-policy/page.jsx' },
   { en: 'src/app/(en)/terms/page.jsx', translations: 'src/app/{de,es,fr}/terms/page.jsx' },
 ]

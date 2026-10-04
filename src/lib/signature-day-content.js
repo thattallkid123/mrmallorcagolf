@@ -1,4 +1,4 @@
-import { buildPageMetadata } from './page-metadata'
+import { buildPageMetadata } from './page-metadata.js'
 
 const diningImages = [
   { src: '/images/food/mallorca-orchard-dining.jpg', alt: 'Private outdoor dining in Mallorca', featured: true },
@@ -9,6 +9,28 @@ const diningImages = [
 ]
 
 const hotels = {
+  en: [
+    {
+      "name": "Mandarin Oriental Punta Negra",
+      "note": "Calvia. Lena by Dani Garcia; Matsuhisa opens October 2026."
+    },
+    {
+      "name": "Four Seasons Resort Mallorca at Formentor",
+      "note": "Formentor. Mel and Llum i Sal."
+    },
+    {
+      "name": "The Lodge Mallorca",
+      "note": "Sa Pobla. Singular, with its fire-led Mediterranean cooking."
+    },
+    {
+      "name": "Aethos Mallorca",
+      "note": "Peguera. ONDA and its sea-facing setting."
+    },
+    {
+      "name": "La Residencia, A Belmond Hotel",
+      "note": "Deia. El Olivo and Restaurante Miro."
+    }
+  ],
   de: [
     { name: 'Mandarin Oriental Punta Negra', note: 'Calvià. Lena by Dani García; Matsuhisa eröffnet im Oktober 2026.' },
     { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel und Llum i Sal.' },
@@ -39,8 +61,8 @@ const hotels = {
   ],
   sv: [
     { name: 'Mandarin Oriental Punta Negra', note: 'Calvià. Lena by Dani García; Matsuhisa öppnar i oktober 2026.' },
-    { name: 'Four Seasons Resort Mallorca åt Formentor', note: 'Formentor. Mel och Llum i Sal.' },
-    { name: 'The Lodge Mallorca', note: 'Så Pobla. Singular, medelhavsmat runt eld.' },
+    { name: 'Four Seasons Resort Mallorca at Formentor', note: 'Formentor. Mel och Llum i Sal.' },
+    { name: 'The Lodge Mallorca', note: 'Sa Pobla. Singular, medelhavsmat runt eld.' },
     { name: 'Aethos Mallorca', note: 'Peguera. ONDA med läge mot havet.' },
     { name: 'La Residencia, A Belmond Hotel', note: 'Deià. El Olivo och Restaurante Miró.' },
   ],
@@ -54,8 +76,114 @@ const hotels = {
 }
 
 const content = {
+  en: {
+    "metadata": {
+      "title": "Signature Day Mallorca | Golf & Recovery",
+      "description": "A private Mallorca golf day from €3,000: round with Andy, recovery session with John Brazier, transfers, evening arranged."
+    },
+    "breadcrumbHome": "Home",
+    "heroImageAlt": "Andy Griffiths on the golf course in Mallorca at golden hour",
+    "heroEyebrow": "The complete experience, Mallorca",
+    "heroTitle": "A private golf day\nbuilt around the round, the body, and the evening.",
+    "heroBody": "Eighteen holes with me, a post-round session with John Brazier (The Golf Doctor), private transfers, and an evening arranged around your group. One person coordinates the whole day from the first conversation.",
+    "price": "Pricing tailored to the day",
+    "primaryCta": "Enquire",
+    "secondaryCta": "Explore the day",
+    "coursesCta": "Explore Mallorca's golf courses",
+    "whatsappLabel": "Message on WhatsApp",
+    "whatsappHref": "https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20the%20Signature%20Day.",
+    "included": [
+      "Course and day planning",
+      "Private tee time",
+      "18 holes with me",
+      "Session with John Brazier",
+      "Connected debrief and priorities",
+      "Private transfers",
+      "Evening coordination"
+    ],
+    "dayStages": [
+      {
+        "time": "Before the day",
+        "title": "Plan and confirm",
+        "body": "I select the course with you, arrange the tee time and transfers, and coordinate the evening. You receive one clear proposal before anything is booked."
+      },
+      {
+        "time": "The round",
+        "title": "18 Holes Together",
+        "body": "I play alongside you for the full round, watching the decisions, patterns, and movement that only show up under real playing conditions. I take notes throughout."
+      },
+      {
+        "time": "After the round",
+        "title": "Session with John Brazier",
+        "body": "John works in complementary and alternative medicine, recovery, and sports performance. He uses the observations from the round to examine the physical patterns behind what we saw."
+      },
+      {
+        "time": "The debrief",
+        "title": "One connected plan",
+        "body": "We bring the golf and physical observations together. You leave knowing what happened, what may be contributing to it, and what to work on first."
+      },
+      {
+        "time": "The evening",
+        "title": "A properly arranged finish",
+        "body": "The day finishes with dinner at a recommended hotel or restaurant, or with a private-chef arrangement where suitable. The plan is built around your group and where you are staying."
+      }
+    ],
+    "optionalExtras": [
+      {
+        "title": "Caddy",
+        "text": "A suitable caddy can be requested where the course, date, and availability allow."
+      },
+      {
+        "title": "Videography and photography",
+        "text": "Professional coverage can be added if you want the day documented."
+      },
+      {
+        "title": "Premium club hire",
+        "text": "The best suitable equipment available at the course can be arranged before you arrive."
+      },
+      {
+        "title": "Multi-day planning",
+        "text": "The Signature Day can sit inside a wider Mallorca itinerary with other courses, hotels, and island experiences."
+      }
+    ],
+    "sections": {
+      "overviewEyebrow": "What this is",
+      "overviewTitle": "A complete day, not a collection of add-ons.",
+      "overviewBody": "I play the full 18 holes with you and watch how your game behaves under real conditions. After the round, John examines the recovery and physical-performance side of what we observed. We then bring both views together into a practical set of priorities.",
+      "overviewBody2": "Around the golf, I coordinate the tee time, private transfers, and an evening at a recommended hotel or restaurant, or with a private chef where that suits the occasion better.",
+      "overviewPrinciple": "The fastest improvements often happen on the course, where the decisions and movement are real. The rest of the day is designed to make those observations useful.",
+      "overviewImageAlt": "Andy Griffiths coaching a golfer in Mallorca",
+      "includedTitle": "What the core day covers",
+      "howEyebrow": "How the day runs",
+      "howTitle": "Five stages. One connected experience.",
+      "howBody": "Each stage has a clear purpose, and the observations from the round carry through the rest of the day.",
+      "whyEyebrow": "Why this is different",
+      "whyTitle": "The round and the body are considered together.",
+      "whyBody": "During the round I note the movement, decisions, and recurring patterns that affect your scoring. John then considers the recovery and sports-performance side of those observations, including physical restrictions or compensations that may be contributing to what appeared on the course.",
+      "whyBody2": "The value is in joining those observations together. You leave with one clear order of priorities rather than separate sessions that never meet.",
+      "johnBody": "John works in complementary and alternative medicine and specialises in recovery and sports performance.",
+      "johnLink": "Read about John's work",
+      "whyImageAlt": "Client round at Son Gual Mallorca",
+      "courseEyebrow": "The course",
+      "courseTitle": "Chosen for your game and the occasion.",
+      "courseBody": "Son Gual and Alcanada are my primary choices for a serious full day. Son Gual is my favourite course in Mallorca, with a particularly strong closing stretch. Alcanada is Robert Trent Jones Jr. at his most scenic, with its lighthouse visible through much of the round.",
+      "courseBody2": "The right course depends on your group, your game, and what you want the day to feel like. I will recommend honestly and explain why.",
+      "eveningEyebrow": "The evening",
+      "eveningTitle": "Dinner fitted to where you are staying.",
+      "eveningBody": "The evening can be arranged at a recommended hotel or restaurant, or around a private chef where the property and occasion suit it. I coordinate the plan directly so it feels like the final part of the day rather than a separate reservation.",
+      "eveningBody2": "These are recommendations, not formal partners. The final choice depends on your hotel, your dates, and the experience you want.",
+      "extrasEyebrow": "Optional additions",
+      "extrasTitle": "Add only what improves the day.",
+      "extrasBody": "These can be included in the proposal where they suit the group, course, and date.",
+      "pricingEyebrow": "Pricing",
+      "pricingTitle": "Confirmed once the day has a shape.",
+      "pricingBody": "Each Signature Day is priced after the first conversation because the course, group size, transfers, John's availability, and evening plan all affect the scope. Most days are built around a €3,000 core experience.",
+      "pricingBody2": "Your proposal will show exactly what is included, what is subject to availability, and any third-party costs before you commit to anything.",
+      "pricingCta": "Enquire about the Signature Day"
+    }
+  },
   de: {
-    metadata: { title: 'Signature Day Mallorca | Privater Golf-, Recovery- und Dinner-Tag', description: 'Ein privat arrangierter Golftag auf Mallorca mit 18 Löchern mit Andy, einer Recovery- und Sports-Performance-Session mit John Brazier, Transfers und koordiniertem Abend.' },
+    metadata: { title: 'Signature Day Mallorca | Privater Golf-, Recovery- und Dinner-Tag', description: 'Privater Golftag auf Mallorca ab €3,000: Runde mit Andy, Recovery-Session mit John Brazier, Transfers, Abend arrangiert.' },
     breadcrumbHome: 'Startseite', heroImageAlt: 'Andy Griffiths auf einem Golfplatz auf Mallorca im Abendlicht', heroEyebrow: 'Das komplette Erlebnis, Mallorca', heroTitle: 'Ein privater Golftag\nrund um Runde, Körper und Abend.', heroBody: '18 Löcher mit mir, eine Session nach der Runde mit John Brazier (The Golf Doctor), private Transfers und ein Abend, der für Ihre Gruppe arrangiert wird. Eine Person koordiniert den ganzen Tag ab dem ersten Gespräch.', price: 'Preis nach Umfang des Tages', primaryCta: 'Anfragen', secondaryCta: 'Den Tag ansehen', coursesCta: 'Mallorcas Golfplätze entdecken', whatsappLabel: 'WhatsApp schreiben', whatsappHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20ich%20interessiere%20mich%20für%20den%20Signature%20Day.',
     included: ['Platz- und Tagesplanung', 'Private Startzeit', '18 Löcher mit mir', 'Session mit John Brazier', 'Verbundenes Debrief und Prioritäten', 'Private Transfers', 'Abendkoordination'],
     dayStages: [
@@ -80,14 +208,14 @@ const content = {
     },
   },
   es: {
-    metadata: { title: 'Signature Day Mallorca | Golf privado, recuperación y cena', description: 'Un día de golf privado en Mallorca con 18 hoyos con Andy, una sesión de recuperación y rendimiento deportivo con John Brazier, traslados y noche coordinada.' },
+    metadata: { title: 'Signature Day Mallorca | Golf privado, recuperación y cena', description: 'Un día de golf privado en Mallorca desde €3,000: vuelta con Andy, sesión de recuperación con John Brazier, traslados y noche organizada.' },
     breadcrumbHome: 'Inicio', heroImageAlt: 'Andy Griffiths en un campo de golf en Mallorca al atardecer', heroEyebrow: 'La experiencia completa, Mallorca', heroTitle: 'Un día privado de golf\nalrededor de la vuelta, el cuerpo y la noche.', heroBody: '18 hoyos conmigo, una sesión después de la vuelta con John Brazier (The Golf Doctor), traslados privados y una noche organizada para su grupo. Una sola persona coordina todo desde la primera conversación.', price: 'Precio según el día', primaryCta: 'Consultar', secondaryCta: 'Explorar el día', coursesCta: 'Explorar los campos de golf de Mallorca', whatsappLabel: 'Mensaje por WhatsApp', whatsappHref: 'https://wa.me/34624466702?text=Hola%20Andy%2C%20me%20interesa%20el%20Signature%20Day.',
     included: ['Planificación del campo y del día', 'Hora de salida privada', '18 hoyos conmigo', 'Sesión con John Brazier', 'Debrief conectado y prioridades', 'Traslados privados', 'Coordinación de la noche'],
     dayStages: [
       { time: 'Antes del día', title: 'Planificar y confirmar', body: 'Elijo el campo con usted, organizo la hora de salida y los traslados, y coordino la noche. Recibe una propuesta clara antes de reservar nada.' },
       { time: 'La vuelta', title: '18 hoyos juntos', body: 'Juego toda la vuelta con usted y observo decisiones, patrones y movimiento que solo aparecen en condiciones reales. Tomo notas durante el recorrido.' },
       { time: 'Después de la vuelta', title: 'Sesión con John Brazier', body: 'John trabaja en medicina complementaria y alternativa, recuperación y rendimiento deportivo. Usa lo observado en la vuelta para revisar los patrones físicos que hay detrás.' },
-      { time: 'El debrief', title: 'Un plan conectado', body: 'Unimos las observaciones de golf y físicas. Sale sabiendo que paso, que puede estar contribuyendo y que trabajar primero.' },
+      { time: 'El debrief', title: 'Un plan conectado', body: 'Unimos las observaciones de golf y físicas. Sale sabiendo qué pasó, qué puede estar contribuyendo y en qué trabajar primero.' },
       { time: 'La noche', title: 'Un final bien organizado', body: 'El día termina con cena en un hotel o restaurante recomendado, o con chef privado cuando encaje. El plan se construye alrededor de su grupo y donde se aloje.' },
     ],
     optionalExtras: [
@@ -97,13 +225,13 @@ const content = {
       { title: 'Planificación de varios días', text: 'El Signature Day puede formar parte de un itinerario más amplio en Mallorca con otros campos, hoteles y experiencias.' },
     ],
     sections: {
-      overviewEyebrow: 'Que es', overviewTitle: 'Un día completo, no una colección de extras.', overviewBody: 'Juego los 18 hoyos completos con usted y observo como se comporta su juego en condiciones reales. Después de la vuelta, John examina la parte de recuperación y rendimiento físico de lo que hemos visto. Luego unimos ambas perspectivas en prioridades prácticas.', overviewBody2: 'Alrededor del golf, coordino la salida, los traslados privados y una noche en un hotel o restaurante recomendado, o con chef privado si encaja mejor con la ocasión.', overviewPrinciple: 'Las mejoras más rápidas suelen aparecer en el campo, donde las decisiones y el movimiento son reales. El resto del día está pensado para convertir esas observaciones en algo útil.', overviewImageAlt: 'Andy Griffiths entrenando a un golfista en Mallorca', includedTitle: 'Lo que cubre el día central',
-      howEyebrow: 'Como funciona', howTitle: 'Cinco fases. Una experiencia conectada.', howBody: 'Cada fase tiene un propósito claro, y las observaciones de la vuelta siguen presentes durante el resto del día.', whyEyebrow: 'Por que es diferente', whyTitle: 'La vuelta y el cuerpo se consideran juntos.', whyBody: 'Durante la vuelta anoto movimiento, decisiones y patrones repetidos que afectan a su resultado. John después considera la parte de recuperación y rendimiento deportivo de esas observaciones.', whyBody2: 'El valor está en unir esas observaciones. Sale con un orden claro de prioridades, no con sesiones separadas.', johnBody: 'John trabaja en medicina complementaria y alternativa y se especializa en recuperación y rendimiento deportivo.', johnLink: 'Leer sobre el trabajo de John', whyImageAlt: 'Vuelta de cliente en Son Gual Mallorca',
-      courseEyebrow: 'El campo', courseTitle: 'Elegido para su juego y la ocasión.', courseBody: 'Son Gual y Alcanada son mis opciones principales para un día completo serio. Son Gual es mi campo favorito en Mallorca, con un tramo final especialmente fuerte. Alcanada muestra a Robert Trent Jones Jr. en su versión más escénica, con el faro visible durante gran parte de la vuelta.', courseBody2: 'El campo adecuado depende de su grupo, su juego y como quiere que se sienta el día. Recomiendo con honestidad y explico por que.', eveningEyebrow: 'La noche', eveningTitle: 'Cena adaptada a donde se aloje.', eveningBody: 'La noche puede organizarse en un hotel o restaurante recomendado, o con chef privado cuando la propiedad y la ocasión lo permitan. Coordino el plan directamente para que se sienta como la parte final del día.', eveningBody2: 'Son recomendaciones, no socios formales. La elección final depende de su hotel, sus fechas y la experiencia que quiera.', extrasEyebrow: 'Extras opcionales', extrasTitle: 'Añadir solo lo que mejora el día.', extrasBody: 'Estos elementos pueden incluirse en la propuesta cuando encajen con el grupo, el campo y la fecha.', pricingEyebrow: 'Precio', pricingTitle: 'Confirmado cuando el día tiene forma.', pricingBody: 'Cada Signature Day se cotiza después de la primera conversación porque el campo, el tamaño del grupo, los traslados, la disponibilidad de John y el plan de noche afectan al alcance. La mayoría de los días se construyen alrededor de una experiencia central de unos €3,000.', pricingBody2: 'Su propuesta mostrará exactamente que está incluido, que queda sujeto a disponibilidad y cualquier coste de terceros antes de comprometerse.', pricingCta: 'Consultar sobre el Signature Day',
+      overviewEyebrow: 'Qué es', overviewTitle: 'Un día completo, no una colección de extras.', overviewBody: 'Juego los 18 hoyos completos con usted y observo cómo se comporta su juego en condiciones reales. Después de la vuelta, John examina la parte de recuperación y rendimiento físico de lo que hemos visto. Luego unimos ambas perspectivas en prioridades prácticas.', overviewBody2: 'Alrededor del golf, coordino la salida, los traslados privados y una noche en un hotel o restaurante recomendado, o con chef privado si encaja mejor con la ocasión.', overviewPrinciple: 'Las mejoras más rápidas suelen aparecer en el campo, donde las decisiones y el movimiento son reales. El resto del día está pensado para convertir esas observaciones en algo útil.', overviewImageAlt: 'Andy Griffiths entrenando a un golfista en Mallorca', includedTitle: 'Lo que cubre el día central',
+      howEyebrow: 'Cómo funciona', howTitle: 'Cinco fases. Una experiencia conectada.', howBody: 'Cada fase tiene un propósito claro, y las observaciones de la vuelta siguen presentes durante el resto del día.', whyEyebrow: 'Por qué es diferente', whyTitle: 'La vuelta y el cuerpo se consideran juntos.', whyBody: 'Durante la vuelta anoto movimiento, decisiones y patrones repetidos que afectan a su resultado. John después considera la parte de recuperación y rendimiento deportivo de esas observaciones.', whyBody2: 'El valor está en unir esas observaciones. Sale con un orden claro de prioridades, no con sesiones separadas.', johnBody: 'John trabaja en medicina complementaria y alternativa y se especializa en recuperación y rendimiento deportivo.', johnLink: 'Leer sobre el trabajo de John', whyImageAlt: 'Vuelta de cliente en Son Gual Mallorca',
+      courseEyebrow: 'El campo', courseTitle: 'Elegido para su juego y la ocasión.', courseBody: 'Son Gual y Alcanada son mis opciones principales para un día completo serio. Son Gual es mi campo favorito en Mallorca, con un tramo final especialmente fuerte. Alcanada muestra a Robert Trent Jones Jr. en su versión más escénica, con el faro visible durante gran parte de la vuelta.', courseBody2: 'El campo adecuado depende de su grupo, su juego y cómo quiere que se sienta el día. Recomiendo con honestidad y explico por qué.', eveningEyebrow: 'La noche', eveningTitle: 'Cena adaptada a donde se aloje.', eveningBody: 'La noche puede organizarse en un hotel o restaurante recomendado, o con chef privado cuando la propiedad y la ocasión lo permitan. Coordino el plan directamente para que se sienta como la parte final del día.', eveningBody2: 'Son recomendaciones, no socios formales. La elección final depende de su hotel, sus fechas y la experiencia que quiera.', extrasEyebrow: 'Extras opcionales', extrasTitle: 'Añadir solo lo que mejora el día.', extrasBody: 'Estos elementos pueden incluirse en la propuesta cuando encajen con el grupo, el campo y la fecha.', pricingEyebrow: 'Precio', pricingTitle: 'Confirmado cuando el día tiene forma.', pricingBody: 'Cada Signature Day se cotiza después de la primera conversación porque el campo, el tamaño del grupo, los traslados, la disponibilidad de John y el plan de noche afectan al alcance. La mayoría de los días se construyen alrededor de una experiencia central de unos €3,000.', pricingBody2: 'Su propuesta mostrará exactamente qué está incluido, qué queda sujeto a disponibilidad y cualquier coste de terceros antes de comprometerse.', pricingCta: 'Consultar sobre el Signature Day',
     },
   },
   fr: {
-    metadata: { title: 'Signature Day Majorque | Golf privé, récupération et dîner', description: 'Une journée de golf privée à Majorque avec 18 trous avec Andy, une session récupération et performance sportive avec John Brazier, transferts et soirée coordonnée.' },
+    metadata: { title: 'Signature Day Majorque | Golf privé, récupération et dîner', description: 'Une journée de golf privée à Majorque dès €3,000 : partie avec Andy, session récupération avec John Brazier, transferts, soirée organisée.' },
     breadcrumbHome: 'Accueil', heroImageAlt: 'Andy Griffiths sur un parcours de golf à Majorque au coucher du soleil', heroEyebrow: 'L\'expérience complète, Majorque', heroTitle: 'Une journée de golf privée\nautour du parcours, du corps et du soir.', heroBody: '18 trous avec moi, une session après la partie avec John Brazier (The Golf Doctor), des transferts privés et une soirée organisée pour votre groupe. Une seule personne coordonne toute la journée dès le premier échange.', price: 'Tarif adapté à la journée', primaryCta: 'Demander', secondaryCta: 'Explorer la journée', coursesCta: 'Explorer les parcours de golf de Majorque', whatsappLabel: 'Message WhatsApp', whatsappHref: 'https://wa.me/34624466702?text=Bonjour%20Andy%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Signature%20Day.',
     included: ['Planification du parcours et de la journée', 'Départ privé', '18 trous avec moi', 'Session avec John Brazier', 'Débrief connecté et priorités', 'Transferts privés', 'Coordination de la soirée'],
     dayStages: [
@@ -116,15 +244,15 @@ const content = {
     optionalExtras: [
       { title: 'Caddie', text: 'Un caddie adapté peut être demandé si le parcours, la date et la disponibilité le permettent.' },
       { title: 'Vidéo et photographie', text: 'Une couverture professionnelle peut être ajoutée si vous souhaitez documenter la journée.' },
-      { title: 'Location de clubs premium', text: 'Le meilleur matériel adapte disponible au parcours peut être organisé avant votre arrivée.' },
+      { title: 'Location de clubs premium', text: 'Le meilleur matériel adapté disponible au parcours peut être organisé avant votre arrivée.' },
       { title: 'Planification multi-jours', text: 'Le Signature Day peut faire partie d\'un itinéraire plus large à Majorque avec d\'autres parcours, hôtels et expériences.' },
     ],
     sections: {
-      overviewEyebrow: 'Ce que c\'est', overviewTitle: 'Une journée complète, pas une collection d\'options.', overviewBody: 'Je joue les 18 trous avec vous et j\'observe votre jeu en conditions réelles. Après la partie, John examine l\'aspect récupération et performance physique de ce que nous avons vu. Nous relions ensuite les deux lectures en priorités concrètes.', overviewBody2: 'Autour du golf, je coordonne le départ, les transferts privés et une soirée dans un hôtel ou restaurant recommandé, ou avec un chef privé si cela convient mieux à l\'occasion.', overviewPrinciple: 'Les progrès les plus rapides apparaissent souvent sur le parcours, là où les décisions et les mouvements sont réels. Le reste de la journée rend ces observations utiles.', overviewImageAlt: 'Andy Griffiths coachant un golfeur à Majorque', includedTitle: 'Ce que couvre la journée de base', howEyebrow: 'Déroulé', howTitle: 'Cinq étapes. Une expérience connectée.', howBody: 'Chaque étape a un objectif clair, et les observations du parcours traversent le reste de la journée.', whyEyebrow: 'Pourquoi c\'est différent', whyTitle: 'Le parcours et le corps sont regardés ensemble.', whyBody: 'Pendant la partie, je note les mouvements, décisions et schémas récurrents qui influencent votre score. John considère ensuite l\'aspect récupération et performance sportive de ces observations.', whyBody2: 'La valeur vient du lien entre ces observations. Vous repartez avec un ordre clair de priorités, pas avec des sessions séparées.', johnBody: 'John travaille en médecine complémentaire et alternative et se spécialisé en récupération et performance sportive.', johnLink: 'Lire le travail de John', whyImageAlt: 'Partie client à Son Gual Mallorca', courseEyebrow: 'Le parcours', courseTitle: 'Choisi pour votre jeu et l\'occasion.', courseBody: 'Son Gual et Alcanada sont mes choix principaux pour une vraie journée complète. Son Gual est mon parcours préféré à Majorque, avec une fin de parcours particulièrement forte. Alcanada montre Robert Trent Jones Jr. dans sa version la plus scénique, avec le phare visible pendant une grande partie du tour.', courseBody2: 'Le bon parcours dépend de votre groupe, de votre jeu et du ton que vous voulez donner à la journée. Je recommande franchement et j\'explique pourquoi.', eveningEyebrow: 'La soirée', eveningTitle: 'Un dîner adapté à votre lieu de séjour.', eveningBody: 'La soirée peut être arrangée dans un hôtel ou restaurant recommandé, ou autour d\'un chef privé lorsque la propriété et l\'occasion s\'y prêtent. Je coordonne le plan directement pour qu\'il ressemble à la dernière partie de la journée.', eveningBody2: 'Ce sont des recommandations, pas des partenaires formels. Le choix final dépend de votre hôtel, de vos dates et de l\'expérience souhaitée.', extrasEyebrow: 'Options', extrasTitle: 'Ajouter seulement ce qui améliore la journée.', extrasBody: 'Ces éléments peuvent être inclus dans la proposition lorsqu\'ils conviennent au groupe, au parcours et à la date.', pricingEyebrow: 'Tarif', pricingTitle: 'Confirme lorsque la journée a pris forme.', pricingBody: 'Chaque Signature Day est chiffre après le premier échange, car le parcours, la taille du groupe, les transferts, la disponibilité de John et la soirée modifient le périmètre. La plupart des journées sont construites autour d\'une expérience de base d\'environ €3,000.', pricingBody2: 'Votre proposition indiquera exactement ce qui est inclus, ce qui dépend de la disponibilité et les éventuels coûts tiers avant tout engagement.', pricingCta: 'Demander le Signature Day',
+      overviewEyebrow: 'Ce que c\'est', overviewTitle: 'Une journée complète, pas une collection d\'options.', overviewBody: 'Je joue les 18 trous avec vous et j\'observe votre jeu en conditions réelles. Après la partie, John examine l\'aspect récupération et performance physique de ce que nous avons vu. Nous relions ensuite les deux lectures en priorités concrètes.', overviewBody2: 'Autour du golf, je coordonne le départ, les transferts privés et une soirée dans un hôtel ou restaurant recommandé, ou avec un chef privé si cela convient mieux à l\'occasion.', overviewPrinciple: 'Les progrès les plus rapides apparaissent souvent sur le parcours, là où les décisions et les mouvements sont réels. Le reste de la journée rend ces observations utiles.', overviewImageAlt: 'Andy Griffiths coachant un golfeur à Majorque', includedTitle: 'Ce que couvre la journée de base', howEyebrow: 'Déroulé', howTitle: 'Cinq étapes. Une expérience connectée.', howBody: 'Chaque étape a un objectif clair, et les observations du parcours traversent le reste de la journée.', whyEyebrow: 'Pourquoi c\'est différent', whyTitle: 'Le parcours et le corps sont regardés ensemble.', whyBody: 'Pendant la partie, je note les mouvements, décisions et schémas récurrents qui influencent votre score. John considère ensuite l\'aspect récupération et performance sportive de ces observations.', whyBody2: 'La valeur vient du lien entre ces observations. Vous repartez avec un ordre clair de priorités, pas avec des sessions séparées.', johnBody: 'John travaille en médecine complémentaire et alternative et se spécialise en récupération et performance sportive.', johnLink: 'Lire le travail de John', whyImageAlt: 'Partie client à Son Gual Mallorca', courseEyebrow: 'Le parcours', courseTitle: 'Choisi pour votre jeu et l\'occasion.', courseBody: 'Son Gual et Alcanada sont mes choix principaux pour une vraie journée complète. Son Gual est mon parcours préféré à Majorque, avec une fin de parcours particulièrement forte. Alcanada montre Robert Trent Jones Jr. dans sa version la plus scénique, avec le phare visible pendant une grande partie du tour.', courseBody2: 'Le bon parcours dépend de votre groupe, de votre jeu et du ton que vous voulez donner à la journée. Je recommande franchement et j\'explique pourquoi.', eveningEyebrow: 'La soirée', eveningTitle: 'Un dîner adapté à votre lieu de séjour.', eveningBody: 'La soirée peut être arrangée dans un hôtel ou restaurant recommandé, ou autour d\'un chef privé lorsque la propriété et l\'occasion s\'y prêtent. Je coordonne le plan directement pour qu\'il ressemble à la dernière partie de la journée.', eveningBody2: 'Ce sont des recommandations, pas des partenaires formels. Le choix final dépend de votre hôtel, de vos dates et de l\'expérience souhaitée.', extrasEyebrow: 'Options', extrasTitle: 'Ajouter seulement ce qui améliore la journée.', extrasBody: 'Ces éléments peuvent être inclus dans la proposition lorsqu\'ils conviennent au groupe, au parcours et à la date.', pricingEyebrow: 'Tarif', pricingTitle: 'Confirmé lorsque la journée a pris forme.', pricingBody: 'Chaque Signature Day est chiffré après le premier échange, car le parcours, la taille du groupe, les transferts, la disponibilité de John et la soirée modifient le périmètre. La plupart des journées sont construites autour d\'une expérience de base d\'environ €3,000.', pricingBody2: 'Votre proposition indiquera exactement ce qui est inclus, ce qui dépend de la disponibilité et les éventuels coûts tiers avant tout engagement.', pricingCta: 'Demander le Signature Day',
     },
   },
   nl: {
-    metadata: { title: 'Signature Day Mallorca | Privé golf, herstel en diner', description: 'Een privé geregelde golfdag op Mallorca met 18 holes met Andy, een herstel- en sportprestatiesessie met John Brazier, transfers en een georganiseerde avond.' },
+    metadata: { title: 'Signature Day Mallorca | Privé golf, herstel en diner', description: 'Een privé golfdag op Mallorca vanaf €3,000: ronde met Andy, herstelsessie met John Brazier, transfers, avond geregeld.' },
     breadcrumbHome: 'Home', heroImageAlt: 'Andy Griffiths op een golfbaan in Mallorca bij avondlicht', heroEyebrow: 'De complete ervaring, Mallorca', heroTitle: 'Een privé golfdag\nrond de ronde, het lichaam en de avond.', heroBody: '18 holes met mij, een sessie na de ronde met John Brazier (The Golf Doctor), privé transfers en een avond geregeld voor uw groep. Een persoon coördineert de hele dag vanaf het eerste gesprek.', price: 'Prijs afgestemd op de dag', primaryCta: 'Aanvragen', secondaryCta: 'Bekijk de dag', coursesCta: 'Ontdek de golfbanen van Mallorca', whatsappLabel: 'WhatsApp sturen', whatsappHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20ik%20ben%20ge%C3%AFnteresseerd%20in%20de%20Signature%20Day.',
     included: ['Baan- en dagplanning', 'Privé starttijd', '18 holes met mij', 'Sessie met John Brazier', 'Verbonden debrief en prioriteiten', 'Privé transfers', 'Avondcoördinatie'],
     dayStages: [
@@ -145,7 +273,7 @@ const content = {
     },
   },
   sv: {
-    metadata: { title: 'Signature Day Mallorca | Privat golf, återhämtning och middag', description: 'En privat arrangerad golfdag på Mallorca med 18 hål med Andy, en återhämtnings- och sportprestationssession med John Brazier, transfers och koordinerad kväll.' },
+    metadata: { title: 'Signature Day Mallorca | Privat golf, återhämtning och middag', description: 'En privat golfdag på Mallorca från €3,000: runda med Andy, återhämtningssession med John Brazier, transfers, kväll arrangerad.' },
     breadcrumbHome: 'Hem', heroImageAlt: 'Andy Griffiths på en golfbana på Mallorca i kvällsljus', heroEyebrow: 'Den kompletta upplevelsen, Mallorca', heroTitle: 'En privat golfdag\nrunt rundan, kroppen och kvällen.', heroBody: '18 hål med mig, en session efter rundan med John Brazier (The Golf Doctor), privata transfers och en kväll arrangerad för din grupp. En person koordinerar hela dagen från första samtalet.', price: 'Pris anpassat efter dagen', primaryCta: 'Förfrågan', secondaryCta: 'Utforska dagen', coursesCta: 'Utforska Mallorcas golfbanor', whatsappLabel: 'Meddela på WhatsApp', whatsappHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20jag%20%C3%A4r%20intresserad%20av%20Signature%20Day.',
     included: ['Bana och dagsplanering', 'Privat starttid', '18 hål med mig', 'Session med John Brazier', 'Sammanhängande debrief och prioriteringar', 'Privata transfers', 'Kvällskoordinering'],
     dayStages: [
@@ -159,14 +287,14 @@ const content = {
       { title: 'Caddy', text: 'En lämplig caddy kan efterfrågas när bana, datum och tillgänglighet tillåter.' },
       { title: 'Video och foto', text: 'Professionell dokumentation kan läggas till om du vill ha dagen bevarad.' },
       { title: 'Premiumklubbor', text: 'Den bästa lämpliga utrustningen på banan kan ordnas innan du kommer.' },
-      { title: 'Flerdagarsplanering', text: 'Signature Day kan inga i en bredare Mallorca-resplan med fler banor, hotell och upplevelser.' },
+      { title: 'Flerdagarsplanering', text: 'Signature Day kan ingå i en bredare Mallorca-resplan med fler banor, hotell och upplevelser.' },
     ],
     sections: {
-      overviewEyebrow: 'Vad det är', overviewTitle: 'En komplett dag, inte en samling tillägg.', overviewBody: 'Jag spelar hela 18 hål med dig och ser hur ditt spel beter sig under riktiga förhållanden. Efter rundan tittar John på återhämtnings- och sportprestationsdelen av det vi observerade. Sedan för vi ihop båda perspektiven till praktiska prioriteringar.', overviewBody2: 'Runt golfen koordinerar jag starttid, privata transfers och en kväll på ett rekommenderat hotell eller restaurang, eller med privat kock när det passar tillfället bättre.', overviewPrinciple: 'De snabbaste förbättringarna sker ofta på banan, där beslut och rörelse är verkliga. Resten av dagen gör observationerna användbara.', overviewImageAlt: 'Andy Griffiths coachar en golfare på Mallorca', includedTitle: 'Vad kärndagen omfattar', howEyebrow: 'Hur dagen går', howTitle: 'Fem steg. En sammanhängande upplevelse.', howBody: 'Varje steg har ett tydligt syfte, och observationerna från rundan följer med genom resten av dagen.', whyEyebrow: 'Varför det är annorlunda', whyTitle: 'Rundan och kroppen ses tillsammans.', whyBody: 'Under rundan antecknar jag rörelse, beslut och återkommande mönster som påverkar din score. John tittar sedan på återhämtnings- och sportprestationsdelen av observationerna.', whyBody2: 'Värdet ligger i att knyta ihop observationerna. Du går därifrån med en tydlig prioriteringsordning, inte separata sessioner.', johnBody: 'John arbetar med komplementär och alternativ medicin och specialiserar sig på återhämtning och sportprestation.', johnLink: 'Las om Johns arbete', whyImageAlt: 'Kundrunda på Son Gual Mallorca', courseEyebrow: 'Banan', courseTitle: 'Vald för ditt spel och tillfället.', courseBody: 'Son Gual och Alcanada är mina förstahandsval för en seriös heldag. Son Gual är min favoritbana på Mallorca, med en särskilt stark avslutning. Alcanada visar Robert Trent Jones Jr. från hans mest sceniska sida, med fyren synlig under stora delar av rundan.', courseBody2: 'Rätt bana beror på din grupp, ditt spel och hur du vill att dagen ska kännas. Jag rekommenderar ärligt och förklarar varför.', eveningEyebrow: 'Kvällen', eveningTitle: 'Middag anpassad till där du bor.', eveningBody: 'Kvällen kan arrangeras på ett rekommenderat hotell eller restaurang, eller med privat kock när boendet och tillfället passar. Jag koordinerar planen direkt så att den känns som den sista delen av dagen.', eveningBody2: 'Detta är rekommendationer, inte formella partners. Det slutliga valet beror på hotell, datum och vilken upplevelse du vill ha.', extrasEyebrow: 'Valfria tillägg', extrasTitle: 'Lägg bara till det som gör dagen bättre.', extrasBody: 'Dessa delar kan inga i förslaget när de passar gruppen, banan och datumet.', pricingEyebrow: 'Pris', pricingTitle: 'Bekräftas när dagen har form.', pricingBody: 'Varje Signature Day prissatts efter första samtalet eftersom bana, gruppstorlek, transfers, Johns tillgänglighet och kvällsplan påverkar omfattningen. De flesta dagar byggs runt en kärnupplevelse på cirka €3,000.', pricingBody2: 'Ditt förslag visar exakt vad som ingår, vad som är beroende av tillgänglighet och eventuella tredjepartskostnader innan du bestämmer dig.', pricingCta: 'Fråga om Signature Day',
+      overviewEyebrow: 'Vad det är', overviewTitle: 'En komplett dag, inte en samling tillägg.', overviewBody: 'Jag spelar hela 18 hål med dig och ser hur ditt spel beter sig under riktiga förhållanden. Efter rundan tittar John på återhämtnings- och sportprestationsdelen av det vi observerade. Sedan för vi ihop båda perspektiven till praktiska prioriteringar.', overviewBody2: 'Runt golfen koordinerar jag starttid, privata transfers och en kväll på ett rekommenderat hotell eller restaurang, eller med privat kock när det passar tillfället bättre.', overviewPrinciple: 'De snabbaste förbättringarna sker ofta på banan, där beslut och rörelse är verkliga. Resten av dagen gör observationerna användbara.', overviewImageAlt: 'Andy Griffiths coachar en golfare på Mallorca', includedTitle: 'Vad kärndagen omfattar', howEyebrow: 'Hur dagen går', howTitle: 'Fem steg. En sammanhängande upplevelse.', howBody: 'Varje steg har ett tydligt syfte, och observationerna från rundan följer med genom resten av dagen.', whyEyebrow: 'Varför det är annorlunda', whyTitle: 'Rundan och kroppen ses tillsammans.', whyBody: 'Under rundan antecknar jag rörelse, beslut och återkommande mönster som påverkar din score. John tittar sedan på återhämtnings- och sportprestationsdelen av observationerna.', whyBody2: 'Värdet ligger i att knyta ihop observationerna. Du går därifrån med en tydlig prioriteringsordning, inte separata sessioner.', johnBody: 'John arbetar med komplementär och alternativ medicin och specialiserar sig på återhämtning och sportprestation.', johnLink: 'Läs om Johns arbete', whyImageAlt: 'Kundrunda på Son Gual Mallorca', courseEyebrow: 'Banan', courseTitle: 'Vald för ditt spel och tillfället.', courseBody: 'Son Gual och Alcanada är mina förstahandsval för en seriös heldag. Son Gual är min favoritbana på Mallorca, med en särskilt stark avslutning. Alcanada visar Robert Trent Jones Jr. från hans mest sceniska sida, med fyren synlig under stora delar av rundan.', courseBody2: 'Rätt bana beror på din grupp, ditt spel och hur du vill att dagen ska kännas. Jag rekommenderar ärligt och förklarar varför.', eveningEyebrow: 'Kvällen', eveningTitle: 'Middag anpassad till där du bor.', eveningBody: 'Kvällen kan arrangeras på ett rekommenderat hotell eller restaurang, eller med privat kock när boendet och tillfället passar. Jag koordinerar planen direkt så att den känns som den sista delen av dagen.', eveningBody2: 'Detta är rekommendationer, inte formella partners. Det slutliga valet beror på hotell, datum och vilken upplevelse du vill ha.', extrasEyebrow: 'Valfria tillägg', extrasTitle: 'Lägg bara till det som gör dagen bättre.', extrasBody: 'Dessa delar kan ingå i förslaget när de passar gruppen, banan och datumet.', pricingEyebrow: 'Pris', pricingTitle: 'Bekräftas när dagen har form.', pricingBody: 'Varje Signature Day prissätts efter första samtalet eftersom bana, gruppstorlek, transfers, Johns tillgänglighet och kvällsplan påverkar omfattningen. De flesta dagar byggs runt en kärnupplevelse på cirka €3,000.', pricingBody2: 'Ditt förslag visar exakt vad som ingår, vad som är beroende av tillgänglighet och eventuella tredjepartskostnader innan du bestämmer dig.', pricingCta: 'Fråga om Signature Day',
     },
   },
   zh: {
-    metadata: { title: 'Signature Day Mallorca | 私人高尔夫、恢复与晚餐', description: '在马略卡私人安排的一天高尔夫体验：与 Andy 同打 18 洞，John Brazier 进行恢复与运动表现环节，私人接送，并安排晚间体验。' },
+    metadata: { title: 'Signature Day Mallorca | 私人高尔夫、恢复与晚餐', description: '马略卡私人高尔夫日，€3,000 起：与 Andy 同打一轮，John Brazier 的恢复环节，私人接送，晚间安排。' },
     breadcrumbHome: '首页', heroImageAlt: 'Andy Griffiths 在马略卡高尔夫球场的黄昏', heroEyebrow: '完整体验，马略卡', heroTitle: '私人高尔夫日\n围绕球局、身体和夜晚安排。', heroBody: '与我同打 18 洞，球后与 John Brazier（The Golf Doctor）进行一节恢复与运动表现环节，私人接送，并为您的同行人员安排晚间体验。从第一次沟通开始，由一个人协调整天。', price: '按当天范围报价', primaryCta: '咨询', secondaryCta: '了解这一天', coursesCta: '探索马略卡高尔夫球场', whatsappLabel: 'WhatsApp 联系', whatsappHref: 'https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20the%20Signature%20Day.',
     included: ['球场与当天规划', '私人开球时段', '与我同打 18 洞', 'John Brazier 环节', '连贯复盘与优先事项', '私人接送', '晚间安排协调'],
     dayStages: [
