@@ -68,11 +68,11 @@ const content = {
         "caption": "Hoyo 7. Los muros de piedra bloquean la vista del green desde el tee. Se elige una línea y se ejecuta sin ver adónde se va."
       },
       {
-        "text": "El hoyo 12 tiene un dogleg pronunciado a la derecha y vistas sobre Camp del Mar durante todo el hoyo. Uno de los más memorables del campo. El hoyo 15, Hello Mrs Robinson, juega unos 20 metros más corto desde un tee muy elevado, algo que parece una ventaja hasta que se comprende que el green está bien protegido y acertar el número correcto en esa situación es más difícil de lo que parece."
+        "text": "El hoyo 12 tiene un dogleg pronunciado a la derecha y vistas sobre Camp del Mar durante todo el hoyo. Uno de los más memorables del campo. El hoyo 15, Hello Mrs Robinson, juega unas 20 yardas más corto desde un tee muy elevado, algo que parece una ventaja hasta que se comprende que el green está bien protegido y acertar el número correcto en esa situación es más difícil de lo que parece."
       },
       {
         "alt": "Salida elevada en el hoyo 15, Hello Mrs Robinson, en Golf de Andratx",
-        "caption": "Hoyo 15, Hello Mrs Robinson. La caída desde el tee hace que juegue unos 20 metros más corto. El control de la distancia es todo el desafío aquí."
+        "caption": "Hoyo 15, Hello Mrs Robinson. La caída desde el tee hace que juegue unas 20 yardas más corto. El control de la distancia es todo el desafío aquí."
       },
       {
         "text": "El hoyo 18 cierra con agua que dificulta atacar el par 5 en dos, y búnkeres que protegen bien desde ahí. Un hoyo de cierre exigente."
@@ -226,11 +226,11 @@ const content = {
         "caption": "Loch 7. Die Steinmauern verdecken vom Abschlag aus den Blick auf das Green. Man wählt eine Linie und zieht durch, ohne zu sehen, wo man landet."
       },
       {
-        "text": "Loch 12 hat einen scharfen Dogleg rechts und bietet die gesamte Spiellange hindurch Ausblicke über Camp del Mar. Eines der einprägsamsten auf dem Platz. Loch 15, Hello Mrs Robinson, spielt dank des stark erhöhten Abschlags rund 20 Meter kürzer, was sich erst nützlich anhört, bis man erkennt, dass das Green gut geschützt ist und die richtige Schlagweite in dieser Situation schwieriger ist als sie aussieht."
+        "text": "Loch 12 hat einen scharfen Dogleg rechts und bietet die gesamte Spiellänge hindurch Ausblicke über Camp del Mar. Eines der einprägsamsten auf dem Platz. Loch 15, Hello Mrs Robinson, spielt dank des stark erhöhten Abschlags rund 20 Yards kürzer, was sich erst nützlich anhört, bis man erkennt, dass das Green gut geschützt ist und die richtige Schlagweite in dieser Situation schwieriger ist als sie aussieht."
       },
       {
         "alt": "Erhöhter Abschlag an Loch 15, Hello Mrs Robinson, auf dem Golf de Andratx",
-        "caption": "Loch 15, Hello Mrs Robinson. Der Abfall vom Abschlag spielt rund 20 Meter kürzer. Distanzkontrolle ist hier die einzige Herausforderung."
+        "caption": "Loch 15, Hello Mrs Robinson. Der Abfall vom Abschlag spielt rund 20 Yards kürzer. Distanzkontrolle ist hier die einzige Herausforderung."
       },
       {
         "text": "Loch 18 schließt ab mit Wasser, das das Par 5 schwer in zwei angreifbar macht, und Bunkern, die von dort gut schützen. Ein starkes Schlussloch."
@@ -299,7 +299,7 @@ const content = {
           ],
           [
             "Wo Besucher Schläge verlieren",
-            "Der häufigste Fehler ist zu denken, die Herausforderung sei nur die Lange. Die großen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Höhenunterschieden auf kurzen Löchern und Problemen, die Sie vom Tee nicht voll sehen."
+            "Der häufigste Fehler ist zu denken, die Herausforderung sei nur die Länge. Die großen Zahlen kommen hier viel eher von schlechter Distanzkontrolle in Querhindernisse, massiven Höhenunterschieden auf kurzen Löchern und Problemen, die Sie vom Tee nicht voll sehen."
           ],
           [
             "Clubhaus-Tipp",
@@ -384,11 +384,11 @@ const content = {
         "caption": "Trou 7. Les murs en pierre bloquent la vue du green depuis le départ. On choisit une ligne et on s'engage sans voir où l'on va."
       },
       {
-        "text": "Le trou 12 a un dogleg serré à droite et offre une vue sur Camp del Mar tout au long du trou. L'un des plus mémorables du parcours. Le trou 15, Hello Mrs Robinson, joue environ 20 mètres plus court depuis un départ très surélevé, ce qui semble avantageux jusqu'à ce qu'on réalise que le green est bien protégé et que trouver le bon chiffre dans cette situation est plus difficile qu'il n'y paraît."
+        "text": "Le trou 12 a un dogleg serré à droite et offre une vue sur Camp del Mar tout au long du trou. L'un des plus mémorables du parcours. Le trou 15, Hello Mrs Robinson, joue environ 20 yards plus court depuis un départ très surélevé, ce qui semble avantageux jusqu'à ce qu'on réalise que le green est bien protégé et que trouver le bon chiffre dans cette situation est plus difficile qu'il n'y paraît."
       },
       {
         "alt": "Départ surélevé au trou 15, Hello Mrs Robinson, au Golf de Andratx",
-        "caption": "Trou 15, Hello Mrs Robinson. La chute depuis le départ fait jouer le trou environ 20 mètres plus court. Le contrôle des distances est tout l'enjeu ici."
+        "caption": "Trou 15, Hello Mrs Robinson. La chute depuis le départ fait jouer le trou environ 20 yards plus court. Le contrôle des distances est tout l'enjeu ici."
       },
       {
         "text": "Le trou 18 se termine avec de l'eau qui rend l'attaque du par 5 en deux coups difficile, et des bunkers qui protègent bien depuis cet endroit. Un trou de clôture solide."
@@ -540,11 +540,11 @@ const content = {
         "caption": "Hole 7. De stenen muren blokkeren het zicht op het green vanaf de afslagplaats. Je kiest een lijn en slaat blind, zonder te zien waar je naartoe gaat."
       },
       {
-        "text": "Hole 12 heeft een scherpe dogleg rechts en biedt over de gehele lengte van het hole uitzicht op Camp del Mar. Een van de meest memorabele op de baan. Hole 15, Hello Mrs Robinson, speelt door de sterk verhoogde afslagplaats zo'n 20 meter korter, wat handig klinkt totdat je beseft dat het green goed beschermd is en het juiste metrage vinden in die situatie moeilijker is dan het lijkt."
+        "text": "Hole 12 heeft een scherpe dogleg rechts en biedt over de gehele lengte van het hole uitzicht op Camp del Mar. Een van de meest memorabele op de baan. Hole 15, Hello Mrs Robinson, speelt door de sterk verhoogde afslagplaats zo'n 20 yards korter, wat handig klinkt totdat je beseft dat het green goed beschermd is en het juiste metrage vinden in die situatie moeilijker is dan het lijkt."
       },
       {
         "alt": "Verhoogde afslag op hole 15, Hello Mrs Robinson, bij Golf de Andratx",
-        "caption": "Hole 15, Hello Mrs Robinson. De daling vanaf de tee maakt dat het hole zo'n 20 meter korter speelt. Afstandscontrole is hier de enige uitdaging."
+        "caption": "Hole 15, Hello Mrs Robinson. De daling vanaf de tee maakt dat het hole zo'n 20 yards korter speelt. Afstandscontrole is hier de enige uitdaging."
       },
       {
         "text": "Hole 18 eindigt met water dat de par 5 moeilijk in twee te bereiken maakt, en bunkers die daarvandaan goed beschermen. Een sterke slothole."

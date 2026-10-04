@@ -53,7 +53,7 @@ const content = {
         "text": "Los tees de atrás"
       },
       {
-        "text": "Estar en los tees elevados del fondo es una experiencia en sí misma. Te sientes intocable, tan lejos de todo lo demás que la gente abajo parece un punto diminuto. El faro detrás, la bahía delante, y un driver a punto de salir hacia el vacío. Esa es la sensación."
+        "text": "Estar en los tees elevados del fondo es una experiencia en sí misma. Te sientes intocable, tan lejos de todo lo demás que la gente abajo parece un punto diminuto. El faro delante, la bahía que se extiende, y un driver a punto de salir hacia el vacío. Esa es la sensación."
       },
       {
         "text": "Estar en los tees de atrás de Alcanada es increíble. Te sientes intocable. Muy lejos del resto del mundo. Todo el mundo parece un punto pequeño y tú estás ahí arriba, listo para lanzar el driver al vacío."
@@ -224,7 +224,7 @@ const content = {
         "text": "Die hinteren Abschläge"
       },
       {
-        "text": "Auf den erhöhten Back Tees zu stehen, ist ein Erlebnis für sich. Man fühlt sich unantastbar - so weit entfernt von allem anderen, dass alle unten wie kleine Punkte wirken. Der Leuchtturm hinter Ihnen, die Bucht vor Ihnen, und gleich schlagen Sie irgendwo in die Weite einen Driver. Genau das ist das Gefühl."
+        "text": "Auf den erhöhten Back Tees zu stehen, ist ein Erlebnis für sich. Man fühlt sich unantastbar - so weit entfernt von allem anderen, dass alle unten wie kleine Punkte wirken. Der Leuchtturm vor Ihnen, die Bucht, die sich ausbreitet, und gleich schlagen Sie irgendwo in die Weite einen Driver. Genau das ist das Gefühl."
       },
       {
         "text": "Auf den hinteren Abschlägen von Alcanada zu stehen, ist unglaublich. Man fühlt sich unantastbar. So weit weg vom Rest der Welt. Alle sehen wie kleine Punkte aus und man steht dort oben, erhöht, bereit, den Driver ins Nichts zu schicken."
@@ -286,7 +286,7 @@ const content = {
         "text": "Praktische Informationen"
       },
       {
-        "text": "Greenfees 2026: €115 in der Nebensaison von Januar bis Dezember und bis zu €230 in den Spitzenzeiten März bis Mai sowie September bis Oktober. Die vollständige Saisonübersicht steht auf golf-alcanada.com. Für Spieler ohne spanische Föderationslizenz fällt zusätzlich eine tägliche Golflizenz von €3 pro Person an."
+        "text": "Greenfees 2026: 115 € in der Nebensaison (Januar, Dezember) und bis zu 230 € in den Spitzenzeiten (März bis Mai, September bis Oktober). Die vollständige Saisonübersicht steht auf golf-alcanada.com. Für Spieler ohne spanische Föderationslizenz fällt zusätzlich eine tägliche Golflizenz von 3 € pro Person an."
       },
       {
         "text": "Leihschläger: TaylorMade-Sets für €38 pro 18 Löcher. Buggy €48, Elektrotrolley €20. Die Toptracer-Range ist hervorragend für ein richtiges Warm-up - nutzen Sie sie."
@@ -303,7 +303,7 @@ const content = {
           ],
           [
             "Wind-Tipp",
-            "Behandeln Sie die offenen Löcher mit Respekt. Die Seeluft kann eine bequeme Distanz plötzlich wie einen Schläger langer spielen lassen, besonders wenn Sie auf den Back Nine gegen den Wind spielen."
+            "Behandeln Sie die offenen Löcher mit Respekt. Die Seeluft kann eine bequeme Distanz plötzlich wie einen Schläger länger spielen lassen, besonders wenn Sie auf den Back Nine gegen den Wind spielen."
           ],
           [
             "Wo Besucher Schläge verlieren",
@@ -395,7 +395,7 @@ const content = {
         "text": "Les départs arrière"
       },
       {
-        "text": "Se tenir sur les back tees est une expérience à part entière. On se sent intouchable, si loin de tout le reste que les gens en contrebas ressemblent à de minuscules points. Le phare derrière vous, la baie qui s'ouvre devant, et un driver à lancer quelque part dans l'immensité. C'est exactement cette sensation."
+        "text": "Se tenir sur les back tees est une expérience à part entière. On se sent intouchable, si loin de tout le reste que les gens en contrebas ressemblent à de minuscules points. Le phare devant vous, la baie qui s'étend, et un driver à lancer quelque part dans l'immensité. C'est exactement cette sensation."
       },
       {
         "text": "Se tenir sur les départs arrière d'Alcanada, c'est incroyable. On se sent intouchable. Si loin du reste du monde. Tout le monde ressemble à un petit point, et vous êtes là-haut, prêt à envoyer le driver dans le vide."
@@ -564,7 +564,7 @@ const content = {
         "text": "De achterste tees"
       },
       {
-        "text": "Op de verhoogde back tees staan is een ervaring op zich. Je voelt je onaantastbaar, zo ver weg van alles dat iedereen beneden eruitziet als een stipje. De vuurtoren achter je, de baai voor je, en jij staat op het punt ergens de diepte in te slaan met een driver. Dat is precies het gevoel."
+        "text": "Op de verhoogde back tees staan is een ervaring op zich. Je voelt je onaantastbaar, zo ver weg van alles dat iedereen beneden eruitziet als een stipje. De vuurtoren voor je, de baai die zich uitstrekt, en jij staat op het punt ergens de diepte in te slaan met een driver. Dat is precies het gevoel."
       },
       {
         "text": "Op de achterste tees van Alcanada staan is geweldig. Je voelt je onaantastbaar. Zo ver van de rest van de wereld. Iedereen lijkt een stipje en jij staat daar boven, klaar om de driver ergens de leegte in te slaan."
@@ -735,7 +735,7 @@ const content = {
         "text": "De bakre tees"
       },
       {
-        "text": "Att stå på de upphöjda back tees är en upplevelse i sig. Man känner sig nästan oberörbar, så långt från allt annat att människorna där nere ser ut som små prickar. Fyren bakom dig, bukten framför dig och så en driver som ska skickas ut i tomrummet. Det är känslan."
+        "text": "Att stå på de upphöjda back tees är en upplevelse i sig. Man känner sig nästan oberörbar, så långt från allt annat att människorna där nere ser ut som små prickar. Fyren framför dig, bukten som breder ut sig och så en driver som ska skickas ut i tomrummet. Det är känslan."
       },
       {
         "text": "Att stå på de bakre tees på Alcanada är otroligt. Man känner sig oberörbar. Så långt bort från resten av världen. Alla ser ut som små prickar och du står där uppe, redo att slå en driver ut i intet."
@@ -906,7 +906,7 @@ const content = {
         "text": "后发球台"
       },
       {
-        "text": "站在高起的后发球台本身就是一种体验。你会感觉自己高高在上，仿佛与其他一切都隔开了，下面的人看起来就像一个小点。灯塔在你身后，海湾在你眼前，而你即将把一号木挥向远方。那种感觉很特别。"
+        "text": "站在高起的后发球台本身就是一种体验。你会感觉自己高高在上，仿佛与其他一切都隔开了，下面的人看起来就像一个小点。灯塔就在你面前，海湾向远处铺开，而你即将把一号木挥向远方。那种感觉很特别。"
       },
       {
         "text": "站在Alcanada的后发球台上真的很震撼。你会感觉自己高高在上，离整个世界都很远。所有人都像小点，而你站在那里，准备把一号木打向一片开阔。"

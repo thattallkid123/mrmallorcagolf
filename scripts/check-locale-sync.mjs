@@ -397,8 +397,6 @@ function typographyFindings() {
   for (const s of sources) {
     for (const r of collect(s)) {
       if (/^(https?:|\/)/.test(r.tr)) continue
-      // testimonials stay word for word unless Andy approves a change (check:testimonial-integrity)
-      if (/testimonial/i.test(r.path)) continue
       const plain = r.tr.replace(/<[^>]+>/g, ' ')
       for (const rule of TYPO_RULES) {
         if (rule.lc !== r.locale) continue

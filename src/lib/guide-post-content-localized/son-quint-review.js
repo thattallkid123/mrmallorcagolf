@@ -217,7 +217,7 @@ const content = {
         "text": "So spielt sich der Platz"
       },
       {
-        "text": "Wir sind alle 18 Löcher gelaufen. Die Front Nine sind deutlich flacher und leicht zu gehen. Ich habe viele Eisen vom Abschlag gespielt, damit die Runde mit meinem Kunden gesellig blieb, aber selbst dann gab es von den weißen (hinteren) Abschlägen aus, mit einem Eisen um die 230 Yards vom Tee, noch genug zu bedenken. Der Son Quint ist der neueste Platz der Arabella Golf Gruppe und gilt allgemein als der freundlichste der vier. Dieser Ruf sollte nicht mit leicht verwechselt werden."
+        "text": "Wir sind alle 18 Löcher gelaufen. Die Front Nine sind deutlich flacher und leicht zu gehen. Ich habe viele Eisen vom Abschlag gespielt, damit die Runde mit meinem Kunden gesellig blieb, aber selbst dann gab es von den weißen (hinteren) Abschlägen aus, mit einem Eisen um die 230 Yards vom Tee, noch genug zu bedenken. Der Son Quint ist der neueste Platz der Arabella Golf Gruppe und gilt allgemein als der freundlichste der vier. Dieser Ruf sollte nicht mit „einfach“ verwechselt werden."
       },
       {
         "text": "Mehrere Greens liegen über dem Fairway, deshalb muss das kurze Spiel präzise sein. Das zählt hier mehr als sonst, weil die Greens fest sind und ziemlich viele der heutigen Fahnen nah am Rand steckten. Die Greens selbst waren auf den ersten Löchern spürbar langsamer, mit dem Tau noch darauf, und wurden richtig schnell, sobald das Greenkeeping-Team durch war und gemäht hatte."
@@ -312,7 +312,7 @@ const content = {
         "text": "Häufige Fragen"
       },
       {
-        "text": "Das Handicap-Limit liegt bei 54 für Herren und Damen, bei der Buchung ist ein Handicap-Nachweis nötig. Der Platz ist komplett begehbar; die Front Nine sind flach, die Back Nine haben mehr Anstiege, aber nichts, was einen halbwegs fitten Spieler überfordern sollte. Der Son Quint passt zu Golfern jedes Niveaus: Die Fairways sind breit und es gibt vier Abschlagspositionen, aber feste, wellige Greens und mehrere Fahnen hinten auf dem Green halten auch einen stärkeren Spieler auf Trab. Was die meisten Erstbesucher überrascht, ist, wie stark sich der Charakter auf den Back Nine ändert, mit mehr blinden Schlägen und weniger Platz vom Abschlag, als die flachen Front Nine vermuten lassen. Lokaler Tipp: Nimm nach Möglichkeit eine frühe Startzeit. Die Greens waren spürbar schneller, nachdem der Morgentau weg war und das Greenkeeping-Team sie gemäht hatte."
+        "text": "Das Handicap-Limit liegt bei 54 für Herren und Damen, bei der Buchung ist ein Handicap-Nachweis nötig. Der Platz ist komplett begehbar; die Front Nine sind flach, die Back Nine haben mehr Anstiege, aber nichts, was einen halbwegs fitten Spieler überfordern sollte. Der Son Quint passt zu Golfern jedes Niveaus: Die Fairways sind breit und es gibt vier Abschlagspositionen, aber feste, wellige Greens und mehrere Fahnen hinten auf dem Green halten auch einen stärkeren Spieler auf Trab. Was die meisten Erstbesucher überrascht, ist, wie stark sich der Charakter auf den Back Nine ändert, mit mehr blinden Schlägen und weniger Platz vom Abschlag, als die flachen Front Nine vermuten lassen. Lokaler Tipp: Nehmen Sie nach Möglichkeit eine frühe Startzeit. Die Greens waren spürbar schneller, nachdem der Morgentau weg war und das Greenkeeping-Team sie gemäht hatte."
       },
       {
         "text": "Fazit"
@@ -329,7 +329,7 @@ const content = {
           ],
           [
             "Beschilderung",
-            "Folge dem Buggyweg, statt dorthin zu laufen, wo das nächste Loch zu sein scheint. Wir haben zweimal Zeit verloren, weil wir zwischen den Löchern in die falsche Richtung gelaufen sind."
+            "Folgen Sie dem Buggyweg, statt dorthin zu laufen, wo das nächste Loch zu sein scheint. Wir haben zweimal Zeit verloren, weil wir zwischen den Löchern in die falsche Richtung gelaufen sind."
           ],
           [
             "Schlägerwahl auf den Back Nine",

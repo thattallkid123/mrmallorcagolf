@@ -1260,13 +1260,13 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Andy är en riktig golfproffs. Jag lärde mig mer på en halv dag med honom än på ett år av att spela själv. Vill du verkligen förbättra ditt spel, gå med Andy."
         },
         {
-          "text": "Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag laenge kämpat med, har förbättrats mycket. Jag kommer fortsätta använda Andy som min pro."
+          "text": "Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag länge kämpat med, har förbättrats mycket. Jag kommer fortsätta använda Andy som min pro."
         },
         {
           "text": "Min fru och jag tillbringade två fantastiska dagar med Andy. Han gav oss enkla tips som vi kunde använda direkt på banan och lärde oss att tänka bättre över 18 hål. Kul att se honom spela också — vi bokar igen nästa år."
         },
         {
-          "text": "En fantastisk upplevelse. Andy utvärderade alla delar av mitt spel — swingen, banstrategin och det mentala — och justerade laengs vägen. Jag åkte hem med massor av konkreta säker att jobba med."
+          "text": "En fantastisk upplevelse. Andy utvärderade alla delar av mitt spel — swingen, banstrategin och det mentala — och justerade längs vägen. Jag åkte hem med massor av konkreta säker att jobba med."
         },
         {
           "text": "Jag spelade 18 hål med Andy i morse. Efter ungefär 4 hål kom Andy med sin bedömning och från och med då blev allt roligare och förbättringen var enorm. En jordnära kille som förklarade allt med lätthet och fick mig att känna mig helt avslappnad. Ser fram emot min nästa runda på söndag."

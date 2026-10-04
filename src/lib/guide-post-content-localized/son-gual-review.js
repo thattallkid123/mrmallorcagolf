@@ -62,7 +62,7 @@ const content = {
         "text": "El viento"
       },
       {
-        "text": "Son Gual parece vivir en su propio ecosistema. Salgo de casa en el suroeste de la isla con calma y llego al primer tee con viento de verdad. Y se queda cuatro horas. A favor es una gozada. En contra, en un par 4 largo que de repente se vuelve larguisimo, es otra experiencia."
+        "text": "Son Gual parece vivir en su propio ecosistema. Salgo de casa en el suroeste de la isla con calma y llego al primer tee con viento de verdad. Y se queda cuatro horas. A favor es una gozada. En contra, en un par 4 largo que de repente se vuelve larguísimo, es otra experiencia."
       },
       {
         "caption": "Hay bastantes hoyos donde sale el driver. Con el viento a favor es lo mejor que puede sentirse. Sin él, se planifica de otra manera."
@@ -224,7 +224,7 @@ const content = {
         "text": "Als ich Son Gual das erste Mal spielte, stand ich auf den schwarzen Abschlägen, der Wind kam hart von links, und ich spielte mit einem befreundeten PGA Professional, der gut spielt und gut scort. Für einen Vlog lief außerdem die Kamera, was seinen eigenen Druck erzeugt. Ich war ein wenig nervös."
       },
       {
-        "text": "Der Drive kam leicht an der Ferse. Er flog trotzdem weiter als erwartet und blieb knapp vor den Bunkern. Auf Son Gual gibt es viele Bunker, genau dort platziert, wo leicht getroffene Fehlschläge landen. Wind, Höhenunterschiede und wechselnde Ballstrikes spielen mit. Je langer man darüber nachdenkt, desto größer wirken die Bunker."
+        "text": "Der Drive kam leicht an der Ferse. Er flog trotzdem weiter als erwartet und blieb knapp vor den Bunkern. Auf Son Gual gibt es viele Bunker, genau dort platziert, wo leicht getroffene Fehlschläge landen. Wind, Höhenunterschiede und eine schwankende Treffqualität spielen mit. Je länger man darüber nachdenkt, desto größer wirken die Bunker."
       },
       {
         "caption": "Son Gual hat viele Bunker. Sie liegen genau dort, wo leicht misslungene Schläge landen."
@@ -312,7 +312,7 @@ const content = {
           ],
           [
             "Wind-Tipp",
-            "Wenn nur ein Hauch von Wind da ist, achten Sie auf die offene Mittelstrecke. Das ist einer der wenigen Plätze auf Mallorca, auf denen ein halber Schläger zu wenig Sie genau auf den falschen Teil des Grüns bringen kann, und von dort sind zwei Putts schwer."
+            "Wenn nur ein Hauch von Wind da ist, achten Sie auf die offene Mittelstrecke. Das ist einer der wenigen Plätze auf Mallorca, auf denen Sie sich um einen halben Schläger verschätzen und genau im falschen Teil des Grüns landen können, und von dort sind zwei Putts schwer."
           ],
           [
             "Wo Besucher Schläge verlieren",

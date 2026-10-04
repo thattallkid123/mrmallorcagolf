@@ -188,7 +188,7 @@ const content = {
         "text": "Etwas ganz direkt: Dieser Platz hat mir geholfen, mit dem Driver wieder Selbstvertrauen zu finden. Nach Runden auf Son Gual oder Alcanada, wo gutes Course Management oft bedeutet, den Driver im Bag zu lassen, ist Santa Ponsa 1 ein völlig anderes Gespräch. Die Fairways sind breit, die ersten Löcher großzügig, und der Platz belohnt einen mutigen Ansatz vom Tee."
       },
       {
-        "text": "Mit meiner Lange habe ich nach einem guten Abschlag oft nur noch ein Pitching Wedge ins Grün eines Par 4. Für Spieler mit normalerer Lange wird der Platz bei Wind zu einer echten Prüfung - aber auf die Art, die Vertrauen aufbaut, statt es kleinzumahlen."
+        "text": "Mit meiner Länge habe ich nach einem guten Abschlag oft nur noch ein Pitching Wedge ins Grün eines Par 4. Für Spieler mit normalerer Länge wird der Platz bei Wind zu einer echten Prüfung - aber auf die Art, die Vertrauen aufbaut, statt es kleinzumahlen."
       },
       {
         "caption": "Die Fairways sind breit. Das ist ein Platz, der den Driver einlädt."
@@ -197,7 +197,7 @@ const content = {
         "text": "Das 10. Loch"
       },
       {
-        "text": "Mit 590 Metern ist die 10 eines der längsten Par 5 Europas. Gegen den Wind spielt es sich noch langer. Es gibt eine sehr befriedigende Version dieses Lochs - Driver, Hybrid, Wedge - und eine deutlich weniger befriedigende Version, bei der einer dieser drei Schläge misslingt. Die Par 3s sind das andere Extrem: lang und mit kleinen Grüns. Hier geht es eher um Schadensbegrenzung als um Birdiechancen."
+        "text": "Mit 590 Metern ist die 10 eines der längsten Par 5 Europas. Gegen den Wind spielt es sich noch länger. Es gibt eine sehr befriedigende Version dieses Lochs - Driver, Hybrid, Wedge - und eine deutlich weniger befriedigende Version, bei der einer dieser drei Schläge misslingt. Die Par 3s sind das andere Extrem: lang und mit kleinen Grüns. Hier geht es eher um Schadensbegrenzung als um Birdiechancen."
       },
       {
         "caption": "Das Layout. An einem ruhigen Tag schmeichelt dieser Platz. Mit Wind verdient er jeden seiner Meter."

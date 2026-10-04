@@ -222,10 +222,10 @@ const content = {
         "text": "So spielt sich der Platz"
       },
       {
-        "text": "Son Termes ist kein langer Platz. Mehrere Par 4 sind drivebar oder knapp davor, sodass für den Schlag ins Grün nur kurze Eisen oder Wedges bleiben. Für Single-Handicapper, die vor allem einen Langentest suchen, sollte man das vorab wissen."
+        "text": "Son Termes ist kein langer Platz. Mehrere Par 4 sind drivebar oder knapp davor, sodass für den Schlag ins Grün nur kurze Eisen oder Wedges bleiben. Für Single-Handicapper, die vor allem einen Längentest suchen, sollte man das vorab wissen."
       },
       {
-        "text": "Was dem Platz an Lange fehlt, macht er mit Charakter wett. Blinde Abschläge, scharfe Doglegs, künstlich angelegte Wasserhindernisse genau dort, wo viele Golfer instinktiv hinspielen würden. Auf mehreren Löchern muss man sich auf ein Ziel festlegen, das man nicht vollständig sehen kann. Das hält die Runde von Anfang bis Ende interessant, und es bedeutet auch, dass ein zweiter Besuch fast immer einen besseren Score bringt."
+        "text": "Was dem Platz an Länge fehlt, macht er mit Charakter wett. Blinde Abschläge, scharfe Doglegs, künstlich angelegte Wasserhindernisse genau dort, wo viele Golfer instinktiv hinspielen würden. Auf mehreren Löchern muss man sich auf ein Ziel festlegen, das man nicht vollständig sehen kann. Das hält die Runde von Anfang bis Ende interessant, und es bedeutet auch, dass ein zweiter Besuch fast immer einen besseren Score bringt."
       },
       {
         "alt": "Golfplatz Son Termes auf Mallorca in den Na-Burguesa-Bergen",

@@ -58,7 +58,7 @@ const content = {
         "text": "El campo"
       },
       {
-        "text": "Francisco Lopez Segales diseño Son Antem West, que abrió en 1995. Es par 72 y mide 6.293 metros desde las barras de atrás. El diseño es abierto, las calles son generosas y muchos golpes de salida no castigan demasiado si te sales un poco de línea. Eso lo hace accesible para grupos de nivel mixto y golfistas de vacaciones. Claramente fue pensado para eso."
+        "text": "Francisco Lopez Segalés diseño Son Antem West, que abrió en 1995. Es par 72 y mide 6.293 metros desde las barras de atrás. El diseño es abierto, las calles son generosas y muchos golpes de salida no castigan demasiado si te sales un poco de línea. Eso lo hace accesible para grupos de nivel mixto y golfistas de vacaciones. Claramente fue pensado para eso."
       },
       {
         "text": "Los hoyos que más destacan son los que van entre árboles. En esos, el golpe de salida es más estrecho, la línea importa más y el approach cambia según el lado de la calle en el que acabes. Las zonas más abiertas son agradables, pero no te obligan a pensar mucho desde el tee. Escoges un objetivo y pegas."
@@ -232,7 +232,7 @@ const content = {
         "text": "Der Platz"
       },
       {
-        "text": "Francisco Lopez Segales entwarf Son Antem West, der 1995 eröffnet wurde. Der Platz spielt als Par 72 und misst 6.293 Meter von den hinteren Abschlägen. Das Layout ist insgesamt offen, die Fairways sind großzügig, und viele Abschläge bestrafen einen leicht verzogenen Ball nicht sofort. Das macht ihn für gemischte Gruppen und Urlaubsgolfer zugänglich. Genau dafür wurde er offensichtlich gebaut."
+        "text": "Francisco Lopez Segalés entwarf Son Antem West, der 1995 eröffnet wurde. Der Platz spielt als Par 72 und misst 6.293 Meter von den hinteren Abschlägen. Das Layout ist insgesamt offen, die Fairways sind großzügig, und viele Abschläge bestrafen einen leicht verzogenen Ball nicht sofort. Das macht ihn für gemischte Gruppen und Urlaubsgolfer zugänglich. Genau dafür wurde er offensichtlich gebaut."
       },
       {
         "text": "Die Löcher, die auffallen, sind die baumgesäumten. Dort ist der Abschlag enger, die Linie wichtiger, und der Winkel ins Green verändert sich je nachdem, auf welcher Fairwayseite der Ball liegt. Die offeneren Abschnitte sind angenehm, verlangen vom Tee aber weniger Denken. Ziel wählen und schwingen."
@@ -268,7 +268,7 @@ const content = {
         "text": "Zu Fuß spielbar"
       },
       {
-        "text": "Absolut. Die Wegeführung ist unkompliziert und das Gelände flach. Zwischen ein paar Löchern war der Fussweg nicht ganz eindeutig, aber nichts Ernstes. Wer lieber läuft als einen Buggy zu nehmen, kann diesen Platz problemlos gehen."
+        "text": "Zu Fuß gehen ist völlig in Ordnung. Die Wegeführung ist unkompliziert und das Gelände flach. Zwischen ein paar Löchern war der Fußweg nicht ganz eindeutig, aber nichts Ernstes. Wer lieber läuft als einen Buggy zu nehmen, kann diesen Platz problemlos gehen."
       },
       {
         "alt": "Andy Griffiths mit Kunden bei einer begleiteten Golfrunde auf Son Antem West, Mallorca",
@@ -406,7 +406,7 @@ const content = {
         "text": "Le parcours"
       },
       {
-        "text": "Francisco Lopez Segales a dessiné Son Antem West, ouvert en 1995. Il se joue en par 72 et mesure 6 293 mètres des départs arrière. Le tracé est globalement ouvert, les fairways sont généreux, et beaucoup de mises en jeu pardonnent une légère erreur de ligne. Cela le rend accessible aux groupes de niveaux mixtes et aux golfeurs en vacances. C'est clairement son rôle."
+        "text": "Francisco Lopez Segalés a dessiné Son Antem West, ouvert en 1995. Il se joue en par 72 et mesure 6 293 mètres des départs arrière. Le tracé est globalement ouvert, les fairways sont généreux, et beaucoup de mises en jeu pardonnent une légère erreur de ligne. Cela le rend accessible aux groupes de niveaux mixtes et aux golfeurs en vacances. C'est clairement son rôle."
       },
       {
         "text": "Les trous qui ressortent sont ceux bordés d'arbres. La mise en jeu y est plus serrée, la ligne compte davantage, et l'angle d'attaque change selon le côté du fairway trouvé. Les sections plus ouvertes sont agréables, mais demandent moins de réflexion au départ. On choisit une cible et on swingue."
@@ -578,7 +578,7 @@ const content = {
         "text": "De baan"
       },
       {
-        "text": "Francisco Lopez Segales ontwierp Son Antem West, geopend in 1995. Het is een par 72 en meet 6.293 meter vanaf de back tees. De lay-out is overwegend open, de fairways zijn royaal, en veel tee shots straffen een kleine afwijking niet zwaar. Daardoor werkt de baan goed voor gemengde groepen en vakantiegolfers. Daar is hij duidelijk voor gemaakt."
+        "text": "Francisco Lopez Segalés ontwierp Son Antem West, geopend in 1995. Het is een par 72 en meet 6.293 meter vanaf de back tees. De lay-out is overwegend open, de fairways zijn royaal, en veel tee shots straffen een kleine afwijking niet zwaar. Daardoor werkt de baan goed voor gemengde groepen en vakantiegolfers. Daar is hij duidelijk voor gemaakt."
       },
       {
         "text": "De holes die opvallen zijn de holes tussen de bomen. Daar is de tee shot strakker, de lijn belangrijker, en de approach verandert afhankelijk van welke kant van de fairway je vindt. De open gedeeltes zijn prettig, maar vragen minder denkwerk vanaf de tee. Je kiest een doel en slaat."
@@ -650,7 +650,7 @@ const content = {
         "text": "Praktische informatie"
       },
       {
-        "text": "Greenfee: 105 euro op de dag dat wij speelden. Het resort is goed ingericht voor en na de ronde. Er is een klein winkeltje bij de check-in voor koffie, water en snacks, echt handig bij een vroege starttijd. Buggyhuur is beschikbaar. Lopen is overal eenvoudig."
+        "text": "Greenfee: 105 € op de dag dat wij speelden. Het resort is goed ingericht voor en na de ronde. Er is een klein winkeltje bij de check-in voor koffie, water en snacks, echt handig bij een vroege starttijd. Buggyhuur is beschikbaar. Lopen is overal eenvoudig."
       },
       {
         "text": "Locatie: Llucmajor, ongeveer 15 tot 20 minuten ten zuiden van Palma. Makkelijk te bereiken en goed te combineren met een dag of twee in de stad."
@@ -752,7 +752,7 @@ const content = {
         "text": "Banan"
       },
       {
-        "text": "Francisco Lopez Segales designade Son Antem West, som öppnade 1995. Den spelar som par 72 och mäter 6 293 meter från bakre tee. Layouten är generellt öppen, fairways är generösa, och de flesta utslag straffar inte en liten miss för hårt. Det gör den tillgänglig för blandade grupper och semestergolfare. Det är tydligt vad den är byggd för."
+        "text": "Francisco Lopez Segalés designade Son Antem West, som öppnade 1995. Den spelar som par 72 och mäter 6 293 meter från bakre tee. Layouten är generellt öppen, fairways är generösa, och de flesta utslag straffar inte en liten miss för hårt. Det gör den tillgänglig för blandade grupper och semestergolfare. Det är tydligt vad den är byggd för."
       },
       {
         "text": "Hålen som sticker ut är de tradkantade. Där är utslaget smalare, linjen viktigare och inspelet ändras beroende på vilken sida av fairway du hittar. De öppnare partierna är trevliga men ger mindre att tänka på från tee. Välj ett mål och swing."
@@ -824,7 +824,7 @@ const content = {
         "text": "Praktisk information"
       },
       {
-        "text": "Greenfee: 105 euro den dag vi spelade. Resorten fungerar bra före och efter rundan. Det finns en liten butik vid incheckningen för kaffe, vatten och snacks, vilket är verkligt användbart vid tidig starttid. Buggy finns. Att gå är enkelt hela vägen."
+        "text": "Greenfee: 105 € den dag vi spelade. Resorten fungerar bra före och efter rundan. Det finns en liten butik vid incheckningen för kaffe, vatten och snacks, vilket är verkligt användbart vid tidig starttid. Buggy finns. Att gå är enkelt hela vägen."
       },
       {
         "text": "Plats: Llucmajor, cirka 15 till 20 minuter söder om Palma. Lätt att na och lätt att kombinera med en dag eller två i staden."
@@ -926,7 +926,7 @@ const content = {
         "text": "球场"
       },
       {
-        "text": "Son Antem West由Francisco Lopez Segales设计，1995年开业。标准杆72，从后发球台长6,293米。整体设计偏开阔，球道宽容，大多数开球稍微偏一点不会受到太重惩罚。这让它很适合不同水平混合的组合和度假球手。它显然就是为这种使用场景设计的。"
+        "text": "Son Antem West由Francisco Lopez Segalés设计，1995年开业。标准杆72，从后发球台长6,293米。整体设计偏开阔，球道宽容，大多数开球稍微偏一点不会受到太重惩罚。这让它很适合不同水平混合的组合和度假球手。它显然就是为这种使用场景设计的。"
       },
       {
         "text": "真正突出的，是那些树木夹道的球洞。在这些洞，开球线更窄，线路更重要，第二杆角度也会因为你停在球道哪一边而改变。更开阔的区域打起来舒服，但开球时不需要想太多。选一个目标，然后挥杆。"

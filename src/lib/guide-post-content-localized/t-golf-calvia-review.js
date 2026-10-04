@@ -222,7 +222,7 @@ const content = {
         "text": "Löcher, die man kennen sollte"
       },
       {
-        "text": "Loch 7 ist ein Dogleg durch die Bäume. Kurz auf der Karte, aber die Anspiellange ist schwerer einzuschätzen als es aussieht, und Spieler neigen dazu, zu kurz zu schlagen."
+        "text": "Loch 7 ist ein Dogleg durch die Bäume. Kurz auf der Karte, aber die Anspiellänge ist schwerer einzuschätzen als es aussieht, und Spieler neigen dazu, zu kurz zu schlagen."
       },
       {
         "text": "Loch 8 ist ein bergabführendes Par 4 mit einem engen Landebereich vom Abschlag. Das Anspiel ist ein handhabbares Wedge, wenn man das Fairway trifft, aber verfehlt man es, wird eine vordere Fahne schnell kompliziert. Das Gefälle macht es schwierig, den Ball zu stoppen."

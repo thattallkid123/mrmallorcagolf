@@ -1468,7 +1468,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "Bevis i verkligheten",
       "title": "Tävlingsvinnare, ambitiösa golfare och många däremellan.",
       "intro": "Jag har coachat elitjuniorer, klubbgolfare och många som bara ville sluta kasta bort slag. Den gemensamma nämnaren brukar vara densamma: tydligare beslut, bättre mönster och en utveckling som fortfarande syns när scorekortet faktiskt räknas.",
-      "testimonial": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna och mest behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att ge det en chans. Det är jag glad för. Vi jobbade igenom de finare detaljerna i svingen, bättre bollträff, viktförflyttning och mekanik. Även små justeringar gav stabila resultat direkt, och jag är övertygad om att de kan spara fem till tio slag för mig efter bara en session. Andy var oerhoert professionell hela vägen. Jag kan inte tacka honom nog."
+      "testimonial": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna och mest behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att ge det en chans. Det är jag glad för. Vi jobbade igenom de finare detaljerna i svingen, bättre bollträff, viktförflyttning och mekanik. Även små justeringar gav stabila resultat direkt, och jag är övertygad om att de kan spara fem till tio slag för mig efter bara en session. Andy var oerhört professionell hela vägen. Jag kan inte tacka honom nog."
     },
     "packages": {
       "eyebrow": "Det här erbjuder jag",
