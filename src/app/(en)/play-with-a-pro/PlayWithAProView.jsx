@@ -9,6 +9,7 @@ import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import { PWAP_PHOTOS } from '../../../lib/pwap-photos.js'
+import { localizeAlt } from '../../../lib/alt-text'
 
 const PAGE_LINKS = {
   en: {
@@ -309,7 +310,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           <div className="pwap-hero__bg" aria-hidden="true">
             <Image
               src="/images/andy-coaching-client.webp"
-              alt={copy.heroImageAlt}
+              alt={localizeAlt(copy.heroImageAlt, locale)}
               fill
               priority
               quality={88}
@@ -402,7 +403,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
-            <div className="pwap-day-strip" aria-label={copy.stripLabel} ref={stripViewportRef} tabIndex={0}>
+            <div className="pwap-day-strip" aria-label={localizeAlt(copy.stripLabel, locale)} ref={stripViewportRef} tabIndex={0}>
               <div className="pwap-day-strip__track" ref={stripTrackRef}>
                 {dayPhotosLoop.map((photo, index) => (
                   <figure
@@ -411,7 +412,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                   >
                     <Image
                       src={photo.src}
-                      alt={photo.alt}
+                      alt={localizeAlt(photo.alt, locale)}
                       fill
                       sizes="(max-width: 920px) 78vw, 360px"
                       style={{ objectFit: 'cover', objectPosition: photo.position || 'center center' }}
@@ -447,11 +448,11 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           </div>
         </section>
 
-        <section className="pwap-feature-photo reveal" aria-label={copy.featuredLabel}>
+        <section className="pwap-feature-photo reveal" aria-label={localizeAlt(copy.featuredLabel, locale)}>
           <div className="pwap-feature-photo__inner">
             <Image
               src="/images/pwap-mandarin-ab101723.webp"
-              alt={copy.featuredImageAlt}
+              alt={localizeAlt(copy.featuredImageAlt, locale)}
               width={7008}
               height={4672}
               sizes="(max-width: 920px) 100vw, 1200px"

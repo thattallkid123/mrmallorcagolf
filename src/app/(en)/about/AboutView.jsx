@@ -294,7 +294,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
               {home.winners.intro}
             </p>
           </div>
-          <WinnersProofStrip images={WINNER_PROOF_IMAGES} />
+          <WinnersProofStrip images={WINNER_PROOF_IMAGES} locale={locale} />
         </section>
 
         {content.press && (

@@ -4,6 +4,7 @@ import { SITE_ORIGIN, buildLocalePath } from '../lib/site'
 import HomeToolsStrip from '../components/HomeToolsStrip'
 import HomepageLeadPopup from '../components/HomepageLeadPopup'
 import ReviewBadge from '../components/ReviewBadge'
+import { localizeAlt } from '../lib/alt-text'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -94,7 +95,7 @@ export default function HomePageInner({ locale = 'en' }) {
         <div className="hero__media" aria-hidden="true">
           <Image
             src="/images/home-hero-mandarin.webp"
-            alt="Golf day in Mallorca with PGA Advanced Professional Andy Griffiths"
+            alt={localizeAlt('Golf day in Mallorca with PGA Advanced Professional Andy Griffiths', locale)}
             fill
             priority
             sizes="100vw"

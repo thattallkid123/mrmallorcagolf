@@ -5,6 +5,7 @@ import PageLayout from '../../../components/PageLayout'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
+import { localizeAlt } from '../../../lib/alt-text'
 import InlineRichText from '../guides/InlineRichText'
 
 function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', priority = false, containerStyle, imageStyle }) {
@@ -180,7 +181,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
         >
           <Image
             src={block.src}
-            alt={block.alt}
+            alt={localizeAlt(block.alt, locale)}
             width={block.naturalWidth || 1200}
             height={block.naturalHeight || 900}
             priority={block.priority}
@@ -203,7 +204,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
       >
         <FillImageFrame
           src={block.src}
-          alt={block.alt}
+          alt={localizeAlt(block.alt, locale)}
           priority={Boolean(block.priority || imageOrdinal === 0)}
           containerStyle={normalizeContainerStyle(block.containerStyle, { borderRadius: 2, aspectRatio: '5/4' })}
           imageStyle={{ objectPosition: 'center center', ...block.imageStyle }}

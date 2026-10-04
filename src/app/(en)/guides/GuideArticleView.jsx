@@ -15,6 +15,7 @@ function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', p
   )
 }
 import PostLayout from '../guides/PostLayout'
+import { localizeAlt } from '../../../lib/alt-text'
 
 const MONTHS = {
   January: '01',
@@ -129,7 +130,7 @@ function renderBlock(block, index, locale, imageOrdinal, articleSlug) {
       <>
         <FillImageFrame
           src={block.src}
-          alt={block.alt}
+          alt={localizeAlt(block.alt, locale)}
           priority={Boolean(block.priority || imageOrdinal === 0)}
           containerStyle={normalizeContainerStyle(block.containerStyle, defaultStyle)}
           imageStyle={
@@ -208,7 +209,7 @@ function renderBlock(block, index, locale, imageOrdinal, articleSlug) {
           <figure key={item.src} className={`post-media post-media--split${item.caption ? '' : ' post-media--plain'}`}>
             <FillImageFrame
               src={item.src}
-              alt={item.alt}
+              alt={localizeAlt(item.alt, locale)}
               containerStyle={normalizeContainerStyle({ position: 'relative', width: '100%', aspectRatio: item.aspectRatio || '4/3' })}
               imageStyle={item.imageStyle || { objectPosition: 'center 24%' }}
             />

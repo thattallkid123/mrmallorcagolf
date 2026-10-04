@@ -3,6 +3,7 @@ import Link from 'next/link'
 import PageLayout from './PageLayout'
 import StickyMobileCta from './StickyMobileCta'
 import { buildLocalePath } from '../lib/site'
+import { localizeAlt } from '../lib/alt-text'
 
 export default function LocalizedSignatureDayPage({ locale, content }) {
   const contactHref = buildLocalePath('/contact', locale)
@@ -139,10 +140,10 @@ export default function LocalizedSignatureDayPage({ locale, content }) {
           <div className="signature-inner signature-split signature-split--feature signature-split--media-first">
             <div className="signature-course-media reveal">
               <div className="signature-media">
-                <Image src="/images/son-gual.jpg" alt="Son Gual golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
+                <Image src="/images/son-gual.jpg" alt={localizeAlt('Son Gual golf course Mallorca', locale)} fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
               </div>
               <div className="signature-media">
-                <Image src="/images/alcanada.jpg" alt="Alcanada golf course Mallorca" fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
+                <Image src="/images/alcanada.jpg" alt={localizeAlt('Alcanada golf course Mallorca', locale)} fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
               </div>
             </div>
             <div className="signature-copy reveal">

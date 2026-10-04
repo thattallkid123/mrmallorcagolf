@@ -8,6 +8,7 @@ import { getOfferById, OFFER_IDS } from '../../../../lib/offers-content.js'
 import { PWAP_PHOTOS } from '../../../../lib/pwap-photos.js'
 import { DEFAULT_SOCIAL_IMAGE } from '../../../../lib/page-metadata.js'
 import { SITE_ORIGIN, buildLocalePath } from '../../../../lib/site.js'
+import { localizeAlt } from '../../../../lib/alt-text'
 
 function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
@@ -211,7 +212,7 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
         </section>
 
         {/* GOLFER CAROUSEL */}
-        <div className="pwap-day-strip" aria-label="Play With A Pro round photos" ref={stripViewportRef} tabIndex={0}>
+        <div className="pwap-day-strip" aria-label={localizeAlt('Play With A Pro round photos', locale)} ref={stripViewportRef} tabIndex={0}>
           <div className="pwap-day-strip__track" ref={stripTrackRef}>
             {dayPhotosLoop.map((photo, index) => (
               <figure
@@ -220,7 +221,7 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
               >
                 <Image
                   src={photo.src}
-                  alt={photo.alt}
+                  alt={localizeAlt(photo.alt, locale)}
                   fill
                   sizes="(max-width: 920px) 78vw, 360px"
                   style={{ objectFit: 'cover', objectPosition: photo.position || 'center center' }}

@@ -1,4 +1,5 @@
 import { buildPageMetadata } from './page-metadata.js'
+import { localizeAlt } from './alt-text.js'
 
 const diningImages = [
   { src: '/images/food/mallorca-orchard-dining.jpg', alt: 'Private outdoor dining in Mallorca', featured: true },
@@ -322,7 +323,7 @@ export function getSignatureDayContent(locale = 'zh') {
   return {
     ...page,
     hotelPartners: hotels[resolvedLocale] || hotels.zh,
-    diningImages,
+    diningImages: diningImages.map((item) => ({ ...item, alt: localizeAlt(item.alt, locale) })),
   }
 }
 

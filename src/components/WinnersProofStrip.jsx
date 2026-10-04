@@ -1,8 +1,9 @@
 'use client'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
+import { localizeAlt } from '../lib/alt-text'
 
-export default function WinnersProofStrip({ images }) {
+export default function WinnersProofStrip({ images, locale = 'en' }) {
   const viewportRef = useRef(null)
   const trackRef = useRef(null)
   const allImages = [...images, ...images]
@@ -85,7 +86,7 @@ export default function WinnersProofStrip({ images }) {
     <div
       ref={viewportRef}
       className="winners-proof"
-      aria-label="Competition winners coached by Andy over the years"
+      aria-label={localizeAlt('Competition winners coached by Andy over the years', locale)}
       tabIndex={0}
     >
       <div ref={trackRef} className="winners-proof__track">
@@ -94,7 +95,7 @@ export default function WinnersProofStrip({ images }) {
             <div className="winners-proof__media">
               <Image
                 src={image.src}
-                alt={image.alt}
+                alt={localizeAlt(image.alt, locale)}
                 fill
                 priority={index < 4}
                 quality={90}

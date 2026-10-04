@@ -40,6 +40,7 @@
     "check:tool-green-fees": "node --no-warnings scripts/check-tool-green-fees.mjs",
     "check:tool-data": "node --no-warnings scripts/check-tool-data-localized.mjs",
     "check:locale-sync": "node --no-warnings scripts/check-locale-sync.mjs",
+    "check:guide-alt": "node --no-warnings scripts/check-guide-alt.mjs",
     "check:rendered-english": "node --no-warnings scripts/check-rendered-english.mjs",
     "check:pricing-narrative": "node --no-warnings scripts/check-pricing-narrative.mjs",
     "check:lead-magnet-prices": "node --no-warnings scripts/check-lead-magnet-prices.mjs",
